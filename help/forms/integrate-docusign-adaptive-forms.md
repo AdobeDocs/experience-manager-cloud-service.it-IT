@@ -2,10 +2,10 @@
 title: Come integrare DocuSign con un modulo adattivo?
 description: Scopri come utilizzare DocuSign con un modulo adattivo per raccogliere firme elettroniche.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1559'
-ht-degree: 1%
+source-wordcount: '1534'
+ht-degree: 0%
 
 ---
 
@@ -126,8 +126,8 @@ Dopo aver impostato i prerequisiti, effettua le seguenti operazioni per integrar
 
 1. Accedi a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL DocuSign]** e seleziona una cartella per ospitare la configurazione.
 
-1. Nella pagina delle configurazioni, tocca **[!UICONTROL Crea]** per creare [!DNL DocuSign] in AEM Forms.
-1. In **[!UICONTROL Generale]** scheda di **[!UICONTROL Crea configurazione DocuSign]** , specificare un **[!UICONTROL Nome]** per la configurazione, quindi tocca **[!UICONTROL Successivo]**. Facoltativamente, puoi specificare un valore **[!UICONTROL Titolo]**.
+1. Nella pagina Configurazioni, seleziona **[!UICONTROL Crea]** per creare [!DNL DocuSign] in AEM Forms.
+1. In **[!UICONTROL Generale]** scheda di **[!UICONTROL Crea configurazione DocuSign]** , specificare un **[!UICONTROL Nome]** per la configurazione, quindi seleziona **[!UICONTROL Successivo]**. Facoltativamente, puoi specificare un valore **[!UICONTROL Titolo]**.
 
 1. Copiare l&#39;URL nella finestra del browser corrente in un blocco note. L’URL è necessario per configurare [!DNL DocuSign] applicazione con [!DNL AEM Forms] in un passaggio successivo.
 
@@ -146,9 +146,9 @@ Dopo aver impostato i prerequisiti, effettua le seguenti operazioni per integrar
 
 1. Specifica la **[!UICONTROL ID client]** (chiave di integrazione DocuSign) e **[!UICONTROL Segreto client]** (Chiave segreta DocuSign).
 
-1. Tocca **[!UICONTROL Connetti a DocuSign]**. Quando vengono richieste le credenziali, specifica il nome utente e la password dell’account utilizzato durante la creazione [!DNL DocuSign] applicazione. Quando ti viene richiesto di confermare l’accesso per `your developer account`, fai clic su **[!UICONTROL Consenti accesso]**. Se le credenziali sono corrette, viene visualizzato un messaggio di operazione riuscita.
+1. Seleziona **[!UICONTROL Connetti a DocuSign]**. Quando vengono richieste le credenziali, specifica il nome utente e la password dell’account utilizzato durante la creazione [!DNL DocuSign] applicazione. Quando ti viene richiesto di confermare l’accesso per `your developer account`, fai clic su **[!UICONTROL Consenti accesso]**. Se le credenziali sono corrette, viene visualizzato un messaggio di operazione riuscita.
 
-1. Tocca **[!UICONTROL Crea]** per creare [!DNL DocuSign] configurazione.
+1. Seleziona **[!UICONTROL Crea]** per creare [!DNL DocuSign] configurazione.
 
 1. Seleziona la configurazione e fai clic su **[!UICONTROL Pubblica]**, seleziona la configurazione e fai clic su **[!UICONTROL Pubblica]**. Replica la configurazione negli ambienti di pubblicazione corrispondenti.
 
@@ -168,7 +168,7 @@ Ora l’ambiente AEM Forms è configurato per l’utilizzo di DocuSign. Accertat
 Per creare un modulo adattivo abilitato alla firma:
 
 1. Accedi a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
-1. Tocca **[!UICONTROL Crea]** e seleziona **[!UICONTROL Modulo adattivo]**. Viene visualizzato un elenco di modelli. Seleziona un modello e tocca **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Crea]** e seleziona **[!UICONTROL Modulo adattivo]**. Viene visualizzato un elenco di modelli. Seleziona un modello e seleziona **[!UICONTROL Successivo]**.
 1. In **[!UICONTROL Base]** scheda:
 
    1. Specifica la **[!UICONTROL Nome]** e **[!UICONTROL Titolo]** per il modulo adattivo.
@@ -183,23 +183,23 @@ Per creare un modulo adattivo abilitato alla firma:
 
    - Se non si dispone di un modello di modulo personalizzato, selezionare **[!UICONTROL Genera documento di record]** opzione. Quando utilizzi l’opzione, nel documento inviato per la firma vengono visualizzati tutti i campi del modulo adattivo.
 
-1. Tocca **[!UICONTROL Crea.]** Viene creato un modulo adattivo abilitato alla firma. Puoi aggiungere il tuo [!DNL DocuSign] nel modulo e inviarlo per la firma.
-1. Apri il modulo adattivo in modalità di modifica. In **[!UICONTROL Contenuto]** , toccare la scheda **[!UICONTROL Contenitore modulo]** e tocca ![Configura](assets/configure-icon.svg).
+1. Seleziona **[!UICONTROL Crea.]** Viene creato un modulo adattivo abilitato alla firma. Puoi aggiungere il tuo [!DNL DocuSign] nel modulo e inviarlo per la firma.
+1. Apri il modulo adattivo in modalità di modifica. In **[!UICONTROL Contenuto]** , seleziona la scheda **[!UICONTROL Contenitore modulo]** e seleziona ![Configura](assets/configure-icon.svg).
 
 1. In **[!UICONTROL Invio]** sezione, seleziona **[!UICONTROL Invia con firme elettroniche DocuSign]** dal **[!UICONTROL Azione di invio]** elenco a discesa.
 
-1. In **[!UICONTROL Configurazione azione]** sezione, tocca **[!UICONTROL Aggiungi]** per aggiungere un destinatario e specificarne l’indirizzo e-mail. Tocca **[!UICONTROL Aggiungi]** per aggiungere altri destinatari.
+1. In **[!UICONTROL Configurazione azione]** sezione, seleziona **[!UICONTROL Aggiungi]** per aggiungere un destinatario e specificarne l’indirizzo e-mail. Seleziona **[!UICONTROL Aggiungi]** per aggiungere altri destinatari.
 
 1. Specifica l’oggetto del messaggio e-mail nel **[!UICONTROL Oggetto e-mail]** campo. Seleziona **Includi allegati** per includere allegati nel messaggio e-mail.
 
-1. Tocca ![Salva](assets/save_icon.svg) per salvare le proprietà.
+1. Seleziona ![Salva](assets/save_icon.svg) per salvare le proprietà.
 
 #### Abilita [!DNL DocuSign] per un modulo adattivo {#editafsign}
 
 Da utilizzare [!DNL DocuSign] in un modulo adattivo esistente:
 
 1. Accedi a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
-1. Seleziona il modulo adattivo e tocca **[!UICONTROL Proprietà]**.
+1. Seleziona il modulo adattivo e seleziona **[!UICONTROL Proprietà]**.
 1. In **[!UICONTROL Base]** , seleziona la scheda [Contenitore configurazione](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creato durante l’integrazione [!DNL DocuSign] con [!DNL AEM Forms].
 1. In **[!UICONTROL Modello modulo]** , selezionare una delle opzioni seguenti:
 
@@ -207,14 +207,14 @@ Da utilizzare [!DNL DocuSign] in un modulo adattivo esistente:
 
    - Se non si dispone di un modello di modulo personalizzato, selezionare **[!UICONTROL Genera documento di record]** opzione. Quando utilizzi l’opzione, nel documento inviato per la firma vengono visualizzati tutti i campi del modulo adattivo.
 
-1. Tocca **[!UICONTROL Salva e chiudi]**. Il modulo adattivo è abilitato per [!DNL DocuSign]. Ora puoi aggiungere il tuo [!DNL DocuSign] nel modulo e inviarlo per la firma.
+1. Seleziona **[!UICONTROL Salva e chiudi]**. Il modulo adattivo è abilitato per [!DNL DocuSign]. Ora puoi aggiungere il tuo [!DNL DocuSign] nel modulo e inviarlo per la firma.
 
-1. Apri il modulo adattivo in modalità di modifica. In **[!UICONTROL Contenuto]** , toccare la scheda **[!UICONTROL Contenitore modulo]** e tocca ![Configura](assets/configure-icon.svg).
+1. Apri il modulo adattivo in modalità di modifica. In **[!UICONTROL Contenuto]** , seleziona la scheda **[!UICONTROL Contenitore modulo]** e seleziona ![Configura](assets/configure-icon.svg).
 
 1. In **[!UICONTROL Invio]** sezione, seleziona **[!UICONTROL Invia con firme elettroniche DocuSign]** dal **[!UICONTROL Azione di invio]** elenco a discesa.
 
-1. In **[!UICONTROL Configurazione azione]** sezione, tocca **[!UICONTROL Aggiungi]** per aggiungere un destinatario e specificarne l’indirizzo e-mail. Tocca **[!UICONTROL Aggiungi]** per aggiungere altri destinatari.
+1. In **[!UICONTROL Configurazione azione]** sezione, seleziona **[!UICONTROL Aggiungi]** per aggiungere un destinatario e specificarne l’indirizzo e-mail. Seleziona **[!UICONTROL Aggiungi]** per aggiungere altri destinatari.
 
 1. Specifica l’oggetto del messaggio e-mail nel **[!UICONTROL Oggetto e-mail]** campo. Seleziona **Includi allegati** per includere allegati nel messaggio e-mail.
 
-1. Tocca ![Salva](assets/save_icon.svg) per salvare le proprietà.
+1. Seleziona ![Salva](assets/save_icon.svg) per salvare le proprietà.

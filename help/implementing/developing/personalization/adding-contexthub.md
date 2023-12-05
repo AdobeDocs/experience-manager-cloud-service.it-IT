@@ -2,9 +2,9 @@
 title: Aggiunta di ContextHub alle pagine e accesso agli store
 description: Aggiungi ContextHub alle pagine per abilitare le funzioni di ContextHub e per collegare le librerie JavaScript di ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Per abilitare le funzioni di ContextHub e collegare le librerie JavaScript di Co
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-Inoltre, devi configurare se la barra degli strumenti di ContextHub viene visualizzata in modalità Anteprima. Consulta [Visualizzazione e nascondere l’interfaccia utente di ContextHub](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
+È inoltre necessario configurare se la barra degli strumenti di ContextHub viene visualizzata in modalità Anteprima. Consulta [Visualizzazione e nascondere l’interfaccia utente di ContextHub](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
 ## Informazioni sugli store ContextHub {#about-contexthub-stores}
 
@@ -103,7 +103,7 @@ I singoli elementi di dati sono memorizzati come un insieme di coppie chiave/val
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
 
-Tieni presente che i candidati all’archivio personalizzato possono definire funzioni aggiuntive per consentire l’accesso ai dati dell’archivio.
+I candidati all’archivio personalizzato possono definire funzioni aggiuntive che forniscono l’accesso ai dati dell’archivio.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Le regole utilizzate per risolvere questi segmenti sono riepilogate come segue:
 
 >[!WARNING]
 >
->I segmenti installati vengono forniti come configurazioni di riferimento per aiutarti a creare una configurazione dedicata per il progetto e come tale non devono essere utilizzati direttamente.
+>I segmenti installati vengono forniti come configurazioni di riferimento per aiutarti a creare la tua configurazione dedicata per il progetto. Non utilizzarle direttamente.
 
 ## Debug di ContextHub {#debugging-contexthub}
 

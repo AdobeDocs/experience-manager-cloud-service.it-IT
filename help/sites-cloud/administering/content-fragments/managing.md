@@ -4,10 +4,10 @@ description: Scopri come gestire i frammenti di contenuto AEM dalla console e da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2622'
-ht-degree: 51%
+source-wordcount: '2617'
+ht-degree: 46%
 
 ---
 
@@ -31,7 +31,7 @@ Dopo aver definito [Modelli per frammenti di contenuto](#creating-a-content-mode
 >
 >I frammenti di contenuto possono essere utilizzati:
 >
->* per la [distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
+>* per [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
 >* quando si esegue l’authoring delle pagine; consulta [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!NOTE]
@@ -58,7 +58,7 @@ Per ulteriori informazioni consulta:
 
 * [Cercare e filtrare nella console Frammenti di contenuto](#filtering-fragments)
 
-* Una selezione di [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)scelte rapide da tastiera è disponibile per questa console
+* Una selezione di [scelte rapide da tastiera](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) sono disponibili per l’utilizzo in questa console
 
 >[!NOTE]
 >
@@ -85,9 +85,9 @@ Nella console puoi osservare tre aree principali:
    * Puoi selezionare un ramo specifico della struttura
    * Può essere ridimensionato per mostrare le cartelle nidificate
 * Pannello principale/destro; da qui puoi:
-   * Visualizzare l’elenco di tutti i frammenti di contenuto nel ramo selezionato della struttura:
+   * Visualizza l’elenco di tutti i frammenti di contenuto nel ramo selezionato della struttura:
       * Verranno visualizzati i frammenti di contenuto della cartella selezionata e tutte le cartelle secondarie:
-         * La posizione è indicata dalle breadcrumb; puoi utilizzarle anche per modificare la posizione:
+         * La posizione è indicata dalle breadcrumb; queste possono essere utilizzate anche per modificare la posizione:
       * [Vengono visualizzate informazioni su ciascun frammento](#information-content-fragments)
          * [È possibile selezionare le colonne da visualizzare](#select-columns-console)
       * [Vari campi di informazioni](#information-content-fragments) su un frammento di contenuto forniscono collegamenti con cui, a seconda del campo, è possibile:
@@ -160,13 +160,13 @@ Il pannello principale (vista tabella) della console, a destra, fornisce una ser
 * **Nome**
    * Fornisce un collegamento per aprire il frammento nell’editor.
 * **Modello**
-   * Solo informazioni.
+   * Solo informativo.
    * Può essere utilizzato per [Filtro rapido](#fast-filtering)
 * **Cartella**
    * Fornisce un collegamento per aprire la cartella nella console.
 Passando il puntatore del mouse sul nome della cartella verrà visualizzato il percorso JCR.
 * **Stato**
-   * Solo informazioni.
+   * Solo informativo.
    * Può essere utilizzato per [Filtro rapido](#fast-filtering)
 * **Anteprima**
    * Solo informazioni:
@@ -174,18 +174,18 @@ Passando il puntatore del mouse sul nome della cartella verrà visualizzato il p
       * **Fuori sincronizzazione**: il frammento di contenuto è fuori sincronizzazione nei servizi di **authoring** e **anteprima**. È necessario **Pubblica** in **Anteprima** per garantire che le due istanze tornino ad essere sincronizzate.
       * vuoto: il frammento di contenuto non esiste nel servizio di **Anteprima**.
 * **Modificato**
-   * Solo informazioni.
+   * Solo informativo.
 * **Modificato da**
-   * Solo informazioni.
+   * Solo informativo.
    * Può essere utilizzato per [Filtro rapido](#fast-filtering).
 * **Tag**
-   * Solo informazioni.
+   * Solo informativo.
    * Mostra tutti i tag relativi al frammento di contenuto, sia Principale che eventuali varianti.
    * Può essere utilizzato per [Filtro rapido](#fast-filtering).
 * **Pubblicazione**
-   * Solo informazioni.
+   * Solo informativo.
 * **Pubblicato da**
-   * Solo informazioni.
+   * Solo informativo.
    * Può essere utilizzato per [Filtro rapido](#fast-filtering).
 * **Con riferimento da**:
    * Fornisce un collegamento che apre una finestra di dialogo in cui sono elencati tutti [riferimenti principali](#parent-references-fragment)  del frammento, compresi i frammenti di contenuto, frammenti di esperienza e pagine. Per aprire un riferimento specifico, fare clic su **Titolo** nella finestra di dialogo.
@@ -223,10 +223,10 @@ Per creare un frammento di contenuto:
 
 1. Il **Nuovo frammento di contenuto** viene visualizzata la finestra di dialogo, da qui puoi specificare:
 
-   * **Posizione** : verrà compilato automaticamente con la posizione corrente, ma se necessario puoi selezionare una posizione diversa
-   * **Modello per frammento di contenuto**: dall’elenco a discesa seleziona il modello da utilizzare come base per il frammento
+   * **Posizione** - Completato automaticamente con la posizione corrente, ma se necessario puoi selezionare una posizione diversa.
+   * **Modello per frammenti di contenuto** - Seleziona dall’elenco a discesa il modello da utilizzare come base per il frammento.
    * **Titolo**
-   * **Nome** : verrà compilato automaticamente in base al **Titolo**, ma puoi modificarlo se necessario
+   * **Nome** - Completamento automatico in base al **Titolo**, ma puoi modificarlo, se necessario.
    * **Descrizione**
 
    ![Finestra di dialogo Nuovo frammento di contenuto](assets/cf-managing-new-cf-dialog.png)
@@ -293,7 +293,7 @@ Puoi pubblicare i frammenti di contenuto in:
 
   >[!CAUTION]
   >
-  >La pubblicazione di frammenti di contenuto nel **Servizio di anteprima** è disponibile solo dalla Console Frammenti di contenuto utilizzando l’azione **Pubblica**.
+  >Pubblicazione di frammenti di contenuto in **Servizio di anteprima** è disponibile solo dalla console Frammenti di contenuto; utilizzando **Pubblica** azione.
 
   >[!NOTE]
   >
@@ -332,7 +332,7 @@ Dopo aver selezionato **Pubblica** azione:
 
    >[!NOTE]
    >
-   >Se necessario, ti verrà richiesto di specificare i riferimenti da pubblicare. Per impostazione predefinita, i riferimenti vengono pubblicati anche nel Servizio di anteprima per garantire che non vi siano interruzioni nel contenuto.
+   >Se necessario, ti verrà richiesto di specificare i riferimenti da pubblicare. Per impostazione predefinita, i riferimenti vengono pubblicati anche nel servizio di anteprima per garantire che non vi siano interruzioni nel contenuto.
 
 1. Conferma l’azione di pubblicazione.
 

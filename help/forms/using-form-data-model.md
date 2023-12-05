@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1213'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ Puoi creare [Forms adattivo](creating-adaptive-form.md) e frammenti di moduli ad
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Tocca per espandere **[!UICONTROL Seleziona modello dati modulo]**. Sono elencati tutti i modelli di dati dei moduli disponibili.
+1. Seleziona per espandere **[!UICONTROL Seleziona modello dati modulo]**. Sono elencati tutti i modelli di dati dei moduli disponibili.
 
    Seleziona un dal modello dati.
 
@@ -93,14 +93,14 @@ L’editor modello dati modulo consente di generare e modificare dati di esempio
 <!--To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
-1. Select an interactive communication and tap **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
-1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
+1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
+1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and select **[!UICONTROL Preview]**.
 
 The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-Per visualizzare in anteprima un modulo adattivo con dati di esempio, apri il modulo adattivo in modalità di creazione e tocca **[!UICONTROL Anteprima]**.
+Per visualizzare in anteprima un modulo adattivo con dati di esempio, apri il modulo adattivo in modalità di creazione e seleziona **[!UICONTROL Anteprima]**.
 
 ## Precompilare utilizzando il servizio Modello dati modulo {#prefill}
 
@@ -130,10 +130,10 @@ All’invio del modulo, i dati per l’oggetto modello dati configurato vengono 
 
 1. Aggiungi al modello dati del modulo un oggetto modello dati che include una proprietà binaria.
 1. Nel modulo adattivo, trascina **[!UICONTROL File allegato]** dal browser Componenti al modulo adattivo.
-1. Tocca per selezionare il componente aggiunto e tocca ![icona_impostazioni](assets/configure-icon.svg) per aprire il browser Proprietà del componente.
-1. Nel campo Associa riferimento, tocca ![foldersearch_18](assets/folder-search-icon.svg) e passa alla selezione della proprietà binaria aggiunta nel modello dati del modulo. Configura altre proprietà, a seconda delle necessità.
+1. Seleziona per selezionare il componente aggiunto e selezionare ![icona_impostazioni](assets/configure-icon.svg) per aprire il browser Proprietà del componente.
+1. Nel campo Associa riferimento, seleziona ![foldersearch_18](assets/folder-search-icon.svg) e passa alla selezione della proprietà binaria aggiunta nel modello dati del modulo. Configura altre proprietà, a seconda delle necessità.
 
-   Tocca ![pulsante di controllo](assets/save_icon.svg) per salvare le proprietà. Il campo allegato è ora associato alla proprietà binaria del modello dati del modulo.
+   Seleziona ![pulsante di controllo](assets/save_icon.svg) per salvare le proprietà. Il campo allegato è ora associato alla proprietà binaria del modello dati del modulo.
 
 1. Nella sezione Invio delle proprietà Contenitore modulo adattivo, abilita **[!UICONTROL Invia allegati modulo]**. Invia l’allegato nel campo della proprietà binaria all’origine dati al momento dell’invio del modulo.
 

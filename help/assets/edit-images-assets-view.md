@@ -3,10 +3,10 @@ title: Modificare le immagini
 description: Modifica le immagini utilizzando le opzioni baate su [!DNL Adobe Photoshop Express] e salva le immagini aggiornate come versioni.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 71%
+source-wordcount: '1136'
+ht-degree: 72%
 
 ---
 
@@ -91,7 +91,7 @@ Per modificare le immagini mediante [!DNL Adobe Express] nell’editor incorpora
 
    ![Editor incorporato Adobi Express](assets/embedded-editor.png)
 
-   Puoi sfruttare le funzionalità di [!DNL Adobe Express] per eseguire tutte le azioni correlate alla modifica delle immagini, ad esempio [ridimensiona immagine](https://helpx.adobe.com/in/express/using/resize-image.html), [rimuovere o modificare il colore di sfondo](https://helpx.adobe.com/in/express/using/remove-background.html), [ritaglia immagine](https://helpx.adobe.com/in/express/using/crop-image.html)e molto altro.
+   Puoi utilizzare la funzionalità di [!DNL Adobe Express] per eseguire tutte le azioni correlate alla modifica delle immagini, ad esempio [ridimensiona immagine](https://helpx.adobe.com/in/express/using/resize-image.html), [rimuovere o modificare il colore di sfondo](https://helpx.adobe.com/in/express/using/remove-background.html), [ritaglia immagine](https://helpx.adobe.com/in/express/using/crop-image.html)e molto altro.
 
 1. Una volta completata la modifica dell’immagine, puoi scaricare una risorsa come nuova risorsa o salvarla come nuova versione.
 

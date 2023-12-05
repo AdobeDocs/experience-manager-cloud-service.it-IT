@@ -3,9 +3,9 @@ title: Come abilitare Adobe Analytics per un modulo adattivo?
 description: Experience Cloud Setup Automation consente di collegare Adobe Analytics a un modulo adattivo per monitorare le informazioni sulle interazioni e il coinvolgimento dei visitatori.
 keywords: Abilita Adobe Analytics per un modulo adattivo utilizzando Experience Cloud Setup Automation, Abilita Adobe Analytics in Forms, Adobe Analytics in Adaptive Forms, integrazione Forms Analytics, Forms e Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1555'
 ht-degree: 2%
 
 ---
@@ -93,7 +93,7 @@ Per abilitare e configurare Adobe Analytics per il Forms adattivo, effettua le s
 1. Crea un contenitore di configurazione per servizi cloud:
    1. Vai a **[!UICONTROL Strumenti > Generale > Browser configurazioni]**.
    1. Seleziona o crea un contenitore di configurazione e abilita la cartella per **[!UICONTROL Configurazioni cloud]**.
-   1. Tocca **[!UICONTROL Salva e chiudi]** per salvare la configurazione e uscire dalla finestra di dialogo.
+   1. Seleziona **[!UICONTROL Salva e chiudi]** per salvare la configurazione e uscire dalla finestra di dialogo.
 1. Nella tua istanza AEM, vai a **[Forms]** >> **[Forms e documento]**.
 1. Seleziona il **[!UICONTROL Modulo]** >> **[!UICONTROL Proprietà]**, Nella **[!UICONTROL Contenitore configurazione]**, seleziona il contenitore di configurazione creato o selezionato in **[!UICONTROL Browser configurazioni]** nel passaggio 1.
 1. Seleziona il pannello Attività nella barra a sinistra e fai clic su **Configurazione analisi** e **Attivare Adobe Analytics**.

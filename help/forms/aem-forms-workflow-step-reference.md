@@ -4,10 +4,10 @@ description: I flussi di lavoro incentrati su Forms consentono di creare rapidam
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utilizzare i flussi di lavoro AEM, utilizzando Assegna passaggi attività, converti in passaggi PDF/A, Genera un documento di passaggi registrati, Utilizza flussi di lavoro, Firma passaggio documento, Genera un passaggio di output stampato, Genera output PDF non interattivo
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '7448'
-ht-degree: 1%
+source-wordcount: '7367'
+ht-degree: 0%
 
 ---
 
@@ -286,7 +286,7 @@ Per spiegare gli input per i campi del passaggio, vengono utilizzati, ad esempio
    <td>Valore<br /> </td> 
   </tr> 
   <tr> 
-   <td>Nome<br /> </td> 
+   <td>FirstName<br /> </td> 
    <td>Sarah<br /> </td> 
   </tr> 
   <tr> 

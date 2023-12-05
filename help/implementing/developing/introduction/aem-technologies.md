@@ -2,10 +2,10 @@
 title: Fondamenti tecnici AEM
 description: Una panoramica delle basi tecniche dell’AEM, compreso il modo in cui l’AEM è strutturato e le tecnologie fondamentali come JCR, Sling e OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 1%
+source-wordcount: '2130'
+ht-degree: 0%
 
 ---
 
@@ -247,7 +247,7 @@ Utilizza il pacchetto API di Sling, `org.apache.sling.*`, e le librerie di tag.
 
 Un&#39;ultima considerazione è la necessità di fare riferimento agli elementi esistenti all&#39;interno degli script.
 
-Gli script più complessi (aggregazione di script) accedono a più risorse (ad esempio navigazione, barra laterale, piè di pagina, elementi di un elenco) e includono *resource*.
+Gli script più complessi (aggregazione di script) accedono a più risorse (ad esempio, navigazione, barra laterale, piè di pagina, elementi di un elenco) e includono *resource*.
 
 In questo caso, puoi utilizzare `sling:include("/<path>/<resource>")` comando. Include effettivamente la definizione della risorsa di riferimento.
 
@@ -273,7 +273,7 @@ Questa architettura consente di estendere Sling con moduli specifici per le appl
 Questa funzionalità consente di eseguire le azioni seguenti su uno qualsiasi dei pacchetti all’interno dell’installazione:
 
 * Installa
-* Avvia
+* Inizia
 * Arresta
 * Aggiornare
 * Disinstalla

@@ -2,10 +2,10 @@
 title: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service
 description: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 12%
+source-wordcount: '2658'
+ht-degree: 11%
 
 ---
 
@@ -133,7 +133,7 @@ Ci sono altri servizi adiacenti:
    * È responsabile dell’esposizione dei dati dei clienti come le metriche delle licenze (ad esempio, Richieste di contenuti, Archiviazione, Utenti) o i rapporti sull’utilizzo (come il numero di caricamenti e download).
    * I dati del cliente possono essere esposti tramite API e all’interno di interfacce utente del prodotto (come Cloud Manager).
 * Il servizio Real-User Metric (RUM):
-   * È responsabile della raccolta di metriche chiave da un’esperienza del cliente (come visualizzazioni di pagina, elementi vitali web di base, eventi di conversione), nonché della risposta alle query associate (ad esempio, visualizzazioni della pagina superiore per un determinato dominio negli ultimi 7 giorni).
+   * È responsabile della raccolta di metriche chiave da un’esperienza del cliente (come visualizzazioni di pagina, elementi vitali web di base, eventi di conversione) e della risposta alle query associate (ad esempio, visualizzazioni di pagina principali per un determinato dominio negli ultimi 7 giorni).
 * Il servizio Assets Compute:
    * È responsabile dell’elaborazione di immagini, video e documenti caricati, ad esempio file PDF e Adobe Photoshop. L’elaborazione può utilizzare Adobe Sensei per estrarre metadati di immagini e video (come tag descrittivi o toni di colore primari) e generare rappresentazioni (come dimensioni o formati diversi) con accesso a API come le API di Adobe Photoshop e Adobe Lightroom.
 * Il servizio Identity Management (IMS):
@@ -190,7 +190,7 @@ Sviluppatori e amministratori gestiscono l’applicazione AEM as a Cloud Service
 
 Cloud Manager gestisce tutti gli aggiornamenti alle istanze dell’AEM as a Cloud Service. È una scelta obbligatoria, essendo l’unica soluzione per generare, testare e distribuire l’applicazione del cliente ai livelli di authoring, anteprima e pubblicazione. Questi aggiornamenti possono essere attivati per Adobe, quando è pronta una nuova versione dell’AEM Cloud Service, oppure da te stesso, quando è pronta una nuova versione dell’applicazione.
 
-Questa viene implementata da una pipeline di implementazione, associata a ogni ambiente all’interno di un programma. Quando una pipeline di Cloud Manager è in esecuzione, crea una nuova versione dell’applicazione del cliente, sia per il livello di authoring che per quello di pubblicazione. Tale risultato si ottiene combinando gli ultimi pacchetti cliente con la più recente immagine linea di base di Adobe.
+Questa viene implementata da una pipeline di implementazione, associata a ogni ambiente all’interno di un programma. Quando una pipeline di Cloud Manager è in esecuzione, crea una nuova versione dell’applicazione del cliente, sia per il livello di authoring che per quello di pubblicazione. Ciò si ottiene combinando gli ultimi pacchetti cliente con l’immagine di Adobe della linea di base più recente.
 
 La pipeline di distribuzione viene attivata quando i clienti apportano modifiche al codice o quando Adobe distribuisce una nuova versione di manutenzione.
 
@@ -225,7 +225,7 @@ L’architettura più recente di AEM as a Cloud Service introduce alcune modific
 
 Consulta anche:
 
-* Servizi di consegna Edge:
+* Edge Delivery Services:
 
    * [Panoramica di AEM as a Cloud Service - con Edge Delivery Services](/help/edge/overview.md)
    * [Utilizzo di Edge Delivery Services](/help/edge/using.md)

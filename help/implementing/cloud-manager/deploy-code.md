@@ -2,10 +2,10 @@
 title: Distribuzione del codice
 description: Scopri come distribuire il codice con le pipeline di Cloud Manager in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 91%
+source-wordcount: '1190'
+ht-degree: 80%
 
 ---
 
@@ -131,8 +131,8 @@ Tutte le distribuzioni di Cloud Service seguono un processo continuo per garanti
 In rari casi, i passaggi di distribuzione nell’ambiente di produzione possono non riuscire per motivi transitori. In questi casi, la riesecuzione del passaggio di distribuzione nell’ambiente di produzione è supportata fino a quando il passaggio di distribuzione nell’ambiente di produzione è stato completato, indipendentemente dal tipo di completamento (ad esempio, annullato o non riuscito). La riesecuzione crea una nuova esecuzione utilizzando la stessa pipeline costituita da tre passaggi.
 
 1. Passaggio di convalida: si tratta essenzialmente della stessa convalida che si verifica durante una normale esecuzione della pipeline.
-1. Passaggio di compilazione: nel contesto di una riesecuzione, il passaggio di compilazione copia gli artefatti e non esegue effettivamente un nuovo processo di compilazione.
-1. Passaggio di distribuzione della produzione: questa opzione utilizza la stessa configurazione e le stesse opzioni del passaggio di distribuzione di produzione in una normale esecuzione della pipeline.
+1. Passaggio di build: nel contesto di una riesecuzione, il passaggio di build copia gli artefatti e non esegue effettivamente un nuovo processo di build.
+1. Passaggio di distribuzione nell’ambiente di produzione: utilizza la stessa configurazione e le stesse opzioni del passaggio di distribuzione nell’ambiente di produzione in una normale esecuzione della pipeline.
 
 In tali circostanze, in cui è possibile eseguire una riesecuzione, la pagina di stato della pipeline di produzione fornisce l’opzione **Riesegui** accanto a quella consueta di **Scarica registro build**.
 
@@ -151,14 +151,14 @@ In tali circostanze, in cui è possibile eseguire una riesecuzione, la pagina di
 
 ### Riesecuzione dell’API {#reexecute-API}
 
-Oltre a essere disponibile nell’interfaccia utente, è possibile utilizzare l’[API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) per attivare le riesecuzioni e identificare le esecuzioni attivate come riesecuzioni.
+Oltre a essere disponibile nell’interfaccia utente, puoi utilizzare [API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) per attivare le riesecuzioni e identificare le esecuzioni attivate come riesecuzioni.
 
 #### Attivazione di una riesecuzione {#reexecute-deployment-api}
 
 Per attivare una nuova esecuzione, effettua una richiesta PUT al collegamento HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` nello stato del passaggio di distribuzione nell’ambiente di produzione.
 
 * Se tale collegamento è presente, l’esecuzione può essere riavviata da quel passaggio.
-* Se assente, l’esecuzione non può essere riavviata da quel passaggio.
+* Se è assente, l’esecuzione non può essere riavviata da quel passaggio.
 
 Questo collegamento è disponibile solo per il passaggio di distribuzione nell’ambiente di produzione.
 

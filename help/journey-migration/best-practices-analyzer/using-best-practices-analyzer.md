@@ -2,10 +2,10 @@
 title: Utilizzo di Best Practices Analyzer
 description: Scopri come utilizzare Best Practices Analyzer per comprendere lo stato di preparazione all’aggiornamento.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 44%
+source-wordcount: '2418'
+ht-degree: 42%
 
 ---
 
@@ -57,7 +57,7 @@ Best Practices Analyzer può essere scaricato come file zip dal portale di distr
 
 Segui questa sezione per scoprire come visualizzare il rapporto Best Practices Analyzer:
 
-1. Seleziona Adobe Experience Manager e passa a Strumenti -> **Operazioni** -> **Best Practices Analyzer**.
+1. Seleziona Adobe Experience Manager e passa a Strumenti > **Operazioni** > **Best Practices Analyzer**.
 
    ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
@@ -125,7 +125,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
 >title="Interpretazione del rapporto di Best Practices Analyzer"
->abstract="Sono disponibili due opzioni per visualizzare gli output del rapporto di BPA: interfaccia utente e CSV. Quando lo strumento Best Practices Analyzer viene eseguito nell’istanza di AEM, il rapporto per l’interfaccia utente viene visualizzato sotto forma di risultati nella finestra dello strumento. Il formato CSV del rapporto include informazioni generate dall’output del rilevatore pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza."
+>abstract="Sono disponibili due opzioni per visualizzare gli output del rapporto di BPA: interfaccia utente e CSV. Quando lo strumento Best Practices Analyzer viene eseguito nell’istanza di AEM, il rapporto per l’interfaccia utente viene visualizzato sotto forma di risultati nella finestra dello strumento. Il formato CSV del rapporto include informazioni generate dall’output del rilevatore di pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=it#analysis-report" text="Analisi del rapporto di Best Practices Analyzer"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=it" text="Categorie del rapporto di Best Practices Analyzer"
 
@@ -233,7 +233,7 @@ Sono possibili i seguenti valori di risposta:
 
 ## Informazioni per l’amministratore
 
-### Regolazione della durata della cache {#cache-adjustment}
+### Regolazione durata cache {#cache-adjustment}
 
 La durata predefinita della cache BPA è di 24 ore. Con l’opzione per aggiornare un rapporto e rigenerare la cache, sia nell’istanza AEM che nell’interfaccia HTTP, questo valore predefinito è probabilmente appropriato per la maggior parte degli usi del BPA. Se il tempo di generazione del rapporto è particolarmente lungo per la tua istanza AEM, puoi regolare la durata della cache per ridurre al minimo la rigenerazione del rapporto.
 
@@ -242,7 +242,7 @@ Il valore della durata della cache viene memorizzato come la proprietà `maxCach
 
 Il valore di questa proprietà corrisponde alla durata della cache, in secondi. Un amministratore può regolare la durata della cache utilizzando CRX/DE Lite.
 
-### Installazione in AEM 6.1 {#installing-on-aem61}
+### Installazione su AEM 6.1 {#installing-on-aem61}
 
 BPA utilizza un account utente del servizio di sistema denominato `repository-reader-service` per eseguire il rilevatore pattern. Questo account è disponibile in AEM 6.2 e versioni successive. In AEM 6.1, questo account deve essere creato *prima di* l’installazione di BPA, procedendo come segue:
 

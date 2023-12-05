@@ -2,10 +2,10 @@
 title: Quali sono le funzionalità di layout di Adaptive Forms?
 description: Il layout e l’aspetto di Adaptive Forms su vari dispositivi sono regolati dalle impostazioni di layout. Comprendere i vari layout e come applicarli.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 3%
+source-wordcount: '847'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,7 @@ Per modificare il layout di un modulo adattivo, utilizza la modalità Creazione 
 
 Un autore di moduli può associare un layout a ciascun pannello di un modulo adattivo, incluso il pannello principale.
 
-I layout del pannello sono disponibili all&#39;indirizzo `/libs/fd/af/layouts/panel` posizione. Tocca il pannello e seleziona ![cmppr1](assets/configure-icon.svg) per visualizzare le proprietà del pannello.
+I layout del pannello sono disponibili all&#39;indirizzo `/libs/fd/af/layouts/panel` posizione. Seleziona il pannello e seleziona ![cmppr1](assets/configure-icon.svg) per visualizzare le proprietà del pannello.
 
 ![Elenco dei layout del pannello per il pannello principale di un modulo adattivo](assets/layouts.png)
 

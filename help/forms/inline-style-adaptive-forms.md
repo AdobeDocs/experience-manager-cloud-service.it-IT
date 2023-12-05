@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 4%
+source-wordcount: '761'
+ht-degree: 3%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 4%
 
 Per aggiungere stili in linea a un componente:
 
-1. Apri il modulo nell’editor moduli e cambia la modalità in modalità di stile. Per impostare la modalità stile, nella barra degli strumenti della pagina tocca ![elenco a discesa area di lavoro](assets/Smock_ChevronDown.svg) > **[!UICONTROL Stile]**.
-1. Seleziona un componente nella pagina e tocca il pulsante Modifica ![edit-button](assets/edit.svg). Le proprietà di stile si aprono nella barra laterale.
+1. Apri il modulo nell’editor moduli e cambia la modalità in modalità di stile. Per cambiare la modalità in modalità stile, nella barra degli strumenti della pagina seleziona ![elenco a discesa area di lavoro](assets/Smock_ChevronDown.svg) > **[!UICONTROL Stile]**.
+1. Seleziona un componente nella pagina e fai clic sul pulsante Modifica ![edit-button](assets/edit.svg). Le proprietà di stile si aprono nella barra laterale.
 
    Puoi anche selezionare i componenti dalla struttura gerarchica del modulo nella barra laterale. La struttura della gerarchia dei moduli è disponibile come Oggetti modulo nella barra laterale.
 
@@ -46,7 +46,7 @@ Per aggiungere stili in linea a un componente:
    * [!UICONTROL Avanzate] (Consente di scrivere CSS personalizzati per il componente)
 
 1. Allo stesso modo, potete applicare stili ad altre parti di un componente, ad esempio [!UICONTROL Widget], [!UICONTROL Didascalia], e [!UICONTROL Aiuto].
-1. Tocca **[!UICONTROL Fine]** per confermare le modifiche o **[!UICONTROL Annulla]** per ignorare le modifiche.
+1. Seleziona **[!UICONTROL Fine]** per confermare le modifiche o **[!UICONTROL Annulla]** per ignorare le modifiche.
 
 ## Esempio: stili in linea per un componente campo {#example-inline-styles-for-a-field-component}
 
@@ -81,7 +81,7 @@ Osserva la modifica dello stile della casella di testo come mostrato nell’imma
   <tr>
    <td><p>Etichetta</p> </td>
    <td><p>Dimension e posizione &gt; larghezza</p> </td>
-   <td><p>100px</p> </td>
+   <td><p>100 px</p> </td>
    <td><p>Imposta la larghezza come 100 px per l'etichetta</p> </td>
   </tr>
   <tr>
@@ -111,9 +111,9 @@ Seguendo i passaggi precedenti, è possibile selezionare e assegnare uno stile a
 
 ## Copiare e incollare gli stili {#copy-paste-styles}
 
-È inoltre possibile copiare e incollare uno stile da un componente a un altro in un modulo adattivo. In **[!UICONTROL Stile]** , tocca il componente e fai clic sull’icona Copia. ![Copia](assets/property-copy-icon.svg).
+È inoltre possibile copiare e incollare uno stile da un componente a un altro in un modulo adattivo. In **[!UICONTROL Stile]** , seleziona il componente e fai clic sull’icona Copia. ![Copia](assets/property-copy-icon.svg).
 
-Tocca l’altro componente dello stesso tipo, quindi tocca l’icona Incolla ![Copia](assets/Smock_Paste_18_N.svg) per incollare lo stile copiato. Tocca anche l’icona Cancella stile ![Copia](assets/clear-style-icon.svg) per cancellare lo stile applicato.
+Seleziona l’altro componente dello stesso tipo e fai clic sull’icona Incolla ![Copia](assets/Smock_Paste_18_N.svg) per incollare lo stile copiato. È inoltre possibile selezionare l&#39;icona Cancella stile ![Copia](assets/clear-style-icon.svg) per cancellare lo stile applicato.
 
 ## Impostare stili per diversi stati di un componente {#set-styles-for-states}
 
@@ -121,15 +121,15 @@ Tocca l’altro componente dello stesso tipo, quindi tocca l’icona Incolla ![C
 
 Per definire lo stile per uno stato di un componente:
 
-1. In **[!UICONTROL Stile]** , tocca il componente e fai clic sull’icona Modifica ![Modifica](assets/Smock_Edit_18_N.svg).
+1. In **[!UICONTROL Stile]** , seleziona il componente e fai clic sull’icona Modifica. ![Modifica](assets/Smock_Edit_18_N.svg).
 
 1. Seleziona lo stato del componente utilizzando **[!UICONTROL Stato]** elenco a discesa.
 
    ![Seleziona stato](assets/select-state.png)
 
-1. Definisci lo stile per lo stato selezionato del componente e tocca ![Salva](assets/save_icon.svg) per salvare le proprietà.
+1. Definisci lo stile per lo stato selezionato del componente e seleziona ![Salva](assets/save_icon.svg) per salvare le proprietà.
 
-È inoltre possibile simulare gli stati di esito positivo e di errore. Tocca l’icona Espandi per visualizzare **[!UICONTROL Simula esito positivo]** e **[!UICONTROL Simula errore]** opzioni.
+È inoltre possibile simulare gli stati di esito positivo e di errore. Seleziona l’icona Espandi per visualizzare **[!UICONTROL Simula esito positivo]** e **[!UICONTROL Simula errore]** opzioni.
 
 ![Simula stati](assets/simulate-states.png)
 

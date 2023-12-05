@@ -4,10 +4,10 @@ description: Utilizza i componenti core modulo adattivo in una pagina AEM Sites 
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 2%
+source-wordcount: '2067'
+ht-degree: 1%
 
 ---
 
@@ -119,7 +119,7 @@ In [!UICONTROL Modifica contenitore Forms adattivo] , è possibile specificare q
 
 * **Scheda Invio**
 
-   * **Reindirizza all’URL**
+   * **Reindirizza a URL**
       * **URL/percorso di reindirizzamento**: specifica l’URL o il percorso a cui viene reindirizzato un modulo adattivo dopo l’invio.
 
       * **Azione di invio**: un’azione di invio viene attivata quando un utente fa clic sul pulsante Invia in un modulo adattivo. È possibile [configurare l’azione di invio su modulo adattivo](/help/forms/configuring-submit-actions.md). I moduli adattivi forniscono le seguenti azioni di invio pronte all’uso:
@@ -203,7 +203,7 @@ Per utilizzare i componenti Forms adattivi in una pagina AEM Sites, includi `Cus
 
 1. Apri la pagina AEM Sites in modalità di modifica.
 1. Dal pannello del browser Componenti, trascina [!UICONTROL Forms adattivo - Incorpora] sulla pagina.
-1. Tocca il [!UICONTROL Forms adattivo - Incorpora] nella pagina sites e tocca ![icona_impostazioni](/help/forms/assets/Smock_Wrench_18_N.svg) sulla barra delle azioni. Il **[!UICONTROL Modifica Forms adattivo - Incorpora]** viene visualizzata una finestra di dialogo.
+1. Seleziona la [!UICONTROL Forms adattivo - Incorpora] nella pagina sites e seleziona ![icona_impostazioni](/help/forms/assets/Smock_Wrench_18_N.svg) sulla barra delle azioni. Il **[!UICONTROL Modifica Forms adattivo - Incorpora]** viene visualizzata una finestra di dialogo.
 1. Sfoglia e seleziona il modulo adattivo da incorporare nel [!UICONTROL Percorso risorsa].
 1. Salva le impostazioni. Il modulo adattivo è ora incorporato nella pagina.
 
@@ -253,7 +253,7 @@ Considera i seguenti scenari per la pubblicazione di Forms adattivi aggiunti tra
 Per modificare la configurazione o la proprietà di un modulo adattivo, effettua una delle seguenti operazioni:
 
 * Apri il modulo originale in un modulo adattivo nel rispettivo editor e modificalo.
-* In modalità di modifica, tocca il modulo adattivo all’interno della pagina del sito, quindi tocca **[!UICONTROL Modifica in una nuova finestra]**. Il modulo originale viene aperto in modalità di modifica modificabile.
+* Seleziona il modulo adattivo dalla pagina del sito in modalità di modifica, quindi seleziona **[!UICONTROL Modifica in una nuova finestra]**. Il modulo originale viene aperto in modalità di modifica modificabile.
 
 ## Modificare il layout di un modulo adattivo aggiunto a una pagina AEM Sites {#change-layout-af-aem-sites-page}
 

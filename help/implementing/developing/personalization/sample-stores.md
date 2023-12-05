@@ -2,9 +2,9 @@
 title: Candidati archivio ContextHub di esempio
 description: ContextHub fornisce diversi esempi di store candidati che puoi utilizzare nelle tue soluzioni
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '457'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ContextHub fornisce diversi esempi di store candidati che puoi utilizzare nelle 
 
 >[!WARNING]
 >
->I candidati per l’archivio di esempi vengono forniti come configurazioni di riferimento per aiutarti a creare una configurazione dedicata per il progetto e come tale non devono essere utilizzati direttamente.
+>I candidati per l’archivio di esempi vengono forniti come configurazioni di riferimento per aiutarti a creare una configurazione dedicata per il progetto. Non utilizzarle direttamente.
 
 ## Candidato per archivio campioni aem.segmentation {#aem-segmentation-sample-store-candidate}
 

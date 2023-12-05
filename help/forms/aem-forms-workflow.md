@@ -4,10 +4,10 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 'Utilizza AEM Forms Workflow per automatizzare e creare rapidamente flussi di lavoro per i processi aziendali. Ad esempio: revisione e approvazione, Generazione di PDF, Flussi di lavoro di Adobe Sign.'
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2392'
-ht-degree: 2%
+source-wordcount: '2373'
+ht-degree: 1%
 
 ---
 
@@ -65,8 +65,8 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per una richiesta d
 
 1. Apri la console Modelli di flusso di lavoro. L’URL predefinito è `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Seleziona **Crea**, quindi **Crea modello**. Viene visualizzata la finestra di dialogo Aggiungi modello flusso di lavoro.
-1. Inserisci il **Titolo** e **Nome** (facoltativo). Ad esempio, una richiesta di ipoteca. Tocca **Fine**.
-1. Seleziona il modello di flusso di lavoro creato e tocca **Modifica**. Ora è possibile aggiungere passaggi del flusso di lavoro per creare una logica di business. La prima volta che crei un modello di flusso di lavoro, contiene:
+1. Inserisci il **Titolo** e **Nome** (facoltativo). Ad esempio, una richiesta di ipoteca. Seleziona **Fine**.
+1. Seleziona il modello di flusso di lavoro creato e seleziona **Modifica**. Ora è possibile aggiungere passaggi del flusso di lavoro per creare una logica di business. La prima volta che crei un modello di flusso di lavoro, contiene:
 
    * I passaggi: Inizio flusso e Fine flusso. Questi passaggi rappresentano l’inizio e la fine del flusso di lavoro. Questi passaggi sono necessari e non possono essere modificati o rimossi.
    * Un esempio di passaggio Partecipante denominato Passaggio 1. Questo passaggio è configurato per assegnare un elemento di lavoro all’utente amministratore. Rimuovi questo passaggio.
@@ -79,7 +79,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per una richiesta d
 
 1. Creare fasi del flusso di lavoro. Un flusso di lavoro può avere più fasi. Queste fasi vengono visualizzate nella casella in entrata AEM e segnalano l’avanzamento del flusso di lavoro.
 
-   Per definire una fase, tocca il ![info-circle](assets/info-circle.png) per aprire le proprietà del modello di flusso di lavoro, aprire **Fasi** , aggiungi fasi per il modello di flusso di lavoro e tocca **Salva e chiudi**. Nell&#39;esempio di richiesta di mutuo, creare fasi: richiesta di prestito, stato della richiesta di prestito, documenti da firmare e documento di prestito firmato.
+   Per definire uno stadio, selezionare ![info-circle](assets/info-circle.png) per aprire le proprietà del modello di flusso di lavoro, aprire **Fasi** , aggiungere fasi per il modello di flusso di lavoro e selezionare **Salva e chiudi**. Nell&#39;esempio di richiesta di mutuo, creare fasi: richiesta di prestito, stato della richiesta di prestito, documenti da firmare e documento di prestito firmato.
 
 1. Trascina la selezione **Assegna attività** passa al modello di flusso di lavoro. Rendete il primo passo del modello.
 
@@ -91,7 +91,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per una richiesta d
 
    Per l’esempio di applicazione ipotecaria, configura la fase Assegna attività in modo che, una volta completata l’attività, utilizzi un modulo adattivo di sola lettura e visualizzi un documento PDF. Inoltre, seleziona un gruppo di utenti autorizzato ad approvare la richiesta di prestito. Il giorno **Azioni** , disabilita la **Invia** opzione. Creare un **actionTaken** variabile del tipo di dati String e specificare la variabile come **Variabile percorso**. Ad esempio, actionTaken. Aggiungere inoltre le route di approvazione e rifiuto. I percorsi vengono visualizzati come azioni separate (pulsanti) nella casella in entrata AEM. Il flusso di lavoro seleziona un ramo in base all’azione (pulsante) toccata da un utente.
 
-   Puoi importare il pacchetto di esempio, disponibile per il download all’inizio della sezione, per il set completo di valori di tutti i campi della fase assegna attività configurata, ad esempio, per l’applicazione ipotecaria.
+   Puoi importare il pacchetto di esempio, disponibile per il download all’inizio della sezione, per il set completo di valori di tutti i campi della fase assegna attività configurata, ad esempio, applicazione ipotecaria.
 
 1. Trascina il componente Divisione OR dal browser dei passaggi al modello di flusso di lavoro. La suddivisione OR crea una suddivisione nel flusso di lavoro, dopo la quale è attivo un solo ramo. Questo passaggio ti consente di introdurre nel flusso di lavoro i percorsi di elaborazione condizionale. Puoi aggiungere i passaggi del flusso di lavoro a ogni ramo in base alle esigenze.
 
@@ -117,7 +117,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per una richiesta d
 
    Per l&#39;esempio del mutuo, aggiungere un documento di record di generazione, due passaggi dell&#39;attività di assegnazione e un passaggio del documento di firma al ramo 1 del modello, come illustrato nell&#39;immagine seguente. Un passaggio dell’attività di assegnazione consiste nel visualizzare e inviare **documenti di prestito da firmare al richiedente** e un altro componente assegna attività è **per visualizzare i documenti firmati**. Aggiungete inoltre un componente Assegna attività al ramo 2. Viene attivato quando un utente tocca Rifiuta nella casella in entrata AEM.
 
-   Per il set completo di valori di tutti i campi dei passaggi dell’attività di assegnazione, del passaggio del documento record e del passaggio del documento di firma configurati per esempio per l’applicazione del mutuo, importa il pacchetto di esempio, disponibile per il download all’inizio di questa sezione.
+   Per il set completo di valori di tutti i campi dei passaggi dell’attività di assegnazione, del passaggio del documento record e del passaggio del documento di firma configurati, ad esempio, per l’applicazione di un mutuo, importa il pacchetto di esempio, disponibile per il download all’inizio di questa sezione.
 
    Il modello di flusso di lavoro è pronto. Puoi avviare il flusso di lavoro attraverso vari metodi. Per ulteriori informazioni, consulta [Avviare un flusso di lavoro incentrato su Forms su OSGi](#launch).
 
@@ -214,7 +214,7 @@ Puoi configurare le azioni di invio di un modulo adattivo in modo da avviare un 
 An administrator (a member of fd-administrators group) can configure a network folder to run a pre-configured workflow when a user places a file (such as a PDF file) in the folder. After the workflow completes, it can save the result file to a specified output folder. Such a folder is known as [Watched Folder](watched-folder-in-aem-forms.md). Perform the following procedure to configure a watched folder to launch a workflow:
 
 1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. A list of already configured watched folders is displayed.
-1. Tap **[!UICONTROL New]**. A list of fields is displayed. Specify a value for the following fields to configure a Watched Folder for a workflow:
+1. Select **[!UICONTROL New]**. A list of fields is displayed. Specify a value for the following fields to configure a Watched Folder for a workflow:
 
 <table>
  <tbody>
@@ -245,7 +245,7 @@ An administrator (a member of fd-administrators group) can configure a network f
  </tbody>
 </table>
 
-1. Tap **Advanced**. Specify a value for the following field and taps **Create**. The Watched Folder is configured to launch a workflow. Now, whenever a file is placed in the input directory of the Watched Folder, the specified workflow is triggered.
+1. Select **Advanced**. Specify a value for the following field and taps **Create**. The Watched Folder is configured to launch a workflow. Now, whenever a file is placed in the input directory of the Watched Folder, the specified workflow is triggered.
 
    | Field |Description |
    |---|---|
@@ -269,7 +269,7 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 ### Rimuovi istanze flusso di lavoro {#purge-workflow-instances}
 
-Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, consulta [Rimozione regolare delle istanze del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=it) rimozione delle istanze del flusso di lavoro
+La riduzione al minimo del numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, consulta [Rimozione regolare delle istanze del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=it) rimozione delle istanze del flusso di lavoro
 
 
 >[!MORELIKETHIS]

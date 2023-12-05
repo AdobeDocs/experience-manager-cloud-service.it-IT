@@ -2,10 +2,10 @@
 title: Come si crea un portale Forms su una pagina Experience Manager Sites?
 description: Scopri come creare un portale Forms e utilizzare i componenti core predefiniti in una pagina di AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 2%
+source-wordcount: '1785'
+ht-degree: 1%
 
 ---
 
@@ -89,7 +89,7 @@ Per importare componenti predefiniti di Forms Portal su AEM Forms as a Cloud Ser
 Prima di eseguire questi passaggi, assicurati di disporre di un account di archiviazione Azure e di una chiave di accesso per autorizzare l’accesso a [!DNL Azure] account di archiviazione.
 
 1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
-1. Seleziona una cartella per creare la configurazione e tocca **[!UICONTROL Crea]**.
+1. Seleziona una cartella per creare la configurazione e seleziona **[!UICONTROL Crea]**.
 1. Specifica un titolo per la configurazione nella **[!UICONTROL Titolo]** campo.
 1. Specifica il nome del [!DNL Azure] account di archiviazione in **[!UICONTROL Account di archiviazione Azure]** campo.
 
@@ -100,7 +100,7 @@ Per configurare il connettore di archiviazione unificata per i flussi di lavoro 
 1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Connettore di archiviazione unificata]**.
 1. In **[!UICONTROL Forms Portal]** sezione, seleziona **[!UICONTROL Azure]** dal **[!UICONTROL Storage]** elenco a discesa.
 1. Specifica la [percorso di configurazione per la configurazione dell’archiviazione Azure](#create-azure-storage-configuration) nel **[!UICONTROL Percorso configurazione archiviazione]** campo.
-1. Tocca **[!UICONTROL Pubblica]** e quindi tocca **[!UICONTROL Salva]** per salvare la configurazione.
+1. Seleziona **[!UICONTROL Pubblica]** e quindi seleziona **[!UICONTROL Salva]** per salvare la configurazione.
 
 ## Abilita componenti di Forms Portal {#enable-forms-portal-components}
 
@@ -112,11 +112,11 @@ Una volta attivato, il componente portale può essere utilizzato nell&#39;istanz
 
 Puoi creare e personalizzare Forms Portal sui siti web creati con AEM aggiungendo e configurando i componenti del portale. Assicurati che [i componenti sono abilitati](#enable-forms-portal-components) prima di utilizzarli nel portale Forms.
 
-Per aggiungere un componente, trascina e rilascia il componente dal riquadro Componenti al contenitore di layout sulla pagina, oppure tocca l’icona Aggiungi sul contenitore di layout e aggiungi il componente dal [!UICONTROL Inserisci nuovo componente] .
+Per aggiungere un componente, trascina e rilascia il componente dal riquadro Componenti al contenitore di layout sulla pagina, oppure seleziona l’icona Aggiungi sul contenitore di layout e aggiungi il componente dal [!UICONTROL Inserisci nuovo componente] .
 
 ### Configura componente Bozze e invii {#configure-drafts-submissions-component}
 
-Il componente Bozze e invii visualizza i moduli salvati come bozze da compilare in un secondo momento e quelli inviati. Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/configure_icon.png). In [!UICONTROL Bozze e invii] , specificare il titolo per indicare l&#39;elenco dei moduli come bozza o inviati. Seleziona anche se il componente deve elencare le bozze di moduli o i moduli inviati in formato scheda o elenco.
+Il componente Bozze e invii visualizza i moduli salvati come bozze da compilare in un secondo momento e quelli inviati. Per configurare, seleziona il componente, quindi fai clic su ![Icona Configura](assets/configure_icon.png). In [!UICONTROL Bozze e invii] , specificare il titolo per indicare l&#39;elenco dei moduli come bozza o inviati. Seleziona anche se il componente deve elencare le bozze di moduli o i moduli inviati in formato scheda o elenco.
 
 ![Icona Bozze](assets/drafts-component.png)
 
@@ -128,7 +128,7 @@ Il componente Ricerca ed Elenco viene utilizzato per elencare i moduli adattivi 
 
 ![Icona Ricerca ed elenco](assets/search-and-lister-component.png)
 
-Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/configure_icon.png). Il [!UICONTROL Ricerca ed elenco] viene visualizzata una finestra di dialogo.
+Per configurare, seleziona il componente, quindi fai clic su ![Icona Configura](assets/configure_icon.png). Il [!UICONTROL Ricerca ed elenco] viene visualizzata una finestra di dialogo.
 
 1. In [!UICONTROL Visualizzazione] , configura quanto segue:
    * In entrata **[!UICONTROL Titolo]**, specifica il titolo del componente Ricerca ed elenco. Un titolo indicativo consente agli utenti di eseguire ricerche rapide nell’elenco dei moduli.
@@ -140,7 +140,7 @@ Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/
 
 ### Configura componente collegamento {#configure-link-component}
 
-Il componente collegamento consente di fornire nella pagina i collegamenti a un modulo adattivo. Per configurare, tocca il componente, quindi tocca il ![Icona Configura](assets/configure_icon.png). Il [!UICONTROL Modifica componente collegamento] viene visualizzata una finestra di dialogo.
+Il componente collegamento consente di fornire nella pagina i collegamenti a un modulo adattivo. Per configurare, seleziona il componente, quindi fai clic su ![Icona Configura](assets/configure_icon.png). Il [!UICONTROL Modifica componente collegamento] viene visualizzata una finestra di dialogo.
 
 1. In [!UICONTROL Visualizzazione] , fornisci la didascalia del collegamento e la descrizione comando per facilitare l&#39;identificazione dei moduli rappresentati dal collegamento.
 1. In [!UICONTROL Info risorsa] , specifica il percorso dell’archivio in cui è memorizzata la risorsa.
@@ -151,34 +151,35 @@ Il componente collegamento consente di fornire nella pagina i collegamenti a un 
 Puoi configurare per l’invio di un modulo adattivo solo quando tutti i destinatari hanno completato la cerimonia di firma. Segui i passaggi seguenti per configurare l’impostazione utilizzando Adobe Sign.
 
 1. Nell’istanza di authoring, apri un modulo adattivo in modalità di modifica.
-1. Dal riquadro a sinistra, tocca l’icona Proprietà ed espandi la sezione **[!UICONTROL FIRMA ELETTRONICA]** opzione.
+1. Dal riquadro a sinistra, seleziona l’icona Proprietà ed espandi la **[!UICONTROL FIRMA ELETTRONICA]** opzione.
 1. Seleziona **[!UICONTROL Abilita Adobe Sign]**. Vengono visualizzate diverse opzioni di configurazione.
 1. In [!UICONTROL Inviare il modulo] , seleziona la sezione **[!UICONTROL dopo che ogni destinatario ha completato la firma]** per configurare l’azione Invia modulo, in cui il modulo viene inviato per la prima volta a tutti i destinatari per la firma. Una volta che tutti i destinatari hanno firmato il modulo, solo allora il modulo viene inviato.
 
 ## Salva Forms Adattivo Come Bozze {#save-adaptive-forms-as-drafts}
 
 È possibile salvare i moduli come bozze per completarli in un secondo momento. Esistono due modi in cui un modulo viene salvato come bozza:
-* Crea una regola &quot;Salva modulo&quot; su un componente del modulo, ad esempio un pulsante. Facendo clic sul pulsante, la regola viene attivata e il modulo viene salvato come bozza.
+
+* Crea una regola &quot;Salva modulo&quot; su un componente modulo, ad esempio un pulsante. Facendo clic sul pulsante, la regola viene attivata e il modulo viene salvato come bozza.
 * Abilita la funzione di salvataggio automatico, che salva il modulo in base all’evento specificato o dopo un intervallo di tempo configurato.
 
 ### Creare regole per salvare un modulo adattivo come bozza {#rule-to-save-adaptive-form-as-draft}
 
-Per creare una regola &quot;Salva modulo&quot; su un componente del modulo, ad esempio un pulsante, segui i passaggi seguenti:
+Per creare una regola &quot;Salva modulo&quot; su un componente modulo, ad esempio un pulsante, segui i passaggi seguenti:
 
 1. Nell’istanza di authoring, apri un modulo adattivo in modalità di modifica.
-1. Dal riquadro a sinistra, tocca ![Icona Componenti](assets/components_icon.png) e trascina [!UICONTROL Pulsante] al modulo.
-1. Tocca il [!UICONTROL Pulsante] e quindi tocca il ![Icona Configura](assets/configure_icon.png).
-1. Tocca il [!UICONTROL Modifica regole] per aprire l&#39;editor di regole.
-1. Tocca **[!UICONTROL Crea]** per configurare e creare la regola.
+1. Dal riquadro a sinistra, seleziona ![Icona Componenti](assets/components_icon.png) e trascina [!UICONTROL Pulsante] al modulo.
+1. Seleziona la [!UICONTROL Pulsante] e quindi selezionare il ![Icona Configura](assets/configure_icon.png).
+1. Seleziona la [!UICONTROL Modifica regole] per aprire l&#39;editor di regole.
+1. Seleziona **[!UICONTROL Crea]** per configurare e creare la regola.
 1. In [!UICONTROL Quando] , seleziona &quot;viene fatto clic&quot; e nella sezione [!UICONTROL Then] , selezionare le opzioni &quot;Salva modulo&quot;.
-1. Tocca **[!UICONTROL Fine]** per salvare la regola.
+1. Seleziona **[!UICONTROL Fine]** per salvare la regola.
 
 ### Abilita salvataggio automatico {#enable-auto-save}
 
 Puoi configurare la funzione di salvataggio automatico per un modulo adattivo come segue:
 
 1. Nell’istanza di authoring, apri un modulo adattivo in modalità di modifica.
-1. Dal riquadro a sinistra, tocca il ![Icona Proprietà](assets/configure_icon.png) ed espandi [!UICONTROL SALVATAGGIO AUTOMATICO] opzione.
+1. Dal riquadro di sinistra, selezionare ![Icona Proprietà](assets/configure_icon.png) ed espandi [!UICONTROL SALVATAGGIO AUTOMATICO] opzione.
 1. Seleziona la **[!UICONTROL Abilita]** per abilitare il salvataggio automatico del modulo. Puoi configurare quanto segue:
 * Per impostazione predefinita, il [!UICONTROL Evento modulo adattivo] è impostato su &quot;true&quot;, il che implica che il modulo viene salvato automaticamente dopo ogni evento.
 * In entrata [!UICONTROL Trigger], configura per attivare il salvataggio automatico in base al verificarsi di un evento o dopo un intervallo di tempo specifico.

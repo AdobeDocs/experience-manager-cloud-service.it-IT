@@ -2,9 +2,9 @@
 title: Pubblicazione
 description: Scopri come eseguire la migrazione una volta che il codice e il contenuto sono pronti per il cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1697'
 ht-degree: 4%
 
 ---
@@ -86,7 +86,7 @@ Durante l’esecuzione della migrazione di produzione, è necessario evitare di 
 
 **Ottimizzazione del carico sull’origine AEM durante l’esecuzione della migrazione dei contenuti**
 
-Ricorda che il carico sulla sorgente dell’AEM è maggiore durante la fase di estrazione. Tieni presente che:
+Ricorda che il carico sulla sorgente dell’AEM è maggiore durante la fase di estrazione. Tieni presente quanto segue:
 
 * Lo strumento Content Transfer (Trasferimento contenuti) è un processo Java esterno che utilizza un heap JVM di 4 GB
 * La versione non AzCopy scarica i file binari, li memorizza in uno spazio temporaneo nell’autore AEM di origine, consumando I/O del disco, quindi carica nel contenitore Azure che consuma la larghezza di banda della rete

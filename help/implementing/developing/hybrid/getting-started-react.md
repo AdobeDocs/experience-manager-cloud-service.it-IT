@@ -1,15 +1,15 @@
 ---
-title: Guida introduttiva alle SPA in AEM usando React
+title: Guida introduttiva dell’SPA nell’AEM con React
 description: Questo articolo illustra un esempio di applicazione per l’SPA, spiega come viene creata e come iniziare a utilizzare il proprio SPA in modo rapido utilizzando il framework React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 10%
+source-wordcount: '1130'
+ht-degree: 5%
 
 ---
 
-# Guida introduttiva alle SPA in AEM usando React {#getting-started-with-spas-in-aem-using-react}
+# Guida introduttiva dell’SPA nell’AEM con React {#getting-started-with-spas-in-aem-using-react}
 
 Le applicazioni a pagina singola (SPA) possono offrire esperienze coinvolgenti agli utenti di siti web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando framework SPA e gli autori desiderano modificare facilmente i contenuti all’interno dell’AEM per un sito creato utilizzando framework SPA.
 
@@ -95,7 +95,7 @@ module.exports = {
 };
 ```
 
-### Creazione di {#building}
+### Generazione {#building}
 
 La creazione dell’app utilizza [Webpack](https://webpack.js.org/) oltre ad aem-clientlib-generator per la creazione automatica di librerie client. Pertanto, il comando build sarà simile al seguente:
 
@@ -256,13 +256,13 @@ Per ulteriori informazioni, consulta [Documento blueprint SPA](blueprint.md).
 
 La condivisione delle informazioni è regolarmente necessaria per i componenti di un’applicazione a pagina singola. Esistono diversi modi consigliati per farlo, elencati di seguito in ordine crescente di complessità.
 
-* **Opzione 1:** Centralizzare la logica e trasmettere ai componenti necessari, ad esempio utilizzando React Context.
+* **Opzione 1:** Centralizza la logica e la trasmissione ai componenti necessari, ad esempio, utilizzando React Context.
 * **Opzione 2:** Condividere gli stati dei componenti utilizzando una libreria di stati come Redux.
 * **Opzione 3:** Sfrutta la gerarchia degli oggetti personalizzando ed estendendo il componente contenitore.
 
 ## Passaggi successivi {#next-steps}
 
-* [Guida introduttiva alla SPA in AEM usando Angular](getting-started-angular.md) mostra come viene creata una SPA di base per lavorare con l’editor SPA in AEM utilizzando Angular.
+* [Guida introduttiva dell’SPA nell’AEM con Angular](getting-started-angular.md) mostra come un SPA di base viene creato per funzionare con l’Editor SPA nell’AEM utilizzando Angular.
 * La [Panoramica dell’editor di SPA](editor-overview.md) approfondisce il modello di comunicazione tra AEM e SPA.
 * [Progetto WKND SPA](wknd-tutorial.md) è un tutorial dettagliato sull’implementazione di un semplice progetto SPA nell’AEM.
 * [Mappatura di un modello dinamico a un componente per SPA](model-to-component-mapping.md) spiega il modello dinamico alla mappatura dei componenti e come funziona all’interno dell’SPA nell’AEM.

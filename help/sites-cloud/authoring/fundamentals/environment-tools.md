@@ -2,17 +2,17 @@
 title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2161'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
 
 # Ambiente e strumenti di authoring {#authoring-the-environment-and-tools}
 
-L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti disponibili sono accessibili da varie console ed editor di pagina.
+L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
 
 {{edge-delivery-authoring}}
 
@@ -108,7 +108,7 @@ Il browser Risorse è una scheda che si trova nel pannello laterale, insieme al 
 
 ![Icona del pannello laterale](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-All’apertura, il pannello laterale scivolerà in posizione da sinistra. Se necessario seleziona la scheda **Risorse**.
+Quando apri il pannello laterale, questo si apre scorrendo dal lato sinistro. Seleziona la **Risorse** , se necessario.
 
 ![Pulsante Browser risorse](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
@@ -224,9 +224,9 @@ Apri la console richiesta, quindi accedi alla risorsa desiderata e apri i **Rife
 
 Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determinate situazioni sono disponibili azioni ulteriori quando viene selezionato un riferimento specifico, inclusi:
 
-* **Collegamenti in entrata**: fornisce un elenco di pagine che fanno riferimento a una data pagina, insieme all’accesso diretto alla funzione di **Modifica** di una di queste pagine quando selezioni un collegamento specifico..
+* **Collegamenti in ingresso**, fornisce un elenco di pagine che fanno riferimento alla pagina e accesso diretto a **Modifica** una di queste pagine quando selezioni un collegamento specifico.
 
-   * Questo può mostrare solo collegamenti statici, non collegamenti generati dinamicamente; ad esempio dal componente Elenco.
+   * Questo può mostrare solo collegamenti statici, non collegamenti generati dinamicamente; ad esempio, dal componente Elenco.
 
 * Istanze di contenuto prestato o preso in prestito mediante il componente **Riferimento**: da qui puoi passare alla pagina di riferimento o a cui si fa riferimento.
 * [Lanci](/help/sites-cloud/authoring/launches/overview.md): fornisce accesso ai lanci correlati.

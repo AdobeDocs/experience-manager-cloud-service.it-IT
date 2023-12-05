@@ -2,10 +2,10 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e il suo utilizzo di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2945'
-ht-degree: 90%
+source-wordcount: '2943'
+ht-degree: 88%
 
 ---
 
@@ -17,13 +17,13 @@ Questo documento offre una panoramica delle operazioni di base nell’ambiente d
 >[!NOTE]
 >
 >* Alcune funzionalità non sono disponibili in tutte le console e in alcune console potrebbero essere disponibili funzionalità aggiuntive. In altre sezioni sono descritte più dettagliatamente le informazioni specifiche sulle singole console e sulle relative funzionalità.
->* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+>* Sono disponibili scelte rapide da tastiera in tutto il AEM. In particolare quando [utilizzo delle console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e [modifica di pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
 ## Interfaccia touch {#a-touch-enabled-ui}
 
-L’interfaccia utente di AEM è dotata di funzionalità touch. L&#39;interfaccia touch consente di interagire con il software tramite gesti quali toccare, tenere premuto e scorrere. Poiché l’interfaccia utente di AEM è di tipo touch, puoi usare i gesti touch sui dispositivi abilitati, come il cellulare o il tablet. Tuttavia, sono disponibili anche le azioni del mouse su un dispositivo desktop tradizionale, che offrono flessibilità nella scelta della modalità di creazione dei contenuti.
+L’interfaccia utente di AEM è dotata di funzionalità touch. L&#39;interfaccia touch consente di interagire con il software tramite gesti quali la selezione, il tocco e lo scorrimento. Poiché l’interfaccia utente di AEM è di tipo touch, puoi usare i gesti touch sui dispositivi abilitati, come il cellulare o il tablet. Tuttavia, sono disponibili anche le azioni del mouse su un dispositivo desktop tradizionale, che offrono flessibilità nella scelta della modalità di creazione dei contenuti.
 
 ## Primi passi {#first-steps}
 
@@ -53,7 +53,7 @@ Per chiudere il pannello di navigazione globale e tornare alla posizione precede
 
 La navigazione globale presenta due pannelli, rappresentati da icone sul lato sinistro dello schermo:
 
-* **[Navigazione](#navigation-panel)**: rappresentata da una bussola  e il pannello predefinito al momento dell’accesso ad AEM
+* **[Navigazione](#navigation-panel)** - Rappresentato da una bussola e dal pannello predefinito al momento dell’accesso all’AEM
 * **[Strumenti](#tools-panel)**: rappresentati da un martello
 
 Le opzioni disponibili in questi pannelli sono descritte di seguito.
@@ -255,9 +255,9 @@ La selezione di una specifica risorsa dipende dalla combinazione della vista e d
 
 | Visualizzazione | Seleziona Touch | Seleziona Desktop | Deseleziona Touch | Deseleziona Desktop |
 |---|---|---|---|---|
-| Colonna | Tocca la miniatura | Fai clic sulla miniatura | Tocca la miniatura | Fai clic sulla miniatura |
-| Scheda | Tocca e tieni premuto sulla scheda | Passa il puntatore del mouse, quindi utilizza l’azione rapida con il segno di spunta | Tocca la scheda | Fai clic sulla scheda |
-| Elenco | Tocca la miniatura | Fai clic sulla miniatura | Tocca la miniatura | Fai clic sulla miniatura |
+| Colonna | Seleziona la miniatura | Fai clic sulla miniatura | Seleziona la miniatura | Fai clic sulla miniatura |
+| Scheda | Seleziona e tieni premuto sulla scheda | Passa il puntatore del mouse, quindi utilizza l’azione rapida con il segno di spunta | Seleziona la scheda | Fai clic sulla scheda |
+| Elenco | Seleziona la miniatura | Fai clic sulla miniatura | Seleziona la miniatura | Fai clic sulla miniatura |
 
 #### Seleziona tutto {#select-all}
 
@@ -436,7 +436,7 @@ La colonna della timeline consente di:
          * Ad eccezione dei flussi di lavoro transitori, in quanto per tali flussi non vengono conservate informazioni sulla cronologia <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
       * Mostra tutto
 
-* Aggiungere o visualizzare commenti sulla voce selezionata. La casella **Commento** è visualizzata in fondo all’elenco degli eventi. Per registrare un commento, digitalo e premi Invio. Il commento verrà visualizzato quando selezioni **Commenti** o **Mostra tutto**.
+* Aggiungere o visualizzare commenti sulla voce selezionata. La casella **Commento** è visualizzata in fondo all’elenco degli eventi. Se digiti un commento e premi Invio, questo verrà registrato. Per visualizzarlo, basta selezionare **Commenti** o **Mostra tutti**.
 
 * Alcune console offrono funzionalità aggiuntive. Ad esempio, nella console Sites è possibile:
 

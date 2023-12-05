@@ -4,9 +4,9 @@ description: La revisione è un meccanismo che consente al revisore di eseguire 
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '338'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ Utilizzo di [Assegna passaggio](https://experienceleague.adobe.com/docs/experien
 1. Apri l’istanza di authoring in modalità di modifica.
 1. Vai a **[!UICONTROL Strumenti]** >  **[!UICONTROL Flusso di lavoro]** >  **[!UICONTROL Modelli]** > **[!UICONTROL Crea]** > **[!UICONTROL Crea modello]**
 1. Specifica il titolo del flusso di lavoro e aggiungi **[Assegna attività]** passaggio
-1. Tocca ![icona_impostazioni](assets/settings_icon.png) sulla barra delle azioni. Il **[!UICONTROL Assegna attività]** viene visualizzata una finestra di dialogo.
+1. Seleziona ![icona_impostazioni](assets/settings_icon.png) sulla barra delle azioni. Il **[!UICONTROL Assegna attività]** viene visualizzata una finestra di dialogo.
 1. Apri [!UICONTROL Modulo e documento] scheda e apri [!UICONTROL Prepopolato] e specificare:
 
    * Seleziona file di dati di input tramite
@@ -44,7 +44,7 @@ Utilizzo di [Assegna passaggio](https://experienceleague.adobe.com/docs/experien
 Ora configura l’azione Invia di un componente Contenitore modulo adattivo sulla pagina del sito:
 
 1. Passa alla pagina del sito.
-1. Tocca ![icona_impostazioni](assets/settings_icon.png) di un contenitore di moduli adattivi. Il **[!UICONTROL Contenitore modulo adattivo]** viene visualizzata una finestra di dialogo.
+1. Seleziona ![icona_impostazioni](assets/settings_icon.png) di un contenitore di moduli adattivi. Il **[!UICONTROL Contenitore modulo adattivo]** viene visualizzata una finestra di dialogo.
 1. Apri **[!UICONTROL Invio]** e specifica **[!UICONTROL Azione di invio]** a [Richiama un flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
 
 1. Clic [Fine] per salvare le impostazioni.

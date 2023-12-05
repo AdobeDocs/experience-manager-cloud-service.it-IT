@@ -2,9 +2,9 @@
 title: Estensione di ContextHub
 description: Definisci nuovi tipi di store e moduli ContextHub quando quelli forniti non soddisfano i requisiti della soluzione
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Per creare un candidato per lo store, utilizzare [`ContextHub.Utils.inheritance.
 * [&quot;ContextHub.Store.JSONPStore&quot;](contexthub-api.md#contexthub-store-jsonpstore)
 * [&quot;ContextHub.Store.PersistedJSONPStore&quot;](contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-Tieni presente che ogni archivio base estende [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) archiviare.
+Ogni base store estende [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) archiviare.
 
 L&#39;esempio seguente crea l&#39;estensione più semplice del `ContextHub.Store.PersistedStore` candidato store:
 

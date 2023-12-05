@@ -2,9 +2,9 @@
 title: Rimozione indice Lucene generico
 description: Scopri la rimozione pianificata degli indici Lucene generici e come potrebbe esserne interessato.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1345'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ In AEM, per query full-text si intendono quelle che utilizzano le seguenti funzi
 
 Tali query non possono restituire risultati senza utilizzare un indice. A differenza di una query contenente solo restrizioni di percorso o proprietà, una query contenente una restrizione di testo completo per la quale non è possibile trovare alcun indice (e quindi viene eseguito un attraversamento) restituirà sempre zero risultati.
 
-L&#39;indice Lucene generico (`/oak:index/lucene-*`) esiste da AEM 6.0 / Oak 1.0 per fornire una ricerca di testo completa nella maggior parte della gerarchia dell’archivio, anche se alcuni percorsi, come `/jcr:system` e `/var` sono sempre stati esclusi da questo. Tuttavia, questo indice è stato in gran parte sostituito da indici su tipi di nodo più specifici (ad esempio `damAssetLucene-*` per `dam:Asset` tipo di nodo), che supportano sia le ricerche full-text che quelle di proprietà.
+L&#39;indice Lucene generico (`/oak:index/lucene-*`) esiste da AEM 6.0 / Oak 1.0 per fornire una ricerca di testo completa nella maggior parte della gerarchia dell’archivio, anche se alcuni percorsi, come `/jcr:system` e `/var` sono sempre stati esclusi da questo. Tuttavia, questo indice è stato in gran parte sostituito da indici su tipi di nodo più specifici (ad esempio, `damAssetLucene-*` per `dam:Asset` tipo di nodo), che supportano sia le ricerche full-text che quelle di proprietà.
 
 In AEM 6.5 l&#39;indice Lucene generico è stato contrassegnato come obsoleto, indicando che sarebbe stato rimosso nelle versioni future. Da allora, è stato registrato un WARN quando l’indice è stato utilizzato come illustrato dal seguente snippet di registro:
 

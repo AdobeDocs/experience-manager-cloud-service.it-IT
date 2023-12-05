@@ -3,9 +3,9 @@ title: Configurazione di OSGi per Adobe Experience Manager as a Cloud Service
 description: Configurazione OSGi con valori segreti e valori specifici dell’ambiente
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3265'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Le modalità di esecuzione dell’AEM as a Cloud Service sono ben definite in ba
 
 I valori di configurazione OSGi specificati dalla modalità di esecuzione possono essere verificati da:
 
-1. Aprire l&#39;AEM come Cloud Service [Console per sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it)
+1. Aprire l&#39;AEM come Cloud Service [Console per sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
 1. Selezione dei livelli di servizio da controllare, utilizzando __Pod__ elenco a discesa
 1. Selezione del __Stato__ scheda
 1. Selezione __Configurazioni__ dal __Immagine stato__ elenco a discesa
@@ -176,7 +176,7 @@ I file di configurazione OSGi in formato JSON possono essere scritti manualmente
 1. Nell’IDE, apri il file `ui.apps` , individuare o creare la cartella di configurazione (`/apps/.../config.<runmode>`) che esegue il targeting delle modalità di esecuzione che la nuova configurazione OSGi deve eseguire
 1. In questa cartella di configurazione, crea un `<PID>.cfg.json` file. Il PID è l’identità persistente del componente OSGi. In genere è il nome completo della classe dell’implementazione del componente OSGi. Ad esempio:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-I nomi dei file di factory della configurazione OSGi utilizzano `<factoryPID>-<name>.cfg.json` convenzione di denominazione
+I nomi dei file factory di configurazione OSGi utilizzano `<factoryPID>-<name>.cfg.json` convenzione di denominazione
 1. Apri il nuovo `.cfg.json` e definiscono le combinazioni chiave/valore per le coppie proprietà e valore OSGi, seguendo la [Formato di configurazione JSON OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Salva le modifiche nel nuovo `.cfg.json` file
 1. Aggiungi e conferma il nuovo file di configurazione OSGi su Git
@@ -191,14 +191,14 @@ La console web AEM di Quickstart Jar per AEM SDK può essere utilizzata per conf
 
 1. Accedi alla console web AEM di Quickstart Jar per l’SDK dell’AEM all’indirizzo `https://<host>:<port>/system/console` come utente amministratore
 1. Accedi a **OSGi** > **Configurazione**
-1. Per configurare, individua il componente OSGi e tocca il suo titolo per modificarlo
+1. Per configurare, individua il componente OSGi e selezionane il titolo da modificare
    ![Configurazione OSGi](./assets/configuring-osgi/configuration.png)
 1. Modifica i valori delle proprietà di configurazione OSGi tramite l’interfaccia web, in base alle esigenze
 1. Registra il PID (Persistent Identity) in un luogo sicuro. Viene utilizzato in seguito per generare il JSON di configurazione OSGi
-1. Tocca Salva
+1. Seleziona Salva
 1. Passa a OSGi > Stampante di configurazione del programma di installazione OSGi
 1. Incolla il PID copiato nel passaggio 5, assicurati che il formato di serializzazione sia impostato su &quot;OSGi Configurator JSON&quot;
-1. Tocca Stampa
+1. Seleziona stampa
 1. La configurazione OSGi in formato JSON verrà visualizzata nella sezione Proprietà di configurazione serializzata
    ![Stampante di configurazione OSGi Installer](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. Nell’IDE, apri il file `ui.apps` , individuare o creare la cartella di configurazione (`/apps/.../config.<runmode>`) che esegue il targeting delle modalità di esecuzione che la nuova configurazione OSGi deve applicare.

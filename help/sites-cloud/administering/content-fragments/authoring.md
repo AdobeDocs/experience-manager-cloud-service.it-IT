@@ -4,9 +4,9 @@ description: Scopri come creare contenuti per i frammenti di contenuto, quindi c
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2266'
 ht-degree: 4%
 
 ---
@@ -190,7 +190,7 @@ I campi definiti come Testo normale o Markdown hanno una casella di testo sempli
 Per **[Testo su più righe](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** campi definiti come **Rich Text** Sono disponibili varie funzioni:
 
 * Modifica il contenuto:
-   * Annulla/Ripeti
+   * Annulla/Ripristina
    * Incolla/Incolla come testo
    * Copiare
    * Seleziona formato paragrafo
@@ -412,7 +412,7 @@ Una volta definito l’URL, il **Anteprima** è attivo. Puoi selezionare questo 
 È possibile **Pubblica** il frammento su:
 
 * Anteprima istanza
-* Istanza Publish
+* Pubblica istanza
 
 Puoi pubblicare il frammento dall’editor o dalla console. Consulta [Pubblicazione e anteprima di un frammento](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) per informazioni dettagliate.
 
@@ -421,7 +421,7 @@ Puoi pubblicare il frammento dall’editor o dalla console. Consulta [Pubblicazi
 È inoltre possibile **Annulla pubblicazione** frammento da:
 
 * Anteprima istanza
-* Istanza Publish
+* Pubblica istanza
 
 Puoi annullare la pubblicazione del frammento dall’editor o dalla console. Consulta [Annullamento della pubblicazione di un frammento](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) per informazioni dettagliate.
 

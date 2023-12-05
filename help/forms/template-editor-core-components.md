@@ -3,10 +3,10 @@ title: Come si crea un modello di modulo adattivo basato su un componente core?
 description: Crea modelli di moduli adattivi basati sul componente core per definire la struttura di base e il contenuto iniziale tramite l’Editor modelli.
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 1%
+source-wordcount: '1961'
+ht-degree: 0%
 
 ---
 
@@ -46,13 +46,13 @@ In Experience Manager viene fornita una cartella globale per organizzare i model
 
 Dopo aver creato una cartella, aprila ed esegui i seguenti passaggi per creare un modello:
 
-1. Tocca **[!UICONTROL Crea]** all’interno della cartella creata.
-1. In **[!UICONTROL Scegli un tipo di modello]** sezione, seleziona **[!UICONTROL Modello per modulo adattivo (componente core)]** e tocca **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Crea]** all’interno della cartella creata.
+1. In **[!UICONTROL Scegli un tipo di modello]** sezione, seleziona **[!UICONTROL Modello per modulo adattivo (componente core)]** e seleziona **[!UICONTROL Successivo]**.
 
-1. In **[!UICONTROL Dettagli Modello]** , fornisci un **Titolo modello** e tocca **[!UICONTROL Crea]**.
+1. In **[!UICONTROL Dettagli Modello]** , fornisci un **Titolo modello** e seleziona **[!UICONTROL Crea]**.
 Puoi anche fornire una descrizione.
 
-1. Tocca **[!UICONTROL Fine]** per tornare alla console, oppure tocca **[!UICONTROL Apri]** per aprire il modello nell’editor.
+1. Seleziona **[!UICONTROL Fine]** per tornare alla console, oppure seleziona **[!UICONTROL Apri]** per aprire il modello nell’editor.
 
 ## Interfaccia utente dell’editor modelli {#template-editor-ui}
 
@@ -119,7 +119,7 @@ Ad esempio, puoi aggiungere il componente intestazione nel modello. Quando selez
 
 Quando l’opzione Contenuto iniziale è selezionata, il Contenitore di moduli adattivi del modello si apre come un Modulo adattivo da modificare. Ti consente di creare un contenuto predefinito che può essere modificato durante la creazione di un Forms adattivo associato al modello. Analogamente all’authoring di un modulo adattivo, puoi specificare le impostazioni iniziali, ad esempio selezionare un tema e Inviare azioni.
 
-Gli autori di moduli utilizzano tale modulo come base per la creazione di un modulo. La struttura del flusso di contenuto è specificata nel livello Contenuto iniziale del modello. Per passare alla modifica del contenuto iniziale del modello di modulo, prima di visualizzare l’anteprima nella barra degli strumenti della pagina tocca ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenuto iniziale]**.
+Gli autori di moduli utilizzano tale modulo come base per la creazione di un modulo. La struttura del flusso di contenuto è specificata nel livello Contenuto iniziale del modello. Per passare alla modifica del contenuto iniziale del modello di modulo, prima di Anteprima nella barra degli strumenti della pagina, seleziona ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenuto iniziale]**.
 
 ![Intestazione e piè di pagina aggiunti al livello Contenuto iniziale](assets/header-and-footer.png)
 
@@ -145,7 +145,7 @@ Quando create un modello, questo viene aggiunto come bozza. Abilita il modello p
 
 1. Accedi a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Modelli]**e aprire la cartella in cui è stato creato il modello.
 Il modello creato è contrassegnato come Bozza.
-1. Seleziona il modello e tocca **[!UICONTROL Abilita]** nella barra degli strumenti.
+1. Seleziona il modello e seleziona **[!UICONTROL Abilita]** nella barra degli strumenti.
 Quando crei un modulo adattivo, puoi visualizzare il modello elencato quando ti viene richiesto di scegliere un modello.
 
 ## Importazione o esportazione di un modello {#importing-or-exporting-a-template}
@@ -160,7 +160,7 @@ Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo
 
 Gli autori possono associare una [!UICONTROL Schema modello dati modulo] a un modello di modulo adattivo nell’editor di modelli. Consente agli autori di selezionare uno schema dall’editor modelli. Quando si associa uno schema a un modello e un autore di moduli crea un modulo basato su tale modello, lo schema viene preselezionato per il modulo. Consente agli autori di moduli di regolare l’utilizzo dello schema e consente di risparmiare tempo anche agli autori di moduli. Per selezionare uno schema di modello dati modulo nell’editor modelli:
 
-1. Tocca **[!UICONTROL Browser contenuti]** sul lato sinistro.
+1. Seleziona **[!UICONTROL Browser contenuti]** sul lato sinistro.
 1. Vai al contenitore del modulo **[!UICONTROL Impostazione]**.
 1. Seleziona **[!UICONTROL Modello dati]**.
 1. Scegli il modello dati del modulo tramite **[!UICONTROL Seleziona modello dati modulo]** e salva la configurazione.
@@ -185,7 +185,7 @@ Change the layer from **Structure** to **Initial Content**, and start adding con
 * You can drag-drop the panel component from the components browser in the sidebar.
 * You can add child panel of the `guideRootPanel` from the component toolbar.
 
-To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and tap **[!UICONTROL Done]**. The tabbed template structure is applied.
+To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and select ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, select content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Select ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and select **[!UICONTROL Done]**. The tabbed template structure is applied.
 
 ### Adding content in tabs {#adding-content-in-tabs}
 
@@ -224,10 +224,10 @@ Quando si aggiunge almeno un gruppo di proprietà personalizzate utilizzando il 
 #### Seleziona un nome di gruppo personalizzato nella finestra di dialogo per modifica di un componente core {#select-a-custom-group-name}
 
 1. Aprire un modulo adattivo in modalità di modifica.
-1. Tocca il componente per il quale sono state definite le proprietà personalizzate nell’editor di modelli e tocca ![icona_impostazioni](assets/configure-icon.svg) per aprire la finestra di dialogo per modifica del componente.
+1. Seleziona il componente per il quale sono state definite le proprietà personalizzate nell’editor di modelli e fai clic su ![icona_impostazioni](assets/configure-icon.svg) per aprire la finestra di dialogo per modifica del componente.
 1. Seleziona la **[!UICONTROL Avanzate]** scheda.
 1. Seleziona il nome del gruppo di proprietà personalizzato da **[!UICONTROL Selezione proprietà personalizzata]** a discesa. Tutti i nomi dei gruppi personalizzati definiti vengono inseriti automaticamente nell’elenco a discesa.
-1. Tocca **[!UICONTROL Fine]** per salvare le proprietà.
+1. Seleziona **[!UICONTROL Fine]** per salvare le proprietà.
 
 ![seleziona il nome del gruppo di proprietà personalizzato](/help/forms/assets/select-custom-properties-group-name.png)
 

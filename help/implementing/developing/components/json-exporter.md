@@ -1,11 +1,11 @@
 ---
 title: Esportatore JSON per Content Services
-description: AEM Content Services è progettato per generalizzare la descrizione e la consegna dei contenuti in/da AEM, non limitandosi alle pagine web. Fornisce contenuti a canali diversi dalle tradizionali pagine web di AEM, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente.
+description: I Content Services dell’AEM sono progettati per generalizzare la descrizione e la distribuzione dei contenuti all’interno e dall’AEM, non limitandosi alle pagine web. Forniscono contenuti a canali che non sono pagine web AEM tradizionali, utilizzando metodi standardizzati che possono essere utilizzati da qualsiasi cliente.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 31%
+source-wordcount: '383'
+ht-degree: 17%
 
 ---
 
@@ -41,7 +41,7 @@ All’interno dell’AEM la consegna viene effettuata utilizzando il selettore `
 
 In alternativa, puoi distribuire il contenuto di un frammento di contenuto strutturato eseguendo il targeting specifico.
 
-Questa operazione viene eseguita utilizzando l’intero percorso del frammento (tramite `jcr:content`); ad esempio con un suffisso come.
+Questa operazione viene eseguita utilizzando l’intero percorso del frammento (tramite `jcr:content`); ad esempio, con un suffisso come.
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 

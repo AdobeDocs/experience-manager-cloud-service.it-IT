@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 9%
+source-wordcount: '578'
+ht-degree: 7%
 
 ---
 
@@ -75,7 +75,7 @@ Per utilizzare la funzionalità Media Library, è possibile utilizzare il [!DNL 
 * Crea ed esegui attività di revisione sulle risorse.
 * Annotare le risorse.
 * Aggiungere risorse a [!DNL Sites] pagine tramite Content Finder.
-* Utilizzo [!DNL Content Fragments].
+* Utilizzare [!DNL Content Fragments].
 * Utilizzare API REST e GraphQL HTTP per [!DNL Content Fragments] e risorse multimediali di riferimento, con licenza Sites.
 * Integrazione del Marketing Cloud.
 * Personalizzare ed estendere l’interfaccia utente per la gestione delle risorse.
@@ -94,7 +94,7 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >Molti casi d’uso avanzati di DAM sono soddisfatti da [!DNL Experience Manager Assets]. La licenza di Media Library ti autorizza a soddisfare solo i casi d’uso elencati utilizzando Media Library. Se un caso d’uso non è elencato, non utilizzarlo con la licenza Media Library. Per eventuali domande, contatta l’Assistenza clienti.
 
-Non è possibile utilizzare smart tag, [!DNL Asset] collegamento, [!DNL Asset] selettore, assegnazione di tag in blocco, modifica dei flussi di lavoro delle risorse o standard [!DNL Adobe Experience Manager] per accedere a Media Library senza [!DNL Assets] licenza.
+Non è possibile utilizzare tag avanzati, [!DNL Asset] collegamento, [!DNL Asset] selettore, assegnazione di tag in blocco, modifica dei flussi di lavoro delle risorse o standard [!DNL Adobe Experience Manager] per accedere a Media Library senza [!DNL Assets] licenza.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

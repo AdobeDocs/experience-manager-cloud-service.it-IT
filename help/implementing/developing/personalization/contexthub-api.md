@@ -2,9 +2,9 @@
 title: Riferimento API JavaScript di ContextHub
 description: L’API JavaScript ContextHub è disponibile per gli script quando il componente ContextHub è stato aggiunto alla pagina
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4613'
+source-wordcount: '4602'
 ht-degree: 2%
 
 ---
@@ -261,7 +261,7 @@ Inizializza l’archivio.
 
 * **`name`:** Nome dell’archivio.
 * **`config`:** Oggetto contenente le proprietà di configurazione:
-   * `eventDeferring`: Il valore predefinito è 32.
+   * `eventDeferring`: il valore predefinito è 32.
    * `eventing`: Il [ContextHub.Utils.Eventing](#contexthub-utils-eventing) oggetto per questo archivio. Il valore predefinito è `ContextHub.eventing` L’oggetto utilizza.
    * `persistence`: Il `ContextHub.Utils.Persistence` oggetto per questo archivio. Il valore predefinito è `ContextHub.persistence` oggetto.
 
@@ -442,7 +442,7 @@ inizializza `ContextHub.Store.JSONPStore` oggetto.
    * `eventDeferring`: 32.
    * `eventing`: oggetto ContextHub.Utils.Eventing per questo archivio. Il valore predefinito è `ContextHub.eventing` oggetto.
    * `persistence`: oggetto ContextHub.Utils.Persistence per questo archivio. Per impostazione predefinita, viene utilizzata la persistenza della memoria (oggetto JavaScript).
-   * `service`: (Oggetto)
+   * `service`: (oggetto)
       * `host`: (Stringa) nome o indirizzo IP del server.
       * `jsonp`: (booleano) il valore true indica che il servizio è un servizio JSONP; in caso contrario, false indica che si tratta di un servizio JSONP. Se è true, la proprietà `{callback: "ContextHub.Callbacks.*Object.name*}`l&#39;oggetto viene aggiunto a `service.params`.
       * `params`: (Oggetto) parametri URL rappresentati come proprietà dell’oggetto. I nomi e i valori dei parametri sono rispettivamente i nomi e i valori delle proprietà dell&#39;oggetto.

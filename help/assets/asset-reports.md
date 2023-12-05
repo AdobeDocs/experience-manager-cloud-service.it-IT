@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 10%
+source-wordcount: '935'
+ht-degree: 8%
 
 ---
 
@@ -33,12 +33,12 @@ Quando viene generato un rapporto, ricevi una notifica tramite <!-- through an e
 
 [!DNL Experience Manager Assets] genera automaticamente i seguenti rapporti standard:
 
-* Caricare
+* Carica
 * Scarica
 * Scadenza
 * Modifiche
 * Pubblicazione
-* [!DNL Brand Portal] pubblicazione
+* [!DNL Brand Portal] pubblicare
 * Utilizzo disco
 * File
 * Condivisione collegamenti
@@ -88,7 +88,7 @@ Quando viene generato un rapporto, ricevi una notifica tramite <!-- through an e
 
    ![Pagina Dettagli del rapporto File](assets/files_report.png)
 
-   Il rapporto **[!UICONTROL Condivisione collegamenti]** visualizza gli URL delle risorse condivise con utenti esterni da [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Le colonne non sono personalizzabili.
+   Il **[!UICONTROL Condivisione collegamenti]** Il rapporto mostra gli URL delle risorse condivise con utenti esterni da [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Le colonne non sono personalizzabili.
 
    Il **[!UICONTROL Condivisione collegamenti]** , non include opzioni per sottocartelle e rappresentazioni, in quanto pubblica semplicemente gli URL condivisi visualizzati in `/var/dam/share`.
 
@@ -105,7 +105,7 @@ Quando viene generato un rapporto, ricevi una notifica tramite <!-- through an e
    ![Seleziona o annulla la selezione delle colonne del rapporto](assets/custom_columns.png)
 
 1. Clic **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica che la generazione del rapporto è stata avviata.
-1. Il giorno [!UICONTROL Rapporti su risorse] pagina, lo stato di generazione del rapporto si basa sullo stato corrente del processo di rapporto, ad esempio [!UICONTROL Completato], [!UICONTROL Non riuscito], [!UICONTROL In coda], o [!UICONTROL Pianificato]. Lo stesso stato viene visualizzato nella casella in entrata delle notifiche.Per visualizzare la pagina del report, fare clic sul collegamento al report. In alternativa, seleziona il rapporto e fai clic su **[!UICONTROL Visualizza]** dalla barra degli strumenti.
+1. Il giorno [!UICONTROL Rapporti su risorse] pagina, lo stato di generazione del rapporto si basa sullo stato corrente del processo di rapporto, ad esempio, [!UICONTROL Completato], [!UICONTROL Non riuscito], [!UICONTROL In coda], o [!UICONTROL Pianificato]. Lo stesso stato viene visualizzato nella casella in entrata delle notifiche.Per visualizzare la pagina del report, fare clic sul collegamento al report. In alternativa, seleziona il rapporto e fai clic su **[!UICONTROL Visualizza]** dalla barra degli strumenti.
 
    ![Un rapporto generato](assets/report_page.png)
 
@@ -129,11 +129,11 @@ Puoi aggiungere colonne personalizzate ai seguenti rapporti per visualizzare pi�
 * Files
 -->
 
-* Caricare
+* Carica
 * Scadenza
 * Modifiche
 * Pubblicazione
-* [!DNL Brand Portal] pubblicazione
+* [!DNL Brand Portal] pubblicare
 * File
 
 Per aggiungere colonne personalizzate a questi rapporti, effettua le seguenti operazioni:
@@ -145,7 +145,7 @@ Per aggiungere colonne personalizzate a questi rapporti, effettua le seguenti op
 
 1. Configura i dettagli del rapporto come titolo, descrizione, miniatura, percorso della cartella e intervallo di date, a seconda dei casi. Fai clic su **[!UICONTROL Avanti]**.
 
-1. Seleziona le informazioni applicabili dall’elenco di **[!UICONTROL Colonne predefinite]**. Per visualizzare una colonna personalizzata, specificane il nome **[!UICONTROL Colonne personalizzate]**.
+1. Seleziona le informazioni applicabili dall’elenco di **[!UICONTROL Colonne predefinite]**. Per visualizzare una colonna personalizzata, specifica il nome della colonna in **[!UICONTROL Colonne personalizzate]**.
 
    ![Specifica il nome per la colonna personalizzata del rapporto](assets/custom_columns-1.png)
 
@@ -195,12 +195,12 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)

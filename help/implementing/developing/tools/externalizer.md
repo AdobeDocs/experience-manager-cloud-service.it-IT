@@ -2,9 +2,9 @@
 title: Esternalizzazione degli URL
 description: Externalizer è un servizio OSGi che consente di trasformare in modo programmatico un percorso di risorsa in un URL esterno e assoluto.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Questa sezione mostra alcuni esempi di utilizzo del servizio Externalizer.
 
 >[!NOTE]
 >
->Non è necessario creare collegamenti assoluti nel contesto di HTML. Pertanto questa utilità non deve essere utilizzata in tali casi.
+>Non è necessario creare collegamenti assoluti nel contesto di HTML. Pertanto, non utilizzare questa utilità in tali casi.
 
 * **Per esternalizzare un percorso con il dominio &quot;publish&quot;:**
 

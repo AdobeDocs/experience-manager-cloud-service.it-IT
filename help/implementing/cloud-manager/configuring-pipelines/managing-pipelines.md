@@ -3,10 +3,10 @@ title: Gestione delle pipeline
 description: Scopri come gestire, modificare, eseguire ed eliminare le pipeline esistenti.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 68%
+source-wordcount: '928'
+ht-degree: 64%
 
 ---
 
@@ -43,7 +43,7 @@ La finestra **Pipeline** mostra un elenco completo di tutte le pipeline per il p
 
 1. Dalla sezione **Panoramica del programma** , seleziona la **Pipeline** per passare alla scheda **Pipeline** finestra.
 
-1. Qui puoi visualizzare un elenco di tutte le pipeline del programma, nonché avviare e interrompere l’esecuzione della pipeline come faresti nella **Scheda Pipeline**.
+1. Qui puoi visualizzare un elenco di tutte le pipeline per il programma e avviare e arrestare l’esecuzione della pipeline come faresti nella **Scheda Pipeline**.
 
 Se una pipeline è in esecuzione, passa il cursore sopra la relativa colonna di **Stato** e potrai visualizzare i dettagli relativi all’esecuzione.
 

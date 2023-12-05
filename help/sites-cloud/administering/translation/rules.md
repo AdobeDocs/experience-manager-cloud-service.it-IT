@@ -4,10 +4,10 @@ description: Scopri come le regole di traduzione identificano il contenuto da tr
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -214,7 +214,7 @@ Nell’interfaccia utente, puoi selezionare/deselezionare **Traduci** nella sche
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** viene utilizzato per proprietà che non hanno testo ma codici di lingua, ad esempio `jcr:language`. L&#39;utente non traduce il testo, ma la lingua locale dal sorgente alla destinazione. Tali proprietà non vengono inviate per la traduzione.
+**`updateDestinationLanguage`** viene utilizzato per proprietà che non hanno testo ma codici di lingua, ad esempio, `jcr:language`. L&#39;utente non traduce il testo, ma la lingua locale dal sorgente alla destinazione. Tali proprietà non vengono inviate per la traduzione.
 
 Nell&#39;interfaccia utente, puoi selezionare/deselezionare **Traduci** nella scheda **Proprietà** per modificare questo valore, ma per le proprietà specifiche che hanno come valore i codici lingua.
 

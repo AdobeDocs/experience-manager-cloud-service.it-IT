@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1587'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ Per accedere all’API:
 1. Apri il documento del servizio API in `https://[hostname]:[port]/api.json`.
 1. Segui le [!DNL Assets] collegamento del servizio che porta a `https://[hostname]:[server]/api/assets.json`.
 
-La risposta API è un file JSON per alcuni tipi MIME e un codice di risposta per tutti i tipi MIME. La risposta JSON è facoltativa e potrebbe non essere disponibile, ad esempio per i file PDF. Utilizza il codice di risposta per ulteriori analisi o azioni.
+La risposta API è un file JSON per alcuni tipi MIME e un codice di risposta per tutti i tipi MIME. La risposta JSON è facoltativa e potrebbe non essere disponibile, ad esempio, per i file PDF. Utilizza il codice di risposta per ulteriori analisi o azioni.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Recupera una rappresentazione Siren di una cartella esistente e delle relative e
 
 **Risposta**: la classe dell’entità restituita è una risorsa o una cartella. Le proprietà delle entità contenute sono un sottoinsieme dell&#39;insieme completo di proprietà di ciascuna entità. Per ottenere una rappresentazione completa dell’entità, i clienti devono recuperare il contenuto dell’URL a cui punta il collegamento con un `rel` di `self`.
 
-## Crea una cartella . {#create-a-folder}
+## Creare una cartella {#create-a-folder}
 
 Crea un `sling`: `OrderedFolder` nel percorso specificato. Se `*` viene fornito al posto del nome di un nodo, il servlet utilizza il nome del parametro come nome di nodo. La richiesta accetta uno dei seguenti elementi:
 

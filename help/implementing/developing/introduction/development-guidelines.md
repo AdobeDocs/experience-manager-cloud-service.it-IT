@@ -2,9 +2,9 @@
 title: Linee guida per lo sviluppo in AEM as a Cloud Service
 description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2745'
 ht-degree: 4%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 4%
 >id="development_guidelines"
 >title="Linee guida per lo sviluppo in AEM as a Cloud Service"
 >abstract="Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS."
->additional-url="https://video.tv.adobe.com/v/330555/?captions=ita/" text="Dimostrazione della struttura del pacchetto"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Dimostrazione della struttura del pacchetto"
 
 Il presente documento presenta le linee guida per sviluppare su AEM as a Cloud Service e su importanti modi in cui differisce dall&#39;AEM nei locali e dall&#39;AEM nella AMS.
 
 ## Il Codice Deve Essere Basato Su Cluster {#cluster-aware}
 
-Il codice in esecuzione in AEM as a Cloud Service deve tenere presente che è sempre in esecuzione in un cluster. Ciò significa che ci sono sempre in esecuzione più di un’istanza. Il codice deve essere resiliente, in particolare in quanto un’istanza potrebbe essere arrestata in qualsiasi momento.
+Il codice in esecuzione in AEM as a Cloud Service deve tenere presente che è sempre in esecuzione in un cluster. Ciò significa che sono sempre in esecuzione più istanze. Il codice deve essere resiliente, in particolare in quanto un’istanza potrebbe essere arrestata in qualsiasi momento.
 
 Durante l’aggiornamento di AEM as a Cloud Service, sono presenti istanze con codice vecchio e nuovo in esecuzione in parallelo. Pertanto, il vecchio codice non deve interrompere il contenuto creato dal nuovo codice e il nuovo codice deve essere in grado di gestire il contenuto vecchio.
 
@@ -33,7 +33,7 @@ Lo stato non deve essere mantenuto in memoria, ma deve essere mantenuto nell’a
 
 ## Stato nel file system {#state-on-the-filesystem}
 
-Il file system dell’istanza non deve essere utilizzato in AEM as a Cloud Service. Il disco è temporaneo e viene eliminato quando le istanze vengono riciclate. È possibile un uso limitato del file system per la memorizzazione temporanea in relazione al trattamento di singole richieste, ma non dovrebbe essere utilizzato impropriamente per file di grandi dimensioni. Questo perché potrebbe avere un impatto negativo sulla quota di utilizzo delle risorse ed essere soggetto a limitazioni del disco.
+Non utilizzare il file system dell&#39;istanza in AEM as a Cloud Service. Il disco è temporaneo e viene eliminato quando le istanze vengono riciclate. È possibile un uso limitato del file system per la memorizzazione temporanea in relazione al trattamento di singole richieste, ma non dovrebbe essere utilizzato impropriamente per file di grandi dimensioni. Questo perché potrebbe avere un impatto negativo sulla quota di utilizzo delle risorse ed essere soggetto a limitazioni del disco.
 
 Ad esempio, se l’utilizzo del file system non è supportato, il livello di pubblicazione deve garantire che tutti i dati che devono essere mantenuti vengano inviati a un servizio esterno per uno storage a lungo termine.
 
@@ -47,7 +47,7 @@ Il codice eseguito come attività in background deve presupporre che l’istanza
 
 Per ridurre al minimo i problemi, è necessario evitare, se possibile, processi con tempi di esecuzione lunghi, che dovrebbero essere almeno ripristinabili. Per eseguire tali processi, utilizza Sling Jobs, che dispongono di una garanzia almeno una volta e quindi, se vengono interrotti, verranno rieseguiti il prima possibile. Ma probabilmente non dovrebbero ricominciare dall&#39;inizio. Per la pianificazione di tali processi, è consigliabile utilizzare [Processi Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) di pianificazione, in quanto ciò assicura di nuovo l’esecuzione di almeno una volta.
 
-Il modulo di pianificazione Sling Commons non deve essere utilizzato per la pianificazione in quanto l’esecuzione non può essere garantita. È solo più probabile che sia programmato.
+Non utilizzare Sling Commons Scheduler per la pianificazione in quanto l’esecuzione non può essere garantita. È solo più probabile che sia programmato.
 
 Allo stesso modo, con tutto ciò che accade in modo asincrono, come agire su eventi di osservazione (che si tratti di eventi JCR o di eventi di risorse Sling), non può essere garantito che venga eseguito e pertanto deve essere utilizzato con cautela. Questo è già vero per le implementazioni AEM nel presente.
 
@@ -109,7 +109,7 @@ Ad esempio, la modifica della definizione di un indice in un archivio di contenu
 
 Per lo sviluppo locale, le voci dei registri vengono scritte nei file locali in `/crx-quickstart/logs` cartella.
 
-Negli ambienti Cloud, gli sviluppatori possono scaricare i registri tramite Cloud Manager o utilizzare uno strumento da riga di comando per visualizzare i registri. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+Negli ambienti Cloud, gli sviluppatori possono scaricare i registri tramite Cloud Manager o utilizzare uno strumento da riga di comando per visualizzare i registri. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Impostazione del livello di registro**
 
@@ -172,7 +172,7 @@ Le immagini thread negli ambienti Cloud vengono raccolte su base continuativa, m
 
 Per lo sviluppo locale, gli sviluppatori hanno pieno accesso a CRXDE Liti (`/crx/de`) e la console web dell&#39;AEM (`/system/console`).
 
-Tieni presente che sullo sviluppo locale (utilizzando l’SDK), `/apps` e `/libs` può essere scritto direttamente in, il che è diverso dagli ambienti Cloud in cui tali cartelle di livello superiore non sono modificabili.
+Sullo sviluppo locale (utilizzando l’SDK), `/apps` e `/libs` può essere scritto direttamente in, il che è diverso dagli ambienti Cloud in cui tali cartelle di livello superiore non sono modificabili.
 
 ### Strumenti di sviluppo in AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 

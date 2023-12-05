@@ -5,10 +5,10 @@ uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 2%
+source-wordcount: '337'
+ht-degree: 0%
 
 ---
 
@@ -146,7 +146,7 @@ Considera uno scenario in cui desideri popolare il **Stato** in base a un valore
 
    ![Creare un nodo a discesa](assets/dropdown-node.png)
 
-1. Crea un pacchetto del nodo del contenuto e incorpora il file .jar in una posizione particolare (ad esempio /apps/myfolder/demo/install/). Distribuire lo stesso file sul server.
+1. Crea un pacchetto del nodo del contenuto e incorpora il file .jar in una posizione particolare (ad esempio, /apps/myfolder/demo/install/). Distribuire lo stesso file sul server.
 1. Crea un modulo adattivo e aggiungi due elenchi a discesa, Paese e Stato. L&#39;elenco Paese può includere i nomi dei paesi. L&#39;elenco Stato consente di popolare dinamicamente i nomi degli stati per il paese selezionato nel primo elenco.
 
    Aggiungere i nomi dei paesi da visualizzare nell&#39;elenco Paese. Nell&#39;elenco Stato aggiungere uno script per compilarlo in base al nome del paese nell&#39;elenco Paese.
@@ -176,4 +176,4 @@ Il pacchetto Contenuto che contiene un modulo adattivo di esempio (demo/AFdemo) 
 
 >[!MORELIKETHIS]
 >
->* [Precompilare i campi di un modulo adattivo](/help/forms/prepopulate-adaptive-form-fields.md)
+>* [Precompilare i campi del modulo adattivo](/help/forms/prepopulate-adaptive-form-fields.md)

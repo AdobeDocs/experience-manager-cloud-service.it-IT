@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3489'
-ht-degree: 15%
+source-wordcount: '3431'
+ht-degree: 14%
 
 ---
 
@@ -37,7 +37,7 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 | Esperienza semplificata per i creativi sul desktop | Accesso semplificato alle risorse da un DAM ([!DNL Assets]) per i creativi o, più in generale, per gli utenti che lavorano in applicazioni per la creazione di risorse native dal desktop. Hanno bisogno di un modo semplice per scoprire, utilizzare (aprire), modificare e salvare le modifiche in Experience Manager e caricare nuovi file. | Windows o Mac desktop; Creative Cloud app |
 | Risorse pronte all&#39;uso di alta qualità da [!DNL Adobe Stock] | Gli addetti al marketing contribuiscono ad accelerare il processo di creazione dei contenuti fornendo assistenza per l’origine e il rilevamento delle risorse. I creativi utilizzano le risorse approvate direttamente nei loro strumenti creativi. | [!DNL Assets]; [!DNL Adobe Stock] marketplace; campi metadati |
 | Distribuire e condividere le risorse per organizzazioni | Reparti interni/filiali locali e partner esterni, distributori e agenzie utilizzano le risorse approvate condivise dall’organizzazione principale. L’organizzazione desidera condividere in modo sicuro e fluido le risorse create per un riutilizzo più ampio. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
-| Genera automaticamente varianti predefinite di risorse caricate | Elabora automaticamente le risorse utilizzando l’esclusiva tecnologia di gestione dei supporti e trasformazione di Adobe per le azioni predefinite. Crea una logica personalizzata per definire le tue azioni utilizzando API e microservizi per le risorse. | [!DNL Assets] - Interfaccia utente |
+| Genera automaticamente varianti predefinite di risorse caricate | Elabora automaticamente le risorse utilizzando l’esclusiva tecnologia di gestione dei supporti e trasformazione di Adobe per le azioni predefinite. Crea una logica personalizzata per definire le tue azioni utilizzando API e microservizi per le risorse. | [!DNL Assets] interfaccia utente |
 
 ## Adobi di offerte per supportare le esigenze di collaborazione {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -57,7 +57,7 @@ Scelta della funzionalità da utilizzare
 
 ### Mappatura dei casi d’uso e soluzioni di Adobe {#mapping-of-use-cases-and-adobe-solutions}
 
-| Caso d’uso | Adobe Asset Link | App desktop Experience Manager | Osservazioni o metodi alternativi |
+| Caso d’uso | Adobe collegamento risorsa | app desktop Experience Manager | Osservazioni o metodi alternativi |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Esplorare le cartelle | Sì | Interfaccia utente web e azioni desktop di Experience Manager | Durante la navigazione nella condivisione di rete, disattiva le miniature per evitare di scaricare file binari di risorse. |
 | Individuare - accedere alle raccolte | Sì | Interfaccia utente web e azioni desktop di Experience Manager |  |
@@ -99,7 +99,7 @@ Per supportare i casi di utilizzo della distribuzione delle risorse, considera l
 * **Major asset update/change (Aggiornamento/modifica risorsa principale):** un passaggio a una risorsa digitale che richiede un lavoro considerevole e che a volte deve essere effettuato in un periodo di tempo più lungo. Generalmente include più modifiche. La risorsa deve essere salvata più volte durante l’aggiornamento. In genere, gli aggiornamenti principali delle risorse fanno sì che la risorsa entri in una fase WIP.
 * **DAM:** gestione delle risorse digitali. In questo documento, è sinonimo di Experience Manager Assets, a meno che non venga espressamente indicato altrimenti.
 * **Creative user (Utente creativo):** un professionista che crea risorse digitali utilizzando le app e i servizi Creative Cloud. In alcuni casi, è possibile che un utente creativo sia membro di un team creativo che utilizza Creative Cloud, ma che non crea risorse digitali, ad esempio un direttore creativo o un manager del team creativo.
-* **DAM user (Utente DAM)**: utente tipico di un sistema DAM. A seconda dell’organizzazione, un utente DAM può essere di marketing o non, come un utente Line-of-Business (LOB), un bibliotecario, un venditore e così via.
+* **DAM user (Utente DAM)**: utente tipico di un sistema DAM. A seconda dell’organizzazione, un utente DAM può essere di marketing o non, ad esempio un utente Line-of-Business (LOB), un bibliotecario, un venditore e così via.
 
 ### Considerazioni durante l’utilizzo dell’integrazione di Experience Manager e Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 

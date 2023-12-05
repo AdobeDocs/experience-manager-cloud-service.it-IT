@@ -4,9 +4,9 @@ description: Incorpora facilmente Forms adattivo in una pagina AEM Sites o in un
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3164'
+source-wordcount: '3145'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 Puoi sfruttare appieno questa funzione utilizzando le seguenti opzioni:
 
-* **[Creare un modulo adattivo utilizzando modelli approvati e incorporarlo in una pagina AEM Sites](#embed-form-using-adaptive-form-wizzard-aem-sites):** Puoi sfruttare i modelli pre-approvati per creare e incorporare rapidamente Forms adattivo in linea con le linee guida di branding e gli standard di progettazione della tua organizzazione.
+* **[Creare un modulo adattivo utilizzando modelli approvati e incorporarlo in una pagina AEM Sites](#embed-form-using-adaptive-form-wizzard-aem-sites):** Puoi utilizzare modelli preapprovati per creare e incorporare rapidamente Forms adattivo in linea con le linee guida di branding e gli standard di progettazione della tua organizzazione.
 
 * **[Incorporare moduli esistenti in una pagina AEM Sites](#embed-an-adaptive-form-in-sites-editor):** Puoi integrare facilmente nei tuoi siti web i moduli già creati, consentendo ai visitatori di interagire direttamente con essi.
 
@@ -201,7 +201,7 @@ Per incorporare un modulo adattivo esistente in una pagina Sites:
 
 1. Apri la pagina AEM Sites in modalità di modifica.
 1. Trascina la selezione **[!UICONTROL Forms adattivo - Incorpora(v2)]** dal browser Componenti alla pagina Sites.
-1. Tocca il **[!UICONTROL Forms adattivo - Incorpora]** nella pagina Sites e tocca ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg) sulla barra delle azioni. Il **[!UICONTROL Modifica Forms adattivo - Incorpora(v2)]** viene visualizzata una finestra di dialogo.
+1. Seleziona la **[!UICONTROL Forms adattivo - Incorpora]** nella pagina Sites e seleziona ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg) sulla barra delle azioni. Il **[!UICONTROL Modifica Forms adattivo - Incorpora(v2)]** viene visualizzata una finestra di dialogo.
 1. Sfoglia e seleziona il modulo adattivo da incorporare nel **[!UICONTROL Percorso risorsa]**.
 1. Salva le impostazioni. Il modulo adattivo è ora incorporato nella pagina.
 
@@ -215,7 +215,7 @@ Puoi anche estendere l’accessibilità dei moduli incorporandoli in Frammento e
 
 1. Apri un frammento di esperienza in modalità di modifica.
 1. Trascina la selezione **[!UICONTROL Forms adattivo - Incorpora(v2)]** dal browser Componenti al frammento di esperienza.
-1. Tocca il **[!UICONTROL Forms adattivo - Incorpora]** nel frammento esperienza e tocca ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg) sulla barra delle azioni. Il **[!UICONTROL Modifica Forms adattivo - Incorpora(v2)]** viene visualizzata una finestra di dialogo.
+1. Seleziona la **[!UICONTROL Forms adattivo - Incorpora]** nel frammento di esperienza e seleziona ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg) sulla barra delle azioni. Il **[!UICONTROL Modifica Forms adattivo - Incorpora(v2)]** viene visualizzata una finestra di dialogo.
 1. Sfoglia e seleziona il modulo adattivo da incorporare nel **[!UICONTROL Percorso risorsa]**.
 1. Salva le impostazioni. Il modulo adattivo è ora incorporato nel frammento di esperienza.
 
@@ -310,9 +310,9 @@ To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** comp
    >
    >Multiple Adaptive Forms - Embed components on a page are not supported.
 
-1. To create and embed a new form, on the component toolbar, tap the **Create Form** icon. A window to create the form opens. 
+1. To create and embed a new form, on the component toolbar, select the **Create Form** icon. A window to create the form opens. 
 
-1. Tap the embedded Adaptive Forms - Embed component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
+1. Select the embedded Adaptive Forms - Embed component in the sites page, and then select ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
 1. In the Edit Adaptive Forms - Embed dialog, specify the following.
 
     **Asset Type:** Select the type of asset to embed. 
@@ -356,7 +356,7 @@ Prendiamo in considerazione i seguenti scenari per la pubblicazione di un modulo
 Per modificare una configurazione o una proprietà del modulo adattivo incorporato, effettuate una delle seguenti operazioni.
 
 * Apri il modulo originale in un modulo adattivo nel rispettivo editor e modificalo.
-* In modalità di modifica, tocca il modulo adattivo all’interno della pagina del sito, quindi tocca **[!UICONTROL Modifica in una nuova finestra]**. Il modulo originale viene aperto in modalità di modifica modificabile.
+* Seleziona il modulo adattivo dalla pagina del sito in modalità di modifica, quindi seleziona **[!UICONTROL Modifica in una nuova finestra]**. Il modulo originale viene aperto in modalità di modifica modificabile.
 
 >[!NOTE]
 >

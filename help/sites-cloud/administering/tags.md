@@ -2,9 +2,9 @@
 title: Amministrazione dei tag
 description: Scopri come amministrare i tag in AEM per organizzare i contenuti.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2200'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ La console dei tag consente di creare e gestire i tag e le relative tassonomie. 
 Per accedere alla console dei tag:
 
 1. Accedi a un ambiente di authoring con privilegi di amministratore.
-1. Nel menu di navigazione globale seleziona **`Tools`** > **`General`** ->
+1. Nel menu di navigazione globale seleziona **`Tools`** > **`General`** >
    **`Tagging`**.
 
 ![Console sui tag in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -91,7 +91,7 @@ Per organizzare altri tag viene utilizzato uno spazio dei nomi. Può essere cons
 
 1. Una volta inserite le informazioni richieste, seleziona **Crea**.
 
-Viene creato lo spazio dei nomi. Tieni presente che nella console assegnazione tag gli spazi dei nomi si trovano al livello più basso (nella colonna all’estrema sinistra della console) e sono rappresentati da icone di cartelle, a seconda della loro natura di &quot;contenitore&quot; o raggruppamento di altri tag.
+Viene creato lo spazio dei nomi. Nella console dei tag, gli spazi dei nomi si trovano al livello più basso (nella colonna all’estrema sinistra della console) e sono rappresentati da icone di cartelle, che riflettono la loro natura di &quot;contenitore&quot; o raggruppamento di altri tag.
 
 Ora puoi [creare nuovi tag](#creating-tags) in questo spazio dei nomi o [gestisci i tag esistenti.](#managing-tags)
 
@@ -163,7 +163,7 @@ Puoi eseguire diverse azioni sui tag e sugli spazi dei nomi esistenti per gestir
 * [Unisci](#merging-tags)
 * [Eliminare](#deleting-tags)
 
-Tieni presente che, se nella barra degli strumenti è disponibile spazio sufficiente, dietro l’icona con i puntini di sospensione sono disponibili opzioni aggiuntive.
+Quando lo spazio sulla barra degli strumenti è sufficiente, dietro l’icona con i puntini di sospensione sono disponibili opzioni aggiuntive.
 
 ### Visualizzazione delle proprietà dei tag {#viewing-tag-properties}
 
@@ -243,7 +243,7 @@ Può essere utile vedere a quale contenuto viene applicato un particolare tag. P
 
    ![Visualizzazione dei dettagli dei riferimenti del tag](assets/tag-references-detail.png)
 
-Passa il mouse o tocca un contenuto con riferimento nell’elenco per visualizzare il percorso completo del contenuto.
+Passa il mouse o seleziona un contenuto con riferimento nell’elenco per visualizzare il percorso completo del contenuto.
 
 Per ulteriori dettagli sulla selezione delle modalità di visualizzazione e della barra, consulta [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
@@ -268,7 +268,7 @@ Può essere necessario riorganizzare la tassonomia dei tag spostando un tag in u
       * Questo campo viene precompilato con la posizione corrente del tag.
       * Lascia invariato se desideri rinominare solo il tag e non spostarlo.
 
-   ![Muovi tag](assets/move-tag.png)
+   ![Sposta tag](assets/move-tag.png)
 
 1. Seleziona **Invia**.
 

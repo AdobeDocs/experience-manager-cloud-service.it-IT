@@ -3,10 +3,10 @@ title: Come possiamo tradurre un Modulo adattivo basato su Componenti core?
 description: Scopri come creare un modello di dati modulo in AEM Forms, testare il modello con dati e servizi di esempio e configurare varie opzioni per un modello.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 4%
+source-wordcount: '884'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ I moduli localizzati consentono di fornire servizi a un pubblico più ampio in a
 
 Il servizio di traduzione automatica traduce immediatamente il contenuto in modulo adattivo e [Documento record](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service è preconfigurato per utilizzare una versione di prova di Microsoft Translator per la traduzione automatica. Per abilitare la traduzione automatica per il Forms adattivo e il documento di record, effettua le seguenti operazioni:
 
-1. Nell’interfaccia utente di AEM Forms, seleziona un modulo e tocca il **[!UICONTROL Aggiungi dizionario]** opzione.
+1. Nell’interfaccia utente di AEM Forms, seleziona un modulo e fai clic su **[!UICONTROL Aggiungi dizionario]** opzione.
 1. Nella schermata Aggiungi dizionario al progetto di traduzione, per **[!UICONTROL Progetto]** opzione
 
    * Per creare un progetto di traduzione, seleziona la **[!UICONTROL Crea un nuovo progetto di traduzione]** e nella **Titolo progetto** , specificare il titolo. Ad esempio `Government Reference Site - German locale.`
@@ -49,7 +49,7 @@ Il servizio di traduzione automatica traduce immediatamente il contenuto in modu
    [Document of Record settings](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Customize the branding information of the document of record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) and ensure that the browser locale is set to the same language to which you have localized the Adaptive Form using machine language. The browser locale helps localize the branding information in the document of record.
-1. To view the localized document of record, tap Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
+1. To view the localized document of record, select Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
 
 -->
 
@@ -61,7 +61,7 @@ Per la traduzione, un dizionario contenente file in formato XLIFF viene condivis
 
 Per localizzare un modulo e il relativo documento di record mediante Human Translators, effettuare le seguenti operazioni:
 
-1. Nell’interfaccia utente di AEM Forms, seleziona un modulo e tocca il **[!UICONTROL Aggiungi dizionario]** opzione.
+1. Nell’interfaccia utente di AEM Forms, seleziona un modulo e fai clic su **[!UICONTROL Aggiungi dizionario]** opzione.
 1. Nella schermata Aggiungi dizionario al progetto di traduzione, per **[!UICONTROL Progetto]** opzione
 
    * Per creare un progetto di traduzione, seleziona la **[!UICONTROL Crea un nuovo progetto di traduzione]** e nella **Titolo progetto** , specificare il titolo. Ad esempio `Government Reference Site - German locale.`
@@ -76,7 +76,7 @@ Per localizzare un modulo e il relativo documento di record mediante Human Trans
 1. Estrai il file .zip scaricato. La cartella estratta contiene due file:
    * translation_export_summary.xml
    * [form-fields-file].xml.
-1. Apri [form-fields-file].xml per la modifica. Aggiungi le stringhe e i messaggi localizzati per i campi modulo. Salva e chiudi il file 
+1. Apri [form-fields-file].xml per la modifica. Aggiungi le stringhe e i messaggi localizzati per i campi modulo. Salva e chiudi il file.
 1. Comprimere i file translation_export_summary.xml e [form-fields-file].xml.
 1. Il giorno **Lavoro di traduzione** , fai clic su ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e fai clic su **Importa**. Seleziona l’archivio contenente [form-fields-file].xml. con stringhe e messaggi localizzati per i campi modulo.
 

@@ -3,10 +3,10 @@ title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
 description: Scopri come utilizzare GraphQL con AEM in modo da distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
 workflow-type: tm+mt
-source-wordcount: '1752'
-ht-degree: 100%
+source-wordcount: '1754'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Approfondisci queste query di esempio per le illustrazioni di creazione query, i
 >
 >Puoi accedere all’editor delle query da:
 >
->* **Strumenti** -> **Generale** -> **Editor query GraphQL**
+>* **Strumenti** > **Generale** > **Editor query di GraphQL**
 >* direttamente; ad esempio, `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
@@ -362,7 +362,7 @@ Se crei una variante, denominata “Berlino centro” (`berlin_centre`), relativ
 }
 ```
 
-### Query di esempio: nomi di tutte le città Classificati come Soggiorni in città {#sample-names-all-cities-tagged-city-breaks}
+### Query di esempio: nomi di tutte le città con tag City Breaks {#sample-names-all-cities-tagged-city-breaks}
 
 Se:
 

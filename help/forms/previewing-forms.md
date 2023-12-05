@@ -1,13 +1,12 @@
 ---
 title: Come si visualizza l’anteprima di un modulo adattivo?
 description: Gli utenti possono visualizzare in anteprima i moduli prima di pubblicarli o attivarli, per assicurarsi che soddisfino le aspettative. Le opzioni di anteprima possono variare tra i tipi di modulo supportati.
-uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '359'
 ht-degree: 3%
 
 ---
@@ -19,14 +18,14 @@ ht-degree: 3%
 
 In entrata [!DNL AEM Forms], è possibile visualizzare in anteprima i moduli e i documenti presenti nel repository. L&#39;anteprima consente di conoscere esattamente l&#39;aspetto e il comportamento dei moduli quando vengono rilasciati agli utenti finali.
 
-Quando si visualizza l’anteprima dei moduli, questi vengono riprodotti in un’interfaccia interattiva e l’utente può riempirli di dati. Quando si visualizza l’anteprima di un documento, questo viene riprodotto in modalità non interattiva e l’utente può solo visualizzarlo. Per i moduli è disponibile un’ulteriore opzione di Anteprima personalizzata. Questa opzione consente di visualizzare in anteprima il modulo utilizzando i dati di un file XML. I dati riempiono alcuni o tutti i campi del modulo visualizzato in anteprima.
+Quando si visualizza l’anteprima dei moduli, questi vengono riprodotti in un’interfaccia interattiva e l’utente può riempirli di dati. Quando si visualizza l’anteprima di un documento, questo viene riprodotto in modalità non interattiva e l’utente può solo visualizzarlo. Per i moduli è disponibile un’ulteriore opzione di Anteprima personalizzata. Questa opzione consente di visualizzare in anteprima il modulo utilizzando i dati di un file XML. I dati compilano alcuni campi o tutti i campi del modulo visualizzato in anteprima.
 
 Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i diversi tipi di moduli supportati:
 
 <table>
  <tbody>
   <tr>
-   <td><strong>Tipo risorsa</strong><br /> </td>
+   <td><strong>Tipo di risorsa</strong><br /> </td>
    <td><strong>Opzioni di anteprima disponibili</strong><br /> </td>
   </tr>
   <tr>

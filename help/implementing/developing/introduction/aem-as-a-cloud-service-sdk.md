@@ -2,10 +2,10 @@
 title: SDK di AEM as a Cloud Service
 description: Panoramica di AEM as a Cloud Service Software Development Kit
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 2%
+source-wordcount: '1213'
+ht-degree: 1%
 
 ---
 
@@ -85,7 +85,7 @@ Di seguito è riportata la procedura consigliata per l’aggiornamento di un amb
 
 Se è necessario installare un contenuto con ogni nuova versione di avvio rapido per AEM, includerlo in un pacchetto di contenuti e nel controllo del codice sorgente del progetto. Quindi, installarlo ogni volta.
 
-Si consiglia di aggiornare frequentemente l’SDK (ad esempio ogni due settimane) ed eliminare tutti i giorni lo stato locale in modo che non dipenda accidentalmente dai dati di stato nell’applicazione.
+Si consiglia di aggiornare frequentemente l’SDK (ad esempio, ogni due settimane) ed eliminare giornalmente lo stato locale completo in modo che non dipenda accidentalmente dai dati di stato nell’applicazione.
 
 Se si utilizza CryptoSupport ([configurando le credenziali dei servizi Cloud o del servizio di posta SMTP in AEM oppure utilizzando l’API CryptoSupport nell’applicazione](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), le proprietà crittografate sono crittografate da una chiave. Questa chiave viene generata automaticamente al primo avvio di un ambiente AEM. Anche se la configurazione cloud si occupa del riutilizzo automatico della CryptoKey specifica per l’ambiente, è necessario inserire la crittografia nell’ambiente di sviluppo locale.
 

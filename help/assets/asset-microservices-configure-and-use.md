@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2928'
-ht-degree: 4%
+source-wordcount: '2859'
+ht-degree: 3%
 
 ---
 
 # Utilizzare i microservizi delle risorse e i profili di elaborazione {#get-started-using-asset-microservices}
 
-I microservizi per le risorse forniscono un’elaborazione scalabile e resiliente delle risorse utilizzando applicazioni native per il cloud (denominate anche processi di lavoro). Adobe gestisce i servizi per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione.
+I microservizi per le risorse forniscono un’elaborazione scalabile e resiliente delle risorse utilizzando applicazioni native per il cloud (denominate anche processi di lavoro). Adobe gestisce i servizi per una gestione ottimale di diversi tipi di risorse e opzioni di elaborazione.
 
 I microservizi per le risorse consentono di elaborare una [ampia gamma di tipi di file](/help/assets/file-format-support.md) che includono più formati pronti all’uso di quanto sia possibile con le versioni precedenti di [!DNL Experience Manager]. Ad esempio, è ora possibile estrarre le miniature dai formati PSD e PSB, ma in precedenza richiedevano soluzioni di terze parti come [!DNL ImageMagick].
 
@@ -159,7 +159,7 @@ Crea e applica i profili di elaborazione aggiuntivi e personalizzati a cartelle 
 
 Applica i profili di elaborazione alle cartelle utilizzando uno dei metodi seguenti:
 
-* Gli amministratori possono selezionare una definizione di profilo di elaborazione in **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili elaborazione]**, e utilizzare **[!UICONTROL Applica profilo a cartelle]** azione. Viene aperto un browser dei contenuti che consente di passare a cartelle specifiche, selezionarle e confermare l’applicazione del profilo.
+* Gli amministratori possono selezionare una definizione di profilo di elaborazione in **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili elaborazione]**, e utilizzare **[!UICONTROL Applica profilo alle cartelle]** azione. Viene aperto un browser dei contenuti che consente di passare a cartelle specifiche, selezionarle e confermare l’applicazione del profilo.
 * Gli utenti possono selezionare una cartella nell’interfaccia utente di Assets, utilizzare **[!UICONTROL Proprietà]** per aprire la schermata delle proprietà della cartella, fare clic sul pulsante **[!UICONTROL Elaborazione risorse]** e nella scheda [!UICONTROL Profilo di elaborazione] selezionare il profilo di elaborazione appropriato per la cartella. Per salvare le modifiche, fai clic su **[!UICONTROL Salva e chiudi]**.
   ![Applicare il profilo di elaborazione a una cartella dalla scheda Proprietà risorsa](assets/folder-properties-processing-profile.png)
 
@@ -167,7 +167,7 @@ Applica i profili di elaborazione alle cartelle utilizzando uno dei metodi segue
 
 >[!TIP]
 >
->A una cartella può essere applicato un solo profilo di elaborazione. Per generare più rappresentazioni, aggiungi altre definizioni di rappresentazione al profilo di elaborazione esistente.
+>A una cartella è possibile applicare un solo profilo di elaborazione. Per generare più rappresentazioni, aggiungi altre definizioni di rappresentazione al profilo di elaborazione esistente.
 
 Dopo aver applicato un profilo di elaborazione a una cartella, tutte le nuove risorse caricate (o aggiornate) in questa cartella o in una delle sue sottocartelle vengono elaborate utilizzando il profilo di elaborazione aggiuntivo configurato. Questa elaborazione si aggiunge al profilo predefinito standard.
 

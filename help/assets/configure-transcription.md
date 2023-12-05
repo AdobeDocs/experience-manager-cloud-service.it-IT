@@ -9,10 +9,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 87%
+source-wordcount: '1663'
+ht-degree: 86%
 
 ---
 
@@ -83,7 +83,7 @@ Ora configuriamo la trascrizione in questo profilo video. Accedi a **[!UICONTROL
 
 Una volta configurato il profilo di elaborazione per la trascrizione di file audio e video, puoi applicarlo alle cartelle utilizzando uno dei seguenti metodi:
 
-* Seleziona una definizione di profilo di elaborazione in **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili di elaborazione]** e utilizza l’azione **[!UICONTROL Applica profilo a cartelle]**. Il browser del contenuto ti consente di passare a una cartella specifica, selezionarla e confermare l’applicazione del profilo.
+* Selezionare una definizione di profilo di elaborazione in **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili elaborazione]**, e utilizzare **[!UICONTROL Applica profilo alle cartelle]** azione. Il browser del contenuto ti consente di passare a una cartella specifica, selezionarla e confermare l’applicazione del profilo.
 * Seleziona una cartella nell’interfaccia utente di Assets e fai clic su **[!UICONTROL Proprietà]** per aprire le proprietà della cartella. Fai clic sulla scheda **[!UICONTROL Elaborazione delle risorse]** e seleziona il profilo di elaborazione appropriato per la cartella dall’elenco **[!UICONTROL Profilo di elaborazione]**. Per salvare le modifiche, fai clic su **[!UICONTROL Salva e chiudi]**.
 
   ![configure-transcription-service](assets/video-processing-profile3.png)

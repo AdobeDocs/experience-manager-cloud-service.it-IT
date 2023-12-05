@@ -4,9 +4,9 @@ description: Scopri come creare o aggiungere un modulo adattivo alla pagina AEM 
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3208'
+source-wordcount: '3177'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Puoi sfruttare appieno questa funzione utilizzando le seguenti opzioni:
 
 * **[Convertire un modulo adattivo in frammento di esperienza](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Converti un modulo adattivo aggiunto a una pagina AEM Sites in un frammento di esperienza per riutilizzare il modulo su più pagine AEM Sites.
 
-* **[Creare e aggiungere moduli basati su modelli approvati a una pagina AEM Sites:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** Puoi sfruttare i modelli pre-approvati per creare rapidamente Forms adattivi in linea con le linee guida di branding e gli standard di progettazione della tua organizzazione. L’opzione è disponibile solo per Forms adattivo creato con il componente Forms Editor adattivo o Forms adattivo - Incorpora.
+* **[Creare e aggiungere moduli basati su modelli approvati a una pagina AEM Sites:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** Puoi utilizzare modelli preapprovati per creare rapidamente Forms adattivi in linea con le linee guida di branding e gli standard di progettazione della tua organizzazione. L’opzione è disponibile solo per Forms adattivo creato con il componente Forms Editor adattivo o Forms adattivo - Incorpora.
 
 * **[Aggiungere moduli esistenti a una pagina AEM Sites:](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** Puoi integrare facilmente nei tuoi siti web i moduli già creati, consentendo ai visitatori di interagire direttamente con essi. L’opzione è disponibile solo per Forms adattivo creato con il componente Forms Editor adattivo o Forms adattivo - Incorpora.
 

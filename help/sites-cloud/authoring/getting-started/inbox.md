@@ -2,10 +2,10 @@
 title: Casella in entrata
 description: Scopri come utilizzare le notifiche che arrivano nella casella in entrata per gestire le attività.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 94%
+source-wordcount: '910'
+ht-degree: 88%
 
 ---
 
@@ -33,7 +33,7 @@ Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visual
 
 ## Casella in entrata nell’intestazione {#inbox-in-the-header}
 
-Da una qualsiasi console, il numero corrente di elementi nella casella in entrata viene visualizzato nell’intestazione. L’indicatore può essere aperto anche per fornire un accesso rapido alle pagine che richiedono azioni o accesso alla casella in entrata:
+Da una qualsiasi console, il numero corrente di elementi nella casella in entrata viene visualizzato nell’intestazione. L’indicatore può anche essere aperto per fornire un accesso rapido alle pagine che richiedono azioni o accesso alla casella in entrata:
 
 ![Panoramica della casella in entrata nell’intestazione](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -150,7 +150,7 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 
    * Conferma l’azione appropriata, ad esempio Riassegna.
    * Annullare l’azione.
-   * Selezionare la freccia indietro per tornare alla casella in entrata. Ad esempio, se è stata aperta una Action Wizard o una pagina della documentazione, puoi tornare alla casella in entrata.
+   * Seleziona la freccia indietro per tornare alla casella in entrata. Ad esempio, se è stata aperta una Action Wizard o una pagina della documentazione, puoi tornare alla casella in entrata.
 
 ## Creazione di un’attività {#creating-a-task}
 

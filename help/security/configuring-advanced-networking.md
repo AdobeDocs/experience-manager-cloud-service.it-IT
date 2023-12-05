@@ -2,10 +2,10 @@
 title: Configurazione di networking avanzato per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3594'
-ht-degree: 93%
+source-wordcount: '3526'
+ht-degree: 92%
 
 ---
 
@@ -366,7 +366,7 @@ Le regole di port forwarding devono essere dichiarate per tutto il traffico TCP 
 
 L’API dovrebbe rispondere in pochi secondi indicando lo stato `updating` e dopo circa 10 minuti, una chiamata all’endpoint GET dell’ambiente di Cloud Manager dovrebbe mostrare lo stato `ready`, indicando che l’aggiornamento è stato applicato all’ambiente.
 
-Tieni presente che anche se non sono presenti regole di routing del traffico dell’ambiente (host o bypass), è comunque necessario chiamare `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, solo con un payload vuoto.
+Anche se non esistono regole di routing del traffico dell’ambiente (host o bypass), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` deve ancora essere chiamato, solo con un payload vuoto.
 
 ### Aggiornamento della VPN {#updating-the-vpn}
 
@@ -556,7 +556,7 @@ Quando si aggiunge un’area geografica aggiuntiva a un ambiente in cui è già 
 
 Se nell’area geografica primaria è già abilitata una configurazione di rete avanzata, segui questi passaggi:
 
-1. Se hai bloccato l’infrastruttura in modo che l’indirizzo IP AEM dedicato sia inserito nell’elenco Consentiti, si consiglia di disabilitare temporaneamente eventuali regole di rifiuto in tale infrastruttura. In caso contrario, trascorre un breve periodo in cui le richieste provenienti dagli indirizzi IP della nuova area geografica sono rifiutate dalla tua infrastruttura. Questa operazione non è necessaria se l&#39;infrastruttura è stata bloccata tramite un nome di dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`, ad esempio), perché tutte le aree dell’AEM ricevono il traffico di rete avanzato dallo stesso FQDN
+1. Se hai bloccato l’infrastruttura in modo che l’indirizzo IP AEM dedicato sia inserito nell’elenco Consentiti, si consiglia di disabilitare temporaneamente eventuali regole di rifiuto in tale infrastruttura. In caso contrario, trascorre un breve periodo in cui le richieste provenienti dagli indirizzi IP della nuova area geografica sono rifiutate dalla tua infrastruttura. Questa operazione non è necessaria se l&#39;infrastruttura è stata bloccata tramite un nome di dominio completo (FQDN, Fully Qualified Domain Name), (`p1234.external.adobeaemcloud.com`, ad esempio), perché tutte le aree dell’AEM ricevono il traffico di rete avanzato dallo stesso FQDN
 1. Crea l’infrastruttura di rete con ambito di programma per l’area geografica secondaria tramite una chiamata POST all’API Crea infrastruttura di rete di Cloud Manager, come descritto nella documentazione di rete avanzata. L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria è la proprietà dell’area geografica
 1. Se l’infrastruttura deve essere bloccata da IP per consentire il traffico AEM, aggiungi gli IP corrispondenti `p1234.external.adobeaemcloud.com`. Dovrebbe essercene uno per area geografica.
 
@@ -566,7 +566,7 @@ La procedura è in gran parte simile alle istruzioni precedenti. Tuttavia, se l�
 
 1. Crea un’infrastruttura di rete per tutte le aree geografiche tramite chiamata POST all’[API Crea infrastruttura di rete di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria è la proprietà dell’area geografica.
 1. Per l’ambiente di staging, abilita e configura l’ambiente con ambito di rete avanzato eseguendo il comando `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Per ulteriori informazioni, consulta la documentazione API [qui](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
-1. Se necessario, blocca l’infrastruttura esterna, preferibilmente tramite FQDN (ad esempio `p1234.external.adobeaemcloud.com`). In alternativa, puoi farlo per indirizzo IP
+1. Se necessario, bloccare l&#39;infrastruttura esterna, preferibilmente tramite FQDN (ad esempio `p1234.external.adobeaemcloud.com`). In alternativa, puoi farlo per indirizzo IP
 1. Se l’ambiente di staging funziona come previsto, abilita e configura la configurazione di rete avanzata con ambito di ambiente per la produzione.
 
 #### VPN {#vpn-regions}

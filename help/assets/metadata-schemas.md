@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2638'
-ht-degree: 11%
+source-wordcount: '2627'
+ht-degree: 9%
 
 ---
 
@@ -43,14 +43,14 @@ Per visualizzare un elenco di moduli o modelli, in [!DNL Experience Manager] int
 
 | Modelli | | Descrizione |
 |---|---|---|
-| [!UICONTROL impostazione predefinita] | | Modulo schema metadati di base per le risorse. |
+| [!UICONTROL predefinito] | | Modulo schema metadati di base per le risorse. |
 | | I seguenti moduli figlio ereditano le proprietà del [!UICONTROL predefinito] forma: | |
 | | <ul><li>[!UICONTROL dm_video]</li></ul> | Modulo schema per video Dynamic Medie. |
 | | <ul><li>[!UICONTROL immagine]</li></ul> | Modulo schema per immagini con tipo MIME, ad esempio `image/jpeg` e `image/png`. <br> Il [!UICONTROL immagine] il modulo include i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: modulo schema per le risorse con sottotipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: modulo schema per le risorse con sottotipo TIFF.</li></ul> |
 | | <ul><li>[!UICONTROL applicazione]</li></ul> | Modulo schema per risorse di tipo MIME, ad esempio `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: modulo schema per le risorse con sottotipo PDF. |
 | | <ul><li>[!UICONTROL video]</li></ul> | Modulo schema per risorse video di tipo MIME, ad esempio `video/avi` e `video/mp4`. |
 | [!UICONTROL raccolta] | | Modulo schema per le raccolte. |
-| [!UICONTROL contentfragment] | | modulo schema per frammenti di contenuto. |
+| [!UICONTROL contentfragment] | | Modulo schema per frammenti di contenuto. |
 | [!UICONTROL moduli] | | Questo modulo schema si riferisce a [!DNL Adobe Experience Manager Forms]. |
 | [!UICONTROL ugc_contentfragment] | | Modulo schema per contenuti e risorse generati dall’utente integrati in Experience Manager da social media. |
 
@@ -100,7 +100,7 @@ Il **[!UICONTROL Genera modulo]** scheda elenca gli elementi del modulo utilizza
 | [!UICONTROL Tag avanzati] | Migliora le funzionalità di ricerca aggiungendo automaticamente tag di metadati. |
 | [!UICONTROL Campo nascosto] | Aggiungi un campo nascosto. Viene inviato come parametro POST al salvataggio della risorsa. |
 | [!UICONTROL Risorsa con riferimento da] | Aggiungi questo componente per visualizzare l’elenco delle risorse a cui fa riferimento la risorsa. |
-| [!UICONTROL Risorsa con riferimento a] | Aggiungi per visualizzare un elenco di risorse che fanno riferimento alla risorsa. |
+| [!UICONTROL Risorsa con riferimento] | Aggiungi per visualizzare un elenco di risorse che fanno riferimento alla risorsa. |
 | [!UICONTROL Riferimenti prodotti] | Aggiungi per visualizzare l’elenco dei prodotti collegati alla risorsa. |
 | [!UICONTROL Metadati contestuali] | Aggiungi per controllare la visualizzazione di altre schede di metadati nella pagina delle proprietà delle risorse. |
 
@@ -223,11 +223,11 @@ Solo le risorse caricate nella cartella a cui è applicato questo schema sono co
 L’ereditarietà dei metadati da parte delle risorse si basa sullo schema applicato alla cartella di livello superiore nella gerarchia. Lo stesso schema viene applicato o ereditato dalle sottocartelle. Se a livello di sottocartella viene applicato uno schema diverso, l’ereditarietà si interrompe.
 
 1. In entrata [!DNL Experience Manager] , passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
-1. Selezionare la casella di controllo che precede un modulo, ad esempio il modulo di metadati predefinito, e fare clic su **[!UICONTROL Copia]** e salvarlo come modulo personalizzato. Specifica un nome personalizzato per il modulo, ad esempio `my_default`. In alternativa, è possibile creare un modulo personalizzato.
+1. Selezionare la casella di controllo che precede un modulo, ad esempio il modulo di metadati predefinito, e fare clic su **[!UICONTROL Copia]** e salvarlo come modulo personalizzato. Specifica un nome personalizzato per il modulo, ad esempio: `my_default`. In alternativa, è possibile creare un modulo personalizzato.
 
 1. In **[!UICONTROL Forms schema metadati]** , seleziona la `my_default` e quindi fare clic su **[!UICONTROL Modifica]**.
 1. In **[!UICONTROL Editor schema metadati]** , aggiungere un campo di testo al modulo schema. Ad esempio, aggiungi un campo con l’etichetta **[!UICONTROL Categoria]**.
-1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina.
+1. Clic **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina.
 1. Seleziona **[!UICONTROL Applica a cartelle]** dalla barra degli strumenti per applicare i metadati personalizzati a una cartella.
 1. Seleziona la cartella in cui applicare lo schema modificato, quindi seleziona **[!UICONTROL Applica]**.
 1. Se alla cartella è applicato l’altro schema metadati, viene visualizzato un messaggio che informa che stai per sovrascrivere lo schema metadati esistente. Clic **Sovrascrivere**.
@@ -245,7 +245,7 @@ Puoi definire campi obbligatori a livello di cartella, che vengono applicati all
 1. Fai clic sul logo dell’Experience Manager, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
 1. Salva il modulo metadati predefinito come modulo personalizzato. Ad esempio, salvala con nome `my_default`.
 1. Modifica il modulo personalizzato. Aggiungi un campo obbligatorio. Ad esempio, aggiungi un **[!UICONTROL Categoria]** e rendere il campo obbligatorio.
-1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina. Seleziona il modulo, quindi fai clic su **[!UICONTROL Applica a cartelle]** dalla barra degli strumenti per applicare i metadati personalizzati a una cartella.
+1. Clic **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina. Seleziona il modulo, quindi fai clic su **[!UICONTROL Applica a cartelle]** dalla barra degli strumenti per applicare i metadati personalizzati a una cartella.
 1. Passa alla cartella e carica alcune risorse con metadati mancanti per il campo obbligatorio aggiunto al modulo personalizzato. Nella vista a schede della risorsa viene visualizzato un messaggio per i metadati mancanti per il campo obbligatorio.
 1. (Facoltativo) Accesso `https://[server]:[port]/system/console/components/`. Configurare e abilitare `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` componente disabilitato per impostazione predefinita. Imposta la frequenza con cui Experience Manager controlla la validità dei metadati delle risorse.
 

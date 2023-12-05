@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 2%
+source-wordcount: '1512'
+ht-degree: 1%
 
 ---
 
@@ -37,17 +37,17 @@ ht-degree: 2%
 Verifica di aver configurato le origini dati che intendi utilizzare nel modello dati del modulo come descritto in [Configurare le origini dati](configure-data-sources.md). Per creare un modello dati modulo basato su origini dati configurate, effettuare le seguenti operazioni:
 
 1. In entrata [!DNL Experience Manager] istanza di authoring, passa a **[!UICONTROL Forms > Integrazioni dati]**.
-1. Tocca **[!UICONTROL Crea > Modello dati modulo]**.
+1. Seleziona **[!UICONTROL Crea > Modello dati modulo]**.
 1. Nella finestra di dialogo Crea modello dati modulo:
 
    * Specifica un nome per il modello dati del modulo.
    * (**Facoltativo**) Specifica titolo, descrizione e tag per il modello di dati del modulo.
-   * (**Facoltativo e applicabile solo se le origini dati sono configurate** a) Toccare l&#39;icona di spunta accanto al **[!UICONTROL Configurazione origine dati]** e seleziona il nodo di configurazione in cui risiedono i servizi cloud per le origini dati che desideri utilizzare. Limita l’elenco delle origini dati disponibili per la selezione nella pagina successiva a quelle disponibili nel nodo di configurazione selezionato. Tuttavia, qualsiasi [!DNL Experience Manager] le origini dati del profilo utente sono elencate per impostazione predefinita. Se non si seleziona un nodo di configurazione, vengono elencate le origini dati di tutti i nodi di configurazione.
+   * (**Facoltativo e applicabile solo se le origini dati sono configurate** a) Selezionare l&#39;icona di spunta accanto al simbolo **[!UICONTROL Configurazione origine dati]** e seleziona il nodo di configurazione in cui risiedono i servizi cloud per le origini dati che desideri utilizzare. Limita l’elenco delle origini dati disponibili per la selezione nella pagina successiva a quelle disponibili nel nodo di configurazione selezionato. Tuttavia, qualsiasi [!DNL Experience Manager] le origini dati del profilo utente sono elencate per impostazione predefinita. Se non si seleziona un nodo di configurazione, vengono elencate le origini dati di tutti i nodi di configurazione.
 
-1. Tocca **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Avanti]**.
 
 1. (**Applicabile solo se le origini dati sono configurate**) La **[!UICONTROL Seleziona origine dati]** nella schermata sono elencate le origini dati disponibili, se presenti. Selezionare le origini dati da utilizzare nel modello dati del modulo.
-1. Tocca **[!UICONTROL Crea]** e nella finestra di dialogo di conferma tocca **[!UICONTROL Apri]** per aprire l’editor modello dati modulo.
+1. Seleziona **[!UICONTROL Crea]** e nella finestra di dialogo di conferma, seleziona **[!UICONTROL Apri]** per aprire l’editor modello dati modulo.
 
    Esaminiamo i diversi componenti dell’interfaccia utente dell’editor del modello dati modulo.
 
@@ -71,21 +71,21 @@ Per ulteriori informazioni sull’editor del modello dati modulo e su come utili
 
 Per aggiungere o aggiornare origini dati a un modello dati modulo esistente, eseguire le operazioni seguenti.
 
-1. Vai a **[!UICONTROL Forms > Integrazioni dati]**, seleziona il modello dati modulo in cui desideri aggiungere o aggiornare le origini dati e tocca **[!UICONTROL Proprietà]**.
+1. Vai a **[!UICONTROL Forms > Integrazioni dati]**, selezionare il modello dati modulo in cui si desidera aggiungere o aggiornare le origini dati e quindi selezionare **[!UICONTROL Proprietà]**.
 1. Nelle proprietà del modello dati modulo, vai al **[!UICONTROL Aggiorna origine]** scheda.
 
    In **[!UICONTROL Aggiorna origine]** scheda:
 
-   * Tocca l’icona Sfoglia in **[!UICONTROL Configurazione in base al contesto]** e selezionare un nodo di configurazione in cui risiede la configurazione cloud per l&#39;origine dati che si desidera aggiungere. Se non selezioni un nodo, le configurazioni cloud che risiedono solo nel `global` Il nodo viene elencato quando tocchi **[!UICONTROL Aggiungi origini]**.
+   * Seleziona l’icona Sfoglia in **[!UICONTROL Configurazione in base al contesto]** e selezionare un nodo di configurazione in cui risiede la configurazione cloud per l&#39;origine dati che si desidera aggiungere. Se non selezioni un nodo, le configurazioni cloud che risiedono solo nel `global` vengono elencati quando si seleziona **[!UICONTROL Aggiungi origini]**.
 
-   * Per aggiungere una nuova origine dati, tocca **[!UICONTROL Aggiungi origini]** e seleziona le origini dati da aggiungere al modello dati del modulo. Tutte le origini dati configurate in `global` e viene visualizzato il nodo di configurazione selezionato, se presente.
+   * Per aggiungere una nuova origine dati, selezionare **[!UICONTROL Aggiungi origini]** e seleziona le origini dati da aggiungere al modello dati del modulo. Tutte le origini dati configurate in `global` e viene visualizzato il nodo di configurazione selezionato, se presente.
 
-   * Per sostituire un’origine dati esistente con un’altra origine dati dello stesso tipo, tocca il **[!UICONTROL Modifica]** per l&#39;origine dati e selezionarla dall&#39;elenco delle origini dati disponibili.
-   * Per eliminare un’origine dati esistente, tocca il **[!UICONTROL Elimina]** per l&#39;origine dati. L’icona Elimina è disabilitata se nel modello dati del modulo viene aggiunto un oggetto modello dati nell’origine dati.
+   * Per sostituire un&#39;origine dati esistente con un&#39;altra origine dati dello stesso tipo, selezionare **[!UICONTROL Modifica]** per l&#39;origine dati e selezionarla dall&#39;elenco delle origini dati disponibili.
+   * Per eliminare un&#39;origine dati esistente, selezionare **[!UICONTROL Elimina]** per l&#39;origine dati. L’icona Elimina è disabilitata se nel modello dati del modulo viene aggiunto un oggetto modello dati nell’origine dati.
 
      ![fdm-properties](assets/fdm-properties.png)
 
-1. Tocca **[!UICONTROL Salva e chiudi]** per salvare gli aggiornamenti.
+1. Seleziona **[!UICONTROL Salva e chiudi]** per salvare gli aggiornamenti.
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Creare file di configurazione di fabbrica OSGi con PID `org.apache.sling.caconfi
       1. Sull’istanza di sviluppo locale `/system/console/configMgr`, seleziona factory OSGi configuration (Configurazione OSGi in fabbrica) con il nome **[!UICONTROL Provider di sostituzione configurazione in base al contesto Apache Sling: configurazione OSGi]**.
       1. Fornisci una descrizione.
       1. Seleziona **[!UICONTROL abilitato]**.
-      1. In sostituzioni, fornisci i campi che devono essere modificati in base all’ambiente nella sintassi di sostituzione Sling. Per ulteriori informazioni, consulta [Configurazione in base al contesto di Apache Sling - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Esempio: `cloudconfigs/fdm/{configName}/url="newURL"`.
+      1. In sostituzioni, fornisci i campi che devono essere modificati in base all’ambiente nella sintassi di sostituzione Sling. Per ulteriori informazioni, consulta [Configurazione in base al contesto di Apache Sling - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Ad esempio: `cloudconfigs/fdm/{configName}/url="newURL"`.
 È possibile aggiungere più sostituzioni selezionando **[!UICONTROL +]**.
       1. Seleziona **[!UICONTROL Salva]**.
       1. Per ottenere il JSON di configurazione OSGi, segui i passaggi descritti in [Generazione di configurazioni OSGi tramite QuickStart per SDK AEM](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
@@ -143,4 +143,4 @@ Per ulteriori informazioni, consulta [Utilizzare il modello dati del modulo](wor
 
 >[!MORELIKETHIS]
 >
->* [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
+>* [Usa modello dati modulo](/help/forms/using-form-data-model.md)

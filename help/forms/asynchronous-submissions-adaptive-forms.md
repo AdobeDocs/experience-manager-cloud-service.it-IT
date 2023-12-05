@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '746'
 ht-degree: 1%
 
 ---
@@ -31,14 +31,14 @@ Continua a leggere per i dettagli sull’invio asincrono in Adaptive Forms.
 
 Per configurare l’invio asincrono per un modulo adattivo:
 
-1. In modalità di authoring di moduli adattivi, seleziona l’oggetto Contenitore modulo e tocca ![cmppr1](assets/configure-icon.svg) per aprirne le proprietà.
+1. In modalità di creazione di moduli adattivi, seleziona l’oggetto Contenitore modulo e fai clic su ![cmppr1](assets/configure-icon.svg) per aprirne le proprietà.
 1. In **[!UICONTROL Invio]** proprietà, abilita **[!UICONTROL Utilizzare l’invio asincrono]**.
 1. In **[!UICONTROL All’invio]** , selezionare una delle opzioni seguenti da eseguire in caso di invio corretto del modulo.
 
    * **[!UICONTROL Reindirizza a URL]**: reindirizza all’URL o alla pagina specificata al momento dell’invio del modulo. Puoi specificare un URL o sfogliare per scegliere il percorso di una pagina in **[!UICONTROL URL/percorso di reindirizzamento]** campo.
    * **[!UICONTROL Mostra messaggio]**: visualizza un messaggio all’invio del modulo. È possibile scrivere un messaggio nel campo di testo sotto **[!UICONTROL Mostra messaggio]** opzione. Il campo di testo supporta la formattazione RTF.
 
-1. Tocca ![check-button1](assets/save_icon.svg) per salvare le proprietà.
+1. Seleziona ![check-button1](assets/save_icon.svg) per salvare le proprietà.
 
 ## Funzionamento dell’invio asincrono {#how-asynchronous-submission-works}
 
@@ -108,11 +108,11 @@ Gli sviluppatori e gli autori di moduli possono scrivere regole a livello di mod
 
 Per scrivere regole per gestire eventi di successo e di errore, effettua le seguenti operazioni.
 
-1. Apri il modulo adattivo in modalità di authoring, seleziona un oggetto modulo qualsiasi e tocca ![edit-rules1](assets/edit-rules-icon.svg) per aprire l’editor di regole.
-1. Seleziona **[!UICONTROL Modulo]** nella struttura Oggetti modulo e tocca **[!UICONTROL Crea]**.
+1. Apri il modulo adattivo in modalità di creazione, seleziona un oggetto modulo qualsiasi e fai clic su ![edit-rules1](assets/edit-rules-icon.svg) per aprire l’editor di regole.
+1. Seleziona **[!UICONTROL Modulo]** nella struttura Oggetti modulo e selezionare **[!UICONTROL Crea]**.
 1. Scegli **[!UICONTROL è stato inviato correttamente]** o **[!UICONTROL invio non riuscito]** dal **[!UICONTROL Seleziona stato]** elenco a discesa.
 1. Definisci un **[!UICONTROL Then]** azione per lo stato selezionato. Ad esempio, seleziona **[!UICONTROL Accedi a]** e quindi digita o incolla un URL. È inoltre possibile trascinare qualsiasi funzione utilizzando **[!UICONTROL Funzioni]** alla regola.
 
    ![gestore invio riuscito](assets/form-submission-handler.png)
 
-1. Tocca **[!UICONTROL Fine]** per salvare la regola.
+1. Seleziona **[!UICONTROL Fine]** per salvare la regola.

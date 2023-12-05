@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 9%
+source-wordcount: '1956'
+ht-degree: 8%
 
 ---
 
@@ -128,7 +128,7 @@ Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations
 
 **Per creare i set 360 gradi:**
 
-1. In Assets, individua il punto in cui vuoi creare un set 360 gradi, seleziona **[!UICONTROL Crea]** e quindi selezionare **[!UICONTROL Set 360 gradi]**. Puoi anche creare il set dall’interno di una cartella contenente le risorse.
+1. In Assets, individua il punto in cui vuoi creare un set 360 gradi, seleziona **[!UICONTROL Crea]** e quindi selezionare **[!UICONTROL Set 360 gradi]**. Puoi anche creare il set dall’interno di una cartella che contiene le risorse.
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
@@ -144,7 +144,7 @@ Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations
 
    * Nell’angolo in alto a sinistra della pagina Editor set 360 gradi, seleziona **[!UICONTROL Aggiungi risorsa]**.
 
-   * Nella parte centrale della pagina Editor set 360 gradi, seleziona **[!UICONTROL Toccate per aprire il selettore risorse]**.
+   * Nella parte centrale della pagina Editor set 360 gradi, seleziona **[!UICONTROL Seleziona per aprire il selettore risorse]**.
 
    Seleziona le risorse da includere nel set 360 gradi. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. Al termine, vicino all’angolo superiore destro della pagina, seleziona **[!UICONTROL Seleziona]**.
 

@@ -2,10 +2,10 @@
 title: Estensione di Multi Site Manager
 description: Scopri come estendere le funzionalità di Multi Site Manager.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2429'
-ht-degree: 1%
+source-wordcount: '2337'
+ht-degree: 0%
 
 ---
 
@@ -86,7 +86,7 @@ Il `LiveActionFactory` crea istanze del `LiveAction` classe per una determinata 
 
    * `getName` - Restituisce il nome dell’azione
 
-      * Il nome viene utilizzato per fare riferimento all&#39;azione, ad esempio nelle configurazioni di rollout.
+      * Il nome viene utilizzato per fare riferimento all&#39;azione, ad esempio, nelle configurazioni di rollout.
 
    * `execute` - Esegue le attività dell&#39;azione
 
@@ -175,7 +175,7 @@ Per creare una configurazione di rollout:
 
 1. In questa posizione, crea un nodo con le seguenti proprietà:
 
-   * **Nome**: nome del nodo della configurazione di rollout, ad esempio `contentCopy` o `workflow`
+   * **Nome**: nome del nodo della configurazione di rollout, ad esempio, `contentCopy` o `workflow`
    * **Tipo**: `cq:RolloutConfig`
 
 1. Aggiungi le seguenti proprietà a questo nodo:
@@ -547,7 +547,7 @@ Configura la configurazione di rollout creata nella procedura precedente in modo
 
 [Creare una Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md#creating-a-live-copy-of-a-page) del ramo Inglese/Prodotti del sito di riferimento WKND utilizzando la configurazione di rollout:
 
-* **Origine**: `/content/wknd/language-masters/en/products`
+* **Sorgente**: `/content/wknd/language-masters/en/products`
 
 * **Configurazione rollout**: esempio di configurazione di rollout
 

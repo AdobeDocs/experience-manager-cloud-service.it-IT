@@ -4,10 +4,10 @@ description: Scopri come creare e gestire progetti di traduzione automatica e um
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3971'
-ht-degree: 86%
+source-wordcount: '3960'
+ht-degree: 85%
 
 ---
 
@@ -463,7 +463,7 @@ Sebbene l’AEM offra diverse soluzioni e interfacce di traduzione, è anche pos
 
 ### Esportazione di un processo di traduzione {#exporting-a-translation-job}
 
-È possibile scaricare il contenuto di un processo di traduzione, ad esempio per l’invio a un fornitore di traduzione che non è integrato con AEM tramite un connettore o per esaminare il contenuto.
+Puoi scaricare il contenuto di un processo di traduzione, ad esempio per inviarlo a un fornitore di traduzione che non è integrato con l’AEM tramite un connettore o per rivederlo.
 
 1. Dal menu a discesa del riquadro del processo di traduzione, seleziona **Esporta**.
 1. Nella finestra di dialogo, seleziona **Scarica file esportato** e, se necessario, utilizzare la finestra di dialogo del browser web per salvare il file.
@@ -471,7 +471,7 @@ Sebbene l’AEM offra diverse soluzioni e interfacce di traduzione, è anche pos
 
 ### Importazione di un processo di traduzione {#importing-a-translation-job}
 
-Puoi importare contenuti tradotti in AEM, ad esempio se il fornitore di traduzione li invia a te perché non è integrato con AEM tramite un connettore.
+Puoi importare contenuti tradotti in AEM, ad esempio, quando il provider di traduzione li invia a te perché non è integrato con AEM tramite un connettore.
 
 1. Dal menu a discesa del riquadro del processo di traduzione, seleziona **Importa**.
 1. Utilizza la finestra di dialogo del browser web per selezionare il file da importare.

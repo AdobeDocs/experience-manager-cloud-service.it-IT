@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2529'
-ht-degree: 75%
+source-wordcount: '2526'
+ht-degree: 73%
 
 ---
 
@@ -57,7 +57,7 @@ Per i proprietari di contenuti che sono anche responsabili della traduzione, spe
 
 1. Accedi a **Navigazione** > **Sites** e seleziona il progetto.
 1. Individua la lingua root del progetto. Ad esempio, se la lingua root è l&#39;inglese, `/content/<your-project>/en`
-   * Tieni presente che prima della prima traduzione le cartelle delle altre lingue sono segnaposto vuoti. Queste vengono normalmente create dall’architetto dei contenuti.
+   * Prima della prima traduzione, le cartelle delle altre lingue sono segnaposto vuoti. Queste vengono normalmente create dall’architetto dei contenuti.
 1. Individua la lingua root del progetto.
 1. Seleziona il selettore della barra e mostra **Riferimenti** pannello.
 1. Seleziona **Copie per lingua**.
@@ -123,7 +123,7 @@ Il progetto è diviso in più schede.
 
 * **Riepilogo**: questa scheda mostra le informazioni di intestazione di base del progetto, inclusi il proprietario, la lingua e il provider di traduzione.
 * **Lavoro di traduzione** - Questa scheda o queste schede mostrano una panoramica del lavoro di traduzione effettivo, compreso lo stato, il numero di risorse e così via. In genere esiste un lavoro per lingua con il codice della lingua ISO-2 aggiunto al nome del processo.
-   * Tieni presente che quando [crea automaticamente i lavori di traduzione,](#automatically-creating) AEM lo fa in modo asincrono e potrebbero non essere visualizzati immediatamente all’interno del progetto.
+   * Quando [creazione automatica di lavori di traduzione,](#automatically-creating) L’AEM crea i processi in modo asincrono e potrebbero non essere visualizzati immediatamente all’interno del progetto.
 * **Team**: questa scheda mostra gli utenti che stanno collaborando a questo progetto di traduzione. Questo percorso non tratta questo argomento.
 * **Attività**: attività aggiuntive associate alla traduzione del contenuto, ad esempio per eseguire elementi o elementi del flusso di lavoro. Questo percorso non tratta questo argomento.
 

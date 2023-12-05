@@ -2,10 +2,10 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2398'
-ht-degree: 38%
+source-wordcount: '2387'
+ht-degree: 37%
 
 ---
 
@@ -232,7 +232,7 @@ A seconda del tipo di componente selezionato, i dettagli possono essere visualiz
 
 ![Dettagli dei componenti](assets/component-details.png)
 
-Nota che non tutti i componenti hanno dettagli che possono essere visualizzati e/o modificati.
+Non tutti i componenti hanno dettagli che possono essere visualizzati e/o modificati.
 
 >[!TIP]
 >
@@ -300,7 +300,7 @@ La modifica del contenuto è semplice e intuitiva. In entrata [modalità compone
 
 >[!TIP]
 >
->In modalità componenti, tocca o fai clic sul contenuto per selezionarlo e modificarlo. Se desideri navigare nel contenuto seguendo i collegamenti, passa a [modalità anteprima.](#preview-mode)
+>In modalità componenti, tocca o fai clic sul contenuto per selezionarlo per la modifica. Se desideri navigare nel contenuto seguendo i collegamenti, passa a [modalità anteprima.](#preview-mode)
 
 A seconda del contenuto selezionato, è possibile che siano disponibili diverse opzioni di modifica diretta e che siano disponibili ulteriori informazioni e opzioni per il contenuto nel [barra delle proprietà.](#properties-rail)
 
@@ -407,7 +407,7 @@ I componenti vengono riordinati sia nella struttura del contenuto che nell’edi
 
 Quando hai finito di modificare il contenuto, spesso desideri navigare in esso per vedere come si presenta nel contenuto di altre pagine. In [modalità anteprima](#preview-mode) puoi fare clic sui collegamenti per navigare nel contenuto come farebbe un lettore. Il contenuto viene riprodotto nell’editor così come verrebbe pubblicato.
 
-In modalità anteprima, toccando o facendo clic sul contenuto questo appare così come si presenterebbe a un lettore. Se desideri selezionare il contenuto da modificare, passa a [modalità componenti.](#component-mode)
+In modalità anteprima, toccando o facendo clic sul contenuto si reagisce come se si trattasse di un normale lettore. Se desideri selezionare il contenuto da modificare, passa a [modalità componenti.](#component-mode)
 
 ## Risorse aggiuntive {#additional-resources}
 

@@ -2,10 +2,10 @@
 title: Note sulla versione 2021.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2021.3.0 as a Cloud Service."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 38%
+source-wordcount: '1271'
+ht-degree: 33%
 
 ---
 
@@ -85,8 +85,8 @@ Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Clou
 
 ## Data di pubblicazione {#release-date-cm-march}
 
-La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.3.0 è il 11 marzo 2021.
-La prossima versione è pianificata per il 08 aprile 2021.
+La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.3.0 è l’11 marzo 2021.
+La prossima versione è pianificata per il venerdì 8 aprile 2021.
 
 ### Novità {#what-is-new-march}
 
@@ -147,7 +147,7 @@ La data di pubblicazione dello strumento Content Transfer v1.3.0 è il 4 marzo 2
 ### Novità dello strumento Content Transfer {#what-is-new-ctt-march}
 
 * CTT ora si installa in `/apps` invece di `/libs` I segnalibri del browser per determinate pagine potrebbero non essere più validi.
-* Quando CTT è installato, l’utente dovrà spostarsi su un livello aggiuntivo per accedere alla pagina Content Transfer (Trasferimento contenuti). Consulta [Utilizzo dello strumento di trasferimento dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=it) per ulteriori dettagli.
+* Quando CTT è installato, l’utente dovrà spostarsi su un livello aggiuntivo per accedere alla pagina Content Transfer (Trasferimento contenuti). Consulta [Utilizzo dello strumento di trasferimento dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) per ulteriori dettagli.
 
 ### Correzioni di bug {#bug-fixes-ctt-march}
 

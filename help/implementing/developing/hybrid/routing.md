@@ -2,9 +2,9 @@
 title: Routing modello SPA
 description: Per le applicazioni a pagina singola nell’AEM, l’app è responsabile del routing. Questo documento descrive il meccanismo di instradamento, il contratto e le opzioni disponibili.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Per impostazione predefinita, questo comportamento viene attivato automaticament
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-Ogni via del SPA deve corrispondere a una risorsa accessibile nell&#39;AEM (ad esempio, &quot; `/content/mysite/mypage"`) dal `PageModelManager` tenta automaticamente di caricare il modello di pagina corrispondente una volta selezionato il percorso. Tuttavia, se necessario, l&#39;SPA può anche definire un &quot;elenco Bloccati&quot; di vie che devono essere ignorate dall&#39;Autorità `PageModelManager`:
+Ogni via del SPA dovrebbe corrispondere a una risorsa accessibile nell&#39;AEM (ad esempio, &quot; `/content/mysite/mypage"`) dal `PageModelManager` tenta automaticamente di caricare il modello di pagina corrispondente una volta selezionato il percorso. Tuttavia, se necessario, l&#39;SPA può anche definire un &quot;elenco Bloccati&quot; di vie che devono essere ignorate dall&#39;Autorità `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

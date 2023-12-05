@@ -2,10 +2,10 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare la funzione di registrazione per AEM as a Cloud Service per configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2753'
-ht-degree: 9%
+source-wordcount: '2720'
+ht-degree: 8%
 
 ---
 
@@ -113,7 +113,7 @@ I livelli di registro AEM sono impostati per tipo di ambiente tramite la configu
 <tbody>
 <tr>
 <td>Data e ora</td>
-<td>29.04.2020 21:50:13.398</td>
+<td>21 29.04.2020:50:13,398</td>
 </tr>
 <tr>
 <td>ID nodo as a Cloud Service AEM</td>
@@ -190,14 +190,14 @@ Di seguito sono riportati alcuni esempi delle configurazioni di registrazione co
 
 La registrazione delle richieste HTTP di AEM as a Cloud Service fornisce informazioni approfondite sulle richieste HTTP effettuate all’AEM e sulle relative risposte HTTP in ordine di tempo. Questo registro è utile per comprendere le richieste HTTP effettuate all’AEM e l’ordine in cui vengono elaborate e a cui rispondono.
 
-Per comprendere questo registro, è fondamentale mappare le coppie di richiesta HTTP e risposta in base ai rispettivi ID, indicati dal valore numerico tra parentesi. Tieni presente che spesso le richieste e le risposte corrispondenti si intersecano nel registro con altre richieste HTTP e altre risposte.
+Per comprendere questo registro, è fondamentale mappare le coppie di richiesta HTTP e risposta in base ai rispettivi ID, indicati dal valore numerico tra parentesi. Spesso le richieste e le risposte corrispondenti presentano altre richieste HTTP e risposte interposte tra loro nel registro.
 
 **Esempio di registro**
 
 ```
-29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:21 +0000 [137] > POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
-29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:22 +0000 [139] > GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
@@ -285,7 +285,7 @@ Questo set di registri fornisce informazioni approfondite sulle richieste HTTP a
 
 ### Registro accesso server web Apache HTTPD {#apache-httpd-web-server-access-log}
 
-Il registro di accesso al server web Apache HTTP fornisce istruzioni per ogni richiesta HTTP che raggiunge il server web/Dispatcher del livello di pubblicazione. Tieni presente che le richieste servite da una rete CDN a monte non vengono riportate in questi registri.
+Il registro di accesso al server web Apache HTTP fornisce istruzioni per ogni richiesta HTTP che raggiunge il server web/Dispatcher del livello di pubblicazione. Le richieste servite da una rete CDN a monte non vengono riportate in questi registri.
 
 Consulta le informazioni sul formato del registro degli errori in [documentazione ufficiale di apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -534,7 +534,7 @@ I registri CDN sono distinti dagli altri registri in quanto sono conformi al for
 
 | **Nome campo** | **Descrizione** |
 |---|---|
-| *marca temporale* | L’ora di inizio della richiesta, dopo la cessazione del TLS |
+| *marca temporale* | Ora di inizio della richiesta, dopo la chiusura di TLS |
 | *ttfb* | Abbreviazione per *Time To First Byte*. L’intervallo di tempo compreso tra l’inizio della richiesta e il momento prima che il corpo della risposta inizi a essere trasmesso in streaming. |
 | *cli_ip* | Indirizzo IP del client. |
 | *cli_country* | Codice paese a due lettere [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) alfa-2 del paese client. |
@@ -577,7 +577,7 @@ I registri AEM si trovano nella cartella `crx-quickstart/logs`, in cui è possib
 * Registro richieste HTTP AEM: `request.log`
 * Registro degli accessi HTTP AEM: `access.log`
 
-I registri del livello Apache, incluso Dispatcher, si trovano nel contenitore Docker che contiene Dispatcher. Consulta la [Documentazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=it) per informazioni su come avviare Dispatcher.
+I registri del livello Apache, incluso Dispatcher, si trovano nel contenitore Docker che contiene Dispatcher. Consulta la [Documentazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) per informazioni su come avviare Dispatcher.
 
 Per recuperare i registri:
 

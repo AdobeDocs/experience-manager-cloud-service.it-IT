@@ -2,10 +2,10 @@
 title: Modifica del contenuto di una pagina
 description: Una volta creata la pagina, è possibile aggiornarla modificandone i contenuti
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2973'
-ht-degree: 92%
+source-wordcount: '2974'
+ht-degree: 91%
 
 ---
 
@@ -276,7 +276,7 @@ Esistono due metodi per aggiungere e/o modificare contenuti nei componenti:
 
 Per aprire un componente e modificarne il contenuto, utilizza l’icona [Modifica (a forma di matita) nella barra degli strumenti del componente](#component-toolbar).
 
-Le opzioni di modifica effettive dipendono dal componente. Per alcuni componenti [tutte le azioni sono disponibili solo in modalità a schermo intero](#edit-content-full-screen-mode). Esempio:
+Le opzioni di modifica effettive dipendono dal componente. Per alcuni componenti [tutte le azioni saranno disponibili solo in modalità a schermo intero](#edit-content-full-screen-mode). Esempio:
 
 * Componente testo
 
@@ -322,7 +322,7 @@ Per esempio, il componente **Testo**:
 
 Per spostare un componente paragrafo:
 
-1. Tocca o fai clic e tieni premuto per selezionare il paragrafo da spostare.
+1. Selezionare il paragrafo da spostare con la selezione o il clic e la conservazione.
 1. Trascina il paragrafo nella nuova posizione. In AEM viene indicato dove è possibile rilasciare il paragrafo. Rilascialo nella posizione desiderata.
 
    ![Spostamento di un componente](/help/sites-cloud/authoring/assets/editing-moving-component.png)
@@ -541,5 +541,5 @@ I comandi Annulla e Ripristina possono essere utilizzati solo per i tipi di modi
 >
 >* Per annullare e ripristinare le modifiche apportate a file e immagini sono necessarie autorizzazioni speciali.
 >* La cronologia delle modifiche apportate ai file e alle immagini viene conservata per almeno dieci ore. Oltre tale limite, la possibilità di annullare le modifiche non è garantita. L’amministratore può cambiare il tempo predefinito di dieci ore.
->* L’amministratore di sistema può configurare vari aspetti delle funzioni Annulla e Ripristina in base ai requisiti particolari del caso in questione.
+>* L’amministratore di sistema può configurare vari aspetti delle funzioni Annulla e Ripristina in base ai requisiti dell’istanza.
 <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

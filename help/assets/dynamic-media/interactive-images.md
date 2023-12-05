@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4175'
-ht-degree: 2%
+source-wordcount: '4072'
+ht-degree: 1%
 
 ---
 
 # Immagini interattive{#interactive-images}
 
-Puoi arricchire facilmente le immagini statiche e coinvolgerle con i clienti trascinando gli hotspot &quot;shoppable&quot; su un&#39;immagine. Gli hotspot acquistabili combinano informazioni aggiuntive su un prodotto o un servizio con una funzionalità diretta per i punti vendita &quot;Aggiungi al carrello&quot; o &quot;Acquista&quot;. I clienti possono toccare questi punti attivi che si collegano direttamente al prodotto o al servizio, aggiungerlo al carrello o essere collegati a una pagina web. Esperienze dirette come queste aumentano il coinvolgimento dei clienti e le conversioni sul tuo sito web.
+Puoi arricchire facilmente le immagini statiche e coinvolgerle con i clienti trascinando gli hotspot &quot;shoppable&quot; su un&#39;immagine. Gli hotspot acquistabili combinano informazioni aggiuntive su un prodotto o un servizio con una funzionalità diretta per i punti vendita &quot;Aggiungi al carrello&quot; o &quot;Acquista&quot;. I clienti possono selezionare questi hotspot che si collegano direttamente al prodotto o al servizio, aggiungerlo al carrello o essere collegati a una pagina web. Esperienze dirette come queste aumentano il coinvolgimento dei clienti e le conversioni sul tuo sito web.
 
 Di seguito è riportato un banner acquistabile con una finestra popup Quickview. L&#39;utente attiva la Quickview toccando il cerchio o il &quot;punto attivo&quot; sul modello.
 
@@ -179,20 +179,20 @@ Dopo aver salvato il predefinito visualizzatore, questo viene attivato automatic
 **Per creare un predefinito visualizzatore di immagini interattivo:**
 
 1. Nella barra a sinistra, vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Predefiniti visualizzatore]**.
-1. Tocca nell’angolo superiore destro della pagina **[!UICONTROL Crea]**.
+1. Nell’angolo superiore destro della pagina, seleziona **[!UICONTROL Crea]**.
 1. Nella finestra di dialogo Nuovo predefinito visualizzatore, digita un nome per descrivere il predefinito visualizzatore banner interattivo.
 
    Questo titolo viene visualizzato nella pagina Elenco predefiniti visualizzatore dopo il salvataggio.
 
 1. Nel menu a discesa Tipo di contenuti multimediali avanzati, seleziona **[!UICONTROL Immagine interattiva]**.
 1. Seleziona **[!UICONTROL Crea]**.
-1. Nella pagina Modifica predefinito visualizzatore, tocca il **[!UICONTROL Aspetto]** scheda.
+1. Nella pagina Modifica predefinito visualizzatore, seleziona **[!UICONTROL Aspetto]** scheda.
 1. Effettua una delle operazioni seguenti:
 
-   * Per caricare la tua immagine del punto attivo da utilizzare sulle immagini, tocca l’icona del selettore risorse. Nella pagina Seleziona contenuto, individua l’immagine del punto attivo che desideri utilizzare e selezionala. Seleziona l’icona a forma di segno di spunta nell’angolo in alto a destra.
-   * Per selezionare un&#39;immagine punto attivo predefinita, tocca l&#39;icona Raccolta punti attivi. Nella tavolozza della galleria di punti attivi, toccare l&#39;immagine che si desidera utilizzare.
+   * Per caricare la tua immagine del punto attivo da utilizzare sulle immagini, seleziona l’icona Selettore risorse. Nella pagina Seleziona contenuto, individua l’immagine del punto attivo che desideri utilizzare e selezionala. Seleziona l’icona a forma di segno di spunta nell’angolo in alto a destra.
+   * Per selezionare un&#39;immagine punto attivo predefinita, selezionate l&#39;icona Raccolta punti attivi. Nella tavolozza della galleria di punti attivi, selezionare l&#39;immagine che si desidera utilizzare.
 
-1. Tocca nell’angolo superiore destro della pagina **[!UICONTROL Salva]**.
+1. Nell’angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]**.
 
    Assicurati di pubblicare il nuovo predefinito visualizzatore.
 
@@ -247,35 +247,35 @@ Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immag
 1. Nella vista Risorse, individua il banner immagine da rendere interattivo.
 1. Effettua una delle operazioni seguenti:
 
-   * Passa il puntatore sull’immagine, quindi tocca **[!UICONTROL Seleziona]** (icona di spunta). Sulla barra degli strumenti, tocca **[!UICONTROL Modifica]**.
+   * Passa il puntatore sull’immagine, quindi seleziona **[!UICONTROL Seleziona]** (icona di spunta). Sulla barra degli strumenti, seleziona **[!UICONTROL Modifica]**.
 
-   * Passa il puntatore sull’immagine, quindi tocca **[!UICONTROL Altre azioni]** (icona a tre punti) **[!UICONTROL > Modifica]**.
+   * Passa il puntatore sull’immagine, quindi seleziona **[!UICONTROL Altre azioni]** (icona a tre punti) **[!UICONTROL > Modifica]**.
 
-   * Per aprirla nella pagina Vista dettagli, tocca l’immagine. Nella barra degli strumenti, tocca **[!UICONTROL Modifica]**.
+   * Per aprirla nella pagina Vista dettaglio, selezionare l&#39;immagine. Nella barra degli strumenti, seleziona **[!UICONTROL Modifica]**.
 
-1. Nell’angolo in alto a sinistra della pagina, tocca **[!UICONTROL Aggiungi punto attivo]** (icona a forma di dito che tocca) per aprire la pagina Gestione punti attivi.
-1. Tocca nell’angolo superiore sinistro della pagina **[!UICONTROL Punto attivo]**.
+1. Nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Aggiungi punto attivo]** (icona di selezione del dito) per aprire la pagina Gestione punti attivi.
+1. Nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Punto attivo]**.
 
-   1. Nell’angolo superiore sinistro della pagina Gestione punti attivi, tocca **[!UICONTROL Punto attivo]**.
-   1.  Sull’immagine, tocca la posizione in cui vuoi visualizzare il punto attivo. Se necessario, trascina il punto attivo per regolarne la posizione. In alternativa, utilizzare i tasti freccia della tastiera per controllare la posizione di un&#39;area sensibile selezionata.
+   1. Nell&#39;angolo superiore sinistro della pagina Gestione punti attivi, seleziona **[!UICONTROL Punto attivo]**.
+   1. Sull&#39;immagine, selezionare la posizione in cui si desidera visualizzare il punto attivo. Se necessario, trascina il punto attivo per regolarne la posizione. In alternativa, utilizzare i tasti freccia della tastiera per controllare la posizione di un&#39;area sensibile selezionata.
    1. Se necessario, aggiungi altri punti attivi ripetendo i passaggi a e b.
-   1. (Facoltativo) Per eliminare un punto attivo, selezionalo sull’immagine, quindi tocca **[!UICONTROL Elimina]** (icona cestino) sotto **[!UICONTROL Punti attivi]** intestazione.
+   1. (Facoltativo) Per eliminare un punto attivo, selezionalo sull&#39;immagine, quindi seleziona **[!UICONTROL Elimina]** (icona cestino) sotto **[!UICONTROL Punti attivi]** intestazione.
 
 1. Nel campo di testo Nome digitare il nome del punto attivo. Questo nome viene visualizzato anche nell&#39;elenco a discesa Punto attivo selezionato.
 1. Effettua una delle operazioni seguenti:
 
    * Seleziona **[!UICONTROL Quickview]**.
 
-      * Se sei un cliente Experience Manager Sites o eCommerce, seleziona l’icona del selettore prodotti (lente di ingrandimento) per aprire la pagina Seleziona prodotto. Seleziona il prodotto da utilizzare, quindi tocca **Seleziona** nell’angolo superiore destro della pagina. Viene visualizzata di nuovo la pagina Gestione punti attivi.
+      * Se sei un cliente Experience Manager Sites o eCommerce, seleziona l’icona del selettore prodotti (lente di ingrandimento) per aprire la pagina Seleziona prodotto. Seleziona il prodotto da utilizzare, quindi fai clic su **Seleziona** nell’angolo superiore destro della pagina. Viene visualizzata di nuovo la pagina Gestione punti attivi.
       * Se sei *non* un cliente Experience Manager Sites o eCommerce
 
          * Consulta [Identificazione delle variabili dei punti attivi](#optional-identifying-hotspot-variables); è necessario definire queste variabili.
          * Quindi, immetti manualmente il valore SKU. Nel campo di testo Valore SKU, digita lo SKU del prodotto. Il valore SKU immesso popola automaticamente la parte variabile del modello Quickview. In questo modo il sistema è in grado di associare il punto attivo toccato a Quickview di una particolare SKU.
-         * (Facoltativo) Se all’interno di Quickview sono presenti altre variabili utilizzate per identificare ulteriormente un prodotto, tocca **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio: `category=Mens` è una variabile aggiunta.
+         * (Facoltativo) Se in Quickview sono presenti altre variabili utilizzate per identificare ulteriormente un prodotto, selezionare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio: `category=Mens` è una variabile aggiunta.
 
    * Seleziona **[!UICONTROL Collegamento ipertestuale]**.
 
-      * Se sei un cliente di Experience Manager Sites, tocca l’icona Selettore siti (cartella). Passa a un URL. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
+      * Se sei un cliente di Experience Manager Sites, seleziona l’icona Selettore siti (cartella). Passa a un URL. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
       * Se si è clienti autonomi, specificare il percorso URL completo di una pagina Web collegata nel campo di testo HREF.
 
    Assicurati di specificare se aprire il collegamento in una nuova scheda del browser (impostazione predefinita consigliata) o nella stessa scheda.
@@ -284,7 +284,7 @@ Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immag
 
    * Seleziona **[!UICONTROL Frammento esperienza]**.
 
-      * Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza. Seleziona il frammento di esperienza da utilizzare. Quindi tocca **[!UICONTROL Seleziona]** nell’angolo superiore destro della pagina. Viene visualizzata di nuovo la pagina Gestione punti attivi.
+      * Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza. Seleziona il frammento di esperienza da utilizzare. Quindi seleziona **[!UICONTROL Seleziona]** nell’angolo superiore destro della pagina. Viene visualizzata di nuovo la pagina Gestione punti attivi.
 Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * Specifica la larghezza e l’altezza del frammento di esperienza da visualizzare sul banner.
@@ -317,10 +317,10 @@ Consulta [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/dynamic-med
 
 **Per visualizzare in anteprima le immagini interattive:**
 
-1. Nella vista Risorse, individua un’immagine interattiva esistente creata e tocca per aprirla in Anteprima.
-1. Nell’elenco a discesa Contenuto, nell’angolo in alto a sinistra della pagina Anteprima, tocca **[!UICONTROL Visualizzatori]**.
-1. Nell’elenco Visualizzatori, tocca **[!UICONTROL Banner_Shoppable]** o il nome del predefinito visualizzatore di immagini interattivo creato.
-1. Per verificare le azioni associate ai punti attivi, tocca i punti attivi sull’immagine.
+1. Nella vista Risorse, individua un’immagine interattiva esistente creata e seleziona per aprirla in Anteprima.
+1. Nell’elenco a discesa Contenuto, nell’angolo in alto a sinistra della pagina Anteprima, seleziona **[!UICONTROL Visualizzatori]**.
+1. Nell&#39;elenco Visualizzatori selezionare **[!UICONTROL Banner_Shoppable]** o il nome del predefinito visualizzatore di immagini interattivo creato.
+1. Per verificare le azioni associate ai punti attivi, seleziona i punti attivi sull’immagine.
 
 ## Pubblicare risorse di immagini interattive {#publishing-interactive-image-assets}
 

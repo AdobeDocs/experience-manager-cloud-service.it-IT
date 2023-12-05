@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 5%
+source-wordcount: '2145'
+ht-degree: 3%
 
 ---
 
@@ -128,7 +128,7 @@ Puoi creare set di immagini tramite l’interfaccia utente o tramite l’API.
 >[!NOTE]
 >
 >Potete anche creare automaticamente i set di immagini tramite [predefiniti set di batch](/help/assets/dynamic-media/batch-set-presets-dm.md).
->**Importante:** i set di batch vengono creati dall’IPS (Image Production System) come parte dell’inserimento delle risorse.
+>**Importante:** I set di batch vengono creati dall’IPS (Image Production System) come parte dell’inserimento delle risorse.
 
 Quando aggiungi risorse al set, queste vengono aggiunte automaticamente in ordine alfanumerico. Puoi riordinare o ordinare manualmente le risorse dopo che sono state aggiunte.
 
@@ -148,9 +148,9 @@ Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations
 **Per creare i set di immagini:**
 
 1. In Adobe Experience Manager, seleziona il logo di Experience Manager per accedere alla console di navigazione globale.
-1. Tocca **[!UICONTROL Navigazione]** > **[!UICONTROL Risorse]**. Passa alla posizione in cui desideri creare un set di immagini, quindi vai a **[!UICONTROL Crea]** > **[!UICONTROL Set immagini]** per aprire la pagina Editor set di immagini.
+1. Seleziona **[!UICONTROL Navigazione]** > **[!UICONTROL Risorse]**. Passa alla posizione in cui desideri creare un set di immagini, quindi vai a **[!UICONTROL Crea]** > **[!UICONTROL Set immagini]** per aprire la pagina Editor set di immagini.
 
-   Puoi anche creare il set dall’interno di una cartella contenente le risorse.
+   Puoi anche creare il set dall’interno di una cartella che contiene le risorse.
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
@@ -164,7 +164,7 @@ Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations
 
    * Al centro della pagina Editor set di immagini, seleziona **[!UICONTROL Toccate per aprire il selettore risorse]**.
 
-   Tocca per selezionare le risorse da includere nel set di immagini. Le risorse selezionate presentano un’icona a forma di segno di spunta. Al termine, vicino all’angolo superiore destro della pagina, seleziona **[!UICONTROL Seleziona]**.
+   Seleziona per selezionare le risorse da includere nel set di immagini. Le risorse selezionate presentano un’icona a forma di segno di spunta. Al termine, vicino all’angolo superiore destro della pagina, seleziona **[!UICONTROL Seleziona]**.
 
    Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e selezionando **[!UICONTROL Ritorno]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e quindi fai clic su **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, seleziona l’icona Visualizza e fai clic su **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]**, o **[!UICONTROL Vista a elenco]**.
 
@@ -190,7 +190,7 @@ Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations
    >
    >Durante la creazione del set di immagini, è possibile modificare la miniatura del set di immagini. In alternativa, puoi consentire a Experience Manager di selezionare automaticamente la miniatura in base alle risorse nel set di immagini. Per selezionare una miniatura, seleziona **[!UICONTROL Cambia miniatura]** sopra il campo Titolo nella pagina Editor set di immagini. Quindi, seleziona un’immagine (puoi passare anche ad altre cartelle per trovare le immagini). Se hai selezionato una miniatura e vuoi che Experience Manager ne generi una dal set di immagini, seleziona **[!UICONTROL Passa a]** **[!UICONTROL Miniatura automatica]**.
 
-1. Fai clic su **[!UICONTROL Salva]**. Il set di immagini creato viene visualizzato nella cartella in cui è stato creato.
+1. Clic **[!UICONTROL Salva]**. Il set di immagini creato viene visualizzato nella cartella in cui è stato creato.
 
 ## Visualizza set di immagini {#viewing-image-sets}
 
@@ -236,7 +236,7 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch, esegui *non* 
 
    * Passa il puntatore del mouse su una risorsa set di immagini, quindi seleziona **[!UICONTROL Modifica]** (icona della matita).
    * Passa il puntatore del mouse su una risorsa set di immagini, seleziona **[!UICONTROL Seleziona]** (icona a forma di segno di spunta), quindi seleziona **[!UICONTROL Modifica]** nella barra degli strumenti.
-   * Tocca una risorsa set di immagini, quindi seleziona **[!UICONTROL Modifica]** (icona a forma di matita) nella barra degli strumenti.
+   * Seleziona una risorsa set di immagini, quindi seleziona **[!UICONTROL Modifica]** (icona a forma di matita) nella barra degli strumenti.
 
 1. Per modificare le immagini nel set di immagini, effettuate una delle seguenti operazioni:
 
@@ -255,7 +255,7 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch, esegui *non* 
    >
    >È possibile modificare le immagini in un set di immagini. Passa al set e seleziona **[!UICONTROL Membri set]** nella barra a sinistra. Per aprire la finestra di modifica, seleziona l’icona a forma di matita su una risorsa.
 
-1. Tocca **[!UICONTROL Salva]** al termine della modifica.
+1. Seleziona **[!UICONTROL Salva]** al termine della modifica.
 
 ## Anteprima set immagini {#previewing-image-sets}
 

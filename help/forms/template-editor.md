@@ -2,10 +2,10 @@
 title: Come possiamo creare un modello di modulo adattivo?
 description: Crea modelli per moduli adattivi per definire la struttura di base e il contenuto iniziale tramite l’Editor modelli.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2098'
-ht-degree: 2%
+source-wordcount: '2059'
+ht-degree: 1%
 
 ---
 
@@ -38,13 +38,13 @@ In Experience Manager viene fornita una cartella globale per organizzare i model
 
 Dopo aver creato una cartella, aprila ed esegui i seguenti passaggi per creare un modello:
 
-1. Tocca **[!UICONTROL Crea]** all’interno della cartella creata.
-1. Nella sezione Scegli un tipo di modello, selezionare **[!UICONTROL Modello modulo adattivo]** e tocca **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Crea]** all’interno della cartella creata.
+1. Nella sezione Scegli un tipo di modello, selezionare **[!UICONTROL Modello modulo adattivo]** e seleziona **[!UICONTROL Successivo]**.
 
-1. Nella sezione Dettagli modello, specifica un Titolo modello e tocca **[!UICONTROL Crea]**.
+1. Nella sezione Dettagli modello, specifica un Titolo modello e seleziona **[!UICONTROL Crea]**.
 Puoi anche fornire una descrizione.
 
-1. Tocca **[!UICONTROL Fine]** per tornare alla console, oppure tocca **[!UICONTROL Apri]** per aprire il modello nell’editor.
+1. Seleziona **[!UICONTROL Fine]** per tornare alla console, oppure seleziona **[!UICONTROL Apri]** per aprire il modello nell’editor.
 
 ### Interfaccia utente dell’editor modelli {#template-editor-ui}
 
@@ -105,7 +105,7 @@ Ad esempio, puoi aggiungere il componente intestazione nel modello. Quando selez
 
 Quando l’opzione Contenuto iniziale è selezionata, il Contenitore di moduli adattivi del modello si apre come un Modulo adattivo da modificare. Analogamente all’authoring di un modulo adattivo, puoi specificare le impostazioni iniziali, ad esempio selezionare un tema e Inviare azioni.
 
-Gli autori di moduli utilizzano tale modulo come base per la creazione di un modulo. La struttura del flusso di contenuto è specificata nel livello Contenuto iniziale del modello. Per passare alla modifica del contenuto iniziale del modello di modulo, prima di visualizzare l’anteprima nella barra degli strumenti della pagina tocca ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenuto iniziale]**.
+Gli autori di moduli utilizzano tale modulo come base per la creazione di un modulo. La struttura del flusso di contenuto è specificata nel livello Contenuto iniziale del modello. Per passare alla modifica del contenuto iniziale del modello di modulo, prima di Anteprima nella barra degli strumenti della pagina, seleziona ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenuto iniziale]**.
 
 
 Nel livello Contenuto iniziale, puoi creare il modello di modulo adattivo utilizzato dagli autori come base. La creazione di un modello è simile alla creazione di un modulo e consente di utilizzare le opzioni disponibili nella barra laterale. Sidebar fornisce contenuti, proprietà, risorse e browser di componenti.
@@ -132,7 +132,7 @@ Modificare il livello da Struttura a Contenuto iniziale e iniziare ad aggiungere
 * Puoi trascinare il componente Pannello dal browser Componenti nella barra laterale.
 * È possibile aggiungere un pannello figlio di `guideRootPanel` dalla barra degli strumenti del componente.
 
-Per creare le schede Informazioni generali e Informazioni professionali, aggiungi due pannelli nel pannello secondario di `guideRootPanel`. Seleziona i pannelli e tocca ![cmppr](assets/configure-icon.svg) per aprire le proprietà nella barra laterale. Modifica i nomi degli elementi come `general-info` e `professional-info`e titoli rispettivamente come Informazioni generali e Informazioni professionali. Nella barra laterale, tocca contenuto per aprire il browser contenuti. Nella scheda Oggetti modulo, seleziona `guideRootPanel`. Nell’editor, viene selezionato guideRootPanel. Tocca ![cmppr](assets/configure-icon.svg) nella barra degli strumenti del componente per aprirne le proprietà. Nel campo Layout pannello, seleziona **[!UICONTROL Schede in alto]** e tocca **[!UICONTROL Fine]**. Viene applicata la struttura a schede del modello.
+Per creare le schede Informazioni generali e Informazioni professionali, aggiungi due pannelli nel pannello secondario di `guideRootPanel`. Seleziona i pannelli e seleziona ![cmppr](assets/configure-icon.svg) per aprire le proprietà nella barra laterale. Modifica i nomi degli elementi come `general-info` e `professional-info`e titoli rispettivamente come Informazioni generali e Informazioni professionali. Nella barra laterale, seleziona il contenuto per aprire il browser del contenuto. Nella scheda Oggetti modulo, seleziona `guideRootPanel`. Nell’editor, viene selezionato guideRootPanel. Seleziona ![cmppr](assets/configure-icon.svg) nella barra degli strumenti del componente per aprirne le proprietà. Nel campo Layout pannello, seleziona **[!UICONTROL Schede in alto]** e seleziona **[!UICONTROL Fine]**. Viene applicata la struttura a schede del modello.
 
 #### Aggiunta di contenuto nelle schede {#adding-content-in-tabs}
 
@@ -151,7 +151,7 @@ Quando create un modello, questo viene aggiunto come bozza. Abilita il modello p
 1. Accedi a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Modelli]** e aprire la cartella in cui è stato creato il modello.
 
 1. Il modello creato è contrassegnato come Bozza.
-1. Seleziona il modello e tocca **[!UICONTROL Abilita]** nella barra degli strumenti.
+1. Seleziona il modello e seleziona **[!UICONTROL Abilita]** nella barra degli strumenti.
 Quando crei un modulo adattivo, puoi visualizzare il modello elencato quando ti viene richiesto di scegliere un modello.
 
 ## Importazione o esportazione di un modello {#importing-or-exporting-a-template}
@@ -167,7 +167,7 @@ Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo
 
 Gli autori possono associare una [!UICONTROL Schema modello dati modulo] a un modello di modulo adattivo nell’editor di modelli. Consente agli autori di selezionare uno schema dall’editor modelli. Quando si associa uno schema a un modello e un autore di moduli crea un modulo basato su tale modello, lo schema viene preselezionato per il modulo. Consente agli autori di moduli di regolare l’utilizzo dello schema e consente di risparmiare tempo anche per l’autore di moduli. Per selezionare uno schema di modello dati modulo nell’editor modelli:
 
-1. Tocca **[!UICONTROL Browser contenuti]** sul lato sinistro.
+1. Seleziona **[!UICONTROL Browser contenuti]** sul lato sinistro.
 1. Vai al contenitore del modulo **[!UICONTROL Impostazione]**.
 1. Seleziona **[!UICONTROL Modello dati]**.
 1. Scegli il modello dati del modulo tramite **[!UICONTROL Seleziona modello dati modulo]** e salva la configurazione.

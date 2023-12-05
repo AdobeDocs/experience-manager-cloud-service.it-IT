@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 15%
+source-wordcount: '1066'
+ht-degree: 10%
 
 ---
 
@@ -41,7 +41,7 @@ Questa variabile di ambiente viene utilizzata in due posizioni:
 - GraphQL chiama dall’AEM al backend di e-commerce, tramite alcuni client GraphQl condivisibili, utilizzati dai componenti core CIF dell’AEM e dai componenti di progetto del cliente.
 - Imposta un URL proxy di GraphQL in ogni ambiente AEM in cui la variabile è impostata e disponibile `/api/graphql`. Questo URL viene utilizzato dai componenti lato client e dagli strumenti per la creazione di contenuti commerciali (componente aggiuntivo CIF CIF) dell’AEM.
 
-Per ogni ambiente AEM as a Cloud Service, è possibile utilizzare un diverso URL endpoint GraphQL di In questo modo i progetti possono collegare gli ambienti di staging AEM con i sistemi di staging commerce e l’ambiente di produzione AEM a un sistema di produzione commerce. L’endpoint GraphQL di deve essere disponibile pubblicamente; non sono supportate connessioni VPN private o locali. Facoltativamente, è possibile fornire un’intestazione di autenticazione per utilizzare funzioni CIF aggiuntive che richiedono l’autenticazione.
+È possibile utilizzare un URL endpoint GraphQL diverso per ogni ambiente as a Cloud Service AEM. In questo modo i progetti possono collegare gli ambienti di staging AEM con i sistemi di staging commerce e l’ambiente di produzione AEM a un sistema di produzione commerce. L&#39;endpoint GraphQL deve essere disponibile pubblicamente; le connessioni VPN private o locali non sono supportate. Facoltativamente, è possibile fornire un’intestazione di autenticazione per utilizzare funzioni CIF aggiuntive che richiedono l’autenticazione.
 
 Facoltativamente, e solo per Adobe Commerce Enterprise / Cloud, il componente aggiuntivo CIF supporta l’utilizzo di dati di catalogo per gli autori di AEM. Questi dati richiedono la configurazione di un’intestazione di autorizzazione. Questa intestazione è disponibile e utilizzata solo nelle istanze di creazione AEM per motivi di sicurezza. Le istanze di pubblicazione AEM non possono mostrare dati di staging.
 
@@ -107,7 +107,7 @@ Il componente aggiuntivo CIF e il [Componenti core CIF](https://github.com/adobe
 
 Questa configurazione può essere regolata per il progetto mediante la configurazione del Cloud Service CIF seguente:
 
-1. In AEM andare a Strumenti -> Cloud Service -> Configurazione CIF.
+1. In AEM vai a Strumenti > Cloud Service > Configurazione CIF.
 
 2. Seleziona la configurazione commerce da modificare.
 

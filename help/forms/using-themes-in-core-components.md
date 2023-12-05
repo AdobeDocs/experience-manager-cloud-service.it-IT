@@ -2,10 +2,10 @@
 title: Come possiamo creare e utilizzare i temi in Adaptive Forms?
 description: Puoi utilizzare i temi per assegnare uno stile e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2676'
-ht-degree: 4%
+source-wordcount: '2610'
+ht-degree: 3%
 
 ---
 
@@ -140,7 +140,7 @@ Per clonare un tema, attenersi alle istruzioni riportate di seguito.
 
    L’attributo name viene utilizzato per identificare in modo univoco il tema, ad esempio &quot;aem-forms-wknd-theme&quot; e visualizzato in **Stile** scheda di **Creazione guidata modulo**. L&#39;attributo description fornisce ulteriori dettagli sul tema, inclusi lo scopo e gli scenari per cui è progettato. È inoltre possibile specificare la versione, la descrizione e la licenza per il tema.
 
-1. Salva e chiudi il file 
+1. Salva e chiudi il file.
 
 ![Immagine di modifica nome tema area di lavoro](/help/forms/assets/changename_canvastheme.png)
 
@@ -159,7 +159,7 @@ Il `variable.scss` contiene le variabili globali del tema. Aggiornando queste va
 
 1. Apri `<your-theme-sources>/src/site/_variables.scss` file per la modifica.
 1. Modifica il valore di qualsiasi proprietà. Ad esempio, il colore di errore predefinito è `red`. Per modificare il colore dell&#39;errore da `red` a `blue`, modificare il codice esadecimale del colore `$errorvariable`. Esempio: `$error: #196ee5`.
-1. Salva e chiudi il file 
+1. Salva e chiudi il file.
 
    ![Modificare il tema](/help/forms/assets/edit_theme.png)
 
@@ -167,7 +167,7 @@ Allo stesso modo, è possibile utilizzare `variable.scss` file per impostare la 
 
 ##### Impostare gli stili a livello di componente {#component-based-customization}
 
-È inoltre possibile modificare il carattere, il colore, le dimensioni e altre proprietà CSS di un componente core Modulo adattivo specifico. Ad esempio pulsante, casella di controllo, contenitore, piè di pagina e altro ancora. Puoi applicare uno stile al pulsante o alla casella di controllo modificando il file CSS del componente specifico per allinearlo allo stile della tua organizzazione. Per personalizzare uno stile di un componente:
+È inoltre possibile modificare il carattere, il colore, le dimensioni e altre proprietà CSS di un componente core Modulo adattivo specifico. Ad esempio, pulsante, casella di controllo, contenitore, piè di pagina e altro ancora. Puoi applicare uno stile al pulsante o alla casella di controllo modificando il file CSS del componente specifico per allinearlo allo stile della tua organizzazione. Per personalizzare uno stile di un componente:
 
 1. Apri il file `<your-theme-sources>/src/components/<component>/<component.scss>` per la modifica. Ad esempio, per modificare il colore del font del componente pulsante, apri il `<your-theme-sources>/src/components/button/button.scss`, file .
 1. Modifica il valore di qualsiasi in base alle tue esigenze. Ad esempio, per modificare il colore del componente Pulsante al passaggio del mouse su `green`, modificare il valore di `color: $white` proprietà in `cmp-adaptiveform-button__widget:hover` da classe a codice esadecimale `#12B453` o qualsiasi altra tonalità di `green`. Il codice finale è simile al seguente:
@@ -179,7 +179,7 @@ Allo stesso modo, è possibile utilizzare `variable.scss` file per impostare la 
    }
    ```
 
-1. Salva e chiudi il file 
+1. Salva e chiudi il file.
 
    ![Modifica CSS casella di testo](/help/forms/assets/edit_color_textbox.png)
 
@@ -377,7 +377,7 @@ I passaggi per applicare un tema a un modulo adattivo sono i seguenti:
 
 1. Accedi all’istanza Autore di AEM Forms.
 
-1. Tocca **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
+1. Seleziona **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
 
 1. Clic **Crea** > **Forms adattivo**. Viene visualizzata la procedura guidata per la creazione di un modulo adattivo.
 

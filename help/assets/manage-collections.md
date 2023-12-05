@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2400'
-ht-degree: 19%
+source-wordcount: '2391'
+ht-degree: 18%
 
 ---
 
@@ -231,7 +231,7 @@ Per personalizzare i metadati [!UICONTROL Proprietà] , incluse l’aggiunta, la
 
 Nell’interfaccia utente Assets, puoi cercare o filtrare le risorse in base a determinate regole, criteri di ricerca o facet di ricerca personalizzata. Se salvi queste ricerche come **[!UICONTROL Ricerche salvate]**, puoi accedervi in un secondo momento dall’elenco **[!UICONTROL Ricerche salvate]** nel pannello Filtro. La creazione di una ricerca salvata genera anche una raccolta avanzata.
 
-Le ricerche salvate vengono create quando generi una raccolta avanzata. Le raccolte avanzate vengono aggiunte automaticamente all’elenco **[!UICONTROL Ricerche salvate]**. La query delle Ricerche salvate per la raccolta viene salvata nella posizione relativa nella proprietà `dam:query` di CRXDE `/content/dam/collections/`. Non esistono limiti alle ricerche che è possibile salvare e alle ricerche salvate visualizzate nell&#39;elenco.
+Le ricerche salvate vengono create quando generi una raccolta avanzata. Le raccolte avanzate vengono aggiunte automaticamente all’elenco **[!UICONTROL Ricerche salvate]**. La query delle Ricerche salvate per la raccolta viene salvata in `dam:query` proprietà in CRXDE nella posizione relativa `/content/dam/collections/`. Non esistono limiti alle ricerche che è possibile salvare e alle ricerche salvate visualizzate nell&#39;elenco.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Puoi eseguire un flusso di lavoro per le risorse all’interno di una raccolta. 
 
 1. Dalla console Raccolte, seleziona una raccolta in cui desideri eseguire un flusso di lavoro.
 1. Seleziona l’icona GlobalNav e scegli **[!UICONTROL Timeline]** dall&#39;elenco.
-1. Dalla timeline, tocca o fai clic sull’icona del cursore verso il basso, quindi seleziona **[!UICONTROL Avvia flusso di lavoro]**.
+1. Dalla timeline, seleziona l’icona del cursore verso il basso, quindi seleziona **[!UICONTROL Avvia flusso di lavoro]**.
 1. Nella sezione **[!UICONTROL Avvia flusso di lavoro]**, seleziona un modello di flusso di lavoro dall’elenco. Ad esempio, scegli il modello **[!UICONTROL Risorsa di aggiornamento DAM]**.
 1. Inserisci un titolo per il flusso di lavoro e seleziona **[!UICONTROL Inizio]**.
 1. Nella finestra di dialogo, seleziona **[!UICONTROL Procedi]**. Il flusso di lavoro viene eseguito su tutte le risorse della raccolta.

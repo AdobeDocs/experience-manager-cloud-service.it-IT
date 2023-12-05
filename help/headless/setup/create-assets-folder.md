@@ -2,10 +2,10 @@
 title: 'Creazione di una cartella di risorse: configurazione headless'
 description: Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura dei frammenti di contenuto, che sta alla base dei contenuti headless.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 88%
+source-wordcount: '375'
+ht-degree: 82%
 
 ---
 
@@ -34,7 +34,7 @@ Di solito, un amministratore deve creare cartelle solo occasionalmente, per orga
       * Se necessario è possibile modificarlo.
 
    ![Crea cartella](../assets/assets-folder-create.png)
-1. Seleziona la cartella appena creata: passa il puntatore su di essa, quindi tocca il segno di spunta. Dalla barra degli strumenti, seleziona **Proprietà** (oppure utilizza le `p` [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
+1. Seleziona la cartella creata passando il puntatore del mouse e toccando il segno di spunta. Dalla barra degli strumenti, seleziona **Proprietà** (oppure utilizza le `p` [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
 1. In **Proprietà**, seleziona la scheda **Servizi cloud**.
 1. In **Configurazione cloud** seleziona la [configurazione creata in precedenza.](create-configuration.md)
    ![Configurare la cartella delle risorse](../assets/assets-folder-configure.png)
@@ -43,7 +43,7 @@ Di solito, un amministratore deve creare cartelle solo occasionalmente, per orga
 
    ![Finestra di conferma](../assets/assets-folder-confirmation.png)
 
-Puoi creare ulteriori sottocartelle all’interno della cartella appena creata. Le sottocartelle ereditano la **configurazione cloud** della cartella principale. Tuttavia, questo può essere ignorato se desideri utilizzare modelli di un’altra configurazione.
+Puoi creare ulteriori sottocartelle all’interno della cartella creata. Le sottocartelle ereditano la **configurazione cloud** della cartella principale. Tuttavia, questo può essere ignorato se desideri utilizzare modelli di un’altra configurazione.
 
 Se utilizzi una struttura del sito localizzata, puoi [creare una directory principale della lingua](/help/assets/translate-assets.md) al di sotto della nuova cartella.
 

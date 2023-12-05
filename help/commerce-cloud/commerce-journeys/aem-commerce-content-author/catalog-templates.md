@@ -2,7 +2,7 @@
 title: Gestire pagine e modelli del catalogo dei prodotti
 description: Scopri come gestire pagine e modelli di catalogo dei prodotti
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -89,7 +89,7 @@ Il modello può essere visualizzato in anteprima con qualsiasi categoria/prodott
 
 ![crea modello ](assets/create-template-picker.png)
 
-Ora dobbiamo assegnare questo modello alla categoria specifica. Apri proprietà in **Informazioni pagina** e passa alla scheda commerce. Fai clic sull’icona della cartella per selezionare **Acquista il look** categoria dal selettore delle categorie. È possibile assegnare più categorie a un modello e includere anche le sottocategorie abilitando la casella di controllo.
+Ora devi assegnare questo modello alla categoria specifica. Apri proprietà in **Informazioni pagina** e passa alla scheda commerce. Fai clic sull’icona della cartella per selezionare **Acquista il look** categoria dal selettore delle categorie. È possibile assegnare più categorie a un modello e includere anche le sottocategorie abilitando la casella di controllo.
 
 ![crea associazione modello](assets/create-template-associate.png)
 

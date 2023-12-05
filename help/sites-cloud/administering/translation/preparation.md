@@ -4,10 +4,10 @@ description: Scopri come preparare i contenuti per la traduzione quando sviluppi
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 83%
+source-wordcount: '756'
+ht-degree: 73%
 
 ---
 
@@ -68,7 +68,7 @@ Crea una directory principale della lingua come pagina principale di una copia p
 
 Per creare la directory principale della lingua è necessario creare una pagina e utilizzare un codice della lingua ISO come valore per la proprietà **Nome**. Il codice della lingua deve essere in uno dei seguenti formati:
 
-* `<language-code>` - Il codice della lingua supportato è un codice a due lettere come definito dallo standard ISO-639-1, ad esempio `en`.
+* `<language-code>` - Il codice della lingua supportato è un codice a due lettere come definito dallo standard ISO-639-1, ad esempio, `en`.
 * `<language-code>_<country-code>` o `<language-code>-<country-code>` - Il codice del paese supportato è un codice a due lettere minuscole o maiuscole, come definito ad esempio dallo standard ISO 3166, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 Puoi utilizzare entrambi i formati, in base alla struttura scelta per il sito globale. Ad esempio, la pagina principale della copia in lingua francese del sito WKND ha `fr` come proprietà **Nome**. Il **Nome** viene utilizzata come nome del nodo della pagina nell’archivio e quindi determina il percorso della pagina (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
@@ -80,7 +80,7 @@ Puoi utilizzare entrambi i formati, in base alla struttura scelta per il sito gl
    ![Crea pagina](../assets/create-page.png)
 
 1. Seleziona il modello della pagina, quindi fai clic su **Successivo**.
-1. Nel campo **Nome**, digita il codice del paese nel formato di `<language-code>` o `<language-code>_<country-code>`, ad esempio `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digita un titolo per la pagina.
+1. In **Nome** campo digitare il codice del paese nel formato `<language-code>` o `<language-code>_<country-code>`ad esempio: `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digita un titolo per la pagina.
 
    ![Crea una pagina principale della lingua](../assets/create-language-root.png)
 

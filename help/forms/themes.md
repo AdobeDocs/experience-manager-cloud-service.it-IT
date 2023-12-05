@@ -2,9 +2,9 @@
 title: Come possiamo creare e utilizzare i temi per assegnare uno stile a un modulo adattivo?
 description: Utilizza i temi del modulo adattivo per applicare uno stile e fornire un’identità visiva a un modulo adattivo. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5578'
+source-wordcount: '5558'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ Puoi esportare i temi come file zip e utilizzarli in altri progetti o istanze di
 
 1. Nella pagina Temi, **[!UICONTROL Seleziona]** un tema e fai clic su **[!UICONTROL Scarica]**. Viene visualizzata una finestra di dialogo con i dettagli del tema.
 
-1. Fai clic su **[!UICONTROL Scarica]**. Il tema viene scaricato come file zip.
+1. Clic **[!UICONTROL Scarica]**. Il tema viene scaricato come file zip.
 
 >[!NOTE]
 >
@@ -363,7 +363,7 @@ Quando selezioni un componente nell’area di lavoro, sopra di esso viene visual
 * **[!UICONTROL Widget casella numerica]**: consente di selezionare il componente per personalizzarne l’aspetto nella barra laterale.
 * **[!UICONTROL Widget campo]**: consente di selezionare il componente generico per lo stile. In questo esempio, tutti i componenti di input testo (casella di testo/casella numerica/stepper numerico/input data) sono selezionati per lo stile.
 
-* ![a livello di campo](assets/select_parent_icon.svg): consente di selezionare il componente principale per lo stile. Se selezioni una casella numerica e tocchi questa icona, viene selezionato il componente Campo. Se selezioni il componente Campo e tocchi questa icona, viene selezionato il pannello. Se continuate a toccare questa icona per selezionarla, finirete per selezionare il layout per lo stile.
+* ![a livello di campo](assets/select_parent_icon.svg): consente di selezionare il componente principale per lo stile. Se selezioni la casella numerica e fai clic su questa icona, viene selezionato il componente Campo. Se selezioni il componente Campo e fai clic su questa icona, viene selezionato il pannello. Se continuate a toccare questa icona per selezionarla, finirete per selezionare il layout per lo stile.
 
 >[!NOTE]
 >
@@ -587,7 +587,7 @@ Per copiare un tema, effettuare le seguenti operazioni:
 
 1. Nell’istanza di authoring, passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Temi]**.
 1. Aprire la cartella Libreria temi.
-1. Nella cartella Libreria temi, passa il puntatore sul tema predefinito corrispondente e tocca **[!UICONTROL Copia]**.
+1. Nella cartella Libreria temi, passa il puntatore sul tema predefinito corrispondente e seleziona **[!UICONTROL Copia]**.
 1. Incollare il tema copiato all&#39;esterno della cartella Libreria temi.
 1. Personalizza il tema copiato.
 

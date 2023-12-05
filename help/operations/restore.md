@@ -2,10 +2,10 @@
 title: Ripristino del contenuto in AEM as a Cloud Service
 description: Scopri come ripristinare il contenuto di AEM as a Cloud Service dal backup utilizzando Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 60%
+source-wordcount: '1157'
+ht-degree: 57%
 
 ---
 
@@ -111,7 +111,7 @@ Il **Attività di ripristino** L’elenco mostra lo stato delle dieci richieste 
 
 ![Attività di ripristino](assets/backup-activity.png)
 
-Facendo clic sull’icona delle informazioni di uno dei backup, puoi scaricarne i relativi registri e analizzare i dettagli del codice, comprese le differenze tra l’istantanea e i dati al momento dell’avvio del ripristino.
+Facendo clic sull&#39;icona delle informazioni per un backup, è possibile scaricare i registri per tale backup e analizzare i dettagli del codice, comprese le differenze tra l&#39;istantanea e i dati al momento dell&#39;avvio del ripristino.
 
 ## Backup fuori sede {#offsite-backup}
 

@@ -2,9 +2,9 @@
 title: Dashboard di audit dell’esperienza
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO tramite un’interfaccia dashboard chiara e informativa.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '824'
 ht-degree: 22%
 
 ---
@@ -77,7 +77,7 @@ In **Punteggi faro** sezione, si trova una visualizzazione delle tendenze dei va
 
 ![Grafico punteggi faro](assets/lighthouse-scores.png)
 
-Tieni presente che ogni punto del grafico rappresenta la media di tutte le distribuzioni nel mese di interesse.
+Ogni punto del grafico rappresenta la media di tutte le distribuzioni nel mese di interesse.
 
 Per tornare alla pagina di esecuzione della pipeline di produzione, seleziona semplicemente la freccia indietro sul browser.
 

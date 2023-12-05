@@ -3,10 +3,10 @@ title: Best practice per query e indicizzazione
 description: Scopri come ottimizzare indici e query in base alle linee guida sulle best practice di Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3127'
-ht-degree: 44%
+source-wordcount: '3088'
+ht-degree: 43%
 
 ---
 
@@ -171,7 +171,7 @@ Considera la seguente query:
 
 ...che contiene -
 * 3 restrizioni
-   * Tipo di nodo (`dam:Asset`)
+   * Tipo nodo (`dam:Asset`)
    * Percorso (discendenti di `/content/dam`)
    * Proprietà (`jcr:content/metadata/dc:title = "My Title"`)
 * Ordinamento in base al `jcr:created` proprietà
@@ -211,7 +211,7 @@ Considerazione di una query diversa -
 
 ...che contiene -
 * 3 restrizioni
-   * Tipo di nodo (`dam:Asset`)
+   * Tipo nodo (`dam:Asset`)
    * Percorso (discendenti di `/content/dam`)
    * Proprietà (`jcr:content/metadata/myProperty = "My Property Value"`)
 * Ordinamento in base al `jcr:created` proprietà**

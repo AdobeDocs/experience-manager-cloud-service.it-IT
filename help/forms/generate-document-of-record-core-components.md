@@ -2,10 +2,10 @@
 title: Come si genera un documento di record per Adaptive Forms?
 description: Scopri come generare un modello per un documento di record (DoR) per i componenti core di Forms adattivi.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 2%
+source-wordcount: '3108'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ Carica il modello XFA (file XDP) nella tua istanza di AEM Forms. Per configurare
 
 1. Nell’istanza Autore Experience Manager, fai clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
 1. Seleziona un modulo o crea un modulo adattivo e fai clic su **[!UICONTROL Proprietà]**.
-1. Nella finestra Proprietà, tocca **[!UICONTROL Modello modulo]**.
+1. Nella finestra Proprietà, seleziona **[!UICONTROL Modello modulo]**.
 1. Il giorno  **[!UICONTROL Modello modulo]** , nella scheda **[!UICONTROL Seleziona da]** a discesa, seleziona **[!UICONTROL Modello dati modulo]**, **[!UICONTROL Schema]** o **[!UICONTROL Nessuno]**. È inoltre possibile selezionare un modello di modulo durante la creazione di un modulo.
 1. Nella sezione Configurazione modello del documento record della scheda Modello modulo, seleziona **Associa modello modulo come modello del documento record**. Quando si seleziona questa opzione, vengono visualizzati tutti i modelli XFA (file XDP) disponibili sul computer. Selezionare il file appropriato. Inoltre, assicurati che venga utilizzato lo stesso schema (schema dati) per il modulo adattivo e il modello XFA selezionato (file XDP).
 1. Clic **[!UICONTROL Fine.]**
@@ -52,7 +52,7 @@ Carica Adobe Acrobat PDF (Acroform) nella tua istanza di AEM Forms. Per configur
 
 1. Nell’istanza Autore Experience Manager, fai clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
 1. Seleziona un modulo o **[!UICONTROL Creare un modulo adattivo]** e fai clic su **[!UICONTROL Proprietà]**.
-1. Nella finestra Proprietà, tocca **[!UICONTROL Modello modulo]**.
+1. Nella finestra Proprietà, seleziona **[!UICONTROL Modello modulo]**.
 1. Il giorno  **[!UICONTROL Modello modulo]** , nella scheda **[!UICONTROL Seleziona da]** a discesa, seleziona **[!UICONTROL Modello dati modulo]**, **[!UICONTROL Schema]** o **[!UICONTROL Nessuno]**. È inoltre possibile selezionare un modello di modulo durante la creazione di un modulo.
 1. Nella sezione Configurazione modello del documento record della scheda Modello modulo, seleziona **Associa modello modulo come modello del documento record**. Selezionando questa opzione, vengono visualizzati tutti gli Acrobat PDF (Acroform) disponibili sul computer. Selezionare l&#39;Acroform che si desidera utilizzare.
 1. Clic **[!UICONTROL Fine.]**
@@ -73,7 +73,7 @@ Per configurare un modulo adattivo in modo da generare automaticamente un docume
 
 1. Nell’istanza Autore Experience Manager, fai clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
 1. Seleziona un modulo o crea un modulo adattivo e fai clic su **[!UICONTROL Proprietà]**.
-1. Nella finestra Proprietà, tocca **[!UICONTROL Modello modulo]**.
+1. Nella finestra Proprietà, seleziona **[!UICONTROL Modello modulo]**.
 1. Il giorno  **[!UICONTROL Modello modulo]** , nella scheda **[!UICONTROL Seleziona da]** a discesa, seleziona **[!UICONTROL Modello dati modulo]**, **[!UICONTROL Schema]** o **[!UICONTROL Nessuno]**. È inoltre possibile selezionare un modello di modulo durante la creazione di un modulo.
 1. Nella sezione Configurazione modello del documento record della scheda Modello modulo, seleziona **Genera documento di record**.
 1. Clic **[!UICONTROL Fine.]**
@@ -300,7 +300,7 @@ Per creare un modello di base, eseguire le operazioni seguenti in Forms Designer
 
 1. (Facoltativo) Modificare lo stile e l&#39;aspetto dei campi che si desidera applicare ai campi del documento record.
 1. Salvare il modulo.
-   ![Proprietà base](/help/forms/assets/form-designer-dor-img.png)
+   ![Proprietà di base](/help/forms/assets/form-designer-dor-img.png)
 
 È ora possibile utilizzare il modulo salvato come modello di base per un documento di record. Non modificare o rimuovere gli script presenti nel modello di base.
 
@@ -317,12 +317,12 @@ Durante la generazione di un documento record, è possibile modificare le inform
 
 Per localizzare le informazioni di branding immesse nella scheda Documento record, verificare che le impostazioni internazionali del browser siano impostate in modo appropriato. Per personalizzare le informazioni di branding del documento record, effettuare le seguenti operazioni:
 
-1. Seleziona un pannello (pannello principale) nel documento di record, quindi tocca ![configura](assets/configure.png).
-1. Tocca ![dortab](assets/dortab.png). Viene visualizzata la scheda Documento record.
+1. Seleziona un pannello (pannello principale) nel documento di record, quindi fai clic su ![configura](assets/configure.png).
+1. Seleziona ![dortab](assets/dortab.png). Viene visualizzata la scheda Documento record.
 1. Seleziona il modello predefinito o un modello personalizzato per il rendering del documento di record. Se selezioni il modello predefinito, sotto il menu a discesa Modello viene visualizzata un’anteprima in miniatura del documento di record.
-1. A seconda che si selezioni un modello predefinito o personalizzato, nella scheda Documento record vengono visualizzate alcune o tutte le proprietà seguenti. Specificate le seguenti proprietà per definire l&#39;aspetto del documento record:
+1. Se si seleziona un modello predefinito o personalizzato, nella scheda Documento record verranno visualizzate alcune delle seguenti proprietà o tutte le proprietà. Specificate le seguenti proprietà per definire l&#39;aspetto del documento record:
 
-   1. **Proprietà base**:
+   1. **Proprietà di base**:
       * **Modello**: se desideri selezionare un modello personalizzato, sfoglia e seleziona un XDP sul tuo [!DNL AEM Forms] server. Se desideri utilizzare un modello non disponibile nel [!DNL AEM Forms] server, devi prima caricare XDP nel tuo [!DNL AEM Forms] server.
       * **Colore accento**: colore in cui vengono riprodotti il testo dell’intestazione e le righe del separatore nel documento di record PDF.
       * **Famiglia font**: famiglia di caratteri del testo nel Document of Record PDF.
@@ -335,7 +335,7 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
 
 
 
-   1. **Proprietà del campo modulo**:
+   1. **Proprietà campo modulo**:
       * **Per i componenti Casella di controllo e Pulsante di opzione, mostra solo i valori selezionati**: impostando la proprietà vengono visualizzati solo i valori selezionati delle caselle di controllo e dei pulsanti di scelta in [!UICONTROL Documento record].
       * **Separatore per più valori**: per visualizzare più valori, puoi scegliere qualsiasi separatore, ad esempio virgola o interruzione di riga.
       * **Allineamento opzioni**: puoi selezionare l’allineamento desiderato (Orizzontale, Verticale, Come modulo adattivo) per impostare l’allineamento dei campi, ad esempio la casella di controllo o il pulsante di opzione da visualizzare [!UICONTROL Documento record]. Per impostazione predefinita, l’allineamento verticale è impostato per i campi in [!UICONTROL Documento record]. Impostazione delle proprietà da [!UICONTROL Proprietà campo modulo] di DoR sovrascrive le proprietà impostate in [!UICONTROL Allineamento elemento] per i campi di un modulo adattivo. Nel caso, seleziona [!UICONTROL Come modulo adattivo] , l’allineamento configurato in un’istanza di authoring di moduli adattivi viene utilizzato per [!UICONTROL Documento record] campi.
@@ -369,7 +369,7 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
    </proto>
    ```
 
-1. Per salvare le modifiche di branding, tocca **[!UICONTROL Fine]**.
+1. Per salvare le modifiche di branding, seleziona **[!UICONTROL Fine]**.
 
 
 

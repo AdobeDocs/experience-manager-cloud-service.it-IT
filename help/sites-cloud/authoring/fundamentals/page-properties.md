@@ -2,10 +2,10 @@
 title: Modifica delle proprietà di una pagina
 description: Scopri come definire le proprietà necessarie per gestire una pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2270'
-ht-degree: 93%
+source-wordcount: '2268'
+ht-degree: 89%
 
 ---
 
@@ -21,7 +21,7 @@ Le proprietà sono distribuite su più schede.
 
 * **Titolo &amp; tag**
 
-   * **Titolo**: il titolo della pagina viene visualizzato in diverse aree. Ad esempio, nell’elenco della scheda **Siti Web** e nelle viste a elenco/scheda di **Sites**.
+   * **Titolo** - Il titolo della pagina viene visualizzato in varie posizioni. Ad esempio, il **Siti Web** e la scheda **Sites** viste a schede/elenco.
       * Questo campo è obbligatorio.
    * **Tag**: qui puoi aggiungere o rimuovere i tag dalla pagina aggiornando l’elenco nella casella di selezione.
       * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. È possibile rimuovere un tag dall’elenco utilizzando la x.
@@ -98,7 +98,7 @@ Le proprietà sono distribuite su più schede.
 
    * **Lingua**: indica la lingua della pagina
    * **Lingua root**: deve essere selezionato, se la pagina è la root di una copia in lingua
-   * **Reindirizza**: indica la pagina a cui deve essere automaticamente reindirizzata la pagina corrente con uno stato HTML `302 Found`.
+   * **Reindirizza** - Indica la pagina a cui deve essere automaticamente reindirizzata la pagina con un HTML `302 Found` stato.
       * **Reindirizzamento permanente**: se questa opzione è selezionata, la pagina viene reindirizzata al percorso di destinazione fornito, con uno stato HTML `301 Moved Permanently`.
    * **Design**: indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito risultante
    * **Alias**: specifica un alias da utilizzare per la pagina
@@ -323,12 +323,12 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
       * Se la tua selezione include una sola pagina, tutte le proprietà sono visibili.
    * Proprietà condivise con un valore comune
       * Nella modalità Visualizza vengono mostrate solo le proprietà con un valore comune.
-      * Quando il campo ha più valori (ad esempio Tag), questi vengono visualizzati solo se *tutti* i valori sono applicati alle pagine selezionate. Se le pagine hanno in comune solo alcuni valori, questi verranno visualizzati solo in fase di modifica.
+      * Quando il campo ha più valori (ad esempio Tag), questi vengono visualizzati solo quando *tutto* sono comuni. Se solo alcune sono comuni, verranno visualizzate solo durante la modifica.
       * Se non esiste nessuna proprietà con un valore comune, viene visualizzato un messaggio.
 
 * **Modifica**
 
    * Puoi aggiornare i valori nei campi disponibili.
       * I nuovi valori vengono applicati a tutte le pagine selezionate quando selezioni **Fine**.
-      * Quando il campo è multivalore (ad esempio Tag), è possibile aggiungere un nuovo valore o rimuovere un valore comune.
+      * Quando il campo ha più valori (ad esempio Tag), puoi aggiungere un nuovo valore o rimuovere un valore comune.
    * I campi in comune ma con valori diversi nelle varie pagine sono contraddistinti da uno speciale valore, ad esempio il testo `<Mixed Entries>`.

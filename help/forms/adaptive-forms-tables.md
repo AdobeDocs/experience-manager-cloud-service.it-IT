@@ -4,9 +4,9 @@ description: Utilizza il componente tabella per aggiungere tabelle a un modulo a
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2494'
+source-wordcount: '2476'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Per aggiungere o eliminare una colonna, fai clic sulla cella di testo nella sezi
 
 È possibile aggiungere una descrizione della tabella per spiegare come sono organizzate le informazioni che gli assistenti vocali possono interpretare e leggere. Per aggiungere la descrizione:
 
-1. Seleziona la tabella e tocca ![cmppr](assets/cmppr.png) per visualizzarne le proprietà nella barra laterale.
+1. Seleziona la tabella e seleziona. ![cmppr](assets/cmppr.png) per visualizzarne le proprietà nella barra laterale.
 1. Specificare il riepilogo nella scheda Accessibilità.
 1. Clic **Fine**.
 
@@ -107,9 +107,9 @@ Per applicare l&#39;ordinamento alle colonne della tabella, le celle delle colon
 
 Per abilitare l&#39;ordinamento:
 
-1. Seleziona la tabella e tocca ![configure_icon](assets/configure_icon.png) (Configura). È inoltre possibile selezionare la tabella utilizzando **Contenuto** nella barra laterale della comunicazione interattiva.
+1. Seleziona la tabella e seleziona. ![configure_icon](assets/configure_icon.png) (Configura). È inoltre possibile selezionare la tabella utilizzando **Contenuto** nella barra laterale della comunicazione interattiva.
 1. Seleziona **Abilita ordinamento**.
-1. Tocca ![done_icon](assets/done_icon.png) per salvare le proprietà della tabella. Le icone di ordinamento, frecce verso l’alto o il basso, nelle intestazioni di colonna indicano che l’ordinamento è stato abilitato.
+1. Seleziona ![done_icon](assets/done_icon.png) per salvare le proprietà della tabella. Le icone di ordinamento, frecce verso l’alto o il basso, nelle intestazioni di colonna indicano che l’ordinamento è stato abilitato.
 
    ![Abilita ordinamento](assets/enable_sorting_new.png)
 
@@ -128,7 +128,7 @@ Per abilitare l&#39;ordinamento:
 
 Per impostare la larghezza delle colonne per una tabella, eseguire la procedura seguente:
 
-1. In **[!UICONTROL Contenuto]** , toccare la scheda **[!UICONTROL Tabella]** e tocca Configura (![Configura](assets/configure-icon.svg)icona ).
+1. In **[!UICONTROL Contenuto]** , seleziona la scheda **[!UICONTROL Tabella]** e selezionare Configura (![Configura](assets/configure-icon.svg)icona ).
 
 1.Inserire l&#39;elenco di valori separati da virgole nella **[!UICONTROL Larghezza colonna]** per specificare la larghezza proporzionale di ciascuna colonna della tabella. Ad esempio, per una tabella che include 3 colonne, specificando 2,4,6 come valore nella **[!UICONTROL Larghezza colonna]** In questo campo la larghezza delle colonne viene impostata su 2/12 per la prima colonna, 4/12 per la seconda colonna e 6/12 per la terza colonna. 2/12, in quanto la larghezza della prima colonna si riferisce a un sesto della larghezza della tabella. Analogamente, 4/12 imposta la larghezza della seconda colonna come un terzo della larghezza della tabella e 6/12 imposta la larghezza della terza colonna come metà della larghezza della tabella.
 
@@ -136,9 +136,9 @@ Per impostare la larghezza delle colonne per una tabella, eseguire la procedura 
 
 È possibile definire lo stile di una tabella utilizzando la modalità Stile nella barra degli strumenti della pagina. Per passare alla modalità stile e modificare lo stile della tabella, effettuare le seguenti operazioni
 
-1. Nella barra degli strumenti della pagina, prima di Anteprima, tocca ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) > **Stile**.
+1. Nella barra degli strumenti della pagina, prima di Anteprima, seleziona ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) > **Stile**.
 
-1. Nella barra laterale seleziona la tabella e tocca il pulsante Modifica ![edit-button](assets/edit-button.png).
+1. Nella barra laterale seleziona la tabella e fai clic sul pulsante Modifica ![edit-button](assets/edit-button.png).
 Le proprietà di stile sono visibili nella barra laterale.
 
 ![Proprietà di stile di una tabella](assets/style-table.png)
@@ -151,7 +151,7 @@ Le proprietà di stile sono visibili nella barra laterale.
 
 Le tabelle forniscono supporto preconfigurato per l’aggiunta o l’eliminazione dinamica di righe in fase di esecuzione.
 
-1. Seleziona una riga di tabella e tocca ![cmppr](assets/cmppr.png).
+1. Seleziona una riga di tabella e seleziona ![cmppr](assets/cmppr.png).
 1. Nella scheda Impostazioni ripetizione, specifica i conteggi minimo e massimo per limitare il numero di righe nella tabella.
 1. Clic **Fine**.
 
@@ -328,7 +328,7 @@ Inoltre, puoi trascinare un gruppo di elementi di tipo complesso XSD per creare 
 * Se si spostano le righe verso l&#39;alto o verso il basso durante la creazione di una tabella basata su XSD, nell&#39;XML dati generato all&#39;invio del modulo viene visualizzata una perdita di dati dalle righe della tabella.
 * A ogni cella body di una tabella predefinita è associato un nome elemento predefinito. Se aggiungi un’altra tabella nel modulo adattivo, le celle del corpo predefinite nella nuova tabella avranno lo stesso nome elemento della prima tabella. In questo caso, i dati generati durante l&#39;invio del modulo includeranno i dati nelle celle predefinite del corpo di una sola tabella. Assicurati pertanto di rinominare i nomi degli elementi per le celle del corpo predefinite per mantenerli univoci nelle tabelle ed evitare la perdita di dati.
 
-  Si noti che questo è applicabile solo alle celle del corpo di default. Se si aggiungono più righe o colonne a una tabella, verranno generati automaticamente nomi di elementi univoci per le celle del corpo non predefinite.
+  Applicabile solo alle celle del corpo di default. Se si aggiungono più righe o colonne a una tabella, verranno generati automaticamente nomi di elementi univoci per le celle del corpo non predefinite.
 
 ## Consulta anche {#see-also}
 

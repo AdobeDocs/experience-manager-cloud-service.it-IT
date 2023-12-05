@@ -2,10 +2,10 @@
 title: Riferimento predicato di Query Builder
 description: Riferimento predicato per l’API Query Builder in AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 2%
+source-wordcount: '2270'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Il nome &quot;root&quot; non viene mai utilizzato in una query; è implicito.
 
 * **`p.offset`** - numero che indica l&#39;inizio della pagina dei risultati, ovvero il numero di elementi da saltare.
 * **`p.limit`** - numero che indica le dimensioni della pagina.
-* **`p.guessTotal`** - consigliato: evita di calcolare il totale completo dei risultati, che può essere costoso. Un numero che indica il totale massimo fino a cui contare (ad esempio 1000, un numero che fornisce agli utenti un feedback sufficiente sulle dimensioni approssimative e numeri esatti per risultati più piccoli). Oppure `true` per contare solo fino al minimo necessario `p.offset` + `p.limit`.
+* **`p.guessTotal`** - consigliato: evita di calcolare il totale completo dei risultati, che può essere costoso. Un numero che indica il totale massimo fino al quale contare (ad esempio, 1000, un numero che fornisce agli utenti un feedback sufficiente sulle dimensioni approssimative e sui numeri esatti per risultati più piccoli). Oppure `true` per contare solo fino al minimo necessario `p.offset` + `p.limit`.
 * **`p.excerpt`** - se impostato su `true`, includi un estratto di testo completo nel risultato.
 * **`p.indexTag`** : se impostato, includerà un’opzione tag di indice nella query (consulta [Tag indice opzione query](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
 * **`p.facetStrategy`** - se impostato su `oak`, Query Builder delegherà l’estrazione del facet a Oak (vedi [Facet](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
@@ -76,7 +76,7 @@ Questo predicato consente di ordinare i risultati. Se è necessario ordinare per
 
 #### Proprietà {#properties-13}
 
-* **`orderby`** - il nome della proprietà JCR indicato da una @ iniziale, ad esempio `@jcr:lastModified` o `@jcr:content/jcr:title`, o un altro predicato nella query, ad esempio `2_property`, su cui ordinare
+* **`orderby`** - il nome della proprietà JCR indicato da una @ iniziale, ad esempio, `@jcr:lastModified` o `@jcr:content/jcr:title`, o un altro predicato nella query, ad esempio, `2_property`, su cui ordinare
 * **`sort`** - direzione di ordinamento, `desc` per decrescente o `asc` per crescente (impostazione predefinita)
 * **`case`** - se impostato su `ignore`, non fa distinzione tra maiuscole e minuscole, ovvero `a` precede `B`; se vuoto o escluso, l’ordinamento distingue tra maiuscole e minuscole, ovvero `B` precede `a`
 
@@ -92,7 +92,7 @@ Questo predicato supporta l’estrazione dei facet e fornisce bucket per ciascun
 
 #### Proprietà {#properties}
 
-* **`boolproperty`** : percorso relativo della proprietà, ad esempio `myFeatureEnabled` o `jcr:content/myFeatureEnabled`
+* **`boolproperty`** - il percorso relativo della proprietà, ad esempio, `myFeatureEnabled` o `jcr:content/myFeatureEnabled`
 * **`value`** - valore per cui verificare la proprietà, `true` o `false`
 
 ### contentfragment {#contentfragment}
@@ -135,9 +135,9 @@ Non supporta il filtro.
 #### Proprietà {#properties-3}
 
 * **`property`** - percorso relativo di un `DATE` proprietà, ad esempio `jcr:lastModified`
-* **`lowerBound`** : data inferiore associata per verificare la proprietà, ad esempio `2014-10-01`
+* **`lowerBound`** : data inferiore associata per verificare la proprietà, ad esempio, `2014-10-01`
 * **`lowerOperation`** - `>` (più recente) o `>=` (versione successiva o uguale a), si applica al `lowerBound`. Il valore predefinito è `>`
-* **`upperBound`** : limite superiore per verificare la proprietà, ad esempio `2014-10-01T12:15:00`
+* **`upperBound`** : limite superiore per verificare la proprietà, ad esempio, `2014-10-01T12:15:00`
 * **`upperOperation`** - `<` (più vecchio) o `<=` (a partire da), si applica al `upperBound`. Il valore predefinito è `<`
 * **`timeZone`** - ID del fuso orario da utilizzare quando non viene fornito come stringa di data ISO-8601. Il fuso orario predefinito è quello del sistema.
 
@@ -174,7 +174,7 @@ Un predicato di sola filtraggio e non può utilizzare un indice di ricerca. Non 
 
 #### Proprietà {#properties-7}
 
-* **`hasPermission`** : tutti i privilegi JCR separati da virgole che la sessione utente corrente deve avere per il nodo in questione. Ad esempio, `jcr:write`, `jcr:modifyAccessControl`
+* **`hasPermission`** : tutti i privilegi JCR separati da virgole che la sessione utente corrente deve avere per il nodo in questione. Ad esempio: `jcr:write`, `jcr:modifyAccessControl`
 
 ### lingua {#language}
 
@@ -186,7 +186,7 @@ Supporta l’estrazione facet e fornisce bucket per ogni codice lingua univoco.
 
 #### Proprietà {#properties-8}
 
-* **`language`** - codice della lingua ISO, ad esempio `de`
+* **`language`** - il codice della lingua ISO, ad esempio, `de`
 
 ### risorsa principale {#mainasset}
 
@@ -260,7 +260,7 @@ Supporta l’estrazione dei facet e fornisce bucket per ogni valore di propriet�
 
 #### Proprietà {#properties-15}
 
-* **`property`** : percorso relativo della proprietà, ad esempio `jcr:title`.
+* **`property`** - il percorso relativo della proprietà, ad esempio, `jcr:title`.
 * **`value`** : valore di cui controllare la proprietà; segue il tipo di proprietà JCR per le conversioni di stringhe.
 * **`N_value`** - utilizzare `1_value`, `2_value`, ... per verificare la presenza di più valori (combinati con `OR` per impostazione predefinita, con `AND` se `and=true`).
 * **`and`** - impostato su `true` per combinare più valori (`N_value`) con `AND`
@@ -347,7 +347,7 @@ Supporta l’estrazione facet e fornisce bucket per ogni tag univoco, utilizzand
 
 #### Proprietà {#properties-21}
 
-* **`tag`** : percorso del titolo del tag da cercare, ad esempio `properties:orientation/landscape`
+* **`tag`** : percorso del titolo del tag da cercare, ad esempio, `properties:orientation/landscape`
 * **`N_value`** - utilizzare `1_value`, `2_value`, ... per verificare la presenza di più tag (combinati con `OR` per impostazione predefinita, con `AND` se `and=true`)
 * **`property`** : proprietà (o percorso relativo della proprietà) da esaminare (impostazione predefinita `cq:tags`)
 
@@ -359,7 +359,7 @@ Supporta l’estrazione facet e fornisce bucket per ogni tag univoco, utilizzand
 
 #### Proprietà {#properties-22}
 
-* **`tagid`** : ID tag da cercare, ad esempio `properties:orientation/landscape`
+* **`tagid`** : ID tag da cercare, ad esempio, `properties:orientation/landscape`
 * **`N_value`** - utilizzare `1_value`, `2_value`, ... per verificare la presenza di più ID tag (combinati con `OR` per impostazione predefinita, con `AND` se `and=true`)
 * **`property`** : proprietà (o percorso relativo della proprietà) da esaminare (impostazione predefinita `cq:tags`)
 
@@ -384,4 +384,4 @@ Supporta l’estrazione dei facet e fornisce bucket per ogni tipo univoco nei ri
 
 #### Proprietà {#Properties-2}
 
-* **`type`** - tipo di nodo o `mixin` nome da cercare, ad esempio `cq:Page`
+* **`type`** - tipo di nodo o `mixin` nome da cercare, ad esempio, `cq:Page`

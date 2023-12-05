@@ -2,10 +2,10 @@
 title: Modelli di pagina
 description: I Modelli di pagina vengono utilizzati durante la creazione di una pagina utilizzata come base per la nuova pagina
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3278'
-ht-degree: 7%
+source-wordcount: '3267'
+ht-degree: 4%
 
 ---
 
@@ -66,7 +66,7 @@ Quando crei un modello modificabile:
 
    * I criteri per contenuto definiscono le proprietà di progettazione di un componente.
 
-      * Ad esempio, i componenti disponibili o le dimensioni minime/massime.
+      * Ad esempio, i componenti disponibili o le dimensioni minima/massima.
 
    * Sono applicabili al modello (e alle pagine create con il modello).
 
@@ -85,8 +85,8 @@ Quando crei un modello modificabile:
 
    **Layout**
 
-   * È possibile definire il layout del modello per una serie di dispositivi.
-   * Il Layout reattivo per i modelli funziona come per la creazione delle pagine.
+   * Puoi definire il layout del modello per una serie di dispositivi.
+   * Il layout reattivo per i modelli funziona come per la creazione delle pagine.
 
    Per informazioni dettagliate su come un autore di modelli definisce il layout di un modello, consulta [Creazione di modelli di pagina](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
 
@@ -207,7 +207,7 @@ Per creare una cartella, puoi effettuare le seguenti operazioni:
    * **Titolo**: specifica un titolo per la cartella di configurazione
    * **Modelli modificabili**: seleziona per consentire i modelli modificabili all’interno di questa cartella
 
-1. Fai clic su **Crea**
+1. Clic **Crea**
 
 >[!NOTE]
 >
@@ -425,7 +425,7 @@ Questo nodo contiene le proprietà per il modello:
 
 * **Nome**: `jcr:title`
 * **Nome**: `status`
-   * ``**Tipo**: `String`
+   * &quot;**Tipo**: `String`
    * **Valore**: `draft`, `enabled` o `disabled`
 
 ### Struttura {#structure}
@@ -593,7 +593,7 @@ Il diagramma seguente illustra il processo di valutazione del modello:
 
 #### Limitazione dei modelli utilizzati nelle pagine figlie {#limiting-templates-used-in-child-pages}
 
-Per limitare i modelli utilizzabili per creare pagine figlie in una determinata pagina, utilizza `cq:allowedTemplates` proprietà di `jcr:content` nodo della pagina per specificare l’elenco di modelli consentiti come pagine figlie. Ogni valore nell’elenco deve essere il percorso assoluto di un modello per una pagina figlia consentita, ad esempio `/apps/wknd/templates/page-content`.
+Per limitare i modelli utilizzabili per creare pagine figlie in una determinata pagina, utilizza `cq:allowedTemplates` proprietà di `jcr:content` nodo della pagina per specificare l’elenco di modelli consentiti come pagine figlie. Ogni valore nell’elenco deve essere il percorso assoluto di un modello per una pagina figlia consentita, ad esempio, `/apps/wknd/templates/page-content`.
 
 È possibile utilizzare `cq:allowedTemplates` proprietà del modello  `jcr:content` per applicare questa configurazione a tutte le pagine create che utilizzano questo modello.
 

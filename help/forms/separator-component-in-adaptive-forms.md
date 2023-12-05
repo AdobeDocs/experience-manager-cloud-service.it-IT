@@ -5,9 +5,9 @@ uuid: f8d2aed3-52aa-437f-bfe3-0c8779e7986c
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '313'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Puoi utilizzare la modalità Layout per definire il numero di colonne su cui si 
 
 Per specificare le proprietà di un componente separatore:
 
-1. Seleziona un componente separatore e tocca ![cmppr](assets/cmppr.png). Le proprietà si aprono nella barra laterale.
+1. Seleziona un componente separatore e fai clic su ![cmppr](assets/cmppr.png). Le proprietà si aprono nella barra laterale.
 1. Fai clic su una scheda nella sezione Proprietà CSS in linea per specificare le proprietà CSS. Ad esempio, un. Nella scheda Campo fare clic su **Aggiungi elemento**. Viene aggiunta una riga con due campi.
 1. Nel primo campo da sinistra, specifica una proprietà CSS3 da applicare. Ad esempio: **bordo**. Puoi anche selezionare una proprietà facendo clic sul pulsante freccia giù. L’elenco a discesa non è esaustivo ed è possibile specificare qualsiasi nome di proprietà CSS3 supportato in questo campo.
 1. Nel campo adiacente, specifica un valore valido per la proprietà CSS3 specificata. Ad esempio: **3 pixel in nero uniforme**.

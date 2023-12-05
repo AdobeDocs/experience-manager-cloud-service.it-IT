@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 3%
+source-wordcount: '957'
+ht-degree: 2%
 
 ---
 
@@ -122,11 +122,11 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 >
 >Guida dettagliata alla configurazione di [!DNL Microsoft Dynamics 365], online o on-premise, vedi [[!DNL Microsoft Dynamics] Configurazione OData](ms-dynamics-odata-configuration.md).
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Consulta [Configurare la cartella per le configurazioni del servizio cloud](#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
 
-1. Tocca **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio OData]** dal **[!UICONTROL Tipo di servizio]** a discesa, se necessario sfoglia e seleziona un’immagine di miniatura per la configurazione, quindi tocca **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio OData]** dal **[!UICONTROL Tipo di servizio]** , sfogliare e selezionare un&#39;immagine di miniatura per la configurazione e selezionare **[!UICONTROL Successivo]**.
 In **[!UICONTROL Impostazioni di autenticazione]** scheda:
 
    1. Immetti il valore per **[!UICONTROL Directory principale servizio]** campo. Vai all’istanza Dynamics e passa a **[!UICONTROL Risorse per sviluppatori]** per visualizzare il valore del campo Service Root. Ad esempio, https://&lt;tenant-name>/api/data/v9.1/

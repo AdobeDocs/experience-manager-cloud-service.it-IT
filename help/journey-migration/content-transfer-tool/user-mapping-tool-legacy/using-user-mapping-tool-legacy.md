@@ -4,10 +4,10 @@ description: Utilizzo dello strumento di mappatura utenti (legacy)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 2%
+source-wordcount: '806'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Lo strumento di mappatura utenti utilizza un’API che consente di cercare gli u
 
 **Prerequisito:** La mappatura utente richiede che ogni utente da mappare sul suo ID IMS abbia un indirizzo e-mail nel suo profilo in AEM e in IMS. Anche se l’utente utilizza un indirizzo e-mail come ID utente per l’accesso, la mappatura non funziona per tale utente a meno che l’indirizzo e-mail non sia presente anche nel profilo e in IMS.
 
-Per configurare questa configurazione, segui i passaggi seguenti:
+Per effettuare questa configurazione, segui la procedura indicata di seguito:
 
 1. Accedi a [Console Adobe Developer](https://developer.adobe.com/console/) utilizzando il tuo Adobe ID.
 1. Crea un progetto o apri un progetto esistente.
@@ -39,7 +39,7 @@ Per configurare questa configurazione, segui i passaggi seguenti:
 
 Lo strumento di mappatura utenti è integrato nello strumento Content Transfer (Trasferimento contenuti). Puoi scaricare lo strumento Content Transfer (Trasferimento contenuti) da [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html). Per maggiori dettagli sull’ultima versione, consulta [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Seleziona Adobe Experience Manager e passa a Strumenti -> **Operazioni** -> **Migrazione dei contenuti**.
+1. Seleziona Adobe Experience Manager e passa a Strumenti > **Operazioni** > **Migrazione dei contenuti**.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
 

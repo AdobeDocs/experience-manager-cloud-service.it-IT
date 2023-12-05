@@ -2,10 +2,10 @@
 title: Registrazione, accesso e profilo utente
 description: Scopri di più su Registrazione, Accesso, Dati utente e Sincronizzazione dei gruppi per AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 93%
+source-wordcount: '1132'
+ht-degree: 90%
 
 ---
 
@@ -113,7 +113,7 @@ Indipendentemente dall’accesso, il codice personalizzato può anche persistere
 
 ## Sincronizzazione dati {#data-synchronization}
 
-Gli utenti finali dei siti Web si aspettano un&#39;esperienza coerente a ogni richiesta di pagina o anche quando accedono utilizzando un altro browser, anche se a loro insaputa vengono portati su nodi server diversi dell&#39;infrastruttura a livello di pubblicazione. AEM as a Cloud Service esegue questa operazione sincronizzando rapidamente la `/home` gerarchia di cartelle (informazioni sul profilo utente, appartenenza al gruppo, ecc.) in tutti i nodi del livello di pubblicazione.
+Gli utenti finali dei siti Web si aspettano un&#39;esperienza coerente a ogni richiesta di pagina o anche quando accedono utilizzando un altro browser, anche se a loro insaputa vengono portati su nodi server diversi dell&#39;infrastruttura a livello di pubblicazione. AEM as a Cloud Service esegue questa operazione sincronizzando rapidamente `/home` gerarchia di cartelle (informazioni sul profilo utente, appartenenza al gruppo e così via) in tutti i nodi del livello di pubblicazione.
 
 A differenza di altre soluzioni AEM, la sincronizzazione dell’appartenenza di utenti e gruppi in AEM as a Cloud Service non utilizza un approccio di messaggistica point-to-point, ma implementa un approccio publish-subscribe che non richiede la configurazione del cliente.
 

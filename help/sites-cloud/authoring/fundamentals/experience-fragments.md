@@ -2,10 +2,10 @@
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 98%
+source-wordcount: '2035'
+ht-degree: 96%
 
 ---
 
@@ -64,11 +64,11 @@ I Frammenti di esperienza sono indicati nei seguenti casi:
 * Quando desideri riutilizzare le esperienze.
    * Per esperienze che riutilizzerai con contenuti simili o uguali.
 * Quando utilizzi AEM come piattaforma di distribuzione di contenuti per terze parti.
-   * Per qualsiasi soluzione che utilizza AEM come piattaforma di distribuzione di contenuti. .
+   * Qualsiasi soluzione che desideri utilizzare AEM come piattaforma di distribuzione dei contenuti.
    * Incorporazione di contenuti nei punti di contatto di terzi.
 * Se usi un’esperienza con diverse varianti o rappresentazioni.
-   * Varianti per un canale o per un contesto specifico. .
-   * Per esperienze che è utile raggruppare; ad esempio una campagna con diverse esperienze per i vari canali.
+   * Varianti specifiche del canale o del contesto.
+   * Esperienze che è utile raggruppare; ad esempio, una campagna con esperienze diverse per i diversi canali.
 * Quando utilizzi Commerce omnichannel.
    * Per assegnare funzioni transazionali ai punti di contatto.
 
@@ -361,7 +361,7 @@ Per personalizzare il frammento:
    >
    >* un percorso che contiene un sottoinsieme degli archivi definiti in ContextHub configurati per la pagina
    >
-   >Il **Percorso segmenti** selezionato nella scheda **Personalizzazione** deve essere:
+   >Il **Percorso segmenti** selezionato in **Personalizzazione** la scheda deve essere:
    >
    >* lo stesso percorso configurato per la pagina in cui verrà eseguito il rendering del frammento
    >

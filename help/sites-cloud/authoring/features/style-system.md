@@ -2,10 +2,10 @@
 title: Sistema di stili
 description: Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 88%
+source-wordcount: '1305'
+ht-degree: 87%
 
 ---
 
@@ -46,7 +46,7 @@ La procedura per l’uso del sistema di stili è simile alla seguente.
 
 1. L’autore della pagina AEM può quindi scegliere gli stili progettati nell’editor di pagine tramite il menu degli stili, nella barra degli strumenti del componente.
 
-Solo gli ultimi tre passaggi vengono effettivamente eseguiti in AEM. Ciò significa che tutte le operazioni di sviluppo dei CSS e JavaScript necessari possono essere eseguite senza AEM.
+Solo le ultime tre fasi vengono effettivamente eseguite nell&#39;AEM. Ciò significa che tutte le operazioni di sviluppo dei CSS e JavaScript necessari possono essere eseguite senza AEM.
 
 L’implementazione degli stili richiede infatti solo la distribuzione in AEM e la selezione all’interno dei componenti dei modelli desiderati.
 

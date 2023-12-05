@@ -2,10 +2,10 @@
 title: Scopri di più sullo sviluppo di CMS headless
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri la tecnologia headless e perché utilizzarla.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 89%
+source-wordcount: '1626'
+ht-degree: 86%
 
 ---
 
@@ -56,7 +56,7 @@ Gli utenti si aspettano un coinvolgimento indipendentemente dalla piattaforma o 
 
 La “testa” di qualsiasi sistema è generalmente il renderer di output di quel sistema, tipicamente un&#39;interfaccia utente grafica o un altro tipo di output grafico.
 
-Un server headless, ad esempio, è probabilmente situato in un rack in una stanza server da qualche parte e non ha monitor collegati. Per accedervi è necessario connettersi in remoto. In questo caso, il monitor è la “testa” perché si occupa del rendering dell’output del server. In qualità di consumatore del servizio, quando ti connetti da remoto, la tua “testa” è il monitor.
+Un server headless, ad esempio, è probabilmente posizionato in un rack in una sala server e non dispone di monitor collegati. Per accedervi è necessario connettersi in remoto. In questo caso, il monitor è la “testa” perché si occupa del rendering dell’output del server. In qualità di consumatore del servizio, quando ti connetti da remoto, la tua “testa” è il monitor.
 
 Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a consegnarli ai consumatori. Tuttavia, consegnando solo il **contenuto** in modo standardizzato, un CMS headless omette il rendering finale dell’output, lasciando la **presentazione** del contenuto al servizio utilizzato.
 
@@ -68,7 +68,7 @@ Omettendo la “testa” si semplifica il CMS rimuovendo la complessità. In que
 
 ## Separazione {#decoupling}
 
-La distribuzione headless è possibile esponendo un set di interfacce di programmazione applicazioni (API) affidabili e flessibili in cui è possibile sfruttare tutte le esperienze. L’API funge da linguaggio comune tra i servizi e li associa a livello di contenuto tramite la distribuzione standardizzata dei contenuti, ma offre la flessibilità necessaria per implementare le proprie soluzioni.
+La distribuzione headless è possibile esponendo un set di interfacce API (Application Programming Interface) solide e flessibili selezionabili da tutte le esperienze. L’API funge da linguaggio comune tra i servizi e li associa a livello di contenuto tramite la distribuzione standardizzata dei contenuti, ma offre la flessibilità necessaria per implementare le proprie soluzioni.
 
 Headless è un esempio di separazione del contenuto dalla presentazione. O in senso più generico, separando il front end dal back end dello stack di servizi. In una configurazione headless, il sistema di presentazione (la “testa”) viene separato dalla gestione dei contenuti (la coda). I due interagiscono solo tramite chiamate API.
 

@@ -4,10 +4,10 @@ description: Aggiungere le risorse digitali a [!DNL Adobe Experience Manager] as
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3179'
-ht-degree: 7%
+source-wordcount: '3137'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Puoi anche scegliere di eseguire un’elaborazione aggiuntiva sulle risorse cari
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
-   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
+   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Select the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -187,7 +187,7 @@ Per configurare lo strumento Importazione in blocco, effettuare le seguenti oper
 
 1. (Facoltativo) Specifica la dimensione massima in MB del file delle risorse da includere nel processo di acquisizione del campo **[!UICONTROL Filtra per dimensione max]**.
 
-1. (Facoltativo) Specifica un elenco separato da virgole di tipi MIME da escludere dall’acquisizione nel **[!UICONTROL Escludi tipi MIME]** campo. Esempio: `image/jpeg, image/.*, video/mp4`. Consulta [tutti i formati di file supportati](/help/assets/file-format-support.md).
+1. (Facoltativo) Specifica un elenco separato da virgole di tipi MIME da escludere dall’acquisizione nel **[!UICONTROL Escludi tipi MIME]** campo. Ad esempio: `image/jpeg, image/.*, video/mp4`. Consulta [tutti i formati di file supportati](/help/assets/file-format-support.md).
 
 1. Specifica un elenco separato da virgole di tipi MIME da includere dall’acquisizione nella **[!UICONTROL Includi tipi MIME]** campo. Consulta [tutti i formati di file supportati](/help/assets/file-format-support.md).
 
@@ -207,7 +207,7 @@ Dopo aver creato la configurazione dello strumento Importazione in blocco, puoi 
 
 ### Modificare la configurazione {#edit-configuration}
 
-Per modificare i dettagli della configurazione, selezionarla e quindi fare clic su **[!UICONTROL Modifica]**. Durante l’operazione di modifica non è possibile modificare il titolo della configurazione e l’origine dati di importazione.
+Per modificare i dettagli della configurazione, selezionarla e quindi fare clic su **[!UICONTROL Modifica]**. Non è possibile modificare il titolo della configurazione e l&#39;origine dati di importazione durante l&#39;operazione di modifica.
 
 ### Elimina la configurazione {#delete-configuration}
 
@@ -215,7 +215,7 @@ Seleziona la configurazione e fai clic su **[!UICONTROL Elimina]** per eliminare
 
 ### Convalidare la connessione all’origine dati {#validate-connection}
 
-Per convalidare la connessione all&#39;origine dati, selezionare la configurazione e quindi fare clic su **[!UICONTROL spunta]**. Se la connessione ha esito positivo, Experience Manager presenta il seguente messaggio:
+Per convalidare la connessione all&#39;origine dati, selezionare la configurazione e quindi fare clic su **[!UICONTROL spunta]**. Se la connessione ha esito positivo, nell’Experience Manager viene visualizzato il seguente messaggio:
 
 ![Messaggio di completamento dell’importazione in blocco](assets/bulk-import-success-message.png)
 

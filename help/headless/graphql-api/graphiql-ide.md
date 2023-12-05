@@ -3,9 +3,9 @@ title: Utilizzo dell’IDE GraphiQL in AEM
 description: Scopri come utilizzare l’IDE GraphiQL in Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1136'
 ht-degree: 90%
 
 ---
@@ -36,7 +36,7 @@ Il **GraphiQL** Questo strumento consente di testare ed eseguire il debug delle 
 
 Puoi accedere all’editor delle query da:
 
-* **Strumenti** -> **Generale** -> **Editor query GraphQL**
+* **Strumenti** > **Generale** > **Editor query di GraphQL**
 * direttamente; ad esempio `http://localhost:4502/aem/graphiql.html`
 
 ![Interfaccia di GraphiQL](assets/cfm-graphiql-interface.png "Interfaccia di GraphiQL")

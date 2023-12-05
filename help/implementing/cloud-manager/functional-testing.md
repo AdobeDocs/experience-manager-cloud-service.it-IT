@@ -2,10 +2,10 @@
 title: Test funzionali
 description: Scopri i tre diversi tipi di test funzionali integrati nel processo di distribuzione di AEM as a Cloud Service per garantire la qualità e l’affidabilità del codice.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: ad3a82919b2c0561742527b83af20cc89d8a243a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 10%
+source-wordcount: '1354'
+ht-degree: 9%
 
 ---
 
@@ -55,7 +55,7 @@ Il diagramma seguente fornisce una panoramica dettagliata dei gate di qualità d
 
 Ti invitiamo a fornire gli unit test per l’applicazione AEM, su cui si basa ogni strategia di test. Hanno lo scopo di essere veloci e frequenti e di fornire feedback rapidi e tempestivi. Sono strettamente integrati nei flussi di lavoro per sviluppatori, nel tuo CI/CD e nelle pipeline di implementazione del servizio cloud AEM.
 
-Vengono implementati utilizzando JUnit e vengono eseguiti con Maven. Consulta la sezione [modulo core del progetto Archetipo AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) ad esempio, unit test per AEM e guida introduttiva.
+Vengono implementati utilizzando JUnit e vengono eseguiti con Maven. Consulta [modulo core del progetto Archetipo AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) ad esempio, unit test per AEM e guida introduttiva.
 
 ### Qualità del codice
 
@@ -67,7 +67,7 @@ Consulta [Test di qualità del codice](/help/implementing/cloud-manager/code-qua
 
 I test funzionali del prodotto sono una serie di test stabili di integrazione HTTP (IT) delle funzionalità principali in AEM, come le attività di authoring e replica. Adobe li fornisce e li mantiene pronti all’uso. Queste misure hanno lo scopo di impedire l’implementazione di modifiche al codice personalizzato dell’applicazione nel caso in cui interrompano le funzionalità principali del prodotto AEM.
 
-Vengono implementati utilizzando Junit, vengono eseguiti utilizzando Maven e fanno uso del [Client di test AEM](https://github.com/adobe/aem-testing-clients). La suite di test del prodotto viene mantenuta come [progetto open-source](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), segue le best practice e può essere considerato un buon punto di partenza per l’implementazione dei test.
+Vengono implementati utilizzando Junit, vengono eseguiti utilizzando Maven e utilizzano il [Client di test AEM](https://github.com/adobe/aem-testing-clients). La suite di test del prodotto viene mantenuta come [progetto open-source](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), segue le best practice e può essere considerato un buon punto di partenza per l’implementazione dei test.
 
 ### Test funzionali personalizzati
 
@@ -77,9 +77,9 @@ Come i test del prodotto, i test funzionali del cliente sono test di integrazion
 >
 >I test funzionali personalizzati vengono eseguiti nelle pipeline di produzione e non di produzione (opt-in) utilizzate dalle modifiche dell’applicazione AEM, dalle implementazioni e dagli aggiornamenti push dei prodotti AEM e rappresentano pertanto un contributo chiave per garantire il corretto funzionamento dell’applicazione e aumentare la sicurezza della versione. I test funzionali del cliente vengono eseguiti anche in pipeline interne di convalida pre-release per ogni cliente, per fornire un feedback tempestivo.
 
-Per mantenere efficienti le esecuzioni della pipeline, consigliamo di concentrarci sulle funzioni chiave e sui principali flussi di interazione degli utenti. Si consiglia un tempo di esecuzione di circa 15 minuti o meno per i test funzionali. Si consiglia di eseguire suite di test funzionali complete che non rientrano in questo gate di qualità come parte delle pipeline di convalida generali del cliente durante il flusso di sviluppo del cliente.
+Per mantenere efficienti le esecuzioni della pipeline, consigliamo di concentrarsi sulle funzioni chiave e sui flussi di interazione dell’utente principale. Si consiglia un tempo di esecuzione di circa 15 minuti o meno per i test funzionali. Si consiglia di eseguire suite di test funzionali complete che non rientrano in questo gate di qualità come parte delle pipeline di convalida generali del cliente durante il flusso di sviluppo del cliente.
 
-Consulta la sezione [test di prodotto open source](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) o [Modulo it.tests di Archetipo progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html) ad esempio.
+Consulta [test di prodotto open source](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) o [Modulo it.tests di Archetipo progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html) ad esempio.
 
 Consulta [Test funzionali Java](/help/implementing/cloud-manager/java-functional-testing.md) per ulteriori informazioni.
 
@@ -87,7 +87,7 @@ Consulta [Test funzionali Java](/help/implementing/cloud-manager/java-functional
 
 Per massimizzare il controllo dei rischi per lo sviluppo specifico del cliente, Adobe consiglia vivamente di acquisire in AEMCS i test critici dell’interfaccia utente. L’obiettivo è mantenerli in numero piuttosto limitato, ma con il massimo impatto sulla customer experience.
 
-I test sono inclusi in un’immagine Docker, progettata per essere il più volatile possibile (con supporto per Cypress, Selenium, Java, Java, Java, ecc.). Seguono le stesse caratteristiche e gli stessi scopi dei test funzionali personalizzati.
+I test sono inclusi in un’immagine Docker, progettata per essere il più volatile possibile (con supporto per Cypress, Selenium, Java e Java). Seguono le stesse caratteristiche e gli stessi scopi dei test funzionali personalizzati.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ I test sono inclusi in un’immagine Docker, progettata per essere il più volat
 
 Per mantenere efficienti le esecuzioni della pipeline, consigliamo di concentrarci sulle funzioni chiave e sui principali flussi di interazione degli utenti. Si consiglia di eseguire suite di test dell’interfaccia utente complete che non rientrano in questo gate di qualità come parte delle pipeline di convalida generali del cliente durante il flusso di sviluppo del cliente.
 
-Consulta la sezione [esempi di test open source](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) o [Modulo ui.tests di Archetipo progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html) ad esempio.
+Consulta [esempi di test open source](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) o [Modulo ui.tests di Archetipo progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html) ad esempio.
 
 Consulta [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) per ulteriori informazioni.
 
@@ -111,7 +111,7 @@ Consulta [Test di Experience Audit](/help/implementing/cloud-manager/experience-
 
 Il gate di qualità delle convalide del cliente è un segnaposto per la strategia e l’impegno di test del cliente stesso, eseguiti prima che le modifiche dell’applicazione del cliente raggiungano le pipeline di implementazione cloud dell’AEM.
 
-Qui puoi, ovviamente, scegliere gli strumenti e i framework che preferisci. A differenza dei test delle funzioni dei clienti e dei test dell’interfaccia utente personalizzati, non esistono limiti correlati all’AEM as a Cloud Service e pertanto consigliamo di eseguire qui test funzionali e dell’interfaccia utente di lunga durata.
+Qui puoi scegliere gli strumenti e i framework che preferisci. A differenza dei test delle funzioni dei clienti e dei test dell’interfaccia utente personalizzati, non esistono limiti correlati all’AEM as a Cloud Service e pertanto consigliamo di eseguire qui test funzionali e dell’interfaccia utente di lunga durata.
 
 Anche se sei libero di scegliere qualsiasi strumento e framework, ti consigliamo di allineare i test di integrazione e i test dell’interfaccia utente basati su HTTP con gli strumenti e i framework disponibili nei test funzionali personalizzati e nei gate di qualità dei test dell’interfaccia utente personalizzati. Si consiglia di integrare [Ambienti di sviluppo rapido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) nella tua strategia di test locale per eseguire test il più vicino possibile agli ambienti cloud AEM.
 

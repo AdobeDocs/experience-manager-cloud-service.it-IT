@@ -3,10 +3,10 @@ title: Come si creano pannelli ripetibili nei componenti core modulo adattivo?
 description: Scopri come creare sezioni o campi ripetibili in un modulo adattivo.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 6%
+source-wordcount: '1256'
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ Per ripetere un pannello nel modulo o rimuovere pannelli ripetibili, un autore d
 ![Scheda Accessibilità](/help/forms/assets/repeat-panel.png)
 
 Per rendere ripetibile un pannello, effettuate le seguenti operazioni:
-1. Seleziona un contenitore di pannelli e tocca ![cmppr](/help/forms/assets/cmppr.png).
+1. Seleziona un contenitore di pannelli e seleziona ![cmppr](/help/forms/assets/cmppr.png).
 1. Fai clic su **pannello di ripetizione** e accendere l&#39;interruttore **rendi il pannello ripetibile**.
 1. Imposta **numero minimo di ripetizioni** come richiesto per le sezioni ripetibili minime, puoi impostare **numero minimo di ripetizioni** a zero per la mancata ripetizione dei pannelli o per rimuovere i pannelli ripetuti. Per impostazione predefinita, il valore minimo di ripetizione è zero.
 1. Imposta **numero massimo di ripetizioni** per ripetere il numero di volte richieste dal pannello, per impostazione predefinita il valore è infinito.
@@ -63,7 +63,7 @@ Per rendere ripetibile un pannello, effettuate le seguenti operazioni:
 
 L’elemento principale del pannello da ripetere deve contenere un pulsante Aggiungi per gestire l’istanza di ripetizione del pannello. Per inserire pulsanti nell&#39;elemento padre e attivare gli script sui pulsanti, effettuare le seguenti operazioni:
 
-1. Aggiungi un **componente pulsante** all&#39;elemento padre del pannello. Nell’esempio di video seguente, un componente pulsante con il nome dell’etichetta **Aggiungi** e nome campo **AggiungiPannello**, viene utilizzato. Seleziona il componente e tocca ![edit-rules](/help/forms/assets/edit-rules.png). Le regole del componente Pulsante si aprono nell’editor di regole.
+1. Aggiungi un **componente pulsante** all&#39;elemento padre del pannello. Nell’esempio di video seguente, un componente pulsante con il nome dell’etichetta **Aggiungi** e nome campo **AggiungiPannello**, viene utilizzato. Seleziona il componente e seleziona ![edit-rules](/help/forms/assets/edit-rules.png). Le regole del componente Pulsante si aprono nell’editor di regole.
 1. Nella finestra Editor regole, fai clic su **Crea**.
 
    Seleziona **Editor visivo** nella riga Oggetti e funzioni modulo.
@@ -84,7 +84,7 @@ L’elemento principale del pannello da ripetere deve contenere un pulsante Aggi
 
 L’elemento padre del pannello deve contenere un pulsante Elimina per eliminare l’istanza dei pannelli ripetibili. Per inserire pulsanti nell&#39;elemento padre e abilitare gli script sui pulsanti per eliminare i pannelli ripetibili, effettuare le seguenti operazioni:
 
-1. Aggiungi un **componente pulsante** all’elemento padre del pannello, Nel video seguente, un componente pulsante con il nome dell’etichetta **eliminare** e nome campo **EliminaPannello** viene utilizzato. Seleziona il componente e tocca ![edit-rules](/help/forms/assets/edit-rules.png). Le regole del componente Pulsante si aprono nell’editor di regole.
+1. Aggiungi un **componente pulsante** all’elemento padre del pannello, Nel video seguente, un componente pulsante con il nome dell’etichetta **eliminare** e nome campo **EliminaPannello** viene utilizzato. Seleziona il componente e seleziona ![edit-rules](/help/forms/assets/edit-rules.png). Le regole del componente Pulsante si aprono nell’editor di regole.
 1. Nella finestra Editor regole, fai clic su **Crea**.
 
    Seleziona **Editor visivo** nella riga Oggetti e funzioni modulo.
@@ -151,8 +151,8 @@ L’elemento padre del pannello deve contenere un pulsante Elimina per eliminare
 
 A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
 
-1. On the parent of panel to be repeated, tap ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
+1. On the parent of panel to be repeated, select ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
+1. On a panel, which is to be repeated, select ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
 
    Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
 

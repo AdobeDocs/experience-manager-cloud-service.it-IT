@@ -2,9 +2,9 @@
 title: Come configurare Microsoft Dynamics 365 e Salesforce per modelli di dati di moduli preconfigurati per Adaptive Forms?
 description: Scopri come integrare Microsoft Dynamics 365 e Salesforce con Adaptive Forms.
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '952'
 ht-degree: 2%
 
 ---
@@ -48,20 +48,20 @@ Prima di configurare [!DNL Salesforce] servizi cloud, assicurati di eseguire le 
 Per configurare il [!DNL Salesforce] servizio cloud:
 
 1. On [!DNL AEM Forms] istanza di authoring, passa a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Origini dati]**. L&#39;elenco delle cartelle wrapper disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
-1. Tocca il nome della cartella, seleziona **[!UICONTROL Configurazione cloud Salesforce]**, e tocca **[!UICONTROL Proprietà]**.
+1. Seleziona il nome della cartella e fai clic su **[!UICONTROL Configurazione cloud Salesforce]**, e seleziona **[!UICONTROL Proprietà]**.
 1. In **[!UICONTROL Impostazioni di autenticazione]** scheda:
    1. Specifica la [!DNL Salesforce] URL del dominio in **[!UICONTROL Host]** campo. Ad esempio: [Nome di dominio].my.salesforce.com.
    1. Specificare l&#39;ID client (chiave consumer) e il segreto client (segreto consumer) per l&#39;applicazione connessa.
    1. Specifica **accesso offline completo** (`full` e `offine_access` valori separati da uno spazio) nella **[!UICONTROL Ambito autorizzazione]** campo.
-   1. Tocca **[!UICONTROL Connetti a OAuth]**. Sei stato reindirizzato a [!DNL Microsoft® Dynamics] pagina di accesso.
+   1. Seleziona **[!UICONTROL Connetti a OAuth]**. Sei stato reindirizzato a [!DNL Microsoft® Dynamics] pagina di accesso.
    1. Accedi con il [!DNL Salesforce] credenziali e accettazione per consentire alla configurazione del servizio cloud di connettersi a [!DNL Salesforce] servizio. Se la connessione ha esito positivo, viene effettuato il reindirizzamento al [!DNL Salesforce] pagina di configurazione del servizio cloud, in cui viene visualizzato un messaggio di successo.
-1. Tocca **[!UICONTROL Salva e chiudi]** per completare l&#39;impostazione della configurazione.
+1. Seleziona **[!UICONTROL Salva e chiudi]** per completare l&#39;impostazione della configurazione.
 
 ### Accesso preconfigurato [!DNL Salesforce] Modello dati modulo
 
 A [!DNL Salesforce] Il Modello dati modulo è disponibile come strumento pronto all’uso sulla [!DNL AEM Forms] Server dopo di te [configurare un progetto di sviluppo per Forms basato su archetipo Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
-Per accedere al modello dati del modulo, passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni di dati]**. L’elenco delle cartelle disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Tocca il nome della cartella, seleziona la **[!UICONTROL Modello dati Salesforce]**, quindi tocca Modifica ![Modifica](assets/edit.png) per visualizzare il modello dati del modulo.
+Per accedere al modello dati del modulo, passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni di dati]**. L’elenco delle cartelle disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Seleziona il nome della cartella, quindi fai clic su **[!UICONTROL Modello dati Salesforce]** e seleziona Modifica ![Modifica](assets/edit.png) per visualizzare il modello dati del modulo.
 
 Dopo aver configurato [[!DNL Salesforce] Servizio di configurazione cloud](#configure-salesforce-cloud-service), puoi integrare moduli adattivi con [!DNL Salesforce] Modello dati.
 
@@ -82,7 +82,7 @@ Prima di configurare [!DNL Microsoft® Dynamics 365] cloud service, assicurati d
 Per configurare il [!DNL Microsoft® Dynamics 365] servizio cloud:
 
 1. On [!DNL AEM Forms] istanza di authoring, passa a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Origini dati]**. L&#39;elenco delle cartelle wrapper disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
-1. Tocca il nome della cartella, seleziona **[!UICONTROL Configurazione cloud Microsoft® Dynamics 365]**, e tocca **[!UICONTROL Proprietà]**.
+1. Seleziona il nome della cartella e fai clic su **[!UICONTROL Configurazione cloud Microsoft® Dynamics 365]**, e seleziona **[!UICONTROL Proprietà]**.
 1. In **[!UICONTROL Impostazioni di autenticazione]** scheda:
    1. Immetti il valore per **[!UICONTROL Directory principale servizio]** campo. Vai all’istanza Dynamics e passa a [Risorse per sviluppatori](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) per visualizzare il valore del campo Service Root. Ad esempio `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. Specificare l&#39;ID client (definito ID applicazione) e il segreto client per l&#39;applicazione connessa.
@@ -91,13 +91,13 @@ Per configurare il [!DNL Microsoft® Dynamics 365] servizio cloud:
 
    1. Specifica `openid` nel **[!UICONTROL Ambito autorizzazione]** campo per il processo di autorizzazione [!DNL Microsoft® Dynamics 365].
    1. Accedi con il [!DNL Microsoft® Dynamics 365] credenziali e accettazione per consentire alla configurazione del servizio cloud di connettersi a [!DNL Microsoft® Dynamics 365] servizio. Se la connessione ha esito positivo, viene effettuato il reindirizzamento al [!DNL Microsoft® Dynamics 365] pagina di configurazione del servizio cloud, in cui viene visualizzato un messaggio di successo.
-1. Tocca **[!UICONTROL Salva e chiudi]** per completare l&#39;impostazione della configurazione.
+1. Seleziona **[!UICONTROL Salva e chiudi]** per completare l&#39;impostazione della configurazione.
 
 ### Accesso preconfigurato [!DNL Microsoft® Dynamics 365] Modello dati modulo
 
 A [!DNL Microsoft® Dynamics 365] Il Modello dati modulo è disponibile come strumento pronto all’uso sulla [!DNL AEM Forms] Server dopo di te [configurare un progetto di sviluppo per Forms basato su archetipo Experience Manager](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 
-Per accedere al modello dati del modulo, passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni di dati]**. L’elenco delle cartelle disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Tocca il nome della cartella, seleziona la **[!UICONTROL Modello dati Microsoft® Dynamics 365]**, quindi tocca Modifica ![Modifica](assets/edit.png) per visualizzare il modello dati del modulo.
+Per accedere al modello dati del modulo, passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni di dati]**. L’elenco delle cartelle disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Seleziona il nome della cartella, quindi fai clic su **[!UICONTROL Modello dati Microsoft® Dynamics 365]** e seleziona Modifica ![Modifica](assets/edit.png) per visualizzare il modello dati del modulo.
 
 Dopo aver configurato [[!DNL Microsoft® Dynamics 365] Servizio di configurazione cloud](#configure-dynamics-cloud-service), puoi integrare moduli adattivi con [!DNL Microsoft® Dynamics 365] Modello dati.
 

@@ -4,10 +4,10 @@ description: Scopri come collegare AEM a Microsoft Translator predefinito per au
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 83%
+source-wordcount: '487'
+ht-degree: 80%
 
 ---
 
@@ -26,7 +26,7 @@ Crea una configurazione per [Microsoft Translator](https://www.microsoft.com/it-
 | Proprietà | Descrizione |
 |---|---|
 | Etichetta traduzione | Il nome visualizzato per il servizio di traduzione |
-| Attribuzione traduzione | (Facoltativo) Per i contenuti generati dall’utente, l’attribuzione visualizzata accanto al testo tradotto, ad esempio `Translations by Microsoft` |
+| Attribuzione traduzione | (Facoltativo) Per i contenuti generati dall’utente, l’attribuzione visualizzata accanto al testo tradotto, ad esempio, `Translations by Microsoft` |
 | ID area di lavoro | (Facoltativo) L’ID del motore di Microsoft Translator personalizzato da utilizzare |
 | Chiave di sottoscrizione | La chiave di abbonamento a Microsoft per Microsoft Translator |
 

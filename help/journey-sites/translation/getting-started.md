@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1391'
 ht-degree: 89%
 
 ---
@@ -101,7 +101,7 @@ Per modificare la pagina:
 
    ![Selezione di una pagina da modificare](assets/sites-editor-select-page.png)
 
-1. Tocca **Modifica** nella barra degli strumenti.
+1. Seleziona la **Modifica** nella barra degli strumenti.
 1. Viene aperto l’editor Sites con la pagina selezionata caricata per la modifica in una nuova scheda del browser.
 1. Passando il mouse sopra un contenuto o toccandolo, vengono visualizzati i selettori per i singoli componenti. I componenti sono i blocchi predefiniti da trascinare e rilasciare che costituiscono la pagina.
 

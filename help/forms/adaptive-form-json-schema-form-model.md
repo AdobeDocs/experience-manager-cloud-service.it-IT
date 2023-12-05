@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1333'
 ht-degree: 5%
 
 ---
@@ -98,7 +98,7 @@ La mappatura degli elementi JSON con i componenti del modulo adattivo è la segu
   </tr>
   <tr>
    <td>proprietà booleana<br /> </td>
-   <td>Interruttore<br /> </td>
+   <td>Switch<br /> </td>
   </tr>
   <tr>
    <td>proprietà oggetto<br /> </td>
@@ -738,7 +738,7 @@ Per abilitare tutti i Forms adattivi basati su schema JSON a generare dati confo
 
 1. Vai alla console web di Experience Manager all’indirizzo `https://server:host/system/console/configMgr`.
 1. Individua **[!UICONTROL Configurazione del canale web per la comunicazione di moduli adattivi e interattivi]**.
-1. Tocca per aprire la configurazione in modalità di modifica.
+1. Seleziona per aprire la configurazione in modalità di modifica.
 1. Seleziona la **[!UICONTROL Genera dati conformi allo schema]** casella di controllo.
 1. Salva le impostazioni.
 

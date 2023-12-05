@@ -2,9 +2,9 @@
 title: Personalizzazione dell’authoring delle pagine
 description: Scopri i meccanismi forniti da AEM as a Cloud Service per personalizzare la funzionalità di authoring delle pagine.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '937'
 ht-degree: 2%
 
 ---
@@ -158,7 +158,7 @@ Puoi trovare il codice di questa pagina su [GitHub.](https://github.com/Adobe-Ma
 
 ## Aggiungi un&#39;azione Nuova pagina {#add-a-new-page-action}
 
-Per aggiungere una nuova azione di pagina alla barra degli strumenti della pagina, ad esempio **Torna a Sites** (console).
+Per aggiungere una nuova azione di pagina alla barra degli strumenti della pagina, ad esempio, **Torna a Sites** (console).
 
 ### Esempio di codice {#code-sample-3}
 

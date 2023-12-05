@@ -1,14 +1,14 @@
 ---
-title: Consente di gestire i contenuti digitali
+title: Gestire le risorse digitali
 description: Scopri i vari metodi di gestione e modifica delle risorse
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4301'
+source-wordcount: '4270'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
 Questo articolo descrive come gestire e modificare le risorse in [!DNL Adobe Experience Manager Assets]. Per gestire [!DNL Content Fragments], vedi [[!DNL Content Fragments]](content-fragments/content-fragments.md) risorse.
@@ -69,15 +69,15 @@ Per estrarre i file ZIP, effettuare le seguenti operazioni:
 Per visualizzare in anteprima una risorsa, segui la procedura riportata di seguito.
 
 1. Dall’interfaccia utente Assets, individua il percorso della risorsa di cui vuoi visualizzare l’anteprima.
-1. Tocca la risorsa desiderata per aprirla.
+1. Seleziona la risorsa desiderata per aprirla.
 
 1. Nella modalità anteprima, sono disponibili le opzioni di zoom per [Tipi di immagini supportati](/help/assets/file-format-support.md) (con modifica interattiva).
 
    Per ingrandire una risorsa, seleziona `+` (oppure seleziona la lente di ingrandimento sulla risorsa). Per ridurre, seleziona `-`. Quando si esegue lo zoom avanti, è possibile esaminare attentamente qualsiasi area dell&#39;immagine eseguendo una panoramica. La freccia di ripristino consente di tornare alla visualizzazione originale.
 
-   Tocca **[!UICONTROL Reimposta]** per ripristinare le dimensioni originali della vista.
+   Seleziona **[!UICONTROL Reimposta]** per ripristinare le dimensioni originali della vista.
 
-## Modifica delle proprietà {#editing-properties}
+## Modifica proprietà {#editing-properties}
 
 1. Passa alla posizione della risorsa di cui desideri modificare i metadati.
 
@@ -340,7 +340,7 @@ Per ricerche semplici, avanzate e personalizzate per individuare e utilizzare le
 
 Le icone di azione rapida sono disponibili per una singola risorsa alla volta. A seconda del dispositivo in uso, eseguire le azioni seguenti per visualizzare le icone delle azioni rapide:
 
-* Dispositivi touch: toccare e tenere premuto. Ad esempio, su un’iPad, puoi toccare e tenere premuto un tasto di una risorsa in modo che vengano visualizzate le azioni rapide.
+* Dispositivi touch: toccare e tenere premuto. In un’iPad, ad esempio, puoi selezionare e mantenere una risorsa in modo che vengano visualizzate le azioni rapide.
 * Dispositivi non touch: puntatore del mouse. Ad esempio, su un dispositivo desktop, se passi il puntatore del mouse sulla miniatura della risorsa, viene visualizzata la barra di azione rapida.
 
 <!-- Hiding this topic via cqdoc-18707

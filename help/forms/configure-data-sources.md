@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2121'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Prima di configurare i database relazionali utilizzando [!DNL Experience Manager
 È possibile configurare i database relazionali utilizzando [!DNL Experience Manager] Configurazione della console web. Effettua le seguenti operazioni:
 
 1. Vai a [!DNL Experience Manager] console web in `https://server:host/system/console/configMgr`.
-1. Individua **[!UICONTROL Pool connessioni JDBC Day Commons]** configurazione. Tocca per aprire la configurazione in modalità di modifica.
+1. Individua **[!UICONTROL Pool connessioni JDBC Day Commons]** configurazione. Seleziona per aprire la configurazione in modalità di modifica.
 
    ![Pool di connettori JDBC](/help/forms/assets/jdbc_connector.png)
 
@@ -74,7 +74,7 @@ Prima di configurare i database relazionali utilizzando [!DNL Experience Manager
    >
    > Consulta [Connessioni SQL con DataSourcePool JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) per informazioni più dettagliate.
 
-1. Tocca **[!UICONTROL Salva]** per salvare la configurazione.
+1. Seleziona **[!UICONTROL Salva]** per salvare la configurazione.
 
 Ora è possibile utilizzare il database relazionale configurato con il modello dati del modulo.
 
@@ -83,7 +83,7 @@ Ora è possibile utilizzare il database relazionale configurato con il modello d
 You can configure [!DNL Experience Manager] user profile using User Profile Connector configuration in [!DNL Experience Manager] Web Console. Do the following:
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
-1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
+1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and select to open the configuration in edit mode.
 1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -97,7 +97,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
    >
    >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
-1. Tap **[!UICONTROL Save]** to save the configuration. -->
+1. Select **[!UICONTROL Save]** to save the configuration. -->
 
 ## Configurare la cartella per le configurazioni del servizio cloud {#cloud-folder}
 
@@ -111,15 +111,15 @@ Per configurare la cartella per le configurazioni del servizio cloud:
    * Consulta la [Browser configurazioni](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) per ulteriori informazioni.
 1. Effettua le seguenti operazioni per abilitare la cartella globale per le configurazioni cloud oppure ignora questo passaggio per creare e configurare un’altra cartella per le configurazioni del servizio cloud.
 
-   1. In **[!UICONTROL Browser configurazioni]**, seleziona la `global` cartella e tocca **[!UICONTROL Proprietà]**.
+   1. In **[!UICONTROL Browser configurazioni]**, seleziona la `global` cartella e seleziona **[!UICONTROL Proprietà]**.
 
    1. In **[!UICONTROL Proprietà di configurazione]** finestra di dialogo, abilita **[!UICONTROL Configurazioni cloud]**.
 
-   1. Tocca **[!UICONTROL Salva e chiudi]** per salvare la configurazione e uscire dalla finestra di dialogo.
+   1. Seleziona **[!UICONTROL Salva e chiudi]** per salvare la configurazione e uscire dalla finestra di dialogo.
 
-1. In **[!UICONTROL Browser configurazioni]**, tocca **[!UICONTROL Crea]**.
+1. In **[!UICONTROL Browser configurazioni]**, seleziona **[!UICONTROL Crea]**.
 1. In **[!UICONTROL Crea configurazione]** , specifica un titolo per la cartella e abilita **[!UICONTROL Configurazioni cloud]**.
-1. Tocca **[!UICONTROL Crea]** per creare la cartella abilitata per le configurazioni del servizio cloud.
+1. Seleziona **[!UICONTROL Crea]** per creare la cartella abilitata per le configurazioni del servizio cloud.
 
 ## Configurare i servizi web RESTful {#configure-restful-web-services}
 
@@ -127,11 +127,11 @@ I servizi web RESTful possono essere descritti utilizzando [Specifiche Swagger](
 
 ### Configurazione dei servizi RESTful per la specifica API Open versione 2.0 {#configure-restful-services-open-api-2.0}
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Consulta [Configurare la cartella per le configurazioni del servizio cloud](configure-data-sources.md#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
 
-1. Tocca **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio RESTful]** dal **[!UICONTROL Tipo di servizio]** a discesa, se necessario sfoglia e seleziona un’immagine di miniatura per la configurazione, quindi tocca **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio RESTful]** dal **[!UICONTROL Tipo di servizio]** , sfogliare e selezionare un&#39;immagine di miniatura per la configurazione e selezionare **[!UICONTROL Successivo]**.
 1. Specificare i dettagli seguenti per il servizio RESTful:
 
    * Seleziona un URL o un file da [!UICONTROL Sorgente Swagger] e quindi specificare il [!DNL Swagger URL] al[!DNL  Swagger] file di definizione o carica [!DNL Swagger] dal file system locale.
@@ -148,15 +148,15 @@ I servizi web RESTful possono essere descritti utilizzando [Specifiche Swagger](
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. Tocca **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio RESTful.
+1. Seleziona **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio RESTful.
 
 ### Configurare i servizi RESTful per la versione 3.0 delle specifiche API aperte {#configure-restful-services-open-api-3.0}
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Consulta [Configurare la cartella per le configurazioni del servizio cloud](configure-data-sources.md#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
 
-1. Tocca **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio RESTful]** dal **[!UICONTROL Tipo di servizio]** a discesa, se necessario sfoglia e seleziona un’immagine di miniatura per la configurazione, quindi tocca **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio RESTful]** dal **[!UICONTROL Tipo di servizio]** , sfogliare e selezionare un&#39;immagine di miniatura per la configurazione e selezionare **[!UICONTROL Successivo]**.
 1. Specificare i dettagli seguenti per il servizio RESTful:
 
    * Seleziona un URL o un file da [!UICONTROL Sorgente Swagger] e quindi specificare il [!DNL Swagger 3.0 URL] al[!DNL  Swagger] file di definizione o carica [!DNL Swagger] dal file system locale.
@@ -167,7 +167,7 @@ I servizi web RESTful possono essere descritti utilizzando [Specifiche Swagger](
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. Tocca **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio RESTful.
+1. Seleziona **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio RESTful.
 
 Alcune delle operazioni non supportate dalla versione 3.0 della specifica Open API dei servizi RESTful sono:
 * Callback
@@ -208,7 +208,7 @@ Il seguente file JSON mostra un esempio:
 } 
 ```
 
-1. Tocca **[!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST]**.
+1. Seleziona **[!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST]**.
 
 1. In [!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST] finestra di dialogo:
 
@@ -228,11 +228,11 @@ I servizi web basati su SOAP sono descritti utilizzando [Specifiche di Web Servi
 
 Per configurare il servizio Web basato su SOAP in [!DNL Experience Manager] as a Cloud Service, assicurati di disporre dell’URL WSDL per il servizio Web e procedi come segue:
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Consulta [Configurare la cartella per le configurazioni del servizio cloud](configure-data-sources.md#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
 
-1. Tocca **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio web SOAP]** dal **[!UICONTROL Tipo di servizio]** a discesa, se necessario sfoglia e seleziona un’immagine di miniatura per la configurazione, quindi tocca **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio web SOAP]** dal **[!UICONTROL Tipo di servizio]** , sfogliare e selezionare un&#39;immagine di miniatura per la configurazione e selezionare **[!UICONTROL Successivo]**.
 1. Specificare quanto segue per il servizio Web SOAP:
 
    * URL WSDL per il servizio Web.
@@ -244,7 +244,7 @@ Per configurare il servizio Web basato su SOAP in [!DNL Experience Manager] as a
 
      <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. Tocca **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio web SOAP.
+1. Seleziona **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio web SOAP.
 
 ### Abilitare l&#39;utilizzo delle istruzioni di importazione nel WSDL dei servizi Web SOAP {#enable-import-statements}
 
@@ -269,11 +269,11 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 > Il modello dati del modulo supporta [OData versione 4](https://www.odata.org/documentation/).
 >Per una guida dettagliata alla configurazione di [!DNL Microsoft®® Dynamics 365], online o on-premise, vedi [[!DNL Microsoft® Dynamics] Configurazione OData](ms-dynamics-odata-configuration.md).
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Tocca per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Consulta [Configurare la cartella per le configurazioni del servizio cloud](#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
 
-1. Tocca **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio OData]** dal **[!UICONTROL Tipo di servizio]** a discesa, se necessario sfoglia e seleziona un’immagine di miniatura per la configurazione, quindi tocca **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio OData]** dal **[!UICONTROL Tipo di servizio]** , sfogliare e selezionare un&#39;immagine di miniatura per la configurazione e selezionare **[!UICONTROL Successivo]**.
 1. Specificare i dettagli seguenti per il servizio OData:
 
    * URL principale del servizio per il servizio OData da configurare.
@@ -285,7 +285,7 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
    >
    Seleziona il tipo di autenticazione OAuth 2.0 con cui connetterti [!DNL Microsoft®® Dynamics] servizi che utilizzano l&#39;endpoint OData come radice del servizio.
 
-1. Tocca **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio OData.
+1. Seleziona **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio OData.
 
 <!--
 ## Configure Microsoft® SharePoint List {#config-sharepoint-list}
@@ -309,7 +309,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
 
 -->
 
@@ -319,11 +319,11 @@ When you enable mutual authentication for form data model, both the data source 
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
-   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Select the `fd-cloudservice` user and tap **[!UICONTROL Properties]**.
-   1. Open the **[!UICONTROL Keystore]** tab, expand the **[!UICONTROL Add Private Key from KeyStore file]** option, upload the KeyStore File, specify the aliases, passwords, and tap **[!UICONTROL Submit]**. The Certificate is uploaded.  The private key alias is mentioned in the certificate and set while creating the certificate.
+   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Select the `fd-cloudservice` user and select **[!UICONTROL Properties]**.
+   1. Open the **[!UICONTROL Keystore]** tab, expand the **[!UICONTROL Add Private Key from KeyStore file]** option, upload the KeyStore File, specify the aliases, passwords, and select **[!UICONTROL Submit]**. The Certificate is uploaded.  The private key alias is mentioned in the certificate and set while creating the certificate.
 1. Upload trust certificate to Global Trust Store. To upload the certificate:
    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
-   1. Expand the **[!UICONTROL Add Certificate from CER file]** option, tap **[!UICONTROL Select Certificate File]**, upload the certificate, and tap **[!UICONTROL Submit]**.
+   1. Expand the **[!UICONTROL Add Certificate from CER file]** option, select **[!UICONTROL Select Certificate File]**, upload the certificate, and select **[!UICONTROL Submit]**.
 1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.-->
 
 ## Passaggi successivi {#next-steps}

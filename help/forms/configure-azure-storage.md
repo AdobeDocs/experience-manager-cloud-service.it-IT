@@ -2,14 +2,14 @@
 title: Come si configura l’archiviazione Azure?
 description: Scopri come integrare i moduli con il server di archiviazione Azure.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '583'
 ht-degree: 1%
 
 ---
 
-# Configura[!DNL Azure]archiviazione {#configure-azure-storage}
+# Configura [!DNL Azure] archiviazione {#configure-azure-storage}
 
 
 ![integrazione dei dati](assets/data-integeration.png)
@@ -26,10 +26,10 @@ ht-degree: 1%
 Prima di eseguire questi passaggi, assicurati di disporre di un [!DNL Azure] e una chiave di accesso per autorizzare l&#39;accesso al [!DNL Azure] account di archiviazione.
 
 1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
-1. Seleziona una cartella per creare la configurazione e tocca **[!UICONTROL Crea]**.
+1. Seleziona una cartella per creare la configurazione e seleziona **[!UICONTROL Crea]**.
 1. Specifica un titolo per la configurazione nella **[!UICONTROL Titolo]** campo.
 1. Specifica il nome del [!DNL Azure] account di archiviazione in **[!UICONTROL Account di archiviazione Azure]** campo.
-1. Specifica la chiave per accedere all’account di archiviazione Azure in **[!UICONTROL Chiave di accesso Azure]** campo e tocco **[!UICONTROL Salva]**.
+1. Specifica la chiave per accedere all’account di archiviazione Azure in **[!UICONTROL Chiave di accesso Azure]** e seleziona **[!UICONTROL Salva]**.
 
 ## Crea modello dati modulo {#create-azure-form-data-model}
 
@@ -41,13 +41,13 @@ Dopo aver creato il modello dati modulo e gli oggetti modello dati, è possibile
 
 Da aggiungere [!DNL Azure] servizi:
 
-1. In modalità Modifica, seleziona i servizi da **[!UICONTROL Servizi]** nel riquadro a sinistra e tocca **[!UICONTROL Aggiungi selezionati]**. I servizi selezionati vengono visualizzati nel **[!UICONTROL Servizi]** del modello dati del modulo.
+1. In modalità Modifica, seleziona i servizi da **[!UICONTROL Servizi]** nel riquadro a sinistra e selezionare **[!UICONTROL Aggiungi selezionati]**. I servizi selezionati vengono visualizzati nel **[!UICONTROL Servizi]** del modello dati del modulo.
 
    ![Aggiungi servizi selezionati](assets/select-services.png)
 
 1. In **[!UICONTROL Servizi]** , selezionare il servizio e **[!UICONTROL Modifica proprietà]**. In base al servizio, definisci gli oggetti modello di input o output per il servizio.
 
-1. Tocca **[!UICONTROL Salva]** per salvare il modello dati del modulo.
+1. Seleziona **[!UICONTROL Salva]** per salvare il modello dati del modulo.
 
    Nella tabella seguente sono descritti i [!DNL Azure] servizi:
 
@@ -92,9 +92,9 @@ Da aggiungere [!DNL Azure] servizi:
 
 Per definire una proprietà dell’oggetto modello dati come chiave di ricerca:
 
-1. In **[!UICONTROL Modello]** , seleziona la proprietà oggetto modello dati e tocca **[!UICONTROL Modifica proprietà]**.
+1. In **[!UICONTROL Modello]** , selezionare la proprietà dell&#39;oggetto modello dati e selezionare **[!UICONTROL Modifica proprietà]**.
 1. Cambia il **[!UICONTROL Chiave di ricerca]** imposta l&#39;opzione sullo stato ON. Questa opzione è disponibile solo per i tipi di dati primari.
-1. Tocca **[!UICONTROL Fine]** e quindi tocca **[!UICONTROL Salva]** per salvare il modello dati del modulo.
+1. Seleziona **[!UICONTROL Fine]** e quindi seleziona **[!UICONTROL Salva]** per salvare il modello dati del modulo.
 
 Dopo aver definito le proprietà dell’oggetto modello dati come chiavi di ricerca, i valori hash vengono memorizzati nei tag di indice di Azure e i valori con codifica Base64 vengono memorizzati nei metadati di Azure.
 

@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 3%
+source-wordcount: '1063'
+ht-degree: 2%
 
 ---
 
@@ -52,8 +52,8 @@ Forms include alcuni campi e sezioni che non sono applicabili a tutti gli utenti
 Per abilitare il caricamento lento in un frammento di modulo adattivo, effettua le seguenti operazioni:
 
 1. Apri il modulo adattivo in modalità di authoring che contiene il frammento che desideri abilitare per il caricamento lento.
-1. Seleziona il frammento di modulo adattivo e tocca ![configura](assets/configure-icon.svg).
-1. Nella barra laterale, abilita **[!UICONTROL Carica frammento in modo differito]** e tocca **Fine**.
+1. Seleziona il frammento di modulo adattivo e fai clic su ![configura](assets/configure-icon.svg).
+1. Nella barra laterale, abilita **[!UICONTROL Carica frammento in modo differito]** e seleziona **Fine**.
 
    ![Abilita il caricamento lento per il frammento di modulo adattivo](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ Per abilitare il caricamento lento in un frammento di modulo adattivo, effettua 
 Puoi contrassegnare i valori degli oggetti nel frammento caricato in modo differito come globali, in modo che siano disponibili per l’utilizzo negli script quando il frammento che li contiene non viene caricato. Effettua le seguenti operazioni:
 
 1. Apri il frammento di modulo adattivo in modalità di authoring.
-1. Tocca il campo di cui desideri contrassegnare il valore come globale, quindi tocca ![configura](assets/configure-icon.svg).
+1. Selezionare il campo di cui si desidera contrassegnare il valore come globale, quindi selezionare ![configura](assets/configure-icon.svg).
 1. Nella barra laterale, abilita **[!UICONTROL Usa valore durante il caricamento lento]**.
 
    ![Campo di caricamento lazy nella barra laterale](assets/enable-lazy-loading.png)

@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2872'
+source-wordcount: '2677'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Ricordi in [Anatomia di un URL Dynamic Medie](#dm-journey-d) in precedenza, hai 
 
 Potete immaginare un predefinito immagine come una ricetta per le immagini. Fornirà sempre tutte le immagini che usano il predefinito in modo coerente; sarà sempre lo stesso. Il parametro `&op_brightness=+10` per aumentare leggermente la luminosità.
 
-Una volta terminato, salvate il predefinito, che ora è disponibile per tutte le immagini. In questo caso, vogliamo applicare la _Medio_ predefinito immagine di un&#39;immagine di una ciotola di cioccolato liquido.
+Una volta terminato, salvate il predefinito, che ora è disponibile per tutte le immagini. In questo caso, desideri applicare il _Medio_ predefinito immagine di un&#39;immagine di una ciotola di cioccolato liquido.
 
 ![Applicazione del predefinito immagine *Medio* per generare una rappresentazione di un&#39;immagine](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Applicazione del predefinito immagine Media per generare una rappresentazione di un&#39;immagine._
@@ -222,7 +222,7 @@ _Argomenti della Guida di Dynamic Medie_
 
 _Tutorial su Dynamic Medie_
 
-* [Utilizzare Dynamic Medie con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=it)
+* [Utilizzare Dynamic Medie con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
 * [Libreria di contenuti Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (ricerca il _Dynamic Medie_)
 
 _Visualizzatori Dynamic Medie_

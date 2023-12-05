@@ -7,9 +7,9 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 1d0f8bfd955c9315b01e49d8b1924add996b1599
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2137'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ Inoltre, se hai selezionato uno schema XML o un modello di modulo XDP come model
 
    * **Modello modulo**: a seconda del modello del modulo adattivo, questo campo mostra il **Schema XML**, **Modello modulo**, o **Nessuno**. È un campo non modificabile.
 
-   * **Elemento principale** modello frammento: appare solo nei Forms adattivi basati su XSD. Specifica la directory principale per il modello di frammento. È possibile scegliere **/** o il tipo complesso XSD dal menu a discesa. Puoi riutilizzare il frammento in un altro modulo adattivo solo se come radice del modello di frammento selezioni il tipo complesso.
+   * **Elemento principale** modello frammento: appare solo nei Forms adattivi basati su XSD. Specifica la directory principale per il modello di frammento. È possibile scegliere **/** o il tipo complesso XSD dal menu a discesa. È possibile riutilizzare il frammento in un altro modulo adattivo solo selezionando il tipo complesso come radice del modello di frammento.
 Se si sceglie **/** come directory principale del modello di frammento, la struttura XSD completa dalla directory principale è visibile nella scheda Modello dati modulo adattivo. Per un elemento principale del modello di frammento di tipo complesso, nella scheda Modello dati modulo adattivo sono visibili solo i discendenti del tipo complesso selezionato.
 
    * **Rif XSD**: viene visualizzato solo in Adaptive Forms basato su XSD. Viene visualizzata la posizione dello schema XML.
@@ -228,7 +228,7 @@ Quando si crea un frammento di modulo adattivo utilizzando un modello di modulo 
    <td><p>Genera un dizionario per la localizzazione del frammento selezionato. <!-- For more information, see <a href="lazy-loading-adaptive-forms.md" target="_blank">Localizing Adaptive Forms</a>.<br /> <br /> --> </p> </td>
   </tr>
   <tr>
-   <td><p>Pubblicare/Annullare la pubblicazione</p> </td>
+   <td><p>Pubblica/Annulla pubblicazione</p> </td>
    <td><p>Pubblica o annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>

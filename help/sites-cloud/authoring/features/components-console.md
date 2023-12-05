@@ -2,10 +2,10 @@
 title: Console Componenti
 description: La console Componenti consente di sfogliare tutti i componenti definiti per la tua istanza
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 69%
+ht-degree: 66%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 69%
 
 La console Componenti consente di sfogliare tutti i componenti definiti per l’istanza e visualizzare le informazioni chiave per ciascun componente.
 
-È possibile accedervi da **Strumenti ->** **Generale ->** **Componenti**. Poiché non vi è alcuna struttura ad albero per i componenti, è disponibile solo la vista a elenco.
+È accessibile da **Strumenti >** **Generale >** **Componenti**. Poiché non vi è alcuna struttura ad albero per i componenti, è disponibile solo la vista a elenco.
 
 ![Console Componenti](/help/sites-cloud/authoring/assets/components-console.png)
 

@@ -4,9 +4,9 @@ description: Scopri le best practice compilate dai team di progettazione e consu
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1413'
 ht-degree: 92%
 
 ---
@@ -119,7 +119,7 @@ Quando progetti lo spostamento di pagine in una Live Copy, considera la seguente
 
 ## Personalizzazione dei rollout {#customizing-rollouts}
 
-Le configurazioni di rollout MSM sono altamente personalizzabili. Tieni presente che automatizzare i rollout può avere conseguenze di vasta portata. Come best practice, devi pianificare con molta attenzione prima di intraprendere le seguenti attività:
+Le configurazioni di rollout MSM sono altamente personalizzabili. L’automazione dei rollout può avere conseguenze di vasta portata. Come best practice, devi pianificare con molta attenzione prima di intraprendere le seguenti attività:
 
 * Automatizzare i rollout, ad esempio con [trigger onModify](#onmodify)
 * Personalizzare [tipi di nodo/proprietà](#node-types-properties)

@@ -2,10 +2,10 @@
 title: Supporto OAuth2 per il servizio di posta
 description: Supporto Oauth2 per il servizio di posta in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 92%
+source-wordcount: '672'
+ht-degree: 88%
 
 ---
 
@@ -32,7 +32,7 @@ Per ulteriori informazioni sul servizio di posta AEM as a Cloud Service, consult
 
    >[!NOTE]
    >
-   >La configurazione delle autorizzazioni può evolvere nel tempo. Se questi non funzionano come previsto, collabora con Microsoft.
+   >La configurazione delle autorizzazioni può evolvere nel tempo. Lavora con Microsoft se questi non funzionano come previsto.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -58,14 +58,14 @@ Per ricapitolare, utilizza le seguenti informazioni per configurare OAuth2 per i
 
 Quindi, genera il token di aggiornamento, che fa parte della configurazione OSGi in un passaggio successivo, effettuando le seguenti operazioni:
 
-1. Apri il seguente URL nel browser dopo la sostituzione di `clientID` e `tenantID` con i valori specifici del tuo account:
+1. Apri il seguente URL nel browser dopo la sostituzione `clientID` e `tenantID` con i valori specifici del tuo account:
 
    ```
    https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
    ```
 
 1. Quando richiesto, concedi l’autorizzazione.
-1. L’URL verrà reindirizzato a una nuova posizione, costruita in questo formato:
+1. L’URL viene reindirizzato a una nuova posizione, costruita in questo formato:
 
    ```
    http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
@@ -139,7 +139,7 @@ Prima di procedere alla configurazione di OAuth sul lato AEM, assicurati di conv
 
    >[!NOTE]
    >
-   >Gli ambiti possono evolvere nel tempo. Se questi non funzionano come previsto, collabora con Microsoft.
+   >Gli ambiti possono evolvere nel tempo. Lavora con Microsoft se questi non funzionano come previsto.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`

@@ -1,9 +1,9 @@
 ---
 title: Cosa sono le espressioni di modulo adattivo?
 description: Utilizza espressioni Forms adattive per aggiungere convalida, calcolo e attivazione o disattivazione automatica della visibilità di una sezione.
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2683'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ In Forms adattivo, puoi scrivere espressioni per aggiungere comportamenti quali 
 
 ### Calcola espressione {#calculate-expression}
 
-L’espressione di calcolo viene utilizzata per calcolare automaticamente il valore di un campo utilizzando un’espressione. In genere, tali espressioni utilizzano la proprietà value di altri campi. Esempio: `field2.value + field3.value`. Ogni volta che il valore `field2`o `field3`, l&#39;espressione viene riattivata e il valore viene ricalcolato.
+L’espressione di calcolo viene utilizzata per calcolare automaticamente il valore di un campo utilizzando un’espressione. In genere, tali espressioni utilizzano la proprietà value di altri campi. Ad esempio: `field2.value + field3.value`. Ogni volta che il valore `field2`o `field3`, l&#39;espressione viene riattivata e il valore viene ricalcolato.
 
 **Applicabile a**: campi
 
@@ -274,7 +274,7 @@ Per creare un pattern personalizzato per un tipo di campo specifico e riutilizza
 1. Apri la scheda Proprietà del nodo creato. Ad esempio, apri la scheda Proprietà di `textboxpatterns`. Aggiungi il `guideComponentType` su questo nodo e impostarne il valore su *fd/af/components/formatter/guideTextBox*.
 
 1. Il valore di questa proprietà varia a seconda del campo per il quale si desidera definire i modelli. Per un campo numerico, il valore della proprietà `guideComponentType` la proprietà è *fd/af/components/formatter/guideNumericBox*. Il valore del campo Datepicker è *fd/af/components/formatter/guideDatepicker*. &quot;
-1. È possibile aggiungere un pattern personalizzato assegnando una proprietà al `textboxpatterns` nodo. Aggiungi una proprietà con un nome (ad esempio `pattern1`) e impostarne il valore sul pattern da aggiungere. Ad esempio, aggiungi una proprietà `pattern1` con valore Fax=text{99-999-9999999}. Il pattern è disponibile per tutte le caselle di testo utilizzate in Adaptive Forms.
+1. È possibile aggiungere un pattern personalizzato assegnando una proprietà al `textboxpatterns` nodo. Aggiungi una proprietà con un nome (ad esempio, `pattern1`) e impostarne il valore sul pattern da aggiungere. Ad esempio, aggiungi una proprietà `pattern1` con valore Fax=text{99-999-9999999}. Il pattern è disponibile per tutte le caselle di testo utilizzate in Adaptive Forms.
 
    ![Creazione di modelli personalizzati per i campi in CrxDe](assets/creating-custom-patterns.png)
 

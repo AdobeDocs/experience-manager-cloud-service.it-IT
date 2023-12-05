@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '3706'
-ht-degree: 1%
+source-wordcount: '3685'
+ht-degree: 0%
 
 ---
 
@@ -182,7 +182,7 @@ Un altro caso d’uso che Dynamic Medie risolve per è il video. Il video è com
 
 I clienti arrivano a Dynamic Medie con il seguente problema che sperano di risolvere:
 
-&quot;_Abbiamo il video, e abbiamo speso un sacco di soldi per crearlo. Ma ci siamo astenuti dal posizionarlo sulle pagine, o dal distribuirlo, perché dai nostri test, non possiamo garantire la qualità del video, o se è davvero in fase di riproduzione. E in ultima analisi, questo influisce sui nostri marchi e potenzialmente sul nostro ruolo persino nella conversione._&quot;
+&quot;_La mia azienda ha il video, e il nostro reparto ha speso una grande quantità di denaro per crearlo, ma ha evitato di metterlo sulle pagine o consegnarlo. Il motivo era che dai nostri test, la qualità del video non poteva essere garantita, o anche se stava per essere riprodotto davvero. E in ultima analisi, questo influisce sui nostri marchi e potenzialmente sul nostro ruolo persino nella conversione._&quot;
 
 La soluzione di Dynamic Medie è quella di prendere quell&#39;unico file video principale, e lasciare che Dynamic Medie faccia tutte le dimensioni attraverso il suo processo di transcodifica. Poi aggiungilo al lettore video intelligente di Dynamic Medie. Questo flusso di lavoro garantisce che il video venga utilizzato nella pagina di destinazione principale, in una categoria o in una pagina di dettaglio del prodotto e sia sempre coerente e di alta qualità.
 
@@ -282,7 +282,7 @@ _Argomenti della Guida di Dynamic Medie_
 
 _Tutorial su Dynamic Medie_
 
-* [Utilizzare Dynamic Medie con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=it)
+* [Utilizzare Dynamic Medie con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
 * [Libreria di contenuti Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (ricerca il _Dynamic Medie_)
 
 _Visualizzatori Dynamic Medie_

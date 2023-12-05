@@ -2,9 +2,9 @@
 title: Note sulla versione 2023.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2023.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '896'
 ht-degree: 49%
 
 ---
@@ -25,7 +25,7 @@ La sezione seguente illustra le note sulla versione funzionale 2023.7.0 di [!DNL
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2023.7.0) è il 27 luglio 2023. La prossima versione (2023.8.0) è prevista per il 31 agosto 2023.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.7.0) è il venerdì 27 luglio 2023. La successiva versione funzionale (2023.8.0) è pianificata per il venerdì 31 agosto 2023.
 
 ## Video sulla versione {#release-video}
 
@@ -80,7 +80,7 @@ Per impostazione predefinita, Assets Essentials ora ordina i risultati della ric
 
 * [**Temi predefiniti**](/help/forms/using-themes-in-core-components.md) **e modelli**: avvia il processo di creazione dei moduli con i nostri temi e modelli OOTB pronti all’uso, personalizzati per consentire a professionisti esperti e nuovi autori di moduli di acquisire dimestichezza. Creati in modo semplice utilizzando i componenti core di Forms adattivi, questi temi e modelli meticolosamente curati consentono di iniziare a creare moduli rapidamente per i casi d’uso comuni.
 
-* **[Componenti React per Forms headless](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: ora puoi visualizzare in anteprima e personalizzare le rappresentazioni headless di moduli adattivi con i componenti React forniti come predefiniti. Questi componenti sfruttano le classi BEM dei componenti core di Forms adattivi per la creazione di stili, semplificando la personalizzazione del loro aspetto in base a requisiti specifici.
+* **[Componenti React per Forms headless](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: ora puoi visualizzare in anteprima e personalizzare le rappresentazioni headless di moduli adattivi con i componenti React forniti come predefiniti. Questi componenti utilizzano le classi BEM dei Componenti core di Adaptive Forms per la creazione di stili, semplificando la personalizzazione dell’aspetto in base a requisiti specifici.
 
 * [**Creare un Forms adattivo con sezioni ripetibili**](/help/forms/create-forms-repeatable-sections.md): ora puoi effettuare [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it), [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=it), e [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it) Adaptive Form basato su componenti ripetibile per l’acquisizione di più record di dati.  Queste sezioni ripetibili consentono di fornire facilmente più voci di dati. È utile quando le istanze di dati richieste non sono note in anticipo. Un modulo può aggiungere o rimuovere facilmente sezioni, rendendo i moduli adattabili a diversi scenari di immissione dati e semplificando la raccolta di più occorrenze dello stesso record di dati.
 

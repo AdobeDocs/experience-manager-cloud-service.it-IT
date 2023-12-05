@@ -2,10 +2,10 @@
 title: Come modellare il contenuto
 description: In questa sezione del Percorso per sviluppatori headless Adobe Experience Manager (AEM), scopri come modellare i contenuti per la distribuzione headless AEM utilizzando la modellazione dei contenuti con modelli per frammenti di contenuto e frammenti di contenuto.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 69%
+source-wordcount: '1814'
+ht-degree: 67%
 
 ---
 
@@ -210,7 +210,7 @@ All’inizio, devi abilitare i modelli per frammenti di contenuto per il sito. Q
 >
 >Consulta Risorse aggiuntive - Frammenti di contenuto nel Browser configurazioni
 
-È quindi possibile creare modelli per frammenti di contenuto e definire la struttura. Questo può essere fatto in **Strumenti** -> **Generale** -> **Modelli per frammenti di contenuto**. Esempio:
+È quindi possibile creare modelli per frammenti di contenuto e definire la struttura. Questa operazione può essere eseguita in **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**. Esempio:
 
 ![Modello per frammenti di contenuto](assets/cfm-model.png)
 
@@ -224,7 +224,7 @@ I frammenti di contenuto vengono creati in base a un modello per frammenti di co
 
 ### Selezione del modello appropriato {#select-model}
 
-Il primo passaggio per creare effettivamente il contenuto è la creazione di un frammento di contenuto. Questa operazione viene eseguita utilizzando Crea -> Frammento di contenuto nella cartella richiesta in Risorse -> File. La procedura guidata ti guida attraverso i passaggi.
+Il primo passaggio per creare effettivamente il contenuto è la creazione di un frammento di contenuto. Questa operazione viene eseguita utilizzando Crea > Frammento di contenuto nella cartella richiesta in Risorse > File. La procedura guidata ti guida attraverso i passaggi.
 
 Un frammento di contenuto si basa su un modello per frammento di contenuto specifico, selezionato come primo passaggio del processo di creazione.
 

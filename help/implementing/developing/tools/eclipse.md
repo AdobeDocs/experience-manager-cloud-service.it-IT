@@ -2,9 +2,9 @@
 title: Strumenti AEM Developer per Eclipse
 description: Scopri come utilizzare AEM Developer Tools per Eclipse, un plug-in di Eclipse basato sul plug-in di Eclipse per Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1138'
 ht-degree: 2%
 
 ---
@@ -196,7 +196,7 @@ Al termine, il pacchetto dovrebbe essere in esecuzione sull’istanza e, al mome
 
 Se desideri ricreare un pacchetto dal progetto, fai clic con il pulsante destro del mouse su `PROJECT.ui.apps` o `PROJECT.ui.content` e scegli **Esegui come** > **Installazione Maven**.
 
-Ora disponi di una cartella di destinazione creata con il pacchetto all’interno (denominata, ad esempio `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Ora disponi di una cartella di destinazione creata con il pacchetto all’interno (denominata, ad esempio, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Risoluzione dei problemi {#troubleshooting}
 

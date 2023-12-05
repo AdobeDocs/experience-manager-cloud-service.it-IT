@@ -2,9 +2,9 @@
 title: Utilizzo di CRXDE Lite
 description: CRXDE Liti fa parte del modulo quickstart dell’AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1678'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Il widget Percorso nodo visualizza il percorso del nodo attualmente selezionato.
 
 Puoi anche utilizzarlo per passare a un nodo immettendo manualmente il percorso o incollandolo da un’altra posizione e premendo Invio.
 
-Fornisce inoltre supporto per la ricerca di nodi con un nome di nodo specifico. Inserisci il nome del nodo che desideri trovare e attendi (oppure seleziona l’icona di ricerca a destra). Se uno o più nodi vengono caricati nel riquadro dell&#39;elenco delle cartelle, verrà visualizzato l&#39;elenco e sarà possibile selezionare il percorso e premere Invio per individuarlo. Si noti che funziona solo per i nodi attualmente caricati nell’applicazione client CRXDE nel browser. Se desideri cercare nell’intero archivio, utilizza **Strumenti** ->: **Query**.
+Fornisce inoltre supporto per la ricerca di nodi con un nome di nodo specifico. Inserisci il nome del nodo che desideri trovare e attendi (oppure seleziona l’icona di ricerca a destra). Se uno o più nodi vengono caricati nel riquadro dell&#39;elenco delle cartelle, verrà visualizzato l&#39;elenco e sarà possibile selezionare il percorso e premere Invio per individuarlo. Funziona solo per i nodi attualmente caricati nell’applicazione client CRXDE nel browser. Se desideri cercare nell’intero archivio, utilizza **Strumenti** ->: **Query**.
 
 ### Riquadro Explorer {#explorer-pane}
 

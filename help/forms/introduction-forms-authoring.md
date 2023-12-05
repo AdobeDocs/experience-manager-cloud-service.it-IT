@@ -6,10 +6,10 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2482'
-ht-degree: 96%
+source-wordcount: '2465'
+ht-degree: 94%
 
 ---
 
@@ -96,7 +96,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
 
   Consente di modificare le proprietà di un componente. Le proprietà cambiano in base a un componente. Per visualizzare le proprietà del contenitore Modulo adattivo:
 
-  Seleziona un componente, quindi tocca ![livello di campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Contenitore di moduli adattivi]**, quindi tocca ![proprietà](assets/Smock_Wrench_18_N.svg).
+  Seleziona un componente, quindi seleziona ![a livello di campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Contenitore modulo adattivo]** e quindi selezionare ![proprietà](assets/Smock_Wrench_18_N.svg).
 
 * **Browser risorse**
 
@@ -307,7 +307,7 @@ La barra degli strumenti della pagina in alto contiene opzioni che consentono di
 
 Quando selezioni un componente, viene visualizzata una barra degli strumenti che consente di utilizzarlo. Sono disponibili opzioni per tagliare, incollare, spostare e specificare le proprietà dei componenti. Le opzioni disponibili sono:
 
-A.**Configura**: quando tocchi **[!UICONTROL Configura]**, le proprietà dei componenti sono visibili nella barra laterale. La configurazione di queste proprietà ti consente di personalizzare l’esperienza di acquisizione dei dati. Puoi modificare il nome dell’elemento del componente, specificare il testo dell’etichetta nel campo Titolo del componente. Il nome dell’elemento consente di acquisire i valori immessi dall’utente utilizzando il componente. Nelle proprietà del componente, specifichi il comportamento del componente e gestisci l’input dell’utente. Configura le proprietà nella barra laterale per acquisire i dati utente e utilizzalo per un’ulteriore elaborazione. Le proprietà per il contenitore Modulo adattivo consentono di specificare le librerie client, i layout, i temi, le impostazioni del documento di record, salvare le impostazioni, le impostazioni di invio e le impostazioni dei metadati.
+R.**Configura**: quando selezioni **[!UICONTROL Configura]**, le proprietà del componente sono visibili nella barra laterale. La configurazione di queste proprietà ti consente di personalizzare l’esperienza di acquisizione dei dati. Puoi modificare il nome dell’elemento del componente, specificare il testo dell’etichetta nel campo Titolo del componente. Il nome dell’elemento consente di acquisire i valori immessi dall’utente utilizzando il componente. Nelle proprietà del componente, specifichi il comportamento del componente e gestisci l’input dell’utente. Configura le proprietà nella barra laterale per acquisire i dati utente e utilizzalo per un’ulteriore elaborazione. Le proprietà per il contenitore Modulo adattivo consentono di specificare le librerie client, i layout, i temi, le impostazioni del documento di record, salvare le impostazioni, le impostazioni di invio e le impostazioni dei metadati.
 
 B.**Copia**: é possibile utilizzare l’opzione Copia per copiare un componente e incollarlo in altre posizioni del modulo Quando incolli un componente, il componente incollato ottiene un nuovo nome di elemento ma mantiene le proprietà del componente copiato.
 
@@ -325,7 +325,7 @@ H. **Gruppo**: consente di selezionare più componenti se si desidera tagliare, 
 
 I. **Elemento principale**: consente di selezionare l’elemento principale di un componente. Ad esempio, un campo di testo si trova all’interno di una sottosezione, che si trova in una sezione. La sezione si trova nel pannello principale della guida e il contenitore Modulo adattivo è l’elemento principale di un pannello principale della guida. Per un componente, è possibile visualizzare tutte le opzioni con la gerarchia ordinata dal basso verso l’alto.
 
-Ad esempio, se tocchi **[!UICONTROL Elemento principale]** per una casella di testo è possibile visualizzare:
+Ad esempio, se selezioni **[!UICONTROL Elemento padre]** per una casella di testo, è possibile visualizzare:
 
 * Sottosezione
 * Sezione

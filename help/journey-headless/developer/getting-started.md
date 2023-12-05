@@ -2,10 +2,10 @@
 title: Guida introduttiva ad AEM headless as a Cloud Service
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3093'
-ht-degree: 94%
+source-wordcount: '3057'
+ht-degree: 93%
 
 ---
 
@@ -82,7 +82,7 @@ I Frammenti di contenuto contengono contenuto strutturato e possono essere conse
 
 Per modificare il contenuto senza problemi, AEM offre due solide API.
 
-* L’API GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
+* L’API di GraphQL consente di creare richieste per accedere e distribuire frammenti di contenuto.
 * L’API REST di Assets consente di creare e modificare frammenti di contenuto (e altre risorse).
 
 Scopri queste API e come utilizzarle in una sezione successiva del percorso AEM headless. Oppure, vedi [risorse aggiuntive](#additional-resources) per ulteriore documentazione, consulta la sezione seguente.
@@ -181,7 +181,7 @@ Creare un piano su quali contenuti devono essere tradotti.
 
 Procedere con sicurezza sul flusso di lavoro di aggiornamento dei contenuti. Quale processo di approvazione deve supportare il sistema? È possibile utilizzare i flussi di lavoro AEM per automatizzare questo processo?
 
-Tieni presente che la [gerarchia dei contenuti](#content-hierarchy) può essere sfruttata per semplificare la traduzione.
+Il tuo [gerarchia dei contenuti](#content-hierarchy) può essere utilizzato per semplificare la traduzione.
 
 Consulta la sezione [risorse aggiuntive](#additional-resources) per ulteriore documentazione sui flussi di lavoro AEM e gli strumenti di traduzione, compresi i collegamenti al Percorso di traduzione headless di AEM.
 

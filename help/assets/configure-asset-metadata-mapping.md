@@ -2,10 +2,10 @@
 title: Configurare la mappatura dei metadati delle risorse tra Workfront e Experience Manager Assets
 description: Mappa i campi di metadati delle risorse tra le applicazioni Adobe Workfront e Experience Manager as a Cloud Service. Come risultato della mappatura dei campi di metadati, quando invii una risorsa da Workfront a Experience Manager Assets, puoi visualizzare i metadati della risorsa mappata in Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +62,7 @@ Per inviare l&#39;immagine da Workfront a Experience Manager Assets:
 
 1. Clic **[!UICONTROL Invia a]**, quindi scegli il nome dell’integrazione Experience Manager Assets Essentials.
 
-   ![Invia ad AEM](assets/send-to-aem.png)
+   ![Invia all’AEM](assets/send-to-aem.png)
 
 1. Scegli la cartella di destinazione della risorsa, quindi fai clic su **[!UICONTROL Seleziona cartella]**.
 
@@ -95,7 +95,7 @@ Per configurare la mappatura dei metadati utilizzando un nuovo modulo metadati i
 
       `wm` fa riferimento al nome dello spazio dei nomi e `projectName` fa riferimento al titolo della proprietà. Utilizza il `namespace:propertyTitle` per definire le mappature dei campi di metadati.
 
-      ![Invia ad AEM](assets/metadata-schema-mapping.png)
+      ![Invia all’AEM](assets/metadata-schema-mapping.png)
 
 1. Fai clic su **[!UICONTROL Genera modulo]** e trascinare il **[!UICONTROL Testo su riga singola]** al modulo. Fai clic sul componente nel modulo. In **[!UICONTROL Genera modulo]** scheda:
 

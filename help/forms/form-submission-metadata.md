@@ -4,9 +4,9 @@ description: Scopri come aggiungere informazioni ai metadati di un modulo inviat
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ Prendi in considerazione un altro esempio di modulo che acquisisce l’ID e-mail
 Per aggiungere un elemento nei metadati, effettua le seguenti operazioni:
 
 1. Apri il modulo adattivo in modalità di modifica.\
-   Per aprire il modulo in modalità di modifica, in Gestione moduli seleziona il modulo e tocca **[!UICONTROL Apri]**.
-1. In modalità di modifica, seleziona un componente e tocca ![a livello di campo](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**, quindi tocca ![cmppr](assets/configure-icon.svg).
+   Per aprire il modulo in modalità di modifica, in Gestione moduli selezionare il modulo e selezionare **[!UICONTROL Apri]**.
+1. In modalità di modifica, seleziona un componente, quindi fai clic su ![a livello di campo](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]** e quindi selezionare ![cmppr](assets/configure-icon.svg).
 1. Nella barra laterale, fai clic su **[!DNL Metadata]**.
 1. Nella sezione Metadati, fai clic su **[!DNL Add]**.
 1. Utilizzare il campo Valore della scheda Metadati per aggiungere script. Gli script aggiunti raccolgono i dati dagli elementi del modulo e calcolano i valori che vengono trasmessi ai metadati.

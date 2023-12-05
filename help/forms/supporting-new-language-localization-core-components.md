@@ -2,9 +2,9 @@
 title: Come si aggiunge il supporto per nuove lingue a un modulo adattivo basato su componenti core?
 description: Scopri come aggiungere nuove lingue per un modulo adattivo.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1333'
 ht-degree: 2%
 
 ---
@@ -74,7 +74,7 @@ Per aggiungere il supporto per una nuova lingua, eseguire la procedura seguente:
    git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/
    ```
 
-   Sostituisci `<my-org>` e `<my-program>` nell’URL precedente con il nome dell’organizzazione e del programma. Per istruzioni dettagliate su come ottenere il nome dell’organizzazione, il nome del programma o il percorso completo dell’archivio Git e le credenziali necessarie per clonare l’archivio, consulta [Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) articolo.
+   Sostituisci `<my-org>` e `<my-program>` nell’URL precedente con il nome dell’organizzazione e del programma. Per istruzioni dettagliate su come ottenere il nome dell’organizzazione, il nome del programma o il percorso completo dell’archivio Git e le credenziali necessarie per clonarlo, consulta [Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) articolo.
 
    Dopo aver completato correttamente il comando, una cartella `<my-program>` viene creato. Contiene il contenuto clonato dall’archivio Git. Nel resto dell’articolo, la cartella viene indicata come, `[AEM Forms as a Cloud Service Git repository]`.
 

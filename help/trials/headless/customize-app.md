@@ -4,10 +4,10 @@ description: Utilizza un’app React di esempio per scoprire come personalizzare
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 87%
+source-wordcount: '1017'
+ht-degree: 85%
 
 ---
 
@@ -69,7 +69,7 @@ Ora che hai modificato un titolo nell’app, prova a cambiare un’immagine.
 
 1. Dall’anteprima, torna alla scheda del browser dell’editor frammenti di contenuto.
 
-1. È necessario tornare alla posizione corretta nell’editor frammenti di contenuto. Le breadcrumb in alto a sinistra nell’editor mostrano dove ti trovi nella gerarchia dei contenuti. Tocca o fai clic su **Mtn Biker in Canyon** nelle breadcrumb per tornare a tale pagina.
+1. È necessario tornare alla posizione corretta nell’editor frammenti di contenuto. Le breadcrumb in alto a sinistra nell’editor mostrano dove ti trovi nella gerarchia dei contenuti. Seleziona **Mtn Biker a Canyon** nelle breadcrumb per tornare a quella pagina.
 
    ![Breadcrumb](assets/do-not-localize/swap-image-2.png)
 

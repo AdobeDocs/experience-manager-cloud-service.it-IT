@@ -1,13 +1,13 @@
 ---
 title: Gestire i predefiniti visualizzatore
-description: Scopri come creare e gestire i predefiniti visualizzatore in Dynamic Media.
+description: Scopri come creare e gestire i predefiniti visualizzatore in Dynamic Medie.
 contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4384'
+source-wordcount: '4326'
 ht-degree: 8%
 
 ---
@@ -25,7 +25,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 -->
 
-Consulta anche [Guida di riferimento per i visualizzatori di Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+Consulta anche [Guida di riferimento per i visualizzatori di Dynamic Medie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 Questa sezione descrive come creare, modificare e gestire i predefiniti visualizzatore. Puoi applicare un predefinito visualizzatore a una risorsa in qualsiasi momento in cui la visualizzi in anteprima. Consulta [Applica predefiniti visualizzatore](#applying-a-viewer-preset-to-an-asset).
 
@@ -51,9 +51,9 @@ Puoi aggiungere, modificare, eliminare, pubblicare, annullare la pubblicazione e
 
 ### Supporto del visualizzatore per le pagine web progettate per rispondere {#viewer-support-for-responsive-designed-web-pages}
 
-Pagine web diverse hanno esigenze diverse. Talvolta, ad esempio, può essere utile creare una pagina Web contenente un collegamento che consenta di aprire il Visualizzatore di HTML5 in una finestra del browser separata. In altri casi, è necessario incorporare il visualizzatore HTML5 direttamente nella pagina di hosting. In quest’ultimo caso, la pagina web ha un layout statico. Oppure è &quot;reattivo&quot; e viene visualizzato in modo diverso su dispositivi diversi o per diverse dimensioni della finestra del browser. Per soddisfare queste esigenze, tutti i visualizzatori HTML5 predefiniti e forniti con Dynamic Media supportano sia le pagine web statiche che quelle reattive.
+Pagine web diverse hanno esigenze diverse. Talvolta, ad esempio, può essere utile creare una pagina Web contenente un collegamento che consenta di aprire il Visualizzatore di HTML5 in una finestra del browser separata. In altri casi, è necessario incorporare il visualizzatore HTML5 direttamente nella pagina di hosting. In quest’ultimo caso, la pagina web ha un layout statico. Oppure è &quot;reattivo&quot; e viene visualizzato in modo diverso su dispositivi diversi o per diverse dimensioni della finestra del browser. Per soddisfare queste esigenze, tutti i visualizzatori HTML5 predefiniti e forniti con Dynamic Medie supportano sia le pagine web statiche che quelle reattive.
 
-Consulta [Libreria immagini statiche reattive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) nel *Guida all’API per il server e il rendering immagini di Dynamic Media* per ulteriori informazioni su come incorporare i visualizzatori reattivi nelle pagine web.
+Consulta [Libreria immagini statiche reattive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) nel *Guida all’API per il server e il rendering immagini di Dynamic Medie* per ulteriori informazioni su come incorporare i visualizzatori reattivi nelle pagine web.
 
 >[!NOTE]
 >
@@ -62,14 +62,13 @@ Consulta [Libreria immagini statiche reattive](https://experienceleague.adobe.co
 
 ### Compatibilità del sistema con il predefinito per visualizzatori  {#viewer-preset-system-compatibility}
 
-Tutti i predefiniti per visualizzatori forniti con Dynamic Media sono completamente compatibili con i seguenti sistemi:
+Tutti i predefiniti per visualizzatori forniti con Dynamic Medie sono completamente compatibili con i seguenti sistemi:
 
 * Desktop
 * Apple iPhone
 * Apple iPad
 * Smartphone Android™
 * Android™ Tablet
-
 <!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### Tipi di contenuti multimediali avanzati per predefiniti visualizzatore {#rich-media-types-for-viewer-presets}
@@ -151,7 +150,7 @@ Durante la creazione dei predefiniti visualizzatore, gli amministratori possono 
 
 ### Elenco dei predefiniti per visualizzatori {#list-of-out-of-the-box-viewer-presets}
 
-La tabella seguente identifica tutti i predefiniti visualizzatore predefiniti che sono forniti con Dynamic Media.
+La tabella seguente identifica tutti i predefiniti visualizzatore predefiniti che sono forniti con Dynamic Medie.
 
 Vedi anche [Demo live](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
@@ -161,7 +160,7 @@ Consulta le &quot;Note sulla versione dei visualizzatori&quot; nel sommario dell
 
 >[!NOTE]
 >
->Tutti i predefiniti visualizzatore in Dynamic Media sono attivati (attivati), ma è necessario pubblicarli.
+>Tutti i predefiniti visualizzatore in Dynamic Medie sono attivati (attivati), ma è necessario pubblicarli.
 >Consulta [Pubblica predefiniti visualizzatore](#publishing-viewer-presets).
 >
 >Tutti i nuovi predefiniti visualizzatore creati e aggiunti devono essere attivati *e *pubblicati.
@@ -331,13 +330,13 @@ La tabella seguente identifica i movimenti del visualizzatore mobile supportati 
    <td><p>Pannelli</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Tocca</strong></p> </td>
+   <td><p><strong>Seleziona</strong></p> </td>
    <td><p>Mostra la finestra a comparsa</p> </td>
    <td><p>Mostra o nasconde l'interfaccia utente</p> </td>
    <td><p>Mostra o nasconde l'interfaccia utente</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Doppio tocco</strong></p> </td>
+   <td><p><strong>Doppia selezione</strong></p> </td>
    <td><p>Non applicabile</p> </td>
    <td><p>Ingrandisce o ripristina</p> </td>
    <td><p>Ingrandisce o ripristina</p> </td>
@@ -375,7 +374,7 @@ L’Experience Manager mostra un’ampia varietà di predefiniti visualizzatore 
 
 **Per aumentare il numero di predefiniti visualizzatore visualizzati:**
 
-1. Passa a CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Passa a CRXDE Liti ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Passa al nodo dell’elenco di predefiniti visualizzatore all’indirizzo `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
 
    ![chlimage_1-221](/help/assets/dynamic-media/assets/chlimage_1-221.png)
@@ -385,14 +384,14 @@ L’Experience Manager mostra un’ampia varietà di predefiniti visualizzatore 
 
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
-1. Nella proprietà limit, imposta il numero desiderato, ad esempio `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. Nella proprietà limit, modifica il numero impostando il numero desiderato, ad esempio: `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Seleziona **[!UICONTROL Salva tutto]**.
 
 ## Creare predefiniti visualizzatore {#creating-a-new-viewer-preset}
 
 La creazione di predefiniti visualizzatore consente di applicare varie impostazioni per visualizzare e interagire con le risorse. Tuttavia, non è necessario creare predefiniti visualizzatore. Se lo desideri, puoi utilizzare i predefiniti predefiniti visualizzatori già disponibili in Experience Manager Assets.
 
-Se scegli di creare un predefinito visualizzatore, dopo averlo salvato lo stato del visualizzatore viene attivato automaticamente (impostato su **[!UICONTROL On]**) nella pagina Predefiniti visualizzatore. Questo stato indica che è visibile nel componente Dynamic Media e nel componente File multimediali interattivi e ogni volta che visualizzi l’anteprima di un’immagine o di un video.
+Se scegli di creare un predefinito visualizzatore, dopo averlo salvato lo stato del visualizzatore viene attivato automaticamente (impostato su **[!UICONTROL On]**) nella pagina Predefiniti visualizzatore. Questo stato indica che è visibile nel componente Dynamic Medie e nel componente File multimediali interattivi e ogni volta che visualizzi l’anteprima di un’immagine o di un video.
 
 Alcuni predefiniti visualizzatore hanno impostazioni esclusive che possono influenzare l’uso e il comportamento complessivo del visualizzatore. A seconda del predefinito visualizzatore creato, è necessario tenere presenti queste considerazioni speciali.
 
@@ -420,15 +419,16 @@ Consulta [Considerazioni speciali per la creazione di un predefinito per visuali
 
    * In **[!UICONTROL Tipo selezionato]** dal menu a discesa, selezionare un componente di cui si desidera personalizzare il design visivo. In alternativa, puoi selezionare qualsiasi elemento visivo nel visualizzatore per configurarlo.
 
-      L’editor visivo consente di vedere l’effetto di una determinata proprietà su uno stile. Imposta o regola qualsiasi proprietà per vedere immediatamente quale effetto ha sul visualizzatore utilizzando l&#39;esempio a sinistra dell&#39;editor.
+     L’editor visivo consente di vedere l’effetto di una determinata proprietà su uno stile. Imposta o regola qualsiasi proprietà per vedere immediatamente quale effetto ha sul visualizzatore utilizzando l&#39;esempio a sinistra dell&#39;editor.
 
-      Le proprietà di stile CSS per ciascun tipo di predefinito visualizzatore sono descritte nella sezione &quot;Personalizzazione *`<viewer name>`* Visualizzatore&quot; nella sezione [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Ad esempio, se crei un predefinito visualizzatore del tipo `Mixed_Media`, vedi [Personalizzare il visualizzatore di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) per un elenco e una descrizione di ciascuna proprietà.
+     Le proprietà di stile CSS per ciascun tipo di predefinito visualizzatore sono descritte nella sezione &quot;Personalizzazione *`<viewer name>`* Visualizzatore&quot; nella sezione [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Ad esempio, se crei un predefinito visualizzatore del tipo `Mixed_Media`, vedi [Personalizzare il visualizzatore di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) per un elenco e una descrizione di ciascuna proprietà.
 
    * Se hai definito le impostazioni stile in un file CSS separato, puoi caricarlo in Experience Manager Assets. Per trovare il file CSS caricato e associarlo al predefinito visualizzatore, seleziona **[!UICONTROL Importa CSS]** sotto **[!UICONTROL Tipo selezionato]** menu a discesa (se necessario, scorri verso l’alto l’editor visivo per visualizzarlo).
 
-      Quando importi un file CSS, l’editor visivo controlla se il CSS utilizza i marcatori visualizzatore corretti. Ad esempio, se crei un visualizzatore Zoom, tutte le regole CSS importate devono essere definite utilizzando il nome della relativa classe di visualizzatore `.s7mixedmediaviewer` definito su un elemento visualizzatore principale.
+     Quando importi un file CSS, l’editor visivo controlla se il CSS utilizza i marcatori visualizzatore corretti. Ad esempio, se crei un visualizzatore Zoom, tutte le regole CSS importate devono essere definite utilizzando il nome della relativa classe di visualizzatore `.s7mixedmediaviewer` definito su un elemento visualizzatore principale.
 
-      Puoi importare file CSS arbitrari e fatti a mano, purché definiscano correttamente i marcatori CSS per un determinato visualizzatore. (I marcatori CSS sono descritti in &quot;Personalizzazione *&lt;viewer name=&quot;&quot;>* Visualizzatore&quot; nella sezione [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Ad esempio, per informazioni sui marcatori CSS per il Visualizzatore zoom, consultate [Personalizzazione del visualizzatore zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) È possibile, tuttavia, che l’editor visivo non comprenda alcuni valori CSS. In questi casi, l’editor visivo tenta di ignorare gli errori in modo che il CSS possa ancora funzionare.
+     Puoi importare file CSS arbitrari e fatti a mano, purché definiscano correttamente i marcatori CSS per un determinato visualizzatore. (I marcatori CSS sono descritti in &quot;Personalizzazione *&lt;viewer name=&quot;&quot;>* Visualizzatore&quot; nella sezione [Guida di riferimento visualizzatori](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Ad esempio, per informazioni sui marcatori CSS per il Visualizzatore zoom, consultate [Personalizzazione del visualizzatore zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) È possibile, tuttavia, che l’editor visivo non comprenda alcuni valori CSS. In questi casi, l’editor visivo tenta di ignorare gli errori in modo che il CSS possa ancora funzionare.
+
    >[!NOTE]
    >
    >Se preferisci modificare il CSS direttamente nel relativo modulo non elaborato, seleziona **[!UICONTROL Mostra/Nascondi CSS]** sotto il menu a discesa Tipo selezionato (se necessario, scorri l’editor visivo per visualizzarlo).
@@ -514,7 +514,7 @@ Supponiamo di avere un segmento video di 30 secondi. In totale, sono presenti no
 |---|---|---|
 | 1 | 0-10 | 1, 2, 3, 4 |
 | 2 | 10-20 | 4, 5, 6, 7 |
-| 3 | 20-30 | 6, 7, 8, 9 |
+| 3 | 20 — 30 | 6, 7, 8, 9 |
 
 Il sottosegmento video 3 non si estende oltre le miniature ad esso assegnate. Inoltre, le miniature 4, 6 e 7 sono visibili nel pannello con una lunghezza doppia rispetto alle altre miniature.
 
@@ -533,9 +533,9 @@ Utilizzando l’esempio riportato nella tabella precedente, 30 secondi/3 sottose
 
 Durante la creazione dei predefiniti visualizzatore di banner carosello, è possibile accedere come segue per modificare lo stile dei punti attivi:
 
-|  | **Descrizione** | **Azioni** |
+| | **Descrizione** | **Azioni** |
 |---|---|---|
-| **[!UICONTROL Icona punto attivo]** | Modifica l&#39;icona utilizzata per il punto attivo | Per modificare l&#39;immagine dell&#39;icona punto attivo, nella **[!UICONTROL Aspetto]** scheda, in **[!UICONTROL Componente selezionato]**, seleziona **[!UICONTROL ImageMapEffect]**. Seleziona **[!UICONTROL Sfondo]** alla voce **[!UICONTROL Icona]** e, nel campo **[!UICONTROL Immagine]**, individua l’immagine di sfondo desiderata. |
+| **[!UICONTROL Icona punto attivo]** | Modifica l&#39;icona utilizzata per il punto attivo | Per modificare l&#39;immagine dell&#39;icona punto attivo, nella **[!UICONTROL Aspetto]** scheda, in **[!UICONTROL Componente selezionato]**, seleziona **[!UICONTROL ImageMapEffect]**. Sotto **[!UICONTROL Icona]**, seleziona **[!UICONTROL Sfondo]** e nella **[!UICONTROL Immagine]** campo passare all&#39;immagine di sfondo desiderata. |
 
 ## Attivare o disattivare i predefiniti visualizzatore {#activating-or-deactivating-viewer-presets}
 
@@ -550,9 +550,9 @@ I predefiniti visualizzatore disponibili nell’interfaccia utente dipendono da 
 
 ## Pubblica predefiniti visualizzatore {#publishing-viewer-presets}
 
-L’attivazione o l’attivazione di un predefinito visualizzatore indica che è visibile nel componente Dynamic Media, nel componente File multimediali interattivi e ogni volta che visualizzi una risorsa.
+L’attivazione o l’attivazione di un predefinito visualizzatore indica che è visibile nel componente Dynamic Medie, nel componente File multimediali interattivi e ogni volta che visualizzi una risorsa.
 
-Tuttavia, per *consegnare* una risorsa con un predefinito visualizzatore, deve essere pubblicato anche il predefinito visualizzatore. Tutti i predefiniti visualizzatore devono essere attivati *e* pubblicato per ottenere l’URL o il codice di incorporamento di una risorsa. Attiva e pubblica tutti i predefiniti visualizzatore forniti con Dynamic Media. I predefiniti visualizzatore personalizzati che crei e aggiungi vengono attivati automaticamente, ma devono anche essere pubblicati.
+Tuttavia, per *consegnare* una risorsa con un predefinito visualizzatore, deve essere pubblicato anche il predefinito visualizzatore. Tutti i predefiniti visualizzatore devono essere attivati *e* pubblicato per ottenere l’URL o il codice di incorporamento di una risorsa. Attiva e pubblica tutti i predefiniti visualizzatore forniti con Dynamic Medie. I predefiniti visualizzatore personalizzati che crei e aggiungi vengono attivati automaticamente, ma devono anche essere pubblicati.
 
 Consulta [Attivazione o disattivazione dei predefiniti per visualizzatori](#activating-or-deactivating-viewer-presets).
 
@@ -589,7 +589,7 @@ Modifica di qualsiasi *predefiniti visualizzatori predefiniti* non è uno scenar
 
 ## Elimina predefiniti visualizzatore personalizzati {#deleting-custom-viewer-presets}
 
-Puoi eliminare i predefiniti visualizzatore che hai creato e aggiunto a Dynamic Media.
+Puoi eliminare i predefiniti visualizzatore che hai creato e aggiunto a Dynamic Medie.
 
 **Per eliminare i predefiniti visualizzatore personalizzati:**
 
@@ -617,4 +617,4 @@ Se hai già pubblicato sia la risorsa che il visualizzatore selezionato, dopo av
 
 Per ottenere gli URL dei predefiniti per visualizzatore, consulta [Collegare gli URL all’applicazione web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Vedi anche [Incorporare il Visualizzatore video in una pagina Web](/help/assets/dynamic-media/embed-code.md).
 
-Se utilizzi Experience Manager come WCM, puoi aggiungere risorse utilizzando i predefiniti visualizzatore direttamente nella pagina. Consulta [Aggiungere risorse Dynamic Media alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Se utilizzi Experience Manager come WCM, puoi aggiungere risorse utilizzando i predefiniti visualizzatore direttamente nella pagina. Consulta [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).

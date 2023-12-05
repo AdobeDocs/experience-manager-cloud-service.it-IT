@@ -2,10 +2,10 @@
 title: Partecipazione ai flussi di lavoro
 description: In genere i flussi di lavoro includono passaggi che richiedono di eseguire un’attività su una pagina o una risorsa.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -33,7 +33,7 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
   ![Notifiche nella casella in entrata](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * Quando utilizzi l’editor pagina, la barra di stato mostra quanto segue:
-   * Il nome dei flussi di lavoro applicati alla pagina, ad esempio Richiedi attivazione.
+   * Il nome dei flussi di lavoro applicati alla pagina, ad esempio Richiesta di attivazione.
    * Qualsiasi azione disponibile per l’utente nella fase corrente del flusso di lavoro, per esempio: Completa, Delega, Visualizza dettagli.
    * Il numero di flussi di lavoro a cui è soggetta la pagina. Operazioni disponibili:
       * utilizzare la freccia sinistra/destra per navigare tra le informazioni di stato dei vari flussi di lavoro.

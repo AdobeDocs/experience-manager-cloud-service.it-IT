@@ -2,10 +2,10 @@
 title: Test dell’audit dell’esperienza
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 90%
+source-wordcount: '585'
+ht-degree: 82%
 
 ---
 
@@ -35,7 +35,7 @@ L’audit dell’esperienza è basato su Google Lighthouse, uno strumento open s
 
 >[!INFO]
 >
->A partire dal 31 agosto 2023, l’audit dell’esperienza passerà alla visualizzazione dei risultati specifici della piattaforma mobile. Tieni presente che le metriche delle prestazioni mobili in genere si registrano a un livello inferiore rispetto a quelle del desktop, pertanto in seguito a questa modifica dovresti prevedere un cambiamento nelle prestazioni riportate.
+>A partire dal 31 agosto 2023, l’audit dell’esperienza passerà alla visualizzazione dei risultati specifici della piattaforma mobile. Le metriche delle prestazioni mobili in genere si registrano a un livello inferiore rispetto a quelle del desktop, pertanto in seguito a questo cambiamento è necessario prevedere un cambiamento nelle prestazioni riportate.
 
 >[!TIP]
 >
@@ -58,11 +58,11 @@ Il punteggio a livello aggregato considera il punteggio medio delle pagine inclu
 
 La metrica relativa al cambiamento può presentare uno dei seguenti valori.
 
-* **Valore positivo**: rispetto all’ultima esecuzione della pipeline di produzione, nel test selezionato le pagine sono migliorate.
+* **Valore positivo** : rispetto all’ultima esecuzione della pipeline di produzione, nel test selezionato le pagine sono migliorate.
 
-* **Valore negativo**: rispetto all’ultima esecuzione della pipeline di produzione, nel test selezionato le pagine hanno subito una regressione.
+* **Valore negativo** - rispetto all’ultima esecuzione della pipeline di produzione, nel test selezionato le pagine hanno subito una regressione.
 
-* **Nessun cambiamento**: rispetto all’ultima esecuzione della pipeline di produzione, le pagine hanno ottenuto lo stesso punteggio.
+* **Nessuna modifica** - Le pagine hanno ottenuto lo stesso punteggio dall’ultima esecuzione della pipeline di produzione.
 
 * **N/D**: non è disponibile alcun punteggio precedente con cui confrontare il dato.
 

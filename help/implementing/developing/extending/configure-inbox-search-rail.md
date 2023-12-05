@@ -2,9 +2,9 @@
 title: Come si configurano i filtri di ricerca per la casella in entrata?
 description: Scopri come configurare i filtri di ricerca per gli elementi della casella in entrata.
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1010'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Di seguito sono riportati i tipi di predicato disponibili per Posta in arrivo:
 
 1. Accedi a **[!UICONTROL Strumenti]**, **[!UICONTROL Generale]**, **[!UICONTROL Cerca in Forms]**.
 
-1. Seleziona la **[!UICONTROL Barra di ricerca casella in entrata]** configurazione e tocco **[!UICONTROL Modifica]**.
+1. Seleziona la **[!UICONTROL Barra di ricerca casella in entrata]** configurazione e selezione **[!UICONTROL Modifica]**.
 1. Incorporare le modifiche alla configurazione del predicato utilizzando **[!UICONTROL Modifica Forms di ricerca]**.
 1. Seleziona **[!UICONTROL Fine]** per salvare la configurazione.
 
@@ -43,7 +43,7 @@ Per eliminare una configurazione personalizzata:
 
 1. Accedi a **[!UICONTROL Strumenti]**, **[!UICONTROL Generale]**, **[!UICONTROL Cerca in Forms]**.
 
-1. Seleziona la **[!UICONTROL Barra di ricerca casella in entrata]** configurazione e tocco **[!UICONTROL Elimina]**.
+1. Seleziona la **[!UICONTROL Barra di ricerca casella in entrata]** configurazione e selezione **[!UICONTROL Elimina]**.
 
 ## Configura predicato intervallo {#range-predicate}
 
@@ -52,10 +52,10 @@ Per eliminare una configurazione personalizzata:
 Per configurare un predicato Range:
 
 1. Apri [modulo per la configurazione](#creating-opening-customized-configuration).
-1. Tocca il **[!UICONTROL Seleziona predicato]** Tab e trascina **[!UICONTROL Predicato intervallo]** al modulo.
+1. Seleziona la **[!UICONTROL Seleziona predicato]** Tab e trascina **[!UICONTROL Predicato intervallo]** al modulo.
 1. In **[!UICONTROL Impostazioni]** , selezionare il nome della colonna Posta in arrivo su cui basare la ricerca, da **[!UICONTROL Nome colonna]** campo.
 1. Specifica l’etichetta del filtro nella **[!UICONTROL Etichetta filtro]** campo. Seleziona la **[!UICONTROL Abilita valori decimali]** per accettare valori decimali per i numeri durante la definizione dell&#39;intervallo.
-1. Specifica una descrizione facoltativa per la configurazione e tocca **[!UICONTROL Fine]** per salvarlo.
+1. Specifica una descrizione facoltativa per la configurazione e seleziona **[!UICONTROL Fine]** per salvarlo.
 
 Le modifiche alla configurazione si riflettono all’apertura della pagina Filtri. L’etichetta del filtro specificata nel passaggio 4 viene visualizzata come etichetta con un’opzione per definire i valori massimo e minimo. Quando si preme Invio, [!DNL Experience Manager] applica i criteri di ricerca al nome della colonna specificato nel passaggio 3 e restituisce gli elementi della casella in entrata.
 
@@ -70,10 +70,10 @@ Filtrare gli elementi della casella in entrata per cercare una stringa di testo 
 Per configurare un predicato di testo:
 
 1. Apri [modulo per la configurazione](#creating-opening-customized-configuration).
-1. Tocca il **[!UICONTROL Seleziona predicato]** Tab e trascina **[!UICONTROL Predicato testo]** al modulo.
+1. Seleziona la **[!UICONTROL Seleziona predicato]** Tab e trascina **[!UICONTROL Predicato testo]** al modulo.
 1. In **[!UICONTROL Impostazioni]** , selezionare il nome della colonna Posta in arrivo su cui basare la ricerca, da **[!UICONTROL Nome colonna]** campo.
 1. Specificare il testo visualizzato nella casella di testo Cerca come testo segnaposto in **[!UICONTROL Segnaposto casella di testo di ricerca]** campo.
-1. Specifica una descrizione facoltativa per la configurazione e tocca **[!UICONTROL Fine]** per salvarlo.
+1. Specifica una descrizione facoltativa per la configurazione e seleziona **[!UICONTROL Fine]** per salvarlo.
 
 Le modifiche alla configurazione si riflettono all’apertura della pagina Filtri. Quando si preme Invio, [!DNL Experience Manager] applica il testo di ricerca specificato nel passaggio 4 al nome di colonna specificato nel passaggio 3 e restituisce gli elementi della casella in entrata.
 
@@ -84,11 +84,11 @@ Le modifiche alla configurazione si riflettono all’apertura della pagina Filtr
 Per configurare un predicato di intervallo di date:
 
 1. Apri [modulo per la configurazione](#creating-opening-customized-configuration).
-1. Tocca il **[!UICONTROL Seleziona predicato]** Tab e trascina **[!UICONTROL Predicato intervallo di date]** al modulo.
+1. Seleziona la **[!UICONTROL Seleziona predicato]** Tab e trascina **[!UICONTROL Predicato intervallo di date]** al modulo.
 1. In **[!UICONTROL Impostazioni]** , selezionare il nome della colonna Posta in arrivo su cui basare la ricerca, da **[!UICONTROL Nome colonna]** campo.
 1. Specifica l’etichetta per il filtro dell’intervallo di date nella **[!UICONTROL Etichetta filtro]** campo.
 1. Specifica le etichette di data di inizio e di fine per il filtro.
-1. Specifica una descrizione facoltativa per la configurazione e tocca **[!UICONTROL Fine]** per salvarlo.
+1. Specifica una descrizione facoltativa per la configurazione e seleziona **[!UICONTROL Fine]** per salvarlo.
 
 Le modifiche alla configurazione si riflettono all’apertura della pagina Filtri. L’etichetta di filtro specificata nel passaggio 4 viene visualizzata come etichetta per il filtro dell’intervallo di date, insieme alle etichette della data di inizio e di fine specificate nel passaggio 5. [!DNL Experience Manager] applica i criteri di ricerca al nome della colonna specificato nel passaggio 3 e restituisce gli elementi della casella in entrata.
 
@@ -99,12 +99,12 @@ Le modifiche alla configurazione si riflettono all’apertura della pagina Filtr
 Per configurare un predicato Opzioni colonna personalizzato:
 
 1. Apri [modulo per la configurazione](#creating-opening-customized-configuration).
-1. Tocca il **[!UICONTROL Seleziona predicato]** Tab e trascina **[!UICONTROL Predicato opzioni colonna personalizzate]** al modulo.
+1. Seleziona la **[!UICONTROL Seleziona predicato]** Tab e trascina **[!UICONTROL Predicato opzioni colonna personalizzate]** al modulo.
 1. In **[!UICONTROL Impostazioni]** , selezionare il nome della colonna Posta in arrivo su cui basare la ricerca, da **[!UICONTROL Nome colonna]** campo.
 1. Specifica l’etichetta per il filtro delle opzioni di colonna personalizzato nella sezione **[!UICONTROL Etichetta filtro]** campo.
 1. Seleziona la **[!UICONTROL Selezione singola]** per abilitare la selezione di una sola opzione durante l’applicazione di un filtro a una colonna della casella in entrata.
 1. In **[!UICONTROL Aggiungi opzioni]** sezione:
-   1. Seleziona **[!UICONTROL Manuale]** per definire manualmente le opzioni di ricerca del filtro. Tocca **[!UICONTROL Aggiungi opzioni filtro]** per definire la prima opzione. Specifica l’etichetta per l’opzione colonna e il testo del valore dell’opzione da cercare. Ad esempio, se desideri cercare **Femmina** come valore in una colonna della casella in entrata, puoi specificare **F** come etichetta per l’opzione colonna e aggiungi **Femmina** come testo del valore dell’opzione. Allo stesso modo, puoi aggiungere altre opzioni di filtro.
+   1. Seleziona **[!UICONTROL Manuale]** per definire manualmente le opzioni di ricerca del filtro. Seleziona **[!UICONTROL Aggiungi opzioni filtro]** per definire la prima opzione. Specifica l’etichetta per l’opzione colonna e il testo del valore dell’opzione da cercare. Ad esempio, se desideri cercare **Femmina** come valore in una colonna della casella in entrata, puoi specificare **F** come etichetta per l’opzione colonna e aggiungi **Femmina** come testo del valore dell’opzione. Allo stesso modo, puoi aggiungere altre opzioni di filtro.
    1. Seleziona **[!UICONTROL Percorso JSON]** per definire le opzioni utilizzando un percorso file JSON. Di seguito è riportato un esempio di file JSON per definire le opzioni di filtro:
 
       ```JSON
@@ -122,7 +122,7 @@ Per configurare un predicato Opzioni colonna personalizzato:
         }
       ```
 
-   1. Seleziona **[!UICONTROL Percorso opzioni CRX]** per definire le opzioni utilizzando i percorsi dell’archivio CRX. Tocca **[!UICONTROL Aggiungi percorsi opzione]** per aggiungere più percorsi. Di seguito è riportato un esempio per definire `Male` e `Female` opzioni filtro:
+   1. Seleziona **[!UICONTROL Percorso opzioni CRX]** per definire le opzioni utilizzando i percorsi dell’archivio CRX. Seleziona **[!UICONTROL Aggiungi percorsi opzione]** per aggiungere più percorsi. Di seguito è riportato un esempio per definire `Male` e `Female` opzioni filtro:
 
       ```JSON
          <gender jcr:primaryType="sling:OrderedFolder">
@@ -137,7 +137,7 @@ Per configurare un predicato Opzioni colonna personalizzato:
                     </gender>
       ```
 
-1. Specifica una descrizione facoltativa per la configurazione e tocca **[!UICONTROL Fine]** per salvarlo.
+1. Specifica una descrizione facoltativa per la configurazione e seleziona **[!UICONTROL Fine]** per salvarlo.
 
 Le modifiche alla configurazione si riflettono all’apertura della pagina Filtri. L&#39;etichetta di filtro specificata nel passaggio 4 viene visualizzata come etichetta per il predicato dell&#39;opzione colonna personalizzata. [!DNL Experience Manager] applica i criteri di ricerca definiti nel passaggio 6 al nome di colonna specificato nel passaggio 3 e restituisce gli elementi della casella in entrata.
 

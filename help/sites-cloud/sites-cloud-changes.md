@@ -2,10 +2,10 @@
 title: Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
 description: Ulteriori informazioni sulle modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 91%
+source-wordcount: '513'
+ht-degree: 88%
 
 ---
 
@@ -41,7 +41,7 @@ L’iniziatore di tali azioni può controllarne lo stato in una nuova interfacci
 
 >[!NOTE]
 >
->L’utente del sistema non deve apportare alcuna modifica per utilizzare questa nuova funzione. Questa nota indica semplicemente un cambiamento di comportamento rispetto alle versioni on-premise precedenti di AEM.
+>L&#39;utente del sistema non deve apportare alcuna modifica per utilizzare questa nuova funzione. Questa nota indica semplicemente un cambiamento di comportamento rispetto alle versioni on-premise precedenti di AEM.
 
 ## Nuovo sito di riferimento e tutorial {#new-reference-site-and-tutorial}
 

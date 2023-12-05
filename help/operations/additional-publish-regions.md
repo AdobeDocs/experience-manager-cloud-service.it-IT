@@ -2,10 +2,10 @@
 title: Aree geografiche di pubblicazione aggiuntiva
 description: Scopri in che modo AEM as a Cloud Service supporta ulteriori aree geografiche di pubblicazione aggiuntiva per una maggiore disponibilità e una latenza ridotta.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 80%
+source-wordcount: '638'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ Le organizzazioni possono concedere licenze fino a tre aree geografiche di pubbl
 
 >[!NOTE]
 >
->Questa funzione è attualmente disponibile solo per AEM Sites. Inoltre, non può essere applicata a programmi sandbox. Tieni anche presente che per ulteriori funzioni relative alle aree geografiche di pubblicazione aggiuntiva è necessario aggiornare il programma alla versione AEM 12142 o successiva.
+>Questa funzione è attualmente disponibile solo per AEM Sites. Inoltre, non può essere applicata a programmi sandbox. Inoltre, per ulteriori funzioni relative alle aree di pubblicazione è necessario aggiornare il programma alla versione AEM 12142 o successiva.
 
 ## Casi d’uso {#use-cases}
 

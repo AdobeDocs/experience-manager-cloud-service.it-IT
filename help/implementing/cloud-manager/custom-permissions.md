@@ -2,9 +2,9 @@
 title: Autorizzazioni personalizzate
 description: Scopri come utilizzare le autorizzazioni personalizzate per creare profili di autorizzazioni personalizzati con autorizzazioni configurabili per limitare l’accesso a programmi, pipeline e ambienti per gli utenti di Cloud Manager.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1525'
 ht-degree: 38%
 
 ---
@@ -40,7 +40,7 @@ Per creare e utilizzare autorizzazioni personalizzate, è necessario seguire tre
 1. [Assegna autorizzazioni personalizzate al profilo di prodotto.](#assign-permissions)
 1. [Assegna utenti al profilo di prodotto.](#assign-users)
 
-Questa sezione descrive questi passaggi. Durante la creazione delle autorizzazioni personalizzate, potrebbe essere utile consultare le sezioni [Termini](#terms) e [Autorizzazioni configurabili](#configurable-permissions).
+Questa sezione descrive questi passaggi. Può essere utile vedere [Termini](#terms) e [Autorizzazioni configurabili](#configurable-permissions) quando si creano autorizzazioni personalizzate.
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ Per creare profili personalizzati sono disponibili le seguenti autorizzazioni.
 | Gestione variabili di ambiente | Consenti agli utenti di creare, modificare o eliminare configurazioni di ambiente |
 | Creazione ripristino ambiente | Consenti agli utenti di creare il ripristino dell’ambiente |
 | Ripristino rapido dell’ambiente di sviluppo | Consenti agli utenti di ripristinare l&#39;ambiente di sviluppo rapido |
-| Gestione copia contenuto | Consenti agli utenti di gestire le operazioni di copia dei contenuti |
+| Gestione della copia dei contenuti | Consenti agli utenti di gestire le operazioni di copia dei contenuti |
 | Crea pipeline | Consenti agli utenti di creare pipeline |
 | Elimina pipeline | Consenti agli utenti di eliminare le pipeline |
 | Modifica pipeline | Consenti agli utenti di modificare le pipeline |
@@ -137,10 +137,10 @@ Per creare profili personalizzati sono disponibili le seguenti autorizzazioni.
 | Sostituzione/Rifiuto degli errori importanti della metrica | Consenti agli utenti di ignorare/rifiutare errori importanti di metrica |
 | Pianificazione delle distribuzioni in produzione | Consenti agli utenti di pianificare un passaggio di distribuzione in produzione |
 | Accesso alle informazioni dell’archivio | Consenti agli utenti di accedere alle informazioni dell’archivio e generare la password di accesso |
-| Creazione archivio | Consenti agli utenti di creare archivi Git |
-| Eliminazione archivio | Consenti agli utenti di eliminare gli archivi Git |
-| Modifica archivio | Consenti agli utenti di modificare gli archivi Git |
-| Genera codice archivio | Consenti agli utenti di generare progetti da Archetipo |
+| Creazione di un archivio | Consenti agli utenti di creare archivi Git |
+| Eliminazione di un archivio | Consenti agli utenti di eliminare gli archivi Git |
+| Modifica di un archivio | Consenti agli utenti di modificare gli archivi Git |
+| Generazione del codice di un archivio | Consenti agli utenti di generare progetti da Archetipo |
 | Gestione nome dominio | Consenti agli utenti di creare, modificare o eliminare i nomi di dominio |
 | Gestione Inserisce nell&#39;elenco Consentiti IP | Consenti agli utenti di creare, modificare o eliminare l&#39;associazione di inserire nell&#39;elenco Consentiti inserisce nell&#39;elenco Consentiti di IP e l&#39;associazione di IP |
 | Gestione dell&#39;infrastruttura di rete | Consenti agli utenti di creare, modificare o eliminare infrastrutture di rete |
@@ -166,7 +166,7 @@ I seguenti termini vengono utilizzati per creare e gestire autorizzazioni person
 |---|---|
 | Autorizzazioni predefinite | Ruoli predefiniti come **Proprietario business** e **Responsabile dell’implementazione** per gestire diverse funzioni di Cloud Manager. Per informazioni dettagliate sui ruoli predefiniti, consulta [Profili di prodotto e team as a Cloud Service AEM.](/help/onboarding/aem-cs-team-product-profiles.md) |
 | Autorizzazioni personalizzate | Le funzioni di Cloud Manager consentono agli utenti di creare profili di autorizzazione per definire ruoli che governino le funzioni supportate di Cloud Manager |
-| Profilo di prodotto | Creato nell’Admin Console per gestire le autorizzazioni configurabili applicabili agli utenti che fanno parte del profilo di autorizzazione |
+| Profilo prodotto | Creato nell’Admin Console per gestire le autorizzazioni configurabili applicabili agli utenti che fanno parte del profilo di autorizzazione |
 | Autorizzazione configurabile | Autorizzazioni di Cloud Manager che possono essere configurate nel profilo di autorizzazione |
 | Elemento di autorizzazione | Programma, ambiente o risorsa pipeline a cui è possibile applicare un’autorizzazione |
 

@@ -2,9 +2,9 @@
 title: Configurazione di ContextHub
 description: Scopri come configurare Context Hub, un framework per l’archiviazione, la manipolazione e la presentazione dei dati contestuali.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1609'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Aggiungi una modalità interfaccia utente per raggruppare i moduli ContextHub co
 1. Immetti i valori per le seguenti proprietà:
 
    * Titolo modalità interfaccia utente: titolo che identifica la modalità interfaccia utente
-   * Icona modalità: selettore per [Icona interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) da utilizzare, ad esempio `coral-Icon--user`
+   * Icona modalità: selettore per [Icona interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) ad esempio, `coral-Icon--user`
    * Abilitato: seleziona per visualizzare la modalità interfaccia utente nella barra degli strumenti di ContextHub
 
 1. Seleziona Salva.
@@ -78,7 +78,7 @@ Le proprietà del modulo UI includono una configurazione dettagliata in cui puoi
 
 1. Nella barra degli Experienci Manager, seleziona Strumenti > Siti > ContextHub.
 1. Seleziona il Contenitore di configurazione a cui desideri aggiungere un modulo di interfaccia utente.
-1. Fai clic o digita la configurazione ContextHub a cui desideri aggiungere il modulo di interfaccia utente.
+1. Seleziona o digita la configurazione ContextHub a cui desideri aggiungere il modulo di interfaccia utente.
 1. Seleziona la modalità dell’interfaccia utente a cui stai aggiungendo il modulo dell’interfaccia utente.
 1. Seleziona il pulsante Crea, quindi seleziona Modulo interfaccia utente ContextHub (generico).
 
@@ -214,7 +214,7 @@ Modifica la configurazione di ContextHub e seleziona l’opzione **Debug**
 
 Utilizzare CRXDE Liti per impostare la proprietà `debug` a **true** in:
 
-* `/conf/global/settings/cloudsettings` oppure
+* `/conf/global/settings/cloudsettings` o
 * `/conf/<site>/settings/cloudsettings`
 
 ### Registrazione dei messaggi di debug per ContextHub {#logging-debug-messages-for-contexthub}

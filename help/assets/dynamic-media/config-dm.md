@@ -4,10 +4,10 @@ description: Scopri come configurare Dynamic Medie in Adobe Experience Manager a
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3794'
-ht-degree: 3%
+source-wordcount: '3811'
+ht-degree: 2%
 
 ---
 
@@ -205,11 +205,11 @@ Quando esegui Dynamic Medie su AEM, attualmente inoltra `/is/image` Richieste a 
 
 1. Da Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
 
-   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+   ![14/13/16/2019](assets/2019-08-02_16-13-14.png)
 
 1. Viene visualizzata una nuova scheda del browser **[!UICONTROL Configurazione console Web Adobe Experience Manager]** pagina.
 
-   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+   ![29/08/2019](assets/2019-08-02_16-17-29.png)
 
 1. Nella pagina, scorri fino al nome _Adobe CQ Scene7 Platform Server_.
 
@@ -262,7 +262,7 @@ Per configurare le proprietà di colore predefinite per l&#39;abilitazione della
 1. Apri [applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account utilizzando le credenziali fornite durante il provisioning.
 1. Vai a **[!UICONTROL Configurazione > Impostazione applicazione]**.
 1. Espandi l’area **[!UICONTROL Publish Setup (Impostazione pubblicazione)]** e seleziona **[!UICONTROL Image Server]**. Per le istanze di pubblicazione, imposta **[!UICONTROL Contesto di pubblicazione]** su **[!UICONTROL Image Server]**.
-1. Scorri fino alla proprietà da modificare, ad esempio una proprietà in **[!UICONTROL Attributi gestione colore]** area.
+1. Scorri fino alla proprietà che devi modificare, ad esempio, una proprietà in **[!UICONTROL Attributi gestione colore]** area.
 È possibile impostare le seguenti proprietà di correzione del colore:
 
    | Proprietà | Descrizione |
@@ -311,9 +311,9 @@ Consulta [Caricare le risorse](/help/assets/add-assets.md).
 1. Nella cartella mimeTypes, seleziona un tipo MIME.
 1. Nella parte inferiore, sul lato destro della pagina CRXDE Liti:
 
-   * Tocca due volte il **[!UICONTROL abilitato]** campo. Per impostazione predefinita, tutti i tipi MIME di risorse sono abilitati (impostati su **[!UICONTROL true]**), il che significa che le risorse vengono sincronizzate in Dynamic Medie per l’elaborazione. Se desideri escludere questo tipo di risorsa MIME dall’elaborazione, modifica questa impostazione in **[!UICONTROL false]**.
+   * Doppia selezione **[!UICONTROL abilitato]** campo. Per impostazione predefinita, tutti i tipi MIME di risorse sono abilitati (impostati su **[!UICONTROL true]**), il che significa che le risorse vengono sincronizzate in Dynamic Medie per l’elaborazione. Se desideri escludere questo tipo di risorsa MIME dall’elaborazione, modifica questa impostazione in **[!UICONTROL false]**.
 
-   * Doppio tocco **[!UICONTROL jobParam]** per aprire il campo di testo associato. Consulta [Tipi MIME supportati](/help/assets/file-format-support.md) per un elenco dei valori dei parametri di elaborazione consentiti che è possibile utilizzare per un determinato tipo MIME.
+   * Doppia selezione **[!UICONTROL jobParam]** per aprire il campo di testo associato. Consulta [Tipi MIME supportati](/help/assets/file-format-support.md) per un elenco dei valori dei parametri di elaborazione consentiti che è possibile utilizzare per un determinato tipo MIME.
 
 1. Effettua una delle operazioni seguenti:
    * Ripeti i passaggi 3-4 per modificare più tipi MIME.
@@ -330,13 +330,13 @@ In Experience Manager Assets è possibile aggiungere tipi MIME personalizzati pe
 1. Accedi al tuo Experience Manager as a Cloud Service come amministratore del prodotto.
 1. Da Experience Manager as a Cloud Service, vai a **[!UICONTROL Strumenti > Operazioni > Console web]**.
 
-   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+   ![14/13/16/2019](assets/2019-08-02_16-13-14.png)
 
 1. Viene visualizzata una nuova scheda del browser **[!UICONTROL Configurazione console Web Adobe Experience Manager]** pagina.
 
-   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+   ![29/08/2019](assets/2019-08-02_16-17-29.png)
 
-1. Nella pagina, scorri verso il basso fino al nome *Adobe CQ Scene7 Asset MIME type Service*, come illustrato nella schermata successiva. A destra del nome, tocca **[!UICONTROL Modifica i valori di configurazione]** (icona a forma di matita).
+1. Nella pagina, scorri verso il basso fino al nome *Adobe CQ Scene7 Asset MIME type Service*, come illustrato nella schermata successiva. A destra del nome, selezionare **[!UICONTROL Modificare i valori di configurazione]** (icona della matita).
 
    ![Modificare i valori di configurazione](assets/2019-08-02_16-44-56.png)
 
@@ -369,7 +369,7 @@ In Experience Manager Assets è possibile aggiungere tipi MIME personalizzati pe
 
    ![Modifica di un file DWG in CRXDE Liti](assets/crxdelite_cqdoc-14627.png)
 
-1. Con il tipo MIME `image_vnd.dwg` ancora selezionato, da **[!UICONTROL Proprietà]** , nella scheda **[!UICONTROL abilitato]** riga, sotto **[!UICONTROL Valore]** , toccare due volte il valore. Il **[!UICONTROL Valore]** viene aperto l’elenco a discesa.
+1. Con il tipo MIME `image_vnd.dwg` ancora selezionato, da **[!UICONTROL Proprietà]** , nella scheda **[!UICONTROL abilitato]** riga, sotto **[!UICONTROL Valore]** nell&#39;intestazione di colonna, selezionare il valore. Il **[!UICONTROL Valore]** viene aperto l’elenco a discesa.
 1. Tipo `false` nel campo (o seleziona **[!UICONTROL false]** dall’elenco a discesa).
 
    ![Modifica dei tipi MIME in CRXDE Liti](assets/2019-08-02_16-60-30.png)

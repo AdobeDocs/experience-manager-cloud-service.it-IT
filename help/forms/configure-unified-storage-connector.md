@@ -2,9 +2,9 @@
 title: Come si configura il connettore di archiviazione unificata (USC) per AEM Forms?
 description: Scopri come gestire il connettore di archiviazione unificata (USC) per AEM Forms. Utilizza il connettore di archiviazione unificata (USC) per collegare AEM Forms alle archiviazioni dati esterne.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,10 @@ Prima di eseguire questi passaggi, assicurati di disporre di un [!DNL Azure] e u
 Per creare un’ [!DNL Azure] configurazione archiviazione:
 
 1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
-1. Seleziona una cartella per creare la configurazione e tocca **[!UICONTROL Crea]**.
+1. Seleziona una cartella per creare la configurazione e seleziona **[!UICONTROL Crea]**.
 1. Specifica un titolo per la configurazione nella **[!UICONTROL Titolo]** campo.
 1. Specifica il nome del [!DNL Azure] account di archiviazione in **[!UICONTROL Account di archiviazione Azure]** campo.
-1. Specifica la chiave per accedere all’account di archiviazione Azure in **[!UICONTROL Chiave di accesso Azure]** campo e tocco **[!UICONTROL Salva]**.
+1. Specifica la chiave per accedere all’account di archiviazione Azure in **[!UICONTROL Chiave di accesso Azure]** e seleziona **[!UICONTROL Salva]**.
 
 ### Configurare il connettore di archiviazione unificata (USC) per i flussi di lavoro AEM {#configure-unified-storage-connector-workflows}
 
@@ -39,17 +39,17 @@ Per configurare il connettore di archiviazione unificata (USC) per i flussi di l
 
 1. In **[!UICONTROL Flusso di lavoro]** sezione, Seleziona **[!UICONTROL Azure]** dall&#39;elenco a discesa Archiviazione.
 1. Specifica la [percorso di configurazione per la configurazione dell’archiviazione Azure](#create-azure-storage-configuration) nel **[!UICONTROL Percorso configurazione archiviazione]** campo.
-1. Tocca **[!UICONTROL Pubblica]** e quindi tocca **[!UICONTROL Salva]** per salvare la configurazione.
+1. Seleziona **[!UICONTROL Pubblica]** e quindi seleziona **[!UICONTROL Salva]** per salvare la configurazione.
 
 ### Configurare un modello di flusso di lavoro AEM per l’archiviazione di dati esterni {#configure-workflow-external-data-storage}
 
 Per configurare un modello di flusso di lavoro AEM per un’archiviazione dati esterna, effettua le seguenti operazioni:
 
 1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
-1. Seleziona un nome di modello e tocca **[!UICONTROL Modifica]**.
-1. Tocca l’icona Informazioni pagina e tocca **[!UICONTROL Apri proprietà]**.
+1. Selezionate un nome di modello e selezionate **[!UICONTROL Modifica]**.
+1. Seleziona l’icona Informazioni pagina e fai clic su **[!UICONTROL Apri proprietà]**.
 1. Seleziona **[!UICONTROL Esternalizzare l’archiviazione dei dati del flusso di lavoro]**.
-1. Tocca **[!UICONTROL Salva e chiudi]** per salvare le proprietà.
+1. Seleziona **[!UICONTROL Salva e chiudi]** per salvare le proprietà.
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: Guida introduttiva all’authoring CIF
 description: Guida introduttiva all’authoring CIF.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -45,7 +45,7 @@ Se i dati di prodotti e categorie sono necessari nei componenti commerce o nelle
 
 ### Selettore prodotti
 
-Fai clic sull’icona della cartella per aprire l’interfaccia utente modale del selettore (ad esempio, teaser prodotto)
+Fai clic sull’icona della cartella per aprire l’interfaccia utente modale del selettore (ad esempio, teaser di prodotto)
 ![selettore prodotti](assets/product-picker-open.png)
 
 Puoi trovare i prodotti sfogliando la struttura del catalogo a sinistra o effettuando una ricerca. La ricerca full-text rispetta la categoria selezionata e limita i risultati a questa categoria.
@@ -57,7 +57,7 @@ I prodotti con varianti sono contrassegnati con un’icona a forma di cartella s
 
 ### Selettore categorie
 
-Funziona come un selettore di prodotti. Fai clic sull’icona della cartella per aprire l’interfaccia utente modale del selettore (ad esempio, il carosello delle categorie)
+Funziona come un selettore di prodotti. Fai clic sull’icona della cartella per aprire l’interfaccia utente modale del selettore (ad esempio, carosello categorie)
 ![selettore categorie](assets/category-picker-open.png)
 
 Sfoglia la struttura del catalogo a sinistra e seleziona la categoria.

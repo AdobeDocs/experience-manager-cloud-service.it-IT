@@ -2,10 +2,10 @@
 title: Layout reattivo
 description: AEM consente di realizzare un layout dinamico per le pagine
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1732'
-ht-degree: 82%
+source-wordcount: '1737'
+ht-degree: 80%
 
 ---
 
@@ -49,7 +49,7 @@ A seconda del progetto, il Contenitore di layout può essere utilizzato come sis
 
 >[!TIP]
 >
->Adobe fornisce la [documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) relativa al layout dinamico come riferimento per gli sviluppatori front-end, consentendo loro di utilizzare la griglia di AEM fuori da AEM, ad esempio quando si crea uno schema HTML statico per un futuro sito AEM.
+>Adobe fornisce [Documentazione di GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del layout reattivo come riferimento che può essere dato agli sviluppatori front-end consentendo loro di utilizzare la griglia AEM al di fuori dell’AEM, ad esempio, quando si creano modelli statici di HTML per un futuro sito AEM.
 
 >[!NOTE]
 >
@@ -149,7 +149,7 @@ Come con altri componenti, puoi selezionare e quindi intervenire (tagliare, copi
 >
 >Poiché un contenitore di layout è un sistema paragrafo, l’eliminazione del componente comporta l’eliminazione sia della griglia di layout che di tutti i componenti (e del relativo contenuto) presenti all’interno del contenitore.
 
-1. Se passi il mouse o tocchi il segnaposto della griglia, viene visualizzato il menu Azioni.
+1. Se passi il mouse sul segnaposto della griglia o lo selezioni, viene visualizzato il menu Azioni.
 
    ![Aggiungi al Contenitore di layout](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

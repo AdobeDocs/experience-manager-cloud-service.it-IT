@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1396'
 ht-degree: 20%
 
 ---
@@ -27,7 +27,7 @@ Utilizzando strategie di denominazione dei file e delle cartelle coerenti e appr
 ## Aggiungere un profilo di metadati {#adding-a-metadata-profile}
 
 1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili metadati]** e quindi fare clic su **[!UICONTROL Crea]**.
-1. Inserisci un titolo per il profilo metadati, ad esempio Metadati di esempio, e tocca **[!UICONTROL Invia]**. Viene visualizzato il modulo Modifica per il profilo metadati.
+1. Immetti un titolo per il profilo metadati, ad esempio Metadati di esempio, e seleziona **[!UICONTROL Invia]**. Viene visualizzato il modulo Modifica per il profilo metadati.
 1. Fai clic su un componente e configurane le proprietà nella sezione **[!UICONTROL Impostazioni]** scheda. Ad esempio, fai clic su **[!UICONTROL Descrizione]** e modificarne le proprietà.
 Modifica le seguenti proprietà per **[!UICONTROL Descrizione]** componente:
 
@@ -90,12 +90,12 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo video
 
 1. Accedi a **[!UICONTROL Strumenti > Risorse > Profili metadati]**.
 1. Seleziona il profilo di metadati da applicare a una o più cartelle.
-1. Clic **[!UICONTROL Applica profilo metadati a cartelle]** e seleziona la cartella o le cartelle in cui desideri ricevere le risorse appena caricate, quindi fai clic su **[!UICONTROL Fine]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Clic **[!UICONTROL Applicare il profilo metadati alle cartelle]** e seleziona la cartella o le cartelle in cui desideri ricevere le risorse appena caricate, quindi fai clic su **[!UICONTROL Fine]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
 #### Applicare profili di metadati alle cartelle da Proprietà {#applying-metadata-profiles-to-folders-from-properties}
 
 1. Nella barra a sinistra, fai clic su **[!UICONTROL Risorse]** quindi passa alla cartella a cui desideri applicare un profilo di metadati.
-1. Nella cartella fare clic o selezionare il segno di spunta e quindi fare clic su o su **Proprietà**.
+1. Sulla cartella, seleziona il segno di spunta per selezionarla, quindi seleziona **Proprietà**.
 1. Seleziona la **[!UICONTROL Profili metadati]** e selezionare il profilo dal menu a discesa e fare clic su **[!UICONTROL Salva]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
 ### Applicare un profilo di metadati a livello globale {#applying-a-metadata-profile-globally}
@@ -108,7 +108,7 @@ Oltre ad applicare un profilo a una cartella, puoi anche applicarne uno a livell
 
 * Accedi a `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam` e applica il profilo appropriato e fai clic su **[!UICONTROL Salva]**.
 
-* Passa a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`. Aggiungi la proprietà `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Clic **Salva tutto**.
+* Passa a CRXDE Liti al seguente nodo: `/content/dam/jcr:content`. Aggiungi la proprietà `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Clic **Salva tutto**.
 
 ## Rimozione di un profilo di metadati dalle cartelle {#removing-a-metadata-profile-from-folders}
 
@@ -120,7 +120,7 @@ Puoi rimuovere un profilo di metadati da una cartella direttamente dal menu **St
 
 1. Fai clic sul logo dell’Experience Manager e passa a **[!UICONTROL Strumenti > Risorse > Profili metadati]**.
 1. Seleziona il profilo di metadati da rimuovere da una o più cartelle.
-1. Clic **[!UICONTROL Rimuovi profilo metadati da cartelle]** e seleziona la cartella o le cartelle da cui vuoi rimuovere un profilo e fai clic su **[!UICONTROL Fine]**.
+1. Clic **[!UICONTROL Rimuovi profilo metadati dalle cartelle]** e seleziona la cartella o le cartelle da cui vuoi rimuovere un profilo e fai clic su **[!UICONTROL Fine]**.
 
    Puoi confermare che il profilo di metadati non è più applicato a una cartella perché il nome non viene più visualizzato sotto il nome della cartella.
 

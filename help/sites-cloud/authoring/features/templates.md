@@ -2,10 +2,10 @@
 title: Creazione di modelli di pagina
 description: Il modello definisce la struttura della pagina risultante e, grazie all’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4535'
-ht-degree: 86%
+source-wordcount: '4523'
+ht-degree: 84%
 
 ---
 
@@ -95,11 +95,11 @@ Quando crei un modello modificabile:
 
 ### Creazione di una cartella di modelli - Amministratore {#creating-a-template-folder-admin}
 
-È necessario creare una cartella di modelli per il progetto, che conterrà i modelli specifici per il progetto. Si tratta di un’operazione amministrativa descritta nel documento [Modelli di pagina](/help/implementing/developing/components/templates.md#template-folders).-->
+È necessario creare una cartella di modelli per il progetto, che conterrà i modelli specifici per il progetto. Si tratta di un’attività amministrativa descritta nel documento [Modelli di pagina](/help/implementing/developing/components/templates.md#template-folders).
 
 ### Creazione di un nuovo modello - Autore del modello {#creating-a-new-template-template-author}
 
-1. Apri la **Console modelli** (da **Strumenti ->** **Generale**) e passa alla cartella desiderata.
+1. Apri **Console modelli** (mediante **Strumenti >** **Generale**) quindi passare alla cartella desiderata.
 
    >[!NOTE]
    >
@@ -143,7 +143,7 @@ Un modello può avere le seguenti proprietà:
 * Titolo
    * Titolo utilizzato per identificare il modello, ad esempio nella procedura guidata **Crea pagina**.
 * Descrizione
-   * Una descrizione opzionale per fornire informazioni sul modello e sul suo utilizzo, che possono essere visualizzate, ad esempio, nella procedura guidata **Crea pagina**.
+   * Una descrizione facoltativa per fornire informazioni sul modello e sul suo utilizzo, che possono essere visualizzate, ad esempio, nel **Crea pagina** procedura guidata.
 
 Per visualizzare e/o modificare le proprietà:
 
@@ -415,7 +415,7 @@ Ad esempio, per un componente immagine è possibile definire le proporzioni di r
 
 >[!CAUTION]
 >
->In AEM i rapporti di ritaglio sono definiti come **altezza/larghezza**. Questo differisce dalla definizione tradizionale di larghezza/altezza, per ragioni di compatibilità con versioni precedenti. Gli utenti che creano le pagine non noteranno alcuna differenza, purché sia stato definito chiaramente il **Nome**, che verrà visualizzato nell’interfaccia utente.
+>Nel AEM i rapporti di raccolto sono definiti come **altezza/larghezza**. Questo differisce dalla definizione tradizionale di larghezza/altezza, per ragioni di compatibilità con versioni precedenti. Gli utenti che creano le pagine non noteranno alcuna differenza, purché sia stato definito chiaramente il **Nome**, che verrà visualizzato nell’interfaccia utente.
 
 >[!NOTE]
 >
@@ -459,7 +459,7 @@ Nella scheda **Componenti consentiti**, puoi definire quali componenti sono disp
 
 ###### Componenti standard {#default-components}
 
-Nella scheda **Componenti predefiniti**, è possibile definire quali componenti vengono associati automaticamente a determinati tipi di file multimediali in modo che, quando un autore trascina una risorsa dal browser di risorse, AEM sappia a quale componente associarla. Per questa configurazione sono disponibili solo i componenti con aree di rilascio.
+Nella scheda **Componenti predefiniti**, è possibile definire quali componenti vengono associati automaticamente a determinati tipi di file multimediali in modo che, quando un autore trascina una risorsa dal browser di risorse, AEM sappia a quale componente associarla. Per questa configurazione sono disponibili solo i componenti con zone di rilascio.
 
 Seleziona **Aggiungi mappatura** per aggiungere un componente completamente nuovo e la mappatura del tipo MIME.
 

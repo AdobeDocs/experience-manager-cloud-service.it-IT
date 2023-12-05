@@ -2,10 +2,10 @@
 title: Guida rapida all’authoring delle pagine
 description: Guida rapida di alto livello per iniziare a creare i contenuti di una pagina
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1541'
-ht-degree: 84%
+ht-degree: 78%
 
 ---
 
@@ -47,7 +47,7 @@ Prima di iniziare la lettura della guida rapida, ti offriamo una piccola raccolt
       * [Modalità Anteprima](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [Visualizza come pubblicato](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* Le versioni non vengono avviate/create dall’editor di pagine, questa operazione è ora eseguita dalla console **Sites** (mediante **Crea** o [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) per una risorsa selezionata).
+* Le versioni non vengono avviate/create dall’editor di pagine. Questa operazione viene ora eseguita dal **Sites** console (tramite **Crea** o [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) per una risorsa selezionata).
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Sono disponibili vari aspetti per individuare una pagina. Puoi navigare e/o eseg
 
 1. Apri la console **Sites** (mediante l’opzione **Sites** del pannello [Navigazione globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation), che si apre (a discesa) quando selezioni il collegamento Adobe Experience Manager (in alto a sinistra).
 
-1. Spostati verso il basso all’interno della struttura toccando/facendo clic sulla pagina appropriata. La modalità di rappresentazione delle risorse di pagina dipende dalla vista che stai utilizzando, [A schede, Elenco o Colonna](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
+1. Per spostarti verso il basso nella struttura, tocca o fai clic sulla pagina appropriata. La modalità di rappresentazione delle risorse di pagina dipende dalla vista in uso: [Scheda, elenco o colonna](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
    ![Menu a discesa per selezionare la vista](/help/sites-cloud/authoring/assets/views.png)
 
@@ -103,7 +103,7 @@ La modalità di selezione di una pagina dipende dalla visualizzazione utilizzata
 
    * Attiva la modalità di selezione [scegliendo la risorsa richiesta](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources). La procedura dipende dal dispositivo:
 
-      * Su un dispositivo mobile: tocca e tieni premuto sulla scheda
+      * Su un dispositivo mobile: seleziona e tieni premuto sulla scheda
       * Su un dispositivo desktop: utilizza l’[azione rapida](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) rappresentata dall’icona di spunta:
 
    * Alla scheda viene sovrapposto un segno di spunta per indicare che è stata selezionata la pagina.
@@ -148,7 +148,7 @@ Per modificare la pagina:
    * [Modificare il contenuto di un componente esistente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) sulla pagina:
 
       * Apri la barra degli strumenti del componente selezionando una delle due opzioni. Utilizza l’icona **Modifica** (matita) per aprire la finestra di dialogo.
-      * Apri l’editor locale per il componente toccando e tenendo premuto o facendo un doppio clic lento. Vengono visualizzate le azioni disponibili (per alcuni componenti è una selezione limitata).
+      * Apri l’editor locale per il componente con la funzione di selezione e mantenimento o con un doppio clic lento. Vengono visualizzate le azioni disponibili (per alcuni componenti è una selezione limitata).
       * Per visualizzare tutte le azioni disponibili, entra in modalità a schermo intero utilizzando:
 
         ![Pulsante Schermo intero](/help/sites-cloud/authoring/assets/full-screen.png)
@@ -176,7 +176,7 @@ Per modificare la pagina:
 
    * [Aggiungere annotazioni](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) alla pagina:
 
-      * Seleziona la modalità **Annota** (icona a forma di fumetto). Aggiungi le annotazioni utilizzando l’icona **Aggiungi annotazione** (segno più). Esci dalla modalità di annotazione utilizzando la X in alto a destra.
+      * Seleziona la **Annota** modalità (icona a forma di fumetto). Aggiungere annotazioni utilizzando **Aggiungi annotazione** (più). Esci dalla modalità di annotazione utilizzando la X in alto a destra.
 
         ![Pulsante Annotazioni](/help/sites-cloud/authoring/assets/annotations.png)
 

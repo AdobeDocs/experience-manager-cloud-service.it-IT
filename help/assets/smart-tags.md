@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2461'
+source-wordcount: '2453'
 ht-degree: 6%
 
 ---
@@ -68,7 +68,7 @@ Per impostazione predefinita, i tag avanzati vengono aggiunti automaticamente al
 
 ## Comprendere modelli e linee guida per i tag {#understand-tag-models-guidelines}
 
-Un modello di tag è un gruppo di tag correlati associati a vari aspetti visivi delle immagini a cui vengono assegnati tag. I tag si riferiscono agli aspetti visivi nettamente diversi delle immagini, in modo che, se applicati, aiutino a cercare tipi specifici di immagini. Ad esempio, una raccolta di scarpe può avere tag diversi, ma tutti i tag sono correlati alle scarpe e possono appartenere allo stesso modello di tag. Quando applicati, i tag consentono di trovare diversi tipi di scarpe, ad esempio per progettazione o per utilizzo. Per comprendere la rappresentazione del contenuto di un modello di apprendimento in [!DNL Experience Manager], visualizza un modello di apprendimento come entità di livello principale composta da un gruppo di tag aggiunti manualmente e da immagini di esempio per ogni tag. Ogni tag può essere applicato esclusivamente a un’immagine.
+Un modello di tag è un gruppo di tag correlati associati a vari aspetti visivi delle immagini a cui vengono assegnati tag. I tag si riferiscono agli aspetti visivi nettamente diversi delle immagini, in modo che, se applicati, aiutino a cercare tipi specifici di immagini. Ad esempio, una raccolta di scarpe può avere tag diversi, ma tutti i tag sono correlati alle scarpe e possono appartenere allo stesso modello di tag. Quando applicati, i tag consentono di trovare diversi tipi di scarpe, ad esempio in base alla progettazione o all’utilizzo. Per comprendere la rappresentazione del contenuto di un modello di apprendimento in [!DNL Experience Manager], visualizza un modello di apprendimento come entità di livello principale composta da un gruppo di tag aggiunti manualmente e da immagini di esempio per ogni tag. Ogni tag può essere applicato esclusivamente a un’immagine.
 
 Prima di creare un modello di tag e addestrare il servizio, identifica un set di tag univoci che descrivono al meglio gli oggetti nelle immagini nel contesto della tua azienda. Assicurati che le risorse del set curato siano conformi a [le linee guida per la formazione](#training-guidelines).
 

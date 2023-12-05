@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f2f81e2e3e7ff0b5bad4a5490f5cbec752c92578
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 6%
+source-wordcount: '1329'
+ht-degree: 4%
 
 ---
 
@@ -139,11 +139,11 @@ Per attivare `OnOffTimeAssetAccessFilter` servizio, è necessario creare una con
 1. Nel codice del progetto in Git, crea un file di configurazione in `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Il file deve contenere `{}` come contenuto, a indicare una configurazione OSGi vuota per il componente OSGi corrispondente. Questa azione abilita il servizio.
 1. Distribuisci il codice, inclusa la nuova configurazione, tramite [!DNL Cloud Manager].
 1. Una volta implementati, i rendering e i metadati sono accessibili in base alle impostazioni di orario di attivazione/disattivazione delle risorse. Se la data o l’ora corrente cade prima dell’ora di attivazione o dopo l’ora di disattivazione, viene visualizzato un messaggio di errore.
-Per ulteriori dettagli sull’aggiunta di una configurazione OSGi vuota, consulta [guida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
+Per ulteriori dettagli sull’aggiunta di una configurazione OSGi vuota, consulta questa [guida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Suggerimenti e limitazioni {#tips-limitations}
 
-* se si scarica una cartella vuota, [!DNL Experience Manager] trasmette un messaggio di operazione riuscita della creazione di un archivio ZIP, ma l’archivio non viene creato.
+* Se scarichi una cartella vuota, [!DNL Experience Manager] trasmette un messaggio di operazione riuscita sulla creazione di un archivio ZIP, ma l’archivio non viene creato.
 
 **Consulta anche**
 

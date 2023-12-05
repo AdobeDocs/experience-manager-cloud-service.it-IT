@@ -2,10 +2,10 @@
 title: Processi asincroni
 description: Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a uso intensivo di risorse come operazioni in background.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 70%
+source-wordcount: '856'
+ht-degree: 64%
 
 ---
 
@@ -55,7 +55,7 @@ Per visualizzare in dettaglio lo stato delle operazioni asincrone, passare alla 
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. Per visualizzare ulteriori dettagli, ad esempio la descrizione e i registri, seleziona l’operazione e fai clic su **[!UICONTROL Apri]** nella barra degli strumenti.
+1. Per visualizzare ulteriori dettagli, ad esempio descrizione e registri, seleziona l’operazione e fai clic su **[!UICONTROL Apri]** dalla barra degli strumenti.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -77,7 +77,7 @@ Per visualizzare in dettaglio lo stato delle operazioni asincrone, passare alla 
 >
 >[Configurazioni OSGi](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) sono considerati contenuti mutabili e tali configurazioni devono essere distribuite come pacchetto di contenuti per un ambiente di produzione.
 
-### Eliminare i processi completati {#purging-completed-jobs}
+### Rimuovi processi completati {#purging-completed-jobs}
 
 AEM esegue un processo di eliminazione ogni giorno alle 01:00 per eliminare i processi asincroni completati da più di un giorno.
 

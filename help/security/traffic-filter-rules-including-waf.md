@@ -2,10 +2,10 @@
 title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3357'
+ht-degree: 92%
 
 ---
 
@@ -33,7 +33,7 @@ Questo articolo è suddiviso nelle sezioni seguenti:
 * **Panoramica sulla protezione del traffico:** scopri in che modo sei protetto dal traffico dannoso.
 * **Processo consigliato per la configurazione delle regole:** scopri una metodologia di alto livello per proteggere il tuo sito web.
 * **Configurazione:** scopri come impostare, configurare e distribuire le regole del filtro del traffico, incluse le regole WAF avanzate.
-* **Sintassi delle regole:** scopri come dichiarare le regole del filtro del traffico nel file di configurazione `cdn.yaml`. Questa sezione include sia le regole del filtro del traffico disponibili per tutta la clientela di Sites e Forms, nonché la sottocategoria delle regole WAF per coloro che concedono in licenza tale funzionalità.
+* **Sintassi delle regole:** scopri come dichiarare le regole del filtro del traffico nel file di configurazione `cdn.yaml`. Ciò include sia le regole del filtro del traffico disponibili per tutti i clienti Sites e Forms, sia la sottocategoria delle regole WAF per coloro che concedono in licenza tale funzionalità.
 * **Esempi di regole:** per orientarti meglio, consulta alcuni esempi di regole dichiarate.
 * **Regole dei limiti di frequenza:** scopri come utilizzare le regole dei limiti di frequenza per proteggere il sito da attacchi con volumi elevati.
 * **Registri CDN:** scopri quali regole dichiarate e contrassegni WAF corrispondono al tuo traffico.
@@ -79,7 +79,7 @@ Di seguito è riportato un processo end-to-end di alto livello consigliato per i
         cdn.yaml
    ```
 
-1. `cdn.yaml` deve contenere metadati nonché un elenco di regole dei filtri di traffico e regole WAF.
+1. `cdn.yaml` deve contenere metadati e un elenco di regole dei filtri di traffico e regole WAF.
 
    ```
    kind: "CDN"
@@ -149,7 +149,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-Il formato delle regole per il filtro del traffico nel file `cdn.yaml` è descritto di seguito. Trovi alcuni [altri esempi](#examples) in una sezione successiva nonché in una sezione separata su [Regole di limite di tasso](#rate-limit-rules).
+Il formato delle regole per il filtro del traffico nel file `cdn.yaml` è descritto di seguito. Vedi un po&#39; [altri esempi](#examples) in una sezione successiva e in una sezione separata su [Regole di limite di tasso](#rate-limit-rules).
 
 
 | **Proprietà** | **Regole di filtro del traffico più frequenti** | **Regole di filtro del traffico WAF** | **Tipo** | **Valore predefinito** | **Descrizione** |
@@ -416,9 +416,9 @@ I limiti di tasso vengono calcolati per POP CDN. Ad esempio, supponiamo che i PO
 | **Proprietà** | **Tipo** | **Predefinito** | **SIGNIFICATO** |
 |---|---|---|---|
 | limite | numero intero da 10 a 10000 | obbligatorio | Frequenza di richiesta (per POP CDN) nelle richieste al secondo per le quali viene attivata la regola. |
-| finestra | numero intero: 1, 10 o 60 | 10 | Finestra di campionamento in secondi per la quale viene calcolato il tasso di richiesta. La precisione dei contatori dipende dalle dimensioni della finestra (maggiore finestra, maggiore precisione). Ad esempio, ci si può aspettare una precisione del 50% per la finestra di 1 secondo e del 90% per la finestra di 60 secondi. |
+| finestra | numero intero: 1, 10 o 60 | 10 | Finestra di campionamento in secondi per la quale viene calcolato il tasso di richiesta. La precisione dei contatori dipende dalle dimensioni della finestra (maggiore finestra, maggiore precisione). Ad esempio, è possibile prevedere una precisione del 50% per la finestra di 1 secondo e del 90% per la finestra di 60 secondi. |
 | penalità | numero intero compreso tra 60 e 3600 | 300 (5 minuti) | Un periodo in secondi per il quale le richieste corrispondenti vengono bloccate (arrotondato al minuto più vicino). |
-| groupBy | array[Getter] | nessuno | il contatore del limitatore di frequenza verrà aggregato da un set di proprietà di richiesta (ad esempio clientIp). |
+| groupBy | array[Getter] | nessuno | il contatore del limitatore di velocità verrà aggregato da un set di proprietà di richiesta (ad esempio, clientIp). |
 
 
 ### Esempi {#ratelimiting-examples}
@@ -471,7 +471,7 @@ data:
 
 AEM as a Cloud Service fornisce accesso ai registri CDN, utili per i casi d’uso tra cui l’ottimizzazione del rapporto hit della cache e la configurazione delle regole del filtro del traffico. I registri CDN vengono visualizzati nella finestra di dialogo di Cloud Manager **Scarica registri** durante la selezione del servizio di authoring o di pubblicazione.
 
-I registri CDN possono subire un ritardo fino a 5 minuti.
+I registri CDN possono essere ritardati di un massimo di cinque minuti.
 
 La proprietà `rules` descrive le regole del filtro del traffico corrispondenti e presenta il seguente pattern:
 

@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 4%
+source-wordcount: '1430'
+ht-degree: 1%
 
 ---
 
@@ -64,7 +64,7 @@ Per garantire una transizione fluida da AEM Forms 6.5 all’ambiente as a Cloud 
 
   ![Risultato esecuzione di prova](assets/enable-add-on.png)
 
-* In un ambiente di Cloud Service, l&#39;utility di migrazione funziona insieme allo strumento di mappatura utenti e allo strumento di trasferimento dei contenuti. L&#39;utilità di migrazione rende [!DNL AEM Forms] risorse compatibili con il Cloud Service e lo strumento content transfer esegue la migrazione dei contenuti dalle [!DNL AEM Forms] ambiente in un [!DNL AEM] ambiente as a Cloud Service. Prima di utilizzare l&#39;utilità di migrazione, apprendere il processo di [passaggio all’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=it). Il processo è costituito da due strumenti:
+* In un ambiente di Cloud Service, l&#39;utility di migrazione funziona insieme allo strumento di mappatura utenti e allo strumento di trasferimento dei contenuti. L&#39;utilità di migrazione rende [!DNL AEM Forms] risorse compatibili con il Cloud Service e lo strumento content transfer esegue la migrazione dei contenuti dalle [!DNL AEM Forms] ambiente in un [!DNL AEM] ambiente as a Cloud Service. Prima di utilizzare l&#39;utilità di migrazione, apprendere il processo di [passaggio all’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). Il processo è costituito da due strumenti:
    * [Strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration): lo strumento di mappatura utenti consente di mappare gli utenti con gli account utente Adobe IMS corrispondenti.
    * [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration): lo strumento Content Transfer (Trasferimento contenuti) consente di preparare e trasferire i contenuti dall’ambiente esistente a un ambiente di Cloud Service. Consente agli utenti di effettuare facilmente l’aggiornamento da AEM Forms all’ambiente cloud.
 * Account con privilegi di amministratore su [!DNL AEM Forms] as a Cloud Service e locale [!DNL AEM Forms] ambiente.
@@ -105,20 +105,20 @@ Effettua le seguenti operazioni per rendere [!DNL AEM Forms] risorse compatibili
 
 1. Utilizza l’opzione uno dopo l’altro per rendere [!DNL AEM Forms] risorse compatibili con [!DNL AEM] as a Cloud Service:
 
-   1. Tocca **[!UICONTROL Migrazione risorse AEM Forms]**, e nella schermata successiva, tocca **[!UICONTROL Avvia migrazione]**. Crea Forms adattivo e temi sul tuo [!DNL AEM Forms] ambiente compatibile con [!DNL AEM] as a Cloud Service.
+   1. Seleziona **[!UICONTROL Migrazione risorse AEM Forms]** e nella schermata successiva seleziona **[!UICONTROL Avvia migrazione]**. Crea Forms adattivo e temi sul tuo [!DNL AEM Forms] ambiente compatibile con [!DNL AEM] as a Cloud Service.
 
-   1. Tocca **[!UICONTROL Migrazione dei componenti personalizzati di Forms adattivi]** e nella pagina Migrazione componenti personalizzati, tocca **[!UICONTROL Avvia migrazione]**. Crea qualsiasi componente personalizzato sviluppato per Adaptive Forms e sovrapposizioni di componenti sul tuo [!DNL AEM Forms] ambiente compatibile con [!DNL AEM] as a Cloud Service.
+   1. Seleziona **[!UICONTROL Migrazione dei componenti personalizzati di Forms adattivi]** e nella pagina Migrazione componenti personalizzati, seleziona **[!UICONTROL Avvia migrazione]**. Crea qualsiasi componente personalizzato sviluppato per Adaptive Forms e sovrapposizioni di componenti sul tuo [!DNL AEM Forms] ambiente compatibile con [!DNL AEM] as a Cloud Service.
 
-   1. Tocca **[!UICONTROL Migrazione modello Forms adattivo]** e nella pagina Migrazione componenti personalizzati, tocca **[!UICONTROL Avvia migrazione]**. Crea modelli di modulo adattivo in `/apps` o `/conf` e creato utilizzando l’Editor di modelli AEM compatibile con [!DNL AEM] as a Cloud Service.
+   1. Seleziona **[!UICONTROL Migrazione modello Forms adattivo]** e nella pagina Migrazione componenti personalizzati, seleziona **[!UICONTROL Avvia migrazione]**. Crea modelli di modulo adattivo in `/apps` o `/conf` e creato utilizzando l’Editor di modelli AEM compatibile con [!DNL AEM] as a Cloud Service.
 
-   1. Tocca **[!UICONTROL Migrazione configurazioni AEM Forms Cloud]** quindi, nella pagina Migrazione della configurazione, tocca **[!UICONTROL Avvia migrazione]**. Aggiorna e sposta i seguenti Cloud Service in una nuova posizione:
+   1. Seleziona **[!UICONTROL Migrazione configurazioni AEM Forms Cloud]** e quindi nella pagina Configuration Migration (Migrazione configurazione), seleziona **[!UICONTROL Avvia migrazione]**. Aggiorna e sposta i seguenti Cloud Service in una nuova posizione:
 
       * Cloud Service modello dati modulo
       * Cloud Service Google reCAPTCHA
-      * [!DNL Adobe Sign] Servizio cloud
+      * [!DNL Adobe Sign] Cloud Service
       * Cloud Service Adobe Fonts
 
-   1. Tocca **[!UICONTROL Migrazione script editor di codice]**, specifica un percorso in cui salvare le funzioni riutilizzabili e tocca **[!UICONTROL Avvia migrazione].
+   1. Seleziona **[!UICONTROL Migrazione script editor di codice]**, specificare un percorso in cui salvare le funzioni riutilizzabili e selezionare **[!UICONTROL Avvia migrazione].
 
    Il Cloud Service non supporta gli script dell&#39;editor di regole. Il **[!UICONTROL Migrazione script editor di codice]** lo strumento converte tutti gli script delle regole nell’ambiente in funzioni riutilizzabili e applica le funzioni riutilizzabili all’editor visivo nella posizione appropriata. Queste funzioni riutilizzabili vengono salvate sotto forma di librerie client e consentono di mantenere intatte le funzionalità esistenti. Lo strumento applica automaticamente le funzioni riutilizzabili generate al Forms adattivo corrispondente.
 
