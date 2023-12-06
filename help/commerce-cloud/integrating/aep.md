@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: d9d4ed55722920a8528056defbc0d8a411dd6807
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1866'
 ht-degree: 1%
 
 ---
@@ -215,10 +215,9 @@ Per inizializzare i componenti core Peregrine e CIF basati su React, crea la con
            baseUrl: storeConfig.storeRootUrl
        },
        eventsCollector: {
-           // Enable the Experience Platform Connector and define the org and datastream to use
-           aep: {
-               orgId: // TODO: add your orgId
-               datastreamId: // TODO: add your datastreamId
+           eventForwarding: {
+               commerce: true,
+               aep: false,
            }
        }
    };
@@ -432,7 +431,7 @@ Dopo aver completato la configurazione dell’Experience Platform precedente, do
 
 ## Trigger `addToCart` raccolta dati evento e verifica {#event-trigger-verify}
 
-I passaggi precedenti completano la configurazione di Commerce e Experienci Platform dell’AEM. Ora puoi attivare un’ `addToCart` Evento e verifica della raccolta dati utilizzando il debugger e il set di dati di Experienci Platform __Metriche e grafici__ nell’interfaccia utente del prodotto.
+I passaggi precedenti completano la configurazione di Commerce e Experienci Platform dell’AEM. Ora puoi attivare un’ `addToCart` e verificare la raccolta dei dati utilizzando [Ispettore Snowplow](https://chromewebstore.google.com/detail/snowplow-inspector/maplkdomeamdlngconidoefjpogkmljm?pli=1) e set di dati __Metriche e grafici__ nell’interfaccia utente del prodotto.
 
 Per attivare l’evento, puoi utilizzare il servizio di creazione AEM o il servizio di pubblicazione dalla configurazione locale. Per questo esempio, utilizza AEM Author effettuando l’accesso al tuo account.
 
@@ -443,9 +442,7 @@ Per attivare l’evento, puoi utilizzare il servizio di creazione AEM o il servi
 1. Fai clic su una scheda dei prodotti preferiti in __Pagina prodotto__, quindi seleziona __colore, dimensione__ per attivare __Aggiungi al carrello__ pulsante.
 
 
-1. Apri __Adobe Experience Platform Debugger__ dal pannello delle estensioni del browser e seleziona __Experienci Platform Wed SDK__ nella barra a sinistra.
-
-   ![Debugger AEP](../assets/aep-integration/AEP-Debugger.png)
+1. Apri __Ispettore Snowplow__ dal pannello delle estensioni del browser e seleziona __Experienci Platform Wed SDK__ nella barra a sinistra.
 
 
 1. Torna a __Pagina prodotto__ e fai clic su __Aggiungi al carrello__ pulsante. In questo modo i dati vengono inviati all’Experience Platform. Il __Adobe Experience Platform Debugger__ L&#39;estensione mostra i dettagli dell&#39;evento.
@@ -462,9 +459,9 @@ Per attivare l’evento, puoi utilizzare il servizio di creazione AEM o il servi
 
 ## Dettagli di implementazione {#implementation-details}
 
-Il [Connettore di Experience Platform CIF](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) è basato su [Connettore Experience Platform per Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), che fa parte del [PWA Studi](https://developer.adobe.com/commerce/pwa-studio/) progetto.
+Il [Connettore di Experience Platform CIF](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) è basato su [Connessione dati per Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), che fa parte del [PWA Studi](https://developer.adobe.com/commerce/pwa-studio/) progetto.
 
-Il progetto PWA Studi consente di creare vetrine di Progressive Web Application (PWA) basate su Adobe Commerce o Magento Open Source. Il progetto contiene anche una libreria di componenti denominata [Peregrina](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) per aggiungere logica ai componenti visivi. Il [Libreria Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) fornisce anche gli hook React personalizzati utilizzati da [Connettore Experience Platform](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) integrarsi perfettamente con Experienci Platform.
+Il progetto PWA Studi consente di creare vetrine di Progressive Web Application (PWA) basate su Adobe Commerce o Magento Open Source. Il progetto contiene anche una libreria di componenti denominata [Peregrina](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) per aggiungere logica ai componenti visivi. Il [Libreria Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) fornisce anche gli hook React personalizzati utilizzati da [Connettore di Experience Platform CIF](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) integrarsi perfettamente con Experienci Platform.
 
 
 ## Eventi supportati {#supported-events}
