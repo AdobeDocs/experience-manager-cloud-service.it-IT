@@ -2,10 +2,10 @@
 title: Acquisizione di contenuti nel Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 250682b96e2eaa2ed872e6f626c0a13dc19720f2
 workflow-type: tm+mt
-source-wordcount: '2275'
-ht-degree: 5%
+source-wordcount: '2313'
+ht-degree: 4%
 
 ---
 
@@ -93,6 +93,12 @@ Per prima cosa, crea un processo di acquisizione e assicurati che **A comparsa**
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 ## Risoluzione dei problemi {#troubleshooting}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_troubleshooting"
+>title="Risoluzione dei problemi di acquisizione dei contenuti"
+>abstract="Consulta i registri di acquisizione e la documentazione per trovare soluzioni ai motivi comuni per cui un’acquisizione può non riuscire, trovare il modo di risolvere il problema ed eseguire di nuovo l’acquisizione."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Convalida dei trasferimenti di contenuto"
 
 ### CAM: impossibile recuperare il token di migrazione {#cam-unable-to-retrieve-the-migration-token}
 
