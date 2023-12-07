@@ -3,8 +3,8 @@ title: Guida introduttiva di Experience Manager as a Cloud Service
 description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
-workflow-type: tm+mt
-source-wordcount: '360'
+workflow-type: ht
+source-wordcount: '328'
 ht-degree: 100%
 
 ---
