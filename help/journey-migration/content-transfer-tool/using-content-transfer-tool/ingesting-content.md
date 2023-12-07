@@ -2,9 +2,9 @@
 title: Acquisizione di contenuti nel Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 250682b96e2eaa2ed872e6f626c0a13dc19720f2
+source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2315'
 ht-degree: 4%
 
 ---
@@ -132,8 +132,8 @@ Questo messaggio indica che Cloud Acceleration Manager non è riuscito a raggiun
 
 * AEM as a Cloud Service mantiene lo stato dell’ambiente e occasionalmente deve riavviare il servizio di migrazione per vari motivi normali. Se il servizio viene riavviato, non potrà essere raggiunto, ma sarà disponibile alla fine.
 * È possibile che nell’istanza sia in esecuzione un altro processo. Ad esempio, se [Aggiornamenti delle versioni AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) sta applicando un aggiornamento, il sistema potrebbe essere occupato e il servizio di migrazione regolarmente non disponibile. Al termine di questo processo, è possibile tentare di nuovo l’inizio dell’acquisizione.
-* Se un [È stato applicato il Inserisco nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Tramite Cloud Manager, impedisce a Cloud Acceleration Manager di raggiungere il servizio di migrazione. Non è possibile aggiungere un indirizzo IP per le acquisizioni perché il relativo indirizzo è dinamico. Attualmente, l’unica soluzione consiste nel disattivare l’elenco consentiti IP mentre l’acquisizione è in esecuzione.
-* Ci possono essere altri motivi che richiedono un&#39;indagine. Se l’acquisizione continua a non riuscire, contatta l’Assistenza clienti di Adobe.
+* Se un [È stato applicato il Inserisco nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Tramite Cloud Manager, impedisce a Cloud Acceleration Manager di raggiungere il servizio di migrazione. Non è possibile aggiungere un indirizzo IP per le acquisizioni perché il relativo indirizzo è dinamico. Attualmente, l’unica soluzione consiste nel disattivare l’elenco consentiti IP durante il processo di acquisizione e indicizzazione.
+* Ci possono essere altri motivi che richiedono un&#39;indagine. Se l’acquisizione o l’indicizzazione continua a non riuscire, contatta l’Assistenza clienti di Adobe.
 
 ### Aggiornamenti e acquisizioni delle versioni di AEM
 
