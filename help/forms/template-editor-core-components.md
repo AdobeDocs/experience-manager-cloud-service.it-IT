@@ -1,12 +1,13 @@
 ---
 title: Come si crea un modello di modulo adattivo basato su un componente core?
 description: Crea modelli di moduli adattivi basati sul componente core per definire la struttura di base e il contenuto iniziale tramite l’Editor modelli.
+feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1961'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -200,7 +201,7 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### Aggiunta di proprietà personalizzate ai componenti di moduli adattivi tramite i criteri dei modelli
 
-Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nel **[!UICONTROL proprietà]** sezione della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core del modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nel **[!UICONTROL proprietà]** sezione della rappresentazione headless del componente. Consentono di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare diverse rappresentazioni di un componente moduli headless su piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
 I passaggi per aggiungere proprietà personalizzate ai campi del componente core Modulo adattivo sono i seguenti:
 

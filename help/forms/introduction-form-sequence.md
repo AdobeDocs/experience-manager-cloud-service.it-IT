@@ -1,14 +1,14 @@
 ---
 title: Come si crea una sequenza di moduli con più passaggi?
-description: Con [!DNL Experience Manager Forms], è possibile definire una sequenza di pannelli per consentire agli utenti di spostarsi e compilare un modulo adattivo.
-feature: Adaptive Forms
+description: Con [!DNL Experience Manager Forms], puoi definire una sequenza di pannelli per i moduli in modo che gli utenti possano navigare e compilare un modulo adattivo.
 role: User
 level: Intermediate
+feature: Adaptive Forms, Foundation Components
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 0eac90a8f120a9c7655e68533d4b0a32292621e1
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 83%
+source-wordcount: '537'
+ht-degree: 81%
 
 ---
 

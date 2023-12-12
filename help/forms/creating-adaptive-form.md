@@ -1,11 +1,11 @@
 ---
 title: Come si crea Adaptive Forms?
 description: Scopri come creare un modulo adattivo per semplificare la raccolta e l’elaborazione delle informazioni. Inoltre, scopri come creare un modulo adattivo basato su un modello di dati del modulo.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 78%

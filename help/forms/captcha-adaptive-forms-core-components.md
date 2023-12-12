@@ -3,8 +3,9 @@ title: Come si utilizza Google reCAPTCHA in un modulo adattivo per AEM?
 description: Migliora la sicurezza dei moduli con il servizio Google reCAPTCHA. Guida passo passo all'interno!
 topic-tags: Adaptive Forms, author
 keywords: Servizio Google reCAPTCHA, Forms adattivo, sfida CAPTCHA, prevenzione dei bot, componenti core, sicurezza dell’invio dei moduli, prevenzione della posta indesiderata dei moduli
+feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 10%

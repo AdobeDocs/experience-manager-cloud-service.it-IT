@@ -1,11 +1,11 @@
 ---
 title: Come si utilizza la modalità layout per ridimensionare i componenti per i moduli adattivi?
 description: Definisci la posizione dei componenti AEM Forms, scopri come accedere alla modalità di layout, ridimensionare i componenti, ridimensionare i pannelli e definire il layout a più colonne per un pannello.
-feature: Adaptive Forms
 role: User
 level: Intermediate
+feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 1%

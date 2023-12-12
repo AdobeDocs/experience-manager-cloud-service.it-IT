@@ -1,14 +1,14 @@
 ---
 title: Come configurare una pagina di reindirizzamento o un messaggio di ringraziamento?
 description: Scopri come gli utenti possono visualizzare un messaggio di ringraziamento o essere reindirizzati a una pagina web che gli autori dei moduli possono configurare durante la creazione del modulo.
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 role: User
 level: Intermediate
 exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 

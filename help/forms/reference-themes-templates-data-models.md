@@ -1,11 +1,12 @@
 ---
 title: Come ottenere temi e modelli di riferimento per i moduli AEM?
 description: AEM Forms fornisce esempi di temi, modelli e modelli di dati per moduli adattivi per aiutarti a creare i moduli rapidamente.
+feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 17%
+source-wordcount: '772'
+ht-degree: 6%
 
 ---
 
@@ -108,7 +109,7 @@ Il tema FSI enfatizza un aspetto minimalista e funzionale per il modulo. Quando 
 * Base
 * Vuoto
 
-Il modello di base consente di creare rapidamente un modulo di iscrizione. Puoi utilizzarlo anche per visualizzare in anteprima la funzionalità dei componenti di Adaptive Forms Foundation. Fornisce un layout con una procedura guidata per la presentazione dei dati sezione per sezione. Utilizza il modello vuoto per iniziare a creare un modulo adattivo da su un’area di lavoro vuota.
+Il modello di base consente di creare rapidamente un modulo di iscrizione. Puoi utilizzarlo anche per visualizzare in anteprima la funzionalità dei componenti di Adaptive Forms Foundation. Fornisce un layout guidato per la presentazione sezione per sezione dei dati. Utilizza il modello vuoto per iniziare a creare un modulo adattivo da su un’area di lavoro vuota.
 
 
 ## Modelli di dati modulo di riferimento {#reference-models}

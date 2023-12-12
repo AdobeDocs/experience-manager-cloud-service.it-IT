@@ -1,10 +1,11 @@
 ---
 title: Come si aggiunge il supporto per le nuove lingue in un modulo adattivo basato su componenti di base?
 description: Per Adaptive Forms, puoi aggiungere lingue per più lingue oltre a quella fornita come impostazione predefinita.
+feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1220'
 ht-degree: 1%
 
 ---

@@ -1,8 +1,9 @@
 ---
 title: Come si aggiunge il supporto per nuove lingue a un modulo adattivo basato su componenti core?
 description: Scopri come aggiungere nuove lingue per un modulo adattivo.
+feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 2%
