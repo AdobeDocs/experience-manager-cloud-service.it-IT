@@ -2,9 +2,9 @@
 title: Acquisizione di contenuti nel Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
+source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
 workflow-type: tm+mt
-source-wordcount: '2315'
+source-wordcount: '2392'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
       * I set di migrazione scadranno dopo un periodo prolungato di inattività, pertanto si prevede che l’acquisizione avvenga relativamente presto dopo l’esecuzione dell’estrazione. Revisione [Scadenza set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) per i dettagli.
 
    >[!TIP]
-   > Se l’estrazione è attualmente in esecuzione, la finestra di dialogo lo indicherà. Una volta completata l’estrazione, l’acquisizione viene avviata automaticamente. Se l’estrazione non riesce o viene interrotta, il processo di acquisizione verrà annullato.
+   > Se l’estrazione è in esecuzione, la finestra di dialogo lo indica. Una volta completata correttamente l’estrazione, l’acquisizione viene avviata automaticamente. Se l’estrazione non riesce o viene interrotta, il processo di acquisizione verrà annullato.
 
    * **Destinazione:** Seleziona l’ambiente di destinazione. In questo ambiente viene acquisito il contenuto del set di migrazione.
       * Le acquisizioni non supportano una destinazione RDE (Rapid Development Environment) e non vengono visualizzate come possibile scelta di destinazione, anche se l’utente ha accesso a tale destinazione.
@@ -45,11 +45,11 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
       * Se la sorgente era `Author`, si consiglia di acquisirlo nel `Author` livello sul target. Analogamente, se la sorgente era `Publish`, il target deve essere `Publish` anche.
 
    >[!NOTE]
-   > Se il livello di destinazione è `Author`, l’istanza di authoring viene chiusa per tutta la durata dell’acquisizione e diventa non disponibile per gli utenti (ad esempio, autori o chiunque esegua attività di manutenzione). Il motivo è proteggere il sistema ed evitare eventuali modifiche che potrebbero andare perse o causare un conflitto di acquisizione. Assicurati che il tuo team sia a conoscenza di questo fatto. Inoltre, l’ambiente risulta ibernato durante l’acquisizione dell’autore.
+   > Se il livello di destinazione è `Author`, l’istanza di authoring viene chiusa per tutta la durata dell’acquisizione e diventa non disponibile per gli utenti (ad esempio, autori o chiunque esegua attività di manutenzione). Il motivo è proteggere il sistema e impedire eventuali modifiche che potrebbero andare perse o causare un conflitto di acquisizione. Assicurati che il tuo team sia a conoscenza di questo fatto. Inoltre, l’ambiente risulta ibernato durante l’acquisizione dell’autore.
 
    * **A comparsa:** Scegli la `Wipe` valore
       * Il **A comparsa** imposta il punto iniziale della destinazione dell’acquisizione. Se **A comparsa** è abilitato, la destinazione, compreso tutto il suo contenuto, viene reimpostata sulla versione dell’AEM specificata in Cloud Manager. Se non è abilitata, la destinazione mantiene il contenuto corrente come punto di partenza.
-      * Questa opzione funziona **NOT** influenzano il modo in cui verrà eseguita l’acquisizione del contenuto. L’acquisizione utilizza sempre una strategia di sostituzione dei contenuti e _non_ una strategia di unione dei contenuti in modo tale che, in entrambi **A comparsa** e **Non Cancellato** In alcuni casi, l’acquisizione di un set di migrazione sovrascriverà i contenuti nello stesso percorso sulla destinazione. Ad esempio, se il set di migrazione contiene `/content/page1` e la destinazione contiene già `/content/page1/product1`, l’acquisizione rimuoverà l’intero `page1` percorso e relative pagine secondarie, inclusi `product1`e sostituirlo con il contenuto nel set di migrazione. Ciò significa che è necessario eseguire un’attenta pianificazione quando si esegue una **Non Cancellato** acquisizione in una destinazione che contiene qualsiasi contenuto che deve essere mantenuto.
+      * Questa opzione funziona **NOT** influenzano il modo in cui verrà eseguita l’acquisizione del contenuto. L’acquisizione utilizza sempre una strategia di sostituzione dei contenuti e _non_ una strategia di unione dei contenuti in modo tale che, in entrambi **A comparsa** e **Non Cancellato** In alcuni casi, l’acquisizione di un set di migrazione sovrascriverà i contenuti nello stesso percorso sulla destinazione. Ad esempio, se il set di migrazione contiene `/content/page1` e la destinazione contiene già `/content/page1/product1`, l’acquisizione rimuove l’intero `page1` percorso e relative pagine secondarie, inclusi `product1`e sostituirlo con il contenuto nel set di migrazione. Ciò significa che è necessario eseguire un’attenta pianificazione quando si esegue una **Non Cancellato** acquisizione in una destinazione che contiene qualsiasi contenuto che deve essere mantenuto.
 
    >[!IMPORTANT]
    > Se l&#39;impostazione **A comparsa** è abilitato per l’acquisizione, ripristina l’intero archivio esistente, incluse le autorizzazioni utente sull’istanza del Cloud Service di destinazione. Questo ripristino è valido anche per un utente amministratore aggiunto al **amministratori** e tale utente deve essere aggiunto nuovamente al gruppo amministratori per avviare un’acquisizione.
@@ -78,7 +78,7 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Acquisizione integrativa"
->abstract="Utilizza la funzione integrativa per spostare il contenuto modificato dall’ultima attività di trasferimento dei contenuti. Al termine dell’acquisizione, verifica la presenza di eventuali errori o avvisi nei registri. Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando l’Assistenza clienti di Adobe."
+>abstract="Utilizza la funzione integrativa per spostare il contenuto modificato dall’ultima attività di trasferimento dei contenuti. Al termine dell’acquisizione, controlla i registri per individuare eventuali errori o avvisi. Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando l’Assistenza clienti di Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=it" text="Visualizzazione dei registri"
 
 Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che consente l’estrazione di contenuti differenziali eseguendo una *integrativo* del set di migrazione. Questo consente di modificare il set di migrazione in modo da includere solo il contenuto modificato rispetto all’estrazione precedente, senza dover estrarre nuovamente tutto il contenuto.
@@ -97,7 +97,7 @@ Per prima cosa, crea un processo di acquisizione e assicurati che **A comparsa**
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Risoluzione dei problemi di acquisizione dei contenuti"
->abstract="Consulta i registri di acquisizione e la documentazione per trovare soluzioni ai motivi comuni per cui un’acquisizione può non riuscire, trovare il modo di risolvere il problema ed eseguire di nuovo l’acquisizione."
+>abstract="Consulta i registri di acquisizione e la documentazione per trovare soluzioni ai motivi comuni per cui un’acquisizione può non riuscire e trovare il modo di risolvere il problema. Una volta risolta, l’acquisizione può essere eseguita nuovamente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Convalida dei trasferimenti di contenuto"
 
 ### CAM: impossibile recuperare il token di migrazione {#cam-unable-to-retrieve-the-migration-token}
@@ -132,14 +132,14 @@ Questo messaggio indica che Cloud Acceleration Manager non è riuscito a raggiun
 
 * AEM as a Cloud Service mantiene lo stato dell’ambiente e occasionalmente deve riavviare il servizio di migrazione per vari motivi normali. Se il servizio viene riavviato, non potrà essere raggiunto, ma sarà disponibile alla fine.
 * È possibile che nell’istanza sia in esecuzione un altro processo. Ad esempio, se [Aggiornamenti delle versioni AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) sta applicando un aggiornamento, il sistema potrebbe essere occupato e il servizio di migrazione regolarmente non disponibile. Al termine di questo processo, è possibile tentare di nuovo l’inizio dell’acquisizione.
-* Se un [È stato applicato il Inserisco nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Tramite Cloud Manager, impedisce a Cloud Acceleration Manager di raggiungere il servizio di migrazione. Non è possibile aggiungere un indirizzo IP per le acquisizioni perché il relativo indirizzo è dinamico. Attualmente, l’unica soluzione consiste nel disattivare l’elenco consentiti IP durante il processo di acquisizione e indicizzazione.
+* Se un [È stato applicato il Inserisco nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Tramite Cloud Manager, impedisce a Cloud Acceleration Manager di raggiungere il servizio di migrazione. Non è possibile aggiungere un indirizzo IP per le acquisizioni perché il relativo indirizzo è dinamico. Attualmente, l’unica soluzione consiste nel disattivare il inserisco nell&#39;elenco Consentiti di IP durante il processo di acquisizione e indicizzazione.
 * Ci possono essere altri motivi che richiedono un&#39;indagine. Se l’acquisizione o l’indicizzazione continua a non riuscire, contatta l’Assistenza clienti di Adobe.
 
-### Aggiornamenti e acquisizioni delle versioni di AEM
+### Aggiornamenti e acquisizioni delle versioni di AEM {#aem-version-updates-and-ingestions}
 
 [Aggiornamenti delle versioni AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) vengono applicati automaticamente agli ambienti per mantenerli aggiornati con la versione più recente di AEM as a Cloud Service. Se l’aggiornamento viene attivato quando viene eseguita un’acquisizione, possono verificarsi risultati imprevedibili, incluso il danneggiamento dell’ambiente.
 
-Se nel programma di destinazione è stato effettuato l’onboarding di &quot;Aggiornamenti della versione dell’AEM&quot;, il processo di acquisizione tenterà di disabilitare la coda prima dell’avvio. Al termine dell’acquisizione, lo stato del programma di aggiornamento della versione viene ripristinato come era prima dell’avvio delle acquisizioni.
+Se nel programma di destinazione è stato effettuato l’onboarding di &quot;Aggiornamenti della versione dell’AEM&quot;, il processo di acquisizione tenta di disabilitare la coda prima dell’avvio. Al termine dell’acquisizione, lo stato del programma di aggiornamento della versione viene ripristinato come era prima dell’inizio delle acquisizioni.
 
 >[!NOTE]
 >
@@ -149,11 +149,11 @@ Se &quot;Aggiornamenti della versione dell’AEM&quot; è attivo (ovvero, gli ag
 
 >[!NOTE]
 >
-> &quot;Aggiornamenti della versione dell’AEM&quot; viene eseguito nella pipeline dell’ambiente e attenderà che la pipeline sia pulita. Se gli aggiornamenti vengono messi in coda per un periodo più lungo del previsto, assicurati che la pipeline non sia bloccata involontariamente in un flusso di lavoro personalizzato.
+> &quot;Aggiornamenti della versione dell’AEM&quot; viene eseguito nella pipeline dell’ambiente e attende che la pipeline sia pulita. Se gli aggiornamenti vengono messi in coda per un periodo più lungo del previsto, accertati che in un flusso di lavoro personalizzato la pipeline non sia bloccata involontariamente.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Errore di acquisizione integrativa a causa di violazione del vincolo di unicità
+### Errore di acquisizione integrativa a causa di violazione del vincolo di unicità {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 Una causa comune di [Acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) errore è un conflitto negli id dei nodi. Per identificare questo errore, scarica il registro di acquisizione utilizzando l’interfaccia utente di Cloud Acceleration Manager e cerca una voce come quella seguente:
 
@@ -165,7 +165,7 @@ Può anche accadere se un nodo della destinazione viene spostato tra un’acquis
 
 Questo conflitto deve essere risolto manualmente. Chi ha familiarità con il contenuto deve decidere quale dei due nodi deve essere eliminato, tenendo presente gli altri contenuti che vi fanno riferimento. La soluzione può richiedere che l’estrazione integrativa venga eseguita nuovamente senza il nodo problematico.
 
-### Acquisizione integrativa non riuscita a causa dell’impossibilità di eliminare il nodo di riferimento
+### Acquisizione integrativa non riuscita a causa dell’impossibilità di eliminare il nodo di riferimento {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 Un’altra causa comune di [Acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) errore è un conflitto di versione per un particolare nodo nell’istanza di destinazione. Per identificare questo errore, scarica il registro di acquisizione utilizzando l’interfaccia utente di Cloud Acceleration Manager e cerca una voce come quella seguente:
 
@@ -175,11 +175,17 @@ Questo può accadere se un nodo sulla destinazione viene modificato tra un’acq
 
 La soluzione può richiedere che l’estrazione integrativa venga eseguita nuovamente senza il nodo problematico. Oppure, creando un piccolo set di migrazione del nodo problematico, ma con &quot;include versions&quot; disabilitato.
 
-Le best practice indicano che se un **Non Cancellato** l’acquisizione deve essere eseguita utilizzando un set di migrazione che include le versioni (ovvero, estratte con &quot;include versions&quot;=true). È fondamentale che il contenuto nella destinazione venga modificato il meno possibile, fino al completamento del percorso di migrazione. In caso contrario, possono verificarsi tali conflitti.
+Le best practice indicano che se un **Non Cancellato** l’acquisizione deve essere eseguita utilizzando un set di migrazione che include versioni. È fondamentale che il contenuto della destinazione venga modificato il meno possibile, fino al completamento del percorso di migrazione. In caso contrario, possono verificarsi tali conflitti.
 
-### Acquisizione limitata
+### Errore di acquisizione a causa di valori di proprietà del nodo di grandi dimensioni {#ingestion-failure-due-to-large-node-property-values}
 
-Un’acquisizione creata con un’estrazione in esecuzione come set di migrazione di origine attende pazientemente che l’estrazione abbia esito positivo e a quel punto inizierà normalmente. Se l’estrazione non riesce o viene interrotta, l’acquisizione e il relativo processo di indicizzazione non iniziano ma vengono annullati. In questo caso, controlla l’estrazione per determinare il motivo dell’errore, risolvi il problema e avvia di nuovo l’estrazione. Una volta eseguita l’estrazione fissa, è possibile pianificare una nuova acquisizione.
+I valori delle proprietà del nodo memorizzati in MongoDB non possono superare i 16 MB. Se un valore di nodo supera le dimensioni supportate, l’acquisizione non riesce e il registro conterrà un `BSONObjectTooLarge` e specificare il nodo che ha superato il massimo consentito. Tieni presente che si tratta di una restrizione MongoDB.
+
+Consulta la `Node property value in MongoDB` nota in [Prerequisiti per lo strumento Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) per ulteriori informazioni e un collegamento a uno strumento Oak che potrebbe facilitare la ricerca di tutti i nodi di grandi dimensioni. Dopo aver risolto tutti i nodi con dimensioni elevate, esegui di nuovo l’estrazione e l’acquisizione.
+
+### Acquisizione limitata {#ingestion-rescinded}
+
+Un’acquisizione creata con un’estrazione in esecuzione come set di migrazione di origine attende pazientemente che l’estrazione abbia esito positivo e a quel punto inizia normalmente. Se l’estrazione non riesce o viene interrotta, l’acquisizione e il relativo processo di indicizzazione non iniziano ma vengono annullati. In questo caso, controlla l’estrazione per determinare il motivo dell’errore, risolvi il problema e avvia di nuovo l’estrazione. Una volta eseguita l’estrazione fissa, è possibile pianificare una nuova acquisizione.
 
 ## Passaggio successivo {#whats-next}
 
