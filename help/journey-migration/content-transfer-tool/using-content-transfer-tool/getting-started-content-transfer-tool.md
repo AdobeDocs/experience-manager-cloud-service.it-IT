@@ -2,10 +2,10 @@
 title: Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)
 description: Scopri come iniziare a utilizzare lo strumento Content Transfer (Trasferimento contenuti)
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0161477e5248267224fe6d637a192f409161f6d3
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 21%
+source-wordcount: '1362'
+ht-degree: 16%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
 >title="Scarica"
->abstract="Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM). Assicurati di scaricare la versione più recente."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it" text="Note sulla versione"
+>abstract="Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza di origine di Adobe Experience Manager (AEM). Assicurati di scaricare la versione più recente."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=it" text="Note sulla versione"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html" text="Portale di distribuzione software"
 
-Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. È possibile installare il pacchetto tramite [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) nell’istanza Adobe Experience Manager (AEM) di origine. Assicurati di scaricare la versione più recente. Per maggiori dettagli sull’ultima versione, consulta [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
+Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. È possibile installare il pacchetto tramite [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) nell’istanza Adobe Experience Manager (AEM) di origine. Assicurati di scaricare la versione più recente. Per maggiori dettagli sull’ultima versione, consulta [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=it).
 
 È supportata solo la versione 2.0.0 o successiva ed è consigliabile utilizzare la versione più recente.
 
@@ -45,7 +45,7 @@ L’istanza AEM di origine potrebbe essere in esecuzione dietro un firewall e ra
 
 Talvolta può essere difficile comprendere i problemi di connessione SSL/TLS. Per risolvere i problemi di connessione durante un processo di estrazione, puoi abilitare la registrazione SSL tramite la console di sistema dell’ambiente AEM sorgente seguendo la procedura riportata di seguito:
 
-1. Passa alla console web di Adobe Experience Manager nell’istanza sorgente, da **Strumenti - Operazioni - Console web** o direttamente all’URL in *https://serveraddress:serverport/system/console/configMgr*
+1. Passa alla console web di Adobe Experience Manager nell’istanza sorgente, da **Strumenti > Operazioni > Console web** o direttamente all’URL in *https://serveraddress:serverport/system/console/configMgr*
 1. Cerca **Configurazione del servizio di estrazione dello strumento Content Transfer**
 1. Utilizza il pulsante di icona della matita per modificarne i valori di configurazione
 1. Abilita **Abilita registrazione SSL per l&#39;estrazione** , quindi premere **Salva**:
@@ -78,7 +78,7 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 
 1. Accedi a Cloud Acceleration Manager (CAM) e fai clic sul progetto CAM creato in precedenza per valutare se sei pronto a passare a AEM as a Cloud Service. Se non avete creato un progetto CAM, consultate Creazione e gestione di un progetto in CAM.
 
-1. Fai clic su **Trasferimento dei contenuti** Card. Verrà visualizzata la vista Elenco set di migrazione.
+1. Fai clic su **Trasferimento dei contenuti** per aprire la vista Elenco set di migrazione.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -86,7 +86,7 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 
    >[!NOTE]
    >
-   >In Cloud Acceleration Manager è possibile creare fino a venti set di migrazione per progetto, compresi i set scaduti.
+   >In Cloud Acceleration Manager è possibile creare fino a 20 set di migrazione per progetto, compresi i set scaduti.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
@@ -114,11 +114,11 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 >abstract="Dopo aver creato un set di migrazione, questo deve essere popolato con il contenuto dell’istanza di origine da spostare nell’ambiente AEM as a Cloud Service. A questo scopo, è necessario installare lo strumento Content Transfer (Trasferimento contenuti) nell’istanza di origine."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=it" text="Estrazione del contenuto"
 
-Per popolare il set di migrazione creato in Cloud Acceleration Manager, è necessario installare la versione più recente dello strumento Content Transfer (Trasferimento contenuti) nell’istanza Adobe Experience Manager (AEM) di origine. Segui questa sezione per scoprire come popolare il set di migrazione.
+Per popolare il set di migrazione creato in Cloud Acceleration Manager, installa la versione più recente dello strumento Content Transfer nell’istanza Adobe Experience Manager (AEM) di origine. Per informazioni su come popolare il set di migrazione, consulta questa sezione.
 
 1. Dopo aver installato la versione più recente dello strumento Content Transfer (Trasferimento contenuti) nell’istanza Adobe Experience Manager di origine, vai a **Operazioni - Migrazione dei contenuti**
 
-1. Clic **Crea set di migrazione**
+1. Clic **Crea set di migrazione**.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -132,7 +132,7 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, è neces
 
 1. Quindi, seleziona i seguenti parametri per creare un set di migrazione:
 
-   1. **Include Version** (Includi versione): seleziona in base alle esigenze. Quando sono incluse le versioni, il percorso `/var/audit` è incluso automaticamente per migrare gli eventi di controllo.
+   1. **Includi versione**: seleziona in base alle esigenze. Quando sono incluse le versioni, il percorso `/var/audit` è incluso automaticamente per migrare gli eventi di controllo.
 
       ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
 
@@ -140,7 +140,7 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, è neces
       >Se desideri includere le versioni come parte di un set di migrazione ed esegui integrazioni con `wipe=false`, devi quindi disabilitare l’eliminazione della versione a causa di una limitazione corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione delle versioni e stai eseguendo integrazioni in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
 
 
-   1. **Paths to be included** (Percorsi da includere): utilizza il browser percorsi per selezionare i percorsi interessati dalla migrazione. Il selettore di percorsi accetta l’input digitando o selezionando.
+   1. **Percorsi da includere**: utilizza il browser percorsi per selezionare i percorsi che devono essere migrati. Il selettore di percorsi accetta l’input digitando o selezionando.
 
       >[!IMPORTANT]
       >Durante la creazione di un set di migrazione, i percorsi seguenti sono soggetti a restrizioni:
@@ -202,4 +202,4 @@ Per eseguire un controllo delle dimensioni, attenersi alla procedura descritta d
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso come creare un set di migrazione, puoi iniziare a conoscere i processi di estrazione e acquisizione dallo strumento Content Transfer (Trasferimento contenuti). Prima di imparare questi processi, è necessario rivedere [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti, al fine di spostare i contenuti in AEM as a Cloud Service.
+Dopo aver appreso come creare un set di migrazione, puoi iniziare a conoscere i processi di estrazione e acquisizione dallo strumento Content Transfer (Trasferimento contenuti). Prima di imparare questi processi, è necessario rivedere [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti su as a Cloud Service AEM.
