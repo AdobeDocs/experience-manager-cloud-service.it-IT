@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 021fa3631aae7aa202c544deb3685daf4dc71aa7
+source-git-commit: 46575e36a7037bee7c33c94748fc0fc92880ea87
 workflow-type: tm+mt
-source-wordcount: '4434'
+source-wordcount: '4437'
 ht-degree: 93%
 
 ---
@@ -786,6 +786,7 @@ ht-degree: 93%
       + [Ottimizzazione delle query GraphQL](/help/headless/graphql-api/graphql-optimization.md)
       + [Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzato](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Query di esempio GraphQL](/help/headless/graphql-api/sample-queries.md)
+      + [Risolvere i problemi relativi alle query GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [API REST per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=it)
    + Sicurezza {#security}
       + [Autorizzazioni](/help/headless/security/permissions.md)
