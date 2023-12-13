@@ -3,10 +3,10 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: ac7af61751c3cf751a7370b454855c5361fabe02
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 14%
+source-wordcount: '1428'
+ht-degree: 12%
 
 ---
 
@@ -41,6 +41,12 @@ Dai un’occhiata al video Panoramica sulla versione di novembre 2023 per un rie
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Programma di adozione anticipata {#sites-early-adopter}
+
+**Puoi sfruttare [Servizio dati di Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** per abilitare la raccolta lato client per AEM as a Cloud Service.
+
+Real User Monitoring (RUM) Data Service offre un riflesso più preciso delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web. È un’ottima opportunità per ottenere informazioni avanzate sulle prestazioni della pagina. Questo è utile per i clienti che utilizzano una rete CDN gestita da Adobe o una rete CDN non gestita da Adobe. Inoltre, per i clienti che utilizzano una rete CDN gestita non basata su Adobi, ora è possibile abilitare il reporting automatico del traffico, eliminando in tal modo la necessità di condividere eventuali rapporti sul traffico con Adobe.
+
+Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un’e-mail a `aemcs-rum-adopter@adobe.com`, insieme al nome di dominio per l’ambiente di produzione, stage e sviluppo, dall’indirizzo e-mail associato al tuo Adobe ID. Il team di prodotto di Adobe abiliterà quindi il servizio dati Real User Monitoring (RUM).
 
 **[Trovare e sostituire stringhe nei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: la console Frammenti di contenuto offre agli utenti un modo semplice e intuitivo di sostituire una stringa che appare contemporaneamente in più frammenti di contenuto per accelerare la velocità dei contenuti.
 
