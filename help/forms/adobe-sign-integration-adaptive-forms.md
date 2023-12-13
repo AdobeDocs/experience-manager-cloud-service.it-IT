@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 821c243ab2d8ce1468c80c36d01b5c4c8f2bec76
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2033'
 ht-degree: 1%
 
 ---
@@ -231,9 +231,12 @@ Il rappresentante genera e condivide le credenziali con te. Nella sezione succes
 
 Ora puoi [utilizzare aggiungere campi Adobe Acrobat Sign in un modulo adattivo](working-with-adobe-sign.md) o [Flusso di lavoro AEM](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Accertati di aggiungere il contenitore di configurazione utilizzato per la configurazione del Cloud Service a tutto il Forms adattivo abilitato per [!DNL Adobe Acrobat Sign]. È possibile specificare un contenitore di configurazione dalle proprietà di un modulo adattivo.
 
-## (Solo per flussi di lavoro AEM) Configura [!DNL Adobe Acrobat Sign] per sincronizzare lo stato della firma {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
+## Configura [!DNL Adobe Acrobat Sign] per sincronizzare lo stato della firma {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-Quando si utilizza [!DNL Adobe Acrobat Sign] Passaggio del flusso di lavoro per firmare un modulo adattivo, il modulo può essere trasmesso tra i firmatari uno dopo l’altro o può essere inviato a tutti i firmatari contemporaneamente, a seconda della configurazione del passaggio del flusso di lavoro. [!DNL Adobe Acrobat Sign] Forms adattivo abilitato vengono inviati a Experience Manager Forms Server solo dopo che tutti i firmatari hanno completato il processo di firma.
+AEM Forms as a Cloud Service fornisce un servizio di pianificazione che controlla lo stato dei firmatari a intervalli definiti. Gli scenari in cui si configura il servizio di pianificazione:
+
+* Se usa [Invia il modulo (dopo che ogni destinatario ha completato la firma)](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order) per firmare un documento, il modulo viene inviato solo dopo che tutti i firmatari hanno firmato il modulo.
+* Se si utilizza [Passaggio per accedere a un flusso di lavoro AEM](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step) per firmare un documento, il passaggio firma attende che tutti i firmatari firmino il documento, prima di procedere al passaggio successivo del flusso di lavoro.
 
 Per impostazione predefinita, il [!DNL Adobe Acrobat Sign] I servizi di pianificazione controllano (polling) la risposta del firmatario dopo ogni 24 ore. È possibile modificare l’intervallo predefinito per l’ambiente.
 

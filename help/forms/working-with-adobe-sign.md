@@ -6,9 +6,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: e81da7414335e00411942adeb41978d39f172b52
 workflow-type: tm+mt
-source-wordcount: '3131'
+source-wordcount: '3242'
 ht-degree: 0%
 
 ---
@@ -160,7 +160,7 @@ Un documento può avere anche più destinatari. Ad esempio, un&#39;applicazione 
 
 Per selezionare un Cloud Service e un ordine di firma:
 
-![Cloud-service](assets/cloud-service.png)
+![Cloud-service](/help/forms/assets/adobe-sign-cloud-service.png)
 
 1. Nel browser Contenuto, seleziona **[!UICONTROL Contenitore modulo]**, e seleziona la **[!UICONTROL Configura]** ![configura](assets/Smock_Wrench_18_N.svg) icona. Apre il browser delle proprietà e visualizza le proprietà del contenitore Modulo adattivo.
 1. Nel browser delle proprietà, espandi la sezione **[!UICONTROL Firma elettronica]** Pannello a soffietto e seleziona la **[!UICONTROL Abilita Adobe Sign]** opzione. Abilita [!DNL Adobe Sign] per un modulo adattivo.
@@ -170,6 +170,10 @@ Per selezionare un Cloud Service e un ordine di firma:
 
    Nell’elenco a discesa sono elencati i Cloud Service presenti nel `global` cartella in Strumenti > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Inoltre, l’elenco a discesa elenca anche i Cloud Service presenti nella cartella selezionata nell’ **[!UICONTROL Contenitore configurazione]** quando crei un modulo adattivo.
 
+1. Seleziona l’opzione per configurare l’azione di invio tramite **[!UICONTROL Inviare il modulo]**. È possibile selezionare una delle due opzioni seguenti:
+   * **Invia il modulo (e invia il contratto per la firma)**: questa opzione invia il modulo immediatamente e quindi lo invia ai destinatari per la firma.
+   * **Invia il modulo (dopo che ogni destinatario ha completato la firma)**: questa opzione invia Forms adattivo solo dopo che tutti i firmatari hanno completato il processo di firma. È possibile configurare l&#39;intervallo per controllare lo stato di firma per tutti i firmatari. Per ulteriori informazioni, consulta  [Configura [!DNL Adobe Acrobat Sign] modulo di pianificazione](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status).
+
 1. Selezionare l&#39;ordine di firma dalla **[!UICONTROL I destinatari possono completare]** . I destinatari possono firmare un modulo adattivo **[!UICONTROL In sequenza]** - uno dopo l&#39;altro, o **[!UICONTROL Contemporaneamente]** - in qualsiasi ordine.
 
    In ordine sequenziale, un destinatario riceve il contratto Adobe Sign alla volta. Dopo che il destinatario ha completato l&#39;azione assegnata, l&#39;accordo viene inviato al destinatario successivo e così via.
@@ -177,6 +181,10 @@ Per selezionare un Cloud Service e un ordine di firma:
    In ordine simultaneo, tutti i destinatari ricevono l’accordo Adobe Sign e possono agire in parallelo tra loro.
 
 1. Utilizzare il campo ID accordo per associare un bindref all&#39;ID accordo (agreementId). Aggiunge l’ID contratto alla sezione afBoundData dei dati di invio per i moduli basati su schema. L’ID contratto viene aggiunto anche alla sezione afSubmissionInfo nei dati inviati per tutti i moduli abilitati per Adobe Sign. È possibile utilizzare l&#39;ID accordo per tenere traccia dello stato dell&#39;accordo utilizzando un codice personalizzato (è necessaria l&#39;implementazione personalizzata).
+
+   >[!NOTE]
+   >
+   > Se viene creato un modulo adattivo utilizzando un modello dati modulo, il campo ID accordo diventa visibile nella finestra di dialogo.
 
 1. [Aggiungere destinatari a un modulo adattivo](working-with-adobe-sign.md#addsignerstoanadaptiveform) e selezionate Fatto (Done) ![Salva](assets/save_icon.svg) per salvare le modifiche.
 
