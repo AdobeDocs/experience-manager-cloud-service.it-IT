@@ -1,61 +1,54 @@
 ---
 title: Utilizzo di Edge Delivery Services
-description: Utilizzo di Edge Delivery Services
+description: Scopri come utilizzare AEM as a Cloud Service con i Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: 5df61db6e0bd24d55ce73290b37ed55f167e0da2
+source-git-commit: 5197a53b8aa763d7e1b2b2ce9097ee2bc8521dfa
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 97%
+source-wordcount: '389'
+ht-degree: 14%
 
 ---
 
+
 # Utilizzo di Edge Delivery Services {#usingedge}
 
-Con Edge Delivery, puoi creare ambienti di sviluppo rapido in cui gli autori possono aggiornare e pubblicare rapidamente i contenuti e che consentono il lancio rapido di nuovi siti. A questo scopo, puoi lavorare con più origini di contenuto sullo stesso sito web e pubblicarli in modo semplice e diretto, a prescindere dall’origine scelta. In un paio di secondi potrai passare dall’editing al contenuto live in Internet.
+Con i Edge Delivery Services, puoi creare ambienti di sviluppo rapido in cui gli autori possono aggiornare e pubblicare rapidamente i contenuti e in cui è possibile avviare rapidamente nuovi siti. A questo scopo, puoi lavorare con più origini di contenuto sullo stesso sito web e pubblicarli in modo semplice e diretto, a prescindere dall’origine scelta. In un paio di secondi potrai passare dall’editing al contenuto live in Internet.
+
+## Ricerca dello strumento giusto {#right-tool}
+
+I Edge Delivery Services sono scollegati dall’origine del contenuto e possono acquisire il contenuto da diverse origini.
+
+![Origini di contenuto per la distribuzione Edge](assets/content-sources.png)
+
+L’acquisizione da più origini di contenuto offre la massima flessibilità all’utente. Adobe offre informazioni utili per scegliere le origini di contenuto più adatte al progetto.
+
+In alcuni casi, l&#39;origine di contenuto è predefinita o non è flessibile (ad esempio, il progetto non può utilizzare Sharepoint o Google Drive). Ma in molti casi, lo strumento non è preordinato e la scelta dello strumento non è in bianco e nero.
+
+Il principio guida dell&#39;Adobe è la semplicità. Iniziare con l&#39;authoring basato su documenti e aggiungere complessità quando necessario. Se è necessario cambiare strumento, l’integrazione dei Edge Delivery Services AEM riguarda la migrazione dei contenuti.
+
+![Flessibilità dell&#39;origine di contenuto](assets/content-source-flexiblity.png)
 
 ## Authoring {#authoring-edge}
 
-Con Edge Delivery, l’authoring è semplice, veloce e flessibile. È possibile seguire due diversi percorsi per l’authoring nel contesto con Edge Delivery Services:
+Con i Edge Delivery Services, l&#39;authoring è semplice, veloce e flessibile. Con l’Editor universale è possibile scegliere di eseguire l’authoring utilizzando l’authoring basato su documenti o l’authoring in AEM.
 
-* Authoring basato su documenti (come Microsoft Word o Documenti Google): [per ulteriori dettagli, fai clic su questo collegamento](https://www.hlx.live/docs/authoring).
-* Editor di pagine/Editor universale: contatta il tuo rappresentante commerciale Adobe.
-
-Con l’authoring basato su documenti, puoi utilizzare origini diverse, ad esempio Microsoft Word e Documenti Google. I documenti provenienti da queste origini diventano pagine del sito web. È possibile trasferire titoli, elenchi, immagini, elementi font e video dall’origine iniziale al tuo sito web. Puoi aggiungere metadati a scopo di SEO o utilizzare blocchi per lavorare con contenuti strutturati e aggiungere funzionalità.
+Consulta il documento [Authoring di contenuti per Edge Delivery Services](authoring.md) per ulteriori informazioni.
 
 ## Pubblicazione {#publishing-edge}
 
-Con Edge Delivery, la pubblicazione dei contenuti avviene in modo semplice e diretto, a prescindere dalla loro origine. Il processo è il seguente: utilizza l’[estensione Sidekick](#using-sidekick) per attivare il meccanismo di pubblicazione; dopo un paio di secondi, i contenuti sono disponibili in tempo reale sul tuo sito web.
+Con i Edge Delivery Services, la pubblicazione dei contenuti avviene senza soluzione di continuità, indipendentemente dall&#39;origine dei contenuti.
 
-## Edge Delivery Services e GitHub {#github-edge}
+Consulta il documento [Pubblicazione di contenuti per Edge Delivery Services](publishing.md) per ulteriori informazioni.
 
-Edge Delivery sfrutta GitHub per consentire alla clientela di gestire e distribuire il codice direttamente dall’archivio GitHub. Ad esempio, puoi scrivere contenuti in Documenti Google o Microsoft Word e sviluppare le funzionalità del sito utilizzando CSS e JavaScript in GitHub. I siti web vengono creati automaticamente per ciascuno dei rami, dall’anteprima del contenuto alla produzione. Ogni risorsa inserita nell’archivio GitHub è disponibile sul sito web senza alcun processo di compilazione.
+## Sviluppo {#developing-edge}
 
-## Utilizzare Sidekick {#using-sidekick}
+I Edge Delivery Services si basano sul concetto di blocchi. AEM viene fornito con una libreria completa di blocchi predefiniti che possono essere estesi per soddisfare le esigenze del progetto. Il codice per i progetti di Edge Delivery Services viene gestito in GitHub.
 
-AEM Sidekick fornisce una barra degli strumenti con opzioni contestuali che consentono di modificare, visualizzare in anteprima e pubblicare facilmente i contenuti. Dopo l’[installazione](https://www.hlx.live/docs/sidekick-extension), l’estensione AEM Sidekick può essere utilizzata negli ambienti di progetto o quando modifichi il contenuto (ad esempio, in Documenti Google). A seconda dell’ambiente, sono disponibili diverse azioni come: Anteprima, Ricarica, Modifica e Pubblica. Puoi anche cambiare ambiente quando utilizzi la barra laterale, passando dall’anteprima alla produzione e viceversa.
+Consulta il documento [Sviluppo per i Edge Delivery Services](developing.md) per ulteriori informazioni.
 
-**Per pubblicare**, apri Sidekick in una pagina di anteprima e utilizza l’azione Pubblica. Dopo aver fatto clic su Pubblica, la versione di anteprima corrente della pagina diventa disponibile negli ambienti live e di produzione.
+## Progetti AEM esistenti {#existing-projects}
 
-## Integrare AEM Assets con l’authoring basato su documenti {#integrate-assets-edge}
+Non c&#39;è bisogno di aspettare che un nuovo progetto AEM benefici dei Edge Delivery Services. I Edge Delivery Services possono essere integrati nel progetto AEM esistente in modo da sfruttare immediatamente i vantaggi in termini di prestazioni.
 
-Edge Delivery consente di utilizzare le immagini disponibili negli archivi AEM Assets durante la creazione di documenti Microsoft Word o Documenti Google.
-
-Le opzioni per l’utilizzo di immagini nei documenti sono disponibili solo dopo la [configurazione del plug-in Sidekick per AEM Assets](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin).
-
-Il plug-in Sidekick per AEM Assets supporta l’accesso a:
-
-* AEM Assets as a Cloud Service
-
-* AEM Assets Essentials
-
-Dopo aver configurato il plug-in Sidekick per AEM Assets, puoi [iniziare a utilizzare immagini nei documenti Microsoft Word o Documenti Google](https://www.hlx.live/docs/aem-assets-sidekick-plugin).
-
-## Ulteriori informazioni {#further-reading}
-
-Per ulteriori dettagli, consulta le pagine seguenti:
-
-* Per informazioni dettagliate su come iniziare a utilizzare Edge Delivery, consulta la sezione [Creare](https://www.hlx.live/docs/#build) della documentazione di Edge Delivery.
-* Per informazioni su come creare e pubblicare contenuti utilizzando Edge Delivery, consulta la sezione [Pubblicare](https://www.hlx.live/docs/authoring).
-* Per informazioni su come utilizzare l’estensione Sidekick, consulta la pagina [Utilizzo di Sidekick](https://www.hlx.live/docs/sidekick).
-* Per l’authoring di AEM, consulta la [pagina sui Concetti di authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=it)
+Consulta il documento [Utilizzo di Edge Delivery Services con progetti AEM esistenti](existing-projects.md) per ulteriori informazioni.
