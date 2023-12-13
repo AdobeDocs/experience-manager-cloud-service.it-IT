@@ -2,9 +2,9 @@
 title: Authoring di contenuti per Edge Delivery Services
 description: Scopri come funziona l’authoring dei contenuti con i Edge Delivery Services e come creare contenuti AEM con i Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 14%
 
 ---
@@ -21,7 +21,7 @@ Con i Edge Delivery Services, l&#39;authoring è semplice, veloce e flessibile. 
 
 Con l’authoring basato su documenti, puoi utilizzare origini diverse, ad esempio Microsoft Word e Documenti Google. I documenti provenienti da queste origini diventano pagine del sito web. È possibile trasferire titoli, elenchi, immagini, elementi font e video dall’origine iniziale al tuo sito web. Puoi aggiungere metadati a scopo di SEO o utilizzare blocchi per lavorare con contenuti strutturati e aggiungere funzionalità.
 
-Per ulteriori dettagli sull’authoring basato su documenti, consulta [questo documento è disponibile nella documentazione di Edge Delivery Services.](https://www.aem.live/docs/authoring)
+Per ulteriori dettagli sull’authoring basato su documenti, consulta [questo documento è disponibile nella documentazione di Edge Delivery Services.](/help/edge/docs/authoring.md)
 
 ## Authoring Universal Editor {#universal-editor}
 
@@ -40,7 +40,7 @@ Quando utilizzi Edge Delivery Services con AEM as a Cloud Service, il fatto più
    * Il contenuto rimane memorizzato nell’AEM.
    * L’AEM genera il HTML semantico necessario per l’acquisizione.
    * Il contenuto viene pubblicato in Edge Delivery Services.
-1. [Edge Delivery Services](https://www.aem.live/home) assicurati un punteggio di Lighthouse del 100%.
+1. [Edge Delivery Services](/help/edge/developer/keeping-it-100.md) assicurati un punteggio di Lighthouse del 100%.
 
 I blocchi sono componenti fondamentali di una pagina distribuita da Edge Delivery Services. Gli autori possono scegliere tra i blocchi predefiniti forniti come standard dall’Adobe o tra i blocchi personalizzati per il progetto dagli sviluppatori.
 
