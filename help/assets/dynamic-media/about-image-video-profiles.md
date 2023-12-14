@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: f9f82c144e6f919ed9b82caf9e1bc0408a352fd6
+source-git-commit: 34038d954802b7f8e31441d5c5e4ea90380e7a20
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Si supponga, ad esempio, di aver creato un profilo immagine di Dynamic Medie e d
 
 Puoi eseguire il flusso di lavoro di rielaborazione su una risorsa per la quale la prima elaborazione non è riuscita. Anche se non hai modificato un profilo immagine o un profilo video, oppure hai già applicato un profilo immagine o un profilo video, puoi comunque eseguire il flusso di lavoro di rielaborazione su una cartella di risorse in qualsiasi momento.
 
-Se necessario, puoi modificare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse a un massimo di 1000 risorse. Quando si esegue _Scene7: Rielabora risorse_ in una cartella, le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Medie per l’elaborazione. Dopo l’elaborazione, i metadati di ciascuna risorsa nell’intero set di batch vengono aggiornati il [!DNL Adobe Experience Manager]. Se la dimensione del batch è grande, si può verificare un ritardo nell’elaborazione. In alternativa, se la dimensione del batch è troppo piccola, potrebbero verificarsi troppi round trip al server Dynamic Medie.
+Se necessario, puoi modificare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse a un massimo di 1000 risorse. Quando si esegue _Rielaborazione Dynamic Medie_ in una cartella, le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Medie per l’elaborazione. Dopo l’elaborazione, i metadati di ciascuna risorsa nell’intero set di batch vengono aggiornati il [!DNL Adobe Experience Manager]. Se la dimensione del batch è grande, si può verificare un ritardo nell’elaborazione. In alternativa, se la dimensione del batch è troppo piccola, potrebbero verificarsi troppi round trip al server Dynamic Medie.
 
 Consulta [Regolare la dimensione batch del flusso di lavoro di rielaborazione](#adjusting-load).
 
