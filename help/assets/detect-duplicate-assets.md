@@ -1,17 +1,23 @@
 ---
-title: Consente di gestire i contenuti digitali
+title: Rileva risorse duplicate per [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Scopri come rilevare le risorse duplicate
 contentOwner: KK
 mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 40f63933-4f4e-4318-8d42-4b5c9b01f7cd
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
+source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 4%
+source-wordcount: '201'
+ht-degree: 7%
 
 ---
+
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Questo articolo |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
 
 # Rilevare risorse duplicate {#detect-duplicate-assets}
 
