@@ -1,19 +1,19 @@
 ---
-title: Note sulla versione 2023.11.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
-description: Queste sono le note sulla versione 2023.11.0 di Cloud Manager in AEM as a Cloud Service.
+title: Note sulla versione 2023.12.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
+description: Queste sono le note sulla versione 2023.12.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
+source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 25%
+source-wordcount: '772'
+ht-degree: 17%
 
 ---
 
 
-# Note sulla versione 2023.11.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Note sulla versione 2023.12.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2023.11.0 di Cloud Manager in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione 2023.12.0 di Cloud Manager in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,36 +21,42 @@ Questa pagina illustra le note sulla versione 2023.11.0 di Cloud Manager in AEM 
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di Cloud Manager versione 2023.11.0 in AEM as a Cloud Service è il 14 novembre 2023. La prossima versione è pianificata per il 7 dicembre 2023.
+La data di pubblicazione di Cloud Manager versione 2023.12.0 in AEM as a Cloud Service è il 14 dicembre 2023. La prossima versione è prevista per il 18 gennaio 2024.
 
 ## Novità {#what-is-new}
 
-* La protezione WAF-DDOS (Web Application Firewall-DDOS) è ora disponibile per l&#39;acquisto come parte della licenza as a Cloud Service per l&#39;AEM e [può essere configurato in modo autonomo.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* Specializzato [configurare le pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Sono ora disponibili per configurare e distribuire in pochi minuti le regole del filtro del traffico, incluse le regole WAF.
-* [Durante la copia del contenuto](/help/implementing/developing/tools/content-copy.md) da un ambiente superiore a uno di sviluppo, ora viene visualizzato un messaggio che consiglia di prestare attenzione quando si copiano set di contenuti di grandi dimensioni, poiché gli ambienti di sviluppo hanno capacità limitata.
-* [Pagina dei dettagli di esecuzione della pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) ora mostra tutti i passaggi di un’esecuzione della pipeline con quelli non ancora avviati in grigio.
-* Su entrambi **[Attività](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** e **[Pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** Quando si seleziona una pipeline con stato in esecuzione, è ora disponibile un riepilogo dell’esecuzione della pipeline.
-* È stata aggiunta una nuova sezione **Durata** alla [pagina Dettagli della pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details), che include la durata media del passaggio della pipeline in base alla tendenza storica per quel programma.
-* Il giorno [pagina di esecuzione della pipeline,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) i passaggi completati ora visualizzano la durata.
-* Esecuzioni che [riutilizzare gli artefatti di build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) ora mostra il collegamento all’esecuzione che ha generato inizialmente tali artefatti.
-* Opzione da selezionare **Errori di metriche importanti** può ora essere configurato per [pipeline di qualità del codice](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) anche.
-
+* [Autorizzazioni personalizzate di Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) consente di creare profili di autorizzazioni personalizzati con autorizzazioni configurabili per limitare l’accesso a programmi, pipeline e ambienti per gli utenti di Cloud Manager.
+   * Questa funzione verrà implementata in modo graduale, con il completamento previsto con la versione di Cloud Manager di febbraio 2024.
+   * Invia un&#39;e-mail a `Grp-CloudManager-custom-permissions@adobe.com` dall’indirizzo e-mail associato al tuo Adobe ID, se desideri che venga attivato prima.
+* I contenitori delle build ora supportano Node.js versione 18 per [pipeline front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+* Per i nuovi programmi di Cloud Manager, [l’account secondario New Relic associato](/help/implementing/cloud-manager/user-access-new-relic.md) non è attivato per impostazione predefinita.
+   * Per i programmi esistenti in cui non si accede all’account secondario di New Relic da più di 90 giorni, questo verrà disattivato.
+   * Se desideri utilizzare l’account secondario New Relic, devi fornire il consenso tramite Cloud Manager.
+* Rollout delle versioni secondarie per Java 8 e 11 e aggiornamenti a maven [annunciato e iniziato con la versione di ottobre di Cloud Manager](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) sono state completate.
+   * È stato aggiunto il supporto per il nodo 18 per le pipeline front-end e full-stack.
+   * La versione secondaria di Java 8 è stata aggiornata a `jdk1.8.0_371`.
+   * La versione secondaria di Java 11 è stata aggiornata a `jdk-11.0.20`.
+   * È stato aggiunto il supporto per Java 17.
+   * Maven è stato aggiornato alla versione 3.8.8
+   * L’immagine base del contenitore della build è stata aggiornata a Ubuntu 22.04.
 
 ## Programma per i primi utilizzatori {#early-adoption}
 
 Per testare alcune delle prossime funzionalità, partecipa al programma di adozione anticipata di Adobe.
+
+### Raccolta lato client tramite Real User Monitoring (RUM) {#rum}
+
+Puoi sfruttare [Servizio dati di Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) per abilitare la raccolta lato client per AEM as a Cloud Service.
+
+Real User Monitoring (RUM) Data Service offre un riflesso più preciso delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web. È un’ottima opportunità per ottenere informazioni avanzate sulle prestazioni della pagina. Questa funzione è utile per i clienti che utilizzano una rete CDN gestita da Adobe o una rete CDN gestita da non Adobe. Per i clienti che utilizzano una rete CDN gestita non basata su Adobi, ora è possibile abilitare il reporting automatico del traffico, eliminando in tal modo la necessità di condividere eventuali rapporti sul traffico con Adobe.
+
+Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un’e-mail a `aemcs-rum-adopter@adobe.com` dall’indirizzo e-mail associato al tuo Adobe ID. Includi il nome di dominio per gli ambienti di produzione, staging e sviluppo nell’e-mail.  La disponibilità del programma di adozione anticipata di questa funzione è limitata.
 
 ### Porta il tuo GitHub personale {#byo-github}
 
 Se utilizzi GitHub per gestire gli archivi, [ora puoi convalidare il codice direttamente all’interno degli archivi GitHub tramite Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) Questa integrazione elimina la necessità di sincronizzare in modo coerente il codice con l’archivio Adobe e consente di verificare le richieste pull prima di unirle ai rami principali.
 
 Se ti interessa testare questa nuova funzione e condividere i tuoi commenti, invia un’e-mail a `Grp-CloudManager_BYOG@adobe.com` dal tuo indirizzo e-mail associato al tuo Adobe ID.
-
-### Autorizzazioni personalizzate {#custom-permissions}
-
-[Autorizzazioni personalizzate di Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) consente di creare profili di autorizzazioni personalizzati con autorizzazioni configurabili per limitare l’accesso a programmi, pipeline e ambienti per gli utenti di Cloud Manager.
-
-Se ti interessa testare questa nuova funzione e condividere i tuoi commenti, invia un’e-mail a `Grp-CloudManager-custom-permissions@adobe.com` dal tuo indirizzo e-mail associato al tuo Adobe ID.
 
 ### Ripristino del contenuto self-service {#content-restore}
 
@@ -72,15 +78,3 @@ Se ti interessa testare questa nuova funzione e condividere i tuoi commenti, inv
 La dashboard utilizza Google Lighthouse, uno strumento open-source automatizzato per migliorare la qualità delle app web. Puoi eseguirla su qualsiasi pagina web, pubblica o che richiede l’autenticazione. Sono disponibili controlli di prestazioni, accessibilità, applicazioni web progressive, SEO e altro ancora.
 
 Ti interessa testare il nuovo cruscotto? Per iniziare, invia un’e-mail a `aem-lighthouse-pilot@adobe.com` dall’e-mail associata al tuo Adobe ID.
-
-## Problemi noti {#known-issues}
-
-Esiste un bug noto che impedisce [configurare le pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) dall&#39;invio alla produzione.
-
-Se il **Sospendi prima della distribuzione in produzione** per una pipeline di configurazione è necessaria l’opzione, di seguito è riportata la soluzione alternativa consigliata fino alla risoluzione del bug.
-
-1. Eseguire la pipeline.
-1. Verifica il codice nell’ambiente di staging.
-1. Quando la distribuzione e l’approvazione diventano disponibili, fai clic su **Rifiuta**.
-1. Modifica la pipeline in modo da poter disabilitare **Sospendi prima della distribuzione in produzione** opzione.
-1. Esegui nuovamente la pipeline in modo che possa essere eseguita nuovamente nell’ambiente di staging e quindi in produzione.
