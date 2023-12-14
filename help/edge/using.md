@@ -3,10 +3,10 @@ title: Utilizzo di Edge Delivery Services
 description: Scopri come utilizzare AEM as a Cloud Service con i Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: 5197a53b8aa763d7e1b2b2ce9097ee2bc8521dfa
+source-git-commit: 5b24b984ea738096ef67b72a3d96e9b5931d2200
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 14%
+source-wordcount: '385'
+ht-degree: 15%
 
 ---
 
@@ -14,8 +14,6 @@ ht-degree: 14%
 # Utilizzo di Edge Delivery Services {#usingedge}
 
 Con i Edge Delivery Services, puoi creare ambienti di sviluppo rapido in cui gli autori possono aggiornare e pubblicare rapidamente i contenuti e in cui è possibile avviare rapidamente nuovi siti. A questo scopo, puoi lavorare con più origini di contenuto sullo stesso sito web e pubblicarli in modo semplice e diretto, a prescindere dall’origine scelta. In un paio di secondi potrai passare dall’editing al contenuto live in Internet.
-
-## Ricerca dello strumento giusto {#right-tool}
 
 I Edge Delivery Services sono scollegati dall’origine del contenuto e possono acquisire il contenuto da diverse origini.
 
