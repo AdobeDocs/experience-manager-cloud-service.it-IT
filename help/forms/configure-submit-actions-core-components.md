@@ -4,9 +4,9 @@ description: Un modulo adattivo fornisce più azioni di invio. Un’azione di in
 keywords: come selezionare l’azione di invio per un modulo adattivo, collegare un modulo adattivo a un elenco di sharepoint, collegare un modulo adattivo a una raccolta documenti di sharepoint, collegare un modulo adattivo a un modello dati del modulo
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: c2bf362a9949b3d6d427a28821056a0cc9edfa85
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4102'
 ht-degree: 2%
 
 ---
@@ -171,8 +171,6 @@ Quando si invia il modulo, i dati vengono salvati nell&#39;archivio della raccol
 La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ### Collegare un modulo adattivo all’elenco di Microsoft® SharePoint {#connect-af-sharepoint-list}
-
-<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
