@@ -2,9 +2,9 @@
 title: Monitoraggio dell’infrastruttura e dei servizi in AEM as a Cloud Service
 description: Monitoraggio dell’infrastruttura e dei servizi in AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 484a9a133b2f3d873d725542fc66652134c5e4d5
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '562'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ Con il monitoraggio personalizzato, i clienti possono facoltativamente fornire f
 
 >[!NOTE]
 >
-> Questa funzionalità è disponibile solo per i clienti con [Supporto cloud avanzato.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) In caso di domande, contatta il team del tuo account di Adobe.
+> Questa funzionalità è disponibile solo per ambienti di produzione e clienti con [Supporto cloud avanzato.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) In caso di domande, contatta il team del tuo account di Adobe.
 
 ## Monitoraggio di moduli interni {#module-monitoring}
 
@@ -47,7 +47,7 @@ Mentre la disponibilità esterna si concentra sul monitoraggio degli utenti fina
 * La dimensione dell’archivio di authoring rientra in alcuni limiti.
 * Operazioni di backup completate.
 * Lo stato e le prestazioni del database vengono monitorati.
-* I servizi AEM Cloud si comportano come previsto, comprese code di replica bloccate, dati coerenti e query performanti.
+* I servizi cloud di AEM si comportano come previsto, senza code di replica bloccate, dati coerenti e query performanti.
 
 Vengono aggiunti controlli aggiuntivi agli ambienti per i quali è stato eseguito il provisioning per Forms. Le definizioni di controllo non sono statiche e sono soggette a modifiche e aggiornamenti.
 
