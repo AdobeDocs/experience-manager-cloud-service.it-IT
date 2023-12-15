@@ -2,10 +2,10 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: efca024511b5d79553864fbcefda3649ab7af7b6
 workflow-type: tm+mt
-source-wordcount: '2585'
-ht-degree: 83%
+source-wordcount: '2607'
+ht-degree: 81%
 
 ---
 
@@ -18,9 +18,9 @@ Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e co
 
 L’utente con le autorizzazioni necessarie può creare i seguenti tipi di ambienti (entro i limiti delle opzioni disponibili per il tenant specifico).
 
-* **Produzione e staging**: gli ambienti di produzione e staging sono disponibili in coppia e sono rispettivamente utilizzati a scopo di produzione e di test.
+* **Produzione e staging** - Gli ambienti di produzione e di staging sono disponibili in coppia e vengono utilizzati rispettivamente a scopo di produzione e test. Esecuzione di test di prestazioni e sicurezza nell&#39;ambiente stage. Ha le stesse dimensioni della produzione.
 
-* **Sviluppo**: è possibile creare un ambiente di sviluppo sia per scopi di sviluppo che per scopi di test, che può essere associato solo a pipeline non destinate alla produzione.
+* **Sviluppo** - È possibile creare un ambiente di sviluppo per scopi di sviluppo e test e associarlo solo a pipeline non di produzione.  Gli ambienti di sviluppo non hanno le stesse dimensioni di stage e produzione e non devono essere utilizzati per eseguire test di prestazioni e sicurezza.
 
 * **Sviluppo rapido**: un ambiente di sviluppo rapido (RDE, Rapid Development Environment) consente allo sviluppatore di implementare e rivedere rapidamente le modifiche, riducendo al minimo il tempo necessario per testare le funzioni che hanno dimostrato di funzionare in un ambiente di sviluppo locale. Consulta [la documentazione sull’ambiente di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md) per ottenere informazioni dettagliate sull’utilizzo di un RDE.
 
