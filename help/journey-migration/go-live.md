@@ -2,9 +2,9 @@
 title: Pubblicazione
 description: Scopri come eseguire la migrazione una volta che il codice e il contenuto sono pronti per il cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1721'
 ht-degree: 4%
 
 ---
@@ -152,6 +152,8 @@ Rivedi questo elenco di attività per assicurarti di eseguire una migrazione flu
       * Il TTL è il periodo di tempo in cui un record DNS rimane nella cache prima di richiedere un aggiornamento al server.
       * Se il TTL è molto alto, la propagazione degli aggiornamenti al record DNS richiederà più tempo.
 * Eseguire test di prestazioni e sicurezza che soddisfino i requisiti e gli obiettivi aziendali.
+   * Esecuzione di test nell&#39;ambiente stage.  Ha le stesse dimensioni della produzione.
+   * Gli ambienti di sviluppo non hanno le stesse dimensioni di stage e produzione.
 * Esamina il passaggio e assicurati che il lancio effettivo venga eseguito senza alcuna nuova distribuzione o aggiornamento del contenuto.
 * Creazione di Admin Console di profili di notifica utente. Consulta [Profili di notifica](/help/journey-onboarding/notification-profiles.md)
 
