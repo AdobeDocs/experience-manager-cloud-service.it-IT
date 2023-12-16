@@ -3,9 +3,9 @@ title: Note sulla versione 2023.12.0 di Cloud Manager in Adobe Experience Manage
 description: Queste sono le note sulla versione 2023.12.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 71ce915413cd968a78a33b7a52d02e09841e1707
+source-git-commit: c0fc4b2ced046a1e975aca99463cdfa03462f2f4
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '784'
 ht-degree: 17%
 
 ---
@@ -32,11 +32,11 @@ La data di pubblicazione di Cloud Manager versione 2023.12.0 in AEM as a Cloud S
 * Per i nuovi programmi di Cloud Manager, [l’account secondario New Relic associato](/help/implementing/cloud-manager/user-access-new-relic.md) non è attivato per impostazione predefinita.
    * Per i programmi esistenti in cui non si accede all’account secondario di New Relic da più di 90 giorni, questo verrà disattivato.
    * Se desideri utilizzare l’account secondario New Relic, devi fornire il consenso tramite Cloud Manager.
-* Rollout delle versioni secondarie per Java 8 e 11 e aggiornamenti a maven [annunciato e iniziato con la versione di ottobre di Cloud Manager](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) sono state completate.
-   * È stato aggiunto il supporto per il nodo 18 per le pipeline front-end e full-stack.
+* I rollout degli aggiornamenti di [ambiente di build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) che erano [annunciato e iniziato con la versione di ottobre di Cloud Manager](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) sono state completate.
+   * È stato aggiunto il supporto per il nodo 18 per [pipeline front-end e full stack.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
    * La versione secondaria di Java 8 è stata aggiornata a `jdk1.8.0_371`.
    * La versione secondaria di Java 11 è stata aggiornata a `jdk-11.0.20`.
-   * Maven è stato aggiornato alla versione 3.8.8
+   * Maven è stato aggiornato alla versione 3.8.8.
       * Maven ora disabilita tutti gli elementi non sicuri `http://*` per impostazione predefinita.
       * [Adobe di consigli](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) Gli utenti aggiornano gli archivi Maven per utilizzare HTTPS invece di HTTP.
    * L’immagine base del contenitore della build è stata aggiornata a Ubuntu 22.04.
