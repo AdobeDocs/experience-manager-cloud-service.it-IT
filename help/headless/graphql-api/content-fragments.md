@@ -3,9 +3,9 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1b93cc01c602114d2a1822bc90e0efb5a6e40d6d
+source-git-commit: 055d510f8bd3a227c2c51d7f0dea561f06f9b4fd
 workflow-type: tm+mt
-source-wordcount: '4930'
+source-wordcount: '4924'
 ht-degree: 90%
 
 ---
@@ -1047,7 +1047,6 @@ Per proteggere da potenziali problemi, esistono limitazioni predefinite imposte 
 * La query non può contenere più di 1 metro (1024 * 1024) di caratteri
 * La query non può contenere più di 15000 token
 * La query non può contenere più di 200000 token di spazio vuoto
-* La profondità della query non può superare i 500
 
 ## Domande frequenti {#faqs}
 
