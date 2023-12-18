@@ -2,9 +2,9 @@
 title: Acquisizione di contenuti nel Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
+source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2407'
 ht-degree: 4%
 
 ---
@@ -159,9 +159,11 @@ Una causa comune di [Acquisizione integrativa](/help/journey-migration/content-t
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: proprietà violata dal vincolo di unicità [jcr:uuid] con valore a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-Ogni nodo in AEM deve avere un UUID univoco. Questo errore indica che un nodo che viene acquisito ha lo stesso UUID di uno esistente altrove in un percorso diverso nell’istanza di destinazione.
-Questa situazione può verificarsi se un nodo viene spostato sull’origine tra un’estrazione e una successiva [Estrazione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-Può anche accadere se un nodo della destinazione viene spostato tra un’acquisizione e una successiva acquisizione integrativa.
+Ogni nodo in AEM deve avere un UUID univoco. Questo errore indica che un nodo che viene acquisito ha lo stesso UUID di quello esistente in un percorso diverso nell’istanza di destinazione. Questa situazione può verificarsi per due motivi:
+
+* Un nodo viene spostato sull’origine tra un’estrazione e una successiva [Estrazione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+   * _RICORDA_: per le estrazioni integrative, il nodo continuerà a esistere nel set di migrazione, anche se non esiste più nell’origine.
+* Un nodo sulla destinazione viene spostato tra un’acquisizione e una successiva acquisizione integrativa.
 
 Questo conflitto deve essere risolto manualmente. Chi ha familiarità con il contenuto deve decidere quale dei due nodi deve essere eliminato, tenendo presente gli altri contenuti che vi fanno riferimento. La soluzione può richiedere che l’estrazione integrativa venga eseguita nuovamente senza il nodo problematico.
 
@@ -171,7 +173,7 @@ Un’altra causa comune di [Acquisizione integrativa](/help/journey-migration/co
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity001: impossibile eliminare il nodo a cui si fa riferimento: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-Questo può accadere se un nodo sulla destinazione viene modificato tra un’acquisizione e una successiva **Non Cancellato** acquisizione tale da aver creato una nuova versione. Se il set di migrazione è stato estratto con &quot;includi versioni&quot; abilitato, si potrebbe verificare un conflitto in quanto la destinazione dispone ora di una versione più recente a cui fa riferimento la cronologia delle versioni e altro contenuto. Il processo di acquisizione non sarà in grado di eliminare il nodo della versione che genera l’infrazione perché vi si fa riferimento.
+Questo può accadere se un nodo sulla destinazione viene modificato tra un’acquisizione e una successiva **Non Cancellato** acquisizione tale da aver creato una nuova versione. Se il set di migrazione è stato estratto con &quot;includi versioni&quot; abilitato, si potrebbe verificare un conflitto in quanto la destinazione dispone ora di una versione più recente a cui fa riferimento la cronologia delle versioni e altro contenuto. Il processo di acquisizione non è in grado di eliminare il nodo della versione che causa l’errore perché vi si fa riferimento.
 
 La soluzione può richiedere che l’estrazione integrativa venga eseguita nuovamente senza il nodo problematico. Oppure, creando un piccolo set di migrazione del nodo problematico, ma con &quot;include versions&quot; disabilitato.
 
@@ -179,7 +181,7 @@ Le best practice indicano che se un **Non Cancellato** l’acquisizione deve ess
 
 ### Errore di acquisizione a causa di valori di proprietà del nodo di grandi dimensioni {#ingestion-failure-due-to-large-node-property-values}
 
-I valori delle proprietà del nodo memorizzati in MongoDB non possono superare i 16 MB. Se un valore di nodo supera le dimensioni supportate, l’acquisizione non riesce e il registro conterrà un `BSONObjectTooLarge` e specificare il nodo che ha superato il massimo consentito. Tieni presente che si tratta di una restrizione MongoDB.
+I valori delle proprietà del nodo memorizzati in MongoDB non possono superare i 16 MB. Se un valore di nodo supera le dimensioni supportate, l’acquisizione non riesce e il registro conterrà un `BSONObjectTooLarge` e specificare il nodo che ha superato il massimo consentito. Questa è una restrizione di MongoDB.
 
 Consulta la `Node property value in MongoDB` nota in [Prerequisiti per lo strumento Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) per ulteriori informazioni e un collegamento a uno strumento Oak che potrebbe facilitare la ricerca di tutti i nodi di grandi dimensioni. Dopo aver risolto tutti i nodi con dimensioni elevate, esegui di nuovo l’estrazione e l’acquisizione.
 
