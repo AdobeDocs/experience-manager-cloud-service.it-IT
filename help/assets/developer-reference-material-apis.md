@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: a63a237e8da9260fa5f88060304b8cf9f508da7f
+source-git-commit: 5acbd7a56f18ee4c3d8b8f04ab17ad44fe6f0647
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 6%
+source-wordcount: '1931'
+ht-degree: 7%
 
 ---
 
@@ -97,8 +97,8 @@ Invia una richiesta HTTP POST alla cartella desiderata. Le risorse vengono creat
 
 Il tipo di contenuto del corpo della richiesta deve essere `application/x-www-form-urlencoded` dati del modulo, contenenti i seguenti campi:
 
-* `(string) fileName`: Obbligatorio. Nome della risorsa così come appare in [!DNL Experience Manager].
-* `(number) fileSize`: Obbligatorio. Dimensione file, in byte, della risorsa caricata.
+* `(string) fileName`: obbligatorio. Nome della risorsa così come appare in [!DNL Experience Manager].
+* `(number) fileSize`: obbligatorio. Dimensione file, in byte, della risorsa caricata.
 
 È possibile utilizzare una singola richiesta per avviare caricamenti per più file binari, purché ogni file binario contenga i campi obbligatori. In caso di esito positivo, la richiesta risponde con un `201` il codice di stato e un corpo contenente i dati JSON nel formato seguente:
 
@@ -144,7 +144,7 @@ Se la dimensione del file binario è minore o uguale a `maxPartSize`, è invece 
 
 I nodi edge CDN consentono di accelerare il caricamento richiesto di dati binari.
 
-Il modo più semplice per farlo è utilizzare il valore di `maxPartSize` come dimensione della parte. Il contratto API garantisce che siano presenti URI di caricamento sufficienti per caricare il file binario se utilizzi questo valore come dimensione della parte. Per eseguire questa operazione, dividere il binario in parti di dimensione `maxPartSize`, utilizzando un URI per ogni parte, nell&#39;ordine. La parte finale può essere di qualsiasi dimensione minore o uguale a `maxPartSize`. Si supponga, ad esempio, che la dimensione totale del file binario sia 20.000 byte, `minPartSize` è di 5.000 byte, `maxPartSize` è di 8.000 byte e il numero di URI di caricamento è 5. Esegui i seguenti passaggi:
+Il modo più semplice per farlo è utilizzare il valore di `maxPartSize` come dimensione della parte. Il contratto API garantisce che siano presenti URI di caricamento sufficienti per caricare il file binario se utilizzi questo valore come dimensione della parte. Per eseguire questa operazione, dividere il binario in parti di dimensione `maxPartSize`, utilizzando un URI per ogni parte, nell&#39;ordine. La parte finale può essere di qualsiasi dimensione minore o uguale a `maxPartSize`. Si supponga, ad esempio, che la dimensione totale del file binario sia 20.000 byte, `minPartSize` è di 5.000 byte, `maxPartSize` è di 8.000 byte e il numero di URI di caricamento è 5. Esegui i passaggi seguenti:
 
 * Carica i primi 8.000 byte del file binario utilizzando l’URI del primo caricamento.
 * Carica i secondi 8.000 byte del file binario utilizzando il secondo URI di caricamento.
@@ -185,12 +185,249 @@ Analogamente al processo di avvio, i dati completi della richiesta possono conte
 
 Il processo di caricamento di un file binario non viene eseguito finché non viene richiamato l’URL completo del file. Una risorsa viene elaborata al termine del processo di caricamento. L’elaborazione non viene avviata anche se il file binario della risorsa è stato caricato completamente, ma il processo di caricamento non è stato completato. Se il caricamento ha esito positivo, il server risponde con un `200` codice di stato.
 
+### Esempio di script della shell per caricare le risorse in AEM as a Cloud Service {#upload-assets-shell-script}
+
+Il processo di caricamento a più passaggi per l’accesso binario diretto all’interno di AEM as a Cloud Service è illustrato nell’esempio seguente shell-script `aem-upload.sh`:
+
+```bash
+#!/bin/bash
+
+# Check if pv is installed
+if ! command -v pv &> /dev/null; then
+    echo "Error: 'pv' command not found. Please install it before running the script."
+    exit 1
+fi
+
+# Check if jq is installed
+if ! command -v jq &> /dev/null; then
+    echo "Error: 'jq' command not found. Please install it before running the script."
+    exit 1
+fi
+
+# Set DEBUG to true to enable debug statements
+DEBUG=true
+
+# Function for printing debug statements
+function debug() {
+    if [ "${DEBUG}" = true ]; then
+        echo "[DEBUG] $1"
+    fi
+}
+
+# Function to check if a file exists
+function file_exists() {
+    [ -e "$1" ]
+}
+
+# Function to check if a path is a directory
+function is_directory() {
+    [ -d "$1" ]
+}
+
+# Check if the required number of parameters are provided
+if [ "$#" -ne 4 ]; then
+    echo "Usage: $0 <aem-url> <asset-folder> <file-to-upload> <bearer-token>"
+    exit 1
+fi
+
+AEM_URL="$1"
+ASSET_FOLDER="$2"
+FILE_TO_UPLOAD="$3"
+BEARER_TOKEN="$4"
+
+# Extracting file name or folder name from the file path
+NAME=$(basename "${FILE_TO_UPLOAD}")
+
+# Step 1: Check if "file-to-upload" is a folder
+if is_directory "${FILE_TO_UPLOAD}"; then
+    echo "Uploading files from the folder recursively..."
+    
+    # Recursively upload files in the folder
+    find "${FILE_TO_UPLOAD}" -type f | while read -r FILE_PATH; do
+        FILE_NAME=$(basename "${FILE_PATH}")
+        debug "Uploading file: ${FILE_PATH}"
+        
+        # You can choose to initiate upload for each file here
+        # For simplicity, let's assume you use the same ASSET_FOLDER for all files
+        ./aem-upload.sh "${AEM_URL}" "${ASSET_FOLDER}" "${FILE_PATH}" "${BEARER_TOKEN}"
+    done
+else
+    # "file-to-upload" is a single file
+    FILE_NAME="${NAME}"
+
+    # Step 2: Calculate File Size
+    FILE_SIZE=$(stat -c %s "${FILE_TO_UPLOAD}")
+
+    # Step 3: Initiate Upload
+    INITIATE_UPLOAD_ENDPOINT="${AEM_URL}/content/dam/${ASSET_FOLDER}.initiateUpload.json"
+
+    debug "Initiating upload..."
+    debug "Initiate Upload Endpoint: ${INITIATE_UPLOAD_ENDPOINT}"
+    debug "File Name: ${FILE_NAME}"
+    debug "File Size: ${FILE_SIZE}"
+
+    INITIATE_UPLOAD_RESPONSE=$(curl -X POST \
+        -H "Authorization: Bearer ${BEARER_TOKEN}" \
+        -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
+        -d "fileName=${FILE_NAME}" \
+        -d "fileSize=${FILE_SIZE}" \
+        ${INITIATE_UPLOAD_ENDPOINT})
+
+    # Continue with the rest of the script...
+fi
+
+
+# Check if the response body contains the specified HTML content for a 404 error
+if echo "${INITIATE_UPLOAD_RESPONSE}" | grep -q "<title>404 Specified folder not found</title>"; then
+    echo "Folder not found. Creating the folder..."
+
+    # Attempt to create the folder
+    CREATE_FOLDER_ENDPOINT="${AEM_URL}/api/assets/${ASSET_FOLDER}"
+
+    debug "Creating folder..."
+    debug "Create Folder Endpoint: ${CREATE_FOLDER_ENDPOINT}"
+
+    CREATE_FOLDER_RESPONSE=$(curl -X POST \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer ${BEARER_TOKEN}" \
+        -d '{"class":"'${ASSET_FOLDER}'","properties":{"title":"'${ASSET_FOLDER}'"}}' \
+        ${CREATE_FOLDER_ENDPOINT})
+
+    # Check the response code and inform the user accordingly
+    STATUS_CODE_CREATE_FOLDER=$(echo "${CREATE_FOLDER_RESPONSE}" | jq -r '.properties."status.code"')
+    case ${STATUS_CODE_CREATE_FOLDER} in
+        201)
+            echo "Folder created successfully. Initiating upload again..."
+
+            # Retry Initiate Upload after creating the folder
+            INITIATE_UPLOAD_RESPONSE=$(curl -X POST \
+                -H "Authorization: Bearer ${BEARER_TOKEN}" \
+                -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
+                -d "fileName=${FILE_NAME}" \
+                -d "fileSize=${FILE_SIZE}" \
+                ${INITIATE_UPLOAD_ENDPOINT})
+            ;;
+        409)
+            echo "Error: Folder already exists."
+            ;;
+        412)
+            echo "Error: Precondition failed. Root collection cannot be found or accessed."
+            exit 1
+            ;;
+        500)
+            echo "Error: Internal Server Error. Something went wrong."
+            exit 1
+            ;;
+        *)
+            echo "Error: Unexpected response code ${STATUS_CODE_CREATE_FOLDER}"
+            exit 1
+            ;;
+    esac
+fi
+
+# Extracting values from the response
+FOLDER_PATH=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.folderPath')
+UPLOAD_URIS=($(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].uploadURIs[]'))
+UPLOAD_TOKEN=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].uploadToken')
+MIME_TYPE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].mimeType')
+MIN_PART_SIZE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].minPartSize')
+MAX_PART_SIZE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.files[0].maxPartSize')
+COMPLETE_URI=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.completeURI')
+
+# Extracting "Affinity-cookie" from the response headers
+AFFINITY_COOKIE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | grep -i 'Affinity-cookie' | awk '{print $2}')
+
+debug "Folder Path: ${FOLDER_PATH}"
+debug "Upload Token: ${UPLOAD_TOKEN}"
+debug "MIME Type: ${MIME_TYPE}"
+debug "Min Part Size: ${MIN_PART_SIZE}"
+debug "Max Part Size: ${MAX_PART_SIZE}"
+debug "Complete URI: ${COMPLETE_URI}"
+debug "Affinity Cookie: ${AFFINITY_COOKIE}"
+if $DEBUG; then
+    i=1
+    for UPLOAD_URI in "${UPLOAD_URIS[@]}"; do
+        debug "Upload URI $i: "$UPLOAD_URI
+        i=$((i+1))
+    done
+fi
+
+
+# Calculate the number of parts needed
+NUM_PARTS=$(( (FILE_SIZE + MAX_PART_SIZE - 1) / MAX_PART_SIZE ))
+debug "Number of Parts: $NUM_PARTS"
+
+# Calculate the part size for the last chunk
+LAST_PART_SIZE=$(( FILE_SIZE % MAX_PART_SIZE ))
+if [ "${LAST_PART_SIZE}" -eq 0 ]; then
+    LAST_PART_SIZE=${MAX_PART_SIZE}
+fi
+
+# Step 4: Upload binary to the blob store in parts
+PART_NUMBER=1
+for i in $(seq 1 $NUM_PARTS); do
+    PART_SIZE=${MAX_PART_SIZE}
+    if [ ${PART_NUMBER} -eq ${NUM_PARTS} ]; then
+        PART_SIZE=${LAST_PART_SIZE}
+        debug "Last part size: ${PART_SIZE}"
+    fi
+
+    PART_FILE="/tmp/${FILE_NAME}_part${PART_NUMBER}"
+
+    # Creating part file 
+    SKIP=$((PART_NUMBER - 1))
+    SKIP=$((MAX_PART_SIZE * SKIP))
+    dd if="${FILE_TO_UPLOAD}" of="${PART_FILE}"  bs="${PART_SIZE}" skip="${SKIP}" count="${PART_SIZE}" iflag=skip_bytes,count_bytes  > /dev/null 2>&1
+    debug "Creating part file: ${PART_FILE} with size ${PART_SIZE}, skipping first ${SKIP} bytes."
+
+    
+    UPLOAD_URI=${UPLOAD_URIS[$PART_NUMBER-1]}
+
+    debug "Uploading part ${PART_NUMBER}..."
+    debug "Part Size: $PART_SIZE"
+    debug "Part File: ${PART_FILE}"
+    debug "Part File Size: $(stat -c %s "${PART_FILE}")"
+    debug "Upload URI: ${UPLOAD_URI}"
+
+    # Upload the part in the background
+    if command -v pv &> /dev/null; then
+        pv "${PART_FILE}" | curl --progress-bar -X PUT --data-binary "@-" "${UPLOAD_URI}" &
+    else
+        curl -# -X PUT --data-binary "@${PART_FILE}" "${UPLOAD_URI}" &
+    fi
+
+    PART_NUMBER=$((PART_NUMBER + 1))
+done
+
+# Wait for all background processes to finish
+wait
+
+# Step 5: Complete the upload in AEM
+COMPLETE_UPLOAD_ENDPOINT="${AEM_URL}${COMPLETE_URI}"
+
+debug "Completing the upload..."
+debug "Complete Upload Endpoint: ${COMPLETE_UPLOAD_ENDPOINT}"
+
+RESPONSE=$(curl -X POST \
+    -H "Authorization: Bearer ${BEARER_TOKEN}" \
+    -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
+    -H "Affinity-cookie: ${AFFINITY_COOKIE}" \
+    --data-urlencode "uploadToken=${UPLOAD_TOKEN}" \
+    --data-urlencode "fileName=${FILE_NAME}" \
+    --data-urlencode "mimeType=${MIME_TYPE}" \
+    "${COMPLETE_UPLOAD_ENDPOINT}")
+    
+debug $RESPONSE
+
+echo "File upload completed successfully."
+```
+
 ### Libreria di caricamento open-source {#open-source-upload-library}
 
 Per ulteriori informazioni sugli algoritmi di caricamento o per creare script e strumenti di caricamento, Adobe fornisce librerie e strumenti open-source:
 
 * [Libreria aem-upload open-source](https://github.com/adobe/aem-upload).
-* [Strumento a riga di comando open source](https://github.com/adobe/aio-cli-plugin-aem).
+* [Strumento da riga di comando open-source](https://github.com/adobe/aio-cli-plugin-aem).
 
 >[!NOTE]
 >
@@ -208,7 +445,7 @@ Il nuovo metodo di caricamento è supportato solo per [!DNL Adobe Experience Man
 >[!MORELIKETHIS]
 >
 * [Libreria aem-upload open-source](https://github.com/adobe/aem-upload).
-* [Strumento a riga di comando open source](https://github.com/adobe/aio-cli-plugin-aem).
+* [Strumento da riga di comando open-source](https://github.com/adobe/aio-cli-plugin-aem).
 * [Documentazione di Apache Jackrabbit Oak per il caricamento diretto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 ## Flussi di lavoro di elaborazione e post-elaborazione delle risorse {#post-processing-workflows}
