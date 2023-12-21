@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine
 description: Scopri come pubblicare e annullare la pubblicazione delle pagine utilizzando vari meccanismi in AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 91%
+source-wordcount: '1847'
+ht-degree: 89%
 
 ---
 
@@ -49,6 +49,12 @@ A seconda della posizione, puoi pubblicare:
 >* Viene avviato un flusso di lavoro per comunicare al soggetto adeguato la tua richiesta di pubblicazione.
 >* Questo flusso di lavoro potrebbe essere stato personalizzato dal team di sviluppo.
 >* Viene visualizzato brevemente un messaggio che informa che il flusso di lavoro è stato attivato.
+
+>[!NOTE]
+>
+>Se desideri mantenere l’ordine delle pagine, devi pubblicare la pagina padre quando pubblichi eventuali pagine figlie.
+>
+>L’ordine delle pagine non è garantito se per la pubblicazione vengono selezionate solo le pagine figlie, in quanto le informazioni sull’ordine si trovano nella pagina padre.
 
 >[!NOTE]
 >
