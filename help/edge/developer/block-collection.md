@@ -1,8 +1,14 @@
 ---
-description: This is a collection of blocks considered a part of the AEM product and are recommended as blueprints for blocks in your project.
-title: Block Collection
+description: Questa è una raccolta di blocchi considerati parte del prodotto AEM e sono consigliati come blueprint per i blocchi nel tuo progetto.
+title: Blocca raccolta
 feature: Edge Delivery Services
+source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
+workflow-type: tm+mt
+source-wordcount: '27'
+ht-degree: 0%
+
 ---
-# Block Collection
+
+# Blocca raccolta
 
 {{$include 81080778-c588-43bf-92be-0a7e3e409aea}}

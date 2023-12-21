@@ -1,8 +1,14 @@
 ---
-description: In most websites, there are strings or variables that will be used throughout the site. Especially in sites that need to support multiple languages, it is not a good idea to hard code such values. Instead placeholders can be used and managed centrally.
-title: Placeholders
+description: Nella maggior parte dei siti web, ci sono stringhe o variabili che verranno utilizzate in tutto il sito. Soprattutto nei siti che devono supportare più lingue, non è consigliabile codificare tali valori. È invece possibile utilizzare e gestire centralmente i segnaposto.
+title: Segnaposto
 feature: Edge Delivery Services
+source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
+workflow-type: tm+mt
+source-wordcount: '45'
+ht-degree: 0%
+
 ---
-# Placeholders
+
+# Segnaposto
 
 {{$include 436ab1a2-cdfe-47f8-89a0-b9bc5586bb7f}}
