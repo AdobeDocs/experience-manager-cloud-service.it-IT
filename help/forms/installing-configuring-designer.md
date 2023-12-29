@@ -2,10 +2,11 @@
 title: Come si scarica e si installa Forms Designer per creare modelli per documenti di record?
 description: Utilizza Forms Designer per creare modelli XDP e PDF Form da utilizzare come modello per un documento di record.
 keywords: Installazione di Designer, Installazione di Forms Designer, Requisiti per l'installazione di Forms Designer
+feature: Forms Designer
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '409'
 ht-degree: 7%
 
 ---
@@ -40,7 +41,7 @@ Per installare la versione più recente di AEM Forms Designer a 64 bit o a 32 bi
 
 +++ Progettazione a 32 bit
 
-* [!DNL Microsoft® Windows® 2016 Server], [!DNL Microsoft® Windows® 2019 Server], oppure [!DNL Microsoft® Windows® 10]
+* [!DNL Microsoft® Windows® 2016 Server], [!DNL Microsoft® Windows® 2019 Server], o [!DNL Microsoft® Windows® 10]
 * 1 GB di RAM per sistema operativo a 32 bit o 2 GB di RAM per sistema operativo a 64 bit
 * 16 GB di spazio su disco per sistema operativo a 32 bit o 20 GB di spazio su disco per sistema operativo a 64 bit
 * Memoria grafica - 128 MB di GPU (consigliata 256 MB)
