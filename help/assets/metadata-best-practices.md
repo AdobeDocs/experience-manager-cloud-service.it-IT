@@ -4,9 +4,9 @@ description: Scopri le best practice sui metadati per gestire in modo efficace l
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 8434cb580ba8afc018a5a4357a4d249a06c566c2
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -97,25 +97,25 @@ La strategia di governance può comprendere:
 
 Determina da dove provengono le informazioni ed esamina i dettagli della strategia dei metadati, incluse le proprietà e le relative fonti. Può essere scalata a seconda della complessità della strategia. Nelle aziende più grandi, esiste un sistema di gestione dei metadati principale che controlla più sistemi nello stack principale.
 
-<br>
-
 >[!NOTE]
 >
 >Scopri come [gestire i metadati delle risorse digitali](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Coerenza con la strategia per i metadati
 
-Una strategia coerente per i metadati garantisce un&#39;organizzazione e un recupero efficaci delle risorse digitali. Adottare un approccio strategico per l&#39;acquisizione e l&#39;implementazione dei valori dei metadati, consentendo la flessibilità necessaria per l&#39;evoluzione senza modifiche non necessarie. <br>
-Nella gestione dei metadati a livello aziendale, la coerenza è importante per la denominazione e il riferimento alle risorse. Ad esempio, quando gestisci più risorse contemporaneamente, puoi aggiungere metadati in blocco. <br>
+Una strategia coerente per i metadati garantisce un&#39;organizzazione e un recupero efficaci delle risorse digitali. Adottare un approccio strategico per l&#39;acquisizione e l&#39;implementazione dei valori dei metadati, consentendo la flessibilità necessaria per l&#39;evoluzione senza modifiche non necessarie.
+
+Nella gestione dei metadati a livello aziendale, la coerenza è importante per la denominazione e il riferimento alle risorse. Ad esempio, quando gestisci più risorse contemporaneamente, puoi aggiungere metadati in blocco.
+
 Ecco alcune delle best practice da seguire:
 
-* **Evita valori duplicati:** Se disponi di una raccolta di immagini da una campagna di marketing, utilizza nomi coerenti ed evita duplicati.<br>
+* **Evita valori duplicati:** Se disponi di una raccolta di immagini da una campagna di marketing, utilizza nomi coerenti ed evita duplicati.
 Ad esempio, invece di utilizzare nomi duplicati come *campaign_image_001* e *campaign_image_002*, implementa una convenzione di denominazione sistematica come *product_launch_001* e *product_launch_002*, garantendo un&#39;identificazione chiara e ordinata.
 
-* **Utilizzare in modo efficace i vocabolari controllati:** Implementa i vocabolari controllati utilizzando termini standardizzati per i tag. <br>
+* **Utilizzare in modo efficace i vocabolari controllati:** Implementa i vocabolari controllati utilizzando termini standardizzati per i tag.
 Ad esempio, utilizza in modo coerente termini quali *product_launch* o *event_promotion* quando si assegnano tag alle immagini con temi per mantenere una sequenza sistematica.
 
-* **Mantieni precisione e completezza:** Per mantenere i metadati coerenti, sono fondamentali precisione, completezza e allineamento tra le varie origini.<br>
+* **Mantieni precisione e completezza:** Per mantenere i metadati coerenti, sono fondamentali precisione, completezza e allineamento tra le varie origini.
 Ad esempio, quando aggiungi metadati a un documento PDF, verifica che dettagli come i nomi degli autori e le parole chiave siano precisi e completi.
 
 #### Video: aggiungere metadati in blocco alle risorse
@@ -124,7 +124,8 @@ Ad esempio, quando aggiungi metadati a un documento PDF, verifica che dettagli c
 
 ### Valutare e migliorare la ricercabilità dei metadati
 
-Valuta la tua strategia di metadati per migliorare la ricercabilità dei metadati. Semplificare i flussi di lavoro e migliorare le funzionalità di ricerca per un riutilizzo efficiente. Evita di trattare i metadati privi di uno scopo chiaro.<br>
+Valuta la tua strategia di metadati per migliorare la ricercabilità dei metadati. Semplificare i flussi di lavoro e migliorare le funzionalità di ricerca per un riutilizzo efficiente. Evita di trattare i metadati privi di uno scopo chiaro.
+
 Per ottimizzare la ricercabilità dei metadati, considera le seguenti best practice:
 
 * **Ottimizzazione parola chiave:** Migliora la ricercabilità dei metadati ottimizzando le parole chiave associate alle risorse. Per migliorare la pertinenza delle parole chiave per determinate risorse in Assets Manager, segui questi passaggi:
@@ -132,9 +133,9 @@ Per ottimizzare la ricercabilità dei metadati, considera le seguenti best pract
    1. Vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]** > **[!UICONTROL [Cartella risorse]]**.
    1. Seleziona la risorsa per la quale desideri aggiornare i metadati, quindi fai clic su **[!UICONTROL Proprietà]**.
    1. Accedi a **[!UICONTROL Avanzate]** e quindi fare clic su **[!UICONTROL Aggiungi]** sotto **[!UICONTROL Privilegi elevati per parole chiave di ricerca]**.
-   1. Immettere la parola chiave per la quale si desidera incrementare la ricerca, quindi fare clic su **[!UICONTROL Aggiungi]**.<br>
+   1. Immettere la parola chiave per la quale si desidera incrementare la ricerca, quindi fare clic su **[!UICONTROL Aggiungi]**.
 Puoi aggiungere più parole chiave e disporle in base alla tua priorità.
-   1. Fai clic su **[!UICONTROL Salva e chiudi]**.<br>
+   1. Clic **[!UICONTROL Salva e chiudi]**.
 Cerca la risorsa utilizzando le parole chiave aggiunte. La risorsa viene visualizzata tra i primi risultati di ricerca.
 
   Scopri come [aumentare la ricerca in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
@@ -151,7 +152,7 @@ Cerca la risorsa utilizzando le parole chiave aggiunte. La risorsa viene visuali
 
 ### Metadati semplici e di facile comprensione
 
-Metadati semplificati per una migliore governance e adozione da parte degli utenti. Semplificalo e facile da capire, incoraggiando gli utenti ad aggiungere informazioni essenziali. <br>
+Metadati semplificati per una migliore governance e adozione da parte degli utenti. Semplificalo e facile da capire, incoraggiando gli utenti ad aggiungere informazioni essenziali.
 Per semplificare i metadati, prova le seguenti best practice:
 
 * **Opzioni di ottimizzazione delle proprietà:** Concentrati sull’evidenziazione delle proprietà essenziali senza gravare gli utenti con troppi campi di metadati da compilare. Ad esempio, quando aggiungi i metadati per un’immagine, includi solo i campi chiave come titolo, descrizione e tag per una categorizzazione efficace.
