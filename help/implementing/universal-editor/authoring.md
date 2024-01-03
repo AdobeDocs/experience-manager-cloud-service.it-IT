@@ -2,10 +2,10 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 37%
+source-wordcount: '2179'
+ht-degree: 38%
 
 ---
 
@@ -44,11 +44,10 @@ Dopo aver effettuato l’accesso, immetti l’URL della pagina da modificare nel
 
 ## Comprendere l’interfaccia utente {#ui}
 
-L’interfaccia utente è divisa in cinque aree principali.
+L’interfaccia utente è divisa in queste aree principali.
 
 * [Intestazione di Experience Cloud](#experience-cloud-header)
-* [Intestazione dell’editor universale](#universal-editor-header)
-* [La barra modalità](#mode-rail)
+* [Barra degli strumenti Editor universale](#universal-editor-toolbar)
 * [L’editor](#editor)
 * [Barra delle proprietà](#properties-rail)
 
@@ -96,11 +95,11 @@ Seleziona l’icona che rappresenta l’utente per accedere alle impostazioni ut
 
 ![Proprietà utente](assets/user-properties.png)
 
-### Intestazione dell’editor universale {#universal-editor-header}
+### Barra degli strumenti Editor universale {#universal-editor-toolbar}
 
-L’intestazione dell’editor universale è sempre presente nella parte superiore dello schermo immediatamente sotto [l’intestazione di Experience Cloud.](#experience-cloud-header) Consente un accesso rapido per passare a un’altra pagina di modifica e di pubblicazione della pagina corrente.
+La barra degli strumenti di Universal Editor è sempre presente nella parte superiore dello schermo immediatamente sotto [l’intestazione dell’Experience Cloud.](#experience-cloud-header) Consente un accesso rapido per passare a un’altra pagina di modifica e di pubblicazione della pagina corrente.
 
-![Intestazione dell’editor universale](assets/universal-editor-header.png)
+![Barra degli strumenti Editor universale](assets/universal-editor-toolbar.png)
 
 #### Pulsante Home {#home-button}
 
@@ -132,7 +131,7 @@ La barra della posizione mostra l’indirizzo della pagina che stai modificando.
 
 #### Impostazioni intestazione autenticazione {#authentication-settings}
 
-Se devi impostare un segreto di autenticazione, seleziona l’icona delle impostazioni dell’intestazione di autenticazione.
+Se necessario, seleziona l’icona delle impostazioni dell’intestazione di autenticazione [imposta un’intestazione di autenticazione personalizzata a scopo di sviluppo locale.](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![Pulsante Impostazioni intestazione autenticazione](assets/authentication-header-settings.png)
 
@@ -154,6 +153,16 @@ Puoi anche scegliere di emulare un dispositivo mobile e nell’editor universale
 * Definire la larghezza e l’altezza
 * Modificare l’orientamento
 
+#### Modalità Anteprima {#preview-mode}
+
+In modalità anteprima, la pagina viene riprodotta nell’editor come verrebbe visualizzata sul servizio pubblicato. Questo consente all’autore di contenuto di navigare nel contenuto facendo clic sui collegamenti e così via.
+
+![Modalità anteprima](assets/preview-mode.png)
+
+>[!TIP]
+>
+>Utilizza il tasto di scelta rapida `P` per attivare e disattivare la modalità anteprima.
+
 #### Apri anteprima app {#open-app-preview}
 
 Seleziona l’icona di anteprima dell’app aperta per aprire la pagina che stai modificando nella scheda del browser corrispondente, senza dover accedere all’editor per visualizzare l’anteprima dei contenuti.
@@ -174,47 +183,13 @@ Seleziona il pulsante Pubblica per pubblicare le modifiche al contenuto live per
 >
 >Consulta il documento [Pubblicazione di contenuti con l’editor universale](publishing.md) per ulteriori informazioni sulla pubblicazione con Universal Editor.
 
-### La barra modalità {#rail}
-
-La barra della modalità si trova appena sotto il pulsante Home ed è sempre presente lungo il lato sinistro dell’editor. L&#39;editor può essere commutato facilmente tra le diverse modalità di utilizzo.
-
-![La barra modalità](assets/mode-rail.png)
-
-#### Modalità Anteprima {#preview-mode}
-
-In modalità anteprima, la pagina viene riprodotta nell’editor come verrebbe visualizzata sul servizio pubblicato. Questo consente all’autore di contenuto di navigare nel contenuto facendo clic sui collegamenti e così via.
-
-![Modalità anteprima](assets/preview-mode.png)
-
->[!TIP]
->
->Usa il tasto di scelta rapida `P` per passare alla modalità anteprima.
-
-#### Modalità componenti {#component-mode}
-
-Nella modalità componenti, l’autore di contenuto può selezionare i componenti da modificare, tra cui:
-
-* [Modifica del testo normale](#editing-content) sul posto.
-* [Modifica del testo RTF](#editing-rich-text) nella barra delle proprietà vengono visualizzate ulteriori opzioni di formattazione.
-* [Modifica del contenuto multimediale](#editing-media)
-* [Modifica di frammenti di contenuto](#edit-content-fragment)
-
-![Modalità Componenti](assets/component-mode.png)
-
-Quando selezioni un componente, i dettagli del suo contenuto vengono visualizzati nel [barra delle proprietà.](#properties-rail) A seconda del tipo di contenuto, puoi modificare direttamente o nella barra delle proprietà.
-
->[!TIP]
->
->Utilizza il tasto di scelta rapida `C` per passare alla modalità componenti.
-
 ### L’editor {#editor}
 
 L’editor occupa la maggior parte della finestra ed è l’area in cui viene eseguito il rendering della pagina specificata nella [barra della posizione](#location-bar).
 
-* Se l’editor è in [modalità componenti,](#component-mode) il contenuto sarà modificabile, ma non puoi seguire i collegamenti.
-* Se l’editor è in [modalità anteprima,](#preview-mode) il contenuto sarà navigabile e potrai seguire i collegamenti, ma non puoi modificarlo.
-
 ![Editor](assets/editor.png)
+
+Se l’editor è in [modalità anteprima,](#preview-mode) il contenuto sarà navigabile e potrai seguire i collegamenti, ma non puoi modificarlo.
 
 ### Barra delle proprietà {#properties-rail}
 
@@ -254,7 +229,7 @@ Quando si seleziona un elemento nella struttura del contenuto, l’editor scorre
 
 ##### Modifica {#edit}
 
-In [modalità componenti,](#component-mode) le opzioni di modifica per il componente selezionato vengono visualizzate nella barra delle proprietà. Nella barra delle proprietà puoi modificare il componente selezionato. Se il componente selezionato è un frammento di contenuto, puoi anche selezionare il pulsante Modifica.
+Durante la modifica, le opzioni per il componente selezionato vengono visualizzate nella barra delle proprietà, dove è possibile modificarlo. Se il componente selezionato è un frammento di contenuto, puoi anche selezionare il pulsante Modifica.
 
 ![Icona Modifica](assets/edit.png)
 
@@ -294,19 +269,19 @@ Toccando o facendo clic sul pulsante Elimina [elimina il componente.](#deleting-
 
 ## Modifica del contenuto {#editing-content}
 
-La modifica del contenuto è semplice e intuitiva. In entrata [modalità componenti](#component-mode)Quando passi il mouse sul contenuto nell’editor, il contenuto modificabile viene evidenziato con una casella blu.
+La modifica del contenuto è semplice e intuitiva. Quando passi il mouse sul contenuto nell’editor, il contenuto modificabile viene evidenziato con una casella blu.
 
 ![Il contenuto modificabile viene evidenziato da una casella blu](assets/editable-content.png)
 
 >[!TIP]
 >
->In modalità componenti, tocca o fai clic sul contenuto per selezionarlo per la modifica. Se desideri navigare nel contenuto seguendo i collegamenti, passa a [modalità anteprima.](#preview-mode)
+>Per impostazione predefinita, tocca o fai clic sul contenuto per selezionarlo per la modifica. Se desideri navigare nel contenuto seguendo i collegamenti, passa a [modalità anteprima.](#preview-mode)
 
 A seconda del contenuto selezionato, è possibile che siano disponibili diverse opzioni di modifica diretta e che siano disponibili ulteriori informazioni e opzioni per il contenuto nel [barra delle proprietà.](#properties-rail)
 
 ### Modifica del testo normale {#edit-plain-text}
 
-Se ti trovi in [modalità componenti](#component-mode) e selezionare un componente testo normale, puoi modificare il testo nella posizione facendo doppio clic o toccando due volte il componente.
+Per modificare il testo nella posizione desiderata, fai doppio clic o tocca due volte il componente.
 
 ![Modifica del contenuto](assets/editing-content.png)
 
@@ -320,7 +295,7 @@ Inoltre, i dettagli sul testo sono disponibili nella barra delle proprietà. Le 
 
 ### Modifica del testo formattato {#edit-rich-text}
 
-Se ti trovi in [modalità componenti](#component-mode) e selezionare un componente testo RTF, puoi modificare il testo nella posizione facendo doppio clic o toccando due volte il componente.
+Per modificare il testo nella posizione desiderata, fai doppio clic o tocca due volte il componente.
 
 Per salvare le modifiche, premere Invio/Ritorna o selezionare all&#39;esterno della casella.
 
@@ -330,25 +305,20 @@ Inoltre, le opzioni di formattazione e i dettagli sul testo sono disponibili nel
 
 ### Editing di file multimediali {#edit-media}
 
-Se ti trovi in [modalità componenti](#component-mode) se selezioni un’immagine, puoi visualizzarne i dettagli nella barra delle proprietà.
+Puoi visualizzarne i dettagli nella barra delle proprietà.
 
 ![Editing di file multimediali](assets/ue-edit-media.png)
 
-Seleziona la **Sostituisci** nella barra delle proprietà, sotto l’anteprima dell’immagine selezionata, per sostituirla con un’altra immagine della libreria di risorse.
-
+1. Tocca o fai clic sull’anteprima dell’immagine selezionata nella barra delle proprietà.
 1. Il [selettore risorse](/help/assets/asset-selector.md#using-asset-selector) viene visualizzata una finestra che consente di selezionare una risorsa.
 1. Seleziona per selezionare una nuova risorsa.
 1. Seleziona **Seleziona** per tornare alla barra delle proprietà in cui è stata sostituita la risorsa.
 
 Le modifiche vengono salvate automaticamente nel contenuto.
 
->[!TIP]
->
->Utilizza il tasto di scelta rapida `R` per aprire il selettore risorse e sostituire l’immagine selezionata.
-
 ### Modifica di frammenti di contenuto {#edit-content-fragment}
 
-Se ti trovi in [modalità componenti](#component-mode) e selezioni una [Frammento di contenuto,](/help/sites-cloud/administering/content-fragments/overview.md) puoi modificarne i dettagli nella barra delle proprietà.
+Se si seleziona un [Frammento di contenuto,](/help/sites-cloud/administering/content-fragments/overview.md) puoi modificarne i dettagli nella barra delle proprietà.
 
 ![Modifica di un frammento di contenuto](assets/ue-edit-cf.png)
 
@@ -407,7 +377,7 @@ I componenti vengono riordinati sia nella struttura del contenuto che nell’edi
 
 Quando hai finito di modificare il contenuto, spesso desideri navigare in esso per vedere come si presenta nel contenuto di altre pagine. In [modalità anteprima](#preview-mode) puoi fare clic sui collegamenti per navigare nel contenuto come farebbe un lettore. Il contenuto viene riprodotto nell’editor così come verrebbe pubblicato.
 
-In modalità anteprima, toccando o facendo clic sul contenuto si reagisce come se si trattasse di un normale lettore. Se desideri selezionare il contenuto da modificare, passa a [modalità componenti.](#component-mode)
+In modalità anteprima, toccando o facendo clic sul contenuto si reagisce come se si trattasse di un normale lettore. Se desideri selezionare il contenuto da modificare, disattiva da [modalità anteprima.](#preview-mode)
 
 ## Risorse aggiuntive {#additional-resources}
 
