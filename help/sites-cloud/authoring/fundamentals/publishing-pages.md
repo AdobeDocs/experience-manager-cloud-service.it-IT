@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine
 description: Scopri come pubblicare e annullare la pubblicazione delle pagine utilizzando vari meccanismi in AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
+source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 89%
+source-wordcount: '1925'
+ht-degree: 85%
 
 ---
 
@@ -52,9 +52,11 @@ A seconda della posizione, puoi pubblicare:
 
 >[!NOTE]
 >
->Se desideri mantenere l’ordine delle pagine, devi pubblicare la pagina padre quando pubblichi eventuali pagine figlie.
+>Se si desidera mantenere l&#39;ordine delle pagine utilizzato [Gestisci pubblicazione](#manage-publication) per pubblicare la pagina padre insieme a eventuali pagine figlie, in un’unica azione.
 >
->L’ordine delle pagine non è garantito se per la pubblicazione vengono selezionate solo le pagine figlie, in quanto le informazioni sull’ordine si trovano nella pagina padre.
+>L’ordine delle pagine non è garantito:
+>* se sono selezionate per la pubblicazione solo le pagine figlie (in quanto le informazioni sull’ordine si trovano nella pagina padre)
+>* se le pagine padre e figlio vengono pubblicate in azioni separate
 
 >[!NOTE]
 >
@@ -123,6 +125,14 @@ Per pubblicare una pagina con Pubblicazione rapida:
 #### Gestisci pubblicazione  {#manage-publication}
 
 **Gestisci pubblicazione** offre più opzioni rispetto alla **Pubblicazione rapida** e consente di includere pagine secondarie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili. Consente inoltre di pubblicare la pagina in un secondo momento.
+
+>[!NOTE]
+>
+>Se si desidera mantenere l&#39;ordine delle pagine utilizzato **Gestisci pubblicazione** per pubblicare la pagina padre insieme alle eventuali pagine figlie in un’unica azione.
+>
+>L’ordine delle pagine non è garantito:
+>* se sono selezionate per la pubblicazione solo le pagine figlie (in quanto le informazioni sull’ordine si trovano nella pagina padre)
+>* se le pagine padre e figlio vengono pubblicate in azioni separate
 
 Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblicazione:
 
