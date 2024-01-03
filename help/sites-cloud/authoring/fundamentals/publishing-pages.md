@@ -2,9 +2,9 @@
 title: Pubblicazione delle pagine
 description: Scopri come pubblicare e annullare la pubblicazione delle pagine utilizzando vari meccanismi in AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
+source-git-commit: 00520bff0f3b0d36610d8601077198856c8b71dd
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1927'
 ht-degree: 85%
 
 ---
@@ -52,7 +52,7 @@ A seconda della posizione, puoi pubblicare:
 
 >[!NOTE]
 >
->Se si desidera mantenere l&#39;ordine delle pagine utilizzato [Gestisci pubblicazione](#manage-publication) per pubblicare la pagina padre insieme a eventuali pagine figlie, in un’unica azione.
+>Se desideri mantenere l’ordine delle pagine, devi utilizzare [Gestisci pubblicazione](#manage-publication) per pubblicare la pagina padre insieme a eventuali pagine figlie, in un’unica azione.
 >
 >L’ordine delle pagine non è garantito:
 >* se sono selezionate per la pubblicazione solo le pagine figlie (in quanto le informazioni sull’ordine si trovano nella pagina padre)
@@ -128,7 +128,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
 >[!NOTE]
 >
->Se si desidera mantenere l&#39;ordine delle pagine utilizzato **Gestisci pubblicazione** per pubblicare la pagina padre insieme alle eventuali pagine figlie in un’unica azione.
+>Se desideri mantenere l’ordine delle pagine, devi utilizzare **Gestisci pubblicazione** per pubblicare la pagina padre insieme alle eventuali pagine figlie in un’unica azione.
 >
 >L’ordine delle pagine non è garantito:
 >* se sono selezionate per la pubblicazione solo le pagine figlie (in quanto le informazioni sull’ordine si trovano nella pagina padre)
