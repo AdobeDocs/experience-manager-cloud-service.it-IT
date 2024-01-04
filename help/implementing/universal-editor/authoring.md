@@ -2,9 +2,9 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
-source-wordcount: '2179'
+source-wordcount: '2165'
 ht-degree: 38%
 
 ---
@@ -13,6 +13,8 @@ ht-degree: 38%
 # Authoring dei contenuti con l’editor universale {#authoring}
 
 Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
+
+{{universal-editor-status}}
 
 ## Introduzione {#introduction}
 
@@ -23,10 +25,6 @@ A questo scopo, l’editor universale offre agli autori di contenuti un’interf
 >[!TIP]
 >
 >Per un’introduzione più dettagliata all’editor universale, consulta il documento [Introduzione all’editor universale.](introduction.md)
-
->[!NOTE]
->
->L’editor universale è ancora in fase di sviluppo. Attualmente non è possibile modificare tutti i tipi di contenuto.
 
 ## Preparare l’app {#prepare-app}
 

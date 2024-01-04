@@ -2,7 +2,7 @@
 title: Architettura dell’editor universale
 description: Scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 83%
@@ -13,6 +13,8 @@ ht-degree: 83%
 # Architettura dell’editor universale {#architecture}
 
 Scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
+
+{{universal-editor-status}}
 
 ## Blocchi predefiniti di architettura {#building-blocks}
 

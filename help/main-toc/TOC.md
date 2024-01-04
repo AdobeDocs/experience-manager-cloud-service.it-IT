@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4968921cadcee7eb023d5761abfa0373a24c5ed2
+source-git-commit: cfae48067df75dae54822dc0c6f868cca75887d4
 workflow-type: tm+mt
-source-wordcount: '4560'
+source-wordcount: '4565'
 ht-degree: 91%
 
 ---
@@ -1106,11 +1106,14 @@ ht-degree: 91%
       + [Guida rapida alle linee guida WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Editor universale {#universal-editor}
    + [Introduzione all’editor universale](/help/implementing/universal-editor/introduction.md)
-   + [Authoring dei contenuti con l’editor universale](/help/implementing/universal-editor/authoring.md)
-   + [Pubblicazione di contenuti con l’editor universale](/help/implementing/universal-editor/publishing.md)
-   + [Guida introduttiva all’editor universale in AEM](/help/implementing/universal-editor/getting-started.md)
-   + [Panoramica per gli sviluppatori di Universal Editor](/help/implementing/universal-editor/developer-overview.md)
    + [Architettura dell’editor universale](/help/implementing/universal-editor/architecture.md)
-   + [Attributi e tipi](/help/implementing/universal-editor/attributes-types.md)
-   + [Autenticazione dell’editor universale](/help/implementing/universal-editor/authentication.md)
-   + [Sviluppo locale AEM con Universal Editor](/help/implementing/universal-editor/local-dev.md)
+   + Authoring {#developing}
+      + [Authoring dei contenuti con l’editor universale](/help/implementing/universal-editor/authoring.md)
+      + [Pubblicazione di contenuti con l’editor universale](/help/implementing/universal-editor/publishing.md)
+   + Sviluppo {#developing}
+      + [Guida introduttiva all’editor universale in AEM](/help/implementing/universal-editor/getting-started.md)
+      + [Panoramica per gli sviluppatori di Universal Editor](/help/implementing/universal-editor/developer-overview.md)
+      + [Attributi e tipi](/help/implementing/universal-editor/attributes-types.md)
+      + [Autenticazione dell’editor universale](/help/implementing/universal-editor/authentication.md)
+      + [Sviluppo locale AEM con Universal Editor](/help/implementing/universal-editor/local-dev.md)
+      + [Chiamate editor universali](/help/implementing/universal-editor/calls.md)

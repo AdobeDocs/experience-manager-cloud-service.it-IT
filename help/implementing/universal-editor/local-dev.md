@@ -2,7 +2,7 @@
 title: Sviluppo locale AEM con Universal Editor
 description: Scopri in che modo Universal Editor supporta la modifica sulle istanze AEM locali a scopo di sviluppo.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0546f3cee8df3d7134021e32670b40030d56cd84
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -14,7 +14,11 @@ ht-degree: 0%
 
 Scopri in che modo Universal Editor supporta la modifica sulle istanze AEM locali a scopo di sviluppo.
 
-Questo documento illustra come eseguire AEM in HTTPS insieme a una copia locale del servizio Universal Editor per sviluppare localmente su AEM utilizzando Universal Editor.
+{{universal-editor-status}}
+
+## Panoramica {#overview}
+
+In questo documento viene illustrato come eseguire AEM in HTTPS insieme a una copia locale del servizio Universal Editor per sviluppare in locale su AEM tramite Universal Editor.
 
 ## Configurare AEM per l’esecuzione su HTTPS {#aem-https}
 
