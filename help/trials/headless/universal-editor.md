@@ -7,7 +7,7 @@ exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 6%
+ht-degree: 12%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="Modificare nel contesto con l’Editor universale"
->abstract="Scopri in che modo le app headless possono utilizzare l’Editor universale per ridurre l’attrito, mentre le modifiche contestuali vengono portate a portata di mano dagli autori."
+>abstract="Scopri in che modo le app headless possono utilizzare l’Editor universale per consentire agli autori di apportare facilmente modifiche nel contesto stesso dei contenuti."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
 >title="Avviare l’Editor universale"
->abstract="In questa guida, esplori l’Editor universale e il modo in cui consente a chiunque di modificare ogni aspetto del contenuto in qualsiasi implementazione, per velocizzare le operazioni relative ai contenuti.<br><br>Per avviare questo modulo in una nuova scheda, fai clic qui sotto, quindi segui questa guida."
+>abstract="Questa guida descrive l’Editor universale e come consente a chiunque di modificare ogni aspetto del contenuto in qualsiasi implementazione, per velocizzare le operazioni.<br><br>Per avviare questo modulo in una nuova scheda, fai clic qui sotto, quindi segui questa guida."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"

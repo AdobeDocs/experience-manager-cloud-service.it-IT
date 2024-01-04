@@ -98,7 +98,7 @@ Per prima cosa, crea un processo di acquisizione e assicurati che **A comparsa**
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Risoluzione dei problemi di acquisizione dei contenuti"
 >abstract="Consulta i registri di acquisizione e la documentazione per trovare soluzioni ai motivi comuni per cui un’acquisizione può non riuscire e trovare il modo di risolvere il problema. Una volta risolta, l’acquisizione può essere eseguita nuovamente."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Convalida dei trasferimenti di contenuto"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=it" text="Convalida dei trasferimenti di contenuto"
 
 ### CAM: impossibile recuperare il token di migrazione {#cam-unable-to-retrieve-the-migration-token}
 
