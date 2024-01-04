@@ -1,13 +1,13 @@
 ---
 title: Modelli per frammenti di contenuto
-description: Scopri come i modelli per frammenti di contenuto fungono da base per i frammenti di contenuto in AEM. Questi frammenti ti consentono di creare contenuti strutturati da utilizzare nella distribuzione headless o nell’authoring di pagine.
+description: Scopri come i modelli per frammenti di contenuto fungono da base per i frammenti di contenuto in AEM, consentendo di creare contenuti strutturati da utilizzare nella distribuzione headless o nell’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '3121'
-ht-degree: 59%
+source-wordcount: '3125'
+ht-degree: 56%
 
 ---
 
@@ -32,7 +32,7 @@ Per utilizzare i modelli di frammento di contenuto:
    >
    >Se il [l’utilizzo di modelli per frammenti di contenuto non è stato abilitato](/help/sites-cloud/administering/content-fragments/setup.md), il **Crea** non sarà disponibile.
 
-1. Specifica il **Titolo modello**.
+1. Specifica la **Titolo modello**.
 Puoi anche definire varie proprietà; ad esempio, aggiungi **Tag**, a **Descrizione**, seleziona **Abilita modello** a [abilita il modello](#enabling-disabling-a-content-fragment-model) se necessario, e definisci
    **Pattern URL anteprima predefinito**.
 
@@ -178,8 +178,8 @@ Per definire il modello è disponibile una selezione di tipi di dati:
       * Il codice JSON viene trasmesso e riprodotto come codice JSON in GraphQL.
       * Include le funzioni di evidenziazione della sintassi JSON, completamento automatico ed evidenziazione degli errori nell’editor dei frammenti di contenuto.
 * **Segnaposto scheda**
-   * Consente l’introduzione di schede da utilizzare per la modifica del contenuto dei frammenti di contenuto.
-      * Vengono visualizzati come divisori nell’editor modelli, separando le sezioni dell’elenco dei tipi di dati di contenuto. Ogni sua istanza rappresenta l’inizio di una nuova scheda.
+   * Consente l’introduzione di schede da utilizzare per la modifica del contenuto di Frammenti di contenuto.
+      * Vengono visualizzati come divisori nell’editor modelli, separando le sezioni dell’elenco dei tipi di dati di contenuto. Ogni istanza rappresenta l’inizio di una nuova scheda.
       * Nell’editor frammenti ogni istanza viene visualizzata come una scheda.
 
      >[!NOTE]
@@ -200,7 +200,7 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
 
 * **Rendering come**
 
-  Le varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore può visualizzare una singola istanza del campo o se può creare più istanze. Quando **Campo multiplo** è utilizzato è possibile definire il numero minimo e massimo di elementi - vedere [Convalida](#validation) per ulteriori dettagli.
+  Le varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore visualizzerà una singola istanza del campo o se potrà creare più istanze. Quando **Campo multiplo** è utilizzato è possibile definire il numero minimo e massimo di elementi - vedere [Convalida](#validation) per ulteriori dettagli.
 
 * **Etichetta campo**
 Inserimento di un **Etichetta campo** genera automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente, se necessario.
@@ -262,8 +262,8 @@ Diversi tipi di dati includono ora la possibilità di definire requisiti di conv
 
   Campi definiti come **Campo multiplo** (impostato con **Rendering come**) puoi scegliere:
 
-   * **Limite minimo di elmenti**
-   * **Limite massimo di elementi**
+   * **Numero minimo di elementi**
+   * **Numero massimo di elementi**
 
   Questi vengono convalidati nel [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md).
 

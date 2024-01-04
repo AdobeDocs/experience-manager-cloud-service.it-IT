@@ -1,10 +1,10 @@
 ---
 title: Authoring dei frammenti di contenuto
-description: Scopri come creare contenuti per i frammenti di contenuto, quindi creare varianti di tale contenuto in base allo scopo. Ciò offre maggiore flessibilità sia per la distribuzione headless che per l’authoring delle pagine.
+description: Scopri come creare contenuti per i frammenti di contenuto e creare varianti di tali contenuti in base allo scopo. Ciò offre maggiore flessibilità sia per la distribuzione headless che per l’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
 source-wordcount: '2266'
 ht-degree: 4%

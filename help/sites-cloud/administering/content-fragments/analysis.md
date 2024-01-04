@@ -1,15 +1,15 @@
 ---
 title: Analisi dei frammenti di contenuto
-description: Comprendere la struttura e la distribuzione dei contenuti dei frammenti di contenuto. Questo fornisce informazioni sia sulla distribuzione headless che sull’authoring delle pagine.
+description: Comprendi la struttura dei frammenti di contenuto utilizzati per la distribuzione dei contenuti. Questo fornisce informazioni rilevanti sia per la distribuzione headless che per l’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '132'
 ht-degree: 2%
 
 ---
-
 
 # Analisi della struttura dei frammenti di contenuto {#analyzing-content-fragments-structure}
 
@@ -19,7 +19,7 @@ L’Experience Manager (AEM) fornisce diversi metodi per visualizzare e analizza
 
 ## Riferimenti {#references}
 
-La struttura viene creata utilizzando Riferimenti:
+La struttura a più livelli viene creata utilizzando Riferimenti:
 
 * [I tipi di dati per i riferimenti sono definiti nel modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)
 * Durante l’authoring è possibile:
