@@ -3,7 +3,7 @@ title: Supporto dei frammenti di contenuto di Adobe Experience Manager as a Clou
 description: Scopri il supporto per i frammenti di contenuto nell’API Assets HTTP di, un elemento importante della funzione di distribuzione headless di Adobe Experience Manager.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 11%
@@ -16,7 +16,7 @@ ht-degree: 11%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 Scopri il supporto per i frammenti di contenuto nell’API Assets HTTP di, un’importante componente della funzione di distribuzione headless di Adobe Experience Manager (AEM).

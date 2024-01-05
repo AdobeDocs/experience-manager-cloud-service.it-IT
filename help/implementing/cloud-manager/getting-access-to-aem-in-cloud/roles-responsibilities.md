@@ -1,10 +1,10 @@
 ---
 title: Ruoli e responsabilità
 description: Ruoli e responsabilità
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 91%
+source-wordcount: '484'
+ht-degree: 90%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 91%
 >id="aemcloud_raci"
 >title="Ruoli e responsabilità"
 >abstract="Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging e produzione per Experience Manager as a Cloud Service. Affinché lo sviluppo e la distribuzione della soluzione procedano con la massima efficienza, è importante che il cliente e l’addetto alla personalizzazione comprendano e svolgano i rispettivi ruoli, come descritto di seguito."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=it" text="Assegna i ruoli giusti alle persone giuste"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aligning-kpis.html?lang=it" text="Allineamento dei KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="Assegna i ruoli giusti alle persone giuste"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Allineamento dei KPI"
 
 <br></br>
 Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging e produzione per Experience Manager as a Cloud Service. Affinché lo sviluppo e la distribuzione della soluzione procedano con la massima efficienza, è importante che il cliente e l’addetto alla personalizzazione comprendano e svolgano i relativi ruoli, come descritto di seguito.

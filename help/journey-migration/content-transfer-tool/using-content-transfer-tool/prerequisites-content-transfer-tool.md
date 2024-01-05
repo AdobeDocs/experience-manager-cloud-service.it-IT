@@ -2,7 +2,7 @@
 title: Prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)
 description: Acquisisci familiarità con i prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 11%
@@ -15,7 +15,7 @@ ht-degree: 11%
 >id="aemcloud_ctt_prereqs"
 >title="Considerazioni importanti sull’utilizzo dello strumento Content Transfer"
 >abstract="Esamina le considerazioni importanti per l’utilizzo dello strumento di trasferimento dei contenuti, tra cui le versioni di Java™ e AEM, i tipi di archivio dati supportati, considerazioni sui gruppi di utenti e altro ancora."
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=it" text="Considerazioni importanti sull’utilizzo dello strumento di trasferimento dei contenuti"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Considerazioni importanti sull’utilizzo dello strumento di trasferimento dei contenuti"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#best-practices" text="Best practice e linee guida"
 
 Nella tabella seguente sono riepilogati i prerequisiti per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti).

@@ -2,10 +2,10 @@
 title: Persone giuste, ruoli giusti
 description: Scopri come scegliere le persone giuste e assegnarle ai ruoli giusti per il tuo progetto.
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 98%
+source-wordcount: '832'
+ht-degree: 97%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 98%
 >id="aemcloud_chooseteam"
 >title="Scegli il team giusto"
 >abstract="Assegna la mansione più adatta a ciascuno per favorire il successo dell’implementazione di Adobe Experience Manager."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aligning-kpis.html?lang=it" text="Allineamento dei KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=it" text="Valutazione dei KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Allineamento dei KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="Valutazione dei KPI"
 
 È probabile che nella tua organizzazione diversi dipartimenti possiedano diversi aspetti dell’esperienza digitale. Senza governance, è inevitabile andare incontro a discussioni infinite, lotte interne e confusione.
 

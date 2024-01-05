@@ -2,7 +2,7 @@
 title: Fase di preparazione
 description: Scopri i passaggi necessari per assicurarti che l’installazione dell’AEM sia pronta per essere spostata sul cloud.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 6%
@@ -49,7 +49,7 @@ L’elenco delle voci nella tabella seguente è il sottoinsieme delle modifiche 
 <tbody>
   <tr>
     <td>Separa i filtri mutabili e immutabili nei pacchetti corrispondenti</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=en">Modifiche di rilievo as a Cloud Service dall’AEM</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">Struttura dei progetti AEM per AEM as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">Modifiche di rilievo as a Cloud Service dall’AEM</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">Struttura dei progetti AEM per AEM as a Cloud Service</a></td>
     <td>Un singolo pacchetto che può essere distribuito in AEM as a Cloud Service può avere pacchetti secondari, principalmente per contenere contenuti mutabili e immutabili separati nei propri pacchetti.</td>
   </tr>
   <tr>
@@ -104,7 +104,7 @@ L’elenco delle voci nella tabella seguente è il sottoinsieme delle modifiche 
   </tr>
   <tr>
     <td>Flusso di lavoro Aggiorna risorsa DAM</td>
-    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=en">Servizio Asset compute</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html">Servizio Asset compute</a></td>
     <td>I passaggi di elaborazione dei contenuti multimediali che fanno parte del flusso di lavoro Risorsa di aggiornamento DAM ora sono sostituiti dal servizio Asset compute</td>
   </tr>
   <tr>
@@ -119,17 +119,17 @@ L’elenco delle voci nella tabella seguente è il sottoinsieme delle modifiche 
   </tr>
   <tr>
     <td>Passaggi rappresentazione personalizzata</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en">Profili di elaborazione</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html">Profili di elaborazione</a></td>
     <td>Eventuali generazioni di rappresentazioni personalizzate, conversioni di immagini o codifiche video devono essere scaricate nel servizio di elaborazione delle risorse creando i profili di elaborazione corrispondenti.</td>
   </tr>
   <tr>
     <td>Ricerca e indicizzazione dei contenuti</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=en">Modifiche alla ricerca e all’indicizzazione dei contenuti</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=it">Modifiche alla ricerca e all’indicizzazione dei contenuti</a></td>
     <td>Vi sono notevoli cambiamenti nell’elaborazione sottostante degli indici e nel momento in cui viene avviata.<br>Comprendi e riesegui il factoring degli indici Oak prima di gestirli nel codice distribuito.</td>
   </tr>
   <tr>
     <td>Non tutte le attività di manutenzione sono configurabili</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html?lang=en">Attività di manutenzione as a Cloud Service AEM</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html">Attività di manutenzione as a Cloud Service AEM</a></td>
     <td>Con AEM as a Cloud Service è possibile configurare solo alcune attività di manutenzione.</td>
   </tr>
   <tr>
@@ -139,17 +139,17 @@ L’elenco delle voci nella tabella seguente è il sottoinsieme delle modifiche 
   </tr>
   <tr>
     <td>Configurazioni e caching del Dispatcher</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">Dispatcher nel cloud</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">Gestione cache<br></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=it">Dispatcher nel cloud</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">Gestione cache<br></td>
     <td>Le configurazioni del Dispatcher devono seguire una struttura specifica.<br>Le configurazioni devono essere gestite come parte del codice e distribuite tramite la pipeline di Cloud Manager.</td>
   </tr>
   <tr>
     <td>Backup e ripristino</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=en">Backup e ripristino as a Cloud Service AEM</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html">Backup e ripristino as a Cloud Service AEM</a></td>
     <td></td>
   </tr>
   <tr>
     <td>Modifiche all’autenticazione</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">Supporto IMS per AEM as a Cloud Service</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html">Supporto IMS per AEM as a Cloud Service</td>
     <td>Se in precedenza utilizzavi l’integrazione SAML 2.0 sia per l’authoring che per la pubblicazione prima di passare al Cloud Service, la modifica principale è che AEM as a Cloud Service Author si integra solo con Adobe IMS. Tuttavia, il livello di pubblicazione as a Cloud Service dall’AEM può ancora utilizzare SAML o altre integrazioni di autenticazione. AEM as a Cloud Service offre il supporto per l’autenticazione IMS solo per gli utenti con privilegi di autore, amministratore e sviluppatore, L’autenticazione IMS non offre supporto per gli utenti finali esterni dei siti dei clienti, come i visitatori del sito.</td>
   </tr>
 </tbody>
