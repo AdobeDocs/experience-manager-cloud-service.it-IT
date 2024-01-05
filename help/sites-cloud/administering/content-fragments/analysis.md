@@ -1,12 +1,12 @@
 ---
 title: Analisi dei frammenti di contenuto
-description: Comprendi la struttura dei frammenti di contenuto utilizzati per la distribuzione dei contenuti. Questo fornisce informazioni rilevanti sia per la distribuzione headless che per l’authoring delle pagine.
+description: Comprendere la struttura dei frammenti di contenuto. Questo fornisce informazioni rilevanti sia per la distribuzione headless che per l’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '128'
 ht-degree: 2%
 
 ---

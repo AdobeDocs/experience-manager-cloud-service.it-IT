@@ -1,17 +1,23 @@
 ---
 title: Contenuto associato (Risorse - Frammenti di contenuto)
-description: Scopri in che modo la funzione di contenuto associato all’AEM fornisce la connessione in modo che le risorse possano essere facoltativamente utilizzate con il frammento.
+description: Scopri in che modo la funzione di contenuto associato per Frammenti di contenuto AEM fornisce la connessione in modo che le risorse possano essere facoltativamente utilizzate con il frammento.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 51%
+source-wordcount: '281'
+ht-degree: 41%
 
 ---
 
 # Contenuto associato{#associated-content}
 
-La funzione di contenuto associato AEM fornisce la connessione in modo che le risorse possano essere facoltativamente utilizzate con il frammento quando viene aggiunto a una pagina di contenuto. Questo offre flessibilità per la distribuzione headless dei contenuti [fornire una serie di risorse a cui accedere quando si utilizza il frammento di contenuto su una pagina,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) riducendo al contempo il tempo necessario per cercare la risorsa appropriata.
+Per i Frammenti di contenuto di Adobe Experience Manager (AEM) as a Cloud Service, la funzione di contenuto associato (disponibile nell’editor originale) fornisce la connessione in modo che le risorse possano essere facoltativamente utilizzate con il frammento. Ciò offre flessibilità grazie a [fornitura di una serie di risorse a cui accedere quando si utilizza il frammento di contenuto](/help/assets/content-fragments/content-fragments.md#using-associated-content), contribuendo anche a ridurre il tempo necessario per cercare la risorsa appropriata. Questa funzione può essere utilizzata sia per la distribuzione di contenuti headless che per l’authoring delle pagine.
+
+>[!NOTE]
+>
+>I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
+>
+>Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console.
 
 ## Aggiunta di contenuto associato {#adding-associated-content}
 

@@ -1,11 +1,11 @@
 ---
 title: Modelli per frammenti di contenuto (Risorse - Frammenti di contenuto)
-description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM e come creare frammenti di contenuto con contenuti strutturati.
+description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM, consentendoti di creare frammenti di contenuto con contenuti strutturati.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '3005'
-ht-degree: 88%
+source-wordcount: '3011'
+ht-degree: 87%
 
 ---
 
@@ -30,7 +30,7 @@ Per utilizzare i modelli di frammento di contenuto:
    >
    >Se l’[utilizzo di modelli per frammenti di contenuto non è stato abilitato](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’opzione **Crea** non sarà disponibile.
 
-1. Specifica il **Titolo modello**.
+1. Specifica la **Titolo modello**.
 Puoi anche definire varie proprietà; ad esempio, aggiungi **Tag**, a **Descrizione**, e seleziona **Abilita modello** a [abilita il modello](#enabling-disabling-a-content-fragment-model) se necessario.
 
    >[!NOTE]
@@ -185,7 +185,7 @@ Il contenuto (per il campo specifico) deve essere univoco in tutti i frammenti d
 
   >[!CAUTION]
   >
-  >Se desideri utilizzare MSM (che crea copie di frammenti di contenuto), qualsiasi vincolo **Univoco** deve essere rimosso da tutti i tipi di dati utilizzati nei rispettivi modelli per frammenti di contenuto.
+  >Se desideri utilizzare MSM (che crea copie dei frammenti di contenuto), qualsiasi **Univoco** I vincoli devono essere rimossi da tutti i tipi di dati utilizzati nei rispettivi modelli per frammenti di contenuto.
 
 * Vedi **[Riferimento contenuto](#content-reference)** per ulteriori dettagli su quel tipo di dati specifico e sulle relative proprietà.
 
@@ -216,8 +216,8 @@ Diversi tipi di dati includono ora la possibilità di definire requisiti di conv
 
   Campi definiti come **Campo multiplo** (impostato con **Rendering come**) puoi scegliere:
 
-   * **Limite minimo di elmenti**
-   * **Limite massimo di elementi**
+   * **Numero minimo di elementi**
+   * **Numero massimo di elementi**
 
   Questi vengono convalidati:
 

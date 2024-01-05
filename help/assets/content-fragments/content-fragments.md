@@ -1,11 +1,11 @@
 ---
-title: Utilizzo di frammenti di contenuto (Risorse - Frammenti di contenuto)
+title: Utilizzo dei frammenti di contenuto (Risorse - Frammenti di contenuto)
 description: Scopri come i Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per l’authoring delle pagine e la distribuzione headless. Inoltre, come possono essere utilizzati insieme a MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '2229'
-ht-degree: 58%
+source-wordcount: '2222'
+ht-degree: 57%
 
 ---
 
@@ -212,7 +212,7 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
 
      >[!NOTE]
      >
-     >È inoltre possibile aggiungere le risorse come [contenuto aggiuntivo (intermedio)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) quando si utilizza un frammento su una pagina, utilizzando Contenuto associato o risorse dal Browser risorse.
+     >È inoltre possibile aggiungere le risorse come contenuto aggiuntivo (intermedio) quando si utilizza un frammento su una pagina, utilizzando [Contenuto associato](/help/assets/content-fragments/content-fragments-assoc-content.md) o dal browser Risorse.
 
 * **Contenuto associato**
 

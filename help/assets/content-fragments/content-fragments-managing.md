@@ -1,17 +1,17 @@
 ---
 title: Gestione dei frammenti di contenuto (risorse - frammenti di contenuto)
-description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
+description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, come base per i contenuti headless o per l’authoring delle pagine.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 66%
+source-wordcount: '1885'
+ht-degree: 65%
 
 ---
 
 # Gestione dei frammenti di contenuto {#managing-content-fragments}
 
-Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
+Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, come base per i contenuti headless o per l’authoring delle pagine.
 
 Dopo aver definito i [Modelli per frammenti di contenuto](#creating-a-content-model) puoi utilizzarli per [creare i tuoi frammenti di contenuto](#creating-a-content-fragment).
 

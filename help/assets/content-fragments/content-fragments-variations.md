@@ -1,17 +1,17 @@
 ---
-title: Varianti - Authoring dei contenuti di frammenti (Risorse - Frammenti di contenuto)
-description: Scopri come le varianti possono rendere ancora più flessibili i contenuti headless in AEM consentendoti di creare contenuti per il frammento e quindi creare varianti di tali contenuti in base allo scopo.
+title: Varianti - Authoring dei contenuti di frammenti (Assets - Frammenti di contenuto)
+description: Scopri in che modo le varianti di Frammento di contenuto consentono di creare contenuti per il frammento, quindi di creare varianti di tale contenuto in base allo scopo, aumentando così la flessibilità.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '2546'
-ht-degree: 54%
+source-wordcount: '2474'
+ht-degree: 52%
 
 ---
 
 # Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
-[Varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una funzione significativa dei frammenti di contenuto dell’AEM. Il motivo è che ti consentono di creare e modificare copie del contenuto principale da utilizzare su canali e scenari specifici, rendendo la distribuzione di contenuti headless ancora più flessibile.
+[Varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una funzione significativa dei Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service. Questo perché ti consentono di creare e modificare copie del **Principale** contenuti da utilizzare su canali e scenari specifici. In particolare, questo rende la distribuzione di contenuti headless ancora più flessibile.
 
 >[!NOTE]
 >
