@@ -2,10 +2,10 @@
 title: Fase di implementazione
 description: Assicurarsi che il codice e il contenuto siano pronti per la migrazione al cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 10%
+source-wordcount: '2282'
+ht-degree: 9%
 
 ---
 
@@ -71,8 +71,8 @@ Per prima cosa, consulta la documentazione che descrive gli strumenti di base e 
 
 
 * Durante la pianificazione, è consigliabile disporre di un elenco di aree che devono essere riadattate per essere compatibili con gli as a Cloud Service AEM. Puoi rivedere [Linee guida per lo sviluppo](/help/implementing/developing/introduction/development-guidelines.md) per ulteriori dettagli su come effettuare il refactoring del codice per il Cloud Service e ottimizzarlo.
-* Scopri come [Gestione configurazioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) nell’AEM as a Cloud Service.
-* Scopri come impostare un ambiente di sviluppo locale scaricando il [SDK AS A CLOUD SERVICE AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
+* Scopri come [Gestione configurazioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) nell’AEM as a Cloud Service.
+* Scopri come impostare un ambiente di sviluppo locale scaricando il [SDK AS A CLOUD SERVICE AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
 * Infine, impara a conoscere [API Java as a Cloud Service AEM](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 Inoltre, puoi anche:
@@ -104,8 +104,8 @@ Adobe fornisce diversi strumenti per accelerare alcune delle attività di refact
 
 * [Migrazione flusso di lavoro risorse](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md), strumento utilizzato per migrare automaticamente i flussi di lavoro di elaborazione delle risorse
 * [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md), strumento che converte le configurazioni esistenti di Dispatcher in un formato pronto per l’AEM as a Cloud Service.
-* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=en), uno strumento che prende come input un progetto multimodo AEM e lo converte in un progetto as a Cloud Service AEM
-* [Convertitore indice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=en), strumento che converte gli indici in una forma compatibile con AEM as a Cloud Service
+* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html), uno strumento che prende come input un progetto multimodo AEM e lo converte in un progetto as a Cloud Service AEM
+* [Convertitore indice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html), strumento che converte gli indici in una forma compatibile con AEM as a Cloud Service
 * [Strumenti di modernizzazione](/help/journey-migration/refactoring-tools/aem-modernization-tools.md), una suite di utility che può essere utilizzata per convertire le funzioni legacy dell’AEM nelle funzionalità moderne e supportate di AEM as a Cloud Service.
 
 Dopo aver configurato l’ambiente di sviluppo locale, acquisisci familiarità con l’SDK as a Cloud Service dell’AEM consultando il [documentazione](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
@@ -175,7 +175,7 @@ In base ai punti dati raccolti (vedere sopra), è possibile creare un piano di m
 
 Nella tabella seguente viene illustrato un tipico piano di migrazione:
 
-| Iterazione di migrazione | Data inizio | Data di fine stimata | Dipendenze | Durata stimata (in giorni) | Dettagli aggiuntivi/Azioni |
+| Iterazione di migrazione | Data iniziale | Data di fine stimata | Dipendenze | Durata stimata (in giorni) | Dettagli aggiuntivi/Azioni |
 |---|---|---|---|---|---|
 | PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
 | PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |   |   |   |   |   |

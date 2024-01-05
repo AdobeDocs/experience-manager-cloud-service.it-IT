@@ -2,10 +2,10 @@
 title: Replica
 description: Scopri la distribuzione e la risoluzione dei problemi di replica in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 43%
+source-wordcount: '1312'
+ht-degree: 39%
 
 ---
 
@@ -57,12 +57,12 @@ Puoi trovare informazioni più dettagliate su Gestisci pubblicazione nella sezio
 
 Non richiamare il modello originale. Assicurati invece di copiare prima il modello e richiamare tale copia.
 
-Come tutti i flussi di lavoro, può anche essere richiamato tramite API. Per ulteriori informazioni, consulta [Interazione con i flussi di lavoro a livello di programmazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=it#extending-aem).
+Come tutti i flussi di lavoro, può anche essere richiamato tramite API. Per ulteriori informazioni, consulta [Interazione con i flussi di lavoro a livello di programmazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 In alternativa, puoi creare un modello di flusso di lavoro che utilizza `Publish Content Tree` passaggio processo:
 
-1. Dalla home page di AEM as a Cloud Service, vai a **Strumenti - Flusso di lavoro - Modelli**.
-1. Nella pagina Modelli di flusso di lavoro, premi **Crea** nell’angolo superiore destro dello schermo.
+1. Dalla home page dell’AEM as a Cloud Service, vai a **Strumenti - Workflow - Modelli**.
+1. Nella pagina Modelli di flusso di lavoro, premi **Crea** nell&#39;angolo superiore destro dello schermo.
 1. Aggiungi un titolo e un nome al modello. Per ulteriori informazioni, consulta [Creazione di modelli di flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it).
 1. Selezionate il modello creato dall&#39;elenco e premete **Modifica**
 1. Nella finestra successiva, trascina e rilascia il Passaggio del processo nel flusso del modello corrente:

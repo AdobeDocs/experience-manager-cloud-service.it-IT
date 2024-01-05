@@ -2,14 +2,14 @@
 title: Note sulla versione 2020.12.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2020.12.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 13%
+source-wordcount: '652'
+ht-degree: 11%
 
 ---
 
-# Note sulla versione di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Note sulla versione per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service.
 
@@ -64,7 +64,7 @@ La data di pubblicazione di Cloud Manager in Adobe Experience Manager (AEM) as a
 
 ### Novità in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* È stata rilasciata la nuova versione del plug-in AIO-CLI. La versione più recente di questo plug-in include correzioni di bug per AEM Dispatcher Converter e Repository Modernizer e supporta anche una nuova utility: Index Converter. Consulta [Esperienza unificata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html?lang=en#benefits) dove è possibile saperne di più su questo plug-in.
+* È stata rilasciata la nuova versione del plug-in AIO-CLI. La versione più recente di questo plug-in include correzioni di bug per AEM Dispatcher Converter e Repository Modernizer e supporta anche una nuova utility: Index Converter. Consulta [Esperienza unificata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) dove è possibile saperne di più su questo plug-in.
 
 * Index Converter è un’utility che può essere utilizzata per trasformare le definizioni dell’indice Oak personalizzato di un cliente in definizioni dell’indice Oak compatibili con l’AEM as a Cloud Service. Consulta [Convertitore indice](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) per ulteriori dettagli.
 

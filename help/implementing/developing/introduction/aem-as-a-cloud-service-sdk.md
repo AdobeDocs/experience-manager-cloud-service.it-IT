@@ -2,7 +2,7 @@
 title: SDK di AEM as a Cloud Service
 description: Panoramica di AEM as a Cloud Service Software Development Kit
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Inoltre, alcuni clienti che sono stati distribuiti in precedenza con AEM 6.5 o v
 
 ## Creazione per l’SDK {#building-for-the-sdk}
 
-L’SDK as a Cloud Service dall’AEM viene utilizzato per generare e distribuire il codice personalizzato. Consulta la [Documentazione di Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). Ad alto livello, vengono eseguiti i seguenti passaggi:
+L’SDK as a Cloud Service dall’AEM viene utilizzato per generare e distribuire il codice personalizzato. Consulta la [Documentazione di Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=it). Ad alto livello, vengono eseguiti i seguenti passaggi:
 
 * **Compila codice**. Come previsto, il codice sorgente viene compilato, generando i pacchetti di contenuti risultanti
 * **Creare artefatti**. Gli artefatti vengono generati durante questo processo

@@ -2,10 +2,10 @@
 title: Creazione di un ambiente
 description: Questa pagina descrive la creazione di un ambiente in Cloud Manager per Screens as a Cloud Service.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 9%
+source-wordcount: '194'
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 9%
 Questa sezione descrive come creare un ambiente per il programma in Cloud Manager.
 
 >[!NOTE]
->Consulta [Gestione degli ambienti in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it) per scoprire come l’utente può creare un ambiente.
+>Consulta [Gestione degli ambienti in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) per scoprire come l’utente può creare un ambiente.
 
 ## Obiettivo {#objective}
 

@@ -1,12 +1,13 @@
 ---
 title: Amministrazione delle istanze dei flussi di lavoro
-description: Scopri come amministrare le istanze dei flussi di lavoro utilizzo della console del flusso di lavoro
+description: Scopri come amministrare le istanze dei flussi di lavoro utilizzando la console dei flussi di lavoro
 feature: Administering
 role: Admin
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 99%
+source-wordcount: '1286'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +47,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 
    >[!NOTE]
    >
-   > Per mantenere integra l’istanza del flusso di lavoro, segui le best practice in [Eliminazione regolare delle istanze del flusso di lavoro](#regular-purging-of-workflow-instances) o [Migliori best practice per i flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=it).
+   > Per mantenere integra l’istanza del flusso di lavoro, segui le best practice in [Eliminazione regolare delle istanze del flusso di lavoro](#regular-purging-of-workflow-instances) o [Migliori best practice per i flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Cerca istanze del flusso di lavoro {#search-workflow-instances}
 
@@ -110,7 +111,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 Quando un flusso di lavoro non riesce, AEM mette a disposizione la console **Errori** per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
 
 * **Dettagli errore**
-Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio e **Stack errore**.
+Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio e **Stack errori**.
 
 * **Cronologia elementi aperti**
 Mostra i dettagli della cronologia del flusso di lavoro.
@@ -264,5 +265,3 @@ public interface UserMetaDataPersistenceProvider {
  
 } 
 ```
-
-

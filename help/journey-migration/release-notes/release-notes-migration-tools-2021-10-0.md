@@ -3,10 +3,10 @@ title: Note sulla versione 2021.10.0 degli strumenti di migrazione nell’AEM as
 description: Note sulla versione 2021.11.0 degli strumenti di migrazione in AEM as a Cloud Service
 feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 14%
+source-wordcount: '368'
+ht-degree: 11%
 
 ---
 
@@ -25,7 +25,7 @@ La data di pubblicazione di Cloud Acceleration Manager è il 25 ottobre 2021.
 
 ### Novità {#what-is-new-cam}
 
-Cloud Acceleration Manager ora consente agli utenti di visualizzare i rapporti BPA storici in un rapporto della linea di tendenza. Con questo rapporto, gli utenti possono visualizzare lo stato di avanzamento che stanno facendo in una rappresentazione grafica di facile utilizzo. Consulta [Utilizzo della linea di tendenza della vista](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) per ulteriori dettagli.
+Cloud Acceleration Manager ora consente agli utenti di visualizzare i rapporti BPA storici in un rapporto della linea di tendenza. Con questo rapporto, gli utenti possono visualizzare lo stato di avanzamento che stanno facendo in una rappresentazione grafica di facile utilizzo. Consulta [Utilizzo della linea di tendenza della vista](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#trendline-view-cam) per ulteriori dettagli.
 
 ### Data di pubblicazione {#release-date-october-cam}
 
@@ -33,7 +33,7 @@ La data di pubblicazione di Cloud Acceleration Manager è il 4 ottobre 2021.
 
 ### Novità {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager ora consente agli utenti di visualizzare i rapporti BPA in un’anteprima stampabile, che può essere stampata o stampata su PDF per facilitarne la condivisione. Vedere i passaggi 6 e 7 in [Utilizzo della scheda Analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+Cloud Acceleration Manager ora consente agli utenti di visualizzare i rapporti BPA in un’anteprima stampabile, che può essere stampata o stampata su PDF per facilitarne la condivisione. Vedere i passaggi 6 e 7 in [Utilizzo della scheda Analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
 
 
 ## Strumento Trasferimento contenuti {#ctt-release}
@@ -44,7 +44,7 @@ La data di pubblicazione dello strumento Content Transfer v1.6.0 è il 4 ottobre
 
 ### Novità {#what-is-new-ctt-oct}
 
-* È stato migliorato lo strumento di mappatura utente con un’esperienza utente semplificata, incluse le seguenti funzioni elencate di seguito. Per ulteriori dettagli, consulta [Utilizzo dello strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en).
+* È stato migliorato lo strumento di mappatura utente con un’esperienza utente semplificata, incluse le seguenti funzioni elencate di seguito. Per ulteriori dettagli, consulta [Utilizzo dello strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html).
    * Verifica la connessione all’API User Management prima di eseguire la mappatura utente
    * Ignora gli errori e continua con l’attività Mappatura utenti
    * La mappatura degli utenti non ha più esito negativo se **Token di accesso** scade dopo 24 ore. La mappatura utente può essere eseguita nuovamente dal punto in cui è stata interrotta l’ultima volta.

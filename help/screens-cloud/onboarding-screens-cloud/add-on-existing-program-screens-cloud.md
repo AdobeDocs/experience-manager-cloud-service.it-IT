@@ -2,10 +2,10 @@
 title: Aggiunta del componente aggiuntivo Screens a un programma esistente in Cloud Manager
 description: Scopri come aggiungere un componente aggiuntivo Screens a un programma esistente in Cloud Manager per Screens as a Cloud Service.
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 6%
+source-wordcount: '244'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 6%
 Questa sezione descrive come aggiungere Screens come componente aggiuntivo a un programma esistente in Cloud Manager.
 
 >[!NOTE]
->Consulta [Informazioni su programmi e tipi di programmi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en) per ulteriori informazioni sui programmi di Cloud Manager.
+>Consulta [Informazioni su programmi e tipi di programmi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=it) per ulteriori informazioni sui programmi di Cloud Manager.
 
 ## Obiettivo {#objective}
 
@@ -27,7 +27,7 @@ Per aggiungere Screens come componente aggiuntivo a un programma esistente, effe
 1. Accedi a [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Consulta [Introduzione a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=en) per informazioni su Cloud Manager.
+   >Consulta [Introduzione a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=it) per informazioni su Cloud Manager.
 
 1. Passa al progetto e fai clic su **Modifica programma** dell’opzione di Cloud Manager **Panoramica** pagina.
 

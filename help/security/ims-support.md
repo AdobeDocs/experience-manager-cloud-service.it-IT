@@ -2,7 +2,7 @@
 title: Supporto IMS per Adobe Experience Manager as a Cloud Service
 description: Supporto del sistema di gestione delle immagini per Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 0074f483bffa1cd7c2cc468a74730672511f0956
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 99%
@@ -213,7 +213,7 @@ Per poter accedere a Cloud Manager o agli ambienti in AEM as a Cloud Service, l�
 Per ulteriori informazioni sui ruoli degli utenti che determinano la disponibilità di funzionalità specifiche in Cloud Manager, consulta le definizioni dei ruoli.
 
 >[!NOTE]
->Cloud Manager dispone di ruoli preconfigurati con le autorizzazioni appropriate. Per informazioni su ciascuno dei ruoli con autorizzazioni specifiche, attività preconfigurate o autorizzazioni associate a ogni ruolo, consulta la descrizione delle [autorizzazioni basate sul ruolo](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=it).
+>Cloud Manager dispone di ruoli preconfigurati con le autorizzazioni appropriate. Per informazioni su ciascuno dei ruoli con autorizzazioni specifiche, attività preconfigurate o autorizzazioni associate a ogni ruolo, consulta la descrizione delle [autorizzazioni basate sul ruolo](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html).
 
 **Procedura per aggiungere un utente**
 

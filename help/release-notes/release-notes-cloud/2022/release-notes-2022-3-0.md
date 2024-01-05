@@ -2,9 +2,9 @@
 title: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1158'
 ht-degree: 83%
 
 ---
@@ -113,7 +113,7 @@ La data di pubblicazione dello strumento Content Transfer v1.9.0 è il 28 febbra
 
 ### Novità {#what-is-new-ctt}
 
-* Controllo dei limiti di dimensione: la funzione di controllo dimensioni dello strumento Content Transfer consente di ridurre i trasferimenti non riusciti. Con la funzione di controllo dimensioni, gli utenti possono 1) determinare se hanno spazio su disco sufficiente nel `crx-quickstart` sottodirectory prima dell’estrazione, e 2) stimare le dimensioni del set di migrazione e verificare se è supportato. Se uno o entrambi questi controlli vengono violati, gli utenti visualizzano gli avvisi nell’interfaccia utente CTT. Con questo controllo puoi evitare errori di trasferimento dei contenuti e verificare in modo proattivo con l’Assistenza clienti di Adobe le opzioni di migrazione disponibili. Consulta [Determinazione delle dimensioni del set di migrazione e dello spazio su disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it#migration-set-size) per ulteriori dettagli.
+* Controllo dei limiti di dimensione: la funzione di controllo dimensioni dello strumento Content Transfer consente di ridurre i trasferimenti non riusciti. Con la funzione di controllo dimensioni, gli utenti possono 1) determinare se hanno spazio su disco sufficiente nel `crx-quickstart` sottodirectory prima dell’estrazione, e 2) stimare le dimensioni del set di migrazione e verificare se è supportato. Se uno o entrambi questi controlli vengono violati, gli utenti visualizzano gli avvisi nell’interfaccia utente CTT. Con questo controllo puoi evitare errori di trasferimento dei contenuti e verificare in modo proattivo con l’Assistenza clienti di Adobe le opzioni di migrazione disponibili. Consulta [Determinazione delle dimensioni del set di migrazione e dello spazio su disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) per ulteriori dettagli.
 
 ## Analisi delle best practice {#bpa-release}
 

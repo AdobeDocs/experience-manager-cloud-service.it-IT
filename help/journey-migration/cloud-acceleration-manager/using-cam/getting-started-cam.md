@@ -2,9 +2,9 @@
 title: Guida introduttiva di Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica su come utilizzare e iniziare a utilizzare Cloud Acceleration Manager.
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '514'
 ht-degree: 22%
 
 ---
@@ -97,4 +97,4 @@ Per eliminare un progetto, effettua le seguenti operazioni:
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, puoi rivedere il passaggio successivo nella sezione [Fase di preparazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).
+Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, puoi rivedere il passaggio successivo nella sezione [Fase di preparazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).

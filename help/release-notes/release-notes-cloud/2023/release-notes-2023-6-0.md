@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione 2023.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2023.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1357'
 ht-degree: 95%
 
 ---
-
 
 # Note sulla versione 2023.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -41,8 +41,8 @@ Dai un’occhiata al video Panoramica sulla versione di giugno 2023 per un riepi
 
 ![Anteprima nella console Frammenti di contenuto](/help/assets/content-fragments-console-preview.png)
 
-* Le immagini possono essere ora ottimizzate dinamicamente per la distribuzione web in scenari headless utilizzando GraphQL di AEM. Nelle query GraphQL è possibile definire [Variabili di query](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=it#query-variables) per consentire alle applicazioni client separate di richiedere a AEM immagini ottimizzate di conseguenza.
-* I tag sulle [Varianti dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=it) ora possono essere trasmessi in formato JSON utilizzando l’API per la distribuzione dei contenuti GraphQL di AEM.
+* Le immagini possono essere ora ottimizzate dinamicamente per la distribuzione web in scenari headless utilizzando GraphQL di AEM. Nelle query GraphQL è possibile definire [Variabili di query](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) per consentire alle applicazioni client separate di richiedere a AEM immagini ottimizzate di conseguenza.
+* I tag sulle [Varianti dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html) ora possono essere trasmessi in formato JSON utilizzando l’API per la distribuzione dei contenuti GraphQL di AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -74,7 +74,7 @@ Una nuova esperienza utente migliorata per [creare condivisioni di collegamenti]
 
 **Dynamic Media: aggiornamento dei campi relativi al ritaglio avanzato in un profilo immagine**
 
-L’interfaccia utente di alcuni campi relativi a Ritaglio avanzato in un profilo immagine è stata aggiornata per riflettere le linee guida correnti utili alla definizione di un Ritaglio avanzato. Consulta [Opzioni di ritaglio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=it#crop-options).
+L’interfaccia utente di alcuni campi relativi a Ritaglio avanzato in un profilo immagine è stata aggiornata per riflettere le linee guida correnti utili alla definizione di un Ritaglio avanzato. Consulta [Opzioni di ritaglio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
 
 ### Nuove funzioni nella Vista risorse {#assets-view-features}
 

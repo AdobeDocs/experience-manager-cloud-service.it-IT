@@ -2,7 +2,7 @@
 title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '3357'
 ht-degree: 92%
@@ -54,7 +54,7 @@ Per impostazione predefinita, Adobe adotta misure per evitare la riduzione delle
 
 La clientela può adottare misure proattive per mitigare gli attacchi a livello di applicazione (livello 7), configurando regole a vari livelli del flusso di distribuzione dei contenuti.
 
-Ad esempio, al livello Apache, è possibile configurare il [modulo Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers) o [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=it) per limitare l’accesso a determinati contenuti.
+Ad esempio, al livello Apache, è possibile configurare il [modulo Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter) o [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html) per limitare l’accesso a determinati contenuti.
 
 Come descritto in questo articolo, le regole del filtro del traffico possono essere distribuite alla rete CDN gestita da Adobe, utilizzando la pipeline di configurazione di Cloud Manager. Oltre alle regole del filtro del traffico basate su proprietà come indirizzo IP, percorso e intestazioni, o alle regole basate sull’impostazione dei limiti di frequenza, è possibile anche concedere in licenza una potente sottocategoria di regole del filtro del traffico, chiamate regole WAF.
 

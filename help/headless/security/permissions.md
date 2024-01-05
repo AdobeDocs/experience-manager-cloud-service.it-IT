@@ -3,9 +3,9 @@ title: Considerazioni sulle autorizzazioni per contenuti headless
 description: Scopri diverse considerazioni su autorizzazioni e ACL per un’implementazione headless con Adobe Experience Manager. Comprendi i diversi utenti tipo e i potenziali livelli di autorizzazione necessari sia per gli ambienti Author che per quelli Publish.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '811'
 ht-degree: 96%
 
 ---
@@ -22,7 +22,7 @@ Il servizio Author è il luogo in cui gli utenti interni creano, gestiscono e pu
 
 Come best practice, le autorizzazioni devono essere impostate su Gruppi in AEM. Noti anche come gruppi locali, questi gruppi possono essere gestiti nell’ambiente di authoring AEM.
 
-Il modo più semplice per gestire l’iscrizione al gruppo è utilizzare i gruppi Adobe Identity Management System (IMS) e assegnare [Gruppi IMS a gruppi AEM locali](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=it#managing-permissions-in-aem).
+Il modo più semplice per gestire l’iscrizione al gruppo è utilizzare i gruppi Adobe Identity Management System (IMS) e assegnare [Gruppi IMS a gruppi AEM locali](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem).
 
 ![Flusso delle autorizzazioni di Admin Console](assets/admin-console-aem-group-permissions.png)
 

@@ -3,7 +3,7 @@ title: Generazione dei token di accesso per le API lato server (legacy)
 description: Scopri come facilitare la comunicazione tra un server di terze parti e AEM as a Cloud Service generando un token JWT sicuro
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 0%
@@ -19,11 +19,11 @@ Il flusso server-to-server è descritto di seguito, insieme a un flusso semplifi
 <!-- ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## Flusso server-to-server {#the-server-to-server-flow}
 
-Un utente con ruolo di amministratore dell’organizzazione IMS e che è anche membro del profilo di prodotto Utenti AEM o Amministratori AEM in AEM Author può generare una credenziale AEM as a Cloud Service. Tali credenziali possono essere recuperate in seguito da un utente con il ruolo di amministratore dell’ambiente as a Cloud Service dell’AEM e devono essere installate sul server e trattate con attenzione come chiave segreta. Questo file in formato JSON contiene tutti i dati necessari per l’integrazione con un’API as a Cloud Service per AEM. I dati vengono utilizzati per creare un token JWT firmato, che viene scambiato con IMS per un token di accesso IMS. Questo token di accesso può quindi essere utilizzato come token di autenticazione Bearer per rendere as a Cloud Service le richieste all’AEM. Le credenziali scadono dopo un anno per impostazione predefinita, ma possono essere aggiornate quando necessario, come descritto [qui](#refresh-credentials).
+Un utente con ruolo di amministratore dell’organizzazione IMS e che è anche membro del profilo di prodotto Utenti AEM o Amministratori AEM nell’istanza Autore AEM può generare una credenziale AEM as a Cloud Service. Tali credenziali possono essere recuperate in seguito da un utente con il ruolo di amministratore dell’ambiente as a Cloud Service dell’AEM e devono essere installate sul server e trattate con attenzione come chiave segreta. Questo file in formato JSON contiene tutti i dati necessari per l’integrazione con un’API as a Cloud Service per AEM. I dati vengono utilizzati per creare un token JWT firmato, che viene scambiato con IMS per un token di accesso IMS. Questo token di accesso può quindi essere utilizzato come token di autenticazione Bearer per rendere as a Cloud Service le richieste all’AEM. Le credenziali scadono dopo un anno per impostazione predefinita, ma possono essere aggiornate quando necessario, come descritto [qui](#refresh-credentials).
 
 Il flusso server-to-server prevede i seguenti passaggi:
 
@@ -65,7 +65,7 @@ Una volta generate, le credenziali possono essere recuperate in un secondo momen
 
 >[!IMPORTANT]
 >
->Un amministratore dell’organizzazione IMS, in genere l’utente che ha eseguito il provisioning dell’ambiente tramite Cloud Manager, che deve anche essere membro del profilo di prodotto Utenti AEM o Amministratori AEM in AEM Author, accede a Console sviluppatori. Quindi devono fare clic su **Genera credenziali servizio** affinché le credenziali vengano generate e successivamente recuperate da un utente con autorizzazioni di amministratore per l’ambiente as a Cloud Service dell’AEM. Se l’amministratore dell’organizzazione IMS non ha eseguito questa attività, un messaggio informa che è necessario il ruolo di amministratore dell’organizzazione IMS.
+>Un amministratore dell’organizzazione IMS, in genere l’utente che ha eseguito il provisioning dell’ambiente tramite Cloud Manager, che deve anche essere membro del profilo di prodotto Utenti AEM o Amministratori AEM su AEM Author, accede a Console sviluppatori. Quindi devono fare clic su **Genera credenziali servizio** affinché le credenziali vengano generate e successivamente recuperate da un utente con autorizzazioni di amministratore per l’ambiente as a Cloud Service dell’AEM. Se l’amministratore dell’organizzazione IMS non ha eseguito questa attività, un messaggio informa che è necessario il ruolo di amministratore dell’organizzazione IMS.
 
 ### Installare le credenziali del servizio AEM su un server non AEM {#install-the-aem-service-credentials-on-a-non-aem-server}
 
@@ -111,7 +111,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 Dopo che l’utente dell’account tecnico è stato creato in AEM (si verifica dopo la prima richiesta con il token di accesso corrispondente), deve disporre delle autorizzazioni appropriate **in** AEM.
 
-Per impostazione predefinita, nel servizio AEM Author l’utente dell’account tecnico viene aggiunto al gruppo di utenti Collaboratori, che fornisce accesso in lettura all’AEM.
+Per impostazione predefinita, nel servizio di authoring dell’AEM l’utente dell’account tecnico viene aggiunto al gruppo di utenti Collaboratori, che fornisce l’AEM in lettura.
 
 Questo utente account tecnico in AEM può essere ulteriormente fornito con autorizzazioni utilizzando i metodi usuali.
 

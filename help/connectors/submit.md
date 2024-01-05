@@ -2,10 +2,10 @@
 title: Invio di un connettore AEM
 description: Scopri come fare riferimento e distribuire correttamente i connettori in Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 30%
+source-wordcount: '296'
+ht-degree: 32%
 
 ---
 
@@ -20,7 +20,7 @@ Nelle soluzioni AEM precedenti, [Gestione pacchetti](/help/implementing/developi
 Sono disponibili varie opzioni per l’inclusione dei pacchetti in un progetto:
 
 1. Archivio pubblico del partner: un partner ospiterà il pacchetto di contenuti in un archivio maven accessibile al pubblico
-1. Archivio protetto da password del partner: un partner ospiterà il pacchetto di contenuti in un archivio maven protetto da password. Consulta [archivi maven protetti da password](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) per istruzioni.
+1. Archivio protetto da password del partner: un partner ospiterà il pacchetto di contenuti in un archivio maven protetto da password. Consulta [archivi maven protetti da password](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories) per istruzioni.
 1. Artefatto nel pacchetto: in questo caso, il pacchetto del connettore è incluso localmente nel progetto Maven del cliente.
 
 Indipendentemente da dove sono ospitati, i pacchetti devono essere indicati come dipendenze nel pom.xml, come fornito dal fornitore.

@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service su Unified Shell
 description: Scopri i vantaggi di AEM as a Cloud Service su Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '390'
 ht-degree: 96%
 
 ---
@@ -54,7 +54,7 @@ Per passare al tema scuro, fai clic sull’icona del tuo profilo. Questa azione 
 
 ## Identificazione dell’ambiente AEM as a Cloud Service {#identify-aemaacs-environment}
 
-AEM as a Cloud Service fornisce tre tipi di ambienti: produzione, staging e sviluppo. Consulta [Tipi di ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it) per ulteriori dettagli. Con questa integrazione con Unified Shell, il tipo di ambiente a cui l’utente ha effettuato l’accesso nel servizio Author viene visualizzato tramite un’etichetta nell’intestazione superiore, come illustrato di seguito.
+AEM as a Cloud Service fornisce tre tipi di ambienti: produzione, staging e sviluppo. Consulta [Tipi di ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) per ulteriori dettagli. Con questa integrazione con Unified Shell, il tipo di ambiente a cui l’utente ha effettuato l’accesso nel servizio Author viene visualizzato tramite un’etichetta nell’intestazione superiore, come illustrato di seguito.
 
 ![immagine](/help/overview/assets/unifiedshell_header_label.png)
 

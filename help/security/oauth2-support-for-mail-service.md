@@ -2,7 +2,7 @@
 title: Supporto OAuth2 per il servizio di posta
 description: Supporto Oauth2 per il servizio di posta in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 88%
@@ -147,7 +147,7 @@ Prima di procedere alla configurazione di OAuth sul lato AEM, assicurati di conv
    * `email`
    * `profile`
 1. Creare un file di proprietà OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
-in `/apps/<my-project>/osgiconfig/config` con la sintassi seguente. I valori `smtp.host` e `smtp.port` riflettono la configurazione di rete avanzata, come descritto nel [Tutorial sul servizio e-mail](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=it).
+in `/apps/<my-project>/osgiconfig/config` con la sintassi seguente. I valori `smtp.host` e `smtp.port` riflettono la configurazione di rete avanzata, come descritto nel [Tutorial sul servizio e-mail](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html).
 
    ```
    {

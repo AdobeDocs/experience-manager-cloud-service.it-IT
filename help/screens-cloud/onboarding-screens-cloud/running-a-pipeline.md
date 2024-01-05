@@ -2,10 +2,10 @@
 title: Esecuzione di una pipeline
 description: Questa pagina descrive l’esecuzione di una pipeline per Screens come progetto di Cloud Service in Cloud Manager.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 3%
+source-wordcount: '271'
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 Questa sezione descrive come eseguire la pipeline e distribuire il codice per il programma in Cloud Manager.
 
 >[!NOTE]
->Consulta [Configurazione della pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) e [Implementare il codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) per scoprire come eseguire la pipeline per il programma in Cloud Manager.
+>Consulta [Configurazione della pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) e [Implementare il codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) per scoprire come eseguire la pipeline per il programma in Cloud Manager.
 
 ## Obiettivo {#objective}
 
@@ -35,14 +35,14 @@ La sezione seguente descrive come configurare la pipeline CI/CD e distribuire il
 1. Seleziona le opzioni dalla **Configurare la pipeline** procedura guidata. Fai clic su **Salva**.
 
    >[!NOTE]
-   >Per informazioni sulle opzioni della procedura guidata Configura pipeline, consulta [Configurazione delle impostazioni della pipeline da Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) per ulteriori dettagli.
+   >Per informazioni sulle opzioni della procedura guidata Configura pipeline, consulta [Configurazione delle impostazioni della pipeline da Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) per ulteriori dettagli.
 
    ![immagine](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Una volta completata la pipeline di configurazione, la scheda di invito all’azione viene aggiornata.
 
    >[!NOTE]
-   >Per informazioni sulle fasi di implementazione in Cloud Manager, consulta [Implementazione del codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) per ulteriori dettagli.
+   >Per informazioni sulle fasi di implementazione in Cloud Manager, consulta [Implementazione del codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) per ulteriori dettagli.
 
    ![immagine](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

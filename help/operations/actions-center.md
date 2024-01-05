@@ -2,7 +2,7 @@
 title: Centro azioni
 description: Sfruttare il Centro operativo per intervenire in modo comodo in caso di incidenti e altre informazioni importanti
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: dca00a8913fb8fd159a69675b8f4ffa67441faa4
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 73%
@@ -72,5 +72,5 @@ Nella tabella seguente sono elencati i tipi di notifica attualmente supportati i
 | Tipo di notifica | Profilo prodotto correlato | Azione correttiva |
 |---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Coda di replica bloccata | Problema | Sblocca la coda seguendo le istruzioni contenute nella [Documentazione di replica](/help/operations/replication.md#troubleshooting) |
-| Query GraphQL persistente non valida | Problema | Correggi la query GraphQL non valida facendo riferimento al [Documentazione sulla risoluzione dei problemi relativi alle query GraphQL persistenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=en) |
+| Query GraphQL persistente non valida | Problema | Correggi la query GraphQL non valida facendo riferimento al [Documentazione sulla risoluzione dei problemi relativi alle query GraphQL persistenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Certificato S2S in scadenza | Proattiva | Scopri come aggiornare una credenziale nella [Documentazione sulla generazione dei token di accesso per le API lato server](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) |

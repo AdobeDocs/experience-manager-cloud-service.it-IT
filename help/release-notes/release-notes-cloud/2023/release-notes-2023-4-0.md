@@ -2,10 +2,10 @@
 title: Note sulla versione 2023.4.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2023.4.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 99%
+source-wordcount: '1122'
+ht-degree: 98%
 
 ---
 
@@ -42,9 +42,9 @@ Dai un’occhiata al video Panoramica sulla versione di aprile 2023 per un riepi
 
 ### Nuove funzioni nella versione prerelease di [!DNL Experience Manager Sites] {#prerelease-sites}
 
-* Ora è possibile pubblicare i frammenti di contenuto e i relativi riferimenti nel [Servizio di anteprima AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it#access-preview-service) utilizzando la [Console Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it), che consente agli utenti di visualizzare in anteprima l’esperienza finale su un’applicazione di anteprima separata prima della pubblicazione.
-* Le immagini possono essere ora ottimizzate dinamicamente per la distribuzione web in scenari headless utilizzando GraphQL di AEM. Nelle query GraphQL è possibile definire [Variabili di query](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=it#query-variables) per consentire alle applicazioni client separate di richiedere a AEM immagini ottimizzate di conseguenza.
-* I tag sulle [Varianti dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=it) ora possono essere trasmessi in formato JSON utilizzando l’API per la distribuzione dei contenuti GraphQL di AEM.
+* Ora è possibile pubblicare i frammenti di contenuto e i relativi riferimenti nel [Servizio di anteprima AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html#access-preview-service) utilizzando la [Console Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it), che consente agli utenti di visualizzare in anteprima l’esperienza finale su un’applicazione di anteprima separata prima della pubblicazione.
+* Le immagini possono essere ora ottimizzate dinamicamente per la distribuzione web in scenari headless utilizzando GraphQL di AEM. Nelle query GraphQL è possibile definire [Variabili di query](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) per consentire alle applicazioni client separate di richiedere a AEM immagini ottimizzate di conseguenza.
+* I tag sulle [Varianti dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html) ora possono essere trasmessi in formato JSON utilizzando l’API per la distribuzione dei contenuti GraphQL di AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -71,7 +71,7 @@ Dai un’occhiata al video Panoramica sulla versione di aprile 2023 per un riepi
 
 ### Funzione nella versione prerelease di [!DNL Assets] {#prerelease-feature-assets}
 
-* Dynamic Media: l’interfaccia utente di alcuni campi relativi a Ritaglio avanzato in un profilo immagine ora è aggiornata per riflettere le linee guida correnti per la definizione di un Ritaglio avanzato. Consulta [Opzioni di ritaglio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=it#crop-options).
+* Dynamic Media: l’interfaccia utente di alcuni campi relativi a Ritaglio avanzato in un profilo immagine ora è aggiornata per riflettere le linee guida correnti per la definizione di un Ritaglio avanzato. Consulta [Opzioni di ritaglio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

@@ -4,7 +4,7 @@ description: Utilizzo dello strumento di mappatura utenti (legacy)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 1%
@@ -94,7 +94,7 @@ Lo strumento di mappatura utenti è integrato nello strumento Content Transfer (
 
    >[!IMPORTANT]
    >
-   >* Una volta completata la mappatura utente, puoi tornare alla pagina di migrazione dei contenuti utilizzando la breadcrumb. La scheda Mappatura utente visualizza lo stato e la marca temporale. Clic **Trasferimento dei contenuti** in modo da poter creare un set di migrazione per eseguire l’estrazione. Consulta [Esecuzione dello strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) per ulteriori dettagli.
+   >* Una volta completata la mappatura utente, puoi tornare alla pagina di migrazione dei contenuti utilizzando la breadcrumb. La scheda Mappatura utente visualizza lo stato e la marca temporale. Clic **Trasferimento dei contenuti** in modo da poter creare un set di migrazione per eseguire l’estrazione. Consulta [Esecuzione dello strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) per ulteriori dettagli.
 
 ### Ripresa del processo di mappatura utenti {#resume-user-mapping-process}
 

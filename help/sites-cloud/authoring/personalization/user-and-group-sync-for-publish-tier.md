@@ -2,7 +2,7 @@
 title: Registrazione, accesso e profilo utente
 description: Scopri di più su Registrazione, Accesso, Dati utente e Sincronizzazione dei gruppi per AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 90%
@@ -94,7 +94,7 @@ Esistono diversi approcci ai dati persistenti, a seconda della natura di tali da
 Le informazioni sul profilo utente possono essere scritte e lette in due modi:
 
 * Utilizzo lato server con `com.adobe.granite.security.user` Interfaccia UserPropertiesManager, che inserirà i dati sotto il nodo dell&#39;utente in `/home/users`. Assicurati che le pagine univoche per utente non siano memorizzate nella cache.
-* Lato client che utilizza ContextHub, come descritto [nella documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=it#personalization).
+* Lato client che utilizza ContextHub, come descritto [nella documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
 
 ### Archiviazione dati di terze parti {#third-party-data-stores}
 
@@ -104,7 +104,7 @@ I dati dell’utente finale possono essere inviati a fornitori di terze parti co
 
 ## Autorizzazioni (gruppi di utenti chiusi) {#permissions-closed-user-groups}
 
-I criteri di accesso al livello di pubblicazione, denominati anche gruppi di utenti chiusi, sono definiti nell’autore AEM come [qui descritto](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=it#applying-your-closed-user-group-to-content-pages). Per limitare alcune sezioni o pagine di un sito Web a determinati utenti, applica i CUG necessari utilizzando l’autore AEM, come descritto qui, e replicali sul livello di pubblicazione.
+I criteri di accesso al livello di pubblicazione, denominati anche gruppi di utenti chiusi, sono definiti nell’autore AEM come [qui descritto](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Per limitare alcune sezioni o pagine di un sito Web a determinati utenti, applica i CUG necessari utilizzando l’autore AEM, come descritto qui, e replicali sul livello di pubblicazione.
 
 * Se gli utenti effettuano l&#39;accesso autenticandosi con un provider di identità (IdP) utilizzando SAML, il gestore di autenticazione identificherà l&#39;appartenenza al gruppo degli utenti (che devono corrispondere ai CUG sul livello di pubblicazione) e manterrà l&#39;associazione tra l&#39;utente e il gruppo attraverso un record dell&#39;archivio
 * Se l&#39;accesso viene eseguito senza l&#39;integrazione IdP, il codice personalizzato può applicare le stesse relazioni di struttura dell&#39;archivio.

@@ -2,9 +2,9 @@
 title: Note sulla versione 2023.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2023.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1691'
 ht-degree: 18%
 
 ---
@@ -15,7 +15,7 @@ La sezione seguente illustra le note sulla versione funzionale 2023.8.0 di [!DNL
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2023.8.0) è il 31 agosto 2023. La prossima versione (2023.9.0) è prevista per il 28 settembre 2023.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.8.0) è il venerdì 31 agosto 2023. La successiva versione funzionale (2023.9.0) è pianificata per il venerdì 28 settembre 2023.
 
 ## Video sulla versione {#release-video}
 
@@ -70,11 +70,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Importazione in blocco da un’origine dati](/help/release-notes/assets/bulk-import.png)
 
-* **Strumenti di editing delle immagini basati su Adobe Express**: facile e intuitivo [strumenti di modifica delle immagini basati su Adobi Express](/help/assets/edit-images-assets-view.md) disponibile direttamente in AEM Assets per aumentare il riutilizzo dei contenuti e velocizzarne la distribuzione.
+* **Strumenti di modifica delle immagini basati su Adobi Express**: facile e intuitivo [strumenti di modifica delle immagini basati su Adobi Express](/help/assets/edit-images-assets-view.md) disponibile direttamente in AEM Assets per aumentare il riutilizzo dei contenuti e velocizzarne la distribuzione.
 
   ![Editing di immagini con Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
 
-* **Flessibilità durante il fissaggio di elementi in Accesso rapido dell’area di lavoro personale**: possibilità di selezionare e fissare gli elementi per te, per l’intera organizzazione o per un elenco di gruppi in modo che vengano visualizzati nel [Sezione Accesso rapido della mia area di lavoro](/help/assets/my-workspace-assets-view.md) in base alla selezione.
+* **Flessibilità durante l&#39;inserimento di elementi nell&#39;area di lavoro Accesso rapido**: possibilità di selezionare e fissare gli elementi per te, per l’intera organizzazione o per un elenco di gruppi in modo che vengano visualizzati nel [Sezione Accesso rapido della mia area di lavoro](/help/assets/my-workspace-assets-view.md) in base alla selezione.
 
   ![Fissa elementi per gruppi](/help/release-notes/assets/pin-items-for-groups.png)
 

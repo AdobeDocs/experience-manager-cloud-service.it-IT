@@ -2,9 +2,9 @@
 title: Creazione e gestione di visualizzazioni in Schermi as a Cloud Service
 description: Questa pagina descrive come creare e gestire le visualizzazioni in Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '649'
 ht-degree: 3%
 
 ---
@@ -133,4 +133,4 @@ Tutte le operazioni della cartella sono accessibili tramite la barra delle azion
 
 ## Passaggio successivo {#whats-next}
 
-Ora che hai imparato a creare e gestire le visualizzazioni per il progetto, devi continuare il percorso Screens as a Cloud Service esaminando il documento [Assegnazione di un canale a una visualizzazione in Schermi as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
+Ora che hai imparato a creare e gestire le visualizzazioni per il progetto, devi continuare il percorso Screens as a Cloud Service esaminando il documento [Assegnazione di un canale a una visualizzazione in Schermi as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).

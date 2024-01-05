@@ -2,14 +2,14 @@
 title: Note sulla versione 2020.11.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.11.0 as a Cloud Service."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 19%
+source-wordcount: '1223'
+ht-degree: 15%
 
 ---
 
-# Note sulla versione di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Note sulla versione per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service.
 
@@ -34,7 +34,7 @@ La seguente versione (2020.12.0) sarà del 17 dicembre 2020
 
 * **Acquisizione di risorse in blocco**: fornisci ai clienti un servizio di acquisizione scalabile nativo per il cloud che utilizza [!DNL Experience Manager] Architettura as a Cloud Service, inclusi i microservizi per le risorse. I casi d’uso principali includono l’acquisizione su larga scala con monitoraggio, reporting e pianificazione, consentendo al contempo il trasferimento iniziale delle risorse agli archivi di dati cloud utilizzando gli strumenti comuni di caricamento cloud. Consulta [strumento per l’acquisizione in blocco delle risorse](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-  Questo strumento è destinato agli amministratori di sistema, ai consulenti o ai partner di implementazione. Questa funzione consente l’acquisizione su larga scala ed è idealmente utilizzata durante l’acquisizione iniziale o, occasionalmente, in caso di acquisizione su larga scala. Per processi di acquisizione più piccoli, utilizza [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) o [caricare tramite l’interfaccia utente di Assets](/help/assets/add-assets.md#upload-assets).
+  Questo strumento è destinato agli amministratori di sistema, ai consulenti o ai partner di implementazione. Questa funzione consente l’acquisizione su larga scala ed è idealmente utilizzata durante l’acquisizione iniziale o, occasionalmente, in caso di acquisizione su larga scala. Per processi di acquisizione più piccoli, utilizza [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it) o [caricare tramite l’interfaccia utente di Assets](/help/assets/add-assets.md#upload-assets).
 
   ![Configurazione dell’importazione in blocco](/help/assets/assets/bulk-import-config-low-res.png)
 
@@ -113,7 +113,7 @@ Per ulteriori dettagli, consulta la [Gestione degli ambienti](/help/implementing
 
 ### SDK Build Analyzer {#analyzers}
 
-Il plug-in Maven SDK Build Analyzer per AEM as a Cloud Service rileva i problemi in un progetto Maven, incluse eventuali dipendenze mancanti. Offre agli sviluppatori l’opportunità di individuare i problemi durante lo sviluppo locale, molto prima che vengano distribuiti in ambienti Cloud con Cloud Manager. Per ulteriori informazioni, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it#developing) e [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+Il plug-in Maven SDK Build Analyzer per AEM as a Cloud Service rileva i problemi in un progetto Maven, incluse eventuali dipendenze mancanti. Offre agli sviluppatori l’opportunità di individuare i problemi durante lo sviluppo locale, ben prima di distribuirli in ambienti Cloud con Cloud Manager. Per ulteriori informazioni, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it#developing) e [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk).
 
 ### Altro {#others-foundation}
 
@@ -121,7 +121,7 @@ Nuovo [Sintassi &quot;httpd -t&quot;](/help/implementing/dispatcher/disp-overvie
 
 ## Strumento trasferimento contenuti {#content-transfer-tool}
 
-Leggi questa sezione per scoprire le novità e gli aggiornamenti di [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it) Versione v1.1.12.
+Leggi questa sezione per scoprire le novità e gli aggiornamenti di [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Versione v1.1.12.
 
 ### Novità {#what-is-new-ctt}
 

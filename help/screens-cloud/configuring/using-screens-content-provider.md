@@ -2,10 +2,10 @@
 title: Utilizzo del provider di contenuti Screens
 description: Questa pagina descrive come utilizzare il provider di contenuti Screens per la creazione di contenuti.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 14%
+source-wordcount: '377'
+ht-degree: 15%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 14%
 
 ## Obiettivo {#objective}
 
-La sezione seguente descrive come utilizzare il provider di contenuti Screens dopo la configurazione [Provider servizi Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en).
+La sezione seguente descrive come utilizzare il provider di contenuti Screens dopo la configurazione [Provider servizi Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html).
 
 ## Utilizzo del provider di contenuti Screens {#screens-content-provider}
 
 >[!NOTE]
 >**Prerequisito**
->Prima di iniziare a leggere questa sezione, consulta [Configurazione del provider di servizi Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) per scoprire come accedere a questa interfaccia utente da Screens Services Provider.
+>Prima di iniziare a leggere questa sezione, consulta [Configurazione del provider di servizi Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html) per scoprire come accedere a questa interfaccia utente da Screens Services Provider.
 
 Per accedere a Screens Content Provider, effettua le seguenti operazioni:
 
@@ -40,7 +40,7 @@ Per accedere a Screens Content Provider, effettua le seguenti operazioni:
    ![L’icona per la pagina Panoramica di Cloud Manager è visualizzata all’estrema sinistra di una barra degli strumenti.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
-   >Se non hai creato alcun programma, consulta [Primo accesso a Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en). L’argomento ti guida attraverso l’aggiunta di un programma per Screens as a Cloud Service, in Cloud Manager.
+   >Se non hai creato alcun programma, consulta [Primo accesso a Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html). L’argomento ti guida attraverso l’aggiunta di un programma per Screens as a Cloud Service, in Cloud Manager.
 
 1. Seleziona il collegamento da **Ambienti** in modo da poter accedere al provider di contenuti Screens.
 
@@ -56,4 +56,4 @@ Per accedere a Screens Content Provider, effettua le seguenti operazioni:
 
 ## Passaggio successivo {#whats-next}
 
-Ora che hai imparato a passare al provider di contenuti Screens, continua il percorso Screens as a Cloud Service esaminando il documento, [Creazione e gestione di un progetto in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en).
+Ora che hai imparato a passare al provider di contenuti Screens, continua il percorso Screens as a Cloud Service esaminando il documento, [Creazione e gestione di un progetto in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html).

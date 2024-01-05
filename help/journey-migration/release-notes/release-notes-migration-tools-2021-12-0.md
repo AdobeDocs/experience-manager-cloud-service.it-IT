@@ -3,10 +3,10 @@ title: Note sulla versione 2021.12.0 degli strumenti di migrazione nell’AEM as
 description: Note sulla versione 2021.12.0 degli strumenti di migrazione nell’AEM as a Cloud Service
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 46%
+source-wordcount: '251'
+ht-degree: 45%
 
 ---
 
@@ -43,5 +43,5 @@ La data di pubblicazione dello strumento Content Transfer v1.7.10 è il 8 dicemb
 
 ### Novità {#what-is-new-ctt}
 
-* È stata aggiunta un’opzione alla fase di acquisizione nello strumento Content Transfer (Trasferimento contenuti) per consentire agli utenti di disabilitare [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) durante l’acquisizione. Per velocità di acquisizione ottimali, la pre-copia durante l’acquisizione deve essere disabilitata per piccoli set di migrazione o se sono stati aggiunti solo pochi BLOB dall’ultima acquisizione.
+* È stata aggiunta un’opzione alla fase di acquisizione nello strumento Content Transfer (Trasferimento contenuti) per consentire agli utenti di disabilitare [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) durante l’acquisizione. Per velocità di acquisizione ottimali, la pre-copia durante l’acquisizione deve essere disabilitata per piccoli set di migrazione o se sono stati aggiunti solo pochi BLOB dall’ultima acquisizione.
 * La mappatura degli utenti è stata aggiornata per utilizzare l’API di gestione utenti migliorata, che consente di ottenere 2000 utenti alla volta, migliorando in modo significativo le prestazioni.

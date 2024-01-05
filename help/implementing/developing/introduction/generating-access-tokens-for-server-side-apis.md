@@ -2,7 +2,7 @@
 title: Generazione dei token di accesso per le API lato server
 description: Scopri come facilitare la comunicazione tra un server di terze parti e AEM as a Cloud Service generando un token JWT sicuro
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Il flusso server-to-server è descritto di seguito, insieme a un flusso semplifi
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## Flusso server-to-server {#the-server-to-server-flow}
 
@@ -154,7 +154,7 @@ In alternativa, puoi anche verificare che l’account tecnico sia presente nell�
 1. Controlla che l’account tecnico sia l’elenco degli utenti e selezionalo.
 1. Fai clic su **Gruppi** in modo da poter verificare che l’utente faccia parte del gruppo che corrisponde al tuo profilo di prodotto. Questo utente è anche membro di una manciata di altri gruppi, inclusi i collaboratori:
 
-   ![Iscrizione al gruppo](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
+   ![Appartenenza al gruppo](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Infine, configura il gruppo con le autorizzazioni appropriate necessarie in modo
 
 1. Fare clic sul pulsante Modifica nella finestra seguente:
 
-   ![Autorizzazioni di modifica](/help/implementing/developing/introduction/assets/s2s-editpermissions.png) 
+   ![Modifica autorizzazioni](/help/implementing/developing/introduction/assets/s2s-editpermissions.png) 
 
 1. Modifica le autorizzazioni in modo appropriato e fai clic su **Salva**
 

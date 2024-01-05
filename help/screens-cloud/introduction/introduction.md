@@ -2,10 +2,10 @@
 title: Introduzione ad AEM Screens as a Cloud Service
 description: Questa pagina funge da introduzione ad Adobe Experience Manager Screens as a Cloud Service.
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 53%
+source-wordcount: '373'
+ht-degree: 56%
 
 ---
 
@@ -19,9 +19,9 @@ AEM Screens as a Cloud Service è una soluzione di segnaletica digitale che cons
 
 Screens as a Cloud Service ha due componenti principali, ovvero:
 
-* **[Fornitore di contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en)**, componente aggiuntivo Screens in esecuzione su AEM Cloud Service o su Adobe Managed Services (AMS). Il fornitore di contenuti Screens consente all’autore dei contenuti di creare e gestire i canali. Gli autori dei contenuti possono aggiungere nuovi contenuti, modificarli senza preoccuparsi dei dettagli relativi alla creazione di visualizzazioni o alla registrazione del lettore. Il fornitore di contenuti fornisce un’astrazione dai dettagli sottostanti dello sviluppo di contenuti, visualizzazioni o registrazione del lettore.
+* **[Fornitore di contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html)**, componente aggiuntivo Screens in esecuzione su AEM Cloud Service o su Adobe Managed Services (AMS). Il fornitore di contenuti Screens consente all’autore dei contenuti di creare e gestire i canali. Gli autori dei contenuti possono aggiungere nuovi contenuti, modificarli senza preoccuparsi dei dettagli relativi alla creazione di visualizzazioni o alla registrazione del lettore. Il fornitore di contenuti fornisce un’astrazione dai dettagli sottostanti dello sviluppo di contenuti, visualizzazioni o registrazione del lettore.
 
-* **[Provider di servizi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)**, servizio di gestione del digital signage in esecuzione su Adobe I/O Runtime. Il provider Screens Services consente ad autori, sviluppatori e amministratori di contenuti di gestire visualizzazioni e lettori per la riproduzione dei contenuti una volta aggiunti ai canali. Inoltre, il provider di servizi Screens informa l&#39;orchestratore su dove e quando il contenuto verrà riprodotto ad alto livello.
+* **[Provider di servizi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)**, servizio di gestione del digital signage in esecuzione su Adobe I/O Runtime. Il provider Screens Services consente ad autori, sviluppatori e amministratori di contenuti di gestire visualizzazioni e lettori per la riproduzione dei contenuti una volta aggiunti ai canali. Inoltre, il provider di servizi Screens informa l&#39;orchestratore su dove e quando il contenuto verrà riprodotto ad alto livello.
 
 
 ## Panoramica dell’architettura {#architectural-overview}

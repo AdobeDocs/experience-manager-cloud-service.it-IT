@@ -4,7 +4,7 @@ description: Experience Cloud Setup Automation fornisce un modo semplice e autom
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 87%
@@ -50,7 +50,7 @@ L’ambiente ora dovrebbe essere pronto per la configurazione dell’automazione
 1. Seleziona la **Integrare Analytics** pulsante.
 1. Nella finestra di dialogo risultante, fornisci un nome per **ID suite di rapporti**.
 
-   Questa stringa viene utilizzata per creare un [ID suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=it) in Adobe Analytics come archivio dati per i dati di analisi del sito AEM selezionato. Alla stringa fornita verranno aggiunti l’ambiente e gli identificatori di livello per garantirne l’univocità.
+   Questa stringa viene utilizzata per creare un [ID suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html) in Adobe Analytics come archivio dati per i dati di analisi del sito AEM selezionato. Alla stringa fornita verranno aggiunti l’ambiente e gli identificatori di livello per garantirne l’univocità.
 
 1. Aggiorna la pagina e il pannello e seleziona **Verifica stato integrazione** per controllare lo stato dell&#39;automazione.
 

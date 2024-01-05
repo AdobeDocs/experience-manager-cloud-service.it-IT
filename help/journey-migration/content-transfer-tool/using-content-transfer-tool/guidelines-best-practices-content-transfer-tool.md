@@ -2,10 +2,10 @@
 title: Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 description: Scopri le linee guida e le best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti).
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1432'
-ht-degree: 16%
+source-wordcount: '1401'
+ht-degree: 15%
 
 ---
 
@@ -35,7 +35,7 @@ Le versioni precedenti alla 2.0.0 non sono supportate e si consiglia di utilizza
 
 Le seguenti linee guida e best practice sono applicabili alla nuova versione dello strumento Content Transfer (Trasferimento contenuti):
 
-* Esegui [Pulizia revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=it) e [controlli di coerenza dell’archivio dati](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=it) il **sorgente** in modo da identificare potenziali problemi e ridurre le dimensioni dell’archivio.
+* Esegui [Pulizia revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=it) e [controlli di coerenza dell’archivio dati](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) il **sorgente** in modo da identificare potenziali problemi e ridurre le dimensioni dell’archivio.
 
 * Nella fase di acquisizione, l’Adobe consiglia di eseguire l’acquisizione utilizzando *a comparsa* è abilitata la modalità in cui viene eliminato l’archivio esistente (di authoring o pubblicazione) nell’ambiente di Cloud Service Adobe Experience Manager (AEM) di destinazione. Quindi, esegui l’aggiornamento con i dati del set di migrazione. Questa modalità è più veloce della modalità in cui la cancellazione è disattivata e il set di migrazione viene applicato al contenuto corrente.
 
@@ -47,7 +47,7 @@ La formula generale per calcolare lo spazio libero su disco richiesto è la segu
 
    * *data store size*: dimensione archivio dati; lo strumento Content Transfer (Trasferimento contenuti) utilizza 64 GB, anche se l’archivio dati effettivo è più grande.
    * *node store size*: dimensione archivio nodi; dimensione della directory dell’archivio segmenti o dimensione del database MongoDB.
-Pertanto, per un archivio segmenti di 20 GB, lo spazio libero su disco richiesto è di 94 GB.
+Pertanto, per un archivio segmenti di 20 GB, lo spazio libero su disco richiesto è di 94 GB.
 
 * È necessario mantenere un set di migrazione per l’intera durata dell’attività di trasferimento dei contenuti per supportare l’integrazione dei contenuti. È possibile creare e gestire fino a 20 set di migrazione per progetto in Cloud Acceleration Manager alla volta durante l’attività di trasferimento dei contenuti. Se sono necessari più di 20 set di migrazione, crea un secondo progetto in Cloud Acceleration Manager. Tuttavia, questo richiede una gestione del progetto aggiuntiva e una governance out-of-product per evitare la sovrascrittura dei contenuti sul target da parte di più utenti.
 

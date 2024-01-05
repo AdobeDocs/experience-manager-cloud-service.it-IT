@@ -3,10 +3,10 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: Scopri le nozioni di base sul caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2873'
-ht-degree: 2%
+source-wordcount: '2775'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ Questo metodo è utile, ad esempio, quando la logica di business richiede l’ot
   ```
 
   >[!NOTE]
-  >L’intestazione Surrogate-Control si applica alla rete CDN gestita dall’Adobe. Se si utilizza un [CDN gestita dal cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), potrebbe essere necessaria un’intestazione diversa a seconda del provider CDN.
+  >L’intestazione Surrogate-Control si applica alla rete CDN gestita dall’Adobe. Se si utilizza un [CDN gestita dal cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN), potrebbe essere necessaria un’intestazione diversa a seconda del provider CDN.
 
   Presta attenzione quando imposti intestazioni di controllo cache globale o intestazioni di cache simili che corrispondono a un’ampia regola, in modo che non vengano applicate a contenuti che devono essere mantenuti privati. Valuta l’utilizzo di più direttive per garantire che le regole vengano applicate in modo granulare. Detto questo, AEM as a Cloud Service rimuove l’intestazione della cache se rileva che è stata applicata a ciò che rileva come non memorizzabile in cache da Dispatcher, come descritto nella documentazione di Dispatcher. Per forzare l’AEM ad applicare sempre le intestazioni di caching, è possibile aggiungere **`always`** opzione come segue:
 
@@ -78,7 +78,7 @@ Questo metodo è utile, ad esempio, quando la logica di business richiede l’ot
   >Gli altri metodi, tra cui [Progetto Dispatcher-ttl AEM ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), non sostituisce correttamente i valori.
 
   >[!NOTE]
-  >Dispatcher potrebbe comunque memorizzare in cache il contenuto in base al proprio [regole di caching](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=it). Per rendere il contenuto veramente privato, assicurati che non venga memorizzato in cache da Dispatcher.
+  >Dispatcher potrebbe comunque memorizzare in cache il contenuto in base al proprio [regole di caching](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Per rendere il contenuto veramente privato, assicurati che non venga memorizzato in cache da Dispatcher.
 
 ### Librerie lato client (js,css) {#client-side-libraries}
 
@@ -240,7 +240,7 @@ Per gli ambienti creati a ottobre 2023 o versioni successive, per memorizzare in
 
 Invia un ticket di supporto se desideri disabilitare questo comportamento.
 
-Per gli ambienti creati prima di ottobre 2023, si consiglia di configurare i `ignoreUrlParams` proprietà come [documentato qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+Per gli ambienti creati prima di ottobre 2023, si consiglia di configurare i `ignoreUrlParams` proprietà come [documentato qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 
 ## Annullamento della validità della cache di Dispatcher {#disp}

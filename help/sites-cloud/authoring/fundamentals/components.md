@@ -2,9 +2,9 @@
 title: Componenti
 description: I componenti sono elementi costitutivi essenziali per l’authoring delle pagine di contenuto in AEM.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '335'
 ht-degree: 94%
 
 ---
@@ -43,7 +43,7 @@ I ](https://experienceleague.adobe.com/docs/experience-manager-core-components/u
 
 Vengono creati utilizzando le best practice di AEM e sono alla base dell’esperienza di authoring di AEM. I componenti core possono essere facilmente estesi dagli sviluppatori per soddisfare specifiche esigenze di progetto.
 
-Oltre ai componenti core WCM, puoi utilizzare anche [Componenti core dei moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it#features). Questi componenti core forniscono un metodo standard e più semplice per [creare o aggiungere moduli a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+Oltre ai componenti core WCM, puoi utilizzare anche [Componenti core dei moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Questi componenti core forniscono un metodo standard e più semplice per [creare o aggiungere moduli a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Configurazione dei modelli {#configuring-templates}
 

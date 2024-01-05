@@ -2,10 +2,10 @@
 title: Creazione di un progetto in Screens as a Cloud Service
 description: Scopri come creare un progetto in Screens as a Cloud Service.
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 2%
+source-wordcount: '326'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ Per creare un progetto in Screens as a Cloud Service, effettua le seguenti opera
 1. Passa a Provider di contenuti Screens.
 
    >[!NOTE]
-   >Consulta [Utilizzo del provider di contenuti Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) per scoprire come accedere a Screens Content Provider per la creazione del progetto.
+   >Consulta [Utilizzo del provider di contenuti Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html) per scoprire come accedere a Screens Content Provider per la creazione del progetto.
 
 1. Fai clic su nell’angolo superiore destro della barra delle azioni **Crea progetto Screens**.
 
@@ -37,7 +37,7 @@ Per creare un progetto in Screens as a Cloud Service, effettua le seguenti opera
    >[!NOTE]
    >Il **Nome** viene compilato automaticamente nel **Crea progetto Screens** in base al titolo scelto.
 
-1. Fai clic su **Salva**. Puoi vedere il tuo progetto Screens, intitolato come *FirstDigitalExperience* nel provider di contenuti Screens. Puoi anche vedere il tuo progetto in Provider di contenuti Screens, con due cartelle denominate, **Posizioni** e **Canali**.
+1. Clic **Salva**. Puoi vedere il tuo progetto Screens, intitolato come *FirstDigitalExperience* nel provider di contenuti Screens. Puoi anche vedere il tuo progetto in Provider di contenuti Screens, con due cartelle denominate, **Posizioni** e **Canali**.
 
    ![create-screens-project3](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 

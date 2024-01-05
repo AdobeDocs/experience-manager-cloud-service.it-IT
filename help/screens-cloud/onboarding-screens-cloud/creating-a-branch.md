@@ -2,9 +2,9 @@
 title: Creazione di un ramo
 description: Questa pagina descrive la creazione di un ramo in Cloud Manager per Screens as a Cloud Service.
 exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '210'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 Questa sezione descrive come creare un ramo per il programma in Cloud Manager.
 
 >[!NOTE]
->Consulta [Utilizzo della procedura guidata in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=en) per scoprire come creare un progetto di applicazione AEM in Cloud Manager utilizzando la procedura guidata.
+>Consulta [Utilizzo della procedura guidata in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html) per scoprire come creare un progetto di applicazione AEM in Cloud Manager utilizzando la procedura guidata.
 
 ## Obiettivo {#objective}
 

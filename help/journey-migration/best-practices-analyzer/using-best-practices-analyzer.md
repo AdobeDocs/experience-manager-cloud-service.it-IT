@@ -2,7 +2,7 @@
 title: Utilizzo di Best Practices Analyzer
 description: Scopri come utilizzare Best Practices Analyzer per comprendere lo stato di preparazione all’aggiornamento.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 42%
@@ -126,7 +126,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="Interpretazione del rapporto di Best Practices Analyzer"
 >abstract="Sono disponibili due opzioni per visualizzare gli output del rapporto di BPA: interfaccia utente e CSV. Quando lo strumento Best Practices Analyzer viene eseguito nell’istanza di AEM, il rapporto per l’interfaccia utente viene visualizzato sotto forma di risultati nella finestra dello strumento. Il formato CSV del rapporto include informazioni generate dall’output del rilevatore di pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=it#analysis-report" text="Analisi del rapporto di Best Practices Analyzer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="Analisi del rapporto di Best Practices Analyzer"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=it" text="Categorie del rapporto di Best Practices Analyzer"
 
 Quando lo strumento Best Practices Analyzer viene eseguito nell’istanza AEM, il rapporto viene visualizzato come risultati nella finestra dello strumento.

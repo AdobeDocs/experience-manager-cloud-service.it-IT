@@ -2,7 +2,7 @@
 title: Pubblicazione
 description: Scopri come eseguire la migrazione una volta che il codice e il contenuto sono pronti per il cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1721'
 ht-degree: 4%
@@ -126,7 +126,7 @@ Rivedi questo elenco di attività per assicurarti di eseguire una migrazione flu
 * Eseguire l’integrazione del contenuto finale.
 * Convalida le configurazioni del dispatcher.
    * Utilizza una funzione di convalida del dispatcher locale che semplifica la configurazione, la convalida e la simulazione locale del dispatcher
-      * [Configura gli strumenti del dispatcher locale.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+      * [Configura gli strumenti del dispatcher locale.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)
    * Esaminare attentamente la configurazione dell&#39;host virtuale.
       * La soluzione più semplice (e predefinita) consiste nell’includere `ServerAlias *` nel file host virtuale in `/dispatcher/src/conf.d/available_vhostsfolder`.
          * In questo modo, gli alias host utilizzati dai test funzionali del prodotto, l’invalidazione della cache del dispatcher e i cloni funzioneranno.

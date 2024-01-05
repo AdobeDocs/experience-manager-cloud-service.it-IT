@@ -2,9 +2,9 @@
 title: Note sulla versione 2021.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2021.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1292'
 ht-degree: 22%
 
 ---
@@ -23,8 +23,8 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2021.7.0) è il 29 luglio 2021.
-La seguente versione (2021.8.0) è del 26 agosto 2021.
+La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2021.7.0) è il venerdì 29 luglio 2021.
+La seguente versione (2021.8.0) è del venerdì 26 agosto 2021.
 
 ## Video sulla versione {#release-video}
 
@@ -189,7 +189,7 @@ La data di pubblicazione di Cloud Acceleration Manager è il 15 luglio 2021.
 
 ### Novità {#what-is-new-cam}
 
-Cloud Acceleration Manager è un’applicazione basata su cloud progettata per guidare i team IT durante l’intero percorso di transizione, dalla pianificazione al Cloud Service. Prepara il tuo team per una migrazione di successo con best practice, suggerimenti, documentazione e strumenti consigliati dagli Adobi per ogni fase del percorso al Cloud Service AEM. Ulteriori informazioni [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+Cloud Acceleration Manager è un’applicazione basata su cloud progettata per guidare i team IT durante l’intero percorso di transizione, dalla pianificazione al Cloud Service. Prepara il tuo team per una migrazione di successo con best practice, suggerimenti, documentazione e strumenti consigliati dagli Adobi per ogni fase del percorso al Cloud Service AEM. Ulteriori informazioni [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
 
 >[!NOTE]
 >
