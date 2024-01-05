@@ -1,24 +1,24 @@
 ---
-title: Attributi e tipi
-description: Scopri gli attributi e i tipi di dati richiesti dall’editor universale.
+title: Attributi e tipi di articolo
+description: Scopri gli attributi di dati e i tipi di elementi richiesti dall’editor universale.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 81%
+source-wordcount: '686'
+ht-degree: 76%
 
 ---
 
 
 # Attributi e tipi {#attributes-types}
 
-Scopri gli attributi e i tipi di dati richiesti dall’editor universale.
+Scopri gli attributi di dati e i tipi di elementi richiesti dall’editor universale.
 
 {{universal-editor-status}}
 
 ## Introduzione {#introduction}
 
-Affinché un’app possa essere modificata dall’editor universale, deve essere dotata di strumentazione corretta. Ciò include l’inclusione dei metadati appropriati, in modo che l’editor possa modificare il contenuto dell’app. In questo documento vengono descritti gli attributi e i tipi di questi metadati.
+Affinché un’app possa essere modificata dall’editor universale, deve essere dotata di strumentazione corretta. Ciò include l’inclusione dei metadati appropriati, in modo che l’editor possa modificare il contenuto dell’app. Questo documento descrive gli attributi e i tipi di elementi di tali metadati.
 
 >[!NOTE]
 >

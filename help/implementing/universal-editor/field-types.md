@@ -1,29 +1,29 @@
 ---
-title: Tipi di campi per l’editor universale
-description: Scopri i diversi tipi di campi supportati da Universal Editor e cosa puoi creare per le tue app.
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+title: Tipi di campi
+description: Scopri i diversi tipi di campi che l’Editor universale può modificare nella barra dei componenti, con esempi di come puoi creare strumenti per la tua app.
+source-git-commit: b1a188d01371665b4375087847625d89e47d8927
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 7%
+source-wordcount: '278'
+ht-degree: 8%
 
 ---
 
 
-# Tipi di campi per l’editor universale {#field-types}
+# Tipi di campi {#field-types}
 
-Scopri i diversi tipi di campi supportati da Universal Editor e cosa puoi creare per le tue app.
+Scopri i diversi tipi di campi che l’Editor universale può modificare nella barra dei componenti, con esempi di come puoi creare strumenti per la tua app.
 
 {{universal-editor-status}}
 
 ## Panoramica {#overview}
 
-Quando adattate le vostre app per l&#39;uso con l&#39;Editor universale, dovete dotare gli strumenti dei componenti e definire quali tipi di dati possono manipolare nell&#39;editor.
+Quando adattate le vostre app per l’utilizzo con Universal Editor, dovete dotare gli strumenti dei componenti e definire quali tipi di dati possono essere manipolati nella barra dei componenti dell’editor.
 
-Questo documento fornisce una panoramica dei tipi di campo disponibili nell’editor.
+Questo documento fornisce una panoramica dei tipi di campo disponibili, insieme ad esempi di configurazioni.
 
 >[!TIP]
 >
->Se non sai come dotare l’app dell’editor universale, consulta il documento [Panoramica di Universal Editor per sviluppatori AEM.](help/implementing/universal-editor/developer-overview.md)
+>Se non sai come dotare l’app dell’editor universale, consulta il documento [Panoramica di Universal Editor per sviluppatori AEM.](/help/implementing/universal-editor/developer-overview.md)
 
 ## Booleano {#boolean}
 
