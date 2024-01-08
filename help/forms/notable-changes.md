@@ -3,9 +3,9 @@ title: Quali sono le differenze tra i Cloud Service AEM 6.5 Forms e AEM?
 description: Confronta i Cloud Services Forms e AEM di AEM 6.5 e scopri le modifiche più importanti prima di eseguire l’aggiornamento o la migrazione al Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 0acaea02ad4ba647373eedecb444e9a7911d108d
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1317'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ Adobe Experience Manager Forms as a Cloud Service apporta alcune modifiche di ri
 
 * La convenzione URL di Forms adattivo localizzato ora supporta la specifica di una lingua nell’URL. La nuova convenzione URL consente di memorizzare nella cache i moduli localizzati su una rete CDN o Dispatcher. In un ambiente di Cloud Service, utilizza il formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo anziché `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
 
-* L’Adobe consiglia di utilizzare il caching di Dispatcher o CDN. Consente di migliorare la velocità di rendering dei moduli precompilati.
+* Adobe consiglia di utilizzare la memorizzare nella cache di Dispatcher o della rete CDN. Consente di migliorare la velocità di rendering dei moduli precompilati.
 
 
 ## Moduli adattivi
@@ -52,7 +52,9 @@ Adobe Experience Manager Forms as a Cloud Service apporta alcune modifiche di ri
 
   Il [utilità di migrazione](/help/forms/migrate-to-forms-as-a-cloud-service.md) consente di migrare i moduli con regole personalizzate (create nell’editor di codice). L’utility converte tali regole in funzioni personalizzate supportate su Forms as a Cloud Service. È possibile utilizzare le funzioni riutilizzabili con l’editor di regole per continuare a ottenere i risultati ottenuti con gli script di regole. Il `onSubmitError` o `onSubmitSuccess` Le funzioni sono ora disponibili come azioni nell’Editor regole.
 
-* **Servizio preriempimento:** Per impostazione predefinita, il servizio di precompilazione unisce i dati con un modulo adattivo sul client, invece di unire i dati sul server in Forms con AEM 6.5. Questa funzione consente di migliorare il tempo necessario per la precompilazione di un modulo adattivo. Puoi sempre configurare per eseguire l’azione di unione sul server Adobe Experience Manager Forms.
+<!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
+
+* **Servizio preriempimento:** Il servizio di precompilazione recupera i dati dal server e li unisce per precompilare il Forms adattivo sul lato client. Questa funzione consente di migliorare il tempo necessario per compilare un modulo adattivo. È sempre possibile configurare [servizio preriempimento](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) per eseguire l’azione di unione sul server Adobe Experience Manager Forms.
 
 * **Inviare azioni:** Il **E-mail** azione di invio fornisce opzioni per l’invio di allegati e allega un documento Record (DoR) all’e-mail. Puoi utilizzarlo al posto del **Invia e-mail come PDF** disponibile nel Forms AEM 6.5.
 
@@ -64,11 +66,11 @@ Adobe Experience Manager Forms as a Cloud Service apporta alcune modifiche di ri
 
 * **Interfaccia procedura guidata:** È possibile utilizzare [Interfaccia procedura guidata](/help/forms/creating-adaptive-form-core-components.md) per configurare rapidamente le opzioni comuni e creare facilmente un modulo adattivo.
 
-## Portale Forms
+## Forms Portal
 
 * Il servizio non mantiene i metadati per le bozze e i Forms adattivi inviati.
 
-## Document Services:
+## Servizi documentali:
 
 Forms as a Cloud Service fornisce API RESTful per generazione e manipolazione di documenti. Puoi utilizzare queste API per generare o modificare i documenti su richiesta o in batch, a seconda delle necessità:
 
