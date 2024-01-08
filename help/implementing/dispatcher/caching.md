@@ -3,9 +3,9 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: Scopri le nozioni di base sul caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
 workflow-type: tm+mt
-source-wordcount: '2775'
+source-wordcount: '2865'
 ht-degree: 1%
 
 ---
@@ -241,6 +241,28 @@ Per gli ambienti creati a ottobre 2023 o versioni successive, per memorizzare in
 Invia un ticket di supporto se desideri disabilitare questo comportamento.
 
 Per gli ambienti creati prima di ottobre 2023, si consiglia di configurare i `ignoreUrlParams` proprietà come [documentato qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+
+Esistono due possibilità per ignorare i parametri di marketing. (dove il primo è preferito per ignorare il busting della cache tramite parametri di query):
+
+1. Ignora tutti i parametri e consenti selettivamente i parametri utilizzati.
+Solo nell&#39;esempio seguente `page` e `product` I parametri non vengono ignorati e le richieste verranno inoltrate all’editore.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "allow" }
+   /0002 { /glob "page" /type "deny" }
+   /0003 { /glob "product" /type "deny" }
+}
+```
+
+1. Consenti tutti i parametri eccetto quelli di marketing. Il file [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) definisce un elenco di parametri di marketing di uso comune che verranno ignorati. L&#39;Adobe non aggiornerà questo file. Può essere esteso dagli utenti a seconda dei provider di marketing.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "deny" }
+   $include "../cache/marketing_query_parameters.any"
+}
+```
 
 
 ## Annullamento della validità della cache di Dispatcher {#disp}
