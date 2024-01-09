@@ -1,13 +1,13 @@
 ---
 title: Modificare nel contesto con l’Editor universale
-description: Scopri come utilizzare l’Editor universale per modificare qualsiasi aspetto del contenuto, dal posto e nel contesto, in qualsiasi implementazione.
+description: Scopri come utilizzare l’editor universale per modificare qualsiasi aspetto del contenuto, direttamente e nel contesto, in qualsiasi implementazione.
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 12%
+ht-degree: 88%
 
 ---
 
@@ -29,59 +29,59 @@ ht-degree: 12%
 >title="In questo modulo hai imparato a personalizzare il contenuto direttamente nel suo contesto, utilizzando l’Editor universale."
 >abstract=""
 
-## Modifica testo nel contesto {#edit-text}
+## Modificare il testo nel contesto {#edit-text}
 
-La modifica diretta e contestuale può spesso essere vantaggiosa rispetto alla modifica strutturata di contenuti headless, come nell’editor dei frammenti di contenuto visualizzato nei moduli precedenti.
+La modifica diretta e nel contesto può spesso presentare vantaggi rispetto alla modifica strutturata di contenuti headless, come nell’Editor frammento di contenuto visualizzato nei moduli precedenti.
 
 >[!NOTE]
 >
->Per utilizzare l’Editor universale in questa prova, è necessario utilizzare Chrome come browser e non in modalità di navigazione in incognito. Si tratta di una limitazione dell’esperienza di prova, non dell’editor universale.
+>Per utilizzare l’editor universale in questa versione di prova, è necessario utilizzare Chrome come browser e non in modalità di navigazione in incognito. Si tratta di una limitazione dell’esperienza della versione di prova, non dell’editor universale.
 
-Con Universal Editor è possibile modificare il testo in modo semplice e intuitivo.
+L’editor universale consente una modifica del testo veloce, diretta e nel contesto, consentendo un authoring dei contenuti semplice e intuitivo.
 
 1. Fai doppio clic per selezionare il titolo dell’articolo più recente da modificare.
 
-   ![Editor universale](assets/do-not-localize/ue-component-mode.png)
+   ![L’editor universale](assets/do-not-localize/ue-component-mode.png)
 
-1. Il componente viene selezionato come indicato da un bordo blu con una scheda che indica che si tratta di un componente testo. Il cursore si trova sul bordo in attesa di immissione testo. Cambia il testo in `Aloha Spirit in Lofoten`.
+1. Il componente viene selezionato come indicato da un bordo blu con una linguetta che indica che si tratta di un componente testo. Il cursore si trova sul bordo in attesa di immissione testo. Modifica il testo in `Aloha Spirit in Lofoten`.
 
-   ![Modifica del testo nell’Editor universale](assets/do-not-localize/ue-edit-text-2.png)
+   ![Modifica del testo nell’editor universale](assets/do-not-localize/ue-edit-text-2.png)
 
 1. Seleziona all’esterno del componente testo e le modifiche vengono salvate automaticamente.
 
-Universal Editor salva automaticamente le modifiche all&#39;interno dell&#39;ambiente di creazione. Devi comunque pubblicarli per consentire ai tuoi lettori di visualizzarli, operazione che eseguiremo in un passaggio successivo.
+L’editor universale salva automaticamente le modifiche all’interno dell’ambiente di authoring. Devi comunque pubblicarle per consentire ai lettori di visualizzarle, operazione che eseguiremo in un passaggio successivo.
 
-## Modifica contenuti multimediali nel contesto {#edit-media}
+## Modificare i contenuti multimediali nel contesto {#edit-media}
 
-Utilizzando Universal Editor è inoltre possibile scambiare le immagini rimanendo nel contesto del contenuto.
+Utilizzando l’editor universale è inoltre possibile sostituire le immagini rimanendo nel contesto del contenuto.
 
 1. Selezionate l&#39;immagine del surfista per selezionarla.
 
-1. Nella barra dei componenti puoi visualizzare i dettagli della risorsa. Seleziona la **Immagine in primo piano** miniatura.
+1. Nella barra dei componenti puoi visualizzare i dettagli della risorsa. Seleziona la miniatura dell’**Immagine in primo piano**.
 
-   ![Selezione di un&#39;immagine da modificare](assets/do-not-localize/ue-edit-media.png)
+   ![Selezione di un’immagine da modificare](assets/do-not-localize/ue-edit-media.png)
 
-1. In **Seleziona risorse** , scorri verso il basso e seleziona la `surfer-wave-02.JPG` per selezionarla.
+1. Nella finestra **Seleziona risorse**, scorri verso il basso e seleziona l’immagine `surfer-wave-02.JPG` per selezionarla.
 
-1. Seleziona **Seleziona** nel **Seleziona risorse** finestra.
+1. Seleziona **Seleziona** nella finestra **Seleziona risorse**.
 
-   ![Utilizzo della finestra Seleziona risorsa per selezionare un’immagine](assets/do-not-localize/ue-select-asset.png)
+   ![Utilizzo della finestra Seleziona risorse per selezionare un’immagine](assets/do-not-localize/ue-select-asset.png)
 
 L’immagine viene sostituita con quella selezionata.
 
-## Scoprite I Contenuti Come I Vostri Reader {#emulators}
+## Scopri i contenuti allo stesso modo dei tuoi lettori {#emulators}
 
-L’Editor universale consente di interagire con il contenuto all’interno del suo contesto, visualizzandone il contenuto così come viene distribuito ai dispositivi degli utenti.
+L’editor universale consente di interagire con il contenuto all’interno del relativo contesto, visualizzandolo così come viene consegnato ai dispositivi degli utenti.
 
 1. Per impostazione predefinita, l’editor esegue il rendering della versione desktop del contenuto. Per modificare il dispositivo di destinazione, selezionare il pulsante dell&#39;emulatore in alto a destra nella barra degli strumenti di Universal Editor.
 
    ![Voce di menu emulatore](assets/do-not-localize/ue-emulator-1.png)
 
-1. I Reader possono essere su dispositivi diversi con proporzioni diverse, pertanto l’editor offre modalità di emulazione per vedere come verrà presentata la pagina agli utenti. Ad esempio, seleziona l’opzione per dispositivo mobile in modalità verticale.
+1. I lettori possono essere su dispositivi diversi con proporzioni diverse, pertanto l’editor offre modalità di emulazione che mostrano come verrà presentata la pagina agli utenti. Ad esempio, seleziona l’opzione per dispositivo mobile in modalità verticale.
 
    ![Voce di menu emulatore](assets/do-not-localize/ue-emulator-2.png)
 
-1. Vedi la modifica del contenuto nell’editor. Anche l’icona dell’emulatore cambia per riflettere la modalità in cui si trova. Seleziona un punto qualsiasi al di fuori del menu dell’emulatore per chiuderlo e interagire con il contenuto.
+1. Puoi visualizzare la modifica del contenuto nell’editor. Anche l’icona dell’emulatore cambia per riflettere la modalità in cui si trova. Seleziona un punto qualsiasi al di fuori del menu dell’emulatore per chiuderlo e interagire con il contenuto.
 
 1. Ripristina l’emulatore in modalità desktop.
 
@@ -89,19 +89,19 @@ Puoi anche specificare le dimensioni esatte dell’emulatore e ruotare il dispos
 
 ## Anteprima e pubblicazione {#preview}
 
-Poiché devi selezionare il contenuto per modificarlo nell’editor, quest’ultimo non ti consente di seguire i collegamenti o interagire con il contenuto toccando o facendo clic su. Utilizzando la modalità anteprima, puoi seguire i collegamenti all’interno dei contenuti e visualizzarli allo stesso modo degli utenti prima della pubblicazione.
+Poiché devi selezionare il contenuto per modificarlo nell’editor, quest’ultimo non ti consente di seguire i collegamenti o interagire con il contenuto toccando o facendo clic su. In modalità anteprima, è possibile seguire i collegamenti all’interno dei contenuti e visualizzarli prima della pubblicazione così come verranno presentati agli utenti.
 
 1. Nella barra degli strumenti di Universal Editor, seleziona **Anteprima**.
 
-1. Ora seleziona la **Ulteriori informazioni** collegamento per l’articolo principale.
+1. Ora seleziona il collegamento **Ulteriori informazioni** per l’articolo principale.
 
    ![Modalità anteprima](assets/do-not-localize/ue-preview-publish-1.png)
 
-1. Sfoglia l’articolo, quindi utilizza **Indietro** per tornare alla pagina principale.
+1. Sfoglia l’articolo, quindi utilizza il collegamento **Indietro** per tornare alla pagina principale.
 
-   ![Torna alla pagina principale utilizzando il collegamento Indietro](assets/do-not-localize/ue-preview-publish-3.png)
+   ![Tornare alla pagina principale utilizzando il collegamento Indietro](assets/do-not-localize/ue-preview-publish-3.png)
 
-1. Ora seleziona la **Pubblica** in alto a destra nell’editor per pubblicare i contenuti.
+1. Ora seleziona il pulsante **Pubblica** in alto a destra nell’editor per pubblicare i contenuti.
 
    ![Voci di menu Anteprima e Pubblica](assets/do-not-localize/ue-preview-publish-4.png)
 
@@ -109,21 +109,21 @@ Il contenuto viene pubblicato.
 
 ## Modifica di frammenti di contenuto {#editing-fragments}
 
-Per accelerare l’esperienza di authoring dei contenuti quando la modifica strutturata di contenuti headless è più vantaggiosa della modifica diretta, l’editor universale consente di accedere rapidamente anche all’editor di frammenti di contenuto.
+Per velocizzare l’authoring dei contenuti quando la modifica strutturata di contenuti headless risulta più vantaggiosa della modifica diretta, dall’editor universale puoi accedere rapidamente anche all’editor di frammenti di contenuto.
 
 1. Disattiva la modalità anteprima toccando il **Anteprima** sulla barra degli strumenti di Universal Editor.
 
    ![Disattiva modalità anteprima](assets/do-not-localize/ue-toggle-off-preview.png)
 
-1. Scorri verso il basso nella pagina fino a **Avventure** sezione.
+1. Scorri la pagina verso il basso fino alla sezione **Adventures** (Avventure).
 
-1. Seleziona una delle avventure come **Campo da surf di Bali** per selezionarlo.
+1. Seleziona una delle avventure come **Bali Surf Camp** (Campo da surf di Bali) per selezionarla.
 
-   * Osserva il contorno blu del componente selezionato. Quando viene selezionato un frammento di contenuto, nella scheda deve essere visualizzato il nome del frammento di contenuto. In questo caso **Campo da surf di Bali**.
-   * Poiché l’Editor universale consente di selezionare qualsiasi oggetto nella pagina, è possibile selezionare singolarmente anche i componenti che fanno parte di un frammento di contenuto. Seleziona dove indicato nell’illustrazione per selezionare l’intero componente Frammento di contenuto.
+   * Osserva il contorno blu del componente selezionato. Quando viene selezionato un frammento di contenuto, nella scheda deve essere visualizzato il nome del frammento di contenuto. In questo caso, **Bali Surf Camp**.
+   * Poiché l’editor universale consente di selezionare qualsiasi oggetto nella pagina, è possibile selezionare singolarmente anche i componenti che fanno parte di un frammento di contenuto. Seleziona dove indicato nell’illustrazione per selezionare tutto il componente Frammento di contenuto.
 
-1. Il **Modifica** nella barra dei componenti. Seleziona la **Modifica** per aprire l’editor dei frammenti di contenuto in una nuova scheda.
+1. L’icona **Modifica** appare nella barra dei componenti. Seleziona l’cona **Modifica** per aprire l’editor dei frammenti di contenuto in una nuova scheda.
 
 ![Selezione di frammenti di contenuto nell’editor universale](assets/do-not-localize/ue-content-fragments.png)
 
-Nella nuova scheda è ora possibile modificare il frammento di contenuto selezionato nell’Editor universale.
+Nella nuova scheda è ora possibile modificare il frammento di contenuto selezionato nell’editor universale.

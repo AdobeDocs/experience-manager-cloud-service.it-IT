@@ -5,7 +5,7 @@ exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Dai un’occhiata al video Panoramica sulla versione di febbraio 2023 per un rie
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
 * Lancio del supporto per il nuovo protocollo (DASH - Dynamic Adaptive Streaming over HTTP) per lo streaming adattivo nella distribuzione video Dynamic Media (con CMAF abilitato):
-   * Lo streaming adattivo (DASH/HLS) garantisce una migliore esperienza di visualizzazione per i video da parte dell’utente
+   * Lo streaming adattivo (DASH/HLS) garantisce agli utenti una migliore esperienza di visualizzazione dei video
    * DASH è il protocollo standard internazionale per lo streaming video adattivo ed è ampiamente adottato nel settore
    * Disponibile in NA, si abilita tramite ticket di supporto, disponibile a breve nella regione APAC (Asia-Pacifico) e nella regione EMEA (Europa, Medio Oriente, Africa)
 

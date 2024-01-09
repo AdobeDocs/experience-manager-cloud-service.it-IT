@@ -5,7 +5,7 @@ exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Prima di iniziare il lancio di Adobe Experience Manager, tutti coloro che hanno 
 
 In uno studio del 2018, IDC ha analizzato il valore commerciale che diverse grandi aziende hanno rilevato con l’utilizzo Adobe Experience Manager. In media, le organizzazioni che utilizzano Experience Manager Sites hanno migliorato la produttività dei loro team di esperienza digitale del 23%, ridotto il tempo necessario per apportare modifiche editoriali minori del 64% e aumentato le visite mensili al sito del 10%. Le aziende che utilizzano Experience Manager Assets hanno incrementato la produttività dei propri team di risorse digitali del 19%, ridotto del 47% i tempi di creazione delle nuove risorse e ridotto del 20% il tempo di lancio delle campagne di marketing.
 
-Per ottenere gli stessi notevoli vantaggi, l’organizzazione deve avere chiari obiettivi per l’implementazione Experience Manager. e avere dei KPI che aiutino tutti a rimanere concentrati su questi obiettivi.
+Per ottenere gli stessi notevoli vantaggi, è necessario avere chiari gli obiettivi per l’implementazione di Experience Manager. e avere dei KPI che aiutino tutti a rimanere concentrati su questi obiettivi.
 
 ## Accesso ai KPI
 

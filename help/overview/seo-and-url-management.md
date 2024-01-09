@@ -5,7 +5,7 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '3539'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -192,7 +192,7 @@ Può essere necessario visualizzare i nomi delle pagine localizzate agli utenti 
 
 Il problema correlato alla localizzazione del nome della pagina è che molti degli strumenti di localizzazione disponibili sulla piattaforma AEM dipendono dalla corrispondenza dei nomi delle pagine tra diverse lingue, per garantire la sincronizzazione del contenuto.
 
-Il `sling:alias` La proprietà ti permette di avere la nostra torta e mangiarla troppo. Puoi aggiungere `sling:alias` come proprietà a qualsiasi risorsa per consentire l’utilizzo di un nome di alias della risorsa. Nell’esempio precedente, avrai:
+Per risolvere questo problema, puoi utilizzare la proprietà `sling:alias`. Puoi aggiungere `sling:alias` come proprietà a qualsiasi risorsa per consentire l’utilizzo di un nome di alias della risorsa. Nell’esempio precedente, avrai:
 
 * Una pagina nel JCR in:
   `…/es/home`

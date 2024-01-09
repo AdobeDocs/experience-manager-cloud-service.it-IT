@@ -5,7 +5,7 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ Conferma con **Crea** e poi **Apri** il modello per iniziare a definire la strut
 
 ## Definizione dei modelli per frammenti di contenuto {#defining-content-fragment-models}
 
-Quando aprite un nuovo modello, viene visualizzato un grande spazio vuoto a sinistra e un lungo elenco di **Tipi di dati** a destra:
+La prima volta che apri un nuovo modello viene visualizzato un grande spazio vuoto a sinistra e un lungo elenco di **Tipi di dati** a destra:
 
 ![Modello vuoto](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 

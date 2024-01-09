@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
 workflow-type: tm+mt
 source-wordcount: '4570'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -243,7 +243,7 @@ ht-degree: 91%
          + [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [Mappatura utenti e migrazione delle entità principali](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [Estrazione del contenuto dall’origine](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-         + [Acquisizione di contenuti nel Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+         + [Acquisizione di contenuti in Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Indicizzazione dopo la migrazione del contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
          + [Visualizzazione dei registri di un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Eliminazione di un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
@@ -331,11 +331,11 @@ ht-degree: 91%
    + Amministrazione {#administering}
       + Frammenti di contenuto {#content-fragments}
          + [Panoramica e concetti](/help/sites-cloud/administering/content-fragments/overview.md)
-         + [Distribuzione headless con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
+         + [Consegna headless con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
          + [Configurazione frammento di contenuto](/help/sites-cloud/administering/content-fragments/setup.md)
          + [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
          + [Gestione dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md)
-         + [Creazione di contenuti di frammenti](/help/sites-cloud/administering/content-fragments/authoring.md)
+         + [Authoring dei contenuti di frammenti](/help/sites-cloud/administering/content-fragments/authoring.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Considerazioni sull’eliminazione](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analisi della struttura](/help/sites-cloud/administering/content-fragments/analysis.md)
@@ -471,7 +471,7 @@ ht-degree: 91%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Albero struttura](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Anteprima - Rappresentazione JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [Riutilizzare i frammenti di contenuto con MSM per le risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
+      + [Riutilizzare i frammenti di contenuto con MSM per Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=it)
    + Dynamic Media {#dynamicmedia}
       + Percorso Dynamic Media: nozioni di base {#dm-journey}
          + [Parte I: Cos’è Dynamic Media - Casi di utilizzo - Flusso di una risorsa attraverso il sistema](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -554,11 +554,11 @@ ht-degree: 91%
       + [Configura  [!DNL enhanced connector]  per  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Aggiorna [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
-   + Integrazione con Adobi Express {#integration-adobe-express}
+   + Integrazione con Adobe Express {#integration-adobe-express}
       + [Componente aggiuntivo AEM Assets per Adobe Express](/help/assets/addon-adobe-express.md)
 
    + Integrazione con Creative Cloud {#integration-creative-cloud}
-      + [Connettere AEM Assets a Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
+      + [Connettersi ad AEM Assets a Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
 
 + Forms {#forms}
    + Panoramica {#forms-overview}
@@ -581,15 +581,15 @@ ht-degree: 91%
          + [Integrare AEM Forms as a Cloud Service con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [Integrare AEM Forms as a Cloud Service con DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
          + [Integrare AEM Forms as a Cloud Service con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-         + [Integrare Forms adattivo in Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
-         + [Visualizzazione e comprensione del rapporto di Adaptive Forms Analytics](/help/forms/view-understand-aem-forms-analytics-reports.md)
+         + [Integrare i moduli adattivi in Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+         + [Visualizzazione e comprensione del rapporto di analisi dei moduli adattivi](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Inviare un modulo adattivo ad Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporare un modulo adattivo in una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Incorporare un modulo adattivo basato su Componenti core in una pagina web esterna](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [Incorporare un modulo adattivo basato su Componenti Foundation in una pagina web esterna](/help/forms/embed-adaptive-form-external-web-page.md)
+         + [Incorporare un modulo adattivo basato su Componenti di base in una pagina web esterna](/help/forms/embed-adaptive-form-external-web-page.md)
       + Modello dati modulo {#use-form-data-model}
-         + [Connettere AEM Forms a database o origine dati](/help/forms/data-integration.md)
+         + [Connettere AEM Forms a un database o un’origine dati](/help/forms/data-integration.md)
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
@@ -607,15 +607,15 @@ ht-degree: 91%
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
             + [Creare un frammento di modulo adattivo](/help/forms/adaptive-form-fragments-core-components.md)
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
-            + [Creare un modello di modulo adattivo basato su componenti core](/help/forms/template-editor-core-components.md)
+            + [Creare un modello di modulo adattivo basato sui componenti core](/help/forms/template-editor-core-components.md)
             + [Generare un documento di record per moduli adattivi](/help/forms/generate-document-of-record-core-components.md)
             + [Utilizzare la traduzione automatica o la traduzione umana per tradurre un modulo adattivo](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurazione della pagina di reindirizzamento o del messaggio di ringraziamento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Creare moduli con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md)
             + [Configurare l’azione di invio per un modulo adattivo](/help/forms/configure-submit-actions-core-components.md)
-            + [Utilizzare Google reCAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Aggiungere un gestore di errori personalizzato in un modulo adattivo](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-            + [Aggiungere una lingua per Forms adattivo basato sui componenti core](/help/forms/supporting-new-language-localization-core-components.md)
+            + [Utilizzare il servizio reCAPTCHA di Google in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [Aggiungere un handler degli errori personalizzato in un modulo adattivo](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+            + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/supporting-new-language-localization-core-components.md)
       + Componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)
@@ -758,7 +758,7 @@ ht-degree: 91%
    + [Domande frequenti](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
    + [AEM e EDGE DELIVERY SERVICES](/help/edge/overview.md)
-   + [Utilizzo della consegna Edge](/help/edge/using.md)
+   + [Utilizzo di Edge Delivery](/help/edge/using.md)
    + [Authoring dei contenuti per la distribuzione Edge](/help/edge/authoring.md)
    + [Pubblicazione di contenuti per la distribuzione Edge](/help/edge/publishing.md)
    + [Sviluppo per la distribuzione Edge](/help/edge/developing.md)
@@ -815,14 +815,14 @@ ht-degree: 91%
       + [Frammenti di contenuto](/help/headless/setup/create-content-fragment.md)
       + [Endpoint di GraphQL](/help/headless/setup/create-api-request.md)
    + Frammenti di contenuto {#content-fragments}
-      + [Panoramica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
-      + [Modelli per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
-      + [Gestione dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
+      + [Panoramica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=it)
+      + [Modelli per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=it)
+      + [Gestione dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=it)
       + Authoring {#authoring}
-         + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
-         + [Editor Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
-      + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
-      + [Anteprima JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
+         + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
+         + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
+      + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
+      + [Anteprima JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=it)
    + API di GraphQL {#graphql-api}
       + [API di GraphQL per frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
       + [Gestione endpoint di GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
@@ -839,7 +839,7 @@ ht-degree: 91%
    + Distribuzione {#deployment}
       + [Architettura](/help/headless/deployment/architecture.md)
       + [Dispatcher - Endpoint](/help/headless/deployment/dispatcher.md)
-      + [Dispatcher: abilitare il caching per le query persistenti](/help/headless/deployment/dispatcher-caching.md)
+      + [Dispatcher: abilitare la memorizzazione in cache per le query persistenti](/help/headless/deployment/dispatcher-caching.md)
       + [Configurazione CORS](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [Filtro referrer](/help/headless/deployment/referrer-filter.md)
    + Percorsi headless {#journeys}
@@ -1047,17 +1047,17 @@ ht-degree: 91%
       + [Personalizzazione ed estensione dei frammenti di contenuto](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [Personalizzazione della console Frammenti di contenuto](/help/implementing/developing/extending/content-fragment-console-customizing.md)
-      + [Personalizzazione della console e dell’editor dei frammenti di contenuto](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
+      + [Personalizzazione della console e dell’editor Frammenti di contenuto](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + Gestire i moduli di ricerca {#manage-search-forms}
          + [Configurazione dei moduli di ricerca](/help/implementing/developing/extending/search-forms.md)
          + [Configurare i filtri di ricerca per la casella in entrata](/help/implementing/developing/extending/configure-inbox-search-rail.md)
       + [Configurare l’editor Rich Text](/help/implementing/developing/extending/rich-text-editor.md)
       + [Configurare i plug-in dell’editor Rich Text](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
       + [Configurare l’editor Rich Text per creare siti accessibili](/help/implementing/developing/extending/rte-accessible-content.md)
-      + [Estensione dell’authoring delle pagine](/help/implementing/developing/extending/page-authoring.md)
+      + [Estensione dell’authoring della pagina](/help/implementing/developing/extending/page-authoring.md)
       + [Estensione delle console](/help/implementing/developing/extending/consoles.md)
       + [Estensione delle proprietà di pagina](/help/implementing/developing/extending/page-properties.md)
-      + [Estensione dell’editor in blocco](/help/implementing/developing/extending/bulk-editor.md)
+      + [Estensione delle modifiche in serie](/help/implementing/developing/extending/bulk-editor.md)
       + [Estensione di MSM](/help/implementing/developing/extending/msm.md)
    + Implementazione in AEM as a Cloud Service {#deploying}
       + [Implementazione in AEM as a Cloud Service](/help/implementing/deploying/overview.md)
@@ -1117,5 +1117,5 @@ ht-degree: 91%
       + [Attributi e tipi di articolo](/help/implementing/universal-editor/attributes-types.md)
       + [Tipi di campi](/help/implementing/universal-editor/field-types.md)
       + [Autenticazione dell’editor universale](/help/implementing/universal-editor/authentication.md)
-      + [Sviluppo locale AEM con Universal Editor](/help/implementing/universal-editor/local-dev.md)
+      + [Sviluppo locale AEM con l’editor universale](/help/implementing/universal-editor/local-dev.md)
       + [Chiamate editor universali](/help/implementing/universal-editor/calls.md)

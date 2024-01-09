@@ -8,7 +8,7 @@ exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -75,7 +75,7 @@ Per accedere alla console Sites:
 
    ![Gerarchia dei contenuti](assets/sites-console-hierarchy.png)
 
-1. Toccando o facendo clic sulla casella di controllo di un elemento in una colonna, l’elemento viene selezionato e ne vengono visualizzati i dettagli nella colonna a destra, mostrando diverse azioni disponibili per l’elemento selezionato nella barra degli strumenti precedente.
+1. Toccando o facendo clic sulla casella di spunta di un elemento in una colonna, l’elemento viene selezionato e ne vengono visualizzati i dettagli nella colonna a destra, rivelando una serie di azioni disponibili nella barra degli strumenti precedente.
 
    ![Selezione del contenuto](assets/sites-console-selection.png)
 
@@ -97,7 +97,7 @@ La console Sites consente di navigare nel contenuto e fornisce una panoramica de
 
 Per modificare la pagina:
 
-1. Utilizza la console Sites per individuare e selezionare una pagina. È necessario selezionare la casella di controllo di una singola pagina per selezionarla.
+1. Utilizza la console Sites per individuare e selezionare una pagina. Per selezionarla, è necessario selezionare la casella di spunta di una singola pagina.
 
    ![Selezione di una pagina da modificare](assets/sites-editor-select-page.png)
 
@@ -107,7 +107,7 @@ Per modificare la pagina:
 
    ![Modificare una pagina](assets/sites-editor-title.png)
 
-Per tornare alla console Sites, ti basta tornare alla scheda nel browser in qualsiasi momento. Utilizzando l’editor Sites puoi visualizzare rapidamente il contenuto della pagina così come può essere visualizzato dagli autori dei contenuti e dal pubblico.
+Per tornare alla console Sites, ti basta tornare alla scheda nel browser in qualsiasi momento. Utilizzando l’editor Sites puoi visualizzare rapidamente il contenuto della pagina così come verrà visualizzato dagli autori dei contenuti e dal pubblico.
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dov
 * Comprendere come AEM archivia il contenuto.
 * Conoscere gli strumenti di traduzione di AEM.
 
-Approfondisci l&#39;argomento e continua il tuo percorso di traduzione AEM Sites consultando il documento [Configurare il connettore di traduzione](configure-connector.md) dove imparerai a collegare l’AEM a un servizio di traduzione.|
+Approfondisci l’argomento e continua il tuo percorso di traduzione AEM Sites consultando il documento successivo [Configurare il connettore di traduzione](configure-connector.md) dove verrà illustrato come connettere AEM a un servizio di traduzione.|
 
 ## Risorse aggiuntive {#additional-resources}
 

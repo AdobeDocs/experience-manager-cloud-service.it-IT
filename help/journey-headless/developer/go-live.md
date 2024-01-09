@@ -5,7 +5,7 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -67,7 +67,7 @@ Una volta verificato che tutto sia stato testato e funzioni correttamente, puoi 
 
 Dopo il caricamento su Cloud Manager, gli aggiornamenti possono essere distribuiti su AEM as a Cloud Service utilizzando la [pipeline CI/CD di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it).
 
-Puoi iniziare a distribuire il codice utilizzando la pipeline CI/CD di Cloud Manager, ampiamente trattata [qui](/help/implementing/deploying/overview.md).
+Puoi iniziare a distribuire il codice utilizzando la pipeline CI/CD di Cloud Manager, ampiamente illustrata [qui](/help/implementing/deploying/overview.md).
 
 ## Monitoraggio delle prestazioni {#performance-monitoring}
 
@@ -130,9 +130,9 @@ Se questo tipo di flessibilità è un elemento necessario per il tuo progetto, c
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Introduzione all’AEM come CMS headless](/help/headless/introduction.md)
+* [Introduzione ad AEM come CMS headless](/help/headless/introduction.md)
 * [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
 * [Panoramica della distribuzione in AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Utilizzare Cloud Manager per distribuire il codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it)
 * [Integra l’archivio Git di Cloud Manager con un archivio Git esterno e distribuisci un progetto in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=it)

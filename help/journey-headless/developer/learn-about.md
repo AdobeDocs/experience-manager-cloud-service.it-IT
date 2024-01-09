@@ -5,7 +5,7 @@ exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da u
 
 ![Il classico CMS full-stack](assets/full-stack.png)
 
-In un CMS full stack, la funzionalità per la manipolazione dei contenuti è nel CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
+In un CMS full-stack, tutte le funzionalità per la modifica del contenuto si trovano nel CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
 
 * Hai un sistema da mantenere.
 * I contenuti vengono gestiti a livello centrale.
@@ -62,7 +62,7 @@ Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a con
 
 ![CMS headless](assets/headless-cms.png)
 
-I servizi che fruiscono di tali servizi, siano essi esperienze AR, un webshop, esperienze mobili, app web progressive (PWA) e così via, accettano i contenuti dal CMS headless e forniscono il proprio rendering. Si occupano di fornire le teste per i tuoi contenuti.
+I servizi utilizzati, siano essi esperienze AR, un webshop, esperienze mobili, app web progressive (PWA), ecc., prendono i contenuti dal CMS headless e forniscono il loro rendering. Si occupano di fornire le teste per i tuoi contenuti.
 
 Omettendo la “testa” si semplifica il CMS rimuovendo la complessità. In questo modo si sposta anche la responsabilità di eseguire il rendering dei contenuti ai servizi che ne hanno effettivamente bisogno e che sono spesso più adatti a tale rendering.
 
@@ -76,7 +76,7 @@ Questa separazione consente a ogni servizio utilizzato (front-end) di creare la 
 
 ## Sostegni tecnologici {#technology}
 
-Un approccio headless consente di creare uno stack tecnologico in grado di adattarsi in modo semplice e rapido alle future esigenze di esperienza digitale.
+Un approccio headless consente di creare uno stack tecnologico in grado di adattarsi rapidamente e facilmente alle esigenze future di esperienza digitale.
 
 In passato, le API per CMS erano solitamente basate su REST. Il trasferimento di stato rappresentativo (REST) fornisce risorse come testo in modo senza stato. Questo consente di leggere e modificare le risorse con un set di operazioni predefinito. REST ha consentito una grande interoperabilità tra i servizi sul web garantendo una rappresentazione senza stato del contenuto.
 
@@ -96,7 +96,7 @@ Headless rende la distribuzione delle esperienze digitali ancora più flessibile
 
 Avere molti canali diversi può significare che ciascuno di essi dispone di propri sistemi di presentazione. Anche se tutti utilizzano lo stesso contenuto tramite le stesse API, l’esperienza può essere diversa a causa delle diverse presentazioni. Occorre prestare attenzione e preoccupazione per garantire la coerenza dell’esperienza del cliente.
 
-Implementando accurati sistemi di progettazione, condividendo librerie di modelli e utilizzando componenti di progettazione riutilizzabili e framework lato client aperti e consolidati, è possibile garantire esperienze coerenti, ma questo deve essere pianificato.
+Implementando sistemi di progettazione accurati, condividendo librerie di pattern e utilizzando componenti di progettazione riutilizzabili e framework lato client aperti consolidati, è possibile garantire esperienze coerenti, ma questo deve essere pianificato.
 
 ## Il futuro è headless e il futuro è adesso {#future}
 
@@ -106,7 +106,7 @@ Le esperienze digitali continueranno a definire il modo in cui i brand interagis
 
 ## AEM e headless {#aem-and-headless}
 
-Continuando a seguire questo percorso di sviluppatori, scopri come l’AEM supporta la distribuzione headless insieme alle funzionalità di distribuzione full stack.
+Continuando a utilizzare questo percorso per sviluppatori, scoprirai come AEM supporta la consegna headless lungo le sue funzionalità di consegna full-stack.
 
 In qualità di leader di settore nella gestione dell&#39;esperienza digitale, Adobe si rende conto che la soluzione ideale per le sfide del mondo reale che i creatori di esperienze affrontano raramente è una scelta binaria. Questo è il motivo per cui AEM non solo supporta entrambi i modelli, ma consente anche di creare una combinazione unica perfetta che unisce i vantaggi di uno stack headless e completo, per aiutarti a servire al meglio i consumatori dei contenuti, ovunque si trovino.
 
@@ -120,13 +120,13 @@ Grazie per la tua partecipazione al percorso headless di AEM Dopo aver letto que
 * Capire perché e quando è richiesto l&#39;headless.
 * Sapere bene come vengono utilizzati i concetti headless e come si relazionano.
 
-Approfondisci l&#39;argomento e continua il tuo percorso headless AEM esaminando il documento [Guida introduttiva all’AEM headless as a Cloud Service](getting-started.md) dove scopri come impostare gli strumenti necessari e come iniziare a pensare a come l’AEM approccia la distribuzione di contenuti headless e i relativi prerequisiti.
+Sviluppa questa conoscenza e continua il tuo percorso AEM headless rivedendo il documento successivo [Guida introduttiva a AEM Headless as a Cloud Service](getting-started.md) dove verrà illustrato come impostare gli strumenti necessari e come iniziare a pensare a come AEM affronta la distribuzione di contenuti headless e i relativi prerequisiti.
 
 ## Risorse aggiuntive {#additional-resources}
 
 Si raccomanda di spostarsi nella parte successiva del percorso per lo sviluppo headless eseguendo la verifica del documento [Guida introduttiva ad AEM headless as a Cloud Service,](getting-started.md). Di seguito si trovano alcune risorse aggiuntive e facoltative per approfondire concetti menzionati in questo documento, ma non richieste per continuare il percorso headless.
 
 * [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Comprendere la struttura di AEM as a Cloud Service
-* Un [Introduzione all’AEM come CMS headless](/help/headless/introduction.md)
+* [Introduzione ad AEM come CMS headless](/help/headless/introduction.md)
 * Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* [Esercitazioni di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Segui queste esercitazioni pratiche per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.
+* [Tutorial di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it): segui questi pratici tutorial per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.

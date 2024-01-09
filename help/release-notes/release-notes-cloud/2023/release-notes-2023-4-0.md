@@ -5,7 +5,7 @@ exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1122'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -63,7 +63,7 @@ Dai un’occhiata al video Panoramica sulla versione di aprile 2023 per un riepi
 * Miglioramenti apportati all’usabilità del facet di ricerca colore: il campo di inserimento per i valori dei colori è ora modificabile e i risultati della ricerca vengono aggiornati solo quando esci dal selettore colore.
 
 * Lancio del supporto per il nuovo protocollo (DASH - Dynamic Adaptive Streaming over HTTP) per lo streaming adattivo nella distribuzione video Dynamic Media (con CMAF abilitato):
-   * Lo streaming adattivo (DASH/HLS) garantisce una migliore esperienza di visualizzazione per i video da parte dell’utente
+   * Lo streaming adattivo (DASH/HLS) garantisce agli utenti una migliore esperienza di visualizzazione dei video
    * DASH è il protocollo standard internazionale per lo streaming video adattivo ed è ampiamente adottato nel settore
    * Disponibile in tutte le aree geografiche, da abilitare tramite ticket di supporto
 
@@ -108,7 +108,7 @@ Utilizza i moduli adattivi headless per consentire agli sviluppatori di creare, 
 
 È possibile inviare un’e-mail a `aem-forms-headless@adobe.com` dal proprio ID e-mail ufficiale per aderire al programma per i primi utilizzatori.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
 ### Novità {#what-is-new-foundation}
 
