@@ -1,12 +1,12 @@
 ---
 title: Scopri come cercare e individuare le risorse in [!DNL Assets view]?
-description: Scopri come cercare e individuare le risorse nella vista AEM Assets. La potente funzionalità di ricerca consente di trovare rapidamente la risorsa appropriata e velocizza le attività relative ai contenuti.
+description: Scopri come cercare e individuare le risorse nella vista AEM Assets. La potente funzionalità di ricerca consente di individuare rapidamente la risorsa appropriata e velocizza le attività relative ai contenuti.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 6fb2701fc2a4dc1cb9e8ea31134f0b3f2bb6bdf9
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 74%
+source-wordcount: '1470'
+ht-degree: 63%
 
 ---
 
@@ -29,6 +29,20 @@ Per cercare le risorse, effettua le operazioni seguenti:
    * Cerca utilizzando una parola chiave e, se necessario, cambia la cartella. Premi Invio.
 
    * Per iniziare a lavorare su una risorsa visualizzata di recente, fai clic nella casella di ricerca e seleziona una delle risorse visualizzate di recente che vengono proposte.
+
+## Cercare risorse con Adobe Firefly
+
+Se cerchi una risorsa non disponibile in nessuna delle cartelle di risorse, utilizza [!UICONTROL Adobe Firefly] funzione di ricerca risorse in [!UICONTROL Adobe Experience Manager Assets]. Consente di cercare in modo efficiente le risorse che potrebbero non essere memorizzate nelle cartelle specificate. Questa funzione è attualmente accessibile solo agli utenti autorizzati a Express. <br> Ad esempio, puoi cercare una risorsa utilizzando la parola chiave `Bugatti Type 57`. Durante la ricerca di `Bugatti Type 57`, non è stato trovato alcun risultato.
+
+![Integrazione del Firefly](assets/firefly-integration.jpg)
+*Figura: Nessun risultato trovato per Bugatti Type 57 nella cartella delle risorse.*
+
+Nella barra di ricerca, immetti il nome della risorsa e fai clic su **[!UICONTROL Genera]**.
+
+![Integrazione del Firefly](assets/bugatti-type-57.jpg)
+*Figura: Riferimento alle risorse trovate utilizzando la funzione di ricerca di risorse Adobe Firefly.*
+
+Le risorse di esempio vengono visualizzate sullo schermo. Puoi caricare queste risorse nella cartella preferita per accedervi facilmente.
 
 ## Filtrare i risultati della ricerca {#refine-search-results}
 
@@ -120,7 +134,6 @@ Per rimuovere i filtri personalizzati:
 
 1. Fai clic su **[!UICONTROL Conferma]** per rimuovere i filtri dall’interfaccia utente.
 
-
 ## Ricerche salvate {#saved-search}
 
 La funzionalità di ricerca di [!DNL Assets view] è semplice. Nella casella di ricerca è possibile digitare una parola chiave e premere Invio per visualizzare i risultati oppure è possibile cercare rapidamente e con un solo clic le parole chiave cercate di recente.
@@ -146,11 +159,21 @@ When userA is searching and userB add an asset that matches search results, will
 
 Puoi selezionare le risorse da visualizzare nei risultati della ricerca ed effettuare le seguenti operazioni:
 
+* **Trova immagine simile**: trova una risorsa di immagine simile nell’interfaccia utente Assets in base ai metadati e ai tag avanzati.
+
 * **Dettagli**: visualizza e modifica le proprietà della risorsa.
+
+* **Scarica**: scarica una risorsa.
 
 * **Aggiungi a raccolta**: aggiungi la risorsa selezionata a una raccolta.
 
-* **Scarica**: scarica una risorsa.
+* **Fissa in Accesso rapido**: [fissa una risorsa](my-workspace-assets-view.md) per un accesso più rapido quando necessario in un secondo momento. Tutti gli elementi fissati vengono visualizzati nella sezione **Accesso rapido** dell’area di lavoro personale.
+
+* **Apri in Adobe Express**: modifica un’immagine nell’Adobe Express integrato dalla schermata Adobe Experience Manager Assets.
+
+* **Modifica**: modifica l’immagine utilizzando l’Adobe Express.
+
+* **Condividi collegamento**: [condividi collegamenti](share-links-for-assets-view.md) per una risorsa con altri utenti in modo che possano accedervi e scaricarla.
 
 * **Elimina**: elimina una risorsa.
 
@@ -160,15 +183,11 @@ Puoi selezionare le risorse da visualizzare nei risultati della ricerca ed effet
 
 * **Rinomina**: rinomina una risorsa.
 
+* **Copia in librerie**: aggiungi una risorsa alla libreria.
+
 * **Assegna attività**: assegna attività agli utenti per una risorsa.
 
-* **Condividi collegamento**: [condividi collegamenti](share-links-for-assets-view.md) per una risorsa con altri utenti in modo che possano accedervi e scaricarla.
-
 * **Osserva**: [monitora le operazioni](manage-notifications-assets-view.md) eseguite su una risorsa.
-
-* **Mostra percorso file**: passa alla posizione della cartella delle risorse.
-
-* **Fissa in Accesso rapido**: [fissa una risorsa](my-workspace-assets-view.md) per un accesso più rapido quando necessario in un secondo momento. Tutti gli elementi fissati vengono visualizzati nella sezione **Accesso rapido** dell’area di lavoro personale.
 
 ## Configurazione della prima home page di ricerca {#configuring-search-first-homepage}
 
@@ -191,7 +210,7 @@ Puoi aggiungere il logo del brand e l’immagine di sfondo alla prima pagina ini
 
 1. Accedi a **[!UICONTROL Sfondo e immagine del logo]** sezione in **[!UICONTROL Homepage]**.
 1. Clic **[!UICONTROL Sostituisci]** per sfogliare le immagini dall’archivio risorse esistente.
-1. Fai clic su **[!UICONTROL Salva]**. [Anteprima](#preview-configured-homepage) le modifiche per esaminare le modifiche.
+1. Clic **[!UICONTROL Salva]**. [Anteprima](#preview-configured-homepage) le modifiche per esaminare le modifiche.
 
 ### Anteprima pagina home configurata {#preview-configured-homepage}
 
