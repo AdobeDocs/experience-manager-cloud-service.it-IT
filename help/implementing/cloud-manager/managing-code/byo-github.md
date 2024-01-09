@@ -3,12 +3,13 @@ title: Utilizzo degli archivi GitHub personali in Cloud Manager
 description: Scopri come configurare Cloud Manager per l’utilizzo degli archivi GitHub personali.
 feature: Release Information
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
+source-git-commit: ce9d65179d9cc1f02f786516554e07c95a89484d
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 70%
 
 ---
+
 
 # Utilizzo degli archivi GitHub personali in Cloud Manager {#byo-github}
 
@@ -54,7 +55,7 @@ Cloud Manager ora è a conoscenza del tuo archivio GitHub, ma deve ancora accede
    ![Convalida delle proprietà dell’archivio privato](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
 1. Cloud Manager utilizza un’app GitHub per interagire in modo sicuro con l’archivio.
-   * Un proprietario dell’organizzazione GitHub deve installare l’app che si trova in `https://github.com/apps/cloud-manager-for-aem-stage` e concedere l’accesso all’archivio.
+   * Un proprietario dell’organizzazione GitHub deve installare l’app che si trova in `https://github.com/apps/cloud-manager-for-aem` e concedere l’accesso all’archivio.
    * Consulta la documentazione di GitHub per informazioni dettagliate su come eseguire questa operazione.
 
 1. Per una maggiore sicurezza, è necessario creare un file segreto nel ramo predefinito dell’archivio. Seleziona **Genera**.
