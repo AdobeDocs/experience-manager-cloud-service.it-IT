@@ -2,9 +2,9 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare la funzione di registrazione per AEM as a Cloud Service per configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2755'
 ht-degree: 8%
 
 ---
@@ -397,7 +397,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 I livelli di log mod_rewrite sono definiti dalla variabile REWRITE_LOG_LEVEL nel file `conf.d/variables/global.var`.
 
-Può essere impostato su error, warn, info, debug e trace1 - trace8, con il valore predefinito warn. Per eseguire il debug di RewriteRules, si consiglia di aumentare il livello di registro a trace2.
+Può essere impostato su error, warn, info, debug e trace1 - trace8, con il valore predefinito warn. Per eseguire il debug di RewriteRules, si consiglia di aumentare il livello di registro a trace2. Si consiglia di eseguire il debug delle regole di riscrittura utilizzando [SDK di Dispatcher](../../dispatcher/validation-debug.md). Il livello log massimo per AEM as a Cloud Service è `debug`. Pertanto, attualmente non è possibile eseguire il debug delle regole di riscrittura nel cloud.
 
 Consulta la [documentazione del modulo mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) per ulteriori informazioni.
 
