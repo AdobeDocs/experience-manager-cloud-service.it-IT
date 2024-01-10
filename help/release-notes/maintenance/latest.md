@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
+source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 30%
+source-wordcount: '381'
+ht-degree: 34%
 
 ---
 
@@ -15,9 +15,9 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 14697 {#release-14697}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 14697, rilasciata pubblicamente l’martedì 18 dicembre 2023. Sostituisce i 14538 di rilascio che avevano un problema. La versione di manutenzione precedente era 14227.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 14697, rilasciata al pubblico il martedì 18 dicembre 2023. Sostituisce i 14538 di rilascio che avevano un problema. La versione di manutenzione precedente era 14227.
 
-2023.12.0 Feature Activation fornisce il set completo di funzioni per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it).
+Con l’attivazione delle funzioni 2023.12.0 viene fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it).
 
 ### Miglioramenti {#enhancements-14697}
 
@@ -43,7 +43,7 @@ Di seguito sono riepilogati i miglioramenti continui relativi alla versione di m
 
 ### Problemi noti {#known-issues-14697}
 
-Nessuno.
+* GRANITE-49031: Regressione con conseguente `@JsonIgnore` annotazione ignorata nei campi transitori.
 
 ### Tecnologie incorporate {#embedded-tech-14697}
 
