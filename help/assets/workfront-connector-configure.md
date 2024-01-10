@@ -1,12 +1,12 @@
 ---
-title: Configurare [!DNL Workfront for Experience Manager enhanced connector]
-description: Configurare [!DNL Workfront for Experience Manager enhanced connector]
+title: Configura [!DNL Workfront for Experience Manager enhanced connector]
+description: Configura [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: e49d536dc918861604f3e5d19608eb69d038c49a
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1760'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,7 @@ Per iscriverti agli eventi, segui questi passaggi:
 1. Vai alla scheda Cartelle collegate al progetto nei servizi cloud.
 1. Percorso principale della cartella collegata: seleziona una cartella in DAM in cui desideri creare le cartelle collegate. Se lasciato vuoto, per impostazione predefinita viene impostato su /content/dam. Verificare che lo schema metadati Strumenti di Workfront e lo schema metadati cartelle collegate a Workfront siano stati applicati alla cartella selezionata.
 1. Struttura delle cartelle collegate: immetti valori separati da virgole. Ogni valore deve essere `DE:<some-project-custom-form-field>`, Portfolio, Programma, Anno, Nome o un &quot;valore stringa letterale&quot; (quest&#39;ultimo con virgolette). Attualmente è impostato su Portfolio,Programma,Anno,DE:Tipo di progetto,Nome.
+1. Configurare le autorizzazioni: Aggiungi `jcr:all permissions` autorizzazioni a `/conf/workfront-tools/settings/cloudconfigs` per `wf-workfront-users` gruppo.
 1. Se il titolo della cartella in Workfront deve includere tutte le cartelle della struttura, seleziona la casella di controllo Crea titolo della cartella collegata in Workfront utilizzando i nomi della struttura di cartelle. In caso contrario, si tratta del titolo dell&#39;ultima cartella.
 1. Sottocartelle con più campi consente di specificare un elenco di cartelle da creare come cartella secondaria della cartella collegata.
 1. Stato progetto: seleziona lo stato per il quale il progetto deve essere impostato per creare la cartella collegata.
