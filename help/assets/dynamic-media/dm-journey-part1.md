@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 20c12efb963bc1defd16f5b42b5efa5d4067e266
 workflow-type: tm+mt
-source-wordcount: '3685'
+source-wordcount: '3674'
 ht-degree: 0%
 
 ---
@@ -88,11 +88,11 @@ Continuando a leggere, imparerai di più sul perché questo concetto di &quot;un
 
 Quando sei pronto per andare live con una risorsa di immagine o una risorsa video, è supportato dalla spina dorsale di Dynamic Medie, costituita da una potente rete di consegna di primo livello. La rete serve centinaia di clienti in tutto il mondo ogni giorno. Le risorse sono distribuite sulla rete per la distribuzione dei contenuti (CDN) in hosting presso Akamai. La rete CDN è un sistema di servizi informatici collegati in rete che cooperano in modo trasparente per fornire contenuti, soprattutto rich media di grandi dimensioni, agli utenti finali.
 
-Nel sistema CDN, il contenuto web viene memorizzato nelle cache web su Internet. Quindi viene distribuito dalla cache web agli utenti finali per velocizzare la consegna. Pertanto, la prima volta che qualcuno scarica una pagina web, le risorse visualizzate vengono inviate a una cache CDN. Vengono archiviati sul server in modo che, al successivo accesso alla pagina Web da parte di un utente nella stessa area, lo stesso contenuto della cache venga distribuito più rapidamente. Il contenuto viene distribuito più rapidamente perché si trova più vicino all’utente. Una rete CDN consente una visualizzazione più rapida delle pagine Web, ma riduce i requisiti di larghezza di banda del server centrale, in quanto i contenuti vengono distribuiti da una rete cache e non da un server centrale in ogni istanza. Questo flusso ottimizzato garantisce una migliore esperienza d&#39;uso, con un conseguente aumento delle vendite.
+Nel sistema CDN, il contenuto web viene memorizzato nelle cache web su Internet. Quindi viene distribuito dalla cache web agli utenti finali per velocizzare la consegna. Pertanto, la prima volta che qualcuno scarica una pagina web, le risorse visualizzate vengono inviate a una cache CDN. Vengono archiviati sul server in modo che, al successivo accesso alla pagina Web da parte di un utente nella stessa area, lo stesso contenuto memorizzato nella cache venga distribuito più rapidamente. Il contenuto viene distribuito più rapidamente perché si trova più vicino all’utente. Una rete CDN consente una visualizzazione più rapida delle pagine Web, ma riduce i requisiti di larghezza di banda del server centrale, in quanto i contenuti vengono distribuiti da una rete cache e non da un server centrale in ogni istanza. Questo flusso ottimizzato garantisce una migliore esperienza d&#39;uso, con un conseguente aumento delle vendite.
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
-Storicamente, la rete CDN fornisce 3,5 petabyte di traffico ai clienti, ogni mese. Il sistema è in grado di fornire 52 miliardi di asset in un singolo giorno. Questo numero equivale a 864.000 immagini e video distribuiti correttamente ai clienti, _ogni secondo_.
+Storicamente, la rete CDN distribuisce ogni mese 3,5 petabyte di traffico ai clienti. Il sistema è in grado di fornire 52 miliardi di asset in un singolo giorno. Questo numero equivale a 864.000 immagini e video distribuiti correttamente ai clienti, _ogni secondo_.
 
 ### Imaging avanzato
 
@@ -117,12 +117,11 @@ L’imaging avanzato non è attivato per impostazione predefinita perché richie
 
 ### Set video adattivi
 
-Quando in una pagina è presente un video o una pagina principale, i clienti tendono a interagire più a lungo con tale contenuto e a rimanere sulla pagina più a lungo, il che è in genere una buona cosa. Questo comportamento è stato dimostrato attraverso le analisi eseguite da Adobe. Tuttavia, il video può essere complesso. Per prima cosa, spesso hai un file principale di grandi dimensioni. È complicato determinare come ridimensionare e distribuire il video, il tutto per garantire un&#39;esperienza fluida indipendentemente dal dispositivo su cui viene visualizzata e dalla larghezza di banda.
+Quando in una pagina è presente un video o una pagina principale, i clienti tendono a interagire più a lungo con tale contenuto e a rimanere sulla pagina più a lungo, il che è in genere una buona cosa. Questo comportamento viene mostrato attraverso le analisi eseguite da Adobe. Tuttavia, il video può essere complesso. Per prima cosa, spesso hai un file principale di grandi dimensioni. È complicato determinare come ridimensionare e distribuire il video, il tutto per garantire un&#39;esperienza fluida indipendentemente dal dispositivo su cui viene visualizzata e dalla larghezza di banda.
 
 Per risolvere questo problema, Dynamic Medie consente di creare _Set video adattivi_.
 
-![Set video adattivo](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
-_Un set di video adattivi raggruppa le versioni dello stesso video che sono codificate in bit rate e formati diversi._
+Un set di video adattivi raggruppa le versioni dello stesso video che sono codificate in bit rate e formati diversi.
 
 Inizia con il tuo video originale principale, che carichi nel sistema. Dynamic Medie ridimensiona automaticamente o _transcodifica_, quel video in più video. Quindi, al momento della consegna, determina in modo intelligente quale schermo video, quale qualità e quale formato utilizzare e lo distribuisce al telefono, al tablet o al computer desktop.
 
@@ -138,7 +137,7 @@ Di seguito sono riportati i problemi comuni relativi ai casi d’uso e le soluzi
 
 ### Caso d’uso: approccio basato su file primario
 
-Uno dei casi d’uso più importanti per Dynamic Medie è anche uno dei più ovvi. In altre parole, riducendo il peso delle pagine e delle esperienze e le dimensioni del contenuto, che si tratti di un’immagine o di un video, che viene distribuito.
+Uno dei casi d’uso più importanti per Dynamic Medie è anche uno dei più ovvi. In altre parole, riducendo il peso delle pagine e delle esperienze e le dimensioni del contenuto, che si tratti di un’immagine o di un video in fase di distribuzione.
 
 Di seguito è riportata un’esperienza o una pagina web tipica. Circa il 90% di una pagina è costituito da rich media, come immagini e video, che sono comunemente file molto più pesanti.
 
@@ -180,9 +179,9 @@ Un altro caso d’uso che Dynamic Medie risolve per è il video. Il video è com
 | Non è possibile creare manualmente tutte le versioni di un video in modo da garantirne una buona visualizzazione e riproduzione su tutti i dispositivi. | Eliminazione di ore di noiosa attività di transcodifica con un flusso di lavoro semplificato. |
 | | Libera il tempo per un lavoro di maggior valore. |
 
-I clienti arrivano a Dynamic Medie con il seguente problema che sperano di risolvere:
+I clienti arrivano a Dynamic Medie con i seguenti problemi che sperano di risolvere:
 
-&quot;_La mia azienda ha il video, e il nostro reparto ha speso una grande quantità di denaro per crearlo, ma ha evitato di metterlo sulle pagine o consegnarlo. Il motivo era che dai nostri test, la qualità del video non poteva essere garantita, o anche se stava per essere riprodotto davvero. E in ultima analisi, questo influisce sui nostri marchi e potenzialmente sul nostro ruolo persino nella conversione._&quot;
+&quot;_La mia azienda possiede questo video e il dipartimento ha speso una grande quantità di denaro per crearlo, ma ha evitato di metterlo sulle pagine o consegnarlo. Il motivo era che, a causa dei test, la qualità del video non poteva essere garantita, o anche se stava per essere riprodotto davvero. E in ultima analisi, questo influisce sul marchio dell&#39;azienda e potenzialmente sul suo ruolo nella conversione._&quot;
 
 La soluzione di Dynamic Medie è quella di prendere quell&#39;unico file video principale, e lasciare che Dynamic Medie faccia tutte le dimensioni attraverso il suo processo di transcodifica. Poi aggiungilo al lettore video intelligente di Dynamic Medie. Questo flusso di lavoro garantisce che il video venga utilizzato nella pagina di destinazione principale, in una categoria o in una pagina di dettaglio del prodotto e sia sempre coerente e di alta qualità.
 
@@ -265,7 +264,7 @@ La rappresentazione qui sopra è live! [Prova](https://s7d1.scene7.com/s7viewers
 
 ## Facoltativo - Ulteriori informazioni
 
-La parte I di questo percorso tratta le nozioni di base su una serie di argomenti Dynamic Medie. Per ulteriori informazioni su ciò che hai appena letto, utilizza i materiali seguenti per esplorare i concetti in modo più dettagliato. In caso contrario, è possibile continuare con la Parte II del percorso. Consulta [Novità del Percorso Dynamic Medie](#whats-next).
+La parte I di questo percorso tratta le nozioni di base su vari argomenti di Dynamic Medie. Se desideri saperne di più su ciò che leggi, utilizza i materiali seguenti per esplorare i concetti in modo più dettagliato. In caso contrario, è possibile continuare con la Parte II del percorso. Consulta [Novità del Percorso Dynamic Medie](#whats-next).
 
 _Argomenti della Guida di Dynamic Medie_
 
@@ -291,7 +290,7 @@ _Visualizzatori Dynamic Medie_
 
 ## Novità del Percorso Dynamic Medie {#whats-next}
 
-Nella parte II di questo percorso, esamini gli URL di Dynamic Medie un po’ più da vicino per capire meglio cosa succede quando viene consegnata una risorsa. Scopri anche le nozioni di base sulla creazione di predefiniti immagine per il rendering delle risorse, nonché di set di immagini, set 360 gradi e set di file multimediali diversi e come vengono creati.
+Nella parte II di questo percorso, esamini attentamente gli URL di Dynamic Medie per capire meglio cosa succede quando viene consegnata una risorsa. Scopri anche le nozioni di base sulla creazione di predefiniti immagine per il rendering delle risorse, nonché di set di immagini, set 360 gradi e set di file multimediali diversi e come vengono creati.
 
 Portami a [Percorso Dynamic Medie: nozioni di base, parte II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
