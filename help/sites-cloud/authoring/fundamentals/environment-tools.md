@@ -2,7 +2,7 @@
 title: Ambiente e strumenti di authoring
 description: L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 84%
@@ -102,7 +102,7 @@ L’aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
 ## Browser Risorse {#assets-browser}
 
-Il browser Risorse mostra tutte le [risorse](/help/assets/home.md) disponibili per la pagina corrente.
+Il browser Risorse mostra tutte le [risorse](/help/assets/overview.md) disponibili per la pagina corrente.
 
 Il browser Risorse è una scheda che si trova nel pannello laterale, insieme al [browser Componenti](#components-browser) e alla [struttura dei contenuti](#content-tree). Per aprire o chiudere il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
 

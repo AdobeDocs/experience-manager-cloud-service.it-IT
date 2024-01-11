@@ -2,7 +2,7 @@
 title: Fase di preparazione
 description: Scopri i passaggi necessari per assicurarti che l’installazione dell’AEM sia pronta per essere spostata sul cloud.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 6%
@@ -218,6 +218,6 @@ Una volta compresa la portata delle modifiche necessarie per passare a AEM as a 
 
 * [Guida introduttiva di Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) - Una guida completa su come utilizzare Cloud Acceleration Manager per velocizzare il passaggio al cloud.
 * [AEM as a Cloud Service: Introduzione, architettura e pensiero diverso](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
-* [AEM a Home Cloud Service](/help/overview/home.md) - Panoramica della documentazione di Experience Manager as a Cloud Service.
-* [Panoramica di AEM as a Cloud Service](/help/overview/home.md) : questa guida fornisce una panoramica di Experience Manager as a Cloud Service, con un’introduzione, terminologia e architettura.
+* [AEM a Home Cloud Service](/help/overview/introduction.md) - Panoramica della documentazione di Experience Manager as a Cloud Service.
+* [Panoramica di AEM as a Cloud Service](/help/overview/introduction.md) : questa guida fornisce una panoramica di Experience Manager as a Cloud Service, con un’introduzione, terminologia e architettura.
 * [Percorso di onboarding](/help/journey-onboarding/overview.md): questa guida fornisce un riepilogo di come iniziare a utilizzare Experience Manager as a Cloud Service, incluso come ottenere l’accesso e configurare il team.
