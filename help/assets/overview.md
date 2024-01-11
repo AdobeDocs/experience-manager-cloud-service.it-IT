@@ -1,16 +1,17 @@
 ---
 title: Introduzione ad Assets as a [!DNL Cloud Service]
-description: Novità e vantaggi di Experience Manager Assets as a [!DNL Cloud Service]. Una soluzione PaaS nativa per il cloud per le aziende.
+description: Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: a4601d95076d37ed5df79b7c9dabb8beab8353d0
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 88%
+source-wordcount: '820'
+ht-degree: 100%
 
 ---
+
 
 # Introduzione ad Assets as a [!DNL Cloud Service] {#assets-cloud-service-introduction}
 
@@ -53,11 +54,11 @@ Librerie, sviluppatori e utenti con privilegi avanzati DAM possono continuare a 
 
 Per informazioni su come accedere alla vista Risorse e su alcune delle semplificazioni offerte rispetto alla vista Amministratore, consulta [Introduzione alla vista Risorse](/help/assets/assets-view-introduction.md).
 
-## Integrazione con l’authoring basato su documenti per i Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
+## Integrazione con l’authoring basato su documenti per Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
 
-Edge Delivery consente di creare siti web veloci e coinvolgenti in cui gli autori possono aggiornare e pubblicare rapidamente i contenuti e nuovi siti possono essere avviati rapidamente.
+Edge Delivery consente di creare siti web coinvolgenti e rapidi in cui gli autori possono aggiornare e pubblicare rapidamente i contenuti e che consentono il lancio rapido di nuovi siti.
 
-Integra AEM Assets con l’authoring basato su documenti per Edge Delivery Services per consentire agli autori di siti web di utilizzare le immagini disponibili negli archivi AEM Assets durante l’authoring di documenti nei documenti Microsoft Word o Google. Per ulteriori informazioni, consulta [Integrare AEM Assets con l’authoring basato su documenti](/help/edge/using.md#integrate-assets-edge).
+Integra AEM Assets con l’authoring basato su documenti per Edge Delivery Services per consentire agli autori di siti web di utilizzare le immagini disponibili negli archivi AEM Assets durante l’authoring di documenti in Microsoft Word o Documenti Google. Per ulteriori informazioni, consulta [Integrare AEM Assets con l’authoring basato su documenti](/help/edge/using.md#integrate-assets-edge).
 
 ## Nuove funzionalità di Assets {#whats-new-assets}
 
