@@ -2,10 +2,10 @@
 title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
 workflow-type: tm+mt
-source-wordcount: '3357'
-ht-degree: 92%
+source-wordcount: '3350'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ Le regole del filtro del traffico possono essere utilizzate per bloccare o conse
 
 La maggior parte di queste regole del filtro del traffico è disponibile per tutta la clientela di Sites e Forms di AEM as a Cloud Service. Funzionano principalmente con proprietà di richiesta e intestazioni di richiesta, tra cui IP, nome host, percorso e agente utente.
 
-Una sottocategoria delle regole del filtro del traffico richiede una licenza di Sicurezza avanzata o Protezione WAF-DDoS e sarà disponibile nel corso dell’anno. Queste potenti regole sono note come regole del filtro del traffico WAF (Web Application Firewall) (o regole WAF in breve) e hanno accesso ai [contrassegni WAF](#waf-flags-list) descritti di seguito in questo articolo.
+Una sottocategoria delle regole del filtro del traffico richiede una licenza di protezione avanzata o una licenza di protezione WAF-DDoS. Queste potenti regole sono note come regole del filtro del traffico WAF (Web Application Firewall) (o regole WAF in breve) e hanno accesso ai [contrassegni WAF](#waf-flags-list) descritti di seguito in questo articolo.
 
 Le regole del filtro del traffico possono essere distribuite ai tipi di ambiente di sviluppo, di staging e di produzione nei programmi di produzione (non sandbox) tramite le pipeline di configurazione di Cloud Manager. Il supporto per gli RDE sarà disponibile in futuro.
 
