@@ -1,15 +1,15 @@
 ---
-title: Acquisizione di contenuti nel Cloud Service
+title: Acquisizione di contenuti in Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
 source-wordcount: '2407'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
-# Acquisizione di contenuti nel Cloud Service {#ingesting-content}
+# Acquisizione di contenuti in Cloud Service {#ingesting-content}
 
 ## Processo di acquisizione in Cloud Acceleration Manager {#ingestion-process}
 
@@ -78,7 +78,7 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Acquisizione integrativa"
->abstract="Utilizza la funzione integrativa per spostare il contenuto modificato dall’ultima attività di trasferimento dei contenuti. Al termine dell’acquisizione, controlla i registri per individuare eventuali errori o avvisi. Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando l’Assistenza clienti di Adobe."
+>abstract="Utilizza la funzione integrativa per spostare il contenuto modificato dall’ultima attività di trasferimento dei contenuti. Al termine dell’acquisizione, verifica la presenza di eventuali errori o avvisi nei registri. Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando l’Assistenza clienti di Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=it" text="Visualizzazione dei registri"
 
 Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che consente l’estrazione di contenuti differenziali eseguendo una *integrativo* del set di migrazione. Questo consente di modificare il set di migrazione in modo da includere solo il contenuto modificato rispetto all’estrazione precedente, senza dover estrarre nuovamente tutto il contenuto.
@@ -97,7 +97,7 @@ Per prima cosa, crea un processo di acquisizione e assicurati che **A comparsa**
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Risoluzione dei problemi di acquisizione dei contenuti"
->abstract="Consulta i registri di acquisizione e la documentazione per trovare soluzioni ai motivi comuni per cui un’acquisizione può non riuscire e trovare il modo di risolvere il problema. Una volta risolta, l’acquisizione può essere eseguita nuovamente."
+>abstract="Consulta i registri di acquisizione e la documentazione per trovare soluzioni ai motivi comuni dell’esito negativo di un’acquisizione e trova il modo di risolvere il problema. Una volta risolto il problema, l’acquisizione può essere eseguita nuovamente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=it" text="Convalida dei trasferimenti di contenuto"
 
 ### CAM: impossibile recuperare il token di migrazione {#cam-unable-to-retrieve-the-migration-token}
