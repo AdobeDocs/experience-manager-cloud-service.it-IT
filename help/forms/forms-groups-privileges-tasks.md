@@ -1,11 +1,12 @@
 ---
 title: Quali gruppi di utenti sono disponibili come predefiniti in AEM Forms as a Cloud Service?
 description: Elenco dei gruppi di utenti e delle autorizzazioni predefiniti assegnati a ciascun gruppo
-exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 28%
+source-wordcount: '167'
+ht-degree: 26%
 
 ---
 
@@ -112,7 +113,7 @@ Una volta effettuata la configurazione [!DNL AEM Forms] as a Cloud Service, i gr
 * [Configurare un ambiente di sviluppo locale](/help/forms/setup-local-development-environment.md)
 * [Migrazione da AEM Forms 6.5 a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [Creare un modulo adattivo indipendente](/help/forms/creating-adaptive-form-core-components.md)
-* [Aggiungere un modulo adattivo a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Aggiungere un modulo adattivo alla pagina di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 <!--
 

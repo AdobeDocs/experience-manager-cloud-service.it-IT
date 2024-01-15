@@ -3,13 +3,15 @@ title: Integrazione di Adobe Workfront Fusion con l’invio di AEM Forms
 description: Adobe Workfront Fusion consente di concentrarsi su nuove attività anziché su attività ripetitive. Puoi collegare Adobe Workfront Fusion a un modulo adattivo utilizzando Invio modulo.
 keywords: Inviare un modulo adattivo ad Adobe Workfront Fusion, Integrazione di Adobe Workfront Fusion con AEM Forms Invio, Adobe Workfront Fusion con AEM Forms, Workfront Fusion con AEM Forms, Connessione di Workfront Fusion a AEM Forms, AEM Forms e Workfront Fusion, Come collegare Workfront Fusion con AEM Forms?, Connessione di Workfront Fusion a un modulo
 topic-tags: author, developer
-source-git-commit: 68314ca09594d3c4c5639363326117b89b733a4d
+feature: Adaptive Forms
+role: Admin, User
+exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 0%
 
 ---
-
 
 # Inviare un modulo adattivo ad Adobe Workfront Fusion
 
@@ -189,5 +191,3 @@ Per configurare l’azione di invio del modulo adattivo esistente per Workfront 
 - Uno scenario può avere più collegamenti a un webhook, ma alla volta è attivo un solo collegamento a un webhook. Si consiglia di eliminare il webhook non collegato, in modo che non venga visualizzato nell’elenco a discesa delle azioni di invio di AEM Forms.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
-
-

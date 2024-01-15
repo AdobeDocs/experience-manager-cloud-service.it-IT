@@ -1,11 +1,13 @@
 ---
 title: Architettura as a Cloud Service di AEM Forms per API di comunicazione e Forms adattivi
 description: Scopri l’architettura di [!DNL AEM Forms] as a Cloud Service a scoprire gli aspetti di scalabilità, resilienza e prestazioni della piattaforma.
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 5%
+source-wordcount: '1033'
+ht-degree: 2%
 
 ---
 
@@ -67,7 +69,7 @@ La replica inversa non è disponibile su AEM as a Cloud Service per inviare cont
 
 ### Servizi Adobe
 
-**Servizio di conversione automatica dei moduli**
+**Servizio automated forms conversion**
 
 [servizio automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it) converte automaticamente i moduli PDF e XFA in moduli adattivi basati su HTML5, reattivi e facili da usare sui dispositivi.
 
@@ -96,7 +98,7 @@ I servizi di documentazione sono i seguenti:
 
 ### Cloud Manager
 
-Cloud Manager è un componente essenziale per [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=it). È il punto di ingresso singolo per le operazioni e gli sviluppatori dei nostri clienti. È il luogo da cui possono essere gestiti i programmi e gli ambienti dell’AEM. Cloud Manager si è evoluto come portale self-service in cui è possibile creare e configurare i componenti principali dell’as a Cloud Service AEM:
+Cloud Manager è un componente essenziale per [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html). È il punto di ingresso singolo per le operazioni e gli sviluppatori dei nostri clienti. È il luogo da cui possono essere gestiti i programmi e gli ambienti dell’AEM. Cloud Manager si è evoluto come portale self-service in cui è possibile creare e configurare i componenti principali dell’as a Cloud Service AEM:
 
 * Creazione e gestione di programmi
 * Creazione e gestione degli ambienti AEM all’interno dei programmi
@@ -105,7 +107,7 @@ Cloud Manager è un componente essenziale per [AEM as a Cloud Service](https://e
 
 ### Console per sviluppatori
 
-Una Console per sviluppatori fornisce vari dettagli di ogni ambiente in esecuzione di Forms as a Cloud Service. Questi dettagli sono utili per il debug dell’ambiente. Per ulteriori informazioni, consulta [Debug di AEM as a Cloud Service con Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it).
+Una Console per sviluppatori fornisce vari dettagli di ogni ambiente in esecuzione di Forms as a Cloud Service. Questi dettagli sono utili per il debug dell’ambiente. Per ulteriori informazioni, consulta [Debug di AEM as a Cloud Service con Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
 
 <!--
 

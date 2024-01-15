@@ -2,11 +2,13 @@
 title: Come possiamo risolvere i problemi relativi alla memorizzazione nella cache per AEM Forms as a Cloud Service?
 description: Risolvere i problemi relativi alla memorizzazione nella cache per AEM Forms as a Cloud Service.
 contentOwner: khsingh
+feature: Adaptive Forms, Troubleshooting
+role: User
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 1%
+source-wordcount: '381'
+ht-degree: 0%
 
 ---
 
@@ -70,5 +72,5 @@ Per risolvere il problema, imposta l’intestazione della pagina su 0:
        </IfModule>
    ```
 
-1. Salva e chiudi il file 
+1. Salva e chiudi il file.
 1. Modifica il soft link per `src\conf.d\enabled_vhosts\default.vhost` per selezionare un nuovo file.

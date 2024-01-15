@@ -1,11 +1,12 @@
 ---
 title: Come si imposta un ambiente di sviluppo locale per AEM Forms?
 description: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
-exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 58325cccf218eb2176868879842a795d1c91d8a6
 workflow-type: tm+mt
 source-wordcount: '2682'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -16,7 +17,7 @@ Quando imposti e configuri un’ [!DNL  Adobe Experience Manager Forms] as a [!D
 Puoi utilizzare l’ambiente di sviluppo locale per eseguire le seguenti azioni senza effettuare l’accesso all’ambiente di sviluppo cloud:
 
 * [Creare moduli](creating-adaptive-form.md) e risorse correlate (temi, modelli, azioni di invio personalizzate e altro ancora)
-* [Conversione di PDF forms in Forms adattivo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=it)
+* [Conversione di moduli PDF in moduli adattivi](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=it)
 * Creare applicazioni da generare [Comunicazioni con i clienti](aem-forms-cloud-service-communications-introduction.md) su richiesta o in modalità batch.
 
 Dopo che un modulo adattivo o le risorse correlate sono pronti nell’istanza di sviluppo locale o in un’applicazione da generare [Comunicazioni con i clienti] è pronto, è possibile esportare l’applicazione Adaptive Form o Customer Communications dall’ambiente di sviluppo locale a un ambiente di Cloud Service per ulteriori test o per passare agli ambienti di produzione.

@@ -3,12 +3,12 @@ title: Come abilitare i componenti core Adaptive Forms nell’ambiente di svilup
 description: Scopri come abilitare i componenti core Adaptive Forms su AEM Forms as a Cloud Service.
 contentOwner: Khushwant Singh
 docset: CloudService
-role: Admin
-exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+role: Admin, Developer, User
+feature: Adaptive Forms, Core Components
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 6%
+source-wordcount: '985'
+ht-degree: 2%
 
 ---
 
@@ -273,7 +273,7 @@ Per abilitare i componenti core Adaptive Forms e Headless Adaptive Forms per un 
    > `</dependency>`
 
 
-1. Salva e chiudi il file 
+1. Salva e chiudi il file.
 
 ## 3. Genera e distribuisci il codice aggiornato
 
@@ -299,7 +299,7 @@ Distribuisci il codice aggiornato negli ambienti di sviluppo e Cloud Service loc
 
    Una volta creato correttamente il pacchetto, puoi trovarlo all’indirizzo [Cartella archivio Git]\all\target\[appid].all-[version].zip
 
-1. Utilizza il [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) per implementare [Cartella progetto Archetipo AEM]\all\target\[appid].all-[version]pacchetto .zip nell’ambiente di sviluppo locale.
+1. Utilizza il [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) per implementare [Cartella progetto Archetipo AEM]\all\target\[appid].all-[version]pacchetto .zip nell’ambiente di sviluppo locale.
 
 
 ### Generare e distribuire il codice aggiornato in un ambiente as a Cloud Service AEM Forms {#core-components-on-aem-forms-cs}

@@ -2,8 +2,10 @@
 title: Come abilitare Adobe Analytics per un modulo adattivo?
 description: Experience Cloud Setup Automation consente di collegare Adobe Analytics a un modulo adattivo per monitorare le informazioni sulle interazioni e il coinvolgimento dei visitatori.
 keywords: Abilita Adobe Analytics per un modulo adattivo utilizzando Experience Cloud Setup Automation, Abilita Adobe Analytics in Forms, Adobe Analytics in Adaptive Forms, integrazione Forms Analytics, Forms e Adobe Analytics
+feature: Adaptive Forms
+role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 2%
