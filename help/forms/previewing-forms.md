@@ -1,13 +1,13 @@
 ---
 title: Come si visualizza l’anteprima di un modulo adattivo?
-description: Gli utenti possono visualizzare in anteprima i moduli prima di pubblicarli o attivarli, per assicurarsi che soddisfino le aspettative. Le opzioni di anteprima possono variare tra i tipi di modulo supportati.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: Gli utenti possono visualizzare in anteprima il modulo prima di pubblicarlo o attivarlo, per assicurarsi che soddisfi le aspettative. Le opzioni di anteprima possono variare tra i tipi di modulo supportati.
 topic-tags: author
-discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 3%
+source-wordcount: '336'
+ht-degree: 2%
 
 ---
 
@@ -28,10 +28,10 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
    <td><strong>Tipo di risorsa</strong><br /> </td>
    <td><strong>Opzioni di anteprima disponibili</strong><br /> </td>
   </tr>
-  <tr>
-   <td>Documento</td>
-   <td>Anteprima PDF</td>
-  </tr>
+  <!--<tr>
+   <td>Document</td>
+   <td>PDF preview</td>
+  </tr>-->
   <tr>
    <td>Modulo PDF</td>
    <td>Anteprima e anteprima PDF con i dati<br /> </td>
@@ -40,10 +40,10 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
    <td>Modulo adattivo</td>
    <td>Anteprima HTML e Anteprima HTML con dati</td>
   </tr>
-  <tr>
-   <td>Modello modulo</td>
-   <td>Anteprima PDF, Anteprima PDF con dati, Anteprima HTML, Anteprima HTML con dati<br /> </td>
-  </tr>
+  <!--<tr>
+   <td>Form Template</td>
+   <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
+  </tr>-->
  </tbody>
 </table>
 
@@ -61,7 +61,7 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
 
    * Anteprima come HTML
    * Anteprima con i dati
-   * Anteprima come PDF (disponibile per i modelli di modulo)
+     <!--* Preview as PDF (available for form templates)-->
 
 ## Anteprima con i dati {#preview-with-data}
 
