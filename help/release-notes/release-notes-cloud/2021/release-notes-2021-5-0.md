@@ -1,10 +1,10 @@
 ---
-title: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione 2021.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Note sulla versione 2021.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1355'
 ht-degree: 29%
 
 ---
@@ -31,7 +31,7 @@ La seguente versione (2021.6.0) sarà del 28 giugno 2021.
 
 * [Canale prerelease](/help/release-notes/prerelease.md): visualizza l’anteprima delle prossime funzioni per un mese intero prima che vengano pubblicate in produzione!
 
-* [API obsoleta](/help/release-notes/deprecated-apis.md): è disponibile un elenco delle ultime API obsolete per AEM as a Cloud Service.
+* [API obsoleta](/help/release-notes/deprecated-removed-features.md): è disponibile un elenco delle ultime API obsolete per AEM as a Cloud Service.
 
 * [Plug-in Maven per SDK Build Analyzer per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it): aggiorna i progetti Maven alla versione più recente, che include un controllo API Java obsoleto e altri miglioramenti.
 
@@ -99,14 +99,14 @@ Per registrarti al programma beta, scrivi a formscsbeta@adobe.com.
 
 Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.5.0.
 
-### Data di pubblicazione {#release-date-cm-may}
+### Data di rilascio {#release-date-cm-may}
 
 La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.5.0 è il 6 maggio 2021.
-La prossima versione è pianificata per il 03 giugno 2021.
+La prossima versione è pianificata per il venerdì 3 giugno 2021.
 
 ### Novità {#what-is-new-may}
 
-* La regola di qualità PackageOverlaps ora rileva i casi in cui lo stesso pacchetto è stato distribuito più volte, ovvero in più posizioni incorporate, nello stesso set di pacchetti distribuito.
+* Ora la regola di qualità PackageOverlaps rileva i casi in cui lo stesso pacchetto viene distribuito più volte, ovvero in più posizioni incorporate, nello stesso set di pacchetti distribuito.
 
 * L’endpoint dell’archivio nell’API pubblica ora include l’URL di Git.
 
@@ -156,7 +156,7 @@ La data di pubblicazione dello strumento Content Transfer v1.4.6 è il 27 maggio
 
 * Durante l’esecuzione di Mappatura utenti, se gli utenti avevano lo stesso indirizzo e-mail sulla destinazione e sull’host, ma nomi utente diversi, l’intera acquisizione non riusciva. Questo problema è stato risolto. In questo caso, l&#39;utente/gruppo viene ignorato e registrato come conflitto nel file di registro.
 
-### Data di pubblicazione {#release-date-ctt}
+### Data di rilascio {#release-date-ctt}
 
 La data di pubblicazione dello strumento Content Transfer v1.4.0 è l’11 maggio 2021.
 
