@@ -2,10 +2,10 @@
 title: Creazione di programmi di produzione
 description: Scopri come creare un programma di produzione per ospitare il traffico in tempo reale con Cloud Manager.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 73%
+source-wordcount: '599'
+ht-degree: 64%
 
 ---
 
@@ -22,7 +22,7 @@ Per creare un programma di produzione, segui la procedura riportata di seguito.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Clic **Aggiungi programma** dall&#39;angolo superiore destro dello schermo.
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** schermo, tocca o fai clic su **Aggiungi programma** nell’angolo in alto a destra dello schermo.
 
    ![Pagina di destinazione di Cloud Manager](assets/log-in.png)
 
@@ -37,8 +37,6 @@ Per creare un programma di produzione, segui la procedura riportata di seguito.
    * Impossibile abilitare o disabilitare HIPAA dopo la creazione del programma.
       * [Ulteriori informazioni](https://www.adobe.com/go/hipaa-ready_it) sull’implementazione della soluzione compatibile HIPAA di Adobe.
    * Una volta attivata, la protezione WAF-DDOS può essere configurata impostando un [pipeline non di produzione.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-   {{waf-limited-release}}
 
    ![Opzioni di protezione](assets/create-production-program-security.png)
 
@@ -60,7 +58,7 @@ Per creare un programma di produzione, segui la procedura riportata di seguito.
    ![Definizione della data di pubblicazione pianificata](assets/setup-go-live.png)
 
    * Questa data può essere modificata in qualsiasi momento.
-   * Questa data è solo per uso informativo e attiva il widget di pubblicazione sulla pagina della panoramica del programma per fornire collegamenti rapidi alla documentazione sulle best practice di AEM as a Cloud Service, al fine di allinearsi con il percorso che culmina in un’esperienza di pubblicazione fluida e di successo.
+   * Questa data è solo per uso informativo e attiva il widget di pubblicazione sul [**Panoramica del programma** pagina](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) fornire collegamenti interni al prodotto alla documentazione sulle best practice as a Cloud Service per l’AEM in modo tempestivo, in linea con il percorso che culmina in un’esperienza di pubblicazione fluida e di successo.
 
 1. Fai clic su **Crea**.
 

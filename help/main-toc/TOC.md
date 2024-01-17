@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e25f3e74fa7fa18b92ffe0c40a19f20442d4c7a0
+source-git-commit: 3bc71fe59e0b0c257e6747f93b3d76bc801a39b4
 workflow-type: tm+mt
-source-wordcount: '4544'
+source-wordcount: '4549'
 ht-degree: 96%
 
 ---
@@ -878,7 +878,7 @@ ht-degree: 96%
          + [Creazione di programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [Programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [Creazione di programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [Modifica dei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [Gestione e modifica dei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Ambienti in sospensione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Creazione di un progetto di applicazione AEM {#create-application-project}
          + [Creazione guidata progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
@@ -935,6 +935,7 @@ ht-degree: 96%
          + [Gestione degli Elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Dashboard della licenza](/help/implementing/cloud-manager/license-dashboard.md)
       + [Informazioni sulle richieste di contenuto di Cloud Service](/help/implementing/cloud-manager/content-requests.md)
+      + [Dashboard prestazioni CDN](/help/implementing/cloud-manager/cdn-performance.md)
       + [Domande frequenti su Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Sviluppo per AEM as a Cloud Service {#developing}
       + [Struttura dei progetti AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)

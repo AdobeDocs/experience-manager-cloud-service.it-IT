@@ -2,10 +2,10 @@
 title: Aggiunta di un nome di dominio personalizzato
 description: Scopri come aggiungere un nome di dominio personalizzato con Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 83%
+source-wordcount: '636'
+ht-degree: 77%
 
 ---
 
@@ -18,15 +18,17 @@ In Cloud Manager è possibile aggiungere un nome di dominio personalizzato da du
 
 >[!NOTE]
 >
->Per poter aggiungere un nome di dominio personalizzato in Cloud Manager, l’utente deve avere il ruolo **Proprietario business** o **Responsabile dell’implementazione** e utilizzare la rete CDN Fastly.
+>Un utente deve disporre di **Proprietario business** o **Responsabile dell’implementazione** per aggiungere un nome di dominio personalizzato in Cloud Manager, è necessario utilizzare la rete CDN Fastly.
 
 ## Aggiunta di un nome di dominio personalizzato dalla pagina Impostazioni dominio {#adding-cdn-settings}
 
 Quando si aggiunge un nome di dominio personalizzato, il dominio viene gestito utilizzando il certificato valido più specifico. Se più certificati hanno lo stesso dominio, viene scelto quello aggiornato più di recente. L’Adobe consiglia di gestire i certificati in modo che non vi siano domini sovrapposti.
 
-Per aggiungere un nome di dominio personalizzato dalla pagina **Impostazioni dominio**, segui la procedura riportata di seguito. Questi passaggi sono basati su Fastly. Se utilizzi una rete CDN diversa, devi configurare il dominio con la rete CDN che hai scelto di utilizzare.
+Per aggiungere un nome di dominio personalizzato dalla sezione **Impostazioni dominio** pagina. Questi passaggi sono basati su Fastly. Se utilizzi una rete CDN diversa, devi configurare il dominio con la rete CDN che hai scelto di utilizzare.
 
-1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
+
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , selezionare il programma.
 
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 

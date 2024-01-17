@@ -2,9 +2,9 @@
 title: Distribuzione del codice
 description: Scopri come distribuire il codice con le pipeline di Cloud Manager in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1197'
 ht-degree: 80%
 
 ---
@@ -31,7 +31,7 @@ Dopo aver [configurato la pipeline di produzione](/help/implementing/cloud-manag
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Fai clic sul programma per il quale desideri distribuire il codice.
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** tocca o fai clic sul programma per il quale desideri distribuire il codice.
 
 1. Per avviare il processo di distribuzione, dall’invito all’azione presente nella schermata **Panoramica**, fai clic su **Distribuisci**.
 

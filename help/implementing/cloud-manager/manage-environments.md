@@ -2,10 +2,10 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '2607'
-ht-degree: 81%
+source-wordcount: '2614'
+ht-degree: 80%
 
 ---
 
@@ -41,9 +41,9 @@ Per aggiungere o modificare un ambiente, un utente deve essere membro di **Propr
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Fai clic sul programma al quale desideri aggiungere un ambiente.
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , tocca o fai clic sul programma per il quale desideri aggiungere un ambiente.
 
-1. Per aggiungere un ambiente, dalla pagina **Panoramica programma**, accedi alla scheda **Ambienti** e fai clic su **Aggiungi ambiente**.
+1. Per aggiungere un ambiente, dalla pagina **[Panoramica programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)**, accedi alla scheda **Ambienti** e fai clic su **Aggiungi ambiente**.
 
    ![Scheda Ambienti](assets/no-environments.png)
 

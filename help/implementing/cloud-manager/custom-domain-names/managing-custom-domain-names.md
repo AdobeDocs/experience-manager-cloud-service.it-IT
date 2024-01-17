@@ -2,10 +2,10 @@
 title: Gestione dei nomi di dominio personalizzati
 description: Scopri come visualizzare, aggiornare, sostituire ed eliminare i nomi di dominio personalizzati con Cloud Manager.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 83%
+source-wordcount: '339'
+ht-degree: 81%
 
 ---
 
@@ -17,7 +17,9 @@ Cloud Manager consente di visualizzare, aggiornare, sostituire ed eliminare i no
 
 Visualizza i dettagli di qualsiasi nome di dominio personalizzato tramite il menu **Visualizza e aggiorna**.
 
-1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
+
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , selezionare il programma.
 
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 

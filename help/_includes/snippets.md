@@ -1,8 +1,8 @@
 ---
-source-git-commit: 6a370269317621f09f0dcdc7f701d7c8a4891ea4
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 80%
+source-wordcount: '212'
+ht-degree: 87%
 
 ---
 # Snippet {#snippets}
@@ -14,10 +14,6 @@ ht-degree: 80%
 ## Authoring per Edge Delivery Services {#edge-delivery-authoring}
 
 [!BADGE Per creare contenuti AEM per Edge Delivery Services, fai clic qui.]{type=Positive url="/help/edge/overview.md" tooltip="Authoring di contenuti AEM per Edge Delivery Services"}
-
-## Versione limitata della configurazione WAF {#waf-limited-release}
-
-[!BADGE La protezione WAF-DDOS sarà disponibile entro la fine del 2023.]{type=Caution tooltip="La protezione WAF-DDOS sarà disponibile entro la fine del 2023."}
 
 ## Stato editor universale {#universal-editor-status}
 

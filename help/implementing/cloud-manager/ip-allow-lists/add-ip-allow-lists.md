@@ -2,10 +2,10 @@
 title: Aggiunta degli elenchi IP consentiti
 description: Scopri come aggiungere un elenco IP consentiti personalizzato con Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 73%
+source-wordcount: '198'
+ht-degree: 69%
 
 ---
 
@@ -16,7 +16,9 @@ Scopri come aggiungere un elenco IP consentiti personalizzato con Cloud Manager.
 
 Per aggiungere un elenco IP consentiti, l’utente con ruolo di **Proprietario business** o **Responsabile della distribuzione** può seguire la procedura riportata di seguito.
 
-1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
+
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , selezionare il programma.
 
 1. Dalla sezione **Panoramica** , passare alla pagina **Ambienti** schermo.
 

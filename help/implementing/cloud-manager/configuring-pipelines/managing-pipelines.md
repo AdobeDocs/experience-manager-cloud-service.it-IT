@@ -3,9 +3,9 @@ title: Gestione delle pipeline
 description: Scopri come gestire, modificare, eseguire ed eliminare le pipeline esistenti.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '934'
 ht-degree: 64%
 
 ---
@@ -39,7 +39,9 @@ Nella parte inferiore dell’elenco delle pipeline sono disponibili le opzioni g
 
 La finestra **Pipeline** mostra un elenco completo di tutte le pipeline per il programma selezionato. Questa funzione è utile in quanto presenta informazioni più complete rispetto a quelle disponibili nella [Scheda pipeline.](#pipeline-card)
 
-1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
+
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , selezionare il programma.
 
 1. Dalla sezione **Panoramica del programma** , seleziona la **Pipeline** per passare alla scheda **Pipeline** finestra.
 

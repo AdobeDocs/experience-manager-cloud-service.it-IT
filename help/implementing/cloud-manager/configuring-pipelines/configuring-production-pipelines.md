@@ -3,10 +3,10 @@ title: Configurazione delle pipeline di produzione
 description: Scopri come configurare le pipeline di produzione per generare e distribuire il codice negli ambienti di produzione.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 77%
+source-wordcount: '1418'
+ht-degree: 72%
 
 ---
 
@@ -35,7 +35,9 @@ Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza
 >
 >Prima di configurare una pipeline front-end, consulta la sezione [Percorso per la creazione rapida dei siti di AEM](/help/journey-sites/quick-site/overview.md) per una guida end-to-end all’intuitivo strumento di AEM per la creazione rapida dei siti. Questo percorso aiuta a semplificare lo sviluppo front-end del sito AEM e consente di personalizzarlo rapidamente senza alcuna conoscenza del back-end di AEM.
 
-1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata
+
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , selezionare il programma.
 
 1. Accedi a **Pipeline** scheda da **Panoramica del programma** pagina e fai clic su **Aggiungi** per selezionare **Aggiungi pipeline di produzione**.
 
@@ -67,7 +69,7 @@ I passaggi per completare la creazione della pipeline di produzione variano a se
 
 ### Codice full stack {#full-stack-code}
 
-Una pipeline del codice full stack distribuisce simultaneamente le build del codice back-end e front-end contenenti una o più applicazioni server di AEM con la configurazione HTTPD/Dispatcher.
+Una pipeline del codice full stack distribuisce simultaneamente le build del codice back-end e front-end contenenti una o più applicazioni server AEM con la configurazione HTTPD/Dispatcher.
 
 >[!NOTE]
 >
@@ -156,7 +158,7 @@ I passaggi per completare la creazione della pipeline di distribuzione di produz
       * Immetti i primi caratteri del nome del ramo: la funzione di completamento automatico di questo campo. trova i rami corrispondenti che puoi selezionare.
    * **Posizione codice**: definisce il percorso nel ramo dell’archivio selezionato dal quale la pipeline deve recuperare il codice.
    * **Sospendi prima della distribuzione in produzione**: sospende la pipeline prima della distribuzione nell’ambiente di produzione.
-   * **Pianificato**: consente all’utente di abilitare la pianificazione della distribuzione nell’ambiente di produzione. Disponibile solo per le distribuzioni mirate a livello web.
+   * **Pianificato** - Questa opzione consente all’utente di abilitare la pianificazione della distribuzione nell’ambiente di produzione. Disponibile solo per le distribuzioni mirate a livello web.
 
    ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
