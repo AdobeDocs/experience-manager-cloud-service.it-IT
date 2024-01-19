@@ -1,8 +1,8 @@
 ---
-source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
+source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 87%
+source-wordcount: '264'
+ht-degree: 76%
 
 ---
 # Snippet {#snippets}
@@ -43,5 +43,16 @@ ht-degree: 87%
 * [Inviare dati del modulo adattivo al flusso di lavoro di AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Utilizzare il portale dei moduli per elencare moduli adattivi di AEM su un sito web di AEM](/help/forms/configure-forms-portal.md)
 
+## Azioni di invio modulo adattivo {#af-submit-action}
 
-
+* [Invia e-mail](/help/forms/configure-submit-action-send-email.md)
+* [Invia a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Invia usando il modello dati modulo](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [Invia ad Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Invia all’endpoint REST](/help/forms/configure-submit-action-restpoint.md)
+* [Invia a OneDrive](/help/forms/configure-submit-action-onedrive.md)
+* [Richiama un flusso di lavoro AEM](/help/forms/configure-submit-action-workflow.md)
+* [Invia a Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+* [Invia a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Collegare il modulo adattivo all’applicazione Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Connettere un modulo adattivo a Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)

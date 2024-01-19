@@ -5,10 +5,10 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 4%
+source-wordcount: '482'
+ht-degree: 3%
 
 ---
 
@@ -24,6 +24,8 @@ Puoi utilizzare le credenziali client OAuth 2.0 per integrare AEM Forms con l’
 ![Flusso di lavoro durante l’impostazione della comunicazione tra l’applicazione AEM Forms e Salesforce](/help/forms/assets/salesforce-workflow.png)
 
 AEM Forms scambia le credenziali del client (chiave consumer e segreto consumer), definite nell’applicazione connessa Salesforce, per ottenere un token di accesso.
+
+AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione delle richieste di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md) articolo.
 
 L’utilizzo delle credenziali del client OAuth 2.0 per l’autenticazione rispetto all’autenticazione del flusso del codice di autorizzazione offre diversi vantaggi:
 
@@ -69,6 +71,9 @@ Per collegare il modulo adattivo all’applicazione Salesforce utilizzando le im
 1. Clic **[!UICONTROL Verifica connessione]**.
 1. Se la connessione ha esito positivo, fare clic sul pulsante **[!UICONTROL Crea]** pulsante.
 
-Ora puoi [creare il modello dati del modulo](/help/forms/create-form-data-models.md) per inviare un modulo adattivo all’applicazione Salesforce.
+
+Dopo aver configurato l’applicazione Salesforce, puoi utilizzare la configurazione durante la creazione di modelli di dati del modulo. Per ulteriori informazioni, consulta [Crea modello dati modulo](create-form-data-models.md). [Configurare l’azione di invio Modello dati modulo](/help/forms/using-form-data-model.md) un modulo adattivo per inviare dati alle applicazioni Salesforce.
+
+Per ulteriori informazioni sulla creazione e l’utilizzo del modello dati modulo nei flussi di lavoro aziendali, consulta [Integrazione dei dati](data-integration.md).
 
 

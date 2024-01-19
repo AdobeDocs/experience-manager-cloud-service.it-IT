@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -21,21 +21,23 @@ ht-degree: 0%
 
 Utilizzando Workfront Fusion, ad esempio, puoi creare uno scenario per raccogliere dati con un modulo adattivo, elaborarli e inviarli a un archivio dati per l’archiviazione. Una volta configurato uno scenario, Workfront Fusion esegue automaticamente le attività ogni volta che un utente compila un modulo, aggiornando senza problemi l’archivio dati.
 
+AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione delle richieste di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md)  articolo.
+
 ## Vantaggi dell&#39;utilizzo di Adobe Workfront Fusion{#advatages-of-workfront-fusion}
 
 Alcuni dei vantaggi dell’utilizzo di Adobe Workfront Fusion con AEM Forms:
 
-- Invio di dati acquisiti con Adaptive Forms a uno scenario Workfront Fusion
-- Automatizzare le attività meno soggette a errori.
-- Personalizzazione dei requisiti specifici di un&#39;organizzazione non inclusi direttamente in Workfront.
-- Gestione di logiche semplici e decisioni semplici, ad esempio, istruzioni if/then.
+* Invio di dati acquisiti con Adaptive Forms a uno scenario Workfront Fusion
+* Automatizzare le attività meno soggette a errori.
+* Personalizzazione dei requisiti specifici di un&#39;organizzazione non inclusi direttamente in Workfront.
+* Gestione di logiche semplici e decisioni semplici, ad esempio, istruzioni if/then.
 
 ## Prerequisiti per integrare AEM Forms con Adobe Workfront Fusion {#prerequisites}
 
 I prerequisiti necessari per collegare Workfront Fusion ad AEM Forms sono:
 
-- Un valore valido [Licenza Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-- Un utente AEM con diritto di accesso [Console di sviluppo](https://my.cloudmanager.adobe.com/) a [recuperare le credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+* Un valore valido [Licenza Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Un utente AEM con diritto di accesso [Console di sviluppo](https://my.cloudmanager.adobe.com/) a [recuperare le credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrare AEM Forms con Adobe Workfront Fusion
 
@@ -100,16 +102,16 @@ Per aggiungere una connessione:
    > Mantieni `https://` nel **Endpoint IMS** casella di testo durante l’aggiunta di `imsEndpoint` URL.
 
 1. Specifica i seguenti valori nella **[!UICONTROL Creare una connessione]** finestra di dialogo:
-   - Specifica **ID client** con valore di **clientId** dalle credenziali del servizio nella Console sviluppatori.
-   - Specifica **Segreto client** con valore di **clientSecret** dalle credenziali del servizio nella Console sviluppatori.
-   - Specifica **ID account tecnico**  con valore di **id** dalle credenziali del servizio nella Console sviluppatori.
-   - Specifica **ID organizzazione**  con valore di **org** dalle credenziali del servizio nella Console sviluppatori.
-   - **Meta ambiti**  con valore di **metascopi** dalle credenziali del servizio nella Console sviluppatori.
-   - **Chiavi private**  con valore di **privateKey** dalle credenziali del servizio nella Console sviluppatori.
+   * Specifica **ID client** con valore di **clientId** dalle credenziali del servizio nella Console sviluppatori.
+   * Specifica **Segreto client** con valore di **clientSecret** dalle credenziali del servizio nella Console sviluppatori.
+   * Specifica **ID account tecnico**  con valore di **id** dalle credenziali del servizio nella Console sviluppatori.
+   * Specifica **ID organizzazione**  con valore di **org** dalle credenziali del servizio nella Console sviluppatori.
+   * **Meta ambiti**  con valore di **metascopi** dalle credenziali del servizio nella Console sviluppatori.
+   * **Chiavi private**  con valore di **privateKey** dalle credenziali del servizio nella Console sviluppatori.
 
    >[!NOTE]
    >
-   >- Per **Chiave privata**, rimuovere `\r\n` dal relativo valore.
+   >* Per **Chiave privata**, rimuovere `\r\n` dal relativo valore.
    >  Ad esempio, se il valore della chiave privata è:
    >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`, quindi dopo aver rimosso `\r\n` dalla chiave privata, la chiave avrà l’aspetto seguente, con entrambi i valori visualizzati in una riga separata:
    >
@@ -117,7 +119,7 @@ Per aggiungere una connessione:
    >
    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
    > 
-   >- Puoi anche recuperare una chiave privata o un certificato dal file selezionando la **Extract** pulsante.
+   >* Puoi anche recuperare una chiave privata o un certificato dal file selezionando la **Extract** pulsante.
 
 1. Fai clic su **Continua**.
 
@@ -144,8 +146,8 @@ Quando fai clic sul pulsante di attivazione/disattivazione, lo scenario Workfron
 ### 2. Configurare l’azione di invio di un modulo adattivo per Workfront Fusion
 
 È possibile configurare l’azione di invio per Workfont Fusion per:
-- [Nuovo Forms adattivo](#new-af-submit-action)
-- [Moduli adattivi esistenti](#existing-af-submit-action)
+* [Nuovo Forms adattivo](#new-af-submit-action)
+* [Moduli adattivi esistenti](#existing-af-submit-action)
 
 #### Configurare l’azione di invio del nuovo modulo adattivo per Workfront Fusion {#new-af-submit-action}
 
@@ -187,7 +189,11 @@ Per configurare l’azione di invio del modulo adattivo esistente per Workfront 
 
 ## Best practice {#best-practices}
 
-- Si consiglia di scegliere con attenzione il nome del webhook, in quanto non è possibile ottenere il nome dello scenario nell’istanza dell’AEM. Nel caso in cui modificassi il nome del webhook in futuro, questo non verrà più visualizzato nell’elenco a discesa delle azioni di invio di AEM Forms.
-- Uno scenario può avere più collegamenti a un webhook, ma alla volta è attivo un solo collegamento a un webhook. Si consiglia di eliminare il webhook non collegato, in modo che non venga visualizzato nell’elenco a discesa delle azioni di invio di AEM Forms.
+* Si consiglia di scegliere con attenzione il nome del webhook, in quanto non è possibile ottenere il nome dello scenario nell’istanza dell’AEM. Nel caso in cui modificassi il nome del webhook in futuro, questo non verrà più visualizzato nell’elenco a discesa delle azioni di invio di AEM Forms.
+* Uno scenario può avere più collegamenti a un webhook, ma alla volta è attivo un solo collegamento a un webhook. Si consiglia di eliminare il webhook non collegato, in modo che non venga visualizzato nell’elenco a discesa delle azioni di invio di AEM Forms.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
+
+## Articoli correlati
+
+{{af-submit-action}}

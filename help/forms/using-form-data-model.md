@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1288'
 ht-degree: 2%
 
 ---
@@ -120,11 +120,25 @@ Edit Properties dialog for an interactive communication-->
 
 Quando un utente invia un modulo basato su un modello dati del modulo, è possibile configurare il modulo in modo che scriva i dati inviati per un oggetto modello dati nelle relative origini dati. Per ottenere questo caso d’uso, [!DNL Experience Manager Forms] fornire [Azione di invio modello dati modulo](configuring-submit-actions.md), disponibile solo come standard per Adaptive Forms basato su un modello di dati per moduli. Scrive i dati inviati per un oggetto modello dati nella relativa origine dati.
 
-Per configurare l’azione di invio Modello dati modulo, apri le proprietà Contenitore modulo adattivo e seleziona **[!UICONTROL Invia utilizzando il modello dati modulo]** dal menu a discesa Azione di invio nel pannello a soffietto Invio. Quindi, sfoglia e seleziona un oggetto modello dati dal menu **[!UICONTROL Nome dell’oggetto modello dati da inviare]** a discesa. Salva le proprietà.
+Per configurare l’azione di invio Modello dati modulo:
 
-All’invio del modulo, i dati per l’oggetto modello dati configurato vengono scritti nella rispettiva origine dati.
+1. Apri il browser Contenuto e seleziona la **[!UICONTROL Contenitore guida]** componente del modulo adattivo.
+1. Fai clic sulle proprietà Contenitore guida ![Proprietà guida](/help/forms/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Fai clic su  **[!UICONTROL Invio]** scheda.
+1. Dalla sezione **[!UICONTROL Azione di invio]** elenco a discesa, seleziona **[!UICONTROL Invia utilizzando il modello dati modulo]**.
+
+   ![Configurazione azione](/help/forms/assets/configure-submit-action-invoke-fdm.png)
+
+1. Specifica la **[!UICONTROL Modello dati da inviare]**.
+1. Clic **[!UICONTROL Fine]**
+
+All’invio del modulo, i dati per l’oggetto modello dati configurato vengono scritti nella rispettiva origine dati. È inoltre possibile inviare un allegato del modulo all&#39;origine dati utilizzando un modello dati modulo e un documento di record (DoR). Per informazioni sul modello dati del modulo, consulta [[!DNL AEM Forms] Integrazione dei dati](data-integration.md).
 
 <!--![data-submission](assets/data-submission.png)-->
+
+>[!NOTE]
+>
+> AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione delle richieste di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md)  articolo.
 
 È inoltre possibile inviare gli allegati del modulo a un&#39;origine dati utilizzando la proprietà dell&#39;oggetto modello dati binario. Per inviare allegati a un&#39;origine dati JDBC, effettuare le seguenti operazioni:
 

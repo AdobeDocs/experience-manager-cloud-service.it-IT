@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1000'
 ht-degree: 2%
 
 ---
@@ -35,6 +35,9 @@ ht-degree: 2%
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Il Cloud Service OData di MS Dynamics (servizio OData) è disponibile con tutte le modalità di esecuzione. Per ulteriori informazioni sulla configurazione delle modalità di esecuzione per un [!DNL Experience Manager] istanza, vedi [Modalità di esecuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=it#runmodes).
+
+AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione delle richieste di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md)  articolo.
+
 
 ## Prerequisiti {#prerequisites}
 
@@ -70,7 +73,7 @@ Per impostare l&#39;URL di risposta per i messaggi registrati, procedere come se
 
 >[!NOTE]
 >
->Utilizzare questa procedura solo durante l&#39;integrazione [!DNL Experience Manager Forms] con on-premise [!DNL Microsoft Dynamics] server.
+> Utilizzare questa procedura solo durante l&#39;integrazione [!DNL Experience Manager Forms] con on-premise [!DNL Microsoft Dynamics] server.
 
 1. Configura [!DNL Microsoft Dynamics] istanza locale di IFD come descritto in [Configura IFD per [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx).
 1. Eseguire i comandi seguenti utilizzando Windows PowerShell per configurare le impostazioni delle attestazioni su IFD abilitato [!DNL Microsoft Dynamics]:
@@ -158,14 +161,16 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-Dopo aver configurato il servizio cloud MS Dynamics OData Cloud Ser Form Data Model (ce), puoi utilizzare il servizio durante la creazione di modelli di dati del modulo. Per ulteriori informazioni, consulta [Crea modello dati modulo](create-form-data-models.md).
+Dopo aver configurato il servizio cloud MS Dynamics OData, puoi utilizzarlo durante la creazione di modelli di dati del modulo. Per ulteriori informazioni, consulta [Crea modello dati modulo](create-form-data-models.md).
 
-Successivamente, puoi creare un modulo adattivo basato sul modello di dati del modulo e utilizzarlo in vari casi di utilizzo di moduli adattivi, ad esempio:
+Successivamente, puoi creare un modello di dati modulo basato su modulo adattivo e utilizzarlo in vari casi di utilizzo di moduli adattivi, ad esempio:
 
 * Precompilare un modulo adattivo interrogando le informazioni [!DNL Microsoft Dynamics] entità e servizi
 * Richiama [!DNL Microsoft Dynamics] operazioni server definite in un modello di dati modulo utilizzando le regole del modulo adattivo
 * Scrivi i dati modulo inviati in [!DNL Microsoft Dynamics] entità
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
+
+È possibile [configurare l’azione di invio Modello dati modulo](/help/forms/using-form-data-model.md) per un modulo adattivo per inviare dati a Microsoft Dynamics OData.
 
 Per ulteriori informazioni sulla creazione e l’utilizzo del modello dati modulo nei flussi di lavoro aziendali, consulta [Integrazione dei dati](data-integration.md).

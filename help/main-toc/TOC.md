@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 104dfd255185816983674026a84337624a851d9a
+source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 96%
+source-wordcount: '4600'
+ht-degree: 95%
 
 ---
 
@@ -609,6 +609,12 @@ ht-degree: 96%
             + [Configurazione della pagina di reindirizzamento o del messaggio di ringraziamento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Creare moduli con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md)
             + [Configurare l’azione di invio per un modulo adattivo](/help/forms/configure-submit-actions-core-components.md)
+            + [Inviare un modulo adattivo all’archiviazione BLOB di Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Inviare un modulo adattivo a Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
+            + [Configurare l’archiviazione SharePoint per un modulo adattivo](/help/forms/configure-submit-action-sharepoint.md)
+            + [Integrare il modulo adattivo AEM con il flusso di lavoro AEM](/help/forms/configure-submit-action-workflow.md)
+            + [Configurare l’azione di invio Invia a endpoint REST per Forms adattivo](/help/forms/configure-submit-action-restpoint.md)
+            + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
             + [Utilizzare il servizio reCAPTCHA di Google in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Aggiungere un handler degli errori personalizzato in un modulo adattivo](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/supporting-new-language-localization-core-components.md)
