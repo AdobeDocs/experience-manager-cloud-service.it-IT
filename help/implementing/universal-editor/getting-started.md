@@ -2,10 +2,10 @@
 title: Guida introduttiva all’editor universale in AEM
 description: Scopri come accedere all’editor universale e come iniziare a preparare la tua prima app AEM per utilizzarla.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 76%
+source-wordcount: '903'
+ht-degree: 71%
 
 ---
 
@@ -35,7 +35,7 @@ Questo documento ti guiderà attraverso questi passaggi.
 
 ## Richiedi l’accesso all’editor universale {#request-access}
 
-Innanzitutto, è necessario richiedere l’accesso all’editor universale. Vai all’indirizzo [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), accedi e verifica se hai accesso all’editor universale.
+Innanzitutto, è necessario richiedere l’accesso all’editor universale. Apri [&quot;https://experience.adobe.com/#/aem/editor&quot;](https://experience.adobe.com/#/aem/editor), accedi e verifica se hai accesso all’Editor universale.
 
 Se non hai accesso, puoi richiederlo tramite un modulo collegato sulla stessa pagina.
 
@@ -59,7 +59,7 @@ import "@adobe/universal-editor-cors";
 
 ### Alternativa per le app non React {#alternative}
 
-Se non stai implementando un’app React e/o hai bisogno di eseguire il rendering lato server, un metodo alternativo consiste nell’includere quanto segue nel corpo del documento.
+Se non implementi un’app React e/o non richiedi il rendering lato server, un metodo alternativo consiste nell’includere quanto segue nel corpo del documento.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -124,10 +124,10 @@ Le connessioni utilizzate nell’app vengono memorizzate come `<meta>` tag nella
 
 L’identificatore `urn:adobe:aue:system` rappresenta la connessione per Adobe Universal Editor.
 
-Negli identificatori `itemid` verrà utilizzato il prefisso `urn` per accorciare l’identificatore.
+Negli identificatori `data-aue-resource` verrà utilizzato il prefisso `urn` per accorciare l’identificatore.
 
 ```html
-itemid="urn:<referenceName>:<resource>"
+data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
 * `<referenceName>`: questo è il riferimento menzionato nel tag `<meta>`. Ad esempio, `aemconnection`.

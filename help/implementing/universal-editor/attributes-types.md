@@ -2,7 +2,7 @@
 title: Attributi e tipi di articolo
 description: Scopri gli attributi di dati e i tipi di elementi richiesti dall’editor universale.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 76%
@@ -28,13 +28,13 @@ Affinché un’app possa essere modificata dall’editor universale, deve essere
 
 | Proprietà dati | Descrizione |
 |---|---|
-| `itemid` | Per l’URN della risorsa, consulta la sezione [Instrumenta la pagina del documento Guida introduttiva all’editor universale in AEM](getting-started.md#instrument-thepage) |
-| `itemprop` | Per l’attributo della risorsa, consulta la sezione [Instrumenta la pagina del documento Guida introduttiva all’editor universale in AEM](getting-started.md#instrument-thepage) |
-| `itemtype` | Tipo dell’elemento modificabile (ad esempio testo, immagine e riferimento) |
-| `data-editor-itemfilter` | Definisce quali riferimenti possono essere utilizzati |
-| `data-editor-itemlabel` | Definisce un’etichetta personalizzata per un elemento selezionabile visualizzato nell’editor. <br>Nel caso in cui`itemmodel` sia impostata, l’etichetta viene recuperata tramite il modello. |
-| `data-editor-itemmodel` | Definisce un modello che viene utilizzato per la modifica basata su modulo nella barra delle proprietà |
-| `data-editor-behavior` | Definisce il comportamento di una strumentazione, ad esempio un testo o un&#39;immagine isolati possono simulare un componente per renderlo spostabile o eliminabile |
+| `data-aue-resource` | Per l’URN della risorsa, consulta la sezione [Instrumenta la pagina del documento Guida introduttiva all’editor universale in AEM](getting-started.md#instrument-thepage) |
+| `data-aue-prop` | Per l’attributo della risorsa, consulta la sezione [Instrumenta la pagina del documento Guida introduttiva all’editor universale in AEM](getting-started.md#instrument-thepage) |
+| `data-aue-type` | Tipo dell’elemento modificabile (ad esempio testo, immagine e riferimento) |
+| `data-aue-filter` | Definisce quali riferimenti possono essere utilizzati |
+| `data-aue-label` | Definisce un’etichetta personalizzata per un elemento selezionabile visualizzato nell’editor. <br>Nel caso in cui`itemmodel` sia impostata, l’etichetta viene recuperata tramite il modello. |
+| `data-aue-model` | Definisce un modello che viene utilizzato per la modifica basata su modulo nella barra delle proprietà |
+| `data-aue-behavior` | Definisce il comportamento di una strumentazione, ad esempio un testo o un&#39;immagine isolati possono simulare un componente per renderlo spostabile o eliminabile |
 
 ## Tipi di elementi {#item-types}
 
@@ -47,14 +47,14 @@ Affinché un’app possa essere modificata dall’editor universale, deve essere
 | `component` | L’elemento modificabile è un componente. Non aggiunge ulteriori funzionalità. È necessario per indicare parti mobili/eliminabili del DOM e per aprire la barra delle proprietà e i relativi campi | Obbligatorio | n/d | n/d | Facoltativo | Facoltativo | n/d |
 | `reference` | L’elemento modificabile è un riferimento, ad esempio Frammento di contenuto, Frammento di esperienza o Prodotto | Dipende <br>vedi sotto | Dipende <br>vedi sotto | Facoltativo<br>elenco di criteri di filtro per frammento di contenuto, prodotto o frammento di esperienza trasmessi al selettore di riferimento | Facoltativo | Facoltativo | n/d |
 
-A seconda del caso d’uso `itemprop` o `itemid` può essere richiesto o meno. Ad esempio:
+A seconda del caso d’uso `data-aue-prop` o `data-aue-resource` può essere richiesto o meno. Ad esempio:
 
-* `itemid` è richiesto se esegui una query sui frammenti di contenuto tramite GraphQL e desideri rendere l’elenco modificabile nel contesto.
-* `itemprop` è richiesto se un componente esegue il rendering del contenuto di un frammento di contenuto a cui si fa riferimento e si desidera aggiornare il riferimento all’interno del componente.
+* `data-aue-resource` è richiesto se esegui una query sui frammenti di contenuto tramite GraphQL e desideri rendere l’elenco modificabile nel contesto.
+* `data-aue-prop` è richiesto se un componente esegue il rendering del contenuto di un frammento di contenuto a cui si fa riferimento e si desidera aggiornare il riferimento all’interno del componente.
 
 ## Comportamenti {#behaviors}
 
-| `data-editor-behavior` | Descrizione |
+| `data-aue-behavior` | Descrizione |
 |---|---|
 | `component` | Utilizzato per consentire l’utilizzo di componenti di testo, testo RTF e mimica multimediale autonomi in modo che possano essere spostati ed eliminabili nella pagina |
 | `container` | Utilizzato per consentire ai contenitori di essere trattati come componenti propri in modo che siano spostabili ed eliminabili sulla pagina |
