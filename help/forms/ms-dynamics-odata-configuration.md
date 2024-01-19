@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
+source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
@@ -174,3 +174,7 @@ Successivamente, puoi creare un modello di dati modulo basato su modulo adattivo
 È possibile [configurare l’azione di invio Modello dati modulo](/help/forms/using-form-data-model.md) per un modulo adattivo per inviare dati a Microsoft Dynamics OData.
 
 Per ulteriori informazioni sulla creazione e l’utilizzo del modello dati modulo nei flussi di lavoro aziendali, consulta [Integrazione dei dati](data-integration.md).
+
+## Articoli correlati
+
+{{af-submit-action}}

@@ -5,9 +5,9 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
+source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '484'
 ht-degree: 3%
 
 ---
@@ -75,5 +75,9 @@ Per collegare il modulo adattivo all’applicazione Salesforce utilizzando le im
 Dopo aver configurato l’applicazione Salesforce, puoi utilizzare la configurazione durante la creazione di modelli di dati del modulo. Per ulteriori informazioni, consulta [Crea modello dati modulo](create-form-data-models.md). [Configurare l’azione di invio Modello dati modulo](/help/forms/using-form-data-model.md) un modulo adattivo per inviare dati alle applicazioni Salesforce.
 
 Per ulteriori informazioni sulla creazione e l’utilizzo del modello dati modulo nei flussi di lavoro aziendali, consulta [Integrazione dei dati](data-integration.md).
+
+## Articoli correlati
+
+{{af-submit-action}}
 
 
