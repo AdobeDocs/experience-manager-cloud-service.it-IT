@@ -2,9 +2,9 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare la funzione di registrazione per AEM as a Cloud Service per configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
+source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '2776'
 ht-degree: 8%
 
 ---
@@ -611,7 +611,7 @@ I clienti con account Splunk possono richiedere tramite ticket di assistenza cli
 
 La larghezza di banda di rete associata ai registri inviati a Splunk è considerata parte dell&#39;utilizzo di I/O di rete del cliente.
 
-L’inoltro Splunk non supporta ancora i registri CDN.
+I registri CDN verranno inoltrati a Splunk per richieste di nuovi ticket di supporto; i clienti che hanno già abilitato l’inoltro Splunk potranno aggiungere i registri CDN in futuro.
 
 ### Abilitazione dell’inoltro Splunk {#enabling-splunk-forwarding}
 
