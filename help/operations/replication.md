@@ -2,7 +2,7 @@
 title: Replica
 description: Scopri la distribuzione e la risoluzione dei problemi di replica in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 39%
@@ -89,7 +89,7 @@ In alternativa, puoi creare un modello di flusso di lavoro che utilizza `Publish
 
 * `includeChildren` (valore booleano, predefinito: `false`). Il valore `false` significa che è pubblicata solo la traccia oraria; `true` significa che vengono pubblicati anche gli elementi secondari.
 * `replicateAsParticipant` (valore booleano, predefinito: `false`). Se configurata come `true`, la replica utilizza `userid` dell’entità principale che ha eseguito il Passaggio partecipante.
-* `enableVersion` (valore booleano, predefinito: `true`). Questo parametro determina se viene creata una nuova versione al momento della replica.
+* `enableVersion` (valore booleano, predefinito: `false`). Questo parametro determina se viene creata una nuova versione al momento della replica.
 * `agentId` (valore stringa, “default” indica che vengono utilizzati solo gli agenti per la pubblicazione). Si consiglia di impostare un valore esplicito per agentId; ad esempio: publish. Impostazione dell&#39;agente su `preview` pubblica nel servizio di anteprima.
 * `filters` (valore stringa, &quot;default&quot; significa che tutti i percorsi sono attivati). I valori disponibili sono:
    * `onlyActivated` : attiva solo le pagine che sono state (già) attivate. Agisce come una forma di riattivazione.
