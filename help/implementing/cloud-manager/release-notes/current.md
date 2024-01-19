@@ -3,10 +3,10 @@ title: Note sulla versione 2024.1.0 di Cloud Manager in Adobe Experience Manager
 description: Queste sono le note sulla versione 2024.1.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a00eb97859f679ade3a4a6d89a427735451ebd70
+source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 24%
+source-wordcount: '673'
+ht-degree: 20%
 
 ---
 
@@ -21,7 +21,12 @@ Questa pagina illustra le note sulla versione 2024.1.0 di Cloud Manager in AEM a
 
 ## Data di pubblicazione {#release-date}
 
-La data di pubblicazione di Cloud Manager versione 2024.1.0 in AEM as a Cloud Service è il 18 gennaio 2024.
+La data di pubblicazione di Cloud Manager versione 2024.1.0 in AEM as a Cloud Service è il 18 gennaio 2024. La prossima versione è prevista per il 16 febbraio 2024.
+
+## Novità {#what-is-new}
+
+* Cloud Manager ora convalida le date di scadenza non solo per il [certificato,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) ma anche per i certificati intermedi.
+* CDN [registri](/help/implementing/cloud-manager/manage-logs.md) vengono ora restituiti in formato compresso.
 
 ## Programma per i primi utilizzatori {#early-adoption}
 
@@ -61,3 +66,8 @@ Se ti interessa testare questa nuova funzione e condividere i tuoi commenti, inv
 La dashboard utilizza Google Lighthouse, uno strumento open-source automatizzato per migliorare la qualità delle app web. Puoi eseguirla su qualsiasi pagina web, pubblica o che richiede l’autenticazione. Sono disponibili controlli di prestazioni, accessibilità, applicazioni web progressive, SEO e altro ancora.
 
 Ti interessa testare il nuovo cruscotto? Per iniziare, invia un’e-mail a `aem-lighthouse-pilot@adobe.com` dall’e-mail associata al tuo Adobe ID.
+
+## Correzioni di bug {#bug-fixes}
+
+* È stato corretto un errore a causa del quale le pipeline di configurazione non riuscivano nella fase di build con un messaggio di errore non chiaro se il percorso dei file di configurazione non era impostato correttamente. Il messaggio di errore è ora chiaro e indica che l’utente deve verificare che il percorso dei file di configurazione sia corretto.
+* Quando un passaggio della build termina con lo stato `FAILED` a causa di un `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, ora è descritto correttamente come un errore dovuto a conflitti di unione con il ramo di destinazione.
