@@ -3,9 +3,9 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: Scopri le nozioni di base sul caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
+source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2894'
 ht-degree: 1%
 
 ---
@@ -223,6 +223,10 @@ Ora, le immagini nell’archiviazione BLOB contrassegnate come private non posso
         Header set Age 0
      </LocationMatch>
      ```
+
+### Analisi del rapporto di hit della cache CDN {#analyze-chr}
+
+Consulta la [tutorial sull’analisi del rapporto di hit nella cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) per informazioni sul download dei registri CDN e sull’analisi del rapporto tra i caratteri della cache del sito, utilizza una dashboard.
 
 ### Comportamento richiesta HEAD {#request-behavior}
 
