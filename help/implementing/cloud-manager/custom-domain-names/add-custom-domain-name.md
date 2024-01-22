@@ -2,12 +2,13 @@
 title: Aggiunta di un nome di dominio personalizzato
 description: Scopri come aggiungere un nome di dominio personalizzato con Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 77%
+source-wordcount: '680'
+ht-degree: 71%
 
 ---
+
 
 # Aggiunta di un nome di dominio personalizzato {#adding-cdn}
 
@@ -60,15 +61,19 @@ La distribuzione CDN richiede un certificato SSL valido e una verifica TXT corre
 
 Per ulteriori informazioni sui vari stati e su come risolvere i potenziali problemi, consulta il documento [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
+>[!TIP]
+>
+>Rivedi il seguente articolo sulla necessità di [Aggiungi un CNAME o un record](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) per evitare di raddoppiare gli sforzi quando si aggiungono record DNS al dominio personalizzato. La voce TXT e il CNAME o un record possono essere impostati contemporaneamente sul server DNS che governa.
+
+>[!TIP]
+>
+>Per ulteriori informazioni sui record TXT, consulta [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
+
 >[!NOTE]
 >
 >L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritardi di propagazione del DNS.
 >
 >Cloud Manager verificherà la proprietà del dominio e aggiornerà lo stato riportato nella tabella Impostazioni dominio. Per ulteriori dettagli, consulta [Verifica dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
-
->[!TIP]
->
->Per ulteriori informazioni sui record TXT, consulta [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
 
 ## Aggiunta di un nome di dominio personalizzato dalla pagina Ambienti {#adding-cdn-environments}
 
