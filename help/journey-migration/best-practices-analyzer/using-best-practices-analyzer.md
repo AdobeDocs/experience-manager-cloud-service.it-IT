@@ -126,8 +126,8 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="Interpretazione del rapporto di Best Practices Analyzer"
 >abstract="Sono disponibili due opzioni per visualizzare gli output del rapporto di BPA: interfaccia utente e CSV. Quando lo strumento Best Practices Analyzer viene eseguito nell’istanza di AEM, il rapporto per l’interfaccia utente viene visualizzato sotto forma di risultati nella finestra dello strumento. Il formato CSV del rapporto include informazioni generate dall’output del rilevatore di pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="Analisi del rapporto di Best Practices Analyzer"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html" text="Categorie del rapporto di Best Practices Analyzer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=it#analysis-report" text="Analisi del rapporto di Best Practices Analyzer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=it" text="Categorie del rapporto di Best Practices Analyzer"
 
 Quando lo strumento Best Practices Analyzer viene eseguito nell’istanza AEM, il rapporto viene visualizzato come risultati nella finestra dello strumento.
 
@@ -144,7 +144,7 @@ Il rapporto si presenta con questo formato:
 A ciascun risultato viene assegnato un livello di importanza per dare un’indicazione approssimativa del grado di priorità dell’intervento richiesto.
 
 >[!NOTE]
->Per ulteriori informazioni su ciascuna categoria di risultati, consulta [Categorie del rilevatore pattern](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>Per ulteriori informazioni su ciascuna categoria di risultati, consulta [Categorie del rilevatore pattern](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=it).
 
 La tabella seguente descrive i livelli di importanza:
 

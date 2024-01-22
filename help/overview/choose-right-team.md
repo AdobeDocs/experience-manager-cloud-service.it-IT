@@ -15,8 +15,8 @@ ht-degree: 97%
 >id="aemcloud_chooseteam"
 >title="Scegli il team giusto"
 >abstract="Assegna la mansione più adatta a ciascuno per favorire il successo dell’implementazione di Adobe Experience Manager."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Allineamento dei KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="Valutazione dei KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=it" text="Allineamento dei KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=it" text="Valutazione dei KPI"
 
 È probabile che nella tua organizzazione diversi dipartimenti possiedano diversi aspetti dell’esperienza digitale. Senza governance, è inevitabile andare incontro a discussioni infinite, lotte interne e confusione.
 
