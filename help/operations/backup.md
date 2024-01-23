@@ -2,10 +2,10 @@
 title: Backup e ripristino in AEM as a Cloud Service
 description: Informazioni su Backup e ripristino in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+source-git-commit: b77ee0697e8f6f4aeaa6651336588f1c5321abd1
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 27%
+source-wordcount: '539'
+ht-degree: 24%
 
 ---
 
@@ -22,7 +22,7 @@ Se la distribuzione di un cliente, ovvero il codice dell&#39;applicazione distri
 
 >[!CAUTION]
 >
->Questa funzione deve essere utilizzata solo in caso di gravi problemi con il codice o il contenuto. I dati recenti tra il momento del backup ripristinato e il momento attuale andranno persi. Anche lo staging verrà ripristinato alla versione precedente.
+>Questa funzione deve essere utilizzata solo in caso di gravi problemi con il codice o il contenuto. I dati recenti tra il momento del backup ripristinato e il momento attuale andranno persi. Anche la gestione temporanea viene ripristinata alla versione precedente. Se i dati recenti vengono conservati, devono essere esportati tramite un pacchetto di contenuti prima del ripristino e reinstallati nell’archivio ripristinato.
 
 ## Guida all’uso {#how-to-use}
 
