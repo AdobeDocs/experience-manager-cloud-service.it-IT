@@ -1,9 +1,9 @@
 ---
 title: Design reattivo
-description: Con il design reattivo, le stesse esperienze possono essere visualizzate in modo efficace su più dispositivi in più orientamenti
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+description: Con il design reattivo, le stesse esperienze possono essere visualizzate in modo efficace su più dispositivi in più orientamenti.
+source-git-commit: c9ee24e7b9f10ebbf9425dff66103e097701c8e4
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Progetta le esperienze in modo che si adattino al riquadro di visualizzazione cl
 
 ![Esempi di progettazione reattiva](assets/responsive-example.png)
 
-Sviluppa applicazioni Adobe Experience Manager (AEM) che generano HTML5 in grado di adattarsi alle dimensioni e agli orientamenti di più finestre. Ad esempio, i seguenti intervalli di larghezze dei riquadri di visualizzazione corrispondono a vari tipi di dispositivi e orientamenti
+Sviluppa applicazioni Adobe Experience Manager (AEM) che generano HTML5 adattabili a più dimensioni e orientamenti di finestre. Ad esempio, i seguenti intervalli di larghezze dei riquadri di visualizzazione corrispondono a vari tipi di dispositivi e orientamenti
 
 * Larghezza massima di 480 pixel (telefono, verticale)
 * Larghezza massima di 767 pixel (telefono, orizzontale)
@@ -68,3 +68,66 @@ Nel file CSS, definisci le query multimediali in base alle proprietà dei dispos
 * Nel file css.txt della cartella Libreria client, ordinare i file CSS di elenco come richiesto nel file CSS assemblato.
 
 Il [Esercitazione WKND](develop-wknd-tutorial.md) utilizza questa strategia per definire gli stili nella progettazione del sito. Il file CSS utilizzato da WKND si trova in `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
+
+### Utilizzo delle query multimediali con le pagine AEM {#using-media-queries-with-aem-pages}
+
+[Progetto di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) utilizzare il [Componente core pagina,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) che include clientlibs tramite il criterio di pagina.
+
+Se il tuo componente pagina non è basato sul componente core pagina, puoi anche includere la cartella della libreria client nello script HTL o JSP. In questo modo si genera e si fa riferimento al file CSS con le query multimediali necessarie per il funzionamento della griglia reattiva.
+
+#### HTL {#htl}
+
+```html
+<sly data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<sly data-sly-call="${clientlib.all @ categories='apps.weretail.all'}"/>
+```
+
+#### JSP {#jsp}
+
+```xml
+<ui:includeClientLib categories="apps.weretail.all"/>
+```
+
+Lo script JSP genera il seguente codice HTML che fa riferimento ai fogli di stile:
+
+```xml
+<link rel="stylesheet" href="/etc/designs/weretail/clientlibs-all.css" type="text/css">
+<link href="/etc/designs/weretail.css" rel="stylesheet" type="text/css">
+```
+
+## Anteprima per dispositivi specifici {#previewing-for-specific-devices}
+
+L’emulatore ti consente di visualizzare in anteprima le pagine in diverse dimensioni di riquadri di visualizzazione, in modo da poter testare il comportamento del design reattivo. Quando modifichi una pagina nella console Sites, puoi toccare o fare clic sul pulsante **Emulatore** per visualizzare l’emulatore.
+
+![Icona dell’emulatore nella barra degli strumenti](assets/emulator-icon.png)
+
+Nella barra degli strumenti dell’emulatore puoi toccare o fare clic sul pulsante **Dispositivi** per visualizzare un menu a discesa in cui selezionare un dispositivo. Quando selezioni un dispositivo, la pagina cambia in base alle dimensioni del riquadro di visualizzazione.
+
+![Barra degli strumenti dell’emulatore](assets/emulator.png)
+
+### Specifica dei gruppi di dispositivi {#specifying-device-groups}
+
+Per specificare i gruppi di dispositivi visualizzati nel **Dispositivi** elenco, aggiungi `cq:deviceGroups` proprietà per il `jcr:content` della pagina del modello del sito. Il valore della proprietà è un array di percorsi ai nodi del gruppo di dispositivi.
+
+Ad esempio, la pagina modello del sito WKND è `/conf/wknd/settings/wcm/template-types/empty-page/structure`. E il `jcr:content` il nodo sotto di esso include la seguente proprietà:
+
+* Nome: `cq:deviceGroups`
+* Tipo: `String[]`
+* Valore: `mobile/groups/responsive`
+
+I nodi del gruppo di dispositivi si trovano in `/etc/mobile/groups` cartella.
+
+## Immagini reattive {#responsive-images}
+
+Le pagine reattive si adattano dinamicamente al dispositivo su cui vengono riprodotte, offrendo un’esperienza migliore per l’utente. Tuttavia, è anche importante che le risorse siano ottimizzate per il punto di interruzione e il dispositivo per ridurre al minimo il tempo di caricamento delle pagine.
+
+[Componente core Immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=it) funzioni come la selezione adattiva delle immagini.
+
+* Per impostazione predefinita, il componente Immagine utilizza [Adaptive Image Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) per consegnare la rappresentazione corretta.
+* [Consegna di immagini ottimizzate per il web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=it) è disponibile anche tramite una semplice casella di controllo nella sua policy, che fornisce risorse di immagini da DAM in formato WebP e può ridurre la dimensione di download di un’immagine di circa il 25% in media.
+
+## Contenitore di layout {#layout-container}
+
+Contenitore di layout AEM consente di implementare in modo efficiente ed efficace il layout dinamico per adattare le dimensioni della pagina al riquadro di visualizzazione client.
+
+Consulta il documento [Configurazione del contenitore di layout e della modalità layout](/help/sites-cloud/administering/responsive-layout.md) per ulteriori informazioni su come funziona il Contenitore di layout e come abilitare i layout reattivi per i contenuti.
