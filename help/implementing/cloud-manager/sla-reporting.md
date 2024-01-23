@@ -2,10 +2,10 @@
 title: Generazione rapporti SLA
 description: Scopri come visualizzare le prestazioni dell’ambiente di produzione AEM relative al contratto del livello di servizio (SLA) sottoscritto.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: f037f47f0b131c87301faf4458658224d1d62a43
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 88%
+source-wordcount: '400'
+ht-degree: 55%
 
 ---
 
@@ -51,3 +51,14 @@ La sezione **Analisi degli eventi** sotto il grafico mostra i problemi relativi 
 Ogni problema presenta un intervallo di tempo, una causa e una serie di commenti.
 
 ![Esempio di analisi degli eventi](assets/sla-reporting-c.png)
+
+## Intervallo aggiornamento {#refresh}
+
+Il reporting SLA fornisce informazioni approfondite sulle prestazioni dell’ambiente di produzione AEM ed è aggiornato, ma non istantaneo. La generazione di rapporti SLA avviene mensilmente e viene generata per i nuovi programmi contrassegnati come Produzione del mese precedente. Non è istantaneo. A causa di questo ritardo, tieni presente quanto segue durante la revisione del rapporto SLA:
+
+* Lo SLA segnalato sarà quello esistente all&#39;inizio del mese, anche se lo SLA è stato modificato durante tale mese.
+* Se all&#39;inizio del mese non esisteva alcun contratto di servizio perché il programma non esisteva, viene applicato lo SLA esistente alla data di creazione del programma.
+
+## Anteprima ambienti {#preview}
+
+L’ambiente di anteprima è uno strumento che consente agli autori dei contenuti di verificare l’esperienza finale del contenuto prima della pubblicazione. Per questo motivo, gli ambienti di anteprima non sono progettati con elevata disponibilità e non dispongono di un contratto di servizio associato.
