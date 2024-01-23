@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: fa57e0438a7570551785375c4e5a57fa38fd2f6f
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 9%
+source-wordcount: '1953'
+ht-degree: 8%
 
 ---
 
@@ -60,18 +60,53 @@ Per questi motivi: [!DNL Assets] offre i mezzi giusti per creare, gestire e scam
 
 ## Tipi di metadati {#types-of-metadata}
 
-I due tipi di metadati di base sono metadati tecnici e metadati descrittivi.
+I metadati sono classificati come metadati tecnici, informativi e amministrativi.
 
-I metadati tecnici sono utili per le applicazioni software che si occupano di risorse digitali e non devono essere conservati manualmente. [!DNL Experience Manager Assets] e altri software determinano automaticamente i metadati tecnici e i metadati possono cambiare quando la risorsa viene modificata. I metadati tecnici disponibili di una risorsa dipendono in larga misura dal tipo di file della risorsa. Alcuni esempi di metadati tecnici sono:
+### Metadati tecnici
 
-* Dimensione di un file.
-* Dimension (altezza e larghezza) di un&#39;immagine.
-* Bitrate di un file audio o video.
-* Risoluzione (livello di dettaglio) di un&#39;immagine.
+I metadati tecnici si concentrano sugli aspetti tecnici delle risorse digitali, fornendo informazioni fondamentali relative a:
 
-I metadati descrittivi riguardano il dominio dell’applicazione, ad esempio l’azienda da cui proviene una risorsa. I metadati descrittivi non possono essere determinati automaticamente. Viene creato manualmente o in modo semi-automatico. Ad esempio, una fotocamera abilitata per il GPS può tracciare automaticamente la latitudine e la longitudine e aggiungere il geotag all&#39;immagine.
+* Dimensione file
+* Formato
+* Risoluzione
+* Dimensioni
+* Metodo colore
 
-Il costo della creazione manuale di informazioni descrittive sui metadati è elevato. Vengono quindi stabiliti standard per facilitare lo scambio di metadati tra sistemi software e organizzazioni. [!DNL Experience Manager Assets] supporta tutti gli standard pertinenti per la gestione dei metadati.
+Questo tipo di metadati aiuta gli utenti a comprendere e utilizzare in modo efficiente le risorse digitali.
+
+### Metadati informativi
+
+I metadati informativi forniscono informazioni descrittive per migliorare la comprensione dei contenuti, facilitando l’individuazione dei contenuti e la ricercabilità. Include parole chiave, didascalie e descrizioni. <br>Ad esempio, quando gestiamo un video in Experience Manager Assets, possiamo includere i seguenti metadati informativi:
+
+* **Parole chiave**: marketing, lancio di prodotti, promozione
+* **Didascalia**: Presentazione di nuovi prodotti con caratteristiche entusiasmanti
+* **Descrizione**: panoramica dettagliata del contenuto video.
+
+### Metadati amministrativi
+
+I metadati amministrativi trattano gli aspetti gestionali delle risorse digitali. Garantisce il controllo degli accessi, la conformità e la gestione del ciclo di vita complessivo delle risorse all’interno del sistema di gestione delle risorse digitali. Include informazioni relative a:
+
+* Proprietà risorsa
+* Diritti di utilizzo
+* Autorizzazioni
+* Altri dettagli amministrativi
+
+Questo tipo di metadati garantisce una gestione efficace delle risorse, il controllo degli accessi e la conformità.
+
+<!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
+
+<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+
+Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
+
+* Size of a file.
+* Dimensions (height and width) of an image.
+* Bit rate of an audio or video file.
+* Resolution (level of detail) of an image.
+
+Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
+
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
 
 ## Metadati e ultima modifica {#last-modification}
 
@@ -164,7 +199,7 @@ Risorse come [!DNL Cloud Service] può generare metadati personalizzati per una 
 
 >[!TIP]
 >
->A una cartella può essere applicato un solo profilo di elaborazione. Per applicare più elaborazioni alle risorse di una cartella, aggiungi ulteriori opzioni a un singolo profilo di elaborazione. Ad esempio, un singolo profilo può generare rappresentazioni, transcodificare le risorse, generare metadati personalizzati e così via. Puoi applicare filtri di tipo MIME a ogni attività in modo che l’attività appropriata venga attivata per il formato di file richiesto.
+>A una cartella è possibile applicare un solo profilo di elaborazione. Per applicare più elaborazioni alle risorse di una cartella, aggiungi ulteriori opzioni a un singolo profilo di elaborazione. Ad esempio, un singolo profilo può generare rappresentazioni, transcodificare le risorse, generare metadati personalizzati e così via. Puoi applicare filtri di tipo MIME a ogni attività in modo che l’attività appropriata venga attivata per il formato di file richiesto.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
