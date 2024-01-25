@@ -1,11 +1,11 @@
 ---
 title: Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
-description: Scopri come effettuare l’authoring e l’amministrazione di con AEM Sites as a Cloud Service e sulle modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service.
+description: Comprendi come scrivere e amministrare AEM Sites as a Cloud Service, nonché conoscere le modifiche significative apportate ad AEM Sites in AEM Cloud Service.
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 85%
+ht-degree: 90%
 
 ---
 
