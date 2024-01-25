@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 517412d3f9d79a35bd1c25bd0eb09c0dee63c9af
+source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
 workflow-type: tm+mt
-source-wordcount: '4904'
+source-wordcount: '4975'
 ht-degree: 6%
 
 ---
@@ -25,12 +25,34 @@ Scopri come gestire e modificare le risorse video in [!DNL Adobe Experience Mana
 
 ## Caricare e visualizzare in anteprima le risorse video {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] genera anteprime per le risorse video con estensione MP4. Puoi visualizzare in anteprima le rappresentazioni in [!DNL Assets] dell&#39;utente.
+Puoi caricare e visualizzare in anteprima le risorse video nel formato supportato in [!DNL Experience Manager Assets].
+<!-- It generates previews for video assets with the extension MP4. -->
 
-1. Nella cartella o nelle sottocartelle delle risorse digitali, individua il percorso in cui desideri aggiungere le risorse digitali.
-1. Per caricare la risorsa, fai clic su **[!UICONTROL Crea]** dalla barra degli strumenti e scegli **[!UICONTROL File]**. In alternativa, trascina un file sull’interfaccia utente. Consulta [caricare le risorse](manage-digital-assets.md#uploading-assets) per i dettagli.
-1. Per visualizzare l’anteprima di un video nella vista a schede, fai clic su **[!UICONTROL Play]** ![opzione di riproduzione](assets/do-not-localize/play.png) sulla risorsa video. È possibile mettere in pausa o riprodurre il video solo nella vista a schede. Il [!UICONTROL Play] e [!UICONTROL Pausa] non sono disponibili nella vista a elenco.
-1. Per visualizzare l’anteprima del video nella pagina dei dettagli della risorsa, seleziona **[!UICONTROL Modifica]** sulla scheda. Il video viene riprodotto nel lettore video nativo del browser. È possibile riprodurre, mettere in pausa, controllare il volume e ingrandire il video a schermo intero.
+### Caricare risorse video
+
+Per caricare una risorsa video, effettua le seguenti operazioni:
+
+1. Nella cartella o nelle sottocartelle delle risorse digitali, individua il percorso in cui devi aggiungere la risorsa.
+1. Clic **[!UICONTROL Crea]** dalla barra degli strumenti e scegli **[!UICONTROL File]**. <br>In alternativa, trascina un file sull’interfaccia utente.
+Ulteriori informazioni su [caricamento delle risorse](manage-digital-assets.md#uploading-assets) in [!DNL Experience Manager Assets].
+
+<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+
+### Visualizzare in anteprima le risorse video
+
+È possibile visualizzare in anteprima le rappresentazioni MP4 in [!DNL Assets] dell&#39;utente. Per visualizzare in anteprima una risorsa video, effettua le seguenti operazioni:
+
+1. Carica una risorsa video di un formato supportato in [!DNL Experience Manager Assets]. Ulteriori informazioni su [formati video supportati](file-format-support.md#video-formats). <br>Una volta caricata, la risorsa video viene elaborata e viene generata una rappresentazione di anteprima.
+1. Fai clic sulla risorsa e seleziona ![opzione dettagli](assets/do-not-localize/details_icon.svg) **[!UICONTROL Dettagli]**  dalla barra degli strumenti superiore. La risorsa video si apre nel visualizzatore video.
+1. Fai clic su ![opzione di riproduzione](assets/do-not-localize/play.png) sulla miniatura del video. <br>È possibile riprodurre, mettere in pausa, controllare il volume e ingrandire il video a schermo intero.
+
+Per le risorse video esistenti in [!DNL Experience Manager Assets], è necessario **[!UICONTROL Rielabora]** le risorse in [!DNL Experience Manager] per attivare la funzione di anteprima video. Scopri come [rielaborare le risorse digitali](reprocessing.md) in [!DNL Experience Manager].
+
+### Limitazioni dell’anteprima video
+
+* I file MXF non mostrano le anteprime video anche se viene generata la rappresentazione.
+* I file WebM non generano copie trasformate di anteprima in quanto possono essere riprodotti in modalità nativa dai browser Web.
 
 ## Pubblicare risorse video {#publish-video-assets}
 

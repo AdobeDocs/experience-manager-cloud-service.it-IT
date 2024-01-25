@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
+source-git-commit: 4c1525fd51956d3d788a91f58978a9c885e6daa5
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 10%
+source-wordcount: '1409'
+ht-degree: 33%
 
 ---
 
@@ -24,7 +24,7 @@ Gli elementi di rilievo per la conversione delle risorse tramite i microservizi 
 * Chiave [formati di file di imaging](#image-formats).
 * [Formati di file Camera Raw](#camera-raw-formats) per una vasta gamma di fotocamere, tra cui Canon, Nikon, Fujifilm, Olympus e altri produttori (con tecnologia Adobe Camera Raw).
 * Comune [formati dei documenti](#document-formats), inclusi i formati Microsoft® Office e Open Document.
-* Ampia gamma di formati [video](#video-formats) e [audio.](#audio-formats)
+* Ampia gamma di [video](#video-formats) e [audio](#audio-formats) formati.
 
 La legenda seguente descrive il livello di supporto per ciascun formato.
 
@@ -73,9 +73,9 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 
 Sono supportati i seguenti formati 3D.
 
-Vedi anche [Utilizzare risorse 3D in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Vedi anche [Utilizzare risorse 3D in Dynamic Medie](/help/assets/dynamic-media/assets-3d.md).
 
-| Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo degli accessi | Anteprima miniatura | Anteprima 3D | Consegna Dynamic Media |
+| Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo degli accessi | Anteprima miniatura | Anteprima 3D | Consegna Dynamic Medie |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -147,31 +147,31 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 ## Formati video {#video-formats}
 
-| Formato file | Generazione miniature | Estrazione di metadati | Larghezza/Altezza |
-| ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | ✓ | - |
-| 3GP | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ |
-| F4V | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ |
-| M2TS | ✓ | - | ✓ |
-| M2V | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ |
-| MXF | ✓ | - | ✓ |
-| OGV | ✓ | - | ✓ |
-| QT | ✓ | - | ✓ |
-| R3D | - | ✓ | ✓ |
-| SWF | ✓ | - | ✓ |
-| WebM | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ |
+| Formato file | Generazione miniature | Estrazione di metadati | Larghezza/Altezza | Anteprima |
+| ----------- | -------------------- | ------------------- | ------------ | ------- |
+| 3G2 | - | ✓ | - | - |
+| 3GP | - | ✓ | - | - |
+| AVI | ✓ | ✓ | ✓ | ✓ |
+| DIVX | ✓ | - | ✓ | ✓ |
+| F4V | ✓ | ✓ | ✓ | ✓ |
+| FLV | ✓ | ✓ | ✓ | ✓ |
+| M2T | ✓ | - | ✓ | ✓ |
+| M2TS | ✓ | - | ✓ | ✓ |
+| M2V | ✓ | - | ✓ | ✓ |
+| M4V | ✓ | ✓ | ✓ | ✓ |
+| MKV | ✓ | - | ✓ | ✓ |
+| MOV | ✓ | ✓ | ✓ | ✓ |
+| MP4 | ✓ | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ | ✓ |
+| MPG | ✓ | ✓ | ✓ | ✓ |
+| MTS | ✓ | - | ✓ | ✓ |
+| MXF | ✓ | - | ✓ | ✓ |
+| OGV | ✓ | - | ✓ | ✓ |
+| QT | ✓ | - | ✓ | ✓ |
+| R3D | - | ✓ | ✓ | ✓ |
+| SWF | ✓ | - | ✓ | ✓ |
+| WebM | ✓ | - | ✓ | ✓ |
+| WMV | ✓ | ✓ | ✓ | ✓ |
 
 ## Formati audio {#audio-formats}
 
@@ -194,7 +194,7 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 * Attualmente, il limite di dimensione del file per l’estrazione dei metadati è di circa 15 GB. Quando si caricano risorse di grandi dimensioni, a volte l’estrazione dei metadati non riesce.
 
-## Dynamic Media - Formati video di ingresso supportati per la transcodifica {#video-dynamic-media-transcoding}
+## Dynamic Medie - Formati video di ingresso supportati per la transcodifica {#video-dynamic-media-transcoding}
 
 | Estensione file video | Contenitore | Codec video consigliati | Codec video non supportati |
 | --- | --- | --- | --- |
@@ -205,14 +205,14 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, animazione Apple |
 | MP4 | MPEG-4 | H264/AVC (tutti i profili) | − |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
-| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
+| ‡ MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
 | OGV, OGG | OGG | Theora, VP3, Dirac | − |
 | WebM | WebM | Google VP8 | − |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Schermo Microsoft® (MSS2), Microsoft® Photo Story (WVP2) |
 
-‡ Questo formato video non è ancora supportato per l&#39;utilizzo con i video interattivi in Dynamic Media o con Annotation in Experience Manager Assets.
+‡ Questo formato video non è ancora supportato per l&#39;utilizzo con i video interattivi in Dynamic Medie o con Annotation in Experience Manager Assets.
 
-## Dynamic Media - Formati di documenti supportati {#document-support-dynamic-media}
+## Dynamic Medie - Formati di documenti supportati {#document-support-dynamic-media}
 
 | Formato | Carica (formato di input) | Crea predefinito immagine (formato di output) | Anteprima rappresentazione dinamica | Distribuzione di una rappresentazione dinamica | Scarica rappresentazione dinamica |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -224,7 +224,7 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 >
 >Per PDF sicuri, è supportato solo il caricamento.
 
-## Dynamic Media - Formati di immagine raster supportati {#image-support-dynamic-media}
+## Dynamic Medie - Formati di immagine raster supportati {#image-support-dynamic-media}
 
 | Formato | Carica (formato di input) | Crea predefinito immagine (formato di output) | Anteprima rappresentazione dinamica | Distribuzione di una rappresentazione dinamica | Scarica rappresentazione dinamica | Imposta i tipi che supportano questo formato |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
@@ -234,12 +234,12 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
-| PSD   ‡ | ✓ | - | - | - | - | - |
+| ‡ PSD | ✓ | - | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
 
 ‡ L&#39;immagine unita viene estratta dal file PSD. È un’immagine generata da [!DNL Adobe Photoshop] ed è incluso nel file PSD. A seconda delle impostazioni, l&#39;immagine unita potrebbe essere o meno l&#39;immagine effettiva.
 
-## Dynamic Media - Formati immagine raster non supportati {#unsupported-raster-image-formats-dm}
+## Dynamic Medie - Formati immagine raster non supportati {#unsupported-raster-image-formats-dm}
 
 I seguenti sottotipi di formati di file immagine raster *non* supportate in [!DNL Dynamic Media]:
 
@@ -250,7 +250,7 @@ I seguenti sottotipi di formati di file immagine raster *non* supportate in [!DN
 * File TIFF con dati a virgola mobile.
 * File TIFF con spazio colore Lab.
 
-## Dynamic Media - Formati di file 3D supportati {#support-3d-formats-dynamic-media}
+## Dynamic Medie - Formati di file 3D supportati {#support-3d-formats-dynamic-media}
 
 Vedi anche [Formati 3D supportati](/help/assets/file-format-support.md#support-3d-formats)
 
