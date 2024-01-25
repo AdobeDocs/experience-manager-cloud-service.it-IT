@@ -2,15 +2,13 @@
 title: Gestione dei metadati e best practice
 description: Scopri le best practice sui metadati per gestire in modo efficace le risorse digitali.
 role: User, Admin
-hide: true
-hidefromtoc: true
-source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
+exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
+source-git-commit: 2526bc491f079d0dfafaa7aad0d240ff64109591
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
-
 
 <!-- Keywords to focus on:
 metadata best practices
@@ -19,7 +17,7 @@ experience manager metadata-->
 
 # Gestione dei metadati e best practice {#metadata-best-practices}
 
-Per dare risalto alla tua attività e coinvolgere più clienti, è fondamentale utilizzare elementi visivi di alta qualità come immagini, video e altre risorse digitali. A questo scopo, è necessario un processo che ti consenta di aggiungere metadati a tutte le risorse digitali, affinché siano facilmente ricercabili. I metadati sono dati che forniscono dettagli essenziali sulle risorse digitali, tra cui il nome, il tipo, la cronologia delle modifiche, la posizione all’interno di un archivio e i tag associati. I metadati semplificano la gestione delle risorse, migliorano la ricercabilità e l’accessibilità e garantiscono un controllo efficace delle versioni.
+Per dare risalto alla tua attività e coinvolgere più clienti, è fondamentale utilizzare elementi visivi di alta qualità come immagini, video e altre risorse digitali. A questo scopo, è necessario un processo che ti consenta di aggiungere metadati a tutte le risorse digitali, affinché siano facilmente ricercabili. I metadati sono dati che forniscono dettagli essenziali sulle risorse digitali, tra cui il nome, il tipo, la posizione all’interno di un archivio, la data di modifica e i tag associati alla risorsa. I metadati semplificano la gestione delle risorse, migliorano la ricercabilità e l’accessibilità e garantiscono un controllo efficace delle versioni.
 
 Scopri come utilizzare i metadati nel sistema di gestione delle risorse digitali (DAM) per migliorare l’efficienza [gestire i metadati delle risorse digitali](manage-metadata.md).
 
@@ -50,7 +48,6 @@ Ad esempio, quando gestiamo un video in Experience Manager Assets, possiamo incl
 
 Gli utenti alla ricerca di contenuti di marketing possono trovare e comprendere facilmente il significato del video precedente.
 
-
 ### Metadati amministrativi
 
 I metadati amministrativi trattano gli aspetti gestionali delle risorse digitali. Garantisce il controllo degli accessi, la conformità e la gestione del ciclo di vita complessivo delle risorse all’interno del sistema di gestione delle risorse digitali. Include informazioni relative a:
@@ -68,7 +65,7 @@ I metadati amministrativi garantiscono la corretta gestione delle risorse, il co
 
 La gestione dei metadati inizia con la definizione di una strategia per i metadati che fornisca una base per valutare il valore a lungo termine.
 
-La creazione di uno schema di metadati personalizzato in base alle tue esigenze è fondamentale per la pianificazione della strategia per i metadati. Uno schema ben progettato fornisce un framework strutturato per la classificazione e l’organizzazione delle risorse in Adobe Experience Manager.
+La creazione di uno schema di metadati personalizzato in base alle tue esigenze è fondamentale per la pianificazione della strategia per i metadati. Uno schema ben progettato fornisce un framework strutturato per la classificazione e l’organizzazione delle risorse in Experience Manager.
 
 #### Video: aggiungere campi personalizzati allo schema metadati
 
@@ -76,15 +73,15 @@ La creazione di uno schema di metadati personalizzato in base alle tue esigenze 
 
 La strategia di metadati può includere la definizione di quanto segue:
 
-* **Obiettivi:** Descrivere chiaramente gli obiettivi e i risultati attesi dei metadati. Identifica l’obiettivo da raggiungere tramite l’aggiunta dei metadati.
+* **Obiettivi:** Descrivere chiaramente gli obiettivi e i risultati attesi dei metadati. Identifica l’obiettivo da raggiungere aggiungendo i metadati.
 
 * **Finalità:** Definisci il motivo per cui acquisisci i metadati. Specificare il valore aggiunto ai processi, ai sistemi o all&#39;organizzazione.
 
 * **Piano di accessibilità:** Creare un piano per rendere i metadati facilmente accessibili e individuabili. Spiegare chi lo utilizzerà e gli strumenti o i metodi da utilizzare.
 
-* **Proprietà metadati:** Identifica e definisci con attenzione ogni proprietà di metadati. Assicurati che ogni proprietà abbia un chiaro motivo per essere inclusa, collegandola agli obiettivi e allo scopo.
+* **Proprietà metadati:** Identifica e definisci con attenzione ogni proprietà di metadati. Assicurati che ogni proprietà abbia un motivo chiaro per essere inclusa, collegandola agli obiettivi e allo scopo.
 
-Pianifica attentamente la strategia per garantire risultati coerenti in tutto l’archivio.
+Per garantire risultati coerenti in tutto l’archivio, pianifica con attenzione la strategia. Ulteriori informazioni su [schemi di metadati](metadata-schemas.md).
 
 ### Creare un piano di governance dei metadati
 
@@ -103,16 +100,16 @@ Determina da dove provengono le informazioni ed esamina i dettagli della strateg
 
 ### Coerenza con la strategia per i metadati
 
-Una strategia coerente per i metadati garantisce un&#39;organizzazione e un recupero efficaci delle risorse digitali. Adottare un approccio strategico per l&#39;acquisizione e l&#39;implementazione dei valori dei metadati, consentendo la flessibilità necessaria per l&#39;evoluzione senza modifiche non necessarie.
+Una strategia coerente per i metadati garantisce un&#39;organizzazione e un recupero efficaci delle risorse digitali. Adottare un approccio strategico per l&#39;acquisizione e l&#39;implementazione dei valori dei metadati, consentendo la flessibilità necessaria per l&#39;evoluzione senza modifiche non necessarie. <br>
 
-Nella gestione dei metadati a livello aziendale, la coerenza è importante per la denominazione e il riferimento alle risorse. Ad esempio, quando gestisci più risorse contemporaneamente, puoi aggiungere metadati in blocco.
+Nella gestione dei metadati a livello aziendale, la coerenza è importante per la denominazione e il riferimento alle risorse. Ad esempio, quando gestisci più risorse contemporaneamente, &quot;puoi aggiungere metadati in blocco. <br>
 
 Ecco alcune delle best practice da seguire:
 
-* **Evita valori duplicati:** Se disponi di una raccolta di immagini da una campagna di marketing, utilizza nomi coerenti ed evita duplicati.
-Ad esempio, invece di utilizzare nomi duplicati come *campaign_image_001* e *campaign_image_002*, implementa una convenzione di denominazione sistematica come *product_launch_001* e *product_launch_002*, garantendo un&#39;identificazione chiara e ordinata.
+* **Evita valori duplicati:** Se disponi di una raccolta di immagini da una campagna di marketing, utilizza nomi coerenti ed evita duplicati.<br>
+Ad esempio, invece di utilizzare nomi duplicati come *campaign_image_001* e *campaign_image_002*, implementa una convenzione di denominazione sistematica come *event_promotion* e *product_launch*, garantendo un&#39;identificazione chiara e ordinata.
 
-* **Utilizzare in modo efficace i vocabolari controllati:** Implementa i vocabolari controllati utilizzando termini standardizzati per i tag.
+* **Utilizzare in modo efficace i vocabolari controllati:** Implementa i vocabolari controllati utilizzando termini standardizzati per i tag. Scopri come implementare [Framework di assegnazione tag AEM](/help/implementing/developing/introduction/tagging-framework.md) in modo efficace.  <br>
 Ad esempio, utilizza in modo coerente termini quali *product_launch* o *event_promotion* quando si assegnano tag alle immagini con temi per mantenere una sequenza sistematica.
 
 * **Mantieni precisione e completezza:** Per mantenere i metadati coerenti, sono fondamentali precisione, completezza e allineamento tra le varie origini.
@@ -128,21 +125,22 @@ Valuta la tua strategia di metadati per migliorare la ricercabilità dei metadat
 
 Per ottimizzare la ricercabilità dei metadati, considera le seguenti best practice:
 
-* **Ottimizzazione parola chiave:** Migliora la ricercabilità dei metadati ottimizzando le parole chiave associate alle risorse. Per migliorare la pertinenza delle parole chiave per determinate risorse in Assets Manager, segui questi passaggi:
+* **Ottimizzazione parola chiave:** Migliora la ricercabilità dei metadati ottimizzando le parole chiave associate alle risorse. È possibile migliorare la pertinenza delle parole chiave per determinate risorse in [!UICONTROL Gestione risorse] seguendo questi passaggi:
 
    1. Vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]** > **[!UICONTROL [Cartella risorse]]**.
    1. Seleziona la risorsa per la quale desideri aggiornare i metadati, quindi fai clic su **[!UICONTROL Proprietà]**.
-   1. Accedi a **[!UICONTROL Avanzate]** e quindi fare clic su **[!UICONTROL Aggiungi]** sotto **[!UICONTROL Privilegi elevati per parole chiave di ricerca]**.
-   1. Immettere la parola chiave per la quale si desidera incrementare la ricerca, quindi fare clic su **[!UICONTROL Aggiungi]**.
+   1. Accedi a **[!UICONTROL Avanzate]** e quindi fare clic su **[!UICONTROL Aggiungi]** sotto **[!UICONTROL Privilegi elevati per parole chiave di ricerca]**. <br>È necessario utilizzare lo schema metadati predefinito per elevare le parole chiave di ricerca.
+   1. Immettere la parola chiave per la quale si desidera incrementare la ricerca, quindi fare clic su **[!UICONTROL Aggiungi]**.<br>
 Puoi aggiungere più parole chiave e disporle in base alla tua priorità.
    1. Clic **[!UICONTROL Salva e chiudi]**.
 Cerca la risorsa utilizzando le parole chiave aggiunte. La risorsa viene visualizzata tra i primi risultati di ricerca.
 
-  Scopri come [aumentare la ricerca in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
+  Scopri come [intensificare la ricerca in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
-* **Campi metadati personalizzati:** Personalizza i campi di metadati per acquisire informazioni aggiuntive sulle risorse. Ad esempio, aggiungi campi specifici per i dettagli del progetto, le informazioni sul copyright o qualsiasi altro dato rilevante che migliori le funzionalità di ricerca.
+* **Campi metadati personalizzati:** Personalizza i campi di metadati per acquisire informazioni aggiuntive sulle risorse. Ad esempio, aggiungi campi specifici per i dettagli del progetto, le informazioni sul copyright o qualsiasi altro dato rilevante che migliori le funzionalità di ricerca. Scopri [come modificare o aggiungere metadati personalizzati](meta-edit.md) in Experience Manager Assets.
 
-* **Convalida metadati:** Implementa controlli di convalida per le voci di metadati per garantire coerenza e accuratezza. Ciò può richiedere l’impostazione di linee guida per determinate proprietà di metadati al fine di evitare informazioni ambigue o incoerenti.
+
+* **Convalida metadati:** Implementa controlli di convalida per le voci di metadati per garantire coerenza e accuratezza. L’utilizzo di vocabolari controllati rende il processo di convalida più fluido e diminuisce la possibilità di voci non chiare o incoerenti. Ciò può richiedere l’impostazione di linee guida per determinate proprietà di metadati al fine di evitare informazioni ambigue o incoerenti.
 
 * **Tracciamento dell’utilizzo:** Valuta la rilevanza e l’utilizzo di diverse proprietà di metadati nel tempo. Identifica e assegna priorità ai metadati utilizzati di frequente o contribuisce in modo significativo ai processi di ricerca e recupero.
 
@@ -157,13 +155,13 @@ Per semplificare i metadati, prova le seguenti best practice:
 
 * **Opzioni di ottimizzazione delle proprietà:** Concentrati sull’evidenziazione delle proprietà essenziali senza gravare gli utenti con troppi campi di metadati da compilare. Ad esempio, quando aggiungi i metadati per un’immagine, includi solo i campi chiave come titolo, descrizione e tag per una categorizzazione efficace.
 
-* **Eliminare le proprietà predefinite non necessarie:** Semplifica il modulo metadati eliminando le proprietà predefinite irrilevanti per il tuo caso d’uso. Rimuovi le proprietà predefinite utilizzate di rado per un’interfaccia e un’esperienza più pulite.
+* **Eliminare le proprietà predefinite non necessarie:** Semplifica il modulo metadati eliminando le proprietà predefinite irrilevanti per il tuo caso d’uso. Rimuovi le proprietà predefinite raramente utilizzate per un’interfaccia e un’esperienza più pulite.
 
 * **Rivedere e aggiornare periodicamente i metadati:** Aggiornare regolarmente i metadati e adattarli alle esigenze e alle tecnologie in continua evoluzione per garantire che gli utenti forniscano informazioni preziose nel tempo.
 
 ### Analizza percorso di contenuti
 
-Esaminare la catena di fornitura dei contenuti per individuare le origini dei metadati e coinvolgere tutte le parti interessate, a partire dall&#39;alto, per un approccio completo basato sulle best practice. Coinvolgi diversi membri del personale per garantire il supporto completo in tutta l’organizzazione. Incorpora i metadati in varie fasi per condividere la responsabilità di fornire i dettagli delle risorse durante il caricamento.
+Esaminare la catena di fornitura dei contenuti per individuare le origini dei metadati e coinvolgere tutte le parti interessate, a partire dall&#39;alto, per un approccio completo basato sulle best practice. Coinvolgi diversi membri del personale per garantire il supporto completo in tutta l’organizzazione. <br>Incorpora i metadati in varie fasi per condividere la responsabilità di fornire i dettagli delle risorse durante il caricamento. Ad esempio, l’integrazione [!DNL Experience Manager Assets] e [!DNL Workfront] offre notevoli vantaggi in termini di gestione dei metadati, migliorando l&#39;efficienza e la collaborazione nella creazione e nella gestione dei contenuti. Questa integrazione garantisce un’efficace sincronizzazione dei metadati per le risorse collegate e aggiorna automaticamente i dettagli del progetto quando vengono apportate modifiche in [!DNL Workfront].
 
 Comunica tempestivamente obiettivi, progressi, tappe fondamentali e sfide per ricevere il contributo e la cooperazione di tutte le parti interessate. Incoraggiare la collaborazione all&#39;interno dell&#39;organizzazione per creare processi efficienti e metadati preziosi.
 
