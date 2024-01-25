@@ -1,17 +1,17 @@
 ---
 title: Note sulla versione 2023.10.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2023.10.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: d79335bde72a2517939e9bfc07a75ab7a8b6b0b9
+exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
+source-git-commit: 811a8f4d83a1034737c23b1707a24b52742fef55
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 22%
+source-wordcount: '918'
+ht-degree: 50%
 
 ---
 
-
 # Note sulla versione 2023.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La sezione seguente illustra le note specifiche sulla versione corrente (più recente) di [!DNL Experience Manager] as a Cloud Service.
+La sezione seguente illustra le note sulla versione funzionale 2023.10.0 di [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2023.10.0) è il 26 ottobre 2023. La prossima versione (2023.11.0) è prevista per il 30 novembre 2023.
+La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.10.0) è il venerdì 26 ottobre 2023. La prossima versione funzionale (2023.11.0) è pianificata per il venerdì 30 novembre 2023.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -53,13 +53,13 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2023 per un r
 
 * **Importa risorse in blocco dall&#39;origine dati di OneDrive**: gli amministratori possono ora: [importa un numero elevato di risorse da OneDrive ad AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). L&#39;elenco aggiornato delle origini dati supportate per l&#39;importazione in blocco include Azure, AWS, Google Cloud, Dropbox e OneDrive.
 
-  ![assegnare il modulo metadati a una cartella](/help/assets/assets/bulk-import-source-details-onedrive.png)
+  ![assegnare un modulo di metadati a una cartella](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **Supporto di diritti per più organizzazioni per le librerie**: Experience Manager Assets ora consente di configurare l’accesso alle librerie Creative Cloud in un’organizzazione IMS diversa. Consente di accedere più facilmente ai flussi di lavoro più recenti tra Creative Cloud e Experience Manager, riducendo i tempi e gli sforzi dei creativi.
+* **Supporto di diritti per più organizzazioni per le librerie**: Experience Manager Assets ora consente di configurare l’accesso alle librerie Creative Cloud in un’organizzazione IMS diversa. Questo consente di accedere più facilmente ai flussi di lavoro di prodotti più recenti tra Creative Cloud e Experience Manager, riducendo i tempi e agevolando il lavoro dei creativi.
 
 ### Funzioni pre-release disponibili in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Medie**: [Supporto di tracce multi-sottotitolo e multi-audio per video in Dynamic Medie](/help/assets/dynamic-media/video.md#about-msma)- È ora possibile aggiungere facilmente più sottotitoli e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. Puoi personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
+* **Dynamic Media**: [supporto di tracce con più sottotitoli e multi-audio per video in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): è ora possibile aggiungere facilmente più sottotitoli e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono gestire anche i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
 
   ![Scheda Sottotitoli e tracce audio nella pagina Proprietà di una risorsa video selezionata.](/help/release-notes/assets/msma-aem-cs.png)*Scheda Sottotitoli e tracce audio nella pagina Proprietà di una risorsa video selezionata.*
 
@@ -69,18 +69,18 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2023 per un r
 
 * **[Proprietà personalizzate per Adaptive Forms](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)**: è possibile associare attributi personalizzati (coppie chiave-valore) a un modello di modulo o a un componente moduli adattivi per consentire agli sviluppatori di moduli di fornire comportamenti di moduli dinamici che si adattano in base ai valori di tali attributi personalizzati. Ad esempio, gli sviluppatori possono creare diverse rappresentazioni di un componente Forms headless su piattaforme mobili, desktop o web, in base ai valori degli attributi personalizzati, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
-* **Temi e modelli**: avvia il processo di creazione dei moduli con nuovi temi e modelli, personalizzati per abilitare professionisti esperti e nuovi autori di moduli. Creati in modo semplice utilizzando i componenti core di Forms adattivi, questi temi e modelli meticolosamente curati consentono di iniziare a creare moduli rapidamente per i casi d’uso comuni.
+* **Temi e modelli**: avvia il processo di creazione dei moduli con nuovi temi e modelli, personalizzati per abilitare professionisti esperti e nuovi autori di moduli. Creati direttamente utilizzando i componenti core per moduli adattivi, questi temi e modelli meticolosamente curati consentono di iniziare a creare moduli rapidamente per i casi d’uso più comuni.
 
   ![Modelli pronti all’uso](/help/forms/assets/form-templates-ootb.png)
 
 
 ### Programma di adozione anticipata {#forms-early-adopter}
 
-* **[Protect i tuoi documenti con le API DocAssurance (parte delle API di comunicazione)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: le API DocAssurance ti consentono di proteggere le informazioni riservate firmando e crittografando i documenti. Tramite la crittografia, il contenuto di un documento viene trasformato in un formato illeggibile, in modo che solo gli utenti autorizzati possano accedervi. Questo strato di protezione fortificato non solo protegge i dati preziosi da occhi non autorizzati, ma offre anche la massima tranquillità. Le API di firma consentono all’organizzazione di proteggere la sicurezza e la privacy dei documenti Adobe PDF che distribuisce e riceve. Questo servizio utilizza firme digitali e certificazione per garantire che solo i destinatari desiderati possano modificare i documenti.
+* **[Protect i tuoi documenti con le API DocAssurance (parte delle API di comunicazione)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: le API DocAssurance ti consentono di proteggere le informazioni riservate firmando e crittografando i documenti. Tramite la crittografia, il contenuto di un documento viene trasformato in un formato illeggibile, in modo che solo gli utenti autorizzati possano accedervi. Questo livello di protezione aumentato non solo protegge i dati preziosi da persone non autorizzate, ma offre anche la massima tranquillità. Le API di firma consentono all’organizzazione di proteggere la sicurezza e la privacy dei documenti Adobe PDF che distribuisce e riceve. Questo servizio utilizza firme digitali e certificazione per garantire che solo i destinatari desiderati possano modificare i documenti.
 
   Puoi scrivere a `aem-forms-early-adopter-program@adobe.com` dal tuo id e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
 ### Regole filtro del traffico, incluso WAF {#traffic-filter-rules-waf}
 
