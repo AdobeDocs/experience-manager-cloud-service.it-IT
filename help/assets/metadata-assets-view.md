@@ -4,9 +4,9 @@ description: Scopri come gestire i metadati nella vista Risorse. Una migliore ge
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: ef2a883e99823b1109eba598e89ea25a661e389b
 workflow-type: tm+mt
-source-wordcount: '1556'
+source-wordcount: '1667'
 ht-degree: 87%
 
 ---
@@ -29,7 +29,7 @@ Per questi motivi, Assets offre i mezzi giusti per creare, gestire e scambiare m
 
 Per visualizzare i metadati di una risorsa, cerca la risorsa, selezionala e fai clic su **[!UICONTROL Dettagli]** nella barra degli strumenti.
 
-![Visualizzare i metadati di una risorsa](assets/metadata-view1.png)
+![Visualizzare i metadati di una risorsa](assets/metadata-view.png)
 
 *Figura: per visualizzare una risorsa e i relativi metadati, fai clic su **[!UICONTROL Dettagli]** nella barra degli strumenti o fai doppio clic sulla risorsa.*
 
@@ -71,14 +71,15 @@ I tag possono anche essere nidificati in una gerarchia per supportare relazioni 
 La vista Risorse fornisce molti campi di metadati standard per impostazione predefinita. Spesso le organizzazioni hanno l’esigenza di aggiungere altri metadati, specifici per l’azienda. I moduli di metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina [!UICONTROL Dettagli] di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse. Puoi creare nuovi moduli o riutilizzare quelli esistenti.
 
 Puoi configurare i moduli di metadati per diversi tipi di risorse (diversi tipi MIME). Utilizza un modulo con lo stesso nome del tipo MIME del file. La vista Risorse abbina automaticamente il tipo MIME delle risorse caricate al nome del modulo e aggiorna i metadati delle risorse caricate in base ai campi del modulo.
-
-Ad esempio, se è presente un modulo di metadati denominato `PDF` o `pdf`, i documenti PDF caricati contengono i campi di metadati definiti in tale modulo.
-
+<!--
+For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
+-->
 La vista Risorse utilizza la seguente sequenza per cercare i nomi dei moduli di metadati esistenti per applicare i campi di metadati alle risorse caricate di un particolare tipo:
 
 Sottotipo MIME > Tipo MIME > Modulo `default` > Modulo fornito con il prodotto
 
 Ad esempio, se è presente un modulo di metadati denominato `PDF` o `pdf`, i documenti PDF caricati contengono i campi di metadati definiti in tale modulo. Se un modulo di metadati viene denominato `PDF` o `pdf` non esiste, la visualizzazione delle risorse corrisponde se è presente un modulo di metadati denominato `application`. Se è presente un modulo metadati denominato `application`, i documenti PDF caricati contengono campi di metadati definiti nel modulo. Se la vista Assets non trova un modulo di metadati corrispondente, cerca il `default` modulo di metadati per applicare ai documenti di PDF caricati i campi di metadati definiti nel modulo. Se nessuno di questi passaggi funziona, la vista Risorse applica i campi di metadati definiti nel modulo fornito con il prodotto a tutti i documenti di PDF caricati.
+Anche se se si desidera assegnare un modulo di metadati a una cartella [vedi](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >
@@ -111,9 +112,9 @@ Guarda questo video per visualizzare la sequenza di passaggi:
 
 Dopo aver creato il modulo, quest’ultimo viene applicato automaticamente quando gli utenti caricano una risorsa del tipo MIME corrispondente.
 
-Per creare un modulo riutilizzandone uno esistente, seleziona un modulo di metadati e fai clic su **[!UICONTROL Copia]** dalla barra degli strumenti, specifica un nome e fai clic su **[!UICONTROL Conferma]**. A questo punto puoi modificare il modulo di metadati. Quando modifichi un modulo, quest’ultimo viene utilizzato per le risorse caricate in seguito alla modifica. L’operazione non modifica le risorse esistenti.
+Per creare un nuovo modulo riutilizzandone uno esistente, seleziona un modulo di metadati e fai clic su **[!UICONTROL Copia]** nella barra degli strumenti, specifica un nome e fai clic su **[!UICONTROL Conferma]**. A questo punto puoi modificare il modulo di metadati. Quando modifichi un modulo, quest’ultimo viene utilizzato per le risorse caricate in seguito alla modifica. L’operazione non modifica le risorse esistenti.
 
-## Componenti proprietà {#property-components}
+### Componenti proprietà {#property-components}
 
 Puoi personalizzare il modulo metadati utilizzando uno dei seguenti componenti proprietà. Trascina il tipo di componente sul modulo nella posizione desiderata e modifica le impostazioni del componente.
 Di seguito è riportata una panoramica di ciascun tipo di proprietà e della relativa modalità di archiviazione.
@@ -133,6 +134,24 @@ Di seguito è riportata una panoramica di ciascun tipo di proprietà e della rel
 | Tag | Aggiungi un tag dai valori memorizzati in Gestione tassonomia (mappato a xcm:tags). |
 | Parole chiave | Aggiungi parole chiave in formato libero (mappate a dc:subject). |
 | Tag avanzati | Migliora le funzionalità di ricerca aggiungendo automaticamente tag di metadati. |
+
+### Assegnare un modulo di metadati a una cartella {#assign-metadata-form-folder}
+
+Puoi anche assegnare un modulo di metadati a una cartella all’interno della distribuzione di visualizzazione delle risorse. Il modulo di metadati assegnato a una cartella in base al tipo MIME viene sovrascritto quando si applica manualmente un modulo di metadati a una cartella. Per tutte le risorse nella cartella, comprese le risorse nelle sottocartelle, vengono quindi visualizzate le proprietà definite nel modulo di metadati.
+
+Per assegnare un modulo di metadati a una cartella:
+
+1. Passa a **[!UICONTROL Impostazioni]** > **[!UICONTROL Moduli di metadati]** e seleziona un modulo di metadati.
+
+2. Fai clic su **[!UICONTROL Assegna a cartella]**.
+
+3. Seleziona la cartella e fai clic su **[!UICONTROL Assegna]**.
+
+   ![assegnare un modulo di metadati a una cartella](assets/assign-to-folder.png)
+
+   Per assegnare un modulo di metadati alla cartella, puoi anche passare alla pagina dei dettagli della cartella e selezionare un modulo di metadati dalle proprietà della cartella, nel riquadro a destra.
+
+   ![Modulo metadati dalle proprietà della cartella](assets/metadata-from-folder-props.png)
 
 ## Passaggi successivi {#next-steps}
 

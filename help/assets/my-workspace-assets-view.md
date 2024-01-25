@@ -2,10 +2,10 @@
 title: La mia area di lavoro per la vista Risorse
 description: L’area di lavoro personale è una pagina che offre moduli visivi personalizzabili per un accesso comodo alle aree chiave dell’interfaccia utente di Assets e alle informazioni più rilevanti per l’utente.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
+source-git-commit: 2500322c5565314e84ee7989399b9130f5cd6f74
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 93%
+source-wordcount: '745'
+ht-degree: 84%
 
 ---
 
@@ -44,7 +44,7 @@ Per fissare una risorsa, una cartella o una raccolta:
 
 1. Seleziona l’elemento e fai clic su **[!UICONTROL Fissa in Accesso rapido]**.
 
-1. Seleziona questa opzione per fissare l’elemento solo per l’utente, per l’intera organizzazione o per i gruppi selezionati. Se selezioni **[!UICONTROL Per i gruppi]**, definisci i nomi dei gruppi nel campo **[!UICONTROL Fissa per gruppi]**.
+1. Seleziona questa opzione per fissare l’elemento solo per l’utente, per l’intera organizzazione o per i gruppi selezionati. Se si seleziona **[!UICONTROL Per i gruppi]**, scegli un nome gruppo esistente in **[!UICONTROL Fissa per gruppi]** campo.
 
    ![Fissa elementi per gruppi](assets/pin-items-for-groups.png)
 1. Fai clic su **[!UICONTROL Fissa]**.
@@ -62,7 +62,7 @@ Puoi anche visualizzare i termini più cercati e il numero di volte in cui tali 
 
 **Attività**
 
-Visualizza l’elenco delle attività attualmente assegnate a te nella scheda **[!UICONTROL Le mie attività]**, create da te nella scheda **[!UICONTROL Attività assegnate]** e le attività già completate nella scheda **[!UICONTROL Completate]**. Puoi selezionare un’attività e fare clic su **[!UICONTROL Completa attività]** per approvare o rifiutare un’attività. Puoi anche selezionare un’attività e fare clic su **[!UICONTROL Apri dettagli attività]** per visualizzare l’attività e approvarla, rifiutarla, modificarla o eliminarla.
+Visualizza l&#39;elenco delle attività attualmente assegnate in **[!UICONTROL Le Mie Attività]** , creato da te in **[!UICONTROL Attività assegnate]** e le attività già completate in **[!UICONTROL Attività completate]** scheda. Puoi selezionare un’attività e fare clic su **[!UICONTROL Completa l’attività]** per approvare o rifiutare un&#39;attività. Puoi anche selezionare un’attività e fare clic su **[!UICONTROL Apri dettagli attività]** per visualizzare l’attività e approvarla, rifiutarla, modificarla o eliminarla.
 
 ![Attività nell’area di lavoro](assets/tasks-workspace.png)
 

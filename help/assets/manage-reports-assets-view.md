@@ -2,39 +2,48 @@
 title: Gestione dei rapporti in vista Risorse
 description: Accedi ai dati nella sezione dei rapporti di vista Risorse per valutare l’utilizzo di prodotti e funzionalità e ottenere informazioni approfondite sulle metriche di successo chiave.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 97%
+source-wordcount: '814'
+ht-degree: 92%
 
 ---
 
 # Gestire i rapporti {#manage-reports}
 
->[!CONTEXTUALHELP]
->id="assets_reports"
->title="Rapporti"
->abstract="La funzionalità di reporting sulle risorse offre agli amministratori visibilità sulle attività dell’ambiente delle viste di Adobe Experience Manager Assets. Questi dati forniscono informazioni utili su come gli utenti interagiscono con i contenuti e il prodotto. Tutti gli utenti ai quali viene assegnato il profilo di prodotto per amministratori possono accedere alla dashboard Insight e creare rapporti definiti dagli utenti."
-
-La funzionalità di reporting sulle risorse offre agli amministratori visibilità sulle attività dell’ambiente delle viste di Adobe Experience Manager Assets. Questi dati forniscono informazioni utili su come gli utenti interagiscono con i contenuti e il prodotto.
+La funzionalità di reporting sulle risorse offre agli amministratori visibilità sulle attività dell’ambiente delle viste di Adobe Experience Manager Assets. Questi dati forniscono informazioni utili su come gli utenti interagiscono con i contenuti e il prodotto. Tutti gli utenti possono accedere alla dashboard Insight e quelli assegnati al profilo di prodotto Amministratori possono creare rapporti definiti dall’utente.
 
 ## Accedere ai rapporti {#access-reports}
 
 Tutti gli utenti assegnati al profilo di prodotto per amministratori di vista Risorse possono accedere alla dashboard Insight e creare rapporti definiti dagli utenti in vista Risorse.
 
-## Visualizzare gli approfondimenti {#view-live-statistics}
+Per accedere ai rapporti, passa a **[!UICONTROL Rapporti]** in **[!UICONTROL Impostazioni]**.
+
+![Rapporti](assets/reports.png)
+<!--
+In the **[!UICONTROL Reports]** screen, various components are shown in the tabular format which includes the following:
+
+* **Title**: Title of the report
+* **Type**: Determines whether the report is uploaded or downloaded to the repository
+* **Description**: Provide details of the report that was given during uploading/downloading the report
+* **Status**: Determines whether the report is completed, under progress, or deleted.
+* **Author**: Provides email of the author who has uploaded/downloaded the report.
+* **Created**: Gives information of the date when the report was generated.
+-->
+
+## Visualizzare gli insight {#view-live-statistics}
 
 Vista Risorse consente di visualizzare in tempo reale i dati del tuo ambiente vista Risorse, con la dashboard Insight. Puoi visualizzare le metriche degli eventi in tempo reale negli ultimi 30 giorni o negli ultimi 12 mesi.
 
 <!--![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)-->
 
-Fai clic su **[!UICONTROL Approfondimenti]** disponibile nel riquadro di navigazione a sinistra per visualizzare i seguenti grafici generati automaticamente:
+Fai clic su **[!UICONTROL Insight]** nel riquadro di navigazione a sinistra per visualizzare i seguenti grafici generati automaticamente:
 
-![Approfondimenti](assets/insights.png)
+![Insight](assets/insights.png)
 
-* **Download**: numero di risorse scaricate dall’ambiente vista Risorse negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
+* **Download**: numero di risorse scaricate dall’ambiente di visualizzazione Risorse negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
 
-* **Caricamenti**: numero di risorse caricate nell’ambiente vista Risorse negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
+* **Caricamenti**: numero di risorse caricate nell’ambiente di visualizzazione Risorse negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
 
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
@@ -46,11 +55,10 @@ Fai clic su **[!UICONTROL Approfondimenti]** disponibile nel riquadro di navigaz
 
 * **Ricerche principali**: visualizza i termini più cercati e il numero di volte in cui tali termini sono stati cercati nell’ambiente vista Risorse negli ultimi 30 giorni o 12 mesi rappresentato in formato tabulare.
 
-<!--
-
-* **Storage usage**: The storage usage, in gigabytes (GB), for the Assets view environment, for the last 30 days or 12 months represented using a bar chart.
-
--->
+  <!--
+   ![Insights](assets/insights1.png)
+   ![Insights](assets/insights2.png)
+   -->
 
 ## Creare un rapporto sui download {#create-download-report}
 
