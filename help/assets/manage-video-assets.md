@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
+source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
 workflow-type: tm+mt
-source-wordcount: '4975'
+source-wordcount: '4976'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,7 @@ Ulteriori informazioni su [caricamento delle risorse](manage-digital-assets.md#u
 
 ### Visualizzare in anteprima le risorse video
 
-È possibile visualizzare in anteprima le rappresentazioni MP4 in [!DNL Assets] dell&#39;utente. Per visualizzare in anteprima una risorsa video, effettua le seguenti operazioni:
+Puoi visualizzare in anteprima i video nelle rappresentazioni supportate in [!DNL Assets] dell&#39;utente. Per visualizzare in anteprima una risorsa video, effettua le seguenti operazioni:
 
 1. Carica una risorsa video di un formato supportato in [!DNL Experience Manager Assets]. Ulteriori informazioni su [formati video supportati](file-format-support.md#video-formats). <br>Una volta caricata, la risorsa video viene elaborata e viene generata una rappresentazione di anteprima.
 1. Fai clic sulla risorsa e seleziona ![opzione dettagli](assets/do-not-localize/details_icon.svg) **[!UICONTROL Dettagli]**  dalla barra degli strumenti superiore. La risorsa video si apre nel visualizzatore video.
