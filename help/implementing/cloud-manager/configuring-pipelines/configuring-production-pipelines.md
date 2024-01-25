@@ -3,9 +3,9 @@ title: Configurazione delle pipeline di produzione
 description: Scopri come configurare le pipeline di produzione per generare e distribuire il codice negli ambienti di produzione.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1422'
 ht-degree: 72%
 
 ---
@@ -123,18 +123,17 @@ Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.m
 
 Una distribuzione mirata distribuisce il codice solo per parti selezionate dell’applicazione AEM. In tale distribuzione è possibile scegliere di: **Includi** uno dei seguenti tipi di codice:
 
-* **[Config](#config)** : configura le impostazioni relative all’ambiente AEM, alle attività di manutenzione, alle regole CDN e altro ancora.
+* **Config** : configura le impostazioni per le regole del filtro del traffico nell’ambiente AEM.
    * Consulta il documento [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md) per scoprire come gestire le configurazioni nell’archivio in modo che vengano distribuite correttamente.
-* **[Codice front-end](#front-end-code)** : configura JavaScript e CSS per il front-end dell’applicazione AEM.
+   * Quando si esegue una pipeline di distribuzione mirata, [Configurazioni WAF](/help/security/traffic-filter-rules-including-waf.md) verranno implementati, purché vengano salvati nell’ambiente, nell’archivio e nel ramo definiti nella pipeline.
+   * In qualsiasi momento può essere presente una sola pipeline di configurazione per ogni ambiente.
+* **Codice front-end** : configura JavaScript e CSS per il front-end dell’applicazione AEM.
    * Con le pipeline front-end, i team di sviluppo front-end acquisiscono maggiore indipendenza e il processo di sviluppo può essere accelerato.
    * Per informazioni sul funzionamento di questo processo e alcune considerazioni per sfruttare al massimo il suo potenziale, consulta il documento [Sviluppo di Sites con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
-* **[Configurazione a livello web](#web-tier-config)** : configura le proprietà del dispatcher per archiviare, elaborare e consegnare le pagine web al client.
-
->[!NOTE]
->
->* Se esiste una pipeline del codice a livello web per l’ambiente selezionato, questa selezione è disabilitata.
->* Se già disponi di una pipeline full stack distribuita in un ambiente, creando una pipeline di configurazione a livello web per lo stesso ambiente la configurazione del livello web esistente nella pipeline full stack verrà ignorata.
-> * In qualsiasi momento può essere presente una sola pipeline di configurazione per ogni ambiente.
+* **Configurazione a livello web** : configura le proprietà del dispatcher per archiviare, elaborare e consegnare le pagine web al client.
+   * Consulta il documento [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) per ulteriori dettagli.
+   * Se esiste una pipeline del codice a livello web per l’ambiente selezionato, questa selezione è disabilitata.
+   * Se già disponi di una pipeline full stack distribuita in un ambiente, creando una pipeline di configurazione a livello web per lo stesso ambiente la configurazione del livello web esistente nella pipeline full stack verrà ignorata.
 
 I passaggi per completare la creazione della pipeline di distribuzione di produzione con targeting sono gli stessi quando scegli un tipo di distribuzione.
 
@@ -165,8 +164,6 @@ I passaggi per completare la creazione della pipeline di distribuzione di produz
 1. Fai clic su **Salva**.
 
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
-
-Durante l’esecuzione di una pipeline di distribuzione di destinazione, le configurazioni [ad esempio configurazioni WAF](/help/security/traffic-filter-rules-including-waf.md) verranno implementati, purché vengano salvati nell’ambiente, nell’archivio e nel ramo definiti nella pipeline.
 
 ## Ignorare i pacchetti Dispatcher {#skip-dispatcher-packages}
 
