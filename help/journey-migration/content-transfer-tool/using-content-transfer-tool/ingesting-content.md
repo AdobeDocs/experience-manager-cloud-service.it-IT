@@ -2,9 +2,9 @@
 title: Acquisizione di contenuti in Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
+source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2410'
 ht-degree: 7%
 
 ---
@@ -38,7 +38,7 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
    > Se l’estrazione è in esecuzione, la finestra di dialogo lo indica. Una volta completata correttamente l’estrazione, l’acquisizione viene avviata automaticamente. Se l’estrazione non riesce o viene interrotta, il processo di acquisizione verrà annullato.
 
    * **Destinazione:** Seleziona l’ambiente di destinazione. In questo ambiente viene acquisito il contenuto del set di migrazione.
-      * Le acquisizioni non supportano una destinazione RDE (Rapid Development Environment) e non vengono visualizzate come possibile scelta di destinazione, anche se l’utente ha accesso a tale destinazione.
+      * Le acquisizioni non supportano destinazioni di tipo RDE (Rapid Development Environment) o Anteprima e non vengono visualizzate come possibile scelta di destinazione, anche se l’utente ha accesso a esse.
       * Anche se un set di migrazione può essere acquisito in più destinazioni contemporaneamente, una destinazione può essere la destinazione di una sola acquisizione in esecuzione o in attesa alla volta.
 
    * **Livello:** Seleziona il livello. (Autore/Pubblicazione).
