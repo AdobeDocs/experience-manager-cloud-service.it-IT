@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 20%
+ht-degree: 47%
 
 ---
 
@@ -48,26 +48,26 @@ Se ti interessa testare questa nuova funzione e condividere i tuoi commenti, inv
 
 ### Ripristino del contenuto self-service {#content-restore}
 
-[Una nuova funzione di ripristino self-service dei contenuti](/help/operations/restore.md) ora fornisce il ripristino del backup per un massimo di sette giorni ed è disponibile per gli utenti che lo adottano per la valutazione, con:
+[Una nuova funzione di ripristino dei contenuti self-service](/help/operations/restore.md) ora fornisce il ripristino del backup per un massimo di sette giorni ed è disponibile per gli utenti iniziali che lo adottano a scopo di valutazione, con le seguenti caratteristiche:
 
-* Ripristino del backup point-in-time per le 24 ore precedenti
+* Ripristino del backup in un momento specifico per le 24 ore precedenti
 * Ripristini a tempo fisso per un massimo di sette giorni
 
 Se ti interessa testare questa nuova funzione e condividere i tuoi commenti, invia un’e-mail a `aemcs-restorefrombackup-adopter@adobe.com` dall’e-mail associata al tuo Adobe ID.
 
 * Il programma di adozione anticipata è limitato solo agli ambienti di sviluppo.
 * La disponibilità del programma di adozione anticipata di questa funzione è limitata.
-* Questa funzione consente di ripristinare i contenuti eliminati accidentalmente e non è destinata al disaster recovery.
+* Questa funzione consente di ripristinare i contenuti eliminati accidentalmente e non è destinata al ripristino di emergenza.
 
-### Dashboard di audit dell’esperienza {#experience-audit-dashboard}
+### Dashboard di Experience Audit {#experience-audit-dashboard}
 
-[Dashboard di Cloud Manager Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md) include una visualizzazione con tendenze dei punteggi di prestazioni della pagina, oltre a informazioni approfondite e consigli per aiutarti a migliorarli. L’audit dell’esperienza è incluso come passaggio nella pipeline di produzione di Cloud Manager.
+La [dashboard di Audit dell’esperienza di Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) include una vista dei trend dei punteggi delle prestazioni della pagina, oltre a insight e consigli per aiutarti a migliorarli. La funzione Audit dell’esperienza è inclusa come passaggio nella pipeline di produzione di Cloud Manager.
 
-La dashboard utilizza Google Lighthouse, uno strumento open-source automatizzato per migliorare la qualità delle app web. Puoi eseguirla su qualsiasi pagina web, pubblica o che richiede l’autenticazione. Sono disponibili controlli di prestazioni, accessibilità, applicazioni web progressive, SEO e altro ancora.
+La dashboard utilizza Google Lighthouse, uno strumento open-source automatizzato per migliorare la qualità delle app web. Puoi eseguirla su qualsiasi pagina web, pubblica o che richiede l’autenticazione. Sono disponibili audit di prestazioni, accessibilità, applicazioni web progressive, SEO e altro ancora.
 
-Ti interessa testare il nuovo cruscotto? Per iniziare, invia un’e-mail a `aem-lighthouse-pilot@adobe.com` dall’e-mail associata al tuo Adobe ID.
+Ti interessa testare la nuova dashboard? Per iniziare, invia un’e-mail a `aem-lighthouse-pilot@adobe.com` dall’e-mail associata al tuo Adobe ID.
 
 ## Correzioni di bug {#bug-fixes}
 
 * È stato corretto un errore a causa del quale le pipeline di configurazione non riuscivano nella fase di build con un messaggio di errore non chiaro se il percorso dei file di configurazione non era impostato correttamente. Il messaggio di errore è ora chiaro e indica che l’utente deve verificare che il percorso dei file di configurazione sia corretto.
-* Quando un passaggio della build termina con lo stato `FAILED` a causa di un `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, ora è descritto correttamente come un errore dovuto a conflitti di unione con il ramo di destinazione.
+* Quando un passaggio della build termina con lo stato `FAILED` a causa di un `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, ora è descritto correttamente come un errore dovuto all’unione di conflitti con il ramo di destinazione.

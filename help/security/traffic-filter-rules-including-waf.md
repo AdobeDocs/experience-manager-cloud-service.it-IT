@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
 workflow-type: tm+mt
 source-wordcount: '3350'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Una sottocategoria delle regole del filtro del traffico richiede una licenza di 
 
 Le regole del filtro del traffico possono essere distribuite ai tipi di ambiente di sviluppo, di staging e di produzione nei programmi di produzione (non sandbox) tramite le pipeline di configurazione di Cloud Manager. Il supporto per gli RDE sarà disponibile in futuro.
 
-[Segui un’esercitazione](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=it) per sviluppare rapidamente competenze concrete su questa funzione.
+[Segui con un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=it) per sviluppare rapidamente competenze concrete su questa funzione.
 
 ## Struttura di questo articolo {#how-organized}
 
@@ -227,7 +227,7 @@ when:
 
 ### Struttura delle azioni {#action-structure}
 
-Un `action` può essere una stringa che specifica l&#39;azione (allow, block o log) oppure un oggetto composto sia dal tipo di azione (allow, block o log) che da opzioni quali wafFlags e/o status.
+Un’`action` può essere una stringa che specifica l’azione (consenti, blocca o registra) o un oggetto composto sia dal tipo di azione (consenti, blocca o registra) che da opzioni quali wafFlags e/o Stato.
 
 **Tipi di azioni**
 
@@ -278,7 +278,7 @@ La proprietà `wafFlags`, che può essere utilizzata nelle regole del filtro del
 
 * Gli elenchi di IP consentiti definiti in Cloud Manager hanno la precedenza sulle regole dei filtri di traffico.
 
-* Le corrispondenze delle regole WAF vengono visualizzate solo nei registri CDN per mancati riscontri e passate CDN, non per hit.
+* Le corrispondenze delle regole WAF vengono visualizzate solo nei registri CDN per CDN miss e pass, non per hit.
 
 ## Esempi di regole {#examples}
 
@@ -492,7 +492,7 @@ Le regole si comportano nel modo seguente:
 * Se la WAF è concessa in licenza e abilitata, `waf` Questo attributo elenca tutti i flag WAF (ad esempio, SQLI) rilevati, indipendentemente dal fatto che i flag WAF siano elencati o meno in una delle regole. Questo serve a ottenere informazioni dettagliate su possibili nuove regole da dichiarare.
 * Se nessuna regola dichiarata dal cliente corrisponde e nessuna regola waf corrisponde, la proprietà `rules` sarà vuota.
 
-Come indicato in precedenza, le corrispondenze delle regole WAF vengono visualizzate solo nei registri CDN per mancati e passaggi CDN, non per hit.
+Come indicato in precedenza, le corrispondenze delle regole WAF vengono visualizzate solo nei registri CDN per CDN miss e pass, non per hit.
 
 L’esempio seguente mostra un esempio `cdn.yaml` e due voci di registro CDN:
 

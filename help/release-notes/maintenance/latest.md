@@ -15,7 +15,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 14697 {#release-14697}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 14697, rilasciata al pubblico il martedì 18 dicembre 2023. Sostituisce i 14538 di rilascio che avevano un problema. La versione di manutenzione precedente era 14227.
+Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 14697, rilasciata pubblicamente il martedì 18 dicembre 2023. Sostituisce i 14538 di rilascio che avevano un problema. La versione di manutenzione precedente era 14227.
 
 Con l’attivazione delle funzioni 2023.12.0 viene fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it).
 

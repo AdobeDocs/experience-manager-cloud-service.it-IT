@@ -5,7 +5,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: c937269684d3d621da1bade33c0b7e261d23ee5c
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Con il modello di rilascio continuo in [!DNL Adobe Experience Manager] as a Clou
 * [Le versioni di funzioni](/help/release-notes/release-notes-cloud/release-notes-current.md) vengono rilasciate con frequenza mensile prevedibile e sono incentrate su nuove funzionalità e innovazioni dei prodotti.
 * [Le versioni di manutenzione](/help/release-notes/maintenance/latest.md) vengono eseguite frequentemente e si concentrano su aggiornamenti di sicurezza, correzioni di bug e miglioramenti delle prestazioni. Ciò assicura che [!DNL Adobe Experience Manager] as a Cloud Service sia sempre aggiornato con eventuali correzioni critiche.
 
-Oltre alla rapidità dell’innovazione, [!DNL Adobe Experience Manager] as a Cloud Service offre anche la flessibilità di visualizzare in anteprima le prossime funzioni con un mese di anticipo rispetto al momento in cui vengono rilasciate in produzione. Questo consente di valutare l’impatto di una versione futura sull’organizzazione sottoponendo a test le funzioni nel proprio ambiente personalizzato e di addestrare/preparare gli utenti interni con largo anticipo. Se disponi di un componente aggiuntivo AEM, per esempio Forms, puoi selezionarlo nella sezione [impostazioni del programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) per verificare che sia aggiornato.
+Oltre alla rapidità dell’innovazione, [!DNL Adobe Experience Manager] as a Cloud Service offre anche la flessibilità di visualizzare in anteprima le prossime funzioni con un mese di anticipo rispetto al momento in cui vengono rilasciate in produzione. Questo consente di valutare l’impatto di una versione futura sull’organizzazione sottoponendo a test le funzioni nel proprio ambiente personalizzato e di formare/preparare gli utenti interni con largo anticipo. Se disponi di un componente aggiuntivo AEM, per esempio Forms, puoi selezionarlo nella sezione [impostazioni del programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) per verificare che sia aggiornato.
 
 >[!NOTE]
 >
