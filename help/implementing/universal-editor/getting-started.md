@@ -2,10 +2,10 @@
 title: Guida introduttiva all’editor universale in AEM
 description: Scopri come accedere all’editor universale e come iniziare a preparare la tua prima app AEM per utilizzarla.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: f9d584d7b117c24224079f581802f5f126890304
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 71%
+source-wordcount: '871'
+ht-degree: 73%
 
 ---
 
@@ -104,8 +104,6 @@ Questa proprietà deve essere impostata nella configurazione OSGi `org.apache.sl
 ## Prepara la pagina {#instrument-page}
 
 Il servizio di editor universale richiede un [nome risorsa uniforme (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) per identificare e utilizzare il sistema back-end corretto per il contenuto dell’app in fase di modifica. Pertanto, è necessario uno schema URN per mappare il contenuto alle risorse di contenuto.
-
-Gli attributi di strumentazione aggiunti alla pagina sono costituiti principalmente da [Microdati HTML,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) uno standard di settore che può essere utilizzato anche per rendere HTML più semantico, rendere i documenti HTML indicizzabili e così via.
 
 ### Creazione di connessioni {#connections}
 
