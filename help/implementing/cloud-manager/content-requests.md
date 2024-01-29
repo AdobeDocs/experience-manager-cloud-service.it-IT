@@ -2,10 +2,10 @@
 title: Informazioni sulle richieste di contenuto di Cloud Service
 description: Se hai acquistato licenze per richieste di contenuto da Adobe, scopri i tipi di richieste di contenuto che Adobe Experience Cloud as a Service misura e le varianze con gli strumenti di reporting di Analytics di un’organizzazione.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
+source-git-commit: 6212ad20cb427d6b2ccd4c467d571832f923ed2a
 workflow-type: tm+mt
-source-wordcount: '2690'
-ht-degree: 4%
+source-wordcount: '2683'
+ht-degree: 5%
 
 ---
 
@@ -54,11 +54,11 @@ Vedi anche [Dashboard delle licenze](/help/implementing/cloud-manager/license-da
 
 | Tipo di richiesta | Richiesta contenuto | Descrizione |
 | --- | --- | --- |
-| Codice HTTP 100-299 | Incluso | Si tratta di richieste regolari che forniscono contenuto completo o parziale. |
-| Librerie HTTP per l&#39;automazione | Incluso | Esempi:<br>· Amazon CloudFront<br>· Client Apache Http<br>· Client HTTP asincrono<br>· Assi<br>· Azureo<br>· Curl<br>· Recupero nodo GitHub<br>· Guscio<br>· Go-http-client<br>· Chrome headless<br>· Client Java™<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Richieste Python<br>· Reactor Netty<br>· Wget<br>· WinHTTP |
-| Strumenti di monitoraggio e verifica stato | Incluso | Questi vengono configurati dal cliente per monitorare un determinato aspetto del sito. Ad esempio, disponibilità o prestazioni reali degli utenti. Utilizzare `/system/probes/health` e non le pagine HTML effettive del sito.<br>Esempi:<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(compatibile; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
-| `<link rel="prefetch">` richieste | Incluso | Per aumentare la velocità di caricamento della pagina successiva, i clienti possono fare in modo che il browser carichi un set di pagine prima che l’utente faccia clic sul collegamento, in modo che si trovino già nella cache. *Attenzione: questo sta aumentando notevolmente il traffico*- a seconda del numero di pagine preacquisite. |
-| Traffico che blocca il reporting di Adobe Analytics o Google Analytics | Incluso | È più comune che i visitatori dei siti abbiano installato software per la privacy (Ad-blocker e così via) che influiscono sulla precisione della Google Analytics o di Adobe Analytics. L’AEM as a Cloud Service conta le richieste sul primo punto di ingresso nell’infrastruttura gestita dall’Adobe e non sul lato client. |
+| Codice HTTP 100-299 | Inclusi | Si tratta di richieste regolari che forniscono contenuto completo o parziale. |
+| Librerie HTTP per l&#39;automazione | Inclusi | Esempi:<br>· Amazon CloudFront<br>· Client Apache Http<br>· Client HTTP asincrono<br>· Assi<br>· Azureo<br>· Curl<br>· Recupero nodo GitHub<br>· Guscio<br>· Go-http-client<br>· Chrome headless<br>· Client Java™<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Richieste Python<br>· Reactor Netty<br>· Wget<br>· WinHTTP |
+| Strumenti di monitoraggio e verifica stato | Inclusi | Questi vengono configurati dal cliente per monitorare un determinato aspetto del sito. Ad esempio, disponibilità o prestazioni reali degli utenti. Utilizzare `/system/probes/health` e non le pagine HTML effettive del sito.<br>Esempi:<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(compatibile; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
+| `<link rel="prefetch">` richieste | Inclusi | Per aumentare la velocità di caricamento della pagina successiva, i clienti possono fare in modo che il browser carichi un set di pagine prima che l’utente faccia clic sul collegamento, in modo che si trovino già nella cache. *Attenzione: questo sta aumentando notevolmente il traffico*- a seconda del numero di pagine preacquisite. |
+| Traffico che blocca il reporting di Adobe Analytics o Google Analytics | Inclusi | È più comune che i visitatori dei siti abbiano installato software per la privacy (Ad-blocker e così via) che influiscono sulla precisione della Google Analytics o di Adobe Analytics. L’AEM as a Cloud Service conta le richieste sul primo punto di ingresso nell’infrastruttura gestita dall’Adobe e non sul lato client. |
 
 Vedi anche [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md).
 
@@ -96,9 +96,13 @@ Real User Monitoring (RUM) fornisce informazioni approfondite sulle metriche del
 
 ### Chi può trarre vantaggio dal servizio di monitoraggio dei dati RUM? {#who-can-benefit-from-rum-data-monitoring-service}
 
-Il servizio dati RUM è utile per chi utilizza la rete CDN di Adobe in quanto offre un riflesso più preciso delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web riflettendo il numero di visualizzazioni di pagina sul lato client che possono essere confrontate con le visualizzazioni di pagina di registro CDN lato server esistenti. Inoltre, per i clienti che utilizzano la propria rete CDN, Adobe ora può semplificare il reporting automatico del traffico, che include le visualizzazioni di pagina per loro, il che significa che non devono condividere alcun rapporto sul traffico con Adobe.
+Il servizio dati RUM è utile per tutti i clienti che utilizzano Adobe o la propria rete CDN. Offre un riflesso più preciso delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web che riflette il numero di visualizzazioni di pagina sul lato client.
 
-È anche un’ottima opportunità per ottenere informazioni avanzate sulle prestazioni della pagina sia per i clienti che utilizzano la rete CDN di Adobe che per coloro che utilizzano la propria rete CDN.
+In particolare, per Adobe gli utenti CDN, tiene traccia con precisione delle interazioni degli utenti per un confronto diretto tra le visualizzazioni di pagina lato client e i registri CDN lato server.
+
+I clienti che utilizzano la propria rete CDN possono beneficiare di rapporti sul traffico semplificati, in quanto Adobe ora integra direttamente queste Visualizzazioni pagina, eliminando la necessità di creare rapporti separati.
+
+Inoltre, tutti i clienti possono ottenere informazioni approfondite sulle prestazioni delle pagine, per ottimizzare in modo efficace le loro esperienze digitali.
 
 ### Comprendere il funzionamento del servizio dati Real User Monitoring (RUM) {#understand-how-the-rum-data-service-works}
 
