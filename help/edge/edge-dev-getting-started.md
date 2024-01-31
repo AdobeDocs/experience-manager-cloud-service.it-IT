@@ -2,9 +2,9 @@
 title: Guida introduttiva per gli sviluppatori per l’authoring di AEM con Edge Delivery Services
 description: Questa guida ti aiuterà a iniziare a utilizzare un nuovo sito Adobe Experience Manager con Edge Delivery Services e Universal Editor per l’authoring dei contenuti
 feature: Edge Delivery Services
-source-git-commit: eae751441435949296eb76a7e9b4103393860a8d
+source-git-commit: 5967bd78b9c23cf3451ac3b0ec2118da5200ddc1
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -48,8 +48,6 @@ Innanzitutto devi creare un nuovo progetto su GitHub, basato sul modello di Adob
    ![Copia progetto archivio](assets/edge-dev-getting-started/use-template-project.png)
 
 1. Per impostazione predefinita, l’archivio viene assegnato all’utente. Modifica questo stato in base alle esigenze, fornisci un nome e una descrizione dell’archivio e fai clic su **Crea archivio**.
-
-   * L’archivio deve essere **Pubblico**.
 
    ![Creazione dell’archivio](assets/edge-dev-getting-started/create-repo.png)
 
