@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 52a6cb359bfe0d76bdceb3f517e92d78994872c8
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 12%
+source-wordcount: '732'
+ht-degree: 9%
 
 ---
 
@@ -60,6 +60,10 @@ Alcuni casi d’uso per l’esportazione in blocco di metadati sono:
 * Condividere i metadati delle risorse con un team di progetto più ampio.
 * Verifica o controlla la conformità dei metadati.
 * Esternalizzare i metadati per la localizzazione separata.
+
+>[!NOTE]
+>
+>Le esportazioni di metadati sono limitate a 1.048.575 risorse, corrispondenti alle dimensioni massime del foglio di lavoro in Microsoft Excel. Se una gerarchia esportata contiene più di questo numero di risorse, nel file CSV verranno inclusi solo i metadati delle prime 1.048.575 risorse.
 
 1. Seleziona la cartella delle risorse contenente le risorse di cui desideri esportare i metadati. Dalla barra degli strumenti, seleziona **[!UICONTROL Esportare i metadati]**.
 1. Nella finestra di dialogo Esportazione metadati, specifica un nome per il file CSV. Per esportare i metadati per le risorse nelle sottocartelle, seleziona **[!UICONTROL Includere le risorse nelle sottocartelle]**.
