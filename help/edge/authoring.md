@@ -2,13 +2,13 @@
 title: Authoring di contenuti per Edge Delivery Services
 description: Scopri come funziona l’authoring dei contenuti con i Edge Delivery Services e come creare contenuti AEM con i Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
+exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
+source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 14%
+source-wordcount: '491'
+ht-degree: 13%
 
 ---
-
 
 # Authoring di contenuti per Edge Delivery Services {#authoring-edge}
 
@@ -53,6 +53,8 @@ I dettagli dei blocchi possono quindi essere configurati nella barra Proprietà.
 ![Configurazione delle proprietà del blocco](assets/block-properties.png)
 
 Per informazioni dettagliate su come effettuare l’authoring con l’Editor universale, consulta il documento [Authoring di contenuti con l’Editor universale.](/help/implementing/universal-editor/authoring.md)
+
+Consulta la sezione [Guida introduttiva per gli sviluppatori per l’authoring di AEM con Edge Delivery Services](/help/edge/edge-dev-getting-started.md) per scoprire come avviare un progetto personalizzato per l’authoring con AEM e Edge Delivery Services.
 
 ## Come iniziare {#how-to-get-started}
 
