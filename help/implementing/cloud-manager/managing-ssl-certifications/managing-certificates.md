@@ -2,7 +2,7 @@
 title: Gestione dei certificati SSL
 description: Scopri come controllare lo stato dei certificati SSL e come modificarli, sostituirli, aggiornarli ed eliminarli con Cloud Manager.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 7143ea8d36e26aa1674608ff7bd8ba22e2030b3c
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 73%
@@ -18,9 +18,9 @@ Scopri come controllare lo stato dei certificati SSL e come modificarli, sostitu
 
 Lo stato dei certificati SSL può essere visualizzato dalla pagina del certificato SSL.
 
-* **Verde**: indica che il certificato è valido per almeno 60 giorni dalla data corrente.
+* **Verde**: indica che il certificato è valido per almeno 14 giorni dalla data corrente.
 
-* **Arancione**: indica che la scadenza del certificato è tra meno di 60 giorni.
+* **Arancione**: indica che la scadenza del certificato è tra meno di 14 giorni.
    * In questo momento è necessario verificare di disporre di un piano per il rinnovo del certificato e sostituirlo tramite l’interfaccia utente di Cloud Manager, per evitare possibili accessi o interruzioni del sito.
    * Cloud Manager invia notifiche regolari nell’interfaccia utente per avvisarti della scadenza imminente del certificato.
 
