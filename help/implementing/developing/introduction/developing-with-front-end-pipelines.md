@@ -2,9 +2,9 @@
 title: Sviluppo di Sites con la pipeline front-end
 description: Con la pipeline front-end, viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può guadagnare una notevole velocità. Questo documento descrive alcune considerazioni particolari del processo di sviluppo front-end che devono essere fornite.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: de2d4355894d166d47f49a22af773b9e2c19e67b
+source-git-commit: 74e4c4cc57dbdc78b6c93efe78c856bdafbae477
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1169'
 ht-degree: 1%
 
 ---
@@ -20,17 +20,22 @@ ht-degree: 1%
 
 ## Contratto di sviluppo front-end {#front-end-build-contract}
 
-Simile a [ambiente di build full stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) la pipeline front-end ha un proprio ambiente. Gli sviluppatori hanno una certa flessibilità in questa pipeline purché venga rispettato il seguente contratto di sviluppo front-end.
+Simile a [ambiente di build full stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) la pipeline front-end ha un proprio ambiente. Gli sviluppatori possono utilizzare questa pipeline con una certa flessibilità, purché venga rispettato il seguente contratto di sviluppo front-end.
 
-La pipeline front-end richiede che il progetto Node.js front-end utilizzi il `build` direttiva script per generare la build distribuita dalla pipeline front-end. Ad esempio, Cloud Manager utilizza il comando `npm run build` per generare il progetto distribuibile in `dist` cartella.
+La pipeline front-end richiede che il progetto Node.js front-end utilizzi il `build` direttiva script per generare la build distribuita. Questo perché Cloud Manager utilizza il comando `npm run build` per generare il progetto distribuibile per la build front-end.
 
-Il contenuto della `dist` Cartella è ciò che viene distribuito in AEM as a Cloud Service dalla pipeline di Cloud Manager.
+Il contenuto risultante del `dist` Cartella è ciò che viene distribuito da Cloud Manager, che funge da file statici. Questi file sono ospitati esternamente all’AEM, ma sono resi disponibili tramite un `/content/...` URL nell’ambiente distribuito.
 
-### Versioni dei nodi {#node-versions}
+## Versioni dei nodi {#node-versions}
 
-Per impostazione predefinita, la pipeline front-end utilizza il nodo 14, ma sono disponibili anche i nodi 12, 16 e 18.
+L’ambiente di sviluppo front-end supporta le seguenti versioni di Node.js.
 
-È possibile utilizzare `NODE_VERSION` variabile di ambiente per impostare la versione desiderata.
+* 12
+* 14 (predefinito)
+* 16
+* 18
+
+È possibile utilizzare `NODE_VERSION` [variabile di ambiente](/help/implementing/cloud-manager/environment-variables.md) per impostare la versione desiderata.
 
 ## Sorgente unica di verità {#single-source-of-truth}
 
