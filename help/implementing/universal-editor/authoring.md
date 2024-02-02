@@ -2,10 +2,10 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: a616b27c5212b00d3b51778402ed52a68028fdaf
 workflow-type: tm+mt
-source-wordcount: '2165'
-ht-degree: 38%
+source-wordcount: '2189'
+ht-degree: 37%
 
 ---
 
@@ -295,11 +295,14 @@ Inoltre, i dettagli sul testo sono disponibili nella barra delle proprietà. Le 
 
 Per modificare il testo nella posizione desiderata, fai doppio clic o tocca due volte il componente.
 
-Per salvare le modifiche, premere Invio/Ritorna o selezionare all&#39;esterno della casella.
-
 ![Modifica di un componente formato RTF](assets/rich-text-editing.png)
 
-Inoltre, le opzioni di formattazione e i dettagli sul testo sono disponibili nella barra delle proprietà. Le modifiche vengono salvate automaticamente una volta che lo stato attivo lascia il campo modificato nella barra delle proprietà.
+Per comodità, le opzioni di formattazione e i dettagli del testo sono disponibili in due posizioni.
+
+* Il **menu di scelta rapida** si apre sopra il blocco di testo RTF e offre opzioni di formattazione di base nel contesto. A causa di limiti di spazio, alcune opzioni potrebbero essere nascoste dietro il pulsante con i puntini di sospensione.
+* Il **barra delle proprietà** mostra tutte le opzioni di formattazione disponibili insieme al testo.
+
+Le modifiche vengono salvate automaticamente quando lo stato attivo lascia il campo modificato.
 
 ### Editing di file multimediali {#edit-media}
 
