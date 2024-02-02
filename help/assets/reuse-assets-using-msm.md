@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 9e0aefa096a493df22860d0194a0a76f3eaf2390
 workflow-type: tm+mt
-source-wordcount: '3403'
-ht-degree: 11%
+source-wordcount: '3400'
+ht-degree: 10%
 
 ---
 
@@ -248,8 +248,8 @@ Per visualizzare gli stati e le informazioni relativi a un’azione di sincroniz
 Puoi annullare l’ereditarietà della Live Copy per:
 
 * campo metadati
-* Variante del frammento di contenuto
-* Campo dati Frammento di contenuto
+* [Variante del frammento di contenuto](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+* [Campo dati Frammento di contenuto](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
 
 Ciò significa che l’elemento non è più sincronizzato con il componente di origine. Se necessario, puoi abilitare l’ereditarietà in un momento successivo.
 
@@ -261,9 +261,9 @@ Per annullare l&#39;ereditarietà:
 
    ![L&#39;azione Sincronizza richiama le modifiche apportate all&#39;origine](assets/cancel-inheritance-icon.png)
 
-1. Nella finestra di dialogo Annulla ereditarietà conferma l’azione tramite Sì.
+1. Nella finestra di dialogo Annulla ereditarietà, conferma l’azione con Sì.
 
-### Riattiva ereditarietà {#reenable-inheritance}
+### Riabilita ereditarietà {#reenable-inheritance}
 
 Per riabilitare l&#39;ereditarietà:
 
@@ -319,7 +319,7 @@ Se in una cartella Live Copy sono presenti più risorse, l’avvio di azioni su 
 
 1. Selezionare una cartella di origine. Clic **[!UICONTROL Proprietà]** dalla barra degli strumenti. In alternativa, utilizza la scelta rapida da tastiera `p`.
 1. Fai clic su **[!UICONTROL Origine Live Copy]**. Per aprire la console, fai clic su **[!UICONTROL Panoramica Live Copy]**.
-1. In questo dashboard, seleziona una risorsa Live Copy da una cartella Live Copy. Nella barra degli strumenti, scegli le azioni desiderate. Le azioni disponibili sono: **[!UICONTROL Sincronizza]**, **[!UICONTROL Reimposta]**, **[!UICONTROL Sospendi]** e **[!UICONTROL Stacca]**. Puoi avviare rapidamente queste azioni su qualsiasi risorsa in un numero qualsiasi di cartelle Live Copy che si trovano in una relazione live con la cartella di origine selezionata.
+1. In questo dashboard, seleziona una risorsa Live Copy da una cartella Live Copy. Nella barra degli strumenti, scegli le azioni desiderate. Le azioni disponibili sono **[!UICONTROL Sincronizza]**, **[!UICONTROL Reimposta]**, **[!UICONTROL Sospendi]**, e **[!UICONTROL Stacca]**. Puoi avviare rapidamente queste azioni su qualsiasi risorsa in un numero qualsiasi di cartelle Live Copy che si trovano in una relazione live con la cartella di origine selezionata.
 
    ![Aggiornare facilmente molte risorse nelle cartelle Live Copy dalla console Panoramica Live Copy](assets/livecopyconsole_update_many_assets.png)
 
