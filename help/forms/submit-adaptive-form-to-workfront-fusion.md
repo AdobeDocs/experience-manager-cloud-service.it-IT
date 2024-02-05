@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
+source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -22,6 +22,7 @@ ht-degree: 0%
 Utilizzando Workfront Fusion, ad esempio, puoi creare uno scenario per raccogliere dati con un modulo adattivo, elaborarli e inviarli a un archivio dati per l’archiviazione. Una volta configurato uno scenario, Workfront Fusion esegue automaticamente le attività ogni volta che un utente compila un modulo, aggiornando senza problemi l’archivio dati.
 
 AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione delle richieste di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md)  articolo.
+
 
 ## Vantaggi dell&#39;utilizzo di Adobe Workfront Fusion{#advatages-of-workfront-fusion}
 
