@@ -1,11 +1,11 @@
 ---
-title: Attributi e tipi di articolo
+title: Attributi e tipi di elementi
 description: Scopri gli attributi di dati e i tipi di elementi richiesti dall’editor universale.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: ff8a832d61e42ac17ca37e5a3c41e39119879af6
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 76%
+ht-degree: 75%
 
 ---
 
@@ -30,11 +30,11 @@ Affinché un’app possa essere modificata dall’editor universale, deve essere
 |---|---|
 | `data-aue-resource` | Per l’URN della risorsa, consulta la sezione [Instrumenta la pagina del documento Guida introduttiva all’editor universale in AEM](getting-started.md#instrument-thepage) |
 | `data-aue-prop` | Per l’attributo della risorsa, consulta la sezione [Instrumenta la pagina del documento Guida introduttiva all’editor universale in AEM](getting-started.md#instrument-thepage) |
-| `data-aue-type` | Tipo dell’elemento modificabile (ad esempio testo, immagine e riferimento) |
+| `data-aue-type` | [Tipo di elemento modificabile](#item-types) (ad esempio testo, immagine e riferimento) |
 | `data-aue-filter` | Definisce quali riferimenti possono essere utilizzati |
 | `data-aue-label` | Definisce un’etichetta personalizzata per un elemento selezionabile visualizzato nell’editor. <br>Nel caso in cui`itemmodel` sia impostata, l’etichetta viene recuperata tramite il modello. |
 | `data-aue-model` | Definisce un modello che viene utilizzato per la modifica basata su modulo nella barra delle proprietà |
-| `data-aue-behavior` | Definisce il comportamento di una strumentazione, ad esempio un testo o un&#39;immagine isolati possono simulare un componente per renderlo spostabile o eliminabile |
+| `data-aue-behavior` | Definisce il [comportamento di uno strumento,](#behaviors) ad esempio, testo o immagine autonomi possono anche imitare un componente per renderlo spostabile o eliminabile |
 
 ## Tipi di elementi {#item-types}
 
