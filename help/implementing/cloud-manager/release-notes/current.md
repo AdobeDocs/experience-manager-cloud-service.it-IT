@@ -4,9 +4,9 @@ description: Queste sono le note sulla versione 2024.1.0 di Cloud Manager in AEM
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -21,30 +21,30 @@ Questa pagina illustra le note sulla versione 2024.1.0 di Cloud Manager in AEM a
 
 ## Data di pubblicazione {#release-date}
 
-La data di pubblicazione di Cloud Manager versione 2024.1.0 in AEM as a Cloud Service è il 18 gennaio 2024. La prossima versione è prevista per il 16 febbraio 2024.
+La data di rilascio della versione 2024.1.0 di Cloud Manager in AEM as a Cloud Service è il 18 gennaio 2024. La prossima versione è prevista per il 16 febbraio 2024.
 
 ## Novità {#what-is-new}
 
-* Cloud Manager ora convalida le date di scadenza non solo per il [certificato,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) ma anche per i certificati intermedi.
-* CDN [registri](/help/implementing/cloud-manager/manage-logs.md) vengono ora restituiti in formato compresso.
+* Cloud Manager ora convalida le date di scadenza non solo per il [certificato](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) principale, ma anche per i certificati intermedi.
+* I [registri](/help/implementing/cloud-manager/manage-logs.md) CDN vengono ora restituiti in formato compresso.
 
 ## Programma per i primi utilizzatori {#early-adoption}
 
-Per testare alcune delle prossime funzionalità, partecipa al programma di adozione anticipata di Adobe.
+Per testare alcune delle prossime funzionalità, partecipa al programma dei primi utilizzatori di Adobe.
 
-### Raccolta lato client tramite Real User Monitoring (RUM) {#rum}
+### Raccolta lato client tramite il Monitoraggio degli utenti reali (RUM) {#rum}
 
-Puoi sfruttare [Servizio dati di Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) per abilitare la raccolta lato client per AEM as a Cloud Service.
+Puoi sfruttare il [Servizio dati del Monitoraggio degli utenti reali (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) per abilitare la raccolta lato client per AEM as a Cloud Service.
 
-Real User Monitoring (RUM) Data Service offre un riflesso più preciso delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web. È un’ottima opportunità per ottenere informazioni avanzate sulle prestazioni della pagina. Questa funzione è utile per i clienti che utilizzano una rete CDN gestita da Adobe o una rete CDN gestita da non Adobe. Per i clienti che utilizzano una rete CDN gestita non basata su Adobi, ora è possibile abilitare il reporting automatico del traffico, eliminando in tal modo la necessità di condividere eventuali rapporti sul traffico con Adobe.
+Il servizio dati del monitoraggio utenti reali (RUM) offre una panoramica più precisa delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web. Rappresenta un’ottima opportunità per ottenere informazioni avanzate sulle prestazioni della pagina. Questa funzione è utile per chi utilizza una rete CDN gestita o non gestita da Adobe. Per chi utilizza una rete CDN non gestita da Adobe, ora è possibile abilitare il reporting automatico del traffico, eliminando in tal modo la necessità di condividere eventuali rapporti sul traffico con Adobe.
 
-Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un’e-mail a `aemcs-rum-adopter@adobe.com` dall’indirizzo e-mail associato al tuo Adobe ID. Includi il nome di dominio per gli ambienti di produzione, staging e sviluppo nell’e-mail.  La disponibilità del programma di adozione anticipata di questa funzione è limitata.
+Se ti interessa testare questa nuova funzionalità e condividere il tuo feedback, invia un’e-mail a `aemcs-rum-adopter@adobe.com` dall’indirizzo e-mail associato al tuo Adobe ID. Includi il nome di dominio per gli ambienti di produzione, staging e sviluppo nell’e-mail.  La disponibilità del programma per i primi utilizzatori di questa funzione è limitata.
 
 ### Porta il tuo GitHub personale {#byo-github}
 
 Se utilizzi GitHub per gestire gli archivi, [ora puoi convalidare il codice direttamente all’interno degli archivi GitHub tramite Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) Questa integrazione elimina la necessità di sincronizzare in modo coerente il codice con l’archivio Adobe e consente di verificare le richieste pull prima di unirle ai rami principali.
 
-Se ti interessa testare questa nuova funzione e condividere i tuoi commenti, invia un’e-mail a `Grp-CloudManager_BYOG@adobe.com` dal tuo indirizzo e-mail associato al tuo Adobe ID.
+Se ti interessa testare questa nuova funzionalità e condividere il tuo feedback, invia un’e-mail a `Grp-CloudManager_BYOG@adobe.com` dall’indirizzo e-mail associato al tuo Adobe ID.
 
 ### Ripristino del contenuto self-service {#content-restore}
 
@@ -53,21 +53,21 @@ Se ti interessa testare questa nuova funzione e condividere i tuoi commenti, inv
 * Ripristino del backup in un momento specifico per le 24 ore precedenti
 * Ripristini a tempo fisso per un massimo di sette giorni
 
-Se ti interessa testare questa nuova funzione e condividere i tuoi commenti, invia un’e-mail a `aemcs-restorefrombackup-adopter@adobe.com` dall’e-mail associata al tuo Adobe ID.
+Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un’e-mail a `aemcs-restorefrombackup-adopter@adobe.com` dall’e-mail associata al tuo Adobe ID.
 
 * Il programma di adozione anticipata è limitato solo agli ambienti di sviluppo.
-* La disponibilità del programma di adozione anticipata di questa funzione è limitata.
+* La disponibilità del programma per i primi utilizzatori di questa funzione è limitata.
 * Questa funzione consente di ripristinare i contenuti eliminati accidentalmente e non è destinata al ripristino di emergenza.
 
 ### Dashboard di Experience Audit {#experience-audit-dashboard}
 
 La [dashboard di Audit dell’esperienza di Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) include una vista dei trend dei punteggi delle prestazioni della pagina, oltre a insight e consigli per aiutarti a migliorarli. La funzione Audit dell’esperienza è inclusa come passaggio nella pipeline di produzione di Cloud Manager.
 
-La dashboard utilizza Google Lighthouse, uno strumento open-source automatizzato per migliorare la qualità delle app web. Puoi eseguirla su qualsiasi pagina web, pubblica o che richiede l’autenticazione. Sono disponibili audit di prestazioni, accessibilità, applicazioni web progressive, SEO e altro ancora.
+La dashboard sfrutta Google Lighthouse, uno strumento open-source automatizzato per migliorare la qualità delle app web. Puoi eseguirla su qualsiasi pagina web pubblica o che richiede l’autenticazione. Sono disponibili audit di prestazioni, accessibilità, applicazioni web progressive, SEO e altro ancora.
 
 Ti interessa testare la nuova dashboard? Per iniziare, invia un’e-mail a `aem-lighthouse-pilot@adobe.com` dall’e-mail associata al tuo Adobe ID.
 
 ## Correzioni di bug {#bug-fixes}
 
-* È stato corretto un errore a causa del quale le pipeline di configurazione non riuscivano nella fase di build con un messaggio di errore non chiaro se il percorso dei file di configurazione non era impostato correttamente. Il messaggio di errore è ora chiaro e indica che l’utente deve verificare che il percorso dei file di configurazione sia corretto.
+* È stato corretto un errore a causa del quale le pipeline di configurazione non riuscivano nel passaggio della build con un messaggio di errore non chiaro se il percorso dei file di configurazione non era impostato correttamente. Il messaggio di errore è ora chiaro e indica che l’utente deve verificare che il percorso dei file di configurazione sia corretto.
 * Quando un passaggio della build termina con lo stato `FAILED` a causa di un `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, ora è descritto correttamente come un errore dovuto all’unione di conflitti con il ramo di destinazione.

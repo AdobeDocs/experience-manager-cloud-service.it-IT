@@ -3,16 +3,16 @@ title: Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
 description: Comprendi come scrivere e amministrare AEM Sites as a Cloud Service, nonché conoscere le modifiche significative apportate ad AEM Sites in AEM Cloud Service.
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # Modifiche di rilievo apportate ad AEM Sites as a Cloud Service {#notable-changes}
 
-AEM Sites as a Cloud Service fornisce funzionalità di gestione delle esperienze come parte della piattaforma nativa per il cloud AEM as a Cloud Service. Oltre ai vantaggi principali di AEM as a Cloud Service, come la scalabilità nativa per il cloud, i tempi di attività e l’aggiornamento costante, AEM Sites as a Cloud Service fornisce anche diverse modifiche e aggiunte specifiche per Sites.
+AEM Sites as a Cloud Service fornisce funzionalità di gestione delle esperienze come parte della piattaforma nativa per il cloud AEM as a Cloud Service. Oltre ai vantaggi principali di AEM as a Cloud Service, come la scalabilità nativa per il cloud, il tempo di attività e l’aggiornamento costante, AEM Sites as a Cloud Service fornisce anche alcune modifiche e aggiunte specifiche per Sites.
 
 >[!NOTE]
 >Questo documento evidenzia le modifiche di rilievo apportate ad AEM Sites. Per le modifiche generali di AEM as a Cloud Service e altri moduli, vedi:
@@ -41,7 +41,7 @@ L’iniziatore di tali azioni può controllarne lo stato in una nuova interfacci
 
 >[!NOTE]
 >
->L&#39;utente del sistema non deve apportare alcuna modifica per utilizzare questa nuova funzione. Questa nota indica semplicemente un cambiamento di comportamento rispetto alle versioni on-premise precedenti di AEM.
+>L’utente del sistema non deve apportare alcuna modifica per utilizzare questa nuova funzione. Questa nota indica semplicemente un cambiamento di comportamento rispetto alle versioni on-premise precedenti di AEM.
 
 ## Nuovo sito di riferimento e tutorial {#new-reference-site-and-tutorial}
 

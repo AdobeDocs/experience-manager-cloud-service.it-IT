@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Per supportare operazioni di crittografia asimmetriche, AEM memorizza i certific
 
 ### Caratteristiche del TrustStore {#truststore-characteristics}
 
-* Il TrustStore si trova sotto `/etc/truststore` ed è costituito da un file Java KeyStore, dalla password dell’archivio chiavi e dai metadati dell’archivio. Sia la password che il keystore stesso sono crittografati per motivi tecnici, anche se i certificati contenuti sono accessibili a tutti per impostazione predefinita tramite l’API
+* Il TrustStore si trova sotto `/etc/truststore` ed è costituito da un file Java KeyStore, dalla password dell’archivio chiavi e dai metadati dell’archivio. Sia la password che l’archivio chiavi sono crittografati per motivi tecnici, anche se i certificati contenuti sono accessibili a tutti per impostazione predefinita tramite l’API
 * I certificati preconfigurati vengono utilizzati solo per il supporto HTTPS e SAML e l’archivio deve essere creato manualmente prima
 * I clienti possono utilizzarlo nel proprio codice tramite l’[API dell’archivio chiavi](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * Il TrustStore può essere gestito tramite l’interfaccia utente in **Strumenti** - **Sicurezza** - **TrustStore** o tramite l’accesso a *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, come illustrato di seguito:

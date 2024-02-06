@@ -3,9 +3,9 @@ title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3350'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Questo articolo è suddiviso nelle sezioni seguenti:
 * **Panoramica sulla protezione del traffico:** scopri in che modo sei protetto dal traffico dannoso.
 * **Processo consigliato per la configurazione delle regole:** scopri una metodologia di alto livello per proteggere il tuo sito web.
 * **Configurazione:** scopri come impostare, configurare e distribuire le regole del filtro del traffico, incluse le regole WAF avanzate.
-* **Sintassi delle regole:** scopri come dichiarare le regole del filtro del traffico nel file di configurazione `cdn.yaml`. Ciò include sia le regole del filtro del traffico disponibili per tutti i clienti Sites e Forms, sia la sottocategoria delle regole WAF per coloro che concedono in licenza tale funzionalità.
+* **Sintassi delle regole:** scopri come dichiarare le regole del filtro del traffico nel file di configurazione `cdn.yaml`. Questa sezione include sia le regole del filtro del traffico disponibili per tutta la clientela di Sites e Forms, nonché la sottocategoria delle regole WAF per coloro che concedono in licenza tale funzionalità.
 * **Esempi di regole:** per orientarti meglio, consulta alcuni esempi di regole dichiarate.
 * **Regole dei limiti di frequenza:** scopri come utilizzare le regole dei limiti di frequenza per proteggere il sito da attacchi con volumi elevati.
 * **Registri CDN:** scopri quali regole dichiarate e contrassegni WAF corrispondono al tuo traffico.
@@ -54,7 +54,7 @@ Per impostazione predefinita, Adobe adotta misure per evitare la riduzione delle
 
 La clientela può adottare misure proattive per mitigare gli attacchi a livello di applicazione (livello 7), configurando regole a vari livelli del flusso di distribuzione dei contenuti.
 
-Ad esempio, al livello Apache, è possibile configurare il [modulo Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter) o [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html) per limitare l’accesso a determinati contenuti.
+Ad esempio, al livello Apache, è possibile configurare il [modulo Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#configuring-access-to-content-filter) o [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=it) per limitare l’accesso a determinati contenuti.
 
 Come descritto in questo articolo, le regole del filtro del traffico possono essere distribuite alla rete CDN gestita da Adobe, utilizzando la pipeline di configurazione di Cloud Manager. Oltre alle regole del filtro del traffico basate su proprietà come indirizzo IP, percorso e intestazioni, o alle regole basate sull’impostazione dei limiti di frequenza, è possibile anche concedere in licenza una potente sottocategoria di regole del filtro del traffico, chiamate regole WAF.
 
@@ -79,7 +79,7 @@ Di seguito è riportato un processo end-to-end di alto livello consigliato per i
         cdn.yaml
    ```
 
-1. `cdn.yaml` deve contenere metadati e un elenco di regole dei filtri di traffico e regole WAF.
+1. `cdn.yaml` deve contenere metadati nonché un elenco di regole dei filtri di traffico e regole WAF.
 
    ```
    kind: "CDN"
@@ -120,7 +120,7 @@ Per gli RDE verrà utilizzata la riga di comando, ma al momento RDE non è suppo
 
 **Note**
 
-* È possibile utilizzare `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad esempio, `yq cdn.yaml`).
+* Puoi utilizzare `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad es. `yq cdn.yaml`).
 
 ## Sintassi delle regole del filtro del traffico {#rules-syntax}
 
@@ -149,7 +149,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-Il formato delle regole per il filtro del traffico nel file `cdn.yaml` è descritto di seguito. Vedi un po&#39; [altri esempi](#examples) in una sezione successiva e in una sezione separata su [Regole di limite di tasso](#rate-limit-rules).
+Il formato delle regole per il filtro del traffico nel file `cdn.yaml` è descritto di seguito. Trovi alcuni [altri esempi](#examples) in una sezione successiva, nonché in una sezione separata su [Regole di limite di tasso](#rate-limit-rules).
 
 
 | **Proprietà** | **Regole di filtro del traffico più frequenti** | **Regole di filtro del traffico WAF** | **Tipo** | **Valore predefinito** | **Descrizione** |
@@ -192,7 +192,7 @@ Un gruppo di condizioni è composto da più condizioni semplici e/o da condizion
 
 | **Proprietà** | **Tipo** | **Descrizione** |
 |---|---|---|
-| reqProperty | `string` | Proprietà richiesta.<br><br>Una di:<br><ul><li>`path`: restituisce il percorso completo di un URL senza i parametri di query.</li><li>`queryString`: restituisce la parte query di un URL</li><li>`method`: restituisce il metodo HTTP utilizzato nella richiesta.</li><li>`tier`: restituisce uno tra `author`, `preview` o `publish`.</li><li>`domain`: restituisce la proprietà del dominio (come definito nell’intestazione `Host`) in minuscolo</li><li>`clientIp`: restituisce l’IP del client.</li><li>`clientCountry`: restituisce un codice di due lettere ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) che identifica il paese in cui si trova il client.</li></ul> |
+| reqProperty | `string` | Proprietà richiesta.<br><br>Una di:<br><ul><li>`path`: restituisce il percorso completo di un URL senza i parametri di query.</li><li>`queryString`: restituisce la parte di query di un URL</li><li>`method`: restituisce il metodo HTTP utilizzato nella richiesta.</li><li>`tier`: restituisce uno tra `author`, `preview` o `publish`.</li><li>`domain`: restituisce la proprietà del dominio (come definito nell’intestazione `Host`) in minuscolo</li><li>`clientIp`: restituisce l’IP del client.</li><li>`clientCountry`: restituisce un codice di due lettere ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) che identifica il paese in cui si trova il client.</li></ul> |
 | reqHeader | `string` | Restituisce l’intestazione di richiesta con il nome specificato |
 | queryParam | `string` | Restituisce il parametro di query con il nome specificato |
 | reqCookie | `string` | Restituisce il cookie con il nome specificato |
@@ -416,9 +416,9 @@ I limiti di tasso vengono calcolati per POP CDN. Ad esempio, supponiamo che i PO
 | **Proprietà** | **Tipo** | **Predefinito** | **SIGNIFICATO** |
 |---|---|---|---|
 | limite | numero intero da 10 a 10000 | obbligatorio | Frequenza di richiesta (per POP CDN) nelle richieste al secondo per le quali viene attivata la regola. |
-| finestra | numero intero: 1, 10 o 60 | 10 | Finestra di campionamento in secondi per la quale viene calcolato il tasso di richiesta. La precisione dei contatori dipende dalle dimensioni della finestra (maggiore finestra, maggiore precisione). Ad esempio, è possibile prevedere una precisione del 50% per la finestra di 1 secondo e del 90% per la finestra di 60 secondi. |
+| finestra | numero intero: 1, 10 o 60 | 10 | Finestra di campionamento in secondi per la quale viene calcolato il tasso di richiesta. La precisione dei contatori dipende dalle dimensioni della finestra (maggiore finestra, maggiore precisione). Ad esempio, ci si può aspettare una precisione del 50% per la finestra di 1 secondo e del 90% per la finestra di 60 secondi. |
 | penalità | numero intero compreso tra 60 e 3600 | 300 (5 minuti) | Un periodo in secondi per il quale le richieste corrispondenti vengono bloccate (arrotondato al minuto più vicino). |
-| groupBy | array[Getter] | nessuno | il contatore del limitatore di velocità verrà aggregato da un set di proprietà di richiesta (ad esempio, clientIp). |
+| groupBy | array[Getter] | nessuno | il contatore del limitatore di frequenza verrà aggregato da un set di proprietà di richiesta (ad esempio clientIp). |
 
 
 ### Esempi {#ratelimiting-examples}
@@ -471,7 +471,7 @@ data:
 
 AEM as a Cloud Service fornisce accesso ai registri CDN, utili per i casi d’uso tra cui l’ottimizzazione del rapporto hit della cache e la configurazione delle regole del filtro del traffico. I registri CDN vengono visualizzati nella finestra di dialogo di Cloud Manager **Scarica registri** durante la selezione del servizio di authoring o di pubblicazione.
 
-I registri CDN possono essere ritardati di un massimo di cinque minuti.
+I registri CDN possono subire un ritardo fino a 5 minuti.
 
 La proprietà `rules` descrive le regole del filtro del traffico corrispondenti e presenta il seguente pattern:
 
@@ -489,7 +489,7 @@ Le regole si comportano nel modo seguente:
 
 * Il nome dichiarato dal cliente della regola di qualsiasi regola con una corrispondenza verrà elencato nell’attributo `match`.
 * L’attributo `action` determina se le regole hanno avuto l’effetto di bloccare, consentire o registrare.
-* Se la WAF è concessa in licenza e abilitata, `waf` Questo attributo elenca tutti i flag WAF (ad esempio, SQLI) rilevati, indipendentemente dal fatto che i flag WAF siano elencati o meno in una delle regole. Questo serve a ottenere informazioni dettagliate su possibili nuove regole da dichiarare.
+* Se WAF è concesso in licenza e abilitato, l’attributo `waf` elenca tutti i contrassegni WAF (ad esempio, SQLI) rilevati, indipendentemente dal fatto che i contrassegni WAF siano elencati o meno in una delle regole. Questo serve a ottenere informazioni dettagliate su possibili nuove regole da dichiarare.
 * Se nessuna regola dichiarata dal cliente corrisponde e nessuna regola waf corrisponde, la proprietà `rules` sarà vuota.
 
 Come indicato in precedenza, le corrispondenze delle regole WAF vengono visualizzate solo nei registri CDN per CDN miss e pass, non per hit.
@@ -587,7 +587,7 @@ Gli strumenti della dashboard possono essere clonati direttamente dall’archivi
 
 ## Regole iniziali consigliate {#recommended-starter-rules}
 
-Puoi copiare le regole consigliate di seguito nel tuo `cdn.yaml` per iniziare. Inizia in modalità registro, analizza il traffico e, quando il risultato è soddisfacente, passa alla modalità blocco. Puoi modificare le regole in base alle caratteristiche univoche del traffico live del sito web.
+Puoi copiare le regole consigliate di seguito nel tuo `cdn.yaml` per iniziare. Inizia in modalità registro, analizza il traffico e, quando il risultato è soddisfacente, passa alla modalità blocco. Puoi modificare le regole in base alle caratteristiche specifiche del traffico live del tuo sito Web.
 
 ```
 kind: "CDN"

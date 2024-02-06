@@ -3,9 +3,9 @@ title: Funzioni obsolete e rimosse
 description: Note sulla versione specifiche per le funzioni obsolete e rimosse in  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: cb2c883fbadc5347dbe5fc50337abc41d4f5cec3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2068'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
 | [!DNL Assets] | [Alcuni passaggi](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) del flusso di lavoro `DAM Asset Update` non sono supportati, inclusa la chiamata di strumenti della riga di comando come [!DNL ImageMagick]. | [I microservizi per le risorse](/help/assets/asset-microservices-overview.md) sostituiscono numerosi flussi di lavoro. Per l’elaborazione personalizzata, utilizza i [flussi di lavoro di post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | Transcodifica FFmpeg dei video. | Per generare le miniature FFmpeg, utilizza i [microservizi per le risorse](/help/assets/asset-microservices-overview.md). Per la transcodifica FFmpeg, utilizza [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Interfaccia utente di replica ad albero nella scheda “Distribuisci” dell’agente di replica (rimozione dopo il 30 settembre 2021) | [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o approcci al [flusso di lavoro della struttura dei contenuti di pubblicazione](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Né la scheda Distribuisci nella schermata di amministrazione dell’agente di replica né l’API di replica possono essere utilizzate per replicare pacchetti di contenuti superiori a 10 MB. Invece, utilizza [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [flusso di lavoro per la pubblicazione della struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Né la scheda Distribuzione nella schermata di amministrazione dell’agente di replica né l’API di replica possono essere utilizzate per replicare pacchetti di contenuti superiori a 10 MB. È invece possibile utilizzare [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o il [flusso di lavoro della struttura dei contenuti di pubblicazione](/help/operations/replication.md#publish-content-tree-workflow) |
 
 ## Funzioni rimosse {#removed-features}
 
@@ -61,27 +61,27 @@ In questa sezione sono elencate le funzionalità che sono state rimosse da [!DNL
 
 ## Configurazione OSGI {#osgi-configuration}
 
-I due elenchi seguenti riflettono l’area di configurazione OSGi as a Cloud Service all’AEM e descrivono cosa possono configurare i clienti.
+I due elenchi seguenti riflettono l’area di configurazione OSGi di AEM as a Cloud Service e descrivono che cosa è possibile configurare.
 
 1. Elenco di configurazioni OSGi che non devono essere configurate dal codice cliente
-1. Un elenco di configurazioni OSGi le cui proprietà possono essere configurate, ma devono rispettare le regole di convalida indicate. Queste regole includono se è necessaria la dichiarazione della proprietà, il suo tipo e, in alcuni casi, l’intervallo di valori consentito.
+1. Un elenco di configurazioni OSGi le cui proprietà possono essere configurate, ma devono rispettare le regole di convalida indicate. Queste regole includono se è necessaria la dichiarazione della proprietà, il tipo e, in alcuni casi, l’intervallo di valori consentito.
 
-Se una configurazione OSGI non è elencata, potrebbe essere configurata dal codice del cliente.
+Se una configurazione OSGI non è elencata, potrebbe essere configurata dal codice cliente.
 
-Queste regole vengono convalidate durante il processo di build di Cloud Manager. Con il passare del tempo è possibile aggiungere altre regole e la data di applicazione prevista è indicata nella tabella. I clienti sono tenuti a rispettare queste regole entro la data di applicazione prevista. Il mancato rispetto delle regole dopo la data di rimozione genererà errori nel processo di compilazione di Cloud Manager. I progetti Maven devono includere [Plug-in Maven per SDK Build Analyzer per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it) per segnalare gli errori di configurazione OSGI durante lo sviluppo dell’SDK locale.
+Queste regole vengono convalidate durante il processo di compilazione di Cloud Manager. Con il passare del tempo è possibile aggiungere altre regole e la data di applicazione prevista è indicata nella tabella. I clienti sono tenuti a rispettare queste regole entro la data di applicazione prevista. Il mancato rispetto delle regole dopo la data di rimozione genererà errori nel processo di compilazione di Cloud Manager. I progetti Maven devono includere [plug-in Maven di Build Analyzer nell’SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it) per segnalare gli errori di configurazione OSGI durante lo sviluppo dell’SDK locale.
 
-Ulteriori informazioni sulla configurazione OSGI sono disponibili all’indirizzo [questa posizione](/help/implementing/deploying/configuring-osgi.md).
+Ulteriori informazioni sulla configurazione OSGI sono disponibili in [questa posizione](/help/implementing/deploying/configuring-osgi.md).
 
 +++Configurazioni OSGi che non possono essere modificate.
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Data notifica: 4/30/2021, Data applicazione: 7/31/2021)
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Data notifica: 4/30/2021, Data applicazione: 7/31/2021)
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Data notifica: 4/30/2021, Data applicazione: 7/31/2021)
-* **`org.apache.felix.http (Factory)`** (Data notifica: 4/30/2021, Data applicazione: 7/31/2021)
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Data notifica: 8/25/2021, Data applicazione: 11/26/2021)
+* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
+* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
+* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
+* **`org.apache.felix.http (Factory)`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Data annuncio: 25/8/2021, Data applicazione: 26/11/2021)
 +++
 
 +++Le configurazioni OSGi sono soggette alle regole di convalida della build.
-* **`org.apache.felix.eventadmin.impl.EventAdmin`** (Data notifica: 4/30/2021, Data applicazione: 7/31/2021)
+* **`org.apache.felix.eventadmin.impl.EventAdmin`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
 * `org.apache.felix.eventadmin.ThreadPoolSize`
    * Tipo: numero intero
    * Intervallo richiesto: 2-100
@@ -93,11 +93,11 @@ Ulteriori informazioni sulla configurazione OSGI sono disponibili all’indirizz
    * Tipo: booleano
 * `org.apache.felix.eventadmin.IgnoreTimeout`
    * Obbligatorio
-   * Tipo: matrice di stringhe
+   * Tipo: array di stringhe
    * Intervallo richiesto: deve includere almeno tutti `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
 * `org.apache.felix.eventadmin.IgnoreTopic`
-   * Tipo: matrice di stringhe
-* **`org.apache.felix.http`** (Data notifica: 4/30/2021, Data applicazione: 7/31/2021)
+   * Tipo: array di stringhe
+* **`org.apache.felix.http`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
    * `org.apache.felix.http.timeout`
       * Tipo: numero intero
    * `org.apache.felix.http.session.timeout`
@@ -143,32 +143,32 @@ Ulteriori informazioni sulla configurazione OSGI sono disponibili all’indirizz
    * `org.apache.felix.jetty.gzip.excludedUserAgents`
       * Tipo: stringa
    * `org.apache.felix.jetty.gzip.includedMethods`
-      * Tipo: matrice di stringhe
+      * Tipo: array di stringhe
    * `org.apache.felix.jetty.gzip.excludedMethods`
-      * Tipo: matrice di stringhe
+      * Tipo: array di stringhe
    * `org.apache.felix.jetty.gzip.includedPaths`
-      * Tipo: matrice di stringhe
+      * Tipo: array di stringhe
    * `org.apache.felix.jetty.gzip.excludedPaths`
-      * Tipo: matrice di stringhe
+      * Tipo: array di stringhe
    * `org.apache.felix.jetty.gzip.includedMimeTypes`
-      * Tipo: matrice di stringhe
+      * Tipo: array di stringhe
    * `org.apache.felix.jetty.gzip.excludedMimeTypes`
-      * Tipo: matrice di stringhe
+      * Tipo: array di stringhe
    * `org.apache.felix.http.session.invalidate`
       * Tipo: booleano
    * `org.apache.felix.http.session.container.attribute`
-      * Tipo: matrice di stringhe
+      * Tipo: array di stringhe
    * `org.apache.felix.http.session.uniqueid`
       * Tipo: booleano
-* **`org.apache.sling.scripting.cache`** (Data notifica: 4/30/2021, Data applicazione: 7/31/2021)
+* **`org.apache.sling.scripting.cache`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
    * `org.apache.sling.scripting.cache.size`
       * Tipo: numero intero
       * Intervallo richiesto: >= 2048
    * `org.apache.sling.scripting.cache.additional_extensions`
       * Obbligatorio
-      * Tipo: matrice di stringhe
+      * Tipo: array di stringhe
       * Intervallo richiesto: deve includere js
-* **`com.day.cq.mailer.DefaultMailService`** (Data notifica: 4/30/2021, Data applicazione: 7/31/2021)
+* **`com.day.cq.mailer.DefaultMailService`** (Data annuncio:30/4/2021, Data applicazione: 31/7/2021)
    * `smtp.host`
       * Tipo: stringa
    * `smtp.port`
@@ -190,7 +190,7 @@ Ulteriori informazioni sulla configurazione OSGI sono disponibili all’indirizz
       * Tipo: booleano
    * `oauth.flow`
       * Tipo: booleano
-* **`org.apache.sling.commons.log.LogManager.factory.config`** (Data notifica: 11/16/21, Data applicazione: 2/16/21)
+* **`org.apache.sling.commons.log.LogManager.factory.config`** (Data annuncio: 16/11/21, Data applicazione: 16/2/21)
    * `org.apache.sling.commons.log.level`
       * Tipo: enumerazione
       * Intervallo richiesto: INFO, DEBUG o TRACE
@@ -202,7 +202,7 @@ Ulteriori informazioni sulla configurazione OSGI sono disponibili all’indirizz
       * Tipo: booleano
 +++
 
-## API AEM {#aem-apis}
+## API AEM {#aem-apis}
 
 Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa data di rimozione prevista. I clienti dovranno rimuovere le API dal proprio codice entro la data di rimozione prevista. L’eventuale uso delle API dopo la data di rimozione causerà errori nell’ambiente di SDK/sviluppo locale e nel processo di compilazione di Cloud Manager.
 
@@ -213,7 +213,7 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
     <th>Pacchetto/Classe</th>
     <th>Commenti</th>
     <th>Data di rimozione</th>
-    <th>Data di rimozione Target</th>
+    <th>Data di rimozione prevista</th>
   </tr>
 <tbody>
   <tr>
@@ -232,7 +232,7 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
     <td>com.day.cq.jcrclustersupport</td>
     <td>Utilizzare l’API Discovery di Sling in alternativa</td>
     <td>2015</td>
-    <td>rimossa</td>
+    <td>rimosso</td>
   </tr>
   <tr>
     <td>org.apache.sling.settings</td>
@@ -244,13 +244,13 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
     <td>org.apache.fop.apps</td>
     <td></td>
     <td>01/03/2021</td>
-    <td>rimossa</td>
+    <td>rimosso</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml.xerces.dom<br>org.apache.jackrabbit.vault.util.xml.xerces.util<br>org.apache.jackrabbit.vault.util.xml.xerces.xni<br>org.apache.jackrabbit.vault.util.xml.xerces.xni.parser</td>
     <td></td>
     <td>05/03/2021</td>
-    <td>rimossa</td>
+    <td>rimosso</td>
   </tr>
   <tr>
     <td>org.json</td>
@@ -262,7 +262,7 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
     <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
     <td>Gli strumenti personalizzati di gestione della persistenza non sono supportati in AEM as a Cloud Service.</td>
     <td>30/04/2021</td>
-    <td>rimossa</td>
+    <td>rimosso</td>
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
@@ -280,7 +280,7 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
     <td>org.apache.felix.systemready</td>
     <td>Si consiglia l’uso dell’API HealthCheck di Apache Felix</td>
     <td>30/04/2021</td>
-    <td>rimossa</td>
+    <td>rimosso</td>
   </tr>
   <tr>
     <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n</td>
@@ -304,13 +304,13 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
     <td>Il metatipo Apache Felix e le API SCR sono obsoleti.  Utilizza invece il metatipo OSGi e le API Declarative Service.</td>
     <td>27/05/2021</td>
-    <td>rimossa</td>
+    <td>rimosso</td>
   </tr>
   <tr>
     <td>org.slf4j.impl</td>
     <td>Le classi di implementazione dei registri non sono compatibili con AEM as a Cloud Service.</td>
     <td>04/07/2021</td>
-    <td>rimossa</td>
+    <td>rimosso</td>
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
@@ -328,19 +328,19 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
     <td>org.apache.sling.startupfilter<br>com.adobe.granite.crypto.spi<br>com.adobe.granite.crpyto.spi.base<br>com.adobe.agl.impl.data.icudt40b<br>com.adobe.agl.impl.data.icudt40b.brkitr<br>com.adobe.agl.impl.data.icudt40b.coll<br>com.adobe.agl.impl.data.icudt40b.rbnf<br>com.<br>adobe.agl.impl.data.icudt40b.translit<br>com.adobe.internal.pdf.tika<br>com.adobe.internal.pdftoolkit.color<br>com.adobe.internal.pdftoolkit.core.encryption<br>com.adobe.internal.pdftoolkit.core.encryption.impl<br>com.adobe.internal.pdftoolkit.core.traverser<br>com.adobe.internal.pdftoolkit.graphicsDOM<br>com.adobe.internal.pdftoolkit.graphicsDOM.shading<br>com.adobe.internal.pdftoolkit.graphicsDOM.utils<br>com.adobe.internal.pdftoolkit.image<br>com.adobe.internal.pdftoolkit.pdf.content<br>com.adobe.internal.pdftoolkit.pdf.content.processor<br>com.adobe.internal.pdftoolkit.pdf.content.processor.base14fontwidths<br>com.adobe.internal.pdftoolkit.pdf.contentmodify<br>com.adobe.internal.pdftoolkit.pdf.contentmodify.impl<br>com.adobe.internal.pdftoolkit.pdf.digsig<br>com.adobe.internal.pdftoolkit.pdf.document<br>com.adobe.internal.pdftoolkit.pdf.document.listener<br>com.adobe.internal.pdftoolkit.pdf.document.permissionhandlers<br>com.adobe.internal.pdftoolkit.pdf.filters<br>com.adobe.internal.pdftoolkit.pdf.graphics<br>com.adobe.internal.pdftoolkit.pdf.graphics.colorspaces<br>com.adobe.internal.pdftoolkit.pdf.graphics.colorspaces.cmykresources<br>com.adobe.internal.pdftoolkit.pdf.graphics.font<br>com.adobe.internal.pdftoolkit.pdf.graphics.font.encodings<br>com.adobe.internal.pdftoolkit.pdf.graphics.font.impl<br>com.adobe.internal.pdftoolkit.pdf.graphics.impl<br>com.adobe.internal.pdftoolkit.pdf.graphics.optionalcontent<br>com.adobe.internal.pdftoolkit.pdf.graphics.patterns<br>com.adobe.internal.pdftoolkit.pdf.graphics.shading<br>com.adobe.internal.pdftoolkit.pdf.graphics.xobject<br>com.adobe.internal.pdftoolkit.pdf.impl<br>com.adobe.internal.pdftoolkit.pdf.inlineimage<br>com.adobe.internal.pdftoolkit.pdf.interactive<br>com.adobe.internal.pdftoolkit.pdf.interactive.action<br>com.adobe.internal.pdftoolkit.pdf.interactive.annotation<br>com.adobe.internal.pdftoolkit.pdf.interactive.forms<br>com.adobe.internal.pdftoolkit.pdf.interactive.forms.impl<br>com.adobe.internal.pdftoolkit.pdf.interactive.geospatial<br>com.adobe.internal.pdftoolkit.pdf.interactive.markedcontent<br>com.adobe.internal.pdftoolkit.pdf.interactive.navigation<br>com.adobe.internal.pdftoolkit.pdf.interactive.navigation.collection<br>com.adobe.internal.pdftoolkit.pdf.interactive.readerrequirements<br>com.adobe.internal.pdftoolkit.pdf.interactive.requirement<br>com.adobe.internal.pdftoolkit.pdf.interchange<br>com.adobe.internal.pdftoolkit.pdf.interchange.documentparts<br>com.adobe.internal.pdftoolkit.pdf.interchange.metadata<br>com.adobe.internal.pdftoolkit.pdf.interchange.prepress<br>com.adobe.internal.pdftoolkit.pdf.interchange.structure<br>com.adobe.internal.pdftoolkit.pdf.multimedia<br>com.adobe.internal.pdftoolkit.pdf.page<br>com.adobe.internal.pdftoolkit.pdf.rendering<br>com.adobe.internal.pdftoolkit.pdf.transparency<br>com.adobe.internal.pdftoolkit.pdf.utils<br>com.adobe.internal.pdftoolkit.services.Jpeg2000<br>com.adobe.internal.pdftoolkit.services.fontresources<br>com.adobe.internal.pdftoolkit.services.fontresources.subsetting<br>com.adobe.internal.pdftoolkit.services.interchange.structure<br>com.adobe.internal.pdftoolkit.services.optionalcontent<br>com.adobe.internal.pdftoolkit.services.optionalcontent.impl<br>com.adobe.internal.pdftoolkit.services.pdfParser<br>com.adobe.internal.pdftoolkit.services.permissions<br>com.adobe.internal.pdftoolkit.services.rasterizer<br>com.adobe.internal.pdftoolkit.services.readingorder<br>com.adobe.internal.pdftoolkit.services.security<br>com.adobe.internal.pdftoolkit.services.swf<br>com.adobe.internal.pdftoolkit.services.textextraction<br>com.adobe.internal.pdftoolkit.services.textextraction.impl<br>com.adobe.internal.pdftoolkit.services.xmp<br>com.adobe.internal.util.base64<br>com.adobe.internal.xmp.utils<br>com.day.crx.core.cluster<br>com.day.crx.packaging<br>com.day.crx.packaging.gfx<br>com.day.crx.query<br>com.day.crx.sling.server.jmx<br>com.day.durbo<br>com.day.durbo.io<br>com.day.imageio.plugins<br>org.apache.aries.jmx.codec<br>org.h2.mvstore<br>org.h2.mvstore.rtree<br>org.h2.mvstore.type<br>org.openxmlformats.schemas.drawingml.x2006.chart.impl<br>org.openxmlformats.schemas.drawingml.x2006.main.impl<br>org.openxmlformats.schemas.drawingml.x2006.picture.impl<br>org.openxmlformats.schemas.drawingml.x2006.spreadsheetDrawing.impl<br>org.openxmlformats.schemas.drawingml.x2006.wordprocessingDrawing.impl<br>org.openxmlformats.schemas.officeDocument.x2006.customProperties.impl<br>org.openxmlformats.schemas.officeDocument.x2006.docPropsVTypes.impl<br>org.openxmlformats.schemas.officeDocument.x2006.extendedProperties.impl<br>org.openxmlformats.schemas.officeDocument.x2006.relationships.impl<br>org.openxmlformats.schemas.presentationml.x2006.main.impl<br>org.openxmlformats.schemas.spreadsheetml.x2006.main.impl<br>org.openxmlformats.schemas.wordprocessingml.x2006.main.impl<br>org.openxmlformats.schemas.xpackage.x2006.contentTypes<br>org.openxmlformats.schemas.xpackage.x2006.contentTypes.impl<br>org.openxmlformats.schemas.xpackage.x2006.digitalSignature<br>org.openxmlformats.schemas.xpackage.x2006.digitalSignature.impl<br>org.openxmlformats.schemas.xpackage.x2006.metadata.coreProperties<br>org.openxmlformats.schemas.xpackage.x2006.metadata.coreProperties.impl<br>org.openxmlformats.schemas.xpackage.x2006.relationships<br>org.openxmlformats.schemas.xpackage.x2006.relationships.impl<br>com.adobe.internal.afml<br>com.adobe.internal.agm<br>com.adobe.internal.pdftoolkit.legacy.services.ap.es2<br>com.adobe.internal.pdftoolkit.legacy.services.ap.es3<br>com.adobe.internal.pdftoolkit.pdf.pieceinfo.compoundtype<br>com.adobe.internal.pdftoolkit.pdf.pieceinfo.editablepdf<br>com.adobe.internal.pdftoolkit.services.ap<br>com.adobe.internal.pdftoolkit.services.ap.annot<br>com.adobe.internal.pdftoolkit.services.ap.extension<br>com.adobe.internal.pdftoolkit.services.ap.impl<br>com.adobe.internal.pdftoolkit.services.ap.spi<br>com.adobe.internal.pdftoolkit.services.digsig<br>com.adobe.internal.pdftoolkit.services.digsig.cryptoprovider<br>com.adobe.internal.pdftoolkit.services.digsig.docmodanalysis<br>com.adobe.internal.pdftoolkit.services.digsig.spi<br>com.adobe.internal.pdftoolkit.services.fdf<br>com.adobe.internal.pdftoolkit.services.formflattener<br>com.adobe.internal.pdftoolkit.services.forms<br>com.adobe.internal.pdftoolkit.services.imageconversion<br>com.adobe.internal.pdftoolkit.services.javascript<br>com.adobe.internal.pdftoolkit.services.javascript.extension<br>com.adobe.internal.pdftoolkit.services.manipulations<br>com.adobe.internal.pdftoolkit.services.manipulations.impl<br>com.adobe.internal.pdftoolkit.services.optimizer<br>com.adobe.internal.pdftoolkit.services.pdfa<br>com.adobe.internal.pdftoolkit.services.pdfa.error<br>com.adobe.internal.pdftoolkit.services.pdfa2<br>com.adobe.internal.pdftoolkit.services.pdfa2.error<br>com.adobe.internal.pdftoolkit.services.pdfa2.error.codes<br>com.adobe.internal.pdftoolkit.services.pdfa3<br>com.adobe.internal.pdftoolkit.services.pdfport<br>com.adobe.internal.pdftoolkit.services.portfolio<br>com.adobe.internal.pdftoolkit.services.rcg<br>com.adobe.internal.pdftoolkit.services.rcg.impl<br>com.adobe.internal.pdftoolkit.services.redaction<br>com.adobe.internal.pdftoolkit.services.redaction.handler<br>com.adobe.internal.pdftoolkit.services.sanitization<br>com.adobe.internal.pdftoolkit.services.xbm<br>com.adobe.internal.pdftoolkit.services.xdp<br>com.adobe.internal.pdftoolkit.services.xfa<br>com.adobe.internal.pdftoolkit.services.xfa.form<br>com.adobe.internal.pdftoolkit.services.xfatext<br>com.adobe.internal.pdftoolkit.services.xfdf<br>com.adobe.internal.pdftoolkit.services.xobjhandler<br>com.adobe.internal.pdftoolkit.xml<br>com.adobe.octopus.extract<br>opennlp.tools.doccat<br>opennlp.tools.entitylinker<br>opennlp.tools.formats<br>opennlp.tools.formats.ad<br>opennlp.tools.formats.brat<br>opennlp.tools.formats.convert<br>opennlp.tools.formats.frenchtreebank<br>opennlp.tools.formats.muc<br>opennlp.tools.formats.ontonotes<br>opennlp.tools.lemmatizer<br>opennlp.tools.parser<br>opennlp.tools.parser.chunking<br>opennlp.tools.parser.lang.en<br>opennlp.tools.parser.lang.es<br>opennlp.tools.parser.treeinsert<br>opennlp.tools.sentdetect<br>opennlp.tools.sentdetect.lang<br>opennlp.tools.sentdetect.lang.th<br>opennlp.tools.stemmer<br>opennlp.tools.stemmer.snowball<br>opennlp.tools.tokenize.lang.en<br>org.apache.commons.imaging.color<br>org.apache.commons.imaging.common<br>org.apache.commons.imaging.common.itu_t4<br>org.apache.commons.imaging.common.mylzw<br>org.apache.commons.imaging.formats.bmp<br>org.apache.commons.imaging.formats.dcx<br>org.apache.commons.imaging.formats.gif<br>org.apache.commons.imaging.formats.icns<br>org.apache.commons.imaging.formats.ico<br>org.apache.commons.imaging.formats.jpeg<br>org.apache.commons.imaging.formats.jpeg.decoder<br>org.apache.commons.imaging.formats.jpeg.exif<br>org.apache.commons.imaging.formats.jpeg.iptc<br>org.apache.commons.imaging.formats.jpeg.segments<br>org.apache.commons.imaging.formats.jpeg.xmp<br>org.apache.commons.imaging.formats.pcx<br>org.apache.commons.imaging.formats.png<br>org.apache.commons.imaging.formats.png.chunks<br>org.apache.commons.imaging.formats.png.scanlinefilters<br>org.apache.commons.imaging.formats.png.transparencyfilters<br>org.apache.commons.imaging.formats.pnm<br>org.apache.commons.imaging.formats.psd<br>org.apache.commons.imaging.formats.psd.dataparsers<br>org.apache.commons.imaging.formats.psd.datareaders<br>org.apache.commons.imaging.formats.rgbe<br>org.apache.commons.imaging.formats.tiff<br>org.apache.commons.imaging.formats.tiff.constants<br>org.apache.commons.imaging.formats.tiff.datareaders<br>org.apache.commons.imaging.formats.tiff.fieldtypes<br>org.apache.commons.imaging.formats.tiff.photometricinterpreters<br>org.apache.commons.imaging.formats.tiff.taginfos<br>org.apache.commons.imaging.formats.tiff.write<br>org.apache.commons.imaging.formats.wbmp<br>org.apache.commons.imaging.formats.xbm<br>org.apache.commons.imaging.formats.xpm<br>org.apache.commons.imaging.icc<br>org.apache.commons.imaging.palette<br>org.apache.commons.imaging.util<br>com.adobe.dam.print.ids.utils<br>com.day.cq.dam.api.reporting<br>com.day.cq.dam.entitlement.api<br>com.day.cq.dam.handler.standard.epub<br>com.day.cq.dam.handler.standard.keynote<br>com.day.cq.dam.handler.standard.mp3<br>com.day.cq.dam.handler.standard.msoffice<br>com.day.cq.dam.handler.standard.msoffice.wmf<br>com.day.cq.dam.handler.standard.ooxml<br>com.day.cq.dam.handler.standard.pdf<br>com.day.cq.dam.handler.standard.pict<br>com.day.cq.dam.handler.standard.ps<br>com.day.cq.dam.handler.standard.psd<br>com.day.cq.dam.handler.standard.zip<br>com.day.cq.dam.word.extraction<br>com.day.cq.dam.word.process<br>com.adobe.xmp.worker.files<br>com.adobe.cq.address.api<br>com.adobe.cq.address.api.location<br>com.day.cq.mcm.emailprovider.impl.types<br>com.day.io<br>com.day.io.disk<br>com.day.io.file<br>org.apache.commons.exec.environment<br>org.apache.commons.exec.launcher<br>org.apache.commons.exec.util<br>com.google.zxing<br>com.google.zxing.common<br>com.google.zxing.common.reedsolomon<br>com.google.zxing.qrcode.decoder<br>com.google.zxing.qrcode.encoder<br>com.adobe.cq.dam.dm.internalapi.image_server<br>com.day.cq.dam.api.s7dam.jobs<br>com.day.cq.dam.api.s7dam.omnisearch<br>com.day.cq.dam.api.s7dam.scene7<br>com.day.cq.dam.scene7<br>com.day.cq.dam.scene7.api.net<br>com.day.cq.analytics.sitecatalyst.rsmerger<br>com.day.cq.searchpromote<br>com.day.cq.searchpromote.xml<br>com.day.cq.searchpromote.xml.form<br>com.day.cq.searchpromote.xml.result&gt;</td>
     <td>API AEM 6.x legacy.</td>
     <td>08/04/2019</td>
-    <td>rimossa</td>
+    <td>rimosso</td>
   </tr>
   <tr>
     <td>org.apache.sling.discovery.commons<br>org.apache.sling.discovery.commons.providers<br>org.apache.sling.discovery.commons.providers.base<br>org.apache.sling.discovery.commons.providers.spi<br>org.apache.sling.discovery.commons.providers.spi.base<br>org.apache.sling.discovery.commons.providers.util</td>
     <td>Questa API non è supportata in Cloud Service.</td>
     <td>30/09/2021</td>
-    <td>rimossa</td>
+    <td>rimosso</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml<br>org.apache.jackrabbit.vault.util.xml.serialize</td>
     <td>Le classi di utilità correlate ad Apache Xerces vengono rimosse nelle versioni successive con un’importante modifica della versione. Poiché queste utilità sono destinate all’uso interno in Filevault, l’API è obsoleta e verrà eliminata dalla superficie API pubblica.</td>
     <td>01/09/2021</td>
-    <td>rimossa</td>
+    <td>rimosso</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
     <td>API AEM 6.x legacy.</td>
@@ -381,7 +381,7 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
     <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
     <td>Questa API di logback interna non è supportata da AEM as a Cloud Service.</td>
     <td>27/01/2022</td>
-    <td>rimossa</td>
+    <td>rimosso</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>

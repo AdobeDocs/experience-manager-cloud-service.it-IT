@@ -3,9 +3,9 @@ title: Supporto IMS per Adobe Experience Manager as a Cloud Service
 description: Supporto del sistema di gestione delle immagini per Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1917'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Dopo aver predisposto l’organizzazione IMS, il cliente deve configurare il pro
 ![Onboarding in IMS](/help/security/assets/ims2.png)
 
 1. L’amministratore di sistema designato riceve un invito ad accedere a Cloud Manager. Dopo aver effettuato l’accesso a Cloud Manager, gli amministratori di sistema possono scegliere se effettuare il provisioning di programmi e ambienti AEM oppure passare ad Admin Console per eseguire attività amministrative.
-1. L’amministratore di sistema richiede un dominio per confermare la proprietà del rispettivo dominio, ad esempio acme.com
+1. L’amministratore di sistema richiede un dominio per confermare la proprietà del rispettivo dominio, ad esempio acme.com.
 1. L’amministratore di sistema configura le directory utente.
 1. L’amministratore di sistema esegue la configurazione IDP in Admin Console per configurare l’accesso Single Sign-On.
 1. L’amministratore AEM gestisce i gruppi locali, nonché autorizzazioni e privilegi come al solito.
@@ -98,17 +98,17 @@ Lo strumento User Sync viene distribuito tramite l’archivio Github di Adobe di
 
 Le funzioni principali di questa versione includono la possibilità di mappare dinamicamente i nuovi gruppi LDAP per l’iscrizione degli utenti in Admin Console, nonché la creazione dinamica di gruppi di utenti.
 
-Ulteriori informazioni sulle nuove funzioni per i gruppi sono disponibili [qui](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options).
+Ulteriori informazioni sulle nuove funzioni per i gruppi sono disponibili [qui](https://adobe-apiplatform.github.io/user-sync.py/fr/user-manual/advanced_configuration.html#additional-group-options).
 
 **Documentazione di User Sync**
 
-Per ulteriori dettagli, consulta la [documentazione di User Sync](https://adobe-apiplatform.github.io/user-sync.py/en/).
+Per ulteriori dettagli, consulta la [documentazione di User Sync](https://adobe-apiplatform.github.io/user-sync.py/it/).
 
 Lo strumento User Sync deve essere registrato come client UMAPI di Adobe Developer come descritto nella procedura disponibile [qui](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 
 La documentazione di Adobe Developer Console è disponibile [qui](https://developer.adobe.com/developer-console/).
 
-L’API User Management utilizzata dallo strumento User Sync è descritta [qui](https://adobe-apiplatform.github.io/user-sync.py/en/).
+L’API User Management utilizzata dallo strumento User Sync è descritta [qui](https://adobe-apiplatform.github.io/user-sync.py/it/).
 
 ## Configurazione di Adobe Experience as a Cloud Service {#aem-configuration}
 
@@ -213,7 +213,7 @@ Per poter accedere a Cloud Manager o agli ambienti in AEM as a Cloud Service, l�
 Per ulteriori informazioni sui ruoli degli utenti che determinano la disponibilità di funzionalità specifiche in Cloud Manager, consulta le definizioni dei ruoli.
 
 >[!NOTE]
->Cloud Manager dispone di ruoli preconfigurati con le autorizzazioni appropriate. Per informazioni su ciascuno dei ruoli con autorizzazioni specifiche, attività preconfigurate o autorizzazioni associate a ogni ruolo, consulta la descrizione delle [autorizzazioni basate sul ruolo](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html).
+>Cloud Manager dispone di ruoli preconfigurati con le autorizzazioni appropriate. Per informazioni su ciascuno dei ruoli con autorizzazioni specifiche, attività preconfigurate o autorizzazioni associate a ogni ruolo, consulta la descrizione delle [autorizzazioni basate sul ruolo](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=it).
 
 **Procedura per aggiungere un utente**
 
