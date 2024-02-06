@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
 workflow-type: tm+mt
 source-wordcount: '3540'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Un programma può fornire un’unica variante di rete avanzata. Quando bisogna d
 
 ## Uscita flessibile della porta {#flexible-port-egress}
 
-Questa funzionalità di rete avanzata consente di configurare AEM as a Cloud Service per l’uscita del traffico attraverso porte diverse da HTTP (porta 80) e HTTPS (porta 443), che sono aperte per impostazione predefinita.
+Questa funzionalità avanzata di rete ti consente di configurare AEM as a Cloud Service per incrementare il traffico attraverso porte diverse da HTTP (porta 80) e HTTPS (porta 443), che sono aperte per impostazione predefinita.
 
 ### Considerazioni {#flexible-port-egress-considerations}
 
@@ -98,7 +98,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 Se utilizzi librerie di rete Java non standard, configura i proxy utilizzando le proprietà riportate sopra per tutto il traffico.
 
-Il traffico non http/s con destinazioni attraverso porte dichiarate nel parametro `portForwards` deve fare riferimento a una proprietà denominata `AEM_PROXY_HOST`, oltre alla porta mappata. Esempio:
+Il traffico non http/s con destinazioni attraverso porte dichiarate nel parametro `portForwards` deve fare riferimento a una proprietà denominata `AEM_PROXY_HOST`, oltre alla porta mappata. Ad esempio:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -196,9 +196,9 @@ Se la funzione di indirizzo IP dedicato non è abilitata, il traffico provenient
 
 La configurazione dell’indirizzo IP in uscita dedicato è identica all’[uscita da porta flessibile](#configuring-flexible-port-egress-provision).
 
-La differenza principale è che il traffico sarà sempre in uscita da un IP dedicato e univoco. Per trovare tale IP, utilizza un risolutore DNS per identificare l’indirizzo IP associato a `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’indirizzo IP non dovrebbe cambiare, ma se deve cambiare in futuro, viene fornita una notifica avanzata.
+La differenza principale è che il traffico sarà sempre in uscita da un IP dedicato e univoco. Per trovare tale IP, utilizza un risolutore DNS per identificare l’indirizzo IP associato a `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’indirizzo IP non dovrebbe cambiare, ma se deve cambiare in futuro, sarà fornita una notifica avanzata.
 
-Oltre alle regole di routing supportate dall’uscita da porta flessibile nell’endpoint `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, l’indirizzo IP in uscita dedicato supporta un parametro `nonProxyHosts`. Questo consente di dichiarare un set di host che devono indirizzare attraverso un intervallo di indirizzi IP condivisi anziché l’IP dedicato, il che può essere utile in quanto il traffico in uscita attraverso gli IP condivisi può essere ulteriormente ottimizzato. Gli URL `nonProxyHost` possono seguire i pattern di `example.com` o `*.example.com`, in cui il carattere jolly è supportato solo all’inizio del dominio.
+Oltre alle regole di routing supportate dall’uscita da porta flessibile nell’endpoint `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, l’indirizzo IP in uscita dedicato supporta un parametro `nonProxyHosts`. Questo ti consente di dichiarare un gruppo di host che devono indirizzare attraverso un intervallo di indirizzi IP condivisi anziché l’indirizzo IP dedicato, il che può essere utile in quanto il traffico in uscita attraverso gli IP condivisi può essere ulteriormente ottimizzato. Gli URL `nonProxyHost` possono seguire i pattern di `example.com` o `*.example.com`, in cui il carattere jolly è supportato solo all’inizio del dominio.
 
 Quando si decide tra uscita da porta flessibile e indirizzo IP in uscita dedicato, i clienti devono scegliere la prima soluzione se non è necessario un indirizzo IP specifico, poiché Adobe può ottimizzare le prestazioni del traffico in uscita da porta flessibile.
 
@@ -212,7 +212,7 @@ Per ulteriori informazioni sulle API, consulta la [documentazione API di Cloud M
 
 Il traffico http o https passa attraverso un proxy preconfigurato, a condizione che utilizzi le proprietà standard del sistema Java per le configurazioni proxy.
 
-Il traffico non http/s con destinazioni attraverso porte dichiarate nel parametro `portForwards` deve fare riferimento a una proprietà denominata `AEM_PROXY_HOST`, oltre alla porta mappata. Esempio:
+Il traffico non http/s con destinazioni attraverso porte dichiarate nel parametro `portForwards` deve fare riferimento a una proprietà denominata `AEM_PROXY_HOST`, oltre alla porta mappata. Ad esempio:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -367,13 +367,13 @@ Le regole di port forwarding devono essere dichiarate per tutto il traffico TCP 
 
 L’API dovrebbe rispondere in pochi secondi indicando lo stato `updating` e dopo circa 10 minuti, una chiamata all’endpoint GET dell’ambiente di Cloud Manager dovrebbe mostrare lo stato `ready`, indicando che l’aggiornamento è stato applicato all’ambiente.
 
-Anche se non esistono regole di routing del traffico dell’ambiente (host o bypass), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` deve ancora essere chiamato, solo con un payload vuoto.
+Anche se non sono presenti regole di routing del traffico dell’ambiente (host o bypass), è comunque necessario chiamare `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, solo con un payload vuoto.
 
 ### Aggiornamento della VPN {#updating-the-vpn}
 
 La configurazione VPN a livello di programma può essere aggiornata richiamando l’endpoint `PUT /api/program/<program_id>/network/<network_id>`.
 
-Impossibile modificare lo spazio di indirizzi dopo il provisioning iniziale della VPN. Se necessario, contatta l’Assistenza clienti. Inoltre, il parametro `kind` (`flexiblePortEgress`, `dedicatedEgressIP` o `VPN`) non può essere modificato. Contatta l’assistenza clienti per descrivere cosa è già stato creato e il motivo della modifica.
+Lo spazio indirizzi non può essere modificato dopo il provisioning iniziale della VPN. Se necessario, contatta l’Assistenza clienti. Inoltre, il parametro `kind` (`flexiblePortEgress`, `dedicatedEgressIP` o `VPN`) non può essere modificato. Contatta l’assistenza clienti per descrivere cosa è già stato creato e il motivo della modifica.
 
 È possibile aggiornare le regole di routing per ambiente richiamando nuovamente l’endpoint `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`, assicurandosi di includere il set completo di parametri di configurazione, anziché un sottoinsieme. In genere, l’applicazione degli aggiornamenti dell’ambiente richiede 5-10 minuti.
 
@@ -545,7 +545,7 @@ Se i tempi di inattività dovessero avere un impatto significativo sulle attivit
 
 ## Configurazione di rete avanzata per aree geografiche di pubblicazione aggiuntiva {#advanced-networking-configuration-for-additional-publish-regions}
 
-Quando si aggiunge un’area geografica aggiuntiva a un ambiente in cui è già configurata la rete avanzata, per impostazione predefinita il traffico dell’area di pubblicazione aggiuntiva corrispondente alle regole di rete avanzate passerà attraverso l’area geografica primaria. Tuttavia, se l’area geografica primaria non è più disponibile, il traffico di rete avanzato verrà interrotto se la rete avanzata non è stata abilitata nell’area geografica aggiuntiva. Se desideri ottimizzare la latenza e aumentare la disponibilità nel caso in cui una delle aree si trovi in un’interruzione, è necessario abilitare la rete avanzata per le aree di pubblicazione aggiuntive. Nelle sezioni seguenti sono descritti due scenari diversi.
+Quando si aggiunge un’area geografica aggiuntiva a un ambiente in cui è già configurata la rete avanzata, per impostazione predefinita il traffico dell’area di pubblicazione aggiuntiva corrispondente alle regole di rete avanzate passerà attraverso l’area geografica primaria. Tuttavia, se l’area geografica primaria non è più disponibile, il traffico di rete avanzato verrà interrotto se la rete avanzata non è stata abilitata nell’area geografica aggiuntiva. Se desideri ottimizzare la latenza e aumentare la disponibilità nel caso in cui una delle aree geografiche subisca un’interruzione, è necessario abilitare la rete avanzata per le aree geografiche di pubblicazione aggiuntiva. Nelle sezioni seguenti sono descritti due scenari diversi.
 
 >[!NOTE]
 >
@@ -557,9 +557,9 @@ Quando si aggiunge un’area geografica aggiuntiva a un ambiente in cui è già 
 
 Se nell’area geografica primaria è già abilitata una configurazione di rete avanzata, segui questi passaggi:
 
-1. Se hai bloccato l’infrastruttura in modo che l’indirizzo IP AEM dedicato sia inserito nell’elenco Consentiti, si consiglia di disabilitare temporaneamente eventuali regole di rifiuto in tale infrastruttura. In caso contrario, trascorre un breve periodo in cui le richieste provenienti dagli indirizzi IP della nuova area geografica sono rifiutate dalla tua infrastruttura. Questa operazione non è necessaria se l&#39;infrastruttura è stata bloccata tramite un nome di dominio completo (FQDN, Fully Qualified Domain Name), (`p1234.external.adobeaemcloud.com`, ad esempio), perché tutte le aree dell’AEM ricevono il traffico di rete avanzato dallo stesso FQDN
+1. Se hai bloccato l’infrastruttura in modo che l’indirizzo IP AEM dedicato sia inserito nell’elenco Consentiti, si consiglia di disabilitare temporaneamente eventuali regole di rifiuto in tale infrastruttura. In caso contrario, trascorre un breve periodo in cui le richieste provenienti dagli indirizzi IP della nuova area geografica sono rifiutate dalla tua infrastruttura. Ciò non è necessario se l’infrastruttura è stata bloccata tramite il nome di dominio completo (FQDN), (ad esempio `p1234.external.adobeaemcloud.com`), poiché tutte le uscite da aree geografiche di AEM utilizzano il traffico di rete avanzato dallo stesso FQDN
 1. Crea l’infrastruttura di rete con ambito di programma per l’area geografica secondaria tramite una chiamata POST all’API Crea infrastruttura di rete di Cloud Manager, come descritto nella documentazione di rete avanzata. L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria è la proprietà dell’area geografica
-1. Se l’infrastruttura deve essere bloccata da IP per consentire il traffico AEM, aggiungi gli IP corrispondenti `p1234.external.adobeaemcloud.com`. Dovrebbe essercene uno per area geografica.
+1. Se l’infrastruttura deve essere bloccata da IP per consentire il traffico AEM, aggiungi gli IP corrispondenti a `p1234.external.adobeaemcloud.com`. Dovrebbe essercene uno per area geografica.
 
 #### Rete avanzata non ancora configurata in alcuna area geografica {#not-yet-configured}
 
@@ -567,7 +567,7 @@ La procedura è in gran parte simile alle istruzioni precedenti. Tuttavia, se l�
 
 1. Crea un’infrastruttura di rete per tutte le aree geografiche tramite chiamata POST all’[API Crea infrastruttura di rete di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria è la proprietà dell’area geografica.
 1. Per l’ambiente di staging, abilita e configura l’ambiente con ambito di rete avanzato eseguendo il comando `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Per ulteriori informazioni, consulta la documentazione API [qui](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
-1. Se necessario, bloccare l&#39;infrastruttura esterna, preferibilmente tramite FQDN (ad esempio `p1234.external.adobeaemcloud.com`). In alternativa, puoi farlo per indirizzo IP
+1. Se necessario, blocca l’infrastruttura esterna, preferibilmente tramite FQDN (ad esempio `p1234.external.adobeaemcloud.com`). In alternativa, puoi farlo per indirizzo IP
 1. Se l’ambiente di staging funziona come previsto, abilita e configura la configurazione di rete avanzata con ambito di ambiente per la produzione.
 
 #### VPN {#vpn-regions}
