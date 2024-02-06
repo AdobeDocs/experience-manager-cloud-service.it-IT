@@ -2,8 +2,8 @@
 title: Funzioni obsolete e rimosse
 description: Note sulla versione specifiche per le funzioni obsolete e rimosse in  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: cb2c883fbadc5347dbe5fc50337abc41d4f5cec3
-workflow-type: ht
+source-git-commit: 1da8d9395df3dd2efee7f6a57197aa3f2b27b1a4
+workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 100%
 
@@ -58,149 +58,6 @@ In questa sezione sono elencate le funzionalità che sono state rimosse da [!DNL
 | [!DNL Foundation] | Supporto per i modelli di script JST (OSGi bundle org.apache.sling.scripting.jst) | N/D | Rimosso |
 | [!DNL Foundation] | Supporto per Apache Felix Http Whiteboard | OSGi Http Whiteboard | Marzo 2022 |
 | [!DNL Foundation] | Supporto per com.adobe.granite.oauth.server | Integrazione di Adobe IMS | Marzo 2023 |
-
-## Configurazione OSGI {#osgi-configuration}
-
-I due elenchi seguenti riflettono l’area di configurazione OSGi di AEM as a Cloud Service e descrivono che cosa è possibile configurare.
-
-1. Elenco di configurazioni OSGi che non devono essere configurate dal codice cliente
-1. Un elenco di configurazioni OSGi le cui proprietà possono essere configurate, ma devono rispettare le regole di convalida indicate. Queste regole includono se è necessaria la dichiarazione della proprietà, il tipo e, in alcuni casi, l’intervallo di valori consentito.
-
-Se una configurazione OSGI non è elencata, potrebbe essere configurata dal codice cliente.
-
-Queste regole vengono convalidate durante il processo di compilazione di Cloud Manager. Con il passare del tempo è possibile aggiungere altre regole e la data di applicazione prevista è indicata nella tabella. I clienti sono tenuti a rispettare queste regole entro la data di applicazione prevista. Il mancato rispetto delle regole dopo la data di rimozione genererà errori nel processo di compilazione di Cloud Manager. I progetti Maven devono includere [plug-in Maven di Build Analyzer nell’SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it) per segnalare gli errori di configurazione OSGI durante lo sviluppo dell’SDK locale.
-
-Ulteriori informazioni sulla configurazione OSGI sono disponibili in [questa posizione](/help/implementing/deploying/configuring-osgi.md).
-
-+++Configurazioni OSGi che non possono essere modificate.
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
-* **`org.apache.felix.http (Factory)`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Data annuncio: 25/8/2021, Data applicazione: 26/11/2021)
-+++
-
-+++Le configurazioni OSGi sono soggette alle regole di convalida della build.
-* **`org.apache.felix.eventadmin.impl.EventAdmin`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
-* `org.apache.felix.eventadmin.ThreadPoolSize`
-   * Tipo: numero intero
-   * Intervallo richiesto: 2-100
-* `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
-   * Tipo: doppio
-* `org.apache.felix.eventadmin.Timeout`
-   * Tipo: numero intero
-* `org.apache.felix.eventadmin.RequireTopic`
-   * Tipo: booleano
-* `org.apache.felix.eventadmin.IgnoreTimeout`
-   * Obbligatorio
-   * Tipo: array di stringhe
-   * Intervallo richiesto: deve includere almeno tutti `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
-* `org.apache.felix.eventadmin.IgnoreTopic`
-   * Tipo: array di stringhe
-* **`org.apache.felix.http`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
-   * `org.apache.felix.http.timeout`
-      * Tipo: numero intero
-   * `org.apache.felix.http.session.timeout`
-      * Tipo: numero intero
-   * `org.apache.felix.http.jetty.threadpool.max`
-      * Tipo: numero intero
-   * `org.apache.felix.http.jetty.headerBufferSize`
-      * Tipo: numero intero
-   * `org.apache.felix.http.jetty.requestBufferSize`
-      * Tipo: numero intero
-   * `org.apache.felix.http.jetty.responseBufferSize`
-      * Tipo: numero intero
-   * `org.apache.felix.http.jetty.maxFormSize`
-      * Tipo: numero intero
-   * `org.apache.felix.https.jetty.session.cookie.httpOnly`
-      * Tipo: booleano
-   * `org.apache.felix.https.jetty.session.cookie.secure`
-      * Tipo: booleano
-   * `org.eclipse.jetty.servlet.SessionIdPathParameterName`
-      * Tipo: stringa
-   * `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding`
-      * Tipo: booleano
-   * `org.eclipse.jetty.servlet.SessionCookie`
-      * Tipo: stringa
-   * `org.eclipse.jetty.servlet.SessionDomain`
-      * Tipo: stringa
-   * `org.eclipse.jetty.servlet.SessionPath`
-      * Tipo: stringa
-   * `org.eclipse.jetty.servlet.MaxAge`
-      * Tipo: numero intero
-   * `org.eclipse.jetty.servlet.SessionScavengingInterval`
-      * Tipo: numero intero
-   * `org.apache.felix.jetty.gziphandler.enable`
-      * Tipo: booleano
-   * `org.apache.felix.jetty.gzip.minGzipSize`
-      * Tipo: numero intero
-   * `org.apache.felix.jetty.gzip.compressionLevel`
-      * Tipo: numero intero
-   * `org.apache.felix.jetty.gzip.inflateBufferSize`
-      * Tipo: numero intero
-   * `org.apache.felix.jetty.gzip.syncFlush`
-      * Tipo: booleano
-   * `org.apache.felix.jetty.gzip.excludedUserAgents`
-      * Tipo: stringa
-   * `org.apache.felix.jetty.gzip.includedMethods`
-      * Tipo: array di stringhe
-   * `org.apache.felix.jetty.gzip.excludedMethods`
-      * Tipo: array di stringhe
-   * `org.apache.felix.jetty.gzip.includedPaths`
-      * Tipo: array di stringhe
-   * `org.apache.felix.jetty.gzip.excludedPaths`
-      * Tipo: array di stringhe
-   * `org.apache.felix.jetty.gzip.includedMimeTypes`
-      * Tipo: array di stringhe
-   * `org.apache.felix.jetty.gzip.excludedMimeTypes`
-      * Tipo: array di stringhe
-   * `org.apache.felix.http.session.invalidate`
-      * Tipo: booleano
-   * `org.apache.felix.http.session.container.attribute`
-      * Tipo: array di stringhe
-   * `org.apache.felix.http.session.uniqueid`
-      * Tipo: booleano
-* **`org.apache.sling.scripting.cache`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
-   * `org.apache.sling.scripting.cache.size`
-      * Tipo: numero intero
-      * Intervallo richiesto: >= 2048
-   * `org.apache.sling.scripting.cache.additional_extensions`
-      * Obbligatorio
-      * Tipo: array di stringhe
-      * Intervallo richiesto: deve includere js
-* **`com.day.cq.mailer.DefaultMailService`** (Data annuncio:30/4/2021, Data applicazione: 31/7/2021)
-   * `smtp.host`
-      * Tipo: stringa
-   * `smtp.port`
-      * Tipo: numero intero
-      * Intervallo richiesto: 465, 587 o 25
-   * `smtp.user`
-      * Tipo: stringa
-   * `smtp.password`
-      * Tipo: stringa
-   * `from.address`
-      * Tipo: stringa
-   * `smtp.ssl`
-      * Tipo: stringa
-   * `smtp.starttls`
-      * Tipo: booleano
-   * `smtp.requiretls`
-      * Tipo: booleano
-   * `debug.email`
-      * Tipo: booleano
-   * `oauth.flow`
-      * Tipo: booleano
-* **`org.apache.sling.commons.log.LogManager.factory.config`** (Data annuncio: 16/11/21, Data applicazione: 16/2/21)
-   * `org.apache.sling.commons.log.level`
-      * Tipo: enumerazione
-      * Intervallo richiesto: INFO, DEBUG o TRACE
-   * `org.apache.sling.commons.log.names`
-      * Tipo: stringa
-   * `org.apache.sling.commons.log.file`
-      * Tipo: stringa
-   * `org.apache.sling.commons.log.additiv`
-      * Tipo: booleano
-+++
 
 ## API AEM {#aem-apis}
 
@@ -413,3 +270,147 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
 </tbody>
 </table>
 </details>
+
+## Configurazione OSGI {#osgi-configuration}
+
+I due elenchi seguenti riflettono l’area di configurazione OSGi di AEM as a Cloud Service e descrivono che cosa è possibile configurare.
+
+1. Elenco di configurazioni OSGi che non devono essere configurate dal codice cliente
+1. Un elenco di configurazioni OSGi le cui proprietà possono essere configurate, ma devono rispettare le regole di convalida indicate. Queste regole includono se è necessaria la dichiarazione della proprietà, il tipo e, in alcuni casi, l’intervallo di valori consentito.
+
+Se una configurazione OSGI non è elencata, potrebbe essere configurata dal codice cliente.
+
+Queste regole vengono convalidate durante il processo di compilazione di Cloud Manager. Con il passare del tempo è possibile aggiungere altre regole e la data di applicazione prevista è indicata nella tabella. I clienti sono tenuti a rispettare queste regole entro la data di applicazione prevista. Il mancato rispetto delle regole dopo la data di rimozione genererà errori nel processo di compilazione di Cloud Manager. I progetti Maven devono includere [plug-in Maven di Build Analyzer nell’SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it) per segnalare gli errori di configurazione OSGI durante lo sviluppo dell’SDK locale.
+
+Ulteriori informazioni sulla configurazione OSGI sono disponibili in [questa posizione](/help/implementing/deploying/configuring-osgi.md).
+
++++Configurazioni OSGi che non possono essere modificate.
+* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
+* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
+* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
+* **`org.apache.felix.http (Factory)`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Data annuncio: 25/8/2021, Data applicazione: 26/11/2021)
++++
+
++++Le configurazioni OSGi sono soggette alle regole di convalida della build.
+* **`org.apache.felix.eventadmin.impl.EventAdmin`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
+* `org.apache.felix.eventadmin.ThreadPoolSize`
+   * Tipo: numero intero
+   * Intervallo richiesto: 2-100
+* `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
+   * Tipo: doppio
+* `org.apache.felix.eventadmin.Timeout`
+   * Tipo: numero intero
+* `org.apache.felix.eventadmin.RequireTopic`
+   * Tipo: booleano
+* `org.apache.felix.eventadmin.IgnoreTimeout`
+   * Obbligatorio
+   * Tipo: array di stringhe
+   * Intervallo richiesto: deve includere almeno tutti `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
+* `org.apache.felix.eventadmin.IgnoreTopic`
+   * Tipo: array di stringhe
+* **`org.apache.felix.http`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
+   * `org.apache.felix.http.timeout`
+      * Tipo: numero intero
+   * `org.apache.felix.http.session.timeout`
+      * Tipo: numero intero
+   * `org.apache.felix.http.jetty.threadpool.max`
+      * Tipo: numero intero
+   * `org.apache.felix.http.jetty.headerBufferSize`
+      * Tipo: numero intero
+   * `org.apache.felix.http.jetty.requestBufferSize`
+      * Tipo: numero intero
+   * `org.apache.felix.http.jetty.responseBufferSize`
+      * Tipo: numero intero
+   * `org.apache.felix.http.jetty.maxFormSize`
+      * Tipo: numero intero
+   * `org.apache.felix.https.jetty.session.cookie.httpOnly`
+      * Tipo: booleano
+   * `org.apache.felix.https.jetty.session.cookie.secure`
+      * Tipo: booleano
+   * `org.eclipse.jetty.servlet.SessionIdPathParameterName`
+      * Tipo: stringa
+   * `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding`
+      * Tipo: booleano
+   * `org.eclipse.jetty.servlet.SessionCookie`
+      * Tipo: stringa
+   * `org.eclipse.jetty.servlet.SessionDomain`
+      * Tipo: stringa
+   * `org.eclipse.jetty.servlet.SessionPath`
+      * Tipo: stringa
+   * `org.eclipse.jetty.servlet.MaxAge`
+      * Tipo: numero intero
+   * `org.eclipse.jetty.servlet.SessionScavengingInterval`
+      * Tipo: numero intero
+   * `org.apache.felix.jetty.gziphandler.enable`
+      * Tipo: booleano
+   * `org.apache.felix.jetty.gzip.minGzipSize`
+      * Tipo: numero intero
+   * `org.apache.felix.jetty.gzip.compressionLevel`
+      * Tipo: numero intero
+   * `org.apache.felix.jetty.gzip.inflateBufferSize`
+      * Tipo: numero intero
+   * `org.apache.felix.jetty.gzip.syncFlush`
+      * Tipo: booleano
+   * `org.apache.felix.jetty.gzip.excludedUserAgents`
+      * Tipo: stringa
+   * `org.apache.felix.jetty.gzip.includedMethods`
+      * Tipo: array di stringhe
+   * `org.apache.felix.jetty.gzip.excludedMethods`
+      * Tipo: array di stringhe
+   * `org.apache.felix.jetty.gzip.includedPaths`
+      * Tipo: array di stringhe
+   * `org.apache.felix.jetty.gzip.excludedPaths`
+      * Tipo: array di stringhe
+   * `org.apache.felix.jetty.gzip.includedMimeTypes`
+      * Tipo: array di stringhe
+   * `org.apache.felix.jetty.gzip.excludedMimeTypes`
+      * Tipo: array di stringhe
+   * `org.apache.felix.http.session.invalidate`
+      * Tipo: booleano
+   * `org.apache.felix.http.session.container.attribute`
+      * Tipo: array di stringhe
+   * `org.apache.felix.http.session.uniqueid`
+      * Tipo: booleano
+* **`org.apache.sling.scripting.cache`** (Data annuncio: 30/4/2021, Data applicazione: 31/7/2021)
+   * `org.apache.sling.scripting.cache.size`
+      * Tipo: numero intero
+      * Intervallo richiesto: >= 2048
+   * `org.apache.sling.scripting.cache.additional_extensions`
+      * Obbligatorio
+      * Tipo: array di stringhe
+      * Intervallo richiesto: deve includere js
+* **`com.day.cq.mailer.DefaultMailService`** (Data annuncio:30/4/2021, Data applicazione: 31/7/2021)
+   * `smtp.host`
+      * Tipo: stringa
+   * `smtp.port`
+      * Tipo: numero intero
+      * Intervallo richiesto: 465, 587 o 25
+   * `smtp.user`
+      * Tipo: stringa
+   * `smtp.password`
+      * Tipo: stringa
+   * `from.address`
+      * Tipo: stringa
+   * `smtp.ssl`
+      * Tipo: stringa
+   * `smtp.starttls`
+      * Tipo: booleano
+   * `smtp.requiretls`
+      * Tipo: booleano
+   * `debug.email`
+      * Tipo: booleano
+   * `oauth.flow`
+      * Tipo: booleano
+* **`org.apache.sling.commons.log.LogManager.factory.config`** (Data annuncio: 16/11/21, Data applicazione: 16/2/21)
+   * `org.apache.sling.commons.log.level`
+      * Tipo: enumerazione
+      * Intervallo richiesto: INFO, DEBUG o TRACE
+   * `org.apache.sling.commons.log.names`
+      * Tipo: stringa
+   * `org.apache.sling.commons.log.file`
+      * Tipo: stringa
+   * `org.apache.sling.commons.log.additiv`
+      * Tipo: booleano
++++
+
