@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3d5901e6543b0b5d3214e69c5119367eeb71bf07
+source-git-commit: c986f817b2dc81e03b9c6f725d8754f017a585dd
 workflow-type: tm+mt
 source-wordcount: '4633'
 ht-degree: 97%
@@ -78,15 +78,15 @@ ht-degree: 97%
    + Note sulla versione di manutenzione di AEMaaCS {#maintenance}
       + [Note sulla versione di manutenzione corrente](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [Note sulla versione di manutenzione 2023.11.0](/help/release-notes/maintenance/2023/2023.11.0.md)
-         + [Note sulla versione di manutenzione 2023.10.0](/help/release-notes/maintenance/2023/2023.10.0.md)
-         + [Note sulla versione di manutenzione 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md)
-         + [Note sulla versione di manutenzione 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md)
-         + [Note sulla versione di manutenzione 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md)
-         + [Note sulla versione di manutenzione 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
-         + [Note sulla versione di manutenzione 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
-         + [Note sulla versione di manutenzione 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
-         + [Note sulla versione di manutenzione 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
+         + [Note sulla versione di manutenzione 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md)
+         + [Note sulla versione di manutenzione 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md)
+         + [Note sulla versione di manutenzione 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md)
+         + [Note sulla versione di manutenzione 2023.8.0](/help/release-notes/maintenance/2023/2023-8-0.md)
+         + [Note sulla versione di manutenzione 2023.7.0](/help/release-notes/maintenance/2023/2023-7-0.md)
+         + [Note sulla versione di manutenzione 2023.6.0](/help/release-notes/maintenance/2023/2023-6-0.md)
+         + [Note sulla versione di manutenzione 2023.4.0](/help/release-notes/maintenance/2023/2023-4-0.md)
+         + [Note sulla versione di manutenzione 2023.2.0](/help/release-notes/maintenance/2023/2023-2-0.md)
+         + [Note sulla versione di manutenzione 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
    + Note sulla versione per Cloud Manager {#cloud-manager}
       + [Note sulla versione corrente](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
