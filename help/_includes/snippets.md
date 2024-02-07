@@ -2,7 +2,7 @@
 source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 67%
+ht-degree: 76%
 
 ---
 # Snippet {#snippets}
@@ -15,11 +15,11 @@ ht-degree: 67%
 
 [!BADGE Per creare contenuti AEM per Edge Delivery Services, fai clic qui.]{type=Positive url="/help/edge/overview.md" tooltip="Authoring di contenuti AEM per Edge Delivery Services"}
 
-## Stato editor universale {#universal-editor-status}
+## Stato dell’editor universale {#universal-editor-status}
 
 >[!NOTE]
 >
->L’Editor universale è ancora in fase di sviluppo e le sue funzionalità sono soggette a modifiche e possono differire da quanto descritto in questo documento.
+>L’editor universale è ancora in fase di sviluppo e le sue funzionalità sono soggette a modifiche e possono differire da quanto descritto in questo documento.
 
 ## Consulta anche {#see-also}
 
