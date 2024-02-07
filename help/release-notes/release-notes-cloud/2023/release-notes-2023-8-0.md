@@ -3,9 +3,9 @@ title: Note sulla versione 2023.8.0 di  [!DNL Adobe Experience Manager]  as a Cl
 description: Note sulla versione 2023.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1691'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,11 +70,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Importazione in blocco da un’origine dati](/help/release-notes/assets/bulk-import.png)
 
-* **Strumenti di modifica delle immagini basati su Adobi Express**: facile e intuitivo [strumenti di modifica delle immagini basati su Adobi Express](/help/assets/edit-images-assets-view.md) disponibile direttamente in AEM Assets per aumentare il riutilizzo dei contenuti e velocizzarne la distribuzione.
+* **Strumenti di editing delle immagini gestiti da Adobe Express**: strumenti di editing delle immagini semplici e intuitivi[ gestiti da Adobe Express](/help/assets/edit-images-assets-view.md) disponibili direttamente in AEM Assets per aumentare il riutilizzo dei contenuti e velocizzarne la creazione.
 
   ![Editing di immagini con Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
 
-* **Flessibilità durante l&#39;inserimento di elementi nell&#39;area di lavoro Accesso rapido**: possibilità di selezionare e fissare gli elementi per te, per l’intera organizzazione o per un elenco di gruppi in modo che vengano visualizzati nel [Sezione Accesso rapido della mia area di lavoro](/help/assets/my-workspace-assets-view.md) in base alla selezione.
+* **Flessibilità nel fissare elementi per Accesso rapido in La mia area di lavoro**: possibilità di selezionare e fissare gli elementi per l’utente, per l’intera organizzazione o per un elenco di gruppi in modo che vengano visualizzati nella [sezione Accesso rapido di La mia area di lavoro](/help/assets/my-workspace-assets-view.md) in base alla selezione.
 
   ![Fissa elementi per gruppi](/help/release-notes/assets/pin-items-for-groups.png)
 

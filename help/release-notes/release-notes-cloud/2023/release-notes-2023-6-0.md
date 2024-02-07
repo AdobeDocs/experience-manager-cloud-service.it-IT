@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2023.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2023.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2023.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2023.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1357'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,8 +41,8 @@ Dai un’occhiata al video Panoramica sulla versione di giugno 2023 per un riepi
 
 ![Anteprima nella console Frammenti di contenuto](/help/assets/content-fragments-console-preview.png)
 
-* Le immagini possono essere ora ottimizzate dinamicamente per la distribuzione web in scenari headless utilizzando GraphQL di AEM. Nelle query GraphQL è possibile definire [Variabili di query](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) per consentire alle applicazioni client separate di richiedere a AEM immagini ottimizzate di conseguenza.
-* I tag sulle [Varianti dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html) ora possono essere trasmessi in formato JSON utilizzando l’API per la distribuzione dei contenuti GraphQL di AEM.
+* Le immagini possono essere ora ottimizzate dinamicamente per la distribuzione web in scenari headless utilizzando GraphQL di AEM. Nelle query GraphQL è possibile definire [Variabili di query](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=it#query-variables) per consentire alle applicazioni client separate di richiedere a AEM immagini ottimizzate di conseguenza.
+* I tag sulle [Varianti dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=it) ora possono essere trasmessi in formato JSON utilizzando l’API per la distribuzione dei contenuti GraphQL di AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -74,7 +74,7 @@ Una nuova esperienza utente migliorata per [creare condivisioni di collegamenti]
 
 **Dynamic Media: aggiornamento dei campi relativi al ritaglio avanzato in un profilo immagine**
 
-L’interfaccia utente di alcuni campi relativi a Ritaglio avanzato in un profilo immagine è stata aggiornata per riflettere le linee guida correnti utili alla definizione di un Ritaglio avanzato. Consulta [Opzioni di ritaglio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
+L’interfaccia utente di alcuni campi relativi a Ritaglio avanzato in un profilo immagine è stata aggiornata per riflettere le linee guida correnti utili alla definizione di un Ritaglio avanzato. Consulta [Opzioni di ritaglio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=it#crop-options).
 
 ### Nuove funzioni nella Vista risorse {#assets-view-features}
 
@@ -130,9 +130,9 @@ La Vista risorse ora consente di [aggiungere componenti di proprietà di testo m
 
   Questa funzionalità consente di migliorare la capacità complessiva di gestione degli errori introducendo risposte di errore basate su standard compatibili con le versioni precedenti dei gestori degli errori OOTB, con maggiore flessibilità e controllo.
 
-* [Metodi di autenticazione migliorati per il modello dati modulo](/help/forms/configure-data-sources.md): maggiore sicurezza grazie all’introduzione dell’autenticazione basata sulle credenziali client per la connessione di AEM Forms con origini dati compatibili. Questo miglioramento elimina la necessità di rappresentazione o accesso da parte dell’utente, rafforzando la protezione dei dati.
+* [Metodi di autenticazione migliorati per il Modello dati modulo](/help/forms/configure-data-sources.md): l’introduzione dell’autenticazione basata sulle credenziali client per collegare AEM Forms con origini dati compatibili offre maggiore sicurezza. Questo miglioramento elimina la necessità di accesso da parte dell’utente o di accedere come un altro utente, rafforzando la protezione dei dati.
 
-* [Forms adattivo con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md): ora puoi effettuare [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it), [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=it), e [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it) componenti in un modulo adattivo basato su Componenti core per creare sezioni ripetibili.
+* [Moduli adattivi con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md): ora puoi realizzare componenti [Pannello a soffietto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it), [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=it) e [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it) in un modulo adattivo basato su Componenti core per creare sezioni ripetibili.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 

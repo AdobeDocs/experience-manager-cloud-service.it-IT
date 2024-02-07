@@ -3,9 +3,9 @@ title: Guida introduttiva ad AEM headless as a Cloud Service
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -181,7 +181,7 @@ Creare un piano su quali contenuti devono essere tradotti.
 
 Procedere con sicurezza sul flusso di lavoro di aggiornamento dei contenuti. Quale processo di approvazione deve supportare il sistema? È possibile utilizzare i flussi di lavoro AEM per automatizzare questo processo?
 
-Il tuo [gerarchia dei contenuti](#content-hierarchy) può essere utilizzato per semplificare la traduzione.
+La [gerarchia dei contenuti](#content-hierarchy) può essere utilizzata per semplificare la traduzione.
 
 Consulta la sezione [risorse aggiuntive](#additional-resources) per ulteriore documentazione sui flussi di lavoro AEM e gli strumenti di traduzione, compresi i collegamenti al Percorso di traduzione headless di AEM.
 

@@ -3,9 +3,9 @@ title: 'AEM: Domande frequenti sull’integrazione con Commerce tramite Commerce
 description: 'AEM: Domande frequenti sull’integrazione con Commerce tramite Commerce Integration Framework'
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '963'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ I dati del prodotto sono generalmente già tradotti in PIM o in Adobe Commerce. 
 
 Adobe consiglia di gestire i dati e i contenuti di marketing in AEM. Arricchisci i dati di prodotto dalla soluzione Commerce con attributi aggiuntivi utilizzando Frammenti di contenuto oppure crea e collega Frammenti di esperienza per contenuti non strutturati con i tuoi prodotti.
 
-## 14. Come si può garantire la conformità PCI quando si utilizza l’AEM per l’intero livello di presentazione?
+## 14. Come è possibile garantire la conformità PCI quando si utilizza AEM per l’intero livello di presentazione?
 
 Adobe consiglia di utilizzare metodi di pagamento astratti. In tal modo il client browser comunica direttamente con il provider del gateway dei pagamenti e i dati sensibili dei titolari della carta non vengono trasmessi né memorizzati in Adobe né nelle soluzioni Commerce. Questo approccio richiede solo una conformità PCI di livello 3. Tuttavia, vi sono altri elementi da considerare per assicurare la piena conformità allo standard PCI, come il modo in cui i dipendenti interagiscono con il sistema e i dati. Per ulteriori informazioni sulla conformità PCI di Adobe Commerce, consulta [Requisiti di conformità PCI](https://business.adobe.com/it/products/magento/pci-compliance.html).
 

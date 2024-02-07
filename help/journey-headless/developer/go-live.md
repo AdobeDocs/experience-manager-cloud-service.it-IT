@@ -3,9 +3,9 @@ title: Come pubblicare con la tua applicazione headless
 description: In questa parte del Percorso per sviluppatori AEM Headless, scopri come distribuire un’applicazione headless in tempo reale prendendo il codice locale nel Git e spostandolo nel Git di Cloud Manager per la pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1060'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Per garantire agli utenti la migliore esperienza possibile quando utilizzano l�
       * Verifica del numero di utenti, di richieste e caricamento
 * Accesso ai rapporti specifici sulle prestazioni di app e spazio
    * Una volta che il server è attivo, controllare se le metriche generali sono verde/arancione/rosso, quindi identificare problemi specifici dell’app
-   * Apri gli stessi rapporti sopra filtrati per app o spazio (ad esempio, desktop Photoshop, paywall)
+   * Aprire i rapporti di cui sopra, filtrati per app o spazio (ad esempio Photoshop per desktop, paywall)
    * Utilizzare le API del registro Splunk per accedere alle prestazioni del servizio e dell’applicazione
    * Contattare l’Assistenza clienti in caso di altri problemi.
 
@@ -124,7 +124,7 @@ Hai già lanciato il tuo primo progetto AEM Headless oppure possiedi ormai tutte
 
 ### Esplora le applicazioni a pagina singola {#explore-spa}
 
-I negozi headless in AEM possono anche non fermarsi qui, però. È possibile ricordare in [Guida introduttiva del percorso](getting-started.md#integration-levels) abbiamo discusso brevemente come l’AEM non solo supporti la distribuzione headless e i modelli tradizionali full stack, ma possa anche supportare modelli ibridi che combinano i vantaggi di entrambi.
+I negozi headless in AEM possono anche non fermarsi qui, però. Nella [Guida introduttiva al percorso](getting-started.md#integration-levels) abbiamo accennato a come AEM supporta non solo la distribuzione headless e i modelli tradizionali full-stack, ma anche i modelli ibridi che combinano i vantaggi di entrambi.
 
 Se questo tipo di flessibilità è un elemento necessario per il tuo progetto, continua con l’ulteriore parte opzionale del percorso, [Come creare applicazioni a pagina singola (SPA) con AEM.](create-spa.md)
 

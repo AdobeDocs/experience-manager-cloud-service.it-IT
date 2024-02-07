@@ -3,9 +3,9 @@ title: Scopri come creare modelli per frammenti di contenuto in AEM
 description: Scopri i concetti e la meccanica della modellazione dei contenuti per i CMS headless utilizzando Modelli per frammenti di contenuto.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '686'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Creazione di modelli per frammenti di contenuto {#creating-content-fragment-models}
 
-È quindi possibile creare modelli per frammenti di contenuto e definire la struttura. Questa operazione può essere eseguita in **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
+È quindi possibile creare modelli per frammenti di contenuto e definire la struttura. Questo può essere fatto in **Strumenti** -> **Generale** -> **Modelli per frammenti di contenuto**.
 
 ![Modelli per frammenti di contenuto negli strumenti](assets/cfm-tools.png)
 

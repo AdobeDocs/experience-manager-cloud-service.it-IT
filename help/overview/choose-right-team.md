@@ -3,9 +3,9 @@ title: Persone giuste, ruoli giusti
 description: Scopri come scegliere le persone giuste e assegnarle ai ruoli giusti per il tuo progetto.
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

@@ -3,9 +3,9 @@ title: Note sulla versione 2023.7.0 di [!DNL Adobe Experience Manager] as a Clou
 description: Note sulla versione 2023.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Per impostazione predefinita, Assets Essentials ora ordina i risultati della ric
 
 * [**Temi predefiniti**](/help/forms/using-themes-in-core-components.md) **e modelli**: velocizza il processo di creazione dei moduli con i nostri temi e modelli pronti all’uso, personalizzati per consentirne l’utilizzo da parte sia di professionisti esperti che di nuovi autori di moduli. Creati direttamente utilizzando i componenti core per moduli adattivi, questi temi e modelli meticolosamente curati consentono di iniziare a creare moduli rapidamente per i casi d’uso più comuni.
 
-* **[Componenti React per moduli headless](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: ora puoi visualizzare in anteprima e personalizzare le rappresentazioni di moduli adattivi headless con i componenti React pronti all’uso. Questi componenti utilizzano le classi BEM dei Componenti core di Adaptive Forms per la creazione di stili, semplificando la personalizzazione dell’aspetto in base a requisiti specifici.
+* **[Componenti React per moduli headless](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: ora puoi visualizzare in anteprima e personalizzare le rappresentazioni di moduli adattivi headless con i componenti React pronti all’uso. Questi componenti utilizzano le classi BEM dei componenti core per moduli adattivi per la creazione di stili, semplificandone la personalizzazione dell’aspetto in base a requisiti specifici.
 
 * [**Crea moduli adattivi con sezioni ripetibili**](/help/forms/create-forms-repeatable-sections.md): ora puoi realizzare un modello adattivo basato su componenti [Pannello a soffietto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it), [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=it) e [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it) ripetibili per l’acquisizione di più record di dati.  Queste sezioni ripetibili consentono di fornire facilmente più immissioni di dati. È utile quando le istanze di dati richieste non sono note in anticipo. Un compilatore può aggiungere o rimuovere facilmente le sezioni, rendendo i moduli adattabili a scenari di immissione dati diversi e semplificando la raccolta di più occorrenze degli stessi record di dati.
 

@@ -3,9 +3,9 @@ title: Come accedere al contenuto tramite API di consegna di AEM
 description: In questa parte del Percorso per sviluppatori headless di AEM, scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1344'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Prima di iniziare con le query sul contenuto è necessario:
 
 * Abilitare l’endpoint 
-   * Usa Strumenti > Generale > GraphQL.
+   * Usa Strumenti -> Generale -> GraphQL
    * [Abilitazione dell’endpoint GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
       * In questo modo sarà possibile abilitare anche IDE GraphiQL.
 
@@ -267,9 +267,9 @@ I modelli di frammento vengono utilizzati:
 
 ### Dove testare le query {#where-to-test-your-queries}
 
-Le query possono essere immesse nell&#39;interfaccia GraphiQL. Puoi accedere all’editor delle query da:
+Le query possono essere immesse nell&#39;interfaccia GraphiQL. Puoi accedere all’editor di query da:
 
-* **Strumenti** > **Generale** > **Editor query di GraphQL**
+* **Strumenti** -> **Generale** -> **Editor query GraphQL**
 * direttamente; ad esempio `http://localhost:4502/aem/graphiql.html`
 
 ![Interfaccia di GraphiQL](assets/graphiql-interface.png "Interfaccia di GraphiQL")

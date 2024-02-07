@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '886'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ La modifica diretta e nel contesto può spesso presentare vantaggi rispetto alla
 
 L’editor universale consente una modifica del testo veloce, diretta e nel contesto, consentendo un authoring dei contenuti semplice e intuitivo.
 
-1. Fai doppio clic per selezionare il titolo dell’articolo più recente da modificare.
+1. Fai doppio clic per selezionare il titolo dell’articolo più recente per modificarlo.
 
    ![L’editor universale](assets/do-not-localize/ue-component-mode.png)
 
@@ -47,7 +47,7 @@ L’editor universale consente una modifica del testo veloce, diretta e nel cont
 
    ![Modifica del testo nell’editor universale](assets/do-not-localize/ue-edit-text-2.png)
 
-1. Seleziona all’esterno del componente testo e le modifiche vengono salvate automaticamente.
+1. Seleziona all’esterno del componente testo per salvare automaticamente le modifiche.
 
 L’editor universale salva automaticamente le modifiche all’interno dell’ambiente di authoring. Devi comunque pubblicarle per consentire ai lettori di visualizzarle, operazione che eseguiremo in un passaggio successivo.
 
@@ -55,7 +55,7 @@ L’editor universale salva automaticamente le modifiche all’interno dell’am
 
 Utilizzando l’editor universale è inoltre possibile sostituire le immagini rimanendo nel contesto del contenuto.
 
-1. Selezionate l&#39;immagine del surfista per selezionarla.
+1. Seleziona l’immagine del surfista per selezionarla.
 
 1. Nella barra dei componenti puoi visualizzare i dettagli della risorsa. Seleziona la miniatura dell’**Immagine in primo piano**.
 
@@ -73,7 +73,7 @@ L’immagine viene sostituita con quella selezionata.
 
 L’editor universale consente di interagire con il contenuto all’interno del relativo contesto, visualizzandolo così come viene consegnato ai dispositivi degli utenti.
 
-1. Per impostazione predefinita, l’editor esegue il rendering della versione desktop del contenuto. Per modificare il dispositivo di destinazione, selezionare il pulsante dell&#39;emulatore in alto a destra nella barra degli strumenti di Universal Editor.
+1. Per impostazione predefinita, l’editor esegue il rendering della versione desktop del contenuto. Seleziona il pulsante dell’emulatore in alto a destra della barra degli strumenti dell’editor universale per cambiare il dispositivo di destinazione.
 
    ![Voce di menu emulatore](assets/do-not-localize/ue-emulator-1.png)
 
@@ -89,9 +89,9 @@ Puoi anche specificare le dimensioni esatte dell’emulatore e ruotare il dispos
 
 ## Anteprima e pubblicazione {#preview}
 
-Poiché devi selezionare il contenuto per modificarlo nell’editor, quest’ultimo non ti consente di seguire i collegamenti o interagire con il contenuto toccando o facendo clic su. In modalità anteprima, è possibile seguire i collegamenti all’interno dei contenuti e visualizzarli prima della pubblicazione così come verranno presentati agli utenti.
+Poiché devi selezionare il contenuto per modificarlo nell’editor, quest’ultimo non ti consente di seguire i collegamenti o interagire con il contenuto con il tocco o il clic. In modalità anteprima, è possibile seguire i collegamenti all’interno dei contenuti e visualizzarli prima della pubblicazione così come verranno presentati agli utenti.
 
-1. Nella barra degli strumenti di Universal Editor, seleziona **Anteprima**.
+1. Nella barra degli strumenti dell’editor universale, seleziona **Anteprima**.
 
 1. Ora seleziona il collegamento **Ulteriori informazioni** per l’articolo principale.
 
@@ -111,7 +111,7 @@ Il contenuto viene pubblicato.
 
 Per velocizzare l’authoring dei contenuti quando la modifica strutturata di contenuti headless risulta più vantaggiosa della modifica diretta, dall’editor universale puoi accedere rapidamente anche all’editor di frammenti di contenuto.
 
-1. Disattiva la modalità anteprima toccando il **Anteprima** sulla barra degli strumenti di Universal Editor.
+1. Disattiva la modalità anteprima toccando il pulsante **Anteprima** sulla barra degli strumenti dell’editor universale.
 
    ![Disattiva modalità anteprima](assets/do-not-localize/ue-toggle-off-preview.png)
 

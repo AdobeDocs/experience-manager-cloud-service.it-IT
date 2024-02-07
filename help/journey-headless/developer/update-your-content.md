@@ -3,9 +3,9 @@ title: Come aggiornare il contenuto utilizzando le API di AEM Assets.
 description: In questa parte del Percorso per sviluppatori Headless di AEM, scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1061'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

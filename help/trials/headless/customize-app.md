@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1017'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Ora che hai modificato un titolo nell’app, prova a cambiare un’immagine.
 
 1. Dall’anteprima, torna alla scheda del browser dell’editor frammenti di contenuto.
 
-1. È necessario tornare alla posizione corretta nell’editor frammenti di contenuto. Le breadcrumb in alto a sinistra nell’editor mostrano dove ti trovi nella gerarchia dei contenuti. Seleziona **Mtn Biker a Canyon** nelle breadcrumb per tornare a quella pagina.
+1. È necessario tornare alla posizione corretta nell’editor frammenti di contenuto. Le breadcrumb in alto a sinistra nell’editor mostrano dove ti trovi nella gerarchia dei contenuti. Seleziona **Mtn Biker in Canyon** nelle breadcrumb per tornare a tale pagina.
 
    ![Breadcrumb](assets/do-not-localize/swap-image-2.png)
 
