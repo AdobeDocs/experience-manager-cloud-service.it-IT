@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -26,20 +26,20 @@ ht-degree: 81%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="Ottimo lavoro In questo modulo hai imparato a creare un contenuto headless come frammento di contenuto, basato sul modello creato in precedenza. Ora puoi comprendere come i team di contenuti possono creare e gestire contenuti per app e siti web indipendentemente dai cicli di sviluppo."
+>title="Ottimo lavoro! In questo modulo hai imparato a creare un contenuto headless come frammento di contenuto, basato sul modello creato in precedenza. Ora puoi comprendere come i team di contenuti possono creare e gestire contenuti per app e siti web indipendentemente dai cicli di sviluppo."
 >abstract=""
 
 ## Creare un frammento di contenuto {#create-fragment}
 
 I frammenti di contenuto rappresentano il contenuto headless dell’utente e si basano su strutture predefinite, denominate modelli di frammenti di contenuto. Hai già creato un modello in un modulo precedente.
 
-In questo modulo, puoi creare un Frammento di contenuto basato su tale modello utilizzando la console Frammento di contenuto. Considera la console Frammenti di contenuto come una libreria di contenuti headless. Utilizzala per creare nuovi frammenti di contenuto e gestire i frammenti esistenti.
+In questo modulo viene creato un frammento di contenuto basato su tale modello, utilizzando la console Frammenti di contenuto. Considera la console Frammenti di contenuto come una libreria di contenuti headless. Utilizzala per creare nuovi frammenti di contenuto e gestire i frammenti esistenti.
 
-La console Frammenti di contenuto viene utilizzata per creare e modificare contenuti headless tra canali di distribuzione e indipendentemente dal contesto, che in molti casi può essere il metodo più efficace per l’authoring. In un modulo successivo esploreremo la modifica di contenuti headless nel contesto e sul posto.
+La console Frammenti di contenuto viene utilizzata per creare e modificare contenuti headless tra canali di consegna e indipendenti dal contesto, che può rivelarsi il metodo più efficace in molti casi di authoring. In un modulo successivo scoprirai la modifica di contenuti headless nel contesto e locale.
 
-1. Seleziona la **Crea** in alto a destra nella console.
+1. Seleziona il pulsante **Crea** in alto a destra nella console.
 
-1. Il **Nuovo frammento di contenuto** Viene visualizzata una finestra di dialogo in cui puoi iniziare a creare un frammento di contenuto. La **Posizione** viene compilata automaticamente con le posizioni in cui verranno salvati i nuovi contenuti.
+1. La finestra di dialogo **Nuovo frammento di contenuto** si apre e lì puoi iniziare a creare un frammento di contenuto. La **Posizione** viene compilata automaticamente con le posizioni in cui verranno salvati i nuovi contenuti.
 
 1. Nel menu a discesa **Modello di frammento di contenuto**, seleziona il modello di frammento di contenuto **Avventura** creato in precedenza.
 
@@ -71,7 +71,7 @@ Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento
 
 1. Fornisci un’**Immagine** rappresentativa del viaggio toccando o facendo clic su **Aggiungi risorsa** nel campo **Immagine**.
 
-1. Nel pop-up della risorsa, seleziona **Sfoglia risorse** per selezionare una risorsa esistente nella libreria delle risorse.
+1. Nella finestra a comparsa della risorsa, seleziona **Sfoglia risorse** per selezionarne una esistente nella libreria delle risorse.
 
    ![Aggiungi risorsa](assets/do-not-localize/add-asset.png)
 
@@ -79,13 +79,13 @@ Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento
 
 1. I contenuti della cartella **ciclismo-toscana** vengono visualizzati a destra. Seleziona l’immagine `ADOBESTOCK_141786166.JPEG`.
 
-1. Seleziona **Seleziona**.
+1. Scegli **Seleziona**.
 
    ![Seleziona risorsa](assets/do-not-localize/select-asset.png)
 
 1. L’immagine selezionata viene visualizzata nel frammento di contenuto. Le modifiche vengono salvate automaticamente dall’editor.
 
-1. Dopo aver aggiunto il contenuto, seleziona la **Pubblica** in alto a destra nell’editor. Questo rende il frammento di contenuto disponibile per il consumo da parte di app esterne. Seleziona **Ora** dal menu a discesa. Puoi anche pianificarlo per la pubblicazione in un secondo momento.
+1. Al termine, seleziona il pulsante **Pubblica** in alto a destra nell’editor. Questo rende il frammento di contenuto disponibile per il consumo da parte di app esterne. Seleziona **Ora** dal menu a discesa. Puoi anche pianificarlo per la pubblicazione in un secondo momento.
 
    ![Pubblica contenuto](assets/do-not-localize/publish.png)
 

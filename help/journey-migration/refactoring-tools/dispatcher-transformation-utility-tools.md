@@ -4,8 +4,8 @@ description: Scopri come convertire le configurazioni esistenti nel Dispatcher A
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
 source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 33%
+source-wordcount: '330'
+ht-degree: 28%
 
 ---
 

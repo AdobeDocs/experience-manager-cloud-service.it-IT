@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1069'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Hai appena convalidato una query di elenco per un elenco completo di tutti i fra
 
 ## Query per un contenuto specifico di esempio {#bypath-query}
 
-L’esecuzione di una query byPath consente di recuperare il contenuto per un frammento di contenuto specifico. Le pagine di dettaglio del prodotto e le pagine che si concentrano su un set specifico di contenuto in genere richiedono questo tipo di query.
+L’esecuzione di una query byPath ti consente di recuperare il contenuto per un frammento di contenuto specifico. Le pagine di dettaglio del prodotto e le pagine che si concentrano su un set specifico di contenuto in genere richiedono questo tipo di query.
 
 1. Copia il seguente frammento di codice per una query byPath dell’endpoint **AEM Demo Assets** precaricato.
 
@@ -119,9 +119,9 @@ Dopo aver eseguito i due tipi principali di query, puoi eseguire una query sul c
 
 1. Definisci gli elementi che la query deve contenere per il modello Frammento di contenuto selezionato. Di nuovo, digita la parentesi aperta `{`, quindi premi Ctrl+Spazio o Opzione+Spazio per un elenco di completamento automatico. Seleziona `items` dalle opzioni.
 
-1. Seleziona la **Migliora** per formattare automaticamente il codice in modo da semplificarne la lettura.
+1. Seleziona il pulsante **Migliora** per formattare automaticamente il codice in modo da facilitarne la lettura.
 
-1. Al termine, seleziona la **Play** in alto a sinistra nell’editor per eseguire la query. L’editor completa automaticamente gli `items`, che vengono brevemente evidenziati in giallo e la query viene eseguita.
+1. Al termine, seleziona il pulsante **Riproduci** in alto a sinistra dell’editor per eseguire la query. L’editor completa automaticamente gli `items`, che vengono brevemente evidenziati in giallo e la query viene eseguita.
 
 1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor delle query.
 
@@ -163,7 +163,7 @@ Verrà creata una query persistente che include i dati che si desidera utilizzar
 
    >[!NOTE]
    >
-   >Se non hai utilizzato le stesse descrizioni dei campi descritte nei moduli precedenti, aggiorna i nomi dei campi in questa query.
+   >Se non hai utilizzato le stesse descrizioni dei campi illustrate nei moduli precedenti, aggiorna i nomi dei campi in questa query.
    >
    >Utilizza la funzione di completamento automatico di GraphQL (Ctrl+Spazio o Opzione+Spazio) come descritto in precedenza per identificare le proprietà disponibili.
 
@@ -183,7 +183,7 @@ Verrà creata una query persistente che include i dati che si desidera utilizzar
 
 1. La query è resa persistente, come confermato da un messaggio del banner nella parte inferiore dello schermo. La query viene ora visualizzata anche nel pannello a sinistra delle query persistenti nella finestra.
 
-1. Affinché la query persistente sia disponibile pubblicamente, è necessario pubblicarla in modo analogo a come devono essere pubblicati i frammenti di contenuto. Clic **Pubblica** in alto a destra nell’editor delle query per pubblicare la query.
+1. Affinché la query persistente sia disponibile pubblicamente, deve essere pubblicata, in modo analogo alla pubblicazione dei frammenti di contenuto. Fai clic sul pulsante **Pubblica** in alto a destra dell’editor di query per pubblicare la query.
 
 1. La pubblicazione viene confermata da una notifica del banner.
 

@@ -4,8 +4,8 @@ description: Scopri come monitorare i problemi e migliorare le prestazioni
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 29%
+source-wordcount: '459'
+ht-degree: 22%
 
 ---
 
@@ -32,7 +32,7 @@ Questo documento descrive gli strumenti disponibili per la risoluzione dei probl
 * **CRXDE Lite**
 * **Gestione dei registri**
 
-## Console per sviluppatori {#developer-console}
+## Console di sviluppo {#developer-console}
 
 Il debug degli ambienti per sviluppatori as a Cloud Service all’AEM è disponibile nella Console per sviluppatori per ambienti di sviluppo, stage e produzione.
 
@@ -40,7 +40,7 @@ Consulta [Implementazione per AEM as a Cloud Service](/help/implementing/develop
 
 ## CRXDE Lite {#crxde-lite}
 
-Come utente, puoi accedere a CRXDE Lite nell’ambiente di sviluppo ma non in quello di stage o produzione.
+In qualità di utente, puoi accedere a CRXDE Liti nell’ambiente di sviluppo ma non in quello di stage o produzione.
 
 >[!IMPORTANT]
 >Scrittura in archivi immutabili come `/libs` e `/apps` in fase di runtime genera errori. Inoltre, non hai accesso agli strumenti per sviluppatori per gli ambienti di staging e produzione.

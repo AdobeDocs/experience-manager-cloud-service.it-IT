@@ -1,13 +1,13 @@
 ---
 title: Assegnazione dei profili di prodotto di AEM
-description: Dopo aver configurato le risorse cloud, concedi al team l’accesso all’AEM stesso utilizzando i profili di prodotto dell’AEM.
+description: Dopo aver configurato le risorse cloud, devi fornire al team l’accesso ad AEM tramite i profili di prodotto di AEM.
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 77%
+source-wordcount: '878'
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 77%
 >title="Assegnare profili di prodotto AEM"
 >abstract="Non disponi dei diritti necessari per utilizzare Experience Manager Assets. Contatta l’amministratore."
 
-In questa parte del [percorso di onboarding,](overview.md) scopri come consentire al team di accedere all’AEM utilizzando i profili di prodotto dell’AEM.
+In questa sezione del [percorso di onboarding](overview.md) scoprirai come fornire al team l’accesso ad AEM con i profili di prodotto di AEM.
 
 ## Obiettivo {#objective}
 
-Dopo aver letto il documento precedente in questo percorso di onboarding, [Creare ambienti,](create-environments.md) e configurare le risorse cloud, concedi al tuo team l’accesso all’AEM utilizzando i profili di prodotto dell’AEM. Come amministratore di sistema, puoi eseguire l’operazione assegnando i profili di prodotto di AEM.
+Dopo aver letto il documento precedente in questo percorso di onboarding, [Creazione di ambienti,](create-environments.md) e aver configurato le risorse cloud, devi fornire al team l’accesso ad AEM con i profili di prodotto di AEM. Come amministratore di sistema, puoi eseguire l’operazione assegnando i profili di prodotto di AEM.
 
 Dopo aver letto questo documento saprai:
 
@@ -58,7 +58,7 @@ Prima di iniziare a leggere questa sezione, è necessario disporre delle seguent
 
 >[!TIP]
 >
->Ai fini dell’onboarding, l’Adobe consiglia di aggiungere per primi gli utenti che parteciperanno alle attività fin da subito, come amministratori, sviluppatori e autori di contenuti. Puoi avanzare nel resto del processo di onboarding senza aggiungere tutti gli utenti. Potrai aggiungerne di più in un secondo momento, dopo aver completato l’onboarding.
+>Ai fini dell’onboarding, Adobe consiglia di aggiungere per primi gli utenti che parteciperanno alle attività fin da subito, come amministratori, sviluppatori e autori di contenuti. Puoi avanzare nel resto del processo di onboarding senza aggiungere tutti gli utenti. Potrai aggiungerne di più in un secondo momento, dopo aver completato l’onboarding.
 
 ## Visualizzazione dei profili di prodotto di AEM {#view-profiles}
 
@@ -74,7 +74,7 @@ Per visualizzare i profili di prodotto di AEM da Admin Console, segui la procedu
 
    ![Selezione dell’istanza](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
-1. Puoi visualizzare l’elenco dei profili di prodotto as a Cloud Service all’AEM che possono essere assegnati a un utente in base ai suoi ruoli.
+1. Viene visualizzato l’elenco dei profili di prodotto di AEM as a Cloud Service che è possibile assegnare a un utente in base al ruolo.
 
    ![Profili di prodotto](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
@@ -88,11 +88,11 @@ Per queste attività è necessario essere amministratori di sistema con il profi
 
    ![Gestisci accesso](/help/journey-onboarding/assets/add-team1.png)
 
-1. Si apre nuova scheda di Admin Console, da cui puoi accedere all’istanza di Author dell’ambiente. Seleziona **Amministratori AEM** o **Utenti AEM** in base alle autorizzazioni che deve essere assegnato a questa persona.
+1. Si apre nuova scheda di Admin Console, da cui puoi accedere all’istanza di Author dell’ambiente. Seleziona **Amministratori AEM** o **Utenti AEM** in base alle autorizzazioni da assegnare a questo utente.
 
    ![Assegnazione dell’accesso](/help/journey-onboarding/assets/add-team2.png)
 
-1. Seleziona `AEM Administrator` o `AEM User` e fai clic su **Aggiungi utente** come mostrato di seguito e invia i dettagli necessari per completare l’aggiunta del membro del team.
+1. Seleziona `AEM Administrator` o `AEM User` e fai clic su **Aggiungi utente** come mostrato di seguito, quindi inserisci i dettagli necessari per completare l’aggiunta del membro del team.
 
    ![Aggiunta di un membro del team](/help/journey-onboarding/assets/add-team3.png)
 
@@ -106,8 +106,8 @@ Congratulazioni. Gli utenti assegnati ai profili di prodotto di AEM as a Cloud S
 
 Tuttavia, se desideri comprendere meglio l’utilizzo del sistema dalla prospettiva dei ruoli Autore e Sviluppatore, puoi continuare con due parti facoltative di questo percorso di onboarding:
 
-* [Attività dei ruoli Sviluppatore e Responsabile dell’implementazione](developers.md) : scopri come gli sviluppatori accedono a Git per memorizzare il codice personalizzato e distribuirlo con le pipeline di Cloud Manager.
-* [Attività degli utenti AEM](aem-users.md) : scopri come accedere all’ambiente AEM e iniziare a creare contenuti.
+* [Attività dei ruoli Sviluppatore e Responsabile della distribuzione](developers.md): scoprirai in che modo i team di sviluppo possono accedere a Git per archiviare il codice personalizzato e distribuirlo con le pipeline di Cloud Manager.
+* [Attività degli Utenti AEM](aem-users.md): scoprirai come accedere all’ambiente AEM e iniziare a creare contenuti.
 
 ## Risorse aggiuntive {#additional-resources}
 

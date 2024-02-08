@@ -6,8 +6,8 @@ index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 07f61a3f6a794e18bc2e02e966392cdce3103a81
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 98%
+source-wordcount: '1002'
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Segui gli stessi passaggi indicati sopra per aggiungere questi ulteriori campi. 
 
    * **Rendering come:** **Riferimento contenuto** - Quando crei un’avventura, questo campo punta alla risorsa immagine che rappresenta questo viaggio.
    * **Etichetta campo:** `Image` - Questa è l’etichetta che viene visualizzata per questo campo quando si crea un’avventura.
-   * **Percorso directory principale:** `/content/dam/aem-demo-assets/en` : specifica un percorso del punto iniziale durante la ricerca delle risorse con il Selettore risorse.
+   * **Percorso radice:** `/content/dam/aem-demo-assets/en`: specifica un percorso del punto iniziale durante l’esplorazione delle risorse con il Selettore risorse.
 
 1. Dopo aver aggiunto i campi necessari per il modello per frammenti di contenuto, fai clic su **Salva** in alto a destra.
 
