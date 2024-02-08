@@ -4,10 +4,10 @@ description: Elenco di tutte le API contabilizzate come transazioni
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+source-git-commit: 7318c5e65fc03bfebbf5fb43e4edc30ffbb53909
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 4%
+source-wordcount: '1598'
+ht-degree: 3%
 
 ---
 
@@ -31,44 +31,42 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="Tracciamento invii modulo"
->abstract="Tieni traccia facilmente degli invii di moduli con una vista consolidata per i conteggi totali o immergiti nei dettagli specifici dell’istanza. Utilizza il grafico a barre intuitivo per identificare le tendenze, confrontare le istanze e prendere decisioni informate in breve tempo."
+>abstract="Monitora facilmente l’invio di moduli nell’istanza AEM Forms Publish con la nostra dashboard di tracciamento intuitiva. Il grafico fornisce dati specifici per l’istanza corrente, consentendoti di analizzare rapidamente le tendenze e prendere decisioni informate. Per i dati di invio di altre istanze, accedi semplicemente al dashboard della rispettiva istanza."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
 >title="Tracciamento conversioni modulo"
->abstract="Tieni le schede sulle conversioni dei moduli facilmente attraverso un riepilogo dei conteggi totali o esplora i dettagli per ogni istanza di AEM Forms. Il grafico a barre di facile lettura consente di individuare tendenze, confrontare istanze e prendere decisioni rapide e informate."
+>abstract="Resta informato sulle conversioni dei moduli con un riepilogo del numero totale di conversioni. Il grafico fornisce dati specifici per l’istanza AEM Forms Publish corrente, consentendoti di analizzare rapidamente le tendenze e prendere decisioni informate. Per visualizzare i dati di conversione di altre istanze, accedi al dashboard della rispettiva istanza."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="Durata media per la generazione del modulo"
->abstract="Il grafico mostra il tempo medio impiegato per creare un modulo. Ogni barra del grafico rappresenta una forma specifica e l’altezza della barra indica la durata media della creazione della maschera durante tale intervallo di tempo. L’analisi di questo grafico consente agli utenti di comprendere l’efficienza e la velocità della creazione dei moduli in periodi diversi o in contesti diversi, consentendo di ottenere informazioni sui potenziali miglioramenti."
+>abstract="Il grafico mostra il tempo medio impiegato per creare un modulo. Ogni barra del grafico rappresenta una forma specifica e l’altezza della barra indica la durata media della creazione della maschera durante tale intervallo di tempo. L’analisi di questo grafico consente agli utenti di comprendere l’efficienza e la velocità della creazione dei moduli in periodi diversi o in contesti diversi, consentendo di ottenere informazioni sui potenziali miglioramenti. Il grafico fornisce dati specifici per l’istanza AEM Forms Author corrente. Per visualizzare i dati di altre istanze, accedi al dashboard della rispettiva istanza."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Durata media per la creazione di moduli"
->abstract="Nel grafico viene visualizzato il tempo medio necessario per creare e pubblicare un modulo, misurato dal giorno iniziale in cui il modulo è stato aperto per la modifica. Ogni barra corrisponde a un intervallo di tempo specifico per un modulo, con l’altezza della barra che indica il tempo medio trascorso dall’inizio dello sviluppo del modulo alla sua finalizzazione e pubblicazione."
+>abstract="Nel grafico viene visualizzato il tempo medio necessario per creare e pubblicare un modulo, misurato dal giorno iniziale in cui il modulo è stato aperto per la modifica. Ogni barra corrisponde a un intervallo di tempo specifico per un modulo, con l’altezza della barra che indica il tempo medio trascorso dall’inizio dello sviluppo del modulo alla sua finalizzazione e pubblicazione. Il grafico fornisce dati specifici per l’istanza AEM Forms Author corrente. Per visualizzare i dati di altre istanze, accedi al dashboard della rispettiva istanza."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="Nuovo tracker Forms"
->abstract="Il grafico fornisce informazioni sul numero o sulla frequenza delle nuove maschere create durante specifici periodi di tempo. Ogni barra del grafico rappresenta un’unità di misura distinta, ad esempio giorni, settimane o mesi. L&#39;altezza di ciascuna barra indica la quantità o la frequenza delle nuove forme create durante tale intervallo."
+>abstract="Il grafico fornisce informazioni sul numero o sulla frequenza delle nuove maschere create durante specifici periodi di tempo. Ogni barra del grafico rappresenta un’unità di misura distinta, ad esempio giorni, settimane o mesi. L&#39;altezza di ciascuna barra indica la quantità o la frequenza delle nuove forme create durante tale intervallo. Il grafico fornisce dati specifici per l’istanza AEM Forms Author corrente. Per visualizzare i dati di altre istanze, accedi al dashboard della rispettiva istanza."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Tracciamento Forms pubblicato"
->abstract="Il grafico fornisce informazioni sul numero o sulla frequenza dei moduli pubblicati correttamente durante specifici periodi di tempo. In questo modo è possibile comprendere le tendenze, i pattern o le variazioni nella pubblicazione dei moduli nel tempo, nonché monitorare la produttività, identificare i periodi di picco di pubblicazione o valutare il successo delle modifiche nel processo di pubblicazione dei moduli."
+>abstract="Il grafico fornisce informazioni sul numero o sulla frequenza dei moduli pubblicati correttamente durante specifici periodi di tempo. In questo modo è possibile comprendere le tendenze, i pattern o le variazioni nella pubblicazione dei moduli nel tempo, nonché monitorare la produttività, identificare i periodi di picco di pubblicazione o valutare il successo delle modifiche nel processo di pubblicazione dei moduli. Il grafico fornisce dati specifici per l’istanza AEM Forms Publish corrente. Per visualizzare i dati di conversione di altre istanze, accedi al dashboard della rispettiva istanza."
 
-<!-- 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="Form Fragments Tracker"
->abstract="This graph helps you see how many form fragments people use in their forms. It gives you a sense of how popular or common these reusable parts are in form building."
+>title="Tracciamento Forms pubblicato"
+>abstract="Questo grafico consente di vedere quanti frammenti di modulo vengono utilizzati dagli utenti nei loro moduli. Ti dà un&#39;idea di quanto popolari o comuni siano queste parti riutilizzabili nella costruzione del modulo. Il grafico fornisce dati specifici per l’istanza AEM Forms Publish corrente. Per visualizzare i dati di conversione di altre istanze, accedi al dashboard della rispettiva istanza."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
->title="Average Duration for Form Fragments Creation"
->abstract= "The graph displays the average time taken to create a form fragment, measured from the initial day the form fragment was opened for editing. Each bar corresponds to a specific time frame for a form fragment, with the bar height indicating the average time taken from the start of form fragment development to its finalization and publication."
-
+>title="Tracciamento Forms pubblicato"
+>abstract="Il grafico mostra il tempo medio necessario per creare un frammento di modulo, misurato dal giorno iniziale in cui il frammento è stato aperto per la modifica. Ogni barra corrisponde a un intervallo di tempo specifico per un frammento di modulo, con l’altezza della barra che indica il tempo medio trascorso dall’inizio dello sviluppo del frammento di modulo alla sua finalizzazione e pubblicazione. Il grafico fornisce dati specifici per l’istanza AEM Forms Publish corrente. Per visualizzare i dati di conversione di altre istanze, accedi al dashboard della rispettiva istanza."
 
 <!-- 
 
