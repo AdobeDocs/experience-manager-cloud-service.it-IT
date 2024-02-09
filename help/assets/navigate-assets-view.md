@@ -3,10 +3,10 @@ title: "Interfaccia utente di [!DNL Assets view]"
 description: Comprendere l’interfaccia utente e la navigazione in [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2f701c527b5aac9d604cbfe857df90c3e8bf6054
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 89%
+source-wordcount: '922'
+ht-degree: 81%
 
 ---
 
@@ -44,10 +44,10 @@ Quando accedi a [!DNL Assets view], viene visualizzata la seguente interfaccia.
 * [Attività](/help/assets/my-workspace-assets-view.md): nella scheda **Le mie attività** puoi visualizzare le attività che ti sono state assegnate. Nella scheda **Attività assegnate** trovi invece le attività che hai creato. Inoltre, le attività completate si trovano in **Attività completate** scheda.
 * [Risorse](/help/assets/manage-organize-assets-view.md): elenco di tutte le cartelle a cui ai accesso, con struttura ad albero.
 * **Visualizzate di recente**: elenco delle risorse visualizzate in anteprima di recente. [!DNL Assets view] mostra solo le risorse visualizzate in anteprima. Non visualizza le risorse che scorri quando esplori i file o le cartelle dell’archivio.
-* [Raccolte](/help/assets/manage-collections-assets-view.md): una raccolta è un insieme di risorse, cartelle o altre raccolte nella vista Risorse di Adobe Experience Manager. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti. A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Puoi condividere più raccolte con un utente. Ogni raccolta contiene riferimenti alle risorse. L’integrità dei riferimenti alle risorse viene mantenuta tra le varie raccolte.
+* [Raccolte](/help/assets/manage-collections-assets-view.md): una raccolta è un set di risorse, cartelle o altre raccolte all’interno della vista Adobe Experience Manager Assets. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti. A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Puoi condividere più raccolte con un utente. Ogni raccolta contiene riferimenti alle risorse. L’integrità dei riferimenti alle risorse viene mantenuta tra le varie raccolte.
 
 * [Approfondimenti](/help/assets/manage-reports-assets-view.md#view-live-statistics): in [!DNL Assets view], puoi visualizzare insight in tempo reale nella tua dashboard. Vista Risorse consente di visualizzare in tempo reale i dati del tuo ambiente vista Risorse, con la dashboard Insight. Puoi visualizzare le metriche degli eventi in tempo reale negli ultimi 30 giorni o negli ultimi 12 mesi.
-* **Cestino**: mostra l’elenco delle risorse eliminate dalla cartella principale **[!UICONTROL Risorse]**. È possibile selezionare una risorsa nella cartella Cestino per ripristinarla nella posizione originale o eliminarla definitivamente. Puoi anche specificare una parola chiave o applicare filtri standard o personalizzati per cercare le risorse appropriate all’interno della cartella Cestino. Per ulteriori informazioni sull’utilizzo di filtri standard e personalizzati, consulta [Cercare le risorse nella vista Risorse](/help/assets/search-assets-view.md).
+* **Cestino**: mostra l’elenco delle risorse eliminate dalla cartella principale **[!UICONTROL Risorse]**. Puoi selezionare una risorsa nella cartella Cestino per ripristinarla alla posizione originale o eliminarla definitivamente. Puoi specificare una parola chiave o applicare filtri quali stato della risorsa, tipo di file, tipo di mime, dimensione dell’immagine, creazione della risorsa, modifica e date di scadenza, nonché filtrare in base alle risorse eliminate dall’utente corrente. Puoi anche applicare filtri personalizzati per cercare le risorse appropriate all’interno della cartella Cestino. Per ulteriori informazioni sull&#39;utilizzo di filtri standard e personalizzati, vedere procedura [cercare le risorse nella vista Risorse](/help/assets/search-assets-view.md).
 * **Impostazioni**: puoi configurare diverse opzioni della vista Risorse utilizzando **Impostazioni**, ad esempio Moduli di metadati, Report e Gestione tassonomia.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
