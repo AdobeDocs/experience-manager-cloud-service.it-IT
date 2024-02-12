@@ -3,10 +3,10 @@ title: Note sulla versione 2024.1.0 di Cloud Manager in Adobe Experience Manager
 description: Queste sono le note sulla versione 2024.1.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
-workflow-type: ht
-source-wordcount: '673'
-ht-degree: 100%
+source-git-commit: b81c2bd5c339bce97fe5774572bf1532fc8e04df
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ Se ti interessa testare questa nuova funzionalità e condividere il tuo feedback
 
 ### Porta il tuo GitHub personale {#byo-github}
 
-Se utilizzi GitHub per gestire gli archivi, [ora puoi convalidare il codice direttamente all’interno degli archivi GitHub tramite Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) Questa integrazione elimina la necessità di sincronizzare in modo coerente il codice con l’archivio Adobe e consente di verificare le richieste pull prima di unirle ai rami principali.
+Se utilizzi GitHub per gestire gli archivi, [ora puoi convalidare il codice direttamente all’interno degli archivi GitHub tramite Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) Questa integrazione elimina la necessità di sincronizzare in modo coerente il codice con l’archivio Adobe e consente di verificare le richieste pull prima di unirle ai rami principali. Questa funzione è esclusiva per GitHub pubblico. Il supporto per GitHub con hosting autonomo non è disponibile.
 
 Se ti interessa testare questa nuova funzionalità e condividere il tuo feedback, invia un’e-mail a `Grp-CloudManager_BYOG@adobe.com` dall’indirizzo e-mail associato al tuo Adobe ID.
 
