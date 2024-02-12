@@ -2,9 +2,9 @@
 title: Informazioni sulle richieste di contenuto di Cloud Service
 description: Se hai acquistato licenze per richieste di contenuto da Adobe, scopri i tipi di richieste di contenuto che Adobe Experience Cloud as a Service misura e le varianze con gli strumenti di reporting di Analytics di un’organizzazione.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 6212ad20cb427d6b2ccd4c467d571832f923ed2a
+source-git-commit: 13a2aad1fc8080fb0d5060fcc31c9b71f1a833ca
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2682'
 ht-degree: 5%
 
 ---
@@ -81,7 +81,7 @@ Vedi anche [Dashboard delle licenze](/help/implementing/cloud-manager/license-da
 
 ## Raccolta lato client {#cliendside-collection}
 
-### Real User Monitoring (RUM) per AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
+### Servizio Real User Monitoring per AEM as a Cloud Service {#real-user-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
@@ -94,7 +94,7 @@ Real User Monitoring (RUM) è un tipo di tecnologia di monitoraggio delle presta
 
 Real User Monitoring (RUM) fornisce informazioni approfondite sulle metriche delle prestazioni chiave, dall’avvio dell’URL fino a quando la richiesta non viene inviata al browser. Tutto questo aiuta gli sviluppatori a migliorare l’applicazione per facilitarne l’utilizzo per gli utenti finali.
 
-### Chi può trarre vantaggio dal servizio di monitoraggio dei dati RUM? {#who-can-benefit-from-rum-data-monitoring-service}
+### Chi può trarre vantaggio dal servizio Real User Monitoring? {#who-can-benefit-from-rum-service}
 
 Il servizio dati RUM è utile per tutti i clienti che utilizzano Adobe o la propria rete CDN. Offre un riflesso più preciso delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web che riflette il numero di visualizzazioni di pagina sul lato client.
 
@@ -104,17 +104,17 @@ I clienti che utilizzano la propria rete CDN possono beneficiare di rapporti sul
 
 Inoltre, tutti i clienti possono ottenere informazioni approfondite sulle prestazioni delle pagine, per ottimizzare in modo efficace le loro esperienze digitali.
 
-### Comprendere il funzionamento del servizio dati Real User Monitoring (RUM) {#understand-how-the-rum-data-service-works}
+### Funzionamento del servizio Real User Monitoring {#understand-how-the-rum-service-works}
 
 Adobe Experience Manager utilizza Real User Monitoring (RUM) per aiutare i clienti e gli Adobi a comprendere come i visitatori interagiscono con i siti basati su Adobe Experience Manager, diagnosticare i problemi di prestazioni e misurare l’efficacia degli esperimenti. RUM preserva la privacy dei visitatori attraverso il campionamento - solo una piccola parte di tutte le visualizzazioni di pagina sarà monitorata - e l&#39;esclusione giudiziosa di tutte le informazioni personali identificabili (PII).
 
-### Real User Monitoring (RUM) e privacy {#rum-and-privacy}
+### Servizio Real User Monitoring e privacy {#rum-service-and-privacy}
 
 Real User Monitoring in Adobe Experience Manager è progettato per preservare la privacy dei visitatori e ridurre al minimo la raccolta di dati. In qualità di visitatore, ciò significa che nessuna informazione personale verrà raccolta dal sito che stai visitando o resa disponibile agli Adobi.
 
 In qualità di operatore del sito, ciò significa che non è richiesto alcun consenso aggiuntivo per abilitare il monitoraggio tramite questa funzione.Pertanto, non ci sarà alcun pop-up aggiuntivo che gli utenti finali dovranno accettare per abilitare il monitoraggio RUM.
 
-### Campionamento dei dati RUM {#rum-data-sampling}
+### Campionamento dei dati del servizio Real User Monitoring {#rum-service-data-sampling}
 
 Le soluzioni di analisi web tradizionali tentano di raccogliere dati su ogni singolo visitatore. Il monitoraggio degli utenti reali di Adobe Experience Manager acquisisce informazioni solo da una piccola frazione di visualizzazioni di pagina. Real User Monitoring (RUM) deve essere campionato e reso anonimo, anziché sostituire le funzioni di analisi. Per impostazione predefinita, le pagine hanno una proporzione di campionamento di 1:100. Gli operatori del sito non possono configurare questo numero per aumentare o diminuire la frequenza di campionamento a partire da oggi. Per stimare con precisione il traffico totale, per ogni 100 visualizzazioni di pagina, raccogliamo dati dettagliati da una, fornendo un’approssimazione affidabile del traffico complessivo.&quot;
 
@@ -136,14 +136,14 @@ Real User Monitoring (RUM) è progettato per impedire la raccolta di informazion
 * La destinazione o il collegamento a una pagina o risorsa esterna con cui l’utente interagisce per il punto di controllo menzionato in precedenza. Esempio: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * Le metriche delle prestazioni Core Web Vitals (CWV), LCP (Largest Contentful Paint), FID (First Input Delay) e CLS (Cumulative Layout Shift) descrivono la qualità dell’esperienza del visitatore.
 
-### Come impostare il servizio dati Real User Monitoring (RUM) {#how-to-set-up-them-rum-data-service}
+### Come impostare il servizio Real User Monitoring {#how-to-set-up-the-rum-service}
 
 * Se desideri partecipare al nostro programma Early Adopter, invia un’e-mail a `aemcs-rum-adopter@adobe.com`, insieme al nome di dominio per l’ambiente di produzione, stage e sviluppo, dall’indirizzo e-mail associato al tuo Adobe ID. Il team di prodotto di Adobe abiliterà quindi il servizio dati Real User Monitoring (RUM).
 * Una volta completato, il team di prodotto di Adobe creerà un canale di collaborazione con il cliente.
 * Il team di prodotto di Adobe ti contatterà per fornirti la chiave di dominio e l’URL del dashboard dati in cui puoi visualizzare le Visualizzazioni pagina e [Core Web Vitals (CWV)](https://web.dev/vitals/) metriche raccolte dalla raccolta Real User Monitoring (RUM) lato client.
 * Verrai quindi guidato su come utilizzare la chiave di dominio per accedere all’URL del dashboard dei dati e visualizzare le metriche.
 
-### Utilizzo dei dati di Real User Monitoring (RUM) {#how-rum-data-is-being-used}
+### Utilizzo dei dati del Real User Monitoring Service {#how-rum-service-data-is-being-used}
 
 I dati RUM sono utili per i seguenti scopi:
 
