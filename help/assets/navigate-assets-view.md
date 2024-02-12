@@ -3,10 +3,10 @@ title: "Interfaccia utente di [!DNL Assets view]"
 description: Comprendere l’interfaccia utente e la navigazione in [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 2f701c527b5aac9d604cbfe857df90c3e8bf6054
+source-git-commit: 39166f59eb773a149ba28be2b34d0c1aa6c831b4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 81%
+source-wordcount: '912'
+ht-degree: 63%
 
 ---
 
@@ -24,15 +24,7 @@ Quando accedi a [!DNL Assets view], viene visualizzata la seguente interfaccia.
 
 ![[!DNL Assets view] - Interfaccia utente](assets/assets-view-interface.png)
 
-    *A: Barra laterale sinistra per sfogliare l’archivio, fornisce l’accesso ad alcune altre opzioni*
-    *B: Visualizzare o comprimere la barra laterale sinistra per aumentare l’area di visualizzazione delle risorse*
-    *C: Filtrare i risultati della ricerca*
-    *D: Selezionare tutti i contenuti della cartella selezionata*
-    *E: Opzioni di ordinamento delle risorse*
-    *F: Casella di ricerca*
-    *G: Caricare o trascinare file utilizzando il pulsante `Add Assets`*
-    *H: Creare una nuova cartella*
-    *I: Passare da una visualizzazione all’altra*
+**A**: barra laterale a sinistra per sfogliare l’archivio e accedere ad alcune altre opzioni **B**: visualizza o comprimi la barra laterale a sinistra per aumentare l’area di visualizzazione delle risorse **C**: Filtra i risultati della ricerca **D**: seleziona tutto il contenuto della cartella selezionata **E**: opzioni per ordinare le risorse **F**: casella di ricerca **G**: carica o trascina i file tramite `Add Assets` pulsante **H**: crea una nuova cartella **I**: passaggio da una visualizzazione all’altra
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
 
@@ -82,23 +74,7 @@ Per visualizzare in anteprima una risorsa, selezionala e fai clic sull’[!UICON
 
 ![Visualizzare in anteprima una risorsa](assets/preview-asset-2.png)
 
-*A: Tornare alla cartella corrente o al risultato della ricerca corrente nell’archivio*
-*B: Nome e formato del file che si sta visualizzando in anteprima*
-*C: Assegnare le attività*
-*D: Scaricare la risorsa*
-*E: Anteprima della risorsa e visualizzazione delle informazioni sui metadati*
-*D: Metadati avanzati*
-*E: Parole chiave e tag avanzati*
-*F: Commentare e annotare*
-*G: Visualizzare le attività relative alla risorsa selezionata*
-*H: Visualizzare e gestire le versioni*
-*I: Visualizzare le rappresentazioni dell’immagine*
-*J: Modificare l’immagine*
-*K: Metadati di base*
-*L: Metadati avanzati*
-*M: Parole chiave e tag avanzati*
-*N: Visualizzare un’anteprima più dettagliata. Zoom, Schermo intero e altre opzioni*
-*O: Passare alla risorsa precedente o successiva nella cartella corrente senza tornare alla cartella*
+**A**: torna alla cartella corrente o al risultato della ricerca corrente nell’archivio **B**: nome e formato del file che si sta visualizzando in anteprima **C**: Assegna attività **D**: metadati avanzati **E**: parole chiave e tag avanzati **F**: commenta e annota **G**: visualizza le attività relative alla risorsa selezionata **H**: visualizzare e gestire le versioni **I**: visualizza le rappresentazioni dell’immagine **J**: modifica immagine **K**: metadati di base **L**: metadati avanzati **M**: parole chiave e tag avanzati **N**: visualizza un’anteprima più dettagliata. Zoom, schermo intero e altre opzioni **O**: passa alla risorsa precedente o successiva nella cartella corrente senza tornare alla cartella
 
 Puoi anche visualizzare in anteprima i video.
 
