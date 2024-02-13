@@ -5,9 +5,9 @@ keywords: Aggiungi una funzione personalizzata, utilizza una funzione personaliz
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 94a290964a92f8c6ed353d9c77f3dd3b8a5598a4
+source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,11 @@ Puoi creare una funzione personalizzata con o senza commenti jsdoc.
             // code to be executed
         }
 ```
+<!--
 
-* **Funzione freccia con commento jsdoc obbligatorio**
+* **Arrow function with mandatory jsdoc comment**
 
-Di seguito sono riportati alcuni esempi di creazione delle funzioni Freccia:
-
+Some of the examples to create Arrow functions are:
 ```javascript
     /**
     * test function
@@ -82,7 +82,6 @@ Di seguito sono riportati alcuni esempi di creazione delle funzioni Freccia:
     };
 ```
 
-<!-- 
     * @param {string=} b another parameter description
       /** */
     testFunction1=(a) => (return a)
