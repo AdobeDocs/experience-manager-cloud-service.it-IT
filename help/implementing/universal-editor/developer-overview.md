@@ -2,9 +2,9 @@
 title: Panoramica di Universal Editor per sviluppatori AEM
 description: Se sei uno sviluppatore AEM interessato al funzionamento di Universal Editor e a come utilizzarlo nel progetto, questo documento offre un’introduzione end-to-end che ti guida attraverso la strumentazione del progetto WKND per lavorare con Universal Editor.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
+source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
 workflow-type: tm+mt
-source-wordcount: '3112'
+source-wordcount: '3139'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ Devi aggiungere la libreria JavaScript necessaria al componente page dell’app 
 1. Aggiungi la libreria JavaScript alla fine del file.
 
    ```html
-   <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js"></script>
+   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
    ```
 
 1. Clic **Salva tutto** e quindi ricaricare Universal Editor.
@@ -183,6 +183,8 @@ Tuttavia, probabilmente hai notato che non puoi interagire con la pagina nell’
    ```html
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
+
+   * Si consiglia sempre di utilizzare la versione più recente della libreria. Se hai bisogno di una versione precedente, consulta il documento [Guida introduttiva dell’Editor universale in AEM.](/help/implementing/universal-editor/getting-started.md#alternative)
 
 1. Aggiungere alla fine del file i metadati necessari per la connessione al servizio Universal Editor locale.
 
