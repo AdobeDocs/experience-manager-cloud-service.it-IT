@@ -5,9 +5,9 @@ keywords: Aggiungi una funzione personalizzata, utilizza una funzione personaliz
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
+source-git-commit: 1fb7fece71eec28219ce36c72d628867a222b618
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Nell’esempio precedente, quando l’utente tenta di inviare il modulo, viene r
 
 ### Utilizzo di funzioni personalizzate {#uses-of-custom-function}
 
-Alcuni dei vantaggi dell’utilizzo di funzioni personalizzate in Adaptive Forms sono:
+L’utilizzo di funzioni personalizzate in Adaptive Forms offre i seguenti vantaggi:
 
 * **Manipolazione dei dati**: le funzioni personalizzate manipolano ed elaborano i dati immessi nei campi dei moduli.
 * **Convalida dei dati**: le funzioni personalizzate ti consentono di eseguire controlli personalizzati sugli input dei moduli e fornire messaggi di errore specifici.
@@ -90,7 +90,7 @@ Some of the examples to create Arrow functions are:
 
 * **Espressione di funzione con commento jsdoc obbligatorio**
 
-Crea funzioni personalizzate nei seguenti formati per elencarle nell’editor di regole di un modulo adattivo. Ad esempio:
+Per elencare le funzioni personalizzate nell’editor di regole di un modulo adattivo, crea funzioni personalizzate nel formato seguente:
 
 ```javascript
     /**
@@ -118,7 +118,7 @@ The functions that are not supported in the custom function list are:
 
 >[!NOTE]
 >
-> Puoi controllare la `error.log` in caso di errori, come le funzioni personalizzate, non vengono elencati nell’editor delle regole.
+> Puoi controllare la `error.log` per eventuali errori, ad esempio se le funzioni personalizzate non sono elencate nell’editor di regole.
 
 <!--The `error.log` file also displays the methods and parameters that are not supported for custom functions. -->
 
@@ -136,13 +136,13 @@ I passaggi per creare funzioni personalizzate sono i seguenti:
 Puoi aggiungere funzioni personalizzate aggiungendo la libreria client. Per creare una libreria client, effettua le seguenti operazioni:
 
 1. [Clonare l’archivio as a Cloud Service di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. Creare una cartella in `[AEM Forms as a Cloud Service repository folder]/apps/` cartella. Ad esempio, crea una cartella denominata come `experience-league`
-1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` e creare un `ClientLibraryFolder` as `es6clientlibs`.
-1. Aggiungi una proprietà `categories`con valore di tipo stringa come `es6customfunctions` al `es6clientlibs` cartella.
+1. Creare una cartella in `[AEM Forms as a Cloud Service repository folder]/apps/` cartella. Ad esempio, crea una cartella denominata come `experience-league`.
+1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` e creare un `ClientLibraryFolder`. Ad esempio, crea una cartella della libreria client come `es6clientlibs`.
+1. Aggiungi una proprietà `categories` con valore di tipo stringa. Ad esempio, assegna il valore `es6customfunctions` al `categories` proprietà per `es6clientlibs` cartella.
 
    >[!NOTE]
    >
-   >`es6customfunctions`è una categoria di esempio. È possibile scegliere qualsiasi nome per la categoria.
+   > Puoi scegliere un nome qualsiasi per `client library folder` e `categories` proprietà.
 
 1. Crea una cartella denominata `js`.
 1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` cartella.
@@ -150,7 +150,7 @@ Puoi aggiungere funzioni personalizzate aggiungendo la libreria client. Per crea
 
    >[!NOTE]
    >
-   >* Se il file JavaScript contenente il codice per le funzioni personalizzate presenta un errore, le funzioni personalizzate non sono elencate nell’editor di regole di un modulo adattivo. È inoltre possibile controllare `error.log` file per l’errore.
+   > Se il file JavaScript contenente il codice per le funzioni personalizzate presenta un errore, le funzioni personalizzate non sono elencate nell’editor di regole di un modulo adattivo. È inoltre possibile controllare `error.log` file per l’errore.
 
    <!-- 
     >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
@@ -179,18 +179,22 @@ Una volta eseguita correttamente la pipeline, la funzione personalizzata aggiunt
 
 ### Aggiungere una libreria client in un modulo adattivo{#use-custom-function}
 
-Dopo aver aggiunto la libreria client, utilizzala nel modulo adattivo. Ti consente di utilizzare [funzione personalizzata come regola nel modulo](/help/forms/rule-editor.md#custom-functions). Per aggiungere la libreria client nel modulo adattivo, effettua le seguenti operazioni:
+Dopo aver implementato la libreria client nell’ambiente Forms CS, utilizzane le funzionalità nel modulo adattivo. Per aggiungere la libreria client al modulo adattivo
 
-1. Apri il modulo in modalità di modifica.
-Per aprire un modulo in modalità di modifica, selezionare un modulo e selezionare **[!UICONTROL Apri]**.
-1. In modalità di modifica, seleziona un componente, quindi fai clic su ![a livello di campo](assets/select_parent_icon.svg) > **[!UICONTROL Contenitore modulo adattivo]** e quindi selezionare ![cmppr](assets/configure-icon.svg).
-1. Nella barra laterale, in Nome della libreria client, aggiungi la libreria client. ( `es6customfunctions` nell&#39;esempio.)
+1. Apri il modulo in modalità di modifica. Per aprire un modulo in modalità di modifica, selezionare un modulo e selezionare **[!UICONTROL Modifica]**.
+1. Apri il browser Contenuto e seleziona la **[!UICONTROL Contenitore guida]** componente del modulo adattivo.
+1. Fai clic sulle proprietà Contenitore guida ![Proprietà guida](/help/forms/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Apri **[!UICONTROL Base]** e seleziona il nome del **[!UICONTROL categoria libreria client]** dall’elenco a discesa (in questo caso, seleziona `es6customfunctions`).
 
    ![Aggiunta della libreria client della funzione personalizzata](/help/forms/assets/clientlib-custom-function.png)
 
-Crea una regola per utilizzare la funzione personalizzata nell’editor di regole.
+1. Clic **[!UICONTROL Fine]** .
+
+Ora puoi creare una regola per utilizzare funzioni personalizzate nell’editor di regole.
 
 <!--
+
+Create a rule to use custom function in the rule editor. 
 
 ### Support for the optional parameters in custom functions{#support-for-optional-parameter}
 
