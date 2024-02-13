@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: dc89843609e54ddb93e09776f9eff64d13069bf7
+source-git-commit: 6966486b9bf919fecb8d625ddb92ce1bb1a98291
 workflow-type: tm+mt
-source-wordcount: '4635'
+source-wordcount: '4640'
 ht-degree: 97%
 
 ---
@@ -620,6 +620,7 @@ ht-degree: 97%
             + [Utilizzare il servizio reCAPTCHA di Google in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Aggiungere un handler degli errori personalizzato in un modulo adattivo](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/supporting-new-language-localization-core-components.md)
+            + [Creare e utilizzare funzioni personalizzate](/help/forms/create-and-use-custom-functions.md)
       + Componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)
@@ -679,7 +680,7 @@ ht-degree: 97%
       + [Utilizzo di font personalizzati nei documenti PDF](/help/forms/use-custom-fonts.md)
       + [Problemi noti, best practice e domande frequenti](/help/forms/communications-known-issues-limitations.md)
    + Rapporti sulle transazioni {#using-communications}
-      + [Report transazioni API fatturabili](/help/forms/transaction-reports-billable-apis.md)
+      + [API fatturabili per rapporti sulle transazioni](/help/forms/transaction-reports-billable-apis.md)
       + [Registrare una transazione per le implementazioni personalizzate](/help/forms/record-transaction-custom-implementation.md)
    + Riferimento API per sviluppatori {#aem-forms-developer-api-reference}
       + [Riferimento API di moduli adattivi](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
