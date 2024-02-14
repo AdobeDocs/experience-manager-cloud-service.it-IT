@@ -3,9 +3,9 @@ title: Convalida e debug con gli strumenti di Dispatcher
 description: Scopri la convalida locale, il debug, la struttura del file in modalità flessibile e come migrare dalla modalità legacy alla modalità flessibile.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
 workflow-type: tm+mt
-source-wordcount: '2971'
+source-wordcount: '3028'
 ht-degree: 1%
 
 ---
@@ -300,7 +300,7 @@ Durante l’implementazione di Cloud Manager, il `httpd -t` viene eseguito anche
 
 >[!NOTE]
 >
-Consulta la [Ricaricamento e convalida automatici](#automatic-loading) per un&#39;alternativa efficiente all&#39;esecuzione `validate.sh` dopo ogni modifica della configurazione.
+>Consulta la [Ricaricamento e convalida automatici](#automatic-loading) per un&#39;alternativa efficiente all&#39;esecuzione `validate.sh` dopo ogni modifica della configurazione.
 
 ### Fase 1 {#first-phase}
 
@@ -440,8 +440,8 @@ Questa fase controlla la sintassi di Apache avviando Apache HTTPD in un contenit
 
 >[!NOTE]
 >
-Gli utenti di Windows devono utilizzare Windows 10 Professional o altre distribuzioni che supportano Docker. Questo requisito è un prerequisito per l’esecuzione e il debug di Dispatcher su un computer locale.
-Per macOS e Windows, l’Adobe consiglia di utilizzare Docker Desktop.
+>Gli utenti di Windows devono utilizzare Windows 10 Professional o altre distribuzioni che supportano Docker. Questo requisito è un prerequisito per l’esecuzione e il debug di Dispatcher su un computer locale.
+>Per macOS e Windows, l’Adobe consiglia di utilizzare Docker Desktop.
 
 Questa fase può anche essere eseguita in modo indipendente tramite `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -504,19 +504,19 @@ I livelli di registro per tali moduli sono definiti dalle variabili `DISP_LOG_LE
 # Define REWRITE_LOG_LEVEL warn
 ```
 
-Quando Dispatcher viene eseguito localmente, i registri vengono stampati direttamente nell’output del terminale. Nella maggior parte dei casi, si desidera che questi registri siano in DEBUG, operazione che può essere eseguita passando il livello di debug come parametro durante l’esecuzione di Docker. Esempio: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
+Quando Dispatcher viene eseguito localmente, i registri vengono stampati direttamente nell’output del terminale. Nella maggior parte dei casi, si desidera che questi registri siano in DEBUG, operazione che può essere eseguita passando il livello di debug come parametro durante l’esecuzione di Docker. Ad esempio: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 I registri per gli ambienti cloud vengono esposti tramite il servizio di registrazione disponibile in Cloud Manager.
 
 >[!NOTE]
 >
-Per gli ambienti su AEM as a Cloud Service, debug è il livello di dettaglio massimo. Il livello del registro di traccia non è supportato, pertanto è consigliabile evitare di impostarlo quando si lavora in ambienti cloud.
+>Per gli ambienti su AEM as a Cloud Service, debug è il livello di dettaglio massimo. Il livello del registro di traccia non è supportato, pertanto è consigliabile evitare di impostarlo quando si lavora in ambienti cloud.
 
 ### Ricaricamento e convalida automatici {#automatic-reloading}
 
 >[!NOTE]
 >
-A causa di una limitazione del sistema operativo Windows, questa funzione è disponibile solo per gli utenti macOS e Linux®.
+>A causa di una limitazione del sistema operativo Windows, questa funzione è disponibile solo per gli utenti macOS e Linux®.
 
 Invece di eseguire la convalida locale (`validate.sh`) e avvio del contenitore docker (`docker_run.sh`) ogni volta che la configurazione viene modificata, in alternativa è possibile eseguire il comando `docker_run_hot_reload.sh` script. Lo script controlla eventuali modifiche alla configurazione, la ricarica automaticamente ed esegue nuovamente la convalida. Utilizzando questa opzione, è possibile risparmiare molto tempo durante il debug.
 
@@ -546,6 +546,25 @@ Cloud manager validator 2.0.43
 2022/07/04 09:53:55 No issues found
 INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
 INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
+
+### Inserimento di variabili di ambiente personalizzate {#environment-variables}
+
+Le variabili di ambiente personalizzate possono essere utilizzate con l’SDK di Dispatcher impostandole in un file separato e facendo riferimento a esso in `ENV_FILE` prima di avviare il dispatcher locale.
+
+Un file con variabili di ambiente personalizzate sarà simile al seguente:
+
+```
+COMMERCE_ENDPOINT=commerce-host
+AEM_HTTP_PROXY_HOST=host.docker.internal
+AEM_HTTP_PROXY_PORT=8000
+```
+
+Può essere utilizzato nell’SDK del dispatcher locale con i seguenti comandi:
+
+```
+export ENV_FILE=custom.env
+./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080
 ```
 
 ## Diverse configurazioni del Dispatcher per ambiente {#different-dispatcher-configurations-per-environment}
@@ -621,7 +640,7 @@ Con la versione 2021.7.0 di Cloud Manager, i nuovi programmi Cloud Manager gener
 
    >[!NOTE]
    >
-   In modalità flessibile, è necessario utilizzare percorsi relativi invece di percorsi assoluti.
+   >In modalità flessibile, è necessario utilizzare percorsi relativi invece di percorsi assoluti.
 1. **Distribuisci in produzione:**
    * Esegue il commit del file `opt-in/USE_SOURCES_DIRECTLY` a un ramo Git distribuito dalla pipeline di produzione negli ambienti di staging e produzione Cloud.
    * Utilizza Cloud Manager per la distribuzione nell’ambiente di staging.
