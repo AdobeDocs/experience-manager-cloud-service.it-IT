@@ -1,10 +1,10 @@
 ---
 title: Modellazione dei contenuti per la creazione di AEM con progetti Edge Delivery Services
 description: Scopri come funziona la modellazione dei contenuti per l’authoring AEM con progetti di Edge Delivery Services e come modellare i tuoi contenuti.
-source-git-commit: 8f3c7524ae8ee642a9aee5989e03e6584a664eba
+source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 1%
+source-wordcount: '2097'
+ht-degree: 0%
 
 ---
 
@@ -109,16 +109,19 @@ Per ogni blocco, lo sviluppatore:
 
 * È necessario utilizzare il `core/franklin/components/block/v1/block` tipo di risorsa, implementazione generica della logica di blocco nell’AEM.
 * È necessario definire il nome del blocco, che verrà renderizzato nell’intestazione della tabella del blocco.
+   * Il nome del blocco viene utilizzato per recuperare lo stile e lo script corretti per decorare il blocco.
 * Può definire un [ID modello.](/help/implementing/universal-editor/field-types.md#model-structure)
+   * L’ID modello è un riferimento al modello del componente, che definisce i campi disponibili per l’autore nella barra delle proprietà.
 * Può definire un [ID filtro.](/help/implementing/universal-editor/customizing.md#filtering-components)
+   * L’ID filtro è un riferimento al filtro del componente che consente di modificare il comportamento di authoring, ad esempio limitando quali elementi secondari possono essere aggiunti al blocco o alla sezione o quali funzioni dell’editor Rich Text sono abilitate.
 
-Tutte queste informazioni vengono memorizzate nell&#39;AEM quando un blocco viene aggiunto a una pagina.
+Tutte queste informazioni vengono memorizzate nell&#39;AEM quando un blocco viene aggiunto a una pagina. Se manca il tipo di risorsa o il nome del blocco, il blocco non verrà riprodotto sulla pagina.
 
 >[!WARNING]
 >
->Anche se possibile, non è necessario implementare componenti AEM personalizzati. I componenti dei Edge Delivery Services forniti dall&#39;AEM sono sufficienti e offrono alcuni parapetti per facilitare lo sviluppo.
+>Anche se possibile, non è necessario o consigliato implementare componenti AEM personalizzati. I componenti dei Edge Delivery Services forniti dall&#39;AEM sono sufficienti e offrono alcuni parapetti per facilitare lo sviluppo.
 >
->Per questo motivo, l’Adobe sconsiglia l’utilizzo di tipi di risorse AEM personalizzati.
+>I componenti forniti dall’AEM restituiscono un markup che può essere utilizzato da [helix-html2md](https://github.com/adobe/helix-html2md) durante la pubblicazione su Edge Delivery Services e da [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) durante il caricamento di una pagina nell’Editor universale. Il markup è il contratto stabile tra l&#39;AEM e le altre parti del sistema e non consente personalizzazioni. Per questo motivo, i progetti non devono modificare i componenti e non devono utilizzare componenti personalizzati.
 
 ### Struttura di blocco {#block-structure}
 
@@ -130,7 +133,9 @@ Nella forma più semplice, un blocco esegue il rendering di ogni proprietà in u
 
 Nell&#39;esempio seguente, l&#39;immagine viene definita per prima nel modello e per seconda nel testo. Viene quindi eseguito il rendering con l&#39;immagine per prima e il testo per seconda.
 
-##### Dati {#data-simple}
+>[!BEGINTABS]
+
+>[!TAB Dati]
 
 ```json
 {
@@ -142,7 +147,7 @@ Nell&#39;esempio seguente, l&#39;immagine viene definita per prima nel modello e
 }
 ```
 
-##### Markup {#markup-simple}
+>[!TAB Markup]
 
 ```html
 <div class="hero">
@@ -161,6 +166,20 @@ Nell&#39;esempio seguente, l&#39;immagine viene definita per prima nel modello e
 </div>
 ```
 
+>[!TAB Tabella]
+
+```text
++---------------------------------------------+
+| Hero                                        |
++=============================================+
+| ![Helix - a shape like a corkscrew][image0] |
++---------------------------------------------+
+| # Welcome to AEM                            |
++---------------------------------------------+
+```
+
+>[!ENDTABS]
+
 È possibile notare che alcuni tipi di valori consentono di dedurre la semantica nel markup e che le proprietà vengono combinate in celle singole. Questo comportamento è descritto nella sezione [Inferenza testo.](#type-inference)
 
 #### Blocco chiave-valore {#key-value}
@@ -171,7 +190,9 @@ In altri casi, tuttavia, il blocco viene letto come una configurazione di tipo c
 
 Un esempio è il [metadati di sezione.](/help/edge/developer/markup-sections-blocks.md#sections) In questo caso d’uso, il blocco può essere configurato per il rendering come tabella di coppia chiave-valore. Consulta la sezione [Metadati sezioni e sezioni](#sections-metadata) per ulteriori informazioni.
 
-##### Dati {#data-key-value}
+>[!BEGINTABS]
+
+>[!TAB Dati]
 
 ```json
 {
@@ -184,7 +205,7 @@ Un esempio è il [metadati di sezione.](/help/edge/developer/markup-sections-blo
 }
 ```
 
-##### Markup {#markup-key-value}
+>[!TAB Markup]
 
 ```html
 <div class="featured-articles">
@@ -203,13 +224,31 @@ Un esempio è il [metadati di sezione.](/help/edge/developer/markup-sections-blo
 </div>
 ```
 
+>[!TAB Tabella]
+
+```text
++-----------------------------------------------------------------------+
+| Featured Articles                                                     |
++=======================================================================+
+| source   | [/content/site/articles.json](/content/site/articles.json) |
++-----------------------------------------------------------------------+
+| keywords | Developer,Courses                                          |
++-----------------------------------------------------------------------+
+| limit    | 4                                                          |
++-----------------------------------------------------------------------+
+```
+
+>[!ENDTABS]
+
 #### Blocchi contenitore {#container}
 
 Entrambe le strutture precedenti hanno una singola dimensione: l’elenco delle proprietà. I blocchi contenitore consentono di aggiungere elementi figlio (di solito dello stesso tipo o modello) e sono quindi bidimensionali. Questi blocchi supportano ancora le proprie proprietà sottoposte a rendering come righe con una singola colonna. Tuttavia, consentono anche di aggiungere elementi secondari, per i quali ogni elemento viene riprodotto come riga e ogni proprietà come colonna all’interno di tale riga.
 
 Nell’esempio seguente, un blocco accetta un elenco di icone collegate come elementi secondari, dove ogni icona collegata ha un’immagine e un collegamento. Osserva [ID filtro](/help/implementing/universal-editor/customizing.md#filtering-components) impostato nei dati del blocco per fare riferimento alla configurazione del filtro.
 
-##### Dati {#data-container}
+>[!BEGINTABS]
+
+>[!TAB Dati]
 
 ```json
 {
@@ -232,7 +271,7 @@ Nell’esempio seguente, un blocco accetta un elenco di icone collegate come ele
 }
 ```
 
-##### Markup {#markup-container}
+>[!TAB Markup]
 
 ```html
 <div class="our-partners">
@@ -263,6 +302,22 @@ Nell’esempio seguente, un blocco accetta un elenco di icone collegate come ele
   </div>
 </div>
 ```
+
+>[!TAB Tabella]
+
+```text
++------------------------------------------------------------ +
+| Our Partners                                                |
++=============================================================+
+| Our community of partners is ...                            |
++-------------------------------------------------------------+
+| ![Icon of Foo][image0] | [https://foo.com](https://foo.com) |
++-------------------------------------------------------------+
+| ![Icon of Bar][image1] | [https://bar.com](https://bar.com) |
++-------------------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ### Creazione di modelli di contenuto semantico per blocchi {#creating-content-models}
 
@@ -300,7 +355,9 @@ Compressione campo è il meccanismo che consente di combinare più valori di cam
 
 ##### Immagini {#image-collapse}
 
-###### Dati {#data-image}
+>[!BEGINTABS]
+
+>[!TAB Dati]
 
 ```json
 {
@@ -309,7 +366,7 @@ Compressione campo è il meccanismo che consente di combinare più valori di cam
 }
 ```
 
-###### Markup {#markup-image}
+>[!TAB Markup]
 
 ```html
 <picture>
@@ -317,9 +374,19 @@ Compressione campo è il meccanismo che consente di combinare più valori di cam
 </picture>
 ```
 
+>[!TAB Tabella]
+
+```text
+![A red car on a road][image0]
+```
+
+>[!ENDTABS]
+
 ##### Collegamenti e pulsanti {#links-buttons-collapse}
 
-###### Dati {#data-links-buttons}
+>[!BEGINTABS]
+
+>[!TAB Dati]
 
 ```json
 {
@@ -330,7 +397,7 @@ Compressione campo è il meccanismo che consente di combinare più valori di cam
 }
 ```
 
-###### Markup {#markup-links-buttons}
+>[!TAB Markup]
 
 No `linkType`, o `linkType=default`
 
@@ -354,9 +421,21 @@ No `linkType`, o `linkType=default`
 </em>
 ```
 
+>[!TAB Tabella]
+
+```text
+[adobe.com](https://www.adobe.com "Navigate to adobe.com")
+**[adobe.com](https://www.adobe.com "Navigate to adobe.com")**
+_[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
+```
+
+>[!ENDTABS]
+
 ##### Titoli {#headings-collapse}
 
-###### Dati {#data-headings}
+>[!BEGINTABS]
+
+>[!TAB Dati]
 
 ```json
 {
@@ -365,19 +444,31 @@ No `linkType`, o `linkType=default`
 }
 ```
 
-###### Markup {#markup-headings}
+>[!TAB Markup]
 
 ```html
 <h2>Getting started</h2>
 ```
 
+>[!TAB Tabella]
+
+```text
+## Getting started
+```
+
+>[!ENDTABS]
+
 #### Raggruppamento elementi {#element-grouping}
 
 Mentre [compressione campo](#field-collapse) riguarda la combinazione di più proprietà in un singolo elemento semantico; il raggruppamento di elementi riguarda la concatenazione di più elementi semantici in una singola cella. Ciò è particolarmente utile per i casi d’uso in cui l’autore deve essere limitato nel tipo e nel numero di elementi che può creare.
 
-Ad esempio, l’autore deve creare solo un sottotitolo, un titolo e una singola descrizione di paragrafo combinati con un massimo di due pulsanti di invito all’azione. Raggruppando questi elementi si ottiene un markup semantico a cui è possibile applicare uno stile senza ulteriori azioni.
+Ad esempio, un componente teaser può consentire all’autore di creare solo un sottotitolo, un titolo e una singola descrizione di paragrafo combinati con un massimo di due pulsanti di invito all’azione. Raggruppando questi elementi si ottiene un markup semantico a cui è possibile applicare uno stile senza ulteriori azioni.
 
-##### Dati {#data-grouping}
+Il raggruppamento di elementi utilizza una convenzione di denominazione, in cui il nome del gruppo è separato da ogni proprietà del gruppo da un carattere di sottolineatura. La compressione del campo delle proprietà in un gruppo funziona come descritto in precedenza.
+
+>[!BEGINTABS]
+
+>[!TAB Dati]
 
 ```json
 {
@@ -397,7 +488,7 @@ Ad esempio, l’autore deve creare solo un sottotitolo, un titolo e una singola 
 }
 ```
 
-##### Markup {#markup-grouping}
+>[!TAB Markup]
 
 ```html
 <div class="teaser">
@@ -419,6 +510,24 @@ Ad esempio, l’autore deve creare solo un sottotitolo, un titolo e una singola 
   </div>
 </div>
 ```
+
+>[!TAB Tabella]
+
+```text
++-------------------------------------------------+
+| Teaser                                          |
++=================================================+
+| ![A group of people sitting on a stage][image0] |
++-------------------------------------------------+
+| Adobe Experience Cloud                          |
+| ## Welcome to AEM                               |
+| Join us in this ask me everything session ...   |
+| [More Details](https://link.to/more-details)    |
+| [RSVP](https://link.to/sign-up)                 |
++-------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ## Metadati sezioni e sezioni {#sections-metadata}
 
@@ -500,18 +609,17 @@ Prima di approfondire la definizione dei metadati, consulta i seguenti documenti
 
 Per creare tale tabella, crea una pagina e utilizza il modello Metadati nella console Sites.
 
->[!NOTE]
->
->Quando modifichi il foglio di calcolo dei metadati, assicurati di passare a **Anteprima** in quanto l’authoring si verifica sulla pagina stessa, non all’interno dell’editor.
-
-Nelle proprietà di pagina del foglio di calcolo, definisci i campi di metadati necessari e l’URL. Quindi aggiungi i metadati per percorso di pagina o pattern di percorso della pagina, in cui il campo URL si riferisce ai percorsi pubblici e mappati e non al percorso del contenuto nell’AEM.
+Nelle proprietà di pagina del foglio di calcolo, definisci i campi di metadati necessari e l’URL. Quindi aggiungi i metadati per percorso pagina o pattern di percorso pagina.
 
 Assicurati che il foglio di calcolo sia aggiunto anche alla mappatura del percorso prima di pubblicarlo.
 
-```text
-mappings:
-  - /content/site/:/
-  - /content/site/metadata:/metadata.json
+```json
+{
+  "mappings": [
+    "/content/site/:/",
+    "/content/site/metadata:/metadata.json"
+  ]
+}
 ```
 
 ### Proprietà pagina {#page-properties}
