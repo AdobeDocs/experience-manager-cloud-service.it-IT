@@ -2,10 +2,10 @@
 title: Accesso e gestione dei registri
 description: Scopri come accedere ai registri e gestirli per facilitare il processo di sviluppo in AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 71%
+source-wordcount: '346'
+ht-degree: 68%
 
 ---
 
@@ -43,8 +43,6 @@ Per scaricare i registri, effettua le seguenti operazioni:
 È possibile accedere ai registri anche dalla pagina **Ambienti**.
 
 ![Registri dalla schermata Ambienti](assets/download-logs.png)
-
-
 
 ## Registri tramite API {#logs-through-api}
 
@@ -86,6 +84,10 @@ Environment Id Service    Name
 ```
 
 ### Risorse aggiuntive {#resources}
+
+>[!TIP]
+>
+>Estrai [questa risorsa video](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) per ulteriori informazioni sul debug di AEM as a Cloud Service.
 
 Per ulteriori informazioni sull’API di Cloud Manager e sull’interfaccia della riga di comando Adobe I/O, vedi le seguenti risorse aggiuntive:
 
