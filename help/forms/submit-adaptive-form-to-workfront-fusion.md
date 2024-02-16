@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
+source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1238'
 ht-degree: 1%
 
 ---
@@ -41,6 +41,8 @@ I prerequisiti necessari per collegare Workfront Fusion ad AEM Forms sono:
 * Un utente AEM con diritto di accesso [Console di sviluppo](https://my.cloudmanager.adobe.com/) a [recuperare le credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrare AEM Forms con Adobe Workfront Fusion
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 Per connettersi [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) in un modulo, effettuare le seguenti operazioni:
 
@@ -129,16 +131,7 @@ Per aggiungere una connessione:
 1. Seleziona la connessione creata **[!UICONTROL Connessione]** dall’elenco a discesa.
 1. Fai clic su **[!UICONTROL Salva]**.
 1. Clic **[!UICONTROL OK]** e salva le modifiche per lo scenario.
-
-#### 1.3 Attivare lo scenario Workfront {#activate-scenario}
-
-Per attivare lo scenario:
-
-1. Clic **[!UICONTROL Scenari]** ![Icona Condividi](/help/forms/assets/Smock_ShareAndroid_18_N.svg) nel pannello a sinistra.
-1. Fai clic su **[!UICONTROL Scenario inattivo]** scheda.
-1. Fai clic su **ON/OFF** pulsante di attivazione/disattivazione per lo scenario AEM Forms.
-
-Quando fai clic sul pulsante di attivazione/disattivazione, lo scenario Workfront inizia a essere visualizzato nel **[!UICONTROL Scenario attivo]** scheda.
+1. Per attivare lo scenario, fai clic sul pulsante di attivazione/disattivazione nell’editor dello scenario.
 
 >[!NOTE]
 >
