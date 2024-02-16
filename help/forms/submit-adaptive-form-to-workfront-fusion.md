@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 3e1e1eba822bf3156ef563b88269cdef2298e951
+source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%
@@ -135,7 +135,7 @@ Per aggiungere una connessione:
 
 ### 2. Configurare l’azione di invio di un modulo adattivo per Workfront Fusion
 
-È possibile configurare l’azione di invio per Workfont Fusion per:
+È possibile configurare l&#39;azione di invio per Workfront Fusion per:
 * [Nuovo Forms adattivo](#new-af-submit-action)
 * [Moduli adattivi esistenti](#existing-af-submit-action)
 
