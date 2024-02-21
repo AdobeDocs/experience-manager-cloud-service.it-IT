@@ -5,8 +5,8 @@ feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4a41de9da557be562bb2ff5773c7954f76a9acc7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '725'
+ht-degree: 97%
 
 ---
 
@@ -25,11 +25,11 @@ La data di pubblicazione di Cloud Manager versione 2024.2.0 in AEM as a Cloud Se
 
 ## Novità {#what-is-new}
 
-* Cloud Manager ora supporta la gestione self-service di [variabili della pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) tramite l’interfaccia utente di Cloud Manager.
-* [Il servizio di anteprima](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) verrà ora abilitato per gli ambienti creati prima del rollout della funzione del servizio di anteprima.
-* [Autorizzazioni personalizzate di Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) consente di creare profili di autorizzazioni personalizzati con autorizzazioni configurabili per limitare l’accesso a programmi, pipeline e ambienti per gli utenti di Cloud Manager.
-   * Questa funzione è stata implementata in modo graduale con [Versione di dicembre 2023](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) e sarà completata il 20 febbraio 2024.
-* Per tutti i nuovi ambienti, il [profilo prodotto ambiente](/help/onboarding/aem-cs-team-product-profiles.md) i nomi saranno un formato più intuitivo basato su una combinazione di descrizione del profilo, tipo di ambiente, numero e numero di programma.
+* Cloud Manager ora supporta la gestione in autonomia di [variabili della pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) tramite l’interfaccia utente di Cloud Manager.
+* [Il servizio di anteprima](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) verrà ora abilitato per gli ambienti creati prima dell’implementazione della funzione del servizio di anteprima.
+* Le [autorizzazioni personalizzate di Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) consentono di creare profili di autorizzazioni personalizzati con autorizzazioni configurabili per limitare l’accesso a programmi, pipeline e ambienti per gli utenti di Cloud Manager.
+   * Questa funzione è stata implementata in modo graduale con la [versione di dicembre 2023](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) e sarà completata il 20 febbraio 2024.
+* Per tutti i nuovi ambienti, i nomi del [profilo di prodotto ambiente](/help/onboarding/aem-cs-team-product-profiles.md) avranno un formato più intuitivo basato su una combinazione di descrizione del profilo, tipo di ambiente, numero e numero di programma.
 * [L’ambiente di build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) è stato aggiornato alle versioni Maven 3.9.4 e JDK jdk-11.0.22 e jdk1.8.0_401.
 
 ## Programma per i primi utilizzatori {#early-adoption}
