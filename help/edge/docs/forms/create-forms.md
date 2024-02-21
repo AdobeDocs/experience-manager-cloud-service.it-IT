@@ -4,9 +4,9 @@ description: Forme perfette, veloce! ⚡ authoring basato su documento di AEM Fo
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,8 @@ Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google She
 
 ![Guida introduttiva di Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
 
-## Aggiungere il blocco Form al progetto EDS (Edge Delivery Service) {#add-forms-block-to-an-eds-project}
+
+## Passaggio 1: aggiungi il blocco del modulo al progetto del servizio di consegna Edge (EDS) {#add-forms-block-to-an-eds-project}
 
 AEM Forms Edge Delivery include un blocco Modulo per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. Per includere il blocco del modulo nel progetto del servizio di consegna Edge:
 
@@ -81,7 +82,7 @@ AEM Forms Edge Delivery include un blocco Modulo per facilitare la creazione di 
    > * Se riscontri un errore di tipo &quot;Impossibile risolvere il percorso del modulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, apri la `[EDS Project]/blocks/forms/form.js` file. Nell&#39;istruzione import sostituire `franklin-lib.js` file con `aem.js` file.
    > * In caso di errori di colorazione, è possibile ignorarli. Per ignorare i controlli di linting, aprire `[EDS Project]\package.json` e aggiorna lo script &quot;lint&quot; da `"lint": "npm run lint:js && npm run lint:css"` a `"lint": "echo 'skipping linting for now'"`. Salva il file e esegui il commit nel progetto GitHub.
 
-## Creare un modulo utilizzando Microsoft Excel o Google Sheet {#create-a-form-for-an-eds-project}
+## Passaggio 2: creare un modulo utilizzando Microsoft Excel o Foglio Google
 
 Anziché processi complessi, è possibile creare facilmente un modulo utilizzando un foglio di calcolo. È possibile iniziare aggiungendo le righe e le intestazioni di colonna a un foglio di calcolo, in cui ogni riga definisce un campo modulo e ogni intestazione di colonna definisce le proprietà dei campi modulo corrispondenti.
 
@@ -123,7 +124,7 @@ Per creare un modulo:
 
 
 
-## Visualizzare l’anteprima del modulo utilizzando la pagina del servizio di consegna Edge (EDS) {#add-a-form-to-your-eds-page}
+## Passaggio 3: visualizzare l’anteprima del modulo utilizzando la pagina del servizio di consegna Edge (EDS)
 
 Finora è stato attivato il blocco del modulo per il progetto EDS e preparata la struttura del modulo. Ora, per visualizzare l’anteprima del modulo:
 
@@ -153,8 +154,9 @@ Finora è stato attivato il blocco del modulo per il progetto EDS e preparata la
 
    ![errore durante l’invio del modulo](/help/edge/assets/form-error.png)
 
+## Passaggio successivo
 
-   Il passaggio successivo consiste nel [preparare il foglio di calcolo per accettare i dati](/help/edge/docs/forms/submit-forms.md).
+Il passaggio successivo consiste nel [preparare il foglio di calcolo per accettare i dati](/help/edge/docs/forms/submit-forms.md).
 
 
 

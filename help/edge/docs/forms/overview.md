@@ -4,9 +4,9 @@ description: Il servizio AEM Forms Edge Delivery è stato progettato per garanti
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Il servizio AEM Forms Edge Delivery consente di:
 
 * **Semplificare l’authoring e gli invii**: per creare i moduli utilizza strumenti familiari come Microsoft Excel o Google Sheets anziché gli ambienti di authoring tradizionali. Inviare moduli direttamente a Microsoft Excel o Google Sheets e utilizzarne l&#39;ecosistema per elaborare facilmente i dati inviati.
 
-## Guida introduttiva ad AEM Forms Edge Delivery Service
+## Inizia con le nozioni di base
 
 <div>
 

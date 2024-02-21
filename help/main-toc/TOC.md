@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '4711'
+source-wordcount: '4692'
 ht-degree: 96%
 
 ---
@@ -804,19 +804,19 @@ ht-degree: 96%
       + [Reindirizzamenti](/help/edge/docs/redirects.md)
    + Creazione di Forms di consegna Edge {#build-forms}
       + [Panoramica](/help/edge/docs/forms/overview.md)
-      + Guida introduttiva {#getting-started-eds-forms}
+      + Introduzione {#getting-started-eds-forms}
          + [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
          + [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
          + [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-eds-forms.md)
          + [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
          + [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)
-      + Funzioni avanzate {#advanced-features-eds-forms}
-         + [Creare e aggiungere frammenti di modulo a un modulo](/help/edge/docs/forms/form-fragments.md)
-         + [Tradurre un modulo](/help/edge/docs/forms/translate-forms.md)
-         + [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
-         + [Applicare reCAPTCHA a un modulo](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Creare componenti personalizzati](/help/edge/docs/forms/custom-components-forms.md)
-         + [Aggiungi pagina di ringraziamento](/help/edge/docs/forms/thank-you-page-form.md)
+      + Funzionalità {#advanced-features-eds-forms}
+         + [Frammenti di modulo](/help/edge/docs/forms/form-fragments.md)
+         + [Sezioni ripetibili](/help/edge/docs/forms/repeatable-forms.md)
+         + [Traduzione](/help/edge/docs/forms/translate-forms.md)
+         + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Pagina di ringraziamento](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Componenti personalizzati](/help/edge/docs/forms/custom-components-forms.md)
    + Risorse per Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utilizzo di Sidekick](/help/edge/docs/sidekick.md)
