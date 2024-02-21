@@ -4,7 +4,7 @@ description: Il servizio AEM Forms Edge Delivery è stato progettato per garanti
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 6fc55366119662ed803008f4cec8731e43120942
+source-git-commit: 9c084461f5a99f2417b5cc34e851f703fe328f7d
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -89,8 +89,7 @@ Il servizio AEM Forms Edge Delivery consente di:
       </a>
       <p>Creare e aggiungere facilmente sezioni ripetibili a un modulo.</p>
   </div>
-</div>
-<!-- Repeat the same structure for other cards -->
+
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
   <div class="card-container">
@@ -116,6 +115,9 @@ Il servizio AEM Forms Edge Delivery consente di:
   </div>
 </div>
 </div>
+
+</div>
+<!-- Repeat the same structure for other cards -->
 
 </br>
 
