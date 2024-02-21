@@ -2,10 +2,10 @@
 title: Fase di preparazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica sulla fase di preparazione in Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: f99395870d076d47ef53b01c9fc6579a9f8788a2
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 4%
+source-wordcount: '984'
+ht-degree: 6%
 
 ---
 
@@ -60,10 +60,13 @@ Per passare alla fase di preparazione, segui la procedura riportata di seguito:
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
+   >[!NOTE]
+   >Se vengono caricati più rapporti, il rapporto visualizzato in dettaglio è sempre quello con la data di creazione più recente (non la data di caricamento).
+
 1. Rivedi ed esplora la dashboard Analisi delle best practice in CAM. Consulta [Analisi delle best practice](#analysis-report) per ulteriori dettagli.
 
    >[!NOTE]
-   >Il caricamento di un nuovo rapporto reimposta tutte le valutazioni.
+   >Il caricamento di un nuovo rapporto ripristina tutte le valutazioni se questo è più recente del rapporto caricato in precedenza.
 
 ### Utilizzo dell&#39;anteprima di stampa {#print-preview-cam}
 
@@ -86,12 +89,12 @@ Effettua le seguenti operazioni:
 
 ### Utilizzo della linea di tendenza della vista {#trendline-view-cam}
 
-Quando carichi più di un rapporto Best Practices Analyzer (BPA) in un progetto, puoi selezionare **Visualizza linea di tendenza** per visualizzare e confrontare i risultati dei rapporti BPA cronologici.
+Quando carichi più di un rapporto Best Practices Analyzer (BPA) distinto in un progetto, puoi selezionare **Visualizza linea di tendenza** per visualizzare e confrontare i risultati dei rapporti BPA cronologici.
 
 Per visualizzare i rapporti dall’opzione della linea di tendenza, segui i passaggi seguenti:
 
 >[!NOTE]
->Quando carichi più di un rapporto BPA in un progetto, viene visualizzato **...** icona.
+>Quando carichi più di un rapporto BPA distinto in un progetto, viene visualizzato **...** icona. I rapporti vengono considerati uguali (non distinti) se l’host e il tempo di creazione sono gli stessi.
 
 1. Passa al progetto e fai clic su **Revisione** dal **Analisi delle best practice** scheda in **Preparazione** fase.
 
@@ -100,9 +103,6 @@ Per visualizzare i rapporti dall’opzione della linea di tendenza, segui i pass
 1. Clic **...**.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
-
-   >[!IMPORTANT]
-   >Il rapporto visualizzato è sempre il rapporto con la data più recente.
 
 1. Dall’elenco a discesa, fai clic su **Visualizza linea di tendenza**, come illustrato nella figura seguente.
 
@@ -144,7 +144,7 @@ Il **Proprietà rapporto** fornisce informazioni sulle proprietà del rapporto c
 
 ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
-#### Panoramica dei rapporti {#report-overview}
+#### Panoramica del rapporto {#report-overview}
 
 Questo **Panoramica dei rapporti** La scheda fornisce i risultati del rapporto e i livelli di gravità che si applicano quando si valuta la prontezza di passare a AEM as a Cloud Service, come mostrato nella figura seguente.
 

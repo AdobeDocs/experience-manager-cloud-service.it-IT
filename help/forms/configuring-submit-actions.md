@@ -3,9 +3,9 @@ title: Come si configura un’azione di invio per un modulo adattivo?
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3901'
 ht-degree: 2%
 
 ---
@@ -238,8 +238,6 @@ La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/
 
 ### Collegare un modulo adattivo all’elenco di Microsoft® SharePoint {#connect-af-sharepoint-list}
 
-<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 Per utilizzare [!UICONTROL Invia a elenco SharePoint] Azione di invio in un modulo adattivo:
@@ -458,7 +456,7 @@ A volte, se ci sono **regole di convalida complesse**, lo script di convalida es
 
 Supporto di funzioni personalizzate nelle espressioni di convalida
 
-L’autore può configurare una libreria JavaScript personalizzata per modulo adattivo. Nella libreria, mantieni solo le funzioni riutilizzabili, che hanno dipendenza da librerie di terze parti jquery e underscore.js.
+L’autore può configurare una libreria JavaScript personalizzata per modulo adattivo. Si consiglia di mantenere solo le funzioni riutilizzabili nella libreria, che dipendono dalle librerie di terze parti jquery e underscore.js.
 
 ## Gestione degli errori nell’azione di invio {#error-handling-on-submit-action}
 
