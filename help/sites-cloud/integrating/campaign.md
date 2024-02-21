@@ -4,10 +4,10 @@ description: Scopri di più sul supporto di AEM as a Cloud Service per le integr
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: c4daf04d5520da1e646f35ba72c9f53cb1d97d36
+source-git-commit: a9296bba5d1ad3f6eb2190de9c15a1083f2ac6d5
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 86%
+source-wordcount: '148'
+ht-degree: 63%
 
 ---
 
@@ -22,17 +22,16 @@ Scopri il supporto di AEM as a Cloud Service per le integrazioni con Adobe Campa
 >
 >Per informazioni dettagliate sull’integrazione di Adobe Campaign con AEM 6.5, la soluzione per AEM on-premise o in hosting AMS, [consulta questo documento](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html?lang=it).
 
-## Integrazione con Adobe Campaign Classic {#acc}
+## Integrazione con Adobe Campaign v7/v8 {#acc}
 
-Sono disponibili diverse versioni di Adobe Campaign Classic (ACC). Il supporto per l’integrazione con AEM as a Cloud Service dipende dalla versione ACC implementata.
+Il supporto per l’integrazione con AEM as a Cloud Service dipende dalla versione di Campaign implementata.
 
-| Versione ACC | Integrazione con AEMaaCS |
+| Versione di Campaign | Integrazione con AEMaaCS |
 |---|---|
-| [v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=it) | Non supportato |
-| [v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=it) | Non supportato |
-| Interfaccia utente web* | Funzione supportata |
+| [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=it) | Non supportato |
+| [Campaign v8 (console client)](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=it) | Non supportato |
+| Interfaccia utente di Campaign Web | Supportato. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) |
 
-*L’interfaccia utente web per Adobe Campaign Classic è prevista per la fine del 2023.
 
 ## Integrazione con Adobe Campaign Standard {#acs}
 
