@@ -1,18 +1,18 @@
 ---
-title: 'Da fogli di calcolo a Forms: masterizzazione delle convalide dei campi blocco modulo'
-description: Crea moduli potenti più rapidamente utilizzando fogli di calcolo e campi blocco modulo. Questa guida consente di creare convalide personalizzate per i campi blocco EDS Forms.
+title: Preparare il foglio di calcolo per accettare i dati
+description: Crea moduli potenti più rapidamente utilizzando fogli di calcolo e campi blocco modulo.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
 
 
-# Attiva il modulo per l&#39;invio dei dati
+# Preparare il foglio di calcolo per accettare i dati
 
 Una volta [ha creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/create-forms.md), è ora di abilitare il foglio di calcolo corrispondente per iniziare a ricevere i dati.
 
@@ -20,15 +20,15 @@ Una volta [ha creato e visualizzato in anteprima il modulo](/help/edge/docs/form
 
 Per attivare il foglio di calcolo:
 
-1. Aprire il foglio di calcolo contenente il modulo, aggiungervi un foglio e modificare il nome del foglio in `incoming`.
+1. Aprire il foglio di calcolo contenente il modulo e aggiungere un nuovo foglio, rinominandolo `incoming`.
 
    >[!WARNING]
    >
-   > Se il `incoming` Il foglio di lavoro non esiste, l&#39;AEM non invia dati alla cartella di lavoro.
+   > Se il `incoming` non è presente, l’AEM non invia dati al foglio di calcolo.
 
-1. In `incoming` , esegui il mirroring di tutte le intestazioni di colonna in `Name` (nomi dei campi modulo) nella `shared-default` foglio.
+1. Speculare i nomi dei campi modulo e i valori `Name` colonna nella`shared-default` alle intestazioni nel foglio `incoming` foglio.
 
-   Nell&#39;esempio seguente vengono visualizzate le intestazioni per un modulo &quot;contact-us&quot;:
+   Ogni valore in `Name` colonna del `shared-default` , escluso il pulsante di invio, funge da intestazione nel `incoming` foglio. Ad esempio, considera l’immagine seguente che illustra le intestazioni per un modulo &quot;contact-us&quot;:
 
    ![Campi per un modulo per i contatti](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
@@ -79,7 +79,7 @@ Per utilizzare le API amministratore per consentire a un foglio di calcolo di ac
 
 1. Invia la richiesta POST per generare le intestazioni appropriate nel `incoming` e aggiungere il `shared-default` nel foglio di calcolo, se non esiste già.
 
-   Per informazioni su come formattare la richiesta POST per la configurazione del foglio, consultare [Documentazione di Admin API](https://www.hlx.live/docs/admin.html#tag/form). Osserva l’esempio fornito di seguito:
+   Per informazioni su come formattare la richiesta POST per la configurazione del foglio, consultare [Documentazione di Admin API](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). Osserva l’esempio fornito di seguito:
 
    **Richiesta**
 

@@ -4,9 +4,9 @@ description: Il servizio AEM Forms Edge Delivery è stato progettato per garanti
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,25 @@ ht-degree: 0%
 
 # Servizio di consegna AEM Forms Edge {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms Edge Delivery Service è un servizio componibile offerto da Adobe che consente di creare e distribuire moduli web di forte impatto e dalle prestazioni elevate. Questo servizio componibile si integra perfettamente con Adobe Experience Manager (AEM) per consentire la progettazione, la creazione e l’implementazione di moduli web veloci e di forte impatto con un flusso di lavoro intuitivo ed efficiente.
-
-Il servizio AEM Forms Edge Delivery consente di:
+AEM Forms Edge Delivery Service è un servizio componibile offerto da Adobe che consente di creare e distribuire moduli web di forte impatto e dalle prestazioni elevate. Puoi utilizzare il servizio per:
 
 * **Artigianato forme visivamente stupefacenti**: unisci le progettazioni blande e taglienti dei cookie e affascina gli utenti con moduli dinamici e moderni che riflettono la tua identità del brand. Sfrutta componenti predefiniti o crea componenti personalizzati per dare vita alla tua visione in modo rapido e semplice.
 
 * **Crea moduli con punteggio faro perfetto**: crea moduli che vengono caricati ed eseguiti rapidamente, anche su connessioni Internet lente. I tempi di caricamento più rapidi e l’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento dei moduli e a tassi di conversione migliorati.
 
 * **Semplificare l’authoring e gli invii**: per creare i moduli utilizza strumenti familiari come Microsoft Excel o Google Sheets anziché gli ambienti di authoring tradizionali. Inviare moduli direttamente a Microsoft Excel o Google Sheets e utilizzarne l&#39;ecosistema per elaborare facilmente i dati inviati.
+
+
+Questo servizio componibile è scollegato dall’origine dei contenuti e offre la flessibilità necessaria per creare i contenuti, consentendo agli utenti di utilizzare gli strumenti di authoring preferiti.
+
+![Strumenti di creazione di moduli Edge Delivery](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+
+Per progettare e creare i moduli, i creatori di contenuti possono utilizzare strumenti a loro disposizione, come Microsoft Excel o Google Sheets (authoring basato su documenti), editor JSON o AEM Forms Adaptive Forms editor per la modifica WYSIWYG (progetti AEM Forms).
+
+>[!NOTE]
+>
+>
+> La funzione di modifica WYSIWYG e Cross Walk sono disponibili nel primo programma di adozione. Puoi scrivere a aem-forms-early-adopter-program@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità.
 
 ## Inizia con le nozioni di base
 
@@ -47,7 +57,7 @@ Il servizio AEM Forms Edge Delivery consente di:
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
             <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Creare un modulo utilizzando i moduli eds" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Creare un modulo</b>
+            <br><b style="margin-top: 5px;">Creare un modulo utilizzando Google Sheets o Microsoft Excel</b>
         </a>
         <p>Crea moduli che vengono caricati e riversati rapidamente e automaticamente sui dispositivi mobili.</p>
     </div>
