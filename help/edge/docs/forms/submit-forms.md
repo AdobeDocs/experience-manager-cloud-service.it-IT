@@ -4,9 +4,9 @@ description: Crea moduli potenti più rapidamente utilizzando fogli di calcolo e
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -14,65 +14,72 @@ ht-degree: 0%
 
 # Attiva il modulo per l&#39;invio dei dati
 
-Dopo aver creato e visualizzato in anteprima il modulo, attivare il foglio corrispondente per accettare i dati. Per iniziare ad accettare i dati, imposta il foglio di calcolo in modo da includere le intestazioni corrispondenti ai dati che intendi raccogliere. Tutte le intestazioni aggiunte al foglio &quot;shared-default&quot; devono essere presenti anche nel foglio &quot;incoming&quot; sotto una tabella.
+Una volta [ha creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/create-forms.md), è ora di abilitare il foglio di calcolo corrispondente per iniziare a ricevere i dati.
 
-Nell&#39;esempio seguente vengono visualizzati i campi per un modulo &quot;contact-us&quot;:
+>[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
-![Campi per un modulo per i contatti](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+Per attivare il foglio di calcolo:
 
-
-Una volta completata la configurazione, il modulo diventa pronto per accettare gli invii. Per consentire al foglio di calcolo di accettare i dati, è possibile utilizzare uno dei seguenti metodi:
-
-* [Configurare manualmente un foglio di calcolo per accettare i dati](#manually-configure-a-spreadsheet-to-receive-data)
-
-* [Utilizzare le API amministratore per consentire a un foglio di calcolo di accettare i dati](#use-admin-apis-to-enable-a-spreadsheet-to-receive-data-use-admin-apis-to-enable-a-spreadsheet-to-recieve-data)
-
-## Configurare manualmente un foglio di calcolo per accettare i dati
-
-Per configurare manualmente un foglio di calcolo per l&#39;accettazione dei dati:
-
-
-1. Aprire la cartella di lavoro creata e modificare il nome del foglio predefinito in &quot;in ingresso&quot;.
+1. Aprire il foglio di calcolo contenente il modulo, aggiungervi un foglio e modificare il nome del foglio in `incoming`.
 
    >[!WARNING]
    >
-   > Se il foglio &quot;in entrata&quot; non esiste, il AEM non invierà alcun dato a questa cartella di lavoro.
+   > Se il `incoming` Il foglio di lavoro non esiste, l&#39;AEM non invia dati alla cartella di lavoro.
 
-1. Preparare il foglio aggiungendo intestazioni corrispondenti ai dati che si stanno inserendo. Nell&#39;esempio seguente vengono visualizzati i campi per un modulo &quot;contact-us&quot;:
+1. In `incoming` , esegui il mirroring di tutte le intestazioni di colonna in `Name` (nomi dei campi modulo) nella `shared-default` foglio.
+
+   Nell&#39;esempio seguente vengono visualizzate le intestazioni per un modulo &quot;contact-us&quot;:
 
    ![Campi per un modulo per i contatti](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Visualizzate l&#39;anteprima del foglio nella barra laterale.
+1. Utilizza la barra laterale per visualizzare l’anteprima del foglio.
 
    >[!NOTE]
    >
-   >Anche se il foglio è stato visualizzato in anteprima in precedenza, è necessario visualizzarlo nuovamente dopo aver creato il foglio &quot;in ingresso&quot; per la prima volta.
+   >Anche se avete già visualizzato l&#39;anteprima del foglio, dovete visualizzarla nuovamente dopo aver creato il `incoming` per la prima volta.
 
 
-## Utilizzare le API amministratore per consentire a un foglio di calcolo di accettare i dati
+Una volta aggiunti i nomi dei campi al `incoming` foglio, il modulo diventa pronto per accettare gli invii. È possibile visualizzare in anteprima il modulo e inviare i dati al foglio utilizzando il modulo.
 
-Puoi avviare una richiesta POST al percorso del modulo all’interno del servizio di amministrazione dell’AEM. Una volta ricevuti i dati del corpo del POST, il servizio di amministrazione li analizza e genera in modo autonomo le intestazioni, le tabelle e i fogli essenziali necessari per l’acquisizione dei dati, ottimizzando la funzionalità del servizio forms.
+Nel foglio di calcolo vengono inoltre osservate le seguenti modifiche:
+
+Un foglio denominato &quot;Slack&quot; viene aggiunto alla cartella di lavoro di Excel o al foglio di Google. In questo foglio puoi configurare le notifiche automatiche per un canale di Slack designato ogni volta che nuovi dati vengono acquisiti nel foglio di calcolo. Attualmente, l&#39;AEM supporta le notifiche esclusivamente all&#39;organizzazione dello Slack di progettazione AEM e all&#39;organizzazione di supporto aziendale Adobe.
+
+1. Per impostare le notifiche di Slack, immetti il &quot;teamId&quot; dell’area di lavoro di Slack e il &quot;nome del canale&quot; o l’&quot;ID&quot;. Puoi anche chiedere al backbot (con il comando di debug) di &quot;teamId&quot; e &quot;channel ID&quot;. È preferibile utilizzare &quot;ID canale&quot; invece di &quot;nome canale&quot;, in quanto sopravvive alle ridenominazioni del canale.
+
+   >[!NOTE]
+   >
+   > I moduli più vecchi non avevano la colonna &quot;teamId&quot;. Il &quot;teamId&quot; era incluso nella colonna del canale, separato da un &quot;#&quot; o &quot;/&quot;.
+
+1. Immettere il titolo desiderato e in campi immettere i nomi dei campi da visualizzare nella notifica di Slack. Ogni intestazione deve essere separata da una virgola (ad esempio nome, e-mail).
+
+   >[!WARNING]
+   >
+   >  I fogli &quot;shared-default&quot; non devono mai contenere informazioni personali identificabili o dati sensibili che l&#39;utente non è a suo agio nell&#39;essere accessibili pubblicamente.
+
+
+## (Facoltativo) Utilizza le API amministratore per consentire a un foglio di calcolo di accettare i dati
+
+È inoltre possibile inviare una richiesta POST al modulo per consentirgli di accettare dati e configurare intestazioni per `incoming` foglio. Dopo aver ricevuto la richiesta del POST, il servizio analizza il corpo della richiesta e genera in modo autonomo le intestazioni e i fogli essenziali necessari per l’acquisizione dei dati.
 
 Per utilizzare le API amministratore per consentire a un foglio di calcolo di accettare i dati:
 
 
-1. Aprire la cartella di lavoro creata e modificare il nome del foglio predefinito in &quot;in ingresso&quot;.
+1. Aprire la cartella di lavoro creata e modificare il nome del foglio predefinito in `incoming`.
 
    >[!WARNING]
    >
-   > Se il foglio &quot;in entrata&quot; non esiste, il AEM non invierà alcun dato a questa cartella di lavoro.
+   > Se il `incoming` Il foglio di lavoro non esiste, l&#39;AEM non invierà alcun dato alla cartella di lavoro.
 
 1. Visualizzate l&#39;anteprima del foglio nella barra laterale.
 
    >[!NOTE]
    >
-   >Anche se il foglio è stato visualizzato in anteprima in precedenza, è necessario visualizzarlo nuovamente dopo aver creato il foglio &quot;in ingresso&quot; per la prima volta.
+   >Anche se avete già visualizzato l&#39;anteprima del foglio, dovete visualizzarla nuovamente dopo aver creato il `incoming` per la prima volta.
 
-1. Preparare il foglio aggiungendo intestazioni corrispondenti ai dati che si stanno inserendo.
+1. Invia la richiesta POST per generare le intestazioni appropriate nel `incoming` e aggiungere il `shared-default` nel foglio di calcolo, se non esiste già.
 
-   A tale scopo, invia una richiesta POST al percorso del modulo nel servizio di amministrazione dell’AEM. Il servizio di amministrazione esamina i dati nel corpo del POST e genera le intestazioni, le tabelle e i fogli appropriati, necessari per acquisire i dati in modo efficace e sfruttare al massimo il servizio Forms.
-
-   Per informazioni su come formattare la richiesta POST per la configurazione del foglio, consultare [Documentazione di Admin API](https://www.hlx.live/docs/admin.html#tag/form). Osserva inoltre l’esempio fornito di seguito:
+   Per informazioni su come formattare la richiesta POST per la configurazione del foglio, consultare [Documentazione di Admin API](https://www.hlx.live/docs/admin.html#tag/form). Osserva l’esempio fornito di seguito:
 
    **Richiesta**
 
@@ -135,27 +142,26 @@ Per utilizzare le API amministratore per consentire a un foglio di calcolo di ac
    }'
    ```
 
-   La richiesta POST precedentemente menzionata fornisce dati di esempio, inclusi i campi del modulo e i rispettivi valori di esempio. Questi dati vengono utilizzati dal servizio di amministrazione per configurare il modulo.
+   La richiesta POST di cui sopra fornisce dati di esempio, inclusi i campi del modulo e i rispettivi valori di esempio. Questi dati vengono utilizzati dal servizio di amministrazione per configurare il modulo.
 
-   Quando si invia la richiesta POST al servizio di amministrazione, si osservano le seguenti modifiche nella cartella di lavoro:
+   Il modulo è ora abilitato per l&#39;accettazione dei dati. Nel foglio di calcolo vengono inoltre osservate le seguenti modifiche:
 
-* Un nuovo foglio denominato &quot;shared-default&quot; viene aggiunto alla cartella di lavoro di Excel o al foglio di Google. I dati presenti nel foglio &quot;shared-default&quot; vengono recuperati quando si effettua una richiesta di GET al foglio. Questo foglio funge da posizione ottimale per utilizzare le formule del foglio di calcolo per riepilogare i dati in arrivo e favorirne il consumo in altri contesti.
+Un foglio denominato &quot;Slack&quot; viene aggiunto alla cartella di lavoro di Excel o al foglio di Google. In questo foglio puoi configurare le notifiche automatiche per un canale di Slack designato ogni volta che nuovi dati vengono acquisiti nel foglio di calcolo. Attualmente, l&#39;AEM supporta le notifiche esclusivamente all&#39;organizzazione dello Slack di progettazione AEM e all&#39;organizzazione di supporto aziendale Adobe.
 
-  I fogli &quot;shared-default&quot; non devono mai contenere informazioni personali identificabili o dati sensibili che l&#39;utente non è a suo agio nell&#39;essere accessibili pubblicamente.
+1. Per impostare le notifiche di Slack, immetti il &quot;teamId&quot; dell’area di lavoro di Slack e il &quot;nome del canale&quot; o l’&quot;ID&quot;. Puoi anche chiedere al backbot (con il comando di debug) di &quot;teamId&quot; e &quot;channel ID&quot;. È preferibile utilizzare &quot;ID canale&quot; invece di &quot;nome canale&quot;, in quanto sopravvive alle ridenominazioni del canale.
 
-* Un foglio denominato &quot;Slack&quot; viene aggiunto alla cartella di lavoro di Excel o al foglio di Google. In questo foglio puoi configurare le notifiche automatiche per un canale di Slack designato ogni volta che nuovi dati vengono acquisiti nel foglio di calcolo. Attualmente, l&#39;AEM supporta le notifiche esclusivamente all&#39;organizzazione dello Slack di progettazione AEM e all&#39;organizzazione di supporto aziendale Adobe.
+   >[!NOTE]
+   >
+   > I moduli più vecchi non avevano la colonna &quot;teamId&quot;. Il &quot;teamId&quot; era incluso nella colonna del canale, separato da un &quot;#&quot; o &quot;/&quot;.
 
-   1. Per impostare le notifiche di Slack, immetti il &quot;teamId&quot; dell’area di lavoro di Slack e il &quot;nome del canale&quot; o l’&quot;ID&quot;. Puoi anche chiedere al backbot (con il comando di debug) di &quot;teamId&quot; e &quot;channel ID&quot;. È preferibile utilizzare &quot;ID canale&quot; invece di &quot;nome canale&quot;, in quanto sopravvive alle ridenominazioni del canale.
+1. Immettere il titolo desiderato e in campi immettere i nomi dei campi da visualizzare nella notifica di Slack. Ogni intestazione deve essere separata da una virgola (ad esempio nome, e-mail).
 
-      >[!NOTE]
-      >
-      > I moduli più vecchi non avevano la colonna &quot;teamId&quot;. Il &quot;teamId&quot; era incluso nella colonna del canale, separato da un &quot;#&quot; o &quot;/&quot;.
-
-   1. Immettere il titolo desiderato e in campi immettere i nomi dei campi da visualizzare nella notifica di Slack. Ogni intestazione deve essere separata da una virgola (ad esempio nome, e-mail).
 
 Il foglio è ora configurato per la ricezione dei dati, è possibile [anteprima del modulo utilizzando il blocco moduli](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) o [utilizzare le richieste POST](#use-admin-apis-to-send-data-to-your-sheet) per iniziare a inviare dati al foglio.
 
-
+>[!WARNING]
+>
+>  I fogli &quot;shared-default&quot; non devono mai contenere informazioni personali identificabili o dati sensibili che l&#39;utente non è a suo agio nell&#39;essere accessibili pubblicamente.
 
 ## Invia dati al foglio {#send-data-to-your-sheet}
 
@@ -271,7 +277,7 @@ Esistono alcuni modi diversi per formattare i dati del modulo nel corpo del POST
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-Quindi, puoi personalizzare il messaggio di ringraziamento, [configurare una pagina di ringraziamento](/help/edge/docs/forms/thank-you-page-form.md), o [imposta reindirizzamenti](/help/edge/docs/forms/thank-you-page-form.md).
+Ora puoi personalizzare il messaggio di ringraziamento, [configurare una pagina di ringraziamento](/help/edge/docs/forms/thank-you-page-form.md), o [imposta reindirizzamenti](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## Vedi altro
 
