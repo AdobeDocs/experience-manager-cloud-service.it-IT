@@ -4,9 +4,9 @@ description: Queste sono le note sulla versione 2024.2.0 di Cloud Manager in AEM
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4a41de9da557be562bb2ff5773c7954f76a9acc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '725'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Questa pagina illustra le note sulla versione 2024.2.0 di Cloud Manager in AEM a
 
 ## Data di pubblicazione {#release-date}
 
-La data di pubblicazione di Cloud Manager versione 2024.2.0 in AEM as a Cloud Service è il 15 febbraio 2024. La prossima versione è prevista per il 16 marzo 2024.
+La data di pubblicazione della versione 2024.2.0 di Cloud Manager in AEM as a Cloud Service è il 15 febbraio 2024. La prossima versione è prevista per il 16 marzo 2024.
 
 ## Novità {#what-is-new}
 
