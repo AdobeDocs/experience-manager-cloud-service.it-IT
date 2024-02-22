@@ -2,9 +2,9 @@
 title: Utilizzo del provider di contenuti Screens
 description: Questa pagina descrive come utilizzare il provider di contenuti Screens per la creazione di contenuti.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '383'
 ht-degree: 15%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 ## Obiettivo {#objective}
 
-La sezione seguente descrive come utilizzare il provider di contenuti Screens dopo la configurazione [Provider servizi Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html).
+La sezione seguente descrive come creare canali nel provider di contenuti Screens, una volta effettuata la configurazione [Provider servizi Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en).
 
 ## Utilizzo del provider di contenuti Screens {#screens-content-provider}
 
@@ -46,7 +46,7 @@ Per accedere a Screens Content Provider, effettua le seguenti operazioni:
 
    ![Il collegamento è evidenziato dalla scheda Ambienti, che consente di accedere al provider di contenuti Screens.](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
-   Dopo aver effettuato l’accesso a Screens Content Provider, ora sei pronto per creare il contenuto nella riproduzione.
+   Dopo aver effettuato l’accesso a Screens Content Provider, passa a Screens> Content Provider.Ora puoi creare i contenuti per la riproduzione.
 
    Utilizza Screens Content Provider per creare e gestire i seguenti elementi:
 
