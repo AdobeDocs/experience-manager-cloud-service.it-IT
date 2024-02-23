@@ -4,9 +4,9 @@ description: Il servizio AEM Forms Edge Delivery è stato progettato per garanti
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -27,12 +27,12 @@ Questo servizio componibile è scollegato dall’origine dei contenuti e offre l
 
 ![Strumenti di creazione di moduli Edge Delivery](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-Per progettare e creare i moduli, i creatori di contenuti possono utilizzare strumenti a loro disposizione, come Microsoft Excel o Google Sheets (authoring basato su documenti), editor JSON o AEM Forms Adaptive Forms editor per la modifica WYSIWYG (progetti AEM Forms).
+Per progettare e creare i moduli, i creatori di contenuti possono utilizzare strumenti che già conoscono bene, come Microsoft Excel o Google Sheets (authoring basato su documenti), file JSON (authoring headless) o l’editor Forms adattivo di AEM Forms (authoring WYSIWYG).
 
 >[!NOTE]
 >
 >
-> La funzione di modifica WYSIWYG e Cross Walk sono disponibili nel primo programma di adozione. Puoi scrivere a aem-forms-early-adopter-program@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità.
+> La funzionalità di authoring WYSIWYG è disponibile in un programma per utenti iniziali. Puoi scrivere a aem-forms-early-adopter-program@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità.
 
 ## Inizia con le nozioni di base
 
@@ -67,13 +67,12 @@ Per progettare e creare i moduli, i creatori di contenuti possono utilizzare str
             <br><b style="margin-top: 5px;">Applicare le convalide dei campi</b>
         </a>
         <p>Riduci gli errori e le frustrazioni controllando gli input del modulo per la formattazione corretta.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Utilizzare frammenti di modulo in un modulo EDS" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Creare frammenti di modulo</b>
+    </div>    <div class="card-container">
+        <a href="/help/edge/docs/forms/style-theme-forms.md">
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Applicare stili o temi a un modulo finale" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Personalizzare un tema</b>
         </a>
-        <p>Riutilizzare frammenti preconfigurati in più moduli.</p>
+        <p>Crea un’immagine di marchio coerente applicando lo stesso tema nei moduli.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
@@ -83,11 +82,11 @@ Per progettare e creare i moduli, i creatori di contenuti possono utilizzare str
         <p>Amplia la portata dei moduli mantenendo i costi sotto controllo.</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Applicare stili o temi a un modulo finale" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Personalizzare un tema</b>
+        <a href="/help/edge/docs/forms/form-fragments.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Utilizzare frammenti di modulo in un modulo EDS" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Creare frammenti di modulo</b>
         </a>
-        <p>Crea un’immagine di marchio coerente applicando lo stesso tema nei moduli.</p>
+        <p>Riutilizzare frammenti preconfigurati in più moduli.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  

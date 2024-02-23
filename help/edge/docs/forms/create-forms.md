@@ -4,9 +4,9 @@ description: Forme perfette, veloce! ⚡ authoring basato su documento di AEM Fo
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google She
 
 Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
-* Imposta e clona il progetto Edge Delivery Service (EDS). Consulta [tutorial per sviluppatori](https://www.aem.live/developer/tutorial) per i dettagli. La cartella locale del progetto Edge Delivery Service (EDS) viene indicata come `[EDS Project repository]` in questo documento.
-* Clona il [Archivio Forms Block](https://github.com/adobe/afb). Contiene il codice per eseguire il rendering del modulo su una pagina Web EDS. La cartella locale dell’archivio Forms Block viene indicata come `[Forms Block repository]` in questo documento.
+* Imposta e clona il progetto Edge Delivery Service (EDS). Consulta [tutorial per sviluppatori](https://www.aem.live/developer/tutorial) per i dettagli. In questo documento, la cartella locale del progetto Edge Delivery Service (EDS) viene indicata come `[EDS Project repository]` .
+* Clona il [Archivio Forms Block](https://github.com/adobe/afb). Contiene il codice per eseguire il rendering del modulo su una pagina Web EDS. In questo documento, la cartella locale dell’archivio Forms Block viene indicata come `[Forms Block repository]` in questo documento.
 * Assicurati di avere accesso a Google Sheets o Microsoft SharePoint.
 
 
@@ -42,7 +42,7 @@ AEM Forms Edge Delivery include un blocco Modulo per facilitare la creazione di 
 
 1. Archivia `form` cartella e i file sottostanti al progetto del servizio di consegna Edge su GitHub.
 
-   Il blocco Form viene aggiunto all’archivio dei progetti EDS su Github. Assicurati che la build Github non abbia esito negativo:
+   Il blocco Form viene aggiunto all’archivio dei progetti EDS su GitHub. Assicurati che la build GitHub non abbia esito negativo:
 
    * Se riscontri un errore di tipo &quot;Impossibile risolvere il percorso del modulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, apri la `[EDS Project]/blocks/forms/form.js` file. Nell&#39;istruzione import sostituire `lib-franklin.js` file con `aem.js` file.
 
