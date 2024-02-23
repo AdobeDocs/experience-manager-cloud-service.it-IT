@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 22fc488cd507a3504c472eab3dea8daa7e63b81c
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 8%
@@ -107,7 +107,8 @@ Quando viene generato un rapporto, ricevi una notifica tramite <!-- through an e
 1. Clic **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica che la generazione del rapporto è stata avviata.
 1. Il giorno [!UICONTROL Rapporti su risorse] pagina, lo stato di generazione del rapporto si basa sullo stato corrente del processo di rapporto, ad esempio, [!UICONTROL Completato], [!UICONTROL Non riuscito], [!UICONTROL In coda], o [!UICONTROL Pianificato]. Lo stesso stato viene visualizzato nella casella in entrata delle notifiche.Per visualizzare la pagina del report, fare clic sul collegamento al report. In alternativa, seleziona il rapporto e fai clic su **[!UICONTROL Visualizza]** dalla barra degli strumenti.
 
-   ![Un rapporto generato](assets/report_page.png)
+   <!--![A generated report](assets/report_page.png)-->
+   ![stato del rapporto generato](assets/report-status.JPG)
 
    Clic **[!UICONTROL Scarica]** dalla barra degli strumenti per scaricare il rapporto in formato CSV.
 
