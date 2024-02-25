@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
+source-git-commit: b3bfc841f0609e1e529c97dd1f11d16de561701c
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '892'
+ht-degree: 92%
 
 ---
 
@@ -58,7 +58,11 @@ Per informazioni su come accedere alla vista Risorse e su alcune delle semplific
 
 Edge Delivery consente di creare siti web coinvolgenti e rapidi in cui gli autori possono aggiornare e pubblicare rapidamente i contenuti e che consentono il lancio rapido di nuovi siti.
 
-Integra AEM Assets con l’authoring basato su documenti per Edge Delivery Services per consentire agli autori di siti web di utilizzare le immagini disponibili negli archivi AEM Assets durante l’authoring di documenti in Microsoft Word o Documenti Google. Per ulteriori informazioni, consulta [Integrare AEM Assets con l’authoring basato su documenti](/help/edge/using.md#integrate-assets-edge).
+Integra AEM Assets con l’authoring basato su documenti per Edge Delivery Services per consentire agli autori di siti web di utilizzare le immagini disponibili negli archivi di AEM Assets durante l’authoring di documenti in Microsoft Word o Documenti Google. Per ulteriori informazioni, consulta [Integrare AEM Assets con l’authoring basato su documenti](/help/edge/using.md#integrate-assets-edge).
+
+## Integrazione con Adobe Journey Optimizer {#integration-with-ajo}
+
+[Adobe Journey Optimizer](https://business.adobe.com/it/products/journey-optimizer/adobe-journey-optimizer.html) semplifica la gestione dei percorsi per i clienti, offrendo campagne omnicanale con informazioni approfondite e decisioning intelligente. Durante la progettazione dei messaggi tramite Journey Optimizer, puoi accedere all’archivio Assets as a Cloud Service direttamente dall’interfaccia di Journey Optimizer. Gli utenti possono accedere alle risorse utilizzando l’interfaccia utente incorporata di Experience Manager Assets. Per ulteriori informazioni, consulta [Creare e gestire le risorse con Experience Manager Assets](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
 
 ## Nuove funzionalità di Assets {#whats-new-assets}
 
