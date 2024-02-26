@@ -2,9 +2,9 @@
 title: Definizioni di modelli, campi e tipi di componenti
 description: Scopri i campi e i tipi di componenti che possono essere modificati dall’Editor universale nella barra delle proprietà, con alcuni esempi. Scopri come creare una definizione di modello e un collegamento al componente per sfruttare al meglio la tua app.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: bbe02f66b5bce3b919be4abd3b2de482a235b6ee
+source-git-commit: fcdba895510b0c428a4274092c8b314fd36f5c7d
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1144'
 ht-degree: 9%
 
 ---
@@ -89,6 +89,23 @@ Un oggetto campo ha la seguente definizione di tipo.
 ### Tipi di componenti {#component-types}
 
 Di seguito sono elencati i tipi di componenti che è possibile utilizzare per il rendering dei campi.
+
+| Descrizione | Tipo componente |
+|---|---|
+| [Tag AEM](#aem-tag) | `aem-tag` |
+| [Contenuto AEM](#aem-content) | `aem-content` |
+| [Booleano](#boolean) | `boolean` |
+| [Gruppo di caselle di controllo](#checkbox-group) | `checkbox-group` |
+| [Contenitore](#container) | `container` |
+| [Data e ora](#date-time) | `date-time` |
+| [Selezione multipla](#multiselect) | `multiselect` |
+| [Numero](#number) | `number` |
+| [Gruppo pulsanti di scelta](#radio-group) | `radio-group` |
+| [Riferimento](#reference) | `reference` |
+| [Formato RTF](#rich-text) | `rich-text` |
+| [Seleziona](#select) | `select` |
+| [Linguetta](#tab) | `tab` |
+| [Testo](#text) | `text` |
 
 #### Tag AEM {#aem-tag}
 
@@ -624,6 +641,59 @@ Un tipo di componente di riferimento consente un riferimento a un altro oggetto 
 
 >[!ENDTABS]
 
+#### Testo formattato {#rich-text}
+
+Il testo RTF consente l’inserimento di testo RTF su più righe. Offre tipi di convalida aggiuntivi.
+
+| Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
+|---|---|---|---|
+| `maxSize` | `number` | Numero massimo di caratteri consentito | No |
+| `customErrorMsg` | `string` | Messaggio che verrà visualizzato se `maxSize` è stato superato | No |
+
+>[!BEGINTABS]
+
+>[!TAB Esempio 1]
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Esempio 2]
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
+      }
+    }
+  ]
+}
+```
+
+>[!TAB Schermata]
+
+![Schermata del tipo di componente area di testo](assets/component-types/richtext.png)
+
+>[!ENDTABS]
+
 #### Seleziona {#select}
 
 Un tipo di componente seleziona consente di selezionare una singola opzione da un elenco di opzioni predefinite in un menu a discesa.
@@ -704,62 +774,9 @@ Se desideri che gli elementi vengano visualizzati sopra tutte le schede, è nece
 
 >[!ENDTABS]
 
-#### Area testo {#text-area}
+#### Testo {#text}
 
-Un&#39;area di testo consente l&#39;immissione di testo RTF su più righe. Offre tipi di convalida aggiuntivi.
-
-| Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
-|---|---|---|---|
-| `maxSize` | `number` | Numero massimo di caratteri consentito | No |
-| `customErrorMsg` | `string` | Messaggio che verrà visualizzato se `maxSize` è stato superato | No |
-
->[!BEGINTABS]
-
->[!TAB Esempio 1]
-
-```json
-{
-  "id": "richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB Esempio 2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
-    }
-  ]
-}
-```
-
->[!TAB Schermata]
-
-![Schermata del tipo di componente area di testo](assets/component-types/richtext.png)
-
->[!ENDTABS]
-
-#### Inserimento testo {#text-input}
-
-Un input di testo consente di inserire una singola riga di testo.  Include tipi di convalida aggiuntivi.
+Il testo consente di inserire una singola riga di testo.  Include tipi di convalida aggiuntivi.
 
 | Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
@@ -777,7 +794,7 @@ Un input di testo consente di inserire una singola riga di testo.  Include tipi 
   "id": "simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string"
@@ -793,7 +810,7 @@ Un input di testo consente di inserire una singola riga di testo.  Include tipi 
   "id": "another simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string",
@@ -812,6 +829,6 @@ Un input di testo consente di inserire una singola riga di testo.  Include tipi 
 
 >[!TAB Schermata]
 
-![Schermata del tipo di componente di input testo](assets/component-types/simpletext.png)
+![Schermata del tipo di componente testo](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
