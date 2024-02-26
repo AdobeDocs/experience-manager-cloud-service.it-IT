@@ -2,10 +2,10 @@
 title: Definizioni di modelli, campi e tipi di componenti
 description: Scopri i campi e i tipi di componenti che possono essere modificati dall’Editor universale nella barra delle proprietà, con alcuni esempi. Scopri come creare una definizione di modello e un collegamento al componente per sfruttare al meglio la tua app.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 550d26cde3d6b7be419bc9df70db8894851361c6
+source-git-commit: bbe02f66b5bce3b919be4abd3b2de482a235b6ee
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 11%
+source-wordcount: '1126'
+ht-degree: 9%
 
 ---
 
@@ -94,7 +94,9 @@ Di seguito sono elencati i tipi di componenti che è possibile utilizzare per il
 
 Un tipo di componente tag AEM abilita un selettore di tag AEM, che può essere utilizzato per allegare i tag al componente.
 
-##### Esempio {#sample-aem-tag}
+>[!BEGINTABS]
+
+>[!TAB Esempio]
 
 ```json
 {
@@ -110,15 +112,19 @@ Un tipo di componente tag AEM abilita un selettore di tag AEM, che può essere u
 }
 ```
 
-##### Schermata {#screenshot-aem-tag}
+>[!TAB Schermata]
 
 ![Schermata del tipo di componente tag AEM](assets/component-types/aem-tag-picker.png)
+
+>[!ENDTABS]
 
 #### Contenuto AEM {#aem-content}
 
 Un tipo di componente di contenuto AEM abilita un selettore di contenuti AEM, che può essere utilizzato per impostare riferimenti al contenuto.
 
-##### Esempio {#sample-aem-content}
+>[!BEGINTABS]
+
+>[!TAB Esempio]
 
 ```json
 {
@@ -135,9 +141,11 @@ Un tipo di componente di contenuto AEM abilita un selettore di contenuti AEM, ch
 }
 ```
 
-##### Schermata {#screenshot-aem-content}
+>[!TAB Schermata]
 
 ![Schermata del tipo di componente contenuto AEM](assets/component-types/aem-content-picker.png)
+
+>[!ENDTABS]
 
 #### Booleano {#boolean}
 
@@ -147,7 +155,9 @@ Un tipo di componente booleano memorizza un semplice valore true/false renderizz
 |---|---|---|---|
 | `customErrorMsg` | `string` | Messaggio che verrà visualizzato se il valore immesso non è un valore booleano | No |
 
-##### Esempio {#sample-boolean}
+>[!BEGINTABS]
+
+>[!TAB Esempio 1]
 
 ```json
 {
@@ -162,6 +172,8 @@ Un tipo di componente booleano memorizza un semplice valore true/false renderizz
   ]
 }
 ```
+
+>[!TAB Esempio 2]
 
 ```json
 {
@@ -180,15 +192,19 @@ Un tipo di componente booleano memorizza un semplice valore true/false renderizz
 }
 ```
 
-##### Schermata {#screenshot-boolean}
+>[!TAB Schermata]
 
 ![Schermata del tipo di componente booleano](assets/component-types/boolean.png)
+
+>[!ENDTABS]
 
 #### Gruppo di caselle di controllo {#checkbox-group}
 
 Simile a un booleano, un tipo di componente gruppo casella di controllo consente la selezione di più elementi true/false, riprodotti come più caselle di controllo.
 
-##### Esempio {#sample-checkbox-group}
+>[!BEGINTABS]
+
+>[!TAB Esempio]
 
 ```json
 {
@@ -208,9 +224,11 @@ Simile a un booleano, un tipo di componente gruppo casella di controllo consente
 }
 ```
 
-#### Schermata {#screenshot-checkbox-group}
+>[!TAB Schermata]
 
 ![Schermata del tipo di componente del gruppo di caselle di controllo](assets/component-types/checkbox-group.png)
+
+>[!ENDTABS]
 
 #### Contenitore {#container}
 
@@ -220,7 +238,9 @@ Un tipo di componente contenitore consente il raggruppamento di componenti. Offr
 |---|---|---|---|
 | `collapsible` | `boolean` | Il contenitore è comprimibile | No |
 
-##### Esempio {#sample-container}
+>[!BEGINTABS]
+
+>[!TAB Esempio]
 
 ```json
  {
@@ -251,9 +271,44 @@ Un tipo di componente contenitore consente il raggruppamento di componenti. Offr
 }
 ```
 
-##### Schermata {#screenshot-container}
+>[!TAB Schermata]
 
 ![Schermata del tipo di componente del contenitore](assets/component-types/container.png)
+
+#### Frammenti di contenuto {#content-fragment}
+
+Il selettore Frammento di contenuto può essere utilizzato per selezionare un [Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) e relative varianti (se necessario). Offre una configurazione aggiuntiva.
+
+| Configurazione | Tipo di valore | Descrizione | Obbligatorio |
+|---|---|---|---|
+| `variationName` | `string` | Nome della variabile per memorizzare la variante selezionata. Se non è definito, non viene visualizzato alcun selettore varianti | No |
+
+>[!BEGINTABS]
+
+>[!TAB Esempio 1]
+
+```json
+[
+  {
+    "id": "aem-content-fragment",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string",
+        "variationName": "contentFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Schermata]
+
+![Schermata del selettore frammenti di contenuto](assets/component-types/aem-content-fragment.png)
+
+>[!ENDTABS]
 
 #### Data e ora {#date-time}
 
@@ -270,7 +325,9 @@ Offre inoltre un tipo di convalida aggiuntivo.
 |---|---|---|---|
 | `customErrorMsg` | `string` | Messaggio che verrà visualizzato se `valueFormat` non è soddisfatto | No |
 
-##### Esempio {#sample-date-time}
+>[!BEGINTABS]
+
+>[!TAB Esempio 1]
 
 ```json
 {
@@ -285,6 +342,8 @@ Offre inoltre un tipo di convalida aggiuntivo.
   ]
 }
 ```
+
+>[!TAB Esempio 2]
 
 ```json
 {
@@ -336,15 +395,55 @@ Offre inoltre un tipo di convalida aggiuntivo.
 }
 ```
 
-##### Schermata {#screenshot-date-time}
+>[!TAB Schermata]
 
 ![Schermata del tipo di componente data e ora](assets/component-types/date-time.png)
+
+>[!ENDTABS]
+
+#### Frammento di esperienza {#experience-fragment}
+
+Il selettore Frammento esperienza può essere utilizzato per selezionare un [Frammento esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md) e relative varianti (se necessario). Offre una configurazione aggiuntiva.
+
+| Configurazione | Tipo di valore | Descrizione | Obbligatorio |
+|---|---|---|---|
+| `variationName` | `string` | Nome della variabile per memorizzare la variante selezionata. Se non è definito, non viene visualizzato alcun selettore varianti | No |
+
+>[!BEGINTABS]
+
+>[!TAB Esempio 1]
+
+```json
+[
+  {
+    "id": "aem-experience-fragment",
+    "fields": [
+      {
+        "component": "aem-experience-fragment",
+        "name": "picker",
+        "label": "Experience Fragment Picker",
+        "valueType": "string",
+        "variationName": "experienceFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Schermata]
+
+![Schermata del selettore Frammenti esperienza](assets/component-types/aem-experience-fragment.png)
+
+>[!ENDTABS]
+
 
 #### Selezione multipla {#multiselect}
 
 Un tipo di componente a selezione multipla presenta più elementi da selezionare in un elenco a discesa, inclusa la possibilità di raggruppare gli elementi selezionabili.
 
-##### Esempi {#sample-multiselect}
+>[!BEGINTABS]
+
+>[!TAB Esempio 1]
 
 ```json
 {
@@ -363,6 +462,8 @@ Un tipo di componente a selezione multipla presenta più elementi da selezionare
   ]
 }
 ```
+
+>[!TAB Esempio 2]
 
 ```json
 {
@@ -397,10 +498,12 @@ Un tipo di componente a selezione multipla presenta più elementi da selezionare
 }
 ```
 
-##### Schermate {#screenshot-multiselect}
+>[!TAB Schermate]
 
 ![Schermata del tipo di componente a selezione multipla](assets/component-types/multiselect.png)
 ![Schermata del tipo di componente a selezione multipla con raggruppamento](assets/component-types/multiselect-group.png)
+
+>[!ENDTABS]
 
 #### Numero {#number}
 
@@ -412,7 +515,9 @@ Un tipo di componente numero consente di immettere un numero. Offre tipi di conv
 | `numberMax` | `number` | Numero massimo consentito | No |
 | `customErrorMsg` | `string` | Messaggio che verrà visualizzato se `numberMin` o `numberMax` non è soddisfatto | No |
 
-##### Esempio {#sample-number}
+>[!BEGINTABS]
+
+>[!TAB Esempio 1]
 
 ```json
 {
@@ -428,6 +533,8 @@ Un tipo di componente numero consente di immettere un numero. Offre tipi di conv
   ]
 }
 ```
+
+>[!TAB Esempio 2]
 
 ```json
 {
@@ -451,15 +558,19 @@ Un tipo di componente numero consente di immettere un numero. Offre tipi di conv
 }
 ```
 
-##### Schermata {#screenshot-number}
+>[!TAB Schermata]
 
 ![Schermata del tipo di componente numero](assets/component-types/number.png)
+
+>[!ENDTABS]
 
 #### Gruppo pulsanti di scelta {#radio-group}
 
 Un tipo di componente gruppo di scelta consente una selezione reciprocamente esclusiva da più opzioni sottoposte a rendering come gruppo simile a un gruppo di caselle di controllo.
 
-##### Esempio {#sample-radio-group}
+>[!BEGINTABS]
+
+>[!TAB Esempio]
 
 ```json
 {
@@ -479,15 +590,19 @@ Un tipo di componente gruppo di scelta consente una selezione reciprocamente esc
 }
 ```
 
-##### Schermata {#screenshot-radio-group}
+>[!TAB Schermata]
 
 ![Schermata del tipo di componente del gruppo radio](assets/component-types/radio.png)
+
+>[!ENDTABS]
 
 #### Riferimento {#reference}
 
 Un tipo di componente di riferimento consente un riferimento a un altro oggetto dati dall&#39;oggetto corrente.
 
-##### Esempio {#sample-reference}
+>[!BEGINTABS]
+
+>[!TAB Esempio]
 
 ```json
 {
@@ -503,15 +618,19 @@ Un tipo di componente di riferimento consente un riferimento a un altro oggetto 
 }
 ```
 
-##### Schermata {#screenshot-reference}
+>[!TAB Schermata]
 
 ![Schermata del tipo di componente di riferimento](assets/component-types/reference.png)
+
+>[!ENDTABS]
 
 #### Seleziona {#select}
 
 Un tipo di componente seleziona consente di selezionare una singola opzione da un elenco di opzioni predefinite in un menu a discesa.
 
-##### Esempio {#sample-select}
+>[!BEGINTABS]
+
+>[!TAB Esempio]
 
 ```json
 {
@@ -531,9 +650,11 @@ Un tipo di componente seleziona consente di selezionare una singola opzione da u
 }
 ```
 
-##### Schermata {#screenshot-select}
+>[!TAB Schermata]
 
 ![Schermata di selezione del tipo di componente](assets/component-types/select.png)
+
+>[!ENDTABS]
 
 #### Linguetta {#tab}
 
@@ -543,7 +664,9 @@ A `tab` definizione può essere considerata come un separatore nell’array di `
 
 Se desideri che gli elementi vengano visualizzati sopra tutte le schede, è necessario definirli prima di qualsiasi scheda.
 
-##### Esempio {#sample-tab}
+>[!BEGINTABS]
+
+>[!TAB Esempio]
 
 ```json
 {
@@ -575,9 +698,11 @@ Se desideri che gli elementi vengano visualizzati sopra tutte le schede, è nece
 }
 ```
 
-##### Schermata {#screenshot-tab}
+>[!TAB Schermata]
 
 ![Schermata del tipo di componente Scheda](assets/component-types/tab.png)
+
+>[!ENDTABS]
 
 #### Area testo {#text-area}
 
@@ -588,7 +713,9 @@ Un&#39;area di testo consente l&#39;immissione di testo RTF su più righe. Offre
 | `maxSize` | `number` | Numero massimo di caratteri consentito | No |
 | `customErrorMsg` | `string` | Messaggio che verrà visualizzato se `maxSize` è stato superato | No |
 
-##### Esempio {#sample-text-area}
+>[!BEGINTABS]
+
+>[!TAB Esempio 1]
 
 ```json
 {
@@ -603,6 +730,8 @@ Un&#39;area di testo consente l&#39;immissione di testo RTF su più righe. Offre
   ]
 }
 ```
+
+>[!TAB Esempio 2]
 
 ```json
 {
@@ -622,9 +751,11 @@ Un&#39;area di testo consente l&#39;immissione di testo RTF su più righe. Offre
 }
 ```
 
-##### Schermata {#screenshot-text-area}
+>[!TAB Schermata]
 
 ![Schermata del tipo di componente area di testo](assets/component-types/richtext.png)
+
+>[!ENDTABS]
 
 #### Inserimento testo {#text-input}
 
@@ -637,7 +768,9 @@ Un input di testo consente di inserire una singola riga di testo.  Include tipi 
 | `regExp` | `string` | Espressione regolare che deve corrispondere al testo di input | No |
 | `customErrorMsg` | `string` | Messaggio che verrà visualizzato se `minLength`, `maxLength`, e/o `regExp` è/sono violato/i | No |
 
-##### Esempio {#sample-text-input}
+>[!BEGINTABS]
+
+>[!TAB Esempio 1]
 
 ```json
 {
@@ -652,6 +785,8 @@ Un input di testo consente di inserire una singola riga di testo.  Include tipi 
   ]
 }
 ```
+
+>[!TAB Esempio 2]
 
 ```json
 {
@@ -675,6 +810,8 @@ Un input di testo consente di inserire una singola riga di testo.  Include tipi 
 }
 ```
 
-##### Schermata {#screenshot-text-input}
+>[!TAB Schermata]
 
 ![Schermata del tipo di componente di input testo](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
