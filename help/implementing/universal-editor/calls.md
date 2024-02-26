@@ -1,16 +1,16 @@
 ---
-title: Chiamate editor universali
+title: Chiamate all’editor universale
 description: Scopri i diversi tipi di chiamate effettuate all’app dall’editor universale per facilitarti il debug.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
+source-git-commit: 1fc53e726f3a15c9ac7d772b4c181a7877e417af
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 1%
+source-wordcount: '615'
+ht-degree: 2%
 
 ---
 
 
-# Chiamate editor universali {#calls}
+# Chiamate all’editor universale {#calls}
 
 Scopri i diversi tipi di chiamate effettuate all’app dall’editor universale per facilitarti il debug.
 
@@ -27,6 +27,8 @@ Tuttavia, per lo sviluppatore, comprendere queste chiamate e il loro comportamen
 * Il **Payload** della chiamata contiene dettagli su ciò che viene aggiornato dall’editor, tra cui l’identificazione di ciò che deve essere aggiornato e come aggiornarlo.
 * Il **Risposta** include dettagli su cosa è stato esattamente aggiornato dal servizio editor. Questo consente di facilitare l’aggiornamento del contenuto nell’editor. In alcuni casi, ad esempio `move` , è necessario aggiornare l&#39;intera pagina.
 
+Una volta completata correttamente una chiamata, vengono attivati gli eventi che includono il payload della richiesta e della risposta, che possono essere personalizzati per la tua app. Consulta il documento [Eventi editor universale](/help/implementing/universal-editor/events.md) per ulteriori dettagli.
+
 Di seguito è riportato un elenco dei tipi di chiamate effettuate dall’editor universale all’app, con esempi di payload e risposte.
 
 ## Aggiornare {#update}
@@ -40,7 +42,9 @@ Il payload include dettagli su cosa riscrivere in JCR.
 * `type`: tipo di valore JCR della proprietà da aggiornare
 * `value`: i dati aggiornati
 
-### Payload di esempio {#update-payload}
+>[!BEGINTABS]
+
+>[!TAB Payload di esempio]
 
 ```json
 {
@@ -60,7 +64,7 @@ Il payload include dettagli su cosa riscrivere in JCR.
 }
 ```
 
-### Risposta di esempio {#update-response}
+>[!TAB Risposta di esempio]
 
 ```json
 {
@@ -74,6 +78,8 @@ Il payload include dettagli su cosa riscrivere in JCR.
 }
 ```
 
+>[!ENDTABS]
+
 ## Dettagli {#details}
 
 A `details` La chiamata si verifica durante il caricamento dell&#39;app nell&#39;editor universale per recuperare il contenuto dell&#39;app.
@@ -83,7 +89,9 @@ Il payload include i dati da sottoporre a rendering, nonché dettagli su cosa ra
 * Per un componente, Universal Editor recupera solo un `data` , poiché lo schema dei dati è definito nell&#39;app.
 * Per i frammenti di contenuto, l’Editor universale recupera anche un `schema` poiché il modello per frammenti di contenuto è definito nel JCR.
 
-### Payload di esempio {#details-payload}
+>[!BEGINTABS]
+
+>[!TAB Payload di esempio]
 
 ```json
 {
@@ -102,7 +110,7 @@ Il payload include i dati da sottoporre a rendering, nonché dettagli su cosa ra
 }
 ```
 
-### Risposta di esempio {#details-response}
+>[!TAB Risposta di esempio]
 
 ```json
 {
@@ -134,6 +142,8 @@ Il payload include i dati da sottoporre a rendering, nonché dettagli su cosa ra
 }
 ```
 
+>[!ENDTABS]
+
 ## Aggiungi {#add}
 
 Un `add` La chiamata di si verifica quando inserisci un nuovo componente nell&#39;app utilizzando l&#39;Editor universale.
@@ -142,7 +152,9 @@ Il payload include `path` oggetto contenente dove aggiungere il contenuto.
 
 Include inoltre un `content` oggetto con oggetti aggiuntivi per dettagli specifici dell’endpoint del contenuto da archiviare [per ciascun plug-in.](/help/implementing/universal-editor/architecture.md) Ad esempio, se l’app è basata su contenuti di AEM e Magento, il payload conterrà un oggetto dati per ciascun sistema.
 
-### Payload di esempio {#add-payload}
+>[!BEGINTABS]
+
+>[!TAB Payload di esempio]
 
 ```json
 {
@@ -174,7 +186,7 @@ Include inoltre un `content` oggetto con oggetti aggiuntivi per dettagli specifi
 }
 ```
 
-### Risposta di esempio {#add-response}
+>[!TAB Risposta di esempio]
 
 ```json
 {
@@ -188,13 +200,17 @@ Include inoltre un `content` oggetto con oggetti aggiuntivi per dettagli specifi
 }
 ```
 
+>[!ENDTABS]
+
 ## Spostare {#move}
 
 A `move` La chiamata di si verifica quando si sposta un componente all’interno dell’app utilizzando l’Editor universale.
 
 Il payload include `from` oggetto che definisce la posizione del componente e un `to` oggetto che definisce dove è stato spostato.
 
-### Payload di esempio {#move-payload}
+>[!BEGINTABS]
+
+>[!TAB Payload di esempio]
 
 ```json
 {
@@ -227,7 +243,7 @@ Il payload include `from` oggetto che definisce la posizione del componente e un
 }
 ```
 
-### Risposta di esempio {#move-response}
+>[!TAB Risposta di esempio]
 
 ```json
 {
@@ -240,13 +256,17 @@ Il payload include `from` oggetto che definisce la posizione del componente e un
 }
 ```
 
+>[!ENDTABS]
+
 ## Rimuovi {#remove}
 
 A `remove` La chiamata di si verifica quando si elimina un componente all’interno dell’app utilizzando l’Editor universale.
 
 Il payload include il percorso dell’oggetto rimosso.
 
-### Payload di esempio {#remove-payload}
+>[!BEGINTABS]
+
+>[!TAB Payload di esempio]
 
 ```json
 {
@@ -272,7 +292,7 @@ Il payload include il percorso dell’oggetto rimosso.
 }
 ```
 
-### Risposta di esempio {#remove-response}
+>[!TAB Risposta di esempio]
 
 ```json
 {
@@ -286,13 +306,17 @@ Il payload include il percorso dell’oggetto rimosso.
 }
 ```
 
+>[!ENDTABS]
+
 ## Pubblicazione {#publish}
 
 A `publish` si verifica quando si fa clic su **Pubblica** nell’Editor universale per pubblicare il contenuto modificato.
 
 L’Editor universale scorre il contenuto e genera un elenco di riferimenti che devono essere pubblicati.
 
-### Payload di esempio {#publish-payload}
+>[!BEGINTABS]
+
+>[!TAB Payload di esempio]
 
 ```json
 {
@@ -332,7 +356,7 @@ L’Editor universale scorre il contenuto e genera un elenco di riferimenti che 
 }
 ```
 
-### Risposta di esempio {#publish-response}
+>[!TAB Risposta di esempio]
 
 ```json
 {
@@ -355,3 +379,9 @@ L’Editor universale scorre il contenuto e genera un elenco di riferimenti che 
   ]
 }
 ```
+
+>[!ENDTABS]
+
+## Risorse aggiuntive {#additional-resources}
+
+* [Eventi editor universale](/help/implementing/universal-editor/events.md)
