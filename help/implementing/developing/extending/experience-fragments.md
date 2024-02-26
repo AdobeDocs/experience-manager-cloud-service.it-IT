@@ -2,10 +2,10 @@
 title: Panoramica dei frammenti esperienza
 description: Estendi i frammenti esperienza Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 1%
+source-wordcount: '1642'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## Nozioni di base {#the-basics}
 
-Un [Frammento esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) è un gruppo di uno o più componenti, inclusi il contenuto e il layout, a cui è possibile fare riferimento all’interno delle pagine.
+Un [Frammento esperienza](/help/sites-cloud/authoring/fragments/content-fragments.md) è un gruppo di uno o più componenti, inclusi il contenuto e il layout, a cui è possibile fare riferimento all’interno delle pagine.
 
 Un Master Frammento esperienza, o una Variante, o entrambi, utilizza:
 
@@ -89,7 +89,7 @@ Per creare un modello di Frammento esperienza rilevato da **Crea frammento esper
       `experience-fragments`
 Questo modello consente agli utenti di creare frammenti di esperienza in /content/experience-fragments come `cq:allowedTemplates` Questa proprietà della cartella include tutti i modelli i cui nomi iniziano con `experience-fragment`. I clienti possono aggiornare questa proprietà per includere il proprio schema di denominazione o le posizioni dei modelli.
 
-1. [Modelli consentiti](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) può essere configurato nella console Frammenti di esperienza.
+1. [Modelli consentiti](/help/sites-cloud/authoring/fragments/content-fragments.md#configure-allowed-templates-folder) può essere configurato nella console Frammenti di esperienza.
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -112,7 +112,7 @@ L’unica configurazione aggiuntiva consiste nel garantire che i componenti sian
 The only additional configuration is to ensure that the components are [allowed on the template, this is achieved with the Content Policy](/help/sites-developing/page-templates-editable.md#content-policies).
 -->
 
-## Experience Fragment Link Rewriter Provider - HTML {#the-experience-fragment-link-rewriter-provider-html}
+## Provider rewriter collegamento frammento esperienza - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 In AEM puoi creare frammenti esperienza. Un frammento di esperienza:
 
@@ -204,7 +204,7 @@ Per utilizzare l’interfaccia, devi innanzitutto creare un bundle contenente un
 
 Questo servizio viene utilizzato per collegarsi alla riscrittura del file Esportazione frammento di esperienza in Target in modo da poter accedere ai vari collegamenti.
 
-Ad esempio, `ComponentService`:
+Ad esempio: `ComponentService`:
 
 ```java
 import com.adobe.cq.xf.ExperienceFragmentLinkRewriterProvider;

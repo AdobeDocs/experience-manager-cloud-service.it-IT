@@ -2,7 +2,7 @@
 title: 'Creazione di una configurazione: configurazione headless'
 description: Crea una configurazione come primo passo per familiarizzare con le funzioni headless in AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 92%
@@ -19,7 +19,7 @@ Il browser di configurazioni fornisce un’API di configurazione generica, una s
 
 Nel contesto della gestione dei contenuti headless in AEM, considera una configurazione come un’area di lavoro all’interno di AEM dove puoi creare modelli di contenuto, che definiscono la struttura dei contenuti e dei frammenti di contenuto futuri. Puoi avere più configurazioni per separare questi modelli.
 
-Se hai familiarità con i [modelli di pagina in un’implementazione completa di AEM,](/help/sites-cloud/authoring/features/templates.md) l’utilizzo delle configurazioni per la gestione dei modelli di contenuto è simile.
+Se hai familiarità con i [modelli di pagina in un’implementazione completa di AEM,](/help/sites-cloud/authoring/sites-console/templates.md) l’utilizzo delle configurazioni per la gestione dei modelli di contenuto è simile.
 
 ## Come creare una configurazione {#how-to-create-a-configuration}
 

@@ -2,8 +2,8 @@
 title: Guida introduttiva ad AEM headless as a Cloud Service
 description: In questa parte del Percorso per sviluppatori headless di AEM, approfondire i prerequisiti headless di AEM.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '3057'
 ht-degree: 100%
 
@@ -286,8 +286,8 @@ Mentre si raccomanda di spostarsi nella parte successiva del percorso per lo svi
 * [Tutorial di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it): segui questi pratici tutorial per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.
 * [Gestione dei contenuti headless tramite le API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless&amp;lang=it#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
 * [Guida AEM WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Questo progetto GitHub include applicazioni di esempio che mettono in evidenza le API GraphQL di AEM.
-* [Concetti sull’authoring](/help/sites-cloud/authoring/getting-started/concepts.md) - Documentazione tecnica per l’ambiente di authoring di AEM, compresi i dettagli sull’impostazione di authoring-pubblicazione
-* [Pubblicazione delle pagine](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - Documentazione tecnica per la pubblicazione dei contenuti su AEM
+* [Concetti sull’authoring](/help/sites-cloud/authoring/author-publish.md) - Documentazione tecnica per l’ambiente di authoring di AEM, compresi i dettagli sull’impostazione di authoring-pubblicazione
+* [Pubblicazione delle pagine](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - Documentazione tecnica per la pubblicazione dei contenuti su AEM
 * [Convenzioni di denominazione](/help/implementing/developing/introduction/naming-conventions.md) - Documentazione tecnica sulle restrizioni di denominazione delle pagine in AEM
 * [Gestore multisito e traduzione](/help/sites-cloud/administering/msm-and-translation.md) - Documentazione tecnica sulle potenti funzioni di traduzione di AEM
 * [Flussi di lavoro AEM](/help/sites-cloud/authoring/workflows/overview.md) - Documentazione tecnica su come automatizzare i flussi di lavoro in AEM

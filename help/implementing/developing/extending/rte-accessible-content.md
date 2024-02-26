@@ -3,9 +3,9 @@ title: Configurare l’editor Rich Text per creare pagine web e siti accessibili
 description: Scopri come configurare l’Editor Rich Text per creare siti accessibili in [!DNL Adobe Experience Manager].
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '509'
 ht-degree: 1%
 
 ---
@@ -33,9 +33,9 @@ Per istruzioni sulla configurazione dell’editor Rich Text, consulta [configura
 * [Attivare un plug-in e configurare la proprietà features](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configurare altre funzionalità dell’editor Rich Text](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Per attivare alcune o tutte le funzioni di un plug-in, configuralo all’interno del `rtePlugins` sub-branca in CRXDE Lite.
+Per attivare alcune o tutte le funzioni di un plug-in, configuralo all’interno del `rtePlugins` sub-branca in CRXDE Liti.
 
-![CRXDE Lite che mostra un esempio di rtePlugin](assets/example-rteplugin-crxde-lite.png)
+![CRXDE Liti che mostra un esempio di rtePlugin](assets/example-rteplugin-crxde-lite.png)
 
 ### Esempio per specificare i formati di paragrafo disponibili nel campo di selezione dell’Editor Rich Text {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
@@ -148,5 +148,4 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Guida rapida agli standard WCAG](/help/compliance/accessibility/quick-guide-wcag.md)
->* [Come creare contenuti accessibili in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
-
+>* [Come creare contenuti accessibili in Experience Manager](/help/sites-cloud/authoring/page-editor/accessible-content.md)

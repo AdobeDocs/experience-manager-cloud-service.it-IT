@@ -5,8 +5,8 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 100%
 
@@ -285,4 +285,4 @@ Approfondisci questo argomento e prosegui nel tuo percorso di traduzione in AEM 
 Sebbene sia consigliabile passare alla parte successiva del processo di traduzione consultando il documento [Pubblicare i contenuti tradotti,](publish-content.md) le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso.
 
 * [Gestione dei progetti di traduzione](/help/sites-cloud/administering/translation/managing-projects.md): scopri i dettagli dei progetti di traduzione e le funzioni aggiuntive, come i flussi di lavoro di traduzione umana e i progetti multilingue.
-* [Strumenti e ambiente di authoring](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection): AEM offre diversi meccanismi per organizzare e modificare i contenuti, tra cui un browser del percorso affidabile.
+* [Strumenti e ambiente di authoring](/help/sites-cloud/authoring/path-selection.md#path-selection): AEM offre diversi meccanismi per organizzare e modificare i contenuti, tra cui un browser del percorso affidabile.

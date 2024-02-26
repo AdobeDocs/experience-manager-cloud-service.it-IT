@@ -2,7 +2,7 @@
 title: Varianti - Authoring dei contenuti di frammenti (Assets - Frammenti di contenuto)
 description: Scopri in che modo le varianti di Frammento di contenuto consentono di creare contenuti per il frammento, quindi di creare varianti di tale contenuto in base allo scopo, aumentando così la flessibilità.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 52%
@@ -64,7 +64,7 @@ Operazioni disponibili:
 
 * Assegna **Tag** alla variante corrente; i tag possono essere aggiunti, aggiornati e rimossi.
 
-   * [Tag](/help/sites-cloud/authoring/features/tags.md) sono utili per organizzare i frammenti in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
+   * [Tag](/help/sites-cloud/authoring/sites-console/tags.md) sono utili per organizzare i frammenti in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
 
       * La ricerca di un tag restituisce il frammento, con la variante tag evidenziata.
       * I tag delle varianti possono essere utilizzati anche per raggruppare le varianti per un profilo Content Delivery Network (CDN) specifico (per la memorizzazione in cache di CDN), invece di utilizzare il nome della variante.
@@ -242,14 +242,14 @@ La funzione di riepilogo del testo è progettata per aiutare gli utenti a ridurr
 
 >[!CAUTION]
 >
-L’inglese è disponibile in modo predefinito.
+>L’inglese è disponibile in modo predefinito.
 >
-Altre lingue sono disponibili come Pacchetti modello di lingua da Software Distribution:
+>Altre lingue sono disponibili come Pacchetti modello di lingua da Software Distribution:
 >
-* [Francese (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Tedesco (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Spagnolo (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Francese (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Tedesco (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Spagnolo (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. Seleziona **Principale** o la variante richiesta.
@@ -318,7 +318,7 @@ Caratteristiche delle annotazioni:
 
   >[!NOTE]
   >
-  Se a un testo sono state applicate più annotazioni, viene fornito un selettore a discesa.
+  >Se a un testo sono state applicate più annotazioni, viene fornito un selettore a discesa.
 
 * Quando si elimina l’intero testo a cui è stata applicata l’annotazione, viene eliminata anche l’annotazione.
 
@@ -332,17 +332,17 @@ Caratteristiche delle annotazioni:
 
 Per semplificare il processo di creazione dei frammenti di contenuto, puoi aggiungere [Risorse](/help/assets/manage-digital-assets.md) (immagini) direttamente nel frammento.
 
-Vengono aggiunte alla sequenza di paragrafi del frammento senza formattazione; la formattazione può essere impostata quando il [frammento viene utilizzato o inserito come riferimento in una pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+Vengono aggiunte alla sequenza di paragrafi del frammento senza formattazione; la formattazione può essere impostata quando il [frammento viene utilizzato o inserito come riferimento in una pagina](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!CAUTION]
 >
-Non è possibile spostare o eliminare le risorse in una pagina di riferimento; tali azioni devono essere eseguite nell’editor frammenti.
+>Non è possibile spostare o eliminare le risorse in una pagina di riferimento; tali azioni devono essere eseguite nell’editor frammenti.
 >
-La formattazione della risorsa (ad esempio, dimensione) deve invece essere eseguita nell’[editor pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
+>La formattazione della risorsa (ad esempio, dimensione) deve invece essere eseguita nell’[editor pagina](/help/sites-cloud/authoring/fragments/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
 
 >[!NOTE]
 >
-Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
+>Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
 1. Posizionare il cursore nel punto in cui si desidera aggiungere l&#39;immagine.
 1. Per aprire la finestra di dialogo di ricerca, utilizza l’icona **Inserisci risorsa**.
@@ -357,10 +357,10 @@ Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments
 
    >[!CAUTION]
    >
-   Dopo aver aggiunto una risorsa, se modifichi il formato in:
+   >Dopo aver aggiunto una risorsa, se modifichi il formato in:
    >
-   * **Testo normale**: la risorsa viene persa dal frammento.
-   * **Markdown**: la risorsa non è visibile, ma lo tornerà a essere quando torni a **Rich Text**.
+   >* **Testo normale**: la risorsa viene persa dal frammento.
+   >* **Markdown**: la risorsa non è visibile, ma lo tornerà a essere quando torni a **Rich Text**.
 
 ### Inserimento di un frammento di contenuto nel frammento {#inserting-content-fragment-into-your-fragment}
 
@@ -370,17 +370,17 @@ Vengono aggiunti come riferimento nella posizione corrente all’interno del fra
 
 >[!NOTE]
 >
-Questa opzione è disponibile quando **Testo su più righe** è configurato con **Consenti riferimento frammento**.
+>Questa opzione è disponibile quando **Testo su più righe** è configurato con **Consenti riferimento frammento**.
 
 >[!CAUTION]
 >
-Non è possibile spostare o eliminare le risorse in una pagina di riferimento; tali azioni devono essere eseguite nell’editor frammenti.
+>Non è possibile spostare o eliminare le risorse in una pagina di riferimento; tali azioni devono essere eseguite nell’editor frammenti.
 >
-La formattazione della risorsa (ad esempio, dimensione) deve invece essere eseguita nell’[editor pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
+>La formattazione della risorsa (ad esempio, dimensione) deve invece essere eseguita nell’[editor pagina](/help/sites-cloud/authoring/fragments/content-fragments.md). La rappresentazione della risorsa nell’editor frammenti è puramente a scopo di creazione del flusso di contenuto.
 
 >[!NOTE]
 >
-Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
+>Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
 1. Posiziona il cursore nel punto in cui desideri aggiungere il frammento.
 1. Per aprire la finestra di dialogo di ricerca, utilizza l’icona **Inserisci frammento di contenuto**.
@@ -395,10 +395,10 @@ Esistono diversi metodi per aggiungere [immagini](/help/assets/content-fragments
 
    >[!CAUTION]
    >
-   Dopo aver aggiunto un riferimento a un altro frammento, se modifichi il formato in:
+   >Dopo aver aggiunto un riferimento a un altro frammento, se modifichi il formato in:
    >
-   * **Testo normale**: il riferimento viene perso dal frammento.
-   * **Markdown**: il riferimento rimane.
+   >* **Testo normale**: il riferimento viene perso dal frammento.
+   >* **Markdown**: il riferimento rimane.
 
 ## Ereditarietà {#inheritance}
 
@@ -440,11 +440,11 @@ Le varianti consentono di utilizzare **Principale** e modificarlo in base allo s
 
    >[!NOTE]
    >
-   Quando crei una variante, il valore **Principale** viene copiata, non la variante aperta.
+   >Quando crei una variante, il valore **Principale** viene copiata, non la variante aperta.
 
    >[!NOTE]
    >
-   Quando crei una variante, tutti **Tag** attualmente assegnato al **Principale** La variante viene copiata nella nuova variante.
+   >Quando crei una variante, tutti **Tag** attualmente assegnato al **Principale** La variante viene copiata nella nuova variante.
 
 ### Modifica di una variante {#editing-a-variation}
 
@@ -467,7 +467,7 @@ Puoi modificare il contenuto della variante dopo:
 
 >[!NOTE]
 >
-Questo influisce solo sul **Titolo** della variante.
+>Questo influisce solo sul **Titolo** della variante.
 
 ### Eliminazione di una variante {#deleting-a-variation}
 
@@ -479,7 +479,7 @@ Questo influisce solo sul **Titolo** della variante.
 
 >[!NOTE]
 >
-Non è possibile eliminare l’elemento **Principale**.
+>Non è possibile eliminare l’elemento **Principale**.
 
 ### Sincronizzazione con l’elemento Principale {#synchronizing-with-master}
 
@@ -489,13 +489,13 @@ Quando modifichi una variante, hai accesso all’azione per sincronizzare l’el
 
 >[!CAUTION]
 >
-La sincronizzazione è disponibile solo per copiare le modifiche *dall’elemento **Principale** alla variante*.
+>La sincronizzazione è disponibile solo per copiare le modifiche *dall’elemento **Principale** alla variante*.
 >
-Viene sincronizzato solo l’elemento corrente della variante.
+>Viene sincronizzato solo l’elemento corrente della variante.
 >
-La sincronizzazione funziona solo sul **Testo su più righe** data-type.
+>La sincronizzazione funziona solo sul **Testo su più righe** data-type.
 >
-Il trasferimento delle modifiche *da una variante all’elemento **Principale*** non è disponibile come opzione.
+>Il trasferimento delle modifiche *da una variante all’elemento **Principale*** non è disponibile come opzione.
 
 1. Apri il frammento di contenuto nell’editor frammenti. Assicurati che l’elemento **Principale** sia stato modificato.
 

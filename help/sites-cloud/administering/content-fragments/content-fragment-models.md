@@ -4,7 +4,7 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '3125'
 ht-degree: 56%
@@ -119,9 +119,9 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
         >[!CAUTION]
         >
-        >Quando aggiorni manualmente la proprietà **Nome proprietà** per un tipo di dati, i nomi devono contenere *solo* A-Z, a-z, 0-9 e il carattere speciale di sottolineatura &quot;_&quot;.
+        Quando aggiorni manualmente la proprietà **Nome proprietà** per un tipo di dati, i nomi devono contenere *solo* A-Z, a-z, 0-9 e il carattere speciale di sottolineatura &quot;_&quot;.
         >
-        >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
+        Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
      Ad esempio:
 
@@ -150,9 +150,9 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 
   >[!NOTE]
   >
-  >Se l’area di testo è RTF, Testo normale o Markdown, viene definita nel modello dalla proprietà **Tipo predefinito**.
+  Se l’area di testo è RTF, Testo normale o Markdown, viene definita nel modello dalla proprietà **Tipo predefinito**.
   >
-  >Questo formato non può essere modificato da [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), ma solo dal modello.
+  Questo formato non può essere modificato da [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), ma solo dal modello.
 
 * **Numero**
    * Aggiungi uno o più campi numerici
@@ -184,7 +184,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 
      >[!NOTE]
      >
-     >Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
+     Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
 
 ## Proprietà {#properties}
 
@@ -196,7 +196,7 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
 
   >[!CAUTION]
   >
-  >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
+  Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
 * **Rendering come**
 
@@ -227,11 +227,11 @@ Il contenuto (per il campo specifico) deve essere univoco in tutti i frammenti d
 
   >[!NOTE]
   >
-  >L’unicità è assicurata da directory principale lingua.
+  L’unicità è assicurata da directory principale lingua.
 
   >[!NOTE]
   >
-  >Le varianti possono avere lo stesso valore *unico* come varianti dello stesso frammento, ma non lo stesso valore utilizzato in qualsiasi variante di altri frammenti.
+  Le varianti possono avere lo stesso valore *unico* come varianti dello stesso frammento, ma non lo stesso valore utilizzato in qualsiasi variante di altri frammenti.
 
 * Vedi **[Riferimento contenuto](#content-reference)** per ulteriori dettagli su quel tipo di dati specifico e sulle relative proprietà.
 
@@ -280,18 +280,16 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
    * Consente di includere/recuperare dati strutturati.
      >[!NOTE]
      >
-     >Questo metodo è di particolare interesse quando utilizzi [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+     Questo metodo è di particolare interesse quando utilizzi [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
 >[!NOTE]
 >
->L’AEM ha una protezione da recidiva per:
+L’AEM ha una protezione da recidiva per:
 >
->* Riferimenti al contenuto
->  In questo modo si impedisce all’utente di aggiungere un riferimento al frammento corrente e si potrebbe creare una finestra di dialogo di selezione Riferimento frammento vuota.
+* Riferimenti al contenuto Questo impedisce all’utente di aggiungere un riferimento al frammento corrente e può causare la visualizzazione di una finestra di dialogo vuota per la selezione dei riferimenti ai frammenti.
 >
->* Riferimenti frammento in GraphQL
->  Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituisce null.
+* Riferimenti frammento in GraphQL Se crei una query approfondita che restituisce più frammenti di contenuto a cui fanno riferimento l’un l’altro, alla prima occorrenza restituisce null.
 
 ### Riferimento contenuto {#content-reference}
 
@@ -302,16 +300,16 @@ Oltre alle proprietà standard puoi specificare:
 * Il **Percorso directory principale**, che specifica dove memorizzare il contenuto a cui si fa riferimento
   >[!NOTE]
   >
-  >Questo è obbligatorio se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l’editor di frammenti di contenuto.
+  Questo è obbligatorio se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l’editor di frammenti di contenuto.
   >
-  >Consulta [Immagini di riferimento](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) per ulteriori dettagli.
+  Consulta [Immagini di riferimento](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) per ulteriori dettagli.
 
 * I tipi di contenuto a cui è possibile fare riferimento
   >[!NOTE]
   >
-  >Questi devono includere **Immagine** se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l’editor di frammenti di contenuto.
+  Questi devono includere **Immagine** se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l’editor di frammenti di contenuto.
   >
-  >Consulta [Immagini di riferimento](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) per ulteriori dettagli.
+  Consulta [Immagini di riferimento](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) per ulteriori dettagli.
 
 * Le limitazioni per le dimensioni dei file
 * Se si fa riferimento a un’immagine:
@@ -345,7 +343,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->I riferimenti ai frammenti sono di particolare interesse per [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+I riferimenti ai frammenti sono di particolare interesse per [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 
 Oltre alle proprietà standard puoi definire:
 
@@ -372,9 +370,9 @@ Specifica un percorso radice per tutti i frammenti a cui si fa riferimento.
 
 >[!NOTE]
 >
->È presente un meccanismo di protezione per evitare le ricorrenze. Non consente all’utente di selezionare il frammento di contenuto corrente nel riferimento frammento e può causare una finestra di dialogo vuota per la selezione del riferimento frammento.
+È presente un meccanismo di protezione per evitare le ricorrenze. Non consente all’utente di selezionare il frammento di contenuto corrente nel riferimento frammento e può causare una finestra di dialogo vuota per la selezione del riferimento frammento.
 >
->In GraphQL è inoltre disponibile una protezione di ricorrenza per i riferimenti di frammenti. Se crei una query approfondita tra due frammenti di contenuto che si riferiscono l’uno all’altro, restituisce null.
+In GraphQL è inoltre disponibile una protezione di ricorrenza per i riferimenti di frammenti. Se crei una query approfondita tra due frammenti di contenuto che si riferiscono l’uno all’altro, restituisce null.
 
 ## Abilitazione o disabilitazione di un modello per frammenti di contenuto {#enabling-disabling-a-content-fragment-model}
 
@@ -423,7 +421,7 @@ Per implementare la governance dei contenuti, puoi configurare dei **Criteri** n
 
 >[!NOTE]
 >
->Il meccanismo è simile a [consentire modelli di pagina](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) per una pagina e i relativi elementi secondari, nelle proprietà avanzate di una pagina.
+Il meccanismo è simile a [consentire modelli di pagina](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) per una pagina e i relativi elementi secondari, nelle proprietà avanzate di una pagina.
 
 Per configurare i **Criteri** dei **Modelli per frammenti di contenuto consentiti**:
 
@@ -457,7 +455,7 @@ I modelli per frammenti di contenuto consentiti per una cartella vengono risolti
 
 >[!CAUTION]
 >
->L’eliminazione di un modello per frammenti di contenuto può influire sui frammenti dipendenti.
+L’eliminazione di un modello per frammenti di contenuto può influire sui frammenti dipendenti.
 
 Per eliminare un modello per frammenti di contenuto:
 
@@ -468,7 +466,7 @@ Per eliminare un modello per frammenti di contenuto:
 
    >[!NOTE]
    >
-   >Se al modello viene fatto riferimento, viene visualizzato un avviso che consente di eseguire le azioni appropriate.
+   Se al modello viene fatto riferimento, viene visualizzato un avviso che consente di eseguire le azioni appropriate.
 
 ## Pubblicazione di un modello per frammenti di contenuto {#publishing-a-content-fragment-model}
 
@@ -484,7 +482,7 @@ Lo stato di pubblicazione viene visualizzato nella console.
 
    >[!NOTE]
    >
-   >Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, un elenco di selezione lo indicherà e il modello verrà pubblicato con il frammento.
+   Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, un elenco di selezione lo indicherà e il modello verrà pubblicato con il frammento.
 
 ## Annullamento della pubblicazione di un modello per frammenti di contenuto {#unpublishing-a-content-fragment-model}
 
@@ -502,7 +500,7 @@ Se tenti di annullare la pubblicazione di un modello attualmente utilizzato da u
 
 ![Messaggio di errore di modello per frammenti di contenuto quando si annulla la pubblicazione di un modello in uso](assets/cf-cfmodels-unpublish-error.png)
 
-Il messaggio suggerisce di controllare [Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) per approfondire l&#39;analisi:
+Il messaggio suggerisce di controllare [Riferimenti](/help/sites-cloud/authoring/basic-handling.md#references) per approfondire l&#39;analisi:
 
 ![Modello per frammenti di contenuto nei riferimenti](assets/cf-cfmodels-references.png)
 
@@ -572,6 +570,6 @@ Puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli:
 
      >[!NOTE]
      >
-     >Potrebbe ancora essere presente un avviso nella parte superiore, ma si verifica quando il modello è già utilizzato da frammenti di contenuto esistenti.
+     Potrebbe ancora essere presente un avviso nella parte superiore, ma si verifica quando il modello è già utilizzato da frammenti di contenuto esistenti.
 
    * **Annulla** ti riporta alla console.

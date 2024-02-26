@@ -2,7 +2,7 @@
 title: Framework di assegnazione tag AEM
 description: Assegna tag ai contenuti e utilizza l’infrastruttura di tag AEM per suddividerli in categorie e organizzarli.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 L’assegnazione tag consente di categorizzare e organizzare i contenuti. I tag possono essere classificati in base a uno spazio dei nomi e a una tassonomia. Per informazioni dettagliate sull’utilizzo dei tag:
 
-* Consulta [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md) per informazioni sull’assegnazione tag ai contenuti come autore di contenuti.
+* Consulta [Utilizzo dei tag](/help/sites-cloud/authoring/sites-console/tags.md) per informazioni sull’assegnazione tag ai contenuti come autore di contenuti.
 * Per informazioni sulla creazione e la gestione dei tag e sulla modalità di applicazione dei tag di contenuto, consulta Amministrazione dei tag .
 
 Questo articolo si concentra sul framework sottostante che supporta l’assegnazione tag in AEM e su come utilizzarlo come sviluppatore.
@@ -175,7 +175,7 @@ Quando il tag A viene spostato o unito al tag B in `/content/cq:tags`:
      >
      >Il `cq:movedTo` viene aggiunta al tag spostato o unito solo se viene soddisfatta una delle seguenti condizioni:
      >
-     > 1. Il tag viene utilizzato nel contenuto (ovvero ha un riferimento). OPPURE
+     > 1. Il tag viene utilizzato nel contenuto (ovvero ha un riferimento). OR
      > 1. Il tag include elementi figlio già spostati.
      >
 * Il tag B viene creato (in caso di spostamento) e riceve `cq:backlinks` proprietà.

@@ -2,9 +2,9 @@
 title: Componenti compositi negli SPA
 description: Scopri come creare componenti compositi personalizzati, composti da altri componenti compatibili con l’editor di applicazioni a pagina singola (SPA) dell’AEM.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '782'
 ht-degree: 1%
 
 ---
@@ -156,7 +156,7 @@ Puoi quindi aggiungerlo all’SPA e recuperarne il contenuto.
     itemPath='root/responsivegrid' />
    ```
 
-1. Aggiungi il creato `wknd-spa/components/imagecard` ai componenti consentiti per il componente contenitore [nel modello della pagina](/help/sites-cloud/authoring/features/templates.md).
+1. Aggiungi il creato `wknd-spa/components/imagecard` ai componenti consentiti per il componente contenitore [nel modello della pagina](/help/sites-cloud/authoring/sites-console/templates.md).
 
 Ora il `imagecard` Il componente può essere aggiunto direttamente al contenitore nell’editor AEM.
 

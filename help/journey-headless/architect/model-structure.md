@@ -2,8 +2,8 @@
 title: Scopri come creare modelli per frammenti di contenuto in AEM
 description: Scopri i concetti e la meccanica della modellazione dei contenuti per i CMS headless utilizzando Modelli per frammenti di contenuto.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 100%
 
@@ -108,9 +108,9 @@ Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’in
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Concetti relativi all’authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Concetti relativi all’authoring](/help/sites-cloud/authoring/author-publish.md)
 
-* [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md): questa pagina si basa principalmente sulla console **Sites**, ma molte delle funzioni sono utili anche per navigare verso e intervenire su **Modelli per frammenti di contenuto** nella console **Generale**.
+* [Operazioni di base](/help/sites-cloud/authoring/basic-handling.md): questa pagina si basa principalmente sulla console **Sites**, ma molte delle funzioni sono utili anche per navigare verso e intervenire su **Modelli per frammenti di contenuto** nella console **Generale**.
 
 * [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)
 

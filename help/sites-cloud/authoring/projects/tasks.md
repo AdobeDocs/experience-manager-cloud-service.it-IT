@@ -2,7 +2,7 @@
 title: Utilizzo delle attività
 description: Le attività rappresentano elementi di lavoro da eseguire sul contenuto e vengono utilizzate nei progetti per determinare il livello di completezza delle attività correnti
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 95%
@@ -76,6 +76,6 @@ Un altro modo per accedere alle attività è dalla casella in entrata. Dalla cas
 
 ![Attività nella casella in entrata](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-Per completare un’attività, selezionala e fai clic su **Completa**. Aggiungi informazioni all’attività e quindi fai clic su **Fine**. Per ulteriori informazioni, consulta [Casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md).
+Per completare un’attività, selezionala e fai clic su **Completa**. Aggiungi informazioni all’attività e quindi fai clic su **Fine**. Per ulteriori informazioni, consulta [Casella in entrata](/help/sites-cloud/authoring/inbox.md).
 
 ![Notifiche delle attività](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

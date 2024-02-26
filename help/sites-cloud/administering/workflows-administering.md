@@ -4,7 +4,7 @@ description: Scopri come amministrare le istanze dei flussi di lavoro utilizzand
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 98%
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 La console Flusso di lavoro fornisce diversi strumenti per l’amministrazione delle istanze del flusso di lavoro, in modo che vengano eseguite come previsto.
 
-Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. Utilizza la [navigazione globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) per aprire il riquadro **Strumenti**, quindi selezionare **Flusso di lavoro**:
+Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. Utilizza la [navigazione globale](/help/sites-cloud/authoring/basic-handling.md#global-navigation) per aprire il riquadro **Strumenti**, quindi selezionare **Flusso di lavoro**:
 
 * **Modelli**: gestire le definizioni dei flussi di lavoro
 * **Istanze**: visualizzazione e gestione delle istanze di flussi di lavoro in esecuzione

@@ -2,7 +2,7 @@
 title: Esportatore JSON per Content Services
 description: I Content Services dell’AEM sono progettati per generalizzare la descrizione e la distribuzione dei contenuti all’interno e dall’AEM, non limitandosi alle pagine web. Forniscono contenuti a canali che non sono pagine web AEM tradizionali, utilizzando metodi standardizzati che possono essere utilizzati da qualsiasi cliente.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 17%
@@ -78,5 +78,5 @@ La pagina può contenere un singolo frammento di contenuto o più componenti di 
 
 * [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Authoring con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [Authoring con frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '5863'
 ht-degree: 2%
@@ -102,7 +102,7 @@ Se utilizzi una soluzione WCM (Web Content Manager) di terze parti, devi integra
 >* Per aggiungere interattività al video, attiva le Visualizzazioni rapide.
 >* L’implementazione di Experience Manager non *non* utilizza un framework di integrazione eCommerce per richiamare i dati dei prodotti in Experience Manager da qualsiasi soluzione eCommerce come IBM® WebSphere® Commerce, Elastic Path, SAP Hybris o Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
-Se l’implementazione di Experience Manager utilizza l’eCommerce, puoi saltare questa attività e passare all’attività successiva.
+>Se l’implementazione di Experience Manager utilizza l’eCommerce, puoi saltare questa attività e passare all’attività successiva.
 
 Per iniziare, identifica le variabili dinamiche utilizzate dall’implementazione Quickview esistente in modo da poter mappare le miniature dei prodotti su Quickview corrispondente durante il processo di creazione video interattiva.
 
@@ -243,7 +243,7 @@ Se hai già caricato le risorse video e delle miniature, procedi a [Aggiungi int
 
 >[!NOTE]
 >
-Il formato video MXF non è ancora supportato per l&#39;utilizzo con i video interattivi in Dynamic Medie.
+>Il formato video MXF non è ancora supportato per l&#39;utilizzo con i video interattivi in Dynamic Medie.
 
 Se hai caricato video o immagini errati o desideri eliminare i video o le immagini caricati di cui non hai più bisogno, consulta [Elimina risorse](/help/assets/manage-digital-assets.md#delete-assets).
 
@@ -262,15 +262,15 @@ I segmenti della timeline vengono aggiunti a un video mediante l’editor visivo
 
 Dopo aver aggiunto i segmenti della timeline, puoi aggiungere miniature all’interno di ciascun segmento. A ogni miniatura aggiunta viene applicata un&#39;azione. Ad esempio, puoi applicare una visualizzazione rapida alla miniatura, assegnare un collegamento ipertestuale alla miniatura o un frammento di esperienza.
 
-Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
-Gli strumenti per la condivisione di social media nei video interattivi non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza. È invece possibile utilizzare o creare predefiniti visualizzatore che non dispongono di strumenti per la condivisione tramite social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
+>Gli strumenti per la condivisione di social media nei video interattivi non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza. È invece possibile utilizzare o creare predefiniti visualizzatore che non dispongono di strumenti per la condivisione tramite social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
 
 >[!NOTE]
 >
-Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
+>Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
 
 Le opzioni Annulla e Ripristina, posizionate nell&#39;angolo superiore destro della pagina, sono supportate durante la sessione di creazione/modifica corrente.
 
@@ -432,7 +432,7 @@ Dopo aver salvato il video interattivo, questo viene aperto immediatamente in An
       <td>Per associare l'immagine miniatura selezionata a un frammento esperienza</td> 
       <td><p>In Tipo azione, seleziona <strong>Frammento esperienza</strong>, quindi eseguire le operazioni seguenti:<p> 
        <ul> 
-       <li>Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza. Seleziona il frammento di esperienza da utilizzare, quindi seleziona <strong>Per tornare al pannello Azioni nella pagina precedente, seleziona </strong>nell’angolo superiore destro della pagina.<br /> Consulta <a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">Frammenti esperienza</a>.</li> 
+       <li>Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza. Seleziona il frammento di esperienza da utilizzare, quindi seleziona <strong>Per tornare al pannello Azioni nella pagina precedente, seleziona </strong>nell’angolo superiore destro della pagina.<br /> Consulta <a href="/help/sites-cloud/authoring/fragments/content-fragments.md">Frammenti esperienza</a>.</li> 
       </ul> 
        <ul> 
        <li>Specifica la larghezza e l’altezza del frammento di esperienza così come viene visualizzato nel video.</li>
@@ -493,7 +493,7 @@ Dopo aver salvato il video interattivo, questo viene aperto immediatamente in An
 
    >[!NOTE]
    >
-   Quando salvi il video interattivo, con esso viene salvato automaticamente un file associato `.vtt`. Il `.vtt` il file viene salvato in `_VTT` cartella principale di **[!UICONTROL Risorse]**. Il file e la cartella sono necessari affinché il video interattivo possa essere riprodotto correttamente sul sito web. Non spostare, modificare o eliminare la cartella `_VTT` o il relativo contenuto.
+   >Quando salvi il video interattivo, con esso viene salvato automaticamente un file associato `.vtt`. Il `.vtt` il file viene salvato in `_VTT` cartella principale di **[!UICONTROL Risorse]**. Il file e la cartella sono necessari affinché il video interattivo possa essere riprodotto correttamente sul sito web. Non spostare, modificare o eliminare la cartella `_VTT` o il relativo contenuto.
 
 1. Pubblica il video interattivo. La pubblicazione crea il codice o l’URL da incorporare che alla fine copierai e incollerai nelle esperienze del sito web.
 
@@ -503,7 +503,7 @@ Dopo aver salvato il video interattivo, questo viene aperto immediatamente in An
 
    >[!NOTE]
    >
-   Per pubblicare un video acquistabile con le visualizzazioni rapide, assicurati anche di pubblicare separatamente dall’area commerce ciascuna delle risorse immagine correlate al video.
+   >Per pubblicare un video acquistabile con le visualizzazioni rapide, assicurati anche di pubblicare separatamente dall’area commerce ciascuna delle risorse immagine correlate al video.
 
    Dopo aver aggiunto i segmenti della timeline e pubblicato il video interattivo, puoi aggiungerlo alla pagina di destinazione del sito web esistente. Consulta [Integrare un video interattivo con il sito Web](#integrating-an-interactive-video-with-your-website).
 
@@ -529,9 +529,9 @@ Il codice di incorporamento copiato è impostato per un ambiente reattivo e si a
 
 >[!NOTE]
 >
-A questo punto, se hai aggiunto interattività solo con pagine web con collegamenti ipertestuali, hai chiuso.
+>A questo punto, se hai aggiunto interattività solo con pagine web con collegamenti ipertestuali, hai chiuso.
 >
-Tuttavia, se hai aggiunto un’interattività per attivare una Quickview, le miniature accanto al video interattivo sono solo a scopo di visualizzazione e non sono ancora integrate con le visualizzazioni rapide esistenti. In questo caso, devi integrare il video interattivo con le visualizzazioni rapide esistenti sul tuo sito web.
+>Tuttavia, se hai aggiunto un’interattività per attivare una Quickview, le miniature accanto al video interattivo sono solo a scopo di visualizzazione e non sono ancora integrate con le visualizzazioni rapide esistenti. In questo caso, devi integrare il video interattivo con le visualizzazioni rapide esistenti sul tuo sito web.
 
 **Esempio**
 
@@ -574,7 +574,7 @@ L’integrazione è semplice come rimuovere il codice di incorporamento video e 
 
 >[!NOTE]
 >
-Questa attività si applica solo se sei un cliente Experience Manager Assets autonomo.
+>Questa attività si applica solo se sei un cliente Experience Manager Assets autonomo.
 
 L’ultimo passaggio di questo processo consiste nell’integrare il video interattivo con un’implementazione Quickview esistente utilizzata sul sito web. Non esiste una soluzione all’integrazione che funzioni per tutti i casi. Ogni implementazione Quickview è univoca. Di conseguenza, è necessario un approccio specifico che coinvolga l’assistenza di una persona IT front-end.
 

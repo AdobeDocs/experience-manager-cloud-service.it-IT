@@ -2,7 +2,7 @@
 title: Personalizzazione dell’authoring delle pagine
 description: Scopri i meccanismi forniti da AEM as a Cloud Service per personalizzare la funzionalità di authoring delle pagine.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Per ulteriori informazioni sulle sovrapposizioni, consulta [Sovrapposizioni per 
 
 ## Aggiungi nuovo livello (modalità) {#add-new-layer-mode}
 
-Quando modifichi una pagina, sono disponibili vari [modalità](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) disponibile. Queste modalità sono implementate utilizzando [livelli](/help/implementing/developing/introduction/ui-structure.md#layer). Consentono di accedere a diversi tipi di funzionalità per lo stesso contenuto della pagina. Le modalità AEM standard includono Modifica, Layout, Sviluppatore, Timewarp, Stato Live Copy e Targeting.
+Quando modifichi una pagina, sono disponibili vari [modalità](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) disponibile. Queste modalità sono implementate utilizzando [livelli](/help/implementing/developing/introduction/ui-structure.md#layer). Consentono di accedere a diversi tipi di funzionalità per lo stesso contenuto della pagina. Le modalità AEM standard includono Modifica, Layout, Sviluppatore, Timewarp, Stato Live Copy e Targeting.
 
 ### Esempio di livello: stato Live Copy {#layer-example-live-copy-status}
 

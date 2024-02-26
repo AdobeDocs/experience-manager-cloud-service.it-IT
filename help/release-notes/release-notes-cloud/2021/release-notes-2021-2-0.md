@@ -1,8 +1,8 @@
 ---
-title: Note sulla versione 2021.2.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2021.2.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2021.2.0 as a Cloud Service."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 32%
@@ -14,7 +14,7 @@ ht-degree: 32%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service.
 
-## Data di pubblicazione {#release-date}
+## Data di rilascio {#release-date}
 
 La data di rilascio per [!DNL Adobe Experience Manager] La versione 2021.2.0 di as a Cloud Service è il 25 febbraio 2021.
 La seguente versione (2021.3.0) sarà del 25 marzo 2021.
@@ -46,7 +46,7 @@ La seguente versione (2021.3.0) sarà del 25 marzo 2021.
 <!--
 ### Progressive Web Apps (PWAs) {#pwa}
 
-* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
+* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/sites-console/enable-pwa.md)  can now be enabled at the project level via simple configuration.
 -->
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -129,7 +129,7 @@ La data di pubblicazione dello strumento Content Transfer v1.2.4 è il 10 febbra
 
 * Quando si mappavano più utenti, gli ID IMS di alcuni utenti non venivano mappati correttamente. Questo problema è stato risolto.
 
-### Data di pubblicazione {#release-date-ctt-feb}
+### Data di rilascio {#release-date-ctt-feb}
 
 La data di pubblicazione dello strumento Content Transfer v1.2.2 è il 1° febbraio 2021.
 

@@ -4,7 +4,7 @@ description: Scopri come i frammenti di contenuto in AEM as a Cloud Service ti c
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '1792'
 ht-degree: 39%
@@ -13,7 +13,7 @@ ht-degree: 39%
 
 # Panoramica sull’utilizzo dei frammenti di contenuto {#overview-working-with-content-fragments}
 
-Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Consentono di preparare contenuti pronti per l’uso in più posizioni e su più canali, ideali per la distribuzione headless e l’authoring delle pagine.
+Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-cloud/authoring/fragments/content-fragments.md). Consentono di preparare contenuti pronti per l’uso in più posizioni e su più canali, ideali per la distribuzione headless e l’authoring delle pagine.
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto 
 >
 >* l&#39;uso del **Risorse** console per [gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md)
 >* l&#39;uso del [*originale* Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-variations.md),
->* utilizzo [Frammenti di contenuto per l’authoring delle pagine](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* utilizzo [Frammenti di contenuto per l’authoring delle pagine](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 
 I frammenti di contenuto contengono contenuto strutturato:
@@ -74,7 +74,7 @@ Questi frammenti di contenuto possono quindi essere assemblati per fornire esper
 
 >[!NOTE]
 >
->I **frammenti di contenuto** e i **[frammenti di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sono funzioni diverse in AEM:
+>I **frammenti di contenuto** e i **[frammenti di esperienza](/help/sites-cloud/authoring/fragments/content-fragments.md)** sono funzioni diverse in AEM:
 >* I **frammenti di contenuto** sono contenuti editoriali, con definizione e struttura, ma senza elementi visivi aggiuntivi di design e/o layout. Possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date.
 >* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
 >
@@ -94,7 +94,7 @@ Dopo la creazione dei frammenti, puoi:
 * [Utilizzare l’editor di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md) : per modificare, pubblicare (anteprima o produzione) e fare riferimento ai frammenti
 * [Analizza](/help/sites-cloud/administering/content-fragments/analysis.md)  la struttura del frammento di contenuto, utilizzando l’editor
 * [Accedi ai frammenti con GraphQL per la distribuzione headless nelle applicazioni](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
-* [Oppure utilizza i tuoi frammenti per creare le pagine](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [Oppure utilizza i tuoi frammenti per creare le pagine](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Dopo la creazione dei frammenti, puoi:
 >* [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API GraphQL di AEM per l’utilizzo con Frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
->* [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 ## Principale e varianti {#main-and-variations}
 
@@ -172,7 +172,7 @@ I frammenti di contenuto sono:
 
 * Accessibile per la distribuzione dei contenuti tramite [API GRAPHQL AEM](/help/headless/graphql-api/content-fragments.md).
 
-* Disponibile in [Editor pagina utilizzando il componente Frammento di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (componente di riferimento):
+* Disponibile in [Editor pagina utilizzando il componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
 
    * Il [Componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it) è disponibile per gli autori di pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 
@@ -257,7 +257,7 @@ Per utilizzare i frammenti di contenuto nell’authoring delle pagine è inoltre
 * A **Componente Frammento di contenuto**
 
    * Essenziale per la distribuzione del frammento in formato HTML e/o JSON.
-   * Obbligatorio per [fare riferimento al frammento in una pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+   * Obbligatorio per [fare riferimento al frammento in una pagina](/help/sites-cloud/authoring/fragments/content-fragments.md).
    * Responsabile del layout e della distribuzione di un frammento, ad esempio i canali.
    * I frammenti devono disporre di uno o più componenti dedicati per definire il layout e fornire alcuni o tutti gli elementi/varianti e i contenuti associati.
    * Quando si trascina un frammento su una pagina durante l’authoring, il componente richiesto viene associato automaticamente.

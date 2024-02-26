@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2021.3.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2021.3.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2021.3.0 as a Cloud Service."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1271'
-ht-degree: 33%
+ht-degree: 34%
 
 ---
 
@@ -27,7 +27,7 @@ La seguente versione (2021.4.0) sarà del 29 aprile 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* [Versione di un sito per app web progressiva (PWA)](/help/sites-cloud/authoring/features/enable-pwa.md) può ora essere abilitato a livello di progetto tramite una semplice configurazione.
+* [Versione di un sito per app web progressiva (PWA)](/help/sites-cloud/authoring/sites-console/enable-pwa.md) può ora essere abilitato a livello di progetto tramite una semplice configurazione.
 * Estensioni del modello per frammenti di contenuto: ora è possibile definire tipi di dati di testo con più righe come elenchi a più campi.
 * Miglioramenti dell’interfaccia utente dell’Editor frammenti di contenuto: i frammenti secondari nidificati vengono ora visualizzati nella breadcrumb ed è stata migliorata la visualizzazione delle azioni Pubblica, Salva e Salva/Esci
 
@@ -83,7 +83,7 @@ Puoi rivolgerti al tuo rappresentante di Adobe per una demo o per registrarti al
 
 Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.3.0.
 
-## Data di pubblicazione {#release-date-cm-march}
+## Data di rilascio {#release-date-cm-march}
 
 La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.3.0 è l’11 marzo 2021.
 La prossima versione è pianificata per il venerdì 8 aprile 2021.
@@ -140,7 +140,7 @@ La data di pubblicazione dello strumento Content Transfer v1.3.4 è il 19 marzo 
 
 * CTT ignorava il contenuto delle cartelle con lo stesso nome ma con un trattino nel nome. Questo problema è stato risolto.
 
-### Data di pubblicazione {#release-date-ctt-march}
+### Data di rilascio {#release-date-ctt-march}
 
 La data di pubblicazione dello strumento Content Transfer v1.3.0 è il 4 marzo 2021.
 

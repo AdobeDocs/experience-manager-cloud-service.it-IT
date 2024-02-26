@@ -2,10 +2,10 @@
 title: Gestire siti demo
 description: Scopri gli strumenti disponibili per aiutarti a gestire i siti demo e come rimuoverli.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 89%
+source-wordcount: '927'
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Questo documento illustra come gestire i siti demo creati. Dopo la lettura dovre
 
 Ora che hai dei siti dimostrativi, probabilmente vorrai sapere come gestirli. La pipeline non solo ha implementato i modelli di sito per fornire il contenuto dei siti demo, ma ha anche implementato un set di utilità per gestirli.
 
-1. Dalla barra di navigazione globale AEM, seleziona **Strumenti** > **Demo di riferimento** > **Utilità demo di riferimento**.
+1. Dalla barra di navigazione globale di AEM, seleziona **Strumenti** > **Demo di riferimento** > **Utilità demo di riferimento**.
 
    ![Utilità demo self-service](assets/demo-utilities.png)
 
@@ -49,7 +49,7 @@ Ora che hai dei siti dimostrativi, probabilmente vorrai sapere come gestirli. La
 
    ![Dashboard](assets/dashboard.png)
 
-Utilità demo self-service fornisce diversi strumenti.
+L’utilità demo self-service fornisce diversi strumenti.
 
 * **Elimina siti**: seleziona il sito da eliminare in questa istanza di Adobe Experience Manager. Tieni presente che si tratta di un’azione distruttiva e non può essere annullata una volta avviata.
 * **Elimina modelli di sito**: seleziona il modello di sito da eliminare in questa istanza di Adobe Experience Manager. Prima di eliminare un modello di sito, assicurati che vengano eliminati anche tutti i siti che fanno riferimento al modello. Tieni presente che si tratta di un’azione distruttiva e non può essere annullata una volta avviata.
@@ -62,11 +62,11 @@ Utilità demo self-service fornisce diversi strumenti.
 
 Dopo aver testato un set di funzionalità AEM, potrebbe non essere più necessario il sito demo o persino il modello su cui si basa. È facile eliminare sia i siti demo che i modelli di sito.
 
-1. Accedere a **Utilità demo di riferimento** e seleziona **Elimina siti**.
+1. Accedi a **Utilità demo di riferimento** e seleziona **Elimina siti**.
 
    ![Elimina siti](assets/delete-sites.png)
 
-1. I siti disponibili sono presentati in un elenco. Controllare il sito o i siti che si desidera eliminare e quindi selezionare **Elimina**.
+1. I siti disponibili sono presentati in un elenco. Verifica il sito o i siti che desideri eliminare e quindi seleziona **Elimina**.
 
    >[!CAUTION]
    >
@@ -93,7 +93,7 @@ Nello stesso modo è possibile eliminare i modelli sotto l’intestazione **Elim
 Congratulazioni! Hai completato il percorso del componente aggiuntivo Demo di riferimento AEM. Ora dovresti:
 
 * Scopri le nozioni di base di Cloud Manager e come le pipeline distribuiscono contenuti e configurazioni da AEM.
-* Scopri come creare un programma con Cloud Manager.
+* Scopri come utilizzare Cloud Manager per creare un programma.
 * Scopri come attivare il componente aggiuntivo Demo di riferimento per il nuovo programma e come eseguire una pipeline per distribuirne il contenuto.
 * Scopri come accedere all’ambiente di authoring AEM per creare un sito basato su un modello.
 * Scopri come accedere alle utilità demo self-service.
@@ -105,7 +105,7 @@ Ora puoi esplorare le funzionalità di AEM utilizzando i tuoi siti demo. Tuttavi
 
 * [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=it): per ulteriori informazioni sulle funzioni di Cloud Manager, consulta direttamente i documenti tecnici dettagliati.
 * [Crea sito](/help/sites-cloud/administering/site-creation/create-site.md) - scopri come utilizzare AEM per creare un sito utilizzando i modelli per definirne lo stile e la struttura.
-* [Convenzioni AEM di denominazione delle pagine](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Per informazioni sulle convenzioni per l’organizzazione delle pagine AEM, consulta questa pagina.
-* [Operazioni di base in AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): se non hai ancora familiarità con AEM, esplora questo documento per comprendere i concetti di base, come la navigazione e l’organizzazione della console.
+* [Convenzioni AEM di denominazione delle pagine](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). - Per informazioni sulle convenzioni per l’organizzazione delle pagine AEM, consulta questa pagina.
+* [Operazioni di base in AEM](/help/sites-cloud/authoring/basic-handling.md): se non hai ancora familiarità con AEM, esplora questo documento per comprendere i concetti di base, come la navigazione e l’organizzazione della console.
 * [Documentazione tecnica AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it): se hai già una conoscenza approfondita di AEM, potresti voler consultare i documenti tecnici approfonditi.
 * [Modelli del sito](/help/sites-cloud/administering/site-creation/site-templates.md): per ulteriori informazioni sulla struttura dei modelli del sito e sulla relativa modalità di creazione, consulta questo documento.

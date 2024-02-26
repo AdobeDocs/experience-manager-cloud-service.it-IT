@@ -2,7 +2,7 @@
 title: Esportazione di frammenti di esperienza in Adobe Target
 description: Scopri come esportare i frammenti di esperienza in Adobe Target per testare e personalizzare le esperienze.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 95%
@@ -16,7 +16,7 @@ ht-degree: 95%
 >* I Frammenti di esperienza AEM vengono esportati nell’area di lavoro predefinita di Adobe Target.
 >* AEM deve essere integrato con Adobe Target secondo le istruzioni contenute in [Integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-Puoi esportare i [Frammenti di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) creati in Adobe Experience Manager as a Cloud Service (AEM) in Adobe Target (Target). Puoi quindi utilizzarli come offerte nelle attività di Target, per testare e personalizzare le esperienze su larga scala.
+Puoi esportare i [Frammenti di esperienza](/help/sites-cloud/authoring/fragments/content-fragments.md) creati in Adobe Experience Manager as a Cloud Service (AEM) in Adobe Target (Target). Puoi quindi utilizzarli come offerte nelle attività di Target, per testare e personalizzare le esperienze su larga scala.
 
 Sono disponibili tre opzioni per esportare un Frammento di esperienza in Adobe Target:
 
@@ -288,7 +288,7 @@ After you create a Target framework in AEM, associate your web pages with the fr
 When you associate a page with the framework, the child pages inherit the association.
 
 1. In the **Sites** console, navigate to the site that you want to configure.
-1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
+1. Using either [quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
 1. Select **Edit**.
 1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
@@ -302,7 +302,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
 1. Select **Done**.
-1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
+1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md).)
 
    >[!NOTE]
    >
@@ -344,7 +344,7 @@ Per esportare un frammento di esperienza da AEM a Target (dopo aver specificato 
 
    >[!NOTE]
    >
-   >[Vari dettagli](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#details-of-your-experience-fragment) dell&#39;esportazione sono visibili in **Vista a elenco** della console e **Proprietà**.
+   >[Vari dettagli](/help/sites-cloud/authoring/fragments/content-fragments.md#details-of-your-experience-fragment) dell&#39;esportazione sono visibili in **Vista a elenco** della console e **Proprietà**.
 
    >[!NOTE]
    >
@@ -352,7 +352,7 @@ Per esportare un frammento di esperienza da AEM a Target (dopo aver specificato 
 
 >[!NOTE]
 >
->In alternativa, è possibile eseguire l’esportazione dall’editor di pagine utilizzando comandi comparabili nel menu [Informazioni pagina](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information).
+>In alternativa, è possibile eseguire l’esportazione dall’editor di pagine utilizzando comandi comparabili nel menu [Informazioni pagina](/help/sites-cloud/authoring/page-editor/introduction.md#page-information).
 
 ## Utilizzo dei frammenti di esperienza in Adobe Target {#using-your-experience-fragments-in-adobe-target}
 

@@ -4,8 +4,8 @@ description: Scopri le best practice compilate dai team tecnici e di consulenza 
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ La creazione o l’espansione di una presenza web globale può essere un process
 
 * Durante la progettazione della struttura del sito, esamina innanzitutto il contenuto e determina dove e in quale lingua viene creato il contenuto. Questa posizione deve essere il livello superiore del sito.
 * La best practice consiste in una **struttura basata sul linguaggio** con un massimo di 3 livelli tra l’authoring di livello superiore e i siti del Paese.
-* Utilizza una convenzione di denominazione di un sito in una lingua o in un Paese che segue gli **[standard W3C](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**.
+* Utilizza una convenzione di denominazione di un sito in una lingua o in un Paese che segue gli **[standard W3C](/help/sites-cloud/authoring/page-editor/accessible-content.md)**.
 * Determina in che modo i contenuti vengono distribuiti da aree geografiche e Paesi. Considera quali Paesi condividono le lingue. Si consiglia di creare master di lingua, un livello di pagine non attivate, in cui il contenuto tradotto può essere rivisto e modificato e quindi inviato o trascinato a un sito del Paese che condivide tale lingua.
 * Sono disponibili due approcci per la creazione di master di lingua: tramite copie per lingua e tramite copie MSM/live.
    * L’approccio tramite la copia per lingua è quello utilizzato nel framework di integrazione della traduzione pronto all’uso di AEM, e quindi è il modo più semplice per iniziare. Il framework fornisce un’interfaccia utente che semplifica inizialmente la propagazione e la traduzione delle modifiche apportate al contenuto dalla lingua principale (ad esempio inglese) al contenuto principale di un’altra lingua. Tuttavia, man mano che il progetto cresce, l’automazione del flusso di lavoro diventa sempre più necessaria per gestire la traduzione di un maggior numero di pagine e/o lingue.

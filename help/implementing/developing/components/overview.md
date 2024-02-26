@@ -2,16 +2,16 @@
 title: Panoramica dei componenti
 description: I componenti sono unità modulari che realizzano funzionalità specifiche per presentare i contenuti sul sito web
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 67%
+source-wordcount: '376'
+ht-degree: 66%
 
 ---
 
 # Panoramica dei componenti {#components-overview}
 
-Questa pagina fornisce una panoramica dei componenti di Adobe Experience Manager (AEM) come quelli [utilizzati per l’authoring delle pagine](/help/sites-cloud/authoring/fundamentals/components.md).
+Questa pagina fornisce una panoramica dei componenti di Adobe Experience Manager (AEM) come quelli [utilizzati per l’authoring delle pagine](/help/sites-cloud/authoring/page-editor/components.md).
 
 ## Cosa sono i Componenti? {#what-are-components}
 
@@ -48,7 +48,7 @@ I Componenti core sono forniti con AEM as a Cloud Service e il [Tutorial WKND](/
 
 ### Visualizzazione dei componenti disponibili {#viewing-available-components}
 
-Per una panoramica di tutti i componenti disponibili nell’istanza AEM, utilizza [Console Componenti](/help/sites-cloud/authoring/features/components-console.md).
+Per una panoramica di tutti i componenti disponibili nell’istanza AEM, utilizza [Console Componenti](/help/sites-cloud/authoring/components-console.md).
 
 In alternativa, è possibile utilizzare CRXDE Lite per ottenere un elenco di tutti i componenti disponibili nell’archivio.
 

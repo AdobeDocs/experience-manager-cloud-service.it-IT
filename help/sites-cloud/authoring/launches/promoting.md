@@ -2,9 +2,9 @@
 title: Promozione dei lanci
 description: Con la promozione delle pagine di lancio si sposta il contenuto nell’origine (produzione) prima della pubblicazione.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '812'
 ht-degree: 98%
 
 ---
@@ -44,12 +44,12 @@ Puoi promuovere i lanci dalla console **Sites** o dalla console **Lanci**:
 
 1. Apri:
    * La console **Sites** durante la navigazione nelle pagine sorgente:
-      1. Apri la [barra dei riferimenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) e seleziona la pagina sorgente desiderata utilizzando la [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md) (oppure seleziona e apri la barra dei riferimenti, l’ordine non è importante). Vengono visualizzati tutti i riferimenti.
+      1. Apri la [barra dei riferimenti](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) e seleziona la pagina sorgente desiderata utilizzando la [modalità di selezione](/help/sites-cloud/authoring/basic-handling.md) (oppure seleziona e apri la barra dei riferimenti, l’ordine non è importante). Vengono visualizzati tutti i riferimenti.
       1. Seleziona **Lanci** (ad esempio Lanci (1)) per visualizzare un elenco dei lanci specifici.
       1. Seleziona il lancio specifico per visualizzare le azioni disponibili.
       1. Seleziona **Promuovi lancio** per aprire la procedura guidata.
    * La console **Sites** durante la navigazione nelle pagine di lancio:
-      1. Seleziona la pagina di lancio desiderata utilizzando [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+      1. Seleziona la pagina di lancio desiderata utilizzando [modalità di selezione](/help/sites-cloud/authoring/basic-handling.md).
       1. L’azione **Promuovi** è disponibile nella barra degli strumenti.
    * La console **Launches**:
       1. Seleziona il lancio (seleziona la miniatura).

@@ -2,7 +2,7 @@
 title: Modifica dei lanci
 description: Dopo aver creato un lancio per la pagina (o per un set di pagine), puoi modificarne il contenuto nella copia di lancio delle pagine.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 87%
@@ -48,15 +48,15 @@ Consulta [Modifica del contenuto della Live Copy](/help/sites-cloud/administerin
 
 Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **Riferimenti** e confrontare la pagina del lancio con la relativa pagina di origine:
 
-1. Nella console **Sites**, [passa alle pagine di origine del lancio e selezionane una](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Apri il pannello **[Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e seleziona **Lanci**.
+1. Nella console **Sites**, [passa alle pagine di origine del lancio e selezionane una](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Apri il pannello **[Riferimenti](/help/sites-cloud/authoring/basic-handling.md#references)** e seleziona **Lanci**.
 1. Seleziona il lancio specifico, quindi **Confronta con sorgente**:
 
    ![Confronto tra lancio e origine](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. Le due pagine (lancio e sorgente) verranno aperte una accanto all’altra.
 
-   Per informazioni complete sull’utilizzo di questa funzionalità, consulta [Differenze tra pagine](/help/sites-cloud/authoring/features/page-diff.md).
+   Per informazioni complete sull’utilizzo di questa funzionalità, consulta [Differenze tra pagine](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Modifica delle pagine sorgente utilizzate {#changing-the-source-pages-used}
 

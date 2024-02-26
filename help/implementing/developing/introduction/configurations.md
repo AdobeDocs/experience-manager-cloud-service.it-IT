@@ -2,10 +2,10 @@
 title: Configurazioni e browser di configurazione
 description: Scopri le configurazioni di Adobe Experience Manager (AEM) e come gestiscono le impostazioni dell’area di lavoro nell’AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 6%
+source-wordcount: '1482'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ L’amministratore AEM e gli autori possono considerare le configurazioni come a
 
 * [Segmenti Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Modelli modificabili](/help/sites-cloud/authoring/features/templates.md)
+* [Modelli modificabili](/help/sites-cloud/authoring/sites-console/templates.md)
 * varie configurazioni cloud
 
 ### Esempio {#administrator-example}
@@ -72,16 +72,16 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
 1. Seleziona **Crea**.
 1. Specifica il **titolo** e il **nome** da assegnare alla configurazione.
 
-   ![Creare la configurazione](assets/configuration-create.png)
+   ![Crea configurazione](assets/configuration-create.png)
 
    * Il **titolo** deve essere descrittivo.
    * Il **nome** diventa il nome del nodo nell’archivio.
-      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](naming-conventions.md)
+      * Viene generato automaticamente in base al titolo e regolato in base [Convenzioni di denominazione AEM.](naming-conventions.md)
       * Se necessario è possibile modificarlo.
 1. Controlla il tipo di configurazioni che desideri consentire.
    * [Segmenti Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-   * [Modelli modificabili](/help/sites-cloud/authoring/features/templates.md)
+   * [Modelli modificabili](/help/sites-cloud/authoring/sites-console/templates.md)
    * varie configurazioni cloud
 1. Seleziona **Crea**.
 
@@ -210,7 +210,7 @@ Fornisci semplicemente:
 
 * **Percorso contenuto**
 * **Elemento**
-* **User**
+* **Utente**
 
 Clic **Risolvi** in questo modo puoi vedere quali configurazioni vengono risolte e ottenere esempi di codice utili per risolverle.
 

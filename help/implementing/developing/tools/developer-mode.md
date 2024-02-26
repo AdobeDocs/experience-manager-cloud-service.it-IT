@@ -4,16 +4,16 @@ seo-title: Developer Mode
 description: Modalità sviluppatore apre un pannello laterale con diverse schede che forniscono a uno sviluppatore informazioni sulla pagina corrente
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Modalità Sviluppatore {#developer-mode}
 
-Durante la modifica delle pagine in AEM, diversi [modalità](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) , inclusa la modalità Sviluppatore. La modalità Sviluppatore apre un pannello laterale con diverse schede che forniscono a uno sviluppatore informazioni tecniche sulla pagina corrente.
+Durante la modifica delle pagine in AEM, diversi [modalità](/help/sites-cloud/authoring/sites-console/introduction.md#page-modes) , inclusa la modalità Sviluppatore. La modalità Sviluppatore apre un pannello laterale con diverse schede che forniscono a uno sviluppatore informazioni tecniche sulla pagina corrente.
 
 Sono disponibili due schede:
 
@@ -41,7 +41,7 @@ La modalità Sviluppatore viene implementata come pannello laterale nell’edito
 
 Il pannello è diviso in due schede:
 
-* **[Componenti](#components)** : mostra una struttura ad albero dei componenti, simile alla [struttura contenuto](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) per autori
+* **[Componenti](#components)** : mostra una struttura ad albero dei componenti, simile alla [struttura contenuto](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree) per autori
 * **[Errori](#errors)** - Quando si verificano dei problemi, vengono visualizzati i dettagli per ciascun componente.
 
 ### Scheda Componenti {#components}
@@ -55,7 +55,7 @@ Viene mostrata una struttura ad albero componente che:
 * Consente di espandere la struttura e selezionare componenti specifici all&#39;interno della struttura. La selezione consente di accedere ai dettagli dei componenti, ad esempio:
    * Percorso archivio
    * Collegamenti agli script (a cui si accede in CRXDE Liti)
-   * Dettagli del componente come mostrato nella [Console Componenti](/help/sites-cloud/authoring/features/components-console.md)
+   * Dettagli del componente come mostrato nella [Console Componenti](/help/sites-cloud/authoring/components-console.md)
 * I componenti selezionati nella struttura sono indicati da un bordo blu nell’editor.
 
 Questa scheda dei componenti consente di:
@@ -76,7 +76,7 @@ Ciascuna voce di componente può avere le seguenti opzioni:
 
 * **Modifica script:** Un collegamento che apre lo script del componente in CRXDE Liti.
 
-* **Visualizza dettagli componenti:** Apre i dettagli del componente all&#39;interno di [Console Componenti](/help/sites-cloud/authoring/features/components-console.md).
+* **Visualizza dettagli componenti:** Apre i dettagli del componente all&#39;interno di [Console Componenti](/help/sites-cloud/authoring/components-console.md).
 
 Inoltre, l’espansione di una voce di componente toccando o facendo clic sulla freccia può mostrare:
 

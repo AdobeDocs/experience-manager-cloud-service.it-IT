@@ -4,7 +4,7 @@ description: Scopri le nozioni di base della console Panoramica sulla Live Copy 
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 97%
@@ -32,8 +32,8 @@ Puoi aprire la Panoramica Live Copy da:
 
 La **Panoramica Live Copy** può essere aperto dal pannello laterale **Riferimenti** nella console **Sites**:
 
-1. Nella console **Sites**, [passa alla pagina blueprint e selezionala](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Apri la barra **[Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e seleziona **Live Copy**.
+1. Nella console **Sites**, [passa alla pagina blueprint e selezionala](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Apri la barra **[Riferimenti](/help/sites-cloud/authoring/basic-handling.md#references)** e seleziona **Live Copy**.
 
    ![Live Copy dalla barra dei riferimenti](../assets/live-copy-references.png)
 

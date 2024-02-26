@@ -4,7 +4,7 @@ description: Scopri come gestire i frammenti di contenuto AEM dalla console e da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '2620'
 ht-degree: 46%
@@ -32,7 +32,7 @@ Dopo aver definito [Modelli per frammenti di contenuto](#creating-a-content-mode
 >I frammenti di contenuto possono essere utilizzati:
 >
 >* per [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
->* quando si esegue l’authoring delle pagine; consulta [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* quando si esegue l’authoring delle pagine; consulta [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -340,7 +340,7 @@ Dopo la pubblicazione, lo stato del frammento viene aggiornato e visualizzato ne
 
 >[!NOTE]
 >
->Inoltre, quando [pubblichi una pagina che utilizza il frammento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), il frammento verrà elencato nei riferimenti di pagina.
+>Inoltre, quando [pubblichi una pagina che utilizza il frammento](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing), il frammento verrà elencato nei riferimenti di pagina.
 
 ## Annullamento della pubblicazione di un frammento {#unpublishing-a-fragment}
 

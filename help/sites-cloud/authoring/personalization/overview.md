@@ -2,7 +2,7 @@
 title: Personalizzazione e targeting dei contenuti
 description: Scopri come creare contenuti personalizzati e mirati con AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 89%
@@ -88,7 +88,7 @@ Puoi [creare contenuti mirati (di destinazione)](/help/sites-cloud/authoring/per
 
 Un set raggruppato di componenti che compongono un’esperienza.
 
-[Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) sono costituiti da contenuti e informazioni (stile e così via) per creare un’esperienza; possono essere utilizzati direttamente durante l’authoring delle pagine. Possono essere considerati come un sottoinsieme di una pagina AEM. Consentono alle persone autrici di contenuti di riutilizzare i contenuti tra canali diversi, incluse le pagine Sites e i sistemi di terze parti.
+[Frammenti esperienza](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) sono costituiti da contenuti e informazioni (stile e così via) per creare un’esperienza; possono essere utilizzati direttamente durante l’authoring delle pagine. Possono essere considerati come un sottoinsieme di una pagina AEM. Consentono alle persone autrici di contenuti di riutilizzare i contenuti tra canali diversi, incluse le pagine Sites e i sistemi di terze parti.
 
 Una personalizzazione, ad esempio, può essere ottenuta combinando insieme un titolo, un’immagine, una descrizione e pulsante di invito all’azione in modo da creare un’esperienza teaser. I frammenti di esperienza hanno un ruolo chiave nell’utilizzo delle funzioni di personalizzazione di Adobe Target.
 

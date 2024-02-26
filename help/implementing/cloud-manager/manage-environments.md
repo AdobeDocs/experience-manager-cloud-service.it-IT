@@ -2,10 +2,10 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '2614'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ L’utente con le autorizzazioni necessarie può creare i seguenti tipi di ambie
 
 * **Produzione e staging** - Gli ambienti di produzione e di staging sono disponibili in coppia e vengono utilizzati rispettivamente a scopo di produzione e test. Esecuzione di test di prestazioni e sicurezza nell&#39;ambiente stage. Ha le stesse dimensioni della produzione.
 
-* **Sviluppo** - È possibile creare un ambiente di sviluppo per scopi di sviluppo e test e associarlo solo a pipeline non di produzione.  Gli ambienti di sviluppo non hanno le stesse dimensioni di stage e produzione e non devono essere utilizzati per eseguire test di prestazioni e sicurezza.
+* **Sviluppo** - È possibile creare un ambiente di sviluppo per scopi di sviluppo e test e associarlo solo a pipeline non di produzione.  Gli ambienti di sviluppo non hanno le stesse dimensioni di quelli di staging e produzione e non devono essere utilizzati per eseguire test di prestazioni e sicurezza.
 
 * **Sviluppo rapido**: un ambiente di sviluppo rapido (RDE, Rapid Development Environment) consente allo sviluppatore di implementare e rivedere rapidamente le modifiche, riducendo al minimo il tempo necessario per testare le funzioni che hanno dimostrato di funzionare in un ambiente di sviluppo locale. Consulta [la documentazione sull’ambiente di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md) per ottenere informazioni dettagliate sull’utilizzo di un RDE.
 
@@ -169,7 +169,7 @@ Per garantire l’accesso al servizio di anteprima, l’utente con le autorizzaz
 
 Dopo aver sbloccato l’accesso al servizio di anteprima, l’icona a forma di lucchetto che precede il relativo nome non verrà più visualizzata.
 
-Dopo l’attivazione puoi pubblicare il contenuto nel servizio di anteprima tramite l’interfaccia utente Gestisci pubblicazione in AEM. Per ulteriori dettagli vedi [Anteprima del contenuto](/help/sites-cloud/authoring/fundamentals/previewing-content.md).
+Dopo l’attivazione puoi pubblicare il contenuto nel servizio di anteprima tramite l’interfaccia utente Gestisci pubblicazione in AEM. Per ulteriori dettagli vedi [Anteprima del contenuto](/help/sites-cloud/authoring/sites-console/previewing-content.md).
 
 >[!NOTE]
 >

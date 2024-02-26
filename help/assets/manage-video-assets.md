@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4976'
 ht-degree: 6%
@@ -197,7 +197,7 @@ La pubblicazione di video in YouTube richiede la presenza di uno o più canali. 
 
 ### Aggiungi tag per la pubblicazione {#adding-tags-for-publishing}
 
-Per pubblicare i video in YouTube, Experience Manager associa i tag a uno o più canali di YouTube. Per aggiungere tag per la pubblicazione, consulta [Amministrare i tag](/help/sites-cloud/authoring/features/tags.md).
+Per pubblicare i video in YouTube, Experience Manager associa i tag a uno o più canali di YouTube. Per aggiungere tag per la pubblicazione, consulta [Amministrare i tag](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Oppure, se desideri utilizzare i tag predefiniti in Experience Manager, puoi saltare questa attività e passare a [Configurare YouTube in Experience Manager](#setting-up-youtube-in-aem).
 
@@ -390,11 +390,11 @@ Ora associ alle risorse video i tag aggiunti in precedenza. Questo consente agli
 
 >[!NOTE]
 >
-Per pubblicare contenuti da YouTube, Experience Manager utilizza **[!UICONTROL Pubblica su YouTube]** che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
+>Per pubblicare contenuti da YouTube, Experience Manager utilizza **[!UICONTROL Pubblica su YouTube]** che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
 >
-Consulta [Monitorare la codifica video e l’avanzamento della pubblicazione in YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+>Consulta [Monitorare la codifica video e l’avanzamento della pubblicazione in YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
-Per informazioni più dettagliate sullo stato di avanzamento, puoi monitorare il registro di YouTube in replica. Tenere presente, tuttavia, che tale monitoraggio richiede l&#39;accesso dell&#39;amministratore.
+>Per informazioni più dettagliate sullo stato di avanzamento, puoi monitorare il registro di YouTube in replica. Tenere presente, tuttavia, che tale monitoraggio richiede l&#39;accesso dell&#39;amministratore.
 
 **Per pubblicare video sul canale YouTube:**
 
@@ -430,7 +430,7 @@ Dopo la pubblicazione del video, puoi ottenere una stringa URL di YouTube genera
 
 >[!NOTE]
 >
-L’URL di YouTube non è disponibile per la copia finché non hai pubblicato la risorsa video in YouTube.
+>L’URL di YouTube non è disponibile per la copia finché non hai pubblicato la risorsa video in YouTube.
 
 Per collegare gli URL di YouTube alla tua applicazione web:
 
@@ -448,13 +448,13 @@ Quando annulli la pubblicazione di una risorsa video in Experience Manager, il v
 
 >[!CAUTION]
 >
-Se rimuovi un video direttamente da YouTube, Experience Manager non ne è a conoscenza e continua a comportarsi come se il video fosse ancora pubblicato in YouTube. Per Experience Manager, annulla sempre la pubblicazione di una risorsa video da YouTube.
+>Se rimuovi un video direttamente da YouTube, Experience Manager non ne è a conoscenza e continua a comportarsi come se il video fosse ancora pubblicato in YouTube. Per Experience Manager, annulla sempre la pubblicazione di una risorsa video da YouTube.
 
 >[!NOTE]
 >
-Per rimuovere il contenuto da YouTube, Experience Manager utilizza **[!UICONTROL Annulla pubblicazione da YouTube]** che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
+>Per rimuovere il contenuto da YouTube, Experience Manager utilizza **[!UICONTROL Annulla pubblicazione da YouTube]** che consente di monitorare l’avanzamento e visualizzare eventuali informazioni sull’errore.
 >
-Consulta [Monitorare la codifica video e l’avanzamento della pubblicazione in YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+>Consulta [Monitorare la codifica video e l’avanzamento della pubblicazione in YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Per annullare la pubblicazione dei video e rimuoverli da YouTube:**
 
@@ -495,19 +495,19 @@ Puoi monitorare l’avanzamento, inclusa la codifica non riuscita/pubblicazione 
 
    >[!NOTE]
    >
-   Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di workflow **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
+   >Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di workflow **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
    >
-   * Configurazione coda processi Apache Sling
-   * Adobe Granite Workflow External Process Job Handler
-   * Coda di timeout del flusso di lavoro Granite
+   >* Configurazione coda processi Apache Sling
+   >* Adobe Granite Workflow External Process Job Handler
+   >* Coda di timeout del flusso di lavoro Granite
    >
-   È possibile regolare **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** proprietà in queste configurazioni.
+   >È possibile regolare **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** proprietà in queste configurazioni.
 
 1. Per i flussi di lavoro in corso, vedi l’opzione Istanze flusso di lavoro accedendo a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso]** di lavoro > **[!UICONTROL Istanze]**.
 
    >[!NOTE]
    >
-   Sono necessari diritti di amministratore per accedere a **[!UICONTROL Strumenti]** menu.
+   >Sono necessari diritti di amministratore per accedere a **[!UICONTROL Strumenti]** menu.
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
 
@@ -521,25 +521,25 @@ Puoi monitorare l’avanzamento, inclusa la codifica non riuscita/pubblicazione 
 
    >[!NOTE]
    >
-   Sono necessari diritti di amministratore per accedere a **[!UICONTROL Strumenti]** menu.
+   >Sono necessari diritti di amministratore per accedere a **[!UICONTROL Strumenti]** menu.
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
    >
-   Potrebbero essere necessari tempi lunghi per la registrazione del messaggio di errore, a causa della presenza di più configurazioni di workflow in **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
+   >Potrebbero essere necessari tempi lunghi per la registrazione del messaggio di errore, a causa della presenza di più configurazioni di workflow in **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
    >
-   * Configurazione coda processi Apache Sling
-   * Adobe Granite Workflow External Process Job Handler
-   * Coda di timeout del flusso di lavoro Granite
+   >* Configurazione coda processi Apache Sling
+   >* Adobe Granite Workflow External Process Job Handler
+   >* Coda di timeout del flusso di lavoro Granite
    >
-   È possibile regolare **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** proprietà in queste configurazioni.
+   >È possibile regolare **[!UICONTROL nuovi tentativi]**, **[!UICONTROL ritarda nuovo tentativo]**, e **[!UICONTROL timeout]** proprietà in queste configurazioni.
 
 1. Per i flussi di lavoro completati, consulta Archivio flussi di lavoro, accessibile da **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Archivio]**. **[!UICONTROL Archivio flussi di lavoro]** elenca tutte le attività del flusso di lavoro che sono state completate.
 
    >[!NOTE]
    >
-   Sono necessari diritti di amministratore per accedere a **[!UICONTROL Strumenti]** menu.
+   >Sono necessari diritti di amministratore per accedere a **[!UICONTROL Strumenti]** menu.
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
 
@@ -609,7 +609,7 @@ Puoi aggiungere annotazioni alle risorse video. Durante l’annotazione dei vide
 
 >[!NOTE]
 >
-Il formato video MXF non è ancora supportato con le annotazioni delle risorse video.
+>Il formato video MXF non è ancora supportato con le annotazioni delle risorse video.
 
 1. Dalla sezione [!DNL Assets] console, seleziona **[!UICONTROL Modifica]** nella scheda delle risorse per visualizzare la pagina dettagli risorsa.
 1. Per riprodurre il video, fai clic su **[!UICONTROL Anteprima]**.
@@ -649,5 +649,5 @@ Il formato video MXF non è ancora supportato con le annotazioni delle risorse v
 
 >[!MORELIKETHIS]
 >
-* [Documentazione video di Dynamic Medie](/help/assets/dynamic-media/video.md).
-* [Ulteriori informazioni su utilizzo, tipi e configurazione dei profili di elaborazione](/help/assets/asset-microservices-configure-and-use.md).
+>* [Documentazione video di Dynamic Medie](/help/assets/dynamic-media/video.md).
+>* [Ulteriori informazioni su utilizzo, tipi e configurazione dei profili di elaborazione](/help/assets/asset-microservices-configure-and-use.md).

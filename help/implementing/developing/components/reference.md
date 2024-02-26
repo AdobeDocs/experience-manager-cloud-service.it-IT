@@ -2,10 +2,10 @@
 title: Guida di riferimento dei componenti
 description: Guida di riferimento per sviluppatori per i dettagli dei componenti e della loro struttura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '3642'
-ht-degree: 2%
+source-wordcount: '3481'
+ht-degree: 1%
 
 ---
 
@@ -103,7 +103,7 @@ La definizione di un componente può essere suddivisa come segue:
 * **Nodo principale**:
    * `<mycomponent> (cq:Component)` - Nodo gerarchico del componente.
 * **Proprietà vitali**:
-   * `jcr:title` - Titolo del componente; ad esempio, utilizzato come etichetta quando il componente è elencato in [Browser Componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) e [Console Componenti](/help/sites-cloud/authoring/features/components-console.md)
+   * `jcr:title` - Titolo del componente; ad esempio, utilizzato come etichetta quando il componente è elencato in [Browser Componenti](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) e [Console Componenti](/help/sites-cloud/authoring/components-console.md)
    * `jcr:description` - Descrizione del componente; utilizzata come suggerimento del mouse nella console Browser componenti e Componenti
    * Consulta la sezione [Icona componente](#component-icon) per i dettagli
 * **Nodi figlio vitali**:
@@ -141,7 +141,7 @@ Se nessuna delle proprietà precedenti (`cq:icon`, `abbreviation`, `cq:icon.png`
 
 Per annullare l’ereditarietà delle icone dai super componenti, imposta un valore vuoto `abbreviation` sul componente verrà ripristinato il comportamento predefinito.
 
-Il [Console Componenti](/help/sites-cloud/authoring/features/components-console.md#component-details) mostra come viene definita l’icona di un particolare componente.
+Il [Console Componenti](/help/sites-cloud/authoring/components-console.md#component-details) mostra come viene definita l’icona di un particolare componente.
 
 #### Esempio di icona SVG {#svg-icon-example}
 
@@ -166,7 +166,7 @@ Un componente è un nodo di tipo `cq:Component` e ha le seguenti proprietà e no
 | Nome | Tipo | Descrizione |
 |---|---|---|
 | `.` | `cq:Component` | Rappresenta il componente corrente. Un componente è di tipo nodo `cq:Component`. |
-| `componentGroup` | `String` | Rappresenta il gruppo in cui il componente può essere selezionato nella [Browser Componenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Un valore che inizia con `.` viene utilizzato per i componenti che non sono disponibili per la selezione dall’interfaccia utente, ad esempio i componenti di base da cui ereditano altri componenti. |
+| `componentGroup` | `String` | Rappresenta il gruppo in cui il componente può essere selezionato nella [Browser Componenti](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Un valore che inizia con `.` viene utilizzato per i componenti che non sono disponibili per la selezione dall’interfaccia utente, ad esempio i componenti di base da cui ereditano altri componenti. |
 | `cq:isContainer` | `Boolean` | Indica se il componente è un componente contenitore e può quindi contenere altri componenti, ad esempio un sistema paragrafo. |
 | `cq:dialog` | `nt:unstructured` | Questa è la definizione della finestra di dialogo per modifica del componente. |
 | `cq:design_dialog` | `nt:unstructured` | Questa è la definizione della finestra di dialogo per progettazione del componente. |
@@ -199,7 +199,7 @@ I nodi figlio di particolare interesse includono:
 
 ### Finestre di dialogo {#dialogs}
 
-Le finestre di dialogo sono un elemento chiave del componente in quanto forniscono un’interfaccia che consente agli autori di configurare il componente in una pagina di contenuto e fornire input per tale componente. Consulta la [documentazione di authoring](/help/sites-cloud/authoring/fundamentals/editing-content.md) per informazioni dettagliate su come gli autori di contenuti interagiscono con i componenti.
+Le finestre di dialogo sono un elemento chiave del componente in quanto forniscono un’interfaccia che consente agli autori di configurare il componente in una pagina di contenuto e fornire input per tale componente. Consulta la [documentazione di authoring](/help/sites-cloud/authoring/page-editor/edit-content.md) per informazioni dettagliate su come gli autori di contenuti interagiscono con i componenti.
 
 A seconda della complessità del componente, la finestra di dialogo potrebbe richiedere una o più schede.
 
@@ -221,9 +221,9 @@ Nella finestra di dialogo sono definiti i singoli campi:
 
 ### Finestre di dialogo per progettazione {#design-dialogs}
 
-Le finestre di dialogo per progettazione sono simili alle finestre di dialogo utilizzate per modificare e configurare il contenuto, ma forniscono agli autori di modelli l’interfaccia per la pro-configurazione e i dettagli di progettazione per tale componente su un modello di pagina. I modelli di pagina vengono quindi utilizzati dagli autori dei contenuti per creare pagine di contenuto. Consulta la [documentazione del modello](/help/sites-cloud/authoring/features/templates.md) per informazioni dettagliate sulla creazione dei modelli.
+Le finestre di dialogo per progettazione sono simili alle finestre di dialogo utilizzate per modificare e configurare il contenuto, ma forniscono agli autori di modelli l’interfaccia per la pro-configurazione e i dettagli di progettazione per tale componente su un modello di pagina. I modelli di pagina vengono quindi utilizzati dagli autori dei contenuti per creare pagine di contenuto. Consulta la [documentazione del modello](/help/sites-cloud/authoring/sites-console/templates.md) per informazioni dettagliate sulla creazione dei modelli.
 
-[Le finestre di dialogo per progettazione vengono utilizzate quando si modifica un modello di pagina](/help/sites-cloud/authoring/features/templates.md), anche se non sono necessari per tutti i componenti. Ad esempio, il **Titolo** e **Componenti immagine** entrambi dispongono di finestre di dialogo di progettazione, mentre **Componente condivisione social media** non lo fa.
+[Le finestre di dialogo per progettazione vengono utilizzate quando si modifica un modello di pagina](/help/sites-cloud/authoring/sites-console/templates.md), anche se non sono necessari per tutti i componenti. Ad esempio, il **Titolo** e **Componenti immagine** entrambi dispongono di finestre di dialogo di progettazione, mentre **Componente condivisione social media** non lo fa.
 
 ### Coral UI e Granite UI {#coral-and-granite}
 
@@ -278,7 +278,7 @@ Dopo aver creato un componente, devi abilitarlo per utilizzarlo. Il suo utilizzo
 
 Una volta definito, il componente deve essere reso disponibile per l’uso. Per rendere un componente disponibile per l’utilizzo in un modello, devi abilitarlo nel criterio del Contenitore di layout del modello.
 
-Consulta la [documentazione del modello](/help/sites-cloud/authoring/features/templates.md) per informazioni dettagliate sulla creazione dei modelli.
+Consulta la [documentazione del modello](/help/sites-cloud/authoring/sites-console/templates.md) per informazioni dettagliate sulla creazione dei modelli.
 
 ### Componenti e contenuti creati {#components-and-the-content-they-create}
 
@@ -469,7 +469,7 @@ Per questo motivo, è molto semplice creare qualsiasi markdown della documentazi
 
 ![README.md nella struttura dei componenti](assets/components-documentation.png)
 
-Questo markdown verrà quindi visualizzato nel [Console Componenti](/help/sites-cloud/authoring/features/components-console.md).
+Questo markdown verrà quindi visualizzato nel [Console Componenti](/help/sites-cloud/authoring/components-console.md).
 
 ![README.md visibile nella console Componenti](assets/components-documentation-console.png)
 

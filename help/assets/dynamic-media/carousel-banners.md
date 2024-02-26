@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '4534'
+source-wordcount: '4492'
 ht-degree: 1%
 
 ---
@@ -241,7 +241,7 @@ Puoi aggiungere punti attivi o mappe immagine a un banner utilizzando l’editor
 
 Quando aggiungi punti attivi o mappe immagine, puoi definirli come una visualizzazione a comparsa della Visualizzazione rapida, come collegamento ipertestuale o frammento di esperienza.
 
-Consulta [Frammento esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Consulta [Frammento esperienza](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -259,11 +259,11 @@ Consulta [(Facoltativo) Anteprima banner carosello](#optional-previewing-carouse
 >
 >Quando aggiungete punti attivi a un banner immagine, le informazioni sui punti attivi vengono memorizzate nella stessa posizione di metadati, relativa alla posizione dell&#39;immagine. Questo punto è valido indipendentemente dal fatto che si tratti di un’immagine interattiva o di un banner carosello. Questa funzionalità consente di riutilizzare facilmente la stessa immagine, insieme ai dati dei punti attivi definiti, in entrambi i visualizzatori.
 >
-Tieni presente, tuttavia, che i banner a carosello supportano le mappe immagine sulle immagini che possono anche contenere punti attivi, diversamente da un’immagine interattiva. Tieni presente questo suggerimento se intendi creare un’immagine interattiva o un banner a carosello che utilizza la stessa immagine. In alternativa, puoi creare immagini interattive e banner carosello utilizzando copie separate della stessa immagine.
+>Tieni presente, tuttavia, che i banner a carosello supportano le mappe immagine sulle immagini che possono anche contenere punti attivi, diversamente da un’immagine interattiva. Tieni presente questo suggerimento se intendi creare un’immagine interattiva o un banner a carosello che utilizza la stessa immagine. In alternativa, puoi creare immagini interattive e banner carosello utilizzando copie separate della stessa immagine.
 
 >[!NOTE]
 >
-Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immagine, questi vengono rimossi.
+>Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immagine, questi vengono rimossi.
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
@@ -302,7 +302,7 @@ Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immag
 
         >[!NOTE]
         >
-        Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
+        >Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
 
       * Se sei un cliente autonomo, specifica il percorso URL completo di una pagina web collegata nel campo di testo href.
 
@@ -313,15 +313,15 @@ Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immag
    * Seleziona **[!UICONTROL Frammento esperienza]**.
 
       * Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza. Per tornare alla pagina Gestione punti attivi, seleziona il frammento di esperienza che desideri utilizzare, quindi nell’angolo superiore destro della pagina seleziona **[!UICONTROL Seleziona]**.
-Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
       * Specifica la larghezza e l&#39;altezza del frammento di esperienza così come viene visualizzato sul banner.
 
         >[!NOTE]
         >
-        Gli strumenti di condivisione dei social media nel banner Carosello non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza.
+        >Gli strumenti di condivisione dei social media nel banner Carosello non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza.
         >
-        Per ovviare a questo problema, puoi utilizzare o creare predefiniti visualizzatore che non dispongono di strumenti per la condivisione tramite social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
+        >Per ovviare a questo problema, puoi utilizzare o creare predefiniti visualizzatore che non dispongono di strumenti per la condivisione tramite social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -338,7 +338,7 @@ Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experie
 
 >[!NOTE]
 >
-Gli utenti non amministratori devono essere aggiunti al **[!UICONTROL dam-users]** per creare o modificare i banner a carosello. In caso di problemi durante la creazione o la modifica, rivolgiti al tuo amministratore di sistema che potrà aggiungerti al **[!UICONTROL dam-users]** gruppo.
+>Gli utenti non amministratori devono essere aggiunti al **[!UICONTROL dam-users]** per creare o modificare i banner a carosello. In caso di problemi durante la creazione o la modifica, rivolgiti al tuo amministratore di sistema che potrà aggiungerti al **[!UICONTROL dam-users]** gruppo.
 
 Puoi eseguire varie attività di modifica sui set carosello, come le seguenti:
 
@@ -371,7 +371,7 @@ Puoi eseguire varie attività di modifica sui set carosello, come le seguenti:
 
    >[!NOTE]
    >
-   Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immagine, questi vengono rimossi.
+   >Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immagine, questi vengono rimossi.
 
 ## (Facoltativo) Anteprima banner carosello {#optional-previewing-carousel-banners}
 
@@ -408,9 +408,9 @@ Per utilizzare il carosello, è necessario pubblicarlo. La pubblicazione di un s
 
 >[!NOTE]
 >
-Se utilizzi un’immagine interattiva esistente con punti attivi per il banner carosello, devi pubblicarla separatamente dopo aver pubblicato il banner.
+>Se utilizzi un’immagine interattiva esistente con punti attivi per il banner carosello, devi pubblicarla separatamente dopo aver pubblicato il banner.
 >
-Inoltre, se modifichi un’immagine interattiva pubblicata preesistente utilizzata in un banner carosello, pubblica l’immagine interattiva in modo che tali modifiche vengano riportate nel banner del carosello.
+>Inoltre, se modifichi un’immagine interattiva pubblicata preesistente utilizzata in un banner carosello, pubblica l’immagine interattiva in modo che tali modifiche vengano riportate nel banner del carosello.
 
 Consulta [Pubblicare risorse Dynamic Medie](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) per informazioni su come pubblicare i banner a carosello.
 
@@ -420,7 +420,7 @@ Dopo aver caricato le immagini del banner per creare un carosello, sono stati ag
 
 >[!NOTE]
 >
-Se sei un cliente di Experience Manager Sites, puoi aggiungere il banner del carosello direttamente alla pagina trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+>Se sei un cliente di Experience Manager Sites, puoi aggiungere il banner del carosello direttamente alla pagina trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Tuttavia, se sei un cliente Experience Manager Assets indipendente, puoi aggiungere manualmente il banner a carosello alla pagina di destinazione del sito web.
 

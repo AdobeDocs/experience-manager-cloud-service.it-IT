@@ -4,7 +4,7 @@ description: In AEM sono disponibili varie scelte rapide da tastiera, inclusa un
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 88%
@@ -15,7 +15,7 @@ ht-degree: 88%
 
 Nella console Frammenti di contenuto è disponibile una selezione di scelte rapide da tastiera.
 
-AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono applicabili quando [modifica di pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), altri a [uso generale delle console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono applicabili quando [modifica di pagine](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), altri a [uso generale delle console](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune 
 | Seleziona uno o più frammenti di contenuto | `u` | Apri la finestra di dialogo Annulla pubblicazione ora |
 | Qualsiasi finestra di dialogo aperta | `esc` | Finestra di dialogo chiusa |
 
-Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop. Alcune sono utilizzabili quando si [modifica una pagina](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), altre quando si [utilizzano le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop. Alcune sono utilizzabili quando si [modifica una pagina](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), altre quando si [utilizzano le console](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->Le scelte rapide da tastiera dell’editor sono sempre attive, anche se le [scelte rapide della console sono state disattivate](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Le scelte rapide da tastiera dell’editor sono sempre attive, anche se le [scelte rapide della console sono state disattivate](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Tasti modificatori specifici del sistema operativo {#os-specific-modifier-keys}
 

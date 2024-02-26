@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: 3896dd657acdfc9feca1d3f624512dc23da084d4
 workflow-type: tm+mt
-source-wordcount: '4692'
+source-wordcount: '4713'
 ht-degree: 96%
 
 ---
@@ -264,42 +264,50 @@ ht-degree: 96%
 + Sites {#sites}
    + [Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
    + Authoring {#authoring}
-      + Guida introduttiva {#getting-started}
-         + [Guida rapida all’authoring delle pagine](/help/sites-cloud/authoring/getting-started/quick-start.md)
-         + [Concetti relativi all’authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
-         + [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md)
-         + [Ricerca](/help/sites-cloud/authoring/getting-started/search.md)
-         + [Configurazione dell’ambiente dell’account](/help/sites-cloud/authoring/getting-started/account-environment.md)
-         + [Casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md)
-         + [Scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + [Percorso di authoring di contenuti headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=it)
-      + Nozioni di base sull’authoring {#fundamentals}
-         + [Ambiente e strumenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
-         + [Aggiunta di annotazioni di pagina](/help/sites-cloud/authoring/fundamentals/annotations.md)
-         + [Creazione di un nuovo sito](/help/sites-cloud/authoring/fundamentals/create-site.md)
-         + [Creazione e organizzazione delle pagine](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
-         + [Modifica del contenuto di una pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md)
-         + [Editor Rich Text](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
-         + [Proprietà pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-         + [Anteprima del contenuto](/help/sites-cloud/authoring/fundamentals/previewing-content.md)
-         + [Pubblicazione delle pagine](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
-         + [Frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-         + [Frammenti di esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
-         + [Esportazione in formato CSV](/help/sites-cloud/authoring/fundamentals/csv-export.md)
-         + [Componenti](/help/sites-cloud/authoring/fundamentals/components.md)
-         + [Authoring per dispositivi mobili](/help/sites-cloud/authoring/fundamentals/mobile.md)
-         + [Creazione di contenuto accessibile (conformità WCAG 2.1)](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
-         + [Risoluzione dei problemi](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
-         + [Scelte rapide da tastiera](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-      + Funzionalità di authoring {#features}
-         + [Modelli di pagina](/help/sites-cloud/authoring/features/templates.md)
-         + [Sistema di stili](/help/sites-cloud/authoring/features/style-system.md)
-         + [Versioni di pagina](/help/sites-cloud/authoring/features/page-versions.md)
-         + [Differenze tra pagine](/help/sites-cloud/authoring/features/page-diff.md)
-         + [Console Componenti](/help/sites-cloud/authoring/features/components-console.md)
-         + [Layout reattivo](/help/sites-cloud/authoring/features/responsive-layout.md)
-         + [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md)
-         + [Abilitazione delle funzioni progressive delle web app](/help/sites-cloud/authoring/features/enable-pwa.md)
+      + [Guida rapida all’authoring delle pagine](/help/sites-cloud/authoring/quick-start.md)
+      + [Operazioni di base](/help/sites-cloud/authoring/basic-handling.md)
+      + [Authoring e pubblicazione](/help/sites-cloud/authoring/author-publish.md)
+      + [Metodi di authoring](/help/sites-cloud/authoring/authoring-methods.md)
+      + [Ricerca](/help/sites-cloud/authoring/search.md)
+      + [Configurazione dell’ambiente dell’account](/help/sites-cloud/authoring/account-environment.md)
+      + [Casella in entrata](/help/sites-cloud/authoring/inbox.md)
+      + [Console Componenti](/help/sites-cloud/authoring/components-console.md)
+      + [Selezione del percorso](/help/sites-cloud/authoring/path-selection.md)
+      + [Risoluzione dei problemi](/help/sites-cloud/authoring/troubleshooting.md)
+      + Console Sites {#sites-console}
+         + [Console Sites](/help/sites-cloud/authoring/sites-console/introduction.md)
+         + [Pannello laterale della console](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+         + [Creazione di un nuovo sito](/help/sites-cloud/authoring/sites-console/create-site.md)
+         + [Organizzazione delle pagine](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+         + [Creazione di pagine](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+         + [Gestione delle pagine](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+         + [Proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md)
+         + [Anteprima delle pagine](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+         + [Pubblicazione delle pagine](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
+         + [Modelli di pagina](/help/sites-cloud/authoring/sites-console/templates.md)
+         + [Versioni di pagina](/help/sites-cloud/authoring/sites-console/page-versions.md)
+         + [Differenze tra pagine](/help/sites-cloud/authoring/sites-console/page-diff.md)
+         + [Utilizzo dei tag](/help/sites-cloud/authoring/sites-console/tags.md)
+         + [Abilitazione delle funzioni progressive delle web app](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
+         + [Scelte rapide da tastiera](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
+         + [Esportazione in formato CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
+      + Editor pagina {#page-editor}
+         + [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md)
+         + [Pannello laterale dell’editor](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
+         + [Modifica delle pagine](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [Aggiunta di annotazioni di pagina](/help/sites-cloud/authoring/page-editor/annotations.md)
+         + [Editor Rich Text](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
+         + [Layout reattivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+         + [Componenti](/help/sites-cloud/authoring/page-editor/components.md)
+         + [Authoring per dispositivi mobili](/help/sites-cloud/authoring/page-editor/mobile.md)
+         + [Creazione di contenuto accessibile (conformità WCAG 2.1)](/help/sites-cloud/authoring/page-editor/accessible-content.md)
+         + [Scelte rapide da tastiera](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
+         + [Sistema di stili](/help/sites-cloud/authoring/page-editor/style-system.md)
+         + [Annulla Limitazioni Ripristino](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+      + Frammenti {#fragments}
+         + [Frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md)
+         + [Frammenti di esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md)
+         + [Percorso di authoring di contenuti headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=it)
       + Progetti {#projects}
          + [Utilizzo dei progetti](/help/sites-cloud/authoring/projects/overview.md)
          + [Gestione dei progetti](/help/sites-cloud/authoring/projects/managing.md)
@@ -345,6 +353,7 @@ ht-degree: 96%
          + [Abilita pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [Utilizzo della barra Sito](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [Modelli per siti](/help/sites-cloud/administering/site-creation/site-templates.md)
+         + [Layout reattivo](/help/sites-cloud/administering/responsive-layout.md)
          + [Temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md)
          + Percorso di creazione di siti rapidi AEM {#quick-site}
             + [Comprendere Creazione rapida del sito AEM](/help/journey-sites/quick-site/overview.md)
@@ -998,6 +1007,7 @@ ht-degree: 96%
          + [Differenze tra pagine](/help/implementing/developing/introduction/page-diff.md)
          + [Limitazioni per l’editor](/help/implementing/developing/introduction/editor-limitations.md)
          + [Convenzioni di denominazione](/help/implementing/developing/introduction/naming-conventions.md)
+         + [Progettazione reattiva](/help/implementing/developing/introduction/responsive-design.md)
          + Componenti e modelli {#components-templates}
             + [Panoramica dei componenti](/help/implementing/developing/components/overview.md)
             + [Modelli](/help/implementing/developing/components/templates.md)

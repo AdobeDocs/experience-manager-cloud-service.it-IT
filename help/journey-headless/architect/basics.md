@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sulla modellazione dei contenuti
 description: Scopri le nozioni di base sulla modellazione dei contenuti per CMS headless utilizzando Frammenti di contenuto.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ All’interno di un modello:
 1. **Tipi di dati** consente di definire i singoli attributi.
 Ad esempio, definisci il campo contenente il nome di un insegnante come **Testo** e i relativi anni di servizio come **Numero**.
 1. I tipi di dati **Riferimento contenuto** e **Riferimento frammento** consentono di creare relazioni con altri contenuti all’interno di AEM.
-1. Il **Riferimento frammento** Il tipo di dati consente di realizzare più livelli di struttura nidificando i Frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
+1. Il tipo di dati **Riferimento frammento** consente di realizzare più livelli di struttura nidificando i frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
 
 Esempio:
 
@@ -109,11 +109,11 @@ Il tipo di dati può essere configurato in modo da consentire agli autori di fra
 
 >[!NOTE]
 >
->Puoi anche creare riferimenti improvvisati utilizzando collegamenti all’interno di blocchi di testo.
+>È inoltre possibile creare riferimenti improvvisati utilizzando i collegamenti all’interno dei blocchi di testo.
 
 ## Livelli di struttura (frammenti nidificati) {#levels-of-structure-nested-fragments}
 
-Per la modellazione dei contenuti **Riferimento frammento** tipo di dati consente di creare più livelli di struttura e relazioni.
+Per la modellazione dei contenuti il tipo di dati **Riferimento frammento** consente di creare più livelli di struttura e relazioni.
 
 Con questo riferimento è possibile *connettere* vari modelli di frammenti di contenuto per rappresentare le interrelazioni. Questo consente all’applicazione headless di seguire le connessioni e accedere al contenuto in base alle necessità.
 
@@ -130,7 +130,7 @@ Ad esempio, è possibile che siano definiti i seguenti modelli di frammento di c
 * Persona
 * Premi
 
-Sembra abbastanza semplice, ma un&#39;azienda ha sia un amministratore delegato che dei dipendenti....e queste sono tutte persone, ognuna definita come Persona.
+Sembra abbastanza semplice, ma un’Azienda ha sia un amministratore delegato che dei dipendenti...e queste sono tutte persone, ognuna definita come Persona.
 
 E una Persona può ricevere un Premio (o forse due).
 
@@ -153,8 +153,8 @@ Ora che hai imparato le nozioni di base, il passo successivo è quello di [scopr
 
    * [Modelli per frammenti di contenuto - Tipi di dati](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-* [Concetti relativi all’authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Concetti relativi all’authoring](/help/sites-cloud/authoring/author-publish.md)
 
-* [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md): questa pagina si basa principalmente sulla console **Sites**, ma molte delle funzioni sono anche rilevanti per l’authoring dei **Frammenti di contenuto** nella console **Risorse**.
+* [Operazioni di base](/help/sites-cloud/authoring/basic-handling.md): questa pagina si basa principalmente sulla console **Sites**, ma molte delle funzioni sono anche rilevanti per l’authoring dei **Frammenti di contenuto** nella console **Risorse**.
 
 * [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)

@@ -2,10 +2,10 @@
 title: Gestione dei frammenti di contenuto (risorse - frammenti di contenuto)
 description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, come base per i contenuti headless o per l’authoring delle pagine.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1885'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -29,7 +29,7 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 >
 >I frammenti di contenuto possono essere utilizzati:
 >
->* quando si esegue l’authoring delle pagine; consulta [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* quando si esegue l’authoring delle pagine; consulta [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* per la [distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 >[!NOTE]
@@ -94,7 +94,7 @@ Il metodo per creare un frammento di contenuto è:
 In **Risorse** console è disponibile una serie di azioni per i frammenti di contenuto:
 
 * Dalla barra degli strumenti; dopo aver selezionato il frammento, sono disponibili tutte le azioni appropriate.
-* As [azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); un sottoinsieme di azioni disponibile per le singole schede dei frammenti.
+* As [azioni rapide](/help/sites-cloud/authoring/basic-handling.md#quick-actions); un sottoinsieme di azioni disponibile per le singole schede dei frammenti.
 
 ![Azioni nella barra degli strumenti](assets/cfm-managing-02.png)
 
@@ -299,16 +299,16 @@ Oltre alle opzioni standard, [Timeline](/help/assets/manage-digital-assets.md#ti
 
 >[!NOTE]
 >
-I commenti sono:
+>I commenti sono:
 >
-* Funzionalità standard per tutte le risorse
-* Effettuati nella timeline
-* Correlati alla risorsa frammento
+>* Funzionalità standard per tutte le risorse
+>* Effettuati nella timeline
+>* Correlati alla risorsa frammento
 >
-Le annotazioni (per i frammenti di contenuto) sono:
+>Le annotazioni (per i frammenti di contenuto) sono:
 >
-* Inserite nell’editor frammenti
-* Specifiche per un segmento di testo selezionato all’interno del frammento
+>* Inserite nell’editor frammenti
+>* Specifiche per un segmento di testo selezionato all’interno del frammento
 >
 
 Esempio:
@@ -339,7 +339,7 @@ Vengono visualizzati affiancati, dove:
 
 >[!NOTE]
 >
-Non è possibile modificare il contenuto del frammento nella modalità di confronto.
+>Non è possibile modificare il contenuto del frammento nella modalità di confronto.
 
 ![Confronto delle varianti](assets/cfm-managing-06.png)
 
@@ -357,9 +357,9 @@ Non è possibile modificare il contenuto del frammento nella modalità di confro
 
 >[!CAUTION]
 >
-Se il frammento è basato su un modello, assicurati che il [modello sia stato pubblicato](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Se il frammento è basato su un modello, assicurati che il [modello sia stato pubblicato](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, ciò viene indicato in un elenco di selezione e il modello viene pubblicato con il frammento.
+>Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, ciò viene indicato in un elenco di selezione e il modello viene pubblicato con il frammento.
 
 I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambiente di pubblicazione. Questa operazione viene eseguita utilizzando la funzionalità standard di Assets:
 
@@ -371,11 +371,11 @@ I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambien
 * Dopo la creazione; utilizzo [azioni disponibili nella console Assets](#actions-for-a-content-fragment-assets-console).
 * Dalla sezione [Editor frammento di contenuto](#toolbar-actions-in-the-content-fragment-editor).
 
-Inoltre, quando [pubblicare una pagina che utilizza il frammento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); il frammento è elencato nei riferimenti di pagina.
+Inoltre, quando [pubblicare una pagina che utilizza il frammento](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing); il frammento è elencato nei riferimenti di pagina.
 
 >[!CAUTION]
 >
-Dopo la pubblicazione e/o il riferimento a un frammento, AEM mostra un avviso quando un autore riapre il frammento per la modifica. L’avviso informa l’utente che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
+>Dopo la pubblicazione e/o il riferimento a un frammento, AEM mostra un avviso quando un autore riapre il frammento per la modifica. L’avviso informa l’utente che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
 
 ## Eliminazione di un frammento {#deleting-a-fragment}
 
@@ -386,11 +386,11 @@ Per eliminare un frammento:
 
    >[!NOTE]
    >
-   L’azione **Elimina** non è disponibile come azione rapida.
+   >L’azione **Elimina** non è disponibile come azione rapida.
 
 3. Seleziona **Elimina** dalla barra degli strumenti.
 4. Conferma l’azione **Elimina**.
 
    >[!CAUTION]
    >
-   Se in una pagina è già presente un riferimento al frammento, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con **Forza eliminazione**. Il frammento, insieme al relativo componente Frammento di contenuto, viene eliminato da tutte le pagine di contenuto.
+   >Se in una pagina è già presente un riferimento al frammento, verrà visualizzato un messaggio di avviso e sarà necessario confermare che si desidera procedere con **Forza eliminazione**. Il frammento, insieme al relativo componente Frammento di contenuto, viene eliminato da tutte le pagine di contenuto.

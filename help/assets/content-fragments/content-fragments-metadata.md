@@ -1,11 +1,11 @@
 ---
 title: Metadati - Proprietà dei frammenti (Risorse - Frammenti di contenuto)
-description: Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto
+description: Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -38,7 +38,7 @@ Puoi visualizzare e modificare i metadati (proprietà) dei frammenti di contenut
    * **Titolo**
    * **Descrizione**
    * **Tag**
-      * I [tag](/help/sites-cloud/authoring/features/tags.md) sono particolarmente utili per organizzare i frammenti, in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
+      * I [tag](/help/sites-cloud/authoring/sites-console/tags.md) sono particolarmente utili per organizzare i frammenti, in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
 Ad esempio, puoi assegnare ai frammenti rilevanti il tag “Lancio di Natale” in modo da poter viualizzare solo tale sottoinsieme di frammenti, oppure per copiarli in una nuova cartella e utilizzarli per un altro lancio futuro.
 
         >[!NOTE]

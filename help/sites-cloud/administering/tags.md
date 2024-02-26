@@ -2,7 +2,7 @@
 title: Amministrazione dei tag
 description: Scopri come amministrare i tag in AEM per organizzare i contenuti.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 1%
@@ -16,7 +16,7 @@ I tag sono un metodo intuitivo per classificare il contenuto. Possono essere con
 In Adobe Experience Manager (AEM), un tag può essere una proprietà di:
 
 * Un nodo di contenuto per una pagina
-   * Consulta il documento [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md) per ulteriori informazioni.
+   * Consulta il documento [Utilizzo dei tag](/help/sites-cloud/authoring/sites-console/tags.md) per ulteriori informazioni.
 * Un nodo di metadati per una risorsa
    * Consulta il documento [Gestione dei metadati per le risorse digitali](/help/assets/manage-metadata.md) per ulteriori informazioni.
 
@@ -183,7 +183,7 @@ Per visualizzare ulteriori dettagli sul tag, tra cui chi l’ha pubblicato per u
 
    ![Visualizzazione delle proprietà dei tag](assets/tag-properties.png)
 
-Per ulteriori dettagli sulla selezione delle modalità di visualizzazione e della barra, consulta [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Per ulteriori dettagli sulla selezione delle modalità di visualizzazione e della barra, consulta [Operazioni di base](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Modifica dei tag {#editing-tags}
 
@@ -245,7 +245,7 @@ Può essere utile vedere a quale contenuto viene applicato un particolare tag. P
 
 Passa il mouse o seleziona un contenuto con riferimento nell’elenco per visualizzare il percorso completo del contenuto.
 
-Per ulteriori dettagli sulla selezione delle modalità di visualizzazione e della barra, consulta [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Per ulteriori dettagli sulla selezione delle modalità di visualizzazione e della barra, consulta [Operazioni di base](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Spostamento dei tag {#moving-tags}
 

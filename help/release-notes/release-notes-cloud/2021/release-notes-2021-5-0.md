@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2021.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2021.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 29%
+ht-degree: 46%
 
 ---
 
@@ -39,7 +39,7 @@ La seguente versione (2021.6.0) sarà del 28 giugno 2021.
 
 ### Novità in [!DNL Sites] {#what-is-new-sites}
 
-* Presto potrai verificare i contenuti su una nuova [Anteprima livello](/help/sites-cloud/authoring/fundamentals/previewing-content.md) per simulare l’aspetto finale dell’esperienza così come si presenterà nel livello Pubblicazione. Questa funzione è abilitata dalla procedura guidata Pubblicazione gestita in AEM Sites, che ora consente di scegliere una destinazione di pubblicazione tra Pubblicazione o Anteprima. Le esperienze in Anteprima sono quindi accessibili tramite un URL dedicato. Dopo la convalida nell’ambiente di Anteprima, il contenuto può essere pubblicato come di consueto da Authoring a Pubblicazione. Il servizio Anteprima negli ambienti AEM as a Cloud Service verrà introdotto gradualmente nelle prossime settimane.
+* Presto potrai verificare i contenuti su una nuova [Anteprima livello](/help/sites-cloud/authoring/sites-console/previewing-content.md) per simulare l’aspetto finale dell’esperienza così come si presenterà nel livello Pubblicazione. Questa funzione è abilitata dalla procedura guidata Pubblicazione gestita in AEM Sites, che ora consente di scegliere una destinazione di pubblicazione tra Pubblicazione o Anteprima. Le esperienze in Anteprima sono quindi accessibili tramite un URL dedicato. Dopo la convalida nell’ambiente di Anteprima, il contenuto può essere pubblicato come di consueto da Authoring a Pubblicazione. Il servizio Anteprima negli ambienti AEM as a Cloud Service verrà introdotto gradualmente nelle prossime settimane.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -75,24 +75,24 @@ La seguente versione (2021.6.0) sarà del 28 giugno 2021.
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
-* **Aiuto contestuale**: è stata aggiunta una guida contestuale per l’editor di moduli adattivi, l’editor di modelli e l’editor di temi per aiutare gli autori a comprendere meglio le varie funzioni degli editor.
-* **Messaggi di errore nel browser Proprietà**: sono stati aggiunti messaggi di errore per ogni proprietà nel browser Proprietà adattive di Forms. Questi messaggi aiutano a comprendere i valori consentiti per un campo.
+* **Guida contestuale**: è stata aggiunta una guida contestuale per l’editor di moduli adattivi, l’editor di modelli e l’editor di temi per aiutare gli autori a comprendere meglio le varie funzioni degli editor.
+* **Messaggi di errore nel browser Proprietà**: sono stati aggiunti messaggi di errore per ogni proprietà nel browser Proprietà dei moduli adattivi. Questi messaggi aiutano a comprendere i valori consentiti per un campo.
 
 ### Prossima funzione beta di [!DNL Forms] {#what-is-new-forms-prerelease}
 
-Output as a Cloud Service: il servizio di output consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità batch sincrona e asincrona. Il servizio di output consente di creare applicazioni che consentono di:
+Output as a Cloud Service: il servizio di output consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità batch sincrona e asincrona. Il servizio di output consente di creare applicazioni che permettono di:
 
-* Generare documenti di modulo finali compilando i file modello con dati XML.
+* Generare i documenti compilando i file modello con dati XML.
 * Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
-* Genera PDF di stampa da PDF modulo XFA.
+* Generare PDF di stampa da PDF modulo XFA.
 
-Per registrarti al programma beta, scrivi a formscsbeta@adobe.com.
+Per registrarti al programma beta, puoi inviare un’e-mail all’indirizzo formscsbeta@adobe.com.
 
 ### Bug corretti in [!DNL Forms] {#forms-bugs-fixed}
 
-* In un passaggio Assegna attività di Flussi di lavoro AEM Forms, quando sostituisci l’icona predefinita dei pulsanti di azione con un’icona a forma di corallo, il flusso di lavoro smette di funzionare e registra un’eccezione. Il flusso di lavoro funziona come previsto quando vengono utilizzate le icone predefinite.
-* Nel livello di layout, quando modifichi il numero di colonne, apri il livello di modifica e trascini alcuni componenti in un pannello, le caselle blu quadrate iniziano a comparire nell’area del contenuto dell’editor di moduli adattivi e l’editor non risponde.
-* Il messaggio di errore relativo all’opzione di un editor di regole nel fornire l’URL di una risorsa adattiva o esterna è troppo lungo e non è di facile utilizzo.
+* In un passaggio Assegna attività dei flussi di lavoro di AEM Forms, quando sostituisci l’icona predefinita dei pulsanti di azione con un’icona Coral, il flusso di lavoro smette di funzionare e registra un’eccezione. Il flusso di lavoro funziona come previsto quando vengono utilizzate le icone predefinite.
+* Nel livello di layout, quando modifichi il numero di colonne, quando apri il livello di modifica e trascini alcuni componenti in un pannello, le caselle blu quadrate iniziano a comparire nell’area del contenuto dell’editor di moduli adattivi e l’editor inizia a non rispondere.
+* Il messaggio di errore di un’opzione di un editor di regole per fornire l’URL di una risorsa adattiva o esterna è troppo lungo e non è di facile utilizzo.
 
 
 ## Cloud Manager {#cloud-manager}

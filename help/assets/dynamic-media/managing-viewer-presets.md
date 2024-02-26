@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4326'
 ht-degree: 8%
@@ -114,7 +114,7 @@ Durante la creazione dei predefiniti visualizzatore, gli amministratori possono 
    <td><p>I visualizzatori Immagine panoramica e PanoramicaVR offrono immagini panoramiche sferiche per immergere gli utenti in un’esperienza di visione a 360° di una stanza, una proprietà, una posizione o un paesaggio.</p> <p>Affinché un'immagine caricata possa essere considerata un panorama sferico, deve avere una o entrambe le caratteristiche seguenti:</p>
     <ul>
      <li>Rapporto di formato 2:1.</li>
-     <li>Contrassegnato con le parole chiave <code>equirectangular</code>, o <code>spherical</code> e <code>panorama</code>, o <code>spherical </code>e <code>panoramic</code>. Consulta <a href="/help/sites-cloud/authoring/features/tags.md">Utilizzo dei tag</a>.</li>
+     <li>Contrassegnato con le parole chiave <code>equirectangular</code>, o <code>spherical</code> e <code>panorama</code>, o <code>spherical </code>e <code>panoramic</code>. Consulta <a href="/help/sites-cloud/authoring/sites-console/tags.md">Utilizzo dei tag</a>.</li>
     </ul> <p>Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse panoramiche della pagina dei dettagli della risorsa e al componente WCM "Elemento multimediale panoramico".</p></td>
   </tr>
     <tr>

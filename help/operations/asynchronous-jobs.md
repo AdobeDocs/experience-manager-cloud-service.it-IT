@@ -2,9 +2,9 @@
 title: Processi asincroni
 description: Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a uso intensivo di risorse come operazioni in background.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '854'
 ht-degree: 64%
 
 ---
@@ -31,7 +31,7 @@ Alcune di queste operazioni sono:
 
 ## Monitorare lo stato delle operazioni asincrone {#monitor-the-status-of-asynchronous-operations}
 
-Ogni volta che AEM elabora un’operazione in modo asincrono, ricevi una notifica nella tua [casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md) e tramite e-mail (se abilitata).
+Ogni volta che AEM elabora un’operazione in modo asincrono, ricevi una notifica nella tua [casella in entrata](/help/sites-cloud/authoring/inbox.md) e tramite e-mail (se abilitata).
 
 Per visualizzare in dettaglio lo stato delle operazioni asincrone, passare alla **[!UICONTROL Operazioni in background]** pagina.
 
@@ -136,6 +136,6 @@ Quando il numero di risorse, cartelle o riferimenti da spostare supera la soglia
 
 >[!MORELIKETHIS]
 >
->* [Creazione e organizzazione delle pagine](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
+>* [Gestione delle pagine](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [Importare ed esportare in blocco i metadati delle risorse](/help/assets/metadata-import-export.md).
 >* [Utilizzare le risorse collegate per condividere le risorse DAM da implementazioni remote](/help/assets/use-assets-across-connected-assets-instances.md).

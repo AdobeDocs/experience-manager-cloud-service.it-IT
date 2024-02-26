@@ -4,10 +4,10 @@ description: Scopri come configurare il Translation Integration Framework per in
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 90%
+source-wordcount: '1465'
+ht-degree: 92%
 
 ---
 
@@ -69,7 +69,7 @@ Dopo aver configurato un Translation Integration Framework, puoi [associarlo all
 
 Una singola configurazione del framework controlla come vengono tradotti il contenuto e le risorse della pagina. Per creare una configurazione di traduzione:
 
-1. In [menu di navigazione globale,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) seleziona **Strumenti > Cloud Service e Cloud Service di traduzione**.
+1. In [menu di navigazione globale,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) seleziona **Strumenti > Cloud Service e Cloud Service di traduzione**.
 1. Passa alla posizione in cui desideri creare la configurazione nella struttura del contenuto. Questo è spesso basato su un sito specifico o può essere globale.
 1. Fornisci le seguenti informazioni nei campi, quindi seleziona **Crea**.:
    1. Seleziona **Tipo di configurazione** nel menu a discesa.

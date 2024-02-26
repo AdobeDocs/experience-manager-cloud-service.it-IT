@@ -1,7 +1,7 @@
 ---
 title: Creazione di blocchi instrumentati per l’utilizzo con l’editor universale
 description: Scopri come creare blocchi instrumentati per l’utilizzo con l’Editor universale nell’authoring AEM con progetti di Edge Delivery Services.
-source-git-commit: 40e404c743102f1de8b3d959597836f04f0c0fef
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 0%
@@ -130,7 +130,7 @@ Il seguente esempio di blocco di virgolette segue questo approccio.
 
 Dopo aver definito e confermato il blocco del preventivo di base nel progetto di esempio, è possibile aggiungere un blocco del preventivo a una pagina esistente.
 
-1. In un browser, accedi a AEM as a Cloud Service. [Utilizzando la console Sites:](/help/sites-cloud/authoring/getting-started/basic-handling.md) passa al sito creato in [Guida introduttiva per gli sviluppatori per l’authoring di AEM con Edge Delivery Services](/help/edge/edge-dev-getting-started.md) e seleziona una pagina.
+1. In un browser, accedi a AEM as a Cloud Service. [Utilizzando la console Sites:](/help/sites-cloud/authoring/basic-handling.md) passa al sito creato in [Guida introduttiva per gli sviluppatori per l’authoring di AEM con Edge Delivery Services](/help/edge/edge-dev-getting-started.md) e seleziona una pagina.
 
    * In questo caso, `index` viene utilizzato a scopo illustrativo.
 

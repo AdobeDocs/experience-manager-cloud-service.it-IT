@@ -2,7 +2,7 @@
 title: Applicazione dei flussi di lavoro alle pagine
 description: Durante l’authoring, puoi richiamare i flussi di lavoro per agire sulle pagine; è anche possibile applicare più di un flusso di lavoro.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 83%
@@ -70,7 +70,7 @@ Puoi avviare un flusso di lavoro dalla barra degli strumenti della console **Sit
 
 Dalla sezione **Timeline** puoi avviare un flusso di lavoro da applicare alla risorsa selezionata.
 
-1. [Seleziona la risorsa](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) e apri [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (o apri Timeline, quindi seleziona la risorsa).
+1. [Seleziona la risorsa](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) e apri [Timeline](/help/sites-cloud/authoring/basic-handling.md#timeline) (o apri Timeline, quindi seleziona la risorsa).
 1. Puoi utilizzare la freccia dal campo commento per visualizzare **Avvia flusso di lavoro**:
 
    ![Creare un flusso di lavoro dalla timeline](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
@@ -116,7 +116,7 @@ Puoi specificare i dettagli:
 
 1. Al passaggio **Ambito** puoi selezionare:
 
-   * **Aggiungi contenuto** per aprire [browser percorsi](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) e seleziona le risorse aggiuntive; quando nel browser, seleziona **Seleziona** per aggiungere contenuti all’istanza di flusso di lavoro.
+   * **Aggiungi contenuto** per aprire [browser percorsi](/help/sites-cloud/authoring/path-selection.md) e seleziona le risorse aggiuntive; quando nel browser, seleziona **Seleziona** per aggiungere contenuti all’istanza di flusso di lavoro.
 
    * Una risorsa esistente per visualizzare le seguenti azioni:
 

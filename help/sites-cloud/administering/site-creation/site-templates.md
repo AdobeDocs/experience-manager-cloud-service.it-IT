@@ -4,10 +4,10 @@ description: Scopri come utilizzare i modelli per sito AEM per predefinire la st
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 84%
+source-wordcount: '556'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ I modelli sono efficaci perché sono riutilizzabili e personalizzabili. Inoltre,
 
 >[!NOTE]
 >
->I modelli di sito AEM non devono essere confusi con i [modelli di pagina](/help/sites-cloud/authoring/features/templates.md). I modelli di sito definiscono la struttura complessiva di un sito. Un modello di pagina definisce la struttura e il contenuto iniziale di una singola pagina.
+>I modelli di sito AEM non devono essere confusi con i [modelli di pagina](/help/sites-cloud/authoring/sites-console/templates.md). I modelli di sito definiscono la struttura complessiva di un sito. Un modello di pagina definisce la struttura e il contenuto iniziale di una singola pagina.
 >
 >I modelli di sito AEM non devono essere confusi con i [temi del sito AEM](site-themes.md). I temi del sito AEM contengono solo le informazioni sullo stile di un sito AEM. I modelli del sito AEM definiscono la struttura del sito e il contenuto iniziale e inoltre contengono un tema del sito AEM per consentire una [creazione rapida del sito](create-site.md).
 
@@ -37,11 +37,11 @@ I modelli sono efficaci perché sono riutilizzabili e personalizzabili. Inoltre,
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Seleziona **Crea** in alto a destra e dal menu a discesa, seleziona **Sito da modello**.
+1. Seleziona **Crea** in alto a destra dello schermo e, dal menu a discesa, seleziona **Sito da modello**.
 
    ![Creazione di un sito da un modello](../assets/create-site-from-template.png)
 
-1. Nella procedura guidata Crea sito, seleziona **Importa** nella parte superiore della colonna sinistra.
+1. Nella procedura guidata Crea sito, seleziona **Importa** nella parte superiore della colonna a sinistra.
 
    ![Creazione guidata sito](../assets/site-creation-wizard.png)
 
@@ -61,7 +61,7 @@ I modelli di sito sono semplicemente pacchetti con una struttura logica che rifl
 
 * `files`: cartella con il kit dell&#39;interfaccia utente, file XD ed eventualmente altri file
 * `previews`: cartella con le schermate del modello di sito
-* `site`: pacchetto di contenuti del contenuto copiato per ogni sito creato da questo modello, ad esempio modelli di pagina, pagine e così via.
+* `site`: pacchetto di contenuti del contenuto copiato per ogni sito creato da questo modello, ad esempio i modelli di pagina, le pagine e così via.
 * `theme`: origini del [tema del sito](site-themes.md) per modificare l’aspetto del sito, inclusi CSS, JavaScript e così via.
 
 ## Modello di sito standard {#standard-site-template}

@@ -2,10 +2,10 @@
 title: Creazione dei lanci
 description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione delle pagine web esistenti per l’attivazione futura.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 Crea un lancio per abilitare l’aggiornamento di una nuova versione delle pagine web esistenti per l’attivazione futura. Per creare un lancio, è necessario specificare un titolo e la pagina di origine:
 
-* Il titolo viene visualizzato nella barra [Riferimenti](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references), dalla quale gli autori potranno accedere per lavorarci.
+* Il titolo viene visualizzato nella barra [Riferimenti](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references), dalla quale gli autori potranno accedere per lavorarci.
 * Per impostazione predefinita, le pagine secondarie della pagina sorgente sono incluse nel lancio. Se necessario, puoi utilizzare solo la pagina sorgente.
 * Per impostazione predefinita, [Live Copy](/help/sites-cloud/administering/msm/overview.md) aggiorna automaticamente le pagine del lancio durante il cambio delle pagine sorgente. È possibile specificare di creare una copia statica per impedire modifiche automatiche.
 
@@ -27,7 +27,7 @@ Facoltativamente, puoi specificare la **Data lancio** (e l’ora) per definire q
 >
 >Non è possibile modificare queste pagine. Viene visualizzato il messaggio:
 >
->* **Questa pagina non fa parte del lancio. Passa alla pagina di produzione**
+>* **Questa pagina non fa parte del lancio. Vai alla pagina di produzione**
 
 ## Creazione di un lancio {#creating-a-launch}
 
@@ -48,7 +48,7 @@ Puoi creare un lancio dalla console Sites o Lanci:
 
    >[!NOTE]
    >
-   >Nella console **Sites** è inoltre possibile utilizzare la [modalità di selezione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) per scegliere una pagina prima di fare clic su **Crea**.
+   >Nella console **Sites** è inoltre possibile utilizzare la [modalità di selezione](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) per scegliere una pagina prima di fare clic su **Crea**.
    >
    >La pagina selezionata verrà così utilizzata come pagina sorgente iniziale.
 
@@ -114,7 +114,7 @@ Quando selezioni questa opzione:
 >
 >Quando utilizzi un modello diverso, la nuova pagina è vuota. A causa della diversa struttura della pagina, non viene copiato alcun contenuto.
 >
->Questo meccanismo può essere utilizzato per modificare il modello di una [pagina esistente](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), anche se va considerata la perdita di contenuto.
+>Questo meccanismo può essere utilizzato per modificare il modello di una [pagina esistente](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), anche se va considerata la perdita di contenuto.
 
 ### Creazione di un lancio nidificato {#creating-a-nested-launch}
 

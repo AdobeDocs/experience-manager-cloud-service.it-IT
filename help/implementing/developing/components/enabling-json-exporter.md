@@ -2,10 +2,10 @@
 title: Abilitazione dell’esportazione JSON per un componente
 description: I componenti possono essere adattati per generare l’esportazione JSON dei contenuti in base a un framework modellatore.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 12%
+source-wordcount: '421'
+ht-degree: 6%
 
 ---
 
@@ -78,5 +78,5 @@ Ad esempio, consulta l’implementazione del modello Sling del componente core I
 
 * [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Authoring con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [Authoring con frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)

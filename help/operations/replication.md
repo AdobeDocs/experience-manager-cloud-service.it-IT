@@ -2,7 +2,7 @@
 title: Replica
 description: Scopri la distribuzione e la risoluzione dei problemi di replica in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 39%
@@ -31,11 +31,11 @@ Adobe Experience Manager as a Cloud Service utilizza [Distribuzione dei contenut
 
 Questa funzione ti consente di pubblicare immediatamente le pagine selezionate, senza le opzioni aggiuntive possibili con l’approccio Gestisci pubblicazione.
 
-Per ulteriori informazioni, consulta [Gestisci pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+Per ulteriori informazioni, consulta [Gestisci pubblicazione](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
 ### Tempi di attivazione e disattivazione - Configurazione dell’attivatore {#on-and-off-times-trigger-configuration}
 
-Sono disponibili possibilità aggiuntive di **Ora di attivazione** e **Ora di disattivazione** dalla [scheda Base delle Proprietà pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
+Sono disponibili possibilità aggiuntive di **Ora di attivazione** e **Ora di disattivazione** dalla [scheda Base delle Proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md#basic).
 
 Per realizzare la replica automatica per questa funzione, abilita **Replica automatica** nel [Configurazione OSGi](/help/implementing/deploying/configuring-osgi.md) **Configurazione attivazione/disattivazione**:
 
@@ -47,7 +47,7 @@ Gestisci pubblicazione offre più opzioni rispetto alla Pubblicazione rapida e c
 
 L’inclusione degli elementi secondari di una cartella per l’opzione &quot;Pubblica più tardi&quot; richiama il flusso di lavoro Pubblica struttura del contenuto descritto in questo articolo.
 
-Puoi trovare informazioni più dettagliate su Gestisci pubblicazione nella sezione [Documentazione di base sulla pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+Puoi trovare informazioni più dettagliate su Gestisci pubblicazione nella sezione [Documentazione di base sulla pubblicazione](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
 ### Flusso di lavoro della struttura dei contenuti di pubblicazione {#publish-content-tree-workflow}
 

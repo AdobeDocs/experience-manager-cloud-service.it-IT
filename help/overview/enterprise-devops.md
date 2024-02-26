@@ -2,8 +2,8 @@
 title: DevOps aziendale
 description: Scopri i processi, i metodi e la comunicazione necessari per semplificare l’implementazione e la collaborazione.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ L’ambiente di staging deve riflettere l’ambiente di produzione, cioè la sua
 
 ### Produzione: authoring e pubblicazione {#production-author-and-publish}
 
-L’ambiente di produzione è costituito dagli ambienti necessari per [effettuare l’authoring e pubblicare](/help/sites-cloud/authoring/getting-started/concepts.md) l’implementazione.
+L’ambiente di produzione è costituito dagli ambienti necessari per [effettuare l’authoring e pubblicare](/help/sites-cloud/authoring/author-publish.md) l’implementazione.
 
 Un ambiente di produzione è costituito da almeno un’istanza di authoring e un’istanza di pubblicazione:
 

@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2022.10.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2022.10.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2022.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2022.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 77%
+source-wordcount: '833'
+ht-degree: 78%
 
 ---
 
@@ -23,7 +23,7 @@ La sezione seguente illustra le note sulla versione 2022.10.0 di [!DNL Experienc
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione mensile corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.10.0) è il 10 novembre 2022. La prossima versione mensile (2023.1.0) è prevista per il 9 febbraio 2023.
+La data di rilascio della versione mensile corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.10.0) è il 10 novembre 2022. La prossima versione mensile (2023.1.0) è pianificata per il venerdì 9 febbraio 2023.
 
 ## Video sulla versione {#release-video}
 
@@ -36,7 +36,7 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2022 per un r
 
 ### Nuove funzioni in [!DNL Sites] {#sites-features}
 
-* Il [Scheda Personalizzazione per frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) consente di specificare la segmentazione nell’Editor frammento di esperienza e la flessibilità necessaria per creare frammenti di esperienza nidificati, con cui è possibile creare varianti di intestazioni e piè di pagina per più segmenti. Prima dell’introduzione di questa funzione, la funzionalità di personalizzazione di AEM era disponibile solo per le pagine del sito, ma non per i frammenti esperienza.
+* Il [Scheda Personalizzazione per frammenti esperienza](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) consente di specificare la segmentazione nell’Editor frammento di esperienza e la flessibilità necessaria per creare frammenti di esperienza nidificati, con cui è possibile creare varianti di intestazioni e piè di pagina per più segmenti. Prima dell’introduzione di questa funzione, la funzionalità di personalizzazione di AEM era disponibile solo per le pagine del sito, ma non per i frammenti esperienza.
 
 * La [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ora consente agli utenti di gestire in modo efficiente i frammenti di contenuto tradotti. Inoltre, è possibile accedere con 1 solo clic per visualizzare tutte le copie delle varie lingue. Gli utenti possono anche filtrare la visualizzazione a tabella in base alla lingua che desiderano.
 

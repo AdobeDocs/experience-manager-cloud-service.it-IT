@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '4072'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Guarda una procedura dettagliata su [creazione di banner interattivi per le imma
 
 ## Guida introduttiva: Immagini interattive {#quick-start-interactive-images}
 
-La seguente descrizione dettagliata del flusso di lavoro è stata progettata per aiutarti a iniziare rapidamente a utilizzare immagini interattive in Adobe Experience Manager Assets.
+La seguente descrizione dettagliata del flusso di lavoro è stata progettata per aiutarti a iniziare rapidamente a usare le immagini interattive in Adobe Experience Manager Assets.
 
 Cerca **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata su un [esempio di pagina web a cui non sono ancora state aggiunte immagini interattive](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
@@ -38,7 +38,7 @@ Il tutorial illustra i passaggi necessari per integrare le immagini interattive 
 
 Passaggi delle immagini interattive:
 
-1. **(Facoltativo) Identificare le variabili dei punti attivi**. Se utilizzi Adobe Experience Manager Assets e Dynamic Medie standalone, identifica le variabili dinamiche utilizzate nell’implementazione Quickview esistente. In questo modo è possibile inserire i dati dei punti attivi durante la creazione dell&#39;immagine interattiva. Consulta [(Facoltativo) Identificazione delle variabili dei punti attivi](#optional-identifying-hotspot-variables).
+1. **(Facoltativo) Identificare le variabili dei punti attivi**. Se utilizzi Adobe Experience Manager Assets e Dynamic Medie in modo autonomo, identifica le variabili dinamiche utilizzate nell’implementazione Quickview esistente. In questo modo è possibile inserire i dati dei punti attivi durante la creazione dell&#39;immagine interattiva. Consulta [(Facoltativo) Identificazione delle variabili dei punti attivi](#optional-identifying-hotspot-variables).
 Tuttavia, se utilizzi Experience Manager Sites, o Experience Manager eCommerce, o entrambi, questo passaggio non è necessario.
 
 1. **(Facoltativo) Crea un predefinito visualizzatore di immagini interattivo**. Personalizzare l&#39;immagine grafica utilizzata per rappresentare i punti attivi. Se intendi utilizzare il predefinito visualizzatore di immagini interattive predefinito denominato, non è necessario creare un predefinito visualizzatore di immagini interattive personalizzato `Shoppable_Banner` invece.
@@ -65,7 +65,7 @@ Se si utilizza un modulo WCM (Web Content Manager) di terze parti, integrare il 
 >* Per aggiungere interattività all’immagine, attiva le Visualizzazioni rapide.
 >* L’implementazione di Experience Manager non *non* utilizza un eCommerce integration framework per richiamare i dati dei prodotti in Experience Manager da qualsiasi soluzione eCommerce. Tali soluzioni includono IBM® WebSphere® Commerce, Elastic Path, SAP Hybris o Intershop.
 >
-Se l’implementazione di Experience Manager utilizza l’eCommerce, puoi saltare questa attività e passare all’attività successiva.
+>Se l’implementazione di Experience Manager utilizza l’eCommerce, puoi saltare questa attività e passare all’attività successiva.
 
 Inizia identificando le variabili dinamiche utilizzate dall’implementazione Quickview esistente in modo da poter immettere i dati dei punti attivi per creare l’immagine interattiva.
 
@@ -218,11 +218,11 @@ Puoi aggiungere punti attivi a un banner immagine utilizzando l&#39;editor nella
 
 Quando aggiungi punti attivi, puoi definirli come una visualizzazione a comparsa Quickview, un collegamento ipertestuale o un frammento di esperienza.
 
-Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
-Gli strumenti per la condivisione di social media nell’immagine interattiva non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza. Puoi invece utilizzare o creare predefiniti visualizzatore privi di strumenti per la condivisione tramite social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
+>Gli strumenti per la condivisione di social media nell’immagine interattiva non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza. Puoi invece utilizzare o creare predefiniti visualizzatore privi di strumenti per la condivisione tramite social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
 
 Le opzioni Annulla e Ripristina, posizionate nell&#39;angolo superiore destro della pagina, sono supportate durante la sessione di creazione/modifica corrente.
 
@@ -232,15 +232,15 @@ Consulta [(Facoltativo) Anteprima di immagini interattive](#optional-previewing-
 
 >[!NOTE]
 >
-Quando aggiungi punti attivi a un&#39;immagine in un&#39;immagine interattiva o in un banner carosello, le informazioni sui punti attivi vengono memorizzate nella stessa posizione di metadati. Questa posizione è relativa alla posizione dell&#39;immagine, indipendentemente dal fatto che si tratti di un&#39;immagine interattiva o di un banner carosello. Questa funzionalità consente di riutilizzare facilmente la stessa immagine, insieme ai dati dei punti attivi definiti, in entrambi i visualizzatori.
+>Quando aggiungi punti attivi a un&#39;immagine in un&#39;immagine interattiva o in un banner carosello, le informazioni sui punti attivi vengono memorizzate nella stessa posizione di metadati. Questa posizione è relativa alla posizione dell&#39;immagine, indipendentemente dal fatto che si tratti di un&#39;immagine interattiva o di un banner carosello. Questa funzionalità consente di riutilizzare facilmente la stessa immagine, insieme ai dati dei punti attivi definiti, in entrambi i visualizzatori.
 >
-Tieni presente, tuttavia, che i banner a carosello supportano le mappe immagine sulle immagini che possono anche contenere punti attivi, diversamente da un’immagine interattiva. Tieni presente questo pensiero se intendi creare un’immagine interattiva o un banner a carosello che utilizza la stessa immagine. È invece possibile creare immagini interattive e banner carosello utilizzando copie separate della stessa immagine.
+>Tieni presente, tuttavia, che i banner a carosello supportano le mappe immagine sulle immagini che possono anche contenere punti attivi, diversamente da un’immagine interattiva. Tieni presente questo pensiero se intendi creare un’immagine interattiva o un banner a carosello che utilizza la stessa immagine. È invece possibile creare immagini interattive e banner carosello utilizzando copie separate della stessa immagine.
 >
-Vedi anche [Banner a carosello](/help/assets/dynamic-media/carousel-banners.md).
+>Vedi anche [Banner a carosello](/help/assets/dynamic-media/carousel-banners.md).
 
 >[!NOTE]
 >
-Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immagine, questi vengono rimossi.
+>Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immagine, questi vengono rimossi.
 
 **Per aggiungere punti attivi a un banner immagine:**
 
@@ -285,13 +285,13 @@ Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immag
    * Seleziona **[!UICONTROL Frammento esperienza]**.
 
       * Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza. Seleziona il frammento di esperienza da utilizzare. Quindi seleziona **[!UICONTROL Seleziona]** nell’angolo superiore destro della pagina. Viene visualizzata di nuovo la pagina Gestione punti attivi.
-Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
       * Specifica la larghezza e l’altezza del frammento di esperienza da visualizzare sul banner.
 
         >[!NOTE]
         >
-        Gli strumenti per la condivisione di social media nell’immagine interattiva non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza. Puoi invece utilizzare o creare predefiniti visualizzatore privi di strumenti per la condivisione tramite social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
+        >Gli strumenti per la condivisione di social media nell’immagine interattiva non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza. Puoi invece utilizzare o creare predefiniti visualizzatore privi di strumenti per la condivisione tramite social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
 
 1. Seleziona **[!UICONTROL Salva]** per salvare i dati e tornare alla pagina Sfoglia.
 1. Pubblica l’immagine interattiva. La pubblicazione distribuisce il banner attraverso il cloud e genera anche codice di incorporamento che consente l’integrazione con un sito web di terze parti.
@@ -304,7 +304,7 @@ Consulta [Frammenti esperienza](/help/sites-cloud/authoring/fundamentals/experie
 
    >[!NOTE]
    >
-   Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immagine, i punti attivi vengono eliminati.
+   >Se si modificano immagini interattive con punti attivi e si ritaglia l&#39;immagine, i punti attivi vengono eliminati.
 
 ### (Facoltativo) Anteprima di immagini interattive {#optional-previewing-interactive-images}
 
@@ -352,7 +352,7 @@ L’integrazione è semplice come rimuovere `IMG` e sostituirlo con il codice da
 
 >[!NOTE]
 >
-A questo punto, gli hotspot sull’immagine interattiva acquistabile del sito web demo sono solo a scopo di visualizzazione. Non sono ancora integrate con le visualizzazioni rapide esistenti.
+>A questo punto, gli hotspot sull’immagine interattiva acquistabile del sito web demo sono solo a scopo di visualizzazione. Non sono ancora integrate con le visualizzazioni rapide esistenti.
 
 Per applicare un ritaglio a un’immagine interattiva acquistabile per un ambiente reattivo, includi l’attributo di configurazione Immagine interattiva `ZoomView.iscommand` al percorso. In questo caso, il `ZoomView` il componente è chiamato e `iscommand` è il comando di image serving &quot;crop&quot; applicato;
 
@@ -366,7 +366,7 @@ Ora puoi integrare l’immagine interattiva con un Quickview esistente sul tuo s
 
 >[!NOTE]
 >
-Questa attività si applica solo se sei un cliente Experience Manager Assets autonomo.
+>Questa attività si applica solo se sei un cliente Experience Manager Assets autonomo.
 
 L’ultimo passaggio di questo processo è l’integrazione dell’immagine interattiva con un’implementazione Quickview esistente sul sito web. Non esiste una soluzione all’integrazione che funzioni per tutti i casi. Ogni implementazione Quickview è unica ed è necessario un approccio specifico. Di conseguenza, è utile coinvolgere l’assistenza di un responsabile IT front-end.
 

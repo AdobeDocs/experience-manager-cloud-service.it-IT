@@ -2,10 +2,10 @@
 title: Guida introduttiva alla traduzione in AEM headless
 description: Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione di AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 92%
+source-wordcount: '1409'
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Questo documento ti aiuta a capire come iniziare a tradurre il contenuto headles
 
 ## Requisiti e prerequisiti {#requirements-prerequisites}
 
-Ci sono diversi requisiti prima di iniziare a tradurre il contenuto dell’AEM headless.
+Ci sono diversi requisiti prima di iniziare a tradurre il contenuto AEM headless.
 
 ### Conoscenza {#knowledge}
 
@@ -44,7 +44,7 @@ Ci sono diversi requisiti prima di iniziare a tradurre il contenuto dell’AEM h
 
 >[!TIP]
 >
->Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, consulta il documento [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) prima di procedere. La documentazione sulle operazioni di base non fa parte del percorso. Quindi, al termine torna a questa pagina.
+>Se non hai familiarità con l&#39;utilizzo di un CMS su larga scala come AEM, consulta il documento [Operazioni di base](/help/sites-cloud/authoring/basic-handling.md) prima di procedere. La documentazione sulle operazioni di base non fa parte del percorso. Quindi, al termine torna a questa pagina.
 
 ### Strumenti {#tools}
 
@@ -78,7 +78,7 @@ L’architetto dei contenuti all’inizio del progetto si occupa della definizio
 
 Poiché i modelli di contenuto definiscono la struttura del contenuto, è necessario sapere quali campi dei modelli devono essere tradotti. In genere si lavora con l’architetto dei contenuti per deciderlo. Per sfogliare i campi dei modelli di contenuto, effettua le seguenti operazioni.
 
-1. Accedi a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
+1. Passa a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
 1. I modelli per frammenti di contenuto sono generalmente memorizzati in una struttura di cartelle. Seleziona la cartella per il progetto.
 1. I modelli sono elencati. Seleziona il modello per visualizzare i dettagli.
    ![Modelli per frammenti di contenuto](assets/content-fragment-models.png)
@@ -86,9 +86,9 @@ Poiché i modelli di contenuto definiscono la struttura del contenuto, è necess
    1. La colonna a sinistra contiene i campi del modello. Questa colonna ci interessa.
    1. La colonna a destra contiene i campi che si possono aggiungere al modello. Si può ignorare questa colonna.
       ![Editor modello per frammenti di contenuto](assets/content-fragment-model-editor.png)
-1. Selezionate uno dei campi del modello. AEM lo contrassegna e i dettagli di quel campo sono visualizzati nella colonna a destra.
+1. Seleziona uno dei campi del modello. AEM lo contrassegna e i dettagli di quel campo sono visualizzati nella colonna a destra.
    ![Dettaglio dell’editor modello dei frammenti di contenuto](assets/content-fragment-model-editor-detail.png)
-1. L’architetto dei contenuti abilita **Traducibile** in ogni campo del modello di contenuto che deve essere tradotto.
+1. L’architettura dei contenuti abilita il campo **Traducibile** in ogni campo Modello di contenuto che deve essere tradotto.
 
 >[!TIP]
 >
@@ -178,15 +178,15 @@ Ora cha hai completato questa parte del percorso di traduzione headless, dovrest
 * Avere compreso come AEM archivia il contenuto headless.
 * conoscere gli strumenti di traduzione di AEM.
 
-Approfondisci l&#39;argomento e continua il tuo percorso di traduzione headless AEM esaminando il documento [Configurare l’integrazione della traduzione](configure-connector.md) dove imparerai a collegare l’AEM a un servizio di traduzione.|
+Sviluppa questa conoscenza e continua il tuo percorso di traduzione in AEM headless consultando il documento [Configurare l’integrazione della traduzione](configure-connector.md) dove verrà illustrato come connettere AEM a un servizio di traduzione.
 
 ## Risorse aggiuntive {#additional-resources}
 
 Mentre si consiglia di procedere alla parte successiva del percorso di traduzione headless consultando il documento [Configurare il connettore di traduzione](configure-connector.md), ci sono risorse aggiuntive e facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma che non sono necessarie per continuare nel percorso headless.
 
-* [Operazioni di base AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): scopri le nozioni di base dell’interfaccia utente AEM per navigare comodamente ed eseguire attività essenziali come la ricerca dei contenuti.
+* [Operazioni di base AEM](/help/sites-cloud/authoring/basic-handling.md): scopri le nozioni di base dell’interfaccia utente AEM per navigare comodamente ed eseguire attività essenziali come la ricerca dei contenuti.
 * [Identificazione del contenuto da tradurre](/help/sites-cloud/administering/translation/rules.md): scopri come le regole di traduzione identificano i contenuti da tradurre.
 * [Configurazione del Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md): scopri come configurare il Translation Integration Framework per l’integrazione con i servizi di traduzione di terze parti.
 * [Gestione dei progetti di traduzione](/help/sites-cloud/administering/translation/managing-projects.md): scopri come creare e gestire progetti di traduzione automatica e umana in AEM.
-* [Introduzione all’AEM come CMS headless](/help/headless/introduction.md)
-* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* [Introduzione ad AEM come CMS headless](/help/headless/introduction.md)
+* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)

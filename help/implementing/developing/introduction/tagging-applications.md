@@ -2,9 +2,9 @@
 title: Creazione di tag nelle applicazioni AEM
 description: Utilizzare i tag a livello di programmazione o estenderli all’interno di un’applicazione AEM personalizzata
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ che interagisce con
 
 Per informazioni correlate sull’assegnazione tag:
 
-* Consulta [Utilizzo dei tag](/help/sites-cloud/authoring/features/tags.md) per informazioni sull’assegnazione tag ai contenuti come autore di contenuti.
+* Consulta [Utilizzo dei tag](/help/sites-cloud/authoring/sites-console/tags.md) per informazioni sull’assegnazione tag ai contenuti come autore di contenuti.
 * Per informazioni sulla creazione e la gestione dei tag e sulla modalità di applicazione dei tag di contenuto, consulta Amministrazione dei tag .
 
 ## Panoramica dell’API di assegnazione tag {#overview-of-the-tagging-api}

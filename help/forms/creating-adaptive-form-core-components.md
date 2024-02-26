@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '2264'
-ht-degree: 53%
+ht-degree: 56%
 
 ---
 
@@ -142,7 +142,7 @@ All&#39;invio di un modulo è possibile reindirizzare l&#39;utente a un&#39;altr
 
 ## Configurare uno schema o un modello di dati del modulo per un modulo adattivo{#configure-schema-or-data-model-for-form}
 
-È possibile utilizzare il modello dati modulo per collegare un modulo a un&#39;origine dati per inviare e ricevere dati in base alle azioni degli utenti. Puoi anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. In base al requisito, connetti il modulo a uno schema JSON o a un modello di dati del modulo:
+È possibile utilizzare il modello dati modulo per collegare un modulo a un’origine dati per inviare e ricevere dati in base alle azioni degli utenti. È possibile anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. In base al requisito, connetti il modulo a uno schema JSON o a un modello di dati del modulo:
 
 * [Creare uno schema JSON e caricarlo nell’ambiente](/help/forms/adaptive-form-json-schema-form-model.md)
 * [Creare un modello di dati modulo](/help/forms/create-form-data-models.md)
@@ -197,7 +197,7 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
 * [Add dynamic behavior to forms using the rule editor](rule-editor.md)
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
@@ -206,5 +206,5 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 
 {{see-also}}
 * [Aggiungere un comportamento dinamico ai moduli tramite l’editor di regole](rule-editor.md)
-* [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 

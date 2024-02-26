@@ -1,7 +1,7 @@
 ---
 title: Configurazione del contenitore di layout e della modalità di layout
 description: Scopri come configurare il contenitore di layout e la modalità di layout per abilitare i layout reattivi per gli autori di contenuti.
-source-git-commit: 4ae0ae4fbf8f6a97434628f5f6049720c6c43118
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
@@ -11,11 +11,11 @@ ht-degree: 3%
 
 # Configurazione del contenitore di layout e della modalità di layout {#configuring-layout-container-and-layout-mode}
 
-[Layout reattivo](/help/sites-cloud/authoring/features/responsive-layout.md) è un meccanismo per realizzare [design responsive.](https://en.wikipedia.org/wiki/Responsive_web_design) Questo consente all’autore di contenuto di creare pagine web con un layout e dimensioni che dipendono dai dispositivi utilizzati dagli utenti.
+[Layout reattivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) è un meccanismo per realizzare [design responsive.](https://en.wikipedia.org/wiki/Responsive_web_design) Questo consente all’autore di contenuto di creare pagine web con un layout e dimensioni che dipendono dai dispositivi utilizzati dagli utenti.
 
 AEM consente di realizzare il layout dinamico per le pagine utilizzando una combinazione di meccanismi:
 
-* **[Contenitore di layout](/help/sites-cloud/authoring/features/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Questo componente fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia reattiva.
+* **[Contenitore di layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Questo componente fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia reattiva.
    * Può essere utilizzato come parsys predefinito per la pagina e/o reso disponibile agli autori nel browser componenti.
    * Il valore predefinito **Contenitore di layout** componente definito in `/libs/wcm/foundation/components/responsivegrid`.
    * Puoi definire i contenitori di layout:
@@ -23,8 +23,8 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
       * Come parsys predefinito per la pagina.
       * Come componente e come parsys di default.
          * Puoi avere il contenitore di layout come standard per la pagina, consentendo allo stesso tempo all’utente di aggiungere ulteriori contenitori di layout all’interno di questo; ad esempio, per ottenere il controllo delle colonne.
-* **[Modalità Layout](/help/sites-cloud/authoring/fundamentals/environment-tools.md)** - Una volta che il contenitore di layout è posizionato sulla pagina, è possibile utilizzare **Layout** per posizionare il contenuto all’interno della griglia reattiva.
-* **[Emulatore](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)** - Consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare come viene eseguito il rendering del contenuto utilizzando l’emulatore.
+* **[Modalità Layout](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Una volta che il contenitore di layout è posizionato sulla pagina, è possibile utilizzare **Layout** per posizionare il contenuto all’interno della griglia reattiva.
+* **[Emulatore](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - Consente di creare e modificare siti web dinamici il cui layout si riorganizza in base alle dimensioni del dispositivo o della finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare come viene eseguito il rendering del contenuto utilizzando l’emulatore.
 
 Con questi meccanismi basati su una griglia dinamica è possibile:
 
@@ -220,9 +220,9 @@ Per un layout dinamico efficace, l’autore di contenuto deve essere in grado di
 
 Per consentire agli autori di aggiungere ulteriori griglie reattive alle pagine di contenuto, devi abilitare il componente Contenitore di layout per la pagina. Puoi eseguire questa operazione utilizzando:
 
-* **Tramite l’ambiente di authoring** - [Modificare i modelli di pagina](/help/sites-cloud/authoring/features/templates.md) per abilitare il Contenitore di layout per una pagina.
+* **Tramite l’ambiente di authoring** - [Modificare i modelli di pagina](/help/sites-cloud/authoring/sites-console/templates.md) per abilitare il Contenitore di layout per una pagina.
 * **Definizione componente** - Utilizzo `allowedComponent` o un inclusione statica durante la definizione del componente.
 
 ### Configurare la griglia del contenitore di layout {#configure-the-grid-of-the-layout-container}
 
-Puoi configurare il numero di colonne disponibili per ogni istanza specifica del contenitore di layout [modificando i modelli di pagina.](/help/sites-cloud/authoring/features/templates.md)
+Puoi configurare il numero di colonne disponibili per ogni istanza specifica del contenitore di layout [modificando i modelli di pagina.](/help/sites-cloud/authoring/sites-console/templates.md)

@@ -2,10 +2,10 @@
 title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard. Scopri come personalizzarli.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 4%
+source-wordcount: '1689'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 All’interno di Adobe Experience Manager as a Cloud Service, un frammento di contenuto estende una risorsa standard; vedi:
 
-* [Creazione e gestione di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) e [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fundamentals/content-fragments.md) per ulteriori informazioni sui frammenti di contenuto.
+* [Creazione e gestione di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) e [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) per ulteriori informazioni sui frammenti di contenuto.
 
 * [Gestione delle risorse](/help/assets/manage-digital-assets.md) per ulteriori informazioni sulle risorse standard.
 
@@ -94,9 +94,9 @@ Per l’integrazione con Assets Core:
 
 >[!CAUTION]
 >
->Il [Il componente Frammento di contenuto fa parte dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it). Consulta [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it) per ulteriori dettagli.
+>Il [Il componente Frammento di contenuto fa parte dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it). Consulta [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) per ulteriori dettagli.
 
-È possibile fare riferimento ai frammenti di contenuto dalle pagine AEM, come qualsiasi altro tipo di risorsa. L&#39;AEM fornisce **[Componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it)** - a [componente che consente di includere frammenti di contenuto nelle pagine](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere questo **[Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it)** Componente core.
+È possibile fare riferimento ai frammenti di contenuto dalle pagine AEM, come qualsiasi altro tipo di risorsa. L&#39;AEM fornisce **[Componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it)** - a [componente che consente di includere frammenti di contenuto nelle pagine](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere questo **[Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** Componente core.
 
 * Il componente utilizza `fragmentPath` per fare riferimento al frammento di contenuto effettivo. Il `fragmentPath` viene gestita nello stesso modo di proprietà simili di altri tipi di risorse, ad esempio quando il frammento di contenuto viene spostato in un’altra posizione.
 
@@ -148,7 +148,7 @@ I frammenti di contenuto possono essere integrati con:
   >
   >* Come risiedono i modelli per frammenti di contenuto `/conf`, questi non sono inclusi in tali traduzioni. Puoi internazionalizzare le stringhe dell’interfaccia utente.
 
-* **Schemi metadati**
+* **Schemi di metadati**
 
    * I frammenti di contenuto utilizzano e riutilizzano [schemi di metadati](/help/assets/metadata-schemas.md) che possono essere definiti con le risorse standard.
 

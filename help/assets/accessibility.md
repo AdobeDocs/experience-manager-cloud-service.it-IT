@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1943'
-ht-degree: 3%
+source-wordcount: '1916'
+ht-degree: 2%
 
 ---
 
@@ -80,7 +80,7 @@ Molti elementi dell’interfaccia utente che possono essere cliccati o utilizzat
 
 ### Scelte rapide da tastiera [!DNL Assets] {#keyboard-shortcuts}
 
-Le azioni seguenti in [!DNL Assets] utilizzare le scelte rapide da tastiera elencate. La maggior parte delle scelte rapide da tastiera applicabili a [!DNL Experience Manager] Le console sono applicabili anche a [!DNL Assets]. Consulta [scelte rapide da tastiera per le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). Scopri come [attivare o disattivare le scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Le azioni seguenti in [!DNL Assets] utilizzare le scelte rapide da tastiera elencate. La maggior parte delle scelte rapide da tastiera applicabili a [!DNL Experience Manager] Le console sono applicabili anche a [!DNL Assets]. Consulta [scelte rapide da tastiera per le console](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md). Scopri come [attivare o disattivare le scelte rapide da tastiera](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 | Interfaccia utente o scenario | Scelta rapida da tastiera | Azione |
 |---|---|---|
@@ -161,7 +161,7 @@ Durante la navigazione nell’archivio delle risorse, le seguenti funzionalità 
 * Some enhancements to metadata properties UI?
 -->
 
-## Consente di gestire i contenuti digitali {#manage-assets}
+## Gestire le risorse digitali {#manage-assets}
 
 Molte attività di gestione delle risorse, come le operazioni CRUD, il download di una risorsa e l’aggiunta di metadati, sono accessibili a vari livelli. [!DNL Assets] consente di eseguire le attività utilizzando varie tecnologie di assistenza, in particolare un lettore di schermo e una tastiera.
 
@@ -232,7 +232,7 @@ Quando si condividono le risorse, le seguenti funzionalità migliorano l’acces
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
 
-## Fornisci feedback {#a11y-feedback}
+## Fornire feedback {#a11y-feedback}
 
 Per fornire un feedback, porre domande e richiedere miglioramenti al prodotto relativi all’accessibilità, utilizza i metodi seguenti:
 

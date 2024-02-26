@@ -4,7 +4,7 @@ description: Scopri come creare o aggiungere un modulo adattivo alla pagina AEM 
 feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '3177'
 ht-degree: 3%
@@ -32,13 +32,13 @@ Il Cloud Service AEM Forms fornisce i componenti Contenitore modulo adattivo e F
 
 Se in passato hai creato un componente Forms Foundation adattivo o moduli semplici basati su HTML per i siti, l’Adobe consiglia di utilizzare i componenti core Forms adattivi per creare un modulo adattivo nella pagina o nel frammento di esperienza di AEM Sites. Consente di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito, migliorando l’esperienza complessiva di creazione e gestione dei moduli per Adaptive Forms. Esaminiamo alcune di queste funzioni:
 
-* **Controllo delle versioni:** Offerta pagine AEM Sites [solide funzionalità di controllo delle versioni](/help/sites-cloud/authoring/features/page-versions.md), che consente di tenere traccia e gestire diverse versioni dei moduli. In questo modo è possibile apportare modifiche e miglioramenti ai moduli mantenendo la possibilità di ripristinare le versioni precedenti, se necessario. Il controllo delle versioni garantisce un approccio controllato e organizzato allo sviluppo e all’evoluzione dei moduli.
+* **Controllo delle versioni:** Offerta pagine AEM Sites [solide funzionalità di controllo delle versioni](/help/sites-cloud/authoring/sites-console/page-versions.md), che consente di tenere traccia e gestire diverse versioni dei moduli. In questo modo è possibile apportare modifiche e miglioramenti ai moduli mantenendo la possibilità di ripristinare le versioni precedenti, se necessario. Il controllo delle versioni garantisce un approccio controllato e organizzato allo sviluppo e all’evoluzione dei moduli.
 * **Targeting (integrazione con Adobe Target):** Con le funzionalità di targeting delle pagine di AEM Sites, puoi anche [personalizzare l’esperienza del modulo per diversi tipi di pubblico](/help/sites-cloud/integrating/integration-adobe-target-ims.md). Utilizzando i segmenti utente e i criteri di targeting, è possibile adattare il contenuto, la progettazione o il comportamento del modulo a specifici gruppi di utenti. Questo ti consente di fornire un’esperienza di modulo personalizzata e rilevante, aumentando i tassi di coinvolgimento e conversione.
 * **Traduzione:** AEM Sites [integrazione perfetta con i servizi di traduzione](/help/sites-cloud/administering/translation/overview.md), che consente di tradurre facilmente i moduli in più lingue. Questa funzione semplifica il processo di localizzazione, garantendo che i moduli siano accessibili a un pubblico globale. Puoi gestire le traduzioni in modo efficiente all’interno dei progetti di traduzione AEM, riducendo il tempo e l’impegno necessari per il supporto di moduli multilingue. Consulta la sezione considerazioni per ulteriori informazioni sulla traduzione.
 * **Gestione multisito e Live Copy:** AEM Sites fornisce una solida [Funzionalità di gestione multisito e Live Copy](/help/sites-cloud/administering/msm/overview.md), che consente di creare e gestire più siti web all’interno di un unico ambiente. Questa funzione consente ora di riutilizzare i moduli in siti diversi, garantendo coerenza e riducendo le attività di duplicazione. Grazie al controllo e alla gestione centralizzati, è possibile gestire e aggiornare in modo efficiente i moduli su più siti Web.
 * **Temi:** Le pagine AEM Sites forniscono un framework per progettare e mantenere stili visivi coerenti su più pagine web. Questi definiscono colori, font, fogli di stile e altri elementi visivi che contribuiscono all’aspetto generale del sito web. [Puoi utilizzare i temi progettati per una pagina AEM Sites per un modulo adattivo, risparmiando tempo e fatica](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes).
 * **Assegnazione tag:** Le pagine di AEM Sites consentono di: [assegnare tag o etichette a una pagina, una risorsa o altro contenuto](/help/implementing/developing/introduction/tagging-framework.md). I tag sono parole chiave o etichette di metadati che consentono di categorizzare e organizzare il contenuto in base a criteri specifici. Puoi assegnare uno o più tag a pagine, risorse o qualsiasi altro elemento di contenuto all’interno di AEM per migliorare la ricerca e classificare le risorse.
-* **Blocco e sblocco del contenuto:** AEM Sites consenti agli utenti di [controllare l’accesso e le modifiche alle pagine](/help/sites-cloud/authoring/fundamentals/editing-content.md) nell’ambiente AEM Sites. Quando una pagina viene bloccata, significa che è protetta da modifiche o modifiche non autorizzate da parte di altri utenti. Solo l’utente che ha bloccato il contenuto o un amministratore designato può sbloccarlo per consentire modifiche.
+* **Blocco e sblocco del contenuto:** AEM Sites consenti agli utenti di [controllare l’accesso e le modifiche alle pagine](/help/sites-cloud/authoring/page-editor/edit-content.md) nell’ambiente AEM Sites. Quando una pagina viene bloccata, significa che è protetta da modifiche o modifiche non autorizzate da parte di altri utenti. Solo l’utente che ha bloccato il contenuto o un amministratore designato può sbloccarlo per consentire modifiche.
 
 Inoltre, Forms adattivo nell’Editor pagina AEM utilizza [Componenti core Forms adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Questi Componenti core forniscono metodi standard e più semplici per assegnare stili e personalizzare i componenti, identici a [Componenti WCM di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
 
@@ -261,7 +261,7 @@ All&#39;invio di un modulo è possibile reindirizzare l&#39;utente a un&#39;altr
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
 * [Add dynamic behavior to forms using the rule editor](rule-editor.md)
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 -->
 
@@ -269,6 +269,6 @@ All&#39;invio di un modulo è possibile reindirizzare l&#39;utente a un&#39;altr
 
 {{see-also}}
 * [Aggiungere un comportamento dinamico ai moduli tramite l’editor di regole](rule-editor.md)
-* [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 

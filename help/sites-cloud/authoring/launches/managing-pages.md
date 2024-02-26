@@ -2,7 +2,7 @@
 title: Gestione delle pagine nel lancio
 description: Puoi creare nuove pagine all’interno del lancio. Puoi anche eliminare le pagine indesiderate.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 89%
@@ -60,7 +60,7 @@ Per aggiungere nuove pagine al lancio:
 
 1. [Passa alla posizione desiderata nel lancio](#navigate-structure-of-launch).
 
-1. Seleziona **Crea** per [creare una pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) come al solito.
+1. Seleziona **Crea** per [creare una pagina](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) come al solito.
 
 ## Rimuovere pagine dal lancio {#remove-pages-from-launch}
 
@@ -68,4 +68,4 @@ Per rimuovere pagine dal lancio:
 
 1. [Passa alla posizione desiderata nel lancio](#navigate-structure-of-launch).
 
-1. Seleziona **Elimina** per [eliminare una pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) come al solito.
+1. Seleziona **Elimina** per [eliminare una pagina](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) come al solito.

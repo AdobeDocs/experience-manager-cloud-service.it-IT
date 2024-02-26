@@ -4,7 +4,7 @@ description: Scopri come configurare Dynamic Medie in Adobe Experience Manager a
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3811'
 ht-degree: 2%
@@ -115,7 +115,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >Al termine dell’installazione della nuova configurazione di Dynamic Medie, verrà inviata una notifica nella casella in entrata di Experience Manager as a Cloud Service.
    >
    >Questa notifica della casella in entrata ti informa se la configurazione è stata eseguita correttamente o meno.
-   > Consulta [Risoluzione dei problemi relativi a una nuova configurazione di Dynamic Medie](#troubleshoot-dm-config) e [Casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md) per ulteriori informazioni.
+   > Consulta [Risoluzione dei problemi relativi a una nuova configurazione di Dynamic Medie](#troubleshoot-dm-config) e [Casella in entrata](/help/sites-cloud/authoring/inbox.md) per ulteriori informazioni.
 
 1. Per visualizzare in anteprima in modo sicuro il contenuto Dynamic Medie prima che venga pubblicato, Experience Manager as a Cloud Service utilizza la convalida basata su token e quindi per impostazione predefinita Dynamic Medie viene visualizzata in anteprima da Experience Manager Author. Tuttavia, è possibile *INSERISCO NELL&#39;ELENCO CONSENTITI DI* più IP per consentire agli utenti di accedere ai contenuti in anteprima in modo sicuro. Per impostare questa azione in Experience Manager as a Cloud Service, consulta [Configurazione di Dynamic Medie Publish Setup per il server immagini: scheda Sicurezza](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
@@ -139,7 +139,7 @@ Al termine dell’installazione di una nuova configurazione di Dynamic Medie, vi
 
 ![Errore casella in entrata Experience Manager](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
 
-Vedi anche [Casella in entrata](/help/sites-cloud/authoring/getting-started/inbox.md).
+Vedi anche [Casella in entrata](/help/sites-cloud/authoring/inbox.md).
 
 **Per risolvere i problemi relativi a una nuova configurazione di Dynamic Medie:**
 

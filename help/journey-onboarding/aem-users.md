@@ -4,17 +4,17 @@ description: Dopo che l’amministratore di sistema ha configurato le risorse cl
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 93%
+source-wordcount: '576'
+ht-degree: 100%
 
 ---
 
 
 # Attività degli utenti AEM {#aem-user-tasks}
 
-In questa parte facoltativa del [percorso di onboarding,](overview.md) scopri come gli utenti AEM possono accedere a AEM as a Cloud Service per creare contenuti.
+In questa sezione facoltativa del [percorso di onboarding](overview.md) scoprirai in che modo gli utenti AEM possono accedere ad AEM as a Cloud Service per l’authoring dei contenuti.
 
 ## Percorso affrontato finora {#story-so-far}
 
@@ -52,7 +52,7 @@ In qualità di autore AEM, è necessario accedere a AEM per iniziare a creare i 
 
 1. Per aprire la pagina **Panoramica**, seleziona il programma appropriato dalla pagina **Programmi e prodotti** di Cloud Manager. Se hai dei dubbi sul programma a cui accedere, consulta l’amministratore di sistema.
 
-1. Dalla sezione **Panoramica** in Cloud Manager, fai clic sul collegamento dell’autore dalla sezione **Ambienti** Card.
+1. Dalla pagina **Panoramica** in Cloud Manager, fai clic sul collegamento all’authoring dalla scheda **Ambienti**.
 
    ![Scheda Ambiente](/help/journey-onboarding/assets/author-environ.png)
 
@@ -83,5 +83,5 @@ Se ti interessa scoprire in che modo sviluppatori e responsabili dell’implemen
 
 Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
-[Guida rapida alle pagine di authoring](/help/sites-cloud/authoring/getting-started/quick-start.md): inizia qui per accedere a una breve panoramica sui concetti fondamentali dell’authoring dei contenuti in AEM.
+[Guida rapida alle pagine di authoring](/help/sites-cloud/authoring/quick-start.md): inizia qui per accedere a una breve panoramica sui concetti fondamentali dell’authoring dei contenuti in AEM.
 [Percorso di authoring dei contenuti headless](/help/journey-headless/author/overview.md): segui questa introduzione guidata per l’authoring dei contenuti headless.

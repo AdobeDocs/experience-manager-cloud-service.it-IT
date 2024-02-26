@@ -2,16 +2,16 @@
 title: Configurazione dei moduli di ricerca
 description: Configurazione di Search Forms per Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '2033'
-ht-degree: 17%
+source-wordcount: '2036'
+ht-degree: 10%
 
 ---
 
 # Configurazione dei moduli di ricerca {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service viene fornito con un potente [Ricerca](/help/sites-cloud/authoring/getting-started/search.md) meccanismo.
+Adobe Experience Manager as a Cloud Service viene fornito con un potente [Ricerca](/help/sites-cloud/authoring/search.md) meccanismo.
 
 In combinazione con questo, sono disponibili anche una serie di opzioni predefinite che consentono di filtrare il contenuto. Questi contengono facet predefiniti come **Data di modifica**, **Stato pubblicazione**, o **Stato LiveCopy** consente di analizzare rapidamente le risorse necessarie.
 
@@ -19,9 +19,9 @@ In combinazione con questo, sono disponibili anche una serie di opzioni predefin
 
 L’obiettivo di questi elementi è quello di aiutarti a individuare i contenuti in modo rapido e semplice da:
 
-* [Ricerca e filtro](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [Selettore della barra](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* il [Browser risorse](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (durante la modifica delle pagine)
+* [Ricerca e filtro](/help/sites-cloud/authoring/search.md#search-and-filter)
+* [Selettore della barra](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
+* il [Browser risorse](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) (durante la modifica delle pagine)
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Il **Cerca in Forms** fornisci una selezione preconfigurata di [predicati](#pred
 
 * **Strumenti**
    * **Generale**
-      * **Moduli di ricerca**
+      * **Cerca in Forms**
 
 ## Forms predefinito {#default-forms}
 
@@ -45,22 +45,22 @@ Le configurazioni predefinite (elencate in ordine alfabetico) disponibili sono:
 
 * **Barra di ricerca amministrazione risorse**
 * **Editor pagina (ricerca documenti)**
-* **Editor pagine (ricerca frammenti esperienza)**
+* **Editor pagina (ricerca frammenti esperienza)**
 * **Editor pagina (ricerca immagini)**
 * **Editor pagina (ricerca manoscritto)**
 * **Editor pagina (ricerca pagine)**
 * **Editor pagina (ricerca paragrafi)**
 * **Editor pagina (ricerca prodotti)**
-* **Editor pagina (ricerca di Scene7)**
+* **Editor pagina (ricerca Scene7)**
 * **Editor pagina (ricerca video)**
-* **Barra di ricerca amministrazione progetti**
-* **Barra di ricerca traduzione progetti**
-* **Barra di ricerca amministrazione sito**
+* **Barra di ricerca amministrazione progetto**
+* **Barra di ricerca traduzione progetto**
+* **Barra di ricerca amministrazione siti**
 * **Barra di ricerca amministrazione snippet**
 * **Barra di ricerca amministrazione Stock**
 * **Barra di ricerca dei modelli per frammenti di contenuto**
-* **Barra di ricerca amministrazione progetti**
-* **Barra di ricerca traduzione progetti**
+* **Barra di ricerca amministrazione progetto**
+* **Barra di ricerca traduzione progetto**
 
 >[!NOTE]
 >
@@ -268,7 +268,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
     </ul> </td>
   </tr>
   <tr>
-   <td>Opzioni Proprietà</td>
+   <td>Proprietà Options</td>
    <td>Cerca in una o più proprietà dell’opzione.</td>
    <td>
     <ul>

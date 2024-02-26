@@ -3,16 +3,16 @@ title: Configurare l’Editor Rich Text per l’authoring dei contenuti in [!DNL
 description: Configurare l’Editor Rich Text per l’authoring dei contenuti in [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 # Configurare l’editor Rich Text {#configure-the-rich-text-editor}
 
-L’editor Rich Text offre agli autori un’ampia gamma di funzionalità per modificare il contenuto di testo. Sono disponibili icone, caselle di selezione, barre degli strumenti e menu per un&#39;esperienza di modifica del testo WYSIWYG. Gli amministratori configurano l’editor Rich Text per abilitare, disabilitare ed estendere le funzioni disponibili nei componenti di authoring. Scopri come gli autori [utilizzare l’editor Rich Text per l’authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) contenuto web.
+L’editor Rich Text offre agli autori un’ampia gamma di funzionalità per modificare il contenuto di testo. Sono disponibili icone, caselle di selezione, barre degli strumenti e menu per un&#39;esperienza di modifica del testo WYSIWYG. Gli amministratori configurano l’editor Rich Text per abilitare, disabilitare ed estendere le funzioni disponibili nei componenti di authoring. Scopri come gli autori [utilizzare l’editor Rich Text per l’authoring](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) contenuto web.
 
 Di seguito sono elencati i concetti e i passaggi necessari per la configurazione dell’editor Rich Text.
 
@@ -24,7 +24,7 @@ Di seguito sono elencati i concetti e i passaggi necessari per la configurazione
 
 ## Interfaccia utente disponibile per gli autori {#understand-rte-ui}
 
-L’interfaccia RTE offre [design responsive](/help/sites-cloud/authoring/features/responsive-layout.md) per l’ambiente di authoring. L&#39;interfaccia è progettata per essere utilizzata su dispositivi touch e desktop.
+L’interfaccia RTE offre [design responsive](/help/sites-cloud/authoring/page-editor/responsive-layout.md) per l’ambiente di authoring. L&#39;interfaccia è progettata per essere utilizzata su dispositivi touch e desktop.
 
 ![Barra degli strumenti dell’Editor Rich Text](assets/rte-toolbar-full-screen-mode.png)
 
@@ -152,7 +152,7 @@ Per configurazioni dettagliate dei plug-in dell’editor Rich Text, consulta [co
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-Il [Componente testo Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) consente agli editor di modelli di configurare molti plug-in dell’editor Rich Text utilizzando l’interfaccia utente come criteri per contenuti, eliminando la necessità di configurazione tecnica. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente dell’editor Rich Text come descritto in questo documento. Per ulteriori informazioni, consulta [creare modelli di pagina](/help/sites-cloud/authoring/features/templates.md) e [Documentazione per gli sviluppatori di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+Il [Componente testo Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) consente agli editor di modelli di configurare molti plug-in dell’editor Rich Text utilizzando l’interfaccia utente come criteri per contenuti, eliminando la necessità di configurazione tecnica. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente dell’editor Rich Text come descritto in questo documento. Per ulteriori informazioni, consulta [creare modelli di pagina](/help/sites-cloud/authoring/sites-console/templates.md) e [Documentazione per gli sviluppatori di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >A scopo di riferimento, i componenti di testo predefiniti (forniti come parte di un’installazione standard) sono disponibili all’indirizzo:
 >
@@ -218,7 +218,7 @@ Il nodo pop-up in modalità in linea o a schermo intero contiene un elenco dei p
 
 ## Impostazioni dell’interfaccia utente e criteri dei contenuti dell’Editor Rich Text {#rtecontentpolicies}
 
-Gli amministratori possono controllare le opzioni dell’editor Rich Text utilizzando i criteri del contenuto, ad esempio anziché eseguire la configurazione come descritto in precedenza. I criteri del contenuto definiscono le proprietà di progettazione di un componente quando viene utilizzato come parte di un [modello modificabile](/help/sites-cloud/authoring/features/templates.md). Ad esempio, se un componente testo che utilizza l’editor Rich Text viene utilizzato con un modello modificabile, il criterio del contenuto può definire che l’opzione grassetto sia disponibile e che siano disponibili alcune opzioni di formattazione di paragrafo. I criteri per i contenuti sono riutilizzabili e possono essere applicati a più modelli.
+Gli amministratori possono controllare le opzioni dell’editor Rich Text utilizzando i criteri del contenuto, ad esempio anziché eseguire la configurazione come descritto in precedenza. I criteri del contenuto definiscono le proprietà di progettazione di un componente quando viene utilizzato come parte di un [modello modificabile](/help/sites-cloud/authoring/sites-console/templates.md). Ad esempio, se un componente testo che utilizza l’editor Rich Text viene utilizzato con un modello modificabile, il criterio del contenuto può definire che l’opzione grassetto sia disponibile e che siano disponibili alcune opzioni di formattazione di paragrafo. I criteri per i contenuti sono riutilizzabili e possono essere applicati a più modelli.
 
 Le opzioni disponibili nell’editor Rich Text scorrono a valle dalle configurazioni dell’interfaccia utente ai criteri dei contenuti.
 
@@ -280,5 +280,5 @@ Di seguito è riportato uno snippet di esempio per mappare il comando `Bold` all
 >[!MORELIKETHIS]
 >
 >* [Configurare i plug-in dell’editor Rich Text](configure-rich-text-editor-plug-ins.md)
->* [Utilizza l’editor Rich Text per l’authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+>* [Utilizza l’editor Rich Text per l’authoring](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
 >* [Configurare l’editor Rich Text per i siti accessibili](rte-accessible-content.md)

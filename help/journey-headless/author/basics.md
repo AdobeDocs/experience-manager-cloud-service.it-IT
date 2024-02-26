@@ -2,10 +2,10 @@
 title: Scopri le nozioni di base sull’authoring
 description: Scopri cos’è e come funziona l’authoring per i CMS headless utilizzando frammenti di contenuto.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Come per la maggior parte dei sistemi, è necessario effettuare l’accesso. In 
 * Password
 * Collegamento per accedere alla schermata di accesso
 
-Il tuo account sarà stato configurato con tutti i privilegi necessari. In caso di problemi, l’Adobe consiglia di contattare il team interno di supporto al progetto.
+Il tuo account sarà stato configurato con tutti i privilegi necessari. In caso di problemi, Adobe consiglia di contattare il team di supporto interno per il progetto.
 
 ### Navigazione {#navigation}
 
@@ -135,7 +135,7 @@ Per farlo, crea una serie di cartelle all’interno della sezione **File** della
 
 ![Opzione Crea cartella](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Viene visualizzata una finestra di dialogo in cui puoi immettere i dettagli, quindi confermare con **Crea**:
+Viene visualizzata una finestra di dialogo in cui puoi inserire i dettagli, quindi confermare con **Crea**:
 
 ![Finestra di dialogo Crea cartella](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -193,32 +193,32 @@ Quindi conferma con **Crea** o con **Crea e apri**.
 >
 >Sono disponibili due editor per l’authoring dei frammenti di contenuto.
 >
->* Il nuovo editor, accessibile principalmente da **Frammenti di contenuto** console.
->* L’editor originale, accessibile principalmente da **Risorse** console.
+>* Il nuovo editor, accessibile principalmente dalla console **Frammenti di contenuto**.
+>* L’editor originale, accessibile principalmente dalla console **Risorse**.
 
-Quando l’editor si apre per la prima volta, visualizzi:
+Quando l’editor si apre per la prima volta, vengono visualizzati i seguenti elementi:
 
-* barra degli strumenti superiore: per informazioni chiave e azioni
-   * un collegamento alla Console Frammenti di contenuto (icona Home)
-   * informazioni sul modello e sulla cartella
-   * collegamenti a Anteprima; se per il modello è configurato il Pattern URL di anteprima predefinito
-   * Pubblicare e annullare la pubblicazione delle azioni
-   * un&#39;opzione per mostrare tutto **Riferimenti padre** (icona collegamento)
-   * il frammento **Stato**, e le ultime informazioni salvate
-   * un pulsante per passare all’editor originale (basato su Assets)
-* pannello a sinistra: mostra **Varianti** per il frammento di contenuto e i relativi **Campi**:
-   * questi collegamenti possono essere utilizzati per navigare nella struttura dei frammenti di contenuto
-* pannello a destra: presenta schede che mostrano le proprietà (metadati) e i tag, informazioni sulla cronologia delle versioni e informazioni relative a eventuali copie per lingua
-   * nel **Proprietà** è possibile aggiornare la scheda **Titolo** e **Descrizione** per il frammento, oppure **Variante**
-* pannello centrale: mostra i campi e il contenuto effettivi della variante selezionata
-   * consente di modificare il contenuto
-   * se **Segnaposto scheda** I campi sono definiti all&#39;interno del modello che vengono visualizzati qui e possono essere utilizzati per la navigazione
+* Barra degli strumenti superiore: per informazioni chiave e azioni
+   * Collegamento alla Console Frammenti di contenuto (icona Home)
+   * Informazioni sul modello e sulla cartella
+   * Collegamenti ad Anteprima, se per il modello è configurato il Pattern URL di anteprima predefinito
+   * Azioni Pubblica e Annulla pubblicazione
+   * Opzione per mostrare tutti i **Riferimenti padre** (icona collegamento)
+   * **Stato** del frammento e le ultime informazioni salvate
+   * Pulsante per passare all’editor originale (basato su Assets)
+* Pannello a sinistra: presenta le **Varianti** del frammento di contenuto e i relativi **Campi**:
+   * questi collegamenti possono essere utilizzati per navigare nella struttura del frammento di contenuto
+* Pannello a destra: presenta schede che mostrano le proprietà (metadati) e i tag, informazioni sulla cronologia delle versioni e informazioni relative a eventuali copie per lingua
+   * Scheda **Proprietà**, in cui puoi aggiornare il **Titolo** e la **Descrizione** del frammento, oppure la **Variante**
+* Pannello centrale: presenta i campi e il contenuto effettivi della variante selezionata
+   * Consente di modificare il contenuto
+   * Se nel modello sono stati definiti dei campi **Segnaposto scheda**, questi vengono visualizzati qui e possono essere utilizzati per la navigazione.
 
-Ad esempio, un frammento può:
+Ad esempio, per un frammento:
 
-* Richiedono più informazioni, alcune con un tipo specifico. Per i contenuti headless, i riferimenti sono fondamentali (informazioni su questi ultimi disponibili più avanti nel percorso).
+* Possono essere richieste più informazioni, alcune con un tipo specifico. Come scoprirai più avanti nel tuo percorso, i riferimenti sono fondamentali per i contenuti headless.
 
-* Consente di scrivere una lunga sezione di testo. Qui sono disponibili opzioni aggiuntive per la gestione e la formattazione del testo. Puoi anche aprire i singoli campi di testo in un editor a schermo intero (utilizzando l’icona a forma di piccolo schermo a destra)
+* Può essere possibile scrivere una lunga sezione di testo. Qui sono disponibili opzioni aggiuntive per la gestione e la formattazione del testo. Puoi anche aprire i singoli campi di testo in un editor a schermo intero (utilizzando l’icona a forma di piccolo schermo a destra)
 
 ![Editor frammento di contenuto - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -240,7 +240,7 @@ OK, questa potrebbe sembrare una sezione leggermente ambigua, ma appena aperto l
 
 * **Modelli per frammenti di contenuto**
 
-  Puoi visualizzare il nome del modello per frammenti di contenuto nel pannello di destra dell’editor. Questo è anche un collegamento che ti porta all’editor modelli.
+  Il nome del modello per frammenti di contenuto è disponibile nel pannello di destra dell’editor. Questo è anche un collegamento che ti porta all’editor modelli.
 I modelli per frammenti di contenuto sono di fatto vitali per i frammenti di contenuto quando definiscono la struttura utilizzata. Tuttavia, la creazione e la modifica di tali elementi è (in genere) responsabilità di un’altra persona, l’architect di contenuti.
 
   >[!NOTE]
@@ -267,21 +267,21 @@ Ora che hai imparato le nozioni di base, il passo successivo è [Scopri come uti
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Concetti relativi all’authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Concetti relativi all’authoring](/help/sites-cloud/authoring/author-publish.md)
 
-* [Operazioni di base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - questa pagina si basa principalmente sulla console **Sites**, ma molte delle funzioni sono anche rilevanti per l’authoring **Frammenti di contenuto** nella console **Risorse**.
+* [Operazioni di base](/help/sites-cloud/authoring/basic-handling.md) - questa pagina si basa principalmente sulla console **Sites**, ma molte delle funzioni sono anche rilevanti per l’authoring **Frammenti di contenuto** nella console **Risorse**.
 
-   * [Pannello di navigazione](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
+   * [Pannello di navigazione](/help/sites-cloud/authoring/basic-handling.md#navigation-panel)
 
-   * [Intestazione](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)
+   * [Intestazione](/help/sites-cloud/authoring/basic-handling.md#the-header)
 
-   * [Barra degli strumenti delle azioni](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+   * [Barra degli strumenti delle azioni](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar)
 
-   * [Azioni rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [Azioni rapide](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
 
-   * [Visualizzazione e selezione delle risorse](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+   * [Visualizzazione e selezione delle risorse](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   * [Selettore della barra](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+   * [Selettore della barra](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
 
 * [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)
 
@@ -313,7 +313,7 @@ Ora che hai imparato le nozioni di base, il passo successivo è [Scopri come uti
 
       * [Modelli per frammenti di contenuto - Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-* [Frammenti di contenuto - editor originale, dalla console Assets](/help/assets/content-fragments/content-fragments-variations.md)
+* [Frammenti di contenuto: editor originale, dalla console Assets](/help/assets/content-fragments/content-fragments-variations.md)
 
 * Guide introduttive
    * [Creazione di una configurazione headless per la cartella delle risorse](/help/headless/setup/create-assets-folder.md)

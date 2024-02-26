@@ -1,34 +1,33 @@
 ---
 title: Immagini panoramiche
-description: Scopri come utilizzare le immagini panoramiche in Dynamic Media.
+description: Scopri come utilizzare le immagini panoramiche in Dynamic Medie.
 contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 2%
+source-wordcount: '149'
+ht-degree: 1%
 
 ---
 
 # Immagini panoramiche{#panoramic-images}
 
-Questa sezione descrive come lavorare con il visualizzatore Immagine panoramica per riprodurre immagini panoramiche sferiche per un&#39;esperienza di visualizzazione a 360° coinvolgente di una stanza, una proprietà, una posizione o un paesaggio.
+Questa sezione descrive come lavorare con il visualizzatore Immagine panoramica per riprodurre immagini panoramiche sferiche per un&#39;esperienza di visualizzazione a 360° immersiva di una stanza, una proprietà, una posizione o un paesaggio.
 
 Vedi anche [Gestire i predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-![panoramic-image2](assets/panoramic-image2.png)
+![panoramico-immagine2](assets/panoramic-image2.png)
 
 ## Carica le risorse da utilizzare con il visualizzatore immagini panoramiche {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 Affinché una risorsa caricata possa essere considerata un’immagine panoramica sferica da utilizzare con il visualizzatore immagini panoramiche, è necessario che la risorsa presenti uno o entrambi i seguenti elementi:
 
 * Proporzioni pari a 2.
-
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Contrassegnato con le parole chiave `equirectangular`, o `spherical`e `panorama`, o `spherical` e `panoramic`. Consulta [Usa tag](/help/sites-cloud/authoring/features/tags.md).
+* Contrassegnato con le parole chiave `equirectangular`, o `spherical`e `panorama`, o `spherical` e `panoramic`. Consulta [Usa tag](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse panoramiche della pagina dei dettagli della risorsa e `Panoramic Media` Componente WCM.
 

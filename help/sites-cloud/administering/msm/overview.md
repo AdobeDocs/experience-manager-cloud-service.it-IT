@@ -4,9 +4,9 @@ description: Ottieni un’introduzione al riutilizzo dei contenuti con le potent
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2702'
 ht-degree: 93%
 
 ---
@@ -132,7 +132,7 @@ MSM è direttamente accessibile nell’interfaccia utente utilizzando diverse op
 
 * **Riferimenti** (**Sites**)
 
-   * La barra [Riferimenti](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) fornisce informazioni sulle **Live Copy** insieme all’accesso alle azioni appropriate.
+   * La barra [Riferimenti](/help/sites-cloud/authoring/basic-handling.md#references) fornisce informazioni sulle **Live Copy** insieme all’accesso alle azioni appropriate.
 
 * **Panoramica delle Live Copy** (**Sites**)
 

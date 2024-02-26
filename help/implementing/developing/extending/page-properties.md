@@ -2,16 +2,16 @@
 title: Personalizzazione delle visualizzazioni delle proprietà di pagina
 description: Scopri come le proprietà della pagina vengono visualizzate e modificate dagli autori.
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 2%
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
 # Personalizzazione delle visualizzazioni delle proprietà di pagina{#customizing-views-of-page-properties}
 
-Ogni pagina ha un set di [proprietà](/help/sites-cloud/authoring/fundamentals/page-properties.md) che possono essere visualizzate e modificate dagli utenti. Alcune sono necessarie durante la creazione della pagina (crea visualizzazione), altre possono essere visualizzate e modificate (modifica visualizzazione) in una fase successiva. Queste proprietà di pagina vengono definite e rese disponibili dalla finestra di dialogo (`cq:dialog`) del componente pagina appropriato.
+Ogni pagina ha un set di [proprietà](/help/sites-cloud/authoring/sites-console/page-properties.md) che possono essere visualizzate e modificate dagli utenti. Alcune sono necessarie durante la creazione della pagina (crea visualizzazione), altre possono essere visualizzate e modificate (modifica visualizzazione) in una fase successiva. Queste proprietà di pagina vengono definite e rese disponibili dalla finestra di dialogo (`cq:dialog`) del componente pagina appropriato.
 
 Lo stato predefinito per ogni proprietà di pagina è:
 
@@ -39,7 +39,7 @@ I campi devono essere configurati in modo specifico se è necessaria una modific
 
 Puoi anche configurare i campi disponibili configurando la finestra di dialogo del componente Pagina e applicando le proprietà del nodo appropriate.
 
-Ad esempio, per impostazione predefinita [**Crea pagina** procedura guidata](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) mostra i campi raggruppati in **Altri titoli e descrizioni**. Per nasconderli, configura:
+Ad esempio, per impostazione predefinita [**Crea pagina** procedura guidata](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) mostra i campi raggruppati in **Altri titoli e descrizioni**. Per nasconderli, configura:
 
 1. Creare il componente Pagina in `/apps`.
 1. Creare una sostituzione (tramite *finestra di dialogo* fornite da [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md)) per `basic` del componente Pagina, ad esempio:
