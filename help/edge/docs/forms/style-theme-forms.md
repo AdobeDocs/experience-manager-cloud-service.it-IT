@@ -4,9 +4,9 @@ description: Personalizzare tema e stile per un modulo del servizio di consegna 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 59ed012f10a20939c846c8fff088534c5638f3db
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di scelta e grup
 * Input: Il `input` definisce il tipo di dati da immettere. Ad esempio, testo, numero, e-mail.
 * Descrizione (Facoltativa): `div` con classe `field-description` fornisce informazioni o istruzioni aggiuntive per l’utente.
 
-**Esempio**
+**Esempio di struttura HTML**
 
 ```HTML
 <div class="form-text-wrapper form-first-name field-wrapper" data-required="true">
@@ -99,7 +99,7 @@ Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di scelta e grup
 </div>
 ```
 
-#### Selettore CSS per componenti generali
+**Selettore CSS per componenti generali**
 
 ```CSS
 .form-{Type}-wrapper input {
@@ -121,7 +121,7 @@ Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di scelta e grup
 * `.form-{Type}-wrapper`: indirizza l’esterno `div` in base al tipo di campo. Ad esempio: `.form-text-wrapper` esegue il targeting di tutti i campi di input di testo.
 * `.form-{Name}`: seleziona ulteriormente l’elemento in base al nome del campo specifico. Ad esempio: `.form-first-name` esegue il targeting del campo di testo &quot;Nome&quot;.
 
-**Esempio:**
+**Esempio di selettori CSS per componenti generali**
 
 ```CSS
 /*Target all text input fields */
@@ -159,7 +159,7 @@ Per i menu a discesa, il `select` viene utilizzato al posto di un elemento `inpu
 </div>
 ```
 
-**Esempio**
+**Esempio di struttura HTML**
 
 ```HTML
     <div class="form-drop-down-wrapper form-country field-wrapper" data-required="true">
@@ -173,7 +173,7 @@ Per i menu a discesa, il `select` viene utilizzato al posto di un elemento `inpu
    </div>
 ```
 
-#### Selettori CSS per componente a discesa
+#### Esempio di selettori CSS per il componente a discesa
 
 ```CSS
 /* Target the outer wrapper */
@@ -265,98 +265,95 @@ Analogamente ai componenti a discesa, i gruppi radio e di caselle di controllo h
 </div>
 ```
 
-#### Selettori CSS per radio e gruppi di caselle di controllo
+**Esempio di selettori CSS per gruppi di caselle di controllo e di radio**
 
-**Esecuzione del targeting dell&#39;involucro esterno**
-
-
-```CSS
-   /* Targets all radio group wrappers */
-.form-radio-group-wrapper {
-  margin-bottom: 20px; /* Adds space between radio groups */
-}
-
-/* Targets all checkbox group wrappers */
-.form-checkbox-group-wrapper {
-  margin-bottom: 20px; /* Adds space between checkbox groups */
-}
-```
-
-Questi selettori eseguono il targeting dei contenitori più esterni dei gruppi di caselle di controllo e di radio, consentendo di applicare stili generali all’intera struttura del gruppo. Questa opzione è utile per impostare la spaziatura, l&#39;allineamento o altre proprietà relative al layout.
-
-**Etichette gruppo di targeting**
-
-```CSS
-.form-radio-group-wrapper .field-label,
-.form-checkbox-group-wrapper .field-label {
- font-weight: bold; /* Makes the group label bold */
-}
-```
-
-Questo selettore esegue il targeting del `.field-label` all&#39;interno dei wrapper dei gruppi di caselle di controllo e di opzione. Questo consente di applicare uno stile alle etichette specifiche per questi gruppi, rendendoli potenzialmente più evidenti.
-
-**Targeting di singoli input ed etichette**
-
-```CSS
-/* Styling radio buttons */
-.form-radio-group-wrapper input[type="radio"] {
-  margin-right: 5px; /* Adds space between the input and its label */
-} 
-
-/* Styling radio button labels */
-.form-radio-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-
-/* Styling checkboxes */
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  margin-right: 5px;  /* Adds space between the input and its label */ 
-}
-
-/* Styling checkbox labels */
-.form-checkbox-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-```
-
-Questi selettori forniscono un controllo più granulare sui singoli pulsanti di scelta, caselle di controllo e le relative etichette associate. È possibile utilizzarli per modificare le dimensioni, la spaziatura o applicare stili visivi più distinti.
+* Targeting dell’involucro esterno: questi selettori eseguono il targeting dei contenitori più esterni dei gruppi di caselle di selezione e radio, consentendo di applicare stili generali all’intera struttura del gruppo. Questa opzione è utile per impostare la spaziatura, l&#39;allineamento o altre proprietà relative al layout.
 
 
-**Personalizzazione dell&#39;aspetto dei pulsanti di scelta e delle caselle di controllo**
-
-```CSS
-/* Hide the default radio button or checkbox */
-.form-radio-group-wrapper input[type="radio"],
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  opacity: 0; 
-  position: absolute; 
-}
-
-/* Create a custom radio button */
-.form-radio-group-wrapper input[type="radio"] + label::before { 
-  content: "";
-  display: inline-block;
-  width: 16px; 
-  height: 16px; 
-  border: 2px solid #ccc; 
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.form-radio-group-wrapper input[type="radio"]:checked + label::before {
-  background-color: #007bff; 
-}
-
-/* Create a custom checkbox */
-/* Similar styling as above, with adjustments for a square shape */
-```
-
-Questa tecnica nasconde l&#39;input predefinito e utilizza gli pseudo elementi :before e :after per creare elementi visivi personalizzati che modificano l&#39;aspetto in base allo stato &#39;selezionato&#39;.
+  ```CSS
+     /* Targets all radio group wrappers */
+  .form-radio-group-wrapper {
+    margin-bottom: 20px; /* Adds space between radio groups */
+  }
+  
+  /* Targets all checkbox group wrappers */
+  .form-checkbox-group-wrapper {
+    margin-bottom: 20px; /* Adds space between checkbox groups */
+  }
+  ```
 
 
-## Campi di stile
+* Etichette gruppo di targeting: questo selettore esegue il targeting del `.field-label` all&#39;interno dei wrapper dei gruppi di caselle di controllo e di opzione. Questo consente di applicare uno stile alle etichette specifiche per questi gruppi, rendendoli potenzialmente più evidenti.
 
-Oltre alle tecniche generali di formattazione illustrate in precedenza, è anche possibile assegnare uno stile ai campi modulo in base al tipo specifico o ai singoli nomi. Ciò consente un controllo più granulare e la personalizzazione dell&#39;aspetto del modulo.
+  ```CSS
+  .form-radio-group-wrapper .field-label,
+  .form-checkbox-group-wrapper .field-label {
+   font-weight: bold; /* Makes the group label bold */
+  }
+  ```
+
+
+
+* Targeting di singoli input ed etichette: questi selettori forniscono un controllo più granulare sui singoli pulsanti di scelta, caselle di controllo e le relative etichette associate. È possibile utilizzarli per modificare le dimensioni, la spaziatura o applicare stili visivi più distinti.
+
+  ```CSS
+  /* Styling radio buttons */
+  .form-radio-group-wrapper input[type="radio"] {
+    margin-right: 5px; /* Adds space between the input and its   label */
+  } 
+  
+  /* Styling radio button labels */
+  .form-radio-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  
+  /* Styling checkboxes */
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    margin-right: 5px;  /* Adds space between the input and its  label */ 
+  }
+  
+  /* Styling checkbox labels */
+  .form-checkbox-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  ```
+
+
+
+
+* Personalizzazione dell&#39;aspetto dei pulsanti di scelta e delle caselle di controllo: questa tecnica nasconde l&#39;input predefinito e utilizza gli pseudo elementi :before e :after per creare visualizzazioni personalizzate che modificano l&#39;aspetto in base allo stato &quot;selezionato&quot;.
+
+  ```CSS
+  /* Hide the default radio button or checkbox */
+  .form-radio-group-wrapper input[type="radio"],
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    opacity: 0; 
+    position: absolute; 
+  }
+  
+  /* Create a custom radio button */
+  .form-radio-group-wrapper input[type="radio"] + label::before { 
+    content: "";
+    display: inline-block;
+    width: 16px; 
+    height: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .form-radio-group-wrapper input[type="radio"]:checked +  label::before {
+    background-color: #007bff; 
+  }
+  
+  /* Create a custom checkbox */
+  /* Similar styling as above, with adjustments for a square shape  */
+  ```
+
+
+## Componenti di stile
+
+È inoltre possibile assegnare uno stile ai campi modulo in base al tipo specifico o ai singoli nomi. Ciò consente un controllo più granulare e la personalizzazione dell&#39;aspetto del modulo.
 
 ### Stile basato sul tipo di campo
 
@@ -388,7 +385,7 @@ Puoi utilizzare i selettori CSS per eseguire il targeting di tipi di campo speci
 * Il `data-required` attributo indica se il campo è obbligatorio o facoltativo.
 * Ogni campo ha un’etichetta corrispondente, un elemento di input e potenziali elementi aggiuntivi come segnaposto e descrizioni.
 
-Ad esempio:
+**Esempio di selettori CSS**
 
 ```CSS
 /* Target all text input fields */
@@ -403,7 +400,7 @@ Ad esempio:
 }
 ```
 
-### Tipi di campo specifici per lo stile
+### Stile basato sul nome del campo
 
 Per applicare stili univoci, puoi anche eseguire il targeting di singoli campi per nome.
 
@@ -416,7 +413,7 @@ Per applicare stili univoci, puoi anche eseguire il targeting di singoli campi p
 </div>
 ```
 
-**Selettore CSS**
+**Esempio di selettore CSS**
 
 ```CSS
 .form-otp input {
@@ -424,6 +421,6 @@ Per applicare stili univoci, puoi anche eseguire il targeting di singoli campi p
 }
 ```
 
-* Selettore: questo CSS esegue il targeting di tutti gli elementi di input che si trovano all’interno di un elemento che ha la classe `form-otp`. La struttura HTML segue le convenzioni del blocco modulo, il che significa che esiste un contenitore contrassegnato con la classe &quot;form-otp&quot; che contiene il campo con il nome &quot;otp&quot;.
+Questo CSS esegue il targeting di tutti gli elementi di input che si trovano all’interno di un elemento che ha la classe `form-otp`. La struttura HTML del modulo segue le convenzioni del blocco modulo, il che implica che esiste un contenitore contrassegnato con la classe &quot;form-otp&quot; che contiene il campo con il nome &quot;otp&quot;.
 
-* Proprietà e valore: si applica il codice `letter-spacing: 2px`. Questa proprietà CSS controlla la spaziatura tra le singole lettere all’interno del contenuto di testo del campo di input.
+
