@@ -4,9 +4,9 @@ description: Forme perfette, veloce! ⚡ authoring basato su documento di AEM Fo
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -18,13 +18,15 @@ Nell’era digitale di oggi, la creazione di moduli facili da usare è essenzial
 
 Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google Sheets, consentendo di utilizzare un ecosistema dinamico e API affidabili di Google Sheets, Microsoft Excel e Microsoft Sharepoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
 
+AEM Forms Edge Delivery fornisce un blocco modulo per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. Per iniziare a creare un modulo, puoi includere il blocco Modulo nel progetto EDS AEM. Iniziamo:
+
 
 ## Prerequisiti
 
 Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
-* Imposta e clona il progetto Edge Delivery Service (EDS). Consulta [tutorial per sviluppatori](https://www.aem.live/developer/tutorial) per i dettagli. In questo documento, la cartella locale del progetto Edge Delivery Service (EDS) viene indicata come `[EDS Project repository]` .
-* Clona il [Archivio Forms Block](https://github.com/adobe/afb). Contiene il codice per eseguire il rendering del modulo su una pagina Web EDS. In questo documento, la cartella locale dell’archivio Forms Block viene indicata come `[Forms Block repository]` in questo documento.
+* Configura il progetto Github del servizio di consegna Edge (EDS) utilizzando il boilerplate dell’AEM e clona l’archivio Github corrispondente sul computer locale. Consulta [tutorial per sviluppatori](https://www.aem.live/developer/tutorial) per i dettagli. In questo documento, la cartella locale del progetto Edge Delivery Service (EDS) viene indicata come `[EDS Project repository]` .
+* Clona il [Archivio Forms Block](https://github.com/adobe/afb) sul computer locale. Contiene il codice per eseguire il rendering del modulo su una pagina Web EDS. In questo documento, la cartella locale dell’archivio Forms Block viene indicata come `[Forms Block repository]`.
 * Assicurati di avere accesso a Google Sheets o Microsoft SharePoint.
 
 
@@ -32,13 +34,11 @@ Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
 +++ Passaggio 1: aggiungi il blocco Form al progetto Edge Delivery Service (EDS).
 
-AEM Forms Edge Delivery include un blocco Modulo per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. Per includere il blocco del modulo nel progetto del servizio di consegna Edge:
+Il `Form block` include la possibilità di aggiungere un modulo a un sito EDS. Il blocco non è incluso nel progetto creato utilizzando il boilerplate AEM. Per includere il blocco del modulo nel progetto del servizio di consegna Edge:
 
-1. Accedi a `[Forms Block repository]/blocks` e copia `forms` cartella.
+1. Accedi a `[Forms Block repository]/blocks` sul computer locale e copia il file `form` cartella.
 
-1. Accedi a `[EDS Project repository]/blocks/` e incolla `forms` cartella.
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
+1. Accedi a `[EDS Project repository]/blocks/` nel computer locale e incolla il file `form` cartella.
 
 1. Archivia `form` cartella e i file sottostanti al progetto del servizio di consegna Edge su GitHub.
 

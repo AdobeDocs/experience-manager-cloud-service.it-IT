@@ -4,9 +4,9 @@ description: Il servizio AEM Forms Edge Delivery è stato progettato per garanti
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,14 @@ AEM Forms Edge Delivery Service è un servizio componibile offerto da Adobe che 
 
 * **Crea moduli con punteggio faro perfetto**: crea moduli che vengono caricati ed eseguiti rapidamente, anche su connessioni Internet lente. I tempi di caricamento più rapidi e l’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento dei moduli e a tassi di conversione migliorati.
 
-* **Semplificare l’authoring e gli invii**: per creare i moduli utilizza strumenti familiari come Microsoft Excel o Google Sheets anziché gli ambienti di authoring tradizionali. Inviare moduli direttamente a Microsoft Excel o Google Sheets e utilizzarne l&#39;ecosistema per elaborare facilmente i dati inviati.
+* **Semplificare l’authoring e gli invii**: per progettare e creare i moduli, sfrutta gli strumenti di creazione disponibili, ad esempio Microsoft Excel o Google Sheets (authoring basato su documenti), i file JSON (authoring headless) o l’editor di Forms adattivo (authoring WYSIWYG). Il servizio è scollegato dall’origine dei contenuti e offre la flessibilità necessaria per creare i contenuti, consentendoti di utilizzare gli strumenti di authoring preferiti.
 
+  ![Strumenti di creazione di moduli Edge Delivery](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-Questo servizio componibile è scollegato dall’origine dei contenuti e offre la flessibilità necessaria per creare i contenuti, consentendo agli utenti di utilizzare gli strumenti di authoring preferiti.
-
-![Strumenti di creazione di moduli Edge Delivery](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-
-Per progettare e creare i moduli, i creatori di contenuti possono utilizzare strumenti che già conoscono bene, come Microsoft Excel o Google Sheets (authoring basato su documenti), file JSON (authoring headless) o l’editor Forms adattivo di AEM Forms (authoring WYSIWYG).
-
->[!NOTE]
->
->
-> La funzionalità di authoring WYSIWYG è disponibile in un programma per utenti iniziali. Puoi scrivere a aem-forms-early-adopter-program@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità.
+  >[!NOTE]
+  >
+  >
+  > La funzionalità di authoring WYSIWYG è disponibile in un programma per utenti iniziali. Puoi scrivere a aem-forms-early-adopter-program@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità.
 
 ## Inizia con le nozioni di base
 
