@@ -3,7 +3,7 @@ title: Authoring di contenuti per Edge Delivery Services
 description: Scopri come funziona l’authoring dei contenuti con i Edge Delivery Services e come creare contenuti AEM con i Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 21%
@@ -31,7 +31,7 @@ Quando utilizzi Edge Delivery Services con AEM as a Cloud Service, il fatto più
 
 1. [Ambiente di authoring AEM](/help/sites-cloud/authoring/quick-start.md) viene utilizzato per la gestione dei contenuti, ad esempio per creare nuove pagine, frammenti di esperienza, frammenti di contenuto e così via.
    * Sono disponibili tutte le funzioni dell’AEM, ad esempio flussi di lavoro, MSM, traduzione, lanci e così via.
-1. [Editor universale](/help/implementing/universal-editor/authoring.md) viene utilizzato per creare i contenuti gestiti in AEM.
+1. [Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md) viene utilizzato per creare i contenuti gestiti in AEM.
    * L’editor universale offre un’interfaccia utente nuova e moderna per l’authoring dei contenuti.
    * Per l’authoring, AEM esegue il rendering del HTML ma include gli script, gli stili, le icone e altre risorse dei Edge Delivery Services.
    * Anche se viene utilizzato l’Editor universale, tutte le modifiche vengono mantenute in AEM.
@@ -52,7 +52,7 @@ I dettagli dei blocchi possono quindi essere configurati nella barra Proprietà.
 
 ![Configurazione delle proprietà del blocco](assets/block-properties.png)
 
-Per informazioni dettagliate su come effettuare l’authoring con l’Editor universale, consulta il documento [Authoring di contenuti con l’Editor universale.](/help/implementing/universal-editor/authoring.md)
+Per informazioni dettagliate su come effettuare l’authoring con l’Editor universale, consulta il documento [Authoring di contenuti con l’Editor universale.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 Consulta la [Guida introduttiva per sviluppatori di authoring di AEM con Edge Delivery Services](/help/edge/edge-dev-getting-started.md) per scoprire come avviare un proprio progetto per l’authoring di AEM e Edge Delivery Services.
 

@@ -2,10 +2,10 @@
 title: Pubblicazione delle pagine
 description: Scopri come pubblicare e annullare la pubblicazione delle pagine utilizzando vari meccanismi in AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 85%
+source-wordcount: '1936'
+ht-degree: 81%
 
 ---
 
@@ -39,8 +39,9 @@ Puoi anche pubblicare o annullare la pubblicazione di una pagina immediatamente 
 
 A seconda della posizione, puoi pubblicare:
 
-* [Dall’editor di pagine](#publishing-from-the-editor)
-* [Dalla console Sites](#publishing-from-the-console)
+* [Dall’editor di pagine](#publishing-from-the-page-editor)
+* [Dalla sezione ](#publishing-from-the-sites-console)
+* [Dall’editor universale](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
 >
@@ -62,9 +63,9 @@ A seconda della posizione, puoi pubblicare:
 >
 > Per ulteriori possibilità consulta **Ora di attivazione** e **Ora di disattivazione** nella [Scheda Base delle Proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
-### Pubblicazione dall’editor {#publishing-from-the-editor}
+### Pubblicazione dall’Editor pagina {#publishing-from-the-page-editor}
 
-Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
+Se stai modificando una pagina in [editor pagina,](/help/sites-cloud/authoring/page-editor/introduction.md) può essere pubblicato direttamente dall’editor.
 
 1. Seleziona l’icona **Informazioni pagina** per aprire il menu, quindi l’opzione **Pubblica pagina**.
 
@@ -89,15 +90,15 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
 >[!NOTE]
 >
->La pubblicazione dall’editor è “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine secondarie.
+>La pubblicazione dall’editor pagina è superficiale, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
 
 >[!NOTE]
 >
 >Pagine a cui si accede tramite [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) nell’editor non può essere pubblicato. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
 
-### Pubblicazione dalla console {#publishing-from-the-console}
+### Pubblicazione dalla console del sito {#publishing-from-the-sites-console}
 
-Nella console Sites sono disponibili due opzioni per la pubblicazione:
+In **Sites** console sono disponibili due opzioni per la pubblicazione:
 
 * [Pubblicazione rapida ](#quick-publish)
 * [Gestisci pubblicazione ](#manage-publication)

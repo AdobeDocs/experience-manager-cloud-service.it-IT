@@ -2,7 +2,7 @@
 title: Introduzione all’editor universale
 description: Scopri in che modo Universal Editor consente di modificare ciò che vedi è ciò che ottieni (WYSIWYG) di qualsiasi esperienza headless e headful. Scopri in che modo questo può aiutare gli autori di contenuto a fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 84%
@@ -90,8 +90,8 @@ Rivolgiti al tuo contatto Adobe per maggiori informazioni sulle prossime funzion
 
 Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
-* [Authoring del contenuto con l’Editor universale](authoring.md) - Scopri quanto è semplice e intuitivo per gli autori di contenuto creare contenuto utilizzando l’Editor universale.
-* [Pubblicazione di contenuti con l’editor universale](publishing.md) - Scopri come l’Editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
+* [Authoring del contenuto con l’Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md) - Scopri quanto è semplice e intuitivo per gli autori di contenuto creare contenuto utilizzando l’Editor universale.
+* [Pubblicazione di contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/publishing.md) - Scopri come l’Editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
 * [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la prima app AEM per utilizzarla.
 * [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 * [Attributi e tipi](attributes-types.md): scopri gli attributi e i tipi di dati richiesti dall’editor universale.

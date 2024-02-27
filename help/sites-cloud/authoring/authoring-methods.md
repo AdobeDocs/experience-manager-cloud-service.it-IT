@@ -2,7 +2,7 @@
 title: Metodi per creare contenuti in AEM
 description: Scopri i diversi modi in cui puoi creare contenuti in AEM e le loro differenze.
 feature: Authoring
-source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Per ulteriori informazioni sull’editor dei frammenti di contenuto dell’AEM, 
 
 >[!NOTE]
 >
->Il *nuovo* L’editor evidenziato in questa sezione è disponibile solo nell’as a Cloud Service online di Adobe Experience Manager (AEM).
+>Il *nuovo* L’editor evidenziato in questa sezione non è disponibile quando si sviluppa localmente per AEM as a Cloud Service.
 >
 >Il [*originale* Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-variations.md) è disponibile anche.
 
@@ -61,11 +61,11 @@ L’editor universale è una moderna interfaccia utente che consente di creare c
 
 L’editor universale è accessibile tramite la console Sites all’interno di AEM, ma offre la potenza e la flessibilità indipendente dai contenuti per l’authoring non solo dei contenuti AEM, ma anche dei contenuti esterni dotati di strumenti adeguati.
 
-Per ulteriori informazioni sull’editor universale, consulta il documento [Authoring di contenuti con l’Editor universale.](/help/implementing/universal-editor/authoring.md)
+Per ulteriori informazioni sull’editor universale, consulta il documento [Authoring di contenuti con l’Editor universale.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 ## Authoring basato su documenti {#document-based}
 
-Se utilizzi i servizi di consegna Edge, puoi scegliere di creare i contenuti come documenti convenzionali, come Microsoft Word o Google Docs, completamente al di fuori della console AEM.
+Se utilizzi i servizi di consegna Edge, puoi scegliere di creare i contenuti come documenti tradizionali come Microsoft Word o Google Docs completamente al di fuori del [AEM **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![Modifica di contenuti basati su documenti](assets/authoring-methods-document.jpg)
 

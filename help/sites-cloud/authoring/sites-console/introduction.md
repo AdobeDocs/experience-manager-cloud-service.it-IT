@@ -1,10 +1,10 @@
 ---
 title: Console Sites
 description: Scopri come utilizzare la console Sites per gestire e organizzare le pagine AEM.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 45%
+source-wordcount: '1628'
+ht-degree: 44%
 
 ---
 
@@ -231,16 +231,18 @@ Ogni volta che viene selezionata una risorsa, è possibile eseguire varie azioni
 
 La barra delle azioni viene visualizzata solo quando una risorsa è selezionata nella console. L’azione disponibile nella barra degli strumenti delle azioni cambia per riflettere le azioni che puoi eseguire sugli elementi specifici selezionati. Le azioni più comuni sono:
 
-* [Crea](#create-action) - Creare nuovi contenuti o azioni relative ai contenuti
-* [Modifica](/help/sites-cloud/authoring/page-editor/introduction.md) - Modifica la pagina
-* [Proprietà](/help/sites-cloud/authoring/sites-console/page-properties.md) - Apre la finestra proprietà pagina
-* [Blocca](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Bloccare una pagina per impedire ad altri utenti di modificarla
-* [Copia](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copiare una pagina
-* [Sposta](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Spostare o rinominare una pagina
-* [Pubblicazione rapida](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Pubblicare immediatamente una o più pagine
-* [Gestisci pubblicazione](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Pianificazione di una o più pagine per la pubblicazione
-* [Ripristina](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Ripristino di una versione di una pagina o di una struttura ad albero
-* [Elimina](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Eliminare una o più pagine
+* [**Crea**](#create-action) - Creare nuovi contenuti o azioni relative ai contenuti
+* **Modifica** - A seconda di come è stata creata la pagina selezionata, il **Modifica** verrà aperto l’editor appropriato.
+   * [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md) - Per le pagine create con l’Editor pagina dell’AEM
+   * [Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md) - Per le pagine create con l’Editor universale
+* [**Proprietà**](/help/sites-cloud/authoring/sites-console/page-properties.md) - Apre la finestra proprietà pagina
+* [**Blocca**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Bloccare una pagina per impedire ad altri utenti di modificarla
+* [**Copia**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copiare una pagina
+* [**Sposta**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Spostare o rinominare una pagina
+* [**Pubblicazione rapida**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Pubblicare immediatamente una o più pagine
+* [**Gestisci pubblicazione**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Pianificazione di una o più pagine per la pubblicazione
+* [**Ripristina**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Ripristino di una versione di una pagina o di una struttura ad albero
+* [**Elimina**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Eliminare una o più pagine
 
 A causa del poco spazio disponibile in alcune finestre, la barra può facilmente superare lo spazio a disposizione. In questo caso compaiono altre opzioni. Tocca o fai clic sui puntini di sospensione (i tre punti o **...**) apre un selettore a discesa contenente tutte le azioni rimanenti.
 
@@ -248,13 +250,13 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 
 ### Crea azione {#create-action}
 
-L’azione Crea offre opzioni simili al pulsante Crea della barra degli strumenti per la creazione di nuove pagine ed elementi simili.
+L&#39;azione Crea offre opzioni simili a [**Crea** pulsante barra degli strumenti](#create-button) per la creazione di nuove pagine ed elementi simili.
 
 Inoltre, consente di creare azioni relative alla pagina.
 
-* [Flusso di lavoro](/help/sites-cloud/authoring/workflows/overview.md) - Applicare un flusso di lavoro a una pagina
-* [Versione](/help/sites-cloud/authoring/sites-console/page-versions.md) - Creare una versione di una pagina
+* [**Flusso di lavoro**](/help/sites-cloud/authoring/workflows/overview.md) - Applicare un flusso di lavoro a una pagina
+* [**Versione**](/help/sites-cloud/authoring/sites-console/page-versions.md) - Creare una versione di una pagina
 
 ## Modelli
 
-Puoi vedere facilmente su quale modello si basa la pagina quando la selezioni in [Vista a colonne](/help/sites-cloud/authoring/basic-handling.md#column-view) o [Vista a elenco](/help/sites-cloud/authoring/basic-handling.md#list-view).
+Puoi vedere facilmente su quale modello si basa la pagina quando la selezioni in [**Vista a colonne**](/help/sites-cloud/authoring/basic-handling.md#column-view) o [**Vista a elenco**](/help/sites-cloud/authoring/basic-handling.md#list-view).
