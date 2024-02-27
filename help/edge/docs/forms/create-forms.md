@@ -4,9 +4,9 @@ description: Forme perfette, veloce! ⚡ authoring basato su documento di AEM Fo
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,8 @@ Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
 * Configura il progetto Github del servizio di consegna Edge (EDS) utilizzando il boilerplate dell’AEM e clona l’archivio Github corrispondente sul computer locale. Consulta [tutorial per sviluppatori](https://www.aem.live/developer/tutorial) per i dettagli. In questo documento, la cartella locale del progetto Edge Delivery Service (EDS) viene indicata come `[EDS Project repository]` .
 * Clona il [Archivio Forms Block](https://github.com/adobe/afb) sul computer locale. Contiene il codice per eseguire il rendering del modulo su una pagina Web EDS. In questo documento, la cartella locale dell’archivio Forms Block viene indicata come `[Forms Block repository]`.
-* Assicurati di avere accesso a Google Sheets o Microsoft SharePoint.
+* Assicurati di avere accesso a Google Sheets o Microsoft SharePoint. Per impostare Microsoft SharePoint come origine di contenuto, vedere [Come utilizzare Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
+
 
 
 ## Creare un modulo

@@ -4,10 +4,10 @@ description: Il servizio AEM Forms Edge Delivery è stato progettato per garanti
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 0%
+source-wordcount: '413'
+ht-degree: 3%
 
 ---
 
@@ -16,18 +16,30 @@ ht-degree: 0%
 
 AEM Forms Edge Delivery Service è un servizio componibile offerto da Adobe che consente di creare e distribuire moduli web di forte impatto e dalle prestazioni elevate. Puoi utilizzare il servizio per:
 
-* **Artigianato forme visivamente stupefacenti**: unisci le progettazioni blande e taglienti dei cookie e affascina gli utenti con moduli dinamici e moderni che riflettono la tua identità del brand. Sfrutta componenti predefiniti o crea componenti personalizzati per dare vita alla tua visione in modo rapido e semplice.
+* **Captivate utenti con moduli straordinari**: crea moduli complessi e coinvolgenti con facilità utilizzando una libreria di componenti predefiniti. È possibile integrare facilmente reCAPTCHA, inviare moduli direttamente alle e-mail e consentire caricamenti di file senza soluzione di continuità in soluzioni di archiviazione sicure come Sharepoint, Azure Storage e Amazon S3. Puoi anche creare componenti di moduli personalizzati per realizzare la tua visione unica.
+
+  ![Moduli di iscrizione](/help/edge/assets/enrollment-form.png)
 
 * **Crea moduli con punteggio faro perfetto**: crea moduli che vengono caricati ed eseguiti rapidamente, anche su connessioni Internet lente. I tempi di caricamento più rapidi e l’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento dei moduli e a tassi di conversione migliorati.
 
-* **Semplificare l’authoring e gli invii**: per progettare e creare i moduli, sfrutta gli strumenti di creazione disponibili, ad esempio Microsoft Excel o Google Sheets (authoring basato su documenti), i file JSON (authoring headless) o l’editor di Forms adattivo (authoring WYSIWYG). Il servizio è scollegato dall’origine dei contenuti e offre la flessibilità necessaria per creare i contenuti, consentendoti di utilizzare gli strumenti di authoring preferiti.
+  ![punteggio faro perfetto per i moduli](/help/edge/assets/lighthouse-forms.png)
+
+* **Creare esperienze di registrazione digitale con strumenti a tua scelta**: aumenta l’efficienza dell’authoring disaccoppiando le origini di contenuto. È possibile utilizzare sia l’authoring di AEM che l’authoring basato su documenti. Di conseguenza, puoi lavorare con più origini di contenuto sullo stesso sito web e utilizzare gli strumenti di authoring preferiti, come Microsoft Excel, Google Sheets o AEM Editors.
 
   ![Strumenti di creazione di moduli Edge Delivery](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-  >[!NOTE]
-  >
-  >
-  > La funzionalità di authoring WYSIWYG è disponibile in un programma per utenti iniziali. Puoi scrivere a aem-forms-early-adopter-program@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità.
+<!--
+* **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
+
+* **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
+
+    
+>[!NOTE]
+    >
+    >
+    > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
+
+    -->
 
 ## Inizia con le nozioni di base
 
@@ -57,18 +69,26 @@ AEM Forms Edge Delivery Service è un servizio componibile offerto da Adobe che 
         <p>Crea moduli che vengono caricati e riversati rapidamente e automaticamente sui dispositivi mobili.</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/validate-forms.md">
-            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Aggiungere convalide ai campi modulo" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Applicare le convalide dei campi</b>
+        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
+            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Invia modulo" alt="Utilizzare frammenti di modulo in un modulo EDS" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Invia modulo a foglio di calcolo</b>
         </a>
-        <p>Riduci gli errori e le frustrazioni controllando gli input del modulo per la formattazione corretta.</p>
-    </div>    <div class="card-container">
+        <p>Inviare i moduli direttamente ai fogli di Microsoft Excel o Google.</p>
+    </div>
+     <div class="card-container">
         <a href="/help/edge/docs/forms/style-theme-forms.md">
             <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Applicare stili o temi a un modulo finale" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">Personalizzare un tema</b>
         </a>
         <p>Crea un’immagine di marchio coerente applicando lo stesso tema nei moduli.</p>
     </div>
+      <div class="card-container">
+        <a href="/help/edge/docs/forms/validate-forms.md">
+            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Aggiungere convalide ai campi modulo" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Applicare le convalide dei campi</b>
+        </a>
+        <p>Riduci gli errori e le frustrazioni controllando gli input del modulo per la formattazione corretta.</p>
+    </div> 
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
             <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Tradurre un modulo EDS" style="border-radius: 5px;"> </b>
@@ -104,13 +124,7 @@ AEM Forms Edge Delivery Service è un servizio componibile offerto da Adobe che 
         </a>
         <p>Utilizza l’integrazione OOTB reCAPTCHA per una solida protezione da spam e bot.</p>
     </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Invia modulo" alt="Utilizzare frammenti di modulo in un modulo EDS" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Invia modulo a foglio di calcolo</b>
-        </a>
-        <p>Inviare i moduli direttamente ai fogli di Microsoft Excel o Google.</p>
-    </div>
+
 </div>
 
 
