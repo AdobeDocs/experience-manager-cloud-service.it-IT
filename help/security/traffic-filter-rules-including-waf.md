@@ -3,9 +3,9 @@ title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3376'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -253,7 +253,7 @@ La proprietà `wafFlags`, che può essere utilizzata nelle regole del filtro del
 | USERAGENT | Attack Tooling | Attack Tooling è l’uso di un software automatizzato per identificare le vulnerabilità di sicurezza o per tentare di sfruttare una vulnerabilità scoperta. |
 | LOG4J-JNDI | JNDI Log4J | Gli attacchi JNDI Log4J tentano di sfruttare la [vulnerabilità Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) presente nelle versioni Log4J precedenti alla 2.16.0 |
 | BHH | Intestazioni hop non valide | Le intestazioni hop non valide indicano un tentativo di smuggling dell’HTTP tramite un’intestazione di codifica di trasferimento (TE) o lunghezza dei contenuti (CL) non valida oppure tramite un’intestazione TE e CL corretta |
-| CODEINJECTION | Inserimento di codice | Iniezione di codice è il tentativo di ottenere il controllo o danneggiare un sistema di destinazione attraverso comandi arbitrari di codice dell&#39;applicazione per mezzo di input dell&#39;utente. |
+| CODEINJECTION | Code Injection | Code Injection è il tentativo di ottenere il controllo o danneggiare un sistema di destinazione attraverso comandi arbitrari di codice di applicazione mediante l’input dell’utente. |
 | ABNORMALPATH | Percorso anomalo | Percorso anomalo indica che il percorso originale è diverso dal percorso normalizzato (ad esempio, `/foo/./bar` è normalizzato su `/foo/bar`) |
 | DOUBLEENCODING | Doppia codifica | La doppia codifica verifica la tecnica di evasione dei caratteri HTML a doppia codifica |
 | NOTUTF8 | Codifica non valida | Una codifica non valida può causare la conversione di caratteri dannosi da una richiesta a una risposta da parte del server, causando un rifiuto del servizio o XSS |
