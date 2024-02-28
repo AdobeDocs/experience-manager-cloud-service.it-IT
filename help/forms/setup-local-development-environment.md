@@ -3,10 +3,11 @@ title: Come si imposta un ambiente di sviluppo locale per AEM Forms?
 description: Configurare un ambiente di sviluppo locale per Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 58325cccf218eb2176868879842a795d1c91d8a6
+exl-id: 12877a77-094f-492a-af58-cffafecf79ae
+source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
 workflow-type: tm+mt
-source-wordcount: '2682'
-ht-degree: 2%
+source-wordcount: '2724'
+ht-degree: 1%
 
 ---
 
@@ -129,7 +130,12 @@ L’archivio delle funzioni di Adobe Experience Manager Forms as a Cloud Service
 
 1. Passa alla directory crx-quickstart/install. Se la cartella non esiste, creala.
 
-1. Arrestare l’istanza di AEM, inserire [!DNL AEM Forms] archivio delle funzioni del componente aggiuntivo, `aem-forms-addon-<version>.far`, nella cartella di installazione e riavviare l&#39;istanza.
+1. Arrestare l’istanza di AEM, inserire [!DNL AEM Forms] archivio delle funzioni del componente aggiuntivo, `aem-forms-addon-<version>.far`, nella cartella di installazione.
+1. Passare alla finestra di comando attiva e premere `Ctrl + C` per riavviare l&#39;SDK.
+
+   >[!NOTE]
+   >
+   > Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
 
 ### Configurare utenti e autorizzazioni {#configure-users-and-permissions}
 
@@ -242,7 +248,7 @@ Utilizza questo progetto per creare Forms adattivo, distribuire aggiornamenti di
 >[!NOTE]
 >
 > Imposta il progetto basato su Archetipo AEM versione 30 o successiva per ottenere e utilizzare modelli di dati per moduli Microsoft® Dynamics 365 e Salesforce con AEM Forms as a Cloud Service.
-Imposta il progetto basato su Archetipo AEM versione 32 o successiva per ottenere e utilizzare i temi Tranquil, Urbane e Ultramarine con AEM Forms as a Cloud Service.
+> Imposta il progetto basato su Archetipo AEM versione 32 o successiva per ottenere e utilizzare i temi Tranquil, Urbane e Ultramarine con AEM Forms as a Cloud Service.
 
 Per impostare il progetto:
 
@@ -269,7 +275,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     * Quando si crea un progetto Archetipo con versione 45, il [Cartella progetto Archetipo AEM]/pom.xml inizialmente imposta la versione dei componenti core forms su 2.0.64. Prima di creare o distribuire il progetto Archetipo, aggiorna la versione dei componenti core forms al 2.0.62.
+     >* Quando si crea un progetto Archetipo con versione 45, il [Cartella progetto Archetipo AEM]/pom.xml inizialmente imposta la versione dei componenti core forms su 2.0.64. Prima di creare o distribuire il progetto Archetipo, aggiorna la versione dei componenti core forms al 2.0.62.
 
 1. Implementa il progetto nell’ambiente di sviluppo locale. Puoi utilizzare il seguente comando per distribuire nell’ambiente di sviluppo locale
 
