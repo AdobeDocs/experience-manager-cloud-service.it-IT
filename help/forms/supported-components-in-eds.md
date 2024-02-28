@@ -1,13 +1,17 @@
 ---
-description: Questo tutorial include tutte le informazioni relative ai componenti di EDS.
-title: Componenti modulo supportati nel blocco modulo - Tutorial per sviluppatori
+title: Componenti del modulo del servizio AEM Forms Edge Delivery
+description: Il servizio AEM Forms Edge Delivery è stato progettato per garantire prestazioni di picco, consentendoti di immaginare il futuro della raccolta dati semplificata e del coinvolgimento degli utenti. L’articolo elenca tutti i componenti Forms disponibili come predefiniti per i moduli EDD.
 feature: Edge Delivery Services
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+hide: true
+hidefromtoc: true
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '871'
 ht-degree: 5%
 
 ---
+
+
 
 
 # Componenti HTML supportati nella distribuzione Edge del blocco di modulo

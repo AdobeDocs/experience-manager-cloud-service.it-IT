@@ -4,30 +4,53 @@ description: Il servizio AEM Forms Edge Delivery è stato progettato per garanti
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 3%
+source-wordcount: '418'
+ht-degree: 4%
 
 ---
 
 
 # Servizio di consegna AEM Forms Edge {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms Edge Delivery Service è un servizio componibile offerto da Adobe che consente di creare e distribuire moduli web di forte impatto e dalle prestazioni elevate. Puoi utilizzare il servizio per:
 
-* **Captivate utenti con moduli straordinari**: crea moduli complessi e coinvolgenti con facilità utilizzando una libreria di componenti predefiniti. È possibile integrare facilmente reCAPTCHA, inviare moduli direttamente alle e-mail e consentire caricamenti di file senza soluzione di continuità in soluzioni di archiviazione sicure come Sharepoint, Azure Storage e Amazon S3. Puoi anche creare componenti di moduli personalizzati per realizzare la tua visione unica.
+<div>
+&lt;style="font-family: Arial, sans-serif; margin: 0; padding: 0;"&gt;
+    <main class="content">
+      <section class="content-section">
+        <p style="line-height: 1.5;">AEM Forms Edge Delivery Service è un servizio componibile offerto da Adobe che consente di creare e distribuire moduli web di forte impatto e dalle prestazioni elevate. Puoi utilizzare il servizio per:</p>
+        </section> <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Captivate utenti con moduli straordinari</h2>
+        <img src="/help/edge/assets/enrollment-form.png" alt="Modulo di iscrizione" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+        <p style="line-height: 1.5;">Crea moduli complessi e coinvolgenti con facilità utilizzando una libreria di componenti predefiniti. È possibile integrare facilmente reCAPTCHA, inviare moduli direttamente alle e-mail e consentire caricamenti di file senza soluzione di continuità in soluzioni di archiviazione sicure come Sharepoint, Azure Storage e Amazon S3. Puoi anche creare componenti di moduli personalizzati per realizzare la tua visione unica.</p>
+        </section> <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Crea moduli con punteggio faro perfetto</h2>
+        <img src="/help/edge/assets/lighthouse-forms.png" alt="punteggio faro perfetto per i moduli" style="float: right; margin: 20px 0 0 20px; width: 150px;">
+        <p style="line-height: 1.5;"> Crea moduli che vengono caricati e riprodotti rapidamente, anche su connessioni Internet lente. I tempi di caricamento più rapidi e l’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento dei moduli e a tassi di conversione migliorati.</p>
+        </section>
+        <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Creare esperienze di registrazione digitale con strumenti a tua scelta</h2>
+        <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Modulo di iscrizione" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+        <p style="line-height: 1.5;">Aumentare l’efficienza di authoring separando le origini di contenuto. È possibile utilizzare sia l’authoring di AEM che l’authoring basato su documenti. Di conseguenza, puoi lavorare con più origini di contenuto sullo stesso sito web e utilizzare gli strumenti di authoring preferiti, come Microsoft Excel, Google Sheets o AEM Editors.</p>
+        </section>
+</div>
 
-  ![Moduli di iscrizione](/help/edge/assets/enrollment-form.png)
 
-* **Crea moduli con punteggio faro perfetto**: crea moduli che vengono caricati ed eseguiti rapidamente, anche su connessioni Internet lente. I tempi di caricamento più rapidi e l’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento dei moduli e a tassi di conversione migliorati.
+<!-- >
+* **Captivate users with stunning forms**: 
+Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life. 
 
-  ![punteggio faro perfetto per i moduli](/help/edge/assets/lighthouse-forms.png)
+    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
 
-* **Creare esperienze di registrazione digitale con strumenti a tua scelta**: aumenta l’efficienza dell’authoring disaccoppiando le origini di contenuto. È possibile utilizzare sia l’authoring di AEM che l’authoring basato su documenti. Di conseguenza, puoi lavorare con più origini di contenuto sullo stesso sito web e utilizzare gli strumenti di authoring preferiti, come Microsoft Excel, Google Sheets o AEM Editors.
+* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
 
-  ![Strumenti di creazione di moduli Edge Delivery](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
 
+* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
+
+    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
 
