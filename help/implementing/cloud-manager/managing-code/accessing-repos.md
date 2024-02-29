@@ -2,12 +2,13 @@
 title: Accesso agli archivi
 description: Scopri come accedere e gestire l’archivio Git con la gestione self-service dell’account Git da Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 1b24fa084577f2ba0dc718ee35d12e42ac9d609c
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 94%
+source-wordcount: '270'
+ht-degree: 85%
 
 ---
+
 
 # Accesso agli archivi {#accessing-repos}
 
@@ -23,7 +24,7 @@ Cloud Manager consente di recuperare facilmente le informazioni sull’archivio 
 
    ![Pulsante Accedi a dati archivio nella scheda Ambienti](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Fai clic su **Visualizza informazioni archivio** per aprire una finestra di dialogo e visualizzare:
+1. Fai clic sul pulsante **Visualizza informazioni archivio** per aprire una finestra di dialogo e visualizzare:
 
    * L’URL dell’archivio Git di Cloud Manager.
    * Il nome utente di Git.
@@ -40,3 +41,9 @@ L’opzione **Accedi a dati archivio** è disponibile anche nella scheda delle p
 >[!NOTE]
 >
 >L’opzione **Accedi a dati archivio** è visibile agli utenti con i ruoli **Sviluppatore** o **Responsabile dell’implementazione**.
+
+## Revoca di una password di accesso {#revoke-password}
+
+Puoi revocare una password di accesso in qualsiasi momento. Per farlo, [crea un ticket di supporto per questa richiesta.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+
+Il biglietto sarà trattato con priorità alta e dovrebbe essere revocato entro un giorno.
