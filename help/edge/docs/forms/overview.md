@@ -4,39 +4,27 @@ description: Il servizio AEM Forms Edge Delivery è stato progettato per garanti
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 6fbeb94d3547d50e93ab80aee5d6458e51edb1da
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 4%
+source-wordcount: '419'
+ht-degree: 0%
 
 ---
 
 
-# Servizio di consegna AEM Forms Edge {#aem-forms-edge-delivery-service-overview}
+# Servizio di consegna AEM Forms Edge
 
+AEM Forms Edge Delivery Service è un servizio componibile offerto da Adobe che consente di creare e distribuire moduli web di forte impatto e dalle prestazioni elevate.
 
-<div style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
-        <main class="content">
-            <section class="content-section">
-                <p style="line-height: 1.5;">AEM Forms Edge Delivery Service è un servizio componibile offerto da Adobe che consente di creare e distribuire moduli web di forte impatto e dalle prestazioni elevate. Puoi utilizzare il servizio per:</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">Captivate utenti con moduli straordinari</h2>
-                <img src="/help/edge/assets/enrollment-form.png" alt="Modulo di iscrizione" style="float: left; margin: 0 20px 20px 0; width: 30%;">
-                <p style="line-height: 1.5;">Crea moduli complessi e coinvolgenti con facilità utilizzando una libreria di componenti predefiniti. È possibile integrare facilmente reCAPTCHA, inviare moduli direttamente alle e-mail e consentire caricamenti di file senza soluzione di continuità in soluzioni di archiviazione sicure come Sharepoint, Azure Storage e Amazon S3. Puoi anche creare componenti di moduli personalizzati per realizzare la tua visione unica.</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">Crea moduli con punteggio faro perfetto</h2>
-                <img src="/help/edge/assets/lighthouse-forms.png" alt="punteggio faro perfetto per i moduli" style="float: right; margin: 20px 0 0 20px; width: 30%;">
-                <p style="line-height: 1.5;"> Crea moduli che vengono caricati e riprodotti rapidamente, anche su connessioni Internet lente. I tempi di caricamento più rapidi e l’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento dei moduli e a tassi di conversione migliorati.</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">Creare esperienze di registrazione digitale con strumenti a tua scelta</h2>
-                <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Modulo di iscrizione" style="float: left; margin: 0 20px 20px 0; width: 30%;">
-                <p style="line-height: 1.5;">Aumentare l’efficienza di authoring separando le origini di contenuto. È possibile utilizzare sia l’authoring di AEM che l’authoring basato su documenti. Di conseguenza, puoi lavorare con più origini di contenuto sullo stesso sito web e utilizzare gli strumenti di authoring preferiti, come Microsoft Excel, Google Sheets o AEM Editors.</p>
-            </section>
-        </main>
-    </div>
+![Funzioni principali di EDS Forms](/help/edge/assets/eds-forms-key-features.png)
+
+Puoi utilizzare il servizio per:
+
+* **Captivate utenti con moduli straordinari**: crea moduli complessi e coinvolgenti con facilità utilizzando una libreria di componenti predefiniti. È possibile integrare facilmente reCAPTCHA, inviare moduli direttamente alle e-mail e consentire caricamenti di file senza soluzione di continuità in soluzioni di archiviazione sicure come Sharepoint, Azure Storage e Amazon S3. Puoi anche creare componenti di moduli personalizzati per realizzare la tua visione unica.
+
+* **Creare esperienze di registrazione digitale con strumenti a tua scelta**: aumenta l’efficienza dell’authoring disaccoppiando le origini di contenuto. È possibile utilizzare sia l’authoring basato su documenti (Microsoft 365 e Google Workspace) che l’authoring AEM (editor AEM). È quindi possibile utilizzare più origini di contenuto nello stesso sito Web e utilizzare gli strumenti di authoring preferiti, ad esempio Microsoft Excel, Google Sheets o Adaptive Forms Editor.
+
+* **Creare moduli con un punteggio perfetto per Lighthouse**: crea moduli che vengono caricati ed eseguiti rapidamente, anche su connessioni Internet lente. I tempi di caricamento più rapidi e l’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento dei moduli e a tassi di conversione migliorati.
 
 
 <!-- >
@@ -66,7 +54,7 @@ Build complex and engaging forms with ease using a library of pre-built componen
 
     -->
 
-## Inizia con le nozioni di base
+## Inizia a creare i moduli
 
 <div>
 
