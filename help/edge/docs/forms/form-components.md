@@ -4,9 +4,9 @@ description: Il servizio AEM Forms Edge Delivery è stato progettato per garanti
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 3%
 
 ---
@@ -57,8 +57,8 @@ Le seguenti proprietà sono supportate per i componenti modulo del blocco modulo
    </td>
   </tr>
       <tr>
-   <td>Segnaposto</td>
-   <td>Testo, ricerca, URL, telefono, e-mail, password e numero</td>
+   <td>Descrizione</td>
+   <td>Applicabile a tutti i campi</td>
    <td> L'attributo segnaposto fornisce all'utente un breve suggerimento sul tipo di informazioni previste nel campo.
    </td>
   </tr>

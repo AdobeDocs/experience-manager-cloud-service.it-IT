@@ -4,9 +4,9 @@ description: Il servizio AEM Forms Edge Delivery è stato progettato per garanti
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '872'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 AEM Forms Edge Delivery include un blocco modulo. Il blocco di modulo consente di creare facilmente moduli per l&#39;acquisizione e l&#39;archiviazione dei dati acquisiti.
 
-Il blocco Modulo supporta componenti di HTML-5 come testo, e-mail, numero, data e molto altro. Supporta inoltre elementi di area di testo, selezione e set di campi e include funzioni di convalida di input native per HTML-5. Il blocco modulo crea una struttura HTML uniforme per tutti i tipi di campi e i contenitori, garantendo la coerenza. Anche tu [assegnare uno stile ai tipi di campo](https://adobe-rnd.github.io/form-block/customization/styling_form) utilizzando `form.css` file.
+Il blocco Modulo supporta componenti OOTB HTML-5 come testo, e-mail, numero, data e molto altro. Supporta inoltre elementi di area di testo, selezione e set di campi e include funzioni di convalida di input native per HTML-5. Il blocco modulo crea una struttura HTML uniforme per tutti i tipi di campi e i contenitori, garantendo la coerenza. Anche tu [assegnare uno stile ai tipi di campo](https://adobe-rnd.github.io/form-block/customization/styling_form) utilizzando `form.css` file.
 
 ## Tipi di input HTML 5 supportati nel blocco modulo
 

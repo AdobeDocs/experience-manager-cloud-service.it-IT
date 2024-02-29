@@ -1,18 +1,18 @@
 ---
-title: Guida introduttiva del servizio di consegna Edge di AEM Forms
+title: Guida introduttiva di AEM Forms Edge Delivery Service. Creare un modulo.
 description: Forme perfette, veloce! ⚡ authoring basato su documento di AEM Forms Edge Delivery = velocità sorprendente e moduli compatibili con SEO per utenti e motori di ricerca più felici.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
 
 
-# Creare un modulo su AEM Forms Edge Delivery Service
+# Creare un modulo per un sito EDS (Edge Delivery Service)
 
 Nell’era digitale di oggi, la creazione di moduli facili da usare è essenziale per qualsiasi organizzazione. AEM Forms Edge Delivery consente di creare moduli utilizzando strumenti familiari come Word o Google Docs.
 
@@ -25,7 +25,7 @@ AEM Forms Edge Delivery fornisce un blocco modulo per facilitare la creazione di
 
 Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
-* Configura il progetto Github del servizio di consegna Edge (EDS) utilizzando il boilerplate dell’AEM e clona l’archivio Github corrispondente sul computer locale. Consulta [tutorial per sviluppatori](https://www.aem.live/developer/tutorial) per i dettagli. In questo documento, la cartella locale del progetto Edge Delivery Service (EDS) viene indicata come `[EDS Project repository]` .
+* Configura il progetto GitHub del servizio di consegna Edge (EDS) utilizzando il boilerplate AEM e clona l’archivio GitHub corrispondente sul computer locale. Consulta [tutorial per sviluppatori](https://www.aem.live/developer/tutorial) per i dettagli. In questo documento, la cartella locale del progetto Edge Delivery Service (EDS) viene indicata come `[EDS Project repository]` .
 * Clona il [Archivio Forms Block](https://github.com/adobe/afb) sul computer locale. Contiene il codice per eseguire il rendering del modulo su una pagina Web EDS. In questo documento, la cartella locale dell’archivio Forms Block viene indicata come `[Forms Block repository]`.
 * Assicurati di avere accesso a Google Sheets o Microsoft SharePoint. Per impostare Microsoft SharePoint come origine di contenuto, vedere [Come utilizzare Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
@@ -35,63 +35,76 @@ Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
 +++ Passaggio 1: aggiungi il blocco Form al progetto Edge Delivery Service (EDS).
 
-Il `Form block` include la possibilità di aggiungere un modulo a un sito EDS. Il blocco non è incluso nel progetto creato utilizzando il boilerplate AEM. Per includere il blocco del modulo nel progetto del servizio di consegna Edge:
+Il blocco Modulo consente agli utenti di creare moduli per un sito del servizio di consegna Edge. Tuttavia, questo blocco non è incluso nel boilerplate predefinito dell’AEM (utilizzato per creare un progetto Edge Delivery Service). Per integrare facilmente il blocco del modulo nel progetto del servizio di consegna Edge:
 
-1. Accedi a `[Forms Block repository]/blocks` sul computer locale e copia il file `form` cartella.
+1. **Individua l’archivio del blocco di moduli:** Accedere a [Archivio Forms Block]/blocca la cartella sul computer locale e copia `form` cartella.
+1. **Incollare il blocco di modulo nel progetto EDS:**
+Accedi a [Archivio di progetti EDS]/block/ nel computer locale e incolla la cartella del modulo.
+1. **Commit delle modifiche su GitHub:** Archivia la cartella del modulo e i relativi file sottostanti nel progetto del servizio di consegna Edge su GitHub.
 
-1. Accedi a `[EDS Project repository]/blocks/` nel computer locale e incolla il file `form` cartella.
+Dopo aver completato questi passaggi, il blocco modulo viene integrato correttamente nell’archivio di progetto Edge Delivery Service (EDS) su GitHub.
 
-1. Archivia `form` cartella e i file sottostanti al progetto del servizio di consegna Edge su GitHub.
 
-   Il blocco Form viene aggiunto all’archivio dei progetti EDS su GitHub. Assicurati che la build GitHub non abbia esito negativo:
+**Risoluzione dei problemi di build di GitHub**
 
-   * Se riscontri un errore di tipo &quot;Impossibile risolvere il percorso del modulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, apri la `[EDS Project]/blocks/forms/form.js` file. Nell&#39;istruzione import sostituire `lib-franklin.js` file con `aem.js` file.
+Garantire un processo di generazione GitHub fluido affrontando potenziali problemi:
 
-   * In caso di errori di colorazione, è possibile ignorarli. Per ignorare i controlli di linting, aprire `[EDS Project]\package.json` e aggiorna lo script &quot;lint&quot; da `"lint": "npm run lint:js && npm run lint:css"` a `"lint": "echo 'skipping linting for now'"`. Salva il file e esegui il commit nel progetto GitHub.
+* **Errore nel percorso del modulo di risoluzione:**
+Se viene visualizzato l&#39;errore &quot;Impossibile risolvere il percorso del modulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, passare alla [Progetto EDS]file /blocks/forms/form.js. Aggiorna l’istruzione di importazione sostituendo il file lib-franklin.js con il file aem.js.
 
-È ora possibile creare un modulo e aggiungerlo al sito.
+* **Gestisci errori di stampa:**
+In caso di errori di stampa, è possibile ignorarli. Apri [Progetto EDS]/package.json file e modifica lo script &quot;lint&quot; da &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; a &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;. Salva il file e conferma le modifiche nel progetto GitHub.
+
+
 
 +++
 
 +++ Passaggio 2: creare un modulo utilizzando Microsoft Excel o Foglio Google.
 
-Anziché processi complessi, è possibile creare facilmente un modulo utilizzando un foglio di calcolo. È possibile iniziare aggiungendo le righe e le intestazioni di colonna a un foglio di calcolo, in cui ogni riga definisce un campo modulo e ogni intestazione di colonna definisce le proprietà dei campi modulo corrispondenti.
+Invece di navigare attraverso processi complessi, la creazione di un modulo può essere ottenuta facilmente utilizzando un foglio di calcolo. È possibile iniziare aggiungendo le righe e le intestazioni di colonna a un foglio di calcolo, in cui ogni riga rappresenta un campo modulo, mentre ogni intestazione di colonna definisce le proprietà del campo corrispondente.
 
-Ad esempio, nel foglio di calcolo seguente, le righe definiscono i campi per un `contact us` l&#39;intestazione di modulo e colonna definisce le proprietà dei campi corrispondenti.
+Ad esempio, considera il seguente foglio di calcolo in cui le righe contornano i campi per un `enquiry` le intestazioni di maschera e colonna definiscono le relative proprietà:
 
-![contattaci foglio di calcolo](/help/edge/assets/contact-us-form-spreadsheet.png)
+![Foglio di calcolo interrogazione](/help/edge/assets/enquiry-form-spreadsheet.png)
 
-Per creare un modulo:
+Per procedere con la creazione del modulo:
 
-1. Apri la cartella del progetto AEM Edge Delivery su Microsoft SharePoint o Google Drive.
+1. Accedi alla cartella del progetto AEM Edge Delivery su Microsoft SharePoint o Google Drive.
 
-1. Crea una cartella di lavoro di Microsoft Excel o un foglio di Google ovunque sotto la directory di progetto AEM Edge Delivery. Ad esempio, crea un foglio di calcolo denominato `contact-us` nella directory del progetto AEM Edge Delivery su Google Drive.
+1. Crea una cartella di lavoro di Microsoft Excel o un foglio di Google ovunque all’interno della directory di progetto AEM Edge Delivery. Ad esempio, crea un foglio di calcolo denominato `enquiry` nella directory del progetto AEM Edge Delivery su Google Drive.
 
-1. Assicurati che il foglio sia condiviso con l’utente AEM (ad esempio `helix@adobe.com`) [configurato per il progetto](https://www.aem.live/docs/setup-customer-sharepoint) e l’utente dispone delle autorizzazioni di modifica per il foglio.
+1. Assicurati che il foglio sia condiviso con l’utente AEM appropriato (ad esempio `helix@adobe.com`) [in base alle configurazioni specificate per il progetto](https://www.aem.live/docs/setup-customer-sharepoint). Concedere all&#39;utente l&#39;autorizzazione di modifica per il foglio.
 
-1. Aprire il foglio di calcolo creato e impostare il nome del foglio predefinito su &quot;shared-default&quot;.
+1. Apri il foglio di calcolo creato e rinomina il foglio predefinito in &quot;shared-default&quot;.
 
    ![rinominare il foglio predefinito in &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Per aggiungere i campi del modulo, aggiungi le righe e le intestazioni di colonna al `shared-default` , in cui ogni riga definisce un campo modulo e ogni intestazione di colonna definisce [proprietà](/help/edge/docs/forms/eds-form-field-properties)) dei campi modulo corrispondenti.
+1. Per aggiungere i campi modulo, inserire righe e intestazioni di colonna nel foglio &quot;shared-default&quot;. Ogni riga deve rappresentare un campo modulo, con intestazioni di colonna che definiscono il campo corrispondente [proprietà](/help/edge/docs/forms/eds-form-field-properties).
 
-   Per iniziare rapidamente, puoi copiare il contenuto della [contattaci foglio di calcolo](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link) nel foglio di calcolo.
+   Per un avvio rapido, è consigliabile copiare il contenuto della [Foglio di calcolo interrogazione](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) nel foglio di calcolo. Dopo aver copiato il contenuto, salva il foglio di calcolo.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
-1. Utilizzare [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare in anteprima e pubblicare il foglio.
 
-   ![Utilizza AEM Sidekick per visualizzare in anteprima e pubblicare il foglio](/help/edge/assets/preview-form.png)
+1. Utilizzare [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l&#39;anteprima del foglio.
 
-   In anteprima e pubblicazione, il browser apre nuove schede che visualizzano il contenuto del foglio in formato JSON. Assicurati di prendere nota dell’URL live, in quanto è necessario per il rendering del modulo in un secondo momento.
+   ![Utilizza AEM Sidekick per visualizzare l’anteprima del foglio](/help/edge/assets/preview-form.png)
 
-   Il formato dell’URL è:
+   In anteprima e pubblicazione, nelle nuove schede del browser il contenuto del foglio viene visualizzato in formato JSON. Assicurati di acquisire l’URL di anteprima, in quanto è necessario per il rendering del modulo nella sezione successiva. Il formato dell’URL è il seguente:
+
 
    ```JSON
-   https://<branch>--<repository>--<owner>.hlx.live/<form>.json
-   
-   For example, https://main--portal--wkndforms.hlx.live/contact-us.json
+       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
    ```
+
+   * `<branch>` fa riferimento al ramo dell’archivio GitHub.
+   * `<repository>` denota l’archivio GitHub.
+   * `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
+
+   Ad esempio, se l’archivio del progetto è denominato &quot;portale&quot;, si trova sotto l’account &quot;wkndforms&quot; e stai utilizzando il ramo &quot;principale&quot;, l’URL avrà l’aspetto seguente:
+
+   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+
 
 +++
 
@@ -100,30 +113,30 @@ Per creare un modulo:
 
 A questo punto è stato aggiunto il blocco modulo al progetto EDS e ne è stata preparata la struttura. Ora, per visualizzare l’anteprima del modulo:
 
-1. Vai all’account Microsoft SharePoint o Google Drive e apri la directory del progetto AEM Edge Delivery.
+1. **Accedere alla directory dei progetti:** Apri l’account Microsoft SharePoint o Google Drive e passa alla directory del progetto AEM Edge Delivery.
 
-1. Aprire un file documento per incorporarvi il modulo. Ad esempio, apri il file di indice. È inoltre possibile creare un nuovo file di documento.
+1. **Incorpora il modulo in un documento:** Aprire un file di documento, ad esempio un file di indice, per incorporare il modulo. In alternativa, è possibile creare un nuovo documento.
 
-1. Passare alla posizione desiderata all&#39;interno del documento in cui si desidera aggiungere il modulo.
+1. **Passa alla posizione desiderata:** Spostarsi nella posizione desiderata all&#39;interno del documento in cui si desidera aggiungere il modulo.
 
-1. Aggiungi al file un blocco denominato &quot;Modulo&quot;, simile a quello visualizzato di seguito.
+1. **Aggiungi il blocco modulo:** Inserisci nel file un blocco denominato &quot;Modulo&quot;, come illustrato di seguito:
 
-   ![](/help/edge/assets/form-block-in-sites-page-example.png)
+   | Modulo |
+   |---|
+   | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
 
-   Nella seconda riga, includi come collegamento ipertestuale l’URL registrato nella sezione precedente. Utilizza l’URL di anteprima (.page URL) a scopo di sviluppo o test oppure l’URL di pubblicazione (.live) per la produzione.
+   Questo blocco funge da segnaposto in cui è incorporato il modulo. Nella seconda riga del blocco, aggiungi l’URL di anteprima del `<form>.json` come collegamento ipertestuale.
 
    >[!IMPORTANT]
    >
    >
-   > Assicurati che l’URL sia collegato tramite collegamento ipertestuale anziché presentato come testo normale.
+   > Verificare che l&#39;URL sia formattato come collegamento ipertestuale anziché come testo normale.
 
 
-1. Utilizzare [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l&#39;anteprima della pagina. Nella pagina viene ora visualizzato il modulo.
-
-   Ad esempio, questo è il modulo basato su [contattaci foglio di calcolo](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link):
+1. Utilizzare [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l&#39;anteprima del documento. Nella pagina viene ora visualizzato il modulo. Ad esempio, questo è il modulo basato su [foglio di calcolo interrogazione](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
 
 
-   ![Un esempio di modulo EDS](/help/edge/assets/eds-form.png)
+   [![Un esempio di modulo EDS](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
 
    A questo punto, compilare il modulo e fare clic sul pulsante Invia, si verifica un errore simile al seguente, perché il foglio di calcolo non è ancora impostato per accettare i dati.
 
