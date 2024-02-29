@@ -4,9 +4,9 @@ description: Forme perfette, veloce! ⚡ authoring basato su documento di AEM Fo
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Per procedere con la creazione del modulo:
 
    ![rinominare il foglio predefinito in &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Per aggiungere i campi modulo, inserire righe e intestazioni di colonna nel foglio &quot;shared-default&quot;. Ogni riga deve rappresentare un campo modulo, con intestazioni di colonna che definiscono il campo corrispondente [proprietà](/help/edge/docs/forms/eds-form-field-properties).
+1. Per aggiungere i campi modulo, inserire righe e intestazioni di colonna nel foglio &quot;shared-default&quot;. Ogni riga deve rappresentare un [campo modulo](/help/edge/docs/forms/form-components.md), con intestazioni di colonna che definiscono il campo corrispondente [proprietà](/help/edge/docs/forms/eds-form-field-properties).
 
    Per un avvio rapido, è consigliabile copiare il contenuto della [Foglio di calcolo interrogazione](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) nel foglio di calcolo. Dopo aver copiato il contenuto, salva il foglio di calcolo.
 
@@ -153,6 +153,7 @@ A questo punto è stato aggiunto il blocco modulo al progetto EDS e ne è stata 
 
 ## Vedi altro
 
+* [Componenti del modulo](/help/edge/docs/forms/form-components.md)
 * [Proprietà del campo modulo](/help/edge/docs/forms/eds-form-field-properties)
 * [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
 * [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
