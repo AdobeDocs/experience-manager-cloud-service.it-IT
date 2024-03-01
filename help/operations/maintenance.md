@@ -2,10 +2,10 @@
 title: Attività di manutenzione in AEM as a Cloud Service
 description: Scopri le attività di manutenzione in AEM as a Cloud Service e come configurarle.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4b6f1233b8b21c511b9495151d812e4ededfce11
+source-git-commit: af690ee4c1c0c13bffa179c68423993361385a45
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 62%
+source-wordcount: '1123'
+ht-degree: 60%
 
 ---
 
@@ -20,7 +20,7 @@ Le attività di manutenzione sono processi eseguiti secondo una pianificazione a
 
 ## Configurazione delle attività di manutenzione {#maintenance-tasks-configuring}
 
-Nelle versioni precedenti di AEM, era possibile configurare le attività di manutenzione utilizzando la scheda Manutenzione (Strumenti > Operazioni > Manutenzione). In AEM as a Cloud Service la scheda di manutenzione non è più disponibile, pertanto le configurazioni devono essere salvate nel controllo sorgente e distribuite utilizzando Cloud Manager. Adobe gestisce le attività di manutenzione che presentano impostazioni non configurabili dai clienti (ad esempio, Raccolta rifiuti del datastore, Eliminazione del log di audit, Pulizia delle versioni). I clienti possono configurare altre attività di manutenzione, come descritto nella tabella seguente.
+Nelle versioni precedenti di AEM, era possibile configurare le attività di manutenzione utilizzando la scheda Manutenzione (Strumenti > Operazioni > Manutenzione). In AEM as a Cloud Service la scheda di manutenzione non è più disponibile, pertanto le configurazioni devono essere salvate nel controllo sorgente e distribuite utilizzando Cloud Manager. Adobe gestisce le attività di manutenzione che presentano impostazioni non configurabili dai clienti (ad esempio, Raccolta oggetti inattivi del datastore). I clienti possono configurare altre attività di manutenzione, come descritto nella tabella seguente.
 
 >[!CAUTION]
 >
