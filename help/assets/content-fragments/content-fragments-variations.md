@@ -2,7 +2,7 @@
 title: Varianti - Authoring dei contenuti di frammenti (Assets - Frammenti di contenuto)
 description: Scopri in che modo le varianti di Frammento di contenuto consentono di creare contenuti per il frammento, quindi di creare varianti di tale contenuto in base allo scopo, aumentando così la flessibilità.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 52%
@@ -17,9 +17,9 @@ ht-degree: 52%
 >
 >I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
 >
->Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console).
+>Sono disponibili due editor per la creazione di frammenti di contenuto. Questa sezione riguarda il editor originale, a cui si accede principalmente dalla **console Assets** . Per informazioni dettagliate sul nuovo editor (accessibile principalmente dalla console Frammenti **di contenuto, consultate la documentazione [Sites Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md)).**
 
-Dalla sezione **Varianti** scheda è possibile effettuare le seguenti operazioni:
+Dall&#39;scheda **Varianti** è possibile effettuare le seguenti operazioni:
 
 * [Inserire il contenuto](#authoring-your-content) del frammento
 * [Creare e gestire le varianti](#managing-variations) del contenuto **principale**
@@ -28,7 +28,7 @@ Puoi eseguire una serie di altre azioni a seconda del tipo di dati in corso di m
 
 * [Inserire risorse visive nel frammento](#inserting-assets-into-your-fragment) (immagini)
 
-* Seleziona tra [Rich Text](#rich-text), [Testo normale](#plain-text), e [Markdown](#markdown) per la modifica
+* Selezionare tra [RTF](#rich-text), [Testo](#plain-text) normale e [Markdown](#markdown) per la modifica
 
 * [Caricare contenuti](#uploading-content)
 
@@ -91,7 +91,7 @@ Viene aperto l’editor di testo a schermo intero:
 
 ![editor a schermo intero](assets/cfm-variations-fullscreentexteditor.png)
 
-L’editor di testo a schermo intero fornisce:
+Il testo a schermo intero editor fornisce:
 
 * accesso a varie [azioni](#actions);
 * a seconda del [formato](#formats), opzioni di formattazione aggiuntive ([Testo formattato](#rich-text))
@@ -188,9 +188,9 @@ Se il modello per frammenti di contenuto contiene riferimenti frammento, gli aut
 
 #### Modifica frammento di contenuto {#fragment-references-edit-content-fragment}
 
-Opzione **Modifica frammento di contenuto** apre il frammento in una nuova scheda dell’editor (nella stessa scheda del browser).
+L&#39;opzione **Modifica frammento di contenuto apre tale frammento** in una nuova editor scheda (all&#39;interno dello stesso browser scheda).
 
-Selezionando di nuovo la scheda originale (ad esempio, **Little Pony Inc.**) chiude questa scheda secondaria (in questo caso, **Adam Smith**).
+Selezionando nuovamente il scheda originale (ad esempio, Little Pony Inc.) si chiude questo scheda secondario (in questo caso, **** Adam Smith **).**
 
 ![Riferimenti frammento](assets/cfm-variations-editreference.png)
 
@@ -198,11 +198,11 @@ Selezionando di nuovo la scheda originale (ad esempio, **Little Pony Inc.**) chi
 
 Opzione **Nuovo frammento di contenuto** consente di creare un frammento. A questo scopo, nell’editor viene visualizzata una variante della procedura guidata per creare un frammento di contenuto.
 
-**Per creare un frammento di contenuto:**
+**Per creare un frammento contenuto:**
 
 1. Individua e seleziona la cartella desiderata.
 1. Seleziona **Avanti**.
-1. Specifica delle proprietà; ad esempio, **Titolo**.
+1. Specificare le proprietà; Ad esempio, **Titolo**.
 1. Seleziona **Crea**.
 1. Infine:
    1. **Fine**:
@@ -222,7 +222,7 @@ Esempio:
 
 ### Caricamento del contenuto {#uploading-content}
 
-Per semplificare il processo di creazione dei frammenti di contenuto, puoi caricare il testo, prepararlo in un editor esterno e aggiungerlo direttamente al frammento.
+Per semplificare il processo di creazione contenuto frammenti, potete caricare del testo, preparato in un editor esterno, e aggiungerlo direttamente al frammento.
 
 ### Ottenere un riepilogo del testo {#summarizing-text}
 
@@ -271,8 +271,8 @@ La funzione di riepilogo del testo è progettata per aiutare gli utenti a ridurr
 1. Il testo originale viene visualizzato affiancato al riepilogo proposto:
 
    * Tutte le frasi da eliminare sono evidenziate in rosso e barrate.
-   * Fai clic su una frase evidenziata in modo da mantenerla nel contenuto del riepilogo.
-   * Fai clic su una frase non evidenziata in modo da poterla eliminare.
+   * Fai clic su una frase evidenziata in modo da mantenerla nella contenuto riassuntiva.
+   * Fai clic su una frase non evidenziata in modo da eliminarla.
    * Vengono visualizzate le statistiche di riepilogo: **Effettivo** e **Destinazione**
    * È possibile **visualizzare in nteprima** le modifiche.
 
@@ -298,15 +298,15 @@ Per annotare un frammento:
 
    ![annota](assets/cfm-variations-annotations-apply-icon.png)
 
-   Se l’annotazione è stata applicata al testo selezionato, il testo rimane evidenziato.
+   Se il annotazione è stato applicato al testo selezionato, tale testo rimane evidenziato.
 
    ![annota](assets/cfm-variations-07b.png)
 
-1. Se chiudi l’editor a schermo intero, le annotazioni restano evidenziate. Se selezionata, viene visualizzata una finestra di dialogo che consente di modificare ulteriormente l’annotazione.
+1. Se chiudi l’editor a schermo intero, le annotazioni restano evidenziate. Se questa opzione è selezionata, viene visualizzata una finestra di dialogo che consente di modificare ulteriormente la annotazione.
 
 1. Seleziona **Salva**.
 
-1. Se chiudi l’editor a schermo intero, le annotazioni restano evidenziate. Se selezionata, viene visualizzata una finestra di dialogo che consente di modificare ulteriormente l’annotazione.
+1. Se chiudi l’editor a schermo intero, le annotazioni restano evidenziate. Se questa opzione è selezionata, viene visualizzata una finestra di dialogo che consente di modificare ulteriormente la annotazione.
 
    ![annota](assets/cfm-variations-07c.png)
 
@@ -349,7 +349,7 @@ Vengono aggiunte alla sequenza di paragrafi del frammento senza formattazione; l
 
    ![icona inserisci risorsa](assets/cfm-variations-09.png)
 
-1. Nella finestra di dialogo, puoi passare alla risorsa richiesta in DAM oppure cercare la risorsa in DAM.
+1. Nella finestra di dialogo, è possibile passare al risorsa richiesto in DAM o ricerca per il risorsa in DAM.
 
    Una volta individuata, seleziona la risorsa desiderata facendo clic sulla miniatura.
 
@@ -387,22 +387,22 @@ Vengono aggiunti come riferimento nella posizione corrente all’interno del fra
 
    ![icona Inserisci frammento di contenuto](assets/cfm-variations-13.png)
 
-1. Nella finestra di dialogo, puoi passare al frammento richiesto nella cartella Risorse oppure cercare il frammento.
+1. Nella finestra di dialogo, è possibile individuare il frammento richiesto nella cartella Assets oppure ricerca il frammento.
 
-   Una volta individuato, seleziona il frammento desiderato facendo clic sulla miniatura.
+   Una volta individuato, selezionare il frammento desiderato facendo clic sulla miniatura.
 
 1. Utilizza **Seleziona** per aggiungere al frammento corrente (nella posizione corrente) un riferimento al frammento di contenuto selezionato.
 
    >[!CAUTION]
    >
-   >Dopo aver aggiunto un riferimento a un altro frammento, se modifichi il formato in:
+   >Dopo aver aggiunto un riferimento a un altro frammento, se si cambia il formato in:
    >
    >* **Testo normale**: il riferimento viene perso dal frammento.
    >* **Markdown**: il riferimento rimane.
 
 ## Ereditarietà {#inheritance}
 
-L’ereditarietà è il meccanismo in cui il contenuto può essere inviato automaticamente da un frammento all’altro. I campi ereditati e le varianti possono essere il prodotto di [Gestione multisito](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+L’ereditarietà è il meccanismo in cui il contenuto può essere inviato automaticamente da un frammento all’altro. I campi ereditati e le varianti possono essere il prodotto di [Gestione multisito](/help/assets/content-fragments/content-fragments-msm.md).
 
 È possibile annullare l’ereditarietà, quindi riabilitarla. A seconda del contesto, questo può essere disponibile per una variante o per un singolo campo, se il frammento fa parte di una Live Copy.
 
@@ -428,19 +428,19 @@ Esempio:
 
 ### Creazione di una variante {#creating-a-variation}
 
-Le varianti consentono di utilizzare **Principale** e modificarlo in base allo scopo (se necessario).
+Le varianti consentono di prendere il **contenuto Master** e variarlo in base allo scopo (se necessario).
 
 **Per creare una variante:**
 
 1. Apri il frammento e accertati che il pannello laterale sia visibile.
 1. Seleziona **Varianti** dalla barra delle icone nel pannello laterale.
 1. Seleziona **Crea variante**.
-1. Viene visualizzata una finestra di dialogo che consente di specificare **Titolo** e **Descrizione** per la nuova variante.
+1. Viene visualizzata una finestra di dialogo in cui è possibile specificare il Titolo **e** il **Descrizione** per la nuova variante.
 1. Seleziona **Aggiungi**, il frammento **Principale** viene copiato nella nuova variante, che è ora aperta per la [modifica](#editing-a-variation).
 
    >[!NOTE]
    >
-   >Quando crei una variante, il valore **Principale** viene copiata, non la variante aperta.
+   >Quando crei una variante, viene sempre copiata la **variante principale** , non quella aperta.
 
    >[!NOTE]
    >
@@ -511,8 +511,8 @@ Quando modifichi una variante, hai accesso all’azione per sincronizzare l’el
 
 1. L’elemento Principale e la variante vengono visualizzati affiancati:
 
-   * Il contenuto aggiunto alla variante è indicato in verde
-   * Il rosso indica che il contenuto è stato rimosso (dalla variante)
+   * Il verde indica che contenuto è stato aggiunto (alla variante)
+   * Il rosso indica che contenuto è stato rimosso (dalla variante)
    * Il testo sostituito è indicato in blu.
 
    ![sincronizzazione con l’elemento principale](assets/cfm-variations-11c.png)

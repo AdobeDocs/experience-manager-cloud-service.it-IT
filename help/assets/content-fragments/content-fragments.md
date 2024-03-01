@@ -1,10 +1,10 @@
 ---
 title: Utilizzo dei frammenti di contenuto (Risorse - Frammenti di contenuto)
-description: Scopri come i Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per l’authoring delle pagine e la distribuzione headless. Inoltre, come possono essere utilizzati insieme a MSM.
+description: Scopri il modo in cui i frammenti di contenuto in Adobe Experience Manager (AEM) come Cloud Service consentono di progettare, creare, perfezionare e utilizzare contenuto indipendenti dalla pagina, ideali per l'authoring delle pagine e la distribuzione headless. Anche come possono essere utilizzati insieme a MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2228'
 ht-degree: 57%
 
 ---
@@ -36,9 +36,9 @@ I frammenti di contenuto possono essere consegnati anche in formato JSON, utiliz
 >
 >I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
 >
->Ora sono gestite principalmente con **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** , anche se possono ancora essere gestite dalla **Risorse** console. Questa sezione riguarda la gestione da **Risorse** console.
+>Ora sono gestiti principalmente con la **[console Frammenti di](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** contenuto, anche se possono ancora essere gestiti dalla **console Assets** . Questa sezione riguarda la gestione da **Risorse** console.
 >
->Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console). Entrambi gli editor dispongono di un interruttore nella barra degli strumenti superiore per consentire un accesso rapido all’altro editor.
+>Sono disponibili due editor per la creazione di frammenti di contenuto. Questa sezione riguarda il editor originale, a cui si accede principalmente dalla **console Assets** . Per informazioni dettagliate sul nuovo editor (accessibile principalmente dalla console Frammenti **di contenuto, consultate la documentazione [Sites Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md)).** Entrambi gli editor hanno un interruttore a levetta nella barra degli strumenti superiore per fornire accesso rapida all&#39;altro editor.
 
 Questa pagina e quelle seguenti descrivono le attività di creazione, configurazione, manutenzione e utilizzo dei frammenti di contenuto:
 
@@ -67,7 +67,7 @@ Il numero di canali di comunicazione aumenta ogni anno. In genere i canali si di
 * Canale fisico; ad esempio, desktop, dispositivi mobili.
 * Forma di consegna in un canale fisico, ad esempio “pagina dei dettagli di un prodotto”, “pagina della categoria del prodotto” per desktop oppure “web mobile”, “app mobile” per dispositivi mobili.
 
-Tuttavia, probabilmente non vorrai utilizzare lo stesso contenuto per tutti i canali, ma dovrai ottimizzarlo in base al canale specifico.
+Tuttavia, (probabilmente) non vuoi utilizzare lo stesso contenuto per tutti i canali: devi ottimizzare il tuo contenuto in base al canale specifico.
 
 I frammenti di contenuto consentono di:
 
@@ -76,9 +76,9 @@ I frammenti di contenuto consentono di:
 * creare pool di contenuti per una serie di canali;
 * progettare varianti di contenuto per canali specifici;
 * aggiungere immagini al testo inserendo delle risorse (frammenti con elementi multimediali diversi);
-* Crea contenuti nidificati in modo da riflettere la complessità dei dati.
+* Crea contenuto nidificate in modo da riflettere la complessità dei dati.
 
-Questi frammenti di contenuto possono quindi essere assemblati per fornire esperienze su vari canali.
+Questi contenuto frammenti possono quindi essere assemblati per fornire esperienze su vari canali.
 
 >[!NOTE]
 >
@@ -114,23 +114,13 @@ Insieme alle funzionalità di esportazione JSON dei componenti core di AEM, tali
 >
 >AEM supporta anche la traduzione del contenuto dei frammenti. Per ulteriori informazioni, consulta [Traduzione ddelle risorse](/help/assets/translate-assets.md).
 
-## Riutilizzo dei frammenti di contenuto con MSM per le risorse {#reusing-content-fragments-with-msm-assets}
-
-Quando si accede tramite il **Risorse** , puoi utilizzare MSM e creare Live Copy per i tuoi frammenti.
-
-Per ulteriori dettagli, consulta [Riutilizzare i frammenti di contenuto con MSM per le risorse](/help/assets/reuse-assets-using-msm.md). Ciò consente [ereditarietà](/help/assets/content-fragments/content-fragments-variations.md#inheritance) sia per le varianti che per i singoli campi dei frammenti.
-
->[!CAUTION]
->
->Se desideri utilizzare MSM (che crea copie dei frammenti di contenuto), qualsiasi **Univoco** I vincoli devono essere rimossi da tutti i tipi di dati utilizzati nel rispettivo [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md).
-
 ## Tipo di contenuto {#content-type}
 
 I frammenti di contenuto sono:
 
 * Memorizzati come **Risorse**:
 
-   * I frammenti di contenuto (e le relative varianti) possono essere creati e manutenuti dalla sezione **Risorse** console.
+   * I frammenti di contenuto (e le **relative varianti) possono essere creati e gestiti dalla console Assets** .
    * Vengono creati e modificati nell’Editor frammenti di contenuto.
 
 * Utilizzato in [Editor pagina per componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
@@ -141,10 +131,10 @@ I frammenti di contenuto sono:
 
 I frammenti di contenuto sono una struttura di contenuto che:
 
-* Non disporre di layout o progettazione (in modalità Testo formattato è possibile formattare del testo).
-* Contengono uno o più [parti costitutive](#constituent-parts-of-a-content-fragment).
-* [Contengono immagini o possono essere collegate ad esse](#fragments-with-visual-assets).
-* Viene utilizzato [contenuto intermedio](#in-between-content-when-page-authoring-with-content-fragments) quando viene fatto riferimento a in una pagina.
+* Non disporre di layout o progettazione (in modalità RTF è possibile effettuare alcune formattazioni del testo).
+* Contenere una o più [parti](#constituent-parts-of-a-content-fragment) costitutive.
+* [Contengono immagini o possono essere collegate a tali immagini](#fragments-with-visual-assets).
+* Viene utilizzato [tra un contenuto](#in-between-content-when-page-authoring-with-content-fragments) e l&#39;altro quando viene fatto riferimento in una pagina.
 * Sono indipendenti dal meccanismo di consegna (ovvero, pagina, canale).
 
 ### Frammenti con risorse visive {#fragments-with-visual-assets}
@@ -165,9 +155,9 @@ Le risorse possono essere utilizzate con un frammento di contenuto in diversi mo
 
 * **Contenuto associato**
 
-   * Connesso a un frammento, ma non a una parte fissa del frammento (vedi [Parti costitutive di un frammento di contenuto](#constituent-parts-of-a-content-fragment)).
+   * Collegato a un frammento; ma non una parte fissa del frammento (vedere [Parti costitutive di un frammento](#constituent-parts-of-a-content-fragment) di contenuto).
    * Ha una certa flessibilità per il posizionamento.
-   * Facilmente disponibile per l’uso (come contenuto intermedio) quando si utilizza il frammento su una pagina.
+   * Facilmente disponibile per l&#39;uso (come contenuto intermedio) quando si utilizza il frammento in una pagina.
 
   Per ulteriori informazioni vedi [Contenuto associato](/help/assets/content-fragments/content-fragments-assoc-content.md).
 
@@ -265,7 +255,7 @@ Contenuto intermedio:
 
 * Può essere utilizzato nell’Editor pagina quando si lavora con frammenti di contenuto.
 * [Contenuto aggiuntivo aggiunto all’interno del flusso di un frammento](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-in-between-content) dopo che è stato utilizzato o inserito come riferimento in una pagina.
-* Disponibile per l&#39;uso in [Editor pagina quando si lavora con frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md).
+* Disponibile nell&#39;editor [di Pagina quando si lavora con frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md).
 * Il contenuto intermedio può essere aggiunto a qualsiasi frammento, in cui è visibile un solo elemento.
 * È possibile utilizzare il contenuto associato, così come le risorse e/o i componenti dal browser appropriato.
 
@@ -288,15 +278,30 @@ Per creare frammenti di contenuto, è necessario:
    * Durante l’authoring del contenuto di un frammento, gli autori non possono modificare la struttura definita.
    * Le modifiche apportate a un modello dopo la creazione dei frammenti di contenuto dipendenti possono influire su tali frammenti di contenuto.
 
-Per utilizzare i frammenti di contenuto per l’authoring delle pagine, è inoltre necessario:
+Per utilizzare i frammenti di contenuto per l&#39;authoring delle pagine, è inoltre necessario disporre di:
 
 * **Componente Frammento di contenuto**
 
    * Essenziale per distribuire il frammento in formato HTML, JSON o entrambi.
    * Obbligatorio per [fare riferimento al frammento in una pagina](/help/sites-cloud/authoring/fragments/content-fragments.md).
    * Responsabile del layout e della distribuzione di un frammento, ovvero i canali.
-   * I frammenti devono disporre di uno o più componenti dedicati per definire il layout e fornire alcuni o tutti gli elementi/varianti e i contenuti associati.
-   * Quando si trascina un frammento su una pagina durante l’authoring, il componente richiesto viene associato automaticamente.
+   * I frammenti necessitano di uno o più componenti dedicati per definire il layout e fornire alcuni o tutti gli elementi/varianti e le contenuto associate.
+   * Se si trascina un frammento su una pagina in authoring, il componente richiesto viene associato automaticamente.
+
+## Riutilizzo di frammenti di contenuto con MSM (per Assets) {#reusing-content-fragments-with-msm-assets}
+
+Se accedi tramite la **console Assets** , puoi utilizzare MSM e creare Live Copy per i tuoi frammenti.
+
+Per ulteriori dettagli, consulta:
+
+* [Riutilizzare i frammenti di contenuto con MSM (per le risorse)](/help/assets/content-fragments/content-fragments-msm.md)
+* [Riutilizzare le risorse tramite MSM per le risorse](/help/assets/reuse-assets-using-msm.md).
+
+Questi attivano [ereditarietà](/help/assets/content-fragments/content-fragments-variations.md#inheritance) sia per le varianti che per i singoli campi dei frammenti.
+
+>[!CAUTION]
+>
+>Se desideri utilizzare MSM (che crea copie dei frammenti di contenuto), qualsiasi **Univoco** I vincoli devono essere rimossi da tutti i tipi di dati utilizzati nel rispettivo [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md).
 
 ## Esempio di utilizzo {#example-usage}
 
