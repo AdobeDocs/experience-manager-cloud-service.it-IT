@@ -1,12 +1,12 @@
 ---
-title: Configura pagina di ringraziamento per EDS Forms
-description: Scopri come configurare le pagine di ringraziamento e il reindirizzamento per EDS Forms per ottimizzare l’esperienza utente e semplificare i percorsi di utenti.
+title: Configurare la pagina di ringraziamento o il modulo di reindirizzamento dopo l’invio
+description: Scopri come configurare le pagine di ringraziamento e il reindirizzamento per Forms Block per ottimizzare l’esperienza utente e semplificare i percorsi di utenti.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: cadeccd916884ca2437e2b2684771c181cc8281e
+source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '608'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Dopo che un utente ha inviato un modulo, è fondamentale fornire un’esperienza
 Nel blocco Forms adattivo, il comportamento predefinito consiste nella visualizzazione di una pagina di ringraziamento. Tuttavia, puoi personalizzare questa esperienza in base alle tue esigenze specifiche. Le opzioni includono:
 
 * [Configurazione della pagina e del messaggio di ringraziamento per l’allineamento con gli obiettivi di brand e comunicazione](#configuring-the-thank-you-page-and-message)
-* [Reindirizzamento degli utenti a un’altra pagina dopo l’invio](#redirect-users-to-another-page-post-submission), rafforzando ulteriormente il loro percorso
+* [Reindirizzamento degli utenti a un’altra pagina dopo l’invio per ulteriori azioni](#redirect-users-to-another-page-post-submission)
 
 ## Configurazione della pagina di ringraziamento e del messaggio
 
@@ -43,10 +43,10 @@ Nel blocco Forms adattivo viene visualizzata la pagina &quot;Grazie&quot; all’
 
 Per impostazione predefinita, il blocco Forms adattivo reindirizza gli utenti alla pagina &quot;grazie&quot;. Per reindirizzare gli utenti a una pagina diversa da quella predefinita, sono disponibili due opzioni:
 
-* sostituire la pagina esistente &quot;grazie&quot; con una pagina diversa oppure
-* reindirizza la pagina &quot;grazie&quot; a un’altra pagina a tua scelta.
+* [Sostituisci la pagina &quot;grazie&quot; con un’altra pagina](#replace-the-existing-thankyou-page)
+* [Utilizza i reindirizzamenti del sito web per il reindirizzamento della pagina &quot;grazie&quot;](#use-website-redirects-for-thankyou-page-redirection)
 
-### Sostituisci la pagina di ringraziamento esistente
+### Sostituisci la pagina &quot;grazie&quot;
 
 1. Apri il &quot;[Progetto EDS]/blocks/form/form.js&quot;.
 1. Modificare il `thankyou` pagina nella riga seguente alla pagina scelta:
@@ -70,9 +70,15 @@ Per impostazione predefinita, il blocco Forms adattivo reindirizza gli utenti al
 1. Assicurati che la pagina esista nella cartella dei progetti EDS e pubblicala.
 
 
-### Utilizzare i reindirizzamenti del sito Web
+### Utilizza i reindirizzamenti del sito web per il reindirizzamento della pagina &quot;grazie&quot;
 
-Configura un reindirizzamento del sito web per indirizzare la pagina di ringraziamento a una pagina diversa. Consulta la sezione [Documentazione dei reindirizzamenti](https://www.aem.live/docs/redirects) per istruzioni dettagliate.
+Il reindirizzamento di un utente a un’altra pagina dopo l’invio del modulo può migliorare l’esperienza utente fornendo informazioni rilevanti, confermando le azioni e guidando gli utenti verso i risultati desiderati. Ad esempio:
+
+* dopo aver completato un modulo di acquisto, l’utente viene reindirizzato a una pagina di pagamento per completare la transazione in modo sicuro.
+* quando si invia un modulo di registrazione per un evento o un webinar, gli utenti vengono reindirizzati a una pagina di conferma in cui vengono visualizzati i dettagli dell’evento, ad esempio data, ora e posizione.
+
+Per reindirizzare la pagina &quot;Grazie&quot; a un’altra pagina, utilizza [reindirizzamenti al sito web](https://www.aem.live/docs/redirects) foglio di calcolo.
+
 
 ## Vedi altro
 
