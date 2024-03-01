@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
 workflow-type: tm+mt
-source-wordcount: '4748'
+source-wordcount: '4749'
 ht-degree: 95%
 
 ---
@@ -178,7 +178,7 @@ ht-degree: 95%
    + [Supporto OAuth2 per il servizio di posta](/help/security/oauth2-support-for-mail-service.md)
    + [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Considerazioni sulla sicurezza di AEM as a Cloud Service](/help/security/security-considerations.md)
-   + [Deprecazione delle credenziali JWT nella console Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Deprecazione delle credenziali JWT in Adobe Systems Console per gli sviluppatori](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Onboarding {#onboarding}
    + [Inizia qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=it)
    + Percorso di onboarding {#journey}
@@ -276,7 +276,7 @@ ht-degree: 95%
       + [Selezione del percorso](/help/sites-cloud/authoring/path-selection.md)
       + [Risoluzione dei problemi](/help/sites-cloud/authoring/troubleshooting.md)
       + Console Sites {#sites-console}
-         + [Console Sites](/help/sites-cloud/authoring/sites-console/introduction.md)
+         + [La console Sites](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [Pannello laterale della console](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
          + [Creazione di un nuovo sito](/help/sites-cloud/authoring/sites-console/create-site.md)
          + [Organizzazione delle pagine](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
@@ -419,7 +419,7 @@ ht-degree: 95%
       + [Selettore risorse micro front-end](/help/assets/asset-selector.md)
       + [Selettore di destinazione micro front-end](/help/assets/destination-selector.md)
       + [Condividere le risorse](/help/assets/share-assets.md)
-      + [Rielaborazione delle risorse](/help/assets/reprocessing.md)
+      + [Repreocessing risorse](/help/assets/reprocessing.md)
       + [Monitorare attività e attività DAM](/help/assets/assets-activity-history.md)
       + [Introduzione all’utilizzo dei microservizi per le risorse](/help/assets/asset-microservices-configure-and-use.md)
       + [Aggiungere e caricare le risorse](/help/assets/add-assets.md)
@@ -628,14 +628,14 @@ ht-degree: 95%
             + [Configurare l’azione di invio per un modulo adattivo](/help/forms/configure-submit-actions-core-components.md)
             + [Inviare un modulo adattivo all’archiviazione BLOB di Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Inviare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + [Collegare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [Connettere un modulo adattivo a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
             + [Integrare il modulo adattivo AEM con il flusso di lavoro AEM](/help/forms/configure-submit-action-workflow.md)
             + [Configurare l’azione di invio Invia a endpoint REST per Forms adattivo](/help/forms/configure-submit-action-restpoint.md)
             + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
             + [Utilizzare il servizio reCAPTCHA di Google in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Aggiungere un handler degli errori personalizzato in un modulo adattivo](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/supporting-new-language-localization-core-components.md)
-            + [Creare e utilizzare funzioni personalizzate](/help/forms/create-and-use-custom-functions.md)
+            + [Crea e utilizzare funzioni personalizzate](/help/forms/create-and-use-custom-functions.md)
       + Componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)
@@ -696,7 +696,7 @@ ht-degree: 95%
       + [Problemi noti, best practice e domande frequenti](/help/forms/communications-known-issues-limitations.md)
    + Rapporti sulle transazioni {#using-communications}
       + [API fatturabili per rapporti sulle transazioni](/help/forms/transaction-reports-billable-apis.md)
-      + [Registrare una transazione per le implementazioni personalizzate](/help/forms/record-transaction-custom-implementation.md)
+      + [Registrare una transazione per implementazioni personalizzate](/help/forms/record-transaction-custom-implementation.md)
    + Riferimento API per sviluppatori {#aem-forms-developer-api-reference}
       + [Riferimento API di moduli adattivi](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Riferimento API per le comunicazioni del Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -705,7 +705,7 @@ ht-degree: 95%
    + Risoluzione dei problemi {#troubleshooting-aem-forms-cloud-service}
       + [Installazione e configurazione](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Memorizzazione in cache di Dispatcher e CDN](/help/forms/troubleshooting-caching-performance.md)
-      + [Riavvio dell’SDK per AEM](/help/forms/restart-aem-sdk.md)
+      + [Riavvio AEM SDK](/help/forms/restart-aem-sdk.md)
 + Screens {#screens-as-cloud-service}
    + Panoramica di Screens as a Cloud Service {#overview}
       + [Introduzione](/help/screens-cloud/introduction/introduction.md)
@@ -784,7 +784,7 @@ ht-degree: 95%
 + Edge Delivery Services {#edge-delivery}
    + [AEM e Edge Delivery Services](/help/edge/overview.md)
    + [Utilizzo di Edge Delivery](/help/edge/using.md)
-   + [Guida introduttiva per sviluppatori](/help/edge/edge-dev-getting-started.md)
+   + [Sviluppatore Guida introduttiva](/help/edge/edge-dev-getting-started.md)
    + [Authoring dei contenuti per Edge Delivery](/help/edge/authoring.md)
    + [Pubblicazione di contenuti per Edge Delivery](/help/edge/publishing.md)
    + [Sviluppo per Edge Delivery](/help/edge/developing.md)
@@ -817,24 +817,24 @@ ht-degree: 95%
       + [Configurazione Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Configurazione Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Reindirizzamenti](/help/edge/docs/redirects.md)
-   + Creazione di Forms di consegna Edge {#build-forms}
+   + Creazione di Forms di distribuzione Edge {#build-forms}
       + [Panoramica](/help/edge/docs/forms/overview.md)
       + Introduzione {#getting-started-eds-forms}
-         + [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
+         + [Crea e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
          + [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
          + [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-eds-forms.md)
          + [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
          + [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)
          + [Utilizzare le regole per aggiungere un comportamento dinamico a un modulo](/help/edge/docs/forms/rules-forms.md)
       + Funzionalità {#advanced-features-eds-forms}
-         + [Frammenti di modulo](/help/edge/docs/forms/form-fragments.md)
+         + [Frammenti del modulo](/help/edge/docs/forms/form-fragments.md)
          + [Sezioni ripetibili](/help/edge/docs/forms/repeatable-forms.md)
          + [Traduzione](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Pagina di ringraziamento](/help/edge/docs/forms/thank-you-page-form.md)
          + [Componenti personalizzati](/help/edge/docs/forms/custom-components-forms.md)
       + Riferimenti {#forms-references}
-         + [Elenco dei componenti del blocco di modulo](/help/edge/docs/forms/form-components.md)
+         + [Elenco dei componenti dei blocchi modulo](/help/edge/docs/forms/form-components.md)
    + Risorse per Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utilizzo di Sidekick](/help/edge/docs/sidekick.md)
@@ -845,7 +845,7 @@ ht-degree: 95%
       + [API amministratore](https://www.aem.live/docs/admin.html)
       + [Stato AEM](https://www.aemstatus.net)
       + Strumenti {#tools}
-         + [Estensione Sidekick per Chrome](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [Estensione Effetto cromatura barra laterale AEM](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Bot di Github](https://github.com/apps/aem-code-sync)
          + [Registro di controllo](/help/edge/docs/auditlog.md)
 + Headless {#headless}
@@ -1042,7 +1042,7 @@ ht-degree: 95%
          + [Guida introduttiva all’editor universale in AEM](/help/implementing/universal-editor/getting-started.md)
          + [Panoramica dell’editor universale per sviluppatori ](/help/implementing/universal-editor/developer-overview.md)
          + [Attributi e tipi di elementi](/help/implementing/universal-editor/attributes-types.md)
-         + [Definizioni di modelli, campi e tipi di componenti](/help/implementing/universal-editor/field-types.md)
+         + [Definizioni dei modelli, campi e tipi di componenti](/help/implementing/universal-editor/field-types.md)
          + [Autenticazione dell’editor universale](/help/implementing/universal-editor/authentication.md)
          + [Sviluppo locale AEM con l’editor universale](/help/implementing/universal-editor/local-dev.md)
          + [Chiamate all’editor universale](/help/implementing/universal-editor/calls.md)
