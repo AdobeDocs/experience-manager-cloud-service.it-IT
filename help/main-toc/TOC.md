@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
 source-wordcount: '4751'
 ht-degree: 95%
@@ -178,7 +178,7 @@ ht-degree: 95%
    + [Supporto OAuth2 per il servizio di posta](/help/security/oauth2-support-for-mail-service.md)
    + [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Considerazioni sulla sicurezza di AEM as a Cloud Service](/help/security/security-considerations.md)
-   + [Deprecazione delle credenziali JWT nella console Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Credenziali JWT nella console Adobe Developer obsolete](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Onboarding {#onboarding}
    + [Inizia qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=it)
    + Percorso di onboarding {#journey}
@@ -826,12 +826,12 @@ ht-degree: 95%
          + [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
          + [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)
          + [Utilizzare le regole per aggiungere un comportamento dinamico a un modulo](/help/edge/docs/forms/rules-forms.md)
+         + [Pagina di ringraziamento](/help/edge/docs/forms/thank-you-page-form.md)
       + Funzionalità {#advanced-features-eds-forms}
          + [Frammenti di modulo](/help/edge/docs/forms/form-fragments.md)
          + [Sezioni ripetibili](/help/edge/docs/forms/repeatable-forms.md)
          + [Traduzione](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Pagina di ringraziamento](/help/edge/docs/forms/thank-you-page-form.md)
          + [Componenti personalizzati](/help/edge/docs/forms/custom-components-forms.md)
       + Riferimenti {#forms-references}
          + [Elenco dei componenti del blocco di modulo](/help/edge/docs/forms/form-components.md)

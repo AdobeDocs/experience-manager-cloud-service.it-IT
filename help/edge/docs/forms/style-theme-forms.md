@@ -4,9 +4,9 @@ description: Personalizzare tema e stile per un modulo del servizio di consegna 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Applicazione di stili ai campi modulo
 
-Forms è fondamentale per l’interazione degli utenti sui siti web, consentendo loro di inserire dati. Questa guida illustra i concetti fondamentali relativi allo stile di vari campi modulo all’interno di [Blocco modulo](/help/edge/docs/forms/create-forms.md), per creare moduli visivi accattivanti e facili da usare.
+Forms è fondamentale per l’interazione degli utenti sui siti web, consentendo loro di inserire dati. Questa guida illustra i concetti fondamentali relativi allo stile di vari campi modulo all’interno di [Blocco modulo adattivo](/help/edge/docs/forms/create-forms.md), per creare moduli visivi accattivanti e facili da usare.
 
 ## Informazioni sui tipi di campi modulo
 
-Prima di iniziare a utilizzare gli stili, esaminiamo i tipi di campi modulo comuni supportati dal blocco modulo:
+Prima di immergerci nello stile, esaminiamo i tipi di campi modulo comuni supportati dal blocco Modulo adattivo:
 
 * Campi di input: includono input di testo, input di e-mail, input di password e altro ancora.
 * Gruppi di caselle di controllo: utilizzato per selezionare più opzioni.
@@ -35,7 +35,7 @@ Comprendere i concetti fondamentali di CSS è fondamentale prima di formattare c
 * Modello casella: il modello casella CSS descrive la struttura degli elementi HTML come un&#39;area di contenuto circondata da spaziature, bordi e margini.
 * Flexbox/Grid: i layout CSS Flexbox e Grid sono strumenti potenti per la creazione di progettazioni dinamiche e flessibili.
 
-## Applicazione di uno stile a un modulo per un blocco di modulo
+## Applicazione di uno stile a un modulo per un blocco di modulo adattivo
 
 Il blocco di modulo offre una struttura di HTML standardizzata che semplifica la selezione e lo stile dei componenti del modulo:
 

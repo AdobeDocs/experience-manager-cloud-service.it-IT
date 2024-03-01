@@ -4,9 +4,9 @@ description: Pubblicare un modulo Edge Delivery Services di AEM Forms
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -18,17 +18,53 @@ Quando si è pronti a condividere il modulo con i clienti per la raccolta o l&#3
 
 ## Prerequisiti
 
-* Il [Il blocco del modulo è abilitato per il progetto EDS su Github](/help/edge/docs/forms/create-forms.md).
+* Il [Il blocco modulo adattivo è abilitato per il progetto EDS su GitHub](/help/edge/docs/forms/create-forms.md).
 * Il modulo è stato testato e pronto per l&#39;uso.
 * Il tuo [il foglio di calcolo è configurato](/help/edge/docs/forms/submit-forms.md) per accettare i dati.
 
 ## Pubblicare il modulo
 
-Per pubblicare il modulo:
++++ 1. Pubblicare il foglio di calcolo
+
+1. Apri l’account Microsoft SharePoint o Google Drive e passa alla directory del progetto AEM Edge Delivery.
+
+1. Aprire il foglio di calcolo contenente il modulo. Ad esempio, il `enquiry` cartella di lavoro di Microsoft Excel modulo.
+
+1. Utilizzare [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l&#39;anteprima del foglio.
+
+   ![Utilizza AEM Sidekick per visualizzare l’anteprima del foglio](/help/edge/assets/preview-form.png)
+
+   Una volta completata correttamente l’operazione di anteprima, il contenuto del foglio di calcolo viene convertito in formato JSON. La pagina di anteprima presenta quindi questo contenuto in un formato tabella strutturato. Ad esempio, l’immagine allegata illustra il contenuto di un modulo di richiesta di informazioni.
+
+   ![Forms Anteprima formato JSON](/help/edge/assets/forms-preview-json-format.png)
+
+1. Utilizza AEM Sidekick per pubblicare il foglio. Assicurati di acquisire l’URL di pubblicazione, in quanto è necessario per il rendering del modulo nella sezione successiva. Il formato dell’URL è il seguente:
+
+
+   ```JSON
+       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+   ```
+
+   * `<branch>` fa riferimento al ramo dell’archivio GitHub.
+   * `<repository>` denota l’archivio GitHub.
+   * `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
+
+   Ad esempio, se l’archivio del progetto è denominato &quot;portale&quot;, si trova sotto l’account &quot;wkndforms&quot; e stai utilizzando il ramo &quot;principale&quot;, l’URL avrà l’aspetto seguente:
+
+   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+
++++
+
++++ 2. Aggiungere il modulo alla pagina Web
+
+Aggiungi il `<form>.json` a una pagina web per facilitare l’interazione con il cliente, consentendo ai compilatori di moduli di compilare e inviare facilmente il modulo.
+
+
+Per aggiungere il modulo alla pagina Web:
 
 1. Accedere al proprio account Microsoft SharePoint o Google Drive e passare al `[AEM Edge Delivery project directory]`.
 
-1. Aprire un file di documento in cui si desidera incorporare il modulo. Ad esempio, è possibile aprire il file di indice o, in alternativa, creare un nuovo documento.
+1. Aprire un file di documento in cui si desidera incorporare il modulo. Ad esempio, puoi aprire `index.docx` oppure creare un nuovo documento.
 
 1. Identificare la sezione desiderata all&#39;interno del documento in cui si desidera inserire il modulo e passare di conseguenza.
 
@@ -54,18 +90,20 @@ Per pubblicare il modulo:
    **URL di pubblicazione**
 | Modulo | |—| | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
 
-1. Utilizzare [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l&#39;anteprima della pagina. Nella pagina viene ora visualizzato il modulo. Ad esempio, questo è il modulo basato su [foglio di calcolo interrogazione](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
+1. Utilizzare [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l&#39;anteprima della pagina web. Nella pagina viene ora visualizzato il modulo. Ad esempio, questo è il modulo basato su [foglio di calcolo interrogazione](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
 
 
    [![Un esempio di modulo EDS](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
 
-   Ora i tuoi clienti possono compilare il modulo e inviarlo.
+1. Utilizza AEM Sidekick per pubblicare il modulo. Ora i tuoi clienti possono compilare il modulo e inviarlo.
+
++++
 
 ## Risoluzione dei problemi
 
 +++ Impossibile inviare i dati al modulo
 
-Se si verifica un errore simile al seguente messaggio, il foglio di calcolo non è ancora configurato per accettare i dati inviati.
+Se si verifica un errore simile al seguente messaggio, il foglio di calcolo non è configurato per [accetta gli elementi inviati](/help/edge/docs/forms/submit-forms.md) ancora dati.
 
 ![errore durante l’invio del modulo](/help/edge/assets/form-error.png)
 
