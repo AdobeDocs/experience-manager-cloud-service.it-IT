@@ -2,16 +2,16 @@
 title: Utilizzo dei frammenti di contenuto (Risorse - Frammenti di contenuto)
 description: Scopri il modo in cui i frammenti di contenuto in Adobe Experience Manager (AEM) come Cloud Service consentono di progettare, creare, perfezionare e utilizzare contenuto indipendenti dalla pagina, ideali per l'authoring delle pagine e la distribuzione headless. Anche come possono essere utilizzati insieme a MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
+source-git-commit: 02b96c27f985492396cfbd262b9fec450ec8d2c8
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2222'
 ht-degree: 57%
 
 ---
 
 # Utilizzo di frammenti di contenuto {#working-with-content-fragments}
 
-Con Adobe Experience Manager (AEM) as a Cloud Service, i Frammenti di contenuto consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-cloud/authoring/fragments/content-fragments.md). Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless. Possono essere utilizzati anche insieme a [Gestione multisito per consentire il riutilizzo dei contenuti](#reusing-content-fragments-with-msm-assets).
+Con Adobe Experience Manager (AEM) as a Cloud Service, i Frammenti di contenuto consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-cloud/authoring/fragments/content-fragments.md). Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless. Possono essere utilizzati anche insieme a [Gestione multisito per consentire il riutilizzo dei contenuti](#reusing-content-fragments-with-msm).
 
 I frammenti di contenuto contengono contenuto strutturato:
 
@@ -50,7 +50,7 @@ Questa pagina e quelle seguenti descrivono le attività di creazione, configuraz
 * [Utilizzo di contenuti associati](/help/assets/content-fragments/content-fragments-assoc-content.md): come aggiungere contenuti associati
 * [Metadati: proprietà dei frammenti](/help/assets/content-fragments/content-fragments-metadata.md): come visualizzare e modificare le proprietà dei frammenti
 * Utilizzare [Frammenti di contenuto e GraphQL per la distribuzione dei contenuti](/help/assets/content-fragments/content-fragments-graphql.md) da utilizzare nelle applicazioni. Per facilitare questa fase, puoi visualizzare un’anteprima [Output JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
-* [Riutilizzare i frammenti di contenuto con MSM per le risorse](#reusing-content-fragments-with-msm-assets)
+* [Riutilizzare frammenti di contenuto con MSM](#reusing-content-fragments-with-msm)
 
 >[!NOTE]
 >
@@ -288,13 +288,13 @@ Per utilizzare i frammenti di contenuto per l&#39;authoring delle pagine, è ino
    * I frammenti necessitano di uno o più componenti dedicati per definire il layout e fornire alcuni o tutti gli elementi/varianti e le contenuto associate.
    * Se si trascina un frammento su una pagina in authoring, il componente richiesto viene associato automaticamente.
 
-## Riutilizzo di frammenti di contenuto con MSM (per Assets) {#reusing-content-fragments-with-msm-assets}
+## Riutilizzo di frammenti di contenuto con MSM {#reusing-content-fragments-with-msm}
 
 Se accedi tramite la **console Assets** , puoi utilizzare MSM e creare Live Copy per i tuoi frammenti.
 
 Per ulteriori dettagli, consulta:
 
-* [Riutilizzare i frammenti di contenuto con MSM (per le risorse)](/help/assets/content-fragments/content-fragments-msm.md)
+* [Riutilizzare frammenti di contenuto con MSM](/help/assets/content-fragments/content-fragments-msm.md)
 * [Riutilizzare le risorse tramite MSM per le risorse](/help/assets/reuse-assets-using-msm.md).
 
 Questi attivano [ereditarietà](/help/assets/content-fragments/content-fragments-variations.md#inheritance) sia per le varianti che per i singoli campi dei frammenti.
