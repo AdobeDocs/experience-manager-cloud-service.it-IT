@@ -4,10 +4,10 @@ description: Scopri le nozioni di base di AE; gestione dei pacchetti con Gestion
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
 workflow-type: tm+mt
-source-wordcount: '3774'
-ht-degree: 4%
+source-wordcount: '3769'
+ht-degree: 3%
 
 ---
 
@@ -123,7 +123,7 @@ Se si fa clic sul nome di un pacchetto, la voce nell&#39;elenco dei pacchetti vi
 È possibile eseguire diverse azioni su un pacchetto tramite i pulsanti della barra degli strumenti disponibili quando i dettagli del pacchetto vengono espansi.
 
 * [Modifica](#edit-package)
-* [Genera](#building-a-package)
+* [Build](#building-a-package)
 * [Reinstalla](#reinstalling-packages)
 * [Scarica](#downloading-packages-to-your-file-system)
 
@@ -282,7 +282,7 @@ Un pacchetto viene spesso creato contemporaneamente a [creare il pacchetto](#cre
 
 1. Clic **Genera**. Viene visualizzata una finestra di dialogo in cui viene richiesto di confermare che si desidera creare il pacchetto perché il contenuto esistente verrà sovrascritto.
 
-1. Fai clic su **OK**. L’AEM crea il pacchetto, elencando tutti i contenuti aggiunti al pacchetto così come fanno nell’elenco delle attività. Una volta completato AEM, viene visualizzata una conferma che il pacchetto è stato creato e, quando si chiude la finestra di dialogo, vengono aggiornate le informazioni sull’elenco dei pacchetti.
+1. Clic **OK**. L’AEM crea il pacchetto, elencando tutti i contenuti aggiunti al pacchetto così come fanno nell’elenco delle attività. Una volta completato AEM, viene visualizzata una conferma che il pacchetto è stato creato e, quando si chiude la finestra di dialogo, vengono aggiornate le informazioni sull’elenco dei pacchetti.
 
 >[!TIP]
 >
@@ -612,4 +612,4 @@ I pacchetti AEM possono essere utilizzati per creare e condividere contenuti tra
 
 [Distribuzione di software](https://downloads.experiencecloud.adobe.com) fornisce pacchetti AEM da utilizzare sull’SDK per AEM per lo sviluppo locale. I pacchetti AEM forniti nella Distribuzione di software non devono essere installati in ambienti cloud AEMaaCS a meno che non siano espressamente approvati dal Supporto Adobe.
 
-Per ulteriori informazioni, consulta [Documentazione di Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it).
+Per ulteriori informazioni, vedere [Documentazione di Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it)
