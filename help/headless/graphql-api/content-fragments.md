@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
+source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
 workflow-type: tm+mt
-source-wordcount: '4994'
-ht-degree: 87%
+source-wordcount: '5135'
+ht-degree: 85%
 
 ---
 
@@ -1125,6 +1125,31 @@ Per proteggere da potenziali problemi, esistono limitazioni predefinite imposte 
 * La query non può contenere più di 1 metro (1024 * 1024) di caratteri
 * La query non può contenere più di 15000 token
 * La query non può contenere più di 200000 token di spazio vuoto
+
+È inoltre necessario essere a conoscenza di:
+
+* Se la query GraphQL contiene campi con lo stesso nome in due o più modelli, verrà restituito un errore di conflitto di campi:
+
+   * Quindi dove:
+
+      * Due (o più modelli) sono utilizzati come riferimenti possibili; quando sono definiti come consentiti **Tipo di modello** nel riferimento Frammento di contenuto.
+
+     e:
+
+      * Questi due modelli hanno campi con un nome comune; ciò significa che lo stesso nome si verifica in entrambi i modelli.
+
+     e
+
+      * Tali campi sono di tipi di dati diversi.
+
+   * Ad esempio:
+
+      * Quando due (o più) frammenti hanno modelli diversi (ad esempio, `M1`, `M2`) vengono utilizzati come riferimenti possibili (Riferimento contenuto o Riferimento frammento) da un altro frammento; ad esempio, `Fragment1` `MultiField/List`
+      * E questi due frammenti con modelli diversi (`M1`, `M2`) hanno campi con lo stesso nome, ma tipi diversi.
+Per maggiore chiarezza:
+         * `M1.Title` as `Text`
+         * `M2.Title` as `Text/MultiField`
+      * Se la query GraphQL contiene il valore, verrà generato un errore di conflitto di campi `Title` campo.
 
 ## Domande frequenti {#faqs}
 

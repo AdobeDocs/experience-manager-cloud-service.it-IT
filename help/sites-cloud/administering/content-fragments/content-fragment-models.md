@@ -4,10 +4,10 @@ description: Scopri come i modelli per frammenti di contenuto fungono da base pe
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: e5a48cfd042c0e8d7448007854e1f73bded8cf7f
 workflow-type: tm+mt
-source-wordcount: '3125'
-ht-degree: 56%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -43,6 +43,12 @@ Puoi anche definire varie proprietà; ad esempio, aggiungi **Tag**, a **Descrizi
    ![Titolo e descrizione](assets/cf-cfmodels-create.png)
 
 1. Utilizza **Crea** per salvare il modello vuoto. Un messaggio indica il successo dell’azione, puoi selezionare **Apri** per modificare immediatamente il modello, oppure **Fine** per tornare alla console.
+
+>[!CAUTION]
+>
+>Se esegui una query su più frammenti a cui si fa riferimento, non è consigliabile che i vari modelli di frammenti abbiano nomi di campo con lo stesso nome, ma tipi diversi.
+>
+>Per maggiori dettagli vedi [API GraphQL per AEM da utilizzare con Frammenti di contenuto - Limitazioni](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Modello per frammenti di contenuto - Proprietà {#content-fragment-model-properties}
 
@@ -290,6 +296,12 @@ L’AEM ha una protezione da recidiva per:
 * Riferimenti al contenuto Questo impedisce all’utente di aggiungere un riferimento al frammento corrente e può causare la visualizzazione di una finestra di dialogo vuota per la selezione dei riferimenti ai frammenti.
 >
 * Riferimenti frammento in GraphQL Se crei una query approfondita che restituisce più frammenti di contenuto a cui fanno riferimento l’un l’altro, alla prima occorrenza restituisce null.
+
+>[!CAUTION]
+>
+Se esegui una query su più frammenti a cui si fa riferimento, non è consigliabile che i vari modelli di frammenti abbiano nomi di campo con lo stesso nome, ma tipi diversi.
+>
+Per maggiori dettagli vedi [API GraphQL per AEM da utilizzare con Frammenti di contenuto - Limitazioni](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Riferimento contenuto {#content-reference}
 
