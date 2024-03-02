@@ -4,9 +4,9 @@ description: Crea moduli potenti più rapidamente utilizzando fogli di calcolo e
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1000'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,10 @@ ht-degree: 0%
 
 # Preparare il foglio di calcolo per accettare i dati
 
+![Ecosistema di authoring basato su documenti](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+
 Una volta [ha creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/create-forms.md), è ora di abilitare il foglio di calcolo corrispondente per iniziare a ricevere i dati.
+
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -43,6 +46,7 @@ Per attivare il foglio di calcolo:
 
 
 Una volta aggiunti i nomi dei campi al `incoming` foglio, il modulo diventa pronto per accettare gli invii. È possibile visualizzare in anteprima il modulo e inviare i dati al foglio utilizzando il modulo.
+
 
 Nel foglio di calcolo vengono inoltre osservate le seguenti modifiche:
 

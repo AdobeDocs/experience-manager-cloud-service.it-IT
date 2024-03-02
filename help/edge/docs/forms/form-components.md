@@ -4,20 +4,21 @@ description: Questo documento fornisce una panoramica dei componenti del modulo 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 3%
+source-wordcount: '913'
+ht-degree: 2%
 
 ---
 
 
-# Componenti del modulo
+# Guida per gli sviluppatori ai componenti e alle proprietà dei moduli: servizio di distribuzione AEM Forms Edge
 
 Il servizio AEM Forms Edge Delivery consente di creare moduli interattivi e di facile utilizzo utilizzando vari componenti. Questi componenti sono adatti a diversi tipi di raccolta dati e possono essere facilmente personalizzati in base a esigenze specifiche.
 
-Il blocco di modulo adattivo genera un [struttura uniforme dei HTML](/help/edge/docs/forms/style-theme-forms.md) per tutti i tipi di campo e i contenitori (pannelli) che ne garantiscono la coerenza. Questa struttura coerente consente di [assegnare uno stile a un modulo](/help/edge/docs/forms/style-theme-forms.md).
+![Un foglio di calcolo di esempio con alcuni componenti e proprietà](/help/edge/assets/sample-form-in-spreadsheet.png)
 
+Il blocco di modulo adattivo genera un [struttura uniforme dei HTML](/help/edge/docs/forms/style-theme-forms.md) per tutti i tipi di campo e i contenitori (pannelli) che ne garantiscono la coerenza. Questa struttura coerente consente di [assegnare uno stile a un modulo](/help/edge/docs/forms/style-theme-forms.md).
 
 ## Componenti disponibili
 
@@ -38,6 +39,8 @@ Ecco una panoramica dei componenti disponibili:
 - Pannelli/contenitori: per raggruppare gli elementi del modulo correlati in modo da migliorarne l’organizzazione. Si tratta di una combinazione di [set di campi](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) e [legenda](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
+
+
 ## Proprietà dei componenti
 
 Ogni componente del modulo include varie proprietà che consentono di controllarne il comportamento e l’aspetto. Di seguito sono riportate le proprietà supportate dai componenti Blocco modulo adattivo:
@@ -45,7 +48,7 @@ Ogni componente del modulo include varie proprietà che consentono di controllar
 
 | Proprietà | Componenti applicabili | Dettagli |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| Tipo | Tutti i bundle  | Specifica il tipo di componente. Questa proprietà determina il comportamento e l&#39;aspetto del campo di input. Ad esempio, per gli input di testo, il tipo può essere &quot;text&quot;, &quot;email&quot; per gli input di e-mail, &quot;password&quot; per gli input di password. Il blocco modulo adattivo supporta tutti i HTML validi 5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">tipi di input</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">seleziona</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">set di campi</a> come tipo. |
+| Tipo | Tutti i bundle  | Specifica il tipo di componente. Questa proprietà determina il comportamento e l&#39;aspetto del campo di input. Ad esempio, per gli input di testo, il tipo può essere &quot;text&quot;, &quot;email&quot; per gli input di e-mail, &quot;password&quot; per gli input di password. Il blocco di modulo adattivo supporta  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">tutti i tipi di input HTML5 validi</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">seleziona</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">set di campi</a> come tipo. |
 | Nome | Tutti | Identifica il componente per l’invio del modulo. L&#39;attributo name viene utilizzato quando i dati del modulo vengono inviati al server, associando l&#39;input dell&#39;utente a un campo specifico. |
 | Etichetta | Tutti | Fornisce informazioni contestuali agli utenti. L’etichetta è il testo visualizzato accanto al componente, che fornisce agli utenti istruzioni su quali informazioni inserire. |
 | Valore | Testo, password, e-mail, numero, intervallo, data e relative varianti (datetime-local, mese, settimana, ora), casella di controllo, radio, nascosto, invia, pulsante | Specifica il valore iniziale del componente. Per gli input di testo, l&#39;area di testo e gli elementi di selezione, questo è il testo o l&#39;opzione di default visualizzata. Per i componenti radio e casella di controllo, si tratta del valore/dati inviati quando vengono selezionati. L’attributo value è facoltativo ma deve essere considerato obbligatorio per gli input di caselle di controllo e radio. |
@@ -192,4 +195,12 @@ Here is the table which outlines how core components correspond to their HTML-5 
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>
-</table>
+</table> -->
+
+## Vedi altro
+
+- [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
+- [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
+- [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-eds-forms.md)
+- [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
+- [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)

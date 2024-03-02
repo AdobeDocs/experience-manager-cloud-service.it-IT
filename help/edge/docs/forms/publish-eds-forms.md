@@ -4,9 +4,9 @@ description: Pubblicare un modulo Edge Delivery Services di AEM Forms
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 # Pubblicare il modulo
 
 Quando si è pronti a condividere il modulo con i clienti per la raccolta o l&#39;invio dei dati, è sufficiente pubblicarlo, rendendolo facilmente disponibile per l&#39;utilizzo da parte dei clienti.
+
+![Ecosistema di authoring basato su documenti](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
 ## Prerequisiti
 
