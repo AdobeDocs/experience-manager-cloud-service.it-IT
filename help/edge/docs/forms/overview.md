@@ -1,28 +1,28 @@
 ---
-title: Panoramica di AEM Forms Edge Delivery Service
-description: AEM Forms Edge Delivery Service progettato per garantire prestazioni ottimali, consentendoti di immaginare il futuro di raccolta dati semplificati e di utente coinvolgimento.
+title: Panoramica del servizio di distribuzione AEM Forms Edge
+description: Il servizio AEM Forms Edge Delivery è stato progettato per garantire prestazioni di picco, consentendoti di immaginare il futuro della raccolta dati semplificata e del coinvolgimento degli utenti.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1c6e44fd6652d93ba73bc2eb3604cd08eae7a33c
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 2%
+source-wordcount: '866'
+ht-degree: 1%
 
 ---
 
 
-# Servizio AEM Forms Edge Delivery
+# Servizio di consegna AEM Forms Edge
 
-Semplifica la creazione di moduli e dare impulso a tassi di completamento più elevati con il servizio AEM Forms Edge Delivery di Adobe Systems. Questo servizio potente e componibile ti consente di versione moduli di livello aziendale con prestazioni e appeal visivo eccezionali. AEM dà priorità sia al esperienza di utilizzo che agli obiettivi aziendali, garantendo tempi di caricamento fulminei e maggiori completamenti dei moduli.
+Il servizio AEM Forms Edge Delivery di Adobe semplifica la creazione dei moduli e aumenta i tassi di completamento. Questo servizio potente e componibile consente di creare moduli di livello enterprise con prestazioni eccezionali e un impatto visivo eccezionale. L’AEM dà priorità sia all’esperienza utente che agli obiettivi aziendali, garantendo tempi di caricamento estremamente rapidi e un aumento dei completamenti dei moduli.
 
 Puoi utilizzare il servizio per:
 
-* **Affascina gli utenti con forme** straordinarie: crea moduli complessi e coinvolgenti con facilità utilizzando una libreria di predefinito componenti. Integra facilmente reCAPTCHA, invia i moduli direttamente alla posta elettronica e consenti di caricare facilmente i file in soluzioni di archiviazione sicure like Sharepoint, Archiviazione di Azure e Amazon S3. Puoi persino creare componenti personalizzati per i moduli per dare vita alla tua visione unica.
+* **Captivate utenti con moduli straordinari**: crea moduli complessi e coinvolgenti con facilità utilizzando una libreria di componenti predefiniti. È possibile integrare facilmente reCAPTCHA, inviare moduli direttamente alle e-mail e consentire caricamenti di file senza soluzione di continuità in soluzioni di archiviazione sicure come Sharepoint, Azure Storage e Amazon S3. Puoi anche creare componenti di moduli personalizzati per realizzare la tua visione unica.
 
-* **Crea le esperienze di registrazione digitale con gli strumenti che preferisci**: aumenta l&#39;efficienza della creazione disaccoppiando contenuto origini. È possibile utilizzare sia l&#39;authoring basato su documenti (Microsoft 365 e Google Area di lavoro) che l&#39;authoring AEM (AEM Editors). Pertanto, puoi lavorare con più origini contenuto sullo stesso sito Web e utilizzare i tuoi strumenti di authoring preferiti, come Microsoft Excel, Fogli Google o Adaptive Forms Editor.
+* **Creare esperienze di registrazione digitale con strumenti a tua scelta**: aumenta l’efficienza dell’authoring disaccoppiando le origini di contenuto. È possibile utilizzare sia l’authoring basato su documenti (Microsoft 365 e Google Workspace) che l’authoring AEM (editor AEM). È quindi possibile utilizzare più origini di contenuto nello stesso sito Web e utilizzare gli strumenti di authoring preferiti, ad esempio Microsoft Excel, Google Sheets o Adaptive Forms Editor.
 
-* **Crea moduli con un punteggio** Lighthouse perfetto: crea moduli che vengono caricati e renderizzati rapidamente, lineare su connessioni Internet lente. Tempi di caricamento più rapidi e esperienza di utilizzo ottimizzati contribuiscono a tassi di completamento dei moduli più elevati e tassi di conversione migliorati.
+* **Creare moduli con un punteggio perfetto per Lighthouse**: crea moduli che vengono caricati ed eseguiti rapidamente, anche su connessioni Internet lente. I tempi di caricamento più rapidi e l’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento dei moduli e a tassi di conversione migliorati.
 
   <div>
     <style>
@@ -37,24 +37,22 @@ Puoi utilizzare il servizio per:
     }
 </style>
     <div class="image-container">
-    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms Caratteristiche principali">
+    <img src="/help/edge/assets/eds-forms-key-features.png" alt="Funzioni principali di EDS Forms">
     </div>
 
 
 </div>
-&lt;!-- &gt;
-* **Affascina gli utenti con forme straordinarie**: 
-Crea moduli complessi e coinvolgenti con facilità utilizzando una libreria di componenti predefinito. Integra facilmente reCAPTCHA, invia i moduli direttamente alla posta elettronica e consenti di caricare facilmente i file in soluzioni di archiviazione sicure like Sharepoint, Archiviazione di Azure e Amazon S3. Puoi persino creare componenti personalizzati per i moduli per dare vita alla tua visione unica.
+&lt;!— &gt; **Captivate utenti con moduli sorprendenti**: crea moduli complessi e coinvolgenti con facilità utilizzando una libreria di componenti predefiniti. È possibile integrare facilmente reCAPTCHA, inviare moduli direttamente alle e-mail e consentire caricamenti di file senza soluzione di continuità in soluzioni di archiviazione sicure come Sharepoint, Azure Storage e Amazon S3. Puoi anche creare componenti di moduli personalizzati per realizzare la tua visione unica.
 
-    ![Moduli di iscrizione] (/help/edge/risorse/enrollment-form.png)
+    ![Moduli di iscrizione](/help/edge/assets/enrollment-form.png)
 
-* **Crea moduli con punteggio** lighthouse perfetto: crea moduli che vengono caricati e renderizzati rapidamente, lineare su connessioni Internet lente. Tempi di caricamento più rapidi e esperienza di utilizzo ottimizzati contribuiscono a tassi di completamento dei moduli più elevati e tassi di conversione migliorati.
+* **Crea moduli con punteggio faro perfetto**: crea moduli che vengono caricati ed eseguiti rapidamente, anche su connessioni Internet lente. I tempi di caricamento più rapidi e l’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento dei moduli e a tassi di conversione migliorati.
 
-  ![Punteggio Lighthouse perfetto per i tuoi moduli](/help/edge/assets/lighthouse-forms.png)
+  ![punteggio faro perfetto per i moduli](/help/edge/assets/lighthouse-forms.png)
 
-* **Crea le esperienze di registrazione digitale con gli strumenti che preferisci**: aumenta l&#39;efficienza della creazione disaccoppiando contenuto origini. È possibile utilizzare sia l’authoring di AEM che l’authoring basato su documenti. Pertanto, puoi lavorare con più origini contenuto sullo stesso sito Web e utilizzare i tuoi strumenti di authoring preferiti, come Microsoft Excel, Fogli Google o AEM Editor.
+* **Creare esperienze di registrazione digitale con strumenti a tua scelta**: aumenta l’efficienza dell’authoring disaccoppiando le origini di contenuto. È possibile utilizzare sia l’authoring di AEM che l’authoring basato su documenti. Di conseguenza, puoi lavorare con più origini di contenuto sullo stesso sito web e utilizzare gli strumenti di authoring preferiti, come Microsoft Excel, Google Sheets o AEM Editors.
 
-  ![Strumenti di creazione dei moduli di consegna Edge](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+  ![Strumenti di creazione di moduli Edge Delivery](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
@@ -69,7 +67,22 @@ Crea moduli complessi e coinvolgenti con facilità utilizzando una libreria di c
 
     -->
 
-## Inizia creazione di moduli
+## Funzionalità principali
+
+* **Componenti campo modulo basati su HTML5**: il servizio AEM Forms Edge Delivery ti consente di creare moduli interattivi e di facile utilizzo utilizzando campi modulo basati su HTML validi [tipi di input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">seleziona</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">set di campi</a>  componenti. Questi componenti sono adatti a diversi tipi di raccolta dati e possono essere facilmente personalizzati in base a esigenze specifiche.
+
+* **Accessibilità**: i campi nel blocco del modulo sono accessibili. Ogni etichetta è collegata al rispettivo elemento di input e gli ID vengono generati automaticamente per il collegamento. Le descrizioni associate ai campi sono collegate tramite l’attributo aria-descripedby. È supportata la navigazione tramite tastiera con i tasti standard Tab/Shift + Tab.
+
+* **Regole modulo**: crea una logica che regola la visibilità, la convalida e il comportamento dei campi in base all’input dell’utente o a condizioni predefinite. Le regole offrono un modo flessibile e intuitivo di aggiungere intelligenza ai moduli, garantendo che si adattino senza problemi in base agli input degli utenti.
+
+* **Caricamenti di file**: migliora i moduli con funzionalità di allegati file ottimizzate. Per raccogliere documenti, immagini o altri file dagli utenti, il Blocco modulo adattivo ti consente di integrare facilmente la funzionalità di caricamento dei file. Con le opzioni di gestione personalizzate disponibili, puoi adattare il processo di caricamento dei file alle tue esigenze specifiche.
+
+* **Convalida modulo**: prima dell’invio, il modulo viene convalidato e i campi non validi vengono contrassegnati in modo appropriato con i messaggi di errore visualizzati all’utente. Sono disponibili vari modelli per la visualizzazione di questi errori.
+
+* **Forms di stile**: ogni campo modulo ha una struttura HTML fissa che può essere ulteriormente decorata utilizzando file CSS o JavaScript personalizzati. I selettori per i campi di targeting in CSS/JS vengono forniti in base al tipo e al nome.
+
+
+## Inizia a creare i moduli
 
 <div>
 
@@ -91,66 +104,66 @@ Crea moduli complessi e coinvolgenti con facilità utilizzando una libreria di c
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
-            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Crea un modulo utilizzando i moduli EDS" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Crea un modulo utilizzando Fogli Google o Microsoft Excel
-            </b>
+            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Creare un modulo utilizzando i moduli eds" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Creare un modulo utilizzando Google Sheets o Microsoft Excel</b>
         </a>
-        <p>Crea moduli che vengono caricati ed eseguiti il rendering vengono ridisposti rapidamente e automaticamente sui dispositivi mobili.</p>
+        <p>Crea moduli che vengono caricati e riversati rapidamente e automaticamente sui dispositivi mobili.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Invia modulo" alt="Uso di frammenti di modulo in un modulo EDS" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Invia modulo a foglio di calcolo
-            </b>
+            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Invia modulo" alt="Utilizzare frammenti di modulo in un modulo EDS" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Invia modulo a foglio di calcolo</b>
         </a>
-        <p>Invia i moduli direttamente a Microsoft Excel o Fogli Google.</p>
+        <p>Inviare i moduli direttamente ai fogli di Microsoft Excel o Google.</p>
     </div>
      <div class="card-container">
         <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Applica di stili o temi in un modulo EDS" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Personalizzare un tema
-            </b>
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Applicare stili o temi a un modulo finale" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Personalizzare un tema</b>
         </a>
-        <p>Crea un'immagine marchio coerente applicando lo stesso tema ai moduli.</p>
+        <p>Crea un’immagine di marchio coerente applicando lo stesso tema nei moduli.</p>
     </div>
       <div class="card-container">
         <a href="/help/edge/docs/forms/validate-forms.md">
-            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Aggiunta di convalide ai campi del modulo" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Applica convalide dei campi
-            </b>
+            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Aggiungere convalide ai campi modulo" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Applicare le convalide dei campi</b>
         </a>
-        <p>Riduci gli errori e la frustrazione controllando la corretta formattazione degli input del modulo.</p>
+        <p>Riduci gli errori e le frustrazioni controllando gli input del modulo per la formattazione corretta.</p>
     </div> 
             <div class="card-container">
         <a href="/help/edge/docs/forms/rules-forms.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Utilizzare regole per aggiungere un comportamento dinamico a un modulo" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Utilizzare regole per aggiungere un comportamento dinamico a un modulo
-            </b>
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Utilizzare le regole per aggiungere un comportamento dinamico a un modulo" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Utilizzare le regole per aggiungere un comportamento dinamico a un modulo</b>
         </a>
         <p>Riutilizzare frammenti preconfigurati in più moduli.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
-            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Tradurre un modulo EDS" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Tradurre un modulo
-            </b>
+            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Tradurre un modulo EDS" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Tradurre un modulo</b>
         </a>
-        <p>Estendi la portata dei tuoi moduli mantenendo sotto controllo i costi.</p>
+        <p>Amplia la portata dei moduli mantenendo i costi sotto controllo.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
-            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Aggiunta di sezioni ripetibili a un modulo EDS" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Aggiungi sezioni ripetibili
-            </b>
+            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Aggiungere sezioni ripetibili a un modulo EDS" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Aggiungere sezioni ripetibili</b>
         </a>
-        <p>Crea e aggiungi facilmente sezioni ripetibili a un modulo.</p>
+        <p>Creare e aggiungere facilmente sezioni ripetibili a un modulo.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/custom-components-forms.md"> 
-            <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Crea di componenti per moduli personalizzati utilizzando JavaScript standard e CSS"  style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Crea di componenti personalizzati
-            </b>
+            <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Creare componenti per moduli personalizzati utilizzando JavaScript e CSS standard"  style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Creare componenti personalizzati</b>
         </a>
-        <p>Utilizza JavaScript standard e CSS per creare componenti e temi.</p>
+        <p>Utilizza JavaScript e CSS standard per creare componenti e temi.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/recaptacha-forms.md">  
-            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Utilizzare reCAPTCHA in un modulo EDS" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Utilizza reCAPTCHA
-            </b>
+            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Utilizzare reCAPTCHA in un modulo EDS" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Usa reCAPTCHA</b>
         </a>
-        <p>Utilizza l'integrazione OOTB reCAPTCHA per una solida protezione da spam e bot.</p>
+        <p>Utilizza l’integrazione OOTB reCAPTCHA per una solida protezione da spam e bot.</p>
     </div>
 
 

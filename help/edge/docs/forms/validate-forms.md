@@ -1,12 +1,12 @@
 ---
-title: 'Da fogli di calcolo a Forms: masterizzazione delle convalide dei campi blocco modulo'
-description: Crea moduli potenti più rapidamente utilizzando fogli di calcolo e campi blocco modulo. Questa guida consente di creare convalide personalizzate per i campi blocco EDS Forms.
+title: 'Da fogli di calcolo a Forms: masterizzazione delle convalide dei campi del blocco di modulo adattivo'
+description: Crea moduli potenti più rapidamente utilizzando fogli di calcolo e campi di blocchi di moduli adattivi. Questa guida consente di creare convalide personalizzate per i campi blocco EDS Forms.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Aggiungere convalide ai campi modulo
 
-Il blocco di modulo dispone di funzioni di convalida integrate. Queste convalide vengono applicate automaticamente nei browser moderni in base al tipo di campo scelto e alle proprietà aggiuntive fornite.
+Il blocco di moduli adattivi dispone di funzioni di convalida integrate. Queste convalide vengono applicate automaticamente nei browser moderni in base al tipo di campo scelto e alle proprietà aggiuntive fornite.
 
 ## Informazioni sui tipi di campo e sulla convalida
 
-Il blocco Form supporta diversi [Tipi di ingresso HTML-5](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), inclusi testo, e-mail, numero, data e altro. Può anche ospitare [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), select e fieldset, oltre a funzioni complete di convalida degli input proprie di HTML-5.
+Il blocco di moduli adattivi supporta diversi [Tipi di ingresso HTML-5](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), inclusi testo, e-mail, numero, data e altro. Può anche ospitare [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), select e fieldset, oltre a funzioni complete di convalida degli input proprie di HTML-5.
 
 utilizza i tipi di campo HTML per definire il tipo di dati che un utente può immettere. Diversi tipi di campo dispongono di regole di convalida incorporate diverse:
 

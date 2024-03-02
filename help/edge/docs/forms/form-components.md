@@ -1,77 +1,74 @@
 ---
-title: Servizio di consegna AEM Forms Edge
-description: Il servizio AEM Forms Edge Delivery è stato progettato per garantire prestazioni di picco, consentendoti di immaginare il futuro della raccolta dati semplificata e del coinvolgimento degli utenti. L’articolo elenca tutti i componenti Forms disponibili come predefiniti per i moduli EDD.
+title: Componenti e proprietà del modulo
+description: Questo documento fornisce una panoramica dei componenti del modulo e delle relative proprietà disponibili in AEM Forms Edge Delivery Service.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '865'
 ht-degree: 3%
 
 ---
 
 
-
-
 # Componenti del modulo
 
-Il blocco di modulo consente di creare facilmente moduli per l&#39;acquisizione e l&#39;archiviazione dei dati acquisiti. Supporta componenti basati su tutte le HTML 5 [tipi di input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) ad esempio testo, e-mail, numero, data e molto altro. Supporta anche [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), [seleziona](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select), e [set di campi](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) e include funzioni di convalida dell&#39;input native per HTML5.
+Il servizio AEM Forms Edge Delivery consente di creare moduli interattivi e di facile utilizzo utilizzando vari componenti. Questi componenti sono adatti a diversi tipi di raccolta dati e possono essere facilmente personalizzati in base a esigenze specifiche.
 
-Il blocco modulo genera una struttura HTML uniforme per tutti i tipi di campi e i contenitori (pannelli), garantendo la coerenza. Questa struttura coerente consente di [assegnare uno stile a un modulo](/help/edge/docs/forms/style-theme-forms.md).
+Il blocco di modulo adattivo genera un [struttura uniforme dei HTML](/help/edge/docs/forms/style-theme-forms.md) per tutti i tipi di campo e i contenitori (pannelli) che ne garantiscono la coerenza. Questa struttura coerente consente di [assegnare uno stile a un modulo](/help/edge/docs/forms/style-theme-forms.md).
+
+
+## Componenti disponibili
+
+Ecco una panoramica dei componenti disponibili:
+
+### Campi di input
+
+- Tutti i HTML validi5 [tipi di input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) e [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). Ad esempio, pulsante, casella di controllo, colore, data, datetime-local, e-mail, file, hidden, image, month, number, password, radio, range, reset, submit, tel, text, time, url e week.
+
+### Controlli selezione
+
+- [Gruppi di caselle di controllo](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): per selezionare più opzioni.
+- [Gruppi radio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): per selezionare una singola opzione da un gruppo.
+- [Menu a discesa](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): per visualizzare un menu di opzioni. Ad esempio, casella a discesa.
+
+### Contenitori
+
+- Pannelli/contenitori: per raggruppare gli elementi del modulo correlati in modo da migliorarne l’organizzazione. Si tratta di una combinazione di [set di campi](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) e [legenda](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
 ## Proprietà dei componenti
 
-Le seguenti proprietà sono supportate per i componenti modulo del blocco modulo:
+Ogni componente del modulo include varie proprietà che consentono di controllarne il comportamento e l’aspetto. Di seguito sono riportate le proprietà supportate dai componenti Blocco modulo adattivo:
 
-<table>
- <tbody>
-  <tr>
-   <td><b>Proprietà</b> </td>
-   <td><b>Componenti modulo (tipo di input)</b> </td>
-   <td><b>Dettagli</b></td>
-  </tr>
-  <tr>
-   <td>Nome</td>
-   <td>Tutti i componenti</td>
-   <td> Una stringa che specifica un nome per il componente. I dati del componente vengono inviati con questo nome.
-   </td>
-  </tr>
-  <tr>
-   <td>Etichetta</td>
-   <td>Tutti i componenti</td>
-   <td> L’etichetta funge da didascalia del campo.
-   </td>
-  </tr>
-  <tr>
-   <td>Valore</td>
-   <td>Tutti i componenti</td>
-   <td> Valore iniziale del controllo. Per i componenti radio e casella di controllo, questo è il valore/dati che viene inviato quando vengono selezionati. L’attributo value è sempre facoltativo, anche se deve essere considerato obbligatorio per casella di controllo e radio.
-   </td>
-  </tr>
-    <tr>
-   <td>Segnaposto</td>
-   <td>Testo, ricerca, URL, telefono, e-mail, password e numero</td>
-   <td> L'attributo segnaposto fornisce all'utente un breve suggerimento sul tipo di informazioni previste nel campo.
-   </td>
-  </tr>
-      <tr>
-   <td>Descrizione</td>
-   <td>Applicabile a tutti i campi</td>
-   <td> L'attributo segnaposto fornisce all'utente un breve suggerimento sul tipo di informazioni previste nel campo.
-   </td>
-  </tr>
-  </tbody>
-</table>
 
-<!-- 
-## Supported HTML 5 input types in Form Block
+| Proprietà | Componenti applicabili | Dettagli |
+|--------------|------------------------------|----------------------------------------------------------------------|
+| Tipo | Tutti i bundle  | Specifica il tipo di componente. Questa proprietà determina il comportamento e l&#39;aspetto del campo di input. Ad esempio, per gli input di testo, il tipo può essere &quot;text&quot;, &quot;email&quot; per gli input di e-mail, &quot;password&quot; per gli input di password. Il blocco modulo adattivo supporta tutti i HTML validi 5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">tipi di input</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">seleziona</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">set di campi</a> come tipo. |
+| Nome | Tutti | Identifica il componente per l’invio del modulo. L&#39;attributo name viene utilizzato quando i dati del modulo vengono inviati al server, associando l&#39;input dell&#39;utente a un campo specifico. |
+| Etichetta | Tutti | Fornisce informazioni contestuali agli utenti. L’etichetta è il testo visualizzato accanto al componente, che fornisce agli utenti istruzioni su quali informazioni inserire. |
+| Valore | Testo, password, e-mail, numero, intervallo, data e relative varianti (datetime-local, mese, settimana, ora), casella di controllo, radio, nascosto, invia, pulsante | Specifica il valore iniziale del componente. Per gli input di testo, l&#39;area di testo e gli elementi di selezione, questo è il testo o l&#39;opzione di default visualizzata. Per i componenti radio e casella di controllo, si tratta del valore/dati inviati quando vengono selezionati. L’attributo value è facoltativo ma deve essere considerato obbligatorio per gli input di caselle di controllo e radio. |
+| Segnaposto | Testo, telefono, e-mail, password, data (e relative varianti come mese, settimana, ora, datetime-locale), numero, intervallo | Offre suggerimenti per l’input previsto. L&#39;attributo segnaposto fornisce un breve suggerimento che descrive il valore previsto del campo di input. Scompare quando l’utente inizia a digitare. |
+| Descrizione | Tutti | Fornisce informazioni aggiuntive sul componente e funge da testo della guida. Il campo di descrizione consente di spiegare ulteriormente lo scopo o le istruzioni per la compilazione del componente. Aiuta gli utenti a comprendere il contesto del campo di input. |
+| Visibile | Tutti | Controlla la visibilità iniziale. L’attributo visible è una proprietà booleana che determina se il componente è inizialmente visibile o nascosto al caricamento del modulo. Se impostato su true, il campo viene visualizzato; in caso contrario, viene nascosto. |
+| Obbligatorio | Testo, telefono, e-mail, password, data e relative varianti (datetime-local, mese, settimana, ora), numero, casella di controllo, radio, file, seleziona (a discesa), area di testo | Indica se il campo deve essere compilato prima dell’invio. L’attributo obbligatorio è una proprietà booleana utilizzata per specificare se l’utente deve fornire un input per il campo prima di inviare il modulo. |
+| Min | Data (e relative varianti come mese, settimana, ora, datetime-locale), numero, intervallo | Specifica il valore minimo consentito. L&#39;attributo min imposta il valore minimo che l&#39;utente può immettere nel campo. Ad esempio, per gli input di numeri, definisce il numero più basso accettabile. |
+| Max | Data (e relative varianti come mese, settimana, ora, datetime-locale), numero, intervallo | Specifica il valore massimo consentito. L’attributo max imposta il valore massimo che l’utente può immettere nel campo. Ad esempio, per gli input di date, definisce la data più alta accettabile. |
+| Accetta | File | Definisce i tipi di file consentiti. L&#39;attributo accept è un elenco separato da virgole di identificatori di tipi di file univoci che limita i tipi di file che gli utenti possono selezionare in un campo di input di file. |
+| Varie | File | Consente selezioni multiple. L’attributo multiple è una proprietà booleana utilizzata con i campi di input dei file. Se impostata su true, consente agli utenti di selezionare più file. |
+| Opzioni | A discesa | Specifica le scelte per i menu a discesa. La proprietà options è un elenco di scelte per i menu a discesa separato da virgole che definisce le opzioni selezionabili visualizzate dall&#39;utente. |
+| Selezionato | Casella di selezione, Radio | Determina se il campo è selezionato per impostazione predefinita. L’attributo selected è una proprietà booleana utilizzata con gli input di caselle di controllo e radio. Se impostato su true, indica che il campo è selezionato per impostazione predefinita al caricamento del modulo. |
+| Set di campi | Tutti | Raggruppa i campi per creare sezioni visivamente distinte all’interno di un modulo. L’elemento set di campi raggruppa i campi correlati all’interno di un modulo, separandoli visivamente per migliorare l’organizzazione e l’esperienza utente. </br> Per organizzare un set di campi all’interno di un set di campi, utilizza semplicemente `fieldset` e specificarne l’attributo name. Nell’esempio seguente viene illustrato come i pulsanti di scelta sono racchiusi in un singolo set di campi per una migliore organizzazione. ![Esempio di set di campi](/help/edge/assets/fieldset-example.png) |
 
-The Form Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
 
+
+<!--
+
+## Supported HTML 5 input types in Adaptive Form Block
+
+The Adaptive Form Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
 Here is the table which outlines how core components correspond to their HTML-5 input types in Edge Delivery:
-
 <table>
  <tbody>
   <tr>
@@ -172,26 +169,26 @@ Here is the table which outlines how core components correspond to their HTML-5 
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html">Accordion<a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> Allows user to create expandable and collapsible sections in a form. </td>
   </tr>
   <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html">Horizontal tabs</a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td>Organizes multiple sections of a form into separate tabs which are displayed horizontally.</td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/image.html">Image</a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> Allows user to include images in a form.</td>
   </tr><tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/title.html">Title</a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> Refers to the text that appears at the top of the form. </td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/submit-button.html">Switch</td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>

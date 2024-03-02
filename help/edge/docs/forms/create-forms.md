@@ -4,7 +4,7 @@ description: Forme perfette, veloce! ⚡ authoring basato su documento di AEM Fo
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 68b60d33e6ccfe27452cfea76603e4d7d29f0c6e
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Nell’era digitale di oggi, la creazione di moduli facili da usare è essenzial
 
 Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google Sheets, consentendo di utilizzare un ecosistema dinamico e API affidabili di Google Sheets, Microsoft Excel e Microsoft Sharepoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
 
-![Ecosistema di authoring basato su documenti](/help/edge/assets/document-based-authoring.png)
+![Ecosistema di authoring basato su documenti](/help/edge/assets/document-based-authoring-workflow.png)
 
 AEM Forms Edge Delivery fornisce un blocco, noto come blocco di moduli adattivi, per facilitare la creazione di moduli per acquisire e archiviare i dati acquisiti. Per iniziare a creare un modulo, puoi includere il blocco di modulo adattivo nel progetto EDS AEM. Iniziamo:
 
@@ -34,17 +34,17 @@ Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
 ## Creare un modulo
 
-+++ Passaggio 1: aggiungi il blocco del modulo adattivo al progetto Edge Delivery Service (EDS).
++++ Passaggio 1: aggiungi il blocco di modulo adattivo al progetto Edge Delivery Service (EDS).
 
-L’adattivo consente agli utenti di creare moduli per un sito del servizio di consegna Edge. Tuttavia, questo blocco non è incluso nel boilerplate predefinito dell’AEM (utilizzato per creare un progetto Edge Delivery Service). Per integrare facilmente il blocco del modulo adattivo nel progetto del servizio di consegna Edge:
+L’adattivo consente agli utenti di creare moduli per un sito del servizio di consegna Edge. Tuttavia, questo blocco non è incluso nel boilerplate predefinito dell’AEM (utilizzato per creare un progetto Edge Delivery Service). Per integrare facilmente il blocco di moduli adattivi nel progetto del servizio di consegna Edge:
 
-1. **Clonare l’archivio di blocchi di moduli adattivi**: clona il [Archivio di blocchi di moduli adattivi](https://github.com/adobe/afb) sul computer locale. Contiene il codice per eseguire il rendering del modulo su una pagina Web EDS. In questo documento, la cartella locale dell’archivio Forms Block viene indicata come `[Adaptive Form block repository]`.
-1. **Individua l’archivio dei blocchi di moduli adattivi:** Accedere a [Archivio di blocchi di moduli adattivi]/blocca la cartella sul computer locale e copia `form` cartella.
-1. **Incollare il blocco Modulo adattivo nel progetto EDS:**
+1. **Clonare l’archivio del blocco di moduli adattivi**: clona il [Archivio per blocchi di moduli adattivi](https://github.com/adobe/afb) sul computer locale. Contiene il codice per eseguire il rendering del modulo su una pagina Web EDS. In questo documento, la cartella locale dell’archivio Forms Block viene indicata come `[Adaptive Form Block repository]`.
+1. **Individua l’archivio del blocco di moduli adattivi:** Accedere a [Archivio per blocchi di moduli adattivi]/blocca la cartella sul computer locale e copia `form` cartella.
+1. **Incollare il blocco modulo adattivo nel progetto EDS:**
 Accedi a [Archivio di progetti EDS]/block/ nel computer locale e incolla la cartella del modulo.
 1. **Commit delle modifiche su GitHub:** Archivia la cartella del modulo e i relativi file sottostanti nel progetto del servizio di consegna Edge su GitHub.
 
-Dopo aver completato questi passaggi, il blocco del modulo adattivo viene aggiunto correttamente all’archivio di progetto del servizio di consegna Edge su GitHub. È ora possibile creare e aggiungere moduli a una pagina EDS Sites.
+Dopo aver completato questi passaggi, il blocco di modulo adattivo viene aggiunto correttamente all’archivio di progetto del servizio di consegna Edge su GitHub. È ora possibile creare e aggiungere moduli a una pagina EDS Sites.
 
 
 **Risoluzione dei problemi di build di GitHub**
@@ -113,7 +113,7 @@ Per procedere con la creazione del modulo:
 +++ Passaggio 3: visualizza l’anteprima del modulo utilizzando la pagina del servizio di consegna Edge (EDS).
 
 
-Finora, hai aggiunto il blocco Modulo adattivo al progetto EDS e preparato la struttura del modulo. Ora, per visualizzare l’anteprima del modulo:
+Finora hai aggiunto il blocco modulo adattivo al progetto EDS e preparato la struttura del modulo. Ora, per visualizzare l’anteprima del modulo:
 
 1. **Accedere alla directory dei progetti:** Apri l’account Microsoft SharePoint o Google Drive e passa alla directory del progetto AEM Edge Delivery.
 

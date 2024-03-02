@@ -4,9 +4,9 @@ description: Personalizzare tema e stile per un modulo del servizio di consegna 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Forms è fondamentale per l’interazione degli utenti sui siti web, consentendo
 
 ## Informazioni sui tipi di campi modulo
 
-Prima di immergerci nello stile, esaminiamo i tipi di campi modulo comuni supportati dal blocco Modulo adattivo:
+Prima di immergerci nello stile, esaminiamo i tipi di campi modulo comuni supportati dal blocco modulo adattivo:
 
 * Campi di input: includono input di testo, input di e-mail, input di password e altro ancora.
 * Gruppi di caselle di controllo: utilizzato per selezionare più opzioni.
@@ -37,9 +37,9 @@ Comprendere i concetti fondamentali di CSS è fondamentale prima di formattare c
 
 ## Applicazione di uno stile a un modulo per un blocco di modulo adattivo
 
-Il blocco di modulo offre una struttura di HTML standardizzata che semplifica la selezione e lo stile dei componenti del modulo:
+Il blocco di moduli adattivi offre una struttura di HTML standardizzata che semplifica la selezione e lo stile dei componenti del modulo:
 
-* **Aggiorna stili predefiniti**: è possibile modificare gli stili predefiniti di un modulo modificando il `/blocks/form/form.css file`. Questo file offre uno stile completo per un modulo, con supporto per i moduli della procedura guidata in più passaggi. Viene enfatizzato l’utilizzo di variabili CSS personalizzate per una facile personalizzazione, manutenzione e uno stile uniforme tra i moduli. Per istruzioni sull’aggiunta del blocco di modulo al progetto, consulta [creare un modulo](/help/edge/docs/forms/create-forms.md).
+* **Aggiorna stili predefiniti**: è possibile modificare gli stili predefiniti di un modulo modificando il `/blocks/form/form.css file`. Questo file offre uno stile completo per un modulo, con supporto per i moduli della procedura guidata in più passaggi. Viene enfatizzato l’utilizzo di variabili CSS personalizzate per una facile personalizzazione, manutenzione e uno stile uniforme tra i moduli. Per istruzioni sull’aggiunta del blocco di modulo adattivo al progetto, consulta [creare un modulo](/help/edge/docs/forms/create-forms.md).
 
 * **Personalizzazione**: utilizza il valore predefinito `forms.css` come base e personalizzarla per modificare l’aspetto dei componenti del modulo, rendendolo visivamente accattivante e di facile utilizzo. La struttura del file incoraggia l’organizzazione e mantiene gli stili per i moduli, promuovendo progettazioni coerenti all’interno del sito web.
 
@@ -60,7 +60,7 @@ Il blocco di modulo offre una struttura di HTML standardizzata che semplifica la
 
 ## Struttura dei componenti
 
-Il blocco modulo offre una struttura HTML coerente per vari elementi del modulo, garantendo una gestione e uno stile più semplici. Puoi manipolare i componenti utilizzando i CSS a scopo di stile.
+Il blocco di moduli adattivi offre una struttura di HTML coerente per vari elementi del modulo, garantendo così uno stile e una gestione più semplici. Puoi manipolare i componenti utilizzando i CSS a scopo di stile.
 
 ### Componenti generali (ad eccezione di elenchi a discesa, gruppi di scelta e gruppi di caselle di controllo):
 
@@ -421,6 +421,6 @@ Per applicare stili univoci, puoi anche eseguire il targeting di singoli campi p
 }
 ```
 
-Questo CSS esegue il targeting di tutti gli elementi di input che si trovano all’interno di un elemento che ha la classe `form-otp`. La struttura HTML del modulo segue le convenzioni del blocco modulo, il che implica che esiste un contenitore contrassegnato con la classe &quot;form-otp&quot; che contiene il campo con il nome &quot;otp&quot;.
+Questo CSS esegue il targeting di tutti gli elementi di input che si trovano all’interno di un elemento che ha la classe `form-otp`. La struttura HTML del modulo segue le convenzioni del Blocco modulo adattivo, il che implica che esiste un contenitore contrassegnato con la classe &quot;form-otp&quot; che contiene il campo con il nome &quot;otp&quot;.
 
 
