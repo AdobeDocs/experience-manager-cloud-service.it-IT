@@ -4,9 +4,9 @@ description: Il servizio AEM Forms Edge Delivery è stato progettato per garanti
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,10 @@ Puoi utilizzare il servizio per:
   <div>
     <style>
     .image-container {
-    width: 80%;
     text-align: center; 
     }
     .image-container img {
-        width: 100%; /* Set image width to 100% of the container */
-        border: .5px solid; /* Maintain the border style */
-        padding: 15px; /* Maintain the padding */
+        width: 100%; /* Set image width to 100% of the container 
     }
 </style>
     <div class="image-container">
@@ -42,6 +39,8 @@ Puoi utilizzare il servizio per:
 
 
 </div>
+
+<!--
 
 <!--
 
@@ -62,25 +61,33 @@ Puoi utilizzare il servizio per:
 
     
     >[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
 
     -->
 
-## Funzionalità principali
+## Funzioni principali
 
-* **Componenti campo modulo basati su HTML5**: il servizio AEM Forms Edge Delivery ti consente di creare moduli interattivi e di facile utilizzo utilizzando campi modulo basati su HTML validi [tipi di input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">seleziona</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">set di campi</a>  componenti. Questi componenti sono adatti a diversi tipi di raccolta dati e possono essere facilmente personalizzati in base a esigenze specifiche.
+* **Componenti campo modulo basati su HTML5**: AEM Forms Edge Delivery Service consente di creare moduli interattivi e di facile utilizzo utilizzando componenti modulo basati su HTML5 [tipi di input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">seleziona</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">set di campi</a>  elementi. Questi componenti sono adatti a diversi tipi di raccolta dati e possono essere facilmente personalizzati in base a esigenze specifiche.
 
 * **Accessibilità**: i campi nel blocco del modulo sono accessibili. Ogni etichetta è collegata al rispettivo elemento di input e gli ID vengono generati automaticamente per il collegamento. Le descrizioni associate ai campi sono collegate tramite l’attributo aria-descripedby. È supportata la navigazione tramite tastiera con i tasti standard Tab/Shift + Tab.
 
-* **Regole modulo**: crea una logica che regola la visibilità, la convalida e il comportamento dei campi in base all’input dell’utente o a condizioni predefinite. Le regole offrono un modo flessibile e intuitivo di aggiungere intelligenza ai moduli, garantendo che si adattino senza problemi in base agli input degli utenti.
+* **Stile**: ogni campo modulo ha una struttura HTML fissa che può essere facilmente decorata utilizzando file CSS o JavaScript personalizzati. I selettori per i campi di targeting in CSS e JS vengono forniti in base al tipo e al nome. Puoi creare facilmente nuovi selettori grazie alla struttura standardizzata.
 
-* **Caricamenti di file**: migliora i moduli con funzionalità di allegati file ottimizzate. Per raccogliere documenti, immagini o altri file dagli utenti, il Blocco modulo adattivo ti consente di integrare facilmente la funzionalità di caricamento dei file. Con le opzioni di gestione personalizzate disponibili, puoi adattare il processo di caricamento dei file alle tue esigenze specifiche.
+* **Regole**: crea facilmente una logica che regola la visibilità, la convalida e il comportamento dei campi in base all’input dell’utente o a condizioni predefinite. Le regole offrono un modo flessibile e intuitivo di aggiungere intelligenza ai moduli, garantendo che si adattino senza problemi in base agli input degli utenti.
 
-* **Convalida modulo**: prima dell’invio, il modulo viene convalidato e i campi non validi vengono contrassegnati in modo appropriato con i messaggi di errore visualizzati all’utente. Sono disponibili vari modelli per la visualizzazione di questi errori.
+* **Convalide**: prima dell’invio, il modulo viene convalidato e i campi non validi vengono contrassegnati in modo appropriato con i messaggi di errore visualizzati all’utente. Sono disponibili vari modelli per la visualizzazione di questi errori.
 
-* **Forms di stile**: ogni campo modulo ha una struttura HTML fissa che può essere ulteriormente decorata utilizzando file CSS o JavaScript personalizzati. I selettori per i campi di targeting in CSS/JS vengono forniti in base al tipo e al nome.
+Su richiesta sono disponibili alcune funzioni avanzate:
+
+* **Caricamenti di file**: è possibile aggiungere funzionalità di file allegati ai moduli. Per raccogliere documenti, immagini o altri file dagli utenti, la funzionalità di caricamento dei file ti consente di lavorare senza problemi. Con le opzioni di gestione personalizzate disponibili, puoi adattare il processo di caricamento dei file alle tue esigenze specifiche.
+
+* **reCAPTCHA**: integrazione perfetta di Google reCAPTCHA nei moduli con il supporto fornito con il prodotto (OOTB). Proteggi i moduli da attività fraudolente, spam e abusi, mantenendo al contempo un’esperienza utente fluida e ininterrotta.
+
+* **Invia notifica e-mail all’invio del modulo**: elimina il problema dei follow-up manuali e assicura una comunicazione tempestiva con l’automazione e-mail integrata per l’invio dei moduli. Questa soluzione integrata consente di informare facilmente le parti interessate, incluso l’invio dei dati del modulo, ogni volta che qualcuno compila un modulo sul sito web. Non sono necessari configurazioni complesse o strumenti aggiuntivi, è pronto per l&#39;uso.
+
 
 ## Flusso di lavoro
 

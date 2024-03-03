@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '4751'
 ht-degree: 95%
@@ -822,7 +822,7 @@ ht-degree: 95%
       + Introduzione {#getting-started-eds-forms}
          + [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
          + [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
-         + [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-eds-forms.md)
+         + [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-forms.md)
          + [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
          + [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)
          + [Utilizzare le regole per aggiungere un comportamento dinamico a un modulo](/help/edge/docs/forms/rules-forms.md)

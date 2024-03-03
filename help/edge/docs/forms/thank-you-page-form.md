@@ -4,7 +4,7 @@ description: Scopri come configurare le pagine di ringraziamento e il reindirizz
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
@@ -86,6 +86,6 @@ Per reindirizzare la pagina &quot;Grazie&quot; a un’altra pagina, utilizza [re
 * [Proprietà del campo modulo](/help/edge/docs/forms/eds-form-field-properties)
 * [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
 * [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
-* [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-forms.md)
 * [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
 * [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)

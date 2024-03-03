@@ -2,9 +2,9 @@
 description: Questo tutorial include istruzioni per rendere ripetibile una sezione di un modulo
 title: Sezioni ripetibili in Edge Delivery Services
 feature: Edge Delivery Services
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Ad esempio, si consideri un modulo utilizzato per raccogliere informazioni dagli
 
 ## Prerequisiti
 
-Configura il progetto Github del servizio di consegna Edge (EDS) utilizzando il boilerplate dell’AEM e clona l’archivio Github corrispondente sul computer locale. Consulta [tutorial per sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) per i dettagli.
+Configura il progetto GitHub del servizio di consegna Edge (EDS) utilizzando il boilerplate AEM e clona l’archivio GitHub corrispondente sul computer locale. Consulta [tutorial per sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) per i dettagli.
 
 ## Sezioni ripetibili nella distribuzione Edge
 

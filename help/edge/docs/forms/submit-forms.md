@@ -4,9 +4,9 @@ description: Crea moduli potenti più rapidamente utilizzando fogli di calcolo e
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 0%
 
 Una volta [ha creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/create-forms.md), è ora di abilitare il foglio di calcolo corrispondente per iniziare a ricevere i dati.
 
+![Ecosistema di authoring basato su documenti](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -46,6 +47,7 @@ Per attivare il foglio di calcolo:
 
 
 Una volta aggiunti i nomi dei campi al `incoming` foglio, il modulo diventa pronto per accettare gli invii. È possibile visualizzare in anteprima il modulo e inviare i dati al foglio utilizzando il modulo.
+
 
 
 Nel foglio di calcolo vengono inoltre osservate le seguenti modifiche:
@@ -290,6 +292,6 @@ Ora puoi personalizzare il messaggio di ringraziamento, [configurare una pagina 
 
 * [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
 * [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
-* [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-forms.md)
 * [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
 * [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)
