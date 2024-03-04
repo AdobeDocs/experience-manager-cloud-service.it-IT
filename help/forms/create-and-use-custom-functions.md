@@ -5,10 +5,10 @@ keywords: Aggiungi una funzione personalizzata, utilizza una funzione personaliz
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 1fb7fece71eec28219ce36c72d628867a222b618
+source-git-commit: 46fbed98a806f62dd1882eb0085d4338c5cd51a7
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 0%
+source-wordcount: '1108'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 ## Introduzione
 
 AEM Forms supporta funzioni personalizzate che consentono agli utenti di definire funzioni JavaScript per l’implementazione di regole di business complesse. Queste funzioni personalizzate estendono le funzionalità dei moduli facilitando la manipolazione e l’elaborazione dei dati immessi per soddisfare requisiti specifici. Consentono inoltre di modificare dinamicamente il comportamento delle forme in base a criteri predefiniti.
-In Adaptive Forms, puoi utilizzare funzioni personalizzate all’interno del [editor di regole di un modulo adattivo](/help/forms/rule-editor.md#custom-functions) per creare regole di convalida specifiche per i campi modulo.
+In Adaptive Forms, puoi utilizzare funzioni personalizzate all’interno del [editor di regole di un modulo adattivo](/help/forms/rule-editor-core-components.md) per creare regole di convalida specifiche per i campi modulo.
 
 Comprendiamo l’utilizzo della funzione personalizzata, in cui gli utenti immettono l’indirizzo e-mail e desideri che l’indirizzo e-mail inserito segua un formato specifico (contiene il simbolo &quot;@&quot; e un nome di dominio). Crea una funzione personalizzata come &quot;ValidateEmail&quot; che accetta l’indirizzo e-mail come input e restituisce true se è valido, altrimenti restituisce false.
 
@@ -49,6 +49,73 @@ L’utilizzo di funzioni personalizzate in Adaptive Forms offre i seguenti vanta
 * **Convalida dei dati**: le funzioni personalizzate ti consentono di eseguire controlli personalizzati sugli input dei moduli e fornire messaggi di errore specifici.
 * **Comportamento dinamico**: le funzioni personalizzate consentono di controllare il comportamento dinamico dei moduli in base a condizioni specifiche. Ad esempio, è possibile visualizzare/nascondere campi, modificare i valori dei campi o modificare dinamicamente la logica del modulo.
 * **Integrazione**: puoi utilizzare funzioni personalizzate da integrare con API o servizi esterni. Consente di recuperare dati da origini esterne, inviare dati agli endpoint Rest esterni o eseguire azioni personalizzate basate su eventi esterni.
+
+## Note JS supportate
+
+Assicurati che la funzione personalizzata che scrivi sia accompagnata dai `jsdoc` sopra di esso.
+
+Supportato `jsdoc` tag:
+
+* **Privato**
+Sintassi: `@private`
+Una funzione privata non è inclusa come funzione personalizzata.
+
+* **Nome**
+Sintassi: `@name funcName <Function Name>`
+In alternativa `,` puoi utilizzare: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
+  `funcName` è il nome della funzione (non sono consentiti spazi).
+  `<Function Name>` è il nome visualizzato della funzione.
+
+* **Parametro**
+Sintassi: `@param {type} name <Parameter Description>`
+In alternativa, puoi utilizzare: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
+Mostra i parametri utilizzati dalla funzione. Una funzione può avere più tag di parametri, uno per ogni parametro in ordine di occorrenza.
+  `{type}` rappresenta il tipo di parametro. I tipi di parametri consentiti sono:
+
+   1. stringa
+   2. numero
+   3. booleano
+   4. ambito
+   5. stringa[]
+   6. numero[]
+   7. booleano[]
+   8. data
+   9. data[]
+   10. array
+   11. oggetto
+
+  `scope` fa riferimento a uno speciale oggetto globals fornito da forms runtime. Deve essere l’ultimo parametro e non è visibile all’utente nell’editor di regole. È possibile utilizzare l&#39;ambito per accedere a un modulo leggibile e a un oggetto proxy di campo per leggere le proprietà, l&#39;evento che ha attivato la regola e un set di funzioni per manipolare il modulo.
+
+  `object` Il tipo viene utilizzato per passare un oggetto campo leggibile nel parametro a una funzione personalizzata invece di passare il valore.
+
+  Tutti i tipi di parametri sono classificati in una delle categorie precedenti. Nessuno non è supportato. Accertati di selezionare uno dei tipi riportati sopra. I tipi non fanno distinzione tra maiuscole e minuscole. Il nome del parametro non può contenere spazi.  La descrizione del parametro può contenere più parole.
+
+* **Parametro facoltativo**
+Sintassi: `@param {type=} name <Parameter Description>`
+In alternativa, puoi utilizzare: `@param {type} [name] <Parameter Description>`
+Per impostazione predefinita, tutti i parametri sono obbligatori. Per contrassegnare un parametro come facoltativo, aggiungi `=` nel tipo del parametro o inserendo il nome del parametro tra parentesi quadre.
+Ad esempio, dichiariamo `Input1` come parametro facoltativo:
+   * `@param {type=} Input1`
+   * `@param {type} [Input1]`
+
+* **Tipo restituito**
+Sintassi: `@return {type}`
+In alternativa, puoi utilizzare `@returns {type}`.
+Aggiunge informazioni sulla funzione, ad esempio l&#39;obiettivo.
+{type} rappresenta il tipo restituito della funzione. I tipi restituiti consentiti sono:
+
+   1. stringa
+   2. numero
+   3. booleano
+   4. stringa[]
+   5. numero[]
+   6. booleano[]
+   7. data
+   8. data[]
+   9. array
+   10. oggetto
+
+Tutti gli altri tipi di reso sono classificati in una delle categorie precedenti. Nessuno non è supportato. Accertati di selezionare uno dei tipi riportati sopra. I tipi restituiti non fanno distinzione tra maiuscole e minuscole.
 
 ## Considerazioni durante la creazione di funzioni personalizzate {#considerations}
 
@@ -137,15 +204,15 @@ Puoi aggiungere funzioni personalizzate aggiungendo la libreria client. Per crea
 
 1. [Clonare l’archivio as a Cloud Service di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 1. Creare una cartella in `[AEM Forms as a Cloud Service repository folder]/apps/` cartella. Ad esempio, crea una cartella denominata come `experience-league`.
-1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` e creare un `ClientLibraryFolder`. Ad esempio, crea una cartella della libreria client come `es6clientlibs`.
-1. Aggiungi una proprietà `categories` con valore di tipo stringa. Ad esempio, assegna il valore `es6customfunctions` al `categories` proprietà per `es6clientlibs` cartella.
+1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` e creare un `ClientLibraryFolder`. Ad esempio, crea una cartella della libreria client come `customclientlibs`.
+1. Aggiungi una proprietà `categories` con valore di tipo stringa. Ad esempio, assegna il valore `customfunctionscategory` al `categories` proprietà per `customclientlibs` cartella.
 
    >[!NOTE]
    >
    > Puoi scegliere un nome qualsiasi per `client library folder` e `categories` proprietà.
 
 1. Crea una cartella denominata `js`.
-1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` cartella.
+1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` cartella.
 1. Aggiungi un file JavaScript, ad esempio: `function.js`. Il file contiene il codice per la funzione personalizzata.
 
    >[!NOTE]
@@ -156,7 +223,7 @@ Puoi aggiungere funzioni personalizzate aggiungendo la libreria client. Per crea
     >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
 
 1. Salva il `function.js` file.
-1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` cartella.
+1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` cartella.
 1. Aggiungi un file di testo come `js.txt`. Il file contiene:
 
    ```javascript
@@ -175,7 +242,7 @@ Puoi aggiungere funzioni personalizzate aggiungendo la libreria client. Per crea
 
 1. [Esegui la pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
 
-Una volta eseguita correttamente la pipeline, la funzione personalizzata aggiunta nella libreria client diventa disponibile nel [Editor di regole per moduli adattivi](/help/forms/rule-editor.md).
+Una volta eseguita correttamente la pipeline, la funzione personalizzata aggiunta nella libreria client diventa disponibile nel [Editor di regole per moduli adattivi](/help/forms/rule-editor-core-components.md).
 
 ### Aggiungere una libreria client in un modulo adattivo{#use-custom-function}
 
@@ -184,7 +251,7 @@ Dopo aver implementato la libreria client nell’ambiente Forms CS, utilizzane l
 1. Apri il modulo in modalità di modifica. Per aprire un modulo in modalità di modifica, selezionare un modulo e selezionare **[!UICONTROL Modifica]**.
 1. Apri il browser Contenuto e seleziona la **[!UICONTROL Contenitore guida]** componente del modulo adattivo.
 1. Fai clic sulle proprietà Contenitore guida ![Proprietà guida](/help/forms/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
-1. Apri **[!UICONTROL Base]** e seleziona il nome del **[!UICONTROL categoria libreria client]** dall’elenco a discesa (in questo caso, seleziona `es6customfunctions`).
+1. Apri **[!UICONTROL Base]** e seleziona il nome del **[!UICONTROL categoria libreria client]** dall’elenco a discesa (in questo caso, seleziona `customfunctionscategory`).
 
    ![Aggiunta della libreria client della funzione personalizzata](/help/forms/assets/clientlib-custom-function.png)
 
