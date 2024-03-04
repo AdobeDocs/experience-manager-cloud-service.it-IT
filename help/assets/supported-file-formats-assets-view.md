@@ -3,11 +3,10 @@ title: Formati di file supportati
 description: Formati di file supportati per i vari casi d’uso di [!DNL Assets view]
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
-source-git-commit: 6cb30ffda6c0de04e5cb3d01341b59c9ee75b335
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 96%
+source-wordcount: '515'
+ht-degree: 100%
 
 ---
 
@@ -122,7 +121,7 @@ Gli utenti di [!DNL Adobe Asset Link] possono caricare e consegnare (caricare un
 
 ## Passaggi successivi {#next-steps}
 
-* Fornire feedback sul prodotto utilizzando [!UICONTROL Feedback] opzione disponibile nell’interfaccia utente di visualizzazione delle risorse
+* Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 

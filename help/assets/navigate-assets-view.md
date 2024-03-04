@@ -2,11 +2,10 @@
 title: "Interfaccia utente di [!DNL Assets view]"
 description: Comprendere l’interfaccia utente e la navigazione in [!DNL Assets view].
 role: User
-exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 39166f59eb773a149ba28be2b34d0c1aa6c831b4
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 63%
+ht-degree: 89%
 
 ---
 
@@ -24,7 +23,7 @@ Quando accedi a [!DNL Assets view], viene visualizzata la seguente interfaccia.
 
 ![[!DNL Assets view] - Interfaccia utente](assets/assets-view-interface.png)
 
-**A**: barra laterale a sinistra per sfogliare l’archivio e accedere ad alcune altre opzioni **B**: visualizza o comprimi la barra laterale a sinistra per aumentare l’area di visualizzazione delle risorse **C**: Filtra i risultati della ricerca **D**: seleziona tutto il contenuto della cartella selezionata **E**: opzioni per ordinare le risorse **F**: casella di ricerca **G**: carica o trascina i file tramite `Add Assets` pulsante **H**: crea una nuova cartella **I**: passaggio da una visualizzazione all’altra
+**A**: barra laterale sinistra per sfogliare l’archivio, fornisce l’accesso ad alcune altre opzioni **B**: visualizzare o comprimere la barra laterale sinistra per aumentare l’area di visualizzazione delle risorse **C**: filtrare i risultati della ricerca **D**: selezionare tutti i contenuti della cartella selezionata **E**: opzioni di ordinamento delle risorse **F**: casella di ricerca **G**: caricare o trascinare file utilizzando il pulsante `Add Assets` **H**: creare una nuova cartella **I**: passare da una visualizzazione all’altra
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
 
@@ -39,7 +38,7 @@ Quando accedi a [!DNL Assets view], viene visualizzata la seguente interfaccia.
 * [Raccolte](/help/assets/manage-collections-assets-view.md): una raccolta è un set di risorse, cartelle o altre raccolte all’interno della vista Adobe Experience Manager Assets. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti. A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Puoi condividere più raccolte con un utente. Ogni raccolta contiene riferimenti alle risorse. L’integrità dei riferimenti alle risorse viene mantenuta tra le varie raccolte.
 
 * [Approfondimenti](/help/assets/manage-reports-assets-view.md#view-live-statistics): in [!DNL Assets view], puoi visualizzare insight in tempo reale nella tua dashboard. Vista Risorse consente di visualizzare in tempo reale i dati del tuo ambiente vista Risorse, con la dashboard Insight. Puoi visualizzare le metriche degli eventi in tempo reale negli ultimi 30 giorni o negli ultimi 12 mesi.
-* **Cestino**: mostra l’elenco delle risorse eliminate dalla cartella principale **[!UICONTROL Risorse]**. Puoi selezionare una risorsa nella cartella Cestino per ripristinarla alla posizione originale o eliminarla definitivamente. Puoi specificare una parola chiave o applicare filtri quali stato della risorsa, tipo di file, tipo di mime, dimensione dell’immagine, creazione della risorsa, modifica e date di scadenza, nonché filtrare in base alle risorse eliminate dall’utente corrente. Puoi anche applicare filtri personalizzati per cercare le risorse appropriate all’interno della cartella Cestino. Per ulteriori informazioni sull&#39;utilizzo di filtri standard e personalizzati, vedere procedura [cercare le risorse nella vista Risorse](/help/assets/search-assets-view.md).
+* **Cestino**: mostra l’elenco delle risorse eliminate dalla cartella principale **[!UICONTROL Risorse]**. Puoi selezionare una risorsa nella cartella Cestino per ripristinarla nella posizione originale o eliminarla definitivamente. Puoi specificare una parola chiave o applicare filtri quali stato della risorsa, tipo di file, tipo di mime, dimensione dell’immagine, creazione della risorsa, modifica e date di scadenza, nonché filtrare in base alle risorse eliminate dall’utente corrente. Puoi anche applicare filtri personalizzati per cercare le risorse appropriate all’interno della cartella Cestino. Per ulteriori informazioni sull&#39;utilizzo di filtri standard e personalizzati, vedere procedura [cercare le risorse nella vista Risorse](/help/assets/search-assets-view.md).
 * **Impostazioni**: puoi configurare diverse opzioni della vista Risorse utilizzando **Impostazioni**, ad esempio Moduli di metadati, Report e Gestione tassonomia.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
@@ -74,7 +73,7 @@ Per visualizzare in anteprima una risorsa, selezionala e fai clic sull’[!UICON
 
 ![Visualizzare in anteprima una risorsa](assets/preview-asset-2.png)
 
-**A**: torna alla cartella corrente o al risultato della ricerca corrente nell’archivio **B**: nome e formato del file che si sta visualizzando in anteprima **C**: Assegna attività **D**: metadati avanzati **E**: parole chiave e tag avanzati **F**: commenta e annota **G**: visualizza le attività relative alla risorsa selezionata **H**: visualizzare e gestire le versioni **I**: visualizza le rappresentazioni dell’immagine **J**: modifica immagine **K**: metadati di base **L**: metadati avanzati **M**: parole chiave e tag avanzati **N**: visualizza un’anteprima più dettagliata. Zoom, schermo intero e altre opzioni **O**: passa alla risorsa precedente o successiva nella cartella corrente senza tornare alla cartella
+**A**: tornare alla cartella corrente o al risultato della ricerca corrente nell’archivio **B**: nome e formato del file che si sta visualizzando in anteprima **C**: assegnare le attività **D**: metadati avanzati **E**: parole chiave e tag avanzati **F**: commentare e annotare **G**: visualizzare le attività relative alla risorsa selezionata **H**: visualizzare e gestire le versioni **I**: visualizzare le rappresentazioni dell&#39;immagine **J**: modificare l’immagine **K**: metadati di base **L**: metadati avanzati **M**: parole chiave e tag avanzati **N**: visualizzare un’anteprima più dettagliata. Zoom, schermo intero e altre opzioni **O**: passare alla risorsa precedente o successiva nella cartella corrente senza tornare alla cartella
 
 Puoi anche visualizzare in anteprima i video.
 

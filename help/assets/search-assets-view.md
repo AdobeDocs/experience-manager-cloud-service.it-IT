@@ -2,11 +2,10 @@
 title: Scopri come cercare e individuare le risorse in [!DNL Assets view]?
 description: Scopri come cercare e individuare le risorse nella vista AEM Assets. La potente funzionalità di ricerca consente di individuare rapidamente la risorsa appropriata e velocizza le attività relative ai contenuti.
 role: User
-exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 7b815a83e4e93c024403fab02f9a9b4ba8685007
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1543'
-ht-degree: 60%
+ht-degree: 91%
 
 ---
 
@@ -120,37 +119,35 @@ Per rimuovere i filtri personalizzati:
 
 1. Fai clic su **[!UICONTROL Conferma]** per rimuovere i filtri dall’interfaccia utente.
 
-## Cercare risorse tramite [!DNL Adobe Firefly] {#search-firefly}
+## Cercare risorse utilizzando [!DNL Adobe Firefly] {#search-firefly}
 
-Puoi cercare una risorsa non disponibile in nessuna cartella di risorse utilizzando [!DNL Adobe Firefly] funzione di ricerca risorse in [!DNL Experience Manager Assets]. Questo consente di generare in modo efficiente in tempo reale le risorse che non sono memorizzate nelle cartelle di risorse.
+Puoi cercare una risorsa non disponibile in qualsiasi cartella di risorse utilizzando la funzione di ricerca risorse [!DNL Adobe Firefly] in [!DNL Experience Manager Assets]. Questa consente di generare in modo efficiente e in tempo reale le risorse che non sono memorizzate nelle cartelle risorse.
 
 ### Prima di iniziare
 
-È necessario disporre di un [!DNL Adobe Express] abbonamento.
+È necessario disporre di un abbonamento attivo a [!DNL Adobe Express].
 
 ### Generare risorse
 
 Per generare nuove risorse tramite [!DNL Adobe Firefly]:
 
-1. Accedi a [!DNL AEM Assets] Workspace.
-1. Immetti il nome della risorsa nella barra di ricerca nella parte superiore della pagina.<br>
-Ad esempio, puoi cercare una risorsa utilizzando la parola chiave `Bugatti Type 57`. Durante la ricerca della risorsa, non viene trovato alcun risultato, perché la risorsa non è presente in nessuna cartella di risorse.
+1. accedi all’area di lavoro di [!DNL AEM Assets].
+1. Immetti il nome della risorsa nella barra di ricerca nella parte superiore della pagina.<br>Ad esempio, supponiamo di cercare una risorsa utilizzando la parola chiave `Bugatti Type 57`. Durante la ricerca della risorsa, non viene trovato alcun risultato, perché la risorsa non è presente in nessuna cartella di risorse.
 1. Digita il nome della risorsa nella barra di ricerca al centro della pagina e fai clic su **[!UICONTROL Genera]**.
-   ![Integrazione del Firefly](assets/firefly-integration.jpg)
-   *Figura: Nessun risultato trovato per Bugatti Type 57 nella cartella delle risorse.* <br>
+   ![Integrazione di Firefly](assets/firefly-integration.jpg)
+   *Figura: nessun risultato trovato per Bugatti Type 57 nella cartella risorse.* <br>
 Le nuove risorse sono state generate correttamente.
-   ![Integrazione del Firefly](assets/bugatti-type-57.jpg)
-   *Figura: Risorse di riferimento cercate tramite [!DNL Adobe Firefly] funzione di ricerca risorse.* <br>
-Puoi caricare queste risorse nella cartella preferita per accedervi facilmente.
+   ![Integrazione di Firefly](assets/bugatti-type-57.jpg)
+   *Figura: risorse di riferimento cercate tramite la funzione di ricerca risorse [!DNL Adobe Firefly].* <br>Puoi caricare queste risorse nella cartella preferita per accedervi facilmente.
 
 ### Caricare le risorse
 
 Per caricare la risorsa generata nell’archivio delle risorse:
 
-1. Clic **[!UICONTROL Carica]**.
-1. Seleziona la cartella di risorse in cui devi caricare la risorsa e fai clic su **[!UICONTROL Seleziona cartella]**.
+1. Fai clic su **[!UICONTROL Carica]**.
+1. Seleziona la cartella risorse in cui devi caricare la risorsa e fai clic su **[!UICONTROL Seleziona cartella]**.
    ![Carica risorsa](assets/upload-asset-firefly.jpg)
-   *Figura: Selezionare la cartella in cui caricare la risorsa.*
+   *Figura: seleziona la cartella in cui caricare la risorsa.*
 
 ## Ricerche salvate {#saved-search}
 
@@ -177,7 +174,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 Puoi selezionare le risorse da visualizzare nei risultati della ricerca ed effettuare le seguenti operazioni:
 
-* **Trova immagine simile**: trova una risorsa di immagine simile nell’interfaccia utente Assets in base ai metadati e ai tag avanzati.
+* **Trova immagine simile**: trova una risorsa di immagine simile nell’interfaccia utente di Assets in base ai metadati e ai tag avanzati.
 
 * **Dettagli**: visualizza e modifica le proprietà della risorsa.
 
@@ -187,9 +184,9 @@ Puoi selezionare le risorse da visualizzare nei risultati della ricerca ed effet
 
 * **Fissa in Accesso rapido**: [fissa una risorsa](my-workspace-assets-view.md) per un accesso più rapido quando necessario in un secondo momento. Tutti gli elementi fissati vengono visualizzati nella sezione **Accesso rapido** dell’area di lavoro personale.
 
-* **Apri in Adobe Express**: modifica un’immagine nell’Adobe Express integrato dalla schermata Experience Manager Assets.
+* **Apri in Adobe Express**: modifica un’immagine nell’editor Adobe Express integrato, dalla schermata di Adobe Experience Manager Assets.
 
-* **Modifica**: modifica l’immagine utilizzando l’Adobe Express.
+* **Modifica**: modifica l’immagine utilizzando Adobe Express.
 
 * **Condividi collegamento**: [condividi collegamenti](share-links-for-assets-view.md) per una risorsa con altri utenti in modo che possano accedervi e scaricarla.
 
@@ -207,38 +204,38 @@ Puoi selezionare le risorse da visualizzare nei risultati della ricerca ed effet
 
 * **Osserva**: [monitora le operazioni](manage-notifications-assets-view.md) eseguite su una risorsa.
 
-## Configurazione della prima home page di ricerca {#configuring-search-first-homepage}
+## Configurazione della pagina Home Cerca prima {#configuring-search-first-homepage}
 
-Experience Manager Assets consente di selezionare la pagina di destinazione predefinita per la tua organizzazione. Quando si utilizza la pagina Home di Search First, è possibile personalizzare il marchio della pagina configurando lo sfondo e le immagini del logo in base al marchio.
+Experience Manager Assets consente di selezionare la pagina di destinazione predefinita per la tua organizzazione. Quando si utilizza la pagina Home Cerca prima, è possibile personalizzare il marchio della pagina configurando le immagini dello sfondo e del logo in base al proprio marchio.
 
-Per configurare la prima home page di ricerca, eseguire i passaggi seguenti:
+Per configurare la pagina Home Cerca prima, esegui i passaggi seguenti:
 
-1. Accedi a **[!UICONTROL Impostazioni]** > **[!UICONTROL Impostazioni generali]**.
-1. Seleziona **[!UICONTROL Cerca prima]**. Apre inoltre la ricerca per la prima configurazione correlata. È possibile impostare [allineamento](#setting-alignment-search-bar) o [imposta sfondo e immagine logo](#setting-background-image-and-logo) della tua home page.
+1. Passa a **[!UICONTROL Impostazioni]** > **[!UICONTROL Impostazioni generali]**.
+1. Seleziona **[!UICONTROL Cerca prima]**. Viene aperta la configurazione correlata Cerca prima. È possibile impostare l’[allineamento](#setting-alignment-search-bar) o [impostare l’immagine di sfondo e il logo](#setting-background-image-and-logo) della pagina Home.
 
-### Impostazione dell&#39;allineamento della barra di ricerca {#setting-alignment-search-bar}
+### Impostazione dell’allineamento della barra di ricerca {#setting-alignment-search-bar}
 
 [!DNL Assets view] consente di modificare l’allineamento della barra di ricerca. È possibile fare in modo che la barra di ricerca venga visualizzata al centro o in alto. Seleziona l’allineamento appropriato e fai clic su **[!UICONTROL Salva]**.
 
-![Cerca primo allineamento home page](assets/search-first-alignment.png)
+![Allineamento nella pagina Home Cerca prima](assets/search-first-alignment.png)
 
-### Impostazione dello sfondo e dell&#39;immagine del logo della home page {#setting-background-image-and-logo}
+### Impostazione dell’immagine di sfondo e del logo nella pagina Home {#setting-background-image-and-logo}
 
-Puoi aggiungere il logo del brand e l’immagine di sfondo alla prima pagina iniziale della ricerca. Esegui i passaggi seguenti:
+Puoi aggiungere il logo del tuo brand e l’immagine di sfondo alla pagina Home Cerca prima. Esegui i passaggi seguenti:
 
-1. Accedi a **[!UICONTROL Sfondo e immagine del logo]** sezione in **[!UICONTROL Homepage]**.
-1. Clic **[!UICONTROL Sostituisci]** per sfogliare le immagini dall’archivio risorse esistente.
-1. Clic **[!UICONTROL Salva]**. [Anteprima](#preview-configured-homepage) le modifiche per esaminare le modifiche.
+1. Accedi alla sezione **[!UICONTROL Immagine di sfondo e logo]** nella **[!UICONTROL pagina Home]**.
+1. Fai clic su **[!UICONTROL Sostituisci]** per sfogliare le immagini dall’archivio risorse esistente.
+1. Fai clic su **[!UICONTROL Salva]**. Visualizza l’[anteprima](#preview-configured-homepage) delle modifiche per esaminarle.
 
-### Anteprima pagina home configurata {#preview-configured-homepage}
+### Visualizzare l’anteprima della pagina Home configurata {#preview-configured-homepage}
 
-È possibile visualizzare un&#39;anteprima per controllare il layout e la formattazione della prima home page di ricerca. Utilizzo di **[!UICONTROL Anteprima]**, è possibile correggere il layout o apportare modifiche in base al requisito. Per visualizzare in anteprima la pagina home configurata, esegui i passaggi seguenti:
+È possibile visualizzare un’anteprima per controllare il layout e la formattazione della pagina Home Cerca prima. Utilizzando **[!UICONTROL Anteprima]**, è possibile correggere il layout o apportare modifiche in base alle necessità. Per visualizzare in anteprima la pagina Home configurata, esegui i passaggi seguenti:
 
-1. Clic **[!UICONTROL Impostazioni generali]** e seleziona **[!UICONTROL Cerca prima]**.
-1. Accedi a **[!UICONTROL Personalizza la prima pagina iniziale della ricerca]** e fai clic su **[!UICONTROL Anteprima]**. Passaggio **[!UICONTROL Tema scuro]** per visualizzare l&#39;anteprima della home page in un tema scuro o chiaro.
-1. Clic **[!UICONTROL Chiudi]** per chiudere la schermata di anteprima.
+1. Fai clic su **[!UICONTROL Impostazioni generali]** e seleziona **[!UICONTROL Cerca prima]**.
+1. Accedi a **[!UICONTROL Personalizza la pagina Home Cerca prima]** e fai clic su **[!UICONTROL Anteprima]**. Attiva o disattiva **[!UICONTROL Tema scuro]** per visualizzare l’anteprima della pagina Home con tema scuro o chiaro.
+1. Fai clic su **[!UICONTROL Chiudi]** per chiudere la schermata di anteprima.
 
-   ![Cerca anteprima prima home page](assets/search-first-preview.gif)
+   ![Anteprima della pagina Home Cerca prima](assets/search-first-preview.gif)
 
 ## Passaggi successivi {#next-steps}
 

@@ -2,10 +2,9 @@
 title: Caricare risorse nell’archivio
 description: Carica le risorse in [!DNL Assets view], visualizza lo stato di caricamento e risolvi eventuali problemi.
 role: User
-exl-id: a85a4455-4456-48af-aee9-f05300677605
-source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '825'
 ht-degree: 91%
 
 ---
@@ -82,7 +81,7 @@ Se tenti di caricare risorse duplicate, queste non vengono caricate finché non 
 
 >[!TIP]
 >
->Puoi caricare le risorse nell’archivio DAM direttamente dalle applicazioni desktop [!DNL Creative Cloud]. 
+>Puoi caricare le risorse nell’archivio DAM direttamente dall’interno [!DNL Creative Cloud] applicazioni desktop.
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -103,7 +102,7 @@ Gli utenti possono eliminare singole risorse o cartelle che non sono più necess
 
 * [Guarda un video per caricare le risorse nella vista Risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=it)
 
-* Fornire feedback sul prodotto utilizzando [!UICONTROL Feedback] opzione disponibile nell’interfaccia utente di visualizzazione delle risorse
+* Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
