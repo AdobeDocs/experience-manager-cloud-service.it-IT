@@ -4,9 +4,9 @@ description: Il servizio AEM Forms Edge Delivery è stato progettato per garanti
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -89,9 +89,36 @@ Su richiesta sono disponibili alcune funzioni avanzate:
 * **Invia notifica e-mail all’invio del modulo**: elimina il problema dei follow-up manuali e assicura una comunicazione tempestiva con l’automazione e-mail integrata per l’invio dei moduli. Questa soluzione integrata consente di informare facilmente le parti interessate, incluso l’invio dei dati del modulo, ogni volta che qualcuno compila un modulo sul sito web. Non sono necessari configurazioni complesse o strumenti aggiuntivi, è pronto per l&#39;uso.
 
 
-## Flusso di lavoro
+## Blocchi Forms disponibili
 
-![Ecosistema di authoring basato su documenti](/help/edge/assets/document-based-authoring-workflow.png)
+Il servizio AEM Forms Edge Delivery offre due tipi di blocchi di moduli per soddisfare esigenze diverse:
+
+* **Blocco Forms di base**: questa è un’opzione versatile, adatta alla creazione di forme semplici con funzionalità essenziali. Consente di integrare vari tipi di input, come campi di testo, menu a discesa e pulsanti di scelta, per raccogliere i dati utente in modo efficace.
+
+* **Blocco Forms adattivo**: questo blocco avanzato sblocca funzionalità aggiuntive rispetto al blocco Forms di base, consentendoti di creare moduli più complessi e interattivi. Ecco una scomposizione delle sue caratteristiche principali:
+
+   * Regole: definire azioni basate sulla logica all&#39;interno dei moduli. Puoi utilizzare le regole per mostrare o nascondere in modo condizionale le sezioni del modulo, precompilare i campi in base all’input dell’utente ed eseguire varie convalide per garantire l’integrità dei dati.
+
+   * Estensibilità lato server: estende le funzionalità dei moduli integrandoli con la logica lato server. Questo consente di eseguire calcoli complessi, interagire con sistemi esterni e automatizzare attività specifiche in base alle azioni degli utenti all’interno del modulo.
+
+   * Cross-Walk: semplificazione dei flussi di lavoro e della gestione dei dati: sfrutta la potenza dell’AEM per:
+
+      * Progettare moduli facili da usare utilizzando gli editor AEM.
+
+      * Generare un &quot;documento di record&quot; per l&#39;archiviazione sicura e a prova di manomissione dei dati inviati.
+
+      * Semplifica la firma elettronica con Adobe Sign per un’esperienza di firma fluida e sicura.
+
+      * Automatizza i processi aziendali tramite i flussi di lavoro AEM, attivando azioni basate sull’invio di moduli.
+
+      * Integrazione semplificata con varie origini dati, per un flusso e uno scambio di dati senza problemi.
+
+  L’utilizzo del blocco Forms adattivo richiede una licenza aggiuntiva.
+
+### Scelta del blocco Forms corretto
+
+La selezione tra i blocchi di Forms di base e adattivi dipende dai requisiti specifici. Se è necessaria una soluzione semplice per la raccolta di informazioni di base sull&#39;utente, il blocco Forms di base è la soluzione ideale. Tuttavia, se i moduli richiedono una logica complessa, la manipolazione dei dati, l’integrazione con sistemi esterni o flussi di lavoro semplificati utilizzando le funzioni AEM e **hai la licenza necessaria**, il blocco Forms adattivo fornisce la potenza e la flessibilità necessarie per raggiungere gli obiettivi.
+
 
 ## Inizia a creare i moduli
 
