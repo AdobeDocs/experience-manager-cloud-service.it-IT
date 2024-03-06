@@ -2,7 +2,7 @@
 title: Attributi e tipi di elementi
 description: Scopri gli attributi di dati e i tipi di elementi richiesti dall’editor universale.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: 5ddd4bbcce10c5cda97e3ea3f6750b209b5743f0
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 75%
@@ -32,7 +32,7 @@ Affinché un’app possa essere modificata dall’editor universale, deve essere
 | `data-aue-prop` | Per l’attributo della risorsa, consulta la sezione [Instrumenta la pagina del documento Guida introduttiva all’editor universale in AEM](getting-started.md#instrument-thepage) |
 | `data-aue-type` | [Tipo di elemento modificabile](#item-types) (ad esempio testo, immagine e riferimento) |
 | `data-aue-filter` | Definisce quali riferimenti possono essere utilizzati |
-| `data-aue-label` | Definisce un’etichetta personalizzata per un elemento selezionabile visualizzato nell’editor. <br>Nel caso in cui`itemmodel` sia impostata, l’etichetta viene recuperata tramite il modello. |
+| `data-aue-label` | Definisce un’etichetta personalizzata per un elemento selezionabile visualizzato nell’editor. <br>Nel caso in cui`data-aue-model` sia impostata, l’etichetta viene recuperata tramite il modello. |
 | `data-aue-model` | Definisce un modello che viene utilizzato per la modifica basata su modulo nella barra delle proprietà |
 | `data-aue-behavior` | Definisce il [comportamento di uno strumento,](#behaviors) ad esempio, testo o immagine autonomi possono anche imitare un componente per renderlo spostabile o eliminabile |
 
