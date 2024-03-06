@@ -3,9 +3,9 @@ title: Come si genera un documento di record per Adaptive Forms?
 description: Scopri come generare un modello per un documento di record (DoR) per i componenti core di Forms adattivi.
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3131'
 ht-degree: 1%
 
 ---
@@ -327,6 +327,10 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
       * **Modello**: se desideri selezionare un modello personalizzato, sfoglia e seleziona un XDP sul tuo [!DNL AEM Forms] server. Se desideri utilizzare un modello non disponibile nel [!DNL AEM Forms] server, devi prima caricare XDP nel tuo [!DNL AEM Forms] server.
       * **Colore accento**: colore in cui vengono riprodotti il testo dell’intestazione e le righe del separatore nel documento di record PDF.
       * **Famiglia font**: famiglia di caratteri del testo nel Document of Record PDF.
+
+        >[!NOTE]
+        >
+        > AEM Forms offre una varietà di font incorporati che si integrano facilmente con i file PDF. Per visualizzare l&#39;elenco dei tipi di carattere supportati: [fai clic qui](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Includi oggetti modulo non associati al modello dati**: l’impostazione della proprietà include i campi non associati dal modulo adattivo basato su schema nel documento di record.
 

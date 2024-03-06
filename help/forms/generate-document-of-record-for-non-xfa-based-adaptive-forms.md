@@ -3,9 +3,9 @@ title: Come si genera un documento di record (DoR) per AEM Forms?
 description: Scopri come generare un modello per un documento di record (DoR) per Forms adattivo.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
 workflow-type: tm+mt
-source-wordcount: '4124'
+source-wordcount: '4170'
 ht-degree: 2%
 
 ---
@@ -345,13 +345,18 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
       * **Modello**: se scegli di selezionare un modello personalizzato, sfoglia e seleziona un XDP sul tuo [!DNL AEM Forms] server. Se desideri utilizzare un modello che non è già presente nel [!DNL AEM Forms] server, devi prima caricare XDP nel tuo [!DNL AEM Forms] server.
       * **Colore accento**: colore con cui vengono riprodotti il testo dell’intestazione e le righe del separatore nel PDF del documento o del record.
       * **Famiglia font**: famiglia di caratteri del testo nel Document of Record PDF.
+
+        >[!NOTE]
+        >
+        > AEM Forms offre una varietà di font incorporati che si integrano facilmente con i file PDF. Per visualizzare l&#39;elenco dei tipi di carattere supportati: [fai clic qui](/help/forms/supported-out-of-the-box-fonts.md).
+
       * **Includi oggetti modulo non associati al modello dati**: l’impostazione della proprietà include i campi non associati dal modulo adattivo basato su schema nel documento di record.
       * **Escludi campi nascosti dal documento record**: l’impostazione della proprietà identifica i campi nascosti per l’esclusione dal documento di record.
       * **Nascondi descrizione pannelli**: l’impostazione della proprietà esclude la descrizione del pannello o della tabella dal documento di record. Applicabile per il pannello e la tabella.
 
       ![Proprietà di base](/help/forms/assets/basicpropertiesdor.png)
 
-   1. **Proprietà campo modulo**:
+   2. **Proprietà campo modulo**:
       * **Per i componenti Casella di controllo e Pulsante di opzione, mostra solo i valori selezionati**: impostando la proprietà vengono visualizzati solo i valori selezionati delle caselle di controllo e dei pulsanti di scelta in [!UICONTROL Documento record].
       * **Separatore per più valori**: per visualizzare più valori, puoi scegliere qualsiasi separatore, ad esempio virgola o interruzione di riga.
       * **Allineamento opzioni**: puoi selezionare l’allineamento desiderato (Orizzontale, Verticale, Come modulo adattivo) per impostare l’allineamento dei campi, ad esempio la casella di controllo o il pulsante di opzione da visualizzare [!UICONTROL Documento record]. Per impostazione predefinita, l’allineamento verticale è impostato per i campi in [!UICONTROL Documento record]. Impostazione delle proprietà da [!UICONTROL Proprietà campo modulo] di DoR sovrascrive le proprietà impostate in [!UICONTROL Allineamento elemento] per i campi di un modulo adattivo. Nel caso, seleziona [!UICONTROL Come modulo adattivo] , l’allineamento configurato in un’istanza di authoring di moduli adattivi viene utilizzato per [!UICONTROL Documento record] campi.
@@ -359,7 +364,7 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
 
       ![Proprietà campo modulo](/help/forms/assets/formfieldpropertiesdor.png)
 
-   1. **Proprietà pagina mastro**:
+   3. **Proprietà pagina mastro**:
       * **Immagine logo**: puoi scegliere di utilizzare l’immagine del logo dal modulo adattivo, sceglierne una da DAM o caricarne una dal computer.
       * **Titolo modulo**: titolo del documento record.
       * **Testo intestazione**: testo che viene visualizzato nella sezione dell’intestazione del documento record.
@@ -476,6 +481,11 @@ Un file XCI consente di impostare varie proprietà di un documento. Forms as a C
 | config/present/pdf/pdfa/conformance | Specifica il livello di conformità con la specifica PDF/A. |
 | config/present/pdf/version | Specifica la versione del documento PDF da generare |
 | config/present/pdf/version/map | Specifica i caratteri di fallback per il documento |
+
+>[!NOTE]
+>
+> AEM Forms offre una varietà di font incorporati che si integrano facilmente con i file PDF. Per visualizzare l&#39;elenco dei tipi di carattere supportati: [fai clic qui](/help/forms/supported-out-of-the-box-fonts.md).
+
 
 ### Utilizzare un file XCI personalizzato nell’ambiente as a Cloud Service di Forms
 

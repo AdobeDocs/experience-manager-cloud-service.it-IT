@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b2bd6fc61b0d8b79d03ebf9eca7d994a622cc6f2
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '4761'
+source-wordcount: '4768'
 ht-degree: 95%
 
 ---
@@ -694,6 +694,7 @@ ht-degree: 95%
       + [Installare e configurare Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Utilizzare Forms Designer per creare modelli](/help/forms/use-forms-designer.md)
       + [Utilizzo di font personalizzati nei documenti PDF](/help/forms/use-custom-fonts.md)
+      + [Elenco dei font supportati nei documenti PDF](/help/forms/supported-out-of-the-box-fonts.md)
       + [Problemi noti, best practice e domande frequenti](/help/forms/communications-known-issues-limitations.md)
    + Rapporti sulle transazioni {#using-communications}
       + [API fatturabili per rapporti sulle transazioni](/help/forms/transaction-reports-billable-apis.md)
