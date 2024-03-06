@@ -2,9 +2,9 @@
 title: Pubblicazione
 description: Scopri come eseguire la migrazione una volta che il codice e il contenuto sono pronti per il cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8baea95d57ce1e92e0e7083c161c9fee395fcb8e
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1771'
 ht-degree: 4%
 
 ---
@@ -156,6 +156,9 @@ Rivedi questo elenco di attività per assicurarti di eseguire una migrazione flu
    * Gli ambienti di sviluppo non hanno le stesse dimensioni di stage e produzione.
 * Esamina il passaggio e assicurati che il lancio effettivo venga eseguito senza alcuna nuova distribuzione o aggiornamento del contenuto.
 * Creazione di Admin Console di profili di notifica utente. Consulta [Profili di notifica](/help/journey-onboarding/notification-profiles.md)
+* Prendi in considerazione la configurazione delle regole del filtro del traffico per controllare quale traffico non dovrebbe essere consentito sul tuo sito web.
+   * Le regole del filtro del traffico del limite di velocità possono essere uno strumento efficace contro gli attacchi DDoS. Una categoria speciale di regole del filtro del traffico, chiamate regole WAF, richiede una licenza separata.
+   * Consulta la documentazione per alcuni [regole iniziali suggerite](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
 Puoi sempre fare riferimento all’elenco nel caso in cui sia necessario ricalibrare le attività durante l’esecuzione della migrazione.
 
