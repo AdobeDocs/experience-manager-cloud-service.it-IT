@@ -3,9 +3,9 @@ title: Migrazione della configurazione Dispatcher da AMS a AEM as a Cloud Servic
 description: Migrazione della configurazione Dispatcher da AMS a AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 6023a13eb4ea0533ba2f6cd00fb9f824b08a3f4a
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1499'
 ht-degree: 7%
 
 ---
@@ -19,6 +19,7 @@ La configurazione di Apache e Dispatcher in AEM as a Cloud Service è abbastanza
 * In AEM as a Cloud Service è possibile che alcune direttive Apache non vengano utilizzate (ad esempio, `Listen` o `LogLevel`)
 * In AEM as a Cloud Service, solo alcune parti della configurazione di Dispatcher possono essere inserite in file di inclusione e la loro denominazione è importante. Ad esempio, le regole di filtro che desideri riutilizzare tra host diversi devono essere inserite in un file denominato `filters/filters.any`. Per ulteriori informazioni, consulta la pagina di riferimento.
 * In AEM as a Cloud Service è disponibile una convalida aggiuntiva per non consentire la scrittura di regole di filtro tramite `/glob` per evitare problemi di sicurezza. Perché `deny *` viene utilizzato anziché `allow *` (che non può essere utilizzato), i clienti traggono vantaggio dall’esecuzione locale di Dispatcher e dall’esecuzione di tentativi ed errori, esaminando i registri per sapere esattamente quali percorsi i filtri di Dispatcher stanno bloccando per poter essere aggiunti.
+* Nell’AEM as a Cloud Service è attualmente altamente raccomandato di [consenso per utilizzare la modalità di origine flessibile della configurazione di dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) Ad esempio, per utilizzare le pipeline di configurazione a livello web o per avere una maggiore flessibilità sul numero e sulla struttura dei file di configurazione.
 
 ## Linee guida per la migrazione della configurazione del dispatcher da AMS a AEM as a Cloud Service
 
