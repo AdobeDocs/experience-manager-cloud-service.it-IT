@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1669'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ Un’azione di invio è un sling:Folder che include quanto segue:
 
 * **addfields.jsp**: questo script fornisce i campi di azione che vengono aggiunti al file HTML durante la rappresentazione. Utilizza questo script per aggiungere i parametri di input nascosti richiesti durante l’invio nello script post.POST.jsp.
 * **dialog.xml**: questo script è simile alla finestra di dialogo del componente CQ. Fornisce informazioni di configurazione personalizzate dall’autore. I campi vengono visualizzati nella scheda Invia azioni della finestra di dialogo Modifica modulo adattivo quando si seleziona l’azione di invio.
-* **post.POST.jsp**: il servlet Submit richiama questo script con i dati inviati e i dati aggiuntivi delle sezioni precedenti. Ogni riferimento all’esecuzione di un’azione in questa pagina implica l’esecuzione dello script post.POST.jsp. Per registrare l’azione di invio con il Forms adattivo da visualizzare nella finestra di dialogo Modifica modulo adattivo, aggiungi queste proprietà al file sling:Folder:
+* **post.POST.jsp**: il servlet Submit richiama questo script con i dati inviati e i dati aggiuntivi delle sezioni precedenti. Ogni riferimento all’esecuzione di un’azione in questa pagina implica l’esecuzione dello script post.POST.jsp. Per registrare l’azione di invio con il Forms adattivo da visualizzare nella finestra di dialogo Modifica modulo adattivo, aggiungi queste proprietà alla `sling:Folder`:
 
    * **guideComponentType** di tipo Stringa e valore **fd/af/components/guidesubmittype**
    * **guideDataModel** di tipo String che specifica il tipo di modulo adattivo per il quale è applicabile l’azione di invio. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** è supportato per Forms adattivo basato su XSD. **base** è supportato per Forms adattivo che non utilizzano XDP o XSD. Per visualizzare l’azione su più tipi di Forms adattivo, aggiungi le stringhe corrispondenti. Separa ogni stringa con una virgola. Ad esempio, per rendere visibile un’azione <!--XFA- and -->Adaptive Forms basato su XSD, specifica il valore come <!--**xfa** and--> **xsd**.
