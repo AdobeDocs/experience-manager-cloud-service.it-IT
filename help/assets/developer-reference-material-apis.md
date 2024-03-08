@@ -5,7 +5,7 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 5acbd7a56f18ee4c3d8b8f04ab17ad44fe6f0647
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1931'
 ht-degree: 7%
@@ -76,7 +76,7 @@ In entrata [!DNL Experience Manager] as a [!DNL Cloud Service], puoi caricare di
 
 >[!IMPORTANT]
 >
-Eseguire i passaggi precedenti in un&#39;applicazione esterna e non all&#39;interno del [!DNL Experience Manager] JVM
+>Eseguire i passaggi precedenti in un&#39;applicazione esterna e non all&#39;interno del [!DNL Experience Manager] JVM
 
 L’approccio offre una gestione scalabile e più performante dei caricamenti di risorse. Le differenze rispetto a [!DNL Experience Manager] 6.5 sono:
 
@@ -85,11 +85,11 @@ L’approccio offre una gestione scalabile e più performante dei caricamenti di
 
 >[!NOTE]
 >
-Consulta il codice client per implementare questo approccio in open-source. [libreria di caricamento aem](https://github.com/adobe/aem-upload).
+>Consulta il codice client per implementare questo approccio in open-source. [libreria di caricamento aem](https://github.com/adobe/aem-upload).
 >
-[!IMPORTANT]
+>[!IMPORTANT]
 >
-In alcune circostanze, le modifiche potrebbero non propagarsi completamente tra le richieste di Experience Manager a causa della natura infine coerente dello storage nel Cloud Service. Questo porta a 404 risposte per avviare o completare chiamate di caricamento a causa della mancata propagazione delle creazioni della cartella richieste. I clienti devono aspettarsi risposte 404 e gestirle implementando un nuovo tentativo con una strategia di back-off.
+>In alcune circostanze, le modifiche potrebbero non propagarsi completamente tra le richieste di Experience Manager a causa della natura infine coerente dello storage nel Cloud Service. Questo porta a 404 risposte per avviare o completare chiamate di caricamento a causa della mancata propagazione delle creazioni della cartella richieste. I clienti devono aspettarsi risposte 404 e gestirle implementando un nuovo tentativo con una strategia di back-off.
 
 ### Avvia caricamento {#initiate-upload}
 
@@ -159,7 +159,7 @@ Se il caricamento ha esito positivo, il server risponde a ogni richiesta con un 
 
 >[!NOTE]
 >
-Per ulteriori informazioni sull&#39;algoritmo di caricamento, vedere [documentazione ufficiale delle funzioni](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) e [Documentazione API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) nel progetto Apache Jackrabbit Oak.
+>Per ulteriori informazioni sull&#39;algoritmo di caricamento, vedere [documentazione ufficiale delle funzioni](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) e [Documentazione API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) nel progetto Apache Jackrabbit Oak.
 
 ### Caricamento completo {#complete-upload}
 
@@ -179,7 +179,7 @@ Dopo aver caricato tutte le parti di un file binario, invia una richiesta HTTP P
 
 >[!NOTE]
 >
-Se la risorsa esiste e nessuno dei due `createVersion` né `replace` è specificato, quindi [!DNL Experience Manager] aggiorna la versione corrente della risorsa con il nuovo binario.
+>Se la risorsa esiste e nessuno dei due `createVersion` né `replace` è specificato, quindi [!DNL Experience Manager] aggiorna la versione corrente della risorsa con il nuovo binario.
 
 Analogamente al processo di avvio, i dati completi della richiesta possono contenere informazioni relative a più file.
 
@@ -215,7 +215,7 @@ function debug() {
 }
 
 # Function to check if a file exists
-function file_exists() {
+function file_exists () {
     [ -e "$1" ]
 }
 
@@ -431,7 +431,7 @@ Per ulteriori informazioni sugli algoritmi di caricamento o per creare script e 
 
 >[!NOTE]
 >
-La libreria di caricamento AEM e lo strumento della riga di comando utilizzano entrambi [libreria node-httptransfer](https://github.com/adobe/node-httptransfer/)
+>La libreria di caricamento AEM e lo strumento della riga di comando utilizzano entrambi [libreria node-httptransfer](https://github.com/adobe/node-httptransfer/)
 
 ### API di caricamento risorse obsolete {#deprecated-asset-upload-api}
 
@@ -444,9 +444,9 @@ Il nuovo metodo di caricamento è supportato solo per [!DNL Adobe Experience Man
 
 >[!MORELIKETHIS]
 >
-* [Libreria aem-upload open-source](https://github.com/adobe/aem-upload).
-* [Strumento da riga di comando open-source](https://github.com/adobe/aio-cli-plugin-aem).
-* [Documentazione di Apache Jackrabbit Oak per il caricamento diretto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
+>* [Libreria aem-upload open-source](https://github.com/adobe/aem-upload).
+>* [Strumento da riga di comando open-source](https://github.com/adobe/aio-cli-plugin-aem).
+>* [Documentazione di Apache Jackrabbit Oak per il caricamento diretto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 ## Flussi di lavoro di elaborazione e post-elaborazione delle risorse {#post-processing-workflows}
 
@@ -551,4 +551,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
-* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

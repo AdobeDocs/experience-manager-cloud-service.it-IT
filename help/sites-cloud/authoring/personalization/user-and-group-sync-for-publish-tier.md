@@ -2,7 +2,7 @@
 title: Registrazione, accesso e profilo utente
 description: Scopri di più su Registrazione, Accesso, Dati utente e Sincronizzazione dei gruppi per AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 90%
@@ -37,7 +37,7 @@ Esistono due approcci per implementare la registrazione, come descritto di segui
 
 1. Visualizza un componente AEM personalizzato che raccoglie le informazioni sulla registrazione
 1. Dopo l’invio, un utente del servizio con provisioning appropriato viene utilizzato per
-   1. Verificare che un utente esistente non sia già registrato, utilizzando uno dei metodi`findAuthorizables()` delle API di UserManager 
+   1. Verificare che un utente esistente non sia già registrato, utilizzando uno dei metodi`findAuthorizables ()` delle API di UserManager 
    1. Creare un record utente utilizzando uno dei metodi`createUser()` delle API UserManager 
    1. Mantenere i dati del profilo acquisiti tramite i metodi`setProperty()` dell&#39;interfaccia Authorizable
 1. Flussi facoltativi, ad esempio per richiedere all’utente di convalidare la propria e-mail.

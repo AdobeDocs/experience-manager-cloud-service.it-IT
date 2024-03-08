@@ -4,13 +4,13 @@ description: Forme perfette, veloce! ⚡ authoring basato su documento di AEM Fo
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
-
 
 # Creare un modulo utilizzando il blocco di modulo adattivo
 
@@ -27,24 +27,26 @@ AEM Forms Edge Delivery fornisce un blocco, noto come blocco di moduli adattivi,
 
 Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
-* Configura il progetto GitHub del servizio di consegna Edge (EDS) utilizzando il boilerplate AEM e clona l’archivio GitHub corrispondente sul computer locale. Consulta [tutorial per sviluppatori](https://www.aem.live/developer/tutorial) per i dettagli. In questo documento, la cartella locale del progetto Edge Delivery Service (EDS) viene indicata come `[EDS Project repository]` .
+* Configura il progetto GitHub Edge Delivery Services (EDS) utilizzando il boilerplate AEM e clona l’archivio GitHub corrispondente sul computer locale. Consulta [tutorial per sviluppatori](https://www.aem.live/developer/tutorial) per i dettagli. In questo documento, la cartella locale del progetto Edge Delivery Services (EDS) viene indicata come `[EDS Project repository]` .
 * Assicurati di avere accesso a Google Sheets o Microsoft SharePoint. Per impostare Microsoft SharePoint come origine di contenuto, vedere [Come utilizzare Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## Creare un modulo
 
-+++ Passaggio 1: aggiungi il blocco di modulo adattivo al progetto Edge Delivery Service (EDS).
++++ Passaggio 1: aggiungi il blocco di modulo adattivo al progetto Edge Delivery Services (EDS).
 
-L’adattivo consente agli utenti di creare moduli per un sito del servizio di consegna Edge. Tuttavia, questo blocco non è incluso nel boilerplate predefinito dell’AEM (utilizzato per creare un progetto Edge Delivery Service). Per integrare facilmente il blocco di moduli adattivi nel progetto del servizio di consegna Edge:
+L’adattivo consente agli utenti di creare moduli per un sito dei servizi di consegna Edge. Tuttavia, questo blocco non è incluso nel boilerplate predefinito dell’AEM (utilizzato per creare un progetto Edge Delivery Services). Per integrare facilmente il blocco di modulo adattivo nel progetto di Edge Delivery Services:
 
-1. **Clonare l’archivio del blocco di moduli adattivi**: clona il [Archivio per blocchi di moduli adattivi](https://github.com/adobe/afb) sul computer locale. Contiene il codice per eseguire il rendering del modulo su una pagina Web EDS. In questo documento, la cartella locale dell’archivio Forms Block viene indicata come `[Adaptive Form Block repository]`.
-1. **Individua l’archivio del blocco di moduli adattivi:** Accedere a [Archivio per blocchi di moduli adattivi]/blocca la cartella sul computer locale e copia `form` cartella.
-1. **Incollare il blocco modulo adattivo nel progetto EDS:**
-Accedi a [Archivio di progetti EDS]/block/ nel computer locale e incolla la cartella del modulo.
-1. **Commit delle modifiche su GitHub:** Archivia la cartella del modulo e i relativi file sottostanti nel progetto del servizio di consegna Edge su GitHub.
+1. **Clonare l’archivio del blocco di moduli adattivi**: clona il [Archivio per blocchi di moduli adattivi](https://github.com/adobe-rnd/form-block) sul computer locale. Contiene il codice per eseguire il rendering del modulo su una pagina Web EDS. In questo documento, la cartella locale dell’archivio Forms Block viene indicata come `[Adaptive Form Block repository]`.
+1. **Individua l’archivio del blocco di moduli adattivi:** Accedere a [Archivio per blocchi di moduli adattivi]/block/src e copiarne il contenuto.
 
-Dopo aver completato questi passaggi, il blocco di modulo adattivo viene aggiunto correttamente all’archivio di progetto del servizio di consegna Edge su GitHub. È ora possibile creare e aggiungere moduli a una pagina EDS Sites.
+1. sul computer locale e copia `form` cartella.
+1. **Incollare il codice del blocco modulo adattivo nel progetto EDS:**
+Accedi a [Archivio di progetti EDS]/block/ nel computer locale e crea una cartella &quot;form&quot;. Incolla il `[Adaptive Form Block repository]/blocks/src content`, copiato nel passaggio precedente in `[EDS Project repository]/blocks/form` cartella.
+1. **Commit delle modifiche su GitHub:** Archivia `[EDS Project repository]/blocks/form` e i file sottostanti al progetto Edge Delivery Services su GitHub.
+
+Dopo aver completato questi passaggi, il blocco di modulo adattivo viene aggiunto correttamente all’archivio dei progetti Edge Delivery Services (EDS) su GitHub. È ora possibile creare e aggiungere moduli a una pagina EDS Sites.
 
 
 **Risoluzione dei problemi di build di GitHub**
@@ -57,13 +59,11 @@ Se viene visualizzato l&#39;errore &quot;Impossibile risolvere il percorso del m
 * **Gestisci errori di stampa:**
 In caso di errori di stampa, è possibile ignorarli. Apri [Progetto EDS]/package.json file e modifica lo script &quot;lint&quot; da &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; a &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;. Salva il file e conferma le modifiche nel progetto GitHub.
 
-
-
 +++
 
 +++ Passaggio 2: creare un modulo utilizzando Microsoft Excel o Foglio Google.
 
-Invece di navigare attraverso processi complessi, la creazione di un modulo può essere ottenuta facilmente utilizzando un foglio di calcolo. È possibile iniziare aggiungendo le righe e le intestazioni di colonna a un foglio di calcolo, in cui ogni riga rappresenta un campo modulo, mentre ogni intestazione di colonna definisce le proprietà del campo corrispondente.
+Invece di navigare attraverso processi complessi, la creazione di un modulo può essere ottenuta facilmente utilizzando un foglio di calcolo. È possibile definire le righe e le colonne che costituiranno la struttura del modulo. Ogni riga rappresenta un singolo utente [campo modulo](/help/edge/docs/forms/form-components.md#available-components) e le intestazioni di colonna definiscono le corrispondenti [proprietà campo](/help/edge/docs/forms/form-components.md#components-properties).
 
 Ad esempio, considera il seguente foglio di calcolo in cui le righe contornano i campi per un `enquiry` le intestazioni di maschera e colonna definiscono le relative proprietà:
 
@@ -96,7 +96,7 @@ Per procedere con la creazione del modulo:
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
    ```
 
    * `<branch>` fa riferimento al ramo dell’archivio GitHub.
@@ -110,7 +110,7 @@ Per procedere con la creazione del modulo:
 
 +++
 
-+++ Passaggio 3: visualizza l’anteprima del modulo utilizzando la pagina del servizio di consegna Edge (EDS).
++++ Passaggio 3: visualizzare in anteprima il modulo utilizzando la pagina Edge Delivery Services (EDS).
 
 
 Finora hai aggiunto il blocco modulo adattivo al progetto EDS e preparato la struttura del modulo. Ora, per visualizzare l’anteprima del modulo:
@@ -121,7 +121,7 @@ Finora hai aggiunto il blocco modulo adattivo al progetto EDS e preparato la str
 
 1. **Passa alla posizione desiderata:** Spostarsi nella posizione desiderata all&#39;interno del documento in cui si desidera aggiungere il modulo.
 
-1. **Aggiungi il blocco di modulo adattivo:** Inserisci nel file un blocco denominato &quot;Modulo&quot;, come illustrato di seguito:
+1. **Aggiungi il blocco di modulo adattivo:** Per creare un blocco di modulo per il rendering del modulo. Selezionate Inserisci > Tabella (Table) e create una tabella a una colonna e due righe. Denomina la tabella &quot;Form&quot; e incolla l’URL di anteprima nella seconda riga. Accertati che l’URL sia formattato come collegamento ipertestuale, non come testo normale, come illustrato di seguito:
 
    | Modulo |
    |---|
@@ -153,12 +153,4 @@ Finora hai aggiunto il blocco modulo adattivo al progetto EDS e preparato la str
 
 
 
-## Vedi altro
 
-* [Componenti del modulo](/help/edge/docs/forms/form-components.md)
-* [Proprietà del campo modulo](/help/edge/docs/forms/eds-form-field-properties)
-* [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
-* [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
-* [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-forms.md)
-* [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
-* [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)

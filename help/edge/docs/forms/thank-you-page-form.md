@@ -4,13 +4,13 @@ description: Scopri come configurare le pagine di ringraziamento e il reindirizz
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
 
 ---
-
 
 # Mostra la pagina di ringraziamento o il modulo di reindirizzamento dopo l’invio
 
@@ -63,9 +63,9 @@ Per impostazione predefinita, il blocco Forms adattivo reindirizza gli utenti al
 
    >[!NOTE]
    >
-   > Assicurati che nella cartella dei progetti del servizio di consegna Edge sia presente una pagina con lo stesso nome in Microsoft SharePoint o Google Workspace. Se la pagina non esiste, procedi alla sua creazione e pubblicazione.
+   > Assicurati che nella cartella dei progetti dei Edge Delivery Services sia presente una pagina con lo stesso nome in Microsoft SharePoint o Google Workspace. Se la pagina non esiste, procedi alla sua creazione e pubblicazione.
 
-1. Procedi con l’archiviazione della cartella &quot;form.js&quot; aggiornata e dei relativi file sottostanti nel progetto del servizio di consegna Edge su GitHub. Questo aggiornamento assicura che il modulo ora venga reindirizzato alla pagina aggiornata come specificato.
+1. Procedi con l’archiviazione della cartella &quot;form.js&quot; aggiornata e dei relativi file sottostanti nel progetto Edge Delivery Services su GitHub. Questo aggiornamento assicura che il modulo ora venga reindirizzato alla pagina aggiornata come specificato.
 
 1. Assicurati che la pagina esista nella cartella dei progetti EDS e pubblicala.
 

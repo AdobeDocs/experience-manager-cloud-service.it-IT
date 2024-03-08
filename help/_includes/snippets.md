@@ -1,8 +1,8 @@
 ---
-source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 76%
+source-wordcount: '331'
+ht-degree: 70%
 
 ---
 # Snippet {#snippets}
@@ -55,8 +55,17 @@ ht-degree: 76%
 * [Invia a Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Invia a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Collegare il modulo adattivo all’applicazione Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [Connettere un modulo adattivo a Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Collegare un modulo adattivo a Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## Authoring AEM con accesso anticipato ai Edge Delivery Services {#aem-authoring-edge-early-access}
 
 [!BADGE TECNOLOGIA AD ACCESSO ANTICIPATO: parlaci di questa funzione dai laboratori AEM Sites sul tuo canale di Slack!]{type=Informative url="/help/edge/docs/slack.md" tooltip="L’authoring AEM con i Edge Delivery Services è una tecnologia ad accesso anticipato."}
+
+## Consulta anche {#see-also-forms-eds}
+
+* [Componenti del modulo](/help/edge/docs/forms/form-components.md)
+* [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
+* [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
+* [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-forms.md)
+* [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
+* [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)

@@ -1,16 +1,15 @@
 ---
 title: Utilizzare le regole per aggiungere un comportamento dinamico a un modulo
-description: Il servizio AEM Forms Edge Delivery è stato progettato per garantire prestazioni di picco, consentendoti di immaginare il futuro della raccolta dati semplificata e del coinvolgimento degli utenti. Utilizzare le regole per aggiungere un comportamento dinamico a un modulo
+description: I servizi di distribuzione AEM Forms Edge sono progettati per garantire prestazioni di picco, consentendoti di immaginare il futuro di una raccolta dati semplificata e del coinvolgimento degli utenti. Utilizzare le regole per aggiungere un comportamento dinamico a un modulo
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+exl-id: 58042016-e655-446f-a2bf-83f1811525e3
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '49'
+source-wordcount: '48'
 ht-degree: 0%
 
 ---
 
-
 # Utilizzare le regole per aggiungere un comportamento dinamico a un modulo
-

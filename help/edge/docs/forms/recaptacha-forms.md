@@ -1,16 +1,15 @@
 ---
-title: Utilizzare reCAPTCHA con AEM Forms Edge Delivery Service Forms
+title: Utilizzare reCAPTCHA con AEM Forms Edge Delivery ServicesForms
 description: Utilizzare reCAPTCHA in un modulo EDS
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
+exl-id: ac104e23-f175-435f-8414-19847efa5825
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '24'
+source-wordcount: '22'
 ht-degree: 0%
 
 ---
 
-
-# Utilizzare reCAPTCHA con AEM Forms Edge Delivery Service Forms
-
+# Utilizzare reCAPTCHA con AEM Forms Edge Delivery ServicesForms

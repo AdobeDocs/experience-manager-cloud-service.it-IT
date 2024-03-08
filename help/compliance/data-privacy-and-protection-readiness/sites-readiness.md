@@ -2,10 +2,10 @@
 title: Normative sulla protezione e la privacy dei dati - Preparazione di Adobe Experience Manager as a Cloud Service Sites
 description: Scopri il supporto di Adobe Experience Manager as a Cloud Service Sites per le varie normative su privacy e protezione dei dati, incluso il Regolamento generale sulla protezione dei dati (RGPD) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi quando si implementa un nuovo progetto AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 96%
+source-wordcount: '1001'
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Per rinunciare:
 
    * Per rinunciare all’aggregazione e all’analisi dei dati relativi alla visita a questo sito, è necessario installare un cookie sul browser. Questo cookie indica che hai rinunciato.
 
-     Se elimini il cookie di rinuncia o se cambi computer o browser Web, devi ripetere la rinuncia.
+     Se elimini il cookie di rinuncia o cambi computer o browser web, devi ripetere la rinuncia.
 
      Rinuncia: escludimi dall’aggregazione e dall’analisi della sessione del visitatore (installa il cookie di rinuncia `amcglobal.sc.omtrdc.net`) - Fai clic qui.
 
@@ -223,10 +223,10 @@ Per cancellare la persistenza di ContextHub:
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   
   // following call asks all currently loaded stores to clear their data
-  ContextHub.cleanAllStores();
+  ContextHub.cleanAllStores ();
   
   // following call asks all currently loaded stores to set back default values (provided in their configs)
-  ContextHub.resetAllStores();
+  ContextHub.resetAllStores ();
   ```
 
 * Per cancellare un livello di persistenza specifico, ad esempio, sessionStorage:

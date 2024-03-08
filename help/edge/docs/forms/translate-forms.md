@@ -1,16 +1,15 @@
 ---
-title: Traduzione e localizzazione di un modulo del servizio di consegna AEM Forms Edge
-description: Traduzione e localizzazione di un modulo del servizio di consegna AEM Forms Edge
+title: Tradurre e localizzare un modulo dei servizi di distribuzione AEM Forms Edge
+description: Tradurre e localizzare un modulo dei servizi di distribuzione AEM Forms Edge
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
+exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '30'
+source-wordcount: '27'
 ht-degree: 0%
 
 ---
 
-
-# Traduzione e localizzazione di un modulo del servizio di consegna AEM Forms Edge
-
+# Tradurre e localizzare un modulo dei servizi di distribuzione AEM Forms Edge

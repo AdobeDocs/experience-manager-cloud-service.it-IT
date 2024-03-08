@@ -2,7 +2,7 @@
 title: Informazioni sulle richieste di contenuto di Cloud Service
 description: Se hai acquistato licenze per richieste di contenuto da Adobe, scopri i tipi di richieste di contenuto che Adobe Experience Cloud as a Service misura e le varianze con gli strumenti di reporting di Analytics di un’organizzazione.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 9033820fa0dc8eee181e3f581675f45cf11e694a
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2688'
 ht-degree: 5%
@@ -138,7 +138,7 @@ Il servizio Real User Monitoring è progettato per impedire la raccolta di infor
 
 ### Come impostare il servizio Real User Monitoring {#how-to-set-up-the-rum-service}
 
-* Se desideri partecipare al nostro programma Early Adopter, invia un’e-mail a `aemcs-rum-adopter@adobe.com`, insieme al nome di dominio per l’ambiente di produzione, stage e sviluppo, dall’indirizzo e-mail associato al tuo Adobe ID. Il team di prodotto di Adobe abiliterà quindi il servizio dati Real User Monitoring (RUM).
+* Se desideri partecipare al nostro programma Early Adopter, invia un’e-mail a `aemcs-rum-adopter@adobe.com`, insieme al nome di dominio per l’ambiente di produzione, stage e sviluppo, dall’indirizzo e-mail associato al tuo Adobe ID. Il team di prodotto di Adobe abiliterà quindi il servizio dati del Monitoraggio degli utenti reali (RUM).
 * Una volta completato, il team di prodotto di Adobe creerà un canale di collaborazione con il cliente.
 * Il team di prodotto di Adobe ti contatterà per fornirti la chiave di dominio e l’URL del dashboard dati in cui puoi visualizzare le Visualizzazioni pagina e [Core Web Vitals (CWV)](https://web.dev/vitals/) metriche raccolte dalla raccolta del servizio Real User Monitoring lato client.
 * Verrai quindi guidato su come utilizzare la chiave di dominio per accedere all’URL del dashboard dei dati e visualizzare le metriche.

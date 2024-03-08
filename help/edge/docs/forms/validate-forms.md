@@ -4,13 +4,13 @@ description: Crea moduli potenti più rapidamente utilizzando fogli di calcolo e
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
-
 
 # Aggiungere convalide ai campi modulo
 
@@ -29,10 +29,4 @@ URL: questo tipo di campo convalida l’input dell’utente in base a un formato
 Tel: questo tipo di campo è progettato specificamente per i numeri di telefono e potrebbe attivare la convalida in base a formati di paese specifici (non universalmente supportati).
 
 
-## Vedi altro
 
-* [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
-* [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
-* [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-forms.md)
-* [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
-* [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)

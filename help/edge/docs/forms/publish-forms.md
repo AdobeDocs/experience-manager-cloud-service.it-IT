@@ -4,13 +4,13 @@ description: Pubblicare un modulo Edge Delivery Services di AEM Forms
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
-
 
 # Pubblicare il modulo
 
@@ -112,10 +112,6 @@ Se si verifica un errore simile al seguente messaggio, il foglio di calcolo non 
 +++
 
 
-## Vedi altro
 
-* [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
-* [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
-* [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-forms.md)
-* [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
-* [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)
+
+## Vedi altro
