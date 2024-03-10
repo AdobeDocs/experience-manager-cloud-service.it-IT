@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ea61a794788ee2a59e05727fa3c4fd4fc1ca9956
+source-git-commit: 320967ee4cd5a92639b60b00750343222b307aef
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 34%
+source-wordcount: '1415'
+ht-degree: 33%
 
 ---
 
@@ -228,17 +228,17 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 | Formato | Carica (formato di input) | Crea predefinito immagine (formato di output) | Anteprima rappresentazione dinamica | Distribuzione di una rappresentazione dinamica | Scarica rappresentazione dinamica | Imposta i tipi che supportano questo formato |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
-| AVIF | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| AVIF | − | − | − | ✓ | − | − |
 | BMP | ✓ | − | − | − | − | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
-| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript&reg;-eps-and-pdf-file-formats-adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
-| HEIC | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| HEIC | − | − | − | ✓ | − | − |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
 | ‡ PSD | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
-| WEBP | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| WEBP | − | − | − | ✓ | − | − |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ L&#39;immagine unita viene estratta dal file PSD. È un’immagine generata da [!DNL Adobe Photoshop] ed è incluso nel file PSD. A seconda delle impostazioni, l&#39;immagine unita potrebbe essere o meno l&#39;immagine effettiva.
