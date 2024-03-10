@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -27,41 +27,46 @@ AEM Forms Edge Delivery fornisce un blocco, noto come blocco di moduli adattivi,
 
 Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
-* Configura il progetto GitHub Edge Delivery Services (EDS) utilizzando il boilerplate AEM e clona l’archivio GitHub corrispondente sul computer locale. Consulta [tutorial per sviluppatori](https://www.aem.live/developer/tutorial) per i dettagli. In questo documento, la cartella locale del progetto Edge Delivery Services (EDS) viene indicata come `[EDS Project repository]` .
+* Configurare un [Progetto AEM utilizzando AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) o [aggiungi il blocco dei moduli adattivi al progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clona l’archivio GitHub corrispondente sul computer locale.
+In questo documento, la cartella locale del progetto Edge Delivery Services (EDS) viene indicata come `[EDS Project repository]` .
 * Assicurati di avere accesso a Google Sheets o Microsoft SharePoint. Per impostare Microsoft SharePoint come origine di contenuto, vedere [Come utilizzare Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## Creare un modulo
 
-+++ Passaggio 1: aggiungi il blocco di modulo adattivo al progetto Edge Delivery Services (EDS).
+<!-- 
 
-L’adattivo consente agli utenti di creare moduli per un sito dei servizi di consegna Edge. Tuttavia, questo blocco non è incluso nel boilerplate predefinito dell’AEM (utilizzato per creare un progetto Edge Delivery Services). Per integrare facilmente il blocco di modulo adattivo nel progetto di Edge Delivery Services:
++++ Step 1: Add the Adaptive Form Block to your Edge Delivery Services (EDS) project.
 
-1. **Clonare l’archivio del blocco di moduli adattivi**: clona il [Archivio per blocchi di moduli adattivi](https://github.com/adobe-rnd/form-block) sul computer locale. Contiene il codice per eseguire il rendering del modulo su una pagina Web EDS. In questo documento, la cartella locale dell’archivio Forms Block viene indicata come `[Adaptive Form Block repository]`.
-1. **Individua l’archivio del blocco di moduli adattivi:** Accedere a [Archivio per blocchi di moduli adattivi]/block/src e copiarne il contenuto.
+The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Form Block into your Edge Delivery Services project:
 
-1. sul computer locale e copia `form` cartella.
-1. **Incollare il codice del blocco modulo adattivo nel progetto EDS:**
-Accedi a [Archivio di progetti EDS]/block/ nel computer locale e crea una cartella &quot;form&quot;. Incolla il `[Adaptive Form Block repository]/blocks/src content`, copiato nel passaggio precedente in `[EDS Project repository]/blocks/form` cartella.
-1. **Commit delle modifiche su GitHub:** Archivia `[EDS Project repository]/blocks/form` e i file sottostanti al progetto Edge Delivery Services su GitHub.
+1. **Clone the Adaptive Form Block repository**: Clone the [Adaptive Form Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form Block repository]`.
+1. **Locate the Adaptive Form Block Repository:** Access the [Adaptive Form Block repository]/blocks/src folder and copy its content. 
 
-Dopo aver completato questi passaggi, il blocco di modulo adattivo viene aggiunto correttamente all’archivio dei progetti Edge Delivery Services (EDS) su GitHub. È ora possibile creare e aggiungere moduli a una pagina EDS Sites.
+1. on your local machine and copy the `form` folder. 
+1. **Paste the Adaptive Form Block's code into your EDS Project:**
+Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Form Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
+1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
+After completing these steps, the Adaptive Form Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
+ 
 
-**Risoluzione dei problemi di build di GitHub**
+**Troubleshooting GitHub build issues**
 
-Garantire un processo di generazione GitHub fluido affrontando potenziali problemi:
+Ensure a smooth GitHub build process by addressing potential issues:
 
-* **Errore nel percorso del modulo di risoluzione:**
-Se viene visualizzato l&#39;errore &quot;Impossibile risolvere il percorso del modulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, passare alla [Progetto EDS]file /blocks/forms/form.js. Aggiorna l’istruzione di importazione sostituendo il file lib-franklin.js con il file aem.js.
+* **Resolve Module Path Error:**
+    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **Gestisci errori di stampa:**
-In caso di errori di stampa, è possibile ignorarli. Apri [Progetto EDS]/package.json file e modifica lo script &quot;lint&quot; da &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; a &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;. Salva il file e conferma le modifiche nel progetto GitHub.
+* **Handle Linting Errors:**
+    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
 
 +++
 
-+++ Passaggio 2: creare un modulo utilizzando Microsoft Excel o Foglio Google.
+-->
+
++++ Passaggio 1: creare un modulo utilizzando Microsoft Excel o Foglio Google.
 
 Invece di navigare attraverso processi complessi, la creazione di un modulo può essere ottenuta facilmente utilizzando un foglio di calcolo. È possibile definire le righe e le colonne che costituiranno la struttura del modulo. Ogni riga rappresenta un singolo utente [campo modulo](/help/edge/docs/forms/form-components.md#available-components) e le intestazioni di colonna definiscono le corrispondenti [proprietà campo](/help/edge/docs/forms/form-components.md#components-properties).
 
@@ -110,7 +115,7 @@ Per procedere con la creazione del modulo:
 
 +++
 
-+++ Passaggio 3: visualizzare in anteprima il modulo utilizzando la pagina Edge Delivery Services (EDS).
++++ Passaggio 2: visualizzare l&#39;anteprima del modulo utilizzando la pagina Edge Delivery Services (EDS).
 
 
 Finora hai aggiunto il blocco modulo adattivo al progetto EDS e preparato la struttura del modulo. Ora, per visualizzare l’anteprima del modulo:
@@ -150,7 +155,6 @@ Finora hai aggiunto il blocco modulo adattivo al progetto EDS e preparato la str
 ## Passaggio successivo
 
 [Preparare il foglio di calcolo](/help/edge/docs/forms/submit-forms.md) per iniziare ad accettare i dati all’invio del modulo.
-
 
 
 
