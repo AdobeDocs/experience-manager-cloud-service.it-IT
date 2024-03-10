@@ -4,9 +4,9 @@ description: Questa esercitazione ti aiuta a iniziare con un nuovo progetto Adob
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -198,31 +198,29 @@ Per visualizzare in anteprima il contenuto non pubblicato:
 
    [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
-### Aggiornare il modulo
+### Creare un modulo
 
-1. Vai alla cartella Microsoft SharePoint o Google Drive.
+Il contenuto di esempio include un foglio di &quot;richiesta&quot; che funge da modello per il modulo di &quot;richiesta&quot;. Ogni riga del foglio rappresenta un [campo modulo](/help/edge/docs/forms/form-components.md#available-components)e le intestazioni di colonna definiscono [proprietà campo](/help/edge/docs/forms/form-components.md#available-components). In questo modulo di esempio è possibile iniziare subito a creare il modulo.
 
-1. Apri `enquiry.xlsx` per la modifica.
+![Modulo di interrogazione](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-   ![Modulo di interrogazione](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+Iniziamo con l’aggiornamento di un’etichetta di campo. Apri il foglio &quot;Richiesta&quot; per la modifica, modifica l’etichetta del pulsante Invia in `Let's Chat`e utilizza la barra laterale per pubblicarlo.
 
-1. Modifica l’etichetta del pulsante Invia in `Let's Chat`.
+![Modulo di interrogazione](/help/edge/assets/enquiry-form-preview-publish.png)
 
-   ![Modulo di interrogazione](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
-
-1. Utilizza AEM Sidekick per visualizzare in anteprima e pubblicare `enquiry.xlsx` file.
-
-   ![Modulo di interrogazione](/help/edge/assets/enquiry-form-preview-publish.png)
-
-1. Per visualizzare in anteprima il modulo di richiesta, vai al seguente URL:
+Per visualizzare in anteprima il modulo di richiesta aggiornato, vai al seguente URL:
 
 
-   ```HTML
-   https://<branch>--<repository>--<owner>.hlx.page/enquiry
-   ```
+```HTML
+    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+       
+```
 
-   L’etichetta del pulsante Invia viene aggiornata. Ora, compila il modulo e fai clic sul pulsante Invia, si verifica un errore simile al seguente, perché il foglio di calcolo non è [impostato per accettare i dati](/help/edge/docs/forms/submit-forms.md).
+L’etichetta del pulsante Invia viene aggiornata in `Let's Chat`.
 
+![Modulo di interrogazione](/help/edge/assets/updated-form.png)
+
+Per informazioni dettagliate sulla creazione e la pubblicazione di un nuovo modulo, passare alla sezione [creare un modulo](/help/edge/docs/forms/create-forms.md) guida.
 
 ### Inizia a sviluppare stile e funzionalità
 
