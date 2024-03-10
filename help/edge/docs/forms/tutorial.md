@@ -4,9 +4,9 @@ description: Questa esercitazione ti aiuta a iniziare con un nuovo progetto Adob
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1786'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Il modello AEM Forms Boilerplate consente di iniziare rapidamente con un progett
 
 ### Introduzione al modello di archivio standard AEM Forms
 
-1. Crea un archivio Github per il progetto AEM. Per creare l’archivio:
+1. Crea un archivio GitHub per il progetto AEM. Per creare l’archivio:
    1. Vai a [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
       ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
@@ -65,7 +65,7 @@ Il modello AEM Forms Boilerplate consente di iniziare rapidamente con un progett
    >[!NOTE]
    >
    >
-   > Se utilizzi Github Enterprise con il filtro IP, puoi aggiungere all’elenco consentiti il seguente IP: 3.227.118.73
+   > Se utilizzi GitHub Enterprise con filtro IP, puoi aggiungere il seguente IP al inserisco nell&#39;elenco Consentiti di: 3.227.118.73
 
    Congratulazioni. Hai un nuovo sito web in esecuzione su `https://<branch>--<repo>--<owner>.hlx.page/`.
 
@@ -79,11 +79,11 @@ Il modello AEM Forms Boilerplate consente di iniziare rapidamente con un progett
 
 ### Collega la tua origine di contenuto
 
-L’archivio Github appena creato punta a [contenuto di esempio archiviato in una cartella di Google Drive](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Questo contenuto di sola lettura rappresenta un ottimo punto di partenza per i moduli. Puoi copiarlo nella tua unità Google e personalizzarlo in base alle tue esigenze.
+L’archivio GitHub appena creato punta a [contenuto di esempio archiviato in una cartella di Google Drive](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Questo contenuto di sola lettura rappresenta un ottimo punto di partenza per i moduli. Puoi copiarlo nella tua unità Google e personalizzarlo in base alle tue esigenze.
 
 ![Contenuto di esempio su Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
-Per copiare il contenuto di esempio nella tua cartella di contenuto e indirizzare l’archivio Github alla tua cartella di contenuto:
+Per copiare il contenuto di esempio nella tua cartella di contenuto e indirizzare l’archivio GitHub alla tua cartella di contenuto:
 
 1. Crea una nuova cartella specifica per il contenuto AEM in Google Drive o Microsoft SharePoint. Questo documento utilizza una cartella creata in Microsoft SharePoint.
 
@@ -164,7 +164,7 @@ Per visualizzare in anteprima il contenuto non pubblicato:
 
    ![Fissa AEM Sidekick](/help/edge/assets/pin-aem-sidekick.png)
 
-1. Per configurare l’estensione Sidekick Chrome, passa alla cartella precedentemente condivisa Google Drive o Microsoft SharePoint e fai clic con il pulsante destro del mouse sull’icona dell’estensione nella barra degli strumenti del browser, quindi seleziona `Add this project`.
+1. Per impostare l’estensione Sidekick per Chrome, passa alla cartella precedentemente condivisa di Google Drive o Microsoft SharePoint e fai clic con il pulsante destro del mouse sull’icona dell’estensione nella barra degli strumenti del browser, quindi seleziona `Add this project`.
 
    ![AEM Sidekick: aggiungi un progetto](/help/edge/assets/aem-sidekick-add-a-project.png)
 
@@ -204,7 +204,7 @@ Il contenuto di esempio include un foglio di &quot;richiesta&quot; che funge da 
 
 ![Modulo di interrogazione](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-Iniziamo con l’aggiornamento di un’etichetta di campo. Apri il foglio &quot;Richiesta&quot; per la modifica, modifica l’etichetta del pulsante Invia in `Let's Chat`e utilizza la barra laterale per pubblicarlo.
+Iniziamo con l’aggiornamento dell’etichetta di un campo. Apri il foglio &quot;Richiesta&quot; per la modifica, modifica l’etichetta del pulsante Invia in `Let's Chat`e utilizza la barra laterale per pubblicarlo.
 
 ![Modulo di interrogazione](/help/edge/assets/enquiry-form-preview-publish.png)
 
@@ -233,7 +233,7 @@ Essere operativi in un ambiente di sviluppo AEM locale in tempi brevi:
        npm install -g @adobe/aem-cli
    ```
 
-1. Clona il progetto Github: clona l’archivio del progetto da GitHub utilizzando il seguente comando, sostituendo <owner> con il proprietario dell’archivio e <repo> con il nome dell’archivio:
+1. Clona il progetto GitHub: clona l’archivio del progetto da GitHub utilizzando il seguente comando, sostituendo <owner> con il proprietario dell’archivio e <repo> con il nome dell’archivio:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -281,7 +281,7 @@ Garantire un processo di generazione GitHub fluido affrontando potenziali proble
 Se viene visualizzato l&#39;errore &quot;Impossibile risolvere il percorso del modulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, passare alla [Progetto EDS]file /blocks/forms/form.js. Aggiorna l’istruzione di importazione sostituendo il file lib-franklin.js con il file aem.js.
 
 * **Gestisci errori di stampa:**
-In caso di errori di stampa, è possibile ignorarli. Apri [Progetto EDS]/package.json file e modifica lo script &quot;lint&quot; da &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; a &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;. Salva il file e conferma le modifiche nel progetto GitHub.
+In caso di errori di stampa, è possibile ignorarli. Apri [Progetto EDS]/package.json e modificare lo script &quot;lint&quot; da `"lint": "npm run lint:js && npm run lint:css"` a `"lint": "echo 'skipping linting for now'"`. Salva il file e conferma le modifiche nel progetto GitHub.
 
 
 ## Consulta anche
@@ -289,9 +289,4 @@ In caso di errori di stampa, è possibile ignorarli. Apri [Progetto EDS]/package
 * [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Inviare i moduli direttamente ai fogli di Microsoft Excel o Google](/help/edge/docs/forms/submit-forms.md)
 * [Modificare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
-
-
-
-
-
 
