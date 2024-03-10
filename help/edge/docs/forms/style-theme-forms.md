@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '1819'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Applicazione di stili ai campi modulo
 
-Forms è fondamentale per l’interazione degli utenti sui siti web, consentendo loro di inserire dati. Questa guida illustra i concetti fondamentali relativi allo stile di vari campi modulo all’interno di [Blocco modulo adattivo](/help/edge/docs/forms/create-forms.md), per creare moduli visivi accattivanti e facili da usare.
+Forms è fondamentale per l’interazione degli utenti sui siti web, consentendo loro di inserire dati. Questa guida illustra i concetti fondamentali relativi allo stile di vari campi modulo all’interno di [Blocco Forms adattivo](/help/edge/docs/forms/create-forms.md), per creare moduli visivi accattivanti e facili da usare.
 
 ## Informazioni sui tipi di campi modulo
 
-Prima di immergerci nello stile, esaminiamo i tipi di campi modulo comuni supportati dal blocco modulo adattivo:
+Prima di immergerci nello stile, esaminiamo i tipi di campi modulo comuni supportati dal blocco Forms adattivo:
 
 * Campi di input: includono input di testo, input di e-mail, input di password e altro ancora.
 * Gruppi di caselle di controllo: utilizzato per selezionare più opzioni.
@@ -35,11 +35,11 @@ Comprendere i concetti fondamentali di CSS è fondamentale prima di formattare c
 * Modello casella: il modello casella CSS descrive la struttura degli elementi HTML come un&#39;area di contenuto circondata da spaziature, bordi e margini.
 * Flexbox/Grid: i layout CSS Flexbox e Grid sono strumenti potenti per la creazione di progettazioni dinamiche e flessibili.
 
-## Applicazione di uno stile a un modulo per un blocco di modulo adattivo
+## Applicazione di uno stile a un modulo per un blocco Forms adattivo
 
-Il blocco di moduli adattivi offre una struttura di HTML standardizzata che semplifica la selezione e lo stile dei componenti del modulo:
+L’Adaptive Forms Block offre una struttura di HTML standardizzata che semplifica la selezione e lo stile dei componenti dei moduli:
 
-* **Aggiorna stili predefiniti**: è possibile modificare gli stili predefiniti di un modulo modificando il `/blocks/form/form.css file`. Questo file offre uno stile completo per un modulo, con supporto per i moduli della procedura guidata in più passaggi. Viene enfatizzato l’utilizzo di variabili CSS personalizzate per una facile personalizzazione, manutenzione e uno stile uniforme tra i moduli. Per istruzioni sull’aggiunta del blocco di modulo adattivo al progetto, consulta [creare un modulo](/help/edge/docs/forms/create-forms.md).
+* **Aggiorna stili predefiniti**: è possibile modificare gli stili predefiniti di un modulo modificando il `/blocks/form/form.css file`. Questo file offre uno stile completo per un modulo, con supporto per i moduli della procedura guidata in più passaggi. Viene enfatizzato l’utilizzo di variabili CSS personalizzate per una facile personalizzazione, manutenzione e uno stile uniforme tra i moduli. Per istruzioni sull’aggiunta del blocco Forms adattivo al progetto, consulta [creare un modulo](/help/edge/docs/forms/create-forms.md).
 
 * **Personalizzazione**: utilizza il valore predefinito `forms.css` come base e personalizzarla per modificare l’aspetto dei componenti del modulo, rendendolo visivamente accattivante e di facile utilizzo. La struttura del file incoraggia l’organizzazione e mantiene gli stili per i moduli, promuovendo progettazioni coerenti all’interno del sito web.
 
@@ -60,7 +60,7 @@ Il blocco di moduli adattivi offre una struttura di HTML standardizzata che semp
 
 ## Struttura dei componenti
 
-Il blocco di moduli adattivi offre una struttura di HTML coerente per vari elementi del modulo, garantendo così uno stile e una gestione più semplici. Puoi manipolare i componenti utilizzando i CSS a scopo di stile.
+Il blocco Forms adattivo offre una struttura HTML coerente per vari elementi del modulo, garantendo così uno stile e una gestione più semplici. Puoi manipolare i componenti utilizzando i CSS a scopo di stile.
 
 ### Componenti generali (ad eccezione di elenchi a discesa, gruppi di scelta e gruppi di caselle di controllo):
 
@@ -821,5 +821,5 @@ Per applicare stili univoci, puoi anche eseguire il targeting di singoli campi p
 }
 ```
 
-Questo CSS esegue il targeting di tutti gli elementi di input che si trovano all’interno di un elemento che ha la classe `field-otp`. La struttura HTML del modulo segue le convenzioni del Blocco modulo adattivo. Ciò implica che esiste un contenitore contrassegnato con la classe &quot;field-otp&quot; che contiene il campo con il nome &quot;otp&quot;.
+Questo CSS esegue il targeting di tutti gli elementi di input che si trovano all’interno di un elemento che ha la classe `field-otp`. La struttura HTML del modulo segue le convenzioni del blocco Forms adattivo. Ciò implica che esiste un contenitore contrassegnato con la classe &quot;field-otp&quot; che contiene il campo con il nome &quot;otp&quot;.
 

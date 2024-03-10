@@ -4,9 +4,9 @@ description: Questa esercitazione ti aiuta a iniziare con un nuovo progetto Adob
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1770'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Nell’era digitale di oggi, la creazione di moduli facili da usare è essenzial
 
 Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google Sheets, consentendo di utilizzare un ecosistema dinamico e API affidabili di Google Sheets, Microsoft Excel e Microsoft Sharepoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
 
-AEM Forms fornisce un blocco, noto come blocco di moduli adattivi, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti.
+AEM Forms fornisce un blocco, noto come blocco di Forms adattivo, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. Puoi creare un nuovo progetto AEM predotato di blocco Forms adattivo o aggiungere il blocco Forms adattivo a un progetto AEM esistente.
 
 Questa esercitazione di AEM Forms ti guida attraverso la creazione, l’anteprima e la pubblicazione di un modulo personalizzato con un nuovo progetto Adobe Experience Manager (AEM) Forms. Scoprirai anche come aggiungere il blocco Forms adattivo a un progetto AEM esistente.
 
@@ -39,18 +39,19 @@ Questa esercitazione di AEM Forms ti guida attraverso la creazione, l’anteprim
 
 ## Creazione di un nuovo progetto AEM predotato di blocco Forms adattivo
 
-Il modello standard AEM Forms consente di iniziare rapidamente con un progetto AEM preconfigurato con il blocco di modulo adattivo. È il modo più rapido e semplice per seguire le best practice dell’AEM e passare direttamente alla creazione dei moduli.
+Il modello AEM Forms Boilerplate consente di iniziare rapidamente con un progetto AEM preconfigurato con il blocco Forms adattivo. È il modo più rapido e semplice per seguire le best practice dell’AEM e passare direttamente alla creazione dei moduli.
 
 ### Introduzione al modello di archivio standard AEM Forms
 
-1. Accedi al tuo account Github.
-1. Vai a [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
+1. Crea un archivio Github per il progetto AEM. Per creare l’archivio:
+   1. Vai a [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
-   ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
-1. Clic **Usa questo modello** e seleziona la **Creare un nuovo archivio** e selezionare la posizione in cui si desidera creare l&#39;archivio.
-   ![Creare un nuovo archivio con AEM Forms Boilerplate](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+      ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
+   1. Fai clic su **Usa questo modello** e selezionare il **Creare un nuovo archivio** opzione. Viene visualizzata la schermata Crea nuovo archivio.
 
-   L’Adobe consiglia che l’archivio sia impostato su public. Nella schermata Crea nuovo repository, selezionare **pubblico** opzione.
+      ![Creare un nuovo archivio con AEM Forms Boilerplate](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+
+   1. Nella schermata Crea nuovo repository, selezionare **proprietario**, e specificare **Nome archivio** . L’Adobe consiglia di impostare l’archivio su **Pubblico**. Quindi, seleziona la **pubblico** e fai clic su **Crea archivio**.
 
    ![Impostare l’archivio su public](/help/edge/assets/create-a-new-repo-keep-it-public.png)
 
@@ -61,35 +62,43 @@ Il modello standard AEM Forms consente di iniziare rapidamente con un progetto A
 
    ![Impostare l’archivio su public](/help/edge/assets/install-aem-code-sync-app-for-your-repo.png)
 
-       >[!NOTA]
-       >
-       >
-       > Se utilizzi Github Enterprise con il filtro IP, puoi aggiungere all’elenco consentiti il seguente IP: 3.227.118.73
-   
-   Congratulazioni. Hai un nuovo sito web in esecuzione su `https://<branch>--<repo>--<owner>.hlx.page/`. Nell’esempio precedente questo è [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
+   >[!NOTE]
+   >
+   >
+   > Se utilizzi Github Enterprise con il filtro IP, puoi aggiungere all’elenco consentiti il seguente IP: 3.227.118.73
+
+   Congratulazioni. Hai un nuovo sito web in esecuzione su `https://<branch>--<repo>--<owner>.hlx.page/`.
 
    * `<branch>` fa riferimento al ramo dell’archivio GitHub.
    * `<repository>` denota l’archivio GitHub.
    * `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
 
+   Ad esempio, se il nome del ramo è `main`, archivio è `wefinance`, e il proprietario è `wkndforms`, il sito web sarà operativo alle [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
 
-### Collega la tua origine di contenuto tramite Google Drive
 
-L’archivio Boilerplate biforcato da GitHub punta ad alcuni [contenuto di esempio archiviato in una cartella di Google Drive](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Questo contenuto di sola lettura rappresenta un ottimo punto di partenza per i moduli. Puoi copiarlo nella tua unità Google e personalizzarlo in base alle tue esigenze.
+
+### Collega la tua origine di contenuto
+
+L’archivio Github appena creato punta a [contenuto di esempio archiviato in una cartella di Google Drive](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Questo contenuto di sola lettura rappresenta un ottimo punto di partenza per i moduli. Puoi copiarlo nella tua unità Google e personalizzarlo in base alle tue esigenze.
 
 ![Contenuto di esempio su Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
-Per collegare i contenuti:
+Per copiare il contenuto di esempio nella tua cartella di contenuto e indirizzare l’archivio Github alla tua cartella di contenuto:
 
 1. Crea una nuova cartella specifica per il contenuto AEM in Google Drive o Microsoft SharePoint. Questo documento utilizza una cartella creata in Microsoft SharePoint.
 
 1. Condividi la cartella con l’utente di Adobe Experience Manager (helix@adobe.com).
 
-   ![Utilizza l’opzione Gestisci accesso per condividere la cartella con l’utente AEM](/help/edge/assets/share-folder-with-aem-user.png)
+   ![Utilizza l’opzione Gestisci accesso per condividere la cartella con l’utente AEM - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
+
+   ![Utilizza l’opzione Gestisci accesso per condividere la cartella con l’utente AEM - Google Drive](/help/edge/assets/share-google-drive-folder.png)
+
 
    Assicurati di aver fornito all’utente di Adobe Experience Manager i diritti di modifica per la cartella.
 
-   ![Condividi la cartella con l’utente AEM e fornisci i diritti di modifica](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![Condividi la cartella con l&#39;utente AEM e fornisci i diritti di modifica-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+
+   ![Condividi la cartella con l&#39;utente AEM e fornisci i diritti di modifica - Google Drive](/help/edge/assets/add-aem-user-google-folder.png)
 
 1. Copia il [contenuto di esempio archiviato nella cartella Google Drive](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_) nella cartella. Per copiare:
 
@@ -108,7 +117,6 @@ Per collegare i contenuti:
 
 1. Ora che hai configurato la cartella dei contenuti, puoi collegarla al progetto su GitHub che hai creato utilizzando AEM Forms Boilerplate in precedenza. Per connettersi:
 
-   1. Accedi al tuo account Github.
    1. Vai all’archivio GitHub creato in precedenza utilizzando AEM Forms Boilerplate.
    1. Apri `fstab.yaml` per la modifica.
    1. Sostituisci il riferimento esistente con il percorso della cartella condivisa con l’utente AEM (helix@adobe.com).
@@ -132,17 +140,15 @@ Per collegare i contenuti:
 
 
 
-   1. Esegui il commit del file fsatb.yaml aggiornato, dopo aver aggiornato il riferimento e tutto sembra a posto. In questo modo il lavoro verrà salvato e la cartella dei contenuti verrà connessa al sito Web.
+   1. Conferma l&#39;aggiornamento `fsatb.yaml` dopo aver aggiornato il riferimento e tutto sembra a posto. Se riscontri problemi di build, consulta [Risoluzione dei problemi di build di GitHub](#troubleshooting-github-build-issues).
+
+
 
       ![Conferma file fsatab.yaml aggiornato](/help/edge/assets/commit-updated-fstab-yaml.png)
 
+      Consente di collegare la cartella dei contenuti al sito Web. Dopo aver aggiornato il riferimento, potresti riscontrare inizialmente errori &quot;404 Not Found&quot; (404 non trovato). Il contenuto non è ancora stato visualizzato in anteprima. Nella sezione successiva viene illustrato come iniziare a creare e visualizzare in anteprima i contenuti.
 
-      >[!NOTE]
-      >
-      >
-      >Dopo aver aggiornato il riferimento, potresti riscontrare inizialmente errori &quot;404 Not Found&quot; (404 non trovato). Il contenuto non è ancora stato visualizzato in anteprima. Nella sezione successiva viene illustrato come iniziare a creare e visualizzare in anteprima i contenuti.
-
-
+      ![Conferma file fsatab.yaml aggiornato](/help/edge/assets/aem-forms-project-folder-error.png)
 
 ### Anteprima e pubblicazione dei contenuti
 
@@ -175,8 +181,8 @@ Per visualizzare in anteprima il contenuto non pubblicato:
    Quando si visualizzano i file in anteprima, i documenti vengono visualizzati in nuove schede del browser. Per visualizzare in anteprima il modulo di esempio, vai al seguente URL:
 
 
-   ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
+   ```HTML
+   https://<branch>--<repository>--<owner>.hlx.live
    ```
 
    * `<branch>` fa riferimento al ramo dell’archivio GitHub.
@@ -190,7 +196,32 @@ Per visualizzare in anteprima il contenuto non pubblicato:
 
 
 
-   [https://main--wefinance--wkndforms.hlx.page/enquiry](https://main--wefinance--wkndforms.hlx.page/enquiry).
+   [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
+
+### Aggiornare il modulo
+
+1. Vai alla cartella Microsoft SharePoint o Google Drive.
+
+1. Apri `enquiry.xlsx` per la modifica.
+
+   ![Modulo di interrogazione](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. Modifica l’etichetta del pulsante Invia in `Let's Chat`.
+
+   ![Modulo di interrogazione](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. Utilizza AEM Sidekick per visualizzare in anteprima e pubblicare `enquiry.xlsx` file.
+
+   ![Modulo di interrogazione](/help/edge/assets/enquiry-form-preview-publish.png)
+
+1. Per visualizzare in anteprima il modulo di richiesta, vai al seguente URL:
+
+
+   ```HTML
+   https://<branch>--<repository>--<owner>.hlx.page/enquiry
+   ```
+
+   L’etichetta del pulsante Invia viene aggiornata. Ora, compila il modulo e fai clic sul pulsante Invia, si verifica un errore simile al seguente, perché il foglio di calcolo non è [impostato per accettare i dati](/help/edge/docs/forms/submit-forms.md).
 
 
 ### Inizia a sviluppare stile e funzionalità
@@ -232,9 +263,9 @@ Congratulazioni! L&#39;ambiente di sviluppo locale è stato configurato e le mod
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-Se hai un progetto AEM esistente, puoi integrare il Blocco di modulo adattivo nel progetto corrente per iniziare a creare il modulo. Per integrare:
+Se disponi di un progetto AEM esistente, puoi integrare il blocco di Forms adattivo nel progetto corrente per iniziare a creare i moduli. Per integrare:
 
-1. Clona nel computer l’archivio Blocco modulo adattivo: https://github.com/adobe-rnd/aem-boilerplate-forms.
+1. Clona nel computer l’archivio Adaptive Forms Block: https://github.com/adobe-rnd/aem-boilerplate-forms.
 
 1. All&#39;interno della cartella scaricata, individua `blocks/form` cartella. Copia questa cartella. Ora è possibile passare alla pagina locale del progetto AEM `blocks` e incollare qui la cartella del modulo copiata.
 
@@ -244,7 +275,7 @@ Se hai un progetto AEM esistente, puoi integrare il Blocco di modulo adattivo ne
 Tutto qui. Il blocco Forms adattivo fa ora parte del progetto AEM. Puoi iniziare a creare e aggiungere moduli alle pagine AEM.
 
 
-### Risoluzione dei problemi di build di GitHub
+## Risoluzione dei problemi di build di GitHub
 
 Garantire un processo di generazione GitHub fluido affrontando potenziali problemi:
 
@@ -253,6 +284,14 @@ Se viene visualizzato l&#39;errore &quot;Impossibile risolvere il percorso del m
 
 * **Gestisci errori di stampa:**
 In caso di errori di stampa, è possibile ignorarli. Apri [Progetto EDS]/package.json file e modifica lo script &quot;lint&quot; da &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; a &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;. Salva il file e conferma le modifiche nel progetto GitHub.
+
+
+## Consulta anche
+
+* [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Inviare i moduli direttamente ai fogli di Microsoft Excel o Google](/help/edge/docs/forms/submit-forms.md)
+* [Modificare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
+
 
 
 

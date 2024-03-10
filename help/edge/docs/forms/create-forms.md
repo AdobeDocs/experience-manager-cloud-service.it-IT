@@ -5,29 +5,29 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
 
-# Creare un modulo utilizzando il blocco di modulo adattivo
+# Creare un modulo utilizzando il blocco Forms adattivo
 
-Nell’era digitale di oggi, la creazione di moduli facili da usare è essenziale per qualsiasi organizzazione. AEM Forms Edge Delivery consente di creare moduli utilizzando strumenti familiari come Word o Google Docs.
+AEM Forms Edge Delivery fornisce un blocco, noto come Adaptive Forms Block, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. È possibile [creare un nuovo progetto AEM predotato di Adaptive Forms Block](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) o [aggiungere il blocco Forms adattivo a un progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google Sheets, consentendo di utilizzare un ecosistema dinamico e API affidabili di Google Sheets, Microsoft Excel e Microsoft Sharepoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
 
 ![Ecosistema di authoring basato su documenti](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
-AEM Forms Edge Delivery fornisce un blocco, noto come blocco di moduli adattivi, per facilitare la creazione di moduli per acquisire e archiviare i dati acquisiti. Per iniziare a creare un modulo, puoi includere il blocco di modulo adattivo nel progetto EDS AEM. Iniziamo:
+
 
 
 ## Prerequisiti
 
 Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
-* Configurare un [Progetto AEM utilizzando AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) o [aggiungi il blocco dei moduli adattivi al progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clona l’archivio GitHub corrispondente sul computer locale.
+* Configurare un [Progetto AEM utilizzando AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) o [è stato aggiunto il blocco Forms adattivo al progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clona l’archivio GitHub corrispondente sul computer locale.
 In questo documento, la cartella locale del progetto Edge Delivery Services (EDS) viene indicata come `[EDS Project repository]` .
 * Assicurati di avere accesso a Google Sheets o Microsoft SharePoint. Per impostare Microsoft SharePoint come origine di contenuto, vedere [Come utilizzare Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
@@ -37,19 +37,19 @@ In questo documento, la cartella locale del progetto Edge Delivery Services (EDS
 
 <!-- 
 
-+++ Step 1: Add the Adaptive Form Block to your Edge Delivery Services (EDS) project.
++++ Step 1: Add the Adaptive Forms Block to your Edge Delivery Services (EDS) project.
 
-The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Form Block into your Edge Delivery Services project:
+The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Forms Block into your Edge Delivery Services project:
 
-1. **Clone the Adaptive Form Block repository**: Clone the [Adaptive Form Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form Block repository]`.
-1. **Locate the Adaptive Form Block Repository:** Access the [Adaptive Form Block repository]/blocks/src folder and copy its content. 
+1. **Clone the Adaptive Forms Block repository**: Clone the [Adaptive Forms Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Forms Block repository]`.
+1. **Locate the Adaptive Forms Block Repository:** Access the [Adaptive Forms Block repository]/blocks/src folder and copy its content. 
 
 1. on your local machine and copy the `form` folder. 
-1. **Paste the Adaptive Form Block's code into your EDS Project:**
-Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Form Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
+1. **Paste the Adaptive Forms Block's code into your EDS Project:**
+Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Forms Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
 1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
-After completing these steps, the Adaptive Form Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
+After completing these steps, the Adaptive Forms Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
  
 
 **Troubleshooting GitHub build issues**
@@ -118,7 +118,7 @@ Per procedere con la creazione del modulo:
 +++ Passaggio 2: visualizzare l&#39;anteprima del modulo utilizzando la pagina Edge Delivery Services (EDS).
 
 
-Finora hai aggiunto il blocco modulo adattivo al progetto EDS e preparato la struttura del modulo. Ora, per visualizzare l’anteprima del modulo:
+Finora hai aggiunto il blocco Forms adattivo al progetto EDS e preparato la struttura del modulo. Ora, per visualizzare l’anteprima del modulo:
 
 1. **Accedere alla directory dei progetti:** Apri l’account Microsoft SharePoint o Google Drive e passa alla directory del progetto AEM Edge Delivery.
 
@@ -126,7 +126,7 @@ Finora hai aggiunto il blocco modulo adattivo al progetto EDS e preparato la str
 
 1. **Passa alla posizione desiderata:** Spostarsi nella posizione desiderata all&#39;interno del documento in cui si desidera aggiungere il modulo.
 
-1. **Aggiungi il blocco di modulo adattivo:** Per creare un blocco di modulo per il rendering del modulo. Selezionate Inserisci > Tabella (Table) e create una tabella a una colonna e due righe. Denomina la tabella &quot;Form&quot; e incolla l’URL di anteprima nella seconda riga. Accertati che l’URL sia formattato come collegamento ipertestuale, non come testo normale, come illustrato di seguito:
+1. **Aggiungi il blocco Forms adattivo:** Per creare un blocco di modulo per il rendering del modulo. Selezionate Inserisci > Tabella (Table) e create una tabella a una colonna e due righe. Denomina la tabella &quot;Form&quot; e incolla l’URL di anteprima nella seconda riga. Accertati che l’URL sia formattato come collegamento ipertestuale, non come testo normale, come illustrato di seguito:
 
    | Modulo |
    |---|

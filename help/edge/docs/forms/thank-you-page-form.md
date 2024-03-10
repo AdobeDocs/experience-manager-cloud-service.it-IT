@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Nel blocco Forms adattivo, il comportamento predefinito consiste nella visualizz
 
 ## Configurazione della pagina di ringraziamento e del messaggio
 
-Il comportamento predefinito del blocco Forms adattivo consiste nella visualizzazione della pagina &quot;grazie&quot; all’invio. Per configurare la pagina di ringraziamento per il blocco Forms adattivo, segui la procedura riportata di seguito:
+Il comportamento predefinito di Blocco Forms adattivo consiste nella visualizzazione della pagina &quot;grazie&quot; all’invio. Per configurare la pagina di ringraziamento per il blocco Forms adattivo, segui la procedura riportata di seguito:
 
 1. Accedi alla cartella del progetto AEM Edge Delivery in Microsoft SharePoint o Google Workspace.
 1. Crea un file Microsoft Word o Google Docs denominato &quot;grazie&quot; all’interno della directory del progetto.
@@ -37,7 +37,7 @@ Il comportamento predefinito del blocco Forms adattivo consiste nella visualizza
 
 1. Utilizza AEM Sidekick per visualizzare in anteprima e pubblicare il file &quot;grazie&quot;.
 
-Nel blocco Forms adattivo viene visualizzata la pagina &quot;Grazie&quot; all’invio del modulo.
+Il blocco Forms adattivo visualizza la pagina &quot;grazie&quot; all’invio del modulo.
 
 ## Reindirizza gli utenti a un’altra pagina dopo l’invio
 

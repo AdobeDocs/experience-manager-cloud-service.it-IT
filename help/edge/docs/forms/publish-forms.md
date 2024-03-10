@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Quando si è pronti a condividere il modulo con i clienti per la raccolta o l&#3
 
 ## Prerequisiti
 
-* Il [Il blocco modulo adattivo è abilitato per il progetto EDS su GitHub](/help/edge/docs/forms/create-forms.md).
+* Il [Il blocco Forms adattivo è abilitato per il progetto EDS su GitHub](/help/edge/docs/forms/create-forms.md).
 * Il modulo è stato testato e pronto per l&#39;uso.
 * Il tuo [il foglio di calcolo è configurato](/help/edge/docs/forms/submit-forms.md) per accettare i dati.
 

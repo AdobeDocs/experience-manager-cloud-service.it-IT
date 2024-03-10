@@ -1,11 +1,11 @@
 ---
 title: Preparare il foglio di calcolo per accettare i dati
-description: Crea moduli potenti più rapidamente utilizzando fogli di calcolo e campi di blocchi di moduli adattivi.
+description: Crea moduli potenti più rapidamente utilizzando fogli di calcolo e campi Forms Block Adaptive.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Per attivare il foglio di calcolo:
 
 Una volta aggiunti i nomi dei campi al `incoming` foglio, il modulo diventa pronto per accettare gli invii. È possibile visualizzare in anteprima il modulo e inviare i dati al foglio utilizzando il modulo.
 
-Una volta configurato il foglio per la ricezione dei dati, è possibile [visualizzare in anteprima il modulo utilizzando il blocco modulo adattivo](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) o [utilizzare le richieste POST](#use-admin-apis-to-send-data-to-your-sheet) per iniziare a inviare dati al foglio.
+Una volta configurato il foglio per la ricezione dei dati, è possibile [visualizzare in anteprima il modulo utilizzando il blocco Forms adattivo](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) o [utilizzare le richieste POST](#use-admin-apis-to-send-data-to-your-sheet) per iniziare a inviare dati al foglio.
 
 >[!WARNING]
 >
@@ -172,7 +172,7 @@ Un foglio denominato &quot;Slack&quot; viene aggiunto alla cartella di lavoro di
 
 ## Invia dati al foglio {#send-data-to-your-sheet}
 
-Dopo aver impostato il foglio per la ricezione dei dati, è possibile [visualizzare in anteprima il modulo utilizzando il blocco modulo adattivo](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) o [utilizzare le API amministratore](#use-admin-apis-to-send-data-to-your-sheet) per iniziare a inviare dati al foglio.
+Dopo aver impostato il foglio per la ricezione dei dati, è possibile [visualizzare in anteprima il modulo utilizzando il blocco Forms adattivo](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) o [utilizzare le API amministratore](#use-admin-apis-to-send-data-to-your-sheet) per iniziare a inviare dati al foglio.
 
 ### Utilizzare le API amministratore per inviare dati al foglio
 

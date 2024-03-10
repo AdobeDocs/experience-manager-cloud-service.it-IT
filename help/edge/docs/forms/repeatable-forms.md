@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Aggiungere sezioni ripetibili a un modulo
 
-Il blocco di modulo adattivo consente di aggiungere o rendere ripetibile una sezione o un componente di un modulo. Questo consente agli utenti di immettere più volte informazioni per lo stesso tipo di dati, semplificando così la raccolta di informazioni quali esperienze lavorative o formazione.
+Blocco Forms adattivo consente di aggiungere o rendere ripetibile una sezione o un componente di un modulo. Questo consente agli utenti di immettere più volte informazioni per lo stesso tipo di dati, semplificando così la raccolta di informazioni quali esperienze lavorative o formazione.
 
 Si consideri, ad esempio, un modulo utilizzato per raccogliere informazioni sull&#39;esperienza lavorativa di una persona. È possibile che sia disponibile una sezione ripetibile per l&#39;acquisizione dei dettagli di ogni processo precedente. In genere, la sezione ripetibile contiene campi quali il nome dell&#39;azienda, la qualifica, le date di assunzione e le responsabilità lavorative. L’utente può aggiungere più istanze della sezione ripetibile per immettere informazioni su ogni processo che ha mantenuto.
 
@@ -81,7 +81,7 @@ The form allows users to provide personal information, including details of the 
 
 ## Prerequisites
 
-The [Adaptive Form block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
+The [Adaptive Forms Block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
 
 ## Add a repeatable section to a form 
 
