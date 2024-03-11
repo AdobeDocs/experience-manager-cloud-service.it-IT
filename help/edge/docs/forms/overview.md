@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 67d9eaaf18725403f6a152b04e022cdca6902de0
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,13 @@ Edge Delivery Services sfrutta GitHub per consentire alla clientela di gestire e
 ![Installa AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
 AEM Forms Edge Delivery Services fornisce un blocco di moduli, noto come [Blocco Forms adattivo](/help/edge/docs/forms/create-forms.md) per aggiungere un modulo al sito Edge Delivery Services.
+
+La scelta tra [authoring basato su documenti](#document-based-authoring-features) e [Authoring AEM](#aem-authoring-features) dipende dalle tue esigenze specifiche.
+
+Per i moduli semplici che raccolgono solo informazioni di base come nomi ed e-mail (si pensi ai moduli per contattarci, ai moduli per la generazione di lead o ai moduli per la richiesta di servizi) e dove sono necessari solo i dati per passare a un foglio di calcolo, il [Authoring basato su documenti](/help/edge/docs/forms/create-forms.md) è una misura perfetta. Puoi creare questi moduli come faresti con un documento nei documenti di Google.
+
+Se i moduli diventano più complessi, ad esempio richiedono più pannelli, regole complesse e logica di business, manipolazione dei dati, integrazione con sistemi esterni o flussi di lavoro semplificati utilizzando le funzioni AEM, [Authoring AEM](/help/forms/creating-adaptive-form-core-components.md) è un&#39;opzione migliore.
+
 
 ### Caratteristiche principali dell’authoring basato su documenti e dell’authoring AEM
 
@@ -119,6 +126,13 @@ L’authoring AEM (tramite l’editor di Forms adattivo) fornisce un’interfacc
 * Possibilità di configurare più azioni di invio per la gestione degli invii di moduli, tra cui l&#39;invio di dati a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e molte altre origini dati.
 
 In sostanza, l’authoring AEM si basa sulle basi dell’authoring basato su documenti, fornendo un toolkit più avanzato per la creazione e la gestione di moduli complessi.
+
+### Flusso di lavoro di authoring
+
+![Authoring basato su documenti](/help/edge/assets/document-based-authoring-workflow.png)
+
+![Authoring AEM](/help/edge/assets/aem-authoring-workflow.png)
+
 
 ## Inizia a creare i moduli
 
