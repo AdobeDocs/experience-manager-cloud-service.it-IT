@@ -4,9 +4,9 @@ description: Questa esercitazione ti aiuta a iniziare con un nuovo progetto Adob
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1878'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Per copiare il contenuto di esempio nella tua cartella di contenuto e indirizzar
 
       ![Scarica contenuto di esempio](/help/edge/assets/download-sample-content.png)
 
-      Il `index`, `nav`, e `footer` i file definiscono il layout di base delle pagine e si modificano raramente durante un progetto. Inoltre, dispongono di una struttura specifica diversa dalla maggior parte degli altri file di contenuto. Esaminando questi file si può capire come il contenuto viene organizzato nei progetti AEM.
+      Il `nav` e `footer` i file definiscono il layout di base delle pagine e si modificano raramente durante un progetto. Inoltre, dispongono di una struttura specifica diversa dalla maggior parte degli altri file di contenuto. Esaminando questi file si può capire come il contenuto viene organizzato nei progetti AEM.
 
 
    1. Caricare questi file nella cartella Microsoft SharePoint o Google Drive.
@@ -148,7 +148,7 @@ Per copiare il contenuto di esempio nella tua cartella di contenuto e indirizzar
 
       Consente di collegare la cartella dei contenuti al sito Web. Dopo aver aggiornato il riferimento, potresti riscontrare inizialmente errori &quot;404 Not Found&quot; (404 non trovato). Il contenuto non è ancora stato visualizzato in anteprima. Nella sezione successiva viene illustrato come iniziare a creare e visualizzare in anteprima i contenuti.
 
-      ![Conferma file fsatab.yaml aggiornato](/help/edge/assets/aem-forms-project-folder-error.png)
+
 
 ### Anteprima e pubblicazione dei contenuti
 
@@ -204,9 +204,22 @@ Il contenuto di esempio include un foglio di &quot;richiesta&quot; che funge da 
 
 ![Modulo di interrogazione](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-Iniziamo con l’aggiornamento dell’etichetta di un campo. Apri il foglio &quot;Richiesta&quot; per la modifica, modifica l’etichetta del pulsante Invia in `Let's Chat`e utilizza la barra laterale per pubblicarlo.
+Iniziamo con l’aggiornamento dell’etichetta di un campo. Apri il foglio &quot;Richiesta&quot; per la modifica, modifica l’etichetta del pulsante Invia in `Let's Chat` e utilizza AEM Sidekick per visualizzare in anteprima e pubblicare il file.
 
 ![Modulo di interrogazione](/help/edge/assets/enquiry-form-preview-publish.png)
+
+Quando visualizzi l’anteprima o pubblichi il file, in una nuova scheda viene visualizzata una versione JSON del file. Copia l’URL di anteprima (.hlx.page) o di pubblicazione (.hlx.live) del file.
+
+![JSON del foglio di calcolo del modulo](/help/edge/assets//preview-and-publish-enquiry-form.png)
+
+Apri `enquiry` e sostituisci l’URL nel blocco di modulo con l’URL del file copiato nel passaggio precedente. Assicurati che l’URL sia un collegamento ipertestuale.
+
+![File di interrogazione con URL .json dell’URL del foglio di calcolo](/help/edge/assets/enquiry-doc-to-embed-form.png)
+
+Utilizza AEM Sidekick per visualizzare in anteprima e pubblicare il documento di richiesta.
+
+![File di interrogazione con URL .json dell’URL del foglio di calcolo](/help/edge/assets/preview-and-publish-enquiry-document.png)
+
 
 Per visualizzare in anteprima il modulo di richiesta aggiornato, vai al seguente URL:
 
