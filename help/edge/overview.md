@@ -3,10 +3,10 @@ title: Guida introduttiva a AEM e Edge Delivery Service
 description: Scopri in che modo AEM as a Cloud Service può trarre vantaggio dalle prestazioni e dai punteggi impeccabili di Lighthouse offerti da Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
-workflow-type: ht
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+workflow-type: tm+mt
 source-wordcount: '874'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Con Edge Delivery Services, AEM offre esperienze eccezionali che stimolano coinv
 Utilizzando Edge Delivery Services, è possibile:
 
 * Creare siti veloci con un punteggio Lighthouse perfetto e monitorare continuamente le prestazioni del sito tramite il monitoraggio degli utenti reali (RUM, Real User Monitoring).
-* Aumentare l’efficienza di authoring separando le origini di contenuto. È possibile utilizzare sia l’authoring di AEM che l’authoring basato su documenti. Di conseguenza, puoi lavorare con più origini di contenuto sullo stesso sito Web.
+* Aumentare l’efficienza di authoring separando le origini di contenuto. È possibile utilizzare sia l’authoring AEM che l’authoring basato su documenti. Di conseguenza, puoi lavorare con più origini di contenuto sullo stesso sito Web.
 * Utilizza un framework di sperimentazione integrato che consente di creare e di eseguire rapidamente i test senza alcun impatto sulle prestazioni e di rilasciare rapidamente in produzione un vincitore di test.
 
 ## Panoramica di Edge Delivery Services {#edge-overview}
@@ -27,7 +27,7 @@ Il diagramma seguente illustra come modificare il contenuto in Microsoft Word (m
 
 ![Architettura di Edge Delivery](assets/AEM-with-EDS-publishing-simple2.png)
 
-Edge Delivery Services è un set di sevizi componibili che consente un elevato grado di flessibilità nel modo in cui vengono creati i contenuti sul sito Web. Come accennato in precedenza, è possibile utilizzare sia la [Gestione dei contenuti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=it) con l’[authoring dell’editor universale](/help/implementing/universal-editor/introduction.md), sia l’[authoring basato su documenti.](https://www.aem.live/docs/authoring)
+Edge Delivery Services è un set di sevizi componibili che consente un elevato grado di flessibilità nel modo in cui vengono creati i contenuti sul sito Web. Come accennato in precedenza, puoi utilizzare entrambi [Gestione dei contenuti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=it) con [Authoring dell’editor universale](/help/implementing/universal-editor/introduction.md) nonché [Authoring basato su documenti .](https://www.aem.live/docs/authoring)
 
 Ad esempio, è possibile utilizzare il contenuto direttamente da Microsoft Word o Documenti Google. Ciò significa che i documenti provenienti da tali origini possono diventare pagine del sito Web. Inoltre, le intestazioni, gli elenchi, le immagini e gli elementi dei font possono essere trasferiti dalla sorgente iniziale al sito Web. Il nuovo contenuto viene aggiunto immediatamente senza che sia necessario ricrearlo.
 
@@ -63,7 +63,7 @@ Adobe fornisce tre canali per aiutarti con Edge Delivery Services:
 
 ### Accesso alle risorse della community {#community-resource}
 
-Adobe si impegna a fornire la migliore community e il miglior supporto per Edge Delivery Services e l’authoring basato su documenti.
+Adobe si impegna a fornire la migliore community di coinvolgimento e supporto per l’authoring basato su Edge Delivery Services e documenti .
 
 * Aderisci alla [community Experience League](https://adobe.ly/3Q6kTKl) per rivolgere domande, condividere feedback, avviare discussioni, chiedere assistenza da esperti di Adobe e consulenti ed esperti di AEM e connetterti in tempo reale con altri utenti che condividono i tuoi stessi interessi. 
 * Segui il nostro [canale Discord](https://discord.gg/aem-live), una piattaforma più informale per interazioni in tempo reale e rapidi scambi di idee.

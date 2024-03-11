@@ -5,22 +5,21 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 67d9eaaf18725403f6a152b04e022cdca6902de0
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 2%
+source-wordcount: '937'
+ht-degree: 0%
 
 ---
 
 # Edge Delivery Services AEM Forms
 
-AEM Forms Edge Delivery Services è un set componibile di servizi che consente un ambiente di sviluppo rapido in cui gli autori possono aggiornare e pubblicare rapidamente e nuovi moduli vengono avviati rapidamente.
+AEM Forms Edge Delivery Services è un insieme componibile di servizi che consente un ambiente di sviluppo rapido in cui gli autori possono aggiornare, pubblicare e avviare rapidamente nuovi moduli. Questi servizi offrono esperienze di moduli di eccezionale e forte impatto che determinano coinvolgimento e conversioni. Queste esperienze di moduli sono facili da creare e sviluppare.
 
-I Edge Delivery Services AEM Forms offrono esperienze Forms eccezionali che stimolano coinvolgimento e conversioni consentendo esperienze ad alto impatto facili da creare e sviluppare.
 
 Questi servizi consentono di:
 
-* **Crea esperienze di iscrizione con strumenti a tua scelta:** Aumentare l’efficienza di authoring disaccoppiando le origini di contenuto. È possibile utilizzare sia l’authoring basato su documenti (Microsoft SharePoint o Google Drive) che l’authoring AEM (Adaptive Forms Editor). È quindi possibile utilizzare più origini di contenuto nello stesso modulo e utilizzare gli strumenti di authoring preferiti, ad esempio Microsoft Excel, Google Sheets o Adaptive Forms Editor.
+* **Crea esperienze di iscrizione con strumenti a tua scelta:** Aumentare l’efficienza di authoring disaccoppiando le origini di contenuto. È possibile utilizzare sia l’authoring basato su documenti (Microsoft SharePoint o Google Drive) che l’authoring AEM (Adaptive Forms Editor). È possibile utilizzare più origini di contenuto nello stesso sito moduli e utilizzare gli strumenti di authoring preferiti, ad esempio Microsoft Excel, Google Sheets o Adaptive Forms Editor.
 
 * **Offri esperienze di registrazione digitale eccezionali:** Fornisci esperienze di registrazione digitale da caricare ed eseguire rapidamente il rendering. Tempi di caricamento più rapidi e un’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento e conversione dei moduli.
 
@@ -28,38 +27,40 @@ Questi servizi consentono di:
 
 ## Panoramica dei Edge Delivery Services AEM Forms {#edge-overview}
 
-Il diagramma seguente illustra come modificare i moduli in Microsoft Excel o Google Sheets (modifica basata su documento) e pubblicarli in Edge Delivery Services. Mostra anche il metodo di pubblicazione dell’AEM utilizzando l’editor di Forms adattivo.
+Il diagramma seguente illustra come modificare i moduli in Microsoft Excel o Google Sheets (authoring basato su documenti ) e pubblicarli in Edge Delivery Services. Mostra anche il metodo di pubblicazione dell’AEM utilizzando l’editor di Forms adattivo (AEM Authoring).
 
 ![Architettura di Edge Delivery](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-I servizi AEM Forms Edge Delivery sono un set di servizi componibili che consente un elevato grado di flessibilità nel modo in cui vengono creati i moduli sul sito web. È possibile utilizzare sia la gestione dei contenuti AEM che [Authoring AEM](/help/forms/creating-adaptive-form-core-components.md) nonché [authoring basato su documenti](/help/edge/docs/forms/create-forms.md).
+I servizi AEM Forms Edge Delivery sono un set di servizi componibili che consente un elevato grado di flessibilità nel modo in cui vengono creati i moduli sul sito web. È possibile utilizzare sia la gestione dei contenuti AEM che [Authoring AEM](/help/forms/creating-adaptive-form-core-components.md) nonché [Authoring basato su documenti](/help/edge/docs/forms/create-forms.md).
 
-Ad esempio, i moduli vengono creati direttamente in Microsoft Excel o nei fogli di Google e questi fogli di calcolo vengono trasformati in moduli per il sito Web. Qualsiasi nuovo contenuto del modulo, ad esempio un nuovo campo, è immediatamente disponibile sul sito web senza che sia necessario un processo di ricostruzione.
+Ad esempio, i moduli vengono creati direttamente in Microsoft Excel o nei fogli di Google e questi fogli di calcolo vengono trasformati in moduli per il sito Web. Qualsiasi nuovo modulo o contenuto del modulo, ad esempio un nuovo campo modulo, è immediatamente disponibile sul sito web senza che sia necessario un processo di ricostruzione.
 
-Edge Delivery Services sfrutta GitHub per consentire alla clientela di gestire e distribuire il codice direttamente dall’archivio GitHub. Ad esempio, è possibile scrivere moduli in [Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md) e i componenti dei moduli possono essere sviluppati utilizzando CSS e JavaScript in GitHub. Quando sei pronto, puoi utilizzare [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) estensione del browser per visualizzare in anteprima e pubblicare gli aggiornamenti dei contenuti.
+I Edge Delivery Services AEM Forms utilizzano GitHub per consentire ai clienti di gestire e distribuire il codice direttamente dall’archivio GitHub. Ad esempio, è possibile scrivere moduli in [Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md) e i componenti dei moduli possono essere sviluppati utilizzando CSS e JavaScript in GitHub.
+
+Quando sei pronto, puoi utilizzare [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), un’estensione del browser chrome, per visualizzare in anteprima e pubblicare gli aggiornamenti dei contenuti.
 
 ![Installa AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
 AEM Forms Edge Delivery Services fornisce un blocco di moduli, noto come [Blocco Forms adattivo](/help/edge/docs/forms/create-forms.md) per aggiungere un modulo al sito Edge Delivery Services.
 
-La scelta tra [authoring basato su documenti](#document-based-authoring-features) e [Authoring AEM](#aem-authoring-features) dipende dalle tue esigenze specifiche.
+La scelta tra [Authoring basato su documenti](#document-based-authoring-features) e [Authoring AEM](#aem-authoring-features) dipende dalle tue esigenze specifiche.
 
-Per i moduli semplici che raccolgono solo informazioni di base come nomi ed e-mail (si pensi ai moduli per contattarci, ai moduli per la generazione di lead o ai moduli per la richiesta di servizi) e dove sono necessari solo i dati per passare a un foglio di calcolo, il [Authoring basato su documenti](/help/edge/docs/forms/create-forms.md) è una misura perfetta. Puoi creare questi moduli come faresti con un documento nei documenti di Google.
+Per i moduli semplici che raccolgono solo informazioni di base come nomi ed e-mail (si pensi ai moduli per contattarci, ai moduli per la generazione di lead o ai moduli per la richiesta di servizi) e dove sono necessari solo i dati per passare a un foglio di calcolo, il [Authoring basato su documenti](/help/edge/docs/forms/create-forms.md) è una misura perfetta. È possibile creare questi moduli come si farebbe per un documento in Google Sheets o Microsoft Excel.
 
 Se i moduli diventano più complessi, ad esempio richiedono più pannelli, regole complesse e logica di business, manipolazione dei dati, integrazione con sistemi esterni o flussi di lavoro semplificati utilizzando le funzioni AEM, [Authoring AEM](/help/forms/creating-adaptive-form-core-components.md) è un&#39;opzione migliore.
 
 
 ### Caratteristiche principali dell’authoring basato su documenti e dell’authoring AEM
 
-L’authoring basato su documenti offre una serie di funzioni di base e l’authoring AEM sfrutta funzionalità aggiuntive oltre all’authoring basato su documenti, consentendoti di creare moduli più complessi e interattivi. Le caratteristiche chiave dell’authoring basato su documenti e dell’authoring AEM sono:
+L’authoring basato su documenti offre una serie di funzioni di base e l’authoring AEM sblocca funzionalità aggiuntive oltre all’authoring basato su documenti, consentendoti di creare moduli più complessi e interattivi. Le caratteristiche chiave dell’authoring basato su documenti e dell’authoring AEM sono:
 
 <!-- 
 
 >[!BEGINTABS]
 
->[!TAB Document-based authoring]
+>[!TAB Document-based Authoring ]
 
-Document-based authoring is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively. It offers a basic version of rules to add dynamic behaviour to forms. Key features of Document-based authoring are: 
+Document-based Authoring  is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively. It offers a basic version of rules to add dynamic behaviour to forms. Key features of Document-based Authoring  are: 
 
 * **[HTML5-based Form Field components](/help/edge/docs/forms/form-components.md)**: AEM Forms Edge Delivery Services allow you to create user-friendly and interactive forms using form components based on HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  elements. These components cater to different types of data collection and can be easily customized to fit your specific needs.  
 
@@ -79,7 +80,7 @@ Document-based authoring is a versatile option suitable for creating simple form
 
 >[!TAB AEM Authoring]
 
-AEM Authoring unlocks additional capabilities beyond the document-based authoring, empowering you to build more complex and interactive forms. In additon to the features of Document-based authoring, AEM authoring offers the following additional features:  
+AEM Authoring unlocks additional capabilities beyond the Document-based Authoring , empowering you to build more complex and interactive forms. In additon to the features of Document-based Authoring , AEM authoring offers the following additional features:  
 
 * Advanced Rules: Define logic-based actions within your forms. You can use rules to conditionally show or hide form sections, pre-populate fields based on user input, and perform various validations to ensure data integrity.
 
@@ -113,7 +114,7 @@ L’authoring basato su documenti consente di creare moduli utilizzando strument
 
 #### Funzioni di authoring AEM
 
-L’authoring AEM (tramite l’editor di Forms adattivo) fornisce un’interfaccia WYSIWYG per la creazione di moduli e offre tutte le funzionalità dell’authoring basato su documenti, oltre a un’ampia gamma di funzioni aggiuntive:
+L’authoring AEM fornisce un’interfaccia WYSIWYG (Adaptive Forms Editor) per la creazione di moduli e offre tutte le funzionalità dell’authoring basato su documenti, oltre a un’ampia gamma di funzioni aggiuntive:
 
 * Editor di regole avanzate per la creazione di logica complessa.
 * Estensibilità lato server per funzionalità personalizzate.
@@ -129,7 +130,7 @@ In sostanza, l’authoring AEM si basa sulle basi dell’authoring basato su doc
 
 ### Flusso di lavoro di authoring
 
-![Authoring basato su documenti](/help/edge/assets/document-based-authoring-workflow.png)
+![Authoring basato su documenti ](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![Authoring AEM](/help/edge/assets/aem-authoring-workflow.png)
 

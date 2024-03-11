@@ -3,10 +3,10 @@ title: Authoring di contenuti per Edge Delivery Services
 description: Scopri come funziona l’authoring dei contenuti con i Edge Delivery Services e come creare contenuti AEM con i Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 21%
+ht-degree: 17%
 
 ---
 
@@ -17,11 +17,11 @@ Con Edge Delivery Services, l’authoring è semplice, veloce e flessibile. Sono
 * [Authoring basato su documenti](#document-based) - come Microsoft Word o Google Docs
 * [Editor universale](#universal-editor) - Interfaccia utente moderna per la creazione di contenuti in AEM
 
-## Authoring basato su documenti {#document-based}
+## Authoring basato su documenti  {#document-based}
 
-Con l’authoring basato su documenti, puoi utilizzare origini diverse, ad esempio Microsoft Word e Documenti Google. I documenti provenienti da queste origini diventano pagine del sito web. È possibile trasferire titoli, elenchi, immagini, elementi font e video dall’origine iniziale al tuo sito web. Puoi aggiungere metadati a scopo di SEO o utilizzare blocchi per lavorare con contenuti strutturati e aggiungere funzionalità.
+Nel caso dell’authoring basato su documenti , è possibile utilizzare diverse origini, ad esempio Microsoft Word e Google Docs. I documenti provenienti da queste origini diventano pagine del sito web. È possibile trasferire titoli, elenchi, immagini, elementi font e video dall’origine iniziale al tuo sito web. Puoi aggiungere metadati a scopo di SEO o utilizzare blocchi per lavorare con contenuti strutturati e aggiungere funzionalità.
 
-Per ulteriori dettagli sull’authoring basato su documenti, consulta [questo documento è disponibile nella documentazione di Edge Delivery Services.](/help/edge/docs/authoring.md)
+Per ulteriori dettagli sull’authoring basato su documenti , consulta [questo documento è disponibile nella documentazione di Edge Delivery Services.](/help/edge/docs/authoring.md)
 
 ## Authoring Universal Editor {#universal-editor}
 

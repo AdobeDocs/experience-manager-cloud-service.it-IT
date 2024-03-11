@@ -4,7 +4,7 @@ description: Forme perfette, veloce! ⚡ AEM Forms Edge Delivery + authoring bas
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%

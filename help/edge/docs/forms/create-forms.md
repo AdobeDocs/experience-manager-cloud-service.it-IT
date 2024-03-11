@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Creare un modulo utilizzando il blocco Forms adattivo
 
-AEM Forms Edge Delivery fornisce un blocco, noto come Adaptive Forms Block, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. È possibile [creare un nuovo progetto AEM predotato di Adaptive Forms Block](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) o [aggiungere il blocco Forms adattivo a un progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM Forms Edge Delivery fornisce un blocco, noto come Adaptive Forms Block, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. È possibile [crea un nuovo progetto AEM preconfigurato con Adaptive Forms Block](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) o [aggiungere il blocco Forms adattivo a un progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google Sheets, consentendo di utilizzare un ecosistema dinamico e API affidabili di Google Sheets, Microsoft Excel e Microsoft Sharepoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
 
@@ -27,7 +27,7 @@ Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google She
 
 Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
-* Configurare un [Progetto AEM utilizzando AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) o [è stato aggiunto il blocco Forms adattivo al progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clona l’archivio GitHub corrispondente sul computer locale.
+* Configurare un [Progetto AEM utilizzando AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) o [è stato aggiunto il blocco Forms adattivo al progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clona l’archivio GitHub corrispondente sul computer locale.
 In questo documento, la cartella locale del progetto Edge Delivery Services (EDS) viene indicata come `[EDS Project repository]`.
 * Assicurati di avere accesso a Google Sheets o Microsoft SharePoint. Per impostare Microsoft SharePoint come origine di contenuto, vedere [Come utilizzare Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
 

@@ -2,13 +2,13 @@
 title: Metodi per creare contenuti in AEM
 description: Scopri i diversi modi in cui puoi creare contenuti in AEM e le loro differenze.
 feature: Authoring
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # Metodi per creare contenuti in AEM {#authoring-methods}
 
@@ -63,12 +63,12 @@ L’editor universale è accessibile tramite la console Sites all’interno di A
 
 Per ulteriori informazioni sull’editor universale, consulta il documento [Authoring di contenuti con l’Editor universale.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-## Authoring basato su documenti {#document-based}
+## Authoring basato su documenti  {#document-based}
 
 Se utilizzi i servizi di consegna Edge, puoi scegliere di creare i contenuti come documenti tradizionali come Microsoft Word o Google Docs completamente al di fuori del [AEM **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![Modifica di contenuti basati su documenti](assets/authoring-methods-document.jpg)
 
-Con l’authoring basato su documenti, gli autori possono utilizzare gli strumenti già noti e beneficiare ancora della velocità e delle prestazioni dei Edge Delivery Services AEM per pubblicare i propri contenuti. L’authoring basato su documenti non richiede l’utilizzo della console AEM.
+Con l’authoring basato su documenti, gli autori possono utilizzare gli strumenti già noti e continuare a beneficiare della velocità e delle prestazioni dei Edge Delivery Services AEM per pubblicare i propri contenuti. L’authoring basato su documenti non richiede l’utilizzo della console AEM.
 
 Per ulteriori informazioni sull’authoring basato su documenti, consulta il documento [Creazione di contenuti per Edge Delivery Services.](/help/edge/authoring.md)

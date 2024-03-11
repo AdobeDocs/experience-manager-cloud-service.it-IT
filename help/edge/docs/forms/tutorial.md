@@ -4,7 +4,7 @@ description: Questa esercitazione ti aiuta a iniziare con un nuovo progetto Adob
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 0%
@@ -18,11 +18,11 @@ Nell’era digitale di oggi, la creazione di moduli facili da usare è essenzial
 
 Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google Sheets, consentendo di utilizzare un ecosistema dinamico e API affidabili di Google Sheets, Microsoft Excel e Microsoft Sharepoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
 
-AEM Forms fornisce un blocco, noto come blocco di Forms adattivo, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. Puoi creare un nuovo progetto AEM predotato di blocco Forms adattivo o aggiungere il blocco Forms adattivo a un progetto AEM esistente.
+AEM Forms fornisce un blocco, noto come blocco di Forms adattivo, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. Puoi creare un nuovo progetto AEM preconfigurato con Adaptive Forms Block oppure aggiungere Adaptive Forms Block a un progetto AEM esistente.
 
 Questa esercitazione di AEM Forms ti guida attraverso la creazione, l’anteprima e la pubblicazione di un modulo personalizzato con un nuovo progetto Adobe Experience Manager (AEM) Forms. Scoprirai anche come aggiungere il blocco Forms adattivo a un progetto AEM esistente.
 
-* **[Creazione di un nuovo progetto AEM predotato di blocco Forms adattivo](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**
+* **[Crea un nuovo progetto AEM preconfigurato con Adaptive Forms Block](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
 * **[Aggiungere un blocco Forms adattivo a un progetto AEM esistente](#add-adaptive-forms-block-to-an-existing-eds-project)**
 
 
@@ -37,7 +37,7 @@ Questa esercitazione di AEM Forms ti guida attraverso la creazione, l’anteprim
 **Alzate la testa!** Questa esercitazione utilizza macOS, Chrome e Visual Studio Code. Anche se i passaggi possono essere adattati per altre impostazioni, le schermate e gli elementi specifici dell’interfaccia utente potrebbero variare in base al sistema operativo, al browser e all’editor di codice scelti.
 
 
-## Creazione di un nuovo progetto AEM predotato di blocco Forms adattivo
+## Crea un nuovo progetto AEM preconfigurato con Adaptive Forms Block
 
 Il modello AEM Forms Boilerplate consente di iniziare rapidamente con un progetto AEM preconfigurato con il blocco Forms adattivo. È il modo più rapido e semplice per seguire le best practice dell’AEM e passare direttamente alla creazione dei moduli.
 
