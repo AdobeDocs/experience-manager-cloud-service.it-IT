@@ -1,8 +1,8 @@
 ---
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 70%
+source-wordcount: '367'
+ht-degree: 62%
 
 ---
 # Snippet {#snippets}
@@ -61,11 +61,13 @@ ht-degree: 70%
 
 [!BADGE TECNOLOGIA AD ACCESSO ANTICIPATO: parlaci di questa funzione dai laboratori AEM Sites sul tuo canale di Slack!]{type=Informative url="/help/edge/docs/slack.md" tooltip="L’authoring AEM con i Edge Delivery Services è una tecnologia ad accesso anticipato."}
 
-## Consulta anche {#see-also-forms-eds}
+## Vedi altro {#see-more-forms-eds}
 
-* [Componenti del modulo](/help/edge/docs/forms/form-components.md)
-* [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
-* [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
-* [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-forms.md)
-* [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
-* [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)
+* [Introduzione ai Edge Delivery Services AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Imposta i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati&#x200B;](/help/edge/docs/forms/submit-forms.md)
+* [Pubblicare il modulo e iniziare a raccogliere i dati](/help/edge/docs/forms/publish-forms.md)
+* [Personalizzare l&#39;aspetto dei moduli&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+* [Aggiungere sezioni ripetibili a un modulo&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
+* [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
+* [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
