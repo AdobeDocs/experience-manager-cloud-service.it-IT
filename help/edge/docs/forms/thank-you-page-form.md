@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -80,12 +80,6 @@ Il reindirizzamento di un utente a un’altra pagina dopo l’invio del modulo p
 Per reindirizzare la pagina &quot;Grazie&quot; a un’altra pagina, utilizza [reindirizzamenti al sito web](https://www.aem.live/docs/redirects) foglio di calcolo.
 
 
-## Vedi altro
+## Consulta anche
 
-* [Componenti del modulo](/help/edge/docs/forms/form-components.md)
-* [Proprietà del campo modulo](/help/edge/docs/forms/eds-form-field-properties)
-* [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
-* [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
-* [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-forms.md)
-* [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
-* [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}

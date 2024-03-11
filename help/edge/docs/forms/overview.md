@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -27,21 +27,20 @@ Questi servizi consentono di:
 
 ## Panoramica dei Edge Delivery Services AEM Forms {#edge-overview}
 
-Il diagramma seguente illustra come modificare i moduli in Microsoft Excel o Google Sheets (authoring basato su documenti ) e pubblicarli in Edge Delivery Services. Mostra anche il metodo di pubblicazione dell’AEM utilizzando l’editor di Forms adattivo (AEM Authoring).
+I servizi AEM Forms Edge Delivery sono un set di servizi componibili che consente un elevato grado di flessibilità nel modo in cui vengono creati i moduli sul sito web. È possibile utilizzare sia la gestione dei contenuti AEM che [Authoring AEM](/help/forms/creating-adaptive-form-core-components.md) nonché [Authoring basato su documenti](/help/edge/docs/forms/create-forms.md). I Edge Delivery Services AEM Forms forniscono anche un blocco di moduli, noto come [Blocco Forms adattivo](/help/edge/docs/forms/create-forms.md) per aggiungere un modulo al sito Edge Delivery Services.
+
+Ad esempio, i moduli vengono creati direttamente in Microsoft Excel o nei fogli di Google e questi fogli di calcolo vengono trasformati in moduli per il sito Web. Qualsiasi nuovo modulo o contenuto del modulo, ad esempio un nuovo campo modulo, è immediatamente disponibile sul sito web senza che sia necessario un processo di ricostruzione.
+
+Il diagramma seguente illustra come modificare i moduli in Microsoft Excel o Google Sheets (authoring basato su documenti) e pubblicarli in Edge Delivery Services. Mostra anche il metodo di pubblicazione dell’AEM utilizzando l’editor di Forms adattivo (AEM Authoring).
 
 ![Architettura di Edge Delivery](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-I servizi AEM Forms Edge Delivery sono un set di servizi componibili che consente un elevato grado di flessibilità nel modo in cui vengono creati i moduli sul sito web. È possibile utilizzare sia la gestione dei contenuti AEM che [Authoring AEM](/help/forms/creating-adaptive-form-core-components.md) nonché [Authoring basato su documenti](/help/edge/docs/forms/create-forms.md).
-
-Ad esempio, i moduli vengono creati direttamente in Microsoft Excel o nei fogli di Google e questi fogli di calcolo vengono trasformati in moduli per il sito Web. Qualsiasi nuovo modulo o contenuto del modulo, ad esempio un nuovo campo modulo, è immediatamente disponibile sul sito web senza che sia necessario un processo di ricostruzione.
 
 I Edge Delivery Services AEM Forms utilizzano GitHub per consentire ai clienti di gestire e distribuire il codice direttamente dall’archivio GitHub. Ad esempio, è possibile scrivere moduli in [Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md) e i componenti dei moduli possono essere sviluppati utilizzando CSS e JavaScript in GitHub.
 
 Quando sei pronto, puoi utilizzare [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), un’estensione del browser chrome, per visualizzare in anteprima e pubblicare gli aggiornamenti dei contenuti.
 
 ![Installa AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
-
-AEM Forms Edge Delivery Services fornisce un blocco di moduli, noto come [Blocco Forms adattivo](/help/edge/docs/forms/create-forms.md) per aggiungere un modulo al sito Edge Delivery Services.
 
 La scelta tra [Authoring basato su documenti](#document-based-authoring-features) e [Authoring AEM](#aem-authoring-features) dipende dalle tue esigenze specifiche.
 

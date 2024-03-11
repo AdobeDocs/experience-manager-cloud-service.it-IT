@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 0%
+source-wordcount: '973'
+ht-degree: 1%
 
 ---
 
@@ -286,3 +286,6 @@ Esistono alcuni modi diversi per formattare i dati del modulo nel corpo del POST
 
 Ora puoi personalizzare il messaggio di ringraziamento, [configurare una pagina di ringraziamento](/help/edge/docs/forms/thank-you-page-form.md), o [imposta reindirizzamenti](/help/edge/docs/forms/thank-you-page-form.md).
 
+## Consulta anche
+
+{{see-more-forms-eds}}

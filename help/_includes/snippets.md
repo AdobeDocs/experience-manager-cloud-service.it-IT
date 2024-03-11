@@ -1,8 +1,8 @@
 ---
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 # Snippet {#snippets}
@@ -61,7 +61,7 @@ ht-degree: 62%
 
 [!BADGE TECNOLOGIA AD ACCESSO ANTICIPATO: parlaci di questa funzione dai laboratori AEM Sites sul tuo canale di Slack!]{type=Informative url="/help/edge/docs/slack.md" tooltip="L’authoring AEM con i Edge Delivery Services è una tecnologia ad accesso anticipato."}
 
-## Vedi altro {#see-more-forms-eds}
+## Consulta anche {#see-more-forms-eds}
 
 * [Introduzione ai Edge Delivery Services AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)

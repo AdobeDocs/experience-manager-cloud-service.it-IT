@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1819'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
@@ -823,3 +823,6 @@ Per applicare stili univoci, puoi anche eseguire il targeting di singoli campi p
 
 Questo CSS esegue il targeting di tutti gli elementi di input che si trovano all’interno di un elemento che ha la classe `field-otp`. La struttura HTML del modulo segue le convenzioni del blocco Forms adattivo. Ciò implica che esiste un contenitore contrassegnato con la classe &quot;field-otp&quot; che contiene il campo con il nome &quot;otp&quot;.
 
+## Consulta anche
+
+{{see-more-forms-eds}}

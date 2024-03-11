@@ -4,9 +4,9 @@ description: Questa esercitazione ti aiuta a iniziare con un nuovo progetto Adob
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1854'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Nell’era digitale di oggi, la creazione di moduli facili da usare è essenziale per qualsiasi organizzazione. AEM Forms Edge Delivery Services (EDS) consente di creare moduli utilizzando strumenti familiari come Google Docs e Microsoft Office.
 
-Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google Sheets, consentendo di utilizzare un ecosistema dinamico e API affidabili di Google Sheets, Microsoft Excel e Microsoft Sharepoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
+Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google Sheets, consentendo di utilizzare un ecosistema dinamico e API affidabili di Google Sheets, Microsoft Excel e Microsoft SharePoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
 
 AEM Forms fornisce un blocco, noto come blocco di Forms adattivo, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. Puoi creare un nuovo progetto AEM preconfigurato con Adaptive Forms Block oppure aggiungere Adaptive Forms Block a un progetto AEM esistente.
 
@@ -127,16 +127,16 @@ Per copiare il contenuto di esempio nella tua cartella di contenuto e indirizzar
       Se si utilizza Microsoft SharePoint, il percorso della cartella utilizza il formato seguente:
 
       ```HTML
-      https://<tenant>.sharepoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
       ```
 
       Ad esempio:
 
       ```HTML
-      https://adobe.sharepoint.com/sites/wkndforms/Shared%20Documents/wefinance
+      https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Per ulteriori informazioni sulla gestione dei file con Microsoft SharePoint, consulta [Come utilizzare Adobe Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
+      Per ulteriori informazioni sulla gestione dei file con Microsoft SharePoint, consulta [Come usare Adobe SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -299,7 +299,5 @@ In caso di errori di stampa, è possibile ignorarli. Apri [Progetto EDS]/package
 
 ## Consulta anche
 
-* [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Inviare i moduli direttamente ai fogli di Microsoft Excel o Google](/help/edge/docs/forms/submit-forms.md)
-* [Modificare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}
 
