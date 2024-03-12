@@ -1,18 +1,18 @@
 ---
-title: Configurare la pagina di ringraziamento o il modulo di reindirizzamento dopo l’invio
+title: Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo
 description: Scopri come configurare le pagine di ringraziamento e il reindirizzamento per Forms Block per ottimizzare l’esperienza utente e semplificare i percorsi di utenti.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '195'
 ht-degree: 3%
 
 ---
 
-# Mostra la pagina di ringraziamento o il modulo di reindirizzamento dopo l’invio
+# Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo
 
 Dopo che un utente ha inviato un modulo, è fondamentale fornire un’esperienza fluida attraverso un messaggio di ringraziamento. Questo non solo conferma la corretta presentazione, ma migliora anche la soddisfazione degli utenti e li guida ulteriormente nel loro percorso.
 

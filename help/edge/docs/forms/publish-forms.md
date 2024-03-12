@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,10 @@ Quando si è pronti a condividere il modulo con i clienti per la raccolta o l&#3
 
 ## Prerequisiti
 
-* Il [Il blocco Forms adattivo è abilitato per il progetto EDS su GitHub](/help/edge/docs/forms/create-forms.md).
+* Hai un progetto AEM basato su [AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) o [è stato aggiunto il blocco Forms adattivo al progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
 * Il modulo è stato testato e pronto per l&#39;uso.
 * Il tuo [il foglio di calcolo è configurato](/help/edge/docs/forms/submit-forms.md) per accettare i dati.
+
 
 ## Pubblicare il modulo
 
@@ -74,7 +75,9 @@ Per aggiungere il modulo alla pagina Web:
 
    | Modulo |
    |---|
-   | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+   ![Aggiungi al file un blocco denominato &quot;Modulo&quot;](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    Questo blocco funge da segnaposto in cui è incorporato il modulo. Nella seconda riga del blocco, aggiungi l’URL del `<form>.json` come collegamento ipertestuale.
 
@@ -86,16 +89,16 @@ Per aggiungere il modulo alla pagina Web:
    Utilizza l’URL di anteprima (.page URL) a scopo di sviluppo o test oppure l’URL di pubblicazione (.live) per la produzione. Di seguito sono riportati alcuni esempi con URL di anteprima e pubblicazione:
 
    **URL di anteprima**
-| Modulo | |—| | [https://main--portal--wkndforms.hlx.page/enquiry.json](https://main--portal--wkndforms.hlx.page/enquiry.json)  |
+| Modulo | |—| | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
 
 
    **URL di pubblicazione**
-| Modulo | |—| | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
+| Modulo | |—| | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
 
 1. Utilizzare [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l&#39;anteprima della pagina web. Nella pagina viene ora visualizzato il modulo. Ad esempio, questo è il modulo basato su [foglio di calcolo interrogazione](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
 
 
-   [![Un esempio di modulo EDS](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   ![Un esempio di modulo EDS](/help/edge/assets/eds-form.png)
 
 1. Utilizza AEM Sidekick per pubblicare il modulo. Ora i tuoi clienti possono compilare il modulo e inviarlo.
 

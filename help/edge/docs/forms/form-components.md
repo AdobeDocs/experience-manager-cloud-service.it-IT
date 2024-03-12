@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 2%
+source-wordcount: '937'
+ht-degree: 3%
 
 ---
 
@@ -64,3 +64,6 @@ Ogni componente del modulo include varie proprietà che consentono di controllar
 | Selezionato | Casella di selezione, Radio | Determina se il campo è selezionato per impostazione predefinita. L’attributo selected è una proprietà booleana utilizzata con gli input di caselle di controllo e radio. Se impostato su true, indica che il campo è selezionato per impostazione predefinita al caricamento del modulo. |
 | Set di campi | Tutti | Raggruppa i campi per creare sezioni visivamente distinte all’interno di un modulo. L’elemento set di campi raggruppa i campi correlati all’interno di un modulo, separandoli visivamente per migliorare l’organizzazione e l’esperienza utente. </br> Per organizzare un set di campi all’interno di un set di campi, utilizza semplicemente `fieldset` e specificarne l’attributo name. Nell’esempio seguente viene illustrato come i pulsanti di scelta sono racchiusi in un singolo set di campi per una migliore organizzazione. ![Esempio di set di campi](/help/edge/assets/fieldset-example.png) |
 
+## Consulta anche
+
+{{see-more-forms-eds}}

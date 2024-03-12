@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 # Preparare il foglio di calcolo per accettare i dati
 
 
-Una volta [ha creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/create-forms.md), è ora di abilitare il foglio di calcolo corrispondente per iniziare a ricevere i dati.
+Una volta [ha creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/create-forms.md), è ora di abilitare il foglio di calcolo corrispondente per iniziare a ricevere i dati. Puoi abilitare manualmente il foglio di calcolo per accettare i dati oppure utilizzare le API amministratore per consentire a un foglio di calcolo di accettare i dati.
 
 ![Ecosistema di authoring basato su documenti](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -24,7 +24,10 @@ Una volta [ha creato e visualizzato in anteprima il modulo](/help/edge/docs/form
 
 -->
 
-Per attivare il foglio di calcolo:
+
+## Abilita manualmente il foglio di calcolo per accettare i dati
+
+Per consentire al foglio di calcolo di accettare i dati
 
 1. Aprire il foglio di calcolo contenente il modulo e aggiungere un nuovo foglio, rinominandolo `incoming`.
 
@@ -61,8 +64,7 @@ Una volta configurato il foglio per la ricezione dei dati, è possibile [visuali
 >
 >  I fogli &quot;shared-default&quot; non devono mai contenere informazioni personali identificabili o dati sensibili che l&#39;utente non è a suo agio nell&#39;essere accessibili pubblicamente.
 
-
-## (Facoltativo) Utilizza le API amministratore per consentire a un foglio di calcolo di accettare i dati
+### Utilizzare le API amministratore per consentire a un foglio di calcolo di accettare i dati
 
 È inoltre possibile inviare una richiesta POST al modulo per consentirgli di accettare dati e configurare intestazioni per `incoming` foglio. Dopo aver ricevuto la richiesta del POST, il servizio analizza il corpo della richiesta e genera in modo autonomo le intestazioni e i fogli essenziali necessari per l’acquisizione dei dati.
 
@@ -151,7 +153,6 @@ Per utilizzare le API amministratore per consentire a un foglio di calcolo di ac
    Il modulo è ora abilitato per l&#39;accettazione dei dati. Nel foglio di calcolo vengono inoltre osservate le seguenti modifiche:
 
 ## Modifiche automatiche al foglio dopo l&#39;attivazione per l&#39;accettazione dei dati.
-
 
 Una volta che il foglio è impostato per ricevere i dati, nel foglio di calcolo si osservano le seguenti modifiche:
 
@@ -284,7 +285,7 @@ Esistono alcuni modi diversi per formattare i dati del modulo nel corpo del POST
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-Ora puoi personalizzare il messaggio di ringraziamento, [configurare una pagina di ringraziamento](/help/edge/docs/forms/thank-you-page-form.md), o [imposta reindirizzamenti](/help/edge/docs/forms/thank-you-page-form.md).
+Quindi, puoi [personalizza il messaggio di ringraziamento](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## Consulta anche
 
