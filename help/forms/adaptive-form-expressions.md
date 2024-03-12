@@ -1,9 +1,9 @@
 ---
 title: Cosa sono le espressioni di modulo adattivo?
 description: Utilizza espressioni Forms adattive per aggiungere convalida, calcolo e attivazione o disattivazione automatica della visibilità di una sezione.
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2686'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,7 @@ GuideBridge è una raccolta di API che possono essere utilizzate per interagire 
 
 * Per reimpostare i campi modulo, puoi attivare `guideBridge.reset()` API sull’espressione di clic di un pulsante. Allo stesso modo, esiste un’API di invio che può essere chiamata come espressione di clic `guideBridge.submit()`**.**
 
-* È possibile utilizzare `setFocus ()` API per impostare lo stato attivo su vari campi o pannelli (per il pannello lo stato attivo è impostato automaticamente sul primo campo). `setFocus ()`offre un’ampia gamma di opzioni per la navigazione, ad esempio navigazione tra i pannelli, attraversamento precedente/successivo, impostazione dello stato attivo su un particolare campo e molto altro. Ad esempio, per passare al pannello successivo, puoi utilizzare: `guideBridge.setFocus (this.panel.somExpression, 'nextItem').`
+* È possibile utilizzare `setFocus()` API per impostare lo stato attivo su vari campi o pannelli (per il pannello lo stato attivo è impostato automaticamente sul primo campo). `setFocus()`offre un’ampia gamma di opzioni per la navigazione, ad esempio navigazione tra i pannelli, attraversamento precedente/successivo, impostazione dello stato attivo su un particolare campo e molto altro. Ad esempio, per passare al pannello successivo, puoi utilizzare: &quot;guideBridge.setFocus(this.panel.somExpression, &quot;nextItem&quot;).
 
 * Per convalidare un modulo adattivo o i relativi pannelli specifici, utilizza `guideBridge.validate(errorList, somExpression).`
 

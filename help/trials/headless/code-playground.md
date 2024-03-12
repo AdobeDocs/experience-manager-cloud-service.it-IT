@@ -4,7 +4,7 @@ description: Scopri come recuperare i contenuti JSON dall’ambiente di prova co
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 96%
@@ -64,7 +64,7 @@ Nella riga 6, i dettagli dell’host di pubblicazione sono stati letti dal param
 Configura il client AEM headless alla riga 12:
 
 ```javascript
-const aemHeadlessClient = new AdobeAemHeadlessClientJs ({
+const aemHeadlessClient = new AdobeAemHeadlessClientJs({
   // Use a proxy to avoid CORS issues
   serviceURL: 'https://102588-505tanocelot.adobeioruntime.net/api/v1/web/aem/proxy',
   headers: {

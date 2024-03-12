@@ -2,7 +2,7 @@
 title: API Query Builder
 description: La funzionalità di Asset Share Query Builder è esposta tramite un’API Java&trade; e un’API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Query Builder offre un modo semplice per eseguire query sull’archivio dei cont
 
 Generatore di query lato server ([`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) accetta una descrizione della query, crea ed esegui una query XPath, facoltativamente filtra il set di risultati ed estrae i facet, se necessario.
 
-La descrizione della query è semplicemente un set di predicati ([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Gli esempi includono un predicato full-text, che corrisponde al `jcr:contains ()` funzione in XPath.
+La descrizione della query è semplicemente un set di predicati ([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Gli esempi includono un predicato full-text, che corrisponde al `jcr:contains()` funzione in XPath.
 
 Per ogni tipo di predicato, è disponibile un componente valutatore ([`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) che sa come gestire il predicato specifico per XPath, il filtro e l&#39;estrazione facet. È facile creare valutatori personalizzati, che sono collegati tramite il runtime del componente OSGi.
 
@@ -125,7 +125,7 @@ Per impostazione predefinita, Query Builder fornisce anche il numero di hit. A s
 
 Ad esempio, l’interfaccia utente può adattare il seguente approccio:
 
-* Ottieni e visualizza il conteggio accurato del numero di hit totali ([SearchResult.getTotalMatches ()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) o totale nel `querybuilder.json` risposta) sono inferiori o pari a 100;
+* Ottieni e visualizza il conteggio accurato del numero di hit totali ([SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) o totale nel `querybuilder.json` risposta) sono inferiori o pari a 100;
 * Imposta `guessTotal` a 100, con la chiamata del Generatore di query.
 
 * La risposta può avere il seguente risultato:
@@ -381,8 +381,8 @@ Per tali proprietà principali, puoi abbreviare la query e utilizzare `similar=/
     SearchResult result = query.getResult();
 
     // paging metadata
-    int hitsPerPage = result.getHits ().size(); // 20 (set above) or lower
-    long totalMatches = result.getTotalMatches ();
+    int hitsPerPage = result.getHits().size(); // 20 (set above) or lower
+    long totalMatches = result.getTotalMatches();
     long offset = result.getStartIndex();
     long numberOfPages = totalMatches / 20;
 
@@ -396,7 +396,7 @@ Per tali proprietà principali, puoi abbreviare la query e utilizzare `similar=/
     doc.appendChild( root );
 
     // iterating over the results
-    for (Hit hit : result.getHits ()) {
+for (Hit hit : result.getHits()) {
        String path = hit.getPath();
 
       //Create a result element
@@ -461,7 +461,7 @@ Spiega **tutto** query durante il ciclo di sviluppo rispetto al set di indici di
    * Accedi a `https://<host>:<port>/system/console/slinglog`. Crea un logger per `com.day.cq.search.impl.builder.QueryImpl` a **DEBUG**.
 1. Dopo aver abilitato DEBUG per la classe precedente, nei registri viene visualizzato l&#39;XPath generato da Query Builder.
 1. Copiare la query XPath dalla voce di registro per la query Query Builder associata, ad esempio:
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains (jcr:content, "WKND") or jcr:contains (jcr:content/@cq:tags, "WKND"))]`
+   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`
 1. Incollare la query XPath in Explain Query come XPath in modo da ottenere il piano di query.
 
 ### Ottenere XPath spiegabile tramite Query Builder Debugger {#obtain-explain-able-xpath-via-the-query-builder-debugger}
@@ -497,7 +497,7 @@ null=group: limit=20, offset=0[
     {path=path: path=/content}
     {type=type: type=cq:Page}
 ]
-com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains (jcr:content, "WKND") or jcr:contains (jcr:content/@cq:tags, "WKND"))]
+com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]
 com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```

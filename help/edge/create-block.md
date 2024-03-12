@@ -2,9 +2,9 @@
 title: Creazione di blocchi instrumentati per l’utilizzo con l’editor universale
 description: Scopri come creare blocchi instrumentati per l’utilizzo con l’Editor universale nell’authoring AEM con progetti di Edge Delivery Services.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Questa guida fornisce istruzioni dettagliate su come creare blocchi instrumentat
 
 Questa guida richiede necessariamente una conoscenza esistente dell’authoring AEM con progetti di Edge Delivery Services e con l’editor universale. Prima di iniziare questa guida, è necessario avere già accesso ai Edge Delivery Services e conoscere le relative nozioni di base, tra cui:
 
-* Hai completato il [Estutorial sui servizi di consegna Edge.](/help/edge/developer/tutorial.md)
+Hai completato il [Tutorial sul servizio di consegna Edge.](/help/edge/developer/tutorial.md)
 * Hai accesso a un [Sandbox di AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * Hai [ha attivato Universal Editor nello stesso ambiente sandbox.](/help/implementing/universal-editor/getting-started.md)
 * Hai completato il [Guida introduttiva per gli sviluppatori per l’authoring di AEM con Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guida.

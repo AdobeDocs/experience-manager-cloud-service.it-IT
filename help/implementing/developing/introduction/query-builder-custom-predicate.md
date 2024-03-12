@@ -2,7 +2,7 @@
 title: Implementazione di un valutatore del predicato personalizzato per Query Builder
 description: Query Builder in AEM offre un modo semplice e personalizzabile per eseguire query sull’archivio dei contenuti
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -216,7 +216,7 @@ public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
     static final String PREDICATE_SINCE_OP = " >= ";
     static final String PREDICATE_ACTION = "action";
 
-    Logger log = LoggerFactory.getLogger(getClass ());
+    Logger log = LoggerFactory.getLogger(getClass());
 
     /**
      * Returns a XPath expression filtering by replication metadata.

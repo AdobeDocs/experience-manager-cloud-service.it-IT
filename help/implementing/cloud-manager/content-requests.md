@@ -2,7 +2,7 @@
 title: Informazioni sulle richieste di contenuto di Cloud Service
 description: Se hai acquistato licenze per richieste di contenuto da Adobe, scopri i tipi di richieste di contenuto che Adobe Experience Cloud as a Service misura e le varianze con gli strumenti di reporting di Analytics di un’organizzazione.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '2688'
 ht-degree: 5%

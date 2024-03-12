@@ -4,9 +4,9 @@ description: Questa esercitazione ti aiuta a iniziare con un nuovo progetto Adob
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1850'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,9 @@ Nell’era digitale di oggi, la creazione di moduli facili da usare è essenzial
 
 Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google Sheets, consentendo di utilizzare un ecosistema dinamico e API affidabili di Google Sheets, Microsoft Excel e Microsoft SharePoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
 
-AEM Forms fornisce un blocco, noto come blocco di Forms adattivo, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. Puoi creare un nuovo progetto AEM preconfigurato con Adaptive Forms Block oppure aggiungere Adaptive Forms Block a un progetto AEM esistente.
+AEM Forms fornisce un blocco, noto come blocco di Forms adattivo, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. È possibile [crea un nuovo progetto AEM preconfigurato con Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) o [aggiungere il blocco Forms adattivo a un progetto AEM esistente](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-Questa esercitazione di AEM Forms ti guida attraverso la creazione, l’anteprima e la pubblicazione di un modulo personalizzato con un nuovo progetto Adobe Experience Manager (AEM) Forms. Scoprirai anche come aggiungere il blocco Forms adattivo a un progetto AEM esistente.
-
-* **[Crea un nuovo progetto AEM preconfigurato con Adaptive Forms Block](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
-* **[Aggiungere un blocco Forms adattivo a un progetto AEM esistente](#add-adaptive-forms-block-to-an-existing-eds-project)**
+Questa esercitazione di AEM Forms ti guida attraverso la creazione, l’anteprima e la pubblicazione di un modulo personalizzato con un nuovo progetto Adobe Experience Manager (AEM) Forms.
 
 
 
@@ -79,7 +76,7 @@ Il modello AEM Forms Boilerplate consente di iniziare rapidamente con un progett
 
 ### Collega la tua origine di contenuto
 
-L’archivio GitHub appena creato punta a [contenuto di esempio archiviato in una cartella di Google Drive](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Questo contenuto di sola lettura rappresenta un ottimo punto di partenza per i moduli. Puoi copiarlo nella tua unità Google e personalizzarlo in base alle tue esigenze.
+L’archivio GitHub appena creato punta a [contenuto di esempio archiviato in una cartella di Google Drive](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). Questo contenuto di sola lettura rappresenta un ottimo punto di partenza per i moduli. Puoi copiarlo nella tua unità Google e personalizzarlo in base alle tue esigenze.
 
 ![Contenuto di esempio su Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
@@ -194,8 +191,6 @@ Per visualizzare in anteprima il contenuto non pubblicato:
 
    Ad esempio, se l’archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto il proprietario dell’account &quot;wkndforms&quot; e stai utilizzando il ramo &quot;main&quot;, l’URL è:
 
-
-
    [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
 ### Creare un modulo
@@ -274,9 +269,16 @@ Congratulazioni! L&#39;ambiente di sviluppo locale è stato configurato e le mod
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-Se disponi di un progetto AEM esistente, puoi integrare il blocco di Forms adattivo nel progetto corrente per iniziare a creare i moduli. Per integrare:
+Se disponi di un progetto AEM esistente, puoi integrare il blocco di Forms adattivo nel progetto corrente per iniziare a creare i moduli.
 
-1. Clona nel computer l’archivio Adaptive Forms Block: https://github.com/adobe-rnd/aem-boilerplate-forms.
+>
+>
+>
+> Questo passaggio si applica ai progetti generati con [Piastra riscaldante AEM](https://github.com/adobe/aem-boilerplate). Se hai creato il progetto AEM utilizzando [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), puoi saltare questo passaggio.
+
+Per integrare:
+
+1. Clona l’archivio di blocchi adattivi di Forms: [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) sul computer.
 
 1. All&#39;interno della cartella scaricata, individua `blocks/form` cartella. Copia questa cartella. Ora è possibile passare alla pagina locale del progetto AEM `blocks` e incollare qui la cartella del modulo copiata.
 

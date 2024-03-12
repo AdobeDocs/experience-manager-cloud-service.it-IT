@@ -1,12 +1,12 @@
 ---
-title: Componenti del modulo per i servizi di distribuzione AEM Forms Edge
-description: I servizi di distribuzione AEM Forms Edge sono progettati per garantire prestazioni di picco, consentendoti di immaginare il futuro di una raccolta dati semplificata e del coinvolgimento degli utenti. L’articolo elenca tutti i componenti Forms disponibili come predefiniti per i moduli EDD.
+title: Componenti del modulo Edge Delivery Services AEM Forms
+description: I Edge Delivery Services AEM Forms sono stati progettati per offrire prestazioni di picco, consentendoti di immaginare il futuro della raccolta dati semplificata e del coinvolgimento degli utenti. L’articolo elenca tutti i componenti Forms disponibili come predefiniti per i moduli EDD.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '872'
 ht-degree: 5%
 
 ---

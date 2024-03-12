@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 8ff0363fbb97aac85733fc9444819fa4d6f12805
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -79,16 +79,20 @@ L’authoring AEM fornisce un’interfaccia WYSIWYG (Adaptive Forms Editor) per 
 
 In sostanza, [Authoring AEM](/help/forms/creating-adaptive-form-core-components.md) si basa sulle basi di [Authoring basato su documenti](/help/edge/docs/forms/create-forms.md), fornendo un toolkit più avanzato per la creazione e la gestione di moduli complessi.
 
+>[!NOTE]
+>
+>
+> La funzionalità di authoring dell’AEM è disponibile nell’ambito del programma per l’adozione anticipata. Se sei interessato, invia una breve e-mail dal tuo indirizzo di lavoro a aem-forms-ea@adobe.com per richiedere l’accesso alla funzionalità.
+
 ### Edge Delivery Services AEM Forms: authoring. Pubblicazione e presentazione di Forms
 
 I seguenti diagrammi illustrano il processo di creazione, pubblicazione e invio di moduli tramite l’authoring basato su documenti e l’authoring AEM.
 
-
-
-
 ![Authoring basato su documenti ](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![Authoring AEM](/help/edge/assets/aem-authoring-workflow.png)
+
+
 
 
 ## Inizia a creare i moduli
@@ -101,6 +105,17 @@ I seguenti diagrammi illustrano il processo di creazione, pubblicazione e invio 
 * [Aggiungere sezioni ripetibili a un modulo&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
