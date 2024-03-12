@@ -1,13 +1,13 @@
 ---
 title: Modellazione dei contenuti per la creazione di AEM con progetti Edge Delivery Services
 description: Scopri come funziona la modellazione dei contenuti per l’authoring AEM con progetti di Edge Delivery Services e come modellare i tuoi contenuti.
-source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
+exl-id: e68b09c5-4778-4932-8c40-84693db892fd
+source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2095'
 ht-degree: 0%
 
 ---
-
 
 # Modellazione dei contenuti per la creazione di AEM con progetti Edge Delivery Services {#content-modeling}
 
@@ -351,7 +351,7 @@ Tutto il resto verrà visualizzato come testo normale.
 
 #### Comprimi campo {#field-collapse}
 
-Compressione campo è il meccanismo che consente di combinare più valori di campo in un singolo elemento semantico basato su una convenzione di denominazione che utilizza i suffissi `Title`, `Type`, `Alt`, e `Text` (distinzione maiuscole/minuscole). Qualsiasi proprietà che termina con uno qualsiasi di questi suffissi non sarà considerata un valore, ma piuttosto un attributo di un’altra proprietà.
+Compressione campo è il meccanismo che consente di combinare più valori di campo in un singolo elemento semantico basato su una convenzione di denominazione che utilizza i suffissi `Title`, `Type`, `MimeType`, `Alt`, e `Text` (distinzione maiuscole/minuscole). Qualsiasi proprietà che termina con uno qualsiasi di questi suffissi non sarà considerata un valore, ma piuttosto un attributo di un’altra proprietà.
 
 ##### Immagini {#image-collapse}
 
@@ -624,7 +624,13 @@ Assicurati che il foglio di calcolo sia aggiunto anche alla mappatura del percor
 
 ### Proprietà pagina {#page-properties}
 
-È inoltre possibile definire un modello di componente per i metadati della pagina, che verrà reso disponibile all’autore come scheda della finestra di dialogo delle proprietà della pagina di AEM Sites.
+Molte delle proprietà di pagina predefinite disponibili in AEM sono mappate ai rispettivi metadati di pagina in un documento. Ciò include, ad esempio `title`, `description`, `robots`, `canonical url` o `keywords`. Sono disponibili anche alcune proprietà specifiche per l’AEM:
+
+* `cq:lastModified` as `modified-time` in formato ISO8601
+* Ora dell&#39;ultima pubblicazione del documento come `published-time` in formato ISO8601
+* `cq:tags` as `cq-tags` come elenco separato da virgole degli ID tag.
+
+È inoltre possibile definire un modello di componente per i metadati di pagina personalizzati, che verrà reso disponibile all’autore come scheda della finestra di dialogo delle proprietà della pagina di AEM Sites.
 
 Per farlo, crea un modello di componente con l’ID `page-metadata`.
 
@@ -633,15 +639,10 @@ Per farlo, crea un modello di componente con l’ID `page-metadata`.
   "id": "page-metadata",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "theme",
       "label": "Theme"
     }
   ]
 }
 ```
-
-Alcuni nomi di campo hanno un significato speciale e verranno ignorati durante la visualizzazione dell’interfaccia utente della finestra di dialogo per la creazione:
-
-* **`cq:tags`** - Per impostazione predefinita, `cq:tags` non vengono aggiunti ai metadati. Aggiungendoli al `page-metadata` il modello aggiungerà gli ID tag come elenco separato da virgole come `tags` tag meta nella parte superiore.
-* **`cq:lastModified`** - `cq:lastModified` aggiungerà i dati come `last-modified` alla testa.
