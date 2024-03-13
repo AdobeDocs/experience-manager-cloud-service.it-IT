@@ -4,7 +4,7 @@ description: Questa esercitazione ti aiuta a iniziare con un nuovo progetto Adob
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 0%
@@ -124,7 +124,7 @@ Per copiare il contenuto di esempio nella tua cartella di contenuto e indirizzar
       Se si utilizza Microsoft SharePoint, il percorso della cartella utilizza il formato seguente:
 
       ```HTML
-      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
       ```
 
       Ad esempio:
@@ -271,7 +271,7 @@ Congratulazioni! L&#39;ambiente di sviluppo locale è stato configurato e le mod
 
 Se disponi di un progetto AEM esistente, puoi integrare il blocco di Forms adattivo nel progetto corrente per iniziare a creare i moduli.
 
->
+>[!NOTE]
 >
 >
 > Questo passaggio si applica ai progetti generati con [Piastra riscaldante AEM](https://github.com/adobe/aem-boilerplate). Se hai creato il progetto AEM utilizzando [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), puoi saltare questo passaggio.
