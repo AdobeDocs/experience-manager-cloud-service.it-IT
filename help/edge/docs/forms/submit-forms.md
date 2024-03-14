@@ -2,10 +2,8 @@
 title: Preparare il foglio di calcolo per accettare i dati
 description: Crea moduli potenti più rapidamente utilizzando fogli di calcolo e campi Forms Block Adaptive.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 1%

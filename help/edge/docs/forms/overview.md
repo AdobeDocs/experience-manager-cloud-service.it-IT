@@ -2,12 +2,10 @@
 title: Panoramica dei Edge Delivery Services AEM Forms
 description: I Edge Delivery Services AEM Forms sono stati progettati per offrire prestazioni di picco, consentendoti di immaginare il futuro della raccolta dati semplificata e del coinvolgimento degli utenti.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -20,7 +18,7 @@ Questi servizi consentono di:
 
 * **Crea esperienze di iscrizione con strumenti a tua scelta:** Aumentare l’efficienza di authoring disaccoppiando le origini di contenuto. È possibile utilizzare sia l’authoring basato su documenti (Microsoft SharePoint o Google Drive) che l’authoring AEM (Adaptive Forms Editor). È possibile utilizzare più origini di contenuto nello stesso sito moduli e utilizzare gli strumenti di authoring preferiti, ad esempio Microsoft Excel, Google Sheets o Adaptive Forms Editor.
 
-* **Offri esperienze di registrazione digitale eccezionali:** Fornisci esperienze di registrazione digitale da caricare ed eseguire rapidamente il rendering. Tempi di caricamento più rapidi e un’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento e conversione dei moduli.
+* **Offri esperienze di registrazione digitale eccezionali:** Fornisci esperienze di registrazione digitale che consentono di caricare ed eseguire il rendering in modo rapido e continuo monitorando le prestazioni dei moduli tramite il monitoraggio degli utenti reali (RUM, Real User Monitoring). Tempi di caricamento più rapidi e un’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento e conversione dei moduli.
 
 * **Usa set di strumenti intuitivo per gli sviluppatori:** I Edge Delivery Services AEM Forms utilizzano plain HTML, modern CSS e JavaScript vanilla per creare esperienze eccezionali, evitando la curva di apprendimento ripida di un framework specifico. Uno sviluppatore con competenze di base per lo sviluppo web può personalizzare e creare facilmente componenti ed esperienze di moduli. Non è necessario attendere l’esecuzione di una pipeline, è sufficiente archiviare il codice in GitHub e le modifiche sono live.
 
@@ -62,6 +60,7 @@ L’authoring basato su documenti consente di creare moduli utilizzando strument
 * Integrazione di Google reCAPTCHA per la protezione da posta indesiderata.
 * Possibilità di creare componenti modulo personalizzati per esigenze specifiche.
 * Inviare i dati del modulo direttamente a Microsoft Excel o Google Sheets o indirizzi e-mail.
+* Monitorare le prestazioni dei moduli tramite il monitoraggio degli utenti reali (RUM, Real User Monitoring)
 
 #### Funzioni di authoring AEM
 
@@ -92,9 +91,6 @@ I seguenti diagrammi illustrano il processo di creazione, pubblicazione e invio 
 
 ![Authoring AEM](/help/edge/assets/aem-authoring-workflow.png)
 
-
-
-
 ## Inizia a creare i moduli
 
 * [Introduzione ai Edge Delivery Services AEM Forms](/help/edge/docs/forms/tutorial.md)
@@ -105,20 +101,7 @@ I seguenti diagrammi illustrano il processo di creazione, pubblicazione e invio 
 * [Aggiungere sezioni ripetibili a un modulo&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [Monitoraggio degli utenti in tempo reale](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
