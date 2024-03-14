@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Ad esempio, i moduli vengono creati direttamente in Microsoft Excel o nei fogli 
 
 Il diagramma seguente illustra come modificare i moduli in Microsoft Excel o Google Sheets (authoring basato su documenti) e pubblicarli in Edge Delivery Services. Mostra anche il metodo di pubblicazione dell’AEM utilizzando l’editor di Forms adattivo (AEM Authoring).
 
-![Architettura di Edge Delivery](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![Pubblica in Edge Delivery Services e AEM](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
 I Edge Delivery Services AEM Forms utilizzano GitHub per consentire ai clienti di gestire e distribuire il codice direttamente dall’archivio GitHub. Ad esempio, è possibile scrivere moduli in [Fogli Google](/help/edge/docs/forms/create-forms.md) o [Microsoft Excel](/help/edge/docs/forms/create-forms.md) e i componenti dei moduli possono essere sviluppati utilizzando CSS e JavaScript in un archivio GitHub.
 
