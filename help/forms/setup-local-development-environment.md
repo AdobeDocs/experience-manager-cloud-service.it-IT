@@ -4,9 +4,9 @@ description: Configurare un ambiente di sviluppo locale per Adobe Experience Man
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
+source-git-commit: e84d3ad2d7b549092ab7c616bead2f14f59be8c9
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2723'
 ht-degree: 1%
 
 ---
@@ -220,10 +220,21 @@ AEM Forms as a Cloud Service fornisce un ambiente SDK basato su docker per sempl
 
 1. Apri il prompt dei comandi e passa alla `aem-forms-addon-native-<version>` cartella.
 
-1. Assicurati che l’istanza locale di AEM Author sia operativa. Esegui il seguente comando per avviare l&#39;SDK:
+1. Assicurati che l’istanza locale di AEM Author sia operativa. Esegui i seguenti comandi per avviare l&#39;SDK:
 
-   * (su Microsoft® Windows) `sdk.bat start`
-   * (su Linux® o Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+   * Su Microsoft® Windows
+
+     ```shell
+     sdk.bat start
+     ```
+
+
+   * Linux® o Apple macOS
+
+   ```Shell
+       export AEM_HOME=[local AEM Author installation]
+       ./sdk.sh start
+   ```
 
    >[!NOTE]
    >
