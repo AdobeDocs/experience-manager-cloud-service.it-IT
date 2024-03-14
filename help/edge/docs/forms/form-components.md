@@ -1,16 +1,16 @@
 ---
-title: Componenti e proprietà del modulo
+title: Componenti del blocco di modulo adattivo e relative proprietà
 description: Questo documento fornisce una panoramica dei componenti del modulo e delle relative proprietà disponibili in AEM Forms Edge Delivery Service.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 3%
 
 ---
 
-# Componenti e proprietà del modulo: servizio di distribuzione Edge di AEM Forms
+# Componenti del blocco di modulo adattivo e relative proprietà
 
 I servizi di distribuzione Edge di AEM Forms consentono di creare moduli interattivi e di facile utilizzo utilizzando vari componenti. Questi componenti sono adatti a diversi tipi di raccolta dati e possono essere facilmente personalizzati in base a esigenze specifiche.
 

@@ -3,14 +3,15 @@ title: Personalizzare tema e stile per un AEM Forms Edge Delivery Services Form
 description: Personalizzare tema e stile per un AEM Forms Edge Delivery Services Form
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
 
-# Applicazione di stili ai campi modulo
+
+# Personalizzare l’aspetto dei moduli
 
 Forms è fondamentale per l’interazione degli utenti sui siti web, consentendo loro di inserire dati. È possibile utilizzare i fogli di stile CSS per applicare uno stile ai campi di un modulo, migliorando la presentazione visiva dei moduli e l&#39;esperienza utente.
 
@@ -203,7 +204,7 @@ Per i menu a discesa, il `select` viene utilizzato al posto di un elemento `inpu
 
 +++ Selettori CSS per componente a discesa
 
-Nel CSS seguente sono elencati alcuni esempi di selettori CSS per i componenti del menu a discesa.
+Di seguito sono elencati alcuni esempi di selettori CSS per i componenti a discesa.
 
 ```CSS
 /* Target the outer wrapper */
@@ -262,7 +263,7 @@ Nel CSS seguente sono elencati alcuni esempi di selettori CSS per i componenti d
 
 Analogamente ai componenti a discesa, i gruppi radio dispongono di una propria struttura HTML e CSS:
 
-+++ Struttura HTML gruppo pulsanti di scelta
++++ Struttura HTML del gruppo pulsanti di scelta
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -300,7 +301,7 @@ Analogamente ai componenti a discesa, i gruppi radio dispongono di una propria s
 
 +++
 
-+++ Selettori CSS per componente a discesa
++++ Selettori CSS per gruppi di pulsanti di scelta
 
 * Targeting del set di campi
 
@@ -334,7 +335,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
 
 ### Gruppi di caselle di controllo
 
-+++ Casella di selezione Struttura HTML
++++ Struttura HTML del gruppo di caselle di controllo
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -370,7 +371,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
 
 +++
 
-+++ Esempi di selettori CSS per gruppi di caselle di controllo e radio**
++++ Selettori CSS per gruppi di caselle di controllo
 
 * Targeting dell’involucro esterno: questi selettori eseguono il targeting dei contenitori più esterni dei gruppi di caselle di selezione e radio, consentendo di applicare stili generali all’intera struttura del gruppo. Questa opzione è utile per impostare la spaziatura, l&#39;allineamento o altre proprietà relative al layout.
 
@@ -798,7 +799,7 @@ Questi selettori consentono di applicare uno stile a varie parti del componente 
 
 Puoi utilizzare i selettori CSS per eseguire il targeting di tipi di campo specifici e applicare gli stili in modo coerente.
 
-**Struttura HTML**
++++ Struttura HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -837,8 +838,10 @@ Puoi utilizzare i selettori CSS per eseguire il targeting di tipi di campo speci
 * Ogni campo ha un’etichetta corrispondente, un elemento di input e potenziali elementi aggiuntivi come segnaposto e descrizioni.
 
 
++++
 
-**Esempio di selettori CSS**
+
++++ Esempio di selettori CSS
 
 ```CSS
 /* Target all text input fields */
@@ -853,13 +856,13 @@ Puoi utilizzare i selettori CSS per eseguire il targeting di tipi di campo speci
 }
 ```
 
-
++++
 
 ### Stile basato sul nome del campo
 
 Per applicare stili univoci, puoi anche eseguire il targeting di singoli campi per nome.
 
-**Struttura HTML**
++++ Struttura HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -883,7 +886,9 @@ Per applicare stili univoci, puoi anche eseguire il targeting di singoli campi p
 </div>
 ```
 
-**Esempio di selettore CSS**
++++
+
++++ Esempio di selettore CSS
 
 ```CSS
 .field-otp input {
@@ -891,7 +896,11 @@ Per applicare stili univoci, puoi anche eseguire il targeting di singoli campi p
 }
 ```
 
+
+
 Questo CSS esegue il targeting di tutti gli elementi di input che si trovano all’interno di un elemento che ha la classe `field-otp`. La struttura HTML del modulo segue le convenzioni del blocco Forms adattivo. Ciò implica che esiste un contenitore contrassegnato con la classe &quot;field-otp&quot; che contiene il campo con il nome &quot;otp&quot;.
+
++++
 
 ## Consulta anche
 

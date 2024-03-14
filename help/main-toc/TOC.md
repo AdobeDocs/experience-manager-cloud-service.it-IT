@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1104afb8a990c04e7d6bc2f5690a887218598f4b
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '4794'
+source-wordcount: '4813'
 ht-degree: 94%
 
 ---
@@ -826,21 +826,21 @@ ht-degree: 94%
       + [Panoramica](/help/edge/docs/forms/overview.md)
       + Introduzione {#getting-started-eds-forms}
          + [Guida introduttiva](/help/edge/docs/forms/tutorial.md)
-         + [Creare e visualizzare in anteprima un modulo](/help/edge/docs/forms/create-forms.md)
-         + [Abilita modulo per l’invio di dati](/help/edge/docs/forms/submit-forms.md)
-         + [Pubblicare un modulo nella pagina Sites](/help/edge/docs/forms/publish-forms.md)
+         + [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+         + [Imposta i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati&#x200B;](/help/edge/docs/forms/submit-forms.md)
+         + [Pubblicare il modulo e iniziare a raccogliere i dati](/help/edge/docs/forms/publish-forms.md)
          + [Aggiungere convalide ai campi modulo](/help/edge/docs/forms/validate-forms.md)
-         + [Modificare i temi e lo stile del modulo](/help/edge/docs/forms/style-theme-forms.md)
+         + [Personalizzare l&#39;aspetto dei moduli&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [Utilizzare le regole per aggiungere un comportamento dinamico a un modulo](/help/edge/docs/forms/rules-forms.md)
          + [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
       + Funzionalità {#advanced-features-eds-forms}
          + [Frammenti di modulo](/help/edge/docs/forms/form-fragments.md)
-         + [Sezioni ripetibili](/help/edge/docs/forms/repeatable-forms.md)
+         + [Aggiungere sezioni ripetibili a un modulo&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
          + [Traduzione](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componenti personalizzati](/help/edge/docs/forms/custom-components-forms.md)
       + Riferimenti {#forms-references}
-         + [Elenco dei componenti del blocco di modulo](/help/edge/docs/forms/form-components.md)
+         + [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
    + Risorse per Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utilizzo di Sidekick](/help/edge/docs/sidekick.md)

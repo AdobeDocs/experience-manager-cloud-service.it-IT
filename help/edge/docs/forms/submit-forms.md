@@ -3,14 +3,14 @@ title: Preparare il foglio di calcolo per accettare i dati
 description: Crea moduli potenti più rapidamente utilizzando fogli di calcolo e campi Forms Block Adaptive.
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1001'
 ht-degree: 1%
 
 ---
 
-# Preparare il foglio di calcolo per accettare i dati
+# Imposta i fogli Google o i file Microsoft Excel per iniziare ad accettare i dati
 
 
 Una volta [ha creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/create-forms.md), è ora di abilitare il foglio di calcolo corrispondente per iniziare a ricevere i dati. Puoi abilitare manualmente il foglio di calcolo per accettare i dati oppure utilizzare le API amministratore per consentire a un foglio di calcolo di accettare i dati.

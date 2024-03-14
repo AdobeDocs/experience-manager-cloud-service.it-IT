@@ -3,14 +3,14 @@ title: Pubblicare un modulo Edge Delivery Services di AEM Forms
 description: Pubblicare un modulo Edge Delivery Services di AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
 
-# Pubblicare il modulo
+# Pubblicare il modulo e iniziare a raccogliere i dati
 
 Quando si è pronti a condividere il modulo con i clienti per la raccolta o l&#39;invio dei dati, è sufficiente pubblicarlo, rendendolo facilmente disponibile per l&#39;utilizzo da parte dei clienti.
 
