@@ -2,10 +2,10 @@
 title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
-workflow-type: ht
-source-wordcount: '3376'
-ht-degree: 100%
+source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
+workflow-type: tm+mt
+source-wordcount: '3382'
+ht-degree: 98%
 
 ---
 
@@ -287,7 +287,7 @@ Di seguito sono riportati alcuni esempi di regole. Per esempi di regole del limi
 
 **Esempio 1**
 
-Questa regola blocca le richieste provenienti da IP 192.168.1.1:
+Questa regola blocca le richieste provenienti da **IP 192.168.1.1**:
 
 ```
 kind: "CDN"
@@ -426,7 +426,7 @@ I limiti di tasso vengono calcolati per POP CDN. Ad esempio, supponiamo che i PO
 
 **Esempio 1**
 
-Questa regola blocca un client per 5 m quando supera le 100 rich/sec (per POP CDN) negli ultimi 60 sec:
+Questa regola blocca un client per 5 m quando supera una media di 60 req/sec (per POP CDN) negli ultimi 10 sec:
 
 ```
 kind: "CDN"
@@ -451,7 +451,7 @@ data:
 
 **Esempio 2**
 
-Blocca le richieste per 60 s nel percorso /critical/resource quando supera le 100 rich/sec (per POP CDN) negli ultimi 60 secondi:
+Blocca le richieste nel percorso /critical/resource per 60 secondi quando supera una media di 100 req/sec (per POP CDN) negli ultimi 60 secondi:
 
 ```
 kind: "CDN"
