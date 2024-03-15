@@ -3,10 +3,10 @@ title: Configurazione delle pipeline di produzione
 description: Scopri come configurare le pipeline di produzione per generare e distribuire il codice negli ambienti di produzione.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 72%
+source-wordcount: '1338'
+ht-degree: 67%
 
 ---
 
@@ -93,25 +93,13 @@ Per completare la configurazione della pipeline di produzione del codice full st
 
    ![Codice full stack](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Per passare alla scheda **Audit dell’esperienza** e definire i percorsi da includere sempre nell’audit dell’esperienza, fai clic su **Continua**.
+1. Tocca o fai clic su **Continua** per passare al **Audit dell’esperienza** in cui è possibile definire i percorsi da includere sempre nell’audit dell’esperienza.
 
    ![Aggiunta dell’audit dell’esperienza](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
-1. Fornisci un percorso da includere nell’audit dell’esperienza.
+1. Fornisci percorsi da includere nell’audit dell’esperienza.
 
-   * I percorsi delle pagine devono iniziare con `/`.
-   * Ad esempio, se desideri includere `https://wknd.site/us/en/about-us.html` nell’audit dell’esperienza, inserisci il percorso `/us/en/about-us.html`.
-
-   ![Definizione di un percorso per l’audit dell’esperienza](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
-
-1. Facendo clic su **Aggiungi pagina**, il percorso viene completato automaticamente con l’indirizzo dell’ambiente e aggiunto alla tabella dei percorsi.
-
-   ![Salvataggio del percorso nella tabella](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
-
-1. Continua ad aggiungere i percorsi che desideri ripetendo i due passaggi precedenti.
-
-   * Puoi aggiungere fino a un massimo di 25 percorsi.
-   * Se non definisci alcun percorso, per impostazione predefinita la pagina Home del sito viene inclusa nell’audit dell’esperienza.
+   * Consulta il documento [Test di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) per i dettagli.
 
 1. Per salvare la pipeline, fai clic su **Salva**.
 

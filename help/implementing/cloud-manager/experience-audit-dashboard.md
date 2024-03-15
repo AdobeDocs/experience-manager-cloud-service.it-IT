@@ -2,9 +2,9 @@
 title: Dashboard di Experience Audit
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO tramite un’interfaccia dashboard chiara e informativa.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 390faed91889e16d06c5024eaf1b4b1ad1427444
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1958'
 ht-degree: 7%
 
 ---
@@ -40,7 +40,7 @@ L’audit dell’esperienza è disponibile per Cloud Manager:
 
 * Pipeline di produzione dei siti, per impostazione predefinita
 * Sviluppo di pipeline full stack, facoltativamente
-* Pipeline front-end, facoltativamente
+* Sviluppo di pipeline front-end, facoltativamente
 
 Consulta la [Sezione Configurazione](#configuration) per ulteriori informazioni su come configurare il controllo di audit per gli ambienti opzionali.
 

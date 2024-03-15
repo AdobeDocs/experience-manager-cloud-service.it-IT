@@ -3,10 +3,10 @@ title: Configurazione delle pipeline non di produzione
 description: Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 77%
+source-wordcount: '1371'
+ht-degree: 73%
 
 ---
 
@@ -145,10 +145,16 @@ I passaggi per completare la creazione della pipeline di distribuzione non di pr
    * **Ramo Git**: questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
       * Immetti i primi caratteri del nome del ramo: la funzione di completamento automatico di questo campo. trova i rami corrispondenti che puoi selezionare.
    * **Posizione codice**: definisce il percorso nel ramo dell’archivio selezionato dal quale la pipeline deve recuperare il codice.
+   * **Pipeline** - Per le pipeline front-end non di produzione, è possibile abilitare **[Audit dell’esperienza.](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
-   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Fai clic su **Salva**.
+1. Se hai abilitato Audit dell’esperienza, tocca o fai clic su **Continua** per passare al **Audit dell’esperienza** in cui è possibile definire i percorsi da includere sempre nell’audit dell’esperienza.
+
+   * Se hai abilitato **Audit dell’esperienza**, consulta il documento [Audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) per informazioni dettagliate su come configurare.
+   * In caso contrario, salta questo passaggio.
+
+1. Tocca o fai clic su **Salva** per salvare la pipeline.
 
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
 
