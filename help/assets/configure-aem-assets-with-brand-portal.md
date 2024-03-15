@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 12%
+source-wordcount: '2568'
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 12%
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=it) |
 | AEM as a Cloud Service | Questo articolo |
 
-La configurazione di Adobe Experience Manager Assets Brand Portal consente di pubblicare le risorse del marchio approvate da Adobe Experience Manager Assets as a [!DNL Cloud Service] a Brand Portal e distribuirle agli utenti Brand Portal.
+La configurazione di Adobe Experience Manager Assets Brand Portal consente di pubblicare risorse del brand approvate da Adobe Experience Manager Assets as a [!DNL Cloud Service] a Brand Portal e distribuirle agli utenti Brand Portal.
 
 ## Attivare Brand Portal con Cloud Manager {#activate-brand-portal}
 
@@ -67,7 +67,7 @@ Per attivare Brand Portal su Experience Manager Assets as a sono necessari i seg
 >
 >Non modificare le impostazioni generate automaticamente.
 
-**Consulta anche**:
+**Vedi anche**:
 
 * [Aggiungere utenti e ruoli in Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
@@ -210,13 +210,13 @@ Per configurare Experience Manager Assets con Brand Portal è necessario quanto 
 
 * Experience Manager Assets as a [!DNL Cloud Service] istanza
 * URL tenant Brand Portal
-* Un utente con privilegi di amministratore di sistema nell’organizzazione IMS del tenant di Brand Portal
+* Utente con privilegi di amministratore di sistema nell’organizzazione IMS del tenant Brand Portal
 
-## Creare la configurazione {#create-new-configuration}
+## Crea configurazione {#create-new-configuration}
 
 Per configurare Experience Manager Assets con Brand Portal, effettua le seguenti operazioni nella sequenza specificata.
 
-1. [Recuperare il certificato pubblico](#public-certificate)
+1. [Ottieni certificato pubblico](#public-certificate)
 1. [Creare la connessione dell’account di servizio (JWT)](#createnewintegration)
 1. [Configurare l’account IMS](#create-ims-account-configuration)
 1. [Configurare il servizio cloud](#configure-the-cloud-service)
@@ -230,7 +230,7 @@ La configurazione IMS prevede due passaggi:
 * [Recuperare il certificato pubblico](#public-certificate)
 * [Configurare l’account IMS](#create-ims-account-configuration)
 
-### Recuperare il certificato pubblico {#public-certificate}
+### Ottieni certificato pubblico {#public-certificate}
 
 La chiave pubblica (certificato) autentica il profilo sulla console Adobe Developer.
 
@@ -294,7 +294,8 @@ Per generare le credenziali dell’account di servizio e il payload JWT, effettu
 
    >[!NOTE]
    >
-   >Puoi visualizzare le credenziali ed eseguire azioni quali generare token JWT, copiare i dettagli delle credenziali, recuperare il segreto client e così via.
+   >* Puoi visualizzare le credenziali ed eseguire azioni quali generare token JWT, copiare i dettagli delle credenziali, recuperare il segreto client e così via.
+   >* Attualmente, è supportato solo il tipo di credenziali dell’account di servizio di Developer Console (JWT) di Adobe. Non utilizzare il tipo di credenziali da server a server OAuth fino a quando non sarà supportato a metà aprile. Ulteriori informazioni all&#39;indirizzo [Deprecazione delle credenziali JWT nella console Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. Dalla sezione **[!UICONTROL Credenziali client]** , copia il **[!UICONTROL ID client]**.
 
@@ -347,7 +348,7 @@ Ora puoi utilizzare l’ID client (chiave API), il segreto client e il payload J
 
 Verifica di aver eseguito i seguenti passaggi:
 
-* [Recuperare il certificato pubblico](#public-certificate)
+* [Ottieni certificato pubblico](#public-certificate)
 * [Creare la connessione dell’account di servizio (JWT)](#createnewintegration)
 
 Per configurare l’account IMS, effettua le seguenti operazioni.
@@ -375,7 +376,7 @@ Per configurare l’account IMS, effettua le seguenti operazioni.
 
 >[!CAUTION]
 >
->Puoi disporre di una sola configurazione IMS.
+>Devi disporre di una sola configurazione IMS.
 >
 >Verifica che la configurazione IMS superi il controllo di integrità. Se la configurazione non supera questa verifica, non è valida. È necessario eliminarla e creare un&#39;altra configurazione valida.
 
@@ -397,7 +398,7 @@ Per configurare il servizio cloud Brand Portal, effettua le seguenti operazioni:
 
    ![Finestra di dialogo Configurazione Brand Portal.](assets/create-cloud-service.png)
 
-1. Fai clic su **[!UICONTROL Salva e chiudi]**. Viene creata la configurazione cloud.
+1. Clic **[!UICONTROL Salva e chiudi]**. Viene creata la configurazione cloud.
 
    Il tuo Experience Manager Assets as a [!DNL Cloud Service] l’istanza è ora configurata con il tenant Brand Portal.
 
@@ -410,8 +411,8 @@ Gli IP in uscita sono i seguenti:
 | **Regione** | **IP in uscita** |
 |--- |--- |
 | ND | 130.248.160.68, 20.94.203.130 |
-| EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212 |
-| APAC | 63.140.44.54 |
+| EMEA | 51 132 146 75, 130 248 244 202, 130 248 244 203, 130 248 244 204, 130 248 210, 130 248 210, 130 248 244 211, 130 244 8 244 212 |
+| APAC | 63 140 44 54 |
 
 <!--
 ### Test configuration {#test-configuration}
