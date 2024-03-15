@@ -3,10 +3,10 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3a86639d9203fff3c72e63baa8d1499b18a4539f
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+source-git-commit: 4fdca70b3a711f747e44ac2a6c1d117ac990d49b
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 91%
 
 ---
 
@@ -108,6 +108,15 @@ I clienti Dynatrace possono monitorare il loro utilizzo di AEM. [Scopri come](/h
 ### Supporto RDE per il codice front-end tramite i temi e i modelli del sito: programma per i primi utilizzatori {#rde-frontend-early-adopter}
 
 Gli [ambienti di sviluppo rapido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) ora supportano il codice front-end basato su [temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelli di sito](/help/sites-cloud/administering/site-creation/site-templates.md), per i primi utilizzatori. Con gli RDE, questa operazione viene eseguita utilizzando una direttiva della riga di comando, anziché una [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Invia un’e-mail all’indirizzo **aemcs-rde-support@adobe.com** per provarlo e fornire un feedback.
+
+### Programma di adozione anticipata configurazione CDN {#cdn-config-early-adopter}
+
+Oltre agli ultimi [Regole filtro traffico](/help/security/traffic-filter-rules-including-waf.md), che include le regole WAF (Web Application Firewall) facoltative, esiste l’opportunità di utilizzare la pipeline di configurazione per dichiarare e distribuire altri tipi di configurazione CDN. Iscriviti al programma di adozione anticipata tramite e-mail **aemcs-cdn-config-adopter@adobe.com** per accedere a:
+* 301/302 reindirizzamenti lato client
+* trasferimento di richieste al server Edge di a origini arbitrarie
+* Trasformazioni URL
+* impostazione o modifica delle intestazioni di richiesta o risposta
+* pagine di errore personalizzate quando la rete CDN non può raggiungere l’AEM
 
 ## Cloud Manager {#cloud-manager}
 
