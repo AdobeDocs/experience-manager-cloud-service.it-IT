@@ -3,9 +3,9 @@ title: Componenti del blocco di modulo adattivo e relative proprietà
 description: Questo documento fornisce una panoramica dei componenti del modulo e delle relative proprietà disponibili in AEM Forms Edge Delivery Service.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
+source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '1006'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,6 @@ Ogni componente del modulo include varie proprietà che consentono di controllar
 | Proprietà | Componenti applicabili | Dettagli |
 |--------------|------------------------------|----------------------------------------------------------------------|
 | Tipo | Tutti i bundle  | Specifica il tipo di componente. Questa proprietà determina il comportamento e l&#39;aspetto del campo di input. Ad esempio, per gli input di testo, il tipo può essere &quot;text&quot;, &quot;email&quot; per gli input di e-mail, &quot;password&quot; per gli input di password. Blocco Forms adattivo supportato  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">tutti i tipi di input HTML5 validi</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">seleziona</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">set di campi</a> come tipo. |
-| Tipo | Tutti i bundle  | Specifica il tipo di componente. Questa proprietà determina il comportamento e l&#39;aspetto del campo di input. Ad esempio, per gli input di testo, il tipo può essere &quot;text&quot;, &quot;email&quot; per gli input di e-mail, &quot;password&quot; per gli input di password. Blocco Forms adattivo supportato  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">tutti i tipi di input HTML5 validi</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">seleziona</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">set di campi</a> come tipo. |
 | Nome | Tutti | Identifica il componente per l’invio del modulo. L&#39;attributo name viene utilizzato quando i dati del modulo vengono inviati al server, associando l&#39;input dell&#39;utente a un campo specifico. |
 | Etichetta | Tutti | Fornisce informazioni contestuali agli utenti. L’etichetta è il testo visualizzato accanto al componente, che fornisce agli utenti istruzioni su quali informazioni inserire. |
 | Valore | Testo, password, e-mail, numero, intervallo, data e relative varianti (datetime-local, mese, settimana, ora), casella di controllo, radio, nascosto, invia, pulsante | Specifica il valore iniziale del componente. Per gli input di testo, l&#39;area di testo e gli elementi di selezione, questo è il testo o l&#39;opzione di default visualizzata. Per i componenti radio e casella di controllo, si tratta del valore/dati inviati quando vengono selezionati. L’attributo value è facoltativo ma deve essere considerato obbligatorio per gli input di caselle di controllo e radio. |
@@ -61,6 +60,10 @@ Ogni componente del modulo include varie proprietà che consentono di controllar
 | Opzioni | A discesa | Specifica le scelte per i menu a discesa. La proprietà options è un elenco di scelte per i menu a discesa separato da virgole che definisce le opzioni selezionabili visualizzate dall&#39;utente. |
 | Selezionato | Casella di selezione, Radio | Determina se il campo è selezionato per impostazione predefinita. L’attributo selected è una proprietà booleana utilizzata con gli input di caselle di controllo e radio. Se impostato su true, indica che il campo è selezionato per impostazione predefinita al caricamento del modulo. |
 | Set di campi | Tutti | Raggruppa i campi per creare sezioni visivamente distinte all’interno di un modulo. L’elemento set di campi raggruppa i campi correlati all’interno di un modulo, separandoli visivamente per migliorare l’organizzazione e l’esperienza utente. </br> Per organizzare un set di campi all’interno di un set di campi, utilizza semplicemente `fieldset` e specificarne l’attributo name. Nell’esempio seguente viene illustrato come i pulsanti di scelta sono racchiusi in un singolo set di campi per una migliore organizzazione. ![Esempio di set di campi](/help/edge/assets/fieldset-example.png) |
+| Ripetibile | Tutti | Una proprietà booleana per `fieldset` che indica che un particolare set di campi può essere ripetuto per `Min` e `Max` numero di volte. Il `Min` deve essere impostato su 1 o maggiore, non impostare il valore `Min` proprietà su 0. |
+| Espressione visibile | Tutti | Un&#39;espressione visibile si riferisce a una formula del foglio di calcolo, identificata dal tag &#39;=&#39;, utilizzata per controllare la visibilità di un campo. In questa formula, è possibile utilizzare solo la proprietà value di altri campi, consentendo una gestione semplice della visibilità dei campi all’interno del sistema. |
+| Espressione valore | Tutti | Un&#39;espressione di valore si riferisce a una formula del foglio di calcolo, identificata dal tag &#39;=&#39;, utilizzata per controllare il valore di un campo. In questa formula, è possibile utilizzare solo la proprietà value di altri campi, consentendo una gestione semplice del valore del campo all’interno del sistema. |
+
 
 ## Consulta anche
 
