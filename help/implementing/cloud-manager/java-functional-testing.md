@@ -2,10 +2,10 @@
 title: Java&trade; test funzionali
 description: Scopri come scrivere test funzionali Javaamp;amp;trade; per AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
-source-git-commit: e463979df1f705283f29d954f9869d85f0a96465
+source-git-commit: 641690f2eca17bbfb47360282e818b6902a36144
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 92%
+source-wordcount: '878'
+ht-degree: 94%
 
 ---
 
@@ -128,8 +128,8 @@ Assicurati che la dipendenza in `it.tests/pom.xml` è stato aggiornato.
 
 >[!NOTE]
 >
->Questa modifica sarà necessaria dopo il 6 aprile 2024.
->Se non si aggiorna la libreria di dipendenze, si verificheranno errori di pipeline nel passaggio &quot;Test funzionali personalizzato&quot;.
+>Questa modifica deve essere eseguita prima del 6 aprile 2024.
+>Se non si aggiorna la libreria di dipendenze, si verificheranno errori di pipeline nel passaggio &quot;Test funzionale personalizzato&quot;.
 
 ### Esecuzione locale dei test {#local-test-execution}
 
