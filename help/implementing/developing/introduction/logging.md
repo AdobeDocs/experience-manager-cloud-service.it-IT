@@ -2,9 +2,9 @@
 title: Registrazione per AEM as a Cloud Service
 description: Scopri come utilizzare la funzione di registrazione per AEM as a Cloud Service per configurare i parametri globali per il servizio di registrazione centrale, le impostazioni specifiche per i singoli servizi o come richiedere la registrazione dei dati.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
+source-git-commit: 97a1781f0a2d59d2bed7b03c7d4f045c81784f60
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '2797'
 ht-degree: 8%
 
 ---
@@ -79,7 +79,7 @@ Quando la registrazione WARN è attiva, vengono registrate solo le istruzioni ch
 <td>
 Produzione</td>
 <td>
-ERRORE</td>
+ERRORE </td>
 <td>
 Descrive le condizioni che indicano un errore e che devono essere risolte.<br>
 Quando la registrazione degli errori è attiva, vengono registrate solo le istruzioni che indicano errori. Le istruzioni del registro degli ERRORI indicano un problema grave che deve essere risolto il prima possibile.</td>
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service fornisce accesso ai registri CDN, utili per i casi d’uso, inclusa l’ottimizzazione del rapporto di hit della cache. Il formato di registro CDN non può essere personalizzato e non è possibile impostarlo su modalità diverse, ad esempio info, avvertenza o errore.
 
-La funzione di inoltro Splunk non supporta ancora i registri CDN.
+I registri CDN verranno inoltrati a Splunk per nuove richieste di ticket di supporto per l’inoltro Splunk. I clienti che hanno già abilitato l’inoltro Splunk potranno aggiungere i registri CDN in futuro.
 
 **Esempio**
 
