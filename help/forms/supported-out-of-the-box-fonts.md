@@ -1,23 +1,36 @@
 ---
-title: Adobe di supporto di font predefiniti per documenti di record e PDF
-description: Adobe di supporto di font predefiniti per documenti di record e PDF
+title: AEM Forms as a Cloud Service supporta font pronti all’uso per la generazione di PDF.
+description: AEM Forms as a Cloud Service supporta font predefiniti per documenti di record e PDF.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
+source-git-commit: e8e00d85e5526a3de3a210ee72df07d85bb7d1db
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
+# Font supportati per la generazione di PDF su Forms as a Cloud Service preconfigurati (OOTB)  {#ootb-supported-fonts-overview}
 
-# Font supportati per comunicazioni interattive e documenti di record
+AEM Forms as a Cloud Service offre diversi font incorporati supportati che possono essere utilizzati direttamente in [API di comunicazione](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Documento di record per i componenti core](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), e [Documento di record per i componenti di base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 
-AEM Forms offre diversi font incorporati che possono essere utilizzati facilmente nei file Document of Record e PDF.
+<!--
 
-È possibile utilizzare Forms as a Cloud Service Communications per combinare vari tipi di file, ad esempio modelli o PDF XDP, con dati XML per generare documenti PDF. È possibile manipolare i PDF combinando, ridisponendo o unendo file PDF o XDP. È inoltre possibile utilizzare il documento di record per archiviare i moduli e i contenuti AEM insieme in formato PDF. È inoltre possibile utilizzare tipi di carattere supportati o personalizzati per conferire ai PDF un aspetto specifico.
+AEM Forms as a Cloud Service offers various built-in fonts that can be seamlessly used within a Document of Record and PDF files for any file formats to generate PDF documents. Additionally, you can use supported fonts or custom fonts to give the PDFs a specific look and feel. The OOTB supported fonts are:
 
-## Caratteri supportati
+AEM Forms offers various OOTB supported fonts that can be seamlessly used within a Document of Recordhttps://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms] and communication APIs[]. The OOTB supported fonts are available for PDF generation in Forms as a Cloud Service for any use cases such as:
+
+* To combine a template (XFA or PDF) with customer data (XML) to generate documents in various formats ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-generation)).
+
+* To manipulate the PDFs by combining, rearranging, or merging PDF or XDP files ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-manipulation)).
+
+* To generate Document of Record to archive AEM forms and content together in PDF format ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms)).
+-->
+
+## Caratteri supportati predefiniti {#ootb-supported-fonts}
+
+L&#39;elenco dei font supportati dalla OOTB è:
 
 * AdobeArabic
 * AdobeFanHeitiStd
@@ -38,4 +51,6 @@ AEM Forms offre diversi font incorporati che possono essere utilizzati facilment
 * KozGoProVI
 * eurosign.ttf
 
-Oltre ai tipi di carattere citati, se è necessario includere altri tipi di carattere, [aggiungere caratteri personalizzati al Forms nell&#39;ambiente di Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts.html) con una licenza valida.
+
+Oltre ai tipi di carattere sopra indicati, è possibile utilizzare tipi di carattere personalizzati per conferire ai PDF un aspetto specifico. Per attivare i tipi di carattere personalizzati, [aggiungere font personalizzati all’ambiente as a Cloud Service di Forms](/help/forms/use-custom-fonts.md) con una licenza valida.
+
