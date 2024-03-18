@@ -1,16 +1,16 @@
 ---
-title: 'Query persistenti GraphQL: abilitazione della memorizzazione nella cache in Dispatcher'
+title: 'Query persistenti GraphQL: abilitazione della memorizzazione in cache in Dispatcher'
 description: Dispatcher è un livello di memorizzazione in cache e sicurezza davanti agli ambienti di pubblicazione Adobe Experience Manager. Puoi abilitare la memorizzazione nella cache per le query persistenti in AEM Headless.
 feature: Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
-source-git-commit: ea5b404e83c11f0057342bff22ba45e6b0ead124
+source-git-commit: 6bcbef1695b291c36e19e70db203a114a7e40e67
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 8%
+source-wordcount: '359'
+ht-degree: 11%
 
 ---
 
-# Query persistenti GraphQL: abilitazione della memorizzazione nella cache in Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
+# Query persistenti GraphQL: abilitazione della memorizzazione in cache in Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
 
 >[!CAUTION]
 >
@@ -42,15 +42,7 @@ Per abilitare la memorizzazione nella cache delle query persistenti, definisci l
 >
 >Quando il caching di Dispatcher è abilitato per le query persistenti utilizzando `Define CACHE_GRAPHQL_PERSISTED_QUERIES` un `ETag` L’intestazione viene aggiunta alla risposta dal Dispatcher.
 >
->Per impostazione predefinita, il `ETag` L’intestazione è configurata con la seguente direttiva:
->
->```
->FileETag MTime Size 
->```
->
->Tuttavia, questa impostazione può causare problemi se utilizzata nelle risposte alle query persistenti, perché non tiene conto di piccole modifiche nella risposta.
->
->Per ottenere singoli `ETag` calcoli su *ogni* risposta univoca `FileETag Digest` deve essere utilizzata nella configurazione di dispatcher:
+>Per ottenere singoli `ETag` calcolo dell’intestazione sulle query persistenti memorizzate nella cache (per *ogni* risposta univoca) `FileETag Digest` l’impostazione deve essere utilizzata nella configurazione dell’host virtuale di dispatcher (se non esiste già):
 >
 >```xml
 ><Directory />    
