@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
+source-git-commit: 2cb630203b818ae338fe6b7c2ff341c76e3a3958
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2566'
 ht-degree: 9%
 
 ---
@@ -295,7 +295,7 @@ Per generare le credenziali dell’account di servizio e il payload JWT, effettu
    >[!NOTE]
    >
    >* Puoi visualizzare le credenziali ed eseguire azioni quali generare token JWT, copiare i dettagli delle credenziali, recuperare il segreto client e così via.
-   >* Attualmente, è supportato solo il tipo di credenziali dell’account di servizio di Developer Console (JWT) di Adobe. Non utilizzare il tipo di credenziali da server a server OAuth fino a quando non sarà supportato a metà aprile. Ulteriori informazioni all&#39;indirizzo [Deprecazione delle credenziali JWT nella console Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+   >* Attualmente, è supportato solo il tipo di credenziali dell’account di servizio di Developer Console (JWT) di Adobe. Non utilizzare il `OAuth Server-to-Server` tipo di credenziali fino a quando non sarà supportato a metà aprile. Ulteriori informazioni all&#39;indirizzo [Deprecazione delle credenziali JWT nella console Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. Dalla sezione **[!UICONTROL Credenziali client]** , copia il **[!UICONTROL ID client]**.
 
