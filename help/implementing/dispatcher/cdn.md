@@ -3,10 +3,10 @@ title: CDN in AEM as a Cloud Service
 description: Scopri come utilizzare la rete CDN gestita dall’AEM e come indirizzare la tua rete CDN alla rete CDN gestita dall’AEM.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 25%
+source-wordcount: '1118'
+ht-degree: 23%
 
 ---
 
@@ -40,6 +40,14 @@ Per ulteriori informazioni, vedi [Gestione degli elenchi IP consentiti](/help/im
 >
 >Solo le richieste provenienti dagli IP consentiti vengono gestite da CDN gestita dall’AEM. Se punti la tua rete CDN alla rete CDN gestita dall’AEM, assicurati che gli IP della tua rete CDN siano inclusi nel inserisco nell&#39;elenco Consentiti di.
 
+### Configurazione del traffico sulla rete CDN {#cdn-configuring-cloud}
+
+Le regole per configurare il traffico e i filtri CDN possono essere dichiarate in un file di configurazione e distribuite nella CDN utilizzando [Pipeline di configurazione di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Per ulteriori dettagli, consulta [Configurazione del traffico sulla rete CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) e [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md).
+
+### Configurazione delle pagine di errore CDN {#cdn-error-pages}
+
+È possibile configurare una pagina di errore CDN per ignorare la pagina predefinita senza marchio trasmessa al browser nel raro caso in cui non sia possibile raggiungere l’AEM. Per ulteriori dettagli, consulta [Configurazione delle pagine di errore CDN](/help/implementing/dispatcher/cdn-error-pages.md).
+
 ## La CDN del cliente punta alla CDN gestita dall’AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
@@ -59,8 +67,8 @@ Istruzioni di configurazione:
 
 1. Puntare la CDN all’ingresso della CDN Adobe come dominio di origine. Esempio: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Impostare SNI sull&#39;ingresso della rete CDN in Adobe.
-1. Imposta l’intestazione Host sul dominio di origine. Esempio: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. Imposta il `X-Forwarded-Host` con il nome di dominio in modo che l’AEM possa determinare l’intestazione dell’host. Esempio: `X-Forwarded-Host:example.com`.
+1. Imposta l’intestazione Host sul dominio di origine. Ad esempio: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Imposta il `X-Forwarded-Host` con il nome di dominio in modo che l’AEM possa determinare l’intestazione dell’host. Ad esempio: `X-Forwarded-Host:example.com`.
 1. Imposta `X-AEM-Edge-Key`. Il valore deve provenire da Adobe.
 
    * Necessario affinché il CDN Adobe possa convalidare l’origine delle richieste e trasmettere `X-Forwarded-*` intestazioni per l’applicazione AEM. Ad esempio:`X-Forwarded-For` viene utilizzato per determinare l’IP del client. Pertanto, è responsabilità del chiamante fidato (ovvero, la rete CDN gestita dal cliente) garantire la correttezza del `X-Forwarded-*` intestazioni (vedi la nota seguente).
