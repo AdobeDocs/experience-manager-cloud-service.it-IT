@@ -2,10 +2,10 @@
 title: Utilizzo dei fogli di calcolo per gestire i dati tabulari
 description: Scopri come utilizzare i fogli di calcolo per gestire i dati tabulari per vari valori, come metadati e reindirizzamenti per il sito Edge Delivery Services dell’AEM.
 feature: Edge Delivery Services
-source-git-commit: 0fa88453a7d7c58a3ccb2a4baf7d2b143acf7ad5
+source-git-commit: f872ab4eb891ab4aa634e88c76eedeb0f13cb285
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 2%
+source-wordcount: '958'
+ht-degree: 1%
 
 ---
 
@@ -81,25 +81,9 @@ In questo esempio verrà creato un foglio di calcolo per gestire i reindirizzame
    * Se necessario, l’editor aggiunge nuove righe al foglio di calcolo.
    * Per eliminare o spostare una riga, utilizzare **Elimina** alla fine di ogni riga e le maniglie di trascinamento all&#39;inizio di ogni riga, rispettivamente.
 
-1. Al termine della definizione dei reindirizzamenti, chiudi la scheda e torna a **Sites** console.
+## Pubblicazione di un foglio di calcolo paths.json {#paths-json}
 
-1. Tocca o fai clic per selezionare il foglio di calcolo dei reindirizzamenti creato nella console, quindi tocca o fai clic **Pubblicazione rapida** nella barra delle azioni per pubblicare il foglio di calcolo.
-
-   ![Selezionare il foglio di calcolo nella console Sites](assets/tabular-data/tabular-data-select-publish.png)
-
-1. In **Pubblicazione rapida** , tocca o fai clic su **Pubblica**.
-
-   ![Conferma pubblicazione](assets/tabular-data/tabular-data-quick-publish.png)
-
-1. Un banner conferma la pubblicazione.
-
-   ![Conferma banner della pubblicazione](assets/tabular-data/tabular-data-publish-banner.png)
-
-Il foglio di calcolo dei reindirizzamenti ora è pubblicato e accessibile al pubblico.
-
-## Aggiornare paths.json {#paths-json}
-
-Affinché l’AEM possa utilizzare i dati nel foglio di calcolo, è inoltre necessario aggiornare `paths.json` del progetto.
+Affinché l’AEM possa pubblicare i dati nel foglio di calcolo, è inoltre necessario aggiornare `paths.json` del progetto.
 
 1. Apri la directory principale del progetto in GitHub.
 
@@ -122,7 +106,21 @@ Affinché l’AEM possa utilizzare i dati nel foglio di calcolo, è inoltre nece
 
    * Eseguire il commit a `main` o crea una richiesta di pull in base al processo.
 
-Una volta apportate le modifiche a `paths.json` vengono uniti, i reindirizzamenti sono attivi per il tuo sito.
+1. Dopo aver definito i reindirizzamenti e aggiornato la mappatura del percorso, torna a **Sites** console.
+
+1. Tocca o fai clic per selezionare il foglio di calcolo dei reindirizzamenti creato nella console, quindi tocca o fai clic **Pubblicazione rapida** nella barra delle azioni per pubblicare il foglio di calcolo.
+
+   ![Selezionare il foglio di calcolo nella console Sites](assets/tabular-data/tabular-data-select-publish.png)
+
+1. In **Pubblicazione rapida** , tocca o fai clic su **Pubblica**.
+
+   ![Conferma pubblicazione](assets/tabular-data/tabular-data-quick-publish.png)
+
+1. Un banner conferma la pubblicazione.
+
+   ![Conferma banner della pubblicazione](assets/tabular-data/tabular-data-publish-banner.png)
+
+Il foglio di calcolo dei reindirizzamenti ora è pubblicato e accessibile al pubblico.
 
 ## Altri tipi di fogli di calcolo {#other}
 
@@ -134,6 +132,12 @@ Ora che sai come creare un foglio di calcolo di reindirizzamento, puoi creare qu
 * Configurazione
 
 Segui semplicemente gli stessi passaggi descritti nelle sezioni [Crea foglio di calcolo](#spreadsheet) e [Aggiornare paths.json](#paths-json) e scegliere il modello appropriato e aggiornare `paths.json` file in modo appropriato.
+
+Per [Configurazione](https://www.aem.live/docs/configuration), [Intestazioni](https://www.aem.live/docs/custom-headers) e [Metadati](https://www.aem.live/docs/bulk-metadata) assicurati di aggiungere una mappatura per pubblicarli nelle loro posizioni predefinite:
+
+* Configurazione: `/.helix/config.json`
+* Intestazioni: `/.helix/headers.json`
+* Metadati `/metadata.json`
 
 Inoltre, è possibile [creare un foglio di calcolo personalizzato](#own-spreadsheet) con colonne arbitrarie per uso personale.
 
