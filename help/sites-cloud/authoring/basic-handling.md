@@ -2,10 +2,10 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e il suo utilizzo di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 64%
+source-wordcount: '926'
+ht-degree: 63%
 
 ---
 
@@ -36,7 +36,7 @@ Per illustrare l’utilizzo di base di AEM, in questo documento viene utilizzata
 
 Ogni volta che un utente accede per la prima volta a una console, viene avviato un tutorial relativo alla navigazione nel prodotto. Prenditi un minuto per effettuare la selezione e ottenere una buona panoramica della gestione di base dell’AEM.
 
-![Esercitazione sulla navigazione](assets/tutorial.png)
+![Esercitazione sulla navigazione](assets/basic-handling-tutorial.png)
 
 Seleziona **Successivo** per passare alla pagina successiva della panoramica. Seleziona **Chiudi** oppure seleziona all’esterno della finestra di dialogo della panoramica da chiudere.
 
@@ -48,7 +48,7 @@ Puoi spostarti tra le diverse console utilizzando il pannello di navigazione glo
 
 Per chiudere il pannello di navigazione globale e tornare alla posizione precedente, tocca o fai clic su **Chiudi**.
 
-![Barra superiore del pannello di navigazione](assets/basic-handling-navigation-bar.png)
+![Barra superiore del pannello di navigazione](assets/basic-handling-navigation-options.png)
 
 La navigazione globale presenta due pannelli, rappresentati da icone sul lato sinistro dello schermo:
 
@@ -86,31 +86,37 @@ In **Strumenti** Il pannello laterale contiene una serie di categorie, che raggr
 
 L’intestazione di è sempre presente nella parte superiore dello schermo. Anche se la maggior parte delle opzioni presenti nell’intestazione rimangono invariate ovunque ti trovi nel sistema, alcune dipendono dal contesto.
 
-![Intestazione di navigazione](/help/sites-cloud/authoring/assets/navigation-bar.png)
+![Intestazione di navigazione](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
 * [Navigazione globale](#global-navigation) - Selezionare la **Adobe Experience Manager** per spostarsi tra le diverse console.
 
-  ![Navigazione globale](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![Navigazione globale](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
-* [Ricerca](/help/sites-cloud/authoring/search.md) - È inoltre possibile utilizzare [tasto di scelta rapida](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (barra) per richiamare la ricerca da qualsiasi console.
+* Feedback
 
-  ![Icona Ricerca](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![Pulsante Feedback](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+
+* La tua organizzazione IMS: seleziona questa opzione per apportare modifiche, se necessario.
 
 * [Soluzioni](https://www.adobe.com/it/experience-cloud.html) - Seleziona questa opzione per accedere alle altre soluzioni di Adobe.
 
-  ![Pulsante Soluzioni](/help/sites-cloud/authoring/assets/solutions.png)
+  ![Pulsante Soluzioni](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
+
+* [Ricerca](/help/sites-cloud/authoring/search.md) - È inoltre possibile utilizzare [tasto di scelta rapida](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (barra) per richiamare la ricerca da qualsiasi console.
+
+  ![Icona Ricerca](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
 * [Aiuto](#accessing-help)
 
-  ![Pulsante Aiuto](/help/sites-cloud/authoring/assets/help.png)
+  ![Pulsante Aiuto](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
 * [Notifiche](/help/sites-cloud/authoring/inbox.md) - Questa icona è contrassegnata con il numero di notifiche incomplete attualmente assegnate.
 
-  ![Pulsante Notifiche](/help/sites-cloud/authoring/assets/notifications.png)
+  ![Pulsante Notifiche](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
 
 * [Proprietà utente](/help/sites-cloud/authoring/account-environment.md) - Selezionare questa opzione per modificare le impostazioni utente.
 
-  ![Pulsante Proprietà utente](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![Pulsante Proprietà utente](/help/sites-cloud/authoring/assets/basic-handling-user-properties.png)
 
 ## Accedere all’Aiuto   {#accessing-help}
 
