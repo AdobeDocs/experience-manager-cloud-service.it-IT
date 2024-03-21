@@ -3,7 +3,7 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5f780f5e8fa9289b35eefbbd4c3a71d37a7f465a
+source-git-commit: 8a64e2ca1dc3987558c36346422ee43d202d9ecc
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 91%
@@ -111,7 +111,7 @@ Gli [ambienti di sviluppo rapido (RDE)](/help/implementing/developing/introducti
 
 ### Programma di adozione anticipata configurazione CDN {#cdn-config-early-adopter}
 
-Oltre agli ultimi [Regole filtro traffico](/help/security/traffic-filter-rules-including-waf.md), che include le regole WAF (Web Application Firewall) facoltative, esiste l’opportunità di utilizzare la pipeline di configurazione per dichiarare e distribuire altri tipi di configurazione CDN. Iscriviti al programma di adozione anticipata tramite e-mail **aemcs-cdn-config-adopter@adobe.com** per accedere a:
+Oltre agli ultimi [Regole filtro traffico](/help/security/traffic-filter-rules-including-waf.md), che include le regole WAF (Web Application Firewall) facoltative, esiste l’opportunità di utilizzare la pipeline di configurazione per dichiarare e distribuire [altri tipi di configurazione CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Iscriviti al programma di adozione anticipata tramite e-mail **aemcs-cdn-config-adopter@adobe.com** per accedere a:
 * 301/302 reindirizzamenti lato client
 * trasferimento di richieste al server Edge di a origini arbitrarie
 * Trasformazioni URL
