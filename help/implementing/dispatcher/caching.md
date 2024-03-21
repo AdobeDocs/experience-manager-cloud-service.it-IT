@@ -3,7 +3,7 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: Scopri le nozioni di base sul caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: d6e522cc18441a642e3434b6e5eff893d8f69952
+source-git-commit: 8215686031de1bc37ce37bfdce252b3997646042
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 1%
@@ -278,7 +278,7 @@ In generale, non è necessario invalidare la cache di Dispatcher. Al contrario, 
 Come per le versioni precedenti dell’AEM, la pubblicazione o l’annullamento della pubblicazione di pagine cancella il contenuto dalla cache di Dispatcher. Se si sospetta un problema di caching, è necessario ripubblicare le pagine in questione e assicurarsi che sia disponibile un host virtuale che corrisponda al `ServerAlias` localhost, richiesto per l’annullamento della validità della cache di Dispatcher.
 
 >[!NOTE]
->Per annullare correttamente la validità del Dispatcher, assicurati che le richieste da &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;.local&quot;, &quot;\*.adobeaemcloud.com&quot; e &quot;\*.adobeaemcloud.net&quot; corrispondano e siano gestite da una configurazione vhost in modo che la richiesta possa essere servita. Puoi eseguire questa operazione facendo corrispondere il valore globale &quot;*&quot; in una configurazione vhost catch-all seguendo il pattern indicato nella sezione [Archetipo AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). In alternativa, puoi assicurarti che l’elenco precedentemente menzionato sia stato acquisito da uno dei host.
+>Per invalidare correttamente il Dispatcher, assicurati che le richieste da &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot; e &quot;\*.adobeaemcloud.net&quot; corrispondano e siano gestite da una configurazione vhost in modo che la richiesta possa essere servita. Puoi eseguire questa operazione facendo corrispondere il valore globale &quot;*&quot; in una configurazione vhost catch-all seguendo il pattern indicato nella sezione [Archetipo AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). In alternativa, puoi assicurarti che l’elenco precedentemente menzionato sia stato acquisito da uno dei host.
 
 Quando l’istanza Publish riceve una nuova versione di una pagina o di una risorsa dall’autore, utilizza l’agente di svuotamento per invalidare i percorsi appropriati nel proprio Dispatcher. Il percorso aggiornato viene rimosso dalla cache di Dispatcher, insieme ai relativi elementi principali, fino a un livello (puoi configurare questo livello con [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
