@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: dbdc63db9a9ac954ce6359d3643231d6e195fd53
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 65%
+ht-degree: 92%
 
 ---
 
@@ -36,13 +36,13 @@ Nessuno.
 
 **Azioni richieste**
 
-#### Imposta versione Java CM su 11 {#set-java-version-11}
+#### Impostare la versione Java CM su 11 {#set-java-version-11}
 
-La nuova versione di aem-sdk-api contiene classi compilate con una destinazione Java 11, che non è compatibile con l’ambiente di build predefinito di Cloud Manager versione 1.8 di JDK. Questo aggiornamento richiede che Maven venga eseguito utilizzando JDK 11.
+La nuova versione di aem-sdk-api contiene classi compilate con una destinazione Java 11, che non è compatibile con l’ambiente di build predefinito di Cloud Manager versione 1.8 di JDK. Questo aggiornamento richiede l’esecuzione di Maven con JDK 11.
 
-Si consiglia ai clienti di aggiungere una `.cloudmanager/java-version` nella directory principale del relativo archivio Git con il contenuto: `11`. Consulta [Ambiente di build/Impostazione della versione JDK di Maven](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
+Si consiglia di aggiungere un file `.cloudmanager/java-version` nella directory principale del relativo archivio Git con il contenuto: `11`. Consulta [Ambiente di build/Impostazione della versione JDK di Maven](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
 
-#### Aggiorna client-test-cloud-aem alla versione 1.2.1 {#update-aem-cloud-testing-clients}
+#### Aggiornare client-test-cloud-aem alla versione 1.2.1 {#update-aem-cloud-testing-clients}
 
 Le prossime modifiche richiederanno la libreria [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) utilizzata nei test funzionali personalizzati per l’aggiornamento almeno alla versione **1.2.1**
 
