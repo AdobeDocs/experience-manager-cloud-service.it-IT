@@ -2,9 +2,9 @@
 title: Acquisizione di contenuti in Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 8795d9d2078d9f49699ffa77b1661dbe5451a4a2
+source-git-commit: de05abac3620b254343196a283cef198f434cfca
 workflow-type: tm+mt
-source-wordcount: '2534'
+source-wordcount: '2752'
 ht-degree: 6%
 
 ---
@@ -211,6 +211,14 @@ Consulta la `Node property value in MongoDB` nota in [Prerequisiti per lo strume
 >abstract="L’estrazione attesa per l’acquisizione non è stata completata correttamente. L’acquisizione è stata annullata perché non è stato possibile eseguirla."
 
 Un’acquisizione creata con un’estrazione in esecuzione come set di migrazione di origine attende pazientemente che l’estrazione abbia esito positivo e a quel punto inizia normalmente. Se l’estrazione non riesce o viene interrotta, l’acquisizione e il relativo processo di indicizzazione non iniziano ma vengono annullati. In questo caso, controlla l’estrazione per determinare il motivo dell’errore, risolvi il problema e avvia di nuovo l’estrazione. Una volta eseguita l’estrazione fissa, è possibile pianificare una nuova acquisizione.
+
+### La risorsa eliminata non è presente dopo la nuova acquisizione
+
+In generale, non è consigliabile modificare i dati dell’ambiente cloud tra una acquisizione e l’altra.
+
+Quando una risorsa viene eliminata dalla destinazione del Cloud Service utilizzando l’interfaccia utente touch di Assets, i dati del nodo vengono eliminati, ma il BLOB della risorsa con l’immagine non viene eliminato immediatamente. Viene contrassegnato per l’eliminazione in modo che non venga più visualizzato nell’interfaccia utente; tuttavia, rimane nell’archivio dati fino a quando non si verifica la raccolta di oggetti inattivi e il BLOB viene rimosso.
+
+Se una risorsa migrata in precedenza viene eliminata e l’acquisizione successiva viene eseguita prima che il Garbage Collector abbia completato l’eliminazione della risorsa, l’acquisizione dello stesso set di migrazione non ripristinerà la risorsa eliminata. Quando l’acquisizione controlla l’ambiente cloud della risorsa, non sono presenti dati del nodo; pertanto, l’acquisizione copia i dati del nodo nell’ambiente cloud. Tuttavia, quando controlla l’archivio BLOB, vede che il BLOB è presente e salta la copia del BLOB. Per questo motivo i metadati sono presenti dopo l’acquisizione quando la risorsa viene esaminata dall’interfaccia utente touch, ma l’immagine no. I set di migrazione e l’acquisizione dei contenuti non sono stati progettati per gestire questo caso. Hanno lo scopo di aggiungere nuovi contenuti all’ambiente cloud e non ripristinare i contenuti migrati in precedenza.
 
 ## Passaggio successivo {#whats-next}
 
