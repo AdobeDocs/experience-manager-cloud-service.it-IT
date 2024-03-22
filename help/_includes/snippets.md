@@ -2,7 +2,7 @@
 source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 63%
+ht-degree: 80%
 
 ---
 # Snippet {#snippets}
@@ -43,7 +43,7 @@ ht-degree: 63%
 * [Inviare dati del modulo adattivo al flusso di lavoro di AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Utilizzare il portale dei moduli per elencare moduli adattivi di AEM su un sito web di AEM](/help/forms/configure-forms-portal.md)
 
-## Azioni di invio modulo adattivo {#af-submit-action}
+## Azioni di invio per modulo adattivo {#af-submit-action}
 
 * [Invia e-mail](/help/forms/configure-submit-action-send-email.md)
 * [Invia a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
@@ -54,12 +54,12 @@ ht-degree: 63%
 * [Richiama un flusso di lavoro AEM](/help/forms/configure-submit-action-workflow.md)
 * [Invia a Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Invia a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Collegare il modulo adattivo all’applicazione Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Collegare un modulo adattivo all’applicazione Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Collegare un modulo adattivo a Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
-## Authoring AEM con accesso anticipato ai Edge Delivery Services {#aem-authoring-edge-early-access}
+## Authoring di AEM con accesso anticipato a Edge Delivery Services {#aem-authoring-edge-early-access}
 
-[!BADGE TECNOLOGIA AD ACCESSO ANTICIPATO: parlaci di questa funzione dai laboratori AEM Sites sul tuo canale di Slack!]{type=Informative url="/help/edge/docs/slack.md" tooltip="L’authoring AEM con i Edge Delivery Services è una tecnologia ad accesso anticipato."}
+[!BADGE TECNOLOGIA CON ACCESSO ANTICIPATO: chiedici di questa funzione dei laboratori AEM Sites sul tuo canale Slack!]{type=Informative url="/help/edge/docs/slack.md" tooltip="L’authoring di AEM con Edge Delivery Services è una tecnologia con accesso anticipato."}
 
 ## Consulta anche {#see-more-forms-eds}
 

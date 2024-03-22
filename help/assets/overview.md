@@ -1,5 +1,5 @@
 ---
-title: Introduzione ad Assets as a [!DNL Cloud Service]
+title: Introduzione ad Assets as a  [!DNL Cloud Service]
 description: Informazioni su come utilizzare e amministrare Experience Manager Assets as a Cloud Service.
 contentOwner: AK
 feature: Asset Management

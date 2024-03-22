@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2c3be4b60396c5cf57c327fd5b858a3af65397f2
 workflow-type: tm+mt
 source-wordcount: '4829'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -633,8 +633,8 @@ ht-degree: 94%
             + [Inviare un modulo adattivo all’archiviazione BLOB di Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Inviare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [Collegare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [Integrare il modulo adattivo AEM con il flusso di lavoro AEM](/help/forms/configure-submit-action-workflow.md)
-            + [Configurare l’azione di invio Invia a endpoint REST per Forms adattivo](/help/forms/configure-submit-action-restpoint.md)
+            + [Integrare un modulo adattivo AEM con il flusso di lavoro di AEM](/help/forms/configure-submit-action-workflow.md)
+            + [Configurare l’azione di invio Invia a endpoint REST per moduli adattivi](/help/forms/configure-submit-action-restpoint.md)
             + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
             + [Utilizzare il servizio reCAPTCHA di Google in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Aggiungere un handler degli errori personalizzato in un modulo adattivo](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -700,8 +700,8 @@ ht-degree: 94%
       + [Utilizzo di font personalizzati nei documenti PDF](/help/forms/use-custom-fonts.md)
       + [Elenco dei font supportati nei documenti PDF](/help/forms/supported-out-of-the-box-fonts.md)
       + [Problemi noti, best practice e domande frequenti](/help/forms/communications-known-issues-limitations.md)
-   + Rapporti sulle transazioni {#using-communications}
-      + [API fatturabili per rapporti sulle transazioni](/help/forms/transaction-reports-billable-apis.md)
+   + Rapporti di transazioni {#using-communications}
+      + [API rapporti di transazioni fatturabili](/help/forms/transaction-reports-billable-apis.md)
       + [Registrare una transazione per le implementazioni personalizzate](/help/forms/record-transaction-custom-implementation.md)
    + Riferimento API per sviluppatori {#aem-forms-developer-api-reference}
       + [Riferimento API di moduli adattivi](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
@@ -821,8 +821,8 @@ ht-degree: 94%
       + [Lista di controllo per il Go Live](/help/edge/docs/go-live-checklist.md)
       + [Annullamento Push](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
       + [Configurazione di Cloudflare Worker](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
-      + [Configurazione Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
-      + [Configurazione Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
+      + [Configurazione di Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
+      + [Configurazione di Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Reindirizzamenti](/help/edge/docs/redirects.md)
    + Creazione di Forms di consegna Edge {#build-forms}
       + [Panoramica](/help/edge/docs/forms/overview.md)
@@ -996,7 +996,7 @@ ht-degree: 94%
          + [Gestione degli Elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Dashboard della licenza](/help/implementing/cloud-manager/license-dashboard.md)
       + [Informazioni sulle richieste di contenuto di Cloud Service](/help/implementing/cloud-manager/content-requests.md)
-      + [Dashboard prestazioni CDN](/help/implementing/cloud-manager/cdn-performance.md)
+      + [Dashboard delle prestazioni CDN](/help/implementing/cloud-manager/cdn-performance.md)
       + [Domande frequenti su Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Sviluppo per AEM as a Cloud Service {#developing}
       + [Struttura dei progetti AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
@@ -1056,7 +1056,7 @@ ht-degree: 94%
          + [Sviluppo locale AEM con l’editor universale](/help/implementing/universal-editor/local-dev.md)
          + [Chiamate all’editor universale](/help/implementing/universal-editor/calls.md)
          + [Eventi](/help/implementing/universal-editor/events.md)
-         + [Personalizzazione dell’editor universale](/help/implementing/universal-editor/customizing.md)
+         + [Personalizzare l’Editor universale](/help/implementing/universal-editor/customizing.md)
       + [Gestione delle esperienze headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=it)
       + Sviluppo ibrido e SPA {#hybrid}
          + [Ibrido e SPA con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1079,7 +1079,7 @@ ht-degree: 94%
          + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=it)
          + [Integrazione Launch](/help/implementing/developing/hybrid/launch-integration.md)
          + [Documenti di riferimento SPA](/help/implementing/developing/hybrid/reference-materials.md)
-         + [Non consentire la serializzazione dei ResourceResolver tramite Sling Model Exporter](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
+         + [Non consentire la serializzazione di ResourceResolver tramite Sling Model Exporter](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + Strumenti per gli sviluppatori {#developer-tools}
       + [Modalità Sviluppatore](/help/implementing/developing/tools/developer-mode.md)
       + [Strumenti AEM Developer per Eclipse](/help/implementing/developing/tools/eclipse.md)

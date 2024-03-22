@@ -232,7 +232,7 @@ La più recente architettura di AEM as a Cloud Service introduce alcune modifich
 * Architettura di sviluppo
    * [Archivi di Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
    * [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-   * [Test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md)
+   * [Test della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services:
    * [Panoramica di AEM as a Cloud Service con Edge Delivery Services](/help/edge/overview.md)
    * [Utilizzo di Edge Delivery Services](/help/edge/using.md)
