@@ -4,9 +4,9 @@ description: Queste sono le note sulla versione 2024.3.0 di Cloud Manager in AEM
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4bae300f653ae6b84cf798f4fe9e8c9326963718
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ Questa pagina illustra le note sulla versione 2024.3.0 di Cloud Manager in AEM a
 
 ## Data di pubblicazione {#release-date}
 
-La data di pubblicazione di Cloud Manager versione 2024.3.0 in AEM as a Cloud Service è il 14 marzo 2024. La prossima versione è pianificata per l’11 aprile 2024.
+La data di pubblicazione della versione 2024.3.0 di Cloud Manager in AEM as a Cloud Service è il 14 marzo 2024. La prossima versione è prevista per l’11 aprile 2024.
 
 ## Novità {#what-is-new}
 
-* [È ora possibile creare un&#39;infrastruttura di rete avanzata](/help/security/configuring-advanced-networking.md) nel programma Cloud Manager e configuralo come ambiente self-service utilizzando l’interfaccia utente di Cloud Manager.
-* [Dettagli del passaggio di esecuzione della pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) comprenderà il passaggio corrente dell’implementazione e ciò che si prevede seguirà.
+* [Ora puoi creare un’infrastruttura di rete avanzata](/help/security/configuring-advanced-networking.md) nel programma Cloud Manager e configurare gli ambienti in modo autonomo utilizzando l’interfaccia utente di Cloud Manager.
+* I [dettagli del passaggio di esecuzione della pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) comprenderanno la fase corrente dell’implementazione e gli elementi previsti.
 
 ## Programma per i primi utilizzatori {#early-adoption}
 
@@ -69,4 +69,4 @@ Ti interessa testare la nuova dashboard? Per iniziare, invia un’e-mail a `aem-
 
 ## Correzioni di bug {#bug-fixes}
 
-* Un bug è stato corretto quando un utente definisce il `COMMERCE_ENDPOINT` variabile con uno spazio finale, il dispatcher non viene caricato.
+* È stato corretto un bug che si verificava quando l’utente definiva una variabile `COMMERCE_ENDPOINT` con uno spazio finale, a causa del quale il Dispatcher non veniva caricato.

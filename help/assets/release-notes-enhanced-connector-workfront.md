@@ -3,9 +3,9 @@ title: Note sulla versione di [!DNL Workfront for Experience Manager enhanced co
 description: Note sulla versione di [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -13,14 +13,14 @@ ht-degree: 96%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Workfront for Experience Manager enhanced connector].
 
-Data di rilascio dell’ultima versione 1.9.18 di [!DNL Workfront for Experience Manager enhanced connector] : 8 marzo 2024.
+La data di rilascio dell’ultima versione 1.9.18 di [!DNL Workfront for Experience Manager enhanced connector] è l’8 maro 2024.
 
 ## Caratteristiche principali della versione {#release-highlights}
 
-Ultima versione di [!DNL Workfront for Experience Manager enhanced connector] include la seguente correzione di bug:
+L’ultima versione di [!DNL Workfront for Experience Manager enhanced connector] include la seguente correzione di bug:
 
-* Problemi durante l’elaborazione dei caricamenti di più risorse da Workfront.
-* Se non si aggiungono le virgolette di chiusura quando si utilizza Workfront per cercare cartelle nell’Experience Manager, si ottiene `SERVER_ERROR`.
+* L’elaborazione dei caricamenti di più risorse da Workfront riscontra problemi.
+* Non vengono aggiunte virgolette di chiusura quando si utilizza Workfront per cercare cartelle in Experience Manager`SERVER_ERROR`.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Ultima versione di [!DNL Workfront for Experience Manager enhanced connector] in
 
 >[!IMPORTANT]
 >
->L’Adobe consiglia di: [aggiornamento alla versione più recente del 1.9.18](/help/assets/workfront-connector-install.md) del [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe consiglia di [aggiornare alla versione 1.9.18 più recente](/help/assets/workfront-connector-install.md) di [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemi noti {#known-issues}
 

@@ -4,9 +4,9 @@ description: Scopri come utilizzare AEM as a Cloud Service con Edge Delivery Ser
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Il principio guida di Adobe è la semplicità. Inizia con l’authoring basato s
 
 ## Authoring {#authoring-edge}
 
-Con Edge Delivery Services, l’authoring è semplice, veloce e flessibile. Con l’Editor universale è possibile scegliere di eseguire l’authoring utilizzando l’authoring basato su documenti o l’authoring in AEM.
+Con Edge Delivery Services, l’authoring è semplice, veloce e flessibile. Con l’Editor universale è possibile scegliere di eseguire l’authoring utilizzando quello basato su documenti o quello in AEM.
 
 Per ulteriori informazioni, consulta il documento [Authoring di contenuti per Edge Delivery Services](authoring.md).
 
