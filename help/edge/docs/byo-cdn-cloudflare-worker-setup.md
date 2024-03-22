@@ -1,14 +1,15 @@
 ---
-description: Le schermate seguenti illustrano come configurare Cloudflare per distribuire i contenuti.  Le impostazioni essenziali sono contrassegnate con un cerchio rosso.
-title: Configurazione di Cloudflare
+description: Gli screenshot seguenti illustrano come configurare Cloudflare per distribuire il contenuto.  Le impostazioni essenziali sono contrassegnate con un cerchio rosso.
+title: Configurazione di Cloudfare
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: b8240a05-091e-46ba-b0e7-d04737bd63e3
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '23'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Configurazione di Cloudflare
+# Configurazione di Cloudfare
 
 {{$include b8069e14-6357-4b12-84c2-b4ffe9fa96a3}}

@@ -1,11 +1,12 @@
 ---
-description: Crea file di sitemap generati automaticamente da usare come riferimento dal tuo "robots.txt". Questo facilita l’ottimizzazione SEO (Search Engine Optimization) e l’individuazione di nuovi contenuti.
+description: Crea file della sitemap generati automaticamente da usare come riferimento dal file “robots.txt”. Questo facilita l’ottimizzazione SEO (Search Engine Optimization) e l’individuazione di nuovi contenuti.
 title: Sitemap
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: cdc12747-6003-4744-819e-d17e010901e7
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '23'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

@@ -4,16 +4,16 @@ description: Ottieni una panoramica sulla conformità in Experience Manager as a
 landing-page-description: Inizia qui per una panoramica sulla conformità in AEM as a Cloud Service, comprensiva di privacy e accessibilità.
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
 source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '90'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
 # Conformità in AEM as a Cloud Service {#aem-compliance}
 
-Consulta questi collegamenti per una panoramica degli argomenti relativi alla conformità nell’Experience Manager as a Cloud Service.
+Per una panoramica degli argomenti relativi alla conformità in Experience Manager as a Cloud Service, consulta questi collegamenti.
 
 * [Preparazione di per le normative su privacy e protezione dei dati](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Preparazione di Foundation per le normative su privacy e protezione dei dati](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)

@@ -4,7 +4,7 @@ description: Scopri le operazioni back-end di Experience Manager as a Cloud Serv
 landing-page-description: Scopri le operazioni back-end di Experience Manager as a Cloud Service, ad esempio le attività di indicizzazione e manutenzione, e ottieni risposte alle tue domande.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
 source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '107'
 ht-degree: 100%
 

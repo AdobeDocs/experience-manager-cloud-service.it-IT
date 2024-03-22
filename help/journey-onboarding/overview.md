@@ -4,9 +4,9 @@ description: Inizia qui per una panoramica del percorso guidato nel processo di 
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 source-git-commit: 98618765b405316b18110182c221ddd968c70e96
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1290'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -103,4 +103,4 @@ Se desideri conoscere i consigli di Adobe su come procedere all’onboarding del
 
 Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
-* [Onboarding per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html) - Questo breve video offre una panoramica del processo di onboarding del Cloud Service per l’AEM.
+* [Onboarding per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html?lang=it): questo breve video offre una panoramica del processo di onboarding del Cloud Service per AEM.

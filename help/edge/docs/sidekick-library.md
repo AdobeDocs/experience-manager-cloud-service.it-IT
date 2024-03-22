@@ -1,14 +1,15 @@
 ---
-description: La Libreria dei Sidekick è un'estensione per AEM Sidekick che consente agli sviluppatori di creare strumenti guidati dall'interfaccia utente per gli autori di contenuto. Include un plug-in per blocchi incorporato che può mostrare agli autori un elenco di tutti i blocchi in modo intuitivo, eliminando la necessità per gli autori di ricordare o cercare ogni variante di un blocco. Gli sviluppatori possono anche scrivere i propri plug-in per la libreria della barra laterale.
-title: Che cos'è la libreria di Sidekick?
+description: La libreria sidekick è un’estensione per la barra laterale di AEM che consente agli sviluppatori di creare strumenti guidati dall’interfaccia utente per gli autori di contenuto. Include un plug-in per blocchi integrato che può mostrare agli autori un elenco di tutti i blocchi in modo intuitivo, eliminando la necessità di ricordare o cercare ogni variante di un blocco. Gli sviluppatori possono anche scrivere i propri plug-in per la libreria sidekick.
+title: Che cos’è la libreria sidekick?
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 013f67b7-9841-48dd-a9e5-9971ba75d515
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '76'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Che cos&#39;è la libreria di Sidekick?
+# Che cos’è la libreria sidekick?
 
 {{$include 88484cc5-cc46-4096-9eae-f5dc47bd4004}}

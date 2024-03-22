@@ -1,11 +1,12 @@
 ---
-description: Per progettare siti web e creare funzionalità, gli sviluppatori utilizzano il markup e il DOM renderizzati dinamicamente dal contenuto. Il markup e il DOM sono costruiti in modo da consentire una manipolazione e uno stile flessibili. Allo stesso tempo fornisce funzionalità pronte all’uso in modo che lo sviluppatore non debba preoccuparsi di alcuni degli aspetti dei siti web moderni.
+description: Per progettare siti web e creare funzionalità, gli sviluppatori utilizzano il markup e il DOM, sottoposto a rendering dinamicamente dal contenuto. Il markup e il DOM sono costruiti in modo da consentire una manipolazione e uno stile flessibili. Allo stesso tempo forniscono funzionalità pronte all’uso, in modo che lo sviluppatore non debba preoccuparsi di alcuni degli aspetti dei siti web moderni.
 title: Markup, sezioni, blocchi e blocco automatico
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 3f4ae9e9-e5c8-4873-a3d0-591c4d8683dd
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '70'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

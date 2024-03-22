@@ -1,11 +1,12 @@
 ---
-description: Oltre a tradurre documenti Google e Word in markdown e markup HTML, AEM traduce anche i fogli di calcolo (cartelle di lavoro di Microsoft Excel e fogli Google) in file JSON che possono essere facilmente utilizzati dal sito web o dall’applicazione web.
+description: Oltre a tradurre documenti Google Docs e Word in markdown e markup HTML, AEM traduce anche i fogli di calcolo (cartelle di lavoro di Microsoft Excel e Fogli Google) in file JSON che possono essere facilmente utilizzati dal sito web o dall’applicazione web.
 title: Fogli di calcolo e JSON
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 032ae9aa-577c-44b1-8f5f-fb3d2885013e
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '44'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

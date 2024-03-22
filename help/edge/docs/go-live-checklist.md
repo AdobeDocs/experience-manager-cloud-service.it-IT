@@ -1,11 +1,12 @@
 ---
-description: L’elenco di controllo per la pubblicazione è un riepilogo delle best practice da considerare per l’avvio di un sito web. Questi passaggi sono generalmente buone pratiche, ma presentano alcuni aspetti specifici per Adobe Experience Manager.
+description: L’elenco di controllo per la pubblicazione è un riepilogo delle best practice da prendere in considerare durante il lancio di un sito web. Generalmente questi passaggi sono le pratiche migliori, ma presentano alcuni aspetti specifici di Adobe Experience Manager.
 title: Elenco di controllo per la pubblicazione
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 7f22d7f5-39b8-4b91-a1ef-24f89b5ded14
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '34'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

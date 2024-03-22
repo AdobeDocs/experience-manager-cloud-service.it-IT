@@ -1,11 +1,12 @@
 ---
-description: Nella maggior parte dei siti web, ci sono stringhe o variabili che verranno utilizzate in tutto il sito. Soprattutto nei siti che devono supportare più lingue, non è consigliabile codificare tali valori. È invece possibile utilizzare e gestire centralmente i segnaposto.
+description: Nella maggior parte dei siti web, sono presenti stringhe o variabili che verranno utilizzate in tutto il sito. Soprattutto nei siti che devono supportare più lingue, non è consigliabile codificare tali valori. È invece possibile utilizzare e gestire i segnaposto a livello centrale.
 title: Segnaposto
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 392e2323-8d6f-40eb-a68e-51baeee7fc2d
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '45'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
