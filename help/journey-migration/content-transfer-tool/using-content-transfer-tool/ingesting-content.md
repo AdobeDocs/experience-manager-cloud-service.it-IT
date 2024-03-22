@@ -2,10 +2,10 @@
 title: Acquisizione di contenuti in Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
+source-git-commit: 8795d9d2078d9f49699ffa77b1661dbe5451a4a2
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 7%
+source-wordcount: '2534'
+ht-degree: 6%
 
 ---
 
@@ -155,6 +155,12 @@ Se &quot;Aggiornamenti della versione dell’AEM&quot; è attivo (ovvero, gli ag
 
 ### Errore di acquisizione integrativa a causa di violazione del vincolo di unicità {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_uuid"
+>title="Violazione vincolo di unicità"
+>abstract="Una causa comune di un errore di acquisizione non wipe è un conflitto negli ID dei nodi. Può esistere un solo nodo in conflitto."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Acquisizione integrativa"
+
 Una causa comune di [Acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) errore è un conflitto negli id dei nodi. Per identificare questo errore, scarica il registro di acquisizione utilizzando l’interfaccia utente di Cloud Acceleration Manager e cerca una voce come quella seguente:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: proprietà violata dal vincolo di unicità [jcr:uuid] con valore a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
@@ -169,6 +175,12 @@ Questo conflitto deve essere risolto manualmente. Chi ha familiarità con il con
 
 ### Acquisizione integrativa non riuscita a causa dell’impossibilità di eliminare il nodo di riferimento {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
+>title="Impossibile eliminare il nodo di riferimento"
+>abstract="Una causa comune di un errore di acquisizione non wipe è un conflitto di versione per un particolare nodo nell’istanza di destinazione. È necessario correggere le versioni del nodo."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Acquisizione integrativa"
+
 Un’altra causa comune di [Acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) errore è un conflitto di versione per un particolare nodo nell’istanza di destinazione. Per identificare questo errore, scarica il registro di acquisizione utilizzando l’interfaccia utente di Cloud Acceleration Manager e cerca una voce come quella seguente:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity001: impossibile eliminare il nodo a cui si fa riferimento: 8a2289f4-b904-4bd0-8410-15e41e0976a8
@@ -181,11 +193,22 @@ Le best practice indicano che se un **Non Cancellato** l’acquisizione deve ess
 
 ### Errore di acquisizione a causa di valori di proprietà del nodo di grandi dimensioni {#ingestion-failure-due-to-large-node-property-values}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_bson"
+>title="Proprietà nodo grande"
+>abstract="Una causa comune di un errore di acquisizione è il superamento della dimensione massima dei valori delle proprietà del nodo. Per risolvere il problema, segui la documentazione, comprese quelle relative al rapporto BPA."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=it" text="Prerequisiti per la migrazione"
+
 I valori delle proprietà del nodo memorizzati in MongoDB non possono superare i 16 MB. Se un valore di nodo supera le dimensioni supportate, l’acquisizione non riesce e il registro conterrà un `BSONObjectTooLarge` e specificare il nodo che ha superato il massimo consentito. Questa è una restrizione di MongoDB.
 
 Consulta la `Node property value in MongoDB` nota in [Prerequisiti per lo strumento Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) per ulteriori informazioni e un collegamento a uno strumento Oak che potrebbe facilitare la ricerca di tutti i nodi di grandi dimensioni. Dopo aver risolto tutti i nodi con dimensioni elevate, esegui di nuovo l’estrazione e l’acquisizione.
 
 ### Acquisizione limitata {#ingestion-rescinded}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_rescinded"
+>title="Acquisizione limitata"
+>abstract="L’estrazione attesa per l’acquisizione non è stata completata correttamente. L’acquisizione è stata annullata perché non è stato possibile eseguirla."
 
 Un’acquisizione creata con un’estrazione in esecuzione come set di migrazione di origine attende pazientemente che l’estrazione abbia esito positivo e a quel punto inizia normalmente. Se l’estrazione non riesce o viene interrotta, l’acquisizione e il relativo processo di indicizzazione non iniziano ma vengono annullati. In questo caso, controlla l’estrazione per determinare il motivo dell’errore, risolvi il problema e avvia di nuovo l’estrazione. Una volta eseguita l’estrazione fissa, è possibile pianificare una nuova acquisizione.
 
