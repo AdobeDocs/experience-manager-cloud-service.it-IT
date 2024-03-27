@@ -3,9 +3,9 @@ title: Configurazione di networking avanzato per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 01b55f2ff06d3886724dbb2c25d0c109a5ab6aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5142'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Durante la configurazione delle funzioni di rete avanzate, si applicano le segue
 L’utilizzo di funzioni di rete avanzate richiede due passaggi:
 
 1. La configurazione dell’opzione di rete avanzata, [uscita con porta flessibile,](#flexible-port-egress) [indirizzo IP in uscita dedicato,](#dedicated-egress-ip-address) o [VPN,](#vpn) deve essere eseguita prima di tutto a livello di programma.
-1. Per poter essere utilizzata, l’opzione di rete avanzata deve quindi essere [a livello di ambiente.](#enabling)
+1. Per poter essere utilizzata, l’opzione di rete avanzata deve quindi essere [abilitata a livello di ambiente.](#enabling)
 
 Entrambi i passaggi possono essere eseguiti utilizzando l’interfaccia utente di Cloud Manager o l’API di Cloud Manager.
 
@@ -212,7 +212,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## Indirizzo IP in uscita dedicato {#dedicated-egress-ip-address}
 
-Un indirizzo IP dedicato può migliorare la sicurezza durante l’integrazione con i fornitori SaaS (ad esempio, un fornitore CRM) o altre integrazioni al di fuori di AEM as a Cloud Service che offrono un elenco Consentiti di indirizzi IP. Aggiungendo l’indirizzo IP dedicato al inserisco nell&#39;elenco Consentiti di, si garantisce che solo il traffico proveniente dall’AEM Cloud Service possa passare al servizio esterno. Verrà aggiunto al traffico proveniente da qualsiasi altro IP consentito.
+Un indirizzo IP dedicato può migliorare la sicurezza durante l’integrazione con i fornitori SaaS (ad esempio, un fornitore CRM) o altre integrazioni al di fuori di AEM as a Cloud Service che offrono un elenco Consentiti di indirizzi IP. Aggiungendo l’indirizzo IP dedicato all’elenco Consentiti, si garantisce che solo il traffico proveniente dall’istanza di AEM Cloud Service possa passare al servizio esterno. Verrà aggiunto al traffico proveniente da qualsiasi altro IP consentito.
 
 Lo stesso IP dedicato viene applicato a tutti i programmi di un cliente nella sua organizzazione Adobe e per tutti gli ambienti in ciascuno dei suoi programmi. Si applica ai servizi sia di authoring che di pubblicazione.
 
@@ -425,7 +425,7 @@ Sono supportati la maggior parte dei dispositivi VPN con tecnologia IPSec. Consu
 1. Nella procedura guidata **Aggiungi infrastruttura di rete** che viene avviata, seleziona **Rete privata virtuale** e fornisci le informazioni necessarie prima di toccare o fare clic su **Continua**.
 
    * **Regione**: questa è l’area geografica in cui dovrebbero essere create le infrastrutture.
-   * **Spazio indirizzi** - Lo spazio di indirizzi può essere un solo CIDR (64 indirizzi IP) /26 o un intervallo IP più ampio nel proprio spazio.
+   * **Spazio indirizzo**: lo spazio indirizzo può essere un solo CIDR /26 (64 indirizzi IP) o un intervallo IP più ampio nel porprio spazio.
       * Questo valore non può essere cambiato in seguito.
    * **Informazioni DNS**: elenco di risolutori DNS remoti.
       * Premi `Enter` dopo aver inserito un indirizzo di un server DNS per aggiungerne un altro.
@@ -462,7 +462,7 @@ Un nuovo record viene visualizzato sotto l’intestazione **Infrastruttura di re
 
 ### Configurazione API {#configuring-vpn-api}
 
-Una volta per programma, il POST `/program/<programId>/networkInfrastructures` viene richiamato l’endpoint, passando in un payload di informazioni di configurazione che includono: il valore di **vpn** per `kind` parametro, area geografica, spazio indirizzi (elenco di CIDR, che non potrà essere modificato in seguito), risolutori DNS (per la risoluzione dei nomi nella rete) e informazioni sulla connessione VPN, ad esempio la configurazione del gateway, la chiave VPN condivisa e i criteri di sicurezza IP. L’endpoint risponde con l’`network_id`, nonché con altre informazioni, tra cui lo stato.
+Una volta per programma, viene richiamato l’endpoint POST `/program/<programId>/networkInfrastructures`, passando in un payload di informazioni di configurazione che includono: il valore di **vpn** per il parametro `kind`, l’area geografica, lo spazio degli indirizzi (elenco di CIDR - nota che questo valore non potrà essere modificato in seguito), i risolutori DNS (per la risoluzione dei nomi nella propria rete) e informazioni sulla connessione VPN, ad esempio la configurazione del gateway, la chiave VPN condivisa e i criteri di sicurezza IP. L’endpoint risponde con l’`network_id`, nonché con altre informazioni, tra cui lo stato.
 
 Una volta effettuata la chiamata, in genere il provisioning dell’infrastruttura di rete richiede tra i 45 e i 60 minuti. Il metodo GET dell’API può essere chiamato per restituire lo stato corrente, che alla fine passerà da `creating` a `ready`. Consulta la documentazione dell’API per tutti gli stati.
 
@@ -582,12 +582,12 @@ Il diagramma seguente fornisce una rappresentazione visiva di un insieme di domi
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>N/D</td>
-    <td>IP del gateway VPN sul lato AEM. Il team di progettazione della rete può utilizzarlo per consentire solo connessioni VPN al gateway VPN da un indirizzo IP specifico. </td>
+    <td>IP del gateway VPN sul lato AEM. Il team di progettazione della rete può utilizzarlo per consentire solo le connessioni VPN al proprio gateway VPN da un indirizzo IP specifico. </td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>IP del traffico proveniente dal lato AEM della VPN verso il tuo lato. Questo può essere inserito nell'elenco Consentiti nella configurazione per garantire che le connessioni possano essere effettuate solo da AEM.</td>
-    <td>Se desideri consentire l’accesso VPN all’AEM, configura le voci DNS CNAME per mappare il dominio personalizzato e/o <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> e/o <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> a questo.</td>
+    <td>IP del traffico proveniente dal lato AEM della VPN verso il proprio lato. Questo può essere aggiunto all’elenco Consentiti nella propria configurazione per garantire che le connessioni possano essere effettuate solo da AEM.</td>
+    <td>Se desideri consentire l’accesso VPN ad AEM, devi configurare le voci DNS CNAME per mappare il dominio personalizzato e/o <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> e/o <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> a questo oggetto.</td>
   </tr>
 </tbody>
 </table>
@@ -614,9 +614,9 @@ Dopo aver configurato un’opzione di rete avanzata per un programma, che sia [u
 Quando abiliti una configurazione di rete avanzata per un ambiente, puoi abilitare l’inoltro di porta opzionale e gli host non proxy. I parametri sono configurabili in base all’ambiente per offrire flessibilità.
 
 * **Inoltro porte**: le regole di inoltro porte devono essere dichiarate per tutte le porte di destinazione diverse da 80/443, ma solo se non si utilizza il protocollo HTTP o HTTPS.
-   * Le regole di port forwarding vengono definite specificando il set di host di destinazione (nomi o IP e porte).
+   * Le regole di inoltro porte vengono definite specificando il set di host di destinazione (nomi o IP e porte).
    * La connessione client che utilizza la porta 80/443 su http/https deve continuare a utilizzare le impostazioni proxy nella connessione per applicare le proprietà della rete avanzata alla connessione.
-   * Per ogni host di destinazione, devi mappare la porta di destinazione prevista a una porta da 30000 a 30999.
+   * Per ogni host di destinazione, è necessario mappare la porta di destinazione prevista su una porta da 30000 a 30999.
    * Le regole di inoltro porte sono disponibili per tutti i tipi di rete avanzati.
 
 * **Host non proxy**: gli host non proxy consentono di dichiarare un set di host che devono indirizzare attraverso un intervallo di indirizzi IP condivisi anziché l’IP dedicato.
@@ -648,7 +648,7 @@ Quando abiliti una configurazione di rete avanzata per un ambiente, puoi abilita
 
    ![Aggiunta di host non proxy](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. Il giorno **Porta in avanti** Se non utilizzi HTTP o HTTPS, puoi facoltativamente definire regole di inoltro porte per tutte le porte di destinazione diverse da 80/443. Fornisci un **Nome**, **Origine porta** e **Destinazione porta** e tocca o fai clic su **Aggiungi**.
+1. Nella scheda **Port forwarding**, se non utilizzi HTTP o HTTPS, puoi facoltativamente definire regole di inoltro porte per tutte le porte di destinazione diverse da 80/443. Fornisci un **Nome**, **Origine porta** e **Destinazione porta** e tocca o fai clic su **Aggiungi**.
 
    * La regola viene aggiunta al relativo elenco nella scheda.
    * Ripeti questo passaggio per aggiungere più regole.

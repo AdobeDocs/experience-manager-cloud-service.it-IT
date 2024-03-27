@@ -3,9 +3,9 @@ title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Ma
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: dbdc63db9a9ac954ce6359d3643231d6e195fd53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '302'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 15575 {#release-15575}
 
-Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 15575, rilasciata al pubblico il mercoledì 19 marzo 2024. La versione di manutenzione precedente era 15262.
+Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 15575, rilasciata al pubblico il 19 marzo 2024. La versione di manutenzione precedente era 15262.
 
 Con l’attivazione delle funzioni 2024.3.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it).
 
@@ -25,7 +25,7 @@ Nessuno.
 
 ### Problemi risolti {#fixed-issues-15575}
 
-* ASSETS-36358: non è possibile eseguire il rendering del rapporto di caricamento.
+* ASSETS-36358: impossibile eseguire il rendering del rapporto sui caricamenti.
 * GRANITE-50774: GraniteContent deve utilizzare l’ordine deterministico dei valori proprietà al momento dell’avvio.
 
 ### Problemi noti {#known-issues-15575}
