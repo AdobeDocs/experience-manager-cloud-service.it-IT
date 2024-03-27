@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 47e85190c2aacfb4429408ce159fecb9b0646569
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 >
 >Da qui puoi passare alle note sulla versione delle versioni precedenti, ad esempio 2021 o 2022.
 >
->Dai un’occhiata alla [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) per informazioni sulle prossime attivazioni delle funzioni per [!DNL Experience Manager] as a Cloud Service.
+>Dai un’occhiata alla [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) per informazioni sulle prossime attivazioni delle funzioni per [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->Consulta [Ultimi aggiornamenti della documentazione](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates) per informazioni dettagliate sugli aggiornamenti della documentazione non direttamente correlati a una versione.
+>Consulta [Ultimi aggiornamenti della documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates) per informazioni dettagliate sugli aggiornamenti della documentazione non direttamente correlati a una versione.
 
 ## Data di pubblicazione {#release-date}
 
@@ -109,14 +109,14 @@ I clienti Dynatrace possono monitorare il loro utilizzo di AEM. [Scopri come](/h
 
 Gli [ambienti di sviluppo rapido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) ora supportano il codice front-end basato su [temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelli di sito](/help/sites-cloud/administering/site-creation/site-templates.md), per i primi utilizzatori. Con gli RDE, questa operazione viene eseguita utilizzando una direttiva della riga di comando, anziché una [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Invia un’e-mail all’indirizzo **aemcs-rde-support@adobe.com** per provarlo e fornire un feedback.
 
-### Programma di adozione anticipata configurazione CDN {#cdn-config-early-adopter}
+### Programma per i primi utilizzatori della configurazione CDN {#cdn-config-early-adopter}
 
-Oltre agli ultimi [Regole filtro traffico](/help/security/traffic-filter-rules-including-waf.md), che include le regole WAF (Web Application Firewall) facoltative, esiste l’opportunità di utilizzare la pipeline di configurazione per dichiarare e distribuire [altri tipi di configurazione CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Iscriviti al programma di adozione anticipata tramite e-mail **aemcs-cdn-config-adopter@adobe.com** per accedere a:
+Oltre alle [Regole del filtro del traffico](/help/security/traffic-filter-rules-including-waf.md) rilasciate di recente, che includono le regole WAF (Web Application Firewall) facoltative, esiste l’opportunità di utilizzare la pipeline di configurazione per specificare e distribuire [altri tipi di configurazione CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Iscriviti al programma per primi utilizzatori tramite e-mail all’indirizzo **aemcs-cdn-config-adopter@adobe.com** per accedere a:
 * 301/302 reindirizzamenti lato client
-* trasferimento di richieste al server Edge di a origini arbitrarie
-* Trasformazioni URL
-* impostazione o modifica delle intestazioni di richiesta o risposta
-* pagine di errore personalizzate quando la rete CDN non può raggiungere l’AEM
+* proxy di richieste al server Edge di origini arbitrarie
+* trasformazioni URL
+* impostazione o modifica delle intestazioni di risposta o richiesta
+* pagine di errore personalizzate quando la rete CDN non può raggiungere AEM
 
 ## Cloud Manager {#cloud-manager}
 
