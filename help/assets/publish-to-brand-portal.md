@@ -1,18 +1,18 @@
 ---
 title: Pubblicare risorse, cartelle e raccolte su Brand Portal
 description: Pubblicare risorse, cartelle e raccolte su Brand Portal.
-contentOwner: Vishabh Gupta
+contentOwner: Adobe
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
+source-git-commit: 56a1c18f4ad700305d3b32f1b24d87ec6321325f
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 90%
+source-wordcount: '1280'
+ht-degree: 85%
 
 ---
 
-# Pubblicare risorse su Brand Portal {#publish-assets-to-brand-portal}
+# Pubblicare risorse in Brand Portal {#publish-assets-to-brand-portal}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -25,9 +25,9 @@ Devi però prima configurare AEM Assets con Brand Portal. Per ulteriori dettagli
 
 Le eventuali modifiche apportate successivamente alla risorsa, alla cartella o alla raccolta originale in AEM Assets non verranno applicate in Brand Portal finché non vengono ripubblicate da AEM Assets. Questa funzione garantisce che le modifiche in corso d’opera non siano disponibili in Brand Portal. Solo le modifiche approvate pubblicate da un amministratore sono infatti disponibili in Brand Portal.
 
-* [Pubblicare risorse su Brand Portal](#publish-assets-to-bp)
-* [Pubblicare cartelle su Brand Portal](#publish-folders-to-brand-portal)
-* [Pubblicare raccolte su Brand Portal](#publish-collections-to-brand-portal)
+* [Pubblicare risorse in Brand Portal](#publish-assets-to-bp)
+* [Pubblicare cartelle in Brand Portal](#publish-folders-to-brand-portal)
+* [Pubblicare raccolte in Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Le eventuali modifiche apportate successivamente alla risorsa, alla cartella o a
 >Le risorse devono essere pubblicate in batch. Il valore consigliato per la dimensione del batch è 15K.
 > Per [!DNL Experience Manager Assets] as a [!DNL Cloud Service], la velocità di trasferimento osservata in condizioni di laboratorio è di 1000 risorse all&#39;ora. Il tasso si osserva con una dimensione media di 10 MB di risorse.
 
-## Pubblicare risorse su Brand Portal {#publish-assets-to-bp}
+## Pubblicare risorse in Brand Portal {#publish-assets-to-bp}
 
 Di seguito è descritta la procedura per pubblicare risorse su Brand Portal da AEM Assets:
 
@@ -75,7 +75,9 @@ Per pianificare la pubblicazione delle risorse su Brand Portal in una data o un�
 
    Seleziona **[!UICONTROL Più tardi]** in **[!UICONTROL Pianificazione]**.
 
-   ![publishlaterbp-1](assets/publishlaterbp-1.png)
+   <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
+
+   ![pubblica più tardi](assets/publish-later.png)
 
 1. Seleziona un valore per **[!UICONTROL Data di attivazione]** e specifica l’ora. Fai clic su **[!UICONTROL Avanti]**.
 
@@ -83,28 +85,26 @@ Per pianificare la pubblicazione delle risorse su Brand Portal in una data o un�
 
 1. Specifica un valore per **[!UICONTROL Titolo flusso di lavoro]** in **[!UICONTROL Flussi di lavoro]**. Fai clic su **[!UICONTROL Pubblica più tardi]**.
 
-   ![publishworkflow](assets/publishworkflow.png)
+   <!--![publishworkflow](assets/publishworkflow.png)-->
 
-Accedi all’interfaccia di Brand Portal per visualizzare le risorse pubblicate (a seconda della data o dell’ora pianificata).
-
-![bp_landingpage](assets/bp_landingpage.png)
+   ![flusso di lavoro di pubblicazione](assets/publish-workflow.png)
 
 >[!NOTE]
 >
 > * La parte utenti esistenti del gruppo DAM-Users dispone dell’accesso in lettura al percorso &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
->* I nuovi utenti (o utenti non amministratori) richiedono i seguenti diritti per la pubblicazione su Brand Portal.
+> * I nuovi utenti (o utenti non amministratori) richiedono i seguenti diritti per la pubblicazione su Brand Portal.
 > Percorsi:
-> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; : jcr:read
->/libs : jcr:read
->/conf : jcr:read
->/content : jcr:read, crx:replicate
->/content/dam/ : jcr:read,modify, crx:replicate
+> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>`/libs : jcr:read`
+>`/conf : jcr:read`
+>`/content : jcr:read, crx:replicate`
+>`/content/dam/ : jcr:read,modify, crx:replicate`
 
-## Pubblicare cartelle su Brand Portal {#publish-folders-to-brand-portal}
+## Pubblicare cartelle in Brand Portal {#publish-folders-to-brand-portal}
 
 Puoi pubblicare o annullare subito la pubblicazione delle cartelle di risorse oppure pianificare la pubblicazione in una data o un’ora successiva.
 
-### Pubblicare cartelle su Brand Portal {#publish-folders-to-bp}
+### Pubblicare cartelle in Brand Portal {#publish-folders-to-bp}
 
 1. Dalla console di Assets, seleziona le cartelle da pubblicare e fai clic su **[!UICONTROL Pubblicazione rapida]** nella barra degli strumenti.
 
@@ -131,8 +131,7 @@ Puoi pubblicare o annullare subito la pubblicazione delle cartelle di risorse op
    Viene visualizzato un messaggio per informare che la cartella è stata accodata per la pubblicazione su Brand Portal. Per visualizzare la cartella pubblicata, accedi all’interfaccia di Brand Portal.
 
 1. **Pubblicare le cartelle in un secondo momento**
-
-   Per pianificare la pubblicazione delle cartelle di risorse in una data o in un’ora successiva:
+Per pianificare la pubblicazione delle cartelle di risorse in una data o in un’ora successiva:
 
    1. Seleziona le cartelle di cui vuoi pianificare la pubblicazione e fai clic su **[!UICONTROL Gestisci pubblicazione]** nella barra degli strumenti in alto.
    1. In **[!UICONTROL Azione]**, seleziona **[!UICONTROL Pubblica su Brand Portal]**.
@@ -141,15 +140,31 @@ Puoi pubblicare o annullare subito la pubblicazione delle cartelle di risorse op
 
    1. Seleziona un valore per **[!UICONTROL Data di attivazione]** e specifica l’ora. Fai clic su **[!UICONTROL Avanti]**.
 
-      ![publishlaterbp](assets/publishlaterbp.png)
+      <!--![publishlaterbp](assets/publishlaterbp.png)-->
+
+   ![pubblica cartella più tardi](assets/publish-later-folder.png)
 
    1. Conferma la selezione in **[!UICONTROL Ambito]**. Fai clic su **[!UICONTROL Avanti]**.
 
    1. Specifica un titolo del flusso di lavoro in **[!UICONTROL Flussi di lavoro]**. Fai clic su **[!UICONTROL Pubblica più tardi]**.
 
-      ![manageschedulepub](assets/manageschedulepub.png)
+      <!--![manageschedulepub](assets/manageschedulepub.png)-->
 
-### Annullare la pubblicazione di cartelle su Brand Portal {#unpublish-folders-from-brand-portal}
+   ![flusso di lavoro di pubblicazione](assets/publish-workflow.png)
+
+### Visualizza file o cartella pubblicata in Brand Portal {#view-published-file-folder}
+
+1. Accedi all’interfaccia di Brand Portal per visualizzare le risorse pubblicate (a seconda della data o dell’ora pianificata).
+
+   ![bp_landingpage](assets/bp_landingpage.png)
+
+1. Passa alla vista a elenco ![Vista a elenco](assets/list-view.svg) per visualizzare lo stato di pubblicazione corrente della risorsa.
+
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+
+![stato del rapporto generato](assets/report-status.JPG)
+
+### Annullare la pubblicazione di cartelle da Brand Portal {#unpublish-folders-from-brand-portal}
 
 Per rimuovere una cartella di risorse pubblicata su Brand Portal, annullane la pubblicazione dall’istanza di AEM Assets. Dopo l’annullamento della pubblicazione della cartella originale, la relativa copia non sarà più disponibile per gli utenti di Brand Portal.
 
@@ -195,7 +210,7 @@ Per annullare la pubblicazione delle cartelle di risorse su Brand Portal:
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
-## Pubblicare raccolte su Brand Portal {#publish-collections-to-brand-portal}
+## Pubblicare raccolte in Brand Portal {#publish-collections-to-brand-portal}
 
 Puoi pubblicare o annullare la pubblicazione delle raccolte dall’istanza cloud di AEM Assets.
 
