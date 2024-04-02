@@ -3,9 +3,9 @@ title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 38a16251372ee6ba77687f524e5057e00f16f58e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3669'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Una sottocategoria delle regole del filtro del traffico richiede una licenza di 
 
 Le regole del filtro del traffico possono essere distribuite ai tipi di ambiente di sviluppo, di staging e di produzione nei programmi di produzione (non sandbox) tramite le pipeline di configurazione di Cloud Manager. Il supporto per gli RDE sarà disponibile in futuro.
 
-[Segui con un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) per sviluppare rapidamente competenze concrete su questa funzione.
+[Segui con un tutorial](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) per sviluppare rapidamente competenze concrete su questa funzione.
 
 >[!NOTE]
 >Ti interessano altre opzioni per configurare il traffico sulla rete CDN, tra cui la modifica della richiesta/risposta, la dichiarazione dei reindirizzamenti e il proxy a un’origine non AEM? [Scopri come e provalo](/help/implementing/dispatcher/cdn-configuring-traffic.md) iscrivendoti al programma per i primi utilizzatori.
