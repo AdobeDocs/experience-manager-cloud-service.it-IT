@@ -2,7 +2,7 @@
 title: Autenticazione dell’editor universale
 description: Scopri in che modo Universal Editor utilizza Identity Management System (IMS) di Adobe per l’autenticazione.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 89%
@@ -13,8 +13,6 @@ ht-degree: 89%
 # Autenticazione dell’editor universale {#authentication}
 
 Scopri come l’editor universale effettua l’autenticazione.
-
-{{universal-editor-status}}
 
 ## Opzioni {#options}
 
