@@ -1,13 +1,13 @@
 ---
 title: Genera varianti
 description: Scopri come generare varianti, accessibile dal Sidekick di Edge Delivery Services
-source-git-commit: 88d0b0a6dc2dacdf907ab46c804087772ab2e030
+exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 0%
 
 ---
-
 
 # Genera varianti {#generate-variations}
 
@@ -343,7 +343,7 @@ Selezione di un **Adobe Target** il pubblico nel prompt consente di personalizza
 
    >[!NOTE]
    >
-   >Per utilizzare un&#39; **Adobe Target** pubblico è necessario compilare il campo descrizione. In caso contrario, il pubblico viene visualizzato nell’elenco a discesa come non disponibile. Per aggiungere una descrizione, passa a Target e [aggiungi una descrizione del pubblico](https://experienceleague.adobe.com/docs/target-learn/tutorials/audiences/create-audiences).
+   >Per utilizzare un&#39; **Adobe Target** pubblico è necessario compilare il campo descrizione. In caso contrario, il pubblico viene visualizzato nell’elenco a discesa come non disponibile. Per aggiungere una descrizione, passa a Target e [aggiungi una descrizione del pubblico](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
 
    ![Genera varianti - Origine pubblico - Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 

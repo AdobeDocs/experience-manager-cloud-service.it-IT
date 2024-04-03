@@ -1,22 +1,22 @@
 ---
-title: Guida introduttiva di AEM Forms Edge Delivery Service. Creare un modulo.
-description: Forme perfette, veloce! ⚡ authoring basato su documento di AEM Forms Edge Delivery = velocità sorprendente e moduli compatibili con SEO per utenti e motori di ricerca più felici.
+title: Guida introduttiva a Edge Delivery Services di AEM Forms. Crea un modulo.
+description: Crea moduli perfetti, velocemente. ⚡ authoring basato su documento di AEM Forms Edge Delivery = velocità sorprendente e moduli compatibili con SEO per utenti e motori di ricerca più felici.
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 0%
+ht-degree: 99%
 
 ---
 
-# Creare un modulo utilizzando il blocco Forms adattivo
+# Creare un modulo utilizzando il Blocco moduli adattivi
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
 
-AEM Forms Edge Delivery fornisce un blocco, noto come Adaptive Forms Block, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. È possibile [crea un nuovo progetto AEM preconfigurato con Adaptive Forms Block](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) o [aggiungere il blocco Forms adattivo a un progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM Forms Edge Delivery fornisce un blocco, noto come Blocco moduli adattivi, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. È possibile [creare un nuovo progetto AEM preconfigurato con Blocco moduli adattivi](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) o [aggiungere il Blocco moduli adattivi a un progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
-Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google Sheets, consentendo di utilizzare un ecosistema dinamico e API affidabili di Google Sheets, Microsoft Excel e Microsoft SharePoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
+Questi moduli inviano i dati direttamente a un file Microsoft Excel o Fogli Google, consentendo di utilizzare un ecosistema dinamico e API affidabili di Fogli Google, Microsoft Excel e Microsoft SharePoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
 
 ![Ecosistema di authoring basato su documenti](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
@@ -25,9 +25,9 @@ Questi moduli inviano i dati direttamente a un file Microsoft Excel o Google She
 
 Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
-* Configurare un [Progetto AEM utilizzando AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) o [è stato aggiunto il blocco Forms adattivo al progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clona l’archivio GitHub corrispondente sul computer locale.
+* Configurare un [Progetto AEM utilizzando AEM Forms standard](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) o [Blocco moduli adattivi aggiunto al progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clona l’archivio GitHub corrispondente sul computer locale.
 In questo documento, la cartella locale del progetto Edge Delivery Services (EDS) viene indicata come `[EDS Project repository]`.
-* Assicurati di avere accesso a Google Sheets o Microsoft SharePoint. Per impostare Microsoft SharePoint come origine di contenuto, vedere [Come usare SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
+* Assicurati di avere accesso a Fogli Google o Microsoft SharePoint. Per impostare Microsoft SharePoint come origine di contenuto, vedi [Come usare SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -64,13 +64,13 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 -->
 
-+++ Passaggio 1: creare un modulo utilizzando Microsoft Excel o Foglio Google.
++++ Passaggio 1: creare un modulo utilizzando Microsoft Excel o foglio Google.
 
 Invece di navigare attraverso processi complessi, la creazione di un modulo può essere ottenuta facilmente utilizzando un foglio di calcolo. È possibile definire le righe e le colonne che costituiranno la struttura del modulo. Ogni riga rappresenta un singolo utente [campo modulo](/help/edge/docs/forms/form-components.md#available-components) e le intestazioni di colonna definiscono le corrispondenti [proprietà campo](/help/edge/docs/forms/form-components.md#components-properties).
 
-Ad esempio, considera il seguente foglio di calcolo in cui le righe contornano i campi per un `enquiry` le intestazioni di maschera e colonna definiscono le relative proprietà:
+Ad esempio, considera il seguente foglio di calcolo in cui le righe contornano i campi per un modulo `enquiry` e le intestazioni di colonna definiscono le relative proprietà:
 
-![Foglio di calcolo interrogazione](/help/edge/assets/enquiry-form-spreadsheet.png)
+![Foglio di calcolo di interrogazione](/help/edge/assets/enquiry-form-spreadsheet.png)
 
 Per procedere con la creazione del modulo:
 
@@ -80,25 +80,25 @@ Per procedere con la creazione del modulo:
 
    ![Contenuto di esempio su Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. Assicurati che il foglio sia condiviso con l’utente AEM appropriato (ad esempio `helix@adobe.com`) [in base alle configurazioni specificate per il progetto](https://www.aem.live/docs/setup-customer-SharePoint). Concedere all&#39;utente l&#39;autorizzazione di modifica per il foglio.
+1. Assicurati che il foglio sia condiviso con l’utente AEM appropriato (ad esempio `helix@adobe.com`) [in base alle configurazioni specificate per il progetto](https://www.aem.live/docs/setup-customer-sharepoint). Concedi all’utente l’autorizzazione di modifica per il foglio.
 
-1. Apri il foglio di calcolo creato e rinomina il foglio predefinito in &quot;shared-default&quot;.
+1. Apri il foglio di calcolo creato e rinomina il foglio predefinito in “shared-default”.
 
-   ![rinominare il foglio predefinito in &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
+   ![rinominare il foglio predefinito in “shared-default”](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Per aggiungere i campi modulo, inserire righe e intestazioni di colonna nel foglio &quot;shared-default&quot;. Ogni riga deve rappresentare un [campo modulo](/help/edge/docs/forms/form-components.md#available-components), con intestazioni di colonna che definiscono il campo corrispondente [proprietà](/help/edge/docs/forms/form-components.md#components-properties).
+1. Per aggiungere i campi modulo, inserire le righe e le intestazioni di colonna nel foglio “shared-default”. Ogni riga deve rappresentare un [campo modulo](/help/edge/docs/forms/form-components.md#available-components), con intestazioni di colonna che definiscono il campo corrispondente [proprietà](/help/edge/docs/forms/form-components.md#components-properties).
 
 
-   Per un avvio rapido, è consigliabile copiare il contenuto della [Foglio di calcolo interrogazione](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) nel foglio di calcolo. Dopo aver copiato il contenuto, salva il foglio di calcolo.
+   Per un avvio rapido, considera copiare il contenuto del [Foglio di calcolo interrogazione](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) nel proprio foglio di calcolo. Dopo aver copiato il contenuto, salva il foglio di calcolo.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
 
-1. Utilizzare [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l&#39;anteprima del foglio.
+1. Utilizza [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l’anteprima del foglio.
 
    ![Utilizza AEM Sidekick per visualizzare l’anteprima del foglio](/help/edge/assets/preview-form.png)
 
-   In anteprima, nelle nuove schede del browser il contenuto del foglio viene visualizzato in formato JSON. Assicurati di acquisire l’URL di anteprima, in quanto è necessario per il rendering del modulo nella sezione successiva. Il formato dell’URL è il seguente:
+   In anteprima, nelle nuove schede del browser il contenuto del foglio viene visualizzato in formato JSON. Assicurati di acquisire l’URL di anteprima, in quanto è necessario per il rendering del modulo nella sezione successiva. Il formato dell’URL è attualmente il seguente:
 
 
    ```JSON
@@ -109,49 +109,49 @@ Per procedere con la creazione del modulo:
    * `<repository>` denota l’archivio GitHub.
    * `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
 
-   Ad esempio, se l’archivio del progetto è denominato &quot;portale&quot;, si trova sotto l’account &quot;wkndforms&quot; e stai utilizzando il ramo &quot;principale&quot;, l’URL avrà l’aspetto seguente:
+   Ad esempio, se l’archivio del progetto è denominato “portal”, si trova sotto l’account “wkndforms” e stai utilizzando il ramo “main”, l’URL avrà l’aspetto seguente:
 
    `https://main--portal--wkndforms.hlx.page/enquiry.json`
 
 
 +++
 
-+++ Passaggio 2: visualizzare l&#39;anteprima del modulo utilizzando la pagina Edge Delivery Services (EDS).
++++ Passaggio 2: visualizzare in anteprima il modulo utilizzando la pagina Edge Delivery Services (EDS).
 
 
-Finora è stata preparata la struttura del modulo. Ora, per visualizzare l’anteprima del modulo:
+Finora è stata preparata la struttura del modulo. Ora, per visualizzare in anteprima il modulo:
 
 1. Apri l’account Microsoft SharePoint o Google Drive e passa alla directory del progetto AEM Edge Delivery.
 
 
 
-1. Aprire un file di documento, ad esempio un file di indice, per incorporare il modulo. In alternativa, è possibile creare un nuovo documento.
+1. apri un file di documento (ad esempio un file index) per incorporare il modulo. In alternativa, puoi creare un nuovo documento.
 
-1. Spostarsi nella posizione desiderata all&#39;interno del documento in cui si desidera aggiungere il modulo.
+1. Spostati nella posizione desiderata all’interno del documento in cui desideri aggiungere il modulo.
 
-1. Per creare un blocco di modulo per il rendering del modulo. Selezionate Inserisci > Tabella (Table) e create una tabella a una colonna e due righe. Denomina la tabella &quot;Form&quot; e incolla l’URL di anteprima nella seconda riga. Accertati che l’URL sia formattato come collegamento ipertestuale, non come testo normale, come illustrato di seguito:
+1. Creare un blocco del modulo per il rendering del modulo. Seleziona Inserisci > Tabella e crea una tabella a una colonna e due righe. Denomina la tabella “Modulo” e incolla l’URL di anteprima nella seconda riga. Accertati che l’URL sia formattato come collegamento ipertestuale, non come testo normale, come illustrato di seguito:
 
    | Modulo |
    |---|
    | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
 
 
-   ![Aggiungere un blocco Forms adattivo alla pagina Web](/help/edge/assets/add-adaptive-forms-block.png)
+   ![Aggiungere un blocco di moduli adattivi alla pagina web](/help/edge/assets/add-adaptive-forms-block.png)
 
-   Questo blocco funge da segnaposto in cui è incorporato il modulo. Nella seconda riga del blocco, aggiungi l’URL di anteprima del `<form>.json` come collegamento ipertestuale.
+   Questo blocco funge da segnaposto in cui è incorporato il modulo. Nella seconda riga del blocco, aggiungi l’URL di anteprima del file `<form>.json` come collegamento ipertestuale.
 
    >[!IMPORTANT]
    >
    >
-   > Verificare che l&#39;URL sia formattato come collegamento ipertestuale anziché come testo normale.
+   > Verifica che l’URL sia formattato come collegamento ipertestuale anziché essere visualizzato come testo normale.
 
 
-1. Utilizzare [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l&#39;anteprima del documento. Nella pagina viene ora visualizzato il modulo. Ad esempio, questo è il modulo basato su [foglio di calcolo interrogazione](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
+1. Utilizza [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare in anteprima il documento. Nella pagina viene ora visualizzato il modulo. Ad esempio, questo è il modulo basato sul [foglio di calcolo di richiesta](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
 
 
-   [![Un esempio di modulo EDS](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   [![Esempio di modulo EDS](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
 
-   A questo punto, compilare il modulo e fare clic sul pulsante Invia, si verifica un errore simile al seguente, perché il foglio di calcolo non è ancora impostato per accettare i dati.
+   A questo punto, compila il modulo e fai clic sul pulsante Invia. Riscontrerai un errore simile al seguente, perché il foglio di calcolo non è ancora impostato per accettare i dati.
 
    ![errore durante l’invio del modulo](/help/edge/assets/form-error.png)
 
@@ -160,7 +160,7 @@ Finora è stata preparata la struttura del modulo. Ora, per visualizzare l’ant
 
 ## Passaggio successivo
 
-[Preparare il foglio di calcolo](/help/edge/docs/forms/submit-forms.md) per iniziare ad accettare i dati all’invio del modulo.
+[Preparare il foglio di calcolo](/help/edge/docs/forms/submit-forms.md) per iniziare ad accettare i dati al momento dell’invio del modulo.
 
 
 ## Consulta anche
