@@ -3,10 +3,10 @@ title: Query GraphQL persistenti
 description: Scopri come rendere persistenti le query GraphQL in Adobe Experience Manager as a Cloud Service per ottimizzarne le prestazioni. Le query persistenti possono essere richieste dalle applicazioni client tramite il metodo HTTP GET e la risposta può essere memorizzata nella cache ai livelli dispatcher e CDN, migliorando in definitiva le prestazioni delle applicazioni client.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: ef6138af1735dc7aecbc4210a3fe9983d73348dd
+source-git-commit: 2fa76dbe93bcf31901ec0422470b05dadfe4f43f
 workflow-type: tm+mt
-source-wordcount: '1656'
-ht-degree: 97%
+source-wordcount: '1870'
+ht-degree: 86%
 
 ---
 
@@ -258,6 +258,28 @@ Questa query può essere resa persistente in un percorso `wknd/adventures-by-act
 ```
 
 Codifica UTF-8 `%3B` è per `;` e `%3D` è la codifica per `=`. Affinché la query persistente possa essere eseguita, le variabili della query ed eventuali caratteri speciali devono essere [codificati correttamente](#encoding-query-url).
+
+### Utilizzo delle variabili di query: best practice {#query-variables-best-practices}
+
+Quando si utilizzano le variabili nelle query, è necessario seguire alcune best practice:
+
+* Codifica Come approccio generale, si consiglia sempre di codificare tutti i caratteri speciali; ad esempio, `;`, `=`, `?`, `&`, tra gli altri.
+* Le query persistenti con punto e virgola che utilizzano più variabili (separate da punto e virgola) devono disporre di:
+   * il punto e virgola (`%3B`); e anche la codifica dell’URL otterrà questo risultato
+   * o un punto e virgola finale aggiunto alla fine della query
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+Quando `CACHE_GRAPHQL_PERSISTED_QUERIES` è abilitato per Dispatcher, quindi per i parametri che contengono `/` o `\` nel loro valore, sono codificati due volte a livello di Dispatcher.
+Per evitare questa situazione:
+   * Abilita `DispatcherNoCanonURL` in Dispatcher.
+Questo istruirà Dispatcher a inoltrare l’URL originale all’AEM, evitando così la duplicazione delle codifiche.
+Tuttavia, al momento questa impostazione funziona solo sul `vhost` di Dispatcher per riscrivere gli URL (ad esempio, quando utilizzi URL abbreviati), potrebbe essere necessario un tag `vhost` per gli URL di query persistenti.
+   * Invia `/` o `\` caratteri non codificati.
+Quando si chiama l’URL della query persistente, assicurarsi che tutti `/` o `\` I caratteri non sono codificati nel valore delle variabili di query persistenti.
+     >[!NOTE]
+     >
+     >Questa opzione è consigliata solo se `DispatcherNoCanonURL` La soluzione non può essere implementata per nessun motivo.
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+Quando `CACHE_GRAPHQL_PERSISTED_QUERIES` è abilitato per Dispatcher, quindi per `;` non può essere utilizzato nel valore di una variabile.
 
 ## Memorizzazione in cache delle query persistenti {#caching-persisted-queries}
 
