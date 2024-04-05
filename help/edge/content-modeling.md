@@ -2,10 +2,10 @@
 title: Modellazione dei contenuti per l’authoring di AEM con progetti Edge Delivery Services
 description: Scopri come funziona la modellazione dei contenuti per l’authoring di AEM con progetti Edge Delivery Services e come modellare i tuoi contenuti.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
 workflow-type: tm+mt
-source-wordcount: '2095'
-ht-degree: 81%
+source-wordcount: '2072'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ Prima di iniziare a modellare il contenuto per il progetto, assicurati di aver l
 
 * [Guida introduttiva: tutorial per sviluppatori](/help/edge/developer/tutorial.md)
 * [Markup, sezioni, blocchi e blocco automatico](/help/edge/developer/markup-sections-blocks.md)
-* [Bloccare una raccolta](/help/edge/developer/block-collection.md)
+  <!--* [Block Collection](/help/edge/developer/block-collection.md)-->
 
 È essenziale comprendere tali concetti per trovare un modello di contenuto convincente che funzioni in modo indipendente dall’origine dei contenuti. Questo documento fornisce dettagli sui meccanismi implementati specificamente per l’authoring di AEM.
 
@@ -115,13 +115,13 @@ Per ogni blocco, lo sviluppatore:
 * può definire un [ID filtro](/help/implementing/universal-editor/customizing.md#filtering-components).
    * L’ID filtro è un riferimento al filtro del componente che consente di modificare il comportamento di authoring, ad esempio limitando quali elementi secondari possono essere aggiunti al blocco o alla sezione o quali funzioni dell’editor Rich Text sono abilitate.
 
-Tutte queste informazioni vengono memorizzate nell&#39;AEM quando un blocco viene aggiunto a una pagina. Se manca il tipo di risorsa o il nome del blocco, il blocco non verrà riprodotto sulla pagina.
+Tutte queste informazioni vengono memorizzate in AEM quando un blocco viene aggiunto a una pagina. Se manca il tipo di risorsa o il nome del blocco, il blocco non verrà riprodotto sulla pagina.
 
 >[!WARNING]
 >
->Anche se possibile, non è necessario o consigliato implementare componenti AEM personalizzati. I componenti per Edge Delivery Services forniti da AEM sono sufficienti e offrono alcuni guardrail per facilitare lo sviluppo.
+>Sebbene sia possibile, non è necessario, né consigliato implementare componenti AEM personalizzati. I componenti per Edge Delivery Services forniti da AEM sono sufficienti e offrono alcuni guardrail per facilitare lo sviluppo.
 >
->I componenti forniti dall’AEM restituiscono un markup che può essere utilizzato da [helix-html2md](https://github.com/adobe/helix-html2md) durante la pubblicazione su Edge Delivery Services e da [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) durante il caricamento di una pagina nell’Editor universale. Il markup è il contratto stabile tra l&#39;AEM e le altre parti del sistema e non consente personalizzazioni. Per questo motivo, i progetti non devono modificare i componenti e non devono utilizzare componenti personalizzati.
+>I componenti forniti da AEM restituiscono un markup che può essere utilizzato da [helix-html2md](https://github.com/adobe/helix-html2md) durante la pubblicazione su Edge Delivery Services e da [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) durante il caricamento di una pagina nell’Editor universale. Il markup è il contratto stabile tra AEM e le altre parti del sistema e non consente personalizzazioni. Per questo motivo, i progetti non devono modificare i componenti, né utilizzare componenti personalizzati.
 
 ### Struttura del blocco {#block-structure}
 
@@ -323,7 +323,7 @@ Nell’esempio seguente, un blocco accetta un elenco di icone collegate come ele
 
 Con le [spiegazioni sulle meccaniche della struttura del blocco,](#block-structure) è possibile creare un modello di contenuto che mappa i contenuti persistenti in AEM uno a uno al livello di distribuzione.
 
-All’inizio di ogni progetto, è necessario prendere in considerazione attentamente un modello di contenuto per ogni blocco. Deve essere indipendente dall’origine del contenuto e dall’esperienza di authoring per consentire agli autori di passare a un’altra origine o di combinarle riutilizzando al contempo le implementazioni e gli stili dei blocchi. Maggiori dettagli e indicazioni generali sono disponibili nel [David’s Model (second take).](https://www.aem.live/docs/davidsmodel) In particolare, la [raccolta blocchi](/help/edge/developer/block-collection.md) contiene un ampio set di modelli di contenuto per casi d’uso specifici con pattern di interfaccia utente comuni.
+All’inizio di ogni progetto, è necessario prendere in considerazione attentamente un modello di contenuto per ogni blocco. Deve essere indipendente dall’origine del contenuto e dall’esperienza di authoring per consentire agli autori di passare a un’altra origine o di combinarle riutilizzando al contempo le implementazioni e gli stili dei blocchi. Maggiori dettagli e indicazioni generali sono disponibili in [David&#39;s Model (versione 2).](https://www.aem.live/docs/davidsmodel) <!--More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.-->
 
 Per quanto riguarda l’authoring di AEM con Edge Delivery Services, questo solleva la questione della modalità di distribuzione di un modello di contenuto semantico convincente quando le informazioni vengono create con moduli composti da più campi invece che con la modifica del markup semantico in un contesto come il testo in formato RTF.
 
@@ -351,7 +351,7 @@ Tutto il resto verrà riprodotto come testo normale.
 
 #### Comprimi campo {#field-collapse}
 
-Compressione campo è il meccanismo che consente di combinare più valori di campo in un singolo elemento semantico basato su una convenzione di denominazione che utilizza i suffissi `Title`, `Type`, `MimeType`, `Alt`, e `Text` (distinzione maiuscole/minuscole). Qualsiasi proprietà che termina con uno qualsiasi di questi suffissi non sarà considerata un valore, ma piuttosto un attributo di un’altra proprietà.
+La compressione del campo è il meccanismo che consente di combinare più valori di campo in un singolo elemento semantico basato su una convenzione di denominazione che utilizza i suffissi `Title`, `Type`, `MimeType`, `Alt` e `Text` (con distinzione maiuscole/minuscole). Qualsiasi proprietà che termina con uno qualsiasi di questi suffissi non sarà considerata un valore, ma piuttosto un attributo di un’altra proprietà.
 
 ##### Immagini {#image-collapse}
 
@@ -462,9 +462,9 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 Mentre la [compressione campo](#field-collapse) riguarda la combinazione di più proprietà in un singolo elemento semantico, il raggruppamento di elementi riguarda la concatenazione di più elementi semantici in una singola cella. Ciò è particolarmente utile per i casi d’uso in cui l’autore deve essere limitato nel tipo e nel numero di elementi che può creare.
 
-Ad esempio, un componente teaser può consentire all’autore di creare solo un sottotitolo, un titolo e una singola descrizione di paragrafo combinati con un massimo di due pulsanti di invito all’azione. Raggruppando questi elementi insieme si ottiene un markup semantico a cui è possibile applicare uno stile senza ulteriori azioni.
+Ad esempio, un componente teaser permette all’autore di creare solo un sottotitolo, un titolo e una singola descrizione di paragrafo combinati con un massimo di due pulsanti di invito all’azione. Raggruppando questi elementi insieme si ottiene un markup semantico a cui è possibile applicare uno stile senza ulteriori azioni.
 
-Il raggruppamento di elementi utilizza una convenzione di denominazione, in cui il nome del gruppo è separato da ogni proprietà del gruppo da un carattere di sottolineatura. La compressione del campo delle proprietà in un gruppo funziona come descritto in precedenza.
+Il raggruppamento di elementi utilizza una convenzione di denominazione, in cui il nome del gruppo è separato da ogni proprietà del gruppo da trattino basso. La compressione del campo delle proprietà in un gruppo funziona come descritto in precedenza.
 
 >[!BEGINTABS]
 
@@ -624,13 +624,13 @@ Assicurati che il foglio di calcolo sia aggiunto anche alla mappatura del percor
 
 ### Proprietà pagina {#page-properties}
 
-Molte delle proprietà di pagina predefinite disponibili in AEM sono mappate ai rispettivi metadati di pagina in un documento. Ciò include, ad esempio `title`, `description`, `robots`, `canonical url` o `keywords`. Sono disponibili anche alcune proprietà specifiche per l’AEM:
+Molte delle proprietà di pagina predefinite disponibili in AEM sono mappate ai rispettivi metadati di pagina in un documento. Ciò include, ad esempio `title`, `description`, `robots`, `canonical url` o `keywords`. Sono disponibili anche alcune proprietà specifiche per AEM:
 
-* `cq:lastModified` as `modified-time` in formato ISO8601
-* Ora dell&#39;ultima pubblicazione del documento come `published-time` in formato ISO8601
-* `cq:tags` as `cq-tags` come elenco separato da virgole degli ID tag.
+* `cq:lastModified` come `modified-time` in formato ISO8601
+* Ora dell’ultima pubblicazione del documento come `published-time` in formato ISO8601
+* `cq:tags` come `cq-tags` come elenco separato da virgole degli ID tag.
 
-È inoltre possibile definire un modello di componente per i metadati di pagina personalizzati, che verrà reso disponibile all’autore come scheda della finestra di dialogo delle proprietà della pagina di AEM Sites.
+È possibile inoltre definire un modello di componente per i metadati della pagina personalizzati, che verrà reso disponibile all’autore come scheda della finestra di dialogo delle proprietà della pagina di AEM Sites.
 
 Per farlo, crea un modello di componente con l’ID dei `page-metadata`.
 
