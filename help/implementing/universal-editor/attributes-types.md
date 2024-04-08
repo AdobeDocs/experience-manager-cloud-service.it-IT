@@ -2,7 +2,7 @@
 title: Attributi e tipi di elementi
 description: Scopri gli attributi di dati e i tipi di elementi richiesti dall’editor universale.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 75%
@@ -67,3 +67,4 @@ Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 * [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la prima app AEM per utilizzarla.
 * [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e come avviene il flusso di dati tra i suoi servizi e livelli.
 * [Autenticazione dell’editor universale](authentication.md): scopri come l’editor universale effettua l’autenticazione.
+

@@ -2,7 +2,7 @@
 title: Architettura dell’editor universale
 description: Scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 83%
@@ -84,3 +84,4 @@ Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 * [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la tua prima app AEM da utilizzare.
 * [Attributi e tipi](attributes-types.md): scopri gli attributi e i tipi di dati richiesti dall’editor universale.
 * [Autenticazione dell’editor universale](authentication.md): scopri come l’editor universale effettua l’autenticazione.
+

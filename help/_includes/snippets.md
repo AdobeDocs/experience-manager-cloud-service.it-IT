@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '340'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 # Snippet {#snippets}
@@ -57,11 +57,12 @@ ht-degree: 79%
 
 ## Consulta anche {#see-more-forms-eds}
 
-* [Introduzione ai Edge Delivery Services AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Guida introduttiva a Edge Delivery Services di AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Imposta i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati&#x200B;](/help/edge/docs/forms/submit-forms.md)
+* [Impostare i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati](/help/edge/docs/forms/submit-forms.md)
 * [Pubblicare il modulo e iniziare a raccogliere i dati](/help/edge/docs/forms/publish-forms.md)
-* [Personalizzare l&#39;aspetto dei moduli&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-* [Aggiungere sezioni ripetibili a un modulo&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-* [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
+* [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
+* [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
+* [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
+

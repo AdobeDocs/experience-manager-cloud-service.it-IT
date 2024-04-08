@@ -2,7 +2,7 @@
 title: Definizioni di modelli, campi e tipi di componenti
 description: Scopri i campi e i tipi di componenti che possono essere modificati dall’Editor universale nella barra delle proprietà, con alcuni esempi. Scopri come creare una definizione di modello e un collegamento al componente per sfruttare al meglio la tua app.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 10%
@@ -830,3 +830,4 @@ Il testo consente di inserire una singola riga di testo.  Include tipi di conval
 ![Schermata del tipo di componente testo](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
+

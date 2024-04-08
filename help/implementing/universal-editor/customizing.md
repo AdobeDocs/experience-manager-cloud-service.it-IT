@@ -2,7 +2,7 @@
 title: Personalizzazione dell’esperienza di authoring di Universal Editor
 description: Scopri i diversi punti di estensione e altre funzioni che consentono di personalizzare l’interfaccia utente di Universal Editor per soddisfare le esigenze degli autori di contenuti.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -96,3 +96,4 @@ Le condizioni possono essere definite utilizzando [Schema JsonLogic.](https://js
 #### Condition True {#true}
 
 ![Campo di testo visualizzato](assets/shown.png)
+

@@ -2,7 +2,7 @@
 title: Panoramica di Universal Editor per sviluppatori AEM
 description: Se sei uno sviluppatore AEM interessato al funzionamento di Universal Editor e a come utilizzarlo nel progetto, questo documento offre un’introduzione end-to-end che ti guida attraverso la strumentazione del progetto WKND per lavorare con Universal Editor.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 0%
@@ -593,3 +593,4 @@ Per ulteriori informazioni e dettagli sulle funzioni di Universal Editor, consul
 * Consulta il documento [Architettura di Universal Editor](/help/implementing/universal-editor/architecture.md#service) per maggiori dettagli sulla struttura di Universal Editor.
 * Consulta il documento [Sviluppo locale AEM con Universal Editor](/help/implementing/universal-editor/local-dev.md) per ulteriori dettagli su come connettersi a una versione con hosting autonomo di Universal Editor.
 * Consulta il documento [Utilizzo di Sling Resource Merger in Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md) per ulteriori dettagli sui nodi sovrapposti.
+

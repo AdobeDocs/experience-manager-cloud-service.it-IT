@@ -1,13 +1,13 @@
 ---
 title: Eventi editor universale
 description: Scopri i diversi eventi inviati dall’editor universale che puoi utilizzare per reagire ai contenuti o alle modifiche dell’interfaccia utente nell’app remota.
-source-git-commit: e92a0be2213e3d5793fd077bd1968852336cc98b
+exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
 
 ---
-
 
 # Eventi editor universale {#events}
 
@@ -279,3 +279,4 @@ Il payload è vuoto per questo evento.
 ## Risorse aggiuntive {#additional-resources}
 
 * [Chiamate all’editor universale](/help/implementing/universal-editor/calls.md)
+
