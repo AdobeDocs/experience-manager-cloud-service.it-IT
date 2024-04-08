@@ -2,7 +2,7 @@
 title: Pubblicazione di contenuti con l’editor universale
 description: Scopri in che modo l’editor universale pubblica i contenuti e come le tue app possono gestire i contenuti pubblicati.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 785a0db1ba302b8730480651802f98e802abc6d4
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 69%
@@ -49,4 +49,3 @@ Per ulteriori informazioni sui dettagli tecnici di Universal Editor, consulta qu
 * [Architettura dell’editor universale](/help/implementing/universal-editor/architecture.md): scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 * [Attributi e tipi](/help/implementing/universal-editor/attributes-types.md): scopri gli attributi e i tipi di dati richiesti dall’editor universale.
 * [Autenticazione dell’editor universale](/help/implementing/universal-editor/authentication.md): scopri come l’editor universale effettua l’autenticazione.
-
