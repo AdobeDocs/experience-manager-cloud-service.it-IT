@@ -2,10 +2,10 @@
 title: Replica
 description: Scopri la distribuzione e la risoluzione dei problemi di replica in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 39%
+ht-degree: 38%
 
 ---
 
@@ -196,14 +196,17 @@ La dimensione del contenuto trasmesso per chiamata di replica non deve superare 
 
 Per risolvere i problemi di replica, accedi alle code di replica nell’interfaccia web del servizio AEM Author:
 
-1. Dal menu Start dell’AEM, vai a **Strumenti > Implementazione > Distribuzione**
-2. Seleziona la scheda **Pubblica**.
+1. Dal menu Start dell’AEM, vai a **Strumenti** > **Distribuzione** > **Distribuzione**
+1. Seleziona la scheda **Pubblica**.
+
    ![Stato](assets/publish-status.png "Stato")
-3. Controlla lo stato della coda, che dovrebbe essere verde.
-4. È possibile verificare la connessione al servizio di replica
-5. Seleziona la scheda **Registri** che mostra la cronologia delle pubblicazioni di contenuti
+
+1. Controlla lo stato della coda, che dovrebbe essere verde.
+1. È possibile verificare la connessione al servizio di replica
+1. Seleziona la scheda **Registri** che mostra la cronologia delle pubblicazioni di contenuti
 
 ![Registri](assets/publish-logs.png "Registri")
 
-Se non è stato possibile pubblicare il contenuto, l’intera pubblicazione viene ripristinata dal servizio di pubblicazione di AEM.
+Se non è stato possibile pubblicare il contenuto, l’intera pubblicazione viene ripristinata dal servizio di pubblicazione AEM.
+
 In tal caso, la coda principale modificabile presenta uno stato rosso e deve essere rivista per identificare gli elementi che hanno causato l’annullamento della pubblicazione. Facendo clic su tale coda, vengono visualizzati i relativi elementi in sospeso, da cui è possibile cancellare un singolo elemento o tutti gli elementi, se necessario.
