@@ -2,7 +2,7 @@
 title: Attributi e tipi di elementi
 description: Scopri gli attributi di dati e i tipi di elementi richiesti dall’editor universale.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 36be262a7949bc66f97f5483ff463d755f5f78e5
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 75%
@@ -32,7 +32,7 @@ Affinché un’app possa essere modificata dall’editor universale, deve essere
 | `data-aue-filter` | Definisce quali riferimenti possono essere utilizzati |
 | `data-aue-label` | Definisce un’etichetta personalizzata per un elemento selezionabile visualizzato nell’editor. <br>Nel caso in cui`data-aue-model` sia impostata, l’etichetta viene recuperata tramite il modello. |
 | `data-aue-model` | Definisce un modello che viene utilizzato per la modifica basata su modulo nella barra delle proprietà |
-| `data-aue-behavior` | Definisce il [comportamento di uno strumento,](#behaviors) ad esempio, testo o immagine autonomi possono anche imitare un componente per renderlo spostabile o eliminabile |
+| `data-aue-behavior` | Definisce il [comportamento di uno strumento](#behaviors)Ad esempio, un testo o un’immagine isolati possono simulare un componente per renderlo spostabile o eliminabile |
 
 ## Tipi di elementi {#item-types}
 
@@ -67,4 +67,3 @@ Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 * [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la prima app AEM per utilizzarla.
 * [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e come avviene il flusso di dati tra i suoi servizi e livelli.
 * [Autenticazione dell’editor universale](authentication.md): scopri come l’editor universale effettua l’autenticazione.
-
