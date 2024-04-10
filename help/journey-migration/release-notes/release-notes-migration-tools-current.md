@@ -1,29 +1,26 @@
 ---
-title: Note sulla versione 2023.11.0 degli strumenti di migrazione in AEM as a Cloud Service
-description: Note sulla versione 2023.11.0 degli strumenti di migrazione in AEM as a Cloud Service
+title: Note sulla versione 2024.01.0 degli strumenti di migrazione in AEM as a Cloud Service
+description: Note sulla versione 2024.01.0 degli strumenti di migrazione in AEM as a Cloud Service
 feature: Release Information
-exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 0c2dca09a1d0070765e89de833fdd1c7607010c6
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 9%
+source-wordcount: '98'
+ht-degree: 7%
 
 ---
 
-# Note sulla versione 2023.11.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
+# Note sulla versione 2024.01.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2023.11.0 degli strumenti di migrazione in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione 2024.01.0 degli strumenti di migrazione in AEM as a Cloud Service.
 
 ## Strumento Trasferimento contenuti {#ctt-release}
 
 ### Data di pubblicazione {#release-date-ctt}
 
-La data di pubblicazione dello strumento Content Transfer v3.0.6 è il 21 novembre 2023.
+La data di pubblicazione dello strumento Content Transfer v3.0.10 è il 15 gennaio 2024.
 
 ### Novità {#what-is-new-ctt}
 
-* Cloud Acceleration Manager (CAM) è stato aggiornato per avviare automaticamente un’acquisizione una volta completata correttamente l’estrazione di un set di migrazione. L’utente non deve più attendere fino al completamento dell’estrazione per avviare manualmente un’acquisizione. Per ulteriori dettagli sull’acquisizione di contenuti in CAM, consulta [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#ingestion-process).
+* Lo strumento Content Transfer (Trasferimento contenuti) ora supporta la migrazione delle raccolte. Gli utenti possono selezionare la cartella della raccolta utilizzando il selettore dei percorsi ed eseguire l’estrazione.
 
-### Correzioni di bug {#bug-fixes-ctt}
 
-* Gli utenti non sono stati in grado di generare un rapporto di convalida in CAM. Questo problema è stato risolto.
