@@ -3,9 +3,9 @@ title: Utilizzo di Edge Delivery Services con progetti AEM esistenti
 description: Scopri come sfruttare i vantaggi di Edge Delivery Services sui tuoi progetti AEM esistenti
 feature: Edge Delivery Services
 exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '339'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ L’Editor pagina di AEM funziona solo con [Componenti AEM](/help/implementing/d
 
 Nella fase uno, puoi continuare a utilizzare la struttura, i componenti e gli strumenti di authoring del sito AEM esistente. Il rendering del sito web verrà ricreato utilizzando i blocchi mediante JavaScript e CSS e verrà distribuito tramite Edge Delivery Services.
 
-<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
+Consulta la [sezione Creare](/help/edge/developer/block-collection.md) della documentazione di Edge Delivery Services per ulteriori dettagli sui blocchi e su come svilupparli per Edge Delivery Services.
 
 Sarà necessario un convertitore su App Builder per convertire l’output HTML sottoposto a rendering di AEM e inviarlo a Edge Delivery Services.
 
