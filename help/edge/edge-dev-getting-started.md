@@ -4,9 +4,9 @@ description: Questa guida ti aiuterà a essere subito operativo con un nuovo sit
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ AEM offre due diversi editor di contenuti; la possibilità di scegliere quale ut
 
 Questa guida è incentrata sui Progetti AEM di Edge Delivery Services che utilizzano l’Editor universale. Per ulteriori dettagli sulla scleta dell’editor giusto e la migrazione di AEM Sites esistenti verso Edge Delivery Services, consulta il documento [Sviluppo per Edge Delivery Services](/help/edge/developing.md).
 
-## Guida introduttiva all’authoring e ai Edge Delivery Services AEM {#getting-started}
+## Guida introduttiva all’authoring di AEM e a Edge Delivery Services {#getting-started}
 
 Dopo aver completato [i prerequisiti](#prerequisites) e aver effettuato [la scelta di utilizzare l’Editor universale,](#editor-choice) puoi iniziare a utilizzare il tuo progetto.
 
@@ -167,4 +167,4 @@ Una volta terminata la modifica del nuovo sito tramite l’Editor universale, pu
 
 Ora che hai un progetto AEM in fase di elaborazione con Edge Delivery Services, puoi iniziare a creare e formattare i blocchi.
 
-Consulta la guida [Creazione di blocchi instrumentati per l’utilizzo con l’editor universale](/help/edge/create-block.md) per ulteriori informazioni.
+Per ulteriori informazioni, consulta la guida [Creazione di blocchi preparati per l’utilizzo con l’editor universale](/help/edge/create-block.md).

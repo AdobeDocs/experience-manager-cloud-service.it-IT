@@ -1,80 +1,80 @@
 ---
-title: Personalizzare tema e stile per un AEM Forms Edge Delivery Services Form
-description: Personalizzare tema e stile per un AEM Forms Edge Delivery Services Form
+title: Personalizzare tema e stile per un modulo Edge Delivery Services di AEM Forms
+description: Personalizzare tema e stile per un modulo Edge Delivery Services di AEM Forms
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2014'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Personalizzare l’aspetto dei moduli
 
-Forms è fondamentale per l’interazione degli utenti sui siti web, consentendo loro di inserire dati. È possibile utilizzare i fogli di stile CSS per applicare uno stile ai campi di un modulo, migliorando la presentazione visiva dei moduli e l&#39;esperienza utente.
+I moduli sono fondamentali per l’interazione degli utenti sui siti web, poiché consentono loro di inserire dati. È possibile utilizzare i fogli di stile CSS (Cascading Style Sheets) per applicare uno stile ai campi di un modulo, migliorandone la presentazione visiva e l’esperienza utente.
 
-Il blocco Forms adattivo produce una struttura coerente per tutti i campi modulo. La struttura coerente semplifica lo sviluppo di selettori CSS per selezionare e assegnare uno stile ai campi modulo in base al tipo di campo e ai nomi dei campi.
+Il blocco moduli adattivi produce una struttura coerente per tutti i campi modulo. La struttura coerente semplifica lo sviluppo di selettori CSS per selezionare e assegnare uno stile ai campi modulo in base al tipo di campo e ai nomi dei campi.
 
-Questo documento illustra la struttura dei HTML per vari componenti di modulo e spiega come creare selettori CSS per vari campi di modulo per assegnare stili ai campi di modulo di un blocco Forms adattivo.
+Questo documento illustra la struttura HTML di vari componenti del modulo e spiega come creare selettori CSS per vari campi modulo per assegnare stili ai campi modulo di un blocco moduli adattivi.
 
-Entro la fine dell&#39;articolo:
+Entro la fine dell’articolo:
 
-* Comprendi la struttura del file CSS predefinito incluso in Blocco Forms adattivo.
-* Puoi creare e comprendere la struttura HTML dei componenti modulo forniti dal blocco Forms adattivo, inclusi i componenti generali e specifici come elenchi a discesa, gruppi di scelta e gruppi di caselle di controllo.
+* Riuscirai a comprendere la struttura del file CSS predefinito incluso in un blocco moduli adattivi.
+* Puoi creare e comprendere la struttura HTML dei componenti modulo forniti dal blocco moduli adattivi, inclusi i componenti generali e specifici come elenchi a discesa, gruppi di scelta e gruppi di caselle di controllo.
 * Scopri come assegnare uno stile ai campi modulo in base al tipo di campo e ai nomi di campo utilizzando i selettori CSS, consentendo uno stile coerente o univoco in base ai requisiti.
 
 
 ## Informazioni sui tipi di campi modulo
 
-Prima di immergerci nello stile, esaminiamo il modulo comune [tipi di campo](/help/edge/docs/forms/form-components.md) supportato dal blocco Forms adattivo:
+Prima di approfondire lo stile, esaminiamo i [tipi di campo](/help/edge/docs/forms/form-components.md) di un modulo comune supportato dal blocco moduli adattivi:
 
 * Campi di input: includono input di testo, input di e-mail, input di password e altro ancora.
-* Gruppi di caselle di controllo: utilizzato per selezionare più opzioni.
-* Gruppi di opzioni: utilizzato per selezionare una sola opzione da un gruppo.
+* Gruppi di caselle di controllo: utilizzati per selezionare più opzioni.
+* Gruppi di scelta: utilizzati per selezionare una sola opzione all’interno di un gruppo.
 * Elenchi a discesa: noti anche come caselle di selezione, utilizzati per selezionare un’opzione da un elenco.
-* Pannelli/contenitori: utilizzato per raggruppare gli elementi modulo correlati.
+* Pannelli/contenitori: utilizzati per raggruppare gli elementi modulo correlati.
 
 ## Principi di base dello stile
 
-Informazioni [concetti CSS fondamentali](https://www.w3schools.com/css/css_intro.asp) è fondamentale prima di formattare campi modulo specifici:
+La comprensione dei [concetti CSS fondamentali](https://www.w3schools.com/css/css_intro.asp) è indispensabile prima di applicare uno stile a campi modulo specifici:
 
-* [Selettori](https://www.w3schools.com/css/css_selectors.asp): i selettori CSS ti consentono di eseguire il targeting di elementi HTML specifici per lo stile. Puoi utilizzare i selettori di elementi, di classi o di ID.
-* [Proprietà](https://www.w3schools.com/css/css_syntax.asp): le proprietà CSS definiscono l’aspetto visivo degli elementi. Le proprietà comuni per la formattazione dei campi modulo includono colore, colore di sfondo, bordo, riempimento, margine e altro ancora.
-* [Modello casella](https://www.w3schools.com/css/css_boxmodel.asp): il modello di caselle CSS descrive la struttura degli elementi HTML come un’area di contenuto circondata da spaziature, bordi e margini.
+* [Selettori](https://www.w3schools.com/css/css_selectors.as): i selettori CSS ti consentono di eseguire il targeting di elementi HTML specifici per l’applicazione di uno stile. Puoi utilizzare i selettori di elementi, di classi o di ID.
+* [Proprietà](https://www.w3schools.com/css/css_syntax.asp): le proprietà CSS definiscono l’aspetto visivo degli elementi. Le proprietà comuni per lo stile dei campi modulo includono colore, colore di sfondo, bordo, riempimento, margine e altro ancora.
+* [Modello casella](https://www.w3schools.com/css/css_boxmodel.asp): il modello casella CSS descrive la struttura degli elementi HTML come un’area di contenuto circondata da riempimenti, bordi e margini.
 * Flexbox/Griglia: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) e [Layout griglia](https://www.w3schools.com/css/css_grid.asp) sono strumenti potenti per la creazione di progettazioni dinamiche e flessibili.
 
-## Applicazione di uno stile a un modulo per un blocco Forms adattivo
+## Applicazione di uno stile a un modulo per un blocco di moduli adattivi
 
-L’Adaptive Forms Block offre una struttura di HTML standardizzata che semplifica la selezione e lo stile dei componenti dei moduli:
+Il blocco di moduli adattivi offre una struttura HTML standardizzata che semplifica la selezione e lo stile dei componenti dei moduli:
 
-* **Aggiorna stili predefiniti**: è possibile modificare gli stili predefiniti di un modulo modificando il `/blocks/form/form.css file`. Questo file offre uno stile completo per un modulo, con supporto per i moduli della procedura guidata in più passaggi. Viene enfatizzato l’utilizzo di variabili CSS personalizzate per una facile personalizzazione, manutenzione e uno stile uniforme tra i moduli. Per istruzioni sull’aggiunta del blocco Forms adattivo al progetto, consulta [creare un modulo](/help/edge/docs/forms/create-forms.md).
+* **Aggiorna stili predefiniti**: è possibile modificare gli stili predefiniti di un modulo modificando il `/blocks/form/form.css file`. Questo file offre uno stile completo per un modulo, con supporto per i moduli della procedura guidata in più passaggi. Viene enfatizzato l’utilizzo di variabili CSS personalizzate per una facile modifica, manutenzione e uno stile uniforme tra i moduli. Per istruzioni sull’aggiunta del blocco moduli adattivi al progetto, consulta [creare un modulo](/help/edge/docs/forms/create-forms.md).
 
-* **Personalizzazione**: utilizza il valore predefinito `forms.css` come base e personalizzarla per modificare l’aspetto dei componenti del modulo, rendendolo visivamente accattivante e di facile utilizzo. La struttura del file incoraggia l’organizzazione e mantiene gli stili per i moduli, promuovendo progettazioni coerenti all’interno del sito web.
+* **Personalizzazione**: utilizza il valore predefinito `forms.css` come base e personalizzala per modificare l’aspetto dei componenti del modulo, rendendolo visivamente accattivante e di facile utilizzo. La struttura del file incoraggia l’organizzazione e mantiene gli stili per i moduli, promuovendo progettazioni coerenti all’interno del sito web.
 
 ## Raggruppamento della struttura di forms.css
 
-* **Variabili globali:** Definito in corrispondenza di `:root` livello, queste variabili (`--variable-name`) memorizzare i valori utilizzati nel foglio di stile per garantire la coerenza e la facilità degli aggiornamenti. Queste variabili definiscono i colori, le dimensioni dei caratteri, la spaziatura interna e altre proprietà. Puoi dichiarare le tue variabili globali o modificare quelle esistenti per modificare lo stile del modulo.
+* **Variabili globali:** definite in corrispondenza del livello `:root`, queste variabili (`--variable-name`) memorizzano i valori utilizzati nel foglio di stile per garantire la coerenza e la facilità degli aggiornamenti. Queste variabili definiscono i colori, le dimensioni dei caratteri, la spaziatura interna e altre proprietà. Puoi dichiarare le tue variabili globali o modificare quelle esistenti per modificare lo stile del modulo.
 
-* **Stili selettore universale:** Il `*` Il selettore corrisponde a ogni elemento del modulo, garantendo che gli stili vengano applicati a tutti i componenti per impostazione predefinita, inclusa l’impostazione di `box-sizing` proprietà a `border-box`.
+* **Stili selettore universale:** il `*`selettore corrisponde a ogni elemento del modulo, garantendo che gli stili vengano applicati a tutti i componenti per impostazione predefinita, inclusa l’impostazione di `box-sizing` proprietà a `border-box`.
 
-* **Stile modulo:** Questa sezione descrive come formattare i componenti del modulo utilizzando i selettori per eseguire il targeting di elementi HTML specifici. Definisce gli stili per i campi di input, le aree di testo, le caselle di controllo, i pulsanti di scelta, gli input di file, le etichette dei moduli e le descrizioni.
+* **Stile modulo:** questa sezione si concentra sull’applicazione dello stile ai componenti del modulo utilizzando i selettori per eseguire il targeting di elementi HTML specifici. Definisce gli stili per i campi di input, le aree di testo, le caselle di controllo, i pulsanti di scelta, gli input di file, le etichette dei moduli e le descrizioni.
 
-* **Stile procedura guidata (se applicabile):** Questa sezione è dedicata allo stile del layout della procedura guidata, un modulo con più passaggi in cui ogni passaggio viene visualizzato uno alla volta. Definisce gli stili per il contenitore della procedura guidata, i set di campi, le legende, i pulsanti di navigazione e i layout reattivi.
+* **Stile procedura guidata (se applicabile):** questa sezione è dedicata allo stile del layout della procedura guidata, un modulo con più passaggi in cui viene visualizzato un passaggio alla volta. Definisce gli stili per il contenitore della procedura guidata, i fieldset, le legende, i pulsanti di navigazione e i layout dinamici.
 
-* **Query multimediali:** che offrono stili per schermi di diverse dimensioni, con conseguente regolazione del layout e dello stile.
+* **Query multimediali:** offrono stili per schermi di diverse dimensioni, con conseguente regolazione del layout e dello stile.
 
 * **Stili vari:**: questa sezione descrive gli stili dei messaggi di errore o di successo, le aree di caricamento dei file e altri elementi che potrebbero verificarsi in un modulo.
 
 
 ## Struttura dei componenti
 
-Il blocco Forms adattivo offre una struttura HTML coerente per vari elementi del modulo, garantendo così uno stile e una gestione più semplici. Puoi manipolare i componenti utilizzando i CSS a scopo di stile.
+Il Blocco moduli adattivi offre una struttura HTML coerente per vari elementi del modulo, garantendo così uno stile e una gestione più semplici. Puoi manipolare i componenti utilizzando i CSS a scopo di stile.
 
-### Componenti generali (ad eccezione di elenchi a discesa, gruppi di scelta e gruppi di caselle di controllo):
+### Componenti generali (ad eccezione di elenchi a discesa, gruppi di pulsanti di scelta e gruppi di caselle di controllo):
 
-Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di scelta e gruppi di caselle di controllo, hanno la seguente struttura HTML:
+Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di pulsanti di scelta e gruppi di caselle di controllo, hanno la seguente struttura HTML:
 
 +++ Struttura HTML dei componenti generali
 
@@ -88,14 +88,14 @@ Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di scelta e grup
 </div>
 ```
 
-* Classi: l’elemento div dispone di diverse classi per il targeting di elementi e stili specifici. È necessario `{Type}-wrapper` o `field-{Name}` classi per sviluppare un selettore CSS per assegnare uno stile a un campo modulo:
+* Classi: l’elemento div dispone di diverse classi per il targeting di elementi e stili specifici. È necessario che le classi `{Type}-wrapper` o `field-{Name}` sviluppino un selettore CSS per assegnare uno stile a un campo modulo:
    * {Type}: identifica il componente per tipo di campo. Ad esempio, testo (ritorno a capo automatico), numero (ritorno a capo automatico), data (ritorno a capo automatico).
-   * {Name}: identifica il componente in base al nome. Il nome del campo può contenere solo caratteri alfanumerici; i più trattini consecutivi nel nome vengono sostituiti da un singolo trattino `(-)`, e i trattini iniziale e finale nel nome di un campo vengono rimossi. Ad esempio, nome (field-first-name field-wrapper).
-   * {FieldId}: è un identificatore univoco del campo, generato automaticamente.
-   * {Required}: valore booleano che indica se il campo è obbligatorio.
-* Label: il `label` fornisce un testo descrittivo per il campo e lo associa all&#39;elemento di input utilizzando `for` attributo.
-* Input: Il `input` definisce il tipo di dati da immettere. Ad esempio, testo, numero, e-mail.
-* Descrizione (Facoltativa): `div` con classe `field-description` fornisce informazioni o istruzioni aggiuntive per l’utente.
+   * {Name}: identifica il componente in base al nome. Il nome del campo può contenere solo caratteri alfanumerici; i trattini consecutivi multipli nel nome vengono sostituiti da un singolo trattino `(-)` e i trattini iniziali e finali nel nome di un campo vengono rimossi. Ad esempio, nome (field-first-name field-wrapper).
+   * {FieldId}: è un identificatore univoco per il campo, generato automaticamente.
+   * {Obbligatorio}: valore booleano che indica se il campo è obbligatorio.
+* Etichetta: l’elemento `label` fornisce un testo descrittivo per il campo e lo associa all’elemento di input utilizzando l’attributo `for`.
+* Input: l’elemento `input` definisce il tipo di dati da immettere. Ad esempio, testo, numero, e-mail.
+* Descrizione (Facoltativa): il `div` con classe `field-description` fornisce informazioni o istruzioni aggiuntive per l’utente.
 
 **Esempio di struttura HTML**
 
@@ -140,8 +140,8 @@ Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di scelta e grup
   
 ```
 
-* `.{Type}-wrapper`: indirizza l’esterno `div` in base al tipo di campo. Ad esempio: `.text-wrapper` esegue il targeting di tutti i campi di testo.
-* `.field-{Name}`: seleziona ulteriormente l’elemento in base al nome del campo specifico. Ad esempio: `.field-first-name` esegue il targeting del campo di testo &quot;Nome&quot;. Questo selettore può essere utilizzato per il targeting di elementi con il campo-{Name} classe, è importante essere cauti. In questo caso specifico, non sarebbe utile per la formattazione dei campi di input perché avrebbe come target non solo l’input stesso, ma anche gli elementi etichetta e descrizione. Si consiglia di utilizzare selettori più specifici, come quelli disponibili per il targeting dei campi di input di testo (input .text-wrapper).
+* `.{Type}-wrapper`: esegue il targeting dell’elemento esterno `div` in base al tipo di campo. Ad esempio: `.text-wrapper` esegue il targeting di tutti i campi di testo.
+* `.field-{Name}`: seleziona ulteriormente l’elemento in base al nome del campo specifico. Ad esempio: `.field-first-name` esegue il targeting del campo di testo “Nome”. Questo selettore può essere utilizzato per eseguire il targeting di elementi con la classe field-{Name}, ma è importante prestare attenzione. In questo caso specifico, non sarebbe utile per la formattazione dei campi di input perché avrebbe come target non solo l’input stesso, ma anche gli elementi etichetta e descrizione. Si consiglia di utilizzare selettori più specifici, come quelli disponibili per il targeting dei campi di input di testo (input .text-wrapper).
 
 
 
@@ -168,7 +168,7 @@ first-name input {
 
 ### Componente a discesa
 
-Per i menu a discesa, il `select` viene utilizzato al posto di un elemento `input` elemento:
+Per i menu a discesa, l’elemento `select` viene utilizzato al posto di un elemento `input`:
 
 
 
@@ -251,9 +251,9 @@ Di seguito sono elencati alcuni esempi di selettori CSS per i componenti a disce
 ```
 
 * Eseguire il targeting del wrapper: il primo selettore (`.drop-down-wrapper`) esegue il targeting dell’elemento wrapper esterno, assicurando che gli stili vengano applicati all’intero componente del menu a discesa.
-* Layout flexbox: Flexbox dispone l’etichetta, il menu a discesa e la descrizione in verticale per un layout pulito.
+* Layout flexbox: flexbox dispone l’etichetta, il menu a discesa e la descrizione in verticale per un layout pulito.
 * Stile etichetta: l’etichetta si distingue per uno spessore del carattere più audace e un leggero margine.
-* Stile a discesa: `select` L&#39;elemento riceve un bordo, una spaziatura interna e angoli arrotondati per ottenere un aspetto ordinato.
+* Stile a discesa: L&#39;elemento `select` riceve un bordo, una spaziatura interna e angoli arrotondati per ottenere un aspetto ordinato.
 * Colore di sfondo: viene impostato un colore di sfondo coerente per l’armonia visiva.
 * Personalizzazione freccia: gli stili facoltativi nascondono la freccia a discesa predefinita e creano una freccia personalizzata utilizzando un carattere Unicode e il posizionamento.
 
@@ -261,7 +261,7 @@ Di seguito sono elencati alcuni esempi di selettori CSS per i componenti a disce
 
 ### Gruppi pulsanti di scelta
 
-Analogamente ai componenti a discesa, i gruppi radio dispongono di una propria struttura HTML e CSS:
+Analogamente ai componenti a discesa, i gruppi pulsanti di scelta dispongono di una propria struttura HTML e CSS:
 
 +++ Struttura HTML del gruppo pulsanti di scelta
 
@@ -312,9 +312,9 @@ Analogamente ai componenti a discesa, i gruppi radio dispongono di una propria s
   }
 ```
 
-Questo selettore esegue il targeting di qualsiasi set di campi con la classe radio-group-wrapper. Questo sarebbe utile per applicare stili generali all&#39;intero gruppo radio.
+Questo selettore esegue il targeting di qualsiasi set di campi con la classe radio-group-wrapper. Questo sarebbe utile per applicare stili generali all’intero gruppo pulsanti di scelta.
 
-* Etichette dei pulsanti di scelta Targeting
+* Targeting delle etichette del pulsante di scelta
 
 ```CSS
 .radio-wrapper label {
@@ -323,7 +323,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
   }
 ```
 
-* Eseguire il targeting di tutte le etichette dei pulsanti di scelta in un set di campi specifico in base al nome
+* Esegui il targeting di tutte le etichette del pulsante di scelta in un set di campi specifico in base al suo nome
 
 ```CSS
 .field-color .radio-wrapper label {
@@ -373,7 +373,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
 
 +++ Selettori CSS per gruppi di caselle di controllo
 
-* Targeting dell’involucro esterno: questi selettori eseguono il targeting dei contenitori più esterni dei gruppi di caselle di selezione e radio, consentendo di applicare stili generali all’intera struttura del gruppo. Questa opzione è utile per impostare la spaziatura, l&#39;allineamento o altre proprietà relative al layout.
+* Targeting del wrapper esterno: questi selettori eseguono il targeting dei contenitori dei gruppi pulsanti di scelta e di quelli delle caselle di controllo, consentendo di applicare stili generali all’intera struttura del gruppo. Questo è utile per impostare la spaziatura, l’allineamento o altre proprietà relative al layout.
 
 
   ```CSS
@@ -389,7 +389,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
   ```
 
 
-* Etichette gruppo di targeting: questo selettore esegue il targeting del `.field-label` all&#39;interno dei wrapper dei gruppi di caselle di controllo e di opzione. Questo consente di applicare uno stile alle etichette specifiche per questi gruppi, rendendoli potenzialmente più evidenti.
+* Etichette del gruppo di targeting: questo selettore esegue il targeting dell’elemento `.field-label` all’interno dei wrapper dei gruppi pulsanti di scelta e delle caselle di controllo. Questo consente di applicare uno stile alle etichette specifiche per tali gruppi, rendendoli potenzialmente più evidenti.
 
   ```CSS
    .radio-group-wrapper legend,
@@ -400,7 +400,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
 
 
 
-* Targeting di singoli input ed etichette: questi selettori forniscono un controllo più granulare sui singoli pulsanti di scelta, caselle di controllo e le relative etichette associate. È possibile utilizzarli per modificare le dimensioni, la spaziatura o applicare stili visivi più distinti.
+* Targeting di singoli input ed etichette: questi selettori forniscono un controllo più dettagliato su singoli pulsanti di scelta, caselle di controllo e le relative etichette associate. Puoi utilizzarli per modificare le dimensioni, la spaziatura o applicare stili visivi più distinti.
 
   ```CSS
   /* Styling radio buttons */
@@ -427,7 +427,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
 
 
 
-* Personalizzazione dell&#39;aspetto dei pulsanti di scelta e delle caselle di controllo: questa tecnica nasconde l&#39;input predefinito e utilizza `:before` e `:after` pseudo-elementi per creare elementi visivi personalizzati che modificano l’aspetto in base allo stato &quot;selezionato&quot;.
+* Personalizzazione dell’aspetto dei pulsanti di scelta e delle caselle di controllo: questa tecnica nasconde l’input predefinito e utilizza pseudo-elementi `:before` e `:after` per creare elementi visivi personalizzati che cambiano aspetto in base allo stato “selezionato”.
 
   ```CSS
   /* Hide the default radio button or checkbox */
@@ -461,7 +461,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
 
 ### Componenti pannello/contenitore
 
-+++ Struttura HTML dei componenti Pannello/Contenitore
++++ Struttura HTML dei componenti pannello/contenitore
 
 ```HTML
 <fieldset class="panel-wrapper field-{PanelName} field-wrapper">
@@ -498,14 +498,14 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
 </fieldset>
 ```
 
-* L’elemento set di campi funge da contenitore pannello con la classe panel-wrapper e classi aggiuntive per lo stile in base al nome del pannello (field-login).
-* Elemento legenda (<legend>) funge da titolo del pannello con il testo &quot;Informazioni di accesso&quot; e l’etichetta del campo della classe. L’attributo data-visible=&quot;false&quot; può essere utilizzato con JavaScript per controllare la visibilità del titolo.
-* All&#39;interno del set di campi, più .{Type}Gli elementi -wrapper (.text-wrapper e .password-wrapper in questo caso) rappresentano i singoli campi del modulo all’interno del pannello.
-* Ogni wrapper contiene un&#39;etichetta, un campo di input e una descrizione, simili agli esempi precedenti.
+* L’elemento fieldset funge da contenitore del pannello con la classe panel-wrapper e classi aggiuntive per lo stile in base al nome del pannello (field-login).
+* L’elemento legend (<legend>) funge da titolo del pannello con il testo “Informazioni di accesso” e la classe field-label. L’attributo data-visible=&quot;false&quot; può essere utilizzato con JavaScript per controllare la visibilità del titolo.
+* All’interno del fieldset, piùelementi wrapper {Type} (.text-wrapper e .password-wrapper in questo caso) rappresentano singoli campi modulo all’interno del pannello.
+* Ogni wrapper contiene un’etichetta, un campo di input e una descrizione, simili agli esempi precedenti.
 
 +++
 
-+++ Esempio di selettori CSS per i componenti Pannello/Contenitore
++++ Esempio di selettori CSS per i componenti pannello/contenitore
 
 1. Targeting del pannello:
 
@@ -520,7 +520,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
  }
 ```
 
-* Il `.panel-wrapper` il selettore assegna a tutti gli elementi uno stile basato sul wrapper del pannello classe, creando un aspetto coerente per tutti i pannelli.
+* il selettore `.panel-wrapper` assegna a tutti gli elementi uno stile basato sulla classe panel-wrapper, creando un aspetto coerente per tutti i pannelli.
 
 1. Targeting del titolo del pannello:
 
@@ -536,10 +536,10 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
   }
 ```
 
-* Il `.panel-wrapper legend` selettore applica uno stile all’elemento legenda all’interno del pannello, rendendo il titolo visibile.
+* il selettore `.panel-wrapper legend` applica uno stile all’elemento legend all’interno del pannello, rendendo il titolo evidente.
 
 
-1. Esecuzione del targeting di singoli campi nel pannello:
+1. Esecuzione del targeting di singoli campi all’interno del pannello:
 
 ```CSS
 /* Target all form field wrappers within a panel */
@@ -549,9 +549,9 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
 }
 ```
 
-* Il `.panel-wrapper .{Type}-wrapper` il selettore esegue il targeting di tutti i wrapper con `.{Type}-wrapper` nel pannello, che consente di applicare uno stile alla spaziatura tra i campi del modulo.
+* il selettore `.panel-wrapper .{Type}-wrapper` esegue il targeting di tutti i wrapper con la classe `.{Type}-wrapper` all’interno del pannello, che consente di applicare uno stile alla spaziatura tra i campi modulo.
 
-1. Campi Specifici Di Targeting (Facoltativo):
+1. Targeting di campi specifici (facoltativo):
 
 ```CSS
   /* Target the username field wrapper */
@@ -565,7 +565,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
   }
 ```
 
-* Questi selettori facoltativi consentono di eseguire il targeting di wrapper di campi specifici all’interno del pannello per uno stile univoco, ad esempio per evidenziare il campo del nome utente.
+* questi selettori facoltativi consentono di eseguire il targeting di wrapper di campi specifici all’interno del pannello per uno stile univoco, ad esempio per evidenziare il campo del nome utente.
 
 +++
 
@@ -629,7 +629,7 @@ Ogni pannello ha la stessa struttura dell’esempio di pannello singolo, con att
 
 * data-Repeable=&quot;true&quot;: questo attributo indica che il pannello può essere ripetuto dinamicamente utilizzando JavaScript o un framework.
 
-* ID e nomi univoci: ogni elemento all’interno del pannello ha un ID univoco (ad esempio, nome-1, e-mail-1) e un attributo di nome in base all’indice del pannello (ad esempio, nome=&quot;contatti[0].name&quot;) Questo consente una corretta raccolta dei dati quando vengono inviati più pannelli.
+* ID e nomi univoci: ogni elemento all’interno del pannello ha un ID univoco (ad esempio, nome-1, e-mail-1) e un attributo del nome basato sull’indice del pannello (ad esempio, nome=&quot;contacts[0].name&quot;). Questo consente una corretta raccolta dei dati quando vengono inviati più pannelli.
 
 +++
 
@@ -648,7 +648,7 @@ Ogni pannello ha la stessa struttura dell’esempio di pannello singolo, con att
   }
 ```
 
-Il selettore assegna uno stile a tutti i pannelli che possono essere ripetuti, assicurando un aspetto coerente.
+il selettore applica uno stile a tutti i pannelli che possono essere ripetuti, assicurando un aspetto coerente.
 
 
 * Targeting di singoli campi all’interno di un pannello:
@@ -660,9 +660,9 @@ Il selettore assegna uno stile a tutti i pannelli che possono essere ripetuti, a
   margin-bottom: 10px;
 }
 ```
-Questo selettore applica uno stile a tutti i wrapper di campo all’interno di un pannello ripetibile, mantenendo una spaziatura coerente tra i campi.
+questo selettore applica uno stile a tutti i wrapper del campo all’interno di un pannello ripetibile, mantenendo una spaziatura coerente tra i campi.
 
-* Campi specifici di targeting (all’interno di un pannello):
+* Targeting di campi specifici (all’interno di un pannello):
 
 ```CSS
 /* Target the name field wrapper within the first panel */
@@ -677,7 +677,7 @@ Questo selettore applica uno stile a tutti i wrapper di campo all’interno di u
 
 ### Allegato file
 
-+++ Struttura HTML per l&#39;allegato
++++ Struttura HTML per l’allegato file
 
 ```HTML
 <div class="file-wrapper field-{FileName} field-wrapper">
@@ -716,15 +716,15 @@ Questo selettore applica uno stile a tutti i wrapper di campo all’interno di u
 </div>
 ```
 
-* L’attributo class utilizza il nome fornito per il file allegato (claim_form).
-* Gli attributi ID e nome dell&#39;elemento di input corrispondono al nome dell&#39;allegato (claim_form).
+* L’attributo della classe utilizza il nome fornito per l’allegato file (claim_form).
+* Gli attributi ID e nome dell’elemento di input corrispondono al nome dell’allegato (claim_form).
 * La sezione dell’elenco dei file è inizialmente vuota. Viene compilato dinamicamente con JavaScript quando i file vengono caricati.
 
 +++
 
 +++ Selettori CSS per il componente File allegato
 
-* Esecuzione del targeting dell&#39;intero componente File allegato:
+* Esecuzione del targeting dell&#39;intero componente allegato file:
 
 ```CSS
 /* Target the entire file attachment component */
@@ -737,7 +737,7 @@ Questo selettore applica uno stile a tutti i wrapper di campo all’interno di u
 }
 ```
 
-Questo selettore imposta lo stile dell&#39;intero componente allegato, inclusi la legenda, l&#39;area di trascinamento, il campo di input e l&#39;elenco.
+Questo selettore imposta lo stile dell’intero componente allegato file, inclusi la legenda, l’area di trascinamento, il campo di input e l’elenco.
 
 * Targeting di elementi specifici:
 
@@ -793,7 +793,7 @@ Questi selettori consentono di applicare uno stile a varie parti del componente 
 
 ## Componenti di stile
 
-È possibile assegnare uno stile ai campi modulo in base al tipo specifico (`{Type}-wrapper`) o nomi individuali (`field-{Name}`). Ciò consente un controllo più granulare e la personalizzazione dell&#39;aspetto del modulo.
+È possibile assegnare uno stile ai campi modulo in base al tipo specifico (`{Type}-wrapper`) o nomi individuali (`field-{Name}`). Ciò consente un controllo più granulare e la personalizzazione dell’aspetto del modulo.
 
 ### Stile basato sul tipo di campo
 
@@ -830,11 +830,11 @@ Puoi utilizzare i selettori CSS per eseguire il targeting di tipi di campo speci
 </div>
 ```
 
-* Ogni campo è racchiuso in un `div` elemento con diverse classi:
-   * `{Type}-wrapper`: identifica il tipo di campo. Ad esempio: `form-text-wrapper`, `form-number-wrapper`, `form-email-wrapper`.
-   * `field-{Name}`: identifica il campo in base al nome. Ad esempio `form-name`, `form-age`, `form-email`.
+* Ogni campo è racchiuso in un elemento `div` con diverse classi:
+   * `{Type}-wrapper`: identifica il tipo di campo. Ad esempio, `form-text-wrapper`, `form-number-wrapper` e `form-email-wrapper`.
+   * `field-{Name}`: identifica il campo in base al nome. Ad esempio, `form-name`, `form-age` e `form-email`.
    * `field-wrapper`: classe generica per tutti i wrapper di campi.
-* Il `data-required` attributo indica se il campo è obbligatorio o facoltativo.
+* L’attributo `data-required` indica se il campo è obbligatorio o facoltativo.
 * Ogni campo ha un’etichetta corrispondente, un elemento di input e potenziali elementi aggiuntivi come segnaposto e descrizioni.
 
 
@@ -898,7 +898,7 @@ Per applicare stili univoci, puoi anche eseguire il targeting di singoli campi p
 
 
 
-Questo CSS esegue il targeting di tutti gli elementi di input che si trovano all’interno di un elemento che ha la classe `field-otp`. La struttura HTML del modulo segue le convenzioni del blocco Forms adattivo. Ciò implica che esiste un contenitore contrassegnato con la classe &quot;field-otp&quot; che contiene il campo con il nome &quot;otp&quot;.
+Questo CSS esegue il targeting di tutti gli elementi di input che si trovano all’interno di un elemento che ha la classe `field-otp`. La struttura HTML del modulo segue le convenzioni del Blocco moduli adattivi. Ciò implica che esiste un contenitore contrassegnato con la classe “field-otp” che contiene il campo con il nome “otp”.
 
 +++
 

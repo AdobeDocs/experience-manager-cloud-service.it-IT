@@ -4,9 +4,9 @@ description: Scopri come funziona l’authoring dei contenuti con Edge Delivery 
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 90%
 
 Con Edge Delivery Services, l’authoring è semplice, veloce e flessibile. Per creare contenuti per Edge Delivery Services, sono disponibili due opzioni:
 
-* [Authoring basato su documenti](#document-based) - come Microsoft Word o Google Docs
+* [Authoring basato su documenti](#document-based): come Microsoft Word o documenti Google
 * [Editor universale](#universal-editor): interfaccia utente moderna per l’authoring dei contenuti in AEM
 
 ## Authoring basato su documenti  {#document-based}
 
-Nel caso dell’authoring basato su documenti , è possibile utilizzare diverse origini, ad esempio Microsoft Word e Google Docs. I documenti provenienti da queste origini diventano pagine del sito web. È possibile trasferire titoli, elenchi, immagini, elementi font e video dall’origine iniziale al tuo sito web. Puoi aggiungere metadati a scopo di SEO o utilizzare blocchi per lavorare con contenuti strutturati e aggiungere funzionalità.
+Con l’authoring basato su documenti, puoi utilizzare origini diverse, ad esempio Microsoft Word e documenti Google. I documenti provenienti da queste origini diventano pagine del sito web. È possibile trasferire titoli, elenchi, immagini, elementi font e video dall’origine iniziale al tuo sito web. Puoi aggiungere metadati a scopo di SEO o utilizzare blocchi per lavorare con contenuti strutturati e aggiungere funzionalità.
 
-Per ulteriori dettagli sull’authoring basato su documenti , consulta [questo documento è disponibile nella documentazione di Edge Delivery Services.](/help/edge/docs/authoring.md)
+Per ulteriori dettagli sull’authoring basato su documenti, consulta [questo documento nella documentazione di Edge Delivery Services.](/help/edge/docs/authoring.md)
 
 ## Authoring nell’Editor universale {#universal-editor}
 

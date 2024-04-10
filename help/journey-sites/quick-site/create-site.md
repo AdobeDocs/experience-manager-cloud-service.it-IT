@@ -3,9 +3,9 @@ title: Creare un sito da un modello
 description: Scopri come creare rapidamente un sito AEM utilizzando un modello di sito.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1485'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -181,9 +181,9 @@ Approfondisci questo argomento e continua il percorso di Creazione Rapida dei Si
 Sebbene sia consigliabile passare alla parte successiva del percorso di Creazione Rapida dei Siti consultando il documento [Configura la pipeline,](pipeline-setup.md) le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso.
 
 * [Modello del sito standard AEM](https://github.com/adobe/aem-site-template-standard): questo è l’archivio GitHub del modello del sito standard AEM.
-* [Organizzazione delle pagine](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Questa guida illustra come organizzare le pagine del sito AEM.
-* [Creazione di pagine](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Questa guida descrive come aggiungere nuove pagine al sito.
-* [Gestione delle pagine](/help/sites-cloud/authoring/sites-console/managing-pages.md) : questa guida descrive come gestire le pagine del sito, compresi lo spostamento, la copia e l’eliminazione.
+* [Organizzazione delle pagine](/help/sites-cloud/authoring/sites-console/organizing-pages.md): questa guida illustra come organizzare le pagine del sito AEM.
+* [Creazione di pagine](/help/sites-cloud/authoring/sites-console/creating-pages.md): questa guida descrive come aggiungere nuove pagine al sito.
+* [Gestione delle pagine](/help/sites-cloud/authoring/sites-console/managing-pages.md): questa guida descrive come gestire le pagine del sito, compresi lo spostamento, la copia e l’eliminazione.
 * [Come lavorare con il pacchetto](/help/implementing/developing/tools/package-manager.md): i pacchetti consentono l&#39;importazione e l&#39;esportazione del contenuto dell&#39;archivio. Questo documento spiega come lavorare con i pacchetti in AEM 6.5, ed è applicabile anche ad AEMaaCS.
 * [Documentazione sull’amministrazione del sito](/help/sites-cloud/administering/site-creation/create-site.md): per ulteriori informazioni sulle funzioni dello strumento Creazione Rapida dei Siti, consulta i documenti tecnici sulla creazione dei siti.
 * [Crea o aggiungi moduli a una pagina di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): scopri tecniche e best practice passo passo per integrare i moduli nel tuo sito web, ottimizzando le tue esperienze digitali per il massimo impatto.

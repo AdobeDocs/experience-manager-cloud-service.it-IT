@@ -1,31 +1,31 @@
 ---
-title: Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo
-description: Scopri come configurare le pagine di ringraziamento e il reindirizzamento per Forms Block per ottimizzare l’esperienza utente e semplificare i percorsi di utenti.
+title: Mostrare un messaggio di ringraziamento personalizzato dopo l’invio del modulo
+description: Scopri come configurare le pagine di ringraziamento e il reindirizzamento per il Blocco moduli per ottimizzare l’esperienza utente e semplificare i percorsi di utenti.
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
 source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo
+# Mostrare un messaggio di ringraziamento personalizzato dopo l’invio del modulo
 
-Dopo che un utente ha inviato un modulo, è fondamentale fornire un’esperienza fluida attraverso un messaggio di ringraziamento. Questo non solo conferma la corretta presentazione, ma migliora anche la soddisfazione degli utenti e li guida ulteriormente nel loro percorso.
+Dopo che un utente ha inviato un modulo, è fondamentale fornire un’esperienza fluida con un messaggio di ringraziamento. Questo non solo garantisce una corretta presentazione, ma migliora anche la soddisfazione degli utenti e li guida ulteriormente nel loro percorso.
 
 ## Configurazione di un messaggio di ringraziamento personalizzato
 
-Il comportamento predefinito di Blocco Forms adattivo consiste nella visualizzazione del seguente messaggio di ringraziamento all’invio. Il messaggio viene visualizzato nella parte superiore del modulo.
+Il comportamento predefinito del Blocco moduli adattivi consiste nella visualizzazione del seguente messaggio di ringraziamento all’invio. Il messaggio viene visualizzato nella parte superiore del modulo.
 
 ![messaggio di ringraziamento predefinito](/help/edge/assets/thank-you-message.png)
 
 
-Per configurare un messaggio di ringraziamento personalizzato per il blocco Forms adattivo, effettua le seguenti operazioni:
+Per configurare un messaggio di ringraziamento personalizzato per il Blocco moduli adattivi, effettua le seguenti operazioni:
 
 1. Accedi al progetto AEM nel computer locale o nell’archivio GitHub.
 
-1. Accedi a [Cartella progetto AEM]File \blocks\form\submit.js per la modifica.
+1. Accedi al file \blocks\form\submit.js della [Cartella progetto AEM] per la modifica.
 
 1. Individua il seguente codice
 
@@ -41,9 +41,9 @@ Per configurare un messaggio di ringraziamento personalizzato per il blocco Form
    ```
 
 
-1. Salva il file. Invia il file aggiornato all’archivio GitHub. Ora, quando si invia un modulo, viene visualizzato il messaggio di ringraziamento personalizzato. Ad esempio:
+1. Salva il file. Invia il file aggiornato al tuo archivio Git. Ora, quando invii un modulo, viene visualizzato il messaggio di ringraziamento personalizzato. Ad esempio:
 
-![Messaggio di ringraziamento personalizzato](/help/edge/assets/custom-thank-you-message.png)
+![Personalizzare il messaggio di ringraziamento](/help/edge/assets/custom-thank-you-message.png)
 
 <!-- 
 

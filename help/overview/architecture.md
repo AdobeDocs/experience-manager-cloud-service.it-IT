@@ -3,9 +3,9 @@ title: Introduzione all’architettura di Adobe Experience Manager as a Cloud Se
 description: Introduzione all’architettura di Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2713'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,8 @@ Per la gestione dei contenuti, esistono due set principali di servizi per l’au
 fornisce un’interfaccia basata su web (con API associate) per la gestione dei contenuti web. Funziona per entrambi gli approcci:
    * Headful: tramite l’editor di pagine e l’editor universale
    * Headless: tramite l’editor di frammenti di contenuto
-* Livello di authoring basato su documenti: consente di creare contenuti utilizzando applicazioni standard, ad esempio:
+* Livello di authoring basato su documenti:
+consente di creare contenuti utilizzando applicazioni standard. Ad esempio:
    * Microsoft Word ed Excel, tramite SharePoint
    * Documenti e Fogli Google, tramite Google Drive
 
@@ -159,9 +160,9 @@ Il livello di anteprima AEM è composto da un singolo nodo AEM. Utilizzato per 
 
 Gli Edge Delivery Services funzionano su una rete CDN e su un’infrastruttura senza server per assemblare le pagine nel modo più performante. Quando viene richiesta una risorsa, l’infrastruttura senza server è responsabile della conversione del contenuto pubblicato in HTML semantico e funge da origine per la rete CDN.
 
-La conversione in HTML semantico avviene dal contenuto pubblicato distribuito dal livello di authoring dell’AEM o dall’ambiente di authoring basato su documenti.
+La conversione in HTML semantico avviene dal contenuto pubblicato distribuito dal livello di authoring AEM o dall’ambiente di authoring basato su documenti.
 
-Il diagramma seguente illustra come modificare il contenuto di Sites in Microsoft Word (authoring basato su documenti ) e pubblicarlo in Edge Delivery. Mostra anche il tradizionale metodo di pubblicazione di AEM utilizzando i vari editor.
+Il diagramma seguente illustra come modificare il contenuto di Sites in Microsoft Word (authoring basato su documento) e pubblicarlo in Edge Delivery. Mostra anche il tradizionale metodo di pubblicazione di AEM utilizzando i vari editor.
 
 ![AEM Sites as a Cloud Service con Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service con Edge Delivery Services")
 

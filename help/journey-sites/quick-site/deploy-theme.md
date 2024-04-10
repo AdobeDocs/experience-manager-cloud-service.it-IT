@@ -3,9 +3,9 @@ title: Distribuire il tema personalizzato
 description: Scopri come distribuire il tema del sito utilizzando la pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Una volta completata la pipeline, puoi informare l’amministratore per convalid
 
 ## Fine del percorso? {#end-of-journey}
 
-Congratulazioni! Hai completato il percorso di creazione rapida di siti di AEM. Ora dovresti:
+Congratulazioni. Hai completato il percorso di creazione rapida di siti di AEM. Ora dovresti:
 
 * Comprendere come Cloud Manager e la pipeline front-end funzionano per gestire e distribuire personalizzazioni front-end.
 * Conoscere come creare un sito AEM basato su un modello e come scaricare il tema del sito.
@@ -112,9 +112,9 @@ Di seguito sono riportate alcune risorse aggiuntive che approfondiscono alcuni c
 * [Tema del sito AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e): questo è l’archivio GitHub del tema del sito AEM.
 * [npm](https://www.npmjs.com): i temi AEM utilizzati per costruire rapidamente i siti sono basati su npm.
 * [webpack](https://webpack.js.org): i temi AEM utilizzati per costruire rapidamente i siti si basano su webpack.
-* [Organizzazione delle pagine](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Questa guida descrive come organizzare le pagine del sito AEM.
-* [Creazione di pagine](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Questa guida descrive come aggiungere nuove pagine al sito.
-* [Gestione delle pagine](/help/sites-cloud/authoring/sites-console/managing-pages.md) : questa guida descrive come gestire le pagine del sito, compresi lo spostamento, la copia e l’eliminazione.
+* [Organizzazione delle pagine](/help/sites-cloud/authoring/sites-console/organizing-pages.md): questa guida descrive come organizzare le pagine del sito AEM.
+* [Creazione di pagine](/help/sites-cloud/authoring/sites-console/creating-pages.md): questa guida descrive come aggiungere nuove pagine al sito.
+* [Gestione delle pagine](/help/sites-cloud/authoring/sites-console/managing-pages.md): questa guida descrive come gestire le pagine del sito, compresi lo spostamento, la copia e l’eliminazione.
 * [Come lavorare con il pacchetto](/help/implementing/developing/tools/package-manager.md): i pacchetti consentono l&#39;importazione e l&#39;esportazione del contenuto dell&#39;archivio. Questo documento spiega come lavorare con i pacchetti in AEM 6.5, ed è applicabile anche ad AEMaaCS.
 * [Percorso di onboarding](/help/journey-onboarding/overview.md): questa guida funge da punto di partenza per garantire che i team siano configurati e abbiano accesso a AEM as a Cloud Service.
 * [Documentazione Cloud Manager di Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it): esplora la documentazione di Cloud Manager per informazioni dettagliate sulle sue funzioni.

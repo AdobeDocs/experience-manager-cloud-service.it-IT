@@ -4,47 +4,47 @@ description: Aggiungere sezioni ripetibili a un modulo EDS
 feature: Edge Delivery Services
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Aggiungere sezioni ripetibili a un modulo
 
-Blocco Forms adattivo consente di aggiungere o rendere ripetibile una sezione o un componente di un modulo. Questo consente agli utenti di immettere più volte informazioni per lo stesso tipo di dati, semplificando così la raccolta di informazioni quali esperienze lavorative o formazione.
+I blocchi di moduli adattivi consentono di aggiungere o rendere ripetibile una sezione o un componente di un modulo. Questo consente agli utenti di immettere più volte informazioni per lo stesso tipo di dati, semplificando così la raccolta di informazioni quali esperienze lavorative o formazione.
 
-Si consideri, ad esempio, un modulo utilizzato per raccogliere informazioni sull&#39;esperienza lavorativa di una persona. È possibile che sia disponibile una sezione ripetibile per l&#39;acquisizione dei dettagli di ogni processo precedente. In genere, la sezione ripetibile contiene campi quali il nome dell&#39;azienda, la qualifica, le date di assunzione e le responsabilità lavorative. L’utente può aggiungere più istanze della sezione ripetibile per immettere informazioni su ogni processo che ha mantenuto.
+Si consideri, ad esempio, un modulo utilizzato per raccogliere informazioni sull’esperienza lavorativa di una persona. È possibile che sia disponibile una sezione ripetibile per l’acquisizione dei dettagli di ogni processo precedente. In genere, la sezione ripetibile contiene campi quali il nome dell’azienda, la qualifica, le date di assunzione e le responsabilità lavorative. L’utente può aggiungere più istanze della sezione ripetibile per immettere informazioni su ogni lavoro svolto.
 
 Alla fine di questo articolo imparerai a:
 
-* [Creare una sezione ripetibile in un modulo](#add-repeatable-sections-to-a-form)
-* [Impostare il numero minimo o massimo di ripetizioni in un modulo](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
+* [creare una sezione ripetibile in un modulo](#add-repeatable-sections-to-a-form)
+* [impostare il numero minimo o massimo di ripetizioni in un modulo](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
 
-## Creare una sezione ripetibile
+## creare una sezione ripetibile
 
 La creazione di una sezione ripetibile in un modulo consente agli utenti di immettere più istanze dello stesso insieme di dati, consentendo una raccolta efficiente di informazioni ripetitive. Per creare una sezione ripetibile in un modulo:
 
 1. Vai alla cartella del progetto Edge Deliver in Microsoft SharePoint o Google Workspace e apri il foglio di calcolo.
 
-1. Aggiungere un campo modulo con `type` proprietà impostata su `fieldset`
-1. Specifica `Name` del campo. La proprietà name viene utilizzata per creare una sezione ripetibile.
-1. Abilita ripetibilità impostando `repeatable` a `true`.
-1. Specifica un valore descrittivo `label` per il campo. Funge da intestazione per la sezione ripetibile.
+1. Aggiungere un campo modulo con la proprietà `type` impostata su `fieldset`
+1. Specifica il `Name` di campo. La proprietà nome viene utilizzata per creare una sezione ripetibile.
+1. Abilita ripetibilità impostando `repeatable` su `true`.
+1. Specifica un `label` descrittivo per il campo. Funge da intestazione per la sezione ripetibile.
 
-   Fare riferimento all&#39;immagine seguente per un&#39;illustrazione di una sezione della cronologia impiego all&#39;interno di un modulo di candidatura.
+   Fare riferimento all’immagine seguente per un’illustrazione di una sezione della cronologia lavorativa all’interno di un modulo di candidatura.
 
    ![](/help/edge/assets/repeatable-section-example-job-application-form.png)
 
-1. Per ogni campo che desideri includere nella sezione, imposta i `Fieldset` allo stesso nome scelto al passaggio 3.
+1. Per ogni campo che desideri includere nella sezione, impostane la proprietà `Fieldset` allo stesso nome scelto al passaggio 3.
 
-   Ad esempio, designa `experience` nella proprietà Fieldset di tutti i campi rilevanti da includere nel `employment history` sezione.
+   Ad esempio, designa `experience` nella proprietà Fieldset di tutti i campi rilevanti da includere nella sezione `employment history`.
 
    ![esempio di campo sezione ripetibile e relative proprietà](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
 
-1. Utilizzare [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare in anteprima e pubblicare il foglio. La sezione ripetibile viene aggiunta al modulo.
+1. Utilizza la [barra laterale di AEM](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare in anteprima e pubblicare il foglio. La sezione ripetibile viene aggiunta al modulo.
 
-   Sotto la sezione ripetibile, gli utenti possono trovare una **Aggiungi** semplificando l&#39;aggiunta di più sezioni.
+   Sotto la sezione ripetibile, è possibile trovare un pulsante **Aggiungi** che semplifica l’aggiunta di più sezioni.
 
    ![sezione ripetibile, pulsante Aggiungi, per aggiungere più sezioni ](/help/edge/assets/repeatable-section-example.png)
 
@@ -55,17 +55,17 @@ Nella progettazione dei moduli è utile impostare ripetizioni minime e massime p
 
 1. Vai alla cartella del progetto Edge Deliver in Microsoft SharePoint o Google Workspace e apri il foglio di calcolo.
 
-1. Per un campo di `type` `fieldset` e `repeatable` proprietà impostata su `true`:
+1. Per un campo di proprietà `type` `fieldset` e `repeatable` impostata su `true`:
 
-   * imposta `min` per specificare il numero minimo di ripetizioni della sezione.
+   * imposta la proprietà `min` per specificare il numero minimo di ripetizioni della sezione.
 
-   * imposta `max` per specificare il numero massimo di ripetizioni della sezione.
+   * imposta la proprietà `max` per specificare il numero massimo di ripetizioni della sezione.
 
    ![Impostare le proprietà min e max per specificare il numero di ripetizioni della sezione](/help/edge/assets/repeatable-section-set-min-max.png)
 
-1. Utilizzare [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare in anteprima e pubblicare il foglio.
+1. Utilizza la [barra laterale di AEM](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare in anteprima e pubblicare il foglio.
 
-   Quando si aggiunge una sezione ripetibile, gli utenti possono trovare un **Elimina** , semplificando la rimozione delle sezioni ripetibili. Una volta aggiunte, queste sezioni non possono essere ridotte a un numero di istanze inferiore a quello specificato da `min` proprietà. In questo modo si garantisce il rispetto dei requisiti minimi stabiliti per la compilazione del modulo.
+   Durante l’aggiunta di una sezione ripetibile, gli utenti trovare un’icona **Elimina** che semplifica la rimozione delle sezioni ripetibili. Una volta aggiunte, queste sezioni non possono essere ridotte a un numero di istanze inferiore a quello specificato dalla proprietà `min`. In questo modo si garantisce il rispetto dei requisiti minimi stabiliti per la compilazione del modulo.
 
 <!--
 

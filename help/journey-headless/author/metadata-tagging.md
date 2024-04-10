@@ -3,9 +3,9 @@ title: Scopri come definire metadati e tag per i frammenti di contenuto
 description: Scopri come definire metadati e tag per i frammenti di contenuto
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ L’articolo si basa su questi elementi, importanti per comprendere come utilizz
 
 ## Aggiunta di metadati e tag {#adding-metadata-and-tags}
 
-Puoi aggiungere metadati e tag dal pannello di destra dell’Editor frammento di contenuto:
+Potrai aggiungere metadati e tag dal pannello di destra dell’Editor frammento di contenuto:
 
 ![Editor frammento di contenuto - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 

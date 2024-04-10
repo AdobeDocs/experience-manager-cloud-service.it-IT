@@ -6,9 +6,9 @@ feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '892'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -54,15 +54,15 @@ Librerie, sviluppatori e utenti con privilegi avanzati DAM possono continuare a 
 
 Per informazioni su come accedere alla vista Risorse e su alcune delle semplificazioni offerte rispetto alla vista Amministratore, consulta [Introduzione alla vista Risorse](/help/assets/assets-view-introduction.md).
 
-## Integrazione con authoring basato su documenti per Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
+## Integrazione con l’authoring basato su documenti per Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
 
 Edge Delivery consente di creare siti web coinvolgenti e rapidi in cui gli autori possono aggiornare e pubblicare rapidamente i contenuti e che consentono il lancio rapido di nuovi siti.
 
-Integra AEM Assets con l’authoring basato su documenti per Edge Delivery Services per consentire agli autori di siti web di utilizzare le immagini disponibili negli archivi AEM Assets durante la creazione di documenti nei documenti Microsoft Word o Google. Per ulteriori informazioni, consulta [Integrare AEM Assets con l’authoring basato su documenti](/help/edge/using.md#integrate-assets-edge).
+Integra AEM Assets con l’authoring basato su documenti per Edge Delivery Services per consentire agli autori di siti web di utilizzare le immagini disponibili negli archivi di AEM Assets durante l’authoring di documenti in Microsoft Word o Documenti Google. Per ulteriori informazioni, consulta [Integrare AEM Assets con l’authoring basato su documenti](/help/edge/using.md#integrate-assets-edge).
 
 ## Integrazione con Adobe Journey Optimizer {#integration-with-ajo}
 
-[Adobe Journey Optimizer](https://business.adobe.com/it/products/journey-optimizer/adobe-journey-optimizer.html) semplifica la gestione dei percorsi per i clienti, offrendo campagne omnicanale con informazioni approfondite e decisioning intelligente. Durante la progettazione dei messaggi tramite Journey Optimizer, puoi accedere all’archivio Assets as a Cloud Service direttamente dall’interfaccia di Journey Optimizer. Gli utenti possono accedere alle risorse utilizzando l’interfaccia utente incorporata di Experience Manager Assets. Per ulteriori informazioni, consulta [Creare e gestire le risorse con Experience Manager Assets](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
+[Adobe Journey Optimizer](https://business.adobe.com/it/products/journey-optimizer/adobe-journey-optimizer.html) semplifica la gestione dei percorsi dei clienti, offrendo campagne omnicanale con informazioni approfondite e decisioning intelligente. Durante la progettazione dei messaggi tramite Journey Optimizer, puoi accedere all’archivio Assets as a Cloud Service direttamente dall’interfaccia di Journey Optimizer. Gli utenti possono accedere alle risorse utilizzando l’interfaccia utente incorporata di Experience Manager Assets. Per ulteriori informazioni, consulta [Creare e gestire le risorse con Experience Manager Assets](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/assets-images/assets).
 
 ## Nuove funzionalità di Assets {#whats-new-assets}
 
