@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '4842'
+source-wordcount: '4857'
 ht-degree: 99%
 
 ---
@@ -803,6 +803,7 @@ ht-degree: 99%
    + Creazione di applicazioni Edge Delivery {#build}
       + [Guida introduttiva: tutorial per sviluppatori](/help/edge/developer/tutorial.md)
       + [Anatomia di un progetto](/help/edge/developer/anatomy-of-a-franklin-project.md)
+      + [Bloccare una raccolta](/help/edge/developer/block-collection.md)
       + [Fogli di calcolo](/help/edge/developer/spreadsheets.md)
       + [Moduli](/help/edge/developer/forms.md)
       + [Indicizzazione](/help/edge/developer/indexing.md)
@@ -833,6 +834,7 @@ ht-degree: 99%
          + [Impostare i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati](/help/edge/docs/forms/submit-forms.md)
          + [Pubblicare il modulo e iniziare a raccogliere i dati](/help/edge/docs/forms/publish-forms.md)
          + [Aggiungere convalide ai campi del modulo](/help/edge/docs/forms/validate-forms.md)
+         + [Caricare opzioni dall’URL a un modulo](/help/edge/docs/forms/load-options-from-url.md)
          + [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
          + [Utilizzare le regole per aggiungere un comportamento dinamico a un modulo](/help/edge/docs/forms/rules-forms.md)
          + [Mostrare un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
@@ -842,6 +844,7 @@ ht-degree: 99%
          + [Traduzione](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componenti personalizzati](/help/edge/docs/forms/custom-components-forms.md)
+         + [Monitoraggio degli utenti in tempo reale per i moduli](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + Riferimenti {#forms-references}
          + [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
    + Risorse per Edge Delivery {#resources}
@@ -1178,9 +1181,3 @@ ht-degree: 99%
    + Accessibilità {#accessibility}
       + [AEM as a Cloud Service e le linee guida per l’accessibilità dei contenuti web](/help/compliance/accessibility/web-accessibility.md)
       + [Guida rapida alle linee guida WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
-
-
-<!--
-Temporarily remove:
-    + [Block Collection](/help/edge/developer/block-collection.md)
--->
