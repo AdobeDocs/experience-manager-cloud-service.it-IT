@@ -2,10 +2,10 @@
 title: Modellazione dei contenuti per l’authoring di AEM con progetti Edge Delivery Services
 description: Scopri come funziona la modellazione dei contenuti per l’authoring di AEM con progetti Edge Delivery Services e come modellare i tuoi contenuti.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 99%
+source-wordcount: '2095'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Prima di iniziare a modellare il contenuto per il progetto, assicurati di aver l
 
 * [Guida introduttiva: tutorial per sviluppatori](/help/edge/developer/tutorial.md)
 * [Markup, sezioni, blocchi e blocco automatico](/help/edge/developer/markup-sections-blocks.md)
-  <!--* [Block Collection](/help/edge/developer/block-collection.md)-->
+* [Bloccare una raccolta](/help/edge/developer/block-collection.md)
 
 È essenziale comprendere tali concetti per trovare un modello di contenuto convincente che funzioni in modo indipendente dall’origine dei contenuti. Questo documento fornisce dettagli sui meccanismi implementati specificamente per l’authoring di AEM.
 
@@ -323,7 +323,7 @@ Nell’esempio seguente, un blocco accetta un elenco di icone collegate come ele
 
 Con le [spiegazioni sulle meccaniche della struttura del blocco,](#block-structure) è possibile creare un modello di contenuto che mappa i contenuti persistenti in AEM uno a uno al livello di distribuzione.
 
-All’inizio di ogni progetto, è necessario prendere in considerazione attentamente un modello di contenuto per ogni blocco. Deve essere indipendente dall’origine del contenuto e dall’esperienza di authoring per consentire agli autori di passare a un’altra origine o di combinarle riutilizzando al contempo le implementazioni e gli stili dei blocchi. Maggiori dettagli e indicazioni generali sono disponibili in [David&#39;s Model (versione 2).](https://www.aem.live/docs/davidsmodel) <!--More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.-->
+All’inizio di ogni progetto, è necessario prendere in considerazione attentamente un modello di contenuto per ogni blocco. Deve essere indipendente dall’origine del contenuto e dall’esperienza di authoring per consentire agli autori di passare a un’altra origine o di combinarle riutilizzando al contempo le implementazioni e gli stili dei blocchi. Maggiori dettagli e indicazioni generali sono disponibili nel [David’s Model (second take).](https://www.aem.live/docs/davidsmodel) In particolare, la [raccolta blocchi](/help/edge/developer/block-collection.md) contiene un ampio set di modelli di contenuto per casi d’uso specifici con pattern di interfaccia utente comuni.
 
 Per quanto riguarda l’authoring di AEM con Edge Delivery Services, questo solleva la questione della modalità di distribuzione di un modello di contenuto semantico convincente quando le informazioni vengono create con moduli composti da più campi invece che con la modifica del markup semantico in un contesto come il testo in formato RTF.
 
