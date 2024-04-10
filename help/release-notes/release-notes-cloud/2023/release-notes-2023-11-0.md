@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione 2023.11.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2023.11.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2023.11.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2023.11.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
-source-git-commit: 07a799cf374bbd1ce0fe5d85433bf12d1d5ee648
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 23%
+ht-degree: 40%
 
 ---
 
@@ -25,7 +25,7 @@ La sezione seguente illustra le note sulla versione funzionale 2023.11.0 di [!DN
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.11.0) è il venerdì 30 novembre 2023. La prossima versione funzionale (2023.12.0) è pianificata per il venerdì 14 dicembre 2023.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.11.0) è il venerdì 30 novembre 2023. La prossima versione funzionale (2023.12.0) è pianificata per l’venerdì 14 dicembre 2023.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -39,7 +39,7 @@ Dai un’occhiata al video Panoramica sulla versione di novembre 2023 per un rie
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Programma Early Adopter {#sites-early-adopter}
+### Programma per i primi utilizzatori {#sites-early-adopter}
 
 **[Trovare e sostituire stringhe nei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: la console Frammenti di contenuto offre agli utenti un modo semplice e intuitivo di sostituire una stringa che appare contemporaneamente in più frammenti di contenuto per accelerare la velocità dei contenuti.
 
@@ -53,7 +53,7 @@ Ti interessa provare questa funzione e condividere con noi un tuo feedback? Invi
 
 * **Editor Adobe Express incorporato in AEM Assets**: gli utenti con accesso a Express ora dispongono di strumenti integrati di modifica e creazione delle immagini da Adobi Express e Adobe Firefly disponibili direttamente in AEM Assets per migliorare il riutilizzo dei contenuti e accelerarne la velocità.
 
-  ![assegnare un modulo di metadati a una cartella](/help/assets/assets/adobe-express-aem-assets.png)
+  ![assegnare il modulo metadati a una cartella](/help/assets/assets/adobe-express-aem-assets.png)
 
 <!--
 
@@ -100,17 +100,17 @@ Ti interessa provare questa funzione e condividere con noi un tuo feedback? Invi
 
 -->
 
-### Programma Early Adopter {#forms-early-adopter}
+### Programma per i primi utilizzatori {#forms-early-adopter}
 
-* **Inviare un modulo adattivo allo scenario Adobe Workfront Fusion**: Forms as a Cloud Service offre opzioni pronte all’uso per collegare facilmente un modulo adattivo ad Adobe Workfront. Questo semplifica il processo di invio di un modulo adattivo a uno scenario Adobe Workfront, consentendoti di attivare uno scenario Workfront Fusion all’invio di un modulo adattivo.
+* **Inviare un modulo adattivo allo scenario Adobe Workfront Fusion**: Forms as a Cloud Service offre opzioni pronte all’uso per collegare facilmente un modulo adattivo ad Adobe Workfront. Questo semplifica il processo di invio di un modulo adattivo a uno scenario di Adobe Workfront, consentendoti di attivare uno scenario Workfront Fusion all’invio di un modulo adattivo.
 
-* **Supporto lingue da destra a sinistra**: il Forms adattivo basato sui Componenti core ora può essere presentato in una lingua da destra a sinistra (RTL) come l’arabo, il persiano e l’urdu. Le lingue RTL sono parlate da oltre 2 miliardi di persone in tutto il mondo. L’utilizzo di un modulo in linguaggio RTL consente di estendere la portata dei moduli adattivi per soddisfare questi diversi tipi di pubblico e per accedere ai mercati RTL. In alcune regioni, è anche un mandato legale fornire moduli nella lingua locale. Accogliendo le lingue locali, non solo si aprono le porte a un pubblico più ampio, ma si garantisce anche la conformità con le leggi e i regolamenti pertinenti.
+* **Supporto lingue da destra a sinistra**: i moduli adattivi basati sui Componenti core ora possono essere presentati in una lingua da destra a sinistra (RTL) come l’arabo, il persiano e l’urdu. Le lingue RTL sono parlate da oltre 2 miliardi di persone in tutto il mondo. L’utilizzo di un modulo in linguaggio RTL consente di estendere la portata dei moduli adattivi per soddisfare questi diversi tipi di pubblico e per accedere ai mercati RTL. In alcune aree geografiche, fornire moduli nella lingua locale, è anche obbligatorio dal punto di vista legale. Adattandosi alle lingue locali, non solo si aprono le porte a un pubblico più ampio, ma si garantisce anche la conformità con le leggi e i regolamenti pertinenti.
 
   ![Supporto lingue da destra a sinistra](/help/forms/assets/right-to-left-language-support.png)
 
-* **[Protect i tuoi documenti con le API DocAssurance (parte delle API di comunicazione)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: le API DocAssurance ti consentono di proteggere le informazioni riservate firmando e crittografando i documenti. Tramite la crittografia, il contenuto di un documento viene trasformato in un formato illeggibile, in modo che solo gli utenti autorizzati possano accedervi. Questo livello di protezione aumentato non solo protegge i dati preziosi da persone non autorizzate, ma offre anche la massima tranquillità. Le API di firma consentono all’organizzazione di proteggere la sicurezza e la privacy dei documenti Adobe PDF che distribuisce e riceve. Questo servizio utilizza firme digitali e certificazione per garantire che solo i destinatari desiderati possano modificare i documenti.
+* **[Proteggere i documenti con le API DocAssurance (parte di API Communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: le API DocAssurance consentono di proteggere le informazioni riservate firmando e crittografando i documenti. Tramite crittografia, il contenuto di un documento viene trasformato in un formato illeggibile, in modo che solo gli utenti autorizzati possano accedervi. Questo strato di protezione fortificato non solo protegge i dati preziosi da persone non autorizzate, ma offre anche la massima tranquillità. Le API di firma consentono all’organizzazione di proteggere la sicurezza e la privacy dei documenti Adobe PDF che distribuisce e riceve. Questo servizio utilizza firme digitali e certificazione per garantire che solo i destinatari desiderati possano modificare i documenti.
 
-  Puoi scrivere a `aem-forms-early-adopter-program@adobe.com` dal tuo id e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità.
+  Per partecipare al programma per i primi utilizzatori e richiedere l’accesso alla funzionalità, è possibile inviare una e-mail all’indirizzo `aem-forms-ea@adobe.com` dal proprio ID e-mail ufficiale.
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
@@ -122,14 +122,14 @@ Una volta ottenuta la licenza, queste regole WAF avanzate possono essere distrib
 
 Ulteriori informazioni [Regole filtro traffico](/help/security/traffic-filter-rules-including-waf.md), incluso WAF. Rivolgiti al tuo account team AEM per informazioni sulla concessione di licenze per la protezione WAF-DDoS o la sicurezza avanzata.
 
-### Programma di adozione anticipata configurazione CDN {#cdn-config-early-adopter}
+### Programma per i primi utilizzatori della configurazione CDN {#cdn-config-early-adopter}
 
 Oltre agli ultimi [Regole filtro traffico (incluso WAF)](/help/security/traffic-filter-rules-including-waf.md)Inoltre, esiste l’opportunità di utilizzare la pipeline di configurazione per dichiarare e distribuire altri tipi di configurazione CDN. Ci piacerebbe conoscere i tuoi casi d’uso, tra cui:
 * 301/302 reindirizzamenti lato client
-* trasferimento di richieste al server Edge di a origini arbitrarie
-* Trasformazioni URL
-* impostazione o modifica delle intestazioni di richiesta o risposta
-* pagine di errore personalizzate quando la rete CDN non può raggiungere l’AEM
+* proxy di richieste al server Edge di origini arbitrarie
+* trasformazioni URL
+* impostazione o modifica delle intestazioni di risposta o richiesta
+* pagine di errore personalizzate quando la rete CDN non può raggiungere AEM
 * autenticazione tramite nome utente/password
 * qualsiasi altra configurazione CDN utile
 
