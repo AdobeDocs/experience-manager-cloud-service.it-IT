@@ -1,13 +1,13 @@
 ---
-title: Note sulla versione 2023.12.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2023.12.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: 348c6d29001c532c1eb7a3e534517efb2ba73151
+title: Note sulla versione 2023.12.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2023.12.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 36%
+ht-degree: 76%
 
 ---
-
 
 # Note sulla versione 2023.12.0 di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -25,7 +25,7 @@ La sezione seguente illustra le note sulla versione funzionale 2023.12.0 di [!DN
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.12.0) è il venerdì 14 dicembre 2023. La prossima versione funzionale (2024.1.0) è pianificata per il giovedì 25 gennaio 2023.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.12.0) è il venerdì 14 dicembre 2023. La prossima versione funzionale (2024.1.0) è pianificata per l’giovedì 25 gennaio 2023.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -43,13 +43,13 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Programma Early Adopter {#sites-early-adopter}
+### Programma per i primi utilizzatori {#sites-early-adopter}
 
 **Puoi sfruttare [Servizio dati di Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** per abilitare la raccolta lato client per AEM as a Cloud Service.
 
-Real User Monitoring (RUM) Data Service offre un riflesso più preciso delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web. È un’ottima opportunità per ottenere informazioni avanzate sulle prestazioni della pagina. Questo è utile per i clienti che utilizzano una rete CDN gestita da Adobe o una rete CDN non gestita da Adobe. Inoltre, per i clienti che utilizzano una rete CDN gestita non basata su Adobi, ora è possibile abilitare il reporting automatico del traffico, eliminando in tal modo la necessità di condividere eventuali rapporti sul traffico con Adobe.
+Il servizio dati del monitoraggio utenti reali (RUM) offre una panoramica più precisa delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web. Rappresenta un’ottima opportunità per ottenere informazioni avanzate sulle prestazioni della pagina. Questa funzione è utile per chi utilizza una rete CDN gestita o non gestita da Adobe. Inoltre, per chi utilizza una rete CDN non gestita da Adobe, ora è possibile abilitare il reporting automatico del traffico, eliminando in tal modo la necessità di condividere eventuali rapporti sul traffico con Adobe.
 
-Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un’e-mail a `aemcs-rum-adopter@adobe.com`, insieme al nome di dominio per l’ambiente di produzione, stage e sviluppo, dall’indirizzo e-mail associato al tuo Adobe ID. Il team di prodotto di Adobe abiliterà quindi il servizio dati Real User Monitoring (RUM).
+Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un’e-mail a `aemcs-rum-adopter@adobe.com`, insieme al nome di dominio per l’ambiente di produzione, stage e sviluppo, dall’indirizzo e-mail associato al tuo Adobe ID. Il team di prodotto di Adobe abiliterà quindi il servizio dati del Monitoraggio degli utenti reali (RUM).
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -89,28 +89,28 @@ Ora è possibile trovare facilmente il contenuto selezionando un’immagine e vi
 
 -->
 
-### Programma Early Adopter {#forms-early-adopter}
+### Programma per i primi utilizzatori {#forms-early-adopter}
 
-* **[Inviare un modulo adattivo allo scenario Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service offre opzioni pronte all’uso per collegare facilmente un modulo adattivo ad Adobe Workfront. Questo semplifica il processo di invio di un modulo adattivo a uno scenario Adobe Workfront, consentendoti di attivare uno scenario Workfront Fusion all’invio di un modulo adattivo.
+* **[Inviare un modulo adattivo allo scenario Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service offre opzioni pronte all’uso per collegare facilmente un modulo adattivo ad Adobe Workfront. Questo semplifica il processo di invio di un modulo adattivo a uno scenario di Adobe Workfront, consentendoti di attivare uno scenario Workfront Fusion all’invio di un modulo adattivo.
 
-* **[Supporto lingue da destra a sinistra](/help/forms/supporting-new-language-localization-core-components.md)**: il Forms adattivo basato sui Componenti core ora può essere presentato in una lingua da destra a sinistra (RTL) come l’arabo, il persiano e l’urdu. Le lingue RTL sono parlate da oltre 2 miliardi di persone in tutto il mondo. L’utilizzo di un modulo in linguaggio RTL consente di estendere la portata dei moduli adattivi in modo da soddisfare questi diversi tipi di pubblico e selezionarli in mercati RTL. In alcune regioni, è anche un mandato legale fornire moduli nella lingua locale. Accogliendo le lingue locali, non solo si aprono le porte a un pubblico più ampio, ma si garantisce anche la conformità con le leggi e i regolamenti pertinenti.
+* **[Supporto lingue da destra a sinistra](/help/forms/supporting-new-language-localization-core-components.md)**: i moduli adattivi basati sui Componenti core ora possono essere presentati in una lingua da destra a sinistra (RTL) come l’arabo, il persiano e l’urdu. Le lingue RTL sono parlate da oltre 2 miliardi di persone in tutto il mondo. L’utilizzo di un modulo in linguaggio RTL consente di estendere la portata dei moduli adattivi in modo da soddisfare questi diversi tipi di pubblico e selezionarli in mercati RTL. In alcune aree geografiche, fornire moduli nella lingua locale, è anche obbligatorio dal punto di vista legale. Adattandosi alle lingue locali, non solo si aprono le porte a un pubblico più ampio, ma si garantisce anche la conformità con le leggi e i regolamenti pertinenti.
 
   ![Supporto lingue da destra a sinistra](/help/forms/assets/right-to-left-language-support.png)
 
-* **[Protect i tuoi documenti con le API DocAssurance (parte delle API di comunicazione)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: le API DocAssurance ti consentono di proteggere le informazioni riservate firmando e crittografando i documenti. Tramite la crittografia, il contenuto di un documento viene trasformato in un formato illeggibile, in modo che solo gli utenti autorizzati possano accedervi. Questo livello di protezione aumentato non solo protegge i dati preziosi da persone non autorizzate, ma offre anche la massima tranquillità. Le API di firma consentono all’organizzazione di proteggere la sicurezza e la privacy dei documenti Adobe PDF che distribuisce e riceve. Questo servizio utilizza firme digitali e certificazione per garantire che solo i destinatari desiderati possano modificare i documenti.
+* **[Proteggere i documenti con le API DocAssurance (parte di API Communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: le API DocAssurance consentono di proteggere le informazioni riservate firmando e crittografando i documenti. Tramite crittografia, il contenuto di un documento viene trasformato in un formato illeggibile, in modo che solo gli utenti autorizzati possano accedervi. Questo strato di protezione fortificato non solo protegge i dati preziosi da persone non autorizzate, ma offre anche la massima tranquillità. Le API di firma consentono all’organizzazione di proteggere la sicurezza e la privacy dei documenti Adobe PDF che distribuisce e riceve. Questo servizio utilizza firme digitali e certificazione per garantire che solo i destinatari desiderati possano modificare i documenti.
 
-  Puoi scrivere a `aem-forms-early-adopter-program@adobe.com` dal tuo id e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità.
+  Per partecipare al programma per i primi utilizzatori e richiedere l’accesso alla funzionalità, è possibile inviare una e-mail all’indirizzo `aem-forms-ea@adobe.com` dal proprio ID e-mail ufficiale.
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
-### Programma di adozione anticipata configurazione CDN {#cdn-config-early-adopter}
+### Programma per i primi utilizzatori della configurazione CDN {#cdn-config-early-adopter}
 
 Oltre agli ultimi [Regole filtro traffico](/help/security/traffic-filter-rules-including-waf.md), che include le regole WAF (Web Application Firewall) facoltative, esiste l’opportunità di utilizzare la pipeline di configurazione per dichiarare e distribuire altri tipi di configurazione CDN. Ci piacerebbe conoscere i tuoi casi d’uso, tra cui:
 * 301/302 reindirizzamenti lato client
-* trasferimento di richieste al server Edge di a origini arbitrarie
-* Trasformazioni URL
-* impostazione o modifica delle intestazioni di richiesta o risposta
-* pagine di errore personalizzate quando la rete CDN non può raggiungere l’AEM
+* proxy di richieste al server Edge di origini arbitrarie
+* trasformazioni URL
+* impostazione o modifica delle intestazioni di risposta o richiesta
+* pagine di errore personalizzate quando la rete CDN non può raggiungere AEM
 * autenticazione tramite nome utente/password
 * qualsiasi altra configurazione CDN utile
 
