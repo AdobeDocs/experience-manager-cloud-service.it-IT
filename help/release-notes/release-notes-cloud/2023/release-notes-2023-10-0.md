@@ -2,7 +2,7 @@
 title: Note sulla versione 2023.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2023.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
-source-git-commit: b323fbe3a09de220c61c9b409d8754e43fe0a8d3
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 98%
@@ -78,7 +78,7 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2023 per un r
 
 * **[Proteggere i documenti con le API DocAssurance (parte di API Communication)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: le API DocAssurance consentono di proteggere le informazioni riservate firmando e crittografando i documenti. Tramite crittografia, il contenuto di un documento viene trasformato in un formato illeggibile, in modo che solo gli utenti autorizzati possano accedervi. Questo strato di protezione fortificato non solo protegge i dati preziosi da persone non autorizzate, ma offre anche la massima tranquillità. Le API di firma consentono all’organizzazione di proteggere la sicurezza e la privacy dei documenti Adobe PDF che distribuisce e riceve. Questo servizio utilizza firme digitali e certificazione per garantire che solo i destinatari desiderati possano modificare i documenti.
 
-  Per partecipare al programma per i primi utilizzatori e richiedere l’accesso alla funzionalità, è possibile inviare una e-mail all’indirizzo `aem-forms-early-adopter-program@adobe.com` dal proprio ID e-mail ufficiale.
+  Per partecipare al programma per i primi utilizzatori e richiedere l’accesso alla funzionalità, è possibile inviare una e-mail all’indirizzo `aem-forms-ea@adobe.com` dal proprio ID e-mail ufficiale.
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
