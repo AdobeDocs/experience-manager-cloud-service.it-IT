@@ -2,23 +2,25 @@
 title: Introduzione all’editor universale
 description: Scopri in che modo Universal Editor consente di modificare ciò che vedi è ciò che ottieni (WYSIWYG) di qualsiasi esperienza headless e headful. Scopri in che modo questo può aiutare gli autori di contenuto a fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 24496f81313bd58f60aa6d251c46f11fb24d1dbd
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 83%
+source-wordcount: '983'
+ht-degree: 63%
 
 ---
 
 
 # Introduzione all’editor universale {#introduction}
 
-Scopri in che modo Universal Editor consente di modificare ciò che vedi è ciò che ottieni (WYSIWYG) di qualsiasi esperienza headless e headful. Scopri in che modo questo può aiutare gli autori di contenuto a fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
+Universal Editor è un editor visivo versatile che fa parte di Adobe Experience Manager Sites. Consente agli autori di eseguire la modifica WYSIWYG (What-you-see-is-what-you-get) di qualsiasi esperienza headless o headful. Scopri in che modo può aiutare gli autori di contenuti a fornire esperienze eccezionali e come offre agli sviluppatori una libertà senza precedenti.
 
 ## Informazioni di base {#background}
 
-Lo strumento più efficace per gli autori di contenuto AEM è stato l’editor pagina. L’editor pagina offre un’esperienza di authoring WYSIWYG intuitiva, visiva e contestuale che richiede una formazione minima e mostra agli autori esattamente come apparirà il contenuto.
+Universal Editor offre un’esperienza di authoring in-context efficiente e intuitiva che richiede una formazione minima. Con esso, gli autori possono gestire i loro contenuti direttamente nel contesto dell’esperienza web, esattamente come apparirà ai visitatori. Essendo un vero editor come servizio e complessivamente più flessibile, intende alla fine sostituire l’Editor pagina.
 
-Tuttavia, l’editor pagina può modificare solo il contenuto della pagina AEM, la struttura e i componenti in essa contenuti. Oggi, tuttavia, il contenuto proviene raramente da un’unica posizione. L’Editor universale offre la stessa esperienza di modifica diretta dell’editor pagina, ma per qualsiasi aspetto del contenuto in qualsiasi implementazione.
+Gli autori traggono vantaggio dalla flessibilità dell’Editor universale in quanto supporta lo stesso editing visivo coerente per tutte le forme di contenuto AEM: la modifica diretta e la composizione del layout sono possibili anche per i frammenti di contenuto e i componenti di pagina. Le due forme di contenuto possono anche essere modificate quando si presentano affiancate in un’esperienza web, senza che gli autori debbano cambiare contesto. Si tratta di un miglioramento enorme rispetto ai precedenti editor dell&#39;AEM che supportavano un solo tipo di contenuto.
+
+Gli sviluppatori traggono vantaggio dalla versatilità di Universal Editor in quanto supporta anche un vero e proprio disaccoppiamento dell’implementazione. Consente agli sviluppatori di utilizzare virtualmente qualsiasi framework o architettura a loro scelta, senza imporre vincoli di SDK o tecnologia. Questa flessibilità consente anche di dotare le app web esistenti di strumenti facilmente utilizzabili dall’editor universale, senza doverle riprogettare.
 
 ## Veramente universale {#universal}
 
