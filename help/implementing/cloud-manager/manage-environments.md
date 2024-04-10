@@ -2,10 +2,10 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 8f7ddeea27df8e765a7c83c74af25961748ee26d
 workflow-type: tm+mt
-source-wordcount: '2614'
-ht-degree: 81%
+source-wordcount: '2660'
+ht-degree: 77%
 
 ---
 
@@ -209,9 +209,9 @@ In ogni caso, [il traffico viene sempre indirizzato all&#39;altra area più vici
 
 ## Aggiornamento degli ambienti {#updating-dev-environment}
 
-Come servizio nativo per il cloud, Adobe gestisce automaticamente gli aggiornamenti degli ambienti di staging e produzione all’interno dei programmi di produzione.
+In qualità di servizio nativo per il cloud, gli aggiornamenti degli ambienti di sviluppo, staging e produzione all’interno dei programmi di produzione vengono gestiti automaticamente da Adobe.
 
-Tuttavia, gli aggiornamenti degli ambienti di sviluppo e degli ambienti nei programmi sandbox vengono gestiti internamente ai programmi. Se in tale ambiente non è in esecuzione l’ultima versione di AEM disponibile pubblicamente, lo stato nella scheda **Ambienti** della schermata **Panoramica** del programma indica **Aggiornamento disponibile**.
+Tuttavia, gli aggiornamenti degli ambienti nei programmi sandbox vengono gestiti all’interno dei programmi. Se in tale ambiente non è in esecuzione l’ultima versione di AEM disponibile pubblicamente, lo stato nella scheda **Ambienti** della schermata **Panoramica** del programma indica **Aggiornamento disponibile**.
 
 ![Stato dell’aggiornamento dell’ambiente](assets/environ-update.png)
 
@@ -228,7 +228,10 @@ Il processo di aggiornamento è quindi articolato in due fasi:
 
 ### Aggiornamento degli ambienti {#updating-your-environments}
 
-Per gli ambienti di sviluppo e gli ambienti nei programmi sandbox, facendo clic sul pulsante con i puntini di sospensione nella scheda **Ambienti** è disponibile l’opzione **Aggiorna**.
+>[!NOTE]
+> A partire dal 2024, le istanze di sviluppo e alcuni programmi sandbox sono già aggiornati automaticamente, pertanto non è necessario gestirne manualmente gli aggiornamenti. In seguito a questa transizione, l’opzione di aggiornamento manuale dell’ambiente per le istanze di sviluppo potrebbe non essere disponibile per _alcuni_ dei programmi.
+
+Il **Aggiorna** è disponibile dall&#39;opzione **Ambienti** per alcuni ambienti di sviluppo e ambienti nei programmi sandbox, fai clic sul pulsante con i puntini di sospensione corrispondente all’ambiente.
 
 ![Opzione Aggiorna dalla scheda Ambienti](assets/environ-update2.png)
 
@@ -246,7 +249,7 @@ Il comportamento dell’opzione **Aggiorna** varia a seconda della configurazion
 
 * Se la pipeline è già stata aggiornata, l’opzione **Aggiorna** richiede all’utente di eseguire la pipeline.
 * Se l’aggiornamento della pipeline è già in corso, l’opzione **Aggiorna** informa l’utente circa la presenza di un aggiornamento in corso.
-* Se non esiste una pipeline appropriata, l’opzione **Aggiorna** richiede all’utente di crearne una.
+* Se non esiste una pipeline appropriata, il **Aggiorna** richiede all&#39;utente di crearne una.
 
 ## Eliminazione degli ambienti di sviluppo {#deleting-environment}
 

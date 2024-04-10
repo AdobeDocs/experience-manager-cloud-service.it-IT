@@ -3,10 +3,10 @@ title: Aggiornamenti della versione di AEM
 description: Scopri in che modo Adobe Experience Manager (AEM) as a Cloud Service utilizza Continuous Integration and Delivery (CI/CD) per mantenere i progetti sull’ultima versione.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 9bfea65c07da5da044df8f698e409eab5c4320fb
+source-git-commit: 72fc611e006f80fdda672f08b0b795432f5899e2
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 3%
+source-wordcount: '970'
+ht-degree: 1%
 
 ---
 
@@ -19,23 +19,36 @@ Scopri in che modo Adobe Experience Manager (AEM) as a Cloud Service utilizza Co
 
 AEM as a Cloud Service utilizza l’integrazione continua e la distribuzione continua (CI/CD) per garantire che i tuoi progetti siano nella versione dell’AEM più recente. Questo processo aggiorna facilmente le istanze di produzione, staging e sviluppo senza causare interruzioni agli utenti.
 
-Prima che le istanze vengano aggiornate automaticamente, viene pubblicata una nuova versione di manutenzione dell’AEM con 3-5 giorni di anticipo. Durante questo periodo, puoi facoltativamente [attivare gli aggiornamenti manuali per le istanze di sviluppo](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Trascorso questo periodo di tempo, gli aggiornamenti delle versioni vengono applicati automaticamente agli ambienti di sviluppo. Se l’aggiornamento ha esito positivo, il processo di aggiornamento procede alle istanze di staging e produzione. Le istanze di sviluppo e staging fungono da gate di qualità automatizzato, in cui i test scritti personalizzati vengono eseguiti prima dell’applicazione dell’aggiornamento all’ambiente di produzione.
+>[!NOTE]
+> Poiché le istanze di sviluppo sono già aggiornate automaticamente, gli aggiornamenti manuali per le istanze di sviluppo potrebbero non essere disponibili per _alcuni_ dei programmi. Questa funzione viene convertita in aggiornamenti automatici.
+
+Prima che le istanze vengano aggiornate automaticamente, viene pubblicata una nuova versione di manutenzione dell’AEM con 3-5 giorni di anticipo. Durante questo periodo, l’istanza di sviluppo potrebbe essere aggiornata automaticamente o, nel caso sia disponibile, puoi opzionalmente [attiva l’aggiornamento per le istanze di sviluppo](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Gli aggiornamenti delle versioni vengono prima applicati automaticamente agli ambienti di sviluppo. Se l’aggiornamento ha esito positivo, il processo di aggiornamento procede alle istanze di staging e produzione. Le istanze di sviluppo e staging fungono da gate di qualità automatizzato, in cui i test scritti personalizzati vengono eseguiti prima dell’applicazione dell’aggiornamento all’ambiente di produzione.
+
+### NIMU (aggiornamenti di manutenzione non intrusivi) {#nimu}
+
+Gli aggiornamenti di manutenzione non intrusivi sono aggiornamenti automatici applicati senza coinvolgere le pipeline dei clienti.
+Tramite NIMU, il cliente può utilizzare la pipeline in qualsiasi momento, anche se è pianificato o in corso un aggiornamento della versione dell’AEM e gli aggiornamenti di manutenzione non verranno più visualizzati nella cronologia di esecuzione della pipeline del cliente, semplificando il monitoraggio della cronologia delle distribuzioni del codice.
+
+#### Aggiorna attività
+
+La versione corrente dell’AEM può ancora essere controllata per ogni ambiente, come prima, utilizzando il pannello Ambienti dell’interfaccia utente di Cloud Manager. Gli stessi gate di qualità utilizzati nella pipeline vengono utilizzati dagli aggiornamenti di manutenzione non intrusivi, inclusi i test scritti dal cliente.
+Quando un aggiornamento di manutenzione non intrusivo viene applicato agli ambienti del programma, viene inviata una notifica all’interfaccia utente di Cloud Manager. Puoi configurarlo per l’invio anche all’e-mail.
 
 >[!NOTE]
 >
-> Nota: gli aggiornamenti automatici per gli ambienti di sviluppo vengono progressivamente abilitati nel 2023 per tutti i clienti. Se gli ambienti di sviluppo non vengono aggiornati automaticamente, puoi utilizzare gli aggiornamenti manuali per mantenerli sincronizzati con gli ambienti di staging e produzione.
+> Nota: gli aggiornamenti di manutenzione non intrusivi verranno progressivamente abilitati per tutti i clienti nel 2024.
 
 
 ## Tipo di aggiornamenti {#update-types}
 
 Esistono due tipi di aggiornamenti delle versioni di AEM:
 
-* [**Aggiornamenti di manutenzione di AEM**](/help/release-notes/maintenance/latest.md)
+* [**Aggiornamenti di manutenzione AEM**](/help/release-notes/maintenance/latest.md)
 
    * Sono per lo più a scopo di manutenzione, comprese le ultime correzioni di bug e gli aggiornamenti di sicurezza.
    * L’impatto è minimo perché le modifiche vengono applicate regolarmente.
 
-* [**Aggiornamenti con nuove funzioni**](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [**Attivazione funzione AEM**](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
    * Vengono rilasciati in base a una pianificazione mensile prevedibile.
 
