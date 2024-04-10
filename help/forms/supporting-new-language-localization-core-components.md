@@ -3,21 +3,21 @@ title: Come si aggiunge il supporto per nuove lingue a un modulo adattivo basato
 description: Scopri come aggiungere nuove lingue per un modulo adattivo.
 feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 2%
 
 ---
 
-# Aggiungere una lingua per Forms adattivo basato sui componenti core {#supporting-new-locales-for-adaptive-forms-localization}
+# Aggiungere una lingua per un modulo adattivo basato sui componenti core {#supporting-new-locales-for-adaptive-forms-localization}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | Componenti di base | [Fai clic qui](supporting-new-language-localization.md) |
 | Componenti core | Questo articolo |
 
-<span class="preview"> La funzione di supporto per le lingue da destra a sinistra è disponibile nel programma per i primi utenti. Puoi scrivere a aem-forms-early-adopter-program@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità. </span>
+<span class="preview"> La funzione di supporto per le lingue da destra a sinistra è disponibile nel programma per i primi utenti. Puoi scrivere a aem-forms-ea@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità. </span>
 
 AEM Forms fornisce supporto predefinito per le lingue inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR). È possibile aggiungere il supporto anche per altre lingue, come Hindi(hi_IN). È inoltre possibile presentare Forms adattivo in una lingua RTL (Right-to-Left) come l’arabo, il persiano e l’urdu aggiungendo queste lingue.
 
