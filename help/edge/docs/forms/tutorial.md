@@ -3,7 +3,7 @@ title: 'Guida introduttiva a Edge Delivery Services di AEM Forms: tutorial per s
 description: Questo tutorial ti mostrerà come essere subito operativo con un nuovo progetto di Adobe Experience Manager Forms (AEM). Tra dieci o venti minuti sarà possibile creare moduli personalizzati.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+source-git-commit: 74e3bc79a734bd2c686e28cdcbbda96a58268c77
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 99%
@@ -192,7 +192,7 @@ Per visualizzare in anteprima il contenuto non pubblicato:
 
 Il contenuto di esempio include un foglio “enquiry” che funge da modello per il modulo “enquiry”. Ogni riga del foglio rappresenta un [campo modulo](/help/edge/docs/forms/form-components.md#available-components) e le intestazioni della colonna definiscono le [proprietà del campo](/help/edge/docs/forms/form-components.md#available-components). Questo modulo di esempio offre un punto di partenza per iniziare a creare il modulo.
 
-![Modulo di richiesta](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+![Modulo di richiesta](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
 Iniziamo con l’aggiornamento dell’etichetta di un campo. Apri il foglio “enquiry” per la modifica, cambia l’etichetta del pulsante Invia in `Let's Chat` e utilizza AEM Sidekick per visualizzare in anteprima e pubblicare il file.
 
