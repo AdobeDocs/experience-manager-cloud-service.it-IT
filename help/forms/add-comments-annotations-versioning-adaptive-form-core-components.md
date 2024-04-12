@@ -4,9 +4,9 @@ description: Utilizza i componenti core per moduli adattivi per aggiungere comme
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: true
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Per creare una versione di un modulo, effettuare le seguenti operazioni:
 1. Nel menu a discesa di selezione nel pannello a sinistra, seleziona **[!UICONTROL Versioni]**.
    ![Seleziona un modulo](select-a-form.png)
 1. Fai clic su **tre punti** nel pannello inferiore a sinistra, fai clic su **[!UICONTROL Salva come versione]**.
-1. Ora è possibile assegnare un&#39;etichetta alla versione del modulo e fornire informazioni sul modulo tramite il commento.
+1. A questo punto, assegnare un&#39;etichetta alla versione del modulo ed è possibile fornire informazioni sul modulo tramite il commento.
    ![Creare una versione del modulo](create-a-form-version.png)
 
 ### Aggiornare una versione del modulo {#update-a-form-version}
@@ -77,22 +77,15 @@ In molti casi, agli utenti dei gruppi di moduli viene richiesto di aggiungere an
 1. Fai clic su **icona aggiungi** si trova nella barra superiore destra, come indicato nell’immagine.
    ![Annotazione](annotation.png)
 
-1. Fai clic su **icona aggiungi** si trova nella barra in alto a sinistra, come indicato nell’immagine, per aggiungere la notazione.
+1. Fai clic su **icona aggiungi** si trova nella barra in alto a sinistra, come indicato nell’immagine, per aggiungere l’annotazione.
    ![Aggiungi annotazione](add-annotation.png)
 
-1. Ora è possibile aggiungere commenti, disegnare schizzi con più colori, per formare i componenti.
+1. Ora è possibile aggiungere commenti, disegnare schizzi con più colori per formare i componenti.
 
-1. Per visualizzare tutte le annotazioni aggiunte a un modulo, selezionalo e vedrai le annotazioni aggiunte nel pannello a sinistra, come illustrato nell’immagine.
+1. Per visualizzare tutte le annotazioni aggiunte a un modulo, selezionalo e visualizzerai le annotazioni aggiunte nel pannello sinistro, come illustrato nell’immagine.
 
    ![Vedi annotazioni aggiunte](see-annotations.png)
 
+## Consulta anche {#see-also}
 
-
-
-
-
-
-
-
-
-
+{{see-also}}

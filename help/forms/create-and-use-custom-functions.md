@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '3039'
+source-wordcount: '3108'
 ht-degree: 0%
 
 ---
@@ -42,102 +42,112 @@ Le funzioni personalizzate sono essenzialmente librerie client aggiunte nel file
 
 Le annotazioni JavaScript vengono utilizzate per fornire metadati per il codice JavaScript. Include commenti che iniziano con simboli specifici, ad esempio /** e @. Le annotazioni forniscono informazioni importanti su funzioni, variabili e altri elementi nel codice. Il modulo adattivo supporta le seguenti annotazioni JavaScript per le funzioni personalizzate:
 
-* **Nome**
+#### Nome
+
 Il nome viene utilizzato per identificare la funzione personalizzata nell’editor di regole di un modulo adattivo. Per denominare una funzione personalizzata vengono utilizzate le sintassi seguenti:
-   * `@name [functionName] <Function Name>`
-   * `@function [functionName] <Function Name>`
-   * `@func [functionName] <Function Name>`.
-     `functionName` è il nome della funzione. Gli spazi non sono consentiti.
-     `<Function Name>` è il nome visualizzato della funzione nell’editor di regole di un modulo adattivo.
+
+* `@name [functionName] <Function Name>`
+* `@function [functionName] <Function Name>`
+* `@func [functionName] <Function Name>`.
+  `functionName` è il nome della funzione. Gli spazi non sono consentiti.
+  `<Function Name>` è il nome visualizzato della funzione nell’editor di regole di un modulo adattivo.
 Se il nome della funzione è identico al nome della funzione stessa, è possibile omettere `[functionName]` dalla sintassi. <!-- For example,  in the `calculateAge` custom function, the name is defined as:
 `* @name calculateAge` -->
 
-* **Parametro**
+#### Parametro
+
 Il parametro è un elenco di argomenti utilizzati dalle funzioni personalizzate. Una funzione può supportare più parametri. Le seguenti sintassi vengono utilizzate per definire un parametro in una funzione personalizzata:
-   * `@param {type} name <Parameter Description>`
-   * `@argument` `{type} name <Parameter Description>`
-   * `@arg` `{type}` `name <Parameter Description>`.
-     `{type}` rappresenta il tipo di parametro.  I tipi di parametri consentiti sono:
-      * string (stringa): rappresenta un singolo valore di stringa.
-      * number: rappresenta un singolo valore numerico.
-      * booleano: rappresenta un singolo valore booleano (true o false).
-      * stringa[]: rappresenta una matrice di valori stringa.
-      * numero[]: rappresenta una matrice di valori numerici.
-      * booleano[]: rappresenta una matrice di valori booleani.
-      * data: rappresenta un singolo valore di data.
-      * data[]: rappresenta una matrice di valori di data.
-      * array: rappresenta una matrice generica contenente valori di vari tipi.
-      * object: rappresenta un oggetto modulo passato a una funzione personalizzata anziché passare direttamente il relativo valore.
-      * ambito: rappresenta l&#39;oggetto globale utilizzato dalle funzioni personalizzate in fase di esecuzione. Viene dichiarato come ultimo parametro nelle annotazioni JavaScript e non è visibile nell’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo.
 
-  Il tipo di parametro non fa distinzione tra maiuscole e minuscole e non sono consentiti spazi nel nome del parametro.
+* `@param {type} name <Parameter Description>`
+* `@argument` `{type} name <Parameter Description>`
+* `@arg` `{type}` `name <Parameter Description>`.
+  `{type}` rappresenta il tipo di parametro.  I tipi di parametri consentiti sono:
+   * string (stringa): rappresenta un singolo valore di stringa.
+   * number: rappresenta un singolo valore numerico.
+   * booleano: rappresenta un singolo valore booleano (true o false).
+   * stringa[]: rappresenta una matrice di valori stringa.
+   * numero[]: rappresenta una matrice di valori numerici.
+   * booleano[]: rappresenta una matrice di valori booleani.
+   * data: rappresenta un singolo valore di data.
+   * data[]: rappresenta una matrice di valori di data.
+   * array: rappresenta una matrice generica contenente valori di vari tipi.
+   * object: rappresenta un oggetto modulo passato a una funzione personalizzata anziché passare direttamente il relativo valore.
+   * ambito: rappresenta l&#39;oggetto globale utilizzato dalle funzioni personalizzate in fase di esecuzione. Viene dichiarato come ultimo parametro nelle annotazioni JavaScript e non è visibile nell’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo.
 
-  `<Parameter Description>` contiene dettagli sullo scopo del parametro. Può avere più parole.
+    Il tipo di parametro non fa distinzione tra maiuscole e minuscole e non sono consentiti spazi nel nome del parametro.
+    
+    `&lt;parameter description=&quot;&quot;>` contiene dettagli sullo scopo del parametro. Può avere più parole.
+    
+    Per impostazione predefinita, tutti i parametri sono obbligatori. È possibile definire un parametro come facoltativo aggiungendo `=` dopo il tipo di parametro o racchiudendo il nome del parametro in `[]`. I parametri definiti come facoltativi nelle annotazioni JavaScript vengono visualizzati come facoltativi nell’editor di regole.
+    Per definire una variabile come parametro facoltativo, è possibile utilizzare una delle sintassi seguenti:
+    
+    * `@param {type=} Input1`
+    
+    Nella riga di codice precedente, &quot;Input1&quot; è un parametro opzionale senza alcun valore predefinito. Per dichiarare un parametro facoltativo con valore predefinito:
+    &#39;@param {string=&lt;value>} input1`
+    
+    &quot;input1&quot; come parametro opzionale con il valore predefinito impostato su &quot;value&quot;.
+    
+    * `@param {type} [Input1]`
+    
+    Nella riga di codice precedente, &quot;Input1&quot; è un parametro opzionale senza alcun valore predefinito. Per dichiarare un parametro facoltativo con valore predefinito:
+    &#39;@param {array} [input1=&lt;value>]`
+    &quot;input1&quot; è un parametro opzionale di tipo array con il valore predefinito impostato su &quot;value&quot;.
+    Assicuratevi che il tipo di parametro sia racchiuso tra parentesi graffe {} e il nome del parametro è racchiuso tra parentesi quadre [].
+    
+    Considera il seguente frammento di codice, in cui input2 è definito come parametro opzionale:
+    
+    &quot;javascript
+    
+    /**
+    * funzione opzionale dei parametri
+    * @name FacoltativoParameterFunction
+    * @param {string} input1
+    * @param {string=} input2
+    * @return {string}
+    */
+    function OptionalParameterFunction(input1, input2) {
+    let result = &quot;Risultato: &quot;;
+    risultato += input1;
+    if (input2!== nulle) {
+    risultato += &quot; &quot; + input2;
+    }
+    risultato di ritorno;
+    }
+    &quot;
+    
+    L’illustrazione seguente mostra l’utilizzo della funzione personalizzata &quot;OptionalParameterFunction&quot; nell’editor di regole:
+    
+    &lt;!>...[Parametri facoltativi o obbligatori ](/help/forms/assets/optional-default-params.png) —>
+    
+    Puoi salvare la regola senza specificare un valore per i parametri richiesti, ma la regola non viene eseguita e visualizza un messaggio di avviso come:
+    
+    &lt;!>...[avviso regola incompleto](/help/forms/assets/incomplete-rule.png) —>
+    
+    Quando l’utente lascia vuoto il parametro opzionale, il valore &quot;Undefined&quot; (Non definito) viene passato alla funzione personalizzata per il parametro opzionale.
 
-  Per impostazione predefinita, tutti i parametri sono obbligatori. È possibile definire un parametro come facoltativo aggiungendo `=` dopo il tipo di parametro o che racchiude il nome del parametro in  `[]`. I parametri definiti come facoltativi nelle annotazioni JavaScript vengono visualizzati come facoltativi nell’editor di regole.
-Per definire una variabile come parametro facoltativo, è possibile utilizzare una delle sintassi seguenti:
+#### Tipo restituito
 
-   * `@param {type=} Input1`
-Nella riga di codice precedente, `Input1` è un parametro facoltativo senza alcun valore predefinito. Per dichiarare un parametro facoltativo con valore predefinito:
-     `@param {string=<value>} input1`
-
-     `input1` come parametro facoltativo con il valore predefinito impostato su `value`.
-
-   * `@param {type} [Input1]`
-Nella riga di codice precedente, `Input1` è un parametro facoltativo senza alcun valore predefinito. Per dichiarare un parametro facoltativo con valore predefinito:
-     `@param {array} [input1=<value>]`
-     `input1` è un parametro facoltativo di tipo array con il valore predefinito impostato su `value`.
-Assicuratevi che il tipo di parametro sia racchiuso tra parentesi graffe {} e il nome del parametro è racchiuso tra parentesi quadre [].
-
-     Considera il seguente frammento di codice, in cui input2 è definito come parametro opzionale:
-
-     ```javascript
-          /**
-          * optional parameter function
-          * @name OptionalParameterFunction
-          * @param {string} input1 
-          * @param {string=} input2 
-          * @return {string}
-         */
-         function OptionalParameterFunction(input1, input2) {
-         let result = "Result: ";
-         result += input1;
-         if (input2 !== null) {
-             result += " " + input2;
-         }
-         return result;
-         }
-     ```
-
-     L&#39;illustrazione seguente viene visualizzata utilizzando `OptionalParameterFunction` funzione personalizzata nell’editor di regole:
-
-     ![Parametri facoltativi o obbligatori](/help/forms/assets/optional-default-params.png)
-
-     Puoi salvare la regola senza specificare un valore per i parametri richiesti, ma la regola non viene eseguita e visualizza un messaggio di avviso come:
-
-     ![messaggio di avviso regola incompleto](/help/forms/assets/incomplete-rule.png)
-
-     Quando l’utente lascia vuoto il parametro opzionale, il valore &quot;Undefined&quot; (Non definito) viene passato alla funzione personalizzata per il parametro opzionale.
-
-* **Tipo restituito**
 Il tipo restituito specifica il tipo di valore restituito dalla funzione personalizzata dopo l&#39;esecuzione. Le seguenti sintassi vengono utilizzate per definire un tipo restituito in una funzione personalizzata:
-   * `@return {type}`
-   * `@returns {type}`
-     `{type}` rappresenta il tipo restituito della funzione. I tipi restituiti consentiti sono:
-      * string (stringa): rappresenta un singolo valore di stringa.
-      * number: rappresenta un singolo valore numerico.
-      * booleano: rappresenta un singolo valore booleano (true o false).
-      * stringa[]: rappresenta una matrice di valori stringa.
-      * numero[]: rappresenta una matrice di valori numerici.
-      * booleano[]: rappresenta una matrice di valori booleani.
-      * data: rappresenta un singolo valore di data.
-      * data[]: rappresenta una matrice di valori di data.
-      * array: rappresenta una matrice generica contenente valori di vari tipi.
-      * object: rappresenta direttamente l&#39;oggetto modulo anziché il relativo valore.
 
-     Il tipo restituito non fa distinzione tra maiuscole e minuscole.
+* `@return {type}`
+* `@returns {type}`
+  `{type}` rappresenta il tipo restituito della funzione. I tipi restituiti consentiti sono:
+   * string (stringa): rappresenta un singolo valore di stringa.
+   * number: rappresenta un singolo valore numerico.
+   * booleano: rappresenta un singolo valore booleano (true o false).
+   * stringa[]: rappresenta una matrice di valori stringa.
+   * numero[]: rappresenta una matrice di valori numerici.
+   * booleano[]: rappresenta una matrice di valori booleani.
+   * data: rappresenta un singolo valore di data.
+   * data[]: rappresenta una matrice di valori di data.
+   * array: rappresenta una matrice generica contenente valori di vari tipi.
+   * object: rappresenta direttamente l&#39;oggetto modulo anziché il relativo valore.
 
-* **Privato**
+  Il tipo restituito non fa distinzione tra maiuscole e minuscole.
+
+#### Privata
+
 La funzione personalizzata, dichiarata come privata, non viene visualizzata nell’elenco delle funzioni personalizzate nell’editor delle regole di un modulo adattivo. Per impostazione predefinita, le funzioni personalizzate sono pubbliche. Sintassi per dichiarare la funzione personalizzata come privata `@private`.
 
 Per ulteriori informazioni su come definire parametri opzionali nei JSDocs, [fai clic qui](https://jsdoc.app/tags-param).
@@ -390,7 +400,7 @@ Aggiungi il seguente codice nella funzione personalizzata come spiegato in [crea
 
 ```javascript
     
-	/**
+    /**
     * enablePanel
     * @name enablePanel
     * @param {object} field1

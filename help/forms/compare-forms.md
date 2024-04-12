@@ -4,10 +4,11 @@ description: Confronta due moduli distinti in base ai campi, al contenuto e ai c
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: true
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 0%
+source-wordcount: '153'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +22,11 @@ Quando gli autori dei moduli devono confrontare due moduli distinti in base ai c
 
    ![Confrontare moduli adattivi](compare-two-forms.png)
 
-1. Facendo clic su, gli utenti possono visualizzare due moduli in modalità anteprima, come illustrato nell’immagine.
+1. Facendo clic su, vengono visualizzati due moduli in modalità anteprima. Seleziona il primo modulo come modulo di base da confrontare con il secondo modulo e confronta il contenuto tra i due moduli, che sono simili e differenziati. Il contenuto differenziato del primo modulo è contrassegnato in verde come mostrato nell’immagine.
 
    ![Moduli confrontati](compared-forms.png)
+
+## Consulta anche {#see-also}
+
+{{see-also}}
+

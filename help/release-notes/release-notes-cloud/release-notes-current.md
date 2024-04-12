@@ -3,7 +3,7 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: af9e30ffb585619d1581db94d3961f561e12df2b
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 31%
@@ -134,22 +134,22 @@ Questi servizi consentono di:
 
   Ora puoi semplificare le interazioni delle funzioni personalizzate:
 
-   * Utilizzo di nuove annotazioni per fornire definizioni più chiare delle funzioni.
-   * Utilizzo di meccanismi di caching per le funzioni personalizzate, per prestazioni di modulo più veloci.
-   * Lavora senza problemi con gli oggetti globali nelle funzioni personalizzate.
-   * Definizione e utilizzo di parametri facoltativi nelle funzioni personalizzate.
+   * [Utilizzo di nuove annotazioni per fornire definizioni più chiare delle funzioni](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
+   * [Utilizzo di meccanismi di caching per le funzioni personalizzate, per prestazioni del modulo più veloci](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
+   * [Utilizzo semplice di oggetti globali nelle funzioni personalizzate](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+   * [Definizione e utilizzo di parametri facoltativi nelle funzioni personalizzate](/help/forms/create-and-use-custom-functions.md#parameter).
 
   Questo aggiornamento apporta anche i seguenti miglioramenti alla funzionalità dell’editor di regole. Operazioni disponibili:
 
-   * Implementa una potente logica &quot;when-then-else&quot; per l’esecuzione condizionale.
+   * Implementare potenti [&quot;quando-allora-altro&quot;](/help/forms/rule-editor-core-components.md#when) logica per l’esecuzione condizionale.
    * Sfrutta le moderne funzioni JavaScript come le funzioni let e arrow (supporto ES10).
    * Convalida o reimposta non solo i campi, ma anche interi pannelli e moduli, espandendo il controllo sulle interazioni degli utenti.
 
   Questi miglioramenti forniscono un’esperienza più intuitiva e potente per la creazione di regole e funzioni personalizzate all’interno dell’editor di regole visive.
 
-* **Creare più versioni di un modulo adattivo**: ora è possibile gestire facilmente le varianti dei moduli esistenti. Questo semplifica il controllo delle versioni e facilita il confronto per l’ottimizzazione dei moduli, il tutto all’interno di un unico flusso di lavoro semplificato.
+* **[Creare più versioni di un modulo adattivo](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**: ora è possibile gestire facilmente le varianti dei moduli esistenti. Questo semplifica il controllo delle versioni e facilita il confronto per l’ottimizzazione dei moduli, il tutto all’interno di un unico flusso di lavoro semplificato.
 
-* **Confronta modulo adattivo**: ora è possibile confrontare facilmente due moduli per identificare le differenze tra due moduli. Semplifica la collaborazione consentendo ai membri del gruppo di confrontare le revisioni e discutere le modifiche in modo efficiente.
+* **[Confronta modulo adattivo](/help/forms/compare-forms.md)**: ora è possibile confrontare facilmente due moduli per identificare le differenze tra due moduli. Semplifica la collaborazione consentendo ai membri del gruppo di confrontare le revisioni e discutere le modifiche in modo efficiente.
 
 * **Miglioramenti all’accessibilità per il componente Firma a mano**: questo aggiornamento apporta significativi miglioramenti di accessibilità al componente Firma a mano:
 
@@ -179,7 +179,7 @@ Questo aggiornamento garantisce un’esperienza più inclusiva per gli utenti co
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Utilizzando il connettore Adobe Workfront Fusion, puoi progettare flussi di lavoro che vengono attivati automaticamente al momento dell’invio di un modulo adattivo. Ad esempio, immagina uno scenario in cui viene avviato un flusso di lavoro per assegnare a un individuo specifico il compito di rivedere i dati inviati, consentendo l’approvazione o il rifiuto di una domanda in base alle informazioni acquisite tramite il modulo adattivo. Questa integrazione semplificata migliora l&#39;efficienza e introduce un nuovo livello di automazione nei processi del flusso di lavoro.|
 
-* **Servizio di estensione Reader**: le API di comunicazione di AEM Forms hanno introdotto il servizio di estensione di Reader per consentire di aggiungere funzionalità come la compilazione di moduli e commenti ai PDF standard, rendendoli interattivi per gli utenti con l’Adobe Reader gratuito.
+* **[Servizio di estensione Reader](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**: le API di comunicazione di AEM Forms hanno introdotto il servizio di estensione di Reader per consentire di aggiungere funzionalità come la compilazione di moduli e commenti ai PDF standard, rendendoli interattivi per gli utenti con l’Adobe Reader gratuito.
 
 * [Supporto lingue da destra a sinistra](/help/forms/supporting-new-language-localization-core-components.md): i moduli adattivi basati sui Componenti core ora possono essere presentati in una lingua da destra a sinistra (RTL) come l’arabo, il persiano e l’urdu. Le lingue RTL sono parlate da oltre 2 miliardi di persone in tutto il mondo. L’utilizzo di un modulo in linguaggio RTL consente di estendere la portata dei moduli adattivi in modo da soddisfare questi diversi tipi di pubblico e selezionarli in mercati RTL. In alcune aree geografiche, fornire moduli nella lingua locale, è anche obbligatorio dal punto di vista legale. Adattandosi alle lingue locali, non solo si aprono le porte a un pubblico più ampio, ma si garantisce anche la conformità con le leggi e i regolamenti pertinenti.
 

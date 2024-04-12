@@ -1,8 +1,8 @@
 ---
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 100%
+source-wordcount: '314'
+ht-degree: 96%
 
 ---
 # Snippet {#snippets}
@@ -36,6 +36,9 @@ ht-degree: 100%
 * [Inviare dati del modulo adattivo a un endpoint REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Inviare dati del modulo adattivo al flusso di lavoro di AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Utilizzare il portale dei moduli per elencare moduli adattivi di AEM su un sito web di AEM](/help/forms/configure-forms-portal.md)
+* [Aggiungere versioni, commenti e annotazioni a un modulo adattivo](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+* [Confronta Forms adattivo](/help/forms/compare-forms.md)
+
 
 ## Azioni di invio per modulo adattivo {#af-submit-action}
 

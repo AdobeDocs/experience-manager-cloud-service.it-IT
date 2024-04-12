@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 78%
+source-wordcount: '1964'
+ht-degree: 56%
 
 ---
 
@@ -186,10 +186,63 @@ Puoi eseguire queste attività utilizzando le API di crittografia:
 
 * Crittografa un documento PDF con una password.
 * Rimuovere la crittografia basata su password da un documento PDF.
+* Recuperare il tipo di protezione applicato a un documento PDF.
 * Restituisce il tipo di protezione applicato a un documento PDF.
 
 Le API di firma e di crittografia sono [API sincrone](#types-of-communications-apis-types).
 
+### Servizio di estensione Reader
+
+<span class="preview"> La funzionalità del servizio di estensione del Reader si trova nel programma Early Adopter. Puoi scrivere a `aem-forms-ea@adobe.com` dal tuo id e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità. </span>
+
+Il servizio Estensioni di Reader consente all’organizzazione di condividere facilmente i documenti interattivi di PDF estendendo la funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi. Il servizio Estensioni di Reader funziona con Adobe Reader. Il servizio aggiunge diritti di utilizzo a un documento PDF. Questa azione attiva caratteristiche che in genere non sono disponibili quando un documento PDF viene aperto mediante Adobe Reader, ad esempio l’aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento.
+
+
+Quando ai documenti PDF vengono aggiunti i diritti di utilizzo appropriati, i destinatari possono eseguire le seguenti attività da Adobe Reader:
+
+* Compilazione di documenti e moduli PDF in linea o non in linea, consentendo ai destinatari di salvare localmente le copie dei propri record e di mantenere intatte le informazioni aggiunte.
+* Salvare i documenti PDF su un disco rigido locale per conservare il documento originale ed eventuali commenti, dati o allegati aggiuntivi.
+* Allegare file e clip multimediali a documenti PDF.
+* Firma, certifica e autentica i documenti di PDF applicando firme digitali utilizzando tecnologie PKI (Public Key Infrastructure) standard.
+* Inviare elettronicamente i documenti PDF completati o con annotazioni.
+* Utilizzare i documenti e i moduli di PDF come sviluppo front-end intuitivo per i database interni e i servizi Web.
+* Condividere documenti PDF con altri utenti in modo che i revisori possano aggiungere commenti utilizzando strumenti di markup intuitivi. Questi strumenti includono note adesive elettroniche, timbri, evidenziazioni e barrati di testo. Le stesse funzioni sono disponibili in Acrobat.
+* Supporto della decodifica di moduli con codice a barre.
+
+Queste funzionalità speciali relative ai diritti di utilizzo vengono attivate automaticamente quando si apre un documento PDF con abilitazione per i diritti in Adobe Reader. Al termine dell’utilizzo di un documento abilitato ai diritti, tali funzioni vengono nuovamente disabilitate in Adobe Reader. Rimangono disattivati finché l’utente non riceve un altro documento di PDF abilitato per i diritti.
+
+Le varie funzionalità relative ai diritti di utilizzo con i servizi di estensione di Reader sono:
+
+* **Decodifica dei codici a barre**: per decodificare i codici a barre all’interno del documento PDF.
+
+* **Commenti**: per aggiungere un commento offline al documento PDF.
+
+* **Commenti online**: per aggiungere un commento online al documento PDF.
+
+* **Firma digitale**: per aggiungere firme digitali a un documento PDF.
+
+* **Campi modulo dinamici**: per aggiungere campi modulo a un documento PDF.
+
+* **Pagine modulo dinamico**: per aggiungere pagine modulo a un documento PDF.
+
+* **File incorporati**: per incorporare file in un documento PDF.
+
+* **Importazione dati modulo**: per importare i dati del modulo in un documento PDF.
+
+* **Esportazione dati modulo**: per importare i dati del modulo in un documento PDF.
+
+* **Compilazione modulo**: per compilare i campi modulo all’interno di un documento PDF.
+
+* **Forms online**: per accedere a un servizio Web o a un database da un documento di PDF.
+
+* **Invia in modo autonomo**: per inviare i dati del modulo offline da un documento PDF.
+
+**Altre funzionalità di Servizi di estensione Reader**
+
+* **Messaggio**: messaggio visualizzato in Adobe Acrobat Reader all’apertura di un documento PDF a cui sono applicati uno o più diritti di utilizzo.
+* **Sblocca password**: password necessaria per aprire un documento PDF crittografato. In genere si tratta della password di apertura del documento, ma se il documento PDF è protetto anche da una password di autorizzazione, è possibile utilizzarlo per aprirlo.
+
+Il [Documentazione di riferimento API](https://adobe-aem-document-experimental.redoc.ly/) fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i vari servizi forniti dalle API. La documentazione di riferimento API è disponibile anche in formato .yaml. Puoi scaricare il file .yaml e caricarlo in postman per verificare la funzionalità delle API.
 
 ## Tipi di API di comunicazione {#types}
 
