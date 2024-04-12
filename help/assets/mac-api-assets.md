@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1631'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 3%
 ## Panoramica {#overview}
 
 Il [!DNL Assets] API HTTP consente di eseguire operazioni CRUD (create-read-update-delete) su risorse digitali, inclusi metadati, rappresentazioni e commenti, insieme a contenuti strutturati tramite [!DNL Experience Manager] Frammenti di contenuto. Viene esposto in corrispondenza di `/api/assets` e viene implementato come API REST. Include [Supporto per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
 
 Per accedere all’API:
 
@@ -40,9 +44,17 @@ A [Frammento di contenuto](/help/assets/content-fragments/content-fragments.md) 
 
 Per ulteriori informazioni, consulta [Supporto dei frammenti di contenuto in [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
 
+>[!NOTE]
+>
+>Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
+
 ## Modello dati {#data-model}
 
 Il [!DNL Assets] L’API HTTP espone due elementi principali, cartelle e risorse (per le risorse standard). Inoltre, espone elementi più dettagliati per i modelli di dati personalizzati che descrivono i contenuti strutturati nei frammenti di contenuto. Consulta [Modelli di dati per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) per ulteriori informazioni.
+
+>[!NOTE]
+>
+>Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
 
 ### Cartelle {#folders}
 
@@ -75,6 +87,10 @@ In entrata [!DNL Experience Manager] una risorsa contiene i seguenti elementi:
 * Commenti facoltativi.
 
 Per informazioni sugli elementi nei frammenti di contenuto, consulta [Supporto dei frammenti di contenuto nell’API HTTP di Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
 
 In entrata [!DNL Experience Manager] una cartella contiene i seguenti componenti:
 
@@ -125,7 +141,7 @@ Recupera una rappresentazione Siren di una cartella esistente e delle relative e
 
 **Risposta**: la classe dell’entità restituita è una risorsa o una cartella. Le proprietà delle entità contenute sono un sottoinsieme dell&#39;insieme completo di proprietà di ciascuna entità. Per ottenere una rappresentazione completa dell’entità, i clienti devono recuperare il contenuto dell’URL a cui punta il collegamento con un `rel` di `self`.
 
-## Creare una cartella {#create-a-folder}
+## Crea una cartella {#create-a-folder}
 
 Crea un `sling`: `OrderedFolder` nel percorso specificato. Se `*` viene fornito al posto del nome di un nodo, il servlet utilizza il nome del parametro come nome di nodo. La richiesta accetta uno dei seguenti elementi:
 

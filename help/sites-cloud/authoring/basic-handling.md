@@ -2,10 +2,10 @@
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e il suo utilizzo di base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
+source-git-commit: 40759b8c07833b0927fa374b906d4202bf258249
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 63%
+source-wordcount: '954'
+ht-degree: 61%
 
 ---
 
@@ -75,10 +75,11 @@ Nel pannello di navigazione sono disponibili le console seguenti:
 | Assets | La console Assets consente di importare e gestire le [risorse digitali quali immagini, video, documenti e file audio](/help/assets/overview.md). Puoi usare queste risorse da qualunque sito web in esecuzione nell’istanza di AEM. Puoi anche creare e gestire [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) dalla console Assets. |
 | Personalizzazione | Questa console fornisce un set di strumenti per la [creazione e modifica di contenuti mirati e la presentazione di esperienze personali](/help/sites-cloud/authoring/personalization/overview.md). |
 | Frammenti di contenuto | I [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalle pagine. Consentono di preparare contenuti strutturati pronti per l’uso in più posizioni/su più canali, ideali sia per l’authoring delle pagine che per la distribuzione headless. |
+| Genera varianti | [Genera varianti](/help/generative-ai/generate-variations.md) utilizza l’intelligenza artificiale generativa (IA) per creare varianti di contenuto basate su prompt; questi prompt vengono forniti da Adobe oppure creati e gestiti dagli utenti. |
 
 ## Pannello Strumenti {#tools-panel}
 
-In **Strumenti** Il pannello laterale contiene una serie di categorie, che raggruppano console simili. Il **Strumenti** Le console consentono di accedere a console e strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+Il **Strumenti** Il pannello laterale contiene una serie di categorie, che raggruppano console simili. Il **Strumenti** Le console consentono di accedere a console e strumenti specifici per la gestione di siti web, risorse digitali e altri aspetti dell’archivio dei contenuti.
 
 ![Pannello Strumenti](assets/basic-handling-tools.png)
 

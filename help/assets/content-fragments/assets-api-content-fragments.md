@@ -3,9 +3,9 @@ title: Supporto dei frammenti di contenuto di Adobe Experience Manager as a Clou
 description: Scopri il supporto per i frammenti di contenuto nell’API Assets HTTP di, un elemento importante della funzione di distribuzione headless di Adobe Experience Manager.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1804'
 ht-degree: 11%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 11%
 | AEM as a Cloud Service | Questo articolo |
 
 Scopri il supporto per i frammenti di contenuto nell’API Assets HTTP di, un’importante componente della funzione di distribuzione headless di Adobe Experience Manager (AEM).
+
+>[!NOTE]
+>
+>Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
 
 >[!NOTE]
 >
@@ -91,6 +95,10 @@ Il metodo HTTP determina l’operazione da eseguire:
 >Il corpo della richiesta e/o i parametri URL possono essere utilizzati per configurare alcune di queste operazioni; ad esempio, definisci che una cartella o una risorsa debbano essere create da una richiesta **POST**.
 
 Il formato esatto delle richieste supportate è definito nel [Riferimento API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) documentazione.
+
+>[!NOTE]
+>
+>Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
 
 ### Comportamento transazionale {#transactional-behavior}
 
@@ -167,6 +175,10 @@ Per ulteriori informazioni sulle funzioni disponibili tramite l’API, consulta:
 
 * Il [API REST di Assets](/help/assets/mac-api-assets.md)
 * [Tipi di entità](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types), in cui sono spiegate le funzioni specifiche di ciascun tipo supportato (come pertinenti ai frammenti di contenuto)
+
+>[!NOTE]
+>
+>Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
 
 ### Paging {#paging}
 
@@ -262,6 +274,8 @@ L’utilizzo può variare a seconda che si utilizzi un ambiente di authoring o p
 >[!NOTE]
 >
 >Consulta la [Riferimento API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particolare, [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>
+>Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
 
 ## Limitazioni {#limitations}
 
@@ -352,6 +366,8 @@ Consulta qui per riferimenti API dettagliati:
 * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 
    * [Funzioni disponibili](/help/assets/mac-api-assets.md#available-features)
+
+* Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
 
 ## Risorse aggiuntive {#additional-resources}
 

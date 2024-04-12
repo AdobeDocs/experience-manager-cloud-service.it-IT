@@ -4,9 +4,9 @@ description: Scopri come gestire i frammenti di contenuto AEM dalla console e da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2629'
 ht-degree: 46%
 
 ---
@@ -72,6 +72,8 @@ Per ulteriori informazioni consulta:
 
 Selezione **Frammenti di contenuto** apre la console in una nuova scheda.
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Console Frammenti di contenuto - Panoramica](assets/cf-managing-console-overview.png)
 
 Nella console puoi osservare tre aree principali:
@@ -84,6 +86,7 @@ Nella console puoi osservare tre aree principali:
    * Qui puoi nascondere o visualizzare la struttura delle cartelle
    * Puoi selezionare un ramo specifico della struttura
    * Può essere ridimensionato per mostrare le cartelle nidificate
+   * Puoi scegliere se visualizzare i frammenti di contenuto oppure [Risorse](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 * Pannello principale/destro; da qui puoi:
    * Visualizza l’elenco di tutti i frammenti di contenuto nel ramo selezionato della struttura:
       * Verranno visualizzati i frammenti di contenuto della cartella selezionata e tutte le cartelle secondarie:
@@ -132,6 +135,8 @@ Alcune azioni sono disponibili dalla console senza selezionare un frammento di c
 #### Azioni per un frammento di contenuto (selezionato) {#actions-selected-content-fragment}
 
 Selezionando un frammento specifico si apre una barra degli strumenti incentrata sulle azioni disponibili per tale frammento. Puoi inoltre selezionare più frammenti; la selezione delle azioni verrà regolata di conseguenza.
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Console Frammenti di contenuto; barra degli strumenti per un frammento selezionato](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -368,6 +373,8 @@ Quando viene visualizzata la relativa finestra di dialogo, è possibile selezion
 
 ## Trova e sostituisci {#find-and-replace}
 
+<!-- CQDOC-21349: screenshot -->
+
 Il **Sostituisci** L’azione è disponibile (nella barra degli strumenti superiore) per trovare e sostituire il testo specificato nei Frammenti di contenuto selezionati.
 
 ![Trova e sostituisci](assets/cf-managing-find-replace.png)
@@ -380,8 +387,9 @@ Prima della sostituzione, vengono controllati i criteri di convalida e l’utent
 >
 >Se selezioni più di 20 frammenti di contenuto, verrà visualizzato il messaggio **Impossibile trovare e sostituire**.
 
-![Conferma sostituzione](assets/cf-managing-confirm-replace.png)
+<!-- CQDOC-21349: screenshot -->
 
+![Conferma sostituzione](assets/cf-managing-confirm-replace.png)
 
 ## Eliminazione di un frammento {#deleting-a-fragment}
 
@@ -446,6 +454,8 @@ Il pannello Filtro offre:
 
 Una volta selezionata, la **Filtraggio per** (sotto la casella di ricerca). Possono essere deselezionati da lì. Ad esempio:
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Console Frammenti di contenuto - Filtro](assets/cf-managing-console-filter.png)
 
 ### Filtro rapido {#fast-filtering}
@@ -468,9 +478,13 @@ Una volta selezionato, questo verrà visualizzato come un predicato del filtro e
 
 La casella di ricerca supporta la ricerca full-text. Immetti i termini di ricerca nella casella di ricerca:
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Console Frammenti di contenuto - Ricerca](assets/cf-managing-console-search-specification.png)
 
 Fornirà i risultati selezionati:
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Console Frammenti di contenuto - Risultati della ricerca](assets/cf-managing-console-search-results.png)
 

@@ -1,13 +1,14 @@
 ---
 title: Genera varianti
-description: Scopri come generare varianti, accessibile dal Sidekick di Edge Delivery Services
+description: Scopri come generare varianti, accessibile da AEM as a Cloud Service e dal Sidekick di Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '3338'
+source-wordcount: '3257'
 ht-degree: 0%
 
 ---
+
 
 # Genera varianti {#generate-variations}
 
@@ -15,11 +16,12 @@ Se stai cercando un modo per ottimizzare i canali digitali e accelerare la creaz
 
 È possibile [accedere a Genera varianti](#access-generate-variations) da:
 
-<!-- 
-* [within Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
--->
-
+* [all’interno di Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
 * [il Sidekick dei Edge Delivery Services AEM](#access-aem-sidekick)
+
+>[!NOTE]
+>
+>In tutti i casi, per utilizzare Genera varianti è necessario assicurarsi che [prerequisiti di accesso](#access-prerequisites) sono soddisfatte.
 
 Puoi effettuare le seguenti operazioni:
 
@@ -245,18 +247,19 @@ Per aggiungere un nuovo campo di testo con titolo **Tono della voce**, utilizza 
 
 ![Genera varianti: prompt modificato con il tono della voce](assets/generate-variations-prompt-edited.png)
 
-#### Esempio: aggiungi nuovo campo a discesa - Tipo pagina {#example-add-new-dropdown-field-page-type}
+<!--
+#### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
 
-Per creare un campo di input Page Type che fornisce una selezione a discesa:
+To create an input field Page Type providing a dropdown selection:
 
-1. Creare un foglio di calcolo denominato `pagetype.xls` nella directory di primo livello della struttura delle cartelle.
-1. Modificare il foglio di calcolo:
+1. Create a spreadsheet named `pagetype.xls` in the top-level directory of your folder structure.
+1. Edit the spreadsheet:
 
-   1. Crea due colonne: **Chiave** e **Valore**.
-   1. In **Chiave** , immetti le etichette da visualizzare nel menu a discesa.
-   1. In **Valore** , descrivi il valore chiave in modo che l’IA generativa abbia contesto.
+   1. Create two columns: **Key** and **Value**.
+   1. In the **Key** column, enter labels that will appear in the dropdown.
+   1. In the **Value** column, describe the key value so the generative AI has context.
 
-1. Nel prompt, fai riferimento al titolo del foglio di calcolo e al tipo appropriato.
+1. In your prompt, refer to the title of the spreadsheet along with the appropriate type. 
 
    ```prompt
    {{@page_type, 
@@ -265,6 +268,7 @@ Per creare un campo di input Page Type che fornisce una selezione a discesa:
      spreadsheet=pagetype
    }}
    ```
+-->
 
 ## Crea un prompt {#create-prompt}
 
@@ -390,6 +394,95 @@ Ad esempio, per aggiungere un pubblico da un file su Google Drive:
 
    ![Genera varianti - Aggiungi file CSV del pubblico](assets/generate-variations-audiences-csv-save.png)
 
+## Utilizzo azione generativa {#generative-action-usage}
+
+La gestione dell’utilizzo dipende dall’azione intrapresa:
+
+* Genera varianti
+
+  Una generazione di una variante di copia è uguale a una azione generativa. In qualità di cliente, hai un certo numero di azioni generative che vengono fornite con la tua licenza AEM. Una volta utilizzata l’adesione di base, puoi acquistare azioni aggiuntive.
+
+  >[!NOTE]
+  >
+  >Consulta [Adobe Experience Manager: Cloud Service | Descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) per ulteriori dettagli sui diritti di base, e contatta il team del tuo account per acquistare azioni più generative.
+
+* Adobe Express
+
+  L’utilizzo della generazione di immagini è gestito tramite adesioni Adobi Express e [crediti generativi](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+
+## Accedi a Genera varianti {#access-generate-variations}
+
+Dopo aver soddisfatto i prerequisiti, puoi accedere a Genera varianti da AEM as a Cloud Service o dal Sidekick dei Edge Delivery Services.
+
+### Prerequisiti di accesso {#access-prerequisites}
+
+Per utilizzare Genera varianti è necessario assicurarsi che i prerequisiti siano soddisfatti:
+
+* [Accesso a Experience Manager as a Cloud Service con Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services)
+
+#### Accesso a Experience Manager as a Cloud Service con Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
+
+Gli utenti che hanno bisogno di accedere a Genera varianti devono avere diritto a un ambiente as a Cloud Service Experience Manager con Edge Delivery Services.
+
+>[!NOTE]
+>
+>Se il tuo contratto per AEM Sites as a Cloud Service non include Edge Delivery Services, dovrai firmare un nuovo contratto per ottenere l’accesso.
+>
+>Rivolgiti al team del tuo account per scoprire come passare ad AEM Sites as a Cloud Service con i Edge Delivery Services.
+
+Per concedere l’accesso a utenti specifici, assegna il loro account utente al rispettivo profilo di prodotto. Consulta [Assegnazione dei profili di prodotto dell’AEM per ulteriori dettagli](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+
+### Accesso da AEM as a Cloud Service {#access-aemaacs}
+
+Genera varianti è accessibile dalla sezione [Pannello di navigazione](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) dell’AEM as a Cloud Service:
+
+![Pannello di navigazione](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
+
+### Accesso dal AEM Sidekick {#access-aem-sidekick}
+
+È necessaria una certa configurazione prima di poter accedere a Genera varianti dal Sidekick (di Edge Delivery Services).
+
+1. Consulta il documento [Installazione di AEM Sidekick](https://www.aem.live/docs/sidekick-extension) per informazioni su come installare e configurare il Sidekick.
+
+1. Per utilizzare Genera varianti nel Sidekick (di Edge Delivery Services), includi la seguente configurazione nei progetti di Edge Delivery Services in:
+
+   * `tools/sidekick/config.json`
+
+   Questo deve essere unito alla configurazione esistente e quindi distribuito.
+
+   Ad esempio:
+
+   ```prompt
+   {
+     // ...
+     "plugins": [
+       // ...
+       {
+         "id": "generate-variations",
+         "title": "Generate Variations",
+         "url": "https://experience.adobe.com/aem/generate-variations",
+         "passConfig": true,
+         "environments": ["preview","live", "edit"],
+         "includePaths": ["**.docx**"]
+       }
+       // ...
+     ]
+   }
+   ```
+
+1. Potrebbe essere necessario assicurarsi che gli utenti abbiano [Accesso a Experience Manager as a Cloud Service con Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
+
+1. Potete quindi accedere alla feature selezionando **Genera varianti** dalla barra degli strumenti del Sidekick:
+
+   ![Genera varianti: accesso da AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
+
+## Ulteriori informazioni {#further-information}
+
+Per ulteriori informazioni, consulta:
+
+* [Generare varianti GenAI su GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [Sperimentazione Edge Delivery Services](https://www.aem.live/docs/experimentation)
+
 ## Domande frequenti {#faqs}
 
 ### Output formattato {#formatted-outpu}
@@ -452,106 +545,7 @@ Ad esempio, https://experience.adobe.com/#/aem/generate-variations
 
 Il passaggio alla versione v2.0.0 causerà l’interruzione dei modelli di prompt personalizzati, che pertanto non saranno disponibili.
 
-Consulta la [note sulla versione v2.0.0 per istruzioni su come recuperarle](#release-notes-2-0-0-retrieve-prompt-templates).
-
-## Utilizzo azione generativa {#generative-action-usage}
-
-La gestione dell’utilizzo dipende dall’azione intrapresa:
-
-* Genera varianti
-
-  Una generazione di una variante di copia è uguale a una azione generativa. In qualità di cliente, hai un certo numero di azioni generative che vengono fornite con la tua licenza AEM. Una volta utilizzata l’adesione di base, puoi acquistare azioni aggiuntive.
-
-  >[!NOTE]
-  >
-  >Consulta [Adobe Experience Manager: Cloud Service | Descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) per ulteriori dettagli sui diritti di base, e contatta il team del tuo account per acquistare azioni più generative.
-
-* Adobe Express
-
-  L’utilizzo della generazione di immagini è gestito tramite adesioni Adobi Express e [crediti generativi](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
-
-## Accedi a Genera varianti {#access-generate-variations}
-
-<!--
-### Access from AEM as a Cloud Service {#access-aemaacs}
-
-Generate Variations can be accessed from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
-
-![Navigation panel](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
--->
-
-### Accesso dal AEM Sidekick {#access-aem-sidekick}
-
-È necessaria una certa configurazione prima di poter accedere a Genera varianti dal Sidekick (di Edge Delivery Services).
-
-1. Consulta il documento [Installazione di AEM Sidekick](https://www.aem.live/docs/sidekick-extension) per informazioni su come installare e configurare il Sidekick.
-
-1. Per utilizzare Genera varianti nel Sidekick (di Edge Delivery Services), includi la seguente configurazione nei progetti di Edge Delivery Services in:
-
-   * `tools/sidekick/config.json`
-
-   Questo deve essere unito alla configurazione esistente e quindi distribuito.
-
-   Ad esempio:
-
-   ```prompt
-   {
-     // ...
-     "plugins": [
-       // ...
-       {
-         "id": "generate-variations",
-         "title": "Generate Variations",
-         "url": "https://experience.adobe.com/aem/generate-variations",
-         "passConfig": true,
-         "environments": ["preview","live", "edit"],
-         "includePaths": ["**.docx**"]
-       }
-       // ...
-     ]
-   }
-   ```
-
-1. Potrebbe essere necessario assicurarsi che gli utenti abbiano [Accesso a Experience Manager as a Cloud Service con Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
-
-1. Potete quindi accedere alla feature selezionando **Genera varianti** dalla barra degli strumenti del Sidekick:
-
-   ![Genera varianti: accesso da AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
-
-## Accesso a Experience Manager as a Cloud Service con Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
-
-Gli utenti che hanno bisogno di accedere a Genera varianti devono avere diritto a un ambiente as a Cloud Service Experience Manager con Edge Delivery Services.
-
->[!NOTE]
->
->Se il tuo contratto per AEM Sites as a Cloud Service non include Edge Delivery Services, dovrai firmare un nuovo contratto per ottenere l’accesso.
->
->Rivolgiti al team del tuo account per scoprire come passare ad AEM Sites as a Cloud Service con i Edge Delivery Services.
-
-Per concedere l’accesso a utenti specifici, assegna il loro account utente al rispettivo profilo di prodotto. Consulta [Assegnazione dei profili di prodotto dell’AEM per ulteriori dettagli](/help/journey-onboarding/assign-profiles-cloud-manager.md).
-
-## Ulteriori informazioni {#further-reading}
-
-Leggi anche:
-
-* [Generare varianti GenAI su GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Sperimentazione Edge Delivery Services](https://www.aem.live/docs/experimentation)
-
-## Note sulla versione {#release-notes}
-
-### 2,0,0  {#release-notes-2-0-0}
-
-* È stata introdotta l’archiviazione universale persistente per i modelli di richiesta.
-* Nuova funzionalità per i tipi di pubblico
-   * Il pubblico può essere letto direttamente da Adobe Target
-   * Metodi aggiornati per l’aggiunta di file CSV
-* Finestra di dialogo con opzioni per Prompt di salvataggio
-* Durante la generazione delle immagini, il prompt nell’Adobe Express è precompilato
-* Le schede delle richieste (nella home page) contengono informazioni aggiuntive e possono essere eliminate
-
-#### 2.0.0 - Come recuperare i modelli di prompt personalizzati {#release-notes-2-0-0-retrieve-prompt-templates}
-
-Il passaggio alla versione v2.0.0 causa l’interruzione dei modelli di prompt personalizzati, che pertanto non saranno disponibili. Per recuperarli:
+Per recuperarli:
 
 1. Passare alla cartella dei modelli di prompt in Sharepoint.
 1. Copia il prompt.
@@ -561,20 +555,6 @@ Il passaggio alla versione v2.0.0 causa l’interruzione dei modelli di prompt p
 1. Verifica che il prompt funzioni.
 1. Salva il prompt.
 
-### 1,0,5 {#release-notes-1-0-5}
+## Cronologia delle versioni {#release-history}
 
-* Integrazione con Adobi Express
-* Sposta il prompt di modifica nella barra laterale
-
-### 1.0.4 {#release-notes-1-0-4}
-
-* Miglioramenti interni
-
-### 1.0.3. {#release-notes-1-0-3}
-
-* Espandi o nascondi il pannello di navigazione a sinistra
-* Piccoli miglioramenti
-
-### 1,0,0 - 1,0,2 {#release-notes-1-0-0-1-0-2}
-
-* Miglioramenti interni
+Per informazioni dettagliate sulle versioni corrente e precedente, vedi [Note sulla versione per Genera varianti](/help/generative-ai/release-notes-generate-variations.md)

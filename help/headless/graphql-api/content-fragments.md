@@ -3,10 +3,10 @@ title: API GraphQL AEM per l’utilizzo con Frammenti di contenuto
 description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
+source-git-commit: 5771a6afedeb85188e89700d439a9bac18e01fdc
 workflow-type: tm+mt
-source-wordcount: '5135'
-ht-degree: 85%
+source-wordcount: '5359'
+ht-degree: 81%
 
 ---
 
@@ -739,15 +739,13 @@ La soluzione GraphQL consente di:
 
 * Parametri di passaggio: aggiungi `_assetTransform` nell’intestazione dell’elenco in cui sono definiti i filtri
 
-<!-- 
 >[!NOTE]
 >
->A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
->* `_dynamicUrl` : a DAM asset
->* `_dmS7Url` : a Dynamic Media asset
+>A **Riferimento contenuto** può essere utilizzato sia per le risorse DAM che per le risorse Dynamic Medie. Il recupero dell’URL appropriato utilizza parametri diversi:
+>* `_dynamicUrl` : risorsa DAM
+>* `_dmS7Url` : risorsa Dynamic Medie
 > 
->If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
--->
+>Se l’immagine a cui si fa riferimento è una risorsa DAM, il valore per `_dmS7Url` sarà `null`. Consulta [Consegna delle risorse Dynamic Medie tramite URL nelle query GraphQL](#dynamic-media-asset-delivery-by-url).
 
 ### Struttura della richiesta di trasformazione {#structure-transformation-request}
 
@@ -923,34 +921,37 @@ Esistono le seguenti limitazioni:
    * Nessuna memorizzazione in cache sull&#39;authoring
    * Memorizzazione in cache al momento della pubblicazione - tempo massimo di 10 minuti (non può essere modificato dal client)
 
-<!--
-## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
+## Consegna delle risorse Dynamic Medie tramite URL nelle query GraphQL{#dynamic-media-asset-delivery-by-url}
 
-GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+GraphQL per frammenti di contenuto AEM consente di richiedere un URL a una risorsa AEM Dynamic Medie (Scene7) (a cui fa riferimento una **Riferimento contenuto**).
 
-The solution in GraphQL means you can:
+>[!CAUTION]
+>
+>Solo *immagine* è possibile fare riferimento alle risorse da Dynamic Medie.
 
-* use `_dmS7Url` on the `ImageRef` reference
+La soluzione GraphQL consente di:
+
+* utilizzare `_dmS7Url` sul riferimento `ImageRef`
 
 >[!NOTE]
 >
->For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
+>Per questo è necessario disporre di un [Configurazione Dynamic Medie Cloud](/help/assets/dynamic-media/config-dm.md).
 >
->This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+>Questo aggiunge `dam:scene7File` e `dam:scene7Domain` attributi nei metadati della risorsa al momento della sua creazione.
 
 >[!NOTE]
 >
->A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>A **Riferimento contenuto** può essere utilizzato sia per le risorse DAM che per le risorse Dynamic Medie. Il recupero dell’URL appropriato utilizza parametri diversi:
 >
->* `_dmS7Url` : a Dynamic Media asset
->* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` : risorsa Dynamic Medie
+>* `_dynamicUrl` : risorsa DAM
 > 
->If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+>Se l’immagine a cui si fa riferimento è una risorsa Dynamic Medie, il valore per `_dynamicURL` sarà `null`. Consulta [consegna di immagini ottimizzate per il web nelle query GraphQL](#web-optimized-image-delivery-in-graphql-queries).
 
-### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+### Query di esempio per la consegna di risorse Dynamic Medie tramite URL {#sample-query-dynamic-media-asset-delivery-by-url}
 
-The following is a sample query:
-* for multiple Content Fragments of type `team` and `person`
+Di seguito è riportato un esempio di query:
+* più frammenti di contenuto di tipo `team` e `person`
 
 ```graphql
 query allTeams {
@@ -973,7 +974,6 @@ query allTeams {
   }
 } 
 ```
--->
 
 ## GraphQL per AEM: riepilogo delle estensioni {#graphql-extensions}
 
@@ -1068,6 +1068,10 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
             * [Query di esempio per la consegna di immagini ottimizzate per il web con un singolo parametro specificato](#web-optimized-image-delivery-single-query-variable)
 
+      * `_dmS7Url`: su `ImageRef` riferimento per la consegna dell’URL a un [Risorsa Dynamic Medie](#dynamic-media-asset-delivery-by-url)
+
+         * Consulta [Query di esempio per la consegna di risorse Dynamic Medie tramite URL](#sample-query-dynamic-media-asset-delivery-by-url)
+
    * `_tags`: per visualizzare gli ID dei frammenti di contenuto o delle varianti che contengono tag; si tratta di un array di `cq:tags` identificatori.
 
       * Consulta la [Query di esempio - Nomi di tutte le città classificate come Soggiorni in città](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
@@ -1099,13 +1103,6 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 * Fallback durante la query dei frammenti nidificati:
 
    * Se una determinata variante non esiste in un frammento nidificato, viene restituita la variabile **principale**.
-
-<!-- between dynamicURL and tags -->
-<!--
-    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
-
-      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
--->
 
 ## Query dell’endpoint di GraphQL da un sito Web esterno {#query-graphql-endpoint-from-external-website}
 

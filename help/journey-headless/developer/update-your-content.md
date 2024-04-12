@@ -2,10 +2,10 @@
 title: Come aggiornare il contenuto utilizzando le API di AEM Assets.
 description: In questa parte del Percorso per sviluppatori Headless di AEM, scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
-workflow-type: ht
-source-wordcount: '1061'
-ht-degree: 100%
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+workflow-type: tm+mt
+source-wordcount: '1083'
+ht-degree: 97%
 
 ---
 
@@ -255,6 +255,8 @@ L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubb
 >[!NOTE]
 >
 >Consulta il riferimento API [API Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>
+>Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
 
 ### Lettura/consegna {#read-delivery}
 
@@ -333,3 +335,4 @@ Continua il tuo percorso AEM headless rivedendo il documento successivo [Come me
 * [Introduzione ad AEM come CMS headless](/help/headless/introduction.md)
 * [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
 * [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.

@@ -2,10 +2,10 @@
 title: Creare una richiesta API - Configurazione headless
 description: Scopri come utilizzare l’API GraphQL per la distribuzione headless di contenuti con frammenti di contenuto e API REST di Assets di AEM per gestire i frammenti di contenuto.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 92%
+source-wordcount: '674'
+ht-degree: 90%
 
 ---
 
@@ -20,6 +20,10 @@ Scopri come utilizzare l’API GraphQL per la distribuzione headless di contenut
 * L’[API GraphQL](/help/headless/graphql-api/content-fragments.md) consente di creare richieste per accedere e distribuire frammenti di contenuto. Questa API offre la serie più solida di funzionalità per eseguire query e utilizzare contenuti di frammenti di contenuto.
    * Per utilizzare l’API, [definisci e abilita gli endpoint in AEM](/help/headless/graphql-api/graphql-endpoint.md) e, se necessario, [installa l’Interfaccia GraphiQL](/help/headless/graphql-api/graphiql-ide.md).
 * [API REST di Assets](/help/assets/content-fragments/assets-api-content-fragments.md) consente di creare e modificare frammenti di contenuto (e altre risorse).
+
+>[!NOTE]
+>
+>Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
 
 Il resto di questa guida è incentrato sull’accesso a GraphQL e sulla distribuzione di frammenti di contenuto.
 
@@ -49,9 +53,9 @@ GraphiQL è un IDE, incluso nel tuo ambiente AEM e accessibile/visibile dopo ave
 
 1. Accedi AEM as a Cloud Service e accedi all’interfaccia GraphiQL:
 
-   Puoi accedere all’editor delle query da:
+   Puoi accedere all’editor di query da:
 
-   * **Strumenti** > **Generale** > **Editor query di GraphQL**
+   * **Strumenti** -> **Generale** -> **Editor query GraphQL**
    * direttamente; ad esempio, `http://localhost:4502/aem/graphiql.html`
 
 1. L’IDE GraphiQL è un editor di query interno al browser per GraphQL. Puoi utilizzarlo per creare query per recuperare frammenti di contenuto da distribuire in modalità headless come JSON.
@@ -99,3 +103,7 @@ Tutto qui. Ora hai una conoscenza di base della gestione dei contenuti headless 
 * **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md)**: per informazioni dettagliate sulla creazione e la gestione dei frammenti di contenuto
 * **[Supporto per frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)**: per informazioni dettagliate sull’accesso diretto ai contenuti AEM tramite l’API HTTP, mediante operazioni CRUD (Crea, Leggi, Aggiorna, Elimina)
 * **[API di GraphQL](/help/headless/graphql-api/content-fragments.md)**: per informazioni dettagliate su come distribuire i frammenti di contenuto in modo corretto
+
+>[!NOTE]
+>
+>Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.

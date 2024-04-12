@@ -2,10 +2,10 @@
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 96%
+source-wordcount: '2083'
+ht-degree: 94%
 
 ---
 
@@ -38,6 +38,7 @@ Senza Frammenti esperienza, l’autore dovrebbe copiare e incollare tale frammen
 Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
 * Per supportare il caso d’uso del CMS headless.
 Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distribuzione al cliente. Un sistema/punto di contatto di terze parti utilizzerebbe tale esperienza e quindi la consegnerebbe all’utente.
+* Con [Gestione multisito (MSM)](/help/sites-cloud/administering/msm/overview.md); come frammento di esperienza fa parte di una pagina. Questo vale sia per i singoli frammenti che per le cartelle in cui risiedono.
 
 >[!NOTE]
 >
@@ -236,6 +237,10 @@ Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
 
    * **Variazione**
    * **Variante come Live Copy**.
+
+     >[!NOTE]
+     >
+     >La creazione di una variante iniziale come Live Copy erediterà il titolo utilizzando la sorgente Live Copy come variante principale.
 
 1. Definisci le proprietà richieste:
 
