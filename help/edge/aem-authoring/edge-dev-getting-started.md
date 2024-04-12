@@ -3,10 +3,10 @@ title: Guida introduttiva per sviluppatori per l’authoring di AEM con Edge Del
 description: Questa guida ti aiuterà a essere subito operativo con un nuovo sito Adobe Experience Manager utilizzando Edge Delivery Services e l’Editor universale per l’authoring dei contenuti.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
+source-git-commit: 7cd19f674d3eae2bcbe2b40402e135d4db6e3035
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 90%
+source-wordcount: '1297'
+ht-degree: 88%
 
 ---
 
@@ -130,7 +130,7 @@ Ora che disponi di un progetto GitHub, crea un nuovo sito AEM utilizzabile dal p
 >
 >Per modificare il sito con l’Editor universale, è necessario utilizzare un browser basato su Chromium.
 
-1. Richiedi l’ultimo modello del sito di authoring AEM con Edge Delivery Services dai team tecnici di Adobe tramite il tuo [canale Slack del progetto.](/help/edge/docs/slack.md)
+1. Scarica l’ultimo modello del sito AEM Authoring con Edge Delivery Services da GitHub all’indirizzo [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
 1. Accedi all’istanza di authoring AEM as a Cloud Service, passa alla console Sites e tocca o fai clic su **Crea** -> **Sito da modello**.
 
@@ -141,6 +141,8 @@ Ora che disponi di un progetto GitHub, crea un nuovo sito AEM utilizzabile dal p
    ![Importazione di modelli](assets/edge-dev-getting-started/site-templates.png)
 
 1. Carica il modello del sito di authoring AEM con Edge Delivery Services fornito dal team tecnici di Adobe.
+
+   * Il modello deve essere caricato una sola volta. Una volta caricato, può essere riutilizzato per creare altri siti.
 
 1. Dopo aver creato il modello, verrà visualizzato nella procedura guidata. Tocca o fai clic per selezionarlo, quindi tocca o fai clic su **Avanti**.
 
