@@ -2,9 +2,9 @@
 title: Acquisizione di contenuti in Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: de05abac3620b254343196a283cef198f434cfca
+source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
-source-wordcount: '2752'
+source-wordcount: '2876'
 ht-degree: 11%
 
 ---
@@ -60,6 +60,19 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
 
    >[!IMPORTANT]
    > Puoi avviare un’acquisizione nell’ambiente di destinazione solo se appartieni al gruppo locale **Amministratori AEM** nel servizio Author del Cloud Service di destinazione. Se non riesci ad avviare un’acquisizione, consulta [Impossibile avviare l’acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) per ulteriori dettagli.
+
+1. Dopo aver selezionato le opzioni di acquisizione, viene visualizzata una stima della sua durata. Si tratta di una stima ottimale basata su dati storici di acquisizioni simili.
+
+   * Questa stima viene calcolata e visualizzata solo se sono stati raccolti e sono disponibili i valori &quot;Verifica dimensione&quot; dell’estrazione.
+   * Questo valore è una stima e, anche se viene calcolato in modo intelligente, non deve essere considerato esatto. Vari fattori possono modificare la durata effettiva.
+   * Durante l’acquisizione, questo valore sarà disponibile anche nella finestra di dialogo durate, accessibile tramite il pulsante &quot;**Visualizza durate**&quot;azione dell’acquisizione.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_estimate"
+>title="Stima durata acquisizione"
+>abstract="È possibile visualizzare la durata approssimativa di una particolare acquisizione per fornire un’idea generale del tempo necessario. Esistono dei limiti alla sua accuratezza."
+
+![immagine](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
 1. Clic **Acquisisci**.
 
