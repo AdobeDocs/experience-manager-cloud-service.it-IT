@@ -3,7 +3,7 @@ title: Guida introduttiva per sviluppatori per l’authoring di AEM con Edge Del
 description: Questa guida ti aiuterà a essere subito operativo con un nuovo sito Adobe Experience Manager utilizzando Edge Delivery Services e l’Editor universale per l’authoring dei contenuti.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 90%
@@ -197,3 +197,4 @@ Per ulteriori informazioni, consulta la guida [Creazione di blocchi preparati pe
 >[!TIP]
 >
 >Per una procedura dettagliata sulla creazione di un nuovo progetto Edge Delivery Services abilitato per la creazione di AEM con AEM as a Cloud Service come origine di contenuto, visualizzare [questo webinar AEM GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

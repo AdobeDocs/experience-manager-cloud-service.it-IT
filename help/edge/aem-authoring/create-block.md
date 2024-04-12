@@ -2,7 +2,7 @@
 title: Creazione di blocchi dotati di strumenti per l’utilizzo con l’editor universale
 description: Scopri come creare blocchi dotati di strumenti per l’utilizzo con l’editor universale nell’authoring AEM con progetti di Edge Delivery Services.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
-source-git-commit: cc41ff626f6fc6d72785401e3ba38b189945bf74
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 93%
@@ -255,3 +255,4 @@ Consulta il documento [Modellazione dei contenuti per la creazione di AEM con pr
 >[!TIP]
 >
 >Per una procedura dettagliata sulla creazione di un nuovo progetto Edge Delivery Services abilitato per la creazione di AEM con AEM as a Cloud Service come origine di contenuto, visualizzare [questo webinar AEM GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

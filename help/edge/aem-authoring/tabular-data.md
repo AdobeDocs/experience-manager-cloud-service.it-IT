@@ -3,7 +3,7 @@ title: Utilizzo dei fogli di calcolo per gestire i dati tabulari
 description: Scopri come utilizzare i fogli di calcolo per gestire i dati tabulari per vari valori, come metadati e reindirizzamenti per AEM con il sito Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 100%
@@ -163,3 +163,4 @@ Inoltre, è possibile [creare un foglio di calcolo personalizzato](#own-spreadsh
 1. Crea il foglio di calcolo e pubblicalo seguendo le istruzioni del foglio di calcolo dei reindirizzamenti.
 
 1. Aggiungi una mappatura al file `paths.json` come indicato nelle istruzioni per il foglio di calcolo dei reindirizzamenti.
+
