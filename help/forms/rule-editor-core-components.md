@@ -4,12 +4,20 @@ description: L’editor di regole di Forms adattivo consente di aggiungere un co
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 78b3b11caf143ed147079ef2b3b3ebe5c1beafd7
+exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '5755'
+source-wordcount: '5444'
 ht-degree: 0%
 
 ---
+
+
+<span class="preview"> Questo articolo contiene informazioni su alcune funzioni precedenti al rilascio. Queste funzioni pre-release sono accessibili solo tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). Le funzioni del programma pre-release sono:
+* Supporto per l’implementazione di condizioni nidificate con la funzionalità When-then-else
+* Convalidare o reimpostare pannelli e moduli, inclusi i campi
+* Supporto di funzioni JavaScript moderne, come le funzioni let e arrow (supporto ES10) all’interno delle funzioni personalizzate.
+</span>
 
 # Aggiungere regole a un modulo adattivo (componenti core) {#adaptive-forms-rule-editor}
 
@@ -19,21 +27,21 @@ L’editor di regole fornisce un’interfaccia utente intuitiva e semplificata p
 
 * Mostrare o nascondere un oggetto
 * Attivare o disattivare un oggetto
-* Impostare un valore per un oggetto
+* Imposta un valore per un oggetto
 * Convalidare il valore di un oggetto
 * Eseguire funzioni per calcolare il valore di un oggetto
-* Richiama un servizio del modello dati modulo ed esegui un’operazione
-* Impostare la proprietà di un oggetto
+* Richiamare un servizio Form Data Model ed eseguire un&#39;operazione
+* Imposta proprietà di un oggetto
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
-Gli utenti aggiunti al gruppo forms-power-users possono creare script e modificare quelli esistenti. Utenti in [!DNL forms-users] Il gruppo può utilizzare gli script ma non crearli o modificarli.
+Gli utenti aggiunti al gruppo forms-power-users possono creare script e modificare quelli esistenti. Gli utenti del [!DNL forms-users] gruppo possono utilizzare gli script ma non creare o modificare gli script.
 
 ## Informazioni su una regola {#understanding-a-rule}
 
-Un regola è una combinazione di azioni e condizioni. In regola editor le azioni includono attività quali nascondere, mostrare, abilitare, disabilitare o calcolare il valore di un oggetto in un modulo. Le condizioni sono espressioni booleane valutate mediante l&#39;esecuzione di controlli e operazioni sullo stato, il valore o la proprietà di un oggetto modulo. Le azioni vengono eseguite in base al valore ( `True` o `False`) restituito dalla valutazione di una condizione.
+Una regola è una combinazione di azioni e condizioni. Nell’editor delle regole, le azioni includono attività quali nascondere, mostrare, abilitare, disabilitare o calcolare il valore di un oggetto in un modulo. Le condizioni sono espressioni booleane che vengono valutate eseguendo controlli e operazioni sullo stato, sul valore o sulla proprietà di un oggetto modulo. Le azioni vengono eseguite in base al valore ( `True` o `False`) restituita valutando una condizione.
 
-Il regola editor fornisce un set di tipi di regola predefiniti, ad esempio Quando, Mostra, Nascondi, Abilita, Disabilita, Imposta Valore di e Convalida per facilitare la scrittura delle regole. Ogni tipo di regola consente di definire condizioni e azioni in un regola. Il documento spiega ulteriormente ogni tipo di regola nei dettagli.
+L’editor di regole fornisce un set di tipi di regole predefiniti, ad esempio Quando, Mostra, Nascondi, Abilita, Disabilita, Imposta valore di e Convalida, per facilitare la scrittura delle regole. Ogni tipo di regola ti consente di definire condizioni e azioni in una regola. Il documento spiega ulteriormente ogni tipo di regola nei dettagli.
 
 Una regola segue in genere uno dei seguenti costrutti:
 
@@ -99,7 +107,7 @@ L’editor di regole fornisce un set di tipi di regole predefiniti che è possib
 
 Il **[!UICONTROL Quando]** il tipo di regola segue **condizione-azione-azione-azione alternativa** costrutto della regola o, a volte, solo **condizione-azione** costruzione. In questo tipo di regola, devi innanzitutto specificare una condizione per la valutazione seguita da un&#39;azione da attivare se la condizione viene soddisfatta ( `True`). Quando si utilizza il tipo di regola When, è possibile utilizzare più operatori AND e OR per creare [espressioni nidificate](#nestedexpressions).
 
-Utilizzando il tipo di regola When, è possibile valutare una condizione in un oggetto modulo ed eseguire azioni su uno o più oggetti.
+Utilizzando il tipo regola Quando è possibile valutare una condizione in un oggetto modulo ed eseguire azioni su uno o più oggetti.
 
 In parole semplici, una regola When tipica è strutturata come segue:
 
@@ -119,9 +127,9 @@ Quando si dispone di un componente con più valori, ad esempio pulsanti di scelt
 
 Ad esempio, un elenco ha quattro opzioni: rosso, blu, verde e giallo. Durante la creazione del regola, le opzioni (pulsanti di scelta) vengono automaticamente recuperate e rese disponibili al creatore del regola come segue:
 
-![Opzioni per la visualizzazione di più valori](assets/multivaluefcdisplaysoptions.png)
+![Opzioni di visualizzazione con più valori](assets/multivaluefcdisplaysoptions.png)
 
-Durante la scrittura di una regola When, puoi attivare l&#39;azione Cancella valore di. Cancella valore dell&#39;azione cancella il valore dell&#39;oggetto specificato. L&#39;opzione Clear Value (Cancella valore) nell&#39;istruzione When consente di creare condizioni complesse con più campi. È possibile aggiungere l&#39;istruzione Else per aggiungere ulteriori condizioni
+Durante la scrittura di un Quando regola, potete attivare l&#39;azione Cancella Valore di. Cancella azione Valore Di cancella il valore dell&#39;oggetto specificato. La presenza di Clear Valore of come opzione nell&#39;istruzione When consente di creare condizioni complesse con più campi. È possibile aggiungere l&#39;istruzione Else per aggiungere ulteriori condizioni
 
 ![Cancella valore di](assets/clearvalueof.png)
 
@@ -129,11 +137,11 @@ Durante la scrittura di una regola When, puoi attivare l&#39;azione Cancella val
 >
 > Quando il tipo di regola supporta solo istruzioni then-else a livello singolo.
 
-**[!UICONTROL Nascondi Nasconde]** Nasconde l&#39;oggetto specificato.
+**[!UICONTROL Nascondi]** Nasconde l&#39;oggetto specificato.
 
-**** Mostra Mostra l&#39;oggetto specificato.
+**[!UICONTROL Spettacolo]** Mostra l&#39;oggetto specificato.
 
-**[!UICONTROL Abilita]** abilita l&#39;oggetto specificato.
+**[!UICONTROL Abilita]** Attiva l&#39;oggetto specificato.
 
 **[!UICONTROL Disattiva]** Disattiva l&#39;oggetto specificato.
 
@@ -186,7 +194,7 @@ La figura seguente illustra un esempio di attivazione dinamica della casella di 
 
 **[!UICONTROL Convalida]** Convalida il modulo o l&#39;oggetto specificato.
 
-**[!UICONTROL Aggiungi istanza]** Aggiunge un&#39;istanza del pannello o della riga di tabella ripetibile specificata.
+**[!UICONTROL Aggiungi istanza]** Aggiunge un istanza del pannello o della riga di tabella ripetibile specificata.
 
 **[!UICONTROL Rimuovi istanza]** Rimuove un&#39;istanza del pannello o della riga di tabella ripetibile specificata.
 
@@ -211,17 +219,17 @@ Quando (facoltativo):
 
 (Condizione 1 E Condizione 2 E Condizione 3) è VERO;
 
-L’esempio seguente seleziona il valore di `Question2` as `True` e imposta il valore di `Result` as `correct`.
+Nell&#39;esempio seguente viene selezionato il valore di `Question2` as `True` e impostato il valore di `Result` as `correct`.
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-Esempio di regola Imposta valore tramite il servizio Modello dati modulo.
+Esempio di Set Valore regola mediante l&#39;utilizzo del servizio Form Data Model.
 
-### [!UICONTROL Spettacolo] {#show}
+### [!UICONTROL Visualizza] {#show}
 
-Utilizzo di **[!UICONTROL Spettacolo]** tipo di regola, è possibile scrivere una regola per mostrare o nascondere un oggetto modulo a seconda che una condizione sia soddisfatta o meno. Il tipo Mostra regola attiva inoltre l&#39;azione Nascondi nel caso in cui la condizione non sia soddisfatta o si ripresenti `False`.
+Utilizzo di **[!UICONTROL Spettacolo]** tipo di regola, è possibile scrivere una regola per mostrare o nascondere un oggetto modulo a seconda che una condizione sia soddisfatta o meno. Il tipo di regola Mostra attiva anche l’azione Nascondi se la condizione non viene soddisfatta o restituisce `False`.
 
-Un Mostra regola tipico è strutturato come segue:
+Una regola Show tipica è strutturata come segue:
 
 `Show Object A;`
 
@@ -233,9 +241,9 @@ Un Mostra regola tipico è strutturato come segue:
 
 `Hide Object A;`
 
-### [!UICONTROL Nascondere] {#hide}
+### [!UICONTROL Nascondi] {#hide}
 
-Analogamente al tipo Mostra regola, è possibile utilizzare il **[!UICONTROL tipo di regola Nascondi]** per visualizzare o nascondere un oggetto modulo a seconda che una condizione sia soddisfatta o meno. Il tipo Nascondi regola attiva anche l&#39;azione Mostra nel caso in cui la condizione non sia soddisfatta o ritorni `False`.
+Simile al tipo di regola Mostra, puoi utilizzare **[!UICONTROL Nascondi]** tipo di regola per mostrare o nascondere un oggetto modulo in base al soddisfacimento o meno di una condizione. Il tipo di regola Nascondi attiva anche l&#39;azione Mostra nel caso in cui la condizione non sia soddisfatta o restituisca `False`.
 
 Una tipica regola Nascondi è strutturata come segue:
 
@@ -368,7 +376,7 @@ Quando viene toccato, questo pulsante attiva o disattiva il riquadro delle funzi
 
 ### D. Editor di regole visive {#visual-rule-editor}
 
-L’editor di regole visive è l’area in cui si scrivono le regole nella modalità editor visivo dell’interfaccia utente dell’editor di regole. Ti consente di selezionare un tipo di regola e di definire di conseguenza condizioni e azioni. Quando si definiscono condizioni e azioni in una regola, è possibile trascinare gli oggetti modulo e le funzioni dal riquadro Oggetti modulo e funzioni.
+L’editor di regole visive è l’area in cui si scrivono le regole nella modalità editor visivo dell’interfaccia utente dell’editor di regole. Consente di selezionare un tipo di regola e definire di conseguenza condizioni e azioni. Quando si definiscono condizioni e azioni in una regola, è possibile trascinare gli oggetti modulo e le funzioni dal riquadro Oggetti modulo e funzioni.
 
 Per ulteriori informazioni sull’utilizzo dell’editor di regole visive, consulta [Scrivi regole](rule-editor.md#p-write-rules-p).
 <!-- 
@@ -387,7 +395,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. Tasti Done e cancel {#done-and-cancel-buttons}
 
-Il **[!UICONTROL Fine]** per salvare una regola. È possibile salvare una regola incompleta. Tuttavia, gli incompleti vengono non valido e non vengono eseguiti. Le regole salvate in un oggetto modulo vengono elencate quando si lanciare la regola editor successiva dallo stesso oggetto modulo. Puoi gestire le regole esistenti in tale vista. Per ulteriori informazioni, vedere [Gestire le regole](rule-editor.md#p-manage-rules-p).
+Il **[!UICONTROL Fine]** per salvare una regola. È possibile salvare una regola incompleta. Tuttavia, i dati incompleti non sono validi e non vengono eseguiti. Le regole salvate in un oggetto modulo vengono elencate quando si lanciare la regola editor successiva dallo stesso oggetto modulo. È possibile gestire regole esistenti in questa visualizzazione. Per ulteriori informazioni, vedere [Gestire le regole](rule-editor.md#p-manage-rules-p).
 
 Il **[!UICONTROL Annulla]** il pulsante elimina tutte le modifiche apportate a una regola e chiude l’editor di regole.
 
@@ -397,7 +405,7 @@ Puoi scrivere regole utilizzando l’editor di regole visive <!-- or the code ed
 
 Vediamo innanzitutto come scrivere regole utilizzando l’editor visivo.
 
-### Utilizzo di editor visivi {#using-visual-editor}
+### Utilizzo dell’editor visivo {#using-visual-editor}
 
 Comprendiamo come creare una regola nell’editor visivo utilizzando il seguente modulo di esempio.
 
@@ -561,83 +569,83 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Funzioni personalizzate nell’editor di regole {#custom-functions}
 
-Puoi anche utilizzare funzioni personalizzate nell’editor di regole. Per istruzioni sulla creazione di funzioni personalizzate, consulta l’articolo [Funzioni personalizzate in Adaptive Forms](/help/forms/create-and-use-custom-functions.md).
-
-Oltre alle funzioni predefinite, come *Somma di* elencate in Output funzioni, è possibile scrivere funzioni personalizzate che sono spesso necessarie. Assicurati che la funzione che scrivi sia accompagnata dal `jsdoc` sopra di esso.
-
-Accompagnamento `jsdoc` è obbligatorio:
-
-* Se desideri una configurazione e una descrizione personalizzate
-* Perché esistono diversi modi per dichiarare una funzione in `JavaScript,` I commenti e consentono di tenere traccia delle funzioni.
-
-L’editor di regole supporta la sintassi JavaScript ES2015 per script e funzioni personalizzate.
-Per ulteriori informazioni, consulta [jsdoc.app](https://jsdoc.app/).
-
-Supportato `jsdoc` tag:
-
-* **Privato**
-Sintassi: `@private`
-Una funzione privata non è inclusa come funzione personalizzata.
-
-* **Nome**
-Sintassi: `@name funcName <Function Name>`
-In alternativa `,` puoi utilizzare: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
-  `funcName` è il nome della funzione (non sono consentiti spazi).
-  `<Function Name>` è il nome visualizzato della funzione.
-
-* **Parametro**
-Sintassi: `@param {type} name <Parameter Description>`
-In alternativa, puoi utilizzare: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
-Mostra i parametri utilizzati dalla funzione. Una funzione può avere più tag di parametri, uno per ogni parametro in ordine di occorrenza.
-  `{type}` rappresenta il tipo di parametro. I tipi di parametri consentiti sono:
-
-   1. stringa
-   1. numero
-   1. booleano
-   1. ambito
-   1. stringa[]
-   1. numero[]
-   1. booleano[]
-   1. data
-   1. data[]
-   1. array
-   1. oggetto
-
-  `scope` fa riferimento a uno speciale oggetto globals fornito da forms runtime. Deve essere l’ultimo parametro e non è visibile all’utente nell’editor di regole. È possibile utilizzare l&#39;ambito per accedere a un modulo leggibile e a un oggetto proxy di campo per leggere le proprietà, l&#39;evento che ha attivato la regola e un set di funzioni per manipolare il modulo.
-
-  `object` Il tipo viene utilizzato per passare un oggetto campo leggibile nel parametro a una funzione personalizzata invece di passare il valore.
-
-  Tutti i tipi di parametri sono classificati in una delle categorie precedenti. Nessuno non è supportato. Accertati di selezionare uno dei tipi riportati sopra. I tipi non fanno distinzione tra maiuscole e minuscole. Il nome del parametro non può contenere spazi.  La descrizione del parametro può contenere più parole.
-
-* **Parametro facoltativo**
-Sintassi: `@param {type=} name <Parameter Description>`
-In alternativa, puoi utilizzare: `@param {type} [name] <Parameter Description>`
-Per impostazione predefinita, tutti i parametri sono obbligatori. Per contrassegnare un parametro come facoltativo, aggiungi `=` nel tipo del parametro o inserendo il nome del parametro tra parentesi quadre.
-
-  Ad esempio, dichiariamo `Input1` come parametro facoltativo:
-   * `@param {type=} Input1`
-   * `@param {type} [Input1]`
-
-* **Tipo restituito**
-Sintassi: `@return {type}`
-In alternativa, puoi utilizzare `@returns {type}`.
-Aggiunge informazioni sulla funzione, ad esempio l&#39;obiettivo.
-{type} rappresenta il tipo restituito della funzione. I tipi restituiti consentiti sono:
-
-   1. stringa
-   2. numero
-   3. booleano
-   4. stringa[]
-   5. numero[]
-   6. booleano[]
-   7. data
-   8. data[]
-   9. array
-   10. oggetto
-
-  Tutti gli altri tipi di reso sono classificati in una delle categorie precedenti. Nessuno non è supportato. Accertati di selezionare uno dei tipi riportati sopra. I tipi restituiti non fanno distinzione tra maiuscole e minuscole.
+Oltre alle funzioni predefinite, come *Somma di* che sono elencati in **Output funzioni**, nell’editor delle regole puoi anche utilizzare funzioni personalizzate. L’editor di regole supporta la sintassi JavaScript ECMAScript 2019 per gli script e le funzioni personalizzate. Per istruzioni sulla creazione di funzioni personalizzate, consulta l’articolo [Funzioni personalizzate in Adaptive Forms](/help/forms/create-and-use-custom-functions.md).
 
 <!--
+
+Ensure that the function you write is accompanied by the `jsdoc` above it. Adaptive Form supports the various [JavaScript annotations for custom functions](/help/forms/create-and-use-custom-functions.md#js-annotations).
+
+For more information, see [jsdoc.app](https://jsdoc.app/).
+
+Accompanying `jsdoc` is required:
+
+* If you want custom configuration and description
+* Because there are multiple ways to declare a function in `JavaScript,` and comments let you keep a track of the functions.
+
+Supported `jsdoc` tags:
+
+* **Private**
+  Syntax: `@private`
+  A private function is not included as a custom function.
+
+* **Name**
+  Syntax: `@name funcName <Function Name>`
+  Alternatively `,` you can use: `@function funcName <Function Name>` **or** `@func` `funcName <Function Name>`.
+  `funcName` is the name of the function (no spaces allowed).
+  `<Function Name>` is the display name of the function.
+
+* **Parameter**
+  Syntax: `@param {type} name <Parameter Description>`
+  Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.
+  Shows parameters used by the function. A function can have multiple parameter tags, one tag for each parameter in the order of occurrence.
+  `{type}` represents parameter type. Allowed parameter types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. scope
+    5. string[]
+    6. number[]
+    7. boolean[]
+    8. date
+    9. date[]
+    10. array
+    11. object
+
+   `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
+
+   `object` type is used to pass readable field object in parameter to a custom function instead of passing the value.
+
+   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter name.  Parameter description can have multiple words.
+
+* **Optional Parameter**
+Syntax: `@param {type=} name <Parameter Description>` 
+Alternatively, you can use: `@param {type} [name] <Parameter Description>`
+By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
+   
+   For example, let us declare `Input1` as optional parameter:
+    * `@param {type=} Input1`
+    * `@param {type} [Input1]`
+
+* **Return Type**
+  Syntax: `@return {type}`
+  Alternatively, you can use `@returns {type}`.
+  Adds information about the function, such as its objective.
+  {type} represents the return type of the function. Allowed return types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. string[]
+    5. number[]
+    6. boolean[]
+    7. date
+    8. date[]
+    9. array
+    10. object
+
+  All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
+
 **Adding a custom function**
 
 For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
@@ -645,7 +653,7 @@ For example, you want to add a custom function which calculates area of a square
 To create a client library and add it in the CRX repository, perform the following steps:
 
 1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
-1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
