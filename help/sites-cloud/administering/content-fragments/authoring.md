@@ -4,10 +4,10 @@ description: Scopri come creare contenuti per i frammenti di contenuto e creare 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
 workflow-type: tm+mt
-source-wordcount: '2266'
-ht-degree: 4%
+source-wordcount: '2381'
+ht-degree: 8%
 
 ---
 
@@ -39,25 +39,25 @@ Questo editor fornisce:
 
 La prima volta che apri l’Editor frammento di contenuto vengono visualizzate quattro aree principali:
 
-* barra degli strumenti superiore: per informazioni chiave e azioni
-   * un collegamento alla Console Frammenti di contenuto (icona Home)
-   * informazioni sul modello e sulla cartella
+* Barra degli strumenti superiore: per informazioni chiave e azioni
+   * Collegamento alla Console Frammenti di contenuto (icona Home)
+   * Informazioni sul modello e sulla cartella
    * collegamenti a [Anteprima (se per il modello è configurato il Pattern URL di anteprima predefinito)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
    * [Pubblica](#publish-content-fragment), e [Annulla pubblicazione](#unpublish-content-fragment) azioni
-   * un&#39;opzione per mostrare tutto **Riferimenti padre** (icona collegamento)
-   * il frammento **[Stato](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, e le ultime informazioni salvate
-   * un pulsante per passare all’editor originale (basato su Assets)
+   * Opzione per mostrare tutti i **Riferimenti padre** (icona collegamento)
+   * **[Stato](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** del frammento e le ultime informazioni salvate
+   * Pulsante per passare all’editor originale (basato su Assets)
 
      >[!WARNING]
      >
      >L’editor originale viene aperto nella stessa scheda. Si sconsiglia di aprire entrambi gli editor contemporaneamente.
 
-* pannello a sinistra: mostra **[Varianti](#variations)** per il frammento di contenuto e i relativi **Campi**:
+* Pannello a sinistra: presenta le **[Varianti](#variations)** del frammento di contenuto e i relativi **Campi**:
    * questi collegamenti possono essere utilizzati per [Navigare nella struttura dei frammenti di contenuto](#navigate-structure)
 * pannello a destra: presenta le schede [visualizzazione delle proprietà (metadati) e dei tag](#view-properties-tags), informazioni su [cronologia delle versioni](#view-version-history), e informazioni relative a qualsiasi [copie per lingua](#view-language-copies)
-   * nel **Proprietà** è possibile aggiornare la scheda **Titolo** e **Descrizione** per il frammento, oppure **Variante**
-* pannello centrale: mostra i campi e il contenuto effettivi della variante selezionata
-   * consente di modificare il contenuto
+   * Scheda **Proprietà**, in cui puoi aggiornare il **Titolo** e la **Descrizione** del frammento, oppure la **Variante**
+* Pannello centrale: presenta i campi e il contenuto effettivi della variante selezionata
+   * Consente di modificare il contenuto
    * se **Segnaposto scheda** I campi sono definiti all’interno del modello che vengono visualizzati qui e possono essere utilizzati per la navigazione; verranno presentati in orizzontale o come elenco a discesa.
 
   >[!NOTE]
@@ -96,7 +96,7 @@ In varie parti dell’editor è possibile visualizzare l’icona del collegament
 
 ![Editor frammento di contenuto - Icona collegamento](assets/cf-authoring-link-icon.png)
 
-### Struttura ad albero {#structure-tree}
+### Albero struttura {#structure-tree}
 
 Apri **Struttura ad albero** dalla barra degli strumenti dell’editor per visualizzare la struttura gerarchica del frammento di contenuto e i relativi riferimenti. Utilizza le icone dei collegamenti per passare ai riferimenti.
 
@@ -370,6 +370,27 @@ In **Cronologia versioni** nel pannello a destra vengono visualizzati i dettagli
 >Al momento della pubblicazione del frammento di contenuto viene creata una nuova versione.
 
 ![Editor frammenti di contenuto: panoramica della cronologia delle versioni](assets/cf-authoring-version-history-overview.png)
+
+### Confronta versione {#compare-version}
+
+Per un frammento di contenuto è possibile confrontare una versione precedente con la versione corrente.
+
+Per confrontare una versione precedente con la versione corrente:
+
+1. Seleziona l’icona dei tre punti accanto alla versione.
+
+1. Seleziona **Confronta**.
+
+![Editor frammenti di contenuto - Confronto cronologia versioni](assets/cf-authoring-version-history-compare.png)
+
+Viene aperta una visualizzazione in cui sono visualizzate le differenze tra la versione corrente del contenuto e la versione precedente selezionata del frammento di contenuto. Dalla sezione **Varianti con modifiche** a discesa, puoi selezionare di visualizzare le differenze rispetto al contenuto principale e/o al contenuto di una variante.
+
+Le differenze sono indicate dal colore:
+
+* Verde: indica il contenuto aggiunto (alla versione corrente)
+* Rosso: indica il contenuto rimosso (dalla versione corrente)
+
+![Editor frammenti di contenuto - Cronologia versioni - Confronta versioni](assets/cf-authoring-version-history-compare-versions.png)
 
 ### Ripristina una versione {#revert-version}
 

@@ -4,10 +4,10 @@ description: Scopri come gestire i frammenti di contenuto AEM dalla console e da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
+source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
 workflow-type: tm+mt
-source-wordcount: '2629'
-ht-degree: 46%
+source-wordcount: '2643'
+ht-degree: 45%
 
 ---
 
@@ -449,6 +449,7 @@ Il pannello Filtro offre:
 * una selezione di predicati;
    * tra cui modelli per frammenti di contenuto, localizzazione, tag, campi di stato
    * è possibile selezionare e combinare uno o più predicati per creare il filtro
+* **Escludi elementi sottocartelle**, con la possibilità di escludere i frammenti di contenuto archiviati in sottocartelle
 * l’opportunità di salvare la configurazione mediante il comando **Salva**
 * l’opzione di recuperare un filtro di ricerca salvato per il riutilizzo
 
