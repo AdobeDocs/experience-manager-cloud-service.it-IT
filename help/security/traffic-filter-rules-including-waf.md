@@ -3,7 +3,7 @@ title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 3a79de1cccdec1de4902b234dac3120efefdbce8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3669'
 ht-degree: 100%
 
