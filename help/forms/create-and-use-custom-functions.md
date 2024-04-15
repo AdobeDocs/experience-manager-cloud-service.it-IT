@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 3ed500d0c7a9a445e3417043da3d52632760ccdb
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3104'
 ht-degree: 0%
 
 ---
@@ -72,59 +72,61 @@ Il parametro è un elenco di argomenti utilizzati dalle funzioni personalizzate.
    * data[]: rappresenta una matrice di valori di data.
    * array: rappresenta una matrice generica contenente valori di vari tipi.
    * object: rappresenta un oggetto modulo passato a una funzione personalizzata anziché passare direttamente il relativo valore.
-   * ambito: rappresenta l&#39;oggetto globale utilizzato dalle funzioni personalizzate in fase di esecuzione. Viene dichiarato come ultimo parametro nelle annotazioni JavaScript e non è visibile nell’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo.
+   * ambito: rappresenta l&#39;oggetto globals, che contiene variabili di sola lettura quali istanze di moduli, istanze di campi di destinazione e metodi per l&#39;esecuzione di modifiche di moduli all&#39;interno di funzioni personalizzate. Viene dichiarato come ultimo parametro nelle annotazioni JavaScript e non è visibile nell’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo. Per ulteriori informazioni sull&#39;oggetto Globals e su come utilizzarlo, [fai clic qui](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
 
-    Il tipo di parametro non fa distinzione tra maiuscole e minuscole e non sono consentiti spazi nel nome del parametro.
-    
-    `&lt;parameter description=&quot;&quot;>` contiene dettagli sullo scopo del parametro. Può avere più parole.
-    
-    Per impostazione predefinita, tutti i parametri sono obbligatori. È possibile definire un parametro come facoltativo aggiungendo `=` dopo il tipo di parametro o racchiudendo il nome del parametro in `[]`. I parametri definiti come facoltativi nelle annotazioni JavaScript vengono visualizzati come facoltativi nell’editor di regole.
-    Per definire una variabile come parametro facoltativo, è possibile utilizzare una delle sintassi seguenti:
-    
-    * `@param {type=} Input1`
-    
-    Nella riga di codice precedente, &quot;Input1&quot; è un parametro opzionale senza alcun valore predefinito. Per dichiarare un parametro facoltativo con valore predefinito:
-    &#39;@param {string=&lt;value>} input1`
-    
-    &quot;input1&quot; come parametro opzionale con il valore predefinito impostato su &quot;value&quot;.
-    
-    * `@param {type} [Input1]`
-    
-    Nella riga di codice precedente, &quot;Input1&quot; è un parametro opzionale senza alcun valore predefinito. Per dichiarare un parametro facoltativo con valore predefinito:
-    &#39;@param {array} [input1=&lt;value>]`
-    &quot;input1&quot; è un parametro opzionale di tipo array con il valore predefinito impostato su &quot;value&quot;.
-    Assicuratevi che il tipo di parametro sia racchiuso tra parentesi graffe {} e il nome del parametro è racchiuso tra parentesi quadre [].
-    
-    Considera il seguente frammento di codice, in cui input2 è definito come parametro opzionale:
-    
-    &quot;javascript
-    
-    /**
-    * funzione opzionale dei parametri
-    * @name FacoltativoParameterFunction
-    * @param {string} input1
-    * @param {string=} input2
-    * @return {string}
-    */
-    function OptionalParameterFunction(input1, input2) {
-    let result = &quot;Risultato: &quot;;
-    risultato += input1;
-    if (input2!== nulle) {
-    risultato += &quot; &quot; + input2;
-    }
-    risultato di ritorno;
-    }
-    &quot;
-    
-    L’illustrazione seguente mostra l’utilizzo della funzione personalizzata &quot;OptionalParameterFunction&quot; nell’editor di regole:
-    
-    &lt;!>...[Parametri facoltativi o obbligatori ](/help/forms/assets/optional-default-params.png) —>
-    
-    Puoi salvare la regola senza specificare un valore per i parametri richiesti, ma la regola non viene eseguita e visualizza un messaggio di avviso come:
-    
-    &lt;!>...[avviso regola incompleto](/help/forms/assets/incomplete-rule.png) —>
-    
-    Quando l’utente lascia vuoto il parametro opzionale, il valore &quot;Undefined&quot; (Non definito) viene passato alla funzione personalizzata per il parametro opzionale.
+Il tipo di parametro non fa distinzione tra maiuscole e minuscole e non sono consentiti spazi nel nome del parametro.
+
+`<Parameter Description>` contiene dettagli sullo scopo del parametro. Può avere più parole.
+
+**Parametri facoltativi**
+Per impostazione predefinita, tutti i parametri sono obbligatori. È possibile definire un parametro come facoltativo aggiungendo `=` dopo il tipo di parametro o che racchiude il nome del parametro in  `[]`. I parametri definiti come facoltativi nelle annotazioni JavaScript vengono visualizzati come facoltativi nell’editor di regole.
+Per definire una variabile come parametro facoltativo, è possibile utilizzare una delle sintassi seguenti:
+
+* `@param {type=} Input1`
+
+Nella riga di codice precedente, `Input1` è un parametro facoltativo senza alcun valore predefinito. Per dichiarare un parametro facoltativo con valore predefinito:
+`@param {string=<value>} input1`
+
+`input1` come parametro facoltativo con il valore predefinito impostato su `value`.
+
+* `@param {type} [Input1]`
+
+Nella riga di codice precedente, `Input1` è un parametro facoltativo senza alcun valore predefinito. Per dichiarare un parametro facoltativo con valore predefinito:
+`@param {array} [input1=<value>]`
+`input1` è un parametro facoltativo di tipo array con il valore predefinito impostato su `value`.
+Assicuratevi che il tipo di parametro sia racchiuso tra parentesi graffe {} e il nome del parametro è racchiuso tra parentesi quadre [].
+
+Considera il seguente frammento di codice, in cui input2 è definito come parametro opzionale:
+
+```javascript
+        /**
+         * optional parameter function
+         * @name OptionalParameterFunction
+         * @param {string} input1 
+         * @param {string=} input2 
+         * @return {string}
+        */
+        function OptionalParameterFunction(input1, input2) {
+        let result = "Result: ";
+        result += input1;
+        if (input2 !== null) {
+            result += " " + input2;
+        }
+        return result;
+        }
+```
+
+L&#39;illustrazione seguente viene visualizzata utilizzando `OptionalParameterFunction` funzione personalizzata nell’editor di regole:
+
+![Parametri facoltativi o obbligatori ](/help/forms/assets/optional-default-params.png)
+
+Puoi salvare la regola senza specificare un valore per i parametri richiesti, ma la regola non viene eseguita e visualizza un messaggio di avviso come:
+
+![avviso di regola incompleto](/help/forms/assets/incomplete-rule.png)
+
+Quando l’utente lascia vuoto il parametro opzionale, il valore &quot;Undefined&quot; (Non definito) viene passato alla funzione personalizzata per il parametro opzionale.
+
+Per ulteriori informazioni su come definire parametri opzionali nei JSDocs, [fai clic qui](https://jsdoc.app/tags-param).
 
 #### Tipo restituito
 
@@ -150,7 +152,6 @@ Il tipo restituito specifica il tipo di valore restituito dalla funzione persona
 
 La funzione personalizzata, dichiarata come privata, non viene visualizzata nell’elenco delle funzioni personalizzate nell’editor delle regole di un modulo adattivo. Per impostazione predefinita, le funzioni personalizzate sono pubbliche. Sintassi per dichiarare la funzione personalizzata come privata `@private`.
 
-Per ulteriori informazioni su come definire parametri opzionali nei JSDocs, [fai clic qui](https://jsdoc.app/tags-param).
 
 ## Linee guida per la creazione di funzioni personalizzate {#considerations}
 
@@ -190,6 +191,8 @@ Se l’utente non aggiunge annotazioni JavaScript alla funzione personalizzata, 
     
 ```
 
+Se l’utente non aggiunge annotazioni JavaScript alla funzione personalizzata, la funzione personalizzata non viene elencata nell’editor di regole di un modulo adattivo.
+
 * **Espressione di funzione con annotazioni o commenti JavaScript obbligatori**
 
 Per elencare le funzioni personalizzate nell’editor di regole di un modulo adattivo, crea funzioni personalizzate nel formato seguente:
@@ -207,6 +210,8 @@ Per elencare le funzioni personalizzate nell’editor di regole di un modulo ada
             // code to be executed
         }
 ```
+
+Se l’utente non aggiunge annotazioni JavaScript alla funzione personalizzata, la funzione personalizzata non viene elencata nell’editor di regole di un modulo adattivo.
 
 ## Creare una funzione personalizzata {#create-custom-function}
 
@@ -365,30 +370,33 @@ Approfondiamo le funzioni personalizzate.
 
 ### Oggetti di ambito Field e Global nelle funzioni personalizzate {#support-field-and-global-objects}
 
-Gli oggetti Field fanno riferimento ai singoli componenti o elementi di un modulo, ad esempio campi di testo e caselle di controllo. Gli oggetti ambito globali fanno riferimento alle variabili o alle impostazioni globali accessibili nell&#39;intero modulo. Osserva il seguente frammento di codice:
+Gli oggetti Field fanno riferimento ai singoli componenti o elementi di un modulo, ad esempio campi di testo e caselle di controllo. L&#39;oggetto Globals contiene variabili di sola lettura quali l&#39;istanza del modulo, l&#39;istanza del campo di destinazione e i metodi per apportare modifiche al modulo nelle funzioni personalizzate.
+
+>[!NOTE]
+>
+> Il `param {scope} globals` deve essere l’ultimo parametro e non viene visualizzato nell’editor di regole di un modulo adattivo.
+
+<!-- Let us look at the following code snippet:
 
 ```JavaScript
+   
     /**
     * updateDateTime
     * @name updateDateTime
     * @param {object} field
-    * @param {scope} globals 
+    * @param {scope} globals
     */
     function updateDateTime(field, globals) {
     // Accessing the Date object from the global scope
     var currentDate = new Date();
     // Formatting the date and time
     var formattedDateTime = currentDate.toLocaleString();
-    // Updating the field value with the formatted date and time
-    field.value = formattedDateTime;
+    // Updating the field value with the formatted date and time using setProperty.
+    globals.functions.setProperty(field, {value: formattedDateTime});
     }
 ```
 
->[!NOTE]
->
-> Il `param {scope} globals` deve essere l’ultimo parametro e non viene visualizzato nell’editor di regole di un modulo adattivo.
-
-Nel frammento di codice precedente, una funzione personalizzata denominata `updateDateTime` accetta parametri quali un oggetto field e un oggetto globale. Gli oggetti data e ora sono accessibili utilizzando l&#39;ambito globale. Il campo rappresenta l&#39;oggetto textbox in cui il valore di data e ora formattato viene visualizzato all&#39;interno del modulo.
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
 Scopri in che modo le funzioni personalizzate utilizzano gli oggetti campo e globali con l’aiuto di un `Contact Us` utilizzando diversi casi d’uso.
 
@@ -419,7 +427,8 @@ Aggiungi il seguente codice nella funzione personalizzata come spiegato in [crea
 
 >[!NOTE]
 >
-> Puoi configurare le proprietà del campo utilizzando le proprietà disponibili in `[form-path]/jcr:content/guideContainer.model.json`.
+> * Puoi configurare le proprietà del campo utilizzando le proprietà disponibili in `[form-path]/jcr:content/guideContainer.model.json`.
+> * Modifiche apportate al modulo utilizzando `setProperty` Il metodo dell&#39;oggetto Globals è asincrono e non viene riflesso durante l&#39;esecuzione della funzione personalizzata.
 
 In questo esempio, la convalida del `personaldetails` facendo clic sul pulsante. Se non vengono rilevati errori nel pannello, viene visualizzato un altro pannello, `feedback` visibile al clic del pulsante.
 
@@ -554,7 +563,7 @@ La seguente riga di codice:
 `globals.functions.submitForm(globals.functions.exportData(), false);` viene utilizzato per inviare i dati del modulo dopo la manipolazione.
 * Il primo argomento è costituito dai dati da inviare.
 * Il secondo argomento indica se il modulo deve essere convalidato prima dell&#39;invio. È `optional` e impostato come `true` per impostazione predefinita.
-* Il terzo argomento è il seguente: `contentType` della presentazione, che è anche `optional` con il valore predefinito come `multipart/form-data`.
+* Il terzo argomento è il seguente: `contentType` dell’invio, che è anche facoltativo con il valore predefinito come `multipart/form-data`. Gli altri valori possono essere `application/json` e `application/x-www-form-urlencoded`.
 
 Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) per inviare i dati manipolati sul server:
 
@@ -565,7 +574,6 @@ Aggiungi il seguente codice nella funzione personalizzata come spiegato in [crea
     * @param {object} field
     * @param {scope} globals 
     */
-
     function submitData(globals)
     {
     
