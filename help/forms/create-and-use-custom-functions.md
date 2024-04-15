@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 593a2b2930093d29a22f6c1ff391c11db9bda7dc
+source-git-commit: 9582cd8c7777544fde5d13fcd79cfec318e3f780
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 0%
@@ -50,8 +50,7 @@ Il nome viene utilizzato per identificare la funzione personalizzata nell’edit
 * `@func [functionName] <Function Name>`.
   `functionName` è il nome della funzione. Gli spazi non sono consentiti.
   `<Function Name>` è il nome visualizzato della funzione nell’editor di regole di un modulo adattivo.
-Se il nome della funzione è identico al nome della funzione stessa, è possibile omettere `[functionName]` dalla sintassi. <!-- For example,  in the `calculateAge` custom function, the name is defined as:
-`* @name calculateAge` -->
+Se il nome della funzione è identico al nome della funzione stessa, è possibile omettere `[functionName]` dalla sintassi.
 
 #### Parametro
 
