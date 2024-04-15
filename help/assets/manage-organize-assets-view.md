@@ -3,10 +3,11 @@ title: Gestire le risorse digitali
 description: Sposta, elimina, copia, rinomina, aggiorna e crea versioni delle risorse in [!DNL Assets view].
 role: User,Leader
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
+source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 92%
+source-wordcount: '1062'
+ht-degree: 88%
 
 ---
 
@@ -28,6 +29,7 @@ Utilizza [!DNL Assets view] per eseguire le seguenti attività di gestione risor
 * ![icona Copia](assets/do-not-localize/copy-icon.png) Copia il file o la cartella selezionati.
 * ![icona Sposta](assets/do-not-localize/move-icon.png) Sposta la risorsa o la cartella selezionata in una posizione diversa nella gerarchia dell’archivio.
 * ![icona Rinomina](assets/do-not-localize/rename-icon.png) Rinomina la risorsa o la cartella selezionata. Utilizza un nome univoco; in caso contrario la ridenominazione non riesce e viene visualizzato un’avvertenza. Riprova con un nuovo nome.
+Inoltre, puoi fare clic sul titolo di una risorsa o cartella per rinominarla. Menzionare il nuovo testo nel **Rinomina risorsa** casella di testo e fare clic su **Salva**. Questa funzionalità è disponibile nelle viste Griglia, Galleria, Cascata ed Elenco. <!--in-place rename-->
 * ![icona Assegna attività](assets/do-not-localize/review-delegate-icon.png) Assegna attività ad altri utenti per collaborare a una risorsa.
 
 Le stesse opzioni sono disponibili anche sulle miniature delle risorse.
