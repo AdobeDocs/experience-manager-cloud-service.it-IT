@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 9582cd8c7777544fde5d13fcd79cfec318e3f780
+source-git-commit: bc040f29a8912c5901ddb71bd32ee2d2a97d3eec
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 0%
@@ -155,7 +155,7 @@ La funzione personalizzata, dichiarata come privata, non viene visualizzata nell
 
 Per elencare le funzioni personalizzate nell’editor di regole, puoi utilizzare uno dei seguenti formati:
 
-* **Istruzione function con o senza commenti jsdoc**
+### **Istruzione function con o senza commenti jsdoc**
 
 Puoi creare una funzione personalizzata con o senza commenti jsdoc.
 
@@ -167,7 +167,7 @@ Puoi creare una funzione personalizzata con o senza commenti jsdoc.
 ```
 Se l’utente non aggiunge annotazioni JavaScript alla funzione personalizzata, questa viene elencata nell’editor di regole in base al nome della funzione. Tuttavia, si consiglia di includere annotazioni JavaScript per migliorare la leggibilità delle funzioni personalizzate.
 
-* **Funzione freccia con annotazioni o commenti JavaScript obbligatori**
+### **Funzione freccia con annotazioni o commenti JavaScript obbligatori**
 
 È possibile creare una funzione personalizzata con una sintassi della funzione freccia:
 
@@ -191,7 +191,7 @@ Se l’utente non aggiunge annotazioni JavaScript alla funzione personalizzata, 
 
 Se l’utente non aggiunge annotazioni JavaScript alla funzione personalizzata, la funzione personalizzata non viene elencata nell’editor di regole di un modulo adattivo.
 
-* **Espressione di funzione con annotazioni o commenti JavaScript obbligatori**
+### **Espressione di funzione con annotazioni o commenti JavaScript obbligatori**
 
 Per elencare le funzioni personalizzate nell’editor di regole di un modulo adattivo, crea funzioni personalizzate nel formato seguente:
 
