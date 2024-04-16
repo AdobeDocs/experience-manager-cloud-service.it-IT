@@ -4,10 +4,10 @@ description: Sposta, elimina, copia, rinomina, aggiorna e crea versioni delle ri
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
+source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 88%
+source-wordcount: '1177'
+ht-degree: 89%
 
 ---
 
@@ -22,15 +22,39 @@ Utilizza [!DNL Assets view] per eseguire le seguenti attività di gestione risor
 *Figura: Opzioni disponibili nella barra degli strumenti per un’immagine selezionata.*
 
 * ![icona Deseleziona](assets/do-not-localize/close-icon.png) Deseleziona la selezione.
+
+* ![icona Trova simile](assets/do-not-localize/find-similar.svg): trova una risorsa di immagine simile nell’interfaccia utente di Assets in base ai metadati e ai tag avanzati.
+
 * ![icona Dettagli](assets/do-not-localize/edit-in-icon.png) Fai clic sull’icona per visualizzare l’anteprima di una risorsa e i metadati dettagliati. In anteprima, puoi visualizzare le versioni e modificare un’immagine.
+
 * ![icona di download](assets/do-not-localize/download-icon.png) Scarica nel file system locale la risorsa selezionata.
+
+* ![icona Aggiungi a raccolta](assets/do-not-localize/add-collection.svg): aggiungi la risorsa selezionata a una raccolta.
+
+* ![icona Fissa risorse](assets/do-not-localize/pin-quick-access.svg): fissa una risorsa per un accesso più rapido quando necessario in un secondo momento. Tutti gli elementi fissati vengono visualizzati nella sezione **Accesso rapido** della tua area di lavoro.
+
+* ![icona Modifica in Express](assets/do-not-localize/edit-e.svg) Modifica un’immagine nell’editor Adobe Express integrato in Adobe Experience Manager Assets.
+
+* ![icona Modifica risorsa](assets/do-not-localize/edit-e.svg) Modifica l’immagine utilizzando Adobe Express.
+
+* ![icona Condividi collegamento risorsa](assets/do-not-localize/share-link.svg) Condividi una risorsa con altri utenti così che possano accedervi e scaricarla.
+
 * ![icona Elimina](assets/do-not-localize/delete-icon.png) Elimina la risorsa o la cartella selezionata.
-* ![icona Ritira](assets/do-not-localize/checkout-icon.png) Ritira la risorsa selezionata.
+
 * ![icona Copia](assets/do-not-localize/copy-icon.png) Copia il file o la cartella selezionati.
+
 * ![icona Sposta](assets/do-not-localize/move-icon.png) Sposta la risorsa o la cartella selezionata in una posizione diversa nella gerarchia dell’archivio.
+
 * ![icona Rinomina](assets/do-not-localize/rename-icon.png) Rinomina la risorsa o la cartella selezionata. Utilizza un nome univoco; in caso contrario la ridenominazione non riesce e viene visualizzato un’avvertenza. Riprova con un nuovo nome.
-Inoltre, puoi fare clic sul titolo di una risorsa o cartella per rinominarla. Menzionare il nuovo testo nel **Rinomina risorsa** casella di testo e fare clic su **Salva**. Questa funzionalità è disponibile nelle viste Griglia, Galleria, Cascata ed Elenco. <!--in-place rename-->
+Inoltre, puoi fare clic sul titolo di una risorsa o cartella per rinominarla. Menzionare il nuovo testo nel **Rinomina risorsa** casella di testo e fare clic su **Salva**. Questa funzionalità è disponibile nelle viste Griglia, Galleria, Cascata ed Elenco.
+
+* ![icona della vista cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista a cascata].
+
+* ![icona Copia libreria](assets/do-not-localize/copy-icon.png) Aggiungi una risorsa alla libreria.
+
 * ![icona Assegna attività](assets/do-not-localize/review-delegate-icon.png) Assegna attività ad altri utenti per collaborare a una risorsa.
+
+* ![icona Assegna attività](assets/do-not-localize/watch-asset.svg) Monitora le operazioni eseguite su una risorsa.
 
 Le stesse opzioni sono disponibili anche sulle miniature delle risorse.
 
