@@ -2,9 +2,9 @@
 title: Gestire le raccolte
 description: Una raccolta è un insieme di risorse nella vista Experience Manager Assets. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti.
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
-source-git-commit: 24c92e3a8ea20696cd39a5070f161d45d09d6f69
+source-git-commit: b2144820ad549332e8a921744717a77824f9e099
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '910'
 ht-degree: 77%
 
 ---
@@ -191,11 +191,11 @@ Per eliminare una raccolta:
 ## Gestire le autorizzazioni per una raccolta privata{#manage-permissions-private-collection}
 
 Puoi consentire agli amministratori di gestire [livelli di accesso](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) per le raccolte private disponibili nell’archivio. Puoi assegnare autorizzazioni quali `Can View` e `Can Edit` ai gruppi di utenti o agli utenti. Puoi anche delegare i privilegi di gestione delle autorizzazioni ai gruppi di utenti. Gli utenti che creano raccolte private sono i proprietari di tali raccolte. Possono utilizzare [!UICONTROL Gestisci autorizzazioni] azione per concedere l&#39;accesso agli altri utenti. Inoltre, gli amministratori possono visualizzare e gestire le autorizzazioni delle raccolte private in [!DNL Experience Manager] archivio.
-
+<!--
 >[!NOTE]
 >
->Adobe sconsiglia di assegnare autorizzazioni agli utenti.
-
+>Adobe does not recommend to assign permissions to users.
+-->
 Per informazioni su come assegnare le autorizzazioni disponibili ai gruppi di utenti, consulta [Aggiungere autorizzazioni ai gruppi di utenti](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 Per ulteriori informazioni sul flusso di lavoro end-to-end, consulta [gestire le autorizzazioni](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
