@@ -578,7 +578,7 @@ ht-degree: 98%
       + [Aggiorna [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Integrazione con Adobe Express {#integration-adobe-express}
-      + [Integrazione nativa con Adobi Express](/help/assets/native-integration-adobe-express.md)
+      + [Integrazione nativa con Adobe Express](/help/assets/native-integration-adobe-express.md)
 
    + Integrazione con Creative Cloud {#integration-creative-cloud}
       + [Connettersi ad AEM Assets a Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
@@ -648,7 +648,7 @@ ht-degree: 98%
             + [Creare e utilizzare funzioni personalizzate](/help/forms/create-and-use-custom-functions.md)
             + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/rule-editor-core-components.md)
             + [Aggiungere versioni, commenti e annotazioni a un modulo adattivo](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [Confronta Forms adattivo](/help/forms/compare-forms.md)
+            + [Confronta i moduli adattivi](/help/forms/compare-forms.md)
       + Componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)
@@ -939,8 +939,8 @@ ht-degree: 98%
          + [Nozioni di base sull’authoring per headless con AEM](/help/journey-headless/author/basics.md)
          + [Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto](/help/journey-headless/author/references.md)
          + [Scopri come definire metadati e tag per i frammenti di contenuto](/help/journey-headless/author/metadata-tagging.md)
-+ IA generativa {#generative-ai}
-   + [Genera varianti](/help/generative-ai/generate-variations.md)
++ Intelligenza artificiale generativa {#generative-ai}
+   + [Generare varianti](/help/generative-ai/generate-variations.md)
 + Implementazione {#implementing}
    + [Implementazione di applicazioni per AEM as a Cloud Service](/help/implementing/home.md)
    + Utilizzo di Cloud Manager {#using-cloud-manager}

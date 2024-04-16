@@ -129,7 +129,7 @@ Per copiare il contenuto di esempio nella cartella del contenuto e indirizzarvi 
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Per ulteriori informazioni sulla gestione dei file con Microsoft SharePoint, vedere [Come usare Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
+      Per ulteriori informazioni sulla gestione dei file con Microsoft SharePoint, consulta [Come usare Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
    1. Conferma l’aggiornamento del file `fsatb.yaml` dopo aver aggiornato il riferimento e tutto sembra a posto. Se riscontri problemi di build, consulta [Risoluzione dei problemi di build di GitHub](#troubleshooting-github-build-issues).

@@ -95,7 +95,7 @@ Al fine di garantire la comprensione dei concetti headless, questo Percorso per 
 
 Tuttavia, è necessario essere consapevoli delle possibilità ibride aggiuntive disponibili una volta comprese le caratteristiche di AEM headless. Questi casi sono indicati di seguito perché possiate prenderne visione. Al termine del percorso, riceverai informazioni più dettagliate su questi concetti nel caso in cui sia necessaria tale flessibilità per il tuo progetto.
 
-### Hai già un utilizzo esterno di contenuti headless, ad esempio un’applicazione a pagina singola (SPA). {#already-have-a-spa}
+### È possibile già un utilizzo esterno del contenuto headless, ad esempio un’applicazione a pagina singola (SPA). {#already-have-a-spa}
 
 Supponiamo che il requisito di base sia almeno distribuire dei contenuti da AEM a un servizio esterno esistente.
 
