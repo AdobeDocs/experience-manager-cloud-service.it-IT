@@ -4,9 +4,9 @@ description: Queste sono le note sulla versione 2024.4.0 di Cloud Manager in AEM
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: f1d8778f3cfb6868740141d008fd0217839e9103
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '706'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ Questa pagina illustra le note sulla versione 2024.4.0 di Cloud Manager in AEM a
 
 ## Data di pubblicazione {#release-date}
 
-La data di pubblicazione di Cloud Manager versione 2024.4.0 in AEM as a Cloud Service è il 10 aprile 2024. La prossima versione è pianificata per il 9 maggio 2024.
+La data di pubblicazione della versione 2024.4.0 di Cloud Manager in AEM as a Cloud Service è il 10 aprile 2024. La prossima versione è prevista per il 9 maggio 2024.
 
 ## Novità {#what-is-new}
 
-* L’operazione di eliminazione è stata migliorata per [Consegna Edge](/help/edge/overview.md) aggiornando le mappature dei domini dal programma correlato a quel sito.
-   * Se non sono mappati altri siti, il mapping viene eliminato.
-* Il tracciamento della distribuzione è stato migliorato fornendo aggiornamenti dello stato in tempo reale durante la fase critica di avvio di un’istanza AEM.
+* L’operazione di eliminazione è stata migliorata per i siti Web di [Edge Delivery](/help/edge/overview.md) aggiornando le mappature dei domini dal programma correlato a quel sito.
+   * Se non sono mappati altri siti, la mappatura viene eliminata.
+* Il tracciamento dell’implementazione è stato migliorato fornendo aggiornamenti dello stato in tempo reale durante la fase critica di avvio di un’istanza AEM.
    * Questa funzione assicura una completa visibilità sull’avanzamento dell’implementazione, consentendo un migliore processo decisionale ed efficienza operativa.
-* Il [infrastruttura di rete](/help/security/configuring-advanced-networking.md) l’elenco è stato migliorato per visualizzare tutti gli ambienti connessi senza filtri basati su aree geografiche, al fine di fornire una visualizzazione più completa.
-* Messaggi di errore migliorati per i problemi di build del codice consentono di identificare più facilmente le cause principali e i passaggi successivi utilizzabili.
+* L’elenco dell’[infrastruttura di rete](/help/security/configuring-advanced-networking.md) è stato migliorato per visualizzare tutti gli ambienti connessi senza filtri basati su aree geografiche, al fine di fornire una visualizzazione più completa.
+* Messaggi di errore migliorati per i problemi di compilazione del codice consentono di identificare più facilmente le cause principali e i passaggi successivi utilizzabili.
 
 ## Programma per i primi utilizzatori {#early-adoption}
 
@@ -73,4 +73,4 @@ Ti interessa testare la nuova dashboard? Per iniziare, invia un’e-mail a `aem-
 
 ## Correzioni di bug {#bug-fixes}
 
-* È stato corretto un bug a causa del quale Cloud Manager riutilizzava gli artefatti con hash di commit errato.
+* È stato corretto un bug a causa del quale Cloud Manager riutilizzava gli artefatti con hash del commit errato.

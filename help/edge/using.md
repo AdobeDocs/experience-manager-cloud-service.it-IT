@@ -1,21 +1,21 @@
 ---
-title: Uso di Edge Delivery Services con AEM
+title: Utilizzo di Edge Delivery Services con AEM
 description: Scopri come utilizzare AEM as a Cloud Service con Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 source-git-commit: e98ddd8169ffbd407fdd4ff713bda57f693abaf9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '389'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 
-# Uso di Edge Delivery Services con AEM {#using-edge}
+# Utilizzo di Edge Delivery Services con AEM {#using-edge}
 
-I Edge Delivery Services sono scollegati dall’origine del contenuto e possono acquisire il contenuto da diverse origini. Ciò significa che puoi lavorare con più origini di contenuto sullo stesso sito web con una pubblicazione fluida e semplificata, indipendentemente dall’origine scelta.
+Edge Delivery Services è scollegato dall’origine del contenuto, che può acquisire da diverse origini. Ciò significa che puoi lavorare con più origini di contenuto sullo stesso sito web con una pubblicazione fluida e semplificata, indipendentemente dall’origine scelta.
 
-Con i Edge Delivery Services, puoi creare ambienti di sviluppo rapido in cui gli autori possono aggiornare e pubblicare rapidamente i contenuti e in cui è possibile avviare rapidamente nuovi siti. Sono sufficienti un paio di secondi per passare dall&#39;editing alla visualizzazione del contenuto in diretta su Internet.
+Con Edge Delivery Services, puoi creare ambienti di sviluppo rapido in cui gli autori possono aggiornare e pubblicare rapidamente i contenuti e che consentono il lancio rapido di nuovi siti. In un paio di secondi potrai passare dall’editing al contenuto live in Internet.
 
 ![Origini di contenuto per Edge Delivery](assets/content-sources.png)
 
@@ -23,13 +23,13 @@ L’acquisizione da più origini di contenuto offre all’utente la massima fles
 
 In alcuni casi, l’origine di contenuto è predefinita o non è flessibile (ad esempio, il progetto non può utilizzare SharePoint o Google Drive). Ma in molti casi, lo strumento non è preordinato e la scelta dello stesso non è facile.
 
-Il principio guida di Adobe è la semplicità. Iniziare con l&#39;authoring basato su documenti e aggiungere complessità quando necessario. Se è necessario cambiare strumento, l’integrazione di Edge Delivery Services di AEM comprende la migrazione dei contenuti.
+Il principio guida di Adobe è la semplicità. Inizia con l’authoring basato su documenti e aggiungi complessità quando necessario. Se è necessario cambiare strumento, l’integrazione di Edge Delivery Services di AEM comprende la migrazione dei contenuti.
 
 ![Flessibilità dell’origine di contenuto](assets/content-source-flexiblity.png)
 
 ## Authoring {#authoring-edge}
 
-Con Edge Delivery Services, l’authoring è semplice, veloce e flessibile. È possibile scegliere di eseguire l&#39;authoring utilizzando l&#39;authoring basato su documenti o l&#39;authoring basato su AEM utilizzando l&#39;Editor universale.
+Con Edge Delivery Services, l’authoring è semplice, veloce e flessibile. Con l’Editor universale è possibile scegliere di eseguire l’authoring basato su documento o basato su AEM.
 
 Per ulteriori informazioni, consulta il documento [Authoring di contenuti per Edge Delivery Services](/help/edge/aem-authoring/authoring.md).
 
