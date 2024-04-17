@@ -3,9 +3,9 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f3d3bc92eb47bf5008167f660f26dfede2700540
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2321'
 ht-degree: 97%
 
 ---
@@ -97,6 +97,12 @@ AEM Assets si integra in modo nativo con Adobe Express, che dalla sua interfacci
 **Anteprima rappresentazioni per tutti i tipi di video supportati**
 
 Experience Manager Assets ora genera le rappresentazioni in anteprima di tutti i tipi di video supportati per impostazione predefinita senza richiedere una configurazione del profilo di elaborazione.
+
+**Configurazione della condivisione di collegamenti**
+
+Una nuova esperienza utente migliorata per [creare condivisioni di collegamenti](/help/assets/share-assets.md) e un nuovo set di configurazioni consentono agli amministratori di personalizzare il comportamento predefinito di questa funzionalità per gli utenti.
+
+![Configura servizio e-mail](/help/assets/assets/config-email-service.png)
 
 ### Nuove funzioni nella Vista risorse {#assets-view}
 
