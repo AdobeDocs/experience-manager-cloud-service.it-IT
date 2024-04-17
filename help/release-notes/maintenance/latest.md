@@ -2,9 +2,9 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 5e216e45a1400299efcc418007ddbe93f0c571a1
+source-git-commit: 36fefbf74a288d60a9529f0c7273dd6b0557177b
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '424'
 ht-degree: 39%
 
 ---
@@ -45,7 +45,7 @@ Con l’attivazione delle funzioni 2024.4.0 verrà fornito il set di funzioni co
 * GRANITE-49638: Correggi la configurazione errata del tipo di contenuto per la fabbrica di trasformatori RUM.
 * GRANITE-50141: IMSProviderImpl sta inviando spam al registro.
 * SITES-20949: Errore di ComponentsIT.testEmbed dopo l’aggiunta di referrerpolicy=&quot;strict-origin-when-cross-origin&quot; da parte di Youtube.
-* SITES-21233: Aggiornamento dei Componenti core - Correggi il Pannello a soffietto per GS1 US dopo l’aggiornamento a 15860.
+* SITES-21233: Aggiornamento dei Componenti core - Correggi pannello a soffietto dopo l’aggiornamento a 15860.
 * SKYOPS-74819: compatibilità con le versioni precedenti interrotta per le chiavi duplicate in Apache Commons.
 * SKYOPS-67087: in alcuni casi l’aggregazione Clientlib non funziona.
 * CQ-4355415: i collegamenti per le notifiche AEM non funzionano in 6.5 SP18.
