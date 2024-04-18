@@ -3,9 +3,9 @@ title: Note sulla versione di [!DNL Workfront for Experience Manager enhanced co
 description: Note sulla versione di [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: fdac9b4152c61f775769d7ed30be1097db119e2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1660'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Workfront for Experience Manager enhanced connector].
 
-Data di rilascio dell’ultima versione 1.9.19 di [!DNL Workfront for Experience Manager enhanced connector] è il 12 aprile 2024.
+La data di rilascio dell’ultima versione 1.9.19 di [!DNL Workfront for Experience Manager enhanced connector] è il 12 aprile 2024.
 
 ## Caratteristiche principali della versione {#release-highlights}
 
@@ -27,7 +27,7 @@ L’ultima versione di [!DNL Workfront for Experience Manager enhanced connector
 
 >[!IMPORTANT]
 >
->L’Adobe consiglia di: [aggiornamento alla versione più recente del 1.9.19](/help/assets/workfront-connector-install.md) del [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe consiglia di [aggiornare alla versione 1.9.19 più recente](/help/assets/workfront-connector-install.md) di [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemi noti {#known-issues}
 
