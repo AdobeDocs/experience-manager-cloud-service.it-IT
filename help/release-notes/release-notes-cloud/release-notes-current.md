@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
 workflow-type: tm+mt
 source-wordcount: '2321'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 ## Video sulla versione {#release-video}
 
-Dai un’occhiata al video Panoramica sulla versione di marzo 2024 per un riepilogo delle funzioni aggiunte alla versione 2024.3.0:
+Dai un’occhiata al video che mostra una panoramica sulla versione di marzo 2024 per un riepilogo delle funzioni aggiunte alla versione 2024.3.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
@@ -138,14 +138,14 @@ Questi servizi consentono di:
 
   Ora puoi semplificare le interazioni delle funzioni personalizzate:
 
-   * [Utilizzo di nuove annotazioni per fornire definizioni più chiare delle funzioni](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
-   * [Utilizzo di meccanismi di caching per le funzioni personalizzate, per prestazioni del modulo più veloci](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
-   * [Utilizzo semplice di oggetti globali nelle funzioni personalizzate](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
-   * [Definizione e utilizzo di parametri facoltativi nelle funzioni personalizzate](/help/forms/create-and-use-custom-functions.md#parameter).
+   * [Sfruttando le nuove annotazioni per fornire definizioni più chiare delle funzioni](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
+   * [Utilizzando meccanismi di caching per le funzioni personalizzate, per prestazioni dei moduli più veloci](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
+   * [Lavorando in modo semplice con oggetti globali nelle funzioni personalizzate.](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions)
+   * [Definendo e utilizzando parametri facoltativi nelle funzioni personalizzate](/help/forms/create-and-use-custom-functions.md#parameter).
 
   Questo aggiornamento apporta anche i seguenti miglioramenti alla funzionalità dell’editor di regole. Operazioni disponibili:
 
-   * Implementare potenti [&quot;quando-allora-altro&quot;](/help/forms/rule-editor-core-components.md#when) logica per l’esecuzione condizionale.
+   * Implementazione di una potente logica [“when-then-else”](/help/forms/rule-editor-core-components.md#when) per l’esecuzione condizionale.
    * Sfruttamento delle moderne funzioni JavaScript come let e arrow (supporto ES10).
    * Convalida o reimpostazione non solo di campi, ma anche di interi pannelli e moduli, espandendo il controllo sulle interazioni degli utenti.
 
