@@ -2,26 +2,29 @@
 title: Carica opzioni elenco a discesa dall’URL
 description: Le opzioni dell’elenco a discesa sono incluse in un foglio di calcolo distinto e quindi importate nel foglio di calcolo principale tramite l’URL fornito.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
-source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
+source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 2%
+source-wordcount: '442'
+ht-degree: 3%
 
 ---
 
 
 # Carica opzioni elenco a discesa dall’URL
 
-Nei moduli Edge Delivery Services, gli utenti possono selezionare un valore da un insieme predefinito di opzioni. Gli autori dei moduli utilizzano `select` , che fornisce un elenco di scelte.
-Ad esempio, il `enquiry` il modulo include un menu a discesa per selezionare i paesi, che offre agli utenti una serie di paesi predefiniti tra cui scegliere. Puoi vedere che questo elenco comprende un lungo elenco di paesi separati da virgole.
+Forms spesso include menu a discesa che gli utenti possono selezionare tra le opzioni predefinite. Queste opzioni vengono in genere definite all’interno del modulo stesso, ma la gestione di elenchi lunghi può essere complicata. Questa guida illustra come migliorare l’authoring dei moduli caricando le opzioni a discesa da un foglio di calcolo separato tramite un URL.
+
+
+I vantaggi del caricamento di un elenco a discesa da un foglio di calcolo separato sono:
+
+* Gestione semplificata: gestisci le opzioni a discesa in una posizione centralizzata per semplificare gli aggiornamenti e le aggiunte.
+* Maggiore efficienza: elimina la necessità di aggiungere manualmente elenchi di opzioni lunghi all’interno della definizione del modulo.
+
+
+
 
 ![Opzioni a discesa](/help/forms/assets/drop-down-options.png)
 
-La gestione di lunghi elenchi di opzioni per i menu a discesa può risultare complessa quando si aggiungono direttamente tali opzioni nel foglio contenente la definizione del modulo. La creazione di un foglio separato per memorizzare queste opzioni a discesa può semplificare e semplificare il processo. Questo foglio funge da archivio centralizzato per tutte le opzioni a discesa, organizzate in un formato strutturato. Ogni opzione è elencata nella propria riga, facilitando la gestione e gli aggiornamenti.
-
-Esaminiamo come migliorare il processo di authoring dei moduli caricando l’elenco delle opzioni da un altro foglio di calcolo tramite un URL.
 
 Alla fine di questo articolo imparerai a:
 
@@ -30,24 +33,26 @@ Alla fine di questo articolo imparerai a:
 
 ## Definire le opzioni in un foglio separato {#define-options}
 
-Creare un foglio con due colonne:`Option` e `Value`, per definire le opzioni:
+Definizione delle opzioni in un foglio di calcolo separato
 
-1. Vai alla cartella dei progetti AEM in Microsoft® SharePoint o Google Drive.
-2. Aggiungi un foglio denominato `shared-country` nel sito Microsoft® SharePoint o nella cartella Google Drive e aggiungi quanto segue:
-
-   * **Opzione**: rappresenta i valori di visualizzazione delle opzioni nel menu a discesa.
-   * **Valore**: rappresenta il valore inviato quando un utente seleziona l’opzione.
+1. Creare un foglio di calcolo:
+   1. Individuare la cartella dei progetti AEM in Microsoft® SharePoint o Google Drive.
+   1. Aggiungi un nuovo foglio. Ad esempio, &quot;shared-country&quot;.
+1. Definisci colonne opzione: aggiungi due colonne: &quot;Opzione&quot; e &quot;Valore&quot;.
+   * &quot;Option&quot; definisce il testo visualizzato nel menu a discesa.
+   * &quot;Value&quot; definisce il valore inviato quando un utente seleziona l’opzione.
 
    >[!NOTE]
    >
-   > Se il valore e l’opzione di un elenco a discesa sono uguali, il foglio di calcolo può contenere solo **Opzione** colonna.
+   >Se sia l&#39;opzione che il valore sono identici, è necessaria solo la colonna &quot;Opzione&quot;.
 
-   Aggiungiamo un nuovo foglio, [paese condiviso](/help/forms/assets/enquiry-options.xlsx) per le opzioni visualizzate nella `Destination` elenco a discesa nella `enquiry` modulo.
+1. Compilare il foglio di calcolo: immettere le opzioni relative al paese nella colonna &quot;Opzione&quot; (e nella colonna &quot;Valore&quot;, se necessario).
 
-   Fai riferimento all’illustrazione seguente, che illustra `shared-country` foglio di calcolo:
+   Per la struttura, consulta l’esempio seguente.
 
    ![Elenco a discesa per paese](/help/forms/assets/drop-down-country-options.png)
-3. Visualizzare in anteprima e pubblicare `shared-country` foglio utilizzo [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+
+1. Visualizzare in anteprima e pubblicare `shared-country` foglio utilizzo [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
    Fai riferimento all’URL che mostra `shared-country` foglio: https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
 
