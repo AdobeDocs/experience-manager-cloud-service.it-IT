@@ -2,9 +2,9 @@
 title: Modifica video
 description: Modifica video tramite [!DNL Adobe Express] opzioni avanzate e salva i video aggiornati come versioni.
 role: User
-source-git-commit: dd67ce6fd8d0626db5518a39dd5ed472ddfeff93
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '753'
 ht-degree: 19%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 19%
 La trasformazione di un video in una dimensione perfetta è facile utilizzando embedded [!DNL Adobe Express] azioni rapide. Azioni rapide in [!DNL Assets Essentials] con tecnologia [!DNL Adobe Express] offre opzioni di editing video intuitive, tra cui ritaglia video, ridimensiona video, ritaglia video e converti video in GIF.
 
 Dopo aver modificato un video, puoi salvarlo come nuova versione. Se necessario, il controllo delle versioni consente di ripristinare la risorsa originale in un secondo momento. Per modificare un video, accedi ai relativi dettagli e fai clic su **[!UICONTROL Modifica video]**. In alternativa, seleziona la risorsa e fai clic su Dettagli, quindi fai clic su ![forbici](assets/do-not-localize/cut.svg) disponibile nel riquadro a destra.
-
-Ulteriori informazioni su [interfaccia di anteprima](navigate-assets-view.md).
 
 ## Prerequisiti {#prerequisites}
 

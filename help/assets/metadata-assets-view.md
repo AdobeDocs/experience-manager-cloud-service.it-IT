@@ -4,10 +4,10 @@ description: Scopri come gestire i metadati nella vista Risorse. Una migliore ge
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: 9823bd8af9fce93c8f21495f720673d8b41595ed
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
 source-wordcount: '1783'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
