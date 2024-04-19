@@ -2,10 +2,10 @@
 title: Frammenti esperienza
 description: Utilizza Frammenti esperienza di Adobe Experience Manager as a Cloud Service per rendere le tue esperienze riutilizzabili e flessibili.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
+source-git-commit: e9b9ab2dfd5e1a5b204cbec70ec0a46ebb46f9e9
 workflow-type: tm+mt
-source-wordcount: '2083'
-ht-degree: 94%
+source-wordcount: '2098'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ In Adobe Experience Manager as a Cloud Service, un frammento esperienza:
 Un frammento di esperienza:
 
 * è parte di un’esperienza (pagina).
-* Può essere utilizzato su più pagine.
+* Può essere utilizzato su più pagine (basate su modelli modificabili).
 * Si basa su un modello (solo modificabile) che ne definisce struttura e componenti.
 * Questo modello viene utilizzato per creare la *pagina root* del frammento di esperienza.
 * È costituito da uno o più componenti, con layout, in un sistema paragrafo.
@@ -262,6 +262,10 @@ Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
 Ora puoi utilizzare il frammento di esperienza durante l’authoring delle pagine:
 
 1. Apri la pagina da modificare.
+
+   >[!NOTE]
+   >
+   >La pagina deve essere basata su un modello modificabile.
 
 1. Crea un’istanza del componente Frammento esperienza, all’interno del sistema di paragrafi della pagina:
 
