@@ -3,9 +3,9 @@ title: Come possiamo creare e utilizzare i temi in Adaptive Forms?
 description: Puoi utilizzare i temi per assegnare uno stile e fornire un’identità visiva a un modulo adattivo utilizzando i componenti core. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2754'
 ht-degree: 3%
 
 ---
@@ -128,7 +128,7 @@ Per clonare un tema, attenersi alle istruzioni riportate di seguito.
 1. Esegui il comando seguente:
 
    ```
-         code .
+      code .
    ```
 
    ![Aprire la cartella dei temi in un editor di testo normale](/help/forms/assets/aem-forms-theme-folder-in-vs-code.png)
@@ -137,14 +137,31 @@ Per clonare un tema, attenersi alle istruzioni riportate di seguito.
 
 1. Apri `package.json` file per la modifica.
 
-1. Imposta i valori per `name` e `description` attributi.
+1. Imposta i valori per `name` e `version` attributi.
 
-   L’attributo name viene utilizzato per identificare in modo univoco il tema, ad esempio &quot;aem-forms-wknd-theme&quot; e visualizzato in **Stile** scheda di **Creazione guidata modulo**. L&#39;attributo description fornisce ulteriori dettagli sul tema, inclusi lo scopo e gli scenari per cui è progettato. È inoltre possibile specificare la versione, la descrizione e la licenza per il tema.
+   ![Immagine di modifica nome tema area di lavoro](/help/forms/assets/changename_canvastheme.png)
 
-1. Salva e chiudi il file.
+   >[!NOTE]
+   >
+   > * L’attributo name viene utilizzato per identificare in modo univoco il tema e il nome specificato viene visualizzato nel **Stile** scheda di **Creazione guidata modulo**.
+   > * È possibile selezionare un nome per il tema in base alla scelta, ad esempio `mytheme` o `customtheme`. Tuttavia, per questo caso, abbiamo specificato il nome come `aem-forms-wknd-theme`.
 
-![Immagine di modifica nome tema area di lavoro](/help/forms/assets/changename_canvastheme.png)
+1. Apri `package-lock.json` file per la modifica.
+1. Imposta i valori per `name` e `version` attributi. Assicurati che i valori per `name` e `version` attributi in `Package-lock`i file .json corrispondono a quelli `Package.json` file.
 
+   ![Immagine di modifica nome tema area di lavoro](/help/forms/assets/changename_canvastheme-package-lock.png)
+
+1. (Facoltativo) Apri il `ReadMe` per la modifica e l&#39;aggiornamento del nome del tema.
+
+   ![Immagine di modifica nome tema area di lavoro](/help/forms/assets/changename_canvastheme-readme-file.png)
+
+1. Salvare e chiudere i file.
+
+**Considerazioni durante l’impostazione del nome del tema**
+
+* È obbligatorio rimuovere `@aemforms` dal nome del tema in `Package.json` file e `Package-lock.json` file. Nel caso in cui non si riesca a rimuovere `@aemforms` dal nome del tema personalizzato, si verifica un errore della pipeline front-end durante la distribuzione del tema.
+* Si consiglia di aggiornare il tema `version` in `Package.json` file e `Package-lock.json` per riflettere con precisione le modifiche e i miglioramenti apportati nel tempo al tema.
+* Per informazioni importanti sull’utilizzo, sulle istruzioni di installazione e su altri dettagli rilevanti, si consiglia di aggiornare il nome del tema in `ReadMe` file.
 
 #### 3. Personalizzare un tema {#customize-the-theme}
 
