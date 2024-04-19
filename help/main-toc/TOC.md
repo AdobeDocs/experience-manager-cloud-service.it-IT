@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
+source-git-commit: f2a3dd21edc2a3b3f4689c1c09184b3cd4268af1
 workflow-type: tm+mt
-source-wordcount: '4881'
+source-wordcount: '4885'
 ht-degree: 98%
 
 ---
@@ -560,6 +560,7 @@ ht-degree: 98%
       + [Cercare e individuare le risorse](/help/assets/search-assets-view.md)
       + [Attività di gestione risorse](/help/assets/manage-organize-assets-view.md)
       + [Modificare le immagini](/help/assets/edit-images-assets-view.md)
+      + [Visualizzare e gestire le rappresentazioni](/help/assets/renditions.md)
       + [Gestire i metadati delle risorse](/help/assets/metadata-assets-view.md)
       + [Condividere le risorse](/help/assets/share-links-for-assets-view.md)
       + [Gestire le raccolte](/help/assets/manage-collections-assets-view.md)
@@ -797,7 +798,7 @@ ht-degree: 98%
    + [Domande frequenti](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
    + [Panoramica di Edge Delivery Services](/help/edge/overview.md)
-   + [Uso di Edge Delivery Services con AEM](/help/edge/using.md)
+   + [Utilizzo di Edge Delivery Services con AEM](/help/edge/using.md)
    + Authoring basato su AEM {#aem-authoring}
       + [Authoring dei contenuti per Edge Delivery](/help/edge/aem-authoring/authoring.md)
       + [Pubblicazione di contenuti per Edge Delivery](/help/edge/aem-authoring/publishing.md)
