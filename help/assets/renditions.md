@@ -1,7 +1,8 @@
 ---
 title: Visualizzare e gestire le rappresentazioni in Experience Manager Assets
 description: Scopri come AEM Assets e Dynamic Medie semplificano la gestione efficace delle immagini con rappresentazioni statiche e dinamiche.
-source-git-commit: 5c1e2d5388b94243f668f07b1f338f035f00de85
+exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
+source-git-commit: 4627eb00ba910d1ad2920db15a87761bd7e4a0c0
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%
@@ -13,7 +14,8 @@ ht-degree: 0%
 Le rappresentazioni in Adobe Experience Manager (AEM) sono versioni personalizzate di risorse digitali, come le immagini, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. L’AEM facilita la creazione e la gestione di queste rappresentazioni, migliorando l’esperienza degli utenti. Puoi creare miniature, ottimizzare immagini per il web o per dispositivi mobili, aggiungere filigrane, visualizzare e scaricare rappresentazioni dinamiche o di ritaglio avanzato e fare molto di più.
 
 I predefiniti per le immagini Dynamic Medie e le rappresentazioni Smart Crop promuovono una gestione sistematica delle immagini in linea con gli standard del marchio, massimizzando la coesione del marchio. Questo semplifica il processo di individuazione e utilizzo rapido delle rappresentazioni dinamiche delle immagini in base alle esigenze, senza alcun accesso da parte dell’amministratore.
-<br>Le rappresentazioni sono classificate come statiche e dinamiche e ogni tipo presenta caratteristiche e funzionalità univoche che vengono discusse più dettagliatamente.
+
+Le rappresentazioni sono classificate come statiche e dinamiche e ogni tipo presenta caratteristiche e funzionalità univoche che vengono discusse più dettagliatamente.
 
 ## Rappresentazioni statiche {#static-renditions}
 
