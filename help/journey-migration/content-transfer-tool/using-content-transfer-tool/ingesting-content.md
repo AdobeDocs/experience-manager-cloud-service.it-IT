@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
 source-wordcount: '2876'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -69,8 +69,8 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_estimate"
->title="Stima durata acquisizione"
->abstract="È possibile visualizzare la durata approssimativa di una particolare acquisizione per fornire un’idea generale del tempo necessario. Esistono dei limiti alla sua accuratezza."
+>title="Stima della durata di acquisizione"
+>abstract="È possibile visualizzare la durata approssimativa di una particolare acquisizione per fornire un’idea generale del tempo necessario. Esistono dei limiti alla sua precisione."
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
