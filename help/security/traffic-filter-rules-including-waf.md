@@ -2,10 +2,10 @@
 title: Regole del filtro del traffico, incluse le regole WAF
 description: Configurazione delle regole del filtro del traffico, incluse le regole WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 3a79de1cccdec1de4902b234dac3120efefdbce8
-workflow-type: ht
-source-wordcount: '3669'
-ht-degree: 100%
+source-git-commit: d210fed56667b307a7a816fcc4e52781dc3a792d
+workflow-type: tm+mt
+source-wordcount: '3788'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Una sottocategoria delle regole del filtro del traffico richiede una licenza di 
 
 Le regole del filtro del traffico possono essere distribuite ai tipi di ambiente di sviluppo, di staging e di produzione nei programmi di produzione (non sandbox) tramite le pipeline di configurazione di Cloud Manager. Il supporto per gli RDE sarà disponibile in futuro.
 
-[Segui con un tutorial](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) per sviluppare rapidamente competenze concrete su questa funzione.
+[Segui con un tutorial](#tutorial) per sviluppare rapidamente competenze concrete su questa funzione.
 
 >[!NOTE]
 >Ti interessano altre opzioni per configurare il traffico sulla rete CDN, tra cui la modifica della richiesta/risposta, la dichiarazione dei reindirizzamenti e il proxy a un’origine non AEM? [Scopri come e provalo](/help/implementing/dispatcher/cdn-configuring-traffic.md) iscrivendoti al programma per i primi utilizzatori.
@@ -416,6 +416,8 @@ Le regole del limite di tasso non possono fare riferimento ai contrassegni WAF. 
 
 I limiti di tasso vengono calcolati per POP CDN. Ad esempio, supponiamo che i POP a Montreal, Miami e Dublino registrino percentuali di traffico rispettivamente di 80, 90 e 120 richieste al secondo e che la regola del limite di frequenza sia impostata su un limite di 100. In tal caso, solo il traffico verso Dublino sarebbe limitato.
 
+I limiti di frequenza vengono valutati in base al traffico che colpisce il server Edge di, al traffico che colpisce il server Edge di oppure al numero di errori.
+
 ### Struttura rateLimit {#ratelimit-structure}
 
 | **Proprietà** | **Tipo** | **Predefinito** | **SIGNIFICATO** |
@@ -423,6 +425,7 @@ I limiti di tasso vengono calcolati per POP CDN. Ad esempio, supponiamo che i PO
 | limite | numero intero da 10 a 10000 | obbligatorio | Frequenza di richiesta (per POP CDN) nelle richieste al secondo per le quali viene attivata la regola. |
 | finestra | numero intero: 1, 10 o 60 | 10 | Finestra di campionamento in secondi per la quale viene calcolato il tasso di richiesta. La precisione dei contatori dipende dalle dimensioni della finestra (maggiore finestra, maggiore precisione). Ad esempio, ci si può aspettare una precisione del 50% per la finestra di 1 secondo e del 90% per la finestra di 60 secondi. |
 | penalità | numero intero compreso tra 60 e 3600 | 300 (5 minuti) | Un periodo in secondi per il quale le richieste corrispondenti vengono bloccate (arrotondato al minuto più vicino). |
+| n.  | all, fetch, error | tutti | valuta in base al traffico Edge (all), al traffico di origine (fetch) o al numero di errori. |
 | groupBy | array[Getter] | nessuno | il contatore del limitatore di frequenza verrà aggregato da un set di proprietà di richiesta (ad esempio clientIp). |
 
 
@@ -448,6 +451,7 @@ data:
         limit: 60
         window: 10
         penalty: 300
+        count: all
         groupBy:
           - reqProperty: clientIp
       action: block
@@ -469,7 +473,7 @@ data:
         when: { reqProperty: path, equals: /critical/resource }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60 }
+        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
 ```
 
 ## Avvisi delle regole del filtro del traffico {#traffic-filter-rules-alerts}
@@ -616,7 +620,7 @@ Adobe fornisce un meccanismo per scaricare gli strumenti della dashboard sul com
 
 Gli strumenti della dashboard possono essere clonati direttamente dall’archivio Github [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool).
 
-[Guarda il tutorial](#tutorial) per istruzioni pratiche su come utilizzare gli strumenti della dashboard.
+[Tutorials](#tutorial) sono disponibili per istruzioni concrete su come utilizzare gli strumenti del dashboard.
 
 ## Regole iniziali consigliate {#recommended-starter-rules}
 
@@ -701,9 +705,13 @@ data:
           - CMDEXE
 ```
 
-## Tutorial {#tutorial}
+## Esercitazioni {#tutorial}
 
-[Esercitati con un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=it) per acquisire conoscenze pratiche ed esperienza sulle regole per filtrare il traffico.
+Sono disponibili due esercitazioni.
+
+### Protezione dei siti Web con regole per il filtro del traffico (incluse le regole WAF)
+
+[Esercitazione](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=it) acquisire conoscenze ed esperienze generali e pratiche sulle regole del filtro del traffico, comprese le regole WAF.
 
 Il tutorial illustra:
 
@@ -712,3 +720,16 @@ Il tutorial illustra:
 * Dichiarazione delle regole per filtrare il traffico, incluse le regole WAF
 * Analisi dei risultati con gli strumenti della dashboard
 * Best practice
+
+### Blocco degli attacchi DoS e DDoS tramite le regole del filtro del traffico
+
+[Approfondimento su come bloccare](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Attacchi Denial of Service (DoS) e Distributed Denial of Service (DDoS) che utilizzano le regole del filtro del traffico del limite di velocità e altre strategie.
+
+Il tutorial illustra:
+
+* informazioni sulla protezione
+* ricezione di avvisi in caso di superamento dei limiti di tariffa
+* analisi dei pattern di traffico tramite strumenti del dashboard per configurare le soglie per le regole del filtro del traffico del limite di velocità
+
+
+
