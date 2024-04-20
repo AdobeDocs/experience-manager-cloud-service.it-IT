@@ -2,18 +2,19 @@
 title: Modifica video
 description: Modifica video tramite [!DNL Adobe Express] opzioni avanzate e salva i video aggiornati come versioni.
 role: User
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
+source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 19%
+source-wordcount: '779'
+ht-degree: 16%
 
 ---
 
 # Modifica video in [!DNL Assets Essentials] {#edit-videos}
 
-La trasformazione di un video in una dimensione perfetta è facile utilizzando embedded [!DNL Adobe Express] azioni rapide. Azioni rapide in [!DNL Assets Essentials] con tecnologia [!DNL Adobe Express] offre opzioni di editing video intuitive, tra cui ritaglia video, ridimensiona video, ritaglia video e converti video in GIF.
+La creazione di varianti di contenuto video è semplice per gli utenti di Assets con l’ [!DNL Adobe Express] azioni rapide per il video. Azioni rapide in [!DNL Assets Essentials] con tecnologia [!DNL Adobe Express] offre opzioni di editing video intuitive, tra cui ritaglia video, ridimensiona video, ritaglia video e converti video in GIF.
 
-Dopo aver modificato un video, puoi salvarlo come nuova versione. Se necessario, il controllo delle versioni consente di ripristinare la risorsa originale in un secondo momento. Per modificare un video, accedi ai relativi dettagli e fai clic su **[!UICONTROL Modifica video]**. In alternativa, seleziona la risorsa e fai clic su Dettagli, quindi fai clic su ![forbici](assets/do-not-localize/cut.svg) disponibile nel riquadro a destra.
+Per modificare un video, accedi ai relativi dettagli e fai clic su [!UICONTROL Modifica video]. In alternativa, seleziona la risorsa e fai clic su Dettagli, quindi fai clic su ![forbici](assets/do-not-localize/cut.svg) disponibile nel riquadro a destra. Dopo aver modificato un video, puoi salvarlo come nuova versione o come nuova risorsa.
 
 ## Prerequisiti {#prerequisites}
 
@@ -38,7 +39,7 @@ La trasformazione di un video in una dimensione e un orientamento perfetti è fa
 
 ### Ridimensiona video {#resize-video-using-express}
 
-Spesso è necessario ridimensionare un video a una dimensione specifica. [!DNL Assets Essentials] consente di ridimensionare rapidamente i video per adattarli alle dimensioni comuni, fornendo nuove risoluzioni precalcolate per dimensioni specifiche. Per ridimensionare il video utilizzando [!DNL Assets Essentials], effettua le seguenti operazioni:
+Il contenuto video finale in DAM deve spesso essere ridimensionato per la distribuzione a canali specifici. [!DNL Assets Essentials] consente di ridimensionare facilmente i video per adattarli alle dimensioni richieste dai canali social più diffusi e di adattarli alle risoluzioni personalizzate. Per ridimensionare il video utilizzando [!DNL Assets Essentials], esegui i passaggi seguenti:
 
 1. Seleziona un video e fai clic su **[!UICONTROL Modifica]**.
 2. Clic **[!UICONTROL Ridimensiona video]** dalle azioni rapide disponibili nel riquadro a sinistra.
@@ -52,7 +53,7 @@ Il video ridimensionato è disponibile per il download. Puoi salvare la risorsa 
 
 ### Ritaglia video {#trim-video-using-express}
 
-Un trimmer video rapido in [!DNL Assets Essentials] con tecnologia [!DNL Adobe Express] consente di ritagliare il video senza sforzo. Effettua le seguenti operazioni:
+Se è necessario utilizzare un clip di un video più grande, è possibile utilizzare **[!UICONTROL Ritaglia video]** per selezionare e tagliare una sezione del video. Effettua le seguenti operazioni:
 
 1. Seleziona un video e fai clic su **[!UICONTROL Modifica]**.
 2. Clic **[!UICONTROL Ritaglia video]** dalle azioni rapide disponibili nel riquadro a sinistra.
@@ -80,13 +81,13 @@ Il video è disponibile in formato GIF per il download. Puoi salvare la risorsa 
 
 ## Limitazioni {#limitations-video-adobe-express}
 
-* È supportato solo il tipo video MP4.
+* Per la modifica sono supportati solo i video in formato MP4.
 
-* Dimensione massima file supportata: 200 MB
+* La dimensione massima supportata per il file di origine è 200 MB.
 
-* Le dimensioni minima e massima del video sono rispettivamente di 46 e 3840 pixel.
+* I video supportati sono più grandi di 46 pixel e più piccoli di 3840 pixel su qualsiasi lato.
 
-* I browser web supportati sono Google Chrome, Firefox, Safari ed Edge.
+* I browser Web supportati sono Google Chrome, Firefox, Safari ed Edge.
 
 * Non è possibile aprire la funzionalità in modalità di navigazione in incognito in un browser web.
 
