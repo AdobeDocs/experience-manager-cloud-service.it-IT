@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 5e7a1ec21cc99963e95e4b0655055b8f38703101
 workflow-type: tm+mt
 source-wordcount: '4893'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -174,8 +174,8 @@ ht-degree: 98%
          + [Note sulla versione 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Note sulla versione del connettore avanzato Workfront per Experience Manager{#workfront}
       + [Note aggiornate sulla versione del connettore avanzato Workfront per Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
-   + Note sulla versione per Genera varianti {#generate-variations}
-      + [Note sulla versione corrente per Genera varianti](/help/generative-ai/release-notes-generate-variations.md)
+   + Note sulla versione per generare varianti {#generate-variations}
+      + [Note sulla versione corrente per generare varianti](/help/generative-ai/release-notes-generate-variations.md)
    + [Novità](/help/release-notes/what-is-new.md)
    + [Modifiche di rilievo in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md)
@@ -835,7 +835,7 @@ ht-degree: 98%
       + [Configurazione di Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Configurazione di Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Reindirizzamenti](/help/edge/docs/redirects.md)
-   + Creazione di Forms {#build-forms}
+   + Creazione di moduli {#build-forms}
       + [Panoramica](/help/edge/docs/forms/overview.md)
       + Introduzione {#getting-started-eds-forms}
          + [Guida introduttiva](/help/edge/docs/forms/tutorial.md)
@@ -843,7 +843,7 @@ ht-degree: 98%
          + [Impostare i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati](/help/edge/docs/forms/submit-forms.md)
          + [Pubblicare il modulo e iniziare a raccogliere i dati](/help/edge/docs/forms/publish-forms.md)
          + [Aggiungere convalide ai campi del modulo](/help/edge/docs/forms/validate-forms.md)
-         + [Caricare opzioni dall’URL a un modulo](/help/edge/docs/forms/load-options-from-url.md)
+         + [Caricare le opzioni dall’URL a un modulo](/help/edge/docs/forms/load-options-from-url.md)
          + [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
          + [Utilizzare le regole per aggiungere un comportamento dinamico a un modulo](/help/edge/docs/forms/rules-forms.md)
          + [Mostrare un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
@@ -856,7 +856,7 @@ ht-degree: 98%
          + [Monitoraggio degli utenti in tempo reale per i moduli](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + Riferimenti {#forms-references}
          + [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
-   + Risorse di consegna Edge {#resources}
+   + Risorse di Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utilizzo di Sidekick](/help/edge/docs/sidekick.md)
          + [Installazione dell’estensione](/help/edge/docs/sidekick-extension.md)
@@ -885,7 +885,7 @@ ht-degree: 98%
       + [Panoramica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=it)
       + [Modelli per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=it)
       + [Gestione dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=it)
-      + Authoring {#authoring}
+      + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
