@@ -3,9 +3,9 @@ title: Creazione di blocchi dotati di strumenti per l’utilizzo con l’editor 
 description: Scopri come creare blocchi dotati di strumenti per l’utilizzo con l’editor universale nell’authoring AEM con progetti di Edge Delivery Services.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1297'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -236,7 +236,7 @@ Ora che disponi di un blocco della citazione di lavoro puoi applicare ad esso lo
 
    ![Blocco delle citazioni pubblicato e formattato](assets/create-block/quote-styled-published.png)
 
-Congratulazioni. Ora disponi di un blocco delle citazioni completamente funzionante e formattato. Puoi utilizzare questo esempio come base per progettare blocchi specifici per il progetto.
+Congratulazioni Ora disponi di un blocco delle citazioni completamente funzionante e formattato. Puoi utilizzare questo esempio come base per progettare blocchi specifici per il progetto.
 
 ## Utilizzo di altri rami di lavoro {#other-branches}
 
@@ -250,9 +250,9 @@ La pubblicazione di contenuti con un nuovo modello è supportata solo quando il 
 
 Ora che sai come creare i blocchi, è fondamentale comprendere come modellare i contenuti in modo semantico per ottenere un’esperienza di sviluppo più snella.
 
-Consulta il documento [Modellazione dei contenuti per la creazione di AEM con progetti Edge Delivery Services](/help/edge/aem-authoring/content-modeling.md) per scoprire come funziona la modellazione dei contenuti per l’authoring AEM con i progetti Edge Delivery Services.
+Consulta il documento [Modellazione dei contenuti per l’authoring in AEM con progetti Edge Delivery Services](/help/edge/aem-authoring/content-modeling.md) per scoprire come funziona la modellazione dei contenuti per l’authoring AEM con i progetti Edge Delivery Services.
 
 >[!TIP]
 >
->Per una procedura dettagliata sulla creazione di un nuovo progetto Edge Delivery Services abilitato per la creazione di AEM con AEM as a Cloud Service come origine di contenuto, visualizzare [questo webinar AEM GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Per una procedura dettagliata sulla creazione di un nuovo progetto Edge Delivery Services abilitato per l’authoring AEM con AEM as a Cloud Service come origine di contenuto, visualizza [questo webinar AEM GEMs.](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

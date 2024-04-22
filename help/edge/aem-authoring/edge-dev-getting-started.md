@@ -1,19 +1,19 @@
 ---
 title: Guida introduttiva per sviluppatori per l’authoring di AEM con Edge Delivery Services
-description: Questa guida ti aiuterà a essere subito operativo con un nuovo sito Adobe Experience Manager utilizzando Edge Delivery Services e l’Editor universale per l’authoring dei contenuti.
+description: Questa guida consente di essere subito operativo con un nuovo sito di Adobe Experience Manager utilizzando Edge Delivery Services e l’editor universale per la creazione di contenuti.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1296'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # Guida introduttiva per sviluppatori per l’authoring di AEM con Edge Delivery Services {#edge-dev-getting-started}
 
-Questa guida ti aiuterà a essere subito operativo con un nuovo sito Adobe Experience Manager utilizzando Edge Delivery Services e l’Editor universale per l’authoring dei contenuti.
+Questa guida consente di essere subito operativo con un nuovo sito di Adobe Experience Manager utilizzando Edge Delivery Services e l’editor universale per la creazione di contenuti.
 
 ## Prerequisiti {#prerequisites}
 
@@ -30,9 +30,9 @@ AEM offre due diversi editor di contenuti; la possibilità di scegliere quale ut
 * **Editor universale**: questa dovrebbe essere la scelta predefinita per i nuovi siti.
 * **Editor pagina AEM**: deve essere scelto per una migrazione AEM Sites esistente verso Edge Delivery Services.
 
-Questa guida è incentrata sui Progetti AEM di Edge Delivery Services che utilizzano l’Editor universale. Consulta il documento [Uso di Edge Delivery Services con AEM](/help/edge/using.md) per maggiori dettagli sulla scelta dell’editor giusto e sulla migrazione dei siti AEM esistenti verso i Edge Delivery Services.
+Questa guida è incentrata sui Progetti AEM di Edge Delivery Services che utilizzano l’Editor universale. Per ulteriori dettagli sulla scelta dell’editor giusto e la migrazione di AEM Sites esistenti verso Edge Delivery Services, consulta il documento [Utilizzo di Edge Delivery Services con AEM](/help/edge/using.md).
 
-## Concetti di base durante lo sviluppo per i Edge Delivery Services {#core-concepts}
+## Concetti fondamentali durante lo sviluppo di Edge Delivery Services {#core-concepts}
 
 Edge Delivery Services si basa sul concetto di blocchi. AEM viene fornito con una libreria completa di blocchi predefiniti che possono essere estesi per soddisfare le esigenze del progetto. Il codice per i progetti di Edge Delivery Services viene gestito in GitHub.
 
@@ -111,7 +111,7 @@ Prima devi creare un nuovo progetto su GitHub, basato sul modello di Adobe.
 
    ![paths.json](assets/edge-dev-getting-started/paths.png)
 
-1. La mappatura predefinita utilizza il nome dell’archivio. Aggiorna la mappatura predefinita come richiesto per il progetto con `/content/<site-name>/:/` e fai clic su **Commit modifiche...**.
+1. La mappatura predefinita utilizzerà il nome dell’archivio. Aggiorna la mappatura predefinita come richiesto per il progetto con `/content/<site-name>/:/` e fai clic su **Conferma modifiche...**.
 
    * Fornisci il tuo `<site-name>`. Ne avrai bisogno in un passaggio successivo.
    * Le mappature spiegano a Edge Delivery Services come mappare il contenuto nell’archivio AEM all’URL del sito.
@@ -130,7 +130,7 @@ Ora che disponi di un progetto GitHub, crea un nuovo sito AEM utilizzabile dal p
 >
 >Per modificare il sito con l’Editor universale, è necessario utilizzare un browser basato su Chromium.
 
-1. Scarica l’ultimo modello del sito AEM Authoring con Edge Delivery Services da GitHub all’indirizzo [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. Scarica il modello del sito più recente di authoring di AEM con Edge Delivery Services da GitHub all’indirizzo [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
 1. Accedi all’istanza di authoring AEM as a Cloud Service, passa alla console Sites e tocca o fai clic su **Crea** -> **Sito da modello**.
 
@@ -140,9 +140,9 @@ Ora che disponi di un progetto GitHub, crea un nuovo sito AEM utilizzabile dal p
 
    ![Importazione di modelli](assets/edge-dev-getting-started/site-templates.png)
 
-1. Carica il modello di sito per l’authoring di AEM con Edge Delivery Services scaricato da GitHub.
+1. Carica il modello del sito di authoring di AEM con Edge Delivery Services che hai scaricato da GitHub.
 
-   * Il modello deve essere caricato una sola volta. Una volta caricato, può essere riutilizzato per creare altri siti.
+   * Il modello deve essere caricato una sola volta. Una volta caricato, può essere riutilizzato per creare ulteriori siti.
 
 1. Dopo aver creato il modello, verrà visualizzato nella procedura guidata. Tocca o fai clic per selezionarlo, quindi tocca o fai clic su **Avanti**.
 
@@ -192,11 +192,11 @@ Una volta terminata la modifica del nuovo sito tramite l’Editor universale, pu
 
 ## Passaggi successivi {#next-steps}
 
-Ora che hai un progetto di creazione AEM funzionante con Edge Delivery Services, puoi iniziare a creare e formattare i blocchi.
+Ora che hai un progetto AEM funzionante con Edge Delivery Services, puoi iniziare a creare e formattare i blocchi.
 
 Per ulteriori informazioni, consulta la guida [Creazione di blocchi preparati per l’utilizzo con l’editor universale](/help/edge/aem-authoring/create-block.md).
 
 >[!TIP]
 >
->Per una procedura dettagliata sulla creazione di un nuovo progetto Edge Delivery Services abilitato per la creazione di AEM con AEM as a Cloud Service come origine di contenuto, visualizzare [questo webinar AEM GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Per una guida completa sulla creazione di un nuovo progetto Edge Delivery Services abilitato per l’authoring di AEM con AEM as a Cloud Service come origine di contenuto, visualizza [questo webinar su AEM GEMs.](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

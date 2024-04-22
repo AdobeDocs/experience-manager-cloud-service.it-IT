@@ -3,9 +3,9 @@ title: Modellazione dei contenuti per l’authoring di AEM con progetti Edge Del
 description: Scopri come funziona la modellazione dei contenuti per l’authoring di AEM con progetti Edge Delivery Services e come modellare i tuoi contenuti.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2233'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -627,7 +627,7 @@ Molte delle proprietà di pagina predefinite disponibili in AEM sono mappate ai 
 
 * `cq:lastModified` come `modified-time` in formato ISO8601
 * Ora dell’ultima pubblicazione del documento come `published-time` in formato ISO8601
-* `cq:tags` as `cq-tags` come elenco separato da virgole degli ID tag.
+* `cq:tags` come `cq-tags` come elenco separato da virgole degli ID dei tag.
 
 È possibile inoltre definire un modello di componente per i metadati della pagina personalizzati, che verrà reso disponibile all’autore come scheda della finestra di dialogo delle proprietà della pagina di AEM Sites.
 
@@ -650,11 +650,11 @@ Per farlo, crea un modello di componente con l’ID dei `page-metadata`.
 
 Ora che sai come modellare i contenuti, con il progetto di authoring AEM puoi creare blocchi per i tuoi Edge Delivery Services.
 
-Consulta il documento [Creazione di blocchi instrumentati per l’utilizzo con l’editor universale](/help/edge/aem-authoring/create-block.md) per scoprire come creare blocchi instrumentati per l’utilizzo con Universal Editor nell’authoring AEM con progetti Edge Delivery Services.
+Consulta il documento [Creazione di blocchi abilitati all’utilizzo con l’editor universale](/help/edge/aem-authoring/create-block.md) per scoprire come creare blocchi abilitati all’utilizzo con l’editor universale nell’authoring di AEM con progetti Edge Delivery Services.
 
-Se hai già familiarità con la creazione di blocchi, consulta il documento [Guida introduttiva per gli sviluppatori per l’authoring di AEM con Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) per iniziare a utilizzare un nuovo sito Adobe Experience Manager con Edge Delivery Services e Universal Editor per l’authoring dei contenuti.
+Se hai già familiarità con la creazione di blocchi, consulta il documento [Guida introduttiva per gli sviluppatori per l’authoring di AEM con Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) per iniziare a utilizzare un nuovo sito Adobe Experience Manager con Edge Delivery Services e l’editor universale per l’authoring dei contenuti.
 
 >[!TIP]
 >
->Per una procedura dettagliata sulla creazione di un nuovo progetto Edge Delivery Services abilitato per la creazione di AEM con AEM as a Cloud Service come origine di contenuto, visualizzare [questo webinar AEM GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Per una guida completa sulla creazione di un nuovo progetto Edge Delivery Services abilitato per l’authoring di AEM con AEM as a Cloud Service come origine di contenuto, visualizza [questo webinar su AEM GEMs.](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

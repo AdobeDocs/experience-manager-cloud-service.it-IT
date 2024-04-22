@@ -4,9 +4,9 @@ description: Questo tutorial ti mostrerà come essere subito operativo con un nu
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1848'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Il modello standard di AEM Forms consente di iniziare rapidamente un progetto AE
    >
    > Se utilizzi GitHub Enterprise con filtro IP, puoi aggiungere il seguente IP all’elenco Consentiti: 3.227.118.73
 
-   Congratulazioni. Hai un nuovo sito web in esecuzione su `https://<branch>--<repo>--<owner>.hlx.page/`.
+   Congratulazioni Hai un nuovo sito web in esecuzione su `https://<branch>--<repo>--<owner>.hlx.page/`.
 
    * `<branch>` fa riferimento al ramo dell’archivio GitHub.
    * `<repository>` denota l’archivio GitHub.
@@ -253,10 +253,10 @@ La cartella `blocks/form` del blocco di moduli adattivi è un ambiente playgroun
 
 Vuoi mostrare la creazione? Utilizza Git per confermare e implementare le modifiche. Questo aggiorna gli ambienti di anteprima e di produzione accessibili tramite questi URL (sostituisci i segnaposto con i dettagli del progetto):
 
-Anteprima: `https://<branch>--<repo>--<owner>.hlx.page/`
+Anteprima:`https://<branch>--<repo>--<owner>.hlx.page/`
 Produzione: `https://<branch>--<repo>--<owner>.hlx.live/`
 
-Congratulazioni. L’ambiente di sviluppo locale è stato configurato correttamente e le modifiche sono state distribuite.
+Congratulazioni L’ambiente di sviluppo locale è stato configurato correttamente e le modifiche sono state distribuite.
 
 
 
