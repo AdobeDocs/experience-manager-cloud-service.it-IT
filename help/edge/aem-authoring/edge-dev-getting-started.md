@@ -3,8 +3,8 @@ title: Guida introduttiva per sviluppatori per l’authoring di AEM con Edge Del
 description: Questa guida consente di essere subito operativo con un nuovo sito di Adobe Experience Manager utilizzando Edge Delivery Services e l’editor universale per la creazione di contenuti.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
-workflow-type: ht
+source-git-commit: fc5ffe334873b7b98565f38d5664313b26d5f635
+workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 100%
 
@@ -184,7 +184,7 @@ Una volta terminata la modifica del nuovo sito tramite l’Editor universale, pu
 
 1. Apri una nuova scheda nello stesso browser e passa all’URL del nuovo sito.
 
-   * `https://main--<site-name>--<owner>.hlx.page`
+   * `https://main--<repository-name>--<owner>.hlx.page`
 
 1. Visualizza il tuo contenuto pubblicato.
 
