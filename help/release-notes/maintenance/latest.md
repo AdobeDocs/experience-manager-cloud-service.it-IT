@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 78%
+ht-degree: 84%
 
 ---
 
@@ -42,7 +42,7 @@ Dai un&#39;occhiata a [Funzioni e API obsolete e rimosse](/help/release-notes/de
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
-| AEM OAK | 1,62,0 | [API Oak API 1.62.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.62.0/index.html) |
-| API SLING AEM | 2.27.2. | [API Apache Sling 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM OAK | 1.62.0 | [API Oak API 1.62.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.62.0/index.html) |
+| API SLING AEM | 2.27.2 | [API Apache Sling 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.20-1.4.0 | [Specifiche HTML Template Language](https://github.com/adobe/htl-spec) |
 | Componenti core AEM | 2.24.6 | [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
