@@ -4,9 +4,9 @@ description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2321'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
