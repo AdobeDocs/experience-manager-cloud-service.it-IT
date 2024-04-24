@@ -1,15 +1,15 @@
 ---
-title: Authoring di esperienze Commerce
+title: Creazione di esperienze Commerce
 description: Scopri come creare e creare esperienze commerciali in modo efficiente accedendo ai dati e ai contenuti dei prodotti senza uscire dal contesto.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 77350822c261371e6eda1fd10d02dcd905a5dd6e
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
-# Authoring di esperienze Commerce {#authoring-commerce-experiences}
+# Creazione di esperienze Commerce {#authoring-commerce-experiences}
 
 ## Panoramica {#overview}
 
@@ -51,9 +51,9 @@ La finestra di dialogo per configurazione di questo componente richiede le categ
 
 ![Componente Carosello con selezione](../assets/authoring/carousel_component_with_selection.png)
 
-## Editor universale {#universal-editor}
+## Editor pagina {#page-editor}
 
-L’editor universale è esteso con funzionalità che consentono di accedere in tempo reale ai dati di prodotto e ai contenuti di prodotto associati.
+L’Editor pagina nell’AEM è stato esteso con funzionalità che consentono di accedere in tempo reale ai dati di prodotto e ai contenuti di prodotto associati.
 
 ### Accesso ai dati di prodotto {#access-product-data}
 
@@ -65,7 +65,7 @@ Analogamente alle risorse, i prodotti possono essere aggiunti a una pagina (crea
 
 ### Aggiunta di collegamenti nei campi di testo mediante l’editor Rich Text {#rte}
 
-Le pagine del catalogo dei prodotti CIF sono pagine virtuali di cui viene eseguito il rendering immediato. Pertanto, non è possibile incorporare collegamenti ipertestuali come per le normali pagine AEM. L’CIF aggiunge una nuova azione &quot;Collegamenti commerce&quot; all’editor Rich Text. Questa azione funziona esattamente come la normale azione &quot;Collegamento ipertestuale&quot;, ma consente agli autori di selezionare un prodotto o una categoria utilizzando i selettori.
+Le pagine del catalogo dei prodotti CIF sono pagine virtuali di cui viene eseguito il rendering immediato. Pertanto, non è possibile incorporare collegamenti ipertestuali come per le normali pagine AEM. L’CIF aggiunge una nuova azione &quot;Collegamenti Commerce&quot; all’editor Rich Text. Questa azione funziona esattamente come la normale azione &quot;Collegamento ipertestuale&quot;, ma consente agli autori di selezionare un prodotto o una categoria utilizzando i selettori.
 
 ![RTE](../assets/authoring/RTE.png)
 
@@ -77,7 +77,7 @@ Questo crea un collegamento segnaposto che viene sostituito da un collegamento r
 
 ### Accesso al contenuto prodotto associato {#associated-content}
 
-Se Universal Editor riconosce i prodotti 1:n in una pagina, il pannello laterale mostra automaticamente la scheda &quot;Contenuto Commerce associato&quot;. Questa scheda consente agli autori di accedere rapidamente ai contenuti AEM a cui è stato applicato il tag del prodotto (vedere [arricchire i dati di prodotto con i contenuti AEM associati](./enrich-product-associated-content.md) per ulteriori informazioni). Questa scheda offre elenchi a discesa per filtrare in base al tipo di contenuto e a prodotti specifici se sulla pagina sono presenti più prodotti. L’utilizzo del contenuto funziona esattamente come l’utilizzo del contenuto della scheda &quot;Risorse&quot;.
+Se l’editor riconosce i prodotti 1:n in una pagina, il pannello laterale mostra automaticamente la scheda &quot;Contenuto Commerce associato&quot;. Questa scheda consente agli autori di accedere rapidamente ai contenuti AEM a cui è stato applicato il tag del prodotto (vedere [arricchire i dati di prodotto con i contenuti AEM associati](./enrich-product-associated-content.md) per ulteriori informazioni). Questa scheda offre elenchi a discesa per filtrare in base al tipo di contenuto e a prodotti specifici se sulla pagina sono presenti più prodotti. L’utilizzo del contenuto funziona esattamente come l’utilizzo del contenuto della scheda &quot;Risorse&quot;.
 
 ![Pannello laterale dati prodotto](../assets/authoring/associated-commerce-content-tab.png)
 
@@ -85,7 +85,7 @@ Se Universal Editor riconosce i prodotti 1:n in una pagina, il pannello laterale
 
 La modalità Timewarp nell’editor consente agli autori di visualizzare in anteprima e sfogliare un’esperienza AEM con i dati del catalogo dei prodotti in staging in base alla data Timewarp.
 
-![Timewarp  ](../assets/authoring/timewarp.png)
+![Timewarp](../assets/authoring/timewarp.png)
 
 I componenti visualizzano un indicatore visivo se la data utilizzata è pubblicata nell’area intermedia.
 
