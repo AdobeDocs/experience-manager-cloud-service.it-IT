@@ -1,17 +1,23 @@
 ---
-title: API fatturabili per rapporti sulle transazioni
+title: API rapporti di transazioni fatturabili
 description: Elenco di tutte le API contabilizzate come transazioni
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-source-git-commit: 7318c5e65fc03bfebbf5fb43e4edc30ffbb53909
+exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
+source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
-source-wordcount: '1598'
-ht-degree: 40%
+source-wordcount: '1411'
+ht-degree: 28%
 
 ---
 
-# API fatturabili per rapporti sulle transazioni {#transaction-reports-billable-apis}
+
+# API rapporti di transazioni fatturabili {#transaction-reports-billable-apis}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
+| AEM as a Cloud Service | Questo articolo |
+
 
 AEM Forms fornisce diverse API per inviare moduli, elaborare documenti ed eseguire il rendering di documenti. Alcune API sono contabilizzate come transazioni e altre sono libere di utilizzare. Questo documento fornisce un elenco di tutte le API contabilizzate come transazioni in un report sulle transazioni. Di seguito sono riportati alcuni scenari comuni in cui viene utilizzata un’API fatturabile:
 
@@ -41,32 +47,32 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="Durata media per la generazione dei moduli"
->abstract="Il grafico mostra il tempo medio impiegato per creare un modulo. Ogni barra del grafico rappresenta un modulo specifico e l’altezza della barra indica la durata media necessaria per la creazione del modulo durante un determinato intervallo di tempo. L’analisi di questo grafico aiuta gli utenti a comprendere l’efficienza e la velocità della creazione dei moduli in periodi diversi o in contesti diversi, consentendo di ottenere informazioni approfondite sui potenziali miglioramenti. Il grafico fornisce dati specifici per l’istanza di authoring di AEM Forms corrente. Per visualizzare i dati delle altre istanze, accedi alla dashboard della rispettiva istanza."
+>abstract="Il grafico mostra il tempo medio impiegato per creare un modulo. Ogni barra del grafico rappresenta una forma specifica e l’altezza della barra indica la durata media della creazione della maschera durante tale intervallo di tempo."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Durata media per la creazione dei moduli"
->abstract="Nel grafico viene visualizzato il tempo medio necessario per creare e pubblicare un modulo, misurato dal giorno iniziale in cui il modulo è stato aperto per la modifica. Ogni barra corrisponde a un intervallo di tempo specifico per un modulo, con l’altezza della barra che indica il tempo medio trascorso dall’inizio dello sviluppo del modulo alla sua finalizzazione e pubblicazione. Il grafico fornisce dati specifici per l’istanza di authoring di AEM Forms corrente. Per visualizzare i dati delle altre istanze, accedi alla dashboard della rispettiva istanza."
+>abstract="Nel grafico viene visualizzato il tempo medio necessario per la creazione e la pubblicazione di un modulo, misurato dal giorno iniziale in cui il modulo è stato aperto per la modifica. Il grafico fornisce dati specifici per l’istanza AEM Forms Author corrente. Per visualizzare i dati delle altre istanze, accedi alla dashboard della rispettiva istanza."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="Nuovo tracciamento dei moduli"
->abstract="Il grafico fornisce informazioni sul numero o sulla frequenza dei nuovi moduli creati durante specifici periodi di tempo. Ogni barra del grafico rappresenta un’unità di misura distinta, ad esempio giorni, settimane o mesi. L’altezza di ciascuna barra indica la quantità o la frequenza dei nuovi moduli creati durante quel particolare intervallo. Il grafico fornisce dati specifici per l’istanza di authoring di AEM Forms corrente. Per visualizzare i dati delle altre istanze, accedi alla dashboard della rispettiva istanza."
+>abstract="Il grafico fornisce informazioni sul numero o sulla frequenza dei nuovi moduli creati durante specifici periodi di tempo. Il grafico fornisce dati specifici per l’istanza di authoring di AEM Forms corrente. Per visualizzare i dati delle altre istanze, accedi alla dashboard della rispettiva istanza."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Tracciamento dei moduli pubblicati"
->abstract="Il grafico fornisce informazioni sul numero o sulla frequenza dei moduli pubblicati correttamente durante specifici periodi di tempo. Questo consente di comprendere le tendenze, i pattern o le variazioni nella pubblicazione dei moduli nel tempo, nonché di monitorare la produttività, identificare i periodi di picco di pubblicazione o valutare il successo delle modifiche nel processo di pubblicazione dei moduli. Il grafico fornisce dati specifici per l’istanza di Pubblicazione di AEM Forms corrente. Per visualizzare i dati della conversione delle altre istanze, accedi alla dashboard della rispettiva istanza."
+>abstract="Il grafico fornisce informazioni sul numero o sulla frequenza dei moduli pubblicati correttamente durante specifici periodi di tempo. Il grafico fornisce dati specifici per l’istanza di Pubblicazione di AEM Forms corrente. Per visualizzare i dati della conversione delle altre istanze, accedi alla dashboard della rispettiva istanza."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
 >title="Tracciamento dei moduli pubblicati"
->abstract="Questo grafico consente di vedere quanti frammenti dei moduli vengono utilizzati dagli utenti nei loro moduli. Fornisce un’idea di quanto popolari o comuni siano queste parti riutilizzabili nella creazione dei moduli. Il grafico fornisce dati specifici per l’istanza di Pubblicazione di AEM Forms corrente. Per visualizzare i dati della conversione delle altre istanze, accedi alla dashboard della rispettiva istanza."
+>abstract="Questo grafico consente di vedere quanti frammenti dei moduli vengono utilizzati dagli utenti nei loro moduli. Il grafico fornisce dati specifici per l’istanza di Pubblicazione di AEM Forms corrente. Per visualizzare i dati della conversione delle altre istanze, accedi alla dashboard della rispettiva istanza."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
 >title="Tracciamento dei moduli pubblicati"
->abstract="Nel grafico viene visualizzato il tempo medio necessario per creare un frammento di modulo, misurato dal giorno iniziale in cui il frammento di modulo è stato aperto per la modifica. Ogni barra corrisponde a un intervallo di tempo specifico per un frammento di modulo, con l’altezza della barra che indica il tempo medio trascorso dall’inizio dello sviluppo del frammento di modulo alla sua finalizzazione e pubblicazione. Il grafico fornisce dati specifici per l’istanza di Pubblicazione di AEM Forms corrente. Per visualizzare i dati della conversione delle altre istanze, accedi alla dashboard della rispettiva istanza."
+>abstract="Nel grafico viene visualizzato il tempo medio necessario per creare un frammento di modulo, misurato dal giorno iniziale in cui il frammento di modulo è stato aperto per la modifica. Il grafico fornisce dati specifici per l’istanza di Pubblicazione di AEM Forms corrente. Per visualizzare i dati della conversione delle altre istanze, accedi alla dashboard della rispettiva istanza."
 
 <!-- 
 
@@ -450,7 +456,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
  </tbody>
 </table>
 
-L’utilizzo dell’API di richiamo viene conteggiato come una transazione, quando esegui una o più delle seguenti operazioni:
+L’utilizzo dell’API di richiamo viene conteggiato come una transazione, quando si eseguono una o più delle seguenti operazioni:
 
 1. Conversione da formati non PDF a formati PDF. <!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. Conversione dal formato PDF al formato PDF/A.

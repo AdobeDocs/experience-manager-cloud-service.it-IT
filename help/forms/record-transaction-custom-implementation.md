@@ -2,16 +2,20 @@
 title: Registrare una transazione per le implementazioni personalizzate
 description: Utilizzare l'API TransactionRecorder per registrare automaticamente le azioni non contabilizzate come transazioni
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+exl-id: cb584f78-30af-4a58-be99-843352e8249c
+source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 1%
+source-wordcount: '193'
+ht-degree: 16%
 
 ---
 
 # Registrare una transazione per le implementazioni personalizzate {#record-a-transaction-for-custom-implementations}
+
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-osgi/record-transaction-custom-implementation) |
+| AEM as a Cloud Service | Questo articolo |
 
 Utilizzare l&#39;API TransactionRecorder per registrare automaticamente le azioni che non vengono contabilizzate come transazioni.
 
@@ -87,5 +91,4 @@ $.ajax({
 
 ## Articoli correlati {#related-articles}
 
-* [Report transazioni API fatturabili](/help/forms/transaction-reports-billable-apis.md)
-
+* [API rapporti di transazioni fatturabili](/help/forms/transaction-reports-billable-apis.md)
