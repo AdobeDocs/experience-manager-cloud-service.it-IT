@@ -3,9 +3,9 @@ title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Ma
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -15,18 +15,18 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 15977 {#release-15977}
 
-Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 15977, rilasciata al pubblico il sabato 19 aprile 2024. La versione di manutenzione precedente era 15939.
+Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 15977, rilasciata al pubblico il 19 aprile 2024. La versione di manutenzione precedente era 15939.
 
 Con l’attivazione delle funzioni 2024.4.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it).
 
 ### Miglioramenti {#enhancements-15977}
 
-* GRANITE-51335: Ottimizza il controllo dello stato di AEM per aumentare la stabilità dell’istanza.
+* GRANITE-51335: ottimizza il controllo dello stato di AEM per aumentare la stabilità dell’istanza.
 
 ### Problemi risolti {#fixed-issues-15977}
 
 * CQ-4357226: correggi la regressione nel supporto delle configurazioni IMS per le credenziali OAuth.
-* GRANITE-51335: aggiornamento Ratelimit alla versione 5.0.4 delle registrazioni Fixed Felix Health Check.
+* GRANITE-51335: aggiornamento di rateLimit alla versione 5.0.4. Risolti i problemi delle registrazioni di Felix Health Check.
 
 ### Problemi noti {#known-issues-15977}
 
