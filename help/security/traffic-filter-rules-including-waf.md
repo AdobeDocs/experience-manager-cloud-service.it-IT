@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: d118cd57370a472dfe752c6ce7e332338606b898
 workflow-type: tm+mt
 source-wordcount: '3817'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -435,7 +435,7 @@ I limiti di frequenza vengono valutati in base al traffico che colpisce il serve
 | limite | numero intero da 10 a 10000 | obbligatorio | Frequenza di richiesta (per POP CDN) nelle richieste al secondo per le quali viene attivata la regola. |
 | finestra | numero intero: 1, 10 o 60 | 10 | Finestra di campionamento in secondi per la quale viene calcolato il tasso di richiesta. La precisione dei contatori dipende dalle dimensioni della finestra (maggiore finestra, maggiore precisione). Ad esempio, ci si può aspettare una precisione del 50% per la finestra di 1 secondo e del 90% per la finestra di 60 secondi. |
 | penalità | numero intero compreso tra 60 e 3600 | 300 (5 minuti) | Un periodo in secondi per il quale le richieste corrispondenti vengono bloccate (arrotondato al minuto più vicino). |
-| n.  | tutti, recuperi, errori | tutti | valuta in base al traffico edge (all), al traffico di origine (recuperi) o al numero di errori (errori). |
+| numero | tutti, recuperi, errori | tutti | valuta in base al traffico edge (all), al traffico di origine (recuperi) o al numero di errori (errori). |
 | groupBy | array[Getter] | nessuno | il contatore del limitatore di frequenza verrà aggregato da un set di proprietà di richiesta (ad esempio clientIp). |
 
 
@@ -636,7 +636,7 @@ Adobe fornisce un meccanismo per scaricare gli strumenti della dashboard sul com
 
 Gli strumenti della dashboard possono essere clonati direttamente dall’archivio Github [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool).
 
-[Tutorials](#tutorial) sono disponibili per istruzioni concrete su come utilizzare gli strumenti del dashboard.
+I [tutorial](#tutorial) sono disponibili per istruzioni pratiche su come utilizzare gli strumenti della dashboard.
 
 ## Regole iniziali consigliate {#recommended-starter-rules}
 
@@ -719,13 +719,13 @@ data:
           - NULLBYTE
 ```
 
-## Esercitazioni {#tutorial}
+## Tutorial {#tutorial}
 
-Sono disponibili due esercitazioni.
+Sono disponibili due tutorial.
 
-### Protezione dei siti Web con regole per il filtro del traffico (incluse le regole WAF)
+### Protezione dei siti web con regole di filtro del traffico (comprese le regole WAF)
 
-[Esercitazione](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=it) acquisire conoscenze ed esperienze generali e pratiche sulle regole del filtro del traffico, comprese le regole WAF.
+[Esercitati con un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=it) per acquisire conoscenze pratiche e generali ed esperienza sulle regole per filtrare il traffico, incluse le regole WAF.
 
 Il tutorial illustra:
 
@@ -735,15 +735,15 @@ Il tutorial illustra:
 * Analisi dei risultati con gli strumenti della dashboard
 * Best practice
 
-### Blocco degli attacchi DoS e DDoS tramite le regole del filtro del traffico
+### Bloccare gli attacchi DoS e DDoS utilizzando le regole di filtro del traffico
 
-[Approfondimento su come bloccare](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Attacchi Denial of Service (DoS) e Distributed Denial of Service (DDoS) che utilizzano le regole del filtro del traffico del limite di velocità e altre strategie.
+[Approfondimento su come bloccare](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Attacchi Denial of Service (DoS) e Distributed Denial of Service (DDoS) che utilizzano regole di filtro del traffico con limite di velocità e altre strategie.
 
 Il tutorial illustra:
 
-* informazioni sulla protezione
-* ricezione di avvisi in caso di superamento dei limiti di tariffa
-* analisi dei pattern di traffico tramite strumenti del dashboard per configurare le soglie per le regole del filtro del traffico del limite di velocità
+* come comprendere la protezione
+* come ricevere avvisi quando i limiti di velocità vengono superati
+* come analizzare i pattern di traffico utilizzando gli strumenti della dashboard per configurare le soglie per le regole di filtro del traffico con limite di velocità
 
 
 
