@@ -1,24 +1,24 @@
 ---
-title: Modifica video
+title: Modificare i video
 description: Modifica video tramite [!DNL Adobe Express] opzioni avanzate e salva i video aggiornati come versioni.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
+source-git-commit: 4f3c15d3a103d15c51ddfe4b0c5dbb5e7e18e8b7
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
-# Modifica video in [!DNL Assets Essentials] {#edit-videos}
+# Modifica video in [!DNL Assets view] {#edit-videos}
 
-La creazione di varianti di contenuto video è semplice per gli utenti di Assets con l’ [!DNL Adobe Express] azioni rapide per il video. Azioni rapide in [!DNL Assets Essentials] con tecnologia [!DNL Adobe Express] offre opzioni di editing video intuitive, tra cui ritaglia video, ridimensiona video, ritaglia video e converti video in GIF.
+La creazione di varianti di contenuto video è semplice per gli utenti di Assets con l’ [!DNL Adobe Express] azioni rapide per il video. Azioni rapide in [!DNL Assets view] con tecnologia [!DNL Adobe Express] offre opzioni di editing video intuitive, tra cui ritaglia video, ridimensiona video, ritaglia video e converti video in GIF.
 
 Per modificare un video, accedi ai relativi dettagli e fai clic su [!UICONTROL Modifica video]. In alternativa, seleziona la risorsa e fai clic su Dettagli, quindi fai clic su ![forbici](assets/do-not-localize/cut.svg) disponibile nel riquadro a destra. Dopo aver modificato un video, puoi salvarlo come nuova versione o come nuova risorsa.
 
 ## Prerequisiti {#prerequisites}
 
-Diritti di accesso [!DNL Adobe Express] e almeno un ambiente in AEM Assets. L’ambiente può essere uno qualsiasi degli archivi in [!DNL Assets as a Cloud Service] o [!DNL Assets Essentials].
+Diritti di accesso [!DNL Adobe Express] e almeno un ambiente in AEM Assets. L’ambiente può essere uno qualsiasi degli archivi in [!DNL Assets as a Cloud Service] o [!DNL Assets view].
 
 ## Modifica video con Adobi Express {#edit-video-using-express}
 
@@ -39,7 +39,7 @@ La trasformazione di un video in una dimensione e un orientamento perfetti è fa
 
 ### Ridimensiona video {#resize-video-using-express}
 
-Il contenuto video finale in DAM deve spesso essere ridimensionato per la distribuzione a canali specifici. [!DNL Assets Essentials] consente di ridimensionare facilmente i video per adattarli alle dimensioni richieste dai canali social più diffusi e di adattarli alle risoluzioni personalizzate. Per ridimensionare il video utilizzando [!DNL Assets Essentials], esegui i passaggi seguenti:
+Il contenuto video finale in DAM deve spesso essere ridimensionato per la distribuzione a canali specifici. [!DNL Assets view] consente di ridimensionare facilmente i video per adattarli alle dimensioni richieste dai canali social più diffusi e di adattarli alle risoluzioni personalizzate. Per ridimensionare il video utilizzando [!DNL Assets view], esegui i passaggi seguenti:
 
 1. Seleziona un video e fai clic su **[!UICONTROL Modifica]**.
 2. Clic **[!UICONTROL Ridimensiona video]** dalle azioni rapide disponibili nel riquadro a sinistra.
@@ -93,7 +93,7 @@ Il video è disponibile in formato GIF per il download. Puoi salvare la risorsa 
 
 ### Passaggi successivi {#next-steps}
 
-* Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente di Assets Essentials
+* Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
@@ -101,5 +101,5 @@ Il video è disponibile in formato GIF per il download. Puoi salvare la risorsa 
 
 >[!MORELIKETHIS]
 >
->* [Modificare le immagini negli Assets Essentials](edit-images-assets-view.md)
+>* [Modificare le immagini nella vista Risorse](edit-images-assets-view.md)
 >* [Anteprima di una risorsa](navigate-assets-view.md)
