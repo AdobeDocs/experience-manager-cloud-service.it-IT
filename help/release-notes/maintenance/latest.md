@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
-workflow-type: ht
-source-wordcount: '213'
-ht-degree: 100%
+source-git-commit: 61a3d334e7187dcbf047d1b464d918ddf2cf9444
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 79%
 
 ---
 
@@ -30,7 +30,7 @@ Con l’attivazione delle funzioni 2024.4.0 verrà fornito il set di funzioni co
 
 ### Problemi noti {#known-issues-15977}
 
-Nessuno.
+* **(Solo per AEM Forms)** Dopo aver installato le 15977 sulla versione di manutenzione di AEM Cloud Foundation, i campi del modulo adattivo vengono riprodotti in ordine errato durante la creazione dei moduli e per i moduli pubblicati. Se utilizzi AEM Forms, per evitare inconvenienti si consiglia di non eseguire l’aggiornamento a questa versione fino a quando il problema non viene risolto nella prossima versione di manutenzione.
 
 ### Funzioni e API obsolete {#deprecated-15977}
 
