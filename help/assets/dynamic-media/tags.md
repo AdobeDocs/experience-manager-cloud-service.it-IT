@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 3312aa270c05e506d12ed8a5c1360154bb02b350
 workflow-type: tm+mt
-source-wordcount: '6701'
+source-wordcount: '6700'
 ht-degree: 6%
 
 ---
@@ -694,7 +694,7 @@ La configurazione di Experience Manager è costituita dai due passaggi principal
 
 1. In una nuova scheda del browser, passa a [Console Adobe Developer](https://developer.adobe.com/console/integrations).
 
-1. Dalla sezione **[!UICONTROL Integrazioni della console Adobe I/O]** nell&#39;angolo superiore destro, seleziona **[!UICONTROL Nuova integrazione]**.
+1. Dalla sezione **[!UICONTROL Integrazioni della console Adobe Developer]** nell&#39;angolo superiore destro, seleziona **[!UICONTROL Nuova integrazione]**.
 1. In **[!UICONTROL Creare una nuova integrazione]** , assicurati che **[!UICONTROL Accedere a un’API]** è selezionato, quindi seleziona **[!UICONTROL Continua]**.
 
 ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
@@ -822,7 +822,7 @@ Dopo aver completato tutti i campi, il tuo **[!UICONTROL Generale]** La pagina a
    >Verifica che l’URI della libreria con compilazione automatica (Uniform Resource Identifier) non abbia un formato valido. Se necessario, correggerlo in modo che l’URI rappresenti un URI relativo al protocollo. In altre parole, inizia da una doppia barra in avanti.
    >
    >
-   >Esempio: `//assets.adobetm.com/launch-xxxx`.
+   >Ad esempio: `//assets.adobetm.com/launch-xxxx`.
 
    Il tuo **[!UICONTROL Staging]** La pagina sarà simile a quella riportata di seguito. Il **[!UICONTROL Archivia]** e **[!UICONTROL Carica libreria in modo asincrono]** le opzioni sono ***non*** imposta:
 
