@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 128ca1a00124fa4cb5d008a41a9d0b5a9a5e075e
+source-git-commit: 575e0c661abc2f8b182b3ed35d5d914639dd7f3a
 workflow-type: tm+mt
-source-wordcount: '4894'
+source-wordcount: '4899'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 99%
    + Note sulla versione delle funzioni di AEMaaCS {#release-notes}
       + [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Note sulla versione 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
          + [Note sulla versione 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023 {#2023}
          + [Note sulla versione 2023.12.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
@@ -561,7 +562,7 @@ ht-degree: 99%
       + [Cercare e individuare le risorse](/help/assets/search-assets-view.md)
       + [Attività di gestione risorse](/help/assets/manage-organize-assets-view.md)
       + [Modificare le immagini](/help/assets/edit-images-assets-view.md)
-      + [Modifica video](/help/assets/edit-videos-assets-view.md)
+      + [Modificare i video](/help/assets/edit-videos-assets-view.md)
       + [Visualizzare e gestire le rappresentazioni](/help/assets/renditions.md)
       + [Gestire i metadati delle risorse](/help/assets/metadata-assets-view.md)
       + [Condividere le risorse](/help/assets/share-links-for-assets-view.md)

@@ -2,18 +2,15 @@
 title: Configurazione delle pagine di errore CDN
 description: Scopri come ignorare la pagina di errore predefinita ospitando file statici nell’archiviazione self-hosted, ad esempio Amazon S3 o Azure Blob Storage, e facendo riferimento a essi in un file di configurazione distribuito utilizzando la pipeline di configurazione di Cloud Manager.
 feature: Dispatcher
-source-git-commit: 11036c3e95f0444fc5d865232a7dccab5b7f26ae
+exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
+source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 1%
 
 ---
 
-
 # Configurazione delle pagine di errore CDN {#cdn-error-pages}
-
->[!NOTE]
->Questa funzione non è ancora disponibile al pubblico. Per partecipare al programma di adozione anticipata, invia un messaggio e-mail a `aemcs-cdn-config-adopter@adobe.com` e descrivi il tuo caso d’uso.
 
 Nel caso improbabile che il [CDN gestito da Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) non può raggiungere l’origine dell’AEM, per impostazione predefinita la rete CDN fornisce una pagina di errore generica e senza brand che indica che il server non può essere raggiunto. È possibile ignorare la pagina di errore predefinita ospitando file statici nell’archiviazione self-hosted, ad esempio Amazon S3 o Azure Blob Storage, e facendo riferimento a essi in un file di configurazione distribuito utilizzando [Pipeline di configurazione di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 

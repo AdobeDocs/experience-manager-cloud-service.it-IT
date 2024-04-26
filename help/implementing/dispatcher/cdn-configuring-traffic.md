@@ -3,30 +3,27 @@ title: Configurazione del traffico sulla rete CDN
 description: Scopri come configurare il traffico CDN dichiarando regole e filtri in un file di configurazione e distribuendoli nella CDN utilizzando la pipeline di configurazione di Cloud Manager.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
-source-git-commit: 1e2d147aec53fc0f5be53571078ccebdda63c819
+source-git-commit: f9eeafbf128b4581c983e19bcd5ad2294a5e3a9a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1199'
+ht-degree: 4%
 
 ---
 
 # Configurazione del traffico sulla rete CDN {#cdn-configuring-cloud}
 
->[!NOTE]
->Questa funzione non è ancora disponibile al pubblico. Per partecipare al programma di adozione anticipata, invia un messaggio e-mail a `aemcs-cdn-config-adopter@adobe.com` e descrivi il tuo caso d’uso.
-
 AEM as a Cloud Service offre una raccolta di funzioni configurabili in [CDN gestito da Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) che modificano la natura delle richieste in ingresso o delle risposte in uscita. Le seguenti regole, descritte in dettaglio in questa pagina, possono essere dichiarate per ottenere il seguente comportamento:
 
 * [Richiedi trasformazioni](#request-transformations) : modifica gli aspetti delle richieste in entrata, tra cui intestazioni, percorsi e parametri.
 * [Trasformazioni di risposta](#response-transformations) : modifica le intestazioni che stanno tornando al client (ad esempio, un browser web).
-* [Redirector lato client](#client-side-redirectors) : attiva un reindirizzamento del browser.
+* [Reindirizzamenti lato client](#client-side-redirectors) : attiva un reindirizzamento del browser. Questa funzione non è ancora disponibile in versione GA, ma è disponibile per gli utenti che la utilizzano da subito.
 * [Selettori di origine](#origin-selectors) : proxy a un back-end di origine diversa.
 
 Nella rete CDN sono configurabili anche le regole del filtro del traffico (incluso WAF), che controllano il traffico consentito o negato dalla rete CDN. Questa funzione è già stata rilasciata e puoi saperne di più nel [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md) pagina.
 
 Inoltre, se la rete CDN non è in grado di contattare la relativa origine, puoi scrivere una regola che fa riferimento a una pagina di errore personalizzata con hosting autonomo (di cui viene quindi eseguito il rendering). Per saperne di più, leggi [Configurazione delle pagine di errore CDN](/help/implementing/dispatcher/cdn-error-pages.md) articolo.
 
-Tutte queste regole, dichiarate in un file di configurazione nel controllo del codice sorgente, vengono distribuite utilizzando [Pipeline di configurazione di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Tieni presente che la dimensione cumulativa del file di configurazione non può superare i 100 KB.
+Tutte queste regole, dichiarate in un file di configurazione nel controllo del codice sorgente, vengono distribuite utilizzando [Pipeline di configurazione di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Tieni presente che la dimensione cumulativa del file di configurazione, incluse le regole del filtro del traffico, non può superare i 100 KB.
 
 ## Ordine di valutazione {#order-of-evaluation}
 
@@ -38,14 +35,21 @@ Dal punto di vista funzionale, le varie feature menzionate in precedenza vengono
 
 Prima di configurare il traffico sulla rete CDN, è necessario effettuare le seguenti operazioni:
 
-* Innanzitutto, crea questa cartella e struttura di file nella cartella di livello principale del progetto Git:
+* Crea questa cartella e struttura di file nella cartella di livello principale del progetto Git:
 
 ```
 config/
      cdn.yaml
 ```
 
-* In secondo luogo, `cdn.yaml` Il file di configurazione deve contenere sia i metadati che le regole descritte negli esempi seguenti.
+* Il `cdn.yaml` Il file di configurazione deve contenere sia i metadati che le regole descritte negli esempi seguenti. Il `kind` il parametro deve essere impostato su `CDN` e la versione deve essere impostata sulla versione dello schema, attualmente `1`.
+
+* Crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager. Consulta [configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configurazione di pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+
+**Note**
+
+* Al momento gli RDE non supportano la pipeline di configurazione.
+* Puoi utilizzare `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad es. `yq cdn.yaml`).
 
 ## Sintassi {#configuration-syntax}
 
@@ -73,7 +77,7 @@ version: "1"
 metadata:
   envTypes: ["dev", "stage", "prod"]
 data:  
-  experimental_requestTransformations:
+  requestTransformations:
     removeMarketingParams: true
     rules:
       - name: set-header-rule
@@ -173,7 +177,7 @@ version: "1"
 metadata:
   envTypes: ["prod", "dev"]
 data:   
-  experimental_requestTransformations:
+  requestTransformations:
     rules:
       - name: set-variable-rule
         when:
@@ -184,7 +188,7 @@ data:
             var: some_var_name
             value: some_value
  
-  experimental_responseTransformations:
+  responseTransformations:
     rules:
       - name: set-response-header-while-variable
         when:
@@ -208,7 +212,7 @@ version: "1"
 metadata:
   envTypes: ["prod", "dev"]
 data:
-  experimental_responseTransformations:
+  responseTransformations:
     rules:
       - name: set-response-header-rule
         when:
@@ -262,7 +266,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_originSelectors:
+  originSelectors:
     rules:
       - name: example-com
         when: { reqProperty: path, like: /proxy-me* }
@@ -303,11 +307,16 @@ Le connessioni alle origini sono solo SSL e utilizzano la porta 443.
 | **forwardAuthorization** (facoltativo, il valore predefinito è false) | Se è impostato su true, l’intestazione &quot;Authorization&quot; dalla richiesta del client verrà passata al backend, altrimenti l’intestazione Authorization viene rimossa. |
 | **timeout** (facoltativo, in secondi, il valore predefinito è 60) | Numero di secondi in cui la rete CDN deve attendere che un server backend distribuisca il primo byte di un corpo di risposta HTTP. Questo valore viene utilizzato anche come timeout tra i byte per il server back-end. |
 
-## Redirector lato client {#client-side-redirectors}
+## Reindirizzamenti lato client {#client-side-redirectors}
+
+>[!NOTE]
+>Questa funzione non è ancora disponibile al pubblico. Per partecipare al programma di adozione anticipata, invia un messaggio e-mail a `aemcs-cdn-config-adopter@adobe.com` e descrivi il tuo caso d’uso.
 
 Puoi utilizzare le regole di reindirizzamento lato client per 301, 302 e reindirizzamenti lato client simili. Se una regola corrisponde, la rete CDN risponde con una riga di stato che include il codice di stato e il messaggio (ad esempio, HTTP/1.1 301 Spostato definitivamente), nonché l’intestazione della posizione impostata.
 
 Sono consentite posizioni sia assolute che relative con valori fissi.
+
+Tieni presente che la dimensione cumulativa del file di configurazione, incluse le regole del filtro del traffico, non può superare i 100 KB.
 
 Esempio di configurazione:
 
