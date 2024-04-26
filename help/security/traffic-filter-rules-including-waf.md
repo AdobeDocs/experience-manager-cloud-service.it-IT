@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: b52da0a604d2c320d046136f5e526e2b244fa6cb
 workflow-type: tm+mt
 source-wordcount: '3790'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
@@ -255,7 +255,7 @@ La proprietà `wafFlags`, che può essere utilizzata nelle regole del filtro del
 | SQLI | SQL Injection | SQL Injection è il tentativo di accedere a un’applicazione o di ottenere informazioni con privilegi tramite l’esecuzione di query arbitrarie nel database. |
 | BACKDOOR | Backdoor | Un segnale backdoor è una richiesta che tenta di determinare se un file backdoor comune è presente sul sistema. |
 | CMDEXE | Command Execution | Command Execution è il tentativo di ottenere il controllo o danneggiare un sistema di destinazione attraverso comandi arbitrari di sistema mediante l’input dell’utente. |
-| CMDEXE-NO-BIN | Esecuzione comando, tranne il `/bin/` | Garantire lo stesso livello di protezione `CMDEXE` durante la disabilitazione del falso positivo `/bin` dovuta all’architettura dell’AEM. |
+| CMDEXE-NO-BIN | Esecuzione comando, tranne il `/bin/` | Garantisci lo stesso livello di protezione di `CMDEXE` durante la disabilitazione del falso positivo su `/bin` dovuta all’architettura di AEM. |
 | XSS | Vulnerabilità cross-site scripting | Per vulnerabilità cross-site scripting si intende il tentativo di dirottare l’account o la sessione di navigazione web di un utente attraverso codice JavaScript dannoso. |
 | TRAVERSAL | Directory Traversal | Directory Traversal è il tentativo di spostarsi tra le cartelle privilegiate all’interno di un sistema nella speranza di ottenere informazioni riservate. |
 | USERAGENT | Attack Tooling | Attack Tooling è l’uso di un software automatizzato per identificare le vulnerabilità di sicurezza o per tentare di sfruttare una vulnerabilità scoperta. |
@@ -335,7 +335,7 @@ data:
 
 **Esempio 3**
 
-Questa regola blocca le richieste in fase di pubblicazione che contengono il parametro di query `foo`, ma consente ogni richiesta proveniente da IP 192.168.1.1:
+Questa regola blocca le richieste che contengono il parametro di query `foo` al momento della pubblicazione, ma consente ogni richiesta proveniente da IP 192.168.1.1:
 
 ```
 kind: "CDN"
@@ -360,7 +360,7 @@ data:
 
 **Esempio 4**
 
-Questa regola blocca le richieste al percorso `/block-me` al momento della pubblicazione e blocca ogni richiesta che corrisponde a `SQLI` o `XSS` pattern. Questo esempio include le regole di filtro del traffico WAF che fa riferimento ai [contrassegni WAF](#waf-flags-list) `SQLI` e `XSS` e richiede pertanto una licenza separata.
+Questa regola blocca le richieste al percorso `/block-me` al momento della pubblicazione e blocca ogni richiesta che corrisponde a uno schema `SQLI` o `XSS`. Questo esempio include le regole di filtro del traffico WAF che fa riferimento ai [contrassegni WAF](#waf-flags-list) `SQLI` e `XSS` e richiede pertanto una licenza separata.
 
 ```
 kind: "CDN"
@@ -426,7 +426,7 @@ Le regole del limite di tasso non possono fare riferimento ai contrassegni WAF. 
 
 I limiti di tasso vengono calcolati per POP CDN. Ad esempio, supponiamo che i POP a Montreal, Miami e Dublino registrino tassi di traffico rispettivamente di 80, 90 e 120 richieste al secondo. La regola del limite di tasso è impostata su un limite di 100. In tal caso, solo il traffico verso Dublino sarebbe limitato.
 
-I limiti di frequenza vengono valutati in base al traffico che colpisce il server Edge di, al traffico che colpisce l’origine o al numero di errori.
+I limiti di frequenza vengono valutati in base al traffico che raggiunge il limite, la sorgente o il numero di errori.
 
 ### Struttura rateLimit {#ratelimit-structure}
 
@@ -435,7 +435,7 @@ I limiti di frequenza vengono valutati in base al traffico che colpisce il serve
 | limite | numero intero da 10 a 10000 | obbligatorio | Frequenza di richiesta (per POP CDN) nelle richieste al secondo per le quali viene attivata la regola. |
 | finestra | numero intero: 1, 10 o 60 | 10 | Finestra di campionamento in secondi per la quale viene calcolato il tasso di richiesta. La precisione dei contatori dipende dalle dimensioni della finestra (maggiore precisione della finestra). Ad esempio, ci si può aspettare una precisione del 50% per la finestra di 1 secondo e del 90% per la finestra di 60 secondi. |
 | penalità | numero intero compreso tra 60 e 3600 | 300 (5 minuti) | Un periodo in secondi per il quale le richieste corrispondenti vengono bloccate (arrotondato al minuto più vicino). |
-| numero | tutti, recuperi, errori | tutti | valuta in base al traffico edge (all), al traffico di origine (recuperi) o al numero di errori (errori). |
+| numero | tutti, recuperi, errori | tutti | valutare in base al traffico del bordo (tutto), al traffico sorgente (recuperi) o al numero di errori (errori) |
 | groupBy | array[Getter] | nessuno | il contatore del limitatore di frequenza verrà aggregato da un set di proprietà di richiesta (ad esempio clientIp). |
 
 ### Esempi {#ratelimiting-examples}
