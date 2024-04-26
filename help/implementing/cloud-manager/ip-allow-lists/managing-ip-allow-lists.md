@@ -2,7 +2,7 @@
 title: Gestione degli elenchi IP consentiti
 description: Scopri come visualizzare, modificare, eliminare e controllare lo stato dei inserisce nell'elenco Consentiti di IP in Cloud Manager.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 52%
@@ -18,7 +18,7 @@ Scopri come visualizzare, modificare, eliminare e controllare lo stato dei inser
 Un utente in **Proprietario business** o **Responsabile dell’implementazione** Per visualizzare e aggiornare un elenco Consentiti di IP di un, il ruolo può seguire la procedura riportata di seguito.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , selezionare il programma.
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , selezionare il programma.
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 1. Dalla schermata **Ambienti**, accedi alla pagina **Elenchi IP consentiti**.
 1. Identificare la riga per i inserisce nell&#39;elenco Consentiti di IP che si desidera visualizzare o aggiornare.

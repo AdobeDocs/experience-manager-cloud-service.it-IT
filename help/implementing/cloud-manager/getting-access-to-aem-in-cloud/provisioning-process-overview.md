@@ -1,10 +1,10 @@
 ---
 title: 'Processo di provisioning: panoramica'
 description: 'Processo di provisioning: panoramica'
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: eec64a5dc211dc72712989bf6dc81de8004e2a85
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 98%
+source-wordcount: '288'
+ht-degree: 93%
 
 ---
 
@@ -26,13 +26,10 @@ Questa sezione riguarda gli articoli principali su:
 
 Una volta completato il provisioning automatico:
 
-* Concessione dei diritti di accesso: viene creata un’organizzazione all’interno di Adobe Identity Management System (IMS)
+* Concessione dei diritti di accesso: Adobe creerà un’organizzazione all’interno di Adobe Identity Management System (IMS)
 * Per impostazione predefinita, le autorizzazioni di amministrazione vengono concesse all’amministratore designato.
 * L’amministratore può aggiungere utenti e ruoli per altri membri del gruppo tramite Admin Console
 * È possibile rivedere le autorizzazioni degli utenti basate sui ruoli per determinare le assegnazioni delle autorizzazioni in Cloud Manager
-
-![processoverview.jpg](assets/processOverview.jpg)
-
 
 Per ulteriori informazioni, consulta [Onboarding in Experience Manager as a Cloud Service su Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html).
 
@@ -49,8 +46,6 @@ Per ulteriori informazioni, consulta [Onboarding in Experience Manager as a Clou
 
 ### 2. Onboarding delle organizzazioni in Adobe Admin Console:
 
-![processoverview2.jpg](assets/processOverview2.jpg)
-
 * Amministratore di sistema:
    * Esegue il provisioning di programmi e ambienti di AEM.
    * Accede a Admin Console per le attività amministrative.
@@ -61,8 +56,6 @@ Per ulteriori informazioni, consulta [Onboarding in Experience Manager as a Clou
    * Gestisce gruppi, autorizzazioni e privilegi locali.
 
 ### 3. Onboarding degli utenti e gestione degli accessi in Admin Console:
-
-![processoverview3.jpg](assets/processOverview3.jpg)
 
 Per l’onboarding degli utenti sono disponibili tre metodi, a seconda delle dimensioni e delle preferenze:
 * Creare manualmente gli utenti in Admin Console

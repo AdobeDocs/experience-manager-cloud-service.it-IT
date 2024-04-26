@@ -2,10 +2,10 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 8f7ddeea27df8e765a7c83c74af25961748ee26d
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '2660'
-ht-degree: 77%
+source-wordcount: '2365'
+ht-degree: 70%
 
 ---
 
@@ -41,9 +41,9 @@ Per aggiungere o modificare un ambiente, un utente deve essere membro di **Propr
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , tocca o fai clic sul programma per il quale desideri aggiungere un ambiente.
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , tocca o fai clic sul programma per il quale desideri aggiungere un ambiente.
 
-1. Per aggiungere un ambiente, dalla pagina **[Panoramica programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)**, accedi alla scheda **Ambienti** e fai clic su **Aggiungi ambiente**.
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** console, fai clic su **Aggiungi ambiente** il **Ambienti** per aggiungere un ambiente.
 
    ![Scheda Ambienti](assets/no-environments.png)
 
@@ -123,9 +123,9 @@ Se desideri effettuare il provisioning di [rete avanzata](/help/security/configu
 
 ## Dettagli dell’ambiente {#viewing-environment}
 
-La scheda **Ambienti** nella pagina Panoramica ti consente di accedere ai dettagli di un ambiente in due modi.
+Dalla sezione **Panoramica** , è possibile accedere ai dettagli di un ambiente in due modi.
 
-1. Dalla pagina **Panoramica**, fai clic sulla scheda **Ambienti** nella parte superiore della schermata.
+1. Dalla sezione **Panoramica** , fare clic su **Ambienti** nel pannello di navigazione laterale.
 
    ![Scheda Ambienti](assets/environments-tab2.png)
 
@@ -135,9 +135,9 @@ La scheda **Ambienti** nella pagina Panoramica ti consente di accedere ai dettag
 
 1. La scheda **Ambienti** apre ed elenca tutti gli ambienti del programma.
 
-   ![Scheda Ambienti](assets/environment-view-2.png)
+   ![Scheda Ambienti](assets/environments-tab2.png)
 
-1. Fai clic su un ambiente dell’elenco per visualizzarne i dettagli.
+1. Tocca o fai clic su un ambiente nell’elenco per visualizzarne i dettagli.
 
    ![Dettagli dell’ambiente](assets/environ-preview1.png)
 
@@ -302,24 +302,11 @@ Seleziona **Accesso locale** dal menu con i puntini di sospensione dell’ambien
 
 ## Gestione dei nomi di dominio personalizzati {#manage-cdn}
 
-I nomi di dominio personalizzati sono supportati in Cloud Manager per i programmi Sites, sia per i servizi di pubblicazione sia per quelli di anteprima. Ogni ambiente di Cloud Manager può ospitare fino a un massimo di 250 domini personalizzati.
+I nomi di dominio personalizzati sono supportati in Cloud Manager per i programmi Sites sia per i servizi di pubblicazione che per quelli di anteprima.
 
-Per configurare i nomi di dominio personalizzati, accedi alla scheda **Ambienti** e fai clic su un ambiente per visualizzare i relativi dettagli.
-
-Per poter aggiungere un nome di dominio personalizzato in Cloud Manager, l’utente deve avere il ruolo **Proprietario business** o **Responsabile dell’implementazione**
-
-![Dettagli dell’ambiente](assets/domain-names.png)
-
-Nell’ambito del servizio di pubblicazione dell’ambiente, è possibile eseguire le azioni indicate di seguito.
-
-* [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-
-* [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-
-* [Controllo dello stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) o di un [certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
-
-* [Gestione degli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
-
+>[!TIP]
+>
+>Per ulteriori informazioni, consulta il documento [Introduzione ai nomi di dominio personalizzati.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 ## Gestione degli elenchi IP consentiti {#manage-ip-allow-lists}
 
@@ -329,23 +316,8 @@ Per gestire gli elenchi IP consentiti, accedi alla scheda **Ambienti** della pag
 
 ### Applicazione di un elenco IP consentiti {#apply-ip-allow-list}
 
-Applicando un elenco IP consentiti, tutti gli intervalli IP inclusi nella definizione dell’elenco vengono associati a un servizio di authoring o pubblicazione in un ambiente. Per applicare un elenco IP consentiti, l’utente con il ruolo **Proprietario business** o **Responsabile dell’implementazione** deve aver effettuato l’accesso.
+L’applicazione di un elenco Consentiti inserii nell&#39;elenco Consentiti di IP associa tutti gli intervalli IP inclusi nella definizione dell’IP a un servizio Author o Publish in un ambiente.
 
-Per poter applicare l’elenco IP consentiti a un ambiente, l’elenco deve esistere in Cloud Manager. Per ulteriori informazioni sull’elenco IP consentiti in Cloud Manager, consulta [Introduzione agli Elenchi IP consentiti in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-**Per applicare un elenco IP consentiti:**
-
-1. Dalla scheda **Ambienti** della schermata **Panoramica** del programma, accedi all’ambiente specifico e seleziona la tabella **Elenco IP consentiti**.
-1. Utilizza i campi di input nella parte superiore della tabella di inserisce nell&#39;elenco Consentiti dell’IP in modo da poter selezionare il inserisco nell&#39;elenco Consentiti dell’ IP e il servizio Author o Publish a cui desideri applicarlo.
-1. Fai clic su **Applica** e conferma quanto inserito.
-
-### Annullamento dell’applicazione di un elenco IP consentiti {#unapply-ip-allow-list}
-
-Rimuovendo un elenco IP consentiti, tutti gli intervalli IP inclusi nella definizione dell’elenco vengono rimossi da un servizio di authoring o pubblicazione in un ambiente. Per annullare l’applicazione di un elenco IP consentiti, l’utente con il ruolo **Proprietario business** o **Responsabile della distribuzione** deve aver effettuato l’accesso.
-
-**Per annullare l’applicazione di un elenco IP consentiti:**
-
-1. Dalla scheda **Ambienti** della schermata **Panoramica** del programma, accedi all’ambiente specifico e seleziona la tabella **Elenco IP consentiti**.
-1. Identifica la riga in cui è elencata la regola dell’elenco IP consentiti che desideri rimuovere.
-1. Seleziona il pulsante con i puntini di sospensione alla fine della riga.
-1. Seleziona **Annulla applicazione** e conferma quanto inserito.
+>[!TIP]
+>
+>Per ulteriori informazioni, consulta il documento [Introduzione agli Elenchi consentiti IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)

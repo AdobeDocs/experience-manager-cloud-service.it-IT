@@ -2,10 +2,10 @@
 title: Lo strumento Copia contenuto
 description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai loro ambienti di produzione su AEM as a Cloud Service ad ambienti inferiori a scopo di test.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 34%
+source-wordcount: '1286'
+ht-degree: 33%
 
 ---
 
@@ -49,9 +49,7 @@ Prima di poter copiare qualsiasi contenuto, è necessario definire un set di con
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
-
-1. Dalla schermata **Ambienti**, passa alla pagina **Set di contenuti**.
+1. Utilizzando il pannello di navigazione laterale, passa a **Set di contenuti** scheda da **Panoramica** pagina.
 
 1. In alto a destra nella schermata, fai clic su **Aggiungi set di contenuti**.
 

@@ -1,15 +1,15 @@
 ---
-title: Dashboard prestazioni CDN
+title: Dashboard delle prestazioni CDN
 description: Scopri in che modo Cloud Manager valuta le prestazioni della rete di distribuzione dei contenuti (CDN) e cosa puoi imparare dal dashboard.
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-
-# Dashboard prestazioni CDN {#cdn-performance}
+# Dashboard delle prestazioni CDN {#cdn-performance}
 
 Scopri in che modo Cloud Manager valuta le prestazioni della rete di distribuzione dei contenuti (CDN) e cosa puoi imparare dal dashboard.
 
@@ -25,7 +25,7 @@ La dashboard CDN è disponibile nella pagina di panoramica di ogni programma.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** tocca o fai clic sul programma di cui desideri visualizzare il dashboard CDN.
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , tocca o fai clic sul programma di cui desideri visualizzare il dashboard CDN.
 
    ![Pagina I miei programmi](assets/my-programs.png)
 

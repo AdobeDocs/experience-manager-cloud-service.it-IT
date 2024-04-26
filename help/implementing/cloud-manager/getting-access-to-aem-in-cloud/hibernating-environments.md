@@ -2,7 +2,7 @@
 title: Sospensione e disattivazione degli ambienti sandbox
 description: Scopri in che modo gli ambienti di un programma sandbox entrano automaticamente in modalità di sospensione e come riattivarli.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 84%
@@ -31,7 +31,7 @@ Per sospendere manualmente gli ambienti di un programma sandbox, segui la proced
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** tocca o fai clic sul programma da sospendere per visualizzarne i dettagli.
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , tocca o fai clic sul programma da sospendere per visualizzarne i dettagli.
 
 1. Dalla scheda **Ambienti**, fai clic sul pulsante con i puntini di sospensione e seleziona **Console sviluppatori**.
 
@@ -65,7 +65,7 @@ Puoi sospendere manualmente il programma sandbox da Console sviluppatori.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** tocca o fai clic sul programma che desideri riattivare per visualizzarne i dettagli.
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , tocca o fai clic sul programma da riattivare per visualizzarne i dettagli.
 
 1. Dalla scheda **Ambienti**, fai clic sul pulsante con i puntini di sospensione e seleziona **Console sviluppatori**.
 

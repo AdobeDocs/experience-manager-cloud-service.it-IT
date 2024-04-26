@@ -2,7 +2,7 @@
 title: Controllo dello stato del nome di dominio
 description: Scopri come determinare se il nome di dominio personalizzato è stato verificato correttamente da Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 84%
@@ -16,7 +16,7 @@ In Cloud Manager è possibile determinare lo stato del nome di dominio personali
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , selezionare il programma.
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , selezionare il programma.
 
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 

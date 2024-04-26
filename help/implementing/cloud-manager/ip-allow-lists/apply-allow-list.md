@@ -2,7 +2,7 @@
 title: Applicazione e rimozione degli elenchi IP consentiti
 description: Scopri come applicare e rimuovere gli elenchi IP consentiti dagli ambienti.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 81%
@@ -20,7 +20,7 @@ L’utente con il ruolo **Proprietario business** o **Responsabile dell’implem
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , selezionare il programma.
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , selezionare il programma.
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 1. Dalla schermata **Ambienti**, accedi alla pagina dei dettagli dell’ambiente specifico, quindi accedi alla tabella **Elenco IP consentiti**.
 1. Utilizza i campi di input nella parte superiore della tabella per selezionare l’elenco consentiti IP e il servizio Author o Publish a cui desideri applicarlo.

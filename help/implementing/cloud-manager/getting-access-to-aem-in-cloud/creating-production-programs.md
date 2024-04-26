@@ -2,10 +2,10 @@
 title: Creazione di programmi di produzione
 description: Scopri come creare un programma di produzione per ospitare il traffico in tempo reale con Cloud Manager.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: a25f1c674534792353cb9b34d4f88a5e32230bc1
+source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 33%
+source-wordcount: '1031'
+ht-degree: 34%
 
 ---
 
@@ -22,7 +22,7 @@ Per creare un programma di produzione, segui la procedura riportata di seguito. 
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** schermo, tocca o fai clic su **Aggiungi programma** nell’angolo in alto a destra dello schermo.
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tocca o fai clic su **Aggiungi programma** nell’angolo in alto a destra dello schermo.
 
    ![Pagina di destinazione di Cloud Manager](assets/log-in.png)
 
@@ -48,7 +48,7 @@ Per creare un programma di produzione, segui la procedura riportata di seguito. 
 
 1. Nella scheda **Data di pubblicazione**, inserisci la data di pubblicazione pianificata per il programma di produzione.
 
-   ![Definizione della data di pubblicazione pianificata](assets/setup-go-live.png)
+   ![Definizione della data di pubblicazione pianificata](assets/set-up-go-live.png)
 
    * Questa data può essere modificata in qualsiasi momento.
    * Questa data è solo per uso informativo e attiva il widget di pubblicazione sul [**Panoramica del programma** pagina](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) fornire collegamenti interni al prodotto alla documentazione sulle best practice as a Cloud Service per l’AEM in modo tempestivo, in linea con il percorso che culmina in un’esperienza di pubblicazione fluida e di successo.
@@ -117,9 +117,9 @@ Oltre alle adesioni richieste, il 99,99% degli SLA prevede requisiti aggiuntivi 
 
    ![Panoramica del programma](assets/set-up-prod5.png)
 
-Se in qualsiasi momento è necessario passare a un altro programma o tornare alla pagina della panoramica per crearne uno nuovo, fai clic sul nome del programma nella parte superiore sinistra della schermata per visualizzare **Accedi a** opzione.
-
-![Accedi a](assets/create-program-a1.png)
+>[!TIP]
+>
+>Consulta il documento [Navigazione nell’interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/navigation.md) per informazioni dettagliate su come navigare in Cloud Manager e sulla **I miei programmi** console.
 
 >[!NOTE]
 >

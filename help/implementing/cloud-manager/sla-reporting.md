@@ -2,10 +2,10 @@
 title: Generazione rapporti SLA
 description: Scopri come visualizzare le prestazioni dell’ambiente di produzione AEM relative al contratto del livello di servizio (SLA) sottoscritto.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: f037f47f0b131c87301faf4458658224d1d62a43
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 55%
+source-wordcount: '405'
+ht-degree: 52%
 
 ---
 
@@ -20,9 +20,9 @@ I dati della generazione rapporti SLA sono disponibili per ogni programma di pro
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selezionare il programma.
+1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , selezionare il programma.
 
-1. Dalla pagina **Panoramica**, accedi alla scheda **Rapporti**.
+1. Utilizzando il pannello di navigazione laterale, passa a **Rapporti** scheda da **Panoramica** pagina.
 
 1. Fai clic sull’anno desiderato per visualizzare i dati SLA riportati nel grafico.
 
