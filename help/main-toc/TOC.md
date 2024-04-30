@@ -177,7 +177,7 @@ ht-degree: 99%
       + [Note aggiornate sulla versione del connettore avanzato Workfront per Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + Note sulla versione per generare varianti {#generate-variations}
       + [Note sulla versione corrente per generare varianti](/help/generative-ai/release-notes-generate-variations.md)
-   + [Novità](/help/release-notes/what-is-new.md)
+   + [Novità?](/help/release-notes/what-is-new.md)
    + [Modifiche di rilievo in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md)
    + [Canale Prerelease](/help/release-notes/prerelease.md)
@@ -1068,7 +1068,7 @@ ht-degree: 99%
          + [Architettura dell’editor universale](/help/implementing/universal-editor/architecture.md)
          + [App di esempio SecurBank](/help/implementing/universal-editor/securbank.md)
          + [Guida introduttiva all’editor universale in AEM](/help/implementing/universal-editor/getting-started.md)
-         + [Panoramica dell’editor universale per sviluppatori ](/help/implementing/universal-editor/developer-overview.md)
+         + [Panoramica dell’editor universale per sviluppatori](/help/implementing/universal-editor/developer-overview.md)
          + [Attributi e tipi di elementi](/help/implementing/universal-editor/attributes-types.md)
          + [Definizioni di modelli, campi e tipi di componenti](/help/implementing/universal-editor/field-types.md)
          + [Autenticazione dell’editor universale](/help/implementing/universal-editor/authentication.md)
