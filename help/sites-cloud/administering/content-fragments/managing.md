@@ -4,9 +4,9 @@ description: Scopri come gestire i frammenti di contenuto AEM dalla console e da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
 workflow-type: tm+mt
-source-wordcount: '2643'
+source-wordcount: '2628'
 ht-degree: 45%
 
 ---
@@ -302,11 +302,7 @@ Puoi pubblicare i frammenti di contenuto in:
 
   >[!NOTE]
   >
-  >Per ulteriori dettagli sugli ambienti di anteprima, vedi:
-  >
-  >* [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-  >* [Configurazione delle impostazioni OSGi per il livello di anteprima](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-  >* [Eseguire il debug dell’ambiente di anteprima tramite Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+  >Per ulteriori dettagli sugli ambienti di anteprima, vedi [Gestisci ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >

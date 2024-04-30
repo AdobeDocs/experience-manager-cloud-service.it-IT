@@ -2,10 +2,10 @@
 title: Anteprima del contenuto
 description: Scopri come utilizzare il servizio di anteprima AEM per visualizzare in anteprima i contenuti prima della pubblicazione.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 77%
+source-wordcount: '298'
+ht-degree: 75%
 
 ---
 
@@ -54,11 +54,3 @@ Il contenuto può anche essere pubblicato in anteprima utilizzando un [flusso di
 Per annullare la pubblicazione di contenuti dall’ambiente di **Anteprima** si segue sostanzialmente lo stesso processo richiesto per [annullare la pubblicazione delle pagine](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) dall’ambiente di **Pubblicazione**.
 
 L’unica differenza è che puoi impostare la **Destinazione** su **Anteprima**.
-
-## Ulteriori informazioni {#further-information}
-
-Consulta anche:
-
-* [Configurazione delle impostazioni OSGi per il livello di anteprima](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-
-* [Eseguire il debug dell’ambiente di anteprima tramite Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
