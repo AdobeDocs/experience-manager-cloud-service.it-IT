@@ -4,7 +4,7 @@ description: Il monitoraggio degli utenti in tempo reale per i moduli di Edge De
 feature: Edge Delivery Services
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '701'
 ht-degree: 100%
 

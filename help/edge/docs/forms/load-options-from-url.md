@@ -4,21 +4,21 @@ description: Le opzioni dell’elenco a discesa sono incluse in un foglio di cal
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 source-git-commit: e61ef529dc562862bd02d7767e45de3e2ec4983b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # Carica le opzioni dell’elenco a discesa dall’URL
 
-Forms spesso include menu a discesa che gli utenti possono selezionare tra le opzioni predefinite. Queste opzioni vengono in genere definite all’interno del modulo stesso, ma la gestione di elenchi lunghi può essere complicata. Questa guida illustra come migliorare l’authoring dei moduli caricando le opzioni a discesa da un foglio di calcolo separato tramite un URL.
+I moduli spesso includono menu a discesa che gli utenti possono selezionare dalle opzioni predefinite. Queste opzioni vengono in genere definite all’interno del modulo stesso, ma la gestione di elenchi lunghi può risultare complicata. Questa guida illustra come migliorare l’authoring dei moduli caricando le opzioni a discesa da un foglio di calcolo separato tramite un URL.
 
 
-I vantaggi del caricamento di un elenco a discesa da un foglio di calcolo separato sono:
+I vantaggi del caricamento delle opzioni a discesa da un foglio di calcolo separato sono:
 
-* Gestione semplificata: gestisci le opzioni a discesa in una posizione centralizzata per semplificare gli aggiornamenti e le aggiunte.
-* Maggiore efficienza: elimina la necessità di aggiungere manualmente elenchi di opzioni lunghi all’interno della definizione del modulo.
+* Gestione semplificata: mantiene le opzioni a discesa in una posizione centralizzata per semplificare gli aggiornamenti e le aggiunte.
+* Maggiore efficienza: elimina la necessità di aggiungere manualmente lunghi elenchi di opzioni all’interno della definizione del modulo.
 
 
 
@@ -35,18 +35,20 @@ Alla fine di questo articolo imparerai a:
 
 Definizione delle opzioni in un foglio di calcolo separato
 
-1. Creare un foglio di calcolo:
-   1. Individuare la cartella dei progetti AEM in Microsoft® SharePoint o Google Drive.
-   1. Aggiungi un nuovo foglio. Ad esempio, &quot;shared-country&quot;.
-1. Definisci colonne opzione: aggiungi due colonne: &quot;Opzione&quot; e &quot;Valore&quot;.
-   * &quot;Option&quot; definisce il testo visualizzato nel menu a discesa.
-   * &quot;Value&quot; definisce il valore inviato quando un utente seleziona l’opzione.
+1. Crea un foglio di calcolo:
+   1. Individua la cartella del progetto AEM in Microsoft® SharePoint o Google Drive.
+   1. Aggiungi un nuovo foglio. Ad esempio, “paese-condiviso”.
+1. Definisci le colonne delle opzioni:
+Aggiungi due colonne: “Opzione” e “Valore”.
+   * “Opzione” definisce il testo visualizzato nel menu a discesa.
+   * “Valore” definisce il valore inviato quando un utente seleziona l’opzione.
 
    >[!NOTE]
    >
-   >Se sia l&#39;opzione che il valore sono identici, è necessaria solo la colonna &quot;Opzione&quot;.
+   >Se l’opzione e il valore sono identici, è necessaria solo la colonna “Opzione”.
 
-1. Compilare il foglio di calcolo: immettere le opzioni relative al paese nella colonna &quot;Opzione&quot; (e nella colonna &quot;Valore&quot;, se necessario).
+1. Compila il foglio di calcolo:
+Immetti le opzioni relative al paese nella colonna “Opzione” (e nella colonna “Valore”, se necessario).
 
    Per la struttura, consulta l’esempio seguente.
 
