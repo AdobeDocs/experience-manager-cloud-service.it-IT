@@ -2,10 +2,10 @@
 title: Credenziali JWT nella console Adobe Developer obsolete
 description: Scopri l’impatto della rimozione delle credenziali JWT nella console Adobe Developer sull’AEM.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: b52da0a604d2c320d046136f5e526e2b244fa6cb
+source-git-commit: 802e29017d3f1e59ee1676b4172292cb3453648a
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 72%
+source-wordcount: '557'
+ht-degree: 56%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 72%
 
 Questo articolo fornisce alcuni contesti aggiuntivi su come AEM as a Cloud Service dovrebbe gestire l’obsolescenza.
 
-Attualmente, l’aspetto principale è che le funzioni AEM non supportano ancora le nuove credenziali server-to-server di OAuth. Il supporto per AEM as a Cloud Service sarà presto disponibile entro la metà di aprile 2024 tramite una versione dell’AEM. È possibile che sia stata ricevuta un’e-mail con le istruzioni per la migrazione delle credenziali JWT, ma occorre tenere presente che è possibile e si dovrebbe rimandare la migrazione delle credenziali fino a quando AEM non supporterà il nuovo tipo di credenziali da server a server OAuth.
+Attualmente, l’aspetto principale è che le funzioni AEM non supportano ancora le nuove credenziali server-to-server di OAuth. Il supporto per AEM as a Cloud Service sarà presto disponibile entro metà maggio 2024 tramite una versione dell’AEM. È possibile che sia stata ricevuta un’e-mail con le istruzioni per la migrazione delle credenziali JWT, ma occorre tenere presente che è possibile e si dovrebbe rimandare la migrazione delle credenziali fino a quando AEM non supporterà il nuovo tipo di credenziali da server a server OAuth.
 
-Le sezioni seguenti elencano gli scenari in cui i clienti devono (o a volte non devono) sostituire le credenziali del proprio account di servizio (JWT) con credenziali server-to-server OAuth, una volta che l’AEM li supporta a metà aprile. [Scopri come](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) sostituire le credenziali in futuro.
+Le sezioni seguenti elencano gli scenari in cui i clienti devono (o a volte non devono) sostituire le credenziali del proprio account di servizio (JWT) con credenziali server-to-server OAuth, una volta che l’AEM li ha supportati a metà maggio. [Scopri come](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) sostituire le credenziali in futuro.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Le sezioni seguenti elencano gli scenari in cui i clienti devono (o a volte non 
 
 ## Integrazione di AEM con altre soluzioni Adobe {#integrating-aem-with-other-adobe-solutions}
 
-**Azione**: per la migrazione attendi dopo la fine di aprile 2024, quando AEM la supporterà (in quel momento questo articolo verrà aggiornato)
+**Azione**: attendi di effettuare la migrazione dopo metà maggio 2024, quando l’AEM la supporterà (questo articolo verrà aggiornato in tale data)
 
 **Versioni di AEM pertinenti**: AEM as a Cloud Service.
 
@@ -38,15 +38,15 @@ L’interfaccia utente di authoring di AEM viene utilizzata per configurare le i
 
 ![Integrazione di AEM con altre soluzioni](/help/security/assets/jwt-deprecation.png)
 
-Ad esempio, ecco [le istruzioni](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html?lang=it) per configurare l’integrazione con Adobe Target. La chiave API nella sezione [Completamento della configurazione IMS in AEM](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html#completing-the-ims-configuration-in-aem) deve essere migrata al tipo di credenziali da server a server OAuth, quando AEM ne fornirà il supporto a metà aprile. Tali istruzioni saranno aggiornate a metà aprile per aiutarti ad applicare le nuove credenziali server-to-server OAuth.
+Ad esempio, ecco [le istruzioni](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims) per configurare l’integrazione con Adobe Target. Chiave API in [Completamento della configurazione IMS in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims#completing-the-ims-configuration-in-aem) deve essere migrata al tipo di credenziali server-to-server OAuth, una volta che l’AEM supporta tali credenziali a metà maggio. Tali istruzioni saranno aggiornate a metà maggio per aiutarti ad applicare le nuove credenziali server-to-server OAuth.
 
 ## API di Cloud Manager {#cloud-manager-apis}
 
-**Azione**: per la migrazione attendi dopo la fine di aprile 2024, quando AEM lo supporterà (in quel momento questo articolo verrà aggiornato).
+**Azione**: esegui la migrazione alle credenziali OAuth server-to-server.
 
 **Versioni di AEM pertinenti**: AEM as a Cloud Service
 
-I progetti Adobe Developer Console vengono creati in modo che possano richiamare le [API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). È opportuno migrare le credenziali nel progetto Adobe Developer al tipo di credenziali da server a server OAuth, quando AEM e Cloud Manager ne forniranno il supporto.
+I progetti Adobe Developer Console vengono creati in modo che possano richiamare le [API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). È necessario migrare le credenziali nel progetto Adobe Developer al tipo di credenziali server-to-server OAuth prima che le credenziali JWT obsolete scadano nel gennaio 2025.
 
 ## Progetti generati automaticamente {#autogen-projects}
 
