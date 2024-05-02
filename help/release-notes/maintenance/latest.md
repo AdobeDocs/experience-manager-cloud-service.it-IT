@@ -2,10 +2,10 @@
 title: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 60952db4172b882b71a0b230fc8f4c27154e9cc0
+source-git-commit: 79dcf8a4e9834beeb466ed9270a3f5c6aa67aa9a
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 62%
+source-wordcount: '723'
+ht-degree: 24%
 
 ---
 
@@ -13,26 +13,69 @@ ht-degree: 62%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 15977 {#release-15977}
+## Versione 16145 {#release-16145}
 
-Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 15977, rilasciata al pubblico il 19 aprile 2024. La versione di manutenzione precedente era 15939.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 16145, rilasciata pubblicamente il giovedì 1 maggio 2024. La versione di manutenzione precedente era 15977.
 
 Con l’attivazione delle funzioni 2024.4.0 viene fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Miglioramenti {#enhancements-15977}
+### Miglioramenti {#enhancements-16145}
 
-* GRANITE-51335: ottimizza il controllo dello stato di AEM per aumentare la stabilità dell’istanza.
+* ASSETS-23489: miglioramenti di informazioni sull’archivio.
+* ASSETS-26926: miglioramenti al polling di caricamento di Dynamic Medie.
+* ASSETS-30351: la finestra di dialogo per il download deve caricare le dimensioni del rendering di Dynamic Medie in modo asincrono.
+* ASSETS-30379: migliora la risoluzione delle licenze DRM durante il download.
+* ASSETS-31058: applica le rappresentazioni con ritaglio avanzato nell’interfaccia utente di AEM assets nella scheda delle rappresentazioni e genera immagini ritagliate automaticamente quando l’utente fa clic su di esse.
+* ASSETS-31218: aggiungi il supporto per smartcrop denominato nell’api di consegna delle risorse.
+* ASSETS-31979: aggiungi un indicatore visivo e disabilita le funzioni dell’interfaccia utente durante le operazioni di Async Assets.
+* ASSETS-32735: miglioramenti all’evento di aggiornamento dei metadati delle risorse.
+* ASSETS-34661: API per URL di anteprima e/o consegna DM da AEMaaCS Publish.
+* ASSETS-37259: miglioramenti nell’analisi dell’XMP.
+* ASSETS-37263: consenti l’annullamento di processi asincroni di Assets non riusciti.
+* CNTBF-114: miglioramenti al flusso di ritorno dei contenuti.
+* CNTBF-148: miglioramenti al flusso di ritorno dei contenuti.
+* CQ-4356992: Ultime traduzioni per AEM e Granite.
+* SITES-19326: aggiorna i collegamenti nell’interfaccia utente di Assets per aprire CF nel nuovo editor CF.
+* SITES-20686: GraphQL - Espone l’URL di Dynamic Medie tramite _dmS7Url (per risorse non immagini).
+* SKYOPS-68091: aggiornamento a Java 11.0.20.
 
-### Problemi risolti {#fixed-issues-15977}
+### Problemi risolti {#fixed-issues-16145}
 
-* CQ-4357226: correggi la regressione nel supporto delle configurazioni IMS per le credenziali OAuth.
-* GRANITE-51335: aggiornamento di rateLimit alla versione 5.0.4. Risolti i problemi delle registrazioni di Felix Health Check.
+* ASSETS-32321: la risoluzione del flusso di lavoro di post-elaborazione non riesce se nella cartella predecessore manca il sottonodo &quot;jcr:content&quot;.
+* ASSETS-33856: il predefinito per immagini JPEG scarica il file come TXT.
+* ASSETS-34096: è stata corretta la vista dell’interfaccia utente touch per il rapporto sul download asincrono.
+* ASSETS-34493: errore durante il caricamento della finestra di dialogo di download dopo l’attivazione della funzione per più società.
+* ASSETS-34824: l’URL della copia risulta vuoto per le cartelle DM disabilitate.
+* ASSETS-35226: il flusso di lavoro di post-elaborazione non è stato risolto se specificato nella directory principale DAM.
+* ASSETS-35559: riduci il registro degli errori di caricamento batch DM a WARN.
+* ASSETS-35860: conversione errata del fuso orario nella vista a colonne di AEM Assets.
+* ASSETS-35935: navigazione errata nelle cartelle dopo la chiusura della revisione del payload.
+* ASSETS-35961: il pulsante Aggiungi ritaglio non funziona nel profilo immagine.
+* ASSETS-36227: disabilita il servizio FolderPreviewUpdaterImpl al momento della pubblicazione.
+* ASSETS-36943: quando in una cartella nella vista a elenco sono presenti elementi CF e altri elementi non CF, non vengono allineate le colonne.
+* ASSETS-36990: i processi di metadati esportati non riescono/sono lenti con un numero elevato di proprietà.
+* ASSETS-37113: il processo Rielabora risorse termina immediatamente se la query restituisce solo risultati CF.
+* ASSETS-37260: l’esportazione dei metadati nell’AEM può produrre un CSV non valido.
+* ASSETS-37261: PPTx e PDF Annotation Problema su AEM Assets.
+* ASSETS-37282: potenziale lentezza nella richiesta di apertura di una cartella di grandi dimensioni.
+* ASSETS-37330: l&#39;importazione in blocco da OneDrive crea una struttura di cartelle AEM non corretta.
+* ASSETS-37609: rimuovi la ricerca conf legacy scene7.
+* ASSETS-38016: alcuni aggiornamenti dei metadati non vengono tracciati correttamente negli eventi.
+* CQ-4357161: La schermata Payload casella in entrata AEM restituisce 404.
+* GRANITE-50041: l’opzione Aggiungi rappresentazione non funziona se la risoluzione è superiore a 1440 px quando nel menu a discesa è presente solo l’opzione &quot;Aggiungi rappresentazione&quot;.
+* GRANITE-50279: nomi delle settimane non ordinati nel componente Coral Datepicker.
+* SCRNS-3949: il tempo della richiesta di recupero del canale degli schermi è troppo lungo.
+* SCRNS-3981 [Canale sequenza] La schermata nera si verifica quando la sequenza degli eventi di caricamento/scaricamento dell’elemento viene distorta.
+* SCRNS-4180 [Canale sequenza] La sequenza si interrompe con una schermata vuota per i canali con video di durata -1 al ripristino dalla miniatura di fallback.
+* SCRNS-4245 [Canale sequenza] Durata limitata della schermata vuota quando un video viene caricato e cambiato dalla miniatura di fallback.
+* SITES-16055: correggi i collegamenti alle origini Live Copy e Live Copy all’interno della rispettiva pagina delle proprietà.
+* SCRNS-4243: pulsanti mancanti nel provider di contenuti per utenti non amministratori.
 
-### Problemi noti {#known-issues-15977}
+### Problemi noti {#known-issues-16145}
 
-* **(Solo per AEM Forms)** Dopo aver installato le 15977 sulla versione di manutenzione di AEM Cloud Foundation, i campi del modulo adattivo vengono riprodotti in ordine errato durante la creazione dei moduli e per i moduli pubblicati. Se utilizzi AEM Forms, l’Adobe consiglia di non eseguire l’aggiornamento alla versione 15977 fino a quando il problema non viene risolto nella prossima versione di manutenzione. Così facendo si può evitare qualsiasi inconveniente.
+Nessuno.
 
-### Funzioni e API obsolete {#deprecated-15977}
+### Funzioni e API obsolete {#deprecated-16145}
 
 * [Credenziali JWT nella console Adobe Developer obsolete](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
@@ -60,7 +103,7 @@ Con l’attivazione delle funzioni 2024.4.0 viene fornito il set di funzioni com
 
 Per sapere cosa è obsoleto o rimosso in AEM as a Cloud Service, vedi [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
-### Tecnologie incorporate {#embedded-tech-15977}
+### Tecnologie incorporate {#embedded-tech-16145}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
