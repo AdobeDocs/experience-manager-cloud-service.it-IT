@@ -3,10 +3,10 @@ title: Configurazione delle pagine di errore CDN
 description: Scopri come ignorare la pagina di errore predefinita ospitando file statici nell’archiviazione self-hosted, ad esempio Amazon S3 o Azure Blob Storage, e facendo riferimento a essi in un file di configurazione distribuito utilizzando la pipeline di configurazione di Cloud Manager.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
-source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
+source-git-commit: 69ffcccae150a5e49c6344973890733f3e5b74ae
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 1%
+source-wordcount: '376'
+ht-degree: 5%
 
 ---
 
@@ -18,14 +18,21 @@ Nel caso improbabile che il [CDN gestito da Adobe](/help/implementing/dispatcher
 
 Prima di poter sovrascrivere la pagina di errore predefinita, è necessario effettuare le seguenti operazioni:
 
-* Innanzitutto, crea questa cartella e struttura di file nella cartella di livello principale del progetto Git:
+* Crea questa cartella e struttura di file nella cartella di livello principale del progetto Git:
 
 ```
 config/
      cdn.yaml
 ```
 
-* In secondo luogo, `cdn.yaml` il file di configurazione deve contenere i metadati e i riferimenti alla pagina di errore, come descritto di seguito.
+* Il `cdn.yaml` Il file di configurazione deve contenere sia i metadati che le regole descritte negli esempi seguenti. Il `kind` il parametro deve essere impostato su `CDN` e la versione deve essere impostata sulla versione dello schema, attualmente `1`.
+
+* Crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager. Consulta [configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configurazione di pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+
+**Note**
+
+* Al momento gli RDE non supportano la pipeline di configurazione.
+* Puoi utilizzare `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad es. `yq cdn.yaml`).
 
 ### Configurazione {#configuration}
 
