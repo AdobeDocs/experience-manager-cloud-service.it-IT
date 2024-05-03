@@ -2,7 +2,7 @@
 title: Definizioni di modelli, campi e tipi di componenti
 description: Scopri i campi e i tipi di componenti che possono essere modificati dall’Editor universale nella barra delle proprietà, con alcuni esempi. Scopri come creare una definizione di modello e un collegamento al componente per sfruttare al meglio la tua app.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 9f0a3bf5c8d839fa2ab6744c6fa7f97cc5fe8684
+source-git-commit: c2dd0ed800739c2194ab20267f72b85461f3c5b8
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 10%
@@ -289,6 +289,8 @@ Un tipo di componente contenitore consente il raggruppamento di componenti. Offr
 >[!TAB Schermata]
 
 ![Schermata del tipo di componente del contenitore](assets/component-types/container.png)
+
+>[!ENDTABS]
 
 #### Frammenti di contenuto {#content-fragment}
 

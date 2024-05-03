@@ -2,10 +2,10 @@
 title: Introduzione a Cloud Manager
 description: Scopri in che modo Cloud Manager supporta il progetto AEM tramite programmi, ambienti e pipeline.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6181b066742357169b67f605ac3970685537bb5e
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 96%
+source-wordcount: '864'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Puoi accedere alla pagina Programmi e prodotti di Cloud Manager anche dalla pagi
 
 1. Seleziona **Experience Manager**.
 
-1. Il giorno **Cloud Manager** , fare clic su **Launch**
+1. Dalla scheda **Cloud Manager**, fai clic su **Avvia**
 
 ## Autorizzazioni basate sui ruoli in Cloud Manager {#role-based-permissions}
 
@@ -52,12 +52,16 @@ Puoi accedere alla pagina Programmi e prodotti di Cloud Manager anche dalla pagi
 | Generazione del token di accesso personale | Accesso a Git |  | x |  | x |
 | Crea un RDE | Crea un ambiente di sviluppo rapido | x |  |  | x |
 | Reimposta un RDE | Ripristina un ambiente di sviluppo rapido | x |  |  | x |
-| Creare/modificare i set di contenuti | Creare o modificare un set di contenuti per la copia del contenuto |  | x |  |  |
-| Avvia/annulla copia contenuto | Avviare o annullare un processo di copia del contenuto |  | x |  |  |
+| Creare e modificare il set di contenuti | Creare o modificare un set di contenuti per la copia del contenuto |  | x |  |  |
+| Avviare/annullare la copia del contenuto | Avviare o annullare il processo di copia del contenuto |  | x |  |  |
 
 >[!NOTE]
 >
 >È possibile assegnare più ruoli a un singolo utente. Ad esempio, assegnando a un utente entrambi i ruoli **Proprietario business** e **Responsabile distribuzione**, si assegna la somma delle rispettive autorizzazioni.
+
+>[!TIP]
+>
+>Sono inoltre disponibili profili di autorizzazione personalizzati con autorizzazioni configurabili. Consulta il documento [Autorizzazioni personalizzate](/help/implementing/cloud-manager/custom-permissions.md) per ulteriori dettagli.
 
 ## Programmi di Cloud Manager {#cloud-manager-programs}
 
