@@ -1,13 +1,13 @@
 ---
 title: Pubblicazione rapida su AEM e Dynamic Medie
 description: La pubblicazione rapida nella vista Assets consente di pubblicare le risorse in AEM e Dynamic Media simultaneamente o separatamente. Puoi selezionare risorse e cartelle e scegliere di pubblicarle in Dynamic Medie o AEM.
-source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
+exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
+source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
-
 
 # Pubblicare risorse in AEM e Dynamic Medie{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
@@ -124,4 +124,5 @@ Al momento, quando si pubblicano risorse su AEM e Dynamic Medie, le seguenti fun
 * Possibilità di copiare o incollare l’URL di Dynamic Medie a livello di risorsa (se le risorse vengono pubblicate in Dynamic Medie).
 * Possibilità di pubblicare riferimenti (risorse, tag e così via) durante la pubblicazione in AEM.
 * Possibilità di sovrascrivere lo stato di sincronizzazione di Dynamic Medie a livello di cartella.
-* Possibilità di sovrascrivere la modalità di pubblicazione Dynamic Medie a livello di cartella.
+* Possibilità di sovrascrivere la modalità di pubblicazione Dynamic Medie a livello di cartella
+* Gestisci pubblicazione non ancora supportato.
