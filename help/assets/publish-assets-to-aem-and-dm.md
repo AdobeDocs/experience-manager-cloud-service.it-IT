@@ -1,9 +1,9 @@
 ---
 title: Pubblicazione rapida su AEM e Dynamic Medie
-description: La pubblicazione rapida è una funzione nella nuova interfaccia utente o nella visualizzazione delle risorse. Questa funzione offre agli utenti flessibilità per pubblicare rapidamente contenuti su AEM e Dynamic Media simultaneamente o singolarmente. Ciò significa che dopo aver selezionato le risorse e le cartelle, gli utenti possono scegliere di pubblicare su Dynamic Medie o su AEM. La funzione di pubblicazione rapida consente alla nuova interfaccia di pubblicare risorse e cartelle in Dynamic Medie e AEM.
-source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
+description: La pubblicazione rapida nella vista Assets consente di pubblicare le risorse in AEM e Dynamic Media simultaneamente o separatamente. Puoi selezionare risorse e cartelle e scegliere di pubblicarle in Dynamic Medie o AEM.
+source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
