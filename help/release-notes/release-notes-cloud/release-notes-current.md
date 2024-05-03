@@ -3,10 +3,10 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 00d91be618cd7ce1fb9e78115fbe3d431b20cd34
+source-git-commit: ee16d3a0fe1fc93c215d31f7dea0e9c21e051350
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 100%
+source-wordcount: '1963'
+ht-degree: 99%
 
 ---
 
@@ -97,7 +97,7 @@ Ora puoi [assegnare o rimuovere il modulo metadati in più cartelle](/help/asset
 
 -->
 
-### Nuove funzioni nella versione prerelease di AEM Forms {#forms-pre-release}
+### Nuove funzioni di AEM Forms {#forms-new-features}
 
 * **Editor di regole visive ottimizzato per Forms adattivo basato su componenti core**: questa versione apporta un aggiornamento significativo all’editor di regole visive per i moduli adattivi basati su componenti core. Questa versione apporta un aggiornamento significativo all’editor di regole visive per i moduli adattivi basati su componenti core. Questo aggiornamento si concentra sulla semplificazione delle interazioni con le funzioni personalizzate, consentendo di creare moduli più solidi ed efficienti.
 
