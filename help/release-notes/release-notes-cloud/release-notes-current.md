@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 00d91be618cd7ce1fb9e78115fbe3d431b20cd34
 workflow-type: tm+mt
 source-wordcount: '1965'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione corrente della funzione di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.4.0) è l’venerdì 25 aprile 2024. La prossima versione funzionale (2024.5.0) è pianificata per il venerdì 30 maggio 2024.
+La data di rilascio della versione corrente della funzione di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.4.0) è il 25 aprile 2024. La prossima versione funzionale (2024.5.0) è pianificata per il 30 maggio 2024.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -69,19 +69,19 @@ Ora puoi anche [cercare le risorse disponibili nell’archivio definendo i promp
 
 **Azioni rapide per video Express**
 
-Experience Manager Assets ora include [strumenti di editing video semplici e intuitivi basati su Adobi Express](/help/assets/edit-videos-assets-view.md) per aumentare il riutilizzo dei contenuti e accelerarne la velocità. Le opzioni di modifica includono il taglio, il ritaglio, il ridimensionamento di un video e anche la conversione di un file MP4 in GIF.
+Experience Manager Assets ora include [strumenti di editing video semplici e intuitivi basati su Adobe Express](/help/assets/edit-videos-assets-view.md) per aumentare il riutilizzo dei contenuti e accelerarne la velocità. Le opzioni di modifica includono il taglio, il ritaglio, il ridimensionamento di un video e anche la conversione di un file MP4 in GIF.
 
 ![ritagliare video con Adobe Express](/help/assets/assets/adobe-express-crop-video.png)
 
 **Rappresentazioni dinamiche**
 
-Ora puoi [visualizzare e scaricare le rappresentazioni dinamiche (inclusi i ritagli avanzati)](/help/assets/renditions.md) in Experience Manager Assets. Le rappresentazioni dinamiche sono versioni personalizzate delle risorse di immagini create in tempo reale per soddisfare esigenze specifiche, ad esempio per ridimensionare le immagini in base alla risoluzione del dispositivo o per adattarle a proporzioni diverse. Questi rendering consentono alle organizzazioni di fornire esperienze personalizzate e ottimizzate per soddisfare diverse esigenze di pubblico.
+Ora puoi [visualizzare e scaricare le rappresentazioni dinamiche (inclusi i ritagli avanzati)](/help/assets/renditions.md) in Experience Manager Assets. Le rappresentazioni dinamiche sono versioni personalizzate delle risorse di immagini create in tempo reale per soddisfare esigenze specifiche, ad esempio per ridimensionare le immagini in base alla risoluzione del dispositivo o per adattarle a proporzioni diverse. Queste rappresentazioni consentono alle organizzazioni di fornire esperienze personalizzate e ottimizzate per soddisfare le diverse esigenze del pubblico.
 
 ![Rappresentazioni dinamiche](/help/assets/assets/preset_smart_crop.png)
 
 **Ridenominazione diretta di risorse e cartelle**
 
-Experience Manager Assets offre ora un’esperienza utente semplificata grazie alla [possibilità di rinominare una risorsa o una cartella con un solo clic](/help/assets/manage-organize-assets-view.md).
+Experience Manager Assets ora offre un’esperienza utente semplificata grazie alla [possibilità di rinominare una risorsa o una cartella tramite un singolo clic](/help/assets/manage-organize-assets-view.md).
 
 **Assegnare o rimuovere il modulo metadati in più cartelle**
 
@@ -167,21 +167,21 @@ Il servizio dati del monitoraggio utenti reali (RUM) offre una panoramica più p
 
 Configura il traffico nella rete CDN di Adobe nei seguenti modi:
 
-* [Richiedi trasformazioni](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) : modifica gli aspetti delle richieste in arrivo, inclusi percorsi, parametri di query e intestazioni HTTP, prima che vengano instradate all’AEM.
-* [Trasformazioni di risposta](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) : modifica le intestazioni HTTP delle risposte in uscita prima che vengano inviate al browser.
-* [Selettori di origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - indirizzare il traffico attraverso la rete CDN verso siti e applicazioni esterni all’AEM.
+* [Trasformazioni delle richieste](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations): modifica gli aspetti delle richieste in arrivo, inclusi percorsi, parametri di query e intestazioni HTTP, prima che vengano instradate in AEM.
+* [Trasformazioni delle risposte](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations): modifica le intestazioni HTTP delle risposte in uscita prima che vengano inviate al browser.
+* [Selettori di origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors): instradano il traffico attraverso la rete CDN verso siti e applicazioni esterni ad AEM.
 
-Una volta dichiarate queste regole nel controllo del codice sorgente (Git), puoi distribuirle nella rete CDN utilizzando la pipeline di configurazione di Cloud Manager. Vedi anche la funzione di reindirizzamento lato client nella sezione dei primi utenti, qui di seguito.
+Una volta dichiarate queste regole nel controllo del codice sorgente (Git), puoi distribuirle nella rete CDN utilizzando la pipeline di configurazione di Cloud Manager. Consulta anche la funzione di reindirizzamento lato client nella sezione dei primi utilizzatori, qui di seguito.
 
-### Pagine di errore CDN personalizzate {#cdn-error-pages}
+### Pagine di errore della rete CDN personalizzate {#cdn-error-pages}
 
-Nel caso improbabile che la rete CDN non possa instradare il traffico all’origine dell’AEM, può essere dichiarata una pagina di errore personalizzata, che sostituisce la versione generica. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-error-pages.md) informazioni su come distribuire pagine di errore con marchio.
+Nell’improbabile eventualità in cui la rete CDN non riesca a indirizzare il traffico all’origine AEM, può essere indicata una pagina di errore personalizzata, che sostituisce la versione generica. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-error-pages.md) su come distribuire pagine di errore con il brand.
 
 ### Programma per i primi utilizzatori {#foundation-early-adopter}
 
-#### Reindirizzamenti lato client (programma Early Adopter) {#client-side-redirects-early-adopter}
+#### Reindirizzamento lato client (programma per i primi utilizzatori) {#client-side-redirects-early-adopter}
 
-Configura i reindirizzamenti lato client 301/302 nel controllo del codice sorgente e distribuiscili alla rete CDN. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) e partecipa al programma early adopter inviando un&#39;e-mail **<aemcs-cdn-config-adopter@adobe.com>**.
+Configura i reindirizzamenti lato client 301/302 nel controllo del codice sorgente e distribuiscili alla rete CDN. Consulta [ulteriori informazioni](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) e partecipa al programma per i primi utilizzatori inviando un’e-mail a **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### Avvisi sulle regole del filtro del traffico (programma per i primi utilizzatori) {#traffic-filter-rules-alerts-early-adopter}
 

@@ -1,15 +1,15 @@
 ---
-title: Credenziali JWT nella console Adobe Developer obsolete
-description: Scopri l’impatto della rimozione delle credenziali JWT nella console Adobe Developer sull’AEM.
+title: Credenziali JWT in Adobe Developer Console obsolete
+description: Ulteriori informazioni sull’impatto della rimozione delle credenziali JWT in Adobe Developer Console su AEM.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 source-git-commit: 802e29017d3f1e59ee1676b4172292cb3453648a
 workflow-type: tm+mt
 source-wordcount: '557'
-ht-degree: 56%
+ht-degree: 74%
 
 ---
 
-# Credenziali JWT nella console Adobe Developer obsolete {#jwt-credentials-deprecation-in-adobe-developer-console}
+# Credenziali JWT in Adobe Developer Console obsolete {#jwt-credentials-deprecation-in-adobe-developer-console}
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ ht-degree: 56%
 
 Questo articolo fornisce alcuni contesti aggiuntivi su come AEM as a Cloud Service dovrebbe gestire l’obsolescenza.
 
-Attualmente, l’aspetto principale è che le funzioni AEM non supportano ancora le nuove credenziali server-to-server di OAuth. Il supporto per AEM as a Cloud Service sarà presto disponibile entro metà maggio 2024 tramite una versione dell’AEM. È possibile che sia stata ricevuta un’e-mail con le istruzioni per la migrazione delle credenziali JWT, ma occorre tenere presente che è possibile e si dovrebbe rimandare la migrazione delle credenziali fino a quando AEM non supporterà il nuovo tipo di credenziali da server a server OAuth.
+Attualmente, il punto principale è che le funzionalità AEM non supportano ancora le nuove credenziali tra server OAuth. Il supporto per AEM as a Cloud Service sarà presto disponibile entro metà maggio 2024 tramite una versione dell’AEM. È possibile che sia stata ricevuta un’e-mail con le istruzioni per la migrazione delle credenziali JWT, ma occorre tenere presente che è possibile e si dovrebbe rimandare la migrazione delle credenziali fino a quando AEM non supporterà il nuovo tipo di credenziali da server a server OAuth.
 
 Le sezioni seguenti elencano gli scenari in cui i clienti devono (o a volte non devono) sostituire le credenziali del proprio account di servizio (JWT) con credenziali server-to-server OAuth, una volta che l’AEM li ha supportati a metà maggio. [Scopri come](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) sostituire le credenziali in futuro.
 
@@ -50,10 +50,10 @@ I progetti Adobe Developer Console vengono creati in modo che possano richiamare
 
 ## Progetti generati automaticamente {#autogen-projects}
 
-**Azione**: non eseguire la migrazione perché Adobe sta per eseguire la migrazione per tuo conto.
+**Azione**: non eseguire la migrazione perché se ne occuperà Adobe.
 
 **Versioni di AEM pertinenti**: AEM as a Cloud Service.
 
-Quando Cloud Manager esegue il provisioning dell’ambiente as a Cloud Service dall’AEM, genera automaticamente un progetto Adobe Developer Console con credenziali JWT. Questo progetto è contrassegnato come di sola lettura, come illustrato nella schermata seguente. I clienti non possono e non devono tentare di migrare questi progetti alle credenziali da server a server OAuth; al contrario, Adobe eseguirà la migrazione di questi progetti da solo, prima che le credenziali non siano più utilizzabili.
+Quando Cloud Manager esegue il provisioning dell’ambiente AEM as a Cloud Service, genera automaticamente un progetto Adobe Developer Console con credenziali JWT. Questo progetto è contrassegnato come di sola lettura, come illustrato nella schermata seguente. Non è possibile e non si dovrebbe tentare di migrare questi progetti alle credenziali da server a server OAuth; piuttosto, sarà Adobe ad eseguire la migrazione di questi progetti autonomamente, prima che le credenziali non siano più utilizzabili.
 
 ![Progetti generati automaticamente](/help/security/assets/jwt-deprecation-autogen-projects.png)

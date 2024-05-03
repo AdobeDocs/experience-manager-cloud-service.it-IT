@@ -77,7 +77,7 @@ Nessuno.
 
 ### Funzioni e API obsolete {#deprecated-16145}
 
-* [Credenziali JWT nella console Adobe Developer obsolete](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+* [Credenziali JWT in Adobe Developer Console obsolete](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
 * A decorrere dal 1° maggio 2024, Adobe Dynamic Medie cesserà il supporto per i seguenti elementi:
 
