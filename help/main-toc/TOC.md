@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 695389430e3be4cef107aefad44fd7453cc9d36d
+source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
 workflow-type: tm+mt
 source-wordcount: '4908'
 ht-degree: 99%
@@ -840,7 +840,7 @@ ht-degree: 99%
       + [Reindirizzamenti](/help/edge/docs/redirects.md)
    + Creazione di moduli {#build-forms}
       + [Panoramica](/help/edge/docs/forms/overview.md)
-      + Introduzione {#getting-started-eds-forms}
+      + Introduzione {#getting-started-edge-delivery-services-forms}
          + [Guida introduttiva](/help/edge/docs/forms/tutorial.md)
          + [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
          + [Impostare i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati](/help/edge/docs/forms/submit-forms.md)
@@ -850,13 +850,13 @@ ht-degree: 99%
          + [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
          + [Utilizzare le regole per aggiungere un comportamento dinamico a un modulo](/help/edge/docs/forms/rules-forms.md)
          + [Mostrare un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
-      + Funzionalità {#advanced-features-eds-forms}
+      + Funzionalità {#advanced-features-edge-delivery-services-forms}
          + [Frammenti del modulo](/help/edge/docs/forms/form-fragments.md)
          + [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
          + [Traduzione](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componenti personalizzati](/help/edge/docs/forms/custom-components-forms.md)
-         + [Monitoraggio degli utenti in tempo reale per i moduli](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
+         + [Monitoraggio degli utenti in tempo reale per i moduli](/help/edge/docs/forms/real-user-monitoring-for-forms.md)
       + Riferimenti {#forms-references}
          + [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
    + Risorse di Edge Delivery {#resources}
