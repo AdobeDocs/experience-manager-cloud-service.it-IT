@@ -4,9 +4,9 @@ description: Recupera e salva i dati nei servizi web RESTful, nei servizi web ba
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '550'
 ht-degree: 3%
 
 ---
@@ -32,32 +32,32 @@ Anche se un sistema modulare distribuito ha i propri vantaggi, la sfida consiste
 
 ![aem-forms-data-integer](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] L’integrazione dei dati consente di configurare e collegare diverse origini dati con [!DNL AEM Forms]. Fornisce un’interfaccia utente intuitiva per creare uno schema unificato di rappresentazione dei dati di entità business e servizi tra origini dati connesse. La rappresentazione unificata è nota come modello di dati del modulo, un’estensione dello schema JSON. Le entità in un modello dati modulo sono denominate oggetti modello dati. Un modello dati modulo consente di:
+[!DNL AEM Forms] L’integrazione dei dati consente di configurare e collegare diverse origini dati con [!DNL AEM Forms]. Fornisce un’interfaccia utente intuitiva per creare uno schema unificato di rappresentazione dei dati di entità business e servizi tra origini dati connesse. La rappresentazione unificata è nota come modello di dati del modulo (FDM), un’estensione dello schema JSON. Le entità in un modello dati modulo (FDM) sono denominate oggetti modello dati. Un modello di dati modulo (FDM) consente di:
 
 * Accesso a oggetti, proprietà e servizi del modello dati da origini dati connesse.
 * Creare oggetti e proprietà del modello dati personalizzato
 * Creare associazioni tra oggetti modello dati all’interno e tra origini dati.
 * Richiama i servizi oggetto modello dati per eseguire query o scrivere dati da e verso origini dati.
 
-Dopo aver creato un modello dati modulo, è possibile utilizzarlo per:
+Dopo aver creato un modello dati modulo (FDM), è possibile utilizzarlo per:
 
-* Creare un Forms adattivo basato su un modello di dati del modulo
+* Creare un Forms adattivo basato su un modello di dati modulo (FDM)
 * Precompila Forms adattivo da origini dati configurate
 * Richiama servizi/operazioni dell’origine dati tramite le regole del modulo adattivo
 * Scrivere i dati del modulo adattivo inviati nelle origini dati
 
 ## Introduzione all’integrazione dei dati {#get-started-with-data-integration}
 
-Il primo passaggio per implementare l’integrazione dei dati per inviare un modulo adattivo a un database consiste nell’identificare e configurare le origini dati in cui sono memorizzate le informazioni che desideri utilizzare in Adaptive Forms. Successivamente, verrà creato un modello dati modulo che utilizza oggetti, proprietà e servizi del modello dati da una o più origini dati. È possibile creare un Forms adattivo basato su un modello di dati del modulo in cui i campi del modulo adattivo sono associati alle rispettive proprietà dell’origine dati.
+Il primo passaggio per implementare l’integrazione dei dati per inviare un modulo adattivo a un database consiste nell’identificare e configurare le origini dati in cui sono memorizzate le informazioni che desideri utilizzare in Adaptive Forms. Successivamente, verrà creato un modello dati modulo (FDM) che utilizza oggetti, proprietà e servizi del modello dati da una o più origini dati. È possibile creare un Forms adattivo basato su un modello di dati del modulo (FDM) in cui i campi del modulo adattivo sono associati alle rispettive proprietà dell’origine dati.
 
-[!DNL AEM Forms] consente inoltre di creare un modello dati modulo indipendente dalle origini dati e di associare o associare in un secondo momento gli oggetti e le proprietà del modello dati modulo all’origine dati. Elimina tutte le dipendenze dalle origini dati mentre si lavora su un modello dati modulo.
+[!DNL AEM Forms] consente inoltre di creare un modello dati modulo (FDM) indipendente dalle origini dati e di associare o associare in un secondo momento gli oggetti e le proprietà del modello dati modulo (FDM) all&#39;origine dati. Elimina tutte le dipendenze dalle origini dati mentre si lavora su un modello dati modulo (FDM).
 
 Per iniziare, comprendere e implementare l’integrazione dei dati, leggi quanto segue:
 
 * [Configurare origini dati](configure-data-sources.md)
-* [Crea modello dati modulo](create-form-data-models.md)
-* [Utilizzare il modello dati del modulo](work-with-form-data-model.md)
-* [Usa modello dati modulo](using-form-data-model.md)
+* [Crea modello dati modulo (FDM)](create-form-data-models.md)
+* [Utilizzare il modello dati del modulo (FDM)](work-with-form-data-model.md)
+* [Usa modello dati modulo (FDM)](using-form-data-model.md)
 
 >[!NOTE]
 >

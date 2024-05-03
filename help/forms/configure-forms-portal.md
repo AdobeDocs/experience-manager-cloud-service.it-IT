@@ -3,9 +3,9 @@ title: Come si crea un portale Forms su una pagina Experience Manager Sites?
 description: Scopri come creare un portale Forms e utilizzare i componenti core predefiniti in una pagina di AEM Sites.
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1786'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Per importare componenti predefiniti di Forms Portal su AEM Forms as a Cloud Ser
 
 ## Configurare l’archiviazione Azure per Adaptive Forms {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce [!DNL Azure] configurazione di archiviazione per integrare forms con [!DNL Azure] servizi di storage. Il modello dati modulo può essere utilizzato per creare Forms adattivo che interagisce con [!DNL Azure] per abilitare i flussi di lavoro aziendali.
+[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce [!DNL Azure] configurazione di archiviazione per integrare forms con [!DNL Azure] servizi di storage. Il Modello dati modulo (FDM) può essere utilizzato per creare Forms adattivi che interagiscono con [!DNL Azure] per abilitare i flussi di lavoro aziendali.
 
 ### Crea configurazione archiviazione Azure {#create-azure-storage-configuration}
 

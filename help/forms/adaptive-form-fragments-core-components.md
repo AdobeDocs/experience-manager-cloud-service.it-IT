@@ -5,10 +5,10 @@ topic-tags: author
 keywords: Aggiungere frammenti di moduli adattivi, frammenti di moduli adattivi, creare un frammento di modulo, aggiungere un frammento a un modulo adattivo, gestire i frammenti
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 5d9cf5d4dee5122263b15cee8874975887c57219
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1789'
-ht-degree: 3%
+source-wordcount: '1797'
+ht-degree: 5%
 
 ---
 
@@ -56,17 +56,17 @@ Puoi creare un frammento di modulo adattivo da zero o salvare un pannello in un 
      > In Adaptive Forms, puoi utilizzare più volte un singolo frammento di modulo (basato su componenti core). Supporta sia frammenti di modulo basati su nessuno che basati su schema.
 
    * **Schema**: specifica di creare il frammento utilizzando uno schema XML o JSON caricato in AEM Forms. Puoi caricare o selezionare dagli schemi XML o JSON disponibili come modello di modulo per il frammento. Quando selezioni uno schema XML, puoi anche creare un frammento di modulo adattivo selezionando dallo schema un complexType presente nello schema selezionato **[!UICONTROL Tipo complesso dello schema XML]** a discesa. Quando selezioni uno schema JSON, puoi anche creare un frammento di modulo adattivo selezionando una definizione di schema presente nello schema selezionato da **[!UICONTROL Definizioni schema JSON]** a discesa.
-   * **Modello dati modulo**: specifica di creare il frammento utilizzando un modello dati del modulo. È possibile creare un frammento di modulo adattivo basato su un solo oggetto modello dati in un modello dati modulo. Espandi il menu a discesa Definizioni modello dati modulo. Elenca tutti gli oggetti modello dati nel modello dati modulo specificato. Selezionare un oggetto modello dati dall&#39;elenco.
+   * **Modello dati modulo**: specifica di creare il frammento utilizzando un modello dati modulo (FDM). È possibile creare un frammento di modulo adattivo basato su un solo oggetto modello dati in un modello dati modulo (FDM). Espandi il menu a discesa Definizioni modello dati modulo (FDM). Vengono elencati tutti gli oggetti modello dati nel modello dati modulo (FDM) specificato. Selezionare un oggetto modello dati dall&#39;elenco.
 
-   ![Modello dati modulo](assets/create-af-3.png)
+   ![Modello dati modulo (FDM)](assets/create-af-3.png)
 
 
 
-1. Fare clic su Crea **e quindi su****Apri** per aprire il frammento, con un modello predefinito, in modalità di modifica. In modalità di modifica puoi aggiungere qualsiasi componente Modulo adattivo al frammento.
+1. Fare clic su **Crea** e quindi su **Apri** per aprire il frammento, con un modello predefinito, in modalità di modifica. In modalità di modifica puoi aggiungere qualsiasi componente Modulo adattivo al frammento.
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Inoltre, se hai selezionato uno schema XML o un modello di modulo XDP come modello di modulo per il frammento, nel Finder contenuto viene visualizzata una nuova scheda che mostra la gerarchia del modello di modulo. Consente di trascinare gli elementi del modello di modulo sul frammento. Gli elementi del modello modulo aggiunti vengono convertiti in componenti modulo mantenendo le proprietà originali dell’XDP o XSD associato.
 
-Una volta creato il frammento di modulo adattivo basato su uno schema o un modello di dati del modulo, gli elementi del modello di dati del modulo o dello schema vengono visualizzati nella scheda Origini dati del browser Contenuto nell’editor di moduli adattivi. Puoi trascinare gli elementi del modello di modulo sul frammento. Gli elementi del modello modulo aggiunti vengono convertiti in componenti modulo mantenendo le proprietà originali dallo schema associato.
+Una volta creato il frammento di modulo adattivo basato su uno schema o un modello di dati del modulo (FDM), gli elementi del modello di dati del modulo (FDM) o dello schema vengono visualizzati nella scheda Origini dati del browser Contenuto nell’editor di moduli adattivi. Puoi trascinare gli elementi del modello di modulo sul frammento. Gli elementi del modello modulo aggiunti vengono convertiti in componenti modulo mantenendo le proprietà originali dallo schema associato.
 
 
 ## Aggiungere un frammento a un modulo adattivo {#insert-a-fragment-in-an-adaptive-form}
@@ -183,7 +183,7 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando l�
 * Assicurati che il nome del frammento sia univoco. Il frammento non viene creato se è presente un frammento con lo stesso nome.
 * In un modulo adattivo basato su XDP, se salvi un pannello come frammento che include un altro frammento XDP, il frammento risultante verrà associato automaticamente al frammento XDP secondario. Nel caso di un modulo adattivo basato su XSD, il frammento risultante sarà associato alla directory principale dello schema.
 * Quando si crea un frammento di modulo adattivo, in CRXDE Liti viene creato un nodo di frammento simile al nodo guideContainer di un modulo adattivo.
-* Un frammento in un modulo adattivo che utilizza un modello di dati del modulo diverso non è supportato. Ad esempio, un frammento basato su XDP non è supportato in un modulo adattivo basato su XSD e viceversa.
+* Un frammento in un modulo adattivo che utilizza un modello dati modulo diverso (FDM) non è supportato. Ad esempio, un frammento basato su XDP non è supportato in un modulo adattivo basato su XSD e viceversa.
 * I frammenti di moduli adattivi sono disponibili per l’utilizzo tramite la scheda Frammenti di moduli adattivi nel Finder di contenuti AEM.
 * Qualsiasi espressione, script o stile in un frammento di modulo adattivo autonomo viene mantenuto quando viene inserito per riferimento o incorporato in un modulo adattivo.
 * Non è possibile modificare un frammento di modulo adattivo, inserito per riferimento, dall’interno di un modulo adattivo. Per apportare modifiche, puoi modificare il frammento di modulo adattivo autonomo o incorporarlo nel modulo adattivo.

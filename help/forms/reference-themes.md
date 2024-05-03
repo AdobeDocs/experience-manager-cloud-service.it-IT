@@ -3,16 +3,16 @@ title: Come ottenere temi di riferimento per moduli adattivi basati su component
 description: Per iniziare in modo rapido, utilizza i temi, i modelli e i modelli di dati dei moduli adattivi di riferimento forniti.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 6%
+source-wordcount: '504'
+ht-degree: 1%
 
 ---
 
 # Risorse di riferimento per Forms as a Cloud Service {#reference-themes}
 
-È possibile ottenere i temi di riferimento, i modelli e i modelli di dati dei moduli installando [Pacchetto risorse di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Aiuta ad avviare e accelerare rapidamente lo sviluppo di Forms adattivi. È possibile utilizzare [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=it) per distribuire questo pacchetto nell’ambiente as a Cloud Service AEM Forms.
+È possibile ottenere i temi di riferimento, i modelli e il modello dati del modulo (FDM) installando [Pacchetto risorse di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Aiuta ad avviare e accelerare rapidamente lo sviluppo di Forms adattivi. È possibile utilizzare [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=it) per distribuire questo pacchetto nell’ambiente as a Cloud Service AEM Forms.
 
 Le risorse di riferimento incluse nel pacchetto sono:
 
@@ -115,7 +115,7 @@ Il modello di base consente di creare rapidamente un modulo di iscrizione.
 
 Il modello di base fornisce un’area di lavoro vuota per creare la struttura iniziale dei moduli adattivi per la tua organizzazione.
 
-## Modelli dati modulo
+## Modello dati modulo (FDM)
 
 ### Microsoft® Dynamics 365
 

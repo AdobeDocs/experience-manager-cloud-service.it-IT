@@ -6,10 +6,10 @@ role: User
 feature: Adaptive Forms, FAQ
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
-source-wordcount: '986'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '992'
+ht-degree: 89%
 
 ---
 
@@ -76,15 +76,15 @@ No, il passaggio di verifica non è disponibile per [!DNL Forms] as a Cloud Serv
 * **È possibile aggiungere grafici a un modulo adattivo?**
 Sì, puoi aggiungere grafici ai moduli adattivi. I moduli adattivi forniscono un componente grafico. È possibile utilizzarlo per aggiungere grafici a un modulo adattivo.
 
-* **È possibile collegare un modello di dati modulo a un modello di database relazionale?**
-È possibile collegare un modello dati modulo a [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] e al profilo utente di Experience Manager come origini dati. Il supporto per il collegamento di un modello dati modulo a un database relazionale non è disponibile.
+* **È possibile collegare un modello di dati modulo (FDM) a un modello di database relazionale?**
+È possibile collegare un modello dati modulo (FDM) a [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services], e profilo utente di Experience Manager come origini dati. Il supporto per la connessione di un modello di dati modulo (FDM) con un database relazionale non è disponibile.
 
-* **È possibile utilizzare certificati personalizzati con il modello dati modulo per l’autenticazione?**
-Il modello dati modulo non fornisce un metodo per utilizzare certificati personalizzati per l’autenticazione. Pertanto, i certificati personalizzati come x509 e SSL bidirezionale non sono supportati.
+* **È possibile utilizzare certificati personalizzati con il modello dati modulo (FDM) per l&#39;autenticazione?**
+Il modello dati modulo (FDM) non fornisce un metodo per utilizzare certificati personalizzati per l’autenticazione. Pertanto, i certificati personalizzati come x509 e SSL bidirezionale non sono supportati.
 
 * **È possibile utilizzare l’azione di invio Forms Portal per i moduli adattivi?**
 
-  È possibile modificare i moduli adattivi esistenti per utilizzare le azioni di invio [Invia a endpoint REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Invia e-mail](configuring-submit-actions.md#send-email), [Invia utilizzando modello dati modulo](configuring-submit-actions.md#submit-using-form-data-model) e [Richiama un flusso di lavoro AEM](configuring-submit-actions.md#invoke-an-aem-workflow). Forms Portal e l’azione di invio da Forms Portal non sono ancora disponibili. Per informazioni sulla disponibilità delle funzioni, consulta le note sulla versione mensili.
+  Puoi modificare il Forms adattivo esistente per utilizzare [Invia all’endpoint REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Invia e-mail](configuring-submit-actions.md#send-email), [Invia utilizzando il modello dati modulo (FDM)](configuring-submit-actions.md#submit-using-form-data-model), e [Richiama un flusso di lavoro AEM](configuring-submit-actions.md#invoke-an-aem-workflow) Inviare azioni. Forms Portal e l’azione di invio da Forms Portal non sono ancora disponibili. Per informazioni sulla disponibilità delle funzioni, consulta le note sulla versione mensili.
 
 * **È possibile utilizzare l’app [!DNL AEM Forms] con [!DNL AEM Forms] as a Cloud Service?**
 

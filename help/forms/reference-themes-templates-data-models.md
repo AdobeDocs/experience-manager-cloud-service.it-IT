@@ -3,10 +3,10 @@ title: Come ottenere temi e modelli di riferimento per i moduli AEM?
 description: AEM Forms fornisce esempi di temi, modelli e modelli di dati per moduli adattivi per aiutarti a creare i moduli rapidamente.
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 6%
+source-wordcount: '778'
+ht-degree: 4%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 6%
 
 <span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
-AEM Forms as a Cloud Service fornisce più temi di riferimento, modelli e modelli di dati dei moduli per aiutarti a iniziare rapidamente a creare Adaptive Forms. È possibile scaricare [pacchetto di contenuti di riferimento dal portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) e utilizza [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) per installare [pacchetto di contenuti di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) nell’ambiente di produzione, sviluppo o sviluppo locale per trasferire queste risorse di riferimento all’ambiente.
+AEM Forms as a Cloud Service fornisce più temi di riferimento, modelli e modelli di dati dei moduli (FDM) per aiutarti a iniziare rapidamente a creare un Forms adattivo. È possibile scaricare [pacchetto di contenuti di riferimento dal portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) e utilizza [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) per installare [pacchetto di contenuti di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) nell’ambiente di produzione, sviluppo o sviluppo locale per trasferire queste risorse di riferimento all’ambiente.
 
-I temi, i modelli e i modelli di dati dei moduli inclusi nel pacchetto di contenuti di riferimento sono:
+I temi, i modelli e il modello dati modulo (FDM) inclusi nel pacchetto di contenuto di riferimento sono:
 
 
-| Temi | Modelli | Modelli dati modulo |
+| Temi | Modelli | Modello dati modulo (FDM) |
 ---------|----------|---------
 | Area di lavoro 3.0 | Base | Microsoft Dynamics 365 |
 | Tranquilla | Vuoto | Salesforce |
@@ -112,16 +112,16 @@ Il tema FSI enfatizza un aspetto minimalista e funzionale per il modulo. Quando 
 Il modello di base consente di creare rapidamente un modulo di iscrizione. Puoi utilizzarlo anche per visualizzare in anteprima la funzionalità dei componenti di Adaptive Forms Foundation. Fornisce un layout guidato per la presentazione sezione per sezione dei dati. Utilizza il modello vuoto per iniziare a creare un modulo adattivo da su un’area di lavoro vuota.
 
 
-## Modelli di dati modulo di riferimento {#reference-models}
+## Modello dati modulo di riferimento (FDM) {#reference-models}
 
 Il Forms adattivo può quindi interagire con i server Microsoft Dynamics 365 e Salesforce per abilitare i flussi di lavoro aziendali. Ad esempio:
 
 * Scrivere dati in Microsoft Dynamics 365 e Salesforce all’invio di moduli adattivi.
-* Scrivi dati in Microsoft Dynamics 365 e Salesforce tramite entità personalizzate definite in Modello dati modulo e viceversa.
+* Scrivere dati in Microsoft Dynamics 365 e Salesforce tramite entità personalizzate definite in Form Data Model (FDM) e viceversa.
 * Effettua query su Microsoft Dynamics 365 e server Salesforce per dati e precompila Forms adattivo.
 * Leggi i dati da Microsoft Dynamics 365 e dal server Salesforce.
 
-È possibile ottenere i seguenti modelli dati del modulo installando il [Pacchetto contenuto di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+È possibile ottenere il seguente modello dati modulo (FDM) installando il [Pacchetto di contenuti di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Microsoft® Dynamics 365
 * Salesforce

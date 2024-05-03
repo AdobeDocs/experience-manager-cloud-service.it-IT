@@ -1,51 +1,43 @@
 ---
-title: Come si progetta lo schema JSON per un modulo adattivo?
-description: Scopri come creare uno schema JSON per un modulo adattivo e un modulo adattivo basato sullo schema per produrre i dati del reclamo per lo schema.
-feature: Adaptive Forms, Foundation Components
+title: Come si progetta lo schema JSON per i componenti core di un modulo adattivo?
+description: Scopri come creare uno schema JSON per i componenti core di un modulo adattivo e creare un modulo adattivo (componenti core) basato sullo schema per produrre i dati dei reclami relativi allo schema.
+feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: 10389af2bce06f95d4d841371b7111340d40edaa
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 5%
+source-wordcount: '1301'
+ht-degree: 4%
 
 ---
 
-# Progettazione di uno schema JSON per un modulo adattivo {#creating-adaptive-forms-using-json-schema}
+# Progettare uno schema JSON per un modulo adattivo (componenti core){#creating-adaptive-forms-using-json-schema}
 
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| Componenti core | [Fai clic qui](/help/forms/adaptive-form-core-components-json-schema-form-model.md) |
-| Foundation | Questo articolo |
-
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
-
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
-| AEM as a Cloud Service | Questo articolo |
+| Foundation | [Fai clic qui](/help/forms/adaptive-form-json-schema-form-model.md) |
+| Componenti core | Questo articolo |
 
 
 ## Prerequisiti {#prerequisites}
 
-Per creare un modulo adattivo utilizzando uno schema JSON come modello di modulo è necessario conoscere a fondo lo schema JSON. Si consiglia di leggere attentamente il seguente contenuto prima di questo articolo.
+La creazione di un modulo adattivo basato su componenti core che utilizzano uno schema JSON come modello di modulo richiede una conoscenza di base dello schema JSON. Si consiglia di leggere attentamente il seguente contenuto prima di questo articolo.
 
-* [Creazione di un modulo adattivo](creating-adaptive-form.md)
+* [Creazione di un modulo adattivo basato sui componenti core](/help/forms/creating-adaptive-form-core-components.md)
 * [Schema JSON](https://json-schema.org/)
 
 ## Utilizzo di uno schema JSON come modello di modulo  {#using-a-json-schema-as-form-model}
 
-I moduli Adobe Experience Manager supportano la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell’organizzazione. Lo schema JSON utilizzato deve essere conforme a [specifiche v4](https://json-schema.org/draft-04/schema).
+Adobe Experience Manager Forms supporta la creazione di un modulo adattivo basato su componenti core utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell’organizzazione. Lo schema JSON utilizzato deve essere conforme a [specifiche v4](https://json-schema.org/draft-04/schema).
 
 Le funzioni chiave dell’utilizzo di uno schema JSON sono:
 
-* La struttura del JSON viene visualizzata come struttura nella scheda Content Finder nella modalità di authoring di un modulo adattivo. Puoi trascinare e aggiungere un elemento dalla gerarchia JSON al modulo adattivo.
+* La struttura del JSON viene visualizzata come struttura nella scheda Content Finder nella modalità di authoring di un modulo adattivo. Puoi trascinare e aggiungere un elemento dalla gerarchia JSON al modulo adattivo basato sui componenti core.
 * Puoi precompilare il modulo utilizzando un JSON conforme allo schema associato.
 * All’invio, i dati immessi dall’utente vengono inviati come JSON, in linea con lo schema associato.
 
-Uno schema JSON è costituito da tipi di elementi semplici e complessi. Gli elementi dispongono di attributi che aggiungono regole all’elemento. Quando questi elementi e attributi vengono trascinati in un modulo adattivo, vengono mappati automaticamente al corrispondente componente Modulo adattivo.
+Uno schema JSON è costituito da tipi di elementi semplici e complessi. Gli elementi dispongono di attributi che aggiungono regole all’elemento. Quando questi elementi e attributi vengono trascinati in un modulo adattivo, vengono mappati automaticamente ai corrispondenti componenti del modulo adattivo.
 
 La mappatura degli elementi JSON con i componenti del modulo adattivo è la seguente:
 
@@ -59,12 +51,6 @@ La mappatura degli elementi JSON con i componenti del modulo adattivo è la segu
                 "Date of Birth"
               ],
               "description": "Date of birth in DD MMMM, YYYY",
-              "aem:afProperties": {
-                "displayPictureClause": "date{DD MMMM, YYYY}",
-                "displayPatternType": "date{DD MMMM, YYYY}",
-                "validationPatternType": "date{DD MMMM, YYYY}",
-                "validatePictureClause": "date{DD MMMM, YYYY}",
-                "validatePictureClauseMessage": "Date must be in DD MMMM, YYYY format."
               }
 ```
 
@@ -246,11 +232,7 @@ Di seguito è riportato un esempio di schema JSON.
      "type": "boolean"
     },
     "phone": {
-     "type": "number",
-     "aem:afProperties": {
-      "sling:resourceType": "/libs/fd/af/components/guidetelephone",
-      "guideNodeClass": "guideTelephone"
-     }
+     "type": "number"
     },
     "address": {
      "type": "string"
@@ -346,9 +328,10 @@ Le chiavi di definizione vengono utilizzate per identificare gli schemi riutiliz
 
 L&#39;esempio precedente definisce un record cliente, in cui ogni cliente ha sia un indirizzo di spedizione che un indirizzo di fatturazione. La struttura di entrambi gli indirizzi è la stessa: gli indirizzi hanno un indirizzo stradale, una città e uno stato, quindi è consigliabile non duplicare gli indirizzi. Inoltre, agevola l’aggiunta e l’eliminazione dei campi per eventuali modifiche future.
 
-## Preconfigurazione dei campi nella definizione dello schema JSON {#pre-configuring-fields-in-json-schema-definition}
+<!--
+## Pre-Configuring fields in JSON Schema Definition {#pre-configuring-fields-in-json-schema-definition}
 
-È possibile utilizzare **aem:afProperties** per preconfigurare il campo Schema JSON da mappare a un componente modulo adattivo personalizzato. Di seguito è riportato un esempio:
+You can use the **aem:afProperties** property to preconfigure JSON Schema field to map to a custom Adaptive Form component. An example is listed below:
 
 ```json
 {
@@ -356,16 +339,13 @@ L&#39;esempio precedente definisce un record cliente, in cui ogni cliente ha sia
         "sizeInMB": {
             "type": "integer",
             "minimum": 16,
-            "maximum": 512,
-            "aem:afProperties" : {
-                 "sling:resourceType" : "/apps/fd/af/components/guideTextBox",
-                 "guideNodeClass" : "guideTextBox"
-             }
+            "maximum": 512
         }
     },
     "required": [ "sizeInMB" ],
     "additionalProperties": false
 }
+
 ```
 
 <!--- ## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
@@ -641,7 +621,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## Limitare valori accettabili per un componente Modulo adattivo {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Per limitare i valori accettabili per un componente Modulo adattivo, puoi aggiungere le seguenti restrizioni agli elementi dello schema JSON:
+Per limitare i valori accettabili per un componente core Modulo adattivo, puoi aggiungere le seguenti restrizioni agli elementi dello schema JSON:
 
 <table>
  <tbody>
@@ -776,6 +756,10 @@ Sono disponibili due opzioni:
 **Quale deve essere l’estensione del file di schema JSON?**
 
 L’estensione del file dello schema JSON deve essere .schema.json. Ad esempio: &lt;filename>.schema.json.
+
+**È `aem:afProperties` supportato come parte dello schema JSON in Adaptive Forms basato sui componenti core?**
+
+No, `aem:afProperties` non è supportato per i componenti core. Questa proprietà è supportata solo per i componenti di base.
 
 ## Consulta anche {#see-also}
 

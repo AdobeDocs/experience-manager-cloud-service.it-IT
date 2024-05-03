@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a5fc1f7e42edc8d41cac687a348dad7fc98742c1
+source-git-commit: 1b5dec707eb63a43a3e6240c785ed9ef00a3a3c4
 workflow-type: tm+mt
-source-wordcount: '4892'
+source-wordcount: '4901'
 ht-degree: 99%
 
 ---
@@ -619,7 +619,7 @@ ht-degree: 99%
          + [Connettere AEM Forms a un database o un’origine dati](/help/forms/data-integration.md)
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
          + [Configura [!DNL Azure] archiviazione](/help/forms/configure-azure-storage.md)
          + [Configurazione [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servizi cloud](/help/forms/configure-msdynamics-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
@@ -651,6 +651,7 @@ ht-degree: 99%
             + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/supporting-new-language-localization-core-components.md)
             + [Creare e utilizzare funzioni personalizzate](/help/forms/create-and-use-custom-functions.md)
             + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/rule-editor-core-components.md)
+            + [Progettare uno schema JSON per un modulo adattivo (componenti core)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Aggiungere versioni, commenti e annotazioni a un modulo adattivo](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Confronta i moduli adattivi](/help/forms/compare-forms.md)
       + Componenti di base {#authoring-adaptive-forms-foundation-components}

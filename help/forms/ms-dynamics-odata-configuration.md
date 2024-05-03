@@ -1,13 +1,13 @@
 ---
 title: Come si configura [!DNL Microsoft Dynamics] OData per AEM Forms?
-description: Scopri come creare un modello di dati modulo basato su entità, attributi e servizi definiti in [!DNL Microsoft Dynamics] servizio.
+description: Scopri come creare un modello di dati modulo (FDM) basato su entità, attributi e servizi definiti in [!DNL Microsoft Dynamics] servizio.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1012'
 ht-degree: 2%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 2%
 
 ![integrazione dei dati](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] è un software CRM (Customer Relationship Management) e ERP (Enterprise Resource Planning) che fornisce soluzioni aziendali per la creazione e la gestione di account, contatti, lead, opportunità e casi cliente. [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce una configurazione del servizio cloud OData per integrare Forms sia online che on-premise [!DNL Microsoft Dynamics] server. Consente di creare un modello dati modulo basato su entità, attributi e servizi definiti in [!DNL Microsoft Dynamics] servizio. Il modello dati modulo può essere utilizzato per creare Forms adattivo che interagisce con [!DNL Microsoft Dynamics] per abilitare i flussi di lavoro aziendali. Ad esempio:
+[!DNL Microsoft Dynamics] è un software CRM (Customer Relationship Management) e ERP (Enterprise Resource Planning) che fornisce soluzioni aziendali per la creazione e la gestione di account, contatti, lead, opportunità e casi cliente. [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce una configurazione del servizio cloud OData per integrare Forms sia online che on-premise [!DNL Microsoft Dynamics] server. Consente di creare un modello di dati modulo (FDM) basato sulle entità, gli attributi e i servizi definiti in [!DNL Microsoft Dynamics] servizio. Il Modello dati modulo (FDM) può essere utilizzato per creare Forms adattivi che interagiscono con [!DNL Microsoft Dynamics] per abilitare i flussi di lavoro aziendali. Ad esempio:
 
 * Query [!DNL Microsoft Dynamics] server per dati e precompilazione di Adaptive Forms
 * Scrivi dati in [!DNL Microsoft Dynamics] all’invio di un modulo adattivo
-* Scrivi dati in [!DNL Microsoft Dynamics] tramite entità personalizzate definite nel modello dati modulo e viceversa
+* Scrivi dati in [!DNL Microsoft Dynamics] tramite entità personalizzate definite in Form Data Model (FDM) e viceversa
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
@@ -136,20 +136,20 @@ In **[!UICONTROL Impostazioni di autenticazione]** scheda:
 
    1. Seleziona **[!UICONTROL OAuth 2.0]** come tipo di autenticazione.
 
-   1. Sostituisci i valori predefiniti in **[!UICONTROL ID client]** (denominati anche **ID applicazione**), **[!UICONTROL Segreto client]**, **[!UICONTROL URL OAuth]**, **[!UICONTROL Aggiorna URL token]**, **[!UICONTROL URL token di accesso]**, e **[!UICONTROL Risorsa]** campi con i valori del [!DNL Microsoft Dynamics] configurazione del servizio. È obbligatorio specificare l’URL dell’istanza di Dynamics nel **[!UICONTROL Risorsa]** campo da configurare [!DNL Microsoft Dynamics] con un modello di dati modulo. Utilizza l’URL principale del servizio per derivare l’URL dell’istanza di Dynamics. Ad esempio: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. Sostituisci i valori predefiniti in **[!UICONTROL ID client]** (denominati anche **ID applicazione**), **[!UICONTROL Segreto client]**, **[!UICONTROL URL OAuth]**, **[!UICONTROL Aggiorna URL token]**, **[!UICONTROL URL token di accesso]**, e **[!UICONTROL Risorsa]** campi con i valori del [!DNL Microsoft Dynamics] configurazione del servizio. È obbligatorio specificare l’URL dell’istanza di Dynamics nel **[!UICONTROL Risorsa]** campo da configurare [!DNL Microsoft Dynamics] con un modello di dati modulo (FDM). Utilizza l’URL principale del servizio per derivare l’URL dell’istanza di Dynamics. Ad esempio: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. Specifica **[!UICONTROL openid]** nel **[!UICONTROL Ambito autorizzazione]** campo per il processo di autorizzazione [!DNL Microsoft Dynamics].
 
       ![Impostazioni di autenticazione](assets/dynamics_authentication_settings_new.png)
-Modello dati modulo
+Modello dati modulo (FDM)
 1. Clic **[!UICONTROL Connetti a OAuth]**. Sei stato reindirizzato a [!DNL Microsoft Dynamics] pagina di accesso.
-1. Accedi con il [!DNL Microsoft Dynamics] credenziali e accettazione per consentire alla configurazione del servizio cloud di connettersi a [!DNL Microsoft Dynamics] servizio. Stabilire un modello di dati modulo tra il servizio cloud e il servizio è un’attività una tantum.
+1. Accedi con il [!DNL Microsoft Dynamics] credenziali e accettazione per consentire alla configurazione del servizio cloud di connettersi a [!DNL Microsoft Dynamics] servizio. È un task occasionale per stabilire il modello dati del modulo (FDM) per il servizio cloud e il servizio.
 
    Si è il modello dati modulo nella pagina di configurazione del servizio cloud, in cui viene visualizzato un messaggio che informa che la configurazione OData è stata salvata correttamente.
 
-Il servizio cloud Cloud Service OData (OData Service) di MS Dynamics è configurato e connesso al servizio Dynamics. Modello dati modulo modello dati modulo
+Il servizio cloud Cloud Service OData (OData Service) di MS Dynamics è configurato e connesso al servizio Dynamics. Modello dati modulo (FDM)
 
-## Crea modello dati modulo {#create-form-data-model}
+## Crea modello dati modulo (FDM) {#create-form-data-model}
 
 <!--When you install the [!DNL Experience Manager Forms] package, a form data model, **[!DNL Microsoft Dynamics] FDM**, is deployed on your [!DNL Experience Manager] instance. By default, the Form Data Model uses [!DNL Microsoft Dynamics] service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
 
@@ -161,19 +161,19 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-Dopo aver configurato il servizio cloud MS Dynamics OData, puoi utilizzarlo durante la creazione di modelli di dati del modulo. Per ulteriori informazioni, consulta [Crea modello dati modulo](create-form-data-models.md).
+Dopo aver configurato il servizio cloud MS Dynamics OData, puoi utilizzarlo durante la creazione del modello dati modulo (FDM). Per ulteriori informazioni, consulta [Crea modello dati modulo (FDM)](create-form-data-models.md).
 
-Successivamente, puoi creare un modello di dati modulo basato su modulo adattivo e utilizzarlo in vari casi di utilizzo di moduli adattivi, ad esempio:
+Successivamente, puoi creare un modello di dati modulo basato su modulo adattivo (FDM) e utilizzarlo in vari casi di utilizzo di moduli adattivi, ad esempio:
 
 * Precompilare un modulo adattivo interrogando le informazioni [!DNL Microsoft Dynamics] entità e servizi
-* Richiama [!DNL Microsoft Dynamics] operazioni server definite in un modello di dati modulo utilizzando le regole del modulo adattivo
+* Richiama [!DNL Microsoft Dynamics] operazioni server definite in un modello dati modulo (FDM) utilizzando le regole del modulo adattivo
 * Scrivi i dati modulo inviati in [!DNL Microsoft Dynamics] entità
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
 
 È possibile [configurare l’azione di invio Modello dati modulo](/help/forms/using-form-data-model.md) per un modulo adattivo per inviare dati a Microsoft Dynamics OData.
 
-Per ulteriori informazioni sulla creazione e l’utilizzo del modello dati modulo nei flussi di lavoro aziendali, consulta [Integrazione dei dati](data-integration.md).
+Per ulteriori informazioni sulla creazione e l’utilizzo di Form Data Model (FDM) nei flussi di lavoro aziendali, consulta [Integrazione dei dati](data-integration.md).
 
 ## Articoli correlati
 

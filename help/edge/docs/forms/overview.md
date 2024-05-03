@@ -3,10 +3,10 @@ title: Panoramica di Edge Delivery Services per AEM Forms
 description: Edge Delivery Services per AEM Forms sono stati progettati per offrire prestazioni di picco, consentendoti di immaginare il futuro della raccolta dati semplificata e del coinvolgimento degli utenti.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: ht
-source-wordcount: '1017'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1018'
+ht-degree: 98%
 
 ---
 
@@ -73,7 +73,7 @@ L’authoring AEM fornisce un’interfaccia WYSIWYG (Adaptive Forms Editor) per 
 * Integrazione con Adobe Sign per le firme elettroniche.
 * Integrazione con Adobe Workfront Fusion per attivare scenari Adobe Workfront Fusion al momento dell’invio del modulo.
 * Integrazione con diverse origini dati per precompilare i moduli e inviare i dati.
-* Modello dati del modulo per definire la struttura dei dati e le interazioni con varie origini dati.
+* Modello dati modulo (FDM) per definire la struttura dei dati e le interazioni con varie origini dati.
 * Possibilità di scegliere tra più azioni di invio per la gestione degli invii dei moduli, tra cui l’invio di dati a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e molte altre origini dati.
 
 In sostanza, l’[authoring di AEM](/help/forms/creating-adaptive-form-core-components.md) si basa sui fondamenti dell’[authoring basato su documenti](/help/edge/docs/forms/create-forms.md), fornendo un toolkit più avanzato per la creazione e la gestione di moduli complessi.

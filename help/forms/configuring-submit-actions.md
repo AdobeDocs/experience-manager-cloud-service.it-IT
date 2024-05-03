@@ -3,10 +3,10 @@ title: Come si configura un’azione di invio per un modulo adattivo?
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3901'
-ht-degree: 2%
+source-wordcount: '3914'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ Un’azione di invio viene attivata quando un utente fa clic su **[!UICONTROL In
 
 * [Invia all’endpoint REST](#submit-to-rest-endpoint)
 * [Invia e-mail](#send-email)
-* [Invia usando il modello dati modulo](#submit-using-form-data-model)
+* [Invia utilizzando modalità dati modulo (FDM)l](#submit-using-form-data-model)
 * [Richiama un flusso di lavoro AEM](#invoke-an-aem-workflow)
 * [Invia a SharePoint](#submit-to-sharedrive)
 * [Invia a OneDrive](#submit-to-onedrive)
@@ -89,7 +89,7 @@ Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati co
 
 ![Configurazione dell’azione di invio endpoint REST](assets/action-config.png)
 
-È inoltre possibile **[!UICONTROL Abilita richiesta POST]** e fornisci un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso radice del server AEM. Ad esempio: `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
+È inoltre possibile **[!UICONTROL Abilita richiesta POST]** e fornisci un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso radice del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
 
 >[!NOTE]
 >
@@ -137,11 +137,11 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## Invia usando il modello dati modulo {#submit-using-form-data-model}
+## Invia utilizzando il modello dati modulo (FDM) {#submit-using-form-data-model}
 
-Il **[!UICONTROL Invia utilizzando il modello dati modulo]** L’azione di invio scrive i dati del modulo adattivo inviati per l’oggetto modello dati specificato in un modello dati modulo nella relativa origine dati. Durante la configurazione dell’azione di invio, puoi scegliere un oggetto modello dati di cui desideri riscrivere i dati inviati nella relativa origine dati.
+Il **[!UICONTROL Invia utilizzando il modello dati modulo]** L’azione di invio scrive i dati del modulo adattivo inviati per l’oggetto modello dati specificato in un modello dati modulo (FDM) nella relativa origine dati. Durante la configurazione dell’azione di invio, puoi scegliere un oggetto modello dati di cui desideri riscrivere i dati inviati nella relativa origine dati.
 
-È inoltre possibile inviare un allegato del modulo all&#39;origine dati utilizzando un modello dati modulo e un documento di record (DoR). Per informazioni sul modello dati del modulo, consulta [[!DNL AEM Forms] Integrazione dei dati](data-integration.md).
+È inoltre possibile inviare un allegato modulo all&#39;origine dati utilizzando un modello dati modulo (FDM) e un documento di record (DoR). Per informazioni sul modello dati modulo (FDM), consulta [[!DNL AEM Forms] Integrazione dei dati](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -243,7 +243,7 @@ La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/
 Per utilizzare [!UICONTROL Invia a elenco SharePoint] Azione di invio in un modulo adattivo:
 
 1. [Creare una configurazione dell’elenco SharePoint](#create-sharepoint-list-configuration): collega AEM Forms all’archivio degli elenchi Microsoft® Sharepoint.
-1. [Utilizzare l’invio utilizzando il modello dati del modulo in un modulo adattivo](#use-submit-using-fdm): collega il modulo adattivo a Microsoft® SharePoint configurato.
+1. [Utilizzare l’invio utilizzando il modello dati modulo (FDM) in un modulo adattivo](#use-submit-using-fdm): collega il modulo adattivo a Microsoft® SharePoint configurato.
 
 #### Creare una configurazione dell’elenco SharePoint {#create-sharepoint-list-configuration}
 
@@ -267,14 +267,14 @@ Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 1. Seleziona **[!UICONTROL Crea]** per creare la configurazione cloud per Microsoft® SharePointList.
 
 
-#### Utilizzare l’invio utilizzando il modello dati del modulo in un modulo adattivo {#use-submit-using-fdm}
+#### Utilizzare l’invio utilizzando il modello dati modulo (FDM) in un modulo adattivo {#use-submit-using-fdm}
 
 È possibile utilizzare la configurazione dell’elenco SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in un elenco SharePoint. Per utilizzare una configurazione di archiviazione Elenco SharePoint in un modulo adattivo, effettua le seguenti operazioni:
 
-1. [Creare un modello dati modulo utilizzando la configurazione Elenco Microsoft® SharePoint](/help/forms/create-form-data-models.md)
-1. [Configurare il modello dati modulo per recuperare e inviare dati](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Creare un modello dati modulo (FDM) utilizzando la configurazione di Microsoft® SharePoint List](/help/forms/create-form-data-models.md)
+1. [Configurare il modello dati modulo (FDM) per recuperare e inviare dati](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Creare un modulo adattivo](/help/forms/creating-adaptive-form.md)
-1. [Configurare l’azione di invio utilizzando un modello dati modulo](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [Configurare l’azione di invio utilizzando un modello di dati del modulo (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
 Quando si invia il modulo, i dati vengono salvati nell&#39;archivio elenco di Microsoft® Sharepoint specificato.
 
@@ -462,7 +462,7 @@ L’autore può configurare una libreria JavaScript personalizzata per modulo ad
 
 Come parte delle linee guida sulla sicurezza e l’irrigidimento dell’AEM, configura pagine di errore personalizzate come 400.jsp, 404.jsp e 500.jsp. Questi gestori vengono chiamati quando all’invio di un modulo vengono visualizzati errori 400, 404 o 500. Gli handler vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish. Puoi anche creare pagine JSP per altri codici di errore HTTP.
 
-Quando si precompila un modello di dati modulo o un modulo adattivo basato su schema con un reclamo di dati XML o JSON per uno schema che non contiene dati `<afData>`, `<afBoundData>`, e `</afUnboundData>` , i dati dei campi non limitati del modulo adattivo andranno persi. Lo schema può essere uno schema XML, uno schema JSON o un modello dati modulo. I campi non limitati sono campi modulo adattivo senza `bindref` proprietà.
+Quando si precompila un modello di dati modulo (FDM) o un modulo adattivo basato su schema con dati XML o JSON, invia un reclamo a uno schema che non contiene dati `<afData>`, `<afBoundData>`, e `</afUnboundData>` , i dati dei campi non limitati del modulo adattivo andranno persi. Lo schema può essere uno schema XML, uno schema JSON o un modello dati modulo (FDM). I campi non limitati sono campi modulo adattivo senza `bindref` proprietà.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

@@ -4,14 +4,14 @@ description: Crea modelli di moduli adattivi basati sul componente core per defi
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 3%
+source-wordcount: '1962'
+ht-degree: 4%
 
 ---
 
-# Creare un modello di modulo adattivo basato su componenti core {#adaptive-form-templates}
+# Creare un modello di modulo adattivo basato sui componenti core {#adaptive-form-templates}
 
 Quando si crea un modulo, si aggiungono campi e componenti per definire la struttura del modulo, il contenuto e le azioni nell’editor. È possibile aggiungere campi e componenti in `guideRootPanel` del contenitore di moduli. Con Editor modelli è possibile creare un modello contenente la struttura di base e il contenuto iniziale che gli autori possono utilizzare per creare i moduli.
 
@@ -164,7 +164,7 @@ Gli autori possono associare una [!UICONTROL Schema modello dati modulo] a un mo
 1. Seleziona **[!UICONTROL Browser contenuti]** sul lato sinistro.
 1. Vai al contenitore del modulo **[!UICONTROL Impostazione]**.
 1. Seleziona **[!UICONTROL Modello dati]**.
-1. Scegli il modello dati del modulo tramite **[!UICONTROL Seleziona modello dati modulo]** e salva la configurazione.
+1. Scegli il modello dati del modulo (FDM) tramite **[!UICONTROL Seleziona modello dati modulo]** e salva la configurazione.
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 

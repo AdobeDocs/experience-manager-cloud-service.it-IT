@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Quando selezioni un modulo e lo pubblichi, vengono pubblicate anche le relative 
 Il Forms adattivo può utilizzare alcune configurazioni, impostazioni e personalizzazioni che non vengono pubblicate automaticamente. È consigliabile pubblicare o attivare queste risorse prima di pubblicare un modulo adattivo.
 
 * Modelli di modulo adattivo modificabili
-* Configurazioni di Cloud Service per Adobe Sign, Typekit, reCAPTCHA e modelli dati modulo
+* Configurazioni di Cloud Service per Adobe Sign, Typekit, reCAPTCHA e Form Data Model (FDM)
 * Le altre configurazioni dei servizi cloud vengono attivate solo se l’utente dispone di autorizzazioni di amministratore.
 * Personalizzazioni. Questi includono, tra l’altro:
 

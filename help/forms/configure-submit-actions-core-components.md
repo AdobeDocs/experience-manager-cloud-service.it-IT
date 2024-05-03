@@ -1,13 +1,13 @@
 ---
 title: Come si configura un’azione di invio per un modulo adattivo?
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio incorporate o crearne di personalizzate
-keywords: come selezionare l’azione di invio per un modulo adattivo, collegare un modulo adattivo a un elenco di sharepoint, collegare un modulo adattivo a una raccolta documenti di sharepoint, collegare un modulo adattivo a un modello dati del modulo
+keywords: come selezionare l’azione di invio per un modulo adattivo, collegare un modulo adattivo a un elenco di sharepoint, collegare un modulo adattivo a una raccolta documenti di sharepoint, collegare un modulo adattivo a un modello di dati modulo (FDM)
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
+source-git-commit: 520d07cbb4566f9d39a95ac890a9cd572114d710
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 9%
+source-wordcount: '678'
+ht-degree: 11%
 
 ---
 
@@ -27,7 +27,7 @@ Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tr
 * Invia facilmente i dati del modulo tramite e-mail.
 * Avvia flussi di lavoro Microsoft® Power Automate o AEM durante la trasmissione dei dati.
 * Trasmette direttamente i dati del modulo a Microsoft® SharePoint Server, Microsoft® Azure Blob Storage o Microsoft® OneDrive.
-* Invia facilmente i dati a un’origine dati configurata utilizzando il modello dati del modulo.
+* Invia facilmente i dati a un’origine dati configurata utilizzando il modello dati del modulo (FDM).
 * Invia in modo semplice i dati a un endpoint REST.
 
 È possibile [estendere le azioni di invio predefinite](custom-submit-action-form.md). È inoltre possibile personalizzare le azioni di invio in base ai requisiti specifici dell&#39;organizzazione.
@@ -62,7 +62,7 @@ Per informazioni dettagliate sulle seguenti azioni di invio, vedere:
 * [Richiama un flusso Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Invia a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [Richiama Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Invia usando il modello dati modulo](/help/forms/using-form-data-model.md)
+* [Invia utilizzando il modello dati modulo (FDM)](/help/forms/using-form-data-model.md)
 * [Invia ad Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Invia all’endpoint REST](/help/forms/configure-submit-action-restpoint.md)
 * [Invia a OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -70,8 +70,8 @@ Per informazioni dettagliate sulle seguenti azioni di invio, vedere:
 
 È inoltre possibile inviare un modulo adattivo ad altre configurazioni di archiviazione:
 
-* [Collegare il modulo adattivo all’applicazione Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [Connettere un modulo adattivo a Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Collegare un modulo adattivo all’applicazione Salesforce](/help/forms/aem-forms-salesforce-integration.md)
+* [Collegare un modulo adattivo a Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
 È possibile [personalizzare le azioni di invio predefinite](custom-submit-action-form.md). Inoltre, puoi personalizzare le azioni di invio per allinearle a specifici requisiti organizzativi.
 
@@ -94,11 +94,11 @@ Refer to [configure the send email submit action for an Adaptive Form](/help/for
 
 >[!CAUTION]
 >
->If you  [prefill](prepopulate-adaptive-form-fields.md) a form template,  a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema , form template, or form data model) that is data does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost. 
+>If you  [prefill](prepopulate-adaptive-form-fields.md) a form template,  a Form Data Model (FDM) or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema , form template, or form data model (FDM)) that is data does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost. 
 
 >[!CAUTION]
 >
->If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
+>If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model (FDM) or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model(FDM)) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
 
 ## Submit to Microsoft® SharePoint {#submit-to-sharedrive}
 
@@ -106,11 +106,11 @@ The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive For
 
 Integration of AEM Adaptive Form with Microsoft® SharePoint enables the submission, retrieval, or storage of data, files, and other relevant information within the SharePoint storage. To learn how to configure submit to SharePoint submit action for an Adaptive Form, [click here.](/help/forms/configure-submit-action-sharepoint.md) 
 
-## Submit using Form Data Model {#submit-using-form-data-model}
+## Submit using Form Data Model (FDM) {#submit-using-form-data-model}
 
-The **[!UICONTROL Submit using Form Data Model]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
+The **[!UICONTROL Submit using Form Data Model (FDM)]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model (FDM) to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
 
-When a user submits a form based on a form data model, you can [configure the form to write the submitted data to the data sources associated with the data model object.](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+When a user submits a form based on a form data model (FDM), you can [configure the form to write the submitted data to the data sources associated with the data model object.](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 
 ## Submit to REST endpoint {#submit-to-rest-endpoint}
 
@@ -212,7 +212,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 Come parte delle linee guida sulla sicurezza e l’irrigidimento dell’AEM, configura pagine di errore personalizzate come 400.jsp, 404.jsp e 500.jsp. Questi gestori vengono chiamati quando all’invio di un modulo vengono visualizzati errori 400, 404 o 500. Gli handler vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish. Puoi anche creare pagine JSP per altri codici di errore HTTP.
 
-Quando si precompila un modello di dati modulo o un modulo adattivo basato su schema con un reclamo di dati XML o JSON per uno schema che non contiene dati `<afData>`, `<afBoundData>`, e `</afUnboundData>` , i dati dei campi non limitati del modulo adattivo andranno persi. Lo schema può essere uno schema XML, uno schema JSON o un modello dati modulo. I campi non limitati sono campi modulo adattivo senza `bindref` proprietà.
+Quando si precompila un modello di dati modulo (FDM) o un modulo adattivo basato su schema con dati XML o JSON, invia un reclamo a uno schema che non contiene dati `<afData>`, `<afBoundData>`, e `</afUnboundData>` , i dati dei campi non limitati del modulo adattivo andranno persi. Lo schema può essere uno schema XML, uno schema JSON o un modello dati modulo (FDM). I campi non limitati sono campi modulo adattivo senza `bindref` proprietà.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

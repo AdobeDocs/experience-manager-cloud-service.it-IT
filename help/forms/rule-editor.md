@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: bbb5e4caef2cb8c44d10a92647401ee86a9326c0
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '6457'
+source-wordcount: '6468'
 ht-degree: 0%
 
 ---
@@ -140,15 +140,15 @@ Durante la scrittura di una regola When, puoi attivare l&#39;azione Cancella val
 
 **[!UICONTROL Disattiva]** Disattiva l&#39;oggetto specificato.
 
-**[!UICONTROL Richiama servizio]** Richiama un servizio configurato in un modello dati modulo. Quando scegli l’operazione Richiama servizio, viene visualizzato un campo. Quando tocca il campo, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo sul [!DNL Experience Manager] dell&#39;istanza. Quando si sceglie un servizio Modello dati modulo, vengono visualizzati più campi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato. Vedere regola di esempio per richiamare i servizi del modello dati del modulo.
+**[!UICONTROL Richiama servizio]** Richiama un servizio configurato in un modello dati modulo (FDM). Quando scegli l’operazione Richiama servizio, viene visualizzato un campo. Quando tocca il campo, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo (FDM) sul [!DNL Experience Manager] dell&#39;istanza. Quando si sceglie un servizio FDM (Form Data Model), vengono visualizzati più campi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato. Vedere regola di esempio per richiamare i servizi del modello dati del modulo.
 
 Oltre al servizio Modello dati modulo, è possibile specificare un URL WSDL diretto per richiamare un servizio Web. Tuttavia, un servizio di modello dati modulo presenta molti vantaggi e l’approccio consigliato per richiamare un servizio.
 
-Per ulteriori informazioni sulla configurazione dei servizi nel modello dati modulo, vedi [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md).
+Per ulteriori informazioni sulla configurazione dei servizi nel modello dati modulo (FDM), consulta [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md).
 
-**[!UICONTROL Imposta valore di]** Calcola e imposta il valore dell&#39;oggetto specificato. È possibile impostare il valore dell&#39;oggetto su una stringa, il valore di un altro oggetto, il valore calcolato utilizzando un&#39;espressione matematica o una funzione, il valore di una proprietà di un oggetto o il valore di output di un servizio Form Data Model configurato. Quando si sceglie l&#39;opzione Servizio Web, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo sul [!DNL Experience Manager] dell&#39;istanza. Quando si sceglie un servizio Modello dati modulo, vengono visualizzati più campi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato.
+**[!UICONTROL Imposta valore di]** Calcola e imposta il valore dell&#39;oggetto specificato. È possibile impostare il valore dell&#39;oggetto su una stringa, il valore di un altro oggetto, il valore calcolato utilizzando un&#39;espressione matematica o una funzione, il valore di una proprietà di un oggetto o il valore di output di un servizio Form Data Model configurato. Quando si sceglie l&#39;opzione Servizio Web, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo (FDM) nel [!DNL Experience Manager] dell&#39;istanza. Quando si sceglie un servizio Modello dati modulo, vengono visualizzati più campi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato.
 
-Per ulteriori informazioni sulla configurazione dei servizi nel modello dati modulo, vedi [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md).
+Per ulteriori informazioni sulla configurazione dei servizi nel modello dati modulo (FDM), consulta [[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md).
 
 Il **[!UICONTROL Imposta proprietà]** tipo di regola consente di impostare il valore di una proprietà dell&#39;oggetto specificato in base a un&#39;azione condizione. È possibile impostare la proprietà su una delle seguenti opzioni:
 * visibile (booleano)
@@ -214,7 +214,7 @@ Quando (facoltativo):
 
 (Condizione 1 E Condizione 2 E Condizione 3) è VERO;
 
-Nell&#39;esempio seguente il valore nel `dependentid` campo viene preso come input e il valore del campo viene impostato sull&#39;output dell&#39;argomento `Relation` del `getDependent` `Relation` servizio Form Data Model.
+Nell&#39;esempio seguente il valore nel `dependentid` campo viene preso come input e il valore del `Relation` campo viene impostato sull&#39;output dell&#39;argomento `Relation` del `getDependent` servizio Form Data Model.
 
 ![Set-value-web-service](assets/set-value-web-service1.png)
 
@@ -308,7 +308,7 @@ Una regola di convalida tipica è strutturata come segue:
 
 ### [!UICONTROL Imposta opzioni di] {#setoptionsof}
 
-Il **[!UICONTROL Imposta opzioni di]** tipo di regola consente di definire regole per aggiungere caselle di controllo in modo dinamico al modulo adattivo. Puoi utilizzare un modello dati modulo o una funzione personalizzata per definire la regola.
+Il **[!UICONTROL Imposta opzioni di]** tipo di regola consente di definire regole per aggiungere caselle di controllo in modo dinamico al modulo adattivo. Per definire la regola è possibile utilizzare un modello dati modulo (FDM) o una funzione personalizzata.
 
 Per definire una regola basata su una funzione personalizzata, seleziona **[!UICONTROL Uscita funzione]** dall&#39;elenco a discesa e trascinare una funzione personalizzata dall&#39;elenco **[!UICONTROL Funzioni]** scheda. Al modulo adattivo viene aggiunto il numero di caselle di controllo definite nella funzione personalizzata.
 
@@ -316,7 +316,7 @@ Per definire una regola basata su una funzione personalizzata, seleziona **[!UIC
 
 Per creare una funzione personalizzata, vedi [funzioni personalizzate nell’editor di regole](#custom-functions).
 
-Per definire una regola basata su un modello dati modulo:
+Per definire una regola basata su un modello dati modulo (FDM):
 
 1. Seleziona **[!UICONTROL Output del servizio]** dall’elenco a discesa.
 1. Seleziona l’oggetto modello dati.
@@ -659,7 +659,7 @@ Per aprire un modulo in modalità di modifica, selezionare un modulo e seleziona
 
    >[!NOTE]
    >
-   > Per richiamare un modello di dati modulo dall’editor di regole utilizzando funzioni personalizzate: [vedi qui](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
+   > Per richiamare un modello dati modulo (FDM) dall’editor di regole utilizzando funzioni personalizzate, [vedi qui](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### Tipi supportati da dichiarazione di funzione {#function-declaration-supported-types}
 
@@ -817,7 +817,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### Richiama servizio modello dati modulo {#invoke}
 
-Considerare un servizio Web `GetInterestRates` che prende l&#39;importo del prestito, la locazione e il punteggio di credito del richiedente come input e restituisce un piano di prestito che include l&#39;importo dell&#39;IME e il tasso di interesse. Puoi creare un modello dati modulo utilizzando il servizio web come origine dati. Si aggiungono oggetti modello dati e un `get` servizio al modello di modulo. Il servizio viene visualizzato nella scheda Servizi del modello dati del modulo. Quindi, crea un modulo adattivo che includa i campi dagli oggetti modello dati per acquisire gli input dell’utente per l’importo del prestito, la durata e il punteggio di credito. Aggiungi un pulsante che attiva il servizio web per recuperare i dettagli del piano. L’output viene compilato nei campi appropriati.
+Considerare un servizio Web `GetInterestRates` che prende l&#39;importo del prestito, la locazione e il punteggio di credito del richiedente come input e restituisce un piano di prestito che include l&#39;importo dell&#39;IME e il tasso di interesse. È possibile creare un modello dati modulo (FDM) utilizzando il servizio Web come origine dati. Si aggiungono oggetti modello dati e un `get` servizio al modello di modulo. Il servizio viene visualizzato nella scheda Servizi del modello dati del modulo (FDM). Quindi, crea un modulo adattivo che includa i campi dagli oggetti modello dati per acquisire gli input dell’utente per l’importo del prestito, la durata e il punteggio di credito. Aggiungi un pulsante che attiva il servizio web per recuperare i dettagli del piano. L’output viene compilato nei campi appropriati.
 
 La regola seguente mostra come configurare l’azione Richiama servizio per eseguire lo scenario di esempio.
 

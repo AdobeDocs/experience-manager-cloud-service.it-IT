@@ -4,9 +4,9 @@ description: Configurare un ambiente di sviluppo locale per Adobe Experience Man
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2726'
 ht-degree: 1%
 
 ---
@@ -249,7 +249,7 @@ Ora puoi utilizzare l’ambiente di sviluppo locale per eseguire il rendering de
 
 Utilizza questo progetto per creare Forms adattivo, distribuire aggiornamenti di configurazione, sovrapposizioni, creare componenti per moduli adattivi personalizzati, testare e codice personalizzato in locale [!DNL Experience Manager Forms] SDK Dopo il test locale, puoi distribuire il progetto in  [!DNL Experience Manager Forms] ambienti di produzione e non di produzione as a Cloud Service. Quando distribuisci il progetto, vengono distribuite anche le seguenti risorse AEM Forms:
 
-| Temi | Modelli | Modelli dati modulo |
+| Temi | Modelli | Modello dati modulo (FDM) |
 ---------|----------|---------
 | Area di lavoro 3.0 | Base | Microsoft® Dynamics 365 |
 | Tranquilla | Vuoto | Salesforce |
@@ -259,7 +259,7 @@ Utilizza questo progetto per creare Forms adattivo, distribuire aggiornamenti di
 
 >[!NOTE]
 >
-> Imposta il progetto basato su Archetipo AEM versione 30 o successiva per ottenere e utilizzare modelli di dati per moduli Microsoft® Dynamics 365 e Salesforce con AEM Forms as a Cloud Service.
+> Imposta il progetto basato su Archetipo AEM versione 30 o successiva per ottenere e utilizzare Microsoft® Dynamics 365 e Salesforce Form Data Model (FDM) con AEM Forms as a Cloud Service.
 > Imposta il progetto basato su Archetipo AEM versione 32 o successiva per ottenere e utilizzare i temi Tranquil, Urbane e Ultramarine con AEM Forms as a Cloud Service.
 
 Per impostare il progetto:
@@ -399,7 +399,7 @@ Per eseguire il backup e spostare le risorse dall’SDK esistente a un nuovo amb
 
 ### Creare un backup del contenuto esistente {#create-backup-of-your-existing-content}
 
-Esegui il backup del Forms adattivo, dei modelli, del modello dati del modulo, del tema, delle configurazioni e del codice personalizzato. Per creare il backup, è possibile eseguire le operazioni seguenti:
+Esegui il backup del Forms adattivo, dei modelli, del modello dati del modulo (FDM), del tema, delle configurazioni e del codice personalizzato. Per creare il backup, è possibile eseguire le operazioni seguenti:
 
 1. [Scarica](import-export-forms-templates.md#manage-forms-and-related-assets) Forms, temi e PDF forms adattivi.
 1. Esportare modelli di moduli adattivi.

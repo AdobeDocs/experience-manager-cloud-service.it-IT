@@ -6,9 +6,9 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utilizzare i flussi di lavoro AEM, utilizzando Assegna passaggi attività, converti in passaggi PDF/A, Genera un documento di passaggi registrati, Utilizza flussi di lavoro, Firma passaggio documento, Genera un passaggio di output stampato, Genera output PDF non interattivo
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '7367'
+source-wordcount: '7379'
 ht-degree: 0%
 
 ---
@@ -85,12 +85,12 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
 * **[!UICONTROL Per l’attività completata, esegui il rendering del modulo adattivo come]**: quando un’attività è contrassegnata come completata, è possibile eseguire il rendering del modulo adattivo come modulo adattivo di sola lettura o documento PDF. Per eseguire il rendering del modulo adattivo come documento record, è necessario abilitare l’opzione Documento di record o un Forms adattivo basato su modello di modulo.
 * **[!UICONTROL Prepopolato]**: i seguenti campi elencati di seguito fungono da input per l’attività:
 
-   * **[!UICONTROL Seleziona file di dati di input tramite]**: percorso del file di dati di input (.json, .xml, .doc o modello dati modulo). Puoi recuperare il file di dati di input utilizzando un percorso relativo al payload o recuperare il file memorizzato in una variabile di tipo Documento, XML o JSON. Ad esempio, il file contiene i dati inviati per il modulo tramite un&#39;applicazione Casella in entrata AEM. Un esempio di percorso è [Payload_Directory]/workflow/data.
+   * **[!UICONTROL Seleziona file di dati di input tramite]**: percorso del file di dati di input (.json, .xml, .doc o modello dati modulo (FDM)). Puoi recuperare il file di dati di input utilizzando un percorso relativo al payload o recuperare il file memorizzato in una variabile di tipo Documento, XML o JSON. Ad esempio, il file contiene i dati inviati per il modulo tramite un&#39;applicazione Casella in entrata AEM. Un esempio di percorso è [Payload_Directory]/workflow/data.
    * **[!UICONTROL Seleziona allegati di input tramite]**: gli allegati disponibili nel percorso vengono allegati al modulo associato all’attività. Il percorso può essere relativo al payload o recuperare l’allegato memorizzato in una variabile di un documento. Un esempio di percorso è [Payload_Directory]/attachments/. È possibile specificare gli allegati posizionati rispetto al payload o utilizzare una variabile di tipo documento (Elenco array > Documento) per specificare un allegato di input per il modulo adattivo.
 
   <!-- 
     
-    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
@@ -108,13 +108,13 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
 
 * **[!UICONTROL Informazioni inviate]**: i seguenti campi elencati di seguito fungono da posizioni di output per l’attività:
 
-   * **[!UICONTROL Salva file di dati di output tramite]**: salva il file di dati (.json, .xml, .doc o il modello dati del modulo). Il file di dati contiene informazioni inviate tramite il modulo associato. Puoi salvare il file di dati di output utilizzando un percorso relativo al payload o memorizzarlo in una variabile di tipo Documento, XML o JSON. Ad esempio: [Payload_Directory]/Workflow/data, dove i dati sono un file.
+   * **[!UICONTROL Salva file di dati di output tramite]**: salva il file di dati (.json, .xml, .doc o modello dati modulo (FDM)). Il file di dati contiene informazioni inviate tramite il modulo associato. Puoi salvare il file di dati di output utilizzando un percorso relativo al payload o memorizzarlo in una variabile di tipo Documento, XML o JSON. Ad esempio: [Payload_Directory]/Workflow/data, dove i dati sono un file.
    * **[!UICONTROL Salva allegati tramite]**: salva gli allegati del modulo forniti in un’attività. È possibile salvare gli allegati utilizzando un percorso relativo al payload o memorizzarlo in una variabile dell’elenco di matrici del tipo di dati Documento.
    * **[!UICONTROL Salva documento di record tramite]**: percorso per salvare un file del documento record. Ad esempio: [Payload_Directory]/DocumentofRecord/credit-card.pdf. Puoi salvare il documento record utilizzando un percorso relativo al payload o memorizzarlo in una variabile di tipo Dati documento. Se si seleziona la **[!UICONTROL Relativo al payload]** , il documento di record non viene generato se il campo percorso viene lasciato vuoto. Questa opzione è disponibile solo se si seleziona Modulo adattivo dall’elenco a discesa Tipo.
 
   <!-- 
     
-    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
     
@@ -273,9 +273,9 @@ Il passaggio Richiama DDX ha le seguenti proprietà:
 * **[!UICONTROL Salva output nel payload]**: salva i documenti di output nella cartella del payload o sovrascrive il payload, nel caso in cui il payload sia un file.
 * **[!UICONTROL Mappa del documento di output]**: specifica la posizione in cui salvare in modo esplicito ogni file di documento, aggiungendo una voce per documento. Ogni voce rappresenta il documento e la posizione in cui salvarlo. Se sono presenti più documenti di output, viene utilizzata questa opzione.
 
-## Passaggio del servizio Richiama modello dati modulo {#invoke-form-data-model-service-step}
+## Passaggio del servizio Richiama modello dati modulo (FDM) {#invoke-form-data-model-service-step}
 
-È possibile utilizzare [[!DNL AEM Forms] Integrazione dei dati](data-integration.md) per configurare e connettersi a diverse origini dati. Queste origini dati possono essere un servizio web, un servizio REST, un servizio OData e una soluzione CRM. [!DNL AEM Forms] L’integrazione dei dati consente di creare un modello di dati modulo che include vari servizi per eseguire operazioni di recupero, aggiunta e aggiornamento dei dati sul database configurato. È possibile utilizzare **[!UICONTROL Passaggio Richiama servizio modello dati]** per selezionare un modello di dati modulo (FDM) e utilizzare i servizi di FDM per recuperare, aggiornare o aggiungere dati per origini dati diverse.
+È possibile utilizzare [[!DNL AEM Forms] Integrazione dei dati](data-integration.md) per configurare e connettersi a diverse origini dati. Queste origini dati possono essere un servizio web, un servizio REST, un servizio OData e una soluzione CRM. [!DNL AEM Forms] L’integrazione dei dati consente di creare un modello di dati modulo (FDM) che include vari servizi per eseguire operazioni di recupero, aggiunta e aggiornamento dei dati sul database configurato. È possibile utilizzare **[!UICONTROL Passaggio Richiama servizio modello dati]** per selezionare un modello di dati modulo (FDM) e utilizzare i servizi di FDM per recuperare, aggiornare o aggiungere dati per origini dati diverse.
 
 Per spiegare gli input per i campi del passaggio, vengono utilizzati, ad esempio, la seguente tabella di database e il seguente file JSON:
 
@@ -330,14 +330,14 @@ Per spiegare gli input per i campi del passaggio, vengono utilizzati, ad esempio
   }
 ```
 
-Il passaggio Richiama servizio modello dati modulo presenta i campi elencati di seguito per facilitare le operazioni del modello dati modulo:
+Il passaggio del servizio Richiama modello dati modulo dispone dei campi elencati di seguito per facilitare le operazioni del modello dati modulo:
 
 * **[!UICONTROL Titolo]**: titolo del passaggio. Consente di identificare i passaggi nell’editor del flusso di lavoro.
 * **[!UICONTROL Descrizione]**: spiegazione utile per altri sviluppatori di processi quando si lavora in un ambiente di sviluppo condiviso.
 
-* **[!UICONTROL Percorso modello dati modulo]**: sfoglia e seleziona un modello dati modulo presente sul server.
+* **[!UICONTROL Percorso modello dati modulo]**: sfoglia e seleziona un modello dati modulo (FDM) presente sul server.
 
-* **[!UICONTROL Errori e convalide]**: l’opzione ti consente di acquisire i messaggi di errore e specificare le opzioni di convalida per i dati recuperati e inviati alle origini dati. Con queste modifiche, puoi garantire che i dati passati al passaggio Richiama servizio modello dati modulo siano conformi ai vincoli di dati definiti dall’origine dati. Per ulteriori dettagli, consulta [Convalida automatica dei dati di input](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL Errori e convalide]**: l’opzione ti consente di acquisire i messaggi di errore e specificare le opzioni di convalida per i dati recuperati e inviati alle origini dati. Con queste modifiche, puoi garantire che i dati passati al passaggio di servizio Richiama modello dati modulo (FDM) siano conformi ai vincoli di dati definiti dall’origine dati. Per ulteriori dettagli, consulta [Convalida automatica dei dati di input](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL Livello di convalida]**: sono disponibili tre categorie di convalide: Base, Completo e Disattivato:
 
@@ -353,7 +353,7 @@ Il passaggio Richiama servizio modello dati modulo presenta i campi elencati di 
 
 * **[!UICONTROL Memorizza dettagli errore in variabile]**: puoi memorizzare i dettagli di un errore in una [Variabile di tipo JSON](variable-in-aem-workflows.md).
 
-* **[!UICONTROL Servizio]**: elenco dei servizi forniti dal modello dati modulo selezionato.
+* **[!UICONTROL Servizio]**: elenco dei servizi forniti dal modello dati modulo (FDM) selezionato.
 * **[!UICONTROL Input per servizi]** > **[!UICONTROL Fornisci dati di input utilizzando metadati letterali, variabili o del flusso di lavoro e un file JSON]**: un servizio può avere più argomenti. Seleziona l’opzione per ottenere il valore degli argomenti del servizio da una proprietà di metadati del flusso di lavoro, da un oggetto JSON, da una variabile o inserisci direttamente il valore nella casella di testo fornita:
 
    * **[!UICONTROL Letterale]**: utilizza l’opzione quando conosci il valore esatto da specificare. Ad esempio, srose@we.info.
@@ -365,16 +365,16 @@ Il passaggio Richiama servizio modello dati modulo presenta i campi elencati di 
      Ad esempio, se la cartella relativa al payload nell’archivio CRX include un file allegato in corrispondenza di `attachment\attachment-folder` posizione, specificare `attachment\attachment-folder` nella casella di testo dopo aver selezionato **[!UICONTROL Relativo al payload]** opzione.
 
    * **[!UICONTROL Notazione in punti JSON]**: utilizza l’opzione quando il valore da utilizzare si trova in un file JSON. Ad esempio, insurance.customerDetails.emailAddress. L’opzione JSON Dot Notation è disponibile solo se è selezionata l’opzione Mappa campi di input dall’opzione JSON di input.
-   * **[!UICONTROL Mappa i campi di input da JSON di input]**: specifica il percorso di un file JSON per ottenere il valore di input di alcuni argomenti del servizio dal file JSON. Il percorso del file JSON può essere relativo al payload, un percorso assoluto oppure puoi selezionare un documento JSON di input utilizzando una variabile di tipo JSON o Modello dati modulo.
+   * **[!UICONTROL Mappa i campi di input da JSON di input]**: specifica il percorso di un file JSON per ottenere il valore di input di alcuni argomenti del servizio dal file JSON. Il percorso del file JSON può essere relativo al payload, un percorso assoluto oppure puoi selezionare un documento JSON di input utilizzando una variabile di tipo JSON o Form Data Model (FDM).
 
 * **[!UICONTROL Input per servizi]** > **[!UICONTROL Fornisci dati di input utilizzando una variabile o un file JSON]**: seleziona l’opzione per ottenere valori per tutti gli argomenti da un file JSON salvato in un percorso assoluto, in un percorso relativo al payload o in una variabile.
-* **[!UICONTROL Seleziona documento JSON di input tramite]**: file JSON contenente i valori per tutti gli argomenti del servizio. Il percorso del file JSON può essere **[!UICONTROL relativo al payload]** o un **[!UICONTROL percorso assoluto]**. Puoi anche recuperare il documento JSON di input utilizzando una variabile di tipo di dati JSON o Modello dati modulo.
+* **[!UICONTROL Seleziona documento JSON di input tramite]**: file JSON contenente i valori per tutti gli argomenti del servizio. Il percorso del file JSON può essere **[!UICONTROL relativo al payload]** o un **[!UICONTROL percorso assoluto]**. Puoi anche recuperare il documento JSON di input utilizzando una variabile di JSON o il tipo di dati Form Data Model (FDM).
 
 * **[!UICONTROL Notazione in punti JSON]**: lascia vuoto il campo per utilizzare tutti gli oggetti del file JSON specificato come input per gli argomenti del servizio. Per leggere un oggetto JSON specifico dal file JSON specificato come input per gli argomenti del servizio, specifica la notazione del punto per l’oggetto JSON. Ad esempio, se disponi di un JSON simile a quello elencato all’inizio della sezione, specifica insurance.customerDetails per fornire tutti i dettagli di un cliente come input per il servizio.
 * **[!UICONTROL Produzione del servizio]** > **[!UICONTROL Associa e scrivi i valori di output in una variabile o nei metadati]**: seleziona l’opzione per salvare i valori di output come proprietà del nodo di metadati dell’istanza del flusso di lavoro in crx-repository. Specifica il nome della proprietà dei metadati e seleziona l’attributo di output del servizio corrispondente da mappare con la proprietà dei metadati. Ad esempio, mappa phone_number restituito dal servizio di output con la proprietà phone_number dei metadati del flusso di lavoro. Allo stesso modo, puoi memorizzare l’output in una variabile di tipo dati Long. Quando selezioni una proprietà per **[!UICONTROL Attributo di output del servizio da mappare]** , solo le variabili in grado di memorizzare i dati della proprietà selezionata vengono compilate per **[!UICONTROL Salva l’output in]** opzione.
 
 * **[!UICONTROL Produzione del servizio]** > **[!UICONTROL Salva l’output in una variabile o in un file JSON]**: seleziona l’opzione per salvare i valori di output in un file JSON in un percorso assoluto, in un percorso relativo al payload o in una variabile.
-* **[!UICONTROL Salva documento JSON di output tramite le opzioni di seguito]**: salva il file JSON di output. Il percorso del file JSON di output può essere relativo al payload o a un percorso assoluto. Puoi anche salvare il file JSON di output utilizzando una variabile di tipo di dati JSON o Modello dati modulo.
+* **[!UICONTROL Salva documento JSON di output tramite le opzioni di seguito]**: salva il file JSON di output. Il percorso del file JSON di output può essere relativo al payload o a un percorso assoluto. Puoi anche salvare il file JSON di output utilizzando una variabile di JSON o il tipo di dati Form Data Model (FDM).
 
 
 

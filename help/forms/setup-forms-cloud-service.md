@@ -4,10 +4,10 @@ description: Scopri come impostare e configurare un [!DNL AEM Forms] ambiente as
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 6%
+source-wordcount: '610'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 * **Progettazione esperienza utente**: User Experience (UX) Designer definisce lo stile, il layout e il branding per [!DNL AEM Forms] risorse.
 
-* **professionista Forms**: un professionista Forms crea Forms adattivo, temi e modelli in base allo stile, al layout e al branding forniti dal designer UX. Il professionista crea e integra anche un modulo adattivo con un modello di dati del modulo e flussi di lavoro AEM. In genere, un professionista Forms esegue attività front-end correlate.
+* **professionista Forms**: un professionista Forms crea Forms adattivo, temi e modelli in base allo stile, al layout e al branding forniti dal designer UX. Il professionista crea e integra anche un modulo adattivo con un modello di dati del modulo (FDM) e flussi di lavoro AEM. In genere, un professionista Forms esegue attività front-end correlate.
 
 * **sviluppatore Forms**: uno sviluppatore Forms sviluppa una soluzione di moduli personalizzata. Uno sviluppatore Forms esegue in genere uno sviluppo back-end come lo sviluppo di componenti personalizzati, flussi di lavoro AEM, servizi di precompilazione e altro ancora.
 

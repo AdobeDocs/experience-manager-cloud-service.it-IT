@@ -4,9 +4,9 @@ description: Scopri l’architettura di [!DNL AEM Forms] as a Cloud Service a sc
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1034'
 ht-degree: 2%
 
 ---
@@ -84,7 +84,7 @@ Adobe’s PDF Services API lets create, combine, export, and extract data from P
 
 Forms as a Cloud Service fornisce opzioni per archiviare il contenuto in un sistema di archiviazione esterno, ad esempio Archivio BLOB, Database o un servizio di archiviazione. Puoi anche memorizzare i dati dei flussi di lavoro in elaborazione (dati sulle variabili di flusso di lavoro AEM) che contengono elementi di dati personali sensibili (SPD) in un archivio gestito dal cliente per un’elaborazione sicura. L’Adobe consiglia di memorizzare dati sensibili solo su archivi gestiti dal cliente.
 
-È possibile utilizzare **Connettore di archiviazione unificata** per connettersi all’archiviazione BLOB e **Modello dati modulo** per connettersi ai database o ai servizi back-end (RESTful, SOAP, Azure Blob Storage e altro).
+È possibile utilizzare **Connettore di archiviazione unificata** per connettersi all’archiviazione BLOB e **Modello dati modulo (FDM)** per connettersi ai database o ai servizi back-end (RESTful, SOAP, Azure Blob Storage e altro).
 
 ### Document Services
 
@@ -105,7 +105,7 @@ Cloud Manager è un componente essenziale per [AEM as a Cloud Service](https://e
 * Creazione e gestione delle pipeline per la distribuzione del codice cliente e della configurazione in un particolare ambiente
 * Ricezione di notifiche su eventi importanti del ciclo di vita per questi componenti (ad esempio, aggiornamenti dei prodotti) Per ulteriori informazioni su Cloud Manager, consulta [Comprendere Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) e [Introduzione a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it).
 
-### Console per sviluppatori
+### Console di sviluppo
 
 Una Console per sviluppatori fornisce vari dettagli di ogni ambiente in esecuzione di Forms as a Cloud Service. Questi dettagli sono utili per il debug dell’ambiente. Per ulteriori informazioni, consulta [Debug di AEM as a Cloud Service con Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
 
@@ -118,7 +118,7 @@ Every AEM Forms as a Cloud Service program has access to Fastly CDN service. It 
 +++
 
 +++Adaptive Forms
-Adaptive Forms enable customers to author web-friendly reflowable web forms and fragments that are used by the customers for their data capture needs. This feature enables customers to manage their complex data capture needs easily, by using multiple integrations with Adobe Sign, Document Services, Form Data Model, Automated Forms Conversion service, and more.
+Adaptive Forms enable customers to author web-friendly reflowable web forms and fragments that are used by the customers for their data capture needs. This feature enables customers to manage their complex data capture needs easily, by using multiple integrations with Adobe Sign, Document Services, Form Data Model (FDM), Automated Forms Conversion service, and more.
 
 +++
 
@@ -127,7 +127,7 @@ Automated Forms Conversion service helps accelerate digitization and modernizati
 
 +++
 
-+++Form Data Model
++++Form Data Model (FDM)
 The Form Data Model (FDM) feature is the standard way of creating data integrations with external/internal data sources and using them across the different Forms as a Cloud Service features. FDM provides a rich editor for customers to integrate, define, and manage relationships between the different entities and data sources and perform operations on them. Form data is stored in a data store hosted on the customer premises. Organizations can also use blob store hosted by the cloud provider and Adobe Experince Platform to store data.
 
 +++

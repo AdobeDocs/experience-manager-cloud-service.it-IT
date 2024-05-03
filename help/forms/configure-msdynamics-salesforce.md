@@ -4,9 +4,9 @@ description: Scopri come integrare Microsoft Dynamics 365 e Salesforce con Adapt
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '965'
 ht-degree: 2%
 
 ---
@@ -18,18 +18,18 @@ ht-degree: 2%
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce [!DNL Microsoft® Dynamics 365] e [!DNL Salesforce] servizi cloud per integrare moduli adattivi con modelli di dati per moduli pronti all’uso. Il Forms adattivo può quindi interagire con [!DNL Microsoft® Dynamics 365] e [!DNL Salesforce] per abilitare i flussi di lavoro aziendali. Ad esempio:
+[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce [!DNL Microsoft® Dynamics 365] e [!DNL Salesforce] servizi cloud per integrare moduli adattivi con Form Data Model (FDM) pronto all’uso. Il Forms adattivo può quindi interagire con [!DNL Microsoft® Dynamics 365] e [!DNL Salesforce] per abilitare i flussi di lavoro aziendali. Ad esempio:
 
 * Scrivi dati in [!DNL Microsoft® Dynamics 365] e [!DNL Salesforce] all’invio di un modulo adattivo.
-* Scrivi dati in [!DNL Microsoft® Dynamics 365] e [!DNL Salesforce] tramite entità personalizzate definite nel modello dati modulo e viceversa.
+* Scrivi dati in [!DNL Microsoft® Dynamics 365] e [!DNL Salesforce] tramite entità personalizzate definite in Form Data Model (FDM) e viceversa.
 * Query [!DNL Microsoft® Dynamics 365] e [!DNL Salesforce] server per dati e precompilazione di Adaptive Forms.
 * Leggi dati da [!DNL Microsoft® Dynamics 365] e [!DNL Salesforce] server.
 
-[!DNL Microsoft® Dynamics 365] e [!DNL Salesforce] I servizi cloud e i modelli di dati dei moduli sono disponibili con la funzione integrata di [!DNL AEM Forms] Server dopo di te [configurare un progetto di sviluppo per Forms basato su archetipo Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+[!DNL Microsoft® Dynamics 365] e [!DNL Salesforce] I servizi cloud e il modello dati del modulo (FDM) sono disponibili come funzionalità integrata nella [!DNL AEM Forms] Server dopo di te [configurare un progetto di sviluppo per Forms basato su archetipo Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 >[!NOTE]
 >
->Microsoft® Dynamics 365 e [!DNL Salesforce] I servizi cloud e i modelli di dati del modulo sono disponibili come predefiniti solo se hai impostato un’ [!DNL Experience Manager Forms] as a [!DNL Cloud Service] progetto basato su [Archetipo AEM 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) o più tardi.
+>Microsoft® Dynamics 365 e [!DNL Salesforce] Cloud Services e Form Data Model (FDM) sono disponibili come funzionalità integrata solo se è stata impostata una [!DNL Experience Manager Forms] as a [!DNL Cloud Service] progetto basato su [Archetipo AEM 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) o più tardi.
 
 ## Configura [!DNL Salesforce] servizio cloud {#configure-salesforce-cloud-service}
 
@@ -59,11 +59,11 @@ Per configurare il [!DNL Salesforce] servizio cloud:
    1. Accedi con il [!DNL Salesforce] credenziali e accettazione per consentire alla configurazione del servizio cloud di connettersi a [!DNL Salesforce] servizio. Se la connessione ha esito positivo, viene effettuato il reindirizzamento al [!DNL Salesforce] pagina di configurazione del servizio cloud, in cui viene visualizzato un messaggio di successo.
 1. Seleziona **[!UICONTROL Salva e chiudi]** per completare l&#39;impostazione della configurazione.
 
-### Accesso preconfigurato [!DNL Salesforce] Modello dati modulo
+### Accesso preconfigurato [!DNL Salesforce] Modello dati modulo (FDM)
 
-A [!DNL Salesforce] Il Modello dati modulo è disponibile come strumento pronto all’uso sulla [!DNL AEM Forms] Server dopo di te [configurare un progetto di sviluppo per Forms basato su archetipo Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+A [!DNL Salesforce] Il modello di dati del modulo (FDM) è disponibile come strumento predefinito nella [!DNL AEM Forms] Server dopo di te [configurare un progetto di sviluppo per Forms basato su archetipo Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
-Per accedere al modello dati del modulo, passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni di dati]**. L’elenco delle cartelle disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Seleziona il nome della cartella, quindi fai clic su **[!UICONTROL Modello dati Salesforce]** e seleziona Modifica ![Modifica](assets/edit.png) per visualizzare il modello dati del modulo.
+Per accedere al modello dati del modulo (FDM), vai a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni di dati]**. L’elenco delle cartelle disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Seleziona il nome della cartella, quindi fai clic su **[!UICONTROL Modello dati Salesforce]** e seleziona Modifica ![Modifica](assets/edit.png) per visualizzare il modello dati del modulo (FDM).
 
 Dopo aver configurato [[!DNL Salesforce] Servizio di configurazione cloud](#configure-salesforce-cloud-service), puoi integrare moduli adattivi con [!DNL Salesforce] Modello dati.
 
@@ -89,22 +89,22 @@ Per configurare il [!DNL Microsoft® Dynamics 365] servizio cloud:
    1. Immetti il valore per **[!UICONTROL Directory principale servizio]** campo. Vai all’istanza Dynamics e passa a [Risorse per sviluppatori](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) per visualizzare il valore del campo Service Root. Ad esempio `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. Specificare l&#39;ID client (definito ID applicazione) e il segreto client per l&#39;applicazione connessa.
    1. Sostituisci `{tenant}` con un ID tenant in **[!UICONTROL URL OAuth]**, **[!UICONTROL Aggiorna URL token]**, e **[!UICONTROL URL token di accesso]** campi.
-   1. Specifica l’URL dell’istanza di Dynamics nel **[!UICONTROL Risorsa]** campo da configurare [!UICONTROL Microsoft® Dynamics] con un modello dati modulo. Utilizza l’URL principale del servizio per derivare l’URL dell’istanza di Dynamics. Esempio: `https://<tenant-name>.dynamics.com`.
+   1. Specifica l’URL dell’istanza di Dynamics nel **[!UICONTROL Risorsa]** campo da configurare [!UICONTROL Microsoft® Dynamics] con un modello di dati modulo (FDM). Utilizza l’URL principale del servizio per derivare l’URL dell’istanza di Dynamics. Esempio: `https://<tenant-name>.dynamics.com`.
 
    1. Specifica `openid` nel **[!UICONTROL Ambito autorizzazione]** campo per il processo di autorizzazione [!DNL Microsoft® Dynamics 365].
    1. Accedi con il [!DNL Microsoft® Dynamics 365] credenziali e accettazione per consentire alla configurazione del servizio cloud di connettersi a [!DNL Microsoft® Dynamics 365] servizio. Se la connessione ha esito positivo, viene effettuato il reindirizzamento al [!DNL Microsoft® Dynamics 365] pagina di configurazione del servizio cloud, in cui viene visualizzato un messaggio di successo.
 1. Seleziona **[!UICONTROL Salva e chiudi]** per completare l&#39;impostazione della configurazione.
 
-### Accesso preconfigurato [!DNL Microsoft® Dynamics 365] Modello dati modulo
+### Accesso preconfigurato [!DNL Microsoft® Dynamics 365] Modello dati modulo (FDM)
 
-A [!DNL Microsoft® Dynamics 365] Il Modello dati modulo è disponibile come strumento pronto all’uso sulla [!DNL AEM Forms] Server dopo di te [configurare un progetto di sviluppo per Forms basato su archetipo Experience Manager](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
+A [!DNL Microsoft® Dynamics 365] Il modello di dati del modulo (FDM) è disponibile come strumento predefinito nella [!DNL AEM Forms] Server dopo di te [configurare un progetto di sviluppo per Forms basato su archetipo Experience Manager](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 
-Per accedere al modello dati del modulo, passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni di dati]**. L’elenco delle cartelle disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Seleziona il nome della cartella, quindi fai clic su **[!UICONTROL Modello dati Microsoft® Dynamics 365]** e seleziona Modifica ![Modifica](assets/edit.png) per visualizzare il modello dati del modulo.
+Per accedere al modello dati del modulo (FDM), vai a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni di dati]**. L’elenco delle cartelle disponibili include una cartella con il titolo specificato per `DappTitle`  durante [generazione del progetto di archetipo AEM](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Seleziona il nome della cartella, quindi fai clic su **[!UICONTROL Modello dati Microsoft® Dynamics 365]** e seleziona Modifica ![Modifica](assets/edit.png) per visualizzare il modello dati del modulo (FDM).
 
 Dopo aver configurato [[!DNL Microsoft® Dynamics 365] Servizio di configurazione cloud](#configure-dynamics-cloud-service), puoi integrare moduli adattivi con [!DNL Microsoft® Dynamics 365] Modello dati.
 
 >[!MORELIKETHIS]
 >
-* [Configurare le origini dati per AEM Forms](/help/forms/configure-data-sources.md)
-* [Configurare l’archiviazione Azure per AEM Forms](/help/forms/configure-azure-storage.md)
-[Aggiungere Forms Portal a una pagina di AEM Sites](/help/forms/configure-forms-portal.md)
+>* [Configurare le origini dati per AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configurare l’archiviazione Azure per AEM Forms](/help/forms/configure-azure-storage.md)
+>  [Aggiungere Forms Portal a una pagina di AEM Sites](/help/forms/configure-forms-portal.md)

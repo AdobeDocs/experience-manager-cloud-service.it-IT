@@ -4,10 +4,10 @@ description: Scopri come creare o aggiungere un modulo adattivo alla pagina AEM 
 feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3177'
-ht-degree: 3%
+source-wordcount: '3184'
+ht-degree: 1%
 
 ---
 
@@ -204,22 +204,22 @@ Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tr
 1. Seleziona e configura un’azione Invia in base alle tue esigenze. Per informazioni dettagliate sulle azioni di invio, vedere [Azione di invio modulo adattivo](/help/forms/configuring-submit-actions.md)
 
 
-## Configurare uno schema o un modello di dati modulo per un modulo nella pagina o nel frammento di esperienza di AEM Sites {#configure-schema-or-data-model-for-form}
+## Configurare uno schema o un modello dati modulo (FDM) per un modulo nella pagina o nel frammento di esperienza di AEM Sites {#configure-schema-or-data-model-for-form}
 
-È possibile utilizzare il modello dati modulo per collegare un modulo a un’origine dati per inviare e ricevere dati in base alle azioni degli utenti. È possibile anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. In base al requisito, connetti il modulo a uno schema JSON o a un modello di dati del modulo:
+È possibile utilizzare il modello dati modulo (FDM) per collegare un modulo a un&#39;origine dati per inviare e ricevere dati in base alle azioni dell&#39;utente. È possibile anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. In base al requisito, connetti il modulo a uno schema JSON o a un modello di dati del modulo (FDM):
 
 * [Creare uno schema JSON e caricarlo nell’ambiente](/help/forms/adaptive-form-json-schema-form-model.md)  oppure
-* [Creare un modello dati modulo](/help/forms/create-form-data-models.md)
+* [Creare un modello dati modulo (FDM)](/help/forms/create-form-data-models.md)
 
-Per configurare uno schema JSON o un modello dati modulo per il modulo:
+Per configurare uno schema JSON o un modello dati modulo (FDM) per il modulo:
 
 1. Apri l’Editor pagina AEM o il Frammento di esperienza che contiene il Modulo adattivo.
 1. Apri la Struttura contenuto e seleziona la **[!UICONTROL Contenitore Forms adattivo]** che ospita il modulo adattivo. Una pagina AEM Sites può ospitare più Forms adattivi. Quindi, seleziona con attenzione il contenitore Forms adattivo corretto.
 1. Fai clic sulle proprietà Contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
    ![Fai clic sull’icona chiave inglese per configurare un modello dati per il modulo adattivo](/help/forms/assets/form-data-model-adaptive-forms-container.png)
-1. Seleziona e configura uno schema JSON o un modello dati modulo, in base ai requisiti. Per informazioni dettagliate sulle azioni di invio, vedere [Azione di invio modulo adattivo](/help/forms/configuring-submit-actions.md).
+1. Seleziona e configura uno schema JSON o un modello dati modulo (FDM), in base ai requisiti. Per informazioni dettagliate sulle azioni di invio, vedere [Azione di invio modulo adattivo](/help/forms/configuring-submit-actions.md).
 
-   * Quando selezioni il **[!UICONTROL Modello modulo]** , utilizza **[!UICONTROL Seleziona modello dati modulo]** per selezionare un modello di dati modulo preconfigurato.
+   * Quando selezioni il **[!UICONTROL Modello modulo]** , utilizza **[!UICONTROL Seleziona modello dati modulo]** per selezionare un modello di dati modulo (FDM) preconfigurato.
    * Quando selezioni il **[!UICONTROL Schema]** , utilizza **[!UICONTROL Schema]** per selezionare uno schema JSON per il modulo.
 
 1. Clic **[!UICONTROL Fine]**.

@@ -1,21 +1,21 @@
 ---
 title: Come si collega il Modulo adattivo AEM a Microsoft&reg; SharePoint List?
-description: Collegare un modulo adattivo all’elenco SharePoint di Microsoft&reg;. Scopri come configurare l’elenco Microsoft&reg; SharePoint e creare un modello di dati del modulo utilizzando la configurazione. Inoltre, imparerai a integrare FDM con il tuo modulo adattivo.
+description: Collegare un modulo adattivo all’elenco SharePoint di Microsoft&reg;. Scopri come configurare l’elenco Microsoft&reg; SharePoint e creare un modello di dati del modulo (FDM) utilizzando la configurazione. Inoltre, imparerai a integrare FDM con il tuo modulo adattivo.
 role: User, Developer
 keywords: Collega Modulo adattivo AEM a Elenco Microsoft SharePoint, connetti Modulo adattivo a Elenco Microsoft SharePoint, integra Modulo adattivo AEM a Elenco Microsoft SharePoint, integra Modulo adattivo a Elenco Microsoft SharePoint, invia dati da un Modulo adattivo a Elenco SharePoint, invia flusso di lavoro di a Elenco AEM SharePoint.
 hide: true
 hidefromToC: true
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 3%
+source-wordcount: '525'
+ht-degree: 2%
 
 ---
 
 
 # Collegare un modulo adattivo all’elenco di Microsoft® SharePoint
 
-<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
 
 **Microsoft® SharePoint**: Microsoft® SharePoint consente la collaborazione fornendo siti di team dinamici ed efficienti per tutti i team, i reparti e le divisioni. Viene utilizzato per memorizzare, organizzare, condividere e accedere alle informazioni da qualsiasi dispositivo utilizzando qualsiasi browser web, ad esempio Microsoft® Edge, Internet Explorer, Chrome o Firefox. I due componenti principali di **Microsoft® SharePoint** sono:
 
@@ -31,8 +31,8 @@ Per istruzioni su come integrare un **Libreria documenti Microsoft® SharePoint*
 Prima di collegare un modulo adattivo a Microsoft® SharePoint List, effettua le seguenti operazioni:
 
 1. [Configurare Microsoft](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Creare un modello di dati modulo con Microsoft](/help/forms/create-form-data-models.md)
-1. [Configurare il modello dati modulo per recuperare e inviare dati](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Creare un modello dati modulo (FDM) tramite Microsoft](/help/forms/create-form-data-models.md)
+1. [Configurare il modello dati modulo (FDM) per recuperare e inviare dati](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
 
 Ora è possibile:
@@ -42,18 +42,18 @@ Ora è possibile:
 
 ## Collegare un modulo adattivo all’elenco di Microsoft® SharePoint {#connect-af-sharepoint-list}
 
-Integrare Microsoft® SharePoint List nel modulo adattivo [configurare un modulo adattivo per l’utilizzo di un modello dati modulo](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+Integrare Microsoft® SharePoint List nel modulo adattivo [configurare un modulo adattivo per l’utilizzo di un modello dati modulo (FDM)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
-Dopo aver configurato un modulo adattivo per l’utilizzo di un modello dati modulo, puoi:
+Dopo aver configurato un modulo adattivo per l’utilizzo di un modello dati modulo (FDM), è possibile:
 
-* [Configurare l’azione di invio utilizzando un modello dati modulo](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
-* [Configurare l’editor di regole per richiamare un modello dati modulo](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
+* [Configurare l’azione di invio utilizzando un modello di dati del modulo (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+* [Configurare l’editor di regole per richiamare un modello dati modulo (FDM)](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
 
 ## Collegare Microsoft® SharePoint List a un flusso di lavoro AEM {#connect-sharepoint-list-workflow}
 
 Per integrare Microsoft® SharePoint List in un flusso di lavoro AEM:
 
-1. [Creare un flusso di lavoro per richiamare un modello dati modulo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it)
+1. [Creare un flusso di lavoro per richiamare un modello dati modulo (FDM)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it)
 
    <!--
     To create a workflow with the editor:
@@ -84,7 +84,7 @@ Scopri come [utilizzare il flusso di lavoro AEM](https://experienceleague.adobe.
 
 * [Creare un modulo adattivo basato su componenti core](/help/forms/creating-adaptive-form-core-components.md)
 * [Configurare origini dati](/help/forms/configuring-submit-actions.md)
-* [Crea modello dati modulo](/help/forms/create-form-data-models.md)
+* [Crea modello dati modulo (FDM)](/help/forms/create-form-data-models.md)
 * [Utilizzare flussi di lavoro AEM incentrati su Forms - Riferimento alla fase per automatizzare i processi aziendali](/help/forms/aem-forms-workflow-step-reference.md)
 * [Creare un’azione di invio personalizzata per Adaptive Forms](/help/forms/custom-submit-action-form.md)
 * [Creare o aggiungere un modulo adattivo a una pagina di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

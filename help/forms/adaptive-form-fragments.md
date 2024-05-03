@@ -7,9 +7,10 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2137'
+source-wordcount: '2139'
 ht-degree: 1%
 
 ---
@@ -173,7 +174,7 @@ Puoi scegliere di incorporare un frammento di modulo adattivo in un modulo adatt
 
 >[!NOTE]
 >
-> Se si utilizzano più volte frammenti di modulo basati su nessuno in un modulo adattivo, si verifica un problema di sincronizzazione dei dati tra i campi dei frammenti. È possibile utilizzare un frammento](/help/forms/adaptive-form-fragments-core-components.md) di modulo basato su componente core che non sia legato ad alcun modello di dati modulo, più volte in un [modulo senza problemi di sincronizzazione dei dati.
+> Se si utilizzano più volte frammenti di modulo basati su nessuno in un modulo adattivo, si verifica un problema di sincronizzazione dei dati tra i campi dei frammenti. È possibile utilizzare più volte in un modulo un [frammento](/help/forms/adaptive-form-fragments-core-components.md) di modulo basato su componente core non associato ad alcun modello di dati modulo (FDM, Form Data Model) senza problemi di sincronizzazione dei dati.
 
 ## Automatico mappatura di frammenti per il binding dei dati {#auto-mapping-of-fragments-for-data-binding}
 
@@ -251,7 +252,7 @@ Per localizzare un modulo adattivo che contiene frammenti di modulo adattivo, è
 * Assicurati che il nome del frammento sia univoco. Il frammento non viene creato se è presente un frammento con lo stesso nome.
 * In un modulo adattivo basato su XDP, se salvi un pannello come frammento che include un altro frammento XDP, il frammento risultante viene associato automaticamente al frammento XDP secondario. Nel caso di un modulo adattivo basato su XSD, il frammento risultante è associato alla directory principale dello schema.
 * Quando crei un frammento di modulo adattivo, viene creato un nodo di frammento simile al nodo guideContainer per un modulo adattivo in CRXDe Lite.
-* Un frammento in un modulo adattivo che utilizza un modello dati del modulo diverso non è supportato. Ad esempio, un frammento basato su XDP non è supportato in un modulo adattivo basato su XSD e viceversa.
+* Un frammento in un modulo adattivo che utilizza un diverso modello di dati del modulo (FDM) non è supportato. Ad esempio, un frammento basato su XDP non è supportato in un modulo adattivo basato su XSD e viceversa.
 * I Frammenti di moduli adattivi sono disponibili per l’utilizzo tramite la scheda Frammenti di moduli adattivi nel Finder di contenuti AEM.
 * Qualsiasi espressione, script o stile in un frammento di modulo adattivo autonomo viene mantenuto quando viene inserito tramite riferimento o incorporato in un modulo adattivo.
 * Non è possibile modificare un frammento di modulo adattivo, inserito per riferimento, dall’interno di un modulo adattivo. Per apportare modifiche, puoi modificare il frammento di modulo adattivo autonomo o incorporarlo nel modulo adattivo.

@@ -1,22 +1,22 @@
 ---
-title: Come si richiama il servizio Modello dati modulo da Adaptive Forms utilizzando le API?
+title: Come richiamare il servizio Form Data Model (FDM) da Adaptive Forms utilizzando le API?
 description: Spiega l’API invokeWebServices che è possibile utilizzare per richiamare i servizi web scritti in WSDL dall’interno di un campo Modulo adattivo.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
 
 
-# API per richiamare il servizio Modello dati modulo da Adaptive Forms {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# API per richiamare il servizio Form Data Model (FDM) da Adaptive Forms {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Panoramica {#overview}
 
-[!DNL AEM Forms] consente agli autori dei moduli di semplificare e migliorare ulteriormente l’esperienza di compilazione dei moduli richiamando i servizi configurati in un modello dati modulo dall’interno di un campo Modulo adattivo. Per richiamare un servizio del modello dati, puoi creare una regola nell’editor visivo o specificare un JavaScript utilizzando `guidelib.dataIntegrationUtils.executeOperation` API nell&#39;editor di codice di [editor di regole](rule-editor.md).
+[!DNL AEM Forms] consente agli autori dei moduli di semplificare e migliorare ulteriormente l’esperienza di compilazione dei moduli richiamando i servizi configurati in un modello dati modulo (FDM) dall’interno di un campo Modulo adattivo. Per richiamare un servizio del modello dati, puoi creare una regola nell’editor visivo o specificare un JavaScript utilizzando `guidelib.dataIntegrationUtils.executeOperation` API nell&#39;editor di codice di [editor di regole](rule-editor.md).
 
 Questo documento si concentra sulla scrittura di un JavaScript utilizzando `guidelib.dataIntegrationUtils.executeOperation` API per richiamare un servizio.
 
@@ -60,7 +60,7 @@ La struttura API specifica i dettagli seguenti sull’operazione del servizio.
   </tr>
   <tr>
    <td><code>formDataModelId</code></td>
-   <td>Specifica il percorso dell'archivio del modello dati modulo, incluso il nome</td>
+   <td>Specifica il percorso dell'archivio del modello dati modulo (FDM), incluso il nome</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
@@ -87,7 +87,7 @@ La struttura API specifica i dettagli seguenti sull’operazione del servizio.
 
 ## Script di esempio per richiamare un servizio {#sample-script-to-invoke-a-service}
 
-Lo script di esempio seguente utilizza `guidelib.dataIntegrationUtils.executeOperation` API per richiamare `getAccountById` operazione di servizio configurata in `employeeAccount` modello dati modulo.
+Lo script di esempio seguente utilizza `guidelib.dataIntegrationUtils.executeOperation` API per richiamare `getAccountById` operazione di servizio configurata in `employeeAccount` modello dati modulo (FDM).
 
 Il `getAccountById` l&#39;operazione assume il valore nel `employeeID` campo modulo come input per `empId` e restituisce il nome del dipendente, il numero di conto e il saldo del conto del dipendente corrispondente. I valori di output vengono compilati nei campi modulo specificati. Ad esempio, il valore `name` viene popolato in `fullName` elemento modulo e valore per `accountNumber` argomento in `account` elemento modulo.
 
@@ -119,7 +119,7 @@ La funzione di richiamata può avere `success` e `failure` funzioni di callback.
 
 ### Script di esempio con funzioni di callback riuscite e non riuscite {#callback-function-success-failure}
 
-Lo script di esempio seguente utilizza `guidelib.dataIntegrationUtils.executeOperation` API per richiamare `GETOrder` operazione di servizio configurata in `employeeOrder` modello dati modulo.
+Lo script di esempio seguente utilizza `guidelib.dataIntegrationUtils.executeOperation` API per richiamare `GETOrder` operazione di servizio configurata in `employeeOrder` modello dati modulo (FDM).
 
 Il `GETOrder` l&#39;operazione assume il valore nel `Order ID` campo modulo come input per `orderId` e restituisce il valore della quantità dell&#39;ordine in `success` callback.  Se il `success` funzione di callback non restituisce la quantità dell&#39;ordine, il `failure` funzione di callback visualizza `Error occured` messaggio.
 

@@ -4,16 +4,17 @@ description: Scopri come migrare Forms adattivo, PDF forms, temi e altre risorse
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1195'
 ht-degree: 0%
 
 ---
 
 # Importare o esportare risorse Adaptive Forms e AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
-È possibile spostare Forms adattivo e le risorse correlate, ad esempio i temi dei moduli adattivi, i modelli di dati dei moduli, i modelli di moduli adattivi, i frammenti di documento e i PDF forms tra [!DNL AEM Forms] istanze. Potete importare ed esportare le risorse in formato pacchetto CRX o file binario.
+È possibile spostare Forms adattivo e le risorse correlate, ad esempio temi di moduli adattivi, modello dati modulo (FDM), modelli di moduli adattivi, frammenti di documento e PDF forms tra [!DNL AEM Forms] istanze. Potete importare ed esportare le risorse in formato pacchetto CRX o file binario.
 
 Quando si esporta un modulo adattivo, i criteri e i modelli di contenuto non vengono esportati. Utilizzare [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) per esportare tali risorse.
 
@@ -26,7 +27,7 @@ Per scaricare i moduli o le risorse correlate:
 1. Seleziona le risorse e fai clic su **[!UICONTROL Scarica]** icona.
 1. In Scarica risorse, scegli una delle seguenti opzioni e seleziona **[!UICONTROL Scarica]**.
 
-   * **Scarica come pacchetto CRX:** Utilizza l’opzione per scaricare e spostare tutte le risorse selezionate e le relative dipendenze da un [!DNL AEM Forms] a un&#39;altra. Scarica tutte le risorse e le cartelle come pacchetto CRX, inclusi i moduli creati in AEM (Forms adattivo e frammenti di moduli adattivi), i set di moduli, il modello di dati del modulo, i modelli di modulo, i documenti PDF e le risorse di riferimento (XSD e immagini).
+   * **Scarica come pacchetto CRX:** Utilizza l’opzione per scaricare e spostare tutte le risorse selezionate e le relative dipendenze da un [!DNL AEM Forms] a un&#39;altra. Scarica tutte le risorse e le cartelle come pacchetto CRX, inclusi i moduli creati in AEM (Forms adattivo e frammenti di moduli adattivi), i set di moduli, il modello di dati del modulo (FDM), i modelli di moduli, i documenti PDF e le risorse di riferimento (XSD e immagini).
 Il vantaggio di scaricare le risorse come pacchetto è che viene scaricato anche il riferimento dalle risorse selezionate. Ad esempio, se disponi di un modulo adattivo che utilizza un modello di modulo, XSD e un’immagine. Quando selezioni questo modulo adattivo e lo scarichi come pacchetto, il pacchetto scaricato contiene anche il modello del modulo, XSD e l’immagine. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa.
 
    * **Scaricare le risorse come file binari:** Utilizza l’opzione per scaricare solo modelli di modulo (XDP), PDF forms (PDF), documento (PDF) e risorse (immagini, schemi, fogli di stile). Puoi modificare queste risorse con applicazioni esterne. Scarica come file .zip le risorse con file binari, come immagini, PDF e altri formati supportati.
@@ -168,7 +169,7 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 Puoi utilizzare le cartelle per organizzare e disporre le risorse. L’organizzazione di documenti e risorse in una cartella consente di raggruppare i file per semplificarne la gestione. Puoi selezionare una cartella e scegliere se scaricarla o eliminarla. La procedura seguente illustra come creare una cartella:
 
-### Creare una cartella {#create-a-folder}
+### Crea una cartella {#create-a-folder}
 
 1. Accedi al tuo [!DNL AEM Forms] dell&#39;istanza.
 1. Seleziona Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > navigazione ![bussola](assets/Smock_Compass_18_N.svg) icon> **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.

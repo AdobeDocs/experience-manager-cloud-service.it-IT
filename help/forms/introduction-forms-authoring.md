@@ -6,10 +6,11 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 docset: aem65
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2465'
-ht-degree: 94%
+source-wordcount: '2468'
+ht-degree: 92%
 
 ---
 
@@ -26,8 +27,8 @@ ht-degree: 94%
 
 I moduli adattivi consentono di creare moduli coinvolgenti e reattivi, che si rivelano, inoltre, dinamici e adattivi. [!DNL AEM Forms] fornisce un’interfaccia utente intuitiva e componenti pronti all’uso per la creazione e l’utilizzo dei moduli adattivi. È possibile scegliere di creare un modulo adattivo basato su un modello o schema di modulo o senza un modello di modulo. È importante scegliere con attenzione il modello di modulo, che deve risultare adatto non solo alle proprie esigenze, ma deve consentire di accrescere gli investimenti e le risorse infrastrutturali esistenti. Per creare un modulo adattivo, è possibile scegliere tra le seguenti opzioni:
 
-* **Seleziona un modello dati del modulo**
-  [Integrazione dei dati](data-integration.md) consente di integrare entità e servizi da diverse origini dati in un modello dati del modulo da utilizzare per creare moduli adattivi. Scegli Modello dati modulo se il modulo adattivo che si sta creando prevede il recupero e la scrittura di dati da e verso più origini dati.
+* **Utilizzo di un modello dati modulo (FDM)**
+  [Integrazione dei dati](data-integration.md) consente di integrare entità e servizi da diverse origini dati in un modello dati modulo (FDM) che può essere utilizzato per creare Forms adattivo. Scegli Modello dati modulo (FDM) se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
 
 * **Utilizzo di un modello di modulo XDP**
 Si tratta di un modello di modulo ideale per gli investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e pattern.

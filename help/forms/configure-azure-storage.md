@@ -4,9 +4,9 @@ description: Scopri come integrare i moduli con il server di archiviazione Azure
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '591'
 ht-degree: 1%
 
 ---
@@ -16,10 +16,10 @@ ht-degree: 1%
 
 ![integrazione dei dati](assets/data-integeration.png)
 
-[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce un [!DNL Azure] configurazione di archiviazione per integrare forms con [!DNL Azure] servizi di storage. Il modello dati modulo può essere utilizzato per creare Forms adattivo che interagisce con [!DNL Azure] per abilitare i flussi di lavoro aziendali. Ad esempio:
+[[!DNL Experience Manager Forms] Integrazione dei dati](data-integration.md) fornisce un [!DNL Azure] configurazione di archiviazione per integrare forms con [!DNL Azure] servizi di storage. Il Modello dati modulo (FDM) può essere utilizzato per creare Forms adattivi che interagiscono con [!DNL Azure] per abilitare i flussi di lavoro aziendali. Ad esempio:
 
 * Scrivi dati in [!DNL Azure] all’invio di un modulo adattivo.
-* Scrivi dati in [!DNL Azure] tramite entità personalizzate definite nel modello dati modulo e viceversa.
+* Scrivi dati in [!DNL Azure] tramite entità personalizzate definite in Form Data Model (FDM) e viceversa.
 * Query [!DNL Azure] server per dati e precompilazione di Adaptive Forms.
 * Leggi dati da [!DNL Azure] server.
 
@@ -35,21 +35,21 @@ Prima di eseguire questi passaggi, assicurati di disporre di un [!DNL Azure] e u
 
 ## Crea modello dati modulo {#create-azure-form-data-model}
 
-Dopo aver creato [!DNL Azure] configurazione di storage, è possibile [creare il modello dati del modulo](create-form-data-models.md). Specifica la cartella che contiene [!DNL Azure] configurazione in **[!UICONTROL Configurazione origine dati]** durante la creazione del modello dati del modulo. Puoi quindi selezionare la configurazione dall’elenco di configurazioni esistenti nel nome della cartella specificato.
+Dopo aver creato [!DNL Azure] configurazione di storage, è possibile [creare il modello dati del modulo](create-form-data-models.md). Specifica la cartella che contiene [!DNL Azure] configurazione in **[!UICONTROL Configurazione origine dati]** durante la creazione del modello dati del modulo (FDM). Puoi quindi selezionare la configurazione dall’elenco di configurazioni esistenti nel nome della cartella specificato.
 
 ### Aggiungi [!DNL Azure] servizi al modello dati del modulo {#add-azure-services}
 
-Dopo aver creato il modello dati modulo e gli oggetti modello dati, è possibile aggiungere [!DNL Azure] servizi al modello dati del modulo.
+Dopo aver creato il modello dati modulo (FDM) e gli oggetti modello dati, è possibile aggiungere [!DNL Azure] servizi al modello di dati del modulo (FDM).
 
 Da aggiungere [!DNL Azure] servizi:
 
-1. In modalità Modifica, seleziona i servizi da **[!UICONTROL Servizi]** nel riquadro a sinistra e selezionare **[!UICONTROL Aggiungi selezionati]**. I servizi selezionati vengono visualizzati nel **[!UICONTROL Servizi]** del modello dati del modulo.
+1. In modalità Modifica, seleziona i servizi da **[!UICONTROL Servizi]** nel riquadro a sinistra e selezionare **[!UICONTROL Aggiungi selezionati]**. I servizi selezionati vengono visualizzati nel **[!UICONTROL Servizi]** del modello dati del modulo (FDM).
 
    ![Aggiungi servizi selezionati](assets/select-services.png)
 
 1. In **[!UICONTROL Servizi]** , selezionare il servizio e **[!UICONTROL Modifica proprietà]**. In base al servizio, definisci gli oggetti modello di input o output per il servizio.
 
-1. Seleziona **[!UICONTROL Salva]** per salvare il modello dati del modulo.
+1. Seleziona **[!UICONTROL Salva]** per salvare il modello dati del modulo (FDM).
 
    Nella tabella seguente sono descritti i [!DNL Azure] servizi:
 
@@ -96,7 +96,7 @@ Per definire una proprietà dell’oggetto modello dati come chiave di ricerca:
 
 1. In **[!UICONTROL Modello]** , selezionare la proprietà dell&#39;oggetto modello dati e selezionare **[!UICONTROL Modifica proprietà]**.
 1. Cambia il **[!UICONTROL Chiave di ricerca]** imposta l&#39;opzione sullo stato ON. Questa opzione è disponibile solo per i tipi di dati primari.
-1. Seleziona **[!UICONTROL Fine]** e quindi seleziona **[!UICONTROL Salva]** per salvare il modello dati del modulo.
+1. Seleziona **[!UICONTROL Fine]** e quindi seleziona **[!UICONTROL Salva]** per salvare il modello dati del modulo (FDM).
 
 Dopo aver definito le proprietà dell’oggetto modello dati come chiavi di ricerca, i valori hash vengono memorizzati nei tag di indice di Azure e i valori con codifica Base64 vengono memorizzati nei metadati di Azure.
 

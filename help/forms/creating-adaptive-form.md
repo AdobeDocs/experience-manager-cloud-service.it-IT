@@ -1,14 +1,14 @@
 ---
 title: Come si crea Adaptive Forms?
-description: Scopri come creare un modulo adattivo per semplificare la raccolta e l’elaborazione delle informazioni. Inoltre, scopri come creare un modulo adattivo basato su un modello di dati del modulo.
+description: Scopri come creare un modulo adattivo per semplificare la raccolta e l’elaborazione delle informazioni. Inoltre, scopri come creare un modulo adattivo basato su un modello di dati del modulo (FDM).
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 78%
+source-wordcount: '1500'
+ht-degree: 67%
 
 ---
 
@@ -98,7 +98,7 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 1. (Facoltativo) Nella scheda **[!UICONTROL Dati]**, seleziona un modello dati:
 
-   * **Modello di dati modulo**: un [Modello di dati modulo](data-integration.md) consente di integrare entità e servizi da diverse origini dati a un modulo adattivo. Scegli Modello dati modulo se il modulo adattivo che si sta creando prevede il recupero e la scrittura di dati da e verso più origini dati.
+   * **Modello di dati modulo**: un [Modello di dati modulo](data-integration.md) consente di integrare entità e servizi da diverse origini dati a un modulo adattivo. Scegli Modello dati modulo (FDM) se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
 
    * **Schema JSON**: lo [schema JSON](adaptive-form-json-schema-form-model.md) rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema di back-end dell’organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema sono disponibili per l’utilizzo nella scheda Oggetti modello dati del browser Contenuto durante l’authoring di Forms adattivo. Tutti i campi vengono aggiunti anche al modulo adattivo creato.
 
@@ -126,7 +126,7 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 1. Seleziona **[!UICONTROL Crea]**. Viene creato un modulo adattivo che viene aperto nell’editor di moduli adattivi. L’editor mostra i contenuti disponibili nel modello. Viene inoltre visualizzata la barra laterale per personalizzare il modulo creato in base alle esigenze.
 
-   In base al tipo di modulo adattivo, gli elementi del modulo presenti nello schema <!--XFA form template, XML schema or --> JSON associato o nel modello di dati del modulo vengono visualizzati nella scheda **[!UICONTROL Oggetti modello di dati]** del **[!UICONTROL Browser contenuti]** nella barra laterale. Puoi anche trascinare questi elementi per creare il modulo adattivo.
+   In base al tipo di modulo adattivo, gli elementi del modulo presenti nel <!--XFA form template, XML schema or --> Lo schema JSON o il modello dati del modulo (FDM) vengono visualizzati nel **[!UICONTROL Oggetti modello dati]** scheda di **[!UICONTROL Browser contenuti]** nella barra laterale. Puoi anche trascinare questi elementi per creare il modulo adattivo.
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -184,8 +184,8 @@ Puoi cambiare il modello di modulo per un modulo adattivo (basato su schema JSON
 1. Seleziona il modulo adattivo e fai clic sul pulsante **Proprietà** icona.
 1. Apri la scheda **[!UICONTROL Modello modulo]** ed effettua una delle seguenti operazioni.
 
-   * Se il modulo adattivo non dispone di un modello di modulo, puoi scegliere un altro modello di modulo e quindi selezionare uno <!-- a form template, --> schema XML o JSON, oppure un modello di dati modulo.
-   * Se il modulo adattivo si basa su un modello di modulo, puoi sceglierne un altro tra uno <!-- form template, --> schema XML o JSON, oppure un modello di dati modulo per lo stesso modello di modulo.
+   * Se il modulo adattivo non dispone di un modello di modulo, puoi scegliere un altro modello di modulo e quindi selezionare <!-- a form template, --> Schema XML o JSON o modello dati modulo (FDM).
+   * Se il modulo adattivo è basato su un modello di modulo, puoi sceglierne un altro <!-- form template, --> Schema XML o JSON oppure Modello dati modulo (FDM) per lo stesso modello di modulo.
 
 1. Seleziona **[!UICONTROL Salva]** per salvare le proprietà.
 
@@ -195,8 +195,8 @@ Puoi anche modificare le proprietà del modello di modulo dall’editor di modul
 1. Fai clic sull’icona ![Configura icona](/help/forms/assets/configure-icon.svg) per aprire le **[!UICONTROL proprietà]** del contenitore per modulo adattivo.
 1. Seleziona la scheda **[!UICONTROL Modello di dati]** ed effettua una delle seguenti operazioni:
 
-   * Se il modulo adattivo non dispone di un modello di modulo, puoi sceglierne uno e quindi selezionare lo schema XML o JSON <!-- a form template, -->, oppure un modello di dati modulo.
-   * Se il modulo adattivo si basa su un modello di modulo, non è possibile modificarlo. Puoi scegliere un altro schema XML o JSON <!-- form template, -->, oppure un modello di dati modulo per lo stesso modello di modulo applicabile.
+   * Se il modulo adattivo non dispone di un modello di modulo, puoi scegliere un modello di modulo e quindi selezionare <!-- a form template, --> Schema XML o JSON o modello dati modulo (FDM).
+   * Se il modulo adattivo si basa su un modello di modulo, non è possibile modificarlo. Puoi sceglierne un altro <!-- form template, --> Schema XML o JSON oppure Modello dati modulo (FDM) per lo stesso modello di modulo applicabile.
 1. Seleziona ![Salva](/help/forms/assets/check-button.png) per salvare le proprietà.
 
 ![Supporto schema FDM](/help/forms/assets/fdmsupport.png)

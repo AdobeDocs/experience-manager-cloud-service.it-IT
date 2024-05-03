@@ -4,9 +4,9 @@ description: Utilizza i componenti core modulo adattivo in una pagina AEM Sites 
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2071'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ Modulo pronto. Quando pubblichi la pagina AEM Sites, questo pubblica automaticam
 
 #### Configurare le proprietà del contenitore di moduli adattivi {#configure-additional-settings-container}
 
-È possibile personalizzare le impostazioni avanzate del [!UICONTROL Contenitore modulo adattivo] componente. Ad esempio:
+È possibile personalizzare le impostazioni avanzate del [!UICONTROL Contenitore modulo adattivo] componente. Ad esempio,
 
 * Puoi configurare il servizio di precompilazione in modo da caricare un modulo adattivo con valori precompilati sulla pagina di un sito.
 * È possibile configurare le impostazioni del modello dati per associare il modulo adattivo a un’origine dati.
@@ -110,12 +110,12 @@ In [!UICONTROL Modifica contenitore Forms adattivo] , è possibile specificare q
    * **Servizio preriempimento**: puoi utilizzare il servizio di precompilazione per compilare automaticamente i campi di un modulo adattivo utilizzando dati esistenti. Quando un utente apre un modulo, i valori di tali campi vengono precompilati. Per informazioni sul servizio di precompilazione, consulta [Precompilare i campi del modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **Categoria libreria client**: specifica la [Funzioni JavaScript](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) utilizzati nelle espressioni e supportati da Adaptive Forms.
 * **Modello dati**: un modello dati consente di integrare entità e servizi da diverse origini dati a un modulo adattivo. Scegli **[!UICONTROL Modello dati modulo]** se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
-   * **Modello dati modulo**: un modello dati modulo consente a un modulo adattivo di comunicare con origini dati diverse. Per informazioni sulla configurazione di un’origine dati, consulta [Configurare le origini dati](/help/forms/configure-data-sources.md).
+   * **Modello dati modulo**: un modello di dati modulo (FDM) consente a un modulo adattivo di comunicare con origini dati diverse. Per informazioni sulla configurazione di un’origine dati, consulta [Configurare le origini dati](/help/forms/configure-data-sources.md).
    * **Schema**: lo schema rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell’organizzazione. È possibile [associare lo schema a un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) e utilizzarne gli elementi per aggiungere contenuto dinamico a un modulo adattivo.
 
      >[!NOTE]
      >
-     > Dopo aver configurato il modello dati del modulo, non è possibile modificare il modello modulo associato. Tuttavia, è possibile modificare lo schema associato al modello dati del modulo.
+     > Dopo aver configurato il modello dati del modulo (FDM), non è possibile modificare il modello modulo associato. Tuttavia, è possibile modificare lo schema associato al modello dati del modulo (FDM).
 
 * **Scheda Invio**
 
@@ -125,7 +125,7 @@ In [!UICONTROL Modifica contenitore Forms adattivo] , è possibile specificare q
       * **Azione di invio**: un’azione di invio viene attivata quando un utente fa clic sul pulsante Invia in un modulo adattivo. È possibile [configurare l’azione di invio su modulo adattivo](/help/forms/configuring-submit-actions.md). I moduli adattivi forniscono le seguenti azioni di invio pronte all’uso:
          * Invia all’endpoint REST
          * Invia e-mail
-         * Invia usando il modello dati modulo
+         * Invia utilizzando il modello dati modulo (FDM)
          * Richiama un flusso di lavoro AEM
          * Invia a SharePoint
          * Invia a OneDrive

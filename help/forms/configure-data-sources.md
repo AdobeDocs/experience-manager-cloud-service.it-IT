@@ -1,13 +1,13 @@
 ---
 title: Come si configurano le origini dati?
-description: Scopri come configurare i servizi web RESTful, i servizi web basati su SOAP e i servizi OData come origini dati per un modello dati del modulo.
+description: Scopri come configurare i servizi web RESTful, i servizi web basati su SOAP e i servizi OData come origini dati per un modello dati modulo (FDM).
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2129'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ Prima di configurare i database relazionali utilizzando [!DNL Experience Manager
 
 1. Seleziona **[!UICONTROL Salva]** per salvare la configurazione.
 
-Ora è possibile utilizzare il database relazionale configurato con il modello dati del modulo.
+Ora è possibile utilizzare il database relazionale configurato con il modello dati del modulo (FDM).
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -84,7 +84,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and select to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model (FDM). Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -95,7 +95,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
    >[!NOTE]
    >
-   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
+   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model (FDM) can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
 1. Select **[!UICONTROL Save]** to save the configuration. -->
 
@@ -178,13 +178,13 @@ Alcune delle operazioni non supportate dalla versione 3.0 della specifica Open A
 
 Consulta [Specifiche OpenAPI 3.0](https://swagger.io/specification/v3/) per informazioni dettagliate.
 
-### Configurazione client HTTP del modello dati modulo per ottimizzare le prestazioni {#fdm-http-client-configuration}
+### Configurazione del client HTTP Form Data Model (FDM) per ottimizzare le prestazioni {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] formare un modello dati durante l’integrazione con i servizi web RESTful come origine dati include configurazioni client HTTP per l’ottimizzazione delle prestazioni.
 
 Imposta le seguenti proprietà del **[!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST]** per specificare l&#39;espressione regolare:
 
-* Utilizza il `http.connection.max.per.route` per impostare il numero massimo di connessioni consentite tra il modello di dati del modulo e i servizi web RESTful. Il valore predefinito è 20 connessioni.
+* Utilizza il `http.connection.max.per.route` per impostare il numero massimo di connessioni consentite tra il modello dati del modulo (FDM) e i servizi Web RESTful. Il valore predefinito è 20 connessioni.
 
 * Utilizza il `http.connection.max` per specificare il numero massimo di connessioni consentite per ogni route. Il valore predefinito è 40 connessioni.
 
@@ -212,7 +212,7 @@ Il seguente file JSON mostra un esempio:
 
 1. In [!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST] finestra di dialogo:
 
-   * Specifica il numero massimo di connessioni consentite tra il modello di dati del modulo e i servizi web RESTful nel **[!UICONTROL Limite di connessioni in totale]** campo. Il valore predefinito è 20 connessioni.
+   * Specifica il numero massimo di connessioni consentite tra il modello dati modulo (FDM) e i servizi web RESTful in **[!UICONTROL Limite di connessioni in totale]** campo. Il valore predefinito è 20 connessioni.
 
    * Specificare il numero massimo di connessioni consentite per ogni route nella **[!UICONTROL Limite di connessione per ciclo di lavorazione]** campo. Il valore predefinito è due connessioni.
 
@@ -283,7 +283,7 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 
    >[!NOTE]
    >
-   Seleziona il tipo di autenticazione OAuth 2.0 con cui connetterti [!DNL Microsoft®® Dynamics] servizi che utilizzano l&#39;endpoint OData come radice del servizio.
+   >Seleziona il tipo di autenticazione OAuth 2.0 con cui connetterti [!DNL Microsoft®® Dynamics] servizi che utilizzano l&#39;endpoint OData come radice del servizio.
 
 1. Seleziona **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio OData.
 
@@ -315,7 +315,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
+When you enable mutual authentication for form data model (FDM), both the data source and [!DNL Experience Manager] Server running Form Data Model (FDM) authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model (FDM) on your [!DNL Experience Manager Forms] environment:
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
@@ -328,7 +328,7 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## Passaggi successivi {#next-steps}
 
-Hai configurato le origini dati. Successivamente è possibile creare un modello dati modulo oppure, se è già stato creato un modello dati modulo senza un&#39;origine dati, è possibile associarlo alle origini dati configurate. Consulta [Crea modello dati modulo](create-form-data-models.md) per i dettagli.
+Hai configurato le origini dati. È quindi possibile creare un modello dati modulo (FDM) oppure, se è già stato creato un modello dati modulo (FDM) senza un&#39;origine dati, associarlo alle origini dati configurate. Consulta [Crea modello dati modulo](create-form-data-models.md) per i dettagli.
 
 
 <!--

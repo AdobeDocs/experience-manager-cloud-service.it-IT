@@ -3,13 +3,13 @@ Title: How to send data to a SharePoint storage on submission of an Adaptive For
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
 keywords: Come connettere un elenco di SharePoint per un modulo adattivo?, Come connettere una raccolta documenti di SharePoint per un modulo adattivo, Inviare a SharePoint, Creare una configurazione della raccolta documenti di SharePoint, Utilizzare l’azione Invia a SharePoint in un modulo adattivo, Connettere un modulo adattivo a Microsoft&reg; Elenco SharePoint.
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
+exl-id: e925a750-5fb5-4950-afd3-78551eec985d
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
-
 
 # Collegare un modulo adattivo a Microsoft® SharePoint
 
@@ -93,7 +93,7 @@ La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/
 Per utilizzare [!UICONTROL Invia a elenco SharePoint] Azione di invio in un modulo adattivo:
 
 1. [Creare una configurazione dell’elenco SharePoint](#create-sharepoint-list-configuration): collega AEM Forms all’archivio degli elenchi Microsoft® Sharepoint.
-1. [Utilizzare l’invio utilizzando il modello dati del modulo in un modulo adattivo](#use-submit-using-fdm): collega il modulo adattivo a Microsoft® SharePoint configurato.
+1. [Utilizzare l’invio utilizzando il modello dati modulo (FDM) in un modulo adattivo](#use-submit-using-fdm): collega il modulo adattivo a Microsoft® SharePoint configurato.
 
 ### Creare una configurazione dell’elenco SharePoint {#create-sharepoint-list-configuration}
 
@@ -117,24 +117,24 @@ Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 1. Seleziona **[!UICONTROL Crea]** per creare la configurazione cloud per Microsoft® SharePointList.
 
 
-### Utilizzare l’invio utilizzando il modello dati del modulo in un modulo adattivo {#use-submit-using-fdm}
+### Utilizzare l’invio utilizzando il modello dati modulo (FDM) in un modulo adattivo {#use-submit-using-fdm}
 
 È possibile utilizzare la configurazione dell’elenco SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in un elenco SharePoint. Per utilizzare un elenco SharePoint in un modulo adattivo come, effettua le seguenti operazioni:
 
-1. [Creare un modello di dati modulo con Microsoft](/help/forms/create-form-data-models.md)
-1. [Configurare il modello dati modulo per recuperare e inviare dati](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Creare un modello dati modulo (FDM) tramite Microsoft](/help/forms/create-form-data-models.md)
+1. [Configurare il modello dati modulo (FDM) per recuperare e inviare dati](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
-1. [Configurare l’azione di invio utilizzando un modello dati modulo](/help/forms/using-form-data-model.md)
+1. [Configurare l’azione di invio utilizzando un modello di dati del modulo (FDM)](/help/forms/using-form-data-model.md)
 
 Quando si invia il modulo, i dati vengono salvati nell&#39;archivio elenco di Microsoft® Sharepoint specificato.
 
 >[!NOTE]
 >
 > In Microsoft® SharePoint List non sono supportati i seguenti tipi di colonna:
-* colonna immagine
-* colonna metadati
-* colonna persona
-* colonna di dati esterni
+> * colonna immagine
+> * colonna metadati
+> * colonna persona
+> * colonna di dati esterni
 
 ## Articoli correlati
 

@@ -6,9 +6,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: e81da7414335e00411942adeb41978d39f172b52
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3243'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Per selezionare un Cloud Service e un ordine di firma:
 
    >[!NOTE]
    >
-   > Se viene creato un modulo adattivo utilizzando un modello dati modulo, il campo ID accordo diventa visibile nella finestra di dialogo.
+   > Se viene creato un modulo adattivo utilizzando un modello dati modulo (FDM), il campo ID accordo diventa visibile nella finestra di dialogo.
 
 1. [Aggiungere destinatari a un modulo adattivo](working-with-adobe-sign.md#addsignerstoanadaptiveform) e selezionate Fatto (Done) ![Salva](assets/save_icon.svg) per salvare le modifiche.
 

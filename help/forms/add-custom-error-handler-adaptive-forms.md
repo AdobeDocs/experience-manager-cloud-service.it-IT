@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2378'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ Utilizzo di [Servizio di richiamo dell’editor di regole](https://experiencelea
 
 >[!NOTE]
 >
-> * Per utilizzare i gestori di errori con l’azione Richiama del servizio dell’editor di regole, configura Forms adattivo con un modello di dati del modulo.
+> * Per utilizzare i gestori di errori con l’azione Richiama servizio dell’Editor regole, configura Forms adattivo con un modello dati del modulo (FDM).
 > * Se la risposta di errore si trova nello schema standard, viene fornito un gestore degli errori predefinito per visualizzare i messaggi di errore sui campi. È inoltre possibile chiamare il gestore degli errori predefinito dalla funzione del gestore degli errori personalizzato.
 
 Utilizzando l’editor di regole, puoi:
@@ -338,7 +338,7 @@ Before adding custom handler, you must configure the adaptive form for asynchron
 1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
 1. Select the Submit Action:
 
-    * Select **[!UICONTROL Submit using Form Data Model]** and select the appropriate data model, if you are using RESTful web service based [form data model](work-with-form-data-model.md) as the data source.
+    * Select **[!UICONTROL Submit using Form Data Model (FDM)]** and select the appropriate data model, if you are using RESTful web service based [form data model (FDM)](work-with-form-data-model.md) as the data source.
     * Select **[!UICONTROL Submit to REST Service endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
 
     ![adaptive form submission properties](assets/af_submission_properties.png)

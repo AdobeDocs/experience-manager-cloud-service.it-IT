@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1433'
 ht-degree: 1%
 
 ---
@@ -128,14 +128,14 @@ Effettua le seguenti operazioni per rendere [!DNL AEM Forms] risorse compatibili
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. Esegui il [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Quando si specificano i parametri **[!UICONTROL Crea set di migrazione]** , specifica il percorso di Forms adattivo, temi, modelli, modelli di dati dei moduli, Cloud Service, componenti personalizzati e altre risorse specifiche di AEM Forms per **[!UICONTROL Percorsi da includere]** opzione. Aggiunge specificato [!DNL AEM Forms] risorse al set di migrazione.
+1. Esegui il [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Quando si specificano i parametri **[!UICONTROL Crea set di migrazione]** , specifica il percorso di Forms adattivo, temi, modelli, Modello dati modulo (FDM), Cloud Service, Componenti personalizzati e altre risorse specifiche di AEM Forms per **[!UICONTROL Percorsi da includere]** opzione. Aggiunge specificato [!DNL AEM Forms] risorse al set di migrazione.
 
 ## Percorsi di varie risorse specifiche per AEM Forms
 
 Durante la migrazione da AEM Forms 6.5 a Cloud Service, puoi individuare le risorse specifiche di AEM Forms all’indirizzo:
 
 * **Forms adattivo**: i moduli adattivi sono disponibili all’indirizzo `/content/dam/formsanddocuments/`e `/content/forms/af`. Ad esempio, per un modulo adattivo denominato WKND Registration, aggiungi percorsi `/content/dam/formsanddocuments/wknd-registration` e `/content/forms/af/wknd-registration`.
-* **Modello dati modulo**: tutti i modelli di dati del modulo sono disponibili all’indirizzo `/content/dam/formsanddocuments-fdm`. Esempio: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **Modello dati modulo**: puoi trovare tutti i modelli di dati dei moduli all’indirizzo `/content/dam/formsanddocuments-fdm`. Esempio: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **Librerie client**: il percorso predefinito delle librerie client è `/etc/clientlibs/fd/theme`.
 
@@ -143,7 +143,7 @@ Durante la migrazione da AEM Forms 6.5 a Cloud Service, puoi individuare le riso
 
 * **Temi di moduli adattivi e librerie client**: il percorso predefinito dei temi è ` /content/dam/formsanddocuments-themes/` e il percorso predefinito delle librerie client è `/etc/clientlibs/fd/theme`. Ad esempio, per un modello con titolo Percorso aggiunta tema WKND ` /content/dam/formsanddocuments-themes/wkndtheme` e le librerie client per il tema in `/etc/clientlibs/reference-themes/wkndtheme-3-0`. Puoi anche avere temi e librerie client in altri percorsi personalizzati.
 
-* **Configurazioni cloud**: le configurazioni cloud sono disponibili all’indirizzo `/conf/`. Ad esempio, la configurazione cloud del modello dati modulo si trova in `/conf/global/settings/cloudconfigs/fdm`.
+* **Configurazioni cloud**: le configurazioni cloud sono disponibili all’indirizzo `/conf/`. Ad esempio, la configurazione cloud di Form Data Model (FDM) è `/conf/global/settings/cloudconfigs/fdm`.
 
 * **Modello flusso di lavoro**: i modelli dei flussi di lavoro per l’AEM sono disponibili all’indirizzo `/conf/global/settings/workflow/models/`. Ad esempio, per un modello di flusso di lavoro denominato WKND Registration add path `/conf/global/settings/workflow/models/wknd-registration`
 
