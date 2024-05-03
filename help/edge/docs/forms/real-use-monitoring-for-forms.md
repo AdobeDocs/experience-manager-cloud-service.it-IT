@@ -2,11 +2,13 @@
 title: Monitoraggio per uso reale dei Edge Delivery Services per AEM Forms as a Cloud Service
 description: Il monitoraggio per uso reale dei Edge Delivery Services per AEM Forms as a Cloud Service prevede il tracciamento e l’analisi continui delle interazioni degli utenti con i moduli.
 feature: Edge Delivery Services
+hide: true
+hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 71e3a268c5033f0a7f0d054a9f4c1fe599cd6b83
+source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 44%
+source-wordcount: '787'
+ht-degree: 45%
 
 ---
 
@@ -30,15 +32,13 @@ Per accedere al dashboard di monitoraggio dei Edge Delivery Services per AEM For
 
 * **URL**: l’URL è specifico per il sito utente o il dominio. Gli utenti possono filtrare il sito o il dominio per visualizzare la dashboard in base alle proprie esigenze.
 
-* **Chiave dominio**: l’utente genera manualmente la chiave di dominio.
-
-Per informazioni sulle chiavi di dominio, consulta [Autenticazione](https://www.aem.live/developer/rum#authentication) documentazione.
+* **Chiave dominio**: l’utente genera manualmente la chiave di dominio. Per ottenere le chiavi di dominio per i moduli, contatta il rappresentante del tuo Adobe.
 
 ### Dashboard di monitoraggio per Edge Delivery Services per AEM Forms as a Cloud Service
 
 Dopo aver inserito l’URL e le chiavi del dominio nella schermata di accesso, puoi accedere al dashboard di monitoraggio per i Edge Delivery Services di AEM Forms as a Cloud Service.
 
-L’illustrazione seguente illustra la dashboard RUM per Edge Delivery Services per AEM Forms as a Cloud Service:
+L’illustrazione seguente illustra la dashboard dei Edge Delivery Services per AEM Forms as a Cloud Service:
 
 ![Dashboard dei moduli di Monitoraggio degli utenti reali (RUM)](/help/edge/assets/rum-forms-dashboard.png)
 
