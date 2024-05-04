@@ -5,10 +5,10 @@ contentOwner: khsingh
 feature: Adaptive Forms, Troubleshooting
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: a19a3d81652cb17fcd6b11e6047d2ea697bf3041
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 1%
+source-wordcount: '213'
+ht-degree: 0%
 
 ---
 
@@ -53,3 +53,13 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 Gli utenti non possono eseguire la pipeline di build. La pipeline ha esito negativo dopo un certo periodo di tempo dall’esecuzione.
 
 Per risolvere il problema, apri Cloud Manager, seleziona la **[!UICONTROL Aggiorna]** per il tuo ambiente ed esegui la pipeline.
+
+
+## I bundle non sono nello stato attivo {#bundles-inactive-state}
+
+Per risolvere il problema, effettuare le seguenti operazioni:
+
+1. Avvia AEM e attendi che inizi completamente finché tutti i bundle non sono attivi.
+1. Interrompere AEM (Ctrl + C).
+1. Posizionare il Forms `.far` nella cartella di installazione.
+1. Riavviare il server AEM.

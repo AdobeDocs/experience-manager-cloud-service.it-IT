@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 47%
+source-wordcount: '2341'
+ht-degree: 46%
 
 ---
 
@@ -190,6 +190,17 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 
 1. Seleziona **[!UICONTROL Salva]** per salvare le proprietà.
 
+
+## Come rinominare un modulo adattivo per l’AEM? {#rename-an-AEM-Adaptive-Form}
+
+Per rinominare un modulo adattivo, effettua le seguenti operazioni:
+
+1. Seleziona un modulo adattivo nell’interfaccia utente di AEM Forms.
+1. Fai clic sul pulsante **Proprietà** si trova sulla barra superiore.
+1. Modificare il nome del modulo in **Titolo** come mostrato nell’immagine seguente.
+1. Clic **Salva e chiudi**.
+
+![Rinominare un modulo adattivo AEM](/help/forms/assets/change-af-name.png)
 
 <!--
 

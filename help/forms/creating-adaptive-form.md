@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 67%
+source-wordcount: '1560'
+ht-degree: 64%
 
 ---
 
@@ -205,6 +205,16 @@ Puoi anche modificare le proprietà del modello di modulo dall’editor di modul
 >
 > È inoltre possibile salvare un modulo adattivo come modello. Per ulteriori informazioni, consulta [Creare un modello utilizzando un modulo adattivo](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
 
+## Come rinominare un modulo adattivo per l’AEM? {#rename-an-AEM-Adaptive-Form}
+
+Per rinominare un modulo adattivo, effettua le seguenti operazioni:
+
+1. Seleziona un modulo adattivo nell’interfaccia utente di AEM Forms.
+1. Fai clic sul pulsante **Proprietà** si trova sulla barra superiore.
+1. Modificare il nome del modulo in **Titolo** come mostrato nell’immagine seguente.
+1. Clic **Salva e chiudi**.
+
+![Rinominare un modulo adattivo AEM](/help/forms/assets/change-af-name.png)
 
 ## Consulta anche {#see-also}
 
