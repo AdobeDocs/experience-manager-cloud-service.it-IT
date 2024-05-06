@@ -6,14 +6,14 @@ feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: 4844d736d3791b376b7ad9cafa005c856c114837
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '920'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# Introduzione ad Assets as a [!DNL Cloud Service] per la gestione delle risorse digitali nell’AEM {#assets-cloud-service-introduction}
+# Introduzione ad Assets as a [!DNL Cloud Service] per la Digital Asset Management in AEM {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -23,13 +23,13 @@ L’assimilazione simultanea di più risorse o risorse complesse è un’attivit
 
 Le aziende richiedono il supporto di un’ampia varietà di formati di file e risoluzioni di contenuti per casi d’uso multi-dispositivo, diversi ambienti geografici e multilingue. I requisiti di elaborazione e archiviazione delle risorse richiedono risorse e funzionalità che possono sovraccaricare una soluzione tradizionale. Talvolta, le limitazioni tecniche dell’elaborazione delle risorse non producono i risultati desiderati e in altri casi il costo di archiviazione rappresenta un ostacolo ai margini di profitto.
 
-Per iniziare, comprendi [vantaggi di un&#39;offerta nativa per il cloud](#solution-benefits) per la gestione delle risorse digitali. Dai un’occhiata alle importanti [modifiche ad Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) che hanno anche avuto un impatto su Experience Manager Assets e che ha fatto seguito alle importanti [modifiche ad Assets](/help/assets/assets-cloud-changes.md).
+Per cominciare, comprendi i [vantaggi di un’offerta nativa per il cloud](#solution-benefits) per Digital Asset Management. Dai un’occhiata alle importanti [modifiche ad Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) che hanno anche avuto un impatto su Experience Manager Assets e che ha fatto seguito alle importanti [modifiche ad Assets](/help/assets/assets-cloud-changes.md).
 
 Continua a leggere per conoscere i [dettagli delle nuove funzionalità di Assets](#whats-new-assets) e i [problemi noti](/help/release-notes/maintenance/latest.md). Visualizza un elenco di [funzionalità obsolete o rimosse](/help/release-notes/deprecated-removed-features.md) per sapere cosa è stato rimosso in questa versione. Infine, comprendi i termini di Experience Manager con l’aiuto di questo [glossario](/help/overview/terminology.md).
 
 ## Vantaggi della soluzione {#solution-benefits}
 
-Di seguito sono riportati i principali vantaggi di Assets as a [!DNL Cloud Service] per la gestione delle risorse digitali. Per ulteriori informazioni, consulta la [panoramica di Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md).
+Di seguito sono riportati i vantaggi principali di Assets as a [!DNL Cloud Service] per la Digital Asset Management. Per ulteriori informazioni, consulta la [panoramica di Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md).
 
 * **Servizi cloud moderni per l’elaborazione delle risorse**: i nuovi microservizi per le risorse sono un’attività di elaborazione delle risorse basato su cloud, scalabile, affidabile e privo di problemi.
 * **Altamente scalabile**: scalabilità elastica in tutti i tipi di implementazioni. Risorse praticamente illimitate disponibili on-demand, in base alle esigenze. Risparmia il costo del design eccessivo rispetto a un sistema tradizionale.
@@ -38,13 +38,13 @@ Di seguito sono riportati i principali vantaggi di Assets as a [!DNL Cloud Servi
 * **Monitoraggio costante**: il monitoraggio del sistema è automatizzato e i controlli e trigger integrati contribuiscono a mantenere le prestazioni, la disponibilità e la robustezza complessiva.
 * **Implementazioni senza problemi**: le operazioni Experience Manager nel Cloud sono completamente automatizzate e non richiedono alcun intervento manuale. Per le distribuzioni automatizzate, il componente Cloud Manager (CM) automatizza la generazione di immagini Docker distribuibili contenenti il codice personalizzato.
 
-## Esperienze disponibili basate su utenti tipo per la gestione delle risorse digitali {#persona-based-experiences}
+## Esperienze disponibili basate su utenti tipo per Digital Asset Management {#persona-based-experiences}
 
 Adobe offre una solida soluzione di gestione delle risorse digitali (DAM) che consente di ottenere il massimo dalle risorse digitali. Adobe Experience Manager Assets dispone di due esperienze separate che utilizzano lo stesso archivio Cloud Services:
 
-* **Vista Amministratore**: l’interfaccia utente esistente di Assets as a Cloud Service. Utilizza Admin View per tutte le funzionalità avanzate di gestione delle risorse digitali, inclusi integrazioni, flussi di lavoro, automazione dei contenuti, pubblicazione e altro ancora.
+* **Vista Amministratore**: l’interfaccia utente esistente di Assets as a Cloud Service. Utilizza la vista Amministratore per tutte le funzionalità avanzate di Digital Assset Management, tra cui integrazioni, flussi di lavoro, automazione dei contenuti, pubblicazione e altro ancora.
 
-* **Vista Risorse**: esperienza Adobe leggera di gestione delle risorse per archiviare, gestire, scoprire e utilizzare le risorse digitali. Interfaccia utente semplificata con funzionalità essenziali per la gestione delle risorse digitali. Progettata per gli utenti di DAM leggeri con particolare attenzione al caricamento, alla gestione dei metadati, alla ricerca, al download e alla condivisione.
+* **Vista Risorse**: esperienza Adobe leggera di gestione delle risorse per archiviare, gestire, scoprire e utilizzare le risorse digitali. Interfaccia utente semplificata con funzionalità essenziali per Digital Asset Management. Progettata per gli utenti di DAM leggeri con particolare attenzione al caricamento, alla gestione dei metadati, alla ricerca, al download e alla condivisione.
 
 Gli utenti con accesso alla vista Amministratore possono accedere anche alla vista Risorse. L’interfaccia utente semplificata di vista Risorse agevola la gestione, l’individuazione e la distribuzione delle risorse digitali. Un ampio insieme di utenti con diverse funzioni, compresi i team creativi, di marketing e line-of-business, possono collaborare alle risorse e accedere alle risorse approvate, quando e dove ne hanno bisogno. Molti utenti di DAM occasionali preferiscono la vista Risorse perché contiene solo un sottoinsieme di funzioni. L’esperienza è destinata ai creativi, a chi utilizza le risorse di sola lettura e agli utenti di DAM più leggeri.
 
