@@ -2,7 +2,7 @@
 title: Test funzionali
 description: Scopri i tre diversi tipi di test funzionali integrati nel processo di distribuzione di AEM as a Cloud Service per garantire la qualità e l’affidabilità del codice.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
 workflow-type: tm+mt
 source-wordcount: '1354'
 ht-degree: 9%
@@ -45,9 +45,9 @@ Il diagramma seguente fornisce una panoramica dettagliata dei gate di qualità d
 
 |                               | Test di unità | Personalizzato<br/> Test funzionali | Personalizzato<br/> Test dell’interfaccia utente | Cliente<br/> Convalide | Manuale<br/> Test |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
-| **Pipeline di produzione** | Sì<br/>Blocco<br/> | Sì<br/>Blocco<br/>Timeout 60 m | Sì<br/>Blocco<br/>Timeout 60 m | No | No |
-| **Pipeline non di produzione** | Sì<br/>Blocco<br/> | Opt-in<br/>Blocco<br/>Timeout 60 m | Opt-in<br/>Blocco<br/>Timeout 60 m | No | No |
-| **Adobe di convalida interna** | Sì<br/>Blocco<br/> | Sì<br/>Blocco<br/>Timeout 60 m | Sì<br/>Blocco<br/>Timeout 60 m | No | No |
+| **Pipeline di produzione** | Sì<br/>Blocco<br/> | Sì<br/>Blocco<br/>Timeout 60 m | Sì<br/>Blocco<br/>Timeout 30 m | No | No |
+| **Pipeline non di produzione** | Sì<br/>Blocco<br/> | Opt-in<br/>Blocco<br/>Timeout 60 m | Opt-in<br/>Blocco<br/>Timeout 30 m | No | No |
+| **Adobe di convalida interna** | Sì<br/>Blocco<br/> | Sì<br/>Blocco<br/>Timeout 60 m | Sì<br/>Blocco<br/>Timeout 30 m | No | No |
 | **CI/CD cliente** | Sì | Sì | Sì | Sì | Sì |
 | **Sviluppatore locale del cliente** | Sì | Sì | Sì | Sì | Sì |
 
