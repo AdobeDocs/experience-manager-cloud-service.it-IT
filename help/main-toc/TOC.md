@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
+source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
 workflow-type: tm+mt
-source-wordcount: '4915'
-ht-degree: 99%
+source-wordcount: '4917'
+ht-degree: 100%
 
 ---
 
@@ -204,6 +204,7 @@ ht-degree: 99%
       + [Assegnazione di profili di prodotto AEM](/help/journey-onboarding/assign-profiles-aem.md)
       + [Attività del Responsabile degli sviluppatori e del Responsabile della distribuzione](/help/journey-onboarding/developers.md)
       + [Attività dell’utente di AEM](/help/journey-onboarding/aem-users.md)
+      + [Elenco di controllo per la pubblicazione](/help/journey-onboarding/go-live-checklist.md)
    + Percorso AEM Reference Demos Add-On {#demo-add-on}
       + [Panoramica](/help/journey-sites/demos-add-on/overview.md)
       + [Installazione](/help/journey-sites/demos-add-on/installation.md)
@@ -570,7 +571,7 @@ ht-degree: 99%
       + [Osservare risorse, cartelle e raccolte](/help/assets/manage-notifications-assets-view.md)
       + [Gestire i rapporti](/help/assets/manage-reports-assets-view.md)
       + [Gestire i tag](/help/assets/tagging-management-assets-view.md)
-      + [Pubblicare risorse in AEM e Dynamic Medie](/help/assets/publish-assets-to-aem-and-dm.md)
+      + [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
    + Best practice{#best-practices}
       + [Best practice per la ricerca](/help/assets/search-best-practices.md)
       + [Gestione dei metadati e best practice](/help/assets/metadata-best-practices.md)
@@ -851,12 +852,12 @@ ht-degree: 99%
          + [Utilizzare le regole per aggiungere un comportamento dinamico a un modulo](/help/edge/docs/forms/rules-forms.md)
          + [Mostrare un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
       + Funzionalità {#advanced-features-edge-delivery-services-forms}
-         + [Utilizzare i frammenti di modulo](/help/edge/docs/forms/form-fragments.md)
+         + [Utilizzare i frammenti del modulo](/help/edge/docs/forms/form-fragments.md)
          + [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
          + [Tradurre il modulo](/help/edge/docs/forms/translate-forms.md)
          + [Utilizzare reCAPTCHA per proteggere i moduli](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componenti personalizzati](/help/edge/docs/forms/custom-components-forms.md)
-         + [Monitoraggio per utilizzo reale dei moduli](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Monitoraggio degli utenti reali per i moduli](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + Riferimenti {#forms-references}
          + [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
    + Risorse di Edge Delivery {#resources}
