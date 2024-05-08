@@ -1,53 +1,53 @@
 ---
-title: Monitoraggio Real Use (RUM) per Edge Delivery Services per AEM Forms as a Cloud Service
-description: Il monitoraggio Real Use Monitoring (RUM) per Edge Delivery Services per AEM Forms as a Cloud Service prevede il tracciamento e l’analisi continui delle interazioni degli utenti con i moduli.
+title: Monitoraggio degli utenti reali (RUM) per Edge Delivery Services per AEM Forms as a Cloud Service
+description: Il monitoraggio degli utenti reali (RUM) per Edge Delivery Services per AEM Forms as a Cloud Service prevede il monitoraggio e l’analisi continui delle interazioni degli utenti con i moduli.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '792'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 
-# Monitoraggio Real Use (RUM) per Edge Delivery Services per AEM Forms as a Cloud Service
+# Monitoraggio degli utenti reali (RUM) per Edge Delivery Services per AEM Forms as a Cloud Service
 
-Real Use Monitoring (RUM) consente di ottenere informazioni sul modo in cui i visitatori interagiscono con i siti web di Adobe Experience Manager (AEM). Questo strumento integrato fornisce dati utili per comprendere il comportamento degli utenti, diagnosticare i problemi di prestazioni e misurare l’efficacia degli esperimenti effettuati sul sito web. RUM va oltre i test sintetici catturando le interazioni Real Use, offrendo un quadro più preciso delle prestazioni del tuo sito.
+Il monitoraggio degli utenti reali (RUM) consente di ottenere informazioni approfondite e realistiche sul modo in cui i visitatori interagiscono con i siti web di Adobe Experience Manager (AEM). Questo strumento integrato fornisce dati preziosi per comprendere il comportamento degli utenti, diagnosticare problemi di prestazioni e misurare l’efficacia degli esperimenti sul sito web. RUM va oltre i test sintetici acquisendo le interazioni degli utenti reale, offrendo un quadro più accurato delle prestazioni del sito.
 
-Tuttavia, RUM dà la priorità alla privacy dei visitatori. Utilizza tecniche di campionamento per raccogliere dati da un sottoinsieme rappresentativo di utenti, garantendo che non vengano mai acquisite informazioni personali (PII, personally identifiable information). Inoltre, RUM è progettato tenendo presente la minimizzazione dei dati, raccogliendo solo le metriche essenziali necessarie per l&#39;analisi delle prestazioni. Questo approccio consente di ottimizzare i siti AEM mantenendo al contempo l’affidabilità degli utenti.
+Tuttavia, RUM dà priorità alla privacy dei visitatori. Utilizza tecniche di campionamento per raccogliere dati da un sottoinsieme rappresentativo di utenti, garantendo che non venga mai acquisita alcuna informazione di identificazione personale (PII). Inoltre, RUM è progettato per una minimizzazione dei dati, per raccogliere solo metriche essenziali richieste per l’analisi delle prestazioni. Questo approccio consente di ottimizzare i siti AEM mantenendo la fiducia degli utenti.
 
 
 ## Prerequisiti
 
-Per visualizzare il dashboard di monitoraggio dei Edge Delivery Services per AEM Forms as a Cloud Service, accedi al seguente URL:
+Puoi visualizzare la dashboard di monitoraggio di Edge Delivery Services per AEM Forms as a Cloud Service accedendo al seguente URL:
 
 https://data.aem.live/?ext=forms
 
-![Schermata di accesso RUM per Edge Delivery Services per Forms](/help/edge/assets/rum-login-screen.png)
+![Schermata di accesso al Monitoraggio degli utenti reali per i moduli di Edge Delivery Services](/help/edge/assets/rum-login-screen.png)
 
-Per accedere al dashboard di monitoraggio dei Edge Delivery Services per AEM Forms as a Cloud Service, immetti quanto segue:
+Per accedere alla dashboard di monitoraggio di Edge Delivery Services per AEM Forms as a Cloud Service, inserisci quanto segue:
 
 * **URL**: l’URL è specifico per il sito utente o il dominio. Gli utenti possono filtrare il sito o il dominio per visualizzare la dashboard in base alle proprie esigenze.
 
-* **Chiave dominio**: l’utente genera manualmente la chiave di dominio. Per ottenere le chiavi di dominio per i moduli, contatta il rappresentante del tuo Adobe.
+* **Chiave dominio**: l’utente genera manualmente la chiave di dominio. Per ottenere le chiavi di dominio per i moduli, contatta il rappresentante Adobe.
 
-### Dashboard di monitoraggio per Edge Delivery Services per AEM Forms as a Cloud Service
+### Dashboard di monitoraggio di Edge Delivery Services per AEM Forms as a Cloud Service
 
-Dopo aver inserito l’URL e le chiavi del dominio nella schermata di accesso, puoi accedere al dashboard di monitoraggio per i Edge Delivery Services di AEM Forms as a Cloud Service.
+Dopo aver inserito l‘URL e le chiavi di dominio nella schermata di accesso, ottieni l’accesso alla dashboard di monitoraggio di Edge Delivery Services per AEM Forms as a Cloud Service.
 
-L’illustrazione seguente illustra la dashboard dei Edge Delivery Services per AEM Forms as a Cloud Service:
+L’illustrazione seguente mostra la dashboard di Edge Delivery Services per AEM Forms as a Cloud Service:
 
 ![Dashboard dei moduli di Monitoraggio degli utenti reali (RUM)](/help/edge/assets/rum-forms-dashboard.png)
 
-### Diverse metriche chiave del dashboard per Forms {#different-metrics-rum-dashboard-forms}
+### Diverse metriche chiave della dashboard dei moduli {#different-metrics-rum-dashboard-forms}
 
-Questa dashboard fornisce informazioni chiave sul modo in cui i visitatori interagiscono con i moduli sul sito web Adobe Experience Manager (AEM). Monitorando queste metriche, è possibile identificare le aree da migliorare e ottimizzare i moduli per migliorare l’esperienza utente e i tassi di conversione:
+Questa dashboard fornisce informazioni chiave sul modo in cui i visitatori interagiscono con i moduli sul sito web di Adobe Experience Manager (AEM). Monitorando queste metriche, puoi identificare le aree di miglioramento e ottimizzare i moduli per una migliore esperienza utente e tassi di conversione:
 
-* **Visualizzazioni modulo**: tiene traccia del numero totale di volte in cui i moduli vengono visualizzati
-* **Invio modulo**: traccia il numero totale di invii completati
+* **Visualizzazioni modulo**: tengono traccia del numero totale di volte in cui vengono visualizzati i moduli
+* **Invii di moduli**: tengono traccia del numero totale di invii completati
 
 * **Largest Contentful Paint**: mostra la velocità di caricamento dell’URL, indicando il tempo necessario per rendere visibile nel riquadro di visualizzazione l’elemento di contenuto più grande dal momento in cui l’utente richiede l’URL. Questo elemento di contenuto più grande può essere un’immagine, un video o un elemento di testo sostanziale a livello di blocco. Le valutazioni delle prestazioni per la velocità di caricamento degli URL sono suddivise come segue:
    * **Buona**: se il tempo di caricamento è pari o inferiore a 2,5 secondi.
@@ -65,16 +65,16 @@ Questa dashboard fornisce informazioni chiave sul modo in cui i visitatori inter
    * **Ok**: se la durata è superiore a 200 ms ma non superiore a 500 ms.
    * **Scarsa**: se la durata supera i 500 ms.
 
-## Informazioni fruibili
+## Informazioni utilizzabili
 
-Analizzando queste metriche, puoi identificare le opportunità per:
+Analizzando queste metriche, puoi identificare opportunità per:
 
-* Semplificare i moduli e ridurre il numero di campi.
-* Migliora la chiarezza dei moduli con istruzioni ed etichette chiare.
-* Ottimizza il layout dei moduli per la reattività dei dispositivi mobili.
-* Risolvi i problemi tecnici che rallentano il caricamento dei moduli.
+* Semplificare i moduli e ridurre il numero dei campi.
+* Migliorare la chiarezza dei moduli con istruzioni ed etichette chiare.
+* Ottimizzare il layout del modulo per la reattività mobile.
+* Risolvere i problemi tecnici che rallentano il caricamento dei moduli.
 
-Concentrandoti su queste aree, puoi creare moduli più facili da utilizzare e incoraggiare i visitatori a completarli, portando in ultima analisi a tassi di conversione più elevati.
+Concentrandoti su queste aree, puoi creare moduli più facili da usare e incoraggiare i visitatori a completarli, portando in definitiva a tassi di conversione più elevati.
 
 ## Consulta anche
 
