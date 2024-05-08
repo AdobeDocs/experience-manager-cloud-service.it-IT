@@ -97,7 +97,7 @@ Ora puoi [assegnare o rimuovere il modulo metadati in più cartelle](/help/asset
 
 -->
 
-### Nuove funzioni di AEM Forms {#forms-new-features}
+### Nuove funzioni in AEM Forms {#forms-new-features}
 
 * **Editor di regole visive ottimizzato per Forms adattivo basato su componenti core**: questa versione apporta un aggiornamento significativo all’editor di regole visive per i moduli adattivi basati su componenti core. Questa versione apporta un aggiornamento significativo all’editor di regole visive per i moduli adattivi basati su componenti core. Questo aggiornamento si concentra sulla semplificazione delle interazioni con le funzioni personalizzate, consentendo di creare moduli più solidi ed efficienti.
 
