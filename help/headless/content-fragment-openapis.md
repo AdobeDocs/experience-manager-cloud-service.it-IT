@@ -1,15 +1,16 @@
 ---
 title: Frammenti di contenuto e modelli per frammenti di contenuto OpenAPI
 description: Scopri le API OpenAPI per frammenti di contenuto e modelli per frammenti di contenuto.
-source-git-commit: a9e6df69c3753677053a3ecde6b5f04794f748dd
+exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
+source-git-commit: 2921667598201b6087fab3ca5c1ef5b57c1fa18f
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 0%
+source-wordcount: '98'
+ht-degree: 1%
 
 ---
 
 # Frammenti di contenuto e modelli per frammenti di contenuto OpenAPI {#content-fragments-and-content-fragment-models-openapis}
 
-Frammenti di contenuto e modelli di frammenti di contenuto Le API aperte consentono agli sviluppatori di interagire in modo programmatico con i frammenti di contenuto e i modelli di frammenti di contenuto memorizzati nell’AEM ed eseguire su di essi operazioni CRUD (Crea, Leggi, Aggiorna, Elimina).
+L’implementazione OpenAPI modernizzata dell’API di gestione dei frammenti di contenuto consente agli sviluppatori di eseguire in modo programmatico le operazioni Crea, Leggi, Aggiorna ed Elimina sull’autore AEM per gestire i modelli di frammenti di contenuto e i frammenti di contenuto memorizzati nell’AEM. Queste API supportano una serie di casi d’uso.
 
-Le API supportano una serie di casi d’uso. Per informazioni complete vedi [OpenAPI per frammenti di contenuto e modelli per frammenti di concorso](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+L’utilizzo esistente di [API HTTP di Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) per Frammenti di contenuto deve essere migrata alla nuova API OpenAPI per la gestione dei frammenti di contenuto. Per la documentazione completa consulta [API di gestione dei frammenti di contenuto](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
