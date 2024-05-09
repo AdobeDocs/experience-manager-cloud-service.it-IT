@@ -2,16 +2,16 @@
 title: Fase di preparazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica sulla fase di preparazione in Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: f99395870d076d47ef53b01c9fc6579a9f8788a2
+source-git-commit: 0c56cfdd2c18d3bc77edafdbda3f99fbc43f12cf
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '1045'
 ht-degree: 6%
 
 ---
 
 # Fase di preparazione in Cloud Acceleration Manager {#readiness-phase-cam}
 
-Dopo aver creato un progetto in Cloud Acceleration Manager, ora puoi avviare la valutazione dell’implementazione Adobe Experience Manager (AEM) corrente nella fase di preparazione.
+Dopo aver creato un progetto in Cloud Acceleration Manager (CAM), ora puoi avviare la valutazione dell’implementazione Adobe Experience Manager (AEM) corrente nella fase di preparazione.
 
 La fase di preparazione include:
 
@@ -33,6 +33,12 @@ Per passare alla fase di preparazione, segui la procedura riportata di seguito:
 
 ## Utilizzo della scheda Analisi delle best practice {#best-practices-analysis}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_bpa"
+>title="Rapporto di analisi delle best practice"
+>abstract="Il rapporto BPA può essere caricato su CAM per fornire un’analisi della migrazione verso AEM as a Cloud Service."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Utilizzo di Best Practices Analyzer"
+
 1. Clic **Revisione** dal **Analisi delle best practice** Card.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
@@ -42,26 +48,24 @@ Per passare alla fase di preparazione, segui la procedura riportata di seguito:
    >[!NOTE]
    >Per evitare un impatto sulle istanze aziendali critiche, Adobe consiglia di eseguire BPA in un ambiente di authoring. L’ambiente deve essere il più simile possibile all’ambiente di produzione nelle aree di personalizzazioni, configurazioni, contenuti e applicazioni utente. In alternativa, può essere eseguito su un clone dell’ambiente di authoring di produzione.
 
-   1. Accedi a [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) e scarica Best Practices Analyzer come file zip.
+   1. Accedi a [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*) e scarica Best Practices Analyzer come file zip.
 
       >[!NOTE]
       >Revisione [Utilizzo di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) per informazioni su come eseguire BPA.
 
-   1. Esportare il rapporto in formato CSV
+1. In CAM, fate clic su **Ottieni chiave di caricamento**, in modo da poter ottenere la chiave utilizzata per configurare il sistema per caricare automaticamente i rapporti BPA direttamente in CAM.
 
-1. Clic **Carica nuovo rapporto** in modo da poter caricare il rapporto BPA in CAM.
-
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3.png)
+   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >Il report non può essere caricato se sei in modalità di navigazione in incognito nel browser.
+   >Il rapporto può ancora essere caricato manualmente, ma l’utilizzo della Chiave di caricamento semplifica l’operazione. Nota che il rapporto non può essere caricato manualmente se sei in modalità di navigazione in incognito del browser.
 
-1. Dopo aver caricato un nuovo rapporto, puoi visualizzare il rapporto Analisi delle best practice.
+1. Dopo aver caricato un nuovo rapporto, puoi vedere il rapporto Analisi delle best practice in CAM.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
    >[!NOTE]
-   >Se vengono caricati più rapporti, il rapporto visualizzato in dettaglio è sempre quello con la data di creazione più recente (non la data di caricamento).
+   >Se vengono caricati più rapporti diversi, il rapporto visualizzato in dettaglio è sempre quello con la data di creazione più recente (non la data di caricamento).
 
 1. Rivedi ed esplora la dashboard Analisi delle best practice in CAM. Consulta [Analisi delle best practice](#analysis-report) per ulteriori dettagli.
 
@@ -74,9 +78,9 @@ Per passare alla fase di preparazione, segui la procedura riportata di seguito:
 
 Effettua le seguenti operazioni:
 
-1. Fai clic su **Anteprima di stampa** icona.
+1. Fai clic su **Anteprima di stampa** azione.
 
-   ![immagine](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1.png)
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
 
 1. Nella nuova scheda con il report visualizzato in un&#39;anteprima stampabile, fai clic su **Stampa** per stampare il report in un formato PDF.
 
@@ -100,15 +104,11 @@ Per visualizzare i rapporti dall’opzione della linea di tendenza, segui i pass
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Clic **...**.
+1. Dalla sezione **Visualizza** menu a discesa, fai clic su **Rapporto linea di tendenza**, come illustrato nella figura seguente.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
-1. Dall’elenco a discesa, fai clic su **Visualizza linea di tendenza**, come illustrato nella figura seguente.
-
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
-
-1. Clic **Visualizza linea di tendenza** apre la visualizzazione della linea di tendenza del rapporto.
+1. Clic **Rapporto linea di tendenza** apre la visualizzazione della linea di tendenza del rapporto.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
@@ -208,7 +208,7 @@ Da questa scheda è possibile esaminare le informazioni riportate di seguito.
 
 1. Nell’elenco a discesa, fai clic su **Visualizza linea di tendenza**, come illustrato nella figura seguente.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
 1. Fai clic sull’icona Elimina da **Rapporto linea di tendenza** schermo.
 

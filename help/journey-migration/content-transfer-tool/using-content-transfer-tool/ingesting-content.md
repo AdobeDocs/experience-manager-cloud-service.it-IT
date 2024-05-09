@@ -2,9 +2,9 @@
 title: Acquisizione di contenuti in Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
+source-git-commit: 6372277adfac0700d80a3e6c013f419892822e55
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2905'
 ht-degree: 12%
 
 ---
@@ -215,6 +215,8 @@ Le best practice indicano che se un **Non Cancellato** l’acquisizione deve ess
 I valori delle proprietà del nodo memorizzati in MongoDB non possono superare i 16 MB. Se un valore di nodo supera le dimensioni supportate, l’acquisizione non riesce e il registro conterrà un `BSONObjectTooLarge` e specificare il nodo che ha superato il massimo consentito. Questa è una restrizione di MongoDB.
 
 Consulta la `Node property value in MongoDB` nota in [Prerequisiti per lo strumento Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) per ulteriori informazioni e un collegamento a uno strumento Oak che potrebbe facilitare la ricerca di tutti i nodi di grandi dimensioni. Dopo aver risolto tutti i nodi con dimensioni elevate, esegui di nuovo l’estrazione e l’acquisizione.
+
+Per evitare questa restrizione, eseguire il comando [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sull&#39;istanza AEM di origine e rivedere i risultati che presenta, in particolare [&quot;Struttura dell’archivio non supportata&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) pattern.
 
 ### Acquisizione annullata {#ingestion-rescinded}
 
