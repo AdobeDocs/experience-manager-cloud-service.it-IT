@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2859'
+source-wordcount: '2866'
 ht-degree: 3%
 
 ---
@@ -229,8 +229,8 @@ Per i casi di utilizzo tipici di post-elaborazione, considera l’utilizzo del m
 
 Puoi configurare il servizio runner flusso di lavoro personalizzato per le configurazioni avanzate che non possono essere facilmente soddisfatte applicando un flusso di lavoro a una cartella. Ad esempio, un flusso di lavoro che utilizza un’espressione regolare. Esecuzione flusso di lavoro personalizzato di Adobe CQ DAM (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) è un servizio OSGi. Per la configurazione sono disponibili le due opzioni seguenti:
 
-* Flussi di lavoro di post-elaborazione per percorso (`postProcWorkflowsByPath`): è possibile elencare più modelli di flusso di lavoro, in base a percorsi di archivio diversi. Separa i percorsi e i modelli utilizzando i due punti. Sono supportati percorsi di archivio semplici. Mappare questi a un modello di flusso di lavoro in `/var` percorso. Esempio: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* Flussi di lavoro di post-elaborazione per espressione (`postProcWorkflowsByExpression`): è possibile elencare più modelli di flusso di lavoro, in base a espressioni regolari diverse. Le espressioni e i modelli devono essere separati da due punti. L’espressione regolare deve puntare direttamente al nodo Risorsa e non a uno dei rendering o dei file. Esempio: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* Flussi di lavoro di post-elaborazione per percorso (`postProcWorkflowsByPath`): è possibile elencare più modelli di flusso di lavoro, in base a percorsi di archivio diversi. Separa i percorsi e i modelli utilizzando i due punti. Sono supportati percorsi di archivio semplici. Mappare questi a un modello di flusso di lavoro in `/var` percorso. Ad esempio: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Flussi di lavoro di post-elaborazione per espressione (`postProcWorkflowsByExpression`): è possibile elencare più modelli di flusso di lavoro, in base a espressioni regolari diverse. Le espressioni e i modelli devono essere separati da due punti. L’espressione regolare deve puntare direttamente al nodo Risorsa e non a uno dei rendering o dei file. Ad esempio: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 Per informazioni su come distribuire una configurazione OSGi, consulta [distribuisci in [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
 
@@ -280,6 +280,7 @@ Segui i passaggi descritti in [applicare un modello di flusso di lavoro a una ca
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
+* [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

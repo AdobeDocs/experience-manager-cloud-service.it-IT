@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1916'
+source-wordcount: '1923'
 ht-degree: 2%
 
 ---
@@ -231,8 +231,9 @@ Quando si condividono le risorse, le seguenti funzionalità migliorano l’acces
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
+* [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
-## Fornire feedback {#a11y-feedback}
+## Invia feedback {#a11y-feedback}
 
 Per fornire un feedback, porre domande e richiedere miglioramenti al prodotto relativi all’accessibilità, utilizza i metodi seguenti:
 

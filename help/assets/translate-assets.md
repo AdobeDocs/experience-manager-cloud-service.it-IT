@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2615'
 ht-degree: 17%
 
 ---
@@ -156,9 +156,9 @@ Se utilizzi questa opzione, il flusso di lavoro di traduzione viene eseguito per
 Esegui questo flusso di lavoro per tradurre qualsiasi set aggiuntivo di risorse e includerlo in una copia per lingua specifica. In questo caso, le risorse tradotte vengono aggiunte alla cartella di destinazione che contiene già le risorse tradotte in precedenza. A seconda della scelta di opzioni, viene creato un progetto di traduzione o viene aggiornato un progetto di traduzione esistente per le nuove risorse. Il flusso di lavoro Aggiorna copie per lingua include le seguenti opzioni:
 
 * Crea un nuovo progetto di traduzione
-* Aggiungi a progetto di traduzione esistente
+* Aggiungi al progetto di conversione corrente
 
-### Aggiungi a progetto di traduzione esistente {#add-to-existing-translation-project-1}
+### Aggiungi al progetto di conversione corrente {#add-to-existing-translation-project-1}
 
 Se si utilizza questa opzione, il set di risorse viene aggiunto a un progetto di traduzione esistente per aggiornare la copia per lingua scelta.
 
@@ -168,7 +168,7 @@ Se si utilizza questa opzione, il set di risorse viene aggiunto a un progetto di
 1. Seleziona **[!UICONTROL Aggiorna copie per lingua]** in basso.
 1. Dalla sezione **[!UICONTROL Progetto]** elenco, scegli **[!UICONTROL Aggiungi a progetto di traduzione esistente]**.
 1. Dalla sezione **[!UICONTROL Progetto di traduzione esistente]** , seleziona un progetto per aggiungere la risorsa da tradurre.
-1. Seleziona **[!UICONTROL Inizio]**.
+1. Seleziona **[!UICONTROL Inizia]**.
 1. Vedere i passaggi 9-14 di [Aggiungi a progetto di traduzione esistente](#add-to-existing-translation-project) per completare il resto della procedura.
 
 ### Creare copie per lingua temporanee {#creating-temporary-language-copies}
@@ -222,7 +222,7 @@ Puoi utilizzare il flusso di lavoro Crea e traduci per generare per la prima vol
 
 * Crea solo struttura
 * Crea un nuovo progetto di traduzione
-* Aggiungi a progetto di traduzione esistente
+* Aggiungi al progetto di conversione corrente
 
 ### Crea solo struttura {#create-structure-only}
 
@@ -294,3 +294,4 @@ Se vuoi applicare un connettore personalizzato per i servizi di traduzione che d
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
+* [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

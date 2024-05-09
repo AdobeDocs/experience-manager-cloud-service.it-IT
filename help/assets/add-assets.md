@@ -4,10 +4,10 @@ description: Aggiungere le risorse digitali a [!DNL Adobe Experience Manager] as
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3137'
-ht-degree: 4%
+source-wordcount: '3144'
+ht-degree: 9%
 
 ---
 
@@ -187,7 +187,7 @@ Per configurare lo strumento Importazione in blocco, effettuare le seguenti oper
 
 1. (Facoltativo) Specifica la dimensione massima in MB del file delle risorse da includere nel processo di acquisizione del campo **[!UICONTROL Filtra per dimensione max]**.
 
-1. (Facoltativo) Specifica un elenco separato da virgole di tipi MIME da escludere dall’acquisizione nel **[!UICONTROL Escludi tipi MIME]** campo. Ad esempio: `image/jpeg, image/.*, video/mp4`. Consulta [tutti i formati di file supportati](/help/assets/file-format-support.md).
+1. (Facoltativo) Specifica un elenco separato da virgole di tipi MIME da escludere dall’acquisizione nel **[!UICONTROL Escludi tipi MIME]** campo. Ad esempio, `image/jpeg, image/.*, video/mp4`. Consulta [tutti i formati di file supportati](/help/assets/file-format-support.md).
 
 1. Specifica un elenco separato da virgole di tipi MIME da includere dall’acquisizione nella **[!UICONTROL Includi tipi MIME]** campo. Consulta [tutti i formati di file supportati](/help/assets/file-format-support.md).
 
@@ -197,7 +197,7 @@ Per configurare lo strumento Importazione in blocco, effettuare le seguenti oper
 
 1. Per definire una posizione in DAM in cui importare le risorse utilizzando il campo **[!UICONTROL Cartella risorse di destinazione]**, specifica un percorso. Esempio: `/content/dam/imported_assets`.
 
-1. (Facoltativo) Specifica il file di metadati da importare, fornito in formato CSV, nel **[!UICONTROL File metadati]** campo. Specifica il file CSV nel percorso del BLOB di origine e fai riferimento al percorso durante la configurazione dello strumento Importazione in blocco. Il formato di file CSV a cui si fa riferimento in questo campo è lo stesso del formato di file CSV quando [Importare ed esportare in blocco i metadati delle risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Se si seleziona la **Elimina il file di origine dopo l’importazione** , filtrare i file CSV utilizzando **Escludi** o **Includi tipo MIME** o **Filtra per percorso/file** campi. È possibile utilizzare un’espressione regolare per filtrare i file CSV in questi campi.
+1. (Facoltativo) Specifica il file di metadati da importare, fornito in formato CSV, nel campo **[!UICONTROL File di metadati]**. Specifica il file CSV nel percorso del BLOB di origine e fai riferimento al percorso durante la configurazione dello strumento Importazione in blocco. Il formato di file CSV a cui si fa riferimento in questo campo è lo stesso del formato di file CSV quando [Importare ed esportare in blocco i metadati delle risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Se si seleziona la **Elimina il file di origine dopo l’importazione** , filtrare i file CSV utilizzando **Escludi** o **Includi tipo MIME** o **Filtra per percorso/file** campi. È possibile utilizzare un’espressione regolare per filtrare i file CSV in questi campi.
 
 1. Clic **[!UICONTROL Salva]** per salvare la configurazione.
 
@@ -227,9 +227,9 @@ Seleziona la configurazione e fai clic su **[!UICONTROL Dry Run]** per richiamar
 
 ### Gestione dei nomi dei file durante l’importazione in blocco {#filename-handling-bulkimport}
 
-Quando importi risorse o cartelle in blocco, [!DNL Experience Manager Assets] importa l&#39;intera struttura di ciò che esiste nell&#39;origine di importazione. [!DNL Experience Manager] segue le regole predefinite per i caratteri speciali nei nomi delle risorse e delle cartelle; pertanto, questi nomi di file devono essere bonificati. Sia per il nome della cartella che per quello della risorsa, il titolo definito dall’utente rimane invariato e viene memorizzato in `jcr:title`.
+Quando importi risorse o cartelle in blocco, [!DNL Experience Manager Assets] importa l’intera struttura di ciò che esiste nell’origine di importazione. [!DNL Experience Manager] segue le regole predefinite per i caratteri speciali nei nomi delle risorse e delle cartelle; pertanto, questi nomi di file devono essere bonificati. Sia per il nome della cartella che per quello della risorsa, il titolo definito dall’utente rimane invariato e viene memorizzato in `jcr:title`.
 
-Durante l’importazione in blocco, [!DNL Experience Manager] cerca le cartelle esistenti per evitare di reimportare le risorse e le cartelle e verifica inoltre le regole di bonifica applicate nella cartella principale in cui avviene l’importazione. Se le regole di bonifica vengono applicate nella cartella padre, le stesse regole vengono applicate all&#39;origine di importazione. Per le nuove importazioni, per gestire i nomi file di risorse e cartelle vengono applicate le seguenti regole di bonifica.
+Durante l’importazione in blocco, [!DNL Experience Manager] cerca le cartelle esistenti per evitare di reimportare le risorse e le cartelle e verifica inoltre le regole di bonifica applicate nella cartella principale in cui avviene l’importazione. Se le regole di bonifica vengono applicate nella cartella principale, le stesse regole vengono applicate all’origine di importazione. Per le nuove importazioni, per gestire i nomi file di risorse e cartelle vengono applicate le seguenti regole di bonifica.
 
 **Nomi non consentiti nell’importazione in blocco**
 
@@ -412,6 +412,7 @@ I dettagli tecnici delle API di caricamento e del protocollo, nonché i collegam
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
+* [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

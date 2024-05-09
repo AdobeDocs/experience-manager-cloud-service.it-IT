@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2627'
-ht-degree: 9%
+source-wordcount: '2634'
+ht-degree: 10%
 
 ---
 
@@ -227,7 +227,7 @@ L’ereditarietà dei metadati da parte delle risorse si basa sullo schema appli
 
 1. In **[!UICONTROL Forms schema metadati]** , seleziona la `my_default` e quindi fare clic su **[!UICONTROL Modifica]**.
 1. In **[!UICONTROL Editor schema metadati]** , aggiungere un campo di testo al modulo schema. Ad esempio, aggiungi un campo con l’etichetta **[!UICONTROL Categoria]**.
-1. Clic **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina.
+1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina.
 1. Seleziona **[!UICONTROL Applica a cartelle]** dalla barra degli strumenti per applicare i metadati personalizzati a una cartella.
 1. Seleziona la cartella in cui applicare lo schema modificato, quindi seleziona **[!UICONTROL Applica]**.
 1. Se alla cartella è applicato l’altro schema metadati, viene visualizzato un messaggio che informa che stai per sovrascrivere lo schema metadati esistente. Clic **Sovrascrivere**.
@@ -245,7 +245,7 @@ Puoi definire campi obbligatori a livello di cartella, che vengono applicati all
 1. Fai clic sul logo dell’Experience Manager, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
 1. Salva il modulo metadati predefinito come modulo personalizzato. Ad esempio, salvala con nome `my_default`.
 1. Modifica il modulo personalizzato. Aggiungi un campo obbligatorio. Ad esempio, aggiungi un **[!UICONTROL Categoria]** e rendere il campo obbligatorio.
-1. Clic **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina. Seleziona il modulo, quindi fai clic su **[!UICONTROL Applica a cartelle]** dalla barra degli strumenti per applicare i metadati personalizzati a una cartella.
+1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato in **[!UICONTROL Forms schema metadati]** pagina. Seleziona il modulo, quindi fai clic su **[!UICONTROL Applica a cartelle]** dalla barra degli strumenti per applicare i metadati personalizzati a una cartella.
 1. Passa alla cartella e carica alcune risorse con metadati mancanti per il campo obbligatorio aggiunto al modulo personalizzato. Nella vista a schede della risorsa viene visualizzato un messaggio per i metadati mancanti per il campo obbligatorio.
 1. (Facoltativo) Accesso `https://[server]:[port]/system/console/components/`. Configurare e abilitare `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` componente disabilitato per impostazione predefinita. Imposta la frequenza con cui Experience Manager controlla la validità dei metadati delle risorse.
 
@@ -272,3 +272,4 @@ Puoi definire campi obbligatori a livello di cartella, che vengono applicati all
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
+* [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -4,10 +4,10 @@ description: Modifiche di rilievo apportate [!DNL Adobe Experience Manager Asset
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 11%
+source-wordcount: '998'
+ht-degree: 9%
 
 ---
 
@@ -29,7 +29,7 @@ Il caricamento delle risorse è ottimizzato per migliorarne l’efficienza, in q
    * Caricamento risorse [con accesso binario diretto](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
    * Per informazioni di carattere tecnico, consultare [protocollo di caricamento binario diretto e API](/help/assets/developer-reference-material-apis.md#upload-binary).
    * Per un confronto dei metodi API disponibili per le operazioni CRUD di base, vedi [API e operazioni sulle risorse](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
-* Il flusso di lavoro predefinito **[!UICONTROL DAM Asset Update]** incluso nelle versioni precedenti di non è più disponibile. [!DNL Experience Manager] Al contrario, i microservizi per le risorse forniscono un servizio scalabile e prontamente disponibile che copre la maggior parte dell’elaborazione delle risorse predefinita (rappresentazioni, estrazione dei metadati ed estrazione del testo per l’indicizzazione).
+* Il flusso di lavoro predefinito **[!UICONTROL Aggiornamento risorse DAM]** nelle versioni precedenti di [!DNL Experience Manager] non è più disponibile. Al contrario, i microservizi per le risorse forniscono un servizio scalabile e prontamente disponibile che copre la maggior parte dell’elaborazione delle risorse predefinita (rappresentazioni, estrazione dei metadati ed estrazione del testo per l’indicizzazione).
    * Consulta [configurare e utilizzare i microservizi per le risorse](/help/assets/asset-microservices-configure-and-use.md)
    * Per personalizzare i passaggi del flusso di lavoro nell’elaborazione, [flussi di lavoro di post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) possono essere utilizzati.
 
@@ -53,7 +53,7 @@ Per eseguire una convalida end-to-end del codice e del processo, inclusi l’acq
 |-----|-----|-----|
 | [Rilevamento di risorse duplicate](/help/assets/detect-duplicate-assets.md) | Funziona diversamente | Consulta [come funzionava in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [Copie trasformate solo per posizionamento (FPO)](/help/assets/configure-fpo-renditions.md) | Funziona diversamente | I profili di elaborazione utilizzano i microservizi delle risorse per generare rappresentazioni FPO. Nell&#39;Experience Manager 6.5, una soluzione di terze parti come [!DNL ImageMagick] era disponibile per generare le rappresentazioni. |
-| Writeback di metadati | Funziona diversamente | Opzione disattivata per impostazione predefinita. Se necessario, abilita il modulo di avvio del flusso di lavoro corrispondente. Il writeback viene gestito dai microservizi delle risorse. |
+| Writeback di metadati | Funziona diversamente | Disabilitata per impostazione predefinita. Se necessario, abilita il modulo di avvio del flusso di lavoro corrispondente. Il writeback viene gestito dai microservizi delle risorse. |
 | Elaborazione delle risorse caricate tramite Gestione pacchetti | Necessità di intervento manuale | Rielabora manualmente utilizzando **[!UICONTROL Rielabora risorsa]** azione. |
 | Rilevamento tipo MIME | Non supportato. | Se carichi una risorsa digitale senza un’estensione o con un’estensione non corretta, questa potrebbe non essere elaborata come desiderato. Gli utenti possono comunque memorizzare i file binari senza un’estensione in DAM. Consulta [Rilevamento del tipo MIME in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Generazione di risorse secondarie per risorse composte | Non supportato. | I casi d’uso dipendenti come le annotazioni potrebbero non essere soddisfatti. Consulta [creazione di risorse secondarie in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). L’anteprima PDF di alcuni tipi di file è disponibile a partire da [Versione 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
@@ -81,6 +81,7 @@ Per eseguire una convalida end-to-end del codice e del processo, inclusi l’acq
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
+* [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

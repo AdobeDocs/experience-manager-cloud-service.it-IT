@@ -2,9 +2,9 @@
 title: Tag colore per immagini
 description: Adobe Experience Manager Assets consente di distinguere i colori in un’immagine e di applicarli automaticamente come tag. Puoi quindi utilizzare questi tag per cercare e filtrare le immagini.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1244'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ Adobe Experience Manager (AEM) Assets utilizza le funzionalità di intelligenza 
 
 La figura seguente illustra la sequenza di attività da eseguire per configurare e gestire i tag colore per le immagini in Experience Manager Assets:
 
-![Applicazione di tag colore](assets/color-tagging-dfd.gif)
+![Assegnazione tag colore](assets/color-tagging-dfd.gif)
 
 ## Formati di file supportati {#supported-file-formats-color-tags}
 
@@ -29,7 +29,7 @@ La figura seguente illustra la sequenza di attività da eseguire per configurare
 | PNG | .png | image/png | sRGB | 15 GB | 20000 × 20000 pixel |
 | TIFF | tif e tiff | image/tiff | sRGB | 4 GB (limitati dalle specifiche del formato) | 20000 × 20000 pixel |
 | PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2 GB (limitata dalle specifiche del formato) | 20000 × 20000 pixel |
-| GIF | .gif | image/gif | sRGB | 15 GB | 20000 × 20000 pixel |
+| GIF | gif | image/gif | sRGB | 15 GB | 20000 × 20000 pixel |
 | BMP | bmp | image/bmp | sRGB | 4 GB (limitati dalle specifiche del formato) | 20000 × 20000 pixel |
 
 ## Gestire le proprietà dei tag colore {#manage-color-tagging-properties}
@@ -196,3 +196,4 @@ Per cercare le immagini in base ai colori:
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
+* [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

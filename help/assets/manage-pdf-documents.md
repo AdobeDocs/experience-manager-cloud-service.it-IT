@@ -4,10 +4,10 @@ description: Gestire i documenti PDF in [!DNL Adobe Experience Manager] as a [!D
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 4%
+source-wordcount: '838'
+ht-degree: 5%
 
 ---
 
@@ -44,7 +44,7 @@ Il visualizzatore nativo di PDF Doc Cloud dispone dei seguenti componenti in AEM
 
 ## Supporto per Anteprima pagine multiple e Annotazioni per PDF Assets {#multi-page}
 
-Adobe Experience Manager Assets consente di visualizzare in anteprima un documento PDF composto da diverse pagine. Per visualizzare in anteprima più pagine di un documento PDF, attenersi alla seguente procedura:
+Adobe Experience Manager Assets consente di visualizzare in anteprima un documento PDF costituito da diverse pagine. Per visualizzare in anteprima più pagine di un documento PDF, attenersi alla seguente procedura:
 
 1. Segui i passaggi per [caricare risorse in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Sfogliare il documento PDF da caricare e visualizzare in anteprima.
@@ -79,7 +79,7 @@ Di seguito sono riportate le annotazioni che possono essere applicate a un docum
             <th> Descrizione </th>
         </tr>
         <tr>
-           <td> <img src="/help/assets/assets/Comment.svg"> Commenti </td>
+           <td> <img src="/help/assets/assets/Comment.svg"> Commento </td>
             <td> Seleziona Commento per esprimere un’osservazione. </td>
         </tr>
         <tr>
@@ -147,3 +147,4 @@ Per l&#39;anteprima di più pagine di altri formati di documento supportati, eff
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
+* [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

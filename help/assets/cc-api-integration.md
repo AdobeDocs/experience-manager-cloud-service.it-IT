@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 3%
+source-wordcount: '772'
+ht-degree: 5%
 
 ---
 
@@ -24,31 +24,31 @@ Gli utenti possono creare profili di elaborazione per automatizzare le seguenti 
 
 * **Verticale automatico**: utilizza l’intelligenza artificiale per analizzare il contenuto dell’immagine e correggere la prospettiva distorta nelle immagini. Ad esempio, per creare orizzonti di livello.
 
-   ![tono automatico](/help/assets/assets/content-automation-autotone.png)
+  ![tono automatico](/help/assets/assets/content-automation-autotone.png)
 
-   *Figura: Le funzioni di tono automatico e raddrizzamento automatico contribuiscono a migliorare le immagini distorte.*
+  *Figura: Le funzioni di tono automatico e raddrizzamento automatico contribuiscono a migliorare le immagini distorte.*
 
 * **Predefiniti Lightroom**: applica un aspetto definito dall’utente alle immagini per ottenere un aspetto coerente utilizzando predefiniti personalizzati.
 
-   ![Predefinito Lightroom](/help/assets/assets/content-automation-lrpresets.png)
+  ![Predefinito Lightroom](/help/assets/assets/content-automation-lrpresets.png)
 
-   *Figura: Predefinito di Adobe Lightroom per migliorare la qualità delle immagini in modo coerente per molte immagini.*
+  *Figura: Predefinito di Adobe Lightroom per migliorare la qualità delle immagini in modo coerente per molte immagini.*
 
 * **Ritaglio immagine**: utilizza l’intelligenza artificiale per creare una selezione intorno a oggetti salienti e rimuovere lo sfondo con un singolo comando.
 
-   ![Rimuovere lo sfondo e tagliare un&#39;immagine da una foto](/help/assets/assets/content-automation-backgroundremove.png)
+  ![Rimuovere lo sfondo e tagliare un&#39;immagine da una foto](/help/assets/assets/content-automation-backgroundremove.png)
 
 * **Maschera immagine**: utilizza l’intelligenza artificiale per creare una maschera intorno a oggetti salienti con un singolo comando.
 
-   ![Mascherare un’immagine tramite AI](/help/assets/assets/content-automation-mask.png)
+  ![Mascherare un’immagine tramite AI](/help/assets/assets/content-automation-mask.png)
 
 * **Azioni Photoshop**: applica una serie di [!DNL Adobe Photoshop] attività a un file o a un batch di file.
 
-   ![Azioni Photoshop](/help/assets/assets/content-automation-psactions.png)
+  ![Azioni Photoshop](/help/assets/assets/content-automation-psactions.png)
 
 * **Sostituzione Oggetto Avanzata**: personalizza su larga scala consentendo di scambiare le immagini mantenendo tutti gli effetti e le regolazioni applicati all’interno di un file PSD.
 
-   ![Sostituire gli oggetti in modo intelligente](/help/assets/assets/content-automation-objectreplace.png)
+  ![Sostituire gli oggetti in modo intelligente](/help/assets/assets/content-automation-objectreplace.png)
 
 ## Abilita l’automazione dei contenuti per il programma as a Cloud Service AEM {#enable-content-automation}
 
@@ -105,20 +105,20 @@ Per elaborare le risorse esistenti, selezionale, seleziona **[!UICONTROL Rielabo
 
 * [Traduci risorse](translate-assets.md)
 * [API HTTP di Assets](mac-api-assets.md)
-* [Formati di file supportati da Assets](file-format-support.md)
-* [Cercare risorse](search-assets.md)
+* [Formati di file supportati dalle risorse](file-format-support.md)
+* [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi di metadati](metadata-schemas.md)
+* [Schemi metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
-* [Importazione in blocco di metadati](metadata-import-export.md)
+* [Importazione in blocco dei metadati](metadata-import-export.md)
+* [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Configurare e utilizzare i microservizi per le risorse tramite profili di elaborazione](/help/assets/asset-microservices-configure-and-use.md).
->* [ [!DNL Experience Manager] Integrare con [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+>* [Integrare [!DNL Experience Manager] con [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [Acquisizione ed elaborazione delle risorse con i microservizi per le risorse: panoramica](/help/assets/asset-microservices-overview.md).
-

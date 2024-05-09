@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2490'
-ht-degree: 8%
+source-wordcount: '2460'
+ht-degree: 5%
 
 ---
 
@@ -88,7 +88,7 @@ All’interno dell’adesione, un profilo di prodotto predefinito per [!DNL Adob
 
 Per integrare [!DNL Experience Manager] e [!DNL Adobe Stock], esegui i seguenti passaggi nella sequenza elencata:
 
-1. [Recuperare il certificato pubblico](#public-certificate)
+1. [Ottieni certificato pubblico](#public-certificate)
 
    In entrata [!DNL Experience Manager], crea un account IMS e genera un certificato pubblico (chiave pubblica).
 
@@ -114,7 +114,7 @@ La configurazione IMS prevede due passaggi:
 * [Recuperare il certificato pubblico](#public-certificate)
 * [Configurare l’account IMS](#create-ims-account-configuration)
 
-### Recuperare il certificato pubblico {#public-certificate}
+### Ottieni certificato pubblico {#public-certificate}
 
 La chiave pubblica (certificato) autentica il profilo di prodotto in Adobe Developer Console.
 
@@ -248,7 +248,7 @@ Gli amministratori possono creare gruppi di utenti e concedere autorizzazioni ad
 Di seguito sono riportate le autorizzazioni necessarie affinché un utente possa cercare e concedere in licenza le risorse Adobe Stock:
 
 * Configura il percorso: `/conf/global/settings/stock`
-* Privilegi: `jcr:read`
+* Privilegi `jcr:read`
 * Tipo di autorizzazione: `Allow`
 
 Puoi creare un gruppo di utenti o assegnare le autorizzazioni a un gruppo di utenti esistente. Le autorizzazioni possono essere assegnate dal [!DNL Experience Manager Assets] o dall&#39;interfaccia [!DNL User Admin] Console.
@@ -262,7 +262,7 @@ Puoi creare un gruppo di utenti o assegnare le autorizzazioni a un gruppo di ute
 1. Cerca il gruppo di utenti nel pannello a sinistra e aggiungi nuovo **[!UICONTROL Voce di controllo di accesso]** per Adobe Stock.
 
    * Configura il percorso: `/conf/global/settings/stock`
-   * Privilegi: `jcr:read`
+   * Privilegi `jcr:read`
    * Tipo di autorizzazione: `Allow`
 
    Clic **[!UICONTROL Aggiungi]**.
@@ -331,7 +331,7 @@ Una volta [!DNL Adobe Stock] la risorsa è concessa in licenza in [!DNL Experien
 
 ![Cerca [!DNL Adobe Stock] risorse e filtrare i risultati dal tuo [!DNL Adobe Experience Manager] workspace](assets/adobe-stock-search-results-workspace.png)
 
-**A.**[!DNL Adobe Stock] Cerca risorse simili a quelle di chi è fornito l’ID **B.** Cerca risorse corrispondenti alla tua selezione di forma o orientamento. **C.** Cerca uno o più dei tipi di risorse supportati **D.** Apri o comprimi il riquadro Filtri **E.** Procurati la licenza relativa e salva la risorsa selezionata in [!DNL Experience Manager]**F.**[!DNL Experience Manager] Salva la risorsa in applicando la filigrana **G.**[!DNL Adobe Stock] Sul sito web di , esplora le risorse simili a quella selezionata **H.**[!DNL Adobe Stock] Visualizza le risorse selezionate sul sito web di **I.** Numero di risorse selezionate proveniente dai risultati della ricerca **J.** Passaggio tra la vista a schede e la vista a elenco
+**R.** Cercare risorse simili a quelle di [!DNL Adobe Stock] È stato fornito l’ID. **B.** Cerca risorse corrispondenti alla tua selezione di forma o orientamento. **C.** Cerca uno o più tipi di risorse supportati **D.** Aprire o comprimere il riquadro dei filtri **E.** Ottieni la licenza e salva la risorsa selezionata in [!DNL Experience Manager] **F.** Salva la risorsa in [!DNL Experience Manager] con filigrana **G.** Esplora risorse su [!DNL Adobe Stock] sito web simile alla risorsa selezionata **H.** Visualizza risorse selezionate in [!DNL Adobe Stock] sito web **I.** Numero di risorse selezionate dai risultati della ricerca **J.** Passare dalla vista a schede alla vista a elenco
 
 ### Trovare le risorse {#find-assets}
 
@@ -471,6 +471,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
+* [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

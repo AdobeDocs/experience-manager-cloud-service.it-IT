@@ -1,20 +1,20 @@
 ---
-title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [!DNL Sites]
+title: Utilizzare le risorse collegate per condividere risorse DAM in [!DNL Sites]
 description: Utilizzare le risorse disponibili su un sito remoto [!DNL Adobe Experience Manager Assets] distribuzione durante la creazione di pagine web su un’altra [!DNL Adobe Experience Manager Sites] distribuzione.
 contentOwner: AK
 mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3869'
-ht-degree: 16%
+source-wordcount: '3842'
+ht-degree: 13%
 
 ---
 
 
-# Utilizzare la funzione Risorse collegate per condividere risorse DAM in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+# Utilizzare le risorse collegate per condividere risorse DAM in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -29,7 +29,7 @@ La funzionalità Risorse collegate supporta i casi d’uso precedenti tramite l�
 >
 >Configurare le risorse collegate solo quando è necessario utilizzare le risorse disponibili in una distribuzione DAM remota in una distribuzione Sites separata per la creazione di pagine web.
 
-## Panoramica della funzione Risorse collegate {#overview-of-connected-assets}
+## Panoramica delle risorse collegate {#overview-of-connected-assets}
 
 Durante la modifica delle pagine in [!UICONTROL Editor pagina] come destinazione, gli autori possono cercare, sfogliare e incorporare facilmente le risorse di un’altra [!DNL Assets] che funge da origine di risorse. Gli amministratori creano un’integrazione una tantum di una distribuzione di [!DNL Experience Manager] con [!DNL Sites] con un&#39;altra implementazione di [!DNL Experience Manager] con [!DNL Assets] funzionalità. Puoi anche utilizzare le immagini Dynamic Medie nelle pagine web del sito tramite Risorse collegate e utilizzare le funzionalità di Dynamic Medie, ad esempio i predefiniti per ritaglio avanzato e le immagini.
 
@@ -61,11 +61,11 @@ Di seguito sono descritti i vari ruoli coinvolti nella configurazione e la funzi
 
 | Ruolo | Ambito | Gruppo di utenti | Descrizioni |
 |------|--------|-----------|----------|
-| [!DNL Sites] administrator | Locale | [!DNL Experience Manager] `administrators` | Configurazione [!DNL Experience Manager] e configurare l&#39;integrazione con il [!DNL Assets] distribuzione. |
+| [!DNL Sites] amministratore | Locale | [!DNL Experience Manager] `administrators` | Configurazione [!DNL Experience Manager] e configurare l&#39;integrazione con il [!DNL Assets] distribuzione. |
 | Utente DAM | Locale | `Authors` | Utilizzato per visualizzare e duplicare le risorse recuperate in `/content/DAM/connectedassets/`. |
-| [!DNL Sites] author | Locale | <ul><li>`Authors` (con accesso in lettura in DAM remoto e accesso di authoring in locale) [!DNL Sites]) </li> <li>`dam-users` su locale [!DNL Sites]</li></ul> | Gli utenti finali sono [!DNL Sites] autori che utilizzano questa integrazione per velocizzare le attività relative ai contenuti. Gli autori possono cercare e sfogliare le risorse in DAM remoto utilizzando [!UICONTROL Content Finder] e utilizzando le immagini richieste nelle pagine web locali. |
-| [!DNL Assets] administrator | Remoto | [!DNL Experience Manager] `administrators` | Configurare la condivisione risorse tra le origini (CORS, Cross-Origin Resource Sharing). |
-| Utente DAM | Remoto | `Authors` | Autore ruolo sul remoto [!DNL Experience Manager] distribuzione. Cercare e sfogliare le risorse in Risorse collegate utilizzando [!UICONTROL Content Finder]. |
+| [!DNL Sites] autore | Locale | <ul><li>`Authors` (con accesso in lettura in DAM remoto e accesso di authoring in locale) [!DNL Sites]) </li> <li>`dam-users` su locale [!DNL Sites]</li></ul> | Gli utenti finali sono [!DNL Sites] autori che utilizzano questa integrazione per velocizzare le attività relative ai contenuti. Gli autori possono cercare e sfogliare le risorse in DAM remoto utilizzando [!UICONTROL Content Finder] e utilizzando le immagini richieste nelle pagine web locali. |
+| [!DNL Assets] amministratore | Remoto | [!DNL Experience Manager] `administrators` | Configurare la condivisione risorse tra le origini (CORS, Cross-Origin Resource Sharing). |
+| Utente DAM | Remoto | `Authors` | Ruolo Autore sul remoto [!DNL Experience Manager] distribuzione. Cercare e sfogliare le risorse in Risorse collegate utilizzando [!UICONTROL Content Finder]. |
 | Distributore DAM (utente tecnico) | Remoto | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | Questo utente presente nell’implementazione remota viene utilizzato da [!DNL Experience Manager] server locale (non il [!DNL Sites] per recuperare le risorse remote, per conto di [!DNL Sites] Autore. |
 | [!DNL Sites] utente tecnico | Locale | `connectedassets-sites-techaccts` | Consente [!DNL Assets] implementazione per cercare riferimenti alle risorse in [!DNL Sites] pagine web. |
 
@@ -100,7 +100,7 @@ Per configurare le risorse collegate e locali [!DNL Sites] connettività, segui 
    1. A **[!UICONTROL Titolo]** della configurazione.
    1. **[!UICONTROL URL DAM remoto]** è l’URL del [!DNL Assets] posizione nel formato `https://[assets_servername]:[port]`.
    1. Credenziali di un distributore DAM (utente tecnico).
-   1. In **[!UICONTROL Punto di montaggio]** , immettere il valore locale [!DNL Experience Manager] percorso in cui [!DNL Experience Manager] recupera le risorse. Ad esempio, la cartella `connectedassets`. Le risorse recuperate da DAM vengono memorizzate in questa cartella sul [!DNL Sites] distribuzione.
+   1. In **[!UICONTROL Punto di montaggio]** , immettere il valore locale [!DNL Experience Manager] percorso in cui [!DNL Experience Manager] recupera le risorse. Ad esempio: `connectedassets` cartella. Le risorse recuperate da DAM vengono memorizzate in questa cartella sul [!DNL Sites] distribuzione.
    1. **[!UICONTROL URL siti locali]** è la posizione del [!DNL Sites] distribuzione. [!DNL Assets] La distribuzione utilizza questo valore per mantenere i riferimenti alle risorse digitali recuperate da questo [!DNL Sites] distribuzione.
    1. Credenziali di [!DNL Sites] utente tecnico.
    1. Il valore di **[!UICONTROL Soglia ottimizzazione trasferimento binario originale]** specifica se le risorse originali (incluse le rappresentazioni) vengono trasferite in modo sincrono o meno. Le risorse con file di dimensioni inferiori possono essere recuperate facilmente, mentre le risorse con file di dimensioni relativamente maggiori possono essere sincronizzate in modo ottimale in modo asincrono. Il valore dipende dalle funzionalità di rete.
@@ -201,7 +201,7 @@ Utilizza la configurazione precedente per provare l’esperienza di authoring e 
 
    ![Opzioni di filtro per tipi di documenti e immagini nella ricerca di risorse in DAM remoto](assets/filetypes_filter_connected_assets.png)
 
-   *Figura: opzioni di filtro per tipi di documenti e immagini nella ricerca di risorse in DAM remoto.*
+   *Figura: Opzioni di filtro per tipi di documenti e immagini nella ricerca di risorse in DAM remoto.*
 
 1. Un autore del sito riceve una notifica se l’originale di una risorsa viene recuperato in modo asincrono e se un’attività di recupero ha esito negativo. Durante l’authoring, o anche successivamente, gli autori possono visualizzare informazioni dettagliate sulle attività di recupero e sugli errori in [processi asincroni](/help/operations/asynchronous-jobs.md) dell&#39;utente.
 
@@ -322,7 +322,7 @@ Puoi aggiungere risorse alla sezione [!DNL Sites] Tuttavia, tali risorse non pos
 
 ### Autorizzazioni e gestione delle risorse {#permissions-and-managing-assets}
 
-* Le risorse locali sono copie in sola lettura. [!DNL Experience Manager]I componenti apportano modifiche non distruttive alle risorse. Non sono consentite altre modifiche.
+* Le risorse locali sono copie in sola lettura. [!DNL Experience Manager] I componenti apportano modifiche non distruttive alle risorse. Non sono consentite altre modifiche.
 * Le risorse recuperate localmente sono disponibili solo a scopo di authoring. I flussi di lavoro di aggiornamento delle risorse non possono essere applicati e i metadati non possono essere modificati.
 * Quando si utilizza [!DNL Dynamic Media] in [!DNL Sites] pagine la risorsa originale non viene recuperata e memorizzata nell’implementazione locale. Il `dam:Asset` , i metadati e le rappresentazioni generati da [!DNL Assets] dell’implementazione vengono tutti recuperati nel [!DNL Sites] distribuzione.
 * Sono supportati solo le immagini e i formati di documento elencati. [!DNL Content Fragments] e [!DNL Experience Fragments] non sono supportati.
@@ -343,7 +343,7 @@ Puoi aggiungere risorse alla sezione [!DNL Sites] Tuttavia, tali risorse non pos
 
 * Gli utenti possono cercare risorse remote e trascinarle sulla pagina locale durante l’authoring. Non sono supportate altre funzionalità.
 * L’operazione di recupero si interrompe per timeout dopo 5 secondi. Gli autori possono rilevare dei problemi durante il recupero delle risorse, ad esempio in caso di problemi di rete. Gli autori possono riprovare trascinando la risorsa remota da [!UICONTROL Content Finder] a [!UICONTROL Editor pagina].
-* Le risorse recuperate possono essere sottoposte a semplici modifiche non distruttive e alle modifiche supportate tramite il componente `Image` di Le risorse sono di sola lettura.
+* Modifiche semplici non distruttive e le modifiche supportate tramite il `Image` , può essere eseguita sulle risorse recuperate. Le risorse sono di sola lettura.
 * L’unico metodo per recuperare nuovamente la risorsa è trascinarla su una pagina. Non è disponibile alcun supporto API o altri metodi per recuperare nuovamente una risorsa e aggiornarla.
 * Se le risorse vengono disattivate da DAM, continuano a essere in uso il [!DNL Sites] pagine.
 * Le voci di riferimento remote di una risorsa vengono recuperate in modo asincrono. I riferimenti e il conteggio totale non sono in tempo reale e potrebbe esserci una differenza se un [!DNL Sites] L’autore utilizza la risorsa mentre un utente DAM sta visualizzando il riferimento. Gli utenti DAM possono aggiornare la pagina e riprovare tra qualche minuto per ottenere il conteggio totale.
@@ -377,3 +377,4 @@ Per risolvere gli errori più comuni, effettuare le seguenti operazioni:
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
+* [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

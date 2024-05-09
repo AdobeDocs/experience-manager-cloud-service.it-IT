@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '5496'
-ht-degree: 5%
+source-wordcount: '5503'
+ht-degree: 6%
 
 ---
 
@@ -154,7 +154,7 @@ Puoi utilizzarlo a tuo vantaggio, incrementando la classificazione di alcune ris
 
 ## Configurare la dimensione del batch di risorse per visualizzare i risultati della ricerca {#configure-asset-batch-size}
 
-Gli amministratori possono ora configurare le dimensioni batch delle risorse visualizzate durante la ricerca. I risultati della ricerca delle risorse vengono visualizzati in multipli del numero di dimensioni del batch configurato quando scorri ulteriormente verso il basso per caricare i risultati. Puoi scegliere tra le dimensioni disponibili del batch (200, 500 e 1000 risorse). Impostando un numero di dimensioni batch più basso si ottengono tempi di risposta della ricerca più rapidi.
+Gli amministratori possono ora configurare le dimensioni batch delle risorse visualizzate durante la ricerca. I risultati della ricerca delle risorse vengono visualizzati in multipli del numero di dimensioni in batch configurato durante l’ulteriore scorrimento verso il basso per caricare i risultati. È possibile scegliere tra le dimensioni in batch disponibili (200, 500 e 1000 risorse). Impostando un numero di dimensioni in batch più basso si ottengono tempi di risposta della ricerca più rapidi.
 
 Se ad esempio si imposta il limite di conteggio dei risultati su una dimensione batch di 200 risorse, Experience Manager Assets visualizza una dimensione batch di 200 risorse nei risultati della ricerca quando si inizia la ricerca. Quando scorri verso il basso per spostarti tra i risultati della ricerca, viene visualizzato il successivo batch di 200 risorse. Il processo continua finché non vengono visualizzate tutte le risorse che corrispondono alla query di ricerca.
 
@@ -164,7 +164,7 @@ Per configurare la dimensione del batch di risorse:
 
 1. Seleziona il limite di conteggio dei risultati e fai clic su **[!UICONTROL Salva]**.
 
-   ![Configurazione delle dimensioni batch delle risorse](/help/release-notes/assets/assets-batch-size-configuration.png)
+   ![Configurazione delle dimensioni in batch delle risorse](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## Ricerca avanzata {#scope}
 
@@ -207,7 +207,7 @@ Puoi cercare le risorse in base ai valori esatti dei campi di metadati, ad esemp
 | Creatore | creatore:John |
 | Dove si trova | posizione:NA |
 | Descrizione | description:&quot;Immagine di esempio&quot; |
-| Strumento di creazione | creatortool:&quot;Adobe Photoshop&quot; |
+| Strumento creazione | creatortool:&quot;Adobe Photoshop&quot; |
 | Proprietario copyright | copyright:&quot;Adobe Systems&quot; |
 | Collaboratore | collaboratore:John |
 | Condizioni d&#39;uso | usageterms:&quot;CopyRights Reserved&quot; |
@@ -551,6 +551,7 @@ Passa alla posizione della cartella per le risorse visualizzate nei risultati di
 * [Facet di ricerca](search-facets.md)
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
+* [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
