@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+source-git-commit: 835aab546896195c3a2a3355b35b81f2cd385676
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 3%
+source-wordcount: '1670'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ Il [!DNL Assets] API HTTP consente di eseguire operazioni CRUD (create-read-upda
 
 >[!NOTE]
 >
->Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
+> È disponibile un’implementazione OpenAPI modernizzata dell’API di gestione dei frammenti di contenuto. Per la documentazione completa consulta [API di gestione dei frammenti di contenuto](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). Si consiglia di utilizzare la nuova implementazione OpenAPI. L’utilizzo esistente dell’API HTTP delle risorse per i frammenti di contenuto deve essere migrato alla nuova OpenAPI di gestione dei frammenti di contenuto.
 
 Per accedere all’API:
 
@@ -46,7 +46,7 @@ Per ulteriori informazioni, consulta [Supporto dei frammenti di contenuto in [!D
 
 >[!NOTE]
 >
->Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
+>Sono disponibili anche [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md).
 
 ## Modello dati {#data-model}
 
@@ -54,7 +54,7 @@ Il [!DNL Assets] L’API HTTP espone due elementi principali, cartelle e risorse
 
 >[!NOTE]
 >
->Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
+>Sono disponibili anche [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md).
 
 ### Cartelle {#folders}
 
@@ -90,7 +90,7 @@ Per informazioni sugli elementi nei frammenti di contenuto, consulta [Supporto d
 
 >[!NOTE]
 >
->Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
+>Sono disponibili anche [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md).
 
 In entrata [!DNL Experience Manager] una cartella contiene i seguenti componenti:
 
