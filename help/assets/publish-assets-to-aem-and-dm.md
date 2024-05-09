@@ -2,14 +2,14 @@
 title: Pubblicazione rapida su AEM e Dynamic Medie
 description: La pubblicazione rapida nella vista Assets consente di pubblicare le risorse in AEM e Dynamic Media simultaneamente o separatamente. Puoi selezionare risorse e cartelle e scegliere di pubblicarle in Dynamic Medie o AEM.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
+source-git-commit: a9a94e948ad7d038f28a046c950f2158871ddbb3
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
 
 ---
 
-# Pubblicare risorse in AEM e Dynamic Medie{#Publish-Assets-to-AEM-and-Dynamic-Media}
+# Pubblicare risorse in AEM e Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
 Experience Manager Assets consente di pubblicare rapidamente le risorse su Experience Manager e Dynamic Medie utilizzando la vista Risorse. In questo modo puoi gestire le risorse e quindi pubblicarle utilizzando [Visualizzazione risorse senza passare alla visualizzazione Amministratore](/help/assets/overview.md##persona-based-experiences).
 
@@ -40,7 +40,7 @@ Puoi pubblicare le risorse in AEM e Dynamic Medie durante il caricamento delle r
 Per pubblicare le risorse durante il caricamento in una cartella con la modalità di pubblicazione Dynamic Medie impostata su **All&#39;attivazione**:
 
 1. Clic **Aggiungi risorse** > **Sfoglia** > **Sfoglia file** per passare alla cartella appropriata per caricare le risorse. Il **Opzioni di pubblicazione** mostra la sezione **Modalità pubblicazione DM** as **All&#39;attivazione**.
-   ![Carica immagine all&#39;attivazione](/help/assets/assets/upload-upon-activation.png)
+   ![Carica immagine all&#39;attivazione](/help/assets/assets/upload-upon-activation1.png)
 2. Seleziona **Pubblica su AEM e Dynamic Medie** e fai clic su **Carica**. Le risorse vengono pubblicate contemporaneamente in AEM e Dynamic Medie. Per visualizzare lo stato di pubblicazione aggiornato di queste risorse, consulta [Verifica stato pubblicazione](#check-publish-status).
 
 ### Modalità di pubblicazione Dynamic Medie impostata su Immediata {#dynamic-media-publish-mode-set-to-immediate}
