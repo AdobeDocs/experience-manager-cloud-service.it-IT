@@ -2,10 +2,10 @@
 title: Utilizzo di Best Practices Analyzer
 description: Scopri come utilizzare Best Practices Analyzer per comprendere lo stato di preparazione all’aggiornamento.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+source-git-commit: 077be031da7a610810d398b163676a98fc036f30
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 42%
+source-wordcount: '2661'
+ht-degree: 39%
 
 ---
 
@@ -51,6 +51,13 @@ Best Practices Analyzer può essere scaricato come file zip dal portale di distr
 >[!NOTE]
 >Scarica Best Practices Analyzer da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) portale.
 
+## Connettività dell’ambiente di origine {#source-environment-connectivity}
+
+L’istanza AEM di origine potrebbe essere in esecuzione dietro un firewall e raggiungere solo alcuni host aggiunti a un Elenco consentiti. Per caricare automaticamente il rapporto generato da BPA in Cloud Acceleration Manager, è necessario che i seguenti endpoint siano accessibili dall’istanza che esegue l’AEM:
+
+* Il servizio di archiviazione BLOB di Azure: `casstorageprod.blob.core.windows.net`
+
+
 ## Visualizzazione del rapporto di Best Practices Analyzer {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 e versioni successive {#aem-later-versions}
@@ -65,31 +72,40 @@ Segui questa sezione per scoprire come visualizzare il rapporto Best Practices A
 
    ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. Durante la generazione del rapporto da parte di BPA, è possibile visualizzare lo stato di avanzamento dello strumento sullo schermo. Visualizza il numero di elementi analizzati e il numero di risultati trovati.
+1. Fornisci la chiave di caricamento BPA per caricare automaticamente il rapporto BPA generato in [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Per ottenere la chiave di caricamento, passa a [Analisi delle best practice in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+
+>[!NOTE]
+>È possibile saltare il caricamento automatico in CAM selezionando **Ignora caricamento automatico report in CAM**. Se scegli di saltare, dovrai scaricare manualmente il rapporto BPA come file con valori separati da virgole e quindi caricare il file in CAM. Si consiglia di utilizzare l’opzione carica chiave, in quanto semplifica l’operazione.
+
+1. Il **Genera** diventa attivo quando viene fornita una chiave valida. Fai clic su **Genera** per avviare la generazione del rapporto.
+
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+
+
+1. Durante la generazione del rapporto da parte di BPA, è possibile visualizzare lo stato di avanzamento dello strumento sullo schermo. Visualizza lo stato di avanzamento in termini di percentuale di completamento. Mostra inoltre il numero di elementi analizzati e il numero di risultati trovati.
+
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+
+>[!NOTE]
+>La marca temporale della scadenza della chiave di caricamento BPA viene visualizzata nell’angolo in alto a destra. È necessario rinnovare la chiave di caricamento BPA quando è vicina alla scadenza. Per rinnovare la chiave, puoi fare clic su **Rinnova** per passare a CAM e rinnovare la chiave.
 
 1. Una volta generato, il rapporto BPA visualizza un riepilogo e il numero dei risultati in formato tabulare organizzato in base al tipo di risultato e al livello di importanza. Per ottenere ulteriori dettagli su un particolare risultato, è possibile fare clic sul numero corrispondente al tipo di risultato nella tabella.
 
-   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   L’azione precedente scorre automaticamente fino alla posizione del risultato nel rapporto.
+1. Puoi scaricare il rapporto in formato CSV facendo clic su **Esporta in CSV**. Puoi anche visualizzare il rapporto in CAM facendo clic su **Vai a CAM**. Verrà visualizzato il [Analisi delle best practice](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) in CAM.
 
-   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
+Per cancellare la cache e rigenerare il rapporto, fai clic su **Aggiorna report**.
 
-1. Puoi scaricare il rapporto in formato CSV facendo clic su **Esporta in CSV**, come illustrato nella figura seguente.
+![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
-   >[!NOTE]
-   >Per cancellare la cache e rigenerare il rapporto, fai clic su **Aggiorna report**.
+1. Se la cache scade, puoi visualizzare l’ultimo rapporto generato in CAM facendo clic su **Visualizzare l’ultimo rapporto generato in CAM** o avviare una nuova generazione di rapporti facendo clic su **Genera nuovo rapporto**.
 
-   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
+![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
-   >[!NOTE]
-   >Durante la rigenerazione, il rapporto mostra l’avanzamento in termini di percentuale di completamento, come illustrato nell’immagine seguente.
-
-   ![immagine](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 #### Utilizzo dei filtri nel rapporto di Best Practices Analyzer {#bpa-filters}
 
