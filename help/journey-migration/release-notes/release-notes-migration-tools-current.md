@@ -1,26 +1,33 @@
 ---
-title: Note sulla versione 2024.01.0 degli strumenti di migrazione in AEM as a Cloud Service
-description: Note sulla versione 2024.01.0 degli strumenti di migrazione in AEM as a Cloud Service
+title: Note sulla versione 2024.05.0 degli strumenti di migrazione in AEM as a Cloud Service
+description: Note sulla versione 2024.05.0 degli strumenti di migrazione in AEM as a Cloud Service
 feature: Release Information
-source-git-commit: 0c2dca09a1d0070765e89de833fdd1c7607010c6
+exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
+source-git-commit: 5275c759d38563f655d4861b191aaf583d001268
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '166'
 ht-degree: 7%
 
 ---
 
-# Note sulla versione 2024.01.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
+# Note sulla versione 2024.05.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2024.01.0 degli strumenti di migrazione in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione 2024.05.0 degli strumenti di migrazione in AEM as a Cloud Service.
 
-## Strumento Trasferimento contenuti {#ctt-release}
+## Analisi delle best practice {#bpa-release}
 
-### Data di pubblicazione {#release-date-ctt}
+### Data di pubblicazione {#release-date-bpa}
 
-La data di pubblicazione dello strumento Content Transfer v3.0.10 è il 15 gennaio 2024.
+La data di rilascio di Best Practices Analyzer v2.1.48 è il 9 maggio 2024.
 
-### Novità {#what-is-new-ctt}
+### Novità {#what-is-new-bpa}
 
-* Lo strumento Content Transfer (Trasferimento contenuti) ora supporta la migrazione delle raccolte. Gli utenti possono selezionare la cartella della raccolta utilizzando il selettore dei percorsi ed eseguire l’estrazione.
+* Best Practices Analyzer (BPA) ora supporta il caricamento automatico dei rapporti generati da BPA direttamente in Cloud Acceleration Manager (CAM). Gli utenti non dovranno più scaricare manualmente il rapporto e caricarlo in CAM. Ulteriori informazioni [qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)
 
+## Cloud Acceleration Manager {#cam-release}
 
+### Novità {#what-is-new-cam}
+
+* Cloud Acceleration Manager (CAM) ora supporta il caricamento automatico dei rapporti generati da BPA direttamente in CAM. Ulteriori informazioni [qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)
+
+* Cloud Acceleration Manager ora fornisce una stima della durata di un’acquisizione, in base a fattori quali il conteggio dei nodi, le dimensioni dell’archivio dati e così via. Ulteriori informazioni [qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)
