@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
+source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
 workflow-type: tm+mt
-source-wordcount: '4917'
-ht-degree: 100%
+source-wordcount: '4930'
+ht-degree: 99%
 
 ---
 
@@ -605,6 +605,9 @@ ht-degree: 100%
       + [Migrare da [!DNL AEM 6.5 Forms] o precedenti verso [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppi e autorizzazioni](/help/forms/forms-groups-privileges-tasks.md)
       + [Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse](/help/forms/import-export-forms-templates.md)
+   + Guida introduttiva {#getting-started-forms}
+      + [Caso d’uso e ambiente di sviluppo della configurazione](/help/forms/create-adaptive-form-tutorial-getting-started.md)
+      + [Creare il modulo di richiesta di prestito](/help/forms/create-adaptive-form-tutorial.md)
    + Integrare {#integrate}
       + Servizi {#services}
          + [Integrare AEM Forms as a Cloud Service con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -722,7 +725,7 @@ ht-degree: 100%
       + [Riferimento API di moduli adattivi](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Riferimento API per le comunicazioni del Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [Riferimento API per JavaScript del Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html?lang=it)
-      + [Riferimento API per Java del Cloud Service di AEM Forms](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
+      + [Riferimento API per Java del Cloud Service di AEM Forms](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
    + Risoluzione dei problemi {#troubleshooting-aem-forms-cloud-service}
       + [Installazione e configurazione](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Memorizzazione in cache di Dispatcher e CDN](/help/forms/troubleshooting-caching-performance.md)
