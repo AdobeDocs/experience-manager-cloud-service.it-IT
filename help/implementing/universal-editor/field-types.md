@@ -2,9 +2,9 @@
 title: Definizioni di modelli, campi e tipi di componenti
 description: Scopri i campi e i tipi di componenti che possono essere modificati dall’Editor universale nella barra delle proprietà, con alcuni esempi. Scopri come creare una definizione di modello e un collegamento al componente per sfruttare al meglio la tua app.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c2dd0ed800739c2194ab20267f72b85461f3c5b8
+source-git-commit: 111ce0c692432d1d0c25f416282bf2dbd655679b
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1146'
 ht-degree: 10%
 
 ---
@@ -95,6 +95,7 @@ Di seguito sono elencati i tipi di componenti che è possibile utilizzare per il
 | [Booleano](#boolean) | `boolean` |
 | [Gruppo di caselle di controllo](#checkbox-group) | `checkbox-group` |
 | [Contenitore](#container) | `container` |
+| [Frammento di contenuto](#content-fragment) | `aem-content-fragment` |
 | [Data e ora](#date-time) | `date-time` |
 | [Selezione multipla](#multiselect) | `multiselect` |
 | [Numero](#number) | `number` |
