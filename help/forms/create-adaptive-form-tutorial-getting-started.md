@@ -7,9 +7,9 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
+source-git-commit: e6c58c835798b16158ab4aca26e381ab8f36afd3
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '918'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Al termine dell’esercitazione, sarai in grado di:
 
 AEM Forms fornisce Componenti di base e Componenti core per creare esperienze Forms. I Componenti core sono l’approccio moderno e consigliato per creare qualsiasi nuova esperienza di Forms. Perché utilizzare i Componenti core? Questi componenti sono leggeri, open source (disponibili su github), offrono un ottimo punteggio Google Lighthouse e web vitals, sono compatibili con l’accessibilità e presentano tutte le funzioni familiari di AEM Sites (come il controllo delle versioni e la localizzazione). Inoltre, questi componenti sono più facili da formattare e possono essere facilmente personalizzati in base alle linee guida di branding della tua organizzazione. Non hanno dipendenze di terze parti, tutti gli sviluppatori con conoscenze di JavaScript e CSS possono personalizzare facilmente questi componenti.
 
-![Perché creare componenti core basati su Adaptive Forms? Questi componenti sono leggeri, più facili da personalizzare, offrono un punteggio elevato per i fari, supportano gli standard di accessibilità, sono facilmente personalizzabili, open source, sono disponibili su github, non dipendono da librerie di terze parti e non hanno quasi nessuna curva di apprendimento per gli sviluppatori AEM e gli autori AEM. Inoltre, i componenti core AEM Forms presentano tutte le funzioni dei componenti core AEM WCM.](/help/forms/assets/cc-core-components-benefits.png)
+![Perché creare componenti core basati su Adaptive Forms? Questi componenti sono leggeri, più facili da personalizzare, offrono un punteggio elevato per i fari, supportano gli standard di accessibilità, sono facilmente personalizzabili, open source, sono disponibili su github, non dipendono da librerie di terze parti e non hanno quasi nessuna curva di apprendimento per gli sviluppatori AEM e gli autori AEM. Inoltre, i componenti core AEM Forms presentano tutte le funzioni dei componenti core AEM WCM.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## Caso d’uso: prequalificazione semplificata del prestito domestico con Forms adattivo
 
@@ -55,7 +55,7 @@ Una volta completata l’esercitazione, il modulo apparirà e funzionerà come n
 
 ![Aggiungi qui un modulo di lavoro](/help/forms/assets/cc-tutorial-final-form.png)
 
-## Configurare un ambiente di sviluppo
+## Configurare l’ambiente di sviluppo
 
 Puoi generare e testare il modulo adattivo direttamente sul computer locale, prima di distribuirlo in un ambiente di Cloud Service. Adobe fornisce un SDK AEM a per lo sviluppo locale che consente di:
 
@@ -79,10 +79,14 @@ Lo sviluppo locale con l’SDK dell’AEM consente di risparmiare tempo e sempli
 1. [Aggiungere il componente aggiuntivo AEM Forms](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): scarica e installa il componente aggiuntivo AEM Forms corrispondente alla versione dell’SDK AEM da [Distribuzione di software](https://experience.adobe.com/#/downloads) Portale.
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
-   +++Installare il componente aggiuntivo AEM Forms
+   +++Installare il componente aggiuntivo AEM Forms:
 
-       Per installare il componente aggiuntivo AEM Forms, arresta l’SDK dell’AEM, aggiungi il file del componente aggiuntivo AEM Forms (.far) alla cartella &quot;AEM SDK/crx-quickstart/install&quot; e riavvia l’SDK dell’AEM.
-   
+   Per installare AEM Forms Add-on:
+
+   1. Interrompere l’SDK per AEM.
+   1. Aggiungere il file del componente aggiuntivo AEM Forms (.far) al `AEM SDK/crx-quickstart/install` cartella,
+   1. Riavvia l’SDK dell’AEM.
+
 +++
 
 1. [Configurare le autorizzazioni utente](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): crea utenti con autorizzazioni di sviluppo, authoring e altro e aggiungi questi utenti a gruppi di moduli predefiniti.
@@ -90,7 +94,9 @@ Lo sviluppo locale con l’SDK dell’AEM consente di risparmiare tempo e sempli
 
 1. [Aggiungere modelli Forms adattivi](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): utilizza gli Archetipi AEM 48 o versioni successive per creare un nuovo progetto AEM e distribuirlo nell’SDK per l’AEM. Il progetto aggiunge modelli di Forms adattivi all’SDK dell’AEM.
 
-   +++Aggiungere modelli Forms adattivi
+   ![Modelli di modulo adattivo](/help/forms/assets/adaptive-forms-templates.png)
+
+   +++Aggiungi modelli di Forms adattivi all’SDK dell’AEM:
 
    1. Esegui il comando seguente per creare un progetto AEM.
 
@@ -108,13 +114,12 @@ Lo sviluppo locale con l’SDK dell’AEM consente di risparmiare tempo e sempli
       mvn -PautoInstallPackage clean install
       ```
 
-+++
-
    Dopo aver implementato il progetto AEM, puoi visualizzare i modelli di Forms adattivi nel tuo ambiente.
 
-   ![Modelli di modulo adattivo](/help/forms/assets/adaptive-forms-templates.png)
++++
 
-Per una guida dettagliata alla configurazione dell’ambiente di sviluppo AEM Forms locale, consulta [configurare l’ambiente di sviluppo locale per AEM Forms](/help/forms/setup-local-development-environment.md)
+
+Per istruzioni dettagliate e guida dettagliata sulla configurazione dell’ambiente di sviluppo AEM Forms locale, consulta [configurare l’ambiente di sviluppo locale per AEM Forms](/help/forms/setup-local-development-environment.md) articolo.
 
 
 
