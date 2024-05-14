@@ -1,17 +1,18 @@
 ---
 title: Utilizzare i selettori
-description: Scopri i metodi utilizzabili per selezionare le risorse per le immagini interattive, i video interattivi e i banner a carosello in Dynamic Media.
+description: Scopri i metodi utilizzabili per selezionare le risorse per le immagini interattive, i video interattivi e i banner a carosello in Dynamic Medie.
 contentOwner: Rick Brough
+feature: Selectors,Interactive Images,Interactive Videos,Carousel Banners
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 3%
+source-wordcount: '745'
+ht-degree: 5%
 
 ---
 
-# Utilizzare i selettori in Dynamic Media {#working-with-selectors}
+# Utilizzare i selettori in Dynamic Medie {#working-with-selectors}
 
 Quando lavorate con un&#39;immagine interattiva, un video interattivo o un banner carosello, selezionate le risorse e i siti e i prodotti per i punti attivi e le mappe immagine a cui collegarvi. Quando si utilizzano i set di immagini, i set 360 gradi e i set multimediali, è possibile selezionare le risorse anche con il selettore risorse.
 
@@ -25,7 +26,7 @@ Ad esempio, in questo banner carosello, puoi utilizzare il selettore Prodotto se
 
 Quando selezioni (anziché immettere manualmente) la posizione in cui si trovano i punti attivi o le mappe immagine, stai utilizzando il selettore. Il selettore Sito funziona solo se sei un [!DNL Adobe Experience Manager Sites] cliente. Il selettore di prodotto richiede inoltre [!DNL Experience Manager Commerce].
 
-## Selezionare i prodotti in Dynamic Media {#selecting-products}
+## Selezionare i prodotti in Dynamic Medie {#selecting-products}
 
 Utilizza il selettore Prodotto per scegliere un prodotto quando desideri che un hotspot o una mappa immagine fornisca una Quickview a un prodotto specifico nel catalogo dei prodotti.
 
@@ -63,7 +64,7 @@ Utilizza il selettore Prodotto per scegliere un prodotto quando desideri che un 
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Seleziona siti in Dynamic Media {#selecting-sites}
+## Seleziona siti in Dynamic Medie {#selecting-sites}
 
 Utilizzare il selettore del sito per scegliere una pagina Web quando si desidera che un punto attivo o una mappa immagine venga collegata a una pagina Web gestita in [!DNL Experience Manager] siti.
 
@@ -83,7 +84,7 @@ Utilizzare il selettore del sito per scegliere una pagina Web quando si desidera
 
 1. In **[!UICONTROL Anteprima]** se selezioni il punto attivo o la mappa immagine, puoi passare alla [!DNL Experience Manager] pagina del sito specificata.
 
-## Selezionare le risorse in Dynamic Media {#selecting-assets}
+## Selezionare le risorse in Dynamic Medie {#selecting-assets}
 
 Utilizza questo selettore per scegliere le immagini da utilizzare in un banner carosello, un video interattivo, set di immagini, set di file multimediali diversi e set 360 gradi. Nel video interattivo, il selettore delle risorse è disponibile quando selezioni **[!UICONTROL Seleziona risorse]** nel **[!UICONTROL Contenuto]** scheda. In Set carosello, il selettore risorse è disponibile quando crei una diapositiva. Nei set di immagini, nei set di file multimediali diversi e nei set 360 gradi, il selettore delle risorse è disponibile rispettivamente quando crei un set di immagini, un set di file multimediali diversi o un set 360 gradi.
 
@@ -111,4 +112,4 @@ Vedi anche [Selettore risorse](/help/assets/search-assets.md#asset-selector) per
 1. Per selezionare la risorsa, seleziona il segno di spunta. La risorsa viene visualizzata.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
--->
+—>

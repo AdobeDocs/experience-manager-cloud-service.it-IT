@@ -2,11 +2,12 @@
 title: Domande frequenti sulla distribuzione dei contenuti HTTP2
 description: Scopri la distribuzione di contenuti HTTP2 e come migliora la comunicazione tra browser e server per un trasferimento più rapido delle informazioni.
 contentOwner: Rick Brough
+feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '798'
 ht-degree: 1%
 
 ---
@@ -17,7 +18,7 @@ Adobe è entusiasta di annunciare la disponibilità della distribuzione HTTP/2 d
 
 >[!NOTE]
 >
->Questa funzione richiede l’utilizzo della rete per la distribuzione dei contenuti preconfigurata, inclusa in Adobe Experience Manager - Dynamic Medie. Con questa funzione non è supportata alcuna rete di distribuzione di contenuti personalizzata.
+>Questa funzione richiede l’utilizzo della rete per la distribuzione dei contenuti standard, inclusa in Adobe Experience Manager - Dynamic Medie. Con questa funzione non è supportata alcuna rete di distribuzione di contenuti personalizzata.
 
 ## Cos’è HTTP/2? {#what-is-http}
 

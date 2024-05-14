@@ -2,11 +2,12 @@
 title: Risoluzione dei problemi di Dynamic Media
 description: Scopri i suggerimenti per la risoluzione dei problemi che puoi provare quando lavori con immagini, set e visualizzatori in Dynamic Medie.
 contentOwner: Rick Brough
+feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1141'
 ht-degree: 1%
 
 ---
@@ -138,7 +139,7 @@ In caso di problemi con il video, consulta le seguenti linee guida per la risolu
     </ul> </td>
    <td>
     <ol>
-     <li>Verifica che la Configurazione Dynamic Medie in Cloud Services sia impostata correttamente.</li>
+     <li>Verifica che la Configurazione Dynamic Medie in Cloud Service sia impostata correttamente.</li>
      <li>Verifica che la cartella disponga di un profilo video. Inoltre, controlla il profilo video.</li>
     </ol> </td>
   </tr>
@@ -211,11 +212,11 @@ Esempio: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton
 Se le risorse di esempio o il disegno del predefinito visualizzatore non è stato sincronizzato o pubblicato, riavvia l’intero processo di copia/sincronizzazione:
 
 1. Passa a CRXDE Liti.
-1. Eliminare `<sync-folder>/_CSS/_OOTB`.
+1. Elimina `<sync-folder>/_CSS/_OOTB`.
 1. Passa a Gestione pacchetti CRX: `https://localhost:4502/crx/packmgr/`.
 1. Cerca il pacchetto visualizzatore nell’elenco; inizia con `cq-dam-scene7-viewers-content`.
 1. Seleziona **Reinstalla**.
-1. In Cloud Services, passa alla pagina Configurazione Dynamic Medie, quindi apri la finestra di dialogo di configurazione per la configurazione Dynamic Medie - S7.
+1. In Cloud Service, passa alla pagina Configurazione Dynamic Medie, quindi apri la finestra di dialogo di configurazione per la configurazione Dynamic Medie - S7.
 1. Non apportare modifiche, seleziona **Salva**.
 Questa azione di salvataggio attiva nuovamente la logica per creare e sincronizzare le risorse di esempio, il CSS del predefinito visualizzatore e il disegno.
 
@@ -236,4 +237,4 @@ Questa azione di salvataggio attiva nuovamente la logica per creare e sincronizz
 1. Elimina `viewer` cartella.
 1. Nell&#39;angolo superiore sinistro della pagina CRXDE Liti, seleziona **[!UICONTROL Salva tutto]**.
 1. Nell&#39;angolo superiore sinistro della pagina CRXDE Liti, seleziona la **Torna alla pagina principale** icona.
-1. Ricreare un [Configurazione Dynamic Medie in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+1. Ricreare un [Configurazione Dynamic Medie in Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
