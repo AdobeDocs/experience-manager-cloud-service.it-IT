@@ -3,10 +3,10 @@ title: Pubblicare un modulo Edge Delivery Services di AEM Forms
 description: Pubblicare un modulo Edge Delivery Services di AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: ht
+source-git-commit: 708b63aca6b1613dbedf193edd07aadc510ff859
+workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -87,15 +87,17 @@ Per aggiungere il modulo alla pagina web:
    Utilizza l’URL di anteprima (.URL della pagina) a scopo di sviluppo o test oppure l’URL di pubblicazione (.live) per la produzione. Di seguito sono riportati alcuni esempi con URL di anteprima e pubblicazione:
 
    **URL di anteprima**
-| Modulo  |
-|---|
-| [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
+
+   | Modulo |
+   |---|
+   | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
 
 
    **URL di pubblicazione**
-| Modulo |
-|---|
-| [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+   | Modulo |
+   |---|
+   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
 
 1. Utilizza [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l’anteprima della pagina web. Nella pagina viene ora visualizzato il modulo. Ad esempio, questo è il modulo basato su [foglio di calcolo interrogazione](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
 
