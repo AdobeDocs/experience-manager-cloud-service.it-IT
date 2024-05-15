@@ -4,9 +4,9 @@ description: Scopri come funziona la pubblicazione dei contenuti con Edge Delive
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 source-git-commit: c85a82161a7594588290793c89ecbe1f0f60a56d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Il flusso di informazioni durante la pubblicazione è il seguente. Una volta che
 
 >[!NOTE]
 >
->Sono consentiti fino a un massimo di 5000 percorsi al giorno pubblicati dall’interfaccia utente di authoring o dai flussi di lavoro. Le integrazioni che creano carichi di lavoro per la pubblicazione in blocco non sono supportate. Se il progetto richiede una capacità superiore, proporla per [Programma VIP](https://www.aem.live/vip/intake).
+>Sono consentiti fino a un massimo di 5000 percorsi al giorno pubblicati dall’interfaccia utente di authoring o dai flussi di lavoro. Le integrazioni che creano carichi di lavoro per la pubblicazione in blocco non sono supportate. Se il progetto richiede una capacità superiore, proponila per il [programma VIP](https://www.aem.live/vip/intake).
 
 ![Flusso di informazioni durante la pubblicazione da AEM a Edge Delivery Services](assets/publishing-flow.png)
 
