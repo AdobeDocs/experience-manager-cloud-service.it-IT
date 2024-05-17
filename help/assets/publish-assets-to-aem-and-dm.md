@@ -2,7 +2,7 @@
 title: Pubblicazione rapida su AEM e Dynamic Medie
 description: La pubblicazione rapida nella vista Assets consente di pubblicare le risorse in AEM e Dynamic Media simultaneamente o separatamente. Puoi selezionare risorse e cartelle e scegliere di pubblicarle in Dynamic Medie o AEM.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: a9a94e948ad7d038f28a046c950f2158871ddbb3
+source-git-commit: 9ad74a9c7ecd193446506cb883fff723c806f0a7
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Puoi pubblicare le risorse in AEM e Dynamic Medie durante il caricamento delle r
 Per pubblicare le risorse durante il caricamento in una cartella con la modalità di pubblicazione Dynamic Medie impostata su **All&#39;attivazione**:
 
 1. Clic **Aggiungi risorse** > **Sfoglia** > **Sfoglia file** per passare alla cartella appropriata per caricare le risorse. Il **Opzioni di pubblicazione** mostra la sezione **Modalità pubblicazione DM** as **All&#39;attivazione**.
-   ![Carica immagine all&#39;attivazione](/help/assets/assets/upload-upon-activation1.png)
+   ![Carica immagine all&#39;attivazione](/help/assets/assets/upload-uactivation.svg)
 2. Seleziona **Pubblica su AEM e Dynamic Medie** e fai clic su **Carica**. Le risorse vengono pubblicate contemporaneamente in AEM e Dynamic Medie. Per visualizzare lo stato di pubblicazione aggiornato di queste risorse, consulta [Verifica stato pubblicazione](#check-publish-status).
 
 ### Modalità di pubblicazione Dynamic Medie impostata su Immediata {#dynamic-media-publish-mode-set-to-immediate}
@@ -48,8 +48,10 @@ Per pubblicare le risorse durante il caricamento in una cartella con la modalit�
 Per pubblicare le risorse durante il caricamento in una cartella con la modalità di pubblicazione Dynamic Medie impostata su **Immediato**:
 
 1. Clic **Aggiungi risorse** > **Sfoglia** > **Sfoglia file** per passare alla cartella appropriata per caricare le risorse. La sezione Opzioni di pubblicazione mostra **Modalità pubblicazione DM** as **Immediato**.
-   ![immagine caricamento file - modalità immediata](/help/assets/assets/upload-immediate-mode.png)
-Come la modalità di pubblicazione Dynamic Medie è **Immediato**, le risorse caricate vengono pubblicate automaticamente in Dynamic Medie quando fai clic su **Carica**.
+   ![immagine caricamento file - modalità immediata](/help/assets/assets/resized-image-pdf-svg-new.svg)
+
+
+   Come la modalità di pubblicazione Dynamic Medie è **Immediato**, le risorse caricate vengono pubblicate automaticamente in Dynamic Medie quando fai clic su **Carica**.
 
 2. Seleziona Pubblica in **Pubblicazione AEM** le risorse caricate in AEM e fai clic su Carica.
 
@@ -62,7 +64,7 @@ Come la modalità di pubblicazione Dynamic Medie è **Immediato**, le risorse ca
 Per pubblicare le risorse durante il caricamento in una cartella con la modalità di pubblicazione Dynamic Medie impostata su **Pubblicazione selettiva**:
 
 1. Clic **Aggiungi risorse** > **Sfoglia** > **Sfoglia file** per passare alla cartella appropriata per caricare le risorse. La sezione Opzioni di pubblicazione mostra **Modalità pubblicazione DM** as **Pubblicazione selettiva**.
-   ![carica modalità di pubblicazione selettiva per immagini](/help/assets/assets/upload-image-selective-publish-mode.png)
+   ![carica modalità di pubblicazione selettiva per immagini](/help/assets/assets/upload-selective.svg)
 
 2. Seleziona **Pubblica su AEM**, **Pubblica su Dynamic Medie**, o entrambi in base alle tue esigenze, e fai clic su **Carica**.
 
@@ -77,9 +79,9 @@ Per pubblicare le risorse tramite la pagina Sfoglia risorse:
 1. Clic **Risorse** nel **Gestione risorse** disponibile nel riquadro a sinistra.
 2. Seleziona le risorse o le cartelle da pubblicare e fai clic su **Pubblica**.
 3. Seleziona **AEM** e fai clic su **Pubblica** per pubblicare risorse su AEM e Dynamic Medie.
-   ![navigazione risorse](/help/assets/assets/assets-browse-1.png)
+   ![navigazione risorse](/help/assets/assets/browse-uactivation-immediate.svg)
 Non è possibile pubblicare una cartella con la modalità di pubblicazione Dynamic Medie impostata su **Pubblicazione selettiva.** Tutte le altre cartelle o risorse selezionate vengono pubblicate in AEM e Dynamic Medie dopo aver selezionato AEM.
-   ![navigazione risorse](/help/assets/assets/assets-browse-2.png)
+   ![navigazione risorse](/help/assets/assets/browse-selective123.svg)
 
 ## Pubblicare le risorse utilizzando la pagina dei risultati di ricerca {#publish-assets-using-search-results-page}
 
@@ -88,7 +90,7 @@ Per pubblicare le risorse utilizzando la pagina dei risultati di ricerca delle r
 1. Specifica i criteri nella barra di ricerca e fai clic sull’icona Ricerca per visualizzare i risultati.
 2. Seleziona le risorse da pubblicare e fai clic su **Pubblica.**
 3. Seleziona AEM, Dynamic Medie o entrambi in base alle tue esigenze e fai clic su **Pubblica.**
-   ![cerca immagine](/help/assets/assets/search-image1.png)
+   ![cerca immagine](/help/assets/assets/search-mode.svg)
 L’opzione per pubblicare su Dynamic Medie nella pagina dei risultati della ricerca dipende dalla modalità di pubblicazione Dynamic Medie impostata nella cartella in cui la risorsa è disponibile nell’archivio.
 
    >[!NOTE]
