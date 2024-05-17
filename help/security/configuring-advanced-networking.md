@@ -2,7 +2,7 @@
 title: Configurazione di networking avanzato per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come una VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
+source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
 workflow-type: tm+mt
 source-wordcount: '5093'
 ht-degree: 99%
@@ -77,7 +77,7 @@ Questa funzionalità avanzata di rete ti consente di configurare AEM as a Cloud 
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , selezionare il programma.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
 1. Dalla pagina **Panoramica del programma**, vai alla scheda **Ambienti** e seleziona **Infrastruttura di rete** nel pannello a sinistra.
 
@@ -242,7 +242,7 @@ La configurazione dell’indirizzo IP in uscita dedicato è analoga a quella del
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , selezionare il programma.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
 1. Dalla pagina **Panoramica del programma**, vai alla scheda **Ambienti** e seleziona **Infrastruttura di rete** nel pannello a sinistra.
 
@@ -396,7 +396,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Considerazioni sul debug {#debugging-considerations}
 
-Per verificare che il traffico sia effettivamente in uscita all’indirizzo IP dedicato previsto, controlla i registri nel servizio di destinazione, se disponibili. Altrimenti può essere utile richiamare un servizio di debug come [http://ifconfig.me/ip](http://ifconfig.me/ip), che restituirà l’indirizzo IP chiamante.
+Per verificare che il traffico sia effettivamente in uscita all’indirizzo IP dedicato previsto, controlla i registri nel servizio di destinazione, se disponibili. In caso contrario, potrebbe essere utile richiamare un servizio di debug come [https://ifconfig.me/ip](https://ifconfig.me/ip), che restituisce l’indirizzo IP chiamante.
 
 ## Virtual Private Network (VPN) {#vpn}
 
@@ -416,7 +416,7 @@ Sono supportati la maggior parte dei dispositivi VPN con tecnologia IPSec. Consu
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , selezionare il programma.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
 1. Dalla pagina **Panoramica del programma**, vai alla scheda **Ambienti** e seleziona **Infrastruttura di rete** nel pannello a sinistra.
 
@@ -631,7 +631,7 @@ Quando abiliti una configurazione di rete avanzata per un ambiente, puoi abilita
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , selezionare il programma.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
 1. Dalla pagina **Panoramica del programma**, passa alla scheda **Ambienti** e seleziona l’ambiente in cui desideri abilitare la configurazione di rete avanzata nell’intestazione **Ambienti** nel pannello a sinistra. Quindi seleziona la scheda **Configurazione di rete avanzata** dell’ambiente selezionato e fai clic su **Abilita infrastruttura di rete**.
 
@@ -690,7 +690,7 @@ Dopo aver [abilitato la configurazione di rete avanzata negli ambienti](#enablin
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , selezionare il programma.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
 1. Dalla pagina **Panoramica del programma**, passa alla scheda **Ambienti** e seleziona l’ambiente in cui desideri abilitare la configurazione di rete avanzata nell’intestazione **Ambienti** nel pannello a sinistra. Quindi seleziona la scheda **Configurazione di rete avanzata** dell’ambiente selezionato e fai clic sul pulsante con i puntini di sospensione.
 
@@ -728,7 +728,7 @@ Una volta creata l’infrastruttura di rete per un programma, è possibile modif
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , selezionare il programma.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
 1. Dalla pagina **Panoramica del programma**, passa alla pagina **Ambienti** e seleziona l’intestazione **Infrastruttura di rete** nel pannello a sinistra. Fai clic sul pulsante con i puntini di sospensione accanto all’infrastruttura da eliminare.
 
