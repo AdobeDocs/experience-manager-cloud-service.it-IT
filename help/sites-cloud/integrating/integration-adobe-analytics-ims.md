@@ -2,16 +2,27 @@
 title: Configurazione IMS da utilizzare per l’integrazione con Adobe Analytics
 description: Scopri di più sulla configurazione IMS da utilizzare per l’integrazione con Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 43c820996af947fab2bacdec7646211f4104ae4d
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 94%
+source-wordcount: '931'
+ht-degree: 89%
 
 ---
 
 # Configurazione IMS da utilizzare per l’integrazione con Adobe Analytics {#ims-configuration-for-integration-with-adobe-analytics}
 
 L’integrazione di Adobe Experience Manager as a Cloud Service (AEMaaCS) con Adobe Analytics tramite l’API Analytics Standard richiede la configurazione di Adobe IMS (Identity Management System). La configurazione viene realizzata con la console Adobe Developer.
+
+>[!CAUTION]
+>
+>La configurazione descritta in questa pagina non può più essere utilizzata per integrazioni nuove o aggiornate.
+>
+>[Le integrazioni IMS ora sono configurate con OAuth S2S](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>Le configurazioni precedenti, come descritto in questa pagina, sono state effettuate con [Credenziali JWT ora obsolete nella console Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >

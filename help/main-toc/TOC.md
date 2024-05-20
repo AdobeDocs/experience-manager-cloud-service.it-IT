@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 02388518f10d5c4bd34ad7d20a24877b468bff72
+source-git-commit: 30b9d71890f5d3a1a13e0b570c370a148eb19db6
 workflow-type: tm+mt
-source-wordcount: '4964'
+source-wordcount: '4956'
 ht-degree: 99%
 
 ---
@@ -191,6 +191,7 @@ ht-degree: 99%
    + [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Considerazioni sulla sicurezza di AEM as a Cloud Service](/help/security/security-considerations.md)
    + [Credenziali JWT nella console Adobe Developer obsolete](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Configurazione delle integrazioni IMS per AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Best practice per la mappatura e la definizione degli utenti del servizio Sling](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + Onboarding {#onboarding}
    + [Inizia qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=it)
@@ -416,10 +417,8 @@ ht-degree: 99%
    + Integrazione con AEM as a Cloud Service {#integrations}
       + [Integrazione con Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integrazione con Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
-      + [Configurazione IMS da utilizzare per l’integrazione con Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Integrazione con Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
-      + [Configurazione IMS da utilizzare per l’integrazione con Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
