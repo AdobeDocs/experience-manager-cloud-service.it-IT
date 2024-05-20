@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 30b9d71890f5d3a1a13e0b570c370a148eb19db6
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '4956'
+source-wordcount: '4962'
 ht-degree: 99%
 
 ---
@@ -678,6 +678,7 @@ ht-degree: 99%
          + Aggiungere componenti a un modulo adattivo {#add-components-to-an-adaptive-form}
             + [Utilizzare il CAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms.md)
             + [Utilizzare hCaptcha in un modulo adattivo](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+            + [Utilizzare il tornello in un modulo adattivo](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Utilizza componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
             + [Applicare una firma scarabocchio](/help/forms/signing-forms-using-scribble.md)
             + [Aggiungere una tabella a un modulo adattivo](/help/forms/adaptive-forms-tables.md)

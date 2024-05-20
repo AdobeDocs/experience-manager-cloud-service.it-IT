@@ -1,15 +1,15 @@
 ---
-title: Come si utilizza hCaptcha® in un modulo adattivo per l’AEM?
-description: Migliora la sicurezza dei moduli con il servizio hCaptcha®. Guida passo passo all'interno!
+title: Come si utilizza hCaptcha&reg; in un modulo adattivo per AEM?
+description: Migliora la sicurezza dei moduli con il servizio hCaptcha&reg; senza sforzo. Guida passo passo all'interno!
 topic-tags: Adaptive Forms, author
-keywords: Servizio hCaptcha®, Forms adattivo, sfida CAPTCHA, prevenzione dei bot, sicurezza dell’invio dei moduli, prevenzione della posta indesiderata dei moduli
+keywords: hCaptcha&reg; servizio, Forms adattivo, sfida CAPTCHA, prevenzione bot, sicurezza invio moduli, prevenzione posta indesiderata moduli
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 1%
+source-wordcount: '983'
+ht-degree: 8%
 
 ---
 
@@ -18,11 +18,21 @@ ht-degree: 1%
 
 <span class="preview"> Questa funzione è disponibile nel programma di adozione anticipata. Puoi scrivere a aem-forms-ea@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità. </span>
 
-Il servizio hCaptcha® protegge i moduli da bot, spam e abusi automatizzati. Crea una sfida al widget di casella di controllo e valuta la risposta dell’utente per determinare se è un utente o un bot che interagisce con il modulo. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o attività dannose.
+Il CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra esseri umani e programmi o bot automatizzati. Rappresenta una sfida e valuta la risposta dell’utente per determinare se si tratta di un essere umano o di un bot che interagisce con il sito. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o avere scopi dannosi.
 
-<!-- ![hCaptcha®](assets/hCaptcha®-challenge.png)-->
+AEM Forms as a Cloud Service supporta le seguenti soluzioni CAPTCHA:
 
-AEM Forms as a Cloud Service supporta hCaptcha® in Adaptive Forms. Puoi utilizzarlo per presentare all’utente una richiesta di verifica tramite widget di casella di controllo all’invio del modulo.
+* [hCaptcha](#integrate-aem-forms-environment-with-hcaptcha-captcha)
+* [Tornello Cloudflare](/help/forms/integrate-adaptive-forms-turnstile.md)
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms.md)
+
+## Integrare l’ambiente AEM Forms con hCaptcha Captcha
+
+Il servizio hCaptcha® protegge i moduli da bot, spam e abusi automatizzati. Questo pone una sfida al widget casella di controllo e valuta la risposta dell’utente per determinare se si tratta di un umano o di un bot che interagisce con il modulo. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o attività dannose.
+
+AEM Forms as a Cloud Service supporta hCaptcha® nei componenti core di Forms adattivi. Puoi utilizzarlo per presentare una richiesta di verifica del widget casella di controllo all’invio del modulo.
+
+<!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
 ## Prerequisiti per integrare l’ambiente AEM Forms con hCaptcha® {#prerequisite}
 

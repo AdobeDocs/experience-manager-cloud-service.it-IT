@@ -1,15 +1,15 @@
 ---
-title: Come si utilizza hCaptcha® in un componente core modulo adattivo AEM?
-description: Migliora la sicurezza dei moduli con il servizio hCaptcha®. Guida passo passo all'interno!
+title: Come si utilizza hCaptcha&reg; in un componente core modulo adattivo AEM?
+description: Migliora la sicurezza dei moduli con il servizio hCaptcha&reg; senza sforzo. Guida passo passo all'interno!
 topic-tags: Adaptive Forms, author
-keywords: Servizio hCaptcha®, Forms adattivo, sfida CAPTCHA, prevenzione dei bot, componenti core, sicurezza dell’invio dei moduli, prevenzione della posta indesiderata dei moduli
+keywords: hCaptcha&reg; servizio, Forms adattivo, sfida CAPTCHA, prevenzione bot, componenti core, sicurezza invio moduli, prevenzione posta indesiderata moduli
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 3%
+source-wordcount: '962'
+ht-degree: 11%
 
 ---
 
@@ -17,18 +17,28 @@ ht-degree: 3%
 
 <span class="preview"> Questa funzione è disponibile nel programma di adozione anticipata. Puoi scrivere a aem-forms-ea@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità. </span>
 
-Il servizio hCaptcha® protegge i moduli da bot, spam e abusi automatizzati. Crea una sfida al widget di casella di controllo e valuta la risposta dell’utente per determinare se è un utente o un bot che interagisce con il modulo. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o attività dannose.
+Il CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra esseri umani e programmi o bot automatizzati. Rappresenta una sfida e valuta la risposta dell’utente per determinare se si tratta di un essere umano o di un bot che interagisce con il sito. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o avere scopi dannosi.
+
+AEM Forms as a Cloud Service supporta le seguenti soluzioni CAPTCHA:
+
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Tornello Cloudflare](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
+## Integrare l’ambiente AEM Forms con hCaptcha Captcha
+
+Il servizio hCaptcha® protegge i moduli da bot, spam e abusi automatizzati. Questo pone una sfida al widget casella di controllo e valuta la risposta dell’utente per determinare se si tratta di un umano o di un bot che interagisce con il modulo. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o attività dannose.
 
 AEM Forms as a Cloud Service supporta hCaptcha® nei componenti core di Forms adattivi. Puoi utilizzarlo per presentare una richiesta di verifica del widget casella di controllo all’invio del modulo.
 
-<!-- ![hCaptcha®](assets/hCaptcha®-challenge.png)-->
+<!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
 
-## Prerequisiti per integrare l’ambiente AEM Forms con hCaptcha® {#prerequisite}
+### Prerequisiti per integrare l’ambiente AEM Forms con hCaptcha® {#prerequisite}
 
 Per configurare hCaptcha® con AEM Forms, è necessario ottenere il [hCaptcha® chiave del sito e chiave segreta](https://docs.hcaptcha.com/switch/#get-your-hcaptcha-sitekey-and-secret-key) dal sito web hCaptcha®.
 
-## Passaggi per configurare hCaptcha® {#steps-to-configure-hcaptcha}
+### Configurare hCaptcha® {#steps-to-configure-hcaptcha}
 
 Per integrare AEM Forms con il servizio hCaptcha®, effettua le seguenti operazioni:
 
@@ -79,7 +89,7 @@ Per integrare AEM Forms con il servizio hCaptcha®, effettua le seguenti operazi
    * **[!UICONTROL Nome]:** Specificando il nome del componente Captcha, puoi identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell’editor di regole.
    * **[!UICONTROL Titolo]:** Specifica il titolo del componente Captcha.
    * **[!UICONTROL Impostazioni di configurazione]:** Seleziona una configurazione cloud configurata per hCaptcha®.
-   * **Dimensione Captcha:** Puoi selezionare la dimensione di visualizzazione della finestra di dialogo della sfida hCaptcha®. Utilizza il **[!UICONTROL Compatto]** per visualizzare una dimensione ridotta e il **[!UICONTROL Normale]** per visualizzare una finestra di dialogo di verifica hCaptcha® di dimensioni relativamente grandi.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha® without explicitly rendering the checkbox widget on the user interface. -->
+   * **Dimensione Captcha:** Puoi selezionare la dimensione di visualizzazione della finestra di dialogo della sfida hCaptcha®. Utilizza il **[!UICONTROL Compatto]** per visualizzare una dimensione ridotta e il **[!UICONTROL Normale]** per visualizzare una finestra di dialogo di verifica hCaptcha® di dimensioni relativamente grandi.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
    * **[!UICONTROL Messaggio di convalida]:** Fornisci un messaggio di convalida per la convalida Captcha al momento dell’invio del modulo.
    * **[!UICONTROL Messaggio di convalida script]**: questa opzione consente di inserire un messaggio da visualizzare in caso di errore di convalida dello script.
      >[!NOTE]

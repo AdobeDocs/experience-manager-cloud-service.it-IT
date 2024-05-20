@@ -5,9 +5,9 @@ topic-tags: Adaptive Forms, author
 keywords: Servizio Google reCAPTCHA, Forms adattivo, sfida CAPTCHA, prevenzione dei bot, componenti core, sicurezza dell’invio dei moduli, prevenzione della posta indesiderata dei moduli
 feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '939'
 ht-degree: 10%
 
 ---
@@ -21,14 +21,16 @@ ht-degree: 10%
 
 Il CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra esseri umani e programmi o bot automatizzati. Rappresenta una sfida e valuta la risposta dell’utente per determinare se si tratta di un essere umano o di un bot che interagisce con il sito. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o avere scopi dannosi.
 
-[!DNL AEM Forms] as a [!DNL Cloud Service] supporta Google reCAPTCHA v2 in Adaptive Forms. Puoi utilizzarlo per presentare una sfida CAPTCHA all’invio del modulo. Per utilizzare reCAPTCHA in un modulo adattivo:
+AEM Forms as a Cloud Service supporta le seguenti soluzioni CAPTCHA:
 
-1. [Collegare l’ambiente AEM Forms con il servizio reCAPTCHA di Google](#connect-your-forms-environment-with-recaptcha-service-by-google)
-1. [Configura il modulo adattivo per visualizzare la sfida CAPTCHA all’invio del modulo](#using-reCAPTCHA)
+* [Google reCAPTCHA](#connect-your-aem-forms-environment-with-recaptcha-service-by-google)
+* [Tornello Cloudflare](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
 
 ## Collegare l’ambiente AEM Forms con il servizio reCAPTCHA di Google {#connect-your-forms-environment-with-recaptcha-service-by-google}
 
-Per collegare il tuo ambiente AEM Forms con il servizio reCAPTCHA di Google
+Gli autori di moduli possono utilizzare il servizio reCAPTCHA di Google per implementare reCAPTCHA in Adaptive Forms. Offre funzionalità CAPTCHA avanzate per proteggere il sito. Per ulteriori informazioni sul funzionamento di reCAPTCHA, consulta [Google reCAPTCHA](https://developers.google.com/recaptcha/). [!DNL AEM Forms] as a [!DNL Cloud Service] supporta Google reCAPTCHA v2 in Adaptive Forms. Puoi utilizzarlo per presentare una sfida CAPTCHA all’invio del modulo. Per collegare il tuo ambiente AEM Forms con il servizio reCAPTCHA di Google
 
 1. Ottenere [coppia di chiavi API reCAPTCHA](https://www.google.com/recaptcha/admin) da Google. Include un **chiave del sito** e un **chiave segreta**.
 
@@ -56,7 +58,7 @@ Per collegare il tuo ambiente AEM Forms con il servizio reCAPTCHA di Google
 
    Una volta configurato, il servizio reCAPTCHA è disponibile per l’utilizzo in un modulo adattivo. Per ulteriori informazioni, consulta [utilizzo di Google reCAPTCHA in un modulo adattivo](#using-reCAPTCHA).
 
-## Utilizzare Google reCAPTCHA in un modulo adattivo {#using-reCAPTCHA}
+## Utilizzare il servizio reCAPTCHA di Google in un modulo adattivo {#using-reCAPTCHA}
 
 Per utilizzare reCAPTCHA in Adaptive Forms:
 
