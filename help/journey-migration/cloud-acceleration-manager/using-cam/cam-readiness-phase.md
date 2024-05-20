@@ -5,7 +5,7 @@ exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 0c56cfdd2c18d3bc77edafdbda3f99fbc43f12cf
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -31,13 +31,13 @@ Per passare alla fase di preparazione, segui la procedura riportata di seguito:
    >[!NOTE]
    >Per ulteriori informazioni, consulta Creazione e gestione di un progetto in Cloud Acceleration Manager.
 
-## Utilizzo della scheda Analisi delle best practice {#best-practices-analysis}
+## Utilizzo della scheda di analisi di Best Practice {#best-practices-analysis}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa"
->title="Rapporto di analisi delle best practice"
->abstract="Il rapporto BPA può essere caricato su CAM per fornire un’analisi della migrazione verso AEM as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Utilizzo di Best Practices Analyzer"
+>title="Rapporto di analisi di Best Practices"
+>abstract="Il rapporto di analisi di Best Practice può essere caricato su CAM per fornire un’analisi sulla migrazione ad AEM as a Cloud Service."
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Utilizzo di Best Practices Analyzer"
 
 1. Clic **Revisione** dal **Analisi delle best practice** Card.
 

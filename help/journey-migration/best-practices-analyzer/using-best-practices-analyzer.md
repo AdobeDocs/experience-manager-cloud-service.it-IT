@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
 workflow-type: tm+mt
 source-wordcount: '2686'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -64,7 +64,7 @@ L’istanza AEM di origine potrebbe essere in esecuzione dietro un firewall e ra
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa_upload_setup"
->title="Carica automaticamente il rapporto di Best Practices Analyzer in CAM"
+>title="Caricare automaticamente il rapporto di Best Practices Analyzer in CAM"
 >abstract="Specifica la chiave di caricamento BPA per caricare automaticamente il rapporto BPA generato in Cloud Acceleration Manager (CAM)."
 
 Segui questa sezione per scoprire come visualizzare il rapporto Best Practices Analyzer:
