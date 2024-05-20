@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 300bbbf0af0f0d896bf39f2a4e1fe4ed3d41f09a
+source-git-commit: 02388518f10d5c4bd34ad7d20a24877b468bff72
 workflow-type: tm+mt
-source-wordcount: '4946'
-ht-degree: 100%
+source-wordcount: '4964'
+ht-degree: 99%
 
 ---
 
@@ -654,6 +654,8 @@ ht-degree: 100%
             + [Configurare l’azione di invio Invia a endpoint REST per moduli adattivi](/help/forms/configure-submit-action-restpoint.md)
             + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
             + [Utilizzare il servizio reCAPTCHA di Google in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [Utilizzare hCAPTCHA in un modulo adattivo](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Utilizzare il tornello in un modulo adattivo](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Aggiungere un handler degli errori personalizzato in un modulo adattivo](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/supporting-new-language-localization-core-components.md)
             + [Creare e utilizzare funzioni personalizzate](/help/forms/create-and-use-custom-functions.md)
@@ -676,6 +678,7 @@ ht-degree: 100%
             + [Miglioramento delle prestazioni dei moduli di grandi dimensioni con caricamento lento](/help/forms/lazy-loading-adaptive-forms.md)
          + Aggiungere componenti a un modulo adattivo {#add-components-to-an-adaptive-form}
             + [Utilizzare il CAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms.md)
+            + [Utilizzare hCaptcha in un modulo adattivo](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [Utilizza componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
             + [Applicare una firma scarabocchio](/help/forms/signing-forms-using-scribble.md)
             + [Aggiungere una tabella a un modulo adattivo](/help/forms/adaptive-forms-tables.md)
