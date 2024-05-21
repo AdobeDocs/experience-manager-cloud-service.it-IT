@@ -1,16 +1,16 @@
 ---
-title: Genera varianti
+title: Generare varianti
 description: Scopri come generare varianti, accessibile da AEM as a Cloud Service e dal Sidekick di Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
+source-git-commit: 1d4c6512a3414db901d289557f9704699c8b6222
 workflow-type: tm+mt
-source-wordcount: '3257'
-ht-degree: 0%
+source-wordcount: '3262'
+ht-degree: 1%
 
 ---
 
 
-# Genera varianti {#generate-variations}
+# Generare varianti {#generate-variations}
 
 Se stai cercando un modo per ottimizzare i canali digitali e accelerare la creazione di contenuti, puoi utilizzare Genera varianti. Genera varianti utilizza l’intelligenza artificiale generativa (AI) per creare varianti di contenuto in base alle richieste; queste richieste vengono fornite da Adobe oppure create e gestite dagli utenti. Dopo aver creato le varianti, puoi utilizzare il contenuto del sito web e misurarne il successo utilizzando [Sperimentazione](https://www.aem.live/docs/experimentation) funzionalità di [Edge Delivery Services](/help/edge/overview.md).
 
@@ -18,6 +18,7 @@ Se stai cercando un modo per ottimizzare i canali digitali e accelerare la creaz
 
 * [all’interno di Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
 * [il Sidekick dei Edge Delivery Services AEM](#access-aem-sidekick)
+* [nell’Editor frammenti di contenuto](#authoring-content-fragments)
 
 >[!NOTE]
 >
@@ -291,7 +292,7 @@ L’immagine seguente mostra i vantaggi di questa operazione:
 
 ![Genera varianti: prompt con titolo e descrizione formattati separatamente](assets/generate-variations-prompt-formatted.png)
 
-## Salva richiesta {#save-prompt}
+## Salva il prompt {#save-prompt}
 
 Dopo aver modificato o creato i prompt, puoi salvarli per utilizzarli in futuro, sia per la tua organizzazione IMS che per te stesso. Il prompt salvato verrà visualizzato come **Modello di richiesta** Card.
 
@@ -398,7 +399,7 @@ Ad esempio, per aggiungere un pubblico da un file su Google Drive:
 
 La gestione dell’utilizzo dipende dall’azione intrapresa:
 
-* Genera varianti
+* Generare varianti
 
   Una generazione di una variante di copia è uguale a una azione generativa. In qualità di cliente, hai un certo numero di azioni generative che vengono fornite con la tua licenza AEM. Una volta utilizzata l’adesione di base, puoi acquistare azioni aggiuntive.
 

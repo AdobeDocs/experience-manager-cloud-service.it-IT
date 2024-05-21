@@ -4,10 +4,10 @@ description: Scopri come creare contenuti per i frammenti di contenuto e creare 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
+source-git-commit: 36fa580b017ab10097512165a35a9198a6d331d3
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 8%
+source-wordcount: '2670'
+ht-degree: 7%
 
 ---
 
@@ -24,6 +24,7 @@ Questo editor fornisce:
 
 * [Salvataggio automatico](#saving-autosaving), per evitare la perdita accidentale di modifiche.
 * [Caricamento in linea di risorse come riferimenti a contenuti](#reference-images), senza doverli caricare prima in Asset DAM.
+* [Genera varianti](#generate-variations-ai) utilizzare l’intelligenza artificiale generativa per accelerare la creazione dei contenuti in base ai prompt.
 * [Anteprima](#preview-content-fragment) dell’esperienza sottoposta a rendering fornita dal frammento di contenuto.
 * Possibilità di [Pubblica](#publish-content-fragment) e [Annulla pubblicazione](#unpublish-content-fragment) dall’editor.
 * Possibilità di [visualizzare e aprire le copie per lingua associate](#view-language-copies) nell’editor.
@@ -83,7 +84,7 @@ Nel pannello a sinistra puoi vedere:
 
 * l&#39;elenco di **[Varianti](#variations)** che sono stati creati per questo frammento:
    * **Principale** è la variante presente al momento della creazione del frammento di contenuto, che puoi aggiungere in un secondo momento
-   * puoi selezionare e aprire una variante per la modifica
+   * puoi utilizzare Genera varianti (#generate-variations) per utilizzare un modello basato su prompt creato da Adobe per un caso d’uso specifico.
    * puoi anche [crea una variante](#create-variation)
 * il **Campi** all’interno del frammento e relative varianti:
    * l’icona indica [Tipo di dati](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -119,6 +120,8 @@ Con ogni aggiornamento effettuato, il frammento di contenuto viene salvato autom
 Dall’editor è possibile:
 
 * [Creare varianti](#create-variation) del **Principale** contenuto
+
+* [Usa IA per la generazione di varianti](#generate-variations-ai) utilizzare l’intelligenza artificiale generativa per utilizzare un modello basato su prompt creato da Adobe per un caso d’uso specifico.
 
 * Seleziona la variante richiesta per la modifica del contenuto
 
@@ -156,14 +159,52 @@ Per rinominare un **Variante**:
 
 1. Premere **Ritorno** o spostarsi in un altro campo per salvare automaticamente la modifica. Il titolo viene aggiornato nel **Varianti** a sinistra.
 
+### Creare varianti utilizzando GenAI con Genera varianti {#generate-variations-ai}
+
+Utilizza le varianti generative per sfruttare l’intelligenza artificiale generativa per accelerare la creazione dei contenuti.
+
+Per utilizzare le Varianti generative nell’Editor frammento di contenuto:
+
+1. Apri l’Editor frammento di contenuto. Nell’intestazione troverai il punto di ingresso per Generare varianti:
+
+![Generare varianti nell’editor dei frammenti di contenuto](assets/cfm-generate-variations1.png)
+
+1. Genera varianti si apre in una nuova scheda. Nella barra a sinistra puoi vedere l’istanza di AEM Cloud e il Frammento di contenuto per cui stai creando i contenuti. Selezionare il prompt da utilizzare o crearne uno nuovo.
+
+   >[!NOTE]
+   >
+   >I modelli di prompt di Adobe disponibili al momento sono limitati, ma ne verranno aggiunti altri in versioni future.
+
+![Esporta per generare varianti nel frammento di contenuto](assets/cfm-generate-variations2.png)
+
+1. Genera il contenuto compilando i prompt. Il modello di contenuto del frammento verrà utilizzato automaticamente per generare contenuto utilizzando GenAI.
+
+   >[!NOTE]
+   >
+   >Al momento sono supportati solo i campi di testo.
+
+![Esporta per generare varianti nel frammento di contenuto](assets/cfm-generate-variations3.png)
+
+1. Seleziona la variante di generazione desiderata e fai clic su &quot;Esporta variante&quot;. Conferma il nome della variante del frammento di contenuto e seleziona una delle seguenti opzioni:
+
+   * **Esporta**: esporta la variante in Frammento di contenuto e resta nell’applicazione Genera variante.
+   * **Esporta e apri**: esporta la variante in Frammento di contenuto e apri una nuova scheda che mostra il Frammento di contenuto con la nuova variante di GenAI.
+
+   ![Esporta per generare varianti nel frammento di contenuto](assets/cfm-generate-variations4.png)
+
+1. Le varianti generate vengono visualizzate nell’Editor frammento di contenuto principale.
+
+   ![Visualizza Genera varianti in Frammento di contenuto](assets/cfm-generate-variations5.png)
+
+Ulteriori informazioni su Genera varianti [qui]{generative-ai/generate-variations.md}.
 
 ### Eliminare una variante {#delete-variation}
 
 Per eliminare una variante del frammento di contenuto:
 
->[!NOTE]
->
->Impossibile eliminare **Principale**.
+    >[!NOTA]
+    >
+    >Impossibile eliminare **Main**.
 
 1. Seleziona la Variante.
 
