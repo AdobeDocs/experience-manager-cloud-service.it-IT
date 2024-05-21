@@ -2,7 +2,7 @@
 title: Modifica delle proprietà di una pagina
 description: Scopri come definire le proprietà necessarie per gestire una pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 89%
@@ -52,7 +52,7 @@ Le proprietà sono distribuite su più schede.
 
    * **Titolo pagina**: titolo da utilizzare nella pagina. Generalmente utilizzato dai componenti titolo. Se vuoto, il **Titolo** è utilizzato.
    * **Titolo navigazione** : puoi specificare un titolo diverso da usare nella navigazione (ad esempio, se ne desideri uno più conciso). Se vuoto, il **Titolo** è utilizzato.
-   * **Sottotitolo**: sottotitolo da utilizzare nella pagina.
+   * **Didascalia** - Sottotitolo da utilizzare nella pagina.
    * **Descrizione**: descrizione della pagina, il suo ruolo o altri dettagli.
 
 * **Ora di attivazione/disattivazione**

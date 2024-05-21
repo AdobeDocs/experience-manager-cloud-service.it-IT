@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 74254387de1761f25127180787453e681181d97a
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '3166'
+source-wordcount: '3165'
 ht-degree: 5%
 
 ---
@@ -147,7 +147,7 @@ Puoi anche configurare il predefinito visualizzatore, il predefinito immagine o 
 
   Questa opzione è l&#39;unica disponibile se visualizzi set di immagini, set 360 gradi o set di file multimediali diversi. I predefiniti visualizzatore visualizzati sono anche predefiniti visualizzatore rilevanti solo per il visualizzatore.
 
-* **[!UICONTROL Modificatori visualizzatore]** - I modificatori visualizzatore si presentano come coppia nome=valore con delimitatore &amp; e consentono di modificare i visualizzatori come descritto nella Guida di riferimento visualizzatori. Un esempio di modificatore di visualizzatore è `posterimage=img.jpg&caption=text.vtt,1` che imposta un&#39;immagine diversa per la miniatura del video e associa al video un file di sottotitoli/sottotitoli codificati.
+* **[!UICONTROL Modificatori visualizzatore]** - I modificatori visualizzatore si presentano come coppia nome=valore con delimitatore &amp; e consentono di modificare i visualizzatori come descritto nella Guida di riferimento visualizzatori. Un esempio di modificatore di visualizzatore è `posterimage=img.jpg&caption=text.vtt,1` che imposta un&#39;immagine diversa per la miniatura del video e associa al video un file di sottotitoli codificati.
 
 * **[!UICONTROL Predefinito immagine]** - Selezionate un predefinito immagine esistente dall&#39;elenco a discesa. Se il predefinito immagine che state cercando non è visibile, dovete renderlo visibile. Consulta [Gestione predefiniti immagine](/help/assets/dynamic-media/managing-image-presets.md). Non è possibile selezionare un predefinito visualizzatore se si utilizza un predefinito immagine e viceversa.
 
@@ -300,7 +300,7 @@ Il componente File multimediali interattivi è intelligente. Sia che si aggiunga
 
 * **[!UICONTROL Mostra risorsa prodotto]** - Per impostazione predefinita, questo valore è selezionato. La risorsa prodotto mostra un’immagine del prodotto come definito nel modulo Commerce. Per non visualizzare la risorsa del prodotto, deseleziona questa opzione.
 
-* **[!UICONTROL Mostra prezzo prodotto]** - Per impostazione predefinita, questo valore è selezionato. Nel campo Prezzo prodotto viene visualizzato il prezzo dell’articolo definito nel modulo Commerce. Deselezionare il segno di spunta per non visualizzare il prezzo del prodotto.
+* **[!UICONTROL Mostra prezzo prodotto]** - Per impostazione predefinita, questo valore è selezionato. Nel campo Prezzo prodotto viene visualizzato il prezzo dell&#39;articolo definito nel modulo Commerce. Deselezionare il segno di spunta per non visualizzare il prezzo del prodotto.
 
 * **[!UICONTROL Mostra modulo prodotto]** - Per impostazione predefinita, questo valore non è selezionato. Il Modulo prodotto include qualsiasi variante di prodotto, ad esempio dimensioni e colore. Deseleziona il segno di spunta per non mostrare le varianti prodotto.
 

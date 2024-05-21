@@ -1,13 +1,13 @@
 ---
 title: Video in Dynamic Media
-description: Scopri come utilizzare i video in Dynamic Medie. Rivedi le best practice per la codifica di video, la pubblicazione di video in YouTube, la visualizzazione di rapporti video e l’aggiunta di sottotitoli, sottotitoli o marcatori capitolo ai video.
+description: Scopri come utilizzare i video in Dynamic Medie. Rivedi le best practice per la codifica di video, la pubblicazione di video in YouTube, la visualizzazione di rapporti video e l’aggiunta di sottotitoli o marcatori capitolo ai video.
 contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '9350'
+source-wordcount: '9340'
 ht-degree: 2%
 
 ---
@@ -521,7 +521,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 
 
-## Abilita il supporto per DASH, sottotitoli multipli e tracce audio multiple sul tuo account Dynamic Medie {#enable-dash}
+## Abilita il supporto per DASH, sottotitoli e tracce audio multiple sul tuo account Dynamic Medie {#enable-dash}
 
 **Informazioni sull’attivazione del supporto DASH sul tuo account**
 DASH (Digital Adaptive Streaming over HTTP) è lo standard internazionale per lo streaming video ed è ampiamente adottato tra diversi visualizzatori video. Quando DASH è abilitato sul tuo account, puoi scegliere tra DASH o HLS per lo streaming video adattivo. Oppure, è possibile optare per entrambi con cambio automatico tra i lettori quando **[!UICONTROL auto]** viene selezionato come tipo di riproduzione nel predefinito Visualizzatore.
@@ -537,13 +537,13 @@ Alcuni vantaggi chiave dell&#39;attivazione di DASH sul tuo account includono:
 
 L’abilitazione del supporto DASH sul tuo account viene eseguita tramite un Adobe di caso di assistenza clienti che hai creato e inviato.
 
-**Informazioni sull’attivazione del supporto per più sottotitoli e tracce audio multiple sul tuo account**
+**Informazioni sull’abilitazione del supporto di tracce multi-didascalia e multi-audio sul tuo account**
 
-Contemporaneamente alla creazione di un caso di supporto Adobe con DASH abilitato sul tuo account, puoi anche beneficiare dell’abilitazione automatica del supporto per più sottotitoli e tracce audio. Dopo l’abilitazione, tutti i video successivi caricati vengono elaborati con una nuova architettura back-end che include il supporto per l’aggiunta di tracce multi-sottotitolo e multi-audio ai video.
+Mentre crei un caso di supporto Adobe con DASH abilitato sul tuo account, puoi anche beneficiare dell’abilitazione automatica del supporto per tracce multi-didascalia e multi-audio. Dopo l’abilitazione, tutti i video successivi caricati vengono elaborati con una nuova architettura back-end che include il supporto per l’aggiunta di tracce multi-didascalia e multi-audio ai video.
 
 >[!IMPORTANT]
 >
->Tutti i video caricati *prima di* consentire il supporto di tracce multi-sottotitoli e multi-audio sul proprio account Dynamic Medie, [deve essere rielaborato](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di traccia multi-sottotitoli e multi-audio. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
+>Tutti i video caricati *prima di* consentire il supporto di tracce multi-didascalia e multi-audio sul proprio account Dynamic Medie, [deve essere rielaborato](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di traccia audio e sottotitoli multipli. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
 
 **Per abilitare il supporto per DASH, sottotitoli multipli e tracce audio multiple sul tuo account Dynamic Medie:**
 
@@ -554,7 +554,7 @@ Contemporaneamente alla creazione di un caso di supporto Adobe con DASH abilitat
    * Ambiente Cloud Service (ID programma e ID ambiente).
    * Nome dell&#39;account della società Dynamic Medie.
    * La tua area geografica di Dynamic Medie: Nord America (NA), Asia-Pacifico (APAC) o Europa-Medio Oriente-Asia (EMEA).
-   * Specifica di abilitare il supporto per tracce DASH, sottotitoli multipli e audio sul tuo account Dynamic Medie, all&#39;Experience Manager 6.5.
+   * A partire dall&#39;Experience Manager 6.5, specifica che sul tuo account Dynamic Medie desideri abilitare il supporto per DASH (DASH), sottotitoli multipli e tracce audio multiple.
 
 1. L’Assistenza clienti di Adobe ti aggiunge alla Lista di attesa dei clienti in base all’ordine in cui vengono inviate le richieste.
 1. Quando Adobe è pronto a gestire la richiesta, l’Assistenza clienti ti contatta per coordinare e impostare una data limite per l’abilitazione.
@@ -565,9 +565,9 @@ Contemporaneamente alla creazione di un caso di supporto Adobe con DASH abilitat
    * [Aggiungere sottotitoli multipli e tracce audio multiple](#add-msma) al tuo video.
 
 
-## Informazioni sul supporto di tracce multi-sottotitolo e multi-audio per video in Dynamic Medie{#about-msma}
+## Informazioni sul supporto di tracce multi-didascalia e multi-audio per video in Dynamic Medie{#about-msma}
 
-Con la funzionalità multi-sottotitoli e tracce audio multiple in Dynamic Medie, è possibile aggiungere facilmente più sottotitoli e tracce audio a un video primario. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
+Con la funzionalità multi-caption e multi-audio track in Dynamic Medie, potete aggiungere facilmente più didascalie e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
 
 ![Scheda Sottotitoli e tracce audio in Dynamic Medie insieme a una tabella che mostra i file di sottotitoli .VTT caricati e i file di tracce audio .MP3 caricati per un video.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
@@ -581,28 +581,28 @@ Alcuni dei casi d’uso da considerare per aggiungere sottotitoli multipli e tra
 |  | Brani di commento |
 |  | Audio descrittivo |
 
-Tutti [formati video supportati in Dynamic Medie](/help/assets/file-format-support.md) e tutti i visualizzatori video di Dynamic Medie, ad eccezione di Dynamic Medie *Video_360* visualizzatore—sono supportate per l&#39;uso con sottotitoli multipli e tracce audio multiple.
+Tutti [formati video supportati in Dynamic Medie](/help/assets/file-format-support.md) e tutti i visualizzatori video di Dynamic Medie, ad eccezione di Dynamic Medie *Video_360* visualizzatore: sono supportate per l&#39;utilizzo con sottotitoli multipli e tracce audio multiple.
 
-La funzionalità di traccia multi-sottotitoli e multi-audio è disponibile per il tuo account Dynamic Medie tramite un interruttore di funzioni che deve essere abilitato (attivato) da Adobe Customer Support.
+La funzionalità di tracciamento multi-didascalia e multi-audio è disponibile per il tuo account Dynamic Medie tramite un interruttore di funzioni che deve essere abilitato (attivato) da Adobe Customer Support.
 
-### Aggiungere sottotitoli multipli e tracce audio al video {#add-msma}
+### Aggiungere sottotitoli multipli e tracce audio multiple al video {#add-msma}
 
-Prima di aggiungere tracce multi-sottotitolo e multi-audio al video, assicurati di avere già le seguenti tracce sul posto:
+Prima di aggiungere tracce multi-didascalia e multi-audio al video, accertatevi di avere già le seguenti tracce sul posto:
 
 * Dynamic Medie è configurato in un ambiente AEM.
 * A [Il profilo video Dynamic Medie viene applicato alla cartella in cui vengono acquisiti i video](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [Il brano multi-sottotitolo e multi-audio è abilitato sul tuo account Dynamic Medie](#enable-dash).
+* [La traccia multi-didascalia e multi-audio è abilitata sul tuo account Dynamic Medie](#enable-dash).
 
-I sottotitoli e i sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltre, i file di traccia audio aggiunti sono supportati con il formato MP3.
+I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltre, i file di traccia audio aggiunti sono supportati con il formato MP3.
 
 >[!IMPORTANT]
 >
->Tutti i video caricati *prima di* consentire il supporto di tracce multi-sottotitoli e multi-audio sul proprio account Dynamic Medie, [deve essere rielaborato](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di traccia multi-sottotitoli e multi-audio. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
+>Tutti i video caricati *prima di* consentire il supporto di tracce multi-didascalia e multi-audio sul proprio account Dynamic Medie, [deve essere rielaborato](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di traccia audio e sottotitoli multipli. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
 
-**Per aggiungere al video più sottotitoli e tracce audio multiple:**
+**Per aggiungere sottotitoli multipli e tracce multi-audio al video:**
 
 1. [Carica il video principale in una cartella](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) a cui è già stato assegnato un profilo video.
-1. Passa alla risorsa video caricata a cui desideri aggiungere tracce con più sottotitoli e più audio.
+1. Passa alla risorsa video caricata a cui desideri aggiungere didascalie multiple e tracce audio multiple.
 1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
 1. Sulla barra degli strumenti, seleziona l’icona Proprietà (un cerchio con una &quot;i&quot; all’interno).
    ![La risorsa video selezionata con il segno di spunta sopra l’immagine della miniatura video e Visualizza proprietà sono evidenziate sulla barra degli strumenti.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Risorsa video selezionata nella vista a schede.*
@@ -618,19 +618,19 @@ I sottotitoli e i sottotitoli aggiunti sono supportati nei formati WebVTT e VTT 
 
    ![Scheda Sottotitoli e tracce audio nella pagina Proprietà.](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Scheda Sottotitoli e tracce audio nella pagina Proprietà del video.*
 
-1. (Facoltativo) Per aggiungere uno o più file di sottotitoli a un video, effettuate le seguenti operazioni:
+1. (Facoltativo) Per aggiungere uno o più file di didascalia a un video, effettuate le seguenti operazioni:
    * Seleziona **[!UICONTROL Carica sottotitoli]**.
    * Passa a uno o più file .vtt (Video Text Tracks) e selezionali, quindi aprili.
-   * Affinché i sottotitoli siano visibili sul lettore multimediale, *deve* aggiungi dettagli richiesti (metadati) su *ogni* file dei sottotitoli caricato. Selezionare l&#39;icona della matita a destra del nome di un file di sottotitoli. In **Modifica sottotitolo** immetti i seguenti dettagli richiesti sul file, quindi seleziona **[!UICONTROL Salva]**. Ripeti questa procedura per ogni file di sottotitoli caricato:
+   * Affinché i sottotitoli siano visibili sul lettore multimediale, *deve* aggiungi dettagli richiesti (metadati) su *ogni* file di didascalia caricato. Seleziona l’icona a forma di matita a destra del nome di un file di didascalia. In **Modifica didascalia** immetti i seguenti dettagli richiesti sul file, quindi seleziona **[!UICONTROL Salva]**. Ripeti questa procedura per ogni file di didascalia caricato:
 
-     | Metadati sottotitoli | Descrizione |
+     | Metadati didascalia | Descrizione |
      |--- |--- |
-     | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Non è possibile utilizzare lo stesso nome di file per file di sottotitoli e di tracce audio aggiuntivi. |
-     | Lingua | Selezionare la lingua del sottotitolo. |
-     | Tipo | Selezionare il tipo di sottotitolo in uso.<br>**Sottotitolo** : il testo del sottotitolo visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include anche i rumori di fondo, la differenziazione degli oratori e altre informazioni rilevanti, insieme alla traduzione o trascrizione del dialogo, rendendo il contenuto più accessibile per gli individui non udenti o ipoudenti. |
-     | Etichetta | Testo visualizzato per il nome del sottotitolo nel **[!UICONTROL Seleziona audio o didascalia]** elenco a comparsa nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Esempio: `English (CC)`. |
+     | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Non è possibile usare lo stesso nome di file per ulteriori file di didascalia e tracce audio. |
+     | Lingua | Selezionare la lingua della didascalia. |
+     | Tipo | Selezionare il tipo di didascalia in uso.<br>**Didascalia** : il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include anche i rumori di fondo, la differenziazione degli oratori e altre informazioni rilevanti, insieme alla traduzione o trascrizione del dialogo, rendendo il contenuto più accessibile per gli individui non udenti o ipoudenti. |
+     | Etichetta | Testo visualizzato per il nome della didascalia nella **[!UICONTROL Seleziona audio o didascalia]** elenco a comparsa nel lettore multimediale. L’etichetta corrisponde a una didascalia o a una traccia di didascalia, come vede il cliente. Esempio: `English (CC)`. |
 
-     Se necessario, è possibile modificare i metadati dei sottotitoli in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
+     Se necessario, puoi modificare i metadati dei sottotitoli in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
 
 1. (Facoltativo) Per aggiungere una o più tracce audio a un video, effettuate le seguenti operazioni:
    * Seleziona **[!UICONTROL Carica tracce audio]**.
@@ -639,10 +639,10 @@ I sottotitoli e i sottotitoli aggiunti sono supportati nei formati WebVTT e VTT 
 
      | Metadati traccia audio | Descrizione |
      |--- |--- |
-     | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Non è possibile usare lo stesso nome di file per file di traccia audio o sottotitoli aggiuntivi. |
+     | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Non è possibile usare lo stesso nome di file per file di traccia audio o di didascalia aggiuntivi. |
      | Lingua | Selezionate la lingua della traccia audio. |
      | Tipo | Selezionate il tipo di traccia audio in uso.<br>**Originale** - La traccia audio originariamente allegata al video e rappresentata come `[Original]` nell’etichetta con `English` lingua selezionata per impostazione predefinita. Mentre **[!UICONTROL Etichetta]** e **[!UICONTROL Lingua]** può essere modificato in **[!UICONTROL Modifica traccia audio]** , vengono utilizzati i valori originali se il video principale viene rielaborato.<br>**Standard** - Traccia audio aggiuntiva per una lingua diversa dall&#39;originale.<br>**Descrizione audio** - Traccia audio che include anche una narrazione descrittiva delle azioni non verbali e dei gesti nel video, rendendo il contenuto più accessibile agli utenti ipovedenti. |
-     | Etichetta | Testo visualizzato come nome della traccia audio nel **[!UICONTROL Seleziona audio o didascalia]** elenco a comparsa nel lettore multimediale. L’etichetta è ciò che il cliente vede e che corrisponde a una traccia audio. Ad esempio: `English [Original]`. L&#39;etichetta dell&#39;audio collegata a un video è impostata su `[Original|` per impostazione predefinita. |
+     | Etichetta | Testo visualizzato come nome della traccia audio nel **[!UICONTROL Seleziona audio o didascalia]** elenco a comparsa nel lettore multimediale. L’etichetta è ciò che il cliente vede e che corrisponde a una traccia audio. Ad esempio, `English [Original]`. L&#39;etichetta dell&#39;audio collegata a un video è impostata su `[Original|` per impostazione predefinita. |
 
      Se necessario, potete modificare i metadati della traccia audio in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
 
@@ -652,25 +652,25 @@ I sottotitoli e i sottotitoli aggiunti sono supportati nei formati WebVTT e VTT 
    >
    >In base alle impostazioni di caching dell’istanza, l’elaborazione dei metadati può richiedere diversi minuti prima che venga visualizzata nell’anteprima e negli URL pubblicati.
 
-1. (Facoltativo) Se hai selezionato **[!UICONTROL Salva e chiudi]** nel passaggio precedente, invece di selezionare **[!UICONTROL Salva]**, è comunque possibile visualizzare lo stato di elaborazione dei file caricati. Consulta [Visualizzare lo stato del ciclo di vita dei sottotitoli caricati e dei file di traccia audio](#lifecycle-status-video).
+1. (Facoltativo) Se hai selezionato **[!UICONTROL Salva e chiudi]** nel passaggio precedente, invece di selezionare **[!UICONTROL Salva]**, è comunque possibile visualizzare lo stato di elaborazione dei file caricati. Consulta [Visualizzare lo stato del ciclo di vita dei file di didascalia e traccia audio caricati](#lifecycle-status-video).
 1. (Facoltativo) Visualizza l&#39;anteprima del video prima della pubblicazione per assicurarti che i sottotitoli e l&#39;audio funzionino come previsto. Consulta [Visualizzare in anteprima un video con più sottotitoli e tracce audio](#preview-video-audio-subtitle)
 1. Pubblica il video. Consulta [Pubblicare le risorse](publishing-dynamicmedia-assets.md).
 
-#### Informazioni sull&#39;aggiunta di file di sottotitoli e tracce audio a un video già pubblicato
+#### Informazioni sull&#39;aggiunta di file di didascalia e traccia audio a un video già pubblicato
 
-Quando carichi altri file di sottotitoli o di tracce audio in un video già pubblicato, questi file avranno un `Processed` stato dopo che sono stati preparati, dopo il caricamento. A questo punto, puoi visualizzare in anteprima il video in Dynamic Medie per vedere o ascoltare i file appena caricati.
+Quando carichi altri file di didascalia o di traccia audio in un video già pubblicato, questi file avranno un `Processed` stato dopo che sono stati preparati, dopo il caricamento. A questo punto, puoi visualizzare in anteprima il video in Dynamic Medie per vedere o ascoltare i file appena caricati.
 
-Dopo l’anteprima, tuttavia, devi *pubblicare* il video per pubblicare anche i file dei sottotitoli o delle tracce audio appena aggiunti. Dopo la pubblicazione, i sottotitoli o l’audio diventano disponibili con l’URL pubblico di Dynamic Medie.
+Dopo l’anteprima, tuttavia, devi *pubblicare* il video per pubblicare anche i file di didascalia o di traccia audio appena aggiunti. Dopo la pubblicazione, i sottotitoli o l’audio diventano disponibili con l’URL pubblico di Dynamic Medie.
 
 >[!NOTE]
 >
 >In base alle impostazioni di caching dell’istanza, gli aggiornamenti dei metadati possono richiedere alcuni minuti prima che vengano visualizzati nell’anteprima e negli URL pubblicati.
 
-Nel caso in cui Dynamic Medie sia stato configurato per la pubblicazione immediata, il caricamento di sottotitoli o file audio aggiuntivi attiva immediatamente la pubblicazione del video in seguito al caricamento di sottotitoli o file audio.
+Nel caso in cui Dynamic Medie sia stato configurato per la pubblicazione immediata, il caricamento di file di didascalia o audio aggiuntivi attiva immediatamente la pubblicazione del video in seguito al caricamento di file di didascalia o audio.
 
 >[!CAUTION]
 >
->Quando si caricano file di sottotitoli o file audio in un video pubblicato o non pubblicato, i file vengono eliminati se [*rielabora*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) il video. Solo l&#39;audio originale del video rimane intatto. In questi casi, è necessario caricare nuovamente i file dei sottotitoli e delle tracce audio nel video.
+>Quando si caricano file di didascalia o file audio in un video pubblicato o non pubblicato, i file vengono eliminati se [*rielabora*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) il video. Solo l&#39;audio originale del video rimane intatto. In questi casi, è necessario caricare nuovamente i file di didascalia e di traccia audio nel video.
 
 #### Aggiungere più sottotitoli a un video che ha un URL esistente con modificatore sottotitoli
 
@@ -681,30 +681,30 @@ Le modifiche apportate a più sottotitoli hanno la precedenza su una didascalia 
 **Per aggiungere più sottotitoli a un video che ha un URL esistente con modificatore sottotitoli:**
 
 1. Carica il file di didascalia già aggiunto come modificatore al video, in modo da poter gestire il file esplicitamente.
-1. Caricare eventuali file di sottotitoli/sottotitoli aggiuntivi, se necessario.
+1. Carica eventuali file di didascalia aggiuntivi, se necessario.
 1. Pubblica il video come di consueto.
 L’URL esistente con il modificatore didascalia ora può caricare più didascalie.
 
-### Visualizzare lo stato del ciclo di vita dei sottotitoli caricati e dei file di traccia audio{#lifecycle-status-video}
+### Visualizzare lo stato del ciclo di vita dei file di didascalia e traccia audio caricati{#lifecycle-status-video}
 
-È possibile osservare lo stato del ciclo di vita di qualsiasi file di sottotitoli o traccia audio caricato nel video principale da **Sottotitoli e tracce audio** scheda di **Proprietà**.
+Puoi osservare lo stato del ciclo di vita di qualsiasi file di didascalia o traccia audio caricato nel video principale da **Sottotitoli e tracce audio** scheda di **Proprietà**.
 
 **Per visualizzare lo stato del ciclo di vita di un video:**
 
 1. Passa alla risorsa video di cui desideri visualizzare lo stato del ciclo di vita.
 1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
 1. Sulla barra degli strumenti, seleziona l’icona Proprietà (un cerchio con una &quot;i&quot; all’interno).
-1. Nella pagina Proprietà, seleziona la **[!UICONTROL Sottotitoli e tracce audio]** scheda. Nella colonna Stato (Status), notate lo stato di ciascun sottotitolo o file audio.
+1. Nella pagina Proprietà, seleziona la **[!UICONTROL Sottotitoli e tracce audio]** scheda. Nella colonna Stato (Status), notate lo stato di ogni didascalia o file audio.
 
-| Stato sottotitolo o traccia audio | Descrizione |
+| Stato traccia audio o didascalia | Descrizione |
 | --- | --- |
-| Elaborazione | Quando si aggiunge e si salva un nuovo file di sottotitoli o di tracce audio, lo stato diventa &quot;Elaborazione&quot;. Dynamic Medie elabora il file allegando il manifesto di streaming al video principale. |
-| Elaborato | Al termine dell&#39;elaborazione, il sottotitolo o il file di traccia audio, o la traccia audio originale associata al video principale, appare in uno stato &quot;Elaborato&quot;. È possibile visualizzare in anteprima i sottotitoli e i file di traccia audio che appaiono come &quot;elaborati&quot; *prima di* pubblichi il video in diretta. |
+| Elaborazione | Quando viene aggiunta e salvata una nuova didascalia o un nuovo file di traccia audio, il file entra in uno stato di &quot;Elaborazione&quot;. Dynamic Medie elabora il file allegando il manifesto di streaming al video principale. |
+| Elaborato | Al termine dell&#39;elaborazione, il file di didascalia o di traccia audio, o la traccia audio originale associata al video principale, appare in stato &quot;Elaborato&quot;. È possibile visualizzare in anteprima i file di didascalia e traccia audio che appaiono come &quot;Elaborati&quot; *prima di* pubblichi il video in diretta. |
 | Pubblicato | Uno stato &quot;Pubblicato&quot; rappresenta uno stato simile a &quot;Pubblicato&quot; per un video principale. Le risorse vengono pubblicate quando il video principale viene pubblicato e sono disponibili sull’URL pubblico di Dynamic Medie. |
-| Non riuscito | Lo stato &quot;Non riuscito&quot; indica che l&#39;elaborazione di un file di sottotitoli o traccia audio non è stata completata. Elimina il file dei sottotitoli o delle tracce audio e caricalo di nuovo. |
-| La pagina di cui è stata annullata la pubblicazione   | Quando si annulla esplicitamente la pubblicazione di un video principale pubblicato, vengono annullati anche i sottotitoli o i file di traccia audio aggiunti al video. |
+| Non riuscito | Lo stato &quot;Non riuscito&quot; indica che l&#39;elaborazione di un file di didascalia o di traccia audio non è stata completata. Elimina la didascalia o il file di traccia audio e caricalo di nuovo. |
+| La pagina di cui è stata annullata la pubblicazione   | Quando si annulla esplicitamente la pubblicazione di un video principale pubblicato, vengono annullati anche i file di didascalia o di traccia audio aggiunti al video. |
 
-![Colonna di stato evidenziata per i campi Sottotitoli e Tracce audio.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Stato del ciclo di vita di ciascun sottotitolo e file di traccia audio caricato.*
+![Colonna di stato evidenziata per i campi Sottotitoli e Tracce audio.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Stato del ciclo di vita di ogni didascalia e file di traccia audio caricati.*
 
 ### Impostare l&#39;audio predefinito per un video con più tracce audio
 
@@ -736,7 +736,7 @@ In **Imposta come predefinito** finestra di dialogo, seleziona **[!UICONTROL Sos
 
 ### Visualizzare in anteprima un video con più sottotitoli e tracce audio{#preview-video-audio-subtitle}
 
-Dopo aver caricato i file dei sottotitoli e delle tracce audio in un video ed elaborato, potete utilizzare il visualizzatore video Dynamic Medie per visualizzare in anteprima tutte le diverse tracce. In questo modo è possibile vedere l&#39;aspetto e l&#39;audio del video per i clienti e assicurarsi che si comporti come previsto.
+Dopo aver caricato i file di didascalia e di traccia audio in un video ed elaborato, potete utilizzare il visualizzatore video Dynamic Medie per visualizzare in anteprima tutte le diverse tracce. In questo modo è possibile vedere l&#39;aspetto e l&#39;audio del video per i clienti e assicurarsi che si comporti come previsto.
 
 Quando sei soddisfatto del video, puoi [pubblicarlo](publishing-dynamicmedia-assets.md) utilizzando uno dei metodi seguenti.
 
@@ -746,7 +746,7 @@ Consulta [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/dynamic-med
 
 >[!NOTE]
 >
->La scheda di anteprima Experience Manager predefinita non mostra più sottotitoli e tracce audio. Il motivo è che questi brani sono associati a Dynamic Medie e possono essere visualizzati solo utilizzando l&#39;anteprima di Dynamic Medie Viewer.
+>La scheda di anteprima Experience Manager predefinita non mostra più didascalie e tracce audio. Il motivo è che questi brani sono associati a Dynamic Medie e possono essere visualizzati solo utilizzando l&#39;anteprima di Dynamic Medie Viewer.
 
 **Per visualizzare in anteprima un video con più sottotitoli e tracce audio:**
 
@@ -760,21 +760,21 @@ Consulta [Aggiungere risorse Dynamic Medie alle pagine](/help/assets/dynamic-med
 
    ![Selezione del visualizzatore video dall’elenco a discesa Visualizzatori.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
 
-1. Nell&#39;angolo in basso a destra, a sinistra dell&#39;icona del volume, selezionare l&#39;icona a forma di fumetto, quindi selezionare l&#39;audio o il sottotitolo che si desidera ascoltare o vedere o entrambi. Se lo desideri, in Sottotitoli puoi selezionare **[!UICONTROL Disattivato]** per non visualizzare sottotitoli o didascalie.
+1. Nell&#39;angolo in basso a destra, a sinistra dell&#39;icona del volume, selezionare l&#39;icona a forma di fumetto, quindi selezionare l&#39;audio o la didascalia che si desidera ascoltare o vedere o entrambi. Se lo desideri, in Sottotitoli puoi selezionare **[!UICONTROL Disattivato]** per non visualizzare didascalie o didascalie.
 
-   ![L&#39;elenco a comparsa Audio e sottotitoli nel visualizzatore video.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulazione di un utente che seleziona l’audio e il sottotitolo per la riproduzione video.*
+   ![L&#39;elenco a comparsa Audio e didascalie nel visualizzatore video.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulazione di un utente che seleziona l’audio e la didascalia per la riproduzione video.*
 
 1. Per iniziare la riproduzione, seleziona il **[!UICONTROL Play]** pulsante.
 Osserva **[!UICONTROL URL]** e **[!UICONTROL Incorpora]** nell&#39;angolo inferiore sinistro. Utilizzare questi pulsanti per [collega l’URL del video alla tua applicazione web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o a [incorporare il video in una pagina web](/help/assets/dynamic-media/embed-code.md), rispettivamente.
 1. Nell’angolo superiore destro della pagina di anteprima, seleziona **[!UICONTROL Chiudi]**.
 
-### Eliminare file di sottotitoli o tracce audio da un video
+### Eliminare i file di didascalia o di traccia audio da un video
 
-È possibile eliminare file di sottotitoli o tracce audio da un video. L&#39;eliminazione dei sottotitoli pubblicati o dei file di traccia audio viene automaticamente riportata nell&#39;URL pubblicato del video.
+Potete eliminare file di didascalia o di traccia audio da un video. L’eliminazione dei file di didascalia o di traccia audio pubblicati si riflette automaticamente nell’URL pubblicato del video.
 
 Non è possibile eliminare la traccia audio originale estratta da un video principale.
 
-**Per eliminare file di sottotitoli o tracce audio da un video:**
+**Per eliminare i file di didascalia o di traccia audio da un video:**
 
 1. Passa alla risorsa video di cui desideri impostare la traccia audio predefinita.
 1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
@@ -782,19 +782,19 @@ Non è possibile eliminare la traccia audio originale estratta da un video princ
 1. Nella pagina Proprietà, seleziona la **[!UICONTROL Sottotitoli e tracce audio]** scheda.
 1. Effettuare una delle seguenti operazioni:
 
-   * Sottotitoli - Sotto il **Sottotitoli** , seleziona uno o più file di sottotitoli da eliminare dal video, quindi fai clic su **[!UICONTROL Elimina]**.
+   * Sottotitoli: sotto **Sottotitoli** , seleziona uno o più file di didascalia da eliminare dal video, quindi fai clic su **[!UICONTROL Elimina]**.
    * Tracce audio - Sotto il **Tracce audio** , seleziona uno o più file di traccia audio da eliminare dal video, quindi fai clic su **[!UICONTROL Elimina]**.
 
 1. Nella finestra di dialogo Elimina selezionare **[!UICONTROL OK]**.
 1. Pubblica il video.
 
-### Scaricare sottotitoli o file di tracce audio caricati in un video
+### Scarica i file di didascalia o di traccia audio caricati in un video
 
-È possibile scaricare uno o più file di sottotitoli o tracce audio caricati per l&#39;utilizzo con un video. È possibile scaricare tutti i file selezionati come file.zip o creare una cartella di download separata per ciascun file.
+Puoi scaricare uno o più file di didascalia o di traccia audio caricati per l&#39;utilizzo con un video. È possibile scaricare tutti i file selezionati come file.zip o creare una cartella di download separata per ciascun file.
 
 Non è possibile scaricare la traccia audio originale estratta da un file principale.
 
-**Per scaricare file di sottotitoli o tracce audio da un video:**
+**Per scaricare i file di didascalia o di traccia audio da un video:**
 
 1. Passa alla risorsa video di cui desideri impostare la traccia audio predefinita.
 1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
@@ -802,7 +802,7 @@ Non è possibile scaricare la traccia audio originale estratta da un file princi
 1. Nella pagina Proprietà, seleziona la **[!UICONTROL Sottotitoli e tracce audio]** scheda.
 1. Effettuare una delle seguenti operazioni:
 
-   * Sottotitoli - Sotto il **Sottotitoli** , seleziona uno o più file di sottotitoli da scaricare dal video, quindi fai clic su **[!UICONTROL Scarica]**.
+   * Sottotitoli: sotto **Sottotitoli** , seleziona uno o più file di didascalia da scaricare dal video, quindi fai clic su **[!UICONTROL Scarica]**.
    * Tracce audio - Sotto il **Tracce audio** , seleziona uno o più file di traccia audio da scaricare dal video, quindi fai clic su **[!UICONTROL Scarica]**.
 
 1. Nella finestra di dialogo Scarica impostare le opzioni seguenti:
@@ -810,7 +810,7 @@ Non è possibile scaricare la traccia audio originale estratta da un file princi
    | Opzione | Descrizione |
    |--- |--- |
    | Salva con nome | Utilizzare il nome file predefinito specificato nel campo di testo Salva con nome oppure specificare un nome personalizzato. |
-   | Crea una cartella separata per ogni risorsa | Creare una cartella per ogni file di sottotitoli o di traccia audio selezionato per il download. |
+   | Crea una cartella separata per ogni risorsa | Creare una cartella per ogni file di didascalia o di traccia audio selezionato per il download. |
    | E-mail | Utilizza il tuo programma e-mail predefinito per inviare il file .zip a un indirizzo e-mail specificato. |
    | Risorse | Specifica il numero di file da scaricare e la dimensione totale combinata di tutti i file selezionati. Deselezionando questa opzione, il valore **[!UICONTROL Scarica]** , impedendo il download di qualsiasi file. |
 1. Seleziona **[!UICONTROL Scarica]**.
@@ -821,11 +821,11 @@ Non è possibile scaricare la traccia audio originale estratta da un file princi
 
 
 
-## Aggiungere sottotitoli codificati o sottotitoli al video {#adding-captions-to-video}
+## Aggiungi sottotitoli codificati al video {#adding-captions-to-video}
 
 >[!IMPORTANT]
 >
->Adobe consiglia di: [abilitare la capacità di traccia multi-sottotitolo e multi-audio](#enable-dash) sul tuo account Dynamic Medie. In questo modo puoi sfruttare la più recente architettura back-end di Dynamic Medie e un flusso di lavoro semplificato per aggiungere didascalie, sottotitoli e tracce audio ai video.
+>Adobe consiglia di: [abilitare la capacità di traccia multi-didascalia e multi-audio](#enable-dash) sul tuo account Dynamic Medie. In questo modo puoi sfruttare la più recente architettura back-end di Dynamic Medie e un flusso di lavoro semplificato per aggiungere didascalie, didascalie e tracce audio ai video.
 
 Puoi estendere la portata dei tuoi video ai mercati globali aggiungendo sottotitoli ai singoli video o ai set di video adattivi. Aggiungendo i sottotitoli, si evita di duplicare l&#39;audio o di utilizzare madrelingua per registrare nuovamente l&#39;audio per ogni lingua. Il video viene riprodotto nella lingua in cui è stato registrato. I sottotitoli delle lingue straniere vengono visualizzati in modo che persone di lingue diverse possano ancora comprendere la porzione audio.
 
@@ -841,15 +841,15 @@ Dynamic Medie può convertire i file di didascalia in formato JSON (JavaScript O
 
 Consulta [Distribuzione di contenuti statici (non di immagine)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) per ulteriori informazioni sull’utilizzo della funzione JSON in un URL.
 
-**Per aggiungere sottotitoli o sottotitoli al video:**
+**Per aggiungere sottotitoli al video:**
 
-1. Utilizza un’applicazione o un servizio di terze parti per creare il file di sottotitoli/sottotitoli video.
+1. Utilizza un’applicazione o un servizio di terze parti per creare il file di sottotitoli video.
 
    Assicurati che il file creato segua lo standard WebVTT (Web Video Text Tracks). L&#39;estensione del nome file dei sottotitoli è .VTT. Ulteriori informazioni sullo standard per i sottotitoli WebVTT.
 
    Consulta [WebVTT: formato per tracce di testo video Web](https://w3c.github.io/webvtt/).
 
-   Esistono molti siti Web che offrono sia strumenti e servizi gratuiti che premium che è possibile utilizzare per creare file di sottotitoli/sottotitoli WebVTT al di fuori di Dynamic Medie. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
+   Esistono molti siti Web che offrono sia strumenti e servizi gratuiti che premium che è possibile utilizzare per creare file di sottotitoli WebVTT al di fuori di Dynamic Medie. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!-- [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 

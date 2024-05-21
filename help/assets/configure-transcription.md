@@ -9,10 +9,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 86%
+source-wordcount: '1668'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 86%
 La trascrizione è il processo di traduzione dell’audio da un file audio o video in testo (da un discorso al testo) utilizzando la tecnologia di riconoscimento vocale.
 [!DNL Adobe Experience Manager Assets] è configurato con [!DNL Azure Media Services] che genera automaticamente la trascrizione testuale della lingua parlata in un file audio o video supportato in formato WebVTT (.vtt). Quando una risorsa audio o video viene elaborata in [!DNL Experience Manager Assets], il servizio di trascrizione genera automaticamente la rappresentazione trascritta della risorsa audio o video e la memorizza nella stessa posizione all’interno dell’archivio dell risorse in cui risiede la risorsa originale. Il [!DNL Experience Manager Assets] il servizio di trascrizione di consente agli addetti al marketing di gestire in modo efficace i contenuti audio e video con in più la possibilità di individuare i contenuti testuali e di aumentare il ritorno sull’investimento di tali risorse, sostenendo l’accessibilità e la localizzazione.
 
-Le trascrizioni sono versioni testuali del contenuto parlato; un esempio è un filmato che visualizzi su qualsiasi piattaforma OTT e che spesso include didascalie o sottotitoli per facilitarne l’accessibilità o per consumarne il contenuto in altre lingue. Oppure qualsiasi file audio o video utilizzato per scopi di marketing, apprendimento o intrattenimento. Queste esperienze iniziano con una trascrizione che viene poi formattata o tradotta come appropriato. La trascrizione di audio o video è un processo che richiede molto tempo ed è soggetto a errori quando viene eseguito manualmente. Il processo manuale rende difficile anche la scalabilità, necessaria data la crescente necessità di contenuti audio-video. [!DNL Experience Manager Assets] utilizza la trascrizione basata sull’intelligenza artificiale di Azure che consente l’elaborazione su larga scala delle risorse audio e video e genera le trascrizioni di testo (file .vtt) insieme ai dettagli delle marche temporali. Oltre ad Assets, la funzione di trascrizione è supportata anche da Dynamic Media.
+Le trascrizioni sono versioni testuali del contenuto parlato; un esempio è un filmato che stai guardando su qualsiasi piattaforma OTT e che spesso include didascalie per facilitarne l’accessibilità o per consumarne il contenuto in altre lingue. Oppure qualsiasi file audio o video utilizzato per scopi di marketing, apprendimento o intrattenimento. Queste esperienze iniziano con una trascrizione che viene poi formattata o tradotta come appropriato. La trascrizione di audio o video è un processo che richiede molto tempo ed è soggetto a errori quando viene eseguito manualmente. Il processo manuale rende difficile anche la scalabilità, necessaria data la crescente necessità di contenuti audio-video. [!DNL Experience Manager Assets] utilizza la trascrizione basata sull’intelligenza artificiale di Azure che consente l’elaborazione su larga scala delle risorse audio e video e genera le trascrizioni di testo (file .vtt) insieme ai dettagli delle marche temporali. Oltre ad Assets, la funzione di trascrizione è supportata anche da Dynamic Media.
 
 La funzione di trascrizione è disponibile senza alcun costo in [!DNL Experience Manager Assets]. Tuttavia, per configurare il servizio di trascrizione in gli amministratori hanno bisogno delle credenziali di Azure dell’utente [!DNL Experience Manager Assets]. È inoltre possibile [ottenere le credenziali di prova](https://azure.microsoft.com/en-us/pricing/details/media-services/) direttamente da Microsoft® per scoprire la funzione di trascrizione audio o video in Assets.
 
