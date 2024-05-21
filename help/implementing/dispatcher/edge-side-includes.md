@@ -2,7 +2,7 @@
 title: Il lato del bordo include
 description: Adobe Managed CDN ora supporta Edge Side Includes (ESI), un linguaggio di markup per l’assembly di contenuti web dinamici a livello di edge.
 feature: Dispatcher
-source-git-commit: fb7c793a975fd725ef1cebcab545e057de78fa9d
+source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 2%
@@ -44,8 +44,8 @@ Consulta la [Specifiche ESI](https://www.w3.org/TR/esi-lang/) per i dettagli.
 
 * Sono supportati i seguenti tag ESI: include, comment, remove.
 * I tag ESI vengono elaborati in modo sequenziale anziché simultaneo alla rete CDN, pertanto molti tag ESI in una pagina con valori TTL bassi possono aggiungere latenza all’esperienza dell’utente finale.
-* La profondità massima di elaborazione ESI:include è 5.
-* Il totale massimo di frammenti ESI:include di elaborazione è 256.
+* La profondità massima di ESI: elaborazione inclusa è 5.
+* Il valore massimo totale ESI: include frammenti di elaborazione è 256.
 
 
 ## Configurazione Apache {#esi-apache}
