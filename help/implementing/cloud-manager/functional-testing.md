@@ -2,9 +2,9 @@
 title: Test funzionali
 description: Scopri i tre diversi tipi di test funzionali integrati nel processo di distribuzione di AEM as a Cloud Service per garantire la qualità e l’affidabilità del codice.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
+source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1373'
 ht-degree: 9%
 
 ---
@@ -92,6 +92,8 @@ I test sono inclusi in un’immagine Docker, progettata per essere il più volat
 >[!NOTE]
 >
 >I test personalizzati dell’interfaccia utente vengono eseguiti nelle pipeline di produzione e non di produzione (opt-in) utilizzate dalle modifiche dell’applicazione AEM, dalle implementazioni e dagli aggiornamenti push dei prodotti AEM e rappresentano pertanto un contributo chiave per garantire il corretto funzionamento dell’applicazione e aumentare la sicurezza della versione. I test dell’interfaccia utente del cliente vengono eseguiti anche in pipeline interne di convalida pre-release per ogni cliente, per fornire un feedback tempestivo.
+>
+>I contenitori non Selenium devono eseguire test utilizzando un proxy HTTP basato sulle variabili di ambiente in [Sezione Test dell’interfaccia utente.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 Per mantenere efficienti le esecuzioni della pipeline, consigliamo di concentrarci sulle funzioni chiave e sui principali flussi di interazione degli utenti. Si consiglia di eseguire suite di test dell’interfaccia utente complete che non rientrano in questo gate di qualità come parte delle pipeline di convalida generali del cliente durante il flusso di sviluppo del cliente.
 
