@@ -2,9 +2,9 @@
 title: Il lato del bordo include
 description: Adobe Managed CDN ora supporta Edge Side Includes (ESI), un linguaggio di markup per l’assembly di contenuti web dinamici a livello di edge.
 feature: Dispatcher
-source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
+source-git-commit: 8f9173e45dd802ecced21531dfa161890e4a8af1
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '541'
 ht-degree: 2%
 
 ---
@@ -81,9 +81,8 @@ Le proprietà configurate hanno il seguente comportamento:
 |-----------|--------------------------|
 | **no-gzip** | Se è impostato su 1, la pagina HTML viene trasmessa da Apache alla CDN non compressa. Ciò è necessario per ESI in quanto il contenuto deve essere inviato a CDN non compresso in modo che la CDN possa visualizzare e valutare i tag ESI.<br/><br/>Sia la pagina padre che i frammenti inclusi devono impostare no-gzip su 1.<br/><br/>Questa impostazione sostituisce qualsiasi impostazione di compressione Apache avrebbe potuto utilizzare altrimenti, in base al `Accept-Encoding` valori. |
 | **x-aem-esi** | Se è impostata su &quot;on&quot;, la rete CDN valuterà i tag ESI della pagina HTML principale.  Per impostazione predefinita, l’intestazione non è impostata. |
-| **x-aem-compress** | Se è impostata su &quot;on&quot;, la rete CDN comprimerà il contenuto dalla rete CDN al browser. Poiché la trasmissione della pagina padre da Apache a CDN deve essere decompressa per il funzionamento di ESI (no-gzip impostato su 1), la latenza può essere ridotta.<br/><br/>Se questa intestazione non è impostata, quando la rete CDN recupera il contenuto dall’origine non compresso, distribuisce anche il contenuto al client non compresso. Pertanto, è necessario impostare questa intestazione se no-gzip è impostato su 1 (obbligatorio per ESI) e si desidera distribuire al browser il contenuto compresso dalla rete CDN. |
+| **x-aem-compress** | Se è impostata su &quot;on&quot;, la rete CDN comprimerà il contenuto dalla rete CDN al browser. Poiché la trasmissione della pagina padre da Apache a CDN deve essere non compressa affinché ESI funzioni (`no-gzip` impostato su 1), questo può ridurre la latenza.<br/><br/>Se questa intestazione non è impostata, quando la rete CDN recupera il contenuto dall’origine non compresso, distribuisce anche il contenuto al client non compresso. Pertanto, è necessario impostare questa intestazione se `no-gzip` è impostato su 1 (richiesto per ESI) e si desidera distribuire al browser il contenuto compresso dalla rete CDN. |
 
 ## Sling Dynamic Include {#esi-sdi}
 
 Anche se non obbligatorio, [Sling Dynamic Include](https://sling.apache.org/documentation/bundles/dynamic-includes.html) (SDI) può essere utilizzato per generare snippet ESI interpretati sulla rete CDN.
-
