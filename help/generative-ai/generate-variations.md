@@ -2,9 +2,9 @@
 title: Generare varianti
 description: Scopri come generare varianti, accessibile da AEM as a Cloud Service e dal Sidekick di Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 92b11666a0e5a52f633416090b2bb51bf059c70b
+source-git-commit: 207778a59e18407831292be9bd00ee7973ade78c
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3262'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Se stai cercando un modo per ottimizzare i canali digitali e accelerare la creaz
 
 * [all’interno di Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
 * [il Sidekick dei Edge Delivery Services AEM](#access-aem-sidekick)
-* [nell’Editor frammenti di contenuto](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html#generate-variations-ai)
+* [nell’Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)
 
 >[!NOTE]
 >
