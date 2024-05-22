@@ -2,10 +2,10 @@
 title: Note sulla versione per Genera varianti
 description: Note sulla versione per Genera varianti, accessibili da AEM as a Cloud Service e dal Sidekick di Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
-source-git-commit: 28df3ace2933d0fc00742ced9496645fc3dc15da
+source-git-commit: 92b11666a0e5a52f633416090b2bb51bf059c70b
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 8%
+source-wordcount: '218'
+ht-degree: 9%
 
 ---
 
@@ -27,8 +27,6 @@ La versione corrente è la 2.2.0.
 * È stata introdotta la possibilità di scaricare i risultati come file CSV dai preferiti
 * È stato migliorato l&#39;elenco Recenti con raggruppamenti temporali
 * È stato aggiunto il supporto per la localizzazione per più lingue
-
-La versione corrente è la 2.0.0.
 
 ### 2,0,0 {#release-notes-2-0-0}
 
