@@ -3,10 +3,10 @@ title: Modificare i video
 description: Modifica video tramite [!DNL Adobe Express] opzioni avanzate e salva i video aggiornati come versioni.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: 4f3c15d3a103d15c51ddfe4b0c5dbb5e7e18e8b7
+source-git-commit: 79e72f967673010b936bd0464a2fcf0a1c068e69
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -18,7 +18,7 @@ Per modificare un video, accedi ai relativi dettagli e fai clic su [!UICONTROL M
 
 ## Prerequisiti {#prerequisites}
 
-Diritti di accesso [!DNL Adobe Express] e almeno un ambiente in AEM Assets. L’ambiente può essere uno qualsiasi degli archivi in [!DNL Assets as a Cloud Service] o [!DNL Assets view].
+Diritti di accesso [!DNL Adobe Express] e almeno un ambiente in AEM Assets. L’ambiente può essere uno qualsiasi degli archivi all’interno di [!DNL Assets as a Cloud Service] o [!DNL Assets view].
 
 ## Modifica video con Adobi Express {#edit-video-using-express}
 
@@ -33,7 +33,7 @@ La trasformazione di un video in una dimensione e un orientamento perfetti è fa
 3. Trascina le maniglie agli angoli del video per creare il ritaglio desiderato; oppure scegli una delle dimensioni dello schermo esistenti, a seconda delle esigenze.
 4. È possibile scegliere di disattivare o attivare l&#39;audio del video.
 5. Fai clic su **[!UICONTROL Applica]**.
-   ![ritaglia video con Adobe Express](assets/adobe-express-crop-video.png)
+   ![ritagliare video con Adobe Express](assets/adobe-express-crop-video.png)
 
    Il video ritagliato è disponibile per il download. Puoi salvare la risorsa modificata come nuova versione della stessa risorsa oppure salvarla come nuova risorsa. ![Salva video con Adobe Express](assets/adobe-express-save-video.png)
 
@@ -83,7 +83,7 @@ Il video è disponibile in formato GIF per il download. Puoi salvare la risorsa 
 
 * Per la modifica sono supportati solo i video in formato MP4.
 
-* La dimensione massima supportata per il file di origine è 200 MB.
+* La dimensione massima supportata per il file di origine è 1 GB.
 
 * I video supportati sono più grandi di 46 pixel e più piccoli di 3840 pixel su qualsiasi lato.
 
@@ -97,7 +97,7 @@ Il video è disponibile in formato GIF per il download. Puoi salvare la risorsa 
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/i?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >
