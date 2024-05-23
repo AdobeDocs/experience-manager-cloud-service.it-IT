@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+source-git-commit: ea2e82f02e9b5ee1ef64d186516c786d8c264c52
 workflow-type: tm+mt
-source-wordcount: '9340'
+source-wordcount: '9357'
 ht-degree: 2%
 
 ---
@@ -537,13 +537,13 @@ Alcuni vantaggi chiave dell&#39;attivazione di DASH sul tuo account includono:
 
 L’abilitazione del supporto DASH sul tuo account viene eseguita tramite un Adobe di caso di assistenza clienti che hai creato e inviato.
 
-**Informazioni sull’abilitazione del supporto di tracce multi-didascalia e multi-audio sul tuo account**
+**Informazioni sull&#39;attivazione del supporto di didascalie multiple e tracce audio sul tuo account**
 
-Mentre crei un caso di supporto Adobe con DASH abilitato sul tuo account, puoi anche beneficiare dell’abilitazione automatica del supporto per tracce multi-didascalia e multi-audio. Dopo l’abilitazione, tutti i video successivi caricati vengono elaborati con una nuova architettura back-end che include il supporto per l’aggiunta di tracce multi-didascalia e multi-audio ai video.
+Mentre crei un caso di supporto Adobe con DASH abilitato sul tuo account, puoi anche beneficiare dell’attivazione automatica del supporto per più didascalie e tracce audio. Dopo l’abilitazione, tutti i video successivi caricati vengono elaborati con una nuova architettura back-end che include il supporto per l’aggiunta di più didascalie e tracce audio ai video.
 
 >[!IMPORTANT]
 >
->Tutti i video caricati *prima di* consentire il supporto di tracce multi-didascalia e multi-audio sul proprio account Dynamic Medie, [deve essere rielaborato](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di traccia audio e sottotitoli multipli. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
+>Tutti i video caricati *prima di* abilitazione del supporto di didascalie multiple e tracce audio sul tuo account Dynamic Medie, [deve essere rielaborato](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di didascalia multipla e di traccia audio. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
 
 **Per abilitare il supporto per DASH, sottotitoli multipli e tracce audio multiple sul tuo account Dynamic Medie:**
 
@@ -562,16 +562,16 @@ Mentre crei un caso di supporto Adobe con DASH abilitato sul tuo account, puoi a
 1. A questo punto è possibile effettuare una delle seguenti operazioni:
 
    * Crea [predefinito visualizzatore video](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) come al solito.
-   * [Aggiungere sottotitoli multipli e tracce audio multiple](#add-msma) al tuo video.
+   * [Aggiungere sottotitoli multipli e tracce audio](#add-msma) al tuo video.
 
 
-## Informazioni sul supporto di tracce multi-didascalia e multi-audio per video in Dynamic Medie{#about-msma}
+## Informazioni sul supporto di più didascalie e tracce audio per video in Dynamic Medie{#about-msma}
 
-Con la funzionalità multi-caption e multi-audio track in Dynamic Medie, potete aggiungere facilmente più didascalie e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono anche gestire i sottotitoli e le tracce audio da una singola scheda nell’interfaccia utente.
+Con la funzionalità di didascalia multipla e traccia audio in Dynamic Medie, è possibile aggiungere facilmente più didascalie e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono gestire anche le didascalie e le tracce audio da una singola scheda nell’interfaccia utente.
 
 ![Scheda Sottotitoli e tracce audio in Dynamic Medie insieme a una tabella che mostra i file di sottotitoli .VTT caricati e i file di tracce audio .MP3 caricati per un video.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
-Alcuni dei casi d’uso da considerare per aggiungere sottotitoli multipli e tracce audio multiple al video principale sono i seguenti:
+Alcuni dei casi d’uso da considerare per aggiungere più didascalie e tracce audio al video principale sono i seguenti:
 
 | Tipo | Caso d’uso |
 |--- |--- |
@@ -581,13 +581,13 @@ Alcuni dei casi d’uso da considerare per aggiungere sottotitoli multipli e tra
 |  | Brani di commento |
 |  | Audio descrittivo |
 
-Tutti [formati video supportati in Dynamic Medie](/help/assets/file-format-support.md) e tutti i visualizzatori video di Dynamic Medie, ad eccezione di Dynamic Medie *Video_360* visualizzatore: sono supportate per l&#39;utilizzo con sottotitoli multipli e tracce audio multiple.
+Tutti [formati video supportati in Dynamic Medie](/help/assets/file-format-support.md) e tutti i visualizzatori video di Dynamic Medie, ad eccezione di Dynamic Medie *Video_360* visualizzatore: sono supportate per l&#39;utilizzo con più didascalie e tracce audio.
 
 La funzionalità di tracciamento multi-didascalia e multi-audio è disponibile per il tuo account Dynamic Medie tramite un interruttore di funzioni che deve essere abilitato (attivato) da Adobe Customer Support.
 
-### Aggiungere sottotitoli multipli e tracce audio multiple al video {#add-msma}
+### Aggiungere più didascalie e tracce audio al video {#add-msma}
 
-Prima di aggiungere tracce multi-didascalia e multi-audio al video, accertatevi di avere già le seguenti tracce sul posto:
+Prima di aggiungere più didascalie e tracce audio al video, assicurati di avere già le seguenti informazioni:
 
 * Dynamic Medie è configurato in un ambiente AEM.
 * A [Il profilo video Dynamic Medie viene applicato alla cartella in cui vengono acquisiti i video](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
@@ -597,12 +597,12 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
 
 >[!IMPORTANT]
 >
->Tutti i video caricati *prima di* consentire il supporto di tracce multi-didascalia e multi-audio sul proprio account Dynamic Medie, [deve essere rielaborato](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di traccia audio e sottotitoli multipli. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
+>Tutti i video caricati *prima di* abilitazione del supporto di didascalie multiple e tracce audio sul tuo account Dynamic Medie, [deve essere rielaborato](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di didascalia multipla e di traccia audio. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
 
-**Per aggiungere sottotitoli multipli e tracce multi-audio al video:**
+**Per aggiungere più didascalie e tracce audio al video:**
 
 1. [Carica il video principale in una cartella](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) a cui è già stato assegnato un profilo video.
-1. Passa alla risorsa video caricata a cui desideri aggiungere didascalie multiple e tracce audio multiple.
+1. Passa alla risorsa video caricata a cui desideri aggiungere più didascalie e tracce audio.
 1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
 1. Sulla barra degli strumenti, seleziona l’icona Proprietà (un cerchio con una &quot;i&quot; all’interno).
    ![La risorsa video selezionata con il segno di spunta sopra l’immagine della miniatura video e Visualizza proprietà sono evidenziate sulla barra degli strumenti.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Risorsa video selezionata nella vista a schede.*
@@ -825,7 +825,7 @@ Non è possibile scaricare la traccia audio originale estratta da un file princi
 
 >[!IMPORTANT]
 >
->Adobe consiglia di: [abilitare la capacità di traccia multi-didascalia e multi-audio](#enable-dash) sul tuo account Dynamic Medie. In questo modo puoi sfruttare la più recente architettura back-end di Dynamic Medie e un flusso di lavoro semplificato per aggiungere didascalie, didascalie e tracce audio ai video.
+>Adobe consiglia di: [abilitare capacità di didascalia multipla e traccia audio](#enable-dash) sul tuo account Dynamic Medie. In questo modo puoi sfruttare la più recente architettura back-end di Dynamic Medie e un flusso di lavoro semplificato per aggiungere didascalie, didascalie e tracce audio ai video.
 
 Puoi estendere la portata dei tuoi video ai mercati globali aggiungendo sottotitoli ai singoli video o ai set di video adattivi. Aggiungendo i sottotitoli, si evita di duplicare l&#39;audio o di utilizzare madrelingua per registrare nuovamente l&#39;audio per ogni lingua. Il video viene riprodotto nella lingua in cui è stato registrato. I sottotitoli delle lingue straniere vengono visualizzati in modo che persone di lingue diverse possano ancora comprendere la porzione audio.
 
