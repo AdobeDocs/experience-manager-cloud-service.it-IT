@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: ea2e82f02e9b5ee1ef64d186516c786d8c264c52
+source-git-commit: 7a80f68f71475b2bdb6b5559354d7248208a3819
 workflow-type: tm+mt
 source-wordcount: '9357'
 ht-degree: 2%
@@ -642,7 +642,7 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
      | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Non è possibile usare lo stesso nome di file per file di traccia audio o di didascalia aggiuntivi. |
      | Lingua | Selezionate la lingua della traccia audio. |
      | Tipo | Selezionate il tipo di traccia audio in uso.<br>**Originale** - La traccia audio originariamente allegata al video e rappresentata come `[Original]` nell’etichetta con `English` lingua selezionata per impostazione predefinita. Mentre **[!UICONTROL Etichetta]** e **[!UICONTROL Lingua]** può essere modificato in **[!UICONTROL Modifica traccia audio]** , vengono utilizzati i valori originali se il video principale viene rielaborato.<br>**Standard** - Traccia audio aggiuntiva per una lingua diversa dall&#39;originale.<br>**Descrizione audio** - Traccia audio che include anche una narrazione descrittiva delle azioni non verbali e dei gesti nel video, rendendo il contenuto più accessibile agli utenti ipovedenti. |
-     | Etichetta | Testo visualizzato come nome della traccia audio nel **[!UICONTROL Seleziona audio o didascalia]** elenco a comparsa nel lettore multimediale. L’etichetta è ciò che il cliente vede e che corrisponde a una traccia audio. Ad esempio, `English [Original]`. L&#39;etichetta dell&#39;audio collegata a un video è impostata su `[Original|` per impostazione predefinita. |
+     | Etichetta | Testo visualizzato come nome della traccia audio nel **[!UICONTROL Seleziona audio o didascalia]** elenco a comparsa nel lettore multimediale. L’etichetta è ciò che il cliente vede e che corrisponde a una traccia audio. Ad esempio, `English [Original]`. L&#39;etichetta dell&#39;audio collegata a un video è impostata su `[Original]` per impostazione predefinita. |
 
      Se necessario, potete modificare i metadati della traccia audio in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
 
@@ -815,8 +815,6 @@ Non è possibile scaricare la traccia audio originale estratta da un file princi
    | Risorse | Specifica il numero di file da scaricare e la dimensione totale combinata di tutti i file selezionati. Deselezionando questa opzione, il valore **[!UICONTROL Scarica]** , impedendo il download di qualsiasi file. |
 1. Seleziona **[!UICONTROL Scarica]**.
 1. Pubblica il video. Consulta [Pubblicare le risorse](publishing-dynamicmedia-assets.md).
-
-
 
 
 
