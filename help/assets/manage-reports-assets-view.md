@@ -1,16 +1,17 @@
 ---
 title: Gestione dei rapporti in vista Risorse
 description: Accedi ai dati nella sezione dei rapporti di vista Risorse per valutare l’utilizzo di prodotti e funzionalità e ottenere informazioni approfondite sulle metriche di successo chiave.
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
+source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 92%
+source-wordcount: '884'
+ht-degree: 80%
 
 ---
 
 # Gestire i rapporti {#manage-reports}
 
-La funzionalità di reporting sulle risorse offre agli amministratori visibilità sulle attività dell’ambiente delle viste di Adobe Experience Manager Assets. Questi dati forniscono informazioni utili su come gli utenti interagiscono con i contenuti e il prodotto. Tutti gli utenti possono accedere alla dashboard Insight e quelli assegnati al profilo di prodotto Amministratori possono creare rapporti definiti dall’utente.
+Il reporting delle risorse offre agli amministratori visibilità sulle attività dell’ambiente Adobe Experience Manager Assets View. Questi dati forniscono informazioni utili su come gli utenti interagiscono con i contenuti e il prodotto. Tutti gli utenti possono accedere alla dashboard Insight e quelli assegnati al profilo di prodotto Amministratori possono creare rapporti definiti dall’utente.
 
 ## Accedere ai rapporti {#access-reports}
 
@@ -38,26 +39,30 @@ Vista Risorse consente di visualizzare in tempo reale i dati del tuo ambiente vi
 
 Fai clic su **[!UICONTROL Insight]** nel riquadro di navigazione a sinistra per visualizzare i seguenti grafici generati automaticamente:
 
-![Insight](assets/insights.png)
-
 * **Download**: numero di risorse scaricate dall’ambiente di visualizzazione Risorse negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
+  ![approfondimenti-download](/help/assets/assets/insights-downloads2341.svg)
 
 * **Caricamenti**: numero di risorse caricate nell’ambiente di visualizzazione Risorse negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
-
-<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+  ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+  <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
 * **Utilizzo archiviazione**: utilizzo dell’archiviazione, in byte, per l’ambiente di visualizzazione delle risorse rappresentato da un grafico a barre.
-
-<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+  ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+  <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Ricerche principali**: visualizza i termini più cercati e il numero di volte in cui tali termini sono stati cercati nell’ambiente vista Risorse negli ultimi 30 giorni o 12 mesi rappresentato in formato tabulare.
-
+  ![insights-uploads](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
+
+* **Numero risorse per dimensione:** Segmenta il conteggio totale delle risorse nell’ambiente di visualizzazione delle risorse in intervalli di dimensioni diversi, evidenziando il conteggio e la percentuale delle risorse in ciascun intervallo di dimensioni, rappresentate utilizzando un grafico ad anello.
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
+* **Conteggio risorse per tipo di risorsa:** Segmenta il conteggio totale delle risorse nell’ambiente di visualizzazione delle risorse, evidenziando il conteggio e la percentuale delle risorse in base ai rispettivi tipi di file, rappresentati da un grafico ad anello.
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
 
 ## Creare un rapporto sui download {#create-download-report}
 
@@ -77,7 +82,7 @@ Per creare un rapporto sui download:
    >
    > Vista Risorse converte tutti i fusi orari locali nel Tempo coordinato universale (UTC).
 
-1. Nella scheda [!UICONTROL Colonne] seleziona i nomi delle colonne da visualizzare nel rapporto.
+1. In [!UICONTROL Colonne] , seleziona i nomi delle colonne da visualizzare nel rapporto.
 
 1. Fai clic su **[!UICONTROL Crea]**.
 
