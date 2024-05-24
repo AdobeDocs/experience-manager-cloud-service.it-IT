@@ -2,10 +2,10 @@
 title: Configurazione di networking avanzato per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come una VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
+source-git-commit: 0cd4a720874c9d4138665f0bfdecbd29468f01e5
 workflow-type: tm+mt
-source-wordcount: '5093'
-ht-degree: 99%
+source-wordcount: '5388'
+ht-degree: 94%
 
 ---
 
@@ -396,7 +396,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Considerazioni sul debug {#debugging-considerations}
 
-Per verificare che il traffico sia effettivamente in uscita all’indirizzo IP dedicato previsto, controlla i registri nel servizio di destinazione, se disponibili. In caso contrario, potrebbe essere utile richiamare un servizio di debug come [https://ifconfig.me/ip](https://ifconfig.me/ip), che restituisce l’indirizzo IP chiamante.
+Per verificare che il traffico sia effettivamente in uscita all’indirizzo IP dedicato previsto, controlla i registri nel servizio di destinazione, se disponibili. Altrimenti può essere utile richiamare un servizio di debug come [http://ifconfig.me/ip](https://ifconfig.me/ip), che restituirà l’indirizzo IP chiamante.
 
 ## Virtual Private Network (VPN) {#vpn}
 
@@ -792,3 +792,17 @@ La procedura è in gran parte simile alle istruzioni precedenti. Tuttavia, se l�
 #### VPN {#vpn-regions}
 
 La procedura è quasi identica alle istruzioni degli indirizzi IP in uscita dedicati. L’unica differenza consiste nel fatto che, oltre a configurare la proprietà dell’area geografica in modo diverso rispetto all’area primaria, può essere facoltativamente configurato il campo `connections.gateway`. La configurazione può indirizzare a un endpoint VPN diverso gestito dalla tua organizzazione, geograficamente più vicino alla nuova area.
+
+## Risoluzione dei problemi
+
+I seguenti punti sono forniti come linee guida informative e includono best practice per la risoluzione dei problemi. Queste raccomandazioni hanno lo scopo di aiutare a diagnosticare e risolvere in modo efficace i problemi.
+
+### Pool di connessioni {#connection-pooling-advanced-networking}
+
+Il connection pooling è una tecnica personalizzata per creare e sostenere un archivio di connessioni, pronte per essere utilizzate immediatamente da qualsiasi thread che possa richiederle. Numerose tecniche di connection pooling possono essere trovate su varie piattaforme e risorse online, ciascuna con i suoi meriti e considerazioni univoci. Incoraggiamo i nostri clienti a studiare queste metodologie per identificare quella più compatibile con l&#39;architettura del loro sistema.
+
+L’implementazione di un’adeguata strategia di connection pooling è una misura proattiva per correggere una supervisione comune nella configurazione del sistema, che spesso porta a prestazioni non ottimali. Stabilendo correttamente un connection pool, Adobe Experience Manager (AEM) può migliorare l&#39;efficienza delle chiamate esterne. Questo non solo riduce il consumo di risorse, ma riduce anche il rischio di interruzioni del servizio e diminuisce la probabilità di incontrare richieste non riuscite durante la comunicazione con i server a monte.
+
+Alla luce di queste informazioni, consigliamo di riesaminare la configurazione AEM attuale e di considerare l&#39;incorporazione intenzionale del connection pooling insieme alle impostazioni di rete avanzate. Implementando queste misure, la soluzione è progettata per evitare che i proxy vengano sovraccaricati, riducendo in tal modo la probabilità che le richieste non riescano a raggiungere gli endpoint esterni.
+
+Alla luce di queste informazioni, consigliamo di riesaminare la configurazione AEM corrente e di considerare l&#39;incorporazione intenzionale del connection pooling insieme alle impostazioni di rete avanzate. Gestendo il numero di connessioni parallele e riducendo al minimo il verificarsi di possibili connessioni non aggiornate, queste misure riducono il rischio che i server proxy raggiungano i limiti di connessione. Di conseguenza, questa implementazione strategica è progettata per ridurre la probabilità che le richieste non raggiungano gli endpoint esterni.
