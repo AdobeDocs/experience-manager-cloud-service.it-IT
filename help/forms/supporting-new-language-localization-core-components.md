@@ -4,10 +4,10 @@ description: Scopri come aggiungere nuove lingue per un modulo adattivo.
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 2658d844036d8ac5759d819f9d19c4528cc4df61
+source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 1%
+source-wordcount: '2028'
+ht-degree: 2%
 
 ---
 
@@ -270,7 +270,7 @@ Ora, incorporiamo il `clientlib-it-custom-locale` libreria nel vostro AEM as a C
 
 
 
-### 5. Aggiungere il supporto delle impostazioni internazionali al dizionario
+### Aggiunta del supporto delle impostazioni locali al dizionario
 
 Questo passaggio si applica solo alle lingue diverse da quelle comunemente supportate: inglese (en), tedesco (de), spagnolo (es), francese (fr), italiano (it), portoghese brasiliano (pt-br), cinese (semplificato - zh_cn), cinese (tradizionale - zh_tw), giapponese (ja) e coreano (ko_kr).
 
@@ -350,7 +350,7 @@ Ora tutti potete utilizzare le nuove impostazioni internazionali con il vostro F
 
       Attiva una distribuzione del codice tramite [pipeline full stack esistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). In questo modo viene automaticamente creato e distribuito il codice aggiornato con il nuovo supporto delle impostazioni internazionali.
 
-      Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)..
+      Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 
 ## Anteprima di un modulo adattivo con le nuove impostazioni internazionali aggiunte
@@ -358,8 +358,6 @@ Ora tutti potete utilizzare le nuove impostazioni internazionali con il vostro F
 Questi passaggi ti guidano attraverso l’anteprima di un modulo adattivo con le nuove impostazioni locali aggiunte:
 
 1. Accedi all’istanza as a Cloud Service di AEM Forms.
-
-1. Individuare la sezione &quot;Forms&quot; e passare a &quot;Forms and Documents&quot;.
 1. Vai a **Forms** >  **Forms e documenti**.
 1. Seleziona un modulo adattivo e fai clic su **Aggiungi dizionario** e **Aggiungi dizionario a progetto di traduzione** viene visualizzata la procedura guidata.
 1. Specifica la **Titolo progetto** e seleziona la **Lingue di destinazione** dal menu a discesa nella **Aggiungi dizionario a progetto di traduzione** procedura guidata.
@@ -367,20 +365,6 @@ Questi passaggi ti guidano attraverso l’anteprima di un modulo adattivo con le
 1. Vai a **Forms** >  **Forms e documenti**.
 1. Seleziona il modulo adattivo e scegli il **Anteprima come HTML** opzione.
 1. Aggiungi `&afAcceptLang=<locale-name>` all’URL di anteprima e premi il tasto Invio. Sostituisci `<locale-name>` con il codice locale effettivo. Il modulo adattivo viene visualizzato nella lingua specificata.
-
-
-## Anteprima di un modulo adattivo con le nuove impostazioni internazionali aggiunte {#use-added-locale-in-af}
-
-Per visualizzare in anteprima un adattivo con le nuove impostazioni locali aggiunte, effettua le seguenti operazioni:
-
-1. Accedi all’istanza as a Cloud Service di AEM Forms.
-1. Vai a **Forms** >  **Forms e documenti**.
-1. Seleziona un modulo adattivo e fai clic su **Aggiungi dizionario** e **Aggiungi dizionario a progetto di traduzione** viene visualizzata la procedura guidata.
-1. Specifica la **Titolo progetto** e seleziona la **Lingue di destinazione** dal menu a discesa nella **Aggiungi dizionario a progetto di traduzione** procedura guidata.
-1. Clic **Fine** ed esegui il progetto di traduzione creato.
-1. Seleziona un modulo adattivo e fai clic su **Anteprima come HTML**.
-1. Aggiungi `&afAcceptLang=<locale-name>` nell’URL di un modulo adattivo.
-1. Aggiorna la pagina e viene eseguito il rendering del modulo adattivo in una lingua specificata.
 
 ## Procedure consigliate per il supporto della nuova localizzazione {#best-practices}
 
@@ -393,12 +377,11 @@ Per visualizzare in anteprima un adattivo con le nuove impostazioni locali aggiu
 
    * **Traduzione umana**: per i flussi di lavoro di traduzione umana, esporta il dizionario utilizzando l’interfaccia utente in `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Aggiorna il dizionario per i nuovi campi e carica la versione rivista.
 
-## Vedi altro
-
-* [Genera documento di record per Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
-* [Aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
 
 ## Consulta anche {#see-also}
 
 {{see-also}}
+
+* [Genera documento di record per Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+* [Aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
