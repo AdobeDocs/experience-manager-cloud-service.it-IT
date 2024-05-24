@@ -2,10 +2,10 @@
 title: Gestione dei rapporti in vista Risorse
 description: Accedi ai dati nella sezione dei rapporti di vista Risorse per valutare l’utilizzo di prodotti e funzionalità e ottenere informazioni approfondite sulle metriche di successo chiave.
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
+source-git-commit: f4944cdb9f4ec51af6169c5cbf1890f469d91781
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 80%
+source-wordcount: '817'
+ht-degree: 89%
 
 ---
 
@@ -59,11 +59,6 @@ Fai clic su **[!UICONTROL Insight]** nel riquadro di navigazione a sinistra per 
    ![Insights](assets/insights2.png)
    -->
 
-* **Numero risorse per dimensione:** Segmenta il conteggio totale delle risorse nell’ambiente di visualizzazione delle risorse in intervalli di dimensioni diversi, evidenziando il conteggio e la percentuale delle risorse in ciascun intervallo di dimensioni, rappresentate utilizzando un grafico ad anello.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **Conteggio risorse per tipo di risorsa:** Segmenta il conteggio totale delle risorse nell’ambiente di visualizzazione delle risorse, evidenziando il conteggio e la percentuale delle risorse in base ai rispettivi tipi di file, rappresentati da un grafico ad anello.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
-
 ## Creare un rapporto sui download {#create-download-report}
 
 Per creare un rapporto sui download:
@@ -82,7 +77,7 @@ Per creare un rapporto sui download:
    >
    > Vista Risorse converte tutti i fusi orari locali nel Tempo coordinato universale (UTC).
 
-1. In [!UICONTROL Colonne] , seleziona i nomi delle colonne da visualizzare nel rapporto.
+1. Nella scheda [!UICONTROL Colonne] seleziona i nomi delle colonne da visualizzare nel rapporto.
 
 1. Fai clic su **[!UICONTROL Crea]**.
 
