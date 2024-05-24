@@ -3,10 +3,10 @@ title: API rapporti di transazioni fatturabili
 description: Elenco di tutte le API contabilizzate come transazioni
 feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
-source-git-commit: 543e9b78b4bdc11c49f79c6baec79615c5f7f91b
+source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 8%
+source-wordcount: '1438'
+ht-degree: 19%
 
 ---
 
@@ -34,6 +34,46 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
 
 * **Documenti sottoposti a rendering:** La generazione di un documento mediante la combinazione di un modello e di dati, la firma o la certificazione digitale di un documento, l&#39;utilizzo di API di servizi di documentazione fatturabili per i servizi di documentazione o la conversione di un documento da un formato a un altro sono considerati documenti sottoposti a rendering.
 
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_submission_graph_en"
+>title="Tracciamento degli invii dei moduli"
+>abstract="Questo grafico rappresenta il numero di invii di moduli adattivi durante specifici periodi di tempo. L’aumento delle richieste potrebbe indicare che il modulo sta diventando più popolare o che è necessario raccogliere più dati dagli utenti. **Nota:** Il grafico fornisce dati specifici per l’istanza corrente, consentendoti di analizzare rapidamente le tendenze e prendere decisioni informate. Per i dati degli invii delle altre istanze, accedi semplicemente alla dashboard della rispettiva istanza."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_conversions_graph_en"
+>title="Tracciamento rappresentazione documento"
+>abstract="Questo grafico rappresenta il numero di copie trasformate di documenti in periodi di tempo specifici. **Nota:** Il grafico fornisce dati specifici per l’istanza corrente, consentendoti di analizzare rapidamente le tendenze e prendere decisioni informate. Per i dati degli invii delle altre istanze, accedi semplicemente alla dashboard della rispettiva istanza."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_newForms_graph_en"
+>title="Nuovo tracciamento dei moduli"
+>abstract="Il grafico fornisce informazioni sul numero di nuovi moduli creati in periodi di tempo specifici. **Nota:** Il grafico fornisce dati specifici per l’istanza AEM Forms Author corrente. Per visualizzare i dati delle altre istanze, accedi alla dashboard della rispettiva istanza."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
+>title="Tracciamento dei moduli pubblicati"
+>abstract="Il grafico fornisce informazioni sul numero di moduli pubblicati correttamente durante specifici periodi di tempo. **Nota:** Il grafico fornisce dati specifici per l’istanza AEM Forms Publish corrente. Per visualizzare i dati della conversione delle altre istanze, accedi alla dashboard della rispettiva istanza."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
+>title="Durata media per la generazione dei moduli"
+>abstract="Il grafico mostra il tempo medio impiegato per creare un modulo. Ogni barra del grafico rappresenta un modulo specifico e l’altezza della barra indica la durata media necessaria per la creazione del modulo durante un determinato intervallo di tempo."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
+>title="Durata media per la creazione dei moduli"
+>abstract="Nel grafico viene visualizzato il tempo medio necessario per creare e pubblicare un modulo, misurato dal giorno iniziale in cui il modulo è stato aperto per la modifica. **Nota:** Il grafico fornisce dati specifici per l’istanza AEM Forms Author corrente. Per visualizzare i dati delle altre istanze, accedi alla dashboard della rispettiva istanza."
+
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formFragments_graph_en"
+>title="Tracciamento frammenti Forms"
+>abstract="Questo grafico consente di visualizzare il numero di frammenti di modulo utilizzati nei moduli. **Nota:** Il grafico fornisce dati specifici per l’istanza AEM Forms Publish corrente. Per visualizzare i dati della conversione delle altre istanze, accedi alla dashboard della rispettiva istanza."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
+>title="Tracciamento tempo medio frammento modulo"
+>abstract="Nel grafico viene visualizzato il tempo medio necessario per creare un frammento di modulo, misurato dal giorno iniziale in cui il frammento di modulo è stato aperto per la modifica. **Nota:** Il grafico fornisce dati specifici per l’istanza AEM Forms Publish corrente. Per visualizzare i dati della conversione delle altre istanze, accedi alla dashboard della rispettiva istanza."
 
 
 <!-- 
