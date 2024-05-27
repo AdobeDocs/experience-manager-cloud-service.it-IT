@@ -1,12 +1,10 @@
 ---
 title: Inoltro dei registri per AEM as a Cloud Service
 description: Scopri come inoltrare i registri a Splunk e ad altri fornitori di registrazione in AEM as a Cloud Service
-hide: true
-hidefromtoc: true
-source-git-commit: d41390696383f8e430bb31bd8d56a5e8843f1257
+source-git-commit: 13696ffde99114e5265e5c2818cb3257dd09ee8c
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 3%
+source-wordcount: '718'
+ht-degree: 2%
 
 ---
 
@@ -64,11 +62,47 @@ Questo articolo è organizzato nel modo seguente:
          index: "AEMaaCS"
    ```
 
-   Il nodo predefinito deve essere incluso per motivi di compatibilità futuri.
+   Il **tipo** Il parametro deve essere impostato su LogForwarding e la versione deve essere impostata sulla versione dello schema, ovvero 1.
 
-   Il parametro kind deve essere impostato su LogForwarding e la versione deve essere impostata sulla versione dello schema, che è 1.
+   Token nella configurazione (ad esempio `${{SPLUNK_TOKEN}}`) rappresentano segreti che non devono essere memorizzati in Git. Dichiarali invece come Cloud Manager  [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md) di tipo **segreto**. Assicurati di selezionare **Tutti** come valore a discesa per il campo Service Applied (Servizio applicato), in modo che i registri possano essere inoltrati ai livelli di authoring, pubblicazione e anteprima.
 
-   Token nella configurazione (ad esempio `${{SPLUNK_TOKEN}}`) rappresentano segreti che non devono essere memorizzati in Git. Dichiarali invece come Cloud Manager  [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md) di tipo &quot;secret&quot;. Assicurati di selezionare **Tutti** come valore a discesa per il campo Service Applied (Servizio applicato), in modo che i registri possano essere inoltrati ai livelli di authoring, pubblicazione e anteprima.
+   È possibile impostare valori diversi tra i registri CDN e tutto il resto (registri AEM e Apache), includendo un **cdn** e/o **aem** blocco dopo il **predefinito** , in cui le proprietà possono ignorare quelle definite nel **predefinito** blocco; è necessaria solo la proprietà abilitata. Un possibile caso di utilizzo potrebbe essere l’utilizzo di un indice Splunk diverso per i registri CDN, come illustrato nell’esempio seguente.
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          cdn:
+            enabled: true
+            token: "${{SPLUNK_TOKEN_CDN}}"
+            index: "AEMaaCS_CDN"   
+   ```
+
+   Un altro scenario consiste nel disabilitare l’inoltro dei registri CDN o di tutto il resto (registri AEM e Apache). Ad esempio, per inoltrare solo i registri CDN, puoi configurare quanto segue:
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          aem:
+            enabled: false
+   ```
 
 1. Per tipi di ambiente diversi da RDE (attualmente non supportato), crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager.
 
@@ -96,10 +130,17 @@ data:
       
 ```
 
-Considerazioni:
+Utilizzare un token SAS per l&#39;autenticazione. Deve essere creato dalla pagina della firma di accesso condiviso, anziché dalla pagina del token di accesso condiviso, e deve essere configurato con le seguenti impostazioni:
 
-* Eseguire l’autenticazione utilizzando il token SAS, che deve avere un periodo minimo di convalida.
-* Il token SAS deve essere creato nella pagina dell&#39;account, non nella pagina contenitore.
+* Servizi consentiti: è necessario selezionare il BLOB
+* Risorse consentite: è necessario selezionare l’oggetto
+* Autorizzazioni consentite: è necessario selezionare Scrivi, Aggiungi o Crea
+* Una data/ora di inizio e di scadenza valida.
+
+Ecco una schermata di esempio della configurazione del token SAS:
+
+![Configurazione token SAS BLOB di Azure](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
 
 ### Datadog {#datadog}
 
