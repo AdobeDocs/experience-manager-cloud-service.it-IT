@@ -1,13 +1,13 @@
 ---
-title: Come abilitare Adobe Analytics per un modulo adattivo?
-description: Experience Cloud Setup Automation consente di collegare Adobe Analytics a un modulo adattivo per monitorare le informazioni sulle interazioni e il coinvolgimento dei visitatori.
+title: Come abilitare Adobe Analytics per un’analisi rapida di un modulo adattivo?
+description: Experience Cloud Setup Automation consente di collegare Adobe Analytics a un modulo adattivo per ottenere analisi rapide e informazioni approfondite sulle interazioni e sul coinvolgimento dei visitatori.
 keywords: Abilita Adobe Analytics per un modulo adattivo utilizzando Experience Cloud Setup Automation, Abilita Adobe Analytics in Forms, Adobe Analytics in Adaptive Forms, integrazione Forms Analytics, Forms e Adobe Analytics
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: a23576b5dc6d78a29fe19cd23f3c4788f2bee23e
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1588'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 | AEM as a Cloud Service | Questo articolo |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
-Experience Cloud Setup Automation consente di collegare Adobe Analytics ad Adaptive Forms per monitorare e analizzare l’interazione dell’utente con i moduli e offrire informazioni approfondite sulle interazioni e sul coinvolgimento dei visitatori. Experience Cloud Setup Automation consente inoltre di monitorare le prestazioni dei moduli tramite la valutazione di metriche quali tempi di completamento e punti di riconsegna. Questa analisi consente di ottimizzare i moduli per una migliore esperienza utente, distinguendo al contempo il comportamento degli utenti in base allo stato di accesso, ad esempio utenti anonimi, per identificare tendenze e modelli generali.
+Experience Cloud Setup Automation consente di collegare Adobe Analytics ad Adaptive Forms, facilitando l’analisi rapida dell’interazione dell’utente con i moduli e fornendo informazioni approfondite sulle interazioni e sul coinvolgimento dei visitatori. Experience Cloud Setup Automation consente inoltre di monitorare le prestazioni dei moduli tramite la valutazione di metriche quali tempi di completamento e punti di riconsegna. Questa analisi consente di ottimizzare i moduli per una migliore esperienza utente, distinguendo al contempo il comportamento degli utenti in base allo stato di accesso, ad esempio utenti anonimi, per identificare tendenze e modelli generali.
 
 ## Vantaggi dell’integrazione di Adobe Analytics con Adaptive Forms {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -29,7 +29,7 @@ Experience Cloud Setup Automation consente di collegare Adobe Analytics ad Adapt
 
 ## Ambito delle metriche di utilizzo di Adaptive Forms {#scope-of-adaptive-forms-usage-metrics}
 
-Adobe Analytics offre una gamma completa di metriche delle prestazioni di Adaptive Forms progettate per fornire informazioni preziose sull’utilizzo dei moduli. Queste metriche sono:
+Adobe Analytics offre una gamma completa di metriche delle prestazioni di Adaptive Forms progettate per fornire informazioni preziose sull’utilizzo dei moduli e offre un’analisi rapida. Queste metriche sono:
 
 * **Rappresentazioni di moduli, invii di moduli, errori di convalida e visitatori univoci**, che consente di valutare l’utilizzo e l’efficacia dei moduli.
 
@@ -62,7 +62,7 @@ Experience Cloud Setup Automation richiede un **Licenza Adobe Analytics**, **Rac
 
 Se si dispone di una licenza attiva per **Adobe Analytics** e **Experience Manager Forms** e l’integrazione con **Raccolta Dati (Precedentemente Adobe Launch)**, è necessario verificarne la disponibilità all’interno della console per sviluppatori.
 
-Per verificare che quanto sopra sia disponibile per l’ambiente Forms as a Cloud Service, visita il [console per sviluppatori](https://developer.adobe.com/console/projects), accedi al progetto ed esegui una ricerca nel progetto con l’ID del programma, ad esempio l’ID dell’ambiente con l’URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, id programma - l’id ambiente è `p45913-e175111`. Assicurati che siano elencate le API Experience Cloud Setup Automation, Adobe Analytics e Experienci Platform Launch. Se questi sono elencati, puoi abilitare Adobe Analytics per il tuo Forms adattivo.
+Per verificare che quanto sopra sia disponibile per l’ambiente Forms as a Cloud Service, visita il [console per sviluppatori](https://developer.adobe.com/console/projects), accedi al progetto ed esegui una ricerca nel progetto con l’ID del programma, ad esempio l’ID dell’ambiente con l’URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, id programma - l’id ambiente è `p45913-e175111`. Assicurati che siano elencate le API Experience Cloud Setup Automation, Adobe Analytics e Experienci Platform Launch. Se questi sono elencati, puoi abilitare Adobe Analytics per un’analisi rapida del tuo Forms adattivo.
 
 ![Prerequisito per l’integrazione di Forms Analytics](assets/analytics-aem.png){width="100%"}
 
@@ -76,7 +76,7 @@ Per verificare che quanto sopra sia disponibile per l’ambiente Forms as a Clou
 
 ## Configurare Adobe Analytics {#configure-adobe-analytics}
 
-Per abilitare e configurare Adobe Analytics per il Forms adattivo, effettua le seguenti operazioni:
+Per abilitare e configurare Adobe Analytics per un’analisi rapida del tuo Forms adattivo, effettua le seguenti operazioni:
 
 * [Abilitare Adobe Analytics per Forms adattivo basato su componenti di base](#integrate-adobe-analytics-with-aem-forms-for-foundation-component)
 * [Abilitare Adobe Analytics per Forms adattivo basato su componenti core](#integrate-adobe-analytics-with-aem-forms-for-core-components)
@@ -139,7 +139,7 @@ Per collegare un modulo adattivo ad Adobe Analytics utilizzando il metodo manual
 
 ## Abilitare Analytics a Forms adattivo nei siti {#Connect-Analytics-to-Adaptive-Forms-in-Sites}
 
-La configurazione di Analytics per il modulo adattivo in AEM Sites consente di monitorare le interazioni degli utenti e l’invio dei moduli nella pagina Modulo in Sites. Integrando perfettamente le analisi nel Forms di Sites, puoi ottenere informazioni preziose sul comportamento degli utenti, sui tassi di conversione e sulle aree in cui è possibile migliorare il modulo.
+La configurazione di analisi rapide per il modulo adattivo in AEM Sites consente di tenere traccia delle interazioni degli utenti e dell’invio dei moduli sulla pagina del modulo in Sites. Integrando perfettamente le analisi nel Forms di Sites, puoi ottenere informazioni preziose sul comportamento degli utenti, sui tassi di conversione e sulle aree in cui è possibile migliorare il modulo.
 
 ### Prerequisiti {#Prerequisites-to-connect-forms-analytics-to-sites}
 
@@ -147,7 +147,7 @@ Per connettersi e abilitare le analisi in Adaptive Forms per AEM Sites, assicura
 
 ### Connettere Forms adattivo in Sites per abilitare Analytics {#Connect-analytics-to-adaptive-forms}
 
-Per collegare un modulo adattivo a una pagina di AEM Sites per abilitare Analytics, includi `customfooterlibs` dalla libreria client alla pagina AEM Sites utilizzando l’archivio e la pipeline di distribuzione di Archetipo/Git AEM.
+Per collegare un modulo adattivo in una pagina di AEM Sites per abilitare Analytics per un’analisi rapida, includi `customfooterlibs` dalla libreria client alla pagina AEM Sites utilizzando l’archivio e la pipeline di distribuzione di Archetipo/Git AEM.
 
 1. Apri il [Archetipo AEM Forms o archivio Git clonato](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) in un editor di testo. Ad esempio, Visual Studio Code.
 
