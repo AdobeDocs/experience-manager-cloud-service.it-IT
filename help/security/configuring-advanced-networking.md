@@ -2,10 +2,10 @@
 title: Configurazione di networking avanzato per AEM as a Cloud Service
 description: Scopri come configurare funzionalità di rete avanzate come una VPN o un indirizzo IP in uscita flessibile o dedicato per AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 0cd4a720874c9d4138665f0bfdecbd29468f01e5
+source-git-commit: 3e8a1a8a48fc5ec6bff71062ff740acf98d743d2
 workflow-type: tm+mt
-source-wordcount: '5388'
-ht-degree: 94%
+source-wordcount: '5332'
+ht-degree: 95%
 
 ---
 
@@ -803,6 +803,4 @@ Il connection pooling è una tecnica personalizzata per creare e sostenere un ar
 
 L’implementazione di un’adeguata strategia di connection pooling è una misura proattiva per correggere una supervisione comune nella configurazione del sistema, che spesso porta a prestazioni non ottimali. Stabilendo correttamente un connection pool, Adobe Experience Manager (AEM) può migliorare l&#39;efficienza delle chiamate esterne. Questo non solo riduce il consumo di risorse, ma riduce anche il rischio di interruzioni del servizio e diminuisce la probabilità di incontrare richieste non riuscite durante la comunicazione con i server a monte.
 
-Alla luce di queste informazioni, consigliamo di riesaminare la configurazione AEM attuale e di considerare l&#39;incorporazione intenzionale del connection pooling insieme alle impostazioni di rete avanzate. Implementando queste misure, la soluzione è progettata per evitare che i proxy vengano sovraccaricati, riducendo in tal modo la probabilità che le richieste non riescano a raggiungere gli endpoint esterni.
-
-Alla luce di queste informazioni, consigliamo di riesaminare la configurazione AEM corrente e di considerare l&#39;incorporazione intenzionale del connection pooling insieme alle impostazioni di rete avanzate. Gestendo il numero di connessioni parallele e riducendo al minimo il verificarsi di possibili connessioni non aggiornate, queste misure riducono il rischio che i server proxy raggiungano i limiti di connessione. Di conseguenza, questa implementazione strategica è progettata per ridurre la probabilità che le richieste non raggiungano gli endpoint esterni.
+Alla luce di queste informazioni, Adobe consiglia di rivalutare la configurazione AEM corrente e considerare l&#39;incorporazione intenzionale del connection pooling insieme alle impostazioni di rete avanzate. Gestendo il numero di connessioni parallele e riducendo al minimo la possibilità di connessioni non aggiornate, queste misure riducono il rischio che i server proxy raggiungano i limiti di connessione. Di conseguenza, questa implementazione strategica è progettata per ridurre la probabilità che le richieste non raggiungano gli endpoint esterni.
