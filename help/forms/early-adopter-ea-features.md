@@ -3,15 +3,14 @@ title: Funzioni correnti di Early Adopter di [!DNL Adobe Experience Manager Form
 description: Funzioni correnti di Early Adopter di [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1599'
 ht-degree: 6%
 
 ---
 
 # Programma AEM Forms Early Adopter
-
 
 Il programma AEM Forms Early Adopter Program offre un’opportunità unica per ottenere accesso esclusivo a funzioni all’avanguardia prima di chiunque altro e aiutarne lo sviluppo. Il programma offre:
 
@@ -21,7 +20,7 @@ Il programma AEM Forms Early Adopter Program offre un’opportunità unica per o
 
 ## Come partecipare al programma Early Adopter?
 
-Se sei interessato a partecipare al nostro programma Early Adopter per qualsiasi innovazione di early adopter, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a aem-forms-ea@adobe.com per richiedere l’accesso. Puoi richiedere l’accesso a tutte le innovazioni o a quelle specifiche.
+Se sei interessato a partecipare al nostro programma Early Adopter per qualsiasi innovazione iniziale, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a `aem-forms-ea@adobe.com` per richiedere l&#39;accesso. Puoi richiedere l’accesso a tutte le innovazioni o a quelle specifiche.
 
 
 ## Innovazioni preliminari per l&#39;adozione
