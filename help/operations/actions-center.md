@@ -2,10 +2,10 @@
 title: Centro azioni
 description: Sfruttare il Centro operativo per intervenire in modo comodo in caso di incidenti e altre informazioni importanti
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
+source-git-commit: ae8c5e832134caf4ff6799c601810e9a735f4195
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 65%
+source-wordcount: '842'
+ht-degree: 64%
 
 ---
 
@@ -76,3 +76,4 @@ Nella tabella seguente sono elencati i tipi di notifica attualmente supportati i
 | Picco di traffico all’origine | Problema | Protect l’origine configurando le regole del filtro del traffico del limite di velocità che si attivano a soglie inferiori all’avviso di picco di traffico predefinito all’origine.  Consulta la [Blocco degli attacchi DoS e DDoS tramite le regole del traffico](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) sezione della documentazione sulle regole del filtro del traffico, che fa riferimento a un’esercitazione. |
 | Certificato S2S in scadenza | Proattiva | Scopri come aggiornare una credenziale nella [Documentazione sulla generazione dei token di accesso per le API lato server](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Numero elevato di connessioni | Proattiva | Scopri il connection pooling in [Connection pooling insieme alla documentazione di Advanced Networking](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Mappatura utenti servizio obsoleti | Proattiva | Scopri come utilizzare il nuovo formato di mappatura utente del servizio Sling, come indicato in [Best practice per la mappatura degli utenti e la definizione degli utenti del servizio Sling](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
+| Numero elevato di connessioni | Proattiva | Scopri il connection pooling in [Documentazione sulle reti avanzate](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
