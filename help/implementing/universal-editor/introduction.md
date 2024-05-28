@@ -2,10 +2,10 @@
 title: Introduzione all’editor universale
 description: Scopri in che modo Universal Editor consente di modificare ciò che vedi è ciò che ottieni (WYSIWYG) di qualsiasi esperienza headless e headful. Scopri in che modo questo può aiutare gli autori di contenuto a fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 2ad5920d0b3d8a3ad780a2cb0f28b7e6f9e596ab
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 58%
+source-wordcount: '973'
+ht-degree: 52%
 
 ---
 
@@ -90,13 +90,6 @@ Quando esplori l’Editor universale e procedi alla sua implementazione nei tuoi
 * Gli autori dei contenuti devono avere un proprio account Experience Cloud.
 * Chrome ed Edge sono i browser supportati
 
-## Risorse aggiuntive {#additional-resources}
+## Passaggi successivi {#next-steps}
 
-Per ulteriori informazioni sull’editor universale, consulta questi documenti.
-
-* [Authoring del contenuto con l’Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md) - Scopri quanto è semplice e intuitivo per gli autori di contenuto creare contenuto utilizzando l’Editor universale.
-* [Pubblicazione di contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/publishing.md) - Scopri come l’Editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
-* [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la prima app AEM per utilizzarla.
-* [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
-* [Attributi e tipi](attributes-types.md): scopri gli attributi e i tipi di dati richiesti dall’editor universale.
-* [Autenticazione dell’editor universale](authentication.md): scopri come l’editor universale effettua l’autenticazione.
+Consulta il documento [Casi d’uso e percorsi di apprendimento dell’editor universale](/help/implementing/universal-editor/use-cases.md) per ulteriori informazioni sui casi d’uso comuni per Universal Editor e per scoprire le risorse di documentazione adatte per supportarti nel progetto.

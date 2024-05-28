@@ -2,10 +2,10 @@
 title: Attributi e tipi di elementi
 description: Scopri gli attributi di dati e i tipi di elementi richiesti dall’editor universale.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 36be262a7949bc66f97f5483ff463d755f5f78e5
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 75%
+source-wordcount: '538'
+ht-degree: 72%
 
 ---
 
@@ -56,14 +56,3 @@ A seconda del caso d’uso `data-aue-prop` o `data-aue-resource` può essere ric
 |---|---|
 | `component` | Utilizzato per consentire l’utilizzo di componenti di testo, testo RTF e mimica multimediale autonomi in modo che possano essere spostati ed eliminabili nella pagina |
 | `container` | Utilizzato per consentire ai contenitori di essere trattati come componenti propri in modo che siano spostabili ed eliminabili sulla pagina |
-
-## Risorse aggiuntive {#additional-resources}
-
-Per ulteriori informazioni sull’editor universale, consulta questi documenti.
-
-* [Introduzione all’editor universale](introduction.md): scopri come l’editor universale consente di modificare ogni aspetto di qualsiasi contenuto in qualsiasi implementazione per fornire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
-* [Authoring dei contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md): scopri quanto è semplice e intuitivo per gli autori di contenuto creare contenuto utilizzando l’editor universale.
-* [Pubblicazione di contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/publishing.md) - Scopri come l’Editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
-* [Guida introduttiva all’editor universale in AEM](getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la prima app AEM per utilizzarla.
-* [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e come avviene il flusso di dati tra i suoi servizi e livelli.
-* [Autenticazione dell’editor universale](authentication.md): scopri come l’editor universale effettua l’autenticazione.

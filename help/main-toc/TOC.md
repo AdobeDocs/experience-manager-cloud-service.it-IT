@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: 4c2f0a230c259f5d5af08158707ebea016c431e6
 workflow-type: tm+mt
-source-wordcount: '4982'
+source-wordcount: '4961'
 ht-degree: 99%
 
 ---
@@ -1079,18 +1079,19 @@ ht-degree: 99%
          + [Pagine di errore personalizzate](/help/implementing/developing/introduction/custom-error-page.md)
          + [Tipi di nodo AEM](/help/implementing/developing/introduction/node-types.md)
       + Editor universale {#universal-editor}
-         + [Introduzione all’editor universale](/help/implementing/universal-editor/introduction.md)
-         + [Architettura dell’editor universale](/help/implementing/universal-editor/architecture.md)
-         + [App di esempio SecurBank](/help/implementing/universal-editor/securbank.md)
-         + [Guida introduttiva all’editor universale in AEM](/help/implementing/universal-editor/getting-started.md)
-         + [Panoramica dell’editor universale per sviluppatori](/help/implementing/universal-editor/developer-overview.md)
+         + [Introduzione](/help/implementing/universal-editor/introduction.md)
+         + [Casi d’uso](/help/implementing/universal-editor/use-cases.md)
          + [Attributi e tipi di elementi](/help/implementing/universal-editor/attributes-types.md)
          + [Definizioni di modelli, campi e tipi di componenti](/help/implementing/universal-editor/field-types.md)
-         + [Autenticazione dell’editor universale](/help/implementing/universal-editor/authentication.md)
-         + [Sviluppo locale AEM con l’editor universale](/help/implementing/universal-editor/local-dev.md)
-         + [Chiamate all’editor universale](/help/implementing/universal-editor/calls.md)
+         + [App di esempio SecurBank](/help/implementing/universal-editor/securbank.md)
          + [Eventi](/help/implementing/universal-editor/events.md)
-         + [Personalizzare l’Editor universale](/help/implementing/universal-editor/customizing.md)
+         + [Personalizzazione](/help/implementing/universal-editor/customizing.md)
+         + [Architettura](/help/implementing/universal-editor/architecture.md)
+         + [Autenticazione](/help/implementing/universal-editor/authentication.md)
+         + [Guida introduttiva](/help/implementing/universal-editor/getting-started.md)
+         + [Panoramica per sviluppatori](/help/implementing/universal-editor/developer-overview.md)
+         + [Sviluppo locale AEM](/help/implementing/universal-editor/local-dev.md)
+         + [Chiamate](/help/implementing/universal-editor/calls.md)
       + [Gestione delle esperienze headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=it)
       + Sviluppo ibrido e SPA {#hybrid}
          + [Ibrido e SPA con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
