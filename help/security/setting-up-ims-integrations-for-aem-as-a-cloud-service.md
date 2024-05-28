@@ -2,9 +2,9 @@
 title: Configurazione delle integrazioni IMS per AEM as a Cloud Service
 description: Scopri come configurare le integrazioni IMS per AEM as a Cloud Service
 source-git-commit: 6945980cac24d4413a84343b035a8380b04e7444
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->Le configurazioni JWT con provisioning automatico non devono essere migrate manualmente, in quanto verranno gestite automaticamente da Adobe.
+>Le configurazioni JWT con provisioning automatico non devono essere migrate manualmente, poiché verranno gestite automaticamente da Adobe.
 
 Adobe Experience Manager (AEM) as a Cloud Service può essere integrato con molte altre soluzioni Adobe. Ad esempio, Adobe Target, Adobe Analytics e altre.
 
