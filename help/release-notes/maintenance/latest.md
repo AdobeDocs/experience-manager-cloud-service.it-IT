@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 13a266e9611fd8eb427c7cc83e99092e66fd8bc5
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 78%
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 16461, rilasciata pubblicamente il martedì 27 maggio 2024. La versione di manutenzione precedente era 16357.
 
-Con l’attivazione delle funzioni 2024.5.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Con la versione di attivazione funzioni 2024.5.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ### Miglioramenti {#enhancements-16461}
 
@@ -29,8 +29,8 @@ Nessuno.
 
 ### Problemi noti {#known-issues-16461}
 
-* SITES-20364: 302 Reindirizzamenti non funzionanti con il selettore nell’URL.
-* SITES-20547: Elenco dei percorsi troncati nelle Live Copy Excluded Paths (percorsi esclusi) su AEM as a Cloud Service.
+* SITES-20364: reindirizzamenti 302 non funzionanti con il selettore nell’URL.
+* SITES-20547: percorsi troncati in Elenco percorsi esclusi Live Copy su AEM as a Cloud Service.
 
 >[!NOTE]
 >
