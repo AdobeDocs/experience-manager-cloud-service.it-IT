@@ -4,10 +4,10 @@ description: Scopri le considerazioni speciali necessarie per abilitare i gruppi
 hide: true
 hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 29ffb48d23b4a2fe4973b005c98c5720b4196367
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 9%
+source-wordcount: '374'
+ht-degree: 10%
 
 ---
 
@@ -23,27 +23,22 @@ Attualmente, i gruppi chiusi di utenti (CUG) richiedono alcuni passaggi aggiunti
 
 ## Migrazione dei gruppi
 
-Le entità principali (inclusi i gruppi) vengono incluse automaticamente in una migrazione ad Adobe Experience Manager as a Cloud Service se sono associate al contenuto migrato tramite l’ACL di tale contenuto.
+Gli utenti principali (inclusi i gruppi) vengono inclusi automaticamente in una migrazione ad Adobe Experience Manager as a Cloud Service se sono associati al contenuto migrato tramite l’ACL di tale contenuto e sono inclusi anche se vi si fa riferimento in un criterio CUG su tale contenuto.
 
 ## Gruppi di utenti chiusi in migrazione
 
-Attualmente, gruppi associati *solo* con un criterio Gruppo utenti chiuso (CUG) sono *non* incluso automaticamente nell’acquisizione. Come detto in precedenza, vengono migrati se associati a qualsiasi contenuto tramite un ACL. La verifica dell’esistenza del gruppo e dei suoi membri deve essere eseguita prima della pubblicazione. Il rapporto Principal (Principal Report), scaricato tramite la visualizzazione Processo di acquisizione, può essere utilizzato per verificare se il gruppo in questione è stato incluso o meno perché non si trovava in un ACL. Se il gruppo non esiste, deve essere creato nell’istanza di authoring, inclusa l’aggiunta di membri appropriati, e attivato affinché esista nell’istanza di pubblicazione. Questa operazione può essere eseguita utilizzando i pacchetti creati sull’origine.
+La verifica dell’esistenza del gruppo e dei suoi membri deve essere eseguita prima della pubblicazione. Il rapporto Principal (Principal Report), scaricato tramite la visualizzazione Processo di acquisizione, può essere utilizzato per verificare se il gruppo in questione è stato incluso o meno perché non si trovava in un ACL o in un criterio CUG.
 
-Infine, è necessario attivare i processi e impostare le proprietà per abilitare i CUG. A questo scopo, ripubblica tutte le pagine associate a un criterio CUG. In questo modo l’istanza Publish viene calibrata per tenere traccia dei criteri.
+Successivamente, è necessario attivare i processi e impostare le proprietà per abilitare i gruppi utenti chiusi (CUG). A questo scopo, ripubblica tutte le pagine associate a un criterio CUG. In questo modo l’istanza Publish viene calibrata per tenere traccia dei criteri.
 
 Questo abilita i criteri CUG in Pubblicazione e il contenuto è accessibile solo agli utenti autenticati che sono membri del gruppo associato ai criteri.
-
-## Sviluppo attivo
-
-Il team di migrazione sta lavorando per far sì che i criteri per i gruppi utenti chiusi (CUG) migrino e funzionino automaticamente, senza alcun passaggio aggiuntivo dopo l’acquisizione del contenuto.
-Includi la funzionalità per gruppi utenti chiusi (CUG) in tutti i processi di test prima di provare a eseguire la pubblicazione.
 
 ## Riepilogo
 
 In sintesi, questi sono i passaggi per abilitare il gruppo utenti chiusi (CUG) dopo una migrazione:
 
 1. Assicurati che ogni gruppo utilizzato nei criteri del gruppo utenti chiusi (CUG) esista al momento della pubblicazione dopo la migrazione.
-   - Un gruppo può esistere se incluso nell’ACL di un contenuto migrato.
+   - Un gruppo può esistere se incluso nei criteri CUG di un contenuto migrato o nell’ACL di tale contenuto.
    - In caso contrario, utilizza i pacchetti per installarlo nell’istanza di destinazione (o crearlo manualmente) e attivarlo insieme ai relativi membri. Verifica che esista al momento della pubblicazione.
 1. Ripubblica tutte le pagine associate a un criterio per gruppi utenti chiusi (CUG), assicurandoti che sia pubblicato, ad esempio, modificando prima la pagina. È importante ripubblicarli tutti.
    - Dopo la ripubblicazione di tutte le pagine, verifica la funzionalità per ogni pagina protetta con gruppo di utenti chiusi (CUG).
