@@ -1089,7 +1089,7 @@ ht-degree: 99%
          + [Architettura](/help/implementing/universal-editor/architecture.md)
          + [Autenticazione](/help/implementing/universal-editor/authentication.md)
          + [Guida introduttiva](/help/implementing/universal-editor/getting-started.md)
-         + [Panoramica per sviluppatori](/help/implementing/universal-editor/developer-overview.md)
+         + [Panoramica dello sviluppatore](/help/implementing/universal-editor/developer-overview.md)
          + [Sviluppo locale AEM](/help/implementing/universal-editor/local-dev.md)
          + [Chiamate](/help/implementing/universal-editor/calls.md)
       + [Gestione delle esperienze headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=it)
