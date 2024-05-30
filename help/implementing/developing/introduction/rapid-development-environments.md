@@ -2,10 +2,10 @@
 title: Ambienti di sviluppo rapidi
 description: Scopri come utilizzare gli ambienti di sviluppo rapido per le iterazioni di sviluppo rapido in un ambiente cloud.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: cd74240f59cb3139e425f568828ba9ab1b59147f
+source-git-commit: 4a5b7c671a149d61c60fc86f93a41d52fb4b5468
 workflow-type: tm+mt
-source-wordcount: '4345'
-ht-degree: 4%
+source-wordcount: '4294'
+ht-degree: 3%
 
 ---
 
@@ -408,11 +408,12 @@ The analyser found the following errors for publish :
 
 L’esempio di codice riportato sopra illustra il comportamento se un bundle non si risolve. In questo caso, è &quot;staging&quot; e viene installato solo se i suoi requisiti (importazioni mancanti, in questo caso) sono soddisfatti tramite l&#39;installazione di un altro codice.
 
-<u>Distribuzione di codice front-end basato su temi del sito e modelli del sito</u>
+### Distribuzione di codice front-end basato su temi e modelli del sito {#deploying-themes-to-rde}
 
 >[!NOTE]
 >
->Questa funzione non è ancora disponibile in versione GA, ma può essere utilizzata dai primi utenti. Invia un’e-mail all’indirizzo **aemcs-rde-support@adobe.com** per provarlo e fornire un feedback.
+> Questa funzione non è ancora disponibile. Verrà introdotto a giugno.
+>
 
 Gli RDE supportano il codice front-end basato su [temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelli di sito](/help/sites-cloud/administering/site-creation/site-templates.md). Con gli RDE, questa operazione viene eseguita utilizzando una direttiva della riga di comando per distribuire pacchetti front-end, anziché Cloud Manager [Pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) utilizzato per altri tipi di ambiente.
 
@@ -1011,8 +1012,6 @@ Inoltre, tieni presente le seguenti considerazioni:
 
 * Gli RDE non includono un livello di anteprima
 * Attualmente gli RDE non supportano il canale prerelease.
-* Mentre RDE supporta la visualizzazione e il debug del codice front-end basato su [temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelli di sito](/help/sites-cloud/administering/site-creation/site-templates.md) implementato non è ancora pronto per l’implementazione GA, può essere utilizzato da utenti che lo hanno adottato per primi. Invia un’e-mail all’indirizzo **aemcs-rde-support@adobe.com** per provarlo e fornire un feedback.
-
 
 
 ## Di quante RDE ho bisogno? {#how-many-rds-do-i-need}
