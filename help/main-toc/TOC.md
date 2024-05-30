@@ -595,7 +595,7 @@ ht-degree: 99%
    + Panoramica {#forms-overview}
       + [Introduzione](/help/forms/home.md)
       + [Innovazioni principali di Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
-      + [Funzionalità di Early Adopter (EA)](/help/forms/early-adopter-ea-features.md)
+      + [Funzionalità per i primi utilizzatori (EA)](/help/forms/early-adopter-ea-features.md)
       + [Modifiche di rilievo](/help/forms/notable-changes.md)
       + [Architettura](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Domande frequenti](/help/forms/faq.md)
