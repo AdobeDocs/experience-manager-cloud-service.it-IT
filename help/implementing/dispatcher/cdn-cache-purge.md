@@ -2,9 +2,9 @@
 title: Rimozione della cache CDN
 description: Scopri come rimuovere gli oggetti memorizzati in cache dalla cache CDN Adobe configurando il token API di eliminazione che può quindi essere utilizzato nelle chiamate API.
 feature: Dispatcher
-source-git-commit: 7224db99c29c90fb5e93ac07d7d501e2e9aaf74e
+source-git-commit: 114098a75d84a3da4cc582288ffa162cd960a0e6
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '449'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 >Questa funzione non è ancora disponibile al pubblico. Per partecipare al programma di adozione anticipata, invia un messaggio e-mail a `aemcs-cdn-config-adopter@adobe.com`.
 
 La rimozione rimuove un oggetto dalla cache CDN di Adobe, determinando richieste future che procedono all’origine come mancanti nella cache, anziché essere servite dalla cache.
-AEM as a Cloud Service consente di configurare un token API di rimozione, che può quindi essere utilizzato nelle chiamate API. Leggi le <!--[Configuring CDN Credentials and Authentication article](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)--> per scoprire come configurare questo token utilizzando le direttive di autenticazione della pipeline di configurazione di Cloud Manager.
+AEM as a Cloud Service consente di configurare un token API di rimozione, che può quindi essere utilizzato nelle chiamate API. Leggi le [Articolo sulla configurazione delle credenziali CDN e dell’autenticazione](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) per scoprire come configurare questo token utilizzando le direttive di autenticazione della pipeline di configurazione di Cloud Manager.
 
 Sono supportate tre varianti di eliminazione:
 
