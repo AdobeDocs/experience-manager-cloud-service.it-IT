@@ -2,10 +2,10 @@
 title: Gestione dei rapporti in vista Risorse
 description: Accedi ai dati nella sezione dei rapporti di vista Risorse per valutare l’utilizzo di prodotti e funzionalità e ottenere informazioni approfondite sulle metriche di successo chiave.
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: f4944cdb9f4ec51af6169c5cbf1890f469d91781
+source-git-commit: 0eea9b83d437c7e91daae08c33d94a83ba1db3f9
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 89%
+source-wordcount: '884'
+ht-degree: 83%
 
 ---
 
@@ -58,6 +58,11 @@ Fai clic su **[!UICONTROL Insight]** nel riquadro di navigazione a sinistra per 
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
+* **Numero risorse per dimensione:** Segmenta il conteggio totale delle risorse nell’ambiente di visualizzazione delle risorse in intervalli di dimensioni diversi, evidenziando il conteggio e la percentuale di risorse in ciascun intervallo di dimensioni, rappresentate da un grafico ad anello.
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
+* **Conteggio risorse per tipo di risorsa:** Segmenta il conteggio totale delle risorse nell’ambiente di visualizzazione delle risorse, evidenziando il conteggio e la percentuale delle risorse in base ai rispettivi tipi di file, rappresentati da un grafico ad anello.
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
+
 
 ## Creare un rapporto sui download {#create-download-report}
 
