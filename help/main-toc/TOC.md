@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b13310c256fe06210b9c79023972c4e41a241f43
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '4970'
+source-wordcount: '4997'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 99%
    + Note sulla versione delle funzioni di AEMaaCS {#release-notes}
       + [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Note sulla versione 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [Note sulla versione 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
          + [Note sulla versione 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023 {#2023}
@@ -664,6 +665,8 @@ ht-degree: 99%
             + [Progettare uno schema JSON per un modulo adattivo (componenti core)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Aggiungere versioni, commenti e annotazioni a un modulo adattivo](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Confronta i moduli adattivi](/help/forms/compare-forms.md)
+            + [Conversione di Forms adattivo basato su componenti di base in moduli basati su componenti di base tramite lo strumento utility di migrazione](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [Salvare un modulo adattivo come bozza](/help/forms/save-core-component-based-form-as-draft.md)
       + Componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)

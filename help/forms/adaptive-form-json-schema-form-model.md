@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 10389af2bce06f95d4d841371b7111340d40edaa
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1389'
 ht-degree: 5%
 
 ---
@@ -44,6 +44,7 @@ Le funzioni chiave dell’utilizzo di uno schema JSON sono:
 * La struttura del JSON viene visualizzata come struttura nella scheda Content Finder nella modalità di authoring di un modulo adattivo. Puoi trascinare e aggiungere un elemento dalla gerarchia JSON al modulo adattivo.
 * Puoi precompilare il modulo utilizzando un JSON conforme allo schema associato.
 * All’invio, i dati immessi dall’utente vengono inviati come JSON, in linea con lo schema associato.
+* Puoi anche creare il modulo in base allo schema JSON, secondo le specifiche del [Versione 2012-20](https://json-schema.org/draft/2020-12/release-notes).
 
 Uno schema JSON è costituito da tipi di elementi semplici e complessi. Gli elementi dispongono di attributi che aggiungono regole all’elemento. Quando questi elementi e attributi vengono trascinati in un modulo adattivo, vengono mappati automaticamente al corrispondente componente Modulo adattivo.
 
@@ -66,6 +67,7 @@ La mappatura degli elementi JSON con i componenti del modulo adattivo è la segu
                 "validatePictureClause": "date{DD MMMM, YYYY}",
                 "validatePictureClauseMessage": "Date must be in DD MMMM, YYYY format."
               }
+  }
 ```
 
 <table>
@@ -135,185 +137,322 @@ Il modulo adattivo utilizza le informazioni disponibili nello schema JSON per ma
 
 ## Schema JSON di esempio {#sample-json-schema}
 
-Di seguito è riportato un esempio di schema JSON.
+>[!BEGINTABS]
+
+>[!TAB Schema JSON v4]
 
 ```json
 {
- "$schema": "https://json-schema.org/draft-04/schema#",
- "definitions": {
+"$schema": "https://json-schema.org/draft-04/schema#",
+"definitions": {
   "employee": {
-   "type": "object",
-   "properties": {
+  "type": "object",
+  "properties": {
     "userName": {
      "type": "string"
-    },
+   },
     "dateOfBirth": {
      "type": "string",
      "format": "date"
     },
     "email": {
-     "type": "string",
-     "format": "email"
+    "type": "string",
+    "format": "email"
     },
     "language": {
      "type": "string"
-    },
+   },
     "personalDetails": {
      "$ref": "#/definitions/personalDetails"
-    },
+   },
     "projectDetails": {
      "$ref": "#/definitions/projectDetails"
     }
-   },
-   "required": [
-    "userName",
-    "dateOfBirth",
-    "language"
-   ]
   },
-  "personalDetails": {
+  "required": [
+   "userName",
+   "dateOfBirth",
+   "language"
+  ]
+  },
+    "personalDetails": {
    "type": "object",
-   "properties": {
-    "GeneralDetails": {
-     "$ref": "#/definitions/GeneralDetails"
-    },
+  "properties": {
+     "GeneralDetails": {
+    "$ref": "#/definitions/GeneralDetails"
+   },
     "Family": {
      "$ref": "#/definitions/Family"
     },
     "Income": {
      "$ref": "#/definitions/Income"
-    }
    }
-  },
+   }
+     },
   "projectDetails": {
    "type": "array",
    "items": {
-    "properties": {
-     "name": {
-      "type": "string"
-     },
-     "age": {
-      "type": "number"
-     },
-     "projects": {
-      "$ref": "#/definitions/projects"
-     }
-    }
-   },
-   "minItems": 1,
-   "maxItems": 4
-  },
-  "projects": {
-   "type": "array",
-   "items": {
-    "properties": {
-     "name": {
-      "type": "string"
-     },
-     "age": {
-      "type": "number"
-     },
-     "projectsAdditional": {
-      "$ref": "#/definitions/projectsAdditional"
-     }
-    }
-   },
-   "minItems": 1,
-   "maxItems": 4
-  },
-  "projectsAdditional": {
-   "type": "array",
-   "items": {
-    "properties": {
-     "Additional_name": {
-      "type": "string"
-     },
-     "Additional_areacode": {
-      "type": "number"
-     }
-    }
-   },
-   "minItems": 1,
-   "maxItems": 4
-  },
-  "GeneralDetails": {
-   "type": "object",
    "properties": {
-    "age": {
-     "type": "number"
-    },
-    "married": {
-     "type": "boolean"
-    },
-    "phone": {
-     "type": "number",
-     "aem:afProperties": {
-      "sling:resourceType": "/libs/fd/af/components/guidetelephone",
-      "guideNodeClass": "guideTelephone"
-     }
-    },
-    "address": {
-     "type": "string"
-    }
-   }
-  },
-  "Family": {
-   "type": "object",
-   "properties": {
-    "spouse": {
-     "$ref": "#/definitions/spouse"
-    },
-    "kids": {
-     "$ref": "#/definitions/kids"
-    }
-   }
-  },
-  "Income": {
-   "type": "object",
-   "properties": {
-    "monthly": {
-     "type": "number"
-    },
-    "yearly": {
-     "type": "number"
-    }
-   }
-  },
-  "spouse": {
-   "type": "object",
-   "properties": {
-    "name": {
-     "type": "string"
-    },
-    "Income": {
-     "$ref": "#/definitions/Income"
-    }
-   }
-  },
-  "kids": {
-   "type": "array",
-   "items": {
-    "properties": {
-     "name": {
-      "type": "string"
-     },
-     "age": {
-      "type": "number"
-     }
-    }
+   "name": {
+    "type": "string"
    },
-   "minItems": 1,
-   "maxItems": 4
+   "age": {
+    "type": "number"
+   },
+   "projects": {
+    "$ref": "#/definitions/projects"
+   }
   }
  },
+ "minItems": 1,
+ "maxItems": 4
+},
+"projects": {
+ "type": "array",
+ "items": {
+  "properties": {
+   "name": {
+    "type": "string"
+   },
+   "age": {
+    "type": "number"
+   },
+   "projectsAdditional": {
+    "$ref": "#/definitions/projectsAdditional"
+   }
+  }
+ },
+ "minItems": 1,
+ "maxItems": 4
+},
+"projectsAdditional": {
+ "type": "array",
+ "items": {
+  "properties": {
+   "Additional_name": {
+    "type": "string"
+   },
+   "Additional_areacode": {
+    "type": "number"
+   }
+  }
+ },
+ "minItems": 1,
+ "maxItems": 4
+},
+"GeneralDetails": {
  "type": "object",
  "properties": {
-  "employee": {
-   "$ref": "#/definitions/employee"
+  "age": {
+   "type": "number"
+  },
+  "married": {
+   "type": "boolean"
+  },
+  "phone": {
+   "type": "number",
+   "aem:afProperties": {
+    "sling:resourceType": "/libs/fd/af/components/guidetelephone",
+    "guideNodeClass": "guideTelephone"
+   }
+  },
+  "address": {
+   "type": "string"
   }
  }
+},
+"Family": {
+ "type": "object",
+ "properties": {
+  "spouse": {
+   "$ref": "#/definitions/spouse"
+  },
+  "kids": {
+   "$ref": "#/definitions/kids"
+  }
+ }
+},
+"Income": {
+ "type": "object",
+ "properties": {
+  "monthly": {
+   "type": "number"
+  },
+  "yearly": {
+   "type": "number"
+  }
+ }
+},
+"spouse": {
+ "type": "object",
+ "properties": {
+  "name": {
+   "type": "string"
+  },
+  "Income": {
+   "$ref": "#/definitions/Income"
+  }
+ }
+},
+"kids": {
+ "type": "array",
+ "items": {
+  "properties": {
+   "name": {
+    "type": "string"
+   },
+   "age": {
+    "type": "number"
+   }
+  }
+ },
+ "minItems": 1,
+ "maxItems": 4
+}
+},
+"type": "object",
+"properties": {
+"employee": {
+ "$ref": "#/definitions/employee"
+}
+}
 }
 ```
+
+
+>[!TAB Schema JSON 2012-2020]
+
+
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/employee.schema.json",
+  "$defs": {
+    "employee": {
+      "type": "object",
+      "properties": {
+        "userName": {
+          "type": "string"
+        },
+        "dateOfBirth": {
+          "type": "string",
+          "format": "date"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "language": {
+          "type": "string"
+        },
+        "personalDetails": {
+          "$ref": "#/$defs/personalDetails"
+        },
+        "projectDetails": {
+          "$ref": "#/$defs/projectDetails"
+        }
+      },
+      "required": [
+        "userName",
+        "dateOfBirth",
+        "language"
+      ]
+    },
+    "personalDetails": {
+      "type": "object",
+      "properties": {
+        "GeneralDetails": {
+          "$ref": "#/$defs/GeneralDetails"
+        },
+        "Family": {
+          "$ref": "#/$defs/Family"
+        },
+        "Income": {
+          "$ref": "#/$defs/Income"
+        }
+      }
+    },
+    "projectDetails": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "projects": {
+            "$ref": "#/$defs/projects"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "projectsAdditional": {
+            "$ref": "#/$defs/projectsAdditional"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "projectsAdditional": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "Additional_name": {
+            "type": "string"
+          },
+          "Additional_areacode": {
+            "type": "number"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "GeneralDetails": {
+      "type": "object",
+      "properties": {
+        "age": {
+          "type": "number"
+        },
+        "married": {
+          "type": "boolean"
+        },
+        "phone": {
+          "type": "number",
+          "aem:afProperties": {
+            "sling:resourceType": "/libs/fd/af/components/guidetelephone",
+            "guideNodeClass": "guideTelephone"
+          }
+        },
+        "address": {
+          "type": "string"
+        }
+      }
+      }
+  }
+  }
+```
+
+>[!ENDTABS]
+
+Le modifiche principali dallo schema JSON V4 alla versione 2020-12 sono le seguenti:
+* L’ID è dichiarato come `$id`
+* definizioni dichiarate come `$defs`
 
 ### Definizioni di schema riutilizzabili {#reusable-schema-definitions}
 
@@ -759,6 +898,7 @@ Forms adattivo non supporta i seguenti costrutti dello schema JSON:
 * tipi di unione, come eventuali, e
 * Uno di, uno di, tutti e NON
 * Sono supportati solo array omogenei. Pertanto, il vincolo items deve essere un oggetto e non un array.
+* Riferimenti URI in $ref
 
 ## Domande frequenti {#frequently-asked-questions}
 

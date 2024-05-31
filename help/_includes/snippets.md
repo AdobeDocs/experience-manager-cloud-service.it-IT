@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '516'
+ht-degree: 61%
 
 ---
 # Snippet {#snippets}
@@ -64,4 +64,56 @@ ht-degree: 100%
 * [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
+
+
+## Differenza tra l’editor di regole nei componenti core e l’editor di regole nei componenti di base  {#rule-editor-diff}
+
+Nella tabella seguente viene illustrata la differenza tra le funzioni disponibili nei Componenti core dell&#39;editor di regole e i Componenti di base dell&#39;editor di regole:
+
+<table>
+  <tbody>
+  <tr>
+    <td><strong>Funzioni</strong></td>
+    <td><strong>Componenti di base per moduli adattivi</strong></td>
+    <td><strong>Componenti core modulo adattivo</strong></td>   
+    </tr>
+  </tr>
+  <tr>
+    <td>Impostare le opzioni dell’elenco a discesa </td>
+    <td>Le opzioni dell’elenco a discesa vengono impostate utilizzando l’ <b>Imposta opzioni di</b> proprietà.</td>
+    <td>Le opzioni dell’elenco a discesa vengono impostate utilizzando le funzioni personalizzate. 
+   </td>
+   </tr>
+     </tr>
+   <tr>
+    <td>Eseguire operazioni matematiche sul campo del pannello ripetibile </td>
+    <td>Le funzioni matematiche OOTB possono essere applicate ai campi del pannello ripetibili per eseguire funzioni come somma, media. </td>
+    <td>Le operazioni matematiche sul campo del pannello ripetibile possono essere eseguite utilizzando le funzioni personalizzate.
+   </td>
+   </tr>
+      <tr>
+    <td>Convalida/Reimposta campo/pannello/regola modulo in "Then" </td>
+    <td>Le funzioni di convalida e ripristino supportano solo l'oggetto modulo nell'editor di regole. 
+   </td>
+    <td>Le funzioni di convalida e ripristino supportano il modulo, il pannello o l’oggetto campo nell’editor di regole. 
+   </td>
+   </tr>
+   <tr>
+    <td>Supporto ES10 </td>
+    <td>ES10 non è ancora supportato. </td>
+    <td>Supporto di funzioni JavaScript moderne, come le funzioni let e arrow (supporto ES10) all’interno delle funzioni personalizzate. 
+   </td>
+   </tr>
+   </tr>
+   <tr>
+   <td>Proprietà di output del servizio</td>
+   <td> La proprietà di output Servizio è supportata in <b>Imposta valore di</b> dell'editor di regole. </td>
+   <td>Il <b>Imposta valore di</b> non supporta <b>Output del servizio</b> per richiamare le API nell’editor di regole.
+   </td>
+   </tr>
+   </tr>
+   </tr>
+  </tbody>
+  <table>
+  </tbody>
 

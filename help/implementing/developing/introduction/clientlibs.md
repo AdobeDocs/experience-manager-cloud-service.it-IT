@@ -2,9 +2,9 @@
 title: Utilizzo di librerie lato client su AEM as a Cloud Service
 description: AEM fornisce cartelle di librerie lato client, che consentono di memorizzare il codice lato client (clientlibs) nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '2551'
+source-wordcount: '2497'
 ht-degree: 1%
 
 ---
@@ -345,7 +345,7 @@ Per maggiori dettagli sulle opzioni GCC, vedi [Documentazione GCC](https://devel
 
 YUI è impostato come minimizzatore predefinito in AEM. Per cambiare in GCC, segui la procedura riportata di seguito.
 
-1. Vai a Apache Felix Config Manager all’indirizzo (`http://<host>:<portY/system/console/configMgr`)
+1. Vai a Apache Felix Config Manager all’indirizzo (`http://<host>:<port/system/console/configMgr`)
 1. Trova e modifica il **Adobe Granite HTML Library Manager**.
 1. Abilita **Minimizza** (se non già abilitata).
 1. Imposta il valore **Configurazioni predefinite processore JS** a `min:gcc`.

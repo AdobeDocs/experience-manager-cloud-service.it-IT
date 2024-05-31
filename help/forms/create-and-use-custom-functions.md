@@ -6,20 +6,15 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: c1c170e1cae148c53662cd49850e2a33754fbafc
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '3119'
+source-wordcount: '3521'
 ht-degree: 0%
 
 ---
 
 
-<span class="preview"> Questo articolo contiene informazioni su alcune funzioni precedenti al rilascio. Queste funzioni pre-release sono accessibili solo tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). Le funzioni del programma pre-release sono:
-* Supporto di parametri opzionali nelle funzioni personalizzate
-* Funzione di memorizzazione in cache per funzioni personalizzate
-* Supporto globale di oggetti di ambito e oggetti di campo per le funzioni personalizzate
-* Supporto per funzioni JavaScript moderne come le funzioni let e arrow (supporto ES10).
-Assicurati che [Componente core impostato sulla versione 3.0.8](https://github.com/adobe/aem-core-forms-components) per utilizzare le funzioni precedenti al rilascio nella funzione personalizzata. </span>
+<span class="preview"> Questo articolo contiene `Override form submission success and error handlers` come funzione pre-release. La funzione di pre-release è accessibile solo tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features).
 
 # Funzioni personalizzate in Forms adattivo (componenti core)
 
@@ -31,6 +26,10 @@ Assicurati che [Componente core impostato sulla versione 3.0.8](https://github.c
 ## Introduzione
 
 AEM Forms supporta funzioni personalizzate che consentono agli utenti di definire funzioni JavaScript per l’implementazione di regole di business complesse. Queste funzioni personalizzate estendono le funzionalità dei moduli facilitando la manipolazione e l’elaborazione dei dati immessi per soddisfare requisiti specifici. Consentono inoltre di modificare dinamicamente il comportamento delle forme in base a criteri predefiniti.
+
+>[!NOTE]
+>
+> Assicurati che [componente core](https://github.com/adobe/aem-core-forms-components) è impostato sulla versione più recente per utilizzare le funzioni più recenti.
 
 ### Utilizzo di funzioni personalizzate {#uses-of-custom-function}
 
@@ -154,10 +153,10 @@ Il tipo restituito specifica il tipo di valore restituito dalla funzione persona
 
 #### Privata
 
-La funzione personalizzata, dichiarata come privata, non viene visualizzata nell’elenco delle funzioni personalizzate nell’editor delle regole di un modulo adattivo. Per impostazione predefinita, le funzioni personalizzate sono pubbliche. Sintassi per dichiarare la funzione personalizzata come privata `@private`.
+La funzione personalizzata dichiarata come privata non viene visualizzata nell’elenco delle funzioni personalizzate nell’editor delle regole di un modulo adattivo. Per impostazione predefinita, le funzioni personalizzate sono pubbliche. Sintassi per dichiarare la funzione personalizzata come privata `@private`.
 
 
-## Linee guida per la creazione di funzioni personalizzate {#considerations}
+## Linee guida per la creazione di funzioni personalizzate
 
 Per elencare le funzioni personalizzate nell’editor di regole, puoi utilizzare uno dei seguenti formati:
 
@@ -227,7 +226,7 @@ I passaggi per creare funzioni personalizzate sono i seguenti:
 
 ### Creare una libreria client {#create-client-library}
 
-Puoi aggiungere funzioni personalizzate aggiungendo la libreria client. Per creare una libreria client, effettua le seguenti operazioni:
+Puoi aggiungere funzioni personalizzate aggiungendo una libreria client. Per creare una libreria client, effettua le seguenti operazioni:
 
 1. [Clonare l’archivio as a Cloud Service di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 1. Creare una cartella in `[AEM Forms as a Cloud Service repository folder]/apps/` cartella. Ad esempio, crea una cartella denominata come `experience-league`.
@@ -321,6 +320,43 @@ Visualizziamo in anteprima il modulo per osservare come le funzioni personalizza
 >
 > Puoi consultare quanto segue [funzione personalizzata](/help/forms/assets//customfunctions.zip) cartella. Scarica e installa questa cartella nell’istanza AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
+
+### Impostare le opzioni dell’elenco a discesa utilizzando le funzioni personalizzate
+
+L’editor di regole nei Componenti core non supporta **Imposta opzioni di** per impostare le opzioni dell’elenco a discesa in fase di esecuzione. Tuttavia, è possibile impostare le opzioni dell’elenco a discesa utilizzando le funzioni personalizzate.
+
+Osserva il codice seguente per scoprire come impostare le opzioni dell’elenco a discesa utilizzando le funzioni personalizzate:
+
+```javascript
+    /**
+    * @name setEnums
+    * @returns {string[]}
+    **/
+    function setEnums() {
+    return ["0","1","2","3","4","5","6"];   
+    }
+
+    /**
+    * @name setEnumNames
+    * @returns {string[]}
+    **/
+    function setEnumNames() {
+    return ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    }
+```
+
+Nel codice di cui sopra, `setEnums` viene utilizzato per impostare `enum` proprietà e `setEnumNames` viene utilizzato per impostare `enumNames` proprietà dell’elenco a discesa.
+
+Creiamo una regola per `Next` , che imposta il valore dell’opzione dell’elenco a discesa quando l’utente fa clic sul pulsante `Next` pulsante:
+
+![Opzioni elenco a discesa](/help/forms/assets/drop-down-list-options.png)
+
+Fai riferimento all’illustrazione seguente per dimostrare dove sono impostate le opzioni dell’elenco a discesa facendo clic sul pulsante Visualizza:
+
+![Opzioni elenco a discesa nell’editor delle regole](/help/forms/assets/drop-down-option-rule-editor.png)
+
+
+
 ### Supporto delle funzioni asincrone nelle funzioni personalizzate {#support-of-async-functions}
 
 Le funzioni personalizzate asincrone non vengono visualizzate nell’elenco dell’editor di regole. Tuttavia, è possibile richiamare funzioni asincrone all’interno di funzioni personalizzate create utilizzando espressioni di funzioni sincrone.
@@ -362,7 +398,7 @@ Per vedere come funziona, aggiungiamo un pulsante e creiamo una regola per il pu
 
 ![creazione regola per funzione asincrona](/help/forms/assets/rule-for-async-funct.png)
 
-Fai riferimento all’illustrazione della finestra della console seguente per dimostrare che quando l’utente fa clic su `Fetch` , la funzione personalizzata `callAsyncFunction` viene richiamato, che a sua volta chiama una funzione asincrona `asyncFunction`. Inspect mostra la finestra della console per visualizzare la risposta al clic del pulsante:
+Fai riferimento all’illustrazione della finestra della console seguente per dimostrare che quando l’utente fa clic su `Fetch` , la funzione personalizzata `callAsyncFunction` viene richiamato, che a sua volta chiama una funzione asincrona `asyncFunction`. Inspect nella finestra della console per visualizzare la risposta al pulsante, fai clic su:
 
 ![Finestra della console](/help/forms/assets/async-custom-funct-console.png)
 
@@ -402,11 +438,11 @@ Gli oggetti Field fanno riferimento ai singoli componenti o elementi di un modul
 
 In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
-Scopri in che modo le funzioni personalizzate utilizzano gli oggetti campo e globali con l’aiuto di un `Contact Us` utilizzando diversi casi d’uso.
+Scopri in che modo le funzioni personalizzate utilizzano gli oggetti campo e globali con l’aiuto di un `Contact Us` utilizzando casi d’uso diversi.
 
 ![Modulo per contattarci](/help/forms/assets/contact-us-form.png)
 
-#### **Caso d’uso**: mostra un pannello utilizzando `SetProperty` regola
++++ **Caso d’uso**: mostra un pannello utilizzando `SetProperty` regola
 
 Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) , per impostare il campo modulo come `Required`.
 
@@ -448,7 +484,9 @@ Se sono presenti errori nei campi di `personaldetails` a livello di campo facend
 
 ![Anteprima modulo proprietà](/help/forms/assets/set-property-panel.png)
 
-#### **Caso d’uso**: convalida il campo.
++++
+
++++ **Caso d’uso**: convalida il campo.
 
 Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) per convalidare il campo.
 
@@ -487,7 +525,9 @@ Se l’utente immette un numero di telefono valido e tutti i campi nel campo `pe
 
 ![Pattern di convalida dell’indirizzo e-mail](/help/forms/assets/validate-form-preview-form.png)
 
-#### **Caso d’uso**: reimpostare un pannello
++++
+
++++ **Caso d’uso**: reimpostare un pannello
 
 Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) per ripristinare il pannello.
 
@@ -519,16 +559,18 @@ Vedere l&#39;illustrazione seguente per mostrare che se l&#39;utente fa clic su 
 
 ![Reimposta modulo](/help/forms/assets/custom-function-reset-form.png)
 
-#### **Caso d’uso**: per visualizzare un messaggio personalizzato a livello di campo e contrassegnare il campo come non valido
++++
+
++++ **Caso d’uso**: per visualizzare un messaggio personalizzato a livello di campo e contrassegnare il campo come non valido
 
 È possibile utilizzare `markFieldAsInvalid()` per definire un campo come non valido e impostare un messaggio di errore personalizzato a livello di campo. Il `fieldIdentifier` il valore può essere `fieldId`, o `field qualifiedName`, o `field dataRef`. Il valore dell’oggetto denominato `option` può essere `{useId: true}`, `{useQualifiedName: true}`, o `{useDataRef: true}`.
-Le sintassi utilizzate per contrassegnare il campo come non valido e impostare un messaggio personalizzato sono:
+Le sintassi utilizzate per contrassegnare un campo come non valido e impostare un messaggio personalizzato sono:
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
 * `globals.functions.markFieldAsInvalid(field.$dataRef, "[custom message]", {useDataRef: true});`
 
-Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) per abilitare il messaggio personalizzato a livello di campo.
+Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) per abilitare un messaggio personalizzato a livello di campo.
 
 ```javascript
     /**
@@ -556,12 +598,13 @@ Vedere la dimostrazione riportata di seguito per mostrare che l&#39;immissione d
 
 ![Contrassegna campo come modulo di anteprima non valido](/help/forms/assets/custom-function-invalidfield-form.png)
 
-Se l’utente immette più di 15 caratteri nella casella di testo Commenti, il campo viene convalidato e il modulo viene inviato:
+Se l’utente immette più di 15 caratteri nella casella di testo dei commenti, il campo viene convalidato e il modulo viene inviato:
 
 ![Contrassegna campo come modulo di anteprima valido](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-#### **Caso d’uso**: invia i dati modificati al server
++++ **Caso d’uso**: invia i dati modificati al server
 
 La seguente riga di codice:
 `globals.functions.submitForm(globals.functions.exportData(), false);` viene utilizzato per inviare i dati del modulo dopo la manipolazione.
@@ -592,7 +635,7 @@ Aggiungi il seguente codice nella funzione personalizzata come spiegato in [crea
 
 In questo esempio, se l’utente lascia il `comments` casella di testo vuota, il `NA` viene inviato al server al momento dell’invio del modulo.
 
-Ora crea una regola per `Submit` pulsante che invia i dati:
+Ora, crea una regola per `Submit` pulsante che invia i dati:
 
 ![Inviare dati](/help/forms/assets/custom-function-submit-data.png)
 
@@ -604,6 +647,262 @@ Fai riferimento all’illustrazione della `console window` di seguito per dimost
 
 ![Dati di Inspect nella finestra della console](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
+
++++ **Caso d’uso**: ignora gestori di errori e operazioni riuscite per l’invio del modulo
+
+Aggiungi la seguente riga di codice come spiegato in [create-custom-function](#create-custom-function) , per personalizzare il messaggio di invio o di errore per l’invio dei moduli e visualizzare i messaggi di invio dei moduli in una casella modale:
+
+```javascript
+/**
+ * Handles the success response after a form submission.
+ *
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitSuccessHandler(globals) {
+    var event = globals.event;
+    var submitSuccessResponse = event.payload.body;
+    var form = globals.form;
+
+    if (submitSuccessResponse) {
+        if (submitSuccessResponse.redirectUrl) {
+            window.location.href = encodeURI(submitSuccessResponse.redirectUrl);
+        } else if (submitSuccessResponse.thankYouMessage) {
+            showModal("success", submitSuccessResponse.thankYouMessage);
+        }
+    }
+}
+
+/**
+ * Handles the error response after a form submission.
+ *
+ * @param {string} customSubmitErrorMessage - The custom error message.
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitErrorHandler(customSubmitErrorMessage, globals) {
+    showModal("error", customSubmitErrorMessage);
+}
+function showModal(type, message) {
+    // Remove any existing modals
+    var existingModal = document.getElementById("modal");
+    if (existingModal) {
+        existingModal.remove();
+    }
+
+    // Create the modal dialog
+    var modal = document.createElement("div");
+    modal.setAttribute("id", "modal");
+    modal.setAttribute("class", "modal");
+
+    // Create the modal content
+    var modalContent = document.createElement("div");
+    modalContent.setAttribute("class", "modal-content");
+
+    // Create the modal header
+    var modalHeader = document.createElement("div");
+    modalHeader.setAttribute("class", "modal-header");
+    modalHeader.innerHTML = "<h2>" + (type === "success" ? "Thank You" : "Error") + "</h2>";
+
+    // Create the modal body
+    var modalBody = document.createElement("div");
+    modalBody.setAttribute("class", "modal-body");
+    modalBody.innerHTML = "<p class='" + type + "-message'>" + message + "</p>";
+
+    // Create the modal footer
+    var modalFooter = document.createElement("div");
+    modalFooter.setAttribute("class", "modal-footer");
+
+    // Create the close button
+    var closeButton = document.createElement("button");
+    closeButton.setAttribute("class", "close-button");
+    closeButton.innerHTML = "Close";
+    closeButton.onclick = function() {
+        modal.remove();
+    };
+
+    // Append the elements to the modal content
+    modalFooter.appendChild(closeButton);
+    modalContent.appendChild(modalHeader);
+    modalContent.appendChild(modalBody);
+    modalContent.appendChild(modalFooter);
+
+    // Append the modal content to the modal
+    modal.appendChild(modalContent);
+
+    // Append the modal to the document body
+    document.body.appendChild(modal);
+}
+```
+
+In questo esempio, quando l’utente utilizza `customSubmitSuccessHandler` e `customSubmitErrorHandler` funzioni personalizzate, i messaggi di esito positivo e negativo vengono visualizzati in una finestra modale. La funzione JavaScript `showModal(type, message)` viene utilizzato per creare e visualizzare in modo dinamico una finestra di dialogo modale su uno schermo.
+
+Ora, crea una regola per l’invio corretto del modulo:
+
+![Invio modulo completato](/help/forms/assets/form-submission-success.png)
+
+Fai riferimento all’illustrazione seguente per dimostrare che, quando il modulo viene inviato correttamente, il messaggio di successo viene visualizzato in una finestra modale:
+
+![Messaggio di esito positivo invio modulo](/help/forms/assets/form-submission-success-message.png)
+
+Allo stesso modo, creiamo una regola per gli invii di moduli non riusciti:
+
+![Invio del modulo non riuscito](/help/forms/assets/form-submission-fail.png)
+
+Fai riferimento all’illustrazione seguente per dimostrare che quando l’invio del modulo non riesce, il messaggio di errore viene visualizzato in un modale:
+
+![Messaggio di errore invio modulo](/help/forms/assets/form-submission-fail-message.png)
+
+Per visualizzare l’invio dei moduli riuscito o non riuscito in modo predefinito, `Default submit Form Success Handler` e `Default submit Form Error Handler` funzioni pronte all’uso.
+
+Nel caso in cui il gestore di invio personalizzato non riesca a eseguire le operazioni previste nei progetti o moduli AEM esistenti, fare riferimento a [risoluzione dei problemi](#troubleshooting) sezione.
+
+<!--
+
++++
+
++++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
+
+Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+
+Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+
+Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+
+```javascript
+
+/**
+* @name hidePanelInRepeatablePanel
+* @param {scope} globals
+*/
+function hidePanelInRepeatablePanel(globals)
+{    
+    var repeatablePanel = globals.form.travelerinfo;
+    // hides a panel inside second instance of repeatable panel
+    globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
+}  
+
+```
+ 
+In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
+Let us add a button labeled `Hide` to add a rule to hide a specific panel.
+
+![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
+
+Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
+
+
++++
+
++++ **Usecase**: Pre-fill the field with a value when the form loads
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
+
+```javascript
+/**
+ * @name importData
+ * @param {scope} globals
+ */
+function importData(globals)
+{
+    globals.functions.importData(Object.fromEntries([['amount',200000]]));
+} 
+```
+
+In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+
+Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+
+![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+
+Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+
+![Import Data Rule](/help/forms/assets/cg)
+
++++
+
++++ **Usecase**: Set focus on the specific field
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
+
+```javascript
+/**
+ * @name setFocus
+ * @param {object} field
+ * @param {scope} globals
+ */
+function setFocus(field, globals)
+{
+    globals.functions.setFocus(field);
+}
+```
+
+Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
+
+Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+
++++
+
++++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+/**
+ 
+ * @name addInstance
+ * @param {scope} globals
+ */
+function addInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+} 
+
+```
+
+Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+
+![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+
+![Add Panel](/help/forms/assets/customg)
+
+Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+
+/**
+ 
+ * @name removeInstance
+ * @param {scope} globals
+ */
+function removeInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
+} 
+
+```
+Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
+
+![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+
+![Delete Panel](/help/forms/assets/customg)
+-->
+
 ## Supporto della memorizzazione in cache per la funzione personalizzata
 
 Forms adattivo implementa il caching per le funzioni personalizzate per migliorare il tempo di risposta durante il recupero dell’elenco delle funzioni personalizzate nell’editor di regole. Un messaggio come `Fetched following custom functions list from cache` viene visualizzato nel `error.log` file.
@@ -612,15 +911,23 @@ Forms adattivo implementa il caching per le funzioni personalizzate per migliora
 
 Se le funzioni personalizzate vengono modificate, la memorizzazione in cache viene invalidata e analizzata.
 
-## Risoluzione dei problemi
+## Risoluzione dei problemi {#troubleshooting}
 
-Se il file JavaScript contenente il codice per le funzioni personalizzate presenta un errore, le funzioni personalizzate non sono elencate nell’editor di regole di un modulo adattivo. Per verificare l&#39;elenco delle funzioni personalizzate, è possibile passare alla `error.log` file per l’errore. In caso di errore, l’elenco delle funzioni personalizzate appare vuoto:
+* Se il gestore di invio personalizzato non funziona come previsto nei progetti o moduli AEM esistenti, effettua le seguenti operazioni:
+   * Assicurati che [versione dei componenti core aggiornata a 3.0.18 e successive](https://github.com/adobe/aem-core-forms-components). Tuttavia, per i progetti e i moduli AEM esistenti, vi sono ulteriori passi da seguire:
 
-![file registro errori](/help/forms/assets/custom-function-list-error-file.png)
+   * Per il progetto AEM, l’utente deve sostituire tutte le istanze di `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` e implementa il progetto tramite la pipeline di Cloud Manager.
 
-In caso di errore, la funzione personalizzata viene recuperata e visualizzata in `error.log` file. Un messaggio come `Fetched following custom functions list` viene visualizzato nel `error.log` file:
+   * Per i moduli esistenti, se i gestori di invio personalizzati non funzionano correttamente, l’utente deve aprire e salvare il `submitForm` regola sul **Invia** tramite l&#39;editor di regole. Questa azione sostituisce la regola esistente da `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` nel modulo.
 
-![file di log degli errori con la funzione personalizzata corretta](/help/forms/assets/custom-function-list-fetched-in-error.png)
+
+* Se il file JavaScript contenente il codice per le funzioni personalizzate presenta un errore, le funzioni personalizzate non sono elencate nell’editor di regole di un modulo adattivo. Per verificare l&#39;elenco delle funzioni personalizzate, è possibile passare alla `error.log` file per l’errore. In caso di errore, l’elenco delle funzioni personalizzate appare vuoto:
+
+  ![file registro errori](/help/forms/assets/custom-function-list-error-file.png)
+
+  In caso di errore, la funzione personalizzata viene recuperata e visualizzata in `error.log` file. Un messaggio come `Fetched following custom functions list` viene visualizzato nel `error.log` file:
+
+  ![file di log degli errori con la funzione personalizzata corretta](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
 ## Considerazioni
 

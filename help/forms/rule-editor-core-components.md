@@ -5,19 +5,18 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '5453'
+source-wordcount: '5612'
 ht-degree: 0%
 
 ---
 
 
-<span class="preview"> Questo articolo contiene informazioni su alcune funzioni precedenti al rilascio. Queste funzioni pre-release sono accessibili solo tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). Le funzioni del programma pre-release sono:
-* Supporto per l’implementazione di condizioni nidificate con la funzionalità When-then-else
-* Convalidare o reimpostare pannelli e moduli, inclusi i campi
-* Supporto di funzioni JavaScript moderne, come le funzioni let e arrow (supporto ES10) all’interno delle funzioni personalizzate.
-</span>
+| Versione | Collegamento articolo |
+| -------- | ---------------------------- |
+| Componenti di base | [Fai clic qui](/help/forms/rule-editor.md) |
+| Componenti core | Questo articolo |
 
 # Aggiungere regole a un modulo adattivo (componenti core) {#adaptive-forms-rule-editor}
 
@@ -27,15 +26,23 @@ L’editor di regole fornisce un’interfaccia utente intuitiva e semplificata p
 
 * Mostrare o nascondere un oggetto
 * Attivare o disattivare un oggetto
-* Imposta un valore per un oggetto
+* Impostare un valore per un oggetto
 * Convalidare il valore di un oggetto
 * Eseguire funzioni per calcolare il valore di un oggetto
-* Richiamare un servizio FDM (Form Data Model) ed eseguire un&#39;operazione
-* Imposta proprietà di un oggetto
+* Richiamare un modello dati del modulo (FDM) ed eseguire un’operazione
+* Impostare la proprietà di un oggetto
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
-Gli utenti aggiunti al gruppo forms-power-users possono creare script e modificare quelli esistenti. Gli utenti del [!DNL forms-users] gruppo possono utilizzare gli script ma non creare o modificare gli script.
+Gli utenti aggiunti al gruppo forms-power-users possono creare script e modificare quelli esistenti. Utenti in [!DNL forms-users] Il gruppo può utilizzare gli script ma non crearli o modificarli.
+
+## Differenza tra l’editor di regole nei componenti core e l’editor di regole nei componenti di base
+
+{{rule-editor-diff}}
+
+>[!NOTE]
+>
+> Per informazioni dettagliate su come creare e utilizzare funzioni personalizzate, fare riferimento a [Funzioni personalizzate in Forms adattivo (componenti core)](/help/forms/create-and-use-custom-functions.md) articolo.
 
 ## Informazioni su una regola {#understanding-a-rule}
 
@@ -107,7 +114,7 @@ L’editor di regole fornisce un set di tipi di regole predefiniti che è possib
 
 Il **[!UICONTROL Quando]** il tipo di regola segue **condizione-azione-azione-azione alternativa** costrutto della regola o, a volte, solo **condizione-azione** costruzione. In questo tipo di regola, devi innanzitutto specificare una condizione per la valutazione seguita da un&#39;azione da attivare se la condizione viene soddisfatta ( `True`). Quando si utilizza il tipo di regola When, è possibile utilizzare più operatori AND e OR per creare [espressioni nidificate](#nestedexpressions).
 
-Utilizzando il tipo regola Quando è possibile valutare una condizione in un oggetto modulo ed eseguire azioni su uno o più oggetti.
+Utilizzando il tipo di regola When, è possibile valutare una condizione in un oggetto modulo ed eseguire azioni su uno o più oggetti.
 
 In parole semplici, una regola When tipica è strutturata come segue:
 
@@ -117,25 +124,80 @@ In parole semplici, una regola When tipica è strutturata come segue:
 
 `Then, do the following:`
 
-Azione 2 sull&#39;oggetto B; e Azione 3 sull&#39;oggetto C;
+`Action 2 on Object B;`
+`AND`
+&quot;Azione 3 sull’oggetto C;
 
 `Else, do the following:`
 
-Azione 2 sull’oggetto C; _
+`Action 2 on Object C;`
+_
 
 Quando si dispone di un componente con più valori, ad esempio pulsanti di scelta o elenco, durante la creazione di una regola per tale componente le opzioni vengono recuperate e rese disponibili automaticamente al creatore della regola. Non è necessario digitare nuovamente i valori delle opzioni.
 
-Ad esempio, un elenco ha quattro opzioni: rosso, blu, verde e giallo. Durante la creazione del regola, le opzioni (pulsanti di scelta) vengono automaticamente recuperate e rese disponibili al creatore del regola come segue:
+Ad esempio, un elenco include quattro opzioni: Rosso, Blu, Verde e Giallo. Durante la creazione della regola, le opzioni (pulsanti di scelta) vengono recuperate automaticamente e rese disponibili al creatore della regola come segue:
 
-![Opzioni di visualizzazione con più valori](assets/multivaluefcdisplaysoptions.png)
+![Opzioni per la visualizzazione di più valori](assets/multivaluefcdisplaysoptions.png)
 
-Durante la scrittura di un Quando regola, potete attivare l&#39;azione Cancella Valore di. Cancella azione Valore Di cancella il valore dell&#39;oggetto specificato. La presenza di Clear Valore of come opzione nell&#39;istruzione When consente di creare condizioni complesse con più campi. È possibile aggiungere l&#39;istruzione Else per aggiungere ulteriori condizioni
+Durante la scrittura di una regola When, puoi attivare l&#39;azione Cancella valore di. Cancella valore dell&#39;azione cancella il valore dell&#39;oggetto specificato. L&#39;opzione Clear Value (Cancella valore) nell&#39;istruzione When consente di creare condizioni complesse con più campi. È possibile aggiungere l&#39;istruzione Else per aggiungere ulteriori condizioni
 
 ![Cancella valore di](assets/clearvalueof.png)
 
 >[!NOTE]
 >
 > Quando il tipo di regola supporta solo istruzioni then-else a livello singolo.
+
+#### Più campi consentiti in [!UICONTROL Quando] {#allowed-multiple-fields}
+
+In **Quando** condizione, puoi aggiungere altri campi oltre al campo a cui viene applicata la regola.
+
+Ad esempio, utilizzando il tipo di regola When, è possibile valutare una condizione su diversi oggetti modulo ed eseguire l&#39;azione:
+
+Quando:
+
+(Oggetto A Condizione 1)
+
+E/O
+
+(Oggetto B Condizione 2)
+
+Quindi, effettua le seguenti operazioni:
+
+Azione 1 sull&#39;oggetto A
+
+_
+
+![Più campi consentiti in Quando](/help/forms/assets/allowed-multiple-field-when.png)
+
+##### Considerazioni durante l’utilizzo di più campi consentiti nella funzione condizione When
+
+* Assicurati che [Componente core impostato su versione 3.0.14 o successiva](https://github.com/adobe/aem-core-forms-components) per utilizzare questa funzione nell’editor di regole.
+* Se le regole vengono applicate a campi diversi all&#39;interno della condizione Quando, il regola attiva lineare se viene modificato solo uno di tali campi.
+
+
+<!--
+* It is not possible to add multiple fields in the When condition while applying rules to a button.
+
+##### To enable Allowed Multiple fields in When condition feature
+
+Allowed Multiple fields in When condition feature is disabled by default. To enable this feature, add a custom property at the template policy:
+
+1. Open the corresponding template associated with an Adaptive Form in the template editor.
+1. Select the existing policy as **formcontainer-policy**.
+1. Navigate to the **[!UICONTROL Structure]**  view and, from the **[!UICONTROL Allowed Components]** list, open the **[!UICONTROL Adaptive Forms Container]** policy.
+1. Go to the **[!UICONTROL Custom Properties]** tab and to add a custom property, click **[!UICONTROL Add]**.
+1. Specify the **Group Name** of your choice. For example, in our case, we added the group name as **allowedfeature**.
+1. Add the **key** and **value** pair as follows:
+   * key: fd:changeEventBehaviour
+   * value: deps
+1. Click **[!UICONTROL Done]**. -->
+
+Se i campi multipli consentiti nella funzionalità Quando condizione riscontrano problemi, seguire la procedura di risoluzione dei problemi come segue:
+
+1. Aprire il modulo in modalità di modifica.
+1. Apri la browser contenuto e seleziona il **[!UICONTROL componente Contenitore]** guida del modulo adattivo.
+1. Fai clic sulle proprietà Contenitore guida ![Proprietà guida](/help/forms/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Fai clic su Fine e salva di nuovo la finestra di dialogo.
 
 **[!UICONTROL Nascondi]** Nasconde l&#39;oggetto specificato.
 
@@ -194,7 +256,7 @@ La figura seguente illustra un esempio di attivazione dinamica della casella di 
 
 **[!UICONTROL Convalida]** Convalida il modulo o l&#39;oggetto specificato.
 
-**[!UICONTROL Aggiungi istanza]** Aggiunge un istanza del pannello o della riga di tabella ripetibile specificata.
+**[!UICONTROL Aggiungi istanza]** Aggiunge un&#39;istanza del pannello o della riga di tabella ripetibile specificata.
 
 **[!UICONTROL Rimuovi istanza]** Rimuove un&#39;istanza del pannello o della riga di tabella ripetibile specificata.
 
@@ -225,7 +287,7 @@ Nell&#39;esempio seguente viene selezionato il valore di `Question2` as `True` e
 
 Esempio di Set Valore regola mediante l&#39;utilizzo del servizio Form Data Model.
 
-### [!UICONTROL Visualizza] {#show}
+### [!UICONTROL Spettacolo] {#show}
 
 Utilizzo di **[!UICONTROL Spettacolo]** tipo di regola, è possibile scrivere una regola per mostrare o nascondere un oggetto modulo a seconda che una condizione sia soddisfatta o meno. Il tipo di regola Mostra attiva anche l’azione Nascondi se la condizione non viene soddisfatta o restituisce `False`.
 
@@ -376,7 +438,7 @@ Quando viene toccato, questo pulsante attiva o disattiva il riquadro delle funzi
 
 ### D. Editor di regole visive {#visual-rule-editor}
 
-L’editor di regole visive è l’area in cui si scrivono le regole nella modalità editor visivo dell’interfaccia utente dell’editor di regole. Consente di selezionare un tipo di regola e definire di conseguenza condizioni e azioni. Quando si definiscono condizioni e azioni in una regola, è possibile trascinare gli oggetti modulo e le funzioni dal riquadro Oggetti modulo e funzioni.
+L’editor di regole visive è l’area in cui si scrivono le regole nella modalità editor visivo dell’interfaccia utente dell’editor di regole. Ti consente di selezionare un tipo di regola e di definire di conseguenza condizioni e azioni. Quando si definiscono condizioni e azioni in una regola, è possibile trascinare gli oggetti modulo e le funzioni dal riquadro Oggetti modulo e funzioni.
 
 Per ulteriori informazioni sull’utilizzo dell’editor di regole visive, consulta [Scrivi regole](rule-editor.md#p-write-rules-p).
 <!-- 
@@ -395,13 +457,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. Tasti Done e cancel {#done-and-cancel-buttons}
 
-Il **[!UICONTROL Fine]** per salvare una regola. È possibile salvare una regola incompleta. Tuttavia, i dati incompleti non sono validi e non vengono eseguiti. Le regole salvate in un oggetto modulo vengono elencate quando si lanciare la regola editor successiva dallo stesso oggetto modulo. È possibile gestire regole esistenti in questa visualizzazione. Per ulteriori informazioni, vedere [Gestire le regole](rule-editor.md#p-manage-rules-p).
+Il **[!UICONTROL Fine]** per salvare una regola. È possibile salvare una regola incompleta. Tuttavia, gli incompleti vengono non valido e non vengono eseguiti. Le regole salvate in un oggetto modulo vengono elencate quando si lanciare la regola editor successiva dallo stesso oggetto modulo. È possibile gestire regole esistenti in questa visualizzazione. Per ulteriori informazioni, vedere [Gestire le regole](rule-editor.md#p-manage-rules-p).
 
-Il **[!UICONTROL Annulla]** il pulsante elimina tutte le modifiche apportate a una regola e chiude l’editor di regole.
+Il **[!UICONTROL Annulla]** pulsante elimina tutte le modifiche apportate a un regola e chiude il regola editor.
 
-## Scrivi regole {#write-rules}
+## Scrivere regole {#write-rules}
 
-Puoi scrivere regole utilizzando l’editor di regole visive <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+È possibile scrivere regole utilizzando i regola editor visivi <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 Vediamo innanzitutto come scrivere regole utilizzando l’editor visivo.
 
@@ -411,7 +473,7 @@ Comprendiamo come creare una regola nell’editor visivo utilizzando il seguente
 
 ![Create-rule-example](assets/create-rule-example.png)
 
-La sezione Requisiti del prestito nell&#39;esempio di modulo di domanda di prestito richiede ai richiedenti di specificare il loro stato civile, lo stipendio e, in caso di matrimonio, lo stipendio del coniuge. In base agli input dell’utente, la regola calcola l’importo di idoneità al prestito e viene visualizzata nel campo Idoneità al prestito. Per implementare lo scenario, applica le seguenti regole:
+La sezione Requisiti del prestito nell&#39;esempio di modulo di domanda di prestito richiede ai richiedenti di specificare il loro stato civile, lo stipendio e, in caso di matrimonio, lo stipendio del coniuge. Sulla base degli input del utente, il regola calcola l&#39;importo di idoneità del prestito e lo visualizza nel campo Idoneità del prestito. Per implementare lo scenario, applica le seguenti regole:
 
 * Il campo Stipendio coniuge viene visualizzato solo quando lo stato civile è sposato.
 * L’importo di ammissibilità al prestito è pari al 50% dello stipendio totale.
@@ -515,9 +577,9 @@ Per scrivere le regole, effettua le seguenti operazioni:
    >
    >È possibile creare espressioni complesse utilizzando componenti, funzioni, espressioni matematiche e valori di proprietà dal campo Seleziona opzione.
 
-   Quindi, crea una condizione, che quando restituisce True, l’espressione viene eseguita.
+   Successivo, creare una condizione che, quando restituisce True, viene eseguita l&#39;espressione.
 
-1. Seleziona **[!UICONTROL Aggiungi condizione]** per aggiungere un&#39;istruzione When.
+1. Selezionare **[!UICONTROL Aggiungi condizione]** per aggiungere un&#39;istruzione Quando.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
@@ -802,11 +864,11 @@ Puoi anche trascinare le condizioni all’interno di una regola per modificarla.
 
 ## Condizioni di espressione data {#dateexpression}
 
-L’editor di regole consente di utilizzare i confronti tra date per creare condizioni.
+La regola editor consente di utilizzare i confronti di date per creare condizioni.
 
-Di seguito è riportata una condizione di esempio che visualizza un oggetto di testo statico se l’ipoteca sulla casa è già stata accettata, che l’utente indica compilando il campo data.
+Di seguito è riportata una condizione di esempio che visualizza un oggetto di testo statico se l&#39;ipoteca sulla casa è già stata presa, che il utente indica compilando il campo data.
 
-Quando la data del mutuo dell’immobile compilata dall’utente è nel passato, il modulo adattivo visualizza una nota relativa al calcolo del reddito. La regola seguente confronta la data compilata dall&#39;utente con la data corrente. Se la data compilata dall&#39;utente è precedente alla data corrente, nel modulo viene visualizzato il messaggio di testo Income.
+Quando la data di ipoteca dell&#39;immobile compilata dal utente è passata, il modulo adattivo visualizza una nota sul calcolo del reddito. Nella regola seguente viene confrontata la data compilata dall&#39;utente con la data corrente e se la data compilata dal utente è precedente alla data corrente, nel modulo viene visualizzato il messaggio di testo (denominato Reddito).
 
 ![Condizione espressione data](assets/dateexpressioncondition.png)
 
@@ -897,8 +959,6 @@ Rule in the code editor -->
 Nel modulo dell&#39;ordine di acquisto illustrato nell&#39;esempio precedente, si desidera impedire agli utenti di ordinare più di una quantità di qualsiasi prodotto il cui prezzo sia superiore a 10000. Per eseguire questa convalida, è possibile scrivere una regola di convalida come illustrato di seguito.
 
 ![Esempio di convalida](assets/example-validate.png)
-
-Regola nell’editor visivo
 
 <!-- The rule appears as follows in the code editor.
 

@@ -3,10 +3,10 @@ title: Funzioni correnti di Early Adopter di [!DNL Adobe Experience Manager Form
 description: Funzioni correnti di Early Adopter di [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
-source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
+source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 6%
+source-wordcount: '1731'
+ht-degree: 5%
 
 ---
 
@@ -20,8 +20,7 @@ Il programma AEM Forms Early Adopter Program offre un’opportunità unica per o
 
 ## Come partecipare al programma Early Adopter?
 
-Se sei interessato a partecipare al nostro programma Early Adopter per qualsiasi innovazione iniziale, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a `aem-forms-ea@adobe.com` per richiedere l&#39;accesso. Puoi richiedere l’accesso a tutte le innovazioni o a quelle specifiche.
-
+Se sei interessato a partecipare al nostro programma Early Adopter per qualsiasi innovazione iniziale, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  per richiedere l&#39;accesso. Puoi richiedere l’accesso a tutte le innovazioni o a quelle specifiche.
 
 ## Innovazioni preliminari per l&#39;adozione
 
@@ -154,6 +153,15 @@ Ecco un raggruppamento delle funzioni delle API di Doc Assurance:
 Complessivamente, [API di Doc Assurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) migliorare la sicurezza e la conformità dei documenti aggiungendo un ulteriore livello di controllo.
 
 
+### API dei servizi Forms
+
+Il servizio Forms genera PDF forms interattivi per l’acquisizione dei dati. Può essere utilizzato anche per importare/esportare dati da/verso un modulo interattivo di PDF esistente e convalidare i dati inviati. Ecco una suddivisione delle sue funzionalità:
+
+* **Rendering di Forms**: genera un modulo PDF interattivo da un modello creato con AEM Forms Designer e, facoltativamente, da dati XML. In sostanza, questo produce un modulo compilabile di PDF, facoltativamente precompilato con i dati.
+
+* **Estrazione e importazione dei dati**: importa i dati in un modulo PDF esistente ed estrae i dati da un modulo PDF compilato. Sono supportati sia i formati di dati XDP che XML e l’importazione in PDF forms non XFA (noti anche come AcroForms) supporta anche i dati FDF e XFDF.
+
+* **Convalida dei dati**: convalida dei dati inviati, in formato XDP o XML, in base a un modello creato utilizzando AEM Forms Designer.
 
 ## Consulta anche
 
