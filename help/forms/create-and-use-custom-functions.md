@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
+source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
 workflow-type: tm+mt
-source-wordcount: '3510'
+source-wordcount: '3513'
 ht-degree: 0%
 
 ---
@@ -649,7 +649,7 @@ Fai riferimento all’illustrazione della `console window` di seguito per dimost
 
 
 
-#### Ignora messaggi di errore e di completamento dell’invio del modulo
+#### Ignorare i messaggi di errore e di successo per l’invio del modulo adattivo
 
 Aggiungi la seguente riga di codice come spiegato in [create-custom-function](#create-custom-function) , per personalizzare il messaggio di invio o di errore per l’invio dei moduli e visualizzare i messaggi di invio dei moduli in una casella modale:
 
