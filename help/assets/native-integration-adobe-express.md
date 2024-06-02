@@ -2,16 +2,16 @@
 title: Integrazione nativa di AEM Assets con Adobi Express
 description: L’integrazione nativa di AEM Assets con Adobi Express consente di accedere direttamente alle risorse memorizzate in AEM Assets dall’interfaccia utente di Adobi Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 8bbf9a2ba8f708a5a03d11bc0388d39b32d4c7b3
+source-git-commit: 69d890eaae30468db89b9aff975a2a421f53fcff
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 6%
+source-wordcount: '597'
+ht-degree: 9%
 
 ---
 
 # Integrazione nativa con Adobi Express {#native-integration-adobe-express}
 
-AEM Assets si integra in modo nativo con Adobi Express, che consente di accedere direttamente alle risorse memorizzate in AEM Assets dall’interfaccia utente di Adobi Express. Il contenuto gestito in AEM Assets può essere inserito nell’area di lavoro di Express e quindi il contenuto nuovo o modificato può essere salvato in un archivio AEM Assets. L’integrazione offre i seguenti vantaggi chiave:
+AEM Assets si integra in modo nativo con Adobe Express, che dalla sua interfaccia utente ti consente di accedere direttamente alle risorse memorizzate in AEM Assets. Il contenuto gestito in AEM Assets può essere inserito nell’area di lavoro di Express e quindi il contenuto nuovo o modificato può essere salvato in un archivio AEM Assets. L’integrazione offre i seguenti vantaggi chiave:
 
 * È stato migliorato il riutilizzo dei contenuti grazie alla modifica e al salvataggio di nuove risorse in AEM.
 
@@ -28,13 +28,17 @@ Per iniziare a utilizzare AEM Assets nell’editor di Adobi Express, effettua le
 
 1. Apri l’applicazione web Adobi Express.
 
-1. Apri una nuova area di lavoro vuota caricando un nuovo modello o progetto oppure creando una risorsa.
+2. Apri una nuova area di lavoro vuota caricando un nuovo modello o progetto oppure creando una risorsa.
 
-1. Clic **[!UICONTROL Risorse]** disponibile nel riquadro di navigazione a sinistra. In Adobe Express viene visualizzato l’elenco degli archivi a cui sei autorizzato ad accedere, insieme all’elenco delle risorse e cartelle disponibili a livello principale.
+3. Clic **[!UICONTROL Risorse]** disponibile nel riquadro di navigazione a sinistra. In Adobe Express viene visualizzato l’elenco degli archivi a cui sei autorizzato ad accedere, insieme all’elenco delle risorse e cartelle disponibili a livello principale.
 
-1. Sfoglia o cerca le risorse nel tuo archivio per trascinarle nell’area di lavoro. Puoi filtrare le risorse utilizzando vari filtri disponibili, ad esempio tipo di file, tipo MIME e dimensioni.
+4. Sfoglia o cerca le risorse nel tuo archivio per trascinarle nell’area di lavoro. Puoi filtrare le risorse utilizzando vari filtri disponibili, ad esempio tipo di file, tipo MIME e dimensioni.
 
-   ![inclusione delle risorse dal componente aggiuntivo di Assets](assets/adobe-express-native-integration.png)
+   >[!NOTE]
+   >
+   >Il filtro per dimensione non si applica ai video.
+
+   ![Inclusione delle risorse dal componente aggiuntivo di Assets](assets/adobe-express-native-integration.png)
 
 
 ## Salvare progetti di Adobe Express in AEM Assets {#save-express-projects-in-assets}
@@ -45,23 +49,38 @@ Dopo aver incorporato le modifiche appropriate nell’area di lavoro di Express,
 
    ![Salvare le risorse in AEM](assets/adobe-express-share.png)
 
-1. Seleziona **[!UICONTROL AEM Assets]** dal **[!UICONTROL Storage]** disponibile nel riquadro a destra. In Adobe Express viene visualizzata la finestra di dialogo di caricamento.
-1. Specifica un nome e un formato per la risorsa. È possibile salvare il contenuto dell&#39;area di lavoro in formato PNG o JPEG.
+2. Dalla sezione Archiviazione nel riquadro di destra, seleziona, **AEM Assets**. In Adobe Express viene visualizzata la finestra di dialogo di caricamento.
+3. Specifica un nome e un formato per la risorsa. Puoi salvare il contenuto dell’area di lavoro nei formati PNG, JPEG, PDF, MP4, MP4+PNG o MP4+JPEG. Il formato viene regolato automaticamente in base alle risorse.
 
-1. Fai clic sull’icona della cartella accanto al **[!UICONTROL Posizione]** , passa alla posizione in cui devi salvare la risorsa e fai clic su **[!UICONTROL Seleziona]**. Il nome della cartella viene visualizzato nel **[!UICONTROL Posizione]** campo.
+   >[!NOTE]
+   >
+   >Selezionando &quot;Pagina corrente&quot; il file viene salvato nella cartella di destinazione. Selezionando &quot;Tutte le pagine&quot; viene creata una nuova cartella nella destinazione per tutti i file non PDF e li viene salvati mentre i file PDF vengono salvati come un singolo file nella cartella di destinazione.
 
-   ![Salvare le risorse in AEM](assets/adobe-express-upload.png)
+4. Fare clic sull&#39;area di testo sotto **Cartella di destinazione** per selezionare una posizione e salvare le risorse.
 
-1. Facoltativo: puoi aggiungere i metadati della campagna per il caricamento utilizzando **[!UICONTROL Nome progetto o campagna]** campo. Puoi usare un nome esistente o crearne uno nuovo. Puoi definire più nomi di progetto o campagna per il caricamento. Durante la digitazione di un nome, fare clic in un punto qualsiasi della finestra di dialogo oppure premere il tasto `,` (Virgola) chiave per registrare il nome.
+   ![Salvare le risorse in AEM](/help/assets/assets/page-selection-and-destination-folder.png)
 
-   Come best practice, l’Adobe consiglia di specificare i valori negli altri campi e di migliorare l’esperienza di ricerca delle risorse caricate.
-1. Analogamente, definisci i valori per **[!UICONTROL Parole chiave]** e **[!UICONTROL Canali]** campi.
+5. Facoltativo: puoi aggiungere i metadati della campagna per il caricamento utilizzando **Nome progetto o campagna** campo. Puoi usare un nome esistente o crearne uno nuovo. Puoi definire più nomi di progetto o campagna per il caricamento. Per registrare il nome, digitalo e premi Invio.
+Come best practice, l’Adobe consiglia di specificare i valori negli altri campi e di migliorare l’esperienza di ricerca delle risorse caricate.
 
-1. Clic **[!UICONTROL Carica]** per caricare la risorsa in AEM Assets.
+6. Analogamente, definisci i valori per **[!UICONTROL Parole chiave]** e **[!UICONTROL Canali]** campi.
+
+7. Clic **[!UICONTROL Carica]** per caricare la risorsa in AEM Assets.
 
 
 
 
 ## Limitazioni {#limitations}
 
-Si è verificato un bug noto in alcuni utenti con accesso a più archivi Assets durante il salvataggio di un documento con risorse provenienti da più archivi.
+1. Per l&#39;importazione e l&#39;esportazione, il tipo di file video supportato è MP4.
+
+2. Per l&#39;importazione video MP4:
+
+   a) La dimensione massima del file supportata è 200 MB. Se questo limite viene superato, viene visualizzato un messaggio di avviso.
+b) La risoluzione massima supportata è di 3840 X 3840 pixel.
+c) I video con sfondi trasparenti (canale alfa) non sono supportati.
+
+3. Per l&#39;esportazione video MP4:
+
+   a) La dimensione massima del file supportata è 200 MB. Se questo limite supera, viene visualizzato un messaggio di avviso con un suggerimento di soluzione alternativa, come illustrato nell&#39;immagine seguente
+   ![avviso con soluzione alternativa](/help/assets/assets/alert-with-workaround.png).
