@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
+source-git-commit: 05b149c60cb8d05489668b13f63ed5b0e1d0bbfb
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3522'
 ht-degree: 0%
 
 ---
@@ -442,7 +442,7 @@ Scopri in che modo le funzioni personalizzate utilizzano gli oggetti campo e glo
 
 ![Modulo per contattarci](/help/forms/assets/contact-us-form.png)
 
-+++ Caso d’uso: mostrare un pannello utilizzando `SetProperty` regola
+#### Caso d’uso: mostrare un pannello utilizzando la regola SetProperty
 
 Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) , per impostare il campo modulo come `Required`.
 
