@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8f33174ac6b699af34ca8af14387eaca5cae969c
+source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
 workflow-type: tm+mt
-source-wordcount: '3522'
+source-wordcount: '3510'
 ht-degree: 0%
 
 ---
@@ -443,7 +443,7 @@ Scopri in che modo le funzioni personalizzate utilizzano gli oggetti campo e glo
 
 ![Modulo per contattarci](/help/forms/assets/contact-us-form.png)
 
-#### Caso d’uso: mostrare un pannello utilizzando la regola SetProperty
+#### Visualizzare un pannello utilizzando la regola SetProperty
 
 Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) , per impostare il campo modulo come `Required`.
 
@@ -486,7 +486,7 @@ Se sono presenti errori nei campi di `personaldetails` a livello di campo facend
 ![Anteprima modulo proprietà](/help/forms/assets/set-property-panel.png)
 
 
-#### Caso d’uso: convalidare il campo.
+#### Convalida un campo.
 
 Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) per convalidare il campo.
 
@@ -527,7 +527,7 @@ Se l’utente immette un numero di telefono valido e tutti i campi nel campo `pe
 
 
 
-#### Caso d’uso: reimpostare un pannello
+#### Reimpostare un pannello
 
 Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) per ripristinare il pannello.
 
@@ -561,7 +561,7 @@ Vedere l&#39;illustrazione seguente per mostrare che se l&#39;utente fa clic su 
 
 
 
-#### Caso d’uso: per visualizzare un messaggio personalizzato a livello di campo e contrassegnare il campo come non valido
+#### Per visualizzare un messaggio personalizzato a livello di campo e contrassegnare il campo come non valido
 
 È possibile utilizzare `markFieldAsInvalid()` per definire un campo come non valido e impostare un messaggio di errore personalizzato a livello di campo. Il `fieldIdentifier` il valore può essere `fieldId`, o `field qualifiedName`, o `field dataRef`. Il valore dell’oggetto denominato `option` può essere `{useId: true}`, `{useQualifiedName: true}`, o `{useDataRef: true}`.
 Le sintassi utilizzate per contrassegnare un campo come non valido e impostare un messaggio personalizzato sono:
@@ -604,7 +604,7 @@ Se l’utente immette più di 15 caratteri nella casella di testo dei commenti, 
 
 
 
-#### Caso d’uso: inviare i dati modificati al server
+#### Modificare i dati acquisiti prima dell&#39;invio
 
 La seguente riga di codice:
 `globals.functions.submitForm(globals.functions.exportData(), false);` viene utilizzato per inviare i dati del modulo dopo la manipolazione.
@@ -649,7 +649,7 @@ Fai riferimento all’illustrazione della `console window` di seguito per dimost
 
 
 
-#### Caso d’uso: sostituire i gestori di errori e di operazioni riuscite per l’invio del modulo
+#### Ignora messaggi di errore e di completamento dell’invio del modulo
 
 Aggiungi la seguente riga di codice come spiegato in [create-custom-function](#create-custom-function) , per personalizzare il messaggio di invio o di errore per l’invio dei moduli e visualizzare i messaggi di invio dei moduli in una casella modale:
 
