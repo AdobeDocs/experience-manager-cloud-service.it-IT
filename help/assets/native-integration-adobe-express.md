@@ -2,9 +2,9 @@
 title: Integrazione nativa di AEM Assets con Adobi Express
 description: L’integrazione nativa di AEM Assets con Adobi Express consente di accedere direttamente alle risorse memorizzate in AEM Assets dall’interfaccia utente di Adobi Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 69d890eaae30468db89b9aff975a2a421f53fcff
+source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '598'
 ht-degree: 9%
 
 ---
@@ -65,7 +65,7 @@ Come best practice, l’Adobe consiglia di specificare i valori negli altri camp
 
 6. Analogamente, definisci i valori per **[!UICONTROL Parole chiave]** e **[!UICONTROL Canali]** campi.
 
-7. Clic **[!UICONTROL Carica]** per caricare la risorsa in AEM Assets.
+7. Clic **[!UICONTROL Carica]** per caricare le risorse su AEM Assets.
 
 
 
