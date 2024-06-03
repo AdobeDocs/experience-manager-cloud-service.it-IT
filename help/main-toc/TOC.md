@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 8123d5c9e3343361baab651d2c1eb72779b952ab
 workflow-type: tm+mt
-source-wordcount: '4997'
+source-wordcount: '5001'
 ht-degree: 99%
 
 ---
@@ -741,6 +741,7 @@ ht-degree: 99%
       + [Installazione e configurazione](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Memorizzazione in cache di Dispatcher e CDN](/help/forms/troubleshooting-caching-performance.md)
       + [Riavvio di SDK di AEM](/help/forms/restart-aem-sdk.md)
+      + [Risoluzione degli errori di creazione di Forms](/help/forms/form-creation-failing.md)
 + Screens {#screens-as-cloud-service}
    + Panoramica di Screens as a Cloud Service {#overview}
       + [Introduzione](/help/screens-cloud/introduction/introduction.md)
@@ -1184,9 +1185,9 @@ ht-degree: 99%
       + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Configurazione del traffico sulla rete CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
       + [Il lato Edge include](/help/implementing/dispatcher/edge-side-includes.md)
-      + [Configurazione delle credenziali e dell’autenticazione CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md)
+      + [Configurazione delle credenziali CDN e dell’autenticazione](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [Configurazione delle pagine di errore della rete CDN](/help/implementing/dispatcher/cdn-error-pages.md)
-      + [Rimozione della cache CDN](/help/implementing/dispatcher/cdn-cache-purge.md)
+      + [Eliminazione della cache CDN](/help/implementing/dispatcher/cdn-cache-purge.md)
       + [Memorizzazione in cache in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Connettori {#connectors}
    + [Implementazione di un connettore AEM](/help/connectors/implement.md)
