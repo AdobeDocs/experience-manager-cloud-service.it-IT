@@ -3,14 +3,14 @@ title: Come risolvere gli errori di creazione dei moduli?
 description: Risoluzione dei problemi relativi agli errori di creazione dei moduli nell’ambiente as a Cloud Service di AEM Forms.
 feature: Adaptive Forms, Troubleshooting
 role: User
-source-git-commit: 5e7cd7015d68cc634fcf6a99dd552289abbaedcf
+source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 1%
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 
-# Problema   {#form-creation-fails}
+# Problema durante la pubblicazione dei moduli{#form-creation-fails}
 
 Dopo che gli utenti si aggiornano alla versione as a Cloud Service di AEM Forms `2024.5.16461`:
 
