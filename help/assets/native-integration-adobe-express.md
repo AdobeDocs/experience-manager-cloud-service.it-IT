@@ -2,9 +2,9 @@
 title: Integrazione nativa di AEM Assets con Adobi Express
 description: L’integrazione nativa di AEM Assets con Adobi Express consente di accedere direttamente alle risorse memorizzate in AEM Assets dall’interfaccia utente di Adobi Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
+source-git-commit: 4e33782dd8db0c1185b9a7733e7bcccfbcf3c3ba
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '612'
 ht-degree: 9%
 
 ---
@@ -43,32 +43,25 @@ Per iniziare a utilizzare AEM Assets nell’editor di Adobi Express, effettua le
 
 ## Salvare progetti di Adobe Express in AEM Assets {#save-express-projects-in-assets}
 
-Dopo aver incorporato le modifiche appropriate nell’area di lavoro di Express, puoi salvarla nell’archivio di AEM Assets.
+Dopo aver incorporato le modifiche appropriate nell’area di lavoro di Express, puoi salvarla nell’archivio AEM Assets.
 
 1. Clic **[!UICONTROL Condividi]** per aprire **[!UICONTROL Condividi]** .
 
    ![Salvare le risorse in AEM](assets/adobe-express-share.png)
 
-2. Dalla sezione Archiviazione nel riquadro di destra, seleziona, **AEM Assets**. In Adobe Express viene visualizzata la finestra di dialogo di caricamento.
-3. Specifica un nome e un formato per la risorsa. Puoi salvare il contenuto dell’area di lavoro nei formati PNG, JPEG, PDF, MP4, MP4+PNG o MP4+JPEG. Il formato viene regolato automaticamente in base alle risorse.
-
-   >[!NOTE]
-   >
-   >Selezionando &quot;Pagina corrente&quot; il file viene salvato nella cartella di destinazione. Selezionando &quot;Tutte le pagine&quot; viene creata una nuova cartella nella destinazione per tutti i file non PDF e li viene salvati mentre i file PDF vengono salvati come un singolo file nella cartella di destinazione.
-
-4. Fare clic sull&#39;area di testo sotto **Cartella di destinazione** per selezionare una posizione e salvare le risorse.
+2. Dalla sezione Archiviazione nel riquadro di destra, selezionare **AEM Assets**. In Adobe Express viene visualizzata la finestra di dialogo di caricamento.
+3. Seleziona una delle seguenti opzioni **Pagina corrente** o **Tutte le pagine** salvataggio. Selezione **Pagina corrente** salva il file nella cartella di destinazione, tuttavia, selezionando **Tutte le pagine** crea una nuova cartella nella destinazione per tutti i file non PDF e li salva come file separati mentre i file PDF vengono salvati come un singolo file nella cartella di destinazione.
+4. Specifica un nome e un formato per la risorsa. Puoi salvare il contenuto dell’area di lavoro nei formati PNG, JPEG, PDF, MP4, MP4+PNG o MP4+JPEG. Il formato viene regolato automaticamente in base alle risorse.
+5. Fai clic sull’icona della cartella in **Cartella di destinazione** per selezionare una posizione e salvare le risorse.
 
    ![Salvare le risorse in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. Facoltativo: puoi aggiungere i metadati della campagna per il caricamento utilizzando **Nome progetto o campagna** campo. Puoi usare un nome esistente o crearne uno nuovo. Puoi definire più nomi di progetto o campagna per il caricamento. Per registrare il nome, digitalo e premi Invio.
-Come best practice, l’Adobe consiglia di specificare i valori negli altri campi e di migliorare l’esperienza di ricerca delle risorse caricate.
+6. Facoltativo: puoi aggiungere i metadati della campagna per il caricamento utilizzando **Nome progetto o campagna** campo. Puoi usare un nome esistente o crearne uno nuovo. Puoi definire più nomi di progetto o campagna per il caricamento. Per registrare il nome, digitalo e premi Invio.
+Come best practice, in Adobe è consigliabile specificare i valori negli altri campi e creare un’esperienza di ricerca avanzata per le risorse caricate.
 
-6. Analogamente, definisci i valori per **[!UICONTROL Parole chiave]** e **[!UICONTROL Canali]** campi.
+7. Analogamente, definisci i valori per **[!UICONTROL Parole chiave]** e **[!UICONTROL Canali]** campi.
 
-7. Clic **[!UICONTROL Carica]** per caricare le risorse su AEM Assets.
-
-
-
+8. Clic **[!UICONTROL Carica]** per caricare le risorse su AEM Assets.
 
 ## Limitazioni {#limitations}
 
@@ -76,11 +69,13 @@ Come best practice, l’Adobe consiglia di specificare i valori negli altri camp
 
 2. Per l&#39;importazione video MP4:
 
-   a) La dimensione massima del file supportata è 200 MB. Se questo limite viene superato, viene visualizzato un messaggio di avviso.
-b) La risoluzione massima supportata è di 3840 X 3840 pixel.
-c) I video con sfondi trasparenti (canale alfa) non sono supportati.
+   1. La dimensione massima del file supportata è 200 MB. Se questo limite viene superato, viene visualizzato un messaggio di avviso.
+   2. La risoluzione massima supportata è di 3840 X 3840 pixel.
+   3. I video con sfondi trasparenti (canale alfa) non sono supportati.
 
 3. Per l&#39;esportazione video MP4:
 
-   a) La dimensione massima del file supportata è 200 MB. Se questo limite viene superato, viene visualizzato un messaggio di avviso con un suggerimento di soluzione alternativa, come illustrato nell&#39;immagine seguente.
-   ![avviso con soluzione alternativa](/help/assets/assets/alert-with-workaround.png)
+   1. La dimensione massima del file supportata è 200 MB. Se questo limite viene superato, un avviso consiglia di tagliare il video a 200 MB o meno, oppure di caricarlo manualmente nella cartella di destinazione di AEM Assets dopo averlo scaricato.
+
+
+
