@@ -2,7 +2,7 @@
 title: Integrazione nativa di AEM Assets con Adobi Express
 description: L’integrazione nativa di AEM Assets con Adobi Express consente di accedere direttamente alle risorse memorizzate in AEM Assets dall’interfaccia utente di Adobi Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
+source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 9%
@@ -58,7 +58,7 @@ Dopo aver incorporato le modifiche appropriate nell’area di lavoro di Express,
 
 4. Fare clic sull&#39;area di testo sotto **Cartella di destinazione** per selezionare una posizione e salvare le risorse.
 
-   ![Salvare le risorse in AEM](/help/assets/assets/page-selection-and-destination-folder.png)
+   ![Salvare le risorse in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
 5. Facoltativo: puoi aggiungere i metadati della campagna per il caricamento utilizzando **Nome progetto o campagna** campo. Puoi usare un nome esistente o crearne uno nuovo. Puoi definire più nomi di progetto o campagna per il caricamento. Per registrare il nome, digitalo e premi Invio.
 Come best practice, l’Adobe consiglia di specificare i valori negli altri campi e di migliorare l’esperienza di ricerca delle risorse caricate.
@@ -82,5 +82,5 @@ c) I video con sfondi trasparenti (canale alfa) non sono supportati.
 
 3. Per l&#39;esportazione video MP4:
 
-   a) La dimensione massima del file supportata è 200 MB. Se questo limite supera, viene visualizzato un messaggio di avviso con un suggerimento di soluzione alternativa, come illustrato nell&#39;immagine seguente
-   ![avviso con soluzione alternativa](/help/assets/assets/alert-with-workaround.png).
+   a) La dimensione massima del file supportata è 200 MB. Se questo limite viene superato, viene visualizzato un messaggio di avviso con un suggerimento di soluzione alternativa, come illustrato nell&#39;immagine seguente.
+   ![avviso con soluzione alternativa](/help/assets/assets/alert-with-workaround.png)
