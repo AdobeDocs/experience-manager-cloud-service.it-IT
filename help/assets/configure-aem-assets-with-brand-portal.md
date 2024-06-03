@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 5fd488a6d5272ac71208e5645facc04b3d9ac51a
 workflow-type: tm+mt
-source-wordcount: '2573'
-ht-degree: 9%
+source-wordcount: '1766'
+ht-degree: 10%
 
 ---
 
@@ -81,6 +81,7 @@ Dopo l’attivazione del tenant Brand Portal in Cloud Manager, puoi accedere a B
 L’URL predefinito del tenant Brand Portal è: `https://<tenant-id>.brand-portal.adobe.com/`.
 
 L’ID tenant è l’organizzazione IMS.
+
 
 Se non sei sicuro dell’URL di Brand Portal, effettua le seguenti operazioni:
 
@@ -188,15 +189,20 @@ Insieme al flusso di lavoro di automazione per attivare Brand Portal su Experien
 
 ## Configurazione manuale con Adobe Developer Console {#manual-configuration}
 
+>[!NOTE]
+>
+> Non puoi creare nuove credenziali JWT da giugno 2024 in poi. D’ora in poi, verranno create solo le credenziali OAuth.
+> Vedi altro [creazione di una configurazione OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+
 La sezione seguente descrive come configurare manualmente Experience Manager Assets as a [!DNL Cloud Service] con Brand Portal utilizzando la console Adobe Developer.
 
 In precedenza, Experience Manager Assets as a [!DNL Cloud Service] è stato configurato manualmente con Brand Portal tramite la console Adobe Developer, che fornisce un token di account Adobe Identity Management Services (IMS) per l’autorizzazione del tenant Brand Portal. Richiede configurazioni sia nella console Experience Manager Assets che in quella Adobe Developer.
 
-1. In Experience Manager Assets, crea un account IMS e genera una chiave pubblica (certificato).
+<!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
+<!--1. Under the project, configure an API using the public key to create a service account connection.
+1. Get the service account credentials and JSON Web Token (JWT) payload information.
+1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.-->
 1. Nella console Adobe Developer, crea un progetto per il tenant Brand Portal (organizzazione).
-1. Nel progetto, configura un’API utilizzando la chiave pubblica per creare una connessione a un account di servizio.
-1. Ottieni le credenziali dell’account di servizio e le informazioni sul payload JSON Web Token (JWT).
-1. In Experience Manager Assets, configura l’account IMS utilizzando le credenziali dell’account di servizio e il payload JWT.
 1. In Experience Manager Assets, configura il servizio cloud Brand Portal utilizzando l’account IMS e l’endpoint Brand Portal (URL organizzazione).
 1. Verifica la configurazione pubblicando una risorsa da Experience Manager Assets a Brand Portal.
 
@@ -216,97 +222,104 @@ Per configurare Experience Manager Assets con Brand Portal è necessario quanto 
 
 Per configurare Experience Manager Assets con Brand Portal, effettua le seguenti operazioni nella sequenza specificata.
 
-1. [Ottieni certificato pubblico](#public-certificate)
-1. [Creare la connessione dell’account di servizio (JWT)](#createnewintegration)
-1. [Configurare l’account IMS](#create-ims-account-configuration)
-1. [Configurare il servizio cloud](#configure-the-cloud-service)
+1. [Configurare le credenziali OAuth nella console Adobe Developer](#config-oauth)
+1. [Creare una nuova integrazione Adobe IMS utilizzando OAuth](#create-ims-account-configuration)
+1. [Configurare il servizio cloud](#configure-cloud-service)
+   <!--1. [Obtain public certificate](#public-certificate)-->
+<!--1. [Create service account (JWT) connection](#createnewintegration) 
+1. [Configure IMS account](#create-ims-account-configuration)-->
 
-### Creare la configurazione IMS {#create-ims-configuration}
+<!--
+### Create IMS configuration {#create-ims-configuration}
 
-La configurazione IMS autentica il Experience Manager Assets come [!DNL Cloud Service] con il tenant Brand Portal.
+The IMS configuration authenticates your Experience Manager Assets as a [!DNL Cloud Service] instance with the Brand Portal tenant. 
 
-La configurazione IMS prevede due passaggi:
+IMS configuration includes two steps:
 
-* [Recuperare il certificato pubblico](#public-certificate)
-* [Configurare l’account IMS](#create-ims-account-configuration)
+* [Obtain public certificate](#public-certificate) 
+* [Configure IMS account](#create-ims-account-configuration)
+-->
+<!--
 
-### Ottieni certificato pubblico {#public-certificate}
+### Obtain public certificate {#public-certificate}
 
-La chiave pubblica (certificato) autentica il profilo sulla console Adobe Developer.
+The public key (certificate) authenticates your profile on Adobe Developer Console.
 
-1. Accedi a Experience Manager Assets.
-1. Dalla sezione **Strumenti** , passa a **[!UICONTROL Sicurezza]** > **[!UICONTROL Configurazioni Adobe IMS]**.
-1. Nella pagina Configurazioni Adobe IMS, fai clic su **[!UICONTROL Crea]**. Verrà reindirizzato al **[!UICONTROL Configurazione account tecnico Adobe IMS]** pagina. Per impostazione predefinita, il **Certificato** viene visualizzata la scheda.
-1. Seleziona **[!UICONTROL Adobe Brand Portal]** nel **[!UICONTROL Soluzione cloud]** elenco a discesa.
-1. Seleziona la **[!UICONTROL Crea nuovo certificato]** e specificare un **alias** per la chiave pubblica. L&#39;alias funge da nome della chiave pubblica.
-1. Fai clic su **[!UICONTROL Crea certificato]**. Quindi, fai clic su **[!UICONTROL OK]** per generare la chiave pubblica.
+1. Login to Experience Manager Assets.
+1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
+1. Select **[!UICONTROL Adobe Brand Portal]** in the **[!UICONTROL Cloud Solution]** drop-down list.  
+1. Select the **[!UICONTROL Create new certificate]** check box and specify an **alias** for the public key. The alias serves as name of the public key. 
+1. Click **[!UICONTROL Create certificate]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
-   ![Crea certificato](assets/ims-config2.png)
+   ![Create Certificate](assets/ims-config2.png)
 
-1. Fai clic su **[!UICONTROL Scarica chiave pubblica]** e salvare il file della chiave pubblica (CRT) sul computer.
+1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (CRT) file on your machine.
 
-   La chiave pubblica viene utilizzata in seguito per configurare l’API per il tenant Brand Portal e generare le credenziali dell’account di servizio nella console Adobe Developer.
+   The public key is used later to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.  
 
-   ![Scarica certificato](assets/ims-config3.png)
+   ![Download Certificate](assets/ims-config3.png)
 
-1. Fai clic su **[!UICONTROL Avanti]**.
+1. Click **[!UICONTROL Next]**.
 
-   In **Account** , viene creato un account Adobe IMS che richiede le credenziali dell’account del servizio generate in Adobe Developer Console. Per il momento tieni aperta questa pagina.
+    In the **Account** tab, Adobe IMS account is created which requires the service account credentials that are generated in Adobe Developer Console. Keep this page open for now.
 
-   Apri una nuova scheda e [creare una connessione dell’account di servizio (JWT) in Adobe Developer Console](#createnewintegration) per ottenere le credenziali e il payload JWT per la configurazione dell’account IMS.
+    Open a new tab and [create a service account (JWT) connection in Adobe Developer Console](#createnewintegration) to get the credentials and JWT payload for configuring the IMS account. 
+-->
+<!--
 
-### Creare la connessione dell’account di servizio (JWT) {#createnewintegration}
+### Create service account (JWT) connection {#createnewintegration}
 
-Nella console Adobe Developer, i progetti e le API sono configurati a livello di tenant Brand Portal (organizzazione). La configurazione di un’API crea una connessione dell’account di servizio (JWT). Esistono due metodi per configurare l’API: generando una coppia di chiavi (chiavi privata e pubblica) o caricando una chiave pubblica. Per configurare Experience Manager Assets con Brand Portal, devi generare una chiave pubblica (certificato) in Experience Manager Assets e creare le credenziali nella console di Adobe Developer caricando la chiave pubblica. Queste credenziali sono necessarie per configurare l’account IMS in Experience Manager Assets. Una volta configurato l’account IMS, puoi configurare il servizio cloud Brand Portal in Experience Manager Assets.
+In Adobe Developer Console, projects and APIs are configured at Brand Portal tenant (organization) level. Configuring an API creates a service account (JWT) connection. There are two methods to configure API, by generating a key pair (private and public keys) or by uploading a public key. To configure Experience Manager Assets with Brand Portal, you must generate a public key (certificate) in Experience Manager Assets and create credentials in Adobe Developer Console by uploading the public key. These credentials are required to configure the IMS account in Experience Manager Assets. Once the IMS account is configured, you can configure the Brand Portal cloud service in Experience Manager Assets.
 
-Per generare le credenziali dell’account di servizio e il payload JWT, effettua le seguenti operazioni:
+Perform the following steps to generate the service account credentials and JWT payload:
 
-1. Accedi alla console Adobe Developer con i privilegi di amministratore di sistema nell’organizzazione IMS (tenant Brand Portal). L’URL predefinito è [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Login to Adobe Developer Console with system administrator privileges on the IMS organization (Brand Portal tenant). The default URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
-
-   >[!NOTE]
-   >
-   >Accertati di aver selezionato l’organizzazione IMS corretta (tenant Brand Portal) dall’elenco a discesa (organizzazione) in alto a destra.
-
-1. Clic **[!UICONTROL Crea nuovo progetto]**. Per l’organizzazione viene creato un progetto vuoto con un nome generato dal sistema.
-
-   Clic **[!UICONTROL Modifica progetto]** per aggiornare **[!UICONTROL Titolo progetto]** e **[!UICONTROL Descrizione]** e fai clic su **[!UICONTROL Salva]**.
-
-1. In **[!UICONTROL Panoramica del progetto]** , fare clic su **[!UICONTROL Aggiungi API]**.
-
-1. In **[!UICONTROL Aggiungere una finestra API]**, seleziona **[!UICONTROL AEM Brand Portal]** e fai clic su **[!UICONTROL Successivo]**.
-
-   Assicurati di avere accesso al servizio Brand Portal di Experience Manager.
-
-1. In **[!UICONTROL Configurare API]** finestra, fai clic su **[!UICONTROL Carica la chiave pubblica]**. Quindi, fai clic su **[!UICONTROL Seleziona un file]** e carica la chiave pubblica (file .crt) scaricata in [ottenere un certificato pubblico](#public-certificate) sezione.
-
-   Fai clic su **[!UICONTROL Avanti]**.
-
-   ![Carica chiave pubblica](assets/service-account3.png)
-
-1. Verifica la chiave pubblica e fai clic su **[!UICONTROL Successivo]**.
-
-1. Seleziona **[!UICONTROL Assets Brand Portal]** come profilo di prodotto predefinito e fai clic su **[!UICONTROL Salva API configurata]**.
-
-   ![Seleziona profilo prodotto](assets/service-account4.png)
-
-1. Una volta configurata l’API, vieni reindirizzato alla pagina di panoramica API. Dalla barra di navigazione a sinistra in **[!UICONTROL Credenziali]**, fare clic su **[!UICONTROL Account di servizio (JWT)]** opzione.
 
    >[!NOTE]
    >
-   >* Puoi visualizzare le credenziali ed eseguire azioni quali generare token JWT, copiare i dettagli delle credenziali, recuperare il segreto client e così via.
-   >* Attualmente, è supportato solo il tipo di credenziali dell’account di servizio di Developer Console (JWT) di Adobe. Non utilizzare il `OAuth Server-to-Server` tipo di credenziali fino a quando non sarà supportato a metà aprile. Ulteriori informazioni all&#39;indirizzo [Deprecazione delle credenziali JWT nella console Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+   >Ensure that you have selected the correct IMS organization (Brand Portal tenant) from the drop-down (organization) list located at the upper-right corner.
 
-1. Dalla sezione **[!UICONTROL Credenziali client]** , copia il **[!UICONTROL ID client]**.
+1. Click **[!UICONTROL Create new project]**. A blank project with a system-generated name is created for your organization. 
 
-   Clic **[!UICONTROL Recupera segreto client]** e copia **[!UICONTROL segreto client]**.
+   Click **[!UICONTROL Edit project]** to update the **[!UICONTROL Project Title]** and **[!UICONTROL Description]**, and click **[!UICONTROL Save]**.
+   
+1. In the **[!UICONTROL Project overview]** tab, click **[!UICONTROL Add API]**.
 
-   ![Credenziali account di servizio](assets/service-account5.png)
+1. In the **[!UICONTROL Add an API window]**, select **[!UICONTROL AEM Brand Portal]** and click **[!UICONTROL Next]**. 
 
-1. Accedi a **[!UICONTROL Genera JWT]** e copia il **[!UICONTROL Payload JWT]** informazioni.
+   Ensure that you have access to the Experience Manager Brand Portal service.
 
-Ora puoi utilizzare l’ID client (chiave API), il segreto client e il payload JWT per [configurare l’account IMS](#create-ims-account-configuration) in Experience Manager Assets.
+1. In the **[!UICONTROL Configure API]** window, click **[!UICONTROL Upload your public key]**. Then, click **[!UICONTROL Select a File]** and upload the public key (.crt file) that you have downloaded in the [obtain public certificate](#public-certificate) section. 
 
+   Click **[!UICONTROL Next]**.
+
+   ![Upload Public Key](assets/service-account3.png)
+
+1. Verify the public key and click **[!UICONTROL Next]**.
+
+1. Select **[!UICONTROL Assets Brand Portal]** as the default product profile and click **[!UICONTROL Save configured API]**. 
+
+   ![Select Product Profile](assets/service-account4.png)
+
+1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click the **[!UICONTROL Service Account (JWT)]** option.
+
+   >[!NOTE] 
+   >
+   >* You can view the credentials and perform actions such as generate JWT tokens, copy credential details, retrieve client secret, and so on.
+   >* Currently, only the Adobe's Developer Console Service Account (JWT) credential type is supported. Do not use the `OAuth Server-to-Server` credential type until it is supported in mid-April. Read more at [JWT Credentials Deprecation in Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+
+1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
+
+   Click **[!UICONTROL Retrieve Client Secret]** and copy the **[!UICONTROL client secret]**.
+
+   ![Service Account Credentials](assets/service-account5.png)
+
+1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information. 
+
+You can now use the client ID (API key), client secret, and JWT payload to [configure the IMS account](#create-ims-account-configuration) in Experience Manager Assets.
+-->
 <!--
 1. Click **[!UICONTROL Create Integration]**.
 
@@ -344,43 +357,52 @@ Ora puoi utilizzare l’ID client (chiave API), il segreto client e il payload J
 
 -->
 
-### Configurare l’account IMS {#create-ims-account-configuration}
+### Configurare le credenziali OAuth nella console Adobe Developer {#config-oauth}
 
-Verifica di aver eseguito i seguenti passaggi:
+[Configurare le credenziali OAuth nella console Adobe Developer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) e seleziona Brand Portal API.
 
-* [Ottieni certificato pubblico](#public-certificate)
-* [Creare la connessione dell’account di servizio (JWT)](#createnewintegration)
+### Creare una nuova integrazione Adobe IMS utilizzando OAuth {#create-ims-account-configuration}
 
-Per configurare l’account IMS, effettua le seguenti operazioni.
+[Creare una nuova integrazione Adobe IMS utilizzando OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) e seleziona Brand Portal dal menu a discesa in Soluzione cloud.
 
-1. Apri la configurazione IMS e passa a **[!UICONTROL Account]** scheda. La pagina è rimasta aperta [ottenimento del certificato pubblico](#public-certificate).
+<!--
+Ensure that you have performed the following steps:
 
-1. Specifica un **[!UICONTROL titolo]** per l’account IMS.
+* [Obtain public certificate](#public-certificate)
+* [Create service account (JWT) connection](#createnewintegration)
+-->
 
-   In **[!UICONTROL Server autorizzazioni]** , specifica l’URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
+<!--1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. Keep the page open while [obtaining the public certificate](#public-certificate).
 
-   Specifica l’ID client in **[!UICONTROL Chiave API]** campo, **[!UICONTROL Segreto client]**, e **[!UICONTROL Payload]** (payload JWT) che hai copiato mentre [creazione della connessione dell’account di servizio (JWT)](#createnewintegration).
+1. Specify a **[!UICONTROL Title]** for the IMS account.
 
-   Fai clic su **[!UICONTROL Crea]**.
+   In the **[!UICONTROL Authorization Server]** field, specify the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)  
+-->
+<!--
+1. Complete the configuration based on details from the [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Click **[!UICONTROL Create]**.
+-->
+<!--Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
-   L’account IMS è configurato.
+   The IMS account is configured. 
 
-   ![Configurazione dell’account IMS](assets/create-new-integration6.png)
+   ![IMS Account configuration](assets/create-new-integration6.png)
 
+ <!--  
+1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
-1. Seleziona la configurazione dell’account IMS e fai clic su **[!UICONTROL Verifica stato]**.
+   Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
-   Clic **[!UICONTROL Verifica]** nella finestra di dialogo. Una volta completata la configurazione, viene visualizzato un messaggio che informa che *Token recuperato correttamente*.
-
-   ![Verifica stato configurazioni Adobe IMS.](assets/create-new-integration5.png)
-
+   ![Adobe IMS Configurations Check Health.](assets/create-new-integration5.png)
+-->
+<!--
 >[!CAUTION]
 >
->Devi disporre di una sola configurazione IMS.
+>You must have only one IMS configuration.
 >
->Verifica che la configurazione IMS superi il controllo di integrità. Se la configurazione non supera questa verifica, non è valida. È necessario eliminarla e creare un&#39;altra configurazione valida.
+>Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create another valid configuration.
+-->
 
-### Configurare il servizio cloud {#configure-the-cloud-service}
+### Configurare il servizio cloud {#configure-cloud-service}
 
 Per configurare il servizio cloud Brand Portal, effettua le seguenti operazioni:
 
@@ -405,7 +427,7 @@ Per configurare il servizio cloud Brand Portal, effettua le seguenti operazioni:
 Ora puoi testare la configurazione controllando l’agente di distribuzione e pubblicando le risorse in Brand Portal.
 
 **Inserisce nell&#39;elenco Consentiti IP in uscita in SPS se l&#39;anteprima protetta è abilitata**
-Se si utilizza Dynamic Medie-Scene7 con [anteprima protetta abilitata](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) per una società), si consiglia all&#39;amministratore della società Scene7 [inserire nell&#39;elenco Consentiti gli IP in uscita pubblici](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) per le rispettive aree geografiche utilizzando l’interfaccia utente flash di SPS (Scene7 Publishing System).
+Se si utilizza Dynamic Medie-Scene7 con [anteprima protetta abilitata](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) per una società, è consigliabile che l’amministratore della società Scene7 [inserire nell&#39;elenco Consentiti gli IP in uscita pubblici](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) per le rispettive aree geografiche utilizzando l’interfaccia utente flash di SPS (Scene7 Publishing System).
 Gli IP in uscita sono i seguenti:
 
 | **Regione** | **IP in uscita** |
