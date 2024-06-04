@@ -3,10 +3,10 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5247a06f15a3edd34a419f9d64aa0590b43c1612
+source-git-commit: fae92c9a41d866fd89ffb6fa10191fae4033037c
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 25%
+source-wordcount: '1865'
+ht-degree: 24%
 
 ---
 
@@ -218,7 +218,12 @@ Il servizio Real Use Monitoring, la raccolta lato client, offre un riflesso più
 
 ## Guide di [!DNL Experience Manager] {#guides}
 
-L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+* **Pubblicare un argomento o i relativi elementi in un frammento di esperienza**
+Ora, Experience Manager Guides consente di pubblicare un argomento o i relativi elementi in un frammento di esperienza. Un frammento di esperienza è un’unità di contenuto modulare che integra sia il contenuto che il layout.  I frammenti di esperienza sono fondamentali e possono aiutarti a creare esperienze coerenti e coinvolgenti.
+* **Possibilità di passare i metadati della risorsa dell’argomento all’output di PDF nativo**
+Puoi aggiungere i metadati della risorsa dell’argomento durante la generazione dell’output di PDF nativo. Questa funzione consente di aggiungere metadati specifici per argomenti diversi, come il titolo e l&#39;autore dell&#39;argomento, alle intestazioni e ai piè di pagina dell&#39;argomento.
+
+Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi risolti in questa versione, vedi [Roadmap sulla versione di Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
