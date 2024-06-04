@@ -3,10 +3,10 @@ title: Scopri come cercare e individuare le risorse in [!DNL Assets view]?
 description: Scopri come cercare e individuare le risorse nella vista AEM Assets. La potente funzionalità di ricerca consente di individuare rapidamente la risorsa appropriata e velocizza le attività relative ai contenuti.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: e706ee7228aeb08c99567f607a3435d9f687ef34
+source-git-commit: 4313f2bdfe78457204e26069f3af4bda3f5902e7
 workflow-type: tm+mt
-source-wordcount: '1852'
-ht-degree: 91%
+source-wordcount: '1908'
+ht-degree: 92%
 
 ---
 
@@ -309,15 +309,13 @@ Il video seguente illustra il processo end-to-end dall’accesso all’interfacc
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
-<!--
-### Disable Contextual Search {#disable-contextual-search}
+### Disabilitare la ricerca contestuale {#disable-contextual-search}
 
-Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
+Gli amministratori possono inoltre disabilitare la ricerca contestuale per gli utenti dell’organizzazione. Per farlo, esegui le seguenti operazioni:
 
-1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
+1. Passa a **[!UICONTROL Impostazioni]** > **[!UICONTROL Impostazioni generali]**.
 
-1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
--->
+1. Nella sezione [!UICONTROL Ricerca contestuale], disabilita l’interruttore **[!UICONTROL Abilita la ricerca contestuale per l’organizzazione]** per disabilitare la funzione di ricerca contestuale per tutti gli utenti dell’organizzazione.
 
 ### Feedback sulla ricerca contestuale {#contextual-search-feedback}
 
