@@ -665,7 +665,7 @@ ht-degree: 99%
             + [Progettare uno schema JSON per un modulo adattivo (componenti core)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Aggiungere versioni, commenti e annotazioni a un modulo adattivo](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Confronta i moduli adattivi](/help/forms/compare-forms.md)
-            + [Conversione di Forms adattivo basato su componenti di base in moduli basati su componenti di base tramite lo strumento utility di migrazione](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [Conversione di moduli adattivi basati su componenti di base in moduli basati su Componenti core tramite lo strumento utility di migrazione](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Salvare un modulo adattivo come bozza](/help/forms/save-core-component-based-form-as-draft.md)
       + Componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
