@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ In questa sezione sono elencate le funzionalità che sono state rimosse da [!DNL
 | [!DNL Foundation] | Supporto per i modelli di script JST (OSGi bundle org.apache.sling.scripting.jst) | N/D | Rimosso |
 | [!DNL Foundation] | Supporto per Apache Felix Http Whiteboard | OSGi Http Whiteboard | Marzo 2022 |
 | [!DNL Foundation] | Supporto per com.adobe.granite.oauth.server | Integrazione di Adobe IMS | Marzo 2023 |
-| [!DNL Foundation] | Supporto per la funzione org.apache.sling.serviceusermapping su [ottenere l’id utente del servizio](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/D | 8/30/24 |
+| [!DNL Foundation] | Supporto per la funzione org.apache.sling.serviceusermapping per [ottenere l’ID utente del servizio](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/D | 30/08/24 |
 
 
 ## API AEM {#aem-apis}
@@ -274,14 +274,14 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
   </tr>
   <tr>
     <td>org.slf4j.event	</td>
-    <td>Questa API slf4j interna non è supportata dall’as a Cloud Service AEM</td>
-    <td>4/11/2022</td>
-    <td>8/30/2024</td>
+    <td>Questa API slf4j interna non è supportata da AEM as a Cloud Service.</td>
+    <td>11/04/2022</td>
+    <td>30/08/2024</td>
   </tr>
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
     <td>L’uso di questa API non è più supportato in AEM as a Cloud Service.</td>
-    <td>5/17/2024</td>
-    <td>6/30/2024</td>
+    <td>17/05/2024</td>
+    <td>30/06/2024</td>
   </tr>  
 </tbody>
 </table>
