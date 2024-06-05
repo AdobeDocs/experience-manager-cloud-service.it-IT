@@ -2,10 +2,12 @@
 title: Team e profili di prodotto di AEM as a Cloud Service
 description: Scopri come usare i team e i profili di prodotto di AEM as a Cloud Service per consentire e limitare l’accesso alle soluzioni Adobe con licenza.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +26,9 @@ AEM as a Cloud Service è un’offerta completamente nativa per il cloud che inc
 
 Durante l’onboarding, i membri del gruppo di AEM as a Cloud Service vengono aggiunti e assegnati a uno o più dei seguenti profili di prodotto tramite Admin Console.
 
-* **Amministratori AEM**: un amministratore AEM viene generalmente assegnato agli sviluppatori, in particolare a quelli che hanno bisogno di accedere, ad esempio, agli ambienti di sviluppo. Il profilo di prodotto Amministratore AEM consente di concedere i privilegi di amministratore nell’istanza AEM associata.
+* **Amministratori AEM**: il ruolo Amministratore AEM in genere viene assegnato ai membri del team di sviluppo, in particolare a chi deve, ad esempio, accedere agli ambienti di sviluppo. Il profilo di prodotto Amministratore AEM consente di concedere i privilegi di amministratore nell’istanza AEM associata.
 
-* **Utenti AEM**: gli utenti AEM sono le persone dell’organizzazione che utilizzano AEM as a Cloud Service a livello generale per creare contenuti. Questi utenti devono accedere all’AEM per svolgere le loro mansioni. Il profilo di prodotto Utenti AEM viene in genere assegnato a un autore di contenuti AEM, che crea e rivede il contenuto. Tale contenuto può essere di molti tipi, ad esempio pagine, risorse, pubblicazioni e così via. Il profilo di prodotto Utenti AEM mostrato di seguito viene assegnato a questi membri.
+* **Utenti AEM**: gli utenti AEM sono le persone dell’organizzazione che utilizzano AEM as a Cloud Service a livello generale per creare contenuti. Questi utenti devono accedere a AEM per svolgere le loro attività. Il profilo di prodotto Utenti AEM viene in genere assegnato a un autore di contenuti AEM, che crea e rivede il contenuto. Tale contenuto può essere di molti tipi, ad esempio pagine, risorse, pubblicazioni e così via. Il profilo di prodotto Utenti AEM mostrato di seguito viene assegnato a questi membri.
 
 ![Profili di prodotto](/help/onboarding/assets/admin-console-profiles.png)
 
@@ -42,7 +44,7 @@ Durante l’onboarding, i membri del gruppo di AEM as a Cloud Service vengono ag
 
 >[!TIP]
 >
->* Per ulteriori informazioni sui profili di prodotto dell’AEM, consulta [Assegnazione dei profili di prodotto dell’AEM](/help/journey-onboarding/assign-profiles-aem.md).
+>* Per ulteriori informazioni sui profili di prodotto di AEM, consulta il documento [Assegnazione dei profili di prodotto di AEM](/help/journey-onboarding/assign-profiles-aem.md).
 >* Per ulteriori informazioni sul processo di onboarding, consulta [percorso di onboarding](/help/journey-onboarding/overview.md).
 
 ## Profili di prodotto di Cloud Manager {#cloud-manager-product-profiles}
@@ -56,7 +58,7 @@ Cloud Manager offre profili di prodotto preconfigurati che possono essere consid
 A ciascuno dei profili di prodotto sono associate autorizzazioni specifiche.
 
 * **Proprietario business**
-   * Con questo ruolo l&#39;utente dispone delle autorizzazioni per aggiungere un nuovo programma o modificarne uno esistente, aggiungere o aggiornare un ambiente, distribuire il codice in un ambiente AEM o eseguire controlli di qualità del codice.
+   * Con questo ruolo l’utente dispone delle autorizzazioni per aggiungere un nuovo programma o modificarne uno esistente, aggiungere o aggiornare un ambiente, distribuire il codice in un ambiente AEM o eseguire controlli di qualità del codice.
    * Questo utente è responsabile della definizione dei KPI, dell’approvazione delle implementazioni di produzione e della sostituzione di errori importanti di terzo livello quando necessario.
 * **Responsabile della distribuzione**
    * Con questo ruolo l’utente dispone delle autorizzazioni per aggiungere o aggiornare un ambiente, eseguire tutte le pipeline, distribuire il codice nell’ambiente AEM ed eseguire i controlli di qualità del codice.
@@ -82,5 +84,5 @@ Il team di Cloud Manager deve includere almeno:
 
 >[!TIP]
 >
->* Per ulteriori informazioni sui profili di prodotto di Cloud Manager, consulta [Assegnazione dei membri del gruppo ai profili di prodotto di Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* Per ulteriori informazioni sui profili di prodotto di Cloud Manager, consulta il documento [Assegnazione di membri del team ai profili di prodotto di Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 >* Per ulteriori informazioni sul processo di onboarding, consulta [percorso di onboarding](/help/journey-onboarding/overview.md).

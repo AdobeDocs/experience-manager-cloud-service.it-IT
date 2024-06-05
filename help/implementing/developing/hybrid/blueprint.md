@@ -2,10 +2,12 @@
 title: Blueprint SPA
 description: Questo documento descrive il contratto generale, indipendente dal framework, che qualsiasi framework SPA deve soddisfare in modo da poter implementare componenti SPA modificabili all'interno dell'AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 2%
+source-wordcount: '2022'
+ht-degree: 1%
 
 ---
 
@@ -144,7 +146,7 @@ Il contenitore ottiene dinamicamente i componenti figlio dall’archivio della [
 
 Il `Page` il componente estende `Container` componente. Un contenitore è un componente destinato a contenere ed eseguire il rendering dei componenti figlio, incluse le pagine figlie. A questo scopo, il contenitore scorre la `:itemsOrder`, `:items`, e `:children` proprietà del relativo modello. Il `Page` componente ottiene dinamicamente i componenti figlio dall&#39;archivio del [`ComponentMapping`](#componentmapping) libreria. Il `Page` è responsabile della creazione di un&#39;istanza dei componenti figlio.
 
-### Griglia dinamica {#responsive-grid}
+### Griglia reattiva {#responsive-grid}
 
 Il componente Griglia reattiva è un contenitore. Contiene una variante specifica del provider di modelli che rappresenta le relative colonne. La griglia reattiva e le sue colonne sono responsabili della decorazione dell’elemento HTML esterno del componente del progetto con i nomi di classi specifici contenuti nel modello.
 
@@ -271,7 +273,7 @@ Vedi l’articolo [Routing modello SPA](routing.md) per ulteriori informazioni.
 
 Scopri come funziona un semplice SPA e come sperimentare autonomamente un SPA, continuando a seguire i seguenti documenti:
 
-* [Guida introduttiva alle SPA in AEM usando React](getting-started-react.md).
+* [Guida introduttiva dell’SPA nell’AEM con React](getting-started-react.md).
 * [Guida introduttiva dell’SPA nell’AEM con Angular](getting-started-angular.md).
 
 ## Ulteriori informazioni {#further-reading}

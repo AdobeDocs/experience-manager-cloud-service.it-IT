@@ -2,7 +2,10 @@
 title: Gestione degli ambienti
 description: Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2365'
 ht-degree: 70%
@@ -316,7 +319,7 @@ Per gestire gli elenchi IP consentiti, accedi alla scheda **Ambienti** della pag
 
 ### Applicazione di un elenco IP consentiti {#apply-ip-allow-list}
 
-L’applicazione di un elenco Consentiti inserii nell&#39;elenco Consentiti di IP associa tutti gli intervalli IP inclusi nella definizione dell’IP a un servizio Author o Publish in un ambiente.
+L’applicazione di un inserisco nell&#39;elenco Consentiti di consente di associare tutti gli intervalli IP inclusi nella definizione del elenco Consentiti di a un servizio Author o Publish in un ambiente.
 
 >[!TIP]
 >

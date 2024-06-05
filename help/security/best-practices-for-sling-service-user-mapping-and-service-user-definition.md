@@ -1,13 +1,15 @@
 ---
 title: Best practice per la mappatura degli utenti del servizio Sling e la definizione degli utenti del servizio
 description: Scopri le best practice per la mappatura degli utenti del servizio Sling e la definizione degli utenti del servizio
-source-git-commit: b6f7b6996b377ecfa372742ce1ad22139547ebdd
-workflow-type: ht
+exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 100%
 
 ---
-
 
 # Best practice per la mappatura degli utenti del servizio Sling e la definizione degli utenti del servizio {#best-practices-for-sling-service-user-mapping-and-service-user-definition}
 
@@ -274,8 +276,3 @@ delete service my-feature-service
 È fondamentale scrivere test lato server per gli utenti del servizio e la configurazione delle autorizzazioni. Questo non solo verifica il corretto funzionamento della configurazione, ma consente anche di individuare regressioni ed errori non intenzionali durante la modifica del contenuto di controllo dell’accesso o degli utenti del servizio.
 
 La libreria `com.adobe.granite.testing.clients` fornisce molte utilità che semplificano la scrittura di SST per gli utenti del servizio.
-
-
-
-
-

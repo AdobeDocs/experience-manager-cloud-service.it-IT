@@ -2,7 +2,9 @@
 title: Creazione di tag nelle applicazioni AEM
 description: Utilizzare i tag a livello di programmazione o estenderli all’interno di un’applicazione AEM personalizzata
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%

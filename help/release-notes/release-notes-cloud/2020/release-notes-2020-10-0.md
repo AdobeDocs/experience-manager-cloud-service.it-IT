@@ -1,11 +1,13 @@
 ---
-title: Note sulla versione 2020.10.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2020.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.10.0 as a Cloud Service."
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 28%
+source-wordcount: '1103'
+ht-degree: 24%
 
 ---
 
@@ -13,7 +15,7 @@ ht-degree: 28%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
-## Data di pubblicazione {#release-date}
+## Data di rilascio {#release-date}
 
 La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 è il 28 ottobre 2020.
 La seguente versione (2020.11.0) sarà del 1° dicembre 2020.
@@ -35,9 +37,9 @@ La seguente versione (2020.11.0) sarà del 1° dicembre 2020.
 * **Miglioramenti di Brand Portal**: le seguenti nuove funzioni e altro ancora sono disponibili in [!DNL Brand Portal]. Per ulteriori informazioni, consulta [[!DNL Brand Portal] note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
    * [Esperienza di download migliorata](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) per download semplificati e rapidi. Gli amministratori possono configurare modalità di download aggiuntive per offrire un’esperienza in grado di soddisfare le esigenze specifiche di qualsiasi utente o azienda.
-   * L’accesso con un clic a File, [Raccolte](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html) e Collegamenti condivisi è ora possibile da qualsiasi pagina.
-   * Gli utenti possono ora [selezionare e scaricare rappresentazioni specifiche](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page). La nuova opzione di download delle rappresentazioni è ora disponibile nel riquadro Rappresentazioni della pagina dei dettagli delle risorse.
-   * Un timeout di 15 minuti per le sessioni degli utenti che accedono come ospite garantisce un’esperienza migliore per tutti gli utenti simultanei.
+   * Navigazione con un clic su File, [Raccolte](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html), e i collegamenti condivisi sono ora possibili da qualsiasi pagina.
+   * Gli utenti possono [selezionare e scaricare rappresentazioni specifiche](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) ora. La nuova opzione di download delle rappresentazioni è ora disponibile nel riquadro Rappresentazioni della pagina dei dettagli delle risorse.
+   * Un timeout di 15 minuti per le sessioni degli utenti ospiti garantisce un’esperienza migliore a tutti gli utenti simultanei.
 
 * **[!DNL Adobe Asset Link]versione 2.1**: nuova versione di [Adobe collegamento risorsa](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) estensione per [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], e [!DNL Adobe InDesign] è disponibile. Aggiunge compatibilità con le più recenti [!DNL Adobe Creative Cloud] applicazioni con versione 2021, rilasciata a ottobre 2020.
 
@@ -49,7 +51,7 @@ La seguente versione (2020.11.0) sarà del 1° dicembre 2020.
 
 * **Analytics per Forms adattivo**: ora puoi acquisire e tenere traccia del comportamento degli utenti connessi e non connessi (anonimi) tramite Adobe Analytics for Adaptive Forms per raccogliere informazioni approfondite. Aiuta gli utenti aziendali a prendere decisioni informate sul contenuto, il layout e lo stile dei moduli adattivi in base alle informazioni raccolte.
 
-### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms-oct-2021}
+### Nuove funzioni disponibili nel canale pre-release di [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
 * **Esternalizzare i dati del flusso di lavoro AEM per un’elaborazione sicura**: è possibile memorizzare i dati in-process delle variabili del flusso di lavoro AEM contenenti elementi di dati personali sensibili (SPD) in un archivio gestito dal cliente per un’elaborazione sicura. Durante l’elaborazione del flusso di lavoro, i dati memorizzati nelle variabili del flusso di lavoro non vengono conservati nell’archivio AEM. Viene recuperato su richiesta dall’archivio gestito dal cliente.
 
@@ -57,7 +59,7 @@ La seguente versione (2020.11.0) sarà del 1° dicembre 2020.
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) consente di combinare un modello e dati XML per generare documenti in vari formati. Il servizio consente di generare documenti in modalità sincrona e batch.
 
-Puoi scrivere a [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
+Per registrarti al programma beta, puoi inviare un’e-mail all’indirizzo [!DNL formscsbeta@adobe.com].
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -118,7 +120,7 @@ Per ulteriori dettagli, consulta la [Visualizzazione dell’ambiente](/help/impl
 
 ## Strumento trasferimento contenuti {#content-transfer-tool}
 
-Scopri le novità e gli aggiornamenti di [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it) Versione v1.1.12.
+Scopri le novità e gli aggiornamenti di [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Versione v1.1.12.
 
 ### Novità {#what-is-new-ctt}
 

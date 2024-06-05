@@ -2,10 +2,12 @@
 title: Struttura dell’interfaccia AEM
 description: L’interfaccia utente dell’AEM ha diversi principi di base ed è composta da diversi elementi chiave
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 4%
+source-wordcount: '887'
+ht-degree: 3%
 
 ---
 

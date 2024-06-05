@@ -2,7 +2,9 @@
 title: Personalizzazione dell’authoring delle pagine
 description: Scopri i meccanismi forniti da AEM as a Cloud Service per personalizzare la funzionalità di authoring delle pagine.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 2%

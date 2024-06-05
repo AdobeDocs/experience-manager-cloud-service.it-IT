@@ -2,9 +2,11 @@
 title: Convenzioni di denominazione
 description: I nodi nell’archivio sono soggetti alle convenzioni di denominazione dell’archivio dei contenuti Java
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '201'
 ht-degree: 1%
 
 ---
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 I nodi nell’archivio sono soggetti alle convenzioni di denominazione dell’archivio dei contenuti Java. Tuttavia, l’AEM impone ulteriori convenzioni per il nome dei nodi della pagina.
 
-## Convenzioni di denominazione per le pagine {#naming-conventions-for-pages}
+## Convenzioni di denominazione delle pagine {#naming-conventions-for-pages}
 
 Queste convenzioni di denominazione vengono implementate a vari livelli:
 

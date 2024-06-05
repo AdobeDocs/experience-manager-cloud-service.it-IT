@@ -1,14 +1,17 @@
 ---
 title: Personalizzazione ed estensione della console e dell’editor dei frammenti di contenuto
 description: Scopri come personalizzare sia la console che l’editor dei frammenti di contenuto
-source-git-commit: 7eeb4fc7f6d5c74a0d3352f1b16f98617945cd88
+exl-id: a837f09f-9d07-4430-839a-7cf0f200d2df
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 0%
+source-wordcount: '87'
+ht-degree: 9%
 
 ---
 
-# Personalizzazione della console e dell’editor dei frammenti di contenuto {#customizing-content-fragment-console-and-editor}
+# Personalizzazione della console e dell’editor Frammenti di contenuto {#customizing-content-fragment-console-and-editor}
 
 La console e l’editor dei frammenti di contenuto sono estensibili e possono essere personalizzati in base alle tue esigenze utilizzando il Generatore di app di Adobe.
 

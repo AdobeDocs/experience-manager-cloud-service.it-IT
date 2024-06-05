@@ -2,10 +2,13 @@
 title: Concedere l’accesso allo sviluppatore front-end
 description: Inserisci gli sviluppatori front-end in Cloud Manager in modo che abbiano accesso all'archivio git del sito AEM e alla pipeline.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 91%
+source-wordcount: '776'
+ht-degree: 100%
 
 ---
 
@@ -65,7 +68,7 @@ Innanzitutto devi aggiungere lo sviluppatore front-end come utente utilizzando l
 
    ![Profili di prodotto](assets/product-profiles.png)
 
-1. Per assegnare lo sviluppatore front-end ai profili corretti, seleziona la **Utenti** e quindi la scheda **Aggiungi utente** pulsante.
+1. Per assegnare lo sviluppatore front-end ai profili corretti, seleziona la scheda **Utenti** e quindi il pulsante **Aggiungi utente**.
 
    ![Aggiungi utente](assets/add-user.png)
 
@@ -73,11 +76,11 @@ Innanzitutto devi aggiungere lo sviluppatore front-end come utente utilizzando l
 
    ![Aggiungi utente al team](assets/add-to-team.png)
 
-1. In **Prodotto** , selezionare il segno più e quindi selezionare **Adobe Experience Manager as a Cloud Service** e assegna il **Responsabile dell’implementazione** e **Sviluppatore** profili di prodotto per l’utente.
+1. Nella selezione **Prodotto**, seleziona il segno più, quindi seleziona **Adobe Experience Manager as a Cloud Service** e assegna all’utente i profili di prodotto **Gestione distribuzione** e **Sviluppatore**.
 
    ![Assegnare profili team](assets/assign-team.png)
 
-1. Seleziona **Salva** e un messaggio e-mail di benvenuto viene inviato allo sviluppatore front-end aggiunto come utente.
+1. Seleziona **Salva** per inviare un messaggio e-mail di benvenuto allo sviluppatore front-end aggiunto come utente.
 
 Lo sviluppatore front-end invitato può accedere a Cloud Manager facendo clic sul collegamento nell’e-mail di benvenuto e accedendo utilizzando il proprio Adobe ID.
 

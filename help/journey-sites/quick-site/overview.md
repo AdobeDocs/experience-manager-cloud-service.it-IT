@@ -2,10 +2,13 @@
 title: Percorso di creazione di siti rapidi AEM
 description: Inizia qui per un percorso guidato attraverso lo strumento Creazione rapida sito di AEM facile da usare che permette di semplificare lo sviluppo front-end del sito AEM e personalizzare rapidamente il sito senza alcuna conoscenza del back-end di AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 89%
+source-wordcount: '1020'
+ht-degree: 100%
 
 ---
 
@@ -17,7 +20,7 @@ Inizia qui per un percorso guidato attraverso lo strumento Creazione rapida sito
 
 AEM Sites è un potente set di strumenti per la creazione e la gestione di esperienze digitali. Gli autori dei contenuti possono creare facilmente esperienze digitali tramite l’editor dei siti e organizzare i contenuti mediante la console Sites, visualizzando allo stesso tempo i contenuti live così come saranno distribuiti da AEM ai vari tipi di pubblico su tutti i canali.
 
-Lo strumento di Creazione Rapida dei Siti dell’AEM consente ai non sviluppatori di creare rapidamente un sito da zero utilizzando i modelli di sito. Una volta creato, lo strumento Creazione rapida sito consente inoltre di personalizzare velocemente il tema e lo stile del sito AEM (risorse JavaScript, CSS e statiche). In questo modo lo sviluppatore front-end, che non ha bisogno di conoscere AEM, può lavorare in maniera autonoma e in parallelo ai creatori di contenuti. L’amministratore AEM scarica semplicemente il tema del sito e lo fornisce allo sviluppatore front-end. Quest&#39;ultimo lo personalizza utilizzando i propri strumenti preferiti e successivamente conferma le modifiche nell’archivio del codice AEM, che viene quindi distribuito.
+Lo strumento Creazione rapida siti AEM consente agli sviluppatori di creare rapidamente un sito da zero utilizzando dei modelli. Una volta creato, lo strumento Creazione rapida sito consente inoltre di personalizzare velocemente il tema e lo stile del sito AEM (risorse JavaScript, CSS e statiche). In questo modo lo sviluppatore front-end, che non ha bisogno di conoscere AEM, può lavorare in maniera autonoma e in parallelo ai creatori di contenuti. L’amministratore AEM scarica semplicemente il tema del sito e lo fornisce allo sviluppatore front-end. Quest&#39;ultimo lo personalizza utilizzando i propri strumenti preferiti e successivamente conferma le modifiche nell’archivio del codice AEM, che viene quindi distribuito.
 
 Eliminando le conoscenze per gli sviluppatori per la creazione di siti, eliminando i requisiti di conoscenza AEM per lo sviluppo front-end e consentendo lo sviluppo di temi in parallelo con la creazione di contenuti, lo strumento di Creazione rapida siti AEM accelera notevolmente il time-to-value del sito e aumenta l’agilità di personalizzazione e distribuzione del sito.
 
@@ -29,9 +32,9 @@ Questo percorso di documentazione illustra in un video tutte le funzioni dettagl
 
 ## Percorsi di documentazione AEM {#documentation-journeys}
 
-[Un Percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e complicati, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente dell’AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o dell’AEM.
+[Un percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e complicati, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente di AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o di AEM.
 
-I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti dei clienti.
+I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti della clientela.
 
 Se desideri sapere come Adobe consiglia di risolvere i casi aziendali relativi ai siti con AEM, per iniziare puoi utilizzare i Percorsi AEM Sites.
 
@@ -67,7 +70,7 @@ Ora puoi iniziare il percorso di Creazione rapida di siti di Adobe.
 
 * Se sei un amministratore di AEM o di Cloud Manager, o se svolgi entrambi i ruoli di sviluppatore front-end e amministratore, oppure se desideri semplicemente comprendere il processo end-to-end in AEM, parti all’inizio del percorso con [Scopri Cloud Manager](cloud-manager.md) come illustrato di seguito.
 * Se sei solo responsabile dello sviluppo front-end e interagirai con gli amministratori di AEM e Cloud Manager, puoi passare direttamente a [Recuperare le informazioni di accesso all’archivio Git](retrieve-access.md) per accedere all’archivio Git AEM e iniziare a personalizzarlo.
-* Se sai già che AEM Sites e Cloud Manager lavorano insieme e desideri iniziare direttamente con la configurazione, puoi [passa direttamente alla creazione di un sito da un modello.](create-site.md)
+* Se sai già che AEM Sites e Cloud Manager lavorano insieme e desideri iniziare direttamente con la configurazione, puoi [passare direttamente alla creazione di un sito da un modello.](create-site.md)
 
 ## Risorse aggiuntive {#additional-resources}
 

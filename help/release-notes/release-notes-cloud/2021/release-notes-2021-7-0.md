@@ -1,11 +1,13 @@
 ---
-title: Note sulla versione 2021.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2021.7.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2021.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2021.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1292'
-ht-degree: 22%
+ht-degree: 30%
 
 ---
 
@@ -86,14 +88,14 @@ L’API `com.day.cq.dam.api.collection.SmartCollection` non è disponibile in [!
 * Ora puoi utilizzare il servizio di Automated forms conversion per: [convertire PDF forms in francese, tedesco e spagnolo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) ai moduli adattivi.
 * È stato aggiunto un pannello separato all’editor modelli per visualizzare gli errori relativi ai componenti dei moduli adattivi. Consente di consolidare tutti gli errori dei moduli adattivi in un’unica posizione e di ridurre i tempi di risoluzione.
 
-### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#beta-features-forms}
+### Nuove funzioni disponibili nel canale pre-release di [!DNL Forms] {#beta-features-forms}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che permettono di:
    * Generare i documenti compilando i file modello con dati XML.
    * Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
-   * Generare file di PDF di stampa da un modulo XFA PDF e Adobe Acrobat Form.
+   * Generare file PDF di stampa da un modulo XFA PDF e di Adobe Acrobat Form.
 
-* **Variable Data Externalizer**: puoi salvare i dati delle variabili del flusso di lavoro AEM su un sistema di archiviazione esterno gestito dalla tua organizzazione.
+* **Esternalizzazione dei dati delle variabili**: puoi salvare i dati delle variabili del flusso di lavoro AEM su un sistema di archiviazione esterno gestito dalla tua organizzazione.
 
 * **Documento di record basato su Acroform**: puoi anche [utilizzare Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=it) come modello per documento record oltre al modello di modulo basato su XFA.
 
@@ -144,7 +146,7 @@ XML Documentation, ad Experience Manager as a Cloud Service, è generalmente dis
 
 Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.7.0.
 
-### Data di pubblicazione {#release-cm-july}
+### Data di rilascio {#release-cm-july}
 
 La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.7.0 è il 15 luglio 2021.
 La prossima versione è pianificata per il 12 agosto 2021.
@@ -167,7 +169,7 @@ La prossima versione è pianificata per il 12 agosto 2021.
 
 ### Correzioni di bug {#bug-fixes-cm-july}
 
-* In alcune situazioni, l’opzione Anteprima non era disponibile quando si associava un elenco Consentiti IP a un ambiente.
+* In alcune situazioni, l’opzione Anteprima non era disponibile quando si associava un inserisco nell&#39;elenco Consentiti IP a un ambiente.
 
 * La navigazione manuale alla pagina dei dettagli sull’esecuzione di un’esecuzione non esistente non mostrava un errore, ma solo una schermata di caricamento infinita.
 
@@ -183,7 +185,7 @@ I clienti che passano all’utilizzo dei JDK di Azul devono sapere che non tutte
 
 ## Cloud Acceleration Manager {#cam}
 
-### Data di pubblicazione {#release-date-july-cam}
+### Data di rilascio {#release-date-july-cam}
 
 La data di pubblicazione di Cloud Acceleration Manager è il 15 luglio 2021.
 

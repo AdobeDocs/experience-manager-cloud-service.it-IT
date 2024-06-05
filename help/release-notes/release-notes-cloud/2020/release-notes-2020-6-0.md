@@ -2,18 +2,20 @@
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.6.0'
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.6.0 as a Cloud Service."
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 94%
+source-wordcount: '1939'
+ht-degree: 92%
 
 ---
 
-# AEM as a Cloud Service: note sulla versione di 2020.6.0 {#release-notes}
+# Note sulla versione per AEM as a Cloud Service 2020.6.0 {#release-notes}
 
 Questa pagina illustra le note generali sulla versione di Experience Manager as a Cloud Service 2020.6.0.
 
-## Data di pubblicazione {#release-date}
+## Data di rilascio {#release-date}
 
 La data di rilascio per [!DNL Experience Manager] as a Cloud Service 2020.6.0 è il 4 giugno 2020.
 
@@ -46,7 +48,7 @@ La versione 2.9.0 dei [Componenti core](https://experienceleague.adobe.com/docs/
 
 * Sono stati apportati dei miglioramenti all’assistente vocale.
 
-## Novità negli elementi di base di AEM as a Cloud Service {#foundations}
+## Novità delle fondazioni dell’AEM as a Cloud Service {#foundations}
 
 I tempi di creazione dei progetti AEM miglioreranno rimuovendo tutti i riferimenti all’archivio remoto nel file pom.xml del progetto AEM `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
@@ -102,7 +104,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 * Il collegamento alla Console per sviluppatori direttamente da Cloud Manager non mostra l’opzione per ibernare/riattivare l’ambiente di un programma sandbox. Per risolvere questo problema, una volta nella Console per sviluppatori, aggiungi il pattern `#release-cm-p1234-e5678` alla fine dell’URL, dove *1234* è l’ID del programma e *5678* è l’ID dell’ambiente. Questo problema sarà risolto in una versione successiva.
 
-## Novità di [!DNL Adobe Experience Manager Assets] {#aem-assets}
+## Novità in [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 **User experience guidata per tag avanzati migliorati, basati su Adobe Sensei**
 

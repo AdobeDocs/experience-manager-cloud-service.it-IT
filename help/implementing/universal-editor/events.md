@@ -2,7 +2,9 @@
 title: Eventi editor universale
 description: Scopri i diversi eventi inviati dall’editor universale che puoi utilizzare per reagire ai contenuti o alle modifiche dell’interfaccia utente nell’app remota.
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%

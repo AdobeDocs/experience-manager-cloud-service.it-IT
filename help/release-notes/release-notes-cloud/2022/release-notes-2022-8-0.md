@@ -1,11 +1,13 @@
 ---
-title: Note sulla versione 2022.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2022.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2022.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2022.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 55%
+source-wordcount: '604'
+ht-degree: 62%
 
 ---
 
@@ -23,7 +25,7 @@ La sezione seguente illustra le note sulla versione 2022.8.0 di [!DNL Experience
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2022.8.0) è il 1° settembre 2022.
+La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.8.0) è il venerdì 1 settembre 2022.
 La prossima versione (2022.10.0) è prevista per il 10 novembre 2022.
 
 ## Video sulla versione {#release-video}
@@ -43,7 +45,7 @@ Dai un’occhiata al video Panoramica sulla versione di agosto 2022 per un riepi
    * fornisce un output HTML ottimale e compatibile con le e-mail, grazie alla [Stili CSS in linea](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), il [Inline attributo HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)e [bonificante HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
    * consente di creare le e-mail ovunque.
 
-### Nuove funzioni disponibili nel canale prerelease di [!DNL Sites] {#prerelease-features-sites}
+### Nuove funzioni disponibili nel canale pre-release di [!DNL Sites] {#prerelease-features-sites}
 
 * Il [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) offre agli utenti un’opzione per visualizzare il numero totale di copie per lingua associate a un frammento di contenuto. Inoltre, è possibile accedere con 1 solo clic per visualizzare tutte le copie delle varie lingue. Gli utenti possono anche filtrare la visualizzazione a tabella in base alla lingua che desiderano.
 

@@ -2,7 +2,9 @@
 title: Modelli di pagina
 description: I Modelli di pagina vengono utilizzati durante la creazione di una pagina utilizzata come base per la nuova pagina
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '3267'
 ht-degree: 4%
@@ -207,7 +209,7 @@ Per creare una cartella, puoi effettuare le seguenti operazioni:
    * **Titolo**: specifica un titolo per la cartella di configurazione
    * **Modelli modificabili**: seleziona per consentire i modelli modificabili all’interno di questa cartella
 
-1. Clic **Crea**
+1. Fai clic su **Crea**.
 
 >[!NOTE]
 >

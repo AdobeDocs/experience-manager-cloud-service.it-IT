@@ -4,7 +4,9 @@ description: Considerazioni importanti per lo strumento di mappatura utenti (leg
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 1%
@@ -39,7 +41,7 @@ Vengono registrati i seguenti casi specifici:
 
 * Quando si esegue l’integrazione del contenuto, se il contenuto non viene trasferito perché non è stato modificato rispetto al trasferimento precedente, non vengono trasferiti né gli utenti né i gruppi associati a tale contenuto. Questa regola è valida anche se nel frattempo gli utenti e i gruppi sono cambiati. Il motivo è che utenti e gruppi vengono migrati insieme al contenuto a cui sono associati.
 
-* Se AEM Cloud Service ha un utente con un nome utente diverso ma lo stesso indirizzo e-mail di un utente nell’istanza AEM di origine e la mappatura degli utenti è abilitata, viene registrato un messaggio di errore. Inoltre, l’utente AEM di origine non viene trasferito, in quanto nel sistema di destinazione è consentito un solo utente con un determinato indirizzo e-mail.
+* Se l’AEM Cloud Service ha un utente con un nome utente diverso ma lo stesso indirizzo e-mail di un utente nell’istanza AEM di origine e la mappatura degli utenti è abilitata, viene registrato un messaggio di errore. Inoltre, l’utente AEM di origine non viene trasferito, in quanto nel sistema di destinazione è consentito un solo utente con un determinato indirizzo e-mail.
 
 * Se due utenti nell’istanza AEM di origine hanno lo stesso indirizzo e-mail e Mappatura utenti è abilitata, viene registrato un messaggio di errore. Inoltre, viene trasferito uno degli utenti AEM di origine perché nel sistema di destinazione è consentito un solo utente con un determinato indirizzo e-mail.
 

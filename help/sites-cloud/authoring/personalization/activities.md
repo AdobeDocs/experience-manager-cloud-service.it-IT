@@ -2,7 +2,10 @@
 title: Gestione delle attività
 description: La console Attività consente di creare, organizzare e gestire le attività di marketing dei brand
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 85%
@@ -105,7 +108,7 @@ Per aggiungere un’attività:
 1. Se utilizzi il targeting di AEM o il targgeting esperienze di Adobe Target:
    1. Seleziona **Seleziona pubblico** e seleziona il segmento al quale viene eseguito il targeting dell’esperienza.
    1. Seleziona **Aggiungi esperienza**, digita un nome e seleziona **OK**.
-   1. Seleziona **Avanti**.
+   1. Seleziona **Successivo**.
 Se utilizzi Test A/B di Adobe Target:
    1. Seleziona la matita nella casella Tipi di pubblico per selezionare un pubblico.
    1. Seleziona **Aggiungi esperienza**, digita un nome e seleziona **OK**.

@@ -3,10 +3,12 @@ title: Percorsi di documentazione AEM
 description: I Percorsi di documentazione forniscono una struttura narrativa all’interno della documentazione AEM, mediante l’unione di funzioni complesse e disparate al fine di risolvere un obiettivo di business in modo da costituire una best practice. Progettati pensando agli inesperti di AEM, i percorsi introducono i concetti e le funzionalità che consentono di raggiungere un obiettivo da A a Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1347'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +79,7 @@ I Percorsi di documentazione sono intesi come complemento alla documentazione te
 |---|---|---|---|---|---|---|
 | Percorso di documentazione | Un percorso definisce come AEM può risolvere un problema aziendale generale attraverso una narrazione che guida i lettori attraverso processi e funzionalità complesse e intercorrelate. Illustra come le diverse funzioni funzionano insieme per risolvere nel modo migliore un’esigenza aziendale. | Lettori non esperti di AEM | Familiarità generale con un CMS | Opzioni e configurazione dettagliate | Testo | Ca. 1 ora |
 | Documenti tecnici | I documenti tecnici si concentrano sulle singole funzioni, descrivendone in dettaglio il funzionamento tecnico e ogni opzione disponibile per l’utente. | Utenti AEM esperti | Esperienza AEM | Contesto e informazioni di base | Testo | Varie |
-| Tutorial | Un tutorial è un approfondimento di un argomento che mostra a uno sviluppatore o un amministratore come raggiungere un obiettivo tecnico (generalmente di programmazione o configurazione del sistema) in modo dettagliato, fornendo esempi specifici e codice di esempio, solitamente utilizzando un set limitato di funzioni. | Sviluppatori o amministratori AEM | Esperienza AEM | Informazioni di base e teoria | Video | >1 ora |
+| Tutorial | Un tutorial permette a uno sviluppatore o un amministratore di approfondire un argomento; illsutra passo-passo come raggiungere un obiettivo tecnico (in genere programmazione o configurazione del sistema), con esempi specifici e codice di esempio, solitamente utilizzando un set limitato di funzioni. | Sviluppatori o amministratori AEM | Esperienza AEM | Informazioni di base e teoria | Video | >1 ora |
 | Guida introduttiva | Una guida introduttiva è una guida estremamente rapida di una nuova funzione AEM specifica. Offre una panoramica rapida di una singola funzione e guida l’utente attraverso i passaggi importanti (ma non tutti) per configurare e utilizzare un caso d’uso semplice. | Amministratori AEM | Esperienza AEM | Informazioni di base, teoria, opzioni dettagliate | Testo | &lt;1 ora |
 
 ## Che percorsi ci sono? {#journeys}

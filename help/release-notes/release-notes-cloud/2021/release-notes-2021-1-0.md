@@ -1,8 +1,10 @@
 ---
-title: Note sulla versione 2021.1.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2021.1.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2021.1.0 as a Cloud Service."
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 21%
@@ -14,7 +16,7 @@ ht-degree: 21%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service.
 
-## Data di pubblicazione {#release-date}
+## Data di rilascio {#release-date}
 
 La data di rilascio per [!DNL Adobe Experience Manager] La versione 2021.1.0 di as a Cloud Service è il 3 febbraio 2021.
 La seguente versione (2021.2.0) sarà del 25 febbraio 2021.
@@ -103,7 +105,7 @@ Per ulteriori informazioni, consulta la [documentazione](https://experienceleagu
 
 ## Strumenti di transizione verso il cloud {#code-transition-tools}
 
-### Data di pubblicazione {#release-date-ctt}
+### Data di rilascio {#release-date-ctt}
 
 La data di pubblicazione dello strumento Content Transfer v1.2.2 è il 1° febbraio 2021.
 

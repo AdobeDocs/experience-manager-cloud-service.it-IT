@@ -1,13 +1,15 @@
 ---
 title: Elenco di controllo per la pubblicazione
 description: Scopri tutti gli elementi che devono essere presenti per consentire una pubblicazione corretta con AEM as a Cloud Service
-source-git-commit: 4a03e2fe3519fd9e0d8d646526ea6c9cc6637f52
-workflow-type: ht
+exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 100%
 
 ---
-
 
 # Elenco di controllo per la pubblicazione {#Go-Live-Checklist}
 

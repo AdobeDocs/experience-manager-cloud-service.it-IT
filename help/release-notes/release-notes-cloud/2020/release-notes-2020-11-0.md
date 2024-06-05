@@ -1,8 +1,10 @@
 ---
-title: Note sulla versione 2020.11.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2020.11.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.11.0 as a Cloud Service."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 15%
@@ -13,7 +15,7 @@ ht-degree: 15%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service.
 
-## Data di pubblicazione {#release-date}
+## Data di rilascio {#release-date}
 
 La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 è il 2 dicembre 2020.
 La seguente versione (2020.12.0) sarà del 17 dicembre 2020
@@ -115,7 +117,7 @@ Per ulteriori dettagli, consulta la [Gestione degli ambienti](/help/implementing
 
 Il plug-in Maven SDK Build Analyzer per AEM as a Cloud Service rileva i problemi in un progetto Maven, incluse eventuali dipendenze mancanti. Offre agli sviluppatori l’opportunità di individuare i problemi durante lo sviluppo locale, ben prima di distribuirli in ambienti Cloud con Cloud Manager. Per ulteriori informazioni, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it#developing) e [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk).
 
-### Altro {#others-foundation}
+### Altri {#others-foundation}
 
 Nuovo [Sintassi &quot;httpd -t&quot;](/help/implementing/dispatcher/disp-overview.md#local-validation) verifica la configurazione di Apache e Dispatcher eseguita durante la build di Cloud Manager, che può essere eseguita anche utilizzando gli strumenti Dispatcher dell’SDK as a Cloud Service dell’AEM.
 

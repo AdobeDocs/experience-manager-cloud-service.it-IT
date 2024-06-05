@@ -2,10 +2,12 @@
 title: Creazione rapida di siti e personalizzazione front-end
 description: Scopri in che modo lo strumento Creazione Rapida dei Siti utilizza modelli di sito, temi e la pipeline front-end per consentire una rapida distribuzione di nuovi siti e separare lo sviluppo front-end.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -23,7 +25,7 @@ A tal fine, lo strumento Creazione Rapida dei Siti utilizza diverse potenti funz
 1. Un **Tema del sito AEM** è incluso nel modello e contiene le risorse CSS, JavaScript e statiche che definiscono lo stile del sito.
 1. Il **Pipeline front-end** può essere utilizzato per distribuire personalizzazioni al tema del sito indipendentemente dallo sviluppo back-end.
 
-## Percorso Creazione rapida sito {#quick-site-creation-journey}
+## Percorso di Creazione Rapida dei Siti {#quick-site-creation-journey}
 
 Per una panoramica completa del funzionamento dello strumento Creazione Rapida dei Siti e per iniziare immediatamente a distribuire e personalizzare il tuo sito utilizzando questi potenti strumenti, controlla [Percorso di Creazione Rapida dei Siti](/help/journey-sites/quick-site/overview.md).
 

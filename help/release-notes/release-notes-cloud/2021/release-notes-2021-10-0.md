@@ -1,11 +1,13 @@
 ---
-title: Note sulla versione 2021.10.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2021.10.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2021.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2021.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 69%
+ht-degree: 71%
 
 ---
 
@@ -23,8 +25,8 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versione corrente (2021.10.0) è il 4 novembre 2021.
-La seguente versione (2021.11.0) è del 2 dicembre 2021.
+La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2021.10.0) è il venerdì 4 novembre 2021.
+La seguente versione (2021.11.0) è del venerdì 2 dicembre 2021.
 
 ## Video sulla versione {#release-video}
 
@@ -44,7 +46,7 @@ Dai un&#39;occhiata al [Panoramica sulla versione di ottobre 2021](https://video
 
 ### Nuova funzione in [!DNL Assets] canale prerelease {#assets-prerelease-features}
 
-* [!DNL Dynamic Media]Il ritaglio e il campione avanzato dell’immagine di è ora basato sui servizi Sensei più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali vengono mantenute durante la rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
+* [!DNL Dynamic Media] Ritaglio avanzato immagine e Campione ora si basano sui servizi Sensei più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali vengono mantenute durante la rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
 
 * I tag avanzati vengono applicati automaticamente alle risorse utilizzando i microservizi per le risorse, anziché Smart Content Services. Il modello sottostante viene aggiornato per migliorare i risultati dei tag e ridurre i pregiudizi. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -60,7 +62,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * **Analytics per Forms adattivo**: ora puoi acquisire e tenere traccia del comportamento degli utenti connessi e non connessi (anonimi) tramite Adobe Analytics for Adaptive Forms per raccogliere informazioni approfondite. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza utente.
 
-### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms-oct-2021}
+### Nuove funzioni disponibili nel canale pre-release di [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
 * **Esternalizzare i dati del flusso di lavoro AEM per un’elaborazione sicura**: è possibile memorizzare i dati dei flussi di lavoro AEM in elaborazione (dati variabili di flusso di lavoro AEM) contenenti elementi di dati personali sensibili (SPD) in un archivio gestito dal cliente per un’elaborazione sicura. Gli elementi dei dati e le variabili del flusso di lavoro non vengono memorizzati nell’archivio AEM e vengono recuperati su richiesta da un archivio gestito dal cliente durante l’elaborazione del flusso di lavoro.
 
@@ -71,7 +73,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
    * Generare i documenti compilando i file modello (PDF e XDP) con i dati XML.
    * Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
 
-Puoi scrivere a [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
+Per registrarti al programma beta, puoi inviare un’e-mail all’indirizzo [!DNL formscsbeta@adobe.com].
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 

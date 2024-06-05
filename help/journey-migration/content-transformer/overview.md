@@ -2,10 +2,12 @@
 title: Panoramica di Content Transformer
 description: Scopri come rilevare e risolvere i problemi relativi al contenuto segnalati da BPA utilizzando Content Transformer.
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 2%
+source-wordcount: '383'
+ht-degree: 3%
 
 ---
 
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 Il Content Transformer (CT) è uno strumento sviluppato da Adobe che può essere utilizzato per rilevare e correggere automaticamente i problemi relativi al contenuto segnalati da [Best Practices Analyzer (BPA)](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) prima della migrazione dei contenuti dall’implementazione AEM corrente (on-premise o Managed Services) all’AEM as a Cloud Service.
 
-Il Content Transformer può aiutare a risolvere i problemi che rientrano nelle seguenti categorie [Categorie di pattern BPA](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html) (mostrato nella tabella seguente) consentendo agli utenti di eseguire azioni in blocco, ad esempio spostare o eliminare. Questo consente di ridurre notevolmente i tempi e la complessità associata a un progetto di migrazione.
+Il Content Transformer può aiutare a risolvere i problemi che rientrano nelle seguenti categorie [Categorie di pattern BPA](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=it) (mostrato nella tabella seguente) consentendo agli utenti di eseguire azioni in blocco, ad esempio spostare o eliminare. Questo consente di ridurre notevolmente i tempi e la complessità associata a un progetto di migrazione.
 
 ## Categorie di modelli coperte da Content Transformer e soluzioni suggerite {#pattern-categories-and-benefits}
 

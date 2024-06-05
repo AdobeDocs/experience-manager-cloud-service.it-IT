@@ -2,10 +2,13 @@
 title: Scopri i contenuti headless e come tradurli in AEM
 description: Imparare i concetti headless, come si mappano su AEM e la teoria della traduzione in AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 89%
+source-wordcount: '737'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +29,7 @@ Sin dall’introduzione dei sistemi di gestione dei contenuti (CMS), facili da u
 
 ![Il classico CMS full-stack](/help/journey-headless/developer/assets/full-stack.png)
 
-In un CMS full stack, la funzionalità per la manipolazione dei contenuti è nel CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
+In un CMS full-stack, la funzionalità per la manipolazione dei contenuti si trova nel CMS. Le funzionalità del sistema sono articolate nei diversi componenti dello stack CMS. La soluzione full-stack offre molti vantaggi.
 
 * Occorre gestire un solo sistema.
 * I contenuti vengono gestiti a livello centrale.
@@ -47,7 +50,7 @@ Quando parliamo di un CMS headless, il CMS gestisce i contenuti e continua a con
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
-I servizi che consumano, siano essi esperienze AR, un web shop, esperienze mobili, app web progressive (PWA) e così via, accettano contenuti dal CMS headless e forniscono il proprio rendering. Si occupano di fornire le teste per i tuoi contenuti.
+I servizi utilizzati, siano essi esperienze AR, un web shop, esperienze mobile, app web progressive (PWA), ecc., prendono i contenuti dal CMS headless e forniscono il loro rendering. Si occupano di fornire le teste per i tuoi contenuti.
 
 Omettendo la “testa” si semplifica il CMS rimuovendo la complessità. In questo modo si sposta anche la responsabilità di eseguire il rendering dei contenuti ai servizi che ne hanno effettivamente bisogno e che sono spesso più adatti a tale rendering.
 
@@ -57,7 +60,7 @@ Oltre a offrire strumenti affidabili per la creazione, la gestione e la distribu
 
 Grazie alle sue potenzialità, AEM consente di distribuire contenuti headless, full-stack o, contemporaneamente, in entrambe le modalità. Per lo specialista della traduzione, lo stesso set di strumenti di traduzione può essere utilizzato per entrambi i tipi di contenuti, offrendo un approccio unificato per la traduzione dei contenuti.
 
-Più avanti nel percorso si apprendono i dettagli su come l&#39;AEM traduce i contenuti, ma ad alto livello, il concetto è semplice:
+Più avanti nel percorso imparerai i dettagli su come AEM traduce i contenuti, ma a livello generale, il concetto è semplice:
 
 1. Definire una connessione a un servizio di traduzione configurando il Translation Integration Framework.
 1. Definire il contenuto da tradurre utilizzando le regole di traduzione.
@@ -78,5 +81,5 @@ Acquisite queste conoscenze, continua il tuo percorso di traduzione headless in 
 Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione headless consultando il documento [Introduzione alla traduzione headless in AEM,](getting-started.md) di seguito troverai alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
 
 * [MSM e traduzione](/help/sites-cloud/administering/msm-and-translation.md): dettagli del gestore multisito di AEM e come funzionano i suoi strumenti di traduzione
-* [Introduzione all’AEM come CMS headless](/help/headless/introduction.md)
-* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* [Introduzione ad AEM come CMS headless](/help/headless/introduction.md)
+* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)

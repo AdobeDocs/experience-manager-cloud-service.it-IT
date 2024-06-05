@@ -2,10 +2,12 @@
 title: Note sulla versione 2020.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.7.0 as a Cloud Service."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 76%
+source-wordcount: '1012'
+ht-degree: 73%
 
 ---
 
@@ -13,7 +15,7 @@ ht-degree: 76%
 
 La sezione seguente illustra le note generali sulla versione di Experience Manager as a Cloud Service 2020.7.0.
 
-## Data di pubblicazione {#release-date}
+## Data di rilascio {#release-date}
 
 La data di rilascio per [!DNL Experience Manager] as a Cloud Service 2020.7.0 è il 30 luglio 2020.
 
@@ -41,7 +43,7 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 
 * I passaggi di un flusso di lavoro non compatibili con un’implementazione Cloud Service ora sono contrassegnati da un avviso nell’editor per [!UICONTROL modelli di flusso di lavoro]. Inoltre, durante l’esecuzione dei flussi di lavoro esistenti nell’ambiente di Cloud Service, vengono saltati i passaggi del flusso di lavoro non compatibili.
 
-* I modelli di flussi di lavoro creati dai clienti che vengono distribuiti in `/conf/global`[!DNL Cloud Manager] nel progetto Git associato all’ambiente in vengono automaticamente distribuiti in `/var` e sono quindi disponibili in [!DNL Experience Manager]. I modelli di flusso di lavoro dei prodotti in `/libs` che sono stati modificati dai clienti non vengono distribuiti automaticamente in `/var`.
+* Modelli di flusso di lavoro creati dai clienti che vengono distribuiti in `/conf/global` nel progetto Git associato all’ambiente in [!DNL Cloud Manager] vengono distribuiti automaticamente in `/var` e quindi disponibile in [!DNL Experience Manager]. I modelli di flusso di lavoro dei prodotti in `/libs` che sono stati modificati dai clienti non vengono distribuiti automaticamente in `/var`.
 
 ### Bug corretti {#assets-bugs-fixed}
 
@@ -55,7 +57,7 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 
 AEM Commerce è ora disponibile su Cloud Service.
 
-Consulta [Guida introduttiva a AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) per ulteriori dettagli.
+Consulta [Guida introduttiva di AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) per ulteriori dettagli.
 
 ## Componenti core {#core-components}
 
@@ -129,7 +131,7 @@ Per ulteriori informazioni, consulta Utilizzo del supporto Java 11.
 
 * L’interfaccia classica di AEM Target Cloud Service è stata convertita nella nuova interfaccia di AEM. Inoltre, la posizione di Target Cloud Service nell’archivio di AEM è stata spostata da `/etc` a `/conf`, in allineamento con altri servizi cloud AEM.
 
-## Cloud Readiness Analyzer (Analisi di preparazione al cloud)  {#cloud-readiness-analyzer}
+## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
 Leggi questa sezione per saperne di più sulle novità e sugli aggiornamenti di Cloud Readiness Analyzer v1.0.2.
 

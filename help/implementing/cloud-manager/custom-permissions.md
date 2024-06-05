@@ -2,10 +2,13 @@
 title: Autorizzazioni personalizzate
 description: Scopri come utilizzare le autorizzazioni personalizzate per creare profili di autorizzazioni personalizzati con autorizzazioni configurabili per limitare l’accesso a programmi, pipeline e ambienti per gli utenti di Cloud Manager.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 38%
+ht-degree: 41%
 
 ---
 
@@ -16,7 +19,7 @@ Scopri come utilizzare le autorizzazioni personalizzate per creare profili di au
 
 ## Introduzione {#introduction}
 
-Cloud Manager dispone di un set di ruoli predefiniti che disciplinano l’accesso a varie funzioni di Cloud Manager:
+Cloud Manager dispone di un set di ruoli predefiniti che determinano l’accesso a varie funzioni di Cloud Manager:
 
 * Proprietario business
 * Responsabile del programma
@@ -83,7 +86,7 @@ Ora che disponi di un nuovo profilo di prodotto, puoi assegnargli le autorizzazi
 1. Il **Modifica autorizzazione** viene visualizzata la finestra.
    * L’autorizzazione selezionata nel passaggio precedente è selezionata nella colonna a sinistra.
    * Gli elementi di autorizzazione disponibili per l’assegnazione dell’autorizzazione si trovano nella colonna centrale indicata con Elementi di **Autorizzazioni disponibili**.
-   * Gli elementi di autorizzazione assegnati si trovano nella colonna a destra etichettata **Elementi autorizzazione inclusi**.
+   * Gli elementi di autorizzazione assegnati si trovano nella colonna a destra indicata con **Elementi di autorizzazione inclusi**.
 
    ![Modifica elementi di autorizzazione](assets/edit-permission-items.png)
 
@@ -137,9 +140,9 @@ Per creare profili personalizzati sono disponibili le seguenti autorizzazioni.
 | Creazione di un archivio | Consenti agli utenti di creare archivi Git |
 | Eliminazione di un archivio | Consenti agli utenti di eliminare gli archivi Git |
 | Modifica di un archivio | Consenti agli utenti di modificare gli archivi Git |
-| Generazione del codice di un archivio | Consenti agli utenti di generare progetti da Archetipo |
+| Generazione del codice di un archivio | Consenti agli utenti di generare progetti da un archetipo |
 | Gestione nome dominio | Consenti agli utenti di creare, modificare o eliminare i nomi di dominio |
-| Gestione Inserisce nell&#39;elenco Consentiti IP | Consenti agli utenti di creare, modificare o eliminare l&#39;associazione di inserire nell&#39;elenco Consentiti inserisce nell&#39;elenco Consentiti di IP e l&#39;associazione di IP |
+| INSERIRE NELL&#39;ELENCO CONSENTITI Gestione IP | Consenti agli utenti di creare, modificare o eliminare l&#39;associazione del elenco Consentiti inserii nell&#39;elenco Consentiti di IP e del IP |
 | Gestione dell&#39;infrastruttura di rete | Consenti agli utenti di creare, modificare o eliminare infrastrutture di rete |
 | Gestione certificati SSL | Consenti agli utenti di creare, modificare o eliminare certificati SSL |
 | Gestione utenti account secondario New Relic | Consenti agli utenti di leggere/modificare gli utenti dell’account secondario di New Relic |

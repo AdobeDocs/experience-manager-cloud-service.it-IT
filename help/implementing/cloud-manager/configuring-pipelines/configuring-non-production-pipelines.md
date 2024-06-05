@@ -3,10 +3,13 @@ title: Configurazione delle pipeline non di produzione
 description: Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1371'
-ht-degree: 73%
+ht-degree: 74%
 
 ---
 
@@ -36,7 +39,7 @@ Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , selezionare il programma.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
 1. Accedi alla scheda **Pipeline** dalla pagina Home di Cloud Manager. Fai clic su **+Aggiungi** e seleziona **Aggiungi pipeline non di produzione**.
 
@@ -154,7 +157,7 @@ I passaggi per completare la creazione della pipeline di distribuzione non di pr
    * Se hai abilitato **Audit dell’esperienza**, consulta il documento [Audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) per informazioni dettagliate su come configurare.
    * In caso contrario, salta questo passaggio.
 
-1. Tocca o fai clic su **Salva** per salvare la pipeline.
+1. Per salvare la pipeline, tocca o fai clic su **Salva**.
 
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
 

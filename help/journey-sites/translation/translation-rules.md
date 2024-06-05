@@ -5,10 +5,13 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Translation
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +37,7 @@ Questo documento ti aiuta a capire come utilizzare le regole di traduzione di AE
 
 ## Regole di traduzione {#translation-rules}
 
-Le pagine AEM Sites possono contenere molte informazioni. A seconda delle esigenze del progetto, è probabile che non tutte le informazioni all’interno di una pagina debbano essere tradotte.
+Le pagine AEM Sites possono contenere molte informazioni. A seconda delle esigenze di progetto, è probabile che non tutte le informazioni interne a una pagina debbano essere tradotte.
 
 Le regole di traduzione identificano il contenuto incluso o escluso nei progetti di traduzione. Quando il contenuto viene tradotto, AEM estrae o raccoglie il contenuto in base a queste regole. In questo modo solo il contenuto da tradurre viene inviato al servizio di traduzione.
 
@@ -57,19 +60,19 @@ Una console **Configurazione della traduzione** è disponibile per la configuraz
 
 Per accedervi:
 
-1. Accedi a **Strumenti** > **Generale**.
+1. Passa a **Strumenti** > **Generale**.
 1. Seleziona **Configurazione traduzione**.
 
 AEM crea automaticamente le regole di traduzione per tutto il contenuto. Per visualizzare queste regole:
 
-1. Seleziona la `/content` contesto.
+1. Seleziona il contesto `/content`.
 1. Sulla barra degli strumenti, seleziona **Modifica**.
 1. Si apre l’Editor regole di traduzione con le regole AEM create automaticamente per il percorso `/content`.
 
    ![Editor regole di traduzione](assets/translation-rules-editor.png)
 
-1. Le proprietà di pagina che vengono tradotte si trovano nella sezione **Generale** dell’elenco. È possibile aggiungere o aggiornare i nomi di proprietà esistenti che si desidera includere esplicitamente nella traduzione.
-   1. In **Nuova proprietà** immetti il nome della proprietà. Le opzioni **Traduci** e **Eredita** vengono controllate automaticamente.
+1. Le proprietà di pagina che vengono tradotte si trovano nella sezione **Generale** dell’elenco. È possibile aggiungere o aggiornare i nomi di proprietà esistenti che desideri includere esplicitamente nella traduzione.
+   1. Nel campo **Nuova proprietà** immetti il nome della proprietà. Le opzioni **Traduci** e **Eredita** vengono selezionate automaticamente.
    1. Seleziona **Aggiungi**.
    1. Ripeti questi passaggi per tutti i campi da tradurre.
    1. Seleziona **Salva**.
@@ -86,7 +89,7 @@ Hai configurato le regole di traduzione.
 
 ## Utilizzo avanzato {#advanced-usage}
 
-Ci sono diverse proprietà aggiuntive che possono essere configurate come parte delle regole di traduzione. Inoltre, è possibile specificare le regole manualmente come XML, il che consente maggiore specificità e flessibilità.
+È possibile configurare una serie di proprietà aggiuntive come parte delle regole di traduzione. Inoltre, è possibile specificare le regole manualmente come XML, consentendo una maggiore specificità e flessibilità.
 
 Tali funzioni generalmente non sono necessarie per iniziare a localizzare il contenuto ma, se sei interessato, puoi avere maggiori informazioni nella sezione [Risorse aggiuntive](#additional-resources).
 
@@ -97,7 +100,7 @@ Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dov
 * Comprendere come funzionano le regole di traduzione.
 * Essere in grado di definire le tue regole di traduzione.
 
-Approfondisci l&#39;argomento e continua il tuo percorso di traduzione AEM Sites consultando il documento [Traduci contenuto](translate-content.md) dove scopri come il connettore e le regole lavorano insieme per tradurre i contenuti.
+Sviluppa questa conoscenza e continua il tuo percorso di traduzione di AEM Sites esaminando il documento successivo [Tradurre il contenuto](translate-content.md), dove verrà illustrato come il connettore e le regole lavorano insieme per tradurre i contenuti.
 
 ## Risorse aggiuntive {#additional-resources}
 

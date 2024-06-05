@@ -2,7 +2,9 @@
 title: Ambienti di sviluppo rapidi
 description: Scopri come utilizzare gli ambienti di sviluppo rapido per le iterazioni di sviluppo rapido in un ambiente cloud.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 4a5b7c671a149d61c60fc86f93a41d52fb4b5468
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '4294'
 ht-degree: 3%

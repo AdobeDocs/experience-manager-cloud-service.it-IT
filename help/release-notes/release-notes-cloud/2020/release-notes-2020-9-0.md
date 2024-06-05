@@ -1,11 +1,13 @@
 ---
-title: Note sulla versione 2020.9.0 di [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2020.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.9.0 as a Cloud Service."
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 19%
+source-wordcount: '711'
+ht-degree: 15%
 
 ---
 
@@ -13,7 +15,7 @@ ht-degree: 19%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
-## Data di pubblicazione {#release-date}
+## Data di rilascio {#release-date}
 
 La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 è il 24 settembre 2020.
 
@@ -21,7 +23,7 @@ La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2020.
 
 ### Novità in [!DNL Sites] {#what-is-new-sites}
 
-* L’SDK JavaScript dell’editor di applicazioni a pagina singola (SPA) [è ora open source](/help/implementing/developing/hybrid/reference-materials.md).
+* SDK JavaScript per l’editor di applicazioni a pagina singola (SPA) [è ora open source](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -50,7 +52,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Novità {#what-is-new-commerce}
 
-* È stata rilasciata la versione 1.3.0 dei componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) per ulteriori dettagli.
+* È stata rilasciata la versione 1.3.0 dei Componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) per ulteriori dettagli.
 
 * È ora disponibile la funzionalità di anteprima con prodotti/categorie per i modelli di prodotto e categoria. Questo consente agli utenti aziendali e agli esperti di marketing dell’AEM di visualizzare i modelli di prodotto e categoria con dati reali.
 
@@ -68,27 +70,27 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Data di pubblicazione {#release-date-cm}
 
-La data di rilascio per [!UICONTROL Cloud Manager] La versione 2020.9.0 di è il 3 settembre 2020.
+La data di rilascio di [!UICONTROL Cloud Manager] versione 2020.9.0 è il venerdì 3 settembre 2020.
 
 ### Novità {#what-is-new-cloud-manager}
 
 * Audit del contenuto è stato rinominato in Audit dell’esperienza.
 * Il processo di build è stato diviso in tre diversi comandi Maven.
-* Se la clonazione dell’archivio Git non riesce, vengono eseguiti fino a tre tentativi.
+* Se la clonazione dell’archivio Git genera errori, sono eseguiti fino a tre nuovi tentativi.
 
 ### Correzioni di bug {#bug-fixes-cm}
 
 * La scheda Audit del contenuto mostrava erroneamente l’URL di base utilizzando il dominio di Author anziché di Publish.
 
-## Cloud Readiness Analyzer (Analisi di preparazione al cloud)  {#cloud-readiness-analyzer}
+## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-Leggi questa sezione per saperne di più sulle novità e sugli aggiornamenti di Cloud Readiness Analyzer v1.1.0.
+Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Readiness Analyzer v1.1.0.
 
 ### Novità {#what-is-new-cra}
 
 * Cloud Readiness Analyzer (Analisi di preparazione al cloud) dispone di una console di stato iniziale che presenta un’intestazione **Genera report** per consentire all’utente di fare clic per eseguire lo strumento CRA.
 
-* Durante l’esecuzione dell’interfaccia di Cloud Readiness Analyzer, viene visualizzato lo stato di avanzamento. Vengono visualizzati gli elementi in fase di analisi e i risultati rilevati durante l&#39;esecuzione.
+* Durante l’esecuzione, l’interfaccia utente di Cloud Readiness Analyzer mostra lo stato di avanzamento. Vengono visualizzati gli elementi in fase di analisi e i risultati rilevati durante l&#39;esecuzione.
 
 * Il rapporto di Cloud Readiness Analyzer presenta un riepilogo e il numero dei risultati sotto forma di tabella, organizzati in base al tipo di risultato e al livello di importanza. Facendo clic sul numero di quel risultato, si passa automaticamente alla posizione del risultato nel rapporto.
 

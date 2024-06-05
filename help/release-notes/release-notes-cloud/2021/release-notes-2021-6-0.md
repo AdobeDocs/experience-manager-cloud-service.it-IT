@@ -1,11 +1,13 @@
 ---
-title: Note sulla versione 2021.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2021.6.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2021.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2021.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1432'
-ht-degree: 32%
+ht-degree: 47%
 
 ---
 
@@ -41,7 +43,7 @@ Dai un&#39;occhiata al [Panoramica sulla versione di giugno 2021](https://video.
 
 Questa sezione illustra le note sulla versione 2021.6.0 e 2021.5.0 di Cloud Manager in AEM as a Cloud Service.
 
-### Data di pubblicazione {#release-date-june-cm}
+### Data di rilascio {#release-date-june-cm}
 
 La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.6.0 è il 10 giugno 2021.
 La prossima versione è pianificata per il 15 luglio 2021.
@@ -122,31 +124,31 @@ La prossima versione è pianificata per il 15 luglio 2021.
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
 * È stata aggiunta la possibilità di filtrare colonne personalizzate nella casella in entrata AEM.
-* È stata aggiunta la possibilità di utilizzare l’editor di temi e il livello di stile dell’editor di moduli adattivi per assegnare uno stile al componente captcha.
-* Sono state migliorate la velocità e la precisione per il rilevamento automatico delle sezioni logiche nei PDF forms sorgente e la conversione di tali sezioni nei corrispondenti pannelli dei moduli adattivi.
+* È stata aggiunta la possibilità di utilizzare l’editor di temi e il livello di stile dell’editor di moduli adattivi per assegnare uno stile al componente Captcha.
+* Sono state migliorate la velocità e la precisione per il rilevamento automatico delle sezioni logiche nei moduli PDF sorgente e la conversione di tali sezioni nei corrispondenti pannelli dei moduli adattivi.
 * È stata aggiunta l’azione Sposta per spostare un file PDF o XDP da una cartella a un’altra.
 
 ### Funzione beta di [!DNL Forms] {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: API di comunicazione consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che permettono di:
-   * Generare documenti di modulo finali compilando i file modello con dati XML.
+   * Generare i documenti compilando i file modello con dati XML.
    * Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
-   * Genera PDF di stampa da un modulo XFA PDF e Adobe Acrobat Form (AcroForm).
+   * Generare PDF di stampa da un modulo XFA PDF e Adobe Acrobat Form (AcroForm).
 
-* **Variable Data Externalizer**: puoi salvare i dati delle variabili del flusso di lavoro AEM su un sistema di archiviazione esterno gestito dalla tua organizzazione.
+* **Esternalizzazione dei dati delle variabili**: puoi salvare i dati delle variabili del flusso di lavoro AEM su un sistema di archiviazione esterno gestito dalla tua organizzazione.
 
-Puoi scrivere a [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
+Per registrarti al programma beta, puoi inviare un’e-mail all’indirizzo [!DNL formscsbeta@adobe.com].
 
 ### Bug corretti in [!DNL Forms] {#forms-bugs-fixed}
 
-* Quando un campo viene convalidato prima dell’invio dei dati al servizio back-end tramite Form Data Model (FDM), le convalide hanno esito positivo ma il servizio Form Data Model non riesce a richiamare la post-convalida.
-* Quando invii un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file da 0 byte all’altra estremità. Si tratta di un problema noto in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* Quando un campo viene convalidato prima dell’invio dei dati al servizio back-end tramite il Modello dati modulo (FDM), le convalide hanno esito positivo ma il relativo servizio non riesce a richiamare la post-convalida.
+* Quando invii un modulo contenente un campo di caricamento HTML standard da un dispositivo Apple iOS, a volte il contenuto del file non viene inviato e viene ricevuto un file da 0 byte. Si tratta di un problema noto in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
 Questa sezione illustra le note sulla versione di AEM Screens as a Cloud Service.
 
-### Data di pubblicazione {#release-date-june-screens}
+### Data di rilascio {#release-date-june-screens}
 
 La data di rilascio per AEM Screens as a Cloud Service è il 24 giugno 2021.
 
@@ -168,9 +170,9 @@ La data di rilascio per AEM Screens as a Cloud Service è il 24 giugno 2021.
 ### Novità {#what-is-new-cif}
 
 * Nuovi tipi di dati di riferimento per prodotti e categorie CIF per Frammenti di contenuto (incl. supporto dell’interfaccia utente per il selettore di prodotti/categorie)
-* Nuovo componente core Frammento di contenuto Commerce
+* Nuovo componente core Frammento di contenuto di Commerce
 * Ricerca e-commerce full-text supportata nel back-end AEM
-* I componenti core Commerce supportano la raccolta dati di Adobe Commerce Sensei Recs
+* I componenti core Commerce supportano la raccolta dati Adobe Commerce Sensei Recs
 * Sono stati migliorati gli URL SEO-friendly per le pagine delle categorie
 * Supporto per intestazioni HTTP personalizzate per sito/configurazione
 

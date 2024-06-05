@@ -2,7 +2,10 @@
 title: Dashboard di Experience Audit
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO tramite un’interfaccia dashboard chiara e informativa.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 7%
@@ -16,7 +19,7 @@ Scopri in che modo l’audit dell’esperienza convalida il processo di distribu
 
 >[!NOTE]
 >
->Questa funzione è disponibile solo per [il programma di adozione anticipata.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Questa funzione è disponibile solo per [il programma per i primi utilizzatori.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 >
 >Per informazioni dettagliate sulla funzione Audit dell’esperienza esistente per AEM as a Cloud Service, consulta il documento [Test di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
 

@@ -2,7 +2,9 @@
 title: Acquisizione di contenuti in Cloud Service
 description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 6372277adfac0700d80a3e6c013f419892822e55
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2905'
 ht-degree: 12%
@@ -145,7 +147,7 @@ Questo messaggio indica che Cloud Acceleration Manager non è riuscito a raggiun
 
 * AEM as a Cloud Service mantiene lo stato dell’ambiente e occasionalmente deve riavviare il servizio di migrazione per vari motivi normali. Se il servizio viene riavviato, non potrà essere raggiunto, ma sarà disponibile alla fine.
 * È possibile che nell’istanza sia in esecuzione un altro processo. Ad esempio, se [Aggiornamenti delle versioni AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) sta applicando un aggiornamento, il sistema potrebbe essere occupato e il servizio di migrazione regolarmente non disponibile. Al termine di questo processo, è possibile tentare di nuovo l’inizio dell’acquisizione.
-* Se un [È stato applicato il Inserisco nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Tramite Cloud Manager, impedisce a Cloud Acceleration Manager di raggiungere il servizio di migrazione. Non è possibile aggiungere un indirizzo IP per le acquisizioni perché il relativo indirizzo è dinamico. Attualmente, l’unica soluzione consiste nel disattivare il inserisco nell&#39;elenco Consentiti di IP durante il processo di acquisizione e indicizzazione.
+* Se un [È stato applicato il Inserisco nell&#39;elenco Consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Tramite Cloud Manager, impedisce a Cloud Acceleration Manager di raggiungere il servizio di migrazione. Non è possibile aggiungere un indirizzo IP per le acquisizioni perché il relativo indirizzo è dinamico. Attualmente, l’unica soluzione consiste nel disattivare il inserisco nell&#39;elenco Consentiti di IP durante il processo di acquisizione e indicizzazione.
 * Ci possono essere altri motivi che richiedono un&#39;indagine. Se l’acquisizione o l’indicizzazione continua a non riuscire, contatta l’Assistenza clienti di Adobe.
 
 ### Aggiornamenti e acquisizioni delle versioni di AEM {#aem-version-updates-and-ingestions}

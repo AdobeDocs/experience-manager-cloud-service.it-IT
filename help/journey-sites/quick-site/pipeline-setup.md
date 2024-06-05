@@ -2,10 +2,13 @@
 title: Configurare la pipeline
 description: Crea una pipeline front-end per gestire la personalizzazione del tema del sito.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 94%
+source-wordcount: '949'
+ht-degree: 100%
 
 ---
 
@@ -51,13 +54,13 @@ In questo modo, lo sviluppo front-end può funzionare separatamente e parallelam
 
 >[!NOTE]
 >
->Le pipeline front-end possono distribuire solo risorse JavaScript, CSS e statiche per personalizzare lo stile del sito AEM. Il contenuto del sito, ad esempio pagine o risorse, non può essere distribuito in una pipeline.
+>Le pipeline front-end possono distribuire solo risorse JavaScript, CSS e statiche per personalizzare lo stile del sito AEM. Il contenuto del sito, come pagine o risorse, non può essere distribuito in una pipeline.
 
 ## Accesso a Cloud Manager {#login}
 
 1. Accedi ad Adobe Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Cloud Manager elenca i vari programmi disponibili. Seleziona quello che desideri gestire. Se hai iniziato a lavorare con AEM as a Cloud Service da poco, probabilmente avrai a disposizione solo un programma.
+1. Cloud Manager elenca i vari programmi disponibili. Seleziona il programma che desideri gestire. Se hai iniziato a lavorare con AEM as a Cloud Service da poco, probabilmente avrai a disposizione solo un programma.
 
    ![Selezione di un programma in Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -65,13 +68,13 @@ Viene visualizzata una panoramica del programma. La pagina avrà un aspetto dive
 
 ![Panoramica di Cloud Manager](assets/cloud-manager-overview.png)
 
-Prendi nota del nome del programma a cui hai effettuato l’accesso o di cui hai copiato l’URL. È necessario fornirlo allo sviluppatore front-end in un secondo momento.
+Prendi nota del nome del programma a cui hai effettuato l’accesso o di cui hai copiato l’URL. In seguito, devi fornire questa funzionalità allo sviluppatore front-end.
 
 ## Creare una pipeline front-end {#create-front-end-pipeline}
 
 Dopo aver effettuato l’accesso a Cloud Manager, puoi creare una pipeline per la distribuzione front-end.
 
-1. In **Pipeline** nella pagina Cloud Manager, seleziona la sezione **Aggiungi** pulsante.
+1. Nella sezione **Pipeline** della pagina di Cloud Manager, seleziona il pulsante **Aggiungi**.
 
    ![Pipeline](assets/pipelines-add.png)
 

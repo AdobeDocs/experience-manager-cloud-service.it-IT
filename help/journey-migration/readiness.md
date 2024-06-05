@@ -2,7 +2,9 @@
 title: Fase di preparazione
 description: Scopri i passaggi necessari per assicurarti che l’installazione dell’AEM sia pronta per essere spostata sul cloud.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 6%

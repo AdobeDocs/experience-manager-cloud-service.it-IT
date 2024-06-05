@@ -2,9 +2,11 @@
 title: Percorso componente aggiuntivo Demo di riferimento di AEM
 description: Inizia qui il percorso guidato sull’aggiunta del componente aggiuntivo Demo di riferimento di AEM a un ambiente sandbox con configurazione AEM minima. Inoltre, prova le potenti caratteristiche di AEM con esempi dettagliati basati sulle best practice.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '826'
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '816'
 ht-degree: 100%
 
 ---

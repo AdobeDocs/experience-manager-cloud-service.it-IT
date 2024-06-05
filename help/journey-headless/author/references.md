@@ -2,10 +2,13 @@
 title: Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto
 description: Imparare a utilizzare i riferimenti in Frammenti di contenuto, per i contenuti, altri frammenti e altre risorse (file multimediali). Introdurre la necessità e la meccanica dei frammenti nidificati per l’authoring CMS headless.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +30,13 @@ Questo articolo si basa su questi elementi e spiega come utilizzare i riferiment
    * Riferimenti al contenuto
    * Riferimenti a risorse/file multimediali
    * Riferimenti ai frammenti
-   * Riferimenti improvvisati da un blocco di testo
+   * Riferimenti improvvisati dall’interno di un blocco di testo
 
 ## Cosa sono i riferimenti {#what-are-references}
 
 I riferimenti sono semplicemente un meccanismo per collegare le risorse, sia che si tratti di altro contenuto, di risorse (come nelle immagini) o di altri frammenti. Anche se molto simili, ci sono alcune differenze.
 
-Alcuni riferimenti hanno tipi di dati dedicati (ad esempio, Riferimenti a contenuti e Riferimenti a frammenti), mentre altri vengono semplicemente aggiunti come riferimento all’interno di un blocco di testo (riferimenti a risorse e riferimenti improvvisati).
+Alcuni riferimenti sono costituiti da tipi di dati dedicati (ad esempio, Riferimenti al contenuto e Riferimenti ai frammenti), mentre altri sono semplicemente aggiunti come riferimento all’interno di un blocco di testo (riferimenti alle risorse e riferimenti improvvisati).
 
 ![Frammenti di contenuto - Riferimenti](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -58,7 +61,7 @@ Ad esempio, è possibile che siano definiti i seguenti modelli di frammento di c
 * Persona
 * Premi
 
-Sembra abbastanza semplice, ma un&#39;azienda ha sia un amministratore delegato che dei dipendenti....e queste sono tutte persone, ognuna definita come Persona.
+Sembra abbastanza semplice, ma un’Azienda ha sia un amministratore delegato che dei dipendenti...e queste sono tutte persone, ognuna definita come Persona.
 
 E una Persona può ricevere un Premio (o forse due).
 
@@ -79,7 +82,7 @@ In qualità di Autore, non sei responsabile della definizione di queste relazion
 
 ### Come creare i frammenti nidificati {#author-nested-fragment}
 
-L’authoring dei riferimenti ai frammenti è abbastanza semplice (anche se in genere il campo non sarà etichettato come **Riferimento a frammento**). Puoi digitare direttamente nel riferimento oppure (molto probabilmente) selezionare l’icona della cartella per aprire un browser che ti consenta di navigare e selezionare il frammento necessario.
+L’authoring dei riferimenti ai frammenti è abbastanza semplice (anche se in genere il campo non sarà etichettato come **Riferimento a frammento**). È possibile digitare direttamente il riferimento oppure (più probabilmente) selezionare l’icona della cartella per aprire un browser che consente di sfogliare e selezionare il frammento desiderato.
 
 ![Frammenti di contenuto - Riferimenti](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
@@ -96,7 +99,7 @@ Utilizzando la scheda **Struttura ad albero** dell’Editor frammento di contenu
 
 ## Riferimenti ad hoc {#adhoc-references}
 
-I riferimenti improvvisati possono essere aggiunti come un semplice collegamento all’interno di un blocco di testo:
+I riferimenti improvvisati possono essere aggiunti come semplice collegamento all’interno di un blocco di testo:
 
 ![Frammenti di contenuto - Riferimenti ad hoc](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 

@@ -2,7 +2,9 @@
 title: Fase di implementazione
 description: Assicurarsi che il codice e il contenuto siano pronti per la migrazione al cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 9%
@@ -72,7 +74,7 @@ Per prima cosa, consulta la documentazione che descrive gli strumenti di base e 
 
 * Durante la pianificazione, è consigliabile disporre di un elenco di aree che devono essere riadattate per essere compatibili con gli as a Cloud Service AEM. Puoi rivedere [Linee guida per lo sviluppo](/help/implementing/developing/introduction/development-guidelines.md) per ulteriori dettagli su come effettuare il refactoring del codice per il Cloud Service e ottimizzarlo.
 * Scopri come [Gestione configurazioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) nell’AEM as a Cloud Service.
-* Scopri come impostare un ambiente di sviluppo locale scaricando il [SDK AS A CLOUD SERVICE AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
+* Scopri come impostare un ambiente di sviluppo locale scaricando il [SDK AS A CLOUD SERVICE AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=it)
 * Infine, impara a conoscere [API Java as a Cloud Service AEM](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 Inoltre, puoi anche:
@@ -175,7 +177,7 @@ In base ai punti dati raccolti (vedere sopra), è possibile creare un piano di m
 
 Nella tabella seguente viene illustrato un tipico piano di migrazione:
 
-| Iterazione di migrazione | Data iniziale | Data di fine stimata | Dipendenze | Durata stimata (in giorni) | Dettagli aggiuntivi/Azioni |
+| Iterazione di migrazione | Data di inizio | Data di fine stimata | Dipendenze | Durata stimata (in giorni) | Dettagli aggiuntivi/Azioni |
 |---|---|---|---|---|---|
 | PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
 | PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |   |   |   |   |   |

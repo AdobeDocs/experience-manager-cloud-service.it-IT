@@ -2,10 +2,13 @@
 title: Come strutturare i vari elementi - La tua app e il tuo contenuto in AEM headless
 description: In questa parte del Percorso per sviluppatori AEM Headless, scoprirai come realizzare il tuo progetto AEM utilizzando i frammenti di contenuto, le chiamate GraphQL, le chiamate REST API e la tua applicazione, e prepararlo per la pubblicazione.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 98%
+source-wordcount: '1061'
+ht-degree: 100%
 
 ---
 
@@ -114,6 +117,6 @@ Continua il tuo percorso headless di AEM passando alla prossima revisione del do
 * [SDK headless di AEM per browser lato client (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 * [SDK headless di AEM per lato server/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 * [SDK headless di AEM per Java™](https://github.com/adobe/aem-headless-client-java)
-* [Introduzione all’AEM come CMS headless](/help/headless/introduction.md)
+* [Introduzione ad AEM come CMS headless](/help/headless/introduction.md)
 * [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)

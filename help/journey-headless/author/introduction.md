@@ -2,10 +2,13 @@
 title: Authoring in AEM utilizzato come CMS headless - Introduzione
 description: Introduzione all’utilizzo delle funzioni di Adobe Experience Manager as a Cloud Service come CMS headless per la creazione di contenuti per il tuo progetto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 94%
+source-wordcount: '680'
+ht-degree: 100%
 
 ---
 
@@ -61,7 +64,7 @@ Ciò significa che i contenuti possono essere fruiti su una vasta gamma di dispo
 
 Quindi la modellazione dei contenuti (nota anche come modellazione dei dati) è un altro termine tecnico: perché dovrebbe interessarti in qualità di autore?
 
-Affinché le applicazioni headless possano accedere ai contenuti e utilizzarli, è necessario che il contenuto abbia una struttura predefinita. Sarebbe possibile avere i contenuti in una forma libera, ma per le applicazioni tutto diventerebbe *molto* complicato.
+Affinché le applicazioni headless possano accedere ai contenuti e utilizzarli, il contenuto deve avere una struttura predefinita. Sarebbe possibile avere i contenuti in una forma libera, ma per le applicazioni tutto diventerebbe *molto* complicato.
 
 In sostanza, il processo di definizione della struttura del contenuto da rispettare prevede la progettazione di un modello, denominata modellazione dei dati.
 
@@ -77,9 +80,9 @@ Ora che hai imparato i concetti e la terminologia, il passo successivo è [Scopr
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Introduzione all’AEM come CMS headless](/help/headless/introduction.md)
+* [Introduzione ad AEM come CMS headless](/help/headless/introduction.md)
 
-* [Tutorials per headless nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
 
 * Percorso per sviluppatori headless di AEM
    * [Scopri di più sullo sviluppo di CMS headless](/help/journey-headless/developer/learn-about.md)

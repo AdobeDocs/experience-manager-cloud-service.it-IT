@@ -2,10 +2,12 @@
 title: Fase di implementazione in Cloud Acceleration Manager
 description: Questa pagina fornisce una panoramica sulla fase di implementazione in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 4%
+source-wordcount: '620'
+ht-degree: 5%
 
 ---
 
@@ -15,8 +17,8 @@ La fase di implementazione include:
 
 * [Sviluppo locale](#local-development)
 * [Refactoring del codice](#code-refactoring)
-* [Distribuzione as a Cloud Service AEM](#aem-as-a-cloud-service-deployment)
-* [Trasferimento dei contenuti](#content-transfer)
+* [Implementazione di AEM as a Cloud Service](#aem-as-a-cloud-service-deployment)
+* [Content Transfer](#content-transfer)
 
 
 Fai clic sulla scheda del progetto per aprire la pagina di destinazione del progetto e passare alla sezione **Implementazione** come illustrato nella figura riportata di seguito.
@@ -105,7 +107,7 @@ Segui questa sezione per esplorare la scheda delle attività di Trasferimento co
    >Un set di migrazione scade dopo un periodo prolungato di inattività. Consulta [Scadenza set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) per i dettagli.
 
    >[!NOTE]
-   >Consulta [prerequisiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) e [best practice e linee guida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti).
+   >Consulta [prerequisiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=it) e [best practice e linee guida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it) prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
 1. Scarica e installa lo strumento Content Transfer (Trasferimento contenuti) per popolare il set di migrazione e completare la fase di estrazione del trasferimento dei contenuti. Revisione [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it) per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 

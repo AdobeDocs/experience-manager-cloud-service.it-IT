@@ -3,8 +3,9 @@ description: L’annullamento della validità push elimina automaticamente il co
 title: Configurazione dell’annullamento della validità push per la rete CDN di produzione BYO
 feature: Edge Delivery Services
 exl-id: 026960f1-78e6-4a25-a94e-a1d0c61536c1
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '32'
 ht-degree: 100%
 

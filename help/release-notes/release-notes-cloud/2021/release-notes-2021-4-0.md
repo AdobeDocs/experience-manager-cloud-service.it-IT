@@ -1,11 +1,13 @@
 ---
-title: Note sulla versione 2021.4.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2021.4.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2021.4.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 25%
+source-wordcount: '1545'
+ht-degree: 44%
 
 ---
 
@@ -93,17 +95,17 @@ La seguente versione (2021.5.0) sarà del 27 maggio 2021.
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
-* **Utilizzare il metodo di autenticazione tramite documento ufficiale in Adaptive Forms abilitato per Adobe Sign**
+* **Utilizzare il metodo di autenticazione basata su ID della Pubblica amministrazione nei moduli adattivi abilitati per Adobe Sign**
 
-  Basato su algoritmi avanzati di apprendimento automatico, il processo tramite documento ufficiale di Adobe Sign consente alle aziende di tutto il mondo di garantire un’autenticazione di alta qualità dell’identità del destinatario. Ora puoi utilizzare il metodo di autenticazione tramite documento ufficiale in Adaptive Forms abilitato per Adobe Sign.
+  Basato su algoritmi avanzati di apprendimento automatico, il processo tramite ID della Pubblica amministrazione di Adobe Sign consente alle aziende di tutto il mondo di garantire un’autenticazione dell’identità del destinatario di elevata qualità. Ora puoi utilizzare il metodo di autenticazione basata su ID della Pubblica amministrazione nei moduli adattivi abilitati per Adobe Sign.
 
-  Il Government ID è un metodo di autenticazione dell’identità avanzato che indica al destinatario di [caricare l&#39;immagine di un documento di identità ufficiale (patente di guida, carta d&#39;identità, passaporto)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)e quindi valuta il documento per assicurarne l&#39;autenticità.
+  L’ID della Pubblica amministrazione è un metodo di autenticazione dell’identità avanzato che indica al destinatario di [caricare l’immagine di un documento di identità ufficiale (patente di guida, carta d’identità, passaporto)](https://helpx.adobe.com/it/sign/config/send-settings/auth-methods/government-id-auth.html)e quindi valuta il documento per assicurarne l’autenticità.
 
-* **Supporto all’utilizzo dell’esperienza di firma interna ai moduli per l’invio asincrono dei moduli adattivi**
+* **Supporto per l’utilizzo dell’esperienza di firma nel modulo per l’invio asincrono dei moduli adattivi**
 
-  È ora possibile utilizzare l’esperienza di firma interna ai moduli per l’invio asincrono di moduli adattivi. È inoltre possibile incorporare un modulo adattivo in un [!DNL Experience Manager Sites] e utilizza l’esperienza di firma interna ai moduli per inviare moduli adattivi.
+  È ora possibile utilizzare l’esperienza di firma nel modulo per l’invio asincrono di moduli adattivi. È inoltre possibile incorporare un modulo adattivo in una pagina di [!DNL Experience Manager Sites] e utilizzare l’esperienza di firma nel modulo per inviare moduli adattivi.
 
-* **Supporto per l’utilizzo di una variabile per specificare un allegato durante la precompilazione di un Modulo adattivo per una fase Assegna attività**
+* **Supporto per l’utilizzo di una variabile per specificare un allegato durante la precompilazione di un modulo adattivo in una fase Assegna attività**
 
   Durante la precompilazione di un modulo adattivo per una fase Assegna attività, è ora possibile utilizzare una variabile relativa al tipo di documento per selezionare un allegato di input per il modulo adattivo.
 
@@ -113,11 +115,11 @@ La seguente versione (2021.5.0) sarà del 27 maggio 2021.
 
 * **Utilizzare l’ambiente di sviluppo locale per creare un documento di record (DoR)**
 
-  Puoi utilizzare un XDP come modello per un documento di record nelle istanze di Cloud Service e nell’SDK as a Cloud Service di AEM Forms (ambiente di sviluppo locale). In precedenza, il supporto era limitato solo alle istanze di Cloud Service.
+  Puoi utilizzare un XDP come modello per un documento di record nelle istanze di Cloud Service e nell’SDK di AEM Forms as a Cloud Service (ambiente di sviluppo locale). In precedenza, il supporto era limitato solo alle istanze di Cloud Service.
 
 ### Correzioni di bug in [!DNL Forms] {#bug-fixes-forms}
 
-* Quando un modulo adattivo configurato per non generare il documento di record viene inviato a un flusso di lavoro AEM configurato per generare il documento di record, non viene visualizzato alcun messaggio di errore e l’operazione non viene inviata.
+* Quando un modulo adattivo configurato per non generare il Documento di record viene inviato a un flusso di lavoro AEM configurato per generarlo, non viene visualizzato alcun messaggio di errore e l’attività non viene inviata.
 
 ### Altri aggiornamenti {#misc-2021-04-0-forms}
 

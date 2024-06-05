@@ -2,7 +2,9 @@
 title: Lo strumento Copia contenuto
 description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai loro ambienti di produzione su AEM as a Cloud Service ad ambienti inferiori a scopo di test.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 33%

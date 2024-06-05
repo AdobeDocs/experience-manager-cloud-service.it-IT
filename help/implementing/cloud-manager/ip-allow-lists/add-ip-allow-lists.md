@@ -2,10 +2,13 @@
 title: Aggiunta degli elenchi IP consentiti
 description: Scopri come aggiungere un elenco IP consentiti personalizzato con Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: fa6d0670a011276facc561f62f52c6e69147a49e
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 71%
+ht-degree: 75%
 
 ---
 
@@ -18,7 +21,7 @@ Per aggiungere un elenco IP consentiti, l’utente con ruolo di **Proprietario b
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , selezionare il programma.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
 1. Dalla sezione **Panoramica** , passare alla pagina **ELENCHI CONSENTITI IP** tramite la scheda di navigazione laterale.
 
@@ -28,7 +31,7 @@ Per aggiungere un elenco IP consentiti, l’utente con ruolo di **Proprietario b
 
    ![Finestra di dialogo Aggiungi elenco IP consentiti](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. In **Aggiungi Elenco consentiti IP** immettere un nome che si desidera utilizzare per fare riferimento al inserisco nell&#39;elenco Consentiti di nella finestra di dialogo **Nome Elenco consentiti IP** campo.
+1. In **Aggiungi Elenco consentiti IP** immettere un nome che si desidera utilizzare per fare riferimento al inserisco nell&#39;elenco Consentiti di selezione nella finestra di dialogo **Nome Elenco consentiti IP** campo.
 
    * Questo nome è esclusivamente informativo e deve essere descrittivo, per aiutarti a identificare l’elenco.
 

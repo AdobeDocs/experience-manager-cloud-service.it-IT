@@ -1,13 +1,16 @@
 ---
 title: Console Sites
 description: Scopri come utilizzare la console Sites per gestire e organizzare le pagine AEM.
-source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
+exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1628'
-ht-degree: 44%
+ht-degree: 45%
 
 ---
-
 
 # Console Sites {#sites-console}
 
@@ -81,7 +84,7 @@ Dopo aver fatto clic su, le opzioni visualizzate sono appropriate per la console
 * [Pagina](/help/sites-cloud/authoring/sites-console/creating-pages.md)
 * [Sito](/help/sites-cloud/administering/site-creation/create-site.md)
 * [Live Copy ](/help/sites-cloud/administering/msm/overview.md)
-* [Launch](/help/sites-cloud/authoring/launches/overview.md)
+* [Avvia](/help/sites-cloud/authoring/launches/overview.md)
 * [Copia lingua](/help/sites-cloud/administering/translation/overview.md)
 * [Rapporto CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
 
@@ -184,7 +187,7 @@ La vista a schede offre anche [azioni rapide](#quick-actions) per gli elementi q
 
 Per spostarti verso il basso nella struttura, tocca o fai clic sulle schede (facendo attenzione a evitare di toccare le azioni rapide); per tornare verso l’alto utilizza [breadcrumb nell’intestazione](#the-header).
 
-### Vista a elenco  {#list-view}
+### Vista a elenco {#list-view}
 
 La vista Elenco fornisce informazioni per ogni risorsa al livello corrente di un elenco.
 

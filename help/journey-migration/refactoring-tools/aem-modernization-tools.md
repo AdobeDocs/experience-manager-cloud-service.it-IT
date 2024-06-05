@@ -2,10 +2,12 @@
 title: Strumenti di modernizzazione AEM
 description: Scopri la suite di utility che può essere utilizzata per convertire le funzioni legacy dell’AEM nelle funzionalità moderne e supportate dell’AEM as a Cloud Service.
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 41%
+source-wordcount: '148'
+ht-degree: 35%
 
 ---
 

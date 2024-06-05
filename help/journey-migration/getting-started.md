@@ -2,7 +2,9 @@
 title: Guida introduttiva del Percorso di migrazione all’AEM as a Cloud Service
 description: Inizia il tuo percorso di migrazione acquisendo familiarità con le nozioni di base sul passaggio ad AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: a4e02b64fba591ff6bd4f24e37e01dbbaa7f91cf
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 22%

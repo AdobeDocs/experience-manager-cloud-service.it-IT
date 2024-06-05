@@ -2,10 +2,12 @@
 title: Guida introduttiva dell’SPA nell’AEM con React
 description: Questo articolo illustra un esempio di applicazione per l’SPA, spiega come viene creata e come iniziare a utilizzare il proprio SPA in modo rapido utilizzando il framework React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1130'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -95,7 +97,7 @@ module.exports = {
 };
 ```
 
-### Generazione {#building}
+### Generazione in corso {#building}
 
 La creazione dell’app utilizza [Webpack](https://webpack.js.org/) oltre ad aem-clientlib-generator per la creazione automatica di librerie client. Pertanto, il comando build sarà simile al seguente:
 

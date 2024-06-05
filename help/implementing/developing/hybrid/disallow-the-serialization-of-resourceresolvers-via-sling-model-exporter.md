@@ -1,15 +1,17 @@
 ---
-title: Non consentire la serializzazione dei ResourceResolver tramite Sling Model Exporter
-description: Non consentire la serializzazione dei ResourceResolver tramite Sling Model Exporter
-source-git-commit: 4543a4646719f8433df7589b21344433c43ab432
+title: Non consentire la serializzazione di ResourceResolver tramite Sling Model Exporter
+description: Non consentire la serializzazione di ResourceResolver tramite Sling Model Exporter
+exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-
-# Non consentire la serializzazione dei ResourceResolver tramite Sling Model Exporter {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
+# Non consentire la serializzazione di ResourceResolver tramite Sling Model Exporter {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 
 La funzione Sling Model Exporter consente di serializzare gli oggetti Sling Models in formato JSON. Questa funzione è ampiamente utilizzata in quanto consente all’SPA (applicazioni a pagina singola) di accedere facilmente ai dati dell’AEM. Sul lato dell’implementazione, per serializzare questi oggetti viene utilizzata la libreria Jacson Databind.
 
@@ -50,6 +52,3 @@ Adobe richiede a tutti i clienti di controllare i registri applicazioni e le bas
 Si presume che nella maggior parte dei casi le modifiche necessarie siano immediate, in quanto `ResourceResolver` Gli oggetti non sono affatto necessari nell’output JSON, in quanto le informazioni in essi contenute normalmente non sono richieste dalle applicazioni front-end. Ciò significa che nella maggior parte dei casi dovrebbe essere sufficiente escludere `ResourceResolver` da essere considerato da Jackson (vedi la sezione [regole](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)).
 
 Nel caso in cui un modello Sling sia interessato da questo problema ma non modificato, l’esplicita disabilitazione della serializzazione del `ResourceResolver` (come eseguito da Adobe come secondo passaggio) applicherà una modifica nell’output JSON.
-
-
-

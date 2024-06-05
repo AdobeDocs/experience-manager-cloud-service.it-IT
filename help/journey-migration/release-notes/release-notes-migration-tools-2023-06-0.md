@@ -3,7 +3,8 @@ title: Note sulla versione 2023.06.0 degli strumenti di migrazione nell’AEM as
 description: Note sulla versione 2023.06.0 degli strumenti di migrazione nell’AEM as a Cloud Service
 feature: Release Information
 exl-id: 021b7472-d1e4-4ef6-a040-c612fed8d3c3
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 3%

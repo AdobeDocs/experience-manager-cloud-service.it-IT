@@ -2,10 +2,13 @@
 title: Personalizza il tema del sito
 description: Scopri come è fatto il tema del sito, come personalizzarlo e come testarlo utilizzando contenuti live AEM.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 94%
+source-wordcount: '954'
+ht-degree: 100%
 
 ---
 
@@ -64,7 +67,7 @@ Una volta acquisita familiarità con la struttura del progetto tematico, avvia i
 
    ![npm run live](assets/npm-run-live.png)
 
-1. All&#39;avvio del server proxy, apre automaticamente un browser a `http://localhost:7001/`. Seleziona **ACCESSO LOCALE (SOLO ATTIVITÀ AMMINISTRATORE)** e accedere con le credenziali utente proxy fornite dall&#39;amministratore AEM.
+1. All&#39;avvio del server proxy, apre automaticamente un browser a `http://localhost:7001/`. Seleziona **ACCEDI LOCALMENTE (SOLO AMMINISTRATORE)** e accedi con le credenziali utente proxy fornite dall’amministratore di AEM.
 
    ![Accesso locale](assets/sign-in-locally.png)
 
@@ -135,7 +138,7 @@ Dopo aver completato questa parte del percorso di creazione rapida sito di AEM, 
 * Scopri come testare le personalizzazioni dei temi utilizzando contenuti AEM reali tramite proxy locale.
 * Scopri come eseguire il commit delle modifiche nell’archivio Git AEM.
 
-Approfondisci l&#39;argomento e continua il percorso di Creazione Rapida dei Siti AEM esaminando il documento [Distribuire il tema personalizzato,](deploy-theme.md) dove scopri come distribuire il tema utilizzando la pipeline front-end.
+Approfondisci l’argomento e continua il percorso di Creazione Rapida dei Siti AEM consultando il documento [Distribuire Il tema personalizzato](deploy-theme.md), dove verrà illustrato come distribuire il tema utilizzando la pipeline front-end.
 
 ## Risorse aggiuntive {#additional-resources}
 

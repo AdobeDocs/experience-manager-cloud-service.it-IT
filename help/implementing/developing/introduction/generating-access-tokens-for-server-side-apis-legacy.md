@@ -3,7 +3,9 @@ title: Generazione dei token di accesso per le API lato server (legacy)
 description: Scopri come facilitare la comunicazione tra un server di terze parti e AEM as a Cloud Service generando un token JWT sicuro
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 0%
@@ -123,7 +125,7 @@ Consulta la [Documentazione sulle linee guida per sviluppatori](/help/implementi
 
 >[!NOTE]
 >
-Il token di accesso per lo sviluppo locale è valido per un massimo di 24 ore, al termine delle quali deve essere rigenerato con lo stesso metodo.
+>Il token di accesso per lo sviluppo locale è valido per un massimo di 24 ore, al termine delle quali deve essere rigenerato con lo stesso metodo.
 
 Gli sviluppatori possono utilizzare questo token per effettuare chiamate dall’applicazione di test non AEM a un ambiente as a Cloud Service AEM. In genere, lo sviluppatore utilizza questo token con l’applicazione non AEM sul proprio laptop. Inoltre, AEM as a Cloud è in genere un ambiente non di produzione.
 
@@ -152,7 +154,7 @@ Dopo aver premuto il pulsante, viene generato un nuovo set di credenziali. Puoi 
 
 >[!NOTE]
 >
-Dopo aver fatto clic su **Aggiorna credenziali servizio** , le vecchie credenziali rimangono registrate fino alla scadenza, ma solo il set più recente è disponibile per essere visualizzato da Console sviluppatori in qualsiasi momento.
+> Dopo aver fatto clic su **Aggiorna credenziali servizio** , le vecchie credenziali rimangono registrate fino alla scadenza, ma solo il set più recente è disponibile per essere visualizzato da Console sviluppatori in qualsiasi momento.
 
 ## Revoca credenziali del servizio {#service-credentials-revocation}
 

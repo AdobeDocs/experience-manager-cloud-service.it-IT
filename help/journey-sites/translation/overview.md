@@ -5,10 +5,13 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Translation
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 91%
+source-wordcount: '919'
+ht-degree: 100%
 
 ---
 
@@ -26,9 +29,9 @@ Se conosci già AEM Sites e le tue esigenze di traduzione, potresti avere già l
 
 ## Percorsi di documentazione AEM {#documentation-journeys}
 
-[Un Percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e complicati, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente dell’AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o dell’AEM.
+[Un percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e complicati, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente di AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o di AEM.
 
-I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti dei clienti.
+I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti della clientela.
 
 Se desideri sapere come Adobe consiglia di risolvere i casi aziendali relativi ai siti con AEM, per iniziare puoi utilizzare i Percorsi AEM Sites.
 
@@ -45,15 +48,15 @@ Di seguito sono riportati gli utenti tipo che interagiscono in questo percorso.
 | Specialista di traduzione | Definisce il contenuto da tradurre e gestisce i flussi di lavoro relativi | Pubblico di questo percorso |
 | Autore del contenuto | Crea e gestisce i contenuti consegnati come siti | Gli autori dei contenuti creano i contenuti che devono essere tradotti dallo specialista della traduzione. |
 | Amministratore | Gestisce l’impostazione e la configurazione di base di AEM | Lo specialista di traduzione collabora con l’amministratore per apportare le modifiche di configurazione necessarie per la traduzione, ad esempio per l’installazione di un connettore di traduzione. |
-| Architetto dei contenuti | Analizza i requisiti dei dati che devono essere consegnati come siti e ne definisce la struttura | Gli esperti di traduzione collaborano con l&#39;architetto dei contenuti per definirne l&#39;organizzazione in modo che possano essere facilmente tradotti. |
+| Architetto dei contenuti | Analizza i requisiti dei dati che devono essere consegnati come siti e ne definisce la struttura | Gli esperti di traduzione collaborano con l’architetto dei contenuti per definirne l’organizzazione in modo che possano essere facilmente tradotti. |
 
-Le informazioni in questo percorso possono essere utili a tutti gli utenti tipo, ma alcune possono essere superflue per determinati ruoli. Non perdere i [prossimi percorsi che includeranno ruoli aggiuntivi](/help/journey-documentation/documentation-journeys.md#journeys).
+Le informazioni in questo percorso possono essere utili a tutti gli utenti, ma alcune possono essere superflue per determinati ruoli. Non perdere i [prossimi percorsi che includeranno ruoli aggiuntivi](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## Percorso Sites translation {#the-journey}
 
 In questo percorso esplorerai molti argomenti. I seguenti articoli forniscono informazioni fondamentali sulla traduzione dei contenuti dei siti in AEM e si collegano alla documentazione tecnica dettagliata.
 
-Anche se puoi passare direttamente a una parte specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Pertanto, se sei nuovo alla traduzione in AEM, l’Adobe consiglia di partire dall’inizio e procedere in sequenza.
+Anche se puoi passare direttamente a una parte specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Pertanto, se non possiedi nessuna conoscenza della traduzione in AEM, Adobe ti consiglia di di cominciare dalla parte iniziale e di avanzare progressivamente.
 
 | # | Articolo | Descrizione |
 |---|---|---|

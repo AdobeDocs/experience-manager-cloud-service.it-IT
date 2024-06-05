@@ -2,9 +2,11 @@
 title: Rendering lato server e SPA
 description: L’utilizzo del rendering lato server (SSR) nell’SPA può accelerare il caricamento iniziale della pagina e quindi passare un ulteriore rendering al client.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1492'
 ht-degree: 0%
 
 ---

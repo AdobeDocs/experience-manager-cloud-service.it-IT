@@ -2,10 +2,12 @@
 title: Note sulla versione 2021.11.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2021.11.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 93%
+source-wordcount: '1058'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +26,7 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 ## Data di pubblicazione {#release-date}
 
 La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2021.11.0) è il 16 dicembre 2021.
-La seguente versione (2022.1.0) è del 3 febbraio 2022.
+La seguente versione (2022.1.0) è del venerdì 3 febbraio 2022.
 
 ## Video sulla versione {#release-video}
 
@@ -84,7 +86,7 @@ La prossima versione è prevista per il 9 dicembre 2021.
 
 ### Novità {#what-is-new-cm-nov}
 
-* Gli utenti possono ora utilizzare le nuove pipeline front-end per distribuire esclusivamente il codice front-end in modo accelerato. Consulta [Pipeline front-end di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) per ulteriori informazioni.
+* Gli utenti possono ora sfruttare le nuove pipeline Front End per distribuire esclusivamente il codice front-end in modo accelerato. Consulta [Pipeline front-end di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) per ulteriori informazioni.
 
   >[!IMPORTANT]
   >Devi usare la versione AEM `2021.10.5933.20211012T154732Z` o superiore per utilizzare le nuove pipeline front-end.

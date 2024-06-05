@@ -2,10 +2,12 @@
 title: Modifica di uno SPA esterno in AEM
 description: Questo documento descrive i passaggi consigliati per caricare un SPA autonomo in un’istanza AEM, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 2%
+source-wordcount: '2374'
+ht-degree: 1%
 
 ---
 
@@ -369,7 +371,7 @@ I seguenti materiali di riferimento possono essere utili per comprendere l&#39;S
 * [Headful e headless in AEM](/help/implementing/developing/headful-headless.md)
 * [L’archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
 * [Il progetto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it)
-* [Guida introduttiva alle SPA in AEM usando React](/help/implementing/developing/hybrid/getting-started-react.md)
+* [Guida introduttiva dell’SPA nell’AEM con React](/help/implementing/developing/hybrid/getting-started-react.md)
 * [Materiali di riferimento SPA (riferimenti API)](/help/implementing/developing/hybrid/reference-materials.md)
 * [Blueprint SPA e PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [Routing modello SPA](/help/implementing/developing/hybrid/routing.md)

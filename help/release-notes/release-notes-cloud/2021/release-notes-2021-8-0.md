@@ -1,11 +1,13 @@
 ---
-title: Note sulla versione 2021.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2021.8.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2021.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2021.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 25%
+source-wordcount: '1011'
+ht-degree: 27%
 
 ---
 
@@ -23,8 +25,8 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] come [!DNL Cloud Service] (2021.8.0) è l’26 agosto 2021.
-La seguente versione (2021.9.0) è del 6 ottobre 2021.
+La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2021.8.0) è il venerdì 26 agosto 2021.
+La seguente versione (2021.9.0) è del giovedì 6 ottobre 2021.
 
 ## Video sulla versione {#release-video}
 
@@ -66,7 +68,7 @@ Dai un&#39;occhiata al [Panoramica sulla versione di agosto 2021](https://video.
 
 * **Connettore per l’archivio dati Microsoft® Azure**: ora è possibile [connettere il modello dati modulo al sistema di archiviazione Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Consente di recuperare e archiviare i dati dei moduli adattivi come BLOB nell’archiviazione di Microsoft® Azure.
 
-### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms}
+### Nuove funzioni disponibili nel canale pre-release di [!DNL Forms] {#prerelease-features-forms}
 
 * **Utilizzare i ruoli di Adobe Sign in un modulo adattivo** - Adobe Sign per i livelli di servizio business ed enterprise può facoltativamente espandere i ruoli dei destinatari del contratto, oltre a Firmatario, per soddisfare meglio i requisiti di flusso di lavoro. Ora è possibile abilitare ogni destinatario dell’accordo a configurare il proprio ruolo in un modulo adattivo, con Firmatario come ruolo predefinito.
 
@@ -88,7 +90,7 @@ Dai un&#39;occhiata al [Panoramica sulla versione di agosto 2021](https://video.
 
 Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.8.0 e 2021.7.0.
 
-## Data di pubblicazione {#release-date-cm-aug}
+## Data di rilascio {#release-date-cm-aug}
 
 La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.8.0 è il 12 agosto 2021.
 La prossima versione è pianificata per il 9 settembre 2021.

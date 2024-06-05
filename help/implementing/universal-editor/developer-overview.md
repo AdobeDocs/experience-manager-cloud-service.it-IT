@@ -2,7 +2,9 @@
 title: Panoramica di Universal Editor per sviluppatori AEM
 description: Se sei uno sviluppatore AEM interessato al funzionamento di Universal Editor e a come utilizzarlo nel progetto, questo documento offre un’introduzione end-to-end che ti guida attraverso la strumentazione del progetto WKND per lavorare con Universal Editor.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 0%
@@ -561,7 +563,7 @@ Qualsiasi campo nel JCR del componente può essere esposto in questo modo nell�
 
 ## Riepilogo {#summary}
 
-Congratulazioni. Ora puoi personalizzare le tue app per l’AEM in modo che funzionino con l’Editor universale.
+Congratulazioni Ora puoi personalizzare le tue app per l’AEM in modo che funzionino con l’Editor universale.
 
 Quando inizi a dotare la tua app di strumenti, tieni presente i passaggi di base eseguiti in questo esempio.
 

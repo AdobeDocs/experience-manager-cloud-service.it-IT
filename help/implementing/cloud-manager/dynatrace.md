@@ -2,7 +2,10 @@
 title: Dynatrace
 description: Scopri come utilizzare Dynatrace con AEM as a Cloud Service
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: 4fe8ed9c3f7b6589878da3317d15fede819bad54
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -31,7 +34,7 @@ Di seguito sono descritti i dettagli necessari per le richieste di connettività
 | [!DNL Dynatrace Environment ID] | ID dell&#39;ambiente Dynatrace. Consulta [Come è possibile ottenere i dettagli di connessione a Dynatrace?](#how-do-i-get-my-dynatrace-connection-details) per come ottenere questo. |
 | [!DNL Dynatrace Environment Token] | Token di ambiente Dynatrace. Consulta [Come è possibile ottenere i dettagli di connessione a Dynatrace?](#how-do-i-get-my-dynatrace-connection-details) per come ottenere questo.<br><br>Questo deve essere considerato un segreto, quindi utilizza le pratiche di sicurezza appropriate. Ad esempio, proteggerlo con password in un sito Web come **zerobin.net**, a cui può fare riferimento il ticket di assistenza clienti, insieme alla password. |
 | [!DNL Dynatrace API access token] | Il token di accesso API dell’ambiente Dynatrace.  Consulta [Creare un token di accesso API Dynatrace](#create-dynatrace-access-token) per informazioni su come crearlo.<br><br>Questo deve essere considerato un segreto, quindi utilizza le pratiche di sicurezza appropriate. Ad esempio, proteggerlo con password in un sito Web come **zerobin.net**, a cui può fare riferimento il ticket di assistenza clienti, insieme alla password.<br><br>Nota: questo è necessario solo per Dynatrace Managed. |
-| [!DNL Dynatrace ActiveGate Port] | La porta ActiveGate Dynatrace a cui deve connettersi l’integrazione AEM.<br><br>Nota: questo è necessario solo per Dynatrace Managed. |
+| [!DNL Dynatrace ActiveGate Port] | La porta Dynatrace ActiveGate a cui deve connettersi l’integrazione AEM.<br><br>Nota: questo è necessario solo per Dynatrace Managed. |
 | [!DNL Dynatrace ActiveGate Network Zone] | Il tuo [Area di rete Dynatrace ActiveGate](https://docs.dynatrace.com/docs/manage/network-zones) indirizzare i dati di monitoraggio AEM in modo efficiente tra centri dati e regioni di rete.<br><br>Nota: un&#39;area di rete Dynatrace ActiveGate è facoltativa. |
 | [!DNL AEM Environment ID(s)] | ID dell’ambiente AEM da monitorare per Dynatrace. |
 

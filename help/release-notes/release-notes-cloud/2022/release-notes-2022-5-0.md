@@ -2,10 +2,12 @@
 title: Note sulla versione 2022.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Note sulla versione 2022.5.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 73%
+source-wordcount: '800'
+ht-degree: 67%
 
 ---
 
@@ -81,7 +83,7 @@ Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [dist
 
 * L’opzione &quot;Aggiungi albero&quot; nella schermata di amministrazione dell’agente di replica **Scheda Distribuisci**, precedentemente dichiarato obsoleto, è stato rimosso il 20 giugno 2022 o poco dopo. I pacchetti con una gerarchia di struttura dei contenuti devono essere replicati utilizzando [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o il [flusso di lavoro Pubblica struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow).
 
-* L’utilizzo della schermata di amministrazione dell’agente di replica o dell’API di replica per la distribuzione di pacchetti di contenuti di dimensioni superiori a 10 MB (nodi con proprietà, esclusi i binari) è diventato obsoleto e applicato il 12 settembre 2022 o poco dopo. Per replicare pacchetti di contenuti di grandi dimensioni, è necessario utilizzare [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o il [flusso di lavoro Pubblica struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow). A luglio verrà visualizzato un messaggio di avvertenza se si tenta di replicare pacchetti di contenuti di grandi dimensioni nella **Scheda Distribuisci** della schermata di amministrazione dell’agente di replica, nonché nel registro di errore AEM ogni volta che l’API di replica viene utilizzata a tale scopo. A settembre, le avvertenze sono state sostituite da errori. Regola i processi di conseguenza.
+* L’utilizzo della schermata di amministrazione dell’agente di replica o dell’API di replica per la distribuzione di pacchetti di contenuti di dimensioni superiori a 10 MB (nodi con proprietà, esclusi i binari) è diventato obsoleto e applicato il 12 settembre 2022 o poco dopo. Per replicare pacchetti di contenuti di grandi dimensioni, è necessario utilizzare [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o il [flusso di lavoro Pubblica struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow). A luglio verrà visualizzato un messaggio di avviso nella schermata di amministrazione dell’agente di replica **Scheda Distribuisci** se tenta di replicare questi pacchetti di contenuti di grandi dimensioni e anche nel registro degli errori AEM ogni volta che l’API di replica viene utilizzata per replicarli. A settembre, le avvertenze sono state sostituite da errori. Regola i processi di conseguenza.
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Experience Manager] {#prerelease-features-foundation}
 

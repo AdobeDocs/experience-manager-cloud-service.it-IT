@@ -1,11 +1,13 @@
 ---
-title: Note sulla versione 2021.9.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2021.9.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2021.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2021.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1519'
-ht-degree: 16%
+ht-degree: 21%
 
 ---
 
@@ -74,16 +76,16 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### Funzioni beta di [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
-* **Connettore di archiviazione unificata** : utilizza il connettore di archiviazione unificata per esternalizzare i dati in-process negli archivi gestiti dal cliente. Ad esempio, puoi
-   * Abilita la funzionalità di salvataggio e ripristino di Forms Portal e archivia le bozze di moduli adattivi in un archivio dati gestito dal cliente.
-   * Archiviare dati di processo dei flussi di lavoro AEM (dati sulle variabili di flusso di lavoro AEM) contenenti dati personali sensibili (SPD) in un archivio gestito dal cliente.
+* **Connettore di archiviazione unificata** : utilizza il connettore di archiviazione unificata per esternalizzare i dati in-process negli archivi gestiti dal cliente. Ad esempio, puoi:
+   * Abilitare la funzionalità di salvataggio e ripristino di Forms Portal e memorizzare le bozze di moduli adattivi in un archivio dati gestito dal cliente.
+   * Memorizzare i dati dei flussi di lavoro AEM in elaborazione (dati sulle variabili di flusso di lavoro AEM) contenenti dati personali sensibili (SPD) in un archivio gestito dal cliente.
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]** - [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) consente di combinare modelli XDP e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona. Le API consentono di creare applicazioni che permettono di:
    * Generare i documenti compilando i file modello con dati XML.
    * Generare moduli di output in vari formati, compresi flussi di stampa PDF non interattivi.
-   * Generare file di PDF di stampa da un modulo XFA PDF e Adobe Acrobat Form.
+   * Generare file PDF di stampa da un modulo XFA PDF e di Adobe Acrobat Form.
 
-Puoi scrivere a [!DNL formscsbeta@adobe.com] per iscriversi al programma beta.
+Per registrarti al programma beta, puoi inviare un’e-mail all’indirizzo [!DNL formscsbeta@adobe.com].
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 
@@ -129,7 +131,7 @@ Consulta [Supporto miniature per video](https://experienceleague.adobe.com/docs/
 
 ### Nuove funzioni in [!DNL Experience Manager as a Cloud Service] {#foundation-features}
 
-**Reti avanzate**
+**Rete avanzata**
 
 >[!INFO]
 >
@@ -151,7 +153,7 @@ Per migliorare le prestazioni delle query di ricerca e dell’indicizzazione, l�
 
 Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.9.0 e 2021.8.0.
 
-## Data di pubblicazione {#release-date-cm-sept}
+## Data di rilascio {#release-date-cm-sept}
 
 La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.9.0 è il 9 settembre 2021.
 La prossima versione è pianificata per il 7 ottobre 2021.
@@ -170,13 +172,13 @@ La prossima versione è pianificata per il 7 ottobre 2021.
 
 ### Correzioni di bug {#bug-fixes-sept}
 
-* Ora gli utenti visualizzano un messaggio più comprensibile quando tentano di aggiungere un inserisco nell&#39;elenco Consentiti di IP in un programma che ha raggiunto il numero massimo consentito di elenchi Consentiti di IP configurabili.
+* Ora gli utenti visualizzano un messaggio più comprensibile quando tentano di aggiungere un inserire nell&#39;elenco Consentiti inserisco nell&#39;elenco Consentiti di IP in un programma in cui è stato raggiunto il numero massimo consentito di IP configurabili.
 
 * Quando si selezionava l’opzione di menu Copia URL dalla schermata Archivi veniva copiato l’URL errato.
 
 ## Cloud Acceleration Manager {#cam}
 
-### Data di pubblicazione {#release-date-october-cam}
+### Data di rilascio {#release-date-october-cam}
 
 La data di pubblicazione di Cloud Acceleration Manager è il 4 ottobre 2021.
 

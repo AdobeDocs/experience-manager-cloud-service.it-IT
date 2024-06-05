@@ -3,10 +3,11 @@ title: Note sulla versione 2022.5.0 degli strumenti di migrazione in AEM as a Cl
 description: Note sulla versione 2022.5.0 degli strumenti di migrazione in AEM as a Cloud Service
 feature: Release Information
 exl-id: 1aa49e85-1914-44d9-bcf7-0a1b03926df0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 15%
+source-wordcount: '399'
+ht-degree: 5%
 
 ---
 
@@ -41,13 +42,13 @@ La data di pubblicazione dello strumento Content Transfer v2.0.10 è il 2 giugno
 ### Novità {#what-is-new-ctt}
 
 * Lo strumento Content Transfer (CTT) è stato evoluto per funzionare con Cloud Acceleration Manager e semplificare l’intero processo di trasferimento dei contenuti. CTT ora si concentra sull’esecuzione di estrazioni di contenuto. Il servizio di acquisizione CTT è ora integrato in Cloud Acceleration Manager. I vantaggi offerti da questa evoluzione sono:
-   * Modalità self-service per estrarre un set di migrazione in una sola volta e trasferirlo in più ambienti in parallelo.
-   * Miglioramento dell’esperienza utente grazie a stati di caricamento, guardrail e gestione degli errori più efficienti.
-   * I registri di acquisizione vengono mantenuti e sono sempre disponibili per la risoluzione dei problemi.
+   * Metodo self-service per estrarre un set di migrazione una volta e acquisirlo in più ambienti in parallelo.
+   * È stata migliorata l’esperienza dell’utente grazie a migliori stati di caricamento, guardrail e gestione degli errori.
+   * I registri di acquisizione sono persistenti e sono sempre disponibili per la risoluzione dei problemi.
 
 ## Cloud Acceleration Manager {#cam-release}
 
-### Data di pubblicazione {#release-date-cam}
+### Data di rilascio {#release-date-cam}
 
 La data di pubblicazione di Cloud Acceleration Manager è il 2 giugno 2022.
 

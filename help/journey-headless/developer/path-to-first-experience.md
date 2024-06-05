@@ -2,10 +2,13 @@
 title: Percorso della tua prima esperienza con AEM Headless
 description: In questa parte del Percorso per sviluppatori headless AEM, comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprenderai le best practice per rendere il percorso il più semplice possibile.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 90%
+source-wordcount: '1956'
+ht-degree: 100%
 
 ---
 
@@ -52,7 +55,7 @@ Vuoi creare un’esperienza coerente e gestire campagne personalizzate tra i can
 
 È invece necessario considerare il modo in cui il contenuto su superfici diverse è correlato in base a principi di organizzazione quali gerarchie di marchi e prodotti, categorie di beni o superfici o passaggi nel percorso del cliente. Ad esempio, se disponi di un insieme di superfici che supportano un marchio specifico di auto prodotte, potresti voler iniziare con un modello di contenuto per informazioni generali che sarebbe vero per l’intera auto e poi avere elementi più specifici come il contenuto necessario da quando l’auto si avvia a quando ci sono problemi di servizio. Un modello di questo tipo applicherà l’ereditarietà del contenuto generale del marchio automobilistico, consentendo al tempo stesso turni in base al contesto specifico necessario. Aiuta anche nella gestione futura degli aggiornamenti di questo contenuto in quanto puoi applicare il controllo in base a ruoli come l’addetto marketing o il responsabile prodotto per l’intero marchio automobilistico rispetto a un autore responsabile dell’esperienza di “avvio automobile”.
 
-Dopo aver impostato il modello di contenuto e aver visualizzato in modo chiaro i vari client a cui deve essere applicato il contenuto, è necessario assicurarsi che le API GraphQL associate all’accesso a vari modelli di contenuto vengano pubblicate per tutti i client che ne hanno bisogno. Esistono diverse opzioni per accedere a determinati contenuti. Puoi richiedere un contenuto specifico statico che consenta la memorizzazione in cache del contenuto e prestazioni migliori. Puoi anche richiedere contenuti generati dinamicamente che richiederanno un’elaborazione maggiore. Assicurati che i clienti utilizzino le API più efficienti per le loro esigenze aziendali.
+Dopo che hai ottenuto il modello di contenuto e una visualizzazione chiara dei vari client su cui mostrare il contenuto, devi assicurarti che le API/GraphQL associate all’accesso a vari modelli di contenuto siano pubblicate per tutti i client che necessitano di tale contenuto. Esistono diverse opzioni per accedere a determinati contenuti. Puoi richiedere un contenuto specifico statico che consenta la memorizzazione in cache del contenuto e prestazioni migliori. Puoi anche richiedere contenuti generati dinamicamente che richiederanno un’elaborazione maggiore. Assicurati che i client sfruttino le API più efficienti per le esigenze aziendali.
 
 ## Informazioni sugli ambienti {#understanding-environments}
 
@@ -68,9 +71,9 @@ Durante la fase di sviluppo, si consiglia di lavorare con un ambiente di svilupp
 
 ### Cooperazione tra sviluppatori e autori di contenuti {#cooperation}
 
-Gli sviluppatori devono disporre di un ambiente di sviluppo AEM configurato con i modelli di contenuto popolati. Lo sviluppatore sviluppa il client che utilizzerà i contenuti da AEM headless, in quanto gli autori dei contenuti stanno ancora creando i contenuti. Ecco perché le definizioni API sono molto importanti. Utilizzando l’SDK dell’AEM, lo sviluppatore può creare un hook di test in modo da consentire la creazione di test client e unit test per garantire che il client sia in grado di eseguire correttamente il rendering del contenuto.
+Gli sviluppatori devono disporre di un ambiente di sviluppo AEM configurato con i modelli di contenuto popolati. Lo sviluppatore sviluppa il client che utilizzerà i contenuti da AEM headless, in quanto gli autori dei contenuti stanno ancora creando i contenuti. Ecco perché le definizioni API sono molto importanti. Sfruttando l’SDK di AEM, lo sviluppatore può creare un hook di prova in modo per poter creare test client e dell’unità per assicurarsi che il client sia in grado di eseguire correttamente il rendering del contenuto.
 
-Gli autori e le autrici dei contenuti creano contenuti in base ai modelli di contenuto definiti nell’ambiente di staging. Con lo strumento di creazione dei frammenti di contenuto, l’autore crea un frammento di contenuto o ne modifica uno esistente. Prima di pubblicarlo, l’autore o l&#39;autrice può visualizzare un’anteprima dell’aspetto che avrà nel client collaborando con lo sviluppatore per inviare il modello di contenuto allo sviluppo o impostare un ambiente per sviluppatori in modo che gli autori e le autrici possano visualizzare in anteprima l’aspetto che avrà nel client.
+Gli autori e le autrici creano contenuti in base ai modelli di contenuto definiti nell’ambiente di staging. Utilizzando lo strumento di authoring per frammenti di contenuto, l’autore crea un nuovo frammento di contenuto o ne modifica uno esistente. Prima di pubblicarlo, l’autore o l&#39;autrice può visualizzare un’anteprima dell’aspetto che avrà nel client collaborando con lo sviluppatore per inviare il modello di contenuto allo sviluppo o impostare un ambiente per sviluppatori in modo che gli autori e le autrici possano visualizzare in anteprima l’aspetto che avrà nel client.
 
 ## Configurazione {#setup}
 
@@ -94,7 +97,7 @@ Questa è una panoramica di ciò che è necessario per implementare la prima app
 
 ## Best practice   {#best-practices}
 
-Un progetto headless non solo ha successo grazie alla tecnologia implementata, ma anche grazie alla buona pianificazione e alla governance dei progetti. Di seguito sono riportate alcune best practice che gli autori e gli sviluppatori di contenuti devono tenere a mente durante la pianificazione del progetto.
+Un progetto headless non solo ha successo grazie alla tecnologia implementata, ma anche grazie alla buona pianificazione e alla governance dei progetti. Di seguito sono riportate alcune best practice che sviluppatori e autori di contenuti devono tenere a mente durante la pianificazione del progetto.
 
 ### Organizzazione dei contenuti {#organizing-content}
 
@@ -104,14 +107,14 @@ Un progetto headless non solo ha successo grazie alla tecnologia implementata, m
 * Se disponi di restrizioni di accesso, prova ad allineare il modello di contenuto ai requisiti di accesso.
 * Quando si dispone dei requisiti di accesso, questi devono guidare la gerarchia dei contenuti. Raggruppare i contenuti che vengono modificati dallo stesso gruppo di persone.
 * Raggruppare contenuti simili in una cartella.
-   * È più probabile che un autore di contenuti copia e incolla il contenuto esistente per crearne uno nuovo. Pertanto, farlo fare nella stessa cartella rende tutto più efficiente.
+   * È più probabile che un autore o un’autrice di contenuti copi e incolli contenuti esistenti per crearne di nuovi. Pertanto, farlo fare nella stessa cartella rende tutto più efficiente.
    * AEM consente di impostare i modelli per cartella in modo che il pulsante **Crea nuovo** mostrerà solo i modelli supportati in tale posizione.
-* La creazione di nuovi frammenti di contenuto nell’editor frammenti di contenuto in linea può essere semplificata se la cartella principale è impostata nel modello. Il professionista non deve quindi scegliere una posizione, ma deve solo fornire un nome e può iniziare a modificare il nuovo riferimento.
+* La creazione di nuovi frammenti di contenuto nell’editor frammenti di contenuto in linea può essere semplificata se la cartella principale è impostata nel modello. Quindi il professionista o la professionista non deve scegliere una posizione, ma deve fornire solo un nome e può iniziare a modificare il nuovo riferimento.
 
 ### Creazione di contenuti {#authoring}
 
 * Per le versioni del contenuto specifiche del canale, è consigliabile utilizzare varianti di frammento di contenuto. Le varianti vengono sincronizzate con il contenuto principale per semplificare la gestione delle modifiche al contenuto.
-* Invita altri produttori di contenuti a rivedere i contenuti e fornire feedback.
+* Invita altri autori di contenuti a rivedere il contenuto e fornire feedback.
 * Mantenere le cose in movimento con il minor numero possibile di elementi obbligatori. Gli elementi obbligatori possono bloccare il flusso di lavoro.
 
 ### Creazione di contenuti globali {#localization}

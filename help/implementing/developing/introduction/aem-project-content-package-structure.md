@@ -2,9 +2,11 @@
 title: Struttura dei progetti AEM
 description: Scopri come definire le strutture dei pacchetti da implementare nel Cloud Service Adobe Experience Manager.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2859'
 ht-degree: 4%
 
 ---
@@ -60,12 +62,12 @@ La struttura consigliata per la distribuzione delle applicazioni è la seguente:
 + Il file Jar del bundle OSGi viene generato e incorporato direttamente nel progetto all.
 
 + Il `ui.apps` contiene tutto il codice da distribuire e distribuisce solo in `/apps`. Elementi comuni della `ui.apps` Il pacchetto include, tra l’altro:
-   + [Definizioni dei componenti e HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) script
+   + [Definizioni dei componenti e HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) script
       + `/apps/my-app/components`
    + JavaScript e CSS (tramite [Librerie client](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
    + [Sovrapposizioni](/help/implementing/developing/introduction/overlays.md) di `/libs`
-      + `/apps/cq`, `/apps/dam/`, e così via.
+      + `/apps/cq`, `/apps/dam/`e così via.
    + Configurazioni in base al contesto di fallback
       + `/apps/settings`
    + ACL (autorizzazioni)
@@ -83,7 +85,7 @@ La struttura consigliata per la distribuzione delle applicazioni è la seguente:
    + Configurazioni in base al contesto
       + `/conf`
    + Strutture di contenuto complesse e obbligatorie (ovvero, strutture di contenuto che si basano su ed estendono oltre le strutture di contenuto della linea di base definite in Repo Init).
-      + `/content`, `/content/dam`, e così via.
+      + `/content`, `/content/dam`e così via.
    + Tassonomie di assegnazione tag gestite
       + `/content/cq:tags`
    + Nodi etc legacy (idealmente, esegui la migrazione di questi nodi in posizioni non etc)
@@ -177,7 +179,7 @@ Mentre gli script Repo Init stessi vivono nel `ui.config` progetto come script, 
 + Gruppi
 + ACL
 
-Gli script di inizializzazione dell’archivio sono memorizzati come `scripts` voci di `RepositoryInitializer` Configurazioni di fabbrica OSGi. Di conseguenza, possono essere indirizzati implicitamente dalla modalità di esecuzione, consentendo differenze tra gli script di inizializzazione dell’archivio di AEM Author e AEM Publish Services oppure tra ambienti (Dev, Stage e Prod).
+Gli script di inizializzazione dell’archivio sono memorizzati come `scripts` voci di `RepositoryInitializer` Configurazioni di fabbrica OSGi. Di conseguenza, possono essere indirizzati implicitamente dalla modalità di esecuzione, consentendo differenze tra gli script Repo Init di AEM Author e AEM Publish Services oppure tra ambienti (Dev, Stage e Prod).
 
 Le configurazioni OSGi di Repo Init vengono scritte in modo ottimale in [`.config` Formato di configurazione OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) in quanto supportano più righe, il che rappresenta un’eccezione alle best practice per l’utilizzo di [`.cfg.json` per definire le configurazioni OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 
@@ -236,7 +238,7 @@ Suddivisione di questa struttura di cartelle:
   >Per convenzione, le cartelle incorporate in un pacchetto secondario sono denominate con il suffisso `-packages`. Questa denominazione garantisce che il codice di distribuzione e i pacchetti di contenuto siano **non** ha distribuito le cartelle di destinazione di qualsiasi pacchetto secondario `/apps/<app-name>/...`  che determina un comportamento distruttivo e ciclico dell&#39;installazione.
 
 + La cartella di terzo livello deve essere
-  `application`, `content` oppure `container`
+  `application`, `content` o `container`
    + Il `application` la cartella contiene pacchetti di codice
    + Il `content` la cartella contiene i pacchetti di contenuti
    + Il `container` cartella contiene qualsiasi [pacchetti applicativi aggiuntivi](#extra-application-packages) che potrebbero essere incluse nella domanda AEM.

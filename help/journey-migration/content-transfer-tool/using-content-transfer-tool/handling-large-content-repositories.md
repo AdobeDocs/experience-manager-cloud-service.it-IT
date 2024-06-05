@@ -2,7 +2,9 @@
 title: Gestione di archivi di contenuti di grandi dimensioni
 description: Questa sezione descrive la gestione di archivi di contenuti di grandi dimensioni
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 8%
@@ -170,7 +172,7 @@ Con il file di configurazione di cui sopra attivo, la fase di pre-copia di AzCop
 c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy phase ***************
 ```
 
-Congratulazioni. Questa voce di registro indica che la configurazione è stata considerata valida e che AzCopy sta copiando tutti i BLOB dal contenitore di origine al contenitore di migrazione.
+Congratulazioni Questa voce di registro indica che la configurazione è stata considerata valida e che AzCopy sta copiando tutti i BLOB dal contenitore di origine al contenitore di migrazione.
 
 Le voci di registro da AzCopy vengono visualizzate nel registro di estrazione con il prefisso c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [Pre-copia AzCopy]
 

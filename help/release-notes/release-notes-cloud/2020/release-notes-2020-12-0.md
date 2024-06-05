@@ -1,8 +1,10 @@
 ---
-title: Note sulla versione 2020.12.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione 2020.12.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Note sulla versione 2020.12.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2020.12.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 11%
@@ -13,7 +15,7 @@ ht-degree: 11%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service.
 
-## Data di pubblicazione {#release-date}
+## Data di rilascio {#release-date}
 
 La data di rilascio per [!DNL Adobe Experience Manager] La versione 2020.12.0 di as a Cloud Service è il 17 dicembre 2020.
 La seguente versione (2021.1.0) è del 28 gennaio 2021.
@@ -74,7 +76,7 @@ La data di pubblicazione di Cloud Manager in Adobe Experience Manager (AEM) as a
 
 * Sono state apportate diverse correzioni di bug agli strumenti AEM Dispatcher Converter e Repository Modernizer. Consulta [Convertitore del Dispatcher per l’AEM](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) e [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
-### Data di pubblicazione {#release-date-ctt}
+### Data di rilascio {#release-date-ctt}
 
 La data di pubblicazione dello strumento Content Transfer v1.1.20 è il 8 gennaio 2021.
 

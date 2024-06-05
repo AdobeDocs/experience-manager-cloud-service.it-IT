@@ -2,16 +2,18 @@
 title: Terminologia di AEM as a Cloud Service
 description: Prima di accedere a AEMaaCS è utile comprendere alcuni termini del sistema e la relativa struttura di base.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Terminologia di AEM as a Cloud Service {#terminology}
 
-In questa parte del [percorso di onboarding,](overview.md) impari parte della terminologia di AEM as a Cloud Service e la sua struttura di base.
+In questa parte del [percorso di onboarding](overview.md) è riportata parte della terminologia di AEM as a Cloud Service e la relativa struttura di base.
 
 ## Obiettivo {#objective}
 
@@ -19,7 +21,7 @@ Ora che hai compreso le fasi preliminari del processo di onboarding leggendo il 
 
 AEM as a Cloud Service è uno strumento potente e flessibile. Per utilizzarlo è necessario conoscere la sua struttura, la terminologia e il linguaggio impiegati per descriverlo. Questo documento riepiloga alcuni termini chiave da comprendere prima di iniziare a utilizzare il sistema.
 
-Dopo aver letto questo documento, dovresti capire
+Dopo aver letto questo documento, comprenderai
 
 * I diversi livelli che compongono AEMaaCS.
 * Le nozioni di base su ogni livello.
@@ -44,7 +46,7 @@ Un esempio è spesso utile per contestualizzare questa gerarchia.
    * Programma One Assets per la divisione WKND Media
 * Entrambi i programmi WKND Magazine e WKND Media includono **ambienti** di sviluppo, staging e produzione.
 * Gli **archivi** vengono utilizzati per conservare le applicazioni e il codice personalizzato per WKND Magazine e WKND Media.
-* Varie **strumenti e flussi di lavoro** lavora negli archivi per distribuire il codice con le pipeline CI/CD, accedere ai registri, accedere all’AEM e così via.
+* Vari **strumenti e flussi di lavoro** operano negli archivi per distribuire il codice con le pipeline CI/CD, accedere ai registri, accedere ad AEM e così via.
 
 ## Passaggio successivo {#what-is-next}
 
@@ -53,4 +55,4 @@ Ora che hai completato questa parte del percorso di onboarding di AEM, dovresti 
 * I diversi livelli che compongono AEMaaCS.
 * Le nozioni di base su ogni livello.
 
-Approfondisci l&#39;argomento e continua il tuo percorso di onboarding AEM leggendo il documento successivo. [Accesso all’Admin Console](admin-console.md), dove viene illustrato come accedere alla console e verificare lo stato di amministratore di sistema.
+Sviluppa le tue conoscenze e continua il percorso di onboarding di AEM leggendo il prossimo documento, [Accesso ad Admin Console](admin-console.md), dove verrà illustrato come accedere alla Console e verificare lo stato di amministratore di sistema.

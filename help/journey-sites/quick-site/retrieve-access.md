@@ -2,10 +2,13 @@
 title: Recuperare le informazioni di accesso all’archivio Git
 description: Scopri in che modo lo sviluppatore front-end utilizza Cloud Manager per accedere alle informazioni dell’archivio Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 83%
+source-wordcount: '874'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +27,7 @@ Se hai anche il ruolo di amministratore di Cloud Manager o AEM oltre a sviluppat
 
 Questo articolo fa il passo successivo per mostrare come lo sviluppatore front-end utilizza l’accesso a Cloud Manager per recuperare le credenziali di accesso all’archivio Git AEM.
 
-Ora che esiste un sito creato in base a un modello, è presente una pipeline impostata, lo sviluppatore front-end è integrato nel processo e dispone di tutte le informazioni necessarie, questo articolo lascia da parte gli amministratori e si occupa esclusivamente del ruolo di sviluppatore front-end.
+Ora che esiste un sito creato in base a un modello, è presente una pipeline impostata, l’onboarding dello sviluppatore è stato effettuato e dispone di tutte le informazioni necessarie, questo articolo lascia da parte il punto di vista degli amministratori e si occupa esclusivamente del ruolo di sviluppatore front-end.
 
 ## Obiettivo {#objective}
 
@@ -76,7 +79,7 @@ Se non hai ricevuto questa e-mail, contatta l’amministratore di Cloud Manager.
 
 ## Accesso a Cloud Manager {#access-cloud-manager}
 
-1. Accedi a Adobe Experience Cloud all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) oppure fai clic sul collegamento fornito nell’e-mail di benvenuto.
+1. Accedi ad Adobe Experience Cloud all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) oppure fai clic sul collegamento fornito nell’e-mail di benvenuto.
 
 1. Cloud Manager elenca i vari programmi disponibili. Seleziona quello a cui devi accedere, secondo le indicazioni dell’amministratore di Cloud Manager. Se si tratta del primo progetto front-end per AEMaaCS, probabilmente è disponibile un solo programma.
 
@@ -88,7 +91,7 @@ Viene visualizzata una panoramica del programma. La pagina avrà un aspetto dive
 
 ## Recuperare le informazioni di accesso all’archivio  {#repo-access}
 
-1. In **Pipeline** nella pagina Cloud Manager, seleziona la sezione **Accedi a dati archivio** pulsante.
+1. Nella sezione **Pipeline** della pagina Cloud Manager, seleziona il pulsante **Accedi alle informazioni sull’archivio**.
 
    ![Pipeline](assets/pipelines-repo-info.png)
 
@@ -96,7 +99,7 @@ Viene visualizzata una panoramica del programma. La pagina avrà un aspetto dive
 
    ![Informazioni sull’archivio](assets/repo-info.png)
 
-1. Seleziona la **Genera password** per creare una password personale.
+1. Seleziona il pulsante **Genera password** per creare una password personale.
 
 1. Salva la password generata in un gestore di password sicuro. La password non verrà mai più visualizzata.
 
@@ -111,7 +114,7 @@ Dopo aver completato questa parte del percorso di creazione rapida sito di AEM, 
 * Comprendere ad alto livello cosa è Cloud Manager.
 * Aver recuperato le credenziali per accedere al Git AEM in modo da poter eseguire il commit delle personalizzazioni.
 
-Approfondisci l&#39;argomento e continua il percorso di Creazione Rapida dei Siti AEM esaminando il documento [Personalizzare il tema del sito,](customize-theme.md) dove scopri come è creato il tema del sito, come personalizzarlo e come testarlo utilizzando contenuti live AEM.
+Sfrutta questa conoscenza e continua il percorso di creazione rapida del sito AEM consultando successivamente il documento [Personalizzare il tema del sito](customize-theme.md), dove verrà illustrato come è stato creato il tema del sito, come personalizzarlo e come eseguire il test utilizzando contenuti live AEM.
 
 ## Risorse aggiuntive {#additional-resources}
 

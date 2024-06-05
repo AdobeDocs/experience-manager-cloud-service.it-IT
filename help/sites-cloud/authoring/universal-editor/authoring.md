@@ -2,10 +2,13 @@
 title: Authoring dei contenuti con l’editor universale
 description: Scopri quanto è semplice e intuitivo per gli autori di contenuti creare contenuti utilizzando l’editor universale.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2313'
-ht-degree: 35%
+ht-degree: 36%
 
 ---
 
@@ -84,7 +87,7 @@ Viene visualizzata l’organizzazione in cui hai effettuato l’accesso. Selezio
 
 #### Soluzioni {#solutions}
 
-Toccando o facendo clic sul selettore delle soluzioni puoi passare rapidamente ad altre soluzioni di Experience Cloud.
+Tocca o fai clic sul selettore delle soluzioni per passare rapidamente ad altre soluzioni di Experience Cloud.
 
 ![Selettore di soluzioni](assets/solutions.png)
 
