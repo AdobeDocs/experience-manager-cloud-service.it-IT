@@ -5,11 +5,10 @@ keywords: Aggiungi una funzione personalizzata, utilizza una funzione personaliz
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
+source-git-commit: d42728bb3eb81c032723db8467957d2e01c5cbed
 workflow-type: tm+mt
-source-wordcount: '3513'
+source-wordcount: '4351'
 ht-degree: 0%
 
 ---
@@ -98,7 +97,7 @@ Nella riga di codice precedente, `Input1` è un parametro facoltativo senza alcu
 Nella riga di codice precedente, `Input1` è un parametro facoltativo senza alcun valore predefinito. Per dichiarare un parametro facoltativo con valore predefinito:
 `@param {array} [input1=<value>]`
 `input1` è un parametro facoltativo di tipo array con il valore predefinito impostato su `value`.
-Assicuratevi che il tipo di parametro sia racchiuso tra parentesi graffe {} e il nome del parametro è racchiuso tra parentesi quadre [].
+Assicuratevi che il tipo di parametro sia racchiuso tra parentesi graffe {} e il nome del parametro è racchiuso tra parentesi quadre.
 
 Considera il seguente frammento di codice, in cui input2 è definito come parametro opzionale:
 
@@ -225,33 +224,124 @@ I passaggi per creare funzioni personalizzate sono i seguenti:
 1. [Creare una libreria client](#create-client-library)
 1. [Aggiungere una libreria client a un modulo adattivo](#use-custom-function)
 
+
+### Prerequisiti per creare una funzione personalizzata
+
+Prima di iniziare ad aggiungere una funzione personalizzata al Forms adattivo, verifica di disporre dei seguenti elementi:
+
+**Software:**
+
+* **Editor testo normale (IDE)**: mentre qualsiasi editor di testo normale può funzionare, un ambiente di sviluppo integrato (IDE) come Microsoft Visual Studio Code offre funzionalità avanzate per semplificare le modifiche.
+
+* **Git:** Questo sistema di controllo della versione è necessario per gestire le modifiche al codice. Se non lo hai installato, scaricalo da https://git-scm.com.
+
 ### Creare una libreria client {#create-client-library}
 
 Puoi aggiungere funzioni personalizzate aggiungendo una libreria client. Per creare una libreria client, effettua le seguenti operazioni:
 
-1. [Clonare l’archivio as a Cloud Service di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. Creare una cartella in `[AEM Forms as a Cloud Service repository folder]/apps/` cartella. Ad esempio, crea una cartella denominata come `experience-league`.
-1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` e creare un `ClientLibraryFolder`. Ad esempio, crea una cartella della libreria client come `customclientlibs`.
-1. Aggiungi una proprietà `categories` con valore di tipo stringa. Ad esempio, assegna il valore `customfunctionscategory` al `categories` proprietà per `customclientlibs` cartella.
+**Clonare l’archivio**
+
+Clona il tuo [Archivio as a Cloud Service AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
+
+1. Apri la riga di comando o la finestra del terminale.
+
+1. Passa alla posizione desiderata sul computer in cui desideri memorizzare l’archivio.
+
+1. Esegui il comando seguente per clonare l’archivio:
+
+   `git clone [Git Repository URL]`
+
+Con questo comando viene scaricato l&#39;archivio e viene creata una cartella locale dell&#39;archivio clonato nel computer. In questa guida, questa cartella viene definita [Directory del progetto AEMaaCS].
+
+**Aggiungi una cartella della libreria client**
+
+Per aggiungere una nuova cartella della libreria client al [Directory del progetto AEMaaCS], effettua le seguenti operazioni:
+
+1. Apri [Directory del progetto AEMaaCS] in un editor.
+
+   ![struttura di cartelle di funzioni personalizzate](/help/forms/assets/custom-library-folder-structure.png)
+
+1. Individua `ui.apps`.
+1. Aggiungi nuova cartella. Ad esempio, aggiungi una cartella denominata `experience-league`.
+1. Accedi a `/experience-league/` cartella e aggiungi una `ClientLibraryFolder`. Ad esempio, crea una cartella della libreria client denominata `customclientlibs`.
+
+   `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
+
+**Aggiungere file e cartelle alla cartella Libreria client**
+
+Aggiungi quanto segue alla cartella della libreria client aggiunta:
+
+* file .content.xml
+* file js.txt
+* cartella js
+
+`Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
+
+1. In `.content.xml` aggiungi le seguenti righe di codice:
+
+   ```javascript
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+   jcr:primaryType="cq:ClientLibraryFolder"
+   categories="[customfunctionscategory]"/>
+   ```
 
    >[!NOTE]
    >
    > Puoi scegliere un nome qualsiasi per `client library folder` e `categories` proprietà.
 
-1. Crea una cartella denominata `js`.
-1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` cartella.
-1. Aggiungi un file JavaScript, ad esempio: `function.js`. Il file contiene il codice per la funzione personalizzata.
-1. Salva il `function.js` file.
-1. Accedi a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` cartella.
-1. Aggiungi un file di testo come `js.txt`. Il file contiene:
+1. In `js.txt` aggiungi le seguenti righe di codice:
 
    ```javascript
-       #base=js
-       functions.js
+         #base=js
+       function.js
    ```
+1. In `js` , aggiungi il file javascript come `function.js` che include le funzioni personalizzate:
 
-1. Salva il `js.txt` file.
-1. Aggiungi, esegui il commit e invia le modifiche nell’archivio utilizzando i seguenti comandi:
+   ```javascript
+    /**
+        * Calculates Age
+        * @name calculateAge
+        * @param {object} field
+        * @return {string} 
+    */
+   
+    function calculateAge(field) {
+    var dob = new Date(field);
+    var now = new Date();
+   
+    var age = now.getFullYear() - dob.getFullYear();
+    var monthDiff = now.getMonth() - dob.getMonth();
+   
+    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
+    age--;
+    }
+   
+    return age;
+    }
+   ```
+1. Salva i file.
+
+![struttura di cartelle di funzioni personalizzate](/help/forms/assets/custom-function-added-files.png)
+
+**Includi la nuova cartella in filter.xml**:
+
+1. Accedi a `/ui.apps/src/main/content/META-INF/vault/filter.xml` file nel tuo [Directory del progetto AEMaaCS].
+
+1. Apri il file e aggiungi la seguente riga alla fine:
+
+   `<filter root="/apps/experience-league" />`
+1. Salva il file.
+
+![xml filtro funzione personalizzato](/help/forms/assets/custom-function-filterxml.png)
+
+**Distribuire nell’ambiente AEM la cartella della libreria client appena creata**
+
+Mettere in funzione l&#39;AEM as a Cloud Service, [Directory del progetto AEMaaCS], nell&#39;ambiente di Cloud Service. Per eseguire l’implementazione nell’ambiente di Cloud Service:
+
+1. Eseguire il commit delle modifiche
+
+   1. Aggiungi, esegui il commit e invia le modifiche nell’archivio utilizzando i seguenti comandi:
 
    ```javascript
        git add .
@@ -259,7 +349,11 @@ Puoi aggiungere funzioni personalizzate aggiungendo una libreria client. Per cre
        git push
    ```
 
-1. [Eseguire la pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) per distribuire la funzione personalizzata.
+1. Distribuisci il codice aggiornato:
+
+   1. Attiva una distribuzione del codice tramite la pipeline full stack esistente. In questo modo viene automaticamente generato e distribuito il codice aggiornato.
+
+Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 Una volta eseguita correttamente la pipeline, la funzione personalizzata aggiunta nella libreria client diventa disponibile nel [Editor di regole per moduli adattivi](/help/forms/rule-editor-core-components.md).
 
@@ -443,7 +537,7 @@ Scopri in che modo le funzioni personalizzate utilizzano gli oggetti campo e glo
 
 ![Modulo per contattarci](/help/forms/assets/contact-us-form.png)
 
-#### Visualizzare un pannello utilizzando la regola SetProperty
++++ **Caso d’uso**: mostra un pannello utilizzando `SetProperty` regola
 
 Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) , per impostare il campo modulo come `Required`.
 
@@ -485,8 +579,9 @@ Se sono presenti errori nei campi di `personaldetails` a livello di campo facend
 
 ![Anteprima modulo proprietà](/help/forms/assets/set-property-panel.png)
 
++++
 
-#### Convalida un campo.
++++ **Caso d’uso**: convalida il campo.
 
 Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) per convalidare il campo.
 
@@ -525,9 +620,9 @@ Se l’utente immette un numero di telefono valido e tutti i campi nel campo `pe
 
 ![Pattern di convalida dell’indirizzo e-mail](/help/forms/assets/validate-form-preview-form.png)
 
++++
 
-
-#### Reimpostare un pannello
++++ **Caso d’uso**: reimpostare un pannello
 
 Aggiungi il seguente codice nella funzione personalizzata come spiegato in [create-custom-function](#create-custom-function) per ripristinare il pannello.
 
@@ -559,9 +654,9 @@ Vedere l&#39;illustrazione seguente per mostrare che se l&#39;utente fa clic su 
 
 ![Reimposta modulo](/help/forms/assets/custom-function-reset-form.png)
 
++++
 
-
-#### Per visualizzare un messaggio personalizzato a livello di campo e contrassegnare il campo come non valido
++++ **Caso d’uso**: per visualizzare un messaggio personalizzato a livello di campo e contrassegnare il campo come non valido
 
 È possibile utilizzare `markFieldAsInvalid()` per definire un campo come non valido e impostare un messaggio di errore personalizzato a livello di campo. Il `fieldIdentifier` il valore può essere `fieldId`, o `field qualifiedName`, o `field dataRef`. Il valore dell’oggetto denominato `option` può essere `{useId: true}`, `{useQualifiedName: true}`, o `{useDataRef: true}`.
 Le sintassi utilizzate per contrassegnare un campo come non valido e impostare un messaggio personalizzato sono:
@@ -602,9 +697,9 @@ Se l’utente immette più di 15 caratteri nella casella di testo dei commenti, 
 
 ![Contrassegna campo come modulo di anteprima valido](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-
-#### Modificare i dati acquisiti prima dell&#39;invio
++++ **Caso d’uso**: invia i dati modificati al server
 
 La seguente riga di codice:
 `globals.functions.submitForm(globals.functions.exportData(), false);` viene utilizzato per inviare i dati del modulo dopo la manipolazione.
@@ -647,9 +742,9 @@ Fai riferimento all’illustrazione della `console window` di seguito per dimost
 
 ![Dati di Inspect nella finestra della console](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
 
-
-#### Ignorare i messaggi di errore e di successo per l’invio del modulo adattivo
++++ **Caso d’uso**: ignora gestori di errori e operazioni riuscite per l’invio del modulo
 
 Aggiungi la seguente riga di codice come spiegato in [create-custom-function](#create-custom-function) , per personalizzare il messaggio di invio o di errore per l’invio dei moduli e visualizzare i messaggi di invio dei moduli in una casella modale:
 
@@ -758,19 +853,19 @@ Per visualizzare l’invio dei moduli riuscito o non riuscito in modo predefinit
 
 Nel caso in cui il gestore di invio personalizzato non riesca a eseguire le operazioni previste nei progetti o moduli AEM esistenti, fare riferimento a [risoluzione dei problemi](#troubleshooting) sezione.
 
-<!--
++++
 
++++ **Caso d’uso**: esegue azioni in un’istanza specifica del pannello ripetibile
 
-#### Use Case:  Perform actions in a specific instance of the repeatable panel 
+Le regole create utilizzando l’editor di regole visive in un pannello ripetibile si applicano all’ultima istanza del pannello ripetibile. Per scrivere una regola per una specifica istanza del pannello ripetibile, possiamo utilizzare una funzione personalizzata.
 
-Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+Creiamo un altro modulo per raccogliere informazioni sui viaggiatori che si dirigono verso una destinazione. Un pannello viaggiatore viene aggiunto come pannello ripetibile, in cui l’utente può aggiungere dettagli per 5 viaggiatori utilizzando `Add Traveler` pulsante.
 
-Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+![Informazioni sul viaggiatore](/help/forms/assets/traveler-info-form.png)
 
-Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+Aggiungi la seguente riga di codice come spiegato in [create-custom-function](#create-custom-function) per eseguire azioni in un&#39;istanza specifica del pannello ripetibile diversa dall&#39;ultima:
 
 ```javascript
-
 /**
 * @name hidePanelInRepeatablePanel
 * @param {scope} globals
@@ -781,126 +876,126 @@ function hidePanelInRepeatablePanel(globals)
     // hides a panel inside second instance of repeatable panel
     globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
 }  
-
-```
- 
-In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
-Let us add a button labeled `Hide` to add a rule to hide a specific panel.
-
-![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
-
-Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
-
-
-
-
-#### **Usecase**: Pre-fill the field with a value when the form loads
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
-
-```javascript
-/**
- * @name importData
- * @param {scope} globals
- */
-function importData(globals)
-{
-    globals.functions.importData(Object.fromEntries([['amount',200000]]));
-} 
 ```
 
-In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+In questo esempio, la proprietà `hidePanelInRepeatablePanel` la funzione personalizzata esegue un’azione in un’istanza specifica del pannello ripetibile. Nel codice di cui sopra, `travelerinfo` rappresenta il pannello ripetibile. Il `repeatablePanel[1].traveler, {visible: false}` il codice nasconde il pannello nella seconda istanza del pannello ripetibile.
 
-Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+Aggiungiamo un pulsante etichettato `Hide` e aggiungi una regola per nascondere la seconda istanza di un pannello ripetibile.
 
-![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+![Nascondi regola pannello](/help/forms/assets/custom-function-hidepanel-rule.png)
 
-Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+Fai riferimento al video seguente per dimostrare che quando `Hide` Se si fa clic su, il pannello nella seconda istanza ripetibile si nasconde:
 
-![Import Data Rule](/help/forms/assets/cg)
-
-
-
-#### **Usecase**: Set focus on the specific field
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
-
-```javascript
-/**
- * @name setFocus
- * @param {object} field
- * @param {scope} globals
- */
-function setFocus(field, globals)
-{
-    globals.functions.setFocus(field);
-}
-```
-
-Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
-
-Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
-
->[!NOTE]
->
-> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+>[!VIDEO](https://video.tv.adobe.com/v/3429554?quality=12&learn=on)
 
 +++
 
-+++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
++++ **Usecase**: precompila il campo con un valore al caricamento del modulo
 
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+Aggiungi la seguente riga di codice, come spiegato in [create-custom-function](#create-custom-function) per caricare il valore precompilato in un campo quando il modulo viene inizializzato:
 
 ```javascript
 /**
- 
- * @name addInstance
+ * Tests import data
+ * @name testImportData
  * @param {scope} globals
  */
-function addInstance(globals)
+function testImportData(globals)
 {
-    var repeatablePanel = globals.form.traveler;
-    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+    globals.functions.importData(Object.fromEntries([['amount','10000']]));
 } 
-
 ```
 
-Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+Nel codice sopra indicato, la `testImportData` la funzione precompila il `Booking Amount` campo casella di testo al caricamento del modulo. Supponiamo che il modulo di prenotazione richieda che l’importo minimo della prenotazione sia `10,000`.
 
-![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+Creiamo una regola al momento dell’inizializzazione del modulo, in cui il valore `Booking Amount` il campo casella di testo viene precompilato con un valore specificato al caricamento del modulo:
 
-Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+![Importa regola dati](/help/forms/assets/custom-function-import-data.png)
 
-![Add Panel](/help/forms/assets/customg)
+Fai riferimento alla schermata seguente, che dimostra che quando il modulo viene caricato, il valore in `Booking Amount` la casella di testo è precompilata con un valore specificato:
 
-Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+![Importa modulo regola dati](/help/forms/assets/custom-function-prefill-form.png)
+
++++
+
++++ **Usecase**: imposta lo stato attivo sul campo specifico
+
+Aggiungi la seguente riga di codice, come spiegato in [create-custom-function](#create-custom-function) per impostare lo stato attivo sul campo specificato quando `Submit` clic sul pulsante.:
 
 ```javascript
-
 /**
- 
- * @name removeInstance
+ * @name testSetFocus
+ * @param {object} emailField
  * @param {scope} globals
  */
-function removeInstance(globals)
+    function testSetFocus(field, globals)
+    {
+        globals.functions.setFocus(field);
+    }
+```
+
+Aggiungiamo una regola al `Submit` per impostare lo stato attivo su `Email ID` campo casella di testo quando viene selezionato:
+
+![Imposta regola di attivazione](/help/forms/assets/custom-function-set-focus.png)
+
+Fai riferimento alla schermata seguente, che dimostra che quando `Submit` clic, lo stato attivo è impostato sul pulsante `Email ID` campo:
+
+![Imposta regola di attivazione](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> È possibile utilizzare l’ `$focusOption` , se desideri concentrarti sul campo successivo o precedente relativo al `email` campo.
+
++++
+
++++ **Usecase**: aggiungi o elimina un pannello ripetibile utilizzando `dispatchEvent` proprietà
+
+Aggiungi la seguente riga di codice, come spiegato in [create-custom-function](#create-custom-function) , per aggiungere un pannello quando `Add Traveler` quando si fa clic sul pulsante utilizzando `dispatchEvent` proprietà:
+
+```javascript
+/**
+ * Tests add instance with dispatchEvent
+ * @name testAddInstance
+ * @param {scope} globals
+ */
+function testAddInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel,'addInstance');
+}
+```
+
+Aggiungiamo una regola al `Add Traveler` per aggiungere il pannello ripetibile quando si fa clic su di esso:
+
+![Aggiungi regola pannello](/help/forms/assets/custom-function-add-panel.png)
+
+Fai riferimento al file gif seguente, che dimostra che quando il `Add Traveler` clic, il pannello viene aggiunto utilizzando il pulsante `dispatchEvent` proprietà:
+
+![Aggiungi pannello](/help/forms/assets/custom-function-add-panel.gif)
+
+Allo stesso modo, aggiungi la seguente riga di codice, come spiegato in [create-custom-function](#create-custom-function) per eliminare un pannello quando `Delete Traveler` quando si fa clic sul pulsante utilizzando `dispatchEvent` proprietà:
+
+```javascript
+/**
+ 
+ * @name testRemoveInstance
+ * @param {scope} globals
+ */
+function testRemoveInstance(globals)
 {
     var repeatablePanel = globals.form.traveler;
     globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
 } 
-
 ```
-Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
 
-![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+Aggiungiamo una regola al `Delete Traveler` per eliminare il pannello ripetibile quando viene selezionato:
 
-Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+![Elimina regola pannello](/help/forms/assets/custom-function-delete-panel.png)
 
-![Delete Panel](/help/forms/assets/customg)
--->
+Fai riferimento al file gif seguente, che dimostra che quando il `Delete Traveler` clic, il pannello del viaggiatore viene eliminato utilizzando il pulsante `dispatchEvent` proprietà:
+
+![Elimina pannello](/help/forms/assets/custom-function-delete-panel.gif)
+
 
 ## Supporto della memorizzazione in cache per la funzione personalizzata
 
