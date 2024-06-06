@@ -5,9 +5,9 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1264'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -179,7 +179,7 @@ Gli Javadoc vengono pubblicati in Maven Central.
 
    Come di consueto, i singoli progetti possono utilizzare la dipendenza.
 
-1. Distribuisci sul server locale.
+1. Implementa sul server locale.
 
 1. Se si è certi che funziona come previsto localmente, invia il codice a un ramo di sviluppo e utilizza una pipeline di non produzione di Cloud Manager per l’implementazione in un ambiente che si abbona al canale prerelease.
 
