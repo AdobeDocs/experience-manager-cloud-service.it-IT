@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 05144cc11c3a3e99e4e76aa6c8720592e9ca7a9f
+source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
 workflow-type: tm+mt
-source-wordcount: '1900'
-ht-degree: 86%
+source-wordcount: '1942'
+ht-degree: 82%
 
 ---
 
@@ -44,12 +44,28 @@ Dai un’occhiata al video Panoramica della versione di maggio 2024 per un riepi
 
 ### Nuove funzioni in Sites {#sites-new-features}
 
+#### Integrazione della traduzione AEM {#translation-integration}
+
+Le azioni e i flussi di lavoro per la traduzione dei contenuti ora attivano gli eventi per consentire il tracciamento dei passaggi e degli stati del processo pertinenti da applicazioni esterne. Sono in fase di generazione i seguenti eventi. Gli utenti potranno iscriversi agli eventi utilizzando la console Adobe Developer.
+
+* `TRANSLATION_JOB_CREATED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_COMPLETED`
+* `TRANSLATION_JOB_CONTENT_DELETION_STARTED`
+* `TRANSLATION_JOB_CONTENT_DELETION_COMPLETED`
+* `TRANSLATION_JOB_COMMITTED_FOR_TRANSLATION`
+* `TRANSLATION_JOB_READY_FOR_REVIEW`
+* `TRANSLATION_JOB_APPROVED`
+* `TRANSLATION_JOB_COMPLETED`
+* `TRANSLATION_JOB_CANCELLED`
+* `TRANSLATION_JOB_ERROR`
+
 #### Servizio dati di Real Use Monitoring (RUM) {#real-use-monitoring}
 
 * **[Il servizio dati Real Use Monitoring (RUM) è ora GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** consentire la raccolta di dati lato client per AEM as a Cloud Service.
 Il servizio Real Use Monitoring, la raccolta lato client, offre un riflesso più preciso delle interazioni, garantendo una misura affidabile del coinvolgimento del sito web. Consente ai clienti di ottenere informazioni avanzate sul traffico e sulle prestazioni delle pagine. È un’ottima opportunità per saperne di più sulle prestazioni della pagina e ottenere informazioni per migliorarle.
 
-### Authoring AEM per Edge Delivery Services
+#### Authoring AEM per Edge Delivery Services {#edge-enhancements}
 
 Maggiore stabilità e vari miglioramenti per un’ottimale esperienza di authoring.
 
@@ -128,7 +144,7 @@ Sei pronto a integrare una di queste soluzioni CAPTCHA con il tuo modulo adattiv
 
 ### Servizio Forms
 
-Il servizio Forms genera moduli PDF interattivi per l’acquisizione dei dati. Può essere utilizzato anche per importare o esportare dati da e verso un modulo interattivo PDF esistente e convalidare i dati inviati. Ecco una suddivisione delle sue funzionalità:
+Il servizio Forms genera moduli PDF interattivi per l’acquisizione dei dati. Può essere utilizzato anche per importare o esportare dati da e verso un modulo interattivo di PDF esistente e convalidare i dati inviati. Ecco una suddivisione delle sue funzionalità:
 
 * **Rendering di moduli**: genera un modulo PDF interattivo da un modello creato con AEM Forms Designer e, facoltativamente, da dati XML. In sostanza, questo produce un modulo PDF compilabile, facoltativamente precompilato con i dati.
 * **Estrazione e importazione dei dati**: importa i dati in un modulo PDF esistente ed estrae i dati da un modulo PDF compilato. Sono supportati sia i formati di dati XDP che XML e l’importazione in moduli PDF non XFA (noti anche come AcroForms); supporta anche i dati FDF e XFDF.
@@ -239,4 +255,3 @@ L’elenco completo dei rilasci mensili degli strumenti di migrazione è disponi
 
 Puoi trovare informazioni sulle versioni di altre applicazioni Experience Cloud [qui](https://experienceleague.adobe.com/it/docs/release-notes/experience-cloud/current).
 Per ricevere una notifica e-mail mensile sugli aggiornamenti delle note sulla versione di Experience Cloud, abbonati al [Adobe di aggiornamento del prodotto con priorità](https://www.adobe.com/subscription/priority-product-update.html).
-
