@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
 workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 82%
+ht-degree: 92%
 
 ---
 
@@ -62,8 +62,8 @@ Le azioni e i flussi di lavoro per la traduzione dei contenuti ora attivano gli 
 
 #### Servizio dati di Real Use Monitoring (RUM) {#real-use-monitoring}
 
-* **[Il servizio dati Real Use Monitoring (RUM) è ora GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** consentire la raccolta di dati lato client per AEM as a Cloud Service.
-Il servizio Real Use Monitoring, la raccolta lato client, offre un riflesso più preciso delle interazioni, garantendo una misura affidabile del coinvolgimento del sito web. Consente ai clienti di ottenere informazioni avanzate sul traffico e sulle prestazioni delle pagine. È un’ottima opportunità per saperne di più sulle prestazioni della pagina e ottenere informazioni per migliorarle.
+* **[Il servizio dati Real Use Monitoring (RUM) è ora disponibile](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** e consente la raccolta di dati lato client per AEM as a Cloud Service.
+Il servizio Real Use Monitoring, la raccolta lato client, offre un riflesso più preciso delle interazioni, garantendo una misura affidabile del coinvolgimento del sito web. Consente ai clienti di ottenere insight avanzati sul traffico e sulle prestazioni delle pagine. Permette di saperne di più sulle prestazioni delle pagine e di ottenere insight utili a migliorarle.
 
 #### Authoring AEM per Edge Delivery Services {#edge-enhancements}
 
@@ -112,7 +112,7 @@ Experience Manager Assets ora consente di [pubblicare risorse su Experience Mana
 
 Questa versione apporta un aggiornamento significativo all’editor di regole visive per i moduli adattivi basati su componenti core. Ora puoi:
 
-* Creare regole nell’editor di regole visive per [sostituire i messaggi di esito positivo/negativo predefiniti per l’invio del modulo](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
+* Crea regole nell’editor di regole visivo per [sovrascrivere i messaggi di esito positivo/negativo predefiniti per l’invio del modulo](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
 * Nell’editor di regole dei moduli adattivi, è stata aggiunta la possibilità di [selezionare diversi tipi di campi per l’operazione WHEN](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
@@ -234,14 +234,14 @@ In modo simile ad AEM 6.5, Apache/dispatcher acquisisce le mappe di riscrittura 
 
 Adobe Managed CDN ora supporta [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), un linguaggio di markup per l’assemblaggio di contenuti web dinamici a livello di edge. Includendo snippet ESI, è possibile memorizzare nella cache la pagina HTML generale sulla rete CDN con valori TTL più elevati e recuperare con maggiore frequenza dall’origine le sezioni più piccole che richiedono aggiornamenti più frequenti (TTL più bassi). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-## Guide di [!DNL Experience Manager] {#guides}
+## [!DNL Experience Manager] Guides {#guides}
 
 * **Pubblicare un argomento o i relativi elementi in un frammento di esperienza**
 Ora, Experience Manager Guides consente di pubblicare un argomento o i relativi elementi in un frammento di esperienza. Un frammento di esperienza è un’unità di contenuto modulare che integra sia il contenuto che il layout.  I frammenti di esperienza sono fondamentali e possono aiutarti a creare esperienze coerenti e coinvolgenti.
-* **Possibilità di passare i metadati della risorsa dell’argomento all’output di PDF nativo**
-Puoi aggiungere i metadati della risorsa dell’argomento durante la generazione dell’output di PDF nativo. Questa funzione consente di aggiungere metadati specifici per argomenti diversi, come il titolo e l&#39;autore dell&#39;argomento, alle intestazioni e ai piè di pagina dell&#39;argomento.
+* **Possibilità di passare i metadati delle risorse degli argomenti all’output PDF nativo**
+Puoi aggiungere i metadati delle risorse degli argomento durante la generazione dell’output PDF nativo. Questa funzione consente di aggiungere metadati specifici per argomenti diversi, come titolo e autore di ogni argomento, alle intestazioni e ai piè di pagina dello stesso.
 
-Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi risolti in questa versione, vedi [Roadmap sulla versione di Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi risolti in questa versione, vedi [Roadmap delle versioni di Experience Manager Guides](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
