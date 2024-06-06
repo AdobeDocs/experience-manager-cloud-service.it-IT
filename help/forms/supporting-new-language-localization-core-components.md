@@ -4,7 +4,7 @@ description: Scopri come aggiungere nuove lingue per un modulo adattivo.
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+source-git-commit: 6238d059ff44586ab1b0d24895a8b73d74b1f913
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 3%
@@ -369,7 +369,7 @@ Questi passaggi ti guidano attraverso l’anteprima di un modulo adattivo con le
 ## Procedure consigliate per il supporto della nuova localizzazione {#best-practices}
 
 * L’Adobe consiglia di creare un progetto di traduzione dopo la creazione di un modulo adattivo. Ciò semplifica il processo di localizzazione.
-* Quando i componenti Casella numerica e Selettore data vengono convertiti in una lingua specifica, possono verificarsi problemi di formattazione. Per attenuare questo problema, è necessario **Lingua** è stata incorporata nella finestra di dialogo Configura di [Componente selettore data](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/number-input#formats-configure-tab) e [Componente casella numerica](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Quando i componenti Casella numerica e Selettore data vengono convertiti in una lingua specifica, possono verificarsi problemi di formattazione. Per attenuare questo problema, è necessario **Lingua** è stata incorporata nella finestra di dialogo Configura di [Componente selettore data](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) e [Componente casella numerica](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Gestione dei nuovi campi:

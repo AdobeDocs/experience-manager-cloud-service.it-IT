@@ -4,10 +4,10 @@ description: Scopri come creare sezioni o campi ripetibili in un modulo adattivo
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: d3c5adf0b5b2155308e0bf9f4459682f11b67780
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 2%
+source-wordcount: '1258'
+ht-degree: 8%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Una sezione ripetibile fa riferimento a una parte di un modulo che può essere duplicata o ripetuta più volte per raccogliere informazioni per più istanze degli stessi dati.
 
-Si consideri, ad esempio, un modulo utilizzato per raccogliere informazioni sull&#39;esperienza lavorativa di una persona. È possibile che sia disponibile una sezione ripetibile per l&#39;acquisizione dei dettagli di ogni processo precedente. In genere, la sezione ripetibile contiene campi quali il nome dell&#39;azienda, la qualifica, le date di assunzione e le responsabilità lavorative. L’utente può aggiungere più istanze della sezione ripetibile per immettere informazioni su ogni processo che ha mantenuto.
+Si consideri, ad esempio, un modulo utilizzato per raccogliere informazioni sull’esperienza lavorativa di una persona. È possibile che sia disponibile una sezione ripetibile per l’acquisizione dei dettagli di ogni processo precedente. In genere, la sezione ripetibile contiene campi quali il nome dell’azienda, la qualifica, le date di assunzione e le responsabilità lavorative. L’utente può aggiungere più istanze della sezione ripetibile per immettere informazioni su ogni lavoro svolto.
 
 ![Ripetibilità](/help/forms/assets/repeatable-adaptive-form-example.gif)
 
@@ -31,10 +31,10 @@ Alla fine di questo articolo imparerai a:
 * Impostare il numero minimo o massimo di ripetizioni per un componente Modulo adattivo
 * Utilizza l’editor di regole per configurare azioni di aggiunta o eliminazione per le sezioni ripetibili
 
-È possibile utilizzare [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=it), [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it), o [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it) componenti per rendere ripetibili le sezioni di un modulo adattivo. È possibile aggiungere componenti figlio al pannello, al pannello a soffietto, alle schede orizzontali o ai componenti della procedura guidata per creare una sezione ripetibile in un modulo.
+È possibile utilizzare [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=it), [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it), [Schede verticali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)  o [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it) componenti per rendere ripetibili le sezioni di un modulo adattivo. È possibile aggiungere componenti figlio a questi componenti per creare una sezione ripetibile in un modulo.
 
 
-Gli esempi contenuti in questo documento si basano su [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=it) componente. È possibile eseguire gli stessi passaggi per eseguire [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it), e [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it) componenti ripetibili.
+Gli esempi contenuti in questo documento si basano su [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=it) componente. È possibile eseguire gli stessi passaggi per eseguire [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=it), [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it), [Schede verticali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) o [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it) componenti ripetibili.
 
 ## Aggiungere o eliminare sezioni ripetibili in un modulo {#add-or-delete-repeatable-section-in-panel-container}
 
