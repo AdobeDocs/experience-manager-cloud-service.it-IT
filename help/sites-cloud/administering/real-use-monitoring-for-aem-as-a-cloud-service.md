@@ -1,7 +1,7 @@
 ---
 title: Monitoraggio dell’uso reale per AEM as a Cloud Service
 description: Scopri come utilizzare il monitoraggio in tempo reale (RUM, Real Use Monitoring) per acquisire e analizzare l’esperienza dell’utente digitale di un sito web o di un’applicazione in tempo reale.
-source-git-commit: a15f973c21044e16751401bd0ffb256a4d0fb17d
+source-git-commit: d2997213d47d398efdb7ce3810fa0959ece072c6
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -10,6 +10,7 @@ ht-degree: 0%
 
 
 >[!NOTE]
+>
 >Siamo entusiasti di annunciare [Rollout GA](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) per il servizio Real Use Monitoring, la raccolta di dati lato client. Si tratta di un servizio automatizzato e non è richiesta alcuna configurazione del cliente.
 
 # Servizio di monitoraggio per uso reale per AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
@@ -113,6 +114,6 @@ Poiché analizzerai i dati RUM, potrebbero esserci varianze nelle Visualizzazion
 
 1. **Come posso rinunciare?**
 
-Si consiglia vivamente di utilizzare il Real Use Monitoring (RUM) per i suoi vantaggi significativi e per consentirti di ottimizzare le tue esperienze digitali. Può offrire informazioni preziose che possono contribuire a migliorare le prestazioni del sito web.Il servizio è progettato per essere semplice e non ha alcun impatto sulle prestazioni del sito web.
+   Si consiglia vivamente di utilizzare il Real Use Monitoring (RUM) per i suoi vantaggi significativi e per consentirti di ottimizzare le tue esperienze digitali. Può offrire informazioni preziose che possono contribuire a migliorare le prestazioni del sito web.Il servizio è progettato per essere semplice e non ha alcun impatto sulle prestazioni del sito web.
 
-Rinunciare significa perdere queste informazioni. Tuttavia, in caso di problemi, contatta l’assistenza Adobe.
+   Rinunciare significa perdere queste informazioni. Tuttavia, in caso di problemi, contatta l’assistenza Adobe.
