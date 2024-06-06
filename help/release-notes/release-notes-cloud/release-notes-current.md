@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3e63cfc65ea28a481b50f431483a13c2fd80853c
+source-git-commit: 05144cc11c3a3e99e4e76aa6c8720592e9ca7a9f
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 87%
+source-wordcount: '1900'
+ht-degree: 86%
 
 ---
 
@@ -44,7 +44,12 @@ Dai un’occhiata al video Panoramica della versione di maggio 2024 per un riepi
 
 ### Nuove funzioni in Sites {#sites-new-features}
 
-**Authoring di AEM per Edge Delivery Services**
+#### Servizio dati di Real Use Monitoring (RUM) {#real-use-monitoring}
+
+* **[Il servizio dati Real Use Monitoring (RUM) è ora GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** consentire la raccolta di dati lato client per AEM as a Cloud Service.
+Il servizio Real Use Monitoring, la raccolta lato client, offre un riflesso più preciso delle interazioni, garantendo una misura affidabile del coinvolgimento del sito web. Consente ai clienti di ottenere informazioni avanzate sul traffico e sulle prestazioni delle pagine. È un’ottima opportunità per saperne di più sulle prestazioni della pagina e ottenere informazioni per migliorarle.
+
+### Authoring AEM per Edge Delivery Services
 
 Maggiore stabilità e vari miglioramenti per un’ottimale esperienza di authoring.
 
@@ -212,11 +217,6 @@ In modo simile ad AEM 6.5, Apache/dispatcher acquisisce le mappe di riscrittura 
 #### Edge Side Includes (ESI) per il caricamento di contenuti dinamici (programma per i primi utilizzatori) {#esi-early-adopter}
 
 Adobe Managed CDN ora supporta [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), un linguaggio di markup per l’assemblaggio di contenuti web dinamici a livello di edge. Includendo snippet ESI, è possibile memorizzare nella cache la pagina HTML generale sulla rete CDN con valori TTL più elevati e recuperare con maggiore frequenza dall’origine le sezioni più piccole che richiedono aggiornamenti più frequenti (TTL più bassi). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
-
-#### Servizio dati di Real User Monitoring (RUM) (programma per i primi utilizzatori)
-
-* **[Il servizio dati Real Use Monitoring (RUM) è ora GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** consentire la raccolta di dati lato client per AEM as a Cloud Service.
-Il servizio Real Use Monitoring, la raccolta lato client, offre un riflesso più preciso delle interazioni, garantendo una misura affidabile del coinvolgimento del sito web. Consente ai clienti di ottenere informazioni avanzate sul traffico e sulle prestazioni delle pagine. È un’ottima opportunità per saperne di più sulle prestazioni della pagina e ottenere informazioni per migliorarle.
 
 ## Guide di [!DNL Experience Manager] {#guides}
 
