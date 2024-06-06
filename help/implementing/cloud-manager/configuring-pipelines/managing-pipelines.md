@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 53%
+source-wordcount: '1119'
+ht-degree: 48%
 
 ---
 
@@ -110,6 +110,10 @@ A seconda del tipo di pipeline, puoi annullare l’esecuzione facendo nuovamente
 >
 >Non è possibile modificare una pipeline in esecuzione.
 
+>[!NOTE]
+>
+>Le pipeline a livello web e di configurazione non sono supportate con archivi privati. Consulta il documento [Aggiunta di archivi privati in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) per maggiori dettagli e per l’elenco completo delle limitazioni.
+
 ## Eliminazione delle pipeline {#deleting-pipelines}
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
@@ -143,6 +147,14 @@ Una volta completato un passaggio della pipeline, viene presentato un riepilogo.
 Seleziona la **Visualizza dettagli** collegamento per visualizzare **Durata** sezione. Ciò include la durata media della pipeline in base alla tendenza storica per quel programma.
 
 ![Durata](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
+
+Se la pipeline conteneva un **Scansione del codice** , che ha sollevato dei problemi, puoi toccare o fare clic sul pulsante **Dettagli del download** per visualizzare un elenco di [test qualità codice](/help/implementing/cloud-manager/code-quality-testing.md) quello non passò.
+
+![Problemi di qualità del codice](assets/managing-pipelines-code-quality-issues.png)
+
+A **Percorso file di progetto** è disponibile nel file CSV per indicare la posizione del codice che ha causato l’infrazione. Questa colonna è il percorso relativo al progetto, mentre **Percorso file** è generata da Maven.
+
+![Dettagli problema analisi codice progetto](assets/managing-pipelines-code-quality-details.png)
 
 >[!NOTE]
 >

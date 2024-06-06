@@ -2,10 +2,10 @@
 title: Ripristino del contenuto in AEM as a Cloud Service
 description: Scopri come ripristinare il contenuto di AEM as a Cloud Service dal backup utilizzando Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 5baeb4012e5aa82a8cd8710b18d9164583ede0bd
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 57%
+source-wordcount: '1339'
+ht-degree: 50%
 
 ---
 
@@ -13,15 +13,6 @@ ht-degree: 57%
 # Ripristino del contenuto in AEM as a Cloud Service {#content-restore}
 
 Scopri come ripristinare il contenuto di AEM as a Cloud Service dal backup utilizzando Cloud Manager.
-
->[!NOTE]
->
->Questa funzione è disponibile solo per [il programma early adopter](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) e presenta alcune limitazioni oltre a quelle documentate nell’articolo. Nella prima fase di adozione:
->
->* La funzione è disponibile solo negli ambienti di sviluppo.
->* Il ripristino dei contenuti è limitato a due al mese per programma.
->
->Per informazioni dettagliate sul sistema di backup e ripristino esistente per AEM as a Cloud Service, vedere [Backup e ripristino in AEM as a Cloud Service](/help/operations/backup.md).
 
 ## Panoramica {#overview}
 
@@ -40,13 +31,41 @@ In entrambi i casi, la versione del codice personalizzato e la versione dell’A
 >
 >È inoltre possibile ripristinare i backup [utilizzando l’API pubblica.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
 
+>[!WARNING]
+>
+>* Questa funzione deve essere utilizzata solo in caso di problemi gravi relativi al codice o al contenuto.
+>* Il ripristino di un backup comporterà la perdita di dati recenti tra il momento del backup e il presente. Anche lo staging verrà ripristinato alla versione precedente.
+>* Prima di avviare un ripristino del contenuto, prendere in considerazione altre opzioni di ripristino selettivo.
+
+## Opzioni di ripristino selettivo dei contenuti {#selective-options}
+
+Prima di eseguire il ripristino completo del contenuto, prendere in considerazione queste opzioni per ripristinare più facilmente il contenuto.
+
+* Se è disponibile un pacchetto per il percorso eliminato, installarlo nuovamente utilizzando [Gestione pacchetti.](/help/implementing/developing/tools/package-manager.md)
+* Se il percorso eliminato era una pagina in Sites, utilizza [Ripristina funzione struttura.](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* Se il percorso eliminato era una cartella di risorse e i file originali sono disponibili, ricaricali tramite [la console Assets.](/help/assets/add-assets.md)
+* Se il contenuto da eliminare era costituito da risorse, considera [ripristino delle versioni precedenti delle risorse.](/help/assets/manage-digital-assets.md)
+
+Se nessuna delle opzioni di cui sopra funziona e il contenuto del percorso eliminato è significativo, eseguire un ripristino del contenuto come descritto nelle sezioni seguenti.
+
+## Crea Ruolo Utente {#user-role}
+
+Per impostazione predefinita, nessun utente dispone dell’autorizzazione per eseguire ripristini del contenuto in ambienti di sviluppo, produzione o staging. Per delegare questa autorizzazione a utenti o gruppi specifici, segui la procedura generale riportata di seguito.
+
+1. Crea un profilo di prodotto con un nome espressivo che faccia riferimento al ripristino del contenuto.
+1. Fornisci **Accesso al programma** autorizzazione per il programma richiesto.
+1. Fornisci **Ripristino contenuto** l’autorizzazione per l’ambiente richiesto o per tutti gli ambienti del programma, a seconda del caso d’uso.
+1. Assegna gli utenti a quel profilo di profilo.
+
+Per informazioni dettagliate sulla gestione delle autorizzazioni, consulta [Autorizzazioni personalizzate](/help/implementing/cloud-manager/custom-permissions.md) documentazione.
+
 ## Ripristino del contenuto {#restoring-content}
 
 Determina innanzitutto l’intervallo di tempo del contenuto da ripristinare. Quindi, per ripristinare il contenuto dell’ambiente da un backup, esegui questi passaggi.
 
 >[!NOTE]
 >
->Un utente con **Proprietario business** o **Responsabile dell’implementazione** per avviare un&#39;operazione di ripristino, è necessario che il ruolo sia connesso.
+>Un utente deve avere [autorizzazioni appropriate](#user-role) per avviare un&#39;operazione di ripristino.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 

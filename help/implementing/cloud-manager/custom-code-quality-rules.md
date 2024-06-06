@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
 workflow-type: tm+mt
-source-wordcount: '4167'
-ht-degree: 87%
+source-wordcount: '4482'
+ht-degree: 82%
 
 ---
 
@@ -1134,7 +1134,6 @@ Se si ignora il valore predefinito, le letture delle pagine possono risultare mo
 
 Il modello previsto per i nomi di indice completamente personalizzati è: `[prefix].[indexName]-custom-[version]`. Ulteriori informazioni sono disponibili nel documento [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md).
 
-
 ### Stessa proprietà con valori analizzati diversi nella stessa definizione di indice {#oakpal-same-property-different-analyzed-values}
 
 #### Codice non conforme {#non-compliant-code-same-property-different-analyzed-values}
@@ -1187,7 +1186,7 @@ Esempio:
 
 Se la proprietà analizzata non è stata impostata in modo esplicito, il valore predefinito sarà falso.
 
-### Proprietà Tags
+### Proprietà Tags {#tags-property}
 
 * **Chiave**: IndexHasValidTagsProperty
 * **Tipo**: code smell
@@ -1195,3 +1194,75 @@ Se la proprietà analizzata non è stata impostata in modo esplicito, il valore 
 * **Da**: versione 2023.1.0
 
 Per indici specifici, assicurati di mantenere la proprietà tags e i relativi valori correnti. Anche se è possibile aggiungere nuovi valori alla proprietà tags, l’eliminazione di eventuali valori esistenti (o del tutto la proprietà ) può causare risultati imprevisti.
+
+### I nodi di definizione dell’indice non devono essere distribuiti nel pacchetto di contenuti dell’interfaccia utente {#oakpal-ui-content-package}
+
+* **Chiave**: IndexNotUnderUIContent
+* **Tipo**: miglioramento
+* **Gravità**: minore
+* **Da**: versione 2024.6.0
+
+AEM Cloud Service non consente la definizione di indici di ricerca personalizzati (nodi di tipo `oak:QueryIndexDefinition`) nel pacchetto dei contenuti dell’interfaccia utente.
+
+>[!WARNING]
+>
+>Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire da [Versione di agosto 2024 di Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### La Definizione Dell’Indice Full-Text Personalizzato Di Tipo damAssetLucene Deve Avere Il Prefisso Corretto Di &quot;damAssetLucene&quot; {#oakpal-dam-asset-lucene}
+
+* **Chiave**: CustomFulltextIndexesOfTheDamAssetCheck
+* **Tipo**: miglioramento
+* **Gravità**: minore
+* **Da**: versione 2024.6.0
+
+AEM Cloud Service non consente la definizione di indici full-text di tipo personalizzati `damAssetLucene` dall&#39;essere preceduta da un prefisso diverso `damAssetLucene`.
+
+>[!WARNING]
+>
+>Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire da [Versione di agosto 2024 di Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### I Nodi Di Definizione Dell’Indice Non Devono Contenere Proprietà Con Lo Stesso Nome {#oakpal-index-property-name}
+
+* **Chiave**: DuplicateNameProperty
+* **Tipo**: miglioramento
+* **Gravità**: minore
+* **Da**: versione 2024.6.0
+
+AEM Cloud Service non consente la definizione di indici di ricerca personalizzati (ovvero, nodi di tipo) `oak:QueryIndexDefinition`) per contenere proprietà con lo stesso nome
+
+>[!WARNING]
+>
+>Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire da [Versione di agosto 2024 di Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### Non è consentito personalizzare alcune definizioni di indice OOTB {#oakpal-customizing-ootb-index}
+
+* **Chiave**: RestrictIndexCustomization
+* **Tipo**: miglioramento
+* **Gravità**: minore
+* **Da**: versione 2024.6.0
+
+AEM Cloud Service vieta modifiche non autorizzate dei seguenti indici OOTB:
+
+* `nodetypeLucene`
+* `slingResourceResolver`
+* `socialLucene`
+* `appsLibsLucene`
+* `authorizables`
+* `pathReference`
+
+>[!WARNING]
+>
+>Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire da [Versione di agosto 2024 di Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### La Configurazione Dei Tokenizer Negli Analizzatori Deve Essere Creata Con Il Nome &quot;Tokenizer&quot; {#oakpal-tokenizer}
+
+* **Chiave**: AnalyzerTokenizerConfigCheck
+* **Tipo**: miglioramento
+* **Gravità**: minore
+* **Da**: versione 2024.6.0
+
+AEM Cloud Service vieta la creazione di tokenizer con nomi non corretti negli analizzatori. I token devono sempre essere definiti come `tokenizer`.
+
+>[!WARNING]
+>
+>Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire da [Versione di agosto 2024 di Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)

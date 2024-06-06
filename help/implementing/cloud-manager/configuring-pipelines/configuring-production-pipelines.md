@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 68%
+source-wordcount: '1367'
+ht-degree: 67%
 
 ---
 
@@ -86,7 +86,7 @@ Per completare la configurazione della pipeline di produzione del codice full st
 
    >[!TIP]
    > 
-   >Per scoprire come aggiungere e gestire archivi in Cloud Manager, consulta il documento [Aggiunta e gestione degli archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
+   >Per scoprire come aggiungere e gestire archivi in Cloud Manager, consulta il documento [Aggiunta e gestione degli archivi](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
    * **Ramo Git**: definisce il ramo della pipeline selezionata dal quale recuperare il codice.
       * Digitando i primi caratteri del nome del ramo, la funzione di completamento automatico del campo troverà i rami corrispondenti per supportare nella selezione.
@@ -126,6 +126,10 @@ Una distribuzione mirata distribuisce il codice solo per parti selezionate dell�
    * Se esiste una pipeline del codice a livello web per l’ambiente selezionato, questa selezione è disabilitata.
    * Se già disponi di una pipeline full stack distribuita in un ambiente, creando una pipeline di configurazione a livello web per lo stesso ambiente la configurazione del livello web esistente nella pipeline full stack verrà ignorata.
 
+>[!NOTE]
+>
+>Le pipeline a livello web e di configurazione non sono supportate con archivi privati. Consulta il documento [Aggiunta di archivi privati in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) per maggiori dettagli e per l’elenco completo delle limitazioni.
+
 I passaggi per completare la creazione della pipeline di distribuzione di produzione con targeting sono gli stessi quando scegli un tipo di distribuzione.
 
 1. Scegliere il tipo di distribuzione desiderato.
@@ -142,7 +146,7 @@ I passaggi per completare la creazione della pipeline di distribuzione di produz
 
    >[!TIP]
    > 
-   >Per scoprire come aggiungere e gestire archivi in Cloud Manager, consulta [Aggiunta e gestione degli archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
+   >Per scoprire come aggiungere e gestire archivi in Cloud Manager, consulta [Aggiunta e gestione degli archivi](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
    * **Ramo Git**: questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
       * Immetti i primi caratteri del nome del ramo: la funzione di completamento automatico di questo campo. trova i rami corrispondenti che puoi selezionare.

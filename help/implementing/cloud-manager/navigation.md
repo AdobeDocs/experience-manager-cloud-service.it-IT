@@ -5,7 +5,7 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 89%
@@ -198,7 +198,7 @@ A ogni programma sono associate molte opzioni e molti dati. Questi dati vengono 
 * Panoramica: la panoramica del programma come descritto nel documento corrente
 * [Attività](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity): la cronologia delle esecuzioni delle pipeline del programma
 * [Pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines): tutte le pipeline configurate per il programma
-* [Archivi](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md): tutti gli archivi configurati per il programma
+* [Archivi](/help/implementing/cloud-manager/managing-code/managing-repositories.md): tutti gli archivi configurati per il programma
 * [Rapporti](/help/implementing/cloud-manager/sla-reporting.md): metriche quali i dati SLA
 * [Ambienti](/help/implementing/cloud-manager/manage-environments.md): tutti gli ambienti configurati per il programma
 * [Set di contenuti](/help/implementing/developing/tools/content-copy.md): set di contenuti creati per scopi di copia
