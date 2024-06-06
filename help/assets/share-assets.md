@@ -1,13 +1,12 @@
 ---
 title: Distribuire e condividere risorse, cartelle e raccolte
 description: Distribuisci le risorse digitali utilizzando metodi quali condivisione come collegamento, download e tramite [!DNL Brand Portal], [!DNL desktop app], e [!DNL Asset Link].
-contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1847'
 ht-degree: 3%
 
 ---
@@ -107,7 +106,43 @@ Per condividere le risorse tramite e-mail:
 
    ![E-mail Condivisione collegamenti](assets/link-sharing-email-notification.png)
 
-### Scaricare le risorse utilizzando il collegamento alle risorse
+### Personalizza modello e-mail {#customize-email-template}
+
+Un modello ben progettato trasmette professionalità e competenza, migliorando la credibilità del messaggio e della tua organizzazione. Il [!DNL Adobe Experience Manager] consente di personalizzare il modello e-mail, che viene inviato ai destinatari che ricevono l’e-mail contenente il collegamento condiviso. Inoltre, i modelli e-mail personalizzati consentono di personalizzare il contenuto delle e-mail rivolgendosi ai destinatari con il nome e facendo riferimento a dettagli specifici pertinenti. Questo contatto personale può far sentire apprezzato il destinatario e aumentarne il coinvolgimento. Inoltre, un modello personalizzato garantisce che le e-mail siano coerenti con la tua identità del brand, inclusi logo, colori e font. La coerenza rafforza il riconoscimento del brand e la fiducia tra i destinatari.
+
+#### Formato di un modello e-mail personalizzato {#format-of-custom-email-template}
+
+Il modello e-mail può essere personalizzato utilizzando testo normale o HTML. Il collegamento predefinito al modello modificabile si trova in `/libs/settings/dam/adhocassetshare/en.txt`. Potete sostituire il modello creando il file `/apps/settings/dam/adhocassetshare/en.txt`. Puoi modificare il modello e-mail il numero di volte necessario.
+
+| Segnaposto | Descrizione |
+|---|-----|
+| ${emailSubject} | Oggetto di un messaggio e-mail |
+| ${emailInitiator} | ID e-mail dell’utente che ha creato l’e-mail |
+| ${emailMessage} | Corpo dell’e-mail |
+| ${pagePath} | URL del collegamento condiviso |
+| ${linkExpiry} | Data di scadenza del collegamento condiviso |
+| ${host.prefix} | Origine del [!DNL Experience Manager] esempio `http://www.adobe.com"` |
+
+#### Esempio di modello e-mail personalizzato {#custom-email-template-example}
+
+```
+subject: ${emailSubject}
+
+<!DOCTYPE html>
+<html><body>
+<p><strong>${emailInitiator}</strong> invited you to review assets.</p>
+<p>${emailMessage}</p>
+<p>The shared link will be available until ${linkExpiry}.
+<p>
+    <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
+</p>
+
+Sent from instance: ${host.prefix}
+
+</body></html>
+```
+
+### Scaricare le risorse utilizzando il collegamento alle risorse {#download-assets-using-asset-link}
 
 Qualsiasi utente che abbia accesso al collegamento della risorsa condivisa può scaricare le risorse incluse in una cartella zip. Il processo di download è lo stesso, sia che un utente acceda al collegamento della risorsa copiato, sia che utilizzi il collegamento della risorsa condiviso tramite l’e-mail.
 
@@ -211,7 +246,7 @@ Gli utenti possono scaricare le risorse richieste e condividerle al di fuori di 
 
 Gli addetti al marketing e gli utenti del settore possono condividere con facilità le risorse approvate con i loro creativi utilizzando,
 
-* **app desktop Experience Manager**: l’app funziona su Windows e Mac. Consulta [panoramica dell’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it). Per sapere come qualsiasi utente desktop autorizzato può accedere facilmente alle risorse condivise, consulta [sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle nuovamente con gli altri utenti Experienci Manager, ad esempio caricando nuove immagini. Consulta [caricare risorse tramite l’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **app desktop Experience Manager**: l’app funziona su Windows e Mac. Consulta [panoramica dell’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it). Per sapere come qualsiasi utente desktop autorizzato può accedere facilmente alle risorse condivise, consulta [sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle nuovamente con gli altri utenti Experienci Manager, ad esempio caricando nuove immagini. Consulta [caricare risorse tramite un’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe collegamento risorsa**: i professionisti della creatività possono cercare e utilizzare le risorse direttamente dall’interno di [!DNL Adobe InDesign], [!DNL Adobe Illustrator], e [!DNL Adobe Photoshop].
 
@@ -223,7 +258,7 @@ Le diverse opzioni per la condivisione delle risorse richiedono una configurazio
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Per generare l’URL per le risorse da condividere con gli utenti, utilizza la finestra di dialogo Condivisione collegamenti. Utenti con privilegi di amministratore o con autorizzazioni di lettura all’indirizzo `/var/dam/share` in cui sono in grado di visualizzare i collegamenti condivisi. La condivisione delle risorse tramite un collegamento rappresenta un modo pratico per rendere le risorse disponibili alle parti esterne senza dover prima accedere a [!DNL Assets].
+Per generare l’URL per le risorse da condividere con gli utenti, utilizza la finestra di dialogo Condivisione collegamenti. Utenti con privilegi di amministratore o con autorizzazioni di lettura all’indirizzo `/var/dam/share` in cui sono in grado di visualizzare i collegamenti condivisi. La condivisione delle risorse tramite un collegamento rappresenta un modo pratico per rendere le risorse disponibili a terzi senza dover prima accedere a [!DNL Assets].
 
 >[!NOTE]
 >
@@ -266,7 +301,7 @@ Dall&#39;interno del [!DNL Assets] interfaccia utente in un browser, puoi esplor
 
 ### Configurazioni da utilizzare [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link semplifica la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti. Si connette [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] app desktop [!DNL Adobe InDesign], [!DNL Adobe Photoshop], e [!DNL Adobe Illustrator]. Il [!DNL Adobe Asset Link] consente ai creativi di accedere e modificare i contenuti archiviati in [!DNL Assets] senza uscire dalle app creative che sono più familiari.
+Adobe Asset Link semplifica la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti. Si connette [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] app desktop, [!DNL Adobe InDesign], [!DNL Adobe Photoshop], e [!DNL Adobe Illustrator]. Il [!DNL Adobe Asset Link] consente ai creativi di accedere e modificare i contenuti archiviati in [!DNL Assets] senza uscire dalle app creative che sono più familiari.
 
 Consulta [come configurare [!DNL Assets] per utilizzarlo con [!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html).
 
@@ -300,3 +335,4 @@ Consulta [come configurare [!DNL Assets] per utilizzarlo con [!DNL Adobe Asset L
 * [Gestire le raccolte](manage-collections.md)
 * [Importazione in blocco dei metadati](metadata-import-export.md)
 * [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
