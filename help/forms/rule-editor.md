@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 1%
@@ -18,52 +18,47 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service (componenti di base) | Questo articolo |
+| AEM as a Cloud Service (Componenti core) | [Fai clic qui](/help/forms/rule-editor-core-components.md) |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
-| AEM as a Cloud Service | Questo articolo |
-
-
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| Componente core | [Fai clic qui](/help/forms/rule-editor-core-components.md) |
-| Componente di base | Questo articolo |
 
 ## Panoramica {#overview}
 
 La funzione dell’editor di regole consente agli utenti aziendali e agli sviluppatori di Forms di scrivere regole sugli oggetti Adaptive Form. Queste regole definiscono le azioni da attivare sugli oggetti modulo in base a condizioni preimpostate, input dell&#39;utente e azioni dell&#39;utente sul modulo. Consente di semplificare ulteriormente l’esperienza di compilazione dei moduli, garantendo precisione e velocità.
 
-L’editor di regole fornisce un’interfaccia utente intuitiva e semplificata per scrivere regole. L’editor di regole offre un editor visivo per tutti gli utenti.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Alcune delle azioni chiave che è possibile eseguire sugli oggetti Modulo adattivo utilizzando le regole sono:
+L’editor di regole fornisce un’interfaccia utente intuitiva e semplificata per scrivere regole. L’editor di regole offre un editor visivo per tutti gli utenti.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Alcune delle azioni chiave che è possibile eseguire sugli oggetti modulo adattivo utilizzando le regole sono:
 
-* Mostrare o nascondere un oggetto
+* Mostra o nascondere un oggetto
 * Attivare o disattivare un oggetto
 * Impostare un valore per un oggetto
 * Convalidare il valore di un oggetto
 * Eseguire funzioni per calcolare il valore di un oggetto
-* Richiamare un servizio Form Data Model ed eseguire un&#39;operazione
+* Richiama un servizio del modello dati modulo ed esegui un’operazione
 * Impostare la proprietà di un oggetto
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 Gli utenti aggiunti al gruppo forms-power-users possono creare script e modificare quelli esistenti. Utenti in [!DNL forms-users] Il gruppo può utilizzare gli script ma non crearli o modificarli.
 
-## Differenza tra l’editor di regole nei componenti core e l’editor di regole nei componenti di base
+## Differenza tra l’editor di regole nei componenti core e nei componenti di base
 
 {{rule-editor-diff}}
 
 ## Informazioni su una regola {#understanding-a-rule}
 
-Una regola è una combinazione di azioni e condizioni. Nell’editor delle regole, le azioni includono attività quali nascondere, mostrare, abilitare, disabilitare o calcolare il valore di un oggetto in un modulo. Le condizioni sono espressioni booleane che vengono valutate eseguendo controlli e operazioni sullo stato, sul valore o sulla proprietà di un oggetto modulo. Le azioni vengono eseguite in base al valore ( `True` o `False`) restituita valutando una condizione.
+Un regola è una combinazione di azioni e condizioni. Nell’editor delle regole, le azioni includono attività quali nascondere, mostrare, abilitare, disabilitare o calcolare il valore di un oggetto in un modulo. Le condizioni sono espressioni booleane che vengono valutate eseguendo controlli e operazioni sullo stato, sul valore o sulla proprietà di un oggetto modulo. Le azioni vengono eseguite in base al valore ( `True` o `False`) restituita valutando una condizione.
 
 L’editor di regole fornisce un set di tipi di regole predefiniti, ad esempio Quando, Mostra, Nascondi, Abilita, Disabilita, Imposta valore di e Convalida, per facilitare la scrittura delle regole. Ogni tipo di regola ti consente di definire condizioni e azioni in una regola. Il documento spiega ulteriormente ogni tipo di regola nei dettagli.
 
 Una regola segue in genere uno dei seguenti costrutti:
 
-**Condizione-Azione** In questo costrutto, una regola definisce prima una condizione seguita da un’azione da attivare. Il costrutto è paragonabile all&#39;istruzione if-then nei linguaggi di programmazione.
+**Condizione-Azione** In questo costrutto, un regola definisce prima una condizione seguita da un&#39;azione di attivazione. Il costrutto è paragonabile all&#39;istruzione if-then nei linguaggi di programmazione.
 
-Nell’editor delle regole, il **Quando** tipo di regola applica il costrutto condizione-azione.
+In regola editor, il **tipo When** regola impone il costrutto condizione-azione.
 
-**Action-Condition** In questo costrutto, una regola definisce prima un’azione da attivare seguita da condizioni per la valutazione. Un’altra variante di questo costrutto è action-condition-alternate action, che definisce anche un’azione alternativa da attivare se la condizione restituisce False.
+**Azione-Condizione** In questo costrutto, un regola definisce prima un&#39;azione da attivare seguita dalle condizioni per la valutazione. Un&#39;altra variante di questo costrutto è action-condition-alternate action, che definisce anche un&#39;azione alternativa da attivare se la condizione restituisce False.
 
-I tipi di regola Mostra, Nascondi, Abilita, Disabilita, Imposta valore di e Convalida nell&#39;editor di regole applicano il costrutto regola della condizione azione. Per impostazione predefinita, l&#39;azione alternativa per Mostra è Nascondi e per Abilita è Disabilita e viceversa. Non è possibile modificare l&#39;azione alternativa predefinita.
+I tipi regola Mostra, Nascondi, Abilita, Disabilita, Imposta Valore e Convalida in regola editor applicano il costrutto regola condizione azione. Per impostazione predefinita, l&#39;azione alternativa per Mostra è Nascondi e per Abilita è Disabilita e viceversa. Non è possibile modificare l&#39;azione alternativa predefinita.
 
 >[!NOTE]
 >
@@ -114,7 +109,7 @@ L’editor di regole fornisce un set di tipi di regole predefiniti che è possib
 
 ### [!UICONTROL Quando] {#whenruletype}
 
-Il **[!UICONTROL Quando]** il tipo di regola segue **condizione-azione-azione-azione alternativa** costrutto della regola o, a volte, solo **condizione-azione** costruzione. In questo tipo di regola, specificare innanzitutto una condizione per la valutazione seguita da un&#39;azione da attivare se la condizione è soddisfatta ( `True`). Quando si utilizza il tipo When regola, è possibile utilizzare più operatori AND e OR per creare [espressioni nidificate](#nestedexpressions).
+Il **[!UICONTROL tipo Quando]** regola segue il **costrutto condizione-azione-azione** alternativa regola o, talvolta, solo il **costrutto condizione-azione** . In questo tipo di regola, specificare innanzitutto una condizione per la valutazione seguita da un&#39;azione da attivare se la condizione è soddisfatta ( `True`). Quando si utilizza il tipo When regola, è possibile utilizzare più operatori AND e OR per creare [espressioni nidificate](#nestedexpressions).
 
 Utilizzando il tipo regola Quando è possibile valutare una condizione in un oggetto modulo ed eseguire azioni su uno o più oggetti.
 
@@ -136,7 +131,7 @@ Quando si dispone di un componente con più valori, ad esempio pulsanti di scelt
 
 Ad esempio, un elenco include quattro opzioni: Rosso, Blu, Verde e Giallo. Durante la creazione della regola, le opzioni (pulsanti di scelta) vengono recuperate automaticamente e rese disponibili al creatore della regola come segue:
 
-![Opzioni per la visualizzazione di più valori](assets/multivaluefcdisplaysoptions1.png)
+![Opzioni di visualizzazione con più valori](assets/multivaluefcdisplaysoptions1.png)
 
 Durante la scrittura di una regola When, puoi attivare l&#39;azione Cancella valore di. Cancella valore dell&#39;azione cancella il valore dell&#39;oggetto specificato. L&#39;opzione Clear Value (Cancella valore) nell&#39;istruzione When consente di creare condizioni complesse con più campi.
 
@@ -148,7 +143,7 @@ Durante la scrittura di una regola When, puoi attivare l&#39;azione Cancella val
 
 **[!UICONTROL Abilita]** Attiva l&#39;oggetto specificato.
 
-**[!UICONTROL Disattiva]** Disattiva l&#39;oggetto specificato.
+**[!UICONTROL Disabilita]** Disabilita l&#39;oggetto specificato.
 
 **[!UICONTROL Richiama servizio]** Richiama un servizio configurato in un modello dati modulo (FDM). Quando scegli l’operazione Richiama servizio, viene visualizzato un campo. Quando tocca il campo, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo (FDM) sul [!DNL Experience Manager] dell&#39;istanza. Quando si sceglie un servizio FDM (Form Data Model), vengono visualizzati più campi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato. Vedi regola di esempio per richiamare i servizi del modello dati modulo.
 
@@ -204,23 +199,27 @@ La figura seguente illustra un esempio di aggiunta dinamica di caselle di contro
 
 **[!UICONTROL Rimuovi istanza]** Rimuove un&#39;istanza del pannello o della riga di tabella ripetibile specificata.
 
-**[!UICONTROL Passa ad]** altre Forms adattive, ad altre <!--Interactive Communications,--> risorse quali immagini, frammenti di documenti o a un URL esterno. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Accedi a]** Passa ad altro <!--Interactive Communications,--> Forms adattivo, altre risorse come immagini o frammenti di documento o un URL esterno. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 ### [!UICONTROL Imposta valore di] {#set-value-of}
 
 Il **[!UICONTROL Imposta valore di]** tipo di regola consente di impostare il valore di un oggetto modulo a seconda che la condizione specificata sia soddisfatta o meno. Il valore può essere impostato sul valore di un altro oggetto, una stringa letterale, un valore derivato da un&#39;espressione matematica o una funzione, un valore di una proprietà di un altro oggetto o l&#39;output di un servizio del modello di dati modulo. Analogamente, è possibile verificare la presenza di una condizione su un componente, una stringa, una proprietà o valori derivati da una funzione o un&#39;espressione matematica.
 
-Il **Imposta valore di** il tipo di regola non è disponibile per tutti gli oggetti modulo, ad esempio pannelli e pulsanti della barra degli strumenti. Una regola Set Value Of standard ha la seguente struttura:
+L&#39;opzione **Imposta Valore di regola tipo non è disponibile per tutti gli oggetti modulo, quali i pulsanti dei** pannelli e delle barre degli strumenti. Un insieme standard Valore di regola ha la seguente struttura:
 
 Impostare il valore dell&#39;oggetto A su:
 
-(stringa ABC) OR (proprietà dell&#39;oggetto X dell&#39;oggetto C) OR (valore di una funzione) OR (valore di un&#39;espressione matematica) OR (valore di output di un servizio di modello dati o di un servizio Web);
+(stringa ABC) O
+(proprietà oggetto X dell&#39;oggetto C) O
+(valore da una funzione) O
+(valore da un&#39;espressione matematica) O
+(valore di output di un servizio modello di dati o di un servizio Web);
 
 Quando (facoltativo):
 
 (Condizione 1 E Condizione 2 E Condizione 3) è VERO;
 
-Nell&#39;esempio seguente il valore nel `dependentid` campo viene preso come input e il valore del `Relation` campo viene impostato sull&#39;output dell&#39;argomento `Relation` del `getDependent` servizio Form Data Model.
+L’esempio seguente utilizza il valore in `dependentid` come input e imposta il valore del campo `Relation` campo all&#39;output del `Relation` argomento della `getDependent` Servizio modello dati modulo.
 
 ![Set-value-web-service](assets/set-value-web-service1.png)
 
@@ -362,13 +361,13 @@ La scheda Oggetti modulo mostra una vista gerarchica di tutti gli oggetti conten
 
 Gli oggetti modulo a cui sono applicate una o più regole valide sono contrassegnati da un punto verde. Se una delle regole applicate a un oggetto modulo non è valida, l&#39;oggetto modulo viene contrassegnato con un punto giallo.
 
-La scheda Funzioni include un set di funzioni incorporate, ad esempio Somma di, Min di, Max di, Media di, Numero di e Convalida modulo. È possibile utilizzare queste funzioni per calcolare i valori nei pannelli e nelle righe di tabella ripetibili e utilizzarli nelle istruzioni di azione e condizione durante la scrittura delle regole. Tuttavia, è possibile creare [anche funzioni](#custom-functions) personalizzate.
+La scheda Funzioni include un set di funzioni incorporate, ad esempio Somma di, Min di, Max di, Media di, Numero di e Convalida modulo. È possibile utilizzare queste funzioni per calcolare i valori nei pannelli e nelle righe di tabella ripetibili e utilizzarli nelle istruzioni di azione e condizione durante la scrittura delle regole. Tuttavia, puoi creare [funzioni personalizzate](#custom-functions) anche.
 
-![Le funzioni scheda](assets/functions1.png)
+![Scheda Funzioni](assets/functions1.png)
 
 >[!NOTE]
 >
->È possibile eseguire ricerca di testo su nomi e titoli Forms di oggetti e funzioni nelle schede Oggetti e Funzioni.
+>È possibile eseguire la ricerca di testo su oggetti e funzioni, nomi e titoli nelle schede Oggetti e funzioni di Forms.
 
 Nell&#39;albero sinistro degli oggetti modulo è possibile selezionare gli oggetti modulo per visualizzare le regole applicate a ciascuno degli oggetti. Non solo è possibile spostarsi tra le regole dei vari oggetti modulo, ma è anche possibile copiare e incollare le regole tra gli oggetti modulo. Per ulteriori informazioni, consulta [Regole di copia e incolla](rule-editor.md#p-copy-paste-rules-p).
 
@@ -470,13 +469,13 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
 1. Scrivere quindi una regola per calcolare l&#39;importo dell&#39;idoneità al prestito, che corrisponde al 50% dello stipendio totale, e visualizzarlo nel campo Idoneità al prestito. Per ottenere questo risultato, crea **[!UICONTROL Imposta valore di]** regole sul campo Ammissibilità al prestito.
 
-   In modalità authoring, seleziona la **[!UICONTROL Ammissibilità al prestito]** e seleziona ![edit-rules](assets/edit-rules-icon.svg). Successivo, seleziona **[!UICONTROL Crea]** per lanciare la regola editor.
+   In modalità authoring, seleziona la **[!UICONTROL Ammissibilità al prestito]** e seleziona ![edit-rules](assets/edit-rules-icon.svg). Quindi, seleziona **[!UICONTROL Crea]** per avviare l’editor di regole.
 
-1. Selezionare **[!UICONTROL Imposta Valore di]** regola dal menu a discesa regola.
+1. Seleziona **[!UICONTROL Imposta valore di]** regola dal menu a discesa regola.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Selezionare **[!UICONTROL Seleziona opzione]**, quindi Espressione **** matematica. Viene aperto un campo per scrivere espressioni matematiche.
+1. Seleziona **[!UICONTROL Seleziona opzione]** e seleziona **[!UICONTROL Espressione matematica]**. Viene aperto un campo per scrivere espressioni matematiche.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -606,7 +605,7 @@ Aggiunge informazioni sulla funzione, ad esempio l&#39;obiettivo.
    1. numero
    1. booleano
 
-  Tutti gli altri tipi di reso sono classificati in uno dei precedenti. Nessuno è non supportato. Accertati di selezionare uno dei tipi riportati sopra. I tipi restituiti non fanno distinzione tra maiuscole e minuscole.
+  Tutti gli altri tipi di reso sono classificati in una delle categorie precedenti. Nessuno non è supportato. Accertati di selezionare uno dei tipi riportati sopra. I tipi restituiti non fanno distinzione tra maiuscole e minuscole.
 
    * **Questo**
 Sintassi: `@this currentComponent`
@@ -753,11 +752,11 @@ Per modificare l’ordine di una regola, tocca ![sort-rules](assets/sort-rules.s
 
 ## Regole di copia e incolla {#copy-paste-rules}
 
-È possibile copiare e incollare un regola da un campo ad altri campi simili per risparmiare tempo.
+Per risparmiare tempo, puoi copiare e incollare una regola da un campo ad altri campi simili.
 
-Per copiare e incollare le regole, procedi come segue:
+Per copiare e incollare le regole, effettuare le seguenti operazioni:
 
-1. Selezionare l&#39;oggetto modulo da cui si desidera copiare un regola e selezionare Modifica regola](assets/edit-rules-icon.svg) nella barra degli strumenti ![del componente. Viene visualizzata l&#39;interfaccia regola editor utente con l&#39;oggetto modulo selezionato e le regole esistenti.
+1. Seleziona l’oggetto modulo da cui desideri copiare una regola, quindi nella barra degli strumenti del componente seleziona ![modifica regola](assets/edit-rules-icon.svg). Viene visualizzata l’interfaccia utente dell’editor di regole con l’oggetto modulo selezionato e le regole esistenti.
 
    ![copia regola](assets/copyrule.png)
 
