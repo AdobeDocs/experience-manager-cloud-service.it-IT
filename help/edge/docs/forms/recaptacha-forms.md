@@ -1,17 +1,17 @@
 ---
-title: Utilizzare reCAPTCHA con Edge Delivery Services per AEM Forms
+title: Utilizzare reCAPTCHA con Edge Delivery Services per AEM Forms as a Cloud Service
 description: Utilizzare il servizio reCAPTCHA di Google in un modulo EDS
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
-source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
-workflow-type: ht
-source-wordcount: '190'
-ht-degree: 100%
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 87%
 
 ---
 
 
-# Utilizzare reCAPTCHA con Edge Delivery Services per AEM Forms
+# Utilizzare reCAPTCHA con Edge Delivery Services per AEM Forms as a Cloud Service
 
 reCAPTCHA è un popolare strumento utilizzato per proteggere i siti web da attività fraudolente, spam e uso improprio. In Edge Delivery Services, il blocco modulo adattivi fornisce la capacità di aggiungere Google reCAPTCHA per distinguere tra esseri umani e bot. Questa funzione consente agli utenti di proteggere il proprio sito web da spam e uso improprio.
 Si consideri, ad esempio, un modulo “enquiry” che raccoglie dati quali le date di inizio e di fine del viaggio, il budget della camera, il costo stimato del viaggio e le informazioni sui viaggiatori. In tali casi, esiste il rischio che utenti malintenzionati sfruttino il modulo per scopi quali l’invio di e-mail di phishing o l’invio di contenuti irrilevanti o dannosi tramite spambot. L’integrazione di reCAPTCHA offre maggiore sicurezza verificando che gli invii provengano da utenti autentici, riducendo in modo efficace le voci di spam.

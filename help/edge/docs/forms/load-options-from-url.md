@@ -1,17 +1,17 @@
 ---
-title: Carica le opzioni dell’elenco a discesa dall’URL
+title: Carica opzioni elenco a discesa da un URL o da un altro foglio per Edge Delivery Services per AEM Forms as a Cloud Service
 description: Le opzioni dell’elenco a discesa sono incluse in un foglio di calcolo distinto e quindi importate nel foglio di calcolo principale tramite l’URL fornito.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 91%
 
 ---
 
 
-# Carica le opzioni dell’elenco a discesa dall’URL
+# Opzioni da un URL o da un altro foglio per Edge Delivery Services per AEM Forms as a Cloud Service
 
 I moduli spesso includono menu a discesa che gli utenti possono selezionare dalle opzioni predefinite. Queste opzioni vengono in genere definite all’interno del modulo stesso, ma la gestione di elenchi lunghi può risultare complicata. Questa guida illustra come migliorare l’authoring dei moduli caricando le opzioni a discesa da un foglio di calcolo separato tramite un URL.
 

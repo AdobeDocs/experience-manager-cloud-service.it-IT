@@ -4,10 +4,10 @@ description: Scopri come aggiungere nuove lingue per un modulo adattivo.
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 2%
+source-wordcount: '2068'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 | Componenti di base | [Fai clic qui](supporting-new-language-localization.md) |
 | Componenti core | Questo articolo |
 
-<span class="preview"> La funzione di supporto per le lingue da destra a sinistra è disponibile nel primo programma per utenti. Puoi scrivere a aem-forms-ea@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità. </span>
+<span class="preview"> La funzione di supporto per le lingue da destra a sinistra è disponibile nel primo programma per utenti. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
 AEM Forms fornisce supporto predefinito per le lingue inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR). È possibile aggiungere il supporto anche per altre lingue, come Hindi(hi_IN). È inoltre possibile presentare Forms adattivo in una lingua RTL (Right-to-Left) come l’arabo, il persiano e l’urdu aggiungendo queste lingue.
 
@@ -369,6 +369,7 @@ Questi passaggi ti guidano attraverso l’anteprima di un modulo adattivo con le
 ## Procedure consigliate per il supporto della nuova localizzazione {#best-practices}
 
 * L’Adobe consiglia di creare un progetto di traduzione dopo la creazione di un modulo adattivo. Ciò semplifica il processo di localizzazione.
+* Quando i componenti Casella numerica e Selettore data vengono convertiti in una lingua specifica, possono verificarsi problemi di formattazione. Per attenuare questo problema, è necessario **Lingua** è stata incorporata nella finestra di dialogo Configura di [Componente selettore data](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/number-input#formats-configure-tab) e [Componente casella numerica](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Gestione dei nuovi campi:
