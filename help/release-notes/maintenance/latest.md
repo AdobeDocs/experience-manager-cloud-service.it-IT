@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f52b5f763277c9288d5dd30b01cfb7a4afeddda7
+source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 43%
 
 ---
@@ -47,7 +47,7 @@ Nessuno.
 
 ### Notifica di modifica {#change-notice-16544}
 
-A partire da settembre 2024, AEM as a Cloud Service disabiliterà la serializzazione dei Resource Resolver tramite il framework Sling Model Exporter. Consulta [la documentazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter) per ulteriori dettagli.
+A partire da settembre 2024, AEM as a Cloud Service disabiliterà la serializzazione dei Resource Resolver tramite il framework Sling Model Exporter. Consulta [la documentazione](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) per ulteriori dettagli.
 
 ### Funzioni e API obsolete {#deprecated-16544}
 
