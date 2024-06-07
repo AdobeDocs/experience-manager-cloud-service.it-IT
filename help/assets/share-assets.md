@@ -4,9 +4,9 @@ description: Distribuisci le risorse digitali utilizzando metodi quali condivisi
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
+source-git-commit: ec01a1b383160014918ee8c9b81e15f0cc855d02
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1829'
 ht-degree: 3%
 
 ---
@@ -121,7 +121,7 @@ Il modello e-mail può essere personalizzato utilizzando testo normale o HTML. I
 | `${emailMessage}` | Corpo dell’e-mail |
 | `${pagePath}` | URL del collegamento condiviso |
 | `${linkExpiry}` | Data di scadenza del collegamento condiviso |
-| `${host.prefix}` | Origine del [!DNL Experience Manager] esempio `http://www.adobe.com"` |
+<!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |-->
 
 #### Esempio di modello e-mail personalizzato {#custom-email-template-example}
 
@@ -137,10 +137,10 @@ subject: ${emailSubject}
     <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
 </p>
 
-Sent from instance: ${host.prefix}
-
 </body></html>
 ```
+
+<!--Sent from instance: ${host.prefix}-->
 
 ### Scaricare le risorse utilizzando il collegamento alle risorse {#download-assets-using-asset-link}
 
