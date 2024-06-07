@@ -1,30 +1,30 @@
 ---
-title: Profili video di Dynamic Media
-description: Dynamic Media è già dotato di un profilo di codifica video adattivo predefinito. Le impostazioni in questo profilo preconfigurato sono ottimizzate per fornire ai clienti la migliore esperienza di visualizzazione possibile. Puoi anche aggiungere il ritaglio avanzato ai video.
+title: Profili video Dynamic Medie
+description: Dynamic Medie è già dotato di un profilo di codifica video adattivo predefinito. Le impostazioni in questo profilo preconfigurato sono ottimizzate per fornire ai clienti la migliore esperienza di visualizzazione possibile. Puoi anche aggiungere il ritaglio avanzato ai video.
 contentOwner: Rick Brough
-feature: Asset Management,Video Profiles,Renditions
+feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
-source-wordcount: '3716'
-ht-degree: 7%
+source-wordcount: '3744'
+ht-degree: 6%
 
 ---
 
-# Profili video di Dynamic Media{#video-profiles}
+# Profili video Dynamic Medie{#video-profiles}
 
-Dynamic Media è già dotato di un profilo di codifica video adattivo predefinito. Le impostazioni in questo profilo preconfigurato sono ottimizzate per fornire ai clienti la migliore esperienza di visualizzazione possibile. Quando codifichi i video sorgente principali utilizzando il profilo di codifica video adattiva, durante la riproduzione il lettore video regola automaticamente la qualità del flusso video in base alla velocità di connessione Internet dei clienti. Questa azione è nota come streaming bitrate adattivo.
+Dynamic Medie è già dotato di un profilo di codifica video adattivo predefinito. Le impostazioni in questo profilo preconfigurato sono ottimizzate per fornire ai clienti la migliore esperienza di visualizzazione possibile. Quando codifichi i video sorgente principali utilizzando il profilo di codifica video adattiva, durante la riproduzione il lettore video regola automaticamente la qualità del flusso video in base alla velocità di connessione Internet dei clienti. Questa azione è nota come streaming bitrate adattivo.
 
 Di seguito sono riportati altri fattori che determinano la qualità dei video:
 
 * **Risoluzione del video sorgente principale caricato**
 
-   Se il video MP4 è stato registrato a una risoluzione inferiore, ad esempio 240p o 360p, non può essere trasmesso in streaming in alta definizione.
+  Se il video MP4 è stato registrato a una risoluzione inferiore, ad esempio 240p o 360p, non può essere trasmesso in streaming in alta definizione.
 
 * **Dimensioni lettore video**
 
-   Per impostazione predefinita, la &quot;Larghezza&quot; nel profilo di codifica video adattiva è impostata su &quot;Automatico&quot;. Anche in questo caso, durante la riproduzione, viene utilizzata la qualità migliore in base alle dimensioni del lettore.
+  Per impostazione predefinita, la &quot;Larghezza&quot; nel profilo di codifica video adattiva è impostata su &quot;Automatico&quot;. Anche in questo caso, durante la riproduzione, viene utilizzata la qualità migliore in base alle dimensioni del lettore.
 
 Consulta [Tecniche consigliate per la codifica video](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -33,7 +33,7 @@ Vedi anche [Best practice per organizzare le risorse digitali per l’utilizzo d
 
 >[!NOTE]
 >
->Per generare i metadati di un video e le miniature delle immagini video associate, il video stesso deve seguire il processo di codifica in Dynamic Media. In Adobe Experience Manager, il **[!UICONTROL Codifica video Dynamic Media]** se hai attivato Dynamic Media e hai impostato Cloud Services video, workflow codifica video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Consulta [Monitorare la codifica video e l’avanzamento della pubblicazione in YouTube](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Se hai attivato Dynamic Media e configurato Cloud Services video, il **[!UICONTROL Codifica video Dynamic Media]** il flusso di lavoro viene applicato automaticamente al caricamento di un video. Se non utilizzi Dynamic Media, il **[!UICONTROL Aggiorna risorsa DAM]** il flusso di lavoro ha effetto.)
+>Per generare i metadati di un video e le miniature delle immagini video associate, il video stesso deve seguire il processo di codifica in Dynamic Medie. In Adobe Experience Manager, il **[!UICONTROL Codifica video Dynamic Medie]** se hai attivato Dynamic Medie e hai impostato Cloud Service video, workflow codifica video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Consulta [Monitorare la codifica video e l’avanzamento della pubblicazione in YouTube](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Se hai attivato Dynamic Medie e configurato Cloud Service video, il **[!UICONTROL Codifica video Dynamic Medie]** il flusso di lavoro viene applicato automaticamente al caricamento di un video. Se non utilizzi Dynamic Medie, il **[!UICONTROL Aggiorna risorsa DAM]** il flusso di lavoro ha effetto.)
 >
 >I metadati sono utili quando cerchi risorse. Le miniature sono immagini video statiche generate durante la codifica. Sono richieste dall’Experience Manager e vengono utilizzate nell’interfaccia utente per identificare visivamente i video nelle viste Schede, Risultati ricerca e Elenco risorse. Puoi visualizzare le miniature generate quando selezioni l’icona Copie trasformate (una palette per pittori) di un video codificato.
 
@@ -53,7 +53,7 @@ La tabella seguente identifica le best practice per la codifica di profili per l
    <td><strong>Codec formato video</strong></td>
    <td><strong>Dimensioni video - Larghezza (px)</strong></td>
    <td><strong>Dimensioni video - Altezza (px)</strong></td>
-   <td><strong>Mantieni proporzioni?</strong></td>
+   <td><strong>Mantenere le proporzioni?</strong></td>
    <td><strong>Bitrate video (Kbps)</strong></td>
    <td><strong>Frame Rate Video (Fps)</strong></td>
    <td><strong>Codec audio</strong></td>
@@ -126,7 +126,7 @@ Vedi anche [Ritaglio avanzato per immagini](image-profiles.md).
 
 ## Creare un profilo video per lo streaming con bitrate adattivo {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-Dynamic Media è già dotato di un profilo di codifica video adattivo predefinito, un gruppo di impostazioni di caricamento video per MP4 H.264 ottimizzate per una migliore esperienza di visualizzazione. Puoi usare questo profilo quando carichi i video.
+Dynamic Medie è già dotato di un profilo di codifica video adattivo predefinito, un gruppo di impostazioni di caricamento video per MP4 H.264 ottimizzate per una migliore esperienza di visualizzazione. Puoi usare questo profilo quando carichi i video.
 
 Tuttavia, se questo profilo predefinito non soddisfa le tue esigenze, puoi scegliere di creare un tuo profilo di codifica video adattivo. Come best practice, quando utilizzi l’impostazione **[!UICONTROL Codifica per streaming adattivo]**, tutti i predefiniti di codifica aggiunti al profilo vengono convalidati. Questa funzionalità garantisce che tutti i video abbiano le stesse proporzioni. Inoltre, i video codificati vengono trattati come set multibitrate per lo streaming.
 
@@ -247,8 +247,8 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
 
 **Per utilizzare parametri di codifica video personalizzati:**
 
-1. Seleziona il logo di Experience Manager, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
-1. Dalla pagina CRXDE Lite, nel pannello Esplora a sinistra, passa a:
+1. Seleziona il logo di Experience Manager, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Liti]**.
+1. Dalla pagina CRXDE Liti, nel pannello Esplora a sinistra, passa a:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
 
@@ -305,13 +305,13 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
    * Ripeti i passaggi 3 e 4 per aggiungere un altro parametro al profilo di codifica video.
    * Nell’angolo in alto a sinistra della pagina, seleziona **[!UICONTROL Salva tutto]**.
 
-1. Nell&#39;angolo superiore sinistro della pagina CRXDE Lite, seleziona la **[!UICONTROL Torna alla pagina principale]** per tornare all&#39;Experience Manager.
+1. Nell&#39;angolo superiore sinistro della pagina CRXDE Liti, seleziona la **[!UICONTROL Torna alla pagina principale]** per tornare all&#39;Experience Manager.
 
 ### Modificare un profilo video {#editing-a-video-encoding-profile}
 
 È possibile modificare qualsiasi profilo video creato per aggiungere, modificare o eliminare predefiniti video all’interno di tale profilo.
 
-Per impostazione predefinita, non è possibile modificare il predefinito **[!UICONTROL Codifica video adattiva]** profilo fornito con Dynamic Media. È invece possibile copiare facilmente il profilo e salvarlo con un nuovo nome. Potete quindi modificare i predefiniti desiderati nel profilo copiato.
+Per impostazione predefinita, non è possibile modificare il predefinito **[!UICONTROL Codifica video adattiva]** profilo fornito con Dynamic Medie. È invece possibile copiare facilmente il profilo e salvarlo con un nuovo nome. Potete quindi modificare i predefiniti desiderati nel profilo copiato.
 
 Vedi anche [Tecniche consigliate per la codifica video](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -323,7 +323,7 @@ Per definire parametri di elaborazione avanzati per altri tipi di risorse, consu
 1. Nella pagina Profili video, seleziona un nome di profilo video.
 1. Sulla barra degli strumenti, seleziona **[!UICONTROL Modifica]**.
 1. Nella pagina Profilo di codifica video, modifica il nome e la descrizione, come desiderato.
-1. Come best practice, accertati che la casella di controllo **[!UICONTROL Codifica per streaming adattivo]** sia selezionata.
+1. Come best practice, assicurati che **[!UICONTROL Codifica per streaming adattivo]** è selezionata.
 Per una descrizione dello streaming con bitrate adattivo, seleziona l’icona delle informazioni. Se si sta modificando un profilo video progressivo, non selezionare questa casella di controllo.
 1. Nell’intestazione Predefiniti di codifica video, aggiungi, modifica o elimina i predefiniti di codifica video che compongono il profilo.
 
@@ -339,7 +339,7 @@ Per una descrizione dello streaming con bitrate adattivo, seleziona l’icona de
 1. Nella pagina Profilo di codifica video, inserisci un nuovo nome per il profilo.
 1. Come best practice, accertati che la casella di controllo **[!UICONTROL Codifica per streaming adattivo]** sia selezionata. Per una descrizione dello streaming con bitrate adattivo, seleziona l’icona delle informazioni. Se copi un profilo video progressivo, non selezionare la casella di controllo.
 
-   In modalità Dynamic Media - Ibrido, se un predefinito video WebM fa parte del profilo video, **[!UICONTROL Codifica per streaming adattivo]** non è possibile perché tutti i predefiniti devono essere MP4.
+   In modalità Dynamic Medie - Ibrido, se un predefinito video WebM fa parte del profilo video, **[!UICONTROL Codifica per streaming adattivo]** non è possibile perché tutti i predefiniti devono essere MP4.
 1. Nell’intestazione Predefiniti di codifica video, aggiungi, modifica o elimina i predefiniti di codifica video che compongono il profilo.
 
    Seleziona l’icona delle informazioni accanto a ciascuna opzione nelle schede Base e Avanzate per le impostazioni e le descrizioni consigliate.
@@ -399,9 +399,9 @@ Vedi anche [Rielaborazione delle risorse in una cartella](/help/assets/dynamic-m
 
 **Per applicare un profilo video a livello globale:**
 
-* Passa a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`. Aggiungi la proprietà `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e seleziona **[!UICONTROL Salva tutto]**.
+* Passa a CRXDE Liti al seguente nodo: `/content/dam/jcr:content`. Aggiungi la proprietà `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e seleziona **[!UICONTROL Salva tutto]**.
 
-   ![chlimage_1-519](assets/chlimage_1-519.png)
+  ![chlimage_1-519](assets/chlimage_1-519.png)
 * È possibile [monitorare l’avanzamento di un processo di elaborazione del profilo video](#monitoring-the-progress-of-an-encoding-job).
 
 ## Monitorare l’avanzamento di un processo di elaborazione di profili video {#monitoring-the-progress-of-an-encoding-job}
@@ -414,7 +414,7 @@ Viene visualizzato un indicatore di elaborazione (o barra di avanzamento) che co
 
 Quando rimuovi un profilo video da una cartella, tutte le sottocartelle ereditano automaticamente la rimozione del profilo dalla relativa cartella principale. Tuttavia, qualsiasi elaborazione dei file che si è verificata all’interno delle cartelle rimane intatta.
 
-È possibile rimuovere un profilo video da una cartella direttamente dal **[!UICONTROL Strumenti]** o se ti trovi nella cartella, dal menu **[!UICONTROL Impostazioni cartella]**. Questa sezione descrive come rimuovere i profili video dalle cartelle con entrambe le soluzioni.
+È possibile rimuovere un profilo video da una cartella dall’interno di **[!UICONTROL Strumenti]** o se ti trovi nella cartella, dal menu **[!UICONTROL Impostazioni cartella]**. Questa sezione descrive come rimuovere i profili video dalle cartelle con entrambe le soluzioni.
 
 ### Rimuovere un profilo video dalle cartelle tramite l’interfaccia utente Profili {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 

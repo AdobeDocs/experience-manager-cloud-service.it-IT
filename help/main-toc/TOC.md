@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
 workflow-type: tm+mt
-source-wordcount: '5030'
+source-wordcount: '5034'
 ht-degree: 99%
 
 ---
@@ -507,6 +507,7 @@ ht-degree: 99%
       + Percorso Dynamic Media: nozioni di base {#dm-journey}
          + [Parte I: Cos’è Dynamic Media - Casi di utilizzo - Flusso di una risorsa attraverso il sistema](/help/assets/dynamic-media/dm-journey-part1.md)
          + [Parte II: Anatomia di un URL Dynamic Media - Nozioni di base dei predefiniti per immagini - Set di immagini, set 360 gradi e set di file multimediali diversi](/help/assets/dynamic-media/dm-journey-part2.md)
+         + [Best practice per Dynamic Medie](/help/assets/dynamic-media/dm-best-practices.md)
       + [Newsletter di Dynamic Media curata da Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Impostazione di Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Utilizzo di Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -1032,7 +1033,7 @@ ht-degree: 99%
          + [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [Verifica dello stato del record DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-         + [Certificati DV (Domain Validated)](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
+         + [Certificati convalidati dal dominio (DV)](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
       + Elenchi indirizzi IP consentiti {#ip-allow-lists}
          + [Introduzione](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Aggiunta di un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
