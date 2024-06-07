@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
+source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 92%
+source-wordcount: '400'
+ht-degree: 88%
 
 ---
 
@@ -20,6 +20,11 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 16544, rilasciata pubblicamente il 4 giugno 2024. La versione di manutenzione precedente era 16461.
 
 Con la versione di attivazione funzioni 2024.6.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+
+>[!CAUTION]
+>
+>Utilizza l’SDK a cui si fa riferimento qui in, poiché è stata confermata una regressione con l’SDK precedente:
+>`AEM SDK v2024.06.16647.20240607T103723Z-240500`
 
 ### Miglioramenti {#enhancements-16544}
 
