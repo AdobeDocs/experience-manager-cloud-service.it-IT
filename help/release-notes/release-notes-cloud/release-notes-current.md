@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
+source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 92%
@@ -62,7 +62,7 @@ Le azioni e i flussi di lavoro per la traduzione dei contenuti ora attivano gli 
 
 #### Servizio dati di Real Use Monitoring (RUM) {#real-use-monitoring}
 
-* **[Il servizio dati Real Use Monitoring (RUM) è ora disponibile](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** e consente la raccolta di dati lato client per AEM as a Cloud Service.
+* **[Il servizio dati Real Use Monitoring (RUM) è ora disponibile](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)** e consente la raccolta di dati lato client per AEM as a Cloud Service.
 Il servizio Real Use Monitoring, la raccolta lato client, offre un riflesso più preciso delle interazioni, garantendo una misura affidabile del coinvolgimento del sito web. Consente ai clienti di ottenere insight avanzati sul traffico e sulle prestazioni delle pagine. Permette di saperne di più sulle prestazioni delle pagine e di ottenere insight utili a migliorarle.
 
 #### Authoring AEM per Edge Delivery Services {#edge-enhancements}
