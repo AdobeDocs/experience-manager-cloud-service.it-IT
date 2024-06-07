@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
 workflow-type: tm+mt
 source-wordcount: '400'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 
@@ -52,7 +52,7 @@ Nessuno.
 
 ### Notifica di modifica {#change-notice-16544}
 
-A partire da settembre 2024, AEM as a Cloud Service disabiliterà la serializzazione dei Resource Resolver tramite il framework Sling Model Exporter. Consulta [la documentazione](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) per ulteriori dettagli.
+A partire da settembre 2024, AEM as a Cloud Service disabiliterà la serializzazione dei Risolutori risorse tramite il framework Sling Model Exporter. Per ulteriori dettagli, consulta la [documentazione](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md).
 
 ### Funzioni e API obsolete {#deprecated-16544}
 
