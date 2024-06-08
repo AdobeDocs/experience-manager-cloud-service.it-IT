@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Video,Renditions,Configuration,Asset Management,Best Practices
+feature: Video,Renditions, Configuration, Asset Management, Best Practices
 role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: a92d55a4b9368d92d41d0156d8aa2b24f619fc54
+source-git-commit: 62af768370ee0affa4003a7ae0c520ad1a065e8c
 workflow-type: tm+mt
-source-wordcount: '3614'
+source-wordcount: '3619'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,9 @@ Funzione proattiva che consente di scegliere le risorse da sincronizzare con Dyn
 * **Pubblicazione selettiva:**
 Dopo aver sincronizzato le risorse, la pubblicazione selettiva consente di controllare quali risorse sono visibili ai clienti. Grazie a questa funzionalità è possibile determinare quali risorse approvate vengono effettivamente consegnate tramite i canali, in modo che i clienti possano visualizzare solo i contenuti migliori e più rilevanti.
 
-Queste due best practice consentono di migliorare il controllo, la governance e la produttività dei contenuti rich media. Vuoi saperne di più? Vai a [Configurare la pubblicazione selettiva a livello di cartella in Dynamic Medie](/help/assets/dynamic-media/selective-publishing.md).
+Queste due best practice consentono di migliorare il controllo, la governance e la produttività dei contenuti rich media.
+
+Vuoi saperne di più? Vai a [Configurare la pubblicazione selettiva a livello di cartella in Dynamic Medie](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## Preparare le risorse per la consegna
@@ -130,18 +132,18 @@ Vuoi saperne di più? Osserva [Utilizzo di Smart Crop con AEM Assets Dynamic Med
 
 Utilizza regolarmente le seguenti raccomandazioni per garantire che le immagini contribuiscano in modo efficace alla strategia SEO complessiva.
 
-* **Nomi file immagine significativi:**
+* **Nomi di file immagine significativi:**
 Utilizza nomi di file descrittivi che riflettono il contenuto dell’immagine. Ad esempio:
    * utilizza `myCompany-Silver-Wrist-Watch`
    * *evitare* `myCompany_Silver_Wrist_Watch` o `myCompanySilverWristWatch`
 
-  In questo modo i motori di ricerca possono comprendere il contesto dell’immagine e migliorare la SEO (Search Engine Optimization). Inoltre, tieni presente che Google preferisce i trattini ai caratteri di sottolineatura o alle parole concatenate per la separazione delle parole.
+  In questo modo i motori di ricerca possono comprendere il contesto dell’immagine e migliorare la SEO (Search Engine Optimization). Google preferisce i trattini ai caratteri di sottolineatura o agli spazi nel nome di un file. Inoltre, evita di concatenare le parole in un nome di file.
 * **Dominio personalizzato:**
 Implementa un dominio personalizzato che includa la tua azienda o il tuo nome del brand per rafforzare il riconoscimento e la fiducia nel brand. Ad esempio:
 
    * utilizza `http://images.mycompany.com/is/image/companyname/`
    * *evitare* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
-* **Struttura delle cartelle compatibile con SEO:**
+* **Struttura di cartelle compatibile con SEO:**
 Organizza le immagini in una struttura di cartelle che includa il nome o il marchio dell’azienda per una migliore indicizzazione, come `http://images.mycompany.com/is/image/companyname/`.
 * **Set di regole di Dynamic Medie:**
 Scopri come trasformare gli URL in modo condizionale in base a vari fattori, migliorando la SEO e l’esperienza utente.
@@ -167,7 +169,7 @@ Dynamic Medie offre una suite di comandi per migliorare le immagini e creare eff
 | --- | --- |
 | **Carica e pubblica l’immagine originale** | · Iniziare caricando l&#39;immagine originale su Dynamic Medie.<br>· Assicurati che sia pubblicato e accessibile tramite un URL.<br>· In questo esempio, viene caricata su Dynamic Medie un&#39;immagine d&#39;archivio di un orologio con sfondo bianco (chiamiamola &quot;Immagine X&quot;).<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage) |
 | **Creare una maschera** | · Sviluppare una maschera che definisca il soggetto (l&#39;area in cui si desidera applicare gli effetti) e lo sfondo (l&#39;area da modificare).<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps)<br>· Le maschere sono in genere immagini in scala di grigio, dove il bianco rappresenta il soggetto e il nero rappresenta lo sfondo. Puoi creare maschere utilizzando strumenti come Adobe Photoshop.<br>Vuoi saperne di più? Vai a [Creazione e modifica di una maschera rapida in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>· Per &quot;Image X&quot;, creare una maschera che delinei con precisione il soggetto che si desidera migliorare. Ad esempio, una persona, un oggetto e così via. |
-| **Applicazione dei comandi URL di Dynamic Medie per gli effetti** | Dopo aver inserito la maschera, usate i comandi URL per applicare effetti come ombre esterne o cambiate il colore di sfondo in &quot;Immagine X&quot;. Di seguito sono riportati due esempi:<br><br> · **Effetto ombra esterna:**<br> Per aggiungere un effetto ombra esterna lungo il limite dell&#39;oggetto, modificare l&#39;URL nel modo seguente:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>In questo URL, il `$shadow$` il parametro crea l&#39;effetto ombreggiatura e `color=0,0,0` imposta il colore dell&#39;ombreggiatura su nero.<br>· **Modifica colore di sfondo:**<br> Per modificare il colore di sfondo, utilizza l’URL con un valore di colore di sfondo diverso:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> In questo esempio, `color=255,255,255` imposta il colore di sfondo su bianco. Modifica lo sfondo con un colore specifico per un impatto visivo. |
+| **Applicare i comandi URL di Dynamic Medie per gli effetti** | Dopo aver inserito la maschera, usate i comandi URL per applicare effetti come ombre esterne o cambiate il colore di sfondo in &quot;Immagine X&quot;. Di seguito sono riportati due esempi:<br><br> · **Effetto Ombra esterna:**<br> Per aggiungere un effetto ombra esterna lungo il limite dell&#39;oggetto, modificare l&#39;URL nel modo seguente:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>In questo URL, il `$shadow$` il parametro crea l&#39;effetto ombreggiatura e `color=0,0,0` imposta il colore dell&#39;ombreggiatura su nero.<br>· **Modifica colore di sfondo:**<br> Per modificare il colore di sfondo, utilizza l’URL con un valore di colore di sfondo diverso:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> In questo esempio, `color=255,255,0` imposta il colore di sfondo su giallo. Modifica lo sfondo con un colore specifico per un impatto visivo. |
 
 #### Aggiungi un bordo immagine
 
@@ -188,20 +190,20 @@ Se desideri sovrapporre un logo o un’icona a un’immagine esistente, Dynamic 
 | Passaggio | Cosa fare |
 | --- | --- |
 | **Carica e pubblica l&#39;immagine di base** | Innanzitutto, carica e pubblica l&#39;immagine di base sulla quale vuoi sovrapporre il logo o l&#39;icona. È possibile utilizzare qualsiasi immagine come base.<br>Ad esempio, questa è un’immagine di base:<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage). |
-| **Carica e pubblica l&#39;immagine del logo o dell&#39;icona** | Quindi, carica e pubblica l’immagine che desideri sovrapporre all’immagine di base. L&#39;immagine deve essere un file PNG trasparente con il logo o l&#39;icona che si desidera sovrapporre.<br>Ecco l&#39;immagine PNG trasparente di un oggetto stella con effetti di trasparenza che sta per essere sovrapposta:<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
+| **Carica e pubblica il logo o l’immagine dell’icona** | Quindi, carica e pubblica l’immagine che desideri sovrapporre all’immagine di base. L&#39;immagine deve essere un file PNG trasparente con il logo o l&#39;icona che si desidera sovrapporre.<br>Ecco l&#39;immagine PNG trasparente di un oggetto stella con effetti di trasparenza che sta per essere sovrapposta:<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
 | **Applicare l’URL di Dynamic Medie** | Ora crea un URL Dynamic Medie che combina l’immagine di base con l’immagine del logo o dell’icona. Per ottenere questo effetto, puoi utilizzare i comandi URL.<br>La struttura dell’URL si presenta così:<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>dove<br>· `hotspotRetailBaseImage` è l&#39;immagine di base.<br>· `starxp` è l’immagine del logo/icona.<br>· `layer=1` specifica che il logo o l&#39;icona devono essere sovrapposti all&#39;immagine di base.<br>· `scale=1.25` regola le dimensioni del logo o dell&#39;icona.<br>· `posN=0.33,-.25` determina la posizione del logo/icona rispetto all&#39;immagine di base.<br>· `fmt=png` verifica che l&#39;output sia in formato PNG. |
 
-Per saperne di più Vai a [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) per ulteriori dettagli su `src` e altri comandi di Dynamic Medie.
+Per saperne di più Vai a [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) per ulteriori dettagli su `src` e altri comandi URL di Dynamic Medie.
 
 
-#### Sovrapposizione testo promozionale
+#### Sovrapposizione del testo promozionale
 
 Di seguito sono riportati i passaggi per sovrapporre un messaggio di testo promozionale su un’immagine utilizzando HTML e CSS.
 
 | Passaggio | Cosa fare |
 | --- | --- |
 | **Carica e pubblica l&#39;immagine di base** | Innanzitutto, carica e pubblica l’immagine di base sulla quale vuoi sovrapporre il testo. Puoi usare qualsiasi immagine ti piaccia. Ad esempio, ecco un esempio di immagine di base:<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa)<br> |
-| **Applica operatori di testo Dynamic Medie** | Utilizzando Dynamic Medie, potete applicare operatori di testo per sovrapporre il testo dinamico direttamente sull&#39;immagine. L’URL di esempio seguente dimostra questa capacità:<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&amp;posN=-0.3,-0.455&amp;text={\rtf1\ansi{\fonttbl{\f0+Arial;}}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}}&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&amp;posN=-0.3,-0.455&amp;text={\rtf1\ansi{\fonttbl{\f0+Arial;}}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}}&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600) |
+| **Applicare gli operatori di testo di Dynamic Medie** | Utilizzando Dynamic Medie, potete applicare operatori di testo per sovrapporre il testo dinamico direttamente sull&#39;immagine. L’URL di esempio seguente dimostra questa capacità:<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&amp;posN=-0.3,-0.455&amp;text={\rtf1\ansi{\fonttbl{\f0+Arial;}}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}}&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&amp;posN=-0.3,-0.455&amp;text={\rtf1\ansi{\fonttbl{\f0+Arial;}}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}}&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600) |
 
 #### Ridimensionamento e ritaglio per vari casi d’uso
 
@@ -218,7 +220,7 @@ Il ridimensionamento può influire sulla qualità delle immagini. Evitare un aum
 
 ##### Ritaglio e ridimensionamento
 
-Il ridimensionamento e il ritaglio sono tecniche di Dynamic Medie che consentono di trasformare le immagini in base ai vari casi d’uso, sia che si tratti della creazione di miniature, banner o immagini di visualizzazione del prodotto.
+Il ritaglio e il ridimensionamento sono tecniche di Dynamic Medie che consentono di trasformare le immagini in base a diversi casi d’uso, sia che si tratti della creazione di miniature, di immagini di visualizzazione del prodotto o di banner.
 
 * **Ritaglio:**
 Comporta la rimozione di parte di un&#39;immagine per modificarne la composizione e l&#39;inquadratura. Non modifica le dimensioni complessive, ma si concentra su un’area specifica.
@@ -232,10 +234,10 @@ Esaminiamo un caso d’uso che coinvolge la seguente immagine del salotto:
 * **Miniatura (200 px x 200 px)**
 Una versione più piccola adatta per il caricamento o la visualizzazione rapidi.
   [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&amp;hei=200&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&amp;hei=200&amp;fit=crop)
-* **Miniatura con ritaglio (200 px x 200 px):**
+* **Miniatura con ritaglio (200 px x 200 px)**
 Ritagliato per concentrarsi sull&#39;area del divano.
   [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop)
-* **Immagine di visualizzazione del prodotto (800 px x 600 px):**
+* **Immagine del display del prodotto (800 px x 600 px):**
 Ritagliato e ridimensionato per esporre il divano.
   [https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop)
 * **Banner (1720 px x 820 px)**
@@ -272,7 +274,7 @@ Vuoi saperne di più? Vai a [Video](https://experienceleague.adobe.com/en/docs/e
 
 Per garantire la qualità e il coinvolgimento migliori per i tuoi video, puoi implementare una combinazione delle seguenti strategie per le best practice:
 
-* **Utilizza il Visualizzatore video integrato di HTML5:**
+* **Utilizza il visualizzatore video integrato di HTML5:**
 I predefiniti per visualizzatore video di Dynamic Medie HTML5 sono lettori video affidabili. Utilizzali per evitare i problemi più comuni associati alla riproduzione di video HTML5 e ai dispositivi mobili.
 Questi predefiniti risolvono problematiche quali la distribuzione di streaming con bitrate adattivo e la portata limitata del browser desktop.
 Vuoi saperne di più? Vai a [Best practice: utilizzo del visualizzatore video di HTML 5](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
@@ -346,5 +348,5 @@ Per garantire il miglior formato ottimizzato per il web, è possibile fare affid
 
 Affidandoti a Smart Imaging, puoi garantire che le immagini vengano distribuite nel modo più efficiente possibile, su misura per l’ambiente di navigazione di ogni utente. Questo approccio semplifica il processo e può migliorare le prestazioni in termini di tempi di caricamento delle immagini e di esperienza d’uso complessiva.
 
-Vuoi saperne di più? Vai a [Imaging avanzato](/help/assets/dynamic-media/imaging-faq.md)
+Vuoi saperne di più? Vai a [Imaging avanzato](/help/assets/dynamic-media/imaging-faq.md).
 
