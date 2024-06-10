@@ -425,7 +425,7 @@ ht-degree: 99%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-   + [Monitoraggio dell’uso reale per AEM as a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
+   + [Monitoraggio degli utenti reali per AEM as a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
    + [Modifiche di rilievo apportate a [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
@@ -978,7 +978,7 @@ ht-degree: 99%
          + [Creazione di programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Modifica dei programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Ambienti in sospensione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-         + [Supporto Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery-services.md)
+         + [Supporto di Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery-services.md)
       + Creazione di un progetto di applicazione AEM {#create-application-project}
          + [Creazione guidata progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configurazione del progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -987,14 +987,14 @@ ht-degree: 99%
       + Gestione del codice {#managing-code}
          + [Gestione delle versioni dei progetti Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gestione degli archivi in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Aggiunta di archivi di Adobi](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Aggiunta di archivi di Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Aggiunta di archivi privati](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [Accesso agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Supporto per i moduli Git secondari](/help/implementing/cloud-manager/managing-code/git-submodules.md)
+         + [Supporto per i sottomoduli Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utilizzo di Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Utilizzo di più archivi](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [Configurazione del team di sviluppo Enterprise](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [Configurazione controllo GitHub](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [Configurazione di controllo GitHub](/help/implementing/cloud-manager/managing-code/github-check-config.md)
          + [Annotazioni di controllo GitHub](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md)
       + Pipeline CI-CD di Cloud Manager {#cicd-pipelines}
