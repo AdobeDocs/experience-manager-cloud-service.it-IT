@@ -4,9 +4,9 @@ description: Utilizzare il servizio reCAPTCHA di Google in un modulo EDS
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 

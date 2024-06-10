@@ -1,12 +1,12 @@
 ---
-title: Carica opzioni elenco a discesa da un URL o da un altro foglio per Edge Delivery Services per AEM Forms as a Cloud Service
+title: Caricare le opzioni elenco a discesa da un URL o da un altro foglio per Edge Delivery Services per AEM Forms as a Cloud Service
 description: Le opzioni dell’elenco a discesa sono incluse in un foglio di calcolo distinto e quindi importate nel foglio di calcolo principale tramite l’URL fornito.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '469'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
