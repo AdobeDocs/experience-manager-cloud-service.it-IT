@@ -2,10 +2,10 @@
 title: Integrazione nativa di AEM Assets con Adobi Express
 description: L’integrazione nativa di AEM Assets con Adobi Express consente di accedere direttamente alle risorse memorizzate in AEM Assets dall’interfaccia utente di Adobi Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 4e33782dd8db0c1185b9a7733e7bcccfbcf3c3ba
+source-git-commit: d7e144d7f7722d4de96b3f85d44432863b350f92
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 9%
+source-wordcount: '635'
+ht-degree: 8%
 
 ---
 
@@ -50,18 +50,19 @@ Dopo aver incorporato le modifiche appropriate nell’area di lavoro di Express,
    ![Salvare le risorse in AEM](assets/adobe-express-share.png)
 
 2. Dalla sezione Archiviazione nel riquadro di destra, selezionare **AEM Assets**. In Adobe Express viene visualizzata la finestra di dialogo di caricamento.
-3. Seleziona una delle seguenti opzioni **Pagina corrente** o **Tutte le pagine** salvataggio. Selezione **Pagina corrente** salva il file nella cartella di destinazione, tuttavia, selezionando **Tutte le pagine** crea una nuova cartella nella destinazione per tutti i file non PDF e li salva come file separati mentre i file PDF vengono salvati come un singolo file nella cartella di destinazione.
-4. Specifica un nome e un formato per la risorsa. Puoi salvare il contenuto dell’area di lavoro nei formati PNG, JPEG, PDF, MP4, MP4+PNG o MP4+JPEG. Il formato viene regolato automaticamente in base alle risorse.
-5. Fai clic sull’icona della cartella in **Cartella di destinazione** per selezionare una posizione e salvare le risorse.
+3. Seleziona una **Pagina corrente** o **Tutte le pagine**. Specifica un nome e un formato per le risorse da esportare. Puoi esportare i contenuti dell’area di lavoro nei formati PNG, JPEG, PDF, MP4, MP4+PNG o MP4+JPEG. Il formato viene regolato automaticamente in base alle risorse presenti nelle pagine dell’area di lavoro.
+Selezione **Pagina corrente** salva la risorsa nella pagina corrente nella cartella di destinazione. Se si seleziona **Tutte le pagine** e il formato di esportazione non è PDF, tutte le pagine canvas vengono salvate come file separati in una nuova cartella all’interno della cartella di destinazione. Se il formato di esportazione è PDF, tutte le pagine dell&#39;area di lavoro vengono salvate come un singolo file PDF nella cartella di destinazione.
+
+4. Fai clic sull’icona della cartella in **Cartella di destinazione** per selezionare una posizione e salvare le risorse.
 
    ![Salvare le risorse in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-6. Facoltativo: puoi aggiungere i metadati della campagna per il caricamento utilizzando **Nome progetto o campagna** campo. Puoi usare un nome esistente o crearne uno nuovo. Puoi definire più nomi di progetto o campagna per il caricamento. Per registrare il nome, digitalo e premi Invio.
+5. Facoltativo: puoi aggiungere i metadati della campagna per il caricamento utilizzando **Nome progetto o campagna** campo. Puoi usare un nome esistente o crearne uno nuovo. Puoi definire più nomi di progetto o campagna per il caricamento. Per registrare il nome, digitalo e premi Invio.
 Come best practice, in Adobe è consigliabile specificare i valori negli altri campi e creare un’esperienza di ricerca avanzata per le risorse caricate.
 
-7. Analogamente, definisci i valori per **[!UICONTROL Parole chiave]** e **[!UICONTROL Canali]** campi.
+6. Analogamente, definisci i valori per **[!UICONTROL Parole chiave]** e **[!UICONTROL Canali]** campi.
 
-8. Clic **[!UICONTROL Carica]** per caricare le risorse su AEM Assets.
+7. Clic **[!UICONTROL Carica]** per caricare le risorse su AEM Assets.
 
 ## Limitazioni {#limitations}
 
