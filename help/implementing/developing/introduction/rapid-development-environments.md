@@ -4,10 +4,10 @@ description: Scopri come utilizzare gli ambienti di sviluppo rapido per le itera
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1c157af3f7ed4ab3ae4a67d7db200e772cf8b565
 workflow-type: tm+mt
-source-wordcount: '4294'
-ht-degree: 3%
+source-wordcount: '4312'
+ht-degree: 4%
 
 ---
 
@@ -412,11 +412,6 @@ L’esempio di codice riportato sopra illustra il comportamento se un bundle non
 
 ### Distribuzione di codice front-end basato su temi e modelli del sito {#deploying-themes-to-rde}
 
->[!NOTE]
->
-> Questa funzione non è ancora disponibile. Verrà introdotto a giugno.
->
-
 Gli RDE supportano il codice front-end basato su [temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelli di sito](/help/sites-cloud/administering/site-creation/site-templates.md). Con gli RDE, questa operazione viene eseguita utilizzando una direttiva della riga di comando per distribuire pacchetti front-end, anziché Cloud Manager [Pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) utilizzato per altri tipi di ambiente.
 
 Come sempre, crea il pacchetto front-end utilizzando npm:
@@ -460,6 +455,10 @@ Logs:
 >La denominazione dei file nel pacchetto front-end deve rispettare le seguenti convenzioni di denominazione:
 > * cartella &quot;dist&quot;, per la cartella del pacchetto di output npm build
 > * file &quot;package.json&quot;, per il pacchetto dipendenze npm
+
+>[!TIP]
+>
+> Se hai creato il tuo RDE prima di aprile 2023 e riscontri l’errore &quot;UNEXPECTED_API_ERROR&quot; quando tenti di utilizzare la funzione front-end per la prima volta, prova a eliminare l’ambiente e a crearlo di nuovo.
 
 ### Controllo dello stato della RDE {#checking-rde-status}
 
@@ -533,7 +532,7 @@ Consulta `aio aem:rde:logs --help` per l&#39;insieme completo di opzioni della r
 
 Le funzioni includono:
 
-* dichiarazione dei livelli di registro per pacchetto o livello di classe
+* dichiarazione dei livelli di registro a livello di pacchetto o classe
 * personalizzazione del formato di output del registro
 * fino a quattro configurazioni di registro, ciascuna nel proprio terminale
 * evidenziazione di registri specifici
