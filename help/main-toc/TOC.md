@@ -7,9 +7,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5034'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -448,7 +448,7 @@ ht-degree: 99%
       + [Abilita tag avanzati per immagini](/help/assets/smart-tags.md)
       + [Assegnare tag avanzati alle risorse video](/help/assets/smart-tags-video-assets.md)
       + [Organizzare le risorse](/help/assets/organize-assets.md)
-      + [Utilizzare  [!DNL Adobe Stock]  risorse](/help/assets/aem-assets-adobe-stock.md)
+      + [Utilizzare [!DNL Adobe Stock] risorse](/help/assets/aem-assets-adobe-stock.md)
       + [Gestire le raccolte](/help/assets/manage-collections.md)
       + [Panoramica sui metadati](/help/assets/manage-metadata.md)
       + [Integrare con [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
@@ -507,7 +507,7 @@ ht-degree: 99%
       + Percorso Dynamic Media: nozioni di base {#dm-journey}
          + [Parte I: Cos’è Dynamic Media - Casi di utilizzo - Flusso di una risorsa attraverso il sistema](/help/assets/dynamic-media/dm-journey-part1.md)
          + [Parte II: Anatomia di un URL Dynamic Media - Nozioni di base dei predefiniti per immagini - Set di immagini, set 360 gradi e set di file multimediali diversi](/help/assets/dynamic-media/dm-journey-part2.md)
-         + [Best practice per Dynamic Medie](/help/assets/dynamic-media/dm-best-practices.md)
+         + [Best practice per Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md)
       + [Newsletter di Dynamic Media curata da Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Impostazione di Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Utilizzo di Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -586,7 +586,7 @@ ht-degree: 99%
       + [Configurare la mappatura dei metadati delle risorse](/help/assets/configure-asset-metadata-mapping.md)
       + [Installa [!DNL enhanced connector] per [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Rimuovere le dipendenze esterne per le installazioni esistenti](/help/assets/remove-external-dependencies.md)
-      + [Configura  [!DNL enhanced connector]  per  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+      + [Configura [!DNL enhanced connector] per [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Aggiorna [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Integrazione con Adobe Express {#integration-adobe-express}
