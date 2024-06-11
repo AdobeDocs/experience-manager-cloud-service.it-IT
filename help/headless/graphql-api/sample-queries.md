@@ -3,10 +3,10 @@ title: 'Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query'
 description: Scopri come utilizzare GraphQL con AEM in modo da distribuire contenuti headless esplorando contenuti e query di esempio.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
+source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 99%
+source-wordcount: '1826'
+ht-degree: 95%
 
 ---
 
@@ -43,9 +43,9 @@ Approfondisci queste query di esempio per le illustrazioni di creazione query, i
 >
 >A seconda dell’istanza, è possibile accedere direttamente all’[Interfaccia GraphiQL inclusa con API GraphQL AEM](/help/headless/graphql-api/graphiql-ide.md) per l’invio e la verifica delle query.
 >
->Puoi accedere all’editor delle query da:
+>Puoi accedere all’editor di query da:
 >
->* **Strumenti** > **Generale** > **Editor query di GraphQL**
+>* **Strumenti** -> **Generale** -> **Editor query GraphQL**
 >* direttamente; ad esempio, `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
@@ -1794,6 +1794,20 @@ Questa query rappresenta un’interrogazione:
   }
 } 
 ```
+
+## Query di esempio per la distribuzione di risorse DAM e Dynamic Medie {#sample-queries-delivery-DAM-DM}
+
+Per la consegna di immagini ottimizzate per il web (di risorse DAM):
+
+* [Query di esempio per la consegna di immagini ottimizzate per il web con parametri completi](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
+
+* [Query di esempio per la consegna di immagini ottimizzate per il web con un singolo parametro specificato](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
+
+Per la consegna dell’URL a una risorsa Dynamic Medie
+
+* Consulta [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - Riferimento immagine](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+* Consulta [Query di esempio per la consegna di risorse Dynamic Medie tramite URL: più riferimenti](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## Struttura di esempio dei frammenti di contenuto (utilizzata con GraphQL) {#content-fragment-structure-graphql}
 
