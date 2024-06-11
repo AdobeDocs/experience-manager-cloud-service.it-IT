@@ -4,10 +4,10 @@ description: Scopri come inoltrare i registri a Splunk e ad altri fornitori di r
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0e166e8549febcf5939e4e6025519d8387231880
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 3%
+source-wordcount: '1163'
+ht-degree: 1%
 
 ---
 
@@ -27,6 +27,8 @@ I clienti che dispongono di una licenza per un fornitore di accesso o che ospita
 
 L’inoltro dei registri viene configurato in modo self-service dichiarando una configurazione in Git e distribuendola tramite la pipeline di configurazione di Cloud Manager per i tipi di ambiente di sviluppo, staging e produzione nei programmi di produzione (non sandbox).
 
+È disponibile un’opzione per instradare i registri di AEM e Apache/Dispatcher tramite l’infrastruttura di rete avanzata dell’AEM, ad esempio l’IP in uscita dedicato.
+
 La larghezza di banda di rete associata ai registri inviati alla destinazione di registrazione è considerata parte dell&#39;utilizzo di I/O di rete dell&#39;organizzazione.
 
 
@@ -36,6 +38,7 @@ Questo articolo è organizzato nel modo seguente:
 
 * Configurazione: comune per tutte le destinazioni di registrazione
 * Registrazione delle configurazioni di destinazione: ogni destinazione ha un formato leggermente diverso
+* Formati delle voci di registro: informazioni sui formati delle voci di registro
 * Rete avanzata: invio dei registri di AEM e Apache/Dispatcher tramite un’uscita dedicata o tramite una VPN
 
 
@@ -48,7 +51,7 @@ Questo articolo è organizzato nel modo seguente:
         logForwarding.yaml
    ```
 
-1. logForwarding.yaml deve contenere metadati e una configurazione simile al seguente formato (ad esempio, viene utilizzato Splunk).
+1. `logForwarding.yaml` deve contenere metadati e una configurazione simile al seguente formato (ad esempio, utilizziamo Splunk).
 
    ```
    kind: "LogForwarding"
@@ -64,7 +67,7 @@ Questo articolo è organizzato nel modo seguente:
          index: "AEMaaCS"
    ```
 
-   Il **tipo** Il parametro deve essere impostato su LogForwarding e la versione deve essere impostata sulla versione dello schema, ovvero 1.
+   Il **tipo** il parametro deve essere impostato su `LogForwarding` la versione deve essere impostata sulla versione dello schema, ovvero 1.
 
    Token nella configurazione (ad esempio `${{SPLUNK_TOKEN}}`) rappresentano segreti che non devono essere memorizzati in Git. Dichiarali invece come Cloud Manager  [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md) di tipo **segreto**. Assicurati di selezionare **Tutti** come valore a discesa per il campo Service Applied (Servizio applicato), in modo che i registri possano essere inoltrati ai livelli di authoring, pubblicazione e anteprima.
 
@@ -134,14 +137,53 @@ data:
 
 Utilizzare un token SAS per l&#39;autenticazione. Deve essere creato dalla pagina della firma di accesso condiviso, anziché dalla pagina del token di accesso condiviso, e deve essere configurato con le seguenti impostazioni:
 
-* Servizi consentiti: è necessario selezionare il BLOB
-* Risorse consentite: è necessario selezionare l’oggetto
-* Autorizzazioni consentite: è necessario selezionare Scrivi, Aggiungi o Crea
+* Servizi consentiti: è necessario selezionare BLOB.
+* Risorse consentite: è necessario selezionare l’oggetto.
+* Autorizzazioni consentite: è necessario selezionare Scrivi, Aggiungi o Crea.
 * Una data/ora di inizio e di scadenza valida.
 
 Ecco una schermata di esempio della configurazione del token SAS:
 
 ![Configurazione token SAS BLOB di Azure](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
+#### Registri CDN archiviazione BLOB di Azure {#azureblob-cdn}
+
+Ciascuno dei server di registrazione distribuiti a livello globale produrrà un nuovo file ogni pochi secondi, sotto `aemcdn` cartella. Una volta creato, il file non verrà più aggiunto a. Il formato del nome file è YYY-MM-DDThh:mm:ss.sss-uniqueid.log Ad esempio, 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
+
+Ad esempio, a un certo punto del tempo:
+
+```
+aemcdn/
+   2024-03-04T10:00:00.000-abc.log
+   2024-03-04T10:00:00.000-def.log
+```
+
+E poi 30 secondi dopo:
+
+```
+aemcdn/
+   2024-03-04T10:00:00.000-abc.log
+   2024-03-04T10:00:00.000-def.log
+   2024-03-04T10:00:30.000-ghi.log
+   2024-03-04T10:00:30.000-jkl.log
+   2024-03-04T10:00:30.000-mno.log
+```
+
+Ogni file contiene più voci di registro json, ciascuna su una riga separata. I formati delle voci di registro sono descritti in [articolo di registrazione](/help/implementing/developing/introduction/logging.md), e ogni voce di registro include anche le proprietà aggiuntive menzionate nella [Formati voce registro](#log-format) sezione successiva.
+
+#### Altri registri di archiviazione BLOB di Azure {#azureblob-other}
+
+I registri diversi dai registri CDN vengono visualizzati sotto una cartella con la seguente convenzione di denominazione:
+
+* aemaccess
+* aemerror
+* aemdispatcher
+* httpdaccess
+* httpderror
+
+In ogni cartella verrà creato un singolo file che verrà aggiunto a. I clienti sono responsabili dell’elaborazione e della gestione di questo file, in modo che non aumenti troppo.
+
+Vedere i formati delle voci di registro in [articolo di registrazione](/help/implementing/developing/introduction/logging.md). Le voci del registro includeranno anche le proprietà aggiuntive menzionate nella [Formati voce registro](#log-formats) sezione successiva.
 
 
 ### Datadog {#datadog}
@@ -202,6 +244,24 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
+#### Registri CDN HTTPS {#https-cdn}
+
+Le richieste web (POST) verranno inviate in modo continuo, con un payload json che è un array di voci di registro, con il formato di voce di registro descritto in [articolo di registrazione](/help/implementing/developing/introduction/logging.md#cdn-log). Proprietà aggiuntive sono menzionate nella [Formati voce registro](#log-formats) sezione successiva.
+
+È inoltre presente una proprietà denominata `sourcetype`, impostato sul valore `aemcdn`.
+
+#### Altri registri HTTPS {#https-other}
+
+Per ogni voce di registro verrà inviata una richiesta Web separata (POST) con i formati di voce di registro descritti in [articolo di registrazione](/help/implementing/developing/introduction/logging.md). Proprietà aggiuntive sono menzionate nella [Formati voce registro](#log-format) sezione successiva.
+
+È inoltre presente una proprietà denominata `sourcetype`, impostato su uno dei seguenti valori:
+
+* aemaccess
+* aemerror
+* aemdispatcher
+* httpdaccess
+* httpderror
+
 ### Splunk {#splunk}
 
 ```
@@ -237,9 +297,38 @@ data:
    ```   
 -->
 
+## Formati voce registro {#log-formats}
+
+Consulta la sezione Generale [articolo di registrazione](/help/implementing/developing/introduction/logging.md) per il formato di ciascun tipo di registro (registro di Dispatcher, registro CDN, ecc.).
+
+Poiché i registri provenienti da più programmi e ambienti possono essere inoltrati alla stessa destinazione di registrazione, oltre all’output descritto nell’articolo sulla registrazione, in ogni voce di registro verranno incluse le seguenti proprietà:
+
+* aem_env_id
+* aem_env_type
+* aem_program_id
+* aem_tier
+
+Ad esempio, le proprietà potrebbero avere i seguenti valori:
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+```
+
 ## Rete avanzata {#advanced-networking}
 
-Se hai dei requisiti organizzativi per bloccare il traffico verso la destinazione di registrazione, puoi configurare l’inoltro dei registri in modo che venga eseguito [rete avanzata](/help/security/configuring-advanced-networking.md). Vedere i modelli per i tre tipi di rete avanzati riportati di seguito, che utilizzano un `port` insieme al parametro `host` parametro.
+>[!NOTE]
+>
+>Questa funzione non è ancora pronta per essere utilizzata dai primi.
+
+
+Alcune organizzazioni scelgono di limitare il traffico che può essere ricevuto dalle destinazioni di registrazione.
+
+Per il registro CDN, puoi inserire gli indirizzi IP nell’elenco Consentiti, come descritto in [questo articolo](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se l’elenco di indirizzi IP condivisi è troppo grande, puoi inviare il traffico a un archivio BLOB di Azure (non Adobe) in cui è possibile scrivere la logica per inviare i registri da un IP dedicato alla destinazione finale.
+
+Per altri registri, puoi configurare l’inoltro dei registri in modo che venga eseguito [rete avanzata](/help/security/configuring-advanced-networking.md). Vedere i modelli per i tre tipi di rete avanzati riportati di seguito, che utilizzano un `port` insieme al parametro `host` parametro.
 
 ### Uscita flessibile della porta {#flex-port}
 
@@ -249,7 +338,7 @@ Se il traffico di registro si dirige verso una porta diversa da 443 (ad esempio,
 {
     "portForwards": [
         {
-            "name": "mylogging.service.logger.com",
+            "name": "splunk-host.example.com",
             "portDest": 8443, # something other than 443
             "portOrig": 30443
         }    
@@ -265,7 +354,7 @@ version: "1"
 data:
   splunk:
     default:
-      host: "proxy.tunnel"
+      host: "${{AEM_PROXY_HOST}}"
       token: "${{SomeToken}}"
       port: 30443
       index: "index_name"
@@ -273,14 +362,15 @@ data:
 
 ### IP in uscita dedicato {#dedicated-egress}
 
+
 Se il traffico di registro deve provenire da un IP in uscita dedicato, configura una rete avanzata come segue:
 
 ```
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443, 
             "portOrig": 30443
         }    
     ]
@@ -290,15 +380,25 @@ Se il traffico di registro deve provenire da un IP in uscita dedicato, configura
 e configura il file yaml come segue:
 
 ```
+      
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "proxy.tunnel"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443    
 ```
 
 ### VPN {#vpn}
@@ -309,24 +409,29 @@ Se il traffico di registro deve passare attraverso una VPN, configura la rete av
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443,
             "portOrig": 30443
         }    
     ]
 }
-```
 
-e configura il file yaml come segue:
-
-```
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "mylogging.service.com"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443     
 ```
