@@ -2,10 +2,10 @@
 title: Gestione degli archivi in Cloud Manager
 description: Scopri come creare, visualizzare ed eliminare gli archivi Git in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 395179c078d87a393adbc4072a9f4e5b5ca3de51
+source-git-commit: e467c8058531441524fedd37e14b82b7fb255c69
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 30%
+source-wordcount: '624'
+ht-degree: 29%
 
 ---
 
@@ -38,7 +38,7 @@ Il **Archivi** fornisce dettagli sugli archivi:
 
 * Tipo di archivio
    * **Adobe** indica archivi gestiti da Adobe
-   * **Privato** indica gli archivi GitHub che gestisci
+   * **GitHub** indica gli archivi GitHub privati che gestisci
 * Quando è stato creato
 * Pipeline associate all’archivio
 
@@ -75,7 +75,14 @@ Quando visualizzi gli archivi in **Archivi** , puoi visualizzare i dettagli su c
 
 Il **Informazioni archivio** Viene visualizzata la finestra con i dettagli. Per ulteriori informazioni sull’accesso alle informazioni dell’archivio, consulta il documento [Accesso alle informazioni dell’archivio.](accessing-repos.md)
 
-## Controlla rami {#check-branches}
+## Controlla rami/Crea progetto {#check-branches}
+
+Il **Controlla rami/Crea progetto** action esegue due funzioni a seconda dello stato dell’archivio.
+
+* Se l’archivio è stato appena creato, l’azione crea un progetto di esempio basato su [l’archetipo del progetto AEM.](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview)
+* Se nell’archivio è già stato creato il progetto di esempio, viene verificato lo stato dell’archivio e dei relativi rami e vengono generati rapporti se il progetto di esempio esiste già.
+
+![Azione Controlla rami](assets/check-branches.png)
 
 ## Copia URL archivio {#copy-url}
 
