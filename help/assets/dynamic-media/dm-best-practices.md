@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: e2d9823575f75e4cd38a61a35569cbbe14b30fc6
+source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -91,6 +91,8 @@ Vuoi saperne di più? Vai a [Organizzare le risorse come raccolte](/help/assets/
 * **Organizzare le risorse utilizzando i profili:**
 Un profilo di elaborazione automatizza la gestione delle risorse in cartelle specifiche, semplificando l’organizzazione. La standardizzazione di metadati, nomi di file e strutture di cartelle consente un’applicazione coerente e precisa di questi profili man mano che la raccolta di risorse digitali si espande.
 Vuoi saperne di più? Vai a [Organizzare le risorse utilizzando i profili](/help/assets/organize-assets.md#organize-to-use-profiles).
+
+
 
 ### Ottimizzare la qualità delle immagini
 
