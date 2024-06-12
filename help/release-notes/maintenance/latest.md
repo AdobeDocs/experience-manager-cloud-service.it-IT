@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '422'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi riso
 
 ### Problemi noti {#known-issues-16544}
 
-* GRANITE-52573: richieste contenenti una doppia barra `//` vengono rifiutate con il codice di stato 400. Questo comportamento verrà ripristinato in una versione di manutenzione successiva.
+* GRANITE-52573: le richieste contenenti una doppia barra `//` vengono rifiutate con il codice di stato 400. Questo comportamento verrà ripristinato in una versione di manutenzione successiva.
 
 ### Notifica di modifica {#change-notice-16544}
 
