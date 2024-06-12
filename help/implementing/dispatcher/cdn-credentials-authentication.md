@@ -1,15 +1,16 @@
 ---
-title: Configurazione delle credenziali e dell’autenticazione CDN
+title: Configurazione delle credenziali CDN e dell’autenticazione
 description: Scopri come configurare le credenziali e l’autenticazione CDN dichiarando le regole in un file di configurazione che viene quindi distribuito utilizzando la pipeline di configurazione di Cloud Manager.
 feature: Dispatcher
-source-git-commit: ee993798739232da794dbf7ff0a643ca93effa7d
+exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
+source-git-commit: 7a53f936aacfb3e5aa431f26e5346c1809f9c76f
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# Configurazione delle credenziali e dell’autenticazione CDN {#cdn-credentials-authentication}
+# Configurazione delle credenziali CDN e dell’autenticazione {#cdn-credentials-authentication}
 
 >[!NOTE]
 >Questa funzione non è ancora disponibile al pubblico. Per partecipare al programma di adozione anticipata, invia un messaggio e-mail a `aemcs-cdn-config-adopter@adobe.com`.
@@ -71,7 +72,7 @@ La sintassi per il `X-AEM-Edge-Key` il valore include:
 
 ## Rimuovi token API {#purge-API-token}
 
-I clienti possono eliminare la cache CDN utilizzando un token API di rimozione dichiarato. Il token viene dichiarato con la sintassi seguente.  Consulta la [Configurazione comune](#common-setup) per scoprire come distribuirlo.
+I clienti possono [eliminare la cache CDN](/help/implementing/dispatcher/cdn-cache-purge.md) utilizzando un token API di rimozione dichiarato. Il token viene dichiarato con la sintassi seguente.  Consulta la [Configurazione comune](#common-setup) per scoprire come distribuirlo.
 
 ```
 kind: "CDN"
