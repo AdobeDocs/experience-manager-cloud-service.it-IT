@@ -1,10 +1,10 @@
 ---
 title: Supporto per Edge Delivery Services in Cloud Manager
 description: Scopri come distribuire i progetti Cloud Manager utilizzando i Edge Delivery Services.
-source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 14%
+ht-degree: 28%
 
 ---
 
@@ -21,7 +21,7 @@ Scopri come distribuire i progetti Cloud Manager utilizzando i Edge Delivery Ser
 
 Edge Delivery Services è un set di sevizi componibili che consente un elevato grado di flessibilità per quanto riguarda la creazione di contenuti sul sito web. Questo consente di:
 
-* Crea siti veloci con un punteggio Lighthouse perfetto e monitora continuamente le prestazioni tramite il monitoraggio degli utenti reali (RUM, Real User Monitoring).
+* Crea siti veloci con un punteggio Lighthouse perfetto e monitora continuamente le prestazioni tramite il monitoraggio dell&#39;uso reale (RUM).
 * Aumentare l’efficienza di authoring disaccoppiando le origini di contenuto.
 
 Puoi utilizzare sia la gestione dei contenuti AEM che l’authoring basato su AEM utilizzando l’editor universale, nonché l’authoring basato su documenti.

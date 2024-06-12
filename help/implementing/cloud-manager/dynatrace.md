@@ -5,7 +5,7 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe consente di utilizzare Dynatrace per monitorare l’AEM as a Cloud Service come parte dell’implementazione aziendale, identificare la causa di eventuali problemi e intervenire per risolverli in base alle esigenze.
 
-Con Dynatrace, puoi ottenere un&#39;osservabilità perfetta per tutte le applicazioni AEM. Dynatrace fornisce una visibilità completa sull’esperienza dell’utente finale rilevando automaticamente le applicazioni AEM e visualizzandone le dipendenze dal sito web al contenitore al servizio cloud. Abbinate a tracce end-to-end su tutti i livelli e al monitoraggio degli utenti reali, migliorate le vostre esperienze AEM basate sui contenuti, senza intervalli o blind spot. Se si verificano anomalie, Dynatrace le diagnostica in tempo reale con il motore di intelligenza artificiale Davis e individua la causa principale del codice danneggiato prima che i clienti siano interessati, riducendo in tal modo il tempo medio di riparazione.
+Con Dynatrace, puoi ottenere un&#39;osservabilità perfetta per tutte le applicazioni AEM. Dynatrace fornisce una visibilità completa sull’esperienza dell’utente finale rilevando automaticamente le applicazioni AEM e visualizzandone le dipendenze dal sito web al contenitore al servizio cloud. Abbinate a traccie end-to-end su tutti i livelli e al monitoraggio Real Use, le esperienze basate sui contenuti AEM possono raggiungere nuovi livelli senza spazi vuoti o punti ciechi. Se si verificano anomalie, Dynatrace le diagnostica in tempo reale con il motore di intelligenza artificiale Davis e individua la causa principale del codice danneggiato prima che i clienti siano interessati, riducendo in tal modo il tempo medio di riparazione.
 
 Per ulteriori informazioni su Dynatrace, consulta [Integrazione di Adobe AEM Cloud Service](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
 
