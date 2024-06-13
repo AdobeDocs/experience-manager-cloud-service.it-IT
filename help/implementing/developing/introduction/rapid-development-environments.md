@@ -4,9 +4,9 @@ description: Scopri come utilizzare gli ambienti di sviluppo rapido per le itera
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c3d16e82702efd73accd1fffdfc4957ceb4509ec
+source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4244'
 ht-degree: 4%
 
 ---
@@ -472,11 +472,6 @@ Per ulteriori informazioni e dimostrazioni, consulta il video tutorial [come uti
 
 ## Registri {#rde-logging}
 
->[!NOTE]
->
-> Questa funzione non è ancora disponibile. Verrà introdotto a giugno.
-> 
-
 Analogamente ad altri tipi di ambiente, i livelli di registro possono essere impostati modificando le configurazioni OSGi. Tuttavia, come descritto in precedenza, il modello di distribuzione per gli RDE prevede una riga di comando anziché una distribuzione di Cloud Manager. Controlla la [documentazione di registrazione](/help/implementing/developing/introduction/logging.md) per ulteriori informazioni su come visualizzare, scaricare e interpretare i registri.
 
 RDE CLI dispone inoltre di un proprio comando log che può essere utilizzato per configurare rapidamente le classi e i pacchetti da registrare e a quale livello di log. Queste configurazioni possono essere visualizzate come temporanee, in quanto non modificano le proprietà OSGI nel controllo della versione. Questa funzione si concentra sulla suddivisione dei registri in tempo reale, anziché cercare registri di un passato remoto.
@@ -484,6 +479,14 @@ RDE CLI dispone inoltre di un proprio comando log che può essere utilizzato per
 L’esempio seguente illustra come visualizzare il livello di authoring, con un pacchetto impostato su un livello di registro di debug e due pacchetti (separati da spazi) impostati su un livello di debug di informazioni. Output che include un **auth** pacchetto è evidenziato.
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+>[!TIP]
+>
+>Se viene visualizzato l&#39;errore `RDECLI:UNEXPECTED_API_ERROR` durante la riproduzione con i comandi dei registri per il servizio di authoring, reimposta l’ambiente e riprova. Questo errore verrà generato se l’ultima operazione di ripristino è stata eseguita prima della fine di maggio 2024.
+>
+```
+>aio aem:rde:reset
+>```
 
 Consulta `aio aem:rde:logs --help` per l&#39;insieme completo di opzioni della riga di comando.
 
@@ -704,7 +707,7 @@ La maggior parte dei comandi supporta il ```--json``` flag che sopprime l’outp
 ```
 </details>
 
-### Eliminare {#delete}
+### Elimina {#delete}
 
 <details>
   <summary>Espandi per visualizzare gli esempi di eliminazione</summary>
