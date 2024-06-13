@@ -4,9 +4,9 @@ description: Scopri come inoltrare i registri a Splunk e ad altri fornitori di r
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0e166e8549febcf5939e4e6025519d8387231880
+source-git-commit: e007f2e3713d334787446305872020367169e6a2
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1209'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 >
 >Questa funzione non è ancora stata rilasciata e alcune destinazioni di registrazione potrebbero non essere disponibili al momento del rilascio. Nel frattempo, puoi aprire un ticket di supporto per inoltrare i registri a **Splunk**, come descritto nella [articolo di registrazione](/help/implementing/developing/introduction/logging.md).
 
-I clienti che dispongono di una licenza per un fornitore di accesso o che ospitano un prodotto di accesso possono inoltrare i registri AEM, Apache/Dispatcher e CDN alle relative destinazioni di accesso. AEM as a Cloud Service supporta le seguenti destinazioni di registrazione:
+I clienti che dispongono di una licenza per un fornitore di servizi di registrazione o che ospitano un prodotto di registrazione possono inoltrare i registri AEM (incluso Apache/Dispatcher) e i registri CDN alle destinazioni di registrazione associate. AEM as a Cloud Service supporta le seguenti destinazioni di registrazione:
 
 * Archiviazione BLOB di Azure
 * DataDog
@@ -71,7 +71,7 @@ Questo articolo è organizzato nel modo seguente:
 
    Token nella configurazione (ad esempio `${{SPLUNK_TOKEN}}`) rappresentano segreti che non devono essere memorizzati in Git. Dichiarali invece come Cloud Manager  [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md) di tipo **segreto**. Assicurati di selezionare **Tutti** come valore a discesa per il campo Service Applied (Servizio applicato), in modo che i registri possano essere inoltrati ai livelli di authoring, pubblicazione e anteprima.
 
-   È possibile impostare valori diversi tra i registri CDN e tutto il resto (registri AEM e Apache), includendo un **cdn** e/o **aem** blocco dopo il **predefinito** , in cui le proprietà possono ignorare quelle definite nel **predefinito** blocco; è necessaria solo la proprietà abilitata. Un possibile caso di utilizzo potrebbe essere l’utilizzo di un indice Splunk diverso per i registri CDN, come illustrato nell’esempio seguente.
+   È possibile impostare valori diversi per i registri CDN e per i registri AEM (incluso Apache/Dispatcher), includendo **cdn** e/o **aem** blocco dopo il **predefinito** , in cui le proprietà possono ignorare quelle definite nel **predefinito** blocco; è necessaria solo la proprietà abilitata. Un possibile caso di utilizzo potrebbe essere l’utilizzo di un indice Splunk diverso per i registri CDN, come illustrato nell’esempio seguente.
 
    ```
       kind: "LogForwarding"
@@ -91,7 +91,7 @@ Questo articolo è organizzato nel modo seguente:
             index: "AEMaaCS_CDN"   
    ```
 
-   Un altro scenario consiste nel disabilitare l’inoltro dei registri CDN o di tutto il resto (registri AEM e Apache). Ad esempio, per inoltrare solo i registri CDN, puoi configurare quanto segue:
+   Un altro scenario consiste nel disabilitare l’inoltro dei registri CDN o dei registri AEM (incluso Apache/Dispatcher). Ad esempio, per inoltrare solo i registri CDN, puoi configurare quanto segue:
 
    ```
       kind: "LogForwarding"
@@ -171,9 +171,9 @@ aemcdn/
 
 Ogni file contiene più voci di registro json, ciascuna su una riga separata. I formati delle voci di registro sono descritti in [articolo di registrazione](/help/implementing/developing/introduction/logging.md), e ogni voce di registro include anche le proprietà aggiuntive menzionate nella [Formati voce registro](#log-format) sezione successiva.
 
-#### Altri registri di archiviazione BLOB di Azure {#azureblob-other}
+#### Registri AEM archiviazione BLOB di Azure {#azureblob-aem}
 
-I registri diversi dai registri CDN vengono visualizzati sotto una cartella con la seguente convenzione di denominazione:
+I registri AEM (incluso Apache/Dispatcher) vengono visualizzati sotto una cartella con la seguente convenzione di denominazione:
 
 * aemaccess
 * aemerror
@@ -250,9 +250,14 @@ Le richieste web (POST) verranno inviate in modo continuo, con un payload json c
 
 È inoltre presente una proprietà denominata `sourcetype`, impostato sul valore `aemcdn`.
 
-#### Altri registri HTTPS {#https-other}
+>[!NOTE]
+>
+> Prima di inviare la prima voce di registro CDN, il server HTTP deve completare correttamente una richiesta una tantum: una richiesta inviata al percorso ``wellknownpath`` deve rispondere con ``*``.
 
-Per ogni voce di registro verrà inviata una richiesta Web separata (POST) con i formati di voce di registro descritti in [articolo di registrazione](/help/implementing/developing/introduction/logging.md). Proprietà aggiuntive sono menzionate nella [Formati voce registro](#log-format) sezione successiva.
+
+#### Registri AEM HTTPS {#https-aem}
+
+Per i registri AEM (inclusi apache/dispacher), le richieste web (POST) verranno inviate in modo continuo, con un payload json che è un array di voci di registro, con i vari formati di voce di registro come descritto in [articolo di registrazione](/help/implementing/developing/introduction/logging.md). Proprietà aggiuntive sono menzionate nella [Formati voce registro](#log-format) sezione successiva.
 
 È inoltre presente una proprietà denominata `sourcetype`, impostato su uno dei seguenti valori:
 
@@ -299,7 +304,7 @@ data:
 
 ## Formati voce registro {#log-formats}
 
-Consulta la sezione Generale [articolo di registrazione](/help/implementing/developing/introduction/logging.md) per il formato di ciascun tipo di registro (registro di Dispatcher, registro CDN, ecc.).
+Consulta la sezione Generale [articolo di registrazione](/help/implementing/developing/introduction/logging.md) per il formato di ciascun tipo di registro (registri CDN e registri AEM, compresi Apache/Dispatcher).
 
 Poiché i registri provenienti da più programmi e ambienti possono essere inoltrati alla stessa destinazione di registrazione, oltre all’output descritto nell’articolo sulla registrazione, in ogni voce di registro verranno incluse le seguenti proprietà:
 
@@ -328,7 +333,7 @@ Alcune organizzazioni scelgono di limitare il traffico che può essere ricevuto 
 
 Per il registro CDN, puoi inserire gli indirizzi IP nell’elenco Consentiti, come descritto in [questo articolo](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se l’elenco di indirizzi IP condivisi è troppo grande, puoi inviare il traffico a un archivio BLOB di Azure (non Adobe) in cui è possibile scrivere la logica per inviare i registri da un IP dedicato alla destinazione finale.
 
-Per altri registri, puoi configurare l’inoltro dei registri in modo che venga eseguito [rete avanzata](/help/security/configuring-advanced-networking.md). Vedere i modelli per i tre tipi di rete avanzati riportati di seguito, che utilizzano un `port` insieme al parametro `host` parametro.
+Per i registri AEM (incluso Apache/Dispatcher), puoi configurare l’inoltro dei registri in modo che venga eseguito [rete avanzata](/help/security/configuring-advanced-networking.md). Vedere i modelli per i tre tipi di rete avanzati riportati di seguito, che utilizzano un `port` insieme al parametro `host` parametro.
 
 ### Uscita flessibile della porta {#flex-port}
 
