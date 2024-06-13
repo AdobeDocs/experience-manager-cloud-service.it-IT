@@ -4,10 +4,10 @@ description: Scopri come creare blocchi dotati di strumenti per l’utilizzo con
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '1297'
-ht-degree: 100%
+source-git-commit: 72949b36e7e7f8689365e7cb76a8c491edf23825
+workflow-type: tm+mt
+source-wordcount: '1375'
+ht-degree: 94%
 
 ---
 
@@ -53,75 +53,99 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 1. Modifica il file `component-definition.json` nella directory principle del progetto e aggiungi la seguente definizione per il nuovo blocco citazione e salva il file.
 
-   ```json
-   {
-     "title": "Quote",
-     "id": "quote",
-     "plugins": {
-       "xwalk": {
-         "page": {
-           "resourceType": "core/franklin/components/block/v1/block",
-           "template": {
-             "name": "Quote",
-             "model": "quote",
-             "quote": "<p>Think, McFly! Think!</p>",
-             "author": "Biff Tannen"
-           }
-         }
-       }
-     }
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Modifica del file component-definitions.json per definire il blocco citazione](assets/create-block/component-definitions.png)
+>[!TAB Esempio JSON]
+
+```json
+{
+  "title": "Quote",
+  "id": "quote",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "Quote",
+          "model": "quote",
+          "quote": "<p>Think, McFly! Think!</p>",
+          "author": "Biff Tannen"
+        }
+      }
+    }
+  }
+}
+```
+
+>[!TAB Schermata]
+
+![Modifica del file component-definitions.json per definire il blocco citazione](assets/create-block/component-definitions.png)
+
+>[!ENDTABS]
 
 1. Modifica il file `component-models.json` nella directory principale del progetto e aggiungi la seguente [definizione del modello](/help/implementing/universal-editor/field-types.md#model-structure) per il nuovo blocco citazione e salva il file.
 
    * Consulta il documento [Modellazione dei contenuti per l’authoring di AEM con progetti Edge Delivery Services](/help/edge/aem-authoring/content-modeling.md) per ulteriori informazioni su ciò che è importante considerare durante la creazione di modelli di contenuto.
 
-   ```json
-   {
-     "id": "quote",
-     "fields": [
-        {
-          "component": "text-area",
-          "name": "quote",
-          "value": "",
-          "label": "Quote",
-          "valueType": "string"
-        },
-        {
-          "component": "text-input",
-          "valueType": "string",
-          "name": "author",
-          "label": "Author",
-          "value": ""
-        }
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Modifica del file component-models.json per definire il modello del blocco citazione](assets/create-block/component-models.png)
+>[!TAB Esempio JSON]
+
+```json
+{
+  "id": "quote",
+  "fields": [
+     {
+       "component": "text-area",
+       "name": "quote",
+       "value": "",
+       "label": "Quote",
+       "valueType": "string"
+     },
+     {
+       "component": "text-input",
+       "valueType": "string",
+       "name": "author",
+       "label": "Author",
+       "value": ""
+     }
+   ]
+}
+```
+
+>[!TAB Schermata]
+
+![Modifica del file component-models.json per definire il modello del blocco citazione](assets/create-block/component-models.png)
+
+>[!ENDTABS]
 
 1. Modifica il file `component-filters.json` nella directory principale del progetto e aggiungi il blocco citazione alla [definizione di filtro](/help/implementing/universal-editor/customizing.md#filtering-components) per consentire l’aggiunta del blocco a qualsiasi sezione e salvare il file.
 
-   ```json
-   {
-     "id": "section",
-     "components": [
-       "text",
-       "image",
-       "button",
-       "title",
-       "hero",
-       "cards",
-       "columns",
-       "quote"
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Modifica del file component-filters.json per definire i filtri per il blocco citazione](assets/create-block/component-filters.png)
+>[!TAB Esempio JSON]
+
+```json
+{
+  "id": "section",
+  "components": [
+    "text",
+    "image",
+    "button",
+    "title",
+    "hero",
+    "cards",
+    "columns",
+    "quote"
+   ]
+}
+```
+
+>[!TAB Schermata]
+
+![Modifica del file component-filters.json per definire i filtri per il blocco citazione](assets/create-block/component-filters.png)
+
+>[!ENDTABS]
 
 1. Utilizzando Git, conferma queste modifiche nel ramo `main`.
 
@@ -174,55 +198,70 @@ Ora che disponi di un blocco della citazione di lavoro puoi applicare ad esso lo
 
 1. Nella nuova cartella delle `quote`, aggiungi un file delle `quote.js` per implementare il blocco decorativo aggiungendo il seguente JavaScript e salvare il file.
 
-   ```javascript
-   export default function decorate(block) {
-     const [quoteWrapper] = block.children;
-   
-     const blockquote = document.createElement('blockquote');
-     blockquote.textContent = quoteWrapper.textContent.trim();
-     quoteWrapper.replaceChildren(blockquote);
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Aggiunta di JavaScript per decorare il blocco](assets/create-block/quote-js.png)
+>[!TAB Esempio JavaScript]
 
+```javascript
+export default function decorate(block) {
+  const [quoteWrapper] = block.children;
+
+  const blockquote = document.createElement('blockquote');
+  blockquote.textContent = quoteWrapper.textContent.trim();
+  quoteWrapper.replaceChildren(blockquote);
+}
+```
+
+>[!TAB Schermata]
+
+![Aggiunta di JavaScript per decorare il blocco](assets/create-block/quote-js.png)
+
+>[!ENDTABS]
 
 1. Nella cartella delle `quote`, aggiungi un file delle `quote.css` per definire lo stile del blocco aggiungendo il seguente codice CSS e salvare il file.
 
-   ```css
-   .block.quote {
-       background-color: #ccc;
-       padding: 0 0 24px;
-       display: flex;
-       flex-direction: column;
-       margin: 1rem 0;
-   }
-   
-   .block.quote blockquote {
-       margin: 16px;
-       text-indent: 0;
-   }
-   
-   .block.quote > div:last-child > div {
-       margin: 0 16px;
-       font-size: small;
-       font-style: italic;
-       position: relative;
-   }
-   
-   .block.quote > div:last-child > div::after {
-       content: "";
-       display: block;
-       position: absolute;
-       left: 0;
-       bottom: -8px;
-       height: 5px;
-       width: 30px;
-       background-color: darkgray;
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Aggiunta di CSS per definire lo stile del blocco](assets/create-block/quote-css.png)
+>[!TAB Esempio CSS]
+
+```css
+.block.quote {
+    background-color: #ccc;
+    padding: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.block.quote blockquote {
+    margin: 16px;
+    text-indent: 0;
+}
+
+.block.quote > div:last-child > div {
+    margin: 0 16px;
+    font-size: small;
+    font-style: italic;
+    position: relative;
+}
+
+.block.quote > div:last-child > div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 5px;
+    width: 30px;
+    background-color: darkgray;
+}
+```
+
+>[!TAB Schermata]
+
+![Aggiunta di CSS per definire lo stile del blocco](assets/create-block/quote-css.png)
+
+>[!ENDTABS]
 
 1. Utilizzando Git, conferma queste modifiche al ramo `main`.
 
@@ -239,6 +278,50 @@ Ora che disponi di un blocco della citazione di lavoro puoi applicare ad esso lo
    ![Blocco delle citazioni pubblicato e formattato](assets/create-block/quote-styled-published.png)
 
 Congratulazioni Ora disponi di un blocco delle citazioni completamente funzionante e formattato. Puoi utilizzare questo esempio come base per progettare blocchi specifici per il progetto.
+
+### Opzioni di blocco {#block-options}
+
+Se un blocco deve avere un aspetto o un comportamento leggermente diverso a seconda di determinate circostanze, ma non abbastanza diverso da diventare un nuovo blocco in sé, puoi consentire agli autori di scegliere tra [opzioni di blocco.](content-modeling.md#type-inference)
+
+Aggiungendo un `classes` proprietà al blocco, la proprietà di cui è stato eseguito il rendering nell’intestazione della tabella per i blocchi semplici o come elenco di valori per gli elementi in un blocco contenitore.
+
+```json
+{
+  "id": "simpleMarquee",
+  "fields": [
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "marqueeText",
+      "value": "",
+      "label": "Marquee text",
+      "description": "The text you want shown in your marquee"
+    },
+    {
+      "component": "select",
+      "name": "classes",
+      "value": "",
+      "label": "Background Color",
+      "description": "The marquee background color",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "Red",
+          "value": "bg-red"
+        },
+        {
+          "name": "Green",
+          "value": "bg-green"
+        },
+        {
+          "name": "Blue",
+          "value": "bg-blue"
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## Utilizzo di altri rami di lavoro {#other-branches}
 
