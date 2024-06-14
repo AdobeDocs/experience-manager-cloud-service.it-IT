@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
-workflow-type: ht
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+workflow-type: tm+mt
 source-wordcount: '5034'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -823,14 +823,14 @@ ht-degree: 100%
 + Edge Delivery Services {#edge-delivery}
    + [Panoramica di Edge Delivery Services](/help/edge/overview.md)
    + [Utilizzo di Edge Delivery Services con AEM](/help/edge/using.md)
-   + Authoring basato su AEM {#aem-authoring}
-      + [Authoring dei contenuti per Edge Delivery](/help/edge/aem-authoring/authoring.md)
-      + [Pubblicazione di contenuti per Edge Delivery](/help/edge/aem-authoring/publishing.md)
-      + [Guida introduttiva per sviluppatori](/help/edge/aem-authoring/edge-dev-getting-started.md)
-      + [Creazione di blocchi](/help/edge/aem-authoring/create-block.md)
-      + [Modellazione dei contenuti](/help/edge/aem-authoring/content-modeling.md)
-      + [Dati tabulari e fogli di calcolo](/help/edge/aem-authoring/tabular-data.md)
-      + [Progetti esistenti e Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
+   + Authoring WYSIWYG {#wysiwyg-authoring}
+      + [Authoring dei contenuti per Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
+      + [Pubblicazione di contenuti per Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
+      + [Guida introduttiva per sviluppatori](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+      + [Creazione di blocchi](/help/edge/wysiwyg-authoring/create-block.md)
+      + [Modellazione dei contenuti](/help/edge/wysiwyg-authoring/content-modeling.md)
+      + [Dati tabulari e fogli di calcolo](/help/edge/wysiwyg-authoring/tabular-data.md)
+      + [Progetti esistenti e Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
    + Authoring basato su documenti {#document-authoring}
       + [Authoring](/help/edge/docs/authoring.md)
       + [Metadati in blocco](/help/edge/docs/bulk-metadata.md)

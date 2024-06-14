@@ -5,7 +5,7 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -20,8 +20,8 @@ Scopri i diversi modi in cui puoi creare contenuti in AEM, come differiscono e q
 
 AEM as a Cloud Service offre diversi editor per modificare diversi tipi di contenuti e supportare diversi casi di utilizzo di authoring.
 
-* [Authoring basato su AEM tramite l’Editor pagina](#page-editor) - L’Editor pagina è l’editor classico per la creazione di contenuti in AEM, testato e affidabile per migliaia di siti web.
-* [Authoring basato su AEM con Universal Editor](#universal-editor) - L’Editor universale è una moderna interfaccia utente che consente di creare contenuti AEM in modo indipendente dai contenuti ed è disponibile per progetti AEM che sfruttano i Edge Delivery Services.
+* [Authoring WYSIWYG tramite l’Editor pagina](#page-editor) - L’Editor pagina è l’editor classico per la creazione di contenuti in AEM, testato e affidabile per migliaia di siti web.
+* [Authoring WYSIWYG con l’editor universale](#universal-editor) - L’Editor universale è una moderna interfaccia utente che consente di creare contenuti AEM in modo indipendente dai contenuti ed è disponibile per progetti AEM che sfruttano i Edge Delivery Services.
 * [Authoring basato su documenti](#document-based) - Se utilizzi i servizi di consegna Edge, puoi scegliere di creare i contenuti come documenti convenzionali, come Microsoft Word o Google Docs, interamente al di fuori delle console AEM.
 * [Editor frammento di contenuto AEM](#cf-editor) : editor preferito per la creazione di contenuti headless.
 
@@ -29,7 +29,7 @@ A causa della natura integrata e scalabile dell’AEM, questi metodi possono ess
 
 Se non sai quali opzioni di authoring sono disponibili o se desideri esplorarne di nuove, rivolgiti all’amministratore di sistema o al project manager.
 
-## Authoring basato su AEM tramite l’Editor pagina {#page-editor}
+## Authoring WYSIWYG tramite l’Editor pagina {#page-editor}
 
 Questo è l&#39;editor classico per la creazione di contenuti in AEM, provato e affidabile per migliaia e migliaia di siti web.
 
@@ -39,7 +39,7 @@ L’editor di pagine dell’AEM presenta un ambiente integrato per la creazione 
 
 Per ulteriori informazioni sull’editor di pagine dell’AEM, consulta il documento [Editor pagina AEM.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
-## Authoring basato su AEM con Universal Editor {#universal-editor}
+## Authoring WYSIWYG con l’editor universale {#universal-editor}
 
 L’editor universale è una moderna interfaccia utente che consente di creare contenuti AEM in modo indipendente dai contenuti ed è la prima scelta per i progetti AEM che sfruttano i Edge Delivery Services.
 

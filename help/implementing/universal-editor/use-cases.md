@@ -4,7 +4,7 @@ description: Scopri i casi d’uso principali di Universal Editor e come utilizz
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%
@@ -29,10 +29,10 @@ Questo documento illustra in dettaglio questi due casi d’uso e mostra come sap
 
 L’editor universale offre agli autori dei contenuti un editor visivo comodo e intuitivo, indipendentemente dal tipo di contenuto che creano. I due casi d’uso principali sono:
 
-* [Authoring basato su AEM](#aem-authoring) : utilizza la console AEM Sites per gestire i contenuti e le pagine di authoring all’interno dell’AEM utilizzando l’editor universale
+* [Authoring WYSIWYG](#wysiwyg-authoring) : utilizza la console AEM Sites per gestire i contenuti e le pagine di authoring all’interno dell’AEM utilizzando l’editor universale
 * [Authoring headless](#headless-authoring) : crea contenuti nella tua applicazione headless personalizzata utilizzando l’Editor universale.
 
-### Authoring basato su AEM {#aem-authoring}
+### Authoring WYSIWYG {#wysiwyg-authoring}
 
 Se conosci l’AEM, puoi utilizzare la console Sites per creare e gestire le pagine e quindi modificarle con l’editor universale.
 
@@ -40,9 +40,9 @@ In questo modo è possibile beneficiare degli strumenti disponibili nella consol
 
 Se questo è il tuo caso d’uso, come prossimo passo, consulta i seguenti documenti per una panoramica completa su come iniziare a utilizzare Universal Editor in AEM.
 
-1. [Guida introduttiva per gli sviluppatori per l’authoring di AEM con Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) - Introduzione al primo progetto Universal Editor in AEM
-1. [Creazione di blocchi instrumentati per l’utilizzo con l’editor universale](/help/edge/aem-authoring/create-block.md) - Scopri come dotare di strumenti i blocchi per rendere i contenuti modificabili nell’Editor universale
-1. [Modellazione dei contenuti per l’authoring AEM con progetti Edge Delivery Services](/help/edge/aem-authoring/content-modeling.md) - Scopri i dettagli della struttura dei blocchi per modellare in modo efficace i contenuti da utilizzare con Universal Editor.
+1. [Guida introduttiva per sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Introduzione al primo progetto Universal Editor in AEM
+1. [Creazione di blocchi instrumentati per l’utilizzo con l’editor universale](/help/edge/wysiwyg-authoring/create-block.md) - Scopri come dotare di strumenti i blocchi per rendere i contenuti modificabili nell’Editor universale
+1. [Modellazione dei contenuti per l’authoring WYSIWYG con progetti Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) - Scopri i dettagli della struttura dei blocchi per modellare in modo efficace i contenuti da utilizzare con Universal Editor.
 
 Dopo aver letto questi documenti, puoi tornare a questa pagina per scoprire il caso d’uso dell’authoring headless e il funzionamento generale dell’Editor universale.
 
@@ -54,7 +54,7 @@ Se questo è il tuo caso d’uso, come passaggio successivo immediato, consulta 
 
 * [App di esempio SecurBank per l’editor universale](/help/implementing/universal-editor/securbank.md)
 
-Dopo aver letto il documento, puoi tornare a questa pagina per scoprire il caso d’uso dell’authoring AEM e il funzionamento generale dell’Editor universale.
+Dopo aver letto il documento, puoi tornare a questa pagina per scoprire il caso d’uso dell’authoring WYSIWYG e il funzionamento generale dell’Editor universale.
 
 ## Funzionamento dell&#39;editor universale {#how-ue-works}
 
@@ -63,7 +63,7 @@ La potenza dell’editor universale è la capacità di creare qualsiasi contenut
 L’editor universale funziona nel modo seguente.
 
 1. Uno sviluppatore strumentalizza l’app o la pagina per utilizzare l’Editor universale. Questa strumentazione indica all’editor il contenuto modificabile e come mantenerlo.
-   * Per l’authoring basato su AEM, le pagine create utilizzando il modello boilerplate vengono automaticamente instrumentate.
+   * Per l’authoring WYSIWYG, le pagine create utilizzando il modello boilerplate vengono automaticamente instrumentate.
    * Per l’authoring headless, l’app può essere facilmente dotata di strumenti.
 1. L’autore del contenuto carica l’Editor universale, che a sua volta carica la pagina per la modifica. Poiché è dotata di strumenti, conosce il contenuto modificabile e come deve essere rappresentato e mantenuto.
 1. L’autore del contenuto modifica il contenuto della pagina in un’interfaccia WYSIWYG intuitiva, modificando direttamente.

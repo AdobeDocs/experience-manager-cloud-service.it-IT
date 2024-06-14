@@ -5,10 +5,10 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 84%
+ht-degree: 79%
 
 ---
 
@@ -44,7 +44,7 @@ La [console Componenti](/help/sites-cloud/authoring/components-console.md) offre
 
 I ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)componenti core[ offrono funzionalità flessibili e avanzate per l’authoring, che forniscono tipi di contenuto essenziali per la creazione di pagine.
 
-Vengono creati utilizzando le best practice di AEM e sono alla base dell’esperienza di authoring di AEM. I componenti core possono essere facilmente estesi dagli sviluppatori per soddisfare specifiche esigenze di progetto.
+Vengono creati utilizzando le best practice dell’AEM e sono alla base dell’esperienza di authoring dell’AEM. I componenti core possono essere facilmente estesi dagli sviluppatori per soddisfare specifiche esigenze di progetto.
 
 Oltre ai componenti core WCM, puoi utilizzare anche [Componenti core dei moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Questi componenti core forniscono un metodo standard e più semplice per [creare o aggiungere moduli a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
