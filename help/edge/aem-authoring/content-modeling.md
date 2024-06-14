@@ -4,10 +4,10 @@ description: Scopri come funziona la modellazione dei contenuti per l’authorin
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: ff4a8caf1f4d32bae4e8c776bfcad21a665936d4
+source-git-commit: 39ac520de1d9e93b0025315005219352d4e87575
 workflow-type: tm+mt
-source-wordcount: '2233'
-ht-degree: 98%
+source-wordcount: '2253'
+ht-degree: 97%
 
 ---
 
@@ -345,7 +345,7 @@ Per alcuni valori possiamo dedurre il significato semantico dagli stessi. Tali v
 * **Immagini**: se un riferimento a una risorsa in AEM è una risorsa di tipo MIME che inizia con `image/`, il riferimento viene sottoposto a rendering come `<picture><img src="${reference}"></picture>`.
 * **Collegamenti**: se esiste un riferimento in AEM e non è un’immagine, o se il valore inizia con `https?://`  o `#`, il riferimento viene sottoposto a rendering come `<a href="${reference}">${reference}</a>`.
 * **Rich Text**: se un valore troncato inizia con un paragrafo (`p`, `ul`, `ol`, `h1`-`h6`, ecc.), il valore viene sottoposto a rendering come testo RTF.
-* **Nomi classi** - Il `classes` la proprietà viene trattata come [opzioni di blocco](/help/edge/developer/markup-sections-blocks.md#block-options) ed è stato riprodotto nell’intestazione della tabella per [blocchi semplici,](#simple) o come elenco di valori per gli elementi in una [blocco contenitore.](#container)
+* **Nomi classi** - Il `classes` la proprietà viene trattata come [opzioni di blocco](/help/edge/developer/markup-sections-blocks.md#block-options) ed è stato riprodotto nell’intestazione della tabella per [blocchi semplici,](#simple) o come elenco di valori per gli elementi in una [blocco contenitore.](#container) È utile se si desidera [assegnare un altro stile a un blocco,](/help/edge/aem-authoring/create-block.md#block-options) ma non è necessario creare un blocco completamente nuovo.
 * **Elenchi valore**: se un valore è una proprietà con più valori e il primo valore non è nessuno dei precedenti, tutti i valori vengono concatenati come elenco separato da virgole.
 
 Tutto il resto verrà riprodotto come testo normale.

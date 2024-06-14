@@ -4,7 +4,7 @@ description: Scopri come creare blocchi dotati di strumenti per l’utilizzo con
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 72949b36e7e7f8689365e7cb76a8c491edf23825
+source-git-commit: e0b4eafaa9fdc496362f90e6da14b4b198b4ea3e
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 94%
@@ -22,7 +22,7 @@ Questa guida fornisce istruzioni dettagliate su come creare blocchi dotati di st
 
 Questa guida richiede necessariamente una conoscenza esistente dell’authoring AEM con progetti di Edge Delivery Services e con l’editor universale. Prima di iniziare questa guida, è necessario avere già accesso a Edge Delivery Services e conoscere le relative nozioni di base, tra cui:
 
-Il completamento di un [tutorial su Edge Delivery Service.](/help/edge/developer/tutorial.md)
+* Il completamento di un [tutorial su Edge Delivery Service.](/help/edge/developer/tutorial.md)
 * L’accesso a una [sandbox di AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * L’[attivazione dell’Editor universlae nello stesso ambiente sandbox.](/help/implementing/universal-editor/getting-started.md)
 * Hai completato la [Guida introduttiva per gli sviluppatori per l’authoring di AEM con Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md).
@@ -205,7 +205,7 @@ Ora che disponi di un blocco della citazione di lavoro puoi applicare ad esso lo
 ```javascript
 export default function decorate(block) {
   const [quoteWrapper] = block.children;
-
+ 
   const blockquote = document.createElement('blockquote');
   blockquote.textContent = quoteWrapper.textContent.trim();
   quoteWrapper.replaceChildren(blockquote);
@@ -232,19 +232,19 @@ export default function decorate(block) {
     flex-direction: column;
     margin: 1rem 0;
 }
-
+ 
 .block.quote blockquote {
     margin: 16px;
     text-indent: 0;
 }
-
+ 
 .block.quote > div:last-child > div {
     margin: 0 16px;
     font-size: small;
     font-style: italic;
     position: relative;
 }
-
+ 
 .block.quote > div:last-child > div::after {
     content: "";
     display: block;
@@ -340,4 +340,3 @@ Consulta il documento [Modellazione dei contenuti per l’authoring in AEM con p
 >[!TIP]
 >
 >Per una procedura dettagliata sulla creazione di un nuovo progetto Edge Delivery Services abilitato per l’authoring AEM con AEM as a Cloud Service come origine di contenuto, visualizza [questo webinar AEM GEMs.](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
-
