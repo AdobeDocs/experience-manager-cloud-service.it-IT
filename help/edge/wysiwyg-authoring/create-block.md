@@ -4,10 +4,10 @@ description: Scopri come creare blocchi instrumentati per l’utilizzo con l’E
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: c6013984e1c47766964e6f8ece76e7793b59308f
+source-git-commit: 364acc6a76261a725a46fe3e1ef173bc03b5a289
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 74%
+source-wordcount: '1401'
+ht-degree: 64%
 
 ---
 
@@ -45,13 +45,13 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 ### Crea modello e definizione di blocco {#create-block-model}
 
-1. Clona il progetto GitHub localmente creato in [Guida introduttiva per sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e aprilo in un editor a tua scelta.
+1&amp;punto; clona il progetto GitHub localmente creato in [Guida introduttiva per sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e aprilo in un editor a tua scelta.
 
-   * Il codice Microsoft viene utilizzato qui a scopo illustrativo.
+* Il codice Microsoft viene utilizzato qui a scopo illustrativo.
 
-   ![Clonazione del progetto](assets/create-block/clone.png)
+![Clonazione del progetto](assets/create-block/clone.png)
 
-1. Modifica il file `component-definition.json` nella directory principle del progetto e aggiungi la seguente definizione per il nuovo blocco citazione e salva il file.
+2&amp;period; modifica `component-definition.json` file nella directory principale del progetto e aggiungi la seguente definizione per il nuovo blocco delle virgolette e salva il file.
 
 >[!BEGINTABS]
 
@@ -83,9 +83,9 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-1. Modifica il file `component-models.json` nella directory principale del progetto e aggiungi la seguente [definizione del modello](/help/implementing/universal-editor/field-types.md#model-structure) per il nuovo blocco citazione e salva il file.
+3&amp;period; modifica `component-models.json` nella directory principale del progetto e aggiungi quanto segue [definizione del modello](/help/implementing/universal-editor/field-types.md#model-structure) per il nuovo blocco delle virgolette e salvare il file.
 
-   * Consulta il documento [Modellazione dei contenuti per l’authoring WYSIWYG con progetti Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) per ulteriori informazioni su ciò che è importante considerare durante la creazione di modelli di contenuto.
+* Consulta il documento [Modellazione dei contenuti per l’authoring WYSIWYG con progetti Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) per ulteriori informazioni su ciò che è importante considerare durante la creazione di modelli di contenuto.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-1. Modifica il file `component-filters.json` nella directory principale del progetto e aggiungi il blocco citazione alla [definizione di filtro](/help/implementing/universal-editor/customizing.md#filtering-components) per consentire l’aggiunta del blocco a qualsiasi sezione e salvare il file.
+4&amp;period; modifica `component-filters.json` nella directory principale del progetto e aggiungi il blocco delle virgolette al [definizione filtro](/help/implementing/universal-editor/customizing.md#filtering-components) per consentire l’aggiunta del blocco a qualsiasi sezione e salvare il file.
 
 >[!BEGINTABS]
 
@@ -147,9 +147,9 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-1. Utilizzando Git, conferma queste modifiche nel ramo `main`.
+5&amp;punto; utilizzando Git, esegui il commit di queste modifiche nel tuo `main` filiale.
 
-   * La conferma di `main` è solo a scopo illustrativo. [Segui le best practice](https://www.aem.live/docs/dev-collab-and-good-practices) e utilizza una richiesta pull per il lavoro di progetto effettivo.
+* La conferma di `main` è solo a scopo illustrativo. [Segui le best practice](https://www.aem.live/docs/dev-collab-and-good-practices) e utilizza una richiesta pull per il lavoro di progetto effettivo.
 
 ### Creare contenuti con il blocco {#create-content}
 
@@ -190,13 +190,13 @@ Dopo aver definito e confermato il blocco del preventivo di base nel progetto di
 
 Ora che disponi di un blocco della citazione di lavoro puoi applicare ad esso lo stile.
 
-1. Torna all’editor per il progetto.
+1&amp;period; Torna all’editor per il progetto.
 
-1. Crea una cartella `quote` sotto la cartella `blocks`.
+2&amp;period; Crea un `quote` cartella sotto `blocks` cartella.
 
-   ![Crea una cartella delle citazioni](assets/create-block/new-folder.png)
+![Crea una cartella delle citazioni](assets/create-block/new-folder.png)
 
-1. Nella nuova cartella delle `quote`, aggiungi un file delle `quote.js` per implementare il blocco decorativo aggiungendo il seguente JavaScript e salvare il file.
+3&amp;period; nel nuovo `quote` cartella, aggiungi un `quote.js` file per implementare la decorazione dei blocchi aggiungendo il seguente JavaScript e salvando il file.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. Nella cartella delle `quote`, aggiungi un file delle `quote.css` per definire lo stile del blocco aggiungendo il seguente codice CSS e salvare il file.
+4&amp;period; nel `quote` cartella, aggiungi un `quote.css` file per definire lo stile del blocco aggiungendo il seguente codice CSS e salvando il file.
 
 >[!BEGINTABS]
 
@@ -263,27 +263,27 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. Utilizzando Git, conferma queste modifiche al ramo `main`.
+5&amp;punto; utilizzando Git, esegui il commit di queste modifiche nel tuo `main` filiale.
 
-   * La conferma di `main` è solo a scopo illustrativo. [Segui le best practice](https://www.aem.live/docs/dev-collab-and-good-practices) e utilizza una richiesta pull per il lavoro effettivo del progetto.
+* La conferma di `main` è solo a scopo illustrativo. [Segui le best practice](https://www.aem.live/docs/dev-collab-and-good-practices) e utilizza una richiesta pull per il lavoro di progetto effettivo.
 
-1. Torna alla scheda del browser dell’editor universale in cui stavi modificando la pagina del progetto e ricarica la pagina per visualizzare il blocco formattato.
+6&amp;period; Torna alla scheda del browser dell’Editor universale in cui stavi modificando la pagina del progetto e ricarica la pagina per visualizzare il blocco formattato.
 
-1. Visualizza il blocco delle citazioni ora formattato sulla pagina.
+7&amp;period; Vedere il blocco del preventivo ora formattato sulla pagina.
 
-   ![Blocco delle citazioni formattato nell’editor universale](assets/create-block/quote-styled.png)
+![Blocco delle citazioni formattato nell’editor universale](assets/create-block/quote-styled.png)
 
-1. Verifica che le modifiche siano state inviate alla produzione passando alla pagina pubblicata. Il collegamento sarà simile a `https://<branch>--<repo>--<owner>.hlx.page`
+8&amp;period; Verifica che le modifiche siano state inviate alla produzione passando alla pagina pubblicata. Il collegamento sarà simile a `https://<branch>--<repo>--<owner>.hlx.page`
 
-   ![Blocco delle citazioni pubblicato e formattato](assets/create-block/quote-styled-published.png)
+![Blocco delle citazioni pubblicato e formattato](assets/create-block/quote-styled-published.png)
 
 Congratulazioni Ora disponi di un blocco delle citazioni completamente funzionante e formattato. Puoi utilizzare questo esempio come base per progettare blocchi specifici per il progetto.
 
 ### Opzioni di blocco {#block-options}
 
-Se un blocco deve avere un aspetto o un comportamento leggermente diverso a seconda di determinate circostanze, ma non abbastanza diverso da diventare un nuovo blocco in sé, puoi consentire agli autori di scegliere tra [opzioni di blocco.](content-modeling.md#type-inference)
+Se un blocco deve avere un aspetto o un comportamento leggermente diverso a seconda di determinate circostanze, ma non abbastanza diverso da diventare un nuovo blocco in sé, puoi consentire agli autori di scegliere tra le [opzioni di blocco.](content-modeling.md#type-inference)
 
-Aggiungendo un `classes` proprietà al blocco, la proprietà di cui è stato eseguito il rendering nell’intestazione della tabella per i blocchi semplici o come elenco di valori per gli elementi in un blocco contenitore.
+Aggiungendo una proprietà `classes` al blocco, quella di cui è stato eseguito il rendering nell’intestazione della tabella per i blocchi semplici o come elenco di valori per gli elementi in un blocco contenitore.
 
 ```json
 {
