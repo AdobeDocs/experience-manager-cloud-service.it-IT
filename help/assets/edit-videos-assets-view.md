@@ -3,10 +3,10 @@ title: Modificare i video
 description: Modifica video tramite [!DNL Adobe Express] opzioni avanzate e salva i video aggiornati come versioni.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: ff201051a70862e7597cf36f70a0e7225178f1fa
+source-git-commit: afdab9a7b449673ecf15bc9ab31307388da7b64e
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 18%
+ht-degree: 17%
 
 ---
 
@@ -83,7 +83,7 @@ Il video è disponibile in formato GIF per il download. Puoi salvare la risorsa 
 
 * Per la modifica sono supportati solo i video in formato MP4.
 
-* La dimensione massima supportata per il file di origine è 200 MB.
+* La dimensione massima supportata per il file di origine è 1 GB.
 
 * I video supportati sono più grandi di 46 pixel e più piccoli di 3840 pixel su qualsiasi lato.
 
@@ -93,11 +93,11 @@ Il video è disponibile in formato GIF per il download. Puoi salvare la risorsa 
 
 ### Passaggi successivi {#next-steps}
 
-* Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
+* Fornire feedback sul prodotto utilizzando [!UICONTROL Feedback] disponibile nell’interfaccia utente di visualizzazione delle risorse.
 
-* Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
+* Fornisci feedback sulla documentazione utilizzando [!UICONTROL Modifica questa pagina], ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema], ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale a destra.
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/i?support-solution=General#support)
+* Contatta l’[Assistenza clienti](https://experienceleague.adobe.com/i?support-solution=General#support).
 
 >[!MORELIKETHIS]
 >
