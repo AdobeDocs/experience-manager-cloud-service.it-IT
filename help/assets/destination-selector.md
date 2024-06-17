@@ -2,12 +2,13 @@
 title: Selettore di destinazione per AEM as a Cloud Service
 description: Utilizza il selettore di destinazione AEM per mostrare e selezionare le risorse da utilizzare come copia della risorsa originale.
 contentOwner: Adobe
-role: Admin,User
+role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
+feature: Selectors
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 36%
+source-wordcount: '1887'
+ht-degree: 35%
 
 ---
 
@@ -140,7 +141,7 @@ Nella tabella seguente vengono descritte alcune delle proprietà importanti dell
 | *repo:modifiedBy* | stringa | Utente o sistema che ha modificato per ultimo la risorsa. |
 | *repo:modifyDate* | stringa | La data e l’ora dell’ultima modifica apportata alla risorsa. |
 | *dc:format* | stringa | Formato della risorsa. |
-| *_pagina* | orderBy: string; count: number; | Include il numero di pagina del documento. |
+| *_page* | orderBy: string; count: number; | Include il numero di pagina del documento. |
 
 Per un elenco completo delle proprietà e un esempio dettagliato, visita [Esempio di codice del selettore di destinazione](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
@@ -259,7 +260,7 @@ Il selettore di destinazione consente inoltre di visualizzare i dati dell’arch
 
 È un esempio di `optionsFormSetup` proprietà. È possibile utilizzarlo per confermare la selezione, che viene trasmessa al `onConfirm` evento.
 
-### Crea una cartella . {#create-new-folder}
+### Crea una cartella {#create-new-folder}
 
 Ti consente di creare una cartella nella cartella di destinazione del [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 

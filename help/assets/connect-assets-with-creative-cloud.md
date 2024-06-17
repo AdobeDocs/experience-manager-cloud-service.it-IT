@@ -2,10 +2,12 @@
 title: Connettere AEM Assets a Creative Cloud
 description: Scopri come configurare e collegare AEM Assets a Creative Cloud. Connettiti a una licenza Creative Cloud fornita a un’altra organizzazione IMS per utilizzare facilmente le integrazioni Creative Cloud più recenti in AEM Assets, incluse le librerie Express e Creative Cloud.
 exl-id: 880200fe-94b3-49de-802c-34283f7c71bc
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
+feature: Collaboration
+role: User
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 0%
+ht-degree: 75%
 
 ---
 
@@ -19,17 +21,17 @@ Se per i prodotti Creative Cloud e AEM Assets è stato eseguito il provisioning 
 
 * Diritti di amministratore su Experience Manager Assets
 
-* Diritto attivo a Creative Cloud per lo stesso ID utente utilizzato in Creative Cloud e Experience Manager. I diritti agli ID personali e federati con lo stesso indirizzo e-mail vengono trattati come ID utente diversi.
+* Diritto attivo a Creative Cloud per lo stesso ID utente utilizzato in Creative Cloud e Experience Manager. I diritti a ID personali e federati con lo stesso indirizzo e-mail vengono trattati come ID utente diversi.
 
 ## Connettersi a una nuova organizzazione Creative Cloud {#connect-to-creative-cloud-org}
 
-Per connettersi a una nuova organizzazione Creative Cloud, effettuare le seguenti operazioni:
+Per connettersi a una nuova organizzazione Creative Cloud, effettua le seguenti operazioni:
 
 1. Accedi a **[!UICONTROL Impostazioni]** > **[!UICONTROL Creative Cloud]**.
 
-1. Seleziona la nuova organizzazione Creative Cloud utilizzando **[!UICONTROL Seleziona nuovo ID organizzazione Creative Cloud]** elenco a discesa. Nell&#39;elenco vengono visualizzate tutte le organizzazioni a cui si ha accesso. Selezionare l&#39;organizzazione con diritti di Creative Cloud attivi.
+1. Seleziona la nuova organizzazione Creative Cloud utilizzando l’elenco a discesa **[!UICONTROL Seleziona nuovo ID organizzazione Creative Cloud]**. Nell’elenco vengono visualizzate tutte le organizzazioni a cui hai accesso. Seleziona l’organizzazione con diritti attivi per Creative Cloud.
 
-1. Clic **[!UICONTROL Cambiare organizzazione]** per passare alla nuova organizzazione.
+1. Fai clic su **[!UICONTROL Cambia organizzazione]** per passare alla nuova organizzazione.
 
    ![Diritti per più organizzazioni](assets/cross-org-entitlements.png)
 

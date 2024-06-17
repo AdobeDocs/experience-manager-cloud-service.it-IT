@@ -2,10 +2,12 @@
 title: Come gestire i tag nella Vista risorse?
 description: Scopri come gestire i tag nella Vista risorse. I tag consentono di categorizzare le risorse così da poter essere sfogliate e cercate in modo più efficiente.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: cadf0e383608a39200d716cc698ad1979f24fd1d
+feature: Smart Tags
+role: User, Admin, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 70%
+ht-degree: 98%
 
 ---
 
@@ -59,11 +61,11 @@ Per creare uno spazio dei nomi, esegui le seguenti operazioni:
 
 1. Fai clic su `Save`.
 
-## Aggiungere tag a uno spazio dei nomi {#add-tags-to-namespace}
+## Aggiungere di tag a uno spazio dei nomi {#add-tags-to-namespace}
 
 Per aggiungere tag a uno spazio dei nomi, esegui le seguenti operazioni:
 
-1. Vai a **[!UICONTROL Gestione tassonomia]**.
+1. Passa a **[!UICONTROL Gestione della tassonomia]**.
 1. Seleziona lo spazio dei nomi e fai clic su `Create` per creare il tag al livello superiore nello spazio dei nomi. Se devi creare un sottotag in un tag esistente in uno spazio dei nomi, seleziona il tag e fai clic su `Create`.
    ![Gerarchia dei tag](assets/hierarchy-of-tags.png)
 
@@ -89,7 +91,7 @@ Per creare un tag standard, fai clic su `Create Tag` a livello di radice. Specif
 >
 >Se elimini lo spazio dei nomi `Standard Tags` utilizzando Assets as a Cloud Service, i tag creati a livello di radice non vengono visualizzati nell’elenco dei tag disponibili.
 
-## Sposta tag {#move-tags}
+## Spostare i tag {#move-tags}
 
 Se i tag vengono memorizzati in una gerarchia errata o se la tassonomia cambia nel tempo, è possibile spostare i tag selezionati per mantenere l’integrità dei dati. Durante lo spostamento dei tag è necessario tenere presenti le seguenti condizioni:
 
@@ -103,7 +105,7 @@ Per spostare i tag da una posizione a un’altra, effettua le seguenti operazion
 1. Nella finestra di dialogo Sposta, seleziona il nuovo tag di destinazione o spazio dei nomi utilizzando la sezione `Select Tag`.
 1. Fai clic su `Save`. Il tag viene visualizzato nella nuova posizione.
 
-## Modifica tag {#edit-tags}
+## Modificare i tag {#edit-tags}
 
 Per modificare il titolo del tag, selezionalo e fai clic su `Edit`. Specifica il nuovo titolo e fai clic su `Save`.
 
@@ -112,7 +114,7 @@ Per modificare il titolo del tag, selezionalo e fai clic su `Edit`. Specifica il
 >* Il `Name` di un tag non può essere aggiornato. Anche il percorso principale di un tag è basato sul nome del tag. Il percorso rimane invariato anche se si aggiorna il campo `Title`.
 >* Ulteriori operazioni, quali unione, localizzazione e pubblicazione, sono disponibili in Assets as a Cloud Service.
 
-## Elimina tag {#delete-tags}
+## Eliminare i tag {#delete-tags}
 
 È possibile eliminare più spazi dei nomi o tag contemporaneamente. L’operazione di eliminazione non può essere annullata.
 
@@ -129,7 +131,7 @@ Per eliminare i tag, effettua le seguenti operazioni:
 
 ## Aggiungere il componente Tag al modulo Metadati {#add-tags-to-metadata-form}
 
-Il componente Tag viene aggiunto al modulo metadati `default` automaticamente. Puoi progettare un [modulo metadati](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=it#metadata-forms) utilizzando un modello o da zero. Se non utilizzi un modello di modulo Metadati esistente, puoi modificare il modulo Metadati e aggiungere il componente Tag. La mappatura della proprietà dei metadati viene compilata automaticamente e non può essere modificata in questo momento. [!DNL Assets as a Cloud Service] gli utenti possono aggiornare la mappatura per memorizzare i valori dei tag utilizzando spazi dei nomi personalizzati ed esporre solo sottoinsiemi di gerarchie utilizzando percorsi principali.
+Il componente Tag viene aggiunto al modulo metadati `default` automaticamente. Puoi progettare un [modulo metadati](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=it#metadata-forms) utilizzando un modello o da zero. Se non utilizzi un modello di modulo Metadati esistente, puoi modificare il modulo Metadati e aggiungere il componente Tag. La mappatura della proprietà dei metadati viene compilata automaticamente e non può essere modificata in questo momento. Gli utenti di [!DNL Assets as a Cloud Service] possono aggiornare la mappatura per memorizzare i valori dei tag utilizzando spazi dei nomi personalizzati ed esporre solo sottoinsiemi di gerarchie utilizzando percorsi principali.
 
 Guarda questo video rapido per vedere come aggiungere il componente Tag al modulo di metadati:
 
@@ -146,61 +148,61 @@ Guarda questo video rapido per vedere come aggiungere il componente Tag al modul
 1. Seleziona uno o più tag. Il tag secondario viene selezionato automaticamente insieme al tag principale o allo spazio dei nomi.
 I tag modificati in Assets Essentials vengono applicati anche in Assets as a Cloud Service.
 
-## Aggiungere tag al inserisco nell&#39;elenco Bloccati di selezione dei tipi di carattere {#blocklist-essentials}
+## Aggiungere tag nell’elenco Bloccati {#blocklist-essentials}
 
-[!DNL Assets view] consente di configurare un inserisco nell&#39;elenco Bloccati di che include parole che non devono essere aggiunte come tag avanzati alle risorse quando vengono caricate nell’archivio. Questa funzionalità consente di mantenere la conformità al marchio e di ridurre gli sforzi nella moderazione dei tag avanzati.
+[!DNL Assets view] consente di definire l’elenco Bloccati per le parole che non devono essere aggiunte come tag avanzati alle risorse quando vengono caricate nell’archivio. Questa funzionalità consente di mantenere la conformità al marchio e di ridurre gli sforzi nella moderazione dei tag avanzati.
 <!--
 ### Block smart tags for single asset {#block-smart-tags-for-single-asset}
 ![block smart tags](assets/block-smart-tags.png)
 -->
 
-### Blocca i tag avanzati per tutte le risorse {#block-smart-tags-for-all-assets}
+### Bloccare i tag avanzati per tutte le risorse {#block-smart-tags-for-all-assets}
 
-[!DNL Assets view] consente a un amministratore di bloccare i tag avanzati per le risorse esistenti e appena aggiunte. Per bloccare i tag, esegui i seguenti passaggi:
+[!DNL Assets view] consente a un amministratore di bloccare i tag avanzati per le risorse esistenti e appena aggiunte. Per bloccare i tag, esegui le seguenti operazioni:
 
-1. Accedi a **[!UICONTROL Tag bloccati]** in **[!UICONTROL Impostazioni]**.
-1. Clic **[!UICONTROL Aggiungi tag bloccato]**.
+1. Passa a **[!UICONTROL Tag bloccati]** in **[!UICONTROL Impostazioni]**.
+1. Fai clic su **[!UICONTROL Aggiungi tag bloccato]**.
 1. Digita i tag nella casella di testo da bloccare e fai clic su **[!UICONTROL Invio]**.
-1. Al termine dell’aggiunta dei tag, fai clic su **[!UICONTROL Aggiungi]**. I tag immessi vengono elencati nell&#39;elenco dei tag bloccati.
+1. Una volta aggiunti i tag, fai clic su **[!UICONTROL Aggiungi]**. I tag inseriti vengono inseriti nell’elenco dei tag bloccati.
 
    >[!NOTE]
    >
-   >Puoi aggiungere un massimo di 25 tag all’elenco contemporaneamente. Ripeti i passaggi per aggiungere altri tag al inserisco nell&#39;elenco Bloccati di.
+   >Puoi aggiungere un massimo di 25 tag all’elenco contemporaneamente. Ripeti i passaggi per aggiungere altri tag nell’elenco Bloccati.
 
-Puoi anche bloccare i tag avanzati per una singola risorsa. Passa ai dettagli di una risorsa. Sotto **[!UICONTROL Tag]** , rimuovere gli smart tag indesiderati e fare clic su **[!UICONTROL Salva]**. I tag sono elencati nel elenco Bloccati di della risorsa selezionata.
+Puoi anche bloccare i tag avanzati per una singola risorsa. Passa ai dettagli di una risorsa. Nella scheda **[!UICONTROL Tag]**, rimuovi i tag avanzati indesiderati e fai clic su **[!UICONTROL Salva]**. I tag sono inseriti nell’elenco Bloccati della risorsa selezionata.
 
-### Azioni eseguite sul inserisco nell&#39;elenco Bloccati di {#blocklist-actions}
+### Azioni eseguite nell’elenco Bloccati {#blocklist-actions}
 
-* **Rimuovi tag:** È inoltre possibile rimuovere i tag dal inserisco nell&#39;elenco Bloccati di. A questo scopo, seleziona uno o più tag da rimuovere. Clic **[!UICONTROL Rimuovi]**. Puoi rimuovere un massimo di 25 tag dall’elenco contemporaneamente.
-* **Seleziona tutto:** Seleziona la casella di controllo adiacente a **Nome tag** per selezionare tutti i tag nel inserisco nell&#39;elenco Bloccati di.
-* **Ordinamento:** Puoi ordinare il inserisco nell&#39;elenco Bloccati di in ordine crescente o decrescente. A tale scopo, fare clic sulla freccia accanto a **Nome tag**.
+* **Rimuovi tag:** puoi anche rimuovere i tag dall’elenco Bloccati. Per farlo, seleziona uno o più tag da rimuovere. Fai clic su **[!UICONTROL Rimuovi]**. Puoi rimuovere un massimo di 25 tag dall’elenco contemporaneamente.
+* **Seleziona tutto:** seleziona la casella di controllo adiacente a **Nome tag** per selezionare tutti i tag nell’elenco Bloccati.
+* **Ordinamento:** puoi ordinare l’elenco Bloccati in ordine crescente o decrescente. Per farlo, fai clic sulla freccia accanto a **Nome tag**.
 
   ![blocca tag](assets/blocklist.gif)
 
   >[!NOTE]
   >
-  >Non utilizzare caratteri speciali durante l’aggiunta di un tag nel inserisco nell&#39;elenco Bloccati di. È possibile utilizzare caratteri quali a-z, A-Z, 0-9 e -.
+  >Quando aggiungi un tag nell’elenco Bloccati, non utilizzare caratteri speciali. Puoi utilizzare caratteri quali a-z, A-Z, 0-9 e -.
 
-### Esporta inserisco nell&#39;elenco Bloccati di{#export-blocklist}
+### Esportare un elenco Bloccati{#export-blocklist}
 
-La vista Risorse consente di esportare i tag bloccati elencati in formato CSV. Per esportare la inserisce nell&#39;elenco Bloccati di, esegui i passaggi seguenti:
+La vista Risorse consente di esportare i tag bloccati elencati in formato CSV. Per esportare l’elenco Bloccati, effettua le seguenti operazioni:
 
-1. Clic **[!UICONTROL Esporta come CSV]**.
-1. Scegli il percorso appropriato per salvare il file CSV. Puoi anche rinominare il file in base al requisito.
-1. Fai clic su **[!UICONTROL Salva]**. L&#39;elenco esportato in formato CSV viene scaricato nel percorso selezionato.
+1. Fai clic su **[!UICONTROL Esporta come CSV]**.
+1. Scegli la posizione appropriata per salvare il file CSV. Puoi anche rinominare il file in base alle esigenze.
+1. Fai clic su **[!UICONTROL Salva]**. L’elenco esportato in formato CSV viene scaricato nel percorso selezionato.
 
-### Inserire nell&#39;elenco Bloccati Importa{#import-blocklist}
+### Importare un elenco Bloccati{#import-blocklist}
 
-La vista Risorse consente di importare tag bloccati da un’origine dati (CSV). Per importare il inserisco nell&#39;elenco Bloccati di, esegui i passaggi seguenti:
+La vista Risorse consente di importare tag bloccati da un’origine dati (CSV). Per importare l’elenco Bloccati, effettua le seguenti operazioni:
 
-1. Clic **[!UICONTROL Importa come CSV]**.
-1. Scegli il file CSV dal tuo dispositivo. Clic **[!UICONTROL seleziona un file]** per passare al file dal dispositivo. In alternativa, puoi trascinare e rilasciare il file CSV dal dispositivo.
-1. Clic **[!UICONTROL Carica]**. I tag del file CSV sono elencati nell’elenco dei tag bloccati.
+1. Fai clic su **[!UICONTROL Importa come CSV]**.
+1. Scegli il file CSV dal tuo dispositivo. Fai clic su **[!UICONTROL Seleziona un file]** per passare al file dal dispositivo. In alternativa, puoi trascinare e rilasciare il file CSV dal dispositivo.
+1. Fai clic su **[!UICONTROL Carica]**. I tag dal file CSV vengono inseriti nell’elenco dei tag bloccati.
 
-   ![Importa elenco di tag bloccati](assets/import-blocked-tags.png)
+   ![Importa elenco dei tag bloccati](assets/import-blocked-tags.png)
 
-Per scaricare un modello di tag bloccato, effettua le seguenti operazioni:
+Per scaricare un modello di tag bloccati, effettua le seguenti operazioni:
 
-1. Clic **[!UICONTROL Scarica modello]**.
-1. Scegli il percorso appropriato per salvare il file CSV. Puoi anche rinominare il file in base al requisito.
-1. Fai clic su **[!UICONTROL Salva]**. Il modello di tag di blocco in formato CSV viene scaricato nella posizione selezionata.
+1. Fai clic su **[!UICONTROL Scarica modello]**.
+1. Scegli la posizione appropriata per salvare il file CSV. Puoi anche rinominare il file in base alle esigenze.
+1. Fai clic su **[!UICONTROL Salva]**. I modelli dei tag bloccati in formato CSV vengono scaricati nella posizione selezionata.

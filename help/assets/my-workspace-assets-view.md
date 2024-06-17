@@ -1,7 +1,10 @@
 ---
 title: La mia area di lavoro per la vista Risorse
 description: L’area di lavoro personale è una pagina che offre moduli visivi personalizzabili per un accesso comodo alle aree chiave dell’interfaccia utente di Assets e alle informazioni più rilevanti per l’utente.
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 84%

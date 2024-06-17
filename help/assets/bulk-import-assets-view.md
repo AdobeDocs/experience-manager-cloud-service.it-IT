@@ -2,10 +2,12 @@
 title: Importazione in blocco delle risorse utilizzando la vista Assets
 description: Scopri come importare in blocco le risorse utilizzando la nuova interfaccia utente di Assets (vista Assets). Consente agli amministratori di importare un numero elevato di risorse da un’origine dati ad AEM Assets.
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
-source-git-commit: cd4435247505e5067d09631b29a29e26d60eb09a
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1761'
-ht-degree: 65%
+ht-degree: 93%
 
 ---
 
@@ -43,7 +45,7 @@ Prima di importare le risorse dall’account di Dropbox ad AEM Assets, crea e co
 
 Esegui i passaggi seguenti:
 
-1. Accedi al tuo [Account Dropbox](https://www.dropbox.com/developers) e fai clic su **[!UICONTROL Creare le app]**. <br>Se utilizzi un account di Dropbox Enterprise, devi avere accesso al ruolo di amministratore dei contenuti.
+1. Accedi al tuo [Account Dropbox](https://www.dropbox.com/developers) e fai clic su **[!UICONTROL Create apps]** (Crea app). <br>Se utilizzi un account Dropbox Enterprise, devi avere accesso al ruolo di amministratore dei contenuti.
 
 1. Nella sezione **[!UICONTROL Choose an API]** (Scegli un API), seleziona l’unico pulsante di scelta disponibile.
 
@@ -55,7 +57,7 @@ Esegui i passaggi seguenti:
 
 1. Specifica un nome per l’applicazione e fai clic su **[!UICONTROL Create app]** (Crea app).
 
-1. In **[!UICONTROL Impostazioni]** della tua applicazione, aggiungi https://experience.adobe.com alla scheda **[!UICONTROL URI di reindirizzamento]** sezione.
+1. Nella scheda **[!UICONTROL Settings]** (Impostazioni) dell’applicazione creata, aggiungi https://experience.adobe.com alla sezione **[!UICONTROL Redirect URIs]** (URI di reindirizzamento).
 
 1. Copia i valori per i campi **[!UICONTROL App key]** (Chiave app) e **[!UICONTROL App secret]** (Segreto app). I valori sono necessari durante la configurazione dello strumento di importazione in blocco in AEM Assets.
 
@@ -75,26 +77,26 @@ Esegui i passaggi seguenti:
 
 Prima di importare risorse dall’account OneDrive in AEM Assets, crea e configura l’applicazione per sviluppatori OneDrive.
 
-### Creare un&#39;applicazione
+### Creare un’applicazione
 
-1. Accedi al tuo [Account OneDrive](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) e fai clic su **[!UICONTROL Nuova registrazione]**.
+1. Accedi al tuo [Account OneDrive](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) e fai clic su **[!UICONTROL New registration]** (Nuova registrazione).
 
-1. Specifica un nome per l’applicazione, seleziona **[!UICONTROL Solo account in questa directory organizzativa (solo Adobe: singolo tenant)]** da **[!UICONTROL Tipi di account supportati]**.
+1. Specifica un nome per l’applicazione, seleziona **[!UICONTROL Accounts in this organizational directory only (Adobe only - Single tenant)]** (Solo account in questa directory organizzativa (solo Adobe: tenant singolo)) da **[!UICONTROL Supported account types]** (Tipi di account supportati).
 
 1. Per aggiungere degli URI di reindirizzamento, effettua le seguenti operazioni:
 
-   1. In **[!UICONTROL Seleziona una piattaforma]** menu a discesa, seleziona **[!UICONTROL Web]**.
+   1. Nel menu a discesa **[!UICONTROL Select a platform]** (Seleziona una piattaforma), seleziona **[!UICONTROL Web]**.
 
-   1. Aggiungi https://experience.adobe.com alla **[!UICONTROL URI di reindirizzamento]** sezione.
+   1. Alla sezione **[!UICONTROL Redirect URIs]** (URI di reindirizzamento) aggiungi https://experience.adobe.
    <!-- Add the first URI and click **[!UICONTROL Configure]** to add it. You can add more by clicking **[!UICONTROL Add URI]** option available in the **[!UICONTROL Web]** section on the **[!UICONTROL Authentication]** page. -->
 
-1. Fai clic su **[!UICONTROL Registra]**. L’applicazione viene creata.
+1. Fai clic su **[!UICONTROL Registra]**. L’applicazione viene creata con successo.
 
-1. Copia i valori per **[!UICONTROL ID applicazione (client)]** e **[!UICONTROL ID directory (tenant)]** campi. I valori sono necessari durante la configurazione dello strumento di importazione in blocco in AEM Assets.
+1. Copia i valori per i campi **[!UICONTROL Application (client) ID]** (ID applicazione (client)) e **[!UICONTROL Directory (tenant) ID]** (ID directory (tenant)). I valori sono necessari durante la configurazione dello strumento di importazione in blocco in AEM Assets.
 
-1. Clic **[!UICONTROL Aggiungi un certificato o un segreto]** corrispondente a **[!UICONTROL Credenziali client]** opzione.
+1. Fai clic su **[!UICONTROL Add a certificate or secret]** (Aggiungi un certificato o un segreto) in corrispondenza dell’opzione **[!UICONTROL Client credentials]** (Credenziali client).
 
-1. Clic **[!UICONTROL Nuovo segreto client]**, fornisci la descrizione del segreto client, la scadenza e fai clic su **[!UICONTROL Aggiungi]**.
+1. Fai clic su **[!UICONTROL New client secret]** (Nuovo segreto client), fornisci la descrizione del segreto client, la scadenza e fai clic su **[!UICONTROL Add]** (Aggiungi).
 
 1. Dopo aver creato il segreto client, copia il campo **[!UICONTROL Value]** (Valore) (non copiare il campo ID segreto). Verrà richiesto per configurare l’importazione in blocco in AEM Assets.
 
@@ -109,13 +111,13 @@ Per aggiungere le autorizzazioni API per l’applicazione, effettua le seguenti 
 
 ## Creare una configurazione di importazione in blocco {#create-bulk-import-configuration}
 
-Esegui la procedura seguente per creare una configurazione di importazione in blocco in [!DNL Experience Manager Assets]:
+Per creare una configurazione di importazione in blocco in [!DNL Experience Manager Assets], effettua le seguenti operazioni:
 
-1. Clic **[!UICONTROL Importazione in blocco]** nel riquadro a sinistra e fare clic su **[!UICONTROL Crea importazione]**.
+1. Fai clic nel riquadro a sinistra su **[!UICONTROL Bulk Import]** (Importazione in blocco) e quindi su **[!UICONTROL Create Import]** (Crea importazione).
 1. Seleziona l’origine dati. Le opzioni disponibili includono **[!UICONTROL Azure]**, **[!UICONTROL AWS]**, **[!UICONTROL Google Cloud]**, **[!UICONTROL Dropbox]** e **[!UICONTROL OneDrive]**.
 1. Specifica un nome per la configurazione dell’importazione in blocco nel campo **[!UICONTROL Nome]**.
 1. Specifica le credenziali specifiche dell’origine dati, come indicato nei [Prerequisiti](#prerequisites).
-1. Immetti il nome della cartella principale che contiene le risorse nell’origine dati in **[!UICONTROL Cartella di origine]** campo.
+1. Immetti il nome della cartella principale che contiene le risorse nell’origine dati nel campo **[!UICONTROL Cartella di origine]**.
 
    >[!NOTE]
    >
@@ -127,7 +129,7 @@ Esegui la procedura seguente per creare una configurazione di importazione in bl
 1. Seleziona la **[!UICONTROL Modalità di importazione]**. Seleziona **[!UICONTROL Ignora]**, **[!UICONTROL Sostituisci]** o **[!UICONTROL Crea versione]**. La modalità Ignora è l’impostazione predefinita e, in questa modalità, l’importazione di una risorsa viene ignorata se esiste già.
    ![Importa dettagli origine](/help/assets/assets/bulk-import-source-details.png)
 
-1. (Facoltativo) Specifica il file di metadati da importare, fornito in formato CSV, nel **[!UICONTROL File metadati]** campo. Il file di origine dei metadati deve trovarsi nella cartella di origine. Clic **[!UICONTROL Successivo]** per passare a **[!UICONTROL Posizione e filtri]**.
+1. (Facoltativo) Specifica il file di metadati da importare, fornito in formato CSV, nel campo **[!UICONTROL File di metadati]**. Il file di origine dei metadati deve trovarsi nella cartella di origine. Fai clic su **[!UICONTROL Avanti]** per passare a **[!UICONTROL Posizione e filtri]**.
 1. Per definire una posizione in DAM in cui importare le risorse utilizzando il campo **[!UICONTROL Cartella risorse di destinazione]**, specifica un percorso. Esempio: `/content/dam/imported_assets`.
 1. (Facoltativo) Nella sezione **[!UICONTROL Scegli filtri]**, specifica la dimensione minima in MB del file delle risorse da includere nel processo di acquisizione nel campo **[!UICONTROL Filtra per dimensione min]**.
 1. (Facoltativo) Specifica la dimensione massima in MB del file delle risorse da includere nel processo di acquisizione del campo **[!UICONTROL Filtra per dimensione max]**.
@@ -137,10 +139,10 @@ Esegui la procedura seguente per creare una configurazione di importazione in bl
 
    ![Filtri di importazione in blocco](assets/bulk-import-location.png)
 
-1. Fai clic su **[!UICONTROL Avanti]**. Selezionare una delle opzioni seguenti in base alle proprie preferenze:
+1. Fai clic su **[!UICONTROL Avanti]**. Seleziona una delle opzioni seguenti in base alle tue preferenze:
 
-   * **[!UICONTROL Salva importazione]** per salvare la configurazione per ora in modo da poterla eseguire in un secondo momento.
-   * **[!UICONTROL Salva ed esegui importazione]** per salvare la configurazione ed eseguire l&#39;importazione in blocco.
+   * Seleziona **[!UICONTROL Salva importazione]** per salvare la configurazione in modo da poterla eseguire in un secondo momento.
+   * **[!UICONTROL Salva ed esegui importazione]** per salvare la configurazione ed eseguire l’importazione in blocco.
    * **[!UICONTROL Salva e pianifica l’importazione]** per salvare la configurazione e pianificare l’importazione in blocco per un momento successivo. Puoi scegliere la frequenza dell’importazione in blocco e impostare la data e l’ora dell’importazione. L’importazione in blocco viene eseguita alla data e all’ora impostate nella frequenza selezionata.
 
    ![Esegui importazione in blocco](assets/save-run.png)
@@ -157,14 +159,13 @@ Per ulteriori informazioni sui nomi non consentiti, sulla gestione dei nomi dell
 
 ## Visualizzare le configurazioni di importazione in blocco esistenti {#view-import-configuration}
 
-Per visualizzare le importazioni in blocco esistenti, selezionare **[!UICONTROL Importazioni in blocco]** nel riquadro a sinistra. Viene visualizzata la pagina Importazioni in blocco con l&#39;elenco di **[!UICONTROL Importazioni eseguite]**. <br>
-È inoltre possibile visualizzare **[!UICONTROL Importazioni salvate]** e **[!UICONTROL Importazioni pianificate]** dall’opzione a discesa.
+Per visualizzare le importazioni in blocco esistenti, seleziona l’opzione **[!UICONTROL Importazioni in blocco]** nel riquadro a sinistra. Viene visualizzata la pagina Importazioni in blocco con l’elenco di **[!UICONTROL Importazioni eseguite]**. <br>È inoltre possibile visualizzare le **[!UICONTROL Importazioni salvate]** e le **[!UICONTROL Importazioni pianificate]** dall’opzione a discesa.
 
 ![Salvare la configurazione dell’importazione in blocco](assets/bulk-import-options.png)
 
 ## Modificare la configurazione dell’importazione in blocco {#edit-import-configuration}
 
-Per modificare i dettagli della configurazione, fai clic su ![Icona Altro](assets/do-not-localize/more-icon.svg) corrisponde al nome della configurazione e fai clic su **[!UICONTROL Modifica]**. Durante l’operazione di modifica non è possibile modificare il titolo della configurazione e l’origine dati di importazione. Puoi modificare la configurazione dalle schede Importazioni eseguite, Importazioni pianificate e Importazioni salvate.
+Per modificare i dettagli della configurazione, fai clic sull’![icona Altro](assets/do-not-localize/more-icon.svg) in corrispondenza del nome della configurazione, quindi fai clic su **[!UICONTROL Modifica]**. Durante l’operazione di modifica non è possibile modificare il titolo della configurazione e l’origine dati di importazione. Puoi modificare la configurazione dalle schede Importazioni eseguite, Importazioni pianificate e Importazioni salvate.
 
 ![Modificare la configurazione dell’importazione in blocco](assets/edit-bulk-import.png)
 
@@ -172,7 +173,7 @@ Per modificare i dettagli della configurazione, fai clic su ![Icona Altro](asset
 
 Per pianificare un’importazione in blocco una tantum o ricorrente, effettua le seguenti operazioni:
 
-1. Clic ![Icona Altro](assets/do-not-localize/more-icon.svg) corrispondente al nome di configurazione disponibile nella **[!UICONTROL Importazioni eseguite]** o **[!UICONTROL Importazioni salvate]** e fai clic su **[!UICONTROL Pianificazione]**. Puoi anche riprogrammare un’importazione pianificata esistente: passa alla scheda **[!UICONTROL Importazioni pianificate]** e fai clic su **[!UICONTROL Pianifica]**.
+1. Fai clic sull’![icona Altro](assets/do-not-localize/more-icon.svg) in corrispondenza del nome della configurazione nella scheda **[!UICONTROL Importazioni eseguite]** o **[!UICONTROL Importazioni salvate]**, quindi fai clic su **[!UICONTROL Pianifica]**. Puoi anche riprogrammare un’importazione pianificata esistente: passa alla scheda **[!UICONTROL Importazioni pianificate]** e fai clic su **[!UICONTROL Pianifica]**.
 
 1. Imposta un’acquisizione una tantum o una pianificazione oraria, giornaliera o settimanale. Fai clic su **[!UICONTROL Invia]**.
 
@@ -180,21 +181,21 @@ Per pianificare un’importazione in blocco una tantum o ricorrente, effettua le
 
 ## Verificare lo stato dell’importazione {#import-health-check}
 
-Per convalidare la connessione all&#39;origine dati, fare clic su ![Icona Altro](assets/do-not-localize/more-icon.svg) corrisponde al nome della configurazione, quindi fai clic su **[!UICONTROL Verifica]**. Se la connessione ha esito positivo, Experience Manager Assets presenta il seguente messaggio:
+Per convalidare la connessione all’origine dati, fai clic sull’![icona Altro](assets/do-not-localize/more-icon.svg) in corrispondenza del nome della configurazione, quindi fai clic su **[!UICONTROL Verifica]**. Se la connessione ha esito positivo, Experience Manager Assets presenta il seguente messaggio:
 
 ![Verifica dello stato dell’importazione in blocco](assets/bulk-import-health-check.png)
 
 ## Eseguire un’esecuzione di prova prima di eseguire un’importazione {#dry-run-bulk-import}
 
-Clic ![Icona Altro](assets/do-not-localize/more-icon.svg) corrisponde al nome della configurazione e fai clic su **[!UICONTROL Dry Run]** per richiamare un’esecuzione dei test per il processo di importazione in blocco. In Experience Manager Assets vengono visualizzati i dettagli seguenti sul processo di importazione in blocco:
+Fai clic sull’![icona Altro](assets/do-not-localize/more-icon.svg) in corrispondenza del nome della configurazione e fai clic su **[!UICONTROL Prova]** per richiamare un’esecuzione di test per il processo di importazione in blocco. In Experience Manager Assets vengono visualizzati i dettagli seguenti sul processo di importazione in blocco:
 
 ![Verifica dello stato dell’importazione in blocco](assets/bulk-import-dry-run.png)
 
 ## Eseguire un’importazione in blocco {#run-bulk-import}
 
-Se hai salvato l’importazione durante la creazione della configurazione, puoi passare alla scheda Importazioni salvate e fare clic su ![Icona Altro](assets/do-not-localize/more-icon.svg) corrispondente alla configurazione e fai clic su **[!UICONTROL Esegui]**.
+Se hai salvato l’importazione durante la creazione della configurazione, passa alla scheda Importazioni salvate, fai clic sull’![icona Altro](assets/do-not-localize/more-icon.svg) in corrispondenza della configurazione e fai clic su **[!UICONTROL Esegui]**.
 
-Allo stesso modo, se devi eseguire un’importazione già eseguita, passa alla scheda Importazioni eseguite, quindi fai clic su ![Icona Altro](assets/do-not-localize/more-icon.svg) corrisponde al nome della configurazione e fai clic su **[!UICONTROL Esegui]**.
+Allo stesso modo, se devi eseguire un’importazione già eseguita, passa alla scheda Importazioni eseguite, fai clic sull’![icona Altro](assets/do-not-localize/more-icon.svg) in corrispondenza del nome della configurazione e fai clic su **[!UICONTROL Esegui]**.
 
 ## Interrompere o pianificare un’importazione in corso {#schedule-stop-ongoing-report}
 
@@ -206,11 +207,11 @@ Puoi anche visualizzare le risorse importate nella cartella di destinazione, fac
 
 ## Eliminare una configurazione di importazione in blocco {#delete-bulk-import-configuration}
 
-Clic ![Icona Altro](assets/do-not-localize/more-icon.svg) corrispondente al nome della configurazione esistente in **[!UICONTROL Importazioni eseguite]**, **[!UICONTROL Importazioni pianificate]**, o **[!UICONTROL Importazioni salvate]** e fai clic su **[!UICONTROL Elimina]** per eliminare la configurazione Importazione in blocco.
+Fai clic sull’![icona Altro](assets/do-not-localize/more-icon.svg) in corrispondenza del nome della configurazione esistente nelle schede **[!UICONTROL Importazioni eseguite]**, **[!UICONTROL Importazioni pianificate]** o **[!UICONTROL Importazioni salvate]** e fai clic su **[!UICONTROL Elimina]** per eliminare la configurazione Importazione in blocco.
 
 ## Passare alle risorse dopo l’importazione in blocco {#view-assets-after-bulk-import}
 
-Per visualizzare il percorso di destinazione delle risorse in cui vengono importate dopo l’esecuzione del processo di importazione in blocco, fai clic su ![Icona Altro](assets/do-not-localize/more-icon.svg) corrisponde al nome della configurazione, quindi fai clic su **[!UICONTROL Visualizza risorse]**.
+Per visualizzare il percorso di destinazione in cui le risorse vengono importate dopo l’esecuzione del processo di importazione in blocco, fai clic sull’![icona Altro](assets/do-not-localize/more-icon.svg) in corrispondenza del nome della configurazione, quindi fai clic su **[!UICONTROL Visualizza risorse]**.
 
 ## Video: importare risorse in blocco tramite la vista Risorse
 

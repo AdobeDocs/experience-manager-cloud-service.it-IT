@@ -3,10 +3,10 @@ title: Come si cercano le risorse in AEM?
 description: Scopri come cercare le risorse in AEM utilizzando il pannello Filtri e come utilizzare i risultati visualizzati nella ricerca delle risorse.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Search,Metadata,Asset Distribution
-role: User,Admin
+feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
+role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '5503'
 ht-degree: 6%

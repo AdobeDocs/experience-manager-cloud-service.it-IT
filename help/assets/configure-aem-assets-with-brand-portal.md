@@ -2,10 +2,10 @@
 title: Configurare AEM Assets as a [!DNL Cloud Service] con Brand Portal
 description: Scopri come configurare AEM Assets con Brand Portal. La configurazione consente di pubblicare le risorse del brand approvate da un’istanza AEM a Brand Portal e distribuirle agli utenti Brand Portal.
 contentOwner: AK
-feature: Brand Portal,Asset Distribution,Configuration
+feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 5fd488a6d5272ac71208e5645facc04b3d9ac51a
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 10%

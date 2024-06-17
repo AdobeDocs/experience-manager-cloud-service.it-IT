@@ -3,9 +3,9 @@ title: Gli schemi di metadati definiscono il layout della pagina delle propriet�
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scopri come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare uno schema di metadati alle risorse.
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: User, Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '2634'
 ht-degree: 10%

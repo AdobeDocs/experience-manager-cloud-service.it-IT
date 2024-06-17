@@ -2,12 +2,12 @@
 title: Installa [!DNL Workfront for Experience Manager enhanced connector]
 description: Installa [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 393ec79e820632e879a377e697ecd09f4571c0b7
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 2%
+source-wordcount: '765'
+ht-degree: 1%
 
 ---
 
@@ -67,7 +67,7 @@ Prima di installare il connettore, effettuare le seguenti operazioni di preinsta
 1. Questa installazione richiede le conoscenze necessarie per impostare un progetto Maven in [!DNL Experience Manager] as a [!DNL Cloud Service]. Utilizza le seguenti risorse per comprendere come includere un pacchetto di terze parti nel progetto Maven:
 
    * [Includi pacchetto di terze parti nel progetto Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#including-third-party).
-   * [Distribuisci con [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it).
+   * [Distribuisci con [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html).
 
 Per installare il componente aggiuntivo in [!DNL Experience Manager] as a [!DNL Cloud Service], effettua le seguenti operazioni:
 
@@ -146,7 +146,7 @@ Per informazioni sull&#39;aggiornamento di [!DNL Workfront for Experience Manage
 
 Per creare una connessione con [!DNL Workfront], effettua le seguenti operazioni:
 
-1. In entrata [!DNL Experience Manager], seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configurazione strumenti Workfront]**.
+1. In entrata [!DNL Experience Manager], seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione strumenti Workfront]**.
 
 1. Seleziona `workfront-tools` nel pannello a sinistra e seleziona **[!UICONTROL Crea]** in alto a destra.
 

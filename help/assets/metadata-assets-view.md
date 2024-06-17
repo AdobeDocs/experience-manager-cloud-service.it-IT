@@ -1,13 +1,14 @@
 ---
 title: Come si gestiscono i metadati nella vista Risorse?
 description: Scopri come gestire i metadati nella vista Risorse. Una migliore gestione dei metadati rende una risorsa più accessibile, facile da gestire e completa.
-role: User,Leader,Admin,Architect,Developer
+role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+feature: Metadata
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1783'
-ht-degree: 81%
+ht-degree: 87%
 
 ---
 
@@ -145,7 +146,7 @@ Per assegnare un modulo di metadati a una cartella:
 
 2. Fai clic su **[!UICONTROL Assegna a cartella]**.
 
-3. Seleziona la cartella e fai clic su **[!UICONTROL Assegna]**. È possibile selezionare le cartelle facendo clic sui nomi delle cartelle.
+3. Seleziona la cartella e fai clic su **[!UICONTROL Assegna]**. Puoi selezionare le cartelle facendo clic sui nomi delle cartelle.
 
    ![assegnare un modulo di metadati a una cartella](assets/assign-to-folder.png)
 
@@ -153,7 +154,7 @@ Per assegnare un modulo di metadati a una cartella:
 
    ![Modulo metadati dalle proprietà della cartella](assets/metadata-from-folder-props.png)
 
-### Rimuovi modulo metadati dalle cartelle {#remove-metadata-form-folder}
+### Rimuovere un modulo metadati dalle cartelle {#remove-metadata-form-folder}
 
 Dopo aver assegnato un modulo metadati a una o più cartelle, Experience Manager Assets consente inoltre di rimuovere il modulo metadati dalle cartelle selezionate.
 
@@ -161,11 +162,11 @@ Per rimuovere un modulo di metadati da una cartella:
 
 1. Passa a **[!UICONTROL Impostazioni]** > **[!UICONTROL Moduli di metadati]** e seleziona un modulo di metadati.
 
-1. Clic **[!UICONTROL Rimuovi da cartelle]**. Viene visualizzato l’elenco delle cartelle assegnate al modulo metadati.
+1. Fai clic su **[!UICONTROL Rimuovi da cartelle]**. Viene visualizzato l’elenco delle cartelle assegnate al modulo di metadati.
 
-1. Seleziona la cartella e fai clic su **[!UICONTROL Rimuovi]**. È inoltre possibile selezionare più cartelle dall&#39;elenco.
+1. Seleziona la cartella e fai clic su **[!UICONTROL Rimuovi]**. È anche possibile selezionare più cartelle dall’elenco.
 
-Puoi anche passare alla pagina dei dettagli della cartella e selezionare **[!UICONTROL Modulo metadati mappato dal sistema]** dal **[!UICONTROL Forms metadati]** per rimuovere il modulo di metadati assegnato da una cartella.
+Puoi passare anche alla pagina dei dettagli della cartella e selezionare **[!UICONTROL Modulo di metadati mappato dal sistema]** dal campo **[!UICONTROL Moduli di metadati]**, per rimuovere il modulo di metadati assegnato da una cartella.
 
 ## Passaggi successivi {#next-steps}
 

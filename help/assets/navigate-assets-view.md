@@ -1,11 +1,13 @@
 ---
-title: "Interfaccia utente di [!DNL Assets view]"
+title: '''[!DNL Assets view] interfaccia utente"'
 description: Comprendere l’interfaccia utente e la navigazione in [!DNL Assets view].
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -93,7 +95,7 @@ Other use cases after previewing.
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&amp;lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/i?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >

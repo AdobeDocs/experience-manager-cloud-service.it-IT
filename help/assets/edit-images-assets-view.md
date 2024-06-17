@@ -3,10 +3,11 @@ title: Modificare le immagini
 description: Modifica le immagini utilizzando le opzioni baate su [!DNL Adobe Express] e salva le immagini aggiornate come versioni.
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
-source-git-commit: 42d3751a4a29149f3b31dbc28555b81aa7ed43cc
+feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 70%
+ht-degree: 72%
 
 ---
 
@@ -84,9 +85,9 @@ Potete convertire rapidamente un&#39;immagine PNG in un formato JPEG utilizzando
 
 ### Limitazioni {#limitations-adobe-express}
 
-* Risoluzione immagine supportata: minima - 50 pixel, massima - 6000 pixel per dimensione.
+* Risoluzione immagine supportata: minima 50 pixel, massima 6000 pixel per dimensione.
 
-* Dimensione massima del file supportata: 17 MB.
+* Dimensione file massima supportata: 17 MB.
 
 ## Modificare le immagine utilizzando l’editor integrato Adobe Express {#edit-using-embedded-editor}
 

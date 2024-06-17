@@ -1,65 +1,68 @@
 ---
-title: Riutilizzare i frammenti di contenuto utilizzando MSM e Live Copy
-description: Scopri sull'utilizzo della funzionalità Live Copy di MSM per utilizzare lo stesso contenuto frammento di contenuto o simile in più posizioni, durante la sincronizzazione con il contenuto di origine.
-source-git-commit: 3ce1a982055c2f9c900edbd88e079deb6d3a036a
+title: Riutilizzare i frammenti di contenuto con MSM e Live Copy
+description: Scopri come utilizzare la funzionalità Live Copy di MSM per utilizzare lo stesso contenuto di frammenti di contenuto, o simile, in più posizioni, durante la sincronizzazione con il contenuto sorgente.
+exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
+feature: Content Fragments
+role: User
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 10%
 
 ---
 
-# Riutilizzare i frammenti di contenuto utilizzando MSM {#reuse-content-fragments-using-msm}
+# Riutilizzare frammenti di contenuto con MSM {#reuse-content-fragments-using-msm}
 
-Multi Site Manager (MSM) e la funzionalità Live Copy consentono di utilizzare lo stesso contenuto in più posizioni, durante la sincronizzazione con il contenuto di origine.
+Multi Site Manager (MSM) e la funzionalità Live Copy consentono di utilizzare lo stesso contenuto in più posizioni, sincronizzandolo con il contenuto sorgente.
 
 * Con MSM Live Copy puoi:
    * Creare contenuto una volta e poi
-   * Riutilizzare questo contenuto in altre aree dello stesso o di altri siti o applicazioni.
+   * Riutilizzare questo contenuto in altre aree dello stesso sito o di altri siti o applicazioni.
 * MSM mantiene quindi le relazioni in tempo reale tra il contenuto sorgente e le relative Live Copy in modo che:
-   * Quando modifichi il contenuto di origine, l&#39;origine e le Live Copy vengono sincronizzate.
+   * Quando modifichi il contenuto sorgente, la sorgente e le Live Copy vengono sincronizzate.
    * Puoi apportare modifiche solo al contenuto delle Live Copy scollegando la relazione in tempo reale per le singole sottopagine e/o componenti.
 
-Per una panoramica dettagliata dei concetti MSM, vedere [Riutilizzo del contenuto: Multi Site Manager e Live Copy](/help/sites-cloud/administering/msm/overview.md).
+Per una panoramica dettagliata dei concetti di MSM consulta [Riutilizzo del contenuto: Gestore multisito e Live Copy](/help/sites-cloud/administering/msm/overview.md).
 
 >[!NOTE]
 >
->[La funzionalità Multi Site Manager (MSM)](/help/sites-cloud/administering/msm/overview.md) in Adobe Experience Manager consente agli utenti di riutilizzare contenuto creata una volta e quindi riutilizzata in più posizioni Web.
+>[Gestione multisito (MSM)](/help/sites-cloud/administering/msm/overview.md) funzionalità di Adobe Experience Manager consente agli utenti di riutilizzare i contenuti creati una volta e poi riutilizzati in più posizioni web.
 
-Utilizzando MSM per i frammenti di contenuto è possibile:
+Utilizzando MSM per frammenti di contenuto puoi:
 
-* Crea frammenti di contenuto una volta e quindi creare copie (collegate) di questi frammenti per riutilizzarli in altre aree del sito o applicazione.
+* Crea frammenti di contenuto una volta e quindi crea copie (collegate) di questi frammenti da riutilizzare in altre aree del sito o dell’applicazione.
 * Mantieni più copie sincronizzate aggiornando la copia sorgente una sola volta, quindi inviando le modifiche alle copie (live).
 * Apporta modifiche locali sospendendo temporaneamente o definitivamente il collegamento tra i frammenti padre e figlio, completamente o per le relative varianti o campi.
 
-MSM per frammenti di contenuto, combinato con la funzionalità dell&#39;editor dei frammenti di contenuto, consente di interrompere e ripristinare l&#39;ereditarietà a livello di campo.
+MSM per frammenti di contenuto, combinato con la funzionalità nell’Editor frammenti di contenuto, consente di interrompere e ripristinare l’ereditarietà a livello di campo.
 
 >[!CAUTION]
 >
->MSM per frammenti di contenuto è disponibile solo quando si utilizzano frammenti di contenuto tramite la **console Assets** .
+>MSM per frammenti di contenuto è disponibile solo quando si utilizzano frammenti di contenuto tramite **Risorse** console.
 >
->La funzionalità MSM non *è* disponibile quando si utilizza la **console Frammenti di** contenuto.
+>La funzionalità MSM è *non* disponibile quando si utilizza **Frammenti di contenuto** console.
 
-## Come si fa {#how-to}
+## Procedura {#how-to}
 
-Per i dettagli sull&#39;utilizzo di MSM per i frammenti di contenuto (applicabile anche a Assets, consulta la seguente documentazione):
+Consulta la seguente documentazione per informazioni dettagliate sull’utilizzo di MSM per Frammenti di contenuto (applicabile anche ad Assets):
 
-* Come utilizzare [MSM per frammenti di contenuto (e Assets)](/help/assets/reuse-assets-using-msm.md)
+* Come usare [MSM per frammenti di contenuto (e risorse)](/help/assets/reuse-assets-using-msm.md)
 
-* [Crea una Live Copy](/help/assets/reuse-assets-using-msm.md)
+* [Creare una Live Copy](/help/assets/reuse-assets-using-msm.md)
 
   >[!CAUTION]
   >
-  >Se si desidera utilizzare MSM per creare copie di frammenti di contenuto), qualsiasi **vincolo univoco** deve essere rimosso da tutti i tipi di dati utilizzati nei rispettivi [modelli](/help/assets/content-fragments/content-fragments-models.md) di frammenti di contenuto.
+  >Se desideri utilizzare MSM per creare copie di frammenti di contenuto), qualsiasi **Univoco** I vincoli devono essere rimossi da tutti i tipi di dati utilizzati nel rispettivo [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md).
 
-* [Visualizza proprietà e stato dell&#39;origine e del Live Copy](/help/assets/reuse-assets-using-msm.md#properties)
+* [Visualizzare le proprietà e lo stato dell’origine e della Live Copy](/help/assets/reuse-assets-using-msm.md#properties)
 * [Propaga le modifiche dall’origine alla Live Copy](/help/assets/reuse-assets-using-msm.md#rollout-sync)
 * Annulla e ripristina l&#39;ereditarietà per:
-   * campi e varianti nel frammento di [contenuto editor](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
-   * [metadati dei relativi risorse](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
-* [Sospendi e riprendi la relazione](/help/assets/reuse-assets-using-msm.md#suspend-resume)
-* [Rimuovi la relazione dal vivo](/help/assets/reuse-assets-using-msm.md#detach)
-* [Confronta MSM per frammenti di contenuto (e Assets) con MSM per Sites](/help/assets/reuse-assets-using-msm.md#comparison)
+   * campi e varianti nella sezione [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+   * [metadati delle risorse correlate](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
+* [Sospendere e riprendere la relazione](/help/assets/reuse-assets-using-msm.md#suspend-resume)
+* [Rimuovi la relazione live](/help/assets/reuse-assets-using-msm.md#detach)
+* [Confrontare MSM per frammenti di contenuto (e risorse) con MSM per Sites](/help/assets/reuse-assets-using-msm.md#comparison)
 
 ## Limitazioni {#limitations}
 
-* I trigger di modifica e la configurazione del rollout associato non esistono per i frammenti di contenuto.
+* I trigger durante la modifica e la configurazione di rollout associata non esistono per i frammenti di contenuto.

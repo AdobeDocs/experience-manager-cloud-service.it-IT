@@ -1,13 +1,14 @@
 ---
 title: Gestire le risorse digitali
 description: Sposta, elimina, copia, rinomina, aggiorna e crea versioni delle risorse in [!DNL Assets view].
-role: User,Leader
+role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1177'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -46,9 +47,9 @@ Utilizza [!DNL Assets view] per eseguire le seguenti attività di gestione risor
 * ![icona Sposta](assets/do-not-localize/move-icon.png) Sposta la risorsa o la cartella selezionata in una posizione diversa nella gerarchia dell’archivio.
 
 * ![icona Rinomina](assets/do-not-localize/rename-icon.png) Rinomina la risorsa o la cartella selezionata. Utilizza un nome univoco; in caso contrario la ridenominazione non riesce e viene visualizzato un’avvertenza. Riprova con un nuovo nome.
-Inoltre, puoi fare clic sul titolo di una risorsa o cartella per rinominarla. Menzionare il nuovo testo nel **Rinomina risorsa** casella di testo e fare clic su **Salva**. Questa funzionalità è disponibile nelle viste Griglia, Galleria, Cascata ed Elenco.
+Inoltre, puoi fare clic sul titolo di una risorsa o di una cartella per rinominarla. Menziona il nuovo testo nella casella di testo **Rinomina risorsa** e fai clic su **Salva**. Questa funzionalità è disponibile nelle viste griglia, galleria, cascata ed elenco.
 
-* ![icona della vista cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista a cascata].
+* ![icona vista cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista cascata].
 
 * ![icona Copia libreria](assets/do-not-localize/copy-icon.png) Aggiungi una risorsa alla libreria.
 
@@ -79,7 +80,7 @@ Puoi selezionare una o più risorse o cartelle o una combinazione di entrambe, e
 <!-- 
 TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed? -->
 
-[!DNL Assets view] crea versioni delle risorse quando queste vengono caricate di nuovo dopo essere state aggiornate o modificate. Puoi visualizzare la cronologia delle versioni precedenti e, se necessario, ripristinare una di queste come versione più recente. Le versioni delle risorse vengono create nei seguenti scenari:
+[!DNL Assets view] crea versioni delle risorse quando queste vengono caricate di nuovo dopo essere state aggiornate o modificate. Puoi visualizzare la cronologia delle versioni precedenti e, se necessario, ripristinare una versione delle risorse precedente come versione più recente. Le versioni delle risorse vengono create nei seguenti scenari:
 
 * Quando si carica una nuova risorsa con lo stesso nome file e nella stessa cartella della risorsa esistente. [!DNL Assets view] richiede di sovrascrivere la risorsa precedente o di salvare la nuova risorsa come versione. Consulta [Caricare risorse duplicate](/help/assets/add-delete-assets-view.md).
 
@@ -166,11 +167,11 @@ Per aggiungere al modulo il campo di metadati Data di scadenza, trascina nel mod
 
 ## Passaggi successivi {#next-steps}
 
-* [Guarda un video per gestire le risorse nella vista Risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=it)
+* [Guarda un video per gestire le risorse nella vista Risorse](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets-essentials/basics/managing)
 
 * Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&amp;lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General#support)
 

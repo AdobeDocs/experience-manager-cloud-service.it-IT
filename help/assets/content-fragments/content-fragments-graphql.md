@@ -1,12 +1,13 @@
 ---
 title: Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL (Risorse - Frammenti di contenuto)
 description: Scopri i concetti di base per la realizzazione di un CMS headless AEM utilizzando frammenti di contenuto con GraphQL per la distribuzione di contenuti headless.
-feature: Content Fragments, GraphQL API
+feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+role: User
+source-git-commit: 1e206a33ef03edfa1af3c0d95f3665b5604f22f3
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 84%
+source-wordcount: '719'
+ht-degree: 87%
 
 ---
 
@@ -109,4 +110,4 @@ Per un’introduzione all’utilizzo dell’API GraphQL di AEM, consulta [Impara
 
 ## Tutorial: guida introduttiva ad AEM headless e GraphQL
 
-Cerchi un pratico tutorial? Estrai [Guida introduttiva di AEM Headless e GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it) tutorial end-to-end che illustra come creare ed esporre contenuti utilizzando le API GraphQL dell’AEM e utilizzati da un’app esterna, in uno scenario CMS headless.
+Cerchi un pratico tutorial? Dai un’occhiata al tutorial [Guida introduttiva di AEM headless e GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it), che illustra come creare ed esporre contenuti, utilizzati da un’app esterna, mediante le API GraphQL di AEM in uno scenario CMS headless.

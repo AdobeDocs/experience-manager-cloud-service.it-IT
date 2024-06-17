@@ -2,10 +2,10 @@
 title: Report sull'utilizzo e la condivisione
 description: Rapporti sulle risorse in [!DNL Adobe Experience Manager Assets] che ti aiutano a comprendere l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
-feature: Asset Reports,Asset Management
-role: Admin,User
+feature: Asset Reports, Asset Management
+role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 9%

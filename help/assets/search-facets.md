@@ -1,10 +1,10 @@
 ---
 title: Facet di ricerca.
 description: In questo articolo viene descritto come creare, modificare e utilizzare i facet di ricerca in Experience Manager.
-feature: Search,Metadata
-role: User,Admin
+feature: Metadata
+role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '2505'
 ht-degree: 19%
@@ -337,7 +337,7 @@ Se non ti è stato assegnato un ruolo di amministratore, ecco un elenco di autor
 | Azione | Autorizzazione |
 |---|---|
 | Modifica | Autorizzazioni di lettura e scrittura su `/apps` in CRX. |
-| Eliminare | Autorizzazioni di lettura, scrittura ed eliminazione per `/apps` in CRX. |
+| Elimina | Autorizzazioni di lettura, scrittura ed eliminazione per `/apps` in CRX. |
 | Anteprima | Autorizzazioni di lettura, scrittura ed eliminazione per `/var/dam/content` in CRX. Inoltre, le autorizzazioni di lettura e scrittura su `/apps` nodo. |
 
 **Consulta anche**

@@ -3,7 +3,8 @@ title: Scopri come cercare e individuare le risorse in [!DNL Assets view]?
 description: Scopri come cercare e individuare le risorse nella vista AEM Assets. La potente funzionalità di ricerca consente di individuare rapidamente la risorsa appropriata e velocizza le attività relative ai contenuti.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: f476088e13466e1c41368112fb161bcbeee2c5cd
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 92%
@@ -329,6 +330,6 @@ Per fornire un feedback sulla funzione di ricerca contestuale, fai clic su ![Ico
 
 * Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
 
-* Fornisci feedback sulla documentazione utilizzando [!UICONTROL Modifica questa pagina], ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema], ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale a destra.
+* Fornisci feedback sulla documentazione utilizzando [!UICONTROL Modifica questa pagina], ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema], ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibili sulla barra laterale a destra.
 
 * Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&amp;lang=it#support)

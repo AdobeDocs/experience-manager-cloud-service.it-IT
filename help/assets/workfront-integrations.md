@@ -1,13 +1,13 @@
 ---
 title: '[!DNL Experience Manager Assets] integrazione con [!DNL Adobe Workfront]'
 description: Introduzione all’integrazione tra [!DNL Assets] e [!DNL Workfront]
-role: Admin,Leader,Architect
-feature: Integrations
+role: Admin, Leader, Architect
+feature: Workfront Integrations and Apps
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: f295eead13bcdeed910ae6b8c82373e2b70f1224
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 6%
+source-wordcount: '390'
+ht-degree: 3%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 6%
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-[!DNL Adobe Workfront] è un’applicazione per la gestione dell’intero ciclo di vita del lavoro, tutto in un’unica posizione. L’integrazione tra [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] consente alle organizzazioni di velocizzare le attività relative ai contenuti e il time-to-market, grazie a un collegamento intrinseco tra il lavoro e la gestione delle risorse digitali. Nel contesto della gestione del proprio lavoro in Workfront, gli utenti possono accedere ai documenti e alle immagini richiesti.
+[!DNL Adobe Workfront] è un&#39;applicazione per la gestione dell&#39;intero ciclo di vita del lavoro in un&#39;unica posizione. L’integrazione tra [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] consente alle organizzazioni di velocizzare le attività relative ai contenuti e il time-to-market, grazie a un collegamento intrinseco tra il lavoro e la gestione delle risorse digitali. Nel contesto della gestione del proprio lavoro in Workfront, gli utenti possono accedere ai documenti e alle immagini richiesti.
 
-Adobe di offerte a [integrare [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] in modalità nativa (supporto di Assets Essentials e Assets as a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
+Adobe di offerte a [integrare [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] in modalità nativa (Assets Essentials di supporto e Assets as a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
 
 Con l’integrazione nativa di Experience Manager, puoi:
 

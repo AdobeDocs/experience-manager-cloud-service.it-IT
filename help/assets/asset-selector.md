@@ -2,9 +2,10 @@
 title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
 description: Utilizza il Selettore risorse per cercare, trovare e recuperare i metadati e le rappresentazioni delle risorse all’interno dell’applicazione.
 contentOwner: KK
-role: Admin,User
+role: Admin, User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
+feature: Collaboration
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '3908'
 ht-degree: 45%
@@ -417,7 +418,7 @@ Puoi utilizzare le proprietà del Selettore risorse per personalizzarne il rende
 | *onClose* | Funzione | No | | Richiamata quando viene premuto il pulsante `Close` nella vista modale. Questa è chiamata solo nella vista `modal` e ignorata nella vista `rail`. |
 | *onFilterSubmit* | Funzione | No | | Richiamata con gli elementi filtro poiché l’utente modifica criteri di filtro diversi. |
 | *selectionType* | stringa | No | singolo | Configurazione per la selezione `single` o `multiple` di risorse alla volta. |
-| *trascinamentoOpzioni.inserisce nell&#39;elenco Consentiti* | booleano | No | | La proprietà viene utilizzata per consentire o negare il trascinamento di risorse non selezionabili. |
+| *trascinamentoOpzioni.inserisco nell&#39;elenco Consentiti* | booleano | No | | La proprietà viene utilizzata per consentire o negare il trascinamento di risorse non selezionabili. |
 | *aemTierType* | stringa | No | | Consente di scegliere se visualizzare le risorse dal livello di consegna, dal livello di authoring o da entrambi. <br><br> Sintassi: `aemTierType:[0: "author" 1: "delivery"` <br><br> Ad esempio, se entrambi `["author","delivery"]` , il selettore dell’archivio visualizza le opzioni sia per l’authoring che per la consegna. |
 | *handleNavigateToAsset* | Funzione | No | | È una funzione di callback per gestire la selezione di una risorsa. |
 | *noWrap* | booleano | No | | Il *noWrap* consente di eseguire il rendering del selettore risorse nel pannello della barra laterale. Se questa proprietà non è menzionata, viene eseguito il rendering del *Vista finestra di dialogo* per impostazione predefinita. |
