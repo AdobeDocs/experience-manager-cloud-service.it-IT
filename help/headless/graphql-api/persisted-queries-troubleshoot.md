@@ -3,7 +3,7 @@ title: Risolvere i problemi relativi alle query GraphQL persistenti
 description: Scopri come risolvere i problemi relativi alle query GraphQL persistenti in Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
+source-git-commit: 736fbc28c800c1c181721df7e0d7feed143642d9
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Per aiutarti a risolvere questi problemi, questa pagina descrive *più comune* c
 
 Una query persistente di GraphQL può non riuscire quando è basata su tipi di GraphQL obsoleti, spesso a causa di una modifica nei modelli dei frammenti di contenuto sottostanti.
 
-Tali errori possono verificarsi per una serie di motivi. Ad esempio, quando l’autore di un modello per frammenti di contenuto (l’elenco non è esaustivo):
+Tali errori possono verificarsi per una serie di motivi. Alcuni esempi includono (l’elenco non è esaustivo), quando l’autore di un modello per frammenti di contenuto:
 
 * rimuove o rinomina un campo
 * aggiorna il **Tipo di modello** che definisce i modelli consentiti per il riferimento al frammento
