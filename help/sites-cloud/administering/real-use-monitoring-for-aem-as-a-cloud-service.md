@@ -2,7 +2,9 @@
 title: Monitoraggio degli utenti reali per AEM as a Cloud Service
 description: Scopri come utilizzare il monitoraggio in tempo reale (RUM, Real Use Monitoring) per acquisire e analizzare l’esperienza dell’utente digitale di un sito web o di un’applicazione in tempo reale.
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
-source-git-commit: 0514d56fb65245b1919969a60f6d4c2b719deaa6
+feature: Administering
+role: Admin
+source-git-commit: 12e37d6d0a8674dd4329200322e2f959cc6dd787
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 0%
