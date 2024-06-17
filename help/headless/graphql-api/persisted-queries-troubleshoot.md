@@ -3,9 +3,9 @@ title: Risolvere i problemi relativi alle query GraphQL persistenti
 description: Scopri come risolvere i problemi relativi alle query GraphQL persistenti in Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
+source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -14,23 +14,22 @@ ht-degree: 0%
 
 Il [Centro azioni](/help/operations/actions-center.md) include **Errore di query persistente GraphQL** attenzione. Ciò significa che vieni informato ogni volta che una delle query persistenti di GraphQL genera un errore.
 
-Per aiutarti a risolvere questi problemi, ti spieghiamo le *più comune* cause degli errori e passaggi per risolverli.
+Per aiutarti a risolvere questi problemi, questa pagina descrive *più comune* cause degli errori e passaggi per risolverli.
 
 ## Modifiche al modello per frammenti di contenuto {#changes-to-content-fragment-model}
 
 Una query persistente di GraphQL può non riuscire quando è basata su tipi di GraphQL obsoleti, spesso a causa di una modifica nei modelli dei frammenti di contenuto sottostanti.
 
-Questo può accadere per una serie di motivi. Ad esempio, quando un autore del modello di contenuto:
+Tali errori possono verificarsi per una serie di motivi. Ad esempio, quando l’autore di un modello per frammenti di contenuto (l’elenco non è esaustivo):
 
 * rimuove o rinomina un campo
-* aggiorna i modelli consentiti definiti per un riferimento frammento
-* annulla la pubblicazione di un modello a cui fanno riferimento altri modelli
-* altre azioni e motivi
+* aggiorna il **Tipo di modello** che definisce i modelli consentiti per il riferimento al frammento
+* non pubblica un modello a cui fanno riferimento altri modelli
 
-Per risolvere questo problema:
+Per risolvere tali errori, è necessario:
 
-* la query persistente che non riesce deve essere aggiornata per adattarsi alla modifica nel modello Frammento di contenuto
-* o la modifica apportata al modello che ha introdotto il problema deve essere ripristinata
+* aggiorna la query persistente che non soddisfa le modifiche apportate al modello per frammenti di contenuto
+* ripristina la modifica nel modello che ha introdotto il problema
 
 ## Endpoint GraphQL non configurato {#graphql-endpoint-not-configured}
 
@@ -48,7 +47,7 @@ Il pattern deve essere `/graphql/execute.json/thePath`.
 
 In questo caso, la query restituisce `405` codice di errore.
 
-Questo non è un aspetto specifico di GraphQL. Consulta l’articolo KB [Errore 405 non consentito](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-20824.html).
+Un errore di questo tipo non è specifico di GraphQL. Consulta l’articolo KB [Errore 405 non consentito](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
 
 ## Bloccato da Dispatcher {#blocked-dispatcher}
 
