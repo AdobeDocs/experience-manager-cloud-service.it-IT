@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
-workflow-type: ht
-source-wordcount: '422'
-ht-degree: 100%
+source-git-commit: 339dd64c602b2eed163f36f70089a50dd0d4a11c
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 80%
 
 ---
 
@@ -49,6 +49,11 @@ Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi riso
 ### Problemi noti {#known-issues-16544}
 
 * GRANITE-52573: le richieste contenenti una doppia barra `//` vengono rifiutate con il codice di stato 400. Questo comportamento verrà ripristinato in una versione di manutenzione successiva.
+
+>[!NOTE]
+> Il team ingegneristico dell’AEM ha identificato una regressione della funzionalità Launches che influisce sulle versioni dell’AEM correnti a partire da 16461. A causa di questa regressione, i nuovi lanci (creati dopo l’applicazione di nuove versioni) che includono pagine non profonde non verranno promossi correttamente a causa di configurazioni mancanti.
+> Nel caso in cui i tuoi ambienti siano interessati, tramite l’assistenza clienti è disponibile uno script shell per identificare e aggiornare le configurazioni mancanti (riferimento interno SITES-22457).
+> Sarà resa disponibile una correzione a lungo termine che garantirà la creazione di nuovi lanci con tutte le configurazioni corrette. Fino ad allora, è disponibile su richiesta anche una versione patch interna.
 
 ### Notifica di modifica {#change-notice-16544}
 
