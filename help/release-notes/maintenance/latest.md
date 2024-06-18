@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 339dd64c602b2eed163f36f70089a50dd0d4a11c
+source-git-commit: d2f92869204dc0157dcc1f41d9fe88cdf5875965
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 80%
+source-wordcount: '595'
+ht-degree: 33%
 
 ---
 
@@ -15,55 +15,66 @@ ht-degree: 80%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 16544 {#release-16544}
+## Versione 16799 {#release-16799}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 16544, rilasciata pubblicamente il 4 giugno 2024. La versione di manutenzione precedente era 16461.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 16799, rilasciata pubblicamente il mercoledì 18 giugno 2024. La versione di manutenzione precedente era 16544.
 
 Con la versione di attivazione funzioni 2024.6.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
->[!CAUTION]
->
->Utilizza l’SDK a cui si fa riferimento qui sotto, poiché è stata confermata una regressione con l’SDK precedente:
->`AEM SDK v2024.06.16647.20240607T103723Z-240500`
+### Miglioramenti {#enhancements-16799}
 
-### Miglioramenti {#enhancements-16544}
+* ASSETS-31977: operazioni avanzate di spostamento, copia ed eliminazione delle risorse.
+* ASSETS-33618: trascrizione automatica e funzionalità di traduzione per video in Dynamic Medie.
+* ASSETS-33618: azione di approvazione per ContentHub e DM e aggiunta di proprietà alle proprietà damAssetLucene.
+* ASSETS-35533: aggiungi le proprietà DRM e CAI all’indice damAssetLucene.
+* ASSETS-37280: gestione dei processi sequenziali per la traduzione quando il sottotitolo sorgente (vtt) è ancora in elaborazione.
+* ASSETS-37559: è stato migliorato l’evento di eliminazione delle risorse.
+* ASSETS-37723: implementa l’evento risorse pubblicate.
+* ASSETS-37724: implementa l’evento di annullamento pubblicazione della risorsa.
+* ASSETS-38614: miglioramenti all’interfaccia utente Condividi collegamento.
+* ASSETS-39601: Applica automaticamente la regola di convalida al nome della Live Copy della risorsa.
+* ASSETS-39454: passa a viewers 2024.5.0 in Quickstart.
+* CNTBF-184: percorsi di supporto sotto `/conf` in Backflow del contenuto.
 
-* GRANITE-41133: supporto di Jakarta Servlet API 5 e OSGi Servlet Whiteboard API.
-* GRANITE-51355: evento org.slf4j obsoleto.
-* GRANITE-51565: AEM perde la relazione tra il gruppo locale e il gruppo esterno quando quello locale viene pubblicato da AEM.
-* GRANITE-51707: impostazione del cookie saml_request_path durante il reindirizzamento http per l’autenticazione.
-* GRANITE-52010: aggiornamento di Jackrabbit alla versione 2.20.16.
-* GRANITE-52057: aggiornamento di Filevault a 3.7.3-T20240514105118-694f6aea per correggere JCRVLT-745.
-* SKYOPS-35998: aggiornamento delle dipendenze “Sling RepoInit” - Repoinit Parser 1.9.0, Repoinit JCR 1.1.46.
+### Problemi risolti {#fixed-issues-16799}
 
-### Problemi risolti {#fixed-issues-16544}
+* ASSETS-37335: La Modifica Del Pannello Di Ricerca Nel Filtro Deseleziona Tutte Le Caselle.
+* ASSETS-38069: problema di anteprima di DAM PDF dell’AEM nella selezione del filtro della timeline.
+* ASSETS-38215: il pulsante della licenza di Adobe Stock è disabilitato nell’AEM as a Cloud Service per l’abbonamento Enterprise.
+* ASSETS-38578: collegamenti ipertestuali errati nel rapporto Condivisione collegamenti risorse.
+* ASSETS-38678: visualizza le impostazioni non funzionanti in Dettagli raccolta.
+* ASSETS-39071: la consegna ottimizzata per il web può generare un’eccezione se il tipo mime della rappresentazione originale è nullo.
+* ASSETS-39316: l’ordinamento per nome non funziona nelle raccolte.
+* ASSETS-39377: l&#39;importazione in blocco da OneDrive potrebbe non riuscire quando si riceve la pressione di back-up dall&#39;API remota.
+* ASSETS-39428: problemi di rendering nell’interfaccia utente per la gestione dei copyright.
+* CQ-4357150: Guava nel bundle cq-content-sync.
+* GRANITE-52573: richieste contenenti una doppia barra `//` vengono rifiutate con il codice di stato 400.
+* SCRNS-4194: rimuovere la dipendenza dalle API Guava di Google.
+* SCRNS-4360: Pulsante Gestisci pubblicazione e pubblicazione rapida mancante per gli utenti non amministratori nel provider di contenuti per i canali.
+* SCRNS-4323: nasconde/disabilita i lanci da screens.html.
 
-* GRANITE-51375: se non è specificato alcun percorso intermedio, la sincronizzazione idp genera un’eccezione NPE.
-* GUIDES-17171: l’operazione di copia e incolla dii argomenti di dimensioni superiori a 15 KB non riesce a causa di un errore imprevisto.
-* GUIDES-17088: la funzionalità per cambiare lo stato del documento dal pannello **Proprietà file** non funziona correttamente e lo stato viene cambiato in *Bozza*.
-* GUIDES-16931: le immagini collegate dagli argomenti non vengono visualizzate nella linea di base dopo la creazione della versione.
-* GUIDES-16896: nei pannelli dei contenuti riutilizzabili non è elencato alcun elemento se nelle **Preferenze utente** è impostata la visualizzazione per **Nome file**.
-
-Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi risolti in Experience Manager Guides, vedi [Roadmap delle versioni di Experience Manager Guides](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
-
-### Problemi noti {#known-issues-16544}
-
-* GRANITE-52573: le richieste contenenti una doppia barra `//` vengono rifiutate con il codice di stato 400. Questo comportamento verrà ripristinato in una versione di manutenzione successiva.
+### Problemi noti {#known-issues-16799}
 
 >[!NOTE]
 > Il team ingegneristico dell’AEM ha identificato una regressione della funzionalità Launches che influisce sulle versioni dell’AEM correnti a partire da 16461. A causa di questa regressione, i nuovi lanci (creati dopo l’applicazione di nuove versioni) che includono pagine non profonde non verranno promossi correttamente a causa di configurazioni mancanti.
 > Nel caso in cui i tuoi ambienti siano interessati, tramite l’assistenza clienti è disponibile uno script shell per identificare e aggiornare le configurazioni mancanti (riferimento interno SITES-22457).
 > Sarà resa disponibile una correzione a lungo termine che garantirà la creazione di nuovi lanci con tutte le configurazioni corrette. Fino ad allora, è disponibile su richiesta anche una versione patch interna.
 
-### Notifica di modifica {#change-notice-16544}
+### Notifica di modifica {#change-notice-16799}
 
-A partire da settembre 2024, AEM as a Cloud Service disabiliterà la serializzazione dei Risolutori risorse tramite il framework Sling Model Exporter. Per ulteriori dettagli, consulta la [documentazione](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md).
+* Questa versione contiene le seguenti nuove versioni dell’indice del prodotto:
+   * **damAssetLucene-11**
+   * **fragments-11**
 
-### Funzioni e API obsolete {#deprecated-16544}
+  Le versioni personalizzate delle versioni precedenti dell’indice verranno unite automaticamente alla nuova versione dell’indice del prodotto. Applica ulteriori aggiornamenti personalizzati alla versione unita.
+
+* A partire da settembre 2024, AEM as a Cloud Service disabiliterà la serializzazione dei Risolutori risorse tramite il framework Sling Model Exporter. Per ulteriori dettagli, consulta la [documentazione](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md).
+
+### Funzioni e API obsolete {#deprecated-16799}
 
 Per sapere cosa è obsoleto o è stato rimosso in AEM as a Cloud Service, consulta [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
-### Tecnologie incorporate {#embedded-tech-16544}
+### Tecnologie incorporate {#embedded-tech-16799}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
