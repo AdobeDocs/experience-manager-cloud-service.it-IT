@@ -4,10 +4,10 @@ description: Scopri come configurare funzionalità di rete avanzate come una VPN
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '5332'
-ht-degree: 100%
+source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
+workflow-type: tm+mt
+source-wordcount: '5744'
+ht-degree: 92%
 
 ---
 
@@ -238,7 +238,7 @@ La configurazione dell’indirizzo IP in uscita dedicato è analoga a quella del
 
 >[!INFO]
 >
->La funzionalità di inoltro Splunk non è possibile da un indirizzo IP in uscita dedicato.
+>Se è configurato un IP in uscita dedicato, l’inoltro Splunk continuerà a utilizzare gli intervalli di uscita dinamici. Impossibile configurare l’inoltro Splunk per l’utilizzo di un IP in uscita dedicato.
 
 ### Configurazione interfaccia utente {#configuring-dedicated-egress-provision-ui}
 
@@ -806,3 +806,49 @@ Il pool di connessioni è una tecnica ideata per creare e sostenere un archivio 
 L’implementazione di un’adeguata strategia di connection pooling è una misura proattiva per correggere una svista comune nella configurazione del sistema, che spesso porta a prestazioni non ottimali. Stabilendo correttamente un connection pool, Adobe Experience Manager (AEM) può migliorare l’efficienza delle chiamate esterne. Questo non solo riduce il consumo di risorse, ma riduce anche il rischio di interruzioni del servizio e diminuisce la probabilità di incontrare richieste non riuscite durante la comunicazione con i server a monte.
 
 Alla luce di queste informazioni, Adobe consiglia di rivalutare la configurazione AEM corrente e considerare l’inserimento accurato del connection pooling insieme alle impostazioni di rete avanzate. Gestendo il numero di connessioni parallele e riducendo al minimo la possibilità di connessioni non aggiornate, queste misure riducono il rischio che i server proxy raggiungano il limite di connessioni consnetite. Di conseguenza, questa implementazione strategica è progettata per ridurre la probabilità che le richieste non raggiungano gli endpoint esterni.
+
+#### Domande frequenti sui limiti di connessione
+
+Quando si utilizza la rete avanzata, il numero di connessioni è limitato per garantire la stabilità tra gli ambienti ed evitare che gli ambienti inferiori esauriscano le connessioni disponibili.
+
+Le connessioni sono limitate a 1000 per istanza AEM e vengono inviati avvisi ai clienti quando il numero raggiunge i 750.
+
+##### Il limite di connessione è applicato solo al traffico in uscita da porte non standard o a tutto il traffico in uscita?
+
+Il limite è solo per le connessioni che utilizzano la rete avanzata (in uscita su porte non standard, utilizzando IP in uscita dedicato o VPN).
+
+##### Non notiamo una differenza significativa nel numero di connessioni in uscita. Perché stiamo ricevendo la notifica ora?
+
+Se il cliente crea connessioni in modo dinamico (ad esempio, una o più per ogni richiesta), un aumento del traffico può causare un picco delle connessioni.
+
+##### È possibile che in passato abbiamo vissuto una situazione simile senza essere avvertiti?
+
+Gli avvisi vengono inviati solo quando viene raggiunto il limite soft.
+
+##### Cosa succede se viene raggiunto il limite massimo?
+
+Quando viene raggiunto il limite massimo, le nuove connessioni in uscita dall’AEM attraverso la rete avanzata (in uscita su porte non standard, utilizzando IP in uscita dedicato o VPN) verranno eliminate per proteggere il computer da un attacco DoS.
+
+##### È possibile aumentare il limite?
+
+No, avere un numero elevato di connessioni può causare un impatto significativo sulle prestazioni e un DoS tra pod e ambienti.
+
+##### I collegamenti sono automaticamente chiusi dal sistema AEM dopo un certo periodo?
+
+Sì, le connessioni sono chiuse a livello di JVM e in punti diversi dell&#39;infrastruttura di rete. Tuttavia, questo sarà troppo tardi per qualsiasi servizio di produzione. Le connessioni devono essere chiuse in modo esplicito quando non sono più necessarie o restituite al pool quando si utilizza il connection pooling. In caso contrario, il consumo di risorse sarà troppo elevato e potrebbe causare l’esaurimento delle risorse.
+
+##### Se viene raggiunto il limite massimo di connessione, questo influisce su eventuali licenze e comporta costi aggiuntivi?
+
+No, non vi sono licenze o costi associati a questo limite. Si tratta di un limite tecnico.
+
+##### Quanto siamo vicini al limite? Qual è il limite massimo?
+
+L’avviso viene attivato quando le connessioni superano i 750. Il limite massimo è di 1000 connessioni per istanza AEM.
+
+##### Questo limite è applicabile alle VPN?
+
+Sì, il limite si applica alle connessioni che utilizzano la rete avanzata, incluse le VPN.
+
+##### Se utilizziamo un IP in uscita dedicato, questo limite sarà ancora applicabile?
+
+Sì, il limite è ancora applicabile se si utilizza un IP in uscita dedicato.
