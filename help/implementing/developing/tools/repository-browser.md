@@ -6,9 +6,9 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '871'
 ht-degree: 1%
 
 ---
@@ -33,15 +33,13 @@ Accessibile da [Console per sviluppatori as a Cloud Service AEM](/help/implement
 
 Per accedere a AEM as a Cloud Service Developer Console o al browser dell’archivio devono essere soddisfatte le seguenti condizioni
 
-Per accedere alla Console per sviluppatori as a Cloud Service dell’AEM:
+Per accedere alla Console per sviluppatori as a Cloud Service AEM, consulta [Accesso a Console sviluppatori](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
-* Per i programmi di produzione, gli utenti devono disporre di **Cloud Manager - Ruolo Sviluppatore** in Adobe Admin Console
-* Per i programmi sandbox, è disponibile per qualsiasi utente con un profilo di prodotto che consente di accedere a AEM as a Cloud Service.
+Per accedere al Browser dell’archivio, i requisiti sono gli stessi della Console per sviluppatori as a Cloud Service AEM (sopra specificata). Per visualizzare il contenuto del Browser dell’archivio per una particolare istanza:
 
-Per accedere al Browser dell’archivio:
+* Istanze dell’autore: utenti con il profilo di prodotto Utenti AEM per **Istanza Autore** può visualizzare il browser del repository con accesso in lettura minimo; le autorizzazioni dell&#39;utente vengono rispettate durante la navigazione nel repository. Gli utenti con il profilo di prodotto per amministratori dell’AEM possono visualizzare il browser dell’archivio con accesso in lettura completo.
 
-* Gli utenti devono disporre di **Cloud Manager - Sviluppatore** Ruolo nella Console per sviluppatori as a Cloud Service dell’AEM per visualizzare le istanze Author e Publish.
-* Inoltre, per l’autore, gli utenti con il profilo di prodotto Utenti AEM possono visualizzare il browser dell’archivio con un accesso in lettura minimo; le autorizzazioni dell’utente vengono rispettate durante la navigazione nell’archivio. Gli utenti con il profilo di prodotto per amministratori dell’AEM possono visualizzare il browser dell’archivio con accesso in lettura completo.
+* Istanze di pubblicazione: utenti con il profilo di prodotto Utenti AEM per il **Pubblica istanza** può visualizzare il browser dell’archivio con accesso in lettura minimo. Senza questo set di profili di prodotto, gli utenti potranno navigare come utenti anonimi e alcuni percorsi non verranno visualizzati a causa di autorizzazioni limitate.
 
 Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, consulta [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 

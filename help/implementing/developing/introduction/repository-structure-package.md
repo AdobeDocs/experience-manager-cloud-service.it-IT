@@ -4,7 +4,7 @@ description: I progetti Maven in Adobe Experience Manager as a Cloud Service ric
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -164,7 +164,7 @@ Ad esempio:
 + Il pacchetto di codice A viene distribuito in `/apps/a`
 + Il pacchetto di codice B viene distribuito in `/apps/a/b`
 
-Se non viene stabilita una dipendenza a livello di pacchetto dal pacchetto di codice B nel pacchetto di codice A, il pacchetto di codice B può essere distribuito prima in `/apps/a`. Sarebbe quindi seguito dal pacchetto di codice B, che distribuisce in `/apps/a`. Il risultato è una rimozione del precedentemente installato `/apps/a/b`.
+Se non viene stabilita una dipendenza a livello di pacchetto dal pacchetto di codice B nel pacchetto di codice A, il pacchetto di codice B può essere distribuito prima in `/apps/a`. Se è seguito dal pacchetto di codice A, che distribuisce in `/apps/a`, il risultato è una rimozione del precedentemente installato `/apps/a/b`.
 
 In questo caso:
 
