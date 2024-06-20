@@ -4,10 +4,10 @@ description: Edge Delivery Services per AEM Forms sono stati progettati per offr
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: f69336073addb106cde01d72c921f3b98ff6337a
+source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 78%
+source-wordcount: '1043'
+ht-degree: 73%
 
 ---
 
@@ -17,7 +17,7 @@ Edge Delivery Services per AEM Forms sono un set di servizi componibili per un 
 
 Questi servizi consentono di:
 
-* **creare esperienze di iscrizione con strumenti a tua scelta:** aumentare l’efficienza di authoring separando le origini di contenuto. È possibile utilizzare sia l’authoring basato su documenti (Microsoft SharePoint o Google Drive) che l’authoring WYSIWYG (Adaptive Forms Editor). È possibile utilizzare più origini di contenuto nello stesso sito moduli e utilizzare gli strumenti di authoring preferiti, ad esempio Microsoft Excel, Fogli Google o Editor di moduli adattivi.
+* **creare esperienze di iscrizione con strumenti a tua scelta:** aumentare l’efficienza di authoring separando le origini di contenuto. È possibile utilizzare l&#39;authoring basato su documenti (Microsoft SharePoint o Google Drive), l&#39;authoring WYSIWYG (Universal Editor o Adaptive Forms Editor). È possibile utilizzare più origini di contenuto nello stesso sito moduli e utilizzare gli strumenti di authoring preferiti, ad esempio Microsoft Excel, Google Sheets, Universal Editor o Adaptive Forms Editor.
 
 * **Offrire esperienze di registrazione digitale eccezionali:** offri esperienze di registrazione digitale che vengono caricate e riprodotte rapidamente, e controlla in modo continuo le prestazioni dei moduli tramite il monitoraggio degli utenti reali (RUM, Real User Monitoring). Tempi di caricamento più rapidi e un’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento e conversione dei moduli.
 
@@ -29,7 +29,7 @@ I servizi di Edge Delibery per AEM Forms offrono un elevato grado di flessibilit
 
 Ad esempio, i moduli vengono creati direttamente in Microsoft Excel o Fogli Google e questi fogli di calcolo vengono trasformati in moduli per il sito Web. Qualsiasi nuovo modulo o relativo contenuto, ad esempio un nuovo campo modulo, è immediatamente disponibile sul sito web senza che sia necessario ricrearlo.
 
-Il diagramma seguente illustra come modificare il contenuto in Microsoft Excel o Fogli Google (modifica basata su documento) e pubblicarlo in Edge Delivery Services. Mostra anche il metodo di pubblicazione dell’AEM utilizzando l’editor di Forms adattivo (authoring WYSIWYG).
+Il diagramma seguente illustra come modificare il contenuto in Microsoft Excel o Fogli Google (modifica basata su documento) e pubblicarlo in Edge Delivery Services. Mostra anche il metodo di pubblicazione AEM utilizzando l’authoring WYSIWYG (Universal Editor o Adaptive Forms Editor).
 
 ![Pubblica in Edge Delivery Services e AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
@@ -48,7 +48,7 @@ La scelta tra [Authoring basato su documenti](#document-based-authoring-features
 
 ### Caratteristiche principali dell&#39;authoring basato su documenti e dell&#39;authoring WYSIWYG
 
-L’authoring basato su documenti offre una serie di funzioni di base e l’authoring WYSIWYG sfrutta funzionalità aggiuntive oltre all’authoring basato su documenti, consentendoti di creare moduli più complessi e interattivi. Le caratteristiche principali dell&#39;authoring basato su documenti e dell&#39;authoring WYSIWYG sono:
+L’authoring basato su documenti offre un set di funzioni di base e l’authoring WYSIWYG sfrutta funzionalità aggiuntive oltre all’authoring basato su documenti, consentendoti di creare moduli più complessi e interattivi. Le caratteristiche principali dell&#39;authoring basato su documenti e dell&#39;authoring WYSIWYG sono:
 
 #### Funzionalità di authoring basate su documenti
 
@@ -65,7 +65,7 @@ L’authoring basato su documenti consente di creare moduli utilizzando strument
 
 #### Funzioni di authoring WYSIWYG
 
-WYSIWYG Authoring offre un’interfaccia WYSIWYG (Adaptive Forms Editor) per la creazione di moduli e offre tutte le funzionalità dell’authoring basato su documenti, oltre a un’ampia gamma di funzioni aggiuntive:
+L&#39;authoring WYSIWYG fornisce interfacce WYSIWYG (Universal Editor e Adaptive Forms Editor) per la creazione di moduli e offre tutte le funzionalità dell&#39;authoring basato su documenti, oltre a un&#39;ampia gamma di funzioni aggiuntive:
 
 * Editor di regole avanzate per la creazione di logica complessa.
 * Estensibilità lato server per funzionalità personalizzate.
@@ -77,7 +77,9 @@ WYSIWYG Authoring offre un’interfaccia WYSIWYG (Adaptive Forms Editor) per la 
 * Modello dati del modulo (FDM) per la definizione della struttura dei dati e delle interazioni con varie origini dati.
 * Possibilità di scegliere tra più azioni di invio per la gestione degli invii dei moduli, tra cui l’invio di dati a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e molte altre origini dati.
 
-In sostanza, [Authoring WYSIWYG](/help/forms/creating-adaptive-form-core-components.md) si basa sulle basi di [Authoring basato su documenti](/help/edge/docs/forms/create-forms.md), fornendo un toolkit più avanzato per la creazione e la gestione di moduli complessi.
+Le funzioni di cui sopra sono disponibili anche tramite Adaptive Forms Editor.
+
+In sostanza, authoring WYSIWYG (editor universale e [Editor Forms adattivo](/help/forms/creating-adaptive-form-core-components.md)) si basa sulle basi di [Authoring basato su documenti](/help/edge/docs/forms/create-forms.md), fornendo un toolkit più avanzato per la creazione e la gestione di moduli complessi.
 
 >[!NOTE]
 >
