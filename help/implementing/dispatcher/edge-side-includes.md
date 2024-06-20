@@ -1,15 +1,17 @@
 ---
-title: Il lato del bordo include
+title: Il lato Edge include
 description: Adobe Managed CDN ora supporta Edge Side Includes (ESI), un linguaggio di markup per l’assembly di contenuti web dinamici a livello di edge.
 feature: Dispatcher
-source-git-commit: 8f9173e45dd802ecced21531dfa161890e4a8af1
+exl-id: 35093477-2788-4f69-80a9-899f43567cae
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# Il lato del bordo include {#edge-side-includes}
+# Il lato Edge include {#edge-side-includes}
 
 >[!NOTE]
 >Questa funzione non è ancora disponibile al pubblico. Per partecipare al programma di adozione anticipata, invia un messaggio e-mail a `aemcs-cdn-config-adopter@adobe.com` e descrivi il tuo caso d’uso.

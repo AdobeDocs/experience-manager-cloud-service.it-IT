@@ -2,9 +2,11 @@
 title: Creazione di esperienze di prodotto
 description: Scopri come creare contenuti di prodotto da utilizzare in vari canali per creare un’esperienza di acquisto coinvolgente.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -15,7 +17,7 @@ Scopri come gestire le esperienze di prodotto.
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di contenuti e commercio Adobe Experience Manager (AEM), [Gestire le esperienze del catalogo dei prodotti in staging](staged-catalog.md), hai imparato a gestire le esperienze del catalogo dei prodotti in staging.
+Nel documento precedente del percorso Adobe Experience Manager (AEM) Content and Commerce, [Gestire le esperienze del catalogo dei prodotti in staging](staged-catalog.md), hai imparato a gestire le esperienze del catalogo dei prodotti in staging.
 
 ## Obiettivo {#objective}
 
@@ -65,7 +67,7 @@ Facendo clic sull’icona dell’azione, questa parte di contenuto viene aperta 
 
 Nei moduli precedenti hai imparato a utilizzare più modelli di catalogo prodotti. I modelli multipli sono un ottimo modo per creare modelli diversi, ma spesso non sono necessari. Spesso lo stesso modello può essere utilizzato con segnaposto per singoli contenuti. CIF supporta i segnaposto per Frammenti di contenuto e Frammenti di esperienza.
 
-Iniziamo con il segnaposto Frammento esperienza. Apri un modello di prodotto nell’editor AEM. Trascina la **Frammento di esperienza Commerce** sul modello, quindi apri la finestra di dialogo config.
+Iniziamo con il segnaposto Frammento esperienza. Apri un modello di prodotto nell’editor AEM. Trascina la **Frammento esperienza Commerce** sul modello, quindi apri la finestra di dialogo config.
 
 ![segnaposto pem](assets/pem-placeholder.png)
 
@@ -103,16 +105,16 @@ Se hai creato contenuti associati per quel prodotto, passa nella barra laterale 
 
 ## Fine del percorso? {#end-of-journey}
 
-Congratulazioni. Hai completato il percorso per sviluppatori di contenuti e commercio dell’AEM. Ora dovresti:
+Congratulazioni. Hai completato il percorso per sviluppatori di contenuti AEM e Commerce. Ora dovresti:
 
 * come associare qualsiasi contenuto AEM agli oggetti del catalogo dei prodotti
 * utilizzare i segnaposto per arricchire singolarmente le pagine di prodotti e categorie
 * sapere come rendere il contenuto acquistabile e utilizzare la scheda contenuto associata
 
-Ora puoi gestire le esperienze dei prodotti utilizzando AEM Content and Commerce. Tuttavia, AEM Content and Commerce dispone di molte opzioni aggiuntive. Consulta alcune delle risorse aggiuntive disponibili nella sezione [Sezione Risorse aggiuntive](#additional-resources) dove puoi saperne di più sulle funzioni visualizzate in questo percorso.
+Ora puoi gestire le esperienze dei prodotti utilizzando AEM Content e Commerce. Tuttavia, AEM Content e Commerce hanno molte opzioni aggiuntive disponibili. Consulta alcune delle risorse aggiuntive disponibili nella sezione [Sezione Risorse aggiuntive](#additional-resources) dove puoi saperne di più sulle funzioni visualizzate in questo percorso.
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Authoring di esperienze Commerce](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
+* [Creazione di esperienze Commerce](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [Cockpit prodotto](/help/commerce-cloud/authoring/product-cockpit.md)
 * [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

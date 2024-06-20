@@ -8,22 +8,23 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 46%
+source-wordcount: '908'
+ht-degree: 41%
 
 ---
 
 # Sviluppare AEM Commerce per AEM as a Cloud Service {#develop}
 
-Lo sviluppo di progetti AEM Commerce, basati su Commerce Integration Framework (CIF) per AEM as a Cloud Service, segue le stesse regole e best practice di altri progetti AEM su AEM as a Cloud Service. Rivedi prima quanto segue:
+Lo sviluppo di progetti AEM-Commerce, basati sulla Commerce integration framework (CIF) per AEM as a Cloud Service, segue le stesse regole e best practice di altri progetti AEM sull&#39;AEM as a Cloud Service-COMPATIBILE. Rivedi prima quanto segue:
 
 - [Struttura dei progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=it)
-- [SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
+- [SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=it)
 - [Linee guida per lo sviluppo per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html)
 
-## Sviluppo locale con SDK di AEM as a Cloud Service {#local}
+## Sviluppo locale con SDK as a Cloud Service per AEM {#local}
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
@@ -40,7 +41,7 @@ Il componente aggiuntivo CIF viene fornito come archivio di Sling Feature. Il fi
 - [SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 o successivo)
-- [Node.js v10+](https://nodejs.org/it)
+- [Node.js v10+](https://nodejs.org/en)
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
@@ -82,9 +83,9 @@ Per lo sviluppo locale del componente aggiuntivo CIF utilizzando l’SDK di AEM 
    set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
-   Questa variabile viene utilizzata dall’AEM per connettersi al sistema commerce. Inoltre, il componente aggiuntivo CIF include un proxy inverso locale per rendere disponibile localmente l’endpoint Commerce GraphQL. Questo proxy viene utilizzato dagli strumenti CIF per l’authoring dei contenuti (console dei prodotti e selettori) e per i componenti CIF lato client che eseguono chiamate dirette a GraphQL.
+   Questa variabile viene utilizzata dall’AEM per connettersi al sistema commerce. Inoltre, il componente aggiuntivo CIF include un proxy inverso locale per rendere disponibile localmente l’endpoint Commerce GraphQL. Questo proxy viene utilizzato dagli strumenti di creazione dell’CIF (console prodotti e selettori) e per i componenti CIF lato client che effettuano chiamate dirette a GraphQL.
 
-   Questa variabile deve essere impostata anche per l’ambiente di AEM as a Cloud Service. Per ulteriori informazioni sulle variabili, consulta [Configurazione di OSGi per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development).
+   Questa variabile deve essere impostata anche per l’ambiente as a Cloud Service dell’AEM. Per ulteriori informazioni sulle variabili, consulta [Configurazione di OSGi per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development).
 
 1. (Facoltativo) Per abilitare le funzioni di catalogo per staging, devi creare un token di integrazione per la tua istanza di Adobe Commerce. Segui i passaggi descritti in [Guida introduttiva](./getting-started.md#staging) per creare il token.
 
@@ -106,17 +107,17 @@ Verifica la configurazione tramite la console OSGI:`http://localhost:4502/system
 
 ## Configurazione del progetto {#project}
 
-Esistono due modi per Bootstrap il progetto CIF per AEM as a Cloud Service.
+Ci sono due modi per Bootstrap il tuo progetto CIF per AEM as a Cloud Service.
 
 ### Usare AEM Project Archetype
 
-Il [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) è lo strumento principale per la Bootstrap di un progetto preconfigurato per iniziare a utilizzare CIF. I componenti core CIF e tutte le configurazioni richieste possono essere inclusi in un progetto generato con un’opzione aggiuntiva.
+Il [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) è lo strumento principale per la Bootstrap di un progetto preconfigurato per iniziare a utilizzare l’CIF. I componenti core CIF e tutte le configurazioni richieste possono essere inclusi in un progetto generato con un’opzione aggiuntiva.
 
 >[!TIP]
 >
 >Utilizza sempre la versione più recente di [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype/releases) in modo da poter generare il progetto.
 
-Consulta le [istruzioni d’uso](https://github.com/adobe/aem-project-archetype#usage) di AEM Project Archetype per la generazione di un progetto AEM. Per includere CIF nel progetto, utilizza `includeCommerce` opzione.
+Consulta le [istruzioni d’uso](https://github.com/adobe/aem-project-archetype#usage) di AEM Project Archetype per la generazione di un progetto AEM. Per includere l’CIF nel progetto, utilizza `includeCommerce` opzione.
 
 Ad esempio:
 
@@ -131,7 +132,7 @@ mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
  -D includeCommerce=y
 ```
 
-I componenti core CIF possono essere utilizzati in qualsiasi progetto includendo il `all` o singolarmente utilizzando il pacchetto di contenuti CIF e i bundle OSGI correlati. Per aggiungere manualmente componenti core CIF a un progetto, utilizza le dipendenze seguenti:
+I Componenti core CIF possono essere utilizzati in qualsiasi progetto includendo `all` o singolarmente utilizzando il pacchetto di contenuti CIF e i bundle OSGI correlati. Per aggiungere manualmente i Componenti core CIF a un progetto, utilizza le dipendenze seguenti:
 
 ```java
 <dependency>

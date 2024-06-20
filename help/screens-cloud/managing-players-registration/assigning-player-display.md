@@ -2,10 +2,12 @@
 title: Assegnazione del lettore a un display in Schermi as a Cloud Service
 description: Scopri come assegnare un lettore a una visualizzazione in Screens as a Cloud Service.
 exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -35,6 +37,6 @@ Per assegnare un lettore a una visualizzazione, effettua le seguenti operazioni:
 
 Dopo aver assegnato una visualizzazione a un lettore, come illustrato nella sezione precedente, la visualizzazione assegnata viene visualizzata nella sezione **VISUALIZZAZIONE ASSEGNATA** pannello.
 
-Ora la visualizzazione viene assegnata al lettore e il canale inizia a riprodurre il contenuto. Ora il lettore deve scaricare e iniziare a riprodurre il contenuto. **Congratulazioni.**
+Ora la visualizzazione viene assegnata al lettore e il canale inizia a riprodurre il contenuto. Ora il lettore deve scaricare e iniziare a riprodurre il contenuto. **Congratulazioni!**
 
 ![immagine](/help/screens-cloud/assets/player/output.gif)

@@ -10,10 +10,11 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '2172'
-ht-degree: 11%
+source-wordcount: '2059'
+ht-degree: 9%
 
 ---
 
@@ -33,7 +34,7 @@ Per configurare `UrlProvider` in base ai requisiti e alle esigenze SEO (Search E
 
 >[!NOTE]
 >
-> A partire dalla versione 2.0.0 dei componenti core CIF dell’AEM, la configurazione del provider URL fornisce solo formati URL predefiniti, invece dei formati configurabili a testo libero noti dalle versioni 1.x. Inoltre, l’utilizzo dei selettori per trasmettere i dati negli URL è stato sostituito dai suffissi.
+> A partire dalla versione 2.0.0 dei Componenti core CIF dell’AEM, la configurazione del provider URL fornisce solo formati URL predefiniti, invece dei formati configurabili a testo libero noti dalle versioni 1.x. Inoltre, l’utilizzo dei selettori per trasmettere i dati negli URL è stato sostituito dai suffissi.
 
 ### Formato URL pagina prodotto {#product}
 
@@ -186,7 +187,7 @@ Le pagine di prodotto specifiche vengono selezionate in base alla SKU o alla cat
 
 Il `UrlProvider` è preconfigurato per generare collegamenti profondi a specifiche pagine di prodotti e categorie sulle istanze del livello di authoring. Questa funzionalità è utile per gli editor che navigano in un sito utilizzando la modalità Anteprima, che visitano una pagina di prodotto o categoria specifica e che tornano alla modalità Modifica per modificare la pagina.
 
-Nelle istanze a livello di pubblicazione, invece, gli URL delle pagine del catalogo devono essere mantenuti stabili per non perdere i guadagni, ad esempio, nella classificazione dei motori di ricerca. A causa di questo livello di pubblicazione, per impostazione predefinita le istanze non eseguono il rendering dei collegamenti profondi a pagine di catalogo specifiche. Per modificare questo comportamento, _Strategia pagina specifica del provider URL CIF_ può essere configurato in modo da generare sempre URL di pagina specifici.
+Nelle istanze a livello di pubblicazione, invece, gli URL delle pagine del catalogo devono essere mantenuti stabili per non perdere i guadagni, ad esempio, nella classificazione dei motori di ricerca. A causa di questo livello di pubblicazione, per impostazione predefinita le istanze non eseguono il rendering dei collegamenti profondi a pagine di catalogo specifiche. Per modificare questo comportamento, _Strategia pagina specifica per il provider URL CIF_ può essere configurato in modo da generare sempre URL di pagina specifici.
 
 ### Più pagine catalogo {#multiple-product-pages}
 
@@ -212,7 +213,7 @@ Le implementazioni del formato URL personalizzato devono implementare una coppia
 
 Oltre al `UrlProvider`, è anche possibile configurare [Mappature Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per riscrivere ed elaborare gli URL. Il progetto Archetipo AEM fornisce anche [un esempio di configurazione](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) per configurare alcune mappature Sling per le porte 4503 (pubblicazione) e 80 (Dispatcher).
 
-### Combinare con AEM Dispatcher {#dispatcher}
+### Combinare con Dispatcher AEM {#dispatcher}
 
 Le riscritture URL possono essere ottenute anche utilizzando il server HTTP di Dispatcher dell’AEM con `mod_rewrite` modulo. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) fornisce una configurazione di AEM Dispatcher di riferimento che include [regole di riscrittura](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) di base per la dimensione generata.
 
@@ -224,7 +225,7 @@ Come accennato prima di selezionare uno dei formati predefiniti disponibili, o a
 
 _**Utilizza un formato URL per pagina di prodotto contenente lo SKU.**_
 
-I componenti core CIF utilizzano lo SKU come identificatore primario in tutti i componenti. Se il formato dell’URL della pagina di prodotto non contiene lo SKU, è necessaria una query GraphQL per risolverlo. Questa risoluzione può influire sul tempo al primo byte. Inoltre, può essere necessario che gli acquirenti possano trovare i prodotti per SKU utilizzando i motori di ricerca.
+I Componenti core CIF utilizzano lo SKU come identificatore primario in tutti i componenti. Se il formato dell’URL della pagina di prodotto non contiene lo SKU, è necessaria una query GraphQL per risolverlo. Questa risoluzione può influire sul tempo al primo byte. Inoltre, può essere necessario che gli acquirenti possano trovare i prodotti per SKU utilizzando i motori di ricerca.
 
 _**Utilizza un formato URL per pagina di prodotto che contenga il contesto della categoria.**_
 
@@ -242,7 +243,7 @@ Molti dei formati URL predefiniti sono in qualche modo compatibili tra loro, il 
 
 D’altra parte, i motori di ricerca hanno bisogno di tempo per eseguire nuovamente la ricerca per indicizzazione di tutte le pagine del catalogo con il nuovo formato URL. Per supportare questo processo e anche per migliorare l’esperienza dell’utente finale, si consiglia di fornire reindirizzamenti che inoltrino l’utente dai vecchi URL a quelli nuovi.
 
-Un approccio per farlo potrebbe essere quello di collegare un ambiente di staging al backend di e-commerce di produzione e configurarlo per utilizzare il nuovo formato URL. In seguito ottieni il [mappa del sito del prodotto generata dal generatore di sitemap di prodotti CIF](../../overview/seo-and-url-management.md) sia per l&#39;ambiente di stage che per quello di produzione, e utilizzarli per creare un [Mappa di riscrittura httpd Apache](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). Questa mappa di riscrittura può quindi essere distribuita a Dispatcher insieme al rollout del nuovo formato URL.
+Un approccio per farlo potrebbe essere quello di collegare un ambiente di staging al backend di e-commerce di produzione e configurarlo per utilizzare il nuovo formato URL. In seguito ottieni il [sitemap del prodotto generata dal generatore di sitemap dei prodotti CIF](../../overview/seo-and-url-management.md) sia per l&#39;ambiente di stage che per quello di produzione, e utilizzarli per creare un [Mappa di riscrittura httpd Apache](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). Questa mappa di riscrittura può quindi essere distribuita a Dispatcher insieme al rollout del nuovo formato URL.
 
 ## Esempio {#example}
 

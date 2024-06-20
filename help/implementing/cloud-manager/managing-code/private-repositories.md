@@ -1,17 +1,19 @@
 ---
 title: Aggiunta di archivi privati in Cloud Manager
 description: Scopri come configurare Cloud Manager per l’utilizzo di archivi GitHub privati.
-source-git-commit: 7f598a623c3003b20a074c31749382df7f5f5ca6
+exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 48%
+ht-degree: 77%
 
 ---
 
-
 # Aggiunta di archivi privati in Cloud Manager {#private-repositories}
 
-Configurando Cloud Manager per l’utilizzo di archivi GitHub privati, puoi convalidare il codice direttamente all’interno dell’archivio GitHub tramite Cloud Manager, eliminando la necessità di sincronizzare in modo coerente il codice con l’archivio di Adobe.
+Con la configurazione di Cloud Manager per l’utilizzo di archivi GitHub privati, puoi convalidare il codice direttamente all’interno dell’archivio GitHub tramite Cloud Manager, eliminando la necessità di sincronizzare in modo coerente il codice con l’archivio Adobe.
 
 >[!NOTE]
 >
@@ -100,28 +102,28 @@ Quando la richiesta pull viene chiusa o unita, la pipeline di qualità del codic
 
 >[!TIP]
 >
->Consulta il documento [Annotazioni di controllo GitHub](github-annotations.md) per informazioni dettagliate sulle informazioni fornite tramite GitHub quando vengono eseguiti i controlli delle richieste di pull.
+>Consulta il documento [Annotazioni di verifica GitHub](github-annotations.md) per informazioni dettagliate sulle informazioni fornite tramite GitHub quando vengono eseguite le verifiche delle richieste pull.
 
 >[!TIP]
 >
->Puoi controllare le pipeline create automaticamente per convalidare ogni richiesta di pull in un archivio privato. Consulta il documento [Configurazione controllo GitHub per archivi privati](github-check-config.md) per ulteriori informazioni.
+>Puoi controllare le pipeline create automaticamente per convalidare ogni richiesta pull in un archivio privato. Per ulteriori informazioni, consulta il documento [Configurazione verifica GitHub per archivi privati](github-check-config.md).
 
 ## Associazione di archivi privati alle pipeline {#pipelines}
 
-Gli archivi privati convalidati possono essere associati a [pipeline full stack e front-end.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+Gli archivi privati convalidati possono essere associati a [pipeline full-stack e front-end.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >
->Le pipeline a livello web e di configurazione non sono supportate con archivi privati.
+>Le pipeline a livello web e di configurazione non sono supportate con gli archivi privati.
 
 ## Limitazioni {#limitations}
 
-Quando si utilizzano archivi privati con Cloud Manager si applicano alcune limitazioni.
+Quando si utilizzano archivi privati con Cloud Manager si applicano determinate limitazioni.
 
 * Non è possibile mettere in pausa la convalida della richiesta di pull utilizzando il controllo GitHub di Cloud Manager.
-   * Se l’archivio GitHub viene convalidato in Cloud Manager, Cloud Manager tenterà sempre di convalidare le richieste pull create per tale archivio.
+   * Se l’archivio GitHub viene convalidato in Cloud Manager, Cloud Manager tenterà sempre di convalidare le richieste pull create per quell’archivio.
 * Se l’app GitHub di Adobe viene rimossa dall’organizzazione GitHub, la funzione di convalida delle richieste pull verrà rimossa per tutti gli archivi.
-* Le pipeline a livello web e di configurazione non sono supportate con archivi privati.
-* Quando si utilizzano archivi privati su pipeline full stack di produzione, non verrà creato e inviato alcun tag Git.
-* Le pipeline che utilizzano archivi privati e il trigger di build on-commit non vengono avviati automaticamente quando viene eseguito il push di un nuovo commit nel ramo selezionato.
-* [Funzionalità di riutilizzo degli artefatti](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) non si applica agli archivi privati.
+* Le pipeline a livello web e di configurazione non sono supportate con gli archivi privati.
+* Quando si utilizzano archivi privati su pipeline di produzione full stack, non verrà creato e inviato alcun tag Git.
+* Le pipeline che utilizzano archivi privati e il trigger di creazione su conferma non vengono avviate automaticamente quando viene eseguito il push di una nuova conferma nel ramo selezionato.
+* La [funzionalità di riutilizzo degli artefatti](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) non si applica agli archivi privati.

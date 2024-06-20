@@ -2,9 +2,11 @@
 title: Primo accesso a Screens as a Cloud Service
 description: Questa pagina descrive i primi passaggi per iniziare a utilizzare Screens as a Cloud Service.
 exl-id: d3a6aa5d-226b-484d-97ea-0b8312c7a0fd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '196'
 ht-degree: 1%
 
 ---

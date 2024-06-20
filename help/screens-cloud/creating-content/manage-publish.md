@@ -2,7 +2,9 @@
 title: Pubblicazione di un canale in Screens as a Cloud Service
 description: Questa pagina descrive come pubblicare un canale in Screens as a Cloud Service.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Authoring Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 1%
@@ -25,7 +27,7 @@ Questo documento spiega come pubblicare il contenuto modificato sul provider e s
 * come pubblicare un canale
 * gestire la pubblicazione, in termini di ambito
 
-## Passaggi per pubblicare un canale {#publish-channel}
+## Passaggi per Publish a Channel {#publish-channel}
 
 Per pubblicare il canale, segui i passaggi seguenti:
 
@@ -37,14 +39,14 @@ Per pubblicare il canale, segui i passaggi seguenti:
 
 1. Seleziona la **Azione** as **Pubblica** e **Pianificazione** as **Ora** dal **Procedura guidata Gestisci pubblicazione** e fai clic su **Successivo**.
 
-   ![Seleziona azione di pubblicazione](/help/screens-cloud/assets/create-content/managepub-2.png)
+   ![Seleziona azione Publish](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
    >Clic **Includi elementi figlio** dalla barra delle azioni, deseleziona tutte le opzioni per pubblicare tutti i moduli del progetto, quindi fai clic su Aggiungi per pubblicare. Per impostazione predefinita, tutte le caselle sono selezionate e devi deselezionarle manualmente per pubblicare tutti i moduli del progetto.
 
 1. Dopo aver selezionato il canale da **Gestisci pubblicazione** procedura guidata, fai clic su **Pubblica** per pubblicare il canale.
 
-   ![Pubblicare il canale](/help/screens-cloud/assets/create-content/managepub-3.png)
+   ![Publish il canale](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## Passaggio successivo {#whats-next}

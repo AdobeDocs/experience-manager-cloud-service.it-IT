@@ -2,9 +2,11 @@
 title: potrai gestire esperienze del catalogo prodotti in fase di sviluppo
 description: Scopri come gestire le esperienze del catalogo dei prodotti in staging.
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '487'
 ht-degree: 10%
 
 ---
@@ -15,7 +17,7 @@ Scopri come gestire le esperienze del catalogo dei prodotti in staging.
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso sui contenuti e il commercio dell&#39;AEM, [Gestione di pagine e modelli del catalogo dei prodotti](catalog-templates.md), hai imparato a gestire e creare esperienze del catalogo dei prodotti basate sui modelli.
+Nel documento precedente del percorso Contenuti e Commerce dell’AEM, [Gestione di pagine e modelli del catalogo dei prodotti](catalog-templates.md), hai imparato a gestire e creare esperienze del catalogo dei prodotti basate sui modelli.
 
 Questo articolo si basa su questi principi fondamentali.
 
@@ -27,11 +29,11 @@ Questo documento spiega come gestire l’esperienza del catalogo dei prodotti in
     >
     >Questa funzione è disponibile solo con Adobe Commerce o Cloud Edition e connettori di terze parti che supportano l’autenticazione basata su token. Per ulteriori informazioni, vedere [Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html).
 
-Per prima cosa, vediamo come gli autori possono accedere ai dati dei prodotti in staging con CIF.
+Per prima cosa, vediamo come gli autori possono accedere ai dati di prodotti in staging con l’CIF.
 
 ## Utilizzo dei dati di prodotto in staging {#staged-product-data}
 
-Un modo per accedere ai dati di prodotto in staging è utilizzare la cabina di comando del prodotto. Apri il catalogo dei prodotti facendo clic sull’icona Commerce nel menu principale dell’AEM. In questo modo potrai accedere ai dati di prodotto live. Apri la scheda del filtro a sinistra ed espandi **CATALOGO DI STAGING**. Utilizzando i dati di anteprima, ora puoi accedere ai dati di prodotto in staging per qualsiasi momento. I dati in staging includono nuove categorie, prodotti o campi aggiornati come prezzo.
+Un modo per accedere ai dati di prodotto in staging è utilizzare la cabina di comando del prodotto. Per aprire il catalogo dei prodotti, fai clic sull’icona Commerce nel menu principale dell’AEM. In questo modo potrai accedere ai dati di prodotto live. Apri la scheda del filtro a sinistra ed espandi **CATALOGO DI STAGING**. Utilizzando i dati di anteprima, ora puoi accedere ai dati di prodotto in staging per qualsiasi momento. I dati in staging includono nuove categorie, prodotti o campi aggiornati come prezzo.
 
 ![cabina di pilotaggio](assets/staged-cockpit.png)
 
@@ -64,7 +66,7 @@ Ora che hai completato questa parte del percorso dovresti:
 * comprendere i concetti di catalogo di prodotti in staging e contenuto con Launches
 * essere in grado di accedere ai dati del catalogo dei prodotti in staging tramite la cabina di comando e l’editor dei prodotti
 
-Ora puoi gestire [esperienze prodotto](product-experience-management.md). Tuttavia, AEM Content and Commerce dispone di molte opzioni aggiuntive. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
+Ora puoi gestire [esperienze prodotto](product-experience-management.md). Tuttavia, AEM Content e Commerce hanno molte opzioni aggiuntive disponibili. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
 
 ## Risorse aggiuntive {#additional-resources}
 

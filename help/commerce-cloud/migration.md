@@ -1,11 +1,13 @@
 ---
-title: Migrazione al componente aggiuntivo AEM Commerce Integration Framework (CIF)
-description: Come migrare al componente aggiuntivo AEM Commerce Integration Framework (CIF) da una versione precedente
+title: Migrazione al componente aggiuntivo Commerce integration framework AEM (CIF)
+description: Come migrare al componente aggiuntivo AEM Commerce integration framework (CIF) da una versione precedente
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 40%
+source-wordcount: '470'
+ht-degree: 38%
 
 ---
 
@@ -17,11 +19,11 @@ Questa guida aiuta a identificare le aree da aggiornare per la migrazione di Exp
 
 Ad Experience Manager, as a Cloud Service, il componente aggiuntivo CIF è l’unica soluzione di integrazione supportata per le soluzioni commerce di Adobe Commerce e di terze parti. Il componente aggiuntivo CIF viene distribuito automaticamente ai clienti con Experience Manager as a Cloud Service, non è necessaria alcuna distribuzione manuale. Consulta [Guida introduttiva di AEM Commerce as a Cloud Service](getting-started.md).
 
-Per supportare i progetti che utilizzano CIF, l’Adobe fornisce [Componenti core CIF dell’AEM](https://github.com/adobe/aem-core-cif-components).
+Per supportare i progetti che utilizzano l’Adobe CIF, fornisci [Componenti core dell’CIF dell’AEM](https://github.com/adobe/aem-core-cif-components).
 
 Il componente aggiuntivo CIF è disponibile anche per AEM 6.5 tramite il [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html). È compatibile e fornisce le stesse funzionalità del componente aggiuntivo CIF per Experience Manager as a Cloud Service, senza richiedere alcuna correzione.
 
-Classic CIF con le sue dipendenze non è più disponibile. Codice che si basa su questa versione CIF utilizzando `com.adobe.cq.commerce.api` Le API Java devono essere adattate al componente aggiuntivo CIF e ai relativi principi.
+Classic CIF con le sue dipendenze non è più disponibile. Codice che si basa su questa versione dell’CIF utilizzando `com.adobe.cq.commerce.api` Le API Java devono essere adattate al componente aggiuntivo CIF e ai relativi principi.
 
 Il connettore CIF precedentemente disponibile non può più essere installato. Il codice che si basa su questo connettore deve essere adattato al componente aggiuntivo CIF e ai suoi principi.
 
@@ -39,7 +41,7 @@ Rispetto alle implementazioni dell’AEM 6.5, le differenze principali sono due:
 
 ## Catalogo prodotti
 
-L’importazione di dati del catalogo prodotti non è più supportata. L’utilizzo dei principal del componente aggiuntivo CIF per le richieste di prodotti e cataloghi avviene on-demand tramite chiamate in tempo reale a una soluzione di e-commerce esterna. Per ulteriori informazioni sull’integrazione di una soluzione commerce, consulta il capitolo Integrazione.
+L’importazione di dati del catalogo prodotti non è più supportata. L’utilizzo dei principi del componente aggiuntivo CIF per le richieste di prodotti e cataloghi avviene on-demand tramite chiamate in tempo reale a una soluzione di e-commerce esterna. Per ulteriori informazioni sull’integrazione di una soluzione commerce, consulta il capitolo Integrazione.
 
 >[!TIP]
 >
@@ -47,7 +49,7 @@ L’importazione di dati del catalogo prodotti non è più supportata. L’utili
 
 ## Esperienze nel catalogo dei prodotti con rendering AEM
 
-Se utilizzi la blueprint del catalogo con Classic CIF, devi aggiornare il flusso di lavoro del catalogo dei prodotti. Il componente aggiuntivo CIF ora esegue il rendering istantaneo delle esperienze del catalogo dei prodotti utilizzando i modelli di catalogo AEM. Non è più richiesta la replica dei dati di prodotto o delle pagine di prodotto.
+Se utilizzi la blueprint del catalogo con CIF classico, devi aggiornare il flusso di lavoro del catalogo dei prodotti. Il componente aggiuntivo CIF ora esegue il rendering istantaneo delle esperienze del catalogo dei prodotti utilizzando i modelli di catalogo AEM. Non è più richiesta la replica dei dati di prodotto o delle pagine di prodotto.
 
 ## Dati non memorizzabili in cache e interazione con l’acquisto
 

@@ -2,7 +2,9 @@
 title: Ricerca e indicizzazione dei contenuti
 description: Scopri la ricerca e l’indicizzazione dei contenuti in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '2442'
 ht-degree: 29%
@@ -55,7 +57,7 @@ Una definizione di indice può rientrare in una delle seguenti categorie:
 
 1. Indice preconfigurato. Ad esempio: `/oak:index/cqPageLucene-2` o `/oak:index/damAssetLucene-8`.
 
-2. Personalizzazione di un indice OOTB. Questi sono indicati aggiungendo `-custom-` seguito da un identificatore numerico al nome originale dell’indice. Esempio: `/oak:index/damAssetLucene-8-custom-1`.
+2. Personalizzazione di un indice OOTB. Questi sono indicati aggiungendo `-custom-` seguito da un identificatore numerico al nome originale dell’indice. Ad esempio: `/oak:index/damAssetLucene-8-custom-1`.
 
 3. Indice completamente personalizzato: è possibile creare un indice completamente nuovo da zero. Il nome deve avere un prefisso per evitare conflitti di denominazione. Ad esempio: `/oak:index/acme.product-1-custom-2`, dove il prefisso è `acme.`
 

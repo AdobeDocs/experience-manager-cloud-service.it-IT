@@ -2,7 +2,9 @@
 title: Sviluppo di un componente personalizzato per Screens as a Cloud Service
 description: Il seguente tutorial illustra i passaggi necessari per creare un componente personalizzato per AEM Screens. AEM Screens riutilizza molti modelli di progettazione e tecnologie esistenti di altri prodotti AEM. Il tutorial evidenzia differenze e considerazioni speciali durante lo sviluppo per AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 2%
@@ -131,7 +133,7 @@ AEM Screens presenta alcuni vincoli interessanti che non sono necessariamente va
 
    I componenti Screens richiedono due rendering diversi a seconda di quale [modalità di authoring](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) è in uso:
 
-   1. **Produzione**: modalità Anteprima o Pubblicazione (wcmmode=disabled)
+   1. **Produzione**: modalità Anteprima o Publish (wcmmode=disabled)
    1. **Modifica**: utilizzato per tutte le altre modalità di authoring, ovvero modifica, progettazione, scaffolding, sviluppatore...
 
    `helloworld.html`funge da switch, controllando quale modalità di authoring è attiva e reindirizzando a un altro script HTL. Una convenzione comune utilizzata dai componenti Screens consiste nell’avere `edit.html` script per la modalità di modifica e un `production.html` script per la modalità di produzione.

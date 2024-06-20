@@ -3,7 +3,8 @@ title: Memorizzazione in cache in AEM as a Cloud Service
 description: Scopri le nozioni di base sul caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8215686031de1bc37ce37bfdce252b3997646042
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 1%
@@ -358,9 +359,9 @@ Gli approcci sono diversi in termini di disponibilità dei livelli, possibilità
     <td>
      <ol>
        <li>Pubblica il contenuto e invalida la cache.</li>
-       <li>Dal livello di authoring/pubblicazione: rimuove il contenuto e invalida la cache.</li>
-       <li><p><strong>Dal livello di authoring</strong> : rimuove il contenuto e invalida la cache (se attivata dal livello di authoring AEM sull’agente di pubblicazione).</p>
-           <p><strong>Dal livello di pubblicazione</strong> - Invalida solo la cache (se attivata dal livello di pubblicazione AEM nell’agente Flush o Resource-only-flush).</p>
+       <li>Dal livello Author/Publish: rimuove il contenuto e invalida la cache.</li>
+       <li><p><strong>Dal livello di authoring</strong> : rimuove il contenuto e invalida la cache (se attivata dal livello di authoring AEM sull’agente Publish).</p>
+           <p><strong>Dal livello Publish</strong> - Invalida solo la cache (se attivata dal livello Publish dell’AEM sull’agente Flush o Resource-only-flush).</p>
        </li>
      </ol>
      </td>

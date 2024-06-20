@@ -3,8 +3,9 @@ title: Mostrare un messaggio di ringraziamento personalizzato dopo l’invio del
 description: Scopri come configurare le pagine di ringraziamento e il reindirizzamento per il Blocco moduli per ottimizzare l’esperienza utente e semplificare i percorsi di utenti.
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 100%
 

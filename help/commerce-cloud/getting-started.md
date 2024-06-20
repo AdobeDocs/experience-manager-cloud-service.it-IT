@@ -8,7 +8,8 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 10%
@@ -34,7 +35,7 @@ Il secondo passaggio è autonomo per ogni ambiente AEM as a Cloud Service. Dopo 
 
 ## Collegamento dell’AEM con una soluzione Commerce {#solution}
 
-Per collegare il componente aggiuntivo CIF e [Componenti core CIF dell’AEM](https://github.com/adobe/aem-core-cif-components) con una soluzione commerce, devi fornire l’URL dell’endpoint GraphQL tramite una variabile di ambiente Cloud Manager. Il nome della variabile è `COMMERCE_ENDPOINT`. È necessario configurare una connessione protetta tramite HTTPS.
+Per collegare il componente aggiuntivo CIF e [Componenti core dell’CIF dell’AEM](https://github.com/adobe/aem-core-cif-components) con una soluzione commerce, devi fornire l’URL dell’endpoint GraphQL tramite una variabile di ambiente Cloud Manager. Il nome della variabile è `COMMERCE_ENDPOINT`. È necessario configurare una connessione protetta tramite HTTPS.
 
 Questa variabile di ambiente viene utilizzata in due posizioni:
 
@@ -43,7 +44,7 @@ Questa variabile di ambiente viene utilizzata in due posizioni:
 
 È possibile utilizzare un URL endpoint GraphQL diverso per ogni ambiente as a Cloud Service AEM. In questo modo i progetti possono collegare gli ambienti di staging AEM con i sistemi di staging commerce e l’ambiente di produzione AEM a un sistema di produzione commerce. L&#39;endpoint GraphQL deve essere disponibile pubblicamente; le connessioni VPN private o locali non sono supportate. Facoltativamente, è possibile fornire un’intestazione di autenticazione per utilizzare funzioni CIF aggiuntive che richiedono l’autenticazione.
 
-Facoltativamente, e solo per Adobe Commerce Enterprise / Cloud, il componente aggiuntivo CIF supporta l’utilizzo di dati di catalogo per gli autori di AEM. Questi dati richiedono la configurazione di un’intestazione di autorizzazione. Questa intestazione è disponibile e utilizzata solo nelle istanze di creazione AEM per motivi di sicurezza. Le istanze di pubblicazione AEM non possono mostrare dati di staging.
+Facoltativamente, e solo per Adobe Commerce Enterprise / Cloud, il componente aggiuntivo CIF supporta l’utilizzo di dati di catalogo per gli autori di AEM. Questi dati richiedono la configurazione di un’intestazione di autorizzazione. Questa intestazione è disponibile e utilizzata solo nelle istanze di creazione AEM per motivi di sicurezza. Le istanze Publish dell’AEM non possono mostrare dati di staging.
 
 Esistono due opzioni per configurare l’endpoint:
 
@@ -57,7 +58,7 @@ Questa configurazione può essere eseguita utilizzando una finestra di dialogo n
 
 Facendo clic su questo pulsante si apre una finestra di dialogo:
 
-![Endpoint Commerce CM](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
+![Endpoint CM Commerce](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
 Dopo aver impostato l’endpoint e, facoltativamente, un’intestazione di autorizzazione per il supporto di cataloghi in staging, l’endpoint viene visualizzato nella pagina dei dettagli. Facendo clic sull&#39;icona Modifica per aprire la stessa finestra di dialogo in cui è possibile modificare il punto finale, se necessario.
 
@@ -81,7 +82,7 @@ Per collegare l’AEM a una soluzione commerce tramite Adobe I/O CLI, segui ques
 
    Per informazioni dettagliate, consulta la [documentazione CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid).
 
-   L’URL dell’endpoint GraphQL di Commerce deve puntare al servizio GraphQl di Commerce e utilizzare una connessione HTTPS sicura. Esempio: `https://<yourcommercesystem>/graphql`.
+   L’URL dell’endpoint GraphQL di Commerce deve puntare al servizio GraphQl di Commerce e utilizzare una connessione HTTPS sicura. Ad esempio: `https://<yourcommercesystem>/graphql`.
 
 4. Abilita funzioni di catalogo di staging che richiedono l’autenticazione (facoltativo)
 
@@ -134,12 +135,12 @@ Questa configurazione può essere regolata per il progetto mediante la configura
 
 La configurazione mostrata sopra è a scopo di riferimento. I progetti devono fornire le proprie configurazioni.
 
-Per configurazioni più complesse, utilizzando più strutture di siti AEM combinate con diversi cataloghi di e-commerce, vedi [Configurazione di più store di Commerce](configuring/multi-store-setup.md) esercitazione.
+Per configurazioni più complesse, utilizzando più strutture di siti AEM combinate con diversi cataloghi di e-commerce, vedi [Configurazione di Commerce Multi-Store](configuring/multi-store-setup.md) esercitazione.
 
 ## Risorse aggiuntive {#additional-resources}
 
 - [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Configurazione di più store di Commerce](configuring/multi-store-setup.md)
-- [Impostazioni di più sistemi commerce](configuring/multiple-commerce-systems-setup.md)
+- [Configurazione di Commerce Multi-Store](configuring/multi-store-setup.md)
+- [Configurazione di più sistemi Commerce](configuring/multiple-commerce-systems-setup.md)
 

@@ -2,7 +2,9 @@
 title: Aggiunta del componente aggiuntivo Screens a un programma esistente in Cloud Manager
 description: Scopri come aggiungere un componente aggiuntivo Screens a un programma esistente in Cloud Manager per Screens as a Cloud Service.
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 3%

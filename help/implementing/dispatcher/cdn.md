@@ -3,7 +3,8 @@ title: CDN in AEM as a Cloud Service
 description: Scopri come utilizzare la rete CDN gestita dall’AEM e come indirizzare la tua rete CDN alla rete CDN gestita dall’AEM.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 23%
@@ -38,7 +39,7 @@ Per ulteriori informazioni, vedi [Gestione degli elenchi IP consentiti](/help/im
 
 >[!CAUTION]
 >
->Solo le richieste provenienti dagli IP consentiti vengono gestite da CDN gestita dall’AEM. Se punti la tua rete CDN alla rete CDN gestita dall’AEM, assicurati che gli IP della tua rete CDN siano inclusi nel inserisco nell&#39;elenco Consentiti di.
+>Solo le richieste provenienti dagli IP consentiti vengono gestite da CDN gestita dall’AEM. Se punti la tua rete CDN alla rete CDN gestita dall’AEM, assicurati che gli IP della rete CDN siano inclusi nel inserisco nell&#39;elenco Consentiti di.
 
 ### Configurazione del traffico sulla rete CDN {#cdn-configuring-cloud}
 

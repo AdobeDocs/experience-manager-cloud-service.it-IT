@@ -2,7 +2,9 @@
 title: Gestire pagine e modelli del catalogo dei prodotti
 description: Scopri come gestire pagine e modelli di catalogo dei prodotti
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -15,7 +17,7 @@ Scopri come gestire pagine e modelli di catalogo dei prodotti.
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di authoring dei contenuti e del commercio dell’AEM, [Guida introduttiva alle nozioni di base sull’authoring dell’CIF AEM](getting-started.md), hai imparato le nozioni di base sull’authoring CIF.
+Nel documento precedente del percorso di authoring di contenuti e Commerce dell’AEM, [Guida introduttiva alle nozioni di base sull’authoring dell’CIF AEM](getting-started.md), hai imparato le nozioni di base sull’authoring CIF.
 
 Questo articolo si basa su questi principi fondamentali.
 

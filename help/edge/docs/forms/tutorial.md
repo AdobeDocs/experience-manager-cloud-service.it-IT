@@ -3,8 +3,9 @@ title: 'Guida introduttiva a Edge Delivery Services di AEM Forms: tutorial per s
 description: Questo tutorial ti mostrerà come essere subito operativo con un nuovo progetto di Adobe Experience Manager Forms (AEM). Tra dieci o venti minuti sarà possibile creare moduli personalizzati.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 100%
 

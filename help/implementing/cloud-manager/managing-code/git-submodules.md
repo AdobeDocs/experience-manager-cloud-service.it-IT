@@ -1,15 +1,17 @@
 ---
-title: Supporto per i moduli Git secondari
-description: Scopri come utilizzare i moduli Git secondari per unire il contenuto di più rami tra archivi Git in fase di creazione.
-source-git-commit: 34c96940f91d42d622d50e85e9a9d6f75f3fb483
+title: Supporto per i sottomoduli Git
+description: Scopri come i sottomoduli Git possono essere utilizzati per unire il contenuto di più rami tra archivi Git diversi in fase di creazione.
+exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 57%
+ht-degree: 93%
 
 ---
 
-
-# Supporto dei moduli Git secondari per gli archivi Adobe {#git-submodule-support}
+# Supporto dei sottomoduli Git per gli archivi Adobe {#git-submodule-support}
 
 È possibile utilizzare i moduli Git secondari per unire il contenuto di più rami tra archivi Git al momento della generazione.
 
@@ -78,21 +80,21 @@ Quando utilizzi i sottomoduli Git con archivi gestiti da Adobe, tieni presente l
 * I riferimenti ai moduli Git secondari vengono archiviati in commit Git specifici. Di conseguenza, quando vengono apportate modifiche all’archivio dei sottomoduli, il commit a cui si fa riferimento deve essere aggiornato.
    * Ad esempio, utilizzando `git submodule update --remote`. 
 
-## Supporto del modulo secondario Git per archivi privati {#private-repositories}
+## Supporto dei sottomoduli Git per archivi privati {#private-repositories}
 
-Supporto per i moduli Git secondari quando si utilizza [archivi privati](private-repositories.md) è in gran parte lo stesso di quando si utilizzano archivi Adobe.
+Il supporto dei sottomoduli Git quando si utilizzano [archivi privati](private-repositories.md) è in gran parte lo stesso di quando si utilizzano archivi Adobe.
 
-Tuttavia, dopo aver configurato `pom.xml` e l&#39;esecuzione di `git submodule` , è necessario aggiungere un `.gitmodules` nella directory principale dell’archivio dell’aggregatore affinché Cloud Manager rilevi la configurazione del sottomodulo.
+Tuttavia, dopo aver configurato il file `pom.xml` e aver eseguito i comandi `git submodule`, affinché Cloud Manager possa rilevare la configurazione del sottomodulo è necessario aggiungere un file `.gitmodules` nella directory principale dell’archivio dell’aggregatore.
 
-![file .gitmodules](assets/gitmodules.png)
+![File .gitmodules](assets/gitmodules.png)
 
 ![Aggregatore](assets/aggregator.png)
 
 ### Limitazioni e consigli {#limitations-recommendations-private-repos}
 
-Quando utilizzi i moduli Git secondari con archivi privati, tieni presente le seguenti limitazioni.
+Quando utilizzi dei sottomoduli Git con archivi privati, tieni presente le seguenti limitazioni.
 
 * Gli URL Git per i sottomoduli possono essere in formato HTTPS o SSH, ma devono essere collegati a un archivio github.com
    * L’aggiunta di un sottomodulo dell’archivio Adobe a un archivio di aggregazione GitHub o viceversa non funziona.
 * I sottomoduli GitHub devono essere accessibili all’app GitHub Adobe.
-* [Limitazioni dell’utilizzo dei sottomoduli Git con archivi gestiti da Adobe](#limitations-recommendations) si applica anche.
+* Si applicabili anche le [limitazioni dell’utilizzo dei sottomoduli Git con archivi gestiti da Adobe](#limitations-recommendations).

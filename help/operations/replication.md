@@ -2,7 +2,9 @@
 title: Replica
 description: Scopri la distribuzione e la risoluzione dei problemi di replica in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 38%
@@ -21,11 +23,11 @@ Adobe Experience Manager as a Cloud Service utilizza [Distribuzione dei contenut
 
 >[!NOTE]
 >
->Se ti interessa pubblicare contenuti in blocco, utilizza [Flusso di lavoro per pubblicazione struttura contenuto](#publish-content-tree-workflow).
+>Se ti interessa pubblicare contenuti in blocco, utilizza [Flusso di lavoro struttura contenuto Publish](#publish-content-tree-workflow).
 >Questo passaggio di flusso di lavoro è stato creato appositamente per il Cloud Service e può gestire in modo efficiente payload di grandi dimensioni.
 >Si sconsiglia di creare un codice personalizzato per la pubblicazione in blocco.
 >Se devi personalizzare per qualsiasi motivo, puoi attivare questo passaggio di flusso di lavoro/flusso di lavoro utilizzando le API di flusso di lavoro esistenti.
->È sempre buona prassi pubblicare solo i contenuti che devono essere pubblicati. Inoltre, fai attenzione a non cercare di pubblicare un gran numero di contenuti, se non è necessario. Tuttavia, non esistono limiti alla quantità di contenuto che è possibile inviare tramite il flusso di lavoro Pubblica struttura contenuto.
+>È sempre buona prassi pubblicare solo i contenuti che devono essere pubblicati. Inoltre, fai attenzione a non cercare di pubblicare un gran numero di contenuti, se non è necessario. Tuttavia, non vi sono limiti alla quantità di contenuto che è possibile inviare tramite il flusso di lavoro Struttura contenuto di Publish.
 
 ### Annullamento/pubblicazione rapida - Annullamento/pubblicazione pianificata {#publish-unpublish}
 
@@ -43,9 +45,9 @@ Per realizzare la replica automatica per questa funzione, abilita **Replica auto
 
 ### Gestisci pubblicazione  {#manage-publication}
 
-Gestisci pubblicazione offre più opzioni rispetto alla Pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti, avviare tutti i flussi di lavoro applicabili e pubblicare successivamente.
+Gestisci pubblicazione offre più opzioni rispetto a Quick Publish e consente di includere pagine figlie, personalizzare i riferimenti, avviare tutti i flussi di lavoro applicabili e pubblicare successivamente.
 
-L’inclusione degli elementi secondari di una cartella per l’opzione &quot;Pubblica più tardi&quot; richiama il flusso di lavoro Pubblica struttura del contenuto descritto in questo articolo.
+L’inclusione degli elementi secondari di una cartella per l’opzione &quot;Pubblica più tardi&quot; richiama il flusso di lavoro Struttura contenuto di Publish descritto in questo articolo.
 
 Puoi trovare informazioni più dettagliate su Gestisci pubblicazione nella sezione [Documentazione di base sulla pubblicazione](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
@@ -53,7 +55,7 @@ Puoi trovare informazioni più dettagliate su Gestisci pubblicazione nella sezio
 
 È possibile attivare una replica della struttura scegliendo **Strumenti - Flusso di lavoro - Modelli** e copiando il modello di flusso di lavoro preconfigurato **Pubblica struttura contenuto**, come mostrato di seguito:
 
-![Scheda Flusso Di Lavoro Pubblica Struttura Contenuto](/help/operations/assets/publishcontenttreeworkflow.png)
+![Scheda Flusso Di Lavoro Struttura Contenuto Publish](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Non richiamare il modello originale. Assicurati invece di copiare prima il modello e richiamare tale copia.
 
@@ -207,6 +209,6 @@ Per risolvere i problemi di replica, accedi alle code di replica nell’interfac
 
 ![Registri](assets/publish-logs.png "Registri")
 
-Se non è stato possibile pubblicare il contenuto, l’intera pubblicazione viene ripristinata dal servizio di pubblicazione AEM.
+Se non è stato possibile pubblicare il contenuto, l’intera pubblicazione viene ripristinata dal servizio Publish dell’AEM.
 
 In tal caso, la coda principale modificabile presenta uno stato rosso e deve essere rivista per identificare gli elementi che hanno causato l’annullamento della pubblicazione. Facendo clic su tale coda, vengono visualizzati i relativi elementi in sospeso, da cui è possibile cancellare un singolo elemento o tutti gli elementi, se necessario.

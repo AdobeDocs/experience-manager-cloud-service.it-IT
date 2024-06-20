@@ -4,9 +4,10 @@ description: Convalida e debug con gli strumenti di Dispatcher (legacy)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2337'
 ht-degree: 1%
 
 ---
@@ -313,7 +314,7 @@ I file inclusi devono essere denominati come segue:
 
 >[!TIP]
 >
-Per poter includere più file in modo molto meno limitato, potrebbe essere utile passare alla modalità di configurazione flessibile di Dispatcher. Consulta [Convalida e debug con gli strumenti di Dispatcher](/help/implementing/dispatcher/validation-debug.md) per maggiori dettagli sulla modalità flessibile.
+>Per poter includere più file in modo molto meno limitato, potrebbe essere utile passare alla modalità di configurazione flessibile di Dispatcher. Consulta [Convalida e debug con gli strumenti di Dispatcher](/help/implementing/dispatcher/validation-debug.md) per maggiori dettagli sulla modalità flessibile.
 
 In alternativa, è possibile includere **predefinito** versione delle regole di riscrittura, il cui nome è `conf.d/rewrites/default_rewrite.rules`.
 Nota: non esiste una versione predefinita dei file delle variabili.
@@ -352,7 +353,7 @@ Evitare questo errore copiando e incollando il percorso da Esplora risorse e qui
 Questa fase controlla la sintassi di Apache avviando Docker in un’immagine. Docker deve essere installato localmente, ma non è necessario che l’AEM sia in esecuzione.
 
 >[!NOTE]
-Gli utenti di Windows devono utilizzare Windows 10 Professional o altre distribuzioni che supportano Docker. Questo prerequisito è necessario per eseguire ed eseguire il debug di Dispatcher su un computer locale.
+>Gli utenti di Windows devono utilizzare Windows 10 Professional o altre distribuzioni che supportano Docker. Questo prerequisito è necessario per eseguire ed eseguire il debug di Dispatcher su un computer locale.
 
 Questa fase può anche essere eseguita in modo indipendente tramite `validator full -d out src/dispatcher`, che genera una directory &quot;out&quot; necessaria per il comando successivo `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
@@ -413,7 +414,7 @@ I livelli di registro per tali moduli sono definiti dalle variabili `DISP_LOG_LE
 # Define REWRITE_LOG_LEVEL warn
 ```
 
-Quando Dispatcher viene eseguito localmente, i registri vengono stampati direttamente nell’output del terminale. Nella maggior parte dei casi, si desidera che questi registri siano in DEBUG, operazione che può essere eseguita passando il livello di debug come parametro durante l’esecuzione di Docker. Esempio: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+Quando Dispatcher viene eseguito localmente, i registri vengono stampati direttamente nell’output del terminale. Nella maggior parte dei casi, si desidera che questi registri siano in DEBUG, operazione che può essere eseguita passando il livello di debug come parametro durante l’esecuzione di Docker. Ad esempio: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
 
 I registri per gli ambienti cloud vengono esposti tramite il servizio di registrazione disponibile in Cloud Manager.
 
