@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
 source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '389'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Il principio guida di Adobe è la semplicità. Inizia con l’authoring basato s
 
 ## Authoring {#authoring-edge}
 
-Con Edge Delivery Services, l’authoring è semplice, veloce e flessibile. È possibile scegliere di eseguire l&#39;authoring utilizzando l&#39;authoring basato su documenti o l&#39;authoring WYSIWYG utilizzando l&#39;editor universale.
+Con Edge Delivery Services, l’authoring è semplice, veloce e flessibile. Con l’Editor universale è possibile scegliere di eseguire l’authoring basato su documenti o WYSIWYG.
 
 Per ulteriori informazioni, consulta il documento [Authoring di contenuti per Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md).
 
@@ -44,7 +44,7 @@ Per ulteriori informazioni, consulta il documento [Pubblicazione di contenuti pe
 
 Edge Delivery Services si basa sul concetto di blocchi. AEM viene fornito con una libreria completa di blocchi predefiniti che possono essere estesi per soddisfare le esigenze del progetto. Il codice per i progetti di Edge Delivery Services viene gestito in GitHub.
 
-Consulta il documento [Guida introduttiva per sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) per ulteriori informazioni.
+Per ulteriori informazioni, consulta il documento [Guida introduttiva per gli sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 ## Progetti AEM esistenti {#existing-projects}
 
