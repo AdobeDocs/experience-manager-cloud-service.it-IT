@@ -3,9 +3,9 @@ title: Configurazione di OSGi per Adobe Experience Manager as a Cloud Service
 description: Configurazione OSGi con valori segreti e valori specifici dell’ambiente
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
+source-git-commit: b4c87b79c714c408daea08e81fbe719bc9f5adf0
 workflow-type: tm+mt
-source-wordcount: '3269'
+source-wordcount: '3302'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Puoi gestire le impostazioni di configurazione per i componenti OSGi tramite i f
 
 ## File di configurazione OSGi {#osgi-configuration-files}
 
-Le modifiche alla configurazione sono definite nei pacchetti di codice del progetto AEM (`ui.apps`) come file di configurazione (`.cfg.json`) in cartelle di configurazione specifiche per la modalità di esecuzione:
+Le modifiche alla configurazione sono definite nei pacchetti di codice del progetto AEM (`ui.config`) come file di configurazione (`.cfg.json`) in cartelle di configurazione specifiche per la modalità di esecuzione:
 
 `/apps/example/config.<runmode>`
 
@@ -44,6 +44,10 @@ dopo il `cfg.json` Formato di configurazione OSGi.
 >[!NOTE]
 >
 >Versioni precedenti dei file di configurazione OSGi supportati da AEM che utilizzano diversi formati di file, ad esempio `.cfg`, `.config` e come XML `sling:OsgiConfig` definizioni delle risorse. Questi formati sono sostituiti da `.cfg.json` Formato di configurazione OSGi.
+
+>[!NOTE]
+>
+>Le configurazioni OSGi non vengono memorizzate in /apps, come nelle tipiche istanze AEM in Cloud, ma in una posizione esterna. Archivia Cloud Manager [Console per sviluppatori](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) per visualizzare le configurazioni OSGi.
 
 ## Risoluzione runmode {#runmode-resolution}
 
@@ -316,7 +320,7 @@ Se una proprietà OSGi richiede valori diversi per Author e Publish:
 
 * Separa `config.author` e `config.publish` Utilizza le cartelle OSGi come descritto in [Sezione Risoluzione runmode](#runmode-resolution).
 * Sono disponibili due opzioni per la creazione dei nomi di variabili indipendenti da utilizzare:
-   * la prima opzione, consigliata: in tutte le cartelle OSGi (come `config.author` e `config.publish`) dichiarata per definire valori diversi, utilizza lo stesso nome di variabile. Per esempio
+   * la prima opzione, consigliata: in tutte le cartelle OSGi (come `config.author` e `config.publish`) dichiarata per definire valori diversi, utilizza lo stesso nome di variabile. Ad esempio
      `$[env:ENV_VAR_NAME;default=<value>]`, dove il valore predefinito corrisponde al valore predefinito per quel livello (di authoring o pubblicazione). Quando si imposta la variabile di ambiente tramite [API di Cloud Manager](#cloud-manager-api-format-for-setting-properties) o tramite un client, differenziare tra i livelli utilizzando il parametro &quot;service&quot; come descritto in questo [Documentazione di riferimento API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). Il parametro &quot;service&quot; associa il valore della variabile al livello OSGi appropriato. Può essere &quot;author&quot; o &quot;publish&quot; o &quot;preview&quot;.
    * la seconda opzione, che consiste nel dichiarare variabili distinte utilizzando un prefisso come `author_<samevariablename>` e `publish_<samevariablename>`
 
