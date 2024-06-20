@@ -4,10 +4,10 @@ description: Scopri i campi e i tipi di componenti che possono essere modificati
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
 workflow-type: tm+mt
 source-wordcount: '1146'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
@@ -103,7 +103,7 @@ Di seguito sono elencati i tipi di componenti che è possibile utilizzare per il
 | [Numero](#number) | `number` |
 | [Gruppo pulsanti di scelta](#radio-group) | `radio-group` |
 | [Riferimento](#reference) | `reference` |
-| [Formato RTF](#rich-text) | `rich-text` |
+| [Formato RTF](#rich-text) | `richtext` |
 | [Seleziona](#select) | `select` |
 | [Linguetta](#tab) | `tab` |
 | [Testo](#text) | `text` |
