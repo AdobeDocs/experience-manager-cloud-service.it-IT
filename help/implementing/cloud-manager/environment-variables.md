@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: ed166aa753d4fb5c6fb1573032186e3e14f375df
 workflow-type: tm+mt
 source-wordcount: '986'
-ht-degree: 79%
+ht-degree: 77%
 
 ---
 
@@ -50,7 +50,7 @@ Tra i casi d’uso tipici per l’utilizzo delle variabili di ambiente vi sono:
 1. Inserisci i dettagli della variabile.
    * **Nome**
    * **Valore**
-   * **Servizio applicato**: definisce per quale servizio applicare la variabile (Author/Publish/Anteprima) o se applicarla a tutti i servizi
+   * **Servizio applicato** - Definisce per quale servizio applicare la variabile (Author/Publish/Preview) o se applicarla a tutti i servizi
    * **Tipo**: definisce se la variabile è di tipo normale o segreto
 
    ![Aggiunta di una variabile](assets/add-variable.png)
