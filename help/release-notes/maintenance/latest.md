@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d2f92869204dc0157dcc1f41d9fe88cdf5875965
+source-git-commit: 53b692b9f668387c889c28498bb20c67149e36be
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 33%
+source-wordcount: '647'
+ht-degree: 30%
 
 ---
 
@@ -25,7 +25,7 @@ Con la versione di attivazione funzioni 2024.6.0 verrà fornito il set di funzio
 
 * ASSETS-31977: operazioni avanzate di spostamento, copia ed eliminazione delle risorse.
 * ASSETS-33618: trascrizione automatica e funzionalità di traduzione per video in Dynamic Medie.
-* ASSETS-33618: azione di approvazione per ContentHub e DM e aggiunta di proprietà alle proprietà damAssetLucene.
+* ASSETS-35185: azione di approvazione per ContentHub e DM e aggiunta di proprietà alle proprietà damAssetLucene.
 * ASSETS-35533: aggiungi le proprietà DRM e CAI all’indice damAssetLucene.
 * ASSETS-37280: gestione dei processi sequenziali per la traduzione quando il sottotitolo sorgente (vtt) è ancora in elaborazione.
 * ASSETS-37559: è stato migliorato l’evento di eliminazione delle risorse.
@@ -59,6 +59,13 @@ Con la versione di attivazione funzioni 2024.6.0 verrà fornito il set di funzio
 > Il team ingegneristico dell’AEM ha identificato una regressione della funzionalità Launches che influisce sulle versioni dell’AEM correnti a partire da 16461. A causa di questa regressione, i nuovi lanci (creati dopo l’applicazione di nuove versioni) che includono pagine non profonde non verranno promossi correttamente a causa di configurazioni mancanti.
 > Nel caso in cui i tuoi ambienti siano interessati, tramite l’assistenza clienti è disponibile uno script shell per identificare e aggiornare le configurazioni mancanti (riferimento interno SITES-22457).
 > Sarà resa disponibile una correzione a lungo termine che garantirà la creazione di nuovi lanci con tutte le configurazioni corrette. Fino ad allora, è disponibile su richiesta anche una versione patch interna.
+
+#### Moduli
+
+1. Se un utente scarica l’SDK AEM Forms più recente (`AEM Forms add-on v2024.05.04.00-240400`), il file batch non avvia il servizio Docker. Per risolvere il problema:
+   1. Scarica il file [cartella](/help/forms/assets/sdk_hotfix.zip).
+   1. Estrarre il contenuto dalla cartella scaricata e copiare `sdk.sh` e `sdk.bat` file.
+   1. Sostituisci il `sdk.sh` e `sdk.bat` file nell’SDK di AEM Forms con i nuovi file.
 
 ### Notifica di modifica {#change-notice-16799}
 
