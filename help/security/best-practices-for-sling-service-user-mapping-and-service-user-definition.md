@@ -4,10 +4,10 @@ description: Scopri le best practice per la mappatura degli utenti del servizio 
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+workflow-type: tm+mt
 source-wordcount: '1884'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -189,7 +189,7 @@ Esempi di `userproperties-copy-service`:
 * Riduci ambito
 
    * Posiziona i criteri di controllo dell’accesso in sottostrutture specifiche per la funzione
-   * In caso di articoli distribuiti: utilizza restrizioni per limitare l’ambito (consulta [la documentazione](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) per un elenco di restrizioni integrate).
+   * In caso di articoli distribuiti: utilizza restrizioni per limitare l’ambito (consulta [la documentazione](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) per un elenco di restrizioni integrate).
 
 * Garantire coerenza
 

@@ -4,10 +4,10 @@ description: Note sulla versione 2023.6.0 di [!DNL Adobe Experience Manager] as 
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+workflow-type: tm+mt
 source-wordcount: '1322'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -128,7 +128,7 @@ La Vista risorse ora consente di [aggiungere componenti di proprietà di testo m
 
 * [Metodi di autenticazione migliorati per il Modello dati modulo](/help/forms/configure-data-sources.md): l’introduzione dell’autenticazione basata sulle credenziali client per collegare AEM Forms con origini dati compatibili offre maggiore sicurezza. Questo miglioramento elimina la necessità di accesso da parte dell’utente o di accedere come un altro utente, rafforzando la protezione dei dati.
 
-* [Moduli adattivi con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md): ora puoi realizzare componenti [Pannello a soffietto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it), [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=it) e [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it) in un modulo adattivo basato su Componenti core per creare sezioni ripetibili.
+* [Moduli adattivi con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md): ora puoi realizzare componenti [Pannello a soffietto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it), [Pannello](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) e [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it) in un modulo adattivo basato su Componenti core per creare sezioni ripetibili.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
