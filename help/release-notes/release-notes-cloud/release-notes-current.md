@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
-workflow-type: ht
+source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
+workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -122,12 +122,12 @@ Questa versione apporta un aggiornamento significativo all’editor di regole vi
 
 
 
-### Funzionalità per i primi utilizzatori di AEM Forms {#forms-new-early-adopter-features}
+### Funzioni di accesso anticipato in AEM Forms {#forms-new-access-adopter-features}
 
-Il programma per i primi utilizzatori di AEM Forms offre un’opportunità unica per ottenere l’accesso esclusivo a innovazioni all’avanguardia prima di chiunque altro e contribuire a modellarne lo sviluppo.
+Il programma AEM Forms Early Access Program offre l’opportunità unica di accedere in esclusiva alle innovazioni all’avanguardia prima di chiunque altro, e di aiutarti a modellarne lo sviluppo.
 Il programma offre l’accesso a molteplici innovazioni.
 
-In queste note sulla versione sono elencate le nuove funzioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma per i primi utilizzatori, consulta [Documentazione del programma per i primi utilizzatori di AEM Forms](/help/forms/early-adopter-ea-features.md).
+In queste note sulla versione sono elencate le nuove funzioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma di accesso anticipato, consulta [Documentazione del programma di accesso anticipato AEM Forms](/help/forms/early-access-ea-features.md).
 
 #### Metodi di protezione bot migliorati
 
@@ -152,7 +152,7 @@ Il servizio Forms genera moduli PDF interattivi per l’acquisizione dei dati. P
 
 >[!IMPORTANT]
 >
-> Se ti interessa partecipare al nostro programma per i primi utilizzatori per qualsiasi innovazione iniziale, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) per richiedere l’accesso. Puoi richiedere l’accesso a tutte le innovazioni o solo a qualcuna.
+> Se sei interessato a partecipare al nostro programma di accesso anticipato per qualsiasi innovazione di accesso anticipato, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) per richiedere l&#39;accesso. Puoi richiedere l’accesso a tutte le innovazioni o solo a qualcuna.
 
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
@@ -174,7 +174,7 @@ Adobe Developer Console viene utilizzata per generare le credenziali di accesso 
 
 #### Supporto RDE per il codice front-end tramite i temi e i modelli del sito {#rde-frontend}
 
-Gli [ambienti di sviluppo rapido (RDE) ora supportano il codice front-end](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) basato su [temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelli di sito](/help/sites-cloud/administering/site-creation/site-templates.md), per i primi utilizzatori. Con gli RDE, questa operazione viene eseguita utilizzando una direttiva della riga di comando, anziché una [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+[Gli RDE ora supportano il codice front-end](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) in base a [temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelli di sito](/help/sites-cloud/administering/site-creation/site-templates.md), per i primi utenti. Con gli RDE, questa operazione viene eseguita utilizzando una direttiva della riga di comando, anziché una [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
 #### Registrazione avanzata per gli RDE {#rde-logging}
 
