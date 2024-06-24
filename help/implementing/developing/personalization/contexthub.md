@@ -2,9 +2,9 @@
 title: ContextHub
 description: ContextHub è un framework per l’archiviazione, la manipolazione e la presentazione dei dati contestuali
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
-feature: Developing
+feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%

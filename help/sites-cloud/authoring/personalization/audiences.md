@@ -3,9 +3,9 @@ title: Gestione dei tipi di pubblico
 description: La console Pubblico consente di creare, organizzare e gestire i tipi di pubblico per il tuo account di Adobe Target o gestire segmenti per ContextHub
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 86%

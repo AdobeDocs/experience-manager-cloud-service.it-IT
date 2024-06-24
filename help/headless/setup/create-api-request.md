@@ -2,10 +2,12 @@
 title: Creare una richiesta API - Configurazione headless
 description: Scopri come utilizzare l’API GraphQL per la distribuzione headless di contenuti con frammenti di contenuto e API REST di Assets di AEM per gestire i frammenti di contenuto.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -23,7 +25,7 @@ Scopri come utilizzare l’API GraphQL per la distribuzione headless di contenut
 
 >[!NOTE]
 >
->Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
+>Sono disponibili anche [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md).
 
 Il resto di questa guida è incentrato sull’accesso a GraphQL e sulla distribuzione di frammenti di contenuto.
 
@@ -106,4 +108,4 @@ Tutto qui. Ora hai una conoscenza di base della gestione dei contenuti headless 
 
 >[!NOTE]
 >
->Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
+>Sono disponibili anche [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md).

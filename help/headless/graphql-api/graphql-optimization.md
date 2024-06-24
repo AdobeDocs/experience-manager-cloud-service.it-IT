@@ -2,10 +2,12 @@
 title: Ottimizzazione delle query GraphQL
 description: Scopri come ottimizzare le query GraphQL per il filtro, il paging e l’ordinamento dei frammenti di contenuto in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '1877'
-ht-degree: 65%
+source-wordcount: '1874'
+ht-degree: 64%
 
 ---
 
@@ -52,7 +54,7 @@ Per l’ottimizzazione si possono utilizzare anche vari metodi di caching.
 
 Consulta:
 
-* [Query persistenti GraphQL: abilitazione della memorizzazione nella cache in Dispatcher](/help/headless/deployment/dispatcher-caching.md)
+* [Query persistenti GraphQL: abilitazione della memorizzazione in cache in Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 
 #### Utilizzare una rete per la distribuzione dei contenuti (CDN) {#use-cdn}
 
@@ -143,8 +145,8 @@ Il tempo di risposta di query complesse, con set di risultati di grandi dimensio
 
 GraphQL in AEM supporta due tipi di impaginazione:
 
-* [paginazione basata su limite/offset](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-Viene utilizzata per le query elenco; queste terminano con `List`; ad esempio, `articleList`.
+* [paginazione basata su limite/scostamento](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
+Viene utilizzato per le query elenco; queste terminano con `List`ad esempio, `articleList`.
 Per utilizzarlo, devi fornire la posizione del primo elemento da restituire (il `offset`) e il numero di elementi da restituire (il `limit`, o dimensioni della pagina).
 
 * [paginazione basata su cursore](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (rappresentato da `first` e `after`)

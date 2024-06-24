@@ -3,9 +3,9 @@ title: Struttura della gestione multisito per contenuti di destinazione
 description: Un diagramma mostra come è strutturato il supporto multisito per contenuti mirati
 exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 39%

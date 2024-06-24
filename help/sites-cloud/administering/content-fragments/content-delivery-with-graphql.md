@@ -3,13 +3,14 @@ title: Distribuzione di contenuti headless tramite frammenti di contenuto con Gr
 description: Scopri i concetti di base per la realizzazione di un CMS headless AEM utilizzando frammenti di contenuto con GraphQL per la distribuzione di contenuti headless.
 feature: Content Fragments, GraphQL API
 role: Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '737'
 ht-degree: 95%
 
 ---
-
 
 # Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
@@ -106,7 +107,7 @@ Per facilitare l’analisi, l’AEM fornisce diversi metodi per visualizzare la 
 
 Consulta [Analisi della struttura dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/analysis.md) per ulteriori dettagli:
 
-* [Struttura ad albero](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
+* [Albero struttura](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
 
 ## Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query {#learn-graphql-with-aem-sample-content-queries}
 

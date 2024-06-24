@@ -3,7 +3,8 @@ title: Implementazione in AEM as a Cloud Service
 description: Scopri le nozioni di base e le best practice per l’implementazione di in AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '3429'
 ht-degree: 98%
@@ -175,7 +176,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Gestione pacchetti - Migrazione dei pacchetti di contenuto mutabile"
 >abstract="Scopri l’utilizzo di Gestione pacchetti per i casi di utilizzo in cui un pacchetto di contenuti deve essere installato “una tantum”. L’installazione include l’importazione di contenuto specifico dalla produzione allo staging per eseguire il debug di un problema di produzione, il trasferimento di un piccolo pacchetto di contenuti dall’ambiente on-premise agli ambienti di AEM Cloud e molto altro ancora."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="Strumento trasferimento contenuti"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it" text="Strumento trasferimento contenuti"
 
 Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come “una tantum”. Ad esempio, per eseguire il debug di un problema di produzione, è necessario importare contenuto specifico dalla produzione allo staging. Per questi scenari, è possibile utilizzare la funzione [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) in ambienti AEM as a Cloud Service.
 

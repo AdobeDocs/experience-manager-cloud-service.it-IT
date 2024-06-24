@@ -3,10 +3,10 @@ title: Come modellare il contenuto
 description: In questa parte del percorso per sviluppatori di Adobe Experience Manager (AEM) Headless, scopri come modellare il contenuto per la distribuzione AEM Headless utilizzando la modellazione dei contenuti con frammenti di contenuto e modelli di frammenti di contenuto.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 100%
 

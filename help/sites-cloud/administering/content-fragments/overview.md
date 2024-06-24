@@ -4,10 +4,11 @@ description: Scopri come i frammenti di contenuto in AEM as a Cloud Service ti c
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
-source-git-commit: 46a6f5ace7aa3def8021dd16ea394b780afce2e6
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '1803'
-ht-degree: 39%
+ht-degree: 40%
 
 ---
 
@@ -105,7 +106,7 @@ Dopo la creazione dei frammenti, puoi:
 >* [Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API GraphQL di AEM per l’utilizzo con Frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
 >* [Authoring delle pagine con frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md).
->* Il [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) sono inoltre disponibili.
+>* Sono disponibili anche [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md).
 
 
 ## Principale e varianti {#main-and-variations}

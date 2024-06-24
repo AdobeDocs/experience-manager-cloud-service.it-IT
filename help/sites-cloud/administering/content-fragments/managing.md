@@ -4,7 +4,8 @@ description: Scopri come gestire i frammenti di contenuto AEM dalla console e da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '2628'
 ht-degree: 45%
@@ -156,7 +157,7 @@ Selezionando un frammento specifico si apre una barra degli strumenti incentrata
 
 >[!NOTE]
 >
->Azioni quali Pubblica, Annulla pubblicazione, Elimina, Sposta, Rinomina e Copia attivano un processo asincrono. L’avanzamento di tale processo può essere monitorato tramite l’interfaccia dei processi asincroni di AEM.
+>Azioni quali Publish, Annulla pubblicazione, Elimina, Sposta, Rinomina e Copia attivano ogni processo asincrono. L’avanzamento di tale processo può essere monitorato tramite l’interfaccia dei processi asincroni di AEM.
 
 ### Informazioni fornite sui frammenti di contenuto {#information-content-fragments}
 

@@ -2,7 +2,9 @@
 title: Generare varianti
 description: Scopri come generare varianti, accessibile da AEM as a Cloud Service e dal Sidekick di Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 207778a59e18407831292be9bd00ee7973ade78c
+feature: Generate Variations
+role: Admin, Architect, Developer
+source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 1%
@@ -380,7 +382,7 @@ Ad esempio, per aggiungere un pubblico da un file su Google Drive:
 1. In Google Drive, crea un file di foglio di calcolo con due colonne:
    1. La prima colonna verrà visualizzata nel menu a discesa.
    1. La seconda colonna sarà la descrizione del pubblico.
-1. Pubblica il file:
+1. Publish il file:
    1. File -> Condividi -> Pubblica sul Web -> CSV
 1. Copia l’URL nel file pubblicato.
 1. Vai a Genera varianti.

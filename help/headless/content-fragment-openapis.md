@@ -2,7 +2,9 @@
 title: Frammenti di contenuto e modelli per frammenti di contenuto OpenAPI
 description: Scopri le API OpenAPI per frammenti di contenuto e modelli per frammenti di contenuto.
 exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
-source-git-commit: 2921667598201b6087fab3ca5c1ef5b57c1fa18f
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 1%

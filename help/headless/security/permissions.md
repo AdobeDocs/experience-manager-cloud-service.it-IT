@@ -1,9 +1,10 @@
 ---
 title: Considerazioni sulle autorizzazioni per contenuti headless
 description: Scopri diverse considerazioni su autorizzazioni e ACL per un’implementazione headless con Adobe Experience Manager. Comprendi i diversi utenti tipo e i potenziali livelli di autorizzazione necessari sia per gli ambienti Author che per quelli Publish.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 96%

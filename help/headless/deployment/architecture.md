@@ -1,9 +1,10 @@
 ---
 title: Architettura AEM headless
 description: Scopri l’architettura di alto livello di Adobe Experience Manager e in che modo si relaziona a una distribuzione headless. Comprendi il ruolo dei servizi Authoring, Anteprima e Pubblicazione di AEM e il modello di implementazione consigliato per le applicazioni headless.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%

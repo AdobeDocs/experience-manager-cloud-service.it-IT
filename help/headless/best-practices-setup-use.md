@@ -2,10 +2,12 @@
 title: Best practice per la configurazione e l’utilizzo di AEM GraphQL con frammenti di contenuto
 description: Scopri le best practice consigliate per la configurazione e l’utilizzo di AEM GraphQL con frammenti di contenuto.
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 34%
+source-wordcount: '702'
+ht-degree: 24%
 
 ---
 
@@ -17,7 +19,7 @@ Queste linee guida riepilogano le best practice consigliate per l’impostazione
 
 Per aiutarti a imparare a usare al meglio:
 
-* [Cosa si intende con Headless?](/help/headless/what-is-headless.md)
+* [Cos’è headless?](/help/headless/what-is-headless.md)
 * Panoramica dei diversi contesti del AEM [Architettura](/help/headless/deployment/architecture.md)
 
 ## Configurazione {#setup}
@@ -55,20 +57,20 @@ La memorizzazione nella cache delle query persistenti non è abilitata per impos
 
 #### Dettagli {#details-dispatcher-caching}
 
-[Query persistenti GraphQL: abilitazione della memorizzazione nella cache in Dispatcher](/help/headless/deployment/dispatcher-caching.md)
+[Query persistenti GraphQL: abilitazione della memorizzazione in cache in Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 
 #### Ambienti {#environments-dispatcher-caching}
 
 Dispatcher è in genere configurato per:
 
-* Pubblicazione: produzione
+* Publish: production
 
 ### Configurazione CORS {#cors-setup}
 
 >[!NOTE]
 >Se il caching in [Dispatcher AEM](#dispatcher-caching) è attivato, la configurazione CORS non è necessaria e quindi questa sezione può essere ignorata.
 
-Per accedere all’endpoint GraphQL, è necessario configurare un criterio CORS e aggiungerlo a un progetto AEM implementato in AEM tramite Cloud Manager. Questo viene fatto aggiungendo un file di configurazione OSGi CORS appropriato per gli endpoint desiderati. 
+Per accedere all’endpoint GraphQL, è necessario configurare un criterio CORS e aggiungerlo a un progetto AEM distribuito all’AEM tramite Cloud Manager. A questo scopo, aggiungi un file di configurazione OSGi CORS appropriato per gli endpoint desiderati.
 
 #### Dettagli {#details-cors-setup}
 
@@ -78,11 +80,11 @@ Per accedere all’endpoint GraphQL, è necessario configurare un criterio CORS 
 
 CORS è in genere configurato per:
 
-* Pubblicazione: produzione
+* Publish: production
 
 ### Autenticazione {#authentication}
 
-Un caso d’uso principale per API GraphQL di Adobe Experience Manager as a Cloud Service (AEM) relativo alla distribuzione di frammenti di contenuto accetta query remote da applicazioni o servizi di terzi. Queste query remote possono richiedere l’accesso a API autenticate, per garantire la distribuzione di contenuti headless.
+Un caso d’uso principale per l’API GraphQL di Adobe Experience Manager as a Cloud Service (AEM) per la distribuzione di frammenti di contenuto accetta query remote da applicazioni o servizi di terze parti. Queste query remote possono richiedere l’accesso a API autenticate, per garantire la distribuzione di contenuti headless.
 
 #### Dettagli {#details-authentication}
 
@@ -135,7 +137,7 @@ Le query GraphQL e le relative risposte JSON possono essere memorizzate nella ca
 
 Una rete CDN è in genere configurata per:
 
-* Pubblicazione: produzione
+* Publish: production
 
 ### Configurare e creare frammenti di contenuto {#cconfigure-create-content-fragments}
 

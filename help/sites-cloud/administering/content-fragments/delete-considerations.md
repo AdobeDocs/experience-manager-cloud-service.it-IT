@@ -4,10 +4,11 @@ description: Esamina queste considerazioni importanti prima di definire i criter
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 57%
+ht-degree: 46%
 
 ---
 
@@ -35,7 +36,7 @@ In relazione alle autorizzazioni di eliminazione, i frammenti di contenuto devon
 
 >[!NOTE]
 >
->Vedi anche Come controllare le operazioni di gestione degli utenti in AEM.
+>Consulta anche Come controllare le operazioni di gestione degli utenti in AEM.
 
 ## Autorizzazioni necessarie solo per la funzionalità dell’editor {#permissions-required-for-editor-functionality-only}
 
