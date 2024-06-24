@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 80%
@@ -90,7 +90,7 @@ La fase di **test nell’ambiente di staging** prevede i seguenti passaggi.
 
 ![Test nell’ambiente di staging](assets/stage-testing.png)
 
-## Fase di implementazione nell’ambiente di produzione {#deployment-production}
+## Fase di implementazione nell’ambiente di produzione {#production-deployment}
 
 Il processo di implementazione nelle topologie di produzione è leggermente diverso per ridurre l’impatto sui visitatori di un sito AEM.
 
