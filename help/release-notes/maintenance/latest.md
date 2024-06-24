@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 53b692b9f668387c889c28498bb20c67149e36be
+source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '649'
 ht-degree: 30%
 
 ---
@@ -62,7 +62,7 @@ Con la versione di attivazione funzioni 2024.6.0 verrà fornito il set di funzio
 
 #### Moduli
 
-1. Se un utente scarica l’SDK AEM Forms più recente (`AEM Forms add-on v2024.05.04.00-240400`), il file batch non avvia il servizio Docker. Per risolvere il problema:
+1. Se un utente scarica la versione SDK di AEM Forms maggiore di `AEM Forms add-on v2024.05.04.00-240400`, il file batch non riesce ad avviare il servizio Docker. Per risolvere il problema:
    1. Scarica il file [cartella](/help/forms/assets/sdk_hotfix.zip).
    1. Estrarre il contenuto dalla cartella scaricata e copiare `sdk.sh` e `sdk.bat` file.
    1. Sostituisci il `sdk.sh` e `sdk.bat` file nell’SDK di AEM Forms con i nuovi file.
