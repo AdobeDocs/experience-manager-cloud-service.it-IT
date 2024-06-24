@@ -1,31 +1,31 @@
 ---
-title: Funzioni correnti di Early Adopter di [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-description: Funzioni correnti di Early Adopter di [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+title: Funzioni di Accesso anticipato correnti di [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+description: Funzioni di Accesso anticipato correnti di [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
+source-git-commit: 0c49e0ba5deb3659418cb0d057151863beac5340
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 22%
 
 ---
 
-# Programma AEM Forms Early Adopter
+# Programma di accesso anticipato di AEM Forms
 
-Il programma AEM Forms Early Adopter Program offre un’opportunità unica per ottenere accesso esclusivo a funzioni all’avanguardia prima di chiunque altro e aiutarne lo sviluppo. Il programma offre:
+Il programma AEM Forms Early Access Program offre un’opportunità unica per ottenere accesso esclusivo a funzioni all’avanguardia prima di chiunque altro e aiutarne lo sviluppo. Il programma offre:
 
 * Essere tra i primi ad accedere a tecnologie all&#39;avanguardia prima che raggiungano il mercato mainstream.
 * Co-innova con il team di prodotto, plasmando il futuro del prodotto insieme. Utilizza i tuoi casi d’uso per guidare lo sviluppo, assicurando che l’innovazione sia matura e affrontare le sfide del mondo reale.
 * Fornisci feedback e aiutaci a risolvere i problemi prima del lancio, garantendo un’esperienza utente più fluida al momento del rilascio completo.
 
-## Come partecipare al programma Early Adopter?
+## Come partecipare al programma di Accesso anticipato?
 
-Se sei interessato a partecipare al nostro programma Early Adopter per qualsiasi innovazione iniziale, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  per richiedere l&#39;accesso. Puoi richiedere l’accesso a tutte le innovazioni o solo a qualcuna.
+Se ti interessa partecipare al nostro programma di Accesso anticipato per qualsiasi innovazione di Accesso anticipato, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  per richiedere l&#39;accesso. Puoi richiedere l’accesso a tutte le innovazioni o solo a qualcuna.
 
-## Innovazioni preliminari per l&#39;adozione
+## Innovazioni nell’accesso in anteprima
 
 ### IA generativa di AEM Forms (Gen AI)
 
@@ -102,7 +102,7 @@ Semplificando il processo di trasferimento dei dati, il connettore può aiutarti
 In sostanza, il connettore da AEM Forms a Marketo consente di sfruttare i punti di forza di entrambe le piattaforme per creare un funnel di marketing più efficiente ed efficace.
 
 
-## Ulteriori innovazioni per l&#39;adozione anticipata
+## Ulteriori innovazioni nell’accesso in anteprima
 
 ### Supporto lingue da destra a sinistra (RTL)
 
