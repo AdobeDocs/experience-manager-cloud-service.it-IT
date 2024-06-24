@@ -4,9 +4,9 @@ description: Scopri come utilizzare gli ambienti di sviluppo rapido per le itera
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
+source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
 workflow-type: tm+mt
-source-wordcount: '4244'
+source-wordcount: '4215'
 ht-degree: 4%
 
 ---
@@ -223,11 +223,6 @@ Tuttavia, con un’attenta coordinazione, è possibile per più sviluppatori con
 
 
 ### Flag globali {#global-flags}
-
->[!NOTE]
->
-> Questi flag globali non sono ancora disponibili. Verranno implementati a partire da giugno.
-> 
 
 * Per un output meno dettagliato, utilizza il flag di silenziosità:
 
@@ -565,11 +560,6 @@ Una volta avviato il processo di ripristino RDE, in genere sono necessari alcuni
 Per ulteriori informazioni su come utilizzare Cloud Manager per gestire gli ambienti, consulta [la documentazione di Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Comandi che supportano l’output JSON {#json-commands}
-
->[!NOTE]
->
-> Questi comandi non sono ancora disponibili. Verranno implementati a partire da giugno.
-> 
 
 La maggior parte dei comandi supporta il ```--json``` flag che sopprime l’output della console e restituisce un json valido da elaborare negli script. Di seguito sono riportati alcuni comandi supportati, con esempi dell’output json.
 
