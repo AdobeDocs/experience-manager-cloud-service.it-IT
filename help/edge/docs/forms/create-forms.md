@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
 source-git-commit: f6a320b0f3960ae789559b837995986bf0a4bbad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '805'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ AEM Forms Edge Delivery fornisce un blocco, noto come Blocco moduli adattivi, pe
 
 Questi moduli inviano i dati direttamente a un file Microsoft Excel o Fogli Google, consentendo di utilizzare un ecosistema dinamico e API affidabili di Fogli Google, Microsoft Excel e Microsoft SharePoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
 
-![Ecosistema di authoring basato su documenti](/help/edge/assets/document-based-authoring-workflow-create-form.png)
+![Ecosistema di authoring basato sul documento](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
 ## Prerequisiti
