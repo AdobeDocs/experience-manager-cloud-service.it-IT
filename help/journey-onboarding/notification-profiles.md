@@ -4,10 +4,10 @@ description: Scopri come creare profili utente in Admin Console per gestire la r
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 92%
+source-wordcount: '1130'
+ht-degree: 80%
 
 ---
 
@@ -18,14 +18,17 @@ Scopri come creare profili utente in Admin Console per gestire la ricezione di n
 
 ## Panoramica {#overview}
 
-Di tanto in tanto, l’Adobe contatta gli utenti in merito agli ambienti AEM as a Cloud Service. Oltre alle notifiche interne al prodotto, Adobe a volte potrebbe inviare le notifiche per e-mail. Esistono due tipi di notifiche e-mail:
+Di tanto in tanto, Adobe contatta gli utenti in merito ai loro ambienti AEM as a Cloud Service. Oltre alle notifiche interne al prodotto, Adobe a volte potrebbe inviare le notifiche per e-mail. Esistono due tipi di notifiche e-mail:
 
 * **Notifica per incidente**: queste notifiche vengono inviate se si verifica un incidente o se Adobe ha identificato un potenziale problema di disponibilità che interessa il tuo ambiente AEM as a Cloud Service.
 * **Notifica proattiva**: queste notifiche vengono inviate quando un membro del team del supporto Adobe desidera fornire indicazioni su una potenziale ottimizzazione o consigli su come sfruttare al megliio l’ambiente AEM as a Cloud Service.
 
->[!NOTE]
->
->L’assegnazione di gruppi a una notifica proattiva non è supportata. Al suo posto, devi assegnare direttamente gli utenti ai profili di prodotto.
+Gli utenti possono inoltre ricevere queste notifiche per programmi specifici in base ai [autorizzazioni gruppo personalizzate.](/help/implementing/cloud-manager/custom-permissions.md)
+
+È inoltre supportata l’assegnazione di gruppi a notifiche proattive, con la possibilità di assegnare direttamente utenti e gruppi ai profili di prodotto.
+
+* Per impostazione predefinita, gli utenti dei gruppi di notifiche per incidenti e proattive riceveranno notifiche per tutti i programmi.
+* Tuttavia, se gli utenti non desiderano ricevere tutte le notifiche, possono utilizzare le autorizzazioni di LETTURA personalizzate per specificare quali notifiche del programma desiderano ricevere.
 
 Affinché queste notifiche siano ricevute dagli utenti appropriati, devi configurare e assegnare profili utente come descritto in questo documento.
 
@@ -52,7 +55,7 @@ Per impostare correttamente la ricezione delle notifiche, crea due profili utent
 
    ![Elenco delle istanze in Admin Console](assets/cloud_manager_instance.png)
 
-1. Puoi visualizzare l’elenco di tutti i profili di prodotto configurati per Cloud Manager.
+1. Puoi visualizzare l’elenco dei profili di prodotto configurati per Cloud Manager.
 
    ![Profili di prodotto in Admin Console](assets/cloud_manager_profiles.png)
 
@@ -60,7 +63,8 @@ Per impostare correttamente la ricezione delle notifiche, crea due profili utent
 
    * **Nome del profilo di prodotto**: `Incident Notification - Cloud Service`
    * **Nome visualizzato**: `Incident Notification - Cloud Service`
-   * **Descrizione**: profilo Cloud Manager per gli utenti che riceveranno notifiche se si verifica un incidente o se Adobe identifica un potenziale problema di disponibilità che interessa il tuo ambiente AEM as a Cloud Service.
+   * **Descrizione**: profilo Cloud Manager per gli utenti che riceveranno notifiche se si verifica un incidente o se Adobe identifica un potenziale problema di disponibilità che interessa l’ambiente as a Cloud Service dell’AEM.
+      * Gli utenti con autorizzazioni di LETTURA personalizzate per programmi specifici riceveranno notifiche solo per tali programmi se scelgono di utilizzare le autorizzazioni personalizzate.
 
 1. Fai clic su **Salva**.
 
@@ -69,6 +73,7 @@ Per impostare correttamente la ricezione delle notifiche, crea due profili utent
    * **Nome del profilo di prodotto**: `Proactive Notification - Cloud Service`
    * **Nome visualizzato**: `Proactive Notification - Cloud Service`
    * **Descrizione**: profilo Cloud Manager per gli utenti che riceveranno notifiche se un membro del team del supporto Adobe desidera fornire indicazioni su una potenziale ottimizzazione o consigli in merito alla configurazione del tuo ambiente AEM as a Cloud Service.
+      * Gli utenti con autorizzazioni di LETTURA personalizzate per programmi specifici riceveranno notifiche solo per tali programmi se scelgono di utilizzare le autorizzazioni personalizzate.
 
 1. Fai clic su **Salva**.
 
@@ -88,7 +93,7 @@ Ora che i profili sono stati creati, devi assegnarvi gli utenti appropriati. Puo
 
 Segui questi passaggi per aggiungere utenti per i quali non sono ancora stati impostati ID federati.
 
-1. Identifica gli utenti che devono ricevere notifiche proattive o per incidenti.
+1. Identifica gli utenti o i gruppi che devono ricevere notifiche proattive o per incidenti.
 
 1. Accedi ad Admin Console in [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com), se non hai ancora effettuato l’accesso.
 
@@ -113,13 +118,15 @@ Segui questi passaggi per aggiungere utenti per i quali non sono ancora stati im
 
 1. Fai clic su **Salva**; un’e-mail di benvenuto viene inviata all’utente aggiunto.
 
-L’utente invitato riceverà le notifiche. Ripeti questi passaggi per gli altri utenti del tuo team che dovranno ricevere le notifiche.
+L’utente invitato riceverà le notifiche. Gli utenti con autorizzazioni di LETTURA personalizzate per programmi specifici riceveranno notifiche solo per tali programmi se scelgono di utilizzare le autorizzazioni personalizzate.
+
+Ripeti questi passaggi per gli altri utenti del tuo team che dovranno ricevere le notifiche.
 
 ### Aggiungere utenti esistenti ai profili {#existing-user}
 
 Segui questi passaggi per aggiungere utenti per i quali esistono già ID federati.
 
-1. Identifica gli utenti che devono ricevere notifiche proattive o per incidenti.
+1. Identifica gli utenti o i gruppi che devono ricevere notifiche proattive o per incidenti.
 
 1. Accedi ad Admin Console in [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com), se non hai ancora effettuato l’accesso.
 
@@ -142,10 +149,12 @@ Segui questi passaggi per aggiungere utenti per i quali esistono già ID federat
 
 1. Fai clic su **Salva**; un’e-mail di benvenuto viene inviata all’utente aggiunto.
 
-L’utente invitato riceverà le notifiche. Ripeti questi passaggi per gli altri utenti del tuo team che dovranno ricevere le notifiche.
+L’utente invitato riceverà le notifiche. Gli utenti con autorizzazioni di LETTURA personalizzate per programmi specifici riceveranno notifiche solo per tali programmi se scelgono di utilizzare le autorizzazioni personalizzate.
+
+Ripeti questi passaggi per gli altri utenti del tuo team che dovranno ricevere le notifiche.
 
 ## Risorse aggiuntive {#additional-resources}
 
 Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
-* [Centro azioni](/help/operations/actions-center.md) - Sfruttare il Centro azioni per intervenire in modo comodo in caso di incidenti e altre informazioni importanti.
+* [Centro azioni](/help/operations/actions-center.md): sfrutta il Centro azioni per intervenire opportunamente su problemi e altre informazioni importanti.
