@@ -1,10 +1,9 @@
 ---
 title: Integrare AEM Assets remoto con AEM Sites
 description: Scopri come configurare e collegare siti AEM con Approved AEM Assets in Creative Cloud.
-role: null
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -12,19 +11,19 @@ ht-degree: 0%
 
 # Integrare AEM Assets remoto con AEM Sites  {#integrate-approved-assets}
 
-Una gestione efficace delle risorse digitali è fondamentale per offrire esperienze di marchio coinvolgenti e coerenti su varie piattaforme online. Dynamic Medie con funzionalità OpenAPI migliora la gestione delle risorse digitali consentendo un’integrazione perfetta tra AEM Sites e AEM Assets remoto. Questa funzione innovativa consente di condividere e gestire facilmente diversi tipi di risorse digitali approvate in più ambienti AEM, semplificando i flussi di lavoro per autori di siti ed editor di contenuti.
+Una gestione efficace delle risorse digitali è fondamentale per offrire esperienze di marchio coinvolgenti e coerenti su varie piattaforme online. Dynamic Medie con funzionalità OpenAPI migliora la gestione delle risorse digitali consentendo un’integrazione perfetta tra AEM Sites e AEM Assets as a Cloud Service. Questa funzione innovativa consente di condividere e gestire facilmente diversi tipi di risorse digitali approvate in più ambienti AEM, semplificando i flussi di lavoro per autori di siti ed editor di contenuti.
 
 Dynamic Medie con funzionalità OpenAPI consente agli autori dei siti di utilizzare risorse da DAM remoto direttamente nell’Editor pagina AEM e [Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html), semplificando i processi di creazione e gestione dei contenuti.
 
-Gli utenti possono collegare più istanze di AEM Sites, senza restrizioni sul numero massimo, a un’implementazione remota di DAM, un vantaggio notevole rispetto al [Risorse collegate](use-assets-across-connected-assets-instances.md) funzionalità.
+Gli utenti possono collegare più istanze di AEM Sites, senza restrizioni sul numero massimo, a un’implementazione remota di DAM, un vantaggio notevole rispetto al [Assets connesso](use-assets-across-connected-assets-instances.md) funzionalità.
 
 ![immagine](/help/assets/assets/connected-assets-rdam.png)
 
 Dopo la configurazione iniziale, gli utenti possono creare pagine sull’istanza di AEM Sites e aggiungere risorse in base alle esigenze. Quando aggiungono delle risorse, possono selezionare le risorse memorizzate nel DAM locale oppure sfogliare e utilizzare le risorse disponibili nel DAM remoto.
 
-Dynamic Medie con funzionalità OpenAPI offre diversi altri vantaggi, come l’accesso e l’utilizzo di risorse remote in Frammento di contenuto, il recupero dei metadati delle risorse remote e molto altro. Ulteriori informazioni sull&#39;altro [vantaggi di Dynamic Medie con funzionalità OpenAPI rispetto alle risorse collegate](/help/assets/new-dynamic-media-apis-faqs.md).
+Dynamic Medie con funzionalità OpenAPI offre diversi altri vantaggi, come l’accesso e l’utilizzo di risorse remote in Frammento di contenuto, il recupero dei metadati delle risorse remote e molto altro. Ulteriori informazioni sull&#39;altro [vantaggi di Dynamic Medie con funzionalità OpenAPI rispetto a Connected Assets](/help/assets/dynamic-media-open-apis-faqs.md).
 
-## Prima di iniziare
+## Prima di iniziare {#pre-requisits-sites-integration}
 
 * Configura quanto segue [variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md#add-variables) per AEM as a Cloud Service:
 
@@ -41,7 +40,7 @@ Dynamic Medie con funzionalità OpenAPI offre diversi altri vantaggi, come l’a
    1. Aggiungi il **[!UICONTROL repositoryID]**= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; e **[!UICONTROL imsClient]**= [IMSClientId]
 Ulteriori informazioni su [Autenticazione IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
 
-* Accesso IMS per accedere all’istanza remota AEM as a Cloud Service di DAM.
+* Accesso IMS per accedere all’istanza remota di DAM AEM as a Cloud Service.
 
 * Attiva Dynamic Medie con funzionalità OpenAPI nel DAM remoto.
 
@@ -53,9 +52,9 @@ Dynamic Medie con funzionalità OpenAPI consente di accedere alle risorse dispon
 
 ![immagine](/help/assets/assets/open-APIs.png)
 
-### Accedere alle risorse remote nell’Editor pagina AEM
+### Accedere alle risorse remote nell’Editor pagina AEM {#access-assets-page-editor}
 
-Per utilizzare le risorse remote nell’Editor pagina AEM nell’istanza AEM Sites, segui la procedura riportata di seguito. È possibile eseguire questa integrazione in AEM as a Cloud Service e AEM 6.5.
+Per utilizzare le risorse remote nell’Editor pagina AEM nell’istanza AEM Sites, segui la procedura riportata di seguito. Puoi eseguire questa integrazione in AEM as a Cloud Service e AEM 6.5.
 
 1. Vai a **[!UICONTROL Sites]** > _il tuo sito web_ in cui l&#39;AEM **[!UICONTROL Pagina]** è presente in cui è necessario aggiungere la risorsa remota.
 1. Passare allo specifico AEM **[!UICONTROL Pagina]** all&#39;interno del sito Web sotto **[!UICONTROL Sites]** sezione in cui intendi aggiungere la risorsa remota.
@@ -71,15 +70,17 @@ Per utilizzare le risorse remote nell’Editor pagina AEM nell’istanza AEM Sit
 1. Aggiungi un testo alternativo e fai clic su **[!UICONTROL Fine]**.
    <br> La risorsa remota viene visualizzata nel componente immagine. Puoi anche verificare l’URL di consegna della risorsa quando viene caricato sulla pagina o utilizzando la scheda &quot;Anteprima&quot;. L’URL di consegna indica che si accede alla risorsa in modalità remota.
 
+Nell’editor di pagine AEM puoi accedere alle risorse remote solo per il componente core Immagine v3 e per il componente core Teaser v2. Per altri componenti, compresi quelli personalizzati, sono necessarie personalizzazioni per integrare Asset Selector con tali componenti.
+
 #### Video: accedere alle risorse remote nell’Editor pagina AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427666)
 
-### Accedere alle risorse remote nel frammento di contenuto AEM
+### Accedere alle risorse remote nel frammento di contenuto AEM {#access-assets-content-fragment}
 
-Per utilizzare le risorse remote all’interno dei frammenti di contenuto AEM nell’istanza AEM Sites, segui i passaggi seguenti. È possibile eseguire questa integrazione in AEM 6.5 e non su AEM as a Cloud Service.
+Per utilizzare le risorse remote all’interno dei frammenti di contenuto AEM nell’istanza AEM Sites, segui i passaggi seguenti. Puoi eseguire questa integrazione in AEM 6.5 e non su AEM as a Cloud Service.
 
-1. Vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]**.
+1. Vai a **[!UICONTROL Assets]** > **[!UICONTROL File]**.
 1. Seleziona la cartella delle risorse in cui è presente il frammento di contenuto.
 1. Seleziona il frammento di contenuto e fai clic su **[!UICONTROL Modifica (_e_)]**.
 
@@ -99,3 +100,7 @@ Viene richiesto di effettuare l&#39;accesso.
 #### Video: accedere alle risorse remote nel frammento di contenuto AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427667)
+
+### Accedere alle risorse remote in Edge Delivery Services {#access-assets-eds}
+
+Puoi anche accedere alle risorse remote in Edge Delivery Services. Per ulteriori informazioni, consulta [Utilizzo delle risorse da Assets as a Cloud Service distribuite tramite Dynamic Medie con funzionalità OpenAPI](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi).

@@ -1,11 +1,10 @@
 ---
 title: Configurare il dominio personalizzato per il livello di pubblicazione
 description: Scopri come configurare il dominio personalizzato per il livello di pubblicazione in Adobe Cloud Manager.
-role: null
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 1%
+source-wordcount: '264'
+ht-degree: 6%
 
 ---
 
@@ -13,7 +12,6 @@ ht-degree: 1%
 # Configurare il dominio personalizzato per il livello di pubblicazione{#configure-custom-domain}
 
 In Adobe Cloud Manager, puoi dare risalto al tuo sito web aggiungendo un dominio personalizzato. Se AEM as a Cloud Service viene fornito con un dominio predefinito, puoi personalizzarlo in base alle tue esigenze.
-<!-- For example, AEM sites can use `sites.custom_domain.com`, and the AEM publish domain can be accessed via `assets.custom_domain.com`. Additionally, getting an SSL certificate for assets.pmi.com with a SAN entry for `delivery.custom_domain.com` improves security and trustworthiness. -->
 
 ## Prima di iniziare
 
@@ -28,13 +26,13 @@ Per configurare un dominio personalizzato per il livello di pubblicazione, effet
 
 1. Vai a **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Panoramica del programma]** > **[!UICONTROL Certificati SSL]**e aggiungi il certificato SSL.
    ![immagine](/help/assets/assets/ssl-certificate.png)
-Scopri come aggiungere [Certificato SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) in Adobe Cloud Manager.
+Scopri come aggiungere [Certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) in Adobe Cloud Manager.
 
-1. Dopo aver aggiunto il certificato SSL, aggiungi un dominio personalizzato. Clic **[!UICONTROL Impostazioni dominio]** e specifica il dominio personalizzato rispetto al **[!UICONTROL Servizio di pubblicazione]** opzione.
-   <br> Ulteriori informazioni su [dominio personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=en).
+1. Dopo aver aggiunto il certificato SSL, aggiungi un dominio personalizzato. Clic **[!UICONTROL Impostazioni dominio]** e specifica il dominio personalizzato rispetto al **[!UICONTROL servizio Publish]** opzione.
+Ulteriori informazioni su [dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-1. Aggiungi 2 record CNAME nel record DNS corrispondenti ai domini di pubblicazione.
-   <br> L’elaborazione della verifica DNS può richiedere alcune ore a causa dei ritardi di propagazione DNS.
+1. Aggiungi 2 [Record CNAME](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) nel record DNS corrispondente ai domini di pubblicazione.
+L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritardi di propagazione del DNS.
 
 1. Segnala un caso di supporto per facilitare la configurazione del dominio personalizzato, garantendo che venga indirizzato al livello di consegna.
 

@@ -2,18 +2,18 @@
 title: Domande frequenti su Dynamic Medie con funzionalità OpenAPI
 description: Domande frequenti su Dynamic Medie con funzionalità OpenAPI
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1495'
 ht-degree: 0%
 
 ---
 
 # Domande frequenti su Dynamic Medie con funzionalità OpenAPI {#new-dynaminc-media-apis-frequently-asked-questions}
 
-+++**Tutte le risorse nell’archivio as a Cloud Service di Experience Manager Assets sono disponibili per la ricerca e la consegna utilizzando Dynamic Medie con funzionalità OpenAPI?**
++++**Tutte le risorse nell’archivio di Experience Manager Assets as a Cloud Service sono disponibili per la ricerca e la consegna utilizzando Dynamic Medie con funzionalità OpenAPI?**
 
-No, solo [versione approvata e più recente delle risorse](/help/assets/approved-assets.md) sono disponibili per la ricerca e la distribuzione tramite Dynamic Medie con funzionalità OpenAPI, garantendo la coerenza del brand su tutti i canali e le applicazioni.
+No, solo [versione approvata e più recente delle risorse](/help/assets/approve-assets.md) sono disponibili per la ricerca e la distribuzione tramite Dynamic Medie con funzionalità OpenAPI, garantendo la coerenza del brand su tutti i canali e le applicazioni.
 
 +++
 
@@ -27,15 +27,27 @@ Lo stato di una risorsa in Experience Manager Assets è disciplinato da `jcr:con
 
 * Modifiche richieste
 
-Experience Manager Assets distingue lo stato Approvato utilizzando ![Approva risorse](assets/thumbs-up-icon.svg) disponibile nella scheda delle risorse, come illustrato nell’immagine seguente:
+Experience Manager Assets distingue lo stato Approvato utilizzando un’icona Approvato disponibile nella scheda delle risorse, come illustrato nelle immagini seguenti per le visualizzazioni Amministratore e Risorse:
 
-![Icona per risorse approvate](/help/assets/assets/approved-assets-thumbs-up.png)
+**Visualizzazione amministratore**
 
-Per approvare tutte le risorse in una cartella, consulta le istruzioni su [come approvare in blocco le risorse in una cartella](/help/assets/approved-assets.md#bulk-approve-assets). È inoltre disponibile un video che illustra l&#39;intero processo.
+![Risorse approvate nella vista Amministrazione](/help/assets/assets/approved-assets-thumbs-up.png)
+
+**Vista Assets**
+
+![Risorse approvate nella vista Assets](/help/assets/assets/approved-assets-thumbs-up-assets-view.png)
+
+
+Per approvare tutte le risorse in una cartella, consulta le istruzioni su [come approvare in blocco le risorse in una cartella](/help/assets/approve-assets.md#bulk-approve-assets). È inoltre disponibile un video che illustra l&#39;intero processo.
 
 Dopo aver impostato una cartella per l’approvazione in blocco, tutte le nuove risorse aggiunte alla cartella vengono approvate automaticamente. Tutte le risorse esistenti vengono approvate dopo la rielaborazione. Consulta [Rielaborazione di risorse digitali](/help/assets/reprocessing.md) per istruzioni su come rielaborare le risorse. Se copi o sposti risorse non approvate da un’altra cartella, devi [rielabora le risorse](/help/assets/reprocessing.md).
 
-La risorsa è contrassegnata come `Rejected`, se l&#39;amministratore specifica `Rejected` o `Changes requested` valori. Experience Manager Assets distingue lo stato Rifiutato utilizzando ![Rifiuta risorse](/help/assets/assets/do-not-localize/reject-assets.svg) disponibile nella scheda delle risorse.
+La risorsa è contrassegnata come `Rejected`, se l&#39;amministratore specifica `Rejected` o `Changes requested` valori. Experience Manager Assets distingue lo stato Rifiutato utilizzando ![Rifiuta Assets](/help/assets/assets/do-not-localize/reject-assets.svg) disponibile nella scheda delle risorse nella visualizzazione Amministratore.
+
+Allo stesso modo, Experience Manager Assets distingue lo stato Rifiutato nella vista Assets utilizzando il seguente stato Rifiutato sulla scheda della risorsa:
+
+![Risorse rifiutate nella vista Assets](/help/assets/assets/rejected-assets-admin-view.png)
+
 
 +++
 
@@ -49,18 +61,27 @@ Nell’Admin Console di Experience Manager, gli utenti che richiedono l’access
 
 Sì, puoi approvare più risorse contemporaneamente all’interno di una cartella.
 
-Esegui la procedura seguente per approvare più risorse contemporaneamente in [!DNL Experience Manager Assets]:
+Esegui la procedura seguente per approvare più risorse contemporaneamente in [!DNL Experience Manager Assets Admin view]:
 
 1. Seleziona le risorse e fai clic su **[!UICONTROL Proprietà]**.
 1. In **[!UICONTROL Base]** , scorri verso il basso fino a **[!UICONTROL Stato revisione]**.
 1. Modifica lo stato della revisione in **[!UICONTROL Approvato]**.
 1. Fai clic su **[!UICONTROL Salva e chiudi]**.
 
+Allo stesso modo, per approvare più risorse contemporaneamente all’interno di una cartella nella vista Assets:
+
+1. Seleziona le risorse e fai clic su **[!UICONTROL Modifica in blocco dei metadati]**.
+
+1. Seleziona **[!UICONTROL Approvato]** nel **[!UICONTROL Stato]** campo disponibile nel [!UICONTROL Proprietà] nel riquadro di destra.
+
+1. Fai clic su **[!UICONTROL Salva]**.
+
+
 +++
 
 +++**Come posso proteggere la consegna delle risorse e cercare le OpenAPI di Dynamic Medie?**
 
-La governance centrale delle risorse in Experience Manager consente agli amministratori DAM o ai Brand Manager di gestire l’accesso alle risorse. Possono limitare l’accesso configurando i ruoli per le risorse approvate sul lato authoring, in particolare sull’istanza di authoring as a Cloud Service dell’AEM.
+La governance centrale delle risorse in Experience Manager consente agli amministratori DAM o ai Brand Manager di gestire l’accesso alle risorse. Possono limitare l’accesso configurando i ruoli o impostando il tempo di attivazione e disattivazione delle risorse approvate sul lato dell’authoring, in particolare sull’istanza di authoring di AEM as a Cloud Service.
 
 Gli utenti finali che cercano o utilizzano gli URL di consegna possono accedere alle risorse con restrizioni una volta completato il processo di autorizzazione.
 
@@ -70,7 +91,7 @@ Per ulteriori informazioni, consulta [Limitare l’accesso alle risorse in Exper
 
 +++**Come puoi ottenere le autorizzazioni per modificare lo stato di approvazione di una risorsa?**
 
-In qualità di utente DAM, potresti non disporre delle autorizzazioni per [approvare le risorse](approved-assets.md#approve-assets). Per ottenere le autorizzazioni di modifica dello stato di approvazione di una risorsa, gli amministratori possono modificare lo schema di metadati predefinito o qualsiasi altro schema di metadati applicato alla cartella delle risorse per fornire le autorizzazioni di modifica alla **[!UICONTROL Stato revisione]** campo. Per ulteriori informazioni, consulta [come disattivare la modifica per lo stato di revisione](approved-assets.md#configuration) campo.
+In qualità di utente DAM, potresti non disporre delle autorizzazioni per [approvare le risorse](approve-assets.md#approve-assets). Per ottenere le autorizzazioni di modifica dello stato di approvazione di una risorsa, gli amministratori possono modificare lo schema di metadati predefinito o qualsiasi altro schema di metadati applicato alla cartella delle risorse per fornire le autorizzazioni di modifica alla **[!UICONTROL Stato revisione]** campo. Per ulteriori informazioni, consulta [come disattivare la modifica per lo stato di revisione](approve-assets.md#configuration) campo.
 
 +++
 
@@ -78,34 +99,38 @@ In qualità di utente DAM, potresti non disporre delle autorizzazioni per [appro
 
 Dynamic Medie con funzionalità OpenAPI e Dynamic Medie rappresentano soluzioni distinte, ognuna delle quali offre le proprie funzionalità di distribuzione specializzate. È fondamentale rivedere attentamente i requisiti specifici per determinare la soluzione più adatta alle tue esigenze.
 
+Un Adobe di utilizzo generale di è sfruttare Dynamic Medie con lo stack OpenAPI per qualsiasi caso di utilizzo di integrazione (app di prima parte o di terze parti). Se esiste già un’integrazione con lo stack di Dynamic Medie, si consiglia di non modificarla in quanto la struttura degli URL dello stack OpenAPI è diversa. Sfrutta lo stack OpenAPI solo per eventuali nuovi casi d’uso di integrazione. Se il caso d’uso richiede modificatori avanzati che non sono disponibili con lo stack OpenAPI, evita lo stack OpenAPI fino a quando Adobe non colma il gap. Anche per la consegna nativa di base dai Cloud Service AEM Assets, lo stack OpenAPI può essere valutato purché il caso d’uso sia coperto con i modificatori disponibili con lo stack OpenAPI. In conclusione, Dynamic Medie e Dynamic Medie con stack OpenAPI possono coesistere, a seconda della natura del caso d’uso.
+
 Di seguito sono riportate alcune delle principali differenze tra Dynamic Medie con funzionalità OpenAPI e Dynamic Medie:
 
 | Dynamic Medie con funzionalità OpenAPI | Dynamic Media |
 |---|---|
-| [Disponibile solo con risorse as a Cloud Service](/help/assets/new-dynamic-media-overview.md#prerequisites-new-dynaminc-media-apis) | Disponibile anche con Managed Services on-premise o Adobe con passaggi di configurazione e provisioning aggiuntivi. |
+| [Disponibile solo con Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Disponibile anche con Managed Services on-premise o Adobe con passaggi di configurazione e provisioning aggiuntivi. |
 | [Set limitato di modificatori di immagini supportati, ad esempio larghezza, altezza, rotazione, riflessione, qualità e formato](/help/assets/deliver-assets-apis.md) | Set completo di modificatori di immagini disponibili |
-| [Distribuzione limitata delle risorse in base a utenti e ruoli](/help/assets/restrict-assets-delivery.md) | Le risorse pubblicate in Dynamic Medie sono accessibili a tutti gli utenti |
-| Supporta il ritaglio avanzato delle immagini | Supporta il ritaglio avanzato di immagini e video |
-| Stack basato sulle specifiche OpenAPI, con cui la maggior parte degli sviluppatori ha familiarità. L’estensibilità di AEM Assets diventa davvero semplice utilizzando [Selettore risorse micro front-end](/help/assets/asset-selector.md). | API basate su SOAP, che diventano una barriera durante lo sviluppo di personalizzazioni dell’integrazione. |
+| [Consegna delle risorse limitata in base a utenti, ruoli, data e ora](/help/assets/restrict-assets-delivery.md) | Assets pubblicato in Dynamic Medie è accessibile a tutti gli utenti |
+| La maggior parte degli sviluppatori ha familiarità con le specifiche OpenAPI. L’estensibilità di AEM Assets diventa davvero semplice utilizzando [Selettore risorse micro front-end](/help/assets/asset-selector.md). | API basate su SOAP, che diventano una barriera durante lo sviluppo di personalizzazioni dell’integrazione. |
 | Eventuali modifiche apportate alle risorse approvate in DAM, inclusi gli aggiornamenti della versione e le modifiche ai metadati, vengono automaticamente riportate negli URL di consegna. Con un valore TTL (Time-to-Live) breve di 10 minuti configurato per Dynamic Medie con funzionalità OpenAPI tramite CDN, gli aggiornamenti diventano visibili in meno di 10 minuti su tutte le interfacce di authoring e pubblicazione. | TTL CDN consigliato di 10 ore. Puoi sovrascrivere il valore TTL utilizzando l’azione di annullamento della validità della cache. |
-| Solo le risorse approvate sono disponibili per la distribuzione di risorse alle applicazioni a valle, consentendo l’utilizzo di risorse approvate dal marchio nelle esperienze digitali. Le risorse consegnate rispettano lo stato di scadenza delle risorse nell’istanza di authoring dell’archivio as a Cloud Service dall’AEM. | Eventuali aggiornamenti a una risorsa pubblicata su Dynamic Medie vengono pubblicati automaticamente senza alcun flusso di lavoro di approvazione, il che non garantisce la corretta pubblicazione delle risorse approvate dal marchio nelle esperienze digitali. Nessuna scadenza risorsa intrinseca. Una risorsa rimane pubblica fino a quando non viene eliminata dall’archivio as a Cloud Service dall’AEM. |
-| Report sull’utilizzo in base al numero di risorse consegnate. | I rapporti sull’utilizzo non sono disponibili. |
+| Solo le risorse approvate sono disponibili per la distribuzione di risorse alle applicazioni a valle, consentendo l’utilizzo di risorse approvate dal marchio nelle esperienze digitali. | Eventuali aggiornamenti a una risorsa pubblicata su Dynamic Medie vengono pubblicati automaticamente senza alcun flusso di lavoro di approvazione, il che non garantisce la corretta pubblicazione delle risorse approvate dal marchio nelle esperienze digitali. |
+| Report sull’utilizzo in base al numero di risorse consegnate. Questa funzione sarà disponibile a breve. | I rapporti sull’utilizzo non sono disponibili. Questa funzione sarà disponibile a breve. |
+| Assets contrassegnato come Scaduto nell’archivio Assets as a Cloud Service non è più disponibile per le applicazioni a valle. | Nessuna scadenza risorsa intrinseca. Una risorsa rimane pubblica finché non viene eliminata dall’archivio AEM as a Cloud Service. |
+| Non supporta i predefiniti immagine e le funzionalità di ritaglio avanzato video. | Supporta i predefiniti immagine e le funzionalità di ritaglio avanzato video. |
+| Codifiche video dinamiche, che garantiscono che le codifiche migliori vengano distribuite in base al video di input. Non è richiesta alcuna configurazione per la distribuzione di video nativi. | Lo standard 3 effettua la codifica indipendentemente dal video di input (può influire sulle prestazioni di consegna del video). È necessario impostare manualmente codifiche diverse per velocità bit video diverse. |
+| È difficile indovinare gli URL basati su UID delle risorse (per offuscare gli URL), ma SEO (Search Engine Optimization) è ottimizzato. | Offuscamento URL disponibile solo per i parametri di query URL. Gli Assets ID (nomi di risorse) negli URL sono riconoscibili. |
 
 +++
 
-+++**In che modo Dynamic Medie con funzionalità OpenAPI risolve i limiti della funzione Risorse collegate?**
++++**In che modo Dynamic Medie con funzionalità OpenAPI risolve i limiti della funzione Connected Assets?**
 
 La tabella seguente illustra le principali differenze tra le due soluzioni:
 
 | Dynamic Medie con funzionalità OpenAPI | Risorse collegate |
 |---|---|
-| Le risorse per l’implementazione remota di DAM sono disponibili su AEM as a Cloud Service. | Le risorse per l’implementazione remota di DAM possono essere disponibili su AEM as a Cloud Service o Adobe Managed Services. |
+| Assets sull’implementazione remota di DAM è disponibile su AEM as a Cloud Service. | Assets sull’implementazione remota di DAM può essere disponibile su AEM as a Cloud Service o Managed Services Adobe. |
 | I file binari delle risorse non vengono copiati quando le risorse in una distribuzione DAM remota sono disponibili in un’istanza AEM Sites. | I file binari delle risorse vengono copiati quando le risorse in una distribuzione DAM remota sono disponibili in un’istanza AEM Sites. |
 | Supporto per tutti i tipi di formati di risorse supportati da AEM Assets. | Nessun supporto per i video. |
-| Supporta il ritaglio avanzato dell’immagine. | Supporto per ritagli avanzati e predefiniti immagine di Dynamic Medie. |
 | Puoi utilizzare Dynamic Medie nell’implementazione Sites locale durante il recupero delle risorse dall’implementazione remota di DAM. | L’implementazione di Dynamic Medie su Sites locale è di sola lettura. |
 | Nessuna restrizione sul numero di istanze AEM Sites connesse a una distribuzione DAM remota. È possibile [limitare l’accesso alle risorse nell’istanza Sites configurando i ruoli](/help/assets/restrict-assets-delivery.md) per le risorse approvate in DAM remoto. | Limitazione per la connessione di non più di 4 istanze di AEM Sites all’implementazione remota di DAM. Un numero maggiore richiede ulteriori test. |
-| Sia Asset Selector che Dynamic Medie con funzionalità OpenAPI sono estensibili per consentire integrazioni personalizzate. | Le API delle risorse collegate non sono estensibili per consentire integrazioni personalizzate. |
+| Sia Asset Selector che Dynamic Medie con funzionalità OpenAPI sono estensibili per consentire integrazioni personalizzate. | Le API di Assets connesse non sono estensibili per consentire integrazioni personalizzate. |
 | Eventuali modifiche apportate alle risorse approvate disponibili nell’implementazione remota di DAM, inclusi gli aggiornamenti della versione e le modifiche ai metadati, vengono applicate automaticamente all’istanza di Sites in un breve valore TTL (Time-to-Live) di 10 minuti. | Gli aggiornamenti delle risorse sull’implementazione remota di DAM vengono gestiti automaticamente tramite eventi del ciclo di vita, ma richiedono molto più tempo rispetto a Dynamic Medie con funzionalità OpenAPI. |
 | I metadati delle risorse in DAM remoto sono disponibili anche nell’istanza di AEM Sites. | I metadati delle risorse in DAM remoto non sono disponibili nell’istanza di AEM Sites. |
 

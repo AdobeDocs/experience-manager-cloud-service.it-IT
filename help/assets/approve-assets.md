@@ -2,9 +2,9 @@
 title: Approvare le risorse in Experience Manager
 description: Scopri come approvare le risorse in [!DNL Experience Manager].
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -21,13 +21,14 @@ Devi avere accesso ad AEM Assets as a Cloud Service e alle autorizzazioni per mo
 
 ## Configurazione
 
-È necessario effettuare un aggiornamento una tantum allo schema metadati applicabile nella sezione [!DNL Experience Manager] prima di poter approvare una risorsa. Puoi saltare questa configurazione per [!DNL Experience Manager Assets]. Per configurare lo schema metadati, effettua le seguenti operazioni:
+Prima di approvare una risorsa, devi effettuare un aggiornamento una tantum dello schema di metadati applicabile nella visualizzazione Amministratore. Puoi saltare questa configurazione per la vista Assets. Per configurare lo schema metadati, effettua le seguenti operazioni:
 
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati]**.
+1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Schemi metadati]**.
 1. Seleziona lo schema metadati applicabile e fai clic su **[!UICONTROL Modifica]**. <br>Il **[!UICONTROL Editor modulo schema metadati]** si apre con **[!UICONTROL Base]** scheda evidenziata.
 1. Scorri verso il basso e fai clic su **[!UICONTROL Stato revisione]**.
 1. Fai clic su **[!UICONTROL Regole]** sul pannello laterale destro.
 1. Deseleziona **[!UICONTROL Disattiva modifica]** e fai clic su **[!UICONTROL Salva]**.
+Se è necessario visualizzare la proprietà che **[!UICONTROL Stato revisione]** è mappato a, passa a **[!UICONTROL Impostazioni]** e visualizzare `./jcr:content/metadata/dam:status` valore in **[!UICONTROL Mappa su proprietà]** campo.
 
 >[!NOTE]
 >
@@ -45,7 +46,7 @@ Puoi approvare le risorse in entrambi [!DNL Experience Manager] e [!DNL Experien
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   Allo stesso modo, puoi approvare le risorse utilizzando [nuova vista Risorse](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html?lang=en#manage-asset-status).
+   Allo stesso modo, puoi approvare le risorse utilizzando [nuova vista Assets](/help/assets/manage-organize-assets-view.md).
 
 ## Approva in blocco le risorse {#bulk-approve-assets}
 
@@ -53,13 +54,13 @@ Semplifica il flusso di lavoro approvando rapidamente più risorse contemporanea
 <br>Segui questi passaggi per approvare risorse in blocco in [!DNL Experience Manager]:
 
 1. Crea una cartella nell’ambiente di authoring (https://author-pXXX-eYYY.adobeaemcloud.com). Sostituisci _XXX_ con il tuo ID programma e _AAAA_ con l’ID ambiente dell’Experience Manager.
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili metadati]**.
+1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**.
 1. Clic **[!UICONTROL Crea]** in alto a destra.
 1. Aggiungi un titolo profilo e fai clic su **[!UICONTROL Crea]**. Il profilo metadati è stato creato correttamente.
 1. Seleziona il nuovo profilo di metadati creato e fai clic su **[!UICONTROL Modifica _e)_]**. <br>Il **[!UICONTROL Modifica profilo metadati]**viene aperto un modulo con **[!UICONTROL Base]**scheda evidenziata.
 1. Trascina una **[!UICONTROL Campo di testo a riga singola]** dal **[!UICONTROL Genera modulo]** sezione a destra della sezione Metadati nel modulo.
 1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel **[!UICONTROL Impostazioni]** pannello:
-   1. Modificare il **[!UICONTROL Etichetta campo]** a _Risorse approvate_.
+   1. Modificare il **[!UICONTROL Etichetta campo]** a _Assets approvato_.
    1. Aggiornare il **[!UICONTROL Mappa su proprietà]** a _./jcr:content/metadata/dam:status_.
    1. Modifica il valore predefinito in _approvato_.
 
@@ -74,3 +75,31 @@ Semplifica il flusso di lavoro approvando rapidamente più risorse contemporanea
 >[!NOTE]
 > 
 >Questo approccio approva le nuove risorse create nella cartella. Per le risorse esistenti nella cartella, devi selezionarle e approvarle manualmente. <br> In alternativa, è possibile utilizzare **[!UICONTROL Rielabora]** per applicare le modifiche dal profilo metadati alle risorse precedenti.
+
+Allo stesso modo, per approvare in blocco le risorse all’interno di una cartella nella vista Assets:
+
+1. Seleziona le risorse e fai clic su **[!UICONTROL Modifica in blocco dei metadati]**.
+
+1. Seleziona **[!UICONTROL Approvato]** nel **[!UICONTROL Stato]** campo disponibile nel [!UICONTROL Proprietà] nel riquadro di destra.
+
+1. Fai clic su **[!UICONTROL Salva]**.
+
+## Copiare l’URL di consegna per le risorse approvate {#copy-delivery-url-approved-assets}
+
+L’URL di consegna per tutte le risorse approvate nell’archivio è disponibile se disponi di [!UICONTROL Dynamic Medie con funzionalità OpenAPI] nell’istanza di AEM as a Cloud Service.
+
+Per copiare l’URL di consegna di una risorsa approvata all’interno dell’archivio:
+
+1. Seleziona la risorsa e fai clic su **[!UICONTROL Dettagli]**.
+
+1. Fai clic sull’icona Rappresentazioni disponibile nel riquadro a destra.
+
+1. Seleziona **[!UICONTROL Dynamic Medie con OpenAPI]** disponibile in **[!UICONTROL Dinamico]** sezione.
+
+1. Clic **[!UICONTROL Copia URL]** per copiare l’URL di consegna della risorsa.
+   ![copia URL di consegna](/help/assets/assets/copy-delivery-url.png)
+
+   >[!NOTE]
+   >
+   >L’opzione per copiare l’URL di consegna per le risorse approvate è disponibile nella vista Assets.
+

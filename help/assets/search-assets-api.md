@@ -1,17 +1,17 @@
 ---
-title: API Search Assets
+title: Cerca API di Assets
 description: Scopri come utilizzare l’API Search Assets.
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
 
 ---
 
-# API Search Assets {#search-assets-api}
+# Cerca API di Assets {#search-assets-api}
 
-Tutti [risorse approvate](approved-assets.md) disponibili nell’archivio Experience Manager assets, possono essere cercati e quindi consegnati alle applicazioni a valle integrate utilizzando un URL di consegna.
+Tutti [risorse approvate](approve-assets.md) disponibili nell’archivio Experience Manager assets, possono essere cercati e quindi consegnati alle applicazioni a valle integrate utilizzando un URL di consegna.
 
 La ricerca delle risorse approvate corrette dall’archivio Experience Manager è il primo passo per consegnare le risorse utilizzando l’URL di consegna. La risposta alla richiesta di ricerca comprende un array di documenti JSON corrispondenti alle risorse che soddisfano i criteri di ricerca. Ogni documento JSON viene identificato utilizzando un `id` , utilizzato per comporre la richiesta di consegna della risorsa.
 
@@ -42,7 +42,7 @@ Il dominio di consegna è simile nella struttura al dominio dell’ambiente di a
 
 POST
 
-## Intestazione API per la ricerca delle risorse {#search-assets-api-header}
+## Cerca nell’intestazione API di Assets {#search-assets-api-header}
 
 Durante la definizione di un’intestazione nell’API Search Assets devi fornire i seguenti dettagli:
 
@@ -55,7 +55,7 @@ headers: {
     },
 ```
 
-Per richiamare l’API di ricerca, è necessario un token IMS per definire nella `Authorization` dettagli. Il token IMS viene recuperato da un account tecnico. Consulta [Recupera le credenziali as a Cloud Service dell’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) per creare un nuovo account tecnico. Consulta [Generazione del token di accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) per generare il token IMS e utilizzarlo in modo appropriato nell’intestazione della richiesta API Search Assets.
+Per richiamare l’API di ricerca, è necessario un token IMS per definire nella `Authorization` dettagli. Il token IMS viene recuperato da un account tecnico. Consulta [Recupera le credenziali di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) per creare un nuovo account tecnico. Consulta [Generazione del token di accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) per generare il token IMS e utilizzarlo in modo appropriato nell’intestazione della richiesta API Search Assets.
 
-Per visualizzare campioni di richieste, campioni di risposta e codici di risposta, vedere [API Search Assets](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
+Per visualizzare campioni di richieste, campioni di risposta e codici di risposta, vedere [Cerca API di Assets](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
 

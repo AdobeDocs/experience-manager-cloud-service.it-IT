@@ -2,16 +2,16 @@
 title: Integrare AEM Assets con le applicazioni a valle
 description: Integrare AEM Assets con le applicazioni a valle
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
 
 ---
 
-# Integrare AEM Assets con le applicazioni a valle {#integrate-new-dynamic-media-apis}
+# Integrare AEM Assets con le applicazioni a valle {#integrate-dynamic-media-open-apis}
 
-Tutti [risorse approvate](approved-assets.md) disponibili nell’archivio Experience Manager assets per la distribuzione alle applicazioni a valle.
+Tutti [risorse approvate](approve-assets.md) disponibili nell’archivio Experience Manager assets per la distribuzione alle applicazioni a valle.
 
 Puoi integrare un’interfaccia utente personalizzata con l’archivio di Experience Manager Assets utilizzando le API di ricerca e consegna oppure utilizzare il selettore delle risorse micro-front-end di Adobe.
 

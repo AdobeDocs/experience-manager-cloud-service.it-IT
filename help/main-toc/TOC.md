@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '5040'
+source-wordcount: '5073'
 ht-degree: 99%
 
 ---
@@ -559,6 +559,16 @@ ht-degree: 99%
       + [Domande frequenti sulla distribuzione dei contenuti HTTP2](/help/assets/dynamic-media/http2faq.md)
       + [Avviso di terminazione dei visualizzatori Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fine del ciclo di vita dei visualizzatori DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+      + Dynamic Medie con funzionalità OpenAPI {#dynamic-media-open-apis}
+         + [Panoramica](/help/assets/dynamic-media-open-apis-overview.md)
+         + [Approvare le risorse](/help/assets/approve-assets.md)
+         + [Integrazione con le applicazioni downstream](/help/assets/integrate-dynamic-media-open-apis.md)
+         + [API per la ricerca delle risorse](/help/assets/search-assets-api.md)
+         + [API di consegna](/help/assets/deliver-assets-apis.md)
+         + [Limita la consegna delle risorse](/help/assets/restrict-assets-delivery.md)
+         + [Integrare AEM Assets remoto con AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
+         + [Domande frequenti](/help/assets/dynamic-media-open-apis-faqs.md)
+         + [Configurare un dominio personalizzato](/help/assets/configure-custom-domain.md)
    + Utilizzo della vista Risorse {#assets-view}
       + [Introduzione](/help/assets/assets-view-introduction.md)
       + [Guida introduttiva](/help/assets/get-started-assets-view.md)
