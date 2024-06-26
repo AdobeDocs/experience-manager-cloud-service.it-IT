@@ -2,10 +2,10 @@
 title: Come si utilizza l’editor di regole per aggiungere regole ai campi del modulo per aggiungere un comportamento dinamico e creare una logica complessa in un modulo adattivo?
 description: L’editor di regole di Forms adattivo consente di aggiungere un comportamento dinamico e di creare una logica complessa nei moduli senza codificare o scrivere script.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service (componenti di base) | Questo articolo |
+| AEM as a Cloud Service (Componenti di base) | Questo articolo |
 | AEM as a Cloud Service (Componenti core) | [Fai clic qui](/help/forms/rule-editor-core-components.md) |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 

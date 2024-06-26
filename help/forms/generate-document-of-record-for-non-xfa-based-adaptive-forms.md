@@ -3,7 +3,8 @@ title: Come si genera un documento di record (DoR) per AEM Forms?
 description: Scopri come generare un modello per un documento di record (DoR) per Forms adattivo.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 2%
@@ -39,7 +40,7 @@ Operazioni disponibili:
 
 Prima di iniziare ad apprendere e preparare le risorse necessarie per un documento di record:
 
-**Modello di base:** Un modello XFA (file XDP) creato in Forms Designer o in un Acrobat Form (AcroForm). [Modello base](#base-template-of-a-document-of-record) viene utilizzato per specificare lo stile e le informazioni di branding per un documento di record. Carica il modello XFA (file XDP) nell’istanza di AEM Forms prima di
+**Modello di base:** Un modello XFA (file XDP) creato in Forms Designer o in un modulo Acrobat (AcroForm). [Modello base](#base-template-of-a-document-of-record) viene utilizzato per specificare lo stile e le informazioni di branding per un documento di record. Carica il modello XFA (file XDP) nell’istanza di AEM Forms prima di
 
 **Modulo adattivo:** Modulo adattivo per il quale deve essere generato il documento di record.
 
@@ -470,7 +471,7 @@ Un file XCI consente di impostare varie proprietà di un documento. Forms as a C
 | config/present/common/log/to | Controlla la posizione in cui vengono scritti i dati di log o di output. |
 | config/present/output/to | Controlla la posizione in cui vengono scritti i dati di log o di output. |
 | config/present/script/currentPage | Specifica la pagina iniziale all&#39;apertura del documento. |
-| config/present/script/exclude | Indica a Forms as a Cloud Service quali eventi ignorare. |
+| config/present/script/exclude | Indica a Forms as a Cloud Service gli eventi da ignorare. |
 | config/present/pdf/linearized | Controlla se il documento PDF di output è linearizzato. |
 | config/present/script/runScript | Controlla il set di script eseguiti da Forms as a Cloud Service. |
 | config/present/pdf/tagged | Controlla l&#39;inclusione dei tag nel documento PDF di output. I tag, nel contesto di PDF, sono informazioni aggiuntive incluse in un documento per esporre la struttura logica del documento. I tag facilitano l’accesso facilitato e la riformattazione. Ad esempio, un numero di pagina può essere contrassegnato come un artefatto in modo che un assistente vocale non lo enunci al centro del testo. Sebbene i tag rendano un documento più utile, aumentano anche le dimensioni del documento e il tempo di elaborazione necessario per crearlo. |
@@ -487,7 +488,7 @@ Un file XCI consente di impostare varie proprietà di un documento. Forms as a C
 > AEM Forms offre una varietà di font incorporati che si integrano facilmente con i file PDF. Per visualizzare l&#39;elenco dei tipi di carattere supportati: [fai clic qui](/help/forms/supported-out-of-the-box-fonts.md).
 
 
-### Utilizzare un file XCI personalizzato nell’ambiente as a Cloud Service di Forms
+### Utilizzare un file XCI personalizzato nell’ambiente Forms as a Cloud Service
 
 1. Aggiungi il file XCI personalizzato al progetto di sviluppo.
 1. Specifica quanto segue [proprietà inline](/help/implementing/deploying/configuring-osgi.md):

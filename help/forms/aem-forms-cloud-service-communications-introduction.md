@@ -1,17 +1,18 @@
 ---
-title: Cosa sono le API di comunicazione as a Cloud Service di Forms?
+title: Cosa sono le API di comunicazione di Forms as a Cloud Service?
 description: Utilizza le API di comunicazione per firmare, certificare o proteggere i documenti, automatizzare i processi di generazione di PDF e convertire i documenti PDF in un altro formato.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 92811662e1ef9b6cbd5cb66c67f774109745bc68
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2290'
-ht-degree: 40%
+ht-degree: 42%
 
 ---
 
-# API di comunicazione as a Cloud Service di AEM Forms {#frequently-asked-questions}
+# API di comunicazione di AEM Forms as a Cloud Service {#frequently-asked-questions}
 
 ![Immagine protagonista](assets/cloud-communication-apis-hero-image.jpeg)
 
@@ -167,7 +168,7 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 ## Estrazione documento
 
-<span class="preview"> La funzionalità di estrazione dei documenti si trova nel programma Early Adopter. Puoi scrivere a aem-forms-ea@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità. </span>
+<span class="preview"> La funzionalità di estrazione dei documenti si trova nel programma Early Adopter. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
 Il servizio di estrazione documenti consente di ottenere le proprietà di un documento PDF, ad esempio i diritti di utilizzo, le proprietà e i metadati del PDF. Le funzionalità di estrazione dei documenti sono:
 
@@ -197,7 +198,7 @@ Le API per la conversione di documenti di comunicazione consentono di convertire
 
 ### Converti PDF in XDP {#convert-pdf-to-xdp}
 
-<span class="preview"> La funzionalità Convert PDF to XDP è disponibile nel programma Early Adopter. Puoi scrivere a aem-forms-ea@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità. </span>
+<span class="preview"> La funzionalità Convert PDF to XDP è disponibile nel programma Early Adopter. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
 Converte un documento PDF in un file XDP. Affinché un documento PDF possa essere convertito correttamente in un file XDP, il documento PDF deve contenere un flusso XFA nel dizionario.
 
@@ -235,7 +236,7 @@ Le utilità per documenti con API sincrone consentono di convertire i documenti 
 
 #### API per i diritti di utilizzo (estensione Reader)
 
-<span class="preview"> La funzionalità Diritti di utilizzo (estensione Reader) si trova nel programma Early Adopter. Puoi scrivere a aem-forms-ea@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità. </span>
+<span class="preview"> La funzionalità Diritti di utilizzo (estensione Reader) si trova nel programma Early Adopter. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
 La funzionalità Diritti di utilizzo consente all’organizzazione di condividere facilmente i documenti interattivi di PDF estendendo la funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi. Il servizio funziona con Adobe Reader 7.0 o versione successiva e aggiunge diritti di utilizzo a un documento PDF. Questa azione attiva caratteristiche che in genere non sono disponibili quando un documento PDF viene aperto mediante Adobe Reader, ad esempio l’aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento.
 
@@ -298,9 +299,9 @@ Le comunicazioni forniscono API HTTP per la generazione di documenti on-demand e
 
 ## Onboarding
 
-La funzionalità di comunicazione è disponibile come modulo indipendente e aggiuntivo per gli utenti e le utenti di Forms as a Cloud Service. Per richiedere l’accesso, puoi contattare il team di vendita Adobe o il tuo rappresentante Adobe. Adobe abilita l’accesso per la tua organizzazione e fornisce i privilegi richiesti alla persona designata come amministratore dell’organizzazione. L’amministratore può concedere l’accesso agli sviluppatori (utenti) as a Cloud Service di Forms della tua organizzazione per utilizzare le API.
+La funzionalità di comunicazione è disponibile come modulo indipendente e aggiuntivo per gli utenti e le utenti di Forms as a Cloud Service. Per richiedere l’accesso, puoi contattare il team di vendita Adobe o il tuo rappresentante Adobe. Adobe abilita l’accesso per la tua organizzazione e fornisce i privilegi richiesti alla persona designata come amministratore dell’organizzazione. L’amministratore può concedere l’accesso agli sviluppatori Forms as a Cloud Service (utenti) dell’organizzazione per l’utilizzo delle API.
 
-Dopo l’onboarding, per abilitare le funzionalità di comunicazione per l’ambiente as a Cloud Service Forms:
+Dopo l’onboarding, per abilitare le funzionalità di comunicazione per l’ambiente Forms as a Cloud Service:
 
 1. Accedi a Cloud Manager e apri la tua istanza AEM Forms as a Cloud Service.
 
@@ -318,7 +319,7 @@ Dopo l’onboarding, per abilitare le funzionalità di comunicazione per l’amb
 
 >[!NOTE]
 >
-> Per abilitare e configurare le API di manipolazione dei documenti, aggiungi la seguente regola alla [Configurazione del Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> Per abilitare e configurare le API di manipolazione dei documenti, aggiungi la seguente regola alla [Configurazione Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
@@ -408,4 +409,4 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 * [Elaborazione della comunicazione - API sincrone](/help/forms/aem-forms-cloud-service-communications.md)
 * [Elaborazione della comunicazione - API batch](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [Architettura as a Cloud Service di AEM Forms per API di comunicazione e Forms adattivi](/help/forms/aem-forms-cloud-service-architecture.md)
+* [Architettura AEM Forms as a Cloud Service per Forms adattivo e API di comunicazione](/help/forms/aem-forms-cloud-service-architecture.md)

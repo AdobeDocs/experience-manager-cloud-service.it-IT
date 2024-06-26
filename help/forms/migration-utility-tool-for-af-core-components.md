@@ -6,13 +6,14 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
-source-git-commit: cc1f3e2f0ddaed67de541c730c0b97f68c1e0d02
+exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
+feature: Adaptive Forms, Core Components
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 1%
 
 ---
-
 
 # Introduzione
 
@@ -117,9 +118,9 @@ Per abilitare e utilizzare gli strumenti di modernizzazione AEM per l’ambiente
    * **Nessuno** : seleziona l’opzione se non desideri creare una copia dei moduli basati sul componente di base prima di avviare la conversione del modulo.
    * **Ripristina** : seleziona l’opzione per ripristinare lo stato del modulo prima di avviare la conversione.
    * **Copia in Target**: seleziona l’opzione per creare una copia dei moduli basati sul componente di base prima di avviare la conversione del modulo.
-Nel nostro caso, il **Copia in Target** è selezionata. Se il **Copia in Target** è selezionata, la **[!UICONTROL Percorso di origine]** e **[!UICONTROL Percorso di destinazione]** diventano visibili.
+Nel nostro caso, il **Copia in Target** è selezionata. Se il **Copia in Target** è selezionata, la **[!UICONTROL Percorso Source]** e **[!UICONTROL Percorso di destinazione]** diventano visibili.
 
-1. Specifica la `source folder` nome in **[!UICONTROL Percorso di origine]**.
+1. Specifica la `source folder` nome in **[!UICONTROL Percorso Source]**.
 1. Specifica la `target folder` nome in **[!UICONTROL Percorso di destinazione]**.
 1. Seleziona **[!UICONTROL Avanti]**.
 1. Fai clic su **[!UICONTROL Aggiungi Forms]**. Tutti i moduli in `source folder` viene visualizzato sullo schermo.
@@ -149,6 +150,3 @@ Ora puoi vedere che il modulo adattivo basato su componenti di base si trasforma
 
 * Assicurati che i moduli basati su Componenti di base utilizzino solo i componenti con un equivalente [Componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) disponibile. Nei casi in cui utilizzi componenti di base che non hanno un componente core equivalente, il componente di base non viene convertito. Di conseguenza, non funziona correttamente durante la creazione di un modulo
 * Assicurati che le regole per convertire i Componenti di base in Componenti core siano formattate in XML.
-
-
-

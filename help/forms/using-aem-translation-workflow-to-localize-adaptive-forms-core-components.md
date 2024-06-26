@@ -3,10 +3,11 @@ title: Come possiamo tradurre un Modulo adattivo basato su Componenti core?
 description: Scopri come creare un modello di dati modulo (FDM) in AEM Forms, testare il modello con dati e servizi di esempio e configurare varie opzioni per un modello.
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '885'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -23,7 +24,7 @@ Il servizio di traduzione automatica traduce immediatamente il contenuto in modu
 
    * Per creare un progetto di traduzione, seleziona la **[!UICONTROL Crea un nuovo progetto di traduzione]** e nella **Titolo progetto** , specificare il titolo. Ad esempio `Government Reference Site - German locale.`
    * Per aggiungere un nuovo dizionario a un progetto di traduzione esistente, seleziona la **[!UICONTROL Aggiungi a un progetto di traduzione esistente]** e selezionare un&#39;opzione **[!UICONTROL Progetto di traduzione esistente]**.
-1. In **Lingue di destinazione** , specificare una lingua (ad esempio, `German(de)`). È possibile specificare più impostazioni internazionali. Il modulo viene tradotto in tutte le lingue specificate in **Lingue di destinazione** campo. Clic **Fine**.
+1. In **Lingue di destinazione** , specificare una lingua (ad esempio, `German(de)`). È possibile specificare più impostazioni internazionali. Il modulo viene tradotto in tutte le lingue specificate in **Lingue di destinazione** campo. Fai clic su **Fine**.
 1. Nella finestra di dialogo Dizionario aggiunto fare clic su **Progetti aperti**.
 1. Nella schermata Progetti, fai clic sul progetto creato. Ad esempio, fai clic su **Sito di riferimento per la pubblica amministrazione - lingua tedesca** affiancare.
 1. Il giorno **Lavoro di traduzione** , fai clic su ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e fai clic su **Inizio**. Lo stato della sezione diventa Bozza. Al termine della traduzione, lo stato cambia in **Approvato**. Aggiorna la pagina dopo alcuni minuti e verifica lo stato.
@@ -66,7 +67,7 @@ Per localizzare un modulo e il relativo documento di record mediante Human Trans
 
    * Per creare un progetto di traduzione, seleziona la **[!UICONTROL Crea un nuovo progetto di traduzione]** e nella **Titolo progetto** , specificare il titolo. Ad esempio `Government Reference Site - German locale.`
    * Per aggiungere un nuovo dizionario a un progetto di traduzione esistente, seleziona la **[!UICONTROL Aggiungi a un progetto di traduzione esistente]** e selezionare un&#39;opzione **[!UICONTROL Progetto di traduzione esistente]**.
-1. In **Lingue di destinazione** , specificare una lingua (ad esempio, `German(de)`). È possibile specificare più impostazioni internazionali. Il modulo viene tradotto in tutte le lingue specificate in **Lingue di destinazione** campo. Clic **Fine**.
+1. In **Lingue di destinazione** , specificare una lingua (ad esempio, `German(de)`). È possibile specificare più impostazioni internazionali. Il modulo viene tradotto in tutte le lingue specificate in **Lingue di destinazione** campo. Fai clic su **Fine**.
 1. Nella finestra di dialogo Dizionario aggiunto fare clic su **Progetti aperti**.
 1. Nella schermata Progetti, fai clic sul progetto creato. Ad esempio, fai clic su **Sito di riferimento per la pubblica amministrazione - lingua tedesca** affiancare.
 1. Nella parte inferiore della sezione **Riepilogo** , fai clic su **ellissi**. Viene visualizzata la schermata Proprietà progetto di traduzione.

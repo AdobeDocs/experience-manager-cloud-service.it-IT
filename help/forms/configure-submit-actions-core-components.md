@@ -4,7 +4,8 @@ description: Un modulo adattivo fornisce più azioni di invio. Un’azione di in
 keywords: come selezionare l’azione di invio per un modulo adattivo, collegare un modulo adattivo a un elenco di sharepoint, collegare un modulo adattivo a una raccolta documenti di sharepoint, collegare un modulo adattivo a un modello di dati modulo (FDM)
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 520d07cbb4566f9d39a95ac890a9cd572114d710
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 11%
@@ -210,7 +211,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 ## Gestione degli errori nell’azione di invio {#error-handling-on-submit-action}
 
-Come parte delle linee guida sulla sicurezza e l’irrigidimento dell’AEM, configura pagine di errore personalizzate come 400.jsp, 404.jsp e 500.jsp. Questi gestori vengono chiamati quando all’invio di un modulo vengono visualizzati errori 400, 404 o 500. Gli handler vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish. Puoi anche creare pagine JSP per altri codici di errore HTTP.
+Come parte delle linee guida sulla sicurezza e l’irrigidimento dell’AEM, configura pagine di errore personalizzate come 400.jsp, 404.jsp e 500.jsp. Questi gestori vengono chiamati quando all’invio di un modulo vengono visualizzati errori 400, 404 o 500. I gestori vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish. Puoi anche creare pagine JSP per altri codici di errore HTTP.
 
 Quando si precompila un modello di dati modulo (FDM) o un modulo adattivo basato su schema con dati XML o JSON, invia un reclamo a uno schema che non contiene dati `<afData>`, `<afBoundData>`, e `</afUnboundData>` , i dati dei campi non limitati del modulo adattivo andranno persi. Lo schema può essere uno schema XML, uno schema JSON o un modello dati modulo (FDM). I campi non limitati sono campi modulo adattivo senza `bindref` proprietà.
 

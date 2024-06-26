@@ -1,20 +1,22 @@
 ---
 title: Come si utilizza Turnstile in un componente core modulo adattivo AEM?
-description: Migliora la sicurezza dei moduli con il servizio Turnstile. Guida passo passo all'interno!
+description: Migliora la sicurezza dei moduli con il servizio Turnstile. Guida dettagliata all’interno!
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 9%
+ht-degree: 13%
 
 ---
 
 # Collegare l’ambiente AEM Forms con Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
-<span class="preview"> Questa funzione è disponibile nel programma di adozione anticipata. Puoi scrivere a aem-forms-ea@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità. </span>
+<span class="preview"> Questa funzione è disponibile nel programma di adozione anticipata. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
 Il CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra esseri umani e programmi o bot automatizzati. Rappresenta una sfida e valuta la risposta dell’utente per determinare se si tratta di un essere umano o di un bot che interagisce con il sito. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o avere scopi dannosi.
 
@@ -41,8 +43,8 @@ Per configurare Turnstile per i componenti core di AEM Forms, è necessario otte
 
 Per integrare AEM Forms con il servizio Turnstile, effettuare le seguenti operazioni:
 
-1. Crea un Contenitore di configurazione nell’ambiente as a Cloud Service AEM Forms. Un contenitore di configurazione contiene le configurazioni cloud utilizzate per collegare l’AEM a servizi esterni. Per creare e configurare un Contenitore di configurazione per collegare il tuo ambiente AEM Forms con Turnstile:
-   1. Apri l’istanza as a Cloud Service di AEM Forms.
+1. Crea un Contenitore di configurazione nell’ambiente AEM Forms as a Cloud Service. Un contenitore di configurazione contiene le configurazioni cloud utilizzate per collegare l’AEM a servizi esterni. Per creare e configurare un Contenitore di configurazione per collegare il tuo ambiente AEM Forms con Turnstile:
+   1. Apri la tua istanza di AEM Forms as a Cloud Service.
    1. Vai a **[!UICONTROL Strumenti > Generale > Browser configurazioni]**.
    1. Nel Browser configurazioni, puoi selezionare una cartella esistente o crearne una. Puoi creare una cartella e abilitare per essa l’opzione Configurazioni cloud o Abilitare l’opzione Configurazioni cloud per una cartella esistente:
 
@@ -70,9 +72,9 @@ Per integrare AEM Forms con il servizio Turnstile, effettuare le seguenti operaz
 
    Una volta configurato, il servizio Turnstile Captcha è disponibile per l’utilizzo in un [Modulo adattivo basato su componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
-## Utilizzare il tornello in un modulo adattivo {#using-turnstile-core-components}
+## Utilizzare Turnstile in un modulo adattivo {#using-turnstile-core-components}
 
-1. Apri l’istanza as a Cloud Service di AEM Forms.
+1. Apri la tua istanza di AEM Forms as a Cloud Service.
 1. Vai a **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Seleziona un modulo adattivo e seleziona **[!UICONTROL Proprietà]**. Per **[!UICONTROL Contenitore configurazione]** , seleziona il Contenitore di configurazione contenente la Configurazione cloud che collega AEM Forms a Turnstile e fai clic su **[!UICONTROL Salva e chiudi]**.
 

@@ -3,10 +3,11 @@ title: Come possiamo gestire i metadati per AEM Forms?
 description: I metadati semplificano la classificazione e l’organizzazione delle risorse e aiutano gli utenti che cercano una risorsa specifica.
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -110,12 +111,12 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
    <td>Valore di sola lettura che specifica l'ora dell'ultima pubblicazione del modulo.</td> 
   </tr> 
   <tr> 
-   <td>Ora di attivazione/disattivazione pubblicazione</td> 
+   <td>Ora di attivazione/disattivazione Publish</td> 
    <td>Tutto tranne la risorsa</td> 
    <td><p>Ora in cui è pianificata la pubblicazione automatica o l'annullamento della pubblicazione del modulo. L’utente imposta questo valore durante la modifica dei metadati.</p> 
     <ul> 
-     <li>L'ora di attivazione e disattivazione della pubblicazione deve essere successiva alla data corrente. </li> 
-     <li>L'ora di disattivazione della pubblicazione deve essere successiva all'ora di attivazione della pubblicazione. </li> 
+     <li>L'ora di attivazione e disattivazione del Publish deve essere successiva alla data corrente. </li> 
+     <li>L'ora di disattivazione del Publish deve essere successiva all'ora di attivazione della pubblicazione. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -153,8 +154,8 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
    <td><p>Modulo adattivo</p> <p>Modello di modulo</p> <p>Risorsa</p> </td> 
    <td><p>Elenco delle risorse (altre forme o risorse) a cui è correlato questo modulo. Queste risorse possono rientrare nelle due categorie seguenti:</p> 
     <ul> 
-     <li>Riferimenti: risorse a cui fa riferimento il modulo corrente.</li> 
-     <li>Con riferimento da: risorse che fanno riferimento alla risorsa corrente.</li> 
+     <li>Riferimenti: Assets a cui fa riferimento il modulo corrente.</li> 
+     <li>Con riferimento da: Assets che fanno riferimento alla risorsa corrente.</li> 
     </ul> <p>Queste risorse vengono visualizzate come collegamenti e i relativi metadati sono accessibili direttamente facendo clic su di essi.<br /> </p> </td> 
   </tr> 
   <tr> 
@@ -177,7 +178,7 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
 
 ## Visualizza metadati modulo {#view-form-metadata}
 
-Le risorse presentano valori di proprietà esistenti che possono essere visualizzati in modalità di sola lettura. Questi metadati vengono generati al momento del caricamento del modulo o della creazione del modulo.
+Assets dispone di valori di proprietà esistenti che possono essere visualizzati in modalità di sola lettura. Questi metadati vengono generati al momento del caricamento del modulo o della creazione del modulo.
 
 1. Passa alla posizione della risorsa di cui desideri visualizzare i metadati.
 
@@ -241,7 +242,7 @@ Per l’Adaptive Forms è disponibile una funzionalità aggiuntiva che consente 
 >* Una volta caricata o generata una nuova immagine, la miniatura viene sostituita da questa immagine e non può essere ripristinata all&#39;immagine precedente.
 >
 
-## Aggiungere metadati personalizzati {#add-custom-metadata}
+## Aggiungi metadati personalizzati {#add-custom-metadata}
 
 A parte i metadati forniti come predefiniti, [!DNL AEM Forms] supporta nuovi metadati personalizzati.
 
@@ -251,7 +252,7 @@ Viene fornito uno strumento (Editor schema metadati) per definire lo schema per 
 
 ### Navigare nell’editor schema metadati {#navigate-the-metadata-schema-editor}
 
-1. Accedi a **[!UICONTROL Strumenti > Risorse > Schemi metadati]**.
+1. Accedi a **[!UICONTROL Strumenti > Assets > Schemi metadati]**.
 
 1. Clic **[!UICONTROL moduli]** dai moduli schema elencati.
 

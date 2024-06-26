@@ -4,7 +4,8 @@ description: Puoi utilizzare i temi per assegnare uno stile e fornire un’ident
 keywords: moduli adattivi con stili di Componenti core. utilizzo del tema nei Componenti core, assegnazione di stili ai moduli adattivi, personalizzazione dei temi
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 3%
@@ -375,12 +376,12 @@ Ora, invia le modifiche all’archivio dei temi del Cloud Service AEM Forms.
 
 Il tema viene distribuito utilizzando [pipeline front-end.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Per distribuire il tema, effettua le seguenti operazioni:
 
-1. Accedi all’archivio di AEM Cloud Manager.
+1. Accedi al tuo archivio AEM Cloud Manager.
 1. Fai clic su **[!UICONTROL Aggiungi]** dal pulsante **[!UICONTROL Pipeline]** sezione.
 1. Seleziona **[!UICONTROL Aggiungi pipeline non di produzione]** o **[!UICONTROL Aggiungi pipeline di produzione]** in base all’ambiente del Cloud Service. Ad esempio, qui il **[!UICONTROL Aggiungi pipeline di produzione]** è selezionata.
 1. In **[!UICONTROL Aggiungi pipeline di produzione]** finestra di dialogo come parte del **[!UICONTROL Configurazione]** , specifica il nome della pipeline. Ad esempio, il nome della pipeline è `customcanvastheme`.
 1. Fai clic su **[!UICONTROL Continua]**.
-1. Seleziona la **[!UICONTROL Distribuzione mirata]** > il **[!UICONTROL Codice front-end]** opzioni, nella **[!UICONTROL Codice sorgente]** passaggi.
+1. Seleziona la **[!UICONTROL Distribuzione mirata]** > il **[!UICONTROL Codice front-end]** opzioni, nella **[!UICONTROL Codice Source]** passaggi.
 1. Seleziona la **[!UICONTROL Archivio]** e **[!UICONTROL Ramo Git]** valori con le modifiche più recenti. Ad esempio, il nome dell’archivio selezionato è `custom-canvas-theme-repo` e il ramo Git è `main`.
 1. Seleziona la **[!UICONTROL Posizione codice]** as `/`, se le modifiche sono presenti nella cartella principale.
 1. Fai clic su **[!UICONTROL Salva]**.
@@ -409,7 +410,7 @@ I passaggi per applicare un tema a un modulo adattivo sono i seguenti:
 
 1. Clic **Crea** > **Forms adattivo**. Viene visualizzata la procedura guidata per la creazione di un modulo adattivo.
 
-1. Seleziona il modello di componente core in **Sorgente** scheda.
+1. Seleziona il modello di componente core in **Source** scheda.
 1. Seleziona il tema in **Stile** scheda.
 1. Fai clic su **Crea**.
 

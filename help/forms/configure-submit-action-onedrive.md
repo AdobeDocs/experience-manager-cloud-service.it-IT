@@ -3,19 +3,21 @@ Title: How to submit data from an Adaptive Form to Microsoft® OneDrive?
 Description: Explore the streamlined process of connecting AEM Forms with Microsoft® OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
 keywords: Integrazione di AEM Forms OneDrive, connessione a Microsoft OneDrive, configurazione di OneDrive con moduli AEM
 feature: Adaptive Forms, Core Components
-source-git-commit: 20458e710502e445cf5c8f582a1d183bdac75c8d
+exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
+title: "Come configurare un’azione di invio per un modulo adattivo?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 0%
+source-wordcount: '597'
+ht-degree: 1%
 
 ---
-
 
 # Inviare un modulo adattivo a Microsoft® OneDrive
 
 Il **[!UICONTROL Invia a OneDrive]** L&#39;azione di invio collega un modulo adattivo a Microsoft® OneDrive. È possibile inviare i dati del modulo, i file, gli allegati o il documento di record all&#39;archivio Microsoft® OneDrive collegato.
 
-AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione delle richieste di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md)  articolo.
+AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md)  articolo.
 
 ## Vantaggi
 

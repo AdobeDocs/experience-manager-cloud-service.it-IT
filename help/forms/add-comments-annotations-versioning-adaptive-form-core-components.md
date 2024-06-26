@@ -3,7 +3,9 @@ title: Aggiungere versioni, commenti e annotazioni a un modulo.
 description: Utilizza i componenti core per moduli adattivi per aggiungere commenti, annotazioni e versioni a un modulo adattivo.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%
@@ -17,7 +19,7 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
 
-<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
 
 
 I componenti core Moduli adattivi forniscono funzionalità che consentono agli autori dei moduli di incorporare nei moduli il controllo delle versioni, i commenti e le annotazioni. Queste funzioni semplificano il processo di sviluppo dei moduli consentendo agli utenti di creare e gestire più versioni di un modulo, avviare discussioni collaborative tramite commenti e allegare annotazioni a specifici componenti del modulo, migliorando in tal modo l’esperienza complessiva di creazione del modulo.

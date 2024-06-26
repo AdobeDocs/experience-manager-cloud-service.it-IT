@@ -3,7 +3,8 @@ title: Come si genera un documento di record per Adaptive Forms?
 description: Scopri come generare un modello per un documento di record (DoR) per i componenti core di Forms adattivi.
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3131'
 ht-degree: 1%
@@ -30,7 +31,7 @@ Operazioni disponibili:
 
 Prima di iniziare ad apprendere e preparare le risorse necessarie per un documento di record:
 
-**Modello di base:** Un modello XFA (file XDP) creato in Forms Designer o in un Acrobat Form (AcroForm). [Modello base](#base-template-of-a-document-of-record) viene utilizzato per specificare lo stile e le informazioni di branding per un documento di record. Carica il modello XFA (file XDP) nell’istanza di AEM Forms in precedenza.
+**Modello di base:** Un modello XFA (file XDP) creato in Forms Designer o in un modulo Acrobat (AcroForm). [Modello base](#base-template-of-a-document-of-record) viene utilizzato per specificare lo stile e le informazioni di branding per un documento di record. Carica il modello XFA (file XDP) nell’istanza di AEM Forms in precedenza.
 
 **Modulo adattivo:** Modulo adattivo per il quale deve essere generato il documento di record.
 

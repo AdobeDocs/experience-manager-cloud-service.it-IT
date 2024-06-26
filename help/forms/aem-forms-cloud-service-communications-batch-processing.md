@@ -1,17 +1,17 @@
 ---
 title: Creazione di Bulk PDF senza sforzo - Padroneggiare l’arte con l’elaborazione in batch - La tua guida autonoma alla generazione di milioni di documenti PDF!
 description: Come si creano comunicazioni personalizzate e orientate al brand?
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 2%
 
 ---
 
-# Elaborazione batch di comunicazioni as a Cloud Service AEM Forms
+# Elaborazione in batch di AEM Forms as a Cloud Service Communications
 
 Le comunicazioni consentono di creare, assemblare e distribuire comunicazioni personalizzate e orientate al brand, ad esempio corrispondenza aziendale, documenti, rendiconti, lettere di elaborazione delle richieste di rimborso, avvisi sui benefit, fatture mensili e kit di benvenuto. È possibile utilizzare le API di comunicazione per combinare un modello (XFA o PDF) con i dati del cliente per generare documenti in formato PDF, PS, PCL, DPL, IPL e ZPL.
 
@@ -98,7 +98,7 @@ L&#39;istanza di Experience Manager è ora pronta per connettersi all&#39;archiv
 
 ### Crea configurazione archivio dati batch {#create-batch-data-store-configuration}
 
-La configurazione dei dati in batch consente di configurare contenitori e cartelle per l’input e l’output. I record dei clienti vengono conservati nella cartella di origine e i documenti generati vengono inseriti nella cartella di destinazione.
+La configurazione dei dati in batch consente di configurare contenitori e cartelle per l’input e l’output. I record dei clienti vengono conservati nella cartella di Source e i documenti generati vengono inseriti nella cartella di destinazione.
 
 Per creare la configurazione:
 
@@ -106,7 +106,7 @@ Per creare la configurazione:
 1. Apri una cartella per ospitare la configurazione e fai clic su Crea. Puoi utilizzare la cartella Globale o crearne una.
 1. Specifica Titolo e Nome della configurazione. In Archiviazione selezionare Archiviazione Microsoft Azure.
 1. In Percorso configurazione archiviazione, sfoglia e seleziona la configurazione cloud che contiene le credenziali dell’account di archiviazione Azure di proprietà del cliente.
-1. Nella cartella di origine, specifica il nome del contenitore di archiviazione Azure e della cartella contenente i record.
+1. Nella cartella Source, specifica il nome del contenitore di archiviazione Azure e della cartella contenente i record.
 1. Nella cartella di destinazione, specifica il percorso del contenitore e della cartella di archiviazione Azure in cui archiviare i documenti generati.
 1. Fai clic su Crea.
 
@@ -177,6 +177,6 @@ La documentazione di riferimento API fornisce informazioni dettagliate su tutti 
 >[!MORELIKETHIS]
 >
 >* [Introduzione ad AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [Architettura as a Cloud Service di AEM Forms per API di comunicazione e Forms adattivi](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Architettura AEM Forms as a Cloud Service per Forms adattivo e API di comunicazione](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Elaborazione della comunicazione - API sincrone](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Elaborazione della comunicazione - API batch](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

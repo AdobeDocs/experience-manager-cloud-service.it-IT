@@ -3,7 +3,9 @@ title: Come integrare AEM Forms con Adobe Analytics?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Acrobat Sign
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 1%
@@ -181,7 +183,7 @@ Per creare regole basate su **[!UICONTROL Adobe Experience Manager Forms]** este
    >[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
-### Flussi di pubblicazione {#publish-flow}
+### Flussi Publish {#publish-flow}
 
 Dopo aver creato gli elementi dati e averli utilizzati nelle regole, pubblica la configurazione per raccogliere i dati del modulo in [!DNL Adobe Analytics].
 
@@ -193,11 +195,11 @@ Per pubblicare la configurazione, effettua le seguenti operazioni:
 
 1. Seleziona **[!UICONTROL Aggiungi tutte le risorse modificate]** e quindi seleziona **[!UICONTROL Salva e genera in sviluppo]**.
 
-1. In **[!UICONTROL Sviluppo]** sezione, seleziona ![Altre opzioni](assets/more-options-icon.svg) e quindi seleziona **[!UICONTROL Approva e pubblica in produzione]**.
+1. In **[!UICONTROL Sviluppo]** sezione, seleziona ![Altre opzioni](assets/more-options-icon.svg) e quindi seleziona **[!UICONTROL Approva e Publish alla produzione]**.
 
 1. Conferma che le modifiche e il flusso di pubblicazione vengano presto visualizzati nel **[!UICONTROL Pubblicato]** sezione.
 
-![Flusso di pubblicazione](assets/publish-flow.png)
+![Flusso Publish](assets/publish-flow.png)
 
 ## 2. Configurare AEM Forms {#configure-aem-forms}
 
@@ -221,7 +223,7 @@ Per creare una configurazione Launch di Adobe, effettua le seguenti operazioni:
 
 1. Seleziona **[!UICONTROL Salva e chiudi]**.
 
-1. Pubblica la configurazione.
+1. Publish la configurazione.
 
 ### Abilita [!DNL Adobe Analytics] per un modulo adattivo {#enable-analytics-adaptive-form}
 
@@ -231,7 +233,7 @@ Per utilizzare [!DNL Adobe Launch] configurazione in un modulo adattivo esistent
 1. Seleziona il modulo adattivo e seleziona **[!UICONTROL Proprietà]**.
 1. In **[!UICONTROL Base]** , seleziona la scheda [Contenitore configurazione](#create-adobe-launch-configuration) utilizzato durante la creazione della configurazione di Adobe Launch.
 1. Seleziona **[!UICONTROL Salva e chiudi]**. Il modulo adattivo è abilitato per [!DNL Adobe Analytics].
-1. Pubblica il modulo.
+1. Publish il modulo.
 
 Dopo aver abilitato [!DNL Adobe Analytics] per un modulo adattivo è possibile: [convalida](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) se esiste un flusso di eventi di dati appropriato tra AEM Forms e [!DNL Adobe Analytics]. L’integrazione di AEM Forms con Adobe Analytics è completa. Ora puoi [configurare e visualizzare i rapporti in Adobe Analytics](#view-reports-adobe-analytics).
 

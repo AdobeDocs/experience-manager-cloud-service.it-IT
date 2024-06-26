@@ -3,7 +3,8 @@ title: Come possiamo creare e utilizzare i temi per assegnare uno stile a un mod
 description: Utilizza i temi del modulo adattivo per applicare uno stile e fornire un’identità visiva a un modulo adattivo. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -146,13 +147,13 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
   </tr>
   <tr>
    <td>8.</td>
-   <td>Ora di pubblicazione</td>
+   <td>Ora di attivazione Publish</td>
    <td>Sì</td>
    <td>Tempo per pubblicare automaticamente il tema.</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>Ora di disattivazione pubblicazione</td>
+   <td>Ora di disattivazione Publish</td>
    <td>Sì</td>
    <td>Tempo per annullare automaticamente la pubblicazione del tema.</td>
   </tr>
@@ -255,7 +256,7 @@ I pannelli predefiniti includono:
 * Schede a sinistra
 * Schede superiori
 * Pannello a soffietto
-* Reattivo
+* Responsivo
 * Procedura guidata
 * Layout mobile
 
@@ -600,7 +601,7 @@ Dopo aver personalizzato il tema, applicarlo al modulo <!-- or interactive commu
 
 ## Impatto su altri casi d’uso dei moduli adattivi {#impact-on-other-adaptive-form-use-cases}
 
-* **Pubblicare/annullare la pubblicazione di un modulo:** Quando si pubblica un modulo, viene pubblicato anche il tema applicato a (se non è già pubblicato)
+* **Publish/annullamento della pubblicazione di un modulo:** Quando si pubblica un modulo, viene pubblicato anche il tema applicato a (se non è già pubblicato)
 * **Importare/esportare un modulo:** Quando si importa o si esporta un modulo, viene automaticamente importato o esportato anche il tema associato.
 * **Riferimenti di un modulo:** La sezione Riferimenti nei riferimenti del modulo contiene una voce aggiuntiva per il tema.
 * **Ora ultima modifica di un modulo:** Aggiornato quando il tema associato viene modificato.

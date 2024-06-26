@@ -2,10 +2,10 @@
 title: Come si crea un’azione di invio personalizzata per un modulo adattivo?
 description: Scopri come creare un’azione di invio personalizzata per un Forms adattivo per ritardare l’invio ed elaborare i dati prima di inviarli a un endpoint rest, salvare in un archivio dati ed eseguire altre funzioni personalizzate.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 1%
@@ -102,15 +102,15 @@ Un’azione di invio è un sling:Folder che include quanto segue:
    * **guideComponentType** di tipo Stringa e valore **fd/af/components/guidesubmittype**
    * **guideDataModel** di tipo String che specifica il tipo di modulo adattivo per il quale è applicabile l’azione di invio. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** è supportato per Forms adattivo basato su XSD. **base** è supportato per Forms adattivo che non utilizzano XDP o XSD. Per visualizzare l’azione su più tipi di Forms adattivo, aggiungi le stringhe corrispondenti. Separa ogni stringa con una virgola. Ad esempio, per rendere visibile un’azione <!--XFA- and -->Adaptive Forms basato su XSD, specifica il valore come <!--**xfa** and--> **xsd**.
 
-   * **jcr:descrizione** di tipo String. Il valore di questa proprietà viene visualizzato nell&#39;elenco Azione di invio della scheda Invio azioni della finestra di dialogo Modifica modulo adattivo. Le azioni OOTB sono presenti nell’archivio CRX nel percorso **/libs/fd/af/components/guidesubmittype**.
+   * **jcr:descrizione** di tipo String. Il valore di questa proprietà viene visualizzato nell&#39;elenco Azione di invio della scheda Invio azioni della finestra di dialogo Modifica modulo adattivo. Le azioni OOTB sono presenti nell’archivio CRX nella posizione **/libs/fd/af/components/guidesubmittype**.
 
    * **submitService** di tipo String. Per ulteriori informazioni, consulta [Pianificare l’invio di moduli adattivi per le azioni personalizzate](#schedule-adaptive-form-submission).
 
 ## Creazione di un’azione di invio personalizzata {#creating-a-custom-submit-action}
 
-Per creare un’azione di invio personalizzata che salvi i dati nell’archivio CRX e invii un’e-mail, effettua le seguenti operazioni. Il modulo adattivo contiene il contenuto dell’archivio azioni di invio OOTB (obsoleto) che salva i dati nell’archivio CRX. Inoltre, l&#39;AEM fornisce [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API che può essere utilizzata per inviare e-mail. Prima di utilizzare l’API Mail, configura il servizio Day CQ Mail tramite la console di sistema. Puoi riutilizzare l’azione Archivia contenuto (obsoleta) per memorizzare i dati nell’archivio. L’azione Archivia contenuto (obsoleta) è disponibile nella posizione /libs/fd/af/components/guidesubmittype/store nell’archivio CRX.
+Per creare un’azione di invio personalizzata che salvi i dati nell’archivio CRX, quindi ti invia un’e-mail, effettua le seguenti operazioni. Il modulo adattivo contiene il contenuto dell’archivio azioni di invio OOTB (obsoleto) che salva i dati nell’archivio CRX. Inoltre, l&#39;AEM fornisce [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API che può essere utilizzata per inviare e-mail. Prima di utilizzare l’API Mail, configura il servizio Day CQ Mail tramite la console di sistema. Puoi riutilizzare l’azione Archivia contenuto (obsoleta) per memorizzare i dati nell’archivio. L’azione Archivia contenuto (obsoleta) è disponibile nella posizione /libs/fd/af/components/guidesubmittype/store nell’archivio CRX.
 
-1. Accedi a CRXDE Liti all’URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Crea un nodo con la proprietà sling:Folder e name store_and_mail nella cartella /apps/custom_submit_action. Creare la cartella custom_submit_action se non esiste già.
+1. Accedi a CRXDE Lite all’URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Crea un nodo con la proprietà sling:Folder e name store_and_mail nella cartella /apps/custom_submit_action. Creare la cartella custom_submit_action se non esiste già.
 
    ![Schermata che illustra la creazione di un nodo con la proprietà sling:Folder](assets/step1.png)
 

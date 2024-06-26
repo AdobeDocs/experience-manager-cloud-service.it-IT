@@ -4,7 +4,8 @@ description: Scopri come aggiungere nuove lingue per un modulo adattivo.
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7d49be6d4f58078270fb15b10ef34e81dfa790cb
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 3%
@@ -94,9 +95,9 @@ Clona l’archivio dei componenti core di Forms adattivi: per aggiungere una lin
 
 Per aggiungere il supporto per nuove lingue a un modulo adattivo basato su componenti core, effettua le seguenti operazioni:
 
-### Clonare l’archivio Git as a Cloud Service per AEM
+### Clonare l’archivio Git di AEM as a Cloud Service
 
-1. Apri la riga di comando e scegli una directory per memorizzare l’archivio as a Cloud Service AEM, ad esempio `/cloud-service-repository/`.
+1. Apri la riga di comando e scegli una directory in cui memorizzare l’archivio AEM as a Cloud Service, ad esempio `/cloud-service-repository/`.
 
 1. Esegui il comando seguente per clonare l’archivio:
 
@@ -118,7 +119,7 @@ Per aggiungere il supporto per nuove lingue a un modulo adattivo basato su compo
 
    **Il progetto è pronto.**
 
-   Al termine del comando viene visualizzata una nuova cartella creata nella directory locale. Questa cartella prende il nome dal programma (ad esempio, program-id). Questa cartella contiene tutti i file e il codice scaricati dall’archivio Git as a Cloud Service dall’AEM.
+   Al termine del comando viene visualizzata una nuova cartella creata nella directory locale. Questa cartella prende il nome dal programma (ad esempio, program-id). Questa cartella contiene tutti i file e il codice scaricati dall’archivio Git di AEM as a Cloud Service.
 
    In questa guida, questa cartella viene definita `[AEMaaCS project directory]`.
 
@@ -197,7 +198,7 @@ Questo comando scarica l’intero archivio, inclusa la libreria clientlib-it-cus
 
 ### Integrare la libreria client di esempio
 
-Ora, incorporiamo il `clientlib-it-custom-locale` libreria nel vostro AEM as a Cloud Service, [Directory del progetto AEMaaCS]:
+Ora, incorporiamo il `clientlib-it-custom-locale` libreria nell&#39;AEM as a Cloud Service, [Directory del progetto AEMaaCS]:
 
 1. Individua la libreria client di esempio:
 
@@ -326,7 +327,7 @@ Questo passaggio si applica solo alle lingue diverse da quelle comunemente suppo
 
 Ora tutti potete utilizzare le nuove impostazioni internazionali con il vostro Forms adattivo. È possibile
 
-* Mettere in funzione l&#39;AEM as a Cloud Service, [Directory del progetto AEMaaCS], nell&#39;ambiente di sviluppo locale per provare la nuova configurazione locale nel computer locale. Per implementare nell’ambiente di sviluppo locale:
+* Distribuire AEM as a Cloud Service [Directory del progetto AEMaaCS], nell&#39;ambiente di sviluppo locale per provare la nuova configurazione locale nel computer locale. Per implementare nell’ambiente di sviluppo locale:
 
    1. Assicurati che l’ambiente di sviluppo locale sia operativo. Se non hai già configurato un ambiente di sviluppo locale, consulta la guida su [Configurare l’ambiente di sviluppo locale per AEM Forms](/help/forms/setup-local-development-environment.md).
 
@@ -340,7 +341,7 @@ Ora tutti potete utilizzare le nuove impostazioni internazionali con il vostro F
       mvn -PautoInstallPackage clean install
       ```
 
-* Mettere in funzione l&#39;AEM as a Cloud Service, [Directory del progetto AEMaaCS], nell&#39;ambiente di Cloud Service. Per eseguire l’implementazione nell’ambiente di Cloud Service:
+* Distribuire AEM as a Cloud Service [Directory del progetto AEMaaCS], nell&#39;ambiente di Cloud Service. Per eseguire l’implementazione nell’ambiente di Cloud Service:
 
    1. Eseguire il commit delle modifiche:
 
@@ -357,7 +358,7 @@ Ora tutti potete utilizzare le nuove impostazioni internazionali con il vostro F
 
 Questi passaggi ti guidano attraverso l’anteprima di un modulo adattivo con le nuove impostazioni locali aggiunte:
 
-1. Accedi all’istanza as a Cloud Service di AEM Forms.
+1. Accedi all’istanza AEM Forms as a Cloud Service.
 1. Vai a **Forms** >  **Forms e documenti**.
 1. Seleziona un modulo adattivo e fai clic su **Aggiungi dizionario** e **Aggiungi dizionario a progetto di traduzione** viene visualizzata la procedura guidata.
 1. Specifica la **Titolo progetto** e seleziona la **Lingue di destinazione** dal menu a discesa nella **Aggiungi dizionario a progetto di traduzione** procedura guidata.

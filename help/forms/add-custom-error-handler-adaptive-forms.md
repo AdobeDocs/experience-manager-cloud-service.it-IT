@@ -6,10 +6,11 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2378'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -196,10 +197,10 @@ Per informazioni su come utilizzare un gestore degli errori predefinito utilizza
 1. Seleziona **[!UICONTROL Crea]**.
 1. Creare una condizione in **Quando** sezione della regola. Ad esempio: **Quando[Nome del campo ID animale domestico]** è stato modificato. Seleziona viene modificato dal **Seleziona stato** elenco a discesa.
 1. In **Then** sezione, seleziona **[!UICONTROL Richiama servizio]** dal **Seleziona azione** elenco a discesa.
-1. Seleziona un **Servizio post** e le associazioni di dati corrispondenti dalla **Input** sezione. Ad esempio, per convalidare **ID animale domestico**, seleziona un **Servizio post** as **GET /pet/{petId}** e seleziona **ID animale domestico** nel **Input** sezione.
+1. Seleziona un **servizio Post** e le associazioni di dati corrispondenti dalla **Input** sezione. Ad esempio, per convalidare **ID animale domestico**, seleziona un **servizio Post** as **GET /pet/{petId}** e seleziona **ID animale domestico** nel **Input** sezione.
 1. Seleziona le associazioni di dati da **Output** sezione. Seleziona **Nome animale domestico** nel **Output** sezione.
 1. Seleziona **[!UICONTROL Gestore errori predefinito]** dal **Gestore errori** sezione.
-1. Clic **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 ![aggiungere un gestore errori predefinito per i controlli di convalida dei campi in un modulo](/help/forms/assets/default-error-handler.png)
 
@@ -307,10 +308,10 @@ Per utilizzare un gestore degli errori personalizzato utilizzando **[!UICONTROL 
 1. Seleziona **[!UICONTROL Crea]**.
 1. Creare una condizione in **Quando** sezione della regola. Ad esempio, Quando **[Nome del campo ID animale domestico]** è stato modificato, seleziona **è stato modificato** dal **Seleziona stato** elenco a discesa.
 1. In **Then** sezione, seleziona **[!UICONTROL Richiama servizio]** dal **Seleziona azione** elenco a discesa.
-1. Seleziona un **Servizio post** e le associazioni di dati corrispondenti dalla **Input** sezione. Ad esempio, per convalidare **ID animale domestico**, seleziona un **Servizio post** as **GET /pet/{petId}** e seleziona **ID animale domestico** nel **Input** sezione.
+1. Seleziona un **servizio Post** e le associazioni di dati corrispondenti dalla **Input** sezione. Ad esempio, per convalidare **ID animale domestico**, seleziona un **servizio Post** as **GET /pet/{petId}** e seleziona **ID animale domestico** nel **Input** sezione.
 1. Seleziona le associazioni di dati da **Output** sezione. Ad esempio, seleziona **Nome animale domestico** nel **Output** sezione.
 1. Seleziona **[!UICONTROL Gestore errori personalizzato]** dal **[!UICONTROL Gestore errori]** sezione.
-1. Clic **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 ![aggiungere un gestore degli errori personalizzato in un modulo per gestire le risposte di errore](/help/forms/assets/custom-error-handler.png)
 

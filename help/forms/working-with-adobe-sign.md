@@ -3,10 +3,10 @@ title: Come possiamo utilizzare Adobe Sign in un modulo adattivo?
 description: Utilizza Adobe Sign in un modulo adattivo per consentire ai destinatari del modulo di apporre la firma elettronica a un modulo dal dispositivo e dal luogo di loro scelta.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3243'
 ht-degree: 0%
@@ -230,7 +230,7 @@ Puoi avere uno o più destinatari per un accordo Adobe Sign. Quando aggiungi un 
 
 Dopo, aggiungi [!DNL Adobe Sign] campi in un modulo adattivo, abilita [!DNL Adobe Sign] dal contenitore modulo, seleziona [!DNL Adobe Sign] Cloud Service e aggiungi i destinatari del contratto di Adobe Sign, seleziona un’azione di invio appropriata per il modulo adattivo. Per informazioni dettagliate sulle azioni di invio di Adaptive Forms, consulta [Configurazione dell’azione di invio](configuring-submit-actions.md).
 
-La firma e l’invio di un modulo sono indipendenti l’uno dall’altro. L’invio di un modulo adattivo ha luogo subito dopo la creazione di un accordo Adobe Sign dopo l’invio di un modulo da parte dell’utente. [!DNL AEM Forms] as a Cloud Service non attende che i destinatari firmino o completino altre azioni per inviare un modulo adattivo. Un modulo viene inviato non appena un utente fa clic sul pulsante Invia o quando un passaggio di riepilogo visualizza il riepilogo del modulo.
+La firma e l’invio di un modulo sono indipendenti l’uno dall’altro. L’invio di un modulo adattivo ha luogo subito dopo la creazione di un accordo Adobe Sign dopo l’invio di un modulo da parte dell’utente. [!DNL AEM Forms] In as a Cloud Service non attende che i destinatari firmino o completino altre azioni per inviare un modulo adattivo. Un modulo viene inviato non appena un utente fa clic sul pulsante Invia o quando un passaggio di riepilogo visualizza il riepilogo del modulo.
 
 Inoltre, un’ [!DNL Adobe Sign] Il modulo adattivo abilitato incorpora l’ID del contratto Adobe Sign per l’invio dei dati. È possibile utilizzare l&#39;ID accordo per tenere traccia dello stato dell&#39;accordo utilizzando un codice personalizzato (è necessaria l&#39;implementazione personalizzata).
 

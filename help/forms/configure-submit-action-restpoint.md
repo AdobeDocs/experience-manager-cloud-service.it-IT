@@ -1,21 +1,23 @@
 ---
 Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
-keywords: Endpoint REST di AEM Forms, invia all’endpoint REST, invia dati all’URL REST, configura azione endpoint REST
+keywords: Endpoint REST di AEM Forms, Invia a endpoint REST, Dati Post a URL REST, Configura azione endpoint REST
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
+exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
+title: "Come configurare un’azione di invio per un modulo adattivo?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 0%
+source-wordcount: '560'
+ht-degree: 1%
 
 ---
-
 
 # Configurare un modulo adattivo per l’azione di invio dell’endpoint REST
 
 Utilizza il **[!UICONTROL Invia all’endpoint REST]** per pubblicare i dati inviati a un URL REST. L’URL può essere interno (il server sul quale viene eseguito il rendering del modulo) o esterno.
 
-AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione delle richieste di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md)  articolo.
+AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md)  articolo.
 
 ## Vantaggi
 
@@ -36,7 +38,7 @@ Per configurare l’azione di invio:
 1. Dalla sezione **[!UICONTROL Azione di invio]** elenco a discesa, seleziona **[!UICONTROL Invia all’endpoint Rest]**.
    ![Configurazione dell’azione dell’endpoint &quot;Invia a Rest&quot;](/help/forms/assets/submit-action-restendpoint.png)
 
-   Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio: `/content/restEndPoint`. Per tali richieste successive, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
+   Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, `/content/restEndPoint`. Per tali richieste successive, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
 
    Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL è `https://host:port/path_to_rest_end_point`. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.
 
@@ -63,9 +65,9 @@ Per configurare l’azione di invio:
 
    ![Configurazione dell’azione di invio endpoint REST](assets/action-config.png)
 
-   È inoltre possibile **[!UICONTROL Abilita richiesta POST]** e fornisci un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso radice del server AEM. Ad esempio: `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
+   È inoltre possibile **[!UICONTROL Abilita richiesta POST]** e fornisci un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso radice del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
 
-1. Clic **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 ## Best practice
 
@@ -75,4 +77,3 @@ Per configurare l’azione di invio:
 ## Articoli correlati
 
 {{af-submit-action}}
-

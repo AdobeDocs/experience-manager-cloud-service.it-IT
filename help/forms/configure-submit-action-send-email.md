@@ -3,13 +3,15 @@ Title: How to send an email on submission of an Adaptive Form?
 Description: Explore the process to set up email notifications when submitting an Adaptive Form.
 keywords: come inviare un’e-mail per un modulo adattivo, Azione di invio e-mail, E-mail modulo adattivo, E-mail di invio modulo, Guida all’invio e-mail
 feature: Adaptive Forms, Core Components
-source-git-commit: f1db04e6cd1f78c1530aefd29f5f036ca5e70873
+exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
+title: "Come configurare un’azione di invio per un modulo adattivo?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 0%
+source-wordcount: '447'
+ht-degree: 3%
 
 ---
-
 
 # Configurare l’azione di invio Invia e-mail per un modulo adattivo
 
@@ -57,7 +59,7 @@ Per configurare l’azione di invio:
    * Puoi specificare il percorso del modello e-mail esterno salvato nelle risorse AEM utilizzando **[!UICONTROL Percorso modello esterno]** opzione.
    * Puoi anche aggiungere un modello e-mail personalizzato per l’invio del modulo nel **[!UICONTROL Modello e-mail]** casella di testo.
 1. [Facoltativo] Il **[!UICONTROL Invia e-mail]** L&#39;azione di invio fornisce l&#39;opzione per includere allegati e un [Documento record (DoR)](generate-document-of-record-core-components.md) con l’e-mail.
-1. Clic **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 ## Best practice {#best-practices}
 
@@ -69,5 +71,3 @@ Per configurare l’azione di invio:
 ## Articoli correlati
 
 {{af-submit-action}}
-
-

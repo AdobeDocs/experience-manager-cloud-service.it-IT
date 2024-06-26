@@ -4,7 +4,8 @@ description: Scopri come riutilizzare in modo efficiente un modulo adattivo esis
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 3%
@@ -53,7 +54,7 @@ Copiare un modulo adattivo utilizzando uno dei seguenti approcci:
 
 Facendo clic sull&#39;azione di copia, si esce automaticamente dalla modalità di selezione e si esegue l&#39;operazione Incolla ![Incolla](assets/Smock_Paste_18_N.svg) visibile. Ora vai al percorso della cartella desiderato e fai clic sul pulsante Incolla ![Incolla](assets/Smock_Paste_18_N.svg) per incollare il modulo adattivo copiato.
 
-Se si incolla nella stessa cartella o in questa cartella di destinazione esiste un altro file con lo stesso nome di nodo (con il quale è memorizzato nell&#39;archivio CRX), al suffisso viene aggiunto 1 (ad esempio, myaf diventa myaf1 e, se myaf1 esiste nella stessa posizione, myaf diventa myaf2. Tutte le altre proprietà rimangono invariate rispetto al modulo adattivo originale.
+Se si sta incollando nella stessa cartella o un altro file con lo stesso nome di nodo (con cui è memorizzato nell&#39;archivio di CRX) esiste in questa cartella di destinazione, 1 viene aggiunto al suffisso (ad esempio, myaf diventa myaf1 e se myaf1 esiste nella stessa posizione, myaf diventa myaf2. Tutte le altre proprietà rimangono invariate rispetto al modulo adattivo originale.
 
 Dopo aver fatto clic sull’icona Incolla ![Incolla](assets/Smock_Paste_18_N.svg) icona, sarà di nuovo nascosto. È possibile incollare una sola volta. Per creare di nuovo una copia della stessa risorsa, copiala nuovamente.
 

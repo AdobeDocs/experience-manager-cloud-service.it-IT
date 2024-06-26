@@ -4,7 +4,8 @@ description: Crea modelli di moduli adattivi basati sul componente core per defi
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 4%
@@ -27,11 +28,11 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Prerequisito
 
-**Abilitare i componenti core Forms adattivi per il tuo ambiente**: quando crei un programma, i Componenti core adattivi di Forms sono già abilitati per il tuo ambiente. Se disponi di un ambiente as a Cloud Service al modulo basato su [AEM Archetipo 39 o precedente](https://github.com/adobe/aem-project-archetype), [Abilitare i componenti core Forms adattivi per il tuo ambiente](enable-adaptive-forms-core-components.md).
+**Abilitare i componenti core Forms adattivi per il tuo ambiente**: quando crei un programma, i Componenti core adattivi di Forms sono già abilitati per il tuo ambiente. Se disponi di un ambiente di as a Cloud Service modulo basato su [AEM Archetipo 39 o precedente](https://github.com/adobe/aem-project-archetype), [Abilitare i componenti core Forms adattivi per il tuo ambiente](enable-adaptive-forms-core-components.md).
 
 >[!NOTE]
 >
-> Quando si distribuisce l’ambiente as a Cloud Service Forms basato su Archetipo 45, il **Forms adattivo (componente core)** I modelli e i temi basati sui componenti core vengono aggiunti al tuo ambiente.
+> Quando si distribuisce l’ambiente Forms as a Cloud Service basato su Archetipo 45, il **Forms adattivo (componente core)** I modelli e i temi basati sui componenti core vengono aggiunti al tuo ambiente.
 
 ## Utilizzo del modello {#working-with-templates}
 
@@ -67,7 +68,7 @@ Contiene le seguenti opzioni:
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **Selettore modalità:** Consente di modificare la modalità. Puoi scegliere **[!UICONTROL Struttura]** modalità, **[!UICONTROL Contenuto iniziale]**, **[!UICONTROL Controllo layout]** modalità. La modalità Struttura consente di aggiungere e personalizzare intestazione e piè di pagina. La modalità Contenuto iniziale consente di personalizzare il contenuto del modulo.
    * **Anteprima:** Consente di visualizzare in anteprima l’aspetto del modello quando lo si pubblica. Potete utilizzare Selettore livello (Layer Selector) e Anteprima (Preview) per attivare o disattivare le modalità di modifica e anteprima.
-* **Barra laterale:** Fornisce i browser Contenuto, Proprietà, Risorse e Componenti.
+* **Barra laterale:** Fornisce i browser Contenuto, Proprietà, Assets e Componenti.
 * **Barra degli strumenti del componente:** Quando selezioni un componente, viene visualizzata una barra degli strumenti che consente di personalizzarlo.
 * **Pagina**: l’area in cui aggiungere contenuto per creare il modello.
 
@@ -216,7 +217,7 @@ I passaggi per aggiungere proprietà personalizzate ai campi del componente core
 1. Seleziona la **[!UICONTROL Proprietà personalizzate]** scheda.
 1. Specifica la **[!UICONTROL Titolo criterio]** sotto **[!UICONTROL Policy]** sezione.
 1. Specifica la **[!UICONTROL Nome gruppo]** e aggiungi una coppia chiave-valore associata a un gruppo specifico. Il nome del gruppo è visibile agli autori del modulo nella finestra di dialogo per modifica di un componente. Se selezioni il nome del gruppo, ogni coppia chiave-valore associata è applicabile a un componente.
-1. Clic **[Fine]**.
+1. Fai clic su **[Fine]**.
 
 ![Aggiunta del nome del gruppo di proprietà personalizzate nell’editor modelli](/help/forms/assets/custom-properties-core-component.png)
 

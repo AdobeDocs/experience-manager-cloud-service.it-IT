@@ -6,7 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4351'
 ht-degree: 0%
@@ -25,7 +26,7 @@ ht-degree: 0%
 
 ## Introduzione
 
-AEM Forms supporta funzioni personalizzate che consentono agli utenti di definire funzioni JavaScript per l’implementazione di regole di business complesse. Queste funzioni personalizzate estendono le funzionalità dei moduli facilitando la manipolazione e l’elaborazione dei dati immessi per soddisfare requisiti specifici. Consentono inoltre di modificare dinamicamente il comportamento delle forme in base a criteri predefiniti.
+AEM Forms supporta funzioni personalizzate che consentono agli utenti di definire funzioni JavaScript per l’implementazione di regole aziendali complesse. Queste funzioni personalizzate estendono le funzionalità dei moduli facilitando la manipolazione e l’elaborazione dei dati immessi per soddisfare requisiti specifici. Consentono inoltre di modificare dinamicamente il comportamento delle forme in base a criteri predefiniti.
 
 >[!NOTE]
 >
@@ -39,11 +40,11 @@ L’utilizzo di funzioni personalizzate in Adaptive Forms offre i seguenti vanta
 * **Comportamento dinamico**: le funzioni personalizzate consentono di controllare il comportamento dinamico dei moduli in base a condizioni specifiche. Ad esempio, è possibile visualizzare/nascondere campi, modificare i valori dei campi o modificare dinamicamente la logica del modulo.
 * **Integrazione**: puoi utilizzare funzioni personalizzate da integrare con API o servizi esterni. Consente di recuperare dati da origini esterne, inviare dati agli endpoint Rest esterni o eseguire azioni personalizzate basate su eventi esterni.
 
-Le funzioni personalizzate sono essenzialmente librerie client aggiunte nel file JavaScript. Una volta creata, una funzione personalizzata diventa disponibile nell’editor di regole per la selezione da parte dell’utente in un modulo adattivo. Le funzioni personalizzate sono identificate dalle annotazioni JavaScript nell’editor di regole.
+Le funzioni personalizzate sono essenzialmente librerie client aggiunte al file JavaScript. Una volta creata, una funzione personalizzata diventa disponibile nell’editor di regole per la selezione da parte dell’utente in un modulo adattivo. Le funzioni personalizzate sono identificate dalle annotazioni di JavaScript nell’editor di regole.
 
-### Annotazioni JavaScript supportate per la funzione personalizzata {#js-annotations}
+### Annotazioni di JavaScript supportate per la funzione personalizzata {#js-annotations}
 
-Le annotazioni JavaScript vengono utilizzate per fornire metadati per il codice JavaScript. Include commenti che iniziano con simboli specifici, ad esempio /** e @. Le annotazioni forniscono informazioni importanti su funzioni, variabili e altri elementi nel codice. Il modulo adattivo supporta le seguenti annotazioni JavaScript per le funzioni personalizzate:
+Le annotazioni JavaScript vengono utilizzate per fornire metadati per il codice JavaScript. Include commenti che iniziano con simboli specifici, ad esempio /** e @. Le annotazioni forniscono informazioni importanti su funzioni, variabili e altri elementi nel codice. Il modulo adattivo supporta le seguenti annotazioni di JavaScript per le funzioni personalizzate:
 
 #### Nome
 
@@ -75,14 +76,14 @@ Il parametro è un elenco di argomenti utilizzati dalle funzioni personalizzate.
    * data[]: rappresenta una matrice di valori di data.
    * array: rappresenta una matrice generica contenente valori di vari tipi.
    * object: rappresenta un oggetto modulo passato a una funzione personalizzata anziché passare direttamente il relativo valore.
-   * ambito: rappresenta l&#39;oggetto globals, che contiene variabili di sola lettura quali istanze di moduli, istanze di campi di destinazione e metodi per l&#39;esecuzione di modifiche di moduli all&#39;interno di funzioni personalizzate. Viene dichiarato come ultimo parametro nelle annotazioni JavaScript e non è visibile nell’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo. Per ulteriori informazioni sull&#39;oggetto Globals e su come utilizzarlo, [fai clic qui](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
+   * ambito: rappresenta l&#39;oggetto globals, che contiene variabili di sola lettura quali istanze di moduli, istanze di campi di destinazione e metodi per l&#39;esecuzione di modifiche di moduli all&#39;interno di funzioni personalizzate. Viene dichiarato come ultimo parametro nelle annotazioni di JavaScript e non è visibile nell’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo. Per ulteriori informazioni sull&#39;oggetto Globals e su come utilizzarlo, [fai clic qui](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
 
 Il tipo di parametro non fa distinzione tra maiuscole e minuscole e non sono consentiti spazi nel nome del parametro.
 
 `<Parameter Description>` contiene dettagli sullo scopo del parametro. Può avere più parole.
 
 **Parametri facoltativi**
-Per impostazione predefinita, tutti i parametri sono obbligatori. È possibile definire un parametro come facoltativo aggiungendo `=` dopo il tipo di parametro o che racchiude il nome del parametro in  `[]`. I parametri definiti come facoltativi nelle annotazioni JavaScript vengono visualizzati come facoltativi nell’editor di regole.
+Per impostazione predefinita, tutti i parametri sono obbligatori. È possibile definire un parametro come facoltativo aggiungendo `=` dopo il tipo di parametro o che racchiude il nome del parametro in  `[]`. I parametri definiti come facoltativi nelle annotazioni di JavaScript vengono visualizzati come facoltativi nell’editor di regole.
 Per definire una variabile come parametro facoltativo, è possibile utilizzare una delle sintassi seguenti:
 
 * `@param {type=} Input1`
@@ -241,7 +242,7 @@ Puoi aggiungere funzioni personalizzate aggiungendo una libreria client. Per cre
 
 **Clonare l’archivio**
 
-Clona il tuo [Archivio as a Cloud Service AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
+Clona il tuo [Archivio as a Cloud Service di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
 
 1. Apri la riga di comando o la finestra del terminale.
 
@@ -337,7 +338,7 @@ Aggiungi quanto segue alla cartella della libreria client aggiunta:
 
 **Distribuire nell’ambiente AEM la cartella della libreria client appena creata**
 
-Mettere in funzione l&#39;AEM as a Cloud Service, [Directory del progetto AEMaaCS], nell&#39;ambiente di Cloud Service. Per eseguire l’implementazione nell’ambiente di Cloud Service:
+Distribuire AEM as a Cloud Service [Directory del progetto AEMaaCS], nell&#39;ambiente di Cloud Service. Per eseguire l’implementazione nell’ambiente di Cloud Service:
 
 1. Eseguire il commit delle modifiche
 
@@ -372,7 +373,7 @@ Dopo aver implementato la libreria client nell’ambiente Forms CS, utilizzane l
    >
    > È possibile aggiungere più categorie specificando un elenco separato da virgole all’interno del **[!UICONTROL Categoria libreria client]** campo.
 
-1. Clic **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 È possibile utilizzare la funzione personalizzata in [editor di regole di un modulo adattivo](/help/forms/rule-editor-core-components.md) utilizzando [Annotazioni JavaScript](##js-annotations).
 
@@ -1011,12 +1012,12 @@ Se le funzioni personalizzate vengono modificate, la memorizzazione in cache vie
 * Se il gestore di invio personalizzato non funziona come previsto nei progetti o moduli AEM esistenti, effettua le seguenti operazioni:
    * Assicurati che [versione dei componenti core aggiornata a 3.0.18 e successive](https://github.com/adobe/aem-core-forms-components). Tuttavia, per i progetti e i moduli AEM esistenti, vi sono ulteriori passi da seguire:
 
-   * Per il progetto AEM, l’utente deve sostituire tutte le istanze di `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` e implementa il progetto tramite la pipeline di Cloud Manager.
+   * Per il progetto AEM, l’utente deve sostituire tutte le istanze di `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` e implementa il progetto tramite la pipeline Cloud Manager.
 
    * Per i moduli esistenti, se i gestori di invio personalizzati non funzionano correttamente, l’utente deve aprire e salvare il `submitForm` regola sul **Invia** tramite l&#39;editor di regole. Questa azione sostituisce la regola esistente da `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` nel modulo.
 
 
-* Se il file JavaScript contenente il codice per le funzioni personalizzate presenta un errore, le funzioni personalizzate non sono elencate nell’editor di regole di un modulo adattivo. Per verificare l&#39;elenco delle funzioni personalizzate, è possibile passare alla `error.log` file per l’errore. In caso di errore, l’elenco delle funzioni personalizzate appare vuoto:
+* Se il file JavaScript contenente il codice per le funzioni personalizzate presenta un errore, le funzioni personalizzate non sono elencate nell’editor delle regole di un modulo adattivo. Per verificare l&#39;elenco delle funzioni personalizzate, è possibile passare alla `error.log` file per l’errore. In caso di errore, l’elenco delle funzioni personalizzate appare vuoto:
 
   ![file registro errori](/help/forms/assets/custom-function-list-error-file.png)
 

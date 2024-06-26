@@ -2,13 +2,14 @@
 title: Come si salva un modulo adattivo basato su componente core come bozza?
 description: Scopri come salvare un modulo adattivo basato su componenti core come bozza, creare un portale Forms e utilizzare i componenti core predefiniti in una pagina AEM Sites.
 feature: Adaptive Forms, Core Components
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 <span class="preview"> Questo articolo contiene contenuti per la funzione pre-release. La funzione di pre-release è accessibile solo tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features).
 
@@ -71,7 +72,7 @@ Dopo aver creato la configurazione di archiviazione di Azure, configurare il con
 
    ![Impostazione di memorizzazione del connettore unificato](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
-1. Seleziona **[!UICONTROL Salva]** e quindi seleziona **[!UICONTROL Pubblica]** per pubblicare la configurazione.
+1. Seleziona **[!UICONTROL Salva]** e quindi seleziona **[!UICONTROL Publish]** per pubblicare la configurazione.
 
 ### 3. Creare regole per salvare un modulo adattivo come bozza {#rule-to-save-adaptive-form-as-draft}
 
@@ -111,7 +112,7 @@ Per attivare **[!UICONTROL Bozze e invii]** nel criterio del modello, effettuare
 
    ![Selezione criteri](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
-1. Clic **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 Una volta abilitato il componente portale, puoi utilizzarlo nell’istanza di authoring della pagina AEM Sites.
 
@@ -135,7 +136,7 @@ Il **Bozze e invii** Nel componente vengono visualizzati i moduli salvati come b
 
    ![Proprietà dei componenti Bozza e Invio](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
-1. Clic **Fine**.
+1. Fai clic su **Fine**.
 
 Quando **[!UICONTROL Seleziona tipo]** è selezionato come **Bozza di Forms**, vengono visualizzati i moduli salvati come bozze:
 ![Icona Bozze](assets/drafts-component.png)

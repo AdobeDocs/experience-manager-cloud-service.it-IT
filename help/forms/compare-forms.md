@@ -3,16 +3,18 @@ title: Confronta due moduli adattivi distinti.
 description: Confronta due moduli distinti in base ai campi, al contenuto e ai componenti del modulo.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# Confronta Forms adattivo {#compare-two-forms}
+# Confrontare i moduli adattivi {#compare-two-forms}
 
-<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
 
 Quando gli autori dei moduli devono confrontare due moduli distinti in base ai campi, al contenuto e ai componenti dei moduli, confrontano i due moduli. Per poter confrontare i due moduli, l&#39;autore deve assicurarsi che si trovino nella stessa directory o cartella. Per confrontare due moduli adattivi distinti, effettua le seguenti operazioni:
 
@@ -27,4 +29,3 @@ Quando gli autori dei moduli devono confrontare due moduli distinti in base ai c
 ## Consulta anche {#see-also}
 
 {{see-also}}
-

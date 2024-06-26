@@ -4,7 +4,8 @@ description: Utilizza il componente tabella per aggiungere tabelle a un modulo a
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 0%
@@ -91,7 +92,7 @@ Per aggiungere o eliminare una colonna, fai clic sulla cella di testo nella sezi
 
 1. Seleziona la tabella e seleziona. ![cmppr](assets/cmppr.png) per visualizzarne le proprietà nella barra laterale.
 1. Specificare il riepilogo nella scheda Accessibilità.
-1. Clic **Fine**.
+1. Fai clic su **Fine**.
 
 ### Ordinare le colonne in una tabella {#sortcolumnstable}
 
@@ -153,7 +154,7 @@ Le tabelle forniscono supporto preconfigurato per l’aggiunta o l’eliminazion
 
 1. Seleziona una riga di tabella e seleziona ![cmppr](assets/cmppr.png).
 1. Nella scheda Impostazioni ripetizione, specifica i conteggi minimo e massimo per limitare il numero di righe nella tabella.
-1. Clic **Fine**.
+1. Fai clic su **Fine**.
 
 In fase di runtime o di anteprima, viene visualizzato **+** e ![Pulsante Elimina](/help/forms/assets/Smock_Delete.svg) per aggiungere o eliminare una riga.
 

@@ -1,9 +1,10 @@
 ---
 title: Come risolvere gli errori di creazione dei moduli?
-description: Risoluzione dei problemi relativi agli errori di creazione dei moduli nell’ambiente as a Cloud Service di AEM Forms.
-feature: Adaptive Forms, Troubleshooting
+description: Risoluzione dei problemi relativi agli errori di creazione dei moduli nell’ambiente AEM Forms as a Cloud Service.
+feature: Adaptive Forms
 role: User
-source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
+exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
@@ -27,9 +28,9 @@ Il problema si verifica perché l’autore pubblica il modulo senza **prima pubb
 Per risolvere il problema, effettuare le seguenti operazioni:
 
 1. Verificare che il modello utilizzato nel modulo non disponga di `jcr:uuid` e altre proprietà protette generate dal sistema nel percorso `<template-path>/initial/jcr:content node`.
-1. Pubblica il modello esplicitamente utilizzando la console modelli.
+1. Publish il modello utilizzando esplicitamente la console modelli.
 1. Ora, quando il modello viene pubblicato, provare a creare nuovi moduli utilizzando il modello.
-1. Se il modello utilizzato viene aggiornato nelle versioni future, pubblicalo nuovamente (come indicato nel passaggio 2) per evitare problemi di errore durante la creazione del modulo.
+1. Se il modello utilizzato viene aggiornato nelle versioni future, esegui nuovamente il Publish del modello (come indicato nel passaggio 2) per evitare problemi di creazione del modulo.
 
 
 <!--
@@ -55,13 +56,3 @@ To resolve the issue, perform the following workaround steps:
 1. If the template is changed in the future, publish it again as mentioned in the step 1.
 
 -->
-
-
-
-
-
-
-
-
-
-

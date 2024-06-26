@@ -3,7 +3,8 @@ title: Come si aggiunge una nota a piè di pagina a un modulo adattivo?
 description: Utilizza l’editor Rich Text per le note a piè di pagina in un modulo adattivo.
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%

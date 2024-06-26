@@ -1,17 +1,17 @@
 ---
 title: AEM Forms as a Cloud Service supporta font pronti all’uso per la generazione di PDF.
 description: AEM Forms as a Cloud Service supporta font predefiniti per documenti di record e PDF.
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
-source-git-commit: e8e00d85e5526a3de3a210ee72df07d85bb7d1db
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
-# Font supportati per la generazione di PDF su Forms as a Cloud Service preconfigurati (OOTB)  {#ootb-supported-fonts-overview}
+# Font supportati per la generazione di PDF in Forms as a Cloud Service pronti all’uso (OOTB)  {#ootb-supported-fonts-overview}
 
 AEM Forms as a Cloud Service offre diversi font incorporati supportati che possono essere utilizzati direttamente in [API di comunicazione](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Documento di record per i componenti core](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), e [Documento di record per i componenti di base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 
@@ -52,5 +52,5 @@ L&#39;elenco dei font supportati dalla OOTB è:
 * eurosign.ttf
 
 
-Oltre ai tipi di carattere sopra indicati, è possibile utilizzare tipi di carattere personalizzati per conferire ai PDF un aspetto specifico. Per attivare i tipi di carattere personalizzati, [aggiungere font personalizzati all’ambiente as a Cloud Service di Forms](/help/forms/use-custom-fonts.md) con una licenza valida.
+Oltre ai tipi di carattere sopra indicati, è possibile utilizzare tipi di carattere personalizzati per conferire ai PDF un aspetto specifico. Per attivare i tipi di carattere personalizzati, [aggiungere font personalizzati all’ambiente Forms as a Cloud Service](/help/forms/use-custom-fonts.md) con una licenza valida.
 

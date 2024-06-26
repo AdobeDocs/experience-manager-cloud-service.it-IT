@@ -1,10 +1,10 @@
 ---
-title: Come utilizzare Forms as a Cloud Service per unire i dati con modelli XDP e PDF o generare output in formati PCL, ZPL e PostScript?
+title: Come si utilizza Forms as a Cloud Service per unire i dati con i modelli XDP e PDF o generare l’output in formati PCL, ZPL e PostScript?
 description: Unisci automaticamente i dati ai modelli XDP e PDF o genera l’output nei formati PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 6%
@@ -45,9 +45,9 @@ Le operazioni API a tenant singolo supportano due tipi di autenticazione:
 
 * **Autenticazione di base**: l’autenticazione di base è uno schema di autenticazione semplice integrato nel protocollo HTTP. Il client invia richieste HTTP con l’intestazione Authorization che contiene la parola Basic seguita da uno spazio e da una stringa con codifica base64 username:password. Ad esempio, per autorizzare come amministratore/amministratore il client invia Basic [nome utente stringa con codifica base64]: [password stringa con codifica base64].
 
-* **Autenticazione basata su token:** L’autenticazione basata su token utilizza un token di accesso (token di autenticazione Bearer) per rendere as a Cloud Service le richieste di Experience Manager. AEM Forms as a Cloud Service fornisce API per recuperare in modo sicuro il token di accesso. Per recuperare e utilizzare il token per autenticare una richiesta:
+* **Autenticazione basata su token:** L’autenticazione basata su token utilizza un token di accesso (token di autenticazione Bearer) per effettuare richieste di Experience Manager as a Cloud Service. AEM Forms as a Cloud Service fornisce API per recuperare in modo sicuro il token di accesso. Per recuperare e utilizzare il token per autenticare una richiesta:
 
-   1. [Recupera le credenziali Experience Manager as a Cloud Service da Console sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [Recupera le credenziali dell’Experience Manager as a Cloud Service da Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
    1. [Installa le credenziali Experience Manager as a Cloud Service nell’ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (server applicazioni, server web o altri server non AEM) configurati per inviare richieste al servizio cloud (effettuare chiamate).
    1. [Generare un token JWT e scambiarlo con le API Adobe IMS per un token di accesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
    1. Esegui l’API Experience Manager con il token di accesso come token di autenticazione Bearer.
@@ -148,6 +148,6 @@ Il [Documentazione di riferimento API](https://developer.adobe.com/experience-ma
 >[!MORELIKETHIS]
 >
 >* [Introduzione ad AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [Architettura as a Cloud Service di AEM Forms per API di comunicazione e Forms adattivi](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Architettura AEM Forms as a Cloud Service per Forms adattivo e API di comunicazione](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Elaborazione della comunicazione - API sincrone](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Elaborazione della comunicazione - API batch](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

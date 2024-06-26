@@ -2,13 +2,13 @@
 title: Come possiamo risolvere i problemi relativi alla memorizzazione nella cache per AEM Forms as a Cloud Service?
 description: Risolvere i problemi relativi alla memorizzazione nella cache per AEM Forms as a Cloud Service.
 contentOwner: khsingh
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ Durante la configurazione o l’utilizzo della cache di Forms adattivo in un amb
 
 ## Alcuni Forms adattivi contenenti immagini o video non vengono invalidati automaticamente dalla cache di Dispatcher {#images-videos-not-invalidated}
 
-Puoi selezionare e aggiungere immagini o video dal browser di risorse a un modulo adattivo. Quando queste immagini vengono modificate nell’editor delle risorse, la versione cache di un modulo adattivo contenente tali immagini non viene invalidata. Il modulo adattivo continua a mostrare immagini precedenti.
+Puoi selezionare e aggiungere immagini o video dal browser di risorse a un modulo adattivo. Quando queste immagini vengono modificate nell’editor di Assets, la versione cache di un modulo adattivo contenente tali immagini non viene invalidata. Il modulo adattivo continua a mostrare immagini precedenti.
 
 Per risolvere il problema, dopo la pubblicazione delle immagini e del video, annulla esplicitamente la pubblicazione e pubblica il Forms adattivo che fa riferimento a tali risorse.
 
@@ -57,7 +57,7 @@ Per risolvere il problema, effettua le seguenti operazioni:
 
 ## Il caching CDN smette di funzionare dopo 300 secondi {#cdn-caching-stops-working-after-300-seconds}
 
-Il caching della rete CDN smette di funzionare dopo 300 secondi e tutte le richieste da memorizzare nella cache della rete CDN vengono reindirizzate a Dispatcher.
+La memorizzazione nella cache CDN smette di funzionare dopo 300 secondi e tutte le richieste da memorizzare nella cache su CDN vengono reindirizzate a Dispatcher.
 
 Per risolvere il problema, imposta l’intestazione della pagina su 0:
 

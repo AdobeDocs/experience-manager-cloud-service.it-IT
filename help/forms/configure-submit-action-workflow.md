@@ -3,13 +3,15 @@ Title: How to integrate AEM workflow with an Adaptive Form?
 Description: Explore the process of automated workflow initiation with AEM Forms Submit Action.
 keywords: Flusso di lavoro AEM, integra modulo adattivo con flusso di lavoro AEM, richiama azione di invio flusso di lavoro AEM
 feature: Adaptive Forms, Core Components
-source-git-commit: 95af49839d206f67ac02116730229f5b0531c5bb
+exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
+title: "Come configurare un’azione di invio per un modulo adattivo?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
-
 
 # Integrare il modulo adattivo AEM con il flusso di lavoro AEM: semplificazione dei processi aziendali
 
@@ -19,7 +21,7 @@ Il **[!UICONTROL Richiama un flusso di lavoro AEM]** Azione di invio associa un 
 >
 >  Scopri come [creare un modello di flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) per definire la serie di passaggi eseguiti all’avvio del flusso di lavoro da parte di un utente. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse.
 
-AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione delle richieste di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md)  articolo.
+AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md)  articolo.
 
 ## Vantaggi
 
@@ -62,7 +64,7 @@ Per impostare il processo automatizzato con [Flusso di lavoro AEM](https://exper
 1. Seleziona l’opzione dalla sezione **[!UICONTROL Documenti di record che utilizzano]** elenco a discesa.
 
    **Documento record**: contiene il documento di record generato per il modulo adattivo. È possibile utilizzare **[!UICONTROL Percorso del documento record]** per specificare il nome del file del documento di record e il percorso del file relativo al payload. Ad esempio, il `/addresschange/DoR.pdf` percorso crea una cartella denominata `addresschange` relativo al payload e posiziona il `DoR.pdf` relativo al payload. È inoltre possibile specificare solo `DoR.pdf` per salvare solo un documento di record senza creare una gerarchia di cartelle. Se il flusso di lavoro è contrassegnato per l’archiviazione di dati esterni, utilizza l’opzione della variabile e seleziona la variabile dall’elenco di variabili disponibili per il modello di flusso di lavoro.
-1. Clic **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 >[!NOTE]
 >

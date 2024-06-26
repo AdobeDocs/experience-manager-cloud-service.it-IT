@@ -3,7 +3,8 @@ title: Come possiamo creare un modello di modulo adattivo?
 description: Crea modelli per moduli adattivi per definire la struttura di base e il contenuto iniziale tramite l’Editor modelli.
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 1%
@@ -59,7 +60,7 @@ Contiene le seguenti opzioni:
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **Selettore modalità:** Consente di modificare la modalità.È possibile scegliere **[!UICONTROL Struttura]** modalità, **[!UICONTROL Contenuto iniziale]**, **[!UICONTROL Controllo layout]** modalità. La modalità Struttura consente di aggiungere e personalizzare intestazione e piè di pagina. La modalità Contenuto iniziale consente di personalizzare il contenuto del modulo.
    * **Anteprima:** Consente di visualizzare in anteprima l’aspetto del modello quando lo si pubblica. Potete utilizzare Selettore livello (Layer Selector) e Anteprima (Preview) per attivare o disattivare le modalità di modifica e anteprima.
-* **Barra laterale:** Fornisce i browser Contenuto, Proprietà, Risorse e Componenti.
+* **Barra laterale:** Fornisce i browser Contenuto, Proprietà, Assets e Componenti.
 * **Barra degli strumenti del componente:** Quando selezioni un componente, viene visualizzata una barra degli strumenti che consente di personalizzarlo.
 * **Pagina**: l’area in cui aggiungere contenuto per creare il modello.
 

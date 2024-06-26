@@ -1,10 +1,11 @@
 ---
 title: Come si aggiunge un modulo adattivo alla pagina di AEM Sites?
 description: Scopri come creare o aggiungere un modulo adattivo alla pagina AEM Sites. Scopri anche i vantaggi e i vari modi per integrare i moduli nel sito web.
-feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
+feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 38e11538cdf3777a91a5ca60f83f8a95cd410c00
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3184'
 ht-degree: 1%
@@ -131,7 +132,7 @@ Per abilitare [!UICONTROL Contenitore Forms adattivo] nel criterio del modello, 
 1. Apri la pagina AEM Sites o il frammento di esperienza per la modifica. Per aprire la pagina per la modifica, selezionarla e fare clic su Modifica.
 1. Apri il modello della pagina Sites o Frammento esperienza. Per aprire il modello, passare alla [!UICONTROL Informazioni pagina] ![Informazioni pagina](/help/forms/assets/Smock_Properties_18_N.svg) > [!UICONTROL Modifica modello]. Apre il modello corrispondente nell’editor modelli.
 1. Nella vista Struttura, fare clic sul pulsante **[!UICONTROL Policy]** ![Policy](/help/forms/assets/Smock_FeedManagement_18_N.svg) nella barra dei menu. In **[!UICONTROL Componenti consentiti]** e seleziona la **[!UICONTROL Contenitore Forms adattivo]**  casella di controllo sotto **[Nome progetto archetipo AEM] - Modulo adattivo**.
-1. Clic **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
@@ -206,7 +207,7 @@ Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tr
 
 ## Configurare uno schema o un modello dati modulo (FDM) per un modulo nella pagina o nel frammento di esperienza di AEM Sites {#configure-schema-or-data-model-for-form}
 
-È possibile utilizzare il modello dati modulo (FDM) per collegare un modulo a un&#39;origine dati per inviare e ricevere dati in base alle azioni dell&#39;utente. È possibile anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. In base al requisito, connetti il modulo a uno schema JSON o a un modello di dati del modulo (FDM):
+È possibile utilizzare il modello dati modulo (FDM) per collegare un modulo a un Source dati per inviare e ricevere dati in base alle azioni degli utenti. È possibile anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. In base al requisito, connetti il modulo a uno schema JSON o a un modello di dati del modulo (FDM):
 
 * [Creare uno schema JSON e caricarlo nell’ambiente](/help/forms/adaptive-form-json-schema-form-model.md)  oppure
 * [Creare un modello dati modulo (FDM)](/help/forms/create-form-data-models.md)
@@ -222,7 +223,7 @@ Per configurare uno schema JSON o un modello dati modulo (FDM) per il modulo:
    * Quando selezioni il **[!UICONTROL Modello modulo]** , utilizza **[!UICONTROL Seleziona modello dati modulo]** per selezionare un modello di dati modulo (FDM) preconfigurato.
    * Quando selezioni il **[!UICONTROL Schema]** , utilizza **[!UICONTROL Schema]** per selezionare uno schema JSON per il modulo.
 
-1. Clic **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 ## Configurare un servizio di precompilazione per un modulo nella pagina o nel frammento di esperienza di AEM Sites {#configure-prefill-service-for-form}
 

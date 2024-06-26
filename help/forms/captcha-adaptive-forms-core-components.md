@@ -1,14 +1,15 @@
 ---
 title: Come si utilizza Google reCAPTCHA in un modulo adattivo per AEM?
-description: Migliora la sicurezza dei moduli con il servizio Google reCAPTCHA. Guida passo passo all'interno!
+description: Migliora la sicurezza dei moduli con il servizio Google reCAPTCHA. Guida dettagliata all’interno!
 topic-tags: Adaptive Forms, author
 keywords: Servizio Google reCAPTCHA, Forms adattivo, sfida CAPTCHA, prevenzione dei bot, componenti core, sicurezza dell’invio dei moduli, prevenzione della posta indesiderata dei moduli
 feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -35,15 +36,15 @@ Gli autori di moduli possono utilizzare il servizio reCAPTCHA di Google per impl
 1. Ottenere [coppia di chiavi API reCAPTCHA](https://www.google.com/recaptcha/admin) da Google. Include un **chiave del sito** e un **chiave segreta**.
 
    ![Crea la configurazione Google reCAPTCHA del sito web Google per ottenere le chiavi reCAPTCHA](/help/forms/assets/google-captcha.gif)
-1. Crea un contenitore di configurazione nell’ambiente as a Cloud Service AEM Forms. Un contenitore di configurazione contiene le configurazioni cloud utilizzate per collegare l’AEM a servizi esterni. Per creare e configurare un Contenitore di configurazione per collegare il tuo ambiente AEM Forms con il servizio reCAPTCHA di Google:
-   1. Apri l’istanza as a Cloud Service di AEM Forms.
+1. Crea un contenitore di configurazione nell’ambiente AEM Forms as a Cloud Service. Un contenitore di configurazione contiene le configurazioni cloud utilizzate per collegare l’AEM a servizi esterni. Per creare e configurare un Contenitore di configurazione per collegare il tuo ambiente AEM Forms con il servizio reCAPTCHA di Google:
+   1. Apri la tua istanza di AEM Forms as a Cloud Service.
    1. Vai a **[!UICONTROL Strumenti > Generale > Browser configurazioni]**. Nel Browser configurazioni, puoi effettuare le seguenti operazioni:
    1. Seleziona una cartella esistente o creane una. Puoi creare una cartella e abilitare per essa l’opzione Configurazioni cloud o Abilitare l’opzione Configurazioni cloud per una cartella esistente:
 
       * Per creare una cartella e abilitare l’opzione Configurazioni cloud:
          1. Nel browser configurazioni, fai clic su **[!UICONTROL Crea]**.
          1. Nella finestra di dialogo Crea configurazione, specifica nome, titolo e seleziona il **[!UICONTROL Configurazioni cloud]** opzione.
-         1. Clic **[!UICONTROL Crea]**
+         1. Fai clic su **[!UICONTROL Crea]**.
       * Per abilitare l’opzione Configurazioni cloud per una cartella esistente:
          1. Nel browser configurazioni, seleziona la cartella e fai clic su **[!UICONTROL Proprietà]**.
          1. Nella finestra di dialogo Proprietà di configurazione, abilita **[!UICONTROL Configurazioni cloud]**.
@@ -58,11 +59,11 @@ Gli autori di moduli possono utilizzare il servizio reCAPTCHA di Google per impl
 
    Una volta configurato, il servizio reCAPTCHA è disponibile per l’utilizzo in un modulo adattivo. Per ulteriori informazioni, consulta [utilizzo di Google reCAPTCHA in un modulo adattivo](#using-reCAPTCHA).
 
-## Utilizzare il servizio reCAPTCHA di Google in un modulo adattivo {#using-reCAPTCHA}
+## Utilizzare reCAPTCHA di Google in un modulo adattivo {#using-reCAPTCHA}
 
 Per utilizzare reCAPTCHA in Adaptive Forms:
 
-1. Apri l’istanza as a Cloud Service di AEM Forms.
+1. Apri la tua istanza di AEM Forms as a Cloud Service.
 1. Vai a **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Seleziona un Forms adattivo e seleziona **[!UICONTROL Proprietà]**. Per **[!UICONTROL Contenitore configurazione]** , seleziona il Contenitore di configurazione contenente la configurazione cloud che connette AEM Forms al servizio reCAPTCHA di Google e fai clic su **[!UICONTROL Salva e chiudi]**.
 

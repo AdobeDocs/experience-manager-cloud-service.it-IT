@@ -3,7 +3,8 @@ title: Come si configura un’azione di invio per un modulo adattivo?
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 3%
@@ -460,7 +461,7 @@ L’autore può configurare una libreria JavaScript personalizzata per modulo ad
 
 ## Gestione degli errori nell’azione di invio {#error-handling-on-submit-action}
 
-Come parte delle linee guida sulla sicurezza e l’irrigidimento dell’AEM, configura pagine di errore personalizzate come 400.jsp, 404.jsp e 500.jsp. Questi gestori vengono chiamati quando all’invio di un modulo vengono visualizzati errori 400, 404 o 500. Gli handler vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish. Puoi anche creare pagine JSP per altri codici di errore HTTP.
+Come parte delle linee guida sulla sicurezza e l’irrigidimento dell’AEM, configura pagine di errore personalizzate come 400.jsp, 404.jsp e 500.jsp. Questi gestori vengono chiamati quando all’invio di un modulo vengono visualizzati errori 400, 404 o 500. I gestori vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish. Puoi anche creare pagine JSP per altri codici di errore HTTP.
 
 Quando si precompila un modello di dati modulo (FDM) o un modulo adattivo basato su schema con dati XML o JSON, invia un reclamo a uno schema che non contiene dati `<afData>`, `<afBoundData>`, e `</afUnboundData>` , i dati dei campi non limitati del modulo adattivo andranno persi. Lo schema può essere uno schema XML, uno schema JSON o un modello dati modulo (FDM). I campi non limitati sono campi modulo adattivo senza `bindref` proprietà.
 

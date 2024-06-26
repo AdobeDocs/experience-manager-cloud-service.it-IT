@@ -3,7 +3,8 @@ title: Come si aggiunge il supporto per le nuove lingue in un modulo adattivo ba
 description: Per Adaptive Forms, puoi aggiungere lingue per più lingue oltre a quella fornita come impostazione predefinita.
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 1%
@@ -29,7 +30,7 @@ La localizzazione dei moduli adattivi si basa su due tipi di dizionari locali:
 
 * **Dizionario specifico per modulo** Contiene le stringhe utilizzate nei moduli adattivi. Ad esempio, etichette, nomi dei campi, messaggi di errore, descrizioni dell’Aiuto. Viene gestito come un insieme di file XLIFF per ogni lingua e puoi accedervi all’indirizzo `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
-* **Dizionari globali** Nella libreria client AEM sono presenti due dizionari globali gestiti come oggetti JSON. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, modelli di data e ora e così via. Puoi trovare questi dizionari all&#39;indirizzo `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Questi percorsi contengono cartelle separate per ogni lingua. Poiché i dizionari globali non vengono aggiornati frequentemente, la separazione dei file JavaScript per ciascuna lingua consente ai browser di memorizzarli nella cache e di ridurre l’utilizzo della larghezza di banda di rete quando si accede a moduli adattivi diversi sullo stesso server.
+* **Dizionari globali** Nella libreria client AEM sono presenti due dizionari globali gestiti come oggetti JSON. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, modelli di data e ora e così via. Puoi trovare questi dizionari all&#39;indirizzo `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Questi percorsi contengono cartelle separate per ogni lingua. Poiché i dizionari globali non vengono aggiornati frequentemente, la separazione dei file JavaScript per ogni lingua consente ai browser di memorizzarli nella cache e di ridurre l&#39;utilizzo della larghezza di banda di rete quando si accede a moduli adattivi diversi sullo stesso server.
 
 ## Aggiunta del supporto per le nuove lingue {#add-support-for-new-locales}
 

@@ -8,7 +8,8 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 1%
@@ -20,7 +21,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service (componenti di base) | Questo articolo |
+| AEM as a Cloud Service (Componenti di base) | Questo articolo |
 | AEM as a Cloud Service (Componenti core) | [Fai clic qui](/help/forms/adaptive-form-fragments-core-components.md) |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
 
@@ -130,14 +131,14 @@ Per visualizzare i frammenti completi nei moduli, effettua le seguenti operazion
 1. Vai alla pagina di configurazione della console web AEM all’indirizzo https:[*host*]:[*porta*]/system/console/configMgr.
 
 1. Cerca e fai clic su **[!UICONTROL Servizio configurazione modulo adattivo]** per aprirlo in modalità di modifica.
-1. Disattiva **[!UICONTROL la casella di controllo Abilita segnaposto al posto del frammento]** per visualizzare frammenti completi anziché l&#39;immagine segnaposto.
+1. Disattiva **[!UICONTROL Abilita segnaposto al posto del frammento]** per mostrare i frammenti completi anziché l’immagine segnaposto.
 
 ### Inserire un frammento in un modulo adattivo {#insert-a-fragment-in-an-adaptive-form}
 
 I frammenti di moduli adattivi creati vengono visualizzati nella scheda Frammenti di moduli adattivi di AEM contenuto Finder. Per inserire un frammento di modulo adattivo in un modulo adattivo:
 
 1. Aprite il modulo adattivo, in modalità di modifica, in cui desiderate inserire un frammento di modulo adattivo.
-1. Clic **Risorse** ![assets-browser](assets/assets-browser.png) nella barra laterale. Nel browser Risorse, seleziona **Frammenti di moduli adattivi** dal menu a discesa.
+1. Clic **Assets** ![assets-browser](assets/assets-browser.png) nella barra laterale. Nel browser Risorse, seleziona **Frammenti di moduli adattivi** dal menu a discesa.
 
    È inoltre possibile scegliere di visualizzare tutti i frammenti di modulo adattivi o di filtrare in base al modello di modulo, ovvero Modello di modulo, Schema XML o Base.
 
@@ -230,11 +231,11 @@ Puoi modificare la risorsa del frammento e i relativi binding dalla finestra di 
    <td><p>Genera un dizionario per la localizzazione del frammento selezionato. <!-- For more information, see <a href="lazy-loading-adaptive-forms.md" target="_blank">Localizing Adaptive Forms</a>.<br /> <br /> --> </p> </td>
   </tr>
   <tr>
-   <td><p>Pubblica/Annulla pubblicazione</p> </td>
+   <td><p>Publish/Annulla pubblicazione</p> </td>
    <td><p>Pubblica o annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Eliminare</p> </td>
+   <td><p>Elimina</p> </td>
    <td><p>Elimina il frammento selezionato.<br /> <br /> </p> </td>
   </tr>
  </tbody>
@@ -271,4 +272,4 @@ Reference Adaptive Form Fragments that you can use to create your form are avail
 
 >[!MORELIKETHIS]
 >
->* [Frammenti di moduli adattivi nei componenti core](/help/forms/adaptive-form-fragments-core-components.md)
+>* [Frammenti di modulo adattivo nei componenti core](/help/forms/adaptive-form-fragments-core-components.md)

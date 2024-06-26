@@ -3,7 +3,8 @@ title: Come si crea un portale Forms su una pagina Experience Manager Sites?
 description: Scopri come creare un portale Forms e utilizzare i componenti core predefiniti in una pagina di AEM Sites.
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1786'
 ht-degree: 1%
@@ -56,13 +57,13 @@ AEM Forms fornisce i seguenti componenti portale pronti all’uso:
 
 ## Importare componenti di Forms Portal {#import-forms-portal-components-aem-archetype}
 
-Per importare componenti predefiniti di Forms Portal su AEM Forms as a Cloud Service, effettua le seguenti operazioni:
+Per importare componenti predefiniti di Forms Portal in AEM Forms as a Cloud Service, effettua le seguenti operazioni:
 
-1. **Clona l’archivio Git di Cloud Manager nell’istanza di sviluppo locale:**  L’archivio Git di Cloud Manager contiene un progetto AEM predefinito. Si basa su [Archetipo AEM](https://github.com/adobe/aem-project-archetype/). Clona l’archivio Git di Cloud Manager utilizzando la gestione self-service dell’account Git dall’interfaccia utente di Cloud Manager per inserire il progetto nell’ambiente di sviluppo locale. Per informazioni dettagliate sull’accesso all’archivio, consulta [Accesso agli archivi](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
+1. **Clona l’archivio Git Cloud Manager nell’istanza di sviluppo locale:**  L’archivio Git di Cloud Manager contiene un progetto AEM predefinito. Si basa su [Archetipo AEM](https://github.com/adobe/aem-project-archetype/). Clona l’archivio Git di Cloud Manager utilizzando la gestione self-service dell’account Git dall’interfaccia utente di Cloud Manager per portare il progetto nell’ambiente di sviluppo locale. Per informazioni dettagliate sull’accesso all’archivio, consulta [Accesso agli archivi](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
 
 1. **Crea [!DNL Experience Manager Forms] as a [Cloud Service] progetto:** Crea [!DNL Experience Manager Forms] as a [Cloud Service] progetto basato su [AEM Archetipo 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) o più tardi. L’archetipo aiuta gli sviluppatori a iniziare facilmente a sviluppare per [!DNL AEM Forms] as a Cloud Service. Include inoltre alcuni temi e modelli di esempio per aiutarti a iniziare rapidamente.
 
-   Per creare [!DNL Experience Manager Forms] progetto as a Cloud Service, apri il prompt dei comandi ed esegui il comando seguente. Da includere [!DNL Forms] configurazioni, temi e modelli specifici, set `includeForms=y`.
+   Per creare [!DNL Experience Manager Forms] In as a Cloud Service, apri il prompt dei comandi ed esegui il comando seguente. Da includere [!DNL Forms] configurazioni, temi e modelli specifici, set `includeForms=y`.
 
    ```shell
    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=30 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
@@ -101,7 +102,7 @@ Per configurare il connettore di archiviazione unificata per i flussi di lavoro 
 1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Connettore di archiviazione unificata]**.
 1. In **[!UICONTROL Forms Portal]** sezione, seleziona **[!UICONTROL Azure]** dal **[!UICONTROL Storage]** elenco a discesa.
 1. Specifica la [percorso di configurazione per la configurazione dell’archiviazione Azure](#create-azure-storage-configuration) nel **[!UICONTROL Percorso configurazione archiviazione]** campo.
-1. Seleziona **[!UICONTROL Pubblica]** e quindi seleziona **[!UICONTROL Salva]** per salvare la configurazione.
+1. Seleziona **[!UICONTROL Publish]** e quindi seleziona **[!UICONTROL Salva]** per salvare la configurazione.
 
 ## Abilita componenti di Forms Portal {#enable-forms-portal-components}
 

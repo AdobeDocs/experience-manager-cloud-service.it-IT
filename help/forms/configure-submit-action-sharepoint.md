@@ -4,9 +4,11 @@ Description: Learn how to send data from your Adaptive Form to a SharePoint stor
 keywords: Come connettere un elenco di SharePoint per un modulo adattivo?, Come connettere una raccolta documenti di SharePoint per un modulo adattivo, Inviare a SharePoint, Creare una configurazione della raccolta documenti di SharePoint, Utilizzare l’azione Invia a SharePoint in un modulo adattivo, Connettere un modulo adattivo a Microsoft&reg; Elenco SharePoint.
 feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+title: "Come configurare un’azione di invio per un modulo adattivo?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 Il **[!UICONTROL Invia a SharePoint]** L’azione di invio consente di collegare facilmente il Modulo adattivo a un archivio Microsoft® SharePoint. Dopo l’invio del modulo, i dati del modulo vengono inviati all’archiviazione SharePoint desiderata.
 
-AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione delle richieste di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md)  articolo.
+AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md)  articolo.
 
 ## Vantaggi
 

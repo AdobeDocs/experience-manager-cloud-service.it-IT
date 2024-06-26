@@ -5,7 +5,8 @@ topic-tags: author
 keywords: Aggiungere frammenti di moduli adattivi, frammenti di moduli adattivi, creare un frammento di modulo, aggiungere un frammento a un modulo adattivo, gestire i frammenti
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 6%
@@ -18,7 +19,7 @@ ht-degree: 6%
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Componenti core) | Questo articolo |
-| AEM as a Cloud Service (componenti di base) | [Fai clic qui](/help/forms/adaptive-form-fragments.md) |
+| AEM as a Cloud Service (Componenti di base) | [Fai clic qui](/help/forms/adaptive-form-fragments.md) |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 Anche se ogni modulo Ã¨ progettato per uno scopo specifico, nella maggior parte dei moduli sono presenti alcuni segmenti comuni, ad esempio per fornire dati personali come nome e indirizzo, dettagli sulla famiglia e dettagli sul reddito. Gli sviluppatori di moduli devono creare questi segmenti comuni ogni volta che viene creato un nuovo modulo.
@@ -163,11 +164,11 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando lâ
    <td><p>Genera un dizionario per la localizzazione del frammento selezionato. Per ulteriori informazioni, consulta <a>Localizzazione di Forms adattivi</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Pubblica/Annulla pubblicazione</p> </td>
+   <td><p>Publish/Annulla pubblicazione</p> </td>
    <td><p>Pubblica o annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Eliminare</p> </td>
+   <td><p>Elimina</p> </td>
    <td><p>Elimina il frammento selezionato.<br /> <br /> </p> </td>
   </tr>
  </tbody>
