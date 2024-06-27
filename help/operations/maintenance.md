@@ -4,10 +4,10 @@ description: Scopri le attività di manutenzione in AEM as a Cloud Service e com
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 59%
+source-wordcount: '2106'
+ht-degree: 30%
 
 ---
 
@@ -28,7 +28,7 @@ Nelle versioni precedenti di AEM, era possibile configurare le attività di manu
 >
 >Adobe si riserva il diritto di sovrascrivere le impostazioni di configurazione di un’attività di manutenzione del cliente per attenuare problemi come il degrado delle prestazioni.
 
-Nella tabella seguente sono illustrate le attività di manutenzione disponibili al momento del rilascio di AEM as a Cloud Service.
+Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
 
 <table style="table-layout:auto">
  <tbody>
@@ -45,26 +45,16 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili 
   </tr>
   <tr>
     <td>Pulizia delle versioni</td>
-    <td>Adobe</td>
-    <td>Per gli ambienti esistenti (creati prima di una data non ancora definita nel 2024), l’eliminazione è disabilitata e sarà abilitata in futuro con un valore predefinito di 7 anni; i clienti potranno configurarla con valori personalizzati più bassi (ad esempio 30 giorni).<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Per impostazione predefinita, per i nuovi ambienti (creati a partire da una data non ancora determinata nel 2024) è abilitata la rimozione con i valori riportati di seguito, con i clienti che possono effettuare la configurazione con valori personalizzati.
-     <ol>
-       <li>Le versioni precedenti a 30 giorni vengono rimosse</li>
-       <li>Le ultime 5 versioni degli ultimi 30 giorni vengono conservate</li>
-       <li>Indipendentemente dalle regole di cui sopra, viene conservata la versione più recente.</li>
-       <br>Si consiglia ai clienti con requisiti normativi di eseguire il rendering delle pagine del sito esattamente come sono apparse in una data specifica di integrarsi con servizi esterni specializzati.
-     </ol></td>
+    <td>Cliente</td>
+    <td>L’eliminazione della versione è attualmente disabilitata per impostazione predefinita, ma il criterio può essere configurato come descritto nella <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione Pulizia delle versioni e del registro di controllo</a> sezione.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sostituiti.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+   </td>
   </td>
   </tr>
   <tr>
     <td>Elimina log di controllo</td>
-    <td>Adobe</td>
-    <td>Per gli ambienti esistenti (creati prima di una data non ancora definita nel 2024), l’eliminazione è disabilitata e sarà abilitata in futuro con un valore predefinito di 7 anni; i clienti potranno configurarla con valori personalizzati più bassi (ad esempio 30 giorni).<br><br> <!-- See above for the two line breaks -->Per impostazione predefinita, nei nuovi ambienti (creati a partire da una data non ancora definita nel 2024) è abilitata l’eliminazione nel gruppo <code>/content</code> nodo dell’archivio in base al seguente comportamento:
-     <ol>
-       <li>Per il controllo della replica, i registri di audit precedenti a 3 giorni vengono rimossi</li>
-       <li>Per il controllo DAM (Assets), i registri di audit precedenti a 30 giorni vengono rimossi</li>
-       <li>Per il controllo delle pagine, i registri con più di 3 giorni vengono rimossi.</li>
-       <br>Si consiglia ai clienti che dispongono di requisiti normativi per la produzione di registri di audit non modificabili di integrarsi con servizi esterni specializzati.
-     </ol></td>
+    <td>Cliente</td>
+    <td>L’eliminazione del registro di controllo è attualmente disabilitata per impostazione predefinita, ma è possibile configurare i criteri, come descritto in <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione Pulizia delle versioni e del registro di controllo</a> sezione.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sostituiti.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+   </td>
    </td>
   </tr>
   <tr>
@@ -200,3 +190,197 @@ Esempio di codice 3 (mensile)
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
+
+## Attività di manutenzione Pulizia delle versioni e del registro di controllo {#purge-tasks}
+
+L’eliminazione delle versioni e del registro di audit riduce le dimensioni dell’archivio e, in alcuni scenari, può migliorare le prestazioni.
+
+>[!NOTE]
+>
+>L’Adobe consiglia ai clienti di non configurare Pulizia delle versioni.
+
+### Impostazioni predefinite {#defaults}
+
+Attualmente, la rimozione non è abilitata per impostazione predefinita, ma questa impostazione cambierà in futuro. Gli ambienti creati prima dell’abilitazione dell’eliminazione predefinita hanno una soglia più conservativa, in modo che l’eliminazione non avvenga in modo imprevisto. Per ulteriori dettagli sui criteri di rimozione predefiniti, consulta le sezioni seguenti Pulizia delle versioni e Pulizia del registro di controllo.
+<!-- Version purging and audit log purging are on by default, with different default values for environments with ids higher than **TBD** versus those with ids lower than that value. -->
+
+<!-- ### Overriding the default values with a new configuration {#override} -->
+
+I valori di eliminazione predefiniti possono essere ignorati dichiarando un file di configurazione e distribuendolo come descritto di seguito.
+
+<!-- The reason for this behavior is to clarify the ambiguity over whether the default purge values would take effect once you remove the declaration. -->
+
+### Applicazione di una configurazione {#configure-purge}
+
+Dichiara un file di configurazione e distribuiscilo come descritto nei passaggi seguenti.
+
+>[!NOTE]
+>Dopo aver distribuito il nodo di eliminazione della versione nel file di configurazione, è necessario mantenerlo dichiarato e non rimuoverlo. Se tenti di farlo, la pipeline di configurazione avrà esito negativo.
+> 
+>Allo stesso modo, una volta distribuito il nodo di eliminazione del registro di controllo nel file di configurazione, è necessario mantenerlo dichiarato e non rimuoverlo.
+
+**1** : crea la seguente cartella e struttura di file nella cartella di livello principale del progetto in Git:
+
+```
+config/
+     mt.yaml
+```
+
+**2** - Dichiara le proprietà nel file di configurazione, che includono:
+
+* una proprietà &quot;kind&quot; con il valore &quot;MaintenanceTasks&quot;.
+* una proprietà &quot;version&quot; (al momento ci troviamo alla versione 1).
+* un oggetto &quot;metadata&quot; facoltativo con la proprietà `envTypes` con un elenco separato da virgole del tipo di ambiente (dev, stage, prod) per il quale è valida questa configurazione. Se non viene dichiarato alcun oggetto metadati, la configurazione è valida per tutti i tipi di ambiente.
+* un oggetto dati con entrambi `versionPurge` e `auditLogPurge` oggetti.
+
+Vedi le definizioni e la sintassi del `versionPurge` e `auditLogPurge` oggetti di seguito.
+
+È necessario strutturare la configurazione in modo simile all’esempio seguente:
+
+```
+kind: "MaintenanceTasks"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  versionPurge:
+    maximumVersions: 15
+    maximumAgeDays: 20
+    paths: ["/content"]
+    minimumVersions: 1
+    retainLabelledVersions: false
+  auditLogPurge:
+    rules:
+      - replication:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+      - pages:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+      - dam:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+```
+
+Tieni presente che affinché la configurazione sia valida:
+
+* tutte le proprietà devono essere definite. Non sono presenti valori predefiniti ereditati.
+* devono essere rispettati i tipi (interi, stringhe, booleani, ecc.) nelle tabelle delle proprietà sottostanti.
+
+>[!NOTE]
+>È possibile utilizzare `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad esempio, `yq mt.yaml`).
+
+**3** : configura le pipeline di configurazione non di produzione e di produzione.
+
+Gli ambienti di sviluppo rapido (RDE) non supportano l’eliminazione. Per altri tipi di ambiente nei programmi di produzione (non sandbox), crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager.
+
+Consulta [configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configurazione di pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) per ulteriori dettagli.
+
+### Pulizia delle versioni {#version-purge}
+
+>[!NOTE]
+>
+>L’Adobe consiglia ai clienti di non configurare Pulizia delle versioni.
+
+#### Valori predefiniti eliminazione versione {#version-purge-defaults}
+
+<!-- For version purging, environments with an id higher than **TBD** have the following default values: -->
+
+Attualmente, la rimozione non è abilitata per impostazione predefinita, ma questa impostazione cambierà in futuro.
+
+Gli ambienti creati dopo l’abilitazione dell’eliminazione predefinita avranno i seguenti valori predefiniti:
+
+* Le versioni precedenti a 30 giorni vengono rimosse.
+* Sono conservate le ultime cinque versioni negli ultimi 30 giorni.
+* Indipendentemente dalle regole di cui sopra, viene mantenuta la versione più recente (oltre al file corrente).
+
+<!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
+
+Gli ambienti creati prima dell’attivazione dell’eliminazione predefinita presentano i valori predefiniti elencati di seguito. Tuttavia, si consiglia di ridurli per ottimizzare le prestazioni.
+
+* Le versioni più vecchie di 7 anni vengono rimosse.
+* Sono conservate tutte le versioni degli ultimi 7 anni.
+* Dopo 7 anni, vengono rimosse le versioni diverse da quella più recente (oltre al file corrente).
+
+#### Proprietà rimozione versione {#version-purge-properties}
+
+Le proprietà consentite sono elencate di seguito.
+
+Le colonne che indicano *predefinito* indicare i valori di default futuri, quando vengono applicati i valori di default; *TBD* riflette un id ambiente non ancora determinato.
+
+| Proprietà | valore predefinito futuro per envs>TBD | valore predefinito futuro per envs&lt;=TBD | obbligatorio | tipo | Valori |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| percorsi | [&quot;/content&quot;] | [&quot;/content&quot;] | Sì | array di stringhe | Specifica in quali percorsi eliminare le versioni quando vengono create nuove versioni.  I clienti devono dichiarare questa proprietà, ma l’unico valore consentito è &quot;/content&quot;. |
+| maximumAgeDays | 30 | 2557 (7 anni + 2 giorni bisestili) | Sì | Numero intero | Tutte le versioni precedenti al valore configurato vengono rimosse. Se il valore è 0, la rimozione non viene eseguita in base alla data della versione. |
+| maximumVersions | 5 | 0 (nessun limite) | Sì | Numero intero | Qualsiasi versione precedente alla n-esima versione più recente viene rimossa. Se il valore è 0, la rimozione non viene eseguita in base al numero di versioni. |
+| minimumVersions | 1 | 1 | Sì | Numero intero | Il numero minimo di versioni mantenute indipendentemente dall’età. Tieni presente che viene sempre mantenuta almeno 1 versione; il suo valore deve essere 1 o superiore. |
+| keepLabellingVersioned | false | false | Sì | booleano | Determina se le versioni con etichetta esplicita verranno escluse dalla rimozione. Per una migliore ottimizzazione dell’archivio, si consiglia di impostare questo valore su false. |
+
+
+**Interazioni proprietà**
+
+Gli esempi seguenti illustrano il modo in cui le proprietà interagiscono quando combinate.
+
+Esempio:
+
+```
+maximumAgeDays = 30
+maximumVersions = 10
+minimumVersions = 2
+```
+
+Se al giorno 23 sono presenti 11 versioni, la versione meno recente verrà eliminata alla successiva esecuzione dell&#39;attività di manutenzione di eliminazione, poiché `maximumVersions` è impostata su 10.
+
+Se al giorno 31 sono presenti 5 versioni, solo 3 verranno eliminate dal giorno `minimumVersions` è impostata su 2.
+
+Esempio:
+
+```
+maximumAgeDays = 30
+maximumVersions = 0
+minimumVersions = 1
+```
+
+Le versioni più recenti di 30 giorni non verranno eliminate dal `maximumVersions` è impostata su 0.
+
+Verrà conservata una versione precedente ai 30 giorni.
+
+### Elimina log di controllo {#audit-purge}
+
+#### Valori predefiniti eliminazione log di controllo {#audit-purge-defaults}
+
+<!-- For audit log purging, environments with an id higher than **TBD** have the following default values: -->
+
+Attualmente, la rimozione non è abilitata per impostazione predefinita, ma questa impostazione cambierà in futuro.
+
+Gli ambienti creati dopo l’abilitazione dell’eliminazione predefinita avranno i seguenti valori predefiniti:
+
+* I registri di replica, DAM e controllo delle pagine precedenti a 7 giorni vengono rimossi.
+* Tutti gli eventi possibili vengono registrati.
+
+<!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
+
+Gli ambienti creati prima dell’attivazione dell’eliminazione predefinita presentano i valori predefiniti elencati di seguito. Tuttavia, si consiglia di ridurli per ottimizzare le prestazioni.
+
+* I registri di replica, DAM e audit delle pagine più vecchi di 7 anni vengono rimossi.
+* Tutti gli eventi possibili vengono registrati.
+
+>[!NOTE]
+>Si consiglia ai clienti, che devono rispettare i requisiti normativi per la produzione di registri di audit non modificabili, di integrarsi con servizi esterni specializzati.
+
+#### Proprietà eliminazione registro di controllo {#audit-purge-properties}
+
+Le proprietà consentite sono elencate di seguito.
+
+Le colonne che indicano *predefinito* indicare i valori di default futuri, quando vengono applicati i valori di default; *TBD* riflette un id ambiente non ancora determinato.
+
+
+| Proprietà | valore predefinito futuro per envs>TBD | valore predefinito futuro per envs&lt;=TBD | obbligatorio | tipo | Valori |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| regole | - | - | Sì | Oggetto | Uno o più dei seguenti nodi: replica, pagine, dam. Ciascuno di questi nodi definisce regole, con le proprietà seguenti. Tutte le proprietà devono essere dichiarate. |
+| maximumAgeDays | 7 giorni | per tutti, 2557 (7 anni + 2 giorni bisestili) | Sì | numero intero | Per replica, pagine o dam: il numero di giorni in cui vengono conservati i registri di audit. I registri di controllo precedenti al valore configurato vengono eliminati. |
+| contentPath | &quot;/content&quot; | &quot;/content&quot; | Sì | Stringa | Percorso in cui verranno eliminati i registri di audit, per il tipo correlato. Deve essere impostato su &quot;/content&quot;. |
+| tipi | tutti i valori | tutti i valori | Sì | Array di enumerazione | Per **replica**, i valori enumerati sono: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. Per **pagine**, i valori enumerati sono: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. Per **dam**, i valori enumerati sono: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVE, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
