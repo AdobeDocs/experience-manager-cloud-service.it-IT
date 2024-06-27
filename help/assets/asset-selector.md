@@ -4,7 +4,7 @@ description: Utilizza il Selettore risorse per cercare, trovare e recuperare i m
 contentOwner: KK
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 60c94071332003312ed9e963bc50e35d3c29baf0
+source-git-commit: 3f2fbdc1fd4087ea4c90b9bbe11aa37a11237ae5
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 36%
@@ -404,8 +404,8 @@ Se integri Asset Selector con Dynamic Medie con le funzionalità OpenAPI, utiliz
 
 * [Metodi di comunicazione](#prereqs)
 * Per accedere a Dynamic Medie con funzionalità OpenAPI, è necessario disporre di licenze per:
-   * Archivio Assets (ad esempio, Experience Manager Assets as a Cloud Service)
-   * Dynamic Medie AEM
+   * Archivio Assets (ad esempio, Experience Manager Assets as a Cloud Service).
+   * AEM-Dynamic Medie
 * Solo [risorse approvate](#approved-assets.md) sono disponibili per l’uso per garantire la coerenza del brand.
 
 ### Integrazione per Dynamic Medie con funzionalità OpenAPI{#adobe-app-integration-polaris}
