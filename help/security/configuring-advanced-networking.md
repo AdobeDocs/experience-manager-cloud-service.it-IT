@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5744'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -238,7 +238,7 @@ La configurazione dell’indirizzo IP in uscita dedicato è analoga a quella del
 
 >[!INFO]
 >
->Se è configurato un IP in uscita dedicato, l’inoltro Splunk continuerà a utilizzare gli intervalli di uscita dinamici. Impossibile configurare l’inoltro Splunk per l’utilizzo di un IP in uscita dedicato.
+>Se è configurato un IP in uscita dedicato, l’inoltro Splunk continuerà a utilizzare gli intervalli di uscita dinamici. Non è possibile configurare l’inoltro Splunk per l’utilizzo di un IP in uscita dedicato.
 
 ### Configurazione interfaccia utente {#configuring-dedicated-egress-provision-ui}
 
@@ -809,46 +809,46 @@ Alla luce di queste informazioni, Adobe consiglia di rivalutare la configurazion
 
 #### Domande frequenti sui limiti di connessione
 
-Quando si utilizza la rete avanzata, il numero di connessioni è limitato per garantire la stabilità tra gli ambienti ed evitare che gli ambienti inferiori esauriscano le connessioni disponibili.
+Quando si utilizza la rete avanzata, il numero di connessioni è limitato per garantire stabilità in tutti gli ambienti ed evitare che gli ambienti inferiori esauriscano le connessioni disponibili.
 
-Le connessioni sono limitate a 1000 per istanza AEM e vengono inviati avvisi ai clienti quando il numero raggiunge i 750.
+Le connessioni sono limitate a 1000 per istanza AEM e si riceve un avviso quando si raggiungono 750 connessioni.
 
 ##### Il limite di connessione è applicato solo al traffico in uscita da porte non standard o a tutto il traffico in uscita?
 
-Il limite è solo per le connessioni che utilizzano la rete avanzata (in uscita su porte non standard, utilizzando IP in uscita dedicato o VPN).
+Il limite è applicato solo alle connessioni che utilizzano la rete avanzata (in uscita su porte non standard, con IP in uscita dedicato o VPN).
 
-##### Non notiamo una differenza significativa nel numero di connessioni in uscita. Perché stiamo ricevendo la notifica ora?
+##### Non notiamo una differenza significativa nel numero di connessioni in uscita. Perché riceviamo la notifica?
 
-Se il cliente crea connessioni in modo dinamico (ad esempio, una o più per ogni richiesta), un aumento del traffico può causare un picco delle connessioni.
+Se le connessioni sono create in modo dinamico (ad esempio, una o più per ogni richiesta), un aumento del traffico può causare un picco di connessioni.
 
-##### È possibile che in passato abbiamo vissuto una situazione simile senza essere avvertiti?
+##### È possibile che in passato si sia verificata una situazione simile senza ricevere alcun avviso?
 
-Gli avvisi vengono inviati solo quando viene raggiunto il limite soft.
+Gli avvisi vengono inviati solo quando viene raggiunto il limite intermedio.
 
 ##### Cosa succede se viene raggiunto il limite massimo?
 
-Quando viene raggiunto il limite massimo, le nuove connessioni in uscita dall’AEM attraverso la rete avanzata (in uscita su porte non standard, utilizzando IP in uscita dedicato o VPN) verranno eliminate per proteggere il computer da un attacco DoS.
+Quando viene raggiunto il limite massimo, le nuove connessioni in uscita da AEM attraverso la rete avanzata (in uscita su porte non standard, con IP in uscita dedicato o VPN) verranno annullate per proteggere il computer da un attacco DoS.
 
 ##### È possibile aumentare il limite?
 
-No, avere un numero elevato di connessioni può causare un impatto significativo sulle prestazioni e un DoS tra pod e ambienti.
+No, un numero elevato di connessioni può avere un impatto significativo sulle prestazioni e causare un DoS tra pod e ambienti.
 
-##### I collegamenti sono automaticamente chiusi dal sistema AEM dopo un certo periodo?
+##### Le connessioni vengono automaticamente chiuse dal sistema AEM dopo un certo periodo?
 
-Sì, le connessioni sono chiuse a livello di JVM e in punti diversi dell&#39;infrastruttura di rete. Tuttavia, questo sarà troppo tardi per qualsiasi servizio di produzione. Le connessioni devono essere chiuse in modo esplicito quando non sono più necessarie o restituite al pool quando si utilizza il connection pooling. In caso contrario, il consumo di risorse sarà troppo elevato e potrebbe causare l’esaurimento delle risorse.
+Sì, le connessioni vengono chiuse a livello di JVM e in punti diversi dell’infrastruttura di rete. Tuttavia, questo sarà troppo tardi per qualsiasi servizio di produzione. Le connessioni devono essere chiuse in modo esplicito quando non sono più necessarie o restituite al pool quando si utilizza il pool di connessioni. In caso contrario, il consumo di risorse sarà troppo elevato e potrebbe causarne l’esaurimento.
 
-##### Se viene raggiunto il limite massimo di connessione, questo influisce su eventuali licenze e comporta costi aggiuntivi?
+##### Se viene raggiunto il limite massimo di connessioni, questo influisce su eventuali licenze e comporta costi aggiuntivi?
 
 No, non vi sono licenze o costi associati a questo limite. Si tratta di un limite tecnico.
 
 ##### Quanto siamo vicini al limite? Qual è il limite massimo?
 
-L’avviso viene attivato quando le connessioni superano i 750. Il limite massimo è di 1000 connessioni per istanza AEM.
+Viene attivato un avviso quando le connessioni superano il limite intermedio di 750. Il limite massimo è di 1000 connessioni per istanza AEM.
 
 ##### Questo limite è applicabile alle VPN?
 
-Sì, il limite si applica alle connessioni che utilizzano la rete avanzata, incluse le VPN.
+Sì, il limite è applicato alle connessioni che utilizzano la rete avanzata, incluse le VPN.
 
 ##### Se utilizziamo un IP in uscita dedicato, questo limite sarà ancora applicabile?
 
-Sì, il limite è ancora applicabile se si utilizza un IP in uscita dedicato.
+Sì, il limite è applicabile anche se si utilizza un IP in uscita dedicato.
