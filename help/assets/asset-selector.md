@@ -2,15 +2,15 @@
 title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
 description: Utilizza il Selettore risorse per cercare, trovare e recuperare i metadati e le rappresentazioni delle risorse all’interno dell’applicazione.
 contentOwner: KK
-role: Admin, User
-exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-feature: Collaboration
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+role: Admin,User
+exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
+source-git-commit: 60c94071332003312ed9e963bc50e35d3c29baf0
 workflow-type: tm+mt
-source-wordcount: '3908'
-ht-degree: 45%
+source-wordcount: '4725'
+ht-degree: 36%
 
 ---
+
 
 # Selettore risorse micro front-end {#Overview}
 
@@ -47,7 +47,7 @@ Il Selettore risorse offre molti vantaggi, tra cui:
 Devi accertarti di utilizzare i seguenti metodi di comunicazione:
 
 * L&#39;applicazione è in esecuzione su HTTPS.
-* L’URL dell’applicazione si trova nell’elenco Consentiti degli URL di reindirizzamento del client IMS.
+* L’URL dell’applicazione nell’elenco Consentiti di URL di reindirizzamento del client IMS.
 * Il flusso di accesso IMS viene configurato e renderizzato utilizzando un pop-up sul browser web. Pertanto, i popup devono essere abilitati o consentiti nel browser di destinazione.
 
 Se hai bisogno del flusso di lavoro di autenticazione IMS di Asset Selector, utilizza i prerequisiti precedenti. In alternativa, se sei già autenticato con il flusso di lavoro IMS, puoi aggiungere le informazioni IMS.
@@ -57,7 +57,7 @@ Se hai bisogno del flusso di lavoro di autenticazione IMS di Asset Selector, uti
 > Questo archivio funge da documentazione supplementare che descrive le API disponibili e alcuni esempi di utilizzo per l’integrazione di Asset Selector. Prima di installare o utilizzare il Selettore risorse, assicurati che all’organizzazione sia stato fornito l’accesso al Selettore risorse come parte del profilo Experience Manager Assets as a Cloud Service. Se non è stato eseguito il provisioning di, non è possibile integrare o utilizzare questi componenti. Per richiedere il provisioning, l’amministratore del programma deve generare un ticket di supporto contrassegnato come P2 da Admin Console e includere le seguenti informazioni:
 >
 >* Nomi di dominio in cui è ospitata l’applicazione che integra.
->* Dopo il provisioning, all’organizzazione verrà fornito `imsClientId`, `imsScope`, e un `redirectUrl` corrisponde agli ambienti richiesti che sono essenziali per la configurazione di Asset Selector. Senza tali proprietà valide, non è possibile eseguire i passaggi di installazione.
+>* Dopo il provisioning, all’organizzazione verrà fornito `imsClientId`, `imsScope`, e un `redirectUrl` corrisponde all’ambiente richiesto, essenziale per la configurazione di Asset Selector. Senza tali proprietà valide, non è possibile eseguire i passaggi di installazione.
 
 ## Installazione {#installation}
 
@@ -108,6 +108,7 @@ Puoi eseguire l’autenticazione senza definire alcune delle proprietà IMS se:
 
 * [Integrare il selettore risorse con un [!DNL Adobe] applicazione](#adobe-app-integration-vanilla)
 * [Integrare Asset Selector con un’applicazione non basata su Adobi](#adobe-non-app-integration)
+* [Integrazione per Dynamic Medie con funzionalità OpenAPI](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
@@ -180,7 +181,7 @@ Il `ImsAuthProps` definiscono le informazioni di autenticazione e il flusso util
 +++
 
 +++**ImsAuthService**
-`ImsAuthService` La classe gestisce il flusso di autenticazione per Asset Selector. È responsabile dell&#39;ottenimento di un `imsToken` dal servizio di autenticazione Adobe IMS. Il `imsToken` viene utilizzato per autenticare l’utente e autorizzare l’accesso al [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Archivio risorse. ImsAuthService utilizza `ImsAuthProps` proprietà per controllare il flusso di autenticazione e registrare i listener per vari eventi di autenticazione. È possibile utilizzare il comodo [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) funzione per registrare _ImsAuthService_ con Asset Selector. Le seguenti funzioni sono disponibili sul `ImsAuthService` classe. Tuttavia, se utilizzi il _registerAssetsSelectorsAuthService_ funzione, non è necessario chiamare queste funzioni direttamente.
+`ImsAuthService` La classe gestisce il flusso di autenticazione per Asset Selector. È responsabile dell&#39;ottenimento di un `imsToken` dal servizio di autenticazione Adobe IMS. Il `imsToken` viene utilizzato per autenticare l’utente e autorizzare l’accesso al [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Archivio Assets. ImsAuthService utilizza `ImsAuthProps` proprietà per controllare il flusso di autenticazione e registrare i listener per vari eventi di autenticazione. È possibile utilizzare il comodo [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) funzione per registrare _ImsAuthService_ con Asset Selector. Le seguenti funzioni sono disponibili sul `ImsAuthService` classe. Tuttavia, se utilizzi il _registerAssetsSelectorsAuthService_ funzione, non è necessario chiamare queste funzioni direttamente.
 
 | Nome funzione | Descrizione |
 |---|---|
@@ -192,7 +193,7 @@ Il `ImsAuthProps` definiscono le informazioni di autenticazione e il flusso util
 
 +++
 
-+++**Convalida con il token IMS fornito**
++++**Convalida del token IMS**
 
 ```
 <script>
@@ -226,28 +227,28 @@ Il `ImsAuthProps` definiscono le informazioni di autenticazione e il flusso util
 ```
 // object `imsProps` to be defined as below 
 let imsProps = {
-    imsClientId: <IMS Client Id>,
-        imsScope: "openid",
-        redirectUrl: window.location.href,
-        modalMode: true,
-        adobeImsOptions: {
-            modalSettings: {
-            allowOrigin: window.location.origin,
+imsClientId: <IMS Client Id>,
+imsScope: "openid",
+redirectUrl: window.location.href,
+modalMode: true,
+adobeImsOptions: {
+modalSettings: {
+allowOrigin: window.location.origin,
 },
-        useLocalStorage: true,
+useLocalStorage: true,
 },
 onImsServiceInitialized: (service) => {
-            console.log("onImsServiceInitialized", service);
+console.log("onImsServiceInitialized", service);
 },
 onAccessTokenReceived: (token) => {
-            console.log("onAccessTokenReceived", token);
+console.log("onAccessTokenReceived", token);
 },
 onAccessTokenExpired: () => {
-            console.log("onAccessTokenError");
+console.log("onAccessTokenError");
 // re-trigger sign-in flow
 },
 onErrorReceived: (type, msg) => {
-            console.log("onErrorReceived", type, msg);
+console.log("onErrorReceived", type, msg);
 },
 }
 ```
@@ -273,6 +274,10 @@ Se integri Asset Selector con un’applicazione non di Adobe, utilizza i seguent
 
 Il selettore risorse supporta l’autenticazione per [!DNL Experience Manager Assets] archivio che utilizza le proprietà di Identity Management System (IMS), come `imsScope` o `imsClientID` quando lo si integra con un’applicazione non Adobe.
 
+### Integrare Asset Selector con un’applicazione non basata su Adobi {#adobe-non-app-integration}
+
+Per integrare Asset Selector con un’applicazione non di Adobe, è necessario eseguire varie convalide, ad esempio la registrazione di un ticket di supporto, l’integrazione e così via.
+
 +++**Configurare il selettore risorse per un’applicazione non di Adobe**
 Per configurare Asset Selector per un’applicazione non di Adobe, devi innanzitutto registrare un ticket di supporto per il provisioning, seguito dai passaggi di integrazione.
 
@@ -296,7 +301,7 @@ Accedere al pacchetto Asset Selector utilizzando `Script` Tag, come mostrato nel
 
 Poiché non si dispone di un `imsToken` generate, utilizza `registerAssetsSelectorsAuthService` e `renderAssetSelectorWithAuthFlow` come mostrato nelle righe da 40 a 50 dell&#39;esempio `index.html` file. Utilizza il `registerAssetsSelectorsAuthService` funzione prima di `renderAssetSelectorWithAuthFlow` per registrare `imsToken` con il Selettore risorse. [!DNL Adobe] consiglia di chiamare `registerAssetsSelectorsAuthService` quando crei un’istanza del componente.
 
-Definisci l’autenticazione e altre proprietà as a Cloud Service di Assets relative all’accesso in `const props` come mostrato nella *riga 54* a *riga 60* dell’esempio `index.html` file.
+Definisci l’autenticazione e altre proprietà relative all’accesso as a Cloud Service di Assets in `const props` come mostrato nella *riga 54* a *riga 60* dell’esempio `index.html` file.
 
 Il `PureJSSelectors` variabile globale, menzionata in *riga 65*, viene utilizzato per eseguire il rendering del selettore risorse nel browser web.
 
@@ -387,6 +392,170 @@ Il rendering del selettore risorse viene eseguito sul `<div>` elemento contenito
 >
 >Se hai integrato il selettore delle risorse utilizzando il flusso di lavoro Registra, ma non riesci ancora ad accedere all’archivio di consegna, assicurati che i cookie del browser siano puliti. In caso contrario, si finisce per ottenere `invalid_credentials All session cookies are empty` nella console.
 
++++
+
+<!--Integration with Polaris application content starts here-->
+
+>[!TAB Integrazione per Dynamic Medie con funzionalità OpenAPI]
+
+### Prerequisiti {#prereqs-polaris}
+
+Se integri Asset Selector con Dynamic Medie con le funzionalità OpenAPI, utilizza i seguenti prerequisiti:
+
+* [Metodi di comunicazione](#prereqs)
+* Per accedere a Dynamic Medie con funzionalità OpenAPI, è necessario disporre di licenze per:
+   * Archivio Assets (ad esempio, Experience Manager Assets as a Cloud Service)
+   * Dynamic Medie AEM
+* Solo [risorse approvate](#approved-assets.md) sono disponibili per l’uso per garantire la coerenza del brand.
+
+### Integrazione per Dynamic Medie con funzionalità OpenAPI{#adobe-app-integration-polaris}
+
+L’integrazione del selettore delle risorse con il processo OpenAPI di Dynamic Medie prevede diversi passaggi, tra cui la creazione di un URL Dynamic Media personalizzato o pronto per scegliere l’URL Dynamic Media, ecc.
+
++++**Integrare Asset Selector per Dynamic Medie con funzionalità OpenAPI**
+
+Il `rootPath` e `path` Le proprietà non devono far parte di Dynamic Medie con funzionalità OpenAPI. È invece possibile configurare `aemTierType` proprietà. Di seguito è riportata la sintassi della configurazione:
+
+```
+aemTierType:[1: "delivery"]
+```
+
+Questa configurazione ti consente di visualizzare tutte le risorse approvate senza cartelle o come struttura semplice. Per ulteriori informazioni, vai a `aemTierType` proprietà in [Proprietà selettore risorse](#asset-selector-properties)
+
++++
+
++++**Creare un URL di consegna dinamico da risorse approvate**
+Una volta configurato il Selettore risorse, viene utilizzato uno schema di oggetti per creare un URL di consegna dinamico dalle risorse selezionate.
+Ad esempio, uno schema di un oggetto da un array di oggetti che viene ricevuto al momento della selezione di una risorsa:
+
+```
+{
+"dc:format": "image/jpeg",
+"repo:assetId": "urn:aaid:aem:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+"repo:name": "image-7.jpg",
+"repo:repositoryId": "delivery-pxxxx-exxxxxx.adobe.com",
+...
+}
+```
+
+Tutte le risorse selezionate vengono registrate da `handleSelection` funzione che funge da oggetto JSON. Ad esempio, `JsonObj`. L’URL di consegna dinamico viene creato combinando i gestori seguenti:
+
+| Oggetto | JSON |
+|---|---|
+| Host | `assetJsonObj["repo:repositoryId"]` |
+| Directory principale API | `/adobe/dynamicmedia/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
+| formato | `.jpg` |
+
+**Specifiche API di consegna risorse approvate**
+
+Formato URL:
+`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+
+Dove:
+
+* L’host è `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* La radice API è `"/adobe/dynamicmedia/deliver"`
+* `<asset-id>` è l’identificatore della risorsa
+* `<seo-name>` è il nome di una risorsa
+* `<format>` è il formato di output
+* `<image modification query parameters>` come supporto dalla specifica API di consegna risorse approvata
+
+**API di consegna risorse approvate**
+
+L’URL di consegna dinamico ha la seguente sintassi:
+`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, dove,
+
+* L’host è `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* La radice API per la consegna della rappresentazione originale è `"/adobe/assets/deliver"`
+* `<asset-id>` è l’identificatore della risorsa
+* `<seo-name>`è il nome della risorsa con o senza estensione
+
++++
+
++++**Pronto per scegliere l’URL di consegna dinamico**
+Tutte le risorse selezionate vengono registrate da `handleSelection` funzione che funge da oggetto JSON. Ad esempio, `JsonObj`. L’URL di consegna dinamico viene creato combinando i gestori seguenti:
+
+| Oggetto | JSON |
+|---|---|
+| Host | `assetJsonObj["repo:repositoryId"]` |
+| Directory principale API | `/adobe/assets/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"]` |
+
+Di seguito sono riportati i due modi per attraversare l’oggetto JSON:
+
+![URL di consegna dinamico](assets/dynamic-delivery-url.png)
+
+* **Miniatura:** Le miniature possono essere immagini e le risorse sono PDF, video, immagini e così via. Tuttavia, puoi utilizzare gli attributi di altezza e larghezza della miniatura di una risorsa come rappresentazione dinamica della consegna.
+Per le risorse di tipo PDF è possibile utilizzare il seguente set di rappresentazioni: una volta selezionato un pdf nella barra laterale, il contesto di selezione offre le informazioni seguenti. Di seguito è riportato il modo per scorrere l’oggetto JSON:
+
+  <!--![Thumbnail dynamic delivery url](image-1.png)-->
+
+  Puoi consultare `selection[0].....selection[4]` per l’array del collegamento della rappresentazione dalla schermata precedente. Ad esempio, le proprietà chiave di una delle rappresentazioni delle miniature includono:
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+Nella schermata precedente, se è necessario PDF, l’URL di consegna del rendering originale del PDF deve essere incorporato nell’esperienza di destinazione e non nella relativa miniatura. Ad esempio `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+
+* **Video:** Puoi utilizzare l’URL del lettore video per le risorse del tipo di video che utilizza un iFrame incorporato. Nell’esperienza di destinazione puoi utilizzare le seguenti rappresentazioni di array:
+  <!--![Video dynamic delivery url](image.png)-->
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+  Puoi consultare `selection[0].....selection[4]` per l’array del collegamento della rappresentazione dalla schermata precedente. Ad esempio, le proprietà chiave di una delle rappresentazioni delle miniature includono:
+
+  Lo snippet di codice nella schermata precedente è un esempio di risorsa video. Include l’array di collegamenti per le rappresentazioni. Il `selection[5]` nell’estratto c’è l’esempio della miniatura dell’immagine che può essere utilizzata come segnaposto della miniatura video nell’esperienza target. Il `selection[5]` nell’array delle rappresentazioni è per il lettore video. Serve un HTML e può essere impostato come `src` dell’iframe. Supporta lo streaming con bitrate adattivo, ovvero la distribuzione del video ottimizzata per il web.
+
+  Nell’esempio precedente, l’URL del lettore video è `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+
++++**Interfaccia utente di Asset Selector per Dynamic Medie con funzionalità OpenAPI**
+
+Dopo l’integrazione con il selettore delle risorse micro-front-end di Adobe, nell’archivio Experience Manager Assets puoi visualizzare solo la struttura delle risorse approvate.
+
+![Dynamic Medie con interfaccia utente delle funzionalità OpenAPI](assets/polaris-ui.png)
+
+* **A**: [Nascondi/Mostra pannello](#hide-show-panel)
+* **B**: [Assets](#repository)
+* **C**: [Ordinamento](#sorting)
+* **D**: [Filtri](#filters)
+* **E**: [Barra di ricerca](#search-bar)
+* **F**: [Ordinamento crescente o decrescente](#sorting)
+* **G**: Annulla selezione
+* **H**: seleziona una o più risorse
+
++++
+
++++**Configurare filtri personalizzati**
+Il selettore risorse per Dynamic Medie con funzionalità OpenAPI consente di configurare proprietà personalizzate e i filtri basati su di esse. Il `filterSchema` per configurare tali proprietà. La personalizzazione può essere esposta come `metadata.<metadata bucket>.<property name>.` rispetto al quale è possibile configurare i filtri, dove
+
+* `metadata` sono le informazioni di una risorsa
+* `embedded` è il parametro statico utilizzato per la configurazione, e
+* `<propertyname>` è il nome del filtro che si sta configurando
+
+Per la configurazione, proprietà definite in `jcr:content/metadata/` livello sono esposti come `metadata.<metadata bucket>.<property name>.` per i filtri che desideri configurare.
+
+Ad esempio, in Selettore risorse per Dynamic Medie con funzionalità OpenAPI, una proprietà su `asset jcr:content/metadata/client_name:market` viene convertito in `metadata.embedded.client_name:market` per la configurazione del filtro.
+
+Per ottenere il nome, è necessario eseguire un’attività una tantum. Effettua una chiamata API di ricerca per la risorsa e ottieni il nome della proprietà (essenzialmente il bucket).
+
++++
+
 >[!ENDTABS]
 
 ## Proprietà selettore risorse {#asset-selector-properties}
@@ -399,8 +568,6 @@ Puoi utilizzare le proprietà del Selettore risorse per personalizzarne il rende
 | *imsOrg* | stringa | Sì | | L’ID di Adobe Identity Management System (IMS) assegnato durante il provisioning di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] per l’organizzazione. Il `imsOrg` È necessario specificare la chiave per autenticare se l’organizzazione a cui stai accedendo è in Adobe IMS o meno. |
 | *imsToken* | stringa | No | | Token di connessione IMS utilizzato per l’autenticazione. `imsToken` è richiesto se si utilizza un [!DNL Adobe] per l&#39;integrazione. |
 | *apiKey* | stringa | No | | Chiave API utilizzata per accedere al servizio di individuazione AEM. `apiKey` è richiesto se si utilizza un [!DNL Adobe] integrazione delle applicazioni. |
-| *rootPath* | stringa | No | /content/dam/ | Percorso della cartella da cui il selettore risorse visualizza le risorse. `rootPath` può essere utilizzato anche sotto forma di incapsulamento. Ad esempio, dato il seguente percorso: `/content/dam/marketing/subfolder/`, il selettore risorse non consente di spostarsi all’interno di alcuna cartella principale, ma visualizza solo le cartelle secondarie. |
-| *percorso* | stringa | No | | Percorso utilizzato per passare a una directory specifica di risorse durante il rendering del Selettore risorse. |
 | *filterSchema* | array | No | | Modello utilizzato per configurare le proprietà del filtro. Questa funzione è utile quando desideri limitare determinate opzioni di filtro nel Selettore risorse. |
 | *filterFormProps* | Oggetto | No | | Specifica le proprietà del filtro da utilizzare per perfezionare la ricerca. Ad esempio, tipo MIME JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | No |                 | Specifica le risorse selezionate quando viene eseguito il rendering del Selettore risorse. È necessario un array di oggetti che contenga una proprietà ID delle risorse. Ad esempio, `[{id: 'urn:234}, {id: 'urn:555'}]` Deve essere disponibile una risorsa nella directory corrente. Se devi utilizzare una directory diversa, specifica anche un valore per la proprietà `path`. |
@@ -419,12 +586,15 @@ Puoi utilizzare le proprietà del Selettore risorse per personalizzarne il rende
 | *onFilterSubmit* | Funzione | No | | Richiamata con gli elementi filtro poiché l’utente modifica criteri di filtro diversi. |
 | *selectionType* | stringa | No | singolo | Configurazione per la selezione `single` o `multiple` di risorse alla volta. |
 | *trascinamentoOpzioni.inserisco nell&#39;elenco Consentiti* | booleano | No | | La proprietà viene utilizzata per consentire o negare il trascinamento di risorse non selezionabili. |
-| *aemTierType* | stringa | No | | Consente di scegliere se visualizzare le risorse dal livello di consegna, dal livello di authoring o da entrambi. <br><br> Sintassi: `aemTierType:[0: "author" 1: "delivery"` <br><br> Ad esempio, se entrambi `["author","delivery"]` , il selettore dell’archivio visualizza le opzioni sia per l’authoring che per la consegna. |
+| *aemTierType* | stringa | No | | Consente di scegliere se visualizzare le risorse dal livello di consegna, dal livello di authoring o da entrambi. <br><br> Sintassi: `aemTierType:[0: "author" 1: "delivery"` <br><br> Ad esempio, se entrambi `["author","delivery"]` , il selettore dell’archivio visualizza le opzioni sia per l’authoring che per la consegna. <br> Inoltre, utilizza `["delivery"]` per le risorse relative alla consegna in Dynamic Medie con funzionalità OpenAPI. |
 | *handleNavigateToAsset* | Funzione | No | | È una funzione di callback per gestire la selezione di una risorsa. |
 | *noWrap* | booleano | No | | Il *noWrap* consente di eseguire il rendering del selettore risorse nel pannello della barra laterale. Se questa proprietà non è menzionata, viene eseguito il rendering del *Vista finestra di dialogo* per impostazione predefinita. |
 | *dialogSize* | acquisizione di piccole, medie, grandi, a schermo intero o intero | Stringa | Facoltativo | È possibile controllare il layout specificandone le dimensioni utilizzando le opzioni specificate. |
 | *colorScheme* | chiaro o scuro | No | | Questa proprietà viene utilizzata per impostare il tema di un&#39;applicazione Asset Selector. Puoi scegliere tra tema chiaro o scuro. |
 | *filterRepoList* | Funzione | No |  | È possibile utilizzare `filterRepoList` funzione di callback che chiama l’archivio Experience Manager e restituisce un elenco filtrato di archivi. |
+
+<!--| *rootPath* | string | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
+| *path* | string | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |-->
 
 ## Esempi per utilizzare le proprietà del Selettore risorse {#usage-examples}
 
@@ -434,7 +604,7 @@ Puoi definire le [proprietà](#asset-selector-properties) del Selettore risorse 
 
 ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-Se il valore di AssetSelector `rail` è impostato su `false` oppure non è menzionato nelle proprietà; per impostazione predefinita, Asset Selector (Selettore risorsa) viene visualizzato nella vista modale. Il `acvConfig` consente alcune configurazioni approfondite, come il trascinamento della selezione. Visita [abilitare o disabilitare il trascinamento della selezione](#enable-disable-drag-and-drop) per comprendere l’utilizzo di `acvConfig` proprietà.
+Se il valore di AssetSelector `rail` è impostato su `false` oppure non è menzionato nelle proprietà; per impostazione predefinita, Asset Selector (Selettore risorsa) viene visualizzato nella vista modale. Il `acvConfig` La proprietà viene utilizzata per abilitare la visualizzazione della barra del visualizzatore risorse. Visita [abilitare o disabilitare il trascinamento della selezione](#enable-disable-drag-and-drop) per comprendere l’utilizzo di `acvConfig` proprietà.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -452,7 +622,7 @@ Utilizza varie proprietà per definire i metadati di una risorsa da visualizzare
 
 ### Esempio 3: proprietà filtro personalizzata nella visualizzazione della barra
 
-Oltre alla ricerca sfaccettata, il Selettore risorse consente di personalizzare vari attributi per perfezionare la ricerca da [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] applicazione. Aggiungi il seguente codice per aggiungere filtri di ricerca personalizzati nell’applicazione. Nell’esempio seguente, la ricerca `Type Filter` che identifica il tipo di risorsa tra Immagini, Documenti o Video o il tipo di filtro aggiunto per la ricerca.
+Oltre alla ricerca sfaccettata, il selettore Assets consente di personalizzare vari attributi per perfezionare la ricerca da [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] applicazione. Aggiungi il seguente codice per aggiungere filtri di ricerca personalizzati nell’applicazione. Nell’esempio seguente, la ricerca `Type Filter` che identifica il tipo di risorsa tra Immagini, Documenti o Video o il tipo di filtro aggiunto per la ricerca.
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -512,7 +682,7 @@ filterSchema: [
     ],
     header: 'Mime Types',
     groupKey: 'MimeTypeGroup',
-    }},
+    },
     {
     fields: [
     {
@@ -568,7 +738,7 @@ const data = JSON.parse(e.dataTransfer.getData('collectionviewdata'));
 }
 ```
 
-### Selezione delle risorse {#selection-of-assets}
+### Selezione di Assets {#selection-of-assets}
 
 Il tipo di risorsa selezionato è un array di oggetti che contiene le informazioni della risorsa quando si utilizzano le funzioni `handleSelection`, `handleAssetSelection`, e `onDrop`.
 
@@ -599,7 +769,7 @@ interface SelectedAsset {
     'repo:state': string;
     computedMetadata: Record<string, any>;
     _links: {
-        'https://ns.adobe.com/adobecloud/rel/rendition': Array<{
+        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
             href: string;
             type: string;
             'repo:size': number;
@@ -632,12 +802,12 @@ Nella tabella seguente vengono descritte alcune delle proprietà importanti dell
 | *tiff:imageLength* | numero | Altezza di una risorsa. |
 | *computedMetadata* | `Record<string, any>` | Oggetto che rappresenta un bucket per tutti i metadati di tutti i tipi di risorsa (archivio, applicazione o metadati incorporati). |
 | *_collegamenti* | `Record<string, any>` | Collegamenti ipermediali della risorsa associata. Include collegamenti a risorse quali metadati e rappresentazioni. |
-| *_collegamenti.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Array di oggetti contenenti informazioni sulle rappresentazioni della risorsa. |
-| *_collegamenti.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | stringa | URI della rappresentazione. |
-| *_collegamenti.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | stringa | Tipo MIME della rappresentazione. |
-| *_collegamenti.<https://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | numero | Dimensione della rappresentazione in byte. |
-| *_collegamenti.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | numero | Larghezza della rappresentazione. |
-| *_collegamenti.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | numero | Altezza della rappresentazione. |
+| *_collegamenti.<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Array di oggetti contenenti informazioni sulle rappresentazioni della risorsa. |
+| *_collegamenti.<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | stringa | URI della rappresentazione. |
+| *_collegamenti.<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | stringa | Tipo MIME della rappresentazione. |
+| *_collegamenti.<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | numero | Dimensione della rappresentazione in byte. |
+| *_collegamenti.<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | numero | Larghezza della rappresentazione. |
+| *_collegamenti.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | numero | Altezza della rappresentazione. |
 
 Per un elenco completo delle proprietà e un esempio dettagliato, consulta [Esempio di codice del Selettore risorse](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
@@ -647,14 +817,14 @@ La proprietà `handleSelection` viene utilizzata per gestire selezioni singole o
 
 ![handle-selection](assets/handling-selection.png)
 
-## Disabilitazione della selezione delle risorse {#disable-selection}
+## Disabilitazione della selezione di Assets {#disable-selection}
 
 La funzione Disattiva selezione viene utilizzata per nascondere o disabilitare la selezione delle risorse o cartelle. La casella di controllo di selezione viene nascosta dalla scheda o dalla risorsa, che ne impedisce la selezione. Per utilizzare questa funzione, puoi dichiarare la posizione di una risorsa o cartella che desideri disabilitare in un array. Ad esempio, se vuoi disattivare la visualizzazione di una cartella in prima posizione, puoi aggiungere il seguente codice:
 `disableSelection: [0]:folder`
 
 Puoi fornire all’array un elenco di tipi mime (ad esempio immagine, cartella, file o altri tipi mime come immagine/jpeg) che desideri disabilitare. I tipi MIME dichiarati sono mappati in `data-card-type` e `data-card-mimetype` attributi di una risorsa.
 
-Inoltre, le risorse con selezione disabilitata possono essere trascinate. Per disattivare il trascinamento di un particolare tipo di risorsa, puoi utilizzare `dragOptions.allowList` proprietà.
+Inoltre, Assets con selezione disabilitata è trascinabile. Per disattivare il trascinamento di un particolare tipo di risorsa, puoi utilizzare `dragOptions.allowList` proprietà.
 
 La sintassi per disabilitare la selezione è la seguente:
 
@@ -742,17 +912,11 @@ Il selettore risorse consente di visualizzare la risorsa in quattro diverse visu
 * **![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista a cascata]**: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
 
 <!--
-### Modes to view Asset Selector
+### Support for multiple instances
 
-Asset Selector supports two types of out of the box views:
+The micro front-end design supports the display of multiple instances of Asset Selector on a single screen.
 
-**  Modal view or Inline view:** The modal view or inline view is the default view of Asset Selector that represents Assets folders in the front area. The modal view allows users to view assets in a full screen to ease the selection of multiple assets for import. Use `<AssetSelector rail={false}>` to enable modal view.
-
-    ![modal-view](assets/modal-view.png)
-
-**  Rail view:** The rail view represents Assets folders in a left panel. The drag and drop of assets can be performed in this view. Use `<AssetSelector rail={true}>` to enable rail view.
-
-    ![rail-view](assets/rail-view.png)
+![multiple-instance](assets/multiple-instance.png)
 -->
 <!--
 
@@ -763,14 +927,6 @@ Asset Selector is flexible and can be integrated within your existing [!DNL Adob
 *   **Perfect fit** Asset selector easily fits in your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application and choose the way you want to view. The mode of view can be inline, rail, or modal view.
 *   **Accessible** With Asset Selector, you can reach the desired asset in an easy manner.
 *   **Localize** Assets can be availed for the various locales available as per Adobe's localization standards.
--->
-<!--
-
-### Support for multiple instances
-
-The micro front-end design supports the display of multiple instances of Asset Selector on a single screen.
-
-![multiple-instance](assets/multiple-instance.png)
 -->
 
 <!--
