@@ -4,7 +4,7 @@ description: Scopri le attività di manutenzione in AEM as a Cloud Service e com
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
+source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
 workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 30%
@@ -46,14 +46,14 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
   <tr>
     <td>Pulizia delle versioni</td>
     <td>Cliente</td>
-    <td>L’eliminazione della versione è attualmente disabilitata per impostazione predefinita, ma il criterio può essere configurato come descritto nella <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione Pulizia delle versioni e del registro di controllo</a> sezione.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sostituiti.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>L’eliminazione della versione è attualmente disabilitata per impostazione predefinita, ma il criterio può essere configurato come descritto nella <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione Pulizia delle versioni e del registro di controllo</a> sezione.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sostituiti.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Elimina log di controllo</td>
     <td>Cliente</td>
-    <td>L’eliminazione del registro di controllo è attualmente disabilitata per impostazione predefinita, ma è possibile configurare i criteri, come descritto in <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione Pulizia delle versioni e del registro di controllo</a> sezione.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sostituiti.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>L’eliminazione del registro di controllo è attualmente disabilitata per impostazione predefinita, ma è possibile configurare i criteri, come descritto in <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione Pulizia delle versioni e del registro di controllo</a> sezione.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sostituiti.<br>
    </td>
    </td>
   </tr>
@@ -197,7 +197,7 @@ L’eliminazione delle versioni e del registro di audit riduce le dimensioni del
 
 >[!NOTE]
 >
->L’Adobe consiglia ai clienti di non configurare Pulizia delle versioni.
+>I clienti di AEM Guides non devono configurare Pulizia delle versioni.
 
 ### Impostazioni predefinite {#defaults}
 
@@ -283,7 +283,7 @@ Consulta [configurazione delle pipeline di produzione](/help/implementing/cloud-
 
 >[!NOTE]
 >
->L’Adobe consiglia ai clienti di non configurare Pulizia delle versioni.
+>I clienti di AEM Guides non devono configurare Pulizia delle versioni.
 
 #### Valori predefiniti eliminazione versione {#version-purge-defaults}
 
