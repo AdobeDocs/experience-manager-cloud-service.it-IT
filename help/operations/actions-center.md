@@ -4,10 +4,10 @@ description: Sfruttare il Centro operativo per intervenire in modo comodo in cas
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 7630481aab89b31057509f23aab334e17c537257
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 64%
+source-wordcount: '988'
+ht-degree: 55%
 
 ---
 
@@ -76,6 +76,12 @@ Nella tabella seguente sono elencati i tipi di notifica attualmente supportati i
 | Coda di replica bloccata | Problema | Sblocca la coda seguendo le istruzioni contenute nella [Documentazione di replica](/help/operations/replication.md#troubleshooting) |
 | Query GraphQL persistente non valida | Problema | Correggi la query GraphQL non valida facendo riferimento al [Documentazione sulla risoluzione dei problemi relativi alle query GraphQL persistenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Picco di traffico all’origine | Problema | Protect l’origine configurando le regole del filtro del traffico del limite di velocità che si attivano a soglie inferiori all’avviso di picco di traffico predefinito all’origine.  Consulta la [Blocco degli attacchi DoS e DDoS tramite le regole del traffico](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) sezione della documentazione sulle regole del filtro del traffico, che fa riferimento a un’esercitazione. |
+| Le pagine contengono un numero elevato di nodi | Proattiva | Riduci il numero totale di nodi all’interno di una pagina. Fai riferimento a [Documentazione sulla complessità delle pagine](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
+| Numero elevato di istanze del flusso di lavoro in esecuzione | Proattiva | Termina i flussi di lavoro in esecuzione che non sono più necessari. Scopri come [configurare un processo di eliminazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | Certificato S2S in scadenza | Proattiva | Scopri come aggiornare una credenziale nella [Documentazione sulla generazione dei token di accesso per le API lato server](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Numero elevato di connessioni | Proattiva | Scopri il connection pooling in [Connection pooling insieme alla documentazione di Advanced Networking](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Mappatura utenti servizio obsoleti | Proattiva | Scopri come utilizzare il nuovo formato di mappatura utente del servizio Sling, come indicato in [Best practice per la mappatura degli utenti e la definizione degli utenti del servizio Sling](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
-| Numero elevato di connessioni | Proattiva | Scopri il connection pooling in [Documentazione sulle reti avanzate](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| Numero elevato di connessioni | Proattiva | Scopri il connection pooling in [Documentazione sulle reti avanzate](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |  |
+| Utenti aggiunti direttamente al gruppo personalizzato | Proattiva | Gli utenti devono essere aggiunti ai gruppi IMS pertinenti e questi gruppi IMS devono essere aggiunti come membri dei gruppi AEM. Allinea con [Best practice per IMS](/help/security/ims-support.md) | |
+| Contenuto JCR mancante | Proattiva | Aggiungi un nodo di contenuto JCR mancante. Fai riferimento a [Documentazione di Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| Flussi di lavoro completati non eliminati | Proattiva | Riduci al minimo il numero di istanze del flusso di lavoro e migliora le prestazioni eliminando le istanze del flusso di lavoro che hanno più di 90 giorni. Scopri come [configurare le attività di manutenzione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance) | |
+| Tipo di risorsa Sling mancante nella pagina | Proattiva | Aggiungi nodo di tipo di risorsa Sling mancante. Fai riferimento a [Documentazione di Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |
