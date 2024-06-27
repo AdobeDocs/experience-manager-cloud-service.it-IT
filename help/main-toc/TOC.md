@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: c7c881bb1c235007ba14684959494f08ed27aa67
 workflow-type: tm+mt
-source-wordcount: '5073'
-ht-degree: 99%
+source-wordcount: '5128'
+ht-degree: 98%
 
 ---
 
@@ -589,6 +589,19 @@ ht-degree: 99%
       + [Gestire i rapporti](/help/assets/manage-reports-assets-view.md)
       + [Gestire i tag](/help/assets/tagging-management-assets-view.md)
       + [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+   + Gestisci Content Hub {#content-hub}
+      + [Panoramica](/help/assets/product-overview.md)
+      + [Distribuire Content Hub](/help/assets/deploy-content-hub.md)
+      + [Configurare l’interfaccia utente di Content Hub](/help/assets/configure-content-hub-ui-options.md)
+      + [Caricare o importare risorse approvate dal marchio in Content Hub](/help/assets/upload-brand-approved-assets.md)
+      + [Cercare risorse in Content Hub](/help/assets/search-assets-content-hub.md)
+      + [Proprietà risorsa](/help/assets/asset-properties-content-hub.md)
+      + [Condividere risorse in Content Hub](/help/assets/share-assets-content-hub.md)
+      + [Scaricare le risorse tramite Content Hub](/help/assets/download-assets-content-hub.md)
+      + [Gestire le raccolte in Content Hub](/help/assets/collections-content-hub.md)
+      + [Modificare le immagini utilizzando l’Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
+      + [Informazioni sulla risorsa in Content Hub](/help/assets/insights-content-hub.md)
    + Best practice{#best-practices}
       + [Best practice per la ricerca](/help/assets/search-best-practices.md)
       + [Gestione dei metadati e best practice](/help/assets/metadata-best-practices.md)
