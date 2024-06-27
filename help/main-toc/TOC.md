@@ -623,7 +623,7 @@ ht-degree: 98%
    + Panoramica {#forms-overview}
       + [Introduzione](/help/forms/home.md)
       + [Innovazioni principali di Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
-      + [Funzionalità di accesso anticipato (EA)](/help/forms/early-access-ea-features.md)
+      + [Funzionalità per Accesso anticipato (EA)](/help/forms/early-access-ea-features.md)
       + [Modifiche di rilievo](/help/forms/notable-changes.md)
       + [Architettura](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Domande frequenti](/help/forms/faq.md)
