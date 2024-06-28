@@ -4,14 +4,14 @@ description: Scopri come utilizzare il monitoraggio in tempo reale (RUM, Real Us
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 12e37d6d0a8674dd4329200322e2f959cc6dd787
+source-git-commit: 19b52f733a592c7e84ba2e9d83d37e5e181f21ab
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
 
-# Servizio di monitoraggio per uso reale per AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
+# Servizio di monitoraggio Real Use per AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
@@ -33,8 +33,6 @@ Il servizio di monitoraggio Real Use è utile per tutti i clienti. Offre un rifl
 
 Per tutti gli Adobi di clienti, questo servizio fornisce informazioni preziose sulle interazioni degli utenti. I clienti che utilizzano la propria rete CDN possono beneficiare di rapporti sul traffico semplificati, in quanto Adobe ora integra direttamente la raccolta dei dati, eliminando la necessità di creare rapporti separati durante i cicli di rinnovo.
 
-Desideri sfruttare appieno il potenziale del tuo sito web, utilizzando lo strumento di visualizzazione Adobe Early Adopter RUM Explorer per ottenere informazioni utili sul coinvolgimento del sito web? Questo strumento può fornire informazioni approfondite sulle prestazioni della pagina, tra cui metriche sul numero di clic, Core Web Vitals (CWV), conversioni e mappe di percorso dei clienti. Utilizzando queste informazioni avanzate, puoi perfezionare le tue esperienze digitali per soddisfare le esigenze degli utenti in modo più efficace. Se desiderate saperne di più e ottenere l&#39;accesso, inviateci un&#39;email all&#39;indirizzo `rum-explorer@adobe.com`.
-
 ## Comprendere il funzionamento del servizio di monitoraggio Real Use {#understand-how-the-rum-service-works}
 
 Adobe Experience Manager (AEM) utilizza Real Use Monitoring (RUM) per aiutare i clienti e gli Adobi a comprendere come i visitatori interagiscono con i siti AEM. Consente di diagnosticare i problemi di prestazioni e di misurare l&#39;efficacia degli esperimenti. RUM preserva la privacy dei visitatori attraverso il campionamento (viene monitorata solo una piccola porzione di tutte le visualizzazioni di pagina) e non vengono raccolte informazioni personali identificabili (PII, personally identifiable information).
@@ -47,7 +45,7 @@ In qualità di operatore del sito, non è necessario alcun consenso aggiuntivo p
 
 ## Campionamento dei dati del servizio di monitoraggio Real Use {#rum-service-data-sampling}
 
-Le soluzioni di analisi web tradizionali tentano di raccogliere dati su ogni singolo visitatore. Il servizio AEM RUM acquisisce informazioni solo da una piccola frazione di visualizzazioni di pagina. Il servizio deve essere campionato e reso anonimo, anziché sostituire le funzioni di analisi. Per impostazione predefinita, le pagine hanno una proporzione di campionamento di 1:100. Al momento, gli operatori del sito non possono aumentare o diminuire la frequenza di campionamento. Per stimare con precisione il traffico totale, per ogni 100 visualizzazioni di pagina, i dati vengono raccolti da 1, fornendo un’approssimazione affidabile del traffico complessivo.
+Le soluzioni di analisi web tradizionali tentano di raccogliere dati su ogni singolo visitatore. Il servizio RUM dell’AEM acquisisce informazioni solo da una piccola frazione di visualizzazioni di pagina. Il servizio deve essere campionato e reso anonimo, anziché sostituire le funzioni di analisi. Per impostazione predefinita, le pagine hanno una proporzione di campionamento di 1:100. Al momento, gli operatori del sito non possono aumentare o diminuire la frequenza di campionamento. Per stimare con precisione il traffico totale, per ogni 100 visualizzazioni di pagina, i dati vengono raccolti da 1, fornendo un’approssimazione affidabile del traffico complessivo.
 
 Quando si decide se raccogliere o meno i dati, la procedura avviene in modalità di visualizzazione pagina per pagina, rendendo praticamente impossibile tenere traccia delle interazioni tra più pagine. Per progettazione, RUM non ha alcun concetto di visitatori o sessioni, ma solo di visualizzazioni di pagina.
 
