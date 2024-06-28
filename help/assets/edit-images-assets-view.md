@@ -4,7 +4,7 @@ description: Modifica le immagini utilizzando le opzioni baate su [!DNL Adobe Ex
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 9a21c9218e45bb6ce91263c9798e3b1c99f369b4
+source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 33%
@@ -13,7 +13,7 @@ ht-degree: 33%
 
 # Modificare le immagini in [!DNL Assets view] {#edit-images-in-assets-view}
 
-La Vista risorse consente di modificare le immagini di base, compresi il ridimensionamento, la rimozione dello sfondo, il ritaglio e la conversione tra i formati JPEG e PNG. Inoltre, permette di realizzare editing avanzato attraverso l&#39;integrazione con Adobe Express. Dopo aver modificato un’immagine, puoi salvarla come nuova versione. Se necessario, il controllo delle versioni consente di ripristinare la risorsa originale in un secondo momento. Per modificare un’immagine: [apri l’anteprima](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) e fai clic su **Modifica immagine**.
+La vista Assets consente di modificare le immagini di base, tra cui ridimensionamento, rimozione dello sfondo, ritaglio e conversione tra i formati JPEG e PNG. Inoltre, permette di realizzare editing avanzato attraverso l&#39;integrazione con Adobe Express. Dopo aver modificato un’immagine, puoi salvarla come nuova versione. Se necessario, il controllo delle versioni consente di ripristinare la risorsa originale in un secondo momento. Per modificare un’immagine: [apri l’anteprima](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) e fai clic su **Modifica immagine**.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ La Vista risorse consente di modificare le immagini di base, compresi il ridimen
 
 ## Modifica immagine {#edit-image}
 
-Atterrare su Asset View, utilizzando il collegamento - [Visualizzazione risorse](https://experience.adobe.com/#/assets) e selezionando l’archivio appropriato. Per ricevere l’accesso, contatta l’amministratore della tua organizzazione.
+Arriva su Assets View, utilizzando il collegamento - [Vista Assets](https://experience.adobe.com/#/assets) e selezionando l’archivio appropriato. Per ricevere l’accesso, contatta l’amministratore della tua organizzazione.
 Per ulteriori informazioni di riferimento, fare riferimento a [Introduzione all’utilizzo della visualizzazione Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Interfaccia utente di visualizzazione di Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), e [Casi di utilizzo della visualizzazione Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -88,11 +88,11 @@ Gli utenti che dispongono del diritto Express possono utilizzare l’editor Expr
 ![interfaccia utente express in essentials](/help/assets/assets/express-in-essentials-ui.jpg)
 Per modificare le immagini mediante [!DNL Adobe Express] nell’editor incorporato, segui i passaggi seguenti:
 
-1. Accedi alla visualizzazione AEM Assets utilizzando il collegamento - [Visualizzazione risorse AEM](https://experience.adobe.com/#/assets) e seleziona l’archivio appropriato.
+1. Accedi alla visualizzazione AEM Assets utilizzando il collegamento - [Vista AEM Assets](https://experience.adobe.com/#/assets) e seleziona l’archivio appropriato.
 1. Clic **Assets**, immetti una cartella e seleziona un&#39;immagine.
 1. Clic **Apri in Adobe Express**. L’immagine si apre su un’area di lavoro express.
 1. Apportare le modifiche necessarie all&#39;immagine.
-1. Se il progetto richiede l’aggiunta di altre pagine, fai clic su **Aggiungi**, selezionare Assets, immettere una cartella, selezionare un&#39;immagine da inserire nella pagina canvas, quindi apportare le modifiche necessarie all&#39;immagine.
+1. Se il progetto richiede l’aggiunta di altre pagine, fai clic su **Aggiungi**, seleziona le risorse, immetti una cartella, seleziona un’immagine da portare sulla pagina dell’area di lavoro, quindi apporta le modifiche necessarie all’immagine.
 1. Per salvare le immagini, fai clic su **Salva**. Viene visualizzata la finestra di dialogo Salva.
 
    >[!NOTE]
@@ -197,7 +197,7 @@ TBD: Insert a video of the available social media options.
 
 * Fornire feedback sul prodotto utilizzando [!UICONTROL Feedback] disponibile nell’interfaccia utente di visualizzazione di Assets.
 
-* Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
+* Fornisci feedback sulla documentazione utilizzando [!UICONTROL Modifica questa pagina], ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema], ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibili sulla barra laterale a destra.
 
 * Contatta il [Servizio clienti](https://experienceleague.adobe.com/i?support-solution=General#support)
 
