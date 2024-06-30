@@ -1,9 +1,9 @@
 ---
 title: Configurare l’interfaccia utente di Content Hub
 description: Configurare l’interfaccia utente di Content Hub
-source-git-commit: 85ccd23df4ac320d6da37c54b72f0f93916e65a1
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1096'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Experience Manager Assets consente agli amministratori di configurare le opzioni
 
 ## Prerequisiti {#prerequisites-configuration-ui}
 
-[Amministratori Content Hub](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) può aggiungere risorse a Content Hub e può anche impostare le opzioni di configurazione per altri utenti all’interno della tua organizzazione.
+[Amministratori Content Hub](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) può impostare le opzioni di configurazione per altri utenti all’interno della tua organizzazione.
 
 ## Accedere alle opzioni di configurazione in Content Hub {#access-configuration-options-content-hub}
 

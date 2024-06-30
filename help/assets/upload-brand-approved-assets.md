@@ -2,7 +2,7 @@
 title: Carica le risorse approvate dal tuo marchio in [!DNL Content Hub]
 description: Scopri come caricare le risorse approvate dal marchio in Content Hub
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Assicurati di caricare solo [risorse approvate dal marchio per Content Hub](/hel
 
 ## Prerequisiti {#prerequisites-add-assets}
 
-[Utenti consumer di risorse Content Hub con autorizzazioni di invio](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) può caricare risorse in Content Hub.
+[Utenti Content Hub con diritti per aggiungere risorse](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) può caricare risorse in Content Hub.
 
 ## Aggiungere risorse a Content Hub dal file system locale {#add-assets-local-file-system}
 

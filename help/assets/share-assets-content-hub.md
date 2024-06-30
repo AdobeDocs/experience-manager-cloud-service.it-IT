@@ -2,9 +2,9 @@
 title: Condividi Assets in [!DNL the Content Hub]
 description: Condividi Assets in [!DNL the Content Hub]
 role: User
-source-git-commit: e20556531a82e42354b642955488bf14b83dab5e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '454'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 1%
 ![Condividere l&#39;immagine del banner delle risorse](assets/share-assets-banner.png)
 
 La condivisione delle risorse tramite un collegamento è un modo pratico per rendere le risorse disponibili a [!DNL the Content Hub] utenti. Questa funzionalità consente agli utenti autorizzati di accedere e scaricare le risorse condivise con loro. Quando si scaricano risorse da un collegamento condiviso, [!DNL the Content Hub] utilizza un servizio asincrono che offre un download più rapido e ininterrotto.
+
+## Prerequisiti {#prerequisites}
+
+[Utenti Content Hub](deploy-content-hub.md#onboard-content-hub-users) può eseguire le azioni menzionate in questo articolo.
 
 ## Condividere una singola risorsa {#share-a-single-asset}
 

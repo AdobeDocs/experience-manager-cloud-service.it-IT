@@ -2,9 +2,9 @@
 title: Gestire le raccolte in Content Hub
 description: Scopri come gestire le raccolte in Content Hub
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '617'
 ht-degree: 3%
 
 ---
@@ -26,6 +26,10 @@ Una raccolta fa riferimento a un insieme di risorse che possono essere condivise
 * **Elimina**: elimina l’intera raccolta.
 
 Consente agli utenti di accedere e gestire facilmente le diverse risorse disponibili in [!DNL Content Hub].
+
+## Prerequisiti {#prerequisites}
+
+[Utenti Content Hub](deploy-content-hub.md#onboard-content-hub-users) può eseguire le azioni menzionate in questo articolo.
 
 ## Creare le raccolte{#create-collections}
 

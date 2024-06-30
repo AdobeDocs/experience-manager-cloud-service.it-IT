@@ -2,9 +2,9 @@
 title: Visualizzare informazioni approfondite sulle risorse in Content Hub
 description: Scopri come visualizzare informazioni approfondite sulle risorse in [!DNL Content Hub]
 role: User
-source-git-commit: 788ed1189b21392bd399f7bdee888a3b5e1da117
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 ![Approfondimenti su Assets](assets/asset-insights-banner.jpg)
 
 [!DNL Content Hub] fornisce informazioni utili sulle risorse, affrontando una sfida comune che spesso interessa il marketing: le statistiche sull’utilizzo delle risorse utilizzate nelle campagne di marketing, nei canali e in diverse aree geografiche. Acquisendo una chiara comprensione delle prestazioni e della popolarità delle risorse, fornisce informazioni fruibili essenziali per migliorare l’esperienza utente.
+
+## Prerequisiti {#prerequisites}
+
+[Utenti Content Hub](deploy-content-hub.md#onboard-content-hub-users) può eseguire le azioni menzionate in questo articolo.
 
 ## Visualizzare le statistiche per le risorse caricate{#view-statistics-for-uploaded-assets}
 
