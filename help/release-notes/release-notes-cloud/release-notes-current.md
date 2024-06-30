@@ -3,10 +3,10 @@ title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Clo
 description: Note sulla versione corrente di [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1e5a32625377cb564c859a6fdaf1ecef6ebebe9e
+source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
 workflow-type: tm+mt
-source-wordcount: '1865'
-ht-degree: 45%
+source-wordcount: '1932'
+ht-degree: 43%
 
 ---
 
@@ -86,6 +86,14 @@ Dynamic Medie con funzionalità OpenAPI estende il DAM a tutte le applicazioni A
 **Sono disponibili altre opzioni nella dashboard Approfondimenti di Assets**
 
 Il conteggio delle risorse per tipo e dimensione di risorsa è ora disponibile nella dashboard di Assets Insights. Queste opzioni forniscono dati in tempo reale nell’ambiente di visualizzazione Assets. Descrivono in dettaglio il conteggio e la percentuale delle risorse per intervallo di dimensioni e tipo di risorsa.
+
+**Aggiornamenti all’editor di Adobi Express incorporato**
+
+* È stata migliorata l’esperienza dell’utente per salvare come nuova risorsa anziché come nuova versione.
+
+* Esportazione di documenti Express multipagina (in precedenza era supportata solo una pagina singola) in entrambi i formati PDF multipagina e immagine. Selezionando i formati immagine, ogni pagina viene salvata come una risorsa distinta in DAM per la distribuzione a valle.
+
+* Supporto per l’aggiunta di metadati nella finestra di dialogo Salva durante il salvataggio di una risorsa.
 
 <!--
 
