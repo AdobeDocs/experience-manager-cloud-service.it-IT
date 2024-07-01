@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
 source-wordcount: '5143'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -562,16 +562,16 @@ ht-degree: 98%
       + [Domande frequenti sulla distribuzione dei contenuti HTTP2](/help/assets/dynamic-media/http2faq.md)
       + [Avviso di terminazione dei visualizzatori Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fine del ciclo di vita dei visualizzatori DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-      + Dynamic Medie con funzionalità OpenAPI {#dynamic-media-open-apis}
+      + Dynamic Media con funzionalità OpenAPI {#dynamic-media-open-apis}
          + [Panoramica](/help/assets/dynamic-media-open-apis-overview.md)
-         + [Approvare le risorse](/help/assets/approve-assets.md)
-         + [Integrazione con le applicazioni downstream](/help/assets/integrate-dynamic-media-open-apis.md)
-         + [API per la ricerca delle risorse](/help/assets/search-assets-api.md)
+         + [Approvare risorse](/help/assets/approve-assets.md)
+         + [Integrazione con le applicazioni a valle](/help/assets/integrate-dynamic-media-open-apis.md)
+         + [Cercare risorse API](/help/assets/search-assets-api.md)
          + [API di consegna](/help/assets/deliver-assets-apis.md)
-         + [Limita la consegna delle risorse](/help/assets/restrict-assets-delivery.md)
+         + [Limitare la consegna delle risorse](/help/assets/restrict-assets-delivery.md)
          + [Integrare AEM Assets remoto con AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [Domande frequenti](/help/assets/dynamic-media-open-apis-faqs.md)
-         + [Configurare un dominio personalizzato](/help/assets/configure-custom-domain.md)
+         + [Configurare domini personalizzati](/help/assets/configure-custom-domain.md)
    + Utilizzo della vista Risorse {#assets-view}
       + [Introduzione](/help/assets/assets-view-introduction.md)
       + [Guida introduttiva](/help/assets/get-started-assets-view.md)
@@ -595,16 +595,16 @@ ht-degree: 98%
 
    + Content Hub {#content-hub}
       + [Panoramica](/help/assets/product-overview.md)
-      + [Distribuire Content Hub](/help/assets/deploy-content-hub.md)
-      + [Configurare l’interfaccia utente di Content Hub](/help/assets/configure-content-hub-ui-options.md)
-      + [Caricare o importare risorse approvate dal marchio in Content Hub](/help/assets/upload-brand-approved-assets.md)
-      + [Cercare risorse in Content Hub](/help/assets/search-assets-content-hub.md)
+      + [Distribuire l’hub di contenuti](/help/assets/deploy-content-hub.md)
+      + [Configurare l’interfaccia utente dell’hub di contenuti](/help/assets/configure-content-hub-ui-options.md)
+      + [Caricare o importare risorse approvate dal marchio nell’hub di contenuti](/help/assets/upload-brand-approved-assets.md)
+      + [Cercare risorse nell’hub di contenuti](/help/assets/search-assets-content-hub.md)
       + [Proprietà risorsa](/help/assets/asset-properties-content-hub.md)
-      + [Condividere risorse in Content Hub](/help/assets/share-assets-content-hub.md)
-      + [Scaricare le risorse tramite Content Hub](/help/assets/download-assets-content-hub.md)
-      + [Gestire le raccolte in Content Hub](/help/assets/collections-content-hub.md)
-      + [Modificare le immagini utilizzando l’Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
-      + [Informazioni sulla risorsa in Content Hub](/help/assets/insights-content-hub.md)
+      + [Condividere risorse nell’hub di contenuti](/help/assets/share-assets-content-hub.md)
+      + [Scaricare risorse utilizzando l’hub di contenuti](/help/assets/download-assets-content-hub.md)
+      + [Gestire le raccolte nell’hub di contenuti](/help/assets/collections-content-hub.md)
+      + [Modificare le immagini utilizzando Adobe Express nell’hub di contenuti](/help/assets/edit-images-content-hub.md)
+      + [Informazioni su risorse nell’hub di contenuti](/help/assets/insights-content-hub.md)
    + Best practice{#best-practices}
       + [Best practice per la ricerca](/help/assets/search-best-practices.md)
       + [Gestione dei metadati e best practice](/help/assets/metadata-best-practices.md)
