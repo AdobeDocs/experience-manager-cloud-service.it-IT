@@ -2,15 +2,15 @@
 title: Distribuisci [!DNL Content Hub]
 description: Scopri come distribuire e attivare Content Hub, fornire accesso agli utenti con diversi tipi di privilegi (caricare risorse, Adobi Express di utenti) e fornire privilegi di amministratore agli utenti.
 role: Admin
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
 
 
-# Distribuire Content Hub {#deploy-content-hub}
+# Distribuire l’hub di contenuti {#deploy-content-hub}
 
 ![Distribuire Content Hub](assets/deploy-content-hub.png)
 
@@ -50,6 +50,11 @@ Per accedere al portale Content Hub, gli amministratori devono innanzitutto abil
 1. Fai clic su **[!UICONTROL Aggiorna]**.
 
 Content Hub è ora abilitato per Experience Manager Assets as a Cloud Service.
+
+>[!NOTE]
+>
+>Puoi accedere a Content Hub e utilizzarlo con un massimo di 250 utenti Content Hub. Per ulteriori domande, contatta il rappresentante del tuo Adobe.
+
 
 Se hai poca esperienza con Experience Manager Assets, fai clic su **[!UICONTROL Aggiungi programma]** e quindi fornire i dettagli del programma (Nome del programma, configurato per la produzione) e fare clic su **[!UICONTROL Continua]**. A questo punto puoi selezionare **[!UICONTROL Assets]** e **[!UICONTROL Content Hub]** nel **[!UICONTROL Soluzioni e componenti aggiuntivi]** scheda.
 
