@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
-workflow-type: ht
-source-wordcount: '649'
-ht-degree: 100%
+source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 87%
 
 ---
 
@@ -52,6 +52,15 @@ Con la versione di attivazione funzioni 2024.6.0 verrà fornito il set di funzio
 * SCRNS-4194: rimuovere la dipendenza dalle API Guava di Google.
 * SCRNS-4360: Pulsante Gestisci pubblicazione e pubblicazione rapida mancante per gli utenti non amministratori nel provider di contenuti per i canali.
 * SCRNS-4323: nasconde/disabilita i lanci da screens.html.
+
+#### Moduli
+
+* FORMS-14844: Forms adattivo consente l’invio di moduli nonostante la verifica reCAPTCHA non riesca.
+* FORMS-14984: Forms con CAPTCHA salta la convalida se &quot;submitMetaData&quot; è assente nei dati inviati.
+* FORMS-14477: le opzioni &quot;È dopo&quot; e &quot;È prima&quot; nell’editor delle regole non funzionano correttamente nella convalida del selettore data.
+* FORMS-14019: la funzionalità &quot;Invoke Service&quot; dell’editor di regole non funziona in Universal Editor.
+* FORMS-14336: quando non è selezionato alcun campo modulo, l’editor deve aprirsi con lo stato attivo sull’intero elemento modulo.
+* FORMS-15061: il cerchio del caricatore persiste a tempo indefinito quando si utilizza l’opzione richiama servizio nell’editor di regole.
 
 ### Problemi noti {#known-issues-16799}
 
