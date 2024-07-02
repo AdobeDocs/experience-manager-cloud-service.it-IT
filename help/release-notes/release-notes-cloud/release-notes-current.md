@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
 source-wordcount: '1958'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
@@ -130,11 +130,11 @@ Questa versione apporta un aggiornamento significativo all’Editor di regole vi
 
 * Utilizza la funzionalità [**Salva come bozza**](/help/forms/save-core-component-based-form-as-draft.md) per salvare moduli parzialmente completati da inviare successivamente. Questa funzionalità è utile negli scenari in cui gli utenti devono interrompere la compilazione di un modulo e ritornare in seguito.
 
-### Funzioni di accesso anticipato in AEM Forms {#forms-new-early-access-features}
+### Funzionalità per Accesso anticipato ad AEM Forms {#forms-new-early-access-features}
 
 Il programma AEM Forms Early Access Program offre l’opportunità unica di accedere in esclusiva alle innovazioni all’avanguardia prima di chiunque altro, e di aiutarti a modellarne lo sviluppo. Il programma offre l’accesso a molteplici innovazioni.
 
-In queste note sulla versione sono elencate le innovazioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma di accesso anticipato, consulta [Documentazione del programma di accesso anticipato AEM Forms](/help/forms/early-access-ea-features.md).
+In queste note sulla versione sono elencate le innovazioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma per l’accesso anticipato, consulta la [Documentazione del programma per l’accesso anticipato ad AEM Forms](/help/forms/early-access-ea-features.md).
 
 #### Metodi di protezione bot migliorati
 
