@@ -1,12 +1,12 @@
 ---
-title: Inoltro dei registri per AEM as a Cloud Service
+title: Inoltro registro per AEM as a Cloud Service
 description: Scopri come inoltrare i registri a Splunk e ad altri fornitori di registrazione in AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e007f2e3713d334787446305872020367169e6a2
+source-git-commit: 29d2a759f5b3fdbccfa6a219eebebe2b0443d02e
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1278'
 ht-degree: 1%
 
 ---
@@ -25,9 +25,9 @@ I clienti che dispongono di una licenza per un fornitore di servizi di registraz
 * HTTPS
 * Splunk
 
-L’inoltro dei registri viene configurato in modo self-service dichiarando una configurazione in Git e distribuendola tramite la pipeline di configurazione di Cloud Manager per i tipi di ambiente di sviluppo, staging e produzione nei programmi di produzione (non sandbox).
+L’inoltro dei registri viene configurato in modo self-service dichiarando una configurazione in Git e distribuendola tramite la pipeline di configurazione di Cloud Manager ai tipi di ambiente di sviluppo, staging e produzione nei programmi di produzione (non sandbox).
 
-È disponibile un’opzione per instradare i registri di AEM e Apache/Dispatcher tramite l’infrastruttura di rete avanzata dell’AEM, ad esempio l’IP in uscita dedicato.
+È disponibile un’opzione per instradare i registri AEM e Apache/Dispatcher tramite l’infrastruttura di rete avanzata dell’AEM, ad esempio l’IP in uscita dedicato.
 
 La larghezza di banda di rete associata ai registri inviati alla destinazione di registrazione è considerata parte dell&#39;utilizzo di I/O di rete dell&#39;organizzazione.
 
@@ -39,7 +39,7 @@ Questo articolo è organizzato nel modo seguente:
 * Configurazione: comune per tutte le destinazioni di registrazione
 * Registrazione delle configurazioni di destinazione: ogni destinazione ha un formato leggermente diverso
 * Formati delle voci di registro: informazioni sui formati delle voci di registro
-* Rete avanzata: invio dei registri di AEM e Apache/Dispatcher tramite un’uscita dedicata o tramite una VPN
+* Rete avanzata: invio dei registri AEM e Apache/Dispatcher tramite un’uscita dedicata o tramite una VPN
 
 
 ## Configurazione {#setup}
@@ -199,12 +199,16 @@ data:
       enabled: true       
       host: "http-intake.logs.datadoghq.eu"
       token: "${{DATADOG_API_KEY}}"
+      tags:
+         tag1: value1
+         tag2: value2
       
 ```
 
 Considerazioni:
 
 * Crea una chiave API, senza alcuna integrazione con un provider cloud specifico.
+* la proprietà tags è facoltativa
 
 
 ### Elasticsearch e OpenSearch {#elastic}
@@ -221,6 +225,7 @@ data:
       host: "example.com"
       user: "${{ELASTICSEARCH_USER}}"
       password: "${{ELASTICSEARCH_PASSWORD}}"
+      pipeline: "ingest pipeline name"
 ```
 
 Considerazioni:
@@ -228,6 +233,15 @@ Considerazioni:
 * Per le credenziali, assicurati di utilizzare le credenziali di distribuzione anziché le credenziali dell’account. Queste sono le credenziali generate in una schermata che potrebbe assomigliare a questa immagine:
 
 ![Credenziali di distribuzione elastica](/help/implementing/developing/introduction/assets/ec-creds.png)
+
+* La proprietà opzionale della pipeline deve essere impostata sul nome della pipeline di acquisizione Elasticsearch o OpenSearch, che può essere configurata per instradare la voce di registro all’indice appropriato. Il tipo di processore della pipeline deve essere impostato su *script* e il linguaggio di script deve essere impostato su *indolore*. Di seguito è riportato un frammento di script di esempio per instradare le voci di registro in un indice come aemaccess_dev_26_06_2024:
+
+```
+def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
+def sourceType = ctx._index;
+def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
+ctx._index = sourceType + "_" + envType + "_" + date;
+```
 
 ### HTTPS {#https}
 
@@ -304,7 +318,7 @@ data:
 
 ## Formati voce registro {#log-formats}
 
-Consulta la sezione Generale [articolo di registrazione](/help/implementing/developing/introduction/logging.md) per il formato di ciascun tipo di registro (registri CDN e registri AEM, compresi Apache/Dispatcher).
+Consulta la sezione Generale [articolo di registrazione](/help/implementing/developing/introduction/logging.md) per il formato di ciascun tipo di registro rispettivo (registri CDN e registri AEM, incluso Apache/Dispatcher).
 
 Poiché i registri provenienti da più programmi e ambienti possono essere inoltrati alla stessa destinazione di registrazione, oltre all’output descritto nell’articolo sulla registrazione, in ogni voce di registro verranno incluse le seguenti proprietà:
 
