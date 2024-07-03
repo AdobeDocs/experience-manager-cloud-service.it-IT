@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
+source-git-commit: f4b2ea5dac880738e6412541f06b85a6a83ccf40
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '752'
 ht-degree: 79%
 
 ---
@@ -52,9 +52,6 @@ Con la versione di attivazione funzioni 2024.6.0 verrà fornito il set di funzio
 * SCRNS-4194: rimuovere la dipendenza dalle API Guava di Google.
 * SCRNS-4360: Pulsante Gestisci pubblicazione e pubblicazione rapida mancante per gli utenti non amministratori nel provider di contenuti per i canali.
 * SCRNS-4323: nasconde/disabilita i lanci da screens.html.
-
-#### Moduli
-
 * FORMS-14844: Forms adattivo consente l’invio di moduli nonostante la verifica reCAPTCHA non riesca.
 * FORMS-14984: Forms con CAPTCHA salta la convalida se &quot;submitMetaData&quot; è assente nei dati inviati.
 * FORMS-14477: le opzioni &quot;È dopo&quot; e &quot;È prima&quot; nell’editor delle regole non funzionano correttamente nella convalida del selettore data.
