@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2377'
 ht-degree: 70%
 
 ---
@@ -61,6 +61,7 @@ Per aggiungere o modificare un ambiente, un utente deve essere membro di **Propr
    * Seleziona un [**tipo di ambiente**.](#environment-types)
       * Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
    * Specifica il **nome** dell’ambiente.
+      * Una volta creato l’ambiente, non è possibile modificarne il nome.
    * Inserisci la **descrizione** dell’ambiente.
    * Se stai aggiungendo un ambiente di **produzione e fase**, è necessario fornire un nome ambiente e una descrizione sia per l’ambiente di produzione che per quello di staging.
    * Seleziona un’**area geografica primaria** dal menu a discesa.
@@ -178,7 +179,7 @@ Dopo l’attivazione puoi pubblicare il contenuto nel servizio di anteprima tram
 >
 >La versione dell’ambiente deve essere AEM `2021.05.5368.20210529T101701Z` o più recente per utilizzare il servizio di anteprima. Assicurati che una pipeline di aggiornamento sia stata eseguita correttamente nell’ambiente in uso, in modo da poter utilizzare il servizio di anteprima.
 
-### Stato di altre aree geografiche di pubblicazione {#additional-region-status}
+### Stato di altre aree geografiche di Publish {#additional-region-status}
 
 Se hai attivato altre aree di pubblicazione, puoi controllarne lo stato da **Ambienti** Card.
 
@@ -203,7 +204,7 @@ In alternativa, è possibile accedere alle stesse informazioni dal **Ambienti** 
 
 In caso di problemi segnalati con altre aree geografiche di pubblicazione:
 
-1. Siate pazienti. Cloud Manager tenta continuamente di recuperare l’area geografica che potrebbe diventare disponibile in qualsiasi momento.
+1. Siate pazienti. Cloud Manager cerca continuamente di recuperare la regione, che può diventare disponibile in qualsiasi momento.
 1. Se il problema persiste dopo diverse ore, puoi rimuovere l’area di pubblicazione aggiuntiva e aggiungerla nuovamente (nella stessa area o in un’altra) per attivare una distribuzione completa.
 
 Il tempo che si attende dal ripristino del sistema prima di intraprendere ulteriori azioni dipende dall&#39;impatto che il guasto di quell&#39;area ha sui sistemi.
