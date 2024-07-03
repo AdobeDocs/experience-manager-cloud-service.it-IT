@@ -7,9 +7,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5143'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -182,8 +182,8 @@ ht-degree: 99%
    + Note sulla versione del connettore avanzato Workfront per Experience Manager{#workfront}
       + [Note aggiornate sulla versione del connettore avanzato Workfront per Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + Note sulla versione per generare varianti {#generate-variations}
-      + [Note sulla versione corrente per Genera varianti](/help/generative-ai/release-notes-generate-variations.md)
-   + Note sulla versione per l’editor universale {#univeral-editor}
+      + [Note sulla versione corrente per generare varianti](/help/generative-ai/release-notes-generate-variations.md)
+   + Note sulla versione per l&#39;editor universale {#univeral-editor}
       + [Note sulla versione corrente per l’editor universale](/help/release-notes/universal-editor/current.md)
    + [Novità?](/help/release-notes/what-is-new.md)
    + [Modifiche di rilievo in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
@@ -593,7 +593,7 @@ ht-degree: 99%
       + [Gestire i tag](/help/assets/tagging-management-assets-view.md)
       + [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
-   + Content Hub {#content-hub}
+   + Hub di contenuti {#content-hub}
       + [Panoramica](/help/assets/product-overview.md)
       + [Distribuire l’hub di contenuti](/help/assets/deploy-content-hub.md)
       + [Configurare l’interfaccia utente dell’hub di contenuti](/help/assets/configure-content-hub-ui-options.md)
