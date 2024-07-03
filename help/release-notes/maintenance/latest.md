@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f4b2ea5dac880738e6412541f06b85a6a83ccf40
+source-git-commit: 9303ecadea38d83bd71ed0d440067bae5c419940
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 79%
+source-wordcount: '944'
+ht-degree: 20%
 
 ---
 
@@ -15,79 +15,94 @@ ht-degree: 79%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 16799 {#release-16799}
+## Versione 16971 {#release-16971}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 16799, rilasciata pubblicamente il 18 giugno 2024. La versione di manutenzione precedente era 16544.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 16971, rilasciata pubblicamente l’giovedì 3 luglio 2024. La versione di manutenzione precedente era 16799.
 
-Con la versione di attivazione funzioni 2024.6.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Con la versione di attivazione funzioni 2024.7.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Miglioramenti {#enhancements-16799}
+### Miglioramenti {#enhancements-16971}
 
-* ASSETS-31977: ottimizzazione delle operazioni di spostamento, copia ed eliminazione delle risorse.
-* ASSETS-33618: trascrizione automatica e funzionalità di traduzione per video in Dynamic Media.
-* ASSETS-35185: azione di approvazione per ContentHub e DM e aggiunta di proprietà alle proprietà damAssetLucene.
-* ASSETS-35533: aggiunta di proprietà DRM e CAI all’indice damAssetLucene.
-* ASSETS-37280: gestione dei processi sequenziali per la traduzione quando il sottotitolo sorgente (vtt) è ancora in elaborazione.
-* ASSETS-37559: è stato migliorato l’evento risorsa eliminata.
-* ASSETS-37723: è stato implementato l’evento risorsa pubblicata.
-* ASSETS-37724: è stato implementato l’evento annullamento pubblicazione della risorsa.
-* ASSETS-38614: miglioramenti all’interfaccia utente Condividi collegamento.
-* ASSETS-39601: viene applicato automaticamente il regex di convalida al nome della Live Copy della risorsa.
-* ASSETS-39454: aggiornamento a viewers 2024.5.0 in Quickstart.
-* CNTBF-184: percorsi di supporto sotto `/conf` nel ritorno di contenuto.
+* SITES-22948: rimuovi i riferimenti commerce nel contenuto di base per AEM CS.
+* SITES-22141: [Frammenti di contenuto] SegmentNotFoundException da CFM ModelChangeRepositoryImpl dopo OnRC.
+* SITES-21893: Problema di ritaglio immagine nell’istanza di authoring.
+* SITES-21788: [Frammenti di contenuto] Visualizzare NOTE nell&#39;editor di modelli CF e CF quando uiSchema è abilitato per il modello.
+* SITES-21688: il rollout di MSM non aggiorna il percorso del frammento di esperienza (XF) sulle pagine Live Copy.
+* SITES-21659: restituisce il nome completo dell’utente che crea, modifica o replica una risorsa modello.
+* SITES-21609: Endpoint OpenAPI per migrare frammenti di contenuto da un modello all’altro.
+* SITES-21598: [Apri API] Crea CFM: errore restituito se il percorso di configurazione specificato non esiste.
+* SITES-21491: [Apri API] L’endpoint CF PATCH deve rispettare le relazioni live a livello di campo.
+* SITES-21434: [Apri API] L’endpoint del GET CF deve rispettare le relazioni live a livello di campo.
+* SITES-21415: CF Editor - supporta riferimenti UUID.
+* SITES-21326: [Apri API] Fornisci informazioni sulla presenza di riferimenti per un frammento di contenuto.
+* SITES-21310: [Apri API] Aggiungi l’ID del frammento di contenuto nella risposta API per le traduzioni.
+* SITES-20859: CF Open API - Restituisce i riferimenti durante il recupero di un frammento in base al percorso.
+* SITES-20687: [Apri API] Endpoint per il recupero dello stato di elaborazione batch.
+* SITES-20657: [Apri API] Fornisci l’opzione per match parola intera quando sostituisci una stringa utilizzando `FindAndReplace` endpoint.
+* SITES-20587: [Apri API] Crea `COPY` endpoint per frammenti di contenuto.
+* SITES-20584: [Apri API] Ottimizza il recupero dei riferimenti.
+* SITES-20308: [Apri API] Abilita l’elaborazione batch nell’API.
+* SITES-19976: [Apri API] Schema generico dell’interfaccia utente per i campi condizionali.
+* SITES-19556: [Frammenti di contenuto] Aggiorna uiSchema se esiste quando il modello viene modificato.
+* SITES-18056: [Apri API] Quando pubblichi un frammento di contenuto in Anteprima, includi i riferimenti.
+* SITES-16898: [Schema] Endpoint OpenAPI per migrare i frammenti di contenuto da un modello all’altro.
+* SITES-16609: Endpoint elenco lanci.
+* SITES-16606: Creare un endpoint per Launch.
+* SITES-21617: [Xwalk] Rendi modificabili le proprietà o i metadati della pagina in UE.
+* SITES-19614: [Xwalk] Paginazione dell’editor di fogli di calcolo e scorrimento infinito.
+* SITES-22163: [Xwalk] È stato migliorato il supporto per i contenuti distribuiti dal livello di pubblicazione per Edge Delivery Sites.
+* SITES-22109: [Xwalk] È stata migliorata la gestione del post-elaborazione del markup richtext.
+* SITES-22035: [Xwalk] Gestione migliorata di MSM e Launches.
+* SITES-21839: [Xwalk] Mappatura del percorso e bonifica migliorate per i contenuti non gestiti da Edge Delivery.
 
-### Problemi risolti {#fixed-issues-16799}
+### Problemi risolti {#fixed-issues-16971}
 
-* ASSETS-37335: la Modifica del Pannello di ricerca nel filtro deseleziona tutte le caselle.
-* ASSETS-38069: problema di anteprima del PDF DAM di AEM nella selezione del filtro della timeline.
-* ASSETS-38215: il pulsante della licenza di Adobe Stock è disabilitato in AEM as a Cloud Service per l’abbonamento Enterprise.
-* ASSETS-38578: collegamenti ipertestuali errati nel rapporto Condivisione collegamenti risorse.
-* ASSETS-38678: impostazioni di visualizzazione non funzionanti in Dettagli raccolta.
-* ASSETS-39071: la consegna ottimizzata per il web può generare un’eccezione se il tipo mime della rappresentazione originale è nullo.
-* ASSETS-39316: l’ordinamento per nome non funziona nelle raccolte.
-* ASSETS-39377: l’importazione in blocco da OneDrive potrebbe non riuscire quando si riceve backpressure dall’API remota.
-* ASSETS-39428: problemi di rendering nell’interfaccia utente per la gestione dei copyright.
-* CQ-4357150: Guava nel bundle cq-content-sync.
-* GRANITE-52573: le richieste contenenti una doppia barra `//` vengono rifiutate con il codice di stato 400.
-* SCRNS-4194: rimuovere la dipendenza dalle API Guava di Google.
-* SCRNS-4360: Pulsante Gestisci pubblicazione e pubblicazione rapida mancante per gli utenti non amministratori nel provider di contenuti per i canali.
-* SCRNS-4323: nasconde/disabilita i lanci da screens.html.
+* CQ-4356898: [Traduzione] Errore outOfMemory per CF che contiene un numero insolitamente elevato di collegamenti.
+* CQ-4357055: [Traduzione] La traduzione automatica non funziona con l’API REST.
+* CQ-4353931: [Traduzione] Aggiungi jcr:uuid nella pagina sorgente di traduzione/xf/risorsa quando manca.
+* CQ-4357591: [Traduzione] Modifica il flusso di lavoro &quot;Associa JCR:UUID&quot; in modo che funzioni per Pages/XF.
 * FORMS-14844: Forms adattivo consente l’invio di moduli nonostante la verifica reCAPTCHA non riesca.
 * FORMS-14984: Forms con CAPTCHA salta la convalida se &quot;submitMetaData&quot; è assente nei dati inviati.
 * FORMS-14477: le opzioni &quot;È dopo&quot; e &quot;È prima&quot; nell’editor delle regole non funzionano correttamente nella convalida del selettore data.
 * FORMS-14019: la funzionalità &quot;Invoke Service&quot; dell’editor di regole non funziona in Universal Editor.
 * FORMS-14336: quando non è selezionato alcun campo modulo, l’editor deve aprirsi con lo stato attivo sull’intero elemento modulo.
-* FORMS-15061: il cerchio del caricatore persiste a tempo indefinito quando si utilizza l’opzione richiama servizio nell’editor di regole.
+* FORMS-15061: il cerchio del caricatore persiste a tempo indefinito quando si utilizza l’opzione richiama il servizio nell’editor di regole.
+* SITES-22457: la promozione di un lancio non profondo non comporta l’aggiornamento del contenuto sorgente.
+* SITES-22748: [Frammenti di contenuto] Migliorare la gestione degli errori per il processo di aggiornamento dei frammenti di contenuto
+* SITES-22349: [Frammenti di contenuto] Impossibile modificare ContentType per elementi cf multilinea vuoti.
+* SITES-22343: [Frammenti di contenuto] Il tipo semantico &quot;enumerazione&quot; è interrotto.
+* SITES-22194: dopo aver impostato il reindirizzamento, model.json non funziona più.
+* SITES-21953: [Apri API] Etag viene modificato in base all&#39;ordine di validationStatus.
+* SITES-21894: [Apri API] Miglioramento della convalida del percorso padre durante la creazione di CF.
+* SITES-21887: [Apri API] ETag non valido restituito dall&#39;endpoint delle varianti POST.
+* SITES-21657: [Apri API] Migliora la convalida della proprietà Percorso di ricerca CF.
+* SITES-21949: Il cursore non valido nelle API di ricerca restituisce 500.
+* SITES-20927: quando la query non è presente, le API di ricerca restituiscono il valore 500.
+* SITES-20544: [Apri API] Modifica la generazione dei nomi dei pacchetti di pubblicazione per evitare conflitti oak.
+* SITES-19710: CVE-2022-47937 - Rimuovi tutti gli utilizzi di org.apache.sling.commons.json dall’Editor pagina.
+* SITES-11992: [Accessibilità] Il pulsante di selezione del campione dell’annotazione non contiene un nome accessibile.
+* SITES-10979: [Accessibilità] Etichetta non permanente.
+* SITES-10962: [Accessibilità] Pulsante: il pulsante non ha un ruolo.
+* SITES-10905: [Accessibilità] Lo stato del componente attivo non dispone di un rapporto di contrasto da 3 a 1.
+* SITES-2974:  [Accessibilità] - Scorrimento orizzontale a una larghezza di 320 px.
+* SITES-22026: Impossibile spostare frammenti di esperienza tra cartelle in AEM
+* SITES-22106: Problema relativo alla funzionalità di cambio lingua nel nuovo editor di frammenti di contenuto
+* SITES-21980: gestione incoerente per i tipi di riferimento basati su UUID.
+* SITES-7257: NPE in ThumbnailServlet.
 
-### Problemi noti {#known-issues-16799}
+### Problemi noti {#known-issues-16971}
 
->[!NOTE]
-> Il team dei tecnici AEM ha identificato una regressione della funzionalità Lanci che influisce sulle versioni di AEM correnti a partire dalla 16461. A causa di questa regressione, i nuovi lanci (creati dopo l’applicazione di nuove versioni) che includono pagine non profonde non verranno promossi correttamente a causa di configurazioni mancanti.
-> Se i tuoi ambienti sono interessati da questo problema, puoi richiedere all’Assistenza clienti di fornirti uno script shell per identificare e aggiornare le configurazioni mancanti (riferimento interno SITES-22457).
-> Sarà resa disponibile una correzione a lungo termine che garantirà la creazione di nuovi lanci con tutte le configurazioni corrette. Fino ad allora, è disponibile su richiesta anche una versione patch interna.
+Nessuno.
 
-#### Moduli
-
-* Quando installi l’SDK per AEM e aggiungi `AEM Forms add-on v2024.05.04.00-240400`, il servizio Docker non si avvia. Il servizio docker è necessario per generare un documento di record in un ambiente di sviluppo locale. Per risolvere il problema:
-   1. Scarica il file [hotfix](/help/forms/assets/sdk_hotfix.zip). Quando scarichi l’hotfix, viene visualizzato un messaggio `.zip` viene scaricata.
-   1. Estrai l’hotfix scaricato in una cartella.
-   1. Sostituisci la cartella `sdk.sh` e `sdk.bat` file con file più recenti nella cartella estratti nel passaggio 2.
-
-### Notifica di modifica {#change-notice-16799}
-
-* Questa versione contiene le seguenti nuove versioni dell’indice del prodotto:
-   * **damAssetLucene-11**
-   * **fragments-11**
-
-  Eventuali versioni personalizzate delle precedenti versioni dell’indice verranno unite automaticamente alla nuova versione dell’indice del prodotto. Dovrai applicare ulteriori aggiornamenti personalizzati alla versione unita.
+### Notifica di modifica {#change-notice-16971}
 
 * A partire da settembre 2024, AEM as a Cloud Service disabiliterà la serializzazione dei Risolutori risorse tramite il framework Sling Model Exporter. Per ulteriori dettagli, consulta la [documentazione](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md).
 
-### Funzioni e API obsolete {#deprecated-16799}
+### Funzioni e API obsolete {#deprecated-16971}
 
 Per sapere cosa è obsoleto o è stato rimosso in AEM as a Cloud Service, consulta [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
-### Tecnologie incorporate {#embedded-tech-16799}
+### Tecnologie incorporate {#embedded-tech-16971}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
