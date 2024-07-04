@@ -1,12 +1,12 @@
 ---
-title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione corrente di [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 1566963898fb7f6999e3fad796b938128521bcce
 workflow-type: tm+mt
 source-wordcount: '1957'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.6.0) è il venerdì 27 giugno 2024. La successiva versione funzionale (2024.7.0) è pianificata per il venerdì 25 luglio 2024.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.6.0) è il 27 giugno 2024. La prossima versione funzionale (2024.7.0) è pianificata per il 25 luglio 2024.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -44,9 +44,9 @@ Have a look at the June 2024 Release Overview video for a summary of the feature
 
 ### Nuova funzione in Experience Manager Sites {#new-feature-sites}
 
-**Servizio dati di Real Use Monitoring (RUM)** {#real-use-monitoring}
+**Servizio dati del Monitoraggio dell’uso reale (RUM)** {#real-use-monitoring}
 
-Il [Servizio dati di Real Use Monitoring (RUM)](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) è ora generalmente disponibile, abilitando la raccolta dati lato client per AEM as a Cloud Service. Questo servizio fornisce un riflesso più accurato delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web. Offre ai clienti informazioni avanzate sul traffico e sulle prestazioni delle pagine, presentando un’opportunità preziosa per comprendere e migliorare le prestazioni delle pagine.
+Il [servizio dati del Monitoraggio dell’uso reale (RUM)](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) è ora disponibile e consente la raccolta di dati lato client per AEM as a Cloud Service. Il servizio offre una panoramica più precisa delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web. Offre ai clienti informazioni avanzate sul traffico e sulle prestazioni della pagina, presentando un’opportunità preziosa per comprenderne e migliorarne le prestazioni.
 
 ### Programma per i primi utilizzatori {#sites-early-adopter}
 
@@ -68,26 +68,26 @@ Ti interessa provare questa funzione e condividere con noi un tuo feedback? Per 
 
 
 
-**Content Hub**
+**Hub di contenuti**
 
-Content Hub è disponibile come parte di Experience Manager Assets as a Cloud Service per la democratizzazione dell’accesso ai contenuti sul marchio per le organizzazioni e i loro partner commerciali. Con Content Hub, puoi trovare e distribuire facilmente le risorse, riutilizzare e creare nuove varianti di marchio e accelerare l’attivazione su larga scala.
+L’hub di contenuti è disponibile come parte di Experience Manager Assets as a Cloud Service per rendere accessibili i contenuti in linea con il marchio alle organizzazioni e ai loro partner commerciali. Con Content Hub, puoi trovare e distribuire facilmente le risorse, riutilizzare e creare nuove varianti in linea con il marchio e accelerare l’attivazione su larga scala.
 
-![Interfaccia utente di Content Hub](/help/release-notes/assets/content-hub-ui.png)
+![Configurare l’interfaccia utente dell’hub di contenuti](/help/release-notes/assets/content-hub-ui.png)
 
-**Dynamic Medie con funzionalità OpenAPI**
+**Dynamic Media con funzionalità OpenAPI**
 
-Dynamic Medie con funzionalità OpenAPI estende il DAM a tutte le applicazioni Adobe e di terze parti, consentendo l’accesso alle risorse digitali approvate dal marchio, in qualsiasi canale, tramite Asset Selector o stack OpenAPI. Principi chiave: nessuna copia binaria, le risorse vengono ottimizzate e trasformate al limite per prestazioni veloci, fornire risorse pubbliche o sicure.
+Dynamic Media con funzionalità OpenAPI estende il DAM a tutte le applicazioni Adobe e di terze parti, consentendo l’accesso alle risorse digitali approvate in linea con il marchio, in qualsiasi canale, tramite il selettore risorse o lo stack OpenAPI. Principi chiave: nessuna copia binaria, le risorse vengono ottimizzate e trasformate al limite per prestazioni veloci, fornire risorse pubbliche o sicure.
 
-![Nuovo diagramma di flusso dei dati di Dynamic Medie](/help/assets/assets/dm-openapi-dfd.png)
+![Nuovo diagramma di flusso dei dati di Dynamic Media](/help/assets/assets/dm-openapi-dfd.png)
 
 
 ### Nuove funzioni nella Vista risorse {#assets-view-new-features}
 
-**Sono disponibili altre opzioni nella dashboard Approfondimenti di Assets**
+**Sono disponibili altre opzioni nella dashboard di approfondimenti sulle risorse**
 
-Il conteggio delle risorse per tipo e dimensione di risorsa è ora disponibile nella dashboard di Assets Insights. Queste opzioni forniscono dati in tempo reale nell’ambiente di visualizzazione Assets. Descrivono in dettaglio il conteggio e la percentuale delle risorse per intervallo di dimensioni e tipo di risorsa.
+Il conteggio delle risorse per tipo e dimensione di risorsa è ora disponibile nella dashboard di approfondimenti sulle risorse. Queste opzioni forniscono dati in tempo reale nell’ambiente di vista Assets. Descrivono in dettaglio il conteggio e la percentuale delle risorse per intervallo di dimensioni e tipo di risorsa.
 
-**Aggiornamenti all’editor di Adobi Express incorporato**
+**Aggiornamenti all’editor di Adobe Express incorporato**
 
 * È stata migliorata l’esperienza dell’utente per salvare come nuova risorsa anziché come nuova versione.
 
@@ -118,21 +118,21 @@ When looking at the asset details, any image with content credentials added, suc
 
 ### Nuove funzioni in AEM Forms {#forms-new-prerelease-features}
 
-#### Editor di regole visive ottimizzato per moduli adattivi basati su componenti core
+#### Editor di regole visivo ottimizzato per moduli adattivi basati su componenti core
 
-Questa versione apporta un aggiornamento significativo all’Editor di regole visive per i moduli adattivi basati su componenti core. Ora puoi:
+Questa versione apporta un aggiornamento significativo all’editor di regole visivo per i moduli adattivi basati su componenti core. Ora puoi:
 
-* Creare regole nell’Editor di regole visive per [ignora i messaggi di esito positivo/negativo predefiniti per l’invio del modulo](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
+* Creare regole nell’editor di regole visive per [sovrascrivere i messaggi di esito positivo/negativo predefiniti per l’invio del modulo](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
 * Nell’editor di regole dei moduli adattivi, è stata aggiunta la possibilità di [selezionare diversi tipi di campi per l’operazione WHEN](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
 * Un autore di moduli ora può applicare funzioni personalizzate alla [preelaborazione dei dati prima dell’invio](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server).
 
-* Utilizza la funzionalità [**Salva come bozza**](/help/forms/save-core-component-based-form-as-draft.md) per salvare moduli parzialmente completati da inviare successivamente. Questa funzionalità è utile negli scenari in cui gli utenti devono interrompere la compilazione di un modulo e ritornare in seguito.
+* Utilizza la funzionalità [**Salva come bozza**](/help/forms/save-core-component-based-form-as-draft.md) per salvare moduli parzialmente completati da inviare successivamente. Ciò è utile negli scenari in cui gli utenti devono interrompere la compilazione di un modulo e completarlo in seguito.
 
 ### Funzionalità per Accesso anticipato ad AEM Forms {#forms-new-early-access-features}
 
-Il programma AEM Forms Early Access Program offre l’opportunità unica di accedere in esclusiva alle innovazioni all’avanguardia prima di chiunque altro, e di aiutarti a modellarne lo sviluppo. Il programma offre l’accesso a molteplici innovazioni.
+Il programma di accesso anticipato per AEM Forms offre un’opportunità unica per ottenere l’accesso esclusivo a innovazioni all’avanguardia prima di chiunque altro e contribuire a definirne lo sviluppo. Il programma offre l’accesso a molteplici innovazioni.
 
 In queste note sulla versione sono elencate le innovazioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma per l’accesso anticipato, consulta la [Documentazione del programma per l’accesso anticipato ad AEM Forms](/help/forms/early-access-ea-features.md).
 
@@ -140,79 +140,79 @@ In queste note sulla versione sono elencate le innovazioni incluse nella version
 
 AEM Forms ha migliorato le sue funzioni di sicurezza aggiungendo il supporto per due soluzioni CAPTCHA popolari: Cloudflare Turnstile e hCaptcha. Questa funzionalità integra il Google reCAPTCHA esistente e offre agli utenti opzioni aggiuntive. Migliora la flessibilità nella protezione dei loro moduli da bot e invii di spam.
 
-* **Tornello Cloudflare**: questo CAPTCHA senza attriti verifica gli utenti tramite una semplice sfida che non richiede un’interazione esplicita. Si integra perfettamente nei moduli, migliorando l’esperienza utente.
+* **Cloudflare Turnstile**: questo CAPTCHA intuitivo verifica gli utenti attraverso una semplice sfida che non richiede un’interazione esplicita. Si integra perfettamente nei moduli, migliorando l’esperienza utente.
 * **hCaptcha**: CAPTCHA incentrato sulla privacy che offre un’alternativa di facile utilizzo con particolare attenzione alla privacy dei dati. Mira a trovare un equilibrio tra sicurezza ed esperienza dell’utente.
 * **Google reCAPTCHA**: AEM Forms continua a supportare sia reCAPTCHA v2 che reCAPTCHA Enterprise, offrendo una soluzione affidabile e consolidata.
 
 Offrendo più opzioni CAPTCHA, AEM Forms ti consente di selezionare la soluzione più adatta alle tue esigenze specifiche.
 
-Sei pronto a integrare una di queste soluzioni CAPTCHA con il tuo Forms adattivo? La documentazione di Adobe fornisce istruzioni dettagliate per ciascuno di essi: [Tornello Cloudflare](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), e [Google reCAPTCHA](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Sei pronto a integrare una di queste soluzioni CAPTCHA con i moduli adattivi? La documentazione Adobe fornisce istruzioni dettagliate per: [Cloudflare Turnstile](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Servizio Forms
 
 Il servizio Forms genera moduli PDF interattivi per l’acquisizione dei dati. Può essere utilizzato anche per importare o esportare dati da e verso un modulo interattivo PDF esistente e convalidare i dati inviati. Ecco una suddivisione delle sue funzionalità:
 
-* **Rendering di moduli**: genera un modulo PDF interattivo da un modello creato con AEM Forms Designer e, facoltativamente, da dati XML. Questa funzionalità genera un modulo compilabile di PDF, facoltativamente precompilato con i dati.
+* **Rendering di moduli**: genera un modulo PDF interattivo da un modello creato con AEM Forms Designer e, facoltativamente, da dati XML. Questa funzionalità produce un modulo PDF compilabile, facoltativamente precompilato con i dati.
 * **Estrazione e importazione dei dati**: importa i dati in un modulo PDF esistente ed estrae i dati da un modulo PDF compilato. Sono supportati sia i formati di dati XDP che XML e l’importazione in moduli PDF non XFA (noti anche come AcroForms); supporta anche i dati FDF e XFDF.
 * **Convalida dei dati**: convalida dei dati inviati, in formato XDP o XML, in base a un modello creato utilizzando AEM Forms Designer.
 
 >[!IMPORTANT]
 >
-> Se ti interessa partecipare al programma di accesso anticipato di Adobe per qualsiasi innovazione di accesso anticipato, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) per richiedere l&#39;accesso. Puoi richiedere l’accesso a tutte le innovazioni o solo a qualcuna.
+> Se ti interessa partecipare al programma di accesso anticipato di Adobe per qualsiasi innovazione, invia un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). Puoi richiedere l’accesso a tutte le innovazioni o solo a qualcuna.
 
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
-### Notifiche del Centro per le azioni relative allo stato dei contenuti - Programma di adozione anticipata {#actions-center-notifications}
+### Programma per i primi utilizzatori per le notifiche del centro per le azioni relative all’integrità dei contenuti {#actions-center-notifications}
 
-[Centro azioni](/help/operations/actions-center.md) invia notifiche e-mail quando si verificano incidenti importanti o se si nota qualcosa sul codice o sulla configurazione, in cui è necessario intervenire in modo proattivo. Adobe ha ora introdotto diversi nuovi tipi di notifiche associate all’integrità dei contenuti. Questa funzione è disponibile tramite un programma per i primi utenti. Per partecipare, contatta l’Assistenza clienti Adobe.
+Il [Centro azioni](/help/operations/actions-center.md) invia notifiche e-mail quando si verificano problemi importanti, o se viene notato qualcosa in merito al codice o alla configurazione in cui dovresti intervenire in modo proattivo. Adobe ha ora introdotto diversi nuovi tipi di notifiche associate all’integrità dei contenuti. Questa funzione è disponibile tramite un programma per i primi utilizzatori. Per partecipare, contatta l’Assistenza clienti Adobe.
 
 #### Le pagine contengono un numero elevato di nodi {#page-nodes}
 
 Un numero elevato di nodi può ridurre le prestazioni di rendering e i tempi di caricamento delle pagine. Ricevi una notifica proattiva tramite il Centro azioni quando viene rilevato un numero elevato di nodi in una pagina, consentendo di adottare le misure necessarie per ridurre il numero totale di nodi all’interno di una pagina.
 
-#### Numero elevato di istanze del flusso di lavoro in esecuzione {#running-workflows}
+#### Numero elevato di istanze di flusso di lavoro in esecuzione {#running-workflows}
 
 Le prestazioni del motore del flusso di lavoro sono interessate quando nell’ambiente di authoring è presente un numero elevato di flussi di lavoro in esecuzione. Ricevi una notifica proattiva tramite il Centro azioni quando viene rilevato un numero elevato di istanze di flusso di lavoro in esecuzione. Questo processo consente di configurare un processo di eliminazione per interrompere flussi di lavoro in esecuzione non necessari.
 
 #### Utenti aggiunti direttamente ai gruppi personalizzati {#users-customgroups}
 
-Ricevi una notifica proattiva tramite il Centro azioni quando gli utenti vengono aggiunti direttamente ai gruppi personalizzati. Questo processo ti consente di seguire le best practice IMS aggiungendo utenti ai gruppi IMS rilevanti e includendo quindi tali gruppi IMS come membri dei gruppi AEM.
+Ricevi una notifica proattiva tramite il Centro azioni quando gli utenti vengono aggiunti direttamente ai gruppi personalizzati. Questo processo consente di seguire le best practice IMS aggiungendo utenti ai gruppi IMS rilevanti e includendo quindi tali gruppi IMS come membri dei gruppi AEM.
 
 #### Contenuto JCR mancante {#jcr-content}
 
-Centro azioni invia una notifica proattiva quando viene rilevato un contenuto JCR mancante. Questo approccio consente di aggiungere i contenuti mancanti e di evitare l’errore di alcune funzioni di AEM Assets.
+Il Centro azioni invia una notifica proattiva quando viene rilevato un contenuto JCR mancante. Questo approccio consente di aggiungere i contenuti mancanti e di evitare l’errore di alcune funzioni di AEM Assets.
 
 #### Flussi di lavoro completati non eliminati {#workflows}
 
-Centro azioni notifica in modo proattivo quando i flussi di lavoro completati oltre i 90 giorni non sono stati eliminati. Questo approccio consente di migliorare le prestazioni del motore del flusso di lavoro riducendo il numero di istanze del flusso di lavoro.
+Il Centro azioni notifica in modo proattivo quando i flussi di lavoro completati oltre i 90 giorni non sono stati eliminati. Questo approccio consente di migliorare le prestazioni del motore del flusso di lavoro riducendo il numero di istanze del flusso di lavoro.
 
 #### Risorsa Sling mancante {#sling-resource}
 
-Centro azioni invia una notifica proattiva quando viene rilevata una risorsa Sling mancante. Questo approccio consente di aggiungere la risorsa mancante e di evitare l’errore di alcune funzioni di AEM Assets.
+Il Centro azioni invia una notifica proattiva quando viene rilevata una risorsa Sling mancante. Questo approccio consente di aggiungere la risorsa mancante e di evitare l’errore di alcune funzioni di AEM Assets.
 
-### Programmi di adozione anticipata relativi alla distribuzione dei contenuti {#foundation-early-adopter}
+### Programmi per i primi utilizzatori relativi alla distribuzione dei contenuti {#foundation-early-adopter}
 
 Invia un’e-mail all’indirizzo **<aemcs-cdn-config-adopter@adobe.com>**, indicando quali dei programmi per i primi utilizzatori seguenti ti interessa.
 
-#### Autenticazione di base alla rete CDN (Early Adopter Program) {#basicauth-cdn}
+#### Autenticazione di base alla rete CDN (Programma per i primi utilizzatori) {#basicauth-cdn}
 
-Protect alcune risorse di contenuto visualizzando una finestra di dialogo di autenticazione di base che richiede un nome utente e una password. Questa funzione è destinata principalmente a casi di utilizzo di autenticazione leggera, come la revisione dei contenuti da parte di soggetti aziendali interessati, anziché fungere da soluzione completa per i diritti di accesso degli utenti finali. L’elenco di nome utente e password in gestito tramite un file di configurazione in Git distribuito tramite la pipeline di configurazione, con riferimento alle variabili di ambiente Cloud Manager di tipo segreto. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Proteggi alcune risorse di contenuto visualizzando una finestra di dialogo di autenticazione di base che richiede un nome utente e una password. Questa funzione è destinata principalmente a casi d’uso di autenticazione leggera, come la revisione dei contenuti da parte delle parti aziendali interessate, anziché fungere da soluzione completa per i diritti di accesso degli utenti finali. L’elenco di nome utente e password in gestito tramite un file di configurazione in Git distribuito tramite la pipeline di configurazione, con riferimento alle variabili di ambiente Cloud Manager di tipo segreto. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-#### Eliminare i contenuti dalla rete CDN con una chiave API self-service (programma di adozione anticipata) {#purge-cdn}
+#### Eliminare i contenuti dalla rete CDN con una chiave API self-service (Programma per i primi utilizzatori) {#purge-cdn}
 
 Registrare una chiave API di eliminazione CDN in modo self-service e utilizzarla per annullare la validità del contenuto sulla CDN, a livello globale o per una o più risorse. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-cache-purge.md).
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Creazione self-service di X-AEM-Edge-Key per rete CDN gestita dal cliente (BYOCDN) (programma di adozione anticipata) {#byocdn-keys}
+#### Creazione self-service di X-AEM-Edge-Key per rete CDN gestita dalla clientela (BYOCDN) (Programma per i primi utilizzatori) {#byocdn-keys}
 
-In precedenza, era necessario un ticket di supporto per generare la chiave X-AEM-Edge-Key necessaria per la configurazione di una rete CDN gestita dalla clientela. Questo risultato può ora essere ottenuto in modo autonomo tramite un file di configurazione distribuito utilizzando la pipeline di configurazione, rimuovendo eventuali ritardi nell’onboarding di un nuovo ambiente. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+In precedenza, era necessario un ticket di supporto per generare la chiave X-AEM-Edge-Key necessaria per la configurazione di una rete CDN gestita dalla clientela. Ora è possibile eseguire questa operazione in modo autonomo tramite un file di configurazione distribuito utilizzando la pipeline di configurazione, rimuovendo eventuali ritardi nell’onboarding di un nuovo ambiente. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Reindirizzamenti Lato Client (Programma Early Adopter) {#client-side-redirects-early-adopter}
+#### Reindirizzamento lato client (programma per i primi utilizzatori) {#client-side-redirects-early-adopter}
 
 Configura i reindirizzamenti lato client 301/302 nel controllo del codice sorgente e distribuiscili alla rete CDN. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Attenzione: sono già disponibili diverse altre funzioni correlate a [Configurazione CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), comprese le trasformazioni di richiesta e risposta e il routing del traffico verso siti esterni ad AEM.
 
@@ -220,11 +220,11 @@ Configura i reindirizzamenti lato client 301/302 nel controllo del codice sorgen
 
 Le [Regole del filtro del traffico](/help/security/traffic-filter-rules-including-waf.md) rilasciate di recente, che includono le regole WAF (Web Application Firewall) con licenza facoltativa a parte, permettono di configurare il traffico da consentire o bloccare.
 
-Ora puoi inviare un’e-mail per partecipare al programma per i primi utilizzatori in modo da poter ricevere un avviso ogni volta che vengono attivate le tue regole del filtro del traffico. Le notifiche e-mail del Centro Azioni ti mantengono informato quando si verificano determinate condizioni del traffico, in modo da poter adottare le misure appropriate.
+Ora puoi inviare un’e-mail per partecipare al programma per i primi utilizzatori in modo da poter ricevere un avviso ogni volta che vengono attivate le tue regole del filtro del traffico. Le notifiche e-mail del Centro azioni ti informeranno quando si verificano determinate condizioni di traffico, in modo che tu possa adottare le misure appropriate.
 
-#### Gli utenti aziendali possono dichiarare i reindirizzamenti al di fuori di Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
+#### Gli utenti aziendali possono dichiarare i reindirizzamenti al di fuori di Git (programma per i primi utilizzatori) {#apache-rewritemaps-early-adopter}
 
-Simile a AEM 6.5, Apache/Dispatcher acquisisce le mappe di riscrittura posizionate in una posizione specifica nell’archivio di pubblicazione e le carica, senza richiedere l’esecuzione di una pipeline a livello web. Questo approccio consente agli utenti aziendali di dichiarare i reindirizzamenti utilizzando un foglio di calcolo o un’interfaccia utente, come ACS Commons Redirect Map Manager o un’applicazione personalizzata. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+In modo simile ad AEM 6.5, Apache/dispatcher acquisisce le mappe di riscrittura che si trovano in una posizione specifica nell’archivio di pubblicazione e le carica, senza richiedere l’esecuzione di una pipeline a livello web. Questo approccio consente agli utenti aziendali di dichiarare i reindirizzamenti utilizzando un foglio di calcolo o un’interfaccia utente, come ACS Commons Redirect Map Manager o un’applicazione personalizzata. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
 #### Edge Side Includes (ESI) per il caricamento di contenuti dinamici (programma per i primi utilizzatori) {#esi-early-adopter}
 
@@ -232,7 +232,7 @@ Adobe Managed CDN ora supporta [Edge Side Includes (ESI)](/help/implementing/dis
 
 ## Guide di [!DNL Experience Manager] {#guides}
 
-L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -244,11 +244,11 @@ L’elenco completo dei rilasci mensili degli strumenti di migrazione è disponi
 
 ## Editor universale {#universal-editor}
 
-L’elenco completo dei rilasci di Universal Editor è disponibile [qui](/help/release-notes/universal-editor/current.md).
+L’elenco completo dei rilasci dell’editor universale è disponibile [qui](/help/release-notes/universal-editor/current.md).
 
 ## Generare varianti {#generate-variations}
 
-È disponibile un elenco completo delle versioni di generazione delle varianti [qui](/help/generative-ai/release-notes-generate-variations.md).
+L’elenco completo dei rilasci di generare varianti è disponibile [qui](/help/generative-ai/release-notes-generate-variations.md).
 
 ## Note sulla versione di Experience Cloud {#experience-cloud}
 
