@@ -4,9 +4,9 @@ description: Scopri come utilizzare il monitoraggio dell'uso reale (RUM) per acq
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 9a8adf777008b7a601abc8760cee67ec3c1816c6
+source-git-commit: 8ccef0103ae7fb75171431eeb36f7352f6467d56
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1302'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Con RUM, le metriche chiave delle prestazioni vengono tracciate dall&#39;inizio 
 
 ## Chi può beneficiare di un servizio di monitoraggio dell&#39;utilizzo reale? {#who-can-benefit-from-rum-service}
 
-Il servizio di monitoraggio dell&#39;uso reale è vantaggioso per tutti i clienti. Offre un riflesso rappresentativo delle interazioni utente, garantendo un misurare affidabile del coinvolgimento del sito Web acquisendo il numero di visualizzazioni di pagina lato client.
+Il servizio Real Use Monitoring è vantaggioso per tutti i clienti. Offre un riflesso rappresentativo delle interazioni utente, garantendo un misurare affidabile del coinvolgimento del sito Web acquisendo il numero di visualizzazioni di pagina lato client.
 
 Per tutti i clienti Adobe Systems, questo servizio fornisce preziose informazioni sulle interazioni utente. I clienti che utilizzano la propria CDN possono trarre vantaggio da una reportistica semplificata sulle traffico, poiché ora Adobe Systems integra direttamente il raccolta dei dati, eliminando la necessità di report separati durante i cicli di rinnovo.
 
