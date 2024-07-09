@@ -2,9 +2,9 @@
 title: Distribuisci [!DNL Content Hub]
 description: Scopri come distribuire e attivare Content Hub, fornire accesso agli utenti con diversi tipi di privilegi (caricare risorse, Adobi Express di utenti) e fornire privilegi di amministratore agli utenti.
 role: Admin
-source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,10 @@ Per accedere al portale Content Hub, gli amministratori devono innanzitutto abil
 
 1. Espandi **[!UICONTROL Assets]** e seleziona **[!UICONTROL Content Hub]**.
    ![Seleziona Content Hub in Cloud Manager](assets/edit-program-cloud-manager-content-hub.png)
+
+   >[!NOTE]
+   >
+   >Se **[!UICONTROL Aggiorna]** non è abilitato dopo aver selezionato Content Hub, accertati di aver specificato le impostazioni di pubblicazione per il programma.
 
 1. Fai clic su **[!UICONTROL Aggiorna]**.
 
@@ -111,9 +115,19 @@ Questi utenti possono ora accedere alle risorse disponibili sul portale Content 
 >
 >Puoi utilizzare tutte le funzioni aziendali avanzate, ad esempio la sincronizzazione con provider di identità esterni.
 
-Dopo aver aggiunto gli utenti appropriati utilizzando Admin Console, gli utenti possono accedere a Content Hub utilizzando il seguente collegamento:
+### Come accedere a Content Hub? {#access-content-hub}
 
-`https://experience.adobe.com/#/assets/contenthub`
+È possibile accedere a Content Hub nei modi seguenti:
+
+* Accedi a Content Hub utilizzando il seguente collegamento:
+
+  `https://experience.adobe.com/#/assets/contenthub`
+
+* Accedi a `experience.adobe com` e fai clic su **[!UICONTROL Experience Manager Assets Content Hub]** disponibile in **[!UICONTROL Accesso rapido]** sezione:
+  ![Accesso a Content Hub](assets/access-content-hub.png)
+
+* Accedi a `experience.adobe com` e fai clic su **[!UICONTROL Experience Manager Assets Content Hub]** disponibile nel commutatore del prodotto:
+  ![Metodo di accesso Content Hub 3](assets/access-content-hub-alternate.png)
 
 ### Disattiva le notifiche e-mail agli utenti {#disable-email-notifications}
 
