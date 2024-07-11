@@ -53,7 +53,7 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Tracciamento dei moduli pubblicati"
->abstract="Il grafico fornisce informazioni sul numero di moduli pubblicati correttamente durante specifici periodi di tempo. **Nota:** il grafico fornisce dati specifici per l’istanza di pubblicazione di AEM Forms corrente. Per visualizzare i dati di conversione delle altre istanze, accedi alla dashboard della rispettiva istanza."
+>abstract="Il grafico fornisce informazioni sul numero di moduli pubblicati. **Nota:** il grafico fornisce dati specifici per l’istanza di pubblicazione di AEM Forms corrente. Per visualizzare i dati di conversione delle altre istanze, accedi alla dashboard della rispettiva istanza."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"

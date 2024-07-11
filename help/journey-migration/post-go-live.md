@@ -24,7 +24,7 @@ Questo percorso è l’ultima parte, per consentirti di imparare a monitorare i 
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel passaggio precedente del percorso, hai imparato a eseguire la migrazione e [Go-live](/help/journey-migration/go-live.md) una volta che il codice e il contenuto erano pronti per essere trasferiti all’AEM as a Cloud Service.
+Nel passaggio precedente del percorso, hai imparato a eseguire la migrazione e [Go-live](/help/journey-migration/go-live.md) una volta che il codice e il contenuto erano pronti per essere trasferiti ad AEM as a Cloud Service.
 
 ## Obiettivo {#objective}
 
@@ -36,18 +36,18 @@ Questo documento descrive gli strumenti disponibili per la risoluzione dei probl
 
 ## Console di sviluppo {#developer-console}
 
-Il debug degli ambienti per sviluppatori as a Cloud Service all’AEM è disponibile nella Console per sviluppatori per ambienti di sviluppo, stage e produzione.
+Il debug degli ambienti per sviluppatori di AEM as a Cloud Service è disponibile in Developer Console per gli ambienti di sviluppo, stage e produzione.
 
 Consulta [Implementazione per AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) per ulteriori informazioni sugli strumenti di sviluppo.
 
 ## CRXDE Lite {#crxde-lite}
 
-In qualità di utente, puoi accedere a CRXDE Liti nell’ambiente di sviluppo ma non in quello di stage o produzione.
+In qualità di utente, puoi accedere a CRXDE Lite nell’ambiente di sviluppo ma non in quello di stage o produzione.
 
 >[!IMPORTANT]
 >Scrittura in archivi immutabili come `/libs` e `/apps` in fase di runtime genera errori. Inoltre, non hai accesso agli strumenti per sviluppatori per gli ambienti di staging e produzione.
 
-Consulta [Sviluppo con CRXDE Liti](/help/implementing/developing/tools/crxde.md) per ulteriori informazioni su come sviluppare l’applicazione AEM utilizzando CRXDE Liti.
+Consulta [Sviluppo con CRXDE Lite](/help/implementing/developing/tools/crxde.md) per ulteriori informazioni su come sviluppare l’applicazione AEM utilizzando CRXDE Lite.
 
 ## Gestione dei registri {#managing-logs}
 
@@ -55,7 +55,7 @@ Gli utenti possono accedere a un elenco dei file di registro disponibili per l�
 
 Consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) per scoprire come accedere e gestire i registri tramite l’interfaccia utente o dall’API tramite Cloud Manager.
 
-## Contattare il supporto  {#contacting-support}
+## Contattare il supporto {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
@@ -77,10 +77,10 @@ Condividi questi insegnamenti post-migrazione con le parti interessate e i team 
 
 ## Il percorso è terminato - Davvero? {#journey-ends}
 
-Congratulazioni. Hai completato il Percorso di migrazione as a Cloud Service dell’AEM. Devi sapere come:
+Congratulazioni. Hai completato il Percorso di migrazione AEM as a Cloud Service. Devi sapere come:
 
-* Introduzione al passaggio a AEM as a Cloud Service
-* Determinare se l’implementazione è pronta per essere spostata su AEM as a Cloud Service
+* Introduzione al passaggio ad AEM as a Cloud Service
+* Determinare se l’implementazione è pronta per essere spostata in AEM as a Cloud Service
 * Prepara il codice e il contenuto cloud
 * Eseguire la migrazione
 * Monitora i problemi e migliora le prestazioni

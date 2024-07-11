@@ -30,7 +30,7 @@ Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato co
 >[!NOTE]
 >Scarica lo strumento Content Transfer (Trasferimento contenuti) dal portale di [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html).
 
-## Connettività dell’ambiente di origine {#source-environment-connectivity}
+## Connettività dell’ambiente Source {#source-environment-connectivity}
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Talvolta può essere difficile comprendere i problemi di connessione SSL/TLS. Pe
 >[!NOTE]
 >Questo flag è solo per il debug di problemi SSL. Assicurati che il flag sia disabilitato prima di eseguire l’estrazione, in quanto potrebbe richiedere una grande quantità di spazio su disco. Questo potrebbe potenzialmente riempire la capacità dell’unità e causare un errore nel processo di estrazione.
 
-## Esecuzione dello strumento Content Transfer (Trasferimento contenuti)  {#running-tool}
+## Esecuzione dello strumento Content Transfer (Trasferimento contenuti) {#running-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
@@ -66,7 +66,7 @@ Talvolta può essere difficile comprendere i problemi di connessione SSL/TLS. Pe
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Guarda la dimostrazione"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=it#migration" text="Tutorial - Utilizzo dello strumento Content Transfer"
 
-La sezione seguente si applica alla nuova versione dello strumento Content Transfer (Trasferimento contenuti). Leggi questa sezione per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare i contenuti a AEM as a Cloud Service:
+La sezione seguente si applica alla nuova versione dello strumento Content Transfer (Trasferimento contenuti). Leggi questa sezione per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare i contenuti ad AEM as a Cloud Service:
 
 ### Fase di configurazione dell’estrazione {#extraction-setup-phase}
 
@@ -78,7 +78,7 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
-1. Accedi a Cloud Acceleration Manager (CAM) e fai clic sul progetto CAM creato in precedenza per valutare se sei pronto a passare a AEM as a Cloud Service. Se non avete creato un progetto CAM, consultate Creazione e gestione di un progetto in CAM.
+1. Accedi a Cloud Acceleration Manager (CAM) e fai clic sul progetto CAM creato in precedenza per valutare se sei pronto a passare ad AEM as a Cloud Service. Se non avete creato un progetto CAM, consultate Creazione e gestione di un progetto in CAM.
 
 1. Fai clic su **Trasferimento dei contenuti** per aprire la vista Elenco set di migrazione.
 
@@ -88,7 +88,7 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 
    >[!NOTE]
    >
-   >In Cloud Acceleration Manager è possibile creare fino a 20 set di migrazione per progetto, compresi i set scaduti.
+   >In Cloud Acceleration Manager è possibile creare un massimo di 20 set di migrazione, inclusi i set scaduti.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
@@ -128,7 +128,7 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, installa
 
    >[!NOTE]
    >
-   >Assicurati che la chiave di estrazione sia valida e non vicina alla scadenza. È possibile ottenere queste informazioni in **Crea set di migrazione** dopo aver incollato la chiave di estrazione. Se ricevi un errore di connessione, consulta [Connettività dell’ambiente di origine](#source-environment-connectivity) per ulteriori informazioni.
+   >Assicurati che la chiave di estrazione sia valida e non vicina alla scadenza. È possibile ottenere queste informazioni in **Crea set di migrazione** dopo aver incollato la chiave di estrazione. Se ricevi un errore di connessione, consulta [Connettività dell’ambiente Source](#source-environment-connectivity) per ulteriori informazioni.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
@@ -204,4 +204,4 @@ Per eseguire un controllo delle dimensioni, attenersi alla procedura descritta d
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso come creare un set di migrazione, puoi iniziare a conoscere i processi di estrazione e acquisizione dallo strumento Content Transfer (Trasferimento contenuti). Prima di imparare questi processi, è necessario rivedere [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti su as a Cloud Service AEM.
+Dopo aver appreso come creare un set di migrazione, puoi iniziare a conoscere i processi di estrazione e acquisizione dallo strumento Content Transfer (Trasferimento contenuti). Prima di imparare questi processi, è necessario rivedere [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti in AEM as a Cloud Service.
