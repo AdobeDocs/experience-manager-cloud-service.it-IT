@@ -5,9 +5,9 @@ feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
 source-git-commit: 6ca376bda8055d62e35e13053ff21f861c12b292
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '548'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Questa pagina illustra le note sulla versione 2024.6.0 di Cloud Manager in AEM a
 
 ## Data di pubblicazione {#release-date}
 
-La data di pubblicazione di Cloud Manager versione 2024.6.0 in AEM as a Cloud Service è il 6 giugno 2024. La prossima versione è pianificata per il 18 luglio 2024.
+La data di pubblicazione di Cloud Manager versione 2024.6.0 in AEM as a Cloud Service è il 6 giugno 2024. La prossima versione è prevista per l’18 luglio 2024.
 
 ## Novità {#what-is-new}
 
