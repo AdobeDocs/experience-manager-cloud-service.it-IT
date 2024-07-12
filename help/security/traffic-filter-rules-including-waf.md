@@ -4,10 +4,10 @@ description: Configurazione delle regole del filtro del traffico, incluse le reg
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '3947'
-ht-degree: 100%
+source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
+workflow-type: tm+mt
+source-wordcount: '3938'
+ht-degree: 96%
 
 ---
 
@@ -246,9 +246,9 @@ La priorità delle azioni dipende dal loro tipo; nella tabella seguente, le azio
 
 | **Nome** | **Proprietà consentite** | **Significato** |
 |---|---|---|
-| **allow** | `wafFlags` (facoltativo), `alert` (facoltativo, non ancora rilasciato) | Se non sono presenti proprietà wafFlags, interrompe ulteriori elaborazioni di regole e passa alla risposta. Se sono presenti proprietà wafFlags, disabilita le protezioni WAF specificate e procede all’ulteriore elaborazione delle regole. <br>Se si specifica un avviso, viene inviata una notifica al Centro azioni se la regola viene attivata 10 volte in una finestra temporale di 5 minuti. Questa funzione non è ancora stata rilasciata; consulta la sezione [Avvisi sulle regole del filtro del traffico](#traffic-filter-rules-alerts) per informazioni su come inscriverti al programma per i primi utilizzatori. |
-| **block** | `status, wafFlags` (facoltativo e reciproco esclusivo), `alert` (facoltativo, non ancora rilasciato) | Se non sono presenti proprietà wafFlags, restituisce un errore HTTP ignorando tutte le altre proprietà. Il codice di errore viene definito dalla proprietà dello stato oppure viene impostato sul codice predefinito 406. Se sono presenti proprietà wafFlags, abilita le protezioni WAF specificate e procede all’ulteriore elaborazione delle regole. <br>Se si specifica un avviso, viene inviata una notifica al Centro azioni se la regola viene attivata 10 volte in una finestra temporale di 5 minuti. Questa funzione non è ancora stata rilasciata; consulta la sezione [Avvisi sulle regole del filtro del traffico](#traffic-filter-rules-alerts) per informazioni su come iscriverti al programma per i primi utilizzatori. |
-| **log** | `wafFlags` (facoltativo), `alert` (facoltativo, non ancora rilasciato) | Registra il fatto che la regola è stata attivata, non influisce sull’elaborazione in alcun modo. Eventuali proprietà wafFlags non hanno alcun effetto. <br>Se si specifica un avviso, viene inviata una notifica al Centro azioni se la regola viene attivata 10 volte in una finestra temporale di 5 minuti. Questa funzione non è ancora stata rilasciata; consulta la sezione [Avvisi sulle regole del filtro del traffico](#traffic-filter-rules-alerts) per informazioni su come iscriverti al programma per i primi utilizzatori. |
+| **allow** | `wafFlags` (facoltativo), `alert` (facoltativo) | Se non sono presenti proprietà wafFlags, interrompe ulteriori elaborazioni di regole e passa alla risposta. Se sono presenti proprietà wafFlags, disabilita le protezioni WAF specificate e procede all’ulteriore elaborazione delle regole. <br>Se si specifica un avviso, viene inviata una notifica al Centro azioni se la regola viene attivata 10 volte in una finestra temporale di 5 minuti. Una volta attivato un avviso per una regola particolare, non verrà attivato nuovamente fino al giorno successivo (UTC). |
+| **block** | `status, wafFlags` (facoltativo e reciprocamente esclusivo), `alert` (facoltativo) | Se non sono presenti proprietà wafFlags, restituisce un errore HTTP ignorando tutte le altre proprietà. Il codice di errore viene definito dalla proprietà dello stato oppure viene impostato sul codice predefinito 406. Se sono presenti proprietà wafFlags, abilita le protezioni WAF specificate e procede all’ulteriore elaborazione delle regole. <br>Se si specifica un avviso, viene inviata una notifica al Centro azioni se la regola viene attivata 10 volte in una finestra temporale di 5 minuti. Una volta attivato un avviso per una regola particolare, non verrà attivato nuovamente fino al giorno successivo (UTC). |
+| **log** | `wafFlags` (facoltativo), `alert` (facoltativo) | Registra il fatto che la regola è stata attivata, non influisce sull’elaborazione in alcun modo. Eventuali proprietà wafFlags non hanno alcun effetto. <br>Se si specifica un avviso, viene inviata una notifica al Centro azioni se la regola viene attivata 10 volte in una finestra temporale di 5 minuti. Una volta attivato un avviso per una regola particolare, non verrà attivato nuovamente fino al giorno successivo (UTC). |
 
 ### Elenco contrassegni WAF {#waf-flags-list}
 
@@ -494,16 +494,14 @@ data:
 
 ## Avvisi delle regole del filtro del traffico {#traffic-filter-rules-alerts}
 
->[!NOTE]
->
->Questa funzione non è ancora rilasciata. Per ottenere l’accesso tramite il programma per i primi utilizzatori, invia un’e-mail all’indirizzo **aemcs-waf-adopter@adobe.com**.
+Una regola può essere configurata per inviare una notifica al Centro azioni se viene attivata dieci volte in una finestra temporale di 5 minuti. Una regola di questo tipo avvisa quando si verificano determinati modelli di traffico in modo da poter adottare tutte le misure necessarie. Una volta attivato un avviso per una regola particolare, non verrà attivato nuovamente fino al giorno successivo (UTC).
 
-Una regola può essere configurata per inviare una notifica al Centro azioni se viene attivata dieci volte in una finestra temporale di 5 minuti. Una regola di questo tipo avvisa quando si verificano determinati modelli di traffico in modo da poter adottare tutte le misure necessarie. Ulteriori informazioni sul [Centro azioni](/help/operations/actions-center.md), tra cui come configurare i profili di notifica richiesti per la ricezione di e-mail.
+Ulteriori informazioni sul [Centro azioni](/help/operations/actions-center.md), tra cui come configurare i profili di notifica richiesti per la ricezione di e-mail.
 
 ![Notifica Centro azioni](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
-La proprietà avviso (attualmente con prefisso *sperimentale* poiché la funzione non è ancora stata rilasciata), può essere applicata al nodo dell’azione per tutti i tipi di azione (consenti, blocco, accedi).
+La proprietà alert può essere applicata al nodo dell&#39;azione per tutti i tipi di azione (consenti, blocco, registro).
 
 ```
 kind: "CDN"
@@ -520,7 +518,7 @@ data:
             - { reqProperty: tier, equals: publish }
         action:
           type: block
-          experimental_alert: true
+          alert: true
 ```
 
 ## Avviso predefinito di picco nel traffico all’origine {#traffic-spike-at-origin-alert}
@@ -533,7 +531,7 @@ Una notifica e-mail [Centro azioni](/help/operations/actions-center.md) verrà i
 
 Se questa soglia viene raggiunta, Adobe bloccherà il traffico da tale indirizzo IP. Tuttavia si consiglia di adottare misure aggiuntive per proteggere l’origine, tra cui la configurazione delle regole del filtro del traffico del limite di frequenza e bloccare i picchi a soglie più basse. Per una procedura guidata, consulta [Tutorial sul blocco degli attacchi DoS e DDoS tramite le regole del traffico](#tutorial-blocking-DDoS-with-rules).
 
-Questo avviso è attivato per impostazione predefinita, ma può essere disattivato utilizzando la proprietà *enable_ddos_alerts* e impostandola su false.
+Questo avviso è abilitato per impostazione predefinita, ma può essere disabilitato utilizzando la proprietà *enable_ddos_alerts*, impostata su false. Una volta attivato, l&#39;avviso non si riattiverà fino al giorno successivo (UTC).
 
 ```
 kind: "CDN"
