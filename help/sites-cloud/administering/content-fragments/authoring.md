@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: f81ea2b58cfa68542df957b54b1c0233b6096810
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '2687'
 ht-degree: 7%
 
 ---
@@ -27,7 +27,7 @@ Questo editor fornisce:
 * [Caricamento in linea di risorse come riferimenti a contenuti](#reference-images), senza doverli caricare prima in Asset DAM.
 * [Genera varianti](#generate-variations-ai) utilizzare l’intelligenza artificiale generativa per accelerare la creazione dei contenuti in base ai prompt.
 * [Anteprima](#preview-content-fragment) dell’esperienza sottoposta a rendering fornita dal frammento di contenuto.
-* Possibilità di [Pubblica](#publish-content-fragment) e [Annulla pubblicazione](#unpublish-content-fragment) dall’editor.
+* Possibilità di [Publish](#publish-content-fragment) e [Annulla pubblicazione](#unpublish-content-fragment) dall’editor.
 * Possibilità di [visualizzare e aprire le copie per lingua associate](#view-language-copies) nell’editor.
 * Possibilità di [visualizza dettagli versione](#view-version-history) nell’editor. Puoi anche ripristinare una versione selezionata.
 * Possibilità di [visualizzare e aprire i riferimenti padre](#view-parent-references).
@@ -45,7 +45,7 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
    * Collegamento alla Console Frammenti di contenuto (icona Home)
    * Informazioni sul modello e sulla cartella
    * collegamenti a [Anteprima (se per il modello è configurato il Pattern URL di anteprima predefinito)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-   * [Pubblica](#publish-content-fragment), e [Annulla pubblicazione](#unpublish-content-fragment) azioni
+   * [Publish](#publish-content-fragment), e [Annulla pubblicazione](#unpublish-content-fragment) azioni
    * Opzione per mostrare tutti i **Riferimenti padre** (icona collegamento)
    * **[Stato](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** del frammento e le ultime informazioni salvate
    * Pulsante per passare all’editor originale (basato su Assets)
@@ -116,7 +116,7 @@ Con ogni aggiornamento effettuato, il frammento di contenuto viene salvato autom
 
 ## Varianti {#variations}
 
-[Varianti](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) sono una funzione significativa dei frammenti di contenuto dell’AEM. Consentono di creare e modificare copie del **Principale** contenuti da utilizzare su canali e scenari specifici, per rendere ancora più flessibili la distribuzione di contenuti headless e l’authoring delle pagine.
+[Varianti](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) sono una funzione significativa dei Frammenti di contenuto dell’AEM. Consentono di creare e modificare copie del **Principale** contenuti da utilizzare su canali e scenari specifici, per rendere ancora più flessibili la distribuzione di contenuti headless e l’authoring delle pagine.
 
 Dall’editor è possibile:
 
@@ -336,7 +336,7 @@ In alternativa, è possibile: [seleziona **Crea nuovo frammento** per aprire **C
 In entrata **Riferimento contenuto** campi è possibile:
 
 * risorse di riferimento già esistenti nell’archivio
-* caricarli direttamente nel campo; questo evita la necessità di utilizzare **Risorse** console da caricare
+* caricarli direttamente nel campo; questo evita la necessità di utilizzare **Assets** console da caricare
 
   >[!NOTE]
   >
@@ -348,19 +348,26 @@ In entrata **Riferimento contenuto** campi è possibile:
 Per aggiungere una risorsa, puoi effettuare le seguenti operazioni:
 
 * trascina e rilascia il nuovo file di risorse direttamente (ad esempio, dal file system) nella sezione **Riferimento contenuto** campo
-* utilizzare il **Aggiungi risorsa** , quindi selezionare una delle seguenti opzioni **Sfoglia risorse** o **Carica** per aprire il selettore appropriato da utilizzare:
+* utilizzare il **Aggiungi risorsa** , quindi selezionare una delle seguenti opzioni **Sfoglia Assets** o **Carica** per aprire il selettore appropriato da utilizzare:
 
   ![Editor frammento di contenuto - Opzioni di aggiunta risorsa](assets/cf-authoring-add-asset-options.png)
 
 #### Pagine di riferimento {#reference-pages}
 
-Per aggiungere riferimenti a pagine AEM, frammenti di esperienza o altri tipi di contenuto:
+Per aggiungere riferimenti a pagine AEM, frammenti di esperienza o altri tipi di contenuto di questo tipo:
 
 1. Seleziona **Aggiungi percorso contenuto**.
 
 1. Aggiungi il percorso richiesto nel campo di input.
 
 1. Conferma con **Aggiungi**.
+
+>[!NOTE]
+>
+>Questo non deve essere utilizzato per riferimenti a:
+>
+>* Frammenti di contenuto - Utilizzare un [Riferimento frammento](#fragment-references)
+>* Immagini - Utilizzo [Immagini di riferimento](#reference-images)
 
 ### Visualizza riferimenti padre {#view-parent-references}
 
@@ -472,10 +479,10 @@ Una volta definito l’URL, il **Anteprima** è attivo. Puoi selezionare questo 
 
 ## Publish del frammento {#publish-content-fragment}
 
-È possibile **Pubblica** il frammento su:
+È possibile **Publish** il frammento su:
 
 * Anteprima istanza
-* Pubblica istanza
+* istanza Publish
 
 Puoi pubblicare il frammento dall’editor o dalla console. Consulta [Pubblicazione e anteprima di un frammento](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) per informazioni dettagliate.
 
@@ -484,7 +491,7 @@ Puoi pubblicare il frammento dall’editor o dalla console. Consulta [Pubblicazi
 È inoltre possibile **Annulla pubblicazione** frammento da:
 
 * Anteprima istanza
-* Pubblica istanza
+* istanza Publish
 
 Puoi annullare la pubblicazione del frammento dall’editor o dalla console. Consulta [Annullamento della pubblicazione di un frammento](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) per informazioni dettagliate.
 
@@ -551,6 +558,6 @@ Il **Campi** nel pannello sono elencati tutti i campi all’interno del framment
 
   Il frammento di contenuto e le relative varianti dispongono anche di campi di metadati (proprietà variante) denominati **Titolo** e **Descrizione**. Questi campi sono parte integrante di qualsiasi frammento di contenuto e sono stati inizialmente definiti durante la creazione del frammento. Possono essere aggiornati nella sezione *pannello destro* durante la modifica del frammento.
 
-* Consulta la documentazione di Assets per informazioni complete su [Editor frammento di contenuto originale](/help/assets/content-fragments/content-fragments-variations.md) - è disponibile presso **Risorse** e **Frammenti di contenuto** console.
+* Consulta la documentazione di Assets per informazioni complete su [Editor frammento di contenuto originale](/help/assets/content-fragments/content-fragments-variations.md) - è disponibile presso **Assets** e **Frammenti di contenuto** console.
 
 * Se necessario, il team del progetto può personalizzare l’editor. Consulta [Personalizzazione della console e dell’editor dei frammenti di contenuto](/help/implementing/developing/extending/content-fragments-console-and-editor.md) per ulteriori dettagli.
