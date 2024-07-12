@@ -4,25 +4,25 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
+source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1326'
 ht-degree: 3%
 
 ---
 
 # Configurazione del traffico sulla rete CDN {#cdn-configuring-cloud}
 
-AEM as a Cloud Service offre una raccolta di funzioni configurabili in [CDN gestito da Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) che modificano la natura delle richieste in ingresso o delle risposte in uscita. Le seguenti regole, descritte in dettaglio in questa pagina, possono essere dichiarate per ottenere il seguente comportamento:
+AEM as a Cloud Service offre una raccolta di funzionalità configurabili a livello di [CDN gestita dall&#39;Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) che modificano la natura delle richieste in ingresso o delle risposte in uscita. Le seguenti regole, descritte in dettaglio in questa pagina, possono essere dichiarate per ottenere il seguente comportamento:
 
-* [Richiedi trasformazioni](#request-transformations) : modifica gli aspetti delle richieste in entrata, tra cui intestazioni, percorsi e parametri.
-* [Trasformazioni di risposta](#response-transformations) : modifica le intestazioni che stanno tornando al client (ad esempio, un browser web).
-* [Reindirizzamenti lato client](#client-side-redirectors) : attiva un reindirizzamento del browser. Questa funzione non è ancora disponibile in versione GA, ma è disponibile per gli utenti che la utilizzano da subito.
-* [Selettori di origine](#origin-selectors) : proxy a un back-end di origine diversa.
+* [Trasformazioni richieste](#request-transformations) - Modifica gli aspetti delle richieste in arrivo, inclusi intestazioni, percorsi e parametri.
+* [Trasformazioni di risposta](#response-transformations) - Modifica le intestazioni che stanno per essere inviate al client (ad esempio, un browser Web).
+* [Reindirizzamenti lato client](#client-side-redirectors) - attiva un reindirizzamento del browser. Questa funzione non è ancora disponibile in versione GA, ma è disponibile per gli utenti che la utilizzano da subito.
+* [Selettori di origine](#origin-selectors) - proxy a un backend di origine diverso.
 
-Nella rete CDN sono configurabili anche le regole del filtro del traffico (incluso WAF), che controllano il traffico consentito o negato dalla rete CDN. Questa funzione è già stata rilasciata e puoi saperne di più nel [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md) pagina.
+Nella rete CDN sono configurabili anche le regole del filtro del traffico (incluso WAF), che controllano il traffico consentito o negato dalla rete CDN. Questa funzione è già stata rilasciata. Per ulteriori informazioni, consulta la pagina [Regole filtro traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md).
 
-Inoltre, se la rete CDN non è in grado di contattare la relativa origine, puoi scrivere una regola che fa riferimento a una pagina di errore personalizzata con hosting autonomo (di cui viene quindi eseguito il rendering). Per saperne di più, leggi [Configurazione delle pagine di errore CDN](/help/implementing/dispatcher/cdn-error-pages.md) articolo.
+Inoltre, se la rete CDN non è in grado di contattare la relativa origine, puoi scrivere una regola che fa riferimento a una pagina di errore personalizzata con hosting autonomo (di cui viene quindi eseguito il rendering). Ulteriori informazioni leggendo l&#39;articolo [Configurazione delle pagine di errore CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
 Tutte queste regole, dichiarate in un file di configurazione nel controllo del codice sorgente, vengono distribuite utilizzando [Pipeline di configurazione di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Tieni presente che la dimensione cumulativa del file di configurazione, incluse le regole del filtro del traffico, non può superare i 100 KB.
 
@@ -43,9 +43,9 @@ config/
      cdn.yaml
 ```
 
-* Il `cdn.yaml` Il file di configurazione deve contenere sia i metadati che le regole descritte negli esempi seguenti. Il `kind` il parametro deve essere impostato su `CDN` e la versione deve essere impostata sulla versione dello schema, attualmente `1`.
+* Il file di configurazione `cdn.yaml` deve contenere sia i metadati che le regole descritte negli esempi seguenti. Il parametro `kind` deve essere impostato su `CDN` e la versione deve essere impostata sulla versione dello schema, attualmente `1`.
 
-* Crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager. Consulta [configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configurazione di pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+* Crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager. Consulta [configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configurazione delle pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 **Note**
 
@@ -58,7 +58,7 @@ I tipi di regole nelle sezioni seguenti condividono una sintassi comune.
 
 A una regola viene fatto riferimento tramite un nome, una &quot;clausola when&quot; condizionale e azioni.
 
-La clausola when determina se una regola verrà valutata in base a proprietà quali dominio, percorso, stringhe di query, intestazioni e cookie. La sintassi è la stessa per tutti i tipi di regole; per informazioni dettagliate, vedi [Sezione Struttura condizione](/help/security/traffic-filter-rules-including-waf.md#condition-structure) nell’articolo Regole del filtro del traffico.
+La clausola when determina se una regola verrà valutata in base a proprietà quali dominio, percorso, stringhe di query, intestazioni e cookie. La sintassi è la stessa per tutti i tipi di regole. Per ulteriori dettagli, vedere la [sezione Struttura condizione](/help/security/traffic-filter-rules-including-waf.md#condition-structure) nell&#39;articolo Regole filtro traffico.
 
 I dettagli del nodo delle azioni differiscono per tipo di regola e sono descritti nelle singole sezioni seguenti.
 
@@ -68,7 +68,7 @@ Le regole di trasformazione delle richieste consentono di modificare le richiest
 
 I casi d’uso sono vari e includono la riscrittura degli URL per semplificare l’applicazione o mappare gli URL legacy.
 
-Come accennato in precedenza, esiste un limite di dimensione per il file di configurazione, pertanto le organizzazioni con requisiti più grandi devono definire regole nel `apache/dispatcher` livello.
+Come indicato in precedenza, esiste un limite di dimensione per il file di configurazione, pertanto le organizzazioni con requisiti più grandi devono definire regole nel livello `apache/dispatcher`.
 
 Esempio di configurazione:
 
@@ -168,7 +168,7 @@ actions:
 
 ### Variabili {#variables}
 
-Puoi impostare le variabili durante la trasformazione della richiesta e quindi farvi riferimento in un secondo momento nella sequenza di valutazione. Consulta la [ordine di valutazione](#order-of-evaluation) per ulteriori dettagli.
+Puoi impostare le variabili durante la trasformazione della richiesta e quindi farvi riferimento in un secondo momento nella sequenza di valutazione. Per ulteriori dettagli, consulta il diagramma dell&#39;[ordine di valutazione](#order-of-evaluation).
 
 Esempio di configurazione:
 
@@ -274,7 +274,7 @@ data:
         action:
           type: selectOrigin
           originName: example-com
-          # useCache: false
+          # skpCache: true
     origins:
       - name: example-com
         domain: www.example.com
@@ -292,7 +292,7 @@ Nella tabella seguente è illustrata l’azione disponibile.
 | Nome | Proprietà | Significato |
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | Nome di una delle origini definite. |
-|     | useCache (facoltativo, il valore predefinito è true) | Segnala se utilizzare il caching per le richieste che corrispondono a questa regola. |
+|     | skipCache (facoltativo, il valore predefinito è false) | Segnala se utilizzare il caching per le richieste che corrispondono a questa regola. Per impostazione predefinita, le risposte vengono memorizzate nella cache in base all’intestazione di memorizzazione nella cache delle risposte (ad esempio, Cache-Control o Expires) |
 
 **Origini**
 
@@ -341,13 +341,13 @@ data:
 ```
 
 >[!NOTE]
-> Poiché viene utilizzata la rete CDN gestita Adobe, assicurati di configurare l’invalidazione push in **gestito** , seguendo i Edge Delivery Services [Configurare la documentazione di annullamento della validità push](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+> Poiché viene utilizzata la rete CDN gestita dell&#39;Adobe, assicurati di configurare l&#39;annullamento della validità push in modalità **gestita**, seguendo la [documentazione dell&#39;annullamento della validità push dei Edge Delivery Services](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
 ## Reindirizzamenti lato client {#client-side-redirectors}
 
 >[!NOTE]
->Questa funzione non è ancora disponibile al pubblico. Per partecipare al programma di adozione anticipata, invia un messaggio e-mail a `aemcs-cdn-config-adopter@adobe.com` e descrivi il tuo caso d’uso.
+>Questa funzione non è ancora disponibile al pubblico. Per partecipare al programma per utenti precoci, invia un&#39;e-mail a `aemcs-cdn-config-adopter@adobe.com` e descrivi il tuo caso d&#39;uso.
 
 Puoi utilizzare le regole di reindirizzamento lato client per 301, 302 e reindirizzamenti lato client simili. Se una regola corrisponde, la rete CDN risponde con una riga di stato che include il codice di stato e il messaggio (ad esempio, HTTP/1.1 301 Spostato definitivamente), nonché l’intestazione della posizione impostata.
 
@@ -380,5 +380,5 @@ data:
 
 | Nome | Proprietà | Significato |
 |-----------|--------------------------|-------------|
-| **reindirizzare** | luogo | Valore per l’intestazione &quot;Posizione&quot;. |
+| **reindirizzamento** | luogo | Valore per l’intestazione &quot;Posizione&quot;. |
 |     | stato (facoltativo, il valore predefinito è 301) | Stato HTTP da utilizzare nel messaggio di reindirizzamento: 301 per impostazione predefinita. I valori consentiti sono: 301, 302, 303, 307, 308. |
