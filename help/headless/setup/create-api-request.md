@@ -21,7 +21,7 @@ Scopri come utilizzare l’API GraphQL per la distribuzione headless di contenut
 
 * L’[API GraphQL](/help/headless/graphql-api/content-fragments.md) consente di creare richieste per accedere e distribuire frammenti di contenuto. Questa API offre la serie più solida di funzionalità per eseguire query e utilizzare contenuti di frammenti di contenuto.
    * Per utilizzare l’API, [definisci e abilita gli endpoint in AEM](/help/headless/graphql-api/graphql-endpoint.md) e, se necessario, [installa l’Interfaccia GraphiQL](/help/headless/graphql-api/graphiql-ide.md).
-* [API REST di Assets](/help/assets/content-fragments/assets-api-content-fragments.md) consente di creare e modificare frammenti di contenuto (e altre risorse).
+* [L&#39;API REST di Assets](/help/assets/content-fragments/assets-api-content-fragments.md) consente di creare e modificare frammenti di contenuto (e altre risorse).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Prima di poter utilizzare le API GraphQL, è necessario creare un endpoint Graph
 1. Seleziona **Crea**.
 1. Si apre la finestra di dialogo **Crea nuovo endpoint GraphQL**. Qui potrai definire:
    * **Nome**: nome dell’endpoint; puoi immettere qualsiasi testo.
-   * **Utilizza lo schema GraphQL fornito da**: utilizza l’elenco a discesa per selezionare la configurazione richiesta.
+   * **Utilizza lo schema GraphQL fornito da**: utilizza l&#39;elenco a discesa per selezionare la configurazione richiesta.
 1. Conferma con **Crea**.
 1. Nella console viene visualizzato un **Percorso** in base alla configurazione creata in precedenza. Questo percorso viene utilizzato per eseguire le query GraphQL.
 

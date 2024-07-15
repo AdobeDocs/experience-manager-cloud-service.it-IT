@@ -15,13 +15,13 @@ ht-degree: 1%
 
 # Configurare un modulo adattivo per l’azione di invio dell’endpoint REST
 
-Utilizza il **[!UICONTROL Invia all’endpoint REST]** per pubblicare i dati inviati a un URL REST. L’URL può essere interno (il server sul quale viene eseguito il rendering del modulo) o esterno.
+Utilizza l&#39;azione **[!UICONTROL Invia all&#39;endpoint REST]** per inviare i dati inviati a un URL REST. L’URL può essere interno (il server sul quale viene eseguito il rendering del modulo) o esterno.
 
-AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md)  articolo.
+AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Ulteriori informazioni su queste opzioni sono disponibili nell&#39;articolo [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md).
 
 ## Vantaggi
 
-Alcuni dei vantaggi della configurazione di **[!UICONTROL Invia all’endpoint REST]** le azioni di invio per Adaptive Forms sono:
+Alcuni dei vantaggi della configurazione dell&#39;azione di invio **[!UICONTROL Invia all&#39;endpoint REST]** per Adaptive Forms sono:
 
 * Consente l’integrazione diretta dei dati dei moduli con sistemi e servizi esterni tramite API RESTful.
 * Fornisce flessibilità nella gestione delle richieste di dati da Adaptive Forms, supportando strutture di dati dinamiche e complesse.
@@ -32,19 +32,19 @@ Alcuni dei vantaggi della configurazione di **[!UICONTROL Invia all’endpoint R
 
 Per configurare l’azione di invio:
 
-1. Apri il browser Contenuto e seleziona la **[!UICONTROL Contenitore guida]** componente del modulo adattivo.
-1. Fai clic sulle proprietà Contenitore guida ![Proprietà guida](/help/forms/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
-1. Fai clic su  **[!UICONTROL Invio]** scheda.
-1. Dalla sezione **[!UICONTROL Azione di invio]** elenco a discesa, seleziona **[!UICONTROL Invia all’endpoint Rest]**.
-   ![Configurazione dell’azione dell’endpoint &quot;Invia a Rest&quot;](/help/forms/assets/submit-action-restendpoint.png)
+1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
+1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Fare clic sulla scheda **[!UICONTROL Invio]**.
+1. Dall&#39;elenco a discesa **[!UICONTROL Invia azione]**, selezionare **[!UICONTROL Invia all&#39;endpoint REST]**.
+   ![Configurazione dell&#39;azione Invia all&#39;endpoint REST](/help/forms/assets/submit-action-restendpoint.png)
 
    Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, `/content/restEndPoint`. Per tali richieste successive, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
 
-   Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL è `https://host:port/path_to_rest_end_point`. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.
+   Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell&#39;URL è `https://host:port/path_to_rest_end_point`. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.
 
-   ![Mappatura per i valori dei campi passati come parametri della pagina di ringraziamento](assets/post-enabled-actionconfig.png)
+   ![Mappatura dei valori dei campi passati come parametri della pagina di ringraziamento](assets/post-enabled-actionconfig.png)
 
-   Nell’esempio precedente, l’utente ha inserito le informazioni in `textbox` viene acquisito tramite il parametro `param1`. Sintassi per pubblicare i dati acquisiti tramite `param1` è:
+   Nell&#39;esempio precedente, le informazioni immesse dall&#39;utente in `textbox` vengono acquisite tramite il parametro `param1`. La sintassi per pubblicare i dati acquisiti tramite `param1` è:
 
    `String data=request.getParameter("param1");`
 
@@ -55,17 +55,17 @@ Per configurare l’azione di invio:
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
-   In questo esempio, `data` memorizza i dati XML e `att` memorizza i dati dell&#39;allegato.
+   In questo esempio, `data` memorizza i dati XML e `att` i dati dell&#39;allegato.
 
-   Il **[!UICONTROL Invia all’endpoint REST]** Azione di invio invia i dati compilati nel modulo a una pagina di conferma configurata come parte della richiesta HTTP GET. Puoi aggiungere il nome del campo da richiedere. Il formato della richiesta è:
+   L&#39;azione di invio **[!UICONTROL Invia all&#39;endpoint REST]** invia i dati compilati nel modulo a una pagina di conferma configurata come parte della richiesta HTTP GET. Puoi aggiungere il nome del campo da richiedere. Il formato della richiesta è:
 
    `{fieldName}={request parameter name}`
 
-   Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati come parametri con valori copiati da **casella di testo** e **numericbox** campi per l’azione successiva.
+   Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati come parametri con valori copiati dai campi **textbox** e **numericbox** per l&#39;azione successiva.
 
-   ![Configurazione dell’azione di invio endpoint REST](assets/action-config.png)
+   ![Configurazione dell&#39;azione di invio dell&#39;endpoint REST](assets/action-config.png)
 
-   È inoltre possibile **[!UICONTROL Abilita richiesta POST]** e fornisci un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso radice del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
+   Puoi anche **[!UICONTROL abilitare la richiesta di POST]** e fornire un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso radice del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
 
 1. Fai clic su **[!UICONTROL Fine]**.
 

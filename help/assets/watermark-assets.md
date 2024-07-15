@@ -19,19 +19,19 @@ ht-degree: 16%
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-[!DNL Adobe Experience Manager Assets] consente di aggiungere una filigrana digitale a immagini e video. [!DNL Assets] supporta l’applicazione di un’immagine come filigrana ad altri file di immagine. Le filigrane consentono agli utenti di verificare l’autenticità e la proprietà del copyright delle risorse. Inoltre, è possibile utilizzare una filigrana per indicare lo stato di un documento, ad esempio riservato, bozza, validità e così via.
+[!DNL Adobe Experience Manager Assets] consente di aggiungere una filigrana digitale a immagini e video. [!DNL Assets] supporta l&#39;applicazione di un&#39;immagine come filigrana ad altri file di immagine. Le filigrane consentono agli utenti di verificare l’autenticità e la proprietà del copyright delle risorse. Inoltre, è possibile utilizzare una filigrana per indicare lo stato di un documento, ad esempio riservato, bozza, validità e così via.
 
-Per configurare [!DNL Experience Manager] per applicare una filigrana alle risorse:
+Per configurare [!DNL Experience Manager] per la filigrana delle risorse:
 
 1. Un file PNG viene applicato come filigrana. Carica questo file nel tuo archivio DAM.
 
-1. Accedi a **[!UICONTROL Strumenti > Risorse > Configurazioni risorse]**.
+1. Passa a **[!UICONTROL Strumenti > Assets > Configurazioni Assets]**.
 
-1. Clic **[!UICONTROL Profilo filigrana sistema]**.
+1. Fare clic su **[!UICONTROL Profilo filigrana di sistema]**.
 
-1. Il giorno [!UICONTROL Pagina Profilo filigrana sistema], specifica il percorso dell’immagine caricata nell’archivio DAM al passaggio 1.
+1. Nella pagina [!UICONTROL Profilo filigrana di sistema], specifica il percorso dell&#39;immagine caricato nell&#39;archivio DAM nel passaggio 1.
 
-1. Specificare la scala della filigrana, compresa tra 0,0 e 1,0, relativa alla larghezza della rappresentazione, nel **[!UICONTROL Scala]** campo.
+1. Nel campo **[!UICONTROL Scala]** specificare la scala della filigrana, compresa tra 0,0 e 1,0, relativa alla larghezza della rappresentazione.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
@@ -39,16 +39,16 @@ Per configurare [!DNL Experience Manager] per applicare una filigrana alle risor
 
    >[!NOTE]
    >
-   >Se hai configurato il profilo Filigrana di sistema utilizzando `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` file di configurazione di (configurazione OSGi), puoi continuare a utilizzarlo, tuttavia, l’Adobe consiglia di utilizzare il nuovo metodo.
+   >Se è stato configurato il profilo Filigrana di sistema utilizzando il file di configurazione `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` (configurazione OSGi), è possibile continuare a utilizzarlo. Tuttavia, in Adobe è consigliabile utilizzare il nuovo metodo.
 
 
-1. [Creare un profilo di elaborazione](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) utilizzare i microservizi per le risorse per applicare la filigrana.
+1. [Crea un profilo di elaborazione](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) per utilizzare i microservizi delle risorse per applicare la filigrana.
 
-   ![Profilo di elaborazione risorsa per la creazione della filigrana](assets/watermark-processing-profile.png)
+   ![Profilo di elaborazione risorsa per creare la filigrana](assets/watermark-processing-profile.png)
 
-   Assicurati di abilitare **[!UICONTROL Filigrana]** durante la creazione del profilo di elaborazione.
+   Assicurati di abilitare l&#39;interruttore **[!UICONTROL Filigrana]** durante la creazione del profilo di elaborazione.
 
-1. [Applicare i profili di elaborazione a una cartella](/help/assets/asset-microservices-configure-and-use.md#use-profiles) per creare risorse con filigrana.
+1. [Applica i profili di elaborazione a una cartella](/help/assets/asset-microservices-configure-and-use.md#use-profiles) per creare risorse con filigrana.
 
 ## Suggerimenti e limitazioni {#tips-limitations-bestpractices}
 

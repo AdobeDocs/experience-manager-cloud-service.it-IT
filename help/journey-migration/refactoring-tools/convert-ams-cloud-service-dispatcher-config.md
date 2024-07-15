@@ -3,8 +3,8 @@ title: Conversione di una configurazione AMS in una configurazione Adobe Experie
 description: Conversione di una configurazione AMS in una configurazione Adobe Experience Manager as a Cloud Service Dispatcher
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 39%
+source-wordcount: '1262'
+ht-degree: 37%
 
 ---
 
@@ -76,7 +76,7 @@ Rimuovi le sezioni che fanno riferimento a variabili denominate DISP_ID, PUBLISH
 
 1. **Controllare lo stato eseguendo la convalida**
 
-   Esegui la convalida del Dispatcher nella directory, con il sottocomando httpd:
+   Esegui la convalida Dispatcher nella directory, con il sottocomando httpd:
 
    `$ validator httpd`
 Se vengono visualizzati errori relativi a file &quot;include&quot; mancanti, verifica di averli rinominati correttamente.
@@ -89,7 +89,7 @@ Se vengono visualizzati errori relativi a file &quot;include&quot; mancanti, ver
 
 1. **Rinominare i file di farm**
 
-   Tutte le farm in conf.dispatcher.d/enabled_farms devono essere rinominate in base al pattern *.farm. Ad esempio, rinominare `customerX_farm.any` a `customerX.farm`.
+   Tutte le farm in conf.dispatcher.d/enabled_farms devono essere rinominate in base al pattern *.farm. Ad esempio, rinominare `customerX_farm.any` in `customerX.farm`.
 
 1. **Verificare la cache**
 
@@ -97,13 +97,13 @@ Se vengono visualizzati errori relativi a file &quot;include&quot; mancanti, ver
 
    Rimuovi eventuali file con prefisso `ams_`.
 
-   Se conf.dispatcher.d/cache è ora vuoto, copia il file `conf.dispatcher.d/cache/rules.any` dalla configurazione standard di Dispatcher a questa cartella. La configurazione standard del Dispatcher si trova nella cartella src di questo SDK. Non dimenticare di adattare le istruzioni $include che fanno riferimento al `ams_*_cache.any` file delle regole anche nei file della farm.
+   Se conf.dispatcher.d/cache è ora vuoto, copiare il file `conf.dispatcher.d/cache/rules.any` dalla configurazione Dispatcher standard in questa cartella. La configurazione standard del Dispatcher si trova nella cartella src di questo SDK. Non dimenticare di adattare le istruzioni $include che fanno riferimento ai file di regole `ams_*_cache.any` anche nei file di farm.
 
    Se invece conf.dispatcher.d/cache ora contiene un singolo file con suffisso `_cache.any`, deve essere rinominato in `rules.any`. Ricorda di adattare le istruzioni $include che fanno riferimento a tale file anche nei file di farm.
 
    Se tuttavia la cartella contiene più file specifici della farm con tale pattern, il loro contenuto deve essere copiato nell’istruzione $include che fa riferimento a essi nei file della farm.
 
-   Rimuovi eventuali file con il suffisso `_invalidate_allowed.any`.
+   Rimuovere i file con suffisso `_invalidate_allowed.any`.
 
    Copia il file conf.dispatcher.d/cache/default_invalidate_any dalla configurazione di Dispatcher predefinita in quella posizione.
 
@@ -121,9 +121,9 @@ Se vengono visualizzati errori relativi a file &quot;include&quot; mancanti, ver
 
    Se tuttavia la cartella contiene più file specifici della farm con tale pattern, il loro contenuto deve essere copiato nell’istruzione $include che fa riferimento a essi nei file della farm.
 
-   Copiare il file `conf.dispatcher/clientheaders/default_clientheaders.any` dalla configurazione di Dispatcher predefinita a quella posizione.
+   Copiare il file `conf.dispatcher/clientheaders/default_clientheaders.any` dalla configurazione predefinita di Dispatcher in tale posizione.
 
-   In ciascun file di farm, sostituisci qualsiasi `clientheader` istruzioni &quot;include&quot; visualizzate come segue:
+   In ciascun file di farm, sostituisci le istruzioni &quot;include&quot; `clientheader` visualizzate come segue:
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"`
 
@@ -143,7 +143,7 @@ Se vengono visualizzati errori relativi a file &quot;include&quot; mancanti, ver
 
    * Se tuttavia la cartella contiene più file specifici della farm con tale pattern, il loro contenuto deve essere copiato nell’istruzione $include che fa riferimento a essi nei file della farm.
 
-   * Copiare il file `conf.dispatcher/filters/default_filters.any` dalla configurazione di Dispatcher predefinita a quella posizione.
+   * Copiare il file `conf.dispatcher/filters/default_filters.any` dalla configurazione predefinita di Dispatcher in tale posizione.
 
    * In ciascun file di farm, sostituisci eventuali istruzioni di filtro &quot;include&quot; visualizzate come segue:
 
@@ -158,7 +158,7 @@ con l’istruzione:
 
    * Rimuovi tutti i file presenti nella cartella.
 
-   * Copiare il file `conf.dispatcher.d/renders/default_renders.any` dalla configurazione di Dispatcher predefinita a quella posizione.
+   * Copiare il file `conf.dispatcher.d/renders/default_renders.any` dalla configurazione predefinita di Dispatcher in tale posizione.
 
    * In ciascun file di farm, rimuovi eventuali contenuti nella sezione renders e sostituiscili con:
 
@@ -174,7 +174,7 @@ con l’istruzione:
 
    * Se tuttavia la cartella contiene più file specifici della farm con tale pattern, il loro contenuto deve essere copiato nell’istruzione $include che fa riferimento a essi nei file della farm.
 
-   * Copiare il file `conf.dispatcher/virtualhosts/default_virtualhosts.any` dalla configurazione di Dispatcher predefinita a quella posizione.
+   * Copiare il file `conf.dispatcher/virtualhosts/default_virtualhosts.any` dalla configurazione predefinita di Dispatcher in tale posizione.
 
    * In ciascun file di farm, sostituisci eventuali istruzioni di filtro &quot;include&quot; visualizzate come segue:
 
@@ -186,7 +186,7 @@ con l’istruzione:
 
 1. **Controllare lo stato eseguendo la convalida**
 
-   * Esegui la convalida del Dispatcher nella directory, con il sottocomando Dispatcher:
+   * Esegui la convalida Dispatcher nella directory tramite il sottocomando Dispatcher:
 
      `$ validator dispatcher`
 
@@ -196,7 +196,7 @@ con l’istruzione:
 
    * Per qualsiasi altro errore, consulta la sezione Risoluzione di problemi della documentazione relativa allo strumento di convalida.
 
-## Verifica della configurazione tramite un’implementazione locale {#testing-config-local-deployment}
+## Verifica della configurazione con un’implementazione locale {#testing-config-local-deployment}
 
 >[!IMPORTANT]
 >
@@ -204,19 +204,19 @@ con l’istruzione:
 
 Utilizzando lo script `docker_run.sh` nell’SDK di Dispatcher, puoi verificare che la configurazione non contenga altri errori che potrebbero verificarsi solo nell’implementazione:
 
-1. Genera le informazioni sull’implementazione con lo strumento di convalida..
+1. Genera informazioni sulla distribuzione con la convalida.
 
    `validator full -d out`
 Convalida la configurazione completa e genera le informazioni di distribuzione in/out.
 
 1. Avvia Dispatcher in un’immagine docker con tali informazioni di distribuzione.
 
-   Con il server di pubblicazione AEM in esecuzione sul computer macOS, in ascolto sulla porta 4503, puoi avviare il Dispatcher prima di tale server nel modo seguente:
+   Con il server di pubblicazione AEM in esecuzione sul computer macOS, in ascolto sulla porta 4503, è possibile avviare il Dispatcher davanti a tale server nel modo seguente:
 
    `$ docker_run.sh out docker.for.mac.localhost:4503 8080`
 
    Avvia il contenitore ed espone Apache sulla porta locale 8080.
 
-## Utilizzo della nuova configurazione di Dispatcher {#using-dispatcher-config}
+## Utilizzo della nuova configurazione Dispatcher {#using-dispatcher-config}
 
 Se la funzione di convalida non segnala più alcun problema e il contenitore docker si avvia senza errori o avvisi, puoi spostare la configurazione in una sottodirectory d`ispatcher/src` del tuo archivio git.

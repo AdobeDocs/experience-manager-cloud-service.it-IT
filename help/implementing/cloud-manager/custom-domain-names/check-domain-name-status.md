@@ -23,7 +23,7 @@ In Cloud Manager è possibile determinare lo stato del nome di dominio personali
 
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 
-1. Clic **Impostazioni dominio** nel pannello di navigazione a sinistra.
+1. Fai clic su **Impostazioni dominio** nel pannello di navigazione a sinistra.
 
 1. Fai clic sull’icona **Stato** del nome di dominio.
 
@@ -87,7 +87,7 @@ L’errore viene corretto come segue:
 
 ## Configurazioni CDN preesistenti per i nomi di dominio personalizzati {#pre-existing-cdn}
 
-Se disponi di una configurazione CDN preesistente per i nomi di dominio personalizzati, viene visualizzato un messaggio informativo sulla **Nomi di dominio personalizzati** e **Ambiente** , per invitarti ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
+Se disponi di una configurazione CDN preesistente per i nomi di dominio personalizzati, viene visualizzato un messaggio informativo sulle pagine **Nomi di dominio personalizzati** e **Ambiente** che ti invita ad aggiungere queste configurazioni tramite l&#39;interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
 
 Il messaggio non viene più visualizzato dopo aver eseguito la migrazione di tutte le configurazioni dell’ambiente preesistenti tramite l’interfaccia utente. Potrebbero essere necessari 1-2 giorni lavorativi affinché il messaggio non venga più visualizzato.
 

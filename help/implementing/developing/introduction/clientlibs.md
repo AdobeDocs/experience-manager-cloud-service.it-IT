@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di librerie lato client su AEM as a Cloud Service
+title: Utilizzo delle librerie lato client su AEM as a Cloud Service
 description: AEM fornisce cartelle di librerie lato client, che consentono di memorizzare il codice lato client (clientlibs) nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
@@ -12,9 +12,9 @@ ht-degree: 1%
 ---
 
 
-# Utilizzo di librerie lato client su AEM as a Cloud Service {#using-client-side-libraries}
+# Utilizzo delle librerie lato client su AEM as a Cloud Service {#using-client-side-libraries}
 
-Le esperienze digitali si basano fortemente sull’elaborazione lato client guidata da codice JavaScript e CSS complesso. Le librerie lato client (clientlibs) dell’AEM consentono di organizzare e archiviare centralmente queste librerie lato client all’interno dell’archivio. Abbinato al [processo di sviluppo front-end nell’archetipo del progetto AEM,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) la gestione del codice front-end per il progetto AEM diventa semplice.
+Le esperienze digitali si basano in larga misura sull’elaborazione lato client guidata da codice JavaScript e CSS complesso. Le librerie lato client (clientlibs) dell’AEM consentono di organizzare e archiviare centralmente queste librerie lato client all’interno dell’archivio. In combinazione con il [processo di sviluppo front-end nell&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), la gestione del codice front-end per il progetto AEM diventa semplice.
 
 I vantaggi dell’utilizzo di clientlibs in AEM includono:
 
@@ -27,23 +27,23 @@ Clientlibs è la soluzione integrata per la distribuzione di CSS e JavaScript da
 
 >[!TIP]
 >
->Anche gli sviluppatori front-end che creano CSS e JavaScript per progetti AEM devono familiarizzare con [AEM Project Archetype e il suo processo di sviluppo front-end automatizzato.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>Anche gli sviluppatori front-end che creano CSS e JavaScript per progetti AEM devono acquisire familiarità con l&#39;archetipo di progetto [AEM e il relativo processo di compilazione front-end automatizzato.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
 
 ## Cosa sono le librerie lato client {#what-are-clientlibs}
 
-I siti richiedono risorse JavaScript e CSS e statiche come icone e font web da elaborare lato client. Una clientlib è un meccanismo dell’AEM a cui fare riferimento (se necessario per categoria) e che serve tali risorse.
+I siti richiedono l’elaborazione lato client di risorse JavaScript e CSS e statiche, come icone e font web. Una clientlib è un meccanismo dell&#39;AEM a cui fare riferimento (se necessario per categoria) e che serve tali risorse.
 
-AEM raccoglie i file CSS e JavaScript del sito in un singolo file, in una posizione centrale, per garantire che nell’output HTML sia inclusa una sola copia di qualsiasi risorsa. In questo modo si ottimizza l&#39;efficienza della distribuzione e si consente la gestione centralizzata di tali risorse nell&#39;archivio tramite proxy, mantenendo l&#39;accesso sicuro.
+L’AEM raccoglie i file CSS e JavaScript del sito in un unico file, in una posizione centrale, per garantire che nell’output HTML sia inclusa solo una copia di qualsiasi risorsa. In questo modo si ottimizza l&#39;efficienza della distribuzione e si consente la gestione centralizzata di tali risorse nell&#39;archivio tramite proxy, mantenendo l&#39;accesso sicuro.
 
 ## Sviluppo front-end per AEM as a Cloud Service {#fed-for-aemaacs}
 
-Tutte le risorse JavaScript, CSS e altre risorse front-end devono essere gestite nel [Modulo ui.frontend dell’Archetipo di progetto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) La flessibilità dell’archetipo consente di utilizzare i moderni strumenti web a tua scelta per creare e gestire tali risorse.
+Tutte le risorse JavaScript, CSS e altre risorse front-end devono essere mantenute nel modulo [ui.frontend dell&#39;archetipo di progetto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) La flessibilità dell&#39;archetipo consente di utilizzare i moderni strumenti web di scelta per creare e gestire queste risorse.
 
-L’archetipo può quindi compilare le risorse in singoli file CSS e JS, incorporandoli automaticamente in un `cq:clientLibraryFolder` nell’archivio.
+L&#39;archetipo può quindi compilare le risorse in singoli file CSS e JS, incorporandoli automaticamente in un `cq:clientLibraryFolder` nell&#39;archivio.
 
 ## Struttura delle cartelle della libreria lato client {#clientlib-folders}
 
-Una cartella di libreria lato client è un nodo di archivio di tipo `cq:ClientLibraryFolder`. La sua definizione in [Notazione CND](https://jackrabbit.apache.org/node-type-notation.html) è
+Una cartella di libreria lato client è un nodo di repository di tipo `cq:ClientLibraryFolder`. La sua definizione nella [notazione CND](https://jackrabbit.apache.org/node-type-notation.html) è
 
 ```text
 [cq:ClientLibraryFolder] > sling:Folder
@@ -53,21 +53,21 @@ Una cartella di libreria lato client è un nodo di archivio di tipo `cq:ClientLi
   - channels (string) multiple
 ```
 
-* `cq:ClientLibraryFolder` I nodi possono essere posizionati ovunque all’interno del `/apps` sottostruttura dell’archivio.
-* Utilizza il `categories` del nodo per identificare le categorie di libreria a cui appartiene.
+* I nodi `cq:ClientLibraryFolder` possono essere posizionati ovunque all&#39;interno della sottostruttura `/apps` dell&#39;archivio.
+* Utilizzare la proprietà `categories` del nodo per identificare le categorie di libreria a cui appartiene.
 
-Ogni `cq:ClientLibraryFolder` viene compilato con un set di file JS e/o CSS, insieme ad alcuni file di supporto (vedi di seguito). Proprietà importanti del `cq:ClientLibraryFolder` sono configurate come segue:
+Ogni `cq:ClientLibraryFolder` è compilato con un set di file JS e/o CSS, insieme ad alcuni file di supporto (vedi sotto). Le proprietà importanti di `cq:ClientLibraryFolder` sono configurate come segue:
 
-* `allowProxy`: poiché tutte le clientlibs devono essere memorizzate in `apps`, questa proprietà consente l’accesso alle librerie client tramite il servlet proxy. Consulta la sezione [Individuazione di una cartella di librerie client e utilizzo del servlet delle librerie client proxy](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) di seguito.
-* `categories`: identifica le categorie in cui il set di file JS e/o CSS all’interno di questo `cq:ClientLibraryFolder` caduta. Il `categories` Poiché questa proprietà ha più valori, una cartella libreria può far parte di più categorie (vedi di seguito per informazioni su come può essere utile).
+* `allowProxy`: poiché tutte le clientlibs devono essere archiviate in `apps`, questa proprietà consente l&#39;accesso alle librerie client tramite il servlet proxy. Consulta la sezione [Individuazione di una cartella della libreria client e utilizzo del servlet delle librerie client proxy](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) di seguito.
+* `categories`: identifica le categorie in cui rientra il set di file JS e/o CSS in `cq:ClientLibraryFolder`. La proprietà `categories`, essendo multivalore, consente a una cartella di libreria di far parte di più di una categoria (vedere di seguito per informazioni sull&#39;utilità di questa proprietà).
 
-Se la cartella della libreria client contiene uno o più file di origine che, in fase di esecuzione, vengono uniti in un singolo file JS e/o CSS. Il nome del file generato è il nome del nodo con `.js` o `.css` estensione del nome file. Ad esempio, il nodo della libreria denominato `cq.jquery` restituisce il file generato denominato `cq.jquery.js` o `cq.jquery.css`.
+Se la cartella della libreria client contiene uno o più file di origine che, in fase di esecuzione, vengono uniti in un singolo file JS e/o CSS. Il nome del file generato è il nome del nodo con estensione `.js` o `.css`. Ad esempio, il nodo della libreria denominato `cq.jquery` genera il file generato denominato `cq.jquery.js` o `cq.jquery.css`.
 
 Le cartelle delle librerie client contengono i seguenti elementi:
 
 * File sorgente JS e/o CSS
 * Risorse statiche che supportano gli stili CSS, ad esempio icone, caratteri web e così via.
-* Uno `js.txt` file e/o uno `css.txt` file che identifica i file sorgente da unire nei file JS e/o CSS generati
+* Un file `js.txt` e/o un file `css.txt` che identificano i file di origine da unire nei file JS e/o CSS generati
 
 ![Architettura Clientlib](assets/clientlib-architecture.drawio.png)
 
@@ -75,55 +75,55 @@ Le cartelle delle librerie client contengono i seguenti elementi:
 
 Le librerie client devono trovarsi in `/apps`. Questa regola è necessaria per isolare meglio il codice dal contenuto e dalla configurazione.
 
-Per le librerie client in `/apps` per essere accessibile, viene utilizzato un servlet proxy. Gli ACL vengono ancora applicati nella cartella della libreria client, ma il servlet consente la lettura del contenuto tramite `/etc.clientlibs/` se `allowProxy` proprietà impostata su `true`.
+Per rendere accessibili le librerie client in `/apps`, viene utilizzato un servlet proxy. Gli ACL sono ancora applicati nella cartella della libreria client, ma il servlet consente la lettura del contenuto tramite `/etc.clientlibs/` se la proprietà `allowProxy` è impostata su `true`.
 
-1. Apri CRXDE Liti in un browser Web (`https://<host>:<port>/crx/de`).
-1. Seleziona la `/apps` cartella e fai clic su **Crea > Crea nodo**.
-1. Immetti un nome per la cartella della libreria e nella **Tipo** selezione elenco `cq:ClientLibraryFolder`. Clic **OK** e quindi fare clic su **Salva tutto**.
-1. Per specificare la categoria o le categorie a cui appartiene la libreria, seleziona la `cq:ClientLibraryFolder` , aggiungere la seguente proprietà e quindi fare clic su **Salva tutto**:
+1. Aprire CRXDE Lite in un browser Web (`https://<host>:<port>/crx/de`).
+1. Selezionare la cartella `/apps` e fare clic su **Crea > Crea nodo**.
+1. Immettere un nome per la cartella della libreria e nell&#39;elenco **Tipo** selezionare `cq:ClientLibraryFolder`. Fare clic su **OK** e quindi su **Salva tutto**.
+1. Per specificare la categoria o le categorie a cui appartiene la libreria, selezionare il nodo `cq:ClientLibraryFolder`, aggiungere la seguente proprietà e quindi fare clic su **Salva tutto**:
    * Nome: `categories`
    * Tipo: String
    * Valore: il nome della categoria
    * Multiplo: selezionato
-1. Affinché le librerie client siano accessibili tramite proxy in `/etc.clientlibs`, seleziona la `cq:ClientLibraryFolder` , aggiungere la seguente proprietà e quindi fare clic su **Salva tutto**:
+1. Per rendere accessibili le librerie client tramite proxy in `/etc.clientlibs`, selezionare il nodo `cq:ClientLibraryFolder`, aggiungere la seguente proprietà e quindi fare clic su **Salva tutto**:
    * Nome: `allowProxy`
    * Tipo: booleano
    * Valore: `true`
-1. Per gestire le risorse statiche, crea una sottocartella denominata `resources` nella cartella della libreria client.
-   * Se archivi risorse statiche in un punto diverso da quello della cartella `resources`, non è possibile farvi riferimento in un’istanza Publish.
+1. Se è necessario gestire risorse statiche, creare una sottocartella denominata `resources` sotto la cartella della libreria client.
+   * Se si archiviano risorse statiche in un punto qualsiasi diverso dalla cartella `resources`, non è possibile farvi riferimento in un&#39;istanza Publish.
 1. Aggiungere i file di origine alla cartella della libreria.
-   * Questa operazione viene in genere eseguita dal processo di sviluppo front-end del [Archetipo progetto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+   * Questa operazione viene in genere eseguita dal processo di compilazione front-end dell&#39;archetipo di progetto [AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * Se necessario, è possibile organizzare i file di origine in sottocartelle.
-1. Seleziona la cartella della libreria client e fai clic su **Crea > Crea file**.
+1. Selezionare la cartella della libreria client e fare clic su **Crea > Crea file**.
 1. Nella casella Nome file digitare uno dei seguenti nomi di file e fare clic su OK:
-   * **`js.txt`:** Utilizza questo nome di file per generare un file JavaScript.
-   * **`css.txt`:** Utilizzate questo nome di file per generare un foglio di stile CSS.
+   * **`js.txt`:** Utilizzare questo nome di file per generare un file JavaScript.
+   * **`css.txt`:** Utilizzare questo nome di file per generare un foglio di stile CSS.
 1. Apri il file e digita il testo seguente per identificare la directory principale del percorso dei file di origine:
    * `#base=*[root]*`
-   * Sostituisci `[root]` con il percorso della cartella che contiene i file di origine, relativo al file TXT. Ad esempio, utilizza il testo seguente quando i file di origine si trovano nella stessa cartella del file TXT:
+   * Sostituire `[root]` con il percorso della cartella che contiene i file di origine, relativo al file TXT. Ad esempio, utilizza il testo seguente quando i file di origine si trovano nella stessa cartella del file TXT:
       * `#base=.`
-   * Il codice seguente imposta la radice come cartella denominata mobile sotto il `cq:ClientLibraryFolder` nodo:
+   * Il codice seguente imposta la radice come cartella denominata mobile sotto il nodo `cq:ClientLibraryFolder`:
       * `#base=mobile`
-1. Sulle righe sottostanti `#base=[root]`, digitare i percorsi dei file di origine relativi alla directory principale. Posizionare ogni nome di file su una riga separata.
-1. Clic **Salva tutto**.
+1. Nelle righe sottostanti `#base=[root]`, digitare i percorsi dei file di origine relativi alla radice. Posizionare ogni nome di file su una riga separata.
+1. Fare clic su **Salva tutto**.
 
 ## Distribuzione di librerie lato client {#serving-clientlibs}
 
-Quando la cartella della libreria client è [configurate come richiesto,](#creating-clientlib-folders) le clientlibs possono essere richieste tramite proxy. Ad esempio:
+Una volta configurata [la cartella della libreria client come richiesto](#creating-clientlib-folders), è possibile richiedere clientlibs tramite proxy. Ad esempio:
 
 * Hai una libreria client in `/apps/myproject/clientlibs/foo`
-* Hai un’immagine statica in `/apps/myprojects/clientlibs/foo/resources/icon.png`
+* È presente un&#39;immagine statica in `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
-Il `allowProxy` La proprietà ti consente di richiedere:
+La proprietà `allowProxy` consente di richiedere:
 
-* La libreria client tramite `/etc.clientlibs/myprojects/clientlibs/foo.js`
-* L’immagine statica tramite `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
+* clientlib tramite `/etc.clientlibs/myprojects/clientlibs/foo.js`
+* Immagine statica tramite `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
 
 ### Caricamento delle librerie client tramite HTL {#loading-via-htl}
 
 Una volta memorizzate e gestite correttamente le clientlibs nella cartella della libreria client, è possibile accedervi tramite HTL.
 
-Le librerie client vengono caricate tramite un modello helper fornito da AEM, a cui è possibile accedere tramite `data-sly-use`. In questo file sono disponibili modelli di supporto che possono essere richiamati tramite `data-sly-call`.
+Le librerie client vengono caricate tramite un modello helper fornito da AEM, accessibile tramite `data-sly-use`. In questo file sono disponibili modelli di supporto che possono essere richiamati tramite `data-sly-call`.
 
 Ogni modello helper richiede un’opzione `categories` per fare riferimento alle librerie client desiderate. Tale opzione può essere una matrice di valori stringa o una stringa contenente un elenco di valori separati da virgola.
 
@@ -135,15 +135,15 @@ Ogni modello helper richiede un’opzione `categories` per fare riferimento alle
 This is possible. Still need detail.
 -->
 
-## Confronto tra le librerie client di Author e Publish {#clientlibs-author-publish}
+## Librerie client di Author e Publish {#clientlibs-author-publish}
 
-La maggior parte delle clientlibs è richiesta nell’istanza di pubblicazione dell’AEM. In altre parole, lo scopo della maggior parte delle clientlibs è quello di produrre l’esperienza dell’utente finale del contenuto. Per clientlibs sulle istanze di pubblicazione, [strumenti di sviluppo front-end](#fed-for-aemaacs) utilizzabile e implementabile tramite [cartelle della libreria client come descritto in precedenza.](#creating-clientlib-folders)
+La maggior parte delle clientlibs è richiesta nell’istanza di pubblicazione dell’AEM. In altre parole, lo scopo della maggior parte delle clientlibs è quello di produrre l’esperienza dell’utente finale del contenuto. Per clientlibs nelle istanze di pubblicazione, è possibile utilizzare [strumenti di compilazione front-end](#fed-for-aemaacs) e distribuirli tramite [cartelle di librerie client come descritto in precedenza.](#creating-clientlib-folders)
 
 Tuttavia, in alcuni casi le librerie client possono essere necessarie per personalizzare l’esperienza di authoring. Ad esempio, per personalizzare una finestra di dialogo potrebbe essere necessario distribuire piccoli bit di CSS o JS nell’istanza di authoring dell’AEM.
 
 ### Gestione delle librerie client durante l’authoring {#clientlibs-on-author}
 
-Se devi utilizzare le librerie client durante l’authoring, puoi creare le librerie client in `/apps` utilizzando gli stessi metodi utilizzati per la pubblicazione, ma scrivila direttamente in `/apps/.../clientlibs/foo` invece di creare un intero progetto per gestirlo.
+Se è necessario utilizzare le librerie client per l&#39;authoring, è possibile creare le librerie client in `/apps` utilizzando gli stessi metodi utilizzati per la pubblicazione, ma scriverle direttamente in `/apps/.../clientlibs/foo` anziché creare un intero progetto per gestirlo.
 
 Puoi quindi effettuare l’hook in JS per l’authoring aggiungendo le librerie client a una categoria di librerie client preconfigurata.
 
@@ -153,7 +153,7 @@ AEM fornisce diversi strumenti per il debug e il test delle cartelle delle libre
 
 ### Scopri le librerie client {#discover-client-libraries}
 
-Il `/libs/cq/granite/components/dumplibs/dumplibs` il componente genera una pagina di informazioni su tutte le cartelle delle librerie client sul sistema. Il `/libs/granite/ui/content/dumplibs` Il componente del nodo è un tipo di risorsa. Per aprire la pagina, utilizza il seguente URL (modificando l’host e la porta come richiesto):
+Il componente `/libs/cq/granite/components/dumplibs/dumplibs` genera una pagina di informazioni su tutte le cartelle delle librerie client nel sistema. Il nodo `/libs/granite/ui/content/dumplibs` ha il componente come tipo di risorsa. Per aprire la pagina, utilizza il seguente URL (modificando l’host e la porta come richiesto):
 
 `https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
@@ -161,45 +161,45 @@ Le informazioni includono il percorso e il tipo della libreria (CSS o JS) e i va
 
 ### Vedi Output generato {#see-generated-output}
 
-Il `dumplibs` il componente include un selettore di test che visualizza il codice sorgente generato per `ui:includeClientLib` tag. La pagina include il codice per diverse combinazioni di attributi js, css e a tema.
+Il componente `dumplibs` include un selettore di test che visualizza il codice sorgente generato per i tag `ui:includeClientLib`. La pagina include il codice per diverse combinazioni di attributi js, css e a tema.
 
 1. Per aprire la pagina Output test, utilizzare uno dei metodi seguenti:
-   * Dalla sezione `dumplibs.html` , fare clic sul collegamento nella **Fai clic qui per il test di output** testo.
+   * Dalla pagina `dumplibs.html`, fai clic sul collegamento nel testo **Fai clic qui per il test dell&#39;output**.
    * Apri il seguente URL nel browser web (utilizza un host e una porta diversi, a seconda delle necessità):
       * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
    * La pagina predefinita mostra l’output per i tag senza alcun valore per l’attributo categorie.
-1. Per visualizzare l’output di una categoria, digita il valore della proprietà `categories` e fai clic su **Invia query**.
+1. Per visualizzare l&#39;output di una categoria, digitare il valore della proprietà `categories` della libreria client e fare clic su **Invia query**.
 
 ## Caratteristiche aggiuntive della cartella della libreria client {#additional-features}
 
-Esistono diverse altre funzioni supportate dalle cartelle delle librerie client in AEM. Tuttavia, questi non sono richiesti per AEM as a Cloud Service e come tale il loro uso è sconsigliato. Sono elencati qui per completezza.
+Esistono diverse altre funzioni supportate dalle cartelle delle librerie client in AEM. Tuttavia, questi non sono richiesti su AEM as a Cloud Service e come tali il loro utilizzo è sconsigliato. Sono elencati qui per completezza.
 
 >[!WARNING]
 >
->Queste funzioni aggiuntive delle cartelle delle librerie client non sono necessarie per le AEM as a Cloud Service e pertanto il loro utilizzo è sconsigliato. Sono elencati qui per completezza.
+>Queste funzioni aggiuntive delle cartelle delle librerie client non sono necessarie in AEM as a Cloud Service e pertanto il loro utilizzo è sconsigliato. Sono elencati qui per completezza.
 
 ### Adobe Granite HTML Libreria Manager {#html-library-manager}
 
-È possibile controllare ulteriori impostazioni della libreria client tramite **Adobe Granite HTML Library Manager** della console del sistema in `https://<host>:<port>/system/console/configMgr`).
+È possibile controllare ulteriori impostazioni della libreria client tramite il pannello **Adobe Granite HTML Library Manager** della console di sistema in `https://<host>:<port>/system/console/configMgr`).
 
 ### Proprietà cartella aggiuntive {#additional-folder-properties}
 
 Altre proprietà della cartella includono consentono il controllo delle dipendenze e degli incorporamenti, ma in genere non sono più necessari e il loro utilizzo è sconsigliato:
 
-* `dependencies`: questo è un elenco di altre categorie di librerie client da cui dipende la cartella della libreria. Ad esempio, dato due `cq:ClientLibraryFolder` nodi `F` e `G`, se un file in `F` richiede un altro file in `G` per funzionare correttamente, almeno uno dei `categories` di `G` deve essere tra i `dependencies` di `F`.
-* `embed`: utilizzato per incorporare il codice da altre librerie. Se nodo `F` incorpora nodi `G` e `H`, il HTML risultante è una concatenazione di contenuto dai nodi `G` e `H`.
+* `dependencies`: questo è un elenco di altre categorie di librerie client da cui dipende la cartella della libreria. Ad esempio, dati due nodi `cq:ClientLibraryFolder` `F` e `G`, se un file in `F` richiede un altro file in `G` per funzionare correttamente, almeno uno dei `categories` di `G` deve essere tra i `dependencies` di `F`.
+* `embed`: utilizzato per incorporare il codice da altre librerie. Se il nodo `F` incorpora i nodi `G` e `H`, il HTML risultante è una concatenazione di contenuto dai nodi `G` e `H`.
 
 ### Collegamento alle dipendenze {#linking-to-dependencies}
 
-Quando il codice nella cartella della libreria client fa riferimento ad altre librerie, identifica le altre librerie come dipendenze. Il `ui:includeClientLib` Se si utilizza un tag che fa riferimento alla cartella della libreria client, il codice HTML includerà un collegamento al file di libreria generato e alle dipendenze.
+Quando il codice nella cartella della libreria client fa riferimento ad altre librerie, identifica le altre librerie come dipendenze. Il tag `ui:includeClientLib` che fa riferimento alla cartella della libreria client fa in modo che il codice HTML includa un collegamento al file di libreria generato e alle dipendenze.
 
-Le dipendenze devono essere un&#39;altra `cq:ClientLibraryFolder`. Per identificare le dipendenze, aggiungi una proprietà alla `cq:ClientLibraryFolder` con i seguenti attributi:
+Le dipendenze devono essere un altro `cq:ClientLibraryFolder`. Per identificare le dipendenze, aggiungere una proprietà al nodo `cq:ClientLibraryFolder` con i seguenti attributi:
 
 * **Nome:** dipendenze
 * **Tipo:** Stringa[]
-* **Valori:** Valore della proprietà Categories del nodo cq:ClientLibraryFolder da cui dipende la cartella della libreria corrente.
+* **Valori:** il valore della proprietà Categories del nodo cq:ClientLibraryFolder da cui dipende la cartella della libreria corrente.
 
-Ad esempio, il `/etc/clientlibs/myclientlibs/publicmain` ha una dipendenza da `cq.jquery` libreria. La pagina che fa riferimento alla libreria client principale genera HTML che include il seguente codice:
+`/etc/clientlibs/myclientlibs/publicmain`, ad esempio, ha una dipendenza dalla libreria `cq.jquery`. La pagina che fa riferimento alla libreria client principale genera HTML che include il seguente codice:
 
 ```xml
 <script src="/etc/clientlibs/foundation/cq.jquery.js" type="text/javascript">
@@ -214,25 +214,25 @@ L’incorporamento del codice è utile per fornire accesso alle librerie memoriz
 
 #### Cartelle Libreria Client Specifiche Per L&#39;App {#app-specific-client-library-folders}
 
-È consigliabile conservare tutti i file relativi all&#39;applicazione nella cartella dell&#39;applicazione sottostante `/apps`. È inoltre consigliabile negare l’accesso ai visitatori del sito web `/apps` cartella. Per soddisfare entrambe le best practice, crea una cartella della libreria client sotto al `/etc` cartella che incorpora la libreria client sottostante `/apps`.
+È consigliabile mantenere tutti i file relativi all&#39;applicazione nella cartella dell&#39;applicazione al di sotto di `/apps`. È inoltre consigliabile negare l&#39;accesso alla cartella `/apps` ai visitatori del sito Web. Per soddisfare entrambe le best practice, crea una cartella della libreria client sotto la cartella `/etc` che incorpora la libreria client al di sotto di `/apps`.
 
-Utilizzare la proprietà Categories per identificare la cartella della libreria client da incorporare. Per incorporare la libreria, aggiungi una proprietà all’incorporamento `cq:ClientLibraryFolder` utilizzando i seguenti attributi di proprietà:
+Utilizzare la proprietà Categories per identificare la cartella della libreria client da incorporare. Per incorporare la libreria, aggiungere una proprietà al nodo `cq:ClientLibraryFolder` che incorpora, utilizzando i seguenti attributi di proprietà:
 
-* **Nome:** incorporare
+* **Nome:** incorporato
 * **Tipo:** Stringa[]
-* **Valore:** Il valore della proprietà Categories della proprietà `cq:ClientLibraryFolder` nodo da incorporare.
+* **Valore:** il valore della proprietà Categories del nodo `cq:ClientLibraryFolder` da incorporare.
 
 #### Utilizzo dell’incorporamento per ridurre al minimo le richieste {#using-embedding-to-minimize-requests}
 
-In alcuni casi è possibile che il HTML finale generato per la pagina tipica dall’istanza Publish includa un numero relativamente elevato di `<script>` elementi.
+In alcuni casi è possibile che il HTML finale generato per la pagina tipica dall&#39;istanza Publish includa un numero relativamente elevato di `<script>` elementi.
 
-In questi casi, può essere utile combinare in un unico file tutto il codice libreria client richiesto, in modo da ridurre il numero di richieste avanti e indietro al caricamento della pagina. A tale scopo è possibile: `embed` le librerie richieste nella libreria client specifica per l’app utilizzando la proprietà embed di `cq:ClientLibraryFolder` nodo.
+In questi casi, può essere utile combinare in un unico file tutto il codice libreria client richiesto, in modo da ridurre il numero di richieste avanti e indietro al caricamento della pagina. A questo scopo, puoi `embed` le librerie richieste nella libreria client specifica per l&#39;app utilizzando la proprietà embed del nodo `cq:ClientLibraryFolder`.
 
 #### Percorsi nei file CSS {#paths-in-css-files}
 
-Quando incorpori file CSS, il codice CSS generato utilizza i percorsi delle risorse relativi alla libreria di incorporamento. Ad esempio, la libreria accessibile al pubblico `/etc/client/libraries/myclientlibs/publicmain` incorpora il `/apps/myapp/clientlib` libreria client:
+Quando incorpori file CSS, il codice CSS generato utilizza i percorsi delle risorse relativi alla libreria di incorporamento. Ad esempio, la libreria `/etc/client/libraries/myclientlibs/publicmain` accessibile al pubblico incorpora la libreria client `/apps/myapp/clientlib`:
 
-Il `main.css` Il file contiene il seguente stile:
+Il file `main.css` contiene il seguente stile:
 
 ```javascript
 body {
@@ -243,7 +243,7 @@ body {
 }
 ```
 
-Il file CSS che `publicmain` Il nodo genera contiene il seguente stile, utilizzando l’URL dell’immagine originale:
+Il file CSS generato dal nodo `publicmain` contiene il seguente stile, che utilizza l&#39;URL dell&#39;immagine originale:
 
 ```javascript
 body {
@@ -256,15 +256,15 @@ body {
 
 #### Vedi File incorporati nell’output di HTML {#see-embedded-files}
 
-Per tracciare l’origine del codice incorporato o per garantire che le librerie client incorporate producano i risultati previsti, puoi visualizzare i nomi dei file incorporati in fase di esecuzione. Per visualizzare i nomi dei file, aggiungi `debugClientLibs=true` all’URL della pagina web. La libreria generata contiene `@import` al posto del codice incorporato.
+Per tracciare l’origine del codice incorporato o per garantire che le librerie client incorporate producano i risultati previsti, puoi visualizzare i nomi dei file incorporati in fase di esecuzione. Per visualizzare i nomi dei file, aggiungi il parametro `debugClientLibs=true` all&#39;URL della pagina Web. La libreria generata contiene `@import` istruzioni invece del codice incorporato.
 
-Nell’esempio del precedente [Incorporazione Di Codice Da Altre Librerie](#embedding-code-from-other-libraries) sezione, il `/etc/client/libraries/myclientlibs/publicmain` la cartella della libreria client incorpora `/apps/myapp/clientlib` cartella della libreria client. L’aggiunta del parametro alla pagina web genera il seguente collegamento nel codice sorgente della pagina web:
+Nell&#39;esempio della precedente sezione [Incorporazione di codice da altre librerie](#embedding-code-from-other-libraries), la cartella della libreria client `/etc/client/libraries/myclientlibs/publicmain` incorpora la cartella della libreria client `/apps/myapp/clientlib`. L’aggiunta del parametro alla pagina web genera il seguente collegamento nel codice sorgente della pagina web:
 
 ```xml
 <link rel="stylesheet" href="/etc/clientlibs/mycientlibs/publicmain.css">
 ```
 
-Apertura di `publicmain.css` Il file mostra il seguente codice:
+L&#39;apertura del file `publicmain.css` rivela il seguente codice:
 
 ```javascript
 @import url("/apps/myapp/clientlib/styles/main.css");
@@ -277,7 +277,7 @@ Apertura di `publicmain.css` Il file mostra il seguente codice:
 
 ### Utilizzo dei preprocessori {#using-preprocessors}
 
-L&#39;AEM consente preprocessori collegabili e viene fornito con supporto per [Compressore YUI](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) per CSS e JavaScript e [Compilatore di chiusura Google (GCC)](https://developers.google.com/closure/compiler/) per JavaScript con YUI impostato come preprocessore predefinito per AEM.
+AEM consente preprocessori collegabili e viene fornito con il supporto per [Compressore YUI](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) per CSS e JavaScript e [Compilatore di chiusura Google (GCC)](https://developers.google.com/closure/compiler/) per JavaScript con YUI impostato come preprocessore predefinito dell&#39;AEM.
 
 I preprocessori collegabili consentono un utilizzo flessibile, tra cui:
 
@@ -288,7 +288,7 @@ I preprocessori collegabili consentono un utilizzo flessibile, tra cui:
 
 >[!NOTE]
 >
->Per impostazione predefinita, l’AEM utilizza il compressore YUI. Consulta la [Documentazione di GitHub per il compressore YUI](https://github.com/yui/yuicompressor/issues) per un elenco dei problemi noti. Il passaggio al compressore GCC per particolari clientlibs può risolvere alcuni problemi osservati durante l’utilizzo di YUI.
+>Per impostazione predefinita, l’AEM utilizza il compressore YUI. Per un elenco dei problemi noti, consulta la [documentazione GitHub per il compressore YUI](https://github.com/yui/yuicompressor/issues). Il passaggio al compressore GCC per particolari clientlibs può risolvere alcuni problemi osservati durante l’utilizzo di YUI.
 
 >[!CAUTION]
 >
@@ -298,8 +298,8 @@ I preprocessori collegabili consentono un utilizzo flessibile, tra cui:
 
 È possibile scegliere di configurare la configurazione dei preprocessori per libreria client o a livello di sistema.
 
-* Aggiungere le proprietà multivalore `cssProcessor` e `jsProcessor` sul nodo clientlibrary
-* Oppure definisci la configurazione predefinita del sistema tramite **Gestione librerie HTML** Configurazione OSGi
+* Aggiungere le proprietà multivalore `cssProcessor` e `jsProcessor` nel nodo clientlibrary
+* Oppure definisci la configurazione predefinita del sistema tramite la configurazione OSGi di **HTML Library Manager**
 
 Una configurazione del preprocessore sul nodo clientlib ha la precedenza sulla configurazione OSGI.
 
@@ -341,15 +341,15 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-Per maggiori dettagli sulle opzioni GCC, vedi [Documentazione GCC](https://developers.google.com/closure/compiler/docs/compilation_levels).
+Per ulteriori dettagli sulle opzioni GCC, vedi [documentazione GCC](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
 #### Imposta minimizzatore predefinito di sistema {#set-system-default-minifier}
 
 YUI è impostato come minimizzatore predefinito in AEM. Per cambiare in GCC, segui la procedura riportata di seguito.
 
-1. Vai a Apache Felix Config Manager all’indirizzo (`http://<host>:<port/system/console/configMgr`)
-1. Trova e modifica il **Adobe Granite HTML Library Manager**.
-1. Abilita **Minimizza** (se non già abilitata).
-1. Imposta il valore **Configurazioni predefinite processore JS** a `min:gcc`.
-   * Le opzioni possono essere trasmesse se separate ad esempio da un punto e virgola, `min:gcc;obfuscate=true`.
-1. Clic **Salva** per salvare le modifiche.
+1. Vai a Apache Felix Config Manager in (`http://<host>:<port/system/console/configMgr`)
+1. Trova e modifica **Adobe Granite HTML Library Manager**.
+1. Abilita l&#39;opzione **Minify** (se non già abilitata).
+1. Imposta il valore **Configurazioni predefinite processore JS** su `min:gcc`.
+   * Le opzioni possono essere passate se separate da un punto e virgola, ad esempio `min:gcc;obfuscate=true`.
+1. Fai clic su **Salva** per salvare le modifiche.

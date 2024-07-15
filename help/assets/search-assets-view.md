@@ -49,7 +49,7 @@ Puoi filtrare i risultati della ricerca in base ai seguenti parametri.
 
 * Data di scadenza: filtra i risultati della ricerca in base allo stato `Expired` delle risorse. Inoltre, è possibile specificare un intervallo di date di scadenza per le risorse per filtrare ulteriormente i risultati della ricerca.
 
-* Filtri personalizzati: [Aggiungere filtri personalizzati](#custom-filters) all’interfaccia utente per la visualizzazione di Assets. Per perfezionare i risultati della ricerca, applica i filtri personalizzati in aggiunta a quelli standard.
+* Filtri personalizzati: [Aggiungi filtri personalizzati](#custom-filters) all&#39;interfaccia utente di visualizzazione di Assets. Per perfezionare i risultati della ricerca, applica i filtri personalizzati in aggiunta a quelli standard.
 
 Puoi ordinare le risorse trovate in ordine crescente o decrescente per `Name`, `Relevancy`, `Size`, `Modified` e `Created`.
 
@@ -57,9 +57,9 @@ Puoi ordinare le risorse trovate in ordine crescente o decrescente per `Name`, `
 
 **Autorizzazioni richieste:** `Can Edit`, `Owner` o Amministratore.
 
-La vista Risorse consente inoltre di aggiungere filtri personalizzati all’interfaccia utente. Puoi applicare i filtri personalizzati in aggiunta ai [filtri standard](#refine-search-results), per perfezionare i risultati della ricerca.
+La vista Assets consente inoltre di aggiungere filtri personalizzati all’interfaccia utente. Puoi applicare i filtri personalizzati in aggiunta ai [filtri standard](#refine-search-results), per perfezionare i risultati della ricerca.
 
-La vista Risorse fornisce i seguenti filtri personalizzati:
+La vista Assets fornisce i seguenti filtri personalizzati:
 
 <table>
     <tbody>
@@ -320,13 +320,13 @@ Gli amministratori possono inoltre disabilitare la ricerca contestuale per gli u
 
 ### Feedback sulla ricerca contestuale {#contextual-search-feedback}
 
-Per fornire un feedback sulla funzione di ricerca contestuale, fai clic su ![Icona Ricerca contestuale](assets/do-not-localize/Smock_Help_18_N.svg) e fai clic sull’icona Feedback. Seleziona il tipo di feedback, specifica l’oggetto e la descrizione, quindi fai clic su **[!UICONTROL Invia]**.
+Se devi fornire un feedback sulla funzione di ricerca contestuale, fai clic sull&#39;icona ![Ricerca contestuale](assets/do-not-localize/Smock_Help_18_N.svg) e fai clic sull&#39;icona Feedback. Seleziona il tipo di feedback, specifica l’oggetto e la descrizione, quindi fai clic su **[!UICONTROL Invia]**.
 
 ![Feedback sulla ricerca contestuale](assets/contextual-search-feedback.png)
 
 ## Passaggi successivi {#next-steps}
 
-* [Guarda un video per cercare le risorse nella vista Risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=it)
+* [Guarda un video per cercare le risorse nella visualizzazione Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=it)
 
 * Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
 

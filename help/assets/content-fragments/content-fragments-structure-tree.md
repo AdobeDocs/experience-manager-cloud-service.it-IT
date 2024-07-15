@@ -1,5 +1,5 @@
 ---
-title: Struttura dei frammenti di contenuto (Risorse - Frammenti di contenuto)
+title: Struttura ad albero dei frammenti di contenuto (Assets - Frammenti di contenuto)
 description: Utilizza la funzione Struttura dell’Editor frammenti di contenuto in AEM per comprendere meglio i contenuti headless.
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 feature: Content Fragments
@@ -20,7 +20,7 @@ Utilizza la funzione Struttura dell’Editor frammenti di contenuto in AEM per c
 >
 >I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
 >
->Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console).
+>Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l&#39;editor originale, a cui si accede principalmente dalla console **Assets**. Per informazioni dettagliate sul nuovo editor, a cui si accede principalmente dalla console **Frammenti di contenuto**, consulta la documentazione di Sites [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 Nell’Editor frammenti di contenuto è possibile selezionare l’icona Struttura:
 
@@ -32,4 +32,4 @@ Verrà visualizzata una rappresentazione della struttura del frammento nel riqua
 >
 >Utilizzando le breadcrumb nel pannello principale, puoi tornare al punto iniziale.
 
-![Esempio di struttura ad albero dei frammenti di contenuto](assets/cfm-structuretree-02.png)
+![Esempio di struttura dei frammenti di contenuto](assets/cfm-structuretree-02.png)

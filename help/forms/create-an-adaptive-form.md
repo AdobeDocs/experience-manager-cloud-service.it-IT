@@ -38,13 +38,13 @@ Prima di iniziare, scopri i tipi di componenti dei moduli disponibili:
 
 Per creare un modulo adattivo è necessario quanto segue:
 
-* **Abilitare i componenti core Forms adattivi per il tuo ambiente**: quando crei un programma, i Componenti core adattivi di Forms sono già abilitati per il tuo ambiente. Se disponi di un ambiente Forms as a Cloud Service basato sull’Archetipo 39 o versioni precedenti, consulta [Abilitare i componenti core dei moduli adattivi per il tuo ambiente](enable-adaptive-forms-core-components.md). Quando abiliti i componenti core per il tuo ambiente, vengono aggiunti il modello e l&#39;area di lavoro del **componente core moduli adattivi**. Se la tua versione dell’SDK di AEM è precedente alla 2023.02.0, [assicurati di aver abilitato il flag `prerelease` nel tuo ambiente ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features), poiché i componenti core dei moduli adattivi facevano parte della versione prerelease precedente alla versione 2023.02.0.
+* **Abilita i componenti core adattivi di Forms per il tuo ambiente**: quando crei un programma, i componenti core adattivi di Forms sono già abilitati per il tuo ambiente. Se disponi di un ambiente Forms as a Cloud Service basato sull’Archetipo 39 o versioni precedenti, consulta [Abilitare i componenti core dei moduli adattivi per il tuo ambiente](enable-adaptive-forms-core-components.md). Quando abiliti i componenti core per il tuo ambiente, vengono aggiunti il modello e l&#39;area di lavoro del **componente core moduli adattivi**. Se la tua versione dell’SDK di AEM è precedente alla 2023.02.0, [assicurati di aver abilitato il flag `prerelease` nel tuo ambiente ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features), poiché i componenti core dei moduli adattivi facevano parte della versione prerelease precedente alla versione 2023.02.0.
 
 * **Un modello di modulo adattivo**: un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Include componenti preformattati contenenti determinate proprietà e struttura del contenuto. Fornisce inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto, mentre l’azione di invio definisce l’azione da intraprendere al momento dell’invio di un modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. Il Cloud Service fornisce un modello OOTB, denominato vuoto:
 
    * Il modello `blank` è incluso in ogni nuovo programma AEM Forms as a Cloud Service.
    * È possibile installare il pacchetto di riferimento tramite Gestione pacchetti per aggiungere il `blank` modello al programma AEM Forms as a Cloud Service.
-   * È inoltre possibile [creare un modello di Forms adattivo (componenti core)](template-editor.md) da zero.
+   * È inoltre possibile [creare un modello di Forms adattivo (Componenti core)](template-editor.md) da zero.
 
 * **Un tema per moduli adattivi**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti.  Il modello `Canvas` è incluso in ogni nuovo programma AEM Forms as a Cloud Service.
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
@@ -57,9 +57,9 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 1. Accedi all’istanza di authoring [!DNL Experience Manager Forms]. Può essere un’istanza Cloud o un’istanza di sviluppo locale.
 
-1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Dopo aver effettuato l&#39;accesso, nell&#39;angolo superiore sinistro selezionare **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 
-1. Seleziona **[!UICONTROL Crea]**  > **[!UICONTROL Forms adattivo]**. Viene aperta la procedura guidata. Nella scheda Sorgente, seleziona un modello:
+1. Selezionare **[!UICONTROL Crea]** > **[!UICONTROL Forms adattivo]**. Viene aperta la procedura guidata. Nella scheda Sorgente, seleziona un modello:
 
    ![Modello componenti core](/help/forms/assets/core-components-template.png){width="100%" align="center"}
 
@@ -78,7 +78,7 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 1. (Facoltativo) Nella scheda Dati, seleziona un modello dati:
 
-   * **Modello dati modulo**: A [Modello dati modulo (FDM)](data-integration.md) consente di integrare entità e servizi da diverse origini dati a un modulo adattivo. Scegli Modello dati modulo (FDM) se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
+   * **Modello dati modulo**: un [Modello dati modulo (FDM)](data-integration.md) consente di integrare entità e servizi da origini dati diverse a un Modulo adattivo. Scegli Modello dati modulo (FDM) se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
 
    * **Schema JSON**: lo [Schema JSON](adaptive-form-json-schema-form-model.md) è nostro modulo adattivo basato su componenti core che consente l’integrazione perfetta con il sistema back-end della tua organizzazione, grazie alla possibilità di associare uno schema JSON, che rappresenta la struttura dei dati prodotti o utilizzati. Questa associazione consente agli autori di aggiungere contenuti al modulo adattivo in modo dinamico, utilizzando gli elementi dello schema. Gli elementi dello schema sono facilmente accessibili nella scheda Oggetti modello dati del browser Contenuto durante il processo di authoring e tutti i campi vengono aggiunti automaticamente a qualsiasi modulo adattivo creato.
 
@@ -98,7 +98,7 @@ Per creare un modulo adattivo è necessario quanto segue:
    * **[!UICONTROL Nome:]** specifica il nome del modulo. Nell’archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo nome può contenere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti da un trattino.
    * **[!UICONTROL Percorso:]** specifica la posizione in cui salvare il modulo adattivo. Puoi salvare il modulo adattivo direttamente all’indirizzo `/content/dam/formsanddocuments` o creare una cartella di salvataggio come `/content/dam/formsanddocuments/adaptiveforms`. Assicurati di creare la cartella prima di utilizzarla nel percorso. Il campo **[!UICONTROL Percorso]** non crea cartelle automaticamente.
 
-1. Seleziona **[!UICONTROL Crea]**. Viene creato un modulo adattivo che viene aperto nell’editor di moduli adattivi. L’editor mostra i contenuti disponibili nel modello.  In base al tipo di modulo adattivo, gli elementi del modulo presenti nel <!--XFA form template, XML schema or --> Lo schema JSON o il modello dati del modulo (FDM) vengono visualizzati nel **[!UICONTROL Oggetti modello dati]** scheda di **[!UICONTROL Browser contenuti]** nella barra laterale.
+1. Seleziona **[!UICONTROL Crea]**. Viene creato un modulo adattivo che viene aperto nell’editor di moduli adattivi. L’editor mostra i contenuti disponibili nel modello.  In base al tipo di modulo adattivo, gli elementi del modulo presenti nello schema JSON o nel modello dati del modulo (FDM) <!--XFA form template, XML schema or --> associato vengono visualizzati nella scheda **[!UICONTROL Oggetti modello dati]** del **[!UICONTROL Browser contenuti]** nella barra laterale.
 
 Ora puoi trascinare i [Componenti core dei moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it#components) o gli elementi dello schema, per creare il tuo modulo adattivo.
 
@@ -117,11 +117,11 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 * **Autorizzazioni**: aggiungi gli utenti a [!DNL forms-users] per fornire loro le autorizzazioni per creare un modulo adattivo. Per un elenco dettagliato dei gruppi di utenti specifici dei moduli, consulta [Gruppi e autorizzazioni](forms-groups-privileges-tasks.md).
 
-* **Tema per modulo adattivo**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. È possibile [creare un tema](themes.md) o [importa un tema esistente](import-export-forms-templates.md#uploading-a-theme). Puoi anche distribuire l’[archetipo più recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) per alcuni temi campioni.
+* **Tema per modulo adattivo**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Puoi [creare un tema](themes.md) o [importare un tema esistente](import-export-forms-templates.md#uploading-a-theme). Puoi anche distribuire l’[archetipo più recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) per alcuni temi campioni.
 
 * **Modello di modulo adattivo**: un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Include componenti preformattati contenenti determinate proprietà e struttura del contenuto. Fornisce inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto, mentre l’azione di invio definisce l’azione da intraprendere al momento dell’invio di un modulo adattivo. Ad esempio, l’invio dei dati raccolti a un’origine dati. Cloud Service supporta due tipi di modelli:
 
-   * **Modello modificabile**: puoi [creare un](template-editor.md) o [importa un modello modificabile esistente](migrate-to-forms-as-a-cloud-service.md). Puoi anche distribuire l’[archetipo più recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=it#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) per ottenere alcuni modelli modificabili campioni.
+   * **Modello modificabile**: è possibile [creare un](template-editor.md) o [importare un modello modificabile esistente](migrate-to-forms-as-a-cloud-service.md). Puoi anche distribuire l’[archetipo più recente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=it#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) per ottenere alcuni modelli modificabili campioni.
 
    * **Modello statico**: si tratta di modelli legacy e sono consigliati solo se si esegue la migrazione da installazioni di AEM Forms On-Premise o Adobe Managed Services (AMS) (AEM Forms 6.5 o versioni precedenti). Consentono di continuare a sfruttare quanto hai già investito in modelli statici. Quando crei un modulo adattivo, utilizza un modello modificabile.
 
@@ -132,9 +132,9 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 1. Inserisci le credenziali nella pagina di accesso di Experience Manager.
 
-   Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+   Dopo aver effettuato l&#39;accesso, nell&#39;angolo superiore sinistro selezionare **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 
-1. Seleziona **[!UICONTROL Crea]**  > **[!UICONTROL Forms adattivo]**. Viene aperta la procedura guidata.
+1. Selezionare **[!UICONTROL Crea]** > **[!UICONTROL Forms adattivo]**. Viene aperta la procedura guidata.
 1. Nella scheda Sorgente, seleziona un modello:
 
    * Quando selezioni un modello modificabile, vengono selezionati automaticamente il tema e l’azione di invio specificati nel modello e viene attivato il pulsante **[!UICONTROL Crea]**. Puoi per selezionare un altro tema o un’altra azione di invio dalla scheda **[!UICONTROL Stile]** o **[!UICONTROL Invio]**. Se nel modello modificabile selezionato non è stato specificato un tema, il pulsante Crea rimane disattivato. Puoi selezionare manualmente un tema dalla scheda **[!UICONTROL Stili]**.
@@ -152,7 +152,7 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 1. (Facoltativo) Nella scheda **[!UICONTROL Dati]**, seleziona un modello dati:
 
-   * **Modello dati modulo**: A [Modello dati modulo (FDM)](data-integration.md) consente di integrare entità e servizi da diverse origini dati a un modulo adattivo. Scegli Modello dati modulo (FDM) se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
+   * **Modello dati modulo**: un [Modello dati modulo (FDM)](data-integration.md) consente di integrare entità e servizi da origini dati diverse a un Modulo adattivo. Scegli Modello dati modulo (FDM) se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
 
    * **Schema JSON**: lo [schema JSON](adaptive-form-json-schema-form-model.md) rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema di back-end dell’organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema sono disponibili per l’utilizzo nella scheda Oggetti modello dati del browser Contenuto durante l’authoring di Forms adattivo. Tutti i campi vengono aggiunti anche al modulo adattivo creato.
 
@@ -180,7 +180,7 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 1. Seleziona **[!UICONTROL Crea]**. Viene creato un modulo adattivo che viene aperto nell’editor di moduli adattivi. L’editor mostra i contenuti disponibili nel modello. Viene inoltre visualizzata la barra laterale per personalizzare il modulo creato in base alle esigenze.
 
-   In base al tipo di modulo adattivo, gli elementi del modulo presenti nel <!--XFA form template, XML schema or --> Lo schema JSON o il modello dati del modulo (FDM) vengono visualizzati nel **[!UICONTROL Oggetti modello dati]** scheda di **[!UICONTROL Browser contenuti]** nella barra laterale. Puoi anche trascinare questi elementi per creare il modulo adattivo.
+   In base al tipo di modulo adattivo, gli elementi del modulo presenti nello schema JSON o nel modello dati del modulo (FDM) <!--XFA form template, XML schema or --> associato vengono visualizzati nella scheda **[!UICONTROL Oggetti modello dati]** del **[!UICONTROL Browser contenuti]** nella barra laterale. Puoi anche trascinare questi elementi per creare il modulo adattivo.
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -235,11 +235,11 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 Puoi modificare il modello di modulo per un modulo adattivo (basato su JSON o Modello dati modulo (FDM)). Non è possibile passare da un modello di modulo a un altro.
 
-1. Seleziona il modulo adattivo e fai clic sul pulsante **Proprietà** icona.
+1. Seleziona il modulo adattivo e l&#39;icona **Proprietà**.
 1. Apri la scheda **[!UICONTROL Modello modulo]** ed effettua una delle seguenti operazioni.
 
-   * Se il modulo adattivo non dispone di un modello di modulo, puoi scegliere un altro modello di modulo e quindi selezionare <!-- a form template, --> Schema XML o JSON o modello dati modulo (FDM).
-   * Se il modulo adattivo è basato su un modello di modulo, puoi sceglierne un altro <!-- form template, --> Schema XML o JSON oppure Modello dati modulo (FDM) per lo stesso modello di modulo.
+   * Se il modulo adattivo non dispone di un modello di modulo, è possibile scegliere un altro modello di modulo e di conseguenza selezionare lo schema XML o JSON <!-- a form template, --> o il modello di dati del modulo (FDM).
+   * Se il modulo adattivo è basato su un modello di modulo, è possibile scegliere un altro schema XML o JSON <!-- form template, --> o modello dati modulo (FDM) per lo stesso modello di modulo.
 
 1. Seleziona **[!UICONTROL Salva]** per salvare le proprietà.
 
@@ -249,8 +249,8 @@ Puoi anche modificare le proprietà del modello di modulo dall’editor di modul
 1. Fai clic sull’icona ![Configura icona](/help/forms/assets/configure-icon.svg) per aprire le **[!UICONTROL proprietà]** del contenitore per modulo adattivo.
 1. Seleziona la scheda **[!UICONTROL Modello di dati]** ed effettua una delle seguenti operazioni:
 
-   * Se il modulo adattivo non dispone di un modello di modulo, puoi scegliere un modello di modulo e quindi selezionare <!-- a form template, --> Schema XML o JSON o modello dati modulo (FDM).
-   * Se il modulo adattivo si basa su un modello di modulo, non è possibile modificarlo. Puoi sceglierne un altro <!-- form template, --> Schema XML o JSON oppure Modello dati modulo (FDM) per lo stesso modello di modulo applicabile.
+   * Se il modulo adattivo non dispone di un modello di modulo, è possibile scegliere un modello di modulo e di conseguenza selezionare lo schema XML o JSON <!-- a form template, --> o il modello di dati del modulo (FDM).
+   * Se il modulo adattivo si basa su un modello di modulo, non è possibile modificarlo. È possibile scegliere un altro schema XML o JSON <!-- form template, --> o modello dati modulo (FDM) per lo stesso modello di modulo applicabile.
 1. Seleziona ![Salva](/help/forms/assets/check-button.png) per salvare le proprietà.
 
 ![Supporto schema FDM](/help/forms/assets/fdmsupport.png){width="100%" align="center"}

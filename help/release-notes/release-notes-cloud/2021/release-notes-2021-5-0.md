@@ -27,29 +27,29 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 è il 27 maggio 2021.
 La seguente versione (2021.6.0) sarà del 28 giugno 2021.
 
-## Fondazione AEM as a Cloud Service {#foundation}
+## AEM as a Cloud Service Foundation {#foundation}
 
-### Novità dell’AEM as a Cloud Service Foundation {#what-is-new-foundation}
+### Novità di AEM as a Cloud Service Foundation {#what-is-new-foundation}
 
-* [Canale prerelease](/help/release-notes/prerelease.md): visualizza l’anteprima delle prossime funzioni per un mese intero prima che vengano pubblicate in produzione!
+* [Canale prerelease](/help/release-notes/prerelease.md): anteprima delle prossime funzionalità per un mese intero prima che vengano pubblicate in produzione!
 
-* [API obsoleta](/help/release-notes/deprecated-removed-features.md): è disponibile un elenco delle ultime API obsolete per AEM as a Cloud Service.
+* [API obsolete](/help/release-notes/deprecated-removed-features.md): è disponibile un elenco delle ultime API obsolete per AEM as a Cloud Service.
 
-* [Plug-in Maven per SDK Build Analyzer per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it): aggiorna i progetti Maven alla versione più recente, che include un controllo API Java obsoleto e altri miglioramenti.
+* [Plug-in Maven SDK Build Analyzer per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it): aggiorna i progetti Maven all&#39;ultima versione, con la verifica di API Java obsolete e altri miglioramenti.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Novità in [!DNL Sites] {#what-is-new-sites}
 
-* Presto potrai verificare i contenuti su una nuova [Anteprima livello](/help/sites-cloud/authoring/sites-console/previewing-content.md) per simulare l’aspetto finale dell’esperienza così come si presenterà nel livello Pubblicazione. Questa funzione è abilitata dalla procedura guidata Pubblicazione gestita in AEM Sites, che ora consente di scegliere una destinazione di pubblicazione tra Pubblicazione o Anteprima. Le esperienze in Anteprima sono quindi accessibili tramite un URL dedicato. Dopo la convalida nell’ambiente di Anteprima, il contenuto può essere pubblicato come di consueto da Authoring a Pubblicazione. Il servizio Anteprima negli ambienti AEM as a Cloud Service verrà introdotto gradualmente nelle prossime settimane.
+* Presto potrai verificare il contenuto in un nuovo [livello di anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md) per simulare l&#39;aspetto finale dell&#39;esperienza così come si presenterà nel livello Publish. Questa funzione è abilitata dalla procedura guidata Pubblicazione gestita in AEM Sites, che ora consente di scegliere una destinazione di pubblicazione tra Publish o Anteprima. Le esperienze in Anteprima sono quindi accessibili tramite un URL dedicato. Dopo la convalida nell’ambiente di Anteprima, il contenuto può essere pubblicato come di consueto da Authoring a Publish. Il servizio Anteprima negli ambienti AEM as a Cloud Service verrà introdotto gradualmente nelle prossime settimane.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Novità in [!DNL Assets] {#what-is-new-assets}
 
-* Puoi scaricare le risorse condivise utilizzando la funzionalità Condivisione collegamenti. Questo download utilizza ora un servizio asincrono che offre download più veloci e ininterrotti, anche per download di dimensioni molto grandi. Consulta [scaricare le risorse](/help/assets/download-assets-from-aem.md#link-share-download).
+* Puoi scaricare le risorse condivise utilizzando la funzionalità Condivisione collegamenti. Questo download utilizza ora un servizio asincrono che offre download più veloci e ininterrotti, anche per download di dimensioni molto grandi. Vedi [scarica risorse](/help/assets/download-assets-from-aem.md#link-share-download).
 
-  ![Casella in entrata download](/help/assets/assets/download-inbox.png)
+  ![Scarica casella in entrata](/help/assets/assets/download-inbox.png)
 
 ### Nuove funzioni disponibili nel canale prerelease di {#what-is-new-assets-prerelease}
 
@@ -59,18 +59,18 @@ La seguente versione (2021.6.0) sarà del 28 giugno 2021.
 
 * Lo strumento Asset Bulk Ingestor consente di aggiungere metadati durante un’acquisizione in blocco.
 
-* I miglioramenti dell’esperienza utente consentono di visualizzare il numero di risorse presenti in una cartella. Per più di 1000 risorse in una cartella, [!DNL Assets] visualizza 1000+.
+* I miglioramenti dell’esperienza utente consentono di visualizzare il numero di risorse presenti in una cartella. Se una cartella contiene più di 1000 risorse, [!DNL Assets] visualizza la dicitura &quot;1000+&quot;.
 
-  ![Nell’interfaccia viene visualizzato il numero di risorse presenti in una cartella](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![Numero di risorse in una cartella visualizzate nell&#39;interfaccia](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### Bug corretti in [!DNL Assets] {#assets-bugs-fixed}
 
-* Il caricamento di file di grandi dimensioni provoca l’arresto anomalo del [!DNL Experience Manager desktop app]. (CQ-4320942)
+* Il caricamento di file di grandi dimensioni provoca l&#39;arresto anomalo di [!DNL Experience Manager desktop app]. (CQ-4320942)
 * Le opzioni della barra degli strumenti sono diverse quando la stessa raccolta viene selezionata all’interno di una cartella e quando viene selezionata da un risultato di ricerca. (CQ-4321406)
 
 #### Novità di Dynamic Medie {#what-is-new-dm}
 
-* La funzione Smart Imaging DPR (Device Pixel Ratio) e l&#39;ottimizzazione della larghezza di banda della rete consentono di fornire immagini di alta qualità in modo efficiente su dispositivi con display ad alta risoluzione e larghezza di banda limitata. Per ulteriori informazioni, consulta [Domande frequenti sulla tecnologia Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) e [Ottimizzazione delle immagini con i formati WebP e AVIF di nuova generazione.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* La funzione Smart Imaging DPR (Device Pixel Ratio) e l&#39;ottimizzazione della larghezza di banda della rete consentono di fornire immagini di alta qualità in modo efficiente su dispositivi con display ad alta risoluzione e larghezza di banda limitata. Per ulteriori informazioni, consulta [Domande frequenti su Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) e [Ottimizzazione immagine con formati immagine di nuova generazione WebP e AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 * È stato introdotto il supporto per il formato AVIF di nuova generazione nella distribuzione Dynamic Medie (modificatore URL fmt).
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -150,7 +150,7 @@ La data di pubblicazione dello strumento Content Transfer v1.4.6 è il 27 maggio
 
 * Se l&#39;utente non dispone dell&#39;autorizzazione di esecuzione per l&#39;eseguibile Java, è stata aggiunta una nuova istruzione di registrazione al registro degli errori dell&#39;avvio rapido.
 
-* Quando un utente elimina un set di migrazione dall’interfaccia utente CTT, dove è stata eseguita un’estrazione, il `tmp` per risparmiare spazio, viene eliminata la cartella associata a tale set di migrazione.
+* Quando un utente elimina un set di migrazione dall&#39;interfaccia utente CTT, in cui è stata eseguita un&#39;estrazione, la cartella `tmp` associata a tale set di migrazione viene eliminata per risparmiare spazio.
 
 ### Correzioni di bug {#bug-fixes-ctt-latest}
 
@@ -170,7 +170,7 @@ La data di pubblicazione dello strumento Content Transfer v1.4.0 è l’11 maggi
 ### Correzioni di bug {#bug-fixes-ctt-may}
 
 * Sono state apportate diverse correzioni di bug alla funzione di aggiornamento automatico nell’interfaccia dello strumento Content Transfer (Trasferimento contenuti).
-* Strumento Content Transfer con `wipe=true` ha prodotto un indice del contatore errato sulla destinazione. Questo problema è stato risolto.
+* Lo strumento Content Transfer con `wipe=true` ha prodotto un indice del contatore errato sulla destinazione. Questo problema è stato risolto.
 
 ## Componente aggiuntivo Commerce {#cloud-services-commerce}
 

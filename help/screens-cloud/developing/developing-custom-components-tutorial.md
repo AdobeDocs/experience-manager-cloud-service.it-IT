@@ -24,82 +24,82 @@ Questo tutorial è destinato agli sviluppatori che hanno poca esperienza con AEM
 
 Per completare questa esercitazione, sono necessari i seguenti elementi:
 
-1. Pacchetto di funzioni per gli schermi più recenti
+1. Feature Pack di Screens più recente
 
 1. Lettore AEM Screens
 
 1. Ambiente di sviluppo locale
 
-I passaggi del tutorial e le schermate vengono eseguiti utilizzando **CRXDE Liti**. È inoltre possibile utilizzare gli IDE per completare l&#39;esercitazione. Ulteriori informazioni sull&#39;utilizzo di un IDE per sviluppare [con AEM si trova qui.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+I passaggi dell&#39;esercitazione e le schermate vengono eseguiti utilizzando **CRXDE Liti**. È inoltre possibile utilizzare gli IDE per completare l&#39;esercitazione. Ulteriori informazioni sull&#39;utilizzo di un IDE per sviluppare [con AEM sono disponibili qui.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
 
 
 ## Configurazione del progetto {#project-setup}
 
-Il codice sorgente di un progetto Screens viene in genere gestito come progetto Maven con più moduli. Per accelerare l’esercitazione, un progetto è stato pregenerato utilizzando [Archetipo progetto AEM 13](https://github.com/adobe/aem-project-archetype). Ulteriori dettagli su [creazione di un progetto con Archetipo progetto AEM Maven disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
+Il codice sorgente di un progetto Screens viene in genere gestito come progetto Maven con più moduli. Per accelerare l&#39;esercitazione, è stato pregenerato un progetto utilizzando [AEM Project Archetype 13](https://github.com/adobe/aem-project-archetype). Ulteriori dettagli sulla [creazione di un progetto con Archetipo progetto AEM Maven sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
 
 1. Scarica e installa i seguenti pacchetti utilizzando [Gestione pacchetti CRX](http://localhost:4502/crx/packmgr/index.jsp):
 
 [Ottieni file](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
 
    [Ottieni file](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
-   **Facoltativamente** se lavori con Eclipse o un altro IDE, scarica il pacchetto sorgente seguente. Distribuisci il progetto in un’istanza AEM locale utilizzando il comando Maven:
+   **Facoltativamente** se si lavora con Eclipse o un altro IDE, scaricare il pacchetto di origine seguente. Distribuisci il progetto in un’istanza AEM locale utilizzando il comando Maven:
 
    **`mvn -PautoInstallPackage clean install`**
 
-   Avvia il progetto di esecuzione We.Retail di HelloWorld SRC Screens
+   Avvia progetto di esecuzione We.Retail di HelloWorld SRC Screens
 
 [Ottieni file](/help/screens-cloud/developing/assets/src-screens-weretail-run.zip)
 
-1. In entrata [Gestione pacchetti CRX](http://localhost:4502/crx/packmgr/index.jsp), verifica che siano installati i seguenti due pacchetti:
+1. In [Gestione pacchetti CRX](http://localhost:4502/crx/packmgr/index.jsp), verificare che siano installati i due pacchetti seguenti:
 
    1. **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**
    1. **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip**
 
-   ![Screens Esecuzione di pacchetti Ui.Apps e Ui.Content tramite CRX Package Manager](assets/crx-packages.png)
+   ![Screens We.Retail Esegui pacchetti Ui.Apps e Ui.Content installati tramite Gestione pacchetti CRX](assets/crx-packages.png)
 
-   Screens Esecuzione di pacchetti Ui.Apps e Ui.Content tramite CRX Package Manager
+   Screens We.Retail Esegui pacchetti Ui.Apps e Ui.Content installati tramite CRX Package Manager
 
-1. Il **screens-weretail-run.ui.apps** il pacchetto installa il codice sotto a `/apps/weretail-run`.
+1. Il pacchetto **screens-weretail-run.ui.apps** installa il codice sotto `/apps/weretail-run`.
 
-   Questo pacchetto contiene il codice responsabile del rendering dei componenti personalizzati per il progetto. Questo pacchetto include il codice del componente ed eventuali codici JavaScript o CSS necessari. Questo pacchetto incorpora anche **screens-weretail-run.core-0.0.1-SNAPSHOT.jar** che contiene il codice Java™ necessario per il progetto.
+   Questo pacchetto contiene il codice responsabile del rendering dei componenti personalizzati per il progetto. Questo pacchetto include il codice del componente ed eventuali JavaScript o CSS necessari. Questo pacchetto incorpora anche **screens-weretail-run.core-0.0.1-SNAPSHOT.jar** che contiene il codice Java™ necessario per il progetto.
 
    >[!NOTE]
    >
    >In questa esercitazione non viene scritto alcun codice Java™. Se è necessaria una logica di business più complessa, è possibile creare e distribuire Java™ di back-end utilizzando il bundle Java™ di base.
 
-   ![Rappresentazione del codice ui.apps in CRXDE Liti](/help/screens-cloud/developing/assets/uipps-contents.png)
+   ![Rappresentazione del codice ui.apps in CRXDE Lite](/help/screens-cloud/developing/assets/uipps-contents.png)
 
-   Rappresentazione del codice ui.apps in CRXDE Liti
+   Rappresentazione del codice ui.apps in CRXDE Lite
 
-   Il **`helloworld`** il componente è solo un segnaposto. Nel corso dell’esercitazione, viene aggiunta una funzionalità che consente all’autore di aggiornare il messaggio visualizzato dal componente.
+   Il componente **`helloworld`** è solo un segnaposto. Nel corso dell’esercitazione, viene aggiunta una funzionalità che consente all’autore di aggiornare il messaggio visualizzato dal componente.
 
-1. Il **screens-weretail-run.ui.content** il pacchetto installa il codice sotto:
+1. Il pacchetto **screens-weretail-run.ui.content** installa il codice sotto:
 
    * `/conf/we-retail-run`
    * `/content/dam/we-retail-run`
    * `/content/screens/we-retail-run`
 
-   Questo pacchetto contiene il contenuto iniziale e la struttura di configurazione necessaria per il progetto. **`/conf/we-retail-run`** contiene tutte le configurazioni per il progetto di esecuzione We.Retail. **`/content/dam/we-retail-run`** include l’avvio delle risorse digitali per il progetto. **`/content/screens/we-retail-run`** contiene la struttura del contenuto Screens. Il contenuto sotto questi percorsi viene aggiornato principalmente in AEM. Per promuovere la coerenza tra gli ambienti (locale, di sviluppo, di staging, di produzione) spesso nel controllo del codice sorgente viene salvata una struttura di contenuto di base.
+   Questo pacchetto contiene il contenuto iniziale e la struttura di configurazione necessaria per il progetto. **`/conf/we-retail-run`** contiene tutte le configurazioni per il progetto di esecuzione We.Retail. **`/content/dam/we-retail-run`** include l&#39;avvio delle risorse digitali per il progetto. **`/content/screens/we-retail-run`** contiene la struttura del contenuto di Screens. Il contenuto sotto questi percorsi viene aggiornato principalmente in AEM. Per promuovere la coerenza tra gli ambienti (locale, di sviluppo, di staging, di produzione) spesso nel controllo del codice sorgente viene salvata una struttura di contenuto di base.
 
 1. **Passa al progetto AEM Screens > Esecuzione We.Retail:**
 
-   Dal menu Start dell’AEM > fai clic sull’icona Schermi. Verifica che sia visibile il progetto di esecuzione We.Retail.
+   Dal menu Start dell’AEM > fai clic sull’icona del Screens. Verifica che sia visibile il progetto di esecuzione We.Retail.
 
    ![we-retaiul-run-starter](/help/screens-cloud/developing/assets/we-retaiul-run-starter.png)
 
 ## Creare il componente Hello World {#hello-world-cmp}
 
-Il componente Hello World è un componente semplice che consente a un utente di inserire un messaggio da visualizzare sullo schermo. Il componente è basato su [Modello del componente AEM Screens: https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template).
+Il componente Hello World è un componente semplice che consente a un utente di inserire un messaggio da visualizzare sullo schermo. Il componente è basato sul [modello di componente AEM Screens: https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template).
 
 AEM Screens presenta alcuni vincoli interessanti che non sono necessariamente validi per i componenti WCM Sites tradizionali.
 
 * La maggior parte dei componenti Screens deve essere eseguita a schermo intero sui dispositivi di digital signage di destinazione
-* La maggior parte dei componenti Schermi deve essere incorporata nei canali di sequenza per generare presentazioni
+* La maggior parte dei componenti Screens deve essere incorporata nei canali di sequenza per generare presentazioni
 * L’authoring deve consentire di modificare singoli componenti in un canale di sequenza, pertanto il loro rendering a schermo intero non è necessario
 
-1. In entrata **CRXDE-Lite** `http://localhost:4502/crx/de/index.jsp` (o IDE), passa a `/apps/weretail-run/components/content/helloworld.`
+1. In **CRXDE-Lite** `http://localhost:4502/crx/de/index.jsp` (o IDE scelto), passa a `/apps/weretail-run/components/content/helloworld.`
 
-   Aggiungi le seguenti proprietà alla `helloworld` componente:
+   Aggiungi le seguenti proprietà al componente `helloworld`:
 
    ```
        jcr:title="Hello World"
@@ -111,7 +111,7 @@ AEM Screens presenta alcuni vincoli interessanti che non sono necessariamente va
 
    Proprietà per /apps/weretail-run/components/content/helloworld
 
-   Il **`helloworld`** il componente estende **foundation/components/parbase** in modo che possa essere utilizzato correttamente all&#39;interno di un canale di sequenza.
+   Il componente **`helloworld`** estende il componente **foundation/components/parbase** in modo che possa essere utilizzato correttamente in un canale di sequenza.
 
 1. Crea un file sotto `/apps/weretail-run/components/content/helloworld` denominato `helloworld.html.`
 
@@ -131,12 +131,12 @@ AEM Screens presenta alcuni vincoli interessanti che non sono necessariamente va
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   I componenti Screens richiedono due rendering diversi a seconda di quale [modalità di authoring](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) è in uso:
+   I componenti Screens richiedono due rendering diversi a seconda della [modalità di authoring](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) utilizzata:
 
    1. **Produzione**: modalità Anteprima o Publish (wcmmode=disabled)
-   1. **Modifica**: utilizzato per tutte le altre modalità di authoring, ovvero modifica, progettazione, scaffolding, sviluppatore...
+   1. **Modifica**: utilizzato per tutte le altre modalità di creazione, ovvero modifica, progettazione, scaffolding, sviluppatore...
 
-   `helloworld.html`funge da switch, controllando quale modalità di authoring è attiva e reindirizzando a un altro script HTL. Una convenzione comune utilizzata dai componenti Screens consiste nell’avere `edit.html` script per la modalità di modifica e un `production.html` script per la modalità di produzione.
+   `helloworld.html`funge da commutatore, controllando quale modalità di authoring è attiva e reindirizzando a un altro script HTL. Una convenzione comune utilizzata dai componenti Screens consiste nell&#39;avere uno script `edit.html` per la modalità di modifica e uno script `production.html` per la modalità di produzione.
 
 1. Crea un file sotto `/apps/weretail-run/components/content/helloworld` denominato `production.html.`
 
@@ -153,11 +153,11 @@ AEM Screens presenta alcuni vincoli interessanti che non sono necessariamente va
    </div>
    ```
 
-   Il markup di produzione riportato sopra si riferisce al componente Hello World. A `data-duration` Questo attributo è incluso poiché il componente viene utilizzato su un canale Sequenza. Il `data-duration` L&#39;attributo viene utilizzato dal canale della sequenza per sapere per quanto tempo deve essere visualizzato un elemento della sequenza.
+   Il markup di produzione riportato sopra si riferisce al componente Hello World. Poiché il componente viene utilizzato su un canale Sequenza, è incluso un attributo `data-duration`. L&#39;attributo `data-duration` viene utilizzato dal canale della sequenza per sapere per quanto tempo deve essere visualizzato un elemento della sequenza.
 
-   Il componente genera un `div` e un `h1` con testo. `${properties.message}` è una parte dello script HTL che restituisce il contenuto di una proprietà JCR denominata `message`. Successivamente viene creata una finestra di dialogo che consente all’utente di immettere un valore per `message` testo della proprietà.
+   Il componente esegue il rendering di un tag `div` e `h1` con testo. `${properties.message}` è una parte dello script HTL che restituisce il contenuto di una proprietà JCR denominata `message`. In seguito viene creata una finestra di dialogo che consente all&#39;utente di immettere un valore per il testo della proprietà `message`.
 
-   Si noti inoltre che con il componente viene utilizzata la notazione BEM (Block Element Modifier). BEM è una convenzione di codifica CSS che semplifica la creazione di componenti riutilizzabili. BEM è la notazione utilizzata da [Componenti core AEM](https://github.com/adobe/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
+   Si noti inoltre che con il componente viene utilizzata la notazione BEM (Block Element Modifier). BEM è una convenzione di codifica CSS che semplifica la creazione di componenti riutilizzabili. BEM è la notazione utilizzata da [Componenti core dell&#39;AEM](https://github.com/adobe/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
 
 1. Crea un file sotto `/apps/weretail-run/components/content/helloworld` denominato `edit.html.`
 
@@ -186,18 +186,18 @@ AEM Screens presenta alcuni vincoli interessanti che non sono necessariamente va
 
    Il markup di modifica qui sopra si riferisce al componente Hello World. Nel primo blocco viene visualizzata una versione di modifica del componente, se il messaggio della finestra di dialogo è stato popolato.
 
-   Se non è stato immesso alcun messaggio di dialogo, viene eseguito il rendering del secondo blocco. Il `cq-placeholder` e `data-emptytext` eseguire il rendering dell’etichetta ***Hello World*** come detentore del luogo in tale caso. La stringa per l’etichetta può essere internazionalizzata utilizzando i18n per supportare l’authoring in più lingue.
+   Se non è stato immesso alcun messaggio di dialogo, viene eseguito il rendering del secondo blocco. `cq-placeholder` e `data-emptytext` eseguono il rendering dell&#39;etichetta ***Hello World*** come segnaposto in questo caso. La stringa per l’etichetta può essere internazionalizzata utilizzando i18n per supportare l’authoring in più lingue.
 
-1. **Finestra di dialogo Copia immagine di Screens da utilizzare per il componente Hello World.**
+1. **Copia finestra di dialogo immagine Screens da utilizzare per il componente Hello World.**
 
    È più semplice iniziare da una finestra di dialogo esistente e quindi apportare modifiche.
 
    1. Copia la finestra di dialogo da: `/libs/screens/core/components/content/image/cq:dialog`
    1. Incolla la finestra di dialogo sotto `/apps/weretail-run/components/content/helloworld`
 
-   ![copy-image-dialog](/help/screens-cloud/developing/assets/copy-image-dialog.gif)
+   ![copia-immagine-finestra di dialogo](/help/screens-cloud/developing/assets/copy-image-dialog.gif)
 
-1. **Aggiorna la finestra di dialogo Hello World per includere una scheda per il messaggio.**
+1. **Aggiorna finestra di dialogo Hello World per includere una scheda per il messaggio.**
 
    Aggiorna la finestra di dialogo in modo che corrisponda a quanto segue. La struttura dei nodi JCR della finestra di dialogo finale è presentata di seguito in XML:
 
@@ -257,9 +257,9 @@ AEM Screens presenta alcuni vincoli interessanti che non sono necessariamente va
    </jcr:root>
    ```
 
-   Il `textfield` per il messaggio viene salvato in una proprietà denominata `message` e che `numberfield` per il salvataggio della Durata in una proprietà denominata `duration`. Entrambe queste proprietà sono indicate in `/apps/weretail-run/components/content/helloworld/production.html` da HTL come `${properties.message}` e `${properties.duration}`.
+   `textfield` per il messaggio viene salvato in una proprietà denominata `message` e `numberfield` per la durata viene salvato in una proprietà denominata `duration`. In `/apps/weretail-run/components/content/helloworld/production.html` HTL fa riferimento a entrambe queste proprietà come `${properties.message}` e `${properties.duration}`.
 
-   ![Finestra di dialogo Hello World - completato](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
+   ![Hello World - finestra di dialogo completata](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
    Finestra di dialogo Hello World - completato
 
@@ -271,13 +271,13 @@ I componenti AEM Screens vengono riprodotti in modo diverso nelle modalità Modi
 
 1. Crea una cartella per le librerie lato client per il componente Hello World.
 
-   Sotto `/apps/weretail-run/components/content/helloworld`, crea una cartella denominata `clientlibs`.
+   Sotto `/apps/weretail-run/components/content/helloworld`, creare una cartella denominata `clientlibs`.
 
-   ![04/04/2018_at_1046](/help/screens-cloud/developing/assets/2018-04-30_at_1046am.png)
+   ![2018-04-30_at_1046am](/help/screens-cloud/developing/assets/2018-04-30_at_1046am.png)
 
-1. Sotto `clientlibs` cartella, crea un nodo denominato `shared` di tipo `cq:ClientLibraryFolder.`
+1. Nella cartella `clientlibs` creare un nodo denominato `shared` di tipo `cq:ClientLibraryFolder.`
 
-   ![04/04/2018_at_1115](/help/screens-cloud/developing/assets/2018-04-30_at_1115am.png)
+   ![2018-04-30_at_1115am](/help/screens-cloud/developing/assets/2018-04-30_at_1115am.png)
 
 1. Aggiungi le seguenti proprietà alla libreria client condivisa:
 
@@ -293,7 +293,7 @@ I componenti AEM Screens vengono riprodotti in modo diverso nelle modalità Modi
 
    È consigliabile non esporre mai percorsi direttamente a /apps in un ambiente di produzione. La proprietà allowProxy garantisce che venga fatto riferimento alla libreria client CSS e JS tramite un prefisso of/etc.clientlibs.
 
-1. Crea file denominato `css.txt` sotto la cartella condivisa.
+1. Crea il file denominato `css.txt` sotto la cartella condivisa.
 
    Compila il file con quanto segue:
 
@@ -303,13 +303,13 @@ I componenti AEM Screens vengono riprodotti in modo diverso nelle modalità Modi
    styles.less
    ```
 
-1. Crea una cartella denominata `css` sotto `shared` cartella. Aggiungi un file denominato `style.less` sotto `css` cartella. La struttura delle librerie client ora dovrebbe essere simile alla seguente:
+1. Creare una cartella denominata `css` sotto la cartella `shared`. Aggiungere un file denominato `style.less` sotto la cartella `css`. La struttura delle librerie client ora dovrebbe essere simile alla seguente:
 
-   ![2018-04-30_at_3_11 pm](/help/screens-cloud/developing/assets/2018-04-30_at_3_11pm.png)
+   ![2018-04-30_at_3_11pm](/help/screens-cloud/developing/assets/2018-04-30_at_3_11pm.png)
 
-   Invece di scrivere direttamente CSS, questa esercitazione utilizza MENO. [MENO](https://lesscss.org/) è un popolare precompilatore CSS che supporta variabili, mixin e funzioni CSS. Le librerie client AEM supportano in modo nativo la compilazione LESS. È possibile utilizzare gli Sass o altri precompilatori, ma questi devono essere compilati al di fuori dell’AEM.
+   Invece di scrivere direttamente CSS, questa esercitazione utilizza MENO. [LESS](https://lesscss.org/) è un popolare precompilatore CSS che supporta variabili, mixin e funzioni CSS. Le librerie client AEM supportano in modo nativo la compilazione LESS. È possibile utilizzare gli Sass o altri precompilatori, ma questi devono essere compilati al di fuori dell’AEM.
 
-1. Popolare `/apps/weretail-run/components/content/helloworld/clientlibs/shared/css/styles.less` con le seguenti caratteristiche:
+1. Popolare `/apps/weretail-run/components/content/helloworld/clientlibs/shared/css/styles.less` con quanto segue:
 
    ```css
    /**
@@ -329,13 +329,13 @@ I componenti AEM Screens vengono riprodotti in modo diverso nelle modalità Modi
    }
    ```
 
-1. Copiare e incollare `shared` cartella della libreria client per creare una libreria client denominata `production`.
+1. Copiare e incollare la cartella della libreria client `shared` per creare una libreria client denominata `production`.
 
-   ![Copiare la libreria client condivisa per creare una libreria client di produzione](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![Copia la libreria client condivisa per creare una libreria client di produzione](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    Copia la libreria client condivisa per creare una libreria client di produzione.
 
-1. Aggiornare il `categories` proprietà della libreria client di produzione da `cq.screens.components.production.`
+1. Aggiorna la proprietà `categories` della libreria client di produzione in modo che sia `cq.screens.components.production.`
 
    In questo modo gli stili vengono caricati solo in modalità Anteprima/Produzione.
 
@@ -343,7 +343,7 @@ I componenti AEM Screens vengono riprodotti in modo diverso nelle modalità Modi
 
    Proprietà per /apps/weretail-run/components/content/helloworld/clientlibs/production
 
-1. Popolare `/apps/weretail-run/components/content/helloworld/clientlibs/production/css/styles.less` con le seguenti caratteristiche:
+1. Popolare `/apps/weretail-run/components/content/helloworld/clientlibs/production/css/styles.less` con quanto segue:
 
    ```css
    /**
@@ -368,7 +368,7 @@ I componenti AEM Screens vengono riprodotti in modo diverso nelle modalità Modi
 
    Gli stili di cui sopra visualizzano il messaggio centrato al centro dello schermo, ma solo in modalità di produzione.
 
-Una terza categoria di librerie client: `cq.screens.components.edit` può essere utilizzato per aggiungere al componente stili specifici per la sola modifica.
+È possibile utilizzare una terza categoria di libreria client: `cq.screens.components.edit` per aggiungere al componente stili specifici di sola modifica.
 
 | Categoria Clientlib | Utilizzo |
 |---|---|
@@ -378,13 +378,13 @@ Una terza categoria di librerie client: `cq.screens.components.edit` può essere
 
 ## Creare una pagina di progettazione {#design-page}
 
-AEM Screens utilizza [Modelli di pagina statici](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) e [Configurazioni di progettazione](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) per le modifiche globali. Le configurazioni di progettazione vengono spesso utilizzate per configurare i componenti consentiti per Parsys su un canale. Una best practice consiste nell’archiviare queste configurazioni in un modo specifico per l’app.
+AEM Screens utilizza [modelli di pagina statici](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) e [configurazioni di progettazione](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) per le modifiche globali. Le configurazioni di progettazione vengono spesso utilizzate per configurare i componenti consentiti per Parsys su un canale. Una best practice consiste nell’archiviare queste configurazioni in un modo specifico per l’app.
 
 Di seguito viene creata una pagina Progettazione dell&#39;esecuzione di We.Retail in cui sono memorizzate tutte le configurazioni specifiche del progetto.
 
-1. In entrata **CRXDE Liti** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs`, passa a `/apps/settings/wcm/designs`
-1. Crea un nodo sotto la cartella delle progettazioni, denominato `we-retail-run` con un tipo di `cq:Page`.
-1. Sotto `we-retail-run` , aggiungere un altro nodo denominato `jcr:content` di tipo `nt:unstructured`. Aggiungi le seguenti proprietà alla `jcr:content` nodo:
+1. In **CRXDE Liti** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs`, passa a `/apps/settings/wcm/designs`
+1. Creare un nodo sotto la cartella delle progettazioni, denominato `we-retail-run` con un tipo di `cq:Page`.
+1. Nella pagina `we-retail-run` aggiungere un altro nodo denominato `jcr:content` di tipo `nt:unstructured`. Aggiungi le seguenti proprietà al nodo `jcr:content`:
 
    | Nome | Tipo | Valore |
    |---|---|---|
@@ -392,7 +392,7 @@ Di seguito viene creata una pagina Progettazione dell&#39;esecuzione di We.Retai
    | sling:resourceType | Stringa | wcm/core/components/designer |
    | cq:doctype | Stringa | html_5 |
 
-   ![Pagina di progettazione in /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1219pm.png)
+   ![Pagina progettazione in /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1219pm.png)
 
    Pagina di progettazione in /apps/settings/wcm/designs/we-retail-run
 
@@ -400,13 +400,13 @@ Di seguito viene creata una pagina Progettazione dell&#39;esecuzione di We.Retai
 
 Il componente Hello World deve essere utilizzato su un canale di sequenza. Per testare il componente, viene creato un nuovo canale di sequenza.
 
-1. Dal menu Start dell’AEM, vai a **Schermi** > **Ru We.Retail** n > e seleziona **Canali**.
+1. Dal menu Start AEM, passa a **Screens** > **We.Retail Ru** n > e seleziona **Canali**.
 
-1. Fai clic su **Crea** pulsante
+1. Fai clic sul pulsante **Crea**
 
    1. Scegli **Crea entità**
 
-   ![2018-04-30_at_5_18 pm](/help/screens-cloud/developing/assets/2018-04-30_at_5_18pm.png)
+   ![2018-04-30_at_5_18pm](/help/screens-cloud/developing/assets/2018-04-30_at_5_18pm.png)
 
 1. Nella procedura guidata Crea:
 
@@ -414,12 +414,12 @@ Il componente Hello World deve essere utilizzato su un canale di sequenza. Per t
 
    1. Passaggio proprietà
 
-   * Scheda Base > Titolo = **Canale inattivo**
-   * Scheda Canale > spunta **Rendi il canale online**
+   * Scheda Base > Titolo = **Canale Inattivo**
+   * Scheda Canale > seleziona **Rendi canale online**
 
-   ![inattivo-canale](/help/screens-cloud/developing/assets/idle-channel.gif)
+   ![canale inattivo](/help/screens-cloud/developing/assets/idle-channel.gif)
 
-1. Apri le proprietà della pagina per il canale inattivo. Aggiornare il campo Struttura in modo che punti a `/apps/settings/wcm/designs/we-retail-run,`la pagina di progettazione creata nella sezione precedente.
+1. Apri le proprietà della pagina per il canale inattivo. Aggiornare il campo Struttura in modo che punti a `/apps/settings/wcm/designs/we-retail-run,` la pagina di progettazione creata nella sezione precedente.
 
    ![Configurazione progettazione /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1240pm.png)
 
@@ -427,21 +427,21 @@ Il componente Hello World deve essere utilizzato su un canale di sequenza. Per t
 
 1. Modifica il canale inattivo creato per aprirlo.
 
-1. Passa alla modalità pagina **Progettazione** Modalità.
+1. Passa alla modalità pagina **Progettazione**.
 
-   1. Fai clic su **chiave inglese** Icona in Parsys per configurare i componenti consentiti.
+   1. Fai clic sull&#39;icona **chiave inglese** in Parsys per configurare i componenti consentiti.
 
-   1. Seleziona la **Schermi** gruppo e **Esecuzione We.Retail - Contenuto** gruppo.
+   1. Selezionare il gruppo **Screens** e il gruppo **Esecuzione We.Retail - Contenuto**.
 
-   ![2018-04-30_at_5_43 pm](assets/2018-04-30_at_5_43pm.png)
+   ![2018-04-30_at_5_43pm](assets/2018-04-30_at_5_43pm.png)
 
 1. Passa alla modalità pagina **Modifica**. Il componente Hello World può ora essere aggiunto alla pagina e combinato con altri componenti del canale di sequenza.
 
-   ![2018-04-30_at_5_53 pm](assets/2018-04-30_at_5_53pm.png)
+   ![2018-04-30_at_5_53pm](assets/2018-04-30_at_5_53pm.png)
 
-1. In entrata **CRXDE Liti** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par`, passa a `/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par`. Osserva `components` La proprietà ora include `group:Screens`, `group:We.Retail Run - Content`.
+1. In **CRXDE Liti** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par`, passa a `/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par`. La proprietà `components` ora include `group:Screens`, `group:We.Retail Run - Content`.
 
-   ![Configurazione del progetto in /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1_14pm.png)
+   ![Configurazione progettazione in /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1_14pm.png)
 
    Configurazione del progetto in /apps/settings/wcm/designs/we-retail-run
 
@@ -449,9 +449,9 @@ Il componente Hello World deve essere utilizzato su un canale di sequenza. Per t
 
 Se il componente personalizzato utilizza risorse esterne, come risorse (immagini, video, font e icone), rappresentazioni di risorse specifiche o librerie lato client (css e js), queste risorse non vengono aggiunte automaticamente alla configurazione offline. Il motivo è che Adobe raggruppa solo il markup HTML per impostazione predefinita.
 
-Per personalizzare e ottimizzare le risorse esatte scaricate sul lettore, Adobe offre un meccanismo di estensione per i componenti personalizzati, al fine di esporre le loro dipendenze alla logica di caching offline in Screens.
+Per personalizzare e ottimizzare le risorse esatte scaricate sul lettore, Adobe offre un meccanismo di estensione per i componenti personalizzati, in modo da esporre le loro dipendenze alla logica di caching offline in Screens.
 
-La sezione seguente presenta il modello per i gestori di risorse offline personalizzati e i requisiti minimi in `pom.xml` per quel progetto specifico.
+La sezione seguente mostra il modello per i gestori di risorse offline personalizzati e i requisiti minimi in `pom.xml` per quel progetto specifico.
 
 ```java
 package …;
@@ -516,7 +516,7 @@ public class MyCustomHandler extends AbstractResourceHandler {
 }
 ```
 
-Il codice che segue riporta i requisiti minimi di `pom.xml` per quel progetto specifico:
+Il codice seguente fornisce i requisiti minimi in `pom.xml` per quel progetto specifico:
 
 ```css
    <dependencies>
@@ -548,7 +548,7 @@ Il video seguente mostra il componente finito e come può essere aggiunto a un c
 
 ## Codice finito {#finished-code}
 
-Di seguito è riportato il codice finito dell&#39;esercitazione. Il **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** e **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** sono i pacchetti AEM compilati. **SRC-screens-weretail-run-0.0.1.zip **è il codice sorgente non compilato che può essere distribuito utilizzando Maven.
+Di seguito è riportato il codice finito dell&#39;esercitazione. **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** e **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** sono i pacchetti AEM compilati. **SRC-screens-weretail-run-0.0.1.zip **è il codice sorgente non compilato che può essere distribuito utilizzando Maven.
 
 [Ottieni file](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 

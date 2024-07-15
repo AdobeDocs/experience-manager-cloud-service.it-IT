@@ -19,17 +19,17 @@ Il testo segnaposto rappresenta una parola o una breve frase. Lo scopo è quello
 
 ![Componente data con e senza testo segnaposto](assets/dat-picker-place-holder-text.png)
 
-**R.** Componente data con testo segnaposto **B.** Componente data senza testo segnaposto
+**A.** Componente data con testo segnaposto **B.** Componente data senza testo segnaposto
 
 [!DNL AEM Forms] supporta il testo segnaposto per i campi casella password, selettore data, casella numerica e casella di testo.\
 I testi segnaposto non sono supportati per il widget data nativo di HTML5. Per specificare un testo segnaposto:
 
-1. Fai clic con il pulsante destro del mouse su un componente che supporta il testo segnaposto e fai clic su **Modifica**. Viene visualizzata la finestra di dialogo Modifica componente.
+1. Fare clic con il pulsante destro del mouse su un componente che supporta il testo segnaposto e scegliere **Modifica**. Viene visualizzata la finestra di dialogo Modifica componente.
 
-1. Apri **Titolo e testo** scheda.
-1. Specifica una parola o una breve frase nel **Casella di testo segnaposto**. Fai clic su **OK**.
+1. Apri la scheda **Titolo e testo**.
+1. Specificare una parola o una breve frase nella **casella di testo Segnaposto**. Fai clic su **OK**.
 
 >[!NOTE]
 >
->Il testo segnaposto non è supportato in [!DNL Microsoft Internet Explorer 9].
+>Testo segnaposto non supportato in [!DNL Microsoft Internet Explorer 9].
 

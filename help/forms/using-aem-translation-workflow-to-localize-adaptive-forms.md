@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Localizzare Forms adattivo e documento di record{#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-I moduli localizzati consentono di fornire servizi a un pubblico più ampio in aree geografiche diverse. Il flusso di lavoro di traduzione Adobe Experience Manager consente di localizzare Adaptive Forms e i relativi documenti di record . È possibile utilizzare **traduzione automatica** o **traduttori umani** per localizzare un modulo adattivo.
+I moduli localizzati consentono di fornire servizi a un pubblico più ampio in aree geografiche diverse. Il flusso di lavoro di traduzione Adobe Experience Manager consente di localizzare Adaptive Forms e i relativi documenti di record . Puoi utilizzare **traduzione automatica** o **traduttori umani** per localizzare un modulo adattivo.
 
 Questo articolo spiega il processo per utilizzare il flusso di lavoro di traduzione AEM con Forms adattivo e documenti di record.
 
@@ -24,15 +24,15 @@ Questo articolo spiega il processo per utilizzare il flusso di lavoro di traduzi
 
 Il servizio di traduzione automatica traduce immediatamente il contenuto in modulo adattivo e documento di record. [!DNL AEM Forms] è preconfigurato per utilizzare una versione di prova di [!DNL Microsoft Translator] per la traduzione automatica. Per abilitare la traduzione automatica per il Forms adattivo e il documento di record, effettua le seguenti operazioni:
 
-1. Il giorno [!DNL AEM Forms] , selezionare un modulo e quindi **Aggiungi dizionario** opzione.
-1. In entrata **Aggiungi dizionario a progetto di traduzione** , seleziona la **Crea un nuovo progetto di traduzione** o **Aggiungi a un progetto di traduzione esistente** opzione.
-1. In **Titolo progetto** , specificare il titolo. Ad esempio `Government Reference Site - German locale.`
-1. In **Lingue di destinazione** , specificare una lingua (ad esempio, `German(de)`) e fai clic su **Fine**. È possibile specificare più impostazioni internazionali. Il modulo viene tradotto in tutte le lingue specificate in **Lingue di destinazione** campo.
-1. Nella finestra di dialogo Dizionario aggiunto fare clic su **Progetti aperti**. Nella schermata Progetti, apri il progetto creato.
-1. Fai clic su **ellissi** nella parte inferiore della sezione **Riepilogo traduzione** affiancare. Viene visualizzata la schermata Riepilogo traduzione.
-1. Fai clic su **Modifica** nella parte superiore della sezione **Riepilogo traduzione** schermo. Apri **Traduzione** e selezionare Traduzione automatica in **Metodo di traduzione** schermo. Seleziona la scheda appropriata **Provider traduzione** e **Configurazione cloud**. Fai clic su **Fine** nella parte superiore dello schermo.
-1. Il giorno **Lavoro di traduzione** , fai clic su ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e fai clic su **Inizio**. Lo stato della sezione diventa Bozza. Al termine della traduzione, lo stato cambia in **Pronto per la revisione**. Aggiorna la pagina dopo alcuni minuti e verifica lo stato.
-1. Dopo che lo stato diventa **Pronto per la revisione** il **Lavoro di traduzione** riquadro, aprire il modulo in una finestra del browser. Viene visualizzata una versione localizzata del modulo.
+1. Nell&#39;interfaccia utente [!DNL AEM Forms], selezionare un modulo e selezionare l&#39;opzione **Aggiungi dizionario**.
+1. Nella schermata **Aggiungi dizionario al progetto di traduzione**, seleziona l&#39;opzione **Crea un nuovo progetto di traduzione** o **Aggiungi a un progetto di traduzione esistente**.
+1. Nel campo **Titolo progetto**, specifica il titolo. Ad esempio `Government Reference Site - German locale.`
+1. Nel campo **Lingue di destinazione**, specificare una lingua (ad esempio, `German(de)`) e fare clic su **Fine**. È possibile specificare più impostazioni internazionali. Il modulo viene tradotto in tutte le lingue specificate nel campo **Lingue di destinazione**.
+1. Nella finestra di dialogo Dizionario aggiunto fare clic su **Apri progetti**. Nella schermata Progetti, apri il progetto creato.
+1. Fai clic sui **puntini di sospensione** nella parte inferiore del riquadro **Riepilogo traduzione**. Viene visualizzata la schermata Riepilogo traduzione.
+1. Fai clic sull&#39;icona **Modifica** nella parte superiore della schermata **Riepilogo traduzione**. Apri la scheda **Traduzione** e seleziona Traduzione automatica nella schermata **Metodo di traduzione**. Selezionare il **provider di traduzione** e la **configurazione cloud** appropriati. Fai clic sull&#39;icona **Fine** nella parte superiore della schermata.
+1. Nel riquadro **Processo di traduzione**, fai clic sull&#39;icona ![aem62forms_downarrow](assets/aem62forms_downarrow.png), quindi fai clic su **Inizio**. Lo stato della sezione diventa Bozza. Al termine della traduzione, lo stato diventa **Pronto per la revisione**. Aggiorna la pagina dopo alcuni minuti e verifica lo stato.
+1. Quando lo stato cambia in **Pronto per la revisione** nella sezione **Processo di traduzione**, apri il modulo in una finestra del browser. Viene visualizzata una versione localizzata del modulo.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Il servizio di traduzione automatica traduce immediatamente il contenuto in modu
 
 [Impostazioni del documento record](generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
-1. [Personalizzare le informazioni di branding del documento record](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e assicurati che le impostazioni locali del browser siano impostate sulla stessa lingua in cui hai localizzato il modulo adattivo utilizzando la lingua del computer. Le impostazioni locali del browser consentono di localizzare le informazioni di branding nel documento di record.
+1. [Personalizzare le informazioni di branding del documento record](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e assicurarsi che le impostazioni locali del browser siano impostate sulla stessa lingua in cui è stato localizzato il modulo adattivo utilizzando la lingua del computer. Le impostazioni locali del browser consentono di localizzare le informazioni di branding nel documento di record.
 1. Per visualizzare il documento di record localizzato, selezionare Genera anteprima. Il documento di Record PDF viene generato e aperto in una nuova scheda nel browser.
 
 <!-- ## Localizing an Adaptive Form and its Document of Record using Human Translation {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}

@@ -14,7 +14,7 @@ ht-degree: 54%
 
 # Modelli per frammenti di contenuto {#content-fragment-models}
 
-I modelli per frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service definiscono la struttura per il contenuto del [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md). Questi frammenti possono quindi essere utilizzati per l’authoring delle pagine o come base per i contenuti headless.
+I modelli per frammenti di contenuto in Adobe Experience Manager (AEM as a Cloud Service) definiscono la struttura per il contenuto dei [frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md). Questi frammenti possono quindi essere utilizzati per l’authoring delle pagine o come base per i contenuti headless.
 
 Per utilizzare i modelli di frammento di contenuto:
 
@@ -26,34 +26,34 @@ Per utilizzare i modelli di frammento di contenuto:
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
 
 1. Passa a **Strumenti**, **Generale**, quindi apri **Modelli per frammenti di contenuto**.
-1. Passa alla cartella appropriata per [configurazione o configurazione secondaria](/help/sites-cloud/administering/content-fragments/setup.md).
+1. Passa alla cartella appropriata per la configurazione [ o la configurazione secondaria](/help/sites-cloud/administering/content-fragments/setup.md).
 1. Utilizza **Crea** per aprire la procedura guidata.
 
    >[!CAUTION]
    >
-   >Se il [l’utilizzo di modelli per frammenti di contenuto non è stato abilitato](/help/sites-cloud/administering/content-fragments/setup.md), il **Crea** non sarà disponibile.
+   >Se l&#39;utilizzo di [modelli per frammenti di contenuto non è stato abilitato](/help/sites-cloud/administering/content-fragments/setup.md), l&#39;opzione **Crea** non sarà disponibile.
 
-1. Specifica la **Titolo modello**.
-Puoi anche definire varie proprietà; ad esempio, aggiungi **Tag**, a **Descrizione**, seleziona **Abilita modello** a [abilita il modello](#enabling-disabling-a-content-fragment-model) se necessario, e definisci
+1. Specifica il **titolo modello**.
+Puoi anche definire varie proprietà; ad esempio, aggiungi **Tag**, **Descrizione**, seleziona **Abilita modello** per [abilitare il modello](#enabling-disabling-a-content-fragment-model) se necessario e definisci
    **Pattern URL anteprima predefinito**.
 
    >[!NOTE]
    >
-   >Consulta [Modello per frammenti di contenuto - Proprietà](#content-fragment-model-properties) per informazioni dettagliate.
+   >Per informazioni dettagliate, consulta [Modello per frammenti di contenuto - Proprietà](#content-fragment-model-properties).
 
    ![Titolo e descrizione](assets/cf-cfmodels-create.png)
 
-1. Utilizza **Crea** per salvare il modello vuoto. Un messaggio indica il successo dell’azione, puoi selezionare **Apri** per modificare immediatamente il modello, oppure **Fine** per tornare alla console.
+1. Utilizza **Crea** per salvare il modello vuoto. Un messaggio indica il successo dell&#39;azione. Puoi selezionare **Apri** per modificare immediatamente il modello, oppure **Fine** per tornare alla console.
 
 >[!CAUTION]
 >
 >Se esegui una query su più frammenti a cui si fa riferimento, non è consigliabile che i vari modelli di frammenti abbiano nomi di campo con lo stesso nome, ma tipi diversi.
 >
->Per maggiori dettagli vedi [API GraphQL per AEM da utilizzare con Frammenti di contenuto - Limitazioni](/help/headless/graphql-api/content-fragments.md#limitations)
+>Per ulteriori dettagli vedi [API GraphQL AEM per l&#39;utilizzo con frammenti di contenuto - Limitazioni](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Modello per frammenti di contenuto - Proprietà {#content-fragment-model-properties}
 
-Queste proprietà vengono definite quando create un modello e possono essere modificate in un secondo momento con **Proprietà** per il modello per frammenti di contenuto:
+Queste proprietà vengono definite al momento della creazione di un modello e possono essere modificate in un secondo momento con l&#39;opzione **Proprietà** per il modello per frammenti di contenuto:
 
 * **Base**
    * **Titolo modello**
@@ -61,7 +61,7 @@ Queste proprietà vengono definite quando create un modello e possono essere mod
    * **Descrizione**
    * **Abilita modello**
    * **Pattern URL anteprima predefinito**
-L’editor dei frammenti di contenuto consente agli autori di: **Anteprima** il loro contenuto in un’applicazione front-end esterna. Una volta **Servizio di anteprima** , aggiungere l&#39;URL per l&#39;applicazione front-end.
+L&#39;editor frammento di contenuto consente agli autori di **visualizzare in anteprima** il contenuto in un&#39;applicazione front-end esterna. Una volta configurato il servizio **Anteprima**, aggiungere l&#39;URL per l&#39;applicazione front-end.
 
      L’URL di anteprima deve seguire questo pattern:
     `https://<preview_url>?param=${expression}`
@@ -109,7 +109,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
    >[!NOTE]
    >
-   >Quando un campo è definito come **Obbligatorio**, il **Etichetta** indicato nel riquadro a sinistra è contrassegnato con un asterisco (**&#42;**).
+   >Quando un campo è definito come **Obbligatorio**, l&#39;**Etichetta** indicata nel riquadro di sinistra è contrassegnata con un asterisco (**&#42;**).
 
 ![Proprietà](assets/cf-cfmodels-empty-model.png)
 
@@ -119,14 +119,14 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
      ![Trascina il tipo di dati per creare il campo](assets/cf-cfmodels-create-field.png)
 
-   * Una volta aggiunto un campo al modello, il pannello di destra mostra **Proprietà** che possono essere definiti per quel particolare tipo di dati. Qui puoi definire ciò che è necessario per quel campo.
+   * Una volta aggiunto un campo al modello, il pannello di destra mostra le **Proprietà** che possono essere definite per quel particolare tipo di dati. Qui puoi definire ciò che è necessario per quel campo.
 
       * Molte proprietà sono auto-esplicative, per ulteriori dettagli vedi [Proprietà](#properties).
-      * Digitazione di un **Etichetta campo** completa automaticamente il **Nome proprietà**  - se vuoto, e può essere aggiornato manualmente in seguito.
+      * La digitazione di un **Etichetta campo** completa automaticamente il **Nome proprietà** - se vuoto, e può essere aggiornato manualmente in seguito.
 
         >[!CAUTION]
         >
-        Quando aggiorni manualmente la proprietà **Nome proprietà** per un tipo di dati, i nomi devono contenere *solo* A-Z, a-z, 0-9 e il carattere speciale di sottolineatura &quot;_&quot;.
+        Quando si aggiorna manualmente la proprietà **Nome proprietà** per un tipo di dati, i nomi devono contenere *solo* caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura &quot;_&quot;.
         >
         Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
@@ -157,9 +157,9 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 
   >[!NOTE]
   >
-  Se l’area di testo è RTF, Testo normale o Markdown, viene definita nel modello dalla proprietà **Tipo predefinito**.
+  Se l&#39;area di testo è RTF, Testo normale o Markdown, è definito nel modello dalla proprietà **Tipo predefinito**.
   >
-  Questo formato non può essere modificato da [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), ma solo dal modello.
+  Questo formato non può essere modificato dall&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), ma solo dal modello.
 
 * **Numero**
    * Aggiungi uno o più campi numerici
@@ -199,7 +199,7 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
 
 * **Nome proprietà**
 
-  Quando aggiorni manualmente questa proprietà per un tipo di dati, i nomi **deve** contain *solo* A-Z, a-z, 0-9 e il carattere speciale di sottolineatura &quot;_&quot;.
+  Quando aggiorni manualmente questa proprietà per un tipo di dati, i nomi **must** contengono *only* A-Z, a-z, 0-9 e il carattere speciale di sottolineatura &quot;_&quot;.
 
   >[!CAUTION]
   >
@@ -207,10 +207,10 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
 
 * **Rendering come**
 
-  Le varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore visualizzerà una singola istanza del campo o se potrà creare più istanze. Quando **Campo multiplo** è utilizzato è possibile definire il numero minimo e massimo di elementi - vedere [Convalida](#validation) per ulteriori dettagli.
+  Le varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore visualizzerà una singola istanza del campo o se potrà creare più istanze. Quando si utilizza **Campo multiplo** è possibile definire il numero minimo e massimo di elementi. Per ulteriori dettagli, vedere [Convalida](#validation).
 
 * **Etichetta campo**
-Inserimento di un **Etichetta campo** genera automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente, se necessario.
+L&#39;immissione di un&#39;etichetta **Campo** genera automaticamente un **Nome proprietà**, che può essere aggiornato manualmente se necessario.
 
 * **Convalida**
 La convalida di base è disponibile tramite meccanismi quali la proprietà **Obbligatorio**. Alcuni tipi di dati dispongono di campi di convalida aggiuntivi. Vedi [Convalida](#validation) per ulteriori dettagli.
@@ -223,7 +223,7 @@ La convalida di base è disponibile tramite meccanismi quali la proprietà **Obb
 
   Se non viene specificato diversamente, per questo campo viene utilizzato il valore predefinito **Rich Text**.
 
-  Modifica del **Tipo predefinito** in un modello per frammenti di contenuto avrà effetto solo su un frammento di contenuto correlato esistente, una volta che il frammento è stato aperto nell’editor e successivamente salvato.
+  La modifica del **Tipo predefinito** in un modello per frammenti di contenuto avrà effetto solo su un frammento esistente correlato, dopo che il frammento è stato aperto nell&#39;editor e salvato.
 
 * **Univoco**
 Il contenuto (per il campo specifico) deve essere univoco in tutti i frammenti di contenuto creati dal modello corrente.
@@ -267,12 +267,12 @@ Diversi tipi di dati includono ora la possibilità di definire requisiti di conv
    * Verifica un modello per frammenti di contenuto specifico.
 * **Numero minimo di elementi** / **Numero massimo di elementi**
 
-  Campi definiti come **Campo multiplo** (impostato con **Rendering come**) puoi scegliere:
+  I campi definiti come **Campo multiplo** (impostati con **Rendering come**) dispongono delle opzioni seguenti:
 
    * **Numero minimo di elementi**
    * **Numero massimo di elementi**
 
-  Questi vengono convalidati nel [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md).
+  Convalidati nell&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Utilizzo di riferimenti per creare contenuti nidificati {#using-references-to-form-nested-content}
 
@@ -287,22 +287,24 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
    * Consente di includere/recuperare dati strutturati.
      >[!NOTE]
      >
-     Questo metodo è di particolare interesse quando utilizzi [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+     Questo metodo è particolarmente interessante quando si utilizza [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
 >[!NOTE]
 >
 L’AEM ha una protezione da recidiva per:
 >
-* Riferimenti al contenuto Questo impedisce all’utente di aggiungere un riferimento al frammento corrente e può causare la visualizzazione di una finestra di dialogo vuota per la selezione dei riferimenti ai frammenti.
+* Riferimenti contenuto
+In questo modo si impedisce all’utente di aggiungere un riferimento al frammento corrente e si potrebbe creare una finestra di dialogo di selezione Riferimento frammento vuota.
 >
-* Riferimenti frammento in GraphQL Se crei una query approfondita che restituisce più frammenti di contenuto a cui fanno riferimento l’un l’altro, alla prima occorrenza restituisce null.
+* Riferimenti frammento in GraphQL
+Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituisce null.
 
 >[!CAUTION]
 >
 Se esegui una query su più frammenti a cui si fa riferimento, non è consigliabile che i vari modelli di frammenti abbiano nomi di campo con lo stesso nome, ma tipi diversi.
 >
-Per maggiori dettagli vedi [API GraphQL per AEM da utilizzare con Frammenti di contenuto - Limitazioni](/help/headless/graphql-api/content-fragments.md#limitations)
+Per ulteriori dettagli vedi [API GraphQL AEM per l&#39;utilizzo con frammenti di contenuto - Limitazioni](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Riferimento contenuto {#content-reference}
 
@@ -310,19 +312,19 @@ Il Riferimento contenuto consente di eseguire il rendering del contenuto da un�
 
 Oltre alle proprietà standard puoi specificare:
 
-* Il **Percorso directory principale**, che specifica dove memorizzare il contenuto a cui si fa riferimento
+* Il **percorso principale**, che specifica dove memorizzare qualsiasi contenuto a cui si fa riferimento
   >[!NOTE]
   >
   Questo è obbligatorio se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l’editor di frammenti di contenuto.
   >
-  Consulta [Immagini di riferimento](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) per ulteriori dettagli.
+  Per ulteriori dettagli, vedi [Immagini di riferimento](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images).
 
 * I tipi di contenuto a cui è possibile fare riferimento
   >[!NOTE]
   >
-  Questi devono includere **Immagine** se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l’editor di frammenti di contenuto.
+  Devono includere **Immagine** se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l&#39;editor di frammenti di contenuto.
   >
-  Consulta [Immagini di riferimento](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) per ulteriori dettagli.
+  Per ulteriori dettagli, vedi [Immagini di riferimento](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images).
 
 * Le limitazioni per le dimensioni dei file
 * Se si fa riferimento a un’immagine:
@@ -356,7 +358,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
-I riferimenti ai frammenti sono di particolare interesse per [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+I riferimenti ai frammenti sono di particolare interesse per la [distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 
 Oltre alle proprietà standard puoi definire:
 
@@ -389,7 +391,7 @@ In GraphQL è inoltre disponibile una protezione di ricorrenza per i riferimenti
 
 ## Abilitazione o disabilitazione di un modello per frammenti di contenuto {#enabling-disabling-a-content-fragment-model}
 
-È possibile: **Abilita** o **Disattiva** modelli per frammenti di contenuto, per un controllo completo sul loro utilizzo.
+Puoi **Abilitare** o **Disabilitare** i modelli per frammenti di contenuto per il controllo completo sul loro utilizzo.
 
 ### Abilitazione di un modello per frammenti di contenuto {#enabling-a-content-fragment-model}
 
@@ -401,7 +403,7 @@ Una volta creato, il modello deve essere abilitato in modo che:
 
 Per abilitare un modello contrassegnato come:
 
-* **Bozza** : nuovo (mai abilitato).
+* **Bozza**: nuova (mai abilitata).
 * **Disabilitato**: che è stato specificamente disabilitato
 
 puoi utilizzare l’opzione **Abilita** dalle seguenti aree:
@@ -421,7 +423,7 @@ Un modello può anche essere disabilitato, con i seguenti risultati:
    * È comunque possibile eseguire query su qualsiasi frammento di contenuto basato sul modello e restituirlo dall’endpoint GraphQL.
 * Non è più possibile fare riferimento al modello, ma i riferimenti esistenti vengono mantenuti intatti e possono ancora essere interrogati e restituiti dall’endpoint GraphQL.
 
-Per disattivare un modello contrassegnato come **Abilitato**, utilizza **Disattiva** opzione da:
+Per disabilitare un modello contrassegnato come **Abilitato**, utilizzare l&#39;opzione **Disabilita** da:
 
 * Dalla barra degli strumenti superiore, quando è selezionato il modello richiesto.
 * Con l’azione rapida corrispondente (passando il mouse sul modello richiesto).
@@ -513,7 +515,7 @@ Se tenti di annullare la pubblicazione di un modello attualmente utilizzato da u
 
 ![Messaggio di errore di modello per frammenti di contenuto quando si annulla la pubblicazione di un modello in uso](assets/cf-cfmodels-unpublish-error.png)
 
-Il messaggio suggerisce di controllare [Riferimenti](/help/sites-cloud/authoring/basic-handling.md#references) per approfondire l&#39;analisi:
+Il messaggio suggerisce di controllare il pannello [Riferimenti](/help/sites-cloud/authoring/basic-handling.md#references) per approfondire l&#39;analisi:
 
 ![Modello per frammenti di contenuto nei riferimenti](assets/cf-cfmodels-references.png)
 
@@ -559,13 +561,13 @@ Puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli:
 
    * È possibile **Sbloccare** un modello per abilitare le modifiche.
 
-     Se si seleziona **Sblocca** viene visualizzato un avviso ed è necessario confermare **Sblocca** azione:
+     Se selezioni **Sblocca** viene visualizzato un avviso ed è necessario confermare l&#39;azione **Sblocca**:
      ![Messaggio relativo allo sblocco del modello per frammenti di contenuto](assets/cf-cfmodels-unlock-message.png)
 
      Puoi quindi aprire il modello per la modifica.
 
    * Puoi anche **Bloccare** successivamente il modello.
-   * La ripubblicazione del modello lo restituisce immediatamente a **Bloccato** (SOLA LETTURA).
+   * La ripubblicazione del modello lo riporta immediatamente in modalità **Bloccato** (SOLA LETTURA).
 
 * Editor modelli
 
@@ -577,7 +579,7 @@ Puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli:
 
      ![Visualizza solo lettura: modello per frammenti di contenuto bloccato](assets/cf-cfmodels-editor-locked-view-only.png)
 
-   * Se si seleziona **Modifica**, puoi modificare e salvare gli aggiornamenti:
+   * Se selezioni **Modifica**, puoi modificare e salvare gli aggiornamenti:
 
      ![Modifica: modello per frammenti di contenuto bloccato](assets/cf-cfmodels-editor-locked-edit.png)
 

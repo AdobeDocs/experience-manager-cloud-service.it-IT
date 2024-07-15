@@ -1,6 +1,6 @@
 ---
 title: Aggiornamenti della versione di AEM
-description: Scopri in che modo Adobe Experience Manager (AEM) as a Cloud Service utilizza Continuous Integration and Delivery (CI/CD) per mantenere i progetti sull’ultima versione.
+description: Scopri in che modo Adobe Experience Manager (AEM) as a Cloud Service utilizza l’integrazione e la distribuzione continue (CI/CD) per mantenere i progetti sull’ultima versione.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
@@ -14,16 +14,16 @@ ht-degree: 1%
 
 # Aggiornamenti della versione di AEM {#aem-version-updates}
 
-Scopri in che modo Adobe Experience Manager (AEM) as a Cloud Service utilizza Continuous Integration and Delivery (CI/CD) per mantenere i progetti sull’ultima versione.
+Scopri in che modo Adobe Experience Manager (AEM) as a Cloud Service utilizza l’integrazione e la distribuzione continue (CI/CD) per mantenere i progetti sull’ultima versione.
 
 ## CI/CD {#ci-cd}
 
-AEM as a Cloud Service utilizza l’integrazione continua e la distribuzione continua (CI/CD) per garantire che i tuoi progetti siano nella versione dell’AEM più recente. Questo processo aggiorna facilmente le istanze di produzione, staging e sviluppo senza causare interruzioni agli utenti.
+AEM as a Cloud Service utilizza l’integrazione continua e la distribuzione continua (CI/CD) per garantire che i progetti utilizzino la versione AEM più recente. Questo processo aggiorna facilmente le istanze di produzione, staging e sviluppo senza causare interruzioni agli utenti.
 
 >[!NOTE]
-> Poiché le istanze di sviluppo sono già aggiornate automaticamente, gli aggiornamenti manuali per le istanze di sviluppo potrebbero non essere disponibili per _alcuni_ dei programmi. Questa funzione viene convertita in aggiornamenti automatici.
+> Poiché le istanze di sviluppo sono già aggiornate automaticamente, gli aggiornamenti manuali per le istanze di sviluppo potrebbero non essere disponibili per _alcuni_ programmi. Questa funzione viene convertita in aggiornamenti automatici.
 
-Prima che le istanze vengano aggiornate automaticamente, viene pubblicata una nuova versione di manutenzione dell’AEM con 3-5 giorni di anticipo. Durante questo periodo, l’istanza di sviluppo potrebbe essere aggiornata automaticamente o, nel caso sia disponibile, puoi opzionalmente [attiva l’aggiornamento per le istanze di sviluppo](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Gli aggiornamenti delle versioni vengono prima applicati automaticamente agli ambienti di sviluppo. Se l’aggiornamento ha esito positivo, il processo di aggiornamento procede alle istanze di staging e produzione. Le istanze di sviluppo e staging fungono da gate di qualità automatizzato, in cui i test scritti personalizzati vengono eseguiti prima dell’applicazione dell’aggiornamento all’ambiente di produzione.
+Prima che le istanze vengano aggiornate automaticamente, viene pubblicata una nuova versione di manutenzione dell’AEM con 3-5 giorni di anticipo. Durante questo periodo, l&#39;istanza di sviluppo potrebbe essere aggiornata automaticamente o, nel caso sia disponibile, puoi facoltativamente [attivare l&#39;aggiornamento per le istanze di sviluppo](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Gli aggiornamenti delle versioni vengono prima applicati automaticamente agli ambienti di sviluppo. Se l’aggiornamento ha esito positivo, il processo di aggiornamento procede alle istanze di staging e produzione. Le istanze di sviluppo e staging fungono da gate di qualità automatizzato, in cui i test scritti personalizzati vengono eseguiti prima dell’applicazione dell’aggiornamento all’ambiente di produzione.
 
 ### NIMU (aggiornamenti di manutenzione non intrusivi) {#nimu}
 
@@ -55,13 +55,13 @@ Esistono due tipi di aggiornamenti delle versioni di AEM:
 
 >[!NOTE]
 >
-> Controlla le date chiave per i rilasci mensili sul [Roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it#aem-as-cloud-service) e segnare i calendari per prepararsi alle attività chiave necessarie per la preparazione alla versione.
+> Controlla le date chiave per i rilasci mensili nella roadmap delle [versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it#aem-as-cloud-service) e segna i tuoi calendari per prepararti alle attività chiave necessarie per la preparazione alla versione.
 
 ## Errore di aggiornamento {#update-failure}
 
-Gli aggiornamenti AEM passano attraverso una pipeline di convalida del prodotto intensa e completamente automatizzata che coinvolge più fasi, garantendo l&#39;assenza di interruzioni del servizio per tutti i sistemi in produzione. I controlli di integrità vengono utilizzati per monitorare lo stato dell&#39;applicazione. Se questi controlli non vanno a buon fine durante un aggiornamento as a Cloud Service dell’AEM, la versione non procede e Adobe indaga il motivo per cui l’aggiornamento ha causato questo comportamento imprevisto.
+Gli aggiornamenti AEM passano attraverso una pipeline di convalida del prodotto intensa e completamente automatizzata che coinvolge più fasi, garantendo l&#39;assenza di interruzioni del servizio per tutti i sistemi in produzione. I controlli di integrità vengono utilizzati per monitorare lo stato dell&#39;applicazione. Se questi controlli non vanno a buon fine durante un aggiornamento di AEM as a Cloud Service, la versione non procede e Adobe indaga il motivo per cui l’aggiornamento ha causato questo comportamento imprevisto.
 
-Quando distribuisci una nuova versione del codice personalizzato nel tuo ambiente, [Test funzionali del prodotto e personalizzati](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) svolgere un ruolo cruciale. Essi garantiscono che i sistemi di produzione rimangano stabili e funzionanti anche dopo l’applicazione di una modifica. Questi test vengono applicati anche nel processo di aggiornamento della versione AEM.
+Quando distribuisci una nuova versione del codice personalizzato nel tuo ambiente, [I test funzionali del prodotto e personalizzati](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) svolgono un ruolo cruciale. Essi garantiscono che i sistemi di produzione rimangano stabili e funzionanti anche dopo l’applicazione di una modifica. Questi test vengono applicati anche nel processo di aggiornamento della versione AEM.
 
 Se l’aggiornamento dell’ambiente di produzione non riesce, Cloud Manager ripristina automaticamente l’ambiente di staging. Questa operazione viene eseguita automaticamente per assicurarsi che al termine di un aggiornamento, entrambi gli ambienti di staging e produzione utilizzino la stessa versione dell’AEM.
 Analogamente, se un aggiornamento automatico di un ambiente di sviluppo non riesce, gli ambienti di staging e produzione non vengono aggiornati.
@@ -78,18 +78,18 @@ Analogamente, se un aggiornamento automatico di un ambiente di sviluppo non ries
 
 * **Pipeline di produzione**
    * Sospendi prima di implementare in produzione.
-   * L’annullamento della pipeline dopo la distribuzione di uno staging indica che il codice è &quot;uno scarto&quot; e non è un candidato valido per la produzione. Fai riferimento a [Configurazione di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * L&#39;annullamento della pipeline dopo una distribuzione di staging indica che il codice è &quot;uno scarto&quot; e non è un candidato valido per la produzione. Fare riferimento a [Configurazione di una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
 * **Pipeline non di produzione**
-   * Configurare un [Pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+   * Configura una [pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
    * Accelerare la velocità/frequenza di consegna in caso di errori della pipeline di produzione. Identifica i problemi nelle pipeline non di produzione abilitando i test funzionali del prodotto, i test funzionali personalizzati e i test dell’interfaccia utente personalizzati.
 
 * **Copia contenuto**
-   * Utilizzare [Copia contenuto](/help/implementing/developing/tools/content-copy.md) per spostare set di contenuti simili in un ambiente non di produzione.
+   * Utilizza [Copia contenuto](/help/implementing/developing/tools/content-copy.md) per spostare set di contenuti simili in un ambiente non di produzione.
 
 * **Test funzionali automatizzati**
    * Includi test automatizzati nella pipeline per testare le funzionalità critiche.
-   * [Test funzionali del cliente](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) e [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) stanno bloccando, se non riescono la versione AEM non viene implementata.
+   * [I test funzionali del cliente](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) e [i test dell&#39;interfaccia utente personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) sono bloccati se non riescono a eseguire il rollout della versione dell&#39;AEM.
 
 ## Regressione {#regression}
 
@@ -97,8 +97,8 @@ Se riscontri un problema relativo alla regressione, invia un caso di supporto tr
 
 ## Archivio nodi compositi {#composite-node-store}
 
-In genere, gli aggiornamenti non comportano tempi di inattività, incluso per l’istanza di authoring, che è un cluster di nodi. Gli aggiornamenti continui sono possibili a causa di [la funzione archivio nodi compositi in Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+In genere, gli aggiornamenti non comportano tempi di inattività, incluso per l’istanza di authoring, che è un cluster di nodi. Aggiornamenti continui sono possibili a causa di [la funzionalità archivio nodi composito in Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-Questa funzione consente all’AEM di fare riferimento simultaneamente a più archivi. In un [distribuzione continua](/help/implementing/deploying/overview.md#how-rolling-deployments-work), la nuova versione dell’AEM contiene `/libs` (l’archivio immutabile basato su TarMK). Si distingue dalla versione precedente dell’AEM, anche se entrambi fanno riferimento a un archivio condivisibile mutabile basato su DocumentMK che contiene aree come `/content` , `/conf` , `/etc` e altri.
+Questa funzione consente all’AEM di fare riferimento simultaneamente a più archivi. In una [distribuzione continua](/help/implementing/deploying/overview.md#how-rolling-deployments-work), la nuova versione dell&#39;AEM contiene il proprio `/libs` (l&#39;archivio immutabile basato su TarMK). Si distingue dalla versione precedente dell&#39;AEM, anche se entrambi fanno riferimento a un archivio condivise mutabile basato su DocumentMK che contiene aree come `/content` , `/conf` , `/etc` e altri.
 
-Poiché sia la vecchia che la nuova versione hanno la propria versione di `/libs`, possono essere entrambi attivi durante l’aggiornamento continuo. E, entrambi possono prendere il traffico fino a quando il vecchio è completamente sostituito dal nuovo.
+Poiché sia la versione precedente che quella nuova hanno versioni proprie di `/libs`, possono essere entrambe attive durante l&#39;aggiornamento continuo. E, entrambi possono prendere il traffico fino a quando il vecchio è completamente sostituito dal nuovo.

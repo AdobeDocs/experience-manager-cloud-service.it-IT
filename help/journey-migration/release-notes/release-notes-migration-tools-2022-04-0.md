@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Note sulla versione 2022.4.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2022.4.0 degli strumenti di migrazione in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione degli strumenti di migrazione in AEM as a Cloud Service 2022.4.0.
 
 ## Analisi delle best practice {#bpa-release}
 
@@ -25,7 +25,7 @@ La data di rilascio di Best Practices Analyzer v2.1.28 è il 22 aprile 2022.
 
 * Possibilità di rilevare e segnalare l’utilizzo di API di Asset Manager non supportate. Quattro API non sono più supportate in AEM as a Cloud Service. I clienti devono assicurarsi di non utilizzare più queste API e di utilizzare il nuovo metodo di caricamento delle risorse.
 
-* Possibilità di rilevare l’utilizzo di modelli per frammenti di contenuto. I modelli per frammenti di contenuto non sono più supportati per la creazione di nuovi frammenti di contenuto su AEM as a Cloud Service. I clienti devono creare modelli per frammenti di contenuto in sostituzione dei modelli per frammenti di contenuto.
+* Possibilità di rilevare l’utilizzo di modelli per frammenti di contenuto. I modelli per frammenti di contenuto non sono più supportati per la creazione di nuovi frammenti di contenuto in AEM as a Cloud Service. I clienti devono creare modelli per frammenti di contenuto in sostituzione dei modelli per frammenti di contenuto.
 
 * Possibilità di rilevare le risorse con più di 100 discendenti sotto il nodo di metadati della risorsa nell’archivio. Si consiglia di rimuovere i nodi di metadati che non sono necessari per migliorare le prestazioni durante il caricamento di cartelle contenenti tali risorse.
 

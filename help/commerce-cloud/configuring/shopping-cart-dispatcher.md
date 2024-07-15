@@ -3,8 +3,8 @@ title: Impostazione del carrello e di Dispatcher
 description: Impostazione del carrello e di Dispatcher
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 95%
+source-wordcount: '88'
+ht-degree: 93%
 
 ---
 

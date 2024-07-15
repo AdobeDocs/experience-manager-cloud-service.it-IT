@@ -34,23 +34,23 @@ Le comunicazioni forniscono API per la generazione di documenti su richiesta e p
 
 Un&#39;operazione batch è un processo di generazione di più documenti di tipo simile per un set di record a intervalli pianificati. Un&#39;operazione batch è composta da due parti: Configurazione (definizione) ed esecuzione.
 
-* **Configurazione (definizione)**: in una configurazione batch vengono memorizzate informazioni su varie risorse e proprietà da impostare per i documenti generati. Fornisce, ad esempio, dettagli sul modello XDP o PDF e sulla posizione dei dati dei clienti da utilizzare, oltre a specificare varie proprietà per i documenti di output.
+* **Configurazione (definizione)**: una configurazione batch memorizza informazioni su varie risorse e proprietà da impostare per i documenti generati. Fornisce, ad esempio, dettagli sul modello XDP o PDF e sulla posizione dei dati dei clienti da utilizzare, oltre a specificare varie proprietà per i documenti di output.
 
-* **Esecuzione**: per avviare un’operazione batch, passa il nome della configurazione batch all’API di esecuzione batch.
+* **Esecuzione**: per avviare un&#39;operazione batch, passare il nome della configurazione batch all&#39;API di esecuzione batch.
 
 ### Componenti di un&#39;operazione batch {#components-of-a-batch-operations}
 
-**Configurazione cloud**: la configurazione di Experience Manager Cloud consente di collegare un’istanza Experience Manager all’archiviazione di Microsoft Azure di proprietà del cliente. Consente di specificare le credenziali per l&#39;account Microsoft Azure di proprietà del cliente per la connessione.
+**Configurazione cloud**: la configurazione di Experience Manager Cloud consente di connettere un&#39;istanza di Experience Manager all&#39;archiviazione di Microsoft Azure di proprietà del cliente. Consente di specificare le credenziali per l&#39;account Microsoft Azure di proprietà del cliente per la connessione.
 
-**Configurazione archivio dati in batch (USC)**: la configurazione dei dati batch consente di configurare un’istanza specifica dell’archiviazione BLOB per le API Batch. Consente di specificare i percorsi di input e output nell’archiviazione BLOB di Microsoft Azure di proprietà del cliente.
+**Configurazione archivio dati batch (USC)**: la configurazione dei dati batch consente di configurare un&#39;istanza specifica dell&#39;archivio BLOB per le API batch. Consente di specificare i percorsi di input e output nell’archiviazione BLOB di Microsoft Azure di proprietà del cliente.
 
-**API batch**: consente di creare configurazioni batch ed eseguire esecuzioni batch basate su queste configurazioni per unire un modello PDF o XDP con i dati e generare output nei formati PDF, PS, PCL, DPL, IPL e ZPL. Le comunicazioni forniscono API batch per la gestione della configurazione e l’esecuzione in batch.
+**API batch**: consente di creare configurazioni batch ed eseguire le esecuzioni batch in base a queste configurazioni per unire un modello PDF o XDP con i dati e generare output nei formati PDF, PS, PCL, DPL, IPL e ZPL. Le comunicazioni forniscono API batch per la gestione della configurazione e l’esecuzione in batch.
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
-**Storage**: le API di comunicazione utilizzano l’archiviazione cloud di Microsoft Azure di proprietà del cliente per recuperare i record dei clienti e archiviare i documenti generati. È possibile configurare l’archiviazione di Microsoft Azure nella configurazione Experience Manager Cloud Service.
+**Archiviazione**: le API di comunicazione utilizzano l&#39;archiviazione cloud di Microsoft Azure di proprietà del cliente per recuperare i record dei clienti e archiviare i documenti generati. È possibile configurare l’archiviazione di Microsoft Azure nella configurazione Experience Manager Cloud Service.
 
-**App**: l’applicazione personalizzata per utilizzare le API Batch per generare e utilizzare documenti.
+**App**: applicazione personalizzata per l&#39;utilizzo delle API Batch per generare e utilizzare documenti.
 
 ## Generare più documenti utilizzando operazioni batch {#generate-multiple-documents-using-batch-operations}
 
@@ -58,7 +58,7 @@ Un&#39;operazione batch è un processo di generazione di più documenti di tipo 
 
 >[!VIDEO](https://video.tv.adobe.com/v/338349)
 
-È possibile guardare il video o eseguire le istruzioni riportate di seguito per imparare a generare documenti utilizzando operazioni batch. La documentazione di riferimento API utilizzata nei video è disponibile in formato .yaml. È possibile scaricare [API batch](assets/batch-api.yaml) e caricarlo su Postman per verificare la funzionalità delle API e seguire il video.
+È possibile guardare il video o eseguire le istruzioni riportate di seguito per imparare a generare documenti utilizzando operazioni batch. La documentazione di riferimento API utilizzata nei video è disponibile in formato .yaml. Puoi scaricare il file [API batch](assets/batch-api.yaml) e caricarlo in Postman per verificare la funzionalità delle API e seguire il video.
 
 ### Prerequisiti {#pre-requisites}
 
@@ -80,7 +80,7 @@ Prima di utilizzare un&#39;operazione batch:
 
 ### Carica dati cliente (file XML) nell’archiviazione di Azure {#upload-customer-data-to-Azure-Storage}
 
-Nell’archiviazione di Microsoft Azure, crea [container](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) e [carica dati cliente (XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) al [cartelle](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) all’interno dei contenitori.
+Nell&#39;archiviazione di Microsoft Azure creare [contenitori](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) e [caricare i dati del cliente (XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) nelle [cartelle](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) all&#39;interno dei contenitori.
 >[!NOTE]
 >
 >È possibile configurare l&#39;archiviazione di Microsoft Azure per pulire automaticamente la cartella di input o spostare il contenuto della cartella di output in una posizione diversa a intervalli pianificati. Tuttavia, assicurati che le cartelle non vengano pulite quando è ancora in esecuzione un’operazione batch che fa riferimento alle cartelle.
@@ -123,17 +123,17 @@ In genere, un’organizzazione dispone di più modelli. Ad esempio, un modello p
 
 ## Utilizzare l’API batch per generare documenti {#use-batch-API-to-generate-documents}
 
-Per utilizzare un’API batch, crea una configurazione batch ed esegui un’esecuzione basata su tale configurazione. La documentazione API fornisce informazioni sulle API per creare ed eseguire un batch, i parametri corrispondenti e i possibili errori. È possibile scaricare [File di definizione API](assets/batch-api.yaml) e caricarlo in [Postman](https://go.postman.co/home) o software simile per testare le API e creare ed eseguire un’operazione batch.
+Per utilizzare un’API batch, crea una configurazione batch ed esegui un’esecuzione basata su tale configurazione. La documentazione API fornisce informazioni sulle API per creare ed eseguire un batch, i parametri corrispondenti e i possibili errori. È possibile scaricare il file di definizione [API](assets/batch-api.yaml) e caricarlo in [Postman](https://go.postman.co/home) o software simile per testare le API per creare ed eseguire un&#39;operazione batch.
 
 ### Creare un batch {#create-a-batch}
 
-Per creare un batch, utilizza `POST /config` API. Includi le seguenti proprietà obbligatorie nel corpo della richiesta HTTP:
+Per creare un batch, utilizzare l&#39;API `POST /config`. Includi le seguenti proprietà obbligatorie nel corpo della richiesta HTTP:
 
-* **configName**: specifica un nome univoco per il batch. Ad esempio `wknd-job`
-* **dataSourceConfigUri**: specifica il percorso della configurazione dell’archivio dati batch. Può essere un percorso relativo o assoluto della configurazione. Esempio: `/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**: specifica i formati di output: PDF e PRINT. Se si utilizza il tipo di output PRINT, in `printedOutputOptionsList` , specificare almeno un&#39;opzione di stampa. Le opzioni di stampa sono identificate dal relativo tipo di rendering, pertanto al momento non sono consentite più opzioni di stampa con lo stesso tipo di rendering. I formati supportati sono PS, PCL, DPL, IPL e ZPL.
+* **configName**: specificare un nome univoco per il batch. Ad esempio `wknd-job`
+* **dataSourceConfigUri**: specificare il percorso della configurazione dell&#39;archivio dati batch. Può essere un percorso relativo o assoluto della configurazione. Esempio: `/conf/global/settings/forms/usc/batch/wknd-batch`
+* **outputTypes**: Specificare i formati di output: PDF e PRINT. Se si utilizza il tipo di output PRINT, nella proprietà `printedOutputOptionsList` specificare almeno una opzione di stampa. Le opzioni di stampa sono identificate dal relativo tipo di rendering, pertanto al momento non sono consentite più opzioni di stampa con lo stesso tipo di rendering. I formati supportati sono PS, PCL, DPL, IPL e ZPL.
 
-* **modello**: specifica il percorso assoluto o relativo del modello. Ad esempio `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
+* **modello**: specificare il percorso assoluto o relativo del modello. Ad esempio `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
 Se specifichi un percorso relativo, specifica anche una directory principale del contenuto. Consulta la documentazione API per informazioni dettagliate sulla directory principale dei contenuti.
 
@@ -143,7 +143,7 @@ Se specifichi un percorso relativo, specifica anche una directory principale del
 
 ### Eseguire un batch {#run-a-batch}
 
-Per eseguire (eseguire) un batch, utilizza `POST /config /[configName]/execution`. Ad esempio, per eseguire un batch denominato wknd-demo, utilizza /config/wknd-demo/execution. All’accettazione della richiesta, il server restituisce il codice di risposta HTTP 202. L’API non restituisce alcun payload, ad eccezione di un codice univoco (identificatore di esecuzione) nell’intestazione della risposta HTTP per il processo batch in esecuzione sul server. È possibile utilizzare l&#39;identificatore di esecuzione per recuperare lo stato del batch.
+Per eseguire un batch, utilizzare `POST /config /[configName]/execution`. Ad esempio, per eseguire un batch denominato wknd-demo, utilizza /config/wknd-demo/execution. All’accettazione della richiesta, il server restituisce il codice di risposta HTTP 202. L’API non restituisce alcun payload, ad eccezione di un codice univoco (identificatore di esecuzione) nell’intestazione della risposta HTTP per il processo batch in esecuzione sul server. È possibile utilizzare l&#39;identificatore di esecuzione per recuperare lo stato del batch.
 
 >[!NOTE]
 >
@@ -162,9 +162,9 @@ La risposta della richiesta di stato contiene la sezione relativa allo stato. Fo
 
 ### Visualizza documenti generati {#view-generated-documents}
 
-Al completamento del processo, i documenti generati vengono archiviati nel `success` nella posizione di destinazione specificata nella configurazione dell&#39;archivio dati batch. In caso di errori, il servizio crea un `failure` cartella. Fornisce informazioni sul tipo e sul motivo degli errori.
+Al termine del processo, i documenti generati vengono archiviati nella cartella `success` nel percorso di destinazione specificato nella configurazione dell&#39;archivio dati batch. In caso di errori, il servizio crea una cartella `failure`. Fornisce informazioni sul tipo e sul motivo degli errori.
 
-Comprendiamo con l’aiuto di un esempio: supponiamo che sia presente un file di dati di input `record1.xml` e due tipi di output: `PDF` e `PCL`. Quindi il percorso di destinazione contiene due sottocartelle `pdf` e `pcl`, uno per ogni tipo di output. Supponiamo che la generazione di PDF sia riuscita, quindi che `pdf` la sottocartella contiene `success` sottocartella che a sua volta contiene il documento PDF generato effettivo `record1.pdf`. Supponiamo che la generazione PCL non sia riuscita, quindi `pcl` sottocartella contiene un `failure` sottocartella che a sua volta contiene un file di errore `record1.error.txt` che contiene i dettagli dell’errore. Inoltre, il percorso di destinazione contiene una cartella temporanea denominata `__tmp__` che contiene alcuni file necessari durante l’esecuzione in batch. È possibile eliminare questa cartella se non sono presenti esecuzioni batch attive che fanno riferimento alla cartella di destinazione.
+Comprendiamo con l&#39;aiuto di un esempio: si supponga che esista un file di dati di input `record1.xml` e due tipi di output: `PDF` e `PCL`. Il percorso di destinazione contiene quindi due sottocartelle `pdf` e `pcl`, una per ciascuno dei tipi di output. Supponiamo che la generazione di PDF sia riuscita, quindi la sottocartella `pdf` contiene la sottocartella `success` che a sua volta contiene il documento PDF generato effettivo `record1.pdf`. Supponiamo che la generazione PCL non sia riuscita, quindi la sottocartella `pcl` contiene una sottocartella `failure` che a sua volta contiene un file di errore `record1.error.txt` contenente i dettagli dell&#39;errore. Inoltre, il percorso di destinazione contiene una cartella temporanea denominata `__tmp__` che contiene alcuni file necessari durante l&#39;esecuzione batch. È possibile eliminare questa cartella se non sono presenti esecuzioni batch attive che fanno riferimento alla cartella di destinazione.
 
 >[!NOTE]
 >
@@ -172,11 +172,11 @@ Comprendiamo con l’aiuto di un esempio: supponiamo che sia presente un file di
 
 ## Documentazione di riferimento API
 
-La documentazione di riferimento API fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i vari servizi forniti dalle API. La documentazione di riferimento API è disponibile in formato .yaml. È possibile scaricare [API batch](assets/batch-api.yaml) e caricarlo in Postman per verificare la funzionalità delle API.
+La documentazione di riferimento API fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i vari servizi forniti dalle API. La documentazione di riferimento API è disponibile in formato .yaml. Puoi scaricare il file [API batch](assets/batch-api.yaml) e caricarlo in Postman per verificare la funzionalità delle API.
 
 >[!MORELIKETHIS]
 >
 >* [Introduzione ad AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [Architettura AEM Forms as a Cloud Service per Forms adattivo e API di comunicazione](/help/forms/aem-forms-cloud-service-architecture.md)
->* [Elaborazione della comunicazione - API sincrone](/help/forms/aem-forms-cloud-service-communications.md)
->* [Elaborazione della comunicazione - API batch](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Architettura di AEM Forms as a Cloud Service per le API di comunicazione e Forms adattivi](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Elaborazione comunicazione - API sincrone](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Elaborazione comunicazione - API batch](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

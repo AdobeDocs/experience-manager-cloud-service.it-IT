@@ -19,49 +19,49 @@ DocuSign è una soluzione di firma elettronica importante. È possibile utilizza
 - Completa i processi relativi alle risorse umane più rapidamente e offri ai tuoi dipendenti le esperienze digitali.
 - Ridurre i tempi di ciclo del contratto e integrare i fornitori più rapidamente.
 
-AEM Forms as a Cloud Service fornisce una [azione di invio personalizzata per DocuSign](#deploy-custom-submit-action). L’azione invia consente di inviare i moduli adattivi per le firme elettroniche utilizzando le API DocuSign.
+AEM Forms as a Cloud Service fornisce [un&#39;azione di invio personalizzata per DocuSign](#deploy-custom-submit-action). L’azione invia consente di inviare i moduli adattivi per le firme elettroniche utilizzando le API DocuSign.
 
-| Puoi anche utilizzare la soluzione di firma elettronica di Adobe, Adobe Sign, per firmare elettronicamente un modulo adattivo. AEM Forms offre un’integrazione molto più profonda con Adobe Sign e controlli molto più precisi, come la firma sequenziale e parallela, più metodi di autenticazione, esperienza di firma interna ai moduli e altro ancora. Per ulteriori informazioni, consulta [Utilizzo di Adobe Sign in un modulo adattivo](working-with-adobe-sign.md). |
+| Puoi anche utilizzare la soluzione di firma elettronica di Adobe, Adobe Sign, per firmare elettronicamente un modulo adattivo. AEM Forms offre un’integrazione molto più profonda con Adobe Sign e controlli molto più precisi, come la firma sequenziale e parallela, più metodi di autenticazione, esperienza di firma interna ai moduli e altro ancora. Per ulteriori informazioni, vedere [Utilizzo di Adobe Sign in un modulo adattivo](working-with-adobe-sign.md). |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ## Prerequisiti {#prerequisites}
 
 Per integrare DocuSign con AEM Forms sono necessari i seguenti elementi:
 
-- A DocuSign [account sviluppatore](https://developers.docusign.com/platform/account/)
+- Un account DocuSign [sviluppatore](https://developers.docusign.com/platform/account/)
 - Un&#39;applicazione DocuSign
 - Credenziali (ID client e segreto client) dell’applicazione API DocuSign.
 - [Azione di invio personalizzata e servizio cloud per DocuSign](https://github.com/adobe/aem-forms-docusign-sample)
-- (Solo per l’ambiente di sviluppo locale) [Imposta documento di record](setup-local-development-environment.md#docker-microservices).
+- (Solo per l&#39;ambiente di sviluppo locale) [Imposta documento di record](setup-local-development-environment.md#docker-microservices).
 
 ## Configurare l’azione di invio personalizzata e Cloud Service per DocuSign {#deploy-custom-submit-action}
 
-AEM Forms as a Cloud Service fornisce un’azione di invio personalizzata per DocuSign. L’azione invia consente di inviare i moduli adattivi per le firme elettroniche utilizzando le API DocuSign. Il codice per l’azione di invio personalizzata è disponibile su [AEM Forms campiona l’archivio Git pubblico](https://github.com/adobe/aem-forms-docusign-sample). Puoi distribuire il codice così come si trova nell’ambiente AEM Forms o personalizzarlo in base ai requisiti della tua organizzazione.
+AEM Forms as a Cloud Service fornisce un’azione di invio personalizzata per DocuSign. L’azione invia consente di inviare i moduli adattivi per le firme elettroniche utilizzando le API DocuSign. Il codice per l&#39;azione di invio personalizzata è disponibile nell&#39;[archivio Git pubblico degli esempi di AEM Forms](https://github.com/adobe/aem-forms-docusign-sample). Puoi distribuire il codice così come si trova nell’ambiente AEM Forms o personalizzarlo in base ai requisiti della tua organizzazione.
 
 Per configurare l’azione di invio personalizzata predefinita e il Cloud Service DocuSign, effettua le seguenti operazioni:
 
-1. [Clonare l’as a Cloud Service progetto AEM Forms](setup-local-development-environment.md#forms-cloud-service-local-development-environment) o creare un [!DNL Experience Manager Forms] as a [!DNL Cloud Service] progetto basato su [AEM Archetipo 27](https://github.com/adobe/aem-project-archetype) o più tardi. Per creare un [!DNL Experience Manager Forms] as a [!DNL Cloud Service] progetto basato su Archetipo AEM:
-   </br> Apri il prompt dei comandi ed esegui il comando seguente per creare un [!DNL Experience Manager Forms] Progetto as a Cloud Service:
+1. [Clona il progetto AEM Forms as a Cloud Service](setup-local-development-environment.md#forms-cloud-service-local-development-environment) o crea un progetto [!DNL Experience Manager Forms] come progetto [!DNL Cloud Service] basato su [AEM Archetipo 27](https://github.com/adobe/aem-project-archetype) o versione successiva. Per creare un [!DNL Experience Manager Forms] come progetto [!DNL Cloud Service] basato su Archetipo AEM:
+   </br> Aprire il prompt dei comandi ed eseguire il comando seguente per creare un progetto as a Cloud Service [!DNL Experience Manager Forms]:
 
    ```shell
    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=27 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
    ```
 
-   Inoltre, modifica `appTitle`, `appId`, e `groupId`, nel comando precedente per riflettere l’ambiente.
+   Inoltre, modifica `appTitle`, `appId` e `groupId` nel comando precedente per riflettere l&#39;ambiente.
 
-1. Clona il [aem-forms-samples](https://github.com/adobe/aem-forms-docusign-sample) archivio. Questo archivio contiene l&#39;azione di invio personalizzata per DocuSign e i dettagli di configurazione per la connessione al server DocuSign.
+1. Clona l&#39;archivio [aem-forms-samples](https://github.com/adobe/aem-forms-docusign-sample). Questo archivio contiene l&#39;azione di invio personalizzata per DocuSign e i dettagli di configurazione per la connessione al server DocuSign.
 
 1. Apri l’as a Cloud Service progetto AEM Forms creato nel passaggio 1 per la modifica nell’IDE che preferisci.
 
-1. Apri `[AEM Forms as a Cloud Service project]\pom.xml` file per la modifica e apportare le seguenti modifiche:
+1. Apri il file `[AEM Forms as a Cloud Service project]\pom.xml` per la modifica e apporta le seguenti modifiche:
 
-   1. Aggiungi il seguente testo alla fine del `<properties>` tag:
+   1. Aggiungere il testo seguente alla fine del tag `<properties>`:
 
       ```shell
       <repository.location>maven_repository</repository.location>
       ```
 
-   1. Aggiungi il seguente testo alla fine del `<repositories>` tag:
+   1. Aggiungere il testo seguente alla fine del tag `<repositories>`:
 
       ```shell
        <repository>
@@ -70,9 +70,9 @@ Per configurare l’azione di invio personalizzata predefinita e il Cloud Servic
        </repository>
       ```
 
-      In caso contrario `<repositories>` , crea il tag sotto il `<properties>` tag.
+      Se non è presente alcun tag `<repositories>`, creare il tag sotto il tag `<properties>`.
 
-   1. Aggiungi il seguente testo alla fine del `<dependencyManagement>` tag:
+   1. Aggiungere il testo seguente alla fine del tag `<dependencyManagement>`:
 
       ```shell
        <dependency>
@@ -83,9 +83,9 @@ Per configurare l’azione di invio personalizzata predefinita e il Cloud Servic
        </dependency>
       ```
 
-1. Effettua i seguenti passaggi nella `all/pom.xml` file disponibile nella cartella dei progetti di Cloud Service:
+1. Eseguire i passaggi seguenti nel file `all/pom.xml` disponibile nella cartella dei progetti di Cloud Service:
 
-   1. Aggiungi il seguente testo alla fine del `<embeddeds>` tag:
+   1. Aggiungere il testo seguente alla fine del tag `<embeddeds>`:
 
       ```shell
        <embedded>
@@ -96,7 +96,7 @@ Per configurare l’azione di invio personalizzata predefinita e il Cloud Servic
        </embedded>
       ```
 
-   1. Aggiungi il seguente testo alla fine del `<dependencies>` tag:
+   1. Aggiungere il testo seguente alla fine del tag `<dependencies>`:
 
       ```shell
        <dependency>
@@ -106,7 +106,7 @@ Per configurare l’azione di invio personalizzata predefinita e il Cloud Servic
        </dependency>
       ```
 
-1. Apri il prompt dei comandi e passa a `aem-forms-samples\forms-integration-docusign` (clonato nel passaggio 3) ed esegui il comando seguente:
+1. Aprire il prompt dei comandi, passare a `aem-forms-samples\forms-integration-docusign` (clonato nel passaggio 3) ed eseguire il comando seguente:
 
    ```shell
    mvn clean install -Dinstall.dir="<AEM Forms as a Cloud Service project path>/maven_repository"
@@ -118,105 +118,105 @@ Per configurare l’azione di invio personalizzata predefinita e il Cloud Servic
 
    `mvn -PautoInstallPackage clean install`
 
-   Dopo aver eseguito questi passaggi, puoi visualizzare una nuova azione di invio personalizzata [Invia con firme elettroniche DocuSign](#enabledocusign) disponibile nell’elenco delle opzioni di invio per un modulo adattivo e un [Configurazione servizio cloud DocuSign](#configure-docusign-with-aem-forms) nell&#39;ambiente di sviluppo locale.
+   Dopo aver eseguito questi passaggi, puoi visualizzare una nuova azione di invio personalizzata [Invia con le firme elettroniche DocuSign](#enabledocusign) disponibile nell&#39;elenco delle opzioni di invio per un modulo adattivo e una [configurazione del servizio cloud DocuSign](#configure-docusign-with-aem-forms) nell&#39;ambiente di sviluppo locale.
 
-1. Compila e [Distribuisci il codice nel tuo [!DNL AEM Forms] ambiente as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases).
+1. Compila e [distribuisci il codice nel tuo [!DNL AEM Forms] ambiente as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases).
 
-## Integrare [!DNL DocuSign] con [!DNL AEM Forms] {#configure-docusign-with-aem-forms}
+## Integra [!DNL DocuSign] con [!DNL AEM Forms] {#configure-docusign-with-aem-forms}
 
-Dopo aver impostato i prerequisiti, effettua le seguenti operazioni per integrare [!DNL DocuSign] con [!DNL AEM Forms] sulle istanze Autore.
+Dopo aver impostato i prerequisiti, effettuare le seguenti operazioni per integrare [!DNL DocuSign] con [!DNL AEM Forms] nelle istanze di authoring.
 
-1. Accedi a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL DocuSign]** e seleziona una cartella per ospitare la configurazione.
+1. Passa a **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL DocuSign]** e seleziona una cartella per ospitare la configurazione.
 
-1. Nella pagina Configurazioni, seleziona **[!UICONTROL Crea]** per creare [!DNL DocuSign] in AEM Forms.
-1. In **[!UICONTROL Generale]** scheda di **[!UICONTROL Crea configurazione DocuSign]** , specificare un **[!UICONTROL Nome]** per la configurazione, quindi seleziona **[!UICONTROL Successivo]**. Facoltativamente, puoi specificare un valore **[!UICONTROL Titolo]**.
+1. Nella pagina Configurazioni, seleziona **[!UICONTROL Crea]** per creare la configurazione [!DNL DocuSign] in AEM Forms.
+1. Nella scheda **[!UICONTROL Generale]** della pagina **[!UICONTROL Crea configurazione DocuSign]**, specificare **[!UICONTROL Nome]** per la configurazione e selezionare **[!UICONTROL Avanti]**. Facoltativamente, puoi specificare un **[!UICONTROL Titolo]**.
 
-1. Copiare l&#39;URL nella finestra del browser corrente in un blocco note. L’URL è necessario per configurare [!DNL DocuSign] applicazione con [!DNL AEM Forms] in un passaggio successivo.
+1. Copiare l&#39;URL nella finestra del browser corrente in un blocco note. L&#39;URL è necessario per configurare l&#39;applicazione [!DNL DocuSign] con [!DNL AEM Forms] in un passaggio successivo.
 
-1. Configurare le impostazioni OAuth per [!DNL DocuSign] applicazione:
+1. Configurare le impostazioni OAuth per l&#39;applicazione [!DNL DocuSign]:
 
-   1. Apri una finestra del browser e accedi al tuo [!DNL DocuSign] [account sviluppatore](https://admindemo.docusign.com/apps-and-keys).
-   1. Apri l’app configurata per [!DNL AEM Forms].
-   1. In **[!UICONTROL URI di reindirizzamento]** , aggiungi l’URL copiato nel passaggio precedente e fai clic su **[!UICONTROL Salva]**.
+   1. Apri una finestra del browser e accedi al tuo account [!DNL DocuSign] [sviluppatore](https://admindemo.docusign.com/apps-and-keys).
+   1. Apri l&#39;app configurata per [!DNL AEM Forms].
+   1. Nella casella **[!UICONTROL URI reindirizzamento]** aggiungere l&#39;URL copiato nel passaggio precedente e fare clic su **[!UICONTROL Salva]**.
    1. Prendi nota dell’integrazione e delle chiavi segrete.
 
-   Per informazioni dettagliate su come configurare le impostazioni OAuth per un [!DNL DocuSign] e ottenere le chiavi, consulta [Configurare le impostazioni OAuth per l&#39;applicazione](https://support.docusign.com/guides/ndse-admin-guide-api-and-keys) documentazione per gli sviluppatori.
+   Per informazioni dettagliate su come configurare le impostazioni OAuth per un&#39;applicazione [!DNL DocuSign] e ottenere le chiavi, vedere [Configurare le impostazioni OAuth per la documentazione per gli sviluppatori dell&#39;applicazione](https://support.docusign.com/guides/ndse-admin-guide-api-and-keys).
 
-1. Torna a **[!UICONTROL Crea configurazione DocuSign]** pagina. In **[!UICONTROL Impostazioni]** , la scheda **[!UICONTROL URL OAuth]** nel campo è indicato il seguente URL predefinito:
+1. Tornare alla pagina **[!UICONTROL Crea configurazione DocuSign]**. Nella scheda **[!UICONTROL Impostazioni]**, il campo **[!UICONTROL URL OAuth]** fa riferimento al seguente URL predefinito:
 
    `https://account-d.docusign.com/oauth/auth`
 
-1. Specifica la **[!UICONTROL ID client]** (chiave di integrazione DocuSign) e **[!UICONTROL Segreto client]** (Chiave segreta DocuSign).
+1. Specificare **[!UICONTROL ID client]** (chiave di integrazione DocuSign) e **[!UICONTROL Segreto client]** (chiave segreta DocuSign).
 
-1. Seleziona **[!UICONTROL Connetti a DocuSign]**. Quando vengono richieste le credenziali, specifica il nome utente e la password dell’account utilizzato durante la creazione [!DNL DocuSign] applicazione. Quando ti viene richiesto di confermare l’accesso per `your developer account`, fai clic su **[!UICONTROL Consenti accesso]**. Se le credenziali sono corrette, viene visualizzato un messaggio di operazione riuscita.
+1. Selezionare **[!UICONTROL Connetti a DocuSign]**. Quando vengono richieste le credenziali, specificare il nome utente e la password dell&#39;account utilizzato durante la creazione dell&#39;applicazione [!DNL DocuSign]. Quando viene richiesto di confermare l&#39;accesso per `your developer account`, fare clic su **[!UICONTROL Consenti accesso]**. Se le credenziali sono corrette, viene visualizzato un messaggio di operazione riuscita.
 
-1. Seleziona **[!UICONTROL Crea]** per creare [!DNL DocuSign] configurazione.
+1. Seleziona **[!UICONTROL Crea]** per creare la configurazione di [!DNL DocuSign].
 
 1. Seleziona la configurazione e fai clic su **[!UICONTROL Publish]**, seleziona la configurazione e fai clic su **[!UICONTROL Publish]**. Replica la configurazione negli ambienti di pubblicazione corrispondenti.
 
-1. Ripeti tutti i passaggi precedenti sulle istanze di sviluppo, staging e produzione (a seconda di quale sia il passaggio rimasto) per completare la configurazione [!DNL DocuSign] con [!DNL AEM Forms] per il tuo ambiente.
+1. Ripeti tutti i passaggi precedenti per le istanze di sviluppo, stage e produzione (qualsiasi sia rimasto) per completare la configurazione di [!DNL DocuSign] con [!DNL AEM Forms] per il tuo ambiente.
 
-Ora l’ambiente AEM Forms è configurato per l’utilizzo di DocuSign. Accertati di aggiungere il contenitore di configurazione utilizzato per il Cloud Service a tutti i Forms adattivi abilitati per [!DNL DocuSign]. È possibile specificare un contenitore di configurazione dalle proprietà di un modulo adattivo.
+Ora l’ambiente AEM Forms è configurato per l’utilizzo di DocuSign. Assicurarsi di aggiungere il contenitore di configurazione utilizzato per il Cloud Service a tutti i Forms adattivi abilitati per [!DNL DocuSign]. È possibile specificare un contenitore di configurazione dalle proprietà di un modulo adattivo.
 
-### Utilizzare [!DNL DocuSign] in un modulo adattivo {#enabledocusign}
+### Usa [!DNL DocuSign] in un modulo adattivo {#enabledocusign}
 
-È possibile abilitare [!DNL DocuSign] per un modulo adattivo esistente o crea un [!DNL DocuSign] è stato abilitato Adaptive Form. Scegliere una delle opzioni seguenti:
+È possibile abilitare [!DNL DocuSign] per un modulo adattivo esistente o crearne uno abilitato per [!DNL DocuSign]. Scegliere una delle opzioni seguenti:
 
-- [Creare un [!DNL DocuSign] Modulo adattivo abilitato](#create-an-adaptive-form-for-docusign)
-- [Abilita [!DNL DocuSign] per un modulo adattivo esistente](#editafsign).
+- [Crea un modulo adattivo abilitato per  [!DNL DocuSign] ](#create-an-adaptive-form-for-docusign)
+- [Attiva [!DNL DocuSign] per un modulo adattivo esistente](#editafsign).
 
 #### Creare un modulo adattivo per DocuSign {#create-an-adaptive-form-for-docusign}
 
 Per creare un modulo adattivo abilitato alla firma:
 
-1. Accedi a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
-1. Seleziona **[!UICONTROL Crea]** e seleziona **[!UICONTROL Modulo adattivo]**. Viene visualizzato un elenco di modelli. Seleziona un modello e seleziona **[!UICONTROL Successivo]**.
-1. In **[!UICONTROL Base]** scheda:
+1. Passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Seleziona **[!UICONTROL Crea]** e **[!UICONTROL Modulo adattivo]**. Viene visualizzato un elenco di modelli. Seleziona un modello e seleziona **[!UICONTROL Avanti]**.
+1. Nella scheda **[!UICONTROL Base]**:
 
-   1. Specifica la **[!UICONTROL Nome]** e **[!UICONTROL Titolo]** per il modulo adattivo.
+   1. Specifica il **[!UICONTROL Nome]** e il **[!UICONTROL Titolo]** per il modulo adattivo.
 
-   1. Seleziona la [Contenitore configurazione](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creato durante [integrazione [!DNL DocuSign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+   1. Seleziona il [contenitore di configurazione](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creato durante l&#39;[integrazione [!DNL DocuSign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-   Il contenitore di configurazione contiene [!DNL DocuSign] Cloud Service configurati per l’ambiente. Questi servizi sono disponibili per la selezione nell’editor di moduli adattivi.
+   Il contenitore di configurazione contiene i [!DNL DocuSign] Cloud Service configurati per l&#39;ambiente. Questi servizi sono disponibili per la selezione nell’editor di moduli adattivi.
 
-1. In **[!UICONTROL Modello modulo]** , selezionare una delle opzioni seguenti:
+1. Nella scheda **[!UICONTROL Modello modulo]** selezionare una delle opzioni seguenti:
 
-   - Se si dispone di un modello di modulo personalizzato e si richiede un documento di record basato sul modello di modulo, selezionare **[!UICONTROL Associa modello modulo come modello del documento record]** e selezionare un modello di documento record. Quando si utilizza l&#39;opzione, i documenti inviati per la firma visualizzano solo i campi basati sul modello di modulo associato. Non visualizza tutti i campi del modulo adattivo.
+   - Se si dispone di un modello di modulo personalizzato e si richiede un documento di record basato sul modello di modulo, selezionare l&#39;opzione **[!UICONTROL Associa modello di modulo come modello di documento record]** e selezionare un modello di documento record. Quando si utilizza l&#39;opzione, i documenti inviati per la firma visualizzano solo i campi basati sul modello di modulo associato. Non visualizza tutti i campi del modulo adattivo.
 
-   - Se non si dispone di un modello di modulo personalizzato, selezionare **[!UICONTROL Genera documento di record]** opzione. Quando utilizzi l’opzione, nel documento inviato per la firma vengono visualizzati tutti i campi del modulo adattivo.
+   - Se non si dispone di un modello di modulo personalizzato, selezionare l&#39;opzione **[!UICONTROL Genera documento di record]**. Quando utilizzi l’opzione, nel documento inviato per la firma vengono visualizzati tutti i campi del modulo adattivo.
 
-1. Seleziona **[!UICONTROL Crea.]** Viene creato un modulo adattivo abilitato alla firma. Puoi aggiungere il tuo [!DNL DocuSign] nel modulo e inviarlo per la firma.
-1. Apri il modulo adattivo in modalità di modifica. In **[!UICONTROL Contenuto]** , seleziona la scheda **[!UICONTROL Contenitore modulo]** e seleziona ![Configura](assets/configure-icon.svg).
+1. Selezionare **[!UICONTROL Crea.]** È stato creato un modulo adattivo abilitato alla firma. Puoi aggiungere i campi [!DNL DocuSign] al modulo e inviarlo per la firma.
+1. Apri il modulo adattivo in modalità di modifica. Nella scheda **[!UICONTROL Contenuto]**, seleziona **[!UICONTROL Contenitore modulo]** e ![Configura](assets/configure-icon.svg).
 
-1. In **[!UICONTROL Invio]** sezione, seleziona **[!UICONTROL Invia con firme elettroniche DocuSign]** dal **[!UICONTROL Azione di invio]** elenco a discesa.
+1. Nella sezione **[!UICONTROL Invio]**, selezionare **[!UICONTROL Invia con firme elettroniche DocuSign]** dall&#39;elenco a discesa **[!UICONTROL Azione invio]**.
 
-1. In **[!UICONTROL Configurazione azione]** sezione, seleziona **[!UICONTROL Aggiungi]** per aggiungere un destinatario e specificarne l’indirizzo e-mail. Seleziona **[!UICONTROL Aggiungi]** per aggiungere altri destinatari.
+1. Nella sezione **[!UICONTROL Configurazione azione]**, seleziona **[!UICONTROL Aggiungi]** per aggiungere un destinatario e specificare l&#39;indirizzo e-mail del destinatario. Seleziona di nuovo **[!UICONTROL Aggiungi]** per aggiungere altri destinatari.
 
-1. Specifica l’oggetto del messaggio e-mail nel **[!UICONTROL Oggetto e-mail]** campo. Seleziona **Includi allegati** per includere allegati nel messaggio e-mail.
+1. Specifica l&#39;oggetto del messaggio e-mail nel campo **[!UICONTROL Oggetto e-mail]**. Selezionare **Includi allegati** per includere gli allegati nel messaggio di posta elettronica.
 
 1. Seleziona ![Salva](assets/save_icon.svg) per salvare le proprietà.
 
 #### Abilita [!DNL DocuSign] per un modulo adattivo {#editafsign}
 
-Da utilizzare [!DNL DocuSign] in un modulo adattivo esistente:
+Per utilizzare [!DNL DocuSign] in un modulo adattivo esistente:
 
-1. Accedi a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Seleziona il modulo adattivo e seleziona **[!UICONTROL Proprietà]**.
-1. In **[!UICONTROL Base]** , seleziona la scheda [Contenitore configurazione](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creato durante l’integrazione [!DNL DocuSign] con [!DNL AEM Forms].
-1. In **[!UICONTROL Modello modulo]** , selezionare una delle opzioni seguenti:
+1. Nella scheda **[!UICONTROL Base]**, seleziona il [contenitore di configurazione](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creato durante l&#39;integrazione di [!DNL DocuSign] con [!DNL AEM Forms].
+1. Nella scheda **[!UICONTROL Modello modulo]** selezionare una delle opzioni seguenti:
 
-   - Se si dispone di un modello di modulo personalizzato e si richiede un documento di record basato sul modello di modulo, selezionare **[!UICONTROL Associa modello modulo come modello del documento record]** e selezionare un modello di documento record. Quando si utilizza l&#39;opzione, i documenti inviati per la firma visualizzano solo i campi basati sul modello di modulo associato. Non visualizza tutti i campi del modulo adattivo.
+   - Se si dispone di un modello di modulo personalizzato e si richiede un documento di record basato sul modello di modulo, selezionare l&#39;opzione **[!UICONTROL Associa modello di modulo come modello di documento record]** e selezionare un modello di documento record. Quando si utilizza l&#39;opzione, i documenti inviati per la firma visualizzano solo i campi basati sul modello di modulo associato. Non visualizza tutti i campi del modulo adattivo.
 
-   - Se non si dispone di un modello di modulo personalizzato, selezionare **[!UICONTROL Genera documento di record]** opzione. Quando utilizzi l’opzione, nel documento inviato per la firma vengono visualizzati tutti i campi del modulo adattivo.
+   - Se non si dispone di un modello di modulo personalizzato, selezionare l&#39;opzione **[!UICONTROL Genera documento di record]**. Quando utilizzi l’opzione, nel documento inviato per la firma vengono visualizzati tutti i campi del modulo adattivo.
 
-1. Seleziona **[!UICONTROL Salva e chiudi]**. Il modulo adattivo è abilitato per [!DNL DocuSign]. Ora puoi aggiungere il tuo [!DNL DocuSign] nel modulo e inviarlo per la firma.
+1. Seleziona **[!UICONTROL Salva e chiudi]**. Modulo adattivo abilitato per [!DNL DocuSign]. Ora puoi aggiungere i campi [!DNL DocuSign] al modulo e inviarlo per la firma.
 
-1. Apri il modulo adattivo in modalità di modifica. In **[!UICONTROL Contenuto]** , seleziona la scheda **[!UICONTROL Contenitore modulo]** e seleziona ![Configura](assets/configure-icon.svg).
+1. Apri il modulo adattivo in modalità di modifica. Nella scheda **[!UICONTROL Contenuto]**, seleziona **[!UICONTROL Contenitore modulo]** e ![Configura](assets/configure-icon.svg).
 
-1. In **[!UICONTROL Invio]** sezione, seleziona **[!UICONTROL Invia con firme elettroniche DocuSign]** dal **[!UICONTROL Azione di invio]** elenco a discesa.
+1. Nella sezione **[!UICONTROL Invio]**, selezionare **[!UICONTROL Invia con firme elettroniche DocuSign]** dall&#39;elenco a discesa **[!UICONTROL Azione invio]**.
 
-1. In **[!UICONTROL Configurazione azione]** sezione, seleziona **[!UICONTROL Aggiungi]** per aggiungere un destinatario e specificarne l’indirizzo e-mail. Seleziona **[!UICONTROL Aggiungi]** per aggiungere altri destinatari.
+1. Nella sezione **[!UICONTROL Configurazione azione]**, seleziona **[!UICONTROL Aggiungi]** per aggiungere un destinatario e specificare l&#39;indirizzo e-mail del destinatario. Seleziona di nuovo **[!UICONTROL Aggiungi]** per aggiungere altri destinatari.
 
-1. Specifica l’oggetto del messaggio e-mail nel **[!UICONTROL Oggetto e-mail]** campo. Seleziona **Includi allegati** per includere allegati nel messaggio e-mail.
+1. Specifica l&#39;oggetto del messaggio e-mail nel campo **[!UICONTROL Oggetto e-mail]**. Selezionare **Includi allegati** per includere gli allegati nel messaggio di posta elettronica.
 
 1. Seleziona ![Salva](assets/save_icon.svg) per salvare le proprietà.

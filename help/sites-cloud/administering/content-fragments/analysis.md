@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Analisi della struttura dei frammenti di contenuto {#analyzing-content-fragments-structure}
 
-I frammenti di contenuto sono progettati per [Distribuzione headless tramite GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). Ciò significa che possono avere una struttura a più livelli.
+I frammenti di contenuto sono progettati per la [distribuzione headless tramite GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). Ciò significa che possono avere una struttura a più livelli.
 
 L’Experience Manager (AEM) fornisce diversi metodi per visualizzare e analizzare la struttura dei frammenti.
 
@@ -29,7 +29,7 @@ La struttura a più livelli viene creata utilizzando Riferimenti:
 
 ## Albero struttura {#structure-tree}
 
-Apri **Struttura ad albero** dalla barra degli strumenti dell’editor per visualizzare la struttura gerarchica del frammento di contenuto e i relativi riferimenti. Utilizza l’icona del collegamento per aprire i riferimenti.
+Apri la scheda **Struttura** dalla barra degli strumenti dell&#39;editor per visualizzare la struttura gerarchica del frammento di contenuto e i relativi riferimenti. Utilizza l’icona del collegamento per aprire i riferimenti.
 
 Ad esempio:
 

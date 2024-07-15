@@ -361,7 +361,7 @@ Per personalizzare il frammento:
    >
    >* un percorso che contiene un sottoinsieme degli archivi definiti in ContextHub configurati per la pagina
    >
-   >Il **Percorso segmenti** selezionato in **Personalizzazione** la scheda deve essere:
+   >Il **Percorso segmenti** selezionato nella scheda **Personalization** deve essere:
    >
    >* lo stesso percorso configurato per la pagina in cui verrà eseguito il rendering del frammento
    >

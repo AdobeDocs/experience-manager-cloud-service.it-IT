@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Precompilare i campi di un modulo adattivo{#prefill-adaptive-form-fields}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -27,15 +27,15 @@ ht-degree: 1%
 
 ## Struttura dei dati preriempimento {#the-prefill-structure}
 
-Un modulo adattivo può contenere una combinazione di campi associati e non associati. I campi associati sono campi trascinati dalla scheda Content Finder e che contengono elementi non vuoti `bindRef` valore della proprietà nella finestra di dialogo di modifica del campo. I campi non associati vengono trascinati direttamente dal browser dei componenti del Sidekick e hanno un `bindRef` valore.
+Un modulo adattivo può contenere una combinazione di campi associati e non associati. I campi associati sono campi trascinati dalla scheda Content Finder e che contengono il valore della proprietà `bindRef` non vuoto nella finestra di dialogo di modifica del campo. I campi non associati vengono trascinati direttamente dal browser componenti del Sidekick e hanno un valore `bindRef` vuoto.
 
-È possibile precompilare sia i campi associati che quelli non associati di un modulo adattivo. I dati di precompilazione contengono le sezioni afBoundData e afUnBoundData per precompilare sia i campi associati che quelli non associati di un modulo adattivo. Il `afBoundData` contiene i dati di precompilazione per i campi e i pannelli associati. Questi dati devono essere conformi allo schema del modello di modulo associato:
+È possibile precompilare sia i campi associati che quelli non associati di un modulo adattivo. I dati di precompilazione contengono le sezioni afBoundData e afUnBoundData per precompilare sia i campi associati che quelli non associati di un modulo adattivo. La sezione `afBoundData` contiene i dati di precompilazione per i campi e i pannelli associati. Questi dati devono essere conformi allo schema del modello di modulo associato:
 
-- Per Forms adattivo che utilizza [Modello di modulo XFA](#xfa-based-af), utilizza il file XML di precompilazione conforme allo schema dati del modello XFA.
-- Per Forms adattivo che utilizza [Schema XML](#xml-schema-af), utilizza il file XML di precompilazione conforme alla struttura dello schema XML.
-- Per Forms adattivo che utilizza [Schema JSON](#json-schema-based-adaptive-forms), utilizza il JSON di precompilazione conforme allo schema JSON.
+- Per Forms adattivo che utilizza il [modello di modulo XFA](#xfa-based-af), utilizza il file XML di precompilazione conforme allo schema di dati del modello XFA.
+- Per Forms adattivo che utilizza [lo schema XML](#xml-schema-af), utilizza il precompilatore XML conforme alla struttura dello schema XML.
+- Per Forms adattivo che utilizza lo schema [JSON](#json-schema-based-adaptive-forms), utilizza il codice JSON di precompilazione conforme allo schema JSON.
 - Per il Forms adattivo che utilizza lo schema FDM, utilizza il JSON di precompilazione conforme allo schema FDM.
-- Per Forms adattivo con [nessun modello modulo](#adaptive-form-with-no-form-model), non sono presenti dati associati. Ogni campo è un campo non associato e viene precompilato utilizzando l&#39;XML non associato.
+- Per Forms adattivo con [nessun modello di modulo](#adaptive-form-with-no-form-model), non sono presenti dati associati. Ogni campo è un campo non associato e viene precompilato utilizzando l&#39;XML non associato.
 
 ### Esempio di struttura XML di preriempimento {#sample-prefill-xml-structure}
 
@@ -83,9 +83,9 @@ Per i campi associati con lo stesso bindref o campi non associati con lo stesso 
 
 La struttura dell’XML di precompilazione e dell’XML inviato per Adaptive Forms basato su XFA è la seguente:
 
-- **Precompila struttura XML**: l’XML di precompilazione per il modulo adattivo basato su XFA deve essere conforme allo schema di dati del modello di modulo XFA. Per precompilare i campi non associati, racchiudi la struttura XML precompilata in `/afData/afBoundData` tag.
+- **Struttura XML precompilata**: l&#39;XML precompilato per il modulo adattivo basato su XFA deve essere conforme allo schema dati del modello di modulo XFA. Per precompilare i campi non associati, racchiudere la struttura XML di precompilazione nel tag `/afData/afBoundData`.
 
-- **Struttura XML inviata**: quando non viene utilizzato alcun XML di precompilazione, l’XML inviato contiene dati sia per i campi associati che per quelli non associati in `afData` tag wrapper. Se si utilizza un XML di precompilazione, il codice XML inviato ha la stessa struttura del codice XML di precompilazione. Se l&#39;XML di precompilazione inizia con `afData` principale, anche l&#39;XML di output ha lo stesso formato. Se il file XML di precompilazione non contiene `afData/afBoundData`wrapper e inizia direttamente dal tag principale dello schema, come `employeeData`, anche il codice XML inviato inizia con `employeeData` tag.
+- **Struttura XML inviato**: se non viene utilizzato alcun XML di precompilazione, l&#39;XML inviato contiene dati per i campi associati e non associati nel tag wrapper `afData`. Se si utilizza un XML di precompilazione, il codice XML inviato ha la stessa struttura del codice XML di precompilazione. Se l&#39;XML di precompilazione inizia con il tag radice `afData`, anche l&#39;XML di output ha lo stesso formato. Se il file XML di precompilazione non ha il wrapper `afData/afBoundData` e inizia direttamente dal tag radice dello schema come `employeeData`, anche il file XML inviato inizia con il tag `employeeData`.
 
 Prefill-Submit-Data-ContentPackage.zip
 
@@ -96,8 +96,8 @@ Campione contenente i dati di precompilazione e i dati inviati
 
 La struttura dell&#39;XML di precompilazione e dell&#39;XML inviato per Forms adattivo basato su schema XML è la seguente:
 
-- **Precompila struttura XML**: l&#39;XML di precompilazione deve essere conforme allo schema XML associato. Per precompilare i campi non associati, racchiudi la struttura XML di precompilazione nel tag /afData/afBoundData.
-- **Struttura XML inviata**: se non viene utilizzato alcun XML di precompilazione, l’XML inviato contiene dati sia per i campi associati che per quelli non associati in `afData` tag wrapper. Se si utilizza il codice XML di precompilazione, il codice XML inviato ha la stessa struttura del codice XML di precompilazione. Se l&#39;XML di precompilazione inizia con `afData` principale, l&#39;XML di output ha lo stesso formato. Se il file XML di precompilazione non contiene `afData/afBoundData` wrapper e inizia direttamente dal tag principale dello schema, come `employeeData`, anche il codice XML inviato inizia con `employeeData` tag.
+- **Struttura XML precompilato**: l&#39;XML precompilato deve essere conforme allo schema XML associato. Per precompilare i campi non associati, racchiudi la struttura XML di precompilazione nel tag /afData/afBoundData.
+- **Struttura XML inviato**: se non viene utilizzato alcun XML di precompilazione, il codice XML inviato contiene dati per i campi associati e non associati nel tag wrapper `afData`. Se si utilizza il codice XML di precompilazione, il codice XML inviato ha la stessa struttura del codice XML di precompilazione. Se l&#39;XML di precompilazione inizia con il tag radice `afData`, l&#39;XML di output ha lo stesso formato. Se il file XML di precompilazione non ha il wrapper `afData/afBoundData` e inizia direttamente dal tag radice dello schema come `employeeData`, anche il file XML inviato inizia con il tag `employeeData`.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -115,7 +115,7 @@ La struttura dell&#39;XML di precompilazione e dell&#39;XML inviato per Forms ad
 </xs:schema>
 ```
 
-Per i campi il cui modello è lo schema XML, i dati vengono precompilati nel `afBoundData` come mostrato nel codice XML di esempio seguente. Può essere utilizzato per precompilare un modulo adattivo con uno o più campi di testo non associati.
+Per i campi il cui modello è lo schema XML, i dati vengono precompilati nel tag `afBoundData` come mostrato nel codice XML di esempio seguente. Può essere utilizzato per precompilare un modulo adattivo con uno o più campi di testo non associati.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -134,7 +134,7 @@ Per i campi il cui modello è lo schema XML, i dati vengono precompilati nel `af
 
 >[!NOTE]
 >
->Si consiglia di non utilizzare campi non associati nei pannelli associati (pannelli con `bindRef` creato trascinando i componenti dalla scheda Sidekick o Origini dati). Potrebbe causare la perdita di dati di questi campi non associati. Inoltre, si consiglia di assegnare nomi univoci ai campi nel modulo, in particolare per i campi non associati.
+>Si consiglia di non utilizzare campi non associati nei pannelli associati (pannelli con `bindRef` non vuoto creati trascinando i componenti dalla scheda Sidekick o Origini dati). Potrebbe causare la perdita di dati di questi campi non associati. Inoltre, si consiglia di assegnare nomi univoci ai campi nel modulo, in particolare per i campi non associati.
 
 #### Esempio senza afData e wrapper afBoundData {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -147,10 +147,10 @@ Per i campi il cui modello è lo schema XML, i dati vengono precompilati nel `af
 
 ### Forms adattivo basato su schema JSON {#json-schema-based-adaptive-forms}
 
-Per il Forms adattivo basato sullo schema JSON, di seguito è descritta la struttura del JSON di precompilazione e del JSON inviato. Per ulteriori informazioni, consulta [Creazione di un Forms adattivo utilizzando lo schema JSON](adaptive-form-json-schema-form-model.md).
+Per il Forms adattivo basato sullo schema JSON, di seguito è descritta la struttura del JSON di precompilazione e del JSON inviato. Per ulteriori informazioni, vedere [Creazione di Forms adattivi utilizzando lo schema JSON](adaptive-form-json-schema-form-model.md).
 
-- **Precompilare la struttura JSON**: il JSON di precompilazione deve essere conforme allo schema JSON associato. Facoltativamente, può essere racchiuso nell&#39;oggetto /afData/afBoundData se desideri precompilare anche i campi non associati.
-- **Struttura JSON inviata**: se non viene utilizzato alcun JSON di precompilazione, il JSON inviato contiene dati sia per i campi associati che per quelli non associati nel tag wrapper afData. Se si utilizza il JSON di precompilazione, il JSON inviato ha la stessa struttura del JSON di precompilazione. Se il JSON di precompilazione inizia con l’oggetto principale afData, il JSON di output ha lo stesso formato. Se il JSON di precompilazione non ha il wrapper afData/afBoundData e inizia direttamente dall’oggetto principale dello schema, come utente, anche il JSON inviato inizia con l’oggetto utente.
+- **Struttura JSON di precompilazione**: il JSON di precompilazione deve essere conforme allo schema JSON associato. Facoltativamente, può essere racchiuso nell&#39;oggetto /afData/afBoundData se desideri precompilare anche i campi non associati.
+- **Struttura JSON inviato**: se non si utilizza un JSON di precompilazione, il JSON inviato contiene dati sia per i campi associati che per quelli non associati nel tag wrapper afData. Se si utilizza il JSON di precompilazione, il JSON inviato ha la stessa struttura del JSON di precompilazione. Se il JSON di precompilazione inizia con l’oggetto principale afData, il JSON di output ha lo stesso formato. Se il JSON di precompilazione non ha il wrapper afData/afBoundData e inizia direttamente dall’oggetto principale dello schema, come utente, anche il JSON inviato inizia con l’oggetto utente.
 
 ```json
 {
@@ -173,7 +173,7 @@ Per il Forms adattivo basato sullo schema JSON, di seguito è descritta la strut
 }
 ```
 
-Per i campi che utilizzano il modello di schema JSON, i dati vengono precompilati nell’oggetto afBoundData come mostrato nel JSON di esempio di seguito. Può essere utilizzato per precompilare un modulo adattivo con uno o più campi di testo non associati. Di seguito è riportato un esempio di dati con `afData/afBoundData` wrapper:
+Per i campi che utilizzano il modello di schema JSON, i dati vengono precompilati nell’oggetto afBoundData come mostrato nel JSON di esempio di seguito. Può essere utilizzato per precompilare un modulo adattivo con uno o più campi di testo non associati. Di seguito è riportato un esempio di dati con wrapper `afData/afBoundData`:
 
 ```json
 {
@@ -190,7 +190,7 @@ Per i campi che utilizzano il modello di schema JSON, i dati vengono precompilat
 }}}}}}}
 ```
 
-Di seguito è riportato un esempio senza `afData/afBoundData` wrapper:
+Di seguito è riportato un esempio senza wrapper `afData/afBoundData`:
 
 ```json
 {
@@ -205,12 +205,12 @@ Di seguito è riportato un esempio senza `afData/afBoundData` wrapper:
 
 >[!NOTE]
 >
-> L’utilizzo di campi non associati nei pannelli associati (pannelli con bindRef non vuoto creati trascinando componenti dalla scheda Sidekick o Origini dati) è **non** consigliato in quanto potrebbe causare la perdita di dati dei campi non associati. Si consiglia di avere nomi di campo univoci nel modulo, in particolare per i campi non associati.
+> L&#39;utilizzo di campi non associati nei pannelli associati (pannelli con bindRef non vuoto creati trascinando i componenti dalla scheda Sidekick o Origini dati) è **non** consigliato in quanto potrebbe causare la perdita di dati dei campi non associati. Si consiglia di avere nomi di campo univoci nel modulo, in particolare per i campi non associati.
 >
 
 ### Modulo adattivo senza modello di modulo {#adaptive-form-with-no-form-model}
 
-Per Forms adattivo senza modello di modulo, i dati per tutti i campi si trovano sotto `<data>` tag di `<afUnboundData> tag`.
+Per Forms adattivo senza modello di modulo, i dati per tutti i campi si trovano sotto il tag `<data>` di `<afUnboundData> tag`.
 
 Inoltre, prendi nota di quanto segue:
 
@@ -237,7 +237,7 @@ I tag XML per i dati utente inviati per vari campi vengono generati utilizzando 
 
 ## Configurazione del servizio di precompilazione {#configuring-prefill-service-using-configuration-manager}
 
-Utilizza il `alloweddataFileLocations` proprietà del **Configurazione predefinita servizio preriempimento** per impostare la posizione dei file di dati o un&#39;espressione regolare per i percorsi dei file di dati.
+Utilizzare la proprietà `alloweddataFileLocations` della **configurazione predefinita del servizio di precompilazione** per impostare il percorso dei file di dati o un&#39;espressione regolare per i percorsi dei file di dati.
 
 Il seguente file JSON mostra un esempio:
 
@@ -247,7 +247,7 @@ Il seguente file JSON mostra un esempio:
   }
 ```
 
-Per impostare i valori di una configurazione: [Generare configurazioni OSGi utilizzando l’SDK per AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuire la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) all’istanza di Cloud Service.
+Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando l&#39;SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza di Cloud Service.
 
 >[!NOTE]
 >
@@ -276,7 +276,7 @@ http
 https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
 ```
 
-Il nodo specificato deve avere una proprietà denominata `jcr:data` e conserva i dati.
+Il nodo specificato deve avere una proprietà denominata `jcr:data` e contenere i dati.
 
 ### Il protocollo file://  {#the-file-protocol-nbsp}
 
@@ -307,7 +307,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 ### Impostazione dell’attributo dei dati in slingRequest {#setting-data-attribute-in-slingrequest}
 
-È inoltre possibile impostare `data` attributo in `slingRequest`, in cui `data` attribute è una stringa contenente XML o JSON, come illustrato nel codice di esempio seguente (ad esempio, per XML):
+È inoltre possibile impostare l&#39;attributo `data` in `slingRequest`, dove l&#39;attributo `data` è una stringa contenente XML o JSON, come illustrato nel codice di esempio seguente (ad esempio per XML):
 
 ```javascript
 <%
@@ -327,16 +327,16 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 Puoi scrivere una stringa XML o JSON semplice contenente tutti i tuoi dati e impostarla in slingRequest. Puoi eseguire facilmente questa operazione nel JSP di rendering per qualsiasi componente che desideri includere nella pagina in cui puoi impostare l’attributo dati slingRequest.
 
-Ad esempio, dove desideri una progettazione specifica per la pagina con un tipo specifico di intestazione. Per ottenere questo risultato, puoi scrivere il tuo `header.jsp`, che puoi includere nel componente Pagina e impostare `data` attributo.
+Ad esempio, dove desideri una progettazione specifica per la pagina con un tipo specifico di intestazione. A questo scopo, puoi scrivere il tuo `header.jsp`, che puoi includere nel componente Pagina e impostare l&#39;attributo `data`.
 
-Un altro buon esempio è un caso d’uso in cui si desidera precompilare i dati all’accesso tramite account social come Facebook, Twitter o LinkedIn. In questo caso, puoi includere una semplice JSP in `header.jsp`, che recupera i dati dall’account utente e imposta il parametro di dati.
+Un altro buon esempio è un caso d’uso in cui si desidera precompilare i dati all’accesso tramite account social come Facebook, Twitter o LinkedIn. In questo caso, è possibile includere una JSP semplice in `header.jsp`, che recupera i dati dall&#39;account utente e imposta il parametro di dati.
 
 prefill-page component.zip
 
 [Ottieni file](assets/prefill-page-component.zip)
 Esempio di prefill.jsp nel componente pagina
 
-## [!DNL AEM Forms] servizio di preriempimento personalizzato {#aem-forms-custom-prefill-service}
+## [!DNL AEM Forms] servizio di precompilazione personalizzato {#aem-forms-custom-prefill-service}
 
 Puoi utilizzare il servizio di preriempimento personalizzato per gli scenari in cui si leggono costantemente i dati da un’origine predefinita. Il servizio di precompilazione legge i dati dalle origini dati definite e precompila i campi del modulo adattivo con il contenuto del file di dati di precompilazione. Consente inoltre di associare in modo permanente i dati precompilati a un modulo adattivo.
 
@@ -344,7 +344,7 @@ Puoi utilizzare il servizio di preriempimento personalizzato per gli scenari in 
 
 Il servizio di precompilazione è un servizio OSGi ed è fornito tramite bundle OSGi. Puoi creare il bundle OSGi, caricarlo e installarlo in [!DNL AEM Forms] bundle. Prima di iniziare a creare il bundle:
 
-- [Scarica il file [!DNL AEM Forms] Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+- [Scarica  [!DNL AEM Forms] Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 - Scarica il pacchetto boilerplate
 
 - Inserisci il file di dati (dati di precompilazione) nel crx-repository. È possibile inserire il file in qualsiasi posizione nella cartella \content del repository crx.
@@ -353,25 +353,25 @@ Il servizio di precompilazione è un servizio OSGi ed è fornito tramite bundle 
 
 #### Creare un servizio di preriempimento {#create-a-prefill-service}
 
-Il pacchetto boilerplate (esempio di pacchetto di servizio di preriempimento) contiene un&#39;implementazione di esempio di [!DNL AEM Forms] servizio preriempimento. Apri il pacchetto boilerplate in un editor di codice. Ad esempio, apri il progetto boilerplate in Eclipse per la modifica. Dopo aver aperto il pacchetto boilerplate in un editor di codice, esegui i seguenti passaggi per creare il servizio.
+Il pacchetto boilerplate (esempio di pacchetto del servizio di precaricamento) contiene un&#39;implementazione di esempio del servizio di precaricamento [!DNL AEM Forms]. Apri il pacchetto boilerplate in un editor di codice. Ad esempio, apri il progetto boilerplate in Eclipse per la modifica. Dopo aver aperto il pacchetto boilerplate in un editor di codice, esegui i seguenti passaggi per creare il servizio.
 
 1. Apri il file src\main\java\com\adobe\test\Prefill.java per la modifica.
 1. Nel codice, imposta il valore di:
 
-   - `nodePath:` La variabile del percorso del nodo che punta alla posizione dell’archivio crx contiene il percorso del file di dati (precaricamento). Ad esempio, /content/prefilldata.xml
+   - `nodePath:` La variabile del percorso del nodo che punta alla posizione dell&#39;archivio crx contiene il percorso del file di dati (precaricamento). Ad esempio, /content/prefilldata.xml
    - `label:` Il parametro label specifica il nome visualizzato del servizio. Ad esempio, Servizio di precompilazione predefinito
 
-1. Salva e chiudi `Prefill.java` file.
-1. Aggiungi il `AEM Forms Client SDK` nel percorso di build del progetto boilerplate.
+1. Salvare e chiudere il file `Prefill.java`.
+1. Aggiungere il pacchetto `AEM Forms Client SDK` al percorso di compilazione del progetto standard.
 1. Compila il progetto e crea il file .jar per il bundle.
 
 #### Avviare e utilizzare il servizio di precompilazione {#start-and-use-the-prefill-service}
 
-Per avviare il servizio di precompilazione, carica il file JAR in [!DNL AEM Forms] e attivare il servizio. Ora il servizio inizia a essere visualizzato nell’editor di Forms adattivo. Per associare un servizio di precompilazione a un modulo adattivo:
+Per avviare il servizio di precompilazione, caricare il file JAR nella console Web [!DNL AEM Forms] e attivare il servizio. Ora il servizio inizia a essere visualizzato nell’editor di Forms adattivo. Per associare un servizio di precompilazione a un modulo adattivo:
 
 1. Apri il modulo adattivo nell’editor di Forms e apri il pannello Proprietà per il contenitore modulo.
-1. Nella console Proprietà, passa a [!DNL AEM Forms] container > Basic > Prefill Service (Contenitore > Base > Servizio preriempimento).
-1. Seleziona il servizio di preriempimento predefinito e fai clic su **[!UICONTROL Salva]**. Il servizio è associato al modulo.
+1. Nella console Proprietà, passa al contenitore [!DNL AEM Forms] > Base > Servizio preriempimento.
+1. Selezionare il servizio di precompilazione predefinito e fare clic su **[!UICONTROL Salva]**. Il servizio è associato al modulo.
 
 <!-- ## Prepopulate data at client {#prefill-at-client}
 

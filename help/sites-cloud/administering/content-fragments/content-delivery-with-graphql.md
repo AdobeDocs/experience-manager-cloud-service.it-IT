@@ -103,9 +103,9 @@ Il **[Riferimento frammento](/help/sites-cloud/administering/content-fragments/c
 
 ## Analisi della struttura dei frammenti di contenuto {#analyzing-content-fragments-structure}
 
-Per facilitare l’analisi, l’AEM fornisce diversi metodi per visualizzare la struttura dei frammenti dall’ [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md).
+Per facilitare l&#39;analisi, AEM fornisce diversi metodi per visualizzare la struttura dei frammenti dall&#39;[Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-Consulta [Analisi della struttura dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/analysis.md) per ulteriori dettagli:
+Per ulteriori dettagli, consulta [Analisi della struttura dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/analysis.md):
 
 * [Albero struttura](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
 

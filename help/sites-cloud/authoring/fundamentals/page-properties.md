@@ -21,7 +21,7 @@ Le proprietà sono distribuite su più schede.
 
 * **Titolo &amp; tag**
 
-   * **Titolo** - Il titolo della pagina viene visualizzato in varie posizioni. Ad esempio, il **Siti Web** e la scheda **Sites** viste a schede/elenco.
+   * **Titolo** - Il titolo della pagina viene visualizzato in varie posizioni. Ad esempio, l&#39;elenco di schede **Siti Web** e le visualizzazioni **Siti** per schede/elenchi.
       * Questo campo è obbligatorio.
    * **Tag**: qui puoi aggiungere o rimuovere i tag dalla pagina aggiornando l’elenco nella casella di selezione.
       * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. È possibile rimuovere un tag dall’elenco utilizzando la x.
@@ -52,7 +52,7 @@ Le proprietà sono distribuite su più schede.
 
    * **Titolo pagina**: titolo da utilizzare nella pagina. Generalmente utilizzato dai componenti titolo. Se vuoto, il **Titolo** è utilizzato.
    * **Titolo navigazione** : puoi specificare un titolo diverso da usare nella navigazione (ad esempio, se ne desideri uno più conciso). Se vuoto, il **Titolo** è utilizzato.
-   * **Didascalia** - Sottotitolo da utilizzare nella pagina.
+   * **Didascalia**: sottotitolo da utilizzare nella pagina.
    * **Descrizione**: descrizione della pagina, il suo ruolo o altri dettagli.
 
 * **Ora di attivazione/disattivazione**
@@ -87,9 +87,9 @@ Le proprietà sono distribuite su più schede.
   >* non supportano le espressioni regolari;
   >* non devono essere impostati su una pagina esistente.
 
-   * **Aggiungi** : seleziona per mostrare un campo e definire un URL personalizzato per la pagina.
+   * **Aggiungi** - Seleziona questa opzione per mostrare un campo e definire un URL personalizzato per la pagina.
       * Seleziona nuovamente per aggiungere più elementi.
-      * Seleziona la **Rimuovi** per eliminare il Vanity URL.
+      * Seleziona l&#39;icona **Rimuovi** per eliminare il Vanity URL.
    * **Reindirizza Vanity URL**: specifica se la pagina deve utilizzare il Vanity URL.
 
 ### Avanzate  {#advanced}
@@ -98,14 +98,14 @@ Le proprietà sono distribuite su più schede.
 
    * **Lingua**: indica la lingua della pagina
    * **Lingua root**: deve essere selezionato, se la pagina è la root di una copia in lingua
-   * **Reindirizza** - Indica la pagina a cui deve essere automaticamente reindirizzata la pagina con un HTML `302 Found` stato.
+   * **Reindirizza** - Indica la pagina a cui deve essere automaticamente reindirizzata la pagina con lo stato HTML `302 Found`.
       * **Reindirizzamento permanente**: se questa opzione è selezionata, la pagina viene reindirizzata al percorso di destinazione fornito, con uno stato HTML `301 Moved Permanently`.
    * **Design**: indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito risultante
    * **Alias**: specifica un alias da utilizzare per la pagina
       * Ad esempio, se definisci un alias di `private` per la pagina`/content/wknd/us/en/magazine/members-only`, è possibile accedere a questa pagina tramite `/content/wknd/us/en/magazine/private`
       * La creazione di un alias imposta la proprietà `sling:alias` sul nodo della pagina, che influisce solo sulla risorsa, non sul percorso dell&#39;archivio.
       * Le pagine accessibili da alias nell’editor non possono essere pubblicate. Le [opzioni di pubblicazione](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) nell’editor sono disponibili solo per le pagine accessibili tramite i relativi percorsi effettivi.
-      * Consulta [Nomi di pagina localizzati in Best practice per la gestione di SEO e URL](/help/overview/seo-and-url-management.md#localized-page-names).
+      * Consulta [Nomi di pagina localizzati in Best practice per la gestione SEO e URL](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configurazione**
 
@@ -237,7 +237,7 @@ Grazie a una configurazione semplice, un autore di contenuti può ora abilitare 
 
 >[!NOTE]
 >
->Consulta [Abilitazione delle funzioni progressive delle app web](/help/sites-cloud/authoring/features/enable-pwa.md).
+>Consulta [Abilitazione delle funzionalità progressive delle app Web](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Configura esperienza installabile**
 
@@ -323,7 +323,7 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
       * Se la tua selezione include una sola pagina, tutte le proprietà sono visibili.
    * Proprietà condivise con un valore comune
       * Nella modalità Visualizza vengono mostrate solo le proprietà con un valore comune.
-      * Quando il campo ha più valori (ad esempio Tag), questi vengono visualizzati solo quando *tutto* sono comuni. Se solo alcune sono comuni, verranno visualizzate solo durante la modifica.
+      * Se il campo ha più valori (ad esempio Tag), questi verranno visualizzati solo se *tutti* sono comuni. Se solo alcune sono comuni, verranno visualizzate solo durante la modifica.
       * Se non esiste nessuna proprietà con un valore comune, viene visualizzato un messaggio.
 
 * **Modifica**

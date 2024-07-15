@@ -20,27 +20,27 @@ Scopri i diversi tipi di chiamate effettuate all’app dall’editor universale 
 
 L’editor universale comunica con l’app instrumentata tramite una serie di chiamate definite. Questo è trasparente per e non ha alcun effetto sull’esperienza dell’utente finale.
 
-Tuttavia, per lo sviluppatore, comprendere queste chiamate e il loro comportamento può essere utile durante il debug dell’applicazione quando si utilizza l’Editor universale. Se hai instrumentato l’app e questa non si comporta come previsto, può essere utile aprire **Rete** degli strumenti per sviluppatori nel browser e controlla le chiamate mentre modifichi il contenuto nell’app.
+Tuttavia, per lo sviluppatore, comprendere queste chiamate e il loro comportamento può essere utile durante il debug dell’applicazione quando si utilizza l’Editor universale. Se l&#39;app è stata dotata di strumenti e il comportamento non è quello previsto, può essere utile aprire la scheda **Rete** degli strumenti per sviluppatori nel browser e controllare le chiamate mentre si modifica il contenuto nell&#39;app.
 
 ![Esempio di chiamata di dettagli nella scheda Rete degli strumenti per sviluppatori del browser](assets/calls-network-tab.png)
 
-* Il **Payload** della chiamata contiene dettagli su ciò che viene aggiornato dall’editor, tra cui l’identificazione di ciò che deve essere aggiornato e come aggiornarlo.
-* Il **Risposta** include dettagli su cosa è stato esattamente aggiornato dal servizio editor. Questo consente di facilitare l’aggiornamento del contenuto nell’editor. In alcuni casi, ad esempio `move` , è necessario aggiornare l&#39;intera pagina.
+* Il **payload** della chiamata contiene i dettagli di ciò che viene aggiornato dall&#39;editor, tra cui l&#39;identificazione dell&#39;elemento da aggiornare e la modalità di aggiornamento.
+* La **Risposta** include i dettagli di ciò che è stato esattamente aggiornato dal servizio editor. Questo consente di facilitare l’aggiornamento del contenuto nell’editor. In alcuni casi, come una chiamata `move`, è necessario aggiornare l&#39;intera pagina.
 
-Una volta completata correttamente una chiamata, vengono attivati gli eventi che includono il payload della richiesta e della risposta, che possono essere personalizzati per la tua app. Consulta il documento [Eventi editor universale](/help/implementing/universal-editor/events.md) per ulteriori dettagli.
+Una volta completata correttamente una chiamata, vengono attivati gli eventi che includono il payload della richiesta e della risposta, che possono essere personalizzati per la tua app. Per ulteriori informazioni, vedere il documento [Eventi editor universali](/help/implementing/universal-editor/events.md).
 
 Di seguito è riportato un elenco dei tipi di chiamate effettuate dall’editor universale all’app, con esempi di payload e risposte.
 
 ## Aggiornare {#update}
 
-Un `update` La chiamata di si verifica quando si modifica il contenuto dell’app utilizzando l’Editor universale. Il `update` persiste le modifiche.
+Una chiamata `update` si verifica quando si modifica il contenuto nell&#39;app utilizzando l&#39;editor universale. `update` mantiene le modifiche.
 
 Il payload include dettagli su cosa riscrivere in JCR.
 
 * `resource`: percorso JCR da aggiornare
 * `prop`: proprietà JCR in fase di aggiornamento
 * `type`: tipo di valore JCR della proprietà da aggiornare
-* `value`: i dati aggiornati
+* `value`: dati aggiornati
 
 >[!BEGINTABS]
 
@@ -82,12 +82,12 @@ Il payload include dettagli su cosa riscrivere in JCR.
 
 ## Dettagli {#details}
 
-A `details` La chiamata si verifica durante il caricamento dell&#39;app nell&#39;editor universale per recuperare il contenuto dell&#39;app.
+Si verifica una chiamata `details` durante il caricamento dell&#39;app nell&#39;editor universale per recuperare il contenuto dell&#39;app.
 
 Il payload include i dati da sottoporre a rendering, nonché dettagli su cosa rappresentano i dati (lo schema) in modo che possano essere sottoposti a rendering nell’editor universale.
 
-* Per un componente, Universal Editor recupera solo un `data` , poiché lo schema dei dati è definito nell&#39;app.
-* Per i frammenti di contenuto, l’Editor universale recupera anche un `schema` poiché il modello per frammenti di contenuto è definito nel JCR.
+* Per un componente, l&#39;editor universale recupera solo un oggetto `data`, poiché lo schema dei dati è definito nell&#39;app.
+* Per i frammenti di contenuto, l&#39;editor universale recupera anche un oggetto `schema` poiché il modello per frammenti di contenuto è definito in JCR.
 
 >[!BEGINTABS]
 
@@ -146,11 +146,11 @@ Il payload include i dati da sottoporre a rendering, nonché dettagli su cosa ra
 
 ## Aggiungi {#add}
 
-Un `add` La chiamata di si verifica quando inserisci un nuovo componente nell&#39;app utilizzando l&#39;Editor universale.
+Una chiamata `add` si verifica quando si inserisce un nuovo componente nell&#39;app utilizzando l&#39;editor universale.
 
-Il payload include `path` oggetto contenente dove aggiungere il contenuto.
+Il payload include un oggetto `path` contenente la posizione in cui aggiungere il contenuto.
 
-Include inoltre un `content` oggetto con oggetti aggiuntivi per dettagli specifici dell’endpoint del contenuto da archiviare [per ciascun plug-in.](/help/implementing/universal-editor/architecture.md) Ad esempio, se l’app è basata su contenuti di AEM e Magento, il payload conterrà un oggetto dati per ciascun sistema.
+Include inoltre un oggetto `content` con oggetti aggiuntivi per i dettagli specifici dell&#39;endpoint del contenuto da archiviare [ per ogni plug-in.](/help/implementing/universal-editor/architecture.md) Ad esempio, se l&#39;app si basa sul contenuto di AEM e Magento, il payload conterrà un oggetto dati per ciascun sistema.
 
 >[!BEGINTABS]
 
@@ -204,9 +204,9 @@ Include inoltre un `content` oggetto con oggetti aggiuntivi per dettagli specifi
 
 ## Spostare {#move}
 
-A `move` La chiamata di si verifica quando si sposta un componente all’interno dell’app utilizzando l’Editor universale.
+Una chiamata `move` si verifica quando si sposta un componente all&#39;interno dell&#39;app utilizzando l&#39;editor universale.
 
-Il payload include `from` oggetto che definisce la posizione del componente e un `to` oggetto che definisce dove è stato spostato.
+Il payload include un oggetto `from` che definisce dove si trovava il componente e un oggetto `to` che definisce dove è stato spostato.
 
 >[!BEGINTABS]
 
@@ -260,7 +260,7 @@ Il payload include `from` oggetto che definisce la posizione del componente e un
 
 ## Rimuovi {#remove}
 
-A `remove` La chiamata di si verifica quando si elimina un componente all’interno dell’app utilizzando l’Editor universale.
+Una chiamata `remove` si verifica quando si elimina un componente all&#39;interno dell&#39;app tramite l&#39;editor universale.
 
 Il payload include il percorso dell’oggetto rimosso.
 
@@ -310,7 +310,7 @@ Il payload include il percorso dell’oggetto rimosso.
 
 ## Pubblicazione {#publish}
 
-A `publish` si verifica quando si fa clic su **Pubblica** nell’Editor universale per pubblicare il contenuto modificato.
+Una chiamata `publish` si verifica quando si fa clic sul pulsante **Publish** nell&#39;editor universale per pubblicare il contenuto modificato.
 
 L’Editor universale scorre il contenuto e genera un elenco di riferimenti che devono essere pubblicati.
 

@@ -32,12 +32,12 @@ Scopri come le azioni sono correlate ad attivazioni, azioni web, trigger e regol
 
 ## Azioni nelle applicazioni App Builder
 
-Scopri come creare azioni che possono essere utilizzate come applicazioni di App Builder.
+Scopri come creare azioni che possono essere utilizzate come applicazioni App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339194/?quality=12&learn=on)
 
 ## Creare un’azione
 
-Scopri come creare un’azione di App Builder.
+Scopri come creare un’azione App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339195/?quality=12&learn=on)

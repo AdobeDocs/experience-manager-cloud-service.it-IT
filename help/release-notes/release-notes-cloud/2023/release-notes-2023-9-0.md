@@ -28,7 +28,7 @@ La sezione seguente illustra le note sulla versione funzionale 2023.9.0 di [!DNL
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione corrente della funzione di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.9.0) è il venerdì 28 settembre 2023. La prossima versione funzionale (2023.10.0) è pianificata per il venerdì 26 ottobre 2023.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.9.0) è il venerdì 28 settembre 2023. La prossima versione funzionale (2023.10.0) è pianificata per il venerdì 26 ottobre 2023.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -44,7 +44,7 @@ Dai un’occhiata al video Panoramica sulla versione di settembre 2023 per un ri
 
 Edge Delivery è una nuova serie di servizi componibili incentrati sulla massimizzazione dell’impatto dei contenuti per promuovere risultati aziendali misurabili al momento dell’interazione con il cliente.
 
-Per ulteriori informazioni sui Edge Delivery Services, consulta l’articolo [qui](/help/edge/overview.md).
+Ulteriori informazioni sui Edge Delivery Services nell&#39;articolo [qui](/help/edge/overview.md).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,9 +58,9 @@ Ora puoi assegnare il modulo metadati a una cartella specifica all’interno del
 
 ### Nuove funzioni nella vista Amministratore {#admin-view-features}
 
-* **Integrare AEM Assets as a Cloud Service con l’authoring basato su documenti per i Edge Delivery Services**: integra AEM Assets con l’authoring basato su documenti per i Edge Delivery Services per consentire agli autori di siti web di [utilizzare le immagini disponibili negli archivi di AEM Assets durante la creazione di documenti nei documenti di Microsoft Word o Google](/help/edge/using.md#integrate-assets-edge).
+* **Integrare AEM Assets as a Cloud Service con l&#39;authoring basato su documenti per Edge Delivery Services**: integrare AEM Assets con l&#39;authoring basato su documenti per Edge Delivery Services per consentire agli autori di siti Web di [utilizzare le immagini disponibili negli archivi AEM Assets durante l&#39;authoring di documenti nei documenti Microsoft Word o Google](/help/edge/using.md#integrate-assets-edge).
 
-* **Estrai archivi ZIP**: possibilità di selezionare archivi ZIP gestiti in Experience Manager e [estrazione diretta dei file in Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) senza scaricarli.
+* **Estrai archivi ZIP**: possibilità di selezionare archivi ZIP gestiti in Experience Manager e [di estrarre i file direttamente in Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) senza scaricarli.
 
   ![Fissa elementi per gruppi](/help/release-notes/assets/extract-archive.png)
 
@@ -97,7 +97,7 @@ Ora puoi assegnare il modulo metadati a una cartella specifica all’interno del
 
 * **[Gestione degli errori con handler degli errori personalizzati nell’editor delle regole](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: ora è possibile richiamare una funzione personalizzata a fronte di un errore restituito da un servizio esterno e fornire una risposta personalizzata agli utenti finali. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel back-end per codici di errore specifici o informare il cliente che il servizio non è disponibile.
 
-* **[Versione a 64 bit di AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: la versione a 64 bit di AEM Forms Designer offre prestazioni, scalabilità e gestione della memoria migliorate per migliorare l’esperienza di creazione dei moduli. Grazie all&#39;architettura a 64 bit, è possibile gestire con facilità progetti ancora più grandi e complessi, garantendo flussi di lavoro di progettazione ottimizzati ed efficienza. Migliora le funzionalità di progettazione dei moduli e abbraccia il futuro di AEM Forms Designer con questa versione all’avanguardia.
+* **[Versione a 64 bit di AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: la versione a 64 bit di AEM Forms Designer offre prestazioni, scalabilità e gestione della memoria migliorate per migliorare l&#39;esperienza di creazione dei moduli. Grazie all&#39;architettura a 64 bit, è possibile gestire con facilità progetti ancora più grandi e complessi, garantendo flussi di lavoro di progettazione ottimizzati ed efficienza. Migliora le funzionalità di progettazione dei moduli e abbraccia il futuro di AEM Forms Designer con questa versione all’avanguardia.
 
 ### Programma per i primi utilizzatori {#forms-early-adopter}
 
@@ -105,7 +105,7 @@ Ora puoi assegnare il modulo metadati a una cartella specifica all’interno del
 
   Per partecipare al programma per i primi utilizzatori e richiedere l’accesso alla funzionalità, è possibile inviare una e-mail all’indirizzo `aem-forms-ea@adobe.com` dal proprio ID e-mail ufficiale.
 
-* **[Forms adattivo headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=it)**: utilizza Forms adattivo headless per consentire agli sviluppatori di creare, pubblicare e gestire moduli interattivi a cui è possibile accedere e interagire tramite API, anziché tramite un’interfaccia utente grafica tradizionale. I moduli adattivi headless consentono di:
+* **[Forms adattivo headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=it)**: utilizza Forms adattivo headless per consentire agli sviluppatori di creare, pubblicare e gestire moduli interattivi a cui è possibile accedere e interagire tramite API, anziché tramite un&#39;interfaccia utente grafica tradizionale. I moduli adattivi headless consentono di:
 
    * creare moduli multi-canale di alta qualità nel linguaggio di programmazione desiderato
    * integrare in modo nativo i moduli nelle app desktop e per dispositivi mobili, nei siti web e nelle applicazioni chat

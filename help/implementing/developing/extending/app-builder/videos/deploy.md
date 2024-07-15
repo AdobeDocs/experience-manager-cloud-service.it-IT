@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Distribuzione di applicazioni App Builder
 
-Scopri cosa significa la distribuzione per App Builder e come distribuire l’applicazione App Builder utilizzando l’interfaccia della riga di comando Adobe I/O.
+Scopri cosa significa distribuire per App Builder e come distribuire l’applicazione App Builder utilizzando Adobe I/O CLI.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)

@@ -17,46 +17,46 @@ Ogni pagina ha un set di [proprietà](/help/sites-cloud/authoring/sites-console/
 
 Lo stato predefinito per ogni proprietà di pagina è:
 
-* Nascosto nella vista di creazione (ad esempio, **Crea pagina** procedura guidata)
+* Nascosto nella visualizzazione di creazione (ad esempio, **Creazione guidata pagina**)
 
-* Disponibile nella vista di modifica (ad esempio, **Visualizza proprietà**)
+* Disponibile nella visualizzazione di modifica (ad esempio, **Visualizza proprietà**)
 
 I campi devono essere configurati in modo specifico se è necessaria una modifica. Questa operazione viene eseguita utilizzando le proprietà del nodo appropriate:
 
-* Proprietà di pagina da rendere disponibile nella visualizzazione di creazione (ad esempio, **Crea pagina** procedura guidata):
+* Proprietà di pagina da rendere disponibile nella visualizzazione di creazione (ad esempio, **Creazione guidata pagina**):
 
    * Nome: `cq:showOnCreate`
    * Tipo: `Boolean`
 
-* Proprietà di pagina da rendere disponibile nella visualizzazione di modifica, ad esempio **Visualizza**/**Modifica**  **Proprietà** opzione:
+* Proprietà di pagina da rendere disponibile nella visualizzazione di modifica, ad esempio l&#39;opzione **Visualizza**/**Modifica** **Proprietà**:
 
    * Nome: `cq:hideOnEdit`
    * Tipo: `Boolean`
 
 >[!TIP]
 >
->Consulta la [Tutorial sull’estensione delle proprietà di pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) guida alla personalizzazione delle proprietà di pagina.
+>Per una guida alla personalizzazione delle proprietà di pagina, consulta il [tutorial Estensione delle proprietà di pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html).
 
 ## Configurazione delle proprietà della pagina {#configuring-your-page-properties}
 
 Puoi anche configurare i campi disponibili configurando la finestra di dialogo del componente Pagina e applicando le proprietà del nodo appropriate.
 
-Ad esempio, per impostazione predefinita [**Crea pagina** procedura guidata](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) mostra i campi raggruppati in **Altri titoli e descrizioni**. Per nasconderli, configura:
+Per impostazione predefinita, ad esempio, la procedura guidata [**Crea pagina**](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) mostra i campi raggruppati in **Altri titoli e descrizioni**. Per nasconderli, configura:
 
-1. Creare il componente Pagina in `/apps`.
-1. Creare una sostituzione (tramite *finestra di dialogo* fornite da [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md)) per `basic` del componente Pagina, ad esempio:
+1. Crea il componente Pagina in `/apps`.
+1. Crea una sostituzione (utilizzando *dialog diff* fornito da [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md)) per la sezione `basic` del componente pagina, ad esempio:
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
    ```
 
-1. Imposta il `path` proprietà su `basic` per puntare alla sostituzione della scheda di base (vedi anche il passaggio successivo). Ad esempio:
+1. Impostare la proprietà `path` su `basic` per puntare all&#39;override della scheda di base (vedere anche il passaggio successivo). Ad esempio:
 
    ```xml
    /apps/demos/components/page/tabs/basic
    ```
 
-1. Creare un override di `basic` - `moretitles` nel percorso corrispondente; ad esempio:
+1. Creare una sostituzione della sezione `basic` - `moretitles` nel percorso corrispondente, ad esempio:
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
@@ -68,14 +68,14 @@ Ad esempio, per impostazione predefinita [**Crea pagina** procedura guidata](/he
    * **Tipo**: `Boolean`
    * **Valore**: `false`
 
-   Il **Altri titoli e descrizioni** non verrà più visualizzata nella sezione **Crea pagina** procedura guidata.
+   La sezione **Altri titoli e descrizioni** non verrà più visualizzata nella procedura guidata **Crea pagina**.
 
 >[!NOTE]
 >
->Durante la configurazione delle proprietà di pagina da utilizzare con le Live Copy, consulta [Estensione di Multi Site Manager](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) per ulteriori dettagli.
+>Durante la configurazione delle proprietà di pagina da utilizzare con Live Copy, vedi [Estensione di Multi Site Manager](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) per ulteriori dettagli.
 
 ## Configurazione di esempio delle proprietà di pagina {#sample-configuration-of-page-properties}
 
-In questo esempio viene illustrata la tecnica della finestra di dialogo [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) compreso l&#39;uso di [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Illustra inoltre l’utilizzo di entrambi `cq:showOnCreate` e `cq:hideOnEdit`.
+In questo esempio viene illustrata la tecnica di dialogo diff di [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md), incluso l&#39;utilizzo di [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Illustra inoltre l&#39;utilizzo di `cq:showOnCreate` e `cq:hideOnEdit`.
 
-Puoi trovare il codice di questa pagina su [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).
+Puoi trovare il codice di questa pagina in [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

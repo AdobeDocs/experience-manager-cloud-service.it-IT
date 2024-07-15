@@ -25,7 +25,7 @@ I dati della generazione rapporti SLA sono disponibili per ogni programma di pro
 
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
-1. Utilizzando il pannello di navigazione laterale, passa a **Rapporti** scheda da **Panoramica** pagina.
+1. Utilizzando il pannello di navigazione laterale, passa alla scheda **Rapporti** dalla pagina **Panoramica**.
 
 1. Fai clic sull’anno desiderato per visualizzare i dati SLA riportati nel grafico.
 

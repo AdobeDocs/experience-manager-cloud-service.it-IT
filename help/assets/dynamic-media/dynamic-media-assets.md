@@ -1,10 +1,10 @@
 ---
 title: Utilizzo di Dynamic Media
-description: Dynamic Media consente di fornire risorse visive avanzate di merchandising e marketing on-demand, scalabili automaticamente per il consumo su siti web, mobili e social network. Utilizzando un set di risorse di origine principale, Dynamic Media genera e distribuisce in tempo reale più varianti di rich content attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni
+description: Dynamic Medie consente di fornire risorse visive avanzate di merchandising e marketing on-demand, scalabili automaticamente per il consumo su siti web, mobili e social network. Utilizzando un set di risorse di origine principale, Dynamic Medie genera e distribuisce in tempo reale più varianti di rich content attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni
 contentOwner: Rick Brough
 source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '165'
 ht-degree: 4%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 4%
 
 # Utilizzo di Dynamic Media{#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di fornire risorse di marketing e merchandising visive avanzate on-demand, scalabili automaticamente per il consumo su siti web, mobili e social network. Utilizzando un set di risorse di origine principale, Dynamic Media genera e distribuisce in tempo reale più varianti di rich content attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Medie](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di fornire risorse di marketing e merchandising visive avanzate su richiesta, scalabili automaticamente per l&#39;utilizzo su siti Web, mobili e social network. Utilizzando un set di risorse di origine principale, Dynamic Medie genera e distribuisce in tempo reale più varianti di rich content attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
-Dynamic Media offre esperienze di visualizzazione interattiva, tra cui zoom, 360° rotazione e video. Dynamic Media incorpora in modo esclusivo i flussi di lavoro della soluzione Adobe Experience Manager di gestione delle risorse digitali (Assets) per semplificare e semplificare il processo di gestione delle campagne digitali.
+Dynamic Medie offre esperienze di visualizzazione interattiva, tra cui zoom, 360° rotazione e video. Dynamic Medie incorpora in modo esclusivo i flussi di lavoro della soluzione Adobe Experience Manager di gestione delle risorse digitali (Assets) per semplificare e semplificare il processo di gestione delle campagne digitali.
 
-L’utilizzo di Dynamic Media non è disponibile nell’interfaccia utente classica. Consulta [Utilizzare Dynamic Media,](/help/assets/dynamic-media/dynamic-media.md) che copre l’interfaccia utente touch.
+L’utilizzo di Dynamic Medie non è disponibile nell’interfaccia utente classica. Consulta [Utilizzare Dynamic Medie,](/help/assets/dynamic-media/dynamic-media.md) che tratta l&#39;interfaccia utente touch.
 
 <!-- 
 

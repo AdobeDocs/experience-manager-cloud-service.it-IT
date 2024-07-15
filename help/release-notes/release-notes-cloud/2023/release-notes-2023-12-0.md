@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 72%
+ht-degree: 74%
 
 ---
 
@@ -27,7 +27,7 @@ La sezione seguente illustra le note sulla versione funzionale 2023.12.0 di [!DN
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione corrente della funzione di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.12.0) è il venerdì 14 dicembre 2023. La prossima versione funzionale (2024.1.0) è pianificata per il giovedì 25 gennaio 2023.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.12.0) è il venerdì 14 dicembre 2023. La prossima versione funzionale (2024.1.0) è pianificata per il giovedì 25 gennaio 2023.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -47,16 +47,16 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### Programma per i primi utilizzatori {#sites-early-adopter}
 
-**Puoi sfruttare [Servizio dati di Real Use Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** per abilitare la raccolta lato client per AEM as a Cloud Service.
+**Puoi sfruttare il servizio dati [RUM (Real Use Monitoring)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** per abilitare la raccolta lato client per AEM as a Cloud Service.
 
-Il servizio di monitoraggio Real Use Monitoring (RUM) offre un riflesso più preciso delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web. Rappresenta un’ottima opportunità per ottenere informazioni avanzate sulle prestazioni della pagina. Questa funzione è utile per chi utilizza una rete CDN gestita o non gestita da Adobe. Inoltre, per chi utilizza una rete CDN non gestita da Adobe, ora è possibile abilitare il reporting automatico del traffico, eliminando in tal modo la necessità di condividere eventuali rapporti sul traffico con Adobe.
+Il servizio dati di monitoraggio dell’utilizzo reale (RUM, Real Use Monitoring) offre una panoramica più precisa delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento nel sito web. Rappresenta un’ottima opportunità per ottenere informazioni avanzate sulle prestazioni della pagina. Questa funzione è utile per chi utilizza una rete CDN gestita o non gestita da Adobe. Inoltre, per chi utilizza una rete CDN non gestita da Adobe, ora è possibile abilitare il reporting automatico del traffico, eliminando in tal modo la necessità di condividere eventuali rapporti sul traffico con Adobe.
 
-Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un’e-mail a `aemcs-rum-adopter@adobe.com`, insieme al nome di dominio per l’ambiente di produzione, stage e sviluppo, dall’indirizzo e-mail associato al tuo Adobe ID. Il team di prodotto di Adobe abiliterà quindi il servizio di dati Real Use Monitoring (RUM).
+Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a `aemcs-rum-adopter@adobe.com` insieme al nome di dominio per l&#39;ambiente di produzione, stage e sviluppo dal tuo indirizzo e-mail associato al tuo Adobe ID. Il team di prodotto di Adobe abiliterà quindi il servizio di dati Real Use Monitoring (RUM).
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuove funzioni nella vista Risorse {#assets-view-features}
+### Nuove funzioni nella vista Assets {#assets-view-features}
 
 **Creare immagini basate su IA generativa con Adobe Firefly**
 
@@ -81,9 +81,9 @@ Ora è possibile trovare facilmente il contenuto selezionando un’immagine e vi
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nuove funzioni in [!DNL Experience Manager Forms] {#forms-features}
+### Nuove funzionalità in [!DNL Experience Manager Forms] {#forms-features}
 
-* **[Collegare un Forms adattivo all’elenco di Microsoft® SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms fornisce un’integrazione OOTB per inviare i dati dei moduli direttamente a SharePoint List, consentendoti di utilizzare le funzionalità degli elenchi di SharePoint. È possibile configurare Microsoft SharePoint List come origine dati per un modello dati modulo e utilizzare **Invia utilizzando il modello dati modulo** azione di invio per collegare un modulo adattivo a Elenco SharePoint.
+* **[Connessione di un Forms adattivo all&#39;elenco Microsoft® SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms fornisce un&#39;integrazione OOTB per inviare i dati dei moduli direttamente all&#39;elenco SharePoint, consentendo l&#39;utilizzo delle funzionalità degli elenchi di SharePoint. È possibile configurare Microsoft SharePoint List come origine dati per un modello dati modulo e utilizzare l&#39;azione di invio **Invia utilizzando il modello dati modulo** per connettere un modulo adattivo a SharePoint List.
 
 <!-- 
 
@@ -107,7 +107,7 @@ Ora è possibile trovare facilmente il contenuto selezionando un’immagine e vi
 
 ### Programma per i primi utilizzatori della configurazione CDN {#cdn-config-early-adopter}
 
-Oltre agli ultimi [Regole filtro traffico](/help/security/traffic-filter-rules-including-waf.md), che include le regole WAF (Web Application Firewall) facoltative, esiste l’opportunità di utilizzare la pipeline di configurazione per dichiarare e distribuire altri tipi di configurazione CDN. Ci piacerebbe conoscere i tuoi casi d’uso, tra cui:
+Oltre alle [Regole filtro del traffico](/help/security/traffic-filter-rules-including-waf.md) rilasciate di recente, che includono le regole WAF (Web Application Firewall) facoltativamente consentite, è possibile utilizzare la pipeline di configurazione per dichiarare e distribuire altri tipi di configurazione CDN. Ci piacerebbe conoscere i tuoi casi d’uso, tra cui:
 * 301/302 reindirizzamenti lato client
 * proxy di richieste al server Edge di origini arbitrarie
 * trasformazioni URL
@@ -116,7 +116,7 @@ Oltre agli ultimi [Regole filtro traffico](/help/security/traffic-filter-rules-i
 * autenticazione tramite nome utente/password
 * qualsiasi altra configurazione CDN utile
 
-Invia un messaggio e-mail a **aemcs-cdn-config-adopter@adobe.com** dal tuo ID e-mail ufficiale con il tuo feedback.
+Invia un&#39;e-mail a **aemcs-cdn-config-adopter@adobe.com** dal tuo ID e-mail ufficiale con il tuo feedback.
 
 ## Cloud Manager {#cloud-manager}
 

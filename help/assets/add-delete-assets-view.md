@@ -35,7 +35,7 @@ Una volta messi in coda tutti i file, fai clic su **[!UICONTROL Carica]**.
 
 >[!TIP]
 >
->Se carichi una struttura di cartelle nella vista Risorse, non è necessario creare un file .ZIP con la struttura di cartelle, puoi caricare direttamente le strutture di cartelle. Un file .ZIP caricato nella vista Risorse viene memorizzato come una risorsa ZIP e non viene estratto automaticamente dopo il caricamento.
+>Se carichi una struttura di cartelle nella vista Assets, non è necessario creare un file .ZIP con la struttura di cartelle, puoi caricare direttamente le strutture di cartelle. Un file .ZIP caricato nella vista Assets viene memorizzato come una risorsa ZIP e non viene estratto automaticamente dopo il caricamento.
 
 ## Visualizzare lo stato e l’avanzamento del caricamento {#upload-progress}
 
@@ -83,7 +83,7 @@ Se tenti di caricare risorse duplicate, queste non vengono caricate finché non 
 
 >[!TIP]
 >
->Puoi caricare le risorse nell’archivio DAM direttamente dall’interno [!DNL Creative Cloud] applicazioni desktop.
+>È possibile caricare le risorse nell&#39;archivio DAM direttamente dalle applicazioni desktop [!DNL Creative Cloud].
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -102,7 +102,7 @@ Gli utenti possono eliminare singole risorse o cartelle che non sono più necess
 
 ## Passaggi successivi {#next-steps}
 
-* [Guarda un video per caricare le risorse nella vista Risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=it)
+* [Guarda un video per caricare le risorse nella visualizzazione Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=it)
 
 * Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
 

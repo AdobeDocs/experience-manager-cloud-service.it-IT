@@ -1,5 +1,5 @@
 ---
-title: Importare ed esportare le risorse in [!DNL AEM Forms]?
+title: Come si importano ed esportano le risorse in [!DNL AEM Forms]?
 description: Scopri come utilizzare DocuSign con un modulo adattivo per raccogliere firme elettroniche.
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
@@ -11,32 +11,32 @@ ht-degree: 0%
 
 # Importare ed esportare le risorse {#importing-and-exporting-assets-to-aem-forms}
 
-È possibile spostare moduli, temi, modelli, frammenti di documenti, temi e altre risorse tra diversi [!DNL AEM Forms] istanze. Tale spostamento è necessario per la migrazione di sistemi o lo spostamento di moduli da un server di sviluppo o di gestione temporanea a un server di produzione.
+È possibile spostare moduli, temi, modelli, frammenti di documenti, temi e altre risorse tra diverse istanze di [!DNL AEM Forms]. Tale spostamento è necessario per la migrazione di sistemi o lo spostamento di moduli da un server di sviluppo o di gestione temporanea a un server di produzione.
 
-Per le risorse di cui caricare e importare tramite [!DNL AEM Forms] L’interfaccia utente di è supportata e l’utilizzo dell’interfaccia utente di Forms è consigliato per l’esportazione o l’importazione. Non è consigliabile utilizzare Gestione pacchetti AEM per esportare o importare tali risorse.
+Per le risorse per le quali è supportato il caricamento e l&#39;importazione tramite l&#39;interfaccia utente [!DNL AEM Forms], l&#39;utilizzo dell&#39;interfaccia utente di Forms è il metodo consigliato per l&#39;esportazione o l&#39;importazione. Non è consigliabile utilizzare Gestione pacchetti AEM per esportare o importare tali risorse.
 
 ## Scaricare o caricare risorse Forms &amp; Documents {#download-or-upload-forms-amp-documents-assets}
 
-[!DNL AEM Forms] L’interfaccia utente consente di esportare le risorse da un’istanza AEM scaricandole come un pacchetto CRX dell’AEM o come file binari. Puoi quindi importare il pacchetto AEM CRX scaricato o il file binario in un’altra istanza AEM.
+L&#39;interfaccia utente di [!DNL AEM Forms] consente di esportare risorse da un&#39;istanza AEM scaricandole come file binari o del pacchetto CRX dell&#39;AEM. Puoi quindi importare il pacchetto CRX dell’AEM scaricato o il file binario in un’altra istanza AEM.
 
-Esportazione e importazione tramite [!DNL AEM Forms] L’interfaccia utente di è supportata per tutte le risorse, ad eccezione dei modelli di moduli adattivi e dei criteri per il contenuto dei moduli adattivi. Pertanto, all’esportazione di un modulo adattivo da [!DNL AEM Forms] L’interfaccia utente, il modello di modulo adattivo e i criteri del contenuto correlati non vengono esportati automaticamente come altre risorse correlate.
+L&#39;esportazione e l&#39;importazione tramite l&#39;interfaccia utente [!DNL AEM Forms] sono supportate per tutte le risorse ad eccezione dei modelli di moduli adattivi e dei criteri per il contenuto dei moduli adattivi. Pertanto, quando si esporta un modulo adattivo dall&#39;interfaccia utente [!DNL AEM Forms], il modello di modulo adattivo e i criteri del contenuto correlati non vengono esportati automaticamente come altre risorse correlate.
 
-Per questi tipi di risorse, devi utilizzare Gestione pacchetti AEM per creare un pacchetto CRX sul server AEM di origine e installare il pacchetto sul server di destinazione. Per informazioni sulla creazione e l&#39;installazione dei pacchetti, vedere [Distribuzione a AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html).
+Per questi tipi di risorse, devi utilizzare Gestione pacchetti AEM per creare un pacchetto CRX sul server AEM di origine e installare il pacchetto sul server di destinazione. Per informazioni sulla creazione e l&#39;installazione dei pacchetti, vedere [Distribuzione in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html).
 
 ### Scaricare risorse Forms e Documents {#download-forms-amp-documents-assets}
 
 Per scaricare le risorse Forms e Documents:
 
-1. Accedi a [!DNL AEM Forms] dell&#39;istanza.
-1. Seleziona Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > navigazione ![bussola](assets/Smock_Compass_18_N.svg) icon> **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
-1. Seleziona le risorse dei moduli e fai clic su **[!UICONTROL Scarica]** icona.
+1. Accedere all&#39;istanza [!DNL AEM Forms].
+1. Seleziona icona Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigazione ![icona bussola](assets/Smock_Compass_18_N.svg)> **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Seleziona le risorse dei moduli e l&#39;icona **[!UICONTROL Scarica]**.
 1. In Scarica risorse, scegli una delle seguenti opzioni e seleziona **[!UICONTROL Scarica]**.
 
-   * **Scarica come pacchetto CRX:** Utilizza l’opzione per scaricare e spostare tutte le risorse selezionate e le relative dipendenze da un [!DNL AEM Forms] a un&#39;altra. Scarica tutte le risorse e le cartelle come pacchetto crx. Qualsiasi risorsa di modulo, compresi i moduli creati in AEM (Forms adattivo e frammenti di moduli adattivi), i documenti PDF e le risorse (XSD, XFS, immagini) può essere scaricata come pacchetto da [!DNL AEM Forms] UI.
+   * **Scarica come pacchetto CRX:** Utilizzare l&#39;opzione per scaricare e spostare tutte le risorse selezionate e le relative dipendenze da un&#39;istanza [!DNL AEM Forms] a un&#39;altra. Scarica tutte le risorse e le cartelle come pacchetto crx. Tutte le risorse di moduli, inclusi i moduli creati in AEM (Forms adattivo e frammenti di moduli adattivi), i documenti PDF e le risorse (XSD, XFS, immagini) possono essere scaricati come pacchetto dall&#39;interfaccia utente [!DNL AEM Forms].
 Il vantaggio di scaricare le risorse come pacchetto è che scarica anche le risorse utilizzate dalla risorsa selezionata per il download. Ad esempio, se disponi di un modulo adattivo che utilizza un modello di modulo, XSD e un’immagine. Quando selezioni questo modulo adattivo e lo scarichi come pacchetto, il pacchetto scaricato contiene anche il modello del modulo, XSD e l’immagine. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa.
 
-   * **Scaricare le risorse come file binari:** Utilizza l’opzione per scaricare solo modelli di modulo (XDP), PDF forms (PDF), documento (PDF) e risorse (immagini, schemi, fogli di stile). Puoi modificare queste risorse con applicazioni esterne. Scarica come file .zip le risorse dei moduli che hanno file binari, come XSD, XDP, immagini, PDF e XDP.
-Non è possibile scaricare Forms adattivo, frammenti di modulo adattivo e temi con **[!UICONTROL Scaricare le risorse come file binari]** opzione. Per scaricare queste risorse, utilizza **[!UICONTROL Scarica come pacchetto CRX]** opzione.
+   * **Scarica risorse come file binari:** Utilizza l&#39;opzione per scaricare solo modelli di modulo (XDP), PDF forms (PDF), documento (PDF) e risorse (immagini, schemi, fogli di stile). Puoi modificare queste risorse con applicazioni esterne. Scarica come file .zip le risorse dei moduli che hanno file binari, come XSD, XDP, immagini, PDF e XDP.
+Non è possibile scaricare Forms adattivo, frammenti di moduli adattivi e temi con l&#39;opzione **[!UICONTROL Scarica risorse come file binari]**. Per scaricare queste risorse, è necessario utilizzare l&#39;opzione **[!UICONTROL Scarica come pacchetto CRX]**.
 
    Le risorse selezionate vengono scaricate come archivio (file .zip).
 
@@ -48,8 +48,8 @@ Non è possibile scaricare Forms adattivo, frammenti di modulo adattivo e temi c
 
 Per caricare le risorse Forms e Documents:
 
-1. Accedi a [!DNL AEM Forms] dell&#39;istanza.
-1. Seleziona Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > navigazione ![bussola](assets/Smock_Compass_18_N.svg) icon> **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Accedere all&#39;istanza [!DNL AEM Forms].
+1. Seleziona icona Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigazione ![icona bussola](assets/Smock_Compass_18_N.svg)> **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Seleziona **Crea** >**Caricamento file**. Viene visualizzata la finestra di dialogo Carica moduli o pacchetto.
 1. Nella finestra di dialogo, sfoglia e seleziona il pacchetto o l’archivio da importare. È inoltre possibile selezionare documenti PDF, XSD, immagini, fogli di stile e moduli XDP. Seleziona **[!UICONTROL Apri]**. La cartella o il nome del file selezionato non deve contenere caratteri speciali.
 
@@ -63,17 +63,17 @@ Per caricare le risorse Forms e Documents:
 
 ## Download o caricamento di un tema {#downloading-or-uploading-a-theme}
 
-Con [!DNL AEM Forms], puoi creare, scaricare o caricare temi. Un tema viene creato come altre risorse, ad esempio moduli, documenti e lettere. Puoi creare un tema, scaricarlo e caricarlo in un’istanza separata per riutilizzarlo. Per ulteriori informazioni sui temi, vedi [Temi](themes.md) in [!DNL AEM Forms].
+Con [!DNL AEM Forms] puoi creare, scaricare o caricare temi. Un tema viene creato come altre risorse, ad esempio moduli, documenti e lettere. Puoi creare un tema, scaricarlo e caricarlo in un’istanza separata per riutilizzarlo. Per ulteriori informazioni sui temi, vedere [Temi](themes.md) in [!DNL AEM Forms].
 
 ### Download di un tema {#downloading-a-theme}
 
-Puoi esportare i temi in [!DNL AEM Forms] che puoi utilizzare in altri progetti o istanze. AEM consente di scaricare il tema come file zip, che puoi caricare sull’istanza.
+È possibile esportare i temi in [!DNL AEM Forms] che è possibile utilizzare in altri progetti o istanze. AEM consente di scaricare il tema come file zip, che puoi caricare sull’istanza.
 
 Per scaricare un tema:
 
-1. Accedi a [!DNL AEM Forms] dell&#39;istanza.
-1. Seleziona Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > navigazione ![bussola](assets/Smock_Compass_18_N.svg) icon> **[!UICONTROL Forms]** > **[!UICONTROL Temi]**.
-1. Seleziona il tema e seleziona **[!UICONTROL Scarica]**. Il tema viene scaricato come archivio (file .zip).
+1. Accedere all&#39;istanza [!DNL AEM Forms].
+1. Seleziona icona Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigazione ![icona bussola](assets/Smock_Compass_18_N.svg)> **[!UICONTROL Forms]** > **[!UICONTROL Temi]**.
+1. Selezionare il tema e selezionare **[!UICONTROL Scarica]**. Il tema viene scaricato come archivio (file .zip).
 
 ### Caricamento di un tema {#uploading-a-theme}
 
@@ -82,8 +82,8 @@ Puoi utilizzare i temi creati con predefiniti di stile sul progetto. Puoi import
 Per caricare un tema:
 
 1. Ad Experience Manager, passa a **[!UICONTROL Forms]** > **[!UICONTROL Temi Forms]**.
-1. Nella pagina Temi fare clic su **[!UICONTROL Creazione Forms]** > **[!UICONTROL Caricamento file Forms]**.
-1. Nella richiesta di caricamento file, individua e seleziona un pacchetto di temi sul computer e fai clic su **[!UICONTROL Caricamento Forms]**. Il tema viene caricato.
+1. Nella pagina Temi, fare clic su **[!UICONTROL Forms Create]** > **[!UICONTROL Forms File Upload]**.
+1. Nella richiesta di caricamento file, sfogliare e selezionare un pacchetto tema nel computer e fare clic su **[!UICONTROL Caricamento Forms]**. Il tema viene caricato.
 
 <!--
 
@@ -162,13 +162,13 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 Puoi utilizzare Gestione pacchetti AEM per esportare le applicazioni del flusso di lavoro. La procedura è descritta di seguito:
 
-1. Apri [!DNL AEM Forms] gestione pacchetti.
-1. Clic **[!UICONTROL Crea pacchetto]**. Il **[!UICONTROL Nuovo pacchetto]** viene visualizzata.
+1. Aprire Gestione pacchetti [!DNL AEM Forms].
+1. Fare clic su **[!UICONTROL Crea pacchetto]**. Viene visualizzata la finestra di dialogo **[!UICONTROL Nuovo pacchetto]**.
 1. Specificare nome, versione e gruppo per il pacchetto. Fai clic su **[!UICONTROL OK]**.
-1. Clic **[!UICONTROL Modifica]** e apri **[!UICONTROL Filtri]** scheda. Clic **[!UICONTROL Aggiungi filtro]**. Specifica il percorso dell’applicazione del flusso di lavoro. Ad esempio, /etc/fd/dashboard/startpoints/homemortgage. Clic **[!UICONTROL Aggiungi regola]**.
+1. Fai clic su **[!UICONTROL Modifica]** e apri la scheda **[!UICONTROL Filtri]**. Fare clic su **[!UICONTROL Aggiungi filtro]**. Specifica il percorso dell’applicazione del flusso di lavoro. Ad esempio, /etc/fd/dashboard/startpoints/homemortgage. Fai clic su **[!UICONTROL Aggiungi regola]**.
 
-1. Apri **[!UICONTROL Avanzate]** scheda. Seleziona **[!UICONTROL Unisci]** o **[!UICONTROL Sovrascrivere]** nel campo Gestione ACL. Fai clic su **[!UICONTROL Salva]**.
-1. Clic **[!UICONTROL Genera]** per creare il pacchetto.
+1. Apri la scheda **[!UICONTROL Avanzate]**. Seleziona **[!UICONTROL Unisci]** o **[!UICONTROL Sovrascrivi]** nel campo Gestione ACL. Fai clic su **[!UICONTROL Salva]**.
+1. Fai clic su **[!UICONTROL Build]** per creare il pacchetto.
 
    Una volta creato il pacchetto, è possibile scaricarlo e importarlo nell&#39;altro server. L’applicazione del flusso di lavoro viene visualizzata sul server in cui viene caricato il pacchetto.
 
@@ -178,19 +178,19 @@ Puoi utilizzare Gestione pacchetti AEM per esportare le applicazioni del flusso 
 
 ## Cartelle e organizzazione delle risorse {#folders-and-organizing-assets}
 
-[!DNL AEM Forms] l’interfaccia utente utilizza le cartelle per disporre le risorse. Queste cartelle vengono utilizzate per organizzare le risorse create in [!DNL AEM Forms] dell&#39;utente. È possibile rinominare, creare sottocartelle e archiviare risorse e documenti in queste cartelle. L’organizzazione di documenti e risorse in una cartella consente di raggruppare i file per facilitarne la gestione. Puoi selezionare una cartella e scegliere se scaricarla o eliminarla.
+L&#39;interfaccia utente di [!DNL AEM Forms] utilizza le cartelle per organizzare le risorse. Queste cartelle vengono utilizzate per organizzare le risorse create nell&#39;interfaccia utente di [!DNL AEM Forms]. È possibile rinominare, creare sottocartelle e archiviare risorse e documenti in queste cartelle. L’organizzazione di documenti e risorse in una cartella consente di raggruppare i file per facilitarne la gestione. Puoi selezionare una cartella e scegliere se scaricarla o eliminarla.
 
 La procedura seguente illustra come creare una cartella:
 
-### Creare una cartella {#create-a-folder}
+### Crea una cartella {#create-a-folder}
 
-1. Accedi a [!DNL AEM Forms] interfaccia utente in `https://<server>:<port>/aem/forms.html`.
+1. Accedere all&#39;interfaccia utente [!DNL AEM Forms] in `https://<server>:<port>/aem/forms.html`.
 1. Passare alla posizione in cui si desidera creare una cartella.
-1. Seleziona **[!UICONTROL Crea]** > **[!UICONTROL Cartella]**.
+1. Selezionare **[!UICONTROL Crea]** > **[!UICONTROL Cartella]**.
 1. Immetti i seguenti dettagli:
 
    * **Titolo:** Nome visualizzato per la cartella
-   * **Nome:** *(Obbligatorio)* Nome del nodo in cui si desidera archiviare la cartella nell&#39;archivio
+   * **Nome:** *(obbligatorio)* Nome del nodo in cui si desidera archiviare la cartella nel repository
 
    >[!NOTE]
    >
@@ -198,7 +198,7 @@ La procedura seguente illustra come creare una cartella:
 
 1. Nell’elenco delle risorse, nella posizione corrente viene visualizzata una nuova cartella con il titolo definito.
 
-   Se esiste una cartella con il nome specificato, l’invio non riesce e viene visualizzato un errore. Puoi visualizzare il messaggio di errore passando il cursore sopra l’errore ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) accanto al campo del nome.
+   Se esiste una cartella con il nome specificato, l’invio non riesce e viene visualizzato un errore. Puoi visualizzare il messaggio di errore passando il cursore sull&#39;icona di errore ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) visualizzata accanto al campo del nome.
 
    Puoi selezionare la cartella creata per entrarvi e creare risorse o cartelle al suo interno. Inoltre, puoi selezionare una cartella e scegliere di metterla in coda per il download, eliminarla o modificarne il nome.
 
@@ -246,4 +246,4 @@ For more information and instructions on using search, filters, saved search, an
 >[!MORELIKETHIS]
 >
 >* [Importa modelli di modulo di esportazione](/help/forms/import-export-forms-templates.md)
->* [Utilizzare i temi nei componenti core dei moduli adattivi](/help/forms/using-themes-in-core-components.md)
+>* [Usa temi nei componenti core modulo adattivo](/help/forms/using-themes-in-core-components.md)

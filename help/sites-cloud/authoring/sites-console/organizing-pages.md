@@ -15,7 +15,7 @@ ht-degree: 67%
 
 # Organizzazione delle pagine {#creating-and-organizing-pages}
 
-Scopri come organizzare il tuo sito web con l’AEM. Una volta compreso come è necessario organizzare le pagine, puoi [crea nuove pagine](/help/sites-cloud/authoring/sites-console/creating-pages.md) e [gestisci le pagine in uscita.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+Scopri come organizzare il tuo sito web con l’AEM. Dopo aver compreso le modalità di organizzazione delle pagine, è possibile [creare nuove pagine](/help/sites-cloud/authoring/sites-console/creating-pages.md) e [gestire le pagine esistenti.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 
 {{edge-delivery-authoring}}
 
@@ -30,7 +30,7 @@ In qualità di autore, devi organizzare il tuo sito all’interno dell’AEM. A 
 
 La struttura del sito web è analoga a una struttura ad albero contenente le pagine dei contenuti. I nomi di queste pagine vengono utilizzati per formare gli URL, mentre i titoli vengono mostrati durante la visualizzazione del contenuto della pagina.
 
-Di seguito è riportato un esempio tratto da [Esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it) site, dove un articolo sugli skatepark (`la-skateparks`) è accessibile:
+Di seguito è riportato un esempio tratto dal sito [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it), in cui è possibile accedere a un articolo sugli skatepark (`la-skateparks`):
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -51,7 +51,7 @@ Di seguito è riportato un esempio tratto da [Esercitazione WKND](https://experi
    /...
 ```
 
-Questa struttura può essere visualizzata dalla sezione [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) dove puoi navigare tra le pagine del sito web ed eseguire azioni sulle pagine.
+Questa struttura può essere visualizzata dalla console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) dove è possibile spostarsi tra le pagine del sito Web ed eseguire azioni sulle pagine.
 
 ## Convenzioni di denominazione delle pagine {#page-naming-conventions}
 
@@ -77,7 +77,7 @@ Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma
 >
 >Tieni presente che alcuni browser (ad esempio le versioni precedenti di IE) possono accettare solo gli URL fino a una certa lunghezza; pertanto, esistono anche delle ragioni tecniche per cui è bene mantenere brevi i nomi di pagina.
 
-Durante la creazione di una pagina, AEM [convalida il nome della pagina in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
+Durante la creazione di una pagina, l&#39;AEM [convalida il nome della pagina in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte dall&#39;AEM e dal JCR.
 
 I caratteri minimi consentiti sono:
 
@@ -95,7 +95,7 @@ Per informazioni complete su tutti i caratteri consentiti, consulta le [convenzi
 
 ### Titolo {#title}
 
-Se si specifica solo una pagina **Titolo** quando si crea una pagina, l’AEM la deriva **Nome** da questa stringa e [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
+Se specifichi solo una pagina **Titolo** durante la creazione di una pagina, AEM deriva la pagina **Nome** da questa stringa e [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte da AEM e JCR.
 
 Un campo **Titolo** che contiene caratteri non validi viene accettato, ma nel nome derivato dal titolo tali caratteri vengono sostituiti. Ad esempio:
 
@@ -106,7 +106,7 @@ Un campo **Titolo** che contiene caratteri non validi viene accettato, ma nel no
 
 ### Nome {#name}
 
-Quando si specifica una pagina **Nome** durante la creazione di una pagina, AEM [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto dall&#39;AEM e dal JCR. Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando AEM rileva caratteri non validi, il campo viene evidenziato con un messaggio esplicativo.
+Se specifichi il nome della pagina **Name** durante la creazione, l&#39;AEM [lo convalida in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte dall&#39;AEM e da JCR. Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando AEM rileva caratteri non validi, il campo viene evidenziato con un messaggio esplicativo.
 
 ![Esempio di immissione di un nome di pagina non valido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -118,19 +118,19 @@ Quando si specifica una pagina **Nome** durante la creazione di una pagina, AEM 
 
 ## Modelli {#templates}
 
-Nel caso dell’AEM, un’ [modello](/help/sites-cloud/authoring/sites-console/templates.md) è un tipo di pagina specializzato utilizzato come base per qualsiasi nuova pagina creata.
+In AEM, un [modello](/help/sites-cloud/authoring/sites-console/templates.md) è un tipo di pagina specializzato utilizzato come base per qualsiasi nuova pagina creata.
 
 Il modello definisce la struttura di una pagina, comprese una miniatura e altre proprietà. Ad esempio, puoi usare modelli distinti per pagine di prodotti, sitemap e informazioni di contatto. I modelli sono costituiti da [componenti](#components).
 
 AEM viene fornito con diversi modelli preconfigurati. I modelli disponibili dipendono dal singolo sito web. I campi chiave sono i seguenti:
 
-* **Titolo** - Il titolo visualizzato sulla pagina web risultante
+* **Titolo** - Titolo visualizzato nella pagina Web risultante
 * **Nome** - Utilizzato per la denominazione della pagina
 * **Modello** - Elenco di modelli disponibili per la generazione della nuova pagina
 
 ## Componenti {#components}
 
-[Componenti](/help/implementing/developing/components/overview.md) sono gli elementi forniti dall’AEM in modo da poter aggiungere specifici tipi di contenuto. L’AEM viene fornito con una serie di componenti pronti all’uso, denominati [Componenti core,](/help/implementing/developing/components/overview.md#core-components) che offrono funzionalità complete. Alcuni esempi dei componenti sono:
+[I componenti](/help/implementing/developing/components/overview.md) sono gli elementi forniti dall&#39;AEM che consentono di aggiungere tipi specifici di contenuto. AEM viene fornito con una serie di componenti pronti all&#39;uso, denominati [Componenti core](/help/implementing/developing/components/overview.md#core-components), che forniscono funzionalità complete. Alcuni esempi dei componenti sono:
 
 * Testo
 * Immagine

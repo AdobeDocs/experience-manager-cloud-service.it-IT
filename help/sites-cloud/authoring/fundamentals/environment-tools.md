@@ -18,7 +18,7 @@ L’ambiente di authoring di AEM offre diversi metodi per organizzare e modifica
 
 ## Gestione del sito {#managing-your-site}
 
-Il **Sites** console consente di navigare nel sito web e di gestirlo mediante la barra intestazione, la barra degli strumenti, le icone delle azioni (per la risorsa selezionata), le breadcrumb e, se selezionate, le barre laterali secondarie (ad esempio Timeline e Riferimenti).
+La console **Sites** consente di navigare nel sito Web e di gestirlo utilizzando la barra intestazione, la barra degli strumenti, le icone delle azioni (per la risorsa selezionata), le breadcrumb e, se selezionate, le barre laterali secondarie (ad esempio Timeline e Riferimenti).
 
 Ad esempio, nella vista a colonne:
 
@@ -90,7 +90,7 @@ L’aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
    * Filtrare i componenti per nome
    * Limita la visualizzazione a uno specifico gruppo selezionandolo dall’elenco a discesa.
 
-  Per una descrizione più dettagliata del componente, puoi selezionare l’icona delle informazioni accanto al componente nella **Componenti** browser (se disponibile). Ad esempio, per il **frammento di contenuto**:
+  Per una descrizione più dettagliata del componente, puoi selezionare l&#39;icona delle informazioni accanto al componente nel browser **Componenti** (se disponibile). Ad esempio, per il **frammento di contenuto**:
 
   ![Informazioni sul browser Componenti](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -108,7 +108,7 @@ Il browser Risorse è una scheda che si trova nel pannello laterale, insieme al 
 
 ![Icona del pannello laterale](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Quando apri il pannello laterale, questo si apre scorrendo dal lato sinistro. Seleziona la **Risorse** , se necessario.
+Quando apri il pannello laterale, questo si apre scorrendo dal lato sinistro. Se necessario, seleziona la scheda **Assets**.
 
 ![Pulsante Browser risorse](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
@@ -120,7 +120,7 @@ Per aggiungere una risorsa alla pagina, selezionala e trascinala nella posizione
 
 * un componente esistente del tipo appropriato.
    * Ad esempio, puoi trascinare una risorsa di tipo immagine su un componente Immagine.
-* A [segnaposto](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) nel sistema paragrafo per creare un componente del tipo appropriato.
+* Un [segnaposto](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) nel sistema paragrafo per creare un componente del tipo appropriato.
    * Ad esempio, puoi trascinare una risorsa di tipo immagine nel sistema paragrafo per creare un componente Immagine.
 
 >[!NOTE]
@@ -163,7 +163,7 @@ Se devi apportare rapidamente una modifica a una risorsa, puoi avviare [l’edit
 
 ## Struttura contenuto {#content-tree}
 
-Il **Struttura contenuto** offre una panoramica di tutti i componenti della pagina in una gerarchia, per consentirti di visualizzare rapidamente come viene composta la pagina.
+La **Struttura contenuto** offre una panoramica di tutti i componenti della pagina in una gerarchia, in modo da poter vedere immediatamente come viene composta la pagina.
 
 Struttura contenuto è una scheda che si trova nel pannello laterale, insieme ai browser Componenti e Risorse. Per aprire (o chiudere) il pannello laterale utilizza l’icona in alto a sinistra della barra degli strumenti:
 
@@ -224,7 +224,7 @@ Apri la console richiesta, quindi accedi alla risorsa desiderata e apri i **Rife
 
 Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determinate situazioni sono disponibili azioni ulteriori quando viene selezionato un riferimento specifico, inclusi:
 
-* **Collegamenti in ingresso**, fornisce un elenco di pagine che fanno riferimento alla pagina e accesso diretto a **Modifica** una di queste pagine quando selezioni un collegamento specifico.
+* **Collegamenti in ingresso**, fornisce un elenco di pagine che fanno riferimento alla pagina, insieme all&#39;accesso diretto a **Modifica** una di queste pagine quando selezioni un collegamento specifico.
 
    * Questo può mostrare solo collegamenti statici, non collegamenti generati dinamicamente; ad esempio, dal componente Elenco.
 
@@ -271,9 +271,9 @@ Inoltre, se necessario, **Informazioni pagina** può fornire accesso alle analis
 Esistono diverse modalità di modifica di una pagina che consentono di eseguire azioni diverse:
 
 * [Modifica](/help/sites-cloud/authoring/fundamentals/editing-content.md): modalità da utilizzare per la modifica del contenuto della pagina.
-* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) : consente di creare e modificare il layout dinamico a seconda del dispositivo (se la pagina si basa su un contenitore di layout)
+* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) - consente di creare e modificare il layout dinamico a seconda del dispositivo (se la pagina si basa su un contenitore di layout)
 * [Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md): aumenta la rilevanza dei contenuti attraverso il targeting e la misurazione su tutti i canali.
-* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : consente di visualizzare lo stato di una pagina in un determinato momento.
+* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - consente di visualizzare lo stato di una pagina in un determinato momento.
 * [Stato Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status): consente di ottenere una rapida panoramica dello stato della live copy e dei componenti che vengono/non vengono ereditati.
 * [Modalità Sviluppatore](/help/implementing/developing/tools/developer-mode.md)
 * [Anteprima](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages): utilizzato per visualizzare l’aspetto che la pagina avrà nell’ambiente di pubblicazione o per spostarsi utilizzando i collegamenti presenti nel contenuto.
@@ -288,7 +288,7 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 >* A seconda delle caratteristiche della pagina, alcune modalità potrebbero non essere disponibili.
 >* L’accesso ad alcune modalità richiede le autorizzazioni/i privilegi appropriati.
 >* La modalità Sviluppatore non è disponibile sui dispositivi mobili a causa di restrizioni di spazio.
->* È presente un [scelta rapida da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) per passare da **Anteprima** e la modalità attualmente selezionata (ad esempio, **Modifica**, **Layout** e così via).
+>* La [scelta rapida da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) consente di passare da **Anteprima** alla modalità attualmente selezionata, ad esempio **Modifica**, **Layout** e così via.
 >
 
 ## Selezione del percorso {#path-selection}
@@ -315,7 +315,7 @@ Il browser Percorsi è organizzato come la [vista a colonne](/help/sites-cloud/a
 
 ![Browser Percorsi](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Una volta selezionata una risorsa, **Seleziona** in alto a destra nella finestra di dialogo diventa attivo. Seleziona per confermare la selezione o **Annulla** per interrompere.
+* Dopo aver selezionato una risorsa, il pulsante **Seleziona** in alto a destra della finestra di dialogo diventa attivo. Seleziona per confermare la selezione o **Annulla** per interromperla.
 * Se il contesto consente la selezione di più risorse, la scelta di una risorsa attiva anche il pulsante **Seleziona**, ma aggiunge anche un conteggio del numero di risorse selezionate nella parte superiore destra della finestra. Per deselezionare tutti gli elementi, fai clic sulla **X** accanto al numero.
 * Quando ti sposti nella struttura, la posizione si riflette nelle breadcrumb nella parte superiore della finestra di dialogo. Queste breadcrumb possono essere utilizzate anche per passare rapidamente all’interno della gerarchia delle risorse.
 * In qualsiasi momento è possibile utilizzare il campo di ricerca nella parte superiore della finestra di dialogo. Fai clic su **X** nel campo di ricerca per cancellare la ricerca.

@@ -1,6 +1,6 @@
 ---
-title: Come si collega il Modulo adattivo AEM a Microsoft&reg; SharePoint List?
-description: Collegare un modulo adattivo all’elenco SharePoint di Microsoft&reg;. Scopri come configurare l’elenco Microsoft&reg; SharePoint e creare un modello di dati del modulo (FDM) utilizzando la configurazione. Inoltre, imparerai a integrare FDM con il tuo modulo adattivo.
+title: Come collegare il modulo adattivo AEM a Microsoft&reg; SharePoint List?
+description: Collegare un modulo adattivo a Microsoft&reg; SharePoint List. Scopri come configurare l’elenco Microsoft&reg; SharePoint e creare un modello di dati del modulo (FDM) utilizzando la configurazione. Inoltre, imparerai a integrare FDM con il tuo modulo adattivo.
 role: User, Developer
 keywords: Collega Modulo adattivo AEM a Elenco Microsoft SharePoint, connetti Modulo adattivo a Elenco Microsoft SharePoint, integra Modulo adattivo AEM a Elenco Microsoft SharePoint, integra Modulo adattivo a Elenco Microsoft SharePoint, invia dati da un Modulo adattivo a Elenco SharePoint, invia flusso di lavoro di a Elenco AEM SharePoint.
 hide: true
@@ -15,14 +15,14 @@ ht-degree: 2%
 
 # Collegare un modulo adattivo all’elenco di Microsoft® SharePoint
 
-<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
+<span class="preview"> Si tratta di una funzionalità preliminare accessibile tramite il [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
 
 **Microsoft® SharePoint**: Microsoft® SharePoint consente la collaborazione fornendo siti di team dinamici ed efficienti per tutti i team, i reparti e le divisioni. Viene utilizzato per memorizzare, organizzare, condividere e accedere alle informazioni da qualsiasi dispositivo utilizzando qualsiasi browser web, ad esempio Microsoft® Edge, Internet Explorer, Chrome o Firefox. I due componenti principali di **Microsoft® SharePoint** sono:
 
-* **Libreria documenti Microsoft® SharePoint**: Raccolta documenti di Microsoft® SharePoint visualizza un elenco di file e cartelle con le relative informazioni chiave, ad esempio la data dell&#39;ultima modifica e il proprietario di un file. Questa funzione semplifica l&#39;organizzazione e la navigazione dei file.
-Per istruzioni su come integrare un **Libreria documenti Microsoft® SharePoint** con un modulo adattivo, consulta [Azione di invio modulo adattivo](/help/forms/configuring-submit-actions.md#submit-to-sharepoint) articolo.
+* **Libreria documenti di Microsoft® SharePoint**: in Microsoft® SharePoint Document Library viene visualizzato un elenco di file e cartelle con le relative informazioni chiave, ad esempio la data dell&#39;ultima modifica e il proprietario di un file. Questa funzione semplifica l&#39;organizzazione e la navigazione dei file.
+Per istruzioni su come integrare una **Libreria documenti di Microsoft® SharePoint** con un modulo adattivo, consulta l&#39;articolo [Azione di invio modulo adattivo](/help/forms/configuring-submit-actions.md#submit-to-sharepoint).
 
-* **Elenco SharePoint Microsoft®**: Microsoft® SharePoint List è una raccolta di dati. Puoi aggiungere colonne per diversi tipi di dati e creare viste per visualizzare i dati in modo efficace. È possibile raggruppare, filtrare, ordinare e formattare facilmente gli elenchi.
+* **Elenco SharePoint Microsoft®**: Elenco SharePoint Microsoft® è una raccolta di dati. Puoi aggiungere colonne per diversi tipi di dati e creare viste per visualizzare i dati in modo efficace. È possibile raggruppare, filtrare, ordinare e formattare facilmente gli elenchi.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
@@ -42,7 +42,7 @@ Ora è possibile:
 
 ## Collegare un modulo adattivo all’elenco di Microsoft® SharePoint {#connect-af-sharepoint-list}
 
-Integrare Microsoft® SharePoint List nel modulo adattivo [configurare un modulo adattivo per l’utilizzo di un modello dati modulo (FDM)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+Per integrare Microsoft® SharePoint List nel modulo adattivo [configurare un modulo adattivo per l&#39;utilizzo di un modello dati modulo (FDM)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
 Dopo aver configurato un modulo adattivo per l’utilizzo di un modello dati modulo (FDM), è possibile:
 
@@ -53,7 +53,7 @@ Dopo aver configurato un modulo adattivo per l’utilizzo di un modello dati mod
 
 Per integrare Microsoft® SharePoint List in un flusso di lavoro AEM:
 
-1. [Creare un flusso di lavoro per richiamare un modello dati modulo (FDM)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it)
+1. [Crea un flusso di lavoro per richiamare un modello dati modulo (FDM)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it)
 
    <!--
     To create a workflow with the editor:
@@ -69,7 +69,7 @@ Per integrare Microsoft® SharePoint List in un flusso di lavoro AEM:
 1. [Configurare l’azione di invio per richiamare un flusso di lavoro AEM](/help/forms/configuring-submit-actions.md#invoke-an-aem-workflow)
 
 
-Scopri come [utilizzare il flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/workflow/use-workflow.html) collaborare, gestire ed elaborare contenuti in un modulo adattivo.
+Scopri come [utilizzare il flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/workflow/use-workflow.html) per collaborare, gestire ed elaborare i contenuti in un modulo adattivo.
 
 ## Best practice {#best-practices}
 

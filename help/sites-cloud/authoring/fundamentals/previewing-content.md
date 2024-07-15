@@ -18,7 +18,7 @@ Semplifica la visualizzazione in anteprima delle esperienze di pagina che non sa
 
 >[!NOTE]
 >
->Poiché il contenuto è *pubblicato* nell’ambiente di anteprima è accessibile tramite URL (quindi non ha bisogno dell’accesso a AEM).
+>Poiché il contenuto è *pubblicato* nell&#39;ambiente di anteprima, è accessibile tramite URL (quindi non è necessario accedere a AEM).
 
 Per ulteriori dettagli sugli ambienti di anteprima, consulta il documento [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
@@ -26,8 +26,8 @@ Per ulteriori dettagli sugli ambienti di anteprima, consulta il documento [Gesti
 
 Puoi pubblicare i contenuti nel servizio di anteprima utilizzando la funzione **Pubblicazione gestita** dell’interfaccia utente.
 
-1. Nella console Sites, seleziona le pagine da inviare all’anteprima e fai clic su **Gestisci pubblicazione** pulsante.
-1. Nella procedura guidata seguente, seleziona **Anteprima** come destinazione.
+1. Nella console Sites, seleziona le pagine da inviare all&#39;anteprima e fai clic sul pulsante **Gestisci pubblicazione**.
+1. Nella procedura guidata seguente, selezionare **Anteprima** come destinazione.
 
    ![pubblicazione gestita](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 
@@ -37,7 +37,7 @@ Puoi pubblicare i contenuti nel servizio di anteprima utilizzando la funzione **
 
    >[!NOTE]
    >
-   >Poiché il contenuto è *pubblicato* nell’ambiente di anteprima è accessibile tramite URL (quindi non ha bisogno dell’accesso a AEM).
+   >Poiché il contenuto è *pubblicato* nell&#39;ambiente di anteprima, è accessibile tramite URL (quindi non è necessario accedere a AEM).
 
 Per visualizzare il contenuto dell’anteprima utilizzando gli URL nella procedura guidata, in alternativa, puoi anche anteporre `preview-` all’URL di pubblicazione dell’istanza di produzione.
 

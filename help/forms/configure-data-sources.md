@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ![Integrazione dei dati](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] L’integrazione dei dati consente di configurare e connettersi a diverse origini dati. Sono supportati i seguenti tipi predefiniti:
+L&#39;integrazione dei dati di [!DNL Experience Manager Forms] consente di configurare e connettersi a diverse origini dati. Sono supportati i seguenti tipi predefiniti:
 
 * Database relazionali: MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL e [!DNL Oracle RDBMS]
 * Servizi Web RESTful
@@ -32,23 +32,23 @@ ht-degree: 1%
 * ForzaVendite
 * Archiviazione BLOB di Microsoft® Azure
 
-L’integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base e tipi di autenticazione con chiave API pronti all’uso e che consentono l’implementazione dell’autenticazione personalizzata per l’accesso ai servizi web. Mentre i servizi RESTful, SOAP e OData sono configurati in [!DNL Experience Manager] as a Cloud Service, JDBC per database relazionali e connettore per [!DNL Experience Manager] il profilo utente è configurato in [!DNL Experience Manager] console web.
+L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), l&#39;autenticazione di base e i tipi di autenticazione con chiave API predefiniti e consente l&#39;implementazione dell&#39;autenticazione personalizzata per l&#39;accesso ai servizi Web. Mentre i servizi RESTful, basati su SOAP e OData sono configurati nell&#39;as a Cloud Service [!DNL Experience Manager], JDBC per i database relazionali e il connettore per il profilo utente [!DNL Experience Manager] sono configurati nella console Web [!DNL Experience Manager].
 
 ## Configurare il database relazionale {#configure-relational-database}
 
 ### Prerequisiti
 
-Prima di configurare i database relazionali utilizzando [!DNL Experience Manager] Configurazione della console Web, è obbligatorio:
-* [Abilitare la rete avanzata tramite l’API di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), in quanto le porte sono disattivate per impostazione predefinita.
-* [Aggiungere dipendenze driver JDBC in Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
+Prima di configurare i database relazionali utilizzando la configurazione della console Web [!DNL Experience Manager], è necessario:
+* [Abilita la rete avanzata tramite l&#39;API di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), in quanto le porte sono disabilitate per impostazione predefinita.
+* [Aggiungi dipendenze driver JDBC in Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
 
 
 ### Passaggi per configurare un database relazionale
 
-È possibile configurare i database relazionali utilizzando [!DNL Experience Manager] Configurazione della console web. Effettua le seguenti operazioni:
+È possibile configurare i database relazionali utilizzando la configurazione della console Web [!DNL Experience Manager]. Effettua le seguenti operazioni:
 
-1. Vai a [!DNL Experience Manager] console web in `https://server:host/system/console/configMgr`.
-1. Individua **[!UICONTROL Pool connessioni JDBC Day Commons]** configurazione. Seleziona per aprire la configurazione in modalità di modifica.
+1. Vai alla console Web [!DNL Experience Manager] in `https://server:host/system/console/configMgr`.
+1. Individuare la configurazione ]**dei pool di connessioni JDBC Day Commons**[!UICONTROL . Seleziona per aprire la configurazione in modalità di modifica.
 
    ![Pool di connettori JDBC](/help/forms/assets/jdbc_connector.png)
 
@@ -57,7 +57,7 @@ Prima di configurare i database relazionali utilizzando [!DNL Experience Manager
    * Nome classe Java™ per il driver JDBC
    * URI connessione JDBC
    * Nome utente e password per stabilire la connessione con il driver JDBC
-   * Specificare una query SQL SELECT in **[!UICONTROL Query di convalida]** per convalidare le connessioni dal pool. La query deve restituire almeno una riga. In base al database, specificare una delle seguenti opzioni:
+   * Specificare una query SQL SELECT nel campo **[!UICONTROL Query di convalida]** per convalidare le connessioni dal pool. La query deve restituire almeno una riga. In base al database, specificare una delle seguenti opzioni:
       * SELECT 1 (MySQL e MS® SQL)
       * SELECT 1 da dual (Oracle)
    * Nome dell’origine dati
@@ -72,7 +72,7 @@ Prima di configurare i database relazionali utilizzando [!DNL Experience Manager
 
    >[!NOTE]
    >
-   > Consulta [Connessioni SQL con DataSourcePool JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) per informazioni più dettagliate.
+   > Per informazioni più dettagliate, vedere [Connessioni SQL con DataSourcePool JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html).
 
 1. Seleziona **[!UICONTROL Salva]** per salvare la configurazione.
 
@@ -103,67 +103,67 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 Per configurare i servizi cloud per i servizi RESTful, SOAP e OData è necessaria la configurazione della cartella Servizi cloud.
 
-Tutte le configurazioni del servizio cloud in [!DNL Experience Manager] sono consolidati in `/conf` cartella in [!DNL Experience Manager] archivio. Per impostazione predefinita, il `conf` la cartella contiene `global` cartella in cui è possibile creare le configurazioni di cloud service. Tuttavia, devi abilitarlo manualmente per le configurazioni cloud. Puoi anche creare ulteriori cartelle in `conf` per creare e organizzare le configurazioni di cloud service.
+Tutte le configurazioni del servizio cloud in [!DNL Experience Manager] sono consolidate nella cartella `/conf` nell&#39;archivio [!DNL Experience Manager]. Per impostazione predefinita, la cartella `conf` contiene la cartella `global` in cui è possibile creare configurazioni del servizio cloud. Tuttavia, devi abilitarlo manualmente per le configurazioni cloud. È inoltre possibile creare cartelle aggiuntive in `conf` per creare e organizzare le configurazioni del servizio cloud.
 
 Per configurare la cartella per le configurazioni del servizio cloud:
 
 1. Vai a **[!UICONTROL Strumenti > Generale > Browser configurazioni]**.
-   * Consulta la [Browser configurazioni](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) per ulteriori informazioni.
+   * Per ulteriori informazioni, vedere la documentazione del [browser di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html).
 1. Effettua le seguenti operazioni per abilitare la cartella globale per le configurazioni cloud oppure ignora questo passaggio per creare e configurare un’altra cartella per le configurazioni del servizio cloud.
 
-   1. In **[!UICONTROL Browser configurazioni]**, seleziona la `global` cartella e seleziona **[!UICONTROL Proprietà]**.
+   1. Nel **[!UICONTROL Browser configurazioni]**, selezionare la cartella `global` e selezionare **[!UICONTROL Proprietà]**.
 
-   1. In **[!UICONTROL Proprietà di configurazione]** finestra di dialogo, abilita **[!UICONTROL Configurazioni cloud]**.
+   1. Nella finestra di dialogo **[!UICONTROL Proprietà configurazione]**, abilita **[!UICONTROL Configurazioni cloud]**.
 
    1. Seleziona **[!UICONTROL Salva e chiudi]** per salvare la configurazione e uscire dalla finestra di dialogo.
 
-1. In **[!UICONTROL Browser configurazioni]**, seleziona **[!UICONTROL Crea]**.
-1. In **[!UICONTROL Crea configurazione]** , specifica un titolo per la cartella e abilita **[!UICONTROL Configurazioni cloud]**.
+1. Nel **[!UICONTROL Browser configurazioni]**, selezionare **[!UICONTROL Crea]**.
+1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]**, specifica un titolo per la cartella e abilita **[!UICONTROL Configurazioni cloud]**.
 1. Seleziona **[!UICONTROL Crea]** per creare la cartella abilitata per le configurazioni del servizio cloud.
 
 ## Configurare i servizi web RESTful {#configure-restful-web-services}
 
-I servizi web RESTful possono essere descritti utilizzando [Specifiche Swagger](https://swagger.io/specification/v2/) in formato JSON o YAML in un [!DNL Swagger] file di definizione. Per configurare il servizio Web RESTful in [!DNL Experience Manager] as a Cloud Service, assicurati di disporre di [!DNL Swagger] file ([Swagger versione 2.0](https://swagger.io/specification/v2/)) o [!DNL Swagger] file ([Swagger versione 3.0](https://swagger.io/specification/v3/)) nel file system o nell&#39;URL in cui è ospitato il file.
+I servizi Web RESTful possono essere descritti utilizzando [Specifiche Swagger](https://swagger.io/specification/v2/) in formato JSON o YAML in un file di definizione [!DNL Swagger]. Per configurare il servizio Web RESTful in [!DNL Experience Manager] as a Cloud Service, verificare di disporre del file [!DNL Swagger] ([Swagger versione 2.0](https://swagger.io/specification/v2/)) o del file [!DNL Swagger] ([Swagger versione 3.0](https://swagger.io/specification/v3/)) nel file system o dell&#39;URL in cui è ospitato il file.
 
-### Configurazione dei servizi RESTful per la specifica API Open versione 2.0 {#configure-restful-services-open-api-2.0}
+### Configurare i servizi RESTful per la specifica API Open versione 2.0 {#configure-restful-services-open-api-2.0}
 
 1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
-   Consulta [Configurare la cartella per le configurazioni del servizio cloud](configure-data-sources.md#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
+   Per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud, consulta [Configurare la cartella per le configurazioni del servizio cloud](configure-data-sources.md#cloud-folder).
 
-1. Seleziona **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio RESTful]** dal **[!UICONTROL Tipo di servizio]** , sfogliare e selezionare un&#39;immagine di miniatura per la configurazione e selezionare **[!UICONTROL Successivo]**.
+1. Selezionare **[!UICONTROL Crea]** per aprire la **[!UICONTROL Creazione guidata configurazione Data Source]**. Specifica un nome e, facoltativamente, un titolo per la configurazione. Seleziona **[!UICONTROL Servizio RESTful]** dal menu a discesa **[!UICONTROL Tipo di servizio]**. Se necessario, sfoglia e seleziona un&#39;immagine di anteprima per la configurazione, quindi seleziona **[!UICONTROL Avanti]**.
 1. Specificare i dettagli seguenti per il servizio RESTful:
 
-   * Seleziona un URL o un file da [!UICONTROL Sorgente Swagger] e quindi specificare il [!DNL Swagger URL] al[!DNL  Swagger] file di definizione o carica [!DNL Swagger] dal file system locale.
-   * In base al[!DNL  Swagger] Input sorgente., i seguenti campi sono precompilati con i valori:
+   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger URL] nel file di definizione [!DNL  Swagger] o caricare il file [!DNL Swagger] dal file system locale.
+   * In base all&#39;input di Source [!DNL  Swagger], i campi seguenti sono precompilati con i valori:
 
-      * Schema: protocolli di trasferimento utilizzati dall’API REST. Il numero di tipi di schema visualizzati nell&#39;elenco a discesa dipende dagli schemi definiti nella [!DNL Swagger] sorgente.
+      * Schema: protocolli di trasferimento utilizzati dall’API REST. Il numero di tipi di schema visualizzati nell&#39;elenco a discesa dipende dagli schemi definiti nell&#39;origine [!DNL Swagger].
       * Host: il nome di dominio o l’indirizzo IP dell’host che serve l’API REST. È un campo obbligatorio.
       * Percorso base: prefisso URL per tutti i percorsi API. È un campo facoltativo.\
         Se necessario, modifica i valori precompilati per questi campi.
 
-   * Seleziona il tipo di autenticazione: Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base, chiave API o autenticazione personalizzata: per accedere al servizio RESTful e fornire di conseguenza i dettagli per l’autenticazione.
+   * Selezionare il tipo di autenticazione, ovvero Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), Autenticazione di base, Chiave API o Autenticazione personalizzata, per accedere al servizio RESTful e fornire di conseguenza i dettagli per l&#39;autenticazione.
 
-   Se si seleziona **[!UICONTROL Chiave API]** come tipo di autenticazione, specifica il valore per la chiave API. La chiave API può essere inviata come intestazione di richiesta o come parametro di query. Seleziona una di queste opzioni dalla **[!UICONTROL Posizione]** e specificare il nome dell&#39;intestazione o il parametro di query nell&#39; **[!UICONTROL Nome parametro]** di conseguenza.
+   Se si seleziona **[!UICONTROL Chiave API]** come tipo di autenticazione, specificare il valore per la chiave API. La chiave API può essere inviata come intestazione di richiesta o come parametro di query. Seleziona una di queste opzioni dall&#39;elenco a discesa **[!UICONTROL Posizione]** e specifica di conseguenza il nome dell&#39;intestazione o il parametro della query nel campo **[!UICONTROL Nome parametro]**.
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. Seleziona **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio RESTful.
 
-### Configurare i servizi RESTful per la versione 3.0 delle specifiche API aperte {#configure-restful-services-open-api-3.0}
+### Configurare i servizi RESTful per la specifica API Open versione 3.0 {#configure-restful-services-open-api-3.0}
 
 1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
-   Consulta [Configurare la cartella per le configurazioni del servizio cloud](configure-data-sources.md#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
+   Per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud, consulta [Configurare la cartella per le configurazioni del servizio cloud](configure-data-sources.md#cloud-folder).
 
-1. Seleziona **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio RESTful]** dal **[!UICONTROL Tipo di servizio]** , sfogliare e selezionare un&#39;immagine di miniatura per la configurazione e selezionare **[!UICONTROL Successivo]**.
+1. Selezionare **[!UICONTROL Crea]** per aprire la **[!UICONTROL Creazione guidata configurazione Data Source]**. Specifica un nome e, facoltativamente, un titolo per la configurazione. Seleziona **[!UICONTROL Servizio RESTful]** dal menu a discesa **[!UICONTROL Tipo di servizio]**. Se necessario, sfoglia e seleziona un&#39;immagine di anteprima per la configurazione, quindi seleziona **[!UICONTROL Avanti]**.
 1. Specificare i dettagli seguenti per il servizio RESTful:
 
-   * Seleziona un URL o un file da [!UICONTROL Sorgente Swagger] e quindi specificare il [!DNL Swagger 3.0 URL] al[!DNL  Swagger] file di definizione o carica [!DNL Swagger] dal file system locale.
-   * In base al[!DNL  Swagger] Input di origine, vengono visualizzate le informazioni di connessione con il server di destinazione.
-   * Seleziona il tipo di autenticazione: Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base, chiave API o autenticazione personalizzata: per accedere al servizio RESTful e fornire di conseguenza i dettagli per l’autenticazione.
+   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger 3.0 URL] nel file di definizione [!DNL  Swagger] o caricare il file [!DNL Swagger] dal file system locale.
+   * In base all&#39;input di Source [!DNL  Swagger], vengono visualizzate le informazioni di connessione con il server di destinazione.
+   * Selezionare il tipo di autenticazione, ovvero Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), Autenticazione di base, Chiave API o Autenticazione personalizzata, per accedere al servizio RESTful e fornire di conseguenza i dettagli per l&#39;autenticazione.
 
-   Se si seleziona **[!UICONTROL Chiave API]** come tipo di autenticazione, specifica il valore per la chiave API. La chiave API può essere inviata come intestazione di richiesta o come parametro di query. Seleziona una di queste opzioni dalla **[!UICONTROL Posizione]** e specificare il nome dell&#39;intestazione o il parametro di query nell&#39; **[!UICONTROL Nome parametro]** di conseguenza.
+   Se si seleziona **[!UICONTROL Chiave API]** come tipo di autenticazione, specificare il valore per la chiave API. La chiave API può essere inviata come intestazione di richiesta o come parametro di query. Seleziona una di queste opzioni dall&#39;elenco a discesa **[!UICONTROL Posizione]** e specifica di conseguenza il nome dell&#39;intestazione o il parametro della query nel campo **[!UICONTROL Nome parametro]**.
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
@@ -176,23 +176,23 @@ Alcune delle operazioni non supportate dalla versione 3.0 della specifica Open A
 * Collegamenti
 * Diversi corpi di richiesta per diversi tipi MIME per una singola operazione
 
-Consulta [Specifiche OpenAPI 3.0](https://swagger.io/specification/v3/) per informazioni dettagliate.
+Per informazioni dettagliate, vedere la specifica [OpenAPI 3.0](https://swagger.io/specification/v3/).
 
 ### Configurazione del client HTTP Form Data Model (FDM) per ottimizzare le prestazioni {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] formare un modello dati durante l’integrazione con i servizi web RESTful come origine dati include configurazioni client HTTP per l’ottimizzazione delle prestazioni.
+[!DNL Experience Manager Forms] forma un modello dati durante l&#39;integrazione con i servizi Web RESTful come origine dati include configurazioni client HTTP per l&#39;ottimizzazione delle prestazioni.
 
-Imposta le seguenti proprietà del **[!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST]** per specificare l&#39;espressione regolare:
+Impostare le seguenti proprietà della configurazione client HTTP del modello dati **[!UICONTROL Form per l&#39;origine dati REST]** per specificare l&#39;espressione regolare:
 
-* Utilizza il `http.connection.max.per.route` per impostare il numero massimo di connessioni consentite tra il modello dati del modulo (FDM) e i servizi Web RESTful. Il valore predefinito è 20 connessioni.
+* Utilizzare la proprietà `http.connection.max.per.route` per impostare il numero massimo di connessioni consentite tra il modello dati del modulo (FDM) e i servizi Web RESTful. Il valore predefinito è 20 connessioni.
 
-* Utilizza il `http.connection.max` per specificare il numero massimo di connessioni consentite per ogni route. Il valore predefinito è 40 connessioni.
+* Utilizzare la proprietà `http.connection.max` per specificare il numero massimo di connessioni consentite per ogni route. Il valore predefinito è 40 connessioni.
 
-* Utilizza il `http.connection.keep.alive.duration` per specificare la durata per la quale una connessione HTTP persistente viene mantenuta attiva. Il valore predefinito è 15 secondi.
+* Utilizzare la proprietà `http.connection.keep.alive.duration` per specificare la durata per la quale una connessione HTTP persistente viene mantenuta attiva. Il valore predefinito è 15 secondi.
 
-* Utilizza il `http.connection.timeout` per specificare la durata, per la quale [!DNL Experience Manager Forms] il server attende una connessione da stabilire. Il valore predefinito è 10 secondi.
+* Utilizzare la proprietà `http.connection.timeout` per specificare la durata dell&#39;attesa di connessione da parte del server [!DNL Experience Manager Forms]. Il valore predefinito è 10 secondi.
 
-* Utilizza il `http.socket.timeout` per specificare il periodo massimo di inattività tra due pacchetti di dati. Il valore predefinito è 30 secondi.
+* Utilizzare la proprietà `http.socket.timeout` per specificare il periodo massimo di inattività tra due pacchetti di dati. Il valore predefinito è 30 secondi.
 
 Il seguente file JSON mostra un esempio:
 
@@ -208,49 +208,49 @@ Il seguente file JSON mostra un esempio:
 } 
 ```
 
-1. Seleziona **[!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST]**.
+1. Selezionare **[!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST]**.
 
-1. In [!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST] finestra di dialogo:
+1. Nella finestra di dialogo [!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST]:
 
-   * Specifica il numero massimo di connessioni consentite tra il modello dati modulo (FDM) e i servizi web RESTful in **[!UICONTROL Limite di connessioni in totale]** campo. Il valore predefinito è 20 connessioni.
+   * Specifica il numero massimo di connessioni consentite tra il modello dati del modulo (FDM) e i servizi Web RESTful nel campo **[!UICONTROL Limite connessione in totale]**. Il valore predefinito è 20 connessioni.
 
-   * Specificare il numero massimo di connessioni consentite per ogni route nella **[!UICONTROL Limite di connessione per ciclo di lavorazione]** campo. Il valore predefinito è due connessioni.
+   * Specificare il numero massimo di connessioni consentite per ogni route nel campo **[!UICONTROL Limite di connessioni per ogni route]**. Il valore predefinito è due connessioni.
 
-   * Specifica la durata per la quale una connessione HTTP persistente viene mantenuta attiva nel **[!UICONTROL Mantieni vivo]** campo. Il valore predefinito è 15 secondi.
+   * Nel campo **[!UICONTROL Keep alive]** specificare la durata per la quale una connessione HTTP persistente viene mantenuta attiva. Il valore predefinito è 15 secondi.
 
-   * Specifica la durata, per la quale [!DNL Experience Manager Forms] il server attende che venga stabilita una connessione, nel **[!UICONTROL Timeout della connessione]** campo. Il valore predefinito è 10 secondi.
+   * Nel campo **[!UICONTROL Timeout connessione]** specificare la durata dell&#39;attesa di una connessione da parte del server [!DNL Experience Manager Forms]. Il valore predefinito è 10 secondi.
 
-   * Specifica il periodo massimo di inattività tra due pacchetti di dati nella **[!UICONTROL Timeout socket]** campo. Il valore predefinito è 30 secondi.
+   * Specificare il periodo di tempo massimo per l&#39;inattività tra due pacchetti di dati nel campo **[!UICONTROL Timeout socket]**. Il valore predefinito è 30 secondi.
 
-## Configurare i servizi web SOAP {#configure-soap-web-services}
+## Configurare i servizi web dell’SOAP {#configure-soap-web-services}
 
-I servizi web basati su SOAP sono descritti utilizzando [Specifiche di Web Services Description Language (WSDL)](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] non supportano il modello WSDL di tipo RPC.
+I servizi Web basati su SOAP sono descritti utilizzando [le specifiche WSDL (Web Services Description Language)](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] non supporta il modello WSDL in stile RPC.
 
-Per configurare il servizio Web basato su SOAP in [!DNL Experience Manager] as a Cloud Service, assicurati di disporre dell’URL WSDL per il servizio Web e procedi come segue:
+Per configurare il servizio Web basato su SOAP in [!DNL Experience Manager] as a Cloud Service, verificare di disporre dell&#39;URL WSDL per il servizio Web e procedere come segue:
 
 1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
-   Consulta [Configurare la cartella per le configurazioni del servizio cloud](configure-data-sources.md#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
+   Per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud, consulta [Configurare la cartella per le configurazioni del servizio cloud](configure-data-sources.md#cloud-folder).
 
-1. Seleziona **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio web SOAP]** dal **[!UICONTROL Tipo di servizio]** , sfogliare e selezionare un&#39;immagine di miniatura per la configurazione e selezionare **[!UICONTROL Successivo]**.
+1. Selezionare **[!UICONTROL Crea]** per aprire la **[!UICONTROL Creazione guidata configurazione Data Source]**. Specifica un nome e, facoltativamente, un titolo per la configurazione. Seleziona **[!UICONTROL Servizio Web SOAP]** dal menu a discesa **[!UICONTROL Tipo di servizio]**. Se necessario, sfoglia e seleziona un&#39;immagine di anteprima per la configurazione, quindi seleziona **[!UICONTROL Avanti]**.
 1. Specificare quanto segue per il servizio Web SOAP:
 
    * URL WSDL per il servizio Web.
    * Endpoint servizio. Specificare un valore in questo campo per sostituire l&#39;endpoint del servizio indicato in WSDL.
-   * Seleziona il tipo di autenticazione: Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base o autenticazione personalizzata: per accedere al servizio SOAP e fornire i dettagli per l&#39;autenticazione.
+   * Selezionare il tipo di autenticazione, ovvero Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), Autenticazione di base o Autenticazione personalizzata, per accedere al servizio SOAP e fornire i dettagli per l&#39;autenticazione.
 
      <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
      <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
 
      <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. Seleziona **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio web SOAP.
+1. Seleziona **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio Web SOAP.
 
 ### Abilitare l&#39;utilizzo delle istruzioni di importazione nel WSDL dei servizi Web SOAP {#enable-import-statements}
 
-È possibile specificare un&#39;espressione regolare che funga da filtro per gli URL assoluti consentiti come istruzioni di importazione nel WSDL dei servizi Web SOAP. Per impostazione predefinita, in questo campo non è presente alcun valore. Di conseguenza, [!DNL Experience Manager] blocca tutte le istruzioni di importazione disponibili in WSDL. Se si specifica `.*` come valore in questo campo, [!DNL Experience Manager] consente tutte le istruzioni di importazione.
+È possibile specificare un&#39;espressione regolare che funga da filtro per gli URL assoluti consentiti come istruzioni di importazione in WSDL dei servizi Web SOAP. Per impostazione predefinita, in questo campo non è presente alcun valore. [!DNL Experience Manager] blocca pertanto tutte le istruzioni di importazione disponibili in WSDL. Se si specifica `.*` come valore in questo campo, [!DNL Experience Manager] consente tutte le istruzioni di importazione.
 
-Imposta il `importAllowlistPattern` proprietà del **[!UICONTROL Modello dati modulo SOAP Web Services Importa Inserisco nell&#39;elenco Consentiti]** per specificare l&#39;espressione regolare. Il seguente file JSON mostra un esempio:
+Impostare la proprietà `importAllowlistPattern` della configurazione **[!UICONTROL Modello dati modulo SOAP Servizi Web Import Inserisce nell&#39;elenco Consentiti]** per specificare l&#39;espressione regolare. Il seguente file JSON mostra un esempio:
 
 ```json
 {
@@ -258,34 +258,34 @@ Imposta il `importAllowlistPattern` proprietà del **[!UICONTROL Modello dati mo
 }
 ```
 
-Per impostare i valori di una configurazione: [Generare configurazioni OSGi utilizzando l’SDK per AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), e [distribuire la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) all’istanza di Cloud Service.
+Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando l&#39;SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza di Cloud Service.
 
 ## Configurare i servizi OData {#config-odata}
 
-Un servizio OData è identificato dall&#39;URL radice del servizio. Per configurare un servizio OData in [!DNL Experience Manager] as a Cloud Service, assicurati di disporre dell’URL principale del servizio ed effettua le seguenti operazioni:
+Un servizio OData è identificato dall&#39;URL radice del servizio. Per configurare un servizio OData in [!DNL Experience Manager] as a Cloud Service, verificare di disporre dell&#39;URL principale del servizio e procedere come segue:
 
 >[!NOTE]
 >
-> Il modello dati del modulo supporta [OData versione 4](https://www.odata.org/documentation/).
->Per una guida dettagliata alla configurazione di [!DNL Microsoft®® Dynamics 365], online o on-premise, vedi [[!DNL Microsoft® Dynamics] Configurazione OData](ms-dynamics-odata-configuration.md).
+> Il modello dati modulo supporta [OData versione 4](https://www.odata.org/documentation/).
+>Per una guida dettagliata alla configurazione di [!DNL Microsoft®® Dynamics 365], online o on-premise, vedere [[!DNL Microsoft® Dynamics] Configurazione OData](ms-dynamics-odata-configuration.md).
 
 1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
-   Consulta [Configurare la cartella per le configurazioni del servizio cloud](#cloud-folder) per informazioni sulla creazione e la configurazione di una cartella per le configurazioni di cloud service.
+   Per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud, consulta [Configurare la cartella per le configurazioni del servizio cloud](#cloud-folder).
 
-1. Seleziona **[!UICONTROL Crea]** per aprire **[!UICONTROL Creazione guidata configurazione origine dati]**. Specifica un nome e, facoltativamente, un titolo per la configurazione, quindi seleziona **[!UICONTROL Servizio OData]** dal **[!UICONTROL Tipo di servizio]** , sfogliare e selezionare un&#39;immagine di miniatura per la configurazione e selezionare **[!UICONTROL Successivo]**.
+1. Selezionare **[!UICONTROL Crea]** per aprire la **[!UICONTROL Creazione guidata configurazione Data Source]**. Specifica un nome e, facoltativamente, un titolo per la configurazione. Seleziona **[!UICONTROL Servizio OData]** dal menu a discesa **[!UICONTROL Tipo di servizio]**. Se necessario, sfoglia e seleziona un&#39;immagine di anteprima per la configurazione, quindi seleziona **[!UICONTROL Successivo]**.
 1. Specificare i dettagli seguenti per il servizio OData:
 
    * URL principale del servizio per il servizio OData da configurare.
-   * Seleziona il tipo di autenticazione: Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), autenticazione di base, chiave API o autenticazione personalizzata: per accedere al servizio OData e fornire di conseguenza i dettagli per l&#39;autenticazione.
+   * Selezionare il tipo di autenticazione, ovvero Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), Autenticazione di base, Chiave API o Autenticazione personalizzata, per accedere al servizio OData e fornire i dettagli per l&#39;autenticazione.
 
-   Se si seleziona **[!UICONTROL Chiave API]** come tipo di autenticazione, specifica il valore per la chiave API. La chiave API può essere inviata come intestazione di richiesta o come parametro di query. Seleziona una di queste opzioni dalla **[!UICONTROL Posizione]** e specificare il nome dell&#39;intestazione o il parametro di query nell&#39; **[!UICONTROL Nome parametro]** di conseguenza.
+   Se si seleziona **[!UICONTROL Chiave API]** come tipo di autenticazione, specificare il valore per la chiave API. La chiave API può essere inviata come intestazione di richiesta o come parametro di query. Seleziona una di queste opzioni dall&#39;elenco a discesa **[!UICONTROL Posizione]** e specifica di conseguenza il nome dell&#39;intestazione o il parametro della query nel campo **[!UICONTROL Nome parametro]**.
 
    >[!NOTE]
    >
-   >Seleziona il tipo di autenticazione OAuth 2.0 con cui connetterti [!DNL Microsoft®® Dynamics] servizi che utilizzano l&#39;endpoint OData come radice del servizio.
+   >Selezionare il tipo di autenticazione OAuth 2.0 per connettersi ai servizi [!DNL Microsoft®® Dynamics] utilizzando l&#39;endpoint OData come radice del servizio.
 
-1. Seleziona **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio OData.
+1. Selezionare **[!UICONTROL Crea]** per creare la configurazione cloud per il servizio OData.
 
 <!--
 ## Configure Microsoft® SharePoint List {#config-sharepoint-list}
@@ -328,7 +328,7 @@ When you enable mutual authentication for form data model (FDM), both the data s
 
 ## Passaggi successivi {#next-steps}
 
-Hai configurato le origini dati. È quindi possibile creare un modello dati modulo (FDM) oppure, se è già stato creato un modello dati modulo (FDM) senza un&#39;origine dati, associarlo alle origini dati configurate. Consulta [Crea modello dati modulo](create-form-data-models.md) per i dettagli.
+Hai configurato le origini dati. È quindi possibile creare un modello dati modulo (FDM) oppure, se è già stato creato un modello dati modulo (FDM) senza un&#39;origine dati, associarlo alle origini dati configurate. Per ulteriori dettagli, vedere [Crea modello dati modulo](create-form-data-models.md).
 
 
 <!--

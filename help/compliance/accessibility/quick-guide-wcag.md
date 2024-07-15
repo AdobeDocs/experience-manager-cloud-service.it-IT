@@ -29,7 +29,7 @@ Le linee guida WCAG 2.1 sono costituite da un insieme di criteri di successo e l
 
 Ad esempio, la descrizione di un’immagine (o di qualsiasi altro contenuto non testuale) tramite l’attributo `alt` nel linguaggio HTML offre notevoli vantaggi alle persone non vedenti o ipovedenti. La descrizione testuale contenuta nell’attributo `alt` può essere convertita in un output vocale o trasmessa a display Braille elettronici aggiornabili.
 
-Inoltre, la conformità alle linee guida WCAG 2.1 può offrire vantaggi anche ad altri beneficiari, tra cui persone potenzialmente interessate *con disabilità situazionale*. persone che, a causa di fattori quali tecnologia di navigazione, velocità della connessione di rete o ambiente di navigazione, possono incontrare barriere simili alle persone con disabilità.
+Inoltre, la conformità alle linee guida WCAG 2.1 può offrire vantaggi anche ad altri beneficiari, tra cui persone con *disabilità situazionale*. persone che, a causa di fattori quali tecnologia di navigazione, velocità della connessione di rete o ambiente di navigazione, possono incontrare barriere simili alle persone con disabilità.
 
 Utilizzando Adobe Experience Manager, gli autori di contenuti e/o i proprietari di siti web possono creare contenuti web che soddisfano i criteri di successo WCAG 2.1 pertinenti di livello A e AA.
 

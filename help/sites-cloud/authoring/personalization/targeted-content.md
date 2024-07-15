@@ -100,7 +100,7 @@ Per aggiungere un’attività:
    >
    >Se crei un marchio in un altro modo, assicurati che il nodo `/campaigns/<brand>/master` esista, per evitare errori quando tenterai di creare un’attività.
 
-1. Seleziona + accanto al **Attività** menu a discesa.
+1. Seleziona + accanto al menu a discesa **Attività**.
 1. Digita un nome per l’attività.
 
    >[!NOTE]
@@ -136,13 +136,13 @@ Per aggiungere un’attività:
 
 1. Nel menu a discesa **Marchio**, seleziona il marchio che contiene l’attività su cui stai lavorando.
 1. Nel menu a discesa **Attività**, seleziona l’attività per la quale stai creando contenuti mirati.
-1. Per visualizzare i controlli che ti guidano attraverso il processo di targeting, seleziona **Inizia impostazione destinazione**.
+1. Per visualizzare i controlli che ti guidano attraverso il processo di targeting, seleziona **Inizia targeting**.
 
    ![Inizia il targeting](../assets/targeted-start-targeting.png)
 
    >[!NOTE]
    >
-   >Per modificare l’attività con cui stai lavorando, seleziona **Indietro**.
+   >Per modificare l&#39;attività con cui si sta lavorando, selezionare **Indietro**.
 
 ## Creazione: authoring di esperienze {#create-authoring-the-experiences}
 
@@ -194,8 +194,8 @@ Utilizzando il passaggio Crea del [processo di targeting](#the-targeting-process
 
 Per aggiungere un&#39;esperienza:
 
-1. Per aggiungere un’esperienza, seleziona **+** **Aggiungi targeting esperienza** che viene visualizzato sotto le esperienze esistenti nel **Tipi di pubblico** riquadro.
-1. Seleziona un pubblico. Per impostazione predefinita, questo nome è il nome dell’esperienza. Se necessario, puoi digitare un altro nome. Seleziona **OK**.
+1. Per aggiungere un&#39;esperienza, seleziona **+** **Aggiungi targeting esperienza** che viene visualizzato sotto le esperienze esistenti nel riquadro **Tipi di pubblico**.
+1. Seleziona un pubblico. Per impostazione predefinita, questo nome è il nome dell’esperienza. Se necessario, puoi digitare un altro nome. Selezionare **OK**.
 
 #### Rimozione di esperienze utilizzando la modalità di targeting {#removing-experiences-using-targeting-mode}
 
@@ -295,7 +295,7 @@ Quando aggiungi un componente al componente di destinazione, questo fornisce con
 
 Puoi aggiungere un componente di destinazione alla pagina in modalità Modifica o Target. Puoi aggiungere componenti al componente di destinazione solo in modalità Target. Il componente di destinazione appartiene al gruppo di componenti Personalizzazione.
 
-In caso di modifica del contenuto con targeting, devi selezionare **Inizia impostazione destinazione** prima di poterlo fare.
+In caso di modifica del contenuto con targeting, è necessario selezionare **Inizia targeting** prima di poterlo fare.
 
 1. Trascina il componente di destinazione nella pagina in cui desideri visualizzare l’offerta.
 1. Per impostazione predefinita, non è impostato alcun ID posizione. Selezionate la ruota di comando di configurazione per impostare la posizione.
@@ -356,11 +356,11 @@ Non è possibile aggiungere offerte dalla libreria all’esperienza predefinita.
 
    Il selettore delle offerte consente di sfogliare o filtrare le offerte. Durante la navigazione o il filtraggio, puoi anche ordinare le offerte e modificarne la modalità di visualizzazione. Il numero in alto a destra indica quante offerte sono disponibili nella libreria corrente.
 
-   * Seleziona **Sfoglia** per passare a un&#39;altra cartella. Il pannello di navigazione si apre e puoi fare clic sulla freccia per analizzare in profondità le cartelle. Seleziona **Sfoglia** per chiudere il riquadro di spostamento.
+   * Seleziona **Sfoglia** per passare a un&#39;altra cartella. Il pannello di navigazione si apre e puoi fare clic sulla freccia per analizzare in profondità le cartelle. Seleziona di nuovo **Sfoglia** per chiudere il riquadro di spostamento.
 
    ![Sfoglia contenuto](../assets/targeted-select-content-browse.png)
 
-   * Seleziona **Filtro** per filtrare le offerte in base a parole chiave o tag. Immetti le parole chiave e seleziona i tag dal menu a discesa. Seleziona **Filtro** per chiudere il riquadro di filtro.
+   * Seleziona **Filtro** per filtrare le offerte in base alle parole chiave o ai tag. Immetti le parole chiave e seleziona i tag dal menu a discesa. Seleziona di nuovo **Filtro** per chiudere il riquadro di filtraggio.
 
    ![Filtrare il contenuto](../assets/targeted-filter.png)
 
@@ -368,7 +368,7 @@ Non è possibile aggiungere offerte dalla libreria all’esperienza predefinita.
 
    ![Ordinamento dei filtri](../assets/targeted-filter-sort.png)
 
-   Seleziona l’icona accanto a **Visualizza come** per visualizzare le offerte come sezioni o come elenco.
+   Seleziona l&#39;icona accanto a **Visualizza come** per visualizzare le offerte come riquadri o come elenco.
 
    ![Pulsante Visualizza come](../assets/targeted-view-as-button.png)
 
@@ -379,7 +379,7 @@ Aggiungi un’offerta personalizzata alla [libreria di offerte](/help/sites-clou
 Per ulteriori informazioni sull’uso della console delle offerte per creare un’offerta riutilizzabile, consulta [Aggiunta di un’offerta a una libreria di offerte](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
 
 1. Seleziona l’esperienza per visualizzare l’offerta personalizzata.
-1. Seleziona l’offerta personalizzata per visualizzare il menu dell’offerta, quindi seleziona la **Salva Offerta Nella Libreria Di Offerte** icona.
+1. Seleziona l&#39;offerta personalizzata per visualizzare il menu dell&#39;offerta, quindi seleziona l&#39;icona **Salva offerta nella libreria di offerte**.
 
    ![Salva l&#39;offerta nella libreria di offerte](../assets/targeted-save-offer-library-button.png)
 
@@ -427,8 +427,8 @@ Un pubblico non deve essere utilizzato da più di un’esperienza. Accanto a un�
 Utilizza la procedura seguente per associare un’esperienza a un pubblico quando utilizzi il targeting AEM (o il targeting dell’esperienza Adobe Target):
 
 1. Seleziona la freccia a discesa accanto alla casella del pubblico mappato all&#39;esperienza.
-1. (Facoltativo) Seleziona **Modifica** quindi digitare una parola chiave per cercare il segmento desiderato.
-1. Nell’elenco del pubblico, seleziona il pubblico e fai clic su **OK**.
+1. (Facoltativo) Selezionare **Modifica**, quindi digitare una parola chiave per cercare il segmento desiderato.
+1. Nell&#39;elenco dei tipi di pubblico, selezionare il pubblico e selezionare **OK**.
 
 ### Se utilizzi i test A/B (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
 
@@ -577,7 +577,7 @@ Per simulare l’esperienza del visitatore, utilizza i seguenti strumenti:
 * Attività di simulazione in modalità Targeting: la pagina visualizza le offerte per l’utente attualmente selezionate in Context Hub. Puoi modificare le offerte con targeting per l’utente.
 * Modalità Anteprima: utilizza Context Hub per selezionare gli utenti e le posizioni che soddisfano i criteri dei segmenti su cui si basano le esperienze. Quando le selezioni di ContextHub cambiano, il contenuto di destinazione cambia di conseguenza.
 
-1. Per passare alla modalità Anteprima, sulla barra degli strumenti seleziona **Anteprima**.
+1. Per passare alla modalità Anteprima, sulla barra degli strumenti selezionare **Anteprima**.
 1. Sulla barra degli strumenti, seleziona l’icona Context Hub.
 
    ![Pulsante ContextHub](../assets/targeted-contexthub-button.png)

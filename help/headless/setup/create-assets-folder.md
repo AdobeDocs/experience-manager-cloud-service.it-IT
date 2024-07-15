@@ -27,8 +27,8 @@ Le cartelle di risorse vengono utilizzate per [organizzare le risorse di contenu
 
 Di solito, un amministratore deve creare cartelle solo occasionalmente, per organizzare i contenuti al momento della creazione. Ai fini di questa guida introduttiva, è sufficiente creare una sola cartella.
 
-1. Accedi a AEM as a Cloud Service e dal menu principale seleziona **Navigazione > Risorse > File**.
-1. Seleziona **Crea > Cartella**.
+1. Accedi ad AEM as a Cloud Service e dal menu principale seleziona **Navigazione > Assets > File**.
+1. Selezionare **Crea > Cartella**.
 1. Specifica il **titolo** e il **nome** da assegnare alla cartella.
    * Il **titolo** deve essere descrittivo.
    * Il **nome** diventa il nome del nodo nell’archivio.
@@ -41,7 +41,7 @@ Di solito, un amministratore deve creare cartelle solo occasionalmente, per orga
 1. In **Configurazione cloud** seleziona la [configurazione creata in precedenza.](create-configuration.md)
    ![Configurare la cartella delle risorse](../assets/assets-folder-configure.png)
 1. Seleziona **Salva e chiudi**.
-1. Seleziona **OK** nella finestra di conferma.
+1. Selezionare **OK** nella finestra di conferma.
 
    ![Finestra di conferma](../assets/assets-folder-confirmation.png)
 

@@ -27,7 +27,7 @@ Se hai familiarità con i [modelli di pagina in un’implementazione completa di
 
 Un amministratore deve creare una configurazione solo una volta oppure, molto raramente, se è necessaria una nuova area di lavoro per organizzare i modelli di contenuto. Ai fini di questa guida introduttiva, è sufficiente creare una sola configurazione.
 
-1. Accedi a AEM as a Cloud Service e dal menu principale seleziona **Strumenti > Generale > Browser configurazioni**.
+1. Accedi ad AEM as a Cloud Service e dal menu principale seleziona **Strumenti > Generale > Browser configurazioni**.
 1. Specifica il **titolo** e il **nome** da assegnare alla configurazione.
    * Il **titolo** deve essere descrittivo.
    * Il **nome** diventa il nome del nodo nell’archivio.

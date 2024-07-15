@@ -113,7 +113,7 @@ Per inviare un semplice messaggio solo quando la build viene eseguita all’este
 
 >[!NOTE]
 >
->Gli artefatti di un archivio Maven protetto da password devono essere utilizzati con cautela perché il codice distribuito tramite questo meccanismo non viene attualmente eseguito [regole di qualità del codice](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementato nei gate di qualità di Cloud Manager. Per questo motivo, è consigliabile utilizzarlo esclusivamente in rari casi e solo per il codice non collegato a AEM. Si consiglia inoltre di distribuire le origini Java e l’intero codice sorgente del progetto insieme al binario.
+>Gli artefatti di un archivio Maven protetto da password devono essere utilizzati con cautela perché il codice distribuito tramite questo meccanismo non viene attualmente eseguito tramite [regole di qualità del codice](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementate nei gate di qualità di Cloud Manager. Per questo motivo, è consigliabile utilizzarlo esclusivamente in rari casi e solo per il codice non collegato a AEM. Si consiglia inoltre di distribuire le origini Java e l’intero codice sorgente del progetto insieme al binario.
 
 Per utilizzare un archivio Maven protetto da password in Cloud Manager:
 
@@ -123,7 +123,7 @@ Per utilizzare un archivio Maven protetto da password in Cloud Manager:
 All’avvio del processo di build di Cloud Manager:
 
 * L’elemento `<servers>` in questo file viene unito al file predefinito `settings.xml` fornito da Cloud Manager.
-   * ID server che iniziano con `adobe` e `cloud-manager` sono considerati riservati. Non utilizzarli su server personalizzati.
+   * Gli ID server che iniziano con `adobe` e `cloud-manager` sono considerati riservati. Non utilizzarli su server personalizzati.
    * Per gli ID server che non corrispondono a uno di questi prefissi o all’ID predefinito `central`, il mirroring non viene mai eseguito da Cloud Manager.
 * Quando questo file è presente, si fa riferimento all’ID server da un `<repository>` e/o da un elemento del `<pluginRepository>` contenuto nel file `pom.xml`.
 * In generale, questi elementi di `<repository>` e/o di `<pluginRepository>` sono contenuti in un [profilo specifico di Cloud Manager](#activating-maven-profiles-in-cloud-manager), anche se ciò non è strettamente necessario.

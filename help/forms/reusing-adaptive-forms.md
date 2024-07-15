@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Riutilizzare le proprietà dei metadati di un modulo adattivo {#reusing-adaptive-forms}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 
 | Versione | Collegamento articolo |
@@ -32,7 +32,7 @@ Se desideri utilizzare alcune delle proprietà di un modulo adattivo esistente p
 
 Copiare un modulo adattivo utilizzando uno dei seguenti approcci:
 
-1. Fai clic su Copia ![aem6forms_copy](assets/aem6forms_copy.png) da Azioni rapide.
+1. Fai clic sull&#39;icona Copia ![aem6forms_copy](assets/aem6forms_copy.png) da Azioni rapide.
 
    >[!NOTE]
    >
@@ -40,7 +40,7 @@ Copiare un modulo adattivo utilizzando uno dei seguenti approcci:
 
 1. Seleziona il modulo adattivo. Il processo di selezione è diverso per le diverse viste.
 
-   Se ti trovi nella vista a schede, passa alla modalità di selezione facendo clic sulla selezione ![aem6forms_check-circle](assets/aem6forms_check-circle.png) e fai clic su tutto il Forms adattivo da copiare.
+   Se ti trovi nella vista a schede, passa alla modalità di selezione facendo clic sull&#39;icona della selezione ![aem6forms_check-circle](assets/aem6forms_check-circle.png) e fai clic su tutti i Forms adattivi da copiare.
 
    Se ti trovi nella vista a elenco, fai clic sulle caselle di controllo di tutti i Forms adattivi per selezionarle.
 
@@ -48,15 +48,15 @@ Copiare un modulo adattivo utilizzando uno dei seguenti approcci:
    >
    >Tutte le risorse selezionate devono essere Forms adattivo perché la funzionalità di copia e incolla è supportata solo per Forms adattivo e tutte le risorse selezionate devono essere presenti nella stessa cartella.
 
-   Dopo aver selezionato le risorse, fai clic sulla copia ![aem6forms_copy](assets/aem6forms_copy.png) presente nella barra degli strumenti per copiare il modulo adattivo selezionato.
+   Dopo aver selezionato le risorse, fai clic sull&#39;icona Copia ![aem6forms_copy](assets/aem6forms_copy.png) presente nella barra degli strumenti per copiare il modulo adattivo selezionato.
 
 ## Incollare un modulo adattivo {#paste-an-adaptive-form}
 
-Facendo clic sull&#39;azione di copia, si esce automaticamente dalla modalità di selezione e si esegue l&#39;operazione Incolla ![Incolla](assets/Smock_Paste_18_N.svg) visibile. Ora vai al percorso della cartella desiderato e fai clic sul pulsante Incolla ![Incolla](assets/Smock_Paste_18_N.svg) per incollare il modulo adattivo copiato.
+Facendo clic sull&#39;azione di copia si esce automaticamente dalla modalità di selezione e si rende visibile l&#39;icona Incolla ![Incolla](assets/Smock_Paste_18_N.svg). Vai al percorso della cartella desiderato e fai clic sull&#39;icona Incolla ![Incolla](assets/Smock_Paste_18_N.svg) per incollare il modulo adattivo copiato.
 
 Se si sta incollando nella stessa cartella o un altro file con lo stesso nome di nodo (con cui è memorizzato nell&#39;archivio di CRX) esiste in questa cartella di destinazione, 1 viene aggiunto al suffisso (ad esempio, myaf diventa myaf1 e se myaf1 esiste nella stessa posizione, myaf diventa myaf2. Tutte le altre proprietà rimangono invariate rispetto al modulo adattivo originale.
 
-Dopo aver fatto clic sull’icona Incolla ![Incolla](assets/Smock_Paste_18_N.svg) icona, sarà di nuovo nascosto. È possibile incollare una sola volta. Per creare di nuovo una copia della stessa risorsa, copiala nuovamente.
+Dopo aver fatto clic sull&#39;icona Incolla ![Incolla](assets/Smock_Paste_18_N.svg), questa verrà nuovamente nascosta. È possibile incollare una sola volta. Per creare di nuovo una copia della stessa risorsa, copiala nuovamente.
 
 ## Modifica il contenuto del nuovo modulo adattivo {#change-contents-of-new-adaptive-form}
 
@@ -64,7 +64,7 @@ Il contenuto di un Forms adattivo incollato può essere modificato utilizzando i
 
 1. **Modifica proprietà metadati:**
 
-   Puoi modificare le proprietà dei metadati del modulo adattivo, ad esempio titolo e descrizione. Per ulteriori dettagli sulle proprietà dei metadati e su come modificarle, consulta [Gestione dei metadati del modulo](manage-form-metadata.md)
+   Puoi modificare le proprietà dei metadati del modulo adattivo, ad esempio titolo e descrizione. Per ulteriori dettagli sulle proprietà dei metadati e su come modificarle, vedi [Gestione dei metadati del modulo](manage-form-metadata.md)
 
 1. **Modifica XFA/XSD per Forms adattivo basato su XFA/XSD:**
 

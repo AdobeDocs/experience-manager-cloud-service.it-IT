@@ -1,6 +1,6 @@
 ---
 title: Panoramica dello strumento Content Transfer (Trasferimento contenuti)
-description: Scopri come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per trasferire contenuti da un’istanza AEM on-premise a AEM as a Cloud Service
+description: Scopri come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per trasferire contenuti da un’istanza AEM on-premise ad AEM as a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
@@ -21,7 +21,7 @@ ht-degree: 52%
 
 Lo strumento Content Transfer (Trasferimento contenuti) è uno strumento sviluppato da Adobe che può essere utilizzato per avviare la migrazione dei contenuti esistenti da un’istanza AEM di origine (on-premise o AMS) all’istanza AEM Cloud Service di destinazione.
 
-Questo strumento trasferisce automaticamente anche entità principali (utenti o gruppi).  Consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) per ulteriori informazioni.
+Questo strumento trasferisce automaticamente anche entità principali (utenti o gruppi).  Per ulteriori informazioni, vedere [Mappatura utenti e migrazione utenti/gruppi/ruoli](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 Lo strumento Content Transfer (Trasferimento contenuti) integra il processo di trasferimento dei contenuti con Cloud Acceleration Manager. In questo modo l’utente dispone di tutti i vantaggi che offre:
 
@@ -36,10 +36,10 @@ Il trasferimento dei contenuti prevede due fasi:
 
 1. **Estrazione**: per estrazione si intende l’estrazione dei contenuti dall’istanza AEM di origine in un’area temporanea denominata *set di migrazione*. Un *set di migrazione* è un’area di archiviazione cloud fornita da Adobe in cui vengono archiviati temporaneamente i contenuti trasferiti tra l’istanza AEM di origine e l’istanza AEM di Cloud Service.
 
-   Consulta [Processo di estrazione nel trasferimento dei contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) per ulteriori dettagli.
+   Per ulteriori dettagli, vedere [Processo di estrazione nel trasferimento dei contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
 
    >[!NOTE]
-   >La mappatura degli utenti viene ora eseguita automaticamente come parte della fase di estrazione sull’autore (ma può essere facoltativamente disabilitata sull’autore o abilitata sulla pubblicazione). Consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) per ulteriori dettagli.
+   >La mappatura degli utenti viene ora eseguita automaticamente come parte della fase di estrazione sull’autore (ma può essere facoltativamente disabilitata sull’autore o abilitata sulla pubblicazione). Per ulteriori dettagli, vedere [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 1. **Acquisizione**: per acquisizione si intende l’acquisizione dei contenuti dal *set di migrazione* nell’istanza Cloud Service di destinazione.
 
@@ -57,9 +57,9 @@ Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione 
 >[!NOTE]
 >Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service.
 
-Nella fase di estrazione, per ***integrare*** un set di migrazione esistente, l’opzione di *sovrascrittura* deve essere disattivata. Consulta [Estrazione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) per ulteriori dettagli.
+Nella fase di estrazione, per ***integrare*** un set di migrazione esistente, l’opzione di *sovrascrittura* deve essere disattivata. Per ulteriori dettagli, vedi [Estrazione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
 
-Nella fase di acquisizione, per applicare il contenuto delta sul contenuto corrente, l’opzione *Cancella* deve essere disattivata. Consulta [Acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) per ulteriori dettagli.
+Nella fase di acquisizione, per applicare il contenuto delta sul contenuto corrente, l’opzione *Cancella* deve essere disattivata. Per ulteriori dettagli, vedi [Acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process).
 
 ## Scadenza set di migrazione {#migration-set-expiry}
 

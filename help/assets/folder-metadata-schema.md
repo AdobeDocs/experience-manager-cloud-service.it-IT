@@ -20,8 +20,8 @@ ht-degree: 10%
 
 Utilizza l’editor di Forms per lo schema metadati delle cartelle per creare e modificare gli schemi di metadati per le cartelle.
 
-1. Seleziona la [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati cartelle]**.
-1. Nella pagina Forms dello schema metadati cartelle, seleziona **[!UICONTROL Crea]**.
+1. Seleziona il logo [!DNL Experience Manager] e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Schemi metadati cartelle]**.
+1. Nella pagina Forms dello schema metadati cartelle, selezionare **[!UICONTROL Crea]**.
 1. Specificare un nome per il modulo e selezionare **[!UICONTROL Crea]**. Il nuovo modulo schema è elencato nella pagina Schema Forms.
 
 ## Modifica moduli schema metadati cartelle {#edit-folder-metadata-schema-forms}
@@ -33,30 +33,30 @@ Puoi modificare un modulo schema metadati appena aggiunto o esistente, che inclu
 
 Puoi mappare/configurare questi elementi modulo su un campo all’interno di un nodo di metadati nell’archivio CRX. È possibile aggiungere nuove schede o elementi del modulo al modulo schema metadati.
 
-1. Nella pagina Schema Forms selezionare il modulo creato, quindi selezionare **[!UICONTROL Modifica]** dalla barra degli strumenti.
-1. Nella pagina Editor schema metadati cartelle, seleziona la **[!UICONTROL +]** per aggiungere una scheda al modulo. Per rinominare la scheda, selezionate il nome di default e specificate il nuovo nome in **[!UICONTROL Impostazioni]**.
+1. Nella pagina Forms schema, seleziona il modulo creato, quindi seleziona l&#39;icona **[!UICONTROL Modifica]** dalla barra degli strumenti.
+1. Nella pagina Editor schema metadati cartelle selezionare l&#39;icona **[!UICONTROL +]** per aggiungere una scheda al modulo. Per rinominare la scheda, selezionare il nome predefinito e specificare il nuovo nome in **[!UICONTROL Impostazioni]**.
 
-   ![custom_tab](assets/custom_tab.png)
+   ![scheda_personalizzata](assets/custom_tab.png)
 
-   Per aggiungere altre schede, seleziona la **[!UICONTROL +]** icona. Seleziona **[!UICONTROL X]** per eliminare una scheda.
+   Per aggiungere altre schede, selezionare l&#39;icona **[!UICONTROL +]**. Selezionare **[!UICONTROL X]** per eliminare una scheda.
 
-1. Nella scheda attiva, aggiungi uno o più componenti della **[!UICONTROL Genera modulo]** scheda.
+1. Nella scheda attiva, aggiungi uno o più componenti dalla scheda **[!UICONTROL Genera modulo]**.
 
-   ![add_components](assets/adding_components.png)
+   ![aggiunta_componenti](assets/adding_components.png)
 
    Se crei più schede, seleziona una scheda particolare per aggiungere componenti.
 
-1. Per configurare un componente, selezionalo e modificane le proprietà in **[!UICONTROL Impostazioni]** scheda.
+1. Per configurare un componente, selezionarlo e modificarne le proprietà nella scheda **[!UICONTROL Impostazioni]**.
 
-   Se necessario, elimina un componente dal **[!UICONTROL Impostazioni]** scheda.
+   Se necessario, eliminare un componente dalla scheda **[!UICONTROL Impostazioni]**.
 
    ![configure_properties](assets/configure_properties.png)
 
-1. Seleziona **[!UICONTROL Salva]** dalla barra degli strumenti per salvare le modifiche.
+1. Seleziona **[!UICONTROL Salva]** nella barra degli strumenti per salvare le modifiche.
 
 ### Componenti per la creazione di moduli {#components-to-build-forms}
 
-Il **[!UICONTROL Genera modulo]** scheda elenca gli elementi del modulo utilizzati nel modulo schema metadati cartelle. Il **[!UICONTROL Impostazioni]** nella scheda vengono visualizzati gli attributi di ogni elemento selezionato nel **[!UICONTROL Genera modulo]** scheda. Di seguito è riportato un elenco degli elementi modulo disponibili nel **[!UICONTROL Genera modulo]** scheda:
+Nella scheda **[!UICONTROL Genera modulo]** sono elencati gli elementi del modulo utilizzati nel modulo schema metadati cartelle. Nella scheda **[!UICONTROL Impostazioni]** vengono visualizzati gli attributi di ogni elemento selezionato nella scheda **[!UICONTROL Genera modulo]**. Elenco degli elementi modulo disponibili nella scheda **[!UICONTROL Genera modulo]**:
 
 <table>
  <tbody>
@@ -101,27 +101,27 @@ Il **[!UICONTROL Genera modulo]** scheda elenca gli elementi del modulo utilizza
 
 ### Modifica di elementi modulo {#editing-form-items}
 
-Per modificare le proprietà degli elementi modulo, seleziona il componente e modifica tutte o un sottoinsieme delle seguenti proprietà in **[!UICONTROL Impostazioni]** scheda. Si consiglia di mappare un solo campo a una determinata proprietà nello schema metadati. In caso contrario, il sistema seleziona l’ultimo campo aggiunto mappato alla proprietà.
+Per modificare le proprietà degli elementi del modulo, selezionare il componente e modificare tutte o un sottoinsieme delle seguenti proprietà nella scheda **[!UICONTROL Impostazioni]**. Si consiglia di mappare un solo campo a una determinata proprietà nello schema metadati. In caso contrario, il sistema seleziona l’ultimo campo aggiunto mappato alla proprietà.
 
 **[!UICONTROL Etichetta campo]**: nome della proprietà dei metadati visualizzata nella pagina delle proprietà della cartella.
 
-**[!UICONTROL Mappa su proprietà]**: questa proprietà specifica il percorso relativo del nodo della cartella nell’archivio CRX in cui viene salvato. Inizia con &quot;**./**&quot;, che indica che il percorso si trova sotto il nodo della cartella.
+**[!UICONTROL Mappa su proprietà]**: questa proprietà specifica il percorso relativo del nodo della cartella nell&#39;archivio di CRX in cui viene salvato. Inizia con &quot;**./**&quot;, che indica che il percorso si trova nel nodo della cartella.
 
 Di seguito sono riportati alcuni esempi di valori validi per una proprietà:
 
-* `./jcr:content/metadata/dc:title`: memorizza il valore come proprietà nel nodo di metadati della cartella `dc:title`.
+* `./jcr:content/metadata/dc:title`: memorizza il valore nel nodo di metadati della cartella come proprietà `dc:title`.
 
-* `./jcr:created`: memorizza la data e l’ora di creazione di una risorsa. È una proprietà protetta. Se configuri queste proprietà, l’Adobe consiglia di contrassegnarle come [!UICONTROL Disattiva modifica].
+* `./jcr:created`: memorizza la data e l&#39;ora di creazione di una risorsa. È una proprietà protetta. Se configuri queste proprietà, l&#39;Adobe consiglia di contrassegnarle come [!UICONTROL Disabilita modifica].
 
 Per garantire che il componente sia visualizzato correttamente nel modulo schema metadati, non includere uno spazio nel percorso della proprietà.
 
 **[!UICONTROL Percorso JSON]**: utilizzalo per specificare il percorso del file JSON in cui specificare le coppie chiave-valore per le opzioni.
 
-**[!UICONTROL Segnaposto]**: utilizza questa proprietà per specificare il testo segnaposto rilevante relativo alla proprietà dei metadati.
+**[!UICONTROL Segnaposto]**: utilizzare questa proprietà per specificare il testo segnaposto relativo alla proprietà dei metadati.
 
-**[!UICONTROL Scelte]**: utilizzare questa proprietà per specificare le scelte in un elenco.
+**[!UICONTROL Opzioni]**: utilizzare questa proprietà per specificare le scelte in un elenco.
 
-**[!UICONTROL Descrizione]**: utilizza questa proprietà per aggiungere una breve descrizione del componente metadati.
+**[!UICONTROL Descrizione]**: utilizzare questa proprietà per aggiungere una breve descrizione del componente metadati.
 
 **[!UICONTROL Classe]**: classe oggetto a cui è associata la proprietà.
 
@@ -129,47 +129,47 @@ Per garantire che il componente sia visualizzato correttamente nel modulo schema
 
 Puoi eliminare i moduli schema metadati cartelle dalla pagina Forms dello schema metadati cartelle. Per eliminare un modulo, selezionalo e seleziona l’icona Elimina dalla barra degli strumenti.
 
-![delete_form](assets/delete_form.png)
+![elimina_modulo](assets/delete_form.png)
 
 ## Assegnare uno schema di metadati per le cartelle {#assign-a-folder-metadata-schema}
 
 È possibile assegnare uno schema di metadati di cartella a una cartella dalla pagina Forms dello schema metadati cartelle o durante la creazione di una cartella.
 
-Se configuri uno schema di metadati per una cartella, il percorso del modulo schema viene memorizzato in `folderMetadataSchema` proprietà del nodo della cartella in .*/jcr:contenuto*.
+Se configuri uno schema di metadati per una cartella, il percorso del modulo schema viene memorizzato nella proprietà `folderMetadataSchema` del nodo della cartella in .*/jcr:content*.
 
 ### Assegnare a uno schema dalla pagina Schema metadati cartelle {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Seleziona la [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**> **[!UICONTROL Schemi metadati cartelle]**.
+1. Seleziona il logo [!DNL Experience Manager] e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]**> **[!UICONTROL Schemi metadati cartelle]**.
 1. Dalla pagina Forms schema metadati cartelle, seleziona il modulo schema da applicare a una cartella.
-1. Dalla barra degli strumenti, seleziona **[!UICONTROL Applica a cartelle]**.
+1. Dalla barra degli strumenti, selezionare **[!UICONTROL Applica a cartelle]**.
 
-1. Seleziona la cartella in cui applicare lo schema, quindi seleziona **[!UICONTROL Applica]**. Se nella cartella è già applicato uno schema metadati, un messaggio di avviso informa che stai per sovrascrivere lo schema metadati esistente. Seleziona **[!UICONTROL Sovrascrivere]**.
+1. Selezionare la cartella in cui applicare lo schema, quindi selezionare **[!UICONTROL Applica]**. Se nella cartella è già applicato uno schema metadati, un messaggio di avviso informa che stai per sovrascrivere lo schema metadati esistente. Seleziona **[!UICONTROL Sovrascrivi]**.
 1. Apri le proprietà dei metadati per la cartella a cui hai applicato lo schema metadati.
 
-   ![folder_properties](assets/folder_properties.png)
+   ![proprietà_cartella](assets/folder_properties.png)
 
-   Per visualizzare i campi dei metadati della cartella, seleziona la **[!UICONTROL Metadati cartella]** scheda.
+   Per visualizzare i campi dei metadati della cartella, selezionare la scheda **[!UICONTROL Metadati cartella]**.
 
-   ![folder_metadata_properties](assets/folder_metadata_properties.png)
+   ![proprietà_metadati_cartelle](assets/folder_metadata_properties.png)
 
 ### Assegnare uno schema durante la creazione di una cartella {#assign-a-schema-when-creating-a-folder}
 
-Puoi assegnare uno schema di metadati della cartella durante la creazione di una cartella. Se nel sistema è presente almeno uno schema di metadati di cartella, viene visualizzato un elenco aggiuntivo nel **[!UICONTROL Crea cartella]** . Puoi selezionare lo schema desiderato. Per impostazione predefinita, non è selezionato alcuno schema.
+Puoi assegnare uno schema di metadati della cartella durante la creazione di una cartella. Se nel sistema è presente almeno uno schema di metadati di cartella, nella finestra di dialogo **[!UICONTROL Crea cartella]** verrà visualizzato un elenco aggiuntivo. Puoi selezionare lo schema desiderato. Per impostazione predefinita, non è selezionato alcuno schema.
 
-1. Dalla sezione [!DNL Experience Manager Assets] interfaccia utente, selezionare **[!UICONTROL Crea]** dalla barra degli strumenti.
+1. Dall&#39;interfaccia utente di [!DNL Experience Manager Assets], selezionare **[!UICONTROL Crea]** dalla barra degli strumenti.
 1. Specifica un titolo e un nome per la cartella.
 1. Dall’elenco Schema metadati cartelle, seleziona lo schema desiderato. Quindi, seleziona **[!UICONTROL Crea]**.
 
-   ![select_schema](assets/select_schema.png)
+   ![seleziona_schema](assets/select_schema.png)
 
 1. Apri le proprietà dei metadati per la cartella a cui hai applicato lo schema metadati.
-1. Per visualizzare i campi dei metadati della cartella, seleziona la **[!UICONTROL Metadati cartella]** scheda.
+1. Per visualizzare i campi dei metadati della cartella, selezionare la scheda **[!UICONTROL Metadati cartella]**.
 
 ## Utilizzare lo schema di metadati della cartella {#use-the-folder-metadata-schema}
 
 Apri le proprietà di una cartella configurata con uno schema di metadati della cartella. Nella pagina delle proprietà della cartella viene visualizzata la scheda **[!UICONTROL Metadati cartella]**. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
 
-Inserisci i valori dei metadati nei vari campi e seleziona **[!UICONTROL Salva]** per memorizzare i valori. I valori specificati vengono memorizzati nel nodo della cartella nell’archivio CRX.
+Immetti i valori dei metadati nei vari campi e seleziona **[!UICONTROL Salva]** per memorizzare i valori. I valori specificati vengono memorizzati nel nodo della cartella nell&#39;archivio CRX.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
 

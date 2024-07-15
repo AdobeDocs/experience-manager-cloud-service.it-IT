@@ -138,7 +138,7 @@ Figura: dividere un documento di origine basato sui segnalibri in più documenti
 
 >[!NOTE]
 >
-> AEM Forms offre una varietà di font incorporati che si integrano facilmente con i file PDF. Per visualizzare l&#39;elenco dei tipi di carattere supportati: [fai clic qui](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms offre una varietà di font incorporati che si integrano facilmente con i file PDF. Per visualizzare l&#39;elenco dei caratteri supportati, [fare clic qui](/help/forms/supported-out-of-the-box-fonts.md).
 
 <!-- 
 
@@ -176,7 +176,7 @@ Il servizio di estrazione documenti consente di ottenere le proprietà di un doc
 * Estrai i diritti di utilizzo abilitati in un documento PDF, gli utenti recuperano i diritti di utilizzo abilitati o disabilitati in un documento PDF per l’estensibilità di Adobe Acrobat Reader.
 * Ottenere le informazioni sui metadati presenti in un documento PDF; i metadati sono informazioni sul documento, distinte dal contenuto del documento, ad esempio testo e grafica. L&#39;Adobe Piattaforma di metadati estensibili (XMP) è uno standard per la gestione dei metadati dei documenti. Il servizio XMP Utilities può recuperare i metadati XMP dai documenti PDF ed esportare i metadati XMP nei documenti PDF.
 
-Il [Documentazione di riferimento API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i servizi forniti dalle API. La documentazione di riferimento API è disponibile anche in formato .yaml. Puoi scaricare il file .yaml e caricarlo su Postman per verificare la funzionalità delle API.
+La [documentazione di riferimento API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i servizi forniti dalle API. La documentazione di riferimento API è disponibile anche in formato .yaml. Puoi scaricare il file .yaml e caricarlo su Postman per verificare la funzionalità delle API.
 
 <!--
 
@@ -198,7 +198,7 @@ Le API per la conversione di documenti di comunicazione consentono di convertire
 
 ### Converti PDF in XDP {#convert-pdf-to-xdp}
 
-<span class="preview"> La funzionalità Convert PDF to XDP è disponibile nel programma Early Adopter. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
+<span class="preview"> La funzionalità Converti PDF in XDP si trova nel programma Early Adopter. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
 Converte un documento PDF in un file XDP. Affinché un documento PDF possa essere convertito correttamente in un file XDP, il documento PDF deve contenere un flusso XFA nel dizionario.
 
@@ -208,7 +208,7 @@ Il servizio DocAssurance include le API Signature e Encryption:
 
 ### API di firma
 
-Le API di firma consentono all’organizzazione di proteggere la sicurezza e la privacy dei documenti Adobe PDF che distribuisce e riceve. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> Le funzioni di sicurezza vengono applicate al documento stesso, che rimane protetto e controllato per l&#39;intero ciclo di vita. Il documento rimane protetto oltre il firewall, quando viene scaricato offline e quando viene inviato nuovamente alla tua organizzazione. Puoi eseguire le seguenti attività utilizzando le API di firma:
+Le API di firma consentono all’organizzazione di proteggere la sicurezza e la privacy dei documenti Adobe PDF che distribuisce e riceve. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> Le funzionalità di protezione vengono applicate al documento stesso, che rimane protetto e controllato per l&#39;intero ciclo di vita. Il documento rimane protetto oltre il firewall, quando viene scaricato offline e quando viene inviato nuovamente alla tua organizzazione. Puoi eseguire le seguenti attività utilizzando le API di firma:
 
 * Aggiungere un campo di firma visibile a un documento PDF.
 * Aggiungere un campo firma invisibile a un documento PDF.
@@ -226,7 +226,7 @@ Puoi eseguire queste attività utilizzando le API di crittografia:
 * Recuperare il tipo di protezione applicato a un documento PDF.
 * Restituisce il tipo di protezione applicato a un documento PDF.
 
-Le API di firma e di crittografia sono [API sincrone](#types-of-communications-apis-types).
+Sia le API di firma che quelle di crittografia sono [API sincrone](#types-of-communications-apis-types).
 
 
 ### Utilità documenti {#doc-utility}
@@ -236,7 +236,7 @@ Le utilità per documenti con API sincrone consentono di convertire i documenti 
 
 #### API per i diritti di utilizzo (estensione Reader)
 
-<span class="preview"> La funzionalità Diritti di utilizzo (estensione Reader) si trova nel programma Early Adopter. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
+<span class="preview"> La funzionalità Diritti di utilizzo (estensione Reader) è inclusa nel programma Early Adopter. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
 La funzionalità Diritti di utilizzo consente all’organizzazione di condividere facilmente i documenti interattivi di PDF estendendo la funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi. Il servizio funziona con Adobe Reader 7.0 o versione successiva e aggiunge diritti di utilizzo a un documento PDF. Questa azione attiva caratteristiche che in genere non sono disponibili quando un documento PDF viene aperto mediante Adobe Reader, ad esempio l’aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento.
 
@@ -257,11 +257,11 @@ Queste funzionalità speciali relative ai diritti di utilizzo vengono attivate a
 
 Le varie funzionalità relative ai diritti di utilizzo per l’estensione dei servizi di Reader PDF sono:
 
-* **Decodifica dei codici a barre**: per decodificare i codici a barre all’interno del documento PDF.
+* **Decodifica dei codici a barre**: per decodificare i codici a barre all&#39;interno del documento PDF.
 
-* **Commenti**: per aggiungere un commento offline al documento PDF.
+* **Commenti**: per aggiungere commenti non in linea al documento di PDF.
 
-* **Commenti online**: per aggiungere un commento online al documento PDF.
+* **Commenti in linea**: per aggiungere commenti in linea al documento di PDF.
 
 * **Firma digitale**: per aggiungere firme digitali a un documento PDF.
 
@@ -275,19 +275,19 @@ Le varie funzionalità relative ai diritti di utilizzo per l’estensione dei se
 
 * **Esportazione dati modulo**: per importare i dati del modulo in un documento PDF.
 
-* **Compilazione modulo**: per compilare i campi modulo all’interno di un documento PDF.
+* **Compilazione modulo**: per compilare i campi modulo all&#39;interno di un documento PDF.
 
-* **Forms online**: per accedere a un servizio Web o a un database da un documento di PDF.
+* **Forms in linea**: per accedere a un servizio Web o a un database da un documento di PDF.
 
-* **Invia in modo autonomo**: per inviare i dati del modulo offline da un documento PDF.
+* **Invia in modo autonomo**: per inviare i dati del modulo in modalità non in linea da un documento PDF.
 
 
 #### Altre funzionalità
 
-* **Messaggio**: messaggio visualizzato in Adobe Acrobat Reader all’apertura di un documento PDF a cui sono applicati uno o più diritti di utilizzo.
+* **Messaggio**: il messaggio visualizzato in Adobe Acrobat Reader all&#39;apertura di un documento PDF con uno o più diritti di utilizzo applicati.
 * **Sblocca password**: password necessaria per aprire un documento PDF crittografato. In genere si tratta della password di apertura del documento, ma se il documento PDF è protetto anche da una password di autorizzazione, è possibile utilizzarlo per aprirlo.
 
-Il [Documentazione di riferimento API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i vari servizi forniti dalle API. La documentazione di riferimento API è disponibile anche in formato .yaml. Puoi scaricare il file .yaml e caricarlo su Postman per verificare la funzionalità delle API.
+La [documentazione di riferimento API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i vari servizi forniti dalle API. La documentazione di riferimento API è disponibile anche in formato .yaml. Puoi scaricare il file .yaml e caricarlo su Postman per verificare la funzionalità delle API.
 
 ## Tipi di API di comunicazione {#types}
 
@@ -319,7 +319,7 @@ Dopo l’onboarding, per abilitare le funzionalità di comunicazione per l’amb
 
 >[!NOTE]
 >
-> Per abilitare e configurare le API di manipolazione dei documenti, aggiungi la seguente regola alla [Configurazione Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> Per abilitare e configurare le API di manipolazione dei documenti, aggiungere la regola seguente alla [configurazione Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`

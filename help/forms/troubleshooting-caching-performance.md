@@ -36,7 +36,7 @@ Per risolvere il problema, effettua le seguenti operazioni:
 
 1. Apri il progetto di Experience Manager.
 1. Apri `dispatcher/scr/conf.d/rewrites/rewrite.rules` per la modifica.
-1. Apri `conf.d/httpd-dispatcher.conf` o qualsiasi altro file di configurazione configurato per il caricamento in fase di esecuzione.
+1. Aprire `conf.d/httpd-dispatcher.conf` o qualsiasi altro file di configurazione configurato per il caricamento in fase di esecuzione.
 1. Aggiungi il seguente codice al file e salvalo. Si tratta di un codice di esempio per modificarlo in base all’ambiente in uso.
 
 ```shellscript
@@ -73,4 +73,4 @@ Per risolvere il problema, imposta l’intestazione della pagina su 0:
    ```
 
 1. Salva e chiudi il file.
-1. Modifica il soft link per `src\conf.d\enabled_vhosts\default.vhost` per selezionare un nuovo file.
+1. Modificare il soft link per `src\conf.d\enabled_vhosts\default.vhost` in modo che punti al nuovo file.

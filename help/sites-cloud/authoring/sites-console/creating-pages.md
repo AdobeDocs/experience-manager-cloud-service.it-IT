@@ -14,11 +14,11 @@ ht-degree: 29%
 
 # Creazione delle pagine {#creating-pages}
 
-Scopri come creare nuove pagine per il sito web utilizzando **Sites** console.
+Scopri come creare nuove pagine per il tuo sito web utilizzando la console **Sites**.
 
 >[!TIP]
 >
->Prima di iniziare a creare nuove pagine, acquisisci familiarità con [organizzazione delle pagine in AEM.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>Prima di iniziare la creazione di nuove pagine, conoscere [l&#39;organizzazione delle pagine in AEM.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
 
 ## Privilegi di accesso {#access-privileges}
 
@@ -30,7 +30,7 @@ In caso di problemi, contattare l&#39;amministratore di sistema.
 
 A meno che le pagine non siano già state create tutte, prima di poter iniziare a creare il contenuto dovrai creare una pagina:
 
-1. Apri [il **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Apri [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Passa alla posizione in cui desideri creare la nuova pagina.
 1. Apri il selettore a discesa utilizzando l’opzione **Crea** nella barra degli strumenti, quindi seleziona **Pagina** dall’elenco:
 
@@ -38,7 +38,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
 
 1. Dal primo passaggio della procedura guidata, puoi effettuare le seguenti operazioni:
 
-   * Seleziona il modello da utilizzare per creare la nuova pagina, quindi seleziona **Successivo** per procedere.
+   * Seleziona il modello da utilizzare per creare la nuova pagina, quindi seleziona **Successivo** per continuare.
 
    * Seleziona **Annulla** per interrompere la procedura.
 
@@ -46,7 +46,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
 
 1. Dalla fase finale della procedura guidata, puoi effettuare le seguenti operazioni:
 
-   * Utilizza le tre schede per inserire [proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md) vuoi assegnarlo alla nuova pagina, quindi seleziona **Crea** per creare effettivamente la pagina.
+   * Utilizza le tre schede per immettere le [proprietà di pagina](/help/sites-cloud/authoring/sites-console/page-properties.md) da assegnare alla nuova pagina, quindi seleziona **Crea** per creare effettivamente la pagina.
 
    * Utilizza **Indietro** per tornare alla selezione del modello.
 
@@ -59,22 +59,22 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
    * **Nome**:
 
       * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
-      * Se si specifica una pagina **Nome** durante la creazione di una pagina, AEM [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
+      * Se durante la creazione di una pagina si specifica il nome **Name**, l&#39;AEM [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte da AEM e JCR.
       * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando l’AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio esplicativo per indicare i caratteri da rimuovere o sostituire.
 
    >[!TIP]
    >
    >Consulta [Convenzioni di denominazione delle pagine](#page-naming-conventions).
 
-   Le informazioni minime necessarie per creare una pagina sono **Titolo**.
+   Le informazioni minime necessarie per creare una pagina sono il **Titolo**.
 
    ![Fornire il titolo della pagina](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
-1. Tocca o fai clic su **Crea** per completare il processo e creare la nuova pagina. La finestra di dialogo di conferma chiede se desideri **Apri** la pagina immediatamente o torna alla console (**Fine**). Selezionane uno per terminare il processo di creazione della pagina.
+1. Tocca o fai clic su **Crea** per completare il processo e creare la nuova pagina. Nella finestra di dialogo di conferma viene richiesto se si desidera **aprire** la pagina immediatamente o tornare alla console (**Fine**). Selezionane uno per terminare il processo di creazione della pagina.
 
    ![Creazione pagina completata](/help/sites-cloud/authoring/assets/organizing-create-page-success.png)
 
-   * Se si sceglie **Apri**, il **Sites** console apre l’editor appropriato in base al modello della nuova pagina:
+   * Se scegli **Apri**, la console **Sites** apre l&#39;editor appropriato in base al modello della nuova pagina:
       * [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md)
       * [Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
@@ -88,4 +88,4 @@ Se torni alla console, puoi visualizzare la nuova pagina:
 
 >[!CAUTION]
 >
->Una volta creata una pagina, il relativo modello può essere modificato solo se: [creare un lancio con un nuovo modello](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), anche se questo determinerà la perdita di eventuali contenuti esistenti.
+>Una volta creata una pagina, il relativo modello non può essere modificato a meno che non si [crei un lancio con un nuovo modello](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), anche se questo determinerà la perdita di eventuali contenuti esistenti.

@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Esternalizzazione degli URL {#externalizing-urls}
 
-Nell&#39;AEM, la **Esternalizzatore** è un servizio OSGi che consente di trasformare in modo programmatico un percorso di risorsa (ad esempio `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) inserendo un prefisso DNS nel percorso.
+In AEM, **Externalizer** è un servizio OSGi che consente di trasformare in modo programmatico un percorso di risorsa (ad esempio, `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) prefissando il percorso con un DNS preconfigurato.
 
-Poiché un’istanza as a Cloud Service dell’AEM non può conoscere il proprio URL visibile esternamente e poiché a volte è necessario creare un collegamento al di fuori dell’ambito della richiesta, questo servizio fornisce una posizione centrale per configurare tali URL esterni e generarli.
+Poiché un’istanza di AEM as a Cloud Service non può conoscere il proprio URL visibile esternamente e poiché a volte è necessario creare un collegamento al di fuori dell’ambito della richiesta, questo servizio fornisce una posizione centrale per configurare tali URL esterni e generarli.
 
-Questo articolo spiega come configurare il servizio Externalizer e come utilizzarlo. Per informazioni tecniche sul servizio, vedi [JavaScript](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
+Questo articolo spiega come configurare il servizio Externalizer e come utilizzarlo. Per informazioni tecniche sul servizio, vedi [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Comportamento predefinito di Externalizer e Procedura di sostituzione {#default-behavior}
 
-Il servizio Externalizer associa una serie di identificatori di dominio a prefissi URL assoluti che corrispondono agli URL del servizio AEM generati per l’ambiente, ad esempio `author https://author-p12345-e6789.adobeaemcloud.com` e `publish https://publish-p12345-e6789.adobeaemcloud.com`. Gli URL di base per ciascuno di questi domini predefiniti vengono letti dalle variabili di ambiente definite da Cloud Manager.
+Il servizio Externalizer associa una serie di identificatori di dominio a prefissi URL assoluti corrispondenti agli URL del servizio AEM generati per l&#39;ambiente, ad esempio `author https://author-p12345-e6789.adobeaemcloud.com` e `publish https://publish-p12345-e6789.adobeaemcloud.com`. Gli URL di base per ciascuno di questi domini predefiniti vengono letti dalle variabili di ambiente definite da Cloud Manager.
 
 Per riferimento, la configurazione OSGi predefinita per `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` è effettivamente:
 
@@ -38,11 +38,11 @@ Per riferimento, la configurazione OSGi predefinita per `com.day.cq.commons.impl
 
 >[!CAUTION]
 >
->Il valore predefinito `local`, `author`, `preview`, e `publish` Le mappature del dominio esternalizzatore nella configurazione OSGi devono essere mantenute con l’originale `$[env:...]` i valori elencati sopra.
+>Le mappature di dominio `local`, `author`, `preview` e `publish` Externalizer predefinite nella configurazione OSGi devono essere mantenute con i valori `$[env:...]` originali elencati sopra.
 >
->Distribuzione di un `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` su AEM as a Cloud Service che omette una qualsiasi di queste mappature di dominio predefinite può causare un comportamento imprevedibile dell’applicazione.
+>La distribuzione di un file `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` personalizzato in AEM as a Cloud Service che omette una qualsiasi di queste mappature di dominio predefinite può causare un comportamento imprevedibile dell&#39;applicazione.
 
-Per ignorare `preview` e `publish` , utilizza le variabili di ambiente di Cloud Manager come descritto nell’articolo [Configurazione di OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e l&#39;impostazione della `AEM_CDN_DOMAIN_PUBLISH` e `AEM_CDN_DOMAIN_PREVIEW` variabili.
+Per ignorare i valori `preview` e `publish`, utilizzare le variabili di ambiente Cloud Manager come descritto nell&#39;articolo [Configurazione di OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e impostazione delle variabili predefinite `AEM_CDN_DOMAIN_PUBLISH` e `AEM_CDN_DOMAIN_PREVIEW`.
 
 ## Configurazione del servizio Externalizer {#configuring-the-externalizer-service}
 
@@ -50,7 +50,7 @@ Il servizio Externalizer ti consente di definire a livello centrale il dominio c
 
 >[!NOTE]
 >
->Come quando si applica [Configurazioni OSGi per AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration) i seguenti passaggi devono essere eseguiti in un’istanza sviluppatore locale e quindi eseguiti nel codice del progetto per la distribuzione.
+>Come per l&#39;applicazione di [configurazioni OSGi per AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration), è necessario eseguire i passaggi seguenti in un&#39;istanza sviluppatore locale e quindi confermare il codice del progetto per la distribuzione.
 
 Per definire un mapping di dominio per il servizio Externalizer:
 
@@ -58,7 +58,7 @@ Per definire un mapping di dominio per il servizio Externalizer:
 
    `https://<host>:<port>/system/console/configMgr`
 
-1. Clic **Day CQ Link Externalizer** per aprire la finestra di dialogo configurazione.
+1. Fai clic su **Day CQ Link Externalizer** per aprire la finestra di dialogo di configurazione.
 
    ![Configurazione OSGi di Externalizer](./assets/externalizer-osgi.png)
 
@@ -66,34 +66,34 @@ Per definire un mapping di dominio per il servizio Externalizer:
    >
    >Il collegamento diretto alla configurazione è `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
 
-1. Definisci un **Domini** mappatura. Una mappatura è costituita da un nome univoco che può essere utilizzato nel codice per fare riferimento al dominio, a uno spazio e al dominio:
+1. Definisci una mappatura **Domini**. Una mappatura è costituita da un nome univoco che può essere utilizzato nel codice per fare riferimento al dominio, a uno spazio e al dominio:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
    Dove:
 
-   * **`scheme`** è solitamente http o https, ma può essere un altro protocollo.
+   * **`scheme`** è in genere http o https, ma può essere un altro protocollo.
 
       * L’Adobe consiglia di utilizzare https per applicare i collegamenti https.
       * Viene utilizzato se il codice client non sostituisce lo schema quando viene richiesta l’esternalizzazione di un URL.
 
-   * **`server`** è il nome host (un nome di dominio o un indirizzo ip).
-   * **`port`** (facoltativo) è il numero della porta.
-   * **`contextpath`** (facoltativo) è impostato solo se AEM è installato come app web in un percorso di contesto diverso.
+   * **`server`** è il nome host (nome di dominio o indirizzo ip).
+   * **`port`** (facoltativo) è il numero di porta.
+   * **`contextpath`** (facoltativo) è impostato solo se AEM è installato come WebApp in un percorso di contesto diverso.
 
    Esempio: `production https://my.production.instance`
 
    I seguenti nomi di mappatura sono predefiniti e devono sempre essere impostati in quanto AEM si basa su di essi:
 
-   * `local` : l’istanza locale
+   * `local` - l&#39;istanza locale
    * `author` - DNS del sistema di authoring
-   * `publish` - il sito web pubblico DNS
+   * `publish` - DNS del sito Web pubblico
 
    >[!NOTE]
    >
    >Una configurazione personalizzata consente di aggiungere una nuova categoria, ad esempio `production`, `staging` o anche sistemi esterni non AEM come `my-internal-webservice`. È utile evitare di codificare tali URL in posizioni diverse nella base di codice di un progetto.
 
-1. Clic **Salva** per salvare le modifiche.
+1. Fai clic su **Salva** per salvare le modifiche.
 
 ### Utilizzo del servizio Externalizer {#using-the-externalizer-service}
 
@@ -103,7 +103,7 @@ Questa sezione mostra alcuni esempi di utilizzo del servizio Externalizer.
 >
 >Non è necessario creare collegamenti assoluti nel contesto di HTML. Pertanto, non utilizzare questa utilità in tali casi.
 
-* **Per esternalizzare un percorso con il dominio &quot;publish&quot;:**
+* **Per esternalizzare un percorso con il dominio &#39;publish&#39;:**
 
   ```java
   String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
@@ -113,11 +113,11 @@ Questa sezione mostra alcuni esempi di utilizzo del servizio Externalizer.
 
    * `publish https://www.website.com`
 
-   * `myExternalizedUrl` finisce con il valore:
+   * `myExternalizedUrl` termina con il valore:
 
    * `https://www.website.com/contextpath/my/page.html`
 
-* **Per esternalizzare un percorso con il dominio &quot;author&quot;:**
+* **Per esternalizzare un percorso con il dominio &#39;author&#39;:**
 
   ```java
   String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
@@ -127,11 +127,11 @@ Questa sezione mostra alcuni esempi di utilizzo del servizio Externalizer.
 
    * `author https://author.website.com`
 
-   * `myExternalizedUrl` finisce con il valore:
+   * `myExternalizedUrl` termina con il valore:
 
    * `https://author.website.com/contextpath/my/page.html`
 
-* **Per esternalizzare un percorso con il dominio &quot;locale&quot;:**
+* **Per esternalizzare un percorso con il dominio &#39;locale&#39;:**
 
   ```java
   String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
@@ -141,10 +141,10 @@ Questa sezione mostra alcuni esempi di utilizzo del servizio Externalizer.
 
    * `local https://publish-3.internal`
 
-   * `myExternalizedUrl` finisce con il valore:
+   * `myExternalizedUrl` termina con il valore:
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
 >[!TIP]
 >
->Puoi trovare altri esempi nella sezione [JavaScript](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
+>Puoi trovare altri esempi nei [JavaScript](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).

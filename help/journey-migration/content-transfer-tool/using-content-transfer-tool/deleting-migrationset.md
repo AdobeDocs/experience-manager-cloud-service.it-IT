@@ -24,20 +24,20 @@ I set di migrazione possono essere eliminati da Cloud Acceleration Manager.
 
 Per eliminare un set di migrazione, effettua le seguenti operazioni:
 
-1. Nella vista a elenco Set di migrazione di Cloud Acceleration Manager, fai clic sui tre punti (**...**) accanto al set di migrazione da eliminare. Il **Elimina** L&#39;azione deve essere visibile come mostrato di seguito.
+1. Passare alla visualizzazione elenco Set di migrazione in Cloud Acceleration Manager e fare clic sui tre punti (**...**) accanto al set di migrazione che si desidera eliminare. L&#39;azione **Elimina** deve essere visibile come mostrato di seguito.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
-1. Quando fai clic su **Elimina** viene visualizzata una finestra di dialogo che consente di confermare l&#39;azione elimina.
+1. Quando fai clic su **Elimina** viene visualizzata una finestra di dialogo per confermare l&#39;azione di eliminazione.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
 
 >[!NOTE]
 >
->L’eliminazione di un set di migrazione da Cloud Acceleration Manager (CAM) non ne comporta l’eliminazione dallo strumento Content Transfer (Trasferimento contenuti). Una volta eliminato un set di migrazione da CAM, l’utente non potrà eseguire estrazioni su tale set di migrazione dalla procedura guidata di trasferimento dei contenuti. Tuttavia, se il set di migrazione è stato eliminato dalla procedura guidata di trasferimento dei contenuti, l’utente può ricrearlo purché il set di migrazione sia ancora disponibile in Cloud Acceleration Manager.
+>L’eliminazione di un set di migrazione da Cloud Acceleration Manager (CAM) non ne comporta l’eliminazione dallo strumento Content Transfer (Trasferimento contenuti). Una volta eliminato un set di migrazione da CAM, l’utente non potrà eseguire estrazioni su tale set di migrazione dalla procedura guidata di trasferimento dei contenuti. Tuttavia, se il set di migrazione è stato eliminato dalla procedura guidata di trasferimento del contenuto, l’utente può ricrearlo purché il set di migrazione sia ancora disponibile in Cloud Acceleration Manager.
 >
 >Per mantenere lo strumento Content Transfer (Trasferimento contenuti) sincronizzato con Cloud Acceleration Manager, l’utente può anche eliminare il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti).
 
-Per eliminare il set di migrazione dalla procedura guidata Trasferimento contenuti, seleziona il set di migrazione e fai clic su **Elimina** nella barra delle azioni.
+Per eliminare il set di migrazione dalla procedura guidata di trasferimento dei contenuti, selezionare il set di migrazione e fare clic su **Elimina** nella barra delle azioni.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)

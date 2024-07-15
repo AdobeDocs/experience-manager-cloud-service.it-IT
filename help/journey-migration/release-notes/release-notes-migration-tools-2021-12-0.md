@@ -1,6 +1,6 @@
 ---
-title: Note sulla versione 2021.12.0 degli strumenti di migrazione nell’AEM as a Cloud Service
-description: Note sulla versione 2021.12.0 degli strumenti di migrazione nell’AEM as a Cloud Service
+title: Note sulla versione 2021.12.0 degli strumenti di migrazione in AEM as a Cloud Service
+description: Note sulla versione 2021.12.0 degli strumenti di migrazione in AEM as a Cloud Service
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 45%
 
 ---
 
-# Note sulla versione 2021.12.0 degli strumenti di migrazione nell’AEM as a Cloud Service {#release-notes}
+# Note sulla versione 2021.12.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2021.12.0 degli strumenti di migrazione in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione di AEM as a Cloud Service 2021.12.0 per gli strumenti di migrazione.
 
 >[!NOTE]
 >Per visualizzare le note sulla versione corrente di Adobe Experience Manager as a Cloud Service, fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
@@ -44,5 +44,5 @@ La data di pubblicazione dello strumento Content Transfer v1.7.10 è il 8 dicemb
 
 ### Novità {#what-is-new-ctt}
 
-* È stata aggiunta un’opzione alla fase di acquisizione nello strumento Content Transfer (Trasferimento contenuti) per consentire agli utenti di disabilitare [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) durante l’acquisizione. Per velocità di acquisizione ottimali, la pre-copia durante l’acquisizione deve essere disabilitata per piccoli set di migrazione o se sono stati aggiunti solo pochi BLOB dall’ultima acquisizione.
+* È stata aggiunta un&#39;opzione alla fase di acquisizione nello strumento Content Transfer (Trasferimento contenuti) per consentire agli utenti di disabilitare la [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) durante l&#39;acquisizione. Per velocità di acquisizione ottimali, la pre-copia durante l’acquisizione deve essere disabilitata per piccoli set di migrazione o se sono stati aggiunti solo pochi BLOB dall’ultima acquisizione.
 * La mappatura degli utenti è stata aggiornata per utilizzare l’API di gestione utenti migliorata, che consente di ottenere 2000 utenti alla volta, migliorando in modo significativo le prestazioni.

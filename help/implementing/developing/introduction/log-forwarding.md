@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Questa funzione non è ancora stata rilasciata e alcune destinazioni di registrazione potrebbero non essere disponibili al momento del rilascio. Nel frattempo, puoi aprire un ticket di supporto per inoltrare i registri a **Splunk**, come descritto nella [articolo di registrazione](/help/implementing/developing/introduction/logging.md).
+>Questa funzione non è ancora stata rilasciata e alcune destinazioni di registrazione potrebbero non essere disponibili al momento del rilascio. Nel frattempo, puoi aprire un ticket di supporto per inoltrare i registri a **Splunk**, come descritto nell&#39;[articolo di registrazione](/help/implementing/developing/introduction/logging.md).
 
 I clienti che dispongono di una licenza per un fornitore di servizi di registrazione o che ospitano un prodotto di registrazione possono inoltrare i registri AEM (incluso Apache/Dispatcher) e i registri CDN alle destinazioni di registrazione associate. AEM as a Cloud Service supporta le seguenti destinazioni di registrazione:
 
@@ -51,7 +51,7 @@ Questo articolo è organizzato nel modo seguente:
         logForwarding.yaml
    ```
 
-1. `logForwarding.yaml` deve contenere metadati e una configurazione simile al seguente formato (ad esempio, utilizziamo Splunk).
+1. `logForwarding.yaml` deve contenere metadati e una configurazione simile al seguente formato (ad esempio, viene utilizzato Splunk).
 
    ```
    kind: "LogForwarding"
@@ -67,11 +67,11 @@ Questo articolo è organizzato nel modo seguente:
          index: "AEMaaCS"
    ```
 
-   Il **tipo** il parametro deve essere impostato su `LogForwarding` la versione deve essere impostata sulla versione dello schema, ovvero 1.
+   Il parametro **kind** deve essere impostato su `LogForwarding` e la versione deve essere impostata sulla versione dello schema, ovvero 1.
 
-   Token nella configurazione (ad esempio `${{SPLUNK_TOKEN}}`) rappresentano segreti che non devono essere memorizzati in Git. Dichiarali invece come Cloud Manager  [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md) di tipo **segreto**. Assicurati di selezionare **Tutti** come valore a discesa per il campo Service Applied (Servizio applicato), in modo che i registri possano essere inoltrati ai livelli di authoring, pubblicazione e anteprima.
+   I token nella configurazione (ad esempio `${{SPLUNK_TOKEN}}`) rappresentano segreti, che non devono essere memorizzati in Git. Dichiarale invece come Cloud Manager [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md) di tipo **segreto**. Assicurarsi di selezionare **Tutti** come valore a discesa per il campo Servizio applicato, in modo che i registri possano essere inoltrati ai livelli di authoring, pubblicazione e anteprima.
 
-   È possibile impostare valori diversi per i registri CDN e per i registri AEM (incluso Apache/Dispatcher), includendo **cdn** e/o **aem** blocco dopo il **predefinito** , in cui le proprietà possono ignorare quelle definite nel **predefinito** blocco; è necessaria solo la proprietà abilitata. Un possibile caso di utilizzo potrebbe essere l’utilizzo di un indice Splunk diverso per i registri CDN, come illustrato nell’esempio seguente.
+   È possibile impostare valori diversi tra i registri CDN e i registri AEM (incluso Apache/Dispatcher), includendo un blocco **cdn** e/o **aem** aggiuntivo dopo il blocco **default**, in cui le proprietà possono ignorare quelle definite nel blocco **default**. È richiesta solo la proprietà abilitata. Un possibile caso di utilizzo potrebbe essere l’utilizzo di un indice Splunk diverso per i registri CDN, come illustrato nell’esempio seguente.
 
    ```
       kind: "LogForwarding"
@@ -148,7 +148,7 @@ Ecco una schermata di esempio della configurazione del token SAS:
 
 #### Registri CDN archiviazione BLOB di Azure {#azureblob-cdn}
 
-Ciascuno dei server di registrazione distribuiti a livello globale produrrà un nuovo file ogni pochi secondi, sotto `aemcdn` cartella. Una volta creato, il file non verrà più aggiunto a. Il formato del nome file è YYY-MM-DDThh:mm:ss.sss-uniqueid.log Ad esempio, 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
+Ogni server di registrazione distribuito a livello globale produrrà un nuovo file ogni pochi secondi, nella cartella `aemcdn`. Una volta creato, il file non verrà più aggiunto a. Il formato del nome file è YYY-MM-DDThh:mm:ss.sss-uniqueid.log. Ad esempio, 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
 
 Ad esempio, a un certo punto del tempo:
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-Ogni file contiene più voci di registro json, ciascuna su una riga separata. I formati delle voci di registro sono descritti in [articolo di registrazione](/help/implementing/developing/introduction/logging.md), e ogni voce di registro include anche le proprietà aggiuntive menzionate nella [Formati voce registro](#log-format) sezione successiva.
+Ogni file contiene più voci di registro json, ciascuna su una riga separata. I formati delle voci di log sono descritti nell&#39;[articolo di log](/help/implementing/developing/introduction/logging.md) e ogni voce di log include anche le proprietà aggiuntive menzionate nella sezione [Formati di voci di log](#log-format) seguente.
 
 #### Registri AEM archiviazione BLOB di Azure {#azureblob-aem}
 
@@ -183,7 +183,7 @@ I registri AEM (incluso Apache/Dispatcher) vengono visualizzati sotto una cartel
 
 In ogni cartella verrà creato un singolo file che verrà aggiunto a. I clienti sono responsabili dell’elaborazione e della gestione di questo file, in modo che non aumenti troppo.
 
-Vedere i formati delle voci di registro in [articolo di registrazione](/help/implementing/developing/introduction/logging.md). Le voci del registro includeranno anche le proprietà aggiuntive menzionate nella [Formati voce registro](#log-formats) sezione successiva.
+Consulta i formati delle voci di registro nell&#39;[articolo di registrazione](/help/implementing/developing/introduction/logging.md). Le voci di registro includeranno anche le proprietà aggiuntive menzionate nella sezione [Formati di voce di registro](#log-formats) seguente.
 
 
 ### Datadog {#datadog}
@@ -232,9 +232,9 @@ Considerazioni:
 
 * Per le credenziali, assicurati di utilizzare le credenziali di distribuzione anziché le credenziali dell’account. Queste sono le credenziali generate in una schermata che potrebbe assomigliare a questa immagine:
 
-![Credenziali di distribuzione elastica](/help/implementing/developing/introduction/assets/ec-creds.png)
+![Credenziali distribuzione elastica](/help/implementing/developing/introduction/assets/ec-creds.png)
 
-* La proprietà opzionale della pipeline deve essere impostata sul nome della pipeline di acquisizione Elasticsearch o OpenSearch, che può essere configurata per instradare la voce di registro all’indice appropriato. Il tipo di processore della pipeline deve essere impostato su *script* e il linguaggio di script deve essere impostato su *indolore*. Di seguito è riportato un frammento di script di esempio per instradare le voci di registro in un indice come aemaccess_dev_26_06_2024:
+* La proprietà opzionale della pipeline deve essere impostata sul nome della pipeline di acquisizione Elasticsearch o OpenSearch, che può essere configurata per instradare la voce di registro all’indice appropriato. Il tipo di processore della pipeline deve essere impostato su *script* e il linguaggio di script su *indolore*. Di seguito è riportato un frammento di script di esempio per instradare le voci di registro in un indice come aemaccess_dev_26_06_2024:
 
 ```
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
@@ -260,20 +260,20 @@ data:
 
 #### Registri CDN HTTPS {#https-cdn}
 
-Le richieste web (POST) verranno inviate in modo continuo, con un payload json che è un array di voci di registro, con il formato di voce di registro descritto in [articolo di registrazione](/help/implementing/developing/introduction/logging.md#cdn-log). Proprietà aggiuntive sono menzionate nella [Formati voce registro](#log-formats) sezione successiva.
+Le richieste Web (POST) verranno inviate in modo continuo, con un payload json che è un array di voci di registro, con il formato di voce di registro descritto nell&#39;[articolo di registrazione](/help/implementing/developing/introduction/logging.md#cdn-log). Proprietà aggiuntive sono menzionate nella sezione [Formati di voce di registro](#log-formats) di seguito.
 
-È inoltre presente una proprietà denominata `sourcetype`, impostato sul valore `aemcdn`.
+Esiste anche una proprietà denominata `sourcetype`, impostata sul valore `aemcdn`.
 
 >[!NOTE]
 >
-> Prima di inviare la prima voce di registro CDN, il server HTTP deve completare correttamente una richiesta una tantum: una richiesta inviata al percorso ``wellknownpath`` deve rispondere con ``*``.
+> Prima dell&#39;invio della prima voce di registro CDN, il server HTTP deve completare una richiesta una tantum: una richiesta inviata al percorso ``wellknownpath`` deve rispondere con ``*``.
 
 
 #### Registri AEM HTTPS {#https-aem}
 
-Per i registri AEM (inclusi apache/dispacher), le richieste web (POST) verranno inviate in modo continuo, con un payload json che è un array di voci di registro, con i vari formati di voce di registro come descritto in [articolo di registrazione](/help/implementing/developing/introduction/logging.md). Proprietà aggiuntive sono menzionate nella [Formati voce registro](#log-format) sezione successiva.
+Per i registri AEM (incluso apache/dispacher), le richieste web (POST) verranno inviate in modo continuo, con un payload json che è un array di voci di registro, con i vari formati di voci di registro come descritto nell&#39;[articolo sulla registrazione](/help/implementing/developing/introduction/logging.md). Proprietà aggiuntive sono menzionate nella sezione [Formati di voce di registro](#log-format) di seguito.
 
-È inoltre presente una proprietà denominata `sourcetype`, impostato su uno dei seguenti valori:
+Esiste anche una proprietà denominata `sourcetype`, impostata su uno dei seguenti valori:
 
 * aemaccess
 * aemerror
@@ -318,7 +318,7 @@ data:
 
 ## Formati voce registro {#log-formats}
 
-Consulta la sezione Generale [articolo di registrazione](/help/implementing/developing/introduction/logging.md) per il formato di ciascun tipo di registro rispettivo (registri CDN e registri AEM, incluso Apache/Dispatcher).
+Consulta l&#39;[articolo di registrazione](/help/implementing/developing/introduction/logging.md) generale per il formato di ciascun tipo di registro (registri CDN e registri AEM, incluso Apache/Dispatcher).
 
 Poiché i registri provenienti da più programmi e ambienti possono essere inoltrati alla stessa destinazione di registrazione, oltre all’output descritto nell’articolo sulla registrazione, in ogni voce di registro verranno incluse le seguenti proprietà:
 
@@ -345,9 +345,9 @@ aem_tier: author
 
 Alcune organizzazioni scelgono di limitare il traffico che può essere ricevuto dalle destinazioni di registrazione.
 
-Per il registro CDN, puoi inserire gli indirizzi IP nell’elenco Consentiti, come descritto in [questo articolo](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se l’elenco di indirizzi IP condivisi è troppo grande, puoi inviare il traffico a un archivio BLOB di Azure (non Adobe) in cui è possibile scrivere la logica per inviare i registri da un IP dedicato alla destinazione finale.
+Per il registro CDN, puoi inserire nell&#39;elenco Consentiti gli indirizzi IP, come descritto in [questo articolo](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se l’elenco di indirizzi IP condivisi è troppo grande, puoi inviare il traffico a un archivio BLOB di Azure (non Adobe) in cui è possibile scrivere la logica per inviare i registri da un IP dedicato alla destinazione finale.
 
-Per i registri AEM (incluso Apache/Dispatcher), puoi configurare l’inoltro dei registri in modo che venga eseguito [rete avanzata](/help/security/configuring-advanced-networking.md). Vedere i modelli per i tre tipi di rete avanzati riportati di seguito, che utilizzano un `port` insieme al parametro `host` parametro.
+Per i registri AEM (incluso Apache/Dispatcher), puoi configurare l&#39;inoltro dei registri in modo che passi attraverso [rete avanzata](/help/security/configuring-advanced-networking.md). Visualizzare i modelli per i tre tipi di rete avanzati riportati di seguito, che utilizzano un parametro facoltativo `port`, insieme al parametro `host`.
 
 ### Uscita flessibile della porta {#flex-port}
 

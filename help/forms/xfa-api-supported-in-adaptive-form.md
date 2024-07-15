@@ -148,27 +148,27 @@ La tabella seguente acquisisce il comportamento di vari script XFA definiti nei 
    <td><p>Mappato alla proprietà value in Modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>elementi<em> (Casella di riepilogo, Casella di controllo)</em></p> </td>
+   <td><p>elementi<em> (casella di riepilogo, casella di controllo)</em></p> </td>
    <td><p>Mappata alla proprietà options in Adaptive Form. È possibile sostituirlo utilizzando l'espressione Opzioni.</p> </td>
   </tr>
   <tr>
-   <td><p>maxChar<em> (Campo di testo)</em></p> </td>
+   <td><p>maxChar<em> (campo di testo)</em></p> </td>
    <td><p>Mappato alla proprietà Numero massimo di caratteri consentiti in Modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>multiriga<em> (Campo di testo)</em></p> </td>
+   <td><p>multiline<em> (campo di testo)</em></p> </td>
    <td><p>Mappato alla proprietà Allow multiple lines (Consenti più righe) in Adaptive Form (Modulo adattivo).</p> </td>
   </tr>
   <tr>
-   <td><p>fracDigit<em> (Campo Numerico, Campo Decimale)</em></p> </td>
+   <td><p>fracDigit<em> (campo numerico, campo decimale)</em></p> </td>
    <td><p>Mappato alla proprietà Frac digits in Adaptive Form.</p> </td>
   </tr>
   <tr>
-   <td><p>leadDigit<em> (Campo Numerico, Campo Decimale)</em></p> </td>
+   <td><p>leadDigit<em> (campo numerico, campo decimale)</em></p> </td>
    <td><p>Mappato alla proprietà Cifre lead in Modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>multiSelect<em> (Casella di riepilogo)</em></p> </td>
+   <td><p>multiSelect<em> (casella di riepilogo)</em></p> </td>
    <td><p>Mappato su Consente la selezione di più proprietà in Modulo adattivo.</p> </td>
   </tr>
  </tbody>
@@ -198,7 +198,7 @@ La tabella seguente acquisisce il comportamento di vari script XFA definiti nel 
   </tr>
   <tr>
    <td><p>validationState </p> </td>
-   <td><p>Questo script viene eseguito in fase di runtime e non può essere sostituito in un modulo adattivo.<br /> </p> </td>
+   <td><p>Questo script viene eseguito in fase di esecuzione e non può essere sostituito in un modulo adattivo.<br /> </p> </td>
   </tr>
   <tr>
    <td><p>uscire </p> </td>

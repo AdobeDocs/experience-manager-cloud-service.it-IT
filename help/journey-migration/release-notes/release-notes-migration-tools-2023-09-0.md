@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Note sulla versione 2023.09.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2023.09.0 degli strumenti di migrazione in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione degli strumenti di migrazione in AEM as a Cloud Service 2023.09.0.
 
 ## Strumento Trasferimento contenuti {#ctt-release}
 
@@ -26,5 +26,5 @@ La data di pubblicazione dello strumento Content Transfer v3.0.0 è il 7 settemb
 Lo strumento Content Transfer (Trasferimento contenuti) è stato migliorato per offrire i seguenti vantaggi:
 
 * È stato ridotto il tempo di trasferimento durante la migrazione di un sottoinsieme di un archivio di contenuti utilizzando AzCopy per copiare solo gli ID BLOB richiesti invece di copiare tutti gli ID BLOB.
-* Miglioramenti più rapidi dei contenuti differenziali con l’aggiornamento Oak.
+* Miglioramenti più rapidi dei contenuti differenziali con l’aggiornamento di Oak.
 * È stata migliorata la robustezza separando il processo di indicizzazione dal processo di acquisizione dei contenuti. In caso di indicizzazione non riuscita, il contenuto non deve essere nuovamente acquisito. Solo l’indicizzazione si riavvia automaticamente, risparmiando tempo e fatica.

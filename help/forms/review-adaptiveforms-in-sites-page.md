@@ -14,26 +14,26 @@ ht-degree: 4%
 
 # Creare e gestire recensioni per un modulo adattivo {#review-step-forms-aem-sites-page}
 
-Utilizzo di [Assegna passaggio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step) del flusso di lavoro dell’AEM, il revisore esamina il modulo inviato ed esegue un’azione su di esso. Per rivedere il modulo inviato tramite il passaggio Assegna attività, eseguire la procedura seguente:
+Utilizzando il [Passaggio assegnazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step) del flusso di lavoro AEM, il revisore esamina il modulo inviato ed esegue azioni su di esso. Per rivedere il modulo inviato tramite il passaggio Assegna attività, eseguire la procedura seguente:
 
 1. [Creare un flusso di lavoro AEM](#create-an-aem-workflow)
 1. [Configurare l’azione di invio del contenitore Modulo adattivo](#configure-submit-action)
-1. [Inviare un modulo adattivo dopo la revisione](#submit-af-after-review)
+1. [Invia un modulo adattivo dopo la revisione](#submit-af-after-review)
 
 ## Creare un flusso di lavoro AEM {#create-an-aem-workflow}
 
 1. Apri l’istanza di authoring in modalità di modifica.
-1. Vai a **[!UICONTROL Strumenti]** >  **[!UICONTROL Flusso di lavoro]** >  **[!UICONTROL Modelli]** > **[!UICONTROL Crea]** > **[!UICONTROL Crea modello]**
-1. Specifica il titolo del flusso di lavoro e aggiungi **[Assegna attività]** passaggio
-1. Seleziona ![icona_impostazioni](assets/settings_icon.png) sulla barra delle azioni. Il **[!UICONTROL Assegna attività]** viene visualizzata una finestra di dialogo.
-1. Apri [!UICONTROL Modulo e documento] scheda e apri [!UICONTROL Prepopolato] e specificare:
+1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]** > **[!UICONTROL Crea]** > **[!UICONTROL Crea modello]**
+1. Specifica il titolo del flusso di lavoro e aggiungi il passaggio **[Assegna attività]**
+1. Seleziona ![icona_impostazioni](assets/settings_icon.png) nella barra delle azioni. Viene visualizzata la finestra di dialogo **[!UICONTROL Assegna attività]**.
+1. Apri la scheda [!UICONTROL Modulo e documento], apri il menu a discesa [!UICONTROL Precompilato] e specifica:
 
    * Seleziona file di dati di input tramite
    * Seleziona allegati di input tramite
 
    ![Passaggio di revisione](/help/forms/assets/assigntask-review1.gif)
 
-1. Apri **[!UICONTROL Assegnatario]** scheda e apri [!UICONTROL Prepopolato] e specificare **[!UICONTROL Assegna opzioni]**:
+1. Apri la scheda **[!UICONTROL Assegnatario]** e apri l&#39;elenco a discesa [!UICONTROL Prepopolato] e specifica **[!UICONTROL Assegna opzioni]**:
 
    ![Passaggio di revisione](/help/forms/assets/review-assignstep.png)
 
@@ -44,25 +44,25 @@ Utilizzo di [Assegna passaggio](https://experienceleague.adobe.com/docs/experien
 Ora configura l’azione Invia di un componente Contenitore modulo adattivo sulla pagina del sito:
 
 1. Passa alla pagina del sito.
-1. Seleziona ![icona_impostazioni](assets/settings_icon.png) di un contenitore di moduli adattivi. Il **[!UICONTROL Contenitore modulo adattivo]** viene visualizzata una finestra di dialogo.
-1. Apri **[!UICONTROL Invio]** e specifica **[!UICONTROL Azione di invio]** a [Richiama un flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
+1. Seleziona ![icona_impostazioni](assets/settings_icon.png) di un contenitore di moduli adattivi. Viene visualizzata la finestra di dialogo **[!UICONTROL Contenitore modulo adattivo]**.
+1. Apri la scheda **[!UICONTROL Invio]** e specifica **[!UICONTROL Azione di invio]** per [Richiama un flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
 
-1. Clic [Fine] per salvare le impostazioni.
+1. Fai clic su [Fine] per salvare le impostazioni.
 
-![submissiontab-reviewstep](/help/forms/assets/submissiontab-reviewstep.gif)
+![inoltroscheda-reviewstep](/help/forms/assets/submissiontab-reviewstep.gif)
 
 ## Inviare un modulo adattivo dopo la revisione {#submit-af-after-review}
 
 Per rivedere e confermare il modulo adattivo inviato:
 
-1. Vai a [!UICONTROL Strumenti] >  [!UICONTROL Flusso di lavoro] >  [!UICONTROL Istanze]
+1. Vai a [!UICONTROL Strumenti] > [!UICONTROL Flusso di lavoro] > [!UICONTROL Istanze]
 1. Nella casella in entrata è possibile vedere che è in corso la creazione di un&#39;istanza.
-1. Seleziona l’istanza e fai clic su [!UICONTROL Apri].
+1. Selezionare l&#39;istanza e fare clic su [!UICONTROL Apri].
 1. A questo punto è possibile visualizzare il modulo inviato.
 
 Il revisore esegue azioni diverse come:
 
-* **Invia**: il revisore compila il modulo e lo invia per l’ulteriore elaborazione.
+* **Invia**: il revisore completa il modulo e lo invia per l&#39;ulteriore elaborazione.
 * **Salva**: il revisore salva il modulo nello stato corrente senza inviarlo.
-* **Reimposta**: il revisore cancella tutte le modifiche apportate al modulo e lo ripristina allo stato originale.
-* **Delega**: il revisore trasferisce la proprietà del modulo a un’altra persona per ulteriori azioni o revisioni.
+* **Ripristina**: il revisore cancella tutte le modifiche apportate al modulo e lo ripristina allo stato originale.
+* **Delega**: il revisore trasferisce la proprietà del modulo a un&#39;altra persona per ulteriori azioni o revisioni.

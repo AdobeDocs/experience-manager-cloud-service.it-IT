@@ -36,7 +36,7 @@ Puoi creare un segmento ContextHub nella console Pubblico o durante il processo 
 
 Per creare un segmento ContextHub nella console Pubblico:
 
-1. Nella console Navigazione, seleziona **Personalizzazione**. Seleziona **Tipi di pubblico**.
+1. Nella console Navigazione, selezionare **Personalization**. Seleziona **Tipi di pubblico**.
 1. Seleziona **Crea segmento ContextHub**.
 
    ![Creazione di un segmento](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
@@ -45,7 +45,7 @@ Per creare un segmento ContextHub nella console Pubblico:
 
    >[!NOTE]
    >
-   >Per ordinare l’elenco modificato, tocca o fai clic su **Modificato** per ordinare in base all’ordine decrescente per visualizzare eventuali tipi di pubblico creati.
+   >Per ordinare l&#39;elenco modificato in base all&#39;ordine decrescente, tocca o fai clic su **Modificato** per visualizzare i tipi di pubblico creati.
 
 Per ulteriori dettagli sulla creazione di segmenti utilizzando ContextHub, consulta la documentazione Configurazione della segmentazione con ContextHub. <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
@@ -63,15 +63,15 @@ Quando utilizzi più regole, queste vengono combinate tramite l&#39;operatore bo
 
 Per creare un pubblico di Adobe Target:
 
-1. Nella console Navigazione, seleziona **Personalizzazione**. Seleziona **Tipi di pubblico**.
+1. Nella console Navigazione, selezionare **Personalization**. Seleziona **Tipi di pubblico**.
 
    ![Navigazione ai tipi di pubblico](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. Nella console Pubblico, seleziona **Crea** e poi **Crea pubblico Target**.
+1. Nella console Pubblico, seleziona **Crea** e quindi **Crea pubblico Target**.
 
    ![Creazione di un pubblico Target](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. In **Configurazione Adobe Target** , selezionare la configurazione di destinazione e selezionare **OK**.
+1. Nella finestra di dialogo **Configurazione Adobe Target** selezionare la configurazione di destinazione e quindi **OK**.
 1. Nell&#39;area Regola n. 1 selezionare il tipo di attributo e immettere le informazioni relative agli attributi nei campi disponibili. Al termine, seleziona il segno di spunta a destra dell’attributo per salvarlo. Per informazioni su tutti gli attributi, consulta [Attributi e relative opzioni](#attributes-and-their-options).
 1. Fai clic su **Aggiungi regola** per aggiungere un’altra regola. Immetti tutte le regole necessarie. Le regole sono combinate con l’operatore boolean AND, il che significa che l’audience deve soddisfare tutti i requisiti di ciascuna regola per essere idonea a un’attività.
 1. Seleziona **Avanti**.
@@ -100,6 +100,6 @@ Puoi creare regole di targeting per ciascuno dei seguenti attributi:
 
 Puoi modificare qualsiasi pubblico ContextHub dalla console Pubblico. Puoi modificare anche i tipi di pubblico di Adobe Target, ma solo quelli che sono stati creati in AEM:
 
-1. Nella console Navigazione, seleziona **Personalizzazione**. Seleziona **Tipi di pubblico**.
-1. Seleziona l’icona accanto al segmento ContextHub da modificare, quindi fai clic su **Modifica**.
+1. Nella console Navigazione, selezionare **Personalization**. Seleziona **Tipi di pubblico**.
+1. Seleziona l&#39;icona accanto al segmento ContextHub da modificare, quindi seleziona **Modifica**.
 1. Apporta le modifiche nell&#39;editor segmento. Per ulteriori informazioni, consulta la documentazione di ContextHub. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

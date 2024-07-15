@@ -15,13 +15,13 @@ ht-degree: 12%
 
 >[!CAUTION]
 >
->Se il caching in Dispatcher è abilitato, il [Filtro CORS](/help/headless/deployment/cross-origin-resource-sharing.md) non è necessario, e tale sezione può essere ignorata.
+>Se la memorizzazione nella cache in Dispatcher è abilitata, il [filtro CORS](/help/headless/deployment/cross-origin-resource-sharing.md) non è necessario e tale sezione può essere ignorata.
 
-La memorizzazione nella cache delle query persistenti non è abilitata per impostazione predefinita in Dispatcher. L’abilitazione predefinita non è possibile perché i clienti che utilizzano CORS (Cross-Origin Resource Sharing) con più origini devono rivedere, e possibilmente aggiornare, la propria configurazione di Dispatcher.
+La memorizzazione nella cache delle query persistenti non è abilitata per impostazione predefinita in Dispatcher. L’abilitazione predefinita non è possibile perché i clienti che utilizzano CORS (Cross-Origin Resource Sharing) con più origini devono rivedere, e possibilmente aggiornare, la configurazione di Dispatcher.
 
 >[!NOTE]
 >
->Il Dispatcher non memorizza in cache `Vary` intestazione.
+>Dispatcher non memorizza in cache l&#39;intestazione `Vary`.
 >
 >La memorizzazione nella cache di altre intestazioni relative a CORS può essere abilitata in Dispatcher, ma potrebbe non essere sufficiente in presenza di più origini CORS.
 
@@ -31,9 +31,9 @@ La memorizzazione nella cache delle query persistenti non è abilitata per impos
 
 ## Abilita la memorizzazione nella cache delle query persistenti {#enable-caching-persisted-queries}
 
-Per abilitare la memorizzazione nella cache delle query persistenti, definisci la variabile di Dispatcher `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+Per abilitare la memorizzazione nella cache delle query persistenti, definire la variabile Dispatcher `CACHE_GRAPHQL_PERSISTED_QUERIES`:
 
-1. Aggiungi la variabile al file di Dispatcher `global.vars`:
+1. Aggiungere la variabile al file Dispatcher `global.vars`:
 
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
@@ -41,7 +41,7 @@ Per abilitare la memorizzazione nella cache delle query persistenti, definisci l
 
 >[!NOTE]
 >
->Per ottenere singoli `ETag` calcolo dell’intestazione sulle query persistenti memorizzate nella cache (per *ogni* risposta univoca) `FileETag Digest` l’impostazione deve essere utilizzata nella configurazione dell’host virtuale di dispatcher (se non esiste già):
+>Per ottenere il calcolo individuale dell&#39;intestazione `ETag` nelle query persistenti memorizzate nella cache (per *ogni* risposta univoca), è necessario utilizzare l&#39;impostazione `FileETag Digest` nella configurazione dell&#39;host virtuale di Dispatcher (se non esiste già):
 >
 >```xml
 ><Directory />    
@@ -52,7 +52,7 @@ Per abilitare la memorizzazione nella cache delle query persistenti, definisci l
 
 >[!NOTE]
 >
->Per adeguarsi al [Requisiti di Dispatcher per i documenti che possono essere memorizzati in cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher aggiunge il suffisso `.json` a tutti gli URL di query persistenti, in modo che il risultato possa essere memorizzato nella cache.
+>Per soddisfare i requisiti di [Dispatcher per i documenti che possono essere memorizzati nella cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher aggiunge il suffisso `.json` a tutti gli URL di query persistenti, in modo che il risultato possa essere memorizzato nella cache.
 >
 >Questo suffisso viene aggiunto da una regola di riscrittura, una volta abilitata la memorizzazione in cache delle query persistenti.
 
@@ -60,10 +60,10 @@ Per abilitare la memorizzazione nella cache delle query persistenti, definisci l
 
 I clienti che utilizzano richieste CORS potrebbero dover rivedere e aggiornare la configurazione CORS in Dispatcher.
 
-* Il `Origin` l’intestazione non deve essere passata a AEM publish tramite Dispatcher:
-   * Controlla la `clientheaders.any` file.
+* L&#39;intestazione `Origin` non deve essere passata a AEM Publish tramite Dispatcher:
+   * Controllare il file `clientheaders.any`.
 * Al contrario, le richieste CORS devono essere valutate per le origini consentite a livello di Dispatcher. Questo approccio assicura inoltre che le intestazioni relative a CORS siano impostate correttamente, in un’unica posizione, in tutti i casi.
-   * Tale configurazione deve essere aggiunta al `vhost` file. Di seguito è riportato un esempio di configurazione; per semplicità, è stata fornita solo la parte CORS. Puoi adattarlo ai tuoi casi d’uso specifici.
+   * Tale configurazione deve essere aggiunta al file `vhost`. Di seguito è riportato un esempio di configurazione; per semplicità, è stata fornita solo la parte CORS. Puoi adattarlo ai tuoi casi d’uso specifici.
 
   ```xml
   <VirtualHost *:80>

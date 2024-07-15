@@ -23,7 +23,7 @@ Le seguenti API sono core per l’AEM.
 |---|---|
 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Astrazioni di prodotto come pagine, risorse, flussi di lavoro e così via. |
 | [Interfaccia utente Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Stack Open Web di Adobe, che fornisce vari componenti essenziali (i materiali 6.5 Granite si applicano ad AEMaaCS) |
-| [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | Stile visivo di Adobe per le interfacce utente cloud, progettato per fornire coerenza nell’esperienza utente |
+| [Interfaccia utente Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Stile visivo di Adobe per le interfacce utente cloud, progettato per fornire coerenza nell’esperienza utente |
 
 <!---
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
@@ -31,7 +31,7 @@ Le seguenti API sono core per l’AEM.
 
 >[!NOTE]
 >
->Per informazioni aggiornate sulle API di Experience Manager, visita anche [API di Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Per informazioni aggiornate sulle API Experience Manager, visita anche [API Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## Framework aggiuntivi {#additional-apis}
 
@@ -39,9 +39,9 @@ L’AEM si basa su diverse API open-source aggiuntive.
 
 | API | Descrizione |
 |---|---|
-| [Apache Sling](https://sling.apache.org/apidocs/sling11/) | Framework web che utilizza un Java Content Repository (JCR) per archiviare e gestire i contenuti |
+| [Sling Apache](https://sling.apache.org/apidocs/sling11/) | Framework web che utilizza un Java Content Repository (JCR) per archiviare e gestire i contenuti |
 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Implementazione di un Java Content Repository (JCR) gerarchico scalabile e ad alte prestazioni da utilizzare come base per siti web moderni di prim’ordine |
-| [Archivio dei contenuti Java](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | Specifiche per JCR versione 2.0 |
+| [Archivio contenuto Java](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | Specifiche per JCR versione 2.0 |
 | [Apache Felix](https://felix.apache.org) | Implementazione del framework e della piattaforma di servizi Open Services Gateway (OSGi) |
 
 ## Linee guida sulle preferenze API {#guidelines}
@@ -51,7 +51,7 @@ L’AEM è basato sui seguenti quattro set di API Java primari in ordine decresc
 | Priorità | API | Descrizione |
 |---|---|---|
 | 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Astrazioni di prodotto come pagine, risorse, flussi di lavoro e così via. |
-| 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | Astrazioni REST e basate su risorse come risorse, mappe del valore e richieste HTTP. |
+| 2 | [Sling Apache](https://sling.apache.org/apidocs/sling11/) | Astrazioni REST e basate su risorse come risorse, mappe del valore e richieste HTTP. |
 | 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Astrazioni di dati e contenuti come nodo, proprietà e sessioni. |
 | 4 | [Apache Felix](https://felix.apache.org/) | Astrazioni dei contenitori di applicazioni OSGi come servizi e componenti (OSGi). |
 
@@ -59,7 +59,7 @@ Se l’AEM fornisce un’API, preferiscila a Sling, JCR e OSGi. Se l’AEM non f
 
 >[!TIP]
 >
->Per informazioni dettagliate su queste linee guida, consultare il documento [Comprendere le best practice per le API Java.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+>Per informazioni dettagliate su queste linee guida, consulta il documento [Comprendere le best practice per le API Java.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ## Servizi e API di distribuzione e gestione dei contenuti AEM {#delivery-apis}
 
@@ -71,22 +71,22 @@ L’AEM offre componenti personalizzabili e opzioni per la distribuzione dei con
 | [Esportatore JSON](/help/implementing/developing/components/json-exporter.md) | Distribuisci il contenuto di qualsiasi pagina AEM in formato modello dati JSON |
 | [Abilitazione dell’esportazione JSON per un componente](/help/implementing/developing/components/enabling-json-exporter.md) | Generare l’esportazione JSON di contenuto componente basato su un framework modeler |
 | [API Assets](/help/assets/mac-api-assets.md) | Consente operazioni di creazione-lettura-aggiornamento-eliminazione (CRUD) sulle risorse, inclusi dati binari, metadati, rappresentazioni e commenti. Consulta API HTTP di AEM Assets |
-| [API HTTP per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md) | Accedere ai contenuti dei frammenti di contenuto direttamente tramite l’API HTTP tramite operazioni CRUD |
+| [API HTTP frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md) | Accedere ai contenuti dei frammenti di contenuto direttamente tramite l’API HTTP tramite operazioni CRUD |
 | [API GraphQL per frammenti di contenuto](/help/headless/graphql-api/content-fragments.md) | Consentire la distribuzione efficiente dei frammenti di contenuto ai client JavaScript nelle implementazioni CMS headless |
-| [API HTTP risorse frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato esatto delle richieste di risorse HTTP supportate |
-| [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) | OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto |
+| [Frammenti di contenuto API HTTP Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato esatto delle richieste di risorse HTTP supportate |
+| [OpenAPI per il modello Frammento di contenuto e Frammento di contenuto](/help/headless/content-fragment-openapis.md) | OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto |
 
 ## API specifiche per SPA {#spa-apis}
 
-Il framework SDK dell’editor di applicazioni a pagina singola (SPA) dell’AEM fornisce riferimenti API JavaScript specifici.
+Il framework SDK dell’editor di applicazioni a pagina singola (SPA) dell’AEM fornisce riferimenti API specifici a JavaScript.
 
 | API | Descrizione |
 |---|---|
-| [Mappatura dei componenti](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping) | Consente all&#39;applicazione a pagina singola di mappare i componenti front-end ai tipi di risorse Adobe Experience Manager (componenti AEM) |
-| [Gestione modelli di pagina](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager) | Interprete tra Adobe Experience Manager Editor e Adobe Experience Manager Single Page Application (SPA) Editor |
-| [React - Componenti modificabili](https://www.npmjs.com/package/@adobe/aem-react-editable-components) | Fornisce i componenti React e il livello di integrazione per iniziare a utilizzare Adobe Experience Manager Site Editor |
+| [Mappatura componenti](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping) | Consente all&#39;applicazione a pagina singola di mappare i componenti front-end ai tipi di risorse Adobe Experience Manager (componenti AEM) |
+| [Gestione modelli pagine](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager) | Interprete tra Adobe Experience Manager Editor e Adobe Experience Manager Single Page Application (SPA) Editor |
+| [Componenti modificabili React](https://www.npmjs.com/package/@adobe/aem-react-editable-components) | Fornisce i componenti React e il livello di integrazione per iniziare a utilizzare Adobe Experience Manager Site Editor |
 | [Angular di componenti modificabili](https://www.npmjs.com/package/@adobe/aem-angular-editable-components) | Fornisce i componenti di Angular e il livello di integrazione per iniziare a utilizzare Adobe Experience Manager Site Editor |
 
 >[!TIP]
 >
->Consulta la sezione [Introduzione e procedura dettagliata per l’SPA](/help/implementing/developing/hybrid/introduction.md) per ulteriori informazioni sulle applicazioni a pagina singola.
+>Per ulteriori informazioni sulle applicazioni a pagina singola, vedere [Introduzione all&#39;SPA e procedura dettagliata](/help/implementing/developing/hybrid/introduction.md).

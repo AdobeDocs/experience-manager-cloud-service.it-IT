@@ -10,15 +10,15 @@ ht-degree: 1%
 
 ---
 
-# Risorse di riferimento per Forms as a Cloud Service {#reference-themes}
+# Assets di riferimento per Forms as a Cloud Service {#reference-themes}
 
-È possibile ottenere i temi di riferimento, i modelli e il modello dati del modulo (FDM) installando [Pacchetto risorse di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Aiuta ad avviare e accelerare rapidamente lo sviluppo di Forms adattivi. È possibile utilizzare [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=it) per distribuire questo pacchetto nell’ambiente as a Cloud Service AEM Forms.
+È possibile ottenere i temi di riferimento, i modelli e il modello dati del modulo installando il [pacchetto Assets di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Aiuta ad avviare e accelerare rapidamente lo sviluppo di Forms adattivi. Puoi utilizzare [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=it) per distribuire questo pacchetto nell&#39;ambiente AEM Forms as a Cloud Service.
 
 Le risorse di riferimento incluse nel pacchetto sono:
 
 ## Temi {#themes}
 
-[Temi](/help/forms/themes.md) consente di applicare uno stile ai moduli senza una profonda conoscenza dei CSS. Sono inclusi i seguenti temi:
+[Temi](/help/forms/themes.md) consente di applicare uno stile ai moduli senza una conoscenza approfondita del CSS. Sono inclusi i seguenti temi:
 
 * Beryl
 * Tranquilla
@@ -32,7 +32,7 @@ Ogni tema contiene uno stile univoco ed elegante che puoi utilizzare per creare 
 
 I temi inclusi in questo pacchetto sono reattivi e lo stile in questi temi è definito per i display mobili e desktop. La maggior parte dei browser moderni su diversi dispositivi può eseguire il rendering di moduli applicati con uno di questi temi senza alcun problema.
 
-Per ulteriori informazioni sull’installazione del pacchetto, consulta [Come utilizzare i pacchetti](/help/implementing/developing/tools/package-manager.md).
+Per ulteriori informazioni sull&#39;installazione del pacchetto, vedere [Come utilizzare i pacchetti](/help/implementing/developing/tools/package-manager.md).
 
 ### Beryl {#beryl}
 
@@ -83,7 +83,7 @@ Il tema Tranquilla fornisce sfumature chiare e scure della combinazione di color
 
 Il tema Ultramarine utilizza tonalità blu profonde per evidenziare componenti quali schede, pannelli, caselle di testo e pulsanti.
 
-![Tema Ultramarino](/help/forms/assets/ultramarine.png)
+![Tema Ultramarine](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
 ### Urbano {#urbane}

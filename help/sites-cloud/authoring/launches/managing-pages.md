@@ -52,7 +52,7 @@ Tutti questi punti di ingresso aprono il lancio nella console Sites, dove puoi:
 
 * Naviga,
 * **Creare** nuove pagine,
-* Seleziona le pagine esistenti e agisci; ad esempio, **Modifica**, aperto **Proprietà**, **Blocca**, **Copia**, **Incolla** e **Elimina**
+* Seleziona le pagine esistenti e agisci; ad esempio, **Modifica**, apri **Proprietà**, **Blocca**, **Copia**, **Incolla** e **Elimina**
   ![Navigare il lancio nella console Sites da Gestisci contenuto](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Utilizza la barra **Riferimenti** per tornare alle pagine **Origine lancio**:
   ![Console Sites: origine lancio](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)

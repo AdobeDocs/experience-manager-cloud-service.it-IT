@@ -131,7 +131,7 @@ Ora che disponi di un progetto GitHub, crea un nuovo sito AEM utilizzabile dal p
 >
 >Per modificare il sito con l’Editor universale, è necessario utilizzare un browser basato su Chromium.
 
-1. Scarica l’ultima versione di authoring WYSIWYG con il modello del sito Edge Delivery Services da GitHub all’indirizzo [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. Scarica l&#39;ultima versione di authoring WYSIWYG con il modello del sito Edge Delivery Services da GitHub all&#39;indirizzo [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
 1. Accedi all’istanza di authoring AEM as a Cloud Service, passa alla console Sites e tocca o fai clic su **Crea** -> **Sito da modello**.
 
@@ -199,4 +199,4 @@ Per ulteriori informazioni, consulta la guida [Creazione di blocchi preparati pe
 
 >[!TIP]
 >
->Per una procedura dettagliata end-to-end di creazione di un nuovo progetto Edge Delivery Services abilitato per l’authoring WYSIWYG con AEM as a Cloud Service come origine di contenuto, vedi [questo webinar AEM GEMs.](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Per una procedura dettagliata end-to-end di creazione di un nuovo progetto Edge Delivery Services abilitato per l&#39;authoring WYSIWYG con AEM as a Cloud Service come origine di contenuto, visualizzare [questo webinar AEM GEMs.](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)

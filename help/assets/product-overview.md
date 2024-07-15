@@ -27,13 +27,13 @@ AEM Assets funge da unica fonte di verità e tutte le risorse approvate sono aut
 
 Le proprietà più comuni all’interno di Content Hub, come i filtri di ricerca, i campi disponibili durante l’aggiunta o l’importazione di risorse, le proprietà delle risorse e il contenuto del banner per il branding, sono configurabili e un amministratore può configurare facilmente l’interfaccia utente di Content Hub in base alle proprie esigenze.
 
-**Possibilità per gli utenti non creativi di modificare e mixare i contenuti mantenendo il marchio**
+**Consenti agli utenti non creativi di modificare e mixare i contenuti mantenendo il marchio**
 
 Content Hub consente di creare nuovi contenuti con Adobe Express (se disponi di diritti Adobi Express). Puoi modificare i contenuti esistenti con strumenti facili da usare, produrre varianti on-brand con modelli ed elementi del brand e creare nuovi contenuti con le funzionalità GenAI più recenti di Adobe Firefly.
 
-**Ottieni informazioni approfondite sull’utilizzo dei contenuti tra i team**
+**Ottieni informazioni su come il contenuto viene utilizzato nei team**
 
-[!DNL Content Hub] fornisce informazioni utili sulle risorse, affrontando una sfida comune che spesso interessa il marketing: le statistiche sull’utilizzo delle risorse utilizzate nelle campagne di marketing, nei canali e in diverse aree geografiche. Acquisendo una chiara comprensione delle prestazioni e della popolarità delle risorse, fornisce informazioni fruibili essenziali per migliorare l’esperienza utente.
+[!DNL Content Hub] fornisce informazioni utili sulle risorse, affrontando una sfida comune che spesso interessa le parti interessate del marketing: le statistiche sull&#39;utilizzo delle risorse utilizzate nelle campagne di marketing, nei canali e in diverse aree geografiche. Acquisendo una chiara comprensione delle prestazioni e della popolarità delle risorse, fornisce informazioni fruibili essenziali per migliorare l’esperienza utente.
 
 ## Prerequisiti {#prerequisites-content-hub}
 
@@ -41,25 +41,25 @@ Content Hub richiede un ambiente di authoring di produzione di Experience Manage
 
 ## Come accedere a Content Hub? {#access-content-hub}
 
-[Dopo la configurazione di Content Hub](/help/assets/deploy-content-hub.md) e aggiungendo un utente al [Profilo prodotto Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), è possibile accedere a Content Hub utilizzando i seguenti modi:
+[Dopo aver configurato Content Hub](/help/assets/deploy-content-hub.md) e aggiunto un utente al [profilo di prodotto Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), è possibile accedere a Content Hub nei modi seguenti:
 
 * Accedi a Content Hub utilizzando il seguente collegamento:
 
   `https://experience.adobe.com/#/assets/contenthub`
 
-* Accedi a experience.adobe com e fai clic su **[!UICONTROL Experience Manager Assets Content Hub]** disponibile in **[!UICONTROL Accesso rapido]** sezione:
+* Accedi a experience.adobe com e fai clic su **[!UICONTROL Experience Manager Assets Content Hub]** disponibile nella sezione **[!UICONTROL Accesso rapido]**:
   ![Accesso a Content Hub](assets/access-content-hub.png)
 
 * Accedi a experience.adobe com e fai clic su **[!UICONTROL Experience Manager Assets Content Hub]** disponibile nel commutatore del prodotto:
-  ![Metodo di accesso Content Hub 3](assets/access-content-hub-alternate.png)
+  ![Metodo di accesso a Content Hub 3](assets/access-content-hub-alternate.png)
 
 
 
 ## Fornire feedback a Content Hub {#provide-content-hub-feedback}
 
-Per consigliare miglioramenti relativi ai prodotti, fai clic su **[!UICONTROL Feedback]** accanto al nome dell’organizzazione nella parte superiore dell’interfaccia utente di Content Hub.
+Per consigliare miglioramenti relativi al prodotto, fai clic su **[!UICONTROL Feedback]** accanto al nome della tua organizzazione nella parte superiore dell&#39;interfaccia utente di Content Hub.
 
-Specifica un oggetto, una descrizione del consiglio e, se necessario, allega i file. Clic **[!UICONTROL Invia]** per inviare il feedback ad Adobe.
+Specifica un oggetto, una descrizione del consiglio e, se necessario, allega i file. Fai clic su **[!UICONTROL Invia]** per inviare il feedback all&#39;Adobe.
 
 ![Feedback su Content Hub](assets/content-hub-feedback.png)
 
@@ -67,21 +67,21 @@ Specifica un oggetto, una descrizione del consiglio e, se necessario, allega i f
 
 Per configurare Content Hub per il team, segui la procedura riportata di seguito.
 
-1. [Abilitare Content Hub per Experience Manager Assets tramite Cloud Manager](deploy-content-hub.md#enable-content-hub).
+1. [Abilita Content Hub per Experience Manager Assets tramite Cloud Manager](deploy-content-hub.md#enable-content-hub).
 
 1. [Amministratore Content Hub integrato](deploy-content-hub.md#onboard-content-hub-administrator).
 
-1. [Aggiungere utenti chiave di Content Hub](deploy-content-hub.md#onboard-content-hub-consumer-users).
+1. [Aggiungi utenti chiave di Content Hub](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
-1. [Autori o amministratori DAM che devono approvare le risorse utilizzando le risorse Experience Manager](approve-assets.md).
+1. [Autori o amministratori DAM che devono approvare le risorse utilizzando Experience Manager assets](approve-assets.md).
 
-1. [Gli amministratori possono configurare l’interfaccia utente di Content Hub per altri utenti](configure-content-hub-ui-options.md).
+1. [Gli amministratori possono configurare l&#39;interfaccia utente di Content Hub per altri utenti](configure-content-hub-ui-options.md).
 
-1. [Concedi l’accesso a Content Hub a più utenti del team](deploy-content-hub.md#onboard-content-hub-consumer-users).
+1. [Concedi l&#39;accesso a Content Hub a più utenti del team](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [Accedere al portale Content Hub](#access-content-hub).
 
-1. [Fornire feedback a Content Hub](#provide-content-hub-feedback).
+1. [Fornisci feedback su Content Hub](#provide-content-hub-feedback).
 
 
 ## Ulteriori informazioni sulle funzionalità chiave {#key-capabilities-content-module}
@@ -93,11 +93,11 @@ Per configurare Content Hub per il team, segui la procedura riportata di seguito
    </a>
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">
-      <strong>Configurare l’interfaccia utente di Content Hub</strong>
+      <strong>Configura interfaccia utente di Content Hub</strong>
       </a>
    </div>
    <p>
-      <em>Scopri come gli amministratori possono configurare l’interfaccia utente di Content Hub. </em>
+      <em>Scopri come configurare l'interfaccia utente di Content Hub. </em>
    </p>
 </td>
 
@@ -108,7 +108,7 @@ Per configurare Content Hub per il team, segui la procedura riportata di seguito
    </a>
    <div>
       <a href="/help/assets/search-assets-content-hub.md">
-      <strong>Cercare le risorse disponibili in Content Hub</strong>
+      <strong>Cerca risorse disponibili in Content Hub</strong>
       </a>
    </div>
    <p>
@@ -136,7 +136,7 @@ Per configurare Content Hub per il team, segui la procedura riportata di seguito
    </a>
    <div>
       <a href="/help/assets/share-assets-content-hub.md">
-      <strong>Condividere le risorse disponibili in Content Hub</strong>
+      <strong>Condividi risorse disponibili in Content Hub</strong>
       </a>
    </div>
    <p>
@@ -149,11 +149,11 @@ Per configurare Content Hub per il team, segui la procedura riportata di seguito
    </a>
    <div>
       <a href="/help/assets/collections-content-hub.md">
-      <strong>Gestire le raccolte in Content Hub</strong>
+      <strong>Gestione raccolte in Content Hub</strong>
       </a>
    </div>
    <p>
-      <em>Scopri come creare e gestire le raccolte utilizzando le risorse.</em>
+      <em>Scopri come creare raccolte utilizzando le risorse e quindi gestirle.</em>
    </p>
 </td>
 <td>
@@ -162,11 +162,11 @@ Per configurare Content Hub per il team, segui la procedura riportata di seguito
    </a>
    <div>
       <a href="/help/assets/insights-content-hub.md">
-      <strong>Visualizzare informazioni approfondite sulle risorse in Content Hub</strong>
+      <strong>Visualizza informazioni sulle risorse in Content Hub</strong>
       </a>
    </div>
    <p>
-      <em> Il modulo dei contenuti fornisce informazioni preziose sulle risorse, affrontando una sfida comune che spesso interessa le parti interessate del marketing</em>
+      Il modulo di contenuto <em> fornisce informazioni utili sulle risorse, affrontando una sfida comune che spesso le parti interessate del marketing incontrano</em>
    </p>
 </td>
 </table>

@@ -17,7 +17,7 @@ ht-degree: 92%
 
 # Editor di moduli adattivi {#introduction-to-authoring-adaptive-forms}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -29,7 +29,7 @@ ht-degree: 92%
 I moduli adattivi consentono di creare moduli coinvolgenti e reattivi, che si rivelano, inoltre, dinamici e adattivi. [!DNL AEM Forms] fornisce un’interfaccia utente intuitiva e componenti pronti all’uso per la creazione e l’utilizzo dei moduli adattivi. È possibile scegliere di creare un modulo adattivo basato su un modello o schema di modulo o senza un modello di modulo. È importante scegliere con attenzione il modello di modulo, che deve risultare adatto non solo alle proprie esigenze, ma deve consentire di accrescere gli investimenti e le risorse infrastrutturali esistenti. Per creare un modulo adattivo, è possibile scegliere tra le seguenti opzioni:
 
 * **Utilizzo di un modello dati modulo (FDM)**
-  [Integrazione dei dati](data-integration.md) consente di integrare entità e servizi da diverse origini dati in un modello dati modulo (FDM) che può essere utilizzato per creare Forms adattivo. Scegli Modello dati modulo (FDM) se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
+  [Integrazione dei dati](data-integration.md) consente di integrare entità e servizi da diverse origini dati in un modello dati modulo (FDM) che è possibile utilizzare per creare Forms adattivo. Scegli Modello dati modulo (FDM) se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
 
 * **Utilizzo di un modello di modulo XDP**
 Si tratta di un modello di modulo ideale per gli investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e pattern.
@@ -98,7 +98,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
 
   Consente di modificare le proprietà di un componente. Le proprietà cambiano in base a un componente. Per visualizzare le proprietà del contenitore Modulo adattivo:
 
-  Seleziona un componente, quindi seleziona ![a livello di campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Contenitore modulo adattivo]** e quindi selezionare ![proprietà](assets/Smock_Wrench_18_N.svg).
+  Seleziona un componente, quindi seleziona ![livello campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Contenitore modulo adattivo]**, quindi seleziona ![proprietà](assets/Smock_Wrench_18_N.svg).
 
 * **Browser risorse**
 
@@ -309,7 +309,7 @@ La barra degli strumenti della pagina in alto contiene opzioni che consentono di
 
 Quando selezioni un componente, viene visualizzata una barra degli strumenti che consente di utilizzarlo. Sono disponibili opzioni per tagliare, incollare, spostare e specificare le proprietà dei componenti. Le opzioni disponibili sono:
 
-R.**Configura**: quando selezioni **[!UICONTROL Configura]**, le proprietà del componente sono visibili nella barra laterale. La configurazione di queste proprietà ti consente di personalizzare l’esperienza di acquisizione dei dati. Puoi modificare il nome dell’elemento del componente, specificare il testo dell’etichetta nel campo Titolo del componente. Il nome dell’elemento consente di acquisire i valori immessi dall’utente utilizzando il componente. Nelle proprietà del componente, specifichi il comportamento del componente e gestisci l’input dell’utente. Configura le proprietà nella barra laterale per acquisire i dati utente e utilizzalo per un’ulteriore elaborazione. Le proprietà per il contenitore Modulo adattivo consentono di specificare le librerie client, i layout, i temi, le impostazioni del documento di record, salvare le impostazioni, le impostazioni di invio e le impostazioni dei metadati.
+A.**Configura**: quando selezioni **[!UICONTROL Configura]**, le proprietà del componente sono visibili nella barra laterale. La configurazione di queste proprietà ti consente di personalizzare l’esperienza di acquisizione dei dati. Puoi modificare il nome dell’elemento del componente, specificare il testo dell’etichetta nel campo Titolo del componente. Il nome dell’elemento consente di acquisire i valori immessi dall’utente utilizzando il componente. Nelle proprietà del componente, specifichi il comportamento del componente e gestisci l’input dell’utente. Configura le proprietà nella barra laterale per acquisire i dati utente e utilizzalo per un’ulteriore elaborazione. Le proprietà per il contenitore Modulo adattivo consentono di specificare le librerie client, i layout, i temi, le impostazioni del documento di record, salvare le impostazioni, le impostazioni di invio e le impostazioni dei metadati.
 
 B.**Copia**: é possibile utilizzare l’opzione Copia per copiare un componente e incollarlo in altre posizioni del modulo Quando incolli un componente, il componente incollato ottiene un nuovo nome di elemento ma mantiene le proprietà del componente copiato.
 
@@ -327,7 +327,7 @@ H. **Gruppo**: consente di selezionare più componenti se si desidera tagliare, 
 
 I. **Elemento principale**: consente di selezionare l’elemento principale di un componente. Ad esempio, un campo di testo si trova all’interno di una sottosezione, che si trova in una sezione. La sezione si trova nel pannello principale della guida e il contenitore Modulo adattivo è l’elemento principale di un pannello principale della guida. Per un componente, è possibile visualizzare tutte le opzioni con la gerarchia ordinata dal basso verso l’alto.
 
-Ad esempio, se selezioni **[!UICONTROL Elemento padre]** per una casella di testo, è possibile visualizzare:
+Se ad esempio si seleziona **[!UICONTROL Elemento padre]** per una casella di testo, è possibile visualizzare:
 
 * Sottosezione
 * Sezione

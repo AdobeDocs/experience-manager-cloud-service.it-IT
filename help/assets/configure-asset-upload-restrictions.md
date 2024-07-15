@@ -25,15 +25,15 @@ Per configurare le restrizioni di caricamento delle risorse è necessario dispor
 
 ## Applicare restrizioni per il caricamento delle risorse {#apply-restrictions-asset-uploadsssssss}
 
-Per configurare [!DNL Experience Manager] per limitare gli utenti al caricamento di file di tipi MIME specifici:
+Per configurare [!DNL Experience Manager] in modo da limitare gli utenti al caricamento di file di tipi MIME specifici:
 
-1. Accedi a **[!UICONTROL Strumenti > Risorse > Configurazioni risorse]**.
+1. Passa a **[!UICONTROL Strumenti > Assets > Configurazioni Assets]**.
 
-1. Clic **[!UICONTROL Limitazioni di caricamento]**.
+1. Fai clic su **[!UICONTROL Limitazioni di caricamento]**.
 
-1. Clic **[!UICONTROL Aggiungi]** per definire i tipi MIME consentiti.
+1. Fai clic su **[!UICONTROL Aggiungi]** per definire i tipi MIME consentiti.
 
-1. Specificare il tipo MIME nella casella di testo. Puoi fare clic su **[!UICONTROL Aggiungi]** per specificare altri tipi MIME consentiti. Puoi anche fare clic su ![icona elimina](assets/delete-icon.svg) per eliminare qualsiasi tipo MIME dall&#39;elenco.
+1. Specificare il tipo MIME nella casella di testo. È possibile fare di nuovo clic su **[!UICONTROL Aggiungi]** per specificare altri tipi MIME consentiti. Puoi anche fare clic su ![icona Elimina](assets/delete-icon.svg) per eliminare qualsiasi tipo MIME dall&#39;elenco.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
@@ -43,7 +43,7 @@ Per consentire il caricamento di immagini in tutti i formati e file PDF in Exper
 
 ![Restrizioni al caricamento delle risorse](assets/asset-upload-restrictions.png)
 
-`image/*` in quanto il tipo MIME consente il caricamento di immagini in tutti i formati. `application/pdf` in quanto il tipo MIME consente il caricamento di file PDF in Experience Manager Assets.
+`image/*` come tipo MIME consente il caricamento di immagini in tutti i formati. `application/pdf` come tipo MIME consente il caricamento di file PDF in Experience Manager Assets.
 
 Se tenti di caricare un file non incluso nell’elenco dei tipi MIME consentiti, Experience Manager Assets visualizza il seguente messaggio di errore:
 
@@ -55,7 +55,7 @@ Se tenti di caricare un file non incluso nell’elenco dei tipi MIME consentiti,
 
 Per aggiungere formati immagine specifici ai tipi MIME consentiti e limitare il caricamento di tutti gli altri formati di risorse, effettua le seguenti impostazioni:
 
-![Limitazioni per le risorse](assets/asset-restrictions.png)
+![Restrizioni risorse](assets/asset-restrictions.png)
 
 In base alle impostazioni illustrate nell’immagine, puoi caricare in Experience Manager Assets immagini nei formati .JPG, .PNG e .GIF.
 

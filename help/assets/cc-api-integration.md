@@ -12,53 +12,53 @@ ht-degree: 5%
 
 ---
 
-# Genera varianti di risorse tramite [!DNL Adobe Creative Cloud] integrazione {#content-automation}
+# Genera varianti di risorse utilizzando l&#39;integrazione [!DNL Adobe Creative Cloud] {#content-automation}
 
-Il componente aggiuntivo di automazione dei contenuti si integra [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] e [!DNL Adobe Creative Cloud] API per elaborare in modo creativo le risorse su larga scala. [!DNL Experience Manager] utilizza basate su cloud [microservizi per risorse](/help/assets/asset-microservices-overview.md) per utilizzare [!DNL Adobe Creative Cloud] funzioni e automatizza la creazione delle risorse e la gestione dei supporti.
+Il componente aggiuntivo di automazione dei contenuti integra [!DNL Adobe Experience Manager Assets] come API [!DNL Cloud Service] e [!DNL Adobe Creative Cloud] per elaborare in modo creativo le risorse su larga scala. [!DNL Experience Manager] utilizza i microservizi [asset](/help/assets/asset-microservices-overview.md) basati su cloud per utilizzare le funzionalità [!DNL Adobe Creative Cloud] e automatizzare la creazione delle risorse e la gestione dei supporti.
 
-Per modificare le risorse in [!DNL Adobe Photoshop] e [!DNL Adobe Lightroom], non è necessario scaricare risorse da [!DNL Experience Manager Assets], modificali e caricali di nuovo. Puoi creare e configurare un profilo di elaborazione in [!DNL Experience Manager], applica il profilo a una cartella e carica le risorse nella cartella. Le risorse caricate vengono rielaborate in base ai profili di elaborazione e si ottengono varianti di tali risorse. L’elaborazione in blocco coerente e semplice consente di risparmiare sforzi manuali e di velocizzare la creazione dei contenuti, anche senza la necessità di competenze creative superiori. Inoltre, gli sviluppatori e i partner possono estendere i microservizi delle risorse con accesso diretto a queste API e includere una logica personalizzata.
+Per modificare le risorse in [!DNL Adobe Photoshop] e [!DNL Adobe Lightroom], non è necessario scaricare, modificare e caricare nuovamente le risorse da [!DNL Experience Manager Assets]. È possibile creare e configurare un profilo di elaborazione in [!DNL Experience Manager], applicarlo a una cartella e caricare le risorse nella cartella. Le risorse caricate vengono rielaborate in base ai profili di elaborazione e si ottengono varianti di tali risorse. L’elaborazione in blocco coerente e semplice consente di risparmiare sforzi manuali e di velocizzare la creazione dei contenuti, anche senza la necessità di competenze creative superiori. Inoltre, gli sviluppatori e i partner possono estendere i microservizi delle risorse con accesso diretto a queste API e includere una logica personalizzata.
 
 Gli utenti possono creare profili di elaborazione per automatizzare le seguenti operazioni creative sulle loro risorse:
 
-* **Tono automatico**: utilizza l’intelligenza artificiale per analizzare i contenuti dell’immagine e corregge in modo intelligente la luce e i colori in base agli attributi univoci dell’immagine.
+* **Tono automatico**: utilizza l&#39;intelligenza artificiale per analizzare il contenuto dell&#39;immagine e corregge in modo intelligente la luce e i colori in base agli attributi univoci dell&#39;immagine.
 
-* **Verticale automatico**: utilizza l’intelligenza artificiale per analizzare il contenuto dell’immagine e correggere la prospettiva distorta nelle immagini. Ad esempio, per creare orizzonti di livello.
+* **Altezza automatica**: utilizza l&#39;intelligenza artificiale per analizzare il contenuto dell&#39;immagine e correggere la prospettiva distorta nelle immagini. Ad esempio, per creare orizzonti di livello.
 
   ![tono automatico](/help/assets/assets/content-automation-autotone.png)
 
-  *Figura: Le funzioni di tono automatico e raddrizzamento automatico contribuiscono a migliorare le immagini distorte.*
+  *Figura: Toni automatici e raddrizzamento automatico possono contribuire a migliorare le immagini distorte.*
 
-* **Predefiniti Lightroom**: applica un aspetto definito dall’utente alle immagini per ottenere un aspetto coerente utilizzando predefiniti personalizzati.
+* **Predefiniti Lightroom**: applica un aspetto definito dall&#39;utente alle immagini per ottenere un aspetto coerente utilizzando predefiniti personalizzati.
 
   ![Predefinito Lightroom](/help/assets/assets/content-automation-lrpresets.png)
 
-  *Figura: Predefinito di Adobe Lightroom per migliorare la qualità delle immagini in modo coerente per molte immagini.*
+  *Figura: predefinito Adobe Lightroom per migliorare la qualità delle immagini in modo coerente per molte immagini.*
 
-* **Ritaglio immagine**: utilizza l’intelligenza artificiale per creare una selezione intorno a oggetti salienti e rimuovere lo sfondo con un singolo comando.
+* **Ritaglio immagine**: utilizza l&#39;intelligenza artificiale per creare la selezione intorno agli oggetti salienti e rimuovere lo sfondo con un singolo comando.
 
   ![Rimuovere lo sfondo e tagliare un&#39;immagine da una foto](/help/assets/assets/content-automation-backgroundremove.png)
 
-* **Maschera immagine**: utilizza l’intelligenza artificiale per creare una maschera intorno a oggetti salienti con un singolo comando.
+* **Maschera immagine**: utilizza l&#39;intelligenza artificiale per creare una maschera intorno a oggetti salienti con un solo comando.
 
-  ![Mascherare un’immagine tramite AI](/help/assets/assets/content-automation-mask.png)
+  ![Mascherare un&#39;immagine utilizzando AI](/help/assets/assets/content-automation-mask.png)
 
 * **Azioni Photoshop**: applica una serie di [!DNL Adobe Photoshop] attività a un file o a un batch di file.
 
   ![Azioni Photoshop](/help/assets/assets/content-automation-psactions.png)
 
-* **Sostituzione Oggetto Avanzata**: personalizza su larga scala consentendo di scambiare le immagini mantenendo tutti gli effetti e le regolazioni applicati all’interno di un file PSD.
+* **Sostituzione oggetto avanzato**: personalizzazione su larga scala consentendo di scambiare le immagini mantenendo tutti gli effetti e le regolazioni applicati all&#39;interno di un file PSD.
 
-  ![Sostituire gli oggetti in modo intelligente](/help/assets/assets/content-automation-objectreplace.png)
+  ![Sostituisci gli oggetti in modo intelligente](/help/assets/assets/content-automation-objectreplace.png)
 
-## Abilita l’automazione dei contenuti per il programma as a Cloud Service AEM {#enable-content-automation}
+## Abilitare il programma di automazione dei contenuti per AEM as a Cloud Service {#enable-content-automation}
 
-Per abilitare il componente aggiuntivo Automazione dei contenuti per il programma as a Cloud Service per l’AEM utilizzando Cloud Manager:
+Per abilitare il componente aggiuntivo Automazione dei contenuti per il programma AEM as a Cloud Service utilizzando Cloud Manager:
 
 1. Contatta il rappresentante del tuo account per concedere in licenza il componente aggiuntivo di automazione dei contenuti.
 1. Accedi a Cloud Manager e passa alla tua organizzazione utilizzando il selettore organizzazione.
-1. Clic **[!UICONTROL Aggiungi programma]** e specificare il nome di un programma.
+1. Fare clic su **[!UICONTROL Aggiungi programma]** e specificare un nome di programma.
 1. Fai clic su **[!UICONTROL Continua]**.
-1. Espandi **[!UICONTROL Risorse]** e seleziona **[!UICONTROL Automazione dei contenuti]**.
+1. Espandi **[!UICONTROL Assets]** e seleziona **[!UICONTROL Automazione contenuti]**.
 1. Fai clic su **[!UICONTROL Crea]**.
 1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
@@ -66,9 +66,9 @@ Se devi aggiungere il componente aggiuntivo Automazione dei contenuti a un progr
 
 1. Fai clic su ... nella scheda del programma.
 
-1. Seleziona **[!UICONTROL Modifica programma]** e quindi seleziona **[!UICONTROL Soluzioni e componenti aggiuntivi]** scheda.
+1. Seleziona **[!UICONTROL Modifica programma]**, quindi seleziona la scheda **[!UICONTROL Soluzioni e componenti aggiuntivi]**.
 
-1. Espandi **[!UICONTROL Risorse]** e seleziona **[!UICONTROL Automazione dei contenuti]**.
+1. Espandi **[!UICONTROL Assets]** e seleziona **[!UICONTROL Automazione contenuti]**.
 1. Fai clic su **[!UICONTROL Aggiorna]**.
 1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
@@ -76,30 +76,30 @@ Se devi aggiungere il componente aggiuntivo Automazione dei contenuti a un progr
 
 Per utilizzare i profili di elaborazione per creare automaticamente le varianti, effettua le seguenti operazioni:
 
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili elaborazione]**.
+1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili di elaborazione]**.
 
-1. Seleziona **[!UICONTROL Crea]**, e specificare un **[!UICONTROL Nome]**.
+1. Seleziona **[!UICONTROL Crea]** e specifica un **[!UICONTROL Nome]**.
 
-1. Seleziona la **[!UICONTROL Creativo]** , specificare la cartella di output, selezionare **[!UICONTROL Aggiungi nuovo]** per aggiungere una configurazione creativa.
+1. Seleziona la scheda **[!UICONTROL Creative]**, specifica la cartella di output, seleziona **[!UICONTROL Aggiungi nuovo]** per aggiungere una configurazione creativa.
 
-1. Fornire **[!UICONTROL Nome rappresentazione]** (o nome dell’output), **[!UICONTROL Estensione]** (o tipo di file), seleziona **[!UICONTROL Qualità]** (o parametri di output), seleziona **[!UICONTROL Include]** e **[!UICONTROL Esclusioni]** Elenchi di tipi MIME (o filtro risorse di input) e seleziona l’operazione creativa richiesta.
+1. Fornisci **[!UICONTROL Nome rappresentazione]** (o nome output), **[!UICONTROL Estensione]** (o tipo di file), seleziona **[!UICONTROL Qualità]** (o parametri di output), seleziona **[!UICONTROL Includi]** e **[!UICONTROL Escludi]** elenchi di tipi MIME (o filtro risorse di input), quindi seleziona l&#39;operazione creativa richiesta.
 
-   ![[!UICONTROL Creativo] scheda in [!UICONTROL Profilo di elaborazione]](assets/creative-processing-profile.png)
+   Scheda ![[!UICONTROL Creative] in [!UICONTROL Elaborazione profilo]](assets/creative-processing-profile.png)
 
 1. Alcune operazioni richiedono parametri aggiuntivi (risorsa). Se necessario, fornisci i valori per questi parametri aggiuntivi.
 
 1. Aggiungi più operazioni creative come parte dello stesso profilo di elaborazione o Salva il profilo.
 
-1. Applica il profilo di elaborazione a una cartella. Su una cartella **[!UICONTROL Proprietà]** pagina, seleziona **[!UICONTROL Elaborazione risorse]** e seleziona il profilo di elaborazione da applicare.
+1. Applica il profilo di elaborazione a una cartella. Nella pagina **[!UICONTROL Proprietà]** di una cartella, seleziona **[!UICONTROL Elaborazione risorse]** e quindi il profilo di elaborazione da applicare.
 
 Dopo aver applicato il profilo di elaborazione a una cartella DAM, tutte le risorse caricate o aggiornate in questa cartella eseguono le operazioni definite in aggiunta all’elaborazione standard. Le sottocartelle ereditano gli stessi profili applicati alle cartelle principali. Gli utenti possono ignorare questa ereditarietà.
 
-Per elaborare le risorse esistenti, selezionale, seleziona **[!UICONTROL Rielabora]** e quindi selezionare il profilo di elaborazione richiesto.
+Per elaborare le risorse esistenti, selezionare le risorse, selezionare l&#39;opzione **[!UICONTROL Rielabora]**, quindi selezionare il profilo di elaborazione richiesto.
 
 ## Suggerimenti e limitazioni {#limitations-best-practices}
 
-* [!DNL Experience Manager] limita l’elaborazione delle risorse a 300 richieste al minuto per ambiente e a 700 richieste al minuto per organizzazione.
-* Dimensione del file limitata a 4 GB per [!DNL Adobe Photoshop] operazioni API e 1 GB per [!DNL Adobe Lightroom] operazioni.
+* [!DNL Experience Manager] limita l&#39;elaborazione delle risorse a 300 richieste al minuto per ambiente e 700 richieste al minuto per organizzazione.
+* La dimensione del file è limitata a 4 GB per le operazioni API [!DNL Adobe Photoshop] e a 1 GB per le operazioni [!DNL Adobe Lightroom].
 
 **Consulta anche**
 

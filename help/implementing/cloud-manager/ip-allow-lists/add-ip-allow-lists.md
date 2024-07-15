@@ -23,15 +23,15 @@ Per aggiungere un elenco IP consentiti, l’utente con ruolo di **Proprietario b
 
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
-1. Dalla sezione **Panoramica** , passare alla pagina **ELENCHI CONSENTITI IP** tramite la scheda di navigazione laterale.
+1. Dalla pagina **Panoramica**, passa alla pagina **Elenchi consentiti IP** utilizzando la scheda di navigazione laterale.
 
    ![Opzione elenchi IP consentiti nel pannello laterale](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
-1. Clic **Aggiungi Elenco consentiti IP**.
+1. Fai clic su **Aggiungi Elenco consentiti IP**.
 
    ![Finestra di dialogo Aggiungi elenco IP consentiti](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. In **Aggiungi Elenco consentiti IP** immettere un nome che si desidera utilizzare per fare riferimento al inserisco nell&#39;elenco Consentiti di selezione nella finestra di dialogo **Nome Elenco consentiti IP** campo.
+1. Nella finestra di dialogo **Aggiungi Elenco consentiti IP** immettere un nome che si desidera utilizzare per fare riferimento al inserisco nell&#39;elenco Consentiti di Elenco consentiti **IP** nel campo Nome  IP.
 
    * Questo nome è esclusivamente informativo e deve essere descrittivo, per aiutarti a identificare l’elenco.
 

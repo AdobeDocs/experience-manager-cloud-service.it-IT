@@ -14,9 +14,9 @@ ht-degree: 78%
 
 # Layout reattivo {#responsive-layout}
 
-AEM consente di disporre di un layout dinamico per le pagine utilizzando **Contenitore di layout** componente.
+AEM consente di avere un layout dinamico per le pagine utilizzando il componente **Contenitore di layout**.
 
-Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato del dispositivo o della finestra. Il componente viene utilizzato insieme al [**Layout** modalità](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), che consente di creare e modificare il layout dinamico a seconda del dispositivo.
+Questo fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato del dispositivo o della finestra. Il componente viene utilizzato insieme alla modalità [**Layout**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), che consente di creare e modificare il layout reattivo in base al dispositivo.
 
 Il contenitore layout:
 
@@ -52,11 +52,11 @@ A seconda del progetto, il Contenitore di layout può essere utilizzato come sis
 
 >[!TIP]
 >
->Adobe fornisce [Documentazione di GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del layout reattivo come riferimento che può essere dato agli sviluppatori front-end consentendo loro di utilizzare la griglia AEM al di fuori dell’AEM, ad esempio, quando si creano modelli statici di HTML per un futuro sito AEM.
+>L&#39;Adobe fornisce [documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del layout reattivo come riferimento per gli sviluppatori front-end, consentendo loro di utilizzare la griglia AEM al di fuori dell&#39;AEM, ad esempio, durante la creazione di modelli statici di HTML per un futuro sito AEM.
 
 >[!NOTE]
 >
->L’uso dei meccanismi di cui sopra è abilitato mediante la configurazione del modello. Consulta il documento [Configurazione del layout reattivo](/help/sites-cloud/administering/responsive-layout.md) per ulteriori informazioni.
+>L’uso dei meccanismi di cui sopra è abilitato mediante la configurazione del modello. Per ulteriori informazioni, vedere il documento [Configurazione del layout dinamico](/help/sites-cloud/administering/responsive-layout.md).
 
 ## Definizioni di layout, emulazione del dispositivo e punti di interruzione {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -137,16 +137,16 @@ Un **Contenitore di layout** è un sistema paragrafo che:
 
 >[!NOTE]
 >
->Se non è già disponibile, il **Contenitore di layout** deve essere esplicitamente [attivato per un sistema paragrafo/pagina.](/help/sites-cloud/administering/responsive-layout.md)
+>Se non è già disponibile, il **Contenitore di layout** deve essere [attivato in modo esplicito per un sistema paragrafo/pagina.](/help/sites-cloud/administering/responsive-layout.md)
 
-1. Il **Contenitore di layout** è disponibile come componente standard nel [browser componenti](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Da qui è possibile trascinarlo nella posizione desiderata sulla pagina, dopodiché sarà possibile visualizzare **Trascina qui i componenti** segnaposto.
+1. Il **Contenitore di layout** è disponibile come componente standard nel [browser componenti](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Da qui puoi trascinarlo nella posizione desiderata sulla pagina, dopodiché potrai vedere il segnaposto **Trascina qui i componenti**.
 1. È quindi possibile aggiungere componenti al Contenitore di layout. Questi componenti includeranno il contenuto vero e proprio:
 
    ![Contenitore di layout](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
 ## Selezione e intervento su un Contenitore di layout (modalità di modifica) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-Come con altri componenti, puoi selezionare e quindi intervenire (tagliare, copiare, eliminare) su un Contenitore di layout (quando è in **Modifica** modalità ):
+Come con altri componenti, puoi selezionare e quindi agire (tagliare, copiare, eliminare) su un Contenitore di layout (in modalità **Modifica**):
 
 >[!CAUTION]
 >
@@ -184,7 +184,7 @@ La modalità **Layout** può essere avviata in due modi.
 * Utilizzando il menu [modalità nella barra degli strumenti](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) e selezionando la modalità **Layout**
    * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Impostazione destinazione**.
    * La modalità **Layout** rimane persistente; si esce dalla modalità **Layout** solo quando si seleziona un’altra modalità mediante il selettore di modalità.
-* Quando [modifica di un singolo componente.](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)
+* Quando [si modifica un singolo componente.](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)
    * Utilizzando l’opzione **Layout** nel menu azione rapida del componente, puoi passare alla modalità **Layout**.
    * La modalità **Layout** persiste quando si modifica il componente e torna alla modalità **Modifica** quando è attivo un altro componente.
 
@@ -199,13 +199,13 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
   >Proporzioni e rapporti relativi vengono mantenuti al ridimensionamento di componenti come le **immagini**.
 
 * Seleziona un componente di contenuto; la barra degli strumenti consente di:
-   * **Elemento padre** : consente di selezionare l’intero componente Contenitore di layout per intervenire su di esso nel complesso.
+   * **Elemento padre** - Consente di selezionare l&#39;intero componente Contenitore di layout per intervenire su di esso nel complesso.
    * **Mobile in nuova riga:** il componente viene spostato su una nuova riga, in base allo spazio disponibile all’interno della griglia.
    * **Nascondi componente:** il componente viene reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
 
   ![Nascondi componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* In entrata **Layout** modalità è possibile selezionare la **Trascina qui i componenti** per selezionare l&#39;intero componente. Per questa modalità viene visualizzata la barra degli strumenti.
+* In modalità **Layout** è possibile selezionare **Trascinare qui i componenti** per selezionare l&#39;intero componente. Per questa modalità viene visualizzata la barra degli strumenti.
 
   La barra degli strumenti dispone di opzioni diverse a seconda dello stato del componente di layout e dei componenti a esso appartenenti. Esempio:
 

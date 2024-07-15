@@ -50,13 +50,13 @@ I campi presenti nella finestra di configurazione sono i seguenti:
 
 L’integrazione di Adobe Experience Manager as a Cloud Service (AEMaaCS) con Adobe Analytics tramite l’API Analytics Standard richiede la configurazione di Adobe IMS (Identity Management System).
 
-Consulta [Configurazione delle integrazioni IMS per AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) per scoprire come creare la configurazione IMS.
+Per informazioni su come creare la configurazione IMS, consulta [Configurazione delle integrazioni IMS per AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
 
 >[!NOTE]
 >
->[Le integrazioni IMS ora sono configurate con OAuth S2S](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>[Le integrazioni IMS sono ora configurate con OAuth S2S](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
 >
->Le configurazioni precedenti sono state effettuate con [Credenziali JWT ora obsolete nella console Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Le configurazioni precedenti sono state create con [credenziali JWT che ora sono soggette a deprecazione in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 ### Aggiunta di una configurazione a un sito {#add-configuration}
 

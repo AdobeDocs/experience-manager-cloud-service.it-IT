@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Configurazione delle pagine di errore CDN {#cdn-error-pages}
 
-Nel caso improbabile che il [CDN gestito da Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) non può raggiungere l’origine dell’AEM, per impostazione predefinita la rete CDN fornisce una pagina di errore generica e senza brand che indica che il server non può essere raggiunto. È possibile ignorare la pagina di errore predefinita ospitando file statici nell’archiviazione self-hosted, ad esempio Amazon S3 o Azure Blob Storage, e facendo riferimento a essi in un file di configurazione distribuito utilizzando [Pipeline di configurazione di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+Nel caso improbabile che la [rete CDN gestita dall&#39;Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) non raggiunga l&#39;origine dell&#39;AEM, per impostazione predefinita la rete CDN fornisce una pagina di errore generica senza marchio che indica che il server non può essere raggiunto. È possibile ignorare la pagina di errore predefinita ospitando file statici nell&#39;archiviazione self-hosted, ad esempio Amazon S3 o Azure Blob Storage, e facendo riferimento a tali file in un file di configurazione distribuito utilizzando la [pipeline di configurazione di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 ## Configurazione {#setup}
 
@@ -26,9 +26,9 @@ config/
      cdn.yaml
 ```
 
-* Il `cdn.yaml` Il file di configurazione deve contenere sia i metadati che le regole descritte negli esempi seguenti. Il `kind` il parametro deve essere impostato su `CDN` e la versione deve essere impostata sulla versione dello schema, attualmente `1`.
+* Il file di configurazione `cdn.yaml` deve contenere sia i metadati che le regole descritte negli esempi seguenti. Il parametro `kind` deve essere impostato su `CDN` e la versione deve essere impostata sulla versione dello schema, attualmente `1`.
 
-* Crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager. Consulta [configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configurazione di pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+* Crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager. Consulta [configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configurazione delle pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 **Note**
 

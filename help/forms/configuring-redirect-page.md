@@ -21,21 +21,21 @@ ht-degree: 6%
 
 Gli autori dei moduli possono configurare una pagina per ogni modulo, alla quale gli utenti vengono reindirizzati dopo l&#39;invio di un modulo.
 
-1. In modalità di modifica, seleziona un componente, quindi fai clic su ![a livello di campo](assets/select_parent_icon.svg) > **[!UICONTROL Contenitore modulo adattivo]** e quindi fare clic su ![cmppr](assets/configure-icon.svg).
+1. In modalità di modifica, seleziona un componente, quindi fai clic su ![livello campo](assets/select_parent_icon.svg) > **[!UICONTROL Contenitore modulo adattivo]**, quindi fai clic su ![cmppr](assets/configure-icon.svg).
 
-1. Nella barra laterale, fai clic su **[!UICONTROL Invio]**.
+1. Nella barra laterale fare clic su **[!UICONTROL Invio]**.
 
-1. Immetti l’URL della pagina di reindirizzamento in **[!UICONTROL URL/percorso di reindirizzamento]** nel **[!UICONTROL Invio]** sezione.
+1. Fornisci l&#39;URL della pagina di reindirizzamento in **[!UICONTROL URL/percorso di reindirizzamento]** nella sezione **[!UICONTROL Invio]**.
 1. Facoltativamente, in Azione di invio, per l’azione Invia a endpoint REST, puoi configurare il parametro da passare alla pagina di reindirizzamento.
 
    ![Configurazione pagina di reindirizzamento](assets/redirect-url.png)
 
    Configurazione pagina di reindirizzamento
 
-Gli autori dei moduli possono utilizzare i seguenti parametri passati alla pagina di ringraziamento. Per tutte le azioni di invio disponibili, `status` e `owner` i parametri vengono passati. Oltre a questi due parametri, vengono passati alcuni parametri aggiuntivi per le seguenti azioni di invio:
+Gli autori dei moduli possono utilizzare i seguenti parametri passati alla pagina di ringraziamento. Per tutte le azioni di invio disponibili, vengono passati `status` e `owner` parametri. Oltre a questi due parametri, vengono passati alcuni parametri aggiuntivi per le seguenti azioni di invio:
 
-* **[!UICONTROL Invia all’endpoint REST]**: vengono passati i parametri aggiunti per la mappatura in-field ai parametri. `status` e `owner` I parametri non vengono passati in questa azione di invio. Per ulteriori informazioni, consulta [Configurazione dell’azione di invio Invia all’endpoint REST](configuring-submit-actions.md).
+* **[!UICONTROL Invia all&#39;endpoint REST]**: i parametri aggiunti per la mappatura interna al campo al parametro vengono passati. Parametri `status` e `owner` non passati in questa azione di invio. Per ulteriori informazioni, vedere [Configurazione dell&#39;azione di invio Invia all&#39;endpoint REST](configuring-submit-actions.md).
 
 >[!MORELIKETHIS]
 >
->* [Configurare una pagina di reindirizzamento o un messaggio di ringraziamento](/help/forms/configure-redirect-page-or-thank-you-message.md)
+>* [Configurare una pagina di reindirizzamento o inviare un messaggio di ringraziamento](/help/forms/configure-redirect-page-or-thank-you-message.md)

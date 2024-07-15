@@ -31,9 +31,9 @@ AEM Forms fornisce diverse API per inviare moduli, elaborare documenti ed esegui
 
 Le API di fatturazione non tengono conto del numero di pagine, della lunghezza di un documento o modulo o del formato finale del documento sottoposto a rendering. Un report di transazioni suddivide le transazioni in due categorie: Forms Inviato e Documenti Rendering.
 
-* **Forms inviato:** Quando i dati vengono inviati da qualsiasi tipo di modulo creato con AEM Forms e vengono inviati a qualsiasi archivio di dati o database, viene considerato invio modulo. Ad esempio, l’invio di un modulo adattivo o di un set di moduli è considerato come un modulo inviato. Se una serie di moduli dispone di 5 moduli e quando la serie di moduli viene inviata, il servizio di reporting delle transazioni la conta come 5 invii.
+* **Forms inviato:** quando i dati vengono inviati da qualsiasi tipo di modulo creato con AEM Forms e i dati vengono inviati a qualsiasi repository di archiviazione dati o database viene considerato invio modulo. Ad esempio, l’invio di un modulo adattivo o di un set di moduli è considerato come un modulo inviato. Se una serie di moduli dispone di 5 moduli e quando la serie di moduli viene inviata, il servizio di reporting delle transazioni la conta come 5 invii.
 
-* **Documenti sottoposti a rendering:** La generazione di un documento mediante la combinazione di un modello e di dati, la firma o la certificazione digitale di un documento, l&#39;utilizzo di API di servizi di documentazione fatturabili per i servizi di documentazione o la conversione di un documento da un formato a un altro sono considerati documenti sottoposti a rendering.
+* **Documenti sottoposti a rendering:** La generazione di un documento mediante la combinazione di un modello e di dati, la firma o la certificazione digitale di un documento, l&#39;utilizzo di API di servizi documentali fatturabili per i servizi documentali o la conversione di un documento da un formato a un altro vengono considerati documenti sottoposti a rendering.
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
@@ -495,7 +495,7 @@ L’utilizzo dell’API di richiamo viene conteggiato come una transazione, quan
 
 ## API di acquisizione dati fatturabili {#billable-data-capture-apis}
 
-Tutti gli eventi di invio dei moduli adattivi vengono contabilizzati come transazioni. Per impostazione predefinita, l’invio di un modulo PDF non viene contabilizzato come una transazione. Utilizza il fornito [API registratore transazioni](record-transaction-custom-implementation.md) per registrare un invio di PDF forms come transazione.
+Tutti gli eventi di invio dei moduli adattivi vengono contabilizzati come transazioni. Per impostazione predefinita, l’invio di un modulo PDF non viene contabilizzato come una transazione. Utilizza l&#39;API [transaction recorder](record-transaction-custom-implementation.md) fornita per registrare un invio di PDF forms come transazione.
 
 ### Moduli adattivi {#adaptive-forms}
 
@@ -647,7 +647,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 ## Registrazione di API fatturabili come transazioni per il codice personalizzato {#recording-billable-apis-as-transactions-for-custom-code}
 
-Azioni come l’invio di un modulo PDF, l’utilizzo dell’interfaccia utente dell’agente per visualizzare in anteprima una comunicazione interattiva, l’utilizzo di un invio di modulo non standard e le implementazioni personalizzate non vengono considerate come transazioni. AEM Forms fornisce un’API per registrare azioni quali le transazioni. Puoi richiamare l’API dalle implementazioni personalizzate a [registrare una transazione](/help/forms/record-transaction-custom-implementation.md).
+Azioni come l’invio di un modulo PDF, l’utilizzo dell’interfaccia utente dell’agente per visualizzare in anteprima una comunicazione interattiva, l’utilizzo di un invio di modulo non standard e le implementazioni personalizzate non vengono considerate come transazioni. AEM Forms fornisce un’API per registrare azioni quali le transazioni. È possibile chiamare l&#39;API dalle implementazioni personalizzate per [registrare una transazione](/help/forms/record-transaction-custom-implementation.md).
 
 ## Articoli correlati {#related-articles}
 

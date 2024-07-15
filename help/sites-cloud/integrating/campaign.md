@@ -15,7 +15,7 @@ ht-degree: 66%
 
 # Integrazione di AEM as a Cloud Service con Adobe Campaign {#integrating-campaign}
 
-Scopri il supporto di AEM as a Cloud Service per le integrazioni con Adobe Campaign.
+Scopri come AEM as a Cloud Service supporta le integrazioni con Adobe Campaign.
 
 >[!NOTE]
 >

@@ -1,5 +1,5 @@
 ---
-title: Metadati - Proprietà dei frammenti (Risorse - Frammenti di contenuto)
+title: Metadati - Proprietà dei frammenti (Assets - Frammenti di contenuto)
 description: Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti di contenuto.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
@@ -20,7 +20,7 @@ Scopri come visualizzare e modificare le proprietà dei metadati per i frammenti
 >
 >I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
 >
->Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console).
+>Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l&#39;editor originale, a cui si accede principalmente dalla console **Assets**. Per informazioni dettagliate sul nuovo editor, a cui si accede principalmente dalla console **Frammenti di contenuto**, consulta la documentazione di Sites [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Modifica di proprietà o metadati {#editing-properties-meta-data}
 

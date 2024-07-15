@@ -1,6 +1,6 @@
 ---
 title: Gestire le notifiche
-description: Monitora le operazioni eseguite sulle risorse o cartelle disponibili nell’archivio utilizzando le notifiche della vista Risorse.
+description: Monitora le operazioni eseguite sulle risorse o cartelle disponibili nell’archivio utilizzando le notifiche di visualizzazione di Assets.
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
@@ -13,11 +13,11 @@ ht-degree: 70%
 
 # Osservare risorse, cartelle e raccolte {#watch-assets-folders}
 
-Le notifiche di visualizzazione delle risorse consentono di monitorare le operazioni eseguite sulle risorse, cartelle o raccolte disponibili nell’archivio. Devi selezionare e iscriverti al contenuto per il quale ti vengono inviate le notifiche. Puoi anche configurare le categorie per le quali vengono inviate le notifiche.
+Le notifiche di visualizzazione di Assets consentono di monitorare le operazioni eseguite sulle risorse, cartelle o raccolte disponibili nell’archivio. Devi selezionare e iscriverti al contenuto per il quale ti vengono inviate le notifiche. Puoi anche configurare le categorie per le quali vengono inviate le notifiche.
 
 ## Iscriversi alle categorie di notifica {#subscribe-to-notification-categories}
 
-Puoi scegliere un elenco di categorie e iscriverti per ricevere le notifiche. La vista Risorse invia le notifiche solo per le categorie selezionate tra le opzioni disponibili:
+Puoi scegliere un elenco di categorie e iscriverti per ricevere le notifiche. La vista Assets invia le notifiche solo per le categorie selezionate tra le opzioni disponibili:
 
 <table>
     <tbody>
@@ -62,18 +62,18 @@ Puoi scegliere un elenco di categorie e iscriverti per ricevere le notifiche. La
 
 Per iscriversi alle categorie di notifica:
 
-1. Clic ![icona campana](assets/bell-icon.svg) all’estremità destra della barra dei menu nell’interfaccia utente di visualizzazione delle risorse.
+1. Fai clic su ![icona campanello](assets/bell-icon.svg) all&#39;estremità destra della barra dei menu nell&#39;interfaccia utente di visualizzazione di Assets.
 
 1. Fai clic su ![icona impostazioni](assets/settings-icon.svg) per visualizzare la pagina [!UICONTROL Preferenze di Experience Cloud].
 
 1. Fai clic sul pulsante **[!UICONTROL Notifiche]** nel riquadro a sinistra.
 
-1. In **[!UICONTROL Notifiche]** , passare alla sezione [!UICONTROL Visualizzazione risorse] e assicurarsi che l&#39;opzione di attivazione sia attivata.
+1. Nella sezione **[!UICONTROL Notifiche]**, passa alla sezione [!UICONTROL Visualizzazione Assets] e assicurati che l&#39;opzione di attivazione sia attivata.
 
-   ![Notifiche nella vista Risorse](assets/enable-notifications.png)
+   ![Notifiche nella visualizzazione Assets](assets/enable-notifications.png)
 
 1. Fai clic su **[!UICONTROL Personalizza]** per visualizzare le categorie di notifiche.
-   ![Notifiche nella vista Risorse](assets/enable-notification-categories.png)
+   ![Notifiche nella visualizzazione Assets](assets/enable-notification-categories.png)
 
 1. Seleziona le categorie di notifica per le quali vuoi ricevere una notifica.
 
@@ -84,22 +84,22 @@ Dopo l’[iscrizione alle categorie di notifica](#subscribe-to-notification-cate
 >[!NOTE]
 >
 >* Per le categorie di notifiche **[!UICONTROL Richieste]** e **[!UICONTROL Assegnato a me]**, non è necessario iscriversi ai contenuti dopo l’iscrizione alle categorie di notifica. Le notifiche vengono inviate automaticamente per le richieste che crei e quando un&#39;attività viene assegnata a te.
->* La vista Risorse invia notifiche solo quando altri utenti eseguono azioni sul contenuto sottoscritto. Non si ricevono notifiche per le azioni eseguite personalmente sui contenuti a cui si è iscritti.
+>* La vista Assets invia notifiche solo quando altri utenti eseguono azioni sui contenuti a cui si è iscritti. Non si ricevono notifiche per le azioni eseguite personalmente sui contenuti a cui si è iscritti.
 
 Per iscriverti al contenuto, seleziona la cartella, la risorsa o la raccolta che ti interessa e fai clic su **[!UICONTROL Osserva]**.
 
-Nella vista Risorse viene visualizzato un messaggio di successo. Puoi fare clic su **[!UICONTROL Vai alle preferenze per le notifiche]** nel messaggio di successo per cambiare le [categorie di notifica che ti interessano](#subscribe-to-notification-categories).
+Nella vista Assets viene visualizzato un messaggio di successo. Puoi fare clic su **[!UICONTROL Vai alle preferenze per le notifiche]** nel messaggio di successo per cambiare le [categorie di notifica che ti interessano](#subscribe-to-notification-categories).
 
-![Notifiche nella vista Risorse](assets/watch-assets.png)
+![Notifiche nella visualizzazione Assets](assets/watch-assets.png)
 
-La vista Risorse invia ora notifiche per le categorie sottoscritte. Per risparmiare tempo, puoi anche selezionare più risorse, cartelle o raccolte e fare clic su **[!UICONTROL Osserva]**. Tuttavia, se selezioni più entità di cui alcune sono già state sottoscritte, l’opzione **[!UICONTROL Osserva]** non viene visualizzata.
+La vista Assets ora invia notifiche per le categorie sottoscritte. Per risparmiare tempo, puoi anche selezionare più risorse, cartelle o raccolte e fare clic su **[!UICONTROL Osserva]**. Tuttavia, se selezioni più entità di cui alcune sono già state sottoscritte, l’opzione **[!UICONTROL Osserva]** non viene visualizzata.
 
 Allo stesso modo, per annullare l’iscrizione a una risorsa, cartella o raccolta, selezionala e fai clic su **[!UICONTROL Non osservare più]**.
 
 ## Visualizzare le notifiche {#view-notifications}
 
-Le notifiche vengono visualizzate all’estremità destra della barra dei menu nell’interfaccia utente di visualizzazione delle risorse.
+Le notifiche vengono visualizzate all’estremità destra della barra dei menu nell’interfaccia utente di visualizzazione di Assets.
 
-![Notifiche nella vista Risorse](assets/notifications-assets-essentials.png)
+![Notifiche nella visualizzazione Assets](assets/notifications-assets-essentials.png)
 
-Quando fai clic su una notifica, la vista Risorse ti consente di passare alla risorsa o cartella appropriata a cui fa riferimento la notifica.
+Quando fai clic su una notifica, la vista Assets ti consente di passare alla risorsa o cartella appropriata a cui fa riferimento la notifica.

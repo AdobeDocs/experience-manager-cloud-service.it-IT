@@ -13,14 +13,14 @@ ht-degree: 1%
 
 # Creare un modello di modulo adattivo {#adaptive-form-templates}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-Quando si crea un modulo, si aggiungono campi e componenti per definire la struttura del modulo, il contenuto e le azioni nell’editor. È possibile aggiungere campi e componenti in `guideRootPanel` del contenitore di moduli. Con Editor modelli è possibile creare un modello contenente la struttura di base e il contenuto iniziale che gli autori possono utilizzare per creare i moduli.
+Quando si crea un modulo, si aggiungono campi e componenti per definire la struttura del modulo, il contenuto e le azioni nell’editor. Aggiungere campi e componenti in `guideRootPanel` del contenitore del modulo. Con Editor modelli è possibile creare un modello contenente la struttura di base e il contenuto iniziale che gli autori possono utilizzare per creare i moduli.
 
 Ad esempio, si desidera che tutti gli autori di moduli dispongano di determinate caselle di testo, pulsanti di spostamento e un pulsante di invio in un modulo di iscrizione. È possibile creare un modello con i componenti che gli autori possono utilizzare per creare un modulo coerente con altri moduli di iscrizione. Quando gli autori utilizzano il modello per creare un modulo adattivo, il nuovo modulo eredita la struttura e i componenti specificati nel modello. Editor modelli consente di:
 
@@ -28,25 +28,25 @@ Ad esempio, si desidera che tutti gli autori di moduli dispongano di determinate
 * Fornire il contenuto iniziale del modulo.
 * Specifica un tema, Invia azioni.
 
-Puoi scaricare e installare [!DNL AEM Forms] pacchetto di contenuti di riferimento da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) per importare nell&#39;ambiente i temi e i modelli di riferimento.
+Puoi scaricare e installare [!DNL AEM Forms] pacchetto di contenuti di riferimento dal portale [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) per importare i temi e i modelli di riferimento nel tuo ambiente.
 
 ## Utilizzo dei modelli {#working-with-templates}
 
-Per accedere all’editor modelli dal menu Strumenti, vai a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Modelli]**. In questo caso, i modelli sono organizzati in cartelle abilitate per i modelli modificabili.
+Puoi accedere all&#39;editor modelli dal menu Strumenti passando a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Modelli]**. In questo caso, i modelli sono organizzati in cartelle abilitate per i modelli modificabili.
 
-In Experience Manager viene fornita una cartella globale per organizzare i modelli. Tuttavia, non è attivato per impostazione predefinita. Puoi richiedere all’amministratore di abilitare la cartella globale o di creare una cartella per i modelli. Per ulteriori informazioni su come creare cartelle, consulta [Cartelle modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).
+In Experience Manager viene fornita una cartella globale per organizzare i modelli. Tuttavia, non è attivato per impostazione predefinita. Puoi richiedere all’amministratore di abilitare la cartella globale o di creare una cartella per i modelli. Per ulteriori informazioni su come creare cartelle, vedere [Cartelle modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).
 
 ### Creazione di un modello {#create-template}
 
 Dopo aver creato una cartella, aprila ed esegui i seguenti passaggi per creare un modello:
 
-1. Seleziona **[!UICONTROL Crea]** all’interno della cartella creata.
-1. Nella sezione Scegli un tipo di modello, selezionare **[!UICONTROL Modello modulo adattivo]** e seleziona **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Crea]** all&#39;interno della cartella creata.
+1. Nella sezione Scegli un tipo di modello, seleziona **[!UICONTROL Modello di modulo adattivo]** e **[!UICONTROL Successivo]**.
 
 1. Nella sezione Dettagli modello, specifica un Titolo modello e seleziona **[!UICONTROL Crea]**.
 Puoi anche fornire una descrizione.
 
-1. Seleziona **[!UICONTROL Fine]** per tornare alla console, oppure seleziona **[!UICONTROL Apri]** per aprire il modello nell’editor.
+1. Seleziona **[!UICONTROL Fine]** per tornare alla console oppure seleziona **[!UICONTROL Apri]** per aprire il modello nell&#39;editor.
 
 ### Interfaccia utente dell’editor modelli {#template-editor-ui}
 
@@ -56,13 +56,13 @@ Quando apri un modello per la modifica, puoi vedere i seguenti componenti dell�
 Contiene le seguenti opzioni:
 
    * **Attiva/Disattiva pannello laterale**: consente di mostrare o nascondere la barra laterale.
-   * **Informazioni pagina**: consente di specificare informazioni quali l’ora di pubblicazione/annullamento della pubblicazione, le miniature, le librerie lato client, i criteri di pagina e la libreria lato client della progettazione della pagina.
+   * **Informazioni pagina**: consente di specificare informazioni quali l&#39;ora di pubblicazione/annullamento della pubblicazione, le miniature, le librerie lato client, i criteri di pagina e la libreria lato client di progettazione pagina.
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **Selettore modalità:** Consente di modificare la modalità.È possibile scegliere **[!UICONTROL Struttura]** modalità, **[!UICONTROL Contenuto iniziale]**, **[!UICONTROL Controllo layout]** modalità. La modalità Struttura consente di aggiungere e personalizzare intestazione e piè di pagina. La modalità Contenuto iniziale consente di personalizzare il contenuto del modulo.
-   * **Anteprima:** Consente di visualizzare in anteprima l’aspetto del modello quando lo si pubblica. Potete utilizzare Selettore livello (Layer Selector) e Anteprima (Preview) per attivare o disattivare le modalità di modifica e anteprima.
-* **Barra laterale:** Fornisce i browser Contenuto, Proprietà, Assets e Componenti.
-* **Barra degli strumenti del componente:** Quando selezioni un componente, viene visualizzata una barra degli strumenti che consente di personalizzarlo.
-* **Pagina**: l’area in cui aggiungere contenuto per creare il modello.
+   * **Selettore modalità:** consente di modificare la modalità.È possibile scegliere la modalità **[!UICONTROL Struttura]**, **[!UICONTROL Contenuto iniziale]**, **[!UICONTROL Controllo layout]**. La modalità Struttura consente di aggiungere e personalizzare intestazione e piè di pagina. La modalità Contenuto iniziale consente di personalizzare il contenuto del modulo.
+   * **Anteprima:** consente di visualizzare in anteprima l&#39;aspetto del modello quando viene pubblicato. Potete utilizzare Selettore livello (Layer Selector) e Anteprima (Preview) per attivare o disattivare le modalità di modifica e anteprima.
+* **Barra laterale:** fornisce i browser Contenuto, Proprietà, Assets e Componenti.
+* **Barra degli strumenti del componente:** Quando si seleziona un componente, viene visualizzata una barra degli strumenti che consente di personalizzare il componente.
+* **Pagina**: l&#39;area in cui aggiungere contenuto per creare il modello.
 
 <!-- See [Introduction to authoring Adaptive Forms](introduction-forms-authoring.md) to understand the Touch UI editor. -->
 
@@ -83,7 +83,7 @@ Quando selezioni il livello struttura nell’Editor modelli, puoi visualizzare i
 
 Contenitori di layout nel livello struttura
 
-**R.** Contenitore di layout per il componente Intestazione **B.** Contenitore di layout per il componente Piè di pagina
+Contenitore di layout **A.** per il componente intestazione **B.** Contenitore di layout per il componente Piè di pagina
 
 Trascina il componente Intestazione modulo adattivo nel contenitore di layout sopra il contenitore modulo adattivo. Dopo aver aggiunto il componente, puoi specificarne le proprietà che ti consentono di aggiungere un logo e il relativo titolo.
 
@@ -107,7 +107,7 @@ Ad esempio, puoi aggiungere il componente intestazione nel modello. Quando selez
 
 Quando l’opzione Contenuto iniziale è selezionata, il Contenitore di moduli adattivi del modello si apre come un Modulo adattivo da modificare. Analogamente all’authoring di un modulo adattivo, puoi specificare le impostazioni iniziali, ad esempio selezionare un tema e Inviare azioni.
 
-Gli autori di moduli utilizzano tale modulo come base per la creazione di un modulo. La struttura del flusso di contenuto è specificata nel livello Contenuto iniziale del modello. Per passare alla modifica del contenuto iniziale del modello di modulo, prima di Anteprima nella barra degli strumenti della pagina, seleziona ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenuto iniziale]**.
+Gli autori di moduli utilizzano tale modulo come base per la creazione di un modulo. La struttura del flusso di contenuto è specificata nel livello Contenuto iniziale del modello. Per passare alla modifica del contenuto iniziale del modello di modulo, prima di Anteprima nella barra degli strumenti della pagina, selezionare ![area di lavoro-a discesa](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenuto iniziale]**.
 
 
 Nel livello Contenuto iniziale, puoi creare il modello di modulo adattivo utilizzato dagli autori come base. La creazione di un modello è simile alla creazione di un modulo e consente di utilizzare le opzioni disponibili nella barra laterale. Sidebar fornisce contenuti, proprietà, risorse e browser di componenti.
@@ -129,18 +129,18 @@ Ad esempio, puoi creare un modello con le seguenti schede:
 
 Modificare il livello da Struttura a Contenuto iniziale e iniziare ad aggiungere contenuto al modulo. Per creare una struttura a schede, aggiungi un pannello secondario in guideRootPanel del contenitore di moduli adattivi. Per aggiungere un pannello:
 
-* Per aggiungere un pannello, tocca il **[!UICONTROL +]** quando si seleziona il pulsante **[!UICONTROL Trascina qui i componenti]** opzione.
+* Per aggiungere un pannello, tocca il pulsante **[!UICONTROL +]** quando selezioni l&#39;opzione **[!UICONTROL Trascina qui i componenti]**.
 
 * Puoi trascinare il componente Pannello dal browser Componenti nella barra laterale.
-* È possibile aggiungere un pannello figlio di `guideRootPanel` dalla barra degli strumenti del componente.
+* È possibile aggiungere il pannello figlio di `guideRootPanel` dalla barra degli strumenti del componente.
 
-Per creare le schede Informazioni generali e Informazioni professionali, aggiungi due pannelli nel pannello secondario di `guideRootPanel`. Seleziona i pannelli e seleziona ![cmppr](assets/configure-icon.svg) per aprire le proprietà nella barra laterale. Modifica i nomi degli elementi come `general-info` e `professional-info`e titoli rispettivamente come Informazioni generali e Informazioni professionali. Nella barra laterale, seleziona il contenuto per aprire il browser del contenuto. Nella scheda Oggetti modulo, seleziona `guideRootPanel`. Nell’editor, viene selezionato guideRootPanel. Seleziona ![cmppr](assets/configure-icon.svg) nella barra degli strumenti del componente per aprirne le proprietà. Nel campo Layout pannello, seleziona **[!UICONTROL Schede in alto]** e seleziona **[!UICONTROL Fine]**. Viene applicata la struttura a schede del modello.
+Per creare le schede Informazioni generali e Informazioni professionali, aggiungere due pannelli nel pannello figlio di `guideRootPanel`. Seleziona i pannelli e seleziona ![cmppr](assets/configure-icon.svg) per aprire le proprietà nella barra laterale. Modificare i nomi degli elementi come `general-info` e `professional-info` e i titoli rispettivamente come Informazioni generali e Informazioni professionali. Nella barra laterale, seleziona il contenuto per aprire il browser del contenuto. Nella scheda Oggetti modulo selezionare `guideRootPanel`. Nell’editor, viene selezionato guideRootPanel. Seleziona ![cmppr](assets/configure-icon.svg) nella barra degli strumenti del componente per aprirne le proprietà. Nel campo Layout pannello, seleziona **[!UICONTROL Schede in alto]** e seleziona **[!UICONTROL Fine]**. Viene applicata la struttura a schede del modello.
 
 #### Aggiunta di contenuto nelle schede {#adding-content-in-tabs}
 
-Dopo aver aggiunto i pannelli e averli strutturati come schede, puoi aggiungere campi all’interno delle schede. Quando selezioni una scheda nell’editor, puoi visualizzare **[!UICONTROL Trascina qui i componenti]** opzione. È possibile trascinare componenti quali caselle di testo, voci di elenco e pulsanti. Puoi trascinare i componenti dal browser Componenti nella barra laterale.
+Dopo aver aggiunto i pannelli e averli strutturati come schede, puoi aggiungere campi all’interno delle schede. Quando selezioni una scheda nell&#39;editor, puoi visualizzare l&#39;opzione **[!UICONTROL Trascina qui i componenti]**. È possibile trascinare componenti quali caselle di testo, voci di elenco e pulsanti. Puoi trascinare i componenti dal browser Componenti nella barra laterale.
 
-Ogni componente dispone di proprietà che migliorano l’acquisizione e la manipolazione dei dati. Ad esempio, puoi abilitare **[!UICONTROL Campo obbligatorio]** di un componente. Gli autori possono specificare un messaggio visualizzato dai clienti quando non compilano un campo obbligatorio. Specifica il messaggio in **[!UICONTROL Messaggio campo obbligatorio]** proprietà.
+Ogni componente dispone di proprietà che migliorano l’acquisizione e la manipolazione dei dati. Ad esempio, puoi abilitare la proprietà **[!UICONTROL Campo obbligatorio]** di un componente. Gli autori possono specificare un messaggio visualizzato dai clienti quando non compilano un campo obbligatorio. Specificare il messaggio nella proprietà **[!UICONTROL Messaggio campo obbligatorio]**.
 
 Nel modello di esempio, i campi Nome, Numero di telefono e Data di nascita vengono aggiunti nella scheda Informazioni generali. Nella scheda Informazioni professionali, Tipo di impiego attualmente impiegato, vengono aggiunti i campi Istruzione e qualifica.
 
@@ -150,26 +150,26 @@ Dopo aver aggiunto i campi, puoi aggiungere pulsanti quali Invia e Reimposta.
 
 Quando create un modello, questo viene aggiunto come bozza. Abilita il modello per utilizzarlo per creare Forms adattivo. Per abilitare un modello:
 
-1. Accedi a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Modelli]** e aprire la cartella in cui è stato creato il modello.
+1. Passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Modelli]** e apri la cartella in cui hai creato il modello.
 
 1. Il modello creato è contrassegnato come Bozza.
-1. Seleziona il modello e seleziona **[!UICONTROL Abilita]** nella barra degli strumenti.
+1. Selezionare il modello e selezionare **[!UICONTROL Abilita]** nella barra degli strumenti.
 Quando crei un modulo adattivo, puoi visualizzare il modello elencato quando ti viene richiesto di scegliere un modello.
 
 ## Importazione o esportazione di un modello {#importing-or-exporting-a-template}
 
-Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando si importa il modulo su un altro [!DNL AEM Forms] istanza, viene importato senza il relativo modello. Se un modulo viene importato ma il relativo modello non è disponibile, il modulo non viene sottoposto a rendering. Puoi creare un pacchetto del modello personalizzato da `/conf` nodo in `https://<server>:<port>/crx/packmgr`, e portarlo in [!DNL AEM Forms] istanza in cui si desidera caricare il modulo. È inoltre possibile [Creare un modello utilizzando AEM Archeype e distribuirlo nell’istanza dei Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
+Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando si importa il modulo in un&#39;istanza [!DNL AEM Forms] diversa, il modulo viene importato senza il relativo modello. Se un modulo viene importato ma il relativo modello non è disponibile, il modulo non viene sottoposto a rendering. È possibile creare un pacchetto del modello personalizzato dal nodo `/conf` in `https://<server>:<port>/crx/packmgr` e portarlo nell&#39;istanza [!DNL AEM Forms] in cui si desidera caricare il modulo. Puoi anche [creare un modello utilizzando l&#39;archeype AEM e distribuirlo nell&#39;istanza dei Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >
-> * Puoi anche configurare il [!UICONTROL Documento record] direttamente dall’editor di moduli adattivi o dall’editor di modelli di moduli adattivi. Per ulteriori informazioni, consulta [Genera documento di record per Forms adattivo](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * Puoi anche configurare il modello [!UICONTROL Documento di record] direttamente dall&#39;editor di moduli adattivi o dall&#39;editor di modelli di moduli adattivi. Per ulteriori informazioni, vedere [Generare un documento di record per Forms adattivo](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 
 ## Associare uno schema modello dati modulo a un modello {#associating-form-data-model-schema-in-template}
 
-Gli autori possono associare una [!UICONTROL Schema modello dati modulo] a un modello di modulo adattivo nell’editor di modelli. Consente agli autori di selezionare uno schema dall’editor modelli. Quando si associa uno schema a un modello e un autore di moduli crea un modulo basato su tale modello, lo schema viene preselezionato per il modulo. Consente agli autori di moduli di regolare l’utilizzo dello schema e consente di risparmiare tempo anche per l’autore di moduli. Per selezionare uno schema di modello dati modulo nell’editor modelli:
+Gli autori possono associare uno [!UICONTROL schema modello dati modulo] a un modello modulo adattivo nell&#39;editor modelli. Consente agli autori di selezionare uno schema dall’editor modelli. Quando si associa uno schema a un modello e un autore di moduli crea un modulo basato su tale modello, lo schema viene preselezionato per il modulo. Consente agli autori di moduli di regolare l’utilizzo dello schema e consente di risparmiare tempo anche per l’autore di moduli. Per selezionare uno schema di modello dati modulo nell’editor modelli:
 
-1. Seleziona **[!UICONTROL Browser contenuti]** sul lato sinistro.
+1. Selezionare **[!UICONTROL Browser contenuti]** sul lato sinistro.
 1. Vai al contenitore del modulo **[!UICONTROL Impostazione]**.
 1. Seleziona **[!UICONTROL Modello dati]**.
 1. Scegli il modello dati del modulo tramite **[!UICONTROL Seleziona modello dati modulo]** e salva la configurazione.
@@ -180,7 +180,7 @@ Gli autori possono associare una [!UICONTROL Schema modello dati modulo] a un mo
 
 ## Creazione di un modulo adattivo utilizzando il modello {#creating-an-adaptive-form-using-the-template}
 
-Dopo aver creato e abilitato un modello, questo sarà disponibile nel gestore dei moduli al momento della creazione di un modulo adattivo. Per utilizzare un modello e creare un modulo adattivo, consulta [Creazione di un modulo adattivo](creating-adaptive-form.md).
+Dopo aver creato e abilitato un modello, questo sarà disponibile nel gestore dei moduli al momento della creazione di un modulo adattivo. Per utilizzare un modello e creare un modulo adattivo, vedi [Creazione di un modulo adattivo](creating-adaptive-form.md).
 
 
 <!--
@@ -208,11 +208,11 @@ Perform the following steps to show and hide templates:
 È inoltre possibile salvare un modulo adattivo come modello per utilizzi futuri. Per salvare un modulo adattivo come modello:
 
 1. Seleziona un modulo adattivo per salvarlo come modello.
-1. Clic **[!UICONTROL Salva come modello]**. Viene visualizzata una finestra di dialogo.
+1. Fare clic su **[!UICONTROL Salva come modello]**. Viene visualizzata una finestra di dialogo.
 1. Specifica **[!UICONTROL Titolo]** (campo obbligatorio), **[!UICONTROL Posizione]** (campo obbligatorio) e **[!UICONTROL Descrizione]** (campo facoltativo) per il modello.
 1. Fai clic su **[!UICONTROL Crea]**.
 
-   ![Salva come modulo come modello](/help/forms/assets/saveformastemplate.png)
+   ![Salva come modello](/help/forms/assets/saveformastemplate.png)
 
 
 
@@ -224,7 +224,7 @@ Perform the following steps to show and hide templates:
 
 * Quando si modificano le proprietà del modulo nell&#39;editor modelli, non utilizzare la proprietà BindReference.
 * Se desideri aggiungere un punto di interruzione, crealo quando crei un modello di modulo adattivo.
-Per ulteriori informazioni sui punti di interruzione, consulta [Layout reattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).
+Per ulteriori informazioni sui punti di interruzione, vedere [Layout reattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).
 
 
 ## Consulta anche {#see-also}

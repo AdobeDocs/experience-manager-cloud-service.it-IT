@@ -18,21 +18,21 @@ Durante la configurazione di un ambiente di Cloud Service è possibile riscontra
 
 ## Opzione Forms non disponibile
 
-Il **[!UICONTROL Forms]** non è disponibile nella **[!UICONTROL Navigazione]** pagina.
+Opzione **[!UICONTROL Forms]** non disponibile nella pagina **[!UICONTROL Navigazione]**.
 
 ![Opzione Forms non disponibile](assets/installation-configuration-forms-option-unavailable-troubleshooting.png)
 
-Per attivare **[!UICONTROL Forms]** opzione:
+Per abilitare l&#39;opzione **[!UICONTROL Forms]**:
 
 1. Accedi a [Cloud Manager](https://experience.adobe.com/)
-1. Individua il programma e fai clic su ![Opzione Forms non disponibile](assets/Smock_Edit_18_N.svg) icona. Viene visualizzata la pagina Modifica programma del programma.
-1. Apri **[!UICONTROL Soluzioni e componenti aggiuntivi]** scheda.
-1. Seleziona la **[!UICONTROL Forms]** e fai clic su **[!UICONTROL Salva]**.
+1. Individua il programma e fai clic sull&#39;icona ![L&#39;opzione Forms non è disponibile](assets/Smock_Edit_18_N.svg). Viene visualizzata la pagina Modifica programma del programma.
+1. Apri la scheda **[!UICONTROL Soluzioni e componenti aggiuntivi]**.
+1. Seleziona l&#39;opzione **[!UICONTROL Forms]** e fai clic su **[!UICONTROL Salva]**.
 
-   ![Seleziona l’opzione Forms](assets/installation-configuration-select-forms-option.png)
-1. [Crea](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) e [eseguire](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it) pipeline di produzione e non di produzione.
+   ![Selezionare l&#39;opzione Forms](assets/installation-configuration-select-forms-option.png)
+1. [Crea](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) e [esegui](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it) entrambe le pipeline di produzione e non di produzione.
 
-Dopo la generazione e la distribuzione della pipeline, il **[!UICONTROL Forms]** opzione sul **[!UICONTROL Navigazione]** pagina.
+Dopo la generazione e la distribuzione della pipeline, l&#39;opzione **[!UICONTROL Forms]** nella pagina **[!UICONTROL Navigazione]**.
 
 <!--  
 ## Environment creation fails {#environment-creation-fails}
@@ -52,7 +52,7 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 
 Gli utenti non possono eseguire la pipeline di build. La pipeline ha esito negativo dopo un certo periodo di tempo dall’esecuzione.
 
-Per risolvere il problema, apri Cloud Manager, seleziona la **[!UICONTROL Aggiorna]** per il tuo ambiente ed esegui la pipeline.
+Per risolvere il problema, apri Cloud Manager, seleziona l&#39;opzione **[!UICONTROL Aggiorna]** per il tuo ambiente ed esegui la pipeline.
 
 
 ## I bundle non sono nello stato attivo {#bundles-inactive-state}
@@ -61,5 +61,5 @@ Per risolvere il problema, effettuare le seguenti operazioni:
 
 1. Avvia AEM e attendi che inizi completamente finché tutti i bundle non sono attivi.
 1. Interrompere AEM (Ctrl + C).
-1. Posizionare il Forms `.far` nella cartella di installazione.
+1. Inserire il file Forms `.far` nella cartella di installazione.
 1. Riavviare il server AEM.

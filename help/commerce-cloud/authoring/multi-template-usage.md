@@ -37,4 +37,4 @@ Per ulteriori informazioni su questo argomento, consulta le risorse seguenti:
 
 ## Risorse correlate {#related}
 
-È inoltre possibile eseguire il targeting dinamico di aree specifiche di una pagina e riutilizzare lo stesso modello. Scopri come [arricchire i dati di prodotto con i contenuti AEM associati](./enrich-product-associated-content.md).
+È inoltre possibile eseguire il targeting dinamico di aree specifiche di una pagina e riutilizzare lo stesso modello. Scopri come [arricchire i dati dei prodotti con i contenuti AEM associati](./enrich-product-associated-content.md).

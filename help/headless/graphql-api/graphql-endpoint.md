@@ -63,9 +63,9 @@ Per abilitare l’endpoint corrispondente:
 
 1. Passa a **Strumenti**, **Generale**, quindi seleziona **GraphQL**.
 1. Seleziona **Crea**.
-1. Il **Crea nuovo endpoint GraphQL** viene visualizzata una finestra di dialogo. Qui potrai definire:
+1. Viene visualizzata la finestra di dialogo **Crea nuovo endpoint GraphQL**. Qui potrai definire:
    * **Nome**: nome dell’endpoint; puoi immettere qualsiasi testo.
-   * **Utilizza lo schema GraphQL fornito da**: utilizza l’elenco a discesa per selezionare il sito/progetto richiesto.
+   * **Utilizza lo schema GraphQL fornito da**: utilizza l&#39;elenco a discesa per selezionare il sito o il progetto richiesto.
 
    >[!NOTE]
    >
@@ -74,7 +74,7 @@ Per abilitare l’endpoint corrispondente:
    >* *Se non vengono gestiti con attenzione, gli endpoint GraphQL possono causare problemi di prestazioni e sicurezza dei dati. Dopo aver creato un endpoint, verifica di aver impostato le autorizzazioni appropriate.*
 
 1. Conferma con **Crea**.
-1. Il **Passaggi successivi** fornirà un collegamento diretto alla console Sicurezza per verificare che l’endpoint creato disponga delle autorizzazioni appropriate.
+1. La finestra di dialogo **Passaggi successivi** fornirà un collegamento diretto alla console Sicurezza per verificare che l&#39;endpoint creato disponga delle autorizzazioni appropriate.
 
    >[!CAUTION]
    >
@@ -92,4 +92,4 @@ Seleziona il nuovo endpoint e scegli **Pubblica** per renderlo completamente dis
 >
 >Nelle istanze di pubblicazione questo può rappresentare un problema di sicurezza, in quanto le query GraphQL possono imporre un carico pesante sul server.
 >
->Configurazione [ACL appropriati per il tuo caso d’uso](/help/headless/security/permissions.md) sull&#39;endpoint.
+>Imposta [ACL appropriati per il tuo caso d&#39;uso](/help/headless/security/permissions.md) sull&#39;endpoint.

@@ -1,6 +1,6 @@
 ---
 title: Distribuire e condividere risorse, cartelle e raccolte
-description: Distribuisci le risorse digitali utilizzando metodi quali condivisione come collegamento, download e tramite [!DNL Brand Portal], [!DNL desktop app], e [!DNL Asset Link].
+description: Distribuisci le risorse digitali utilizzando metodi come share as a link, download e via [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
@@ -11,52 +11,52 @@ ht-degree: 3%
 
 ---
 
-# Condividere e distribuire le risorse gestite in [!DNL Experience Manager] {#share-assets-from-aem}
+# Condividi e distribuisci le risorse gestite in [!DNL Experience Manager] {#share-assets-from-aem}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
-[!DNL Adobe Experience Manager Assets] consente di condividere risorse, cartelle e raccolte con i membri dell’organizzazione e con entità esterne, inclusi partner e fornitori. Per condividere le risorse da, utilizza i seguenti metodi [!DNL Experience Manager Assets] as a [!DNL Cloud Service]:
+[!DNL Adobe Experience Manager Assets] consente di condividere risorse, cartelle e raccolte con membri dell&#39;organizzazione ed entità esterne, inclusi partner e fornitori. Utilizzare i metodi seguenti per condividere risorse da [!DNL Experience Manager Assets] come [!DNL Cloud Service]:
 
 * [Condividi come collegamento](#sharelink).
-* [Scaricare le risorse](/help/assets/download-assets-from-aem.md) e condividere separatamente.
+* [Scarica le risorse](/help/assets/download-assets-from-aem.md) e condividile separatamente.
 * Condividi con [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it).
 * Condividi con [[!DNL Adobe Asset Link]](https://www.adobe.com/it/creativecloud/business/enterprise/adobe-asset-link.html).
 * Condividi con [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
 ## Prerequisiti {#prerequisites}
 
-È necessario disporre dei privilegi di amministratore per [configurare le impostazioni per la condivisione delle risorse come collegamento](#config-link-share-settings).
+Sono necessari privilegi di amministratore per [configurare le impostazioni per la condivisione di risorse come collegamento](#config-link-share-settings).
 
 ## Configurare le impostazioni di condivisione dei collegamenti {#config-link-share-settings}
 
 [!DNL Experience Manager Assets] consente di configurare le impostazioni predefinite della condivisione di collegamenti.
 
-1. Fai clic su [!DNL Experience Manager] e quindi passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Configurazione risorse]** > **[!UICONTROL Condivisione collegamenti]**.
+1. Fai clic sul logo [!DNL Experience Manager], quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Configurazione Assets]** > **[!UICONTROL Condivisione collegamenti]**.
 1. Impostazioni iniziali:
 
    * **Includi originali:**
 
-      * Seleziona `Select Include Originals` per selezionare `Include Originals` per impostazione predefinita, nella finestra di dialogo condivisione collegamento.
-      * Seleziona la modalità di `Include Originals` viene visualizzata nella finestra di dialogo Condivisione collegamenti. [!UICONTROL Modificabile] consente all’utente di modificare le impostazioni qui definite nelle Impostazioni iniziali. Con `Read-only` l’impostazione viene visualizzata ma non può essere modificata. `Hidden` nasconde l’impostazione e utilizza il valore configurato qui nelle impostazioni iniziali.
+      * Selezionare `Select Include Originals` per selezionare l&#39;opzione `Include Originals` per impostazione predefinita nella finestra di dialogo di condivisione del collegamento.
+      * Selezionare la modalità di presentazione dell&#39;opzione `Include Originals` nella finestra di dialogo Condivisione collegamenti. [!UICONTROL Modificabile] consente all&#39;utente di modificare le impostazioni qui definite nelle impostazioni iniziali. Con `Read-only` l&#39;impostazione viene visualizzata ma non può essere modificata. `Hidden` nasconde l&#39;impostazione e utilizza il valore configurato qui nelle impostazioni iniziali.
    * **Includi rappresentazioni:**
-      * Seleziona `Select Include Renditions` opzione per selezionare `Include Renditions` per impostazione predefinita, nella finestra di dialogo condivisione collegamento.
-      * Seleziona la modalità di `Include Renditions` viene visualizzata nella finestra di dialogo Condivisione collegamenti. [!UICONTROL Modificabile] consente all’utente di modificare le impostazioni qui definite nelle Impostazioni iniziali. Con `Read-only` l’impostazione viene visualizzata ma non può essere modificata. `Hidden` nasconde l’impostazione e utilizza il valore configurato qui nelle impostazioni iniziali.
+      * Selezionare l&#39;opzione `Select Include Renditions` per selezionare l&#39;opzione `Include Renditions` per impostazione predefinita nella finestra di dialogo Condivisione collegamento.
+      * Selezionare la modalità di presentazione dell&#39;opzione `Include Renditions` nella finestra di dialogo Condivisione collegamenti. [!UICONTROL Modificabile] consente all&#39;utente di modificare le impostazioni qui definite nelle impostazioni iniziali. Con `Read-only` l&#39;impostazione viene visualizzata ma non può essere modificata. `Hidden` nasconde l&#39;impostazione e utilizza il valore configurato qui nelle impostazioni iniziali.
 
-1. Specifica il periodo di validità predefinito per il collegamento nel `Validity Period` campo in `Expiration date` sezione.
+1. Specificare il periodo di validità predefinito per il collegamento nel campo `Validity Period` della sezione `Expiration date`.
 
-1. **[!UICONTROL Condivisione collegamento]** nella barra delle azioni:
-   * Tutti gli utenti con `jcr:modifyAccessControl` Le autorizzazioni di possono visualizzare [!UICONTROL Condivisione collegamento] opzione. Per impostazione predefinita, è visibile a tutti gli amministratori. Il [!UICONTROL Condivisione collegamento] è visibile a tutti, per impostazione predefinita. È possibile configurare per visualizzare questa opzione solo per i gruppi definiti oppure negarla a gruppi specifici. Seleziona `Allow only for groups` per consentire a gruppi specifici di visualizzare `Share Link` opzione. Seleziona `Deny from groups` per negare `Share Link` da gruppi specifici. Dopo aver selezionato una di queste opzioni, specificate i nomi dei gruppi utilizzando `Select Groups` per aggiungere i nomi dei gruppi da consentire o negare.
+1. Pulsante **[!UICONTROL Condivisione collegamento]** nella barra delle azioni:
+   * Tutti gli utenti con autorizzazioni `jcr:modifyAccessControl` possono visualizzare l&#39;opzione [!UICONTROL Condivisione collegamenti]. Per impostazione predefinita, è visibile a tutti gli amministratori. Per impostazione predefinita, il pulsante [!UICONTROL Condivisione collegamento] è visibile a tutti. È possibile configurare per visualizzare questa opzione solo per i gruppi definiti oppure negarla a gruppi specifici. Selezionare `Allow only for groups` per consentire a gruppi specifici di visualizzare l&#39;opzione `Share Link`. Selezionare `Deny from groups` per negare l&#39;opzione `Share Link` da gruppi specifici. Dopo aver selezionato una di queste opzioni, specificare i nomi dei gruppi utilizzando il campo `Select Groups` per aggiungere i nomi dei gruppi da consentire o negare.
 
-Per le impostazioni relative alla configurazione e-mail, visita [Documentazione del servizio e-mail](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
+Per le impostazioni relative alla configurazione e-mail, visita la [documentazione del servizio e-mail](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
 
 ![Configura servizio e-mail](/help/assets/assets/config-email-service.png)
 
 ## Condividere le risorse come collegamento {#sharelink}
 
-La condivisione delle risorse tramite un collegamento è un modo pratico per renderle disponibili a parti esterne, addetti al marketing e altri [!DNL Experience Manager] utenti. Questa funzionalità consente agli utenti anonimi di accedere e scaricare le risorse condivise con loro. Quando si scaricano risorse da un collegamento condiviso, [!DNL Experience Manager Assets] utilizza un servizio asincrono che offre un download più rapido e ininterrotto. Le risorse da scaricare vengono accodate in background in archivi ZIP di dimensioni file gestibili. Per i download di grandi dimensioni, il download è raggruppato in più file di 100 GB per file di dimensioni.
+La condivisione delle risorse tramite un collegamento è un modo pratico per rendere le risorse disponibili a parti esterne, addetti al marketing e altri utenti di [!DNL Experience Manager]. Questa funzionalità consente agli utenti anonimi di accedere e scaricare le risorse condivise con loro. Quando si scaricano risorse da un collegamento condiviso, [!DNL Experience Manager Assets] utilizza un servizio asincrono che offre un download più rapido e ininterrotto. Le risorse da scaricare vengono accodate in background in archivi ZIP di dimensioni file gestibili. Per i download di grandi dimensioni, il download è raggruppato in più file di 100 GB per file di dimensioni.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -65,12 +65,12 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 >[!NOTE]
 >
 >* È necessario disporre dell’autorizzazione Modifica ACL per la cartella o la risorsa da condividere come collegamento.
->* [Abilita e-mail in uscita](/help/implementing/developing/introduction/development-guidelines.md#sending-email) prima di condividere un collegamento con gli utenti.
+>* [Abilita le e-mail in uscita](/help/implementing/developing/introduction/development-guidelines.md#sending-email) prima di condividere un collegamento con gli utenti.
 
 Esistono due modi per condividere le risorse utilizzando la funzionalità di condivisione dei collegamenti:
 
-1. Generare un collegamento condiviso, [copia e condividi il collegamento della risorsa](#copy-and-share-assets-link) con altri utenti.
-1. Generare un collegamento condiviso e [condividere il collegamento della risorsa tramite e-mail](#share-assets-link-through-email). Puoi modificare i valori predefiniti, ad esempio data e ora di scadenza, e consentire di scaricare le risorse originali e le relative rappresentazioni. Puoi inviare e-mail a più utenti aggiungendo i loro indirizzi e-mail.
+1. Genera un collegamento condiviso, [copia e condividi il collegamento della risorsa](#copy-and-share-assets-link) con altri utenti.
+1. Genera un collegamento condiviso e [condividi il collegamento della risorsa tramite e-mail](#share-assets-link-through-email). Puoi modificare i valori predefiniti, ad esempio data e ora di scadenza, e consentire di scaricare le risorse originali e le relative rappresentazioni. Puoi inviare e-mail a più utenti aggiungendo i loro indirizzi e-mail.
 
    ![Finestra di dialogo Condivisione collegamenti](assets/share-link.png)
 
@@ -80,12 +80,12 @@ In entrambi i casi, puoi modificare i valori predefiniti, ad esempio data e ora 
 
 Per condividere le risorse come URL pubblico:
 
-1. Accedi a [!DNL Experience Manager Assets] e passa a **[!UICONTROL File]**.
+1. Accedere a [!DNL Experience Manager Assets] e passare a **[!UICONTROL File]**.
 1. Seleziona le risorse o la cartella contenente le risorse. Dalla barra degli strumenti, fai clic su **[!UICONTROL Condividi collegamento]**.
-1. Il **[!UICONTROL Condivisione collegamenti]** viene visualizzata una finestra di dialogo che contiene un collegamento di risorsa generato automaticamente **[!UICONTROL Condividi collegamento]** campo.
+1. Viene visualizzata la finestra di dialogo **[!UICONTROL Condivisione collegamenti]** che contiene un collegamento di risorsa generato automaticamente nel campo **[!UICONTROL Condividi collegamento]**.
 1. Imposta la data di scadenza del collegamento condiviso come richiesto.
-1. Sotto **[!UICONTROL Impostazioni collegamento]**, selezionare o deselezionare `Include Originals` o `Include Renditions` per includere o escludere uno dei due. È obbligatorio scegliere almeno l’opzione.
-1. I nomi delle risorse selezionate vengono visualizzati nella colonna di destra della [!DNL Share Link] .
+1. In **[!UICONTROL Impostazioni collegamento]**, selezionare o deselezionare `Include Originals` o `Include Renditions` per includere o escludere uno dei due. È obbligatorio scegliere almeno l’opzione.
+1. I nomi dell&#39;Assets selezionato vengono visualizzati nella colonna di destra della finestra di dialogo [!DNL Share Link].
 1. Copia il collegamento della risorsa e condividilo con gli utenti.
 
 ### Condividere il collegamento delle risorse tramite notifica e-mail {#share-assets-link-through-email}
@@ -93,26 +93,26 @@ Per condividere le risorse come URL pubblico:
 Per condividere le risorse tramite e-mail:
 
 1. Seleziona le risorse o la cartella contenente le risorse. Dalla barra degli strumenti, fai clic su **[!UICONTROL Condividi collegamento]**.
-1. Il **[!UICONTROL Condivisione collegamenti]** viene visualizzata una finestra di dialogo che contiene un collegamento di risorsa generato automaticamente **[!UICONTROL Condividi collegamento]** campo.
+1. Viene visualizzata la finestra di dialogo **[!UICONTROL Condivisione collegamenti]** che contiene un collegamento di risorsa generato automaticamente nel campo **[!UICONTROL Condividi collegamento]**.
 
-   * Nella casella dell’indirizzo e-mail digita l’indirizzo e-mail dell’utente con cui vuoi condividere il collegamento. Puoi condividere il collegamento con più utenti. Se l’utente è membro dell’organizzazione, seleziona il proprio indirizzo e-mail dai suggerimenti visualizzati nell’elenco a discesa. Nel campo di testo dell’indirizzo e-mail, digita l’indirizzo e-mail dell’utente con cui vuoi condividere il collegamento e fai clic su [!UICONTROL Invio]. Puoi condividere il collegamento con più utenti.
+   * Nella casella dell’indirizzo e-mail digita l’indirizzo e-mail dell’utente con cui vuoi condividere il collegamento. Puoi condividere il collegamento con più utenti. Se l’utente è membro dell’organizzazione, seleziona il proprio indirizzo e-mail dai suggerimenti visualizzati nell’elenco a discesa. Nel campo di testo dell&#39;indirizzo di posta elettronica digitare l&#39;indirizzo di posta elettronica dell&#39;utente con cui si desidera condividere il collegamento e fare clic su [!UICONTROL Invio]. Puoi condividere il collegamento con più utenti.
 
-   * In **[!UICONTROL Oggetto]** , digita un oggetto per specificare lo scopo delle risorse condivise.
-   * In **[!UICONTROL Messaggio]** digitare un messaggio, se necessario.
-   * In **[!UICONTROL Scade]** , utilizza il selettore data per specificare una data e un’ora di scadenza per il collegamento.
-   * Abilita **[!UICONTROL Consenti download del file originale]** per consentire ai destinatari di scaricare la rappresentazione originale.
+   * Nella casella **[!UICONTROL Oggetto]** digitare un oggetto per specificare lo scopo delle risorse condivise.
+   * Nella casella **[!UICONTROL Messaggio]** digitare un messaggio, se necessario.
+   * Nel campo **[!UICONTROL Scadenza]**, utilizza il selettore data per specificare una data e un&#39;ora di scadenza per il collegamento.
+   * Abilitare la casella di controllo **[!UICONTROL Consenti download del file originale]** per consentire ai destinatari di scaricare la copia trasformata originale.
 
-1. Clic **[!UICONTROL Condividi]**. Un messaggio conferma che il collegamento è condiviso con gli utenti. Gli utenti ricevono un messaggio e-mail contenente il collegamento condiviso.
+1. Fai clic su **[!UICONTROL Condividi]**. Un messaggio conferma che il collegamento è condiviso con gli utenti. Gli utenti ricevono un messaggio e-mail contenente il collegamento condiviso.
 
-   ![E-mail Condivisione collegamenti](assets/link-sharing-email-notification.png)
+   ![E-mail condivisione collegamenti](assets/link-sharing-email-notification.png)
 
 ### Personalizza modello e-mail {#customize-email-template}
 
-Un modello ben progettato trasmette professionalità e competenza, migliorando la credibilità del messaggio e della tua organizzazione. Il [!DNL Adobe Experience Manager] consente di personalizzare il modello e-mail, che viene inviato ai destinatari che ricevono l’e-mail contenente il collegamento condiviso. Inoltre, i modelli e-mail personalizzati consentono di personalizzare il contenuto delle e-mail rivolgendosi ai destinatari con il nome e facendo riferimento a dettagli specifici pertinenti. Questo contatto personale può far sentire apprezzato il destinatario e aumentarne il coinvolgimento. Inoltre, un modello personalizzato garantisce che le e-mail siano coerenti con la tua identità del brand, inclusi logo, colori e font. La coerenza rafforza il riconoscimento del brand e la fiducia tra i destinatari.
+Un modello ben progettato trasmette professionalità e competenza, migliorando la credibilità del messaggio e della tua organizzazione. [!DNL Adobe Experience Manager] ti consente di personalizzare il modello di e-mail, che viene inviato ai destinatari che ricevono l&#39;e-mail contenente il collegamento condiviso. Inoltre, i modelli e-mail personalizzati consentono di personalizzare il contenuto delle e-mail rivolgendosi ai destinatari con il nome e facendo riferimento a dettagli specifici pertinenti. Questo contatto personale può far sentire apprezzato il destinatario e aumentarne il coinvolgimento. Inoltre, un modello personalizzato garantisce che le e-mail siano coerenti con la tua identità del brand, inclusi logo, colori e font. La coerenza rafforza il riconoscimento del brand e la fiducia tra i destinatari.
 
 #### Formato di un modello e-mail personalizzato {#format-of-custom-email-template}
 
-Il modello e-mail può essere personalizzato utilizzando testo normale o HTML. Il collegamento predefinito al modello modificabile si trova in `/libs/settings/dam/adhocassetshare/en.txt`. Potete sostituire il modello creando il file `/apps/settings/dam/adhocassetshare/en.txt`. Puoi modificare il modello e-mail il numero di volte necessario.
+Il modello e-mail può essere personalizzato utilizzando testo normale o HTML. Il collegamento predefinito al modello modificabile si trova in `/libs/settings/dam/adhocassetshare/en.txt`. È possibile sostituire il modello creando il file `/apps/settings/dam/adhocassetshare/en.txt`. Puoi modificare il modello e-mail il numero di volte necessario.
 
 | Segnaposto | Descrizione |
 |---|-----|
@@ -146,21 +146,21 @@ subject: ${emailSubject}
 
 Qualsiasi utente che abbia accesso al collegamento della risorsa condivisa può scaricare le risorse incluse in una cartella zip. Il processo di download è lo stesso, sia che un utente acceda al collegamento della risorsa copiato, sia che utilizzi il collegamento della risorsa condiviso tramite l’e-mail.
 
-* Fai clic sul collegamento della risorsa o incolla l’URL nel browser. Il [!UICONTROL Condivisione collegamenti] viene visualizzata l&#39;interfaccia in cui è possibile passare alla [!UICONTROL Vista a schede] o [!UICONTROL Vista a elenco].
+* Fai clic sul collegamento della risorsa o incolla l’URL nel browser. Viene aperta l&#39;interfaccia [!UICONTROL Condivisione collegamenti] in cui è possibile passare alla [!UICONTROL Vista a schede] o alla [!UICONTROL Vista a elenco].
 
-* In [!UICONTROL Vista a schede], puoi passare il cursore del mouse sulla cartella delle risorse condivise o delle risorse condivise per selezionare le risorse o metterle in coda per il download.
+* Nella [!UICONTROL Vista a schede], puoi passare il cursore del mouse sulla cartella delle risorse condivise o sulla cartella delle risorse condivise per selezionare le risorse o metterle in coda per il download.
 
-* Per impostazione predefinita, l’interfaccia utente mostra **[!UICONTROL Casella in entrata download]** opzione. Riflette l’elenco di tutte le risorse o cartelle condivise che sono in coda per il download e il loro stato.
+* Per impostazione predefinita, nell&#39;interfaccia utente viene visualizzata l&#39;opzione **[!UICONTROL Scarica cartella Posta in arrivo]**. Riflette l’elenco di tutte le risorse o cartelle condivise che sono in coda per il download e il loro stato.
 
-* Quando selezioni le risorse o la cartella, viene **[!UICONTROL Download coda]** sullo schermo. Fai clic su **[!UICONTROL Download coda]** per avviare il processo di download.
+* Quando selezioni le risorse o la cartella, sullo schermo viene visualizzata l&#39;opzione **[!UICONTROL Download coda]**. Fare clic sull&#39;opzione **[!UICONTROL Download coda]** per avviare il processo di download.
 
   ![Download coda](assets/queue-download.png)
 
-* Durante la preparazione del file di download, fare clic su **[!UICONTROL Casella in entrata download]** per visualizzare lo stato del download. Per i download di grandi dimensioni, fai clic su **[!UICONTROL Aggiorna]** per aggiornare lo stato.
+* Durante la preparazione del file di download, fare clic sull&#39;opzione **[!UICONTROL Scarica cartella Posta in arrivo]** per visualizzare lo stato del download. Per i download di grandi dimensioni, fare clic sul pulsante **[!UICONTROL Aggiorna]** per aggiornare lo stato.
 
-  ![Casella in entrata download](assets/link-sharing-download-inbox.png)
+  ![Scarica casella in entrata](assets/link-sharing-download-inbox.png)
 
-* Al termine dell’elaborazione, fai clic su **[!UICONTROL Scarica]** per scaricare il file zip.
+* Al termine dell&#39;elaborazione, fare clic sul pulsante **[!UICONTROL Scarica]** per scaricare il file zip.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -240,15 +240,15 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Scaricare le risorse e condividerle separatamente {#download-and-share-assets}
 
-Gli utenti possono scaricare le risorse richieste e condividerle al di fuori di [!DNL Experience Manager]. Per ulteriori informazioni, consulta [come cercare le risorse](/help/assets/search-assets.md), [come scaricare le risorse](/help/assets/download-assets-from-aem.md), e [come scaricare le raccolte](manage-collections.md#download-a-collection)
+Gli utenti possono scaricare le risorse richieste e condividerle all&#39;esterno di [!DNL Experience Manager]. Per ulteriori informazioni, consulta [come cercare le risorse](/help/assets/search-assets.md), [come scaricare le risorse](/help/assets/download-assets-from-aem.md) e [come scaricare le raccolte](manage-collections.md#download-a-collection)
 
 ## Condividere risorse con i professionisti della creatività {#share-with-creatives}
 
 Gli addetti al marketing e gli utenti del settore possono condividere con facilità le risorse approvate con i loro creativi utilizzando,
 
-* **app desktop Experience Manager**: l’app funziona su Windows e Mac. Consulta [panoramica dell’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it). Per sapere come qualsiasi utente desktop autorizzato può accedere facilmente alle risorse condivise, consulta [sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle nuovamente con gli altri utenti Experienci Manager, ad esempio caricando nuove immagini. Consulta [caricare risorse tramite un’app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **App desktop di Experience Manager**: l&#39;app funziona su Windows e Mac. Vedi [Panoramica dell&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it). Per sapere in che modo un utente desktop autorizzato può accedere facilmente alle risorse condivise, consulta [Sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle nuovamente con gli altri utenti Experienci Manager, ad esempio caricando nuove immagini. Consulta [caricare risorse tramite un&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **Adobe collegamento risorsa**: i professionisti della creatività possono cercare e utilizzare le risorse direttamente dall’interno di [!DNL Adobe InDesign], [!DNL Adobe Illustrator], e [!DNL Adobe Photoshop].
+* **Adobe Asset Link**: i professionisti della creatività possono cercare e utilizzare le risorse direttamente da [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop].
 
 ## Configurare la condivisione delle risorse {#configure-sharing}
 
@@ -258,11 +258,11 @@ Le diverse opzioni per la condivisione delle risorse richiedono una configurazio
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Per generare l’URL per le risorse da condividere con gli utenti, utilizza la finestra di dialogo Condivisione collegamenti. Utenti con privilegi di amministratore o con autorizzazioni di lettura all’indirizzo `/var/dam/share` in cui sono in grado di visualizzare i collegamenti condivisi. La condivisione delle risorse tramite un collegamento rappresenta un modo pratico per rendere le risorse disponibili a terzi senza dover prima accedere a [!DNL Assets].
+Per generare l’URL per le risorse da condividere con gli utenti, utilizza la finestra di dialogo Condivisione collegamenti. Gli utenti con privilegi di amministratore o con autorizzazioni di lettura nel percorso `/var/dam/share` possono visualizzare i collegamenti condivisi con loro. La condivisione delle risorse tramite un collegamento è un modo pratico per rendere le risorse disponibili alle parti esterne senza dover prima accedere a [!DNL Assets].
 
 >[!NOTE]
 >
->Se desideri condividere i collegamenti dall’istanza di authoring alle entità esterne, accertati di esporre solo i seguenti URL per `GET` richieste. Blocca altri URL per garantire la protezione dell’istanza di authoring.
+>Se desideri condividere i collegamenti dall&#39;istanza di authoring alle entità esterne, accertati di esporre solo i seguenti URL per le richieste `GET`. Blocca altri URL per garantire la protezione dell’istanza di authoring.
 >
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
@@ -295,13 +295,13 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Abilita le azioni desktop da utilizzare con l’app desktop {#desktop-actions}
 
-Dall&#39;interno del [!DNL Assets] interfaccia utente in un browser, puoi esplorare i percorsi delle risorse o estrarle e aprire la risorsa per la modifica nell’applicazione desktop. Queste opzioni sono denominate azioni desktop e per abilitarle, vedi [abilitare le azioni desktop in [!DNL Assets] interfaccia web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+Dall&#39;interfaccia utente di [!DNL Assets] in un browser, puoi esplorare i percorsi delle risorse o estrarle e aprire la risorsa per la modifica nell&#39;applicazione desktop. Queste opzioni sono denominate azioni desktop e per abilitarle, vedi [abilitare le azioni desktop nell&#39;interfaccia Web [!DNL Assets] 2}.](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 
-![Abilita le azioni desktop da utilizzare come collegamento quando si lavora con l’app desktop](assets/enable_desktop_actions.png)
+![Abilita le azioni desktop da utilizzare come collegamento quando si lavora con l&#39;app desktop](assets/enable_desktop_actions.png)
 
 ### Configurazioni da utilizzare [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link semplifica la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti. Si connette [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] app desktop, [!DNL Adobe InDesign], [!DNL Adobe Photoshop], e [!DNL Adobe Illustrator]. Il [!DNL Adobe Asset Link] consente ai creativi di accedere e modificare i contenuti archiviati in [!DNL Assets] senza uscire dalle app creative che sono più familiari.
+Adobe Asset Link semplifica la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti. Connette [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] app desktop, [!DNL Adobe InDesign], [!DNL Adobe Photoshop] e [!DNL Adobe Illustrator]. Il pannello [!DNL Adobe Asset Link] consente ai creativi di accedere e modificare il contenuto archiviato in [!DNL Assets] senza uscire dalle app creative che hanno più familiarità con.
 
 Consulta [come configurare [!DNL Assets] per utilizzarlo con [!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html).
 
@@ -309,8 +309,8 @@ Consulta [come configurare [!DNL Assets] per utilizzarlo con [!DNL Adobe Asset L
 
 * Le cartelle o le raccolte di risorse il cui nome contiene uno spazio vuoto potrebbero non essere condivise.
 * Se gli utenti non riescono a scaricare le risorse condivise, rivolgiti al tuo amministratore di Experience Manager per sapere quali sono i limiti di download. Il valore predefinito è 100 MB.
-* Per consentire a un utente di visualizzare in anteprima un video condiviso tramite la condivisione di collegamenti, è necessario che nel video sia disponibile una rappresentazione video statica all’indirizzo `/jcr:content/renditions` posizione nel nodo del video nell’archivio. L’anteprima non dipende dalla disponibilità di un [!DNL Dynamic Media] rendering.
-* Quando si scarica una risorsa video tramite la condivisione di collegamenti, [!DNL Dynamic Media] le rappresentazioni non sono incluse nell’archivio scaricato.
+* Per consentire a un utente di visualizzare in anteprima un video condiviso tramite la condivisione di collegamenti, è necessario che nel video sia disponibile una rappresentazione video statica nella posizione `/jcr:content/renditions` nel nodo del video nell&#39;archivio. L&#39;anteprima non dipende dalla disponibilità di una rappresentazione [!DNL Dynamic Media].
+* Quando si scarica una risorsa video tramite condivisione collegamenti, le rappresentazioni [!DNL Dynamic Media] non vengono incluse nell&#39;archivio scaricato.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your Experience Manager administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 

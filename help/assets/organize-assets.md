@@ -21,7 +21,7 @@ ht-degree: 6%
 
 Tutte le risorse digitali, i metadati e il contenuto dei documenti di Microsoft® Office e PDF vengono estratti e resi ricercabili. La ricerca consente un filtro sofisticato sulle risorse e rispetta completamente le autorizzazioni appropriate. I metadati sono descritti in dettaglio in Metadati in Gestione delle risorse digitali.
 
-[!DNL Experience Manager Assets] supporta diversi modi di organizzare i contenuti. Puoi organizzarli in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, ad esempio i tag. Gli utenti possono modificare i tag nell’Editor risorse DAM in cui vengono visualizzate le risorse secondarie, le rappresentazioni e i metadati.
+[!DNL Experience Manager Assets] supporta più modalità di organizzazione del contenuto. Puoi organizzarli in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, ad esempio i tag. Gli utenti possono modificare i tag nell’Editor risorse DAM in cui vengono visualizzate le risorse secondarie, le rappresentazioni e i metadati.
 
 <!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
 ## Create folders {#create-folders}
@@ -59,42 +59,42 @@ Date24/08/2021
 
 ## Organizzare le risorse in cartelle {#organize-using-folders}
 
-Il modo più semplice per organizzare le risorse consiste nel salvarle in cartelle. È simile all’organizzazione dei file nelle cartelle nel file system locale. Per ulteriori informazioni su come creare e gestire le cartelle, consulta [Gestione risorse](manage-digital-assets.md). Il modo in cui denominate i file e le cartelle, organizzate le sottocartelle e gestite i file all’interno di queste cartelle può avere un impatto significativo sul modo in cui tali risorse vengono elaborate. Utilizzando strategie di denominazione di file e cartelle coerenti e appropriate, insieme a una buona pratica sui metadati, puoi sfruttare al massimo l’archivio delle risorse digitali.
+Il modo più semplice per organizzare le risorse consiste nel salvarle in cartelle. È simile all’organizzazione dei file nelle cartelle nel file system locale. Per ulteriori informazioni su come creare e gestire le cartelle, consulta [Gestire le risorse](manage-digital-assets.md). Il modo in cui denominate i file e le cartelle, organizzate le sottocartelle e gestite i file all’interno di queste cartelle può avere un impatto significativo sul modo in cui tali risorse vengono elaborate. Utilizzando strategie di denominazione di file e cartelle coerenti e appropriate, insieme a una buona pratica sui metadati, puoi sfruttare al massimo l’archivio delle risorse digitali.
 
 * Di solito, l’archivio delle risorse digitali è sempre in crescita. Pertanto, è importante formalizzare l’uso dei metadati, la struttura delle cartelle e la denominazione dei file nelle prime fasi del ciclo di creazione dei contenuti.
 * Utilizza le cartelle solo per imporre una struttura di archiviazione coerente per le risorse digitali. Questa coerenza aiuta il processo e gestisce meglio le risorse. Ad esempio, le risorse posizionate nei seguenti tipi di cartelle possono essere utili per separare le risorse:
 
-   * **Cartelle di sviluppo**: contiene risorse digitali sulle quali stai lavorando.
-   * **Cartelle client**: contiene risorse digitali basate sui client o i nomi dei progetti.
+   * **Cartelle di sviluppo**: contiene risorse digitali su cui si sta lavorando.
+   * **Cartelle client**: contiene risorse digitali basate sui client o sui nomi dei progetti.
    * **Cartelle primarie**: contiene risorse digitali originali di origine.
-   * **Cartelle di rappresentazione**: contiene copie trasformate e copie delle risorse digitali originali di origine.
-   * **Cartelle dimensione file**: contiene risorse digitali basate su file di dimensioni piccole, medie o grandi.
-   * **Cartelle di gestione temporanea**: contiene risorse digitali pronte per la pubblicazione live sul sito web.
+   * **Cartelle di rendering**: contiene copie trasformate e copie delle risorse digitali originali di origine.
+   * **Cartelle dimensioni file**: contiene risorse digitali basate su file di dimensioni piccole, medie o grandi.
+   * **Cartelle di gestione temporanea**: contiene risorse digitali pronte per la pubblicazione live sul sito Web.
    * **Cartelle di tipo MIME**: contiene risorse digitali specifiche per i tipi MIME, ad esempio immagini, documenti e file multimediali.
-   * **Archiviare le cartelle**: contiene risorse digitali ritirate.
-   * **Cartelle basate sulla data**: contiene risorse digitali basate su una data di creazione o su una data dell’ultima modifica.
+   * **Archivia cartelle**: contiene risorse digitali ritirate.
+   * **Cartelle basate sulla data**: contiene risorse digitali basate su una data di creazione o su una data dell&#39;ultima modifica.
 
 * Crea una directory di cartelle che non dovrebbero essere modificate in modo che qualsiasi personalizzazione o automazione continui a funzionare. Ad esempio, i profili di elaborazione assegnati continuano a funzionare.
-* Se una risorsa è già pubblicata, utilizza [!DNL Experience Manager] per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione. La posizione originale della risorsa pubblicata è ancora disponibile insieme alla risorsa appena ripubblicata. La risorsa pubblicata originale, tuttavia, è *perso* a [!DNL Experience Manager] e non può essere annullata. Pertanto, come best practice, devi prima annullare la pubblicazione di una risorsa e quindi spostarla in un’altra cartella.
+* Se una risorsa è già pubblicata, puoi utilizzare [!DNL Experience Manager] per spostarla in un&#39;altra cartella e ripubblicarla dal nuovo percorso. La posizione originale della risorsa pubblicata è ancora disponibile insieme alla risorsa appena ripubblicata. La risorsa pubblicata originale, tuttavia, è *perduta* in [!DNL Experience Manager] e non può essere annullata. Pertanto, come best practice, devi prima annullare la pubblicazione di una risorsa e quindi spostarla in un’altra cartella.
 
 ## Organizzare le risorse utilizzando i tag {#use-tags-to-organize-assets}
 
 L’aggiunta di tag alle risorse ne semplifica il recupero durante una ricerca, la creazione di raccolte utilizzando i risultati della ricerca, l’aumento della classificazione di ricerca per alcune risorse e l’applicazione di algoritmi di intelligenza artificiale di Adobe Sensei per l’individuazione delle risorse.
 
-[!DNL Adobe Experience Manager Assets] utilizza un algoritmo di apprendimento automatico per creare tag altamente descrittivi che ti consentano di trovare la risorsa giusta con pochi clic. L’assegnazione tag avanzati utilizza Adobe Sensei, l’intelligenza artificiale e il framework di apprendimento automatico, che possono essere addestrati per riconoscere e applicare tag standard e specifici per l’azienda alle immagini. I tag avanzati possono inoltre identificare contenuti, singole parole o frasi e applicare automaticamente tag descrittivi alle risorse.
+[!DNL Adobe Experience Manager Assets] utilizza un algoritmo di apprendimento automatico per creare tag altamente descrittivi che consentono di trovare la risorsa giusta con pochi clic. L’assegnazione tag avanzati utilizza Adobe Sensei, l’intelligenza artificiale e il framework di apprendimento automatico, che possono essere addestrati per riconoscere e applicare tag standard e specifici per l’azienda alle immagini. I tag avanzati possono inoltre identificare contenuti, singole parole o frasi e applicare automaticamente tag descrittivi alle risorse.
 
 Di seguito è descritta la procedura per aggiungere tag a una risorsa:
 
 1. Accedi a [!DNL Experience Manager Assets].
-1. Clic **[!UICONTROL Risorse]** > **[!UICONTROL File]**, seleziona la risorsa e fai clic su **[!UICONTROL Proprietà]** per aprire le proprietà della risorsa.
-1. In **[!UICONTROL Base]** , fare clic sull&#39;icona della cartella in **[!UICONTROL Tag]** metadati. Viene visualizzata una finestra popup.
+1. Fai clic su **[!UICONTROL Assets]** > **[!UICONTROL File]**, seleziona la risorsa e fai clic su **[!UICONTROL Proprietà]** per aprire le proprietà della risorsa.
+1. Nella scheda **[!UICONTROL Base]**, fai clic sull&#39;icona della cartella nei metadati **[!UICONTROL Tag]**. Viene visualizzata una finestra popup.
 1. Cerca o seleziona i tag appropriati dai tag esistenti in `cq-tags`. Puoi assegnare più tag alla risorsa.
 
-   Puoi ordinare la struttura dei tag in ordine crescente o decrescente in base al **[!UICONTROL Nome]** (ordine alfabetico), **[!UICONTROL Creato]** data, oppure **[!UICONTROL Modificato]** data. Nell’illustrazione seguente, la struttura dei tag è ordinata alfabeticamente in base al **[!UICONTROL Nome]**.
+   Puoi ordinare la struttura dei tag in ordine crescente o decrescente in base alla data **[!UICONTROL Name]** (ordine alfabetico), **[!UICONTROL Created]** o **[!UICONTROL Modified]**. Nell&#39;illustrazione seguente, la struttura dei tag è ordinata alfabeticamente in base al **[!UICONTROL Nome]**.
 
    ![add-tags](assets/add-tags-to-asset.png)
 
-1. Clic **Salva** per aggiornare le modifiche ai metadati della risorsa.
+1. Fai clic su **Salva** per aggiornare le modifiche ai metadati della risorsa.
 
 Per ulteriori informazioni, consulta i seguenti articoli:
 
@@ -104,14 +104,14 @@ Per ulteriori informazioni, consulta i seguenti articoli:
 
 ## Organizza come raccolte {#organize-as-collections}
 
-Con raccolte di risorse in [!DNL Experience Manager Assets], è possibile semplificare la creazione, la modifica e la condivisione delle risorse tra gli utenti. Crea diversi tipi di raccolte in base al modo in cui le utilizzi, incluse le raccolte che contengono un elenco di riferimento statico di risorse, cartelle e raccolte e le raccolte che richiamano le risorse in base ai criteri di ricerca. Puoi creare raccolte con risorse da posizioni diverse e condividerle con più utenti con diversi livelli di accesso, visualizzazione e modifica dei privilegi.
+Con le raccolte di risorse in [!DNL Experience Manager Assets], è possibile semplificare la creazione, la modifica e la condivisione delle risorse tra gli utenti. Crea diversi tipi di raccolte in base al modo in cui le utilizzi, incluse le raccolte che contengono un elenco di riferimento statico di risorse, cartelle e raccolte e le raccolte che richiamano le risorse in base ai criteri di ricerca. Puoi creare raccolte con risorse da posizioni diverse e condividerle con più utenti con diversi livelli di accesso, visualizzazione e modifica dei privilegi.
 
-Per ulteriori informazioni, consulta [gestire le raccolte](manage-collections.md)
+Per ulteriori informazioni, vedere [gestire le raccolte](manage-collections.md)
 
 
 ## Utilizzare i profili per organizzare le risorse {#organize-to-use-profiles}
 
-Un profilo di elaborazione contiene [!DNL Assets] elaborazione dei comandi applicabili alle risorse caricate in cartelle predefinite. I profili vengono utilizzati per automatizzare l’elaborazione del contenuto di una cartella o delle risorse appena caricate. Puoi utilizzare i profili per organizzare meglio le risorse.
+Un profilo di elaborazione contiene [!DNL Assets] comandi di elaborazione applicabili alle risorse caricate in cartelle predefinite. I profili vengono utilizzati per automatizzare l’elaborazione del contenuto di una cartella o delle risorse appena caricate. Puoi utilizzare i profili per organizzare meglio le risorse.
 
 La standardizzazione dell’utilizzo dei metadati, della denominazione dei file e della struttura delle cartelle garantisce che, man mano che il pool di risorse digitali cresce, sia possibile applicare profili di elaborazione alle cartelle con maggiore precisione e coerenza.
 

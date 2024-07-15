@@ -21,7 +21,7 @@ ht-degree: 90%
 >
 >Vengono utilizzate la funzione di download e la destinazione predefinita del browser in uso.
 
-Il **Crea esportazione CSV** procedura guidata:
+La procedura guidata **Crea esportazione CSV** consente di selezionare:
 
 * Proprietà da esportare
    * Metadati
@@ -46,7 +46,7 @@ Il file `export.csv` risultante può essere aperto in Excel o in un’altra appl
 
 Per creare un’esportazione CSV:
 
-1. Apri **Sites** , passa alla posizione desiderata, se necessario.
+1. Apri la console **Sites** e passa alla posizione desiderata, se necessario.
    * L’opzione **Crea rapporto CSV** è disponibile nella vista a elenco della console **Sites**.
    * Si tratta di un’opzione del menu a discesa **Crea**:
 

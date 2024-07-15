@@ -14,13 +14,13 @@ ht-degree: 23%
 
 # Pannello laterale della console Sites {#side-panel}
 
-Scopri come utilizzare il pannello laterale nell’AEM **Sites** per comprendere e navigare meglio nel contenuto.
+Scopri come utilizzare il pannello laterale nella console **Sites** dell&#39;AEM per comprendere e navigare meglio nel contenuto.
 
 ## Orientamento {#orientation}
 
-Per impostazione predefinita, il pannello laterale viene chiuso quando si immette **Sites** console. In questo modo lo schermo è interamente dedicato al tuo contenuto.
+Per impostazione predefinita, il pannello laterale viene chiuso quando si accede alla console **Sites**. In questo modo lo schermo è interamente dedicato al tuo contenuto.
 
-Tocca o fai clic su **Pannello laterale** icona in **Sites** barra degli strumenti della console per attivare il pannello laterale e scegliere la visualizzazione del contenuto.
+Tocca o fai clic sull&#39;icona **Pannello laterale** nella barra degli strumenti della console **Sites** per attivare il pannello laterale e scegliere la tua visualizzazione del contenuto.
 
 * [Solo contenuto](#content-only)
 * [Struttura contenuto](#content-tree)
@@ -40,7 +40,7 @@ Questa visualizzazione del pannello laterale si disattiva in modo efficace, ovve
 
 >[!TIP]
 >
->Utilizza l’accento grave/contrassegno `´` scelta rapida da tastiera per passare alla visualizzazione solo contenuto del pannello laterale.
+>Utilizza la scelta rapida da tastiera `´` per evidenziare o mostrare il contenuto del pannello laterale.
 
 ## Struttura contenuto {#content-tree}
 
@@ -56,7 +56,7 @@ Utilizzando il pannello laterale della struttura del contenuto insieme a una vis
 
 >[!TIP]
 >
->* Utilizza il `Alt+1` scelta rapida da tastiera per passare alla visualizzazione struttura contenuto del pannello laterale.
+>* Utilizza la scelta rapida da tastiera `Alt+1` per passare alla visualizzazione struttura contenuto del pannello laterale.
 >* Una volta selezionata una voce nella visualizzazione gerarchica, puoi spostarti rapidamente nella gerarchia attraverso i tasti freccia.
 >* Per ulteriori informazioni, consulta [scelte rapide da tastiera](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
@@ -66,7 +66,7 @@ La timeline può essere utilizzata per visualizzare gli eventi che hanno interes
 
 ![Dettagli Timeline](/help/sites-cloud/authoring/assets/timeline-detail.png)
 
-Il **Timeline** il pannello laterale consente di visualizzare vari eventi relativi a un elemento selezionato selezionabili come tipi da un elenco a discesa:
+Il pannello laterale **Timeline** consente di visualizzare vari eventi relativi a un elemento selezionato selezionabili come tipi da un elenco a discesa:
 
 * Commenti
 * [Annotazioni](/help/sites-cloud/authoring/page-editor/annotations.md)
@@ -74,32 +74,32 @@ Il **Timeline** il pannello laterale consente di visualizzare vari eventi relati
 * [Lanci](/help/sites-cloud/authoring/launches/overview.md)
 * [Versioni](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * [Flussi di lavoro](/help/sites-cloud/authoring/workflows/overview.md)
-   * Tieni presente che non verranno visualizzate informazioni per i flussi di lavoro transitori, in quanto per tali flussi non vengono salvate informazioni sulla cronologia.<!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
+   * Non verranno visualizzate informazioni per i flussi di lavoro transitori poiché per tali flussi non vengono salvate informazioni sulla cronologia.<!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
 * Mostra tutto
 
-È inoltre possibile aggiungere o visualizzare commenti sull&#39;elemento selezionato utilizzando **Commento** nella parte inferiore dell’elenco degli eventi. Digita un commento seguito da `Return` registrerà il commento. Per visualizzarlo, basta selezionare **Commenti** o **Mostra tutti**.
+È inoltre possibile aggiungere o visualizzare commenti sull&#39;elemento selezionato utilizzando la casella **Commento** visualizzata in fondo all&#39;elenco degli eventi. Per registrare un commento, digitalo e premi `Return`. Per visualizzarlo, basta selezionare **Commenti** o **Mostra tutti**.
 
-In **Sites** console è inoltre possibile accedere a funzioni aggiuntive tramite il pulsante con i puntini di sospensione accanto al **Commento** campo.
+Nella console **Sites** puoi anche accedere a funzioni aggiuntive tramite il pulsante con i puntini di sospensione accanto al campo **Commento**.
 
 * [Salvare una versione](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * [Avviare un flusso di lavoro](/help/sites-cloud/authoring/workflows/applying.md)
 
-![Campo commento della console Sites](assets/sites-console-comment-ellipsis.png)
+![Campo commento console Sites](assets/sites-console-comment-ellipsis.png)
 
 >[!TIP]
 >
->* Utilizza il `Alt+2` scelta rapida da tastiera per passare alla vista timeline del pannello laterale.
+>* Utilizza la scelta rapida da tastiera `Alt+2` per passare alla visualizzazione della timeline del pannello laterale.
 >* Per ulteriori informazioni, consulta [scelte rapide da tastiera](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 ## Riferimenti {#references}
 
-Il **Riferimenti** visualizza mostra un elenco di tipi di riferimenti alla risorsa selezionata nella console o da essa.
+La visualizzazione **Riferimenti** mostra un elenco di tipi di riferimenti a o da alla risorsa selezionata nella console.
 
 ![Dettagli riferimenti](assets/console-side-panel-references-detail.png)
 
 Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determinate situazioni sono disponibili azioni ulteriori quando viene selezionato un riferimento specifico, inclusi:
 
-* **Collegamenti in ingresso**, fornisce un elenco di pagine che fanno riferimento alla pagina e accesso diretto a **Modifica** una di queste pagine quando selezioni un collegamento specifico.
+* **Collegamenti in ingresso**, fornisce un elenco di pagine che fanno riferimento alla pagina, insieme all&#39;accesso diretto a **Modifica** una di queste pagine quando selezioni un collegamento specifico.
    * Questo può mostrare solo collegamenti statici, non collegamenti generati dinamicamente come dal componente Elenco.
 * [Lanci](/help/sites-cloud/authoring/launches/overview.md): fornisce accesso ai lanci correlati.
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md) visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
@@ -108,11 +108,11 @@ Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determi
 
 ## Sito {#site}
 
-Il **Sito** la visualizzazione del pannello laterale mostra i dettagli dei siti [creato utilizzando un modello di sito.](/help/sites-cloud/administering/site-creation/create-site.md)
+La visualizzazione **Sito** del pannello laterale mostra i dettagli dei siti [creati utilizzando un modello di sito.](/help/sites-cloud/administering/site-creation/create-site.md)
 
-![Pannello Sito](assets/console-side-panel-site-paenl.png)
+![Pannello del sito](assets/console-side-panel-site-paenl.png)
 
-Consulta il documento [Utilizzo del pannello Sito per gestire il tema del sito](/help/sites-cloud/administering/site-creation/site-rail.md) per ulteriori dettagli su come utilizzare il pannello per gestire [tema del sito.](/help/sites-cloud/administering/site-creation/site-themes.md).
+Per ulteriori informazioni su come utilizzare il pannello per gestire il tema del sito [, vedere il documento [Utilizzo del pannello Sito per gestire il tema del sito](/help/sites-cloud/administering/site-creation/site-rail.md).](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 Se non hai ancora configurato la pipeline front-end per abilitare la creazione di siti basati su temi, il pannello laterale offrirà tale opzione.
 
@@ -124,14 +124,14 @@ Se non hai ancora configurato la pipeline front-end per abilitare la creazione d
 
 ## Filtro {#filter}
 
-Il **Filtro** è simile al pannello [funzione di ricerca](/help/sites-cloud/authoring/search.md) con i filtri di posizione appropriati già impostati, che consentono di filtrare ulteriormente il contenuto da visualizzare.
+Il pannello **Filtro** è simile alla [funzionalità di ricerca](/help/sites-cloud/authoring/search.md) con i filtri di posizione già impostati, che consentono di filtrare ulteriormente il contenuto da visualizzare.
 
 ![Esempio di filtro](assets/console-side-panel-filter.png)
 
-A differenza di altre viste del pannello laterale, per passare a un’altra vista tocca o fai clic sul pulsante `X` nel campo di ricerca.
+A differenza di altre visualizzazioni del pannello laterale, per passare a un&#39;altra visualizzazione tocca o fai clic su `X` nel campo di ricerca.
 
 ## Configurazione di Analytics {#setup-analytics}
 
 Questa vista consente di configurare rapidamente Adobe Analytics per un sito selezionato.
 
-![Configurazione analisi](assets/sites-console-side-panel-setup-analytics.png)
+![Imposta analisi](assets/sites-console-side-panel-setup-analytics.png)

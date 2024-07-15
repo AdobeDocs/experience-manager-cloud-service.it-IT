@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # Problema durante la pubblicazione dei moduli{#form-creation-fails}
 
-Dopo che gli utenti si aggiornano alla versione as a Cloud Service di AEM Forms `2024.5.16461`:
+Dopo l&#39;aggiornamento degli utenti ad AEM Forms as a Cloud Service `2024.5.16461`:
 
-**Alcuni utenti** potrebbe verificarsi un problema durante la creazione dei moduli. di conseguenza, quando un utente crea un modulo, nella finestra di dialogo di creazione viene visualizzato il messaggio di errore seguente:
+**Alcuni utenti** potrebbero riscontrare problemi durante la creazione dei moduli. Il problema è tale che quando un utente crea un modulo, nella finestra di dialogo di creazione viene visualizzato il messaggio di errore seguente:
 
 `A server error occurred. Try again after sometime.`
 
 ## Causa {#cause-form-creation-fails}
 
-Il problema si verifica perché l’autore pubblica il modulo senza **prima pubblicazione del modello** utilizzato in esso. Ciò comporta l&#39;aggiunta del `jcr:uuid` e altre proprietà protette e generate dal sistema `<template-path>/initial/jcr:content` causando errori nella successiva creazione del modulo.
+Il problema si verifica perché l&#39;autore pubblica il modulo senza **pubblicare prima il modello** utilizzato. Ciò comporta l&#39;aggiunta di `jcr:uuid` e di altre proprietà protette e generate dal sistema al nodo `<template-path>/initial/jcr:content`, causando errori nella successiva creazione del modulo.
 
 ## Soluzione alternativa {#resolution-form-creation-fails}
 
 Per risolvere il problema, effettuare le seguenti operazioni:
 
-1. Verificare che il modello utilizzato nel modulo non disponga di `jcr:uuid` e altre proprietà protette generate dal sistema nel percorso `<template-path>/initial/jcr:content node`.
+1. Verificare che nel modello utilizzato nel modulo non siano presenti `jcr:uuid` e altre proprietà protette generate dal sistema nel percorso `<template-path>/initial/jcr:content node`.
 1. Publish il modello utilizzando esplicitamente la console modelli.
 1. Ora, quando il modello viene pubblicato, provare a creare nuovi moduli utilizzando il modello.
 1. Se il modello utilizzato viene aggiornato nelle versioni future, esegui nuovamente il Publish del modello (come indicato nel passaggio 2) per evitare problemi di creazione del modulo.

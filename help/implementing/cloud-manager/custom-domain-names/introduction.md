@@ -26,7 +26,7 @@ L’interfaccia utente di Cloud Manager consente di aggiungere un dominio person
 
 ## Che cosa sono i nomi di dominio personalizzati? {#what-are-custom-domain-names}
 
-A ciascun sito web è associato un indirizzo numerico univoco in un formato leggibile al computer, ad esempio `184.33.123.64`. Il DNS (Domain Name System) è il sistema che consente di collegare domini personalizzati del marchio ai siti web traducendo gli indirizzi numerici in indirizzi facili da ricordare come `wknd.com`.
+A ciascun sito web è associato un indirizzo numerico univoco in un formato leggibile al computer, ad esempio `184.33.123.64`. Il DNS (Domain Name System) è il sistema che consente di collegare domini personalizzati del marchio ai siti Web traducendo gli indirizzi numerici in indirizzi facili da ricordare come `wknd.com`.
 
 È buona prassi scegliere per il sito un nome di dominio che sia facile da ricordare per la clientela e che rispecchi il marchio.
 
@@ -38,7 +38,7 @@ Il nome di dominio può essere acquistato da un registrar di nomi di dominio o d
 
 ## Nomi di dominio personalizzati e CDN BYO {#byo-cdn}
 
-AEM as a Cloud Service offre un servizio integrato di rete per la distribuzione di contenuti (CDN), ma consente anche di usare una rete CDN personalizzata (BYO) con AEM. I domini personalizzati possono essere installati nella rete CDN gestita da AEM o in una rete CDN gestita dall’utente.
+AEM as a Cloud Service offre un servizio di rete per la distribuzione di contenuti (CDN) integrato, ma consente anche di usare una rete CDN personalizzata (BYO) con AEM. I domini personalizzati possono essere installati nella rete CDN gestita da AEM o in una rete CDN gestita dall’utente.
 
 * I nomi di dominio personalizzati (e i certificati) installati nel CDN gestito da AEM vengono gestiti tramite Cloud Manager.
 * I nomi di dominio personalizzati (e i certificati) installati nel tuo CDN sono gestiti in quel CDN specifico.

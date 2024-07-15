@@ -66,7 +66,7 @@ Il plug-in Maven SDK Build Analyzer per AEM as a Cloud Service rileva i problemi
 
 È stato aggiunto di recente un nuovo analizzatore:
 
-* `content-packages-validation` : convalida la sintassi e la struttura del formato dei contenuti dei pacchetti installati durante la distribuzione
+* `content-packages-validation` - convalida la sintassi e la struttura del formato dei contenuti per i pacchetti installati durante la distribuzione
 
 Consigliamo vivamente di aggiornare il progetto Maven con l’ultima versione dell’analizzatore o di includerlo, se non lo hai ancora fatto. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it).
 

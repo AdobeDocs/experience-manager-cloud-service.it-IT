@@ -17,7 +17,7 @@ Questo documento offre una panoramica delle operazioni di base nell’ambiente d
 >[!NOTE]
 >
 >* Alcune funzionalità non sono disponibili in tutte le console e in alcune console potrebbero essere disponibili funzionalità aggiuntive. In altre sezioni sono descritte più dettagliatamente le informazioni specifiche sulle singole console e sulle relative funzionalità.
->* Sono disponibili scelte rapide da tastiera in tutto il AEM. In particolare quando [utilizzo delle console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e [modifica di pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+>* Sono disponibili scelte rapide da tastiera in tutto il AEM. In particolare quando [si utilizzano le console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e [si modificano le pagine](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
@@ -31,7 +31,7 @@ Immediatamente dopo aver effettuato l’accesso, si aprirà il pannello di [navi
 
 ![Pannello di navigazione](/help/sites-cloud/authoring/assets/navigation.png)
 
-Per illustrare l’utilizzo di base di AEM, in questo documento viene utilizzata la console **Sites**. Seleziona il **Sites** per iniziare.
+Per illustrare l’utilizzo di base di AEM, in questo documento viene utilizzata la console **Sites**. Seleziona **Sites** per iniziare.
 
 ## Navigazione nel prodotto  {#product-navigation}
 
@@ -39,7 +39,7 @@ Ogni volta che un utente accede per la prima volta a una console, viene avviato 
 
 ![Esercitazione sulla navigazione](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Seleziona **Successivo** per passare alla pagina successiva della panoramica. Seleziona **Chiudi** oppure seleziona all’esterno della finestra di dialogo della panoramica da chiudere.
+Seleziona **Avanti** per passare alla pagina successiva della panoramica. Seleziona **Chiudi** o fai clic all&#39;esterno della finestra di dialogo della panoramica per chiuderla.
 
 Se non visualizzi tutte le diapositive o non selezioni l’opzione **Non mostrare più**, al prossimo accesso a una console la panoramica viene riavviata.
 
@@ -53,7 +53,7 @@ Per chiudere il pannello di navigazione globale e tornare alla posizione precede
 
 La navigazione globale presenta due pannelli, rappresentati da icone sul lato sinistro dello schermo:
 
-* **[Navigazione](#navigation-panel)** - Rappresentato da una bussola e dal pannello predefinito al momento dell’accesso all’AEM
+* **[Navigazione](#navigation-panel)** - Rappresentata da una bussola e dal pannello predefinito al momento dell&#39;accesso a AEM
 * **[Strumenti](#tools-panel)**: rappresentati da un martello
 
 Le opzioni disponibili in questi pannelli sono descritte di seguito.
@@ -171,7 +171,7 @@ Sono disponibili diverse risorse di Aiuto:
 
 * **Barra degli strumenti della console**
 
-  A seconda della posizione, il **Aiuto** apre le risorse appropriate:
+  A seconda della posizione, l&#39;icona **Guida** apre le risorse appropriate:
 
   ![Icona Aiuto](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -475,6 +475,6 @@ Consulta il documento [Utilizzo della barra del sito per gestire il tema del sit
 
 ### Filtro {#filter}
 
-Questo apre un pannello simile a [ricerca](/help/sites-cloud/authoring/getting-started/search.md) con i filtri di posizione appropriati già impostati, che consentono di filtrare ulteriormente il contenuto da visualizzare.
+Verrà aperto un pannello simile a [ricerca](/help/sites-cloud/authoring/getting-started/search.md) con i filtri di posizione già impostati, che consentono di filtrare ulteriormente il contenuto da visualizzare.
 
 ![Esempio di filtro](/help/sites-cloud/authoring/assets/filter.png)

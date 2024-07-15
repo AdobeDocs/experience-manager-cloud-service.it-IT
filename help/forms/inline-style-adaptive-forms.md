@@ -14,45 +14,45 @@ ht-degree: 3%
 
 # Stile in linea dei componenti del modulo adattivo {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-È possibile definire l’aspetto e lo stile generali di un modulo adattivo specificando gli stili utilizzando [editor temi](themes.md). Inoltre, puoi applicare stili CSS in linea ai singoli componenti del modulo adattivo e visualizzare all’istante le modifiche in anteprima. Gli stili in linea sostituiscono gli stili forniti nel tema.
+Puoi definire l&#39;aspetto e lo stile generali di un modulo adattivo specificando gli stili tramite [editor temi](themes.md). Inoltre, puoi applicare stili CSS in linea ai singoli componenti del modulo adattivo e visualizzare all’istante le modifiche in anteprima. Gli stili in linea sostituiscono gli stili forniti nel tema.
 
 ## Applicare le proprietà CSS in linea {#apply-inline-css-properties}
 
 Per aggiungere stili in linea a un componente:
 
-1. Apri il modulo nell’editor moduli e cambia la modalità in modalità di stile. Per cambiare la modalità in modalità stile, nella barra degli strumenti della pagina seleziona ![elenco a discesa area di lavoro](assets/Smock_ChevronDown.svg) > **[!UICONTROL Stile]**.
-1. Seleziona un componente nella pagina e fai clic sul pulsante Modifica ![edit-button](assets/edit.svg). Le proprietà di stile si aprono nella barra laterale.
+1. Apri il modulo nell’editor moduli e cambia la modalità in modalità di stile. Per cambiare la modalità in stile, nella barra degli strumenti della pagina, seleziona ![elenco a discesa dell&#39;area di lavoro](assets/Smock_ChevronDown.svg) > **[!UICONTROL Stile]**.
+1. Selezionare un componente nella pagina, quindi selezionare il pulsante di modifica ![edit-button](assets/edit.svg). Le proprietà di stile si aprono nella barra laterale.
 
    Puoi anche selezionare i componenti dalla struttura gerarchica del modulo nella barra laterale. La struttura della gerarchia dei moduli è disponibile come Oggetti modulo nella barra laterale.
 
-   In [!UICONTROL Stile] In questa modalità, puoi visualizzare i componenti elencati in Oggetti modulo. Tuttavia, l’elenco Oggetti modulo nella barra laterale elenca componenti quali campi e pannelli. I campi e i pannelli sono componenti generici che possono contenere componenti quali caselle di testo e pulsanti di scelta.
+   Nella modalità [!UICONTROL Stile], puoi visualizzare i componenti elencati in Oggetti modulo. Tuttavia, l’elenco Oggetti modulo nella barra laterale elenca componenti quali campi e pannelli. I campi e i pannelli sono componenti generici che possono contenere componenti quali caselle di testo e pulsanti di scelta.
 
    Quando selezioni un componente dalla barra laterale, vengono visualizzati tutti i sottocomponenti elencati e le proprietà del componente selezionato. Puoi selezionare un sottocomponente specifico e assegnargli uno stile.
 
 1. Fai clic su una scheda nella barra laterale per specificare le proprietà CSS. Puoi specificare proprietà quali:
 
-   * [!UICONTROL Dimension e posizione] (Impostazione di visualizzazione, spaziatura interna, altezza, larghezza, margine, posizione, indice z, virgola mobile, cancellazione, riversamento)
-   * [!UICONTROL Testo] (Famiglia di caratteri, peso, colore, dimensioni, altezza della linea e allineamento)
-   * [!UICONTROL Sfondo] (Immagine e sfumatura, colore di sfondo)
+   * [!UICONTROL Dimension e posizione] (impostazione di visualizzazione, spaziatura interna, altezza, larghezza, margine, posizione, indice z, virgola mobile, cancella, riversamento)
+   * [!UICONTROL Testo] (famiglia di caratteri, peso, colore, dimensione, altezza della riga e allineamento)
+   * [!UICONTROL Sfondo] (immagine e sfumatura, colore di sfondo)
    * [!UICONTROL Bordo] (larghezza, stile, colore, raggio)
-   * [!UICONTROL Effetti] (Ombra, Opacità)
-   * [!UICONTROL Avanzate] (Consente di scrivere CSS personalizzati per il componente)
+   * [!UICONTROL Effetti] (Ombreggiatura, Opacità)
+   * [!UICONTROL Avanzate] (consente di scrivere CSS personalizzati per il componente)
 
-1. Allo stesso modo, potete applicare stili ad altre parti di un componente, ad esempio [!UICONTROL Widget], [!UICONTROL Didascalia], e [!UICONTROL Aiuto].
-1. Seleziona **[!UICONTROL Fine]** per confermare le modifiche o **[!UICONTROL Annulla]** per ignorare le modifiche.
+1. Analogamente, è possibile applicare stili per altre parti di un componente, ad esempio [!UICONTROL Widget], [!UICONTROL Didascalia] e [!UICONTROL Guida].
+1. Seleziona **[!UICONTROL Fine]** per confermare le modifiche o **[!UICONTROL Annulla]** per ignorarle.
 
 ## Esempio: stili in linea per un componente campo {#example-inline-styles-for-a-field-component}
 
 Le immagini seguenti rappresentano un campo di testo prima e dopo l’applicazione di stili in linea.
 
-![Componente casella di testo prima dell’applicazione dello stile in linea](assets/no-style.png)
+![Componente casella di testo prima dell&#39;applicazione dello stile in linea](assets/no-style.png)
 
 Componente casella di testo prima di applicare proprietà di stile in linea
 
@@ -111,25 +111,25 @@ Seguendo i passaggi precedenti, è possibile selezionare e assegnare uno stile a
 
 ## Copiare e incollare gli stili {#copy-paste-styles}
 
-È inoltre possibile copiare e incollare uno stile da un componente a un altro in un modulo adattivo. In **[!UICONTROL Stile]** , seleziona il componente e fai clic sull’icona Copia. ![Copia](assets/property-copy-icon.svg).
+È inoltre possibile copiare e incollare uno stile da un componente a un altro in un modulo adattivo. In modalità **[!UICONTROL Stile]**, seleziona il componente e l&#39;icona Copia ![Copia](assets/property-copy-icon.svg).
 
-Seleziona l’altro componente dello stesso tipo e fai clic sull’icona Incolla ![Copia](assets/Smock_Paste_18_N.svg) per incollare lo stile copiato. È inoltre possibile selezionare l&#39;icona Cancella stile ![Copia](assets/clear-style-icon.svg) per cancellare lo stile applicato.
+Selezionare l&#39;altro componente dello stesso tipo e l&#39;icona Incolla ![Copia](assets/Smock_Paste_18_N.svg) per incollare lo stile copiato. Puoi anche selezionare l&#39;icona Cancella stile ![Copia](assets/clear-style-icon.svg) per cancellare lo stile applicato.
 
 ## Impostare stili per diversi stati di un componente {#set-styles-for-states}
 
-È possibile impostare stili per diversi stati di un tipo di componente. I diversi stati includono: [!UICONTROL Focus], [!UICONTROL Disabilitato], [!UICONTROL Passaggio del mouse], [!UICONTROL Errore], [!UICONTROL Completato], e [!UICONTROL Obbligatorio].
+È possibile impostare stili per diversi stati di un tipo di componente. I diversi stati includono: [!UICONTROL Stato attivo], [!UICONTROL Disabilitato], [!UICONTROL Passaggio del mouse], [!UICONTROL Errore], [!UICONTROL Operazione riuscita] e [!UICONTROL Obbligatorio].
 
 Per definire lo stile per uno stato di un componente:
 
-1. In **[!UICONTROL Stile]** , seleziona il componente e fai clic sull’icona Modifica. ![Modifica](assets/Smock_Edit_18_N.svg).
+1. Nella modalità **[!UICONTROL Stile]**, seleziona il componente e l&#39;icona Modifica ![Modifica](assets/Smock_Edit_18_N.svg).
 
-1. Seleziona lo stato del componente utilizzando **[!UICONTROL Stato]** elenco a discesa.
+1. Selezionare lo stato del componente utilizzando l&#39;elenco a discesa **[!UICONTROL Stato]**.
 
    ![Seleziona stato](assets/select-state.png)
 
 1. Definisci lo stile per lo stato selezionato del componente e seleziona ![Salva](assets/save_icon.svg) per salvare le proprietà.
 
-È inoltre possibile simulare gli stati di esito positivo e di errore. Seleziona l’icona Espandi per visualizzare **[!UICONTROL Simula esito positivo]** e **[!UICONTROL Simula errore]** opzioni.
+È inoltre possibile simulare gli stati di esito positivo e di errore. Seleziona l&#39;icona Espandi per visualizzare le opzioni **[!UICONTROL Simula esito positivo]** e **[!UICONTROL Simula errore]**.
 
 ![Simula stati](assets/simulate-states.png)
 

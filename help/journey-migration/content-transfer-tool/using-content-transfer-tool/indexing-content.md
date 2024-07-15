@@ -20,13 +20,13 @@ ht-degree: 9%
 >title="Indicizzazione dei contenuti"
 >abstract="Per indicizzazione di AEM si intende l’indicizzazione dei contenuti nell’istanza di Cloud Service dopo la migrazione di contenuti. L’indicizzazione è necessaria per supportare la ricerca per contenuto in quell’istanza."
 
-Una volta che Cloud Acceleration Manager ha completato l’acquisizione del contenuto nell’istanza di Cloud Service, è pronto per essere utilizzato. Inizialmente il contenuto non è indicizzato, probabilmente causando un ambiente instabile in cui sono prevedibili problemi quali contenuto non ricercabile e prestazioni ridotte. Per prestazioni ottimali sull’istanza, il processo di migrazione avvierà automaticamente l’indicizzazione del contenuto. Non è necessario eseguire alcuna operazione, ad eccezione del monitoraggio dell’avanzamento dell’indicizzazione.
+Una volta completata l’acquisizione del contenuto nell’istanza di Cloud Service, Cloud Acceleration Manager è pronto per essere utilizzato. Inizialmente il contenuto non è indicizzato, probabilmente causando un ambiente instabile in cui sono prevedibili problemi quali contenuto non ricercabile e prestazioni ridotte. Per prestazioni ottimali sull’istanza, il processo di migrazione avvierà automaticamente l’indicizzazione del contenuto. Non è necessario eseguire alcuna operazione, ad eccezione del monitoraggio dell’avanzamento dell’indicizzazione.
 
-> Per informazioni su come avviare un’acquisizione, consulta [Acquisizione di contenuti nel Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
+> Per informazioni su come avviare un&#39;acquisizione, consulta [Inserimento di contenuto nel Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
 
 I passaggi seguenti mostrano il flusso generale che ci si aspetta di visualizzare nell’interfaccia utente durante l’indicizzazione. Alcune etichette forniscono un contesto utile nelle descrizioni, quindi accertati di passare il cursore sugli elementi per ulteriori informazioni sullo stato di indicizzazione corrente.
 
-Per iniziare, passa a Cloud Acceleration Manager. Fai clic sulla scheda del progetto e quindi sulla scheda Content Transfer (Trasferimento contenuti). Accedi a **Processi di acquisizione** e visualizzare i processi elencati.
+Per iniziare, passa a Cloud Acceleration Manager. Fai clic sulla scheda del progetto e quindi sulla scheda Content Transfer (Trasferimento contenuti). Passa a **Processi di acquisizione** per visualizzare i processi elencati.
 
 >[!NOTE]
 >Puoi visualizzare o scaricare i registri di indicizzazione utilizzando le azioni del processo di acquisizione, utilizzando l’elenco a discesa ... I registri saranno disponibili nel
@@ -56,7 +56,7 @@ L’indicizzazione dell’istanza del Cloud Service di destinazione avrà molto 
 
 >[!TIP]
 >
-> Se il processo di indicizzazione sembra essere in esecuzione per troppo tempo, verificare che [Il Inserisco nell&#39;elenco Consentiti di IP non è stato applicato](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) tramite Cloud Manager, in quanto impedisce a Cloud Acceleration Manager di raggiungere il servizio di migrazione.
+> Se il processo di indicizzazione sembra essere in esecuzione troppo a lungo, verificare che non sia stato applicato un Elenco Consentiti IP [](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) tramite Cloud Manager poiché impedisce a Cloud Acceleration Manager di raggiungere il servizio di migrazione.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 

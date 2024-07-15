@@ -1,5 +1,5 @@
 ---
-title: La mia area di lavoro per la vista Risorse
+title: Vista My Workspace for Assets
 description: L’area di lavoro personale è una pagina che offre moduli visivi personalizzabili per un accesso comodo alle aree chiave dell’interfaccia utente di Assets e alle informazioni più rilevanti per l’utente.
 exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 feature: Asset Management, Publishing, Collaboration, Asset Processing
@@ -46,7 +46,7 @@ Per fissare una risorsa, una cartella o una raccolta:
 
 1. Seleziona l’elemento e fai clic su **[!UICONTROL Fissa in Accesso rapido]**.
 
-1. Seleziona questa opzione per fissare l’elemento solo per l’utente, per l’intera organizzazione o per i gruppi selezionati. Se si seleziona **[!UICONTROL Per i gruppi]**, scegli un nome gruppo esistente in **[!UICONTROL Fissa per gruppi]** campo.
+1. Seleziona questa opzione per fissare l’elemento solo per l’utente, per l’intera organizzazione o per i gruppi selezionati. Se si seleziona **[!UICONTROL Per gruppi]**, scegliere un nome di gruppo esistente nel campo **[!UICONTROL Pin per gruppi]**.
 
    ![Fissa elementi per gruppi](assets/pin-items-for-groups.png)
 1. Fai clic su **[!UICONTROL Fissa]**.
@@ -58,13 +58,13 @@ Per fissare una risorsa, una cartella o una raccolta:
 
 Gli amministratori possono visualizzare un riepilogo del numero di download e caricamenti eseguiti nell’ambiente Assets negli ultimi 30 giorni. Puoi fare clic su **[!UICONTROL Visualizza tutto]** per passare rapidamente alla pagina Approfondimenti e visualizzare dashboard più dettagliate.
 
-Puoi anche visualizzare i termini più cercati e il numero di volte in cui tali termini vengono cercati all’interno della distribuzione di visualizzazione delle risorse utilizzando **Approfondimenti** sezione di My Workspace. Puoi anche passare alla sezione Approfondimenti per visualizzare le ricerche principali degli ultimi 30 giorni o 12 mesi.
+Puoi anche visualizzare i termini più cercati e il numero di volte in cui tali termini vengono cercati nella tua distribuzione di visualizzazione Assets utilizzando la sezione **Insights** di My Workspace. Puoi anche passare alla sezione Approfondimenti per visualizzare le ricerche principali degli ultimi 30 giorni o 12 mesi.
 
 ![Approfondimenti in Workspace](assets/insights.png)
 
 **Attività**
 
-Visualizza l&#39;elenco delle attività attualmente assegnate in **[!UICONTROL Le Mie Attività]** , creato da te in **[!UICONTROL Attività assegnate]** e le attività già completate in **[!UICONTROL Attività completate]** scheda. Puoi selezionare un’attività e fare clic su **[!UICONTROL Completa l’attività]** per approvare o rifiutare un&#39;attività. Puoi anche selezionare un’attività e fare clic su **[!UICONTROL Apri dettagli attività]** per visualizzare l’attività e approvarla, rifiutarla, modificarla o eliminarla.
+Visualizza l&#39;elenco delle attività attualmente assegnate all&#39;utente nella scheda **[!UICONTROL Attività personali]**, creata dall&#39;utente nella scheda **[!UICONTROL Attività assegnate]**, e le attività già completate dall&#39;utente nella scheda **[!UICONTROL Attività completate]**. È possibile selezionare un&#39;attività e fare clic su **[!UICONTROL Completa attività]** per approvare o rifiutare un&#39;attività. Puoi anche selezionare un’attività e fare clic su **[!UICONTROL Apri dettagli attività]** per visualizzare l’attività e approvarla, rifiutarla, modificarla o eliminarla.
 
 ![Attività nell’area di lavoro](assets/tasks-workspace.png)
 
@@ -76,7 +76,7 @@ Visualizza l&#39;elenco delle attività attualmente assegnate in **[!UICONTROL L
 
 Mostra le visualizzazioni assortite delle risorse, compreso l’elenco delle risorse visualizzate di recente. È possibile selezionare per visualizzare le risorse nel widget in una vista a elenco, a griglia, a raccolta o a cascata e ordinare le risorse per nome, dimensione e data modificata. Puoi anche selezionare una risorsa per visualizzarne i dettagli o rimuoverla dall’elenco delle risorse visualizzate di recente.
 
-Il **[!UICONTROL Download principali]** Questa scheda mostra le dieci risorse più scaricate disponibili nell’ambiente di visualizzazione delle risorse. Puoi scegliere di visualizzare le risorse nella Vista a elenco o a griglia. Entrambe le viste presentano il tipo di formato e il numero di download per ciascuna risorsa. Puoi anche selezionare una risorsa e fare clic su **[!UICONTROL Dettagli]** per visualizzarne le proprietà.
+Nella scheda **[!UICONTROL Download principali]** sono visualizzate le dieci risorse più scaricate disponibili nell&#39;ambiente di visualizzazione Assets. Puoi scegliere di visualizzare le risorse nella Vista a elenco o a griglia. Entrambe le viste presentano il tipo di formato e il numero di download per ciascuna risorsa. Puoi anche selezionare una risorsa e fare clic su **[!UICONTROL Dettagli]** per visualizzarne le proprietà.
 
 ![Widget di contenuto nell’area di lavoro](assets/workspace-content.png)
 

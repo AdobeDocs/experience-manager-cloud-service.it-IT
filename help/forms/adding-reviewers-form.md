@@ -8,8 +8,8 @@ discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 1%
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
@@ -30,8 +30,8 @@ Per associare un gruppo di revisori a un modulo, modifica lo schema di metadati 
 
 Per modificare lo schema metadati:
 
-1. Nella modalità di authoring, in Experience Manager, fai clic su **Strumenti** > **Risorse** > **Schemi metadati**.
-1. Nella pagina Forms schema, passa a **Forms** > **Forms creato nell&#39;AEM.**
+1. In modalità Creazione, nell&#39;Experience Manager, fare clic su **Strumenti** > **Assets** > **Schemi metadati**.
+1. Nella pagina Forms dello schema, passa a **Forms** > **Forms creato nell&#39;AEM.**
 
    L’URL della pagina è:
 
@@ -42,7 +42,7 @@ Per modificare lo schema metadati:
 
 1. Seleziona **Modulo adattivo** e fai clic su **Modifica**.
 1. Nella pagina Modifica modulo fare clic su **Avanzate**.
-1. Nella scheda Avanzate, trascina e rilascia la **Testo su riga singola** componente disponibile in Genera modulo.
+1. Nella scheda Avanzate, trascina e rilascia il componente **Testo a riga singola** disponibile in Genera modulo.
 1. Seleziona il componente testo aggiunto per visualizzarne le impostazioni.
 
    In Impostazioni, immetti `./jcr:content/metadata/form-submission-reviewer-group` nel campo Mappa su proprietà.
@@ -54,28 +54,28 @@ Per modificare lo schema metadati:
 Per associare i revisori per l’invio a un modulo adattivo, crea un gruppo di revisori e aggiungi gli utenti. Aggiungi il gruppo di revisori creato nel campo revisore invio modulo nelle proprietà avanzate del modulo.
 I gruppi di utenti consentono di associare diversi set di revisori per l’invio a diversi Forms adattivi. Questa funzione impedisce a un utente non autorizzato di inviare un messaggio di revisione.
 
-Prima di eseguire i passaggi seguenti, consulta [Prerequisito](adding-reviewers-form.md#prerequisite).
+Prima di eseguire i passaggi seguenti, vedere [Prerequisito](adding-reviewers-form.md#prerequisite).
 
-Per creare un gruppo e aggiungervi membri, passare a **Strumenti** > **Operazioni** > **Sicurezza** > **Gruppi**.
-Per ulteriori informazioni, consulta [Amministrazione utenti e servizi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=it).
-Assicurati di aggiungere il gruppo creato come membro del gruppo di utenti predefinito: **forms-submit-reviewers**. Questo gruppo di utenti viene fornito con [!DNL AEM Forms]e garantisce che gli utenti vengano aggiunti come revisori per l’invio.
+Per creare un gruppo e aggiungervi membri, passa a **Strumenti** > **Operazioni** > **Sicurezza** > **Gruppi**.
+Per ulteriori informazioni, vedere [Amministrazione utenti e servizi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+Assicurati di aggiungere il gruppo creato come membro del gruppo di utenti predefinito: **forms-submit-reviewers**. Questo gruppo di utenti viene fornito con [!DNL AEM Forms] e garantisce che gli utenti vengano aggiunti come revisori per l&#39;invio.
 
 Per associare gruppi di utenti a un modulo adattivo:
 
-1. In modalità authoring, passa a **Forms** > **Forms e documenti**.
-1. Utilizza l’opzione **Seleziona **per selezionare un modulo adattivo e fai clic su **Visualizza proprietà**.
-1. Nella finestra Proprietà del modulo fare clic su **Modifica** e quindi fare clic su **AVANZATE**.
+1. In modalità creazione, passa a **Forms** > **Forms e documenti**.
+1. Utilizza l&#39;opzione **Seleziona **per selezionare un modulo adattivo e fai clic su **Visualizza proprietà**.
+1. Nella finestra Proprietà del modulo fare clic su **Modifica** e quindi su **AVANZATE**.
 1. Immettere il gruppo nel campo gruppo revisore invio e fare clic su **Fine**.
 
    Viene visualizzato il campo del gruppo di revisori dell’invio con il nome specificato nello schema di metadati modificato di Adaptive Forms.
 
 >[!NOTE]
 >
->Replica di utenti e moduli per garantire la disponibilità di utenti e moduli nell&#39;implementazione remota di [!DNL AEM Forms].
+>Replica utenti e moduli per garantire la disponibilità degli utenti e dei moduli nell&#39;implementazione remota di [!DNL AEM Forms].
 >
 >Assicurati che tutti gli utenti vengano replicati durante la revisione dei membri dei gruppi di utenti nell’implementazione remota.
 
 >[!MORELIKETHIS]
 >
->* [Creazione e gestione delle revisioni ai moduli](/help/forms/create-reviews-forms.md)
->* [Creare e gestire recensioni per un modulo adattivo](/help/forms/review-adaptiveforms-in-sites-page.md)
+>* [Creazione e gestione delle revisioni nei moduli](/help/forms/create-reviews-forms.md)
+>* [Creare e gestire revisioni per un modulo adattivo](/help/forms/review-adaptiveforms-in-sites-page.md)

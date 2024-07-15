@@ -38,15 +38,15 @@ La figura seguente illustra la sequenza di attività da eseguire per configurare
 
 Per gestire le proprietà dei tag colore per le immagini:
 
-1. Accedi a **[!UICONTROL Strumenti > Risorse > Assegnazione tag colore]**.
+1. Passa a **[!UICONTROL Strumenti > Assets > Tag colore]**.
 
    ![Proprietà assegnazione tag colore](assets/color-tag-settings.png)
 
-1. Specificate un formato di visualizzazione per il tag colore in **[!UICONTROL Formato di visualizzazione]** campo. Le opzioni possibili includono il nome del colore, il RGB o il formato HEX.
+1. Specificare un formato di visualizzazione per il tag colore nel campo **[!UICONTROL Formato visualizzazione]**. Le opzioni possibili includono il nome del colore, il RGB o il formato HEX.
 
-1. Specifica il numero di colori a cui assegnare tag per le immagini nella **[!UICONTROL Limite]** campo. Questi colori vengono visualizzati quando si visualizzano le proprietà di un&#39;immagine. In questo campo puoi definire un numero compreso tra 1 e 40. Il valore predefinito per questo campo è dieci colori.
+1. Specifica il numero di colori a cui vuoi assegnare tag per le immagini nel campo **[!UICONTROL Limite]**. Questi colori vengono visualizzati quando si visualizzano le proprietà di un&#39;immagine. In questo campo puoi definire un numero compreso tra 1 e 40. Il valore predefinito per questo campo è dieci colori.
 
-1. Specifica la percentuale minima di copertura cromatica per includere un tag colore nei risultati di ricerca in **[!UICONTROL Soglia copertura/dominanza (%)]** campo. Ad esempio, se la copertura del colore Rosso in un&#39;immagine è il 10% e in questo campo si definisce il 9%, l&#39;immagine viene inclusa quando si cercano immagini con il colore Rosso. Tuttavia, se la copertura del colore rosso in un&#39;immagine è pari al 10% e si definisce l&#39;11% in questo campo, l&#39;immagine non viene inclusa quando si cercano immagini con il colore rosso.
+1. Specificare la percentuale minima di copertura dei colori per includere un tag colore nei risultati di ricerca nel campo **[!UICONTROL Soglia copertura/dominanza %]**. Ad esempio, se la copertura del colore Rosso in un&#39;immagine è il 10% e in questo campo si definisce il 9%, l&#39;immagine viene inclusa quando si cercano immagini con il colore Rosso. Tuttavia, se la copertura del colore rosso in un&#39;immagine è pari al 10% e si definisce l&#39;11% in questo campo, l&#39;immagine non viene inclusa quando si cercano immagini con il colore rosso.
 
    In questo campo è possibile specificare un numero qualsiasi compreso tra cinque e 100. Il valore predefinito è 11.
 
@@ -66,11 +66,11 @@ L&#39;assegnazione di tag colore per le immagini è attivata per impostazione pr
 
 Per disattivare l&#39;assegnazione di tag colore a livello di cartella:
 
-1. Accedi a **[!UICONTROL Adobe Experience Manager > Risorse > File]**.
+1. Passa a **[!UICONTROL Adobe Experience Manager > Assets > File]**.
 
-1. Seleziona la cartella e fai clic su **[!UICONTROL Proprietà]**.
+1. Selezionare la cartella e fare clic su **[!UICONTROL Proprietà]**.
 
-1. In **[!UICONTROL Elaborazione risorse]** , passare alla scheda **[!UICONTROL Tag colore per immagini]** cartella. Selezionare uno dei seguenti valori dall&#39;elenco a discesa:
+1. Nella scheda **[!UICONTROL Elaborazione risorse]**, passa alla cartella **[!UICONTROL Tag colore per immagini]**. Selezionare uno dei seguenti valori dall&#39;elenco a discesa:
 
    * Ereditata: la cartella eredita le opzioni di abilitazione o disabilitazione dalla cartella principale.
 
@@ -82,7 +82,7 @@ Per disattivare l&#39;assegnazione di tag colore a livello di cartella:
 
 ## Configura lo schema metadati per aggiungere il componente tag di colore avanzati {#configure-metadata-schema}
 
-Gli schemi di metadati contengono campi specifici per informazioni specifiche da compilare. Contiene inoltre informazioni di layout per visualizzare i campi di metadati in modo semplice e intuitivo. Le proprietà dei metadati includono titolo, descrizione, tipi MIME, tag e altro ancora. È possibile utilizzare [!UICONTROL Forms schema metadati] per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati.
+Gli schemi di metadati contengono campi specifici per informazioni specifiche da compilare. Contiene inoltre informazioni di layout per visualizzare i campi di metadati in modo semplice e intuitivo. Le proprietà dei metadati includono titolo, descrizione, tipi MIME, tag e altro ancora. È possibile utilizzare l&#39;editor di schema di metadati [!UICONTROL Forms] per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati.
 
 >[!NOTE]
 >
@@ -90,15 +90,15 @@ Gli schemi di metadati contengono campi specifici per informazioni specifiche da
 
 Per aggiungere il componente Tag colore avanzati all’editor modulo schema metadati:
 
-1. Accedi a **[!UICONTROL Strumenti > Risorse > Schemi metadati]**.
+1. Passa a **[!UICONTROL Strumenti > Assets > Schemi metadati]**.
 
 1. Seleziona il nome dello schema e fai clic su **[!UICONTROL Modifica]**.
 
-1. Trascina **[!UICONTROL Tag colore avanzato]** dal **[!UICONTROL Genera modulo]** scheda a **[!UICONTROL Editor modulo schema metadati]**.
+1. Trascina **[!UICONTROL Tag colore avanzati]** dalla scheda **[!UICONTROL Genera modulo]** all&#39;Editor modulo schema metadati ****.
 
-1. Fai clic su **[!UICONTROL Campo tag colore avanzato]** nel **[!UICONTROL Editor modulo schema metadati]**.
+1. Fare clic sul **[!UICONTROL Campo tag colore avanzato]** nell&#39;**[!UICONTROL Editor modulo schema metadati]**.
 
-1. Specifica un valore appropriato nella **[!UICONTROL Etichetta campo]** campo in **[!UICONTROL Impostazioni]**  scheda.
+1. Specificare un valore appropriato nel campo **[!UICONTROL Etichetta campo]** della scheda **[!UICONTROL Impostazioni]**.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
@@ -106,36 +106,36 @@ Per aggiungere il componente Tag colore avanzati all’editor modulo schema meta
 
 ## Tag colore per le immagini esistenti in DAM {#color-tags-existing-images}
 
-Le immagini esistenti in DAM non vengono taggate automaticamente con colori. [!UICONTROL Rielabora risorse] manualmente per generare i tag colore.
+Le immagini esistenti in DAM non vengono taggate automaticamente con colori. [!UICONTROL Rielabora Assets] manualmente per generare i tag colore.
 
 Per applicare un colore alle immagini di tag o alle cartelle (comprese le sottocartelle) delle risorse presenti nell’archivio delle risorse, effettua le seguenti operazioni:
 
-1. Seleziona la [!DNL Adobe Experience Manager] e quindi selezionare le risorse dal [!UICONTROL Navigazione] pagina.
+1. Seleziona il logo [!DNL Adobe Experience Manager], quindi seleziona le risorse dalla pagina [!UICONTROL Navigazione].
 
-1. Seleziona [!UICONTROL File].
+1. Selezionare [!UICONTROL File].
 
-1. Nell’interfaccia di Assets, individua la cartella a cui desideri applicare i tag colore.
+1. Nell’interfaccia di Assets, passa alla cartella alla quale desideri applicare i tag colore.
 
 1. Seleziona l’intera cartella o immagini specifiche.
 
-1. Seleziona ![Icona Rielabora risorse](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Rielabora risorse] e seleziona la [!UICONTROL Processo completo] opzione.
+1. Seleziona ![Icona Rielabora risorse](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Icona Rielabora Assets] e seleziona l&#39;opzione [!UICONTROL Elabora completamente].
 
-Al termine del processo, passare alla [!UICONTROL Proprietà] di qualsiasi immagine all’interno della cartella. I tag aggiunti automaticamente sono visualizzati nella [!UICONTROL Tag colore avanzato] sezione nella sezione [!UICONTROL Base] scheda.
+Al termine del processo, passa alla pagina [!UICONTROL Proprietà] di qualsiasi immagine all&#39;interno della cartella. I tag aggiunti automaticamente vengono visualizzati nella sezione [!UICONTROL Tag colore avanzati] della scheda [!UICONTROL Base].
 
 
 ## Visualizza tag colore avanzati per le immagini {#view-color-tags}
 
 Per visualizzare i tag di colore avanzati per le immagini:
 
-1. Accedi a **[!UICONTROL Adobe Experience Manager > Risorse > File]**.
+1. Passa a **[!UICONTROL Adobe Experience Manager > Assets > File]**.
 
 1. Fai clic sulla cartella appropriata e seleziona l’immagine.
 
-1. Seleziona **[!UICONTROL Proprietà]** e visualizzare i tag in **[!UICONTROL Tag colore avanzato]** campo.
+1. Seleziona **[!UICONTROL Proprietà]** e visualizza i tag nel campo **[!UICONTROL Tag colore avanzati]**.
 
    ![Visualizza tag colore](assets/view-color-tags.png)
 
-   Passa il mouse su un tag colore per visualizzare **[!UICONTROL Soglia copertura/dominanza (%)]** di un colore in un&#39;immagine.
+   Passa il mouse su un tag colore per visualizzare la **[!UICONTROL soglia di copertura/dominanza %]** di un colore in un&#39;immagine.
 
 ## Configurare il predicato colore AEM Assets {#configure-search-predicate}
 
@@ -145,19 +145,19 @@ Puoi configurare un filtro di ricerca per le immagini. Puoi quindi basare i crit
 >
 >Configura il predicato colore di AEM Assets solo se non utilizzi il modulo di ricerca predefinito.
 
-Per configurare il filtro di ricerca, crea un predicato Colore risorsa utilizzando la Barra di ricerca amministrazione risorse.
+Per configurare il filtro di ricerca, crea un predicato Colore risorsa utilizzando la Barra di ricerca amministrazione di Assets.
 
 Per configurare il filtro di ricerca:
 
-1. Accedi a **[!UICONTROL Strumenti > Generale > Cerca in Forms]**.
+1. Passa a **[!UICONTROL Strumenti > Generale > Cerca in Forms]**.
 
-1. Seleziona **[!UICONTROL Barra di ricerca amministrazione risorse]** e fai clic su **[!UICONTROL Modifica]**.
+1. Seleziona **[!UICONTROL Barra di ricerca amministrazione Assets]** e fai clic su **[!UICONTROL Modifica]**.
 
-1. Trascina **[!UICONTROL Predicato colore risorsa]** dal **[!UICONTROL Seleziona predicato]** scheda a **[!UICONTROL Editor moduli di ricerca]**.
+1. Trascina **[!UICONTROL Predicato colore risorsa]** dalla scheda **[!UICONTROL Seleziona predicato]** all&#39;**[!UICONTROL Editor moduli di ricerca]**.
 
-1. Specifica un valore appropriato nella **[!UICONTROL Etichetta campo]** campo in **[!UICONTROL Impostazioni]**  scheda.
+1. Specificare un valore appropriato nel campo **[!UICONTROL Etichetta campo]** della scheda **[!UICONTROL Impostazioni]**.
 
-1. Clic **[!UICONTROL Fine]** per salvare le impostazioni.
+1. Fai clic su **[!UICONTROL Fine]** per salvare le impostazioni.
 
    >[!VIDEO](https://video.tv.adobe.com/v/340110)
 
@@ -165,22 +165,22 @@ Per configurare il filtro di ricerca:
 
 >[!VIDEO](https://video.tv.adobe.com/v/340761)
 
-Dopo aver configurato tutte le proprietà di assegnazione tag colore e [configurazione del predicato colore delle risorse](#search-images-based-on-colors), è possibile cercare le immagini in base a un colore come filtro.
+Dopo aver configurato tutte le proprietà dei tag colore e [configurato il predicato colore di Assets](#search-images-based-on-colors), puoi cercare le immagini in base a un colore come filtro.
 
 Per cercare le immagini in base ai colori:
 
-1. Accedi a **[!UICONTROL Risorse > File]**.
+1. Passa a **[!UICONTROL Assets > File]**.
 
-1. Seleziona **[!UICONTROL Filtro]** dall’elenco a discesa.
-   ![Filtrare risorse](assets/filter-assets.png)
+1. Seleziona **[!UICONTROL Filtro]** dall&#39;elenco a discesa.
+   ![Filtra Assets](assets/filter-assets.png)
 
-1. Seleziona la [Predicato colore AEM Assets](#configure-search-predicate).
+1. Selezionare il predicato colore [AEM Assets](#configure-search-predicate).
 
 1. Trascina il selettore colore per selezionare il colore appropriato. Il colore selezionato viene visualizzato nel campo di sola lettura disponibile sotto il selettore colore. Potete selezionare RGB o HEX come formato di visualizzazione per il colore.
 
    ![Selettore colore](assets/color-picker-color-tags.png)
 
-   Puoi filtrare le immagini in base alla selezione di un colore. Le immagini con il colore selezionato come uno dei tag di colore avanzato e sopra [Soglia copertura/dominanza (%)](#manage-color-tagging-settings) nel riquadro di destra.
+   Puoi filtrare le immagini in base alla selezione di un colore. Nel riquadro di destra vengono visualizzate le immagini con il colore selezionato come uno dei tag di colore avanzato e al di sopra della soglia [Copertura/ Dominanza %](#manage-color-tagging-settings).
 
 1. Per cancellare il filtro, fai clic su X nella barra di ricerca.
 

@@ -1,5 +1,5 @@
 ---
-title: Rileva risorse duplicate per [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Rileva risorse duplicate per  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Scopri come rilevare le risorse duplicate
 contentOwner: KK
 mini-toc-levels: 3
@@ -21,17 +21,17 @@ ht-degree: 9%
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
-Se un utente DAM carica una o più risorse già esistenti nell’archivio, [!DNL Experience Manager] rileva la duplicazione e avvisa l’utente. Il rilevamento duplicati è disabilitato per impostazione predefinita in quanto può avere un impatto sulle prestazioni a seconda delle dimensioni dell’archivio e del numero di risorse caricate.
+Se un utente DAM carica una o più risorse già esistenti nell&#39;archivio, [!DNL Experience Manager] rileva la duplicazione e invia una notifica all&#39;utente. Il rilevamento duplicati è disabilitato per impostazione predefinita in quanto può avere un impatto sulle prestazioni a seconda delle dimensioni dell’archivio e del numero di risorse caricate.
 
 Per attivare la funzione:
 
-1. Accedi a **[!UICONTROL Strumenti > Risorse > Configurazioni risorse]**.
+1. Passa a **[!UICONTROL Strumenti > Assets > Configurazioni Assets]**.
 
-1. Clic **[!UICONTROL Rilevamento duplicazione risorse]**.
+1. Fare clic su **[!UICONTROL Rilevamento duplicazione risorse]**.
 
-1. Il giorno [!UICONTROL Pagina Rilevamento duplicazione risorse], fai clic su **[!UICONTROL Abilitato]**.
+1. Nella pagina [!UICONTROL Rilevamento duplicazione risorse] fare clic su **[!UICONTROL Abilitato]**.
 
-   `dam:sha1` Il valore del campo Rileva metadati garantisce che vengano rilevate risorse duplicate anche se i nomi dei file sono diversi.
+   Il valore `dam:sha1` per il campo Rileva metadati assicura che vengano rilevate risorse duplicate anche se i nomi dei file sono diversi.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
@@ -39,12 +39,12 @@ Per attivare la funzione:
 
 >[!NOTE]
 >
->Se hai configurato il rilevatore di duplicazione utilizzando `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` file di configurazione di (configurazione OSGi), puoi continuare a utilizzarlo, tuttavia, l’Adobe consiglia di utilizzare il nuovo metodo.
+>Se il rilevatore di duplicazione è stato configurato utilizzando il file di configurazione `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` (configurazione OSGi), è possibile continuare a utilizzarlo. Tuttavia, in Adobe è consigliabile utilizzare il nuovo metodo.
 
 
 Una volta abilitata, Experience Manager invia le notifiche delle risorse duplicate alla casella in entrata di Experience Manager. È un risultato aggregato per più duplicati. Gli utenti possono scegliere di rimuovere le risorse in base ai risultati.
 
-![Notifica nella casella in entrata per le risorse duplicate](assets/duplicate-detect-inbox-notification.png)
+![Notifica casella in entrata per risorse duplicate](assets/duplicate-detect-inbox-notification.png)
 
 >[!NOTE]
 >

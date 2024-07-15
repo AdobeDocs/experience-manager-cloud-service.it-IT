@@ -53,7 +53,7 @@ Il [sito tutorial WKND](/help/implementing/developing/introduction/develop-wknd-
 
 La copia per lingua per la quale originariamente si è creato il contenuto del sito è la lingua master. Il lingua master è quella di partenza che viene tradotta in altre lingue.
 
-Ogni ramo linguistico di un sito è denominato copia per lingua. La lingua principale di una copia per lingua, nota come directory principale della lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, `/content/wknd/fr` è la directory principale della lingua della copia in lingua francese. Le copie per lingua devono utilizzare un [directory principale lingua configurata correttamente](preparation.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata quando vengono eseguite le traduzioni di un sito sorgente.
+Ogni ramo linguistico di un sito è denominato copia per lingua. La lingua principale di una copia per lingua, nota come directory principale della lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, `/content/wknd/fr` è la directory principale della lingua della copia in lingua francese. Le copie per lingua devono utilizzare una [directory principale lingua configurata correttamente](preparation.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata quando vengono eseguite le traduzioni di un sito di origine.
 
 Utilizza i seguenti passaggi per preparare il sito alla traduzione:
 
@@ -69,23 +69,23 @@ Crea una directory principale della lingua come pagina principale di una copia p
 
 Per creare la directory principale della lingua è necessario creare una pagina e utilizzare un codice della lingua ISO come valore per la proprietà **Nome**. Il codice della lingua deve essere in uno dei seguenti formati:
 
-* `<language-code>` - Il codice della lingua supportato è un codice a due lettere come definito dallo standard ISO-639-1, ad esempio, `en`.
-* `<language-code>_<country-code>` o `<language-code>-<country-code>` - Il codice del paese supportato è un codice a due lettere minuscole o maiuscole, come definito ad esempio dallo standard ISO 3166, `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>` - Il codice della lingua supportato è un codice a due lettere come definito dallo standard ISO-639-1, ad esempio `en`.
+* `<language-code>_<country-code>` o `<language-code>-<country-code>` - Il codice paese supportato è un codice a due lettere minuscole o maiuscole come definito dallo standard ISO 3166, ad esempio `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Puoi utilizzare entrambi i formati, in base alla struttura scelta per il sito globale. Ad esempio, la pagina principale della copia in lingua francese del sito WKND ha `fr` come proprietà **Nome**. Il **Nome** viene utilizzata come nome del nodo della pagina nell’archivio e quindi determina il percorso della pagina (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+Puoi utilizzare entrambi i formati, in base alla struttura scelta per il sito globale. Ad esempio, la pagina principale della copia in lingua francese del sito WKND ha `fr` come proprietà **Nome**. La proprietà **Name** viene utilizzata come nome del nodo della pagina nell&#39;archivio e quindi determina il percorso della pagina (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Passa a Sites.
 1. Seleziona il sito per il quale desideri creare una copia per lingua.
-1. Seleziona **Crea** e quindi selezionare **Pagina**.
+1. Seleziona **Crea**, quindi seleziona **Pagina**.
 
    ![Crea pagina](../assets/create-page.png)
 
-1. Seleziona il modello della pagina, quindi fai clic su **Successivo**.
-1. In **Nome** campo digitare il codice del paese nel formato `<language-code>` o `<language-code>_<country-code>`ad esempio: `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digita un titolo per la pagina.
+1. Selezionare il modello di pagina, quindi selezionare **Avanti**.
+1. Nel campo **Nome** digitare il codice del paese nel formato `<language-code>` o `<language-code>_<country-code>`, ad esempio `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digita un titolo per la pagina.
 
    ![Crea una pagina principale della lingua](../assets/create-language-root.png)
 
-1. Seleziona **Crea**. Nella finestra di dialogo di conferma, seleziona **Fine** per tornare alla console Sites, oppure **Apri** per aprire la copia per lingua.
+1. Seleziona **Crea**. Nella finestra di dialogo di conferma, seleziona **Fine** per tornare alla console Sites oppure **Apri** per aprire la copia per lingua.
 
 ## Visualizzazione dello stato delle directory principali della lingua {#seeing-the-status-of-language-roots}
 
@@ -95,7 +95,7 @@ AEM fornisce una barra di **Riferimenti** che mostra un elenco di directory prin
 
 Utilizza la procedura seguente per visualizzare le copie della lingua per una pagina utilizzando il [selettore della barra](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
-1. Nella console Sites, seleziona una pagina del sito e quindi fai clic su **Riferimenti**.
+1. Nella console Sites, seleziona una pagina del sito, quindi seleziona **Riferimenti**.
 
    ![Apri barra dei riferimenti](../assets/opening-references-rail.png)
 

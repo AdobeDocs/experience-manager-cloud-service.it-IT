@@ -38,7 +38,7 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2022 per un r
 
 ### Nuove funzioni in [!DNL Sites] {#sites-features}
 
-* Il [Scheda Personalizzazione per frammenti esperienza](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) consente di specificare la segmentazione nell’Editor frammento di esperienza e la flessibilità necessaria per creare frammenti di esperienza nidificati, con cui è possibile creare varianti di intestazioni e piè di pagina per più segmenti. Prima dell’introduzione di questa funzione, la funzionalità di personalizzazione di AEM era disponibile solo per le pagine del sito, ma non per i frammenti esperienza.
+* La [scheda Personalization per frammenti esperienza](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) consente di specificare la segmentazione nell&#39;Editor frammenti esperienza e offre la flessibilità necessaria per creare frammenti esperienza nidificati, con cui è possibile creare varianti di intestazioni e piè di pagina per più segmenti. Prima dell’introduzione di questa funzione, la funzionalità di personalizzazione di AEM era disponibile solo per le pagine del sito, ma non per i frammenti esperienza.
 
 * La [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ora consente agli utenti di gestire in modo efficiente i frammenti di contenuto tradotti. Inoltre, è possibile accedere con 1 solo clic per visualizzare tutte le copie delle varie lingue. Gli utenti possono anche filtrare la visualizzazione a tabella in base alla lingua che desiderano.
 
@@ -50,7 +50,7 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2022 per un r
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-* Experience Manager Assets ora consente di caricare documenti in altri tipi di formati supportati e[visualizzali in anteprima utilizzando il visualizzatore di Document Cloud incluso](/help/assets/manage-pdf-documents.md). I tipi di formato supportati sono TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX.
+* Experience Manager Assets ora consente di caricare documenti in altri tipi di formati supportati e di [visualizzarli in anteprima utilizzando il visualizzatore di Document Cloud incluso](/help/assets/manage-pdf-documents.md). I tipi di formato supportati sono TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX.
 
   ![Rappresentazione di PDF per altri formati](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -67,7 +67,7 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2022 per un r
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms}
 
-* **Editor modelli per Forms adattivo**: l’editor di modelli ti consente di predefinire la struttura e l’aspetto di base del Forms adattivo di un’organizzazione. Questa versione apporta i seguenti miglioramenti all’editor di modelli:
+* **Editor modelli per Forms adattivo**: l&#39;editor modelli ti consente di predefinire la struttura e l&#39;aspetto di base del Forms adattivo di un&#39;organizzazione. Questa versione apporta i seguenti miglioramenti all’editor di modelli:
    * **[Modello per dati modulo nell’editor modelli](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: è possibile associare uno schema Modello dati modulo a un modello per moduli adattivi nell’editor modelli. Questo consente di velocizzare la creazione di un modulo adattivo. La stessa opzione è stata aggiunta anche all’editor di moduli adattivi per consentire agli utenti di selezionare o cambiare il modello di dati per i moduli esistenti.
    * **[Documento di record nell’editor modelli](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: ora è possibile standardizzare la generazione di documenti di record per tutti i moduli creati utilizzando un modello. Questo aiuta a migliorare la conformità e la standardizzazione in base ai requisiti dell’organizzazione.
 
@@ -87,11 +87,11 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2022 per un r
 
 ### Novità {#what-is-new-foundation}
 
-* AEM as a Cloud Service (servizio di authoring) è ora integrato con Unified Shell per migliorare l’esperienza utente e per coerenza con tutte le altre applicazioni di Experience Cloud. Vedi AEM as a [Cloud Service su Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) per ulteriori dettagli.
+* AEM as a Cloud Service (servizio di authoring) è ora integrato con Unified Shell per migliorare l’esperienza utente e per coerenza con tutte le altre applicazioni di Experience Cloud. Vedi AEM come [Cloud Service su Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) per ulteriori dettagli.
 
-* Come indicato in precedenza nelle note sulla versione, l’utilizzo della schermata di amministrazione dell’agente di replica o dell’API di replica per la distribuzione di pacchetti di contenuto di dimensioni superiori a 10 MB (nodi con proprietà, esclusi i binari) ora è obsoleto e viene applicato. Consulta [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Flusso di lavoro per la pubblicazione della struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow) per suggerimenti su come replicare questi pacchetti di contenuti di grandi dimensioni.
+* Come indicato in precedenza nelle note sulla versione, l’utilizzo della schermata di amministrazione dell’agente di replica o dell’API di replica per la distribuzione di pacchetti di contenuto di dimensioni superiori a 10 MB (nodi con proprietà, esclusi i binari) ora è obsoleto e viene applicato. Consulta [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o il [flusso di lavoro della struttura dei contenuti di Publish](/help/operations/replication.md#publish-content-tree-workflow) per suggerimenti su come replicare questi pacchetti di contenuti di grandi dimensioni.
 
-* La configurazione del Dispatcher ora fa riferimento a un file in cui sono elencati i parametri comuni di query per campagne di marketing. I clienti possono scegliere di rimuovere la notazione di commento dai parametri di cui hanno bisogno, con conseguente miglioramento della memorizzazione in cache. Consulta [Parametri della campagna di marketing](/help/implementing/dispatcher/caching.md#marketing-parameters) per ulteriori dettagli.
+* La configurazione del Dispatcher ora fa riferimento a un file in cui sono elencati i parametri comuni di query per campagne di marketing. I clienti possono scegliere di rimuovere la notazione di commento dai parametri di cui hanno bisogno, con conseguente miglioramento della memorizzazione in cache. Per ulteriori dettagli, consulta [Parametri per campagne di marketing](/help/implementing/dispatcher/caching.md#marketing-parameters).
 
 ## Cloud Manager {#cloud-manager}
 

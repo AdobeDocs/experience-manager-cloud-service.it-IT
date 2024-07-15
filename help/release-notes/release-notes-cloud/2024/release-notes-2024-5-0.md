@@ -4,7 +4,7 @@ description: Note sulla versione 2024.5.0 di [!DNL Adobe Experience Manager] as 
 source-git-commit: 076d2a6aa6e02a7ef6f9347f2dc36ca02103c130
 workflow-type: tm+mt
 source-wordcount: '1949'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -118,11 +118,11 @@ Questa versione apporta un aggiornamento significativo all’editor di regole vi
 
 
 
-### Funzioni di accesso anticipato in AEM Forms {#forms-new-early-access-features}
+### Funzionalità per Accesso anticipato ad AEM Forms {#forms-new-early-access-features}
 
-Il programma AEM Forms Early Access Program offre l’opportunità unica di accedere in esclusiva alle innovazioni all’avanguardia prima di chiunque altro, e di aiutarti a modellarne lo sviluppo. Il programma offre l’accesso a molteplici innovazioni.
+Il programma di accesso anticipato per AEM Forms offre un’opportunità unica per ottenere l’accesso esclusivo a innovazioni all’avanguardia prima di chiunque altro e contribuire a definirne lo sviluppo. Il programma offre l’accesso a molteplici innovazioni.
 
-In queste note sulla versione sono elencate le nuove funzioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma di accesso anticipato, consulta [Documentazione del programma di accesso anticipato AEM Forms](/help/forms/early-access-ea-features.md).
+In queste note sulla versione sono elencate le nuove funzioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma per l’accesso anticipato, consulta la [Documentazione del programma per l’accesso anticipato ad AEM Forms](/help/forms/early-access-ea-features.md).
 
 #### Metodi di protezione bot migliorati
 
@@ -147,7 +147,7 @@ Il servizio Forms genera moduli PDF interattivi per l’acquisizione dei dati. P
 
 >[!IMPORTANT]
 >
-> Se sei interessato a partecipare al nostro programma di accesso anticipato per qualsiasi innovazione di accesso anticipato, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) per richiedere l&#39;accesso. Puoi richiedere l’accesso a tutte le innovazioni o solo a qualcuna.
+> Se ti interessa partecipare al nostro programma per l’accesso anticipato per qualsiasi innovazione iniziale, per richiedere l’accesso, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). Puoi richiedere l’accesso a tutte le innovazioni o solo a qualcuna.
 
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}

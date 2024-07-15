@@ -21,42 +21,42 @@ ht-degree: 1%
 
 >[!INFO]
 >
->Puoi anche guardare [questo clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) per un rapido video introduttivo su come utilizzare il Browser dell’archivio per eseguire il debug di AEM as a Cloud Service.
+>È inoltre possibile guardare [questo clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) per una breve introduzione video su come utilizzare il Browser dell&#39;archivio per eseguire il debug di AEM as a Cloud Service.
 
 ## Introduzione {#introduction}
 
 Il browser dell’archivio è uno strumento per sviluppatori che fornisce una visualizzazione di sola lettura nell’archivio per tutti gli ambienti sui livelli di authoring, pubblicazione e anteprima. È progettato per facilitare la visualizzazione della struttura del contenuto e semplificare la visualizzazione o il debug del contenuto.
 
-Accessibile da [Console per sviluppatori as a Cloud Service AEM](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console), può essere utilizzato per sfogliare l’archivio di un’istanza di authoring o pubblicazione per un ambiente selezionato.
+Accessibile da [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console), può essere utilizzato per sfogliare l&#39;archivio di un&#39;istanza di authoring o di pubblicazione per un ambiente selezionato.
 
 ### Prerequisiti di accesso {#access-prerequisites}
 
-Per accedere a AEM as a Cloud Service Developer Console o al browser dell’archivio devono essere soddisfatte le seguenti condizioni
+Per accedere ad AEM as a Cloud Service Developer Console o al browser dell’archivio devono essere soddisfatte le seguenti condizioni
 
-Per accedere alla Console per sviluppatori as a Cloud Service AEM, consulta [Accesso a Console sviluppatori](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
+Per accedere ad AEM as a Cloud Service Developer Console, vedi [Accesso a Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
-Per accedere al Browser dell’archivio, i requisiti sono gli stessi della Console per sviluppatori as a Cloud Service AEM (sopra specificata). Per visualizzare il contenuto del Browser dell’archivio per una particolare istanza:
+Per accedere al Browser dell’archivio, i requisiti sono gli stessi di AEM as a Cloud Service Developer Console (specificati sopra). Per visualizzare il contenuto del Browser dell’archivio per una particolare istanza:
 
-* Istanze dell’autore: utenti con il profilo di prodotto Utenti AEM per **Istanza Autore** può visualizzare il browser del repository con accesso in lettura minimo; le autorizzazioni dell&#39;utente vengono rispettate durante la navigazione nel repository. Gli utenti con il profilo di prodotto per amministratori dell’AEM possono visualizzare il browser dell’archivio con accesso in lettura completo.
+* Istanze di authoring: gli utenti con il profilo di prodotto Utenti AEM per l&#39;**istanza di authoring** possono visualizzare il browser dell&#39;archivio con accesso in lettura minimo; le autorizzazioni dell&#39;utente vengono rispettate durante la navigazione nell&#39;archivio. Gli utenti con il profilo di prodotto per amministratori dell’AEM possono visualizzare il browser dell’archivio con accesso in lettura completo.
 
-* Istanze di pubblicazione: utenti con il profilo di prodotto Utenti AEM per il **Pubblica istanza** può visualizzare il browser dell’archivio con accesso in lettura minimo. Senza questo set di profili di prodotto, gli utenti potranno navigare come utenti anonimi e alcuni percorsi non verranno visualizzati a causa di autorizzazioni limitate.
+* Istanze di Publish: gli utenti con il profilo di prodotto Utenti AEM per l&#39;**istanza di Publish** possono visualizzare il browser dell&#39;archivio con accesso in lettura minimo. Senza questo set di profili di prodotto, gli utenti potranno navigare come utenti anonimi e alcuni percorsi non verranno visualizzati a causa di autorizzazioni limitate.
 
-Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, consulta [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
+Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, consulta la [documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
 ### Avvio del Browser dell’archivio {#launching-the-repository-browser}
 
 Puoi avviare il browser dell’archivio seguendo la procedura riportata di seguito.
 
-1. In Cloud Manager, fai clic sui tre punti accanto all’ambiente desiderato e seleziona **Console per sviluppatori**
+1. In Cloud Manager, fai clic sui tre punti accanto all&#39;ambiente desiderato e seleziona **Developer Console**
 
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
-1. Quindi, fai clic su **Browser dell’archivio** scheda
-1. Scegli un pod corrispondente all’autore, alla pubblicazione o all’anteprima facendo clic sul pulsante **Pod** elenco a discesa.
+1. Fare clic sulla scheda **Browser dell&#39;archivio**
+1. Scegliere un pod corrispondente all&#39;autore, alla pubblicazione o all&#39;anteprima facendo clic sull&#39;elenco a discesa **Pod**.
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. Avvia il browser dell’archivio facendo clic sul pulsante **Apri Browser Archivio** collegamento più in basso. Viene avviato il browser corrispondente a un’istanza rappresentativa (pod) per il livello scelto. Non è possibile controllare il pod specifico per il livello avviato.
+1. Avviare il browser del repository facendo clic sul collegamento **Apri browser del repository** più in basso. Viene avviato il browser corrispondente a un’istanza rappresentativa (pod) per il livello scelto. Non è possibile controllare il pod specifico per il livello avviato.
 
 ## Funzioni {#features}
 
@@ -66,7 +66,7 @@ Puoi avviare il browser dell’archivio seguendo la procedura riportata di segui
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-In alternativa, potete passare direttamente a un tracciato immettendolo nella **Percorso** come mostrato di seguito. Questo percorso espande anche la sua posizione nella vista della gerarchia dei contenuti a sinistra.
+In alternativa, è possibile passare direttamente a un percorso immettendolo nel campo **Percorso**, come illustrato di seguito. Questo percorso espande anche la sua posizione nella vista della gerarchia dei contenuti a sinistra.
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
@@ -74,11 +74,11 @@ Quando fai clic su una cartella a sinistra, il campo Percorso si popola automati
 
 Inoltre, quando fai clic su una cartella, l’URL viene modificato dinamicamente per includere il percorso di tale cartella. Questa funzionalità consente l’utilizzo di URL con segnalibro.
 
-Per la pubblicazione, per impostazione predefinita, il Browser dell’archivio mostra solo il contenuto pubblico, pertanto alcune cartelle come `/conf` o `/home` non sono visibili.
+Per la pubblicazione, per impostazione predefinita, il Browser dell&#39;archivio visualizza solo il contenuto pubblico, pertanto alcune cartelle come `/conf` o `/home` non sono visibili.
 
 Per rendere visibili tali posizioni, effettuare le seguenti operazioni.
 
-1. Fai clic sui tre punti accanto all’ambiente desiderato e seleziona **Gestisci accesso**
+1. Fai clic sui tre punti accanto all&#39;ambiente desiderato e seleziona **Gestisci accesso**
 
    ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
 
@@ -86,7 +86,7 @@ Per rendere visibili tali posizioni, effettuare le seguenti operazioni.
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. Crea un profilo di prodotto per gli amministratori di pubblicazione. Nell’esempio seguente, viene chiamato **DEV - Pubblicazione per amministratori AEM**
+1. Crea un profilo di prodotto per gli amministratori di pubblicazione. Nell&#39;esempio seguente, è denominato **DEV - AEM Administrators Publish**
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
@@ -94,24 +94,24 @@ Per rendere visibili tali posizioni, effettuare le seguenti operazioni.
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. Attendere alcuni minuti, quindi aprire **Autore AEM** console
-1. Aggiungi il gruppo corrispondente al nuovo profilo di prodotto come membro del gruppo dell’amministratore facendo clic su **Strumenti - Sicurezza - Gruppi sull’autore**, quindi facendo clic su **amministratori** gruppo. Quindi, aggiungete il gruppo come mostrato di seguito
+1. Attendi alcuni minuti, quindi apri la console **Autore AEM**
+1. Aggiungere il gruppo corrispondente al nuovo profilo di prodotto come membro del gruppo dell&#39;amministratore facendo clic su **Strumenti - Protezione - Gruppi sull&#39;autore** e quindi sul gruppo **amministratori**. Quindi, aggiungete il gruppo come mostrato di seguito
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. Attiva il **amministratori** e il nuovo **DEV - Pubblicazione per amministratori AEM** in modo che diventino disponibili al momento della pubblicazione
+1. Attiva il gruppo **amministratori** e il nuovo gruppo **DEV - Amministratori AEM Publish** in modo che diventino disponibili al momento della pubblicazione
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. Per motivi di sicurezza, è consigliabile rimuovere il nuovo **DEV - Pubblicazione per amministratori AEM** gruppo dal gruppo dell&#39;amministratore il **autore** in modo che il nuovo gruppo sia isolato per la pubblicazione
+1. Come buona prassi di sicurezza, rimuovere il nuovo gruppo **DEV - Amministratori AEM Publish** dal gruppo dell&#39;amministratore in **author** in modo che il nuovo gruppo sia isolato per la pubblicazione
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
-1. Quando si accede al browser dell’archivio per un’istanza di pubblicazione, sono visibili tutte le cartelle, incluse `/home` e `/conf`.
+1. Quando si accede al browser dell&#39;archivio per un&#39;istanza di pubblicazione, sono visibili tutte le cartelle, inclusi `/home` e `/conf`.
 
 ### Visualizza proprietà JCR {#view-jcr-properties}
 
-Facendo clic su un nodo, le relative proprietà JCR vengono visualizzate nel riquadro di destra del browser di navigazione. Di seguito è riportato un esempio per `experience-fragments` nodo.
+Facendo clic su un nodo, le relative proprietà JCR vengono visualizzate nel riquadro di destra del browser di navigazione. Di seguito è riportato un esempio per il nodo `experience-fragments`.
 
 ![repobrowser4](/help/implementing/developing/tools/assets/repobrowser41.png)
 
@@ -143,6 +143,6 @@ E per i seguenti tipi mime basati su testo:
 
 ### Scarica contenuto {#download-content}
 
-Puoi anche utilizzare il browser dell’archivio per scaricare il contenuto. Nell’esempio seguente, puoi premere il tasto **scaricare** collegamento per scaricare `jcr:data` associato al nodo selezionato. Questa funzione è disponibile per tutte le proprietà binarie passando al nodo contenente la definizione della proprietà.
+Puoi anche utilizzare il browser dell’archivio per scaricare il contenuto. Nell&#39;esempio seguente, è possibile premere il collegamento **download** per scaricare `jcr:data` associato al nodo selezionato. Questa funzione è disponibile per tutte le proprietà binarie passando al nodo contenente la definizione della proprietà.
 
 ![repobrowser5](/help/implementing/developing/tools/assets/repobrowser52.png)

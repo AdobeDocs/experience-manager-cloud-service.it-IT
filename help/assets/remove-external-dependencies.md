@@ -21,7 +21,7 @@ L’Adobe consiglia di eseguire i passaggi di configurazione per le installazion
 
 Per rimuovere le dipendenze esterne:
 
-1. Rimuovi la seguente configurazione dell’archivio Hoodoo dall’elemento padre `pom.xml`:
+1. Rimuovi la seguente configurazione dell&#39;archivio Hoodoo dall&#39;elemento padre `pom.xml`:
 
    ```XML
      <repository>
@@ -31,7 +31,7 @@ Per rimuovere le dipendenze esterne:
      </repository>
    ```
 
-1. Rimuovi la seguente configurazione server da `settings.xml` file, disponibile all’indirizzo `./cloudmanager/maven/settings.xml`:
+1. Rimuovere la seguente configurazione del server dal file `settings.xml`, disponibile in `./cloudmanager/maven/settings.xml`:
 
    ```XML
          <server>
@@ -47,4 +47,4 @@ Per rimuovere le dipendenze esterne:
          </server>
    ```
 
-1. Esegui il [nuovi passaggi di installazione](workfront-connector-install.md).
+1. Eseguire i [nuovi passaggi dell&#39;installazione](workfront-connector-install.md).

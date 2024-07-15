@@ -15,7 +15,7 @@ ht-degree: 11%
 
 # Azione di invio modulo adattivo {#configuring-the-submit-action}
 
-<span class="preview"> L’Adobe consiglia di utilizzare i Componenti core per [aggiungere un Forms adattivo a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [creare un Forms adattivo indipendente](/help/forms/creating-adaptive-form-core-components.md). </span>
+<span class="preview"> Adobe consiglia di utilizzare i Componenti core per [aggiungere Forms adattivo a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) o per [creare Forms adattivo autonomo](/help/forms/creating-adaptive-form-core-components.md). </span>
 
 
 | Versione | Collegamento articolo |
@@ -23,7 +23,7 @@ ht-degree: 11%
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tramite un modulo adattivo. Viene attivato quando un utente fa clic su **[!UICONTROL Invia]** in un modulo adattivo. Forms as a Cloud Service, per Forms adattivo basato su Componenti core, offre una serie di azioni di invio predefinite. Queste azioni di invio pronte all’uso ti consentono di:
+Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tramite un modulo adattivo. Viene attivato quando un utente fa clic sul pulsante **[!UICONTROL Invia]** in un modulo adattivo. Forms as a Cloud Service, per Forms adattivo basato su Componenti core, offre una serie di azioni di invio predefinite. Queste azioni di invio pronte all’uso ti consentono di:
 
 * Invia facilmente i dati del modulo tramite e-mail.
 * Avvia flussi di lavoro Microsoft® Power Automate o AEM durante la trasmissione dei dati.
@@ -33,7 +33,7 @@ Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tr
 
 È possibile [estendere le azioni di invio predefinite](custom-submit-action-form.md). È inoltre possibile personalizzare le azioni di invio in base ai requisiti specifici dell&#39;organizzazione.
 
-Per definire un’azione di invio per un adattivo, utilizza la finestra di dialogo per configurazione di un’ **Contenitore modulo adattivo** componente. La finestra di dialogo per configurazione di un **Contenitore modulo adattivo** Il componente include:
+Per definire un&#39;azione di invio per un modulo adattivo, utilizzare la finestra di dialogo per configurazione di un componente **Contenitore modulo adattivo**. La finestra di dialogo per configurazione di un componente **Contenitore modulo adattivo** include:
 * Scheda Base
 * Scheda Modello dati modulo
 * Scheda Invio
@@ -44,17 +44,17 @@ Puoi definire le proprietà del Contenitore modulo utilizzando la finestra di di
 
 Per selezionare e configurare un&#39;azione di invio per il modulo:
 
-1. Apri il browser Contenuto e seleziona la **[!UICONTROL Contenitore guida]** componente del modulo adattivo.
-1. Fai clic sulle proprietà Contenitore guida ![Proprietà guida](/help/forms/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
+1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
 
-1. Fai clic su  **[!UICONTROL Invio]** scheda.
+1. Fare clic sulla scheda **[!UICONTROL Invio]**.
 
-   ![Fai clic sull’icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo e configurare un’azione di invio](/help/forms/assets/adaptive-forms-submit-message.png)
+   ![Fai clic sull&#39;icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo e configurare un&#39;azione di invio](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. Seleziona e configura un **[!UICONTROL Azione di invio]**, in base alle tue esigenze.
+1. Seleziona e configura un&#39;azione **[!UICONTROL Invia]** in base alle tue esigenze.
 
 Puoi anche configurare diverse azioni per l’invio di un modulo adattivo.
-* **URL/percorso di reindirizzamento** - Questa opzione consente di configurare una pagina per ciascun modulo, al quale gli utenti del modulo vengono reindirizzati dopo l’invio di un modulo adattivo.
+* **URL/percorso di reindirizzamento** - Questa opzione consente all&#39;utente di configurare una pagina per ogni modulo, alla quale gli utenti del modulo vengono reindirizzati dopo l&#39;invio di un modulo adattivo.
 * **Mostra Messaggio**: questa opzione consente agli utenti di aggiungere un messaggio da visualizzare quando il modulo adattivo viene inviato correttamente. Il testo predefinito viene incluso nella finestra di dialogo e può essere modificato dall&#39;utente.
 
 Per informazioni dettagliate sulle seguenti azioni di invio, vedere:
@@ -213,7 +213,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 Come parte delle linee guida sulla sicurezza e l’irrigidimento dell’AEM, configura pagine di errore personalizzate come 400.jsp, 404.jsp e 500.jsp. Questi gestori vengono chiamati quando all’invio di un modulo vengono visualizzati errori 400, 404 o 500. I gestori vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish. Puoi anche creare pagine JSP per altri codici di errore HTTP.
 
-Quando si precompila un modello di dati modulo (FDM) o un modulo adattivo basato su schema con dati XML o JSON, invia un reclamo a uno schema che non contiene dati `<afData>`, `<afBoundData>`, e `</afUnboundData>` , i dati dei campi non limitati del modulo adattivo andranno persi. Lo schema può essere uno schema XML, uno schema JSON o un modello dati modulo (FDM). I campi non limitati sono campi modulo adattivo senza `bindref` proprietà.
+Quando si precompila un modello di dati modulo (FDM) o un modulo adattivo basato su schema con dati XML o JSON a uno schema che non contiene tag `<afData>`, `<afBoundData>` e `</afUnboundData>`, i dati dei campi non limitati del modulo adattivo andranno persi. Lo schema può essere uno schema XML, uno schema JSON o un modello dati modulo (FDM). I campi non limitati sono campi modulo adattivo senza la proprietà `bindref`.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

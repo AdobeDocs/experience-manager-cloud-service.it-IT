@@ -243,7 +243,7 @@ Puoi creare varianti del frammento di esperienza, in base alle tue esigenze:
 
      >[!NOTE]
      >
-     >La creazione di una variante iniziale come Live Copy erediterà il titolo utilizzando la sorgente Live Copy come variante principale.
+     >La creazione di una variante iniziale come Live Copy erediterà il titolo utilizzando la Live Copy Source come variante principale.
 
 1. Definisci le proprietà richieste:
 
@@ -373,7 +373,7 @@ Per personalizzare il frammento:
    >
    >* un percorso che contiene un sottoinsieme degli archivi definiti in ContextHub configurati per la pagina
    >
-   >Il **Percorso segmenti** selezionato in **Personalizzazione** la scheda deve essere:
+   >Il **Percorso segmenti** selezionato nella scheda **Personalization** deve essere:
    >
    >* lo stesso percorso configurato per la pagina in cui verrà eseguito il rendering del frammento
    >

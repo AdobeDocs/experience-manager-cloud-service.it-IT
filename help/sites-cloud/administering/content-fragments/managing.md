@@ -14,16 +14,16 @@ ht-degree: 45%
 
 # Gestione dei frammenti di contenuto {#managing-content-fragments}
 
-Scopri come gestire il tuo **Frammenti di contenuto** in Adobe Experience Manager (AEM) as a Cloud Service, dalla sezione dedicata [Console Frammenti di contenuto](#content-fragments-console), e [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). Questi frammenti di contenuto possono essere utilizzati come base per i contenuti headless o per l’authoring delle pagine.
+Scopri come gestire i **Frammenti di contenuto** in Adobe Experience Manager (AEM) in as a Cloud Service, dalla console dedicata [Frammenti di contenuto](#content-fragments-console) e dall&#39;[Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). Questi frammenti di contenuto possono essere utilizzati come base per i contenuti headless o per l’authoring delle pagine.
 
 >[!NOTE]
 >
->Se necessario, il team del progetto può personalizzare la console e l’editor. Consulta [Personalizzazione della console e dell’editor dei frammenti di contenuto](/help/implementing/developing/extending/content-fragments-console-and-editor.md) per ulteriori dettagli.
+>Se necessario, il team del progetto può personalizzare la console e l’editor. Per ulteriori dettagli, consulta [Personalizzazione della console e dell&#39;editor dei frammenti di contenuto](/help/implementing/developing/extending/content-fragments-console-and-editor.md).
 
-Dopo aver definito [Modelli per frammenti di contenuto](#creating-a-content-model) puoi utilizzarli per:
+Dopo aver definito i [modelli per frammenti di contenuto](#creating-a-content-model) puoi utilizzarli per:
 
-* [Creare frammenti di contenuto](#creating-a-content-fragment).
-* Quindi apri la [Editor frammento di contenuto](#opening-the-fragment-editor) a [creare i contenuti e gestire le varianti](#editing-the-content-of-your-fragment).
+* [Crea frammenti di contenuto](#creating-a-content-fragment).
+* Quindi apri [Editor frammento di contenuto](#opening-the-fragment-editor) per [creare i contenuti e gestire le varianti](#editing-the-content-of-your-fragment).
 * [Gestisci tag](#manage-tags)
 * [Visualizzare e modificare le proprietà (metadati)](#viewing-and-editing-properties)
 * [Visualizzare la struttura](/help/sites-cloud/administering/content-fragments/authoring.md#structure-tree)
@@ -59,7 +59,7 @@ Per ulteriori informazioni consulta:
 
 * [Cercare e filtrare nella console Frammenti di contenuto](#filtering-fragments)
 
-* Una selezione di [scelte rapide da tastiera](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) sono disponibili per l’utilizzo in questa console
+* Una selezione di [scelte rapide da tastiera](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) è disponibile per questa console
 
 >[!NOTE]
 >
@@ -67,11 +67,11 @@ Per ulteriori informazioni consulta:
 
 >[!CAUTION]
 >
->Questa console è *solo* disponibile nel Adobe Experience Manager online (AEM) as a Cloud Service.
+>Questa console è *only* disponibile nell&#39;as a Cloud Service di Adobe Experience Manager (AEM) online.
 
 ### Struttura e gestione di base della console {#basic-structure-handling-content-fragments-console}
 
-Selezione **Frammenti di contenuto** apre la console in una nuova scheda.
+Selezionando **Frammenti di contenuto** si apre la console in una nuova scheda.
 
 <!-- CQDOC-21349: screenshot -->
 
@@ -82,12 +82,12 @@ Nella console puoi osservare tre aree principali:
 * Barra degli strumenti superiore
    * Fornisce le funzionalità standard di AEM
    * Mostra anche la tua organizzazione IMS
-   * Fornisce vari [azioni](#actions-unselected)
+   * Fornisce varie [azioni](#actions-unselected)
 * Pannello a sinistra
    * Qui puoi nascondere o visualizzare la struttura delle cartelle
    * Puoi selezionare un ramo specifico della struttura
    * Può essere ridimensionato per mostrare le cartelle nidificate
-   * Puoi scegliere se visualizzare i frammenti di contenuto oppure [Risorse](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+   * Puoi scegliere se visualizzare i frammenti di contenuto o [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 * Pannello principale/destro; da qui puoi:
    * Visualizza l’elenco di tutti i frammenti di contenuto nel ramo selezionato della struttura:
       * Verranno visualizzati i frammenti di contenuto della cartella selezionata e tutte le cartelle secondarie:
@@ -98,16 +98,16 @@ Nella console puoi osservare tre aree principali:
          * Aprire il frammento appropriato nell’editor
          * Mostrare informazioni sui riferimenti
          * Mostrare informazioni sulle versioni linguistiche del frammento
-      * [Alcuni altri campi d&#39;informazione](#information-content-fragments) Informazioni su un frammento di contenuto possono essere utilizzate per [Filtro rapido](#fast-filtering):
+      * [Alcuni altri campi di informazioni](#information-content-fragments) su un frammento di contenuto possono essere utilizzati per [Filtro rapido](#fast-filtering):
          * Seleziona un valore nella colonna e viene immediatamente applicato come filtro
-         * Il filtro rapido è supportato per **Modello**, **Stato**, **Modificato da**, **Tag** e **Pubblicato da** colonne.
+         * Il filtro rapido è supportato per le colonne **Modello**, **Stato**, **Modificato da**, **Tag** e **Pubblicato da**.
       * Se utilizzi il passaggio del mouse sulle intestazioni della colonna, verranno visualizzati un selettore di azioni a discesa e cursori di larghezza che ti consentono di:
          * Ordinare: selezionando l’azione appropriata per ordine crescente o decrescente. 
 In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ordinamento è disponibile solo nelle colonne appropriate.
          * Ridimensiona la colonna: utilizzando i cursori di azione o di larghezza
-      * Seleziona uno o più frammenti per ulteriori informazioni [azione](#actions-selected-content-fragment)
-   * Utilizza il [Ricerca](#searching-fragments) casella
-   * Apri [Pannello Filtro](#filtering-fragments)
+      * Seleziona uno o più frammenti per ulteriori [azioni](#actions-selected-content-fragment)
+   * Utilizza la casella [Ricerca](#searching-fragments)
+   * Apri il [pannello dei filtri](#filtering-fragments)
 
 ### Azioni {#actions}
 
@@ -128,10 +128,10 @@ Alcune azioni sono disponibili dalla console senza selezionare un frammento di c
 
   >[!NOTE]
   >
-  >Il **Risorse** La console viene utilizzata per accedere alle risorse, ad esempio immagini, video e così via.  È possibile accedere a questa console:
+  >La console **Assets** viene utilizzata per accedere alle risorse, ad esempio immagini, video e così via.  È possibile accedere a questa console:
   >
   >* utilizzando il collegamento **Apri in Assets** (nella console Frammenti di contenuto);
-  >* direttamente dal sistema globale **Navigazione** riquadro
+  >* direttamente dal riquadro **Navigazione** globale
 
 #### Azioni per un frammento di contenuto (selezionato) {#actions-selected-content-fragment}
 
@@ -142,7 +142,7 @@ Selezionando un frammento specifico si apre una barra degli strumenti incentrata
 ![Console Frammenti di contenuto; barra degli strumenti per un frammento selezionato](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[Apri in un nuovo editor](#editing-the-content-of-your-fragment)**
-* **[Apri](/help/assets/content-fragments/content-fragments-variations.md)** (nell’editor originale)
+* **[Apri](/help/assets/content-fragments/content-fragments-variations.md)** (nell&#39;editor originale)
 * **[Pubblica](#publishing-and-previewing-a-fragment)** (e **[Annulla pubblicazione](#unpublishing-a-fragment)**)
 * **[Gestisci tag](#manage-tags)**
 * **[Copia](/help/assets/manage-digital-assets.md)**
@@ -153,7 +153,7 @@ Selezionando un frammento specifico si apre una barra degli strumenti incentrata
 
 >[!NOTE]
 >
->Utilizzare **Apri** per aprire il frammento selezionato in *originale* editor.
+>Utilizza **Apri** per aprire il frammento selezionato nell&#39;editor *originale*.
 
 >[!NOTE]
 >
@@ -193,18 +193,18 @@ Passando il puntatore del mouse sul nome della cartella verrà visualizzato il p
 * **Pubblicato da**
    * Solo informativo.
    * Può essere utilizzato per [Filtro rapido](#fast-filtering).
-* **Con riferimento da**:
-   * Fornisce un collegamento che apre una finestra di dialogo in cui sono elencati tutti [riferimenti principali](#parent-references-fragment)  del frammento, compresi i frammenti di contenuto, frammenti di esperienza e pagine. Per aprire un riferimento specifico, fare clic su **Titolo** nella finestra di dialogo.
+* **Con Riferimento Da**:
+   * Fornisce un collegamento che apre una finestra di dialogo in cui sono elencati tutti i [riferimenti principali](#parent-references-fragment) di tale frammento, inclusi i frammenti di contenuto, frammenti di esperienza e pagine. Per aprire un riferimento specifico, fare clic sul **Titolo** nella finestra di dialogo.
 
      ![Console Frammenti di contenuto - Finestra di dialogo Riferimenti](assets/cf-managing-console-references-dialog.png)
 
-* **Lingua**: indica qualsiasi [Lingua](#language-copies-fragment) copie
+* **Lingua**: indicare eventuali copie di [Lingua](#language-copies-fragment)
 
-   * Indica la lingua del frammento di contenuto e il numero totale di locali/[Lingua](#language-copies-fragment)  copie associate al frammento di contenuto.
+   * Indica le impostazioni locali del frammento di contenuto e il numero totale di copie locali/[per lingua](#language-copies-fragment) associate al frammento di contenuto.
 
      ![Console Frammenti di contenuto - Indicatore della lingua](assets/cf-managing-console-language-indicator.png)
 
-   * Seleziona il conteggio per aprire una finestra di dialogo in cui vengono visualizzate tutte le copie per lingua. Per aprire una copia per lingua specifica, fai clic su **Titolo** nella finestra di dialogo.
+   * Seleziona il conteggio per aprire una finestra di dialogo in cui vengono visualizzate tutte le copie per lingua. Per aprire una copia di una lingua specifica, fai clic sul **Titolo** nella finestra di dialogo.
 
      ![Console Frammenti di contenuto - Finestra di dialogo Lingua](assets/cf-managing-console-languages-dialog.png)
 
@@ -215,7 +215,7 @@ Prima di creare un frammento di contenuto, è necessario creare il modello per f
 
 ### Creazione di un modello di contenuto {#creating-a-content-model}
 
-[Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) prima di creare frammenti di contenuto con contenuti strutturati, è necessario abilitarli e crearli.
+È necessario abilitare e creare i [modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) prima di creare frammenti di contenuto con struttura.
 
 ### Creazione di un frammento di contenuto {#creating-a-content-fragment}
 
@@ -227,12 +227,12 @@ Per creare un frammento di contenuto:
    >
    >Per impostare come predefinita la posizione del nuovo frammento, passa alla cartella in cui desideri creare il frammento oppure specifica la posizione durante il processo di creazione.
 
-1. Il **Nuovo frammento di contenuto** viene visualizzata la finestra di dialogo, da qui puoi specificare:
+1. Viene visualizzata la finestra di dialogo **Nuovo frammento di contenuto** da cui puoi specificare:
 
    * **Posizione** - Completato automaticamente con la posizione corrente, ma se necessario puoi selezionare una posizione diversa.
-   * **Modello per frammenti di contenuto** - Seleziona dall’elenco a discesa il modello da utilizzare come base per il frammento.
+   * **Modello per frammenti di contenuto** - Selezionare il modello da utilizzare come base per il frammento dall&#39;elenco a discesa.
    * **Titolo**
-   * **Nome** - Completamento automatico in base al **Titolo**, ma puoi modificarlo, se necessario.
+   * **Nome** - Completato automaticamente in base al **Titolo**, ma puoi modificarlo, se necessario.
    * **Descrizione**
 
    ![Finestra di dialogo Nuovo frammento di contenuto](assets/cf-managing-new-cf-dialog.png)
@@ -241,32 +241,37 @@ Per creare un frammento di contenuto:
 
 ## Stati dei frammenti di contenuto {#statuses-content-fragments}
 
-Durante la sua esistenza, un frammento di contenuto può avere diversi stati, come mostrato nella [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) e [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md):
+Durante la sua esistenza, un frammento di contenuto può avere diversi stati, come mostrato nella [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) e nell&#39;[Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md):
 
-* **Nuovo** (grigio) È stato creato un nuovo frammento di contenuto, ma non ha contenuto in quanto non è mai stato modificato né aperto nell’editor frammento di contenuto.
-* **Bozza** (blu) Qualcuno ha modificato o aperto nell’Editor frammenti di contenuto il (nuovo) frammento di contenuto, che non è ancora stato pubblicato.
-* **Pubblicato** (verde) Il frammento di contenuto è stato pubblicato.
-* **Modificato** (arancione) Il frammento di contenuto è stato modificato dopo la pubblicazione (ma prima della pubblicazione della modifica).
-* **Non pubblicato** (rosso) La pubblicazione del frammento di contenuto è stata annullata.
+* **Nuovo** (grigio)
+Nell’editor dei frammenti di contenuto è stato creato un nuovo frammento di contenuto, che tuttavia non ha contenuto in quanto non è mai stato modificato né aperto.
+* **Bozza** (blu)
+Nell’Editor frammenti di contenuto qualcuno ha modificato o aperto il (nuovo) frammento di contenuto, che non è ancora stato pubblicato.
+* **Pubblicato** (verde)
+Il frammento di contenuto è stato pubblicato.
+* **Modificato** (arancione)
+Il frammento di contenuto è stato modificato dopo la pubblicazione (ma prima della pubblicazione della modifica).
+* **Non pubblicato** (rosso)
+La pubblicazione del frammento di contenuto è stata annullata.
 
 ## Modifica del contenuto del frammento (e delle varianti) {#editing-the-content-of-your-fragment}
 
 >[!IMPORTANT]
 >
->Per maggiori dettagli, [consulta Creazione di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md)
+>Per informazioni complete, [consulta Creazione di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md)
 
 Per aprire la pagina per la modifica:
 
 1. Utilizza la console **Frammenti di contenuto** per passare alla posizione del frammento di contenuto.
 1. Apri il frammento per la modifica selezionandolo e quindi **Apri in un nuovo editor** dalla barra degli strumenti.
 
-1. Viene aperto l’editor frammenti. Seleziona la tua richiesta **Variante** apporta le modifiche necessarie (verranno salvate automaticamente):
+1. Viene aperto l’editor frammenti. Seleziona la **variante** richiesta e apporta le modifiche necessarie (verranno salvate automaticamente):
 
    ![Editor frammento](assets/cf-managing-editor.png)
 
 ## Visualizzare e gestire i tag {#manage-tags}
 
-Dalla console Frammenti di contenuto è possibile visualizzare tutti i tag applicati nella sezione **Tag** dopo aver verificato che [la colonna è visualizzata](#select-columns-console).
+Dalla console Frammenti di contenuto puoi visualizzare tutti i tag applicati nella colonna **Tag**; dopo aver verificato che [la colonna sia visualizzata](#select-columns-console).
 
 ### Gestione tag (console) {#manage-tags-console}
 
@@ -283,11 +288,11 @@ Per gestire i tag:
 
 ### Visualizzazione e modifica di tag (editor) {#viewing-and-editing-tags}
 
-È inoltre possibile visualizzare e modificare i tag applicati a un frammento utilizzando [Proprietà](/help/sites-cloud/administering/content-fragments/authoring.md) dell’editor. Le informazioni visualizzate sono diverse tra **Principale** e qualsiasi **Varianti**.
+Puoi anche visualizzare e modificare i tag applicati a un frammento utilizzando la scheda [Proprietà](/help/sites-cloud/administering/content-fragments/authoring.md) dell&#39;editor. Le informazioni visualizzate sono diverse tra **Principale** e qualsiasi **Variante**.
 
 ## Visualizzazione e modifica delle proprietà (editor) {#viewing-and-editing-properties}
 
-Puoi visualizzare e modificare le proprietà (metadati) di un frammento utilizzando [Proprietà](/help/sites-cloud/administering/content-fragments/authoring.md) dell’editor. Le informazioni visualizzate sono diverse tra **Principale** e qualsiasi **Varianti**.
+Puoi visualizzare e modificare le proprietà (metadati) di un frammento utilizzando la scheda [Proprietà](/help/sites-cloud/administering/content-fragments/authoring.md) dell&#39;editor. Le informazioni visualizzate sono diverse tra **Principale** e qualsiasi **Variante**.
 
 ## Pubblicazione e anteprima di un frammento {#publishing-and-previewing-a-fragment}
 
@@ -299,7 +304,7 @@ Puoi pubblicare i frammenti di contenuto in:
 
   >[!CAUTION]
   >
-  >Pubblicazione di frammenti di contenuto in **Servizio di anteprima** è disponibile solo dalla console Frammenti di contenuto; utilizzando **Pubblica** azione.
+  >La pubblicazione di frammenti di contenuto nel servizio **Anteprima** è disponibile solo nella console Frammenti di contenuto utilizzando l&#39;azione **Publish**.
 
   >[!NOTE]
   >
@@ -313,15 +318,15 @@ Puoi pubblicare i frammenti di contenuto in:
 
 ### Pubblicazione {#publishing}
 
-Puoi pubblicare i frammenti di contenuto utilizzando **Pubblica** opzione da:
+Puoi pubblicare i frammenti di contenuto utilizzando l&#39;opzione **Publish** da:
 
-* barra degli strumenti di [Console Frammenti di contenuto](#actions-selected-content-fragment)
+* la barra degli strumenti della [console Frammenti di contenuto](#actions-selected-content-fragment)
 
    * Seleziona uno o più frammenti dall’elenco.
 
-* barra degli strumenti di [Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
+* barra degli strumenti dell&#39;[Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
 
-Dopo aver selezionato **Pubblica** azione:
+Dopo aver selezionato l&#39;azione **Publish**:
 
 1. Seleziona una delle seguenti opzioni per aprire la finestra di dialogo appropriata:
 
@@ -348,17 +353,17 @@ Dopo la pubblicazione, lo stato del frammento viene aggiornato e visualizzato ne
 
 Puoi annullare la pubblicazione dei frammenti di contenuto:
 
-* barra degli strumenti di [Console Frammenti di contenuto](#actions-selected-content-fragment)
+* la barra degli strumenti della [console Frammenti di contenuto](#actions-selected-content-fragment)
 
    * Seleziona uno o più frammenti dall’elenco.
 
-* barra degli strumenti di [Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
+* barra degli strumenti dell&#39;[Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
 
 In entrambi i casi, seleziona **Annulla pubblicazione** dalla barra degli strumenti, seguito da **Ora** o **Pianificato**.
 
 Quando viene visualizzata la relativa finestra di dialogo, è possibile selezionare il servizio appropriato:
 
-![Finestra di dialogo Annulla pubblicazione](assets/cf-managing-unpublish-dialog.png)
+![Annulla pubblicazione finestra di dialogo](assets/cf-managing-unpublish-dialog.png)
 
 >[!NOTE]
 >
@@ -372,7 +377,7 @@ Quando viene visualizzata la relativa finestra di dialogo, è possibile selezion
 
 <!-- CQDOC-21349: screenshot -->
 
-Il **Sostituisci** L’azione è disponibile (nella barra degli strumenti superiore) per trovare e sostituire il testo specificato nei Frammenti di contenuto selezionati.
+L&#39;azione **Sostituisci** è disponibile nella barra degli strumenti superiore per trovare e sostituire il testo specificato nei frammenti di contenuto selezionati.
 
 ![Trova e sostituisci](assets/cf-managing-find-replace.png)
 
@@ -399,16 +404,16 @@ Per eliminare un frammento:
 
 >[!NOTE]
 >
->Il **Elimina** non è disponibile per i frammenti attualmente pubblicati; è necessario prima annullarne la pubblicazione.
+>**Elimina** non è disponibile per i frammenti attualmente pubblicati. È necessario prima annullarne la pubblicazione.
 
 ## Individuare i riferimenti principali di un frammento {#parent-references-fragment}
 
 I dettagli dei riferimenti principali sono accessibili dalla sezione
 
-* **Riferimenti** della console Frammenti di contenuto
-* il [collegamento dei riferimenti principali nella barra degli strumenti superiore dell’editor di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#view-parent-references)
+* **Riferimenti** colonna della console Frammenti di contenuto
+* il collegamento [riferimenti principali nella barra degli strumenti superiore dell&#39;editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#view-parent-references)
 
-Entrambi forniscono un collegamento che apre una finestra di dialogo in cui sono elencati tutti i riferimenti principali di quel frammento, inclusi i frammenti di contenuto, frammenti di esperienza e pagine. Per aprire un riferimento specifico, fare clic su **Titolo** o l’icona del collegamento nella finestra di dialogo.
+Entrambi forniscono un collegamento che apre una finestra di dialogo in cui sono elencati tutti i riferimenti principali di quel frammento, inclusi i frammenti di contenuto, frammenti di esperienza e pagine. Per aprire un riferimento specifico, fare clic sul **Titolo** o sull&#39;icona del collegamento nella finestra di dialogo.
 
 Ad esempio:
 
@@ -418,14 +423,14 @@ Ad esempio:
 
 I dettagli delle copie per lingua sono accessibili da:
 
-* il **Lingua** colonna del [Console Frammenti di contenuto](#information-content-fragments)
-* il [Scheda Copie per lingua dell’editor di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
+* la colonna **Lingua** della [Console Frammenti di contenuto](#information-content-fragments)
+* la scheda [Copie per lingua dell&#39;editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
 
 L’icona indica le impostazioni locali del frammento di contenuto e il numero totale di copie per lingua associate al frammento di contenuto. Ad esempio, dalla console:
 
 ![Console Frammenti di contenuto - Indicatore della lingua](assets/cfc-console-language-indicator.png)
 
-Seleziona il conteggio per aprire una finestra di dialogo in cui vengono visualizzate tutte le copie per lingua. Per aprire una copia per lingua specifica, fai clic su **Titolo** nella finestra di dialogo.
+Seleziona il conteggio per aprire una finestra di dialogo in cui vengono visualizzate tutte le copie per lingua. Per aprire una copia di una lingua specifica, fai clic sul **Titolo** nella finestra di dialogo.
 
 ![Console Frammenti di contenuto - Finestra di dialogo Lingua](assets/cf-managing-console-languages-dialog.png)
 
@@ -446,11 +451,11 @@ Il pannello Filtro offre:
 * una selezione di predicati;
    * tra cui modelli per frammenti di contenuto, localizzazione, tag, campi di stato
    * è possibile selezionare e combinare uno o più predicati per creare il filtro
-* **Escludi elementi sottocartelle**, con la possibilità di escludere i frammenti di contenuto archiviati in sottocartelle
+* **Escludi elementi sottocartelle**, con la possibilità di escludere frammenti di contenuto archiviati in sottocartelle
 * l’opportunità di salvare la configurazione mediante il comando **Salva**
 * l’opzione di recuperare un filtro di ricerca salvato per il riutilizzo
 
-Una volta selezionata, la **Filtraggio per** (sotto la casella di ricerca). Possono essere deselezionati da lì. Ad esempio:
+Una volta selezionata, vengono visualizzate le opzioni **Filtro in base a** (nella casella di ricerca). Possono essere deselezionati da lì. Ad esempio:
 
 <!-- CQDOC-21349: screenshot -->
 
@@ -464,7 +469,7 @@ Ad esempio, seleziona **Pubblicato** nella colonna **Stato**:
 
 >[!NOTE]
 >
->Il filtro rapido è supportato solo per **Modello**, **Stato**, **Modificato da**, **Tag**, e **Pubblicato da** colonne.
+>Il filtro rapido è supportato solo per le colonne **Modello**, **Stato**, **Modificato da**, **Tag** e **Pubblicato da**.
 
 ![Console Frammenti di contenuto - Filtro](assets/cf-managing-console-fast-filter-overview.png)
 

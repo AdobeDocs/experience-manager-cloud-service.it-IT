@@ -19,7 +19,7 @@ Prima di iniziare a utilizzare le API di comunicazione, esamina le considerazion
 
 ### Dati modulo {#form-data}
 
-Le API di comunicazione accettano come input sia la struttura di un modulo creata in genere nella finestra di progettazione che i dati del modulo XML. Per compilare un documento con dati, è necessario che nei dati del modulo XML sia presente un elemento XML per ogni campo modulo che si desidera compilare. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Non è necessario che corrisponda all&#39;ordine in cui vengono visualizzati gli elementi XML. Il fattore importante è che gli elementi XML vengono specificati con i valori corrispondenti.
+Le API di comunicazione accettano come input sia una struttura di modulo generalmente creata in Designer che dati di modulo XML. Per compilare un documento con dati, è necessario che nei dati del modulo XML sia presente un elemento XML per ogni campo modulo che si desidera compilare. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Non è necessario che corrisponda all&#39;ordine in cui vengono visualizzati gli elementi XML. Il fattore importante è che gli elementi XML vengono specificati con i valori corrispondenti.
 
 Prendi in considerazione il seguente esempio di modulo di richiesta di prestito:
 
@@ -73,18 +73,18 @@ Assicurarsi sempre di utilizzare il file XDC corretto per la stampante. Ad esemp
 
 ### Solo script per moduli XFA (XDP/PDF) {#scripts}
 
-Una progettazione di moduli utilizzata con le API di comunicazione può contenere script eseguiti sul server. Verificare che la struttura di un modulo non contenga script eseguiti sul client. Per informazioni sulla creazione di script di progettazione di moduli, vedere [Guida di Designer](use-forms-designer.md).
+Una progettazione di moduli utilizzata con le API di comunicazione può contenere script eseguiti sul server. Verificare che la struttura di un modulo non contenga script eseguiti sul client. Per informazioni sulla creazione degli script di progettazione dei moduli, vedere [Guida di Designer](use-forms-designer.md).
 
 <!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
 
 ### Mappatura font {#font-mapping}
 
-Per progettare un modulo che utilizza tipi di carattere residenti nella stampante, scegliere un nome di tipo in Designer che corrisponda ai tipi di carattere disponibili nella stampante. Un elenco di font supportati per PCL o PostScript si trova nei profili dispositivo corrispondenti (file XDC). In alternativa, è possibile creare la mappatura dei caratteri per mappare i caratteri non residenti nella stampante ai caratteri residenti nella stampante con un nome di font diverso. Ad esempio, in uno scenario PostScript, i riferimenti al font Arial® possono essere mappati al font Helvetica® residente nella stampante.
+Per progettare un modulo che utilizza tipi di carattere residenti nella stampante, scegliere un nome di tipo in Designer che corrisponda ai tipi di carattere disponibili nella stampante. Un elenco di font supportati per PCL o PostScript si trova nei profili dispositivo corrispondenti (file XDC). In alternativa, è possibile creare la mappatura dei caratteri per mappare i caratteri non residenti nella stampante ai caratteri residenti nella stampante con un nome di font diverso. In uno scenario PostScript, ad esempio, i riferimenti al carattere Arial® possono essere mappati al carattere Helvetica® residente nella stampante.
 
 Se in un computer client è installato un tipo di carattere, questo sarà disponibile nell&#39;elenco a discesa di Designer. Se il tipo di carattere non è installato, è necessario specificarne manualmente il nome. L&#39;opzione &quot;Sostituisci definitivamente i caratteri non disponibili&quot; in Designer può essere disattivata. In caso contrario, quando il file XDP viene salvato in Designer, il nome del font di sostituzione viene scritto nel file XDP. Ciò significa che non viene utilizzato il tipo di carattere residente nella stampante.
 
-Esistono due tipi di OpenType ® i caratteri. Un tipo di carattere è un&#39;OpenType TrueType® supportata da PCL. L&#39;altro è OpenType CFF®. L&#39;output di PDF e PostScript supporta i font Type-1, TrueType e OpenType® incorporati. L&#39;output PCL supporta i caratteri TrueType incorporati.
+Esistono due tipi di OpenType ® i caratteri. Un tipo di carattere è un&#39;OpenType TrueType® supportata da PCL. L&#39;altro è OpenType CFF®. L&#39;output di PDF e PostScript supporta i caratteri Type-1, TrueType e OpenType® incorporati. L&#39;output PCL supporta i caratteri TrueType incorporati.
 
 Tipo-1 e OpenType ® i font non sono incorporati nell&#39;output PCL. Contenuto formattato con tipo-1 e OpenType ® i font vengono rasterizzati e generati come immagini bitmap che possono essere grandi e più lente da generare.
 
@@ -177,9 +177,9 @@ La tabella seguente specifica le opzioni XCI.
 
 ## Domande frequenti {#faq}
 
-**È possibile utilizzare una cartella controllata o altri meccanismi di archiviazione per memorizzare input e output?**
+**È possibile utilizzare una cartella controllata o altri meccanismi di archiviazione per archiviare input e output?**
 
-Al momento, è possibile utilizzare Archiviazione di Microsoft Azure per salvare i dati di input e i documenti generati. L’archiviazione di Microsoft Azure offre diverse opzioni per [automatizzare le operazioni di spostamento dei dati](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
+Al momento, è possibile utilizzare Archiviazione di Microsoft Azure per salvare i dati di input e i documenti generati. L&#39;archiviazione di Microsoft Azure offre diverse opzioni per [automatizzare le operazioni di spostamento dei dati](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
 
 **Un account di archiviazione di Microsoft Azure è incluso nella licenza di Cloud Service di Experience Manager Forms?**
 
@@ -189,7 +189,7 @@ L&#39;account di archiviazione di Microsoft Azure è indipendente dalla licenza 
 
 I dati di input e output vengono salvati solo nell&#39;archiviazione di Microsoft Azure.
 
-**Le API di comunicazione sono disponibili solo per il Cloud Service Experience Manager Forms? È possibile ottenere funzionalità simili in un ambiente on-premise?**
+**Le API di comunicazione sono disponibili solo per il Cloud Service Experience Manager Forms? È possibile ottenere funzionalità simili nell&#39;ambiente locale?**
 
 Puoi utilizzare il servizio di output di AEM Forms per combinare un modello (XFA o PDF) con i dati del cliente per generare documenti in formato PDF, PS, PCL e ZPL.
 
@@ -209,7 +209,7 @@ Sì, è possibile eseguire più operazioni batch contemporaneamente. Utilizzare 
 >[!MORELIKETHIS]
 >
 >* [Introduzione ad AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [Architettura as a Cloud Service di AEM Forms per API di comunicazione e Forms adattivi](/help/forms/aem-forms-cloud-service-architecture.md)
->* [Elaborazione della comunicazione - API sincrone](/help/forms/aem-forms-cloud-service-communications.md)
->* [Elaborazione della comunicazione - API batch](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Architettura di AEM Forms as a Cloud Service per le API di comunicazione e Forms adattivi](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Elaborazione comunicazione - API sincrone](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Elaborazione comunicazione - API batch](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 

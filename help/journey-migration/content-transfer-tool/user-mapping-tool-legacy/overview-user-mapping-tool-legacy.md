@@ -17,7 +17,7 @@ ht-degree: 21%
 
 >[!INFO]
 >
->Questa documentazione fa riferimento a una versione obsoleta dello strumento. Per ulteriori informazioni sull’ultima versione, consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Questa documentazione fa riferimento a una versione obsoleta dello strumento. Per ulteriori informazioni sulla versione più recente, vedere [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 <!-- Alexandru: drafting this for now
 
@@ -34,13 +34,13 @@ NOTE: "LEGACY" for user mapping includes everything before (that is, not includi
 
 ## Introduzione {#introduction}
 
-Come parte del percorso di transizione verso Adobe Experience Manager (AEM) as a Cloud Service, è necessario spostare utenti e gruppi dal sistema AEM esistente a AEM as a Cloud Service. Questa migrazione viene eseguita dallo strumento Content Transfer (Trasferimento contenuti).
+Come parte del percorso di transizione all’as a Cloud Service di Adobe Experience Manager (AEM), devi spostare utenti e gruppi dal sistema AEM esistente ad AEM as a Cloud Service. Questa migrazione viene eseguita dallo strumento Content Transfer (Trasferimento contenuti).
 
-Una modifica importante all’AEM as a Cloud Service è l’uso completamente integrato degli ID Adobi per accedere al livello di authoring. Questa integrazione richiede l’utilizzo di [Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per gestire utenti e gruppi di utenti. Le informazioni sul profilo utente sono centralizzate nell’Adobe Identity Management System (IMS) che fornisce il single sign-on in tutte le applicazioni cloud Adobe. Per ulteriori dettagli, consulta [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). A causa di questa modifica, gli utenti e i gruppi esistenti devono essere mappati ai loro ID IMS per evitare di duplicare utenti e gruppi nell’istanza di authoring del Cloud Service.
+Una modifica importante per AEM as a Cloud Service è l’utilizzo completamente integrato degli ID Adobe per accedere al livello di authoring. Questa integrazione richiede l&#39;utilizzo di [Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per la gestione di utenti e gruppi di utenti. Le informazioni sul profilo utente sono centralizzate nell’Adobe Identity Management System (IMS) che fornisce il single sign-on in tutte le applicazioni cloud Adobe. Per ulteriori dettagli, vedere [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). A causa di questa modifica, gli utenti e i gruppi esistenti devono essere mappati ai loro ID IMS per evitare di duplicare utenti e gruppi nell’istanza di authoring del Cloud Service.
 
 ## Strumento di mappatura utente {#mapping-tool}
 
-Lo strumento Content Transfer (Trasferimento contenuti) (senza mappatura utenti) esegue la migrazione di tutti gli utenti e i gruppi associati al contenuto da migrare. Lo strumento di mappatura utenti fa parte dello strumento Content Transfer (Trasferimento contenuti). Il suo unico scopo è modificare gli utenti in modo che siano riconosciuti correttamente da IMS, la funzionalità single sign-on utilizzata da AEM as a Cloud Service. Al termine di queste modifiche, lo strumento Content Transfer (Trasferimento contenuti) migra gli utenti e i gruppi del contenuto specificato come di consueto.
+Lo strumento Content Transfer (Trasferimento contenuti) (senza mappatura utenti) esegue la migrazione di tutti gli utenti e i gruppi associati al contenuto da migrare. Lo strumento di mappatura utenti fa parte dello strumento Content Transfer (Trasferimento contenuti). Il suo unico scopo è modificare gli utenti in modo che vengano riconosciuti correttamente da IMS, la funzionalità single sign-on utilizzata da AEM as a Cloud Service. Al termine di queste modifiche, lo strumento Content Transfer (Trasferimento contenuti) migra gli utenti e i gruppi del contenuto specificato come di consueto.
 
 ### Passaggio successivo {#whats-next}
 

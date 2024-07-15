@@ -1,6 +1,6 @@
 ---
-title: Console Adobe Developer per App Builder
-description: Scopri la console Adobe Developer e i progetti App Builder.
+title: Adobe Developer Console per App Builder
+description: Scopri i progetti Adobe Developer Console e App Builder.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -16,15 +16,15 @@ ht-degree: 0%
 
 ---
 
-# Console Adobe Developer per App Builder
+# Adobe Developer Console per App Builder
 
-Scopri la console Adobe Developer, come accedervi e navigarla.
+Scopri cos’è Adobe Developer Console e come accedervi e navigarlo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
 
 ## Utilizzare progetti e modelli
 
-Scopri come creare un progetto App Builder utilizzando il modello App Builder della console Adobe Developer.
+Scopri come creare un progetto App Builder utilizzando il modello App Builder di Adobe Developer Console.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339163/?quality=12&learn=on)
 

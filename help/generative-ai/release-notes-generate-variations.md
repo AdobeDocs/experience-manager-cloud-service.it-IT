@@ -1,6 +1,6 @@
 ---
 title: Note sulla versione per Genera varianti
-description: Note sulla versione per Genera varianti, accessibili da AEM as a Cloud Service e dal Sidekick di Edge Delivery Services
+description: Note sulla versione per Generare varianti, accessibili da AEM as a Cloud Service e dal Sidekick di Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # Note sulla versione per Genera varianti {#release-notes-generate-variations}
 
-In questa pagina sono documentate le note sulla versione di Generate Variations, accessibili da AEM as a Cloud Service e dal Sidekick di Edge Delivery Services.
+Questa pagina documenta le note sulla versione di Generate Variations, accessibili da AEM as a Cloud Service e dal Sidekick di Edge Delivery Services.
 
 >[!NOTE]
 >
@@ -42,13 +42,13 @@ La versione corrente è la 2.2.0.
 
 ## Problemi noti {#known-issues}
 
-* Per i problemi relativi ai prompt personalizzati quando si passa da una versione precedente, consulta [Richieste personalizzate nella versione v2.0.0](/help/generative-ai/generate-variations.md#custom-prompts-v200)
+* Per i problemi relativi alle richieste personalizzate durante lo spostamento da una versione precedente, vedere [Richieste personalizzate nella versione v2.0.0](/help/generative-ai/generate-variations.md#custom-prompts-v200)
 
 ## Versioni precedenti {#previous-releases}
 
 ### 1,0,5 {#release-notes-1-0-5}
 
-* Integrazione con Adobi Express
+* Integrazione con Adobe Express
 * Sposta il prompt di modifica nella barra laterale
 
 ### 1.0.4 {#release-notes-1-0-4}

@@ -61,12 +61,12 @@ Crea un marchio per il quale desideri gestire le attività di marketing.
 
 Quando crei un marchio utilizzando la console Attività, questa viene visualizzata anche nella [console Offerte](/help/sites-cloud/authoring/personalization/offers.md), dove puoi creare offerte per le esperienze delle tue attività.
 
-1. Nella console Navigazione, seleziona **Personalizzazione**. Seleziona **Attività**.
+1. Nella console Navigazione, selezionare **Personalization**. Seleziona **Attività**.
 
    ![Navigazione alle attività](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
-1. Nella console Attività, seleziona **Crea** allora **Crea marchio**.
-1. Seleziona il modello del brand e seleziona **Successivo**.
+1. Nella console Attività, seleziona **Crea** quindi **Crea marchio**.
+1. Seleziona il modello del brand e seleziona **Avanti**.
 1. Digita il titolo da asegnare al marchio; questo titolo verrà visualizzato nelle console Attività e Offerte. Facoltativamente, digita o seleziona uno o più tag da associare al marchio.
 1. Seleziona **Crea**. Il marchio viene visualizzato nella console Attività.
 
@@ -97,8 +97,8 @@ Aggiungi un’attività o modifica un’attività esistente per concentrare le t
 
 Per aggiungere un’attività:
 
-1. Seleziona il marchio per il quale stai creando l’attività, quindi fai clic su **Crea** allora **Crea attività**. Se stai eseguendo una modifica, seleziona l’attività nella schermata Area mastro, quindi fai clic o tocca **Modifica attività**.
-1. Fornisci le seguenti informazioni, quindi seleziona **Successivo**:
+1. Seleziona il brand per il quale stai creando l&#39;attività, quindi seleziona **Crea** e **Crea attività**. Se stai eseguendo una modifica, seleziona l’attività nella schermata Area mastro, quindi fai clic o tocca **Modifica attività**.
+1. Fornisci le seguenti informazioni, quindi seleziona **Avanti**:
    * Nome dell’attività.
    * Il motore di targeting da utilizzare. ContextHub (AEM) è selezionato per impostazione predefinita. Se devi utilizzare Adobe Target, crea l’attività nell’editor dei contenuti di destinazione.
    * Se hai selezionato Adobe Target come motore di targeting, seleziona o modifica la configurazione cloud da utilizzare per la connessione ad Adobe Target. (non selezionare un framework creato in precedenza per la configurazione cloud).
@@ -106,9 +106,9 @@ Per aggiungere un’attività:
    * Seleziona il Tipo di attività.
 1. Aggiungi una o più esperienze all’attività. Seleziona **Aggiungi esperienza**.
 1. Se utilizzi il targeting di AEM o il targgeting esperienze di Adobe Target:
-   1. Seleziona **Seleziona pubblico** e seleziona il segmento al quale viene eseguito il targeting dell’esperienza.
+   1. Seleziona **Seleziona pubblico** e seleziona il segmento al quale viene eseguito il targeting dell&#39;esperienza.
    1. Seleziona **Aggiungi esperienza**, digita un nome e seleziona **OK**.
-   1. Seleziona **Successivo**.
+   1. Seleziona **Avanti**.
 Se utilizzi Test A/B di Adobe Target:
    1. Seleziona la matita nella casella Tipi di pubblico per selezionare un pubblico.
    1. Seleziona **Aggiungi esperienza**, digita un nome e seleziona **OK**.
@@ -143,7 +143,7 @@ Per pubblicare o annullare la pubblicazione delle attività:
 
    ![Pubblicazione dalla console attività](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. Per pubblicare, seleziona **Pubblica**. Per annullare la pubblicazione, seleziona **Annulla pubblicazione**. L’attività o le attività vengono pubblicate o ne viene annullata la pubblicazione e il loro stato cambia nella console Attività (potrebbe essere necessario un aggiornamento della schermata).
+1. Per pubblicare, selezionare **Publish**. Per annullare la pubblicazione, selezionare **Annulla pubblicazione**. L’attività o le attività vengono pubblicate o ne viene annullata la pubblicazione e il loro stato cambia nella console Attività (potrebbe essere necessario un aggiornamento della schermata).
 
 ## Attività sulle istanze di authoring e pubblicazione {#activities-on-author-and-publish-instances}
 
@@ -158,13 +158,13 @@ Puoi vedere le prestazioni di qualsiasi attività di Adobe Target (XT o A/B). Se
 
 Per visualizzare le prestazioni dell&#39;attività e convertire l&#39;esperienza vincente:
 
-1. In entrata **Personalizzazione**, seleziona **Attività** per passare al **Attività** console.
+1. In **Personalization**, seleziona **Attività** per accedere alla console **Attività**.
 1. Seleziona il marchio per il quale desideri visualizzare le attività.
-1. Seleziona l’attività e seleziona **Visualizza proprietà** e fai clic su **Rapporti** e seleziona l’attività per la quale visualizzare le prestazioni o convertire le esperienze vincenti. Vengono visualizzati i dati sulle prestazioni.
+1. Seleziona l&#39;attività e fai clic su **Visualizza proprietà**, quindi fai clic sulla scheda **Rapporti** e seleziona l&#39;attività per la quale visualizzare le prestazioni o convertire le esperienze vincenti. Vengono visualizzati i dati sulle prestazioni.
 
    ![Verifica delle prestazioni dell’attività](/help/sites-cloud/authoring/assets/activities-performance.png)
 
-1. Seleziona la **Invia vincitore** per impostare l&#39;esperienza come predefinita.
+1. Seleziona il collegamento **Invia vincitore** per impostare l&#39;esperienza come predefinita.
 
    La conversione del vincitore comporta le seguenti operazioni:
 
@@ -175,7 +175,7 @@ Per visualizzare le prestazioni dell&#39;attività e convertire l&#39;esperienza
 
    L’esperienza vincente è quella che genera un incremento maggiore nei rapporti, in base al tasso di conversione.
 
-1. Seleziona **Sì** per confermare che desideri convertire il vincitore, disabilita l&#39;esperienza corrente e sostituiscila con il contenuto dell&#39;esperienza vincente.
+1. Seleziona **Sì** per confermare che desideri convertire il vincitore, disabilitando l&#39;esperienza corrente e sostituendola con il contenuto dell&#39;esperienza vincente.
 
 ## Sincronizzazione delle attività con Adobe Target {#synchronizing-activities-with-adobe-target}
 

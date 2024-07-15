@@ -1,6 +1,6 @@
 ---
 title: Note sulla versione 2021.2.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] Note sulla versione 2021.2.0 as a Cloud Service."
+description: "[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2021.2.0."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 feature: Release Information
 role: Admin
@@ -18,20 +18,20 @@ La sezione seguente illustra le note generali sulla versione di [!DNL Experience
 
 ## Data di rilascio {#release-date}
 
-La data di rilascio per [!DNL Adobe Experience Manager] La versione 2021.2.0 di as a Cloud Service è il 25 febbraio 2021.
+La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 è il 25 febbraio 2021.
 La seguente versione (2021.3.0) sarà del 25 marzo 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Gestione dei contenuti headless {#headless}
 
-* **[API GraphQL per la distribuzione dei frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)**: possibilità di eseguire query sui frammenti di contenuto utilizzando la sintassi GraphQL e sugli schemi basati su modelli di frammenti di contenuto, per l’output in formato JSON.
+* **[API GraphQL per la distribuzione dei frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)**: possibilità di eseguire query sui frammenti di contenuto utilizzando la sintassi GraphQL e gli schemi basati su modelli di frammenti di contenuto, per l&#39;output in formato JSON.
 
-* **[Supporto dell’autenticazione per le richieste API di GraphQL](/help/headless/security/authentication.md)**: possibilità di autenticare le richieste API di GraphQL con token di accesso per le API lato server.
+* **[Supporto dell&#39;autenticazione per le richieste API GraphQL](/help/headless/security/authentication.md)**: possibilità di autenticare le richieste API GraphQL con token di accesso per le API lato server.
 
-* **[Componente RemotePage](/help/implementing/developing/hybrid/remote-page.md)**: è stato aggiunto il supporto per la visualizzazione e la modifica di SPA esterni all’interno dell’AEM tramite.
+* **[Componente RemotePage](/help/implementing/developing/hybrid/remote-page.md)**: è stato aggiunto il supporto per la visualizzazione e la modifica di SPA esterni all&#39;interno dell&#39;AEM tramite.
 
-* **[Modifica di un SPA esterno all’interno dell’AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: è stata aggiunta la possibilità di caricare un’applicazione indipendente a pagina singola in un’istanza AEM, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
+* **[Modifica di un SPA esterno all&#39;interno dell&#39;AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: è stata aggiunta la possibilità di caricare un&#39;applicazione indipendente a pagina singola in un&#39;istanza AEM, aggiungere sezioni di contenuto modificabili e abilitare l&#39;authoring.
 
 * È stato migliorato l’output JSON dall’API di GraphQL, inclusa la possibilità di generare testo RTF in formato JSON e in diverse lingue.
 
@@ -55,20 +55,20 @@ La seguente versione (2021.3.0) sarà del 25 marzo 2021.
 
 ## Novità in [!DNL Assets] {#what-is-new-assets}
 
-* Le risorse possono essere originate tramite [!DNL Experience Manager Assets Brand Portal]. Consente di approvvigionarsi di risorse dagli utenti dell’agenzia per nuove campagne di marketing, servizi fotografici e progetti.
+* Assets può essere originato con [!DNL Experience Manager Assets Brand Portal]. Consente di approvvigionarsi di risorse dagli utenti dell’agenzia per nuove campagne di marketing, servizi fotografici e progetti.
 
-* [!DNL Experience Manager Assets] as a [!DNL Cloud Service] ha il diritto di disporre di un [!DNL Brand Portal] dell&#39;istanza. Il [!DNL Cloud Manager] l&#39;utente può attivare [!DNL Brand Portal] il [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Consulta [attivare Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+* [!DNL Experience Manager Assets] come [!DNL Cloud Service] ha diritto ad avere un&#39;istanza [!DNL Brand Portal] preconfigurata. L&#39;utente [!DNL Cloud Manager] può attivare [!DNL Brand Portal] su [!DNL Experience Manager Assets] come [!DNL Cloud Service]. Vedere [attivare Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
-* Ora le aziende possono reperire le risorse tramite [!DNL Brand Portal]. La funzione Asset sourcing utilizza [!DNL Brand Portal] per aiutare i clienti a interagire con gli utenti dell’agenzia e reperire risorse per nuove campagne di marketing, servizi fotografici e progetti. Consulta [asset sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=it).
+* Le aziende possono ora trovare risorse utilizzando [!DNL Brand Portal]. La funzione Asset sourcing utilizza [!DNL Brand Portal] per aiutare i clienti a interagire con gli utenti dell&#39;agenzia per la creazione di risorse per nuove campagne di marketing, servizi fotografici e progetti. Vedi [origine risorse in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=it).
 
-* Il [!DNL Brand Portal] il rapporto di utilizzo ora visualizza solo gli utenti attivi. Gli utenti inattivi non vengono più visualizzati. Gli utenti attivi sono quelli il cui account è assegnato a un profilo di prodotto in [!DNL Admin Console]. Consulta [[!DNL Brand Portal] rapporti](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
+* Il report sull&#39;utilizzo di [!DNL Brand Portal] ora visualizza solo gli utenti attivi. Gli utenti inattivi non vengono più visualizzati. Gli utenti attivi sono quelli il cui account è assegnato a un profilo di prodotto in [!DNL Admin Console]. Consulta [[!DNL Brand Portal] report](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
-* In entrata [!DNL Brand Portal], viene introdotta una nuova impostazione di download che consente di creare cartelle separate per ogni risorsa durante il download di cartelle, raccolte e così via. Consulta [impostazioni di download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
+* In [!DNL Brand Portal] viene introdotta una nuova impostazione di download che consente di creare cartelle separate per ogni risorsa durante il download di cartelle, raccolte e così via. Vedi [impostazioni download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
 ## Correzioni di bug in [!DNL Assets] {#bug-fixes-assets}
 
 * Quando sono selezionate più risorse per aggiornare le proprietà, a volte si verifica un errore o le proprietà di una risorsa deselezionata vengono aggiornate. (CQ-4316532)
-* Quando si tenta di aprire [!UICONTROL Barra di ricerca amministrazione risorse], la pagina rimane vuota e si fa clic su [!UICONTROL Modifica] > [!UICONTROL Impostazioni] genera un errore. (CQ-4315079)
+* Quando si tenta di aprire [!UICONTROL Barra di ricerca amministrazione di Assets], la pagina rimane vuota e se si fa clic su [!UICONTROL Modifica] > [!UICONTROL Impostazioni] viene generato un errore. (CQ-4315079)
 * Quando viene creata una nuova versione di una risorsa esistente dopo aver risolto il conflitto di denominazione, i metadati della risorsa originale vengono sovrascritti. (CQ-4313594)
 * Quando viene stampata una risorsa con testo di annotazione lungo, il testo dell’annotazione viene ritagliato, anche se è disponibile dello spazio. (CQ-4314101)
 
@@ -78,11 +78,11 @@ La seguente versione (2021.3.0) sarà del 25 marzo 2021.
 
 * Gestione dell’esperienza del prodotto: arricchisci le pagine dei cataloghi di prodotti singolarmente con Frammenti esperienza.
 
-* Proprietà estese della console prodotti per visualizzare le risorse collegate e i frammenti di esperienza, con azioni per passare rapidamente al contenuto associato.
+* Proprietà estese della console prodotti per mostrare Assets collegato e frammenti di esperienza, con azioni per passare rapidamente al contenuto associato.
 
-* È stato rilasciato il sito di riferimento CIF Venia (24.02.2021), che include la versione più recente dei Componenti core CIF v1.8.0. Consulta [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) per ulteriori dettagli.
+* È stato rilasciato il sito di riferimento CIF Venia (24.02.2021), che include la versione più recente dei Componenti core CIF v1.8.0. Per ulteriori dettagli, consulta [Sito di riferimento per CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24).
 
-* È stata rilasciata la versione 1.8.0 dei Componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) per ulteriori dettagli.
+* È stata rilasciata la versione 1.8.0 dei Componenti core CIF. Per ulteriori dettagli, consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -161,9 +161,9 @@ La data di rilascio di Best Practices Analyzer v2.1.2 è il 18 febbraio 2021.
 ### Novità degli strumenti di refactoring del codice {#what-is-new-crt}
 
 * È stata rilasciata la nuova versione del plug-in AIO-CLI. La versione più recente di questo plug-in include diverse correzioni di bug per Repository Modernizer.
-Consulta [Esperienza unificata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) per ulteriori informazioni su questo plug-in.
+Per ulteriori informazioni su questo plug-in, consulta [Esperienza unificata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits).
 
 ### Correzioni di bug {#bug-fixes-crt}
 
 * Sono state apportate diverse correzioni di bug in Repository Modernizer.
-Consulta [Risorsa GitHub: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per ulteriori dettagli.
+Per ulteriori dettagli, consulta [Risorsa GitHub: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).

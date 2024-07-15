@@ -1,6 +1,6 @@
 ---
 title: Configurazione della vista Timeline per AEM Screens
-description: Questa pagina descrive come configurare una vista timeline in Schermi as a Cloud Service.
+description: Questa pagina descrive come configurare una vista timeline in Screens as a Cloud Service.
 exl-id: 53afe1f5-8f0b-4cca-a819-d3e9375cbe37
 feature: Administering Screens
 role: Admin, Developer, User
@@ -21,9 +21,9 @@ AEM fornisce una suite di funzioni che consente a più persone nei gruppi di un�
 La timeline, che si trova nella barra a sinistra, descrive i canali, la posizione o il ciclo di vita di una cartella di schermate in ordine temporale per trasmettere ciò che è successo a essa nel corso della sua vita. Questo può essere filtrato verso il basso per tipo.
 Oltre ai registri del ciclo di vita, la barra Timeline fornisce le seguenti funzioni.
 
-![Applica profilo a cartella](/help/screens-cloud/assets/configure/Screens-timeline1.jpg)
+![Applica profilo alla cartella](/help/screens-cloud/assets/configure/Screens-timeline1.jpg)
 
-![Applica profilo a cartella](/help/screens-cloud/assets/configure/screens-timeline2.jpg)
+![Applica profilo alla cartella](/help/screens-cloud/assets/configure/screens-timeline2.jpg)
 
 La procedura seguente illustra come creare una vista Timeline per AEM Screens:
 
@@ -40,8 +40,8 @@ I commenti forniscono un modo consolidato per gli utenti AEM di discutere un mod
 
 1. Passare al canale per il quale si desidera aggiungere un commento.
 1. Seleziona il canale.
-1. Apri **Timeline** colonna.
-1. Aggiungi il commento e premi **Invio**.
+1. Apri la colonna **Timeline**.
+1. Aggiungi il tuo commento e premi **Invio**.
 
 ![Aggiungi un commento](/help/screens-cloud/assets/configure/screen-timeline3.jpg)
 
@@ -63,17 +63,17 @@ Il controllo delle versioni crea un&#39;istantanea di un canale in un determinat
 
 1. Passare al canale per il quale si desidera aggiungere un commento.
 1. Seleziona il canale.
-1. Apri **Timeline** colonna.
+1. Apri la colonna **Timeline**.
 1. Fai clic sul pulsante (tre punti) accanto al campo commento nella parte inferiore della pagina.
 
    ![Aggiungi un commento](/help/screens-cloud/assets/configure/screens-timeline5.jpg)
 
 1. Seleziona **Salva come versione**.
-1. Immetti un **Etichetta** e **Commento** per la versione.
+1. Immettere un **etichetta** e un **commento** per la versione.
 
    ![Aggiungi un commento](/help/screens-cloud/assets/configure/screens-timeline6.jpg)
 
-1. Conferma la nuova versione selezionando **Crea**.Le informazioni nella timeline vengono aggiornate per indicare che si tratta di una nuova versione.
+1. Confermare la nuova versione selezionando **Crea**. Le informazioni nella sequenza temporale vengono aggiornate per indicare che si tratta di una nuova versione.
 
 #### Ripristina una versione {#revertversion}
 
@@ -81,8 +81,8 @@ Per ripristinare la pagina selezionata in una versione precedente:
 
 1. Passa al canale per aggiungere un commento.
 1. Seleziona il canale.
-1. Apri **Timeline** colonna.
-1. Seleziona una **Mostra tutto** o **Versioni** dal menu a discesa del filtro. Vengono elencate le versioni del canale selezionato.
+1. Apri la colonna **Timeline**.
+1. Seleziona **Mostra tutti** o **Versioni** dal menu a discesa dei filtri. Vengono elencate le versioni del canale selezionato.
 1. Seleziona la versione da ripristinare. Vengono visualizzate le opzioni disponibili:
 
    ![Aggiungi un commento](/help/screens-cloud/assets/configure/screens-timeline7.jpg)
@@ -95,8 +95,8 @@ Puoi visualizzare l’anteprima di una versione specifica:
 
 1. Passa al canale per aggiungere un commento.
 1. Seleziona il canale.
-1. Apri **Timeline** colonna.
-1. Seleziona una **Mostra tutto** o **Versioni** dal menu a discesa del filtro. Vengono elencate le versioni del canale selezionato.
+1. Apri la colonna **Timeline**.
+1. Seleziona **Mostra tutti** o **Versioni** dal menu a discesa dei filtri. Vengono elencate le versioni del canale selezionato.
 1. Seleziona la versione da visualizzare in anteprima. Vengono visualizzate le opzioni disponibili:
 
    ![Anteprima versione](/help/screens-cloud/assets/configure/screens-timeline8.jpg)
@@ -109,8 +109,8 @@ Puoi confrontare una versione specifica con la versione corrente:
 
 1. Passare al canale per il quale si desidera aggiungere un commento.
 1. Seleziona il canale.
-1. Apri **Timeline** colonna
-1. Seleziona una **Mostra tutto** o **Versioni** dal menu a discesa del filtro. Vengono elencate le versioni del canale selezionato.
+1. Apri la colonna **Timeline**
+1. Seleziona **Mostra tutti** o **Versioni** dal menu a discesa dei filtri. Vengono elencate le versioni del canale selezionato.
 1. Seleziona la versione da confrontare. Vengono visualizzate le opzioni disponibili:
 
    ![Confronta versione](/help/screens-cloud/assets/configure/screens-timeline9.jpg)
@@ -130,26 +130,26 @@ Quando applichi il flusso di lavoro, specifichi le informazioni seguenti:
 
 1. Passare al canale per il quale si desidera aggiungere un commento.
 1. Seleziona il canale.
-1. Apri **Timeline** colonna.
+1. Apri la colonna **Timeline**.
 1. Fai clic sul pulsante (tre punti) accanto al campo commento nella parte inferiore.
 
    ![Avvia flusso di lavoro](/help/screens-cloud/assets/configure/screens-timeline10.jpg)
 
 1. Seleziona **Avvia flusso di lavoro**.
 1. Viene visualizzata la procedura guidata Crea flusso di lavoro che consente di specificare i dettagli del flusso di lavoro.
-1. Seleziona **Modello flusso di lavoro** dall’elenco a discesa e inserisci il titolo del flusso di lavoro.
+1. Selezionare **Modello flusso di lavoro** dall&#39;elenco a discesa e immettere il titolo del flusso di lavoro.
 
    ![Avvia flusso di lavoro](/help/screens-cloud/assets/configure/screens-timeline11.jpg)
 
-1. Continua facendo clic su **Successivo**.
+1. Continua facendo clic su **Avanti**.
 1. Nel passaggio ambito puoi effettuare le seguenti operazioni:
-   * **Aggiungi contenuto** per aggiungere risorse aggiuntive al flusso di lavoro.
-   * **Includi elementi figlio** per specificare che gli elementi secondari di tale risorsa verranno inclusi nel flusso di lavoro.
+   * **Aggiungi contenuto** per aggiungere ulteriori risorse al flusso di lavoro.
+   * **Includi elementi figlio** per specificare gli elementi figlio di tale risorsa che verranno inclusi nel flusso di lavoro.
    * **Rimuovi selezione** per rimuovere tale risorsa dal flusso di lavoro.
 
    ![Avvia flusso di lavoro](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
 
-1. Seleziona **Crea** per chiudere la procedura guidata e creare l’istanza di flusso di lavoro.
+1. Seleziona **Crea** per chiudere la procedura guidata e creare l&#39;istanza del flusso di lavoro.
 1. A seconda del modello di flusso di lavoro selezionato, potrebbe essere necessario eseguire alcune azioni aggiuntive per completare il flusso di lavoro.
 
    ![Avvia flusso di lavoro](/help/screens-cloud/assets/configure/screens-timeline13.jpg)

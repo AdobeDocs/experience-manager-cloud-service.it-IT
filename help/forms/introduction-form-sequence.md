@@ -1,6 +1,6 @@
 ---
 title: Come si crea una sequenza di moduli con più passaggi?
-description: Con [!DNL Experience Manager Forms], puoi definire una sequenza di pannelli per i moduli in modo che gli utenti possano navigare e compilare un modulo adattivo.
+description: Con  [!DNL Experience Manager Forms], puoi definire una sequenza di pannelli per i moduli in modo che gli utenti possano navigare e compilare un modulo adattivo.
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
@@ -14,7 +14,7 @@ ht-degree: 81%
 
 # Introduzione alla sequenza di moduli a più passaggi {#introduction-to-multi-step-form-sequence}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |

@@ -41,21 +41,21 @@ Vista Risorse consente di visualizzare in tempo reale i dati del tuo ambiente vi
 
 Fai clic su **[!UICONTROL Insight]** nel riquadro di navigazione a sinistra per visualizzare i seguenti grafici generati automaticamente:
 
-* **Download**: numero di risorse scaricate dall’ambiente di visualizzazione Risorse negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
+* **Download**: numero di risorse scaricate dall&#39;ambiente di visualizzazione di Assets negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
   ![approfondimenti-download](/help/assets/assets/insights-downloads2341.svg)
 
-* **Caricamenti**: numero di risorse caricate nell’ambiente di visualizzazione Risorse negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
-  ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+* **Caricamenti**: numero di risorse caricate nell&#39;ambiente di visualizzazione di Assets negli ultimi 30 giorni o 12 mesi rappresentato da un grafico a linee.
+  ![approfondimenti-caricamenti](/help/assets/assets/insights-uplods2.svg)
   <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
-* **Utilizzo archiviazione**: utilizzo dell’archiviazione, in byte, per l’ambiente di visualizzazione delle risorse rappresentato da un grafico a barre.
-  ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+* **Utilizzo spazio di archiviazione**: utilizzo spazio di archiviazione, in byte, per l&#39;ambiente di visualizzazione Assets rappresentato da un grafico a barre.
+  ![approfondimenti-caricamenti](/help/assets/assets/insights-storage-usage1.svg)
   <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Ricerche principali**: visualizza i termini più cercati e il numero di volte in cui tali termini sono stati cercati nell’ambiente vista Risorse negli ultimi 30 giorni o 12 mesi rappresentato in formato tabulare.
-  ![insights-uploads](/help/assets/assets/insights-top-search.svg)
+  ![approfondimenti-caricamenti](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)

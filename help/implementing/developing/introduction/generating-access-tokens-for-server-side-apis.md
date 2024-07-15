@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Generazione dei token di accesso per le API lato server {#generating-access-tokens-for-server-side-apis}
 
-Alcune architetture si basano sull&#39;effettuare chiamate all&#39;AEM as a Cloud Service da un&#39;applicazione ospitata su un server al di fuori dell&#39;infrastruttura AEM. Ad esempio, un’app mobile che chiama un server e che quindi rende as a Cloud Service le richieste API all’AEM.
+Alcune architetture si basano sull’esecuzione di chiamate ad AEM as a Cloud Service da un’applicazione ospitata su un server al di fuori dell’infrastruttura AEM. Ad esempio, un’app mobile che chiama un server e quindi invia richieste API ad AEM as a Cloud Service.
 
-Il flusso server-to-server è descritto di seguito, insieme a un flusso semplificato per lo sviluppo. L&#39;AEM as a Cloud Service [Console per sviluppatori](development-guidelines.md#crxde-lite-and-developer-console) viene utilizzato per generare i token necessari per il processo di autenticazione.
+Il flusso server-to-server è descritto di seguito, insieme a un flusso semplificato per lo sviluppo. AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console) viene utilizzato per generare i token necessari per il processo di autenticazione.
 
 <!-- Alexandru: hiding this until the tutorials reflect the new UI
 
@@ -25,21 +25,21 @@ Il flusso server-to-server è descritto di seguito, insieme a un flusso semplifi
 
 ## Flusso server-to-server {#the-server-to-server-flow}
 
-Gli utenti con ruolo di amministratore dell’organizzazione IMS e che sono membri del profilo di prodotto Utenti AEM o Amministratori AEM nell’istanza Autore AEM possono generare un set di credenziali dall’AEM as a Cloud Service. Ogni credenziale è un payload JSON che include un certificato (la chiave pubblica), una chiave privata e un account tecnico costituito da una `clientId` e `clientSecret`. Tali credenziali possono essere recuperate in seguito da un utente con il ruolo di amministratore dell’ambiente as a Cloud Service dell’AEM e devono essere installate su un server non AEM e trattate con attenzione come chiave segreta. Questo file in formato JSON contiene tutti i dati necessari per l’integrazione con un’API as a Cloud Service per AEM. I dati vengono utilizzati per creare un token JWT firmato, che viene scambiato con l’Adobe Identity Management Services (IMS) per un token di accesso IMS. Questo token di accesso può quindi essere utilizzato come token di autenticazione Bearer per rendere as a Cloud Service le richieste all’AEM. Per impostazione predefinita, il certificato nelle credenziali scade dopo un anno, ma può essere aggiornato quando necessario, come descritto [qui](#refresh-credentials).
+Gli utenti con ruolo di amministratore dell’organizzazione IMS e che sono membri del profilo di prodotto Utenti AEM o Amministratori AEM nell’istanza Autore AEM possono generare un set di credenziali da AEM as a Cloud Service. Ogni credenziale è un payload JSON che include un certificato (la chiave pubblica), una chiave privata e un account tecnico costituito da `clientId` e `clientSecret`. Tali credenziali possono essere recuperate in seguito da un utente con il ruolo di amministratore dell’ambiente AEM as a Cloud Service e devono essere installate in un server non AEM e trattate con attenzione come chiave segreta. Questo file in formato JSON contiene tutti i dati necessari per l’integrazione con un’API AEM as a Cloud Service. I dati vengono utilizzati per creare un token JWT firmato, che viene scambiato con l’Adobe Identity Management Services (IMS) per un token di accesso IMS. Questo token di accesso può quindi essere utilizzato come token di autenticazione Bearer per effettuare richieste ad AEM as a Cloud Service. Per impostazione predefinita, il certificato nelle credenziali scade dopo un anno, ma può essere aggiornato quando necessario, come descritto [qui](#refresh-credentials).
 
 Il flusso server-to-server prevede i seguenti passaggi:
 
-* Recupera le credenziali sull’AEM as a Cloud Service da Developer Console
-* Installare le credenziali per AEM as a Cloud Service su un server non AEM che effettua chiamate all&#39;AEM
+* Recuperare le credenziali su AEM as a Cloud Service da Developer Console
+* Installare le credenziali per AEM as a Cloud Service su un server non AEM che effettua chiamate all’AEM
 * Generare un token JWT e scambiarlo con un token di accesso utilizzando le API IMS di Adobe
 * Chiamata dell&#39;API AEM con il token di accesso come token di autenticazione Bearer
 * Impostare le autorizzazioni appropriate per l’utente dell’account tecnico nell’ambiente AEM
 
-### Recupera le credenziali as a Cloud Service dell’AEM {#fetch-the-aem-as-a-cloud-service-credentials}
+### Recupera le credenziali di AEM as a Cloud Service {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Gli utenti con accesso alla Console per sviluppatori as a Cloud Service all’AEM possono visualizzare la scheda integrazioni nella Console per sviluppatori per un determinato ambiente. L’utente con il ruolo di amministratore dell’ambiente as a Cloud Service dall’AEM può creare, visualizzare o gestire le credenziali.
+Gli utenti con accesso alla Console per sviluppatori di AEM as a Cloud Service possono visualizzare la scheda integrazioni in Developer Console per un determinato ambiente. L’utente con il ruolo di amministratore dell’ambiente AEM as a Cloud Service può creare, visualizzare o gestire le credenziali.
 
-Clic **Crea nuovo account tecnico**, viene creato un set di credenziali che include id client, segreto client, chiave privata, certificato e configurazione per i livelli di authoring e pubblicazione dell’ambiente, indipendentemente dalla selezione del pod.
+Facendo clic su **Crea nuovo account tecnico**, viene creato un set di credenziali che include ID client, segreto client, chiave privata, certificato e configurazione per i livelli di authoring e pubblicazione dell&#39;ambiente, indipendentemente dalla selezione del pod.
 
 ![Creazione di un nuovo account tecnico](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
@@ -47,13 +47,13 @@ Viene visualizzata una nuova scheda del browser con le credenziali. È possibile
 
 ![Scarica credenziali](/help/implementing/developing/introduction/assets/s2s-credentialdownload.png)
 
-Dopo la creazione, le credenziali verranno visualizzate nella sezione **Account tecnici** scheda in **Integrazioni** sezione:
+Dopo la creazione, le credenziali verranno visualizzate nella scheda **Account tecnici** della sezione **Integrazioni**:
 
 ![Visualizza credenziali](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
 Gli utenti possono visualizzare le credenziali in un secondo momento utilizzando l’azione Visualizza. Inoltre, come descritto più avanti nell’articolo, gli utenti possono modificare le credenziali per lo stesso account tecnico. Questa operazione viene eseguita creando una chiave privata o un certificato, nei casi in cui il certificato debba essere rinnovato o revocato.
 
-Gli utenti con il ruolo Amministratore dell’ambiente as a Cloud Service dall’AEM possono in seguito creare credenziali per account tecnici aggiuntivi. Questa funzionalità è utile quando diverse API hanno requisiti di accesso diversi. Ad esempio, lettura e scrittura.
+Gli utenti con il ruolo Amministratore dell’ambiente AEM as a Cloud Service possono in seguito creare credenziali per account tecnici aggiuntivi. Questa funzionalità è utile quando diverse API hanno requisiti di accesso diversi. Ad esempio, lettura e scrittura.
 
 >[!NOTE]
 >
@@ -61,17 +61,17 @@ Gli utenti con il ruolo Amministratore dell’ambiente as a Cloud Service dall�
 
 >[!IMPORTANT]
 >
->Un amministratore dell’organizzazione IMS (in genere lo stesso utente che ha eseguito il provisioning dell’ambiente tramite Cloud Manager), che è anche membro del profilo di prodotto Utenti AEM o Amministratori AEM su AEM Author, deve prima accedere a Console sviluppatori. Quindi, fai clic su **Crea nuovo account tecnico** le credenziali che devono essere generate e successivamente recuperate da un utente con autorizzazioni di amministratore per l’ambiente AEM as a Cloud Service. Se l’amministratore dell’organizzazione IMS non ha ancora creato l’account tecnico, viene visualizzato un messaggio per informare che è necessario il ruolo di amministratore dell’organizzazione IMS.
+>Un amministratore dell’organizzazione IMS (in genere lo stesso utente che ha eseguito il provisioning dell’ambiente tramite Cloud Manager), che è anche membro del profilo di prodotto Utenti AEM o Amministratori AEM su AEM Author, deve prima accedere a Developer Console. Quindi, fai clic su **Crea nuovo account tecnico** per le credenziali da generare e recuperare in seguito da un utente con autorizzazioni di amministratore per l&#39;ambiente AEM as a Cloud Service. Se l’amministratore dell’organizzazione IMS non ha ancora creato l’account tecnico, viene visualizzato un messaggio per informare che è necessario il ruolo di amministratore dell’organizzazione IMS.
 
 ### Installare le credenziali del servizio AEM su un server non AEM {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-L’applicazione che effettua chiamate all’AEM dovrebbe poter accedere alle credenziali per l’AEM as a Cloud Service, trattandolo come un segreto.
+L’applicazione che effettua chiamate all’AEM deve essere in grado di accedere alle credenziali per AEM as a Cloud Service, trattandola come un segreto.
 
 ### Generare un token JWT e scambiarlo con un token di accesso {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
 Utilizza le credenziali per creare un token JWT in una chiamata al servizio IMS di Adobe per recuperare un token di accesso, valido per 24 ore.
 
-Le credenziali del servizio CS AEM possono essere scambiate con un token di accesso utilizzando le librerie client progettate a questo scopo. Le librerie client sono disponibili da [Archivio GitHub pubblico di Adobe](https://github.com/adobe/aemcs-api-client-lib), che contiene orientamenti più dettagliati e informazioni aggiornate.
+Le credenziali del servizio CS AEM possono essere scambiate con un token di accesso utilizzando le librerie client progettate a questo scopo. Le librerie client sono disponibili dall&#39;archivio GitHub pubblico di [Adobe](https://github.com/adobe/aemcs-api-client-lib), che contiene indicazioni più dettagliate e informazioni più recenti.
 
 ```
 /*jshint node:true */
@@ -100,7 +100,7 @@ Il token di accesso definisce quando scade, in genere 24 ore. Nell’archivio Gi
 
 ### Chiamata dell&#39;API AEM {#calling-the-aem-api}
 
-Effettua le chiamate API server-to-server appropriate a un ambiente as a Cloud Service AEM, incluso il token di accesso nell’intestazione. Quindi, per l’intestazione &quot;Authorization&quot;, utilizza il valore `"Bearer <access_token>"`. Ad esempio, utilizzando `curl`:
+Effettua le chiamate API server-to-server appropriate a un ambiente AEM as a Cloud Service, incluso il token di accesso nell’intestazione. Per l&#39;intestazione &quot;Authorization&quot;, utilizzare il valore `"Bearer <access_token>"`. Ad esempio, utilizzando `curl`:
 
 ```curlc
 curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
@@ -110,10 +110,10 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 Innanzitutto, è necessario creare un nuovo profilo di prodotto in Adobe Admin Console.
 
-1. Vai a Adobe Admin Console all’indirizzo [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/).
-1. Premere il tasto **Gestisci** collegamento sotto **Prodotti e servizi** a sinistra.
+1. Vai al Adobe Admin Console all&#39;indirizzo [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/).
+1. Premi il collegamento **Gestisci** nella colonna **Prodotti e servizi** a sinistra.
 1. Seleziona **AEM as a Cloud Service**.
-1. Premere il tasto **Nuovo profilo** pulsante.
+1. Premere il pulsante **Nuovo profilo**.
 
    ![Nuovo profilo](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
 
@@ -122,11 +122,11 @@ Innanzitutto, è necessario creare un nuovo profilo di prodotto in Adobe Admin C
    ![Salva profilo](/help/implementing/developing/introduction/assets/s2s-saveprofile.png)
 
 1. Selezionare il profilo creato dall&#39;elenco dei profili.
-1. Seleziona **Aggiungi utente**.
+1. Selezionare **Aggiungi utente**.
 
    ![Aggiungi utente](/help/implementing/developing/introduction/assets/s2s-addusers.png)
 
-1. Aggiungi l’account tecnico creato (in questo caso `84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`) e fai clic su **Salva**.
+1. Aggiungi l&#39;account tecnico creato (in questo caso `84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`) e fai clic su **Salva**.
 
    ![Aggiungi account tecnico](/help/implementing/developing/introduction/assets/s2s-addtechaccount.png)
 
@@ -135,17 +135,17 @@ Innanzitutto, è necessario creare un nuovo profilo di prodotto in Adobe Admin C
    `curl -H "Authorization: Bearer <access_token>" https://author-pXXXXX-eXXXXX.adobeaemcloud.net/content/dam.json `
 
 
-Dopo aver effettuato la chiamata API, il profilo di prodotto viene visualizzato come gruppo di utenti nell’istanza di authoring as a Cloud Service dell’AEM, con l’account tecnico appropriato come membro di tale gruppo.
+Dopo aver eseguito la chiamata API, il profilo di prodotto viene visualizzato come gruppo di utenti nell’istanza di authoring di AEM as a Cloud Service, con l’account tecnico appropriato come membro di tale gruppo.
 
 Per verificare queste informazioni, eseguire le operazioni seguenti:
 
 1. Accedi all’istanza di authoring.
-1. Vai a **Strumenti** > **Sicurezza**, quindi fare clic su **Gruppi** Card.
+1. Vai a **Strumenti** > **Sicurezza**, quindi fai clic sulla scheda **Gruppi**.
 1. Individua il nome del profilo creato nell’elenco dei gruppi e fai clic su di esso:
 
    ![Profilo gruppo](/help/implementing/developing/introduction/assets/s2s-groupprofile.png)
 
-1. Nella finestra seguente, passa a **Membri** e verificare se l’account tecnico è elencato correttamente:
+1. Nella finestra seguente, passa alla scheda **Membri** e verifica che l&#39;account tecnico sia elencato correttamente:
 
    ![Scheda Membri](/help/implementing/developing/introduction/assets/s2s-techaccountmembers.png)
 
@@ -154,19 +154,19 @@ In alternativa, puoi anche verificare che l’account tecnico sia presente nell�
 
 1. Vai a **Strumenti** > **Sicurezza** > **Utenti**.
 1. Controlla che l’account tecnico sia l’elenco degli utenti e selezionalo.
-1. Fai clic su **Gruppi** in modo da poter verificare che l’utente faccia parte del gruppo che corrisponde al tuo profilo di prodotto. Questo utente è anche membro di una manciata di altri gruppi, inclusi i collaboratori:
+1. Fai clic sulla scheda **Gruppi** per verificare che l&#39;utente appartenga al gruppo corrispondente al tuo profilo di prodotto. Questo utente è anche membro di una manciata di altri gruppi, inclusi i collaboratori:
 
    ![Appartenenza al gruppo](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
 
 >[!NOTE]
 >
->Prima della metà del 2023, prima che fosse possibile creare più credenziali, i clienti non venivano guidati a creare un profilo di prodotto in Adobe Admin Console. Di conseguenza, il conto tecnico non è stato associato ad un gruppo diverso dai &quot;contributori&quot; nell’istanza as a Cloud Service dell’AEM. Per motivi di coerenza, è consigliabile creare un profilo di prodotto in Adobe Admin Console come descritto in precedenza per questo account tecnico e aggiungere l’account tecnico esistente a tale gruppo.
+>Prima della metà del 2023, prima che fosse possibile creare più credenziali, i clienti non venivano guidati a creare un profilo di prodotto in Adobe Admin Console. Di conseguenza, l’account tecnico non era associato a un gruppo diverso da &quot;Collaboratori&quot; nell’istanza di AEM as a Cloud Service. Per motivi di coerenza, è consigliabile creare un profilo di prodotto in Adobe Admin Console come descritto in precedenza per questo account tecnico e aggiungere l’account tecnico esistente a tale gruppo.
 
 <u>**Impostare le autorizzazioni di gruppo appropriate**</u>
 
 Infine, configura il gruppo con le autorizzazioni appropriate necessarie in modo da poter richiamare o bloccare le API in modo appropriato.
 
-1. Accedi all’istanza di authoring appropriata e passa a **Impostazioni** > **Sicurezza** > **Autorizzazioni**
+1. Accedi all&#39;istanza di authoring appropriata e passa a **Impostazioni** > **Sicurezza** > **Autorizzazioni**
 1. Cerca il nome del gruppo corrispondente al profilo di prodotto nel riquadro a sinistra (in questo caso, API di sola lettura) e selezionalo:
 
    ![Cerca gruppo](/help/implementing/developing/introduction/assets/s2s-searchforgroup.png)
@@ -177,7 +177,7 @@ Infine, configura il gruppo con le autorizzazioni appropriate necessarie in modo
 
 1. Modifica le autorizzazioni in modo appropriato e fai clic su **Salva**
 
-   ![Conferma la modifica delle autorizzazioni](/help/implementing/developing/introduction/assets/s2s-confirmeditpermissions.png)
+   ![Conferma modifica autorizzazioni](/help/implementing/developing/introduction/assets/s2s-confirmeditpermissions.png)
 
 >[!INFO]
 >
@@ -185,15 +185,15 @@ Infine, configura il gruppo con le autorizzazioni appropriate necessarie in modo
 
 ## Flusso per sviluppatori {#developer-flow}
 
-Gli sviluppatori probabilmente desiderano testare utilizzando un’istanza di sviluppo della loro applicazione non AEM (in esecuzione sul loro laptop o ospitata) che effettua richieste a un ambiente di sviluppo as a Cloud Service AEM di sviluppo. Tuttavia, poiché gli sviluppatori non dispongono necessariamente delle autorizzazioni per il ruolo di amministratore IMS, Adobe non può presumere che possano generare il Bearer JWT descritto nel normale flusso server-to-server. Pertanto, Adobe fornisce a uno sviluppatore un meccanismo che consente di generare direttamente un token di accesso che può essere utilizzato nelle richieste agli ambienti su AEM as a Cloud Service a cui ha accesso.
+È probabile che gli sviluppatori desiderino eseguire il test utilizzando un’istanza di sviluppo della loro applicazione non AEM (in esecuzione sul laptop o in hosting) che invia richieste a un ambiente di sviluppo AEM as a Cloud Service. Tuttavia, poiché gli sviluppatori non dispongono necessariamente delle autorizzazioni per il ruolo di amministratore IMS, Adobe non può presumere che possano generare il Bearer JWT descritto nel normale flusso server-to-server. Pertanto, Adobe fornisce a uno sviluppatore un meccanismo per generare direttamente un token di accesso che può essere utilizzato nelle richieste agli ambienti su AEM as a Cloud Service a cui ha accesso.
 
-Consulta la [Documentazione sulle linee guida per sviluppatori](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) per informazioni sulle autorizzazioni necessarie per utilizzare la console per sviluppatori AEM as a Cloud Service.
+Per informazioni sulle autorizzazioni necessarie per utilizzare la console per sviluppatori di AEM as a Cloud Service, consulta la [documentazione sulle linee guida per sviluppatori](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
 >[!NOTE]
 >
 >Il token di accesso per lo sviluppo locale è valido per un massimo di 24 ore, al termine delle quali deve essere rigenerato con lo stesso metodo.
 
-Gli sviluppatori possono utilizzare questo token per effettuare chiamate dall’applicazione di test non AEM a un ambiente as a Cloud Service AEM. In genere, lo sviluppatore utilizza questo token con l’applicazione non AEM sul proprio laptop. Inoltre, AEM as a Cloud è in genere un ambiente non di produzione.
+Gli sviluppatori possono utilizzare questo token per effettuare chiamate dall’applicazione di test non AEM a un ambiente AEM as a Cloud Service. In genere, lo sviluppatore utilizza questo token con l’applicazione non AEM sul proprio laptop. Inoltre, AEM as a Cloud è in genere un ambiente non di produzione.
 
 Il flusso per sviluppatori prevede i seguenti passaggi:
 
@@ -205,48 +205,48 @@ Gli sviluppatori possono anche effettuare chiamate API a un progetto AEM in esec
 ### Generazione del token di accesso {#generating-the-access-token}
 
 1. Vai a **Token locale** in **Integrazioni**
-1. Clic **Ottieni token di sviluppo locale** nella Console per sviluppatori, in modo da poter generare un token di accesso.
+1. Fai clic su **Ottieni token di sviluppo locale** in Developer Console per generare un token di accesso.
 
 ### Chiamare l’applicazione AEM con un token di accesso {#call-the-aem-application-with-an-access-token}
 
-Effettuare le chiamate API server-to-server appropriate dall’applicazione non AEM a un ambiente as a Cloud Service AEM, incluso il token di accesso nell’intestazione. Quindi, per l’intestazione &quot;Authorization&quot;, utilizza il valore `"Bearer <access_token>"`.
+Effettua le chiamate API server-to-server appropriate dall’applicazione non AEM a un ambiente AEM as a Cloud Service, incluso il token di accesso nell’intestazione. Per l&#39;intestazione &quot;Authorization&quot;, utilizzare il valore `"Bearer <access_token>"`.
 
 ## Aggiorna credenziali {#refresh-credentials}
 
-Per impostazione predefinita, le credenziali sull’as a Cloud Service AEM scadono dopo un anno. Per garantire la continuità del servizio, gli sviluppatori possono aggiornare le credenziali ed estenderne la disponibilità per un altro anno.
+Per impostazione predefinita, le credenziali su AEM as a Cloud Service scadono dopo un anno. Per garantire la continuità del servizio, gli sviluppatori possono aggiornare le credenziali ed estenderne la disponibilità per un altro anno.
 
 Per ottenere questa estensione di aggiornamento, effettua le seguenti operazioni:
 
-* Utilizza il **Aggiungi certificato** pulsante sotto **Integrazioni** - **Account tecnici** nella Console per sviluppatori, come illustrato di seguito
+* Utilizza il pulsante **Aggiungi certificato** in **Integrazioni** - **Account tecnici** in Developer Console, come illustrato di seguito
 
   ![Aggiornamento credenziali](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
 * Dopo aver premuto il pulsante, viene generato un set di credenziali che include un nuovo certificato. Installa le nuove credenziali sul server off-AEM e assicurati che la connettività sia come previsto, senza rimuovere le vecchie credenziali.
 * Assicurati che vengano utilizzate le nuove credenziali invece di quelle precedenti durante la generazione del token di accesso.
-* Facoltativamente, revocare (e quindi eliminare) il certificato precedente in modo che non possa più essere utilizzato per l’autenticazione con AEM as a Cloud Service.
+* Facoltativamente, revoca (e quindi elimina) il certificato precedente in modo che non possa più essere utilizzato per l’autenticazione con AEM as a Cloud Service.
 
 ## Revoca credenziali {#credentials-revocation}
 
 Se la chiave privata è compromessa, è necessario creare le credenziali con un nuovo certificato e una nuova chiave privata. Dopo che l&#39;applicazione utilizza le nuove credenziali per generare i token di accesso, è possibile revocare ed eliminare i vecchi certificati eseguendo le operazioni seguenti:
 
-1. Aggiungi innanzitutto la nuova chiave. Questa chiave genera le credenziali con una nuova chiave privata e un nuovo certificato. La nuova chiave privata è contrassegnata nell’interfaccia utente come **corrente** e viene, quindi, utilizzato per tutte le nuove credenziali di questo account tecnico in futuro. Le credenziali associate alle chiavi private precedenti sono ancora valide fino alla revoca. Per ottenere questa revoca, selezionare i tre punti (**...**) nell&#39;account tecnico corrente, quindi seleziona **Aggiungi nuova chiave privata**:
+1. Aggiungi innanzitutto la nuova chiave. Questa chiave genera le credenziali con una nuova chiave privata e un nuovo certificato. La nuova chiave privata è contrassegnata nell&#39;interfaccia utente come **corrente** ed è quindi utilizzata per tutte le nuove credenziali per questo account tecnico in futuro. Le credenziali associate alle chiavi private precedenti sono ancora valide fino alla revoca. Per ottenere questa revoca, seleziona i tre punti (**...**) nell&#39;account tecnico corrente, quindi seleziona **Aggiungi nuova chiave privata**:
 
    ![Aggiungi nuova chiave privata](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
 1. Seleziona **Aggiungi** al prompt seguente:
 
-   ![Conferma aggiunta nuova chiave privata](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
+   ![Conferma l&#39;aggiunta della nuova chiave privata](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   Viene visualizzata una nuova scheda Sfoglia con le nuove credenziali e l’interfaccia utente viene aggiornata per mostrare entrambe le chiavi private con la nuova contrassegnata come **corrente**:
+   Viene aperta una nuova scheda Sfoglia con le nuove credenziali e l&#39;interfaccia utente viene aggiornata per mostrare entrambe le chiavi private con la nuova contrassegnata come **corrente**:
 
-   ![Chiavi private nell’interfaccia utente](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
+   ![Chiavi private nell&#39;interfaccia utente](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 
-1. Installa le nuove credenziali sul server non AEM e assicurati che la connettività funzioni come previsto. Consulta [Sezione Flusso da server a server](#the-server-to-server-flow) per i dettagli.
-1. Revoca il certificato precedente selezionando i tre punti (**...**) a destra del certificato e selezionando **Revoca**:
+1. Installa le nuove credenziali sul server non AEM e assicurati che la connettività funzioni come previsto. Per informazioni dettagliate, vedere la [sezione Flusso da server a server](#the-server-to-server-flow).
+1. Revocare il certificato precedente selezionando i tre punti (**...**) a destra del certificato e selezionando **Revoca**:
 
    ![Revoca certificato](/help/implementing/developing/introduction/assets/s2s-revokecert.png)
 
-   Quindi, confermare la revoca nel seguente prompt premendo il tasto **Revoca** pulsante:
+   Quindi, confermare la revoca nel seguente prompt premendo il pulsante **Revoca**:
 
    ![Revoca conferma certificato](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
 

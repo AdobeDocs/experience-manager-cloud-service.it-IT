@@ -20,7 +20,7 @@ Queste linee guida riepilogano le best practice consigliate per l’impostazione
 Per aiutarti a imparare a usare al meglio:
 
 * [Cos’è headless?](/help/headless/what-is-headless.md)
-* Panoramica dei diversi contesti del AEM [Architettura](/help/headless/deployment/architecture.md)
+* Panoramica dei vari ambienti nell&#39;architettura [dell&#39;AEM](/help/headless/deployment/architecture.md)
 
 ## Configurazione {#setup}
 
@@ -48,12 +48,12 @@ Per:
 * Test
 * Produzione
 
-### Memorizzazione in cache di AEM Dispatcher {#dispatcher-caching}
+### Memorizzazione in cache di Dispatcher AEM {#dispatcher-caching}
 
 >[!NOTE]
->Se il caching in Dispatcher è abilitato, il [Configurazione CORS](#cors-setup) non è necessario, quindi può essere ignorato.
+>Se il caching in Dispatcher è abilitato, [Configurazione CORS](#cors-setup) non è necessario e può quindi essere ignorato.
 
-La memorizzazione nella cache delle query persistenti non è abilitata per impostazione predefinita in Dispatcher. L’abilitazione predefinita non è possibile perché i clienti che utilizzano CORS (Cross-Origin Resource Sharing) con più origini devono rivedere, e possibilmente aggiornare, la propria configurazione di Dispatcher.
+La memorizzazione nella cache delle query persistenti non è abilitata per impostazione predefinita in Dispatcher. L’abilitazione predefinita non è possibile perché i clienti che utilizzano CORS (Cross-Origin Resource Sharing) con più origini devono rivedere, e possibilmente aggiornare, la configurazione di Dispatcher.
 
 #### Dettagli {#details-dispatcher-caching}
 
@@ -68,7 +68,7 @@ Dispatcher è in genere configurato per:
 ### Configurazione CORS {#cors-setup}
 
 >[!NOTE]
->Se il caching in [Dispatcher AEM](#dispatcher-caching) è attivato, la configurazione CORS non è necessaria e quindi questa sezione può essere ignorata.
+>Se è abilitata la memorizzazione nella cache in [AEM Dispatcher](#dispatcher-caching), la configurazione CORS non è necessaria e quindi questa sezione può essere ignorata.
 
 Per accedere all’endpoint GraphQL, è necessario configurare un criterio CORS e aggiungerlo a un progetto AEM distribuito all’AEM tramite Cloud Manager. A questo scopo, aggiungi un file di configurazione OSGi CORS appropriato per gli endpoint desiderati.
 
@@ -147,7 +147,7 @@ AEM GraphQL viene utilizzato per recuperare informazioni dai frammenti di conten
 
 * [Creare una configurazione](/help/headless/setup/create-configuration.md)
 * [Creare un modello per frammenti di contenuto](/help/headless/setup/create-content-model.md)
-* [Creare una cartella di risorse](/help/headless/setup/create-assets-folder.md)
+* [Creare una cartella Assets](/help/headless/setup/create-assets-folder.md)
 * [Creare e modificare i frammenti di contenuto](/help/headless/setup/create-content-fragment.md)
 
 #### Ambienti {#eenvironments-content-fragments}
@@ -176,7 +176,7 @@ Queste linee guida servono a prevenire problemi di prestazioni con le query Grap
 
 >[!NOTE]
 >
->Le linee guida per l’ottimizzazione riguardano la configurazione della cache, già trattata in [Configurazione](#setup).
+>Le linee guida per l&#39;ottimizzazione coprono la configurazione della cache, già trattata in [Configurazione](#setup).
 
 ### Accedere a GraphQL dalle app {#access-graphql-from-your-apps}
 
@@ -184,9 +184,9 @@ I CMS headless AEM offrono agli sviluppatori la libertà di creare e distribuire
 
 #### Dettagli {#details-your-apps}
 
-* [Installare e utilizzare l’SDK dell’AEM per lo sviluppo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=it)
-* [Risorse per sviluppatori AEM headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* Esempi, tra cui [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html), tra gli altri
+* [Installa e utilizza l&#39;SDK AEM per lo sviluppo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=it)
+* [Risorse per sviluppatori headless AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
+* Esempi, tra cui [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html)
 
 #### Ambienti {#environments-your-apps}
 
@@ -207,4 +207,4 @@ Per ulteriori dettagli sul GraphQL dell’AEM e sui frammenti di contenuto, vedi
 
 * [API GraphQL AEM per l’utilizzo con Frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
 * [Utilizzo dell’IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
-* [Risorse per sviluppatori AEM headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
+* [Risorse per sviluppatori headless AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)

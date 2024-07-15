@@ -83,7 +83,7 @@ Per gli utenti che non utilizzano scelte rapide da tastiera o che hanno determin
 
 ## Scelte rapide da tastiera per l’Editor pagina {#keyboard-shortcuts-for-the-page-editor}
 
-AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono utilizzabili per le console, altre per [modifica delle pagine](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
+AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono applicabili all&#39;uso delle console, altre alla [modifica delle pagine](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
 
 ## Scelte rapide da tastiera per la Console Frammenti di contenuto {#keyboard-shortcuts-for-the-content-fragments-console}
 

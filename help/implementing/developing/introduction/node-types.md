@@ -18,6 +18,6 @@ Poiché l’AEM si basa su Sling e utilizza un archivio JCR, i tipi di nodo offe
 * [Tipi di nodo JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Tipi di nodo Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-Oltre a questi. L’AEM fornisce una serie di tipi di nodo personalizzati. Per l’elenco più recente con tutte le proprietà associate, [utilizzare CRXDE](/help/implementing/developing/tools/crxde.md) per sfogliare il seguente percorso nell’archivio AEM:
+Oltre a questi. L’AEM fornisce una serie di tipi di nodo personalizzati. Per l&#39;elenco più recente con tutte le proprietà associate, [utilizzare CRXDE](/help/implementing/developing/tools/crxde.md) per sfogliare il seguente percorso nell&#39;archivio AEM:
 
 `/jcr:system/jcr:nodeTypes`

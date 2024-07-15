@@ -13,9 +13,9 @@ ht-degree: 5%
 
 # Componenti di configurazione dei frammenti di contenuto per il rendering{#content-fragments-configuring-components-for-rendering}
 
-Ce ne sono diversi [servizi avanzati](#definition-of-advanced-services-that-need-configuration) relative al rendering dei frammenti di contenuto. Per utilizzare questi servizi, i tipi di risorse di tali componenti devono farsi conoscere nel framework dei frammenti di contenuto.
+Esistono diversi [servizi avanzati](#definition-of-advanced-services-that-need-configuration) relativi al rendering dei frammenti di contenuto. Per utilizzare questi servizi, i tipi di risorse di tali componenti devono farsi conoscere nel framework dei frammenti di contenuto.
 
-Questa operazione viene eseguita configurando [Servizio OSGi - Configurazione del componente Frammento di contenuto](#osgi-service-content-fragment-component-configuration).
+Questa operazione viene eseguita configurando [Servizio OSGi - Configurazione componente Frammento di contenuto](#osgi-service-content-fragment-component-configuration).
 
 Queste informazioni sono necessarie quando:
 
@@ -26,11 +26,11 @@ L’Adobe consiglia di utilizzare i Componenti core.
 
 >[!CAUTION]
 >
->* **Se non è necessario [servizi avanzati](#definition-of-advanced-services-that-need-configuration)** come descritto di seguito, puoi ignorare questa configurazione.
+>* **Se non hai bisogno dei [servizi avanzati](#definition-of-advanced-services-that-need-configuration)** descritti di seguito, puoi ignorare questa configurazione.
 >
->* **Quando estendi o utilizzi i componenti predefiniti**, si sconsiglia di modificare la configurazione OSGi.
+>* **Quando si estendono o si utilizzano i componenti predefiniti**, non è consigliabile modificare la configurazione OSGi.
 >
->* **Puoi scrivere da zero un componente che utilizza solo l’API Frammenti di contenuto, senza servizi avanzati**. Tuttavia, in questo caso, dovrai sviluppare il componente in modo che gestisca l’elaborazione appropriata.
+>* **È possibile scrivere un componente da zero che utilizza solo l&#39;API Frammenti di contenuto, senza servizi avanzati**. Tuttavia, in questo caso, dovrai sviluppare il componente in modo che gestisca l’elaborazione appropriata.
 >
 >Pertanto, si consiglia di utilizzare i Componenti core.
 
@@ -40,8 +40,8 @@ I servizi che richiedono la registrazione di un componente sono:
 
 * Determinare correttamente le dipendenze durante la pubblicazione (ovvero, assicurarsi che frammenti e modelli possano essere pubblicati automaticamente con una pagina se sono stati modificati dopo l’ultima pubblicazione).
 * Supporto per frammenti di contenuto nella ricerca full-text.
-* La gestione/gestione di *contenuto intermedio.*
-* La gestione/gestione di *risorse multimediali diverse.*
+* Gestione/gestione di *contenuto intermedio.*
+* Gestione di *risorse multimediali miste.*
 * Svuotamento del Dispatcher per i frammenti di riferimento (se viene ripubblicata una pagina contenente un frammento).
 * Utilizzo del rendering basato su paragrafi.
 
@@ -55,11 +55,11 @@ La configurazione deve essere associata al servizio OSGi **Configurazione del co
 
 >[!NOTE]
 >
->Consulta [Configurazione OSGi](/help/implementing/deploying/overview.md#osgi-configuration) per ulteriori dettagli.
+>Per ulteriori dettagli, consulta [Configurazione OSGi](/help/implementing/deploying/overview.md#osgi-configuration).
 
 Ad esempio:
 
-![Configurazione OSGi: configurazione del componente Frammento di contenuto](assets/cf-component-configuration-osgi.png)
+![Configurazione del componente per frammenti di contenuto della configurazione OSGi](assets/cf-component-configuration-osgi.png)
 
 La configurazione OSGi è:
 
@@ -80,7 +80,7 @@ La configurazione OSGi è:
   <tr>
    <td><strong>Proprietà di riferimento</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>Nome della proprietà che contiene il riferimento al frammento; ad esempio, <code>fragmentPath</code> o <code>fileReference</code></td>
+   <td>Nome della proprietà che contiene il riferimento al frammento, ad esempio <code>fragmentPath</code> o <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Proprietà elemento/i</strong></td>
@@ -95,7 +95,7 @@ La configurazione OSGi è:
  </tbody>
 </table>
 
-Per alcune funzionalità il componente dovrà rispettare convenzioni predefinite. La tabella seguente descrive le proprietà che devono essere definite dal componente per ciascun paragrafo (ovvero `jcr:paragraph` per ogni istanza di componente) in modo che i servizi possano rilevarli ed elaborarli correttamente.
+Per alcune funzionalità il componente dovrà rispettare convenzioni predefinite. La tabella seguente descrive le proprietà che devono essere definite dal componente per ogni paragrafo (ovvero `jcr:paragraph` per ogni istanza del componente) in modo che i servizi possano rilevarle ed elaborarle correttamente.
 
 <table>
  <thead>
@@ -107,7 +107,7 @@ Per alcune funzionalità il componente dovrà rispettare convenzioni predefinite
  <tbody>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>Una proprietà stringa che definisce come devono essere generati i paragrafi se in <em>modalità di rendering di un singolo elemento</em>.</p> <p>Valori:</p>
+   <td><p>Proprietà stringa che definisce il modo in cui devono essere generati i paragrafi se in <em>modalità rendering elemento singolo</em>.</p> <p>Valori:</p>
     <ul>
      <li><code>all</code> : per eseguire il rendering di tutti i paragrafi</li>
      <li><code>range</code> : per riprodurre l’intervallo di paragrafi fornito da <code>paragraphRange</code></li>
@@ -115,7 +115,7 @@ Per alcune funzionalità il componente dovrà rispettare convenzioni predefinite
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>Una proprietà stringa che definisce l’intervallo di paragrafi da restituire se in <em>modalità di rendering di un singolo elemento</em>.</p> <p>Formato:</p>
+   <td><p>Proprietà stringa che definisce l'intervallo di paragrafi da restituire se in <em>modalità rendering elemento singolo</em>.</p> <p>Formato:</p>
     <ul>
      <li><code>1</code> o <code>1-3</code> o <code>1-3;6;7-8</code> o <code>*-3;5-*</code>
      <ul>
@@ -129,7 +129,7 @@ Per alcune funzionalità il componente dovrà rispettare convenzioni predefinite
   </tr>
   <tr>
    <td><code>paragraphHeadings</code></td>
-   <td>Una proprietà booleana che definisce se le intestazioni (ad esempio, <code>h1</code>, <code>h2</code>, <code>h3</code>) vengono conteggiati come paragrafi (<code>true</code>) o meno (<code>false</code>)</td>
+   <td>Proprietà booleana che definisce se le intestazioni (ad esempio, <code>h1</code>, <code>h2</code>, <code>h3</code>) vengono conteggiate come paragrafi (<code>true</code>) o meno (<code>false</code>)</td>
   </tr>
  </tbody>
 </table>

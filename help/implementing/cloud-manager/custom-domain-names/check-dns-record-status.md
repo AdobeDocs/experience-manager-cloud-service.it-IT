@@ -20,7 +20,7 @@ Cloud Manager consente di determinare se la risoluzione del nome di dominio avvi
 
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 
-1. Clic **Impostazioni dominio** nel pannello di navigazione a sinistra.
+1. Fai clic su **Impostazioni dominio** nel pannello di navigazione a sinistra.
 
 1. Fai clic sull’icona **Stato** del nome di dominio.
 

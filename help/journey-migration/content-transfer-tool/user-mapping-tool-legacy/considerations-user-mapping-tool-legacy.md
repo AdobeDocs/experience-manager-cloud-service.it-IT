@@ -17,13 +17,13 @@ ht-degree: 1%
 
 >[!INFO]
 >
->Questa documentazione fa riferimento a una versione obsoleta dello strumento. Per ulteriori informazioni sull’ultima versione, consulta [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Questa documentazione fa riferimento a una versione obsoleta dello strumento. Per ulteriori informazioni sulla versione più recente, vedere [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ## Casi eccezionali {#exceptional-cases}
 
 Vengono registrati i seguenti casi specifici:
 
-1. Se un utente non ha un indirizzo e-mail nel `profile/email` campo di loro *jcr* dell&#39;utente o del gruppo in questione viene migrato ma non mappato. Questa regola si applica anche se l’indirizzo e-mail viene utilizzato come nome utente per l’accesso.
+1. Se un utente non dispone di un indirizzo e-mail nel campo `profile/email` del nodo *jcr*, l&#39;utente o il gruppo in questione viene migrato ma non mappato. Questa regola si applica anche se l’indirizzo e-mail viene utilizzato come nome utente per l’accesso.
 
 1. Se non viene trovata un’e-mail nel sistema Identity Management System (IMS) di Adobe per l’ID organizzazione utilizzato (o se non è possibile recuperare l’ID IMS), viene eseguita la migrazione dell’utente o del gruppo, ma non viene eseguito il mapping.
 
@@ -35,7 +35,7 @@ Vengono registrati i seguenti casi specifici:
 
 ## Considerazioni aggiuntive {#additional-considerations}
 
-* Se l&#39;impostazione **Cancella i contenuti esistenti nell’istanza Cloud prima dell’acquisizione** è impostato, gli utenti già trasferiti nell’istanza di Cloud Service vengono eliminati. Viene eliminato anche l’intero archivio esistente e viene creato un nuovo archivio in cui viene acquisito il contenuto. Questa azione reimposta anche tutte le impostazioni, incluse le autorizzazioni sull’istanza del Cloud Service target ed è true per un utente amministratore aggiunto al **amministratori** gruppo. L’utente amministratore deve essere letto su **amministratori** gruppo per recuperare il token di accesso per CTT.
+* Se l&#39;impostazione **Cancella contenuto esistente nell&#39;istanza Cloud prima dell&#39;acquisizione** è impostata, gli utenti già trasferiti nell&#39;istanza di Cloud Service vengono eliminati. Viene eliminato anche l’intero archivio esistente e viene creato un nuovo archivio in cui viene acquisito il contenuto. Questa azione reimposta anche tutte le impostazioni, incluse le autorizzazioni sull&#39;istanza del Cloud Service di destinazione, ed è true per un utente amministratore aggiunto al gruppo **amministratori**. L&#39;utente amministratore deve essere letto al gruppo **amministratori** per recuperare il token di accesso per CTT.
 
 * L’Adobe consiglia di rimuovere qualsiasi utente esistente dall’istanza AEM del Cloud Service di destinazione prima di eseguire CTT con Mapping utente. Questa azione è necessaria per evitare conflitti tra la migrazione degli utenti dall’istanza AEM di origine all’istanza AEM di destinazione. Possono verificarsi conflitti durante l’acquisizione se lo stesso utente esiste nell’istanza AEM di origine e nell’istanza AEM di destinazione.
 

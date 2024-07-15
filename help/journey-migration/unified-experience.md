@@ -19,7 +19,7 @@ Adobe ha sviluppato strumenti per automatizzare alcune delle attività di refact
 
 Il plug-in Unified Experience offre i seguenti vantaggi:
 
-* Unisce in un unico strumento gli strumenti che lavorano sul codice sorgente `node.js` applicazione esposta come `aio-cli ` plug-in per fornire all’utente un’esperienza utente coerente.
+* Unifica gli strumenti che lavorano sul codice sorgente in un&#39;applicazione `node.js` esposta come plug-in `aio-cli ` per fornire all&#39;utente un&#39;esperienza utente coerente.
 
 * Esegue tutti gli strumenti tramite un singolo comando, fornendo al contempo la flessibilità necessaria per eseguire strumenti specifici in base alle esigenze.
 
@@ -27,7 +27,7 @@ Il plug-in Unified Experience offre i seguenti vantaggi:
 
 ## Informazioni sul plug-in {#understanding-plugin}
 
-Il `aio-cli-plugin-aem-cloud-service-migration` Il plug-in è costituito da due parti principali:
+Il plug-in `aio-cli-plugin-aem-cloud-service-migration` è costituito da due parti principali:
 
 * **Interfaccia utente**
 
@@ -44,7 +44,7 @@ Il `aio-cli-plugin-aem-cloud-service-migration` Il plug-in è costituito da due 
 
 ## Disponibilità {#availability}
 
-Consulta [Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) dove puoi scoprire l’utilizzo e come contribuire a questo codice plug-in open source in GitHub.
+Consulta [Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) dove puoi scoprire l&#39;utilizzo e come contribuire a questo codice plug-in open-source in GitHub.
 
 >[!NOTE]
 >Attualmente il plug-in è integrato con AEM Dispatcher Converter e Repository Modernizer.

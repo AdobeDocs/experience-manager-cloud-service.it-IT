@@ -44,10 +44,10 @@ Per cercare e filtrare le risorse:
 
    ![Ricerca per posizione](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. Se necessario, puoi rimuovere il filtro di posizione (seleziona **X** sul filtro che desideri rimuovere) per eseguire ricerche su tutte le console/i tipi di risorse.
+1. Se necessario, è possibile rimuovere il filtro località (selezionare **X** sul filtro che si desidera rimuovere) per eseguire ricerche in tutte le console/i tipi di risorse.
 1. I risultati visualizzati vengono raggruppati in base alla console e al tipo di risorsa corrispondente.
 
-   Puoi selezionare una risorsa specifica (per ulteriori azioni) oppure approfondire la ricerca selezionando il tipo di risorsa richiesto, ad esempio: **Visualizza tutti i siti**:
+   È possibile selezionare una risorsa specifica (per ulteriori azioni) oppure eseguire il drill-down selezionando il tipo di risorsa richiesto, ad esempio **Visualizza tutti i siti**:
 
    ![Risultati di ricerca](/help/sites-cloud/authoring/assets/search-results.png)
 
@@ -62,7 +62,7 @@ Per cercare e filtrare le risorse:
    * Ricerche salvate
    * Directory di ricerca
    * Tag
-   * Criteri di ricerca, ad esempio Date modificate, Stato pubblicazione, Stato LiveCopy
+   * Criteri di ricerca, ad esempio Date modificate, Stato Publish, Stato LiveCopy
 
    >[!NOTE]
    >

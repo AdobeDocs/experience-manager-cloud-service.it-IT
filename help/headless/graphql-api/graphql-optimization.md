@@ -44,11 +44,11 @@ Consulta:
 
 Per l’ottimizzazione si possono utilizzare anche vari metodi di caching.
 
-#### Abilita caching del Dispatcher AEM {#enable-aem-dispatcher-caching}
+#### Abilita caching AEM Dispatcher {#enable-aem-dispatcher-caching}
 
 **Consiglio**
 
-[Dispatcher AEM](/help/implementing/dispatcher/overview.md) è la cache di primo livello all’interno del servizio AEM, prima della cache CDN.
+[AEM Dispatcher](/help/implementing/dispatcher/overview.md) è la cache di primo livello all&#39;interno del servizio AEM, prima della cache CDN.
 
 **Ulteriori riferimenti**
 
@@ -74,7 +74,7 @@ Consulta:
 
 Quando si utilizzano query GraphQL persistenti con una rete CDN, si consiglia di impostare intestazioni di controllo della cache HTTP appropriate.
 
-Ogni query persistente può avere un proprio set specifico di intestazioni di controllo cache. Le intestazioni possono essere impostate su [API GRAPHQL](/help/headless/graphql-api/content-fragments.md) o [IDE GraphiQL per AEM](/help/headless/graphql-api/graphiql-ide.md).
+Ogni query persistente può avere un proprio set specifico di intestazioni di controllo cache. Le intestazioni possono essere impostate su [API GraphQL](/help/headless/graphql-api/content-fragments.md) o [IDE GraphiQL AEM](/help/headless/graphql-api/graphiql-ide.md).
 
 **Ulteriori riferimenti**
 
@@ -110,7 +110,7 @@ AEM consente due approcci per ottimizzare le query GraphQL:
 
    * [Ordinamento](#use-graphql-sorting) non è direttamente correlato all’ottimizzazione, ma è correlato al paging
 
-Ogni approccio ha i propri casi d’uso e limitazioni. Questa sezione fornisce informazioni su Filtro e paging ibridi, insieme ad alcuni [best practice](#best-practices) da utilizzare nell’ottimizzazione delle query GraphQL.
+Ogni approccio ha i propri casi d’uso e limitazioni. Questa sezione fornisce informazioni su Filtro e paginazione ibridi, insieme ad alcune delle [best practice](#best-practices) per l&#39;ottimizzazione delle query GraphQL.
 
 #### Utilizzare il filtro ibrido AEM GraphQL {#use-aem-graphql-hybrid-filtering}
 
@@ -145,8 +145,8 @@ Il tempo di risposta di query complesse, con set di risultati di grandi dimensio
 
 GraphQL in AEM supporta due tipi di impaginazione:
 
-* [paginazione basata su limite/scostamento](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-Viene utilizzato per le query elenco; queste terminano con `List`ad esempio, `articleList`.
+* [paginazione basata su limite/offset](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
+Utilizzato per le query elenco; terminano con `List`; ad esempio, `articleList`.
 Per utilizzarlo, devi fornire la posizione del primo elemento da restituire (il `offset`) e il numero di elementi da restituire (il `limit`, o dimensioni della pagina).
 
 * [paginazione basata su cursore](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (rappresentato da `first` e `after`)
@@ -290,7 +290,7 @@ Una nidificazione approfondita può anche avere effetti negativi sulla governanc
 
 ### Non generare tutti i formati (elementi di testo su più righe) {#do-not-output-all-formats}
 
-AEM GraphQL può restituire il testo, creato nel **[Testo su più righe](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** tipo di dati, in più formati: Rich Text, Simple Text e Markdown.
+AEM GraphQL può restituire testo creato con il tipo di dati **[Testo su più righe](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** in più formati: Testo formattato, Testo semplice e Markdown.
 
 L’output di tutti e tre i formati aumenta la dimensione dell’output di testo in JSON di un fattore di tre. Questo, combinato con set di risultati generalmente grandi da query molto ampie, può produrre risposte JSON molto grandi che richiedono quindi molto tempo per il calcolo. È meglio limitare l’output solo ai formati di testo necessari per il rendering del contenuto.
 

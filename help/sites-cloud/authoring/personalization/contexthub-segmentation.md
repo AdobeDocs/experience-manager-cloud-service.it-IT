@@ -33,7 +33,7 @@ Per accedere ai segmenti, nella navigazione globale seleziona **Navigazione > Pe
 ## Editor segmento {#segment-editor}
 
 <!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-Il **Editor segmento** consente di modificare facilmente un segmento. Per modificare un segmento, selezionalo dall’elenco dei segmenti e fai clic sul pulsante **Modifica**.
+L&#39;**Editor segmenti** consente di modificare facilmente un segmento. Per modificare un segmento, selezionalo dall’elenco dei segmenti e fai clic sul pulsante **Modifica**.
 
 ![Editor segmento](../assets/contexthub-segment-editor.png)
 
@@ -91,11 +91,11 @@ Per definire il nuovo segmento:
 
 1. Dopo l’[accesso ai segmenti](#accessing-segments), [passa alla cartella](#organizing-segments) in cui desideri creare il segmento.
 
-1. Seleziona la **Crea** e seleziona **Crea segmento ContextHub**.
+1. Seleziona il pulsante **Crea** e seleziona **Crea segmento ContextHub**.
 
    ![Aggiungi segmento](../assets/contexthub-create-segment.png)
 
-1. In **Nuovo segmento ContextHub**, immetti un titolo per il segmento e un valore di incremento, se necessario, quindi seleziona **Crea**.
+1. In **Nuovo segmento ContextHub**, inserisci un titolo per il segmento e se necessario un valore di incremento, quindi seleziona **Crea**.
 
    ![Nuovo segmento](../assets/contexthub-new-segment.png)
 
@@ -196,7 +196,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 ### Crea una nuova cartella,  {#create-folder}
 
-1. Dopo [accesso ai segmenti](#accessing-segments), seleziona la **Crea** e seleziona **Cartella**.
+1. Dopo [l&#39;accesso ai segmenti](#accessing-segments), selezionare il pulsante **Crea** e selezionare **Cartella**.
 
    ![Aggiungi cartella](../assets/contexthub-create-segment.png)
 
@@ -219,7 +219,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 ### Modificare le cartelle esistenti {#modify-folders}
 
-1. Dopo [accesso ai segmenti](#accessing-segments), seleziona la cartella da modificare per selezionarla.
+1. Dopo l&#39;[accesso ai segmenti](#accessing-segments), seleziona la cartella da modificare per selezionarla.
 
    ![Selezione cartella](../assets/contexthub-select-folder.png)
 
@@ -235,7 +235,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 ### Eliminare una cartella
 
-1. Dopo [accesso ai segmenti](#accessing-segments), seleziona la cartella da modificare per selezionarla.
+1. Dopo l&#39;[accesso ai segmenti](#accessing-segments), seleziona la cartella da modificare per selezionarla.
 
    ![Selezione cartella](../assets/contexthub-select-folder.png)
 
@@ -252,7 +252,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
    ![Conferma l’eliminazione degli elementi figlio](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Seleziona **Forza eliminazione** per confermare.
+   * Selezionare **Forza eliminazione** per confermare.
    * Seleziona **Annulla** per interrompere.
 
 >[!NOTE]

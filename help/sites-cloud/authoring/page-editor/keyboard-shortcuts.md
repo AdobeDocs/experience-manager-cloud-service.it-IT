@@ -24,7 +24,7 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune 
 
 | Dove si trova | Scelta rapida | Descrizione |
 |---|---|---|
-| Qualsiasi modalità delle finestre di modifica | `Ctrl-Shift-m` | Passa da **Anteprima** e la selezionata [modalità](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) (ad esempio, **Modifica**, **Layout** e così via)* |
+| Qualsiasi modalità delle finestre di modifica | `Ctrl-Shift-m` | Consente di passare da **Anteprima** alla [modalità](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) attualmente selezionata, ad esempio **Modifica**, **Layout** e così via* |
 | Modalità **Modifica** | `Ctrl-z` | [Annulla l’ultima modifica](/help/sites-cloud/authoring/page-editor/edit-content.md) |
 |  | `Ctrl-y` | [Ripristina l’ultima modifica](/help/sites-cloud/authoring/page-editor/edit-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleziona più paragrafi |

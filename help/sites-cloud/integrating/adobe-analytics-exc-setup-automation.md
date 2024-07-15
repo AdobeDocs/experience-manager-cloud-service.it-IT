@@ -45,10 +45,10 @@ L’ambiente ora dovrebbe essere pronto per la configurazione dell’automazione
 ## Come impostare
 
 1. Passa a **Sites** e seleziona la pagina principale del sito da integrare con Adobe Analytics.
-1. Espandi il menu della barra laterale e seleziona **Configurazione analisi**.
+1. Espandere il menu della barra laterale e selezionare **Imposta Analytics**.
 
    Questa è una nuova opzione nella barra laterale che apre un pannello che fornisce controlli e stato per Experience Cloud Setup Automation.
-1. Seleziona la **Integrare Analytics** pulsante.
+1. Selezionare il pulsante **Integra Analytics**.
 1. Nella finestra di dialogo risultante, fornisci un nome per **ID suite di rapporti**.
 
    Questa stringa viene utilizzata per creare un [ID suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html) in Adobe Analytics come archivio dati per i dati di analisi del sito AEM selezionato. Alla stringa fornita verranno aggiunti l’ambiente e gli identificatori di livello per garantirne l’univocità.
@@ -76,7 +76,7 @@ Quindi, passa ad Adobe Analytics per visualizzare i dati che fluiscono dagli eve
 
 1. Passa ad Adobe Analytics nella stessa organizzazione IMS del sito AEM.
 1. Crea un nuovo rapporto di panoramica per spostarsi da AEM Sites a **Rapporti** > **Coinvolgimento** > **Adobe Experience Manager** > **Panoramica delle prestazioni del sito**.
-1. Seleziona **Apri rapporto**.
+1. Seleziona **Apri report**.
 1. Seleziona la **ID suite di rapporti** che corrisponde al nome della suite di rapporti utilizzato nell’esercizio precedente.
 1. Nel tempo puoi visualizzare il flusso di dati di analisi nel nuovo modello.
 

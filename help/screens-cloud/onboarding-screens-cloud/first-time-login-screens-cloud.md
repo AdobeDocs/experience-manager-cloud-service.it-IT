@@ -16,15 +16,15 @@ ht-degree: 1%
 
 ## Processo di onboarding {#onboarding-process}
 
-Dopo aver firmato il contratto, Adobe Managed Services (AMS) avvia l’onboarding del cliente. Durante la fase di provisioning, quando AMS esegue il provisioning dell’istanza AMS in seguito al contratto, viene installato il Feature Pack AMS-Screens-Cloud. Il Feature Pack consente al provider Screens Services di connettersi all’istanza AMS o al provider di contenuti Screens.
+Dopo aver firmato il contratto, Adobe Managed Services (AMS) avvia l’onboarding del cliente. Durante la fase di provisioning, quando AMS esegue il provisioning dell’istanza AMS in seguito al contratto, viene installato il Feature Pack AMS-Screens-Cloud. Il Feature Pack consente al provider di servizi Screens di connettersi all&#39;istanza AMS o al provider di contenuti Screens.
 
 ## Aggiunta di utenti a Adobe Admin Console {#admin-console}
 
-Dopo aver effettuato il provisioning con un ID organizzazione Adobe Identity Management System (IMS), ora puoi accedere a [Adobe Admin Console](https://adminconsole.adobe.com/). Consulta [Utenti Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) per ulteriori informazioni sull’aggiunta di utenti all’Admin Console.
+Dopo aver effettuato il provisioning con un ID organizzazione Adobe Identity Management System (IMS), ora puoi accedere a [Adobe Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni sull&#39;aggiunta di utenti all&#39;Admin Console, consulta [Utenti Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html).
 
 >[!NOTE]
 >Gli utenti hanno accesso al profilo di prodotto di AEM Cloud Service in modo che possano accedere all’AEM utilizzando l’Adobe ID o il Federated ID.
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver effettuato il provisioning con un ID organizzazione IMS e aver aggiunto l’utente al Adobe Admin Console, ora puoi aggiungere Screens come [componente aggiuntivo per un nuovo programma](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) o a [un programma esistente](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) in Cloud Manager.
+Dopo aver effettuato il provisioning con un ID organizzazione IMS e aver aggiunto l&#39;utente a Adobe Admin Console, è ora possibile aggiungere Screens come componente aggiuntivo [a un nuovo programma](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) o a [un programma esistente](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) in Cloud Manager.

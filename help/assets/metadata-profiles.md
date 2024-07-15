@@ -26,21 +26,21 @@ Utilizzando strategie di denominazione dei file e delle cartelle coerenti e appr
 
 ## Aggiungere un profilo di metadati {#adding-a-metadata-profile}
 
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili metadati]** e quindi fare clic su **[!UICONTROL Crea]**.
-1. Immetti un titolo per il profilo metadati, ad esempio Metadati di esempio, e seleziona **[!UICONTROL Invia]**. Viene visualizzato il modulo Modifica per il profilo metadati.
-1. Fai clic su un componente e configurane le proprietà nella sezione **[!UICONTROL Impostazioni]** scheda. Ad esempio, fai clic su **[!UICONTROL Descrizione]** e modificarne le proprietà.
-Modifica le seguenti proprietà per **[!UICONTROL Descrizione]** componente:
+1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**, quindi fai clic su **[!UICONTROL Crea]**.
+1. Immettere un titolo per il profilo metadati, ad esempio Metadati campione, e selezionare **[!UICONTROL Invia]**. Viene visualizzato il modulo Modifica per il profilo metadati.
+1. Fai clic su un componente e configurane le proprietà nella scheda **[!UICONTROL Impostazioni]**. Ad esempio, fai clic sul componente **[!UICONTROL Descrizione]** e modificane le proprietà.
+Modifica le seguenti proprietà per il componente **[!UICONTROL Descrizione]**:
 
-   * **[!UICONTROL Etichetta campo]** : nome visualizzato della proprietà dei metadati. È solo per riferimento utente.
-   * **[!UICONTROL Mappa su proprietà]** : il valore di questa proprietà fornisce il percorso/nome relativo del nodo della risorsa in cui viene salvato nell’archivio. Il valore deve sempre iniziare con `./` perché indica che il percorso si trova sotto il nodo della risorsa.
+   * **[!UICONTROL Etichetta campo]** - Nome visualizzato della proprietà dei metadati. È solo per riferimento utente.
+   * **[!UICONTROL Mappa su proprietà]** - Il valore di questa proprietà fornisce il nome o il percorso relativo al nodo della risorsa in cui viene salvato nell&#39;archivio. Il valore deve sempre iniziare con `./` perché indica che il percorso si trova sotto il nodo della risorsa.
 
-     Il valore specificato per **[!UICONTROL Mappa su proprietà]** viene memorizzato come proprietà sotto il nodo di metadati della risorsa. Ad esempio, se specifichi: `/jcr:content/metadata/dc:desc` come nome di **[!UICONTROL Mappa su proprietà]**, [!DNL Adobe Experience Manager Assets] memorizza il valore `dc:desc` nel nodo dei metadati della risorsa.
+     Il valore specificato per **[!UICONTROL Mappa su proprietà]** è memorizzato come proprietà sotto il nodo di metadati della risorsa. Ad esempio, se specifichi: `/jcr:content/metadata/dc:desc` come nome di **[!UICONTROL Mappa sulla proprietà]**, [!DNL Adobe Experience Manager Assets] memorizza il valore `dc:desc` nel nodo di metadati della risorsa.
 
-   * **[!UICONTROL Valore predefinito]** : utilizza questa proprietà per aggiungere un valore predefinito per il componente metadati. Ad esempio, se specifichi &quot;Descrizione&quot; questo valore viene assegnato alla proprietà `dc:desc` nel nodo dei metadati della risorsa.
+   * **[!UICONTROL Valore predefinito]**. Utilizzare questa proprietà per aggiungere un valore predefinito per il componente metadati. Ad esempio, se specifichi &quot;Descrizione&quot; questo valore viene assegnato alla proprietà `dc:desc` nel nodo di metadati della risorsa.
 
      >[!NOTE]
      >
-     >Aggiunta di un valore predefinito a una nuova proprietà di metadati (che non esiste in `/jcr:content/metadata` node) non mostra la proprietà e il relativo valore nella pagina Proprietà della risorsa per impostazione predefinita. Per visualizzare la nuova proprietà in [!UICONTROL Proprietà] , modificare il modulo schema corrispondente.
+     >L&#39;aggiunta di un valore predefinito a una nuova proprietà di metadati (che non esiste nel nodo `/jcr:content/metadata`) non visualizza la proprietà e il relativo valore nella pagina Proprietà della risorsa per impostazione predefinita. Per visualizzare la nuova proprietà nella pagina [!UICONTROL Proprietà], modificare il modulo schema corrispondente.
 
 1. (Facoltativo) Aggiungi altri componenti alla scheda Modifica modulo dalla scheda **[!UICONTROL Genera modulo]** e configurane le proprietà nella scheda **[!UICONTROL Impostazioni]**. Le seguenti proprietà sono disponibili dalla scheda **[!UICONTROL Genera modulo]**:
 
@@ -53,19 +53,19 @@ Modifica le seguenti proprietà per **[!UICONTROL Descrizione]** componente:
 | Data | Etichetta campo, Mappa su proprietà, Valore predefinito |
 | Tag standard | Etichetta campo, Mappa su proprietà, Valore predefinito, Descrizione |
 
-1. Clic **[!UICONTROL Fine]**. Il profilo metadati viene aggiunto all’elenco dei profili nel **[!UICONTROL Profili metadati]** pagina.
+1. Fai clic su **[!UICONTROL Fine]**. Il profilo metadati viene aggiunto all&#39;elenco dei profili nella pagina **[!UICONTROL Profili metadati]**.
 
 ## Copiare un profilo di metadati {#copying-a-metadata-profile}
 
-1. Dalla sezione **[!UICONTROL Profili metadati]** , selezionare un profilo metadati per crearne una copia.
-1. Clic **[!UICONTROL Copia]** dalla barra degli strumenti.
-1. In **[!UICONTROL Copia profilo metadati]** immetti un titolo per la nuova copia del profilo metadati.
-1. Clic **[!UICONTROL Copia]**. La copia del profilo metadati viene visualizzata nell’elenco apposito della pagina **[!UICONTROL Profili metadati]**.
+1. Dalla pagina **[!UICONTROL Profili metadati]**, seleziona un profilo metadati per crearne una copia.
+1. Fai clic su **[!UICONTROL Copia]** nella barra degli strumenti.
+1. Nella finestra di dialogo **[!UICONTROL Copia profilo metadati]** immettere un titolo per la nuova copia del profilo metadati.
+1. Fai clic su **[!UICONTROL Copia]**. La copia del profilo metadati viene visualizzata nell’elenco apposito della pagina **[!UICONTROL Profili metadati]**.
 
 ## Eliminare un profilo di metadati {#deleting-a-metadata-profile}
 
-1. Dalla sezione **[!UICONTROL Profili metadati]** , selezionare un profilo da eliminare.
-1. Clic **[!UICONTROL Elimina profili metadati]** nella barra degli strumenti.
+1. Dalla pagina **[!UICONTROL Profili metadati]**, selezionare un profilo da eliminare.
+1. Fare clic su **[!UICONTROL Elimina profili metadati]** nella barra degli strumenti.
 1. Nella finestra di dialogo, fai clic su **[!UICONTROL Elimina]** per confermare l&#39;operazione di eliminazione. Il profilo metadati viene eliminato dall’elenco.
 
 ## Applicare un profilo di metadati alle cartelle {#applying-a-metadata-profile-to-folders}
@@ -88,27 +88,27 @@ Puoi rielaborare le risorse in una cartella che dispone già di un profilo video
 
 #### Applicare profili metadati alle cartelle dall’interfaccia utente Profili {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
-1. Accedi a **[!UICONTROL Strumenti > Risorse > Profili metadati]**.
+1. Passa a **[!UICONTROL Strumenti > Assets > Profili metadati]**.
 1. Seleziona il profilo di metadati da applicare a una o più cartelle.
-1. Clic **[!UICONTROL Applicare il profilo metadati alle cartelle]** e seleziona la cartella o le cartelle in cui desideri ricevere le risorse appena caricate, quindi fai clic su **[!UICONTROL Fine]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Fai clic su **[!UICONTROL Applica profilo metadati alle cartelle]** e seleziona una o più cartelle da utilizzare per ricevere le risorse appena caricate, quindi fai clic su **[!UICONTROL Fine]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
 #### Applicare profili di metadati alle cartelle da Proprietà {#applying-metadata-profiles-to-folders-from-properties}
 
-1. Nella barra a sinistra, fai clic su **[!UICONTROL Risorse]** quindi passa alla cartella a cui desideri applicare un profilo di metadati.
-1. Sulla cartella, seleziona il segno di spunta per selezionarla, quindi seleziona **Proprietà**.
-1. Seleziona la **[!UICONTROL Profili metadati]** e selezionare il profilo dal menu a discesa e fare clic su **[!UICONTROL Salva]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Nella barra a sinistra, fai clic su **[!UICONTROL Assets]**, quindi passa alla cartella a cui desideri applicare un profilo di metadati.
+1. Nella cartella selezionare il segno di spunta per selezionarla, quindi selezionare **Proprietà**.
+1. Seleziona la scheda **[!UICONTROL Profili metadati]**, fai clic sul profilo dal menu a discesa e infine fai clic su **[!UICONTROL Salva]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
 ### Applicare un profilo di metadati a livello globale {#applying-a-metadata-profile-globally}
 
-Oltre ad applicare un profilo a una cartella, puoi anche applicarne uno a livello globale, in modo che qualsiasi contenuto caricato in [!DNL Experience Manager Assets] in qualsiasi cartella è applicato il profilo selezionato.
+Oltre ad applicare un profilo a una cartella, puoi applicarne uno a livello globale, in modo che a qualsiasi contenuto caricato in [!DNL Experience Manager Assets] in qualsiasi cartella venga applicato il profilo selezionato.
 
 È possibile rielaborare le risorse in una cartella che dispone già di un profilo di metadati esistente che è stato successivamente modificato. <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
-**Per applicare un profilo di metadati a livello globale, effettua una delle seguenti operazioni**
+**Per applicare un profilo di metadati a livello globale, eseguire una delle operazioni seguenti**
 
-* Accedi a `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam` e applica il profilo appropriato e fai clic su **[!UICONTROL Salva]**.
+* Passa a `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam` e applica il profilo appropriato, quindi fai clic su **[!UICONTROL Salva]**.
 
-* Passa a CRXDE Liti al seguente nodo: `/content/dam/jcr:content`. Aggiungi la proprietà `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Clic **Salva tutto**.
+* Passare a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`. Aggiungere la proprietà `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Fare clic su **Salva tutto**.
 
 ## Rimozione di un profilo di metadati dalle cartelle {#removing-a-metadata-profile-from-folders}
 
@@ -118,15 +118,15 @@ Puoi rimuovere un profilo di metadati da una cartella direttamente dal menu **St
 
 ### Rimozione dei profili di metadati dalle cartelle tramite l’interfaccia utente Profili {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Fai clic sul logo dell’Experience Manager e passa a **[!UICONTROL Strumenti > Risorse > Profili metadati]**.
+1. Fai clic sul logo di Experience Manager e passa a **[!UICONTROL Strumenti > Assets > Profili metadati]**.
 1. Seleziona il profilo di metadati da rimuovere da una o più cartelle.
-1. Clic **[!UICONTROL Rimuovi profilo metadati dalle cartelle]** e seleziona la cartella o le cartelle da cui vuoi rimuovere un profilo e fai clic su **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Rimuovi profilo metadati da cartelle]** e seleziona una o più cartelle da cui vuoi rimuovere un profilo, quindi fai clic su **[!UICONTROL Fine]**.
 
    Puoi confermare che il profilo di metadati non è più applicato a una cartella perché il nome non viene più visualizzato sotto il nome della cartella.
 
 ### Rimozione dei profili di metadati dalle cartelle tramite Proprietà {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Fai clic sul logo dell’Experience Manager e naviga **[!UICONTROL Risorse]** e quindi alla cartella da cui desideri rimuovere un profilo di metadati.
+1. Fai clic sul logo dell&#39;Experience Manager e passa a **[!UICONTROL Assets]**, quindi passa alla cartella da cui vuoi rimuovere un profilo di metadati.
 1. Nella cartella fare clic sul segno di spunta per selezionarla e quindi fare clic su **[!UICONTROL Proprietà]**.
 1. Seleziona la scheda **[!UICONTROL Profili metadati]**, fai clic su **[!UICONTROL Nessuno]** dal menu a discesa e infine tocca **[!UICONTROL Salva]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 

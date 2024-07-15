@@ -1,6 +1,6 @@
 ---
 title: Formati di file supportati e tipi MIME
-description: Formati di file e tipi MIME supportati [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
+description: Formati di file e tipi MIME supportati da [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
@@ -14,17 +14,17 @@ ht-degree: 34%
 
 # [!DNL Assets] formati di file supportati {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] supporta le funzionalità di base di content management (archiviazione, gestione dei metadati online, controllo delle versioni, caricamento e download, ecc.) per qualsiasi file binario, indipendentemente dal formato. [!DNL Adobe Experience Manager Assets] supporta un&#39;ampia gamma di formati di file e ogni funzione di prodotto supporta diversi formati.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] supporta funzionalità di base per la gestione dei contenuti, quali archiviazione, gestione dei metadati online, controllo delle versioni, caricamento e download e così via, per qualsiasi file binario, indipendentemente dal formato. [!DNL Adobe Experience Manager Assets] supporta un&#39;ampia gamma di formati di file e ogni funzionalità del prodotto supporta diversi formati.
 
-Inoltre, [!DNL Experience Manager Assets] fornisce supporto esteso per generare anteprime e rappresentazioni e per estrarre metadati e testo per l’indicizzazione full-text. Questo supporto esteso viene fornito utilizzando [microservizi per risorse](asset-microservices-configure-and-use.md).
+Inoltre, [!DNL Experience Manager Assets] fornisce supporto esteso per generare anteprime e rendering ed estrarre metadati e testo per l&#39;indicizzazione full-text. Questo supporto esteso viene fornito utilizzando [microservizi per risorse](asset-microservices-configure-and-use.md).
 
 Gli elementi di rilievo per la conversione delle risorse tramite i microservizi per le risorse includono:
 
-* Chiave [Formati di file di Adobe](#adobe-formats) prodotti da applicazioni e servizi Adobi, tra cui [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], e [!DNL Adobe Acrobat] o PDF.
-* Chiave [formati di file di imaging](#image-formats).
-* [Formati di file Camera Raw](#camera-raw-formats) per una vasta gamma di fotocamere, tra cui Canon, Nikon, Fujifilm, Olympus e altri produttori (con tecnologia Adobe Camera Raw).
-* Comune [formati dei documenti](#document-formats), inclusi i formati Microsoft® Office e Open Document.
-* Ampia gamma di [video](#video-formats) e [audio](#audio-formats) formati.
+* [Formati di file di Adobe](#adobe-formats) chiave prodotti da applicazioni e servizi Adobe, inclusi [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] o PDF.
+* [formati di file di imaging](#image-formats) chiave.
+* [Formati di file Camera Raw](#camera-raw-formats) per un&#39;ampia gamma di fotocamere, tra cui Canon, Nikon, Fujifilm, Olympus e altri produttori (con tecnologia Adobe Camera Raw).
+* [formati di documento](#document-formats) comuni, inclusi i formati di Microsoft® Office e Open Document.
+* Ampio intervallo di formati [video](#video-formats) e [audio](#audio-formats).
 
 La legenda seguente descrive il livello di supporto per ciascun formato.
 
@@ -51,7 +51,7 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Per [!DNL Adobe InDesign] (INDD), le dimensioni delle rappresentazioni sono determinate dall&#39;anteprima incorporata nel file INDD. Configurare le preferenze in [!DNL InDesign] (**[!UICONTROL Preferenze > Gestione file > Salva sempre anteprima immagini con documenti, Dimensione anteprima]**) in modo da poter incorporare rappresentazioni più grandi.
+\* Per [!DNL Adobe InDesign] file (INDD), le dimensioni delle rappresentazioni sono determinate dall&#39;anteprima incorporata nel file INDD. Configura le preferenze in [!DNL InDesign] (**[!UICONTROL Preferenze > Gestione file > Salva sempre immagini di anteprima con documenti, Dimensione anteprima]**) in modo da poter incorporare rappresentazioni più grandi.
 
 ## Formati immagine {#image-formats}
 
@@ -229,23 +229,23 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 | Formato | Carica (formato di input) | Crea predefinito immagine (formato di output) | Anteprima rappresentazione dinamica | Distribuzione di una rappresentazione dinamica | Scarica rappresentazione dinamica | Imposta i tipi che supportano questo formato |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | − | − | − | ✓ | − | − |
-| BMP | ✓ | − | − | − | − | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
+| BMP | ✓ | − | − | − | − | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md) e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
 | [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | HEIC | − | − | − | ✓ | − | − |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md) e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md) e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
 | ‡ PSD | ✓ | − | − | − | − | − |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Immagine](/help/assets/dynamic-media/image-sets.md), [File multimediali diversi](/help/assets/dynamic-media/mixed-media-sets.md) e [Rotazione](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
-‡ L&#39;immagine unita viene estratta dal file PSD. È un’immagine generata da [!DNL Adobe Photoshop] ed è incluso nel file PSD. A seconda delle impostazioni, l&#39;immagine unita potrebbe essere o meno l&#39;immagine effettiva.
+‡ L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da [!DNL Adobe Photoshop] e inclusa nel file PSD. A seconda delle impostazioni, l&#39;immagine unita potrebbe essere o meno l&#39;immagine effettiva.
 
 ## Dynamic Medie - Formati immagine raster non supportati {#unsupported-raster-image-formats-dm}
 
-I seguenti sottotipi di formati di file immagine raster *non* supportate in [!DNL Dynamic Media]:
+I seguenti sottotipi di formati di file immagine raster *non* sono supportati in [!DNL Dynamic Media]:
 
 * File PNG con dimensioni del blocco IDAT superiori a 100 MB.
 * File PSB.
@@ -263,7 +263,7 @@ Vedi anche [Formati 3D supportati](/help/assets/file-format-support.md#support-3
 | GLB | Trasmissione GL binaria | model/gltf-binary | Include i materiali e le texture come un&#39;unica risorsa. |
 | OBJ | File oggetto WaveFront 3D | application/x-tgif | |
 | STL | Stereolitografia | application/vnd.ms-pki.stl | |
-| USDZ | Universal Scene Description Archivio zip | model/vnd.usdz+zip | *Supporto per l’acquisizione e la generazione di miniature; anteprime 3D non ancora supportate.* USDZ è un formato 3D che può essere visualizzato in modalità nativa da Safari o iOS. |
+| USDZ | Universal Scene Description Archivio zip | model/vnd.usdz+zip | *Supporto per l&#39;acquisizione e la generazione di miniature; anteprime 3D non ancora supportate.* USDZ è un formato 3D che può essere visualizzato in modalità nativa da Safari o iOS. |
 
 **Consulta anche**
 
@@ -283,4 +283,4 @@ Vedi anche [Formati 3D supportati](/help/assets/file-format-support.md#support-3
 >[!MORELIKETHIS]
 >
 >* [Elaborazione delle risorse tramite i microservizi per le risorse](asset-microservices-overview.md).
->* [Formati di file supportati per l’assegnazione di tag avanzati a risorse basate su testo](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [Formati di file supportati per l&#39;assegnazione di tag avanzati di risorse basate su testo](/help/assets/smart-tags.md#smart-tags-supported-file-formats)

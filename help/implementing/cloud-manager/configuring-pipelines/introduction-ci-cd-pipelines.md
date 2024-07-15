@@ -56,7 +56,7 @@ Una pipeline non di produzione serve principalmente per eseguire controlli di qu
 Oltre ai tipi di produzione e non di produzione, le pipeline possono essere differenziate in base al tipo di codice che distribuiscono.
 
 * **[Pipeline full stack](#full-stack-pipeline)**: distribuiscono simultaneamente le build del codice back-end e front-end contenenti una o più applicazioni server di AEM con configurazioni HTTPD/Dispatcher
-* **[Configurare le pipeline](#config-deployment-pipeline)** : in pochi minuti puoi configurare e distribuire le regole del filtro del traffico, incluse le regole WAF
+* **[Pipeline di configurazione](#config-deployment-pipeline)** - Configura e distribuisci le regole del filtro del traffico, incluse le regole WAF, in pochi minuti
 * **[Pipeline front-end](#front-end)**: distribuiscono le build del codice front-end contenenti una o più applicazioni dell’interfaccia utente lato client
 * **[Pipeline di configurazione a livello web](#web-tier-config-pipelines)**: distribuiscono le configurazioni HTTPD/Dispatcher
 
@@ -118,7 +118,7 @@ Per informazioni su come configurare le pipeline full stack, consulta i seguenti
 
 Con una pipeline di configurazione è possibile configurare e distribuire in pochi minuti le regole del filtro del traffico, incluse le regole WAF.
 
-Consulta [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md) per scoprire come gestire le configurazioni nell’archivio in modo che vengano distribuite correttamente.
+Per informazioni su come gestire le configurazioni nell&#39;archivio in modo che vengano distribuite correttamente, consulta [Regole filtro traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Configurazione delle pipeline di configurazione {#configure-config-deployment}
 

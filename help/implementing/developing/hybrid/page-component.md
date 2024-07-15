@@ -17,18 +17,18 @@ Il componente page di un SPA non fornisce gli elementi HTML dei suoi componenti 
 
 ## Gestione dei modelli di pagina {#page-model-management}
 
-La risoluzione e la gestione del modello di pagina sono delegate a un [`PageModelManager`](blueprint.md#pagemodelmanager) modulo. L&#39;SPA deve interagire con `PageModelManager` modulo quando viene inizializzato per recuperare il modello della pagina iniziale e registrarsi per gli aggiornamenti del modello, per lo più prodotto quando l’autore modifica la pagina tramite l’Editor pagina. Il `PageModelManager` è accessibile dal progetto SPA come pacchetto npm. Interprete tra l&#39;AEM e l&#39;SPA, il `PageModelManager` deve accompagnare l’SPA.
+La risoluzione e la gestione del modello di pagina sono delegate a un modulo [`PageModelManager`](blueprint.md#pagemodelmanager) fornito. L&#39;SPA deve interagire con il modulo `PageModelManager` quando viene inizializzato per recuperare il modello della pagina iniziale e registrarsi per gli aggiornamenti del modello, per lo più prodotti quando l&#39;autore modifica la pagina tramite l&#39;Editor pagina. `PageModelManager` è accessibile dal progetto SPA come pacchetto npm. Essendo un interprete tra l&#39;AEM e l&#39;SPA, `PageModelManager` è destinato ad accompagnare l&#39;SPA.
 
-Per consentire l’authoring della pagina, una libreria client denominata `cq.authoring.pagemodel.messaging` per fornire un canale di comunicazione tra l’SPA e l’editor pagina. Se il componente Pagina SPA eredita dalla pagina wcm/core, allora sono disponibili le seguenti opzioni per rendere `cq.authoring.pagemodel.messaging` categoria librerie client disponibile:
+Per consentire la creazione della pagina, è necessario aggiungere una libreria client denominata `cq.authoring.pagemodel.messaging` per fornire un canale di comunicazione tra l&#39;SPA e l&#39;editor pagina. Se il componente pagina SPA eredita dal componente wcm/core della pagina, sono disponibili le seguenti opzioni per rendere disponibile la categoria di librerie client `cq.authoring.pagemodel.messaging`:
 
 * Se il modello è modificabile, aggiungi la categoria della libreria client al criterio della pagina.
-* Aggiungere la categoria di librerie client utilizzando `customfooterlibs.html` del componente Pagina.
+* Aggiungi la categoria della libreria client utilizzando `customfooterlibs.html` del componente pagina.
 
-Non dimenticare di limitare l&#39;inclusione di `cq.authoring.pagemodel.messaging` al contesto dell’editor pagina.
+Non dimenticare di limitare l&#39;inclusione della categoria `cq.authoring.pagemodel.messaging` al contesto dell&#39;editor pagina.
 
 ## Tipo di dati di comunicazione {#communication-data-type}
 
-Il tipo di dati di comunicazione viene impostato come elemento HTML all’interno del componente Pagina AEM utilizzando `data-cq-datatype` attributo. Quando il tipo di dati di comunicazione è impostato su JSON, le richieste GET raggiungono gli endpoint del modello Sling di un componente. Dopo che si verifica un aggiornamento nell’editor di pagine, la rappresentazione JSON del componente aggiornato viene inviata alla libreria Modello di pagina. La libreria Modello pagina avvisa quindi l’SPA in merito agli aggiornamenti.
+Il tipo di dati di comunicazione è impostato come elemento HTML nel componente Pagina AEM utilizzando l&#39;attributo `data-cq-datatype`. Quando il tipo di dati di comunicazione è impostato su JSON, le richieste GET raggiungono gli endpoint del modello Sling di un componente. Dopo che si verifica un aggiornamento nell’editor di pagine, la rappresentazione JSON del componente aggiornato viene inviata alla libreria Modello di pagina. La libreria Modello pagina avvisa quindi l’SPA in merito agli aggiornamenti.
 
 **Componente pagina SPA -`body.html`**
 
@@ -68,17 +68,17 @@ Le proprietà delle metarisorse che descrivono il contenuto dell’SPA:
 ## Metaproprietà {#meta-properties}
 
 * `cq:wcmmode`: modalità WCM degli editor (ad esempio, pagina, modello)
-* `cq:pagemodel_root_url`: URL del modello principale dell’app. Fondamentale quando si accede direttamente a una pagina figlio, poiché il modello di pagina figlio è un frammento del modello principale dell’app. Il `PageModelManager` quindi ricompone sistematicamente il modello iniziale dell&#39;applicazione come ingresso nell&#39;applicazione dal relativo punto di ingresso principale.
-* `cq:pagemodel_router`: attiva o disattiva la [`ModelRouter`](routing.md) del `PageModelManager` libreria
-* `cq:pagemodel_route_filters`: elenco separato da virgole o espressioni regolari per fornire percorsi [`ModelRouter`](routing.md) deve ignorare.
+* `cq:pagemodel_root_url`: URL del modello radice dell&#39;app. Fondamentale quando si accede direttamente a una pagina figlio, poiché il modello di pagina figlio è un frammento del modello principale dell’app. `PageModelManager` ricompone quindi in modo sistematico il modello iniziale dell&#39;applicazione immettendo l&#39;applicazione dal relativo punto di ingresso radice.
+* `cq:pagemodel_router`: abilitare o disabilitare [`ModelRouter`](routing.md) della libreria `PageModelManager`
+* `cq:pagemodel_route_filters`: elenco separato da virgole o espressioni regolari per fornire route che [`ModelRouter`](routing.md) deve ignorare.
 
 ## Sincronizzazione sovrapposizione editor pagina {#page-editor-overlay-synchronization}
 
-La sincronizzazione delle sovrapposizioni è garantita dallo stesso Mutation Observer fornito da `cq.authoring.page` categoria.
+La sincronizzazione delle sovrapposizioni è garantita dallo stesso Mutation Observer fornito dalla categoria `cq.authoring.page`.
 
 ## Configurazione della struttura esportata JSON del modello Sling {#sling-model-json-exported-structure-configuration}
 
 Quando le funzionalità di routing sono abilitate, si presume che l’esportazione JSON dell’SPA contenga le diverse route dell’applicazione grazie all’esportazione JSON del componente di navigazione AEM. L’output JSON del componente di navigazione AEM può essere configurato nel criterio del contenuto della pagina principale dell’SPA tramite le due proprietà seguenti:
 
-* `structureDepth`: numero corrispondente alla profondità della struttura esportata
-* `structurePatterns`: Regex dell’array di regex corrispondenti alla pagina da esportare
+* `structureDepth`: numero corrispondente alla profondità dell&#39;albero esportato
+* `structurePatterns`: Regex dell&#39;array di regex corrispondenti alla pagina da esportare

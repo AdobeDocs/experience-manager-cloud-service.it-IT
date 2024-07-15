@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # Informazioni su Assets in [!DNL Content Hub] {#assets-insights}
 
-![Approfondimenti su Assets](assets/asset-insights-banner.jpg)
+![Informazioni su Assets](assets/asset-insights-banner.jpg)
 
-[!DNL Content Hub] fornisce informazioni utili sulle risorse, affrontando una sfida comune che spesso interessa il marketing: le statistiche sull’utilizzo delle risorse utilizzate nelle campagne di marketing, nei canali e in diverse aree geografiche. Acquisendo una chiara comprensione delle prestazioni e della popolarità delle risorse, fornisce informazioni fruibili essenziali per migliorare l’esperienza utente.
+[!DNL Content Hub] fornisce informazioni utili sulle risorse, affrontando una sfida comune che spesso interessa le parti interessate del marketing: le statistiche sull&#39;utilizzo delle risorse utilizzate nelle campagne di marketing, nei canali e in diverse aree geografiche. Acquisendo una chiara comprensione delle prestazioni e della popolarità delle risorse, fornisce informazioni fruibili essenziali per migliorare l’esperienza utente.
 
 ## Prerequisiti {#prerequisites}
 
-[Utenti Content Hub](deploy-content-hub.md#onboard-content-hub-users) può eseguire le azioni menzionate in questo articolo.
+[Gli utenti di Content Hub](deploy-content-hub.md#onboard-content-hub-users) possono eseguire le azioni indicate in questo articolo.
 
 ## Visualizzare le statistiche per le risorse caricate{#view-statistics-for-uploaded-assets}
 
-Per visualizzare le statistiche delle risorse e delle raccolte caricate, vai alla **[!UICONTROL Approfondimenti]** scheda. Tieni traccia della cronologia di caricamento delle risorse con la visualizzazione Caricamenti di risorse annuali, mensili e giornalieri.
+Per visualizzare le statistiche delle risorse e delle raccolte caricate, passa alla scheda **[!UICONTROL Informazioni]**. Tieni traccia della cronologia di caricamento delle risorse con la visualizzazione Caricamenti di risorse annuali, mensili e giornalieri.
 
 ![Carica statistiche risorse](assets/assets-insights.jpg)
 
@@ -41,12 +41,12 @@ La tabella presenta una panoramica dettagliata delle varie risorse, compreso il 
 
 Il grafico a torta rappresenta visivamente il conteggio totale delle risorse per formato di file, fornendo una chiara illustrazione del conteggio delle singole risorse e delle relative percentuali.
 
-![Statistiche di conteggio risorse per tipo di risorsa](assets/insights-categorial-view.jpg)
+![Conteggio risorse per statistiche tipo di risorsa](assets/insights-categorial-view.jpg)
 
 Puoi anche visualizzare:
 
 * **Utenti attivi per giorno e mese**: numero di utenti attivi per giorno o per mese rappresentato da un grafico a linee.
-* **[!UICONTROL Assets per campagne]**: conteggio delle risorse e percentuale rispettiva in base alle campagne.
+* **[!UICONTROL Assets by Campaigns]**: conteggio delle risorse e percentuale rispettiva basata sulle campagne.
 * **[!UICONTROL Assets per canali]**: conteggio delle risorse e rispettiva percentuale in base ai canali utilizzati.
-* **[!UICONTROL Assets per area geografica]**: conteggio delle risorse e percentuale rispettiva in base alle aree di utilizzo delle risorse.
+* **[!UICONTROL Assets per area geografica]**: numero di risorse e percentuale rispettiva in base alle aree di utilizzo delle risorse.
 

@@ -1,6 +1,6 @@
 ---
 title: Note sulla versione 2021.3.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] Note sulla versione 2021.3.0 as a Cloud Service."
+description: "[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 feature: Release Information
 role: Admin
@@ -29,7 +29,7 @@ La seguente versione (2021.4.0) sarà del 29 aprile 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* [Versione di un sito per app web progressiva (PWA)](/help/sites-cloud/authoring/sites-console/enable-pwa.md) può ora essere abilitato a livello di progetto tramite una semplice configurazione.
+* [È ora possibile abilitare a livello di progetto tramite una semplice configurazione la versione per app Web progressiva (PWA) di un sito](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
 * Estensioni del modello per frammenti di contenuto: ora è possibile definire tipi di dati di testo con più righe come elenchi a più campi.
 * Miglioramenti dell’interfaccia utente dell’Editor frammenti di contenuto: i frammenti secondari nidificati vengono ora visualizzati nella breadcrumb ed è stata migliorata la visualizzazione delle azioni Pubblica, Salva e Salva/Esci
 
@@ -47,8 +47,8 @@ Ability to select a root path. select if a minimum number of tags is required.
 
 Add a Boolean or radio widget type to metadata schema setup. -->
 
-* [!DNL Experience Manager] estende la funzionalità Risorse collegate per supportare l’utilizzo di [!DNL Dynamic Media] immagini nei componenti core supportati. Consulta [utilizzare risorse collegate](/help/assets/use-assets-across-connected-assets-instances.md).
-* Gli amministratori Experience Manager possono pianificare l’inserimento di risorse in blocco in una data o un’ora specifica. Inoltre, gli amministratori possono pianificare acquisizioni ricorrenti in base a data e ora. Consulta [inserimento in blocco delle risorse](/help/assets/add-assets.md#asset-bulk-ingestor).
+* [!DNL Experience Manager] estende la funzionalità Connected Assets per supportare l&#39;utilizzo di [!DNL Dynamic Media] immagini nei componenti core supportati. Vedere [utilizzare Assets connesso](/help/assets/use-assets-across-connected-assets-instances.md).
+* Gli amministratori Experience Manager possono pianificare l’inserimento di risorse in blocco in una data o un’ora specifica. Inoltre, gli amministratori possono pianificare acquisizioni ricorrenti in base a data e ora. Consulta [inserimento in blocco di risorse](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 ### Correzioni di bug in [!DNL Assets] {#bug-fixes-assets}
 
@@ -58,7 +58,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * L’apertura del selettore di tag richiede molto tempo se il selettore fa parte di uno schema di metadati complesso. (CQ-4316426)
 * Quando si carica una risorsa con lo stesso nome di un file esistente, la finestra di dialogo per conflitto di nomi non viene visualizzata e l’utente non deve creare una versione. (CQ-4315424)
 * Le proprietà dei metadati della cartella possono essere impostate e salvate dal menu a comparsa nella pagina Proprietà di una cartella. Quando la selezione viene salvata nel repository, non viene visualizzata quando vengono nuovamente aperte le Proprietà metadati cartella. (CQ-4314429)
-* Le risorse con nomi di file contenenti spazi o caratteri speciali vengono caricate utilizzando il browser. (CQ-4318381)
+* Assets con nomi di file contenenti spazi o caratteri speciali viene caricato utilizzando il browser. (CQ-4318381)
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -76,9 +76,9 @@ Puoi rivolgerti al tuo rappresentante di Adobe per una demo o per registrarti al
 
 * Il componente Dettagli prodotto ora può essere utilizzato e configurato su qualsiasi pagina di contenuto
 
-* È stato rilasciato il sito di riferimento CIF Venia (25-03-2021), che include la versione più recente dei Componenti core CIF v1.9.0. Consulta [Sito di riferimento CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) per ulteriori dettagli.
+* È stato rilasciato il sito di riferimento CIF Venia (25-03-2021), che include la versione più recente dei Componenti core CIF v1.9.0. Per ulteriori dettagli, consulta [Sito di riferimento per CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25).
 
-* È stata rilasciata la versione 1.9.0 dei Componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) per ulteriori dettagli.
+* È stata rilasciata la versione 1.9.0 dei Componenti core CIF. Per ulteriori dettagli, consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0).
 
 
 ## Cloud Manager {#cloud-manager}
@@ -92,7 +92,7 @@ La prossima versione è pianificata per il venerdì 8 aprile 2021.
 
 ### Novità {#what-is-new-march}
 
-* Clienti con ambienti con configurazioni di nomi di dominio personalizzati preesistenti per [ELENCHI CONSENTITI IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [Certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) e [Nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) visualizza un messaggio sulle configurazioni esistenti in precedenza e può eseguire autonomamente l’operazione tramite l’interfaccia utente.
+* I clienti con ambienti con configurazioni preesistenti dei nomi di dominio personalizzati per [Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) e [nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) visualizzano un messaggio relativo alle precedenti configurazioni esistenti e possono eseguire operazioni in autonomia tramite l&#39;interfaccia utente.
 
 * Ora gli utenti con le autorizzazioni necessarie possono modificare un programma ed effettuare le seguenti operazioni in modalità self-service:
 
@@ -100,7 +100,7 @@ La prossima versione è pianificata per il venerdì 8 aprile 2021.
    * Rimuovere Sites o Assets da un programma esistente con entrambi Sites e Assets.
    * Aggiungere il secondo diritto inutilizzato di una soluzione a un programma esistente o nuovo.
 
-* **Aggiornamento push AEM** ora l’etichetta viene visualizzata per entrambi *Esecuzione della pipeline* e *Attività* schermi.
+* L&#39;etichetta **Aggiornamento push AEM** verrà ora visualizzata per entrambe le schermate *Esecuzione pipeline* e *Attività*.
 
 * Ora se un ambiente è in stato di sospensione ma è disponibile un aggiornamento di AEM lo stato **Sospeso** ha la precedenza su **Aggiornamento disponibile**.
 
@@ -148,8 +148,8 @@ La data di pubblicazione dello strumento Content Transfer v1.3.0 è il 4 marzo 2
 
 ### Novità dello strumento Content Transfer {#what-is-new-ctt-march}
 
-* CTT ora si installa in `/apps` invece di `/libs` I segnalibri del browser per determinate pagine potrebbero non essere più validi.
-* Quando CTT è installato, l’utente dovrà spostarsi su un livello aggiuntivo per accedere alla pagina Content Transfer (Trasferimento contenuti). Consulta [Utilizzo dello strumento di trasferimento dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) per ulteriori dettagli.
+* CTT ora viene installato in `/apps` invece che in `/libs`. I segnalibri del browser per alcune pagine potrebbero non essere più validi.
+* Quando CTT è installato, l’utente dovrà spostarsi su un livello aggiuntivo per accedere alla pagina Content Transfer (Trasferimento contenuti). Per ulteriori dettagli, vedere [Utilizzo dello strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html).
 
 ### Correzioni di bug {#bug-fixes-ctt-march}
 
@@ -169,13 +169,13 @@ La data di rilascio di Best Practices Analyzer v2.1.8 è il 22 marzo 2021.
 
 ### Novità degli strumenti di refactoring del codice {#what-is-new-crt}
 
-* Nuove funzioni e miglioramenti per Repository Modernizer. Consulta [Risorsa GitHub: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per la versione più recente.
+* Nuove funzioni e miglioramenti per Repository Modernizer. Vedi [Risorsa GitHub: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per la versione più recente.
    * Normalizza le configurazioni OSGi (ad eccezione delle configurazioni RepoInit) nel formato .cfg.json preferito.
    * Rinomina le cartelle di configurazione OSGi nel formato specificato.
    * Genera il progetto ui.apps.structure.
    * Crea il modulo di analisi.
 
-* Nuove funzioni e miglioramenti per Dispatcher Converter. Consulta [Risorsa GitHub: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+* Nuove funzioni e miglioramenti per Dispatcher Converter. Vedi [Risorsa GitHub: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
    * Creazione di file separati per diverse inclusioni invece di allineare il contenuto.
    * Possibilità di gestire sia il percorso della cartella di vhosts che il percorso dei file vhost.
    * Generazione di file farm con configurazioni di clienti di grandi dimensioni in un intervallo di 600 e più.

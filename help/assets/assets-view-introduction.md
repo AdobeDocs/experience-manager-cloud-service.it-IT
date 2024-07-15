@@ -1,6 +1,6 @@
 ---
-title: Quali vantaggi offre Assets in AEM?
-description: Ulteriori informazioni sui principali vantaggi della visualizzazione Assets in AEM. Ad Adobe, utilizzando la sua esperienza nel rafforzamento dei professionisti del marketing e creativi, introduce una nuova esperienza utente rivoluzionaria.
+title: Quali vantaggi offre Assets all’AEM?
+description: Ulteriori informazioni sui principali vantaggi della visualizzazione Assets nell’AEM. Ad Adobe, utilizzando la sua esperienza nel rafforzamento dei professionisti del marketing e creativi, introduce una nuova esperienza utente rivoluzionaria.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
@@ -12,7 +12,7 @@ ht-degree: 69%
 
 ---
 
-# Introduzione alla vista Risorse {#assets-view}
+# Introduzione alla vista Assets {#assets-view}
 
 ![Implementare Assets Essentials](assets/banner-image.jpg)
 
@@ -85,7 +85,7 @@ Guarda questo video per comprendere la potenza dell’integrazione della Vista r
 
 [![Consulta la Guida](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
 
-Le prossime versioni di Assets as a Cloud Service includeranno [Integrazione di Adobe Firefly tramite Adobi Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
+Le prossime versioni di Assets as a Cloud Service includeranno anche l&#39;integrazione di [Adobe Firefly tramite Adobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
 
 ### Caricamenti delle cartelle per impostare la struttura gerarchica per l’organizzazione {#folder-uploads}
 
@@ -103,7 +103,7 @@ Sfrutta il potenziale della libreria di risorse digitali dell’organizzazione g
 
 ### L’iscrizione al contenuto dell’archivio per una gestione risorse efficiente {#subscribe-content}
 
-La vista Risorse consente di monitorare le operazioni eseguite sulle risorse, cartelle o raccolte disponibili nell’archivio. Devi selezionare e iscriverti al contenuto per il quale ti vengono inviate le notifiche. Puoi anche configurare i tipi di evento, ad esempio l’eliminazione dei contenuti a cui ti sei iscritto, le modifiche ai contenuti a cui ti sei iscritto e così via. Le notifiche vengono quindi inviate solo per questi tipi di evento.
+La vista Assets consente di monitorare le operazioni eseguite sulle risorse, cartelle o raccolte disponibili nell’archivio. Devi selezionare e iscriverti al contenuto per il quale ti vengono inviate le notifiche. Puoi anche configurare i tipi di evento, ad esempio l’eliminazione dei contenuti a cui ti sei iscritto, le modifiche ai contenuti a cui ti sei iscritto e così via. Le notifiche vengono quindi inviate solo per questi tipi di evento.
 
 ![Ricevi notifiche](assets/notifications.gif)
 
@@ -123,10 +123,10 @@ Oltre a queste funzioni, la vista Risorse consente di eseguire le seguenti funzi
 
 * Rinomina le risorse e le cartelle disponibili nell’archivio.
 
-La vista Assets è personalizzata per semplificare i flussi di lavoro, promuovere la collaborazione e accelerare la distribuzione delle risorse. Adottando la velocità dei contenuti, gli esperti di marketing possono sfruttare appieno il potenziale delle loro risorse digitali e stimolare la creatività come mai prima d’ora.
+La visualizzazione Assets è personalizzata per semplificare i flussi di lavoro, promuovere la collaborazione e accelerare la distribuzione delle risorse. Adottando la velocità dei contenuti, gli esperti di marketing possono sfruttare appieno il potenziale delle loro risorse digitali e stimolare la creatività come mai prima d’ora.
 
 
-Utilizza questi collegamenti per iniziare rapidamente a utilizzare la vista Risorse:
+Utilizza questi collegamenti per iniziare rapidamente a utilizzare la vista Assets:
 
 * [Area di lavoro personale](/help/assets/my-workspace-assets-view.md)
-* [Introduzione all’utilizzo della vista Risorse](/help/assets/get-started-assets-view.md)
+* [Introduzione all’utilizzo della vista Assets](/help/assets/get-started-assets-view.md)

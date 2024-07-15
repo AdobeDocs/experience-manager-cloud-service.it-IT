@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Personalizzazione delle console {#customizing-consoles}
 
-L&#39;AEM fornisce opzioni per personalizzare le console (e [funzionalità di authoring delle pagine](/help/implementing/developing/extending/page-authoring.md)) della tua istanza di authoring.
+AEM offre opzioni per personalizzare le console (e la funzionalità di [authoring delle pagine](/help/implementing/developing/extending/page-authoring.md)) dell&#39;istanza di authoring.
 
 ## Clientlibs {#clientlibs}
 
-Le clientlibs consentono di estendere l’implementazione predefinita per offrire nuove funzionalità, riutilizzando al contempo funzioni, oggetti e metodi standard. Quando esegui la personalizzazione con clientlibs, puoi creare una clientlib personalizzata in `/apps.` Ad esempio, può contenere il codice necessario per il componente personalizzato.
+Le clientlibs consentono di estendere l’implementazione predefinita per offrire nuove funzionalità, riutilizzando al contempo funzioni, oggetti e metodi standard. Quando si esegue la personalizzazione con clientlibs, è possibile creare la propria clientlib in `/apps.`. Ad esempio, può contenere il codice necessario per il componente personalizzato.
 
-Consulta [Utilizzo di librerie lato client su AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
+Vedi [Utilizzo delle librerie lato client in AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Sovrapposizioni {#overlays}
 
-Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre la funzionalità standard disponibile in `/libs` con funzionalità personalizzate in `/apps`. Quando si crea una sovrapposizione, non è necessaria una copia 1:1 dell’originale, come [Unione risorse Sling](/help/implementing/developing/introduction/sling-resource-merger.md) consente l’ereditarietà.
+Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre la funzionalità standard disponibile in `/libs` con la funzionalità personalizzata in `/apps`. Durante la creazione di una sovrapposizione, non è necessaria una copia 1:1 dell&#39;originale, in quanto [Sling resource merger](/help/implementing/developing/introduction/sling-resource-merger.md) consente l&#39;ereditarietà.
 
 Le sovrapposizioni possono essere utilizzate in molti modi per estendere le console AEM. Nelle sezioni seguenti vengono forniti diversi esempi.
 
@@ -31,7 +31,7 @@ Vedi anche [Sovrapposizioni per Adobe Experience Manager as a Cloud Service](/he
 
 >[!TIP]
 >
->Se ti interessano le opzioni per personalizzare l’esperienza di authoring, consulta [Personalizzazione dell’authoring delle pagine](/help/implementing/developing/extending/page-authoring.md).
+>Se ti interessano le opzioni per personalizzare l&#39;esperienza di authoring, consulta [Personalizzazione dell&#39;authoring delle pagine](/help/implementing/developing/extending/page-authoring.md).
 
 ## Personalizzazione della vista predefinita per una console {#customizing-the-default-view-for-a-console}
 
@@ -63,7 +63,7 @@ Puoi personalizzare la vista predefinita (colonna, scheda, elenco) per una conso
 
 Puoi creare componenti personalizzati e includere le librerie client corrispondenti per le azioni personalizzate.
 
-* Ad esempio, potrebbe essere utile creare un’ **Promuovi ai social media** azione in:
+* Ad esempio, potrebbe essere utile creare un&#39;azione **Promuovi a social media** in:
 
    * `/apps/wcm/core/clientlibs/sites/js/socialmedia.js`
 
@@ -83,7 +83,7 @@ Ad esempio, potrebbe essere utile creare un componente per controllare le condiz
 
 * `/apps/myapp/components/renderconditions/group`
 
-Per applicarli al **Crea sito** azione nella console sites:
+Per applicare questi elementi all&#39;azione **Crea sito** nella console Sites:
 
 * `/libs/wcm/core/content/sites`
 
@@ -95,7 +95,7 @@ Per applicarli al **Crea sito** azione nella console sites:
 
    * `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-Utilizzando le proprietà su questo nodo è possibile definire `groups` è autorizzato a eseguire l’azione specifica; ad esempio, `administrators`
+Utilizzando le proprietà in questo nodo è possibile definire il `groups` consentito per eseguire l&#39;azione specifica, ad esempio `administrators`
 
 ### Personalizzazione delle colonne nella vista a elenco {#customizing-columns-in-list-view}
 
@@ -109,7 +109,7 @@ Per personalizzare le colonne nella vista a elenco:
 
 1. Aggiungi le nuove colonne o rimuovi quelle esistenti.
 
-Se desideri inserire dati aggiuntivi, devi scrivere un [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un `pageInfoProviderType` proprietà.
+Per inserire dati aggiuntivi, è necessario scrivere un [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con una proprietà `pageInfoProviderType`.
 
 >[!NOTE]
 >
@@ -119,4 +119,4 @@ Se desideri inserire dati aggiuntivi, devi scrivere un [PageInfoProvider](https:
 
 Quando utilizzi una console, un utente deve spesso selezionare tra risorse quali pagine, componenti o risorse. Può assumere la forma di un elenco dal quale l’autore deve scegliere un elemento.
 
-Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Consulta [Personalizzazione dell’authoring delle pagine](/help/implementing/developing/extending/page-authoring.md#filtering-resources) per i dettagli.
+Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Per ulteriori informazioni, vedere [Personalizzazione dell&#39;authoring delle pagine](/help/implementing/developing/extending/page-authoring.md#filtering-resources).

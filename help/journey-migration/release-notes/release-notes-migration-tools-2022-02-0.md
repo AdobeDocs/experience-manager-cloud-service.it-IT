@@ -1,6 +1,6 @@
 ---
-title: Note sulla versione 2022.2.0 degli strumenti di migrazione nell’AEM as a Cloud Service
-description: Note sulla versione 2022.2.0 degli strumenti di migrazione nell’AEM as a Cloud Service
+title: Note sulla versione 2022.2.0 degli strumenti di migrazione in AEM as a Cloud Service
+description: Note sulla versione 2022.2.0 degli strumenti di migrazione in AEM as a Cloud Service
 feature: Release Information
 exl-id: b1cd871d-c71e-4902-a97e-2c859f6a4da4
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 55%
 
 ---
 
-# Note sulla versione 2022.2.0 degli strumenti di migrazione nell’AEM as a Cloud Service {#release-notes}
+# Note sulla versione 2022.2.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2022.2.0 degli strumenti di migrazione in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione degli strumenti di migrazione in AEM as a Cloud Service 2022.2.0.
 
 ## Analisi delle best practice {#bpa-release}
 
@@ -40,7 +40,7 @@ La data di pubblicazione dello strumento Trasferimento contenuti v1.8.6 è il 3 
 
 ### Novità {#what-is-new-ctt}
 
-* Convalida del contenuto: gli utenti possono determinare in modo affidabile se tutto il contenuto estratto dallo strumento Content Transfer è stato correttamente acquisito nell’istanza di destinazione. Per utilizzare questa funzione, abilitala in `System Console` dell’ambiente AEM di origine. Consulta [Convalida dei trasferimenti di contenuto - Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started) per ulteriori dettagli.
+* Convalida del contenuto: gli utenti possono determinare in modo affidabile se tutto il contenuto estratto dallo strumento Content Transfer è stato correttamente acquisito nell’istanza di destinazione. Per utilizzare questa funzione, abilitarla in `System Console` dell&#39;ambiente AEM di origine. Per ulteriori dettagli, vedere [Guida introduttiva alla convalida dei trasferimenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started).
 
 ### Correzioni di bug {#bug-fixes-ctt}
 

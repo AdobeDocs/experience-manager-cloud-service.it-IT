@@ -6,7 +6,7 @@ role: Admin, Developer
 source-git-commit: 594f0e6ec88851c86134be8d5d7f1719f74ddf4f
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -18,19 +18,19 @@ Il componente Carosello prodotto viene esteso durante questa esercitazione. Come
 
 1. Passa alla home page del sito, ad esempio [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 1. Inserisci un nuovo componente Carosello prodotto nel contenitore di layout principale della pagina.
-   ![Componente Carosello prodotto](/help/commerce-cloud/assets/product-carousel-component.png)
+   ![Componente Carosello prodotti](/help/commerce-cloud/assets/product-carousel-component.png)
 1. Espandi il pannello laterale (se non è già attivato) e imposta il menu a discesa di ricerca risorse su **Prodotti**.
      ![Prodotti carosello](/help/commerce-cloud/assets/carousel-products.png)    
 1. Dovrebbe essere visualizzato un elenco dei prodotti disponibili da un’istanza di Adobe Commerce connessa.
    ![Istanza connessa](/help/commerce-cloud/assets/connected-instance.png)
 1. I prodotti verranno visualizzati come segue con le proprietà predefinite:
-   ![Prodotto mostrato con proprietà](/help/commerce-cloud/assets/discount.png)
+   ![Prodotto visualizzato con proprietà](/help/commerce-cloud/assets/discount.png)
 
 ## Aggiornare il modello Sling {#update-sling-model}
 
 Puoi estendere la logica di business del carosello di prodotti implementando un modello Sling:
 
-1. Nell’IDE, passa sotto il modulo core per `core/src/main/java/com/venia/core/models/commerce` e creare un’interfaccia CustomCarousel che estenda l’interfaccia CIF ProductCarousel:
+1. Nell&#39;IDE, passa al modulo core fino a `core/src/main/java/com/venia/core/models/commerce` e crea un&#39;interfaccia CustomCarousel che estende l&#39;interfaccia CIF ProductCarousel:
 
    ```
    package com.venia.core.models.commerce;
@@ -38,8 +38,8 @@ Puoi estendere la logica di business del carosello di prodotti implementando un 
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
-1. Quindi, crea una classe di implementazione `CustomCarouselImpl.java` a `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
-Il pattern di delega per modelli Sling consente `CustomCarouselImpl` a riferimento `ProductCarousel` tramite il `sling:resourceSuperType` proprietà:
+1. Creare quindi una classe di implementazione `CustomCarouselImpl.java` in `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
+Il modello di delega per modelli Sling consente a `CustomCarouselImpl` di fare riferimento al modello `ProductCarousel` tramite la proprietà `sling:resourceSuperType`:
 
    ```
    @Self
@@ -47,7 +47,7 @@ Il pattern di delega per modelli Sling consente `CustomCarouselImpl` a riferimen
    private ProductCarousel productCarousel;
    ```
 
-1. L’annotazione @PostConstruct assicura che questo metodo venga chiamato quando il modello Sling viene inizializzato. La query GraphQL del prodotto è già stata estesa utilizzando il metodo extendProductQueryWith per recuperare gli attributi. Aggiorna la query GraphQL per includere l’attributo nella query parziale:
+1. L’annotazione @PostConstruct assicura che questo metodo venga chiamato quando il modello Sling viene inizializzato. La query GraphQL del prodotto è già stata estesa utilizzando il metodo extendProductQueryWith per recuperare gli attributi. Aggiorna la query GraphQL per includere  attributo nella query parziale:
 
    ```
    @PostConstruct
@@ -62,7 +62,7 @@ Il pattern di delega per modelli Sling consente `CustomCarouselImpl` a riferimen
    }
    ```
 
-   Nel codice riportato sopra, il `addCustomSimpleField` viene utilizzato per recuperare `accessory_gemstone_addon` attributo.
+   Nel codice riportato sopra, `addCustomSimpleField` viene utilizzato per recuperare l&#39;attributo `accessory_gemstone_addon`.
 
 ## Personalizzazione del markup {#customize-markup}
 
@@ -70,7 +70,7 @@ Per personalizzare ulteriormente il markup:
 
 1. Crea una copia di `productcard.html` da `/apps/core/cif/components/commerce/productcarousel/v1/productcarousel` (percorso crxde del componente core) al modulo ui.apps `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`.
 
-1. Modifica `productcard.html` per chiamare l’attributo personalizzato, indicato nella classe di implementazione:
+1. Modificare `productcard.html` per chiamare l&#39;attributo personalizzato, indicato nella classe di implementazione:
 
    ```xml
    ..
@@ -86,4 +86,4 @@ Per personalizzare ulteriormente il markup:
    ..
    ```
 
-1. Salva le modifiche e distribuisci gli aggiornamenti a AEM utilizzando il comando Maven, da un terminale della riga di comando. Potrai visualizzare l’attributo personalizzato `accessory_gemstone_addon` per i prodotti selezionati nella pagina.
+1. Salva le modifiche e distribuisci gli aggiornamenti a AEM utilizzando il comando Maven, da un terminale della riga di comando. Nella pagina verrà visualizzato il valore dell&#39;attributo personalizzato `accessory_gemstone_addon` per i prodotti selezionati.

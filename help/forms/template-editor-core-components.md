@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Creare un modello di modulo adattivo basato sui componenti core {#adaptive-form-templates}
 
-Quando si crea un modulo, si aggiungono campi e componenti per definire la struttura del modulo, il contenuto e le azioni nell’editor. È possibile aggiungere campi e componenti in `guideRootPanel` del contenitore di moduli. Con Editor modelli è possibile creare un modello contenente la struttura di base e il contenuto iniziale che gli autori possono utilizzare per creare i moduli.
+Quando si crea un modulo, si aggiungono campi e componenti per definire la struttura del modulo, il contenuto e le azioni nell’editor. Aggiungere campi e componenti in `guideRootPanel` del contenitore del modulo. Con Editor modelli è possibile creare un modello contenente la struttura di base e il contenuto iniziale che gli autori possono utilizzare per creare i moduli.
 
 Ad esempio, si desidera che tutti gli autori di moduli dispongano di determinate caselle di testo, pulsanti di spostamento e un pulsante di invio in un modulo di iscrizione. È possibile creare un modello con i componenti che gli autori possono utilizzare per creare un modulo coerente con altri moduli di iscrizione. Quando gli autori utilizzano il modello per creare un modulo adattivo, il nuovo modulo eredita la struttura e i componenti specificati nel modello. Editor modelli consente di:
 
@@ -28,33 +28,33 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Prerequisito
 
-**Abilitare i componenti core Forms adattivi per il tuo ambiente**: quando crei un programma, i Componenti core adattivi di Forms sono già abilitati per il tuo ambiente. Se disponi di un ambiente di as a Cloud Service modulo basato su [AEM Archetipo 39 o precedente](https://github.com/adobe/aem-project-archetype), [Abilitare i componenti core Forms adattivi per il tuo ambiente](enable-adaptive-forms-core-components.md).
+**Abilita i componenti core adattivi di Forms per il tuo ambiente**: quando crei un programma, i componenti core adattivi di Forms sono già abilitati per il tuo ambiente. Se disponi di un ambiente di tipo Form as a Cloud Service basato su [Archetipo AEM 39 o versioni precedenti](https://github.com/adobe/aem-project-archetype), [Abilita i componenti core Adaptive Forms per il tuo ambiente](enable-adaptive-forms-core-components.md).
 
 >[!NOTE]
 >
-> Quando si distribuisce l’ambiente Forms as a Cloud Service basato su Archetipo 45, il **Forms adattivo (componente core)** I modelli e i temi basati sui componenti core vengono aggiunti al tuo ambiente.
+> Quando si distribuisce l&#39;ambiente Forms as a Cloud Service basato su Archetipo 45, i **modelli di Forms adattivo (Componente core)** e i temi basati su componenti core vengono aggiunti all&#39;ambiente.
 
 ## Utilizzo del modello {#working-with-templates}
 
-Per accedere all’editor modelli dal menu Strumenti, vai a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Modelli]**. In questo caso, i modelli sono organizzati in cartelle abilitate per i modelli modificabili.
+Puoi accedere all&#39;editor modelli dal menu Strumenti passando a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Modelli]**. In questo caso, i modelli sono organizzati in cartelle abilitate per i modelli modificabili.
 
 >[!NOTE]
 >
 > Puoi trovare i modelli modificabili basati su componenti core nelle cartelle specifiche dei componenti core.
 
-In Experience Manager viene fornita una cartella globale per organizzare i modelli. Tuttavia, non è attivato per impostazione predefinita. Puoi richiedere all’amministratore di abilitare la cartella globale o di creare una cartella per i modelli. Per ulteriori informazioni su come creare cartelle, consulta [Cartelle modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).
+In Experience Manager viene fornita una cartella globale per organizzare i modelli. Tuttavia, non è attivato per impostazione predefinita. Puoi richiedere all’amministratore di abilitare la cartella globale o di creare una cartella per i modelli. Per ulteriori informazioni su come creare cartelle, vedere [Cartelle modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).
 
 ## Creazione di un modello {#create-template}
 
 Dopo aver creato una cartella, aprila ed esegui i seguenti passaggi per creare un modello:
 
-1. Seleziona **[!UICONTROL Crea]** all’interno della cartella creata.
-1. In **[!UICONTROL Scegli un tipo di modello]** sezione, seleziona **[!UICONTROL Modello per modulo adattivo (componente core)]** e seleziona **[!UICONTROL Successivo]**.
+1. Seleziona **[!UICONTROL Crea]** all&#39;interno della cartella creata.
+1. Nella sezione **[!UICONTROL Scegli un tipo di modello]**, seleziona **[!UICONTROL Modello modulo adattivo (componente core)]** e **[!UICONTROL Successivo]**.
 
-1. In **[!UICONTROL Dettagli Modello]** , fornisci un **Titolo modello** e seleziona **[!UICONTROL Crea]**.
+1. Nella sezione **[!UICONTROL Dettagli modello]**, fornisci un **Titolo modello** e seleziona **[!UICONTROL Crea]**.
 Puoi anche fornire una descrizione.
 
-1. Seleziona **[!UICONTROL Fine]** per tornare alla console, oppure seleziona **[!UICONTROL Apri]** per aprire il modello nell’editor.
+1. Seleziona **[!UICONTROL Fine]** per tornare alla console oppure seleziona **[!UICONTROL Apri]** per aprire il modello nell&#39;editor.
 
 ## Interfaccia utente dell’editor modelli {#template-editor-ui}
 
@@ -64,13 +64,13 @@ Quando apri un modello per la modifica, puoi vedere i seguenti componenti dell�
 Contiene le seguenti opzioni:
 
    * **Attiva/Disattiva pannello laterale**: consente di mostrare o nascondere la barra laterale.
-   * **Informazioni pagina**: consente di specificare informazioni quali l’ora di pubblicazione/annullamento della pubblicazione, le miniature, le librerie lato client, i criteri di pagina e la libreria lato client della progettazione della pagina.
+   * **Informazioni pagina**: consente di specificare informazioni quali l&#39;ora di pubblicazione/annullamento della pubblicazione, le miniature, le librerie lato client, i criteri di pagina e la libreria lato client di progettazione pagina.
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **Selettore modalità:** Consente di modificare la modalità. Puoi scegliere **[!UICONTROL Struttura]** modalità, **[!UICONTROL Contenuto iniziale]**, **[!UICONTROL Controllo layout]** modalità. La modalità Struttura consente di aggiungere e personalizzare intestazione e piè di pagina. La modalità Contenuto iniziale consente di personalizzare il contenuto del modulo.
-   * **Anteprima:** Consente di visualizzare in anteprima l’aspetto del modello quando lo si pubblica. Potete utilizzare Selettore livello (Layer Selector) e Anteprima (Preview) per attivare o disattivare le modalità di modifica e anteprima.
-* **Barra laterale:** Fornisce i browser Contenuto, Proprietà, Assets e Componenti.
-* **Barra degli strumenti del componente:** Quando selezioni un componente, viene visualizzata una barra degli strumenti che consente di personalizzarlo.
-* **Pagina**: l’area in cui aggiungere contenuto per creare il modello.
+   * **Selettore modalità:** consente di modificare la modalità. È possibile scegliere la modalità **[!UICONTROL Struttura]**, **[!UICONTROL Contenuto iniziale]**, **[!UICONTROL Controllo layout]**. La modalità Struttura consente di aggiungere e personalizzare intestazione e piè di pagina. La modalità Contenuto iniziale consente di personalizzare il contenuto del modulo.
+   * **Anteprima:** consente di visualizzare in anteprima l&#39;aspetto del modello quando viene pubblicato. Potete utilizzare Selettore livello (Layer Selector) e Anteprima (Preview) per attivare o disattivare le modalità di modifica e anteprima.
+* **Barra laterale:** fornisce i browser Contenuto, Proprietà, Assets e Componenti.
+* **Barra degli strumenti del componente:** Quando si seleziona un componente, viene visualizzata una barra degli strumenti che consente di personalizzare il componente.
+* **Pagina**: l&#39;area in cui aggiungere contenuto per creare il modello.
 
 <!-- See [Introduction to authoring Adaptive Forms](introduction-forms-authoring.md) to understand the Touch UI editor. -->
 
@@ -121,9 +121,9 @@ Ad esempio, puoi aggiungere il componente intestazione nel modello. Quando selez
 
 Quando l’opzione Contenuto iniziale è selezionata, il Contenitore di moduli adattivi del modello si apre come un Modulo adattivo da modificare. Ti consente di creare un contenuto predefinito che può essere modificato durante la creazione di un Forms adattivo associato al modello. Analogamente all’authoring di un modulo adattivo, puoi specificare le impostazioni iniziali, ad esempio selezionare un tema e Inviare azioni.
 
-Gli autori di moduli utilizzano tale modulo come base per la creazione di un modulo. La struttura del flusso di contenuto è specificata nel livello Contenuto iniziale del modello. Per passare alla modifica del contenuto iniziale del modello di modulo, prima di Anteprima nella barra degli strumenti della pagina, seleziona ![elenco a discesa area di lavoro](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenuto iniziale]**.
+Gli autori di moduli utilizzano tale modulo come base per la creazione di un modulo. La struttura del flusso di contenuto è specificata nel livello Contenuto iniziale del modello. Per passare alla modifica del contenuto iniziale del modello di modulo, prima di Anteprima nella barra degli strumenti della pagina, selezionare ![area di lavoro-a discesa](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenuto iniziale]**.
 
-![Intestazione e piè di pagina aggiunti al livello Contenuto iniziale](assets/header-and-footer.png)
+![Intestazione e piè di pagina aggiunti nel livello contenuto iniziale](assets/header-and-footer.png)
 
 Nel livello Contenuto iniziale, puoi creare il modello di modulo adattivo utilizzato dagli autori come base. La creazione di un modello è simile alla creazione di un modulo e consente di utilizzare le opzioni disponibili nella barra laterale. Sidebar fornisce contenuti, proprietà, risorse e browser di componenti.
 
@@ -139,33 +139,33 @@ Quando modifichi un modello puoi definire il layout, che utilizza il layout dina
 
 ![Contenitore di layout nel livello struttura](/help/forms/assets/layout-template-core-component.png)
 
-Consulta l’articolo [informazioni sul layout dinamico](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en) per ulteriori informazioni.
+Per ulteriori informazioni, consulta l&#39;articolo [informazioni sul layout dinamico](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en).
 
 ## Abilitazione del modello {#enabling-the-template}
 
 Quando create un modello, questo viene aggiunto come bozza. Abilita il modello per utilizzarlo per creare Forms adattivo. Per abilitare un modello:
 
-1. Accedi a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Modelli]**e aprire la cartella in cui è stato creato il modello.
+1. Passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Modelli]** e apri la cartella in cui hai creato il modello.
 Il modello creato è contrassegnato come Bozza.
-1. Seleziona il modello e seleziona **[!UICONTROL Abilita]** nella barra degli strumenti.
+1. Selezionare il modello e selezionare **[!UICONTROL Abilita]** nella barra degli strumenti.
 Quando crei un modulo adattivo, puoi visualizzare il modello elencato quando ti viene richiesto di scegliere un modello.
 
 ## Importazione o esportazione di un modello {#importing-or-exporting-a-template}
 
-Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando si importa il modulo su un altro [!DNL AEM Forms] istanza, viene importato senza il relativo modello. Se un modulo viene importato ma il relativo modello non è disponibile, il modulo non viene sottoposto a rendering. Puoi creare un pacchetto del modello personalizzato da `/conf` nodo in `https://<server>:<port>/crx/packmgr`, e portarlo in [!DNL AEM Forms] istanza in cui si desidera caricare il modulo. È inoltre possibile [Creare un modello utilizzando l’archetipo AEM e distribuirlo nell’istanza dei Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
+Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando si importa il modulo in un&#39;istanza [!DNL AEM Forms] diversa, il modulo viene importato senza il relativo modello. Se un modulo viene importato ma il relativo modello non è disponibile, il modulo non viene sottoposto a rendering. È possibile creare un pacchetto del modello personalizzato dal nodo `/conf` in `https://<server>:<port>/crx/packmgr` e portarlo nell&#39;istanza [!DNL AEM Forms] in cui si desidera caricare il modulo. Puoi anche [creare un modello utilizzando l&#39;archetipo AEM e distribuirlo nell&#39;istanza dei Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >
-> * Puoi anche configurare il [!UICONTROL Documento record] direttamente dall’editor di moduli adattivi o dall’editor di modelli di moduli adattivi. Per ulteriori informazioni, consulta [Genera documento di record per Forms adattivo](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * Puoi anche configurare il modello [!UICONTROL Documento di record] direttamente dall&#39;editor di moduli adattivi o dall&#39;editor di modelli di moduli adattivi. Per ulteriori informazioni, vedere [Generare un documento di record per Forms adattivo](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 ## Associare uno schema modello dati modulo a un modello {#associating-form-data-model-schema-in-template}
 
-Gli autori possono associare una [!UICONTROL Schema modello dati modulo] a un modello di modulo adattivo nell’editor di modelli. Consente agli autori di selezionare uno schema dall’editor modelli. Quando si associa uno schema a un modello e un autore di moduli crea un modulo basato su tale modello, lo schema viene preselezionato per il modulo. Consente agli autori di moduli di regolare l’utilizzo dello schema e consente di risparmiare tempo anche agli autori di moduli. Per selezionare uno schema di modello dati modulo nell’editor modelli:
+Gli autori possono associare uno [!UICONTROL schema modello dati modulo] a un modello modulo adattivo nell&#39;editor modelli. Consente agli autori di selezionare uno schema dall’editor modelli. Quando si associa uno schema a un modello e un autore di moduli crea un modulo basato su tale modello, lo schema viene preselezionato per il modulo. Consente agli autori di moduli di regolare l’utilizzo dello schema e consente di risparmiare tempo anche agli autori di moduli. Per selezionare uno schema di modello dati modulo nell’editor modelli:
 
-1. Seleziona **[!UICONTROL Browser contenuti]** sul lato sinistro.
+1. Selezionare **[!UICONTROL Browser contenuti]** sul lato sinistro.
 1. Vai al contenitore del modulo **[!UICONTROL Impostazione]**.
 1. Seleziona **[!UICONTROL Modello dati]**.
-1. Scegli il modello dati del modulo (FDM) tramite **[!UICONTROL Seleziona modello dati modulo]** e salva la configurazione.
+1. Scegli il tuo modello dati modulo (FDM) tramite **[!UICONTROL Seleziona modello dati modulo]** e salva la configurazione.
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 
@@ -202,7 +202,7 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### Aggiunta di proprietà personalizzate ai componenti di moduli adattivi tramite i criteri dei modelli
 
-Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core del modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nel **[!UICONTROL proprietà]** sezione della rappresentazione headless del componente. Consentono di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare diverse rappresentazioni di un componente moduli headless su piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core del modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione **[!UICONTROL properties]** del rendering headless del componente. Consentono di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare diverse rappresentazioni di un componente moduli headless su piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
 I passaggi per aggiungere proprietà personalizzate ai campi del componente core Modulo adattivo sono i seguenti:
 
@@ -213,33 +213,33 @@ I passaggi per aggiungere proprietà personalizzate ai campi del componente core
 
 1. Vai a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Modelli]**.
 1. Seleziona il modello basato sui Componenti core e aprilo in modalità di modifica.
-1. Fai clic su **[!UICONTROL Policy]** ![Policy](/help/forms/assets/Smock_FeedManagement_18_N.svg) icona di un campo del componente core Modulo adattivo in cui è necessario definire le proprietà personalizzate. Il **[!UICONTROL Campo modulo adattivo]** viene visualizzata.
-1. Seleziona la **[!UICONTROL Proprietà personalizzate]** scheda.
-1. Specifica la **[!UICONTROL Titolo criterio]** sotto **[!UICONTROL Policy]** sezione.
-1. Specifica la **[!UICONTROL Nome gruppo]** e aggiungi una coppia chiave-valore associata a un gruppo specifico. Il nome del gruppo è visibile agli autori del modulo nella finestra di dialogo per modifica di un componente. Se selezioni il nome del gruppo, ogni coppia chiave-valore associata è applicabile a un componente.
+1. Fai clic sull&#39;icona **[!UICONTROL Criterio]** ![Criterio](/help/forms/assets/Smock_FeedManagement_18_N.svg) di un campo del componente core modulo adattivo in cui è necessario definire le proprietà personalizzate. Viene visualizzata la finestra di dialogo **[!UICONTROL Campo modulo adattivo]**.
+1. Selezionare la scheda **[!UICONTROL Proprietà personalizzate]**.
+1. Specifica il **[!UICONTROL Titolo criterio]** nella sezione **[!UICONTROL Criteri]**.
+1. Specifica il **[!UICONTROL nome gruppo]** e aggiungi una coppia chiave-valore associata a un gruppo specifico. Il nome del gruppo è visibile agli autori del modulo nella finestra di dialogo per modifica di un componente. Se selezioni il nome del gruppo, ogni coppia chiave-valore associata è applicabile a un componente.
 1. Fai clic su **[Fine]**.
 
-![Aggiunta del nome del gruppo di proprietà personalizzate nell’editor modelli](/help/forms/assets/custom-properties-core-component.png)
+![Aggiunta del nome del gruppo di proprietà personalizzate nell&#39;editor modelli](/help/forms/assets/custom-properties-core-component.png)
 
-Quando si aggiunge almeno un gruppo di proprietà personalizzate utilizzando il criterio del modello, il **[!UICONTROL Avanzate]** diventa visibile nella finestra di dialogo Modifica di un componente core corrispondente.
+Quando aggiungi almeno un gruppo di proprietà personalizzate utilizzando il criterio del modello, la scheda **[!UICONTROL Avanzate]** diventa visibile nella finestra di dialogo Modifica di un componente core corrispondente.
 
 #### Seleziona un nome di gruppo personalizzato nella finestra di dialogo per modifica di un componente core {#select-a-custom-group-name}
 
 1. Aprire un modulo adattivo in modalità di modifica.
-1. Seleziona il componente per il quale sono state definite le proprietà personalizzate nell’editor di modelli e fai clic su ![icona_impostazioni](assets/configure-icon.svg) per aprire la finestra di dialogo per modifica del componente.
-1. Seleziona la **[!UICONTROL Avanzate]** scheda.
-1. Seleziona il nome del gruppo di proprietà personalizzato da **[!UICONTROL Selezione proprietà personalizzata]** a discesa. Tutti i nomi dei gruppi personalizzati definiti vengono inseriti automaticamente nell’elenco a discesa.
+1. Seleziona il componente per il quale sono state definite le proprietà personalizzate nell&#39;editor modelli e seleziona ![settings_icon](assets/configure-icon.svg) per aprire la finestra di dialogo per modifica del componente.
+1. Selezionare la scheda **[!UICONTROL Avanzate]**.
+1. Seleziona il nome del gruppo di proprietà personalizzate dal menu a discesa **[!UICONTROL Seleziona proprietà personalizzata]**. Tutti i nomi dei gruppi personalizzati definiti vengono inseriti automaticamente nell’elenco a discesa.
 1. Seleziona **[!UICONTROL Fine]** per salvare le proprietà.
 
 ![seleziona il nome del gruppo di proprietà personalizzato](/help/forms/assets/select-custom-properties-group-name.png)
 
 >[!NOTE]
 >
-> * Il **[!UICONTROL Proprietà personalizzate aggiuntive]** La casella di controllo consente di aggiungere in modo dinamico proprietà personalizzate specifiche del componente oltre a quelle fornite nel criterio del modello. La proprietà personalizzata del componente specifico ha la precedenza sulla proprietà personalizzata impostata nei criteri del modello quando i valori del nome chiave corrispondono.
+> * La casella di controllo **[!UICONTROL Proprietà personalizzate aggiuntive]** consente di aggiungere in modo dinamico proprietà personalizzate specifiche di un componente oltre a quelle fornite nel criterio del modello. La proprietà personalizzata del componente specifico ha la precedenza sulla proprietà personalizzata impostata nei criteri del modello quando i valori del nome chiave corrispondono.
 
 ## Creazione di un modulo adattivo utilizzando il modello {#creating-an-adaptive-form-using-the-template}
 
-Dopo aver creato e abilitato un modello, questo sarà disponibile nel gestore dei moduli al momento della creazione di un modulo adattivo. Per utilizzare un modello e creare un modulo adattivo, consulta [Creazione di un modulo adattivo basato su componenti core](/help/forms/creating-adaptive-form-core-components.md).
+Dopo aver creato e abilitato un modello, questo sarà disponibile nel gestore dei moduli al momento della creazione di un modulo adattivo. Per utilizzare un modello e creare un modulo adattivo, vedi [Creazione di un modulo adattivo basato su componenti core](/help/forms/creating-adaptive-form-core-components.md).
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}
 
@@ -280,7 +280,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## Best practice {#best-practices}
 
-* Crea modelli utilizzando i componenti basati su Componenti core, ad esempio Testo modulo adattivo, Contenitore modulo adattivo e altro ancora. Per informazioni sui componenti core Adaptive Forms: [fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it).
+* Crea modelli utilizzando i componenti basati su Componenti core, ad esempio Testo modulo adattivo, Contenitore modulo adattivo e altro ancora. Per ottenere informazioni sui componenti core di Forms adattivi, [fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it).
 * Limita il numero di modelli in modo che corrispondano ai tipi di modulo fondamentalmente diversi disponibili sui siti web
 * Fornisci la flessibilità e le funzionalità di configurazione necessarie ai componenti personalizzati utilizzati in un modello.
 

@@ -19,14 +19,14 @@ Scopri come utilizzare i modelli di sito AEM per predefinire la struttura del si
 
 Per consentire agli amministratori dell’AEM di creare rapidamente siti adatti alle esigenze aziendali, l’AEM supporta la creazione di nuovi siti utilizzando modelli di sito e temi del sito.
 
-* Un **Modello per sito AEM** in genere contiene informazioni sul contenuto e sulla struttura del sito di base e sullo stile del sito, note come tema del sito, per iniziare rapidamente a creare un nuovo sito. I modelli sono efficaci perché sono riutilizzabili e personalizzabili. Inoltre, poiché è possibile disporre di più modelli durante l’installazione di AEM, è possibile creare siti diversi per soddisfare le varie esigenze aziendali.
-* Un **Tema del sito AEM** è un pacchetto contenente le risorse CSS, JavaScript e statiche che definiscono lo stile del sito AEM AEM e ne rispettano la struttura.
+* Un **modello di sito AEM** contiene in genere informazioni sul contenuto e sulla struttura del sito di base e sullo stile del sito, note come tema del sito, per avviare rapidamente un nuovo sito. I modelli sono efficaci perché sono riutilizzabili e personalizzabili. Inoltre, poiché è possibile disporre di più modelli durante l’installazione di AEM, è possibile creare siti diversi per soddisfare le varie esigenze aziendali.
+* Un **tema del sito AEM** è un pacchetto contenente le risorse CSS, JavaScript e statiche che definiscono lo stile del sito AEM e sono conformi alla struttura di un tema del sito AEM.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Perché [creazione di siti](/help/sites-cloud/administering/site-creation/create-site.md) In genere è responsabilità dell’amministratore dell’AEM; per ulteriori dettagli sulla personalizzazione di modelli e temi del sito, consulta la documentazione di amministrazione.
+Poiché la [creazione del sito](/help/sites-cloud/administering/site-creation/create-site.md) è in genere responsabilità dell&#39;amministratore AEM, per ulteriori dettagli sulla personalizzazione di modelli e temi del sito, vedere la documentazione di amministrazione.
 
-* [Modelli del sito](/help/sites-cloud/administering/site-creation/site-templates.md) - Scopri come utilizzare i modelli di sito AEM per predefinire la struttura del sito e i contenuti iniziali per creare rapidamente nuovi siti.
+* [Modelli di sito](/help/sites-cloud/administering/site-creation/site-templates.md) - Scopri come utilizzare i modelli di sito AEM per predefinire la struttura del sito e il contenuto iniziale per creare rapidamente nuovi siti.
 * [Temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md) - Scopri come utilizzare i temi del sito AEM per personalizzare lo stile e la progettazione del sito.
 
 >[!TIP]

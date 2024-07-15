@@ -24,7 +24,7 @@ Questo documento fornisce una panoramica della definizione di un modello, dei ca
 
 >[!TIP]
 >
->Se non sai come dotare l’app dell’editor universale, consulta il documento [Panoramica di Universal Editor per sviluppatori AEM.](/help/implementing/universal-editor/developer-overview.md)
+>Se non sai come gestire l&#39;app per l&#39;editor universale, consulta il documento [Panoramica dell&#39;editor universale per gli sviluppatori AEM.](/help/implementing/universal-editor/developer-overview.md)
 
 ## Struttura definizione modello {#model-structure}
 
@@ -41,9 +41,9 @@ La definizione del modello è una struttura JSON che inizia con un array di mode
 ]
 ```
 
-Consulta la **[Campi](#fields)** per ulteriori informazioni su come definire le `fields` array.
+Consulta la sezione **[Fields](#fields)** di questo documento per ulteriori informazioni su come definire l&#39;array `fields`.
 
-Per utilizzare la definizione del modello con un componente, `data-aue-model` può essere utilizzato.
+Per utilizzare la definizione del modello con un componente, è possibile utilizzare l&#39;attributo `data-aue-model`.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
@@ -105,7 +105,7 @@ Di seguito sono elencati i tipi di componenti che è possibile utilizzare per il
 | [Riferimento](#reference) | `reference` |
 | [Formato RTF](#rich-text) | `richtext` |
 | [Seleziona](#select) | `select` |
-| [Linguetta](#tab) | `tab` |
+| [Scheda](#tab) | `tab` |
 | [Testo](#text) | `text` |
 
 #### Tag AEM {#aem-tag}
@@ -244,7 +244,7 @@ Simile a un booleano, un tipo di componente gruppo casella di controllo consente
 
 >[!TAB Schermata]
 
-![Schermata del tipo di componente del gruppo di caselle di controllo](assets/component-types/checkbox-group.png)
+![Schermata del tipo di componente gruppo casella di controllo](assets/component-types/checkbox-group.png)
 
 >[!ENDTABS]
 
@@ -291,13 +291,13 @@ Un tipo di componente contenitore consente il raggruppamento di componenti. Offr
 
 >[!TAB Schermata]
 
-![Schermata del tipo di componente del contenitore](assets/component-types/container.png)
+![Schermata del tipo di componente contenitore](assets/component-types/container.png)
 
 >[!ENDTABS]
 
 #### Frammenti di contenuto {#content-fragment}
 
-Il selettore Frammento di contenuto può essere utilizzato per selezionare un [Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) e relative varianti (se necessario). Offre una configurazione aggiuntiva.
+Il selettore Frammento di contenuto può essere utilizzato per selezionare un [Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) e le relative varianti (se necessario). Offre una configurazione aggiuntiva.
 
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
@@ -423,7 +423,7 @@ Offre inoltre un tipo di convalida aggiuntivo.
 
 #### Frammento di esperienza {#experience-fragment}
 
-Il selettore Frammento esperienza può essere utilizzato per selezionare un [Frammento esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md) e relative varianti (se necessario). Offre una configurazione aggiuntiva.
+Il selettore Frammento esperienza può essere utilizzato per selezionare un [Frammento esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md) e le relative varianti (se necessario). Offre una configurazione aggiuntiva.
 
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
@@ -452,7 +452,7 @@ Il selettore Frammento esperienza può essere utilizzato per selezionare un [Fra
 
 >[!TAB Schermata]
 
-![Schermata del selettore Frammenti esperienza](assets/component-types/aem-experience-fragment.png)
+![Schermata del selettore frammenti esperienza](assets/component-types/aem-experience-fragment.png)
 
 >[!ENDTABS]
 
@@ -651,7 +651,7 @@ Il testo RTF consente l’inserimento di testo RTF su più righe. Offre tipi di 
 | Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
 | `maxSize` | `number` | Numero massimo di caratteri consentito | No |
-| `customErrorMsg` | `string` | Messaggio che verrà visualizzato se `maxSize` è stato superato | No |
+| `customErrorMsg` | `string` | Messaggio che verrà visualizzato se `maxSize` viene superato | No |
 
 >[!BEGINTABS]
 
@@ -725,7 +725,7 @@ Un tipo di componente seleziona consente di selezionare una singola opzione da u
 
 >[!TAB Schermata]
 
-![Schermata di selezione del tipo di componente](assets/component-types/select.png)
+![Schermata del tipo di componente selezionato](assets/component-types/select.png)
 
 >[!ENDTABS]
 
@@ -733,7 +733,7 @@ Un tipo di componente seleziona consente di selezionare una singola opzione da u
 
 Un tipo di componente Scheda consente di raggruppare altri campi di input in più schede per migliorare l’organizzazione del layout per gli autori.
 
-A `tab` definizione può essere considerata come un separatore nell’array di `fields`. Tutto ciò che viene dopo un `tab` verrà inserito in quella scheda fino a quando non verrà `tab` viene rilevato, dopo di che i seguenti elementi verranno inseriti nella nuova scheda.
+Una definizione di `tab` può essere considerata come un separatore nell&#39;array di `fields`. Tutto ciò che arriva dopo un `tab` verrà inserito in quella scheda fino a quando non si incontra un nuovo `tab`, dopo di che i seguenti elementi verranno inseriti nella nuova scheda.
 
 Se desideri che gli elementi vengano visualizzati sopra tutte le schede, è necessario definirli prima di qualsiasi scheda.
 
@@ -786,7 +786,7 @@ Il testo consente di inserire una singola riga di testo.  Include tipi di conval
 | `minLength` | `number` | Numero minimo di caratteri consentito | No |
 | `maxLength` | `number` | Numero massimo di caratteri consentito | No |
 | `regExp` | `string` | Espressione regolare che deve corrispondere al testo di input | No |
-| `customErrorMsg` | `string` | Messaggio che verrà visualizzato se `minLength`, `maxLength`, e/o `regExp` è/sono violato/i | No |
+| `customErrorMsg` | `string` | Messaggio che verrà visualizzato se `minLength`, `maxLength` e/o `regExp` sono violati | No |
 
 >[!BEGINTABS]
 

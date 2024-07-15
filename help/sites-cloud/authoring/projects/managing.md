@@ -16,7 +16,7 @@ ht-degree: 82%
 
 La funzione Progetti consente di organizzare un progetto raggruppando le risorse in un’unica entità.
 
-In **Progetti** , puoi accedere ai tuoi progetti e agire su di essi:
+Nella console **Progetti** puoi accedere ai tuoi progetti e agire di conseguenza:
 
 ![Console Progetti](/help/sites-cloud/authoring/assets/projects-console.png)
 
@@ -36,12 +36,12 @@ Con AEM vengono forniti i seguenti modelli tra cui scegliere alla creazione di u
 
 La procedura di creazione di un progetto è la stessa per ciascun progetto. La differenza tra i tipi di progetti include i [ruoli utente](/help/sites-cloud/authoring/projects/overview.md) e i [flussi di lavoro](/help/sites-cloud/authoring/projects/workflows.md) disponibili.  Per creare un progetto:
 
-1. In entrata **Progetti**, seleziona **Crea** per aprire **Crea progetto** procedura guidata:
+1. In **Progetti**, seleziona **Crea** per aprire la procedura guidata **Crea progetto**:
 1. Seleziona un modello e fai clic su **Avanti**.
 
    ![Creazione di un progetto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Definisci il **Titolo** e **Descrizione** e aggiungi **Miniatura** immagine, se necessario. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
+1. Definisci **Titolo** e **Descrizione** e aggiungi un&#39;immagine **Miniatura**, se necessario. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
 
    ![Aggiunta di dettagli al progetto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -54,7 +54,7 @@ Poiché i progetti consentono di raggruppare risorse in un’unica entità, è p
 Per associare le risorse a un progetto:
 
 1. Apri il progetto dalla console **Progetti**.
-1. Seleziona **Aggiungi sezione** e seleziona il riquadro da collegare al progetto. È possibile selezionare tra più tipi di riquadri.
+1. Seleziona **Aggiungi riquadro** e seleziona il riquadro da collegare al progetto. È possibile selezionare tra più tipi di riquadri.
 
    ![Aggiunta di un riquadro a un progetto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
@@ -88,7 +88,7 @@ Per alcuni riquadri, è possibile aggiungere più di un oggetto. Ad esempio, è 
 
 Per aggiungere elementi a un riquadro:
 
-1. In entrata **Progetti**, individua il progetto e seleziona la freccia giù nella sezione a cui desideri aggiungere un elemento.
+1. In **Progetti**, passa al progetto e seleziona la freccia giù nel riquadro a cui desideri aggiungere un elemento.
 
    ![Aggiungere un elemento a un riquadro](/help/sites-cloud/authoring/assets/project-workflows.png)
 
@@ -114,7 +114,7 @@ Per aprire un riquadro e visualizzare o modificare gli elementi:
 
 ### Visualizzazione della timeline di un progetto {#viewing-a-project-timeline}
 
-La timeline di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse del progetto. Per visualizzare la timeline del progetto, seleziona **Timeline**, quindi entra in modalità di selezione e seleziona il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Seleziona **Timeline** per tornare al **Progetti** console.
+La timeline di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse del progetto. Per visualizzare la sequenza temporale del progetto, seleziona **Sequenza temporale**, quindi entra nella modalità di selezione e seleziona il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Seleziona **Timeline** per tornare alla console **Progetti**.
 
 ![Timeline del progetto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 

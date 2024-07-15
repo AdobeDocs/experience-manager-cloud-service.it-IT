@@ -20,11 +20,11 @@ Puoi scaricare una o più risorse utilizzando Content Hub. Vengono scaricate le 
 
 ## Prerequisiti {#prerequisites}
 
-[Utenti Content Hub](deploy-content-hub.md#onboard-content-hub-users) può eseguire le azioni menzionate in questo articolo.
+[Gli utenti di Content Hub](deploy-content-hub.md#onboard-content-hub-users) possono eseguire le azioni indicate in questo articolo.
 
 ## Scarica risorsa {#download-single-asset}
 
 1. Seleziona le risorse da scaricare.
-   ![Scarica una singola risorsa](assets/download-assets-new.jpg)
-1. Clic **[!UICONTROL Scarica]**. <br> In alternativa, per scaricare una risorsa fai clic sull’icona Scarica disponibile nella scheda delle risorse.
+   ![Scarica risorsa singola](assets/download-assets-new.jpg)
+1. Fai clic su **[!UICONTROL Scarica]**. <br> In alternativa, è possibile fare clic sull&#39;icona di download disponibile nella scheda delle risorse per scaricare una risorsa.
 Tutte le risorse vengono scaricate nella rappresentazione originale.

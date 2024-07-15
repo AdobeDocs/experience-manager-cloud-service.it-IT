@@ -16,7 +16,7 @@ ht-degree: 89%
 
 >[!CAUTION]
 >
->Se [il caching in Dispatcher è stato abilitato](/help/headless/deployment/dispatcher-caching.md) quindi il filtro CORS non è necessario e questa sezione può essere ignorata.
+>Se la memorizzazione nella cache di [ in Dispatcher è stata abilitata](/help/headless/deployment/dispatcher-caching.md), il filtro CORS non è necessario e quindi questa sezione può essere ignorata.
 
 >[!NOTE]
 >

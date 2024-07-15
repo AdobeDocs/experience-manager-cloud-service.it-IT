@@ -46,7 +46,7 @@ Ogni configurazione di rollout utilizza un attivatore (o trigger) di rollout che
 
 Nella tabella seguente sono elencate le configurazioni di rollout che vengono installate con AEM. La tabella contiene le azioni di attivazione e sincronizzazione per ciascuna configurazione di rollout.
 
-Se le azioni di configurazione del rollout installate non soddisfano le tue esigenze, puoi [crea una configurazione di rollout.](#creating-a-rollout-configuration)
+Se le azioni di configurazione del rollout installate non soddisfano i requisiti, puoi [creare una configurazione di rollout.](#creating-a-rollout-configuration)
 
 | Nome | Descrizione | Attivatore | [Azioni di sincronizzazione](#synchronization-actions) |
 |---|---|---|---|
@@ -61,7 +61,7 @@ Se le azioni di configurazione del rollout installate non soddisfano le tue esig
 
 Nella tabella seguente sono elencate le azioni di sincronizzazione che vengono installate con AEM.
 
-Se le azioni installate non soddisfano le tue esigenze, puoi [Crea una nuova azione di sincronizzazione.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+Se le azioni installate non soddisfano le tue esigenze, puoi [Creare una nuova azione di sincronizzazione.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
 
 | Nome azione | Descrizione | Proprietà |
 |---|---|---|
@@ -85,7 +85,7 @@ Se le azioni installate non soddisfano le tue esigenze, puoi [Crea una nuova azi
 
 ### Creazione di una configurazione di rollout {#creating-a-rollout-configuration}
 
-È possibile [creare una configurazione di rollout](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) quando le configurazioni di rollout installate non soddisfano i requisiti dell’applicazione eseguendo i passaggi seguenti.
+È possibile [creare una configurazione di rollout](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) quando le configurazioni di rollout installate non soddisfano i requisiti dell&#39;applicazione eseguendo i passaggi seguenti.
 
 1. [Creare la configurazione di rollout:](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
 1. [Aggiungi azioni di sincronizzazione alla configurazione di rollout.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
@@ -96,7 +96,7 @@ La nuova configurazione di rollout è quindi disponibile quando configuri le con
 
 Puoi configurare diversi servizi OSGi che supportano le azioni di sincronizzazione corrispondenti in modo che non influiscano su proprietà e tipi di nodo specifici. Ad esempio, molte proprietà e sottonodi correlati al funzionamento interno di AEM non devono essere inclusi in una Live Copy. Deve essere copiato solo il contenuto rilevante all’utente della pagina.
 
-Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi. Consulta [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md) per ulteriori dettagli e le pratiche consigliate.
+Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi. Per ulteriori dettagli e procedure consigliate, vedere [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md).
 
 Nella tabella seguente sono elencate le azioni di sincronizzazione per le quali è possibile specificare i nodi da escludere. La tabella fornisce i nomi dei servizi da configurare utilizzando la console web e il PID per la configurazione con un nodo dell’archivio.
 
@@ -135,7 +135,7 @@ Ad esempio, se desideri includere il **Titolo** della pagina nelle modifiche con
 
 Puoi configurare diversi servizi OSGi che supportano le azioni di sincronizzazione corrispondenti, relative all’aggiornamento dei riferimenti.
 
-Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi. Consulta [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md) per ulteriori dettagli e le pratiche consigliate.
+Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi. Per ulteriori dettagli e procedure consigliate, vedere [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md).
 
 Nella tabella seguente sono elencate le azioni di sincronizzazione per cui è possibile specificare l’aggiornamento dei riferimenti. La tabella fornisce i nomi dei servizi da configurare utilizzando la console web e il PID per la configurazione con un nodo dell’archivio.
 
@@ -175,7 +175,7 @@ Puoi anche impostare le configurazioni di rollout per una pagina Live Copy quand
 
    ![Ereditarietà Live Copy dalla pagina genitore](../assets/live-copy-inherit.png)
 
-1. Se necessario, regolare **Ereditarietà Live Copy** flag. Se selezionato, la configurazione Live Copy ha effetto su tutte le pagine figlie.
+1. Se necessario, regola il flag **Ereditarietà Live Copy**. Se selezionato, la configurazione Live Copy ha effetto su tutte le pagine figlie.
 
 1. Deseleziona la proprietà **Eredita configurazione di rollout dall’elemento principale**, quindi seleziona una o più configurazioni di rollout dall’elenco.
 

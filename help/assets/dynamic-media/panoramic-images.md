@@ -16,9 +16,9 @@ ht-degree: 1%
 
 Questa sezione descrive come lavorare con il visualizzatore Immagine panoramica per riprodurre immagini panoramiche sferiche per un&#39;esperienza di visualizzazione a 360° immersiva di una stanza, una proprietà, una posizione o un paesaggio.
 
-Vedi anche [Gestire i predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
+Vedi anche [Gestione predefiniti visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-![panoramico-immagine2](assets/panoramic-image2.png)
+![immagine panoramica2](assets/panoramic-image2.png)
 
 ## Carica le risorse da utilizzare con il visualizzatore immagini panoramiche {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
@@ -27,9 +27,9 @@ Affinché una risorsa caricata possa essere considerata un’immagine panoramica
 * Proporzioni pari a 2.
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Contrassegnato con le parole chiave `equirectangular`, o `spherical`e `panorama`, o `spherical` e `panoramic`. Consulta [Usa tag](/help/sites-cloud/authoring/sites-console/tags.md).
+* Taggato con le parole chiave `equirectangular` o `spherical` e `panorama` o `spherical` e `panoramic`. Vedi [Utilizza tag](/help/sites-cloud/authoring/sites-console/tags.md).
 
-Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse panoramiche della pagina dei dettagli della risorsa e `Panoramic Media` Componente WCM.
+Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse panoramiche della pagina dettagli risorsa e al componente WCM `Panoramic Media`.
 
 Per caricare le risorse da utilizzare con il visualizzatore immagini panoramiche, consulta [Caricare le risorse](/help/assets/manage-digital-assets.md#uploading-assets).
 
@@ -78,8 +78,8 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 ## Anteprima immagini panoramiche {#previewing-panoramic-images}
 
-Consulta [Visualizzare in anteprima le risorse](/help/assets/dynamic-media/previewing-assets.md).
+Vedi [Anteprima risorse](/help/assets/dynamic-media/previewing-assets.md).
 
-## Pubblica immagini panoramiche {#publishing-panoramic-images}
+## Immagini panoramiche Publish {#publishing-panoramic-images}
 
-Consulta [Pubblicare le risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulta [Risorse Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

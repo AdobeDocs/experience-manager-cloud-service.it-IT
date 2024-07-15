@@ -43,7 +43,7 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2023 per un r
 
 ### Nuove funzioni {#assets-features}
 
-**Componente aggiuntivo AEM Assets per Adobe Express**: Experience Manager Assets fornisce ora un componente aggiuntivo, ad Adobe Express. Il componente aggiuntivo consente di accedere direttamente alle risorse memorizzate in Experience Manager Assets dall’interfaccia utente di Adobe Express. Il contenuto gestito in AEM Assets può essere inserito nell’area di lavoro di Express e quindi il contenuto nuovo o modificato può essere salvato in un archivio AEM Assets. Il componente aggiuntivo offre i seguenti vantaggi chiave:
+**Componente aggiuntivo AEM Assets per Adobe Express**: Experience Manager Assets fornisce ora un componente aggiuntivo per Adobe Express. Il componente aggiuntivo consente di accedere direttamente alle risorse memorizzate in Experience Manager Assets dall’interfaccia utente di Adobe Express. Il contenuto gestito in AEM Assets può essere inserito nell’area di lavoro di Express e quindi il contenuto nuovo o modificato può essere salvato in un archivio AEM Assets. Il componente aggiuntivo offre i seguenti vantaggi chiave:
 
 * maggiore riutilizzo dei contenuti grazie alla modifica e al salvataggio di nuove risorse in AEM
 

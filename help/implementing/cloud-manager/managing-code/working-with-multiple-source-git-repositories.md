@@ -18,11 +18,11 @@ Scopri come gestire più archivi Git con Cloud Manager.
 
 ## Sincronizzazione degli archivi Git gestiti dal cliente {#syncing-customer-managed-git-repositories}
 
-Anziché utilizzare direttamente l’archivio Git di Cloud Manager, [gli utenti possono utilizzare uno o più archivi Git](integrating-with-git.md) personali. In questi casi, è necessario configurare un processo di sincronizzazione automatizzato per garantire che l’archivio Git di Cloud Manager sia sempre aggiornato.
+Anziché utilizzare direttamente l’archivio Git di Cloud Manager, [gli utenti possono utilizzare uno o più archivi Git](integrating-with-git.md) personali. In questi casi, è necessario impostare un processo di sincronizzazione automatizzato per garantire che l’archivio Git di Cloud Manager sia sempre aggiornato.
 
 A seconda della posizione in cui è ospitato l’archivio Git del cliente, per configurare l’automazione è possibile utilizzare un’azione GitHub o una soluzione di integrazione continua come Jenkins. Con l’implementazione dell’automazione, ogni push in un archivio Git del cliente può essere inoltrato automaticamente all’archivio Git di Cloud Manager.
 
-Sebbene un’automazione di questo tipo per un singolo archivio Git del cliente possa essere configurata direttamente, per più archivi è necessaria una configurazione iniziale. I contenuti di più archivi Git devono essere mappati su directory diverse all’interno del singolo archivio Git di Cloud Manager. Il provisioning dell’archivio Git di Cloud Manager deve essere eseguito con un file radice Maven `pom.xml`, elencando i diversi sottoprogetti nella sezione moduli.
+Sebbene un’automazione di questo tipo per un singolo archivio Git del cliente possa essere configurata direttamente, per più archivi è necessaria una configurazione iniziale. I contenuti di più archivi Git devono essere mappati su directory diverse all’interno del singolo archivio Git di Cloud Manager. Il provisioning dell’archivio Git di Cloud Manager deve essere eseguito con una radice Maven `pom.xml`, elencando i diversi sottoprogetti nella sezione moduli.
 
 Di seguito è riportato un file `pom.xml` di esempio per due archivi Git del cliente.
 
@@ -53,10 +53,10 @@ Viene eseguito il push di un file radice `pom.xml` in un ramo nell’archivio Gi
 Di seguito viene indicata una possibile soluzione.
 
 1. È possibile attivare un’azione GitHub con un push in uno dei rami nel progetto A.
-1. L’azione estrae il progetto A e l’archivio Git di Cloud Manager e copia tutti i contenuti dal progetto A nella directory `project-a` nell’archivio Git di Cloud Manager.
+1. L&#39;azione estrae il progetto A e l&#39;archivio Git di Cloud Manager e copia tutti i contenuti dal progetto A nella directory `project-a` nell&#39;archivio Git di Cloud Manager.
 1. Quindi l’azione esegue il commit e invia la modifica.
 
-Ad esempio, il push di una modifica apportata al ramo principale nel progetto A viene eseguito automaticamente nel ramo principale dell’archivio Git di Cloud Manager. Potrebbe esserci una mappatura tra rami come un invio a un ramo denominato `dev` nel progetto A viene inviato a un ramo denominato `development` nell’archivio Git di Cloud Manager. Il progetto B richiede una procedura analoga.
+Ad esempio, il push di una modifica apportata al ramo principale nel progetto A viene eseguito automaticamente nel ramo principale dell’archivio Git di Cloud Manager. Potrebbe essere presente una mappatura tra rami, ad esempio un push in un ramo denominato `dev` nel progetto A viene inviato a un ramo denominato `development` nell’archivio Git di Cloud Manager. Il progetto B richiede una procedura analoga.
 
 In base alla strategia e ai flussi di lavoro impiegati per i rami, è possibile configurare la sincronizzazione per diversi rami. Se l’archivio Git utilizzato non fornisce un concetto simile alle azioni GitHub, è possibile anche un’integrazione tramite Jenkins (o simile). In questo caso, un webhook attiva un processo Jenkins per eseguire l’operazione.
 
@@ -68,7 +68,7 @@ Segui questi passaggi per aggiungere una nuova terza origine o archivio.
 
 ## Azione GitHub di esempio {#sample-github-action}
 
-Questa è un’azione GitHub di esempio attivata da un invio al ramo principale e quindi in una sottodirectory dell’archivio Git di Cloud Manager. Alle azioni GitHub devono essere forniti due segreti, `MAIN_USER` e `MAIN_PASSWORD`, per connettersi ed eseguire il push all’archivio Git di Cloud Manager.
+Questa è un’azione GitHub di esempio attivata da un invio al ramo principale e quindi in una sottodirectory dell’archivio Git di Cloud Manager. Per connettersi ed eseguire il push all&#39;archivio Git di Cloud Manager, le azioni GitHub devono avere due segreti, `MAIN_USER` e `MAIN_PASSWORD`.
 
 ```java
 name: SYNC
@@ -129,7 +129,7 @@ L’utilizzo di un’azione GitHub è flessibile. È possibile eseguire qualsias
 
 >[!NOTE]
 >
->Lo script di esempio utilizza `git add` per aggiornare l’archivio. Ciò presuppone che siano incluse le rimozioni. A seconda della configurazione predefinita di Git, questa deve essere sostituita con `git add --all`.
+>Lo script di esempio utilizza `git add` per aggiornare l’archivio. Ciò presuppone che siano incluse le rimozioni. A seconda della configurazione predefinita di Git, è necessario sostituirlo con `git add --all`.
 
 ## Esempio di processo Jenkins {#sample-jenkins-job}
 
@@ -140,7 +140,7 @@ Questo è uno script di esempio che puoi utilizzare in un processo Jenkins o di 
 1. A questo punto, il processo attiva lo script.
 1. Questo script a sua volta verifica l’archivio Git di Cloud Manager e conferma il codice del progetto in una sottodirectory.
 
-Il processo Jenkins deve essere fornito con due segreti, `MAIN_USER` e `MAIN_PASSWORD`, per connettersi ed eseguire il push all’archivio Git di Cloud Manager.
+Per connettersi ed eseguire il push all&#39;archivio Git di Cloud Manager, il processo Jenkins deve avere due segreti, `MAIN_USER` e `MAIN_PASSWORD`.
 
 ```java
 # Username/email used to commit to Cloud Manager's Git repository
@@ -198,4 +198,4 @@ L’utilizzo di un processo Jenkins è flessibile. È possibile eseguire qualsia
 
 >[!NOTE]
 >
->Lo script di esempio utilizza `git add` per aggiornare l’archivio. Ciò presuppone che siano incluse le rimozioni. A seconda della configurazione predefinita di Git, questa deve essere sostituita con `git add --all`.
+>Lo script di esempio utilizza `git add` per aggiornare l’archivio. Ciò presuppone che siano incluse le rimozioni. A seconda della configurazione predefinita di Git, è necessario sostituirlo con `git add --all`.

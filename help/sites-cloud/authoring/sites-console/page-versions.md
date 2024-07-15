@@ -212,7 +212,7 @@ Per utilizzare questa funzione:
 
 Timewarp è una [modalità](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) dell’editor pagina. Per avviarlo, è sufficiente cambiarlo come si farebbe con qualsiasi altra modalità.
 
-1. Avvia l’editor per la pagina in cui desideri avviare Timewarp, quindi seleziona **Timewarp** nella selezione della modalità.
+1. Avvia l&#39;editor per la pagina in cui desideri avviare Timewarp, quindi seleziona **Timewarp** nella selezione della modalità.
 
    ![Modalità Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 

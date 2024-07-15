@@ -25,9 +25,9 @@ I dati dei prodotti in staging includono qualsiasi mutazione futura, ad esempio 
 
 ## Configurazione {#configuration}
 
-I cataloghi di prodotti devono essere configurati in AEM. Consulta [configurazione di store e cataloghi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) per ulteriori informazioni.
+I cataloghi di prodotti devono essere configurati in AEM. Per ulteriori informazioni, vedere [configurazione di archivio e cataloghi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog).
 
-L’abilitazione delle funzioni di catalogo in staging richiede l’autenticazione. Consulta [Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) per ulteriori informazioni.
+L’abilitazione delle funzioni di catalogo in staging richiede l’autenticazione. Per ulteriori informazioni, vedere [Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html).
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ L’abilitazione delle funzioni di catalogo in staging richiede l’autenticazio
 
 ## Apertura della cabina di comando del prodotto {#opening-product-cockpit}
 
-Il modo più semplice per accedere al pannello di comando del prodotto è tramite il menu &quot;Commerce&quot; nel menu principale dell’AEM. È inoltre possibile utilizzare Omnisearch (ricerca per Commerce) o aprire `https://<yourAEMInstance>/commerce.html`.
+Il modo più semplice per accedere al pannello di comando del prodotto è tramite il menu &quot;Commerce&quot; nel menu principale dell’AEM. È inoltre possibile utilizzare Omnisearch (cerca Commerce) o aprire `https://<yourAEMInstance>/commerce.html`.
 
 ![Menu AEM](../assets/aem-menu.png)
 
@@ -47,7 +47,7 @@ Il pannello di controllo Prodotto è organizzato in modo gerarchico seguendo la 
 
 Facendo clic su una categoria vengono caricati gli elementi secondari della categoria selezionata.
 
-![Elementi figlio categoria](../assets/catalog-category-children.png)
+![Figli categoria](../assets/catalog-category-children.png)
 
 Facendo clic su un prodotto vengono caricate le varianti di prodotto, se disponibili.
 
@@ -67,7 +67,7 @@ Nella scheda del filtro a sinistra è disponibile una ricerca full-text sull’i
 
 Per impostazione predefinita, la cabina di comando del prodotto mostra i dati live del catalogo dei prodotti. L’utilizzo del &quot;CATALOGO STAGNATO&quot; nella scheda del filtro a sinistra carica il catalogo dei prodotti per qualsiasi data selezionata.
 
-![catalogo di staging](../assets/staged-cockpit.png)
+![catalogo gestito](../assets/staged-cockpit.png)
 
 ## Proprietà catalogo prodotti {#catalog-properties}
 
@@ -81,6 +81,6 @@ Le schede Generale e Variante mostrano le proprietà commerce predefinite proven
 
 ### Schede contenuto AEM {#content-tabs}
 
-In queste schede, raggruppate per tipi di contenuto AEM (Frammenti di esperienza, Frammenti di contenuto, Risorse associate), viene visualizzato il contenuto AEM associato all’oggetto commerce. L&#39;azione &#39;Visualizza dettagli&#39; apre una nuova scheda del browser con il contenuto selezionato.
+In queste schede, raggruppate per tipi di contenuto AEM (Frammenti di esperienza, Frammenti di contenuto, Assets associato), viene visualizzato il contenuto AEM associato all’oggetto commerce. L&#39;azione &#39;Visualizza dettagli&#39; apre una nuova scheda del browser con il contenuto selezionato.
 
 ![proprietà contenuto](../assets/content-properties.png)

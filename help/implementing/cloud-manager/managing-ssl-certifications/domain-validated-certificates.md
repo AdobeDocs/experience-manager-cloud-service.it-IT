@@ -21,23 +21,23 @@ Scopri come gestire i certificati convalidati dal dominio (DV) in Cloud Manager.
 
 ## Introduzione {#introduction}
 
-Cloud Manager consente di generare e gestire in autonomia un certificato SSL convalidato dal dominio (DV). Questo offre la soluzione più veloce, facile e conveniente per creare un sito web sicuro per il vostro business online.
+Cloud Manager consente di generare e gestire in autonomia un certificato SSL (DV) convalidato dal dominio. Questo offre la soluzione più veloce, facile e conveniente per creare un sito web sicuro per il vostro business online.
 
-I certificati convalidati dal dominio sono disponibili per entrambi [programmi di produzione e sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+I certificati convalidati dal dominio sono disponibili per [programmi sandbox e di produzione.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
 ## Aggiunta di un dominio personalizzato {#adding-domain}
 
-Per aggiungere un certificato DV (Domain Validated), devi prima configurare il dominio personalizzato. Il processo è sostanzialmente lo stesso descritto nel documento [Introduzione ai nomi di dominio personalizzati.](/help/implementing/cloud-manager/custom-domain-names/introduction.md) Tuttavia, tale funzionalità è stata leggermente ampliata.
+Per aggiungere un certificato DV (Domain Validated), devi prima configurare il dominio personalizzato. Il processo è sostanzialmente lo stesso descritto nel documento [Introduzione ai nomi di dominio personalizzati.](/help/implementing/cloud-manager/custom-domain-names/introduction.md) Tuttavia questa funzionalità è stata leggermente espansa.
 
-1. Durante la verifica del dominio, puoi scegliere di utilizzare i certificati gestiti da Adobe o autogestiti con il dominio. Scegli **Adobe certificato gestito** per aggiungere un certificato DV in un secondo momento.
+1. Durante la verifica del dominio, puoi scegliere di utilizzare i certificati gestiti da Adobe o autogestiti con il dominio. Scegliere **Adobe certificato gestito** per aggiungere un certificato DV in un secondo momento.
 
    ![Scegli gestito da Adobe](assets/verify-domain-dialog.png)
 
-1. Per utilizzare un certificato gestito di Adobe, devi aggiungere un record CNAME al DNS come descritto nella **Verifica dominio** .
+1. Per utilizzare un Adobe di certificato gestito, è necessario aggiungere un record CNAME al DNS come descritto nella finestra di dialogo **Verifica dominio**.
 
    ![Aggiungi voce CNAME](assets/verify-domain-dialog-adobe-managed.png)
 
-1. Una volta creato il dominio, tocca o fai clic sul pulsante con i puntini di sospensione nell’elenco dei domini e seleziona **Verifica** per verificare il dominio.
+1. Dopo aver creato il dominio, tocca o fai clic sul pulsante con i puntini di sospensione nell&#39;elenco dei domini e seleziona **Verifica** per verificare il dominio.
 
    ![Verifica dominio](assets/verify-domain.png)
 
@@ -47,33 +47,33 @@ Dopo aver configurato correttamente il dominio, per aggiungere un certificato DV
 
 ![Aggiunta di un certificato controller di dominio](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)
 
-1. Seleziona l’opzione **Adobe gestito (DV)**.
-1. Specifica il nome di dominio nel **Seleziona domini** a discesa.
+1. Selezionare l&#39;opzione **Adobe gestito (DV)**.
+1. Specificare il nome di dominio nell&#39;elenco a discesa **Seleziona domini**.
 1. Tocca o fai clic su **Salva**.
 
-Una volta aggiunto correttamente, il certificato avrà uno stato in sospeso con un segno di avvertenza giallo al suo nome nel **Certificati SSL** finestra.
+Una volta aggiunto correttamente il certificato, nella finestra **Certificati SSL** verrà visualizzato uno stato in sospeso con un segno di avviso giallo al nome.
 
 ![Certificato DV in sospeso](assets/pending-dv-certificate.png)
 
-Una volta rilasciato, il certificato sarà contrassegnato da un segno di spunta verde nel campo **Certificati SSL** finestra.
+Una volta rilasciato correttamente, il certificato avrà un segno di spunta verde sul suo nome nella finestra **Certificati SSL**.
 
-![Certificato DV rilasciato](assets/issued-dv-certificate.png)
+![Certificato DV emesso](assets/issued-dv-certificate.png)
 
-Per ulteriori informazioni sull’aggiunta di certificati SSL e sulla finestra Certificati SSL, consulta il documento [Aggiunta di un certificato SSL.](add-ssl-certificate.md)
+Per ulteriori informazioni sull&#39;aggiunta di certificati SSL e sulla finestra Certificati SSL, vedere il documento [Aggiunta di un certificato SSL.](add-ssl-certificate.md)
 
 ## Aggiungi configurazione CDN {#add-cdn}
 
 Questo passaggio deve essere completato per configurare un dominio con SSL utilizzando Fastly CDN.
 
-Per aggiungere una configurazione CDN tramite Cloud Manager, segui la procedura riportata di seguito.
+Per aggiungere una configurazione CDN utilizzando Cloud Manager, segui la procedura riportata di seguito.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Seleziona la **Configurazioni CDN** e tocca o fai clic su **Aggiungi** nella barra degli strumenti.
+1. Seleziona la scheda **Configurazioni CDN** e tocca o fai clic su **Aggiungi** nella barra degli strumenti.
 
-1. In **Configura CDN** fornisci le informazioni necessarie.
+1. Nella finestra di dialogo **Configura CDN**, fornisci le informazioni necessarie.
 
-   * Seleziona la **Origine**. Può trattarsi di:
+   * Seleziona l&#39;**origine**. Può trattarsi di:
       * Un ambiente di Cloud Service
       * Un sito Edge Delivery Services
    * Seleziona il tipo di CDN.
@@ -81,7 +81,7 @@ Per aggiungere una configurazione CDN tramite Cloud Manager, segui la procedura 
    * Seleziona il certificato SSL.
       * Obbligatorio solo per CDN gestiti da Adobe.
 
-   ![Finestra di dialogo Configura CDN](assets/configure-cdn-dialog.png)
+   ![Configura finestra di dialogo CDN](assets/configure-cdn-dialog.png)
 
 >
 >

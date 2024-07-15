@@ -37,7 +37,7 @@ java -jar oak-run.jar datastorecheck --consistency --store [<SEGMENT_STORE_PATH>
 java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO_URI>] --[s3ds|fds|azureds] <DATASTORE_CFG> --out-dir <OUT_DIR> --work-dir <TEMP_DIR> --verbose
 ```
 
-Consulta [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) per ulteriori dettagli.
+Per ulteriori dettagli, vedi [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run).
 
 I file creati per coerenza nel percorso *OUT_DIR* indicato sopra possono quindi essere controllati per individuare percorsi con binary mancanti e possono essere intraprese azioni appropriate come il ripristino da un backup, l’eliminazione dei percorsi, la reindicizzazione e così via.
 

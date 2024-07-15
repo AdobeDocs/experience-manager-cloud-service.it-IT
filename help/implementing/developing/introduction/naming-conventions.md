@@ -19,13 +19,13 @@ I nodi nell’archivio sono soggetti alle convenzioni di denominazione dell’ar
 
 Queste convenzioni di denominazione vengono implementate a vari livelli:
 
-* JcrUtil: l&#39;implementazione AEM del [Utilità JCR](#jcr-utilities).
-* PageManager: [Gestione pagine](#page-manager) fornisce metodi per le operazioni a livello di pagina.
-* Nell’interfaccia utente dell’AEM {#ui-behavior}
+* JcrUtil: implementazione AEM delle [utilità JCR](#jcr-utilities).
+* PageManager: [Page Manager](#page-manager) fornisce metodi per le operazioni a livello di pagina.
+* Nell&#39;interfaccia utente AEM {#ui-behavior}
 
 ### Utilità JCR {#jcr-utilities}
 
-[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) è l’implementazione AEM delle utilità JCR. Di particolare interesse per la convalida dei nomi sono le mappature di caratteri che controlla e le convalide seguenti:
+[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) è l&#39;implementazione AEM delle utilità JCR. Di particolare interesse per la convalida dei nomi sono le mappature di caratteri che controlla e le convalide seguenti:
 
 * `isValidName`
    * Controlla se il nome non è vuoto e contiene solo caratteri validi.
@@ -36,7 +36,7 @@ Queste convenzioni di denominazione vengono implementate a vari livelli:
 
 ### Gestione pagine {#page-manager}
 
-[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) fornisce metodi per le operazioni a livello di pagina basati su [JCRUtil](#jcr-utilities).
+[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) fornisce metodi per le operazioni a livello di pagina, basati su [JCRUtil](#jcr-utilities).
 
 ### Comportamento dell’interfaccia AEM {#ui-behavior}
 

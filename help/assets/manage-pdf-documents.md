@@ -1,6 +1,6 @@
 ---
-title: Gestire i documenti PDF in [!DNL Adobe Experience Manager].
-description: Gestire i documenti PDF in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+title: Gestisci i tuoi documenti PDF in [!DNL Adobe Experience Manager].
+description: Gestisci documenti PDF in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
@@ -21,26 +21,26 @@ Document Cloud PDF Viewer offre i seguenti vantaggi ad AEM Assets:
 * [Supporto per l&#39;anteprima di più pagine per documenti in altri formati](#multi-format)
 
 > Suggerimento
-> Se non riesci a ottenere l’anteprima di più pagine di un documento PDF caricato in precedenza, seleziona il PDF e fai clic su **![Rielabora](/help/assets/assets/Reprocess.svg) Rielabora risorse**.
+> Se non riesci a ottenere l&#39;anteprima di più pagine di un documento di PDF caricato in precedenza, seleziona il PDF e fai clic su **![Rielabora](/help/assets/assets/Reprocess.svg) Rielabora Assets**.
 >
 
 ## Supporto per i componenti visualizzatore Document Cloud di PDF {#pdf-doc-cloud}
 
 Il visualizzatore nativo di PDF Doc Cloud dispone dei seguenti componenti in AEM Assets:
 
-* **Visualizzatore PDF con miniature di pagina** La visualizzazione Anteprima è una piccola anteprima delle pagine di un documento PDF. Utilizzando le miniature, puoi passare direttamente alla pagina desiderata. È possibile accedere alle miniature del documento PDF selezionato tramite ![miniatura](/help/assets/assets/thumbnail.svg) nel riquadro sinistro.
+* **Il visualizzatore di PDF che utilizza le miniature di pagina** La visualizzazione delle miniature è una piccola anteprima delle pagine di un documento di PDF. Utilizzando le miniature, puoi passare direttamente alla pagina desiderata. Puoi accedere alle miniature del documento PDF selezionato tramite ![miniatura](/help/assets/assets/thumbnail.svg) nel riquadro a sinistra.
 
-* **Visualizzatore PDF con segnalibri** Il segnalibro è un collegamento diretto che consente di passare al contenuto del documento. È possibile accedere ai segnalibri del documento PDF selezionato tramite ![segnalibro](/help/assets/assets/bookmark.svg) nel riquadro sinistro.
+* **Il visualizzatore di PDF che utilizza i segnalibri** Bookmark è un collegamento diretto che consente di passare al contenuto del documento. Puoi accedere ai segnalibri del documento PDF selezionato tramite ![segnalibro](/help/assets/assets/bookmark.svg) nel riquadro a sinistra.
 
-* **Cerca in PDF** È possibile utilizzare la ricerca ![ricerca](/help/assets/assets/Search.svg) per cercare il testo nel documento di PDF.
+* **Cerca in PDF** È possibile utilizzare la ricerca ![Cerca](/help/assets/assets/Search.svg) per cercare il testo nel documento di PDF.
 
-* **Pagina su/Pagina giù** Usa pagina su ![Pagina su](/help/assets/assets/ArrowUp.svg) o Page Down ![Pagina giù](/help/assets/assets/ArrowDown.svg) per scorrere il documento.
+* **Pagina su/Pagina giù** Utilizzare Pagina su ![Pagina su](/help/assets/assets/ArrowUp.svg) o Pagina giù ![Pagina giù](/help/assets/assets/ArrowDown.svg) per scorrere il documento.
 
-* **Zoom out/Zoom in** Usa zoom out ![Zoom out](/help/assets/assets/ZoomOut.svg) o Zoom in ![Zoom in](/help/assets/assets/ZoomIn.svg) per creare una serie del documento.
+* **Zoom indietro/Zoom avanti** Utilizza Zoom indietro ![Zoom indietro](/help/assets/assets/ZoomOut.svg) o Zoom avanti ![Zoom avanti](/help/assets/assets/ZoomIn.svg) per applicare una visualizzazione in sequenza al documento.
 
-* **Adatta pagina** Utilizzare le dimensioni di larghezza o altezza per adattare il documento alle dimensioni dello schermo.
+* **Adatta pagina** Utilizzare le dimensioni di larghezza e altezza per adattare il documento alle dimensioni dello schermo.
 
-* **Ancora/Disancora PDF** Con questa opzione puoi ancorare o disancorare i componenti del visualizzatore nativo di PDF.
+* **Ancorare/Disancorare PDF** Utilizzando questa opzione è possibile ancorare o disancorare i componenti del visualizzatore nativo di PDF.
 
 ## Supporto per Anteprima pagine multiple e Annotazioni per PDF Assets {#multi-page}
 
@@ -50,7 +50,7 @@ Adobe Experience Manager Assets consente di visualizzare in anteprima un documen
 1. Sfogliare il documento PDF da caricare e visualizzare in anteprima.
 1. Aprire il documento.
 1. Per impostazione predefinita, il visualizzatore documenti di PDF viene caricato. Potete anche selezionare la rappresentazione PDF nel pannello della rappresentazione.
-1. Sotto il menu a discesa Rappresentazioni, seleziona **Tutte le rappresentazioni**.
+1. Nel menu a discesa Rappresentazioni selezionare **Tutte le rappresentazioni**.
 
 Puoi anche applicare [annotazioni](#pdf-annotations) al documento PDF in un&#39;anteprima su più pagine.
 
@@ -69,8 +69,8 @@ Puoi anche applicare [annotazioni](#pdf-annotations) al documento PDF in un&#39;
 Experience Manager Assets consente di aggiungere commenti a un documento PDF. Un documento PDF può contenere più annotazioni.
 
 Per annotare un documento PDF, effettuare le seguenti operazioni:
-1. Passa all’interfaccia Assets e individua il documento PDF a cui desideri aggiungere un’annotazione. Il visualizzatore PDF nativo si apre a destra con l&#39;anteprima del documento PDF selezionato.
-1. Clic **Annota** dal menu principale.
+1. Passa all’interfaccia di Assets e individua il documento PDF a cui desideri aggiungere un’annotazione. Il visualizzatore PDF nativo si apre a destra con l&#39;anteprima del documento PDF selezionato.
+1. Fai clic su **Annota** nel menu principale.
 Di seguito sono riportate le annotazioni che possono essere applicate a un documento PDF:
 
 <table>
@@ -79,11 +79,11 @@ Di seguito sono riportate le annotazioni che possono essere applicate a un docum
             <th> Descrizione </th>
         </tr>
         <tr>
-           <td> <img src="/help/assets/assets/Comment.svg"> Commento </td>
+           <td> <img src="/help/assets/assets/Comment.svg"> commento </td>
             <td> Seleziona Commento per esprimere un’osservazione. </td>
         </tr>
         <tr>
-            <td> <img src="/help/assets/assets/Text.svg"> Casella di testo </td>
+            <td> <img src="/help/assets/assets/Text.svg"> casella di testo </td>
             <td> Selezionare Casella di testo per immettere il testo. </td>
         </tr>
         <tr>
@@ -91,7 +91,7 @@ Di seguito sono riportate le annotazioni che possono essere applicate a un docum
             <td> Aggiungete un piccolo testo o promemoria che potete aggiungere a una particolare area del PDF. </td>
         </tr>
         <tr>
-            <td> <img src="/help/assets/assets/Comment.svg"> Evidenziatore testo </td>
+            <td> Evidenziatore di testo <img src="/help/assets/assets/Comment.svg"> </td>
             <td> Selezionare il testo da evidenziare con colori diversi. </td>
         </tr>
         <tr>
@@ -99,11 +99,11 @@ Di seguito sono riportate le annotazioni che possono essere applicate a un docum
             <td> Selezionare il testo che si desidera sottolineare. </td>
         </tr>
         <tr>
-            <td> <img src="/help/assets/assets/TextStrikethrough.svg"> Barrato </td>
+            <td> <img src="/help/assets/assets/TextStrikethrough.svg"> barrato </td>
             <td> Selezionare il testo che si desidera escludere. </td>
         </tr>
         <tr>
-            <td> <img src="/help/assets/assets/Draw.svg"> Disegno </td>
+            <td> Disegno <img src="/help/assets/assets/Draw.svg"> </td>
             <td> Inserire un'immagine nel PDF. </td>
         </tr>
         <tr>

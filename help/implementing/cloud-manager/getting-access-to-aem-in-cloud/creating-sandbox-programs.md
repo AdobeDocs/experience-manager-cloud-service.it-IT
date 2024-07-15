@@ -22,7 +22,7 @@ Per ulteriori informazioni sui tipi di programmi, consulta il documento [Informa
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tocca o fai clic su **Aggiungi programma** nell&#39;angolo superiore destro dello schermo.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, tocca o fai clic su **Aggiungi programma** nell&#39;angolo superiore destro dello schermo.
 
    ![Pagina di destinazione di Cloud Manager](assets/log-in.png)
 
@@ -34,7 +34,7 @@ Per ulteriori informazioni sui tipi di programmi, consulta il documento [Informa
 
    * L’immagine funge solo da titolo nella finestra di panoramica del programma e aiuta a identificarlo.
 
-1. In **Configurare la sandbox** selezionare le soluzioni da abilitare nel programma sandbox selezionando le opzioni nella finestra di dialogo **Soluzioni e componenti aggiuntivi** tabella.
+1. Nella finestra di dialogo **Configura la sandbox**, seleziona le soluzioni da abilitare nel programma sandbox nella tabella **Soluzioni e componenti aggiuntivi**.
 
    * Utilizza le frecce accanto ai nomi delle soluzioni per visualizzare ulteriori componenti aggiuntivi facoltativi per le soluzioni.
 
@@ -74,4 +74,4 @@ Dalla pagina di panoramica del programma, è possibile visualizzare i dettagli d
 
 >[!TIP]
 >
->Consulta il documento [Navigazione nell’interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/navigation.md) per informazioni dettagliate su come navigare in Cloud Manager e sulla **I miei programmi** console.
+>Per informazioni dettagliate su come esplorare Cloud Manager e la console **I miei programmi**, vedere il documento [Navigazione nell&#39;interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/navigation.md).

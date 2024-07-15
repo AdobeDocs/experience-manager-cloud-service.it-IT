@@ -30,7 +30,7 @@ La seguente versione (2021.7.0) sarà del 29 luglio 2021.
 
 ## Video sulla versione {#release-video}
 
-Dai un&#39;occhiata al [Panoramica sulla versione di giugno 2021](https://video.tv.adobe.com/v/334296) video per un riepilogo delle funzioni aggiunte.
+Dai un&#39;occhiata al video Panoramica sulla versione di [giugno 2021](https://video.tv.adobe.com/v/334296) per un riepilogo delle funzioni aggiunte.
 
 ## XML Documentation per AEM as a Cloud Service {#xml-documentation}
 
@@ -41,7 +41,7 @@ Dai un&#39;occhiata al [Panoramica sulla versione di giugno 2021](https://video.
 
 ## Cloud Manager {#cloud-manager}
 
-Questa sezione illustra le note sulla versione 2021.6.0 e 2021.5.0 di Cloud Manager in AEM as a Cloud Service.
+Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.6.0 e 2021.5.0.
 
 ### Data di rilascio {#release-date-june-cm}
 
@@ -66,7 +66,7 @@ La prossima versione è pianificata per il 15 luglio 2021.
 
 * Per evitare confusione, nella pagina Dettagli dell’ambiente sono state consolidate le righe del segmento Pubblica AEM e Pubblica Dispatcher.
 
-  ![Ambienti di Dispatcher](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
+  ![Ambienti Dispatcher](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
 * È stata aggiunta una nuova regola di qualità del codice per convalidare la struttura degli indici `damAssetLucene`. Per ulteriori informazioni, vedi [Indici Oak DAM Asset Lucene personalizzati](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check).
 
@@ -90,34 +90,34 @@ La prossima versione è pianificata per il 15 luglio 2021.
 
 ### Nuove funzioni in [!DNL Assets] {#ga-features-assets}
 
-* La funzionalità di automazione dei contenuti consente [!DNL Experience Manager Assets] utilizzare il [!DNL Adobe Creative Cloud] API per automatizzare la produzione delle risorse su larga scala. Migliora la velocità dei contenuti riducendo notevolmente il tempo impiegato e le iterazioni necessarie per creare varianti della stessa risorsa. La funzionalità non richiede alcun codice e funziona dall’interno di DAM.
-* [!DNL Adobe Asset Link] v3.0 per [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], e [!DNL Adobe InDesign] e [!DNL Adobe Asset Link] v2.0 per [!DNL Adobe XD] è stato rilasciato. Esso prevede:
+* La funzionalità di automazione dei contenuti consente a [!DNL Experience Manager Assets] di utilizzare le API [!DNL Adobe Creative Cloud] per automatizzare la produzione delle risorse su larga scala. Migliora la velocità dei contenuti riducendo notevolmente il tempo impiegato e le iterazioni necessarie per creare varianti della stessa risorsa. La funzionalità non richiede alcun codice e funziona dall’interno di DAM.
+* Rilascio di [!DNL Adobe Asset Link] v3.0 per [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] e [!DNL Adobe InDesign] e [!DNL Adobe Asset Link] v2.0 per [!DNL Adobe XD]. Esso prevede:
 
    * Supporto per [!DNL Assets Essentials].
-   * Possibilità di connettersi automaticamente a [!DNL Experience Manager] as a [!DNL Cloud Service] o [!DNL Assets Essentials].
+   * Possibilità di connettersi automaticamente a [!DNL Experience Manager] come [!DNL Cloud Service] o [!DNL Assets Essentials].
 
 <!-- TBD: Checking with PMs if AAE release should be mentioned here.
 -->
 
-### Nuove funzioni disponibili in [!DNL Assets] canale prerelease {#beta-features-assets}
+### Nuove funzioni disponibili nel canale prerelease [!DNL Assets] {#beta-features-assets}
 
 * Le impostazioni di visualizzazione sono migliorate e consentono agli utenti di scegliere una vista e un parametro di ordinamento predefiniti.
 * La funzionalità di download tramite condivisione di collegamenti utilizza download asincroni, più veloci.
 * Gli utenti possono cercare e filtrare le cartelle in base ai predicati delle proprietà.
-* [!DNL Experience Manager Assets] incorpora il Visualizzatore PDF con tecnologia [!DNL Adobe Document Cloud] per visualizzare in anteprima i documenti supportati. Questa funzione consente agli utenti di visualizzare in anteprima i file PDF e altri file di più pagine senza alcuna elaborazione complessa. Ciò migliora la parità delle funzioni con [!DNL Experience Manager] 6.5
+* [!DNL Experience Manager Assets] incorpora il Visualizzatore PDF con tecnologia [!DNL Adobe Document Cloud] per visualizzare in anteprima i documenti supportati. Questa funzione consente agli utenti di visualizzare in anteprima i file PDF e altri file di più pagine senza alcuna elaborazione complessa. Ciò migliora la parità delle funzionalità con [!DNL Experience Manager] 6.5.
 
 ### Bug corretti in [!DNL Assets] {#bugs-fixed-assets}
 
 * Quando si aggiunge un proprietario a una sottocartella, [!DNL Assets] aggiunge anche lo stesso utente come proprietario della cartella principale. (CQ-4323737)
 * Quando si aggiungono risorse alle raccolte, se un utente applica un filtro alla ricerca Raccolte, non può visualizzare le raccolte nella vista a elenco. (CQ-4323181)
-* Durante la ricerca di file e cartelle, se l’utente applica un filtro e seleziona [!UICONTROL File e cartelle], vengono visualizzati solo i file ma non la cartella. (CQ-4319543)
+* Durante la ricerca di file e cartelle, se l&#39;utente applica un filtro e seleziona [!UICONTROL File e cartelle], verranno visualizzati solo i file ma non la cartella. (CQ-4319543)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nuove funzioni in [!DNL Sites] {#ga-features-sites}
 
-* Pubblica nel livello Anteprima ora viene visualizzato come stato della pagina nell’interfaccia di amministrazione di Sites
-* Pubblica nel livello Anteprima ora presenta l’URL di anteprima alla fine dell’azione e mantiene l’URL nelle proprietà della pagina come riferimento successivo
+* Il livello da Publish a anteprima ora viene visualizzato come stato della pagina nell’interfaccia di amministrazione di Sites
+* Il livello da Publish a anteprima ora presenta l’URL di anteprima alla fine dell’azione e mantiene l’URL nelle proprietà della pagina come riferimento successivo
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -150,12 +150,12 @@ Questa sezione illustra le note sulla versione di AEM Screens as a Cloud Service
 
 ### Data di rilascio {#release-date-june-screens}
 
-La data di rilascio per AEM Screens as a Cloud Service è il 24 giugno 2021.
+La data di rilascio di AEM Screens as a Cloud Service è il 24 giugno 2021.
 
 ### Novità {#what-is-new-screens-june}
 
 >[!NOTE]
->Consulta [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) Guida alle conoscenze fondamentali necessarie per installare, configurare ed eseguire correttamente Screens as a Cloud Service e collegamento a una documentazione tecnica dettagliata sui concetti.
+>Consulta la [Guida di AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) per informazioni fondamentali necessarie per la corretta installazione, configurazione ed esecuzione di Screens as a Cloud Service e per un collegamento alla documentazione tecnica sui concetti dettagliati.
 
 * La gestione della registrazione dei dispositivi in blocco rende più veloce ed efficiente il provisioning di enormi quantità di dispositivi di riproduzione.
 
@@ -184,7 +184,7 @@ La data di pubblicazione dello strumento Content Transfer v1.5.4 è il 28 giugno
 
 ### Novità {#what-is-new-ctt-latest}
 
-* Supporto per un [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) aggiunta per l&#39;utilizzo con CTT. Il passaggio di pre-copia può essere utilizzato per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti quando l’istanza AEM di origine è configurata per utilizzare un archivio dati di Amazon S3 o Azure Blob Storage.
+* È stato aggiunto il supporto per un passaggio facoltativo [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) da utilizzare con CTT. Il passaggio di pre-copia può essere utilizzato per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti quando l’istanza AEM di origine è configurata per utilizzare un archivio dati di Amazon S3 o Azure Blob Storage.
 
 * Il guardarrail aggiunto al CTT per impedire agli utenti di interrompere un’acquisizione e potenzialmente danneggiare i dati una volta raggiunto il punto critico durante la fase di acquisizione.
 
@@ -194,7 +194,7 @@ La data di pubblicazione dello strumento Content Transfer v1.5.4 è il 28 giugno
 
 ### Correzioni di bug {#bug-fixes-ctt-latest}
 
-* Quando si interrompe un’acquisizione nell’istanza di authoring, l’interfaccia utente sovrascrive un’acquisizione precedentemente completata nell’istanza di pubblicazione a `STOPPED` da `FINISHED`. Questo problema è stato risolto.
+* Durante l&#39;interruzione di un&#39;acquisizione nell&#39;istanza di authoring, l&#39;interfaccia utente ha sovrascritto un&#39;acquisizione precedentemente completata nell&#39;istanza di Publish a `STOPPED` da `FINISHED`. Questo problema è stato risolto.
 
 ## Analisi delle best practice {#best-practices-analyzer}
 

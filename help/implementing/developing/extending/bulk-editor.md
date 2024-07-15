@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Configurazione della modifica in blocco delle proprietà di pagina {#configuring-bulk-editing-of-page-properties}
 
-[Modifica in serie delle proprietà di pagina](/help/sites-cloud/authoring/sites-console/page-properties.md#from-the-sites-console-multiple-pages) consente di modificare le proprietà di più pagine contemporaneamente.
+[La modifica in blocco delle proprietà della pagina](/help/sites-cloud/authoring/sites-console/page-properties.md#from-the-sites-console-multiple-pages) consente di modificare le proprietà di più pagine contemporaneamente.
 
 ## Considerazioni {#considerations}
 
@@ -22,7 +22,7 @@ Le proprietà di pagina non sono abilitate per la modifica in serie come imposta
 * Alcuni campi sono in genere univoci. È necessario decidere se è utile abilitare questi campi per la modifica in blocco, quando verrà applicato un valore.
    * Ad esempio, i titoli delle pagine sono quasi sempre univoci.
 * Alcuni campi possono avere più valori che richiedono una rappresentazione significativa durante il rendering.
-   * Ad esempio, un elenco a discesa di stato etichettato **Pronto per la pubblicazione**. Questo potrebbe avere diversi valori prima della modifica in blocco, ad esempio **pronto**, **in-review**, **in corso** e così via.
+   * Ad esempio, un elenco a discesa di stato con etichetta **Pronto per la pubblicazione**. Prima della modifica in blocco potrebbero essere presenti diversi valori, ad esempio **ready**, **in revisione**, **in corso** e così via.
 
 A causa della possibilità di utilizzare più valori, si consiglia di abilitare solo i seguenti tipi di campo per la modifica in serie.
 
@@ -35,10 +35,10 @@ A causa della possibilità di utilizzare più valori, si consiglia di abilitare 
 
 ## Abilitazione di un campo {#enabling-a-field}
 
-Questi passaggi utilizzano `/apps/core/wcm/components/page/v1/page` dal [Contenuto di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) come esempio per abilitare la modifica in blocco su un campo in un ambiente di sviluppo.
+In questi passaggi viene utilizzato `/apps/core/wcm/components/page/v1/page` dal [contenuto di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) per abilitare la modifica in blocco in un campo in un ambiente di sviluppo.
 
 1. Utilizzando CRXDE, apri il componente pagina.
-1. Passa al campo richiesto all’interno di `cq:dialog` definizione.
+1. Passare al campo richiesto all&#39;interno della definizione `cq:dialog`.
 1. Definisci la seguente proprietà sul nodo del campo:
 
    * **Nome**: `allowBulkEdit`

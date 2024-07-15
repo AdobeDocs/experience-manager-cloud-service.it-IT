@@ -40,7 +40,7 @@ Accedi al tuo registrar di dominio e crea un record `CNAME` per far sì che il n
 
 Un dominio apex è un dominio personalizzato che non contiene un sottodominio, ad esempio `example.com`. Un dominio apex è configurato con un record `A`, `ALIAS` o `ANAME` tramite il provider DNS. I domini apex devono puntare a indirizzi IP specifici.
 
-Aggiungi quanto segue `A` record alle impostazioni DNS del dominio tramite il provider di dominio.
+Aggiungi i seguenti `A` record alle impostazioni DNS del dominio tramite il provider di dominio.
 
 * `A RECORD`
 

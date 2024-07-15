@@ -1,6 +1,6 @@
 ---
 title: Invio di un connettore AEM
-description: Scopri come fare riferimento e distribuire correttamente i connettori in Adobe Experience Manager (AEM) as a Cloud Service.
+description: Scopri come fare riferimento e distribuire correttamente i connettori nell’as a Cloud Service di Adobe Experience Manager (AEM).
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
 feature: Operations
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 32%
 
 # Invio di un connettore AEM
 
-Seguono informazioni utili per l’invio dei connettori Adobe Experience Manager (AEM), che devono essere lette con articoli su [implementazione](implement.md) e  [manutenzione](maintain.md) connettori.
+Le informazioni fornite di seguito sono utili per l&#39;invio dei connettori Adobe Experience Manager (AEM) e devono essere lette con gli articoli relativi all&#39;[implementazione](implement.md) e alla [manutenzione](maintain.md) dei connettori.
 
 I connettori AEM sono elencati in [Adobe Exchange](https://partners.adobe.com/technologyprogram/experiencecloud.html).
 
@@ -22,7 +22,7 @@ Nelle soluzioni AEM precedenti, [Gestione pacchetti](/help/implementing/developi
 Sono disponibili varie opzioni per l’inclusione dei pacchetti in un progetto:
 
 1. Archivio pubblico del partner: un partner ospiterà il pacchetto di contenuti in un archivio maven accessibile al pubblico
-1. Archivio protetto da password del partner: un partner ospiterà il pacchetto di contenuti in un archivio maven protetto da password. Consulta [archivi maven protetti da password](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories) per istruzioni.
+1. Archivio protetto da password del partner: un partner ospiterà il pacchetto di contenuti in un archivio maven protetto da password. Per istruzioni, consulta [archivi Maven protetti da password](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories).
 1. Artefatto nel pacchetto: in questo caso, il pacchetto del connettore è incluso localmente nel progetto Maven del cliente.
 
 Indipendentemente da dove sono ospitati, i pacchetti devono essere indicati come dipendenze nel pom.xml, come fornito dal fornitore.
@@ -38,7 +38,7 @@ Indipendentemente da dove sono ospitati, i pacchetti devono essere indicati come
 </dependency>
 ```
 
-Se il partner ISV ospita il connettore su un archivio maven accessibile a Internet (ad esempio, con accesso a Cloud Manager), il programma ISV deve fornire la configurazione dell’archivio in cui `pom.xml` può essere posizionato. Il motivo è che le dipendenze del connettore (sopra) possono essere risolte in fase di build, sia localmente che da Cloud Manager.
+Se il partner ISV ospita il connettore su un archivio maven accessibile a Internet (ad esempio, Cloud Manager), il programma ISV deve fornire la configurazione dell&#39;archivio in cui è possibile inserire `pom.xml`. Il motivo è che le dipendenze del connettore (sopra) possono essere risolte in fase di build, sia localmente che da Cloud Manager.
 
 ```xml
 <repository>

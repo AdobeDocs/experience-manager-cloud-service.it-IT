@@ -28,8 +28,8 @@ Il supporto SPA in AEM introduce un livello JS sottile che interagisce con il co
 Per maggiori dettagli sull’SPA nell’AEM, vedi:
 
 * [Blueprint SPA](blueprint.md) per i requisiti tecnici di un SPA.
-* [Guida introduttiva dell’SPA nell’AEM con React](getting-started-react.md) per un rapido tour di un semplice SPA utilizzando React.
-* [Guida introduttiva dell’SPA nell’AEM con Angular](getting-started-angular.md) per una presentazione rapida di un semplice SPA utilizzando Angular.
+* [Guida introduttiva dell&#39;SPA nell&#39;AEM utilizzando React](getting-started-react.md) per una presentazione rapida di un semplice SPA utilizzando React.
+* [Guida introduttiva dell&#39;SPA nell&#39;AEM utilizzando l&#39;Angular](getting-started-angular.md) per una presentazione rapida di un semplice SPA utilizzando l&#39;Angular.
 
 ## Design {#design}
 

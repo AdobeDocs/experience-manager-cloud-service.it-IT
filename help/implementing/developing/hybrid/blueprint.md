@@ -19,13 +19,13 @@ Per consentire all’autore di utilizzare l’Editor SPA dell’AEM per modifica
 
 Questo documento descrive il contratto generale che qualsiasi framework SPA dovrebbe soddisfare (cioè, il tipo di livello di supporto AEM) in modo da poter implementare componenti SPA modificabili all&#39;interno di AEM.
 
-Per consentire all’autore di utilizzare l’Editor pagina AEM per modificare i dati esposti da un framework di applicazione a pagina singola, un progetto deve essere in grado di interpretare la struttura del modello che rappresenta la semantica dei dati memorizzati per un’applicazione all’interno dell’archivio AEM. Per raggiungere questo obiettivo, vengono fornite due librerie indipendenti dal framework: `PageModelManager` e `ComponentMapping`.
+Per consentire all’autore di utilizzare l’Editor pagina AEM per modificare i dati esposti da un framework di applicazione a pagina singola, un progetto deve essere in grado di interpretare la struttura del modello che rappresenta la semantica dei dati memorizzati per un’applicazione all’interno dell’archivio AEM. Per raggiungere questo obiettivo, sono fornite due librerie indipendenti dal framework: `PageModelManager` e `ComponentMapping`.
 
 >[!NOTE]
 >
 >I seguenti requisiti sono indipendenti dal framework. Se questi requisiti sono soddisfatti, è possibile fornire un livello specifico del framework composto da moduli, componenti e servizi.
 >
->**Questi requisiti sono già soddisfatti per i quadri di riferimento React e Angular nell’AEM.** I requisiti di questo blueprint sono pertinenti solo se desideri implementare un altro framework per l’utilizzo con AEM.
+>**Questi requisiti sono già soddisfatti per i framework React e Angular nell&#39;AEM.** I requisiti di questo blueprint sono rilevanti solo se desideri implementare un altro framework da utilizzare con AEM.
 
 >[!CAUTION]
 >
@@ -33,25 +33,25 @@ Per consentire all’autore di utilizzare l’Editor pagina AEM per modificare i
 
 ## PageModelManager {#pagemodelmanager}
 
-Il `PageModelManager` La libreria viene fornita come pacchetto NPM da utilizzare per un progetto SPA. Accompagna l&#39;SPA e funge da gestore del modello di dati.
+La libreria `PageModelManager` viene fornita come pacchetto NPM da utilizzare per un progetto SPA. Accompagna l&#39;SPA e funge da gestore del modello di dati.
 
 Per conto dell’SPA, astrae il recupero e la gestione della struttura JSON che rappresenta l’effettiva struttura del contenuto. È anche responsabile della sincronizzazione con l&#39;SPA per comunicare quando deve rieseguire il rendering dei suoi componenti.
 
-Vedere il pacchetto NPM [@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
+Visualizza il pacchetto NPM [@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 
-Quando si inizializza `PageModelManager`, la libreria carica innanzitutto il modello principale fornito dell’app (tramite il parametro, la proprietà meta o l’URL corrente). Se la libreria identifica che il modello della pagina corrente non fa parte del modello principale che recupera e lo include come modello di una pagina figlio.
+Durante l&#39;inizializzazione di `PageModelManager`, la libreria carica innanzitutto il modello radice fornito dell&#39;app (tramite il parametro, la proprietà meta o l&#39;URL corrente). Se la libreria identifica che il modello della pagina corrente non fa parte del modello principale che recupera e lo include come modello di una pagina figlio.
 
-![Consolidamento del modello di pagina](assets/page-model-consolidation.png)
+![Consolidamento modello pagina](assets/page-model-consolidation.png)
 
 ### ComponentMapping {#componentmapping}
 
-Il `ComponentMapping` viene fornito come pacchetto NPM al progetto front-end. Memorizza i componenti front-end e consente all’SPA di mappare i componenti front-end ai tipi di risorse AEM. Ciò abilita una risoluzione dinamica dei componenti durante l’analisi del modello JSON dell’applicazione.
+Il modulo `ComponentMapping` viene fornito come pacchetto NPM al progetto front-end. Memorizza i componenti front-end e consente all’SPA di mappare i componenti front-end ai tipi di risorse AEM. Ciò abilita una risoluzione dinamica dei componenti durante l’analisi del modello JSON dell’applicazione.
 
-Ogni elemento presente nel modello contiene un `:type` che espone un tipo di risorsa AEM. Una volta montato, il componente front-end può eseguire il rendering utilizzando il frammento di modello ricevuto dalle librerie sottostanti.
+Ogni elemento presente nel modello contiene un campo `:type` che espone un tipo di risorsa AEM. Una volta montato, il componente front-end può eseguire il rendering utilizzando il frammento di modello ricevuto dalle librerie sottostanti.
 
 #### Mappatura di un modello dinamico a un componente {#dynamic-model-to-component-mapping}
 
-Per informazioni dettagliate su come avviene la mappatura da modello dinamico a componente nell’SDK JavaScript per SPA per l’AEM, consulta l’articolo [Mappatura di un modello dinamico a un componente per SPA](model-to-component-mapping.md).
+Per informazioni dettagliate sul modo in cui si verifica la mappatura da modello dinamico a componente nell&#39;SDK JavaScript SPA per AEM, vedere l&#39;articolo [Mappatura da modello dinamico a componente per SPA](model-to-component-mapping.md).
 
 ### Livello specifico del framework {#framework-specific-layer}
 
@@ -69,17 +69,17 @@ I componenti SPA devono essere sincronizzati con il modello della pagina e devon
 
 ### Meta campi {#meta-fields}
 
-Il modello di pagina utilizza il modulo di esportazione del modello JSON, a sua volta basato sul [Modello Sling](https://sling.apache.org/documentation/bundles/models.html) API. I modelli sling esportabili espongono il seguente elenco di campi per consentire alle librerie sottostanti di interpretare il modello di dati:
+Il modello di pagina utilizza il modulo di esportazione del modello JSON, a sua volta basato sull&#39;API [Sling Model](https://sling.apache.org/documentation/bundles/models.html). I modelli sling esportabili espongono il seguente elenco di campi per consentire alle librerie sottostanti di interpretare il modello di dati:
 
-* `:type`: tipo della risorsa AEM (predefinito = tipo di risorsa)
-* `:children`: elementi figlio gerarchici della risorsa corrente. Gli elementi figlio non fanno parte del contenuto interno della risorsa corrente (sono disponibili negli elementi che rappresentano una pagina)
-* `:hierarchyType`: tipo gerarchico di una risorsa. Il `PageModelManager` attualmente supporta il tipo di pagina
+* `:type`: tipo di risorsa AEM (predefinito = tipo di risorsa)
+* `:children`: figli gerarchici della risorsa corrente. Gli elementi figlio non fanno parte del contenuto interno della risorsa corrente (sono disponibili negli elementi che rappresentano una pagina)
+* `:hierarchyType`: tipo gerarchico di una risorsa. `PageModelManager` attualmente supporta il tipo di pagina
 
 * `:items`: risorse di contenuto figlio della risorsa corrente (struttura nidificata, presente solo nei contenitori)
 * `:itemsOrder`: elenco ordinato dei figli. L’oggetto mappa JSON non garantisce l’ordine dei relativi campi. Grazie alla mappa e all’array corrente, il consumatore dell’API beneficia di entrambe le strutture
-* `:path`: percorso del contenuto di un elemento (presente negli elementi che rappresentano una pagina)
+* `:path`: percorso contenuto di un elemento (presente negli elementi che rappresentano una pagina)
 
-Vedi anche [Guida introduttiva di AEM Content Services.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+Consulta anche [Guida introduttiva di AEM Content Services.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
 
 ### Modulo specifico per framework {#framework-specific-module}
 
@@ -108,7 +108,7 @@ I seguenti organismi dovrebbero essere attuati conformemente agli orientamenti s
 
 I componenti del progetto devono delegare l’accesso ai frammenti di un modello a un provider di modelli. Il provider di modelli è quindi incaricato di ascoltare le modifiche apportate al frammento specificato del modello e restituire il modello aggiornato al componente delegato.
 
-A questo scopo, il provider di modelli deve registrarsi nel [`PageModelManager`](#pagemodelmanager). Quindi, quando si verifica una modifica, riceve e trasmette i dati aggiornati al componente delegato. Per convenzione, la proprietà resa disponibile al componente delegante che conterrà il frammento del modello è denominata `cqModel`. L’implementazione è libera di fornire questa proprietà al componente, ma deve considerare aspetti quali l’integrazione con l’architettura del framework, la possibilità di individuare e la facilità d’uso.
+Per eseguire questa operazione, il provider di modelli deve registrarsi in [`PageModelManager`](#pagemodelmanager). Quindi, quando si verifica una modifica, riceve e trasmette i dati aggiornati al componente delegato. Per convenzione, la proprietà resa disponibile al componente delegato che conterrà il frammento del modello è denominata `cqModel`. L’implementazione è libera di fornire questa proprietà al componente, ma deve considerare aspetti quali l’integrazione con l’architettura del framework, la possibilità di individuare e la facilità d’uso.
 
 ### Il componente HTML Decorator {#the-component-html-decorator}
 
@@ -118,33 +118,33 @@ Il Component Decorator è responsabile della decorazione delle HTML esterne dell
 
 I metadati seguenti devono essere aggiunti all’elemento HTML esterno prodotto dal componente del progetto. Consentono all’Editor pagina di recuperare la configurazione di modifica corrispondente.
 
-* `data-cq-data-path`: percorso della risorsa relativo al `jcr:content`
+* `data-cq-data-path`: percorso della risorsa relativo a `jcr:content`
 
 #### Modifica della dichiarazione di capacità e del segnaposto {#editing-capability-declaration-and-placeholder}
 
 I metadati e i nomi di classi seguenti devono essere aggiunti all&#39;elemento HTML esterno prodotto dal componente del progetto. Consentono all’Editor pagina di offrire funzionalità correlate.
 
 * `cq-placeholder`: nome della classe che identifica il segnaposto per un componente vuoto
-* `data-emptytext`: etichetta che deve essere visualizzata dalla sovrapposizione quando un’istanza del componente è vuota
+* `data-emptytext`: etichetta che deve essere visualizzata dalla sovrapposizione quando un&#39;istanza del componente è vuota
 
 **Segnaposto per componenti vuoti**
 
 Ogni componente deve essere esteso con una funzionalità che decorerà l’elemento HTML esterno con attributi di dati e nomi di classi specifici per segnaposto e sovrapposizioni correlate quando il componente viene identificato come vuoto.
 
-**Informazioni sul valore Vuoto di un componente**
+**Informazioni sul valore vuoto di un componente**
 
 * Il componente è logicamente vuoto?
 * Qual è l’etichetta visualizzata dalla sovrapposizione quando il componente è vuoto?
 
 ### Contenitore {#container}
 
-Un contenitore è un componente destinato a contenere ed eseguire il rendering dei componenti figlio. A questo scopo, il contenitore scorre la `:itemsOrder`, `:items` e `:children` proprietà del relativo modello.
+Un contenitore è un componente destinato a contenere ed eseguire il rendering dei componenti figlio. A tale scopo, il contenitore scorre le proprietà `:itemsOrder`, `:items` e `:children` del relativo modello.
 
-Il contenitore ottiene dinamicamente i componenti figlio dall’archivio della [`ComponentMapping`](#componentmapping) libreria. Il contenitore estende quindi il componente secondario con le funzionalità del provider di modelli e infine lo crea come istanza.
+Il contenitore ottiene dinamicamente i componenti figlio dall&#39;archivio della libreria [`ComponentMapping`](#componentmapping). Il contenitore estende quindi il componente secondario con le funzionalità del provider di modelli e infine lo crea come istanza.
 
 ### Pagina {#page}
 
-Il `Page` il componente estende `Container` componente. Un contenitore è un componente destinato a contenere ed eseguire il rendering dei componenti figlio, incluse le pagine figlie. A questo scopo, il contenitore scorre la `:itemsOrder`, `:items`, e `:children` proprietà del relativo modello. Il `Page` componente ottiene dinamicamente i componenti figlio dall&#39;archivio del [`ComponentMapping`](#componentmapping) libreria. Il `Page` è responsabile della creazione di un&#39;istanza dei componenti figlio.
+Il componente `Page` estende il componente `Container`. Un contenitore è un componente destinato a contenere ed eseguire il rendering dei componenti figlio, incluse le pagine figlie. A tale scopo, il contenitore scorre le proprietà `:itemsOrder`, `:items` e `:children` del relativo modello. Il componente `Page` ottiene dinamicamente i componenti figlio dall&#39;archivio della libreria [`ComponentMapping`](#componentmapping). `Page` è responsabile della creazione delle istanze dei componenti figlio.
 
 ### Griglia reattiva {#responsive-grid}
 
@@ -161,7 +161,7 @@ Vedi anche la risorsa npm [@adobe/aem-react-editable-components](https://www.npm
 
 #### Segnaposto della griglia reattiva {#placeholder-of-the-responsive-grid}
 
-Il componente SPA è mappato a un contenitore grafico come la griglia reattiva e deve aggiungere un segnaposto figlio virtuale durante la creazione del contenuto. Quando il contenuto dell’SPA viene creato dall’Editor pagina, viene incorporato nell’editor utilizzando un iframe e il `data-cq-editor` viene aggiunto al nodo del documento del contenuto. Quando `data-cq-editor` è presente, il contenitore deve includere un elemento HTMLElement per rappresentare l’area con cui l’autore interagisce quando inserisce un nuovo componente nella pagina.
+Il componente SPA è mappato a un contenitore grafico come la griglia reattiva e deve aggiungere un segnaposto figlio virtuale durante la creazione del contenuto. Quando il contenuto dell&#39;SPA viene creato dall&#39;Editor pagina, tale contenuto viene incorporato nell&#39;editor utilizzando un iframe e l&#39;attributo `data-cq-editor` viene aggiunto al nodo del documento di tale contenuto. Se l&#39;attributo `data-cq-editor` è presente, il contenitore deve includere un elemento HTMLlement per rappresentare l&#39;area con cui l&#39;autore interagisce quando inserisce un nuovo componente nella pagina.
 
 Ad esempio:
 
@@ -173,13 +173,13 @@ Ad esempio:
 >
 >I nomi delle classi utilizzati nell’esempio sono attualmente richiesti dall’editor di pagine.
 >
->* `"new section"`: indica che l’elemento corrente è il segnaposto del contenitore
+>* `"new section"`: indica che l&#39;elemento corrente è il segnaposto del contenitore
 >* `"aem-Grid-newComponent"`: normalizza il componente per la creazione del layout
 >
 
 #### Mappatura dei componenti {#component-mapping}
 
-Il sottostante [`Component Mapping`](#componentmapping) libreria e relativi `MapTo` Questa funzione può essere incapsulata ed estesa per fornire le funzionalità relative alla configurazione di modifica fornita insieme alla classe del componente corrente.
+La libreria [`Component Mapping`](#componentmapping) sottostante e la relativa funzione `MapTo` possono essere incapsulate ed estese per fornire le funzionalità relative alla configurazione di modifica fornita insieme alla classe del componente corrente.
 
 ```javascript
 const EditConfig = {
@@ -201,7 +201,7 @@ class MyComponent extends Component {
 MapTo('component/resource/path')(MyComponent, EditConfig);
 ```
 
-Nell’implementazione di cui sopra, il componente del progetto viene esteso con la funzionalità di vuoto prima che il venga effettivamente registrato nel [Mappatura dei componenti](#componentmapping) archiviare. Ciò avviene incapsulando ed estendendo il [`ComponentMapping`](#componentmapping) per introdurre il supporto della funzionalità `EditConfig` oggetto di configurazione:
+Nell&#39;implementazione di cui sopra, il componente del progetto viene esteso con la funzionalità di vuoto prima che venga effettivamente registrato nell&#39;archivio [Mappatura componenti](#componentmapping). Questa operazione viene eseguita incapsulando ed estendendo la libreria [`ComponentMapping`](#componentmapping) per introdurre il supporto dell&#39;oggetto di configurazione `EditConfig`:
 
 ```javascript
 /**
@@ -240,10 +240,10 @@ In sintesi, per essere interpretato dall’editor pagina come modificabile, un c
 
 Il frammento seguente illustra la tipica rappresentazione HTML di una struttura del contenuto di una pagina. Di seguito sono riportati alcuni punti importanti:
 
-* L’elemento griglia reattivo contiene nomi di classi con prefisso `aem-Grid--`
-* L’elemento della colonna reattivo presenta nomi di classi con prefisso `aem-GridColumn--`
+* L&#39;elemento griglia reattivo contiene nomi di classe con prefisso `aem-Grid--`
+* L&#39;elemento della colonna reattivo contiene nomi di classe con prefisso `aem-GridColumn--`
 * Viene racchiusa una griglia reattiva che è anche la colonna di una griglia padre, ad esempio i due prefissi precedenti non vengono visualizzati sullo stesso elemento
-* Gli elementi corrispondenti alle risorse modificabili includono `data-cq-data-path` proprietà. Consulta la [Contrarre con l’Editor pagina](#contract-with-the-page-editor) sezione del presente documento.
+* Gli elementi corrispondenti alle risorse modificabili contengono una proprietà `data-cq-data-path`. Consulta la sezione [Contratto con Editor pagina](#contract-with-the-page-editor) di questo documento.
 
 ```javascript
 <div data-cq-data-path="/content/page">
@@ -263,21 +263,21 @@ Il frammento seguente illustra la tipica rappresentazione HTML di una struttura 
 
 L&#39;app è proprietaria del routing. Lo sviluppatore front-end deve innanzitutto implementare un componente Navigazione (mappato a un componente Navigazione AEM). Questo componente esegue il rendering dei collegamenti URL da utilizzare insieme a una serie di route che visualizzano o nascondono frammenti di contenuto.
 
-Il sottostante [`PageModelManager`](#pagemodelmanager) libreria e relativi [`ModelRouter`](routing.md) Il modulo (abilitato per impostazione predefinita) è responsabile della preacquisizione e dell’accesso al modello associato a un determinato percorso di risorsa.
+La libreria [`PageModelManager`](#pagemodelmanager) sottostante e il relativo modulo [`ModelRouter`](routing.md) (abilitato per impostazione predefinita) sono responsabili della preacquisizione e dell&#39;accesso al modello associato a un determinato percorso di risorsa.
 
-Le due entità si riferiscono alla nozione di ciclo, ma [`ModelRouter`](routing.md) è responsabile solo del caricamento di [`PageModelManager`](#pagemodelmanager) con un modello dati strutturato in modo sincrono con lo stato corrente dell’applicazione.
+Le due entità si riferiscono alla nozione di routing, ma [`ModelRouter`](routing.md) è responsabile solo del caricamento di [`PageModelManager`](#pagemodelmanager) con un modello dati strutturato in sincronia con lo stato corrente dell&#39;applicazione.
 
-Vedi l’articolo [Routing modello SPA](routing.md) per ulteriori informazioni.
+Per ulteriori informazioni, vedere l&#39;articolo [Routing modello SPA](routing.md).
 
 ## SPA in azione {#spa-in-action}
 
 Scopri come funziona un semplice SPA e come sperimentare autonomamente un SPA, continuando a seguire i seguenti documenti:
 
-* [Guida introduttiva dell’SPA nell’AEM con React](getting-started-react.md).
-* [Guida introduttiva dell’SPA nell’AEM con Angular](getting-started-angular.md).
+* [Guida introduttiva all&#39;SPA nell&#39;AEM utilizzando React](getting-started-react.md).
+* [Guida introduttiva all&#39;SPA nell&#39;AEM tramite Angular](getting-started-angular.md).
 
 ## Ulteriori informazioni {#further-reading}
 
 Per maggiori informazioni sull’SPA nell’AEM, consulta i seguenti documenti:
 
-* [Panoramica dell’editor SPA](editor-overview.md) per una panoramica dell&#39;SPA nell&#39;AEM e del modello di comunicazione
+* [Panoramica dell&#39;editor SPA](editor-overview.md) per una panoramica dell&#39;SPA nell&#39;AEM e del modello di comunicazione

@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
 workflow-type: tm+mt
 source-wordcount: '4482'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
@@ -525,27 +525,27 @@ Tuttavia, in alcuni casi un’API può essere obsoleta nel contesto di Experienc
 ### Non utilizzare @Inject’annotazione con @Optional nei modelli Sling {#sonarqube-slingmodels-inject-optional}
 
 * **Chiave**: InjectAnnotationWithOptionalInjectionCheck
-* **Tipo**: qualità del software
+* **Tipo**: qualità software
 * **Gravità**: minore
 * **Da**: versione 2023.11
 
-Il progetto Apache Sling scoraggia l’utilizzo del `@Inject` nel contesto di modelli Sling, in quanto può causare prestazioni non ottimali se combinata con `DefaultInjectionStrategy.OPTIONAL` a livello di campo o di classe. Invece iniezioni più specifiche (come `@ValueMapValue` o `@OsgiInjector` annotazioni).
+Il progetto Apache Sling sconsiglia l&#39;utilizzo dell&#39;annotazione `@Inject` nel contesto dei modelli Sling, in quanto può causare prestazioni non corrette se combinata con `DefaultInjectionStrategy.OPTIONAL` (a livello di campo o di classe). Devono invece essere utilizzate iniezioni più specifiche (come le annotazioni `@ValueMapValue` o `@OsgiInjector`).
 
-Controlla la [Documentazione di Apache Sling](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) per ulteriori informazioni sulle annotazioni consigliate e sul motivo per cui questo consiglio è stato creato, consulta la sezione.
+Consulta la [documentazione di Apache Sling](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) per ulteriori informazioni sulle annotazioni consigliate e sul motivo per cui questo consiglio è stato creato.
 
 
 ### Riutilizzare le istanze di un client HTTPC {#sonarqube-reuse-httpclient}
 
 * **Chiave**: AEMSRE-870
-* **Tipo**: qualità del software
+* **Tipo**: qualità software
 * **Gravità**: minore
 * **Da**: versione 2023.11
 
 Le applicazioni AEM spesso si rivolgono ad altre applicazioni utilizzando il protocollo HTTP e Apache HttpClient è una libreria spesso utilizzata a questo scopo. Tuttavia, la creazione di un oggetto HttpClient comporta un certo sovraccarico, pertanto tali oggetti devono essere riutilizzati il più possibile.
 
-Questa regola controlla che tale oggetto HttpClient non sia privato all&#39;interno di un metodo, ma globale a livello di classe, in modo da poterlo riutilizzare. In questo caso, il campo httpClient deve essere impostato nel costruttore della classe o nel `activate()` (se questa classe è un componente/servizio OSGi).
+Questa regola controlla che tale oggetto HttpClient non sia privato all&#39;interno di un metodo, ma globale a livello di classe, in modo da poterlo riutilizzare. In questo caso, il campo httpClient deve essere impostato nel costruttore della classe o nel metodo `activate()` (se questa classe è un componente/servizio OSGi).
 
-Controlla la [Guida all’ottimizzazione](https://hc.apache.org/httpclient-legacy/performance.html) di HttpClient per alcune best practice relative all’utilizzo di HttpClient.
+Consultare la [Guida all&#39;ottimizzazione](https://hc.apache.org/httpclient-legacy/performance.html) di HttpClient per informazioni su alcune best practice relative all&#39;utilizzo di HttpClient.
 
 #### Codice non conforme {#non-compliant-code-14}
 
@@ -989,7 +989,8 @@ Experience Manager as a Cloud Service non consente che le definizioni dell’ind
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
-Experience Manager as a Cloud Service non consente che le definizioni dell’indice di ricerca personalizzato (ovvero i nodi di tipo `oak:QueryIndexDefinition`) contengano una proprietà denominata `reindex`. L’indicizzazione con questa proprietà deve essere aggiornata prima della migrazione ad Experience Manager as a Cloud Service. Per ulteriori informazioni, consulta il documento [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md#how-to-use).
+Experience Manager as a Cloud Service non consente che le definizioni dell’indice di ricerca personalizzato (ovvero i nodi di tipo `oak:QueryIndexDefinition`) contengano una proprietà denominata `reindex`. L’indicizzazione tramite questa proprietà deve essere aggiornata prima della migrazione ad Experience Manager as a
+Cloud Service. Per ulteriori informazioni, consulta il documento [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md#how-to-use).
 
 ### I nodi Lucene delle risorse DAM personalizzati non devono specificare &quot;queryPaths&quot; {#oakpal-damAssetLucene-queryPaths}
 
@@ -1041,7 +1042,7 @@ Experience Manager as a Cloud Service non consente che le definizioni dell’ind
 * **Gravità**: minore
 * **Da**: versione 2023.1.0
 
-Per gli indici personalizzati, entrambi `includedPaths` e `queryPaths` deve essere configurato con valori identici. Se ne viene specificata una, l&#39;altra deve corrispondere. Tuttavia, esiste un caso speciale per gli indici di `damAssetLucene`, incluse le versioni personalizzate. Per questi, devi fornire solo `includedPaths`.
+Per gli indici personalizzati, è necessario configurare sia `includedPaths` che `queryPaths` con valori identici. Se ne viene specificata una, l&#39;altra deve corrispondere. Tuttavia, esiste un caso speciale per gli indici di `damAssetLucene`, incluse le versioni personalizzate. Per questi, è necessario fornire solo `includedPaths`.
 
 ### Il nodo di indice che specifica nodeScopeIndex sul tipo di nodo generico deve inoltre specificare includedPaths e queryPaths {#oakpal-full-text-on-generic-node-type}
 
@@ -1050,8 +1051,8 @@ Per gli indici personalizzati, entrambi `includedPaths` e `queryPaths` deve esse
 * **Gravità**: minore
 * **Da**: versione 2023.1.0
 
-Quando si imposta `nodeScopeIndex` su un tipo di nodo &quot;generico&quot; come `nt:unstructured` o `nt:base`, è inoltre necessario specificare `includedPaths` e `queryPaths` proprietà.
-`nt:base` può essere considerato &quot;generico&quot;, in quanto tutti i tipi di nodo ereditano da esso. Quindi, impostazione di un `nodeScopeIndex` il `nt:base` lo farà indicizzare tutti i nodi nell’archivio. Analogamente, `nt:unstructured` è anche considerato &quot;generico&quot; in quanto esistono molti nodi negli archivi che sono di questo tipo.
+Quando si imposta la proprietà `nodeScopeIndex` su un tipo di nodo &quot;generico&quot; come `nt:unstructured` o `nt:base`, è necessario specificare anche le proprietà `includedPaths` e `queryPaths`.
+`nt:base` può essere considerato &quot;generico&quot;, poiché tutti i tipi di nodo ereditano da esso. Pertanto, impostando `nodeScopeIndex` su `nt:base`, verranno indicizzati tutti i nodi nell&#39;archivio. Analogamente, `nt:unstructured` è anche considerato &quot;generico&quot; in quanto ci sono molti nodi negli archivi che sono di questo tipo.
 
 #### Codice non conforme {#non-compliant-code-full-text-on-generic-node-type}
 
@@ -1202,46 +1203,46 @@ Per indici specifici, assicurati di mantenere la proprietà tags e i relativi va
 * **Gravità**: minore
 * **Da**: versione 2024.6.0
 
-AEM Cloud Service non consente la definizione di indici di ricerca personalizzati (nodi di tipo `oak:QueryIndexDefinition`) nel pacchetto dei contenuti dell’interfaccia utente.
+AEM Cloud Service non consente di distribuire nel pacchetto di contenuti dell’interfaccia utente le definizioni di indici di ricerca personalizzati (nodi di tipo `oak:QueryIndexDefinition`).
 
 >[!WARNING]
 >
->Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire da [Versione di agosto 2024 di Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Ti invitiamo a risolvere questo problema il prima possibile poiché, a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md), causerà un errore nelle pipeline.
 
-### La Definizione Dell’Indice Full-Text Personalizzato Di Tipo damAssetLucene Deve Avere Il Prefisso Corretto Di &quot;damAssetLucene&quot; {#oakpal-dam-asset-lucene}
+### La definizione dell’indice testuale personalizzato di tipo damAssetLucene deve avere il prefisso “damAssetLucene” {#oakpal-dam-asset-lucene}
 
 * **Chiave**: CustomFulltextIndexesOfTheDamAssetCheck
 * **Tipo**: miglioramento
 * **Gravità**: minore
 * **Da**: versione 2024.6.0
 
-AEM Cloud Service non consente la definizione di indici full-text di tipo personalizzati `damAssetLucene` dall&#39;essere preceduta da un prefisso diverso `damAssetLucene`.
+AEM Cloud Service non consente che la definizione di indici testuali personalizzati di tipo `damAssetLucene` sia preceduta da un prefisso diverso da `damAssetLucene`.
 
 >[!WARNING]
 >
->Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire da [Versione di agosto 2024 di Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Ti invitiamo a risolvere questo problema il prima possibile poiché, a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md), causerà un errore nelle pipeline.
 
-### I Nodi Di Definizione Dell’Indice Non Devono Contenere Proprietà Con Lo Stesso Nome {#oakpal-index-property-name}
+### I nodi di definizione dell’indice non devono contenere proprietà con lo stesso nome {#oakpal-index-property-name}
 
 * **Chiave**: DuplicateNameProperty
 * **Tipo**: miglioramento
 * **Gravità**: minore
 * **Da**: versione 2024.6.0
 
-AEM Cloud Service non consente la definizione di indici di ricerca personalizzati (ovvero, nodi di tipo) `oak:QueryIndexDefinition`) per contenere proprietà con lo stesso nome
+AEM Cloud Service non consente che le definizioni dell’indice di ricerca personalizzato (ovvero, i nodi di tipo `oak:QueryIndexDefinition`) contengano una proprietà denominata con lo stesso nome.
 
 >[!WARNING]
 >
->Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire da [Versione di agosto 2024 di Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Ti invitiamo a risolvere questo problema il prima possibile poiché, a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md), causerà un errore nelle pipeline.
 
-### Non è consentito personalizzare alcune definizioni di indice OOTB {#oakpal-customizing-ootb-index}
+### Non è consentito personalizzare alcune definizioni di indici integrati {#oakpal-customizing-ootb-index}
 
 * **Chiave**: RestrictIndexCustomization
 * **Tipo**: miglioramento
 * **Gravità**: minore
 * **Da**: versione 2024.6.0
 
-AEM Cloud Service vieta modifiche non autorizzate dei seguenti indici OOTB:
+AEM Cloud Service non consente modifiche non autorizzate ai seguenti indici integrati:
 
 * `nodetypeLucene`
 * `slingResourceResolver`
@@ -1252,17 +1253,17 @@ AEM Cloud Service vieta modifiche non autorizzate dei seguenti indici OOTB:
 
 >[!WARNING]
 >
->Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire da [Versione di agosto 2024 di Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Ti invitiamo a risolvere questo problema il prima possibile poiché, a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md), causerà un errore nelle pipeline.
 
-### La Configurazione Dei Tokenizer Negli Analizzatori Deve Essere Creata Con Il Nome &quot;Tokenizer&quot; {#oakpal-tokenizer}
+### La configurazione dei tokenizer negli analizzatori deve essere creata con il nome “tokenizer” {#oakpal-tokenizer}
 
 * **Chiave**: AnalyzerTokenizerConfigCheck
 * **Tipo**: miglioramento
 * **Gravità**: minore
 * **Da**: versione 2024.6.0
 
-AEM Cloud Service vieta la creazione di tokenizer con nomi non corretti negli analizzatori. I token devono sempre essere definiti come `tokenizer`.
+AEM Cloud Service vieta la creazione di tokenizer con nomi non corretti negli analizzatori. I tokenizzatori devono sempre essere definiti come `tokenizer`.
 
 >[!WARNING]
 >
->Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire da [Versione di agosto 2024 di Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Ti invitiamo a risolvere questo problema il prima possibile poiché, a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md), causerà un errore nelle pipeline.

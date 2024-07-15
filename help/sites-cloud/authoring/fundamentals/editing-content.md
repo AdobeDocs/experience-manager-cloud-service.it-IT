@@ -75,7 +75,7 @@ La barra degli strumenti permette di accedere a numerose opzioni. A seconda del 
 
 * **Selettore modalità**
 
-  Visualizza il [modalità](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) e consente di selezionare un’altra modalità, ad esempio modifica, layout, timewarp o targeting.
+  Visualizza la [modalità](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) corrente e consente di selezionare un&#39;altra modalità come modifica, layout, timewarp o targeting.
 
   ![Pulsante Selettore modalità](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -151,9 +151,9 @@ Puoi aggiungere un nuovo componente utilizzando il [browser componenti](/help/si
 
      ![Inserire un componente](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * Se utilizzi un dispositivo desktop, puoi fare doppio clic sul pulsante **Trascina qui i componenti** casella.
+   * Se utilizzi un dispositivo desktop, puoi fare doppio clic sulla casella **Trascina qui i componenti**.
 
-   * Il **Inserisci nuovo componente** viene visualizzata una finestra di dialogo che consente di selezionare il componente richiesto:
+   * Viene aperta la finestra di dialogo **Inserisci nuovo componente** che consente di selezionare il componente richiesto:
 
      ![Finestra di dialogo Inserisci nuovo componente](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -161,7 +161,7 @@ Puoi aggiungere un nuovo componente utilizzando il [browser componenti](/help/si
 
 ### Inserimento di un componente utilizzando il browser Risorse {#inserting-a-component-using-the-assets-browser}
 
-Puoi anche aggiungere un nuovo componente alla pagina trascinando una risorsa dal menu [browser risorse](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Questo crea automaticamente un componente del tipo appropriato (e che contiene la risorsa).
+Puoi anche aggiungere un nuovo componente alla pagina trascinando una risorsa dal browser [risorse](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Questo crea automaticamente un componente del tipo appropriato (e che contiene la risorsa).
 
 Puoi configurare questo comportamento per l’installazione in uso. Per ulteriori dettagli, consulta la sezione su come Configurare un sistema di paragrafi in modo che il trascinamento di una risorsa crei uno specifico componente. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -173,7 +173,7 @@ Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 
    Un componente, appropriato per il tipo di risorsa, viene creato nella posizione desiderata e include la risorsa selezionata.
 
-1. [Modifica](#edit-content) il componente, se necessario.
+1. [Modificare](#edit-content) il componente, se necessario.
 
 >[!NOTE]
 >
@@ -255,13 +255,13 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
 * **Layout**
 
-  Questo ti consente di modificare [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) del componente selezionato. Ciò vale solo per il componente selezionato e non attiva la [Modalità di layout](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) per l’intera pagina.
+  Ciò ti consente di modificare il [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) del componente selezionato. Ciò vale solo per il componente selezionato e non attiva la [Modalità di layout](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) per l’intera pagina.
 
   ![Pulsante Layout](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **Converti in variante di frammento di esperienza**
 
-  Questo consente di creare un’ [frammento esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) dal componente selezionato o aggiungilo a un frammento di esperienza esistente.
+  In questo modo puoi creare un [frammento esperienza](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) dal componente selezionato o aggiungerlo a un frammento esperienza esistente.
 
   ![Pulsante Converti in frammento esperienza](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -341,7 +341,7 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
 
    ![Barra degli strumenti di un componente pagina](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Seleziona la **Layout** per regolare il layout del componente.
+   Seleziona l&#39;azione **Layout** per modificare il layout del componente.
 
    ![Pulsante Layout della barra degli strumenti del componente](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Informazioni su Assets
+title: Approfondimenti Assets
 description: Monitora le valutazioni utente e le statistiche sull’utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe.
 contentOwner: AG
 feature: Asset Insights, Asset Reports
@@ -12,7 +12,7 @@ ht-degree: 13%
 
 ---
 
-# Informazioni su Assets {#asset-insights}
+# Approfondimenti Assets {#asset-insights}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -25,7 +25,7 @@ Assets Insights acquisisce i dettagli dell’attività dell’utente, ad esempio
 
 Affinché Assets Insights possa acquisire le statistiche di utilizzo delle immagini provenienti da un sito web, devi includere il codice di incorporamento dell’immagine nel codice del sito web.
 
-Per consentire a Assets Insights di visualizzare le statistiche di utilizzo delle risorse, configura innanzitutto la funzione per recuperare i dati di reporting da [!DNL Adobe Analytics]. Per ulteriori informazioni, consulta [Configurare Assets Insights](#configure-asset-insights). Per utilizzare questa funzione, acquista [!DNL Adobe Analytics] licenza separatamente.
+Per consentire a Assets Insights di visualizzare le statistiche di utilizzo delle risorse, configura innanzitutto la funzione per recuperare i dati di reporting da [!DNL Adobe Analytics]. Per ulteriori dettagli, vedere [Configurare Assets Insights](#configure-asset-insights). Per utilizzare questa funzionalità, acquistare la licenza di [!DNL Adobe Analytics] separatamente.
 
 >[!NOTE]
 >
@@ -35,26 +35,26 @@ Per consentire a Assets Insights di visualizzare le statistiche di utilizzo dell
 
 Puoi visualizzare i punteggi di Assets Insights dalla pagina dei metadati.
 
-1. Dall’interfaccia utente Assets, seleziona l’immagine e fai clic su **[!UICONTROL Proprietà]** dalla barra degli strumenti.
-1. Dalla pagina Proprietà, fai clic su **[!UICONTROL Approfondimenti]**.
-1. Rivedi i dettagli di utilizzo della risorsa in **[!UICONTROL Approfondimenti]** scheda. Il **[!UICONTROL Punteggio]** La sezione descrive l’utilizzo totale delle risorse e le sequenze di prestazioni di una risorsa.
+1. Dall&#39;interfaccia utente di Assets, selezionare l&#39;immagine e quindi fare clic su **[!UICONTROL Proprietà]** nella barra degli strumenti.
+1. Dalla pagina Proprietà, fai clic su **[!UICONTROL Informazioni]**.
+1. Rivedi i dettagli di utilizzo della risorsa nella scheda **[!UICONTROL Informazioni]**. La sezione **[!UICONTROL Punteggio]** descrive l&#39;utilizzo totale delle risorse e l&#39;andamento delle prestazioni di una risorsa.
 
    Il punteggio di utilizzo descrive il numero di volte in cui la risorsa viene utilizzata in varie soluzioni.
 
-   Il **[!UICONTROL Impression]** punteggio è il numero di volte in cui la risorsa viene caricata sul sito web. Numero visualizzato in **[!UICONTROL Clic]** è il numero di volte in cui si fa clic sulla risorsa.
+   Il punteggio **[!UICONTROL Impression]** è il numero di volte in cui la risorsa viene caricata sul sito Web. Il numero visualizzato in **[!UICONTROL Clic]** è il numero di volte in cui si fa clic sulla risorsa.
 
-1. Rivedi **[!UICONTROL Statistiche di utilizzo]** sezione per sapere di quali entità faceva parte la risorsa e quali soluzioni creative l’hanno recentemente utilizzata. Maggiore è l’utilizzo, maggiori sono le probabilità che la risorsa sia popolare tra gli utenti. I dati di utilizzo vengono visualizzati sotto le seguenti intestazioni:
+1. Rivedi la sezione **[!UICONTROL Statistiche di utilizzo]** per sapere di quali entità faceva parte la risorsa e quali soluzioni creative l&#39;hanno utilizzata di recente. Maggiore è l’utilizzo, maggiori sono le probabilità che la risorsa sia popolare tra gli utenti. I dati di utilizzo vengono visualizzati sotto le seguenti intestazioni:
 
-   * **[!UICONTROL Risorsa]**: numero di volte in cui la risorsa faceva parte di una raccolta o di una risorsa composta.
-   * **[!UICONTROL Web e mobile]**: numero di volte in cui la risorsa faceva parte di siti web e app.
-   * **[!UICONTROL Social]**: numero di volte in cui la risorsa è stata utilizzata in altre soluzioni, ad esempio [!DNL Adobe Campaign].
-   * **[!UICONTROL E-mail]**: numero di volte in cui la risorsa è stata utilizzata nelle campagne e-mail.
+   * **[!UICONTROL Risorsa]**: il numero di volte in cui la risorsa faceva parte di una raccolta o di una risorsa composta.
+   * **[!UICONTROL Web e dispositivi mobili]**: il numero di volte in cui la risorsa faceva parte di siti Web e app.
+   * **[!UICONTROL Social]**: il numero di volte in cui la risorsa è stata utilizzata in altre soluzioni, ad esempio [!DNL Adobe Campaign].
+   * **[!UICONTROL E-mail]**: il numero di volte in cui la risorsa è stata utilizzata nelle campagne e-mail.
 
-   ![usage_statistics](assets/usage_statistics.png)
+   ![statistiche_di_utilizzo](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >Perché la funzione Assets Insights in genere recupera i dati delle soluzioni da [!DNL Adobe Analytics] periodicamente, la sezione Soluzioni potrebbe non visualizzare i dati più recenti. Il periodo di tempo per il quale vengono visualizzati i dati dipende dalla pianificazione dell’operazione di recupero eseguita da Assets Insights per recuperare i dati di Analytics.
+   >Poiché la funzione Assets Insights in genere recupera i dati delle soluzioni da [!DNL Adobe Analytics] in modo periodico, è possibile che nella sezione Soluzioni non vengano visualizzati i dati più recenti. Il periodo di tempo per il quale vengono visualizzati i dati dipende dalla pianificazione dell’operazione di recupero eseguita da Assets Insights per recuperare i dati di Analytics.
 
 1. Per visualizzare graficamente le statistiche sulle prestazioni della risorsa in un arco di tempo, seleziona il periodo nella sezione **[!UICONTROL Statistiche di prestazioni]**. I dettagli, compresi clic e impression, vengono visualizzati come linee di tendenza di un grafico.
 
@@ -64,7 +64,7 @@ Puoi visualizzare i punteggi di Assets Insights dalla pagina dei metadati.
    >
    >A differenza dei dati nella sezione Soluzioni, la sezione Statistiche di prestazioni visualizza i dati più recenti.
 
-1. Per ottenere il codice di incorporamento della risorsa da includere nei siti Web per ottenere i dati sulle prestazioni, fai clic su **[!UICONTROL Ottieni codice di incorporamento]** sotto la miniatura della risorsa. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. Per ottenere il codice di incorporamento per la risorsa inclusa nei siti Web per ottenere i dati sulle prestazioni, fai clic su **[!UICONTROL Ottieni codice di incorporamento]** sotto la miniatura della risorsa. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -72,8 +72,8 @@ Puoi visualizzare i punteggi di Assets Insights dalla pagina dei metadati.
 
 Dalla **[!UICONTROL Visualizzazione approfondimenti]** puoi visualizzare simultaneamente un punteggio di tutte le risorse presenti all’interno di una cartella.
 
-1. Nell’interfaccia utente Assets, passa alla cartella contenente le risorse per le quali desideri visualizzare le informazioni approfondite.
-1. Fai clic su **[!UICONTROL Layout]** dalla barra degli strumenti, quindi scegliere **[!UICONTROL Visualizzazione approfondimenti]**.
+1. Nell’interfaccia utente di Assets, passa alla cartella contenente le risorse per le quali desideri visualizzare le informazioni approfondite.
+1. Fare clic sull&#39;opzione **[!UICONTROL Layout]** nella barra degli strumenti, quindi scegliere **[!UICONTROL Visualizzazione approfondimenti]**.
 1. Nella pagina vengono visualizzati i punteggi di utilizzo delle risorse. Confronta le valutazioni delle varie risorse e trae informazioni.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -92,44 +92,44 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 ## Configurare Assets Insights {#configure-asset-insights}
 
-[!DNL Experience Manager Assets] recupera i dati di utilizzo relativi alle risorse digitali utilizzate da siti web di terze parti da [!DNL Adobe Analytics]. Per abilitare Assets Insights al recupero di tali dati e alla generazione di informazioni, configura innanzitutto la funzione da integrare con [!DNL Adobe Analytics].
+[!DNL Experience Manager Assets] recupera i dati di utilizzo relativi alle risorse digitali utilizzate da siti Web di terze parti da [!DNL Adobe Analytics]. Per consentire ad Assets Insights di recuperare questi dati e generare approfondimenti, configura innanzitutto la funzione da integrare con [!DNL Adobe Analytics].
 
 >[!NOTE]
 >
 >Gli approfondimenti sono supportati e forniti solo per le immagini.
 
-1. In entrata [!DNL Experience Manager], fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**.
+1. In [!DNL Experience Manager], fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. Fai clic sulla scheda **[!UICONTROL Configurazione approfondimenti]**.
 
-1. Per informazioni sull’accesso al servizio web Analytics, vai a **[!UICONTROL Analytics]** > **[!UICONTROL Amministratore]** > **[!UICONTROL Strumenti di amministrazione]** > **[!UICONTROL Impostazioni società]** > **[!UICONTROL Servizi Web]** e copia **[!UICONTROL Segreto condiviso]** chiave.
+1. Per informazioni sull&#39;accesso al servizio Web Analytics, vai a **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Strumenti di amministrazione]** > **[!UICONTROL Impostazioni società]** > **[!UICONTROL Servizi Web]** e copia la chiave **[!UICONTROL Segreto condiviso]**.
 
-   Nella procedura guidata, seleziona **[!UICONTROL Data center]** e forniscono il nome visualizzato del **[!UICONTROL Azienda]**, servizi web **[!UICONTROL Nome utente]**, e incolla **[!UICONTROL Segreto condiviso]** chiave.
+   Nella procedura guidata, seleziona il **[!UICONTROL Centro dati]** e fornisci il nome visualizzato della **[!UICONTROL Società]**, dei servizi Web **[!UICONTROL Nome utente]**, quindi incolla la chiave **[!UICONTROL Segreto condiviso]**.
 
-   Clic **[!UICONTROL Autentica]**.
+   Fare clic su **[!UICONTROL Autentica]**.
 
-   ![Configurare Adobe Analytics per Informazioni su risorse in [!DNL Experience Manager]](assets/analytics-insight-config.png)
+   ![Configurazione di Adobe Analytics per approfondimenti su Assets in [!DNL Experience Manager]](assets/analytics-insight-config.png)
 
-   *Figura: Configurare Adobe Analytics per Informazioni su risorse in[!DNL Experience Manager]*
+   *Figura: Configurare Adobe Analytics per Assets Insights in[!DNL Experience Manager]*
 
-1. Una volta completata l’autenticazione, nell’elenco a discesa verranno elencate le suite di rapporti. Seleziona l’Adobe Analytics **[!UICONTROL Suite di rapporti]** da dove desideri che Assets Insights recuperi i dati. Clic **[!UICONTROL Aggiungi]**.
+1. Una volta completata l’autenticazione, nell’elenco a discesa verranno elencate le suite di rapporti. Seleziona la **[!UICONTROL suite di rapporti]** di Adobe Analytics da cui desideri che Assets Insights recuperi i dati. Fare clic su **[!UICONTROL Aggiungi]**.
 
-1. Dopo [!DNL Experience Manager] configura la suite di rapporti, fai clic su **[!UICONTROL Fine]**.
+1. Dopo che [!DNL Experience Manager] ha configurato la tua suite di rapporti, fai clic su **[!UICONTROL Fine]**.
 
-Per ulteriori informazioni, consulta [Servizi Web di Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
+Per ulteriori informazioni, vedere [Servizi Web Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
 
 ### Tracciamento pagina {#page-tracker}
 
-Dopo aver configurato l’account Adobe Analytics, viene generato il codice di tracciamento pagina. Per abilitare Assets Insights per tenere traccia di [!DNL Experience Manager] le risorse utilizzate nei siti web di terze parti includono il codice di tracciamento della pagina nel codice del sito web. Utilizza l’utility Tracciamento pagina in Assets per generare il codice di tracciamento della pagina. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+Dopo aver configurato l’account Adobe Analytics, viene generato il codice di tracciamento pagina. Per consentire ad Assets Insights di tenere traccia delle risorse [!DNL Experience Manager] utilizzate nei siti web di terze parti, includi il codice di tracciamento della pagina nel codice del sito web. Utilizza l’utility Tracciamento pagina in Assets per generare il codice di tracciamento della pagina. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. In entrata [!DNL Experience Manager], fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**.
+1. In [!DNL Experience Manager], fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. Nella pagina **[!UICONTROL Navigazione]**, fai clic sulla scheda **[!UICONTROL Tracciamento pagina approfondimenti]**.
-1. Clic **[!UICONTROL Scarica]** per scaricare il codice di tracciamento della pagina.
+1. Fai clic su **[!UICONTROL Scarica]** per scaricare il codice di tracciamento della pagina.
 
 <!--
 Add page tracker code, CQDOC-18045, 30/07/2021

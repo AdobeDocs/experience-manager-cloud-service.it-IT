@@ -18,7 +18,7 @@ Spesso durante l’authoring è necessario selezionare un’altra risorsa, ad es
 
 ## Campi percorso   {#path-fields}
 
-L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull&#39;utilizzo e la modifica dei componenti, consulta [Componenti per l’authoring delle pagine](/help/sites-cloud/authoring/page-editor/components.md)
+L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull&#39;utilizzo e la modifica dei componenti, vedere [Componenti per l&#39;authoring delle pagine.](/help/sites-cloud/authoring/page-editor/components.md)
 
 I campi percorso dispongono di funzionalità di completamento automatico e di look-ahead per facilitare l’individuazione di una risorsa.
 
@@ -32,13 +32,13 @@ Oppure puoi iniziare a digitare nel campo percorso e AEM fornirà i percorsi cor
 
 ## Browser Percorsi {#path-browser}
 
-Il browser del percorso è organizzato come il [vista a colonne](/help/sites-cloud/authoring/basic-handling.md#column-view) del [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) consentire una selezione più dettagliata delle risorse.
+Il browser percorsi è organizzato come la [vista a colonne](/help/sites-cloud/authoring/basic-handling.md#column-view) della console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) consentendo una selezione più dettagliata delle risorse.
 
 ![Browser Percorsi](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Una volta selezionata una risorsa, **Seleziona** in alto a destra nella finestra di dialogo diventa attivo.
-   * Seleziona per confermare la selezione o **Annulla** per interrompere.
-* Se il contesto consente la selezione di più risorse, la selezione di una risorsa attiva anche la **Seleziona** ma aggiunge anche un conteggio del numero di risorse selezionate nella parte superiore destra della finestra.
+* Dopo aver selezionato una risorsa, il pulsante **Seleziona** in alto a destra della finestra di dialogo diventa attivo.
+   * Seleziona per confermare la selezione o **Annulla** per interromperla.
+* Se il contesto consente la selezione di più risorse, la selezione di una risorsa attiva anche il pulsante **Seleziona**, ma aggiunge anche un conteggio del numero di risorse selezionate nella parte superiore destra della finestra.
    * Per deselezionare tutti gli elementi, fai clic sulla **X** accanto al numero.
 * Quando ti sposti nella struttura, la posizione si riflette nelle breadcrumb nella parte superiore della finestra di dialogo.
    * Queste breadcrumb possono essere utilizzate anche per passare rapidamente all’interno della gerarchia delle risorse.

@@ -13,7 +13,7 @@ ht-degree: 79%
 
 # Note sulla versione 2022.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La sezione seguente illustra le note sulla versione 2022.6.0 di [!DNL Experience Manager] as a Cloud Service.
+La sezione seguente illustra le note sulla versione della funzionalità per la versione 2022.6.0 di [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Dai un’occhiata al video Panoramica sulla versione di giugno 2022 per un riepi
 
 ### Nuove funzioni in [!DNL Sites] {#sites-features}
 
-* Una nuova [interfaccia utente](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) è ora disponibile per gli amministratori e gli autori di contenuti per gestire in modo efficiente (ad esempio pubblicare, annullare la pubblicazione, copiare, spostare e così via), cercare/filtrare e creare frammenti di contenuto per casi d’uso headless.
+* Una nuova [interfaccia utente](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) è ora disponibile per gli amministratori di contenuti e gli autori di contenuti per gestire in modo efficiente (ad esempio pubblicare, annullare la pubblicazione, copiare, spostare e così via), cercare/filtrare e creare frammenti di contenuto per casi d&#39;uso headless.
 
   ![Console Frammenti di contenuto](/help/release-notes/assets/cf-ui.png)
 
@@ -96,7 +96,7 @@ Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [dist
 
 ### Novità {#what-is-new-foundation}
 
-* Come indicato nelle note sulla versione di maggio (2022.5.0), l’opzione &quot;Aggiungi struttura&quot; nella schermata di amministrazione dell’agente di replica **Distribuisci** La scheda è stata rimossa. I pacchetti con una struttura gerarchica del contenuto devono essere replicati utilizzando il flusso di lavoro [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Pubblica struttura contenuto](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
+* Come indicato nelle note sulla versione di maggio (2022.5.0), l&#39;opzione &quot;Aggiungi albero&quot; nella scheda **Distribuisci** della schermata di amministrazione dell&#39;agente di replica è stata rimossa. I pacchetti con una struttura gerarchica del contenuto devono essere replicati utilizzando il flusso di lavoro [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Pubblica struttura contenuto](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
 
 ## Cloud Manager {#cloud-manager}
 

@@ -37,6 +37,6 @@ Il rapporto di Best Practices Analyzer include le seguenti categorie:
 Ulteriori informazioni sulle categorie e sulle possibili implicazioni e soluzioni associate a esse vengono fornite tramite i collegamenti presenti nel rapporto di Best Practices Analyzer.
 
 >[!NOTE]
->Il rapporto Best Practices Analyzer (Analisi delle best practice) consente di valutare più rapidamente il tempo e i costi necessari per la transizione all’AEM as a Cloud Service, fornendo informazioni che altrimenti dovrebbero essere raccolte e valutate manualmente.
+>Il rapporto di Best Practices Analyzer (Analisi delle best practice) consente di valutare più rapidamente il tempo e i costi necessari per la transizione ad AEM as a Cloud Service, fornendo informazioni che altrimenti dovrebbero essere raccolte e valutate manualmente.
 
-Puoi scaricare il rapporto Best Practices Analyzer anche dall’istanza AEM. Consulta [Visualizzazione del rapporto di Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) per ulteriori dettagli.
+Puoi scaricare il rapporto Best Practices Analyzer anche dall’istanza AEM. Per ulteriori dettagli, consulta [Visualizzazione del report di Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report).

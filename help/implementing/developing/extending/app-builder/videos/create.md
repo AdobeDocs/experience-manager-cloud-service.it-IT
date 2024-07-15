@@ -26,7 +26,7 @@ Scopri i fondamenti della creazione del tuo primo progetto App Builder.
 
 ## Configurare l’ambiente di sviluppo locale
 
-Scopri come configurare l’ambiente locale per lo sviluppo di App Builder.
+Scopri come configurare l’ambiente locale per lo sviluppo App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
 

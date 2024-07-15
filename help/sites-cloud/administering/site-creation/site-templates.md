@@ -46,7 +46,7 @@ I modelli sono efficaci perché sono riutilizzabili e personalizzabili. Inoltre,
 
    ![Creazione guidata sito](../assets/site-creation-wizard.png)
 
-1. Nel browser dei file, individua il modello da utilizzare e seleziona **Carica**.
+1. Nel browser dei file individuare il modello che si desidera utilizzare e selezionare **Carica**.
 
 1. Una volta caricato, viene visualizzato nell’elenco dei modelli disponibili.
 
@@ -63,7 +63,7 @@ I modelli di sito sono semplicemente pacchetti con una struttura logica che rifl
 * `files`: cartella con il kit dell&#39;interfaccia utente, file XD ed eventualmente altri file
 * `previews`: cartella con le schermate del modello di sito
 * `site`: pacchetto di contenuti del contenuto copiato per ogni sito creato da questo modello, ad esempio i modelli di pagina, le pagine e così via.
-* `theme`: origini del [tema del sito](site-themes.md) per modificare l’aspetto del sito, inclusi CSS, JavaScript e così via.
+* `theme`: origini del [tema del sito](site-themes.md) per modificare l&#39;aspetto del sito, inclusi CSS, JavaScript e così via.
 
 ## Modello di sito standard {#standard-site-template}
 

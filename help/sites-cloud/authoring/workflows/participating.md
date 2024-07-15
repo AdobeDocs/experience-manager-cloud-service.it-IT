@@ -78,7 +78,7 @@ Utilizza la seguente procedura per completare l’elemento di lavoro:
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro su cui desideri agire (seleziona la miniatura).
 1. Seleziona **Completa** dalla barra degli strumenti.
-1. Il **Completa elemento di lavoro** viene visualizzata una finestra di dialogo. Seleziona la **Passaggio successivo** dal selettore a discesa e aggiungi un **Commento** se necessario.
+1. Viene visualizzata la finestra di dialogo **Completa elemento di lavoro**. Seleziona il **Passaggio successivo** dal selettore a discesa e aggiungi **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Completamento di un passaggio partecipante: editor pagina {#completing-a-participant-step-page-editor}
@@ -87,7 +87,7 @@ Utilizza la seguente procedura per completare l’elemento di lavoro:
 
 1. Apri la [pagina per la modifica](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Completa** dalla barra di stato in alto.
-1. Il **Completa elemento di lavoro** viene visualizzata una finestra di dialogo. Seleziona la **Passaggio successivo** dal selettore a discesa e aggiungi un **Commento** se necessario.
+1. Viene visualizzata la finestra di dialogo **Completa elemento di lavoro**. Seleziona il **Passaggio successivo** dal selettore a discesa e aggiungi **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Cancel** per interrompere l’azione).
 
 #### Completamento di un passaggio partecipante - Timeline {#completing-a-participant-step-timeline}
@@ -137,7 +137,7 @@ Segui la procedura seguente per delegare un elemento di lavoro:
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro su cui desideri agire (seleziona la miniatura).
 1. Seleziona **Delega** dalla barra degli strumenti.
-1. Viene visualizzata la finestra di dialogo. Specifica la **Utente** dal selettore a discesa (può anche trattarsi di un gruppo) e aggiungi un **Commento** se necessario.
+1. Viene visualizzata la finestra di dialogo. Specifica l&#39;**Utente** dal selettore a discesa (può anche essere un gruppo) e aggiungi **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Delega di un passaggio partecipante: editor pagina {#delegating-a-participant-step-page-editor}
@@ -146,7 +146,7 @@ Segui la procedura seguente per delegare un elemento di lavoro:
 
 1. Apri la [pagina per la modifica](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Delega** dalla barra di stato in alto.
-1. Viene visualizzata la finestra di dialogo. Specifica la **Utente** dal selettore a discesa (può anche trattarsi di un gruppo) e aggiungi un **Commento** se necessario.
+1. Viene visualizzata la finestra di dialogo. Specifica l&#39;**Utente** dal selettore a discesa (può anche essere un gruppo) e aggiungi **Commento** se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Delega di un passaggio partecipante: Timeline {#delegating-a-participant-step-timeline}
@@ -187,7 +187,7 @@ Per tornare indietro, attenersi alla procedura descritta di seguito.
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro su cui desideri agire (seleziona la miniatura).
 1. Seleziona **Passo indietro** per aprire la finestra di dialogo.
-1. Specifica la **Passaggio precedente** e aggiungi **Commento** se necessario.
+1. Specifica il **Passaggio precedente** e aggiungi **Commento**, se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Esecuzione di un passo indietro su un Passaggio Partecipante - Editor pagina {#performing-step-back-on-a-participant-step-page-editor}
@@ -196,7 +196,7 @@ Per tornare indietro, attenersi alla procedura descritta di seguito.
 
 1. Apri la [pagina per la modifica](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Passo indietro** dalla barra di stato in alto.
-1. Specifica la **Passaggio precedente** e aggiungi **Commento** se necessario.
+1. Specifica il **Passaggio precedente** e aggiungi **Commento**, se necessario.
 1. Utilizza il tasto **OK** per completare il passaggio (o il tasto **Annulla** per interrompere l’azione).
 
 #### Esecuzione di un passo indietro su un Passo Partecipante - Timeline {#performing-step-back-on-a-participant-step-timeline}
@@ -248,7 +248,7 @@ Per aprire un elemento del flusso di lavoro e visualizzare i dettagli:
 1. Apri la **[Casella in entrata AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Seleziona l’elemento del flusso di lavoro su cui desideri agire (seleziona la miniatura).
 1. Seleziona **Apri** per aprire le schede informative.
-1. Se necessario, seleziona l’azione appropriata, inserisci tutte le informazioni richieste e conferma con **OK** (o **Annulla**).
+1. Se necessario, seleziona l&#39;azione appropriata, fornisci tutti i dettagli e conferma con **OK** (o **Annulla**).
 1. Usa il comando **Salva** o **Annulla** per uscire.
 
 #### Apertura dei dettagli del flusso di lavoro - Editor pagina {#opening-workflow-details-page-editor}
@@ -257,7 +257,7 @@ Per aprire un elemento del flusso di lavoro e visualizzare i dettagli:
 
 1. Apri la [pagina per la modifica](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Seleziona **Visualizza dettagli** dalla barra di stato per aprire le schede informative.
-1. Se necessario, seleziona l’azione appropriata, inserisci tutte le informazioni richieste e conferma con **OK** (o **Annulla**).
+1. Se necessario, seleziona l&#39;azione appropriata, fornisci tutti i dettagli e conferma con **OK** (o **Annulla**).
 1. Usa il comando **Salva** o **Annulla** per uscire.
 
 ### Visualizzazione del Payload flusso di lavoro (più risorse) {#viewing-the-workflow-payload-multiple-resources}

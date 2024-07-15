@@ -40,7 +40,7 @@ Prima che l’app possa essere instrumentata per l’utilizzo con l’editor uni
 @adobe/universal-editor-cors
 ```
 
-Per attivare la strumentazione, è necessario aggiungere la seguente importazione alla `index.js`.
+Per attivare la strumentazione, è necessario aggiungere la seguente importazione a `index.js`.
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -56,10 +56,10 @@ Se non implementi un’app React e/o non richiedi il rendering lato server, un m
 
 Si consiglia sempre di utilizzare la versione più recente, ma è possibile fare riferimento alle versioni precedenti del servizio in caso di modifiche che causano interruzioni.
 
-* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - L&#39;ultima libreria EU CORS
-* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - L’ultima libreria UE CORS nella versione 2.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - L’ultima libreria UE CORS nella versione 2.1.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- La libreria UE CORS versione 2.1.1
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - La più recente libreria UE CORS
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - La più recente libreria UE CORS nella versione 2.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - La più recente libreria UE CORS nella versione 2.1.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- La versione esatta della libreria UE CORS 2.1.1
 
 ## Aggiungi le configurazioni OSGi necessarie {#osgi-configurations}
 
@@ -109,9 +109,9 @@ Le connessioni utilizzate nell’app vengono memorizzate come `<meta>` tag nella
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<category>` - Questa è una classificazione della connessione con due opzioni.
+* `<category>` - Classificazione della connessione con due opzioni.
    * `system` - Per endpoint di connessione
-   * `config` - Per [definizione delle impostazioni di configurazione facoltative](#configuration-settings)
+   * `config` - Per [definire impostazioni di configurazione facoltative](#configuration-settings)
 * `<referenceName>`: questo è un nome breve che viene utilizzato nuovamente nel documento per identificare la connessione. Ad esempio, `aemconnection`.
 * `<protocol>`: indica il plug-in di persistenza del servizio di persistenza dell’editor universale da utilizzare. Ad esempio, `aem`
 * `<url>`: questo è l’URL del sistema in cui le modifiche devono essere mantenute. Ad esempio, `http://localhost:4502`
@@ -165,12 +165,12 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ### Impostazioni di configurazione {#configuration-settings}
 
-È possibile utilizzare `config` Prefisso nell’URN della connessione per impostare gli endpoint del servizio e dell’estensione, se necessario.
+È possibile utilizzare il prefisso `config` nell&#39;URN della connessione per impostare gli endpoint del servizio e dell&#39;estensione, se necessario.
 
 Se non desideri utilizzare il servizio Universal Editor, ospitato da Adobe, ma la tua versione ospitata, puoi impostarlo in un tag meta. Per sovrascrivere l&#39;endpoint di servizio predefinito fornito da Universal Editor, impostare un endpoint di servizio personalizzato:
 
 * Nome metadati - `urn:adobe:aue:config:service`
-* Metadati - `content="https://adobe.com"` (esempio)
+* Meta content - `content="https://adobe.com"` (esempio)
 
 ```html
 <meta name="urn:adobe:aue:config:service" content="<url>">
@@ -179,7 +179,7 @@ Se non desideri utilizzare il servizio Universal Editor, ospitato da Adobe, ma l
 Se desideri abilitare solo alcune estensioni per una pagina, puoi impostarle in un tag meta. Per recuperare le estensioni, imposta gli endpoint dell&#39;estensione:
 
 * Nome metadati: `urn:adobe:aue:config:extensions`
-* Metadati: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (esempio)
+* Contenuto metadati: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (esempio)
 
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
@@ -197,7 +197,7 @@ Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
 * [Introduzione all’editor universale](introduction.md): scopri come l’editor universale consente di modificare ogni aspetto di qualsiasi contenuto in qualsiasi implementazione per fornire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 * [Authoring dei contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md): scopri quanto è semplice e intuitivo per gli autori di contenuto creare contenuto utilizzando l’editor universale.
-* [Pubblicazione di contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/publishing.md) - Scopri come l’Editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
+* [Pubblicazione di contenuti con l&#39;editor universale](/help/sites-cloud/authoring/universal-editor/publishing.md) - Scopri come l&#39;editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
 * [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e come avviene il flusso di dati tra i suoi servizi e livelli.
 * [Attributi e tipi](attributes-types.md): scopri gli attributi e i tipi di dati richiesti dall’editor universale.
 * [Autenticazione dell’editor universale](authentication.md): scopri come l’editor universale effettua l’autenticazione.

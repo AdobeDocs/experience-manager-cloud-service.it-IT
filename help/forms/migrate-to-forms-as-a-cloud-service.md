@@ -1,6 +1,6 @@
 ---
-title: Come possiamo effettuare la migrazione da AEM 6.5 Forms ad AEM Forms as a Cloud Service?
-description: Guida introduttiva del Percorso di migrazione all’AEM as a Cloud Service | Adobe Experience Manager. Migra da un [!DNL AEM Forms] (ambienti locali e AMS) per [!DNL AEM Forms] ambiente as a Cloud Service.
+title: Come possiamo effettuare la migrazione da Forms AEM 6.5 ad AEM Forms as a Cloud Service?
+description: Guida introduttiva al Percorso di migrazione ad AEM as a Cloud Service | Adobe Experience Manager. Migra da un  [!DNL AEM Forms]  (ambienti locali e AMS) a  [!DNL AEM Forms] ambiente as a Cloud Service.
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
 feature: Adaptive Forms
@@ -16,15 +16,15 @@ ht-degree: 1%
 
 ---
 
-# Migra da un [!DNL AEM Forms] (ambienti locali e AMS) per [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# Migrare da un [!DNL AEM Forms] (ambienti locali e AMS) a [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-È possibile migrare o aggiornare Forms adattivo, temi, modelli e configurazioni cloud da <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms su OSGi a [!DNL AEM] as a Cloud Service. Prima di eseguire la migrazione di queste risorse, utilizza l’utility di migrazione per convertire il formato utilizzato nelle versioni precedenti nel formato utilizzato in [!DNL AEM] as a Cloud Service.
-Iniziamo con il percorso di migrazione a AEM as a Cloud Service | Adobe Experience Manager. Quando si esegue l&#39;utilità di migrazione, vengono aggiornate le risorse seguenti:
+È possibile migrare o aggiornare Forms adattivo, temi, modelli e configurazioni cloud da <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms su OSGi a [!DNL AEM] as a Cloud Service. Prima di eseguire la migrazione di queste risorse, utilizzare l&#39;utilità di migrazione per convertire il formato utilizzato nelle versioni precedenti nel formato utilizzato in [!DNL AEM] as a Cloud Service.
+Iniziamo con il percorso di migrazione ad AEM as a Cloud Service | Adobe Experience Manager. Quando si esegue l&#39;utilità di migrazione, vengono aggiornate le risorse seguenti:
 
 * Componenti personalizzati per Forms adattivo
 * Modelli e temi Forms adattivi
@@ -35,11 +35,11 @@ Iniziamo con il percorso di migrazione a AEM as a Cloud Service | Adobe Experien
 
 Per migrare da AEM 6.5 Forms ad AEM Cloud Service, è importante tenere conto dei seguenti punti:
 
-* Il servizio consente di migrare i contenuti solo da [!DNL AEM Forms] in ambienti OSGi. Migrazione di contenuti da [!DNL AEM Forms] in JEE a un ambiente di Cloud Service non è supportato.
+* Il servizio consente di migrare il contenuto solo da [!DNL AEM Forms] in ambienti OSGi. La migrazione del contenuto da [!DNL AEM Forms] in JEE a un ambiente di Cloud Service non è supportata.
 
 * (Solo per le versioni precedenti a AEM 6.5 Forms) I Forms adattivi basati su modelli e temi predefiniti disponibili in AEM 6.3 Forms o versione precedente non sono supportati in [!DNL AEM Forms] as a Cloud Service.
 
-* Adobe Experience Manager Forms as a Cloud Service apporta alcune modifiche di rilievo alle funzioni esistenti rispetto agli ambienti Adobe Experience Manager 6.5 Forms (On-Premise e Adobe-Managed Service). Prima di procedere alla migrazione al servizio, [scopri queste modifiche rilevanti](notable-changes.md) e [differenze a livello di funzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report) per decidere la migrazione in base alle funzioni richieste dalla tua organizzazione.
+* Adobe Experience Manager Forms as a Cloud Service apporta alcune modifiche di rilievo alle funzioni esistenti rispetto agli ambienti Adobe Experience Manager 6.5 Forms (On-Premise e Adobe-Managed Service). Prima di procedere con la migrazione al servizio, [scopri queste modifiche rilevanti](notable-changes.md) e le [differenze a livello di funzionalità](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report) per decidere di eseguire la migrazione in base alle funzionalità richieste dalla tua organizzazione.
 
 
 
@@ -58,19 +58,19 @@ Per migrare da AEM 6.5 Forms ad AEM Cloud Service, è importante tenere conto de
 
 ## Prerequisiti {#prerequisites}
 
-Per garantire una transizione fluida da AEM Forms 6.5 all’ambiente as a Cloud Service AEM, è importante considerare i seguenti prerequisiti:
+Per garantire una transizione fluida da AEM Forms 6.5 all’ambiente AEM as a Cloud Service, è importante considerare i seguenti prerequisiti:
 
-* Abilita [Forms - Registrazione digitale](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) opzione su per il programma di Cloud Service Forms e [eseguire la pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it).
+* Abilita l&#39;opzione [Forms - Registrazione digitale](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) per il tuo programma di Cloud Service Forms ed [esegui la pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it).
 
   ![Risultato esecuzione di prova](assets/enable-add-on.png)
 
-* In un ambiente di Cloud Service, l&#39;utility di migrazione funziona insieme allo strumento di mappatura utenti e allo strumento di trasferimento dei contenuti. L&#39;utilità di migrazione rende [!DNL AEM Forms] risorse compatibili con il Cloud Service e lo strumento content transfer esegue la migrazione dei contenuti dalle [!DNL AEM Forms] ambiente in un [!DNL AEM] ambiente as a Cloud Service. Prima di utilizzare l&#39;utilità di migrazione, apprendere il processo di [passaggio all’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). Il processo è costituito da due strumenti:
+* In un ambiente di Cloud Service, l&#39;utility di migrazione funziona insieme allo strumento di mappatura utenti e allo strumento di trasferimento dei contenuti. L&#39;utilità di migrazione rende le risorse [!DNL AEM Forms] compatibili con il Cloud Service e lo strumento di trasferimento dei contenuti esegue la migrazione dei contenuti dall&#39;ambiente [!DNL AEM Forms] a un ambiente as a Cloud Service [!DNL AEM]. Prima di utilizzare l&#39;utilità di migrazione, apprendere il processo di [passaggio ad AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). Il processo è costituito da due strumenti:
    * [Strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration): lo strumento di mappatura utenti consente di mappare gli utenti con gli account utente Adobe IMS corrispondenti.
-   * [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration): lo strumento Content Transfer (Trasferimento contenuti) consente di preparare e trasferire i contenuti dall’ambiente esistente a un ambiente di Cloud Service. Consente agli utenti di effettuare facilmente l’aggiornamento da AEM Forms all’ambiente cloud.
-* Account con privilegi di amministratore su [!DNL AEM Forms] as a Cloud Service e locale [!DNL AEM Forms] ambiente.
-* Scarica e installa Best Practice Analyzer, Content Transfer Tool e [!DNL AEM Forms] Utilità di migrazione da [Portale di distribuzione software.](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html)
+   * [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration): lo strumento Content Transfer consente di preparare e trasferire il contenuto dall&#39;ambiente esistente a un ambiente di Cloud Service. Consente agli utenti di effettuare facilmente l’aggiornamento da AEM Forms all’ambiente cloud.
+* Account con privilegi di amministratore per l&#39;as a Cloud Service [!DNL AEM Forms] e l&#39;ambiente [!DNL AEM Forms] locale.
+* Scarica e installa Best Practice Analyzer, Content Transfer Tool e l&#39;utilità di migrazione [!DNL AEM Forms] da [Software Distribution Portal.](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html)
 
-* Esegui il [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration) e risolvere il problema segnalato. Per i possibili problemi relativi alla migrazione da Adobe Experience Manager Forms ad Adobe Experience Manager Forms as a Cloud Service, consulta [Rilevamento pattern AEM per Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report).
+* Esegui lo strumento [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration) e correggi il problema segnalato. Per i possibili problemi relativi alla migrazione da Adobe Experience Manager Forms ad Adobe Experience Manager Forms as a Cloud Service, vedi [Rilevamento pattern AEM per Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report).
 
 
 <!-- * Download the latest [compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases) for your [!DNL AEM Forms] version. -->
@@ -78,11 +78,11 @@ Per garantire una transizione fluida da AEM Forms 6.5 all’ambiente as a Cloud 
 
 
 
-## Migra [!DNL AEM 6.5 Forms] risorse per AEM Cloud Service {#use-the-migration-utility}
+## Migra [!DNL AEM 6.5 Forms] risorse ad AEM Cloud Service {#use-the-migration-utility}
 
-Effettua le seguenti operazioni per rendere [!DNL AEM Forms] risorse compatibili con il Cloud Service e trasferirle ad un [!DNL AEM] ambiente as a Cloud Service.
+Eseguire la procedura seguente per rendere le risorse [!DNL AEM Forms] compatibili con il Cloud Service e trasferirle in un ambiente as a Cloud Service [!DNL AEM].
 
-1. Creare un [clone](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/qaq-p/363487) del tuo esistente [!DNL AEM Forms] ambiente.
+1. Crea un [clone](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/qaq-p/363487) dell&#39;ambiente [!DNL AEM Forms] esistente.
 
    >[!NOTE]
    >
@@ -90,62 +90,62 @@ Effettua le seguenti operazioni per rendere [!DNL AEM Forms] risorse compatibili
 
 1. Accedi all’ambiente clonato con privilegi di amministratore.
 
-1. Esegui il [Strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) per mappare gli utenti con gli account utente Adobe IMS corrispondenti. Per accedere a un’interfaccia utente devi disporre di account utente Adobe IMS [!DNL AEM Forms] istanza as a Cloud Service.
+1. Esegui lo [strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) per mappare gli utenti con gli account utente Adobe IMS corrispondenti. Per accedere a un&#39;istanza [!DNL AEM Forms] as a Cloud Service sono necessari account utente Adobe IMS.
 
-1. Scarica e installa [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) e [!DNL AEM Forms] Utilità di migrazione as a Cloud Service da [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) sull&#39;ambiente clonato. È possibile utilizzare Gestione pacchetti AEM per installare lo strumento e l&#39;utility.
+1. As a Cloud Service Scaricare e installare [l&#39;utilità di trasferimento dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) e l&#39;utilità di migrazione [!DNL AEM Forms] da [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) nell&#39;ambiente clonato. È possibile utilizzare Gestione pacchetti AEM per installare lo strumento e l&#39;utility.
 
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Migrazione dei contenuti]**.
+1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Migrazione contenuti]**.
 
-1. Apri **[!UICONTROL Prepara Forms per la migrazione]** Card. Il browser visualizza cinque opzioni:
-   * **[!UICONTROL Migrazione risorse AEM Forms]**
-   * **[!UICONTROL Migrazione dei componenti personalizzati di Forms adattivi]**
-   * **[!UICONTROL Migrazione di modelli Forms adattivi]**
-   * **[!UICONTROL Migrazione configurazioni AEM Forms Cloud]**
-   * **[!UICONTROL Migrazione script editor di codice]**
+1. Apri la scheda **[!UICONTROL Prepara Forms per la migrazione]**. Il browser visualizza cinque opzioni:
+   * **[!UICONTROL Migrazione AEM Forms Assets]**
+   * **[!UICONTROL Migrazione componenti personalizzati Forms adattivi]**
+   * **[!UICONTROL Migrazione modelli Forms adattivi]**
+   * **[!UICONTROL Migrazione configurazioni cloud AEM Forms]**
+   * **[!UICONTROL Migrazione dello script dell&#39;editor di codice]**
 
-1. Utilizza l’opzione uno dopo l’altro per rendere [!DNL AEM Forms] risorse compatibili con [!DNL AEM] as a Cloud Service:
+1. Utilizza l&#39;opzione uno dopo l&#39;altro per rendere le risorse [!DNL AEM Forms] compatibili con [!DNL AEM] as a Cloud Service:
 
-   1. Seleziona **[!UICONTROL Migrazione risorse AEM Forms]** e nella schermata successiva seleziona **[!UICONTROL Avvia migrazione]**. Crea Forms adattivo e temi sul tuo [!DNL AEM Forms] ambiente compatibile con [!DNL AEM] as a Cloud Service.
+   1. Seleziona **[!UICONTROL AEM Forms Assets Migration]** e nella schermata successiva seleziona **[!UICONTROL Start Migration]**. Rende Forms adattivo e i temi nell&#39;ambiente [!DNL AEM Forms] compatibili con [!DNL AEM] as a Cloud Service.
 
-   1. Seleziona **[!UICONTROL Migrazione dei componenti personalizzati di Forms adattivi]** e nella pagina Migrazione componenti personalizzati, seleziona **[!UICONTROL Avvia migrazione]**. Crea qualsiasi componente personalizzato sviluppato per Adaptive Forms e sovrapposizioni di componenti sul tuo [!DNL AEM Forms] ambiente compatibile con [!DNL AEM] as a Cloud Service.
+   1. Seleziona **[!UICONTROL Migrazione componenti personalizzati Forms adattivi]** e nella pagina Migrazione componenti personalizzati seleziona **[!UICONTROL Avvia migrazione]**. Rende qualsiasi componente personalizzato sviluppato per Adaptive Forms e le sovrapposizioni di componenti nell&#39;ambiente [!DNL AEM Forms] compatibili con l&#39;as a Cloud Service [!DNL AEM].
 
-   1. Seleziona **[!UICONTROL Migrazione modello Forms adattivo]** e nella pagina Migrazione componenti personalizzati, seleziona **[!UICONTROL Avvia migrazione]**. Crea modelli di modulo adattivo in `/apps` o `/conf` e creato utilizzando l’Editor di modelli AEM compatibile con [!DNL AEM] as a Cloud Service.
+   1. Seleziona **[!UICONTROL Migrazione modello Forms adattivo]** e nella pagina di migrazione dei componenti personalizzati seleziona **[!UICONTROL Avvia migrazione]**. I modelli per moduli adattivi in `/apps` o `/conf` e creati con l&#39;Editor modelli AEM sono compatibili con [!DNL AEM] as a Cloud Service.
 
-   1. Seleziona **[!UICONTROL Migrazione configurazioni AEM Forms Cloud]** e quindi nella pagina Configuration Migration (Migrazione configurazione), seleziona **[!UICONTROL Avvia migrazione]**. Aggiorna e sposta i seguenti Cloud Service in una nuova posizione:
+   1. Seleziona **[!UICONTROL Migrazione configurazioni AEM Forms Cloud]**, quindi nella pagina Migrazione configurazione seleziona **[!UICONTROL Avvia migrazione]**. Aggiorna e sposta i seguenti Cloud Service in una nuova posizione:
 
       * Cloud Service modello dati modulo
       * Cloud Service Google reCAPTCHA
       * [!DNL Adobe Sign] Cloud Service
       * Cloud Service Adobe Fonts
 
-   1. Seleziona **[!UICONTROL Migrazione script editor di codice]**, specificare un percorso in cui salvare le funzioni riutilizzabili e selezionare **[!UICONTROL Avvia migrazione].
+   1. Seleziona **[!UICONTROL Migrazione script editor di codice]**, specifica un percorso per il salvataggio delle funzioni riutilizzabili e seleziona **[!UICONTROL Avvia migrazione].
 
-   Il Cloud Service non supporta gli script dell&#39;editor di regole. Il **[!UICONTROL Migrazione script editor di codice]** lo strumento converte tutti gli script delle regole nell’ambiente in funzioni riutilizzabili e applica le funzioni riutilizzabili all’editor visivo nella posizione appropriata. Queste funzioni riutilizzabili vengono salvate sotto forma di librerie client e consentono di mantenere intatte le funzionalità esistenti. Lo strumento applica automaticamente le funzioni riutilizzabili generate al Forms adattivo corrispondente.
+   Il Cloud Service non supporta gli script dell&#39;editor di regole. Lo strumento **[!UICONTROL Migrazione degli script dell&#39;editor di codice]** converte tutti gli script delle regole nel tuo ambiente in funzioni riutilizzabili e applica le funzioni riutilizzabili all&#39;editor visivo nella posizione appropriata. Queste funzioni riutilizzabili vengono salvate sotto forma di librerie client e consentono di mantenere intatte le funzionalità esistenti. Lo strumento applica automaticamente le funzioni riutilizzabili generate al Forms adattivo corrispondente.
 
-   Migrazione da AEM al Cloud Service, utilizzare [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) per esportare le funzioni riutilizzabili (librerie client) in un pacchetto.
+   Migrazione tramite modulo AEM al Cloud Service, utilizzare [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) per esportare le funzioni riutilizzabili (librerie client) in un pacchetto.
 
-1. [Distribuisci](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying-content-packages-via-cloud-manager-and-package-manager) il pacchetto delle funzioni riutilizzabili (librerie client), [codice personalizzato, componenti, configurazioni](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html#cloud-manager), le librerie personalizzate specifiche per le impostazioni locali [!DNL AEM] ambiente as a Cloud Service.
+1. as a Cloud Service [Distribuisci](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying-content-packages-via-cloud-manager-and-package-manager) nell&#39;ambiente [!DNL AEM] il pacchetto delle funzioni riutilizzabili (librerie client), [codice personalizzato, componenti, configurazioni](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html#cloud-manager), librerie personalizzate specifiche per le impostazioni locali.
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. Esegui il [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Quando si specificano i parametri **[!UICONTROL Crea set di migrazione]** , specifica il percorso di Forms adattivo, temi, modelli, Modello dati modulo (FDM), Cloud Service, Componenti personalizzati e altre risorse specifiche di AEM Forms per **[!UICONTROL Percorsi da includere]** opzione. Aggiunge specificato [!DNL AEM Forms] risorse al set di migrazione.
+1. Esegui lo [strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Durante la specifica dei parametri nella schermata **[!UICONTROL Crea set di migrazione]**, specifica il percorso di Forms adattivo, temi, modelli, Modello dati modulo (FDM), Cloud Service, Componenti personalizzati e altre risorse specifiche di AEM Forms per l&#39;opzione **[!UICONTROL Percorsi da includere]**. Aggiunge [!DNL AEM Forms] risorse specificate al set di migrazione.
 
 ## Percorsi di varie risorse specifiche per AEM Forms
 
 Durante la migrazione da AEM Forms 6.5 a Cloud Service, puoi individuare le risorse specifiche di AEM Forms all’indirizzo:
 
-* **Forms adattivo**: i moduli adattivi sono disponibili all’indirizzo `/content/dam/formsanddocuments/`e `/content/forms/af`. Ad esempio, per un modulo adattivo denominato WKND Registration, aggiungi percorsi `/content/dam/formsanddocuments/wknd-registration` e `/content/forms/af/wknd-registration`.
-* **Modello dati modulo**: puoi trovare tutti i modelli di dati dei moduli all’indirizzo `/content/dam/formsanddocuments-fdm`. Esempio: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **Forms adattivo**: è possibile trovare i moduli adattivi alle `/content/dam/formsanddocuments/` e `/content/forms/af`. Ad esempio, per un modulo adattivo denominato WKND Registration, aggiungi i percorsi `/content/dam/formsanddocuments/wknd-registration` e `/content/forms/af/wknd-registration`.
+* **Modello dati modulo**: tutti i modelli dati del modulo (FDM) sono disponibili in `/content/dam/formsanddocuments-fdm`. Esempio: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **Librerie client**: il percorso predefinito delle librerie client è `/etc/clientlibs/fd/theme`.
 
-* **Modelli di modulo adattivo**: il percorso predefinito dei modelli è `/conf/<template folder>`. Ad esempio, per un modello con titolo percorso di aggiunta di base `/conf/ReferenceEditableTemplates/settings/wcm/templates/basic`.
+* **Modelli per moduli adattivi**: il percorso predefinito dei modelli è `/conf/<template folder>`. Ad esempio, per un modello con titolo Percorso aggiunta di base `/conf/ReferenceEditableTemplates/settings/wcm/templates/basic`.
 
-* **Temi di moduli adattivi e librerie client**: il percorso predefinito dei temi è ` /content/dam/formsanddocuments-themes/` e il percorso predefinito delle librerie client è `/etc/clientlibs/fd/theme`. Ad esempio, per un modello con titolo Percorso aggiunta tema WKND ` /content/dam/formsanddocuments-themes/wkndtheme` e le librerie client per il tema in `/etc/clientlibs/reference-themes/wkndtheme-3-0`. Puoi anche avere temi e librerie client in altri percorsi personalizzati.
+* **Temi modulo adattivo e librerie client**: il percorso predefinito dei temi è ` /content/dam/formsanddocuments-themes/` e il percorso predefinito delle librerie client è `/etc/clientlibs/fd/theme`. Ad esempio, per un modello con titolo WKND Theme, aggiungi il percorso ` /content/dam/formsanddocuments-themes/wkndtheme` e le librerie client per il tema in `/etc/clientlibs/reference-themes/wkndtheme-3-0`. Puoi anche avere temi e librerie client in altri percorsi personalizzati.
 
-* **Configurazioni cloud**: le configurazioni cloud sono disponibili all’indirizzo `/conf/`. Ad esempio, la configurazione cloud di Form Data Model (FDM) è `/conf/global/settings/cloudconfigs/fdm`.
+* **Configurazioni cloud**: le configurazioni cloud sono disponibili in `/conf/`. Ad esempio, la configurazione cloud di Form Data Model (FDM) è in `/conf/global/settings/cloudconfigs/fdm`.
 
-* **Modello flusso di lavoro**: i modelli dei flussi di lavoro per l’AEM sono disponibili all’indirizzo `/conf/global/settings/workflow/models/`. Ad esempio, per un modello di flusso di lavoro denominato WKND Registration add path `/conf/global/settings/workflow/models/wknd-registration`
+* **Modello flusso di lavoro**: è possibile trovare modelli di flusso di lavoro AEM in `/conf/global/settings/workflow/models/`. Ad esempio, per un modello di flusso di lavoro denominato WKND Registration, aggiungere il percorso `/conf/global/settings/workflow/models/wknd-registration`
 
 Puoi aggiungere i percorsi cartella di livello superiore elencati di seguito o specifici come descritto di seguito. Consente di migrare una determinata risorsa e tutte le risorse e i moduli contemporaneamente, quando si esegue l’aggiornamento a Cloud Service dai moduli AEM 6.5.
 
@@ -163,8 +163,8 @@ Quando esegui la migrazione dei modelli di flussi di lavoro AEM da AEM Forms 6.5
 ## Vedi successivo
 
 * [Modifiche di rilievo per gli utenti esistenti di Adobe Experience Manager 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/notable-changes.html)
-* [Integrazione con AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html)
-* [Creare il primo modulo adattivo sul Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=it)
+* [Integrazione in AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html)
+* [Crea il tuo primo modulo adattivo nel Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=it)
 
 ## Informazioni aggiuntive
 

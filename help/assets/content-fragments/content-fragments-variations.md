@@ -14,15 +14,15 @@ ht-degree: 52%
 
 # Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
-[Varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una funzione significativa dei Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service. Questo perché ti consentono di creare e modificare copie del **Principale** contenuti da utilizzare su canali e scenari specifici. In particolare, questo rende la distribuzione di contenuti headless ancora più flessibile.
+[Le varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una caratteristica significativa dei frammenti di contenuto nell&#39;as a Cloud Service di Adobe Experience Manager (AEM). Questo perché ti consente di creare e modificare copie del contenuto **Master** da utilizzare su canali e scenari specifici. In particolare, questo rende la distribuzione di contenuti headless ancora più flessibile.
 
 >[!NOTE]
 >
 >I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
 >
->Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console).
+>Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l&#39;editor originale, a cui si accede principalmente dalla console **Assets**. Per informazioni dettagliate sul nuovo editor, a cui si accede principalmente dalla console **Frammenti di contenuto**, consulta la documentazione di Sites [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-Dalla sezione **Varianti** scheda è possibile effettuare le seguenti operazioni:
+Dalla scheda **Varianti** puoi effettuare le seguenti operazioni:
 
 * [Inserire il contenuto](#authoring-your-content) del frammento
 * [Creare e gestire le varianti](#managing-variations) del contenuto **principale**
@@ -31,7 +31,7 @@ Puoi eseguire una serie di altre azioni a seconda del tipo di dati in corso di m
 
 * [Inserire risorse visive nel frammento](#inserting-assets-into-your-fragment) (immagini)
 
-* Seleziona tra [Rich Text](#rich-text), [Testo normale](#plain-text), e [Markdown](#markdown) per la modifica
+* Seleziona tra [Testo formattato](#rich-text), [Testo normale](#plain-text) e [Markdown](#markdown) per la modifica
 
 * [Caricare contenuti](#uploading-content)
 
@@ -47,7 +47,7 @@ Puoi eseguire una serie di altre azioni a seconda del tipo di dati in corso di m
 
 ## Authoring dei contenuti {#authoring-your-content}
 
-Quando apri il frammento di contenuto per la modifica, il **Varianti** è aperto per impostazione predefinita. Qui puoi creare il contenuto per l’elemento Principale o per una delle varianti disponibili. Il frammento strutturato contiene campi di vari tipi di dati definiti nel modello di contenuto.
+Quando apri il frammento di contenuto per la modifica, la scheda **Varianti** è aperta per impostazione predefinita. Qui puoi creare il contenuto per l’elemento Principale o per una delle varianti disponibili. Il frammento strutturato contiene campi di vari tipi di dati definiti nel modello di contenuto.
 
 Ad esempio:
 
@@ -57,17 +57,17 @@ Operazioni disponibili:
 
 * Apporta modifiche al contenuto direttamente nella scheda **Varianti**; ogni tipo di dati fornisce diverse opzioni di modifica, ad esempio:
 
-   * per **Testo su più righe** , è inoltre possibile aprire [editor a schermo intero](#full-screen-editor) a:
+   * per i campi **Testo su più righe**, è inoltre possibile aprire l&#39;[editor a schermo intero](#full-screen-editor) in:
 
       * Selezionare il [Formato](#formats)
       * Accedere a ulteriori opzioni di modifica (per il formato [Testo formattato](#rich-text))
       * Accedere a una serie di [azioni](#actions)
 
-   * Per **Riferimento frammento** campi, il [Modifica frammento di contenuto](#fragment-references-edit-content-fragment) a seconda della definizione del modello.
+   * Per i campi **Riferimento frammento**, l&#39;opzione [Modifica frammento di contenuto](#fragment-references-edit-content-fragment) può essere disponibile, a seconda della definizione del modello.
 
-* Assegna **Tag** alla variante corrente; i tag possono essere aggiunti, aggiornati e rimossi.
+* Assegna **Tag** alla variante corrente. I tag possono essere aggiunti, aggiornati e rimossi.
 
-   * [Tag](/help/sites-cloud/authoring/sites-console/tags.md) sono utili per organizzare i frammenti in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
+   * [I tag](/help/sites-cloud/authoring/sites-console/tags.md) sono utili per organizzare i frammenti in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
 
       * La ricerca di un tag restituisce il frammento, con la variante tag evidenziata.
       * I tag delle varianti possono essere utilizzati anche per raggruppare le varianti per un profilo Content Delivery Network (CDN) specifico (per la memorizzazione in cache di CDN), invece di utilizzare il nome della variante.
@@ -82,7 +82,7 @@ Operazioni disponibili:
 
 >[!NOTE]
 >
->A seconda delle definizioni nel modello sottostante, i campi possono essere soggetti a determinati tipi di [Convalida](/help/assets/content-fragments/content-fragments-models.md#validation).
+>A seconda delle definizioni nel modello sottostante, i campi possono essere soggetti a determinati tipi di [convalida](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ### Editor a schermo intero {#full-screen-editor}
 
@@ -144,7 +144,7 @@ La modifica in formato RTF consente di formattare:
    * Trova/Sostituisci
    * Controllo ortografia
    * [Annotazioni](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [Inserisci frammento di contenuto](#inserting-content-fragment-into-your-fragment); disponibile quando **Testo su più righe** il campo è configurato con **Consenti riferimento frammento**.
+* [Inserisci frammento di contenuto](#inserting-content-fragment-into-your-fragment); disponibile quando il campo **Testo su più righe** è configurato con **Consenti riferimento frammento**.
 
 Dall’editor a schermo intero sono accessibili anche le [azioni](#actions).
 
@@ -154,13 +154,13 @@ Testo normale consente di inserire rapidamente contenuti senza formattazione o i
 
 >[!CAUTION]
 >
->Se si seleziona **Testo normale**, potresti perdere la formattazione, il markdown o le risorse inserite in **Rich Text** o **Markdown**.
+>Se selezioni **Testo normale**, potresti perdere la formattazione, il markdown o le risorse inserite in **Rich Text** o **Markdown**.
 
 ### Markdown {#markdown}
 
 >[!NOTE]
 >
->Per informazioni complete, vedere [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) documentazione.
+>Per informazioni complete, consulta la documentazione di [Markdown](/help/assets/content-fragments/content-fragments-markdown.md).
 
 Questo consente di formattare il testo utilizzando il markdown. Puoi definire:
 
@@ -191,21 +191,21 @@ Se il modello per frammenti di contenuto contiene riferimenti frammento, gli aut
 
 #### Modifica frammento di contenuto {#fragment-references-edit-content-fragment}
 
-Opzione **Modifica frammento di contenuto** apre il frammento in una nuova scheda dell’editor (nella stessa scheda del browser).
+L&#39;opzione **Modifica frammento di contenuto** apre il frammento in una nuova scheda dell&#39;editor (nella stessa scheda del browser).
 
-Selezionando di nuovo la scheda originale (ad esempio, **Little Pony Inc.**) chiude questa scheda secondaria (in questo caso, **Adam Smith**).
+Se si seleziona di nuovo la scheda originale (ad esempio, **Little Pony Inc.**), viene chiusa la scheda secondaria (in questo caso, **Adam Smith**).
 
 ![Riferimenti frammento](assets/cfm-variations-editreference.png)
 
 #### Nuovo frammento di contenuto {#fragment-references-new-content-fragment}
 
-Opzione **Nuovo frammento di contenuto** consente di creare un frammento. A questo scopo, nell’editor viene visualizzata una variante della procedura guidata per creare un frammento di contenuto.
+L&#39;opzione **Nuovo frammento di contenuto** consente di creare un frammento. A questo scopo, nell’editor viene visualizzata una variante della procedura guidata per creare un frammento di contenuto.
 
 **Per creare un frammento di contenuto:**
 
 1. Individua e seleziona la cartella desiderata.
 1. Seleziona **Avanti**.
-1. Specifica delle proprietà; ad esempio, **Titolo**.
+1. Specifica le proprietà; ad esempio, **Titolo**.
 1. Seleziona **Crea**.
 1. Infine:
    1. **Fine**:
@@ -217,7 +217,7 @@ Opzione **Nuovo frammento di contenuto** consente di creare un frammento. A ques
 
 ### Visualizzazione delle statistiche chiave {#viewing-key-statistics}
 
-Quando l’editor a schermo intero è aperto, l’azione **Statistiche testo** visualizza una serie di informazioni sul testo.
+Quando l&#39;editor a schermo intero è aperto, l&#39;azione **Statistiche testo** visualizza una serie di informazioni sul testo.
 
 Esempio:
 
@@ -233,7 +233,7 @@ La funzione di riepilogo del testo è progettata per aiutare gli utenti a ridurr
 
 >[!NOTE]
 >
->A livello più tecnico, il sistema mantiene le frasi che ritiene forniscano *miglior rapporto tra densità e unicità delle informazioni* secondo algoritmi specifici.
+>A livello più tecnico, il sistema mantiene le frasi che ritiene fornire il *miglior rapporto tra densità e unicità delle informazioni* in base a specifici algoritmi.
 
 >[!CAUTION]
 >
@@ -325,15 +325,15 @@ Caratteristiche delle annotazioni:
 
 * Quando si elimina l’intero testo a cui è stata applicata l’annotazione, viene eliminata anche l’annotazione.
 
-* Può essere elencata ed eliminata selezionando la **Annotazioni** nell’editor frammenti.
+* Può essere elencata ed eliminata selezionando la scheda **Annotazioni** nell&#39;editor frammenti.
 
   ![annotazioni](assets/cfm-variations-08.png)
 
-* Può essere visualizzata ed eliminata nel [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) per il frammento selezionato.
+* Può essere visualizzato ed eliminato nella [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) del frammento selezionato.
 
 ### Inserimento di risorse nel frammento {#inserting-assets-into-your-fragment}
 
-Per semplificare il processo di creazione dei frammenti di contenuto, puoi aggiungere [Risorse](/help/assets/manage-digital-assets.md) (immagini) direttamente nel frammento.
+Per semplificare il processo di creazione dei frammenti di contenuto, puoi aggiungere [Assets](/help/assets/manage-digital-assets.md) (immagini) direttamente al frammento.
 
 Vengono aggiunte alla sequenza di paragrafi del frammento senza formattazione; la formattazione può essere impostata quando il [frammento viene utilizzato o inserito come riferimento in una pagina](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
@@ -362,7 +362,7 @@ Vengono aggiunte alla sequenza di paragrafi del frammento senza formattazione; l
    >
    >Dopo aver aggiunto una risorsa, se modifichi il formato in:
    >
-   >* **Testo normale**: la risorsa viene persa dal frammento.
+   >* **Testo normale**: la risorsa è stata persa dal frammento.
    >* **Markdown**: la risorsa non è visibile, ma lo tornerà a essere quando torni a **Rich Text**.
 
 ### Inserimento di un frammento di contenuto nel frammento {#inserting-content-fragment-into-your-fragment}
@@ -390,7 +390,7 @@ Vengono aggiunti come riferimento nella posizione corrente all’interno del fra
 
    ![icona Inserisci frammento di contenuto](assets/cfm-variations-13.png)
 
-1. Nella finestra di dialogo, puoi passare al frammento richiesto nella cartella Risorse oppure cercare il frammento.
+1. Nella finestra di dialogo, puoi passare al frammento richiesto nella cartella Assets oppure cercare il frammento.
 
    Una volta individuato, seleziona il frammento desiderato facendo clic sulla miniatura.
 
@@ -400,7 +400,7 @@ Vengono aggiunti come riferimento nella posizione corrente all’interno del fra
    >
    >Dopo aver aggiunto un riferimento a un altro frammento, se modifichi il formato in:
    >
-   >* **Testo normale**: il riferimento viene perso dal frammento.
+   >* **Testo normale**: il riferimento è stato perso dal frammento.
    >* **Markdown**: il riferimento rimane.
 
 ## Ereditarietà {#inheritance}
@@ -431,7 +431,7 @@ Esempio:
 
 ### Creazione di una variante {#creating-a-variation}
 
-Le varianti consentono di utilizzare **Principale** e modificarlo in base allo scopo (se necessario).
+Le varianti consentono di utilizzare il contenuto **Master** e modificarlo in base allo scopo (se necessario).
 
 **Per creare una variante:**
 
@@ -443,11 +443,11 @@ Le varianti consentono di utilizzare **Principale** e modificarlo in base allo s
 
    >[!NOTE]
    >
-   >Quando crei una variante, il valore **Principale** viene copiata, non la variante aperta.
+   >Durante la creazione di una variante, viene sempre copiato l&#39;**elemento principale**, non la variante aperta.
 
    >[!NOTE]
    >
-   >Quando crei una variante, tutti **Tag** attualmente assegnato al **Principale** La variante viene copiata nella nuova variante.
+   >Quando crei una variante, tutti i **tag** attualmente assegnati alla variante **Master** vengono copiati nella nuova variante.
 
 ### Modifica di una variante {#editing-a-variation}
 
@@ -486,7 +486,7 @@ Puoi modificare il contenuto della variante dopo:
 
 ### Sincronizzazione con l’elemento Principale {#synchronizing-with-master}
 
-**Principale** fa parte di un frammento di contenuto e, per definizione, contiene la copia master del contenuto. Le varianti, invece, contengono le singole versioni aggiornate e personalizzate di tale contenuto. Quando l’elemento Principale viene aggiornato, è possibile che queste modifiche siano rilevanti anche per le varianti e, pertanto, devono essere propagate ad esse.
+**Master** fa parte di un frammento di contenuto e per definizione contiene la copia master del contenuto. Le varianti, invece, contengono le singole versioni aggiornate e personalizzate di tale contenuto. Quando l’elemento Principale viene aggiornato, è possibile che queste modifiche siano rilevanti anche per le varianti e, pertanto, devono essere propagate ad esse.
 
 Quando modifichi una variante, hai accesso all’azione per sincronizzare l’elemento corrente della variante con l’elemento Principale. Questo consente di copiare automaticamente le modifiche apportate all’elemento Principale nella variante richiesta.
 
@@ -496,7 +496,7 @@ Quando modifichi una variante, hai accesso all’azione per sincronizzare l’el
 >
 >Viene sincronizzato solo l’elemento corrente della variante.
 >
->La sincronizzazione funziona solo sul **Testo su più righe** data-type.
+>La sincronizzazione funziona solo sul tipo di dati **Testo su più righe**.
 >
 >Il trasferimento delle modifiche *da una variante all’elemento **Principale*** non è disponibile come opzione.
 

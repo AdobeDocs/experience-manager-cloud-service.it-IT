@@ -13,7 +13,7 @@ ht-degree: 38%
 
 # Replica {#replication}
 
-Adobe Experience Manager as a Cloud Service utilizza [Distribuzione dei contenuti Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) capacità di spostare il contenuto da replicare in un servizio pipeline eseguito su Adobe Developer che si trova al di fuori del runtime AEM.
+Adobe Experience Manager as a Cloud Service utilizza la funzionalità [Distribuzione contenuto Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) per spostare il contenuto da replicare in un servizio pipeline eseguito su Adobe Developer che si trova al di fuori del runtime AEM.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Adobe Experience Manager as a Cloud Service utilizza [Distribuzione dei contenut
 
 >[!NOTE]
 >
->Se ti interessa pubblicare contenuti in blocco, utilizza [Flusso di lavoro struttura contenuto Publish](#publish-content-tree-workflow).
+>Se sei interessato alla pubblicazione in blocco di contenuti, utilizza il [Flusso di lavoro struttura contenuto Publish](#publish-content-tree-workflow).
 >Questo passaggio di flusso di lavoro è stato creato appositamente per il Cloud Service e può gestire in modo efficiente payload di grandi dimensioni.
 >Si sconsiglia di creare un codice personalizzato per la pubblicazione in blocco.
 >Se devi personalizzare per qualsiasi motivo, puoi attivare questo passaggio di flusso di lavoro/flusso di lavoro utilizzando le API di flusso di lavoro esistenti.
@@ -39,7 +39,7 @@ Per ulteriori informazioni, consulta [Gestisci pubblicazione](/help/sites-cloud/
 
 Sono disponibili possibilità aggiuntive di **Ora di attivazione** e **Ora di disattivazione** dalla [scheda Base delle Proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md#basic).
 
-Per realizzare la replica automatica per questa funzione, abilita **Replica automatica** nel [Configurazione OSGi](/help/implementing/deploying/configuring-osgi.md) **Configurazione attivazione/disattivazione**:
+Per realizzare la replica automatica per questa funzionalità, abilitare **Replica automatica** nella [configurazione OSGi](/help/implementing/deploying/configuring-osgi.md) **Configurazione attivazione/disattivazione**:
 
 ![Configurazione attivazione/disattivazione OSGi](/help/operations/assets/replication-on-off-trigger.png)
 
@@ -59,20 +59,20 @@ Puoi trovare informazioni più dettagliate su Gestisci pubblicazione nella sezio
 
 Non richiamare il modello originale. Assicurati invece di copiare prima il modello e richiamare tale copia.
 
-Come tutti i flussi di lavoro, può anche essere richiamato tramite API. Per ulteriori informazioni, consulta [Interazione con i flussi di lavoro a livello di programmazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
+Come tutti i flussi di lavoro, può anche essere richiamato tramite API. Per ulteriori informazioni, vedere [Interazione con i flussi di lavoro a livello di programmazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
-In alternativa, puoi creare un modello di flusso di lavoro che utilizza `Publish Content Tree` passaggio processo:
+In alternativa, è possibile creare un modello di flusso di lavoro che utilizza il passaggio del processo `Publish Content Tree`:
 
-1. Dalla home page dell’AEM as a Cloud Service, vai a **Strumenti - Workflow - Modelli**.
+1. Dalla home page di AEM as a Cloud Service, vai a **Strumenti - Flusso di lavoro - Modelli**.
 1. Nella pagina Modelli di flusso di lavoro, premi **Crea** nell&#39;angolo superiore destro dello schermo.
-1. Aggiungi un titolo e un nome al modello. Per ulteriori informazioni, consulta [Creazione di modelli di flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it).
-1. Selezionate il modello creato dall&#39;elenco e premete **Modifica**
+1. Aggiungi un titolo e un nome al modello. Per ulteriori informazioni, vedere [Creazione di modelli di flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it).
+1. Selezionare il modello creato dall&#39;elenco e premere **Modifica**
 1. Nella finestra successiva, trascina e rilascia il Passaggio del processo nel flusso del modello corrente:
 
    ![Passaggio processo](/help/operations/assets/processstep.png)
 
-1. Seleziona la fase del processo nel flusso e seleziona **Configura** premendo l’icona a forma di chiave inglese.
-1. Seleziona la **Processo** e seleziona `Publish Content Tree` dall’elenco a discesa, quindi seleziona la **Avanzamento gestore** casella di controllo
+1. Selezionare il passaggio Processo nel flusso e selezionare **Configura** premendo l&#39;icona chiave inglese.
+1. Seleziona la scheda **Processo** e seleziona `Publish Content Tree` dall&#39;elenco a discesa, quindi seleziona la casella di controllo **Avanzamento gestore**
 
    ![Attivazione struttura](/help/operations/assets/newstep.png)
 
@@ -89,12 +89,12 @@ In alternativa, puoi creare un modello di flusso di lavoro che utilizza `Publish
 
 **Parametri**
 
-* `includeChildren` (valore booleano, predefinito: `false`). Il valore `false` significa che è pubblicata solo la traccia oraria; `true` significa che vengono pubblicati anche gli elementi secondari.
+* `includeChildren` (valore booleano, predefinito: `false`). Il valore `false` indica che viene pubblicato solo il percorso; `true` indica che vengono pubblicati anche gli elementi secondari.
 * `replicateAsParticipant` (valore booleano, predefinito: `false`). Se configurata come `true`, la replica utilizza `userid` dell’entità principale che ha eseguito il Passaggio partecipante.
 * `enableVersion` (valore booleano, predefinito: `false`). Questo parametro determina se viene creata una nuova versione al momento della replica.
-* `agentId` (valore stringa, “default” indica che vengono utilizzati solo gli agenti per la pubblicazione). Si consiglia di impostare un valore esplicito per agentId; ad esempio: publish. Impostazione dell&#39;agente su `preview` pubblica nel servizio di anteprima.
-* `filters` (valore stringa, &quot;default&quot; significa che tutti i percorsi sono attivati). I valori disponibili sono:
-   * `onlyActivated` : attiva solo le pagine che sono state (già) attivate. Agisce come una forma di riattivazione.
+* `agentId` (valore stringa, “default” indica che vengono utilizzati solo gli agenti per la pubblicazione). Si consiglia di impostare un valore esplicito per agentId; ad esempio: publish. L&#39;impostazione dell&#39;agente su `preview` consente di eseguire le pubblicazioni nel servizio di anteprima.
+* `filters` (valore stringa, il valore predefinito indica che tutti i percorsi sono attivati). I valori disponibili sono:
+   * `onlyActivated` - attiva solo le pagine che sono (già) state attivate. Agisce come una forma di riattivazione.
    * `onlyModified`: verranno attivati solo i percorsi già attivati e la cui data di modifica è successiva alla data di attivazione.
    * Quanto sopra può essere impostato con OR inserendo il simbolo “|”. Esempio: `onlyActivated|onlyModified`.
 
@@ -104,9 +104,9 @@ All&#39;avvio del passaggio del flusso di lavoro di attivazione della struttura,
 
 Dopo che il passaggio del flusso di lavoro ha replicato tutti i percorsi, viene registrata un’istruzione INFO finale.
 
-Inoltre, puoi aumentare il loglevel dei logger nella sezione `com.day.cq.wcm.workflow.process.impl` a DEBUG/TRACE per ottenere ulteriori informazioni di registro.
+Inoltre, puoi aumentare il loglevel dei logger al di sotto di `com.day.cq.wcm.workflow.process.impl` per DEBUG/TRACE e ottenere ulteriori informazioni di registro.
 
-In caso di errori, il passaggio del flusso di lavoro termina con un `WorkflowException`, che racchiude l&#39;eccezione sottostante.
+In caso di errori, il passaggio del flusso di lavoro termina con `WorkflowException`, in cui viene racchiusa l&#39;eccezione sottostante.
 
 Di seguito sono riportati alcuni esempi di registri generati durante un flusso di lavoro della struttura dei contenuti di pubblicazione di esempio:
 
@@ -155,7 +155,7 @@ Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchRepl
 
 Durante la replica delle risorse, come nell’esempio precedente, vengono utilizzati solo gli agenti attivi per impostazione predefinita. In AEM as a Cloud Service, significa solo l’agente denominato &quot;publish&quot;, che collega il livello di authoring a quello di pubblicazione.
 
-Per supportare la funzionalità di anteprima, è stato aggiunto un nuovo agente denominato “preview”, che non è attivo per impostazione predefinita. Questo agente viene utilizzato per collegare il livello di authoring a quello di anteprima. Se desideri eseguire la replica solo tramite l’agente preview, devi selezionare esplicitamente l’agente preview tramite `AgentFilter`.
+Per supportare la funzionalità di anteprima, è stato aggiunto un nuovo agente denominato “preview”, che non è attivo per impostazione predefinita. Questo agente viene utilizzato per collegare il livello di authoring a quello di anteprima. Se si desidera eseguire la replica solo tramite l&#39;agente preview, è necessario selezionare esplicitamente l&#39;agente preview tramite `AgentFilter`.
 
 Vedi l’esempio seguente:
 
@@ -180,16 +180,16 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 Nel caso in cui non si fornisca un filtro di questo tipo e si utilizzi solo l’agente “publish”, l’agente “preview” non viene utilizzato e l’azione di replica non influisce sul livello di anteprima.
 
-Lo stato `ReplicationStatus` complessivo di una risorsa viene modificato solo se l’azione di replica include almeno un agente attivo per impostazione predefinita. Nell’esempio precedente, questo flusso non si è verificato. La replica utilizzava solo l’agente &quot;preview&quot;. Pertanto, devi utilizzare il nuovo `getStatusForAgent()` che consente di eseguire una query sullo stato di un agente specifico. Questo metodo funziona anche per l’agente “publish”. Se è stata eseguita un’azione di replica utilizzando l’agente fornito, viene restituito un valore non-null.
+Lo stato `ReplicationStatus` complessivo di una risorsa viene modificato solo se l’azione di replica include almeno un agente attivo per impostazione predefinita. Nell’esempio precedente, questo flusso non si è verificato. La replica utilizzava solo l’agente &quot;preview&quot;. Pertanto, è necessario utilizzare il nuovo metodo `getStatusForAgent()`, che consente di eseguire una query sullo stato di un agente specifico. Questo metodo funziona anche per l’agente “publish”. Se è stata eseguita un’azione di replica utilizzando l’agente fornito, viene restituito un valore non-null.
 
 ### Metodi di invalidazione dei contenuti {#invalidating-content}
 
-Puoi annullare direttamente la validità del contenuto utilizzando l’Invalidazione dei contenuti Sling (SCD) dall’authoring (metodo preferito) o utilizzando l’API di replica per richiamare l’agente di svuotamento del Dispatcher per la pubblicazione. Consulta [Memorizzazione in cache](/help/implementing/dispatcher/caching.md) per ulteriori dettagli.
+Puoi annullare direttamente la validità del contenuto utilizzando l’Invalidazione dei contenuti Sling (SCD) dall’authoring (metodo preferito) o utilizzando l’API di replica per richiamare l’agente di svuotamento del Dispatcher di pubblicazione. Per ulteriori dettagli, vedere la pagina [Memorizzazione in cache](/help/implementing/dispatcher/caching.md).
 
 **Limiti di capacità dell’API di replica**
 
-Replica meno di 100 percorsi alla volta; il limite massimo consentito è 500. Al di sopra del limite `ReplicationException` viene lanciato.
-Se la logica dell’applicazione non richiede la replica atomica, questo limite può essere superato impostando `ReplicationOptions.setUseAtomicCalls` su false, che accetta qualsiasi numero di percorsi, ma crea internamente dei bucket al fine di rimanere al di sotto di questo limite.
+Replica meno di 100 percorsi alla volta; il limite massimo consentito è 500. Al di sopra del limite, viene generato un `ReplicationException`.
+Se la logica dell&#39;applicazione non richiede la replica atomica, questo limite può essere superato impostando `ReplicationOptions.setUseAtomicCalls` su false, che accetta qualsiasi numero di percorsi, ma crea internamente dei bucket al fine di rimanere al di sotto di questo limite.
 
 La dimensione del contenuto trasmesso per chiamata di replica non deve superare i `10 MB`. Questa regola include i nodi e le proprietà, ma non eventuali dati binari (i pacchetti di flusso di lavoro e i pacchetti di contenuto sono considerati dati binari).
 
@@ -198,7 +198,7 @@ La dimensione del contenuto trasmesso per chiamata di replica non deve superare 
 
 Per risolvere i problemi di replica, accedi alle code di replica nell’interfaccia web del servizio AEM Author:
 
-1. Dal menu Start dell’AEM, vai a **Strumenti** > **Distribuzione** > **Distribuzione**
+1. Dal menu Start AEM, passa a **Strumenti** > **Distribuzione** > **Distribuzione**
 1. Seleziona la scheda **Pubblica**.
 
    ![Stato](assets/publish-status.png "Stato")

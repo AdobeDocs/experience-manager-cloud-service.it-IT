@@ -25,40 +25,40 @@ ht-degree: 19%
 Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
 
 >[!NOTE]
->Se come tipo di archivio dati viene utilizzato Amazon S3, Azure Data Store o File Data Store, puoi eseguire il passaggio di pre-copia facoltativo per aumentare la velocità della fase di estrazione. Il passaggio di pre-copia è più efficace per la prima estrazione e acquisizione complete. Consulta [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) per ulteriori dettagli.
+>Se come tipo di archivio dati viene utilizzato Amazon S3, Azure Data Store o File Data Store, puoi eseguire il passaggio di pre-copia facoltativo per aumentare la velocità della fase di estrazione. Il passaggio di pre-copia è più efficace per la prima estrazione e acquisizione complete. Per ulteriori dettagli, consulta [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md).
 
-1. Seleziona un set di migrazione da **Trasferimento dei contenuti** e fai clic su **Extract** per avviare l’estrazione.
+1. Seleziona un set di migrazione dalla procedura guidata **Trasferimento contenuti** e fai clic su **Estrai** per avviare l&#39;estrazione.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
    >[!TIP]
-   >Ora è possibile pianificare l’avvio automatico di un’acquisizione subito dopo la riuscita di un’estrazione. Consulta [Acquisizione di contenuti in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) per ulteriori informazioni.
+   >Ora è possibile pianificare l’avvio automatico di un’acquisizione subito dopo la riuscita di un’estrazione. Per ulteriori informazioni, vedere [Inserimento di contenuto in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
 
    >[!IMPORTANT]
    >
-   >Assicurati che la chiave di estrazione sia valida e non vicina alla scadenza. Se è vicina alla data di scadenza, puoi rinnovare il tasto Estrazione selezionando il set di migrazione e facendo clic su Proprietà. Clic **Rinnova**. Viene visualizzato Cloud Acceleration Manager, su cui è possibile fare clic **Copia chiave di estrazione**. Ogni volta che fai clic su **Copia chiave di estrazione**, viene generata una nuova chiave di estrazione valida per 14 giorni dalla creazione.
+   >Assicurati che la chiave di estrazione sia valida e non vicina alla scadenza. Se è vicina alla data di scadenza, puoi rinnovare il tasto Estrazione selezionando il set di migrazione e facendo clic su Proprietà. Fare clic su **Rinnova**. Viene visualizzato il Cloud Acceleration Manager in cui è possibile fare clic su **Copia chiave di estrazione**. Ogni volta che si fa clic su **Copia chiave di estrazione**, viene generata una nuova chiave di estrazione valida per 14 giorni dalla creazione.
    >![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
-1. Viene visualizzata la finestra di dialogo Estrazione. Clic **Extract** per avviare la fase di estrazione.
+1. Viene visualizzata la finestra di dialogo Estrazione. Fai clic su **Estrai** per avviare la fase di estrazione.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
-   >Facoltativamente, puoi sovrascrivere il contenitore di staging durante la fase di estrazione. Se **Sovrascrivi contenitore di staging** è disattivato, può velocizzare le estrazioni per le migrazioni successive in cui le impostazioni dei percorsi di contenuto o delle versioni di inclusione non sono state modificate. Tuttavia, se le impostazioni dei percorsi di contenuto o delle versioni di inclusione sono state modificate, **Sovrascrivi contenitore di staging** deve essere abilitato.
+   >Facoltativamente, puoi sovrascrivere il contenitore di staging durante la fase di estrazione. Se **Sovrascrivi contenitore di staging** è disabilitato, le estrazioni per le migrazioni successive in cui i percorsi di contenuto o le impostazioni delle versioni di inclusione non sono stati modificati possono essere più rapide. Tuttavia, se le impostazioni dei percorsi di contenuto o delle versioni di inclusione sono state modificate, **Sovrascrivi contenitore di staging** deve essere abilitato.
 
-1. Il **Estrazione** ora visualizza il campo **IN ESECUZIONE** stato per indicare che l’estrazione è in corso.
+1. Nel campo **Estrazione** viene ora visualizzato lo stato **IN ESECUZIONE** per indicare che l&#39;estrazione è in corso.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam15.png)
 
-   Puoi fare clic su **Visualizza avanzamento** per ottenere una visualizzazione granulare dell’estrazione in corso.
+   Puoi fare clic su **Visualizza avanzamento** per ottenere una visualizzazione granulare dell&#39;estrazione in corso.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   Puoi anche monitorare l’avanzamento della fase di estrazione da Cloud Acceleration Manager visitando la pagina Content Transfer (Trasferimento contenuti) e visualizzarlo più dettagliatamente facendo clic su **...** > **Visualizza dettagli**.
+   È inoltre possibile monitorare l&#39;avanzamento della fase di estrazione da Cloud Acceleration Manager visitando la pagina Content Transfer (Trasferimento contenuti) e visualizzarla in modo più dettagliato facendo clic su **...** > **Visualizza dettagli**.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. Al termine dell’estrazione, controlla le altre colonne come **Sorgente** e **Percorsi** per informazioni dettagliate sul set di migrazione popolato. Clic **...** > **Visualizza dettagli** per visualizzare i dettagli, inclusa la durata di ogni fase dell’estrazione. Visualizza questa finestra di dialogo durante l’estrazione per vedere come procedono i passaggi.
+1. Al termine dell&#39;estrazione, esaminare le altre colonne come **Source** e **Paths** per i dettagli del set di migrazione popolato. Fai clic su **...** > **Visualizza dettagli** per visualizzare i dettagli, inclusa la durata di ogni passaggio dell&#39;estrazione. Visualizza questa finestra di dialogo durante l’estrazione per vedere come procedono i passaggi.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
@@ -75,11 +75,11 @@ Una volta completato il processo di estrazione, puoi trasferire il contenuto del
 
 Effettua le seguenti operazioni:
 
-1. Accedi a **Trasferimento dei contenuti** e selezionare il set di migrazione per il quale si desidera eseguire l’estrazione integrativa. Fai clic su **Extract** (Estrai) per avviare l’estrazione integrativa.
+1. Passare alla procedura guidata **Trasferimento contenuti** e selezionare il set di migrazione per il quale si desidera eseguire l&#39;estrazione integrativa. Fai clic su **Extract** (Estrai) per avviare l’estrazione integrativa.
 
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam19.png)
 
-1. Il **Estrazione del set di migrazione** viene visualizzata. Clic **Extract**.
+1. Viene visualizzata la finestra di dialogo **Migration Set extraction** (Estrazione set di migrazione). Fai clic su **Estrai**.
 
    >[!IMPORTANT]
    >Disattiva l’opzione **Overwrite staging container during extraction** (Sovrascrivi contenitore di staging durante l’estrazione).
@@ -88,4 +88,4 @@ Effettua le seguenti operazioni:
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso l’estrazione del contenuto dall’origine nello strumento Content Transfer (Trasferimento contenuti), ora puoi imparare il processo di acquisizione nello strumento Content Transfer (Trasferimento contenuti). Consulta [Acquisizione di contenuti in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) dove puoi imparare a acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti).
+Dopo aver appreso l’estrazione dei contenuti da Source nello strumento Content Transfer (Trasferimento contenuti), ora puoi imparare il processo di acquisizione nello strumento Content Transfer (Trasferimento contenuti). Consulta [Acquisizione del contenuto in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) per scoprire come acquisire il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti).

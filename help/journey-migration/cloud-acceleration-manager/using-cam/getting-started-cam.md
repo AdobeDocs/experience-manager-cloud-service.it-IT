@@ -24,17 +24,17 @@ Questo documento spiega come iniziare a utilizzare Cloud Acceleration Manager (C
 
 ## Utilizzo di Cloud Acceleration Manager {#using-cam}
 
-Cloud Acceleration Manager (CAM) offre un’esperienza unica per le migrazioni. Si presenta sotto forma di un percorso guidato che fornisce una valutazione iniziale, indicandoli agli strumenti, alla documentazione e alle best practice appropriati, per garantire il successo del lancio su AEM as a Cloud Service.
+Cloud Acceleration Manager (CAM) offre un&#39;esperienza unica per le migrazioni. Si presenta sotto forma di un percorso guidato che fornisce una valutazione iniziale, indirizzandola agli strumenti, alla documentazione e alle best practice corretti per garantire un lancio di successo su AEM as a Cloud Service.
 
 ### Navigazione a Cloud Acceleration Manager {#navigating}
 
-Per accedere a Cloud Acceleration Manager (CAM), effettua le seguenti operazioni:
+Per accedere a Cloud Acceleration Manager (CAM), procedere come segue:
 
-1. Accedi a [Adobe Experience Cloud](https://experience.adobe.com).
+1. Accedere a [Adobe Experience Cloud](https://experience.adobe.com).
 
-1. Clic **Experience Manager** Card.
+1. Fai clic sulla scheda **Experience Manager**.
 
-1. Clic **Launch** dal **Cloud Acceleration Manager** in modo da poter aprire la pagina di destinazione.
+1. Fai clic su **Launch** dalla scheda **Cloud Acceleration Manager** per aprire la pagina di destinazione.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/cam-1.png)
 
@@ -50,18 +50,18 @@ La pagina di destinazione di Cloud Acceleration Manager (CAM) consente di creare
 
 Per creare un progetto, segui i passaggi seguenti:
 
-1. Clic **Crea progetto** dalla pagina di destinazione.
+1. Fai clic su **Crea progetto** nella pagina di destinazione.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/cam-2.png)
 
    >[!NOTE]
    >Gli utenti che utilizzano CAM per la prima volta visualizzano una finestra di dialogo per creare un progetto. Gli utenti che hanno utilizzato CAM in passato visualizzano un progetto predefinito o progetti creati in precedenza.
 
-1. Inserisci il **Nome** e **Descrizione** per il progetto e fai clic su **Crea**.
+1. Immetti **Nome** e **Descrizione** per il progetto e fai clic su **Crea**.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/cam-3.png)
 
-1. Il progetto viene ora creato e visualizzato nel **Cloud Acceleration Manager** pagina di destinazione.
+1. Il progetto è stato creato ed è visualizzato nella pagina di destinazione **Cloud Acceleration Manager**.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing.png)
 
@@ -81,11 +81,11 @@ Per modificare il progetto, effettua le seguenti operazioni:
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
-1. Puoi modificare il nome del progetto, la descrizione e persino caricare una nuova immagine o modificarne una esistente da **Modifica progetto** .
+1. È possibile modificare il nome e la descrizione del progetto, nonché caricare una nuova immagine o modificarne una esistente nella finestra di dialogo **Modifica progetto**.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/cam-edit.png)
 
-1. Clic **Aggiorna** per confermare le modifiche.
+1. Fai clic su **Aggiorna** per confermare le modifiche.
 
 ### Eliminazione del progetto {#delete-project}
 
@@ -95,7 +95,7 @@ Per eliminare un progetto, effettua le seguenti operazioni:
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
-1. Clic **Elimina** per confermare il passaggio.
+1. Fai clic su **Elimina** per confermare il passaggio.
 
    >[!NOTE]
    >I progetti scadranno automaticamente e verranno eliminati dopo 1 anno di inattività della migrazione. I progetti rimarranno attivi modificando il nome o la descrizione del progetto, caricando un rapporto BPA, creando o modificando un set di migrazione, eseguendo un’estrazione o un’acquisizione.
@@ -103,4 +103,4 @@ Per eliminare un progetto, effettua le seguenti operazioni:
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, puoi rivedere il passaggio successivo nella sezione [Fase di preparazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
+Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, sei pronto per rivedere il passaggio successivo nella [Fase di preparazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).

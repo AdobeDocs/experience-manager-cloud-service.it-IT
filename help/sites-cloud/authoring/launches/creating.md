@@ -30,7 +30,7 @@ Facoltativamente, puoi specificare la **Data lancio** (e l’ora) per definire q
 >
 >Non è possibile modificare queste pagine. Viene visualizzato il messaggio:
 >
->* **Questa pagina non fa parte del lancio. Vai alla pagina di produzione**
+>* **Questa pagina non fa parte del lancio. Vai alla pagina produzione**
 
 ## Creazione di un lancio {#creating-a-launch}
 

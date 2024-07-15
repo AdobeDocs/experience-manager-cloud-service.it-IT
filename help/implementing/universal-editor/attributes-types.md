@@ -34,7 +34,7 @@ Affinché un’app possa essere modificata dall’editor universale, deve essere
 | `data-aue-filter` | Definisce quali riferimenti possono essere utilizzati |
 | `data-aue-label` | Definisce un’etichetta personalizzata per un elemento selezionabile visualizzato nell’editor. <br>Nel caso in cui`data-aue-model` sia impostata, l’etichetta viene recuperata tramite il modello. |
 | `data-aue-model` | Definisce un modello che viene utilizzato per la modifica basata su modulo nella barra delle proprietà |
-| `data-aue-behavior` | Definisce il [comportamento di uno strumento](#behaviors)Ad esempio, un testo o un’immagine isolati possono simulare un componente per renderlo spostabile o eliminabile |
+| `data-aue-behavior` | Definisce il comportamento [di una strumentazione](#behaviors). Ad esempio, testo o immagine autonomi possono simulare un componente per renderlo spostabile o eliminabile |
 
 ## Tipi di elementi {#item-types}
 

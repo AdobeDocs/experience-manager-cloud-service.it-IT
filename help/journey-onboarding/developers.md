@@ -6,15 +6,15 @@ role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1411'
-ht-degree: 90%
+source-wordcount: '1397'
+ht-degree: 100%
 
 ---
 
 
 # Attività dei ruoli Sviluppatore e Responsabile dell’implementazione {#developer-deployment-manager}
 
-In questa parte facoltativa del [percorso di onboarding,](overview.md) scopri come sviluppatori e responsabili dell’implementazione possono accedere a git per sviluppare applicazioni e distribuirle con le pipeline.
+In questa sezione facoltativa del [percorso di onboarding](overview.md) scoprirai come sviluppatori e responsabili dell’implementazione possono accedere a Git per sviluppare applicazioni e distribuirle con le pipeline.
 
 ## Percorso affrontato finora {#story-so-far}
 
@@ -64,7 +64,7 @@ Prima di iniziare le attività descritte in questo documento come utente con ruo
 
    ![Pulsante Accedi a dati archivio nella scheda Ambienti](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Fai clic su **Visualizza informazioni archivio** per aprire una finestra di dialogo e visualizzare:
+1. Fai clic sul pulsante **Visualizza informazioni archivio** per aprire una finestra di dialogo e visualizzare:
 
    * L’URL dell’archivio Git di Cloud Manager.
    * Il nome utente di Git.
@@ -119,7 +119,7 @@ Ora che il team di sviluppo ha aggiunto il codice personalizzato agli archivi Gi
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Accedi a **Pipeline** scheda da **Panoramica del programma** e fai clic sul pulsante con i puntini di sospensione a fianco della pipeline creata nella sezione precedente, quindi seleziona **Esegui** dal menu.
+1. Dalla pagina **Panoramica del programma**, accedi alla scheda **Pipeline** e fai clic sul pulsante con i puntini di sospensione a fianco della pipeline creata nella sezione precedente, quindi seleziona **Esegui** dal menu.
 
 1. L’esecuzione della pipeline viene avviata ed è indicata dalla colonna **Stato**.
 
@@ -150,6 +150,6 @@ Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre 
 * [Utilizzo di Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md): scopri come utilizzare gli archivi Git di Cloud Manager e come integrare un archivio Git personalizzato e gestito dal cliente on-premise con Cloud Manager.
 * [Configurazione dell’ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it): questo tutorial illustra i passaggi necessari per la configurazione di un ambiente di sviluppo locale per Adobe Experience Manager (AEM) con l’SDK di AEM as a Cloud Service.
 * [Guida introduttiva di AEM Sites: tutorial WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it): questo tutorial in più sezioni è concepito per sviluppatori e sviluppatrici che utilizzano per la prima volta Adobe Experience Manager (AEM). Questo tutorial illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio, WKND. Il tutorial tratta elementi fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie lato client e lo sviluppo di componenti con Sites di Adobe Experience Manager.
-* [Guida introduttiva dell’SPA nell’AEM con React](/help/implementing/developing/hybrid/getting-started-react.md) - Questo articolo presenta un esempio di applicazione per l’SPA, spiega come viene creata e come iniziare a utilizzare il proprio SPA in modo rapido utilizzando il framework React.
-* [Guida introduttiva dell’SPA nell’AEM con l’uso di Angular](/help/implementing/developing/hybrid/getting-started-angular.md) - Questo articolo presenta un esempio di applicazione per l’SPA, spiega come viene creata e come iniziare subito a utilizzare il proprio SPA utilizzando il framework Angular.
+* [Guida introduttiva alle applicazioni a pagina singola in AEM con React](/help/implementing/developing/hybrid/getting-started-react.md): questo articolo illustra un esempio di applicazione a pagina singola (SPA, Single Page Application), spiega come viene creata e come iniziare subito a utilizzare un propria applicazione SPA con il framework React.
+* [Guida introduttiva alle applicazioni a pagina singola in AEM con Angular](/help/implementing/developing/hybrid/getting-started-angular.md): questo articolo illustra un esempio di applicazione a pagina singola (SPA, Single Page Application), spiega come viene creata e come iniziare subito a utilizzare una propria applicazione SPA con il framework Angular.
 * [Percorso di sviluppo headless](/help/journey-headless/developer/overview.md): inizia qui il tuo percorso guidato per sviluppare applicazioni headless con AEM.

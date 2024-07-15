@@ -25,9 +25,9 @@ Questa guida richiede necessariamente una conoscenza esistente dell’authoring 
 * Il completamento di un [tutorial su Edge Delivery Service.](/help/edge/developer/tutorial.md)
 * L’accesso a una [sandbox di AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * L’[attivazione dell’Editor universlae nello stesso ambiente sandbox.](/help/implementing/universal-editor/getting-started.md)
-* Hai completato il [Guida introduttiva per sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guida.
+* Hai completato la [Guida introduttiva per sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
-Questa guida si basa sul lavoro svolto in [Guida introduttiva per sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guida.
+Questa guida si basa sul lavoro svolto nella [Guida introduttiva per sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 ## Aggiunta di un nuovo blocco al progetto {#add-block}
 
@@ -45,13 +45,13 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 ### Crea modello e definizione di blocco {#create-block-model}
 
-1&amp;punto; clona il progetto GitHub localmente creato in [Guida introduttiva per sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e aprilo in un editor a tua scelta.
+1&amp;period; Clona il progetto GitHub localmente creato nella [Guida introduttiva per sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e aprilo in un editor scelto.
 
 * Il codice Microsoft viene utilizzato qui a scopo illustrativo.
 
 ![Clonazione del progetto](assets/create-block/clone.png)
 
-2&amp;period; modifica `component-definition.json` file nella directory principale del progetto e aggiungi la seguente definizione per il nuovo blocco delle virgolette e salva il file.
+2&amp;period; Modificare il file `component-definition.json` nella radice del progetto e aggiungere la seguente definizione per il nuovo blocco di virgolette e salvare il file.
 
 >[!BEGINTABS]
 
@@ -83,9 +83,9 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-3&amp;period; modifica `component-models.json` nella directory principale del progetto e aggiungi quanto segue [definizione del modello](/help/implementing/universal-editor/field-types.md#model-structure) per il nuovo blocco delle virgolette e salvare il file.
+3&amp;period; Modificare il file `component-models.json` nella radice del progetto e aggiungere la seguente [definizione modello](/help/implementing/universal-editor/field-types.md#model-structure) per il nuovo blocco virgolette e salvare il file.
 
-* Consulta il documento [Modellazione dei contenuti per l’authoring WYSIWYG con progetti Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) per ulteriori informazioni su ciò che è importante considerare durante la creazione di modelli di contenuto.
+* Per ulteriori informazioni su ciò che è importante considerare durante la creazione di modelli di contenuto, vedere il documento [Modellazione di contenuto per l&#39;authoring WYSIWYG con progetti di Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-4&amp;period; modifica `component-filters.json` nella directory principale del progetto e aggiungi il blocco delle virgolette al [definizione filtro](/help/implementing/universal-editor/customizing.md#filtering-components) per consentire l’aggiunta del blocco a qualsiasi sezione e salvare il file.
+4&amp;period; Modificare il file `component-filters.json` nella radice del progetto e aggiungere il blocco delle virgolette alla [definizione filtro](/help/implementing/universal-editor/customizing.md#filtering-components) per consentire l&#39;aggiunta del blocco a qualsiasi sezione e il salvataggio del file.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-5&amp;punto; utilizzando Git, esegui il commit di queste modifiche nel tuo `main` filiale.
+5&amp;punto; utilizzando Git, esegui il commit di queste modifiche nel ramo `main`.
 
 * La conferma di `main` è solo a scopo illustrativo. [Segui le best practice](https://www.aem.live/docs/dev-collab-and-good-practices) e utilizza una richiesta pull per il lavoro di progetto effettivo.
 
@@ -155,7 +155,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 Dopo aver definito e confermato il blocco del preventivo di base nel progetto di esempio, è possibile aggiungere un blocco citazione a una pagina esistente.
 
-1. In un browser, accedi a AEM as a Cloud Service. [Utilizzando la console Sites:](/help/sites-cloud/authoring/basic-handling.md) passa al sito creato in [Guida introduttiva per sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e seleziona una pagina.
+1. In un browser, accedi a AEM as a Cloud Service. [Utilizzando la console Sites,](/help/sites-cloud/authoring/basic-handling.md) accedi al sito creato nella [Guida introduttiva per sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e seleziona una pagina.
 
    * In questo caso, `index` viene utilizzato a scopo illustrativo.
 
@@ -190,13 +190,13 @@ Dopo aver definito e confermato il blocco del preventivo di base nel progetto di
 
 Ora che disponi di un blocco della citazione di lavoro puoi applicare ad esso lo stile.
 
-1&amp;period; Torna all’editor per il progetto.
+1&amp;period; Tornare all&#39;editor per il progetto.
 
-2&amp;period; Crea un `quote` cartella sotto `blocks` cartella.
+2&amp;period; Creare una cartella `quote` nella cartella `blocks`.
 
 ![Crea una cartella delle citazioni](assets/create-block/new-folder.png)
 
-3&amp;period; nel nuovo `quote` cartella, aggiungi un `quote.js` file per implementare la decorazione dei blocchi aggiungendo il seguente JavaScript e salvando il file.
+3&amp;period; Nella nuova cartella `quote`, aggiungi un file `quote.js` per implementare la decorazione dei blocchi aggiungendo il seguente JavaScript e salva il file.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4&amp;period; nel `quote` cartella, aggiungi un `quote.css` file per definire lo stile del blocco aggiungendo il seguente codice CSS e salvando il file.
+4&amp;period; Nella cartella `quote`, aggiungi un file `quote.css` per definire lo stile del blocco aggiungendo il seguente codice CSS e salva il file.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5&amp;punto; utilizzando Git, esegui il commit di queste modifiche nel tuo `main` filiale.
+5&amp;punto; utilizzando Git, esegui il commit di queste modifiche nel ramo `main`.
 
 * La conferma di `main` è solo a scopo illustrativo. [Segui le best practice](https://www.aem.live/docs/dev-collab-and-good-practices) e utilizza una richiesta pull per il lavoro di progetto effettivo.
 
-6&amp;period; Torna alla scheda del browser dell’Editor universale in cui stavi modificando la pagina del progetto e ricarica la pagina per visualizzare il blocco formattato.
+6&amp;punto; Torna alla scheda del browser dell’Editor universale in cui stavi modificando la pagina del progetto e ricarica la pagina per visualizzare il blocco formattato.
 
-7&amp;period; Vedere il blocco del preventivo ora formattato sulla pagina.
+7&amp;period; Vedere il blocco delle virgolette ora formattato sulla pagina.
 
 ![Blocco delle citazioni formattato nell’editor universale](assets/create-block/quote-styled.png)
 
-8&amp;period; Verifica che le modifiche siano state inviate alla produzione passando alla pagina pubblicata. Il collegamento sarà simile a `https://<branch>--<repo>--<owner>.hlx.page`
+8&amp;period; Verificare che le modifiche siano state inviate alla produzione passando alla pagina pubblicata. Il collegamento sarà simile a `https://<branch>--<repo>--<owner>.hlx.page`
 
 ![Blocco delle citazioni pubblicato e formattato](assets/create-block/quote-styled-published.png)
 
@@ -335,9 +335,9 @@ La pubblicazione di contenuti con un nuovo modello è supportata solo quando il 
 
 Ora che sai come creare i blocchi, è fondamentale comprendere come modellare i contenuti in modo semantico per ottenere un’esperienza di sviluppo più snella.
 
-Consulta il documento [Modellazione dei contenuti per l’authoring WYSIWYG con progetti Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) per scoprire come funziona la modellazione dei contenuti per l’authoring WYSIWYG con i progetti Edge Delivery Services.
+Per informazioni sul funzionamento della modellazione dei contenuti per la creazione WYSIWYG con progetti Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md), vedere il documento [Modellazione dei contenuti per la creazione WYSIWYG con progetti Edge Delivery Services.
 
 >[!TIP]
 >
->Per una procedura dettagliata end-to-end di creazione di un nuovo progetto Edge Delivery Services abilitato per l’authoring WYSIWYG con AEM as a Cloud Service come origine di contenuto, vedi [questo webinar AEM GEMs.](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Per una procedura dettagliata end-to-end di creazione di un nuovo progetto Edge Delivery Services abilitato per l&#39;authoring WYSIWYG con AEM as a Cloud Service come origine di contenuto, visualizzare [questo webinar AEM GEMs.](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

@@ -60,7 +60,7 @@ L’utilizzo di un modello per creare un sito è semplice.
 
    ![Creazione di un sito da un modello](../assets/create-site-from-template.png)
 
-1. Nella procedura guidata Crea sito, seleziona un modello esistente nel pannello a sinistra o in **Importa** nella parte superiore della colonna sinistra per importare un nuovo modello.
+1. Nella procedura guidata Crea sito, seleziona un modello esistente nel pannello a sinistra o in **Importa** nella parte superiore della colonna di sinistra per importare un nuovo modello.
 
    ![Creazione guidata sito](../assets/site-creation-wizard.png)
 
@@ -68,7 +68,7 @@ L’utilizzo di un modello per creare un sito è semplice.
 
    1. Una volta caricato, viene visualizzato nell’elenco dei modelli disponibili.
 
-1. Quando si seleziona un modello, vengono visualizzate informazioni sul modello nella colonna di destra. Con il modello desiderato selezionato, seleziona **Successivo**.
+1. Quando si seleziona un modello, vengono visualizzate informazioni sul modello nella colonna di destra. Con il modello desiderato selezionato, seleziona **Avanti**.
 
    ![Seleziona un modello](../assets/select-site-template.png)
 
@@ -78,7 +78,7 @@ L’utilizzo di un modello per creare un sito è semplice.
    * Il nome del sito diventa parte dell’URL.
    * Il nome del sito deve rispettare [le convenzioni di denominazione delle pagine di AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices).
 
-1. Seleziona **Crea** e il sito viene creato dal modello del sito.
+1. Selezionare **Crea** e il sito verrà creato dal modello di sito.
 
    ![Dettagli del nuovo sito](../assets/create-site-details.png)
 
@@ -97,7 +97,7 @@ Gli autori dei contenuti possono ora iniziare a creare.
 Se il sito richiede una personalizzazione oltre ai modelli disponibili, sono disponibili diverse opzioni.
 
 * Se è necessario modificare la struttura del sito o il contenuto iniziale, [il modello di sito può essere personalizzato in base alle proprie esigenze](site-templates.md).
-* Se è necessario regolare lo stile del sito, [il tema del sito può essere scaricato e personalizzato](/help/journey-sites/quick-site/overview.md).
-* Se è necessario regolare la funzionalità del sito, [il sito può essere completamente personalizzato](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+* Se è necessario modificare lo stile del sito, [il tema del sito può essere scaricato e personalizzato](/help/journey-sites/quick-site/overview.md).
+* Se è necessario modificare la funzionalità del sito, [il sito può essere completamente personalizzato](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 Qualsiasi personalizzazione deve essere effettuata con il supporto di un team di sviluppo.

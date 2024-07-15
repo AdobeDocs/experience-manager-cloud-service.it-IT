@@ -32,7 +32,7 @@ Le impostazioni **Utente** consentono di accedere a:
 
 ### Preferenze {#my-preferences}
 
-Il **Le mie preferenze** è accessibile tramite il [Utente](#user-settings) nell’intestazione.
+La finestra di dialogo **Preferenze** è accessibile tramite l&#39;opzione [Utente](#user-settings) nell&#39;intestazione.
 
 Ogni utente può impostare le proprie proprietà preferite.
 
@@ -89,8 +89,8 @@ Ogni utente può impostare le proprie proprietà preferite.
 
 * **Abilita pagina iniziale di Assets**
 
-  Questa opzione è disponibile solo se l’amministratore di sistema ha attivato l’esperienza Pagina iniziale risorse per l’intera organizzazione.
+  Questa opzione è disponibile solo se l’amministratore di sistema ha abilitato l’esperienza Pagina iniziale di Assets per l’intera organizzazione.
 
 * **Configurazione Stock**
 
-  Questa opzione consente di specificare la configurazione di Adobe Stock preferita ed è disponibile solo se l’amministratore di sistema ha abilitato [Integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Questa opzione consente di specificare la configurazione di Adobe Stock preferita ed è disponibile solo se l&#39;amministratore di sistema ha abilitato l&#39;[integrazione di Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

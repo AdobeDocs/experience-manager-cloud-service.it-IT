@@ -1,6 +1,6 @@
 ---
 title: Quali sono i problemi noti e le limitazioni dell’ambiente as a Cloud Service AEM Forms?
-description: Problemi noti e limitazioni di  [!DNL AEM Forms] ambiente as a Cloud Service.
+description: Problemi noti e limitazioni dell'ambiente  [!DNL AEM Forms]  as a Cloud Service.
 contentOwner: khsingh
 role: Admin, Developer, User
 feature: Adaptive Forms

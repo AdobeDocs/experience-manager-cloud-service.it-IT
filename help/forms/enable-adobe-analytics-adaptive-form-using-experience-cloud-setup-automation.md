@@ -23,31 +23,31 @@ Experience Cloud Setup Automation consente di collegare Adobe Analytics ad Adapt
 
 ## Vantaggi dell’integrazione di Adobe Analytics con Adaptive Forms {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
-* **Informazioni sul comportamento degli utenti finali**: Adobe Analytics consente di ottenere informazioni sul comportamento degli utenti finali, rivelare le azioni degli utenti, i tassi di abbandono e i tassi di completamento, consentendo una comprensione più approfondita del modo in cui i singoli utenti interagiscono con i moduli.
-* **Consentire agli utenti aziendali non tecnici di ottenere informazioni approfondite**: Adobe Analytics, tramite la sua interfaccia di facile utilizzo, consente anche agli utenti non tecnici di accedere e interpretare i dati di utilizzo dei moduli, promuovendo decisioni basate sui dati per migliorare le esperienze di registrazione.
-* **Ottimizzazione dell’esperienza di acquisizione dati in base all’utilizzo**: le organizzazioni identificano facilmente i punti critici nell’acquisizione dei dati, consentendo miglioramenti mirati che migliorano l’usabilità dei moduli e aumentano il numero di invii riusciti.
+* **Informazioni sul comportamento dell&#39;utente finale**: Adobe Analytics consente di ottenere informazioni sul comportamento dell&#39;utente finale, rivelare le azioni dell&#39;utente, gli abbandoni e i tassi di completamento, consentendo una comprensione più approfondita del modo in cui i singoli utenti interagiscono con i moduli.
+* **Consentire agli utenti aziendali non tecnici di ottenere informazioni**: Adobe Analytics, tramite la sua interfaccia di facile utilizzo, consente anche agli utenti non tecnici di accedere e interpretare i dati di utilizzo dei moduli, favorendo decisioni basate sui dati per migliorare le esperienze di registrazione.
+* **Ottimizzazione dell&#39;esperienza di acquisizione dati in base all&#39;utilizzo**: le organizzazioni identificano facilmente i punti critici nell&#39;acquisizione dei dati, con miglioramenti mirati che migliorano l&#39;usabilità dei moduli e aumentano le richieste di invio corrette.
 
 ## Ambito delle metriche di utilizzo di Adaptive Forms {#scope-of-adaptive-forms-usage-metrics}
 
 Adobe Analytics offre una gamma completa di metriche delle prestazioni di Adaptive Forms progettate per fornire informazioni preziose sull’utilizzo dei moduli e offre un’analisi rapida. Queste metriche sono:
 
-* **Rappresentazioni di moduli, invii di moduli, errori di convalida e visitatori univoci**, che consente di valutare l’utilizzo e l’efficacia dei moduli.
+* **Rappresentazioni di moduli, invii di moduli, errori di convalida e visitatori univoci**, che consentono di valutare l&#39;utilizzo e l&#39;efficacia dei moduli.
 
-* **Approfondimenti visitatore** che include le frequenze di visite e invii e i conteggi di visitatori univoci, offrendo una visualizzazione completa del pubblico del modulo.
+* **Visitor Insights** che include le frequenze di visita e invio e il numero di visitatori univoci, offrendo una visualizzazione completa del pubblico del modulo.
 
-* **Tipo di dispositivo** dati che consentono di ottenere informazioni sui dispositivi utilizzati dagli utenti per accedere ai moduli.
+* **Tipo di dispositivo** dati che forniscono informazioni sui dispositivi utilizzati dagli utenti per accedere ai moduli.
 
-* **Ripartizione geografica** mostra la distribuzione regionale degli utenti del modulo.
+* **La suddivisione geografica** rivela la distribuzione regionale degli utenti del modulo.
 
-* **Origini di traffico** e **Moduli popolari** Le metriche, costituite dai domini di riferimento principali e dai moduli più visitati, consentono di comprendere da dove proviene il traffico e quali sono i moduli più popolari.
+* Le metriche **Origini traffico** e **Moduli popolari**, costituite dai principali domini di riferimento e dai moduli più visitati, consentono di comprendere da dove proviene il traffico e quali moduli sono più popolari.
 
-* **Attività utente nei moduli principali** fornisce informazioni approfondite su visite in loco, rappresentazioni di moduli, errori di convalida, moduli abbandonati e invii di moduli, consentendo di analizzare il comportamento degli utenti.
+* **L&#39;attività utente nei primi moduli** fornisce informazioni approfondite sulle visite ai campi, sulle rappresentazioni dei moduli, sugli errori di convalida, sui moduli abbandonati e sull&#39;invio dei moduli, consentendo di analizzare il comportamento degli utenti.
 
-* **Timeline per il tempo trascorso sui moduli** che offre una visualizzazione del coinvolgimento degli utenti con i moduli basata su timeline.
+* **Timeline per il tempo trascorso sui moduli**, che offre una visualizzazione del coinvolgimento degli utenti con i moduli basata su una cronologia.
 
-* **Aree che richiedono assistenza visitatore** metriche che includono visualizzazioni della guida, istanze di errori di convalida e frequenze di visite sul campo, evidenziando i casi in cui gli utenti possono aver bisogno di assistenza nella compilazione dei moduli.
+* **Aree che richiedono assistenza ai visitatori** metriche che includono visualizzazioni della Guida, istanze di errori di convalida e frequenze di visite sul campo, evidenziando le aree in cui gli utenti potrebbero aver bisogno di assistenza per la compilazione dei moduli.
 
-![Rapporto di Analytics](assets/analytics-report.png){width="100%"}
+![Rapporto Analytics](assets/analytics-report.png){width="100%"}
 
 
 Per informazioni dettagliate su ciascuna metrica, visita [Visualizzazione e comprensione dei rapporti di AEM Forms Analytics](/help/forms/view-understand-aem-forms-analytics-reports.md)
@@ -58,13 +58,13 @@ Per informazioni dettagliate su ciascuna metrica, visita [Visualizzazione e comp
 Analytics, Data Collection (Formerly Adobe Launch), and Experience Manager (experience.adobe.com)
 -->
 
-Experience Cloud Setup Automation richiede un **Licenza Adobe Analytics**, **Raccolta Dati (Precedentemente Adobe Launch)** per gestire gli script di tracciamento e **Licenza Experience Manager Forms** per l’aggregazione dati semplificata e la generazione di informazioni.
+Experience Cloud Setup Automation richiede una **licenza Adobe Analytics**, **raccolta dati (in precedenza Adobe Launch)** per gestire gli script di tracciamento e **licenza Experience Manager Forms** per l&#39;aggregazione dati semplificata e la generazione di informazioni approfondite.
 
-Se si dispone di una licenza attiva per **Adobe Analytics** e **Experience Manager Forms** e l’integrazione con **Raccolta Dati (Precedentemente Adobe Launch)**, è necessario verificarne la disponibilità all’interno della console per sviluppatori.
+Se disponi di una licenza attiva per **Adobe Analytics** e **Experience Manager Forms** e di un&#39;integrazione con **Data Collection (in precedenza Adobe Launch)**, devi verificarne la disponibilità all&#39;interno della console per sviluppatori.
 
-Per verificare che quanto sopra sia disponibile per l’ambiente Forms as a Cloud Service, visita il [console per sviluppatori](https://developer.adobe.com/console/projects), accedi al progetto ed esegui una ricerca nel progetto con l’ID del programma, ad esempio l’ID dell’ambiente con l’URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, id programma - l’id ambiente è `p45913-e175111`. Assicurati che siano elencate le API Experience Cloud Setup Automation, Adobe Analytics e Experienci Platform Launch. Se questi sono elencati, puoi abilitare Adobe Analytics per un’analisi rapida del tuo Forms adattivo.
+Per verificare la disponibilità di questi elementi per l&#39;ambiente Forms as a Cloud Service, visitare la [console per sviluppatori](https://developer.adobe.com/console/projects), passare al progetto e cercare il progetto con l&#39;ID programma - ID ambiente, ad esempio, per l&#39;ambiente con URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, ID programma - ID ambiente: `p45913-e175111`. Assicurati che siano elencate le API Experience Cloud Setup Automation, Adobe Analytics e Experienci Platform Launch. Se questi sono elencati, puoi abilitare Adobe Analytics per un’analisi rapida del tuo Forms adattivo.
 
-![Prerequisito per l’integrazione di Forms Analytics](assets/analytics-aem.png){width="100%"}
+![Integrazione prerequisito di Forms Analytics](assets/analytics-aem.png){width="100%"}
 
 <!-- 
 >[!NOTE]
@@ -96,44 +96,44 @@ Per abilitare e configurare Adobe Analytics per un’analisi rapida del tuo Form
    1. Vai a **[!UICONTROL Strumenti > Generale > Browser configurazioni]**.
    1. Seleziona o crea un contenitore di configurazione e abilita la cartella per **[!UICONTROL Configurazioni cloud]**.
    1. Seleziona **[!UICONTROL Salva e chiudi]** per salvare la configurazione e uscire dalla finestra di dialogo.
-1. Nella tua istanza AEM, vai a **[Forms]** >> **[Forms e documento]**.
-1. Seleziona il **[!UICONTROL Modulo]** >> **[!UICONTROL Proprietà]**, Nella **[!UICONTROL Contenitore configurazione]**, seleziona il contenitore di configurazione creato o selezionato in **[!UICONTROL Browser configurazioni]** nel passaggio 1.
-1. Seleziona il pannello Attività nella barra a sinistra e fai clic su **Configurazione analisi** e **Attivare Adobe Analytics**.
-1. Immetti il nome desiderato per la suite di rapporti, fai clic su **[!UICONTROL Successivo]** e **[!UICONTROL Salva]**.
-1. Dopo il salvataggio del progetto, la configurazione viene eseguita per un certo periodo di tempo fino all’integrazione di Adobe Analytics con il modulo adattivo. Puoi anche controllare il **stato dell’integrazione**.
+1. Nell&#39;istanza AEM, vai a **[Forms]** >> **[Forms e documento]**.
+1. Seleziona il **[!UICONTROL modulo]** >> **[!UICONTROL proprietà]**. Nel **[!UICONTROL contenitore configurazione]**, seleziona il contenitore configurazione creato o selezionato nel **[!UICONTROL browser configurazioni]** nel passaggio 1.
+1. Seleziona il pannello attività nella barra a sinistra e fai clic su **Imposta analisi** e **Attiva Adobe Analytics**.
+1. Specifica il nome che preferisci per la suite di rapporti. Fai clic su **[!UICONTROL Avanti]** e **[!UICONTROL Salva]**.
+1. Dopo il salvataggio del progetto, la configurazione viene eseguita per un certo periodo di tempo fino all&#39;integrazione di Adobe Analytics con il modulo adattivo. Puoi anche controllare lo **stato di integrazione**.
 
    >[!NOTE]
    >
    >Se la configurazione richiede più di 15 minuti, riprova ad abilitare le analisi per i moduli.
 
-1. Nella tua istanza AEM, vai a **[!UICONTROL Forms]** >> **[Forms e documento]** e seleziona il tuo **[!UICONTROL Modulo]**, come illustrato nell’immagine seguente, Adobe Analytics è integrato nel modulo.
-1. Ora puoi visualizzare [Rapporto Adobe Analytics modulo adattivo](#view-adobe-analytics-report).
+1. Nell&#39;istanza dell&#39;AEM, vai a **[!UICONTROL Forms]** >> **[Forms e documento]** e seleziona il **[!UICONTROL Modulo]**, noterai che Adobe Analytics è integrato nel tuo modulo come illustrato nell&#39;immagine seguente.
+1. Ora puoi visualizzare il tuo [report Adobe Analytics modulo adattivo](#view-adobe-analytics-report).
 
 ![Analisi AEM integrata](assets/analytics-aem-integrated.png){width="100%"}
 
 
 ### Abilitare Adobe Analytics con Forms adattivo per i componenti core {#integrate-adobe-analytics-with-aem-forms-for-core-components}
 
-1. Nella tua istanza AEM, vai a **[!UICONTROL Forms]** >> **[!UICONTROL Forms e documento]** e seleziona il tuo **[!UICONTROL Modulo]**.
-1. Selezionare il Pannello attività a sinistra e fare clic su **Configurazione analisi** e **Attivare Adobe Analytics**.
-1. Immetti il nome desiderato per la suite di rapporti, fai clic su **[!UICONTROL Successivo]** e **[!UICONTROL Salva]**.
-1. Dopo il salvataggio del progetto, la configurazione viene eseguita per un certo periodo di tempo fino all’integrazione di Adobe Analytics con il modulo adattivo. Puoi anche controllare il **stato dell’integrazione**.
+1. Nell&#39;istanza AEM, vai a **[!UICONTROL Forms]** >> **[!UICONTROL Forms e Document]** e seleziona il tuo **[!UICONTROL Form]**.
+1. Selezionare il Pannello attività a sinistra e fare clic su **Imposta analisi** e **Attiva Adobe Analytics**.
+1. Specifica il nome che preferisci per la suite di rapporti. Fai clic su **[!UICONTROL Avanti]** e **[!UICONTROL Salva]**.
+1. Dopo il salvataggio del progetto, la configurazione viene eseguita per un certo periodo di tempo fino all&#39;integrazione di Adobe Analytics con il modulo adattivo. Puoi anche controllare lo **stato di integrazione**.
 
    >[!NOTE]
    >
    >Se la configurazione richiede più di 15 minuti, riprova ad abilitare le analisi per i moduli.
 
-1. Nella tua istanza AEM, vai a **[!UICONTROL Forms]** >> **[!UICONTROL Forms e documento]** e seleziona il tuo **[!UICONTROL Modulo]**, Adobe Analytics è integrato nel modulo.
-1. Ora puoi visualizzare [Rapporto Adobe Analytics modulo adattivo](#view-adobe-analytics-report).
+1. Nell&#39;istanza dell&#39;AEM, vai a **[!UICONTROL Forms]** >> **[!UICONTROL Forms e Document]** e seleziona il **[!UICONTROL Form]**, noterai che Adobe Analytics è integrato nel tuo modulo.
+1. Ora puoi visualizzare il tuo [report Adobe Analytics modulo adattivo](#view-adobe-analytics-report).
 
 ## Visualizzare il rapporto di Adaptive Forms Adobe Analytics {#view-adobe-analytics-report}
 
-1. Nella tua istanza AEM, vai a **[!UICONTROL Forms]** >> **[!UICONTROL Forms e documento]**.
+1. Nell&#39;istanza AEM, vai a **[!UICONTROL Forms]** >> **[!UICONTROL Forms e documento]**.
 1. Seleziona il modulo, vedrai che Adobe Analytics è integrato come mostrato a sinistra, nel Forms attivato per Adobe Analytics.
 
-   ![Visualizza rapporto](assets/activ-aa.png){width="100%"}
+   ![Visualizza report](assets/activ-aa.png){width="100%"}
 
-1. Clic **Adobe Analytics** per visualizzare il report e analizzare i dati sulle prestazioni.
+1. Fai clic su **Adobe Analytics** per visualizzare il tuo report e analizzare i dati sulle prestazioni.
 
 Per collegare un modulo adattivo ad Adobe Analytics utilizzando il metodo manuale, visita [Integrare AEM Forms con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
 
@@ -147,21 +147,21 @@ Per connettersi e abilitare le analisi in Adaptive Forms per AEM Sites, assicura
 
 ### Connettere Forms adattivo in Sites per abilitare Analytics {#Connect-analytics-to-adaptive-forms}
 
-Per collegare un modulo adattivo in una pagina di AEM Sites per abilitare Analytics per un’analisi rapida, includi `customfooterlibs` dalla libreria client alla pagina AEM Sites utilizzando l’archivio e la pipeline di distribuzione di Archetipo/Git AEM.
+Per connettere il modulo adattivo in una pagina di AEM Sites per abilitare Analytics per un&#39;analisi rapida, includere la libreria client `customfooterlibs` nella pagina di AEM Sites utilizzando l&#39;archivio e la pipeline di distribuzione dell&#39;archetipo/Git AEM.
 
-1. Apri il [Archetipo AEM Forms o archivio Git clonato](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) in un editor di testo. Ad esempio, Visual Studio Code.
+1. Apri il progetto [Archetipo AEM Forms o Archivio Git clonato](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) in un editor di testo. Ad esempio, Visual Studio Code.
 
-1. Passa alla pagina dei tuoi Sites in cui esiste il modulo adattivo, ad esempio In questo progetto demo è disponibile `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
+1. Passa alla pagina dei tuoi siti in cui esiste il modulo adattivo, ad esempio In questo progetto demo abbiamo `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
 
 1. Copia il valore di `sling:resourceSuperType`. Ad esempio, il valore è `core/wcm/components/page/v3/page`.
 
-   ![risorsa sling](/help/forms/assets/slingresource.png){width="100%"}
+   ![risorsa Sling](/help/forms/assets/slingresource.png){width="100%"}
 
-1. Crea la struttura simile nel percorso `ui.apps/src/main/content/jcr_root/apps` uguale a `core/wcm/components/page/v3/page`.
+1. Creare la struttura simile nel percorso `ui.apps/src/main/content/jcr_root/apps` come `core/wcm/components/page/v3/page`.
 
-   ![struttura di sovrapposizione](/help/forms/assets/overlaystructure.png){width="100%"}
+   ![struttura sovrapposta](/help/forms/assets/overlaystructure.png){width="100%"}
 
-1. Aggiungi un `customfooterlibs.html` file.
+1. Aggiungi un file `customfooterlibs.html`.
 
    ```
    // customheaderlibs.html
@@ -170,51 +170,51 @@ Per collegare un modulo adattivo in una pagina di AEM Sites per abilitare Analyt
    </sly>
    ```
 
-   Il `customfooterlibs.html` viene utilizzato per JavaScript.
+   `customfooterlibs.html` è utilizzato per JavaScript.
 
-1. [Eseguire la pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) per distribuire le modifiche.
+1. [Esegui la pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) per distribuire le modifiche.
 
 ### Abilitare le regole di analisi dei moduli in Forms in Sites {#bind-forms-analytics-rules-to-forms-in-sites}
 
-1. Visita il **Raccolta dati di Adobe Experience Platform**.
-1. Clic **Tag** sul lato sinistro.
-1. Cerca nel tuo progetto con l’ID del programma come mostrato nell’immagine seguente, ad esempio per l’ambiente con URL `https://author-p45921-e175111-cmstg.adobeaemcloud.com/index.html`, l’id del programma è `45921`.
+1. Visita la **raccolta dati di Adobe Experience Platform**.
+1. Fai clic su **Tag** che si trova sul lato sinistro.
+1. Cercare nel progetto con l&#39;ID di programma come mostrato nell&#39;immagine seguente, ad esempio, per l&#39;ambiente con URL `https://author-p45921-e175111-cmstg.adobeaemcloud.com/index.html`, ID di programma: `45921`.
 
-   ![Cercare il modulo nella raccolta dati](/help/forms/assets/aep-data-collection.png){width="100%"}
+   ![Cerca-il-tuo-modulo-nella-raccolta-dati](/help/forms/assets/aep-data-collection.png){width="100%"}
 
-1. Aggiungi configurazione per **Regole modulo** e **Elementi dati** come indicato di seguito:
+1. Aggiungi la configurazione per **Regole modulo** e **Elementi dati** come indicato di seguito:
 
 #### Aggiungi regole modulo {#form-rules}
 
-1. Seleziona il modulo e aggiungi **Nuova proprietà** in alto a destra oppure fare clic sul modulo.
-1. Nella pagina delle proprietà, fai clic su **Regole** e selezionare gli eventi per il modulo. Nell&#39;immagine di esempio riportata di seguito, è **Eventi modulo**.
+1. Seleziona il modulo e aggiungi **Nuova proprietà** in alto a destra, oppure fai clic sul modulo.
+1. Nella pagina delle proprietà, fai clic su **Regole** e seleziona gli eventi per il modulo. Nell&#39;immagine di esempio seguente, sono **Eventi modulo**.
 
-   ![Cercare il modulo nella raccolta dati](/help/forms/assets/aep-form-event-properties.png){width="100%"}
+   ![Cerca-il-tuo-modulo-nella-raccolta-dati](/help/forms/assets/aep-form-event-properties.png){width="100%"}
 
-1. Seleziona tutti gli eventi del modulo e **copia** che si trova sulla barra superiore destra.
-1. Una volta copiata, **Copia regola** viene visualizzato un pop-up in cui si cerca nella pagina Sites l’ID progetto, per incollare le regole del modulo.
+1. Seleziona tutti gli eventi del modulo e **copia** che si trova nella barra in alto a destra.
+1. Dopo aver copiato, viene visualizzato un pop-up **Copia regola** in cui si cerca nella pagina Sites l&#39;ID progetto, per incollare le regole del modulo.
 
-   ![Copiare-regole-modulo](/help/forms/assets/copy-form-rules.png){width="100%"}
+   ![Copia-regole-modulo](/help/forms/assets/copy-form-rules.png){width="100%"}
 
-1. Clic **copia** per incollare le regole del modulo nella pagina Sites.
+1. Fai clic su **copia** per incollare le regole del modulo nella pagina Sites.
 
 #### Aggiungi elementi dati {#data-elements}
 
-1. Seleziona il modulo e aggiungi **Nuova proprietà** in alto a destra oppure fare clic sul modulo.
-1. Nella pagina delle proprietà, fai clic su **Elementi dati** e selezionare gli eventi per il modulo.
-1. Seleziona tutti gli eventi del modulo e **copia** si trova sulla barra superiore destra.
-1. Una volta copiata, **Copia regola** viene visualizzato un pop-up in cui si cerca nella pagina Sites l’ID progetto, per incollare le regole del modulo.
-1. Clic **copia** per incollare le regole del modulo nella pagina Sites.
+1. Seleziona il modulo e aggiungi **Nuova proprietà** in alto a destra, oppure fai clic sul modulo.
+1. Nella pagina delle proprietà, fai clic su **Elementi dati** e seleziona gli eventi per il modulo.
+1. Seleziona tutti gli eventi del modulo e **copia** che si trovano nella barra in alto a destra.
+1. Dopo aver copiato, viene visualizzato un pop-up **Copia regola** in cui si cerca nella pagina Sites l&#39;ID progetto, per incollare le regole del modulo.
+1. Fai clic su **copia** per incollare le regole del modulo nella pagina Sites.
 
-   ![Form-data-elements](/help/forms/assets/form-data-elements.png){width="100%"}
+   ![Elementi-dati-modulo](/help/forms/assets/form-data-elements.png){width="100%"}
 
 Dopo aver associato le regole di Form e Sites tramite i passaggi sopra indicati, effettua le seguenti operazioni per abilitare Analytics per il modulo adattivo nella pagina Sites:
 
-1. Clic **Flusso di pubblicazione** a sinistra.
-1. Clic **Aggiungi libreria** e inserisci il nome che preferisci.
-1. In **Ambiente** a destra, seleziona **sviluppo**.
-1. Clic **Aggiungi tutte le risorse modificate**.
-1. Clic **Salva e genera in sviluppo**.
+1. Fai clic su **Flusso di pubblicazione** a sinistra.
+1. Fare clic su **Aggiungi libreria** e immettere il nome desiderato.
+1. Nel menu a discesa **Ambiente** a destra, seleziona **sviluppo**.
+1. Fare clic su **Aggiungi tutte le risorse modificate**.
+1. Fai clic su **Salva e genera in sviluppo**.
 
 ![pubblicazione su sviluppo](/help/forms/assets/publish-to-dev.png){width="100%"}
 

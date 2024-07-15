@@ -1,6 +1,6 @@
 ---
-title: Come si gestiscono i metadati nella vista Risorse?
-description: Scopri come gestire i metadati nella vista Risorse. Una migliore gestione dei metadati rende una risorsa più accessibile, facile da gestire e completa.
+title: Come si gestiscono i metadati nella vista Assets?
+description: Scopri come gestire i metadati nella vista Assets. Una migliore gestione dei metadati rende una risorsa più accessibile, facile da gestire e completa.
 role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
@@ -69,18 +69,18 @@ I tag possono anche essere nidificati in una gerarchia per supportare relazioni 
 >title="Moduli di metadati"
 >abstract="[!DNL Experience Manager Assets] fornisce molti campi di metadati standard per impostazione predefinita. Le organizzazioni hanno l’esigenza di aggiungere altri metadati e ulteriori campi di metadati, specifici per l’azienda. I moduli di metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina Dettagli di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse."
 
-La vista Risorse fornisce molti campi di metadati standard per impostazione predefinita. Spesso le organizzazioni hanno l’esigenza di aggiungere altri metadati, specifici per l’azienda. I moduli di metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina [!UICONTROL Dettagli] di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse. Puoi creare nuovi moduli o riutilizzare quelli esistenti.
+La vista Assets fornisce molti campi di metadati standard per impostazione predefinita. Spesso le organizzazioni hanno l’esigenza di aggiungere altri metadati, specifici per l’azienda. I moduli di metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina [!UICONTROL Dettagli] di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse. Puoi creare nuovi moduli o riutilizzare quelli esistenti.
 
-Puoi configurare i moduli di metadati per diversi tipi di risorse (diversi tipi MIME). Utilizza un modulo con lo stesso nome del tipo MIME del file. La vista Risorse abbina automaticamente il tipo MIME delle risorse caricate al nome del modulo e aggiorna i metadati delle risorse caricate in base ai campi del modulo.
+Puoi configurare i moduli di metadati per diversi tipi di risorse (diversi tipi MIME). Utilizza un modulo con lo stesso nome del tipo MIME del file. La vista Assets fa corrispondere automaticamente il tipo MIME delle risorse caricate al nome del modulo e aggiorna i metadati delle risorse caricate in base ai campi del modulo.
 <!--
 For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
 -->
-La vista Risorse utilizza la seguente sequenza per cercare i nomi dei moduli di metadati esistenti per applicare i campi di metadati alle risorse caricate di un particolare tipo:
+La vista Assets utilizza la seguente sequenza per cercare i nomi dei moduli di metadati esistenti per applicare i campi di metadati alle risorse caricate di un particolare tipo:
 
 Sottotipo MIME > Tipo MIME > Modulo `default` > Modulo fornito con il prodotto
 
-Ad esempio, se è presente un modulo di metadati denominato `PDF` o `pdf`, i documenti PDF caricati contengono i campi di metadati definiti in tale modulo. Se un modulo di metadati viene denominato `PDF` o `pdf` non esiste, la visualizzazione delle risorse corrisponde se è presente un modulo di metadati denominato `application`. Se è presente un modulo metadati denominato `application`, i documenti PDF caricati contengono campi di metadati definiti nel modulo. Se la vista Assets non trova un modulo di metadati corrispondente, cerca il `default` modulo di metadati per applicare ai documenti di PDF caricati i campi di metadati definiti nel modulo. Se nessuno di questi passaggi funziona, la vista Risorse applica i campi di metadati definiti nel modulo fornito con il prodotto a tutti i documenti di PDF caricati.
-Anche se se si desidera assegnare un modulo di metadati a una cartella [vedi](#assign-metadata-form-folder).
+Ad esempio, se è presente un modulo di metadati denominato `PDF` o `pdf`, i documenti PDF caricati contengono i campi di metadati definiti in tale modulo. Se non esiste un modulo di metadati denominato `PDF` o `pdf`, la visualizzazione di Assets corrisponde a quella del modulo di metadati denominato `application`. Se è presente un modulo metadati denominato `application`, i documenti PDF caricati contengono campi di metadati definiti nel modulo. Se la visualizzazione Assets non trova un modulo di metadati corrispondente, cerca il modulo di metadati `default` per applicare ai documenti di PDF caricati i campi di metadati definiti nel modulo. Se nessuno di questi passaggi funziona, la vista Assets applica a tutti i documenti di PDF caricati i campi di metadati definiti nel modulo fornito con il prodotto.
+Tuttavia, se desideri assegnare un modulo di metadati a una cartella [vedi](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >
@@ -138,7 +138,7 @@ Di seguito è riportata una panoramica di ciascun tipo di proprietà e della rel
 
 ### Assegnare un modulo di metadati a una cartella {#assign-metadata-form-folder}
 
-Puoi anche assegnare un modulo di metadati a una cartella all’interno della distribuzione di visualizzazione delle risorse. Il modulo di metadati assegnato a una cartella in base al tipo MIME viene sovrascritto quando si applica manualmente un modulo di metadati a una cartella. Per tutte le risorse nella cartella, comprese le risorse nelle sottocartelle, vengono quindi visualizzate le proprietà definite nel modulo di metadati.
+Puoi anche assegnare un modulo di metadati a una cartella all’interno della distribuzione della vista Assets. Il modulo di metadati assegnato a una cartella in base al tipo MIME viene sovrascritto quando si applica manualmente un modulo di metadati a una cartella. Per tutte le risorse nella cartella, comprese le risorse nelle sottocartelle, vengono quindi visualizzate le proprietà definite nel modulo di metadati.
 
 Per assegnare un modulo di metadati a una cartella:
 
@@ -146,13 +146,13 @@ Per assegnare un modulo di metadati a una cartella:
 
 2. Fai clic su **[!UICONTROL Assegna a cartella]**.
 
-3. Seleziona la cartella e fai clic su **[!UICONTROL Assegna]**. Puoi selezionare le cartelle facendo clic sui nomi delle cartelle.
+3. Selezionare la cartella e fare clic su **[!UICONTROL Assegna]**. Puoi selezionare le cartelle facendo clic sui nomi delle cartelle.
 
    ![assegnare un modulo di metadati a una cartella](assets/assign-to-folder.png)
 
    Per assegnare un modulo di metadati alla cartella, puoi anche passare alla pagina dei dettagli della cartella e selezionare un modulo di metadati dalle proprietà della cartella, nel riquadro a destra.
 
-   ![Modulo metadati dalle proprietà della cartella](assets/metadata-from-folder-props.png)
+   ![Modulo metadati da proprietà cartella](assets/metadata-from-folder-props.png)
 
 ### Rimuovere un modulo metadati dalle cartelle {#remove-metadata-form-folder}
 
@@ -170,7 +170,7 @@ Puoi passare anche alla pagina dei dettagli della cartella e selezionare **[!UIC
 
 ## Passaggi successivi {#next-steps}
 
-* [Guarda un video per gestire i moduli di metadati nella vista Risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=it)
+* [Guarda un video per gestire i moduli di metadati nella visualizzazione Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=it)
 
 * Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
 

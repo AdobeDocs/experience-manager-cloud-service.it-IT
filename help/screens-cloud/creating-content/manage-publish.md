@@ -22,7 +22,7 @@ Puoi pubblicare contenuti da AEM Screens. La funzione Gestisci pubblicazione con
 
 ## Obiettivo {#objective}
 
-Questo documento spiega come pubblicare il contenuto modificato sul provider e sul lettore di Servizi Screens. Dopo aver letto dovresti essere in grado di:
+Questo documento consente di comprendere come pubblicare il contenuto modificato sul provider e sul lettore di servizi Screens. Dopo aver letto dovresti essere in grado di:
 
 * come pubblicare un canale
 * gestire la pubblicazione, in termini di ambito
@@ -31,24 +31,24 @@ Questo documento spiega come pubblicare il contenuto modificato sul provider e s
 
 Per pubblicare il canale, segui i passaggi seguenti:
 
-1. Naviga e seleziona il canale dal progetto, ad esempio **FirstDigitalExperience** —> **Canali** —> **LoopChannelOne**.
+1. Passa al progetto e seleziona il canale, ad esempio **FirstDigitalExperience** —> **Channels** —> **LoopingChannelOne**.
 
    ![Seleziona canale](/help/screens-cloud/assets/create-content/managepub-1.png)
 
-1. Clic **Gestisci pubblicazione** dalla barra delle azioni.
+1. Fai clic su **Gestisci pubblicazione** nella barra delle azioni.
 
-1. Seleziona la **Azione** as **Pubblica** e **Pianificazione** as **Ora** dal **Procedura guidata Gestisci pubblicazione** e fai clic su **Successivo**.
+1. Seleziona **Azione** come **Publish** e **Pianificazione** come **Ora** dalla **Gestione guidata pubblicazione** e fai clic su **Avanti**.
 
    ![Seleziona azione Publish](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >Clic **Includi elementi figlio** dalla barra delle azioni, deseleziona tutte le opzioni per pubblicare tutti i moduli del progetto, quindi fai clic su Aggiungi per pubblicare. Per impostazione predefinita, tutte le caselle sono selezionate e devi deselezionarle manualmente per pubblicare tutti i moduli del progetto.
+   >Fai clic su **Includi elementi figlio** nella barra delle azioni, deseleziona tutte le opzioni per pubblicare tutti i moduli del progetto e fai clic su Aggiungi per pubblicarli. Per impostazione predefinita, tutte le caselle sono selezionate e devi deselezionarle manualmente per pubblicare tutti i moduli del progetto.
 
-1. Dopo aver selezionato il canale da **Gestisci pubblicazione** procedura guidata, fai clic su **Pubblica** per pubblicare il canale.
+1. Dopo aver selezionato il canale dalla procedura guidata **Gestisci pubblicazione**, fai clic su **Publish** per pubblicare il canale.
 
    ![Publish il canale](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## Passaggio successivo {#whats-next}
 
-Ora che hai pubblicato i tuoi canali nel progetto, devi continuare il percorso Screens as a Cloud Service esaminando il documento, [Installazione e configurazione dei lettori in Schermi as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Ora che hai pubblicato i tuoi canali nel progetto, devi continuare l&#39;percorso di Screens as a Cloud Service esaminando il documento, [Installazione e configurazione dei lettori in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

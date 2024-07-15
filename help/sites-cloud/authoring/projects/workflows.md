@@ -16,7 +16,7 @@ ht-degree: 96%
 
 I flussi di lavoro per progetti disponibili includono:
 
-* **Flusso di lavoro di approvazione progetto** - Questo flusso di lavoro consente di assegnare il contenuto a un utente, rivederlo e approvarlo.
+* **Flusso di lavoro di approvazione progetto** - Questo flusso di lavoro consente di assegnare contenuti a un utente, rivederli e approvarli.
 * **Richiedi lancio**: flusso di lavoro per richiedere un lancio.
 * **Richiedi pagina di destinazione**: flusso di lavoro per richiedere una pagina di destinazione.
 * **Richiedi e-mail**: flusso di lavoro per la richiesta di un’e-mail.

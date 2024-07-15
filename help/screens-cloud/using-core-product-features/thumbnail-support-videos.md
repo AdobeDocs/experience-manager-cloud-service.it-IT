@@ -33,16 +33,16 @@ Il Supporto miniature consente di effettuare le seguenti operazioni:
 
 >[!IMPORTANT]
 >**Prerequisiti**
->Prima di imparare a utilizzare le miniature per i video, assicurati di imparare a creare rappresentazioni video per i canali nel progetto Screens as a Cloud Service. Consulta [Creazione di rappresentazioni video in Screens as a Cloud Service](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
+>Prima di scoprire come utilizzare le miniature per i video, assicurati di imparare a creare rappresentazioni video per i canali in Screens as a Cloud Service Project. Consulta [Creazione di rappresentazioni video in Screens as a Cloud Service](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
 
 Per usare la miniatura nei video, segui la procedura indicata di seguito:
 
 1. Passa a un canale Screens esistente o creane uno.
 
    >[!NOTE]
-   >Per informazioni su come creare un canale e aggiungere contenuti a un canale, consulta [Creazione e gestione di un canale in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
+   >Per informazioni su come creare un canale e aggiungere contenuto a un canale, vedere [Creazione e gestione di un canale in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
 
-1. Seleziona il canale. Sulla barra delle azioni, fai clic su **Modifica** per aprire l’editor.
+1. Seleziona il canale. Sulla barra delle azioni fare clic su **Modifica** per aprire l&#39;editor.
 
 
    ![Pulsante Modifica sulla barra delle azioni](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
@@ -53,19 +53,19 @@ Per usare la miniatura nei video, segui la procedura indicata di seguito:
 
 1. Aggiungi o modifica un componente video esistente, come illustrato nella figura riportata di seguito.
 
-1. Seleziona il video e fai clic su Configura (*chiave inglese*) per aprire le proprietà del video.
+1. Seleziona il video e fai clic sull&#39;icona Configura (*chiave inglese*) per aprire le proprietà del video.
 
-   ![Immagine della risorsa video selezionata, con freccia rivolta verso l’icona Configura, rappresentata come una chiave inglese. sulla barra degli strumenti](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
+   ![Immagine della risorsa video selezionata con freccia rivolta verso l&#39;icona Configura, rappresentata come una chiave inglese. sulla barra degli strumenti ](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
-1. Il **Video** viene visualizzata la finestra di dialogo in cui è possibile visualizzare **Miniatura** zona di rilascio.
+1. Viene visualizzata la finestra di dialogo **Video** in cui è possibile visualizzare la zona di rilascio **Miniatura**.
 
-   ![Finestra di dialogo Video con l’immagine della risorsa video e la casella a discesa Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
+   ![Finestra di dialogo Video con l&#39;immagine della risorsa video e la casella di riepilogo Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
 
-1. Trascina e rilascia un’immagine dal selettore risorse al **Miniatura** rilascia la zona e fai clic su **Fine**.
+1. Trascina e rilascia un&#39;immagine dal selettore risorse alla zona di rilascio **Miniatura** e fai clic su **Fine**.
 
-   ![Selettore immagine risorsa visualizzato dietro la finestra di dialogo Video con la risorsa immagine visualizzata nella casella a discesa Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
+   ![Selezione immagini risorse visualizzata dietro la finestra di dialogo Video con la risorsa immagine visualizzata nella casella di riepilogo Miniature](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
 
-1. Clic **Anteprima**.
+1. Fare clic su **Anteprima**.
 
 1. Se un video è impostato sul componente, viene riprodotto. In caso contrario, e la miniatura è impostata, la miniatura viene riprodotta. In caso contrario, il componente viene considerato non configurato e viene saltato.
 

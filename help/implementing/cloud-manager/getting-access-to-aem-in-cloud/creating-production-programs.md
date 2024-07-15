@@ -21,11 +21,11 @@ Per ulteriori informazioni sui tipi di programmi, consulta il documento [Informa
 
 ## Creazione di un programma di produzione {#create}
 
-Per creare un programma di produzione, segui la procedura riportata di seguito. Tieni presente che, a seconda dei diritti della tua organizzazione, potresti vedere [opzioni aggiuntive](#options) durante l’aggiunta del programma.
+Per creare un programma di produzione, segui la procedura riportata di seguito. Tieni presente che, a seconda dei diritti della tua organizzazione, potresti visualizzare [opzioni aggiuntive](#options) durante l&#39;aggiunta del programma.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tocca o fai clic su **Aggiungi programma** nell’angolo in alto a destra dello schermo.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, tocca o fai clic su **Aggiungi programma** nell&#39;angolo in alto a destra dello schermo.
 
    ![Pagina di destinazione di Cloud Manager](assets/log-in.png)
 
@@ -39,11 +39,11 @@ Per creare un programma di produzione, segui la procedura riportata di seguito. 
 
    * Se non sai per certo se ti servono uno o più programmi per le varie soluzioni disponibili, seleziona quella che più ti interessa. Potrai attivare altre soluzioni in un secondo tempo [modificando il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md). Per ulteriori consigli sulla configurazione del programma, consulta [Introduzione ai programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
    * Per la creazione del programma è necessaria almeno una soluzione.
-   * Se hai selezionato **[Abilita sicurezza avanzata](#security)** è possibile selezionare solo tutte le soluzioni per le quali sono disponibili i diritti HIPAA.
+   * Se è stata selezionata l&#39;opzione **[Abilita sicurezza avanzata](#security)**, è possibile selezionare solo tutte le soluzioni per le quali sono disponibili i diritti HIPAA.
 
    ![Selezione delle soluzioni](assets/setup-prod-select.png)
 
-1. Per visualizzare i componenti aggiuntivi facoltativi, come la selezione del componente aggiuntivo, fai clic sulla freccia che precede il nome della soluzione **Commerce** opzione del componente aggiuntivo in **Sites**.
+1. Fare clic sulla freccia che precede il nome della soluzione per visualizzare i componenti aggiuntivi facoltativi, ad esempio selezionando l&#39;opzione del componente aggiuntivo **Commerce** in **Sites**.
 
    ![Selezione dei componenti aggiuntivi](assets/setup-prod-commerce.png)
 
@@ -54,7 +54,7 @@ Per creare un programma di produzione, segui la procedura riportata di seguito. 
    ![Definizione della data di pubblicazione pianificata](assets/set-up-go-live.png)
 
    * Questa data può essere modificata in qualsiasi momento.
-   * Questa data è solo per uso informativo e attiva il widget di pubblicazione sul [**Panoramica del programma** pagina](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) fornire collegamenti interni al prodotto alla documentazione sulle best practice as a Cloud Service per l’AEM in modo tempestivo, in linea con il percorso che culmina in un’esperienza di pubblicazione fluida e di successo.
+   * Questa data è solo per uso informativo e attiva il widget di pubblicazione sulla pagina [**Panoramica del programma**](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) per fornire collegamenti rapidi alla documentazione sulle best practice di AEM as a Cloud Service, in modo da allinearsi al percorso e garantire un&#39;esperienza di pubblicazione fluida e di successo.
 
 1. Fai clic su **Crea**.
 
@@ -68,45 +68,45 @@ A seconda dei diritti disponibili per l’organizzazione, è possibile che siano
 
 ### Sicurezza {#security}
 
-Se si dispone dei diritti necessari, il **Sicurezza** verrà visualizzata come prima scheda della **Configurazione per la produzione** .
+Se disponi dei diritti necessari, la scheda **Sicurezza** verrà visualizzata come prima scheda nella finestra di dialogo **Imposta per produzione**.
 
-Il **Sicurezza** fornisce le opzioni per attivare **HIPAA** e/o **Protezione WAF-DDOS** per il programma di produzione.
+La scheda **Sicurezza** fornisce le opzioni per attivare **HIPAA** e/o **Protezione WAF-DDOS** per il programma di produzione.
 
 Adobe Conformità HIPAA e Web Application Firewall (WAF) facilitano la sicurezza basata sul cloud come parte di un approccio multilivello per la protezione contro le vulnerabilità.
 
-* **HIPAA** - Questa opzione consente l’implementazione della soluzione compatibile con HIPPA di Adobe.
+* **HIPAA** - Questa opzione abilita l&#39;implementazione della soluzione compatibile con HIPPA di Adobe.
    * [Ulteriori informazioni](https://www.adobe.com/go/hipaa-ready_it) sull’implementazione della soluzione compatibile HIPAA di Adobe.
    * Impossibile abilitare o disabilitare HIPAA dopo la creazione del programma.
-* **Protezione WAF-DDOS** : questa opzione abilita il firewall dell’applicazione web tramite regole per proteggere l’applicazione.
-   * Una volta attivata, la protezione WAF-DDOS può essere configurata impostando un [pipeline non di produzione.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-   * Consulta il documento [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md) per scoprire come gestire le regole del filtro del traffico nell’archivio in modo che vengano distribuite correttamente.
+* **Protezione WAF-DDOS** - Questa opzione abilita il firewall dell&#39;applicazione Web tramite regole per proteggere l&#39;applicazione.
+   * Una volta attivata, è possibile configurare la protezione WAF-DDOS configurando una [pipeline non di produzione.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * Per informazioni su come gestire le regole del filtro del traffico nell&#39;archivio in modo che vengano distribuite correttamente, consulta il documento [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md).
 
 ![Opzioni di protezione](assets/create-production-program-security.png)
 
 ### SLA {#sla}
 
-Se si dispone dei diritti necessari, il **SLA** verrà visualizzata come seconda o terza scheda nella **Configurazione per la produzione** .
+Se si dispone dei diritti necessari, la scheda **SLA** verrà visualizzata come seconda o terza scheda nella finestra di dialogo **Imposta per la produzione**.
 
-AEM Sites offre un contratto di servizio (SLA) standard del 99,9%. Il **Contratto del livello di servizio del 99,99%** consente un tempo di attività minimo del 99,99% per gli ambienti di produzione.
+AEM Sites offre un contratto di servizio (SLA) standard del 99,9%. L&#39;opzione del **99,99% del contratto del livello di servizio** consente un tempo di attività minimo del 99,99% per gli ambienti di produzione.
 
-Il 99,99% del contratto di servizio offre vantaggi quali maggiore disponibilità e latenza inferiore e richiede un [area geografica di pubblicazione aggiuntiva](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) da applicare all’ambiente di produzione nel programma.
+Il 99,99% del contratto di servizio offre vantaggi quali maggiore disponibilità e latenza inferiore e richiede l&#39;applicazione di un&#39;area di pubblicazione aggiuntiva [](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) all&#39;ambiente di produzione nel programma.
 
 ![Opzioni SLA](assets/create-production-program-sla.png)
 
-Una volta [requisiti](#sla-requirements) per abilitare il 99,99% SLA sono soddisfatti, è necessario eseguire un [pipeline full stack](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) per attivarlo.
+Una volta soddisfatti i [requisiti](#sla-requirements) per abilitare il 99,99% SLA, è necessario eseguire una [pipeline full stack](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) per attivarla.
 
 #### Requisiti per il 99,99% SLA {#sla-requirements}
 
 Oltre alle adesioni richieste, il 99,99% degli SLA prevede requisiti aggiuntivi per l&#39;utilizzo.
 
 * Al momento dell’applicazione del 99,99% del contratto di servizio (SLA) al programma, l’organizzazione deve avere a disposizione sia il 99,99% che i diritti aggiuntivi per regione di pubblicazione.
-* Per applicare al programma un SLA del 99,99%, Cloud Manager verificherà che non sia stato utilizzato [area geografica di pubblicazione aggiuntiva](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) Il diritto è disponibile anche e può essere applicato al programma.
+* Per applicare lo SLA del 99,99% al programma, Cloud Manager verificherà che sia disponibile anche un diritto di [ulteriore area di pubblicazione](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) non utilizzato e che possa essere applicato al programma.
 * Durante la modifica di un programma, se contiene già un ambiente di produzione con almeno un’area di pubblicazione aggiuntiva, Cloud Manager controlla solo la disponibilità di un diritto SLA del 99,99%.
-* Affinché lo SLA del 99,99% e il reporting siano attivati, il [ambiente di produzione/stage](/help/implementing/cloud-manager/manage-environments.md#adding-environments) deve essere stata creata e almeno un’area di pubblicazione aggiuntiva deve essere stata applicata all’ambiente di produzione/stage.
-   * Se si utilizza [reti avanzate,](/help/security/configuring-advanced-networking.md) assicurati di controllare il [Aggiunta di più aree di pubblicazione a un nuovo ambiente](/help/implementing/cloud-manager/manage-environments.md#adding-regions) documenti per raccomandazioni in modo da mantenere la connettività in caso di guasto regionale.
+* Per attivare il 99,99% SLA e il reporting, è necessario che sia stato creato l&#39;[ambiente di produzione/staging](/help/implementing/cloud-manager/manage-environments.md#adding-environments) e che sia stata applicata almeno un&#39;area di pubblicazione aggiuntiva all&#39;ambiente di produzione/staging.
+   * Se utilizzi la [rete avanzata,](/help/security/configuring-advanced-networking.md) assicurati di controllare nel documento [Aggiunta di più aree di Publish a un nuovo ambiente](/help/implementing/cloud-manager/manage-environments.md#adding-regions) che non siano presenti consigli in modo da mantenere la connettività in caso di errore regionale.
 * Almeno un&#39;area geografica di pubblicazione aggiuntiva deve rimanere nel programma SLA al 99,99%. Gli utenti non possono eliminare l’ultima area di pubblicazione aggiuntiva dal programma SLA al 99,99%.
 * Il 99,99% di SLA è supportato per i programmi di produzione in cui è abilitata la soluzione Sites.
-* È necessario eseguire un [pipeline full stack](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) per attivare (o disattivare, durante la modifica di un programma) lo SLA del 99,99%.
+* È necessario eseguire una [pipeline full stack](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) per attivare (o, quando si modifica un programma, disattivare) lo SLA del 99,99%.
 
 ## Accesso al programma {#accessing}
 
@@ -122,7 +122,7 @@ Oltre alle adesioni richieste, il 99,99% degli SLA prevede requisiti aggiuntivi 
 
 >[!TIP]
 >
->Consulta il documento [Navigazione nell’interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/navigation.md) per informazioni dettagliate su come navigare in Cloud Manager e sulla **I miei programmi** console.
+>Per informazioni dettagliate su come esplorare Cloud Manager e la console **I miei programmi**, vedere il documento [Navigazione nell&#39;interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/navigation.md).
 
 >[!NOTE]
 >

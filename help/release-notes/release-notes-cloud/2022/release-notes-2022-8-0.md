@@ -39,15 +39,15 @@ Dai un’occhiata al video Panoramica sulla versione di agosto 2022 per un riepi
 ### Nuove funzioni in [!DNL Sites] {#sites-features}
 
 * Il componente E-mail consente di creare in AEM contenuti da consegnare poi come messaggi e-mail tramite Campaign Classic. Il Componente E-mail principale:
-   * è basato su [Componente WCM core](https://github.com/adobe/aem-core-wcm-components) che supporta i modelli modificabili e il sistema di stili.
+   * è basato sul [componente WCM principale](https://github.com/adobe/aem-core-wcm-components) che supporta i modelli modificabili e il sistema di stili.
    * fornisce 10 componenti pronti per la produzione e ottimizzati per e-mail (Pagina, Contenitore, Titolo, Testo, Immagine, Pulsante, Teaser, Frammento di esperienza, Frammento di contenuto, Segmentazione).
-   * offre funzioni avanzate di personalizzazione e segmentazione, grazie alla [inserimento di variabili di Campaign](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) nella maggior parte dei campi della finestra di dialogo e al [Componente segmentazione](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-   * fornisce un output HTML ottimale e compatibile con le e-mail, grazie alla [Stili CSS in linea](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), il [Inline attributo HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)e [bonificante HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * offre funzioni avanzate di personalizzazione e segmentazione grazie alla [inserimento di variabili di Campaign](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) nella maggior parte dei campi presenti nelle finestre di dialogo e al flessibile [componente Segmentazione](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
+   * fornisce un output HTML ottimale e compatibile con le e-mail grazie alla [funzione inline per stili CSS](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), alla [funzione inline per attributi HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation) e allo [strumento di pulizia HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
    * consente di creare le e-mail ovunque.
 
 ### Nuove funzioni disponibili nel canale pre-release di [!DNL Sites] {#prerelease-features-sites}
 
-* Il [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) offre agli utenti un’opzione per visualizzare il numero totale di copie per lingua associate a un frammento di contenuto. Inoltre, è possibile accedere con 1 solo clic per visualizzare tutte le copie delle varie lingue. Gli utenti possono anche filtrare la visualizzazione a tabella in base alla lingua che desiderano.
+* La [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) offre agli utenti un&#39;opzione per visualizzare il numero totale di copie per lingua associate a un frammento di contenuto. Inoltre, è possibile accedere con 1 solo clic per visualizzare tutte le copie delle varie lingue. Gli utenti possono anche filtrare la visualizzazione a tabella in base alla lingua che desiderano.
 
 ![Lingue dei frammenti di contenuto](/help/release-notes/assets/cfconsole-languages.png)
 

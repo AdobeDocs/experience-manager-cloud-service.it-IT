@@ -10,13 +10,13 @@ ht-degree: 2%
 
 # Modificare le immagini in Content Hub {#edit-images-content-hub}
 
-![Modificare le immagini in Content Hub con Adobe Express](assets/edit-images-content-hub.png)
+![Modifica immagini in Content Hub tramite Adobe Express](assets/edit-images-content-hub.png)
 
 Content Hub consente di creare nuovi contenuti con Adobe Express. Puoi modificare i contenuti esistenti con strumenti facili da usare, produrre varianti on-brand con modelli ed elementi del brand e creare nuovi contenuti con le funzionalità GenAI più recenti di Adobe Firefly.
 
 ## Prerequisiti {#prereqs-edit-image-content-hub}
 
-Diritti di accesso agli Adobi Express e [Utenti Content Hub con diritti per il remix delle risorse in nuove varianti](/help/assets/deploy-content-hub.md#onboard-content-hub-users-remix-assets) può modificare le immagini utilizzando Content Hub.
+I diritti per accedere ad Adobe Express e [agli utenti Content Hub con diritti per il remix delle risorse in nuove varianti](/help/assets/deploy-content-hub.md#onboard-content-hub-users-remix-assets) possono modificare le immagini utilizzando Content Hub.
 
 >[!NOTE]
 >
@@ -26,28 +26,28 @@ Diritti di accesso agli Adobi Express e [Utenti Content Hub con diritti per il r
 
 Per modificare le immagini con Content Hub:
 
-1. Clic **[!DNL Open in Adobe Express]** disponibile nella scheda delle risorse dell’immagine da modificare. In alternativa, fare clic sull&#39;immagine per aprirne i dettagli e quindi fare clic su [!DNL Adobe Express] Logo. L’editor incorporato, ad Adobe Express, si carica senza mai uscire da Content Hub.
+1. Fai clic su **[!DNL Open in Adobe Express]** disponibile nella scheda delle risorse dell&#39;immagine da modificare. In alternativa, fare clic sull&#39;immagine per aprirne i dettagli e quindi fare clic sul logo [!DNL Adobe Express]. L’editor incorporato, ad Adobe Express, si carica senza mai uscire da Content Hub.
 
-   Puoi sfruttare [!DNL Adobe Express] per eseguire tutte le azioni correlate alla modifica delle immagini, ad esempio [ridimensiona immagine](https://helpx.adobe.com/express/using/resize-image.html), [rimuovere o modificare il colore di sfondo](https://helpx.adobe.com/express/using/remove-background.html), [ritaglia immagine](https://helpx.adobe.com/express/using/crop-image.html), combina l’immagine con un’immagine o un testo generato dall’intelligenza artificiale e molto altro.
+   Puoi sfruttare la funzionalità [!DNL Adobe Express] per eseguire tutte le azioni correlate alla modifica delle immagini, ad esempio [ridimensionare l&#39;immagine](https://helpx.adobe.com/express/using/resize-image.html), [rimuovere o modificare il colore di sfondo](https://helpx.adobe.com/express/using/remove-background.html), [ritagliare l&#39;immagine](https://helpx.adobe.com/express/using/crop-image.html), combinare l&#39;immagine con il testo o l&#39;immagine generata dall&#39;intelligenza artificiale e molto altro.
 
-1. Esegui le modifiche e fai clic su **[!UICONTROL Salva]** per salvare la risorsa modificata in uno dei tipi di formato:
+1. Esegui le modifiche e fai clic su **[!UICONTROL Salva]** per salvare la risorsa modificata in uno dei tipi di formato seguenti:
 
    * **[!UICONTROL PNG]** (utilizzato come formato immagine di buona qualità)
-   * **[!UICONTROL JPG-]** (adatto per file di piccole dimensioni)
-   * **[!UICONTROL PDF]** (per documenti)
+   * **[!UICONTROL JPG]** (adatto per file di piccole dimensioni)
+   * **[!UICONTROL PDF]** (adatto per i documenti)
 
    ![Salvare un’immagine con Adobe Express](assets/adobe-express-save-as.png)
 
-1. Specifica un nome per la risorsa in **[!UICONTROL Salva con nome]** campo.
+1. Specifica un nome per la risorsa nel campo **[!UICONTROL Salva con nome]**.
 
-1. Specifica il nome della campagna per la risorsa utilizzando **[!UICONTROL Nome campagna]** campo. Puoi usare un nome esistente o crearne uno nuovo. Il Content Hub offre più opzioni quando si digita il nome. <!--You can define multiple Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.-->
+1. Specifica il nome della campagna per la risorsa utilizzando il campo **[!UICONTROL Nome campagna]**. Puoi usare un nome esistente o crearne uno nuovo. Il Content Hub offre più opzioni quando si digita il nome. <!--You can define multiple Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.-->
 
    Come best practice, l’Adobe consiglia di specificare i valori negli altri campi e di migliorare l’esperienza di ricerca delle risorse caricate.
 
-1. [Facoltativo] Definisci i valori per **[!UICONTROL Parole chiave]**, **[!UICONTROL Canali]**, **[!UICONTROL Intervallo temporale]**, e **[!UICONTROL Regione]** campi. Assegnare tag e raggruppare le risorse per parole chiave, canali e posizione consente a tutti coloro che utilizzano il contenuto aziendale approvato di trovare tali risorse e mantenerle organizzate.
+1. [Facoltativo] Definisci i valori per i campi **[!UICONTROL Parole chiave]**, **[!UICONTROL Canali]**, **[!UICONTROL Intervallo temporale]** e **[!UICONTROL Area]**. Assegnare tag e raggruppare le risorse per parole chiave, canali e posizione consente a tutti coloro che utilizzano il contenuto aziendale approvato di trovare tali risorse e mantenerle organizzate.
 
-1. Clic **[!UICONTROL Salva come nuova risorsa]** per salvare la risorsa.
+1. Fai clic su **[!UICONTROL Salva come nuova risorsa]** per salvare la risorsa.
 
-Gli amministratori possono anche configurare i campi obbligatori e facoltativi da visualizzare durante l’aggiunta di risorse a Content Hub, ad esempio il nome della campagna, le parole chiave, i canali e così via. Per ulteriori informazioni, consulta [Configurare l’interfaccia utente di Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
+Gli amministratori possono anche configurare i campi obbligatori e facoltativi da visualizzare durante l’aggiunta di risorse a Content Hub, ad esempio il nome della campagna, le parole chiave, i canali e così via. Per ulteriori informazioni, vedere [Configurare l&#39;interfaccia utente di Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
 
 

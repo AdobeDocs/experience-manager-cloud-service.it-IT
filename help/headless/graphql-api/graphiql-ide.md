@@ -24,7 +24,7 @@ Un’implementazione dell’IDE [GraphiQL](https://graphql.org/learn/serving-ove
 >[!NOTE]
 >Prima di utilizzare l’IDE GraphiQL, devi avere [configurato gli endpoint](/help/headless/graphql-api/graphql-endpoint.md) nel [browser delle configurazioni](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
 
-Il **GraphiQL** Questo strumento consente di testare ed eseguire il debug delle query GraphQL consentendo di:
+Lo strumento **GraphiQL** consente di testare ed eseguire il debug delle query GraphQL consentendoti di:
 * selezionare l’**Endpoint** appropriato per la configurazione Sites da utilizzare per le query;
 * inserire direttamente nuove query;
 * creare e accedere a **[query persistenti](/help/headless/graphql-api/persisted-queries.md)**;
@@ -83,12 +83,12 @@ Puoi eseguire immediatamente una nuova query oppure caricare ed eseguire una que
 
 In entrambi i casi, la query visualizzata nel pannello dell’editor è quella che verrà eseguita quando:
 
-* seleziona il **Esegui query** icona
+* seleziona l&#39;icona **Esegui query**
 * utilizzi la scelta rapida di tastiera `Control-Enter`
 
 ## Variabili di query {#query-variables}
 
-L’IDE GraphiQL consente inoltre di gestire i [Variabili di query](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+L&#39;IDE GraphiQL consente inoltre di gestire le [variabili di query](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 Esempio:
 
@@ -100,13 +100,13 @@ Le [query persistenti](/help/headless/graphql-api/persisted-queries.md) sono con
 
 >[!NOTE]
 >
->Consulta [Memorizzazione in cache delle query persistenti](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>Vedi [Memorizzazione in cache delle query persistenti](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >
 >Le regole di riscrittura personalizzate in Dispatcher potrebbero sovrascrivere le impostazioni predefinite di AEM Publish.
 >
->Nel caso in cui invii intestazioni di controllo cache basate su TTL da Dispatcher, in base a un pattern di corrispondenza della posizione, se necessario, escludi `/graphql/execute.json/*` dai match.
+>Se invii intestazioni di controllo cache basate su TTL da Dispatcher, in base a un pattern di corrispondenza della posizione, puoi escludere `/graphql/execute.json/*` dalle corrispondenze, se necessario.
 
 Utilizzando GraphQL è possibile configurare le intestazioni cache HTTP per controllare questi parametri per la singola query persistente.
 
@@ -114,7 +114,7 @@ Utilizzando GraphQL è possibile configurare le intestazioni cache HTTP per cont
 
    ![Intestazioni cache HTTP per query persistenti](assets/cfm-graphqlapi-headers-01.png "Intestazioni cache HTTP per query persistenti")
 
-1. Selezionando questa opzione si apre **Configurazione cache** finestra di dialogo:
+1. Selezionando questa opzione si apre la finestra di dialogo **Configurazione cache**:
 
    ![Impostazioni di intestazione cache HTTP per query persistenti](assets/cfm-graphqlapi-headers-02.png "Impostazioni di intestazione cache HTTP per query persistenti")
 
@@ -156,7 +156,7 @@ In questo modo la query verrà disattivata dall’ambiente selezionato, sia per 
 
 ## Copiare l’URL per accedere direttamente alla query {#copy-url}
 
-Il **Copia URL** consente di simulare una query copiando l’URL utilizzato per accedere direttamente alla query persistente e visualizzare i risultati. Questa può quindi essere utilizzata per i test; ad esempio, accedendo in un browser:
+L&#39;opzione **Copia URL** consente di simulare una query copiando l&#39;URL utilizzato per accedere direttamente alla query persistente e visualizzare i risultati. Questa può quindi essere utilizzata per i test; ad esempio, accedendo in un browser:
 
 <!--
   >[!NOTE]

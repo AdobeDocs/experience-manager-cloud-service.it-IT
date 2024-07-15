@@ -28,12 +28,12 @@ Per aggiungere un elemento nei metadati, effettua le seguenti operazioni:
 
 1. Apri il modulo adattivo in modalità di modifica.\
    Per aprire il modulo in modalità di modifica, in Gestione moduli selezionare il modulo e selezionare **[!UICONTROL Apri]**.
-1. In modalità di modifica, seleziona un componente, quindi fai clic su ![a livello di campo](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]** e quindi selezionare ![cmppr](assets/configure-icon.svg).
-1. Nella barra laterale, fai clic su **[!DNL Metadata]**.
-1. Nella sezione Metadati, fai clic su **[!DNL Add]**.
+1. In modalità di modifica, selezionare un componente, selezionare ![livello campo](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**, quindi selezionare ![cmppr](assets/configure-icon.svg).
+1. Nella barra laterale fare clic su **[!DNL Metadata]**.
+1. Nella sezione Metadati fare clic su **[!DNL Add]**.
 1. Utilizzare il campo Valore della scheda Metadati per aggiungere script. Gli script aggiunti raccolgono i dati dagli elementi del modulo e calcolano i valori che vengono trasmessi ai metadati.
 
-   Ad esempio: **[!DNL true]** viene registrato nei metadati se l’età immessa è superiore a 21 anni e **[!DNL false]** viene registrato se è inferiore a 21. Immetti lo script seguente nella scheda Metadati:
+   Ad esempio, **[!DNL true]** viene registrato nei metadati se l&#39;età immessa è maggiore di 21 anni e **[!DNL false]** viene registrato se è minore di 21. Immetti lo script seguente nella scheda Metadati:
 
    `(agebox.value >= 21) ? true : false`
 
@@ -55,10 +55,10 @@ Se aggiungi un elemento casella di controllo nei metadati, i valori selezionati 
 
 ![Memorizzazione di più valori da una casella di controllo](assets/checkbox-metadata.png)
 
-Seleziona il contenitore Modulo adattivo e nelle proprietà del modulo aggiungi una chiave di metadati `cb1` quali archivi `checkbox1.value`e pubblica il modulo. Quando un cliente compila il modulo, seleziona le opzioni Numero di passaporto e di previdenza sociale nel campo della casella di controllo. I valori 1 e 2 sono memorizzati come 1, 2 nel campo cb1 dei metadati di invio.
+Si seleziona Contenitore modulo adattivo e nelle proprietà del modulo si aggiunge una chiave di metadati `cb1` che memorizza `checkbox1.value` e si pubblica il modulo. Quando un cliente compila il modulo, seleziona le opzioni Numero di passaporto e di previdenza sociale nel campo della casella di controllo. I valori 1 e 2 sono memorizzati come 1, 2 nel campo cb1 dei metadati di invio.
 
-![Inserimento di metadati per più valori selezionati in un campo casella di controllo](assets/metadata-entry.png)
+![Voce metadati per più valori selezionati in un campo casella di controllo](assets/metadata-entry.png)
 
 >[!NOTE]
 >
->L’esempio precedente è solo a scopo di apprendimento. Assicurati di cercare i metadati nella posizione corretta, come configurato nella [!DNL Experience Manager Forms] implementazione.
+>L’esempio precedente è solo a scopo di apprendimento. Assicurarsi di cercare i metadati nella posizione corretta configurata nell&#39;implementazione [!DNL Experience Manager Forms].

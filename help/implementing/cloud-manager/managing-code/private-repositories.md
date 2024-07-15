@@ -28,7 +28,7 @@ La configurazione consiste di due passaggi principali:
 
 ### Aggiungi archivio {#add-repo}
 
-1. In Cloud Manager, dalla sezione **Panoramica del programma** , seleziona la **Archivi** per passare alla scheda **Archivi** pagina e fai clic su **Aggiungi archivio**.
+1. In Cloud Manager, dalla pagina **Panoramica del programma**, selezionare la scheda **Archivi** per passare alla pagina **Archivi** e fare clic su **Aggiungi archivio**.
 
 1. Nella finestra di dialogo **Aggiungi archivio**, seleziona **Archivio privato** come tipo di archivio.
 
@@ -44,13 +44,13 @@ La configurazione consiste di due passaggi principali:
 
 >[!TIP]
 >
->Per informazioni dettagliate sulla gestione degli archivi in Cloud Manager, consulta [Archivi di Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+>Per informazioni dettagliate sulla gestione degli archivi in Cloud Manager, vedere [Archivi Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
 ### Convalida della proprietà dell’archivio privato {#validate-ownership}
 
 Cloud Manager ora è a conoscenza del tuo archivio GitHub, ma deve ancora accedervi. Per concedere l’accesso, devi installare l’app Adobe GitHub e verificare di essere il proprietario dell’archivio specificato.
 
-1. Dopo l’aggiunta del tuo archivio, il **Convalida proprietà archivio privato** viene visualizzata una finestra di dialogo.
+1. Dopo aver aggiunto il tuo archivio, si apre la finestra di dialogo **Convalida proprietà archivio privato**.
 
    ![Convalida delle proprietà dell’archivio privato](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
@@ -72,7 +72,7 @@ Cloud Manager ora è a conoscenza del tuo archivio GitHub, ma deve ancora accede
 
 1. Crea un nuovo file nel ramo predefinito dell’archivio GitHub denominato `.well-known/adobe/cloud-manager-challenge` e incolla il contenuto del file segreto in tale file e salvalo.
 
-1. Una volta installata l’app e inserito il file segreto nell’archivio, puoi selezionare **Convalida** nel **Convalida proprietà archivio privato** .
+1. Dopo aver installato l&#39;app e aver inserito il file segreto nell&#39;archivio, è possibile selezionare **Convalida** nella finestra di dialogo **Convalida proprietà archivio privato**.
 
 L’app può essere installata e il file segreto può essere creato in qualsiasi ordine. Tuttavia, entrambi i passaggi devono essere completati prima di poter eseguire la convalida.
 
@@ -80,9 +80,9 @@ Fino alla convalida, l’archivio viene elencato con un’icona rossa, a indicar
 
 ![Archivio non convalidato](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
-Il **Tipo** questa colonna identifica facilmente gli archivi forniti dall’Adobe (**Adobe**) e i tuoi archivi GitHub (**GitHub**).
+La colonna **Tipo** identifica facilmente gli archivi forniti da Adobe (**Adobe**) e i tuoi archivi GitHub (**GitHub**).
 
-Se per completare la convalida dovrai tornare all’archivio in una data successiva, il **Archivi** , seleziona il pulsante con i puntini di sospensione nella riga che rappresenta l’archivio GitHub appena aggiunto e fai clic su **Convalida proprietà** dal menu a discesa.
+Se in un secondo momento devi tornare all&#39;archivio per completare la convalida, nella pagina **Archivi** seleziona il pulsante con i puntini di sospensione nella riga che rappresenta l&#39;archivio GitHub appena aggiunto e seleziona **Convalida proprietà** dal menu a discesa.
 
 ## Utilizzo di archivi privati con Cloud Manager {#using}
 
@@ -120,7 +120,7 @@ Gli archivi privati convalidati possono essere associati a [pipeline full-stack 
 
 Quando si utilizzano archivi privati con Cloud Manager si applicano determinate limitazioni.
 
-* Non è possibile mettere in pausa la convalida della richiesta di pull utilizzando il controllo GitHub di Cloud Manager.
+* Non è possibile sospendere la convalida della richiesta di pull utilizzando il controllo GitHub di Cloud Manager.
    * Se l’archivio GitHub viene convalidato in Cloud Manager, Cloud Manager tenterà sempre di convalidare le richieste pull create per quell’archivio.
 * Se l’app GitHub di Adobe viene rimossa dall’organizzazione GitHub, la funzione di convalida delle richieste pull verrà rimossa per tutti gli archivi.
 * Le pipeline a livello web e di configurazione non sono supportate con gli archivi privati.

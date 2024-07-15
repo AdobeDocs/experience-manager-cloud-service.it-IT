@@ -26,7 +26,7 @@ AEM include diversi componenti predefiniti che offrono funzionalità complete pe
 
 ## Utilizzo generale {#general-usage}
 
-I componenti sono disponibili nel **Componenti** del pannello laterale dell’editor di pagine quando [modifica di una pagina.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+I componenti sono disponibili nella scheda **Componenti** del pannello laterale dell&#39;editor pagina durante la [modifica di una pagina.](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 Puoi selezionare un componente e trascinarlo nella posizione desiderata sulla pagina. Puoi quindi modificarlo utilizzando:
 
@@ -34,7 +34,7 @@ Puoi selezionare un componente e trascinarlo nella posizione desiderata sulla pa
 * [Modifica contenuto](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [Modifica contenuto - Modalità a tutto schermo](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
-Per ulteriori informazioni sull’aggiunta di componenti a una pagina, consulta [Modifica del contenuto di una pagina.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+Per ulteriori informazioni sull&#39;aggiunta di componenti a una pagina, vedere [Modifica del contenuto di una pagina.](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 ## Panoramica di tutti i componenti {#overview-of-all-components}
 

@@ -1,5 +1,5 @@
 ---
-title: Configurazione dell’endpoint di Dispatcher con AEM Headless
+title: Configurazione dell’endpoint Dispatcher con AEM Headless
 description: Dispatcher è un livello di memorizzazione in cache e sicurezza davanti agli ambienti di pubblicazione Adobe Experience Manager. Diverse configurazioni vengono utilizzate per aprire gli endpoint GraphQL alle applicazioni headless.
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
@@ -12,7 +12,7 @@ ht-degree: 94%
 ---
 
 
-# Dispatcher: configurazione dell’endpoint con AEM Headless
+# Dispatcher - Configurazione endpoint con AEM headless
 
 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) è un livello di caching e sicurezza davanti agli ambienti di pubblicazione Adobe Experience Manager. Per impostazione predefinita, sono incluse diverse configurazioni per aprire gli endpoint GraphQL alle applicazioni headless.
 

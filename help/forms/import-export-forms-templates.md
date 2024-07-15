@@ -21,24 +21,24 @@ ht-degree: 3%
 
 # Importare o esportare risorse Adaptive Forms e AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
-È possibile spostare Forms adattivo e le risorse correlate, ad esempio temi di moduli adattivi, modello dati modulo (FDM), modelli di moduli adattivi, frammenti e PDF forms tra [!DNL AEM Forms] istanze.
+È possibile spostare tra [!DNL AEM Forms] istanze Forms adattivo e risorse correlate, ad esempio temi di moduli adattivi, modello dati modulo (FDM), modelli di moduli adattivi, frammenti e PDF forms.
 
 ## Scaricare Forms adattivo, PDF forms o risorse correlate {#download-forms-amp-documents-assets}
 
 Per scaricare i moduli o le risorse correlate:
 
-1. Accedi al tuo [!DNL Experience Manager Forms] dell&#39;istanza.
-1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Accedi all&#39;istanza [!DNL Experience Manager Forms].
+1. Selezionare **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 
    ![Seleziona Forms](/help/forms/assets/select-forms.png)
 
-1. Seleziona le risorse e fai clic su **[!UICONTROL Scarica]** nella barra superiore.
+1. Seleziona le risorse e fai clic sull&#39;icona **[!UICONTROL Scarica]** nella barra superiore.
 
    ![Scarica Forms](/help/forms/assets/download-form.png)
 
-   Quando si scarica il modulo, il **[!UICONTROL Scarica risorse]** viene visualizzata.
+   Quando si scarica il modulo, viene visualizzata la finestra di dialogo **[!UICONTROL Scarica risorse]**.
 
-   ![Scaricare le risorse dei moduli](/help/forms/assets/download-form-assets.png)
+   ![Scarica risorse moduli](/help/forms/assets/download-form-assets.png)
 
 1. Fai clic su **[!UICONTROL Scarica]**.
 
@@ -49,12 +49,12 @@ Le risorse selezionate vengono scaricate come archivio (file .zip).
 Puoi caricare i tipi di risorse supportati singolarmente o come archivio ZIP. Per un file ZIP, vengono visualizzati i percorsi relativi di tutte le risorse supportate. Le risorse non supportate nel file ZIP vengono ignorate e non elencate. Tuttavia, se l’archivio ZIP contiene solo le risorse non supportate, viene visualizzato un messaggio di errore al posto della finestra di dialogo a comparsa.
 Per caricare un modulo o una risorsa correlata:
 
-1. Accedi al tuo [!DNL Experience Manager Forms] dell&#39;istanza.
-1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Accedi all&#39;istanza [!DNL Experience Manager Forms].
+1. Selezionare **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 
    ![Seleziona Forms](/help/forms/assets/select-forms.png)
 
-1. Seleziona **[!UICONTROL Crea]** > **[!UICONTROL Caricamento file]**. Viene visualizzata una finestra di dialogo.
+1. Selezionare **[!UICONTROL Crea]** > **[!UICONTROL Caricamento file]**. Viene visualizzata una finestra di dialogo.
 
    ![Carica Forms](/help/forms/assets/form-upload.png)
 
@@ -66,25 +66,25 @@ Per caricare un modulo o una risorsa correlata:
 
    >[!NOTE]
    >
-   > Quando un nome è in conflitto con tipi di risorse diversi, il caricamento di un pacchetto non sostituisce la gerarchia di cartelle esistente. Ad esempio, in presenza di un modulo adattivo denominato &quot;Training&quot; (Apprendimento) nella posizione `/content/dam/formsanddocuments` su un server. Puoi scaricare il modulo adattivo e caricarlo su un altro server. Il secondo server dispone inoltre di una cartella denominata Training nella stessa posizione `/content/dam/formsanddocuments`. Caricamento non riuscito.
+   > Quando un nome è in conflitto con tipi di risorse diversi, il caricamento di un pacchetto non sostituisce la gerarchia di cartelle esistente. Ad esempio, se disponi di un modulo adattivo denominato &quot;Training&quot; nella posizione `/content/dam/formsanddocuments` su un server. Puoi scaricare il modulo adattivo e caricarlo su un altro server. Nel secondo server è presente anche una cartella denominata &quot;Training&quot; nella stessa posizione `/content/dam/formsanddocuments`. Caricamento non riuscito.
 
 ## Scaricare un tema
 
-Puoi esportare i temi in [!DNL AEM Forms] che puoi utilizzare in altri progetti o istanze. AEM consente di scaricare i temi come file zip, che puoi caricare sull’istanza.
+È possibile esportare i temi in [!DNL AEM Forms] che è possibile utilizzare in altri progetti o istanze. AEM consente di scaricare i temi come file zip, che puoi caricare sull’istanza.
 Per scaricare un tema:
 
-1. Accedi al tuo [!DNL Experience Manager Forms] Istanza Autore.
+1. Accedi all&#39;istanza Autore [!DNL Experience Manager Forms].
 1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Temi]**.
 
    ![Seleziona tema](/help/forms/assets/select-theme.png)
 
-1. Nella pagina Temi selezionare il tema e fare clic su **[!UICONTROL Scarica]** nella barra superiore.
+1. Nella pagina Temi, seleziona il tema e fai clic sull&#39;icona **[!UICONTROL Scarica]** nella barra superiore.
 
    ![Scarica tema](/help/forms/assets/download-theme.png)
 
-   Quando si scarica il tema, il **[!UICONTROL Scarica risorse]** viene visualizzata.
+   Quando si scarica il tema, viene visualizzata la finestra di dialogo **[!UICONTROL Scarica risorse]**.
 
-   ![Scaricare le risorse del tema](/help/forms/assets/download-theme-asset.png)
+   ![Scarica risorse tema](/help/forms/assets/download-theme-asset.png)
 
 1. Fai clic su **[!UICONTROL Scarica]**.
 
@@ -95,7 +95,7 @@ Le risorse selezionate vengono scaricate come archivio (file .zip).
 È possibile caricare e utilizzare i temi creati da altri utenti nei moduli.
 Per caricare un tema:
 
-1. Accedi al tuo [!DNL Experience Manager Forms] dell&#39;istanza.
+1. Accedi all&#39;istanza [!DNL Experience Manager Forms].
 1. Ad Experience Manager, passa a **[!UICONTROL Forms]** > **[!UICONTROL Temi]**.
 
    ![Seleziona tema](/help/forms/assets/select-theme.png)
@@ -104,7 +104,7 @@ Per caricare un tema:
 
    ![Carica tema](/help/forms/assets/theme-upload.png)
 
-1. Sfoglia e seleziona un pacchetto di temi sul computer e fai clic su **[!UICONTROL Carica]**. Il tema caricato diventa disponibile nella pagina Temi.
+1. Sfoglia e seleziona un pacchetto tema nel computer e fai clic su **[!UICONTROL Carica]**. Il tema caricato diventa disponibile nella pagina Temi.
 
 ## Utilizzare le cartelle per organizzare Forms adattivo, PDF forms e risorse correlate  {#folders-and-organizing-assets}
 
@@ -114,17 +114,17 @@ Puoi utilizzare le cartelle per organizzare e disporre le risorse. L’organizza
 
 Per creare una cartella:
 
-1. Accedi al tuo [!DNL Experience Manager Forms] dell&#39;istanza.
-1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Accedi all&#39;istanza [!DNL Experience Manager Forms].
+1. Selezionare **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 
    ![Seleziona modulo](/help/forms/assets/select-forms.png)
 
-1. Seleziona **[!UICONTROL Crea]** > **[!UICONTROL Cartella]**.
+1. Selezionare **[!UICONTROL Crea]** > **[!UICONTROL Cartella]**.
 
    ![Crea cartella](/help/forms/assets/create-folder.png)
 
-   Il **[!UICONTROL Aggiungi cartella]** viene visualizzata.
-1. Inserisci il **[!UICONTROL Titolo]**. Il **[!UICONTROL Nome]** si popola automaticamente durante la digitazione **[!UICONTROL Titolo]**.
+   Viene visualizzata la finestra di dialogo **[!UICONTROL Aggiungi cartella]**.
+1. Immetti il **[!UICONTROL Titolo]**. Il **[!UICONTROL Nome]** viene popolato automaticamente durante la digitazione del **[!UICONTROL Titolo]**.
 
    ![Aggiungi cartella](/help/forms/assets/add-folder.png)
 
@@ -136,7 +136,7 @@ Per creare una cartella:
 
 Nell’elenco delle risorse, nella posizione corrente viene visualizzata una nuova cartella con il titolo definito.
 
-Se esiste una cartella con il nome specificato, l’invio non riesce e viene visualizzato un errore. Puoi visualizzare il messaggio di errore passando il cursore sopra l’errore ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) accanto al campo del nome.
+Se esiste una cartella con il nome specificato, l’invio non riesce e viene visualizzato un errore. Puoi visualizzare il messaggio di errore passando il cursore sull&#39;icona di errore ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) visualizzata accanto al campo del nome.
 
 Puoi selezionare la cartella creata per entrarvi e creare risorse o cartelle al suo interno. Inoltre, puoi selezionare una cartella e scegliere di metterla in coda per il download, eliminarla o modificarne il nome.
 
@@ -146,9 +146,9 @@ Puoi utilizzare una risorsa esistente per creare rapidamente una risorsa con pro
 
 Per creare copie delle risorse:
 
-1. Accedi al tuo [!DNL Experience Manager Forms] dell&#39;istanza.
-1. Nella pagina relativa alle risorse, seleziona una o più risorse. L’interfaccia utente mostra **[!UICONTROL Copia]** icona.
-1. Seleziona **[!UICONTROL Copia]**. L’interfaccia utente mostra ![Icona Incolla](/help/forms/assets/Smock_Paste_18_N.svg) icona.
+1. Accedi all&#39;istanza [!DNL Experience Manager Forms].
+1. Nella pagina relativa alle risorse, seleziona una o più risorse. Nell&#39;interfaccia utente viene visualizzata l&#39;icona **[!UICONTROL Copia]**.
+1. Seleziona **[!UICONTROL Copia]**. Nell&#39;interfaccia utente viene visualizzata l&#39;icona ![Incolla](/help/forms/assets/Smock_Paste_18_N.svg).
 
    ![Copia risorsa](/help/forms/assets/copy-asset.png)
 
@@ -157,13 +157,13 @@ Per creare copie delle risorse:
 
    ![Incolla risorsa](/help/forms/assets/paste-asset.png)
 
-1. Il **[!UICONTROL Incolla]** viene visualizzata. Il sistema genera automaticamente nomi e titoli nelle nuove copie delle risorse, ma puoi modificare i titoli e i nomi delle risorse.
+1. Viene visualizzata la finestra di dialogo **[!UICONTROL Incolla]**. Il sistema genera automaticamente nomi e titoli nelle nuove copie delle risorse, ma puoi modificare i titoli e i nomi delle risorse.
 
-   Se copi e incolli le risorse nella stessa posizione, viene aggiunto il suffisso &quot;-CopyXX&quot; al nome esistente della `asset`. Se per la risorsa copiata non esisteva alcun titolo, il campo del titolo generato automaticamente rimane vuoto.
+   Se le risorse vengono copiate e incollate nello stesso punto, viene aggiunto il suffisso &quot;-CopyXX&quot; al nome esistente di `asset`. Se per la risorsa copiata non esisteva alcun titolo, il campo del titolo generato automaticamente rimane vuoto.
 
-   ![Incolla risorsa in una nuova posizione](/help/forms/assets/paste-click-asset.png)
+   ![Incolla risorsa nella nuova posizione](/help/forms/assets/paste-click-asset.png)
 
-   Se necessario, modificare il **[!UICONTROL Titolo]** con cui vuoi salvare la copia della risorsa. Il **[!UICONTROL Nome]** si popola automaticamente durante la digitazione **[!UICONTROL Titolo]**.
+   Se necessario, modifica il **[!UICONTROL Titolo]** con cui vuoi salvare la copia della risorsa. Il **[!UICONTROL Nome]** viene popolato automaticamente durante la digitazione del **[!UICONTROL Titolo]**.
 1. Seleziona **[!UICONTROL Incolla]**. Vengono create nuove copie delle risorse copiate.
 
 ## Ricerca {#search-forms}
@@ -172,8 +172,8 @@ Quando si dispone di un numero elevato di risorse, la ricerca della risorsa corr
 
 Per cercare la risorsa:
 
-1. Accedi al tuo [!DNL Experience Manager Forms] dell&#39;istanza.
-1. Fai clic su ![icona di ricerca](assets/folder-search-icon.svg) icona di ricerca.
+1. Accedi all&#39;istanza [!DNL Experience Manager Forms].
+1. Fare clic sull&#39;icona di ricerca ![icona di ricerca](assets/folder-search-icon.svg).
 
    ![Modulo di ricerca](/help/forms/assets/search-form.png)
 
@@ -183,7 +183,7 @@ Per cercare la risorsa:
 
    ![Cercare risorse](/help/forms/assets/search-bar.png)
 
-Per ulteriori informazioni e istruzioni sull’utilizzo della ricerca, consulta [Ricerca](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=it).
+Per ulteriori informazioni e istruzioni sull&#39;utilizzo della ricerca, vedere [Ricerca](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=it).
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

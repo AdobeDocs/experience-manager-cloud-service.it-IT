@@ -21,7 +21,7 @@ Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e co
 
 L’utente con le autorizzazioni necessarie può creare i seguenti tipi di ambienti (entro i limiti delle opzioni disponibili per il tenant specifico).
 
-* **Produzione e staging** - Gli ambienti di produzione e di staging sono disponibili in coppia e vengono utilizzati rispettivamente a scopo di produzione e test. Esecuzione di test di prestazioni e sicurezza nell&#39;ambiente stage. Ha le stesse dimensioni della produzione.
+* **Produzione + Staging** - Gli ambienti di produzione e staging sono disponibili in coppia e vengono utilizzati rispettivamente a scopo di produzione e test. Esecuzione di test di prestazioni e sicurezza nell&#39;ambiente stage. Ha le stesse dimensioni della produzione.
 
 * **Sviluppo** - È possibile creare un ambiente di sviluppo per scopi di sviluppo e test e associarlo solo a pipeline non di produzione.  Gli ambienti di sviluppo non hanno le stesse dimensioni di quelli di staging e produzione e non devono essere utilizzati per eseguire test di prestazioni e sicurezza.
 
@@ -40,13 +40,13 @@ Le funzionalità dei singoli ambienti dipendono dalle soluzioni abilitate nel [p
 
 ## Aggiunta di un ambiente {#adding-environments}
 
-Per aggiungere o modificare un ambiente, un utente deve essere membro di **Proprietario business** ruolo.
+Per aggiungere o modificare un ambiente, un utente deve essere membro del ruolo **Proprietario business**.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , tocca o fai clic sul programma per il quale desideri aggiungere un ambiente.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, tocca o fai clic sul programma per il quale desideri aggiungere un ambiente.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** console, fai clic su **Aggiungi ambiente** il **Ambienti** per aggiungere un ambiente.
+1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, fai clic su **Aggiungi ambiente** nella scheda **Ambienti** per aggiungere un ambiente.
 
    ![Scheda Ambienti](assets/no-environments.png)
 
@@ -91,9 +91,9 @@ Quando aggiungi un nuovo ambiente, puoi scegliere di configurare aree geografich
 1. Seleziona l’opzione **Aggiungi aree geografiche di pubblicazione aggiuntive**. In questo modo verrà visualizzato un nuovo menu a discesa **Aree geografiche di pubblicazione aggiuntive**.
 1. Nel menu a discesa **Aree geografiche di pubblicazione aggiuntive**, seleziona un’area geografica aggiuntiva.
 1. L’area geografica selezionata viene aggiunta sotto il menu a discesa per indicarne la selezione.
-   * Seleziona la `X` accanto all&#39;area selezionata, per poterla deselezionare.
+   * Selezionare `X` accanto all&#39;area selezionata per deselezionarla.
 1. Seleziona un’altra area geografica dal menu a discesa **Aree geografiche di pubblicazione aggiuntiva** per aggiungere un’altra area geografica.
-1. Seleziona **Salva** quando sei pronto per creare l’ambiente.
+1. Seleziona **Salva** quando sei pronto per creare il tuo ambiente.
 
 ![Selezionare più aree geografiche](assets/select-multiple-regions.png)
 
@@ -127,9 +127,9 @@ Se desideri effettuare il provisioning di [rete avanzata](/help/security/configu
 
 ## Dettagli dell’ambiente {#viewing-environment}
 
-Dalla sezione **Panoramica** , è possibile accedere ai dettagli di un ambiente in due modi.
+Dalla pagina **Panoramica** è possibile accedere ai dettagli di un ambiente in due modi.
 
-1. Dalla sezione **Panoramica** , fare clic su **Ambienti** nel pannello di navigazione laterale.
+1. Dalla pagina **Panoramica**, fai clic sulla scheda **Ambienti** nel pannello di navigazione laterale.
 
    ![Scheda Ambienti](assets/environments-tab2.png)
 
@@ -181,26 +181,26 @@ Dopo l’attivazione puoi pubblicare il contenuto nel servizio di anteprima tram
 
 ### Stato di altre aree geografiche di Publish {#additional-region-status}
 
-Se hai attivato altre aree di pubblicazione, puoi controllarne lo stato da **Ambienti** Card.
+Se hai attivato altre aree di pubblicazione, puoi controllarne lo stato dalla scheda **Ambienti**.
 
-1. Il giorno **Panoramica** pagina, individua la **Ambienti** Card.
+1. Nella pagina **Panoramica**, individua la scheda **Ambienti**.
 
-1. Il giorno **Ambienti** scheda, il **Stato** La colonna riflette eventuali problemi relativi alle aree di pubblicazione aggiuntive configurate. Fai clic su **Info** per i dettagli delle aree geografiche.
+1. Nella scheda **Ambienti**, la colonna **Stato** verrà visualizzata in caso di problemi con le aree di pubblicazione aggiuntive configurate. Fai clic sull&#39;icona **Info** per i dettagli delle aree geografiche.
 
-   ![Informazioni aggiuntive sullo stato delle aree di pubblicazione nella scheda Ambienti](assets/additional-publish-region-status-environments-card.png)
+   ![Ulteriori informazioni sullo stato delle aree di pubblicazione nella scheda Ambienti](assets/additional-publish-region-status-environments-card.png)
 
-In alternativa, è possibile accedere alle stesse informazioni dal **Ambienti** scheda.
+In alternativa, è possibile accedere alle stesse informazioni dalla scheda **Ambienti**.
 
-1. Il giorno **Panoramica** , seleziona la **Ambienti** scheda.
+1. Nella pagina **Panoramica**, seleziona la scheda **Ambienti**.
 
-1. Il giorno **Ambienti** , seleziona l’ambiente in cui desideri eseguire la query nel pannello di navigazione a sinistra.
+1. Nella scheda **Ambienti**, seleziona l&#39;ambiente in cui desideri eseguire la query nel pannello di navigazione a sinistra.
 
 1. Una volta selezionato un ambiente:
 
-   * Il **Informazioni sull&#39;ambiente** mostra quali aree sono configurate per l’ambiente selezionato.
-   * Il **Stato** colonna del **Segmenti di ambiente** La tabella indica se ci sono problemi con le aree di pubblicazione aggiuntive configurate. Passa il cursore del mouse sullo stato per visualizzare i dettagli di eventuali problemi.
+   * Nella tabella **Informazioni ambiente** verranno visualizzate le aree configurate per l&#39;ambiente selezionato.
+   * La colonna **Stato** della tabella **Segmenti di ambiente** rifletterà in caso di problemi con le aree di pubblicazione aggiuntive configurate. Passa il cursore del mouse sullo stato per visualizzare i dettagli di eventuali problemi.
 
-   ![Informazioni aggiuntive sullo stato delle aree di pubblicazione nella scheda Ambienti](assets/additional-publish-region-status-environments-tab.png)
+   ![Ulteriori informazioni sullo stato delle aree di pubblicazione nella scheda Ambienti](assets/additional-publish-region-status-environments-tab.png)
 
 In caso di problemi segnalati con altre aree geografiche di pubblicazione:
 
@@ -209,7 +209,7 @@ In caso di problemi segnalati con altre aree geografiche di pubblicazione:
 
 Il tempo che si attende dal ripristino del sistema prima di intraprendere ulteriori azioni dipende dall&#39;impatto che il guasto di quell&#39;area ha sui sistemi.
 
-In ogni caso, [il traffico viene sempre indirizzato all&#39;altra area più vicina in linea.](/help/operations/additional-publish-regions.md) Se continui a visualizzare dei problemi, contatta l’Assistenza clienti di Adobe.
+In ogni caso, il traffico [ viene sempre indirizzato all&#39;altra area più vicina che è online.](/help/operations/additional-publish-regions.md) Se continui a visualizzare i problemi, contatta l&#39;Assistenza clienti Adobe.
 
 ## Aggiornamento degli ambienti {#updating-dev-environment}
 
@@ -233,9 +233,9 @@ Il processo di aggiornamento è quindi articolato in due fasi:
 ### Aggiornamento degli ambienti {#updating-your-environments}
 
 >[!NOTE]
-> A partire dal 2024, le istanze di sviluppo e alcuni programmi sandbox sono già aggiornati automaticamente, pertanto non è necessario gestirne manualmente gli aggiornamenti. In seguito a questa transizione, l’opzione di aggiornamento manuale dell’ambiente per le istanze di sviluppo potrebbe non essere disponibile per _alcuni_ dei programmi.
+> A partire dal 2024, le istanze di sviluppo e alcuni programmi sandbox sono già aggiornati automaticamente, pertanto non è necessario gestirne manualmente gli aggiornamenti. In seguito a questa transizione, l&#39;opzione di aggiornamento manuale dell&#39;ambiente per le istanze di sviluppo potrebbe non essere disponibile per _alcuni_ programmi.
 
-Il **Aggiorna** è disponibile dall&#39;opzione **Ambienti** per alcuni ambienti di sviluppo e ambienti nei programmi sandbox, fai clic sul pulsante con i puntini di sospensione corrispondente all’ambiente.
+Per alcuni ambienti di sviluppo e ambienti nei programmi sandbox, facendo clic sul pulsante con i puntini di sospensione nella scheda **Ambienti** è disponibile l&#39;opzione **Aggiorna**.
 
 ![Opzione Aggiorna dalla scheda Ambienti](assets/environ-update2.png)
 
@@ -243,7 +243,7 @@ L’opzione è disponibile anche facendo clic sulla scheda **Ambienti** del prog
 
 ![Opzione Aggiorna dalla scheda Ambienti](assets/environ-update3.png)
 
-Un utente con **Responsabile dell’implementazione** o **Proprietario business** Il ruolo può utilizzare questa opzione per aggiornare alla versione più recente dell’AEM la pipeline associata a questo ambiente.
+Un utente con il ruolo **Responsabile dell&#39;implementazione** o **Proprietario business** può utilizzare questa opzione per aggiornare la pipeline associata a questo ambiente alla versione più recente dell&#39;AEM.
 
 Dopo aver aggiornato la pipeline alla versione di AEM più recente disponibile al pubblico, viene richiesto di eseguire la pipeline associata per distribuire la suddetta versione nell’ambiente.
 
@@ -253,11 +253,11 @@ Il comportamento dell’opzione **Aggiorna** varia a seconda della configurazion
 
 * Se la pipeline è già stata aggiornata, l’opzione **Aggiorna** richiede all’utente di eseguire la pipeline.
 * Se l’aggiornamento della pipeline è già in corso, l’opzione **Aggiorna** informa l’utente circa la presenza di un aggiornamento in corso.
-* Se non esiste una pipeline appropriata, il **Aggiorna** richiede all&#39;utente di crearne una.
+* Se non esiste una pipeline appropriata, l&#39;opzione **Aggiorna** richiede di crearne una.
 
 ## Eliminazione degli ambienti di sviluppo {#deleting-environment}
 
-Un utente con **Responsabile dell’implementazione** o **Proprietario business** Il ruolo è in grado di eliminare un ambiente di sviluppo.
+Un utente con il ruolo **Responsabile dell&#39;implementazione** o **Proprietario business** è in grado di eliminare un ambiente di sviluppo.
 
 Dalla schermata **Panoramica** del programma, accedi alla scheda **Ambienti** e fai clic sul pulsante con i puntini di sospensione corrispondente all’ambiente che desideri eliminare.
 
@@ -296,7 +296,7 @@ Questa opzione è disponibile anche nella scheda **Ambiente** della finestra **P
 
 ## Accesso locale {#login-locally}
 
-Seleziona **Accesso locale** dal menu con i puntini di sospensione dell’ambiente in **Ambienti** per accedere localmente a Adobe Experience Manager.
+Seleziona **Accesso locale** dal menu con i puntini di sospensione dell&#39;ambiente nella scheda **Ambienti** per accedere localmente a Adobe Experience Manager.
 
 ![Accesso locale](assets/environ-login-locally.png)
 
@@ -310,7 +310,7 @@ I nomi di dominio personalizzati sono supportati in Cloud Manager per i programm
 
 >[!TIP]
 >
->Per ulteriori informazioni, consulta il documento [Introduzione ai nomi di dominio personalizzati.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+>Per ulteriori informazioni, vedere il documento [Introduzione ai nomi di dominio personalizzati.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 ## Gestione degli elenchi IP consentiti {#manage-ip-allow-lists}
 
@@ -324,4 +324,4 @@ L’applicazione di un inserisco nell&#39;elenco Consentiti di consente di assoc
 
 >[!TIP]
 >
->Per ulteriori informazioni, consulta il documento [Introduzione agli Elenchi consentiti IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>Per ulteriori informazioni, vedere il documento [Introduzione agli Elenchi consentiti IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)

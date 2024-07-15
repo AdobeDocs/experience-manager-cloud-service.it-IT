@@ -13,22 +13,22 @@ ht-degree: 3%
 
 # Panoramica {#overview-ct}
 
-Il Content Transformer (CT) è uno strumento sviluppato da Adobe che può essere utilizzato per rilevare e correggere automaticamente i problemi relativi al contenuto segnalati da [Best Practices Analyzer (BPA)](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) prima della migrazione dei contenuti dall’implementazione AEM corrente (on-premise o Managed Services) all’AEM as a Cloud Service.
+Il Content Transformer (CT) è uno strumento sviluppato da Adobe che può essere utilizzato per rilevare e correggere automaticamente i problemi relativi al contenuto segnalati da [Best Practices Analyzer (BPA)](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) prima di migrare il contenuto dall&#39;implementazione AEM corrente (on-premise o Managed Services) ad AEM as a Cloud Service.
 
-Il Content Transformer può aiutare a risolvere i problemi che rientrano nelle seguenti categorie [Categorie di pattern BPA](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=it) (mostrato nella tabella seguente) consentendo agli utenti di eseguire azioni in blocco, ad esempio spostare o eliminare. Questo consente di ridurre notevolmente i tempi e la complessità associata a un progetto di migrazione.
+Il Content Transformer può aiutare a risolvere i problemi che rientrano nelle seguenti [categorie di pattern BPA](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=it) (mostrate nella tabella seguente) consentendo agli utenti di eseguire azioni in blocco, ad esempio spostare o eliminare. Questo consente di ridurre notevolmente i tempi e la complessità associata a un progetto di migrazione.
 
 ## Categorie di modelli coperte da Content Transformer e soluzioni suggerite {#pattern-categories-and-benefits}
 
-| Codice pattern | Tipo/sottotipo sospetto | Potenziale correzione prima della migrazione del contenuto a AEM as a Cloud Service |
+| Codice pattern | Tipo/sottotipo sospetto | Potenziale correzione prima della migrazione dei contenuti ad AEM as a Cloud Service |
 |--------------|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| ACV | missing.jcrcontent <br> missing.original.rendition <br> metadata.descendants.viola | Sposta queste risorse in una posizione diversa o eliminale per assicurarti che non vengano migrate all’as a Cloud Service AEM. |
-| CAV | content.area.violation | Sposta temporaneamente i percorsi in `/etc/packages/content-transformation/paths` per garantire che non vengano trasferiti a AEM as a Cloud Service. |
+| ACV | missing.jcrcontent <br> missing.original.rendition <br> metadata.descendants.viola | Sposta queste risorse in una posizione diversa o eliminale per assicurarti che non vengano migrate ad AEM as a Cloud Service. |
+| CAV | content.area.violation | Sposta temporaneamente i percorsi in `/etc/packages/content-transformation/paths` per assicurarti che non vengano migrati ad AEM as a Cloud Service. |
 | DOPI | deprecated.ordered.index | Rimuovi gli indici obsoleti. |
-| OAUI | non.migrated.oauth.users | Rimuovi questi utenti per assicurarti che non vengano trasferiti ad AEM as a Cloud Service. |
-| PCX | page.complex.medium <br> page.complex.high | Elimina le pagine o gli elementi figlio o spostali in un percorso diverso per assicurarti che non vengano migrati all’AEM as a Cloud Service. |
-| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | Rimuovi gli agenti di replica creati. <br> OPPURE <br> Rimuovi le proprietà modificate/aggiunte. |
+| OAUI | non.migrated.oauth.users | Rimuovi questi utenti per assicurarti che non vengano migrati ad AEM as a Cloud Service. |
+| PCX | page.complex.medium <br> page.complex.high | Elimina le pagine o gli elementi figlio o spostali in un percorso diverso per assicurarti che non vengano migrati ad AEM as a Cloud Service. |
+| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | Rimuovi gli agenti di replica creati. <br> O <br> Rimuovi le proprietà modificate/aggiunte. |
 | URS | clientlibs.location <br> file.location <br> node.location <br> workflow.location | Passa alla posizione corretta per evitare problemi durante la migrazione. |
-| URS | node.size | Spostare temporaneamente i nodi in`/etc/packages/content-transformation/paths` per garantire che non vengano trasferiti a AEM as a Cloud Service. |
+| URS | node.size | Sposta temporaneamente i nodi in `/etc/packages/content-transformation/paths` per assicurarti che non vengano migrati ad AEM as a Cloud Service. |
 
 ## Vantaggi offerti da Content Transformer {#benefits}
 

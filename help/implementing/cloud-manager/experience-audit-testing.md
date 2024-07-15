@@ -30,7 +30,7 @@ L’audit dell’esperienza è una funzione disponibile nelle pipeline di produz
 
 1. non introducano regressioni.
 
-L’audit dell’esperienza in Cloud Manager assicura che l’esperienza dell’utente sul sito sia degli standard più elevati.
+La funzione Audit dell’esperienza in Cloud Manager garantisce che l’esperienza dell’utente sul sito sia conforme agli standard più elevati.
 
 I risultati dell’audit sono informativi e consentono agli utenti con ruolo Responsabile dell’implementazione di visualizzare i punteggi e cosa è cambiato tra i punteggi correnti e precedenti. Questa informazione è utile per determinare l’eventuale introduzione di una regressione con la distribuzione corrente.
 
@@ -47,7 +47,7 @@ L’audit dell’esperienza è disponibile per Cloud Manager:
 * Per impostazione predefinita, le pipeline di produzione dei siti.
 * Pipeline di sviluppo front-end, facoltativamente.
 
-Consulta la [Sezione Configurazione](#configuration) per ulteriori informazioni su come configurare il controllo di audit per gli ambienti opzionali.
+Per ulteriori informazioni su come configurare il controllo di audit per gli ambienti facoltativi, vedere la [sezione Configurazione](#configuration).
 
 ## Configurazione {#configuration}
 
@@ -57,25 +57,25 @@ Puoi configurare le pagine incluse nell’audit dell’esperienza al momento del
 
 1. A seconda del tipo di pipeline che desideri configurare, segui le istruzioni riportate di seguito:
 
-   * Aggiungi un nuovo [pipeline di produzione,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) se desideri definire i percorsi che devono essere valutati dal controllo di audit.
-   * Aggiungi un nuovo [pipeline non di produzione,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) se desideri abilitare il controllo di audit su una pipeline front-end o di sviluppo full-stack.
-   * Oppure puoi [modificare una pipeline esistente,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e aggiorna le opzioni esistenti.
+   * Aggiungi una nuova [pipeline di produzione,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) se desideri definire i percorsi da valutare dal controllo di audit.
+   * Aggiungi una nuova [pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) se desideri abilitare il controllo di audit su una pipeline front-end o di sviluppo full-stack.
+   * Oppure puoi [modificare una pipeline esistente,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e aggiornare le opzioni esistenti.
 
-1. Se stai aggiungendo o modificando una pipeline non di produzione per la quale desideri utilizzare l’audit dell’esperienza, seleziona la **Audit dell’esperienza** casella di controllo sulla **Codice sorgente** scheda.
+1. Se stai aggiungendo o modificando una pipeline non di produzione per la quale desideri utilizzare l&#39;audit dell&#39;esperienza, devi selezionare la casella di controllo **Audit dell&#39;esperienza** nella scheda **Codice Source**.
 
-   ![Abilitazione dell’audit dell’esperienza](assets/experience-audit-enable.jpg)
+   ![Abilitazione dell&#39;audit dell&#39;esperienza](assets/experience-audit-enable.jpg)
 
    * Questo è necessario solo per le pipeline non di produzione.
-   * Il **Audit dell’esperienza** viene visualizzata quando la casella di controllo è selezionata.
+   * La scheda **Audit dell&#39;esperienza** viene visualizzata quando la casella di controllo è selezionata.
 
-1. Sia per le pipeline di produzione che per quelle non di produzione, definisci i percorsi da includere nell’audit dell’esperienza sulla **Audit dell’esperienza** scheda.
+1. Sia per le pipeline di produzione che per quelle non di produzione, puoi definire i percorsi da includere nell’audit dell’esperienza nella scheda **Audit dell’esperienza**.
 
-   * I percorsi delle pagine devono iniziare con `/` e sono relativi al tuo sito.
-   * Ad esempio, se il sito è `wknd.site` e desidera includere `https://wknd.site/us/en/about-us.html` nell’audit dell’esperienza, immetti il percorso `/us/en/about-us.html`.
+   * I percorsi delle pagine devono iniziare con `/` e sono relativi al sito.
+   * Ad esempio, se il sito è `wknd.site` e si desidera includere `https://wknd.site/us/en/about-us.html` nell&#39;audit dell&#39;esperienza, immettere il percorso `/us/en/about-us.html`.
 
    ![Definizione di un percorso per l’audit dell’esperienza](assets/experience-audit-add-page.png)
 
-1. Tocca o fai clic su **Aggiungi pagina** e il percorso viene completato automaticamente con l’indirizzo dell’ambiente e aggiunto alla tabella dei percorsi.
+1. Tocca o fai clic su **Aggiungi pagina** e il percorso viene completato automaticamente con l&#39;indirizzo dell&#39;ambiente e aggiunto alla tabella dei percorsi.
 
    ![Salvataggio del percorso nella tabella](assets/experience-audit-page-added.png)
 
@@ -103,11 +103,11 @@ Il punteggio a livello aggregato considera il punteggio medio delle pagine inclu
 
 La metrica relativa al cambiamento può presentare uno dei seguenti valori.
 
-* **Valore positivo** : rispetto all’ultima esecuzione della pipeline di produzione, nel test selezionato le pagine sono migliorate.
+* **Valore positivo** - Le pagine sono migliorate nel test selezionato dall&#39;ultima esecuzione della pipeline di produzione.
 
-* **Valore negativo** - rispetto all’ultima esecuzione della pipeline di produzione, nel test selezionato le pagine hanno subito una regressione.
+* **Valore negativo** - le pagine sono regredite nel test selezionato dall&#39;ultima esecuzione della pipeline di produzione.
 
-* **Nessuna modifica** - Le pagine hanno ottenuto lo stesso punteggio dall’ultima esecuzione della pipeline di produzione.
+* **Nessuna modifica** - Le pagine hanno ottenuto lo stesso punteggio dall&#39;ultima esecuzione della pipeline di produzione.
 
 * **N/D**: non è disponibile alcun punteggio precedente con cui confrontare il dato.
 

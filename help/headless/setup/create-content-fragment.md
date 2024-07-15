@@ -27,9 +27,9 @@ I Frammenti di contenuto contengono contenuto strutturato e possono essere conse
 
 Gli autori dei contenuti creano un certo numero di Frammenti di contenuto per rappresentare il contenuto creato. Questa sarà l’attività principale in AEM. Ai fini di questa guida introduttiva, ne creeremo uno.
 
-1. Accedi a AEM as a Cloud Service e dal menu principale seleziona **Navigazione** > **Frammenti di contenuto**.
+1. Accedi ad AEM as a Cloud Service e dal menu principale seleziona **Navigazione** > **Frammenti di contenuto**.
 
-1. Seleziona la [cartella creata in precedenza.](create-assets-folder.md)
+1. Seleziona la cartella [ creata in precedenza.](create-assets-folder.md)
 1. Seleziona **Crea**.
 1. La creazione di un frammento di contenuto viene presentata come una finestra di dialogo.
 Seleziona la posizione e il modello da utilizzare per creare il frammento di contenuto.
@@ -41,7 +41,7 @@ Seleziona la posizione e il modello da utilizzare per creare il frammento di con
 
    ![Finestra di dialogo Crea nuovo frammento di contenuto](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. Seleziona **Crea** o  **Crea e apri**.
+1. Selezionare **Crea** o **Crea e apri**.
 
 I Frammenti di contenuto possono fare riferimento ad altri Frammenti di contenuto, consentendo se necessario una struttura di contenuto nidificata.
 

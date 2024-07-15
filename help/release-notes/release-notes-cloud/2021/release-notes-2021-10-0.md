@@ -30,11 +30,11 @@ La seguente versione (2021.11.0) è del venerdì 2 dicembre 2021.
 
 ## Video sulla versione {#release-video}
 
-Dai un&#39;occhiata al [Panoramica sulla versione di ottobre 2021](https://video.tv.adobe.com/v/338253) video per un riepilogo delle funzioni aggiunte.
+Dai un&#39;occhiata al video [Panoramica sulla versione di ottobre 2021](https://video.tv.adobe.com/v/338253) per un riepilogo delle funzioni aggiunte.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nuova funzione in [!DNL Sites] {#sites-features}
+### Nuova funzionalità in [!DNL Sites] {#sites-features}
 
 * I modelli per frammenti di contenuto ora vengono impostati automaticamente in stato di sola lettura una volta pubblicati, per evitare di interrompere accidentalmente le query API live dopo la ripubblicazione di un modello modificato. Gli utenti ricevono un avviso quando tentano di modificare un modello pubblicato. La modifica è possibile dopo aver accettato l’avviso.
 
@@ -42,11 +42,11 @@ Dai un&#39;occhiata al [Panoramica sulla versione di ottobre 2021](https://video
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] ora supporta la generazione automatica di trascrizioni di testo dalle risorse audio e video supportate, utilizzando un connettore integrato per [!DNL Azure Media Services]. Il [tipi di file supportati](/help/assets/file-format-support.md#audio-video-transcription-formats) vengono trascritti automaticamente e il testo viene memorizzato in formato WebVTT. I sottotitoli WebVTT vengono utilizzati per ricerche, sottotitoli o traduzioni più efficaci. Inoltre, la funzione migliora l’accessibilità, la reperibilità e la localizzazione delle risorse.
+* [!DNL Experience Manager] ora supporta la generazione automatica di trascrizioni di testo dalle risorse audio e video supportate, utilizzando un connettore incorporato per [!DNL Azure Media Services]. I [tipi di file supportati](/help/assets/file-format-support.md#audio-video-transcription-formats) vengono trascritti automaticamente e il testo viene archiviato in formato WebVTT. I sottotitoli WebVTT vengono utilizzati per ricerche, sottotitoli o traduzioni più efficaci. Inoltre, la funzione migliora l’accessibilità, la reperibilità e la localizzazione delle risorse.
 
-### Nuova funzione in [!DNL Assets] canale prerelease {#assets-prerelease-features}
+### Nuova funzionalità nel canale prerelease [!DNL Assets] {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Ritaglio avanzato immagine e Campione ora si basano sui servizi Sensei più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali vengono mantenute durante la rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
+* Ritaglio e campione avanzato immagine [!DNL Dynamic Media] è ora basato sui servizi Sensei più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali vengono mantenute durante la rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
 
 * I tag avanzati vengono applicati automaticamente alle risorse utilizzando i microservizi per le risorse, anziché Smart Content Services. Il modello sottostante viene aggiornato per migliorare i risultati dei tag e ridurre i pregiudizi. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -60,7 +60,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Novità in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics per Forms adattivo**: ora puoi acquisire e tenere traccia del comportamento degli utenti connessi e non connessi (anonimi) tramite Adobe Analytics for Adaptive Forms per raccogliere informazioni approfondite. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza utente.
+* **Analytics for Adaptive Forms**: è ora possibile acquisire e tenere traccia del comportamento sia degli utenti connessi che di quelli non connessi (anonimi) tramite Adobe Analytics for Adaptive Forms per raccogliere informazioni sugli utenti. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza utente.
 
 ### Nuove funzioni disponibili nel canale pre-release di [!DNL Forms] {#prerelease-features-forms-oct-2021}
 

@@ -22,19 +22,19 @@ La Creazione guidata copia in lingua è un’esperienza guidata per la creazione
 
 >[!NOTE]
 >
->L&#39;utente deve essere membro di `project-administrators` per creare una copia in lingua di un sito.
+>L&#39;utente deve essere membro del gruppo `project-administrators` per creare una copia in lingua di un sito.
 
 Per accedere alla creazione guidata:
 
-1. Nella console Sites, seleziona una pagina e fai clic su **Crea** e seleziona **Copia lingua**.
+1. Nella console Sites, seleziona una pagina, fai clic su **Crea** e seleziona **Copia lingua**.
 
    ![Crea copia in lingua dalla creazione guidata](../assets/language-copy-wizard.png)
 
-1. La procedura guidata si apre su **Seleziona origine** passaggio che consente di aggiungere/rimuovere pagine. È inoltre possibile includere o escludere le pagine secondarie. Seleziona le pagine da includere e seleziona **Successivo**.
+1. Viene visualizzata la procedura guidata per il passaggio **Seleziona Source** che consente di aggiungere/rimuovere pagine. È inoltre possibile includere o escludere le pagine secondarie. Selezionare le pagine da includere e selezionare **Avanti**.
 
    ![Aggiunta di pagine con la creazione guidata](../assets/language-copy-wizard-add-pages.png)
 
-1. Il **Configura** passaggio della procedura guidata consente di aggiungere/rimuovere lingue e selezionare il metodo di traduzione. Seleziona **Avanti**.
+1. Il passaggio **Configura** della procedura guidata consente di aggiungere/rimuovere le lingue e selezionare il metodo di traduzione. Seleziona **Avanti**.
 
    ![Configura il passaggio della creazione guidata](../assets/language-copy-wizard-configure.png)
 
@@ -42,7 +42,7 @@ Per accedere alla creazione guidata:
    >
    >Per impostazione predefinita, è disponibile una sola impostazione di traduzione. Per poter selezionare altre impostazioni, devi prima configurare le configurazioni cloud. Consulta [Configurazione del framework di integrazione della traduzione](integration-framework.md).
 
-1. In **Traduci** passaggio della procedura guidata puoi scegliere se creare solo la struttura, creare un progetto di traduzione o aggiungere elementi a un progetto di traduzione esistente.
+1. Nel passaggio **Traduci** della procedura guidata puoi scegliere se creare solo la struttura, creare un progetto di traduzione o aggiungere elementi a un progetto di traduzione esistente.
 
    >[!NOTE]
    >

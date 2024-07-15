@@ -23,20 +23,20 @@ che interagisce con
 
 Per informazioni correlate sull’assegnazione tag:
 
-* Consulta [Utilizzo dei tag](/help/sites-cloud/authoring/sites-console/tags.md) per informazioni sull’assegnazione tag ai contenuti come autore di contenuti.
+* Per informazioni sull&#39;assegnazione di tag ai contenuti come autore di contenuti, vedere [Utilizzo dei tag](/help/sites-cloud/authoring/sites-console/tags.md).
 * Per informazioni sulla creazione e la gestione dei tag e sulla modalità di applicazione dei tag di contenuto, consulta Amministrazione dei tag .
 
 ## Panoramica dell’API di assegnazione tag {#overview-of-the-tagging-api}
 
-L&#39;attuazione del [framework di assegnazione tag](tagging-framework.md) in AEM consente la gestione di tag e contenuti tag utilizzando l’API JCR. `TagManager` garantisce che i tag immessi come valori sul `cq:tags` la proprietà di array di stringhe non è duplicata, rimuove `TagID`s che rimanda a tag e aggiornamenti non esistenti `TagID`s per i tag spostati o uniti. `TagManager` utilizza un listener di osservazione JCR che ripristina eventuali modifiche non corrette. Le classi principali sono [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html) pacchetto:
+L&#39;implementazione del [framework dei tag](tagging-framework.md) in AEM consente la gestione di tag e contenuti di tag tramite l&#39;API JCR. `TagManager` garantisce che i tag immessi come valori nella proprietà dell&#39;array di stringhe `cq:tags` non siano duplicati. Rimuove `TagID` che puntano a tag non esistenti e aggiorna `TagID` per i tag spostati o uniti. `TagManager` utilizza un listener di osservazione JCR che ripristina eventuali modifiche non corrette. Le classi principali si trovano nel pacchetto [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html):
 
-* `JcrTagManagerFactory` - restituisce un’implementazione basata su JCR di un `TagManager`. È l’implementazione di riferimento dell’API di assegnazione tag.
-* `TagManager` : consente di risolvere e creare tag in base a percorsi e nomi.
-* `Tag` : definisce l’oggetto tag.
+* `JcrTagManagerFactory` - restituisce un&#39;implementazione basata su JCR di un `TagManager`. È l’implementazione di riferimento dell’API di assegnazione tag.
+* `TagManager` - consente di risolvere e creare tag in base a percorsi e nomi.
+* `Tag` - definisce l&#39;oggetto tag.
 
 ### Ottenere un TagManager basato su JCR {#getting-a-jcr-based-tagmanager}
 
-Per recuperare un `TagManager` istanza, è necessario disporre di un JCR `Session` e chiamare `getTagManager(Session)`:
+Per recuperare un&#39;istanza `TagManager`, è necessario disporre di un JCR `Session` e chiamare `getTagManager(Session)`:
 
 ```java
 @Reference
@@ -45,7 +45,7 @@ JcrTagManagerFactory jcrTagManagerFactory;
 TagManager tagManager = jcrTagManagerFactory.getTagManager(session);
 ```
 
-Nel tipico contesto Sling puoi anche adattarti a una `TagManager` dal `ResourceResolver`:
+Nel contesto Sling tipico è inoltre possibile adattarsi a un `TagManager` da `ResourceResolver`:
 
 ```java
 TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
@@ -53,7 +53,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Recupero di un oggetto Tag {#retrieving-a-tag-object}
 
-A `Tag` possono essere recuperati tramite `TagManager`, risolvendo un tag esistente o creandone uno:
+È possibile recuperare `Tag` tramite `TagManager`, risolvendo un tag esistente o creandone uno:
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -61,13 +61,13 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-Per l’implementazione basata su JCR, che mappa `Tags` su JCR `Nodes`, puoi utilizzare direttamente Sling `adaptTo` se si dispone della risorsa (ad esempio, `/content/cq:tags/default/my/tag`):
+Per l&#39;implementazione basata su JCR, che mappa `Tags` su JCR `Nodes`, puoi utilizzare direttamente il meccanismo `adaptTo` di Sling se disponi della risorsa (ad esempio, `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
 ```
 
-Mentre un tag può essere convertito solo *da* una risorsa (non un nodo), un tag può essere convertito *a* sia un nodo che una risorsa:
+Mentre un tag può essere convertito solo *da* risorsa (non nodo), un tag può essere convertito *in* sia nodo che risorsa:
 
 ```java
 Node node = tag.adaptTo(Node.class);
@@ -76,7 +76,7 @@ Resource node = tag.adaptTo(Resource.class);
 
 >[!NOTE]
 >
->Adattamento diretto da `Node` a `Tag` non è possibile, perché `Node` non implementa Sling `Adaptable.adaptTo(Class)` metodo.
+>L&#39;adattamento diretto da `Node` a `Tag` non è possibile perché `Node` non implementa il metodo Sling `Adaptable.adaptTo(Class)`.
 
 ### Recupero e impostazione dei tag {#getting-and-setting-tags}
 
@@ -103,7 +103,7 @@ long count = tag.getCount();
 
 >[!NOTE]
 >
->Il valore `RangeIterator` da utilizzare è:
+>`RangeIterator` valido da utilizzare:
 >
 >`com.day.cq.commons.RangeIterator`
 
@@ -115,7 +115,7 @@ tagManager.deleteTag(tag);
 
 ### Replica dei tag {#replicating-tags}
 
-È possibile utilizzare il servizio di replica (`Replicator`) con tag perché i tag sono di tipo `nt:hierarchyNode`:
+È possibile utilizzare il servizio di replica (`Replicator`) con i tag perché i tag sono di tipo `nt:hierarchyNode`:
 
 ```java
 replicator.replicate(session, replicationActionType, tagPath);
@@ -123,7 +123,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Tag Garbage Collector {#the-tag-garbage-collector}
 
-Il garbage collector dei tag è un servizio in background che consente di pulire i tag nascosti e non utilizzati. Di seguito sono riportati i tag nascosti e non utilizzati `/content/cq:tags` che hanno un `cq:movedTo` e non vengono utilizzati in un nodo di contenuto. Hanno un conteggio di zero. Utilizzando questo processo di eliminazione lenta, il nodo del contenuto (ovvero `cq:tags` ) non deve essere aggiornata come parte dell’operazione di spostamento o unione. I riferimenti in `cq:tags` vengono aggiornate automaticamente quando `cq:tags` viene aggiornata, ad esempio, tramite la finestra di dialogo proprietà pagina.
+Il garbage collector dei tag è un servizio in background che consente di pulire i tag nascosti e non utilizzati. I tag nascosti e inutilizzati sono tag al di sotto di `/content/cq:tags` che hanno una proprietà `cq:movedTo` e non sono utilizzati in un nodo di contenuto. Hanno un conteggio di zero. Utilizzando questo processo di eliminazione lenta, non è necessario aggiornare il nodo del contenuto (ovvero la proprietà `cq:tags`) come parte dell&#39;operazione di spostamento o unione. I riferimenti nella proprietà `cq:tags` vengono aggiornati automaticamente quando la proprietà `cq:tags` viene aggiornata, ad esempio tramite la finestra di dialogo delle proprietà della pagina.
 
 Il garbage collector dei tag viene eseguito per impostazione predefinita una volta al giorno. Può essere configurato in:
 
@@ -133,16 +133,16 @@ Il garbage collector dei tag viene eseguito per impostazione predefinita una vol
 
 La ricerca dei tag e l’elenco dei tag funzionano come segue:
 
-* La ricerca di `TagID` cerca i tag che hanno la proprietà `cq:movedTo` imposta su `TagID` e segue attraverso `cq:movedTo` `TagID`s.
-* La ricerca del titolo del tag consente di cercare solo i tag che non hanno un `cq:movedTo` proprietà.
+* La ricerca di `TagID` cerca i tag con la proprietà `cq:movedTo` impostata su `TagID` e segue i `cq:movedTo` `TagID`.
+* La ricerca del titolo del tag esegue la ricerca solo nei tag che non hanno una proprietà `cq:movedTo`.
 
 ## Tag in lingue diverse {#tags-in-different-languages}
 
-Un tag `title` possono essere definiti in diverse lingue. Al nodo del tag viene quindi aggiunta una proprietà sensibile alla lingua. Questa proprietà ha il formato `jcr:title.<locale>`ad esempio: `jcr:title.fr` per la traduzione francese. `<locale>` deve essere una stringa internazionale ISO minuscola e utilizzare il carattere di sottolineatura (`_`) invece del trattino (`-`), ad esempio: `de_ch`.
+È possibile definire un tag `title` in lingue diverse. Al nodo del tag viene quindi aggiunta una proprietà sensibile alla lingua. Questa proprietà ha il formato `jcr:title.<locale>`, ad esempio `jcr:title.fr` per la traduzione francese. `<locale>` deve essere una stringa delle impostazioni internazionali ISO minuscole e utilizzare il carattere di sottolineatura (`_`) invece del trattino (`-`), ad esempio: `de_ch`.
 
-Ad esempio, quando **Animali** viene aggiunto al tag **Prodotti** pagina, il valore `stockphotography:animals` viene aggiunto alla proprietà `cq:tags` del nodo `/content/wknd/en/products/jcr:content`. Viene fatto riferimento alla traduzione dal nodo del tag.
+Ad esempio, quando il tag **Animals** viene aggiunto alla pagina **Products**, il valore `stockphotography:animals` viene aggiunto alla proprietà `cq:tags` del nodo `/content/wknd/en/products/jcr:content`. Viene fatto riferimento alla traduzione dal nodo del tag.
 
-L’API lato server ha localizzato `title`Metodi relativi a:
+L&#39;API lato server ha localizzato `title` metodi correlati:
 
 * [`com.day.cq.tagging.Tag`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
@@ -157,17 +157,17 @@ L’API lato server ha localizzato `title`Metodi relativi a:
 
 In AEM, la lingua può essere ottenuta o dalla lingua della pagina o dalla lingua dell’utente.
 
-Per i tag, la localizzazione dipende dal contesto come tag `titles` può essere visualizzata nella lingua della pagina, nella lingua dell’utente o in qualsiasi altra lingua.
+Per i tag, la localizzazione dipende dal contesto, in quanto il tag `titles` può essere visualizzato nella lingua della pagina, nella lingua dell&#39;utente o in qualsiasi altra lingua.
 
 ### Aggiunta di una nuova lingua alla finestra di dialogo Modifica tag {#adding-a-new-language-to-the-edit-tag-dialog}
 
-Nella procedura seguente viene descritto come aggiungere una nuova lingua, ad esempio il finlandese, al **Modifica tag** finestra di dialogo:
+La procedura seguente descrive come aggiungere una nuova lingua (ad esempio, finlandese) alla finestra di dialogo **Modifica tag**:
 
-1. In entrata **CRXDE**, modifica la proprietà con più valori `languages` del nodo `/content/cq:tags`.
-1. Aggiungi `fi_fi`, che rappresenta la lingua finlandese, e salva le modifiche.
+1. In **CRXDE**, modificare la proprietà multivalore `languages` del nodo `/content/cq:tags`.
+1. Aggiungere `fi_fi`, che rappresenta la lingua finlandese, e salvare le modifiche.
 
-Il finlandese è ora disponibile nella finestra di dialogo dei tag delle proprietà della pagina e nel **Modifica tag** durante la modifica di un tag in **Assegnazione tag** console.
+Il finlandese è ora disponibile nella finestra di dialogo dei tag delle proprietà della pagina e nella finestra di dialogo **Modifica tag** quando si modifica un tag nella console **Assegnazione tag**.
 
 >[!NOTE]
 >
->La nuova lingua deve essere una delle lingue riconosciute dall&#39;AEM. In altre parole, deve essere disponibile come nodo sotto `/libs/wcm/core/resources/languages`.
+>La nuova lingua deve essere una delle lingue riconosciute dall&#39;AEM. Deve quindi essere disponibile come nodo sotto `/libs/wcm/core/resources/languages`.

@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Live Search] Pagina di elenco dei prodotti Componente CIF'
-description: Utilizzo dei componenti CIF per abilitare [!DNL Live Search] Componente della pagina di elenco dei prodotti su un sito AEM
+title: Componente CIF della pagina dell'elenco prodotti '[!DNL Live Search]'
+description: Utilizzo di componenti CIF per abilitare [!DNL Live Search] il componente Pagina di elenco prodotti in un sito AEM
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
@@ -11,21 +11,21 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Componente CIF {#live-search-cif-component}
+# Componente CIF [!DNL Live Search] {#live-search-cif-component}
 
 Live Search per Adobe Commerce offre un’esperienza di ricerca rapida, rilevante e intuitiva senza costi aggiuntivi. La Live Search fornita da Adobe Sensei utilizza algoritmi di intelligenza artificiale e machine learning per eseguire un’analisi approfondita dei dati aggregati dei visitatori. Quando vengono combinati con il catalogo Adobe Commerce, questi dati generano esperienze di acquisto pertinenti e personalizzate.
 
-Questo argomento descrive come utilizzare un componente CIF dell’AEM per implementare [!DNL Live Search] Widget della pagina di elenco dei prodotti (PLP) nel sito AEM.
+In questo argomento viene descritto come utilizzare un componente CIF dell&#39;AEM per implementare il widget Pagina elenco prodotti (PLP) [!DNL Live Search] nel sito AEM.
 
 ## Prerequisiti {#prerequisites}
 
-In questo argomento si presuppone che si disponga di un [Ambiente AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it) configurazione.
+In questo argomento si presuppone che sia stato configurato un [ambiente AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it) locale.
 
-Il componente PLP richiede [[!DNL Live Search] Componente CIF Popover](live-search-popover.md) da installare. Il widget PLP richiede una variabile di sessione del browser generata dal popover.
+Il componente PLP richiede l&#39;installazione del [[!DNL Live Search] componente CIF Popover](live-search-popover.md). Il widget PLP richiede una variabile di sessione del browser generata dal popover.
 
 ## Aggiorna Compositore {#update-composer}
 
-Aggiungi moduli di eventi a `ui.frontend/package.json`.
+Aggiungi moduli evento a `ui.frontend/package.json`.
 
 Alla riga 27, modificare:
 
@@ -54,11 +54,11 @@ a:
 
 ## Modifiche ai file {#files-changes}
 
-Per abilitare è necessario aggiornare più file [!DNL Live Search] funzionalità. Modificare i seguenti file. I numeri di riga possono essere leggermente diversi da quelli visualizzati.
+Per abilitare la funzionalità [!DNL Live Search] è necessario aggiornare più file. Modificare i seguenti file. I numeri di riga possono essere leggermente diversi da quelli visualizzati.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-cif/.content.xml
 
-  Aggiungi `core.cif.productlist.v1` al `embed` linea.
+  Aggiungi `core.cif.productlist.v1` alla riga `embed`.
 
   ```
   embed="[core.cif.components.common,core.cif.components.product.v3,core.cif.components.productcarousel.v1,core.cif.components.productcollection.v2,core.cif.components.productteaser.v1,core.cif.components.searchbar.v2,core.cif.components.header.v1,core.cif.components.carousel.v1,core.cif.components.categorycarousel.v1,core.cif.components.featuredcategorylist.v1,core.cif.components.storefront-events.v1,core.cif.components.extensions.product-recs.storefront-events-collector.v1,core.wcm.components.commons.site.link,core.cif.productlist.v1]"
@@ -89,7 +89,7 @@ Per abilitare è necessario aggiornare più file [!DNL Live Search] funzionalit�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/css/productlist.css
 
-  Creare il file `productlist.css`
+  Crea il file `productlist.css`
 
   ```css
     /* #search-plp-root */
@@ -319,7 +319,7 @@ Per abilitare è necessario aggiornare più file [!DNL Live Search] funzionalit�
 
 * ui.frontend/src/main/components/App/App.js
 
-  Modifica `App.js` alla riga 47, appena sopra la `../../site/main.scss`:
+  Modifica `App.js` alla riga 47, appena sopra `../../site/main.scss`:
 
   ```javascript
   import '@adobe/magento-storefront-event-collector';
@@ -327,7 +327,7 @@ Per abilitare è necessario aggiornare più file [!DNL Live Search] funzionalit�
 
 * ui.tests/test-module/specs/venia/productlist-dialog.js
 
-  Modifica `productlist-dialog.js` e modifica `describe` a `describe.skip` alla riga 20:
+  Modifica `productlist-dialog.js` e cambia `describe` in `describe.skip` alla riga 20:
 
   ```javascript
   describe.skip('Product List Component Dialog', function () {
@@ -337,14 +337,14 @@ Per abilitare è necessario aggiornare più file [!DNL Live Search] funzionalit�
 
 In alcune categorie potrebbe essere preferibile utilizzare la categoria o la pagina di catalogo predefinita, anziché il widget PLP. In AEM, queste pagine delle categorie devono essere configurate manualmente.
 
-1. Dalla pagina Autore, seleziona un modello per pagina categoria. _Venia Store - Home_ > _Pagina catalogo_ > _Venia Store - Pagina categoria_ e seleziona &quot;Acquista l’aspetto&quot; o crea un nuovo modello di pagina.
+1. Dalla pagina Autore, seleziona un modello per pagina categoria. _Venia Store - Home_ > _Pagina catalogo_ > _Venia Store - Pagina categoria_ e seleziona &quot;Acquista l&#39;aspetto&quot; o crea un nuovo modello di pagina.
 
 ![Seleziona il modello](../assets/cif-widget-1.jpg)
 
-1. Fai clic su _Proprietà_ e seleziona la _Commerce_ scheda.
+1. Fai clic sulla sezione _Proprietà_ e seleziona la scheda _Commerce_.
 
 ![Scegli proprietà](../assets/cif-widget-2.jpg)
 
 1. Scegliere la categoria da visualizzare con il modello di pagina categoria selezionato.
 
-![Seleziona la categoria](../assets/cif-widget-3.jpg)
+![Selezionare la categoria](../assets/cif-widget-3.jpg)

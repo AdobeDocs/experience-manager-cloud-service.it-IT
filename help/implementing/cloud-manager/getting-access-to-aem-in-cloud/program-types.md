@@ -56,7 +56,7 @@ L’unica differenza consiste nel fatto che l’archivio Git remoto fa parte di 
 
 ## Tipi di programmi {#program-types}
 
-Un utente può creare un **produzione** programma o un **sandbox** programma.
+Un utente può creare un programma **production** o un programma **sandbox**.
 
 * Un **programma di produzione** viene creato per abilitare il traffico in tempo reale per il sito.
    * Consulta [Introduzione ai programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) per ulteriori dettagli.

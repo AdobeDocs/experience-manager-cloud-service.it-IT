@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 7%
+source-wordcount: '956'
+ht-degree: 6%
 
 ---
 
@@ -166,7 +166,7 @@ Di seguito è riportato un esempio di schema XML.
 >* Uso dell&#39;iniziale maiuscola nel nome dell&#39;elemento
 >* Inserimento di uno spazio vuoto nei limiti della Camel Case.
 >
->Ad esempio, se aggiungi il `userFirstName` elemento dello schema, la didascalia generata nel modulo adattivo è `User First Name`.
+>Ad esempio, se si aggiunge l&#39;elemento dello schema `userFirstName`, la didascalia generata nel modulo adattivo è `User First Name`.
 
 ## Limitare valori accettabili per un componente Modulo adattivo {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -284,16 +284,16 @@ Per limitare i valori accettabili per un componente Modulo adattivo, è possibil
 
 ## Domande frequenti {#frequently-asked-questions}
 
-**In Content Finder ho una struttura lunga e complessa. Come posso trovare un elemento specifico?**
+**Ho una struttura lunga e complessa in Content Finder. Come trovare un elemento specifico?**
 
 Sono disponibili due opzioni:
 
 * Scorri nella struttura ad albero
 * Utilizzare la casella di ricerca per trovare un elemento
 
-**Che cos&#39;è un bindRef?**
+**Cos&#39;è un bindRef?**
 
-A `bindRef` è la connessione tra un componente Modulo adattivo e un elemento o un attributo dello schema. Determina la `XPath` dove il valore acquisito da questo componente o campo è disponibile nel codice XML di output. A `bindRef`viene utilizzato anche quando si precompila un valore di campo da XML precompilato (precompilato).
+`bindRef` è la connessione tra un componente Modulo adattivo e un elemento o un attributo dello schema. Determina `XPath` dove il valore acquisito da questo componente o campo è disponibile nell&#39;XML di output. `bindRef` viene utilizzato anche quando si precompila un valore di campo da XML precompilato (precompilato).
 
 **Perché non è possibile trascinare singoli elementi di una sottomaschera (struttura generata da qualsiasi tipo complesso) per sottomaschere ripetibili (i valori minOccours o maxOccurs sono maggiori di 1)?**
 
@@ -301,4 +301,4 @@ In una sottomaschera ripetibile è necessario utilizzare la sottomaschera Comple
 
 >[!MORELIKETHIS]
 >
->* [Progettazione di uno schema JSON per un modulo adattivo](/help/forms/adaptive-form-json-schema-form-model.md)
+>* [Progetta schema JSON per un modulo adattivo](/help/forms/adaptive-form-json-schema-form-model.md)

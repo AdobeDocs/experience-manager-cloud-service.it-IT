@@ -18,15 +18,15 @@ ht-degree: 1%
 
 >[!TIP]
 >
->Se non sai ancora come utilizzare la pipeline front-end e i vantaggi che può apportare, consulta la [Percorso di Creazione Rapida dei Siti](/help/journey-sites/quick-site/overview.md) un esempio di come distribuire rapidamente un nuovo sito e personalizzarne il tema in modo completamente indipendente dallo sviluppo back-end.
+>Se non sai ancora come utilizzare la pipeline front-end e i vantaggi che può offrire, consulta il [Percorso per la creazione rapida di siti](/help/journey-sites/quick-site/overview.md) per vedere come distribuire rapidamente un nuovo sito e personalizzarne il tema in modo completamente indipendente dallo sviluppo back-end.
 
 ## Contratto di sviluppo front-end {#front-end-build-contract}
 
-Simile a [ambiente di build full stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) la pipeline front-end ha un proprio ambiente. Gli sviluppatori possono utilizzare questa pipeline con una certa flessibilità, purché venga rispettato il seguente contratto di sviluppo front-end.
+Analogamente all&#39;ambiente di build [full stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) la pipeline front-end dispone di un proprio ambiente. Gli sviluppatori possono utilizzare questa pipeline con una certa flessibilità, purché venga rispettato il seguente contratto di sviluppo front-end.
 
-La pipeline front-end richiede che il progetto Node.js front-end utilizzi il `build` direttiva script per generare la build distribuita. Questo perché Cloud Manager utilizza il comando `npm run build` per generare il progetto distribuibile per la build front-end.
+La pipeline front-end richiede che il progetto Node.js front-end utilizzi la direttiva script `build` per generare la build distribuita. Questo perché Cloud Manager utilizza il comando `npm run build` per generare il progetto distribuibile per la build front-end.
 
-Il contenuto risultante del `dist` Cartella è ciò che viene distribuito da Cloud Manager, che funge da file statici. Questi file sono ospitati esternamente all’AEM, ma sono resi disponibili tramite un `/content/...` URL nell’ambiente distribuito.
+Il contenuto risultante della cartella `dist` è ciò che viene distribuito da Cloud Manager, che funge da file statici. Questi file sono ospitati esternamente all&#39;AEM, ma sono resi disponibili tramite un URL `/content/...` nell&#39;ambiente distribuito.
 
 ## Versioni dei nodi {#node-versions}
 
@@ -37,17 +37,17 @@ L’ambiente di sviluppo front-end supporta le seguenti versioni di Node.js.
 * 16
 * 18
 
-È possibile utilizzare `NODE_VERSION` [variabile di ambiente](/help/implementing/cloud-manager/environment-variables.md) per impostare la versione desiderata.
+È possibile utilizzare la `NODE_VERSION` [variabile di ambiente](/help/implementing/cloud-manager/environment-variables.md) per impostare la versione desiderata.
 
-## Sorgente unica di verità {#single-source-of-truth}
+## Source unico della verità {#single-source-of-truth}
 
-Una buona pratica generale è quella di mantenere un&#39;unica fonte di verità per ciò che viene implementato nell&#39;AEM. L’obiettivo di Cloud Manager è quello di rendere ovvia questa singola fonte di verità. Tuttavia, poiché la pipeline front-end consente di disaccoppiare la posizione di parti del codice, una parte di responsabilità aggiuntiva risiede nella corretta configurazione delle pipeline front-end. Fai molta attenzione a non creare più pipeline front-end da distribuire sullo stesso sito nello stesso ambiente.
+Una buona pratica generale è quella di mantenere un&#39;unica fonte di verità per ciò che viene implementato nell&#39;AEM. L&#39;obiettivo di Cloud Manager è quello di rendere ovvia quell&#39;unica fonte di verità. Tuttavia, poiché la pipeline front-end consente di disaccoppiare la posizione di parti del codice, una parte di responsabilità aggiuntiva risiede nella corretta configurazione delle pipeline front-end. Fai molta attenzione a non creare più pipeline front-end da distribuire sullo stesso sito nello stesso ambiente.
 
 Per questo motivo, e in particolare quando vengono create diverse pipeline front-end, si consiglia di mantenere una convenzione di denominazione sistematica come la seguente:
 
-* Il nome del modulo front-end, definito da `name` proprietà del `package.json` , deve contenere il nome del sito a cui si applica. Ad esempio, per un sito situato in `/content/wknd`, il nome del modulo front-end sarà simile a `wknd-theme`.
+* Il nome del modulo front-end, definito dalla proprietà `name` del file `package.json`, deve contenere il nome del sito a cui si applica. Ad esempio, per un sito situato in `/content/wknd`, il nome del modulo front-end sarà simile a `wknd-theme`.
 * Quando un modulo front-end condivide lo stesso archivio Git con altri moduli, il nome della relativa cartella deve essere uguale o contenere lo stesso nome del modulo front-end. Ad esempio, se il modulo front-end è denominato `wknd-theme`, il nome della cartella di inclusione sarà simile a `wknd-theme-sources`.
-* Il nome della pipeline front-end di Cloud Manager deve contenere anche il nome del modulo front-end e aggiungere l’ambiente in cui viene distribuito (produzione o sviluppo). Ad esempio, per il modulo front-end denominato `wknd-theme`, la pipeline potrebbe essere denominata in un modo simile a `wknd-theme-prod`.
+* Il nome della pipeline front-end di Cloud Manager deve contenere anche il nome del modulo front-end e aggiungere l’ambiente in cui viene distribuito (produzione o sviluppo). Ad esempio, per il modulo front-end denominato `wknd-theme`, la pipeline potrebbe essere denominata ad esempio `wknd-theme-prod`.
 
 Tale convenzione dovrebbe prevenire efficacemente i seguenti errori di distribuzione:
 
@@ -69,13 +69,13 @@ I passaggi seguenti sono generalmente consigliati quando è necessario apportare
       1. URL: il team front-end deve conoscere l’URL di tale ambiente di sviluppo.
       1. ACL: il team front-end deve disporre di un utente AEM locale con autorizzazioni simili a &quot;Collaboratori&quot;.
       1. Git: il team front-end deve disporre di una posizione Git separata per il modulo front-end che esegue il targeting specifico dell’ambiente di sviluppo.
-         * Una pratica comune consiste nel creare un’ `dev` in modo che le modifiche apportate per l’ambiente di sviluppo possano essere facilmente unite nuovamente nel `main` ramo da distribuire nell’ambiente di produzione.
-      1. Pipeline: il team front-end deve disporre di una pipeline front-end da distribuire nell’ambiente di sviluppo. Tale pipeline distribuirebbe il modulo front-end che si trova in genere nel `dev` diramazione, come descritto al punto precedente.
+         * Di solito si crea un ramo `dev`, in modo che le modifiche apportate per l&#39;ambiente di sviluppo possano essere facilmente unite nuovamente al ramo `main` da distribuire nell&#39;ambiente di produzione.
+      1. Pipeline: il team front-end deve disporre di una pipeline front-end da distribuire nell’ambiente di sviluppo. La pipeline distribuisce il modulo front-end che si trova in genere nel ramo `dev`, come descritto nel punto precedente.
 1. Il team front-end fa quindi in modo che il codice CSS e JS funzioni sia con il vecchio che con il nuovo output.
    1. Come di consueto, per sviluppare localmente:
-      1. Il `npx aem-site-theme-builder proxy` Il comando eseguito all’interno del modulo front-end avvia un server proxy che richiede il contenuto da un ambiente AEM, sostituendo i file CSS e JS del modulo front-end con quelli locali `dist` cartella.
-      1. Configurazione di `AEM_URL` variabile nel nascosto `.env` consente di controllare da quale ambiente AEM il server proxy locale utilizza i contenuti.
-      1. Modifica del valore di questo `AEM_URL` consente quindi di passare dagli ambienti di produzione a quelli di sviluppo per regolare CSS e JS in modo che siano adatti a entrambi gli ambienti.
+      1. Il comando `npx aem-site-theme-builder proxy` eseguito nel modulo front-end avvia un server proxy che richiede il contenuto da un ambiente AEM, sostituendo i file CSS e JS del modulo front-end con quelli della cartella locale `dist`.
+      1. La configurazione della variabile `AEM_URL` nel file nascosto `.env` consente di controllare da quale ambiente AEM il server proxy locale utilizza il contenuto.
+      1. La modifica del valore di `AEM_URL` consente quindi di passare dagli ambienti di produzione a quelli di sviluppo per adeguare CSS e JS in modo che siano adatti a entrambi gli ambienti.
       1. Deve funzionare con l’ambiente di sviluppo che esegue il rendering del nuovo output e con l’ambiente di produzione che esegue il rendering del vecchio output.
    1. Il lavoro front-end viene completato quando il modulo front-end aggiornato funziona per entrambi gli ambienti e viene distribuito in entrambi.
 1. Il team back-end può quindi aggiornare l’ambiente di produzione distribuendo il codice che esegue il rendering del nuovo output HTML e/o JSON tramite la pipeline full stack.
@@ -84,4 +84,4 @@ I passaggi seguenti sono generalmente consigliati quando è necessario apportare
 ## Risorse aggiuntive {#additional-resources}
 
 * [Temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md) - Scopri come utilizzare i temi del sito AEM per personalizzare lo stile e la progettazione del sito.
-* [Generatore di temi del sito AEM](https://github.com/adobe/aem-site-theme-builder) : in Adobe è disponibile un generatore di temi del sito AEM come set di script per la creazione di nuovi temi.
+* [Generatore di temi del sito AEM](https://github.com/adobe/aem-site-theme-builder) - L&#39;Adobe fornisce un generatore di temi del sito AEM come set di script per la creazione di nuovi temi del sito.

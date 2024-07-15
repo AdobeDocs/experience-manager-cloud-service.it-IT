@@ -43,7 +43,7 @@ Per visualizzare i dettagli di un componente specifico, seleziona la risorsa ric
    * Visualizzare le proprietà generali del componente.
       * Visualizzare come è stata definita l’icona o l’abbreviazione per il componente. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
       * Facendo clic sull’origine dell’icona si aprirà quel componente.
-   * Visualizza **Tipo di risorsa** e **Super Type risorsa** (se definito) per il componente.
+   * Visualizzare il **Tipo risorsa** e il **Super Tipo risorsa** (se definito) per il componente.
       * Facendo clic sul Super Type della risorsa si aprirà quel componente.
 
   >[!NOTE]

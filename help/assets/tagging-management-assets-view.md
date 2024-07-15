@@ -185,7 +185,7 @@ Puoi anche bloccare i tag avanzati per una singola risorsa. Passa ai dettagli di
 
 ### Esportare un elenco Bloccati{#export-blocklist}
 
-La vista Risorse consente di esportare i tag bloccati elencati in formato CSV. Per esportare l’elenco Bloccati, effettua le seguenti operazioni:
+La vista Assets consente di esportare i tag bloccati elencati in formato CSV. Per esportare l’elenco Bloccati, effettua le seguenti operazioni:
 
 1. Fai clic su **[!UICONTROL Esporta come CSV]**.
 1. Scegli la posizione appropriata per salvare il file CSV. Puoi anche rinominare il file in base alle esigenze.
@@ -193,7 +193,7 @@ La vista Risorse consente di esportare i tag bloccati elencati in formato CSV. P
 
 ### Importare un elenco Bloccati{#import-blocklist}
 
-La vista Risorse consente di importare tag bloccati da un’origine dati (CSV). Per importare l’elenco Bloccati, effettua le seguenti operazioni:
+La vista Assets consente di importare tag bloccati da un’origine dati (CSV). Per importare l’elenco Bloccati, effettua le seguenti operazioni:
 
 1. Fai clic su **[!UICONTROL Importa come CSV]**.
 1. Scegli il file CSV dal tuo dispositivo. Fai clic su **[!UICONTROL Seleziona un file]** per passare al file dal dispositivo. In alternativa, puoi trascinare e rilasciare il file CSV dal dispositivo.

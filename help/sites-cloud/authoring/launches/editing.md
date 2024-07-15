@@ -21,7 +21,7 @@ Quando è stato creato un lancio per una pagina (o un set di pagine) puoi modifi
 1. Accedi a [Lancio da Riferimenti (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) per visualizzare le azioni disponibili.
 1. Seleziona **Vai alla pagina** per aprire la pagina su cui effettuare la modfica.
 
-Quando modifichi la pagina, nella barra degli strumenti superiore viene visualizzata un’indicazione insieme al simbolo **Esci** e **Naviga** opzioni:
+Durante la modifica della pagina, nella barra degli strumenti superiore viene visualizzata un&#39;indicazione insieme alle opzioni **Esci** e **Naviga**:
 
 ![Lascia e naviga all’avvio dall’Editor pagina](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

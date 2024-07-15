@@ -23,6 +23,6 @@ ht-degree: 0%
 
 Il singolo sistema CIF di Adobe Experience Manager (AEM) può essere utilizzato per connettersi a più sistemi di e-commerce di Adobe o terze parti per supportare distribuzioni avanzate. Ciò è utile nei casi di vetrine multi-area e multi-brand in cui il singolo livello di gestione delle esperienze semplifica il processo di creazione e distribuzione dei contenuti commerce. Questo consente inoltre alle organizzazioni di accelerare il time-to-value (TTV) e di ridurre il costo totale di proprietà.
 
-Una procedura video dettagliata che illustra in dettaglio come impostare l’AEM con più ambienti di e-commerce Adobi. La gestione multisito (MSM) dell&#39;AEM include funzioni come Live Copy e copia in lingua. Queste funzioni vengono utilizzate con la Commerce integration framework (CIF) per creare una vetrina con più aree geografiche __Vetrine di negozi della regione UE__ connetti a __ADOBE COMMERCE UE__ e __Vetrina regione Nord America (NA)__ connetti a __NA ADOBE COMMERCE__ di rete.
+Una procedura video dettagliata che illustra in dettaglio come impostare l’AEM con più ambienti di e-commerce Adobi. La gestione multisito (MSM) dell&#39;AEM include funzioni come Live Copy e copia in lingua. Queste funzionalità vengono utilizzate con Commerce integration framework (CIF) per creare una vetrina con più aree, in cui __vetrine con area geografica UE__ si connettono a __EU Adobe Commerce__ e __North American (NA) region storefront__ si connettono a __NA Adobe Commerce__.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346811/?quality=12&learn=on)

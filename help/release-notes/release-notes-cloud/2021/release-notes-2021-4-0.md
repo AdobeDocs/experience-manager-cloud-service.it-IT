@@ -27,11 +27,11 @@ La sezione seguente illustra le note generali sulla versione per la versione cor
 La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 è il 6 maggio 2021.
 La seguente versione (2021.5.0) sarà del 27 maggio 2021.
 
-## Fondazione AEM as a Cloud Service{#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
 
 ### Novità {#what-is-new-foundation}
 
-* [Flusso di lavoro per la pubblicazione della struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow) - Un nuovo modello e passaggio di flusso di lavoro offre prestazioni migliori quando si pubblicano gerarchie profonde di contenuti.
+* [Flusso di lavoro Struttura contenuto Publish](/help/operations/replication.md#publish-content-tree-workflow) - Un nuovo modello e un nuovo passaggio di flusso di lavoro offre prestazioni migliori quando si pubblicano gerarchie profonde di contenuti.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -59,17 +59,17 @@ La seguente versione (2021.5.0) sarà del 27 maggio 2021.
 
 * Quando scarichi una risorsa tramite l’opzione di condivisione collegamenti, ora puoi scegliere di scaricare o meno le rappresentazioni. In precedenza, venivano scaricati tutti i rendering delle risorse.
 
-* Gli amministratori possono configurare [!DNL Experience Manager] per eliminare l’origine delle risorse dopo l’inserimento di una risorsa in blocco. Consulta [inserimento in blocco delle risorse](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Gli amministratori possono configurare [!DNL Experience Manager] per eliminare l&#39;origine delle risorse dopo l&#39;inserimento di risorse in blocco. Consulta [inserimento in blocco di risorse](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Quando si esegue una verifica stato per importare risorse in blocco, Experience Manager fornisce ora ulteriori informazioni sui motivi degli errori. Consulta [inserimento in blocco delle risorse](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Quando si esegue una verifica stato per importare risorse in blocco, Experience Manager fornisce ora ulteriori informazioni sui motivi degli errori. Consulta [inserimento in blocco di risorse](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Quando importano risorse utilizzando lo strumento di importazione in blocco, gli amministratori ora hanno la possibilità di eliminare i file di origine una volta completata l’importazione. Consulta [inserimento in blocco delle risorse](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Quando importano risorse utilizzando lo strumento di importazione in blocco, gli amministratori ora hanno la possibilità di eliminare i file di origine una volta completata l’importazione. Consulta [inserimento in blocco di risorse](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Quando si modifica uno schema di metadati, un nuovo campo di selezione del percorso principale consente agli amministratori di effettuare la selezione in modo rapido e semplice, riducendo in tal modo il tempo di configurazione.
 
 * Quando si modifica uno schema di metadati, viene aggiunto un tipo di dati che fornisce un’area di testo in formato libero nell’editor di metadati. Gli utenti possono utilizzare questa area di testo per immettere testo in formato libero come metadati di una risorsa. Consulta [editor schema metadati](/help/assets/metadata-schemas.md).
 
-* I metadati di molte risorse possono essere importati in blocco utilizzando un file CSV ed esportati in un file CSV. Il formato di data predefinito è ora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Gli utenti possono utilizzare un formato diverso aggiornando l’intestazione della colonna. Ad esempio, aggiungi `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` come intestazione di colonna nel file CSV al posto della parola `Date`.
+* I metadati di molte risorse possono essere importati in blocco utilizzando un file CSV ed esportati in un file CSV. Il formato di data predefinito è ora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Gli utenti possono utilizzare un formato diverso aggiornando l’intestazione della colonna. Aggiungere ad esempio `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` come intestazione di colonna nel file CSV al posto della parola `Date`.
 
 * Quando esplori le risorse nella vista a colonne, un indicatore visivo mostra lo stato approvato o rifiutato di ciascuna risorsa.
 

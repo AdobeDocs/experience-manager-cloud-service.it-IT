@@ -17,19 +17,19 @@ Questa guida aiuta a identificare le aree da aggiornare per la migrazione di Exp
 
 ## Componente aggiuntivo CIF
 
-Ad Experience Manager, as a Cloud Service, il componente aggiuntivo CIF è l’unica soluzione di integrazione supportata per le soluzioni commerce di Adobe Commerce e di terze parti. Il componente aggiuntivo CIF viene distribuito automaticamente ai clienti con Experience Manager as a Cloud Service, non è necessaria alcuna distribuzione manuale. Consulta [Guida introduttiva di AEM Commerce as a Cloud Service](getting-started.md).
+Ad Experience Manager as a Cloud Service, il componente aggiuntivo CIF è l’unica soluzione di integrazione supportata per le soluzioni commerce di Adobe Commerce e di terze parti. Il componente aggiuntivo CIF viene distribuito automaticamente ai clienti con Experience Manager as a Cloud Service, non è necessaria alcuna distribuzione manuale. Consulta [Guida introduttiva di AEM Commerce as a Cloud Service](getting-started.md).
 
-Per supportare i progetti che utilizzano l’Adobe CIF, fornisci [Componenti core dell’CIF dell’AEM](https://github.com/adobe/aem-core-cif-components).
+Per supportare i progetti che distribuiscono l&#39;Adobe CIF, fornire [Componenti core CIF AEM](https://github.com/adobe/aem-core-cif-components).
 
 Il componente aggiuntivo CIF è disponibile anche per AEM 6.5 tramite il [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html). È compatibile e fornisce le stesse funzionalità del componente aggiuntivo CIF per Experience Manager as a Cloud Service, senza richiedere alcuna correzione.
 
-Classic CIF con le sue dipendenze non è più disponibile. Codice che si basa su questa versione dell’CIF utilizzando `com.adobe.cq.commerce.api` Le API Java devono essere adattate al componente aggiuntivo CIF e ai relativi principi.
+Classic CIF con le sue dipendenze non è più disponibile. Il codice che si basa su questa versione dell&#39;CIF con `com.adobe.cq.commerce.api` API Java deve essere adattato al componente aggiuntivo CIF e ai relativi principi.
 
 Il connettore CIF precedentemente disponibile non può più essere installato. Il codice che si basa su questo connettore deve essere adattato al componente aggiuntivo CIF e ai suoi principi.
 
 ## Struttura del progetto
 
-Scopri [Struttura dei progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) e le caratteristiche dell&#39;AEM as a Cloud Service. Adatta la configurazione del progetto al layout di AEM as a Cloud Service.
+Scopri la [struttura del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) e le caratteristiche di AEM as a Cloud Service. Adatta la configurazione del progetto al layout di AEM as a Cloud Service.
 Rispetto alle implementazioni dell’AEM 6.5, le differenze principali sono due:
 
 * Il bundle OSGI client GraphQL **non deve** più essere incluso nel progetto AEM, ma viene distribuito tramite il componente aggiuntivo CIF.

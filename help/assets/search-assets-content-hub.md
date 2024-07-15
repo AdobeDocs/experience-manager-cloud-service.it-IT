@@ -1,5 +1,5 @@
 ---
-title: Cercare risorse in Content Hub
+title: Cercare risorse nell’hub di contenuti
 description: Scopri come cercare le risorse in [!DNL Content Hub]
 role: User
 source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
@@ -10,45 +10,45 @@ ht-degree: 0%
 ---
 
 
-# Cerca in Assets [!DNL Content Hub] {#search-assets}
+# Cerca in Assets in [!DNL Content Hub] {#search-assets}
 
-![Condividere l&#39;immagine del banner delle risorse](assets/search.png)
+![Condividi immagine banner risorse](assets/search.png)
 
-Se nell’archivio sono presenti numerose risorse, la ricerca della risorsa corretta richiede tempo. [!DNL The Content Hub] la funzione di ricerca consente di cercare le risorse approvate in modo da poter eseguire azioni aggiuntive, ad esempio scaricare, condividere o creare raccolte. Puoi utilizzare varie funzionalità per limitare i risultati della ricerca, ad esempio eseguire ricerche basate su testo, utilizzare filtri, eseguire tag o ricerche specifiche per i tag avanzati, cercare un particolare formato di file e così via.
+Se nell’archivio sono presenti numerose risorse, la ricerca della risorsa corretta richiede tempo. La ricerca di [!DNL The Content Hub] consente di cercare le risorse approvate in modo da poter eseguire azioni aggiuntive, ad esempio il download, la condivisione o la creazione di raccolte. Puoi utilizzare varie funzionalità per limitare i risultati della ricerca, ad esempio eseguire ricerche basate su testo, utilizzare filtri, eseguire tag o ricerche specifiche per i tag avanzati, cercare un particolare formato di file e così via.
 
 ## Prerequisiti {#prerequisites}
 
-[Utenti Content Hub](deploy-content-hub.md#onboard-content-hub-users) può eseguire le azioni menzionate in questo articolo.
+[Gli utenti di Content Hub](deploy-content-hub.md#onboard-content-hub-users) possono eseguire le azioni indicate in questo articolo.
 
 ## Cosa è possibile cercare  {#what-you-can-search}
 
-Il [!DNL Content Hub] la ricerca fornisce risultati in base a:
+La ricerca di [!DNL Content Hub] fornisce risultati basati su:
 
-* **Testo corrispondente:** Il [!DNL Content Hub] la ricerca consente di cercare una risorsa utilizzando il suo nome o la sua descrizione. Puoi eseguire ricerche basate su parole chiave, in cui la parola chiave viene confrontata con il testo disponibile nelle proprietà di una risorsa.
+* **Testo corrispondente:** La ricerca di [!DNL Content Hub] consente di cercare una risorsa utilizzando il nome o la descrizione. Puoi eseguire ricerche basate su parole chiave, in cui la parola chiave viene confrontata con il testo disponibile nelle proprietà di una risorsa.
 
-* **Contesto corrispondente:** [!DNL Content Hub] l’elenco dei risultati della ricerca contiene i risultati approssimativi delle risorse ottenuti in base al contesto corrispondente. Ad esempio, se si digita `cool` nella barra di ricerca, le risorse correlate a `winter`, `snow`, `cold surroundings`, viene visualizzato nell&#39;elenco di ricerca.
+* **Contesto corrispondente:** L&#39;elenco dei risultati della ricerca [!DNL Content Hub] contiene i risultati approssimativi delle risorse ottenuti in base al contesto corrispondente. Se ad esempio si digita `cool` nella barra di ricerca, le risorse relative a `winter`, `snow`, `cold surroundings` verranno visualizzate nell&#39;elenco di ricerca.
 
-* **Informazioni sulla risorsa (titolo, tag o tag avanzati):** [!DNL Content Hub] utilizza l’algoritmo di ricerca intelligente per classificare i risultati della ricerca in modo accurato e pertinente. [Metadati](#asset-properties.md) è la raccolta di tutti i dati disponibili per una risorsa, ma potrebbe non essere necessariamente contenuta in tale risorsa. [Consente di categorizzare ulteriormente le risorse ed è utile quando la quantità di informazioni digitali aumenta](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub).
+* **Informazioni sulla risorsa (titolo, tag o tag avanzati):** [!DNL Content Hub] utilizza l&#39;algoritmo di ricerca intelligente per classificare i risultati della ricerca in modo accurato e pertinente. [I metadati](#asset-properties.md) sono la raccolta di tutti i dati disponibili per una risorsa, ma potrebbero non essere necessariamente contenuti in tale risorsa. [Consente di categorizzare ulteriormente le risorse ed è utile in quanto la quantità di informazioni digitali aumenta](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub).
 
-* **Data ultima modifica:** Le risorse modificate di recente vengono visualizzate all’inizio dell’elenco dei risultati di ricerca. Puoi anche filtrare l’intervallo di date in base alle tue esigenze.
+* **Data ultima modifica:** Le risorse modificate di recente vengono visualizzate all&#39;inizio dell&#39;elenco dei risultati di ricerca. Puoi anche filtrare l’intervallo di date in base alle tue esigenze.
 
-* **Utilizzo:** Le risorse di uso comune vengono visualizzate nella parte superiore dell’elenco di ricerca.
+* **Utilizzo:** Le risorse di uso comune vengono visualizzate all&#39;inizio dell&#39;elenco di ricerca.
 
-* **Cronologia ricerche:** Fare clic all&#39;interno della casella di ricerca senza digitare un carattere per ottenere la cronologia di ricerca. È inoltre possibile rimuovere qualsiasi parola chiave specifica dalla cronologia. La cronologia di ricerca viene salvata nella memoria cache di un browser web, il che significa che, se accedi a [!DNL Content Hub] eseguire la ricerca in un browser diverso o cancellare la memoria cache del browser, non è più possibile visualizzare la cronologia di ricerca.
+* **Cronologia ricerche:** Fare clic all&#39;interno della casella di ricerca senza digitare un carattere per ottenere la cronologia delle ricerche. È inoltre possibile rimuovere qualsiasi parola chiave specifica dalla cronologia. La cronologia di ricerca viene salvata nella memoria cache di un browser Web. Se si accede alla ricerca [!DNL Content Hub] in un altro browser o si cancella la memoria cache del browser, non sarà più possibile visualizzare la cronologia di ricerca.
 
-* **Cerca durante la digitazione:** Il [!DNL Content Hub] la funzione di ricerca migliora l&#39;esperienza di ricerca fornendo suggerimenti al completamento automatico quando si inizia a digitare.
+* **Ricerca durante la digitazione:** La ricerca di [!DNL Content Hub] migliora l&#39;esperienza di ricerca fornendo suggerimenti di completamento automatico quando si inizia a digitare.
 
 ## Ricerca di base {#basic-search}
 
-Per eseguire una ricerca di base su [!DNL the Content Hub], passare alla barra di ricerca e specificare la parola chiave da cercare. Passa ai filtri disponibili nel riquadro a sinistra e applicali per limitare i risultati della ricerca.
+Per eseguire la ricerca di base in [!DNL the Content Hub], passare alla barra di ricerca e specificare la parola chiave da cercare. Passa ai filtri disponibili nel riquadro a sinistra e applicali per limitare i risultati della ricerca.
 
-Ad esempio, cerca tutte le **[!UICONTROL JPEG]** immagini con parola chiave `architect` in esso, che viene modificato nell’ultimo anno. Per eseguire questo scenario, esegui i seguenti passaggi:
+Cercare ad esempio tutte le immagini di **[!UICONTROL JPEG]** contenenti la parola chiave `architect`, che è stata modificata nell&#39;ultimo anno. Per eseguire questo scenario, esegui i seguenti passaggi:
 
-1. Specifica `architect` come parola chiave di ricerca.
+1. Specificare `architect` come parola chiave di ricerca.
 
-1. Passa al pannello dei filtri > **[!UICONTROL Formato]** > seleziona **[!UICONTROL JPEG]**.
+1. Passa a pannello filtri > **[!UICONTROL Formato]** > seleziona **[!UICONTROL JPEG]**.
 
-1. Accedi a **[!UICONTROL Modificato]** > specifica l’intervallo di date.
+1. Passa a **[!UICONTROL Modificato]** > specifica l&#39;intervallo di date.
 
    ![Ricerca di base](assets/basic-search.png)
 
@@ -56,7 +56,7 @@ Ad esempio, cerca tutte le **[!UICONTROL JPEG]** immagini con parola chiave `arc
 
 Utilizza il pannello Filtri per cercare le risorse in base ai metadati. Puoi filtrare i risultati della ricerca in base a vari predicati di ricerca. Puoi selezionare tutti i predicati appropriati per ridurre o ridurre al minimo i risultati della ricerca. Quando selezioni più opzioni all’interno di un filtro, Content Hub visualizza le risorse che corrispondono a una qualsiasi delle opzioni selezionate all’interno di un filtro. Tuttavia, quando selezioni più opzioni tra i filtri, in Content Hub vengono visualizzate solo le risorse che corrispondono a tutte le opzioni selezionate tra i filtri, per limitare i risultati della ricerca.
 
-I filtri predefiniti includono formato file, approvato da, data approvata, risorse scadute e non scadute e data di scadenza. Gli amministratori possono anche configurare i filtri visualizzati nell’elenco dei filtri. Per ulteriori informazioni, consulta [Configurare l’interfaccia utente di Content Hub](configure-content-hub-ui-options.md#configure-filters-content-hub).
+I filtri predefiniti includono formato file, approvato da, data approvata, risorse scadute e non scadute e data di scadenza. Gli amministratori possono anche configurare i filtri visualizzati nell’elenco dei filtri. Per ulteriori informazioni, vedere [Configurare l&#39;interfaccia utente di Content Hub](configure-content-hub-ui-options.md#configure-filters-content-hub).
 
 <!--
 
@@ -152,4 +152,4 @@ I filtri predefiniti includono formato file, approvato da, data approvata, risor
 
 ## Fare di più con la ricerca {#do-more-with-search}
 
-[!DNL The Content Hub] non è limitato alla ricerca, ma consente di eseguire azioni aggiuntive, come [scaricare](download-assets-content-hub.md), [condividere](share-assets-content-hub.md), e [aggiungere risorse alla raccolta](collections-content-hub.md), direttamente dall’interfaccia di ricerca o anteprima. Seleziona le risorse nella pagina dei risultati della ricerca per visualizzare queste opzioni.
+[!DNL The Content Hub] non è limitato alla ricerca, ma consente di eseguire azioni aggiuntive, ad esempio [download](download-assets-content-hub.md), [condivisione](share-assets-content-hub.md) e [aggiungere risorse alla raccolta](collections-content-hub.md), direttamente dall&#39;interfaccia di ricerca o anteprima. Seleziona le risorse nella pagina dei risultati della ricerca per visualizzare queste opzioni.

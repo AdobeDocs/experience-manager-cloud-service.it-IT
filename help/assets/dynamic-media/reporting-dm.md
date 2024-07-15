@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
 source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 4%
+source-wordcount: '260'
+ht-degree: 0%
 
 ---
 
@@ -26,10 +26,10 @@ Quando richiedi la segnalazione degli errori, il team Dynamic Medie di Adobe ti 
 
 Puoi richiedere una segnalazione di errori una volta al mese, per una determinata azienda.
 
-**Per richiedere un rapporto di errore per gli URL di consegna Dynamic Medie che non superano il test:**
+**Per richiedere un report di errori per gli URL di consegna di Dynamic Medie che non riescono:**
 
-1. [Invia un messaggio e-mail a reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com) con il nome della società associato al tuo account Dynamic Medie.
+1. [Invia un&#39;e-mail a reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com) con il nome della società associato al tuo account Dynamic Medie.
 
-   Se non conosci il nome dell’azienda, consulta [Configurazione Dynamic Medie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=it#configuring-dynamic-media-cloud-services) pagina in **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione Dynamic Medie]**. Nella pagina Browser configurazioni Dynamic Medie, fai clic su **[!UICONTROL globale]**, seleziona la *[Dynamic_Media_folder_icon]* , quindi seleziona **[!UICONTROL Modifica]**. Per accedere alla pagina Configurazione Dynamic Medie è necessario disporre dei diritti di amministratore in AEM.
+   Se non conosci il nome della società, consulta la pagina [Configurazione Dynamic Medie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=it#configuring-dynamic-media-cloud-services) in **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione Dynamic Medie]**. Nella pagina Browser configurazioni Dynamic Medie, fai clic su **[!UICONTROL global]**, seleziona la casella di controllo *[Dynamic_Media_folder_icon]*, quindi seleziona **[!UICONTROL Modifica]**. Per accedere alla pagina Configurazione Dynamic Medie è necessario disporre dei diritti di amministratore in AEM.
 
-   ![Accesso alla pagina Configurazione Dynamic Medie.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
+   ![Accesso alla pagina Configurazione di Dynamic Medie.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)

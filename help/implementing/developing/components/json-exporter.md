@@ -27,7 +27,7 @@ Con i frammenti di contenuto che utilizzano contenuti strutturati, puoi fornire 
 
 Utilizzando la funzione di esportazione JSON per AEM puoi distribuire i contenuti di una pagina AEM (y) in formato di modello dati JSON. che possono essere utilizzati dalle applicazioni.
 
-All’interno dell’AEM la consegna viene effettuata utilizzando il selettore `model` e `.json` estensione.
+All&#39;interno dell&#39;AEM la consegna viene effettuata utilizzando il selettore `model` e l&#39;estensione `.json`.
 
 `.model.json`
 
@@ -43,7 +43,7 @@ All’interno dell’AEM la consegna viene effettuata utilizzando il selettore `
 
 In alternativa, puoi distribuire il contenuto di un frammento di contenuto strutturato eseguendo il targeting specifico.
 
-Questa operazione viene eseguita utilizzando l’intero percorso del frammento (tramite `jcr:content`); ad esempio, con un suffisso come.
+Questa operazione viene eseguita utilizzando l&#39;intero percorso del frammento (tramite `jcr:content`); ad esempio, con un suffisso come.
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
@@ -61,18 +61,18 @@ La pagina può contenere un singolo frammento di contenuto o più componenti di 
 
   >[!NOTE]
   >
-  >È possibile [adattare i propri componenti](enabling-json-exporter.md) per accedere e utilizzare questi dati.
+  >Puoi [adattare i tuoi componenti](enabling-json-exporter.md) per accedere e utilizzare questi dati.
 
   >[!NOTE]
   >
-  >Anche se non è un&#39;implementazione standard, [sono supportati più selettori,](enabling-json-exporter.md#multiple-selectors) ma `model` deve essere il primo.
+  >Anche se non si tratta di un&#39;implementazione standard, sono supportati [più selettori,](enabling-json-exporter.md#multiple-selectors) ma `model` deve essere il primo.
 
 ### Ulteriori informazioni {#further-information}
 
 * API HTTP di Assets
    * [API HTTP di Assets](/help/assets/developer-reference-material-apis.md)
 * Modelli Sling:
-   * [Modelli Sling: associazione di una classe di modelli a un tipo di risorsa dalla versione 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Modelli Sling - Associazione di una classe di modelli a un tipo di risorsa dalla versione 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 * AEM con JSON:
    * [Abilitazione dell’esportazione JSON per un componente](enabling-json-exporter.md)
 
@@ -81,4 +81,4 @@ La pagina può contenere un singolo frammento di contenuto o più componenti di 
 * [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Authoring con frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)

@@ -23,7 +23,7 @@ L’interfaccia utente di Cloud Manager è composta principalmente da due interf
 
 >[!TIP]
 >
->Consulta anche [percorso di documentazione sull’onboarding](/help/journey-onboarding/overview.md) per una panoramica completa su come iniziare a utilizzare AEM as a Cloud Service con Cloud Manager.
+>Consulta anche il [percorso di documentazione sull&#39;onboarding](/help/journey-onboarding/overview.md) per una panoramica completa su come iniziare a utilizzare AEM as a Cloud Service con Cloud Manager.
 
 ## Console Programmi personali {#my-programs}
 
@@ -106,7 +106,7 @@ Ogni programma è rappresentato da una scheda (o riga in una tabella) che fornis
 
 * Immagine del programma (se configurata)
 * Nome del programma
-* Tipo di servizio: **Experience Manager Cloud** per AEM as a * programmi Cloud Service o [**Experience Manager** per i programmi AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+* Tipo di servizio: **Experience Manager Cloud** per AEM as a * programmi di Cloud Service o [**Experience Manager** per programmi AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Tipo di programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): sandbox o produzione
 * Stato
 * Soluzioni configurate
@@ -122,7 +122,7 @@ A seconda delle opzioni scelte durante la creazione del programma, un programma 
 
   ![Badge WAF-DDOS](assets/waf-ddos-protection.png)
 
-* [99,99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
+* [SLA 99,99%](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
   ![Badge SLA 99,99%](assets/9999-sla.png)
 
@@ -149,7 +149,7 @@ L’icona con i puntini di sospensione ti permette di accedere alle azioni aggiu
 
 #### Scheda licenza {#license-tab}
 
-Il **Licenza** consente di accedere rapidamente al [Dashboard delle licenze.](/help/implementing/cloud-manager/license-dashboard.md)
+La scheda **Licenza** ti consente di accedere rapidamente alla [Dashboard delle licenze.](/help/implementing/cloud-manager/license-dashboard.md)
 
 ### Collegamenti rapidi {#quick-links}
 
@@ -168,7 +168,7 @@ La panoramica del programma consente di accedere a tutti i dettagli di un progra
 1. Un [invito all’azione](#cta) basato sulle ultime azioni del programma
 1. Una [panoramica degli ambienti](#environments) del programma
 1. Una [panoramica delle pipeline](#pipelines) del programma
-1. Un [panoramica delle prestazioni](#performance) del programma
+1. [panoramica delle prestazioni](#performance) del programma
 1. Collegamenti a [risorse utili](#useful-resources)
 
 ### Barre degli strumenti {#program-overview-toolbar}
@@ -237,7 +237,7 @@ Consulta il documento [Gestione delle pipeline](/help/implementing/cloud-manager
 
 ### Scheda Prestazioni {#performance}
 
-Il **Prestazioni** offre una panoramica della **[Dashboard CDN.](/help/implementing/cloud-manager/cdn-performance.md)**
+La scheda **Prestazioni** offre una panoramica della **[dashboard CDN.](/help/implementing/cloud-manager/cdn-performance.md)**
 
 ![Scheda Prestazioni](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

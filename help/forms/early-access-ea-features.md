@@ -1,6 +1,6 @@
 ---
-title: Funzioni di Accesso anticipato correnti di [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-description: Funzioni di Accesso anticipato correnti di [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+title: Funzioni di Accesso anticipato correnti di  [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+description: Funzioni di Accesso anticipato correnti di  [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
@@ -23,7 +23,7 @@ Il programma AEM Forms Early Access Program offre un’opportunità unica per ot
 
 ## Come partecipare al programma di Accesso anticipato?
 
-Se ti interessa partecipare al nostro programma di Accesso anticipato per qualsiasi innovazione di Accesso anticipato, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  per richiedere l&#39;accesso. Puoi richiedere l’accesso a tutte le innovazioni o solo a qualcuna.
+Se sei interessato a partecipare al nostro programma di Accesso anticipato per qualsiasi innovazione di Accesso anticipato, è sufficiente inviare un&#39;e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) per richiedere l&#39;accesso. Puoi richiedere l’accesso a tutte le innovazioni o solo a qualcuna.
 
 ## Innovazioni nell’accesso in anteprima
 
@@ -31,19 +31,19 @@ Se ti interessa partecipare al nostro programma di Accesso anticipato per qualsi
 
 L’intelligenza artificiale generativa per Forms adattivo offre un livello completamente nuovo di potenza e semplicità ai processi di sviluppo dei moduli. Con l’aiuto delle funzioni di intelligenza artificiale, puoi creare moduli migliori più rapidamente che mai.
 
-![Assistente AI generativo, Forms adattivo](/help/forms/assets/generative-ai-assistant.png)
+![Generative AI Assistant, Forms adattivo](/help/forms/assets/generative-ai-assistant.png)
 
 Le funzionalità di intelligenza artificiale generativa offerte sono:
 
 * **Assistente AI per le query sui prodotti**: ottieni risposte immediate alle domande relative al modulo AEM. Il nostro assistente di intelligenza artificiale funge da knowledge base personale, fornendo indicazioni approfondite e consigli direttamente all’interno della piattaforma.
 
-* **Generazione di moduli adattivi**: crea facilmente moduli veri e propri con prompt di IA generativi. La nostra intelligenza artificiale generativa genera automaticamente moduli intuitivi che riducono i casi di abbandono e personalizzano l’esperienza.
+* **Generazione di moduli adattivi**: creazione semplificata di moduli completi con prompt di IA generativi. La nostra intelligenza artificiale generativa genera automaticamente moduli intuitivi che riducono i casi di abbandono e personalizzano l’esperienza.
 
-* **Generazione di pannelli per Forms**: Lascia che sia AI a fare il sollevamento pesante. Genera pannelli per moduli predefiniti personalizzati per esigenze specifiche di raccolta dati. Ad esempio, genera sezioni per la raccolta di informazioni di pagamento, preferenze del cliente o dettagli di viaggio. Risparmia tempo e assicurati la coerenza con layout e funzionalità predefiniti.
+* **Generazione di pannelli per Forms**: consentire all&#39;intelligenza artificiale di eseguire il sollevamento pesante. Genera pannelli per moduli predefiniti personalizzati per esigenze specifiche di raccolta dati. Ad esempio, genera sezioni per la raccolta di informazioni di pagamento, preferenze del cliente o dettagli di viaggio. Risparmia tempo e assicurati la coerenza con layout e funzionalità predefiniti.
 
-* **Modifica dei layout di un modulo**: sperimenta diversi layout e progettazioni utilizzando i prompt di intelligenza artificiale generativi. Provare diversi layout, ad esempio la creazione guidata o le visualizzazioni a schede, per trovare il layout ideale per il modulo. Utilizza i prompt di intelligenza artificiale generativi per ottimizzare i moduli per la reattività mobile e creare moduli visivamente coinvolgenti che gli utenti apprezzano.
+* **Modifica dei layout del modulo**: prova con layout e progettazioni diversi utilizzando i prompt di IA generativi. Provare diversi layout, ad esempio la creazione guidata o le visualizzazioni a schede, per trovare il layout ideale per il modulo. Utilizza i prompt di intelligenza artificiale generativi per ottimizzare i moduli per la reattività mobile e creare moduli visivamente coinvolgenti che gli utenti apprezzano.
 
-* **Configura azione di invio**: utilizza i prompt di IA generativa per configurare facilmente un’azione di invio per il modulo. Scegli da una libreria di azioni di invio predefinite o da un elenco di azioni di invio personalizzate, create e distribuite dal tuo team di sviluppo.
+* **Configura azione di invio**: utilizza i prompt di IA generativa per configurare facilmente un&#39;azione di invio per il modulo. Scegli da una libreria di azioni di invio predefinite o da un elenco di azioni di invio personalizzate, create e distribuite dal tuo team di sviluppo.
 
 
 ### Connettore AEM Forms Workfront Fusion
@@ -52,7 +52,7 @@ Il connettore AEM Forms Workfront Fusion consente l’integrazione diretta tra A
 
 Utilizzando il connettore AEM Forms Workfront Fusion, puoi progettare flussi di lavoro che vengono attivati automaticamente al momento dell’invio di un modulo adattivo. Ad esempio, immagina uno scenario in cui viene avviato un flusso di lavoro per assegnare a un individuo specifico il compito di rivedere i dati inviati, consentendo l’approvazione o il rifiuto di una richiesta in base alle informazioni acquisite tramite il modulo adattivo. Questa integrazione semplificata migliora l’efficienza e introduce un nuovo livello di automazione nei processi di flusso di lavoro.
 
-Pronto per iniziare? Il [inviare un modulo adattivo ad Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) La documentazione di fornisce una guida dettagliata per utilizzare l’innovazione.
+Pronto per iniziare? La documentazione di [invio di un modulo adattivo ad Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) fornisce una guida dettagliata per utilizzare l&#39;innovazione.
 
 <!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
 
@@ -62,13 +62,13 @@ L’innovazione di Conversational Forms consente di interagire con i moduli come
 
 Puoi semplicemente trascinare e rilasciare il componente Forms per conversazioni nella pagina AEM Sites e iniziare. Non è richiesta alcuna codifica, così chiunque può creare rapidamente esperienze Forms conversazionali coinvolgenti e intuitive.
 
-![Forms di conversazione, compilazione modulo stile chatbot, Forms adattivo](/help/forms/assets/conversational-forms.png)
+![Copertina Forms, Compilazione modulo stile chatbot, Forms adattivo](/help/forms/assets/conversational-forms.png)
 
 Ecco cosa offre in più Conversational Forms:
 
-* **Rilevamento semplice dei moduli**: trova il modulo esatto necessario tramite un’interfaccia chiara e conversazionale, su qualsiasi pagina di AEM Sites.
-* **Completamento in stile chat**: Rispondi alle domande una alla volta, proprio come chattare con un assistente virtuale. È veloce, intuitivo e sembra una conversazione.
-* **Anteprima prima dell’invio**: ricontrolla tutto prima di premere Invia. Visualizza l’anteprima del modulo completato per assicurarne la precisione ed evitare errori dell’ultimo minuto.
+* **Rilevamento semplice dei moduli**: trova il modulo esatto di cui hai bisogno tramite un&#39;interfaccia chiara e conversazionale, su qualsiasi pagina di AEM Sites.
+* **Completamento in stile chat**: rispondere alle domande una alla volta, proprio come chattare con un assistente virtuale. È veloce, intuitivo e sembra una conversazione.
+* **Anteprima prima dell&#39;invio**: ricontrolla tutto prima di premere Invia. Visualizza l’anteprima del modulo completato per assicurarne la precisione ed evitare errori dell’ultimo minuto.
 
 
 I Forms per conversazioni sono molto di più di un semplice aspetto nuovo: cambiano l’esperienza degli utenti.  Incrementa il coinvolgimento, riduci l’abbandono dei moduli e rendi l’interazione con il tuo sito web un’esperienza più piacevole per tutti.
@@ -76,7 +76,7 @@ I Forms per conversazioni sono molto di più di un semplice aspetto nuovo: cambi
 
 ### Authoring WYSIWYG per Edge Delivery Services
 
-WYSIWYG Authoring fornisce interfacce WYSIWYG (Universal Editor e Adaptive Forms Editor) per generare e pubblicare moduli adattivi sui Edge Delivery Services. WYSIWYG Authoring offre tutte le funzionalità di [Authoring basato su documenti](/help/edge/docs/forms/overview.md#document-based-authoring-features), oltre a un&#39;ampia gamma di funzioni aggiuntive:
+WYSIWYG Authoring fornisce interfacce WYSIWYG (Universal Editor e Adaptive Forms Editor) per generare e pubblicare moduli adattivi sui Edge Delivery Services. WYSIWYG Authoring offre tutte le funzionalità di [authoring basato su documenti](/help/edge/docs/forms/overview.md#document-based-authoring-features), oltre a un&#39;ampia gamma di funzionalità aggiuntive:
 
 * Editor di regole avanzate per la creazione di logica complessa.
 * Estensibilità lato server per funzionalità personalizzate.
@@ -113,15 +113,15 @@ Questa funzionalità è adatta a lingue come l&#39;arabo, l&#39;ebraico e l&#39;
 
 Il supporto delle lingue da destra a sinistra (RTL) in Adaptive Forms consente di:
 
-* **Espande la base utente**: Le aziende possono ora raggiungere oltre 2 miliardi di persone in tutto il mondo che hanno più familiarità con le lingue RTL.
+* **Amplia la base di utenti**: le aziende possono ora raggiungere oltre 2 miliardi di persone in tutto il mondo che hanno più familiarità con le lingue RTL.
 
-* **Offrire un’esperienza utente migliorata**: Forms esegue il rendering in modo perfetto con un flusso di testo naturale da destra a sinistra, un allineamento corretto degli elementi dell’interfaccia utente e layout intuitivi che rispecchiano le abitudini di lettura degli utenti. Questo riduce la confusione e aumenta i tassi di completamento dei moduli.
+* **Migliora l&#39;esperienza utente**: Forms esegue il rendering in modo perfetto con un flusso di testo naturale da destra a sinistra, un allineamento corretto degli elementi dell&#39;interfaccia utente e layout intuitivi che rispecchiano le abitudini di lettura degli utenti. Questo riduce la confusione e aumenta i tassi di completamento dei moduli.
 
-* **Distribuisci esperienze dinamiche per dispositivi mobili**: Forms rimane accessibile su qualsiasi dispositivo a causa della reattività mobile intrinseca, garantendo un’esperienza fluida su desktop, tablet e smartphone.
+* **Distribuisci esperienze dinamiche per dispositivi mobili**: Forms rimane accessibile su qualsiasi dispositivo a causa della reattività mobile intrinseca, garantendo un&#39;esperienza fluida su desktop, tablet e smartphone.
 
 Nel complesso, il supporto in lingua RTL in Adaptive Forms consente alle aziende di progettare moduli realmente globali, aumentando portata, coinvolgimento e inclusività.
 
-Pronto per iniziare? [Documentazione RTL di Forms adattivo](/help/forms/supporting-new-language-localization-core-components.md) fornisce una guida dettagliata per utilizzare l’innovazione RTL.
+Pronto per iniziare? [La documentazione di Forms RTL adattivo](/help/forms/supporting-new-language-localization-core-components.md) fornisce una guida dettagliata per utilizzare l&#39;innovazione RTL.
 
 ### Metodi di protezione bot migliorati
 
@@ -142,17 +142,17 @@ Le API di AEM Forms Doc Assurance sono un set di strumenti all’interno delle A
 
 Ecco un raggruppamento delle funzioni delle API di Doc Assurance:
 
-* **Crittografia e decrittografia dei documenti**: esegui il Protect dei documenti rendendo i contenuti illeggibili con la crittografia. È possibile controllare quali parti del PDF sono crittografate, inclusi l&#39;intero documento, contenuto specifico, metadati o allegati.
+* **Crittografa e decrittografa documenti**: esegui il Protect dei documenti rendendo il contenuto illeggibile con la crittografia. È possibile controllare quali parti del PDF sono crittografate, inclusi l&#39;intero documento, contenuto specifico, metadati o allegati.
 
 * **Firma digitale dei documenti**: aggiungi firme digitali ai documenti per la convalida e la verifica a prova di manomissione. Può essere utilizzato a scopo di certificazione o per garantire l&#39;integrità dei documenti
 
-* **Reader Estendi i documenti (Applica o modifica i diritti di utilizzo dei documenti PDF)**: consente all’organizzazione di condividere facilmente i documenti interattivi di PDF estendendo la funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi.
+* **Reader Estendi i documenti (Applica o modifica i diritti di utilizzo dei documenti PDF)**: consente all&#39;organizzazione di condividere facilmente i documenti PDF interattivi estendendo la funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi.
 
   Le API di estensione del Reader (Diritti di utilizzo) aggiungono diritti di utilizzo a un documento PDF. Questa azione attiva caratteristiche che in genere non sono disponibili quando un documento PDF viene aperto mediante Adobe Reader, ad esempio l’aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento. Gli utenti di terze parti non richiedono software o plug-in aggiuntivi per lavorare con documenti abilitati per i diritti.
 
   Quando ai documenti PDF vengono aggiunti i diritti di utilizzo appropriati, i destinatari possono eseguire attività abilitate dall’interno di Adobe Reader.
 
-Complessivamente, [API di Doc Assurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) migliorare la sicurezza e la conformità dei documenti aggiungendo un ulteriore livello di controllo.
+Nel complesso, [le API Doc Assurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) ti aiutano a migliorare la sicurezza e la conformità dei documenti aggiungendo un ulteriore livello di controllo.
 
 
 ### API dei servizi Forms
@@ -179,7 +179,7 @@ I Forms per conversazioni sono molto di più di un semplice aspetto nuovo: cambi
 
 ### Authoring WYSIWYG per Edge Delivery Services
 
-WYSIWYG Authoring fornisce interfacce WYSIWYG (Universal Editor e Adaptive Forms Editor) per generare e pubblicare moduli adattivi sui Edge Delivery Services. WYSIWYG Authoring offre tutte le funzionalità di [Authoring basato su documenti](/help/edge/docs/forms/overview.md#document-based-authoring-features), oltre a un&#39;ampia gamma di funzioni aggiuntive:
+WYSIWYG Authoring fornisce interfacce WYSIWYG (Universal Editor e Adaptive Forms Editor) per generare e pubblicare moduli adattivi sui Edge Delivery Services. WYSIWYG Authoring offre tutte le funzionalità di [authoring basato su documenti](/help/edge/docs/forms/overview.md#document-based-authoring-features), oltre a un&#39;ampia gamma di funzionalità aggiuntive:
 
 * Editor di regole avanzate per la creazione di logica complessa.
 * Estensibilità lato server per funzionalità personalizzate.
@@ -216,15 +216,15 @@ Questa funzionalità è adatta a lingue come l&#39;arabo, l&#39;ebraico e l&#39;
 
 Il supporto delle lingue da destra a sinistra (RTL) in Adaptive Forms consente di:
 
-* **Espande la base utente**: Le aziende possono ora raggiungere oltre 2 miliardi di persone in tutto il mondo che hanno più familiarità con le lingue RTL.
+* **Amplia la base di utenti**: le aziende possono ora raggiungere oltre 2 miliardi di persone in tutto il mondo che hanno più familiarità con le lingue RTL.
 
-* **Offrire un’esperienza utente migliorata**: Forms esegue il rendering in modo perfetto con un flusso di testo naturale da destra a sinistra, un allineamento corretto degli elementi dell’interfaccia utente e layout intuitivi che rispecchiano le abitudini di lettura degli utenti. Questo riduce la confusione e aumenta i tassi di completamento dei moduli.
+* **Migliora l&#39;esperienza utente**: Forms esegue il rendering in modo perfetto con un flusso di testo naturale da destra a sinistra, un allineamento corretto degli elementi dell&#39;interfaccia utente e layout intuitivi che rispecchiano le abitudini di lettura degli utenti. Questo riduce la confusione e aumenta i tassi di completamento dei moduli.
 
-* **Distribuisci esperienze dinamiche per dispositivi mobili**: Forms rimane accessibile su qualsiasi dispositivo a causa della reattività mobile intrinseca, garantendo un’esperienza fluida su desktop, tablet e smartphone.
+* **Distribuisci esperienze dinamiche per dispositivi mobili**: Forms rimane accessibile su qualsiasi dispositivo a causa della reattività mobile intrinseca, garantendo un&#39;esperienza fluida su desktop, tablet e smartphone.
 
 Nel complesso, il supporto in lingua RTL in Adaptive Forms consente alle aziende di progettare moduli realmente globali, aumentando portata, coinvolgimento e inclusività.
 
-Pronto per iniziare? [Documentazione RTL di Forms adattivo](/help/forms/supporting-new-language-localization-core-components.md) fornisce una guida dettagliata per utilizzare l’innovazione RTL.
+Pronto per iniziare? [La documentazione di Forms RTL adattivo](/help/forms/supporting-new-language-localization-core-components.md) fornisce una guida dettagliata per utilizzare l&#39;innovazione RTL.
 
 ### Metodi di protezione bot migliorati
 
@@ -245,17 +245,17 @@ Le API di AEM Forms Doc Assurance sono un set di strumenti all’interno delle A
 
 Ecco un raggruppamento delle funzioni delle API di Doc Assurance:
 
-* **Crittografia e decrittografia dei documenti**: esegui il Protect dei documenti rendendo i contenuti illeggibili con la crittografia. È possibile controllare quali parti del PDF sono crittografate, inclusi l&#39;intero documento, contenuto specifico, metadati o allegati.
+* **Crittografa e decrittografa documenti**: esegui il Protect dei documenti rendendo il contenuto illeggibile con la crittografia. È possibile controllare quali parti del PDF sono crittografate, inclusi l&#39;intero documento, contenuto specifico, metadati o allegati.
 
 * **Firma digitale dei documenti**: aggiungi firme digitali ai documenti per la convalida e la verifica a prova di manomissione. Può essere utilizzato a scopo di certificazione o per garantire l&#39;integrità dei documenti
 
-* **Reader Estendi i documenti (Applica o modifica i diritti di utilizzo dei documenti PDF)**: consente all’organizzazione di condividere facilmente i documenti interattivi di PDF estendendo la funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi.
+* **Reader Estendi i documenti (Applica o modifica i diritti di utilizzo dei documenti PDF)**: consente all&#39;organizzazione di condividere facilmente i documenti PDF interattivi estendendo la funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi.
 
   Le API di estensione del Reader (Diritti di utilizzo) aggiungono diritti di utilizzo a un documento PDF. Questa azione attiva caratteristiche che in genere non sono disponibili quando un documento PDF viene aperto mediante Adobe Reader, ad esempio l’aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento. Gli utenti di terze parti non richiedono software o plug-in aggiuntivi per lavorare con documenti abilitati per i diritti.
 
   Quando ai documenti PDF vengono aggiunti i diritti di utilizzo appropriati, i destinatari possono eseguire attività abilitate dall’interno di Adobe Reader.
 
-Complessivamente, [API di Doc Assurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) migliorare la sicurezza e la conformità dei documenti aggiungendo un ulteriore livello di controllo.
+Nel complesso, [le API Doc Assurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) ti aiutano a migliorare la sicurezza e la conformità dei documenti aggiungendo un ulteriore livello di controllo.
 
 
 ### API dei servizi Forms

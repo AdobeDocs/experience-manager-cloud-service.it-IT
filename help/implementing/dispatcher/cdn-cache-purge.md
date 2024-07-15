@@ -14,22 +14,22 @@ ht-degree: 3%
 # Eliminazione della cache CDN {#cdn-purge-cache}
 
 >[!NOTE]
->Questa funzione non è ancora disponibile al pubblico. Per partecipare al programma di adozione anticipata, invia un messaggio e-mail a `aemcs-cdn-config-adopter@adobe.com`.
+>Questa funzione non è ancora disponibile al pubblico. Per partecipare al programma di adozione anticipata, inviare un&#39;e-mail a `aemcs-cdn-config-adopter@adobe.com`.
 
 La rimozione rimuove un oggetto dalla cache CDN di Adobe, determinando richieste future che procedono all’origine come mancanti nella cache, anziché essere servite dalla cache.
-AEM as a Cloud Service consente di configurare un token API di rimozione, che può quindi essere utilizzato nelle chiamate API. Leggi le [Articolo sulla configurazione delle credenziali CDN e dell’autenticazione](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) per scoprire come configurare questo token utilizzando le direttive di autenticazione della pipeline di configurazione di Cloud Manager.
+AEM as a Cloud Service consente di configurare un token API di rimozione, che può quindi essere utilizzato nelle chiamate API. Leggi l&#39;articolo [Configurazione delle credenziali CDN e dell&#39;autenticazione](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) per scoprire come configurare questo token utilizzando le direttive di autenticazione della pipeline di configurazione di Cloud Manager.
 
 Sono supportate tre varianti di eliminazione:
 
-* [Eliminazione di un singolo URL](#single-purge) : elimina una singola risorsa alla volta.
-* [Rimuovi per chiave sostitutiva](#surrogate-key-purge) : eliminazione di più risorse contemporaneamente.
-* [Pulizia completa](#full-purge) : elimina tutte le risorse.
+* [Eliminazione URL singolo](#single-purge). Eliminare una singola risorsa alla volta.
+* [Rimuovi tramite chiave sostitutiva](#surrogate-key-purge) - elimina più risorse contemporaneamente.
+* [Rimozione completa](#full-purge) - elimina tutte le risorse.
 
 Tutte le varianti di eliminazione condividono quanto segue:
 
 * Il metodo HTTP deve essere impostato su `PURGE`.
 * L’URL può essere qualsiasi dominio associato al servizio AEM a cui è destinata la richiesta di eliminazione.
-* Il `X-AEM-Purge-Key` deve essere fornito in un’intestazione HTTP.
+* `X-AEM-Purge-Key` deve essere fornito in un&#39;intestazione HTTP.
 
 >[!CAUTION]
 >La rimozione della cache CDN, in particolare con il flag rigido, aumenterà il traffico all’origine e potrebbe causare un’interruzione quando non viene eseguita correttamente.
@@ -45,13 +45,13 @@ curl
 -H 'X-AEM-Purge: soft'
 ```
 
-Come mostrato nell’esempio precedente, puoi **facoltativamente** specifica se la rete CDN deve eseguire una **duro** purge (impostazione predefinita) o **morbido** eliminare gli oggetti memorizzati in cache.
+Come mostrato nell&#39;esempio precedente, è possibile **facoltativamente** specificare se la rete CDN deve eseguire una rimozione di **hard** (impostazione predefinita) o di **soft** sugli oggetti memorizzati in cache.
 
 L’eliminazione rigida predefinita rende il contenuto immediatamente inaccessibile alle nuove richieste fino a quando non viene recuperato dall’origine. La rimozione temporanea contrassegna il contenuto come non aggiornato, ma lo distribuisce comunque ai client, che non devono quindi attendere finché non viene recuperato dall’origine.
 
 ## Elimina chiave sostitutiva {#surrogate-key-purge}
 
-Le chiavi sostitutive sono identificatori univoci utilizzati per eliminare un set di contenuti. Vengono applicati al contenuto aggiungendo una `Surrogate-Key` alla risposta. È possibile fare riferimento a una o più chiavi sostitutive in una chiamata API di eliminazione.
+Le chiavi sostitutive sono identificatori univoci utilizzati per eliminare un set di contenuti. Vengono applicati al contenuto aggiungendo un&#39;intestazione `Surrogate-Key` alla risposta. È possibile fare riferimento a una o più chiavi sostitutive in una chiamata API di eliminazione.
 
 ```
 curl
@@ -61,7 +61,7 @@ curl
 -H "X-AEM-Purge: soft" #optional
 ```
 
-Il `Surrogate-Key`(s) sono separati da spazi. Analogamente all’eliminazione con un singolo URL, puoi configurare un’eliminazione rigida o temporanea.
+I `Surrogate-Key` sono separati da spazi. Analogamente all’eliminazione con un singolo URL, puoi configurare un’eliminazione rigida o temporanea.
 
 ## Pulizia completa {#full-purge}
 
@@ -74,8 +74,8 @@ curl
 -H "X-AEM-Purge: all"
 ```
 
-Tieni presente che `X-AEM-Purge` l’intestazione deve includere il valore &quot;all&quot;.
+Tenere presente che l&#39;intestazione `X-AEM-Purge` deve includere il valore &#39;all&#39;.
 
 ## Interazioni con il livello Apache/Dispatcher {#apache-layer}
 
-Come descritto nella [Articolo sul flusso di distribuzione dei contenuti](/help/implementing/dispatcher/overview.md), la rete CDN recupera il contenuto dal livello Apache/Dispatcher, se la cache è scaduta. Ciò significa che prima di eliminare una risorsa dalla rete CDN, è necessario assicurarsi che una nuova versione del contenuto sia disponibile anche in Dispatcher. Per maggiori dettagli vedi anche [Annullamento della validità della cache di Dispatcher](/help/implementing/dispatcher/caching.md#disp).
+Come descritto nell&#39;[articolo sul flusso di distribuzione dei contenuti](/help/implementing/dispatcher/overview.md), la rete CDN recupera il contenuto dal livello Apache/Dispatcher, se la cache è scaduta. Ciò significa che prima di eliminare una risorsa dalla rete CDN, è necessario assicurarsi che una nuova versione del contenuto sia disponibile anche in Dispatcher. Per ulteriori dettagli vedi anche [Annullamento della validità della cache di Dispatcher](/help/implementing/dispatcher/caching.md#disp).

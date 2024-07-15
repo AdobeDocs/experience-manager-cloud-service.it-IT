@@ -13,7 +13,7 @@ ht-degree: 16%
 
 # Note sulla versione 2021.11.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2021.11.0 degli strumenti di migrazione in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione degli strumenti di migrazione in AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
 >Per visualizzare le note sulla versione corrente di Adobe Experience Manager as a Cloud Service, fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
@@ -26,6 +26,6 @@ La data di pubblicazione dello strumento Content Transfer v1.7.2 è il 1° novem
 
 ### Novità {#what-is-new-ctt}
 
-* Supporto per un [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) è stato aggiunto un passaggio da utilizzare con lo strumento Content Transfer (Trasferimento contenuti) quando l’istanza AEM sorgente è configurata per utilizzare File Data Store per velocizzare in modo significativo la fase di estrazione.
+* È stato aggiunto il supporto per un passaggio facoltativo di [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) da utilizzare con lo strumento Content Transfer quando l&#39;istanza AEM di origine è configurata per utilizzare File Data Store per velocizzare in modo significativo la fase di estrazione.
 
 * Sono stati aggiunti ulteriori messaggi descrittivi alla fase di acquisizione nell’interfaccia dello strumento Content Transfer (Trasferimento contenuti) per indicare quando sono in corso i passaggi di indicizzazione e ripristino del mongo.

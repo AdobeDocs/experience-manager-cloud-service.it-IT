@@ -21,13 +21,13 @@ ht-degree: 17%
 
 XMP (Extensible Metadata Platform) è lo standard di metadati utilizzato da Experience Manager Assets per la gestione di tutti i metadati. XMP fornisce un formato standard per la creazione, l&#39;elaborazione e lo scambio di metadati per un&#39;ampia varietà di applicazioni.
 
-Oltre ad offrire una codifica universale dei metadati che può essere incorporata in tutti i formati di file, XMP offre [modello di contenuto](#xmp-core-concepts) ed è [supportato dall’Adobe](#advantages-of-xmp) e da altre società, in modo che gli utilizzatori dell&#39;XMP in combinazione con [!DNL Assets] avere una piattaforma potente su cui basarsi.
+Oltre a offrire una codifica universale dei metadati che può essere incorporata in tutti i formati di file, XMP fornisce un [modello di contenuto](#xmp-core-concepts) avanzato ed è [supportato da Adobe](#advantages-of-xmp) e altre aziende, in modo che gli utenti XMP in combinazione con [!DNL Assets] abbiano una piattaforma potente su cui basarsi.
 
 ## Panoramica ed ecosistema dell’XMP {#xmp-ecosystem}
 
-[!DNL Assets] supporta in modalità nativa lo standard di metadati XMP. L’XMP è uno standard per l’elaborazione e l’archiviazione di metadati standardizzati e proprietari in risorse digitali. XMP è progettato per essere lo standard comune che consente a più applicazioni di lavorare in modo efficace con i metadati.
+[!DNL Assets] supporta in modo nativo lo standard dei metadati XMP. L’XMP è uno standard per l’elaborazione e l’archiviazione di metadati standardizzati e proprietari in risorse digitali. XMP è progettato per essere lo standard comune che consente a più applicazioni di lavorare in modo efficace con i metadati.
 
-I professionisti della produzione, ad esempio, utilizzano il supporto integrato XMP nelle applicazioni Adobe per trasmettere informazioni su più formati di file. Il [!DNL Assets] L’archivio estrae i metadati dell’XMP e li utilizza per gestire il ciclo di vita dei contenuti e offre la possibilità di creare flussi di lavoro di automazione.
+I professionisti della produzione, ad esempio, utilizzano il supporto integrato XMP nelle applicazioni Adobe per trasmettere informazioni su più formati di file. L&#39;archivio [!DNL Assets] estrae i metadati XMP e li utilizza per gestire il ciclo di vita dei contenuti e offre la possibilità di creare flussi di lavoro di automazione.
 
 L’XMP standardizza il modo in cui i metadati vengono definiti, creati ed elaborati fornendo un modello di dati, un modello di archiviazione e schemi. Tutti questi concetti sono trattati in questa sezione.
 
@@ -52,64 +52,65 @@ Lo standard XMP è progettato per essere estensibile, consentendo di aggiungere 
 
 >[!NOTE]
 >
->L’XMP generalmente non consente l’incorporamento di tipi di dati binari. Per trasportare dati binari in XMP, ad esempio miniature, è necessario codificarli in un formato compatibile con XML, ad esempio `Base64`.
+>L’XMP generalmente non consente l’incorporamento di tipi di dati binari. Per inserire dati binari in XMP, ad esempio immagini di miniature, è necessario codificarli in un formato compatibile con XML, ad esempio `Base64`.
 
 ### Concetti fondamentali dell’XMP {#xmp-core-concepts}
 
 **Spazi dei nomi e schemi**
 
-Uno schema XMP è un insieme di nomi di proprietà in uno spazio dei nomi XML comune che include il tipo di dati e le informazioni descrittive. Uno schema XMP è identificato dal relativo URI dello spazio dei nomi XML. L’utilizzo degli spazi dei nomi evita conflitti tra proprietà in schemi diversi che hanno lo stesso nome ma un significato diverso.
+Uno schema XMP è un insieme di nomi di proprietà in uno spazio dei nomi XML comune che include
+il tipo di dati e le informazioni descrittive. Uno schema XMP è identificato dal relativo URI dello spazio dei nomi XML. L’utilizzo degli spazi dei nomi evita conflitti tra proprietà in schemi diversi che hanno lo stesso nome ma un significato diverso.
 
-Ad esempio, il **Creatore** proprietà in due schemi progettati indipendentemente potrebbe indicare la persona che ha creato la risorsa o l’applicazione che ha creato la risorsa (ad esempio, Adobe Photoshop).
+Ad esempio, la proprietà **Creator** in due schemi progettati in modo indipendente potrebbe indicare la persona che ha creato la risorsa o l&#39;applicazione che ha creato la risorsa (ad esempio, Adobe Photoshop).
 
-**Proprietà e valori dell’XMP**
+**Proprietà e valori XMP**
 
 L’XMP può includere proprietà di uno o più schemi. Ad esempio, un sottoinsieme tipico utilizzato da molte applicazioni Adobe potrebbe includere quanto segue:
 
 * Schema di base Dublino: `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`
 * Schema di base XMP: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
-* Schema per la gestione dei diritti XMP: `xmpRights:WebStatement`, `xmpRights:Marked`
-* Schema di gestione dei contenuti multimediali XMP: `xmpMM:DocumentID`
+* Schema gestione diritti XMP: `xmpRights:WebStatement`, `xmpRights:Marked`
+* Schema gestione supporti XMP: `xmpMM:DocumentID`
 
 **Alternative linguistiche**
 
-L’XMP consente di aggiungere una `xml:lang` proprietà per specificare la lingua del testo.
+XMP consente di aggiungere una proprietà `xml:lang` alle proprietà di testo per specificare la lingua del testo.
 
 ## Write-back XMP alle rappresentazioni {#xmp-writeback-to-renditions}
 
 Questa funzionalità di writeback XMP in [!DNL Adobe Experience Manager Assets] replica le modifiche ai metadati nelle rappresentazioni della risorsa originale.
-Quando modifichi i metadati di una risorsa da [!DNL Assets] Oppure, durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate nel nodo di metadati della gerarchia della risorsa. La funzione di writeback consente di propagare le modifiche ai metadati a tutte le rappresentazioni o a rappresentazioni specifiche della risorsa. La funzione riscrive solo le proprietà dei metadati che utilizzano `jcr` spazio dei nomi, ovvero una proprietà denominata `dc:title` viene scritto ma una proprietà denominata `mytitle` non lo è.
+Quando modifichi i metadati di una risorsa dall&#39;interno di [!DNL Assets] o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate nel nodo metadati nella gerarchia della risorsa. La funzione di writeback consente di propagare le modifiche ai metadati a tutte le rappresentazioni o a rappresentazioni specifiche della risorsa. La funzionalità riscrive solo le proprietà dei metadati che utilizzano lo spazio dei nomi `jcr`, ovvero una proprietà denominata `dc:title` viene riscritta ma una proprietà denominata `mytitle` no.
 
-Ad esempio, si consideri uno scenario in cui si modificano le [!UICONTROL Titolo] proprietà della risorsa con titolo `Classic Leather` a `Nylon`.
+Consideriamo ad esempio uno scenario in cui si modifica la proprietà [!UICONTROL Title] della risorsa con titolo `Classic Leather` in `Nylon`.
 
 ![metadati](assets/metadata.png)
 
-In questo caso, [!DNL Assets] salva le modifiche al **[!UICONTROL Titolo]** proprietà in `dc:title` parametro per i metadati della risorsa memorizzati nella gerarchia della risorsa.
+In questo caso, [!DNL Assets] salva le modifiche alla proprietà **[!UICONTROL Title]** nel parametro `dc:title` per i metadati della risorsa memorizzati nella gerarchia della risorsa.
 
-![metadati memorizzati nel nodo della risorsa nell’archivio](assets/metadata_stored.png)
+![metadati archiviati nel nodo della risorsa nell&#39;archivio](assets/metadata_stored.png)
 
 >[!IMPORTANT]
 >
->La funzione di writeback non è attivata per impostazione predefinita in [!DNL Assets]. Scopri come [abilita writeback dei metadati](#enable-xmp-writeback). MSM per risorse digitali non funziona se è abilitato il writeback dei metadati. Al writeback, l&#39;ereditarietà si interrompe.
+>La funzionalità di writeback non è attivata per impostazione predefinita in [!DNL Assets]. Scopri come [abilitare il writeback dei metadati](#enable-xmp-writeback). MSM per risorse digitali non funziona se è abilitato il writeback dei metadati. Al writeback, l&#39;ereditarietà si interrompe.
 
 ### Abilita writeback XMP {#enable-xmp-writeback}
 
-[!UICONTROL Writeback di metadati DAM] il flusso di lavoro viene utilizzato per riscrivere i metadati di una risorsa. Per abilitare il writeback, seguire uno dei tre metodi seguenti:
+Il flusso di lavoro [!UICONTROL Writeback di metadati DAM] viene utilizzato per eseguire il writeback dei metadati di una risorsa. Per abilitare il writeback, seguire uno dei tre metodi seguenti:
 
 * Utilizza i moduli di avvio.
-* Avvia manualmente `DAM MetaData Writeback` flusso di lavoro.
+* Avvia manualmente il flusso di lavoro `DAM MetaData Writeback`.
 * Configura il flusso di lavoro per la post-elaborazione.
 
 Per utilizzare i moduli di avvio, effettua le seguenti operazioni:
 
-1. In qualità di amministratore, accedi **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Moduli di avvio]**.
-1. Seleziona la [!UICONTROL Modulo di avvio] per i quali **[!UICONTROL Flusso di lavoro]** visualizzazioni colonna **[!UICONTROL Writeback di metadati DAM]**. Clic **[!UICONTROL Proprietà]** dalla barra degli strumenti.
+1. Come amministratore, accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Moduli di avvio]**.
+1. Selezionare il [!UICONTROL modulo di avvio] per il quale nella colonna **[!UICONTROL Flusso di lavoro]** viene visualizzato **[!UICONTROL Writeback di metadati DAM]**. Fare clic su **[!UICONTROL Proprietà]** nella barra degli strumenti.
 
-   ![Seleziona il modulo di avvio del writeback dei metadati DAM per modificarne le proprietà e attivarlo](assets/launcher-properties-metadata-writeback1.png)
+   ![Selezionare il modulo di avvio del writeback dei metadati DAM per modificarne le proprietà e attivarlo](assets/launcher-properties-metadata-writeback1.png)
 
-1. Seleziona **[!UICONTROL Attiva]** il **[!UICONTROL Proprietà modulo di avvio]** pagina. Fai clic su **[!UICONTROL Salva e chiudi]**.
+1. Selezionare **[!UICONTROL Attiva]** nella pagina **[!UICONTROL Proprietà modulo di avvio]**. Fai clic su **[!UICONTROL Salva e chiudi]**.
 
-Per applicare manualmente il flusso di lavoro a una risorsa una sola volta, applica [!UICONTROL Writeback di metadati DAM] dalla barra a sinistra.
+Per applicare manualmente il flusso di lavoro a una risorsa una sola volta, applica il flusso di lavoro [!UICONTROL Writeback di metadati DAM] dalla barra a sinistra.
 
 Per applicare il flusso di lavoro a tutte le risorse caricate, aggiungi il flusso di lavoro a un profilo di post-elaborazione.
 

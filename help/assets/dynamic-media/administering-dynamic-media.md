@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # Impostazione di Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Medie](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di gestire le risorse offrendo risorse visive avanzate per il merchandising e il marketing on-demand, scalabili automaticamente per il consumo su siti web, mobili e social. Utilizzando un set di risorse di origine principale, Dynamic Medie genera e distribuisce in tempo reale più varianti di rich content attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Medie](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ti consente di gestire le risorse distribuendo risorse di marketing e merchandising visivo su richiesta, scalabili automaticamente per l&#39;utilizzo su siti web, mobili e social. Utilizzando un set di risorse di origine principale, Dynamic Medie genera e distribuisce in tempo reale più varianti di rich content attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -40,6 +40,6 @@ Consulta anche i seguenti argomenti:
 
 >[!NOTE]
 >
->**Se si sta eseguendo l&#39;aggiornamento:**
+>**Se si sta aggiornando:**
 >
->* Dopo l’Adobe [!DNL Experience Manager] Quando sei in esecuzione, tutte le risorse caricate vengono automaticamente abilitate in Dynamic Medie, a meno che non siano state esplicitamente disabilitate dall’amministratore di sistema. Se ti trovi in un’istanza aggiornata di [!DNL Experience Manager] e per chi non ha mai utilizzato Dynamic Medie, probabilmente dovrai rielaborare le risorse per renderle abilitate per Dynamic Medie. Consulta [Rielaborazione delle risorse in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Dopo aver avviato l&#39;Adobe [!DNL Experience Manager], tutte le risorse caricate avranno Dynamic Medie abilitato automaticamente, a meno che non sia stato esplicitamente disabilitato dall&#39;amministratore di sistema. Se ti trovi in un&#39;istanza aggiornata di [!DNL Experience Manager] e non usi ancora Dynamic Medie, probabilmente dovrai rielaborare le risorse per renderle abilitate per Dynamic Medie. Vedi [Rielabora risorse in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).

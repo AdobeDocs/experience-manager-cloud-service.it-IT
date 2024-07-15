@@ -16,7 +16,7 @@ ht-degree: 5%
 Questa sezione descrive come creare un ambiente per il programma in Cloud Manager.
 
 >[!NOTE]
->Consulta [Gestione degli ambienti in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it) per scoprire come l’utente può creare un ambiente.
+>Per informazioni su come creare un ambiente, vedere [Gestione degli ambienti in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it).
 
 ## Obiettivo {#objective}
 
@@ -24,15 +24,15 @@ La sezione seguente descrive come creare un ambiente per il programma in Cloud M
 
 ## Passaggi per creare un ambiente per il progetto Screens in Cloud Manager {#steps-branch-creation}
 
-Una volta completata la creazione del progetto, l’aggiornamento della scheda di invito all’azione viene visualizzato nella pagina Panoramica di Cloud Manager.
+Una volta completata la creazione del progetto, puoi visualizzare l’aggiornamento della scheda di invito all’azione nella pagina Panoramica di Cloud Manager.
 
-1. Passa a Cloud Manager e seleziona l’icona per accedere al **Panoramica** pagina.
+1. Passa a Cloud Manager e seleziona l&#39;icona per accedere alla pagina **Panoramica** di Cloud Manager.
 
-1. Clic **Aggiungi ambiente** dal file di Cloud Manager **Panoramica** pagina.
+1. Fare clic su **Aggiungi ambiente** dalla pagina **Panoramica** di Cloud Manager.
 
    ![immagine](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
-1. Seleziona i dettagli dell’ambiente da **Aggiungi ambiente** e fare clic su **Salva**.
+1. Seleziona i dettagli dell&#39;ambiente dalla finestra di dialogo **Aggiungi ambiente** e fai clic su **Salva**.
 
    ![immagine](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
@@ -42,4 +42,4 @@ Una volta completata la creazione del progetto, l’aggiornamento della scheda d
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso come impostare un ambiente per il programma in Cloud Manager, puoi procedere. Il passaggio successivo nel processo di onboarding è [Esecuzione della pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
+Dopo aver appreso come impostare un ambiente per il programma in Cloud Manager, sei pronto per continuare. Il passaggio successivo nel processo di onboarding è [Esecuzione della pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

@@ -41,7 +41,7 @@ Dai un’occhiata al video Panoramica sulla versione di luglio 2022 per un riepi
 
 * La [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ora supporta le [scelte rapide da tastiera](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
-* AEM come Cloud Service [consegna di immagini ottimizzate per il web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=it) consente di migliorare in modo significativo la velocità della pagina distribuendo formati come WebP. Questo nuovo servizio offre anche opzioni più flessibili per il ridimensionamento e la trasformazione delle immagini. Tutte le versioni di [Componente immagine core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it) consente di utilizzare questo servizio e di distribuire immagini come WebP facendo clic su un’opzione nel criterio del componente immagine.
+* L&#39;AEM come [consegna di immagini ottimizzate per il web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=it) del Cloud Service consente di migliorare in modo significativo la velocità della pagina distribuendo formati come WebP. Questo nuovo servizio offre anche opzioni più flessibili per il ridimensionamento e la trasformazione delle immagini. Tutte le versioni del [Componente immagine core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it) consentono di utilizzare questo servizio e di distribuire immagini come WebP facendo clic su un&#39;opzione nel criterio del componente immagine.
 
 * Le attività di personalizzazione dell’AEM possono ora utilizzare frammenti di esperienza al posto delle offerte legacy. Questa funzione:
    * abilita un percorso di migrazione in cui il contenuto AEM promuoverebbe le offerte di Frammenti di esperienza anziché le offerte della libreria precedente, per fornire nel tempo contenuti con stili appropriati, in linea con la personalizzazione su larga scala.
@@ -82,7 +82,7 @@ Ora puoi configurare Adobe Experience Manager Assets in modo da [limitare il tip
 
 * **[Richiama DDX: un passaggio del flusso di lavoro AEM](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) è un linguaggio di markup dichiarativo i cui elementi rappresentano blocchi predefiniti di documenti. Questi blocchi predefiniti includono documenti PDF e XDP e altri elementi quali commenti, segnalibri e testo con stili. I documenti DDX sono modelli per i documenti e descrivono le caratteristiche desiderate dei documenti sorgente che dovrebbero essere visualizzate nei documenti risultanti. Un singolo DDX può essere utilizzato con una serie di documenti sorgente. È possibile utilizzare il passaggio Richiama e un flusso di lavoro AEM per eseguire varie operazioni, come assemblaggio e disassemblaggio di documenti, la creazione e la modifica di moduli Acrobat e XFA e altre operazioni descritte nella documentazione di [Riferimenti DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
 
-* **[Converti in PDF/A: un passaggio del flusso di lavoro AEM](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, in cui sono incorporati tutti i font e il file non è compresso. Ora è possibile utilizzare il passaggio Converti in PDF/A e un flusso di lavoro AEM per convertire i documenti o i file in qualsiasi formato in formato PDF/A.
+* **[Converti in PDF/A - Un passaggio del flusso di lavoro AEM](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, tutti i font sono incorporati e il file non è compresso. Ora è possibile utilizzare il passaggio Converti in PDF/A e un flusso di lavoro AEM per convertire i documenti o i file in qualsiasi formato in formato PDF/A.
 
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
@@ -104,8 +104,8 @@ Ora puoi configurare Adobe Experience Manager Assets in modo da [limitare il tip
 ### Novità {#what-is-new-foundation}
 
 * Il [Browser dell’archivio](/help/implementing/developing/tools/repository-browser.md) ora dispone di un campo di input del percorso che consente di passare direttamente a una cartella specifica nella gerarchia dell’archivio
-* La Distribuzione dei contenuti Sling (SCD) ora supporta un’azione esplicita di &quot;annullamento della validità&quot; per annullare la validità del contenuto senza pubblicarlo. Consulta [Memorizzazione in cache in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) per ulteriori dettagli.
-* La mod_macro adesso è disponibile in AEM as a Cloud Service. Consulta [questa tabella](/help/implementing/dispatcher/disp-overview.md) per un elenco dei moduli Apache supportati.
+* La Distribuzione dei contenuti Sling (SCD) ora supporta un’azione esplicita di &quot;annullamento della validità&quot; per annullare la validità del contenuto senza pubblicarlo. Per ulteriori dettagli, vedi [Memorizzazione in cache nella pagina AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation).
+* La mod_macro adesso è disponibile in AEM as a Cloud Service. Per un elenco dei moduli Apache supportati, consulta [questa tabella](/help/implementing/dispatcher/disp-overview.md).
 
 ### Miglioramenti degli strumenti di Dispatcher SDK in AEM as a Cloud Service {#dispatcher-tools-enhancements}
 
@@ -114,7 +114,7 @@ Ora puoi configurare Adobe Experience Manager Assets in modo da [limitare il tip
 
 ### Nuove funzioni disponibili nel canale prerelease di [!DNL Experience Manager] {#prerelease-features-foundation}
 
-* AEM as a Cloud Service è ora integrato con Unified Shell per migliorare l’esperienza utente e per coerenza con tutte le altre applicazioni di Experience Cloud. Consulta [AEM as a Cloud Service su Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) per ulteriori dettagli.
+* AEM as a Cloud Service è ora integrato con Unified Shell per migliorare l’esperienza utente e per coerenza con tutte le altre applicazioni di Experience Cloud. Per ulteriori dettagli, vedi [AEM as a Cloud Service su Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md).
 
 ## Connettori di Adobe Learning Manager {#learn-manage}
 

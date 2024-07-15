@@ -5,7 +5,7 @@ role: User
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -19,23 +19,23 @@ Dynamic Medie con funzionalità OpenAPI pone DAM al centro di un ecosistema agil
 
 Dynamic Medie con funzionalità OpenAPI offre i seguenti vantaggi chiave:
 
-* **Integrazioni senza soluzione di continuità**: Dynamic Medie con funzionalità OpenAPI offre un set completo di API di ricerca e consegna. Consente agli sviluppatori di [integrare la distribuzione delle risorse con le loro applicazioni](/help/assets/integrate-new-dynamic-media-apis.md). Le applicazioni includono applicazioni Adobe e di terze parti. Inoltre, offre [Interfaccia utente del selettore delle risorse micro-front-end](/help/assets/asset-selector.md) per cercare e selezionare le risorse approvate. Il selettore può essere integrato facilmente con qualsiasi applicazione basata su framework JavaScript come React JS, Angular JS e Vanilla JS.
+* **Integrazioni senza soluzione di continuità**: Dynamic Medie con funzionalità OpenAPI offre un set completo di API di ricerca e consegna. Consente agli sviluppatori di [integrare facilmente la distribuzione delle risorse con le applicazioni](/help/assets/integrate-new-dynamic-media-apis.md). Le applicazioni includono applicazioni Adobe e di terze parti. Inoltre, fornisce un&#39;interfaccia utente di [selezione risorse micro front-end](/help/assets/asset-selector.md) per cercare e selezionare le risorse approvate. Il selettore può essere integrato facilmente con qualsiasi applicazione basata su framework JavaScript come React JS, Angular JS e Vanilla JS.
 
-* **Gestione centralizzata delle risorse digitali**: DAM è l’unica fonte di verità per tutte le risorse digitali. Le risorse digitali vengono gestite centralmente in AEM Assets e distribuite alle applicazioni di consumo mediante riferimento utilizzando gli URL di consegna, senza copiare i file binari delle risorse.
+* **Gestione centralizzata delle risorse digitali**: DAM è l&#39;unica fonte di verità per tutte le risorse digitali. Le risorse digitali vengono gestite centralmente in AEM Assets e distribuite alle applicazioni di consumo mediante riferimento utilizzando gli URL di consegna, senza copiare i file binari delle risorse.
 
-* **Aggiornamenti in tempo reale**: qualsiasi modifica apportata alle risorse approvate in DAM, inclusi gli aggiornamenti della versione e le modifiche ai metadati, viene riflessa automaticamente negli URL di consegna. Con un valore TTL (Time-to-Live) breve di 10 minuti configurato per Dynamic Medie con funzionalità OpenAPI tramite CDN, gli aggiornamenti diventano visibili in meno di 10 minuti su tutte le interfacce di authoring e pubblicazione.
+* **Aggiornamenti in tempo reale**: qualsiasi modifica apportata alle risorse approvate in DAM, inclusi gli aggiornamenti della versione e le modifiche ai metadati, viene automaticamente riportata negli URL di consegna. Con un valore TTL (Time-to-Live) breve di 10 minuti configurato per Dynamic Medie con funzionalità OpenAPI tramite CDN, gli aggiornamenti diventano visibili in meno di 10 minuti su tutte le interfacce di authoring e pubblicazione.
 
-* **Coerenza del brand**: Solo [risorse approvate dal marchio](/help/assets/approved-assets.md) sono esposti ad applicazioni a valle. [I Brand Manager e gli addetti al marketing mantengono uno stretto controllo sulle risorse del brand](/help/assets/restrict-assets-delivery.md). È disponibile per l’uso solo la versione approvata e più recente della risorsa, che garantisce la coerenza del brand su tutti i canali e le applicazioni.
+* **Coerenza marchio**: solo [risorse approvate dal marchio](/help/assets/approved-assets.md) sono esposte alle applicazioni a valle. [I Brand Manager e gli addetti al marketing mantengono uno stretto controllo sulle risorse del brand](/help/assets/restrict-assets-delivery.md). È disponibile per l’uso solo la versione approvata e più recente della risorsa, che garantisce la coerenza del brand su tutti i canali e le applicazioni.
 
-* **Consegna ottimizzata per il web**: le risorse digitali vengono distribuite in formati ottimizzati per il web per migliorare i valori web vitali principali delle esperienze digitali. Ciò include il supporto per le rappresentazioni WebP per le immagini, lo streaming adattivo tramite protocolli HLS o DASH per i video e le rappresentazioni originali per i documenti.
+* **Consegna ottimizzata per il web**: le risorse digitali vengono distribuite in formati ottimizzati per il web in modo da migliorare i valori web fondamentali delle esperienze digitali. Ciò include il supporto per le rappresentazioni WebP per le immagini, lo streaming adattivo tramite protocolli HLS o DASH per i video e le rappresentazioni originali per i documenti.
 
-* **Trasformazione dinamica delle risorse**: il nostro sistema consente la trasformazione immediata delle immagini utilizzando parametri URL noti come modificatori di immagini. [Ad esempio, larghezza, altezza, rotazione, capovolgimento, qualità, ritaglio e formato](/help/assets/deliver-assets-apis.md). Dynamic Medie con funzionalità OpenAPI supporta anche le funzionalità di ritaglio avanzato delle immagini. Le rappresentazioni trasformate vengono generate dinamicamente e distribuite senza problemi tramite la rete CDN.
+* **Trasformazione dinamica delle risorse**: il nostro sistema consente la trasformazione immediata delle immagini utilizzando i parametri URL noti come modificatori di immagini. [Ad esempio, larghezza, altezza, rotazione, capovolgimento, qualità, ritaglio e formato](/help/assets/deliver-assets-apis.md). Dynamic Medie con funzionalità OpenAPI supporta anche le funzionalità di ritaglio avanzato delle immagini. Le rappresentazioni trasformate vengono generate dinamicamente e distribuite senza problemi tramite la rete CDN.
 
-* **Consegna sicura delle risorse**: Dynamic Medie con funzionalità OpenAPI fornisce un meccanismo per controllare l’accesso alle risorse digitali. Puoi specificare ruoli o gruppi di utenti come metadati per le risorse da proteggere e impostare un arco temporale predefinito durante il quale [solo gli utenti autorizzati possono accedere a queste risorse](/help/assets/restrict-assets-delivery.md). Gli URL di consegna per le risorse protette non vengono risolti per gli utenti non autorizzati durante il periodo limitato.
+* **Consegna sicura delle risorse**: Dynamic Medie con funzionalità OpenAPI fornisce un meccanismo per controllare l&#39;accesso alle risorse digitali. È possibile specificare ruoli o gruppi di utenti come metadati per le risorse da proteggere e impostare un intervallo di tempo predefinito durante il quale [solo gli utenti autorizzati possono accedere a queste risorse](/help/assets/restrict-assets-delivery.md). Gli URL di consegna per le risorse protette non vengono risolti per gli utenti non autorizzati durante il periodo limitato.
 
-* **Informazioni sui dati per prendere decisioni informate**: oltre alla gestione e alla distribuzione delle risorse, acquisisce informazioni approfondite sulla consegna dei dati in CDN, consentendo ai Brand Manager di tenere traccia delle metriche di consegna tra i canali. Consente loro di prendere decisioni basate sui dati per ottimizzare continuamente la governance delle risorse e le strategie di distribuzione.
+* **Informazioni sui dati per prendere decisioni informate**: oltre alla gestione e alla consegna delle risorse, acquisisce informazioni sulla consegna dei dati nelle consegne di risorse in CDN, consentendo ai Brand Manager di tenere traccia delle metriche di consegna tra i canali. Consente loro di prendere decisioni basate sui dati per ottimizzare continuamente la governance delle risorse e le strategie di distribuzione.
 
-![Nuovo diagramma di flusso dei dati di Dynamic Medie](assets/dm-openapi-dfd.png)
+![Nuovo diagramma di flusso dei dati di Dynamic Media](assets/dm-openapi-dfd.png)
 
 ## Prerequisiti per accedere a Dynamic Medie con funzionalità OpenAPI {#prerequisites-new-dynaminc-media-apis}
 
@@ -51,7 +51,7 @@ Prima di inviare una richiesta per abilitare Dynamic Medie con funzionalità Ope
 
 1. Da confermare a cura di Engineering e Product Management
 
-Per abilitare Dynamic Medie con funzionalità OpenAPI su AEM as a Cloud Service, invia un ticket di supporto per gli Adobi con i seguenti dettagli:
+Per abilitare Dynamic Medie con funzionalità OpenAPI su AEM as a Cloud Service, invia un ticket di supporto di Adobe con i seguenti dettagli:
 
 * Programma Cloud Service e ID ambiente
 
@@ -76,11 +76,11 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Medie con funzion
    </a>
    <div>
       <a href="/help/assets/approved-assets.md">
-      <strong>Approvare le risorse in Experience Manager Assets</strong>
+      <strong>Approva risorse in Experience Manager Assets</strong>
       </a>
    </div>
    <p>
-      <em>Approva le risorse in AEM Assets per semplificare la gestione delle risorse, garantendo un processo controllato ed efficiente.</em>
+      <em>Approva le risorse in AEM Assets per semplificare la gestione delle risorse, garantendo un processo controllato ed efficiente per la gestione delle risorse.</em>
    </p>
 </td>
 <td>
@@ -89,11 +89,11 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Medie con funzion
    </a>
    <div>
       <a href="/help/assets/integrate-new-dynamic-media-apis.md">
-      <strong>Integrare AEM Assets con le applicazioni a valle</strong>
+      <strong>Integrare AEM Assets con le applicazioni downstream</strong>
       </a>
    </div>
    <p>
-      <em>Integra la tua interfaccia utente personalizzata con l’archivio di Experience Manager Assets utilizzando le API di ricerca e consegna oppure utilizza il selettore delle risorse micro-front-end di Adobe.</em>
+      <em>Integra la tua interfaccia utente personalizzata con l'archivio di Experience Manager Assets utilizzando le API di ricerca e consegna oppure utilizza il selettore delle risorse micro-front-end di Adobe.</em>
    </p>
 </td>
 <td>
@@ -106,7 +106,7 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Medie con funzion
       </a>
    </div>
    <p>
-      <em>Interfaccia utente che interagisce con l’archivio di AEM Assets per cercare le risorse e utilizzarle nell’esperienza di authoring dell’applicazione.</em>
+      <em>Interfaccia utente che interagisce con l'archivio di AEM Assets per cercare le risorse e utilizzarle nell'esperienza di creazione dell'applicazione.</em>
    </p>
 </td>
 </table>
@@ -117,11 +117,11 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Medie con funzion
    </a>
    <div>
       <a href="/help/assets/search-assets-api.md">
-      <strong>Cercare risorse nell’archivio di Experience Manager Assets</strong>
+      <strong>Cercare risorse nell'archivio di Experience Manager Assets</strong>
       </a>
    </div>
    <p>
-      <em>Cerca le risorse nell’archivio di AEM Assets in modo che possano essere consegnate alle applicazioni a valle.</em>
+      <em>Cerca le risorse nell'archivio di AEM Assets in modo che possano essere distribuite alle applicazioni a valle.</em>
    </p>
 </td>
 <td>
@@ -130,11 +130,11 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Medie con funzion
    </a>
    <div>
       <a href="/help/assets/deliver-assets-apis.md">
-      <strong>Distribuzione di risorse alle applicazioni a valle</strong>
+      <strong>Distribuisci risorse alle applicazioni a valle</strong>
       </a>
    </div>
    <p>
-      <em>Distribuisci risorse alle applicazioni a valle integrate utilizzando un URL di consegna.</em>
+      <em>Distribuisci risorse alle applicazioni downstream integrate utilizzando un URL di consegna.</em>
    </p>
 </td>
 <td>
@@ -143,11 +143,11 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Medie con funzion
    </a>
    <div>
       <a href="/help/assets/restrict-assets-delivery.md">
-      <strong>Limitare l’accesso alle risorse in Experience Manager</strong>
+      <strong>Limita l'accesso alle risorse in Experience Manager</strong>
       </a>
    </div>
    <p>
-      <em> L’amministratore DAM o i Brand Manager limitano l’accesso configurando i ruoli per le risorse approvate nell’istanza di authoring as a Cloud Service dell’AEM.</em>
+      L'amministratore DAM <em> o i Brand Manager limitano l'accesso configurando i ruoli per le risorse approvate nell'istanza di authoring di AEM as a Cloud Service.</em>
    </p>
 </td>
 </table>

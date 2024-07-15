@@ -15,11 +15,11 @@ ht-degree: 29%
 
 # Concetti relativi all’authoring e alla pubblicazione {#authoring-publishing}
 
-Per un autore di contenuti, un’installazione as a Cloud Service all’AEM può essere considerata come tre livelli primari al livello più elementare
+Per un autore di contenuti, un’installazione di AEM as a Cloud Service può essere considerata come tre livelli principali al livello più elementare
 
 * Livello di authoring
 * Anteprima livello
-* Livello di pubblicazione
+* Livello Publish
 
 Questi livelli interagiscono per consentire di rendere i contenuti disponibili sul sito web in modo che i visitatori possano accedervi. Il flusso di lavoro di base è:
 
@@ -31,7 +31,7 @@ I contenuti possono essere di diversi tipi, tra cui pagine, risorse e pubblicazi
 
 ![Diagramma relativo a authoring, pubblicazione e dispatcher](assets/author-publish.jpg)
 
-Per maggiori dettagli sull&#39;architettura tecnica di AEM as a Cloud Service, si rimanda al documento [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
+Per ulteriori dettagli sull&#39;architettura tecnica di AEM as a Cloud Service, vedere il documento [Introduzione all&#39;architettura di Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
 
 {{edge-delivery-authoring}}
 
@@ -54,20 +54,20 @@ Sono anche disponibili attività amministrative per la gestione dei contenuti:
 
 Nell’ambiente di authoring è anche possibile effettuare attività di amministrazione di AEM.
 
-Consulta il documento [Guida rapida all’authoring](/help/sites-cloud/authoring/quick-start.md) panoramica del processo di authoring.
+Per una panoramica del processo di authoring, consulta il documento [Guida rapida all&#39;authoring](/help/sites-cloud/authoring/quick-start.md).
 
 ## Anteprima del contenuto {#previewing-content}
 
 AEM offre anche un servizio di anteprima che consente a sviluppatori e autori di contenuti di visualizzare in anteprima l’esperienza finale di un sito web prima che raggiunga l’ambiente di pubblicazione e sia disponibile pubblicamente.
 
-Consulta il documento [Anteprima del contenuto](/help/sites-cloud/authoring/sites-console/previewing-content.md) per ulteriori dettagli.
+Per ulteriori dettagli, vedere il documento [Anteprima del contenuto](/help/sites-cloud/authoring/sites-console/previewing-content.md).
 
 ## Ambiente di pubblicazione {#publish-environment}
 
 Quando è pronto, il contenuto del sito viene pubblicato nell’ambiente di pubblicazione del livello di pubblicazione. Qui le pagine del sito web vengono rese disponibili al pubblico previsto in base all’aspetto del modello di contenuto.
 
-Consulta il documento [Pubblicazione delle pagine](/help/sites-cloud/authoring/sites-console/publishing-pages.md) per ulteriori informazioni sulla pubblicazione e sull’annullamento della pubblicazione di pagine.
+Per ulteriori informazioni sulla pubblicazione e sull&#39;annullamento della pubblicazione delle pagine, vedere il documento [Pubblicazione delle pagine](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 ## Dispatcher {#dispatcher}
 
-Per ottimizzare le prestazioni per i visitatori del sito Web, il **[Dispatcher](/help/implementing/dispatcher/overview.md)** implementa il bilanciamento del carico e il caching sia per il livello di pubblicazione che per quello di anteprima.
+Per ottimizzare le prestazioni per i visitatori del sito Web, **[Dispatcher](/help/implementing/dispatcher/overview.md)** implementa il bilanciamento del carico e la memorizzazione nella cache sia per il livello di pubblicazione che per quello di anteprima.

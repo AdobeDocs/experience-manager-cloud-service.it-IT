@@ -51,7 +51,7 @@ Consulta la sezione [Configurazione di rete avanzata per aree geografiche di pub
 
 ## Registrazione {#logging}
 
-Se sono abilitate altre aree, tramite Cloud Manager saranno disponibili registri separati per ciascuna area. Per ulteriori informazioni, consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) e [Registri per aree geografiche di pubblicazione aggiuntive](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
+Se sono abilitate altre aree, i registri separati per ciascuna area saranno resi disponibili tramite Cloud Manager. Per ulteriori informazioni, vedere [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) e [Registri per altre aree geografiche di Publish](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
 
 ## Limitazioni {#limitations}
 

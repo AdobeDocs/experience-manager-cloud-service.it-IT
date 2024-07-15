@@ -1,6 +1,6 @@
 ---
 title: Gestire i metadati delle risorse digitali
-description: Scopri i tipi di metadati e come [!DNL Adobe Experience Manager Assets] consente di gestire i metadati delle risorse per semplificarne la classificazione e l’organizzazione. [!DNL Experience Manager] consente di organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
+description: Scopri i tipi di metadati e come [!DNL Adobe Experience Manager Assets] consente di gestire i metadati delle risorse per facilitarne la classificazione e l'organizzazione. [!DNL Experience Manager] consente di organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management, Metadata
@@ -20,7 +20,7 @@ ht-degree: 9%
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
-[!DNL Adobe Experience Manager Assets] conserva i metadati per ogni risorsa. Consente di categorizzare e organizzare più facilmente le risorse e aiuta le persone alla ricerca di una risorsa specifica. Con la possibilità di estrarre metadati dai file caricati in [!DNL Experience Manager Assets], la gestione dei metadati si integra con il flusso di lavoro creativo. Grazie alla possibilità di conservare e gestire i metadati con le risorse, è possibile organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
+[!DNL Adobe Experience Manager Assets] mantiene i metadati per ogni risorsa. Consente di categorizzare e organizzare più facilmente le risorse e aiuta le persone alla ricerca di una risorsa specifica. Grazie alla possibilità di estrarre i metadati dai file caricati in [!DNL Experience Manager Assets], la gestione dei metadati si integra con il flusso di lavoro creativo. Grazie alla possibilità di conservare e gestire i metadati con le risorse, è possibile organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -38,7 +38,7 @@ I metadati sono la raccolta di tutti i dati disponibili per una risorsa, ma che 
 * Nome della cartella in cui è contenuto.
 * Risorse correlate o tag applicati.
 
-Di seguito sono riportate le proprietà dei metadati di base [!DNL Experience Manager] può gestire per le risorse, in modo che gli utenti possano visualizzare tutte le risorse. Ad esempio, ordinare le risorse per data dell’ultima modifica è utile quando si tenta di individuare le risorse aggiunte o modificate di recente.
+Le proprietà di metadati di base che [!DNL Experience Manager] può gestire per le risorse consentono agli utenti di visualizzare tutte le risorse. Ad esempio, ordinare le risorse per data dell’ultima modifica è utile quando si tenta di individuare le risorse aggiunte o modificate di recente.
 
 Puoi aggiungere più dati di alto livello alle risorse digitali, ad esempio:
 
@@ -56,7 +56,7 @@ Con l’aggiunta dei metadati, il valore di una risorsa digitale aumenta, perch�
 * Più semplice da gestire: puoi trovare e modificare più facilmente le risorse che hanno uno stesso set di proprietà.
 * Completa: la risorsa contiene più informazioni e contesto grazie a un maggior numero di metadati.
 
-Per questi motivi: [!DNL Assets] offre i mezzi giusti per creare, gestire e scambiare metadati per le risorse digitali.
+Per questi motivi, [!DNL Assets] offre i mezzi giusti per creare, gestire e scambiare metadati per le risorse digitali.
 
 ## Tipi di metadati {#types-of-metadata}
 
@@ -76,10 +76,10 @@ Questo tipo di metadati aiuta gli utenti a comprendere e utilizzare in modo effi
 
 ### Metadati informativi
 
-I metadati informativi forniscono informazioni descrittive per migliorare la comprensione dei contenuti, facilitando l’individuazione dei contenuti e la ricercabilità. Include parole chiave, didascalie e descrizioni. <br>Ad esempio, quando gestiamo un video in Experience Manager Assets, possiamo includere i seguenti metadati informativi:
+I metadati informativi forniscono informazioni descrittive per migliorare la comprensione dei contenuti, facilitando l’individuazione dei contenuti e la ricercabilità. Include parole chiave, didascalie e descrizioni. <br>Ad esempio, durante la gestione di un video in Experience Manager Assets, è possibile includere i seguenti metadati informativi:
 
-* **Parole chiave**: marketing, lancio di prodotti, promozione
-* **Didascalia**: Presentazione di nuovi prodotti con caratteristiche entusiasmanti
+* **Parole chiave**: marketing, lancio prodotto, promozione
+* **Didascalia**: Presentazione del nostro prodotto più recente con caratteristiche entusiasmanti
 * **Descrizione**: panoramica dettagliata del contenuto video.
 
 ### Metadati amministrativi
@@ -127,14 +127,14 @@ La data dell’ultima modifica e l’utente non cambiano:
 
 Esistono diversi modi per incorporare i metadati nei file. È disponibile il supporto di una serie di standard di codifica:
 
-* XMP: utilizzato da [!DNL Assets] per memorizzare i metadati estratti all’interno dell’archivio.
+* XMP: utilizzato da [!DNL Assets] per memorizzare i metadati estratti all&#39;interno dell&#39;archivio.
 * ID3: per file audio e video.
 * Exif: per file di immagine.
-* Altro/Legacy: da [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel]e così via.
+* Altro/Legacy: da [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] e così via.
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) è uno standard aperto utilizzato da [!DNL Experience Manager Assets] gestione di tutti i metadati. Lo standard offre una codifica universale dei metadati che può essere incorporata in tutti i formati di file. Adobe e altre aziende supportano lo standard XMP in quanto fornisce un modello di contenuti avanzati. Utilizzatori dello standard XMP e di [!DNL Experience Manager Assets] avere una piattaforma potente su cui basarsi. Per ulteriori informazioni, consulta [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) è uno standard aperto utilizzato da [!DNL Experience Manager Assets] per la gestione di tutti i metadati. Lo standard offre una codifica universale dei metadati che può essere incorporata in tutti i formati di file. Adobe e altre aziende supportano lo standard XMP in quanto fornisce un modello di contenuti avanzati. Gli utenti dello standard XMP e di [!DNL Experience Manager Assets] dispongono di una piattaforma potente su cui basarsi. Per ulteriori informazioni, vedere [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -150,41 +150,41 @@ I tag ID3 sono progettati per il formato di file MP3. Informazioni aggiuntive su
 
 ### Exif {#exif}
 
-Exchangeable image file format (Exif) è il formato di metadati più diffuso nella fotografia digitale. Fornisce un modo per incorporare un vocabolario fisso di proprietà di metadati in molti formati di file, come JPEG, TIFF, RIFF e WAV. Exif memorizza i metadati come coppie di un nome di metadati e un valore di metadati. Queste coppie nome-valore-metadati sono anche denominate tag, da non confondere con l’assegnazione tag in [!DNL Experience Manager]. Le moderne fotocamere digitali creano metadati Exif e i moderni software di grafica lo supportano. Il formato Exif è il minimo comune denominatore per la gestione dei metadati, in particolare per le immagini.
+Exchangeable image file format (Exif) è il formato di metadati più diffuso nella fotografia digitale. Fornisce un modo per incorporare un vocabolario fisso di proprietà di metadati in molti formati di file, come JPEG, TIFF, RIFF e WAV. Exif memorizza i metadati come coppie di un nome di metadati e un valore di metadati. Queste coppie nome-valore-metadati sono anche denominate tag, da non confondere con l&#39;assegnazione tag in [!DNL Experience Manager]. Le moderne fotocamere digitali creano metadati Exif e i moderni software di grafica lo supportano. Il formato Exif è il minimo comune denominatore per la gestione dei metadati, in particolare per le immagini.
 
 Una limitazione importante di Exif è che alcuni formati di file di immagine popolari come BMP, GIF o PNG non lo supportano.
 
-I campi di metadati definiti da Exif sono tipicamente di natura tecnica e sono di uso limitato per la gestione dei metadati descrittivi. Per questo motivo: [!DNL Experience Manager Assets] offre la mappatura delle proprietà Exif in [schemi metadati comuni](metadata-schemas.md) e XMP.
+I campi di metadati definiti da Exif sono tipicamente di natura tecnica e sono di uso limitato per la gestione dei metadati descrittivi. Per questo motivo, [!DNL Experience Manager Assets] offre la mappatura delle proprietà Exif in [schemi di metadati comuni](metadata-schemas.md) e in XMP.
 
 #### Altri metadati {#other-metadata}
 
-Altri metadati che possono essere incorporati dai file includono [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel]e così via.
+Altri metadati che possono essere incorporati dai file includono [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] e così via.
 
 ## Gestire i metadati delle risorse digitali {#manage-assets-metadata}
 
-Enterprise Manager Assets consente di modificare i metadati di più risorse contemporaneamente in modo da poter propagare rapidamente in blocco le modifiche comuni ai metadati delle risorse. Utilizza il [!UICONTROL Proprietà] per cambiare le proprietà dei metadati in un valore comune o aggiungere o modificare tag. Per personalizzare la pagina Proprietà dei metadati, ad esempio per aggiungere, modificare ed eliminare le proprietà dei metadati, utilizzare l&#39;editor schema.
+Enterprise Manager Assets consente di modificare i metadati di più risorse contemporaneamente in modo da poter propagare rapidamente in blocco le modifiche ai metadati comuni alle risorse. Utilizzare la pagina [!UICONTROL Proprietà] per modificare le proprietà dei metadati in un valore comune o aggiungere o modificare tag. Per personalizzare la pagina Proprietà dei metadati, ad esempio per aggiungere, modificare ed eliminare le proprietà dei metadati, utilizzare l&#39;editor schema.
 
 >[!NOTE]
 >
->I metodi di modifica in blocco funzionano per le risorse disponibili in una cartella o in una raccolta. Per le risorse disponibili in più cartelle o che corrispondono a un criterio comune, è possibile: [aggiorna in blocco i metadati dopo la ricerca](/help/assets/search-assets.md#metadata-updates).
+>I metodi di modifica in blocco funzionano per le risorse disponibili in una cartella o in una raccolta. Per le risorse disponibili in più cartelle o che corrispondono a un criterio comune, è possibile [aggiornare in blocco i metadati dopo la ricerca](/help/assets/search-assets.md#metadata-updates).
 
 1. Passa alla posizione delle risorse da modificare.
 1. Seleziona le risorse per le quali desideri modificare le proprietà comuni.
-1. Dalla barra degli strumenti, seleziona **[!UICONTROL Proprietà]** per aprire [!UICONTROL Proprietà] per le risorse selezionate.
+1. Dalla barra degli strumenti, seleziona **[!UICONTROL Proprietà]** per aprire la pagina [!UICONTROL Proprietà] per le risorse selezionate.
 
    >[!NOTE]
    >
-   >Quando selezioni più risorse, per queste viene selezionato il modulo principale comune più basso. In altre parole, [!UICONTROL Proprietà] nella pagina vengono visualizzati solo i campi di metadati comuni in [!UICONTROL Proprietà] pagine di tutte le singole risorse.
+   >Quando selezioni più risorse, per queste viene selezionato il modulo principale comune più basso. In altre parole, nella pagina [!UICONTROL Proprietà] vengono visualizzati solo i campi di metadati comuni nelle pagine [!UICONTROL Proprietà] di tutte le singole risorse.
 
 1. Modifica le proprietà dei metadati per le risorse selezionate nelle varie schede.
 1. Per visualizzare l’editor dei metadati per una risorsa specifica, annulla la selezione delle risorse rimanenti nell’elenco. I campi dell’editor di metadati vengono compilati con i metadati di una particolare risorsa.
 
    >[!NOTE]
    >
-   >* In [!UICONTROL Proprietà] pagina, puoi rimuovere le risorse dall’elenco annullando la selezione. Per impostazione predefinita, nell’elenco delle risorse sono selezionate tutte le risorse. I metadati delle risorse rimosse dall’elenco non vengono aggiornati.
-   >* Nella parte superiore dell’elenco delle risorse, seleziona la casella di controllo accanto a **[!UICONTROL Titolo]** per passare dalla selezione delle risorse alla cancellazione dell’elenco.
+   >* Nella pagina [!UICONTROL Proprietà] è possibile rimuovere le risorse dall&#39;elenco delle risorse annullando la selezione. Per impostazione predefinita, nell’elenco delle risorse sono selezionate tutte le risorse. I metadati delle risorse rimosse dall’elenco non vengono aggiornati.
+   >* Nella parte superiore dell&#39;elenco delle risorse, seleziona la casella di controllo accanto a **[!UICONTROL Titolo]** per scegliere tra la selezione delle risorse e la cancellazione dell&#39;elenco.
 
-1. Per selezionare uno schema di metadati diverso per le risorse, seleziona **[!UICONTROL Impostazioni]** dalla barra degli strumenti e seleziona lo schema desiderato. Salva le modifiche.
+1. Per selezionare uno schema metadati diverso per le risorse, seleziona **[!UICONTROL Impostazioni]** dalla barra degli strumenti e seleziona lo schema desiderato. Salva le modifiche.
 1. Per aggiungere i nuovi metadati a quelli esistenti nei campi che contengono più valori, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Seleziona **[!UICONTROL Invia]**.
 
    >[!CAUTION]
@@ -193,9 +193,9 @@ Enterprise Manager Assets consente di modificare i metadati di più risorse cont
 
 ## Metadati personalizzati tramite profilo di elaborazione {#metadata-compute-service}
 
-Risorse come [!DNL Cloud Service] può generare metadati personalizzati per una risorsa utilizzando i servizi nativi per il cloud. Configura un profilo di elaborazione per generare metadati personalizzati. Consulta [come utilizzare il profilo di elaborazione](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Assets as a [!DNL Cloud Service] può generare metadati personalizzati per una risorsa utilizzando servizi nativi per il cloud. Configura un profilo di elaborazione per generare metadati personalizzati. Consulta [come utilizzare il profilo di elaborazione](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
-![Rappresentazione dei metadati nel profilo di elaborazione](assets/processing-profile-metadata.png)
+![Rendering metadati nel profilo di elaborazione](assets/processing-profile-metadata.png)
 
 >[!TIP]
 >
@@ -216,28 +216,28 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 
 Gli schemi di metadati sono insiemi predefiniti di definizioni di proprietà di metadati che possono essere utilizzati in varie applicazioni. Le proprietà sono sempre associate a una risorsa, il che significa che si riferiscono alla risorsa.
 
-Puoi anche progettare i tuoi schemi di metadati se non ne esiste alcuno che soddisfi le tue esigenze. Non duplicare le informazioni esistenti. All’interno di un’organizzazione, la separazione dei dati di schema semplifica la condivisione dei metadati. [!DNL Experience Manager] fornisce un elenco predefinito degli schemi di metadati più popolari. L’elenco ti consente di avviare rapidamente la strategia per i metadati e di scegliere le proprietà dei metadati necessarie.
+Puoi anche progettare i tuoi schemi di metadati se non ne esiste alcuno che soddisfi le tue esigenze. Non duplicare le informazioni esistenti. All’interno di un’organizzazione, la separazione dei dati di schema semplifica la condivisione dei metadati. [!DNL Experience Manager] fornisce un elenco predefinito degli schemi di metadati più comuni. L’elenco ti consente di avviare rapidamente la strategia per i metadati e di scegliere le proprietà dei metadati necessarie.
 
 Di seguito sono elencati gli schemi di metadati supportati.
 
 ### Metadati standard {#standard-metadata}
 
-* CC - [!DNL Dublin Core] è un set importante e ampiamente utilizzato di metadati.
+* DC - [!DNL Dublin Core] è un insieme importante e ampiamente utilizzato di metadati.
 * DICOM - Imaging digitale e comunicazioni nella medicina.
-* `Iptc4xmpCore` e `iptc4xmpExt` - Lo standard internazionale per le comunicazioni stampa contiene molti metadati specifici per l&#39;argomento.
+* `Iptc4xmpCore` e `iptc4xmpExt` - International Press Communications Standard contiene molti metadati specifici dell&#39;oggetto.
 * RDF - Resource Description Framework - per metadati web semantici generici.
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpBJ` - Job ticket di base.
 
 ### Metadati specifici dell’applicazione {#application-specific-metadata}
 
-I metadati specifici dell’applicazione includono metadati tecnici e descrittivi. Se si utilizzano tali metadati, è possibile che altre applicazioni non siano in grado di utilizzarli. Ad esempio, un’altra applicazione per il rendering di immagini potrebbe non essere in grado di accedere [!DNL Adobe Photoshop] metadati. È possibile creare un passaggio del flusso di lavoro che modifichi una proprietà specifica dell&#39;applicazione in una proprietà standard.
+I metadati specifici dell’applicazione includono metadati tecnici e descrittivi. Se si utilizzano tali metadati, è possibile che altre applicazioni non siano in grado di utilizzarli. Ad esempio, un&#39;altra applicazione per il rendering di immagini potrebbe non essere in grado di accedere ai metadati [!DNL Adobe Photoshop]. È possibile creare un passaggio del flusso di lavoro che modifichi una proprietà specifica dell&#39;applicazione in una proprietà standard.
 
-* ACDSee - Metadati gestiti da [!DNL ACDSee] programma. Consulta [www.acdsee.com/](https://www.acdsee.com/).
+* ACDSee: metadati gestiti dal programma [!DNL ACDSee]. Vedi [www.acdsee.com/](https://www.acdsee.com/).
 * Album - [!DNL Adobe Photoshop Album].
 * CQ - Utilizzato da [!DNL Experience Manager Assets].
 * DAM - Utilizzato da [!DNL Experience Manager Assets].
-* DEX - [Esplora descrizione Optima SC](https://www.optimasc.com/products/dex/index.html) è una raccolta di strumenti per la gestione dei metadati e dei file per i sistemi operativi Windows.
+* DEX - [Optima SC Description Explorer](https://www.optimasc.com/products/dex/index.html) è una raccolta di strumenti per la gestione dei metadati e dei file per i sistemi operativi Windows.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
@@ -249,7 +249,7 @@ I metadati specifici dell’applicazione includono metadati tecnici e descrittiv
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
-* PIÙ - [Sistema universale di licenze per immagini](https://www.useplus.com).
+* PLUS - [Sistema universale di licenze per le foto](https://www.useplus.com).
 <!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * PRL - PriSM Rights Language.
 * PUR - Diritti di utilizzo PRISM.
@@ -258,7 +258,7 @@ I metadati specifici dell’applicazione includono metadati tecnici e descrittiv
 ### Metadati specifici per la fotografia {#photography-specific-metadata}
 
 * Exif - Informazioni tecniche dalla fotocamera, inclusa la posizione GPS.
-* CRS - [!DNL Camera Raw] schema.
+* CRS - Schema [!DNL Camera Raw].
 * `iptc4xmpCore` e `iptc4xmpExt`.
 * TIFF: metadati di immagini (non solo per immagini TIFF).
 
@@ -272,7 +272,7 @@ I metadati specifici dell’applicazione includono metadati tecnici e descrittiv
 ### Metadati specifici per contenuti multimediali {#multimedia-specific-metadata}
 
 * `xmpDM` - [!DNL Dynamic Media].
-* `xmpMM` - Gestione dei supporti.
+* `xmpMM` - Gestione file multimediali.
 
 ## Flussi di lavoro basati sui metadati {#metadata-driven-workflows}
 
@@ -280,7 +280,7 @@ La creazione di flussi di lavoro basati sui metadati consente di automatizzare a
 
 * Il flusso di lavoro può verificare se un’immagine ha un titolo o meno. In caso contrario, il sistema notifica l&#39;aggiunta di un titolo.
 * Il flusso di lavoro può verificare se un avviso di copyright su una risorsa ne consente la distribuzione o meno. In questo modo, il sistema invia la risorsa a un server o all&#39;altro.
-* Un flusso di lavoro può verificare la presenza di risorse senza metadati o risorse obbligatori predefiniti con *non valido* metadati.
+* Un flusso di lavoro può verificare la presenza di risorse senza metadati predefiniti e obbligatori o risorse con metadati *non validi*.
 
 **Consulta anche**
 

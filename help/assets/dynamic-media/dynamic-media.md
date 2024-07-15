@@ -14,9 +14,9 @@ ht-degree: 8%
 
 # Utilizzo di Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Medie](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di fornire risorse di marketing e merchandising visive avanzate on-demand, scalabili automaticamente per il consumo su siti web, mobili e social network. Utilizzando un set di risorse di origine principale, Dynamic Medie genera e distribuisce in tempo reale più varianti di rich content attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Medie](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di fornire risorse di marketing e merchandising visive avanzate su richiesta, scalabili automaticamente per l&#39;utilizzo su siti Web, mobili e social network. Utilizzando un set di risorse di origine principale, Dynamic Medie genera e distribuisce in tempo reale più varianti di rich content attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni.
 
-Dynamic Medie offre esperienze di visualizzazione interattiva, tra cui zoom, 360° rotazione e video. Dynamic Medie incorpora in modo esclusivo i flussi di lavoro della soluzione Adobe Experience Manager per la gestione delle risorse digitali (Assets) al fine di semplificare e semplificare il processo di gestione delle campagne digitali.
+Dynamic Medie offre esperienze di visualizzazione interattiva, tra cui zoom, 360° rotazione e video. Dynamic Medie incorpora in modo esclusivo i flussi di lavoro della soluzione Adobe Experience Manager di gestione delle risorse digitali (Assets) per semplificare e semplificare il processo di gestione delle campagne digitali.
 
 <!-- >[!NOTE]
 >
@@ -24,7 +24,7 @@ Dynamic Medie offre esperienze di visualizzazione interattiva, tra cui zoom, 360
 
 ## Operazioni possibili con Dynamic Medie {#what-you-can-do-with-dynamic-media}
 
-Dynamic Medie consente di gestire le risorse prima di pubblicarle. Le modalità di utilizzo delle risorse in generale sono descritte in dettaglio in [Utilizzo delle risorse digitali](/help/assets/manage-digital-assets.md). Gli argomenti generali includono il caricamento, il download, la modifica e la pubblicazione delle risorse, la visualizzazione e la modifica delle proprietà e la ricerca delle risorse.
+Dynamic Medie consente di gestire le risorse prima di pubblicarle. Le modalità di utilizzo delle risorse in generale sono descritte in dettaglio in [Utilizzo di Digital Assets](/help/assets/manage-digital-assets.md). Gli argomenti generali includono il caricamento, il download, la modifica e la pubblicazione delle risorse, la visualizzazione e la modifica delle proprietà e la ricerca delle risorse.
 
 Le funzioni disponibili solo in Dynamic Medie includono:
 
@@ -37,11 +37,11 @@ Le funzioni disponibili solo in Dynamic Medie includono:
 
 * [Set 360 gradi](spin-sets.md)
 * [Video](video.md)
-* [Distribuzione di risorse Dynamic Medie](delivering-dynamic-media-assets.md)
-* [Gestione delle risorse](managing-assets.md)
+* [Distribuzione di Dynamic Medie Assets](delivering-dynamic-media-assets.md)
+* [Gestione di Assets](managing-assets.md)
 * [Utilizzo delle visualizzazioni rapide per creare finestre popup personalizzate](custom-pop-ups.md)
 
-Vedi anche [Configurazione di Dynamic Medie](administering-dynamic-media.md).
+Vedere anche [Configurazione di Dynamic Medie](administering-dynamic-media.md).
 
 <!-- 
 
@@ -64,7 +64,7 @@ Quando fai clic su una risorsa di immagine, la visualizzazione della risorsa cam
 
 ### Rappresentazioni dinamiche {#dynamic-renditions}
 
-Rappresentazioni dinamiche, come immagini e predefiniti visualizzatore (sotto **[!UICONTROL Dinamico]**) sono disponibili quando Dynamic Medie è abilitato.
+Le rappresentazioni dinamiche, come i predefiniti immagine e visualizzatore (in **[!UICONTROL Dinamico]**), sono disponibili quando Dynamic Medie è abilitato.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
@@ -82,7 +82,7 @@ Le risorse abilitate per Dynamic Medie includono `pyramid.tiffs`.
 
 ### Modifica visualizzazioni risorse {#asset-views-change}
 
-Con Dynamic Medie abilitato, puoi ingrandire e ridurre facendo clic sul pulsante `+` e `-` pulsanti. È inoltre possibile selezionare di eseguire lo zoom in un&#39;area specifica. Ripristina consente di tornare alla versione originale e di visualizzare l&#39;immagine a schermo intero facendo clic sulle frecce diagonali. Dynamic Medie abilitato viene visualizzato come segue:
+Se Dynamic Medie è abilitato, è possibile ingrandire e ridurre facendo clic sui pulsanti `+` e `-`. È inoltre possibile selezionare di eseguire lo zoom in un&#39;area specifica. Ripristina consente di tornare alla versione originale e di visualizzare l&#39;immagine a schermo intero facendo clic sulle frecce diagonali. Dynamic Medie abilitato viene visualizzato come segue:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

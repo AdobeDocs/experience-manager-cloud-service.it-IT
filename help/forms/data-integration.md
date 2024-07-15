@@ -1,5 +1,5 @@
 ---
-title: Come connettere un database a [!DNL AEM Forms] as a Cloud Service?
+title: Come connettere un database a  [!DNL AEM Forms] as a Cloud Service?
 description: Recupera e salva i dati nei servizi web RESTful, nei servizi web basati su SOAP e nei servizi OData da un modulo adattivo o da un flusso di lavoro AEM.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
@@ -30,9 +30,9 @@ Anche se un sistema modulare distribuito ha i propri vantaggi, la sfida consiste
 
 ## Panoramica sull’integrazione dei dati {#data-integration-overview}
 
-![aem-forms-data-integer](assets/aem-forms-data-integeration.png)
+![aem-forms-data-integeration](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] L’integrazione dei dati consente di configurare e collegare diverse origini dati con [!DNL AEM Forms]. Fornisce un’interfaccia utente intuitiva per creare uno schema unificato di rappresentazione dei dati di entità business e servizi tra origini dati connesse. La rappresentazione unificata è nota come modello di dati del modulo (FDM), un’estensione dello schema JSON. Le entità in un modello dati modulo (FDM) sono denominate oggetti modello dati. Un modello di dati modulo (FDM) consente di:
+L&#39;integrazione dei dati di [!DNL AEM Forms] consente la configurazione e la connessione di diverse origini dati con [!DNL AEM Forms]. Fornisce un’interfaccia utente intuitiva per creare uno schema unificato di rappresentazione dei dati di entità business e servizi tra origini dati connesse. La rappresentazione unificata è nota come modello di dati del modulo (FDM), un’estensione dello schema JSON. Le entità in un modello dati modulo (FDM) sono denominate oggetti modello dati. Un modello di dati modulo (FDM) consente di:
 
 * Accesso a oggetti, proprietà e servizi del modello dati da origini dati connesse.
 * Creare oggetti e proprietà del modello dati personalizzato
@@ -50,7 +50,7 @@ Dopo aver creato un modello dati modulo (FDM), è possibile utilizzarlo per:
 
 Il primo passaggio per implementare l’integrazione dei dati per inviare un modulo adattivo a un database consiste nell’identificare e configurare le origini dati in cui sono memorizzate le informazioni che desideri utilizzare in Adaptive Forms. Successivamente, verrà creato un modello dati modulo (FDM) che utilizza oggetti, proprietà e servizi del modello dati da una o più origini dati. È possibile creare un Forms adattivo basato su un modello di dati del modulo (FDM) in cui i campi del modulo adattivo sono associati alle rispettive proprietà dell’origine dati.
 
-[!DNL AEM Forms] consente inoltre di creare un modello dati modulo (FDM) indipendente dalle origini dati e di associare o associare in un secondo momento gli oggetti e le proprietà del modello dati modulo (FDM) all&#39;origine dati. Elimina tutte le dipendenze dalle origini dati mentre si lavora su un modello dati modulo (FDM).
+[!DNL AEM Forms] consente inoltre di creare un modello dati modulo (FDM) indipendente dalle origini dati e di associare o associare in seguito gli oggetti e le proprietà del modello dati modulo (FDM) all&#39;origine dati. Elimina tutte le dipendenze dalle origini dati mentre si lavora su un modello dati modulo (FDM).
 
 Per iniziare, comprendere e implementare l’integrazione dei dati, leggi quanto segue:
 

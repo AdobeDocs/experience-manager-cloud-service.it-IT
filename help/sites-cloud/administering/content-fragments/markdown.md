@@ -14,9 +14,9 @@ ht-degree: 88%
 
 # Markdown {#markdown}
 
-Quando sei [authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) i tuoi frammenti di contenuto che potresti avere [Campi di testo su più righe](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) definito con **Tipo predefinito** di **Markdown**. L’editor dei frammenti di contenuto utilizza *markdown* sintassi per consentire di scrivere facilmente contenuti sia per la creazione delle pagine che per la distribuzione headless:
+Quando [crei](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) i frammenti di contenuto, è possibile che siano definiti [campi di testo su più righe](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) con **Tipo predefinito** di **Markdown**. L&#39;editor dei frammenti di contenuto utilizza la sintassi *markdown* per consentire di scrivere facilmente contenuti sia per la creazione delle pagine che per la distribuzione headless:
 
-![Campo di testo su più righe Markdown nell’editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
+![Campo testo su più righe Markdown nell&#39;editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
 Puoi definire:
 

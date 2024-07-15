@@ -26,7 +26,7 @@ Questo documento illustra come creare e gestire le pagine in Adobe Experience Ma
 
 >[!TIP]
 >
->Ce ne sono diversi [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) che puoi utilizzare dalla console dei siti web per organizzare le pagine in modo più efficiente.
+>Esistono diverse [scelte rapide da tastiera](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) che è possibile utilizzare dalla console dei siti Web per organizzare le pagine in modo più efficiente.
 
 {{edge-delivery-authoring}}
 
@@ -95,7 +95,7 @@ Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma
 >
 >Tieni presente che alcuni browser (ad esempio le versioni precedenti di IE) possono accettare solo gli URL fino a una certa lunghezza; pertanto, esistono anche delle ragioni tecniche per cui è bene mantenere brevi i nomi di pagina.
 
-Durante la creazione di una pagina, AEM [convalida il nome della pagina in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
+Durante la creazione di una pagina, l&#39;AEM [convalida il nome della pagina in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte dall&#39;AEM e dal JCR.
 
 I caratteri minimi consentiti sono:
 
@@ -113,7 +113,7 @@ Per informazioni complete su tutti i caratteri consentiti, consulta le [convenzi
 
 #### Titolo {#title}
 
-Se si specifica solo una pagina **Titolo** quando si crea una pagina, l’AEM la deriva **Nome** da questa stringa e [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
+Se specifichi solo una pagina **Titolo** durante la creazione di una pagina, AEM deriva la pagina **Nome** da questa stringa e [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte da AEM e JCR.
 
 Un campo **Titolo** che contiene caratteri non validi viene accettato, ma nel nome derivato dal titolo tali caratteri vengono sostituiti. Ad esempio:
 
@@ -124,7 +124,7 @@ Un campo **Titolo** che contiene caratteri non validi viene accettato, ma nel no
 
 #### Nome {#name}
 
-Quando si specifica una pagina **Nome** durante la creazione di una pagina, AEM [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto dall&#39;AEM e dal JCR. Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando AEM rileva caratteri non validi, il campo viene evidenziato con un messaggio esplicativo.
+Se specifichi il nome della pagina **Name** durante la creazione, l&#39;AEM [lo convalida in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte dall&#39;AEM e da JCR. Non è possibile utilizzare caratteri non validi nel campo **Nome**. Quando AEM rileva caratteri non validi, il campo viene evidenziato con un messaggio esplicativo.
 
 ![Esempio di immissione di un nome di pagina non valido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -185,7 +185,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
 
 1. Nel primo passaggio della creazione guidata puoi effettuare le seguenti operazioni:
 
-   * Seleziona il modello da utilizzare per creare la nuova pagina, quindi seleziona **Successivo** per procedere.
+   * Seleziona il modello da utilizzare per creare la nuova pagina, quindi seleziona **Successivo** per continuare.
 
    * Seleziona **Annulla** per interrompere la procedura.
 
@@ -193,7 +193,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
 
 1. Nell’ultimo passaggio della creazione guidata puoi effettuare le seguenti operazioni:
 
-   * Utilizza le tre schede per inserire [proprietà pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md) vuoi assegnarlo alla nuova pagina, quindi seleziona **Crea** per creare effettivamente la pagina.
+   * Utilizza le tre schede per immettere le [proprietà di pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md) da assegnare alla nuova pagina, quindi seleziona **Crea** per creare effettivamente la pagina.
 
    * Utilizza **Indietro** per tornare alla selezione del modello.
 
@@ -206,14 +206,14 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
    * **Nome**:
 
       * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
-      * Se si specifica una pagina **Nome** durante la creazione di una pagina, AEM [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposto dall&#39;AEM e dal JCR.
+      * Se durante la creazione di una pagina si specifica il nome **Name**, l&#39;AEM [convalida il nome in base alle convenzioni](/help/implementing/developing/introduction/naming-conventions.md) imposte da AEM e JCR.
       * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio esplicativo per indicare i caratteri da rimuovere o sostituire.
 
    >[!TIP]
    >
    >Consulta [Convenzioni di denominazione delle pagine](#page-naming-conventions).
 
-   Le informazioni minime necessarie per creare una pagina sono **Titolo**.
+   Le informazioni minime necessarie per creare una pagina sono il **Titolo**.
 
    ![Fornire il titolo della pagina](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
@@ -269,7 +269,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
    ![Copia](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Passa al percorso in cui desideri inserire la nuova copia della pagina.
-1. Seleziona la **Incolla** che è diventata disponibile.
+1. Seleziona l&#39;icona **Incolla** che è diventata disponibile.
 
    ![Incolla](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -279,7 +279,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
    ![Finestra di dialogo Incolla](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Seleziona la **Incolla** per confermare la transazione e creare le nuove pagine.
+1. Seleziona il pulsante **Incolla** per confermare la transazione e creare le nuove pagine.
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
 1. Dal passaggio **Rinomina** della procedura guidata, puoi effettuare le seguenti operazioni:
 
-   * Specifica il nome da assegnare alla pagina spostata, quindi seleziona **Successivo** per procedere.
+   * Specifica il nome da assegnare alla pagina spostata, quindi seleziona **Avanti** per continuare.
    * Seleziona **Annulla** per interrompere la procedura.
 
    ![Spostare e rinominare la pagina](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -383,7 +383,7 @@ Le azioni di spostamento delle pagine vengono sempre elaborate in modo asincrono
   ![Asynchronous page move](assets/asynchronous-page-move.png)
 -->
 
-Lo stato dei processi asincroni può essere controllato in [**Stato processi asincroni** dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) a **Navigazione globale** > **Strumenti** > **Operazioni** > **Processi**
+Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato processi asincroni**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) in **Navigazione globale** > **Strumenti** > **Operazioni** > **Processi**
 
 >[!NOTE]
 >
@@ -411,7 +411,7 @@ Lo stato dei processi asincroni può essere controllato in [**Stato processi asi
    * **Elimina** per confermare l’azione:
 
       * Se la pagina non contiene riferimenti, viene eliminata.
-      * Se la pagina contiene riferimenti, viene visualizzata una finestra di messaggio per informare che **Si fa riferimento a una o più pagine.** Puoi selezionare **Forza eliminazione** o **Annulla**.
+      * Se la pagina contiene riferimenti, verrà visualizzata una finestra di messaggio per informare che **Si fa riferimento a una o più pagine.** È possibile selezionare **Forza eliminazione** o **Annulla**.
 
 >[!NOTE]
 >

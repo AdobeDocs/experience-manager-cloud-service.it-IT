@@ -23,8 +23,8 @@ La vista Assets consente di modificare le immagini di base, tra cui ridimensiona
 
 ## Editing delle immagini {#edit-image}
 
-Arriva su Assets View, utilizzando il collegamento - [Vista Assets](https://experience.adobe.com/#/assets) e selezionando l’archivio appropriato. Per ricevere l’accesso, contatta l’amministratore della tua organizzazione.
-Per ulteriori informazioni di riferimento, fare riferimento a [Introduzione all’utilizzo della visualizzazione Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Interfaccia utente di visualizzazione di Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), e [Casi di utilizzo della visualizzazione Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Accedi alla visualizzazione Assets utilizzando il collegamento [Visualizzazione Assets](https://experience.adobe.com/#/assets) e selezionando l&#39;archivio appropriato. Per ricevere l’accesso, contatta l’amministratore della tua organizzazione.
+Per ulteriori informazioni di riferimento, fare riferimento a: [Introduzione all&#39;utilizzo di Adobe Experience Manager Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Interfaccia utente di Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) e [Casi di utilizzo di Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -33,7 +33,7 @@ Per ulteriori informazioni di riferimento, fare riferimento a [Introduzione all�
 
 ### Modifica immagine nella vista Assets tramite Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Dopo aver effettuato l’atterraggio sulla vista Assets, fai clic su **Assets**, selezionare un&#39;immagine e quindi fare clic su **Modifica** dalla barra superiore. Nella nuova schermata vengono visualizzate le opzioni di modifica disponibili, tra cui il ridimensionamento, la rimozione dello sfondo, il ritaglio e la conversione tra i formati JPEG e PNG.
+Dopo aver eseguito l&#39;accesso alla visualizzazione Assets, fare clic su **Assets**, selezionare un&#39;immagine e quindi fare clic su **Modifica** nella barra superiore. Nella nuova schermata vengono visualizzate le opzioni di modifica disponibili, tra cui il ridimensionamento, la rimozione dello sfondo, il ritaglio e la conversione tra i formati JPEG e PNG.
 
 #### Ridimensionare l’immagine {#resize-image-using-express}
 
@@ -85,10 +85,10 @@ Puoi convertire rapidamente un’immagine JPEG in formato PNG utilizzando Adobe 
 ### Modificare le immagine nell’editor integrato Adobe Express {#edit-images-in-adobe-express-embedded-editor}
 
 Gli utenti che dispongono del diritto Express possono utilizzare l’editor Express incorporato nella vista Assets per modificare facilmente i contenuti e crearne di nuovi con GenAI da Adobe Firefly. Ciò migliora il riutilizzo dei contenuti e li velocizza. Puoi anche utilizzare elementi predefiniti per migliorare la risorsa o eseguire azioni rapide per modificare l’immagine con pochi clic.
-![interfaccia utente express in essentials](/help/assets/assets/express-in-essentials-ui.jpg)
-Per modificare le immagini mediante [!DNL Adobe Express] nell’editor incorporato, segui i passaggi seguenti:
+![express nell&#39;interfaccia utente di essentials](/help/assets/assets/express-in-essentials-ui.jpg)
+Per modificare le immagini utilizzando l&#39;editor incorporato [!DNL Adobe Express], effettuare le seguenti operazioni:
 
-1. Accedi alla visualizzazione AEM Assets utilizzando il collegamento - [Vista AEM Assets](https://experience.adobe.com/#/assets) e seleziona l’archivio appropriato.
+1. Accedi alla visualizzazione AEM Assets utilizzando il collegamento [Visualizzazione AEM Assets](https://experience.adobe.com/#/assets) e seleziona l&#39;archivio appropriato.
 1. Fai clic su **Risorse**, immetti una cartella e seleziona un’immagine.
 1. Fai clic su **Apri in Adobe Express**. L’immagine si apre in un’area di lavoro Express.
 1. Apporta le modifiche necessarie all’immagine.
@@ -124,10 +124,10 @@ Per modificare le immagini mediante [!DNL Adobe Express] nell’editor incorpora
 
 [!DNL Assets view] consente di creare un nuovo modello da zero utilizzando l’editor integrato [!DNL Adobe Express]. Per creare una nuova risorsa tramite [!DNL Adobe Express], effettua le seguenti operazioni:
 
-1. Accedi a **[!UICONTROL Il mio Workspace]** e fai clic su **[!UICONTROL Crea]** all’interno del banner di Adobe Express visualizzato nella parte superiore. Un’area di lavoro vuota di [!DNL Adobe Express] viene visualizzata all’interno dell’interfaccia utente di [!DNL Assets view].
+1. Passa a **[!UICONTROL Il mio Workspace]** e fai clic su **[!UICONTROL Crea]** all&#39;interno del banner di Adobe Express visualizzato nella parte superiore. Un’area di lavoro vuota di [!DNL Adobe Express] viene visualizzata all’interno dell’interfaccia utente di [!DNL Assets view].
 1. Crea i contenuti utilizzando i [modelli](https://helpx.adobe.com/it/express/using/work-with-templates.html). In caso contrario, passa a **[!UICONTROL Le tue risorse]** per modificare contenuti esistenti.
 1. Dopo aver completato la modifica, fai clic su **[!UICONTROL Salva]**.
-1. Specifica il percorso di destinazione della risorsa creata e fai clic su **[!UICONTROL Salva come nuova risorsa]**.
+1. Specifica il percorso di destinazione per la risorsa creata e fai clic su **[!UICONTROL Salva come nuova risorsa]**.
 
 #### Limitazioni {#limitations}
 
@@ -195,7 +195,7 @@ TBD: Insert a video of the available social media options.
 
 ### Passaggi successivi {#next-steps}
 
-* Fornire feedback sul prodotto utilizzando [!UICONTROL Feedback] disponibile nell’interfaccia utente di visualizzazione di Assets.
+* Fornisci feedback sul prodotto utilizzando l&#39;opzione [!UICONTROL Feedback] disponibile nell&#39;interfaccia utente di visualizzazione di Assets.
 
 * Fornisci feedback sulla documentazione utilizzando [!UICONTROL Modifica questa pagina], ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema], ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibili sulla barra laterale a destra.
 
@@ -203,5 +203,5 @@ TBD: Insert a video of the available social media options.
 
 >[!MORELIKETHIS]
 >
->* [Azioni rapide nell’Adobe Express](https://helpx.adobe.com/it/express/using/resize-image.html)
+>* [Azioni rapide in Adobe Express](https://helpx.adobe.com/it/express/using/resize-image.html)
 >* [Visualizzare la cronologia delle versioni di una risorsa](navigate-assets-view.md)

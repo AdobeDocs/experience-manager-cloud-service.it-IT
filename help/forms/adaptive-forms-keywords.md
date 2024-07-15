@@ -236,4 +236,4 @@ Le parole chiave di Adaptive Forms sono identificatori predefiniti e riservati c
  </tbody>
 </table>
 
-Oltre alle parole chiave elencate in precedenza, evita di utilizzare nomi simili a [API JavaScript di Forms adattivi](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Oltre alle parole chiave elencate in precedenza, evita di utilizzare nomi simili alle [API JavaScript di Forms adattivi](https://adobe.com/go/learn_aemforms_javascript_api_63).

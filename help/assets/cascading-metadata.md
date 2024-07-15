@@ -27,7 +27,7 @@ Di seguito sono riportati alcuni casi d’uso per i quali è possibile definire 
 * Modifica le opzioni visualizzate per un particolare campo in base al valore specificato in un altro campo.
 * Imposta il valore di metadati predefinito in un particolare campo in base al valore specificato in un altro campo.
 
-## Configurare i metadati a catena in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
+## Configura metadati a catena in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Considera uno scenario in cui desideri visualizzare i metadati a catena in base al tipo di risorsa selezionata. Alcuni esempi
 
@@ -36,26 +36,26 @@ Considera uno scenario in cui desideri visualizzare i metadati a catena in base 
 
 Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul copyright come campo obbligatorio.
 
-1. Seleziona la [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati]**.
-1. In **[!UICONTROL Schema Forms]** , selezionare un modulo schema, quindi selezionare **[!UICONTROL Modifica]** dalla barra degli strumenti per modificare lo schema.
+1. Seleziona il logo [!DNL Experience Manager] e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Schemi di metadati]**.
+1. Nella pagina **[!UICONTROL Schema Forms]**, selezionare un modulo schema, quindi selezionare **[!UICONTROL Modifica]** dalla barra degli strumenti per modificare lo schema.
 
-   ![select_form](assets/select_form.png)
+   ![modulo_selezione](assets/select_form.png)
 
-1. (Facoltativo) Nell’editor schema metadati, crea un campo da condizionare. Specifica un nome e un percorso di proprietà nel **[!UICONTROL Impostazioni]** scheda.
+1. (Facoltativo) Nell’editor schema metadati, crea un campo da condizionare. Specificare un nome e un percorso di proprietà nella scheda **[!UICONTROL Impostazioni]**.
 
-   Per creare una scheda, seleziona `+` per aggiungere una scheda e quindi un campo di metadati.
+   Per creare una scheda, selezionare `+` per aggiungere una scheda e quindi aggiungere un campo metadati.
 
-   ![add_tab](assets/add_tab.png)
+   ![aggiungi_scheda](assets/add_tab.png)
 
-1. Aggiungi un campo a discesa per il tipo di risorsa. Specifica un nome e un percorso di proprietà nel **[!UICONTROL Impostazioni]** scheda. Aggiungi una descrizione facoltativa.
+1. Aggiungi un campo a discesa per il tipo di risorsa. Specificare un nome e un percorso di proprietà nella scheda **[!UICONTROL Impostazioni]**. Aggiungi una descrizione facoltativa.
 
-   ![asset_type_field](assets/asset_type_field.png)
+   ![campo_tipo_risorsa](assets/asset_type_field.png)
 
 1. Le coppie chiave-valori sono le opzioni fornite a un utente del modulo. Puoi fornire le coppie chiave-valore manualmente o da un file JSON.
 
-   * Per specificare manualmente i valori, selezionare **[!UICONTROL Aggiungi manualmente]**, e seleziona **[!UICONTROL Aggiungi scelta]** e specifica il testo e il valore dell’opzione. Specifica ad esempio i tipi di risorse Video, PDF, Word e Image.
+   * Per specificare manualmente i valori, selezionare **[!UICONTROL Aggiungi manualmente]**, quindi selezionare **[!UICONTROL Aggiungi scelta]** e specificare il testo e il valore dell&#39;opzione. Specifica ad esempio i tipi di risorse Video, PDF, Word e Image.
 
-   * Per recuperare dinamicamente i valori da un file JSON, seleziona **[!UICONTROL Aggiungi tramite percorso JSON]** e fornisci il percorso del file JSON. [!DNL Experience Manager] recupera le coppie chiave-valore in tempo reale quando il modulo viene presentato all’utente.
+   * Per recuperare dinamicamente i valori da un file JSON, selezionare **[!UICONTROL Aggiungi tramite percorso JSON]** e specificare il percorso del file JSON. [!DNL Experience Manager] recupera le coppie chiave-valore in tempo reale quando il modulo viene presentato all&#39;utente.
 
    Entrambe le opzioni si escludono a vicenda. Non è possibile importare le opzioni da un file JSON e modificarle manualmente.
 
@@ -73,16 +73,16 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
    Allo stesso modo, aggiungi campi dipendenti per altri tipi di risorse. Ad esempio, aggiungi il conteggio delle pagine dei campi e crea le risorse del documento, come i file di PDF e Word.
 
-   ![video_dependent_fields](assets/video_dependent_fields.png)
+   ![campi_dipendenti_video](assets/video_dependent_fields.png)
 
-1. Per creare una dipendenza tra il campo del tipo di risorsa e altri campi, scegli il campo dipendente e apri **[!UICONTROL Regole]** scheda.
+1. Per creare una dipendenza tra il campo del tipo di risorsa e altri campi, scegli il campo dipendente e apri la scheda **[!UICONTROL Regole]**.
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. Sotto **[!UICONTROL Requisito]**, scegli il **[!UICONTROL Obbligatorio, in base alla nuova regola]** opzione.
-1. Seleziona **[!UICONTROL Aggiungi regola]** e scegli la **[!UICONTROL Tipo risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Seleziona **[!UICONTROL Fine]** per salvare le modifiche.
+1. In **[!UICONTROL Requisito]** scegliere l&#39;opzione **[!UICONTROL Obbligatorio, in base alla nuova regola]**.
+1. Seleziona **[!UICONTROL Aggiungi regola]** e scegli il campo **[!UICONTROL Tipo risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Seleziona **[!UICONTROL Fine]** per salvare le modifiche.
 
-   ![define_rule](assets/define_rule.png)
+   ![definisci_regola](assets/define_rule.png)
 
    >[!NOTE]
    >
@@ -90,7 +90,7 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
 
 1. In **[!UICONTROL Visibilità]**, scegli l’opzione **[!UICONTROL Visibile, in base alla nuova regola]**.
 
-1. Seleziona **[!UICONTROL Aggiungi regola]** e scegli la **[!UICONTROL Tipo risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Seleziona **[!UICONTROL Fine]** per salvare le modifiche.
+1. Seleziona **[!UICONTROL Aggiungi regola]** e scegli il campo **[!UICONTROL Tipo risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Seleziona **[!UICONTROL Fine]** per salvare le modifiche.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -103,16 +103,16 @@ Indipendentemente dal tipo di risorsa scelto, visualizza le informazioni sul cop
    >Puoi applicare la condizione **[!UICONTROL Requisito]** e **[!UICONTROL Visibilità]**, pur lasciandole indipendenti tra di loro.
 
 1. Allo stesso modo, crea una dipendenza tra il valore Video nel campo Tipo di risorsa e altri campi, come Codec e Durata.
-1. Ripeti i passaggi per creare una dipendenza tra le risorse del documento (PDF e Word) nel [!UICONTROL Tipo risorsa] campi e campi quali [!UICONTROL Conteggio pagine] e [!UICONTROL Autore].
+1. Ripeti i passaggi per creare una dipendenza tra le risorse del documento (PDF e Word) nel campo [!UICONTROL Tipo risorsa] e campi come [!UICONTROL Conteggio pagine] e [!UICONTROL Autore].
 1. Fai clic su **[!UICONTROL Salva]**. Applica lo schema metadati a una cartella.
 
 1. Passa alla cartella a cui hai applicato lo schema metadati e apri la pagina delle proprietà di una risorsa. A seconda della scelta effettuata nel campo Tipo di risorsa, vengono visualizzati i campi di metadati a cascata pertinenti.
 
    ![Metadati a cascata per risorsa video](assets/video_asset.png)
-   *Figura: Metadati a cascata della risorsa video*
+   *Figura: metadati a cascata per la risorsa video*
 
-   ![Metadati a cascata per risorsa documento](assets/doc_type_fields.png)
-   *Figura: Metadati a cascata per la risorsa documento*
+   ![Metadati a cascata per la risorsa documento](assets/doc_type_fields.png)
+   *Figura: metadati a cascata per la risorsa documento*
 
 **Consulta anche**
 

@@ -25,7 +25,7 @@ Per iniziare a utilizzare Adobe Experience Manager (AEM) Commerce as a Cloud Ser
 L’onboarding per AEM Commerce as a Cloud Service è un processo in due fasi:
 
 1. Abilitare AEM Commerce as a Cloud Service e ottenere il componente aggiuntivo CIF
-2. Connettere AEM Commerce as a Cloud Service con la soluzione commerce
+2. Collegare AEM Commerce as a Cloud Service con la soluzione commerce
 
 Il primo passaggio di onboarding è effettuato per Adobe. Per maggiori dettagli su prezzi e provisioning, contatta il tuo rappresentante commerciale.
 
@@ -35,14 +35,14 @@ Il secondo passaggio è autonomo per ogni ambiente AEM as a Cloud Service. Dopo 
 
 ## Collegamento dell’AEM con una soluzione Commerce {#solution}
 
-Per collegare il componente aggiuntivo CIF e [Componenti core dell’CIF dell’AEM](https://github.com/adobe/aem-core-cif-components) con una soluzione commerce, devi fornire l’URL dell’endpoint GraphQL tramite una variabile di ambiente Cloud Manager. Il nome della variabile è `COMMERCE_ENDPOINT`. È necessario configurare una connessione protetta tramite HTTPS.
+Per collegare il componente aggiuntivo CIF e i [componenti core CIF dell&#39;AEM](https://github.com/adobe/aem-core-cif-components) con una soluzione commerce, è necessario fornire l&#39;URL dell&#39;endpoint GraphQL tramite una variabile di ambiente Cloud Manager. Il nome della variabile è `COMMERCE_ENDPOINT`. È necessario configurare una connessione protetta tramite HTTPS.
 
 Questa variabile di ambiente viene utilizzata in due posizioni:
 
 - GraphQL chiama dall’AEM al backend di e-commerce, tramite alcuni client GraphQl condivisibili, utilizzati dai componenti core CIF dell’AEM e dai componenti di progetto del cliente.
-- Imposta un URL proxy di GraphQL in ogni ambiente AEM in cui la variabile è impostata e disponibile `/api/graphql`. Questo URL viene utilizzato dai componenti lato client e dagli strumenti per la creazione di contenuti commerciali (componente aggiuntivo CIF CIF) dell’AEM.
+- Configurare un URL proxy di GraphQL in ogni ambiente AEM in cui la variabile è impostata disponibile in `/api/graphql`. Questo URL viene utilizzato dai componenti lato client e dagli strumenti per la creazione di contenuti commerciali (componente aggiuntivo CIF CIF) dell’AEM.
 
-È possibile utilizzare un URL endpoint GraphQL diverso per ogni ambiente as a Cloud Service AEM. In questo modo i progetti possono collegare gli ambienti di staging AEM con i sistemi di staging commerce e l’ambiente di produzione AEM a un sistema di produzione commerce. L&#39;endpoint GraphQL deve essere disponibile pubblicamente; le connessioni VPN private o locali non sono supportate. Facoltativamente, è possibile fornire un’intestazione di autenticazione per utilizzare funzioni CIF aggiuntive che richiedono l’autenticazione.
+Per ogni ambiente AEM as a Cloud Service è possibile utilizzare un URL endpoint GraphQL diverso. In questo modo i progetti possono collegare gli ambienti di staging AEM con i sistemi di staging commerce e l’ambiente di produzione AEM a un sistema di produzione commerce. L&#39;endpoint GraphQL deve essere disponibile pubblicamente; le connessioni VPN private o locali non sono supportate. Facoltativamente, è possibile fornire un’intestazione di autenticazione per utilizzare funzioni CIF aggiuntive che richiedono l’autenticazione.
 
 Facoltativamente, e solo per Adobe Commerce Enterprise / Cloud, il componente aggiuntivo CIF supporta l’utilizzo di dati di catalogo per gli autori di AEM. Questi dati richiedono la configurazione di un’intestazione di autorizzazione. Questa intestazione è disponibile e utilizzata solo nelle istanze di creazione AEM per motivi di sicurezza. Le istanze Publish dell’AEM non possono mostrare dati di staging.
 
@@ -58,7 +58,7 @@ Questa configurazione può essere eseguita utilizzando una finestra di dialogo n
 
 Facendo clic su questo pulsante si apre una finestra di dialogo:
 
-![Endpoint CM Commerce](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
+![endpoint Commerce CM](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
 Dopo aver impostato l’endpoint e, facoltativamente, un’intestazione di autorizzazione per il supporto di cataloghi in staging, l’endpoint viene visualizzato nella pagina dei dettagli. Facendo clic sull&#39;icona Modifica per aprire la stessa finestra di dialogo in cui è possibile modificare il punto finale, se necessario.
 
@@ -70,9 +70,9 @@ Per collegare l’AEM a una soluzione commerce tramite Adobe I/O CLI, segui ques
 
 1. Ottieni Adobe I/O CLI con il plugin Cloud Manager.
 
-   Controlla la [Documentazione di Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it) su come scaricare, configurare e utilizzare [CLI ADOBE I/O](https://github.com/adobe/aio-cli) con [Plug-in CLI di Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Consulta la [documentazione Adobe di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it) su come scaricare, configurare e utilizzare [Adobe I/O CLI](https://github.com/adobe/aio-cli) con il [plug-in Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-2. Autentica l’interfaccia della riga di comando Adobe I/O con il programma as a Cloud Service AEM
+2. Autenticazione di Adobe I/O CLI con il programma AEM as a Cloud Service
 
 3. Imposta la variabile `COMMERCE_ENDPOINT` in Cloud Manager.
 
@@ -88,9 +88,9 @@ Per collegare l’AEM a una soluzione commerce tramite Adobe I/O CLI, segui ques
 
    >[!NOTE]
    >
-   >Questa funzione è disponibile solo con Adobe Commerce Enterprise o Cloud Edition. Consulta [Autenticazione basata su token](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) per i dettagli.
+   >Questa funzione è disponibile solo con Adobe Commerce Enterprise o Cloud Edition. Per ulteriori informazioni, vedere [Autenticazione basata su token](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens).
 
-   Imposta il `COMMERCE_AUTH_HEADER` variabile segreta in Cloud Manager:
+   Imposta la variabile segreta `COMMERCE_AUTH_HEADER` in Cloud Manager:
 
    ```bash
    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
@@ -104,7 +104,7 @@ Ora puoi utilizzare AEM Commerce as a Cloud Service e distribuire il progetto tr
 
 ## Configurazione di store e cataloghi {#catalog}
 
-Il componente aggiuntivo CIF e il [Componenti core CIF](https://github.com/adobe/aem-core-cif-components) può essere utilizzato su più strutture di siti AEM collegate a diversi store commerciali (o viste store, ecc.). Per impostazione predefinita, il componente aggiuntivo CIF viene distribuito con una configurazione predefinita che si collega all’archivio e al catalogo predefiniti di Adobe Commerce.
+Il componente aggiuntivo CIF e i [componenti core CIF](https://github.com/adobe/aem-core-cif-components) possono essere utilizzati in più strutture di siti AEM connesse a diversi store commerce (o viste store, ecc.). Per impostazione predefinita, il componente aggiuntivo CIF viene distribuito con una configurazione predefinita che si collega all’archivio e al catalogo predefiniti di Adobe Commerce.
 
 Questa configurazione può essere regolata per il progetto mediante la configurazione del Cloud Service CIF seguente:
 
@@ -135,7 +135,7 @@ Questa configurazione può essere regolata per il progetto mediante la configura
 
 La configurazione mostrata sopra è a scopo di riferimento. I progetti devono fornire le proprie configurazioni.
 
-Per configurazioni più complesse, utilizzando più strutture di siti AEM combinate con diversi cataloghi di e-commerce, vedi [Configurazione di Commerce Multi-Store](configuring/multi-store-setup.md) esercitazione.
+Per impostazioni più complesse, utilizzando più strutture di siti AEM combinate con diversi cataloghi di e-commerce, vedere l&#39;esercitazione [Configurazione di più store di Commerce](configuring/multi-store-setup.md).
 
 ## Risorse aggiuntive {#additional-resources}
 

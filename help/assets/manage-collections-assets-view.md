@@ -96,7 +96,7 @@ Per rimuovere le risorse da una raccolta:
 
 ## Gestire una raccolta avanzata {#manage-smart-collection}
 
-Salva i risultati della ricerca come Raccolta avanzata per aggiornare dinamicamente il contenuto della raccolta. Se nell’archivio di visualizzazione delle risorse sono state aggiunte risorse che soddisfano i criteri di ricerca definiti durante la creazione della raccolta avanzata, il contenuto di questa viene aggiornato automaticamente all’apertura di una raccolta avanzata.
+Salva i risultati della ricerca come Raccolta avanzata per aggiornare dinamicamente il contenuto della raccolta. Se sono presenti risorse aggiunte all’archivio di visualizzazione di Assets che soddisfano i criteri di ricerca definiti durante la creazione della raccolta avanzata, il contenuto della raccolta avanzata viene aggiornato automaticamente quando si apre una raccolta avanzata.
 
 ### Creare una raccolta avanzata {#create-smart-collection}
 
@@ -166,7 +166,7 @@ Per visualizzare e modificare i metadati di una raccolta:
 
 ![Condividere il collegamento per le risorse](assets/share-link-collections.png)
 
-Per ulteriori informazioni su come condividere i collegamenti di raccolte con soggetti esterni, consulta [condividere collegamenti per le risorse](/help/assets/share-links-for-assets-view.md).
+Per ulteriori informazioni su come condividere i collegamenti di raccolte con soggetti esterni, consulta [condividere i collegamenti per le risorse](/help/assets/share-links-for-assets-view.md).
 
 ## Scaricare una raccolta {#download-collection}
 

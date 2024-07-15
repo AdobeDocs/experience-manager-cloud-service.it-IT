@@ -17,7 +17,7 @@ L’importazione in blocco nella vista AEM Assets consente agli amministratori d
 
 >[!NOTE]
 >
->L’importazione in blocco della vista Risorse utilizza lo stesso backend dell’importazione in blocco della vista Amministratore. Tuttavia, offre più origini dati da cui importare e un’esperienza utente più semplice.
+>L’importazione in blocco delle visualizzazioni di Assets utilizza lo stesso back-end dell’importazione in blocco delle visualizzazioni di amministrazione. Tuttavia, offre più origini dati da cui importare e un’esperienza utente più semplice.
 
 Puoi importare le risorse dalle seguenti origini dati:
 
@@ -155,7 +155,7 @@ Quando importi risorse o cartelle in blocco, [!DNL Experience Manager Assets] im
 
 Durante l’importazione in blocco, [!DNL Experience Manager] cerca le cartelle esistenti per evitare di reimportare le risorse e le cartelle e verifica inoltre le regole di bonifica applicate nella cartella principale in cui avviene l’importazione. Se le regole di bonifica vengono applicate nella cartella principale, le stesse regole vengono applicate all’origine di importazione. Per le nuove importazioni, per gestire i nomi file di risorse e cartelle vengono applicate le seguenti regole di bonifica.
 
-Per ulteriori informazioni sui nomi non consentiti, sulla gestione dei nomi delle risorse e sulla gestione dei nomi delle cartelle durante l’importazione in blocco, consulta [Gestione dei nomi dei file durante l’importazione in blocco nella vista Amministrazione](add-assets.md##filename-handling-bulkimport).
+Per ulteriori informazioni sui nomi non consentiti, sulla gestione dei nomi delle risorse e sulla gestione dei nomi delle cartelle durante l&#39;importazione in blocco, vedere [Gestione dei nomi dei file durante l&#39;importazione in blocco in Admin View](add-assets.md##filename-handling-bulkimport).
 
 ## Visualizzare le configurazioni di importazione in blocco esistenti {#view-import-configuration}
 
@@ -213,6 +213,6 @@ Fai clic sull’![icona Altro](assets/do-not-localize/more-icon.svg) in corrispo
 
 Per visualizzare il percorso di destinazione in cui le risorse vengono importate dopo l’esecuzione del processo di importazione in blocco, fai clic sull’![icona Altro](assets/do-not-localize/more-icon.svg) in corrispondenza del nome della configurazione, quindi fai clic su **[!UICONTROL Visualizza risorse]**.
 
-## Video: importare risorse in blocco tramite la vista Risorse
+## Video: importare risorse in blocco tramite la vista Assets
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428012)

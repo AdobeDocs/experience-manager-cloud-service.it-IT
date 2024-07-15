@@ -14,41 +14,41 @@ ht-degree: 1%
 
 # Generare varianti {#generate-variations}
 
-Se stai cercando un modo per ottimizzare i canali digitali e accelerare la creazione di contenuti, puoi utilizzare Genera varianti. Genera varianti utilizza l’intelligenza artificiale generativa (AI) per creare varianti di contenuto in base alle richieste; queste richieste vengono fornite da Adobe oppure create e gestite dagli utenti. Dopo aver creato le varianti, puoi utilizzare il contenuto del sito web e misurarne il successo utilizzando [Sperimentazione](https://www.aem.live/docs/experimentation) funzionalità di [Edge Delivery Services](/help/edge/overview.md).
+Se stai cercando un modo per ottimizzare i canali digitali e accelerare la creazione di contenuti, puoi utilizzare Genera varianti. Genera varianti utilizza l’intelligenza artificiale generativa (AI) per creare varianti di contenuto in base alle richieste; queste richieste vengono fornite da Adobe oppure create e gestite dagli utenti. Dopo aver creato le varianti, puoi utilizzare il contenuto del tuo sito Web e misurarne il successo utilizzando la funzionalità [Sperimentazione](https://www.aem.live/docs/experimentation) di [Edge Delivery Services](/help/edge/overview.md).
 
-È possibile [accedere a Genera varianti](#access-generate-variations) da:
+Puoi [accedere a Genera varianti](#access-generate-variations) da:
 
-* [all’interno di Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
+* [in Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
 * [il Sidekick dei Edge Delivery Services AEM](#access-aem-sidekick)
 * [nell’Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)
 
 >[!NOTE]
 >
->In tutti i casi, per utilizzare Genera varianti è necessario assicurarsi che [prerequisiti di accesso](#access-prerequisites) sono soddisfatte.
+>In tutti i casi, per utilizzare Genera varianti è necessario assicurarsi che siano soddisfatti i [prerequisiti di accesso](#access-prerequisites).
 
 Puoi effettuare le seguenti operazioni:
 
-* [Introduzione](#get-started) utilizzando un modello di prompt creato da Adobe per un caso d’uso specifico.
-* È possibile [modifica un prompt esistente](#edit-the-prompt)
-* Oppure [creare e utilizzare le proprie richieste](#create-prompt):
-   * [Salvare le richieste](#save-prompt) per utilizzi futuri
-   * [Accedere e utilizzare i prompt condivisi](#select-prompt) in tutta l’organizzazione
-* Definisci il [pubblico](#audiences) segmenti da utilizzare nel prompt quando [generazione di contenuti personalizzati specifici per il pubblico](#generate-copy).
+* [Inizia](#get-started) utilizzando un modello di richiesta creato da Adobe per un caso d&#39;uso specifico.
+* È possibile [modificare un prompt esistente](#edit-the-prompt)
+* Oppure [crea e utilizza le tue richieste](#create-prompt):
+   * [Salva le richieste](#save-prompt) per utilizzi futuri
+   * [Accedi e utilizza i prompt condivisi](#select-prompt) dall&#39;intera organizzazione
+* Definisci i segmenti di [pubblico](#audiences) da utilizzare nel prompt durante la [generazione di contenuto personalizzato specifico per il pubblico](#generate-copy).
 * Visualizza l’anteprima dell’output accanto al prompt, prima di apportare modifiche e di perfezionare i risultati, se necessario.
-* Utilizzare [Adobe Express per generare le immagini](#generate-image) in base alle varianti di copia; questo utilizza le funzionalità di intelligenza artificiale generativa del Firefly.
+* Utilizza [Adobe Express per generare immagini](#generate-image) in base alle varianti di copia; in questo modo vengono utilizzate le funzionalità di intelligenza artificiale generativa di Firefly.
 * Seleziona il contenuto da utilizzare sul tuo sito web o in un esperimento.
 
 ## Note legali e di utilizzo {#legal-usage-note}
 
-Generative AI e Generate Variations for AEM sono strumenti potenti, ma **tu** sono responsabili dell’utilizzo dell’output.
+Generative AI e Generate Variations for AEM sono strumenti potenti, ma **tu** è responsabile dell&#39;utilizzo dell&#39;output.
 
 I dati immessi nel servizio devono essere legati a un contesto. Questo contesto può essere costituito dai materiali di branding, dal contenuto del sito Web, dai dati, dagli schemi per tali dati, dai modelli o da altri documenti attendibili.
 
 Devi valutare l’accuratezza di qualsiasi output in base al tuo caso d’uso.
 
-Prima di utilizzare Genera varianti è necessario accettare il [Adobe di linee guida utente per l’intelligenza artificiale generativa](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+Prima di utilizzare Genera varianti è necessario accettare le [Linee guida per utenti di IA generativa di Adobe](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
-[Utilizzo di Genera varianti](#generative-action-usage) è legato al consumo di azioni generative.
+[L&#39;utilizzo di Generate Variations](#generative-action-usage) è legato al consumo di azioni generative.
 
 ## Panoramica {#overview}
 
@@ -58,16 +58,16 @@ Quando apri Genera varianti (ed espandi il pannello a sinistra) viene visualizza
 
 * Pannello a destra
    * Dipende dalla selezione effettuata nel menu di navigazione a sinistra.
-   * Per impostazione predefinita, **Modelli di richiesta** vengono visualizzati.
+   * Per impostazione predefinita, vengono visualizzati **Modelli di richiesta**.
 * Navigazione a sinistra
-   * A sinistra di **Genera varianti**, è disponibile l’opzione (menu sandwich) per espandere o nascondere il pannello di navigazione sinistro.
+   * A sinistra di **Genera varianti**, è presente l&#39;opzione (menu sandwich) per espandere o nascondere il pannello di navigazione sinistro.
    * **Modelli di richiesta**:
       * Mostra collegamenti ai vari prompt, che possono includere i prompt:
          * Fornito dall’Adobe per aiutarti a generare il contenuto; contrassegnato con l’icona dell’Adobe.
          * Creato da te stesso.
          * Creato nell’organizzazione IMS; contrassegnato con un’icona che mostra più teste.
-      * Include [Nuovo prompt](#create-prompt) per la creazione di un prompt personalizzato.
-      * È possibile **Elimina** prompt creati personalmente o nell’organizzazione IMS. Questa operazione viene eseguita utilizzando il menu a cui si accede con l’ellisse sulla scheda appropriata.
+      * Include il collegamento [Nuovo prompt](#create-prompt) per la creazione di un prompt personalizzato.
+      * Puoi **Eliminare** prompt creati da te stesso o dall&#39;organizzazione IMS. Questa operazione viene eseguita utilizzando il menu a cui si accede con l’ellisse sulla scheda appropriata.
    * [Preferiti](#favorites): mostra i risultati delle generazioni precedenti contrassegnati come Preferiti.
    * [Recenti](#recents): fornisce collegamenti ai prompt e ai relativi input utilizzati di recente.
    * **Guida e domande frequenti**: collegamenti alla documentazione, incluse le domande frequenti.
@@ -82,7 +82,7 @@ L’interfaccia ti guida attraverso il processo di generazione dei contenuti. Do
 Dal pannello principale, puoi selezionare:
 
 * un modello di richiesta fornito da Adobe per iniziare a generare contenuti,
-* il [Nuovo prompt](#create-prompt) per creare un prompt personalizzato,
+* [Nuovo prompt](#create-prompt) per creare un prompt personalizzato,
 * un modello creato esclusivamente per l&#39;uso personale,
 * un modello creato da te o da un utente dell’organizzazione.
 
@@ -102,12 +102,12 @@ I campi di input ti guidano attraverso le informazioni necessarie. Per facilitar
 
 Esistono diversi campi di input chiave comuni a più prompt (alcuni campi non sono sempre disponibili):
 
-* **Numero di**/**Numero di**
+* **Conteggio di**/**Numero di**
    * Puoi selezionare quante varianti di contenuto desideri creare in una generazione.
    * A seconda del prompt, potrebbe essere presente una delle varie etichette, ad esempio Conteggio, Numero di varianti, Numero di idee e altre.
-* **Origine pubblico**/**Pubblico di destinazione**
+* **Pubblico Source**/**Pubblico Target**
    * Consente di generare contenuti personalizzati per un pubblico specifico.
-   * Adobe fornisce tipi di pubblico predefiniti; oppure puoi specificare tipi di pubblico aggiuntivi; vedi [Tipi di pubblico](#audiences).
+   * Adobe fornisce tipi di pubblico predefiniti oppure è possibile specificare tipi di pubblico aggiuntivi. Vedere [Tipi di pubblico](#audiences).
 * **Contesto aggiuntivo**
    * Inserisci contenuti pertinenti per consentire a Generative AI di creare una risposta migliore in base all’input. Ad esempio, se stai creando un banner web per una pagina o un prodotto particolare, potresti voler includere informazioni sulla pagina o sul prodotto.
 * **Temperatura**
@@ -116,19 +116,19 @@ Utilizza per modificare la temperatura di Adobe Generative AI:
    * Una temperatura più bassa è più deterministica e rimane più vicina a ciò che è nel prompt.
    * Per impostazione predefinita, la temperatura è impostata su 1. Puoi sperimentare con temperature diverse se i risultati generati non sono di tuo gradimento.
 * **Modifica richiesta**
-   * Il sottostante [il prompt può essere modificato](#edit-the-prompt) per perfezionare i risultati generati.
+   * Il [prompt sottostante può essere modificato](#edit-the-prompt) per perfezionare i risultati generati.
 
 ### Genera copia {#generate-copy}
 
 Dopo aver compilato i campi di input e/o modificato il prompt, è possibile generare il contenuto e rivedere le risposte.
 
-Seleziona **Genera** per visualizzare le risposte generate dall’intelligenza artificiale generativa. Le varianti di contenuto generate vengono visualizzate sotto il prompt che le ha generate.
+Seleziona **Genera** per visualizzare le risposte generate da IA generativa. Le varianti di contenuto generate vengono visualizzate sotto il prompt che le ha generate.
 
-![Genera varianti - Genera copia](assets/generate-variations-generate-content.png)
+![Genera varianti - genera copia](assets/generate-variations-generate-content.png)
 
 >[!NOTE]
 >
->La maggior parte dei modelli di prompt di Adobe include **Motivazione IA** nella risposta di variazione. Questo fornisce trasparenza sul motivo per cui l’intelligenza artificiale generativa ha generato quella particolare variante.
+>La maggior parte dei modelli di prompt di Adobe include una **Motivazione IA** nella risposta della variante. Questo fornisce trasparenza sul motivo per cui l’intelligenza artificiale generativa ha generato quella particolare variante.
 
 Quando selezioni una singola variante, sono disponibili le seguenti azioni:
 
@@ -137,47 +137,47 @@ Quando selezioni una singola variante, sono disponibili le seguenti azioni:
 * Miniature in alto/Miniature in basso
    * Utilizza gli indicatori thumbs up / down per notificare all’Adobe la qualità delle risposte.
 * **Copia**
-   * Copia negli Appunti per l’utilizzo durante l’authoring dei contenuti sul sito web o in un [Esperimento](https://www.aem.live/docs/experimentation).
+   * Copia negli Appunti da utilizzare per l&#39;authoring dei contenuti sul sito Web o in un [esperimento](https://www.aem.live/docs/experimentation).
 * **Rimuovi**
 
-Per perfezionare gli input o i prompt, potete effettuare le regolazioni e selezionare **Genera** per ottenere un set di nuove risposte. Il nuovo prompt e la nuova risposta vengono visualizzati sotto il prompt e la risposta iniziali; è possibile scorrere verso l&#39;alto e verso il basso per visualizzare i vari set di contenuti.
+Se devi perfezionare gli input o i prompt, puoi apportare le modifiche necessarie e selezionare di nuovo **Genera** per ottenere un set di nuove risposte. Il nuovo prompt e la nuova risposta vengono visualizzati sotto il prompt e la risposta iniziali; è possibile scorrere verso l&#39;alto e verso il basso per visualizzare i vari set di contenuti.
 
-Sopra ogni set di varianti viene visualizzato il prompt che le ha create, insieme a un **Riutilizza** opzione. Se è necessario rieseguire un prompt con i relativi input, selezionare **Riutilizza** per ricaricarli in **Input**.
+Sopra ogni set di varianti viene visualizzato il messaggio di richiesta con l&#39;opzione **Riutilizza**. Se devi eseguire nuovamente un prompt con i relativi input, seleziona **Riutilizza** per ricaricarli in **Input**.
 
 ### Genera immagine {#generate-image}
 
-Dopo aver generato varianti di testo, puoi generare immagini in Adobi Express utilizzando le funzionalità di intelligenza artificiale generativa di Firefly.
+Dopo aver generato varianti di testo, puoi generare immagini in Adobe Express utilizzando le funzionalità di intelligenza artificiale generativa di Firefly.
 
 >[!NOTE]
 >
->**Genera immagine** è disponibile solo se disponi di un diritto di Adobe Express come parte dell’organizzazione IMS e di accesso concesso nell’Admin Console.
+>**Genera immagine** è disponibile solo se disponi di un diritto di Adobe Express come parte dell&#39;organizzazione IMS e di accesso concesso nell&#39;Admin Console.
 
-Seleziona una variante, seguita da **Genera immagine**, per aprire direttamente **Testo in immagine** in [Adobe Express](https://www.adobe.com/express/). Il prompt viene precompilato in base alla selezione della variante e le immagini vengono generate automaticamente in base a tale prompt.
+Seleziona una variante, seguita da **Genera immagine**, per aprire direttamente **Testo nell&#39;immagine** in [Adobe Express](https://www.adobe.com/express/). Il prompt viene precompilato in base alla selezione della variante e le immagini vengono generate automaticamente in base a tale prompt.
 
-![Genera varianti - immagini rapide](assets/generate-variations-express-images.png)
+![Genera varianti - immagini esplicite](assets/generate-variations-express-images.png)
 
 Puoi apportare ulteriori modifiche:
 
-* [scrivi il tuo prompt in Adobe Express](https://helpx.adobe.com/firefly/using/tips-and-tricks.html) descrivendo ciò che si desidera visualizzare,
-* regolare **Testo per immagine** opzioni,
-* allora **Aggiorna** le immagini generate.
+* [scrivi il tuo prompt nell&#39;Adobe Express](https://helpx.adobe.com/firefly/using/tips-and-tricks.html) descrivendo ciò che desideri visualizzare,
+* modifica le opzioni **Testo in immagine**,
+* quindi **Aggiorna** le immagini generate.
 
-Puoi anche utilizzare **Scopri di più** per ulteriori possibilità.
+Puoi anche utilizzare **Esplora altro** per ulteriori possibilità.
 
-Al termine, selezionare l&#39;immagine desiderata e **Salva** per chiudere Adobi Express. L’immagine viene restituita e salvata con la variante.
+Al termine, seleziona l&#39;immagine desiderata e **Salva** per chiudere l&#39;Adobe Express. L’immagine viene restituita e salvata con la variante.
 
 ![Genera varianti - immagine express salvata](assets/generate-variations-express-image-saved.png)
 
 Qui puoi passare il mouse sull&#39;immagine per visualizzare le azioni relative a:
 
-* **Copia**: [copiare l&#39;immagine negli Appunti per utilizzarla altrove](#use-content)
-* **Modifica**: apri l’Adobe Express per poter apportare modifiche all’immagine
-* **Scarica**: scarica l’immagine sul computer locale
-* **Elimina**: rimuovi l’immagine dalla variante
+* **Copia**: [copia l&#39;immagine negli Appunti per utilizzarla altrove](#use-content)
+* **Modifica**: apri l&#39;Adobe Express per apportare modifiche all&#39;immagine
+* **Scarica**: scarica l&#39;immagine nel computer locale
+* **Elimina**: rimuovi l&#39;immagine dalla variante
 
 >[!NOTE]
 >
->[Content credentials](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) non vengono mantenuti se utilizzati nell&#39;authoring basato su documenti.
+>[I Content credentials](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) non vengono mantenuti se utilizzati nell&#39;authoring basato su documenti.
 
 ### Usa contenuto {#use-content}
 
@@ -188,27 +188,27 @@ Questa operazione viene eseguita utilizzando le icone di copia:
 * Per il testo: utilizza l’icona Copia, visibile nel pannello delle varianti
 * Per l’immagine: passa il puntatore del mouse sull’immagine per visualizzare l’icona Copia
 
-Una volta copiati negli Appunti, puoi incollare le informazioni da utilizzare per l’authoring dei contenuti del sito web. È inoltre possibile eseguire una [esperimento](https://www.aem.live/docs/experimentation).
+Una volta copiati negli Appunti, puoi incollare le informazioni da utilizzare per l’authoring dei contenuti del sito web. Puoi anche eseguire un [esperimento](https://www.aem.live/docs/experimentation).
 
 ## Preferiti {#favorites}
 
 Dopo aver esaminato il contenuto, puoi salvare le varianti selezionate come preferite.
 
-Una volta salvati, vengono visualizzati in **Preferiti** nel menu di navigazione a sinistra. I Preferiti vengono mantenuti (fino a **Elimina** o cancellare la cache del browser).
+Una volta salvati, vengono visualizzati in **Preferiti** nella barra di navigazione a sinistra. I preferiti sono persistenti (fino a **Eliminarli** o cancellare la cache del browser).
 
 * I preferiti e le varianti possono essere copiati/incollati negli Appunti per essere utilizzati nel contenuto del sito web.
-* I preferiti possono essere **Rimosso**.
+* I Preferiti possono essere **Rimossi**.
 
 ## Recenti {#recents}
 
-Questa sezione fornisce collegamenti alle attività recenti. A **Recente** la voce viene aggiunta dopo aver selezionato **Genera**. Ha il nome del prompt e una marca temporale. Se selezioni un collegamento, questo carica il prompt, compila i campi di input in modo appropriato e mostra le varianti generate.
+Questa sezione fornisce collegamenti alle attività recenti. È stata aggiunta una voce **Recent** dopo aver selezionato **Generate**. Ha il nome del prompt e una marca temporale. Se selezioni un collegamento, questo carica il prompt, compila i campi di input in modo appropriato e mostra le varianti generate.
 
 ## Modifica la richiesta {#edit-the-prompt}
 
 È possibile modificare il prompt sottostante. Puoi eseguire questa operazione:
 
 * Se i risultati generati che stai ottenendo hanno bisogno di ulteriori perfezionamenti
-* Desideri modificare e [salva il prompt](#save-prompt) per utilizzi futuri
+* Desideri modificare e [salvare il prompt](#save-prompt) per utilizzi futuri
 
 Seleziona **Modifica richiesta**:
 
@@ -216,20 +216,20 @@ Seleziona **Modifica richiesta**:
 
 Verrà aperto l’editor dei prompt, in cui è possibile apportare le modifiche:
 
-![Genera varianti - editor di prompt](assets/generate-variations-prompt-editor.png)
+![Genera varianti - editor prompt](assets/generate-variations-prompt-editor.png)
 
 ### Aggiungi input prompt {#add-prompt-inputs}
 
 Quando crei o modifichi un prompt, potrebbe essere necessario aggiungere campi di input. I campi di input fungono da variabili nel prompt e offrono la flessibilità di utilizzare lo stesso prompt in vari scenari. Consentono agli utenti di definire elementi specifici del prompt, senza dover scrivere l’intero prompt.
 
-* Un campo è definito con parentesi graffe doppie `{{ }}` che racchiude un nome segnaposto.
+* Un campo è definito con parentesi graffe doppie `{{ }}` che racchiudono un nome segnaposto.
 Esempio: `{{tone_of_voice}}`.
 
   >[!NOTE]
   >
   >Non sono consentiti spazi tra le doppie parentesi graffe.
 
-* È anche definito in `METADATA`, con i seguenti parametri:
+* È definito anche in `METADATA`, con i seguenti parametri:
    * `label`
    * `description`
    * `default`
@@ -237,7 +237,7 @@ Esempio: `{{tone_of_voice}}`.
 
 #### Esempio: Aggiungi nuovo campo di testo - Tono della voce {#example-add-new-text-field-tone-of-voice}
 
-Per aggiungere un nuovo campo di testo con titolo **Tono della voce**, utilizza la sintassi seguente nel prompt:
+Per aggiungere un nuovo campo di testo con titolo **Tono di voce**, utilizzare la sintassi seguente nel prompt:
 
 ```prompt
 {{@tone_of_voice, 
@@ -248,7 +248,7 @@ Per aggiungere un nuovo campo di testo con titolo **Tono della voce**, utilizza 
 }}
 ```
 
-![Genera varianti: prompt modificato con il tono della voce](assets/generate-variations-prompt-edited.png)
+![Genera varianti - richiesta modificata con tono di voce](assets/generate-variations-prompt-edited.png)
 
 <!--
 #### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
@@ -275,11 +275,11 @@ To create an input field Page Type providing a dropdown selection:
 
 ## Crea un prompt {#create-prompt}
 
-Quando selezioni **Nuovo prompt** da **Modelli di richiesta**, un nuovo pannello consente di inserire un nuovo prompt. È quindi possibile specificarli insieme alla **Temperatura**, a **Genera** contenuto.
+Quando selezioni **Nuovo prompt** da **Modelli di prompt**, un nuovo pannello ti consentirà di inserire un nuovo prompt. È quindi possibile specificare questi elementi, insieme alla **Temperatura**, per **Generare** contenuto.
 
-Consulta [Salva richiesta](#save-prompt) per i dettagli sul salvataggio della richiesta per il futuro.
+Per ulteriori informazioni su come salvare la richiesta in futuro, vedere [Salva richiesta](#save-prompt).
 
-Consulta [Aggiungi input di richiesta](#add-prompt-inputs) per informazioni dettagliate sull&#39;aggiunta di input di prompt personalizzati.
+Per informazioni dettagliate sull&#39;aggiunta di input di prompt personalizzati, vedere [Aggiungi input di prompt](#add-prompt-inputs).
 
 Se desideri mantenere la formattazione sia nell’interfaccia utente che quando viene copiata e incollata nel flusso di authoring basato su documenti, includi quanto segue nel prompt:
 
@@ -289,27 +289,27 @@ Se desideri mantenere la formattazione sia nell’interfaccia utente che quando 
 
 L’immagine seguente mostra i vantaggi di questa operazione:
 
-* nel primo esempio, `Title` e `Description` sono combinati
+* nel primo esempio `Title` e `Description` sono combinati
 * mentre nel secondo esempio vengono formattati separatamente: questo è stato fatto includendo la richiesta JSON nel prompt.
 
-![Genera varianti: prompt con titolo e descrizione formattati separatamente](assets/generate-variations-prompt-formatted.png)
+![Genera varianti - richiesta con titolo e descrizione formattati separatamente](assets/generate-variations-prompt-formatted.png)
 
 ## Salva il prompt {#save-prompt}
 
-Dopo aver modificato o creato i prompt, puoi salvarli per utilizzarli in futuro, sia per la tua organizzazione IMS che per te stesso. Il prompt salvato verrà visualizzato come **Modello di richiesta** Card.
+Dopo aver modificato o creato i prompt, puoi salvarli per utilizzarli in futuro, sia per la tua organizzazione IMS che per te stesso. La richiesta salvata verrà visualizzata come scheda **Modello di richiesta**.
 
-Dopo aver modificato il prompt, **Salva** disponibile nella parte inferiore della sezione Input, a sinistra di **Genera**.
+Dopo aver modificato il prompt, l&#39;opzione **Salva** è disponibile nella parte inferiore della sezione Input, a sinistra di **Genera**.
 
-Se selezionata, la **Salva richiesta** viene visualizzata una finestra di dialogo:
+Se questa opzione è selezionata, viene visualizzata la finestra di dialogo **Richiesta salvataggio**:
 
-![Genera varianti: finestra di dialogo per richiesta di salvataggio](assets/generate-variations-prompt-save-dialog.png)
+![Genera varianti - finestra di dialogo per richiesta di salvataggio](assets/generate-variations-prompt-save-dialog.png)
 
-1. Aggiungi un valore univoco **Nome prompt**; utilizzato per identificare il prompt in **Modelli di richiesta**.
+1. Aggiungi un **Nome prompt** univoco; utilizzato per identificare il prompt all&#39;interno di **Modelli prompt**.
    1. Un nuovo nome univoco crea un nuovo modello di prompt.
    1. Un nome esistente sovrascrive tale richiesta; viene visualizzato un messaggio.
 1. Facoltativamente, aggiungi una descrizione.
-1. Attiva o disattiva l’opzione **Condiviso tra organizzazioni**, a seconda che il prompt debba essere privato per te o reso disponibile in tutta l’organizzazione IMS. Questo stato viene visualizzato nel [scheda risultante visualizzata nei modelli di richiesta](#select-prompt).
-1. **Salva** il prompt; o **Annulla** l’azione.
+1. Attiva o disattiva l&#39;opzione **Condivisa tra organizzazioni**, a seconda che il prompt sia privato o disponibile nell&#39;organizzazione IMS. Questo stato viene visualizzato nella [scheda risultante mostrata nei Modelli di richiesta](#select-prompt).
+1. **Salva** la richiesta oppure **Annulla** l&#39;azione.
 
 >[!NOTE]
 >
@@ -317,7 +317,7 @@ Se selezionata, la **Salva richiesta** viene visualizzata una finestra di dialog
 
 >[!NOTE]
 >
->Da **Modelli di richiesta** puoi eliminare i prompt (utilizzando il menu a cui si accede con l’ellisse) creati da te stesso o all’interno della tua organizzazione IMS.
+>Dai **Modelli di richiesta** puoi eliminare i prompt (utilizzando il menu a cui si accede con l&#39;ellisse) creati da te stesso o nell&#39;organizzazione IMS.
 
 ## Pubblico {#audiences}
 
@@ -335,22 +335,22 @@ Sono supportate due origini di pubblico:
 * [Adobe Target](#audience-adobe-target)
 * [File CSV](#audience-csv-file)
 
-![Genera varianti: origini del pubblico](assets/generate-variations-audiences.png)
+![Genera varianti - Origini pubblico](assets/generate-variations-audiences.png)
 
 ### Pubblico - Adobe Target {#audience-adobe-target}
 
-Selezione di un **Adobe Target** il pubblico nel prompt consente di personalizzare la generazione di contenuti per tale pubblico.
+La selezione di un pubblico di **Adobe Target** nel prompt consente di personalizzare la generazione di contenuto per tale pubblico.
 
 >[!NOTE]
 >
 >Per utilizzare questa opzione, l’organizzazione IMS deve avere accesso ad Adobe Target.
 
 1. Seleziona **Adobe Target**.
-1. Quindi seleziona la richiesta **Pubblico di destinazione**, dall’elenco fornito.
+1. Quindi seleziona il **Pubblico di destinazione** richiesto dall&#39;elenco fornito.
 
    >[!NOTE]
    >
-   >Per utilizzare un&#39; **Adobe Target** pubblico è necessario compilare il campo descrizione. In caso contrario, il pubblico viene visualizzato nell’elenco a discesa come non disponibile. Per aggiungere una descrizione, passa a Target e [aggiungi una descrizione del pubblico](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
+   >Per utilizzare un pubblico di **Adobe Target** è necessario compilare il campo di descrizione. In caso contrario, il pubblico viene visualizzato nell’elenco a discesa come non disponibile. Per aggiungere una descrizione, vai a Target e [aggiungi una descrizione del pubblico](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
 
    ![Genera varianti - Origine pubblico - Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 
@@ -360,12 +360,12 @@ Consulta [Creare tipi di pubblico](https://experienceleague.adobe.com/en/docs/ta
 
 ### Pubblico - File CSV {#audience-csv-file}
 
-Selezione di un **File CSV** il pubblico nel prompt consente di personalizzare la generazione di contenuti per il **Pubblico di destinazione**.
+La selezione di un pubblico di tipo **file CSV** nel prompt consente di personalizzare la generazione di contenuto per il pubblico di tipo **Target** selezionato.
 
 In Adobe sono disponibili diversi tipi di pubblico da utilizzare.
 
-1. Seleziona **File CSV**.
-1. Quindi seleziona la richiesta **Pubblico di destinazione**, dall’elenco fornito.
+1. Seleziona **file CSV**.
+1. Quindi seleziona il **Pubblico di destinazione** richiesto dall&#39;elenco fornito.
 
    ![Genera varianti - Origine pubblico - File CSV](assets/generate-variations-audiences-csv-file.png)
 
@@ -375,7 +375,7 @@ In Adobe sono disponibili diversi tipi di pubblico da utilizzare.
 
 >[!NOTE]
 >
->Nelle piattaforme di condivisione *deve* avere la possibilità di rendere il file accessibile al pubblico.
+>Nelle piattaforme di condivisione è *necessario* rendere il file accessibile al pubblico.
 
 Ad esempio, per aggiungere un pubblico da un file su Google Drive:
 
@@ -387,7 +387,7 @@ Ad esempio, per aggiungere un pubblico da un file su Google Drive:
 1. Copia l’URL nel file pubblicato.
 1. Vai a Genera varianti.
 1. Apri l’Editor richieste.
-1. Trova **Adobe Target** nei metadati e sostituiscono l’URL.
+1. Trova il pubblico **Adobe Target** nei metadati e sostituisci l&#39;URL.
 
    >[!NOTE]
    >
@@ -395,7 +395,7 @@ Ad esempio, per aggiungere un pubblico da un file su Google Drive:
 
    Ad esempio:
 
-   ![Genera varianti - Aggiungi file CSV del pubblico](assets/generate-variations-audiences-csv-save.png)
+   ![Genera varianti - aggiungi file CSV del pubblico](assets/generate-variations-audiences-csv-save.png)
 
 ## Utilizzo azione generativa {#generative-action-usage}
 
@@ -407,11 +407,11 @@ La gestione dell’utilizzo dipende dall’azione intrapresa:
 
   >[!NOTE]
   >
-  >Consulta [Adobe Experience Manager: Cloud Service | Descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) per ulteriori dettagli sui diritti di base, e contatta il team del tuo account per acquistare azioni più generative.
+  >Vedere [Adobe Experience Manager: Cloud Service | Descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) per ulteriori dettagli sui diritti di base e rivolgiti al team del tuo account per acquistare azioni più generative.
 
 * Adobe Express
 
-  L’utilizzo della generazione di immagini è gestito tramite adesioni Adobi Express e [crediti generativi](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+  L&#39;utilizzo della generazione di immagini viene gestito tramite adesioni Adobe Express e [crediti generativi](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
 
 ## Accedi a Genera varianti {#access-generate-variations}
 
@@ -421,11 +421,11 @@ Dopo aver soddisfatto i prerequisiti, puoi accedere a Genera varianti da AEM as 
 
 Per utilizzare Genera varianti è necessario assicurarsi che i prerequisiti siano soddisfatti:
 
-* [Accesso a Experience Manager as a Cloud Service con Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services)
+* [Accesso agli as a Cloud Service Experienci Manager con Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services)
 
-#### Accesso a Experience Manager as a Cloud Service con Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
+#### Accesso agli as a Cloud Service Experienci Manager con Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
 
-Gli utenti che hanno bisogno di accedere a Genera varianti devono avere diritto a un ambiente as a Cloud Service Experience Manager con Edge Delivery Services.
+Experience Manager Gli utenti che hanno bisogno di accedere a Genera varianti devono avere diritto a un ambiente as a Cloud Service con Edge Delivery Services.
 
 >[!NOTE]
 >
@@ -433,11 +433,11 @@ Gli utenti che hanno bisogno di accedere a Genera varianti devono avere diritto 
 >
 >Rivolgiti al team del tuo account per scoprire come passare ad AEM Sites as a Cloud Service con i Edge Delivery Services.
 
-Per concedere l’accesso a utenti specifici, assegna il loro account utente al rispettivo profilo di prodotto. Consulta [Assegnazione dei profili di prodotto dell’AEM per ulteriori dettagli](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+Per concedere l’accesso a utenti specifici, assegna il loro account utente al rispettivo profilo di prodotto. Consulta [Assegnazione dei profili di prodotto AEM per ulteriori dettagli](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 
 ### Accesso da AEM as a Cloud Service {#access-aemaacs}
 
-Genera varianti è accessibile dalla sezione [Pannello di navigazione](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) dell’AEM as a Cloud Service:
+Genera varianti è accessibile dal [pannello di navigazione](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) di AEM as a Cloud Service:
 
 ![Pannello di navigazione](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
 
@@ -445,7 +445,7 @@ Genera varianti è accessibile dalla sezione [Pannello di navigazione](/help/sit
 
 È necessaria una certa configurazione prima di poter accedere a Genera varianti dal Sidekick (di Edge Delivery Services).
 
-1. Consulta il documento [Installazione di AEM Sidekick](https://www.aem.live/docs/sidekick-extension) per informazioni su come installare e configurare il Sidekick.
+1. Per informazioni su come installare e configurare il Sidekick, vedere il documento [Installazione di AEM Sidekick](https://www.aem.live/docs/sidekick-extension).
 
 1. Per utilizzare Genera varianti nel Sidekick (di Edge Delivery Services), includi la seguente configurazione nei progetti di Edge Delivery Services in:
 
@@ -473,24 +473,24 @@ Genera varianti è accessibile dalla sezione [Pannello di navigazione](/help/sit
    }
    ```
 
-1. Potrebbe essere necessario assicurarsi che gli utenti abbiano [Accesso a Experience Manager as a Cloud Service con Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
+1. Potrebbe quindi essere necessario assicurarsi che gli utenti abbiano [Accesso all&#39;Experience Manager as a Cloud Service con Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
 
-1. Potete quindi accedere alla feature selezionando **Genera varianti** dalla barra degli strumenti del Sidekick:
+1. Puoi quindi accedere alla funzione selezionando **Genera varianti** dalla barra degli strumenti del Sidekick:
 
-   ![Genera varianti: accesso da AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
+   ![Genera varianti - accesso da AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
 
 ## Ulteriori informazioni {#further-information}
 
 Per ulteriori informazioni, consulta:
 
-* [Generare varianti GenAI su GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [Genera varianti GenAI su GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Sperimentazione Edge Delivery Services](https://www.aem.live/docs/experimentation)
 
 ## Domande frequenti {#faqs}
 
 ### Output formattato {#formatted-outpu}
 
-**La risposta generata non mi fornisce l’output formattato necessario. Come si modifica il formato? Esempio: ho bisogno di un titolo e un sottotitolo, ma la risposta è solo titolo**
+**La risposta generata non mi fornisce l&#39;output formattato necessario. Come si modifica il formato? Esempio: è necessario un titolo e un sottotitolo, ma la risposta è solo titolo**
 
 1. Apri il prompt effettivo in modalità di modifica.
 1. Vai ai requisiti.
@@ -518,7 +518,7 @@ Per ulteriori informazioni, consulta:
 
 ### Migliorare le risposte {#improve-responses}
 
-**Le risposte che ricevo non sono esattamente quello che sto cercando. Cosa posso fare per migliorarle?**
+**Le risposte ricevute non sono esattamente ciò che sto cercando. Cosa posso fare per migliorarli?**
 
 1. Provare a modificare la temperatura in Impostazioni avanzate.
    1. Una temperatura più alta si allontana dal prompt e porta a una maggiore variabilità, casualità e creatività.
@@ -527,7 +527,7 @@ Per ulteriori informazioni, consulta:
 
 ### Commenti in un prompt {#comments-in-prompt}
 
-**Come posso utilizzare i commenti in un prompt?**
+**Come posso usare i commenti in un prompt?**
 
 I commenti in un prompt vengono utilizzati per includere note, spiegazioni o istruzioni che non devono far parte dell&#39;output effettivo. Questi commenti sono racchiusi in una sintassi specifica: iniziano e terminano con doppie parentesi graffe e iniziano con un hash (ad esempio, `{{# Comment Here }}`). I commenti aiutano a chiarire la struttura o l’intento del prompt senza influire sulla risposta generata.
 
@@ -544,7 +544,7 @@ Ad esempio, https://experience.adobe.com/#/aem/generate-variations
 
 ### Richieste personalizzate nella versione v2.0.0 {#custom-prompts-v200}
 
-**Nella versione 2.0.0 le mie richieste personalizzate non sono più visibili. Come procedere?**
+**Nella versione 2.0.0 le richieste personalizzate non sono più visibili. Come procedere?**
 
 Il passaggio alla versione v2.0.0 causerà l’interruzione dei modelli di prompt personalizzati, che pertanto non saranno disponibili.
 
@@ -560,4 +560,4 @@ Per recuperarli:
 
 ## Cronologia delle versioni {#release-history}
 
-Per informazioni dettagliate sulle versioni corrente e precedente, vedi [Note sulla versione per Genera varianti](/help/generative-ai/release-notes-generate-variations.md)
+Per informazioni dettagliate sulle versioni corrente e precedente, consulta le [Note sulla versione per Genera varianti](/help/generative-ai/release-notes-generate-variations.md)

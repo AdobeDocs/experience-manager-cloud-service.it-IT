@@ -15,9 +15,9 @@ ht-degree: 3%
 
 # Inviare un modulo adattivo all’archiviazione BLOB di Azure
 
-Il **[!UICONTROL Invia ad Azure Blob Storage]**  L’azione di invio collega un modulo adattivo a un portale Microsoft® Azure. È possibile inviare i dati del modulo, i file, gli allegati o il documento record ai contenitori di archiviazione di Azure connessi.
+L&#39;azione di invio **[!UICONTROL Invia ad Azure Blob Storage]** collega un modulo adattivo a un portale Microsoft® Azure. È possibile inviare i dati del modulo, i file, gli allegati o il documento record ai contenitori di archiviazione di Azure connessi.
 
-AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Per ulteriori informazioni su queste opzioni, consulta [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md) articolo.
+AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Ulteriori informazioni su queste opzioni sono disponibili nell&#39;articolo [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md).
 
 ## Vantaggi
 
@@ -30,22 +30,22 @@ Alcuni dei vantaggi dell’integrazione dell’archiviazione Azure Blob con AEM 
 
 Per utilizzare l’archiviazione BLOB di Azure nell’azione di invio di Forms adattivo:
 
-1. [Creare un contenitore di archiviazione BLOB di Azure](#create-a-azure-blob-storage-container-create-azure-configuration): connette AEM Forms ai contenitori di archiviazione Azure.
-2. [Utilizzare la configurazione di archiviazione Azure in un modulo adattivo](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): collega il modulo adattivo ai contenitori di archiviazione Azure configurati.
+1. [Creare un contenitore di archiviazione BLOB di Azure](#create-a-azure-blob-storage-container-create-azure-configuration): connette AEM Forms ai contenitori di archiviazione di Azure.
+2. [Usa la configurazione di archiviazione Azure in un modulo adattivo](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): connette il modulo adattivo ai contenitori di archiviazione Azure configurati.
 
 ### Creare un contenitore di archiviazione BLOB di Azure {#create-azure-configuration}
 
 Per connettere AEM Forms ai contenitori di archiviazione Azure:
-1. Vai al tuo **Autore AEM Forms** istanza > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Archiviazione Azure]**.
-1. Dopo aver selezionato **[!UICONTROL Archiviazione Azure]**, viene reindirizzato a **[!UICONTROL Browser archiviazione Azure]**.
-1. Seleziona un **Contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
+1. Vai all&#39;**istanza Autore AEM Forms** > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
+1. Dopo aver selezionato **[!UICONTROL Archiviazione Azure]**, si verrà reindirizzati a **[!UICONTROL Browser archiviazione Azure]**.
+1. Seleziona un **contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la procedura guidata Crea configurazione di archiviazione Azure.
 
    ![Configurazione archiviazione Azure](/help/forms/assets/azure-storage-configuration.png)
 
-1. Specifica la **[!UICONTROL Titolo]**, **[!UICONTROL Account di archiviazione Azure]** e **[!UICONTROL Chiave di accesso Azure]**.
+1. Specifica il **[!UICONTROL Titolo]**, **[!UICONTROL Account di archiviazione Azure]** e **[!UICONTROL Chiave di accesso Azure]**.
 
-   * Puoi recuperare `Azure Storage Account` nome e `Azure Access key` dagli account di archiviazione nel portale Microsoft® Azure.
+   * È possibile recuperare il nome `Azure Storage Account` e `Azure Access key` dagli account di archiviazione nel portale Microsoft® Azure.
 <!--
 
     >[!NOTE]
@@ -63,18 +63,18 @@ Ora puoi utilizzare questa configurazione del contenitore di archiviazione Azure
 ### Utilizzare la configurazione di archiviazione Azure in un modulo adattivo {#use-azure-storage-configuartion-in-af}
 
 Puoi utilizzare la configurazione del contenitore di archiviazione Azure creata in un modulo adattivo per salvare dati o documenti di record generati nel contenitore di archiviazione Azure. Per utilizzare la configurazione del contenitore di archiviazione Azure in un modulo adattivo, effettua le seguenti operazioni:
-1. Creare un [Modulo adattivo](/help/forms/creating-adaptive-form-core-components.md).
+1. Crea un [modulo adattivo](/help/forms/creating-adaptive-form-core-components.md).
 
    >[!NOTE]
    >
-   > * Seleziona lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stato creato lo storage OneDrive.
-   > * In caso negativo [!UICONTROL Contenitore configurazione] è selezionato, quindi il [!UICONTROL Configurazione archiviazione] Le cartelle vengono visualizzate nella finestra delle proprietà dell&#39;azione di invio.
+   > * Selezionare lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stato creato lo spazio di archiviazione di OneDrive.
+   > * Se non è selezionato alcun contenitore di configurazione [!UICONTROL Contenitore di configurazione], nella finestra delle proprietà dell&#39;azione di invio vengono visualizzate le cartelle globali [!UICONTROL Configurazione archiviazione].
 
-1. Seleziona **Azione di invio** as **[!UICONTROL Invia ad Azure Blob Storage]**.
-   ![Azure Blob Storage GIF](/help/forms/assets/azure-submit-video.gif)
+1. Seleziona **Azione di invio** come **[!UICONTROL Invia ad Azure Blob Storage]**.
+   ![GIF archiviazione BLOB di Azure](/help/forms/assets/azure-submit-video.gif)
 
-1. Seleziona la **[!UICONTROL Configurazione archiviazione]**, dove desideri salvare i dati.
-1. Clic **[!UICONTROL Salva]** per salvare le impostazioni di invio.
+1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
+1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
 
 Quando si invia il modulo, i dati vengono salvati nella configurazione del contenitore di archiviazione Azure specificata.
 La struttura di cartelle per il salvataggio dei dati è `/configuration_container/form_name/year/month/date/submission_id/data`.

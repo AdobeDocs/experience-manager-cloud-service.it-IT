@@ -1,6 +1,6 @@
 ---
-title: Librerie di archiviazione di App Builder
-description: Scopri lo stato e le librerie di archiviazione dei file per le applicazioni di App Builder.
+title: Librerie di archiviazione App Builder
+description: Scopri lo stato e le librerie di archiviazione dei file per le applicazioni App Builder.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ---
 
-# Librerie di archiviazione di App Builder
+# Librerie di archiviazione App Builder
 
 ## Introduzione alle librerie di archiviazione
 
-Scopri le opzioni di archiviazione di App Builder e perché lo storage è importante in un’applicazione di App Builder.
+Scopri le opzioni di storage di App Builder e perché lo storage è importante in un’applicazione App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339238/?quality=12&learn=on)
 
@@ -32,6 +32,6 @@ Scopri come installare la libreria di archiviazione di stato nell’applicazione
 
 ## Utilizzo della libreria di archiviazione file
 
-Scopri come installare la libreria di archiviazione dei file nell’applicazione App Builder per salvare, recuperare ed eliminare i dati.
+Scopri come installare la libreria di archiviazione file nell’applicazione App Builder per salvare, recuperare ed eliminare i dati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339239/?quality=12&learn=on)

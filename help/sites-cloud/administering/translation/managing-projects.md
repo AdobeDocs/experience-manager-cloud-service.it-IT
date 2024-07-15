@@ -82,7 +82,7 @@ Dopo aver tradotto, puoi [rivedere la traduzione](#reviewing-and-promoting-updat
    ![Riferimenti](../assets/references.png)
 
 1. Scegli **Copie per lingua**, quindi seleziona le copie per lingua per le quali stai traducendo le pagine sorgente.
-1. Seleziona **Crea e traduci** quindi configura il processo di traduzione:
+1. Seleziona **Crea e traduci**, quindi configura il processo di traduzione:
 
    * Utilizza il menu a discesa **Lingue** per selezionare una copia per lingua per cui desideri tradurre. Seleziona le lingue aggiuntive come richiesto. Le lingue visualizzate nell’elenco corrispondono alle [directory principali della lingua create](preparation.md#creating-a-language-root).
       * Selezionando più lingue si crea un progetto con un processo di traduzione per ogni lingua.
@@ -104,7 +104,7 @@ Dopo aver tradotto, puoi [rivedere la traduzione](#reviewing-and-promoting-updat
    ![Riferimenti](../assets/references.png)
 
 1. Scegli **Copie per lingua**, quindi seleziona le copie per lingua per le quali stai traducendo le pagine sorgente.
-1. Seleziona **Aggiorna copie per lingua** quindi configura il processo di traduzione:
+1. Seleziona **Aggiorna copie per lingua** e quindi configura il processo di traduzione:
 
    * Per tradurre la pagina selezionata e tutte le pagine figlie, seleziona l’opzione **Seleziona tutte le sottopagine**. Per tradurre solo la pagina selezionata, deseleziona l’opzione.
    * Per **Progetto**, seleziona **Crea progetti di traduzione**.
@@ -133,7 +133,7 @@ Come per la creazione di un progetto, quando si aggiungono pagine, se necessario
 
    ![Aggiorna copie per lingua dalla barra dei riferimenti](../assets/update-language-copies-references.png)
 
-1. Seleziona **Aggiorna copie per lingua** quindi configura le proprietà:
+1. Seleziona **Aggiorna copie per lingua** e quindi configura le proprietà:
 
    * Per tradurre la pagina selezionata e tutte le pagine figlie, seleziona l’opzione **Seleziona tutte le sottopagine**. Per tradurre solo la pagina selezionata, deseleziona l’opzione.
    * Per **Progetto**, seleziona **Aggiungi al progetto di traduzione esistente**.
@@ -198,8 +198,8 @@ Nei casi in cui viene utilizzata una memoria di traduzione proprietaria, gli agg
 È possibile selezionare una proprietà nella vista a elenco della console Sites per verificare se una pagina è stata tradotta, è in traduzione o non è ancora stata tradotta.
 
 1. Nella console Sites, passa a [vista a elenco](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Seleziona, **Impostazioni vista** nel menu a discesa vista.
-1. Nella finestra di dialogo, seleziona **Tradotto** proprietà e seleziona **Aggiorna**.
+1. Selezionare, **Visualizza impostazioni** nel menu a discesa.
+1. Nella finestra di dialogo, controlla la proprietà **Translated** e seleziona **Update**.
 
 Nella console Sites viene ora visualizzata la colonna **Tradotto** che mostra lo stato di traduzione delle pagine elencate.
 
@@ -245,10 +245,10 @@ Quando crei manualmente un progetto di traduzione, devi fornire valori per le se
 * **Metodo di traduzione:** seleziona **Traduzione umana** per indicare che la traduzione deve essere eseguita manualmente.
 
 1. Sulla barra degli strumenti della console Progetti, seleziona **Crea**.
-1. Seleziona la **Progetto di traduzione** e quindi selezionare **Successivo**.
+1. Seleziona il modello **Progetto di traduzione** e quindi **Successivo**.
 1. Immetti i valori per la scheda proprietà **Base**.
-1. Seleziona **Avanzate** e forniscono valori per le proprietà relative alla traduzione.
-1. Seleziona **Crea**. Nella casella di conferma, seleziona **Fine** per tornare alla console progetti, oppure seleziona **Apri progetto** per aprire e iniziare a gestire il progetto.
+1. Seleziona **Avanzate** e fornisci i valori per le proprietà relative alla traduzione.
+1. Seleziona **Crea**. Nella casella di conferma, seleziona **Fine** per tornare alla console dei progetti, oppure seleziona **Apri progetto** per aprire e iniziare a gestire il progetto.
 
 ### Aggiunta di pagine e risorse a un processo di traduzione {#adding-pages-assets-to-a-translation-job}
 
@@ -258,7 +258,7 @@ Puoi aggiungere pagine, risorse o tag al processo del progetto di traduzione. Pe
 
    ![Riquadro del processo di traduzione](../assets/translation-job.png)
 
-1. Nella finestra successiva, seleziona **Aggiungi** nella barra degli strumenti, quindi seleziona **Risorse/Pagine**.
+1. Nella finestra successiva, seleziona il pulsante **Aggiungi** nella barra degli strumenti, quindi seleziona **Assets/Pages**.
 
    ![Aggiungi pagine](../assets/add-to-project.png)
 
@@ -357,7 +357,7 @@ La valutazione funziona correttamente solo quando il fornitore di traduzione uti
 
 1. Nella console Progetti, apri il progetto di traduzione.
 1. Nel titolo del processo di traduzione, seleziona il menu dei comandi, quindi seleziona **Richiedi valutazione**.
-1. Quando lo stato del processo cambia in **Ambito completato**, selezionare il menu dei comandi, quindi selezionare **Mostra ambito**.
+1. Quando lo stato del processo cambia in **Valutazione completata**, scegliere **Mostra valutazione** dal menu dei comandi.
 
 ### Avvio dei processi di traduzione {#starting-translation-jobs}
 
@@ -366,8 +366,8 @@ Avvia un processo di traduzione per tradurre le pagine di origine nella lingua d
 Puoi avviare un singolo processo dall’interno del progetto.
 
 1. Nella console Progetti, apri il progetto di traduzione.
-1. Nel riquadro del processo di traduzione, seleziona il menu dei comandi, quindi seleziona **Inizio**.
-1. Nella finestra di dialogo che conferma l’avvio della traduzione, seleziona **Chiudi**.
+1. Nel riquadro del processo di traduzione, selezionare il menu dei comandi, quindi selezionare **Avvia**.
+1. Nella finestra di dialogo che conferma l&#39;avvio della traduzione, seleziona **Chiudi**.
 
 Dopo aver avviato il processo di traduzione, il riquadro del processo di traduzione mostra la traduzione nello stato **In corso**.
 
@@ -382,8 +382,8 @@ Puoi anche avviare tutti i processi di traduzione per un progetto.
 Annulla un processo di traduzione per interromperlo e impedire al fornitore di traduzione di eseguire ulteriori traduzioni. È possibile annullare un processo quando il processo è nello stato **Confermato per traduzione** o **Traduzione in corso**.
 
 1. Nella console Progetti, apri il progetto di traduzione.
-1. Nel riquadro del processo di traduzione, seleziona il menu dei comandi, quindi seleziona **Annulla**.
-1. Nella finestra di dialogo che conferma l’annullamento della traduzione, seleziona **OK**.
+1. Nel riquadro del processo di traduzione, selezionare il menu dei comandi, quindi selezionare **Annulla**.
+1. Nella finestra di dialogo che conferma l&#39;annullamento della traduzione, seleziona **OK**.
 
 ### Accettare e rifiutare un flusso di lavoro {#accept-reject-workflow}
 
@@ -420,7 +420,7 @@ Quando il contenuto viene tradotto per una copia per lingua esistente, rivedi le
 
 ![Processo pronto per la revisione](../assets/job-ready-for-review.png)
 
-1. Seleziona la pagina nel master lingua, quindi fai clic su **Riferimenti**, quindi seleziona **Copie per lingua**.
+1. Seleziona la pagina nel master lingua, seleziona **Riferimenti**, quindi seleziona **Copie per lingua**.
 1. Seleziona la copia per lingua da rivedere.
 
    ![Copia per lingua pronta per la revisione](../assets/language-copy-ready-for-review.png)
@@ -431,7 +431,7 @@ Quando il contenuto viene tradotto per una copia per lingua esistente, rivedi le
 
 1. Per aprire la copia di lancio della pagina per esaminare e modificare il contenuto, fai clic su **Apri pagina**.
 1. Dopo aver rivisto il contenuto e apportato le modifiche necessarie, per promuovere la copia di lancio fai clic su **Promuovi**.
-1. Il giorno **Promuovi lancio** , specificare le pagine da promuovere, quindi selezionare **Promuovi**.
+1. Nella pagina **Promuovi lancio**, specifica le pagine da promuovere, quindi seleziona **Promuovi**.
 
 ### Confronto di copie per lingua {#comparing-language-copies}
 
@@ -449,22 +449,22 @@ Per confrontare le copie per lingua con il master:
 
 ## Spostamento o ridenominazione di una pagina di origine {#move-source}
 
-Se una pagina sorgente già tradotta deve essere [rinominato o spostato](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), traducendo di nuovo la pagina dopo lo spostamento viene creata una copia per lingua in base al nuovo nome/percorso della pagina. La copia per lingua precedente basata sul nome/posizione precedente è ancora presente. Per evitare questo problema, è possibile utilizzare la funzionalità di aggiornamento della copia per lingua dopo lo spostamento:
+Se una pagina di origine già tradotta deve essere [rinominata o spostata](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), la traduzione della pagina verrà ripetuta dopo lo spostamento e verrà creata una copia per lingua basata sul nuovo nome/percorso della pagina. La copia per lingua precedente basata sul nome/posizione precedente è ancora presente. Per evitare questo problema, è possibile utilizzare la funzionalità di aggiornamento della copia per lingua dopo lo spostamento:
 
 1. Sposta una pagina contenente una copia per lingua.
 1. Seleziona la directory principale della copia lingua.
-1. Apri **Riferimenti** pannello.
+1. Apri il pannello **Riferimenti**.
 1. Seleziona **Copie per lingua**.
 1. Seleziona le lingue di destinazione da aggiornare.
-1. Seleziona **Aggiorna copie per lingua**.
+1. Selezionare **Aggiorna copie per lingua**.
 
-   ![update-language-copy](../assets/translation-move-to.png)
+   ![aggiorna-copie-lingua](../assets/translation-move-to.png)
 
-1. Clic **Aggiorna**. A [Launch](/help/sites-cloud/authoring/launches/promoting.md) verrà creato.
+1. Fai clic su **Aggiorna**. Verrà creato un [lancio](/help/sites-cloud/authoring/launches/promoting.md).
 1. Passa alla directory principale della lingua desiderata e selezionala.
-1. Utilizzo di **Riferimenti** pannello, seleziona **Lanci**.
+1. Utilizzando il pannello **Riferimenti**, seleziona **Avvii**.
 
-   ![promote-launch-translation](../assets/promote-launch-translation.png)
+   ![promuovi-lancio-traduzione](../assets/promote-launch-translation.png)
 
 1. Fai clic sul lancio creato e fai clic su **Promuovi lancio**.
 
@@ -479,7 +479,7 @@ Sebbene l’AEM offra diverse soluzioni e interfacce di traduzione, è anche pos
 Puoi scaricare il contenuto di un processo di traduzione, ad esempio per inviarlo a un fornitore di traduzione che non è integrato con l’AEM tramite un connettore o per rivederlo.
 
 1. Dal menu a discesa del riquadro del processo di traduzione, seleziona **Esporta**.
-1. Nella finestra di dialogo, seleziona **Scarica file esportato** e, se necessario, utilizzare la finestra di dialogo del browser web per salvare il file.
+1. Nella finestra di dialogo, selezionare **Scarica file esportato** e se necessario utilizzare la finestra di dialogo del browser Web per salvare il file.
 1. Nella finestra di dialogo, seleziona **Chiudi**.
 
 ### Importazione di un processo di traduzione {#importing-a-translation-job}

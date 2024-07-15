@@ -16,16 +16,16 @@ ht-degree: 85%
 
 Con Edge Delivery Services, l’authoring è semplice, veloce e flessibile. Per creare contenuti per Edge Delivery Services, sono disponibili due opzioni:
 
-* [Editor universale](#universal-editor) - Una moderna interfaccia WYSIWYG (What-you-see-is-what-you-get) per la creazione di contenuti all’interno dell’AEM
+* [Editor universale](#universal-editor) - Interfaccia utente WYSIWYG (What-you-see-is-what-you-get) moderna per la creazione di contenuti in AEM
 * [Authoring basato su documenti](#document-based): come Microsoft Word o documenti Google
 
 ## Authoring nell’Editor universale {#universal-editor}
 
 Quando utilizzi Edge Delivery Services con AEM as a Cloud Service, l’elemento più importante da comprendere è che il contenuto che crei viene mantenuto in AEM as a Cloud Service.
 
-![Funzionamento dell’authoring WYSIWYG con i Edge Delivery Services](assets/how-aem-edge-works.png)
+![Funzionamento dell&#39;authoring WYSIWYG con i Edge Delivery Services](assets/how-aem-edge-works.png)
 
-1. [Ambiente di authoring WYSIWYG](/help/sites-cloud/authoring/quick-start.md) viene utilizzato per la gestione dei contenuti, ad esempio per creare nuove pagine, frammenti di esperienza, frammenti di contenuto e così via.
+1. [L&#39;ambiente di authoring WYSIWYG](/help/sites-cloud/authoring/quick-start.md) viene utilizzato per la gestione dei contenuti, ad esempio per la creazione di nuove pagine, frammenti di esperienza e frammenti di contenuto.
    * Sono disponibili tutte le funzioni di AEM, ad esempio flussi di lavoro, MSM, traduzione, lanci e così via.
 1. [L’Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md) viene utilizzato per creare i contenuti gestiti in AEM.
    * L’Editor universale offre un’interfaccia utente nuova e moderna per l’authoring dei contenuti.
@@ -50,7 +50,7 @@ I dettagli dei blocchi possono quindi essere configurati nella barra delle Propr
 
 Per informazioni dettagliate su come effettuare l’authoring con l’Editor universale, consulta il documento [Authoring dei contenuti con l’Editor universale.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-Consulta la sezione [Guida introduttiva per sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) per scoprire come avviare un progetto personalizzato per l’authoring con AEM e Edge Delivery Services.
+Consulta la [Guida introduttiva per sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) per scoprire come avviare un progetto personalizzato per l&#39;authoring con AEM e Edge Delivery Services.
 
 ## Authoring basato su documenti  {#document-based}
 

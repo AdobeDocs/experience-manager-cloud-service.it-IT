@@ -1796,7 +1796,7 @@ Questa query rappresenta un’interrogazione:
 } 
 ```
 
-## Query di esempio per la distribuzione di risorse DAM e Dynamic Medie {#sample-queries-delivery-DAM-DM}
+## Query di esempio per la distribuzione di DAM e Dynamic Medie Assets {#sample-queries-delivery-DAM-DM}
 
 Per la consegna di immagini ottimizzate per il web (di risorse DAM):
 
@@ -1806,9 +1806,9 @@ Per la consegna di immagini ottimizzate per il web (di risorse DAM):
 
 Per la consegna dell’URL a una risorsa Dynamic Medie
 
-* Consulta [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - Riferimento immagine](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* Vedi [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - Riferimento immagine](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-* Consulta [Query di esempio per la consegna di risorse Dynamic Medie tramite URL: più riferimenti](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* Vedi [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - Riferimenti multipli](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## Struttura di esempio dei frammenti di contenuto (utilizzata con GraphQL) {#content-fragment-structure-graphql}
 

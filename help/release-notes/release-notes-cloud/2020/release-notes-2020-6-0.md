@@ -1,6 +1,6 @@
 ---
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.6.0'
-description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.6.0 as a Cloud Service."
+description: "[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2020.6.0."
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
@@ -48,11 +48,11 @@ La versione 2.9.0 dei [Componenti core](https://experienceleague.adobe.com/docs/
 
 * Sono stati apportati dei miglioramenti all’assistente vocale.
 
-## Novità delle fondazioni dell’AEM as a Cloud Service {#foundations}
+## Novità negli elementi di base di AEM as a Cloud Service {#foundations}
 
-I tempi di creazione dei progetti AEM miglioreranno rimuovendo tutti i riferimenti all’archivio remoto nel file pom.xml del progetto AEM `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+I tempi di creazione dei progetti AEM miglioreranno eliminando tutti i riferimenti nel file pom.xml del progetto AEM all&#39;archivio remoto `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-Il Jar dell’API SDK dell’AEM as a Cloud Service, precedentemente ospitato in tale posizione, ora si trova in Maven Central, l’archivio di artefatti predefinito di Maven.
+Il Jar dell’API SDK di AEM as a Cloud Service, precedentemente ospitato in tale posizione, ora si trova in Maven Central, l’archivio di artefatti predefinito di Maven.
 
 ## Novità di Cloud Manager {#cloud-manager}
 
@@ -104,14 +104,14 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 * Il collegamento alla Console per sviluppatori direttamente da Cloud Manager non mostra l’opzione per ibernare/riattivare l’ambiente di un programma sandbox. Per risolvere questo problema, una volta nella Console per sviluppatori, aggiungi il pattern `#release-cm-p1234-e5678` alla fine dell’URL, dove *1234* è l’ID del programma e *5678* è l’ID dell’ambiente. Questo problema sarà risolto in una versione successiva.
 
-## Novità in [!DNL Adobe Experience Manager Assets] {#aem-assets}
+## Novità di [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 **User experience guidata per tag avanzati migliorati, basati su Adobe Sensei**
 
 I tag avanzati migliorati consentono di addestrare modelli di assegnazione tag avanzati per riconoscere le immagini in base a tag aziendali specifici, oltre che ai tag avanzati generici.
 
 Con questa versione, è disponibile una nuova user experience guidata che consente di impostare l’addestramento di tag avanzati per set di tag specifici dei clienti e di addestrarli con risorse che in futuro dovranno essere riconosciute e a cui dovranno essere assegnati i tag. L’esperienza è ora più intuitiva.
-Addestra i tag avanzati migliorati in modo più intuitivo. Consulta [aggiungere tag avanzati alle risorse](/help/assets/smart-tags.md).
+Addestra i tag avanzati migliorati in modo più intuitivo. Consulta [come aggiungere tag avanzati alle risorse](/help/assets/smart-tags.md).
 
 **Supporto per l’acquisizione, l’anteprima e la distribuzione di contenuti 3D**
 

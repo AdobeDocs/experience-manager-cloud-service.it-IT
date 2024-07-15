@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Aggiungere, rimuovere o modificare i metadati di un modulo adattivo {#manage-form-metadata}
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 
 | Versione | Collegamento articolo |
@@ -23,13 +23,13 @@ ht-degree: 3%
 
 I metadati semplificano la classificazione e l’organizzazione delle risorse e aiutano gli utenti che cercano una risorsa specifica.
 
-[!DNL AEM Forms]Per impostazione predefinita, fornisce un set definito di metadati per ogni tipo di risorsa. Oltre ai metadati predefiniti, puoi aggiungere metadati personalizzati a ciascun tipo di risorsa. [!DNL AEM Forms] consente inoltre di creare, gestire e scambiare tutti i metadati in modo efficiente per i moduli.
+Per impostazione predefinita, [!DNL AEM Forms] fornisce un set definito di metadati per ogni tipo di risorsa. Oltre ai metadati predefiniti, puoi aggiungere metadati personalizzati a ciascun tipo di risorsa. [!DNL AEM Forms] consente inoltre di creare, gestire e scambiare tutti i metadati in modo efficiente per i moduli.
 
 <!-- If you are a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you are using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
 
 ## Metadati in [!DNL AEM Forms] {#metadata-in-aem-forms}
 
-In entrata [!DNL AEM Forms], l’elenco delle proprietà dei metadati associate a una risorsa dipende dal suo tipo. Inoltre, se aggiungi una proprietà di metadati personalizzata, questa viene aggiunta in tutte le risorse del tipo a cui sono stati aggiunti i metadati personalizzati.
+In [!DNL AEM Forms], l&#39;elenco delle proprietà dei metadati associate a una risorsa dipende dal suo tipo. Inoltre, se aggiungi una proprietà di metadati personalizzata, questa viene aggiunta in tutte le risorse del tipo a cui sono stati aggiunti i metadati personalizzati.
 
 ### Tipi di risorse {#asset-types}
 
@@ -44,7 +44,7 @@ I seguenti tipi di risorse sono supportati in [!DNL AEM Forms]:
 
 #### Ampio elenco di metadati {#extensive-list-of-metadata}
 
-Di seguito è riportato un elenco completo delle proprietà di metadati supportate in [!DNL AEM Forms]:
+Di seguito è riportato un elenco completo delle proprietà dei metadati supportate in [!DNL AEM Forms]:
 
 <table>
  <tbody> 
@@ -61,7 +61,7 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
   <tr> 
    <td>Descrizione</td> 
    <td>Tutto tranne la risorsa</td> 
-   <td>Descrizione della risorsa. L’utente può specificare questo valore.<br /> </td> 
+   <td>Descrizione della risorsa. L'utente può specificare questo valore.<br /> </td> 
   </tr> 
   <tr> 
    <td>Tipo</td> 
@@ -156,7 +156,7 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
     <ul> 
      <li>Riferimenti: Assets a cui fa riferimento il modulo corrente.</li> 
      <li>Con riferimento da: Assets che fanno riferimento alla risorsa corrente.</li> 
-    </ul> <p>Queste risorse vengono visualizzate come collegamenti e i relativi metadati sono accessibili direttamente facendo clic su di essi.<br /> </p> </td> 
+    </ul> <p>Queste risorse vengono visualizzate come collegamenti e i relativi metadati sono accessibili direttamente facendo clic su di esse.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Selezione del modello del modulo (XDP/XSD)</td> 
@@ -184,14 +184,14 @@ Assets dispone di valori di proprietà esistenti che possono essere visualizzati
 
 1. Aprire la pagina delle proprietà utilizzando uno dei modi seguenti:
 
-   * Fai clic su **[!UICONTROL Proprietà]** ![Proprietà](assets/Smock_Info_18_N.svg) da Azioni rapide.
+   * Fai clic sull&#39;icona **[!UICONTROL Proprietà]** ![Proprietà](assets/Smock_Info_18_N.svg) da Azioni rapide.
 
      >[!NOTE]
      >
      >Le Azioni rapide sono le azioni che vengono visualizzate su una miniatura al passaggio del mouse.
 
-   * Seleziona il modulo e fai clic su **[!UICONTROL Proprietà]** ![Proprietà](assets/Smock_Info_18_N.svg) nella barra degli strumenti.
-   * Passare alla pagina dei dettagli del modulo facendo clic sulla miniatura del modulo quando non è attiva la modalità di selezione. A questo punto, fai clic su ![Proprietà](assets/Smock_Info_18_N.svg) icona a forma di occhio in alto a destra, quindi fare clic su Proprietà nell&#39;elenco sottostante.
+   * Seleziona il modulo e fai clic sull&#39;icona **[!UICONTROL Proprietà]** ![Proprietà](assets/Smock_Info_18_N.svg) visualizzata nella barra degli strumenti.
+   * Passare alla pagina dei dettagli del modulo facendo clic sulla miniatura del modulo quando non è attiva la modalità di selezione. Fare clic sull&#39;icona dell&#39;occhio ![Proprietà](assets/Smock_Info_18_N.svg) in alto a destra, quindi fare clic su Proprietà nell&#39;elenco sottostante.
 
 1. Nella pagina delle proprietà visualizzata viene visualizzato uno schema contenente solo le proprietà dei metadati che contengono un certo valore.
 
@@ -232,9 +232,9 @@ Puoi modificare il valore delle proprietà dei metadati esistenti o aggiungere n
 
 Nel pannello sinistro della pagina delle proprietà viene visualizzata la miniatura del modulo. Per impostazione predefinita, la miniatura visualizzata è quella generata al momento della creazione del modulo (Modulo adattivo) o al momento del caricamento del modulo.
 
-Per tutti i tipi di modulo, puoi caricare un’immagine facendo clic su **[!UICONTROL Carica immagine]** e la ricerca di un file di immagine dalla directory locale. L&#39;immagine selezionata viene utilizzata come miniatura invece di quella predefinita.
+Per tutti i tipi di modulo, puoi caricare un&#39;immagine facendo clic su **[!UICONTROL Carica immagine]** e cercando un file immagine dalla directory locale. L&#39;immagine selezionata viene utilizzata come miniatura invece di quella predefinita.
 
-Per l’Adaptive Forms è disponibile una funzionalità aggiuntiva che consente all’utente di generare una miniatura come istantanea dell’anteprima del modulo adattivo corrente. Da [!DNL AEM Forms] supporta anche l’authoring di Forms adattivo; l’anteprima del modulo adattivo potrebbe cambiare ogni volta che lo si modifica. Questa funzionalità per generare una miniatura consente di ottenere una nuova miniatura per il modulo adattivo in base allo stato di anteprima corrente. Clic **[!UICONTROL Genera anteprima]** per eseguire questa azione.
+Per l’Adaptive Forms è disponibile una funzionalità aggiuntiva che consente all’utente di generare una miniatura come istantanea dell’anteprima del modulo adattivo corrente. Poiché [!DNL AEM Forms] supporta anche l&#39;authoring di Forms adattivo, l&#39;anteprima del modulo adattivo potrebbe cambiare ogni volta che lo si modifica. Questa funzionalità per generare una miniatura consente di ottenere una nuova miniatura per il modulo adattivo in base allo stato di anteprima corrente. Fai clic su **[!UICONTROL Genera anteprima]** per eseguire questa azione.
 
 >[!NOTE]
 >
@@ -244,17 +244,17 @@ Per l’Adaptive Forms è disponibile una funzionalità aggiuntiva che consente 
 
 ## Aggiungi metadati personalizzati {#add-custom-metadata}
 
-A parte i metadati forniti come predefiniti, [!DNL AEM Forms] supporta nuovi metadati personalizzati.
+Oltre ai metadati forniti come predefiniti, [!DNL AEM Forms] supporta nuovi metadati personalizzati.
 
-Viene fornito uno strumento (Editor schema metadati) per definire lo schema per il layout dei metadati, ovvero il layout di ciò che viene visualizzato nel **[!UICONTROL Proprietà]** pagina di un modulo. L’Editor schema metadati consente di aggiungere o modificare uno schema personalizzato per le risorse.
+Viene fornito uno strumento (Editor schema metadati) per definire lo schema per il layout dei metadati, ovvero il layout di ciò che viene visualizzato nella pagina **[!UICONTROL Proprietà]** di un modulo. L’Editor schema metadati consente di aggiungere o modificare uno schema personalizzato per le risorse.
 
 [!DNL AEM Forms] espone gli schemi di metadati dei tipi di moduli supportati in questo strumento. In questo modo, puoi accedere a questi schemi e utilizzare la funzionalità fornita nell’editor schema metadati per aggiungere proprietà personalizzate.
 
 ### Navigare nell’editor schema metadati {#navigate-the-metadata-schema-editor}
 
-1. Accedi a **[!UICONTROL Strumenti > Assets > Schemi metadati]**.
+1. Passa a **[!UICONTROL Strumenti > Assets > Schemi metadati]**.
 
-1. Clic **[!UICONTROL moduli]** dai moduli schema elencati.
+1. Fai clic su **[!UICONTROL moduli]** dai moduli schema elencati.
 
 1. Nell’elenco visualizzato, fai clic sul tipo di risorsa per il quale desideri aggiungere metadati personalizzati.
 
@@ -262,11 +262,11 @@ Viene fornito uno strumento (Editor schema metadati) per definire lo schema per 
    >
    >Questi schemi contengono proprietà di metadati che vengono fornite come predefinite e non devono essere modificate (selezionando la casella di controllo e facendo clic su modifica nella barra degli strumenti) per evitare problemi funzionali.
 
-1. Qualsiasi tipo di risorsa su cui hai fatto clic apre un elenco contenente `extendedmetadata` opzione. Modifica questo schema.
+1. Qualsiasi tipo di risorsa selezionato apre un elenco contenente l&#39;opzione `extendedmetadata`. Modifica questo schema.
 
-1. Seleziona la casella di controllo accanto a `extendedmetadata` e quindi fare clic sul pulsante Modifica ![Modifica](assets/Smock_Edit_18_N.svg) nella barra degli strumenti.
+1. Selezionare la casella di controllo accanto a `extendedmetadata`, quindi fare clic sull&#39;icona Modifica ![Modifica](assets/Smock_Edit_18_N.svg) visualizzata nella barra degli strumenti.
 
-1. [!DNL AEM Forms] apre l’editor schema metadati o il generatore di moduli del tipo di risorsa selezionato (in questo caso Modulo adattivo).
+1. [!DNL AEM Forms] apre l&#39;editor schema metadati o il generatore di moduli del tipo di risorsa selezionato (in questo caso Modulo adattivo).
 
    Editor metadati
 
@@ -277,13 +277,13 @@ Viene fornito uno strumento (Editor schema metadati) per definire lo schema per 
    1. È possibile aggiungere altre schede facendo clic sul simbolo +.
 
    1. Puoi aggiungere un campo personalizzato del tipo desiderato trascinando il componente Campo dalla sezione **[!UICONTROL Genera modulo]** nella pagina dello schema.
-   1. Le specifiche di questo campo possono essere fornite nel **[!UICONTROL Impostazioni]** dopo aver fatto clic sul campo.
+   1. Le specifiche per questo campo possono essere fornite nella sezione **[!UICONTROL Impostazioni]** dopo aver fatto clic sul campo.
 
 ### Aggiungi proprietà metadati personalizzata nell’editor schema {#add-custom-metadata-property-in-schema-editor}
 
 1. Passa alla scheda (esistente o nuova) in cui desideri aggiungere la proprietà personalizzata.
 
-1. Trascina un componente del tipo desiderato dalla sezione **[!UICONTROL Genera modulo]** sul pannello sinistro e posizionarlo in una posizione comoda.
+1. Trascina un componente del tipo desiderato dalla sezione **[!UICONTROL Genera modulo]** al pannello di sinistra e posizionalo nella posizione desiderata.
 
    >[!NOTE]
    >
@@ -292,7 +292,7 @@ Viene fornito uno strumento (Editor schema metadati) per definire lo schema per 
 1. Fai clic su un componente appena trascinato. Nella scheda Impostazioni visualizzata nel pannello di destra, inserisci le informazioni per i campi seguenti:
 
    1. Specifica un&#39;etichetta campo da utilizzare come nome visualizzato sopra il campo inserito nello schema (ad esempio: Reparto)
-   1. Nel campo Mappa su proprietà puoi visualizzare un valore precompilato **&quot;./jcr:content/metadata/default&#39;**. Cambia &#39;**predefinito**&#39; a un nome di proprietà desiderato, utilizzato per memorizzare la proprietà nell&#39;archivio crx (ad esempio: &#39;./jcr:content/metadata/department&#39;)
+   1. Nel campo Mappa su proprietà è possibile visualizzare un valore precompilato **&#39;./jcr:content/metadata/default&#39;**. Modificare &#39;**default**&#39; in un nome di proprietà desiderato, utilizzato per archiviare la proprietà nell&#39;archivio crx (ad esempio: &#39;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
@@ -301,14 +301,14 @@ Viene fornito uno strumento (Editor schema metadati) per definire lo schema per 
       >Inoltre, il nome della proprietà deve essere univoco per evitare di scrivere valori per due o più proprietà nella stessa posizione nell’archivio. Pertanto, si consiglia di modificare il valore &quot;default&quot;.
 
    1. Compila altre impostazioni in base alle esigenze. Ad esempio: seleziona l’opzione Obbligatorio se desideri rendere obbligatorio il campo.
-   1. Per eliminare un campo aggiunto, selezionarlo e quindi fare clic sul pulsante Elimina ![Elimina](assets/Smock_Delete_18_N.svg) icona.
+   1. Per eliminare un campo aggiunto, selezionarlo e fare clic sull&#39;icona Elimina ![Elimina](assets/Smock_Delete_18_N.svg).
 
 1. Se necessario, segui i passaggi 1-3 per aggiungere un’altra proprietà.
-1. Clic **[!UICONTROL Salva]** dopo aver apportato tutte le modifiche.
+1. Fai clic su **[!UICONTROL Salva]** dopo aver apportato tutte le modifiche.
 
    È stata aggiunta una proprietà di metadati personalizzata.
 
-Tutti i Forms adattivi in [!DNL AEM Forms] ora contiene questa proprietà di metadati aggiuntiva. Puoi modificarlo dalla pagina delle proprietà.
+Tutti i Forms adattivi in [!DNL AEM Forms] ora contengono questa proprietà di metadati aggiuntiva. Puoi modificarlo dalla pagina delle proprietà.
 
 
 ## Consulta anche {#see-also}

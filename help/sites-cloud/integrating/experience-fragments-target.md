@@ -335,13 +335,13 @@ Per esportare un frammento di esperienza da AEM a Target (dopo aver specificato 
    >
    >Se il frammento di esperienza è già stato esportato, seleziona **Aggiorna in Adobe Target**.
 
-1. Seleziona **Esporta senza pubblicare** o **Pubblica** secondo necessità.
+1. Seleziona **Esporta senza pubblicare** o **Publish** come richiesto.
 
    >[!NOTE]
    >
    >Selezionando **Pubblica** pubblicherà immediatamente il frammento di esperienza e lo invierà in Target.
 
-1. Seleziona **OK** nella finestra di dialogo di conferma.
+1. Selezionare **OK** nella finestra di dialogo di conferma.
 
    Il frammento di esperienza deve ora essere in Target.
 

@@ -21,36 +21,36 @@ Ad esempio, puoi compilare i valori dei campi in un modulo adattivo e inviarlo a
 
 Crea una configurazione di archiviazione Azure e fai riferimento a tale configurazione utilizzando il connettore di archiviazione unificata (USC). È quindi possibile configurare i modelli di flusso di lavoro AEM per esternalizzare l’archiviazione dati per collegarli a un server di archiviazione Azure.
 
-### Crea [!DNL Azure] configurazione di archiviazione {#create-azure-storage-configuration}
+### Crea configurazione archiviazione [!DNL Azure] {#create-azure-storage-configuration}
 
-Prima di eseguire questi passaggi, assicurati di disporre di un [!DNL Azure] e una chiave di accesso per autorizzare l&#39;accesso al [!DNL Azure] account di archiviazione.
+Prima di eseguire questi passaggi, verificare di disporre di un account di archiviazione [!DNL Azure] e di una chiave di accesso per autorizzare l&#39;accesso all&#39;account di archiviazione [!DNL Azure].
 
-Per creare un’ [!DNL Azure] configurazione archiviazione:
+Per creare una configurazione di archiviazione [!DNL Azure], effettuare le seguenti operazioni:
 
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
-1. Seleziona una cartella per creare la configurazione e seleziona **[!UICONTROL Crea]**.
-1. Specifica un titolo per la configurazione nella **[!UICONTROL Titolo]** campo.
-1. Specifica il nome del [!DNL Azure] account di archiviazione in **[!UICONTROL Account di archiviazione Azure]** campo.
-1. Specifica la chiave per accedere all’account di archiviazione Azure in **[!UICONTROL Chiave di accesso Azure]** e seleziona **[!UICONTROL Salva]**.
+1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
+1. Selezionare una cartella per creare la configurazione e selezionare **[!UICONTROL Crea]**.
+1. Specifica un titolo per la configurazione nel campo **[!UICONTROL Titolo]**.
+1. Specificare il nome dell&#39;account di archiviazione [!DNL Azure] nel campo **[!UICONTROL Account di archiviazione Azure]**.
+1. Specifica la chiave per accedere all&#39;account di archiviazione Azure nel campo **[!UICONTROL Chiave di accesso Azure]** e seleziona **[!UICONTROL Salva]**.
 
 ### Configurare il connettore di archiviazione unificata (USC) per i flussi di lavoro AEM {#configure-unified-storage-connector-workflows}
 
 Per configurare il connettore di archiviazione unificata (USC) per i flussi di lavoro AEM, effettua le seguenti operazioni:
 
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Connettore di archiviazione unificata]**.
+1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Connettore di archiviazione unificata]**.
 
-1. In **[!UICONTROL Flusso di lavoro]** sezione, Seleziona **[!UICONTROL Azure]** dall&#39;elenco a discesa Archiviazione.
-1. Specifica la [percorso di configurazione per la configurazione dell’archiviazione Azure](#create-azure-storage-configuration) nel **[!UICONTROL Percorso configurazione archiviazione]** campo.
-1. Seleziona **[!UICONTROL Pubblica]** e quindi seleziona **[!UICONTROL Salva]** per salvare la configurazione.
+1. Nella sezione **[!UICONTROL Flusso di lavoro]**, seleziona **[!UICONTROL Azure]** dall&#39;elenco a discesa Archiviazione.
+1. Specificare il [percorso di configurazione per la configurazione di archiviazione Azure](#create-azure-storage-configuration) nel campo **[!UICONTROL Percorso configurazione di archiviazione]**.
+1. Seleziona **[!UICONTROL Publish]**, quindi seleziona **[!UICONTROL Salva]** per salvare la configurazione.
 
 ### Configurare un modello di flusso di lavoro AEM per l’archiviazione di dati esterni {#configure-workflow-external-data-storage}
 
 Per configurare un modello di flusso di lavoro AEM per un’archiviazione dati esterna, effettua le seguenti operazioni:
 
-1. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
-1. Selezionate un nome di modello e selezionate **[!UICONTROL Modifica]**.
-1. Seleziona l’icona Informazioni pagina e fai clic su **[!UICONTROL Apri proprietà]**.
-1. Seleziona **[!UICONTROL Esternalizzare l’archiviazione dei dati del flusso di lavoro]**.
+1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
+1. Selezionare un nome di modello e selezionare **[!UICONTROL Modifica]**.
+1. Selezionare l&#39;icona Informazioni pagina e selezionare **[!UICONTROL Apri proprietà]**.
+1. Selezionare **[!UICONTROL Esternalizzare l&#39;archiviazione dei dati del flusso di lavoro]**.
 1. Seleziona **[!UICONTROL Salva e chiudi]** per salvare le proprietà.
 
 >[!NOTE]
@@ -61,17 +61,17 @@ Per configurare un modello di flusso di lavoro AEM per un’archiviazione dati e
 
 Di seguito sono riportate le linee guida per l&#39;utilizzo dei flussi di lavoro AEM e l&#39;archiviazione dei dati in archivi dati esterni, ad esempio il server di archiviazione Microsoft Azure:
 
-* Utilizza le variabili per memorizzare i dati durante la definizione dei file di dati di input e output e degli allegati nei passaggi del modello di flusso di lavoro. Non selezionare **[!UICONTROL Relativo al payload]** e **[!UICONTROL Disponibile in un percorso assoluto]** opzioni. Il **[!UICONTROL Relativo al payload]** e **[!UICONTROL Disponibile in un percorso assoluto]** le opzioni non vengono visualizzate automaticamente una volta [configurare un modello di flusso di lavoro AEM per l’archiviazione di dati esterni](#configure-workflow-external-data-storage).
+* Utilizza le variabili per memorizzare i dati durante la definizione dei file di dati di input e output e degli allegati nei passaggi del modello di flusso di lavoro. Non selezionare **[!UICONTROL Relativo al payload]** e **[!UICONTROL Disponibile in un percorso assoluto]** opzioni. Le opzioni **[!UICONTROL Relative al payload]** e **[!UICONTROL Disponibili in un percorso assoluto]** non vengono visualizzate automaticamente una volta [configurato un modello di flusso di lavoro AEM per l&#39;archiviazione dati esterna](#configure-workflow-external-data-storage).
 
-* Utilizza le variabili per memorizzare file di dati e allegati durante l’invio di un modulo adattivo a un flusso di lavoro AEM. Non selezionare **[!UICONTROL Relativo al payload]** durante l’invio di un modulo adattivo a un flusso di lavoro AEM. Il **[!UICONTROL Relativo al payload]** opzione non viene visualizzata automaticamente una volta [configurare un modello di flusso di lavoro AEM per l’archiviazione di dati esterni](#configure-workflow-external-data-storage).
+* Utilizza le variabili per memorizzare file di dati e allegati durante l’invio di un modulo adattivo a un flusso di lavoro AEM. Non selezionare l&#39;opzione **[!UICONTROL Relativo al payload]** durante l&#39;invio di un modulo adattivo a un flusso di lavoro AEM. L&#39;opzione **[!UICONTROL Relativo al payload]** non viene visualizzata automaticamente dopo aver [configurato un modello di flusso di lavoro AEM per l&#39;archiviazione dati esterna](#configure-workflow-external-data-storage).
 
 * Non utilizzare un passaggio del flusso di lavoro AEM personalizzato in un modello di flusso di lavoro per memorizzare i dati nell’archivio CRX DE.
 
-* Quando [configurare un modello di flusso di lavoro AEM per l’archiviazione di dati esterni](#configure-workflow-external-data-storage), non creare colonne personalizzate per la casella in entrata AEM poiché i valori delle colonne personalizzate non vengono recuperati se l’elemento di lavoro nella casella in entrata AEM appartiene a un flusso di lavoro contrassegnato per l’archiviazione esterna.
+* Quando [configuri un modello di flusso di lavoro AEM per l&#39;archiviazione dati esterna](#configure-workflow-external-data-storage), non creare colonne personalizzate per la casella in entrata AEM, poiché i valori delle colonne personalizzate non vengono recuperati se l&#39;elemento di lavoro nella casella in entrata AEM appartiene a un flusso di lavoro contrassegnato per l&#39;archiviazione esterna.
 
 >[!MORELIKETHIS]
 >
->* [Configurare le origini dati per AEM Forms](/help/forms/configure-data-sources.md)
->* [Configurare l’archiviazione Azure per AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Configura origini dati per AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configurare l&#39;archiviazione Azure per AEM Forms](/help/forms/configure-azure-storage.md)
 >* [Integrare Microsoft Dynamics 365 e Salesforce con Forms adattivo](/help/forms/configure-msdynamics-salesforce.md)
->  [Aggiungere Forms Portal a una pagina di AEM Sites](/help/forms/configure-forms-portal.md)
+>  [Aggiungi Forms Portal a una pagina AEM Sites](/help/forms/configure-forms-portal.md)

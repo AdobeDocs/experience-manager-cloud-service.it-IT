@@ -31,7 +31,7 @@ Questo documento delinea ciascuno di questi blocchi predefiniti e la loro modali
 
 >[!TIP]
 >
->Per vedere Universal Editor e la relativa architettura in azione, consulta [Guida introduttiva dell’Editor universale in AEM](getting-started.md) per scoprire come accedere a Universal Editor e come iniziare a dotare la tua prima app AEM di strumenti per utilizzarla.
+>Per vedere l&#39;editor universale e la relativa architettura in azione, vedere [Guida introduttiva all&#39;editor universale nell&#39;AEM](getting-started.md) per scoprire come accedere all&#39;editor universale e come iniziare a strumentare la prima app AEM per utilizzarlo.
 
 ### Editor {#editors}
 
@@ -52,7 +52,7 @@ L’editor universale richiede un SDK minimo, pertanto la strumentazione rientra
 ### Livello di persistenza {#persistence-layer}
 
 * **Modello per frammenti di contenuto**: per supportare la barra laterale per la modifica delle proprietà dei frammenti di contenuto, dell’editor di frammenti di contenuto e degli editor basati su moduli, sono necessari modelli per componente e frammenti di contenuto.
-* **Contenuto** - I contenuti possono essere archiviati ovunque, ad esempio in AEM, Magento e così via.
+* **Contenuto** - Il contenuto può essere archiviato ovunque, ad esempio in AEM, Magento e così via.
 
 ![Livello di persistenza](assets/persistence-layer.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Come modificare o aggiungere metadati
-description: Scopri i metadati delle risorse in [!DNL Experience Manager Assets] e vari modi per modificare i metadati delle risorse.
+description: Scopri i metadati delle risorse in [!DNL Experience Manager Assets]  e vari modi con cui puoi modificare i metadati delle risorse.
 contentOwner: AG
 feature: Metadata
 role: User, Admin
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 I metadati sono informazioni aggiuntive sulla risorsa in cui è possibile eseguire ricerche. Viene estratto automaticamente quando carichi un’immagine. Puoi modificare i metadati esistenti o aggiungere nuove proprietà di metadati ai campi esistenti (ad esempio, quando un campo di metadati è vuoto).
 
-Poiché le aziende necessitano di vocabolari di metadati controllati e affidabili, [!DNL Experience Manager Assets] non consente l’aggiunta su richiesta di nuove proprietà di metadati. Anche se gli autori non possono aggiungere nuovi campi di metadati per le risorse, gli sviluppatori possono. Consulta [Creazione di una nuova proprietà di metadati per le risorse](meta-edit.md#editing-metadata-schema).
+Poiché le aziende richiedono vocabolari di metadati controllati e affidabili, [!DNL Experience Manager Assets] non consente l&#39;aggiunta su richiesta di nuove proprietà di metadati. Anche se gli autori non possono aggiungere nuovi campi di metadati per le risorse, gli sviluppatori possono. Vedi [Creazione di una nuova proprietà metadati per Assets](meta-edit.md#editing-metadata-schema).
 
 ## Modifica dei metadati di una risorsa {#editing-metadata-for-an-asset}
 
@@ -24,25 +24,25 @@ Per modificare i metadati:
 
 1. Effettua una delle operazioni seguenti:
 
-   * Dall’interfaccia utente Assets, seleziona la risorsa e fai clic su **[!UICONTROL Visualizza proprietà]** dalla barra degli strumenti.
-   * Dalla miniatura della risorsa, seleziona la **[!UICONTROL Visualizza proprietà]** azione rapida.
+   * Dall&#39;interfaccia utente di Assets, seleziona la risorsa e l&#39;icona **[!UICONTROL Visualizza proprietà]** dalla barra degli strumenti.
+   * Dalla miniatura della risorsa, seleziona l&#39;azione rapida **[!UICONTROL Visualizza proprietà]**.
    * Dalla pagina della risorsa, seleziona **[!UICONTROL Visualizza proprietà]** dalla barra degli strumenti.
 
    Nella pagina della risorsa vengono visualizzati i relativi metadati. Questi metadati venivano estratti automaticamente quando venivano caricati (acquisiti) in Experience Manager Assets.
 
-1. Apporta le modifiche necessarie ai metadati delle varie schede e, al termine, seleziona **[!UICONTROL Salva]** dalla barra degli strumenti per salvare le modifiche. Seleziona **[!UICONTROL Chiudi]** per tornare all’interfaccia web Assets.
+1. Apporta le modifiche necessarie ai metadati delle varie schede e, al termine, seleziona **[!UICONTROL Salva]** nella barra degli strumenti per salvare le modifiche. Seleziona **[!UICONTROL Chiudi]** per tornare all&#39;interfaccia Web di Assets.
 
    >[!NOTE]
    >
    >Se un campo di testo è vuoto, non è presente alcun set di metadati. Puoi immettere un valore nel campo e salvarlo per aggiungere tale proprietà di metadati.
 
-Eventuali modifiche ai metadati di una risorsa vengono riscritte nel file binario originale come parte dei dati XMP. Questa operazione viene eseguita mediante un flusso di lavoro Experience Manager di reinserimento dei metadati. Modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritti e vengono create proprietà (incluse proprietà personalizzate come `cq:tags`) vengono aggiunti insieme allo schema.
+Eventuali modifiche ai metadati di una risorsa vengono riscritte nel file binario originale come parte dei dati XMP. Questa operazione viene eseguita mediante un flusso di lavoro Experience Manager di reinserimento dei metadati. Le modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritte e le proprietà create (incluse le proprietà personalizzate come `cq:tags`) vengono aggiunte insieme allo schema.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
 ## Modifica dello schema metadati {#editing-metadata-schema}
 
-Per informazioni dettagliate su come modificare lo schema metadati, consulta [Modifica dei moduli schema metadati](metadata-schemas.md#edit-metadata-schema-forms).
+Per informazioni dettagliate su come modificare lo schema metadati, vedere [Modifica dei moduli schema metadati](metadata-schemas.md#edit-metadata-schema-forms).
 
 ## Registrazione di uno spazio dei nomi personalizzato in Experience Manager {#registering-a-custom-namespace-within-aem}
 
@@ -52,7 +52,7 @@ In Experience Manager puoi aggiungere spazi dei nomi personalizzati. Proprio com
 1. Seleziona **[!UICONTROL Namespace]** nella parte superiore della pagina. La pagina di amministrazione dello spazio dei nomi viene visualizzata in una finestra.
 
 1. Per aggiungere uno spazio dei nomi, seleziona **[!UICONTROL Nuovo]** in basso.
-1. Specifica uno spazio dei nomi personalizzato nella convenzione dello spazio dei nomi XML (specifica l’ID sotto forma di URI e di un prefisso associato per l’ID) e seleziona **[!UICONTROL Salva]**.
+1. Specificare uno spazio dei nomi personalizzato nella convenzione dello spazio dei nomi XML (specificare l&#39;ID sotto forma di URI e un prefisso associato per l&#39;ID), quindi selezionare **[!UICONTROL Salva]**.
 
 **Consulta anche**
 

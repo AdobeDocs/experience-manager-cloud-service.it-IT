@@ -33,14 +33,14 @@ La verifica dell’esistenza del gruppo e dei suoi membri deve essere eseguita p
 
 Successivamente, è necessario attivare i processi e impostare le proprietà per abilitare i gruppi utenti chiusi (CUG). A questo scopo, ripubblica tutte le pagine associate a un criterio CUG. In questo modo l’istanza Publish viene calibrata per tenere traccia dei criteri.
 
-Questo abilita i criteri CUG in Pubblicazione e il contenuto è accessibile solo agli utenti autenticati che sono membri del gruppo associato ai criteri.
+In questo modo i criteri per gruppi utenti chiusi (CUG) vengono abilitati in Publish e il contenuto è accessibile solo agli utenti autenticati membri del gruppo associato ai criteri.
 
 ## Riepilogo
 
 In sintesi, questi sono i passaggi per abilitare il gruppo utenti chiusi (CUG) dopo una migrazione:
 
-1. Assicurati che ogni gruppo utilizzato nei criteri del gruppo utenti chiusi (CUG) esista al momento della pubblicazione dopo la migrazione.
+1. Assicurati che ogni gruppo utilizzato nei criteri del gruppo utenti chiusi (CUG) esista su Publish dopo la migrazione.
    - Un gruppo può esistere se incluso nei criteri CUG di un contenuto migrato o nell’ACL di tale contenuto.
-   - In caso contrario, utilizza i pacchetti per installarlo nell’istanza di destinazione (o crearlo manualmente) e attivarlo insieme ai relativi membri. Verifica che esista al momento della pubblicazione.
+   - In caso contrario, utilizza i pacchetti per installarlo nell’istanza di destinazione (o crearlo manualmente) e attivarlo insieme ai relativi membri. Verifica che esista su Publish.
 1. Ripubblica tutte le pagine associate a un criterio per gruppi utenti chiusi (CUG), assicurandoti che sia pubblicato, ad esempio, modificando prima la pagina. È importante ripubblicarli tutti.
    - Dopo la ripubblicazione di tutte le pagine, verifica la funzionalità per ogni pagina protetta con gruppo di utenti chiusi (CUG).

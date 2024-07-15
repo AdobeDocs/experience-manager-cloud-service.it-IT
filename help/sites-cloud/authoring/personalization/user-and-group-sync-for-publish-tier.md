@@ -43,7 +43,8 @@ Esistono due approcci per implementare la registrazione, come descritto di segui
 
 **Prerequisito:**
 
-Affinché la logica sopra descritta funzioni correttamente, abilita [sincronizzazione dei dati](#data-synchronization-data-synchronization) inviando una richiesta all’Assistenza clienti con l’indicazione del programma e degli ambienti appropriati.
+Affinché la logica sopra descritta funzioni correttamente, abilita la [sincronizzazione dei dati](#data-synchronization-data-synchronization) inviando
+una richiesta all’Assistenza clienti che indica il programma e gli ambienti appropriati.
 
 ### Esterno {#external-managed-registration}
 
@@ -66,7 +67,8 @@ I clienti possono creare i propri componenti personalizzati. Per saperne di più
 
 **Prerequisito:**
 
-Affinché la logica sopra descritta funzioni correttamente, abilita [sincronizzazione dei dati](#data-synchronization-data-synchronization) inviando una richiesta all’Assistenza clienti con l’indicazione del programma e degli ambienti appropriati.
+Affinché la logica sopra descritta funzioni correttamente, abilita la [sincronizzazione dei dati](#data-synchronization-data-synchronization) inviando
+una richiesta all’Assistenza clienti che indica il programma e gli ambienti appropriati.
 
 ### Integrazione con un provider di identità {#integration-with-an-idp}
 
@@ -90,13 +92,13 @@ L’interfaccia`com.adobe.granite.auth.oauth.provider` può essere integrata con
 
 **Prerequisito:**
 
-Come best practice, considera sempre l’idP (Identity Provider) come un singolo punto di verità per l’archiviazione di dati specifici dell’utente. Se le informazioni utente aggiuntive sono memorizzate nell&#39;archivio locale, che non fa parte dell&#39;IDP, abilitare [sincronizzazione dei dati](#data-synchronization-data-synchronization) inviando una richiesta all’Assistenza clienti con l’indicazione del programma e degli ambienti appropriati. Oltre a [sincronizzazione dei dati](#data-synchronization-data-synchronization), nel caso del provider di autenticazione SAML, assicurarsi che [appartenenza a gruppo dinamico](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) è abilitato.
+Come best practice, considera sempre l’idP (Identity Provider) come un singolo punto di verità per l’archiviazione di dati specifici dell’utente. Se le informazioni utente aggiuntive sono memorizzate nell&#39;archivio locale, che non fa parte dell&#39;idP, abilitare la [sincronizzazione dati](#data-synchronization-data-synchronization) inviando una richiesta all&#39;Assistenza clienti indicando il programma e gli ambienti appropriati. Oltre alla [sincronizzazione dati](#data-synchronization-data-synchronization), nel caso del provider di autenticazione SAML verificare che sia abilitata l&#39;appartenenza al gruppo dinamico [](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0).
 
 ### Sessioni permanenti e token incapsulati {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service abilita sessioni permanenti basate su cookie, garantendo che un utente finale venga indirizzato allo stesso nodo di pubblicazione su ogni richiesta. In casi particolari, come i picchi di traffico degli utenti, la funzione del token incapsulato potrebbe migliorare le prestazioni, pertanto non è necessario fare riferimento al record utente nell’archivio a ogni richiesta. Se viene sostituito il nodo di pubblicazione con cui un utente finale ha un’affinità, il record del relativo ID utente è disponibile sul nuovo nodo di pubblicazione, come descritto in [sincronizzazione dei dati](#data-synchronization-data-synchronization) sezione successiva.
+AEM as a Cloud Service abilita sessioni permanenti basate su cookie, garantendo che un utente finale venga indirizzato allo stesso nodo di pubblicazione su ogni richiesta. In casi particolari, come i picchi di traffico degli utenti, la funzione del token incapsulato potrebbe migliorare le prestazioni, pertanto non è necessario fare riferimento al record utente nell’archivio a ogni richiesta. Se viene sostituito il nodo di pubblicazione con cui un utente finale ha un&#39;affinità, il record del relativo ID utente sarà disponibile nel nuovo nodo di pubblicazione, come descritto nella sezione [sincronizzazione dati](#data-synchronization-data-synchronization) seguente.
 
-Per sfruttare la funzione del token incapsulato, invia una richiesta all’Assistenza clienti indicando il programma e gli ambienti appropriati. Fatto ancora più importante, il token incapsulato non può essere abilitato senza [sincronizzazione dei dati](#data-synchronization-data-synchronization) e devono essere abilitati insieme. Pertanto, rivedi attentamente il caso d’uso prima di abilitarlo e assicurati che la funzione sia essenziale.
+Per sfruttare la funzione del token incapsulato, invia una richiesta all’Assistenza clienti indicando il programma e gli ambienti appropriati. Un aspetto ancora più importante è che il token incapsulato non può essere abilitato senza [sincronizzazione dati](#data-synchronization-data-synchronization) e deve essere abilitato insieme. Pertanto, rivedi attentamente il caso d’uso prima di abilitarlo e assicurati che la funzione sia essenziale.
 
 ## Profilo utente {#user-profile}
 
@@ -111,7 +113,8 @@ Le informazioni sul profilo utente possono essere scritte e lette in due modi:
 
 **Prerequisito:**
 
-Per il corretto funzionamento della logica di persistenza del profilo utente lato server, abilita [sincronizzazione dei dati](#data-synchronization-data-synchronization) inviando una richiesta all’Assistenza clienti con l’indicazione del programma e degli ambienti appropriati.
+Per il corretto funzionamento della logica di persistenza del profilo utente lato server, abilitare [sincronizzazione dati](#data-synchronization-data-synchronization) inviando
+una richiesta all’Assistenza clienti che indica il programma e gli ambienti appropriati.
 
 ### Archiviazione dati di terze parti {#third-party-data-stores}
 
@@ -121,7 +124,8 @@ I dati dell’utente finale possono essere inviati a fornitori di terze parti co
 
 **Prerequisito:**
 
-Affinché la logica sopra descritta funzioni correttamente, abilita [sincronizzazione dei dati](#data-synchronization-data-synchronization) inviando una richiesta all’Assistenza clienti con l’indicazione del programma e degli ambienti appropriati.
+Affinché la logica sopra descritta funzioni correttamente, abilita la [sincronizzazione dei dati](#data-synchronization-data-synchronization) inviando
+una richiesta all’Assistenza clienti che indica il programma e gli ambienti appropriati.
 
 ## Autorizzazioni (gruppi di utenti chiusi) {#permissions-closed-user-groups}
 
@@ -134,7 +138,7 @@ Indipendentemente dall’accesso, il codice personalizzato può anche persistere
 
 ## Sincronizzazione dati {#data-synchronization}
 
-Gli utenti finali dei siti Web si aspettano un&#39;esperienza coerente a ogni richiesta di pagina o anche quando accedono utilizzando un altro browser, anche se a loro insaputa vengono portati su nodi server diversi dell&#39;infrastruttura a livello di pubblicazione. AEM as a Cloud Service esegue questa operazione sincronizzando rapidamente `/home` gerarchia di cartelle (informazioni sul profilo utente, appartenenza al gruppo e così via) in tutti i nodi del livello di pubblicazione.
+Gli utenti finali dei siti Web si aspettano un&#39;esperienza coerente a ogni richiesta di pagina o anche quando accedono utilizzando un altro browser, anche se a loro insaputa vengono portati su nodi server diversi dell&#39;infrastruttura a livello di pubblicazione. AEM as a Cloud Service esegue questa operazione sincronizzando rapidamente la gerarchia di cartelle `/home` (informazioni sul profilo utente, appartenenza al gruppo e così via) in tutti i nodi del livello di pubblicazione.
 
 A differenza di altre soluzioni AEM, la sincronizzazione dell’appartenenza di utenti e gruppi in AEM as a Cloud Service non utilizza un approccio di messaggistica point-to-point, ma implementa un approccio publish-subscribe che non richiede la configurazione del cliente.
 

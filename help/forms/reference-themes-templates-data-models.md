@@ -19,9 +19,9 @@ ht-degree: 4%
 | Modulo adattivo basato su componenti core | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
 | Modulo adattivo basato su componenti di base | Questo articolo |
 
-<span class="preview"> L’Adobe consiglia di utilizzare l’acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
-AEM Forms as a Cloud Service fornisce più temi di riferimento, modelli e modelli di dati dei moduli (FDM) per aiutarti a iniziare rapidamente a creare un Forms adattivo. È possibile scaricare [pacchetto di contenuti di riferimento dal portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) e utilizza [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) per installare [pacchetto di contenuti di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) nell’ambiente di produzione, sviluppo o sviluppo locale per trasferire queste risorse di riferimento all’ambiente.
+AEM Forms as a Cloud Service fornisce più temi di riferimento, modelli e modelli di dati dei moduli (FDM) per aiutarti a iniziare rapidamente a creare un Forms adattivo. È possibile scaricare il [pacchetto di contenuti di riferimento dal portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) e utilizzare [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) per installare il [pacchetto di contenuti di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) nell&#39;ambiente di produzione, sviluppo o sviluppo locale per ottenere queste risorse di riferimento nel proprio ambiente.
 
 I temi, i modelli e il modello dati modulo (FDM) inclusi nel pacchetto di contenuto di riferimento sono:
 
@@ -38,7 +38,7 @@ I temi, i modelli e il modello dati modulo (FDM) inclusi nel pacchetto di conten
 
 ## Temi di riferimento {#reference-themes}
 
-[Temi](/help/forms/themes.md) consente di applicare uno stile ai moduli senza una profonda conoscenza dei CSS. È possibile ottenere i seguenti temi installando [Pacchetto di contenuti di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+[Temi](/help/forms/themes.md) consente di applicare uno stile ai moduli senza una conoscenza approfondita del CSS. È possibile ottenere i temi seguenti installando il [pacchetto di contenuto di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Beryl
 * Area di lavoro 3.0
@@ -54,7 +54,7 @@ Ogni tema contiene uno stile univoco ed elegante che puoi utilizzare per creare 
 
 I temi inclusi in questo pacchetto sono reattivi e lo stile in questi temi è definito per i display mobili e desktop. La maggior parte dei browser moderni su diversi dispositivi può eseguire il rendering di moduli applicati con uno di questi temi senza alcun problema.
 
-Per ulteriori informazioni sull’installazione del pacchetto, consulta [Come utilizzare i pacchetti](/help/implementing/developing/tools/package-manager.md).
+Per ulteriori informazioni sull&#39;installazione del pacchetto, vedere [Come utilizzare i pacchetti](/help/implementing/developing/tools/package-manager.md).
 
 ## Beryl {#beryl}
 
@@ -87,7 +87,7 @@ Il tema Urbano enfatizza un aspetto minimalista e funzionale per la tua forma. Q
 
 Il tema Ultramarine utilizza tonalità blu profonde per evidenziare componenti quali schede, pannelli, caselle di testo e pulsanti.
 
-![Tema Ultramarino](assets/ultramarine.png)
+![Tema Ultramarine](assets/ultramarine.png)
 
 ## Healthcare {#healthcare}
 
@@ -105,7 +105,7 @@ Il tema FSI enfatizza un aspetto minimalista e funzionale per il modulo. Quando 
 ## Modelli di riferimento {#reference-templates}
 
 
-[Modelli](/help/forms/themes.md) consente di definire la struttura iniziale del modulo, il contenuto e le azioni per i moduli. È possibile ottenere i seguenti modelli installando [Pacchetto di contenuti di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+[Modelli](/help/forms/themes.md) consente di definire la struttura iniziale del modulo, il contenuto e le azioni per i moduli. È possibile ottenere i seguenti modelli installando il [pacchetto di contenuto di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Base
 * Vuoto
@@ -122,12 +122,12 @@ Il Forms adattivo può quindi interagire con i server Microsoft Dynamics 365 e S
 * Effettua query su Microsoft Dynamics 365 e server Salesforce per dati e precompila Forms adattivo.
 * Leggi i dati da Microsoft Dynamics 365 e dal server Salesforce.
 
-È possibile ottenere il seguente modello dati modulo (FDM) installando il [Pacchetto di contenuti di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+È possibile ottenere il seguente modello dati modulo installando il [pacchetto di contenuto di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Microsoft® Dynamics 365
 * Salesforce
 
-Per informazioni sull’utilizzo di questi modelli, consulta [Configurare Microsoft Dynamics 365 e i servizi cloud Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+Per informazioni sull&#39;utilizzo di questi modelli, vedere [Configurare Microsoft Dynamics 365 e i servizi cloud Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
 
 
 ## Consulta anche {#see-also}

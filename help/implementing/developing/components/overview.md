@@ -44,13 +44,13 @@ Ogni componente AEM:
 
 ## Componenti core AEM {#aem-core-components}
 
-[Componenti core dell’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) sono un set di componenti WCM (Web Content Management) standardizzati per l’AEM che consentono di velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei siti web.
+[I componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) sono un insieme di componenti WCM (Web Content Management) standardizzati per l&#39;AEM che consentono di velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei siti Web.
 
 I Componenti core sono forniti con AEM as a Cloud Service e il [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustra come implementarli e utilizzarli. I componenti sono forniti con tutto il codice sorgente e possono essere utilizzati così come sono o come punti di partenza per i componenti modificati o estesi.
 
 ### Visualizzazione dei componenti disponibili {#viewing-available-components}
 
-Per una panoramica di tutti i componenti disponibili nell’istanza AEM, utilizza [Console Componenti](/help/sites-cloud/authoring/components-console.md).
+Per una panoramica di tutti i componenti disponibili nell&#39;istanza AEM, utilizzare la [console Componenti](/help/sites-cloud/authoring/components-console.md).
 
 In alternativa, è possibile utilizzare CRXDE Lite per ottenere un elenco di tutti i componenti disponibili nell’archivio.
 
@@ -58,7 +58,7 @@ In alternativa, è possibile utilizzare CRXDE Lite per ottenere un elenco di tut
 
 1. Nella scheda **[!UICONTROL Query]**, seleziona `XPath` come **[!UICONTROL Tipo]**.
 
-1. In **[!UICONTROL Query]** campo di input, immettere la seguente stringa:
+1. Nel campo di input **[!UICONTROL Query]** immettere la stringa seguente:
 
    `//element(*, cq:Component)`
 

@@ -18,7 +18,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 * **Problema**:
    * Hai apportato delle modifiche a una pagina e l’hai replicata sul sito pubblicato, ma nel sito pubblicato viene ancora visualizzata la *vecchia* versione della pagina.
 * **Motivo**:
-   * Questo può avere diverse cause, nella maggior parte dei casi la cache (nel browser locale o in Dispatcher), anche se a volte può essere un problema con la coda di replica.
+   * Questo può avere diverse cause, il più delle volte la cache (sia nel browser locale che in Dispatcher), anche se a volte può essere un problema con la coda di replica.
 * **Soluzioni**:
    * Esistono varie possibilità:
    * Verifica che la pagina sia stata replicata correttamente. Controlla lo stato della pagina e, se necessario, lo stato della coda di replica.

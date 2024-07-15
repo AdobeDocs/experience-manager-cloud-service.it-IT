@@ -22,11 +22,11 @@ ht-degree: 0%
 Questa sezione tratta i seguenti argomenti:
 
 * **Panoramica**
-* **Dettagli dell’architettura**
+* **Dettagli architettura**
 
 ## Panoramica {#overview}
 
-***AEM Screens*** sfrutta Adobe Analytics e con questo puoi ottenere qualcosa di unico nel mercato: analisi cross-channel che consentono di correlare i contenuti mostrati nella posizione con altre origini dati.
+***AEM Screens*** sfrutta Adobe Analytics e con questo puoi ottenere qualcosa di unico nel mercato: cross-channel analytics che consente di correlare i contenuti mostrati nella posizione con altre origini dati.
 
 AEM Screens fornisce un’integrazione standard con Adobe Analytics e una bozza di riproduzione.
 
@@ -39,7 +39,7 @@ Questa sezione descrive le seguenti funzionalità relative alla connessione di u
 * Consente la creazione di cicli di feedback per tenere traccia degli eventi di riproduzione nel tempo
 * Consente al sistema di modificare il contenuto e i layout in base ai criteri di successo definiti dall’autore del contenuto
 
-L’integrazione di Adobe Analytics con AEM Screens applica quindi quanto segue *obiettivi*:
+L&#39;integrazione di Adobe Analytics con AEM Screens applica quindi i seguenti *obiettivi*:
 
 * Abilitare il ROI dalle implementazioni di digital signage
 * Integrare Analytics come base per l’abilitazione futura della raccolta e dell’analisi delle informazioni sull’utilizzo
@@ -63,4 +63,4 @@ Questo scenario richiama l’API di Analytics tramite chiamate REST da un serviz
 Gli eventi di Analytics vengono archiviati offline in indexedDB e successivamente bloccati e inviati al cloud.
 
 >[!NOTE]
->Per ulteriori informazioni sul sequenziamento e sul modello dati standard per gli eventi, consulta [Configurazione di Adobe Analytics per AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) per i dettagli.
+>Per ulteriori informazioni sul sequenziamento e sul modello dati standard per gli eventi, consulta [Configurazione di Adobe Analytics per AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) per ulteriori dettagli.

@@ -19,7 +19,7 @@ ht-degree: 93%
 
 Per generare un collegamento per una risorsa o una cartella contenente risorse:
 
-1. Seleziona le risorse, le cartelle o entrambe che contengono risorse e fai clic su **[!UICONTROL Condividi collegamento]**.
+1. Selezionare le risorse, le cartelle o entrambe che contengono risorse e fare clic su **[!UICONTROL Condividi collegamento]**.
 
 1. Se desideri modificarlo, fai clic sull’icona Calendario per definire una data di scadenza del collegamento utilizzando il campo **[!UICONTROL Data di scadenza]**. Puoi anche specificare una data direttamente nel formato `yyyy-mm-dd`. Per impostazione predefinita, la data di scadenza di un collegamento è impostata su 2 settimane dalla data di condivisione.
 
@@ -45,7 +45,7 @@ Per scaricare tutte le risorse contemporaneamente, passa alla **[!UICONTROL Vist
 
 ## Passaggi successivi {#next-steps}
 
-* [Guarda un video per condividere i collegamenti per le risorse nella vista Risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=it)
+* [Guarda un video per condividere collegamenti per risorse nella visualizzazione Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=it)
 
 * Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
 

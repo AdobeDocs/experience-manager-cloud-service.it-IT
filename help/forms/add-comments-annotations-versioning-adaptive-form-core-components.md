@@ -19,7 +19,7 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
 
-<span class="preview"> Si tratta di una funzione pre-release accessibile tramite [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
+<span class="preview"> Si tratta di una funzionalità preliminare accessibile tramite il [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
 
 
 I componenti core Moduli adattivi forniscono funzionalità che consentono agli autori dei moduli di incorporare nei moduli il controllo delle versioni, i commenti e le annotazioni. Queste funzioni semplificano il processo di sviluppo dei moduli consentendo agli utenti di creare e gestire più versioni di un modulo, avviare discussioni collaborative tramite commenti e allegare annotazioni a specifici componenti del modulo, migliorando in tal modo l’esperienza complessiva di creazione del modulo.
@@ -34,58 +34,58 @@ Il controllo delle versioni adattive dei moduli consente di aggiungere versioni 
 Per creare una versione di un modulo, effettuare le seguenti operazioni:
 
 1. Creare un modulo o utilizzare un modulo esistente.
-1. Nell’interfaccia utente dell’AEM, passa a **[!UICONTROL Modulo]**>>**[!UICONTROL Forms e documenti]** e seleziona il tuo **Modulo**.
-1. Nel menu a discesa di selezione nel pannello a sinistra, seleziona **[!UICONTROL Versioni]**.
-   ![Seleziona un modulo](select-a-form.png)
-1. Fai clic su **tre punti** nel pannello inferiore a sinistra, fai clic su **[!UICONTROL Salva come versione]**.
+1. Nell&#39;interfaccia utente dell&#39;AEM, passa al **[!UICONTROL modulo]**>**[!UICONTROL Forms &amp; Documents]** e seleziona il tuo **modulo**.
+1. Nel menu a discesa di selezione del pannello a sinistra, seleziona **[!UICONTROL Versioni]**.
+   ![Seleziona modulo](select-a-form.png)
+1. Fai clic su **tre punti** nel pannello inferiore a sinistra, quindi fai clic su **[!UICONTROL Salva come versione]**.
 1. A questo punto, assegnare un&#39;etichetta alla versione del modulo ed è possibile fornire informazioni sul modulo tramite il commento.
-   ![Creare una versione del modulo](create-a-form-version.png)
+   ![Crea una versione modulo](create-a-form-version.png)
 
 ### Aggiornare una versione del modulo {#update-a-form-version}
 
 Quando modifichi e aggiorni il modulo adattivo, aggiungi una nuova versione al modulo. Per assegnare un nome a una nuova versione del modulo, come illustrato nell&#39;immagine, attenersi alla procedura descritta nell&#39;ultima sezione:
 
-![Aggiornare una versione del modulo](update-a-form-version.png)
+![Aggiorna una versione modulo](update-a-form-version.png)
 
 ### Ripristinare una versione del modulo {#revert-a-form-version}
 
-Per ripristinare una versione precedente di un modulo, selezionane una e fai clic su **[!UICONTROL Ripristina questa versione]**.
+Per ripristinare una versione precedente di un modulo, selezionare una versione del modulo e fare clic su **[!UICONTROL Ripristina questa versione]**.
 
 ![Ripristina versione modulo](revert-form-version.png)
 
 ### Confronta versioni modulo {#compare-form-versions}
 
-Gli autori dei moduli possono confrontare due versioni diverse di un modulo a scopo di anteprima. Per confrontare le versioni, seleziona una versione del modulo e fai clic su **[!UICONTROL Confronta con corrente]**. Vengono visualizzate due diverse versioni del modulo in modalità anteprima.
+Gli autori dei moduli possono confrontare due versioni diverse di un modulo a scopo di anteprima. Per confrontare le versioni, selezionare qualsiasi versione del modulo e fare clic su **[!UICONTROL Confronta con corrente]**. Vengono visualizzate due diverse versioni del modulo in modalità anteprima.
 
 ![Confronta versioni modulo](compare-form-versions.png)
 
 ## Aggiungi commenti {#add-comments}
 
-Una revisione è un meccanismo che consente a uno o più revisori di aggiungere commenti ai moduli. Qualsiasi utente di un modulo può aggiungere un commento a un modulo o esaminarlo tramite commenti. Per aggiungere un commento a un modulo, selezionare una **[!UICONTROL Modulo]**, e aggiungere una **[!UICONTROL Commento]** al modulo.
+Una revisione è un meccanismo che consente a uno o più revisori di aggiungere commenti ai moduli. Qualsiasi utente di un modulo può aggiungere un commento a un modulo o esaminarlo tramite commenti. Per aggiungere un commento a un modulo, selezionare un **[!UICONTROL Modulo]** e aggiungere un **[!UICONTROL Commento]** al modulo.
 
 >[!NOTE]
-> Quando utilizzi commenti nei componenti core per moduli adattivi come descritto in precedenza, la funzionalità del modulo [Creazione e gestione delle revisioni ai moduli](/help/forms/create-reviews-forms.md) è disabilitato.
+> Quando si utilizzano commenti nei componenti core per moduli adattivi come descritto in precedenza, la funzionalità del modulo [Creazione e gestione delle revisioni nei moduli](/help/forms/create-reviews-forms.md) è disabilitata.
 
 
-![Aggiungere commenti in un modulo](form-comments.png)
+![Aggiungi commenti in un modulo](form-comments.png)
 
 ## Aggiungi annotazioni {#adaptive-form-annotations}
 
 In molti casi, agli utenti dei gruppi di moduli viene richiesto di aggiungere annotazioni a un modulo a scopo di revisione, ad esempio in una scheda specifica di un modulo o di componenti di un modulo. In questi casi, gli autori possono utilizzare le annotazioni. Per aggiungere annotazioni a un modulo, effettuare le seguenti operazioni:
 
-1. Aprire un modulo in **[!UICONTROL Modifica]** modalità.
+1. Aprire un modulo in modalità **[!UICONTROL Modifica]**.
 
-1. Fai clic su **icona aggiungi** si trova nella barra superiore destra, come indicato nell’immagine.
+1. Fai clic sull&#39;icona **aggiungi** che si trova nella barra superiore destra, come indicato nell&#39;immagine.
    ![Annotazione](annotation.png)
 
-1. Fai clic su **icona aggiungi** si trova nella barra in alto a sinistra, come indicato nell’immagine, per aggiungere l’annotazione.
+1. Per aggiungere l&#39;annotazione, fai clic sull&#39;icona **aggiungi** che si trova nella barra superiore sinistra, come indicato nell&#39;immagine.
    ![Aggiungi annotazione](add-annotation.png)
 
 1. Ora è possibile aggiungere commenti, disegnare schizzi con più colori per formare i componenti.
 
 1. Per visualizzare tutte le annotazioni aggiunte a un modulo, selezionalo e visualizzerai le annotazioni aggiunte nel pannello sinistro, come illustrato nell’immagine.
 
-   ![Vedi annotazioni aggiunte](see-annotations.png)
+   ![Visualizza annotazioni aggiunte](see-annotations.png)
 
 ## Consulta anche {#see-also}
 

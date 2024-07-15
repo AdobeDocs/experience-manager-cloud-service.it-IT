@@ -48,7 +48,7 @@ L’utente con il ruolo **Proprietario business** o **Responsabile dell’implem
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Accedi a **Impostazioni dominio** pagina da **Panoramica** schermo.
+1. Dalla schermata **Panoramica**, accedi alla pagina **Impostazioni dominio**.
 
 1. Identifica la riga del nome di dominio personalizzato che desideri eliminare.
 

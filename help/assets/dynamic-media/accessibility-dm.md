@@ -20,22 +20,22 @@ Dynamic Medie supporta il controllo da tastiera e tecnologie per l’accessibili
 
 ## Supporto dell’accessibilità della tastiera in Dynamic Medie {#keyboard-support-in-dm}
 
-Perché Dynamic Medie è un plug-in per [!DNL Experience Manager Assets], la maggior parte del comportamento di controllo della tastiera è uguale a quello [!DNL Experience Manager Assets]. Ad esempio, il `Cancel` in Dynamic Medie ha la stessa evidenziazione di messa a fuoco come in [!DNL Experience Manager Assets]. Essa reagisce inoltre alla `Spacebar` chiave come in [!DNL Experience Manager Assets]. Consulta [scelte rapide da tastiera in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Poiché Dynamic Medie è un plug-in di [!DNL Experience Manager Assets], la maggior parte del comportamento del controllo da tastiera è identico a quello di [!DNL Experience Manager Assets]. Il pulsante `Cancel` in Dynamic Medie, ad esempio, ha la stessa evidenziazione di attivazione di [!DNL Experience Manager Assets]. Reagisce anche alla chiave `Spacebar` come in [!DNL Experience Manager Assets]. Consulta [scelte rapide da tastiera in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Le sequenze di tasti supportate dai singoli elementi dell’interfaccia utente in Dynamic Medie sono, nella maggior parte dei casi, ovvie e facili da trovare. Il controllo tramite tastiera in Dynamic Medie riguarda i seguenti aspetti:
 
-* Capacità di utilizzare `Tab` e `Shift+Tab` tasti per spostarsi tra gli elementi interattivi della pagina.
-Utilizzo di `Tab` sposta lo stato attivo dell&#39;input sull&#39;elemento dell&#39;interfaccia utente successivo nell&#39;ordine di tabulazione; utilizzando `Shift+Tab` riporta lo stato attivo sull’elemento dell’interfaccia utente precedente.
+* Possibilità di utilizzare le pressioni dei tasti `Tab` e `Shift+Tab` per spostarsi tra gli elementi interattivi della pagina.
+L&#39;utilizzo di `Tab` fa avanzare lo stato attivo dell&#39;input all&#39;elemento successivo dell&#39;interfaccia utente nell&#39;ordine di tabulazione; l&#39;utilizzo di `Shift+Tab` riporta lo stato attivo dell&#39;input all&#39;elemento precedente dell&#39;interfaccia utente.
 L&#39;attraversamento della messa a fuoco segue la posizione naturale degli elementi dell&#39;interfaccia sullo schermo e si sposta da sinistra a destra e quindi dall&#39;alto al basso. Inoltre, se un campo presenta un errore, è possibile premere `Tab` per spostare lo stato attivo su di esso.
-* Possibilità di utilizzare `Spacebar` e `Enter` per attivare gli elementi standard dell’interfaccia utente, ad esempio pulsanti ed elenchi a discesa.
+* Possibilità di utilizzare i tasti `Spacebar` e `Enter` per attivare gli elementi standard dell&#39;interfaccia utente, ad esempio pulsanti ed elenchi a discesa.
 * Possibilità di visualizzare l&#39;evidenziazione di tastiera sull&#39;elemento attivo. L’elemento dell’interfaccia utente che ha lo stato attivo sull’input ha ricevuto un’indicazione di stato attivo visivo come bordo rappresentato intorno all’elemento dell’interfaccia utente.
 * Nell’editor dei punti attivi è possibile utilizzare la pressione di alcuni tasti personalizzati, ad esempio i tasti di direzione, per interagire con elementi complessi dell’interfaccia utente e riposizionare i punti attivi.
-* Nell’editor video interattivo puoi utilizzare `Spacebar` per selezionare un’immagine e aggiungerla a un segmento. Inoltre, è possibile utilizzare `Backspace` chiave per eliminare l’elemento selezionato da **[!UICONTROL Contenuto]** scheda. Inoltre, premendo `Tab` funziona come desiderato per navigare tra gli elementi interattivi sulla pagina.
+* Nell&#39;editor video interattivo è possibile utilizzare `Spacebar` per selezionare un&#39;immagine e aggiungerla a un segmento. È inoltre possibile utilizzare la chiave `Backspace` per eliminare l&#39;elemento selezionato dalla scheda **[!UICONTROL Contenuto]**. Inoltre, premendo `Tab` è possibile spostarsi tra gli elementi interattivi della pagina.
 * Nell’editor di ritaglio immagine/ritaglio avanzato, puoi effettuare le seguenti operazioni:
    * Usate i tasti freccia per ritagliare le dimensioni del fotogramma, o riposizionare l&#39;immagine, o entrambi.
-   * Il primo `Tab` stop evidenzia l&#39;intero frame dell&#39;immagine. È quindi possibile utilizzare i tasti freccia sulla tastiera per riposizionare il fotogramma.
-   * Le prossime quattro `Tab` Le fermate sono i quattro angoli del frame. Quando lo stato attivo viene posizionato su un angolo del fotogramma, l&#39;angolo viene evidenziato. Anche in questo caso, è possibile utilizzare i tasti freccia sulla tastiera per spostare l&#39;angolo attivo.
-Consulta [Modifica del ritaglio o del campione avanzato di una singola immagine](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
+   * La prima interruzione di `Tab` evidenzia l&#39;intero frame dell&#39;immagine. È quindi possibile utilizzare i tasti freccia sulla tastiera per riposizionare il fotogramma.
+   * Le prossime quattro `Tab` interruzioni sono i quattro angoli del frame. Quando lo stato attivo viene posizionato su un angolo del fotogramma, l&#39;angolo viene evidenziato. Anche in questo caso, è possibile utilizzare i tasti freccia sulla tastiera per spostare l&#39;angolo attivo.
+Vedi [Modifica del ritaglio o del campione avanzato di una singola immagine](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (Experience Manager 6.5) or Coral Spectrum (in Skyline)) as entire Experience Manager Assets.  -->
 
@@ -45,29 +45,29 @@ Consulta [Modifica del ritaglio o del campione avanzato di una singola immagine]
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Supporto per le tecnologie di supporto in Dynamic Medie {#assistive-technology=support-for-dm}
+## Supporto per la tecnologia di supporto in Dynamic Medie {#assistive-technology=support-for-dm}
 
-Gli elementi dell’interfaccia utente di Dynamic Medie funzionano con tecnologie per l’accessibilità, come gli assistenti vocali. Ad esempio, riconosce i punti di riferimento in una pagina quando si naviga tra i punti di riferimento utilizzando la scelta rapida da tastiera `D` o aree tramite scelta rapida da tastiera `R`. Vengono inoltre narrate le intestazioni durante la navigazione utilizzando la scelta rapida da tastiera per le intestazioni `H`.
+Gli elementi dell’interfaccia utente di Dynamic Medie funzionano con tecnologie per l’accessibilità, come gli assistenti vocali. Ad esempio, riconosce i punti di riferimento in una pagina quando si naviga tra i punti di riferimento utilizzando la scelta rapida da tastiera `D` o le aree utilizzando la scelta rapida da tastiera `R`. Inoltre, legge l&#39;intestazione quando si naviga utilizzando la scelta rapida da tastiera per l&#39;intestazione `H`.
 
 ## Supporto dell’accessibilità della tastiera nei visualizzatori Dynamic Medie {#keyboard-accessibility-for-dm-viewers}
 
 Tutti i componenti predefiniti per visualizzatori Dynamic Medie supportano l’accessibilità da tastiera per i clienti.
 
-Consulta [Accessibilità della tastiera e navigazione](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella Guida di riferimento dei visualizzatori di Dynamic Medie.
+Consulta [Accesso facilitato alla tastiera e navigazione](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella Guida di riferimento dei visualizzatori di Dynamic Medie.
 
 ## Supporto per la tecnologia di supporto nei visualizzatori Dynamic Medie {#assistive-technology=support-for-dm-viewers}
 
 Tutti i componenti visualizzatore Dynamic Medie supportano i ruoli e gli attributi ARIA (Accessible Rich Internet Applications) per migliorare l’integrazione con tecnologie per l’accessibilità, come gli assistenti vocali.
-Consulta la **Supporto di tecnologie assistive** Argomento della Guida in linea di qualsiasi argomento relativo alla personalizzazione dei visualizzatori nella Guida di riferimento dei visualizzatori di Dynamic Medie. Ad esempio, consulta [Supporto di tecnologie assistive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore Video, oppure [Supporto di tecnologie assistive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) per il visualizzatore di immagini interattive.
+Vedere l&#39;argomento della Guida relativo al supporto tecnico **Assistive Technology** in qualsiasi argomento relativo alla personalizzazione dei visualizzatori nella Guida di riferimento dei visualizzatori di Dynamic Medie. Ad esempio, consulta [Supporto per la tecnologia per l&#39;accesso facilitato](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore di video o [Supporto per la tecnologia per l&#39;accesso facilitato](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) per il visualizzatore di immagini interattivo.
 
 ## Supporto per sottotitoli codificati in [!DNL Dynamic Media] {#closed-caption-support}
 
 Dynamic Medie supporta la distribuzione di video e set di video adattivi con sottotitoli. I sottotitoli devono essere visualizzati sopra il contenuto video.
 
-Consulta [Video in Dynamic Medie: aggiungi sottotitoli al video](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+Vedi [Video in Dynamic Medie - Aggiungi sottotitoli al video](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]
 >
->* [Accessibilità per soluzioni di Adobe](https://www.adobe.com/accessibility.html)
+>* [Accessibilità per le soluzioni Adobe](https://www.adobe.com/accessibility.html)
 >* [Accessibilità in Experience Manager Assets](/help/assets/dynamic-media/accessibility-dm.md)

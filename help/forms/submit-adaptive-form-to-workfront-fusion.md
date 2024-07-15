@@ -9,15 +9,15 @@ exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1255'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 # Inviare un modulo adattivo ad Adobe Workfront Fusion
 
-<span class="preview"> La funzione è disponibile nel programma per i primi utenti. Puoi scrivere a aem-forms-ea@adobe.com dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l’accesso alla funzionalità. </span>
+<span class="preview"> La funzionalità è disponibile nel programma di adozione anticipata. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatizza il processo di ripetizione delle stesse attività, come i flussi di lavoro di approvazione dei documenti, il filtro e l’ordinamento delle e-mail, consentendo di concentrarsi su nuove attività invece di quelle ricorrenti. Adobe Workfront Fusion include più scenari. Uno scenario è costituito da una serie di moduli che esegue il trasferimento di dati tra applicazioni e servizi web. In uno scenario, puoi aggiungere vari passaggi (moduli) per automatizzare un’attività.
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatizza il processo di ripetizione delle stesse attività, ad esempio i flussi di lavoro di approvazione dei documenti, il filtro e l&#39;ordinamento delle e-mail, consentendo di concentrarsi su nuove attività anziché su quelle ricorrenti. Adobe Workfront Fusion include più scenari. Uno scenario è costituito da una serie di moduli che esegue il trasferimento di dati tra applicazioni e servizi web. In uno scenario, puoi aggiungere vari passaggi (moduli) per automatizzare un’attività.
 
 Utilizzando Workfront Fusion, ad esempio, puoi creare uno scenario per raccogliere dati con un modulo adattivo, elaborarli e inviarli a un archivio dati per l’archiviazione. Una volta configurato uno scenario, Workfront Fusion esegue automaticamente le attività ogni volta che un utente compila un modulo, aggiornando senza problemi l’archivio dati.
 
@@ -35,8 +35,8 @@ AEM Forms as a Cloud Service fornisce un connettore OOTB per connettersi e invia
 
 Per stabilire una connessione tra Workfront Fusion e AEM Forms, sono necessari i seguenti elementi:
 
-* Un valore valido [Licenza Workfront e Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-* Un utente AEM con diritto di accesso [Console di sviluppo](https://my.cloudmanager.adobe.com/) a [recuperare le credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+* [Licenza Workfront e Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html) valida.
+* Un utente AEM con il diritto di accedere a [Dev Console](https://my.cloudmanager.adobe.com/) per [recuperare le credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrare AEM Forms con Adobe Workfront Fusion
 
@@ -51,21 +51,21 @@ Per creare uno scenario Workfront, effettuare le seguenti operazioni:
 #### Creare uno scenario {#create-scenario}
 
 Per creare uno scenario:
-1. Accedi al tuo [Account Workfront Fusion](https://app-qa.workfrontfusion.com/).
-1. Clic **[!UICONTROL Scenari]** ![Icona Condividi](/help/forms/assets/Smock_ShareAndroid_18_N.svg) nel pannello a sinistra.
-1. Clic **[!UICONTROL Crea un nuovo scenario]** nell’angolo superiore destro della pagina. Sullo schermo viene visualizzata una pagina per creare un nuovo scenario.
-1. Seleziona **[!UICONTROL Nuovo scenario]** nell’angolo in alto a sinistra della pagina e digita un nome appropriato per lo scenario.
+1. Accedi al tuo [account Workfront Fusion](https://app-qa.workfrontfusion.com/).
+1. Fai clic su **[!UICONTROL Scenari]** ![Icona Condividi](/help/forms/assets/Smock_ShareAndroid_18_N.svg) nel pannello a sinistra.
+1. Fai clic su **[!UICONTROL Crea un nuovo scenario]** nell&#39;angolo superiore destro della pagina. Sullo schermo viene visualizzata una pagina per creare un nuovo scenario.
+1. Seleziona **[!UICONTROL Nuovo scenario]** nell&#39;angolo superiore sinistro della pagina e digita un nome appropriato per lo scenario.
 1. Fai clic sul punto interrogativo e accertati di aggiungere il primo modulo come **[!UICONTROL AEM Forms]**.
 
-   ![Aggiungere un modulo AEM Forms](/help/forms/assets/workfront-aemforms.png)
+   ![Aggiungi un modulo AEM Forms](/help/forms/assets/workfront-aemforms.png)
 
-   Il **[!UICONTROL Osserva eventi modulo]** viene visualizzata.
+   Viene visualizzata la finestra di dialogo **[!UICONTROL Controlla eventi modulo]**.
 
    >[!NOTE]
    >
    > È obbligatorio aggiungere il primo modulo come **[!UICONTROL AEM Forms]**.
 
-1. Seleziona la **[!UICONTROL Osserva eventi modulo]** e viene visualizzata una finestra per aggiungere un webhook.
+1. Selezionare la finestra di dialogo **[!UICONTROL Controlla eventi modulo]** e viene visualizzata una finestra per aggiungere un webhook.
 
 #### Aggiungi un webhook {#add-webhook}
 
@@ -73,14 +73,14 @@ Per creare uno scenario:
 
 Per aggiungere un webhook:
 
-1. Clic **[!UICONTROL Aggiungi]** e un **[!UICONTROL Aggiungi un webhook]** viene visualizzata.
+1. Fai clic su **[!UICONTROL Aggiungi]** per visualizzare una finestra di dialogo **[!UICONTROL Aggiungi webhook]**.
 1. Specifica un nome per il webhook.
 
    >[!NOTE]
    >
    > Si consiglia di scegliere con attenzione il nome del webhook, in quanto il nome del webhook specificato viene visualizzato nell’istanza dell’AEM.
 
-1. Clic **[!UICONTROL Aggiungi]** per aggiungere una nuova connessione. Il **[!UICONTROL Creare una connessione]** viene visualizzata.
+1. Fai clic su **[!UICONTROL Aggiungi]** per aggiungere una nuova connessione. Viene visualizzata la finestra di dialogo **[!UICONTROL Crea connessione]**.
 
 #### Aggiungere una connessione a un webhook {#add-connection}
 
@@ -88,51 +88,51 @@ Per aggiungere un webhook:
 
 Per aggiungere una connessione:
 
-1. Specifica un **[!UICONTROL Nome connessione]** nel **[!UICONTROL Creare una connessione]** .
+1. Specificare un **[!UICONTROL Nome connessione]** nella finestra di dialogo **[!UICONTROL Crea connessione]**.
 
-1. Seleziona **Ambiente** e **Tipo** dall’elenco a discesa.
+1. Selezionare **Ambiente** e **Tipo** dall&#39;elenco a discesa.
 
-1. Inserisci il **URL istanza**.
+1. Immetti l&#39;**URL istanza**.
 
    >[!NOTE]
    >
    > L’URL dell’istanza è l’indirizzo web univoco che punta a un’istanza AEM Forms specifica.
 
-   È possibile recuperare [credenziali del servizio da Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) necessario per creare una connessione.
+   È possibile recuperare le credenziali del servizio [dalla Console sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) necessarie per creare una connessione.
 
-1. Sostituisci `ims-na1.adobelogin.com` nel **Endpoint IMS** con il valore di **imsEndpoint** dalle credenziali del servizio nella Console sviluppatori.
+1. Sostituisci `ims-na1.adobelogin.com` nell&#39;endpoint **IMS** con il valore di **imsEndpoint** dalle credenziali del servizio nella console per sviluppatori.
 
    >[!NOTE]
    >
-   > Mantieni `https://` nel **Endpoint IMS** casella di testo durante l’aggiunta di `imsEndpoint` URL.
+   > Durante l&#39;aggiunta dell&#39;URL `imsEndpoint`, mantieni `https://` nella casella di testo **endpoint IMS**.
 
-1. Specifica i seguenti valori nella **[!UICONTROL Creare una connessione]** finestra di dialogo:
-   * Specifica **ID client** con valore di **clientId** dalle credenziali del servizio nella Console sviluppatori.
-   * Specifica **Segreto client** con valore di **clientSecret** dalle credenziali del servizio nella Console sviluppatori.
-   * Specifica **ID account tecnico**  con valore di **id** dalle credenziali del servizio nella Console sviluppatori.
-   * Specifica **ID organizzazione**  con valore di **org** dalle credenziali del servizio nella Console sviluppatori.
-   * **Meta ambiti**  con valore di **metascopi** dalle credenziali del servizio nella Console sviluppatori.
-   * **Chiavi private**  con valore di **privateKey** dalle credenziali del servizio nella Console sviluppatori.
+1. Specificare i valori seguenti nella finestra di dialogo **[!UICONTROL Crea connessione]**:
+   * Specificare **ID client** con valore di **clientId** dalle credenziali del servizio nella console per sviluppatori.
+   * Specificare **Segreto client** con valore di **clientSecret** dalle credenziali del servizio nella console per sviluppatori.
+   * Specificare **ID account tecnico** con valore **id** dalle credenziali del servizio nella console Sviluppatore.
+   * Specifica **ID organizzazione** con valore di **org** dalle credenziali del servizio nella console per sviluppatori.
+   * **Meta ambiti** con valore di **metascopi** dalle credenziali del servizio nella console per sviluppatori.
+   * **Chiavi private** con valore di **chiave privata** dalle credenziali del servizio nella console per sviluppatori.
 
    >[!NOTE]
    >
    >* Per **Chiave privata**, rimuovere `\r\n` dal relativo valore.
    >  Ad esempio, se il valore della chiave privata è:
-   >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`, quindi dopo aver rimosso `\r\n` dalla chiave privata, la chiave avrà l’aspetto seguente, con entrambi i valori visualizzati in una riga separata:
+   >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`, quindi dopo aver rimosso `\r\n` dalla chiave privata, la chiave avrà l&#39;aspetto seguente, con entrambi i valori visualizzati in una riga separata:
    >
    >   `IJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL`
    >
    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
    > 
-   >* Puoi anche recuperare una chiave privata o un certificato dal file selezionando la **Extract** pulsante.
+   >* È inoltre possibile recuperare una chiave privata o un certificato dal file selezionando il pulsante **Estrai**.
 
 1. Fai clic su **Continua**.
 
-   La connessione creata inizia a essere visualizzata nell’elenco a discesa del **[!UICONTROL Connessione]** nel **[!UICONTROL Aggiungi un webhook]** .
+   La connessione creata inizia a essere visualizzata nell&#39;elenco a discesa della **[!UICONTROL Connessione]** nella finestra di dialogo **[!UICONTROL Aggiungi webhook]**.
 
-1. Seleziona la connessione creata **[!UICONTROL Connessione]** dall’elenco a discesa.
+1. Selezionare la connessione creata **[!UICONTROL Connessione]** dall&#39;elenco a discesa.
 1. Fai clic su **[!UICONTROL Salva]**.
-1. Clic **[!UICONTROL OK]** e salva le modifiche per lo scenario.
+1. Fare clic su **[!UICONTROL OK]** e salvare le modifiche per lo scenario.
 1. Per attivare lo scenario, fai clic sul pulsante di attivazione/disattivazione nell’editor dello scenario.
 
 >[!NOTE]
@@ -150,18 +150,18 @@ Per aggiungere una connessione:
 Per configurare l’azione di invio del nuovo modulo adattivo per Workfront Fusion:
 
 1. Accedi all’istanza AEM.
-1. Vai a **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]** > **[!UICONTROL Crea]** > **[!UICONTROL Modulo adattivo]**. Il **[!UICONTROL Crea modulo]** viene visualizzata la procedura guidata.
-1. Seleziona un modello di modulo adattivo dall’ **[!UICONTROL Sorgente]** scheda.
-1. Seleziona un tema da **[!UICONTROL Stile]** scheda.
+1. Vai a **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]** > **[!UICONTROL Crea]** > **[!UICONTROL Modulo adattivo]**. Viene visualizzata la procedura guidata **[!UICONTROL Crea modulo]**.
+1. Selezionare un modello di modulo adattivo dalla scheda **[!UICONTROL Source]**.
+1. Selezionare un tema dalla scheda **[!UICONTROL Stile]**.
 
    ![Azione di invio per Workfront Fusion](/help/forms/assets/workfront-scenario-new-af.png)
 
-1. Seleziona la **[!UICONTROL Richiama uno scenario Workfront Fusion]** dal **[!UICONTROL Invio]** scheda.
-1. Seleziona il webhook creato da **[!UICONTROL Opzioni]** scheda in **[!UICONTROL Proprietà]** finestra.
+1. Selezionare **[!UICONTROL Richiama uno scenario di Workfront Fusion]** dalla scheda **[!UICONTROL Invio]**.
+1. Selezionare il webhook creato dalla scheda **[!UICONTROL Opzioni]** nella finestra **[!UICONTROL Proprietà]**.
 
    >[!NOTE]
    >
-   > Il nome del webhook dello scenario Workfront viene visualizzato nel **Opzioni** elenco a discesa.
+   > Il nome del webhook dello scenario Workfront viene visualizzato nell&#39;elenco a discesa **Opzioni**.
 
 1. Fai clic su **[!UICONTROL Crea]**.
 1. Specifica il nome per il nuovo modulo adattivo e fai clic su **[!UICONTROL Crea]**.
@@ -173,15 +173,15 @@ Per configurare l’azione di invio del modulo adattivo esistente per Workfront 
 1. Accedi all’istanza AEM.
 1. Vai a **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Seleziona un modulo adattivo e apri il modulo in modalità di modifica.
-1. Apri il browser Contenuto e seleziona la **[!UICONTROL Contenitore guida]** componente del modulo adattivo.
-1. Fai clic sulle proprietà Contenitore guida ![Proprietà guida](/help/forms/assets/configure-icon.svg) icona. Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
+1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
 
    ![Azione di invio per Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
 
-1. Apri **[!UICONTROL Invio]** scheda.
-1. Seleziona la **[!UICONTROL Azione di invio]** as **[!UICONTROL Richiama uno scenario Workfront Fusion]**
-1. Seleziona **[!UICONTROL Scenario Workfront Fusion]** dall’elenco a discesa.
-1. Clic **[!UICONTROL Fine]**.
+1. Apri la scheda **[!UICONTROL Invio]**.
+1. Seleziona l&#39;**[!UICONTROL azione Invia]** come **[!UICONTROL Richiama uno scenario di Workfront Fusion]**
+1. Selezionare **[!UICONTROL Workfront Fusion scenario]** dall&#39;elenco a discesa.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 ## Best practice {#best-practices}
 

@@ -31,10 +31,10 @@ Alla fine di questo articolo imparerai a:
 * Impostare il numero minimo o massimo di ripetizioni per un componente Modulo adattivo
 * Utilizza l’editor di regole per configurare azioni di aggiunta o eliminazione per le sezioni ripetibili
 
-È possibile utilizzare [Pannello](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it), [Schede verticali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) o [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it) componenti per rendere ripetibili le sezioni di un modulo adattivo. È possibile aggiungere componenti figlio a questi componenti per creare una sezione ripetibile in un modulo.
+È possibile utilizzare i componenti [Pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [Pannello a soffietto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it), [Schede verticali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) o [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it) per rendere ripetibili le sezioni di un modulo adattivo. È possibile aggiungere componenti figlio a questi componenti per creare una sezione ripetibile in un modulo.
 
 
-Gli esempi contenuti in questo documento si basano su [Pannello](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) componente. È possibile eseguire gli stessi passaggi per eseguire [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=it), [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it), [Schede verticali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) o [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it) componenti ripetibili.
+Gli esempi in questo documento si basano sul componente [Panel](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). È possibile eseguire gli stessi passaggi per rendere ripetibili i componenti [Pannello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=it), [Pannello a soffietto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=it), [Schede orizzontali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=it), [Schede verticali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) o [Procedura guidata](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=it).
 
 ## Aggiungere o eliminare sezioni ripetibili in un modulo {#add-or-delete-repeatable-section-in-panel-container}
 
@@ -49,10 +49,10 @@ Per ripetere un pannello nel modulo o rimuovere pannelli ripetibili, un autore d
 ![Scheda Accessibilità](/help/forms/assets/repeat-panel.png)
 
 Per rendere ripetibile un pannello, effettuate le seguenti operazioni:
-1. Seleziona un contenitore di pannelli e seleziona ![cmppr](/help/forms/assets/cmppr.png).
-1. Fai clic su **pannello di ripetizione** e accendere l&#39;interruttore **rendi il pannello ripetibile**.
-1. Imposta **numero minimo di ripetizioni** come richiesto per le sezioni ripetibili minime, puoi impostare **numero minimo di ripetizioni** a zero per la mancata ripetizione dei pannelli o per rimuovere i pannelli ripetuti. Per impostazione predefinita, il valore minimo di ripetizione è zero.
-1. Imposta **numero massimo di ripetizioni** per ripetere il numero di volte richieste dal pannello, per impostazione predefinita il valore è infinito.
+1. Selezionare un contenitore di pannelli e selezionare ![cmppr](/help/forms/assets/cmppr.png).
+1. Fai clic sul **pannello di ripetizione** e attiva l&#39;opzione per **rendere il pannello ripetibile**.
+1. Imposta **ripetizioni minime** come richiesto per le sezioni ripetibili minime. Puoi impostare **ripetizioni minime** su zero per la mancata ripetizione dei pannelli o per rimuovere i pannelli ripetuti. Per impostazione predefinita, il valore minimo di ripetizione è zero.
+1. Imposta **il numero massimo di ripetizioni** per ripetere il numero di volte richieste nel pannello; per impostazione predefinita il valore è infinito.
 
    >[!NOTE]
    >
@@ -64,17 +64,17 @@ Per rendere ripetibile un pannello, effettuate le seguenti operazioni:
 
 L’elemento principale del pannello da ripetere deve contenere un pulsante Aggiungi per gestire l’istanza di ripetizione del pannello. Per inserire pulsanti nell&#39;elemento padre e attivare gli script sui pulsanti, effettuare le seguenti operazioni:
 
-1. Aggiungi un **componente pulsante** all&#39;elemento padre del pannello. Nell’esempio di video seguente, un componente pulsante con il nome dell’etichetta **Aggiungi** e nome campo **AggiungiPannello**, viene utilizzato. Seleziona il componente e seleziona ![edit-rules](/help/forms/assets/edit-rules.png). Le regole del componente Pulsante si aprono nell’editor di regole.
+1. Aggiungi un **componente pulsante** all&#39;elemento padre del pannello. Nell&#39;esempio di video seguente, viene utilizzato un componente pulsante con il nome dell&#39;etichetta **Add** e il nome del campo **AddPanel**. Selezionare il componente e selezionare ![edit-rules](/help/forms/assets/edit-rules.png). Le regole del componente Pulsante si aprono nell’editor di regole.
 1. Nella finestra Editor regole, fai clic su **Crea**.
 
-   Seleziona **Editor visivo** nella riga Oggetti e funzioni modulo.
+   Selezionare **Editor visivo** nella riga Oggetti e funzioni modulo.
 
-   1. Nell&#39;area della regola, in QUANDO, selezionare lo stato **ha fatto clic su**.
-   1. In THEN, seleziona **Aggiungi istanza**, e trascina il pannello tramite ![interruttore-pannello laterale](/help/forms/assets/toggle-side-panel.png) o selezionala utilizzando **Rilascia l’oggetto o seleziona qui.**
+   1. Nell&#39;area delle regole, in WHEN, selezionare lo stato **su cui fare clic**.
+   1. In THEN, seleziona **Aggiungi istanza** e trascina il pannello utilizzando ![toggle-side-panel](/help/forms/assets/toggle-side-panel.png) oppure selezionalo utilizzando **Rilascia oggetto o seleziona qui.**
 
-   Seleziona **Editor di codice** nella riga Oggetti e funzioni modulo. Clic **Modifica regole** e nell&#39;area di codice:
+   Selezionare **Editor di codice** nella riga Oggetti e funzioni modulo. Fai clic su **Modifica regole** e nell&#39;area del codice:
 
-   * Per creare un pulsante Aggiungi pannello, specifica `this.panel.instanceManager.addInstance()`
+   * Per creare un pulsante Aggiungi pannello, specificare `this.panel.instanceManager.addInstance()`
 
    Fai clic su **Fine**.
 
@@ -85,24 +85,24 @@ L’elemento principale del pannello da ripetere deve contenere un pulsante Aggi
 
 L’elemento padre del pannello deve contenere un pulsante Elimina per eliminare l’istanza dei pannelli ripetibili. Per inserire pulsanti nell&#39;elemento padre e abilitare gli script sui pulsanti per eliminare i pannelli ripetibili, effettuare le seguenti operazioni:
 
-1. Aggiungi un **componente pulsante** all’elemento padre del pannello, Nel video seguente, un componente pulsante con il nome dell’etichetta **eliminare** e nome campo **EliminaPannello** viene utilizzato. Seleziona il componente e seleziona ![edit-rules](/help/forms/assets/edit-rules.png). Le regole del componente Pulsante si aprono nell’editor di regole.
+1. Aggiungi un **componente pulsante** all&#39;elemento padre del pannello. Nel video seguente viene utilizzato un componente pulsante con il nome etichetta **delete** e il nome campo **DeletePanel**. Selezionare il componente e selezionare ![edit-rules](/help/forms/assets/edit-rules.png). Le regole del componente Pulsante si aprono nell’editor di regole.
 1. Nella finestra Editor regole, fai clic su **Crea**.
 
-   Seleziona **Editor visivo** nella riga Oggetti e funzioni modulo.
+   Selezionare **Editor visivo** nella riga Oggetti e funzioni modulo.
 
-   1. Nell’area delle regole, in WHEN **EliminaPannello**, seleziona stato **ha fatto clic su**.
-   1. In THEN, seleziona **Rimuovi istanza**, e trascina il pannello tramite ![interruttore-pannello laterale](/help/forms/assets/toggle-side-panel.png) o selezionala utilizzando **Rilascia l’oggetto o seleziona qui.**
+   1. Nell&#39;area delle regole, in WHEN **DeletePanel**, selezionare lo stato **su cui si fa clic**.
+   1. In THEN, seleziona **Rimuovi istanza** e trascina il pannello tramite ![toggle-side-panel](/help/forms/assets/toggle-side-panel.png) oppure selezionalo tramite **Rilascia oggetto o seleziona qui.**
 
-   Seleziona **Editor di codice** nella riga Oggetti e funzioni modulo. Clic **Modifica regole** e nell&#39;area di codice:
+   Selezionare **Editor di codice** nella riga Oggetti e funzioni modulo. Fai clic su **Modifica regole** e nell&#39;area del codice:
 
-   * Per creare un pulsante Elimina pannello, specifica `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
+   * Per creare un pulsante Elimina pannello, specificare `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
    Fai clic su **Fine**.
 >[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >
->Se un campo appartiene a un pannello ripetibile, non è possibile accedervi direttamente utilizzando il relativo nome negli script. Per accedere al campo, specifica l’istanza ripetibile a cui appartiene il campo utilizzando `instances` API in `InstanceManager`. Sintassi da utilizzare per `instances` API in `InstanceManager` è:
+>Se un campo appartiene a un pannello ripetibile, non è possibile accedervi direttamente utilizzando il relativo nome negli script. Per accedere al campo, specificare l&#39;istanza ripetibile a cui appartiene il campo utilizzando l&#39;API `instances` in `InstanceManager`. Sintassi per l&#39;utilizzo dell&#39;API `instances` in `InstanceManager`:
 >
 >
 >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
@@ -171,7 +171,7 @@ La sottomaschera ripetibile è simile ai pannelli ripetibili in Adaptive Forms. 
 1. Per specificare il numero minimo di ripetizioni, selezionare Conteggio minimo e digitare un numero nella casella associata. Se questa opzione è impostata su 0 e non vengono forniti dati per gli oggetti nel sottomodulo al momento dell&#39;unione dei dati, il sottomodulo non viene posizionato al momento del rendering del modulo.
 1. Per specificare il numero massimo di ripetizioni di sottomaschera, selezionare Max e digitare un numero nella casella associata. Se non si specifica un valore nella casella Max, il numero di ripetizioni della sottomaschera è illimitato.
 1. Per specificare un numero impostato di ripetizioni di sottomaschera, indipendentemente dalla quantità di dati, selezionare Conteggio iniziale e digitare un numero nella casella associata. Se si seleziona questa opzione e non sono disponibili dati o sono presenti meno voci di dati rispetto al valore Conteggio iniziale specificato, le istanze vuote del sottomodulo verranno comunque inserite nel modulo.
-1. Aggiungere due pulsanti nella sottomaschera padre: uno per aggiungere un&#39;istanza e un altro per eliminare un&#39;istanza di una sottomaschera ripetibile. Per i passaggi dettagliati, consulta [Creare un’azione](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
+1. Aggiungere due pulsanti nella sottomaschera padre: uno per aggiungere un&#39;istanza e un altro per eliminare un&#39;istanza di una sottomaschera ripetibile. Per i passaggi dettagliati, vedi [Generare un&#39;azione](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
 1. Collega ora il modello di modulo al modulo adattivo. Per i passaggi dettagliati, consulta [Creare un modulo adattivo basato su un modello](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template).
 1. Utilizzare i pulsanti creati nel passaggio 9 per aggiungere e rimuovere sottomaschere.
 
@@ -183,7 +183,7 @@ Il file .zip allegato contiene un modulo secondario ripetibile di esempio.
 
 È possibile creare pannelli ripetibili da uno schema XML e dalla proprietà minOccours &amp; maxOccurs di qualsiasi elemento di tipo complesso. Per informazioni dettagliate sullo schema XML, vedere [Creare moduli adattivi utilizzando lo schema XML come modello di modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html).
 
-Nel codice seguente, la proprietà `SampleType`utilizza la proprietà minOccours &amp; maxOccurs.
+Nel codice seguente, il pannello `SampleType` utilizza la proprietà minOccours &amp; maxOccurs.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

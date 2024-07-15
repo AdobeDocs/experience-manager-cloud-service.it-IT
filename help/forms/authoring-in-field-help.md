@@ -24,7 +24,7 @@ Questo articolo illustra come gli autori di moduli possono aggiungere aiuto cont
 
 Puoi specificare la guida contestuale utilizzando le seguenti opzioni nella sezione Contenuto della guida della scheda Proprietà nella barra laterale.
 
-* [Breve descrizione](authoring-in-field-help.md#p-short-description-p)
+* [Descrizione breve](authoring-in-field-help.md#p-short-description-p)
 * [Descrizione lunga](authoring-in-field-help.md#p-long-description-p)
 
 ![Guida contestuale per i campi modulo](assets/descriptions.png)
@@ -33,7 +33,7 @@ Puoi specificare la guida contestuale utilizzando le seguenti opzioni nella sezi
 >
 >La descrizione lunga sostituisce la descrizione breve. Se sono stati specificati entrambi, verrà visualizzata solo la descrizione Long.
 
-### Breve descrizione {#short-description}
+### Descrizione breve {#short-description}
 
 Il campo Descrizione breve fornisce suggerimenti rapidi e brevi sulla compilazione di un campo modulo. Il testo specificato nel campo Descrizione breve viene visualizzato come descrizione comando quando si passa il puntatore del mouse sul campo.
 
@@ -41,7 +41,7 @@ Il campo Descrizione breve fornisce suggerimenti rapidi e brevi sulla compilazio
 
 >[!NOTE]
 >
->Seleziona **Mostra sempre una breve descrizione** per visualizzare in modo permanente il testo della guida sotto il campo.
+>Selezionare **Mostra sempre descrizione breve** per visualizzare in modo permanente il testo della Guida sotto il campo.
 
 ![Guida contestuale breve permanente sotto il campo](assets/short1.png)
 
@@ -51,21 +51,21 @@ Il campo Descrizione breve fornisce suggerimenti rapidi e brevi sulla compilazio
 
 ![Aggiunta di rich media come guida contestuale per i campi modulo](assets/long-descriptions.png)
 
-Quando si aggiunge una descrizione lunga viene visualizzata una **?** accanto al campo. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione descrizione lunga.
+Se si aggiunge una descrizione lunga, verrà visualizzato **?Icona** accanto al campo. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione descrizione lunga.
 
-![Esempio di aiuto contestuale per rich media](assets/photoshop.png)
+![Esempio di aiuto nel contesto di rich media](assets/photoshop.png)
 
 ### Guida a livello di pannello {#panel-level-help}
 
 Oltre alla guida contestuale per i campi modulo, è possibile specificare la guida a livello di pannello nella scheda Contenuto guida della finestra di dialogo di modifica del pannello.
 
-![Aggiunta di informazioni della Guida contestuale a un pannello modulo](assets/panel-level-help.png)
+![Aggiunta della guida contestuale a un pannello del modulo](assets/panel-level-help.png)
 
-L’aggiunta della guida per il pannello mostra una **?** accanto alla descrizione del pannello. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione Contenuto della guida della finestra di dialogo per modifica del pannello.
+L&#39;aggiunta della Guida per il pannello visualizza **?Icona** accanto alla descrizione del pannello. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione Contenuto della guida della finestra di dialogo per modifica del pannello.
 
-![Esempio di guida contestuale a livello di pannello modulo](assets/photoshop-1.png)
+![Esempio di guida contestuale a livello di pannello del modulo](assets/photoshop-1.png)
 
 >[!MORELIKETHIS]
 >
->* [Aggiungere testo segnaposto ai campi modulo](/help/forms/placeholder-text-in-aem-forms.md)
+>* [Aggiungi testo segnaposto ai campi modulo](/help/forms/placeholder-text-in-aem-forms.md)
 >* [Aggiungi nota a piè di pagina a un modulo adattivo per testo RTF](/help/forms/footnotes-richtextsupport.md)

@@ -21,7 +21,7 @@ La barra degli strumenti è costituita da una serie di modalità di interfaccia 
 * Le modalità dell’interfaccia utente sono icone visualizzate sul lato sinistro della barra degli strumenti. Quando selezioni un’icona, la barra degli strumenti mostra i moduli dell’interfaccia utente in essa contenuti.
 * I moduli di interfaccia utente visualizzano i dati da uno o più archivi ContextHub. Alcuni moduli di interfaccia utente consentono inoltre di manipolare i dati dell’archivio.
 
-ContextHub installa diverse modalità e moduli di interfaccia utente. L&#39;amministratore potrebbe avere [ContextHub configurato](/help/implementing/developing/personalization/configuring-contexthub.md) per visualizzarne di diversi.
+ContextHub installa diverse modalità e moduli di interfaccia utente. L&#39;amministratore potrebbe avere [configurato ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) per visualizzarne altri.
 
 ## Visualizzazione della barra degli strumenti di ContextHub {#revealing-the-contexthub-toolbar}
 

@@ -1,9 +1,10 @@
 ---
-title: Quali gruppi di utenti sono disponibili come predefiniti in AEM Forms as a Cloud Service?
+title: Quali gruppi di utenti sono disponibili come as a Cloud Service in AEM Forms?
 description: Elenco dei gruppi di utenti e delle autorizzazioni predefiniti assegnati a ciascun gruppo
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 26%
@@ -19,7 +20,7 @@ ht-degree: 26%
 
 È possibile [creare gruppi](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) e assegnare criteri e [utenti](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) ai gruppi. Questi criteri controllano le autorizzazioni degli utenti che fanno parte del gruppo.
 
-Una volta effettuata la configurazione [!DNL AEM Forms] as a Cloud Service, i gruppi elencati nella tabella seguente, ad esempio [!DNL forms-users] e forms-power-user, sono automaticamente disponibili per l&#39;assegnazione:
+Dopo aver configurato [!DNL AEM Forms] as a Cloud Service, i gruppi elencati nella tabella seguente, ad esempio [!DNL forms-users] e forms-power-user, sono automaticamente disponibili per l&#39;assegnazione:
 
 <table>
  <tbody>
@@ -61,7 +62,7 @@ Una volta effettuata la configurazione [!DNL AEM Forms] as a Cloud Service, i gr
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>Creazione e anteprima di Adaptive Forms <!-- or interactive communications --> modelli</li> 
+     <li>Crea e visualizza in anteprima modelli <!-- or interactive communications --> di Forms adattivo</li> 
     </ul> </td> 
   </tr>
   <tr>

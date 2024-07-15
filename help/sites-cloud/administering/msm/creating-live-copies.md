@@ -115,7 +115,7 @@ Per creare una Live Copy:
 
    ![Seleziona il sorgente della Live Copy](../assets/live-copy-from.png)
 
-1. Specifica il percorso di destinazione della Live Copy (apri la cartella/pagina genitore della Live Copy), quindi seleziona **Successivo**.
+1. Specifica il percorso di destinazione della Live Copy (apri la cartella/pagina padre della Live Copy), quindi seleziona **Successivo**.
 
    ![Seleziona la destinazione della Live Copy](../assets/live-copy-to.png)
 
@@ -170,9 +170,9 @@ Per creare una Live Copy di un sito da una configurazione blueprint:
 
    ![Crea sito da blueprint](../assets/create-site-from-blueprint.png)
 
-1. Utilizza il **Lingue iniziali** per specificare le lingue del sito blueprint da utilizzare per la Live Copy.
+1. Utilizza il selettore **Lingue iniziali** per specificare le lingue del sito blueprint da utilizzare per la Live Copy.
 
-   Tutte le lingue disponibili sono selezionate per impostazione predefinita. Per rimuovere una lingua, selezionare **X** che viene visualizzato accanto alla lingua.
+   Tutte le lingue disponibili sono selezionate per impostazione predefinita. Per rimuovere una lingua, selezionare la **X** visualizzata accanto alla lingua.
 
    Esempio:
 
@@ -306,7 +306,7 @@ Sincronizza una Live Copy per richiamare le modifiche dall’origine alla Live C
 
 1. Nella console **Sites**, seleziona la pagina Live Copy e apri le proprietà.
 1. Apri la scheda **Live Copy.**
-1. Seleziona **Sincronizza**.
+1. Selezionare **Sincronizza**.
 
    ![Pulsante Sincronizza](../assets/synchronize.png)
 
@@ -480,7 +480,7 @@ Annulla l&#39;ereditarietà per modificare il contenuto o eliminare il component
 
    ![Ereditarietà nella barra degli strumenti del componente](../assets/inheritance-toolbar.png)
 
-1. Sulla barra degli strumenti del componente, seleziona **Annulla ereditarietà** icona.
+1. Sulla barra degli strumenti del componente, seleziona l&#39;icona **Annulla ereditarietà**.
 
    ![Icona Annulla ereditarietà](../assets/cancel-inheritance-icon.png)
 
@@ -490,7 +490,7 @@ Annulla l&#39;ereditarietà per modificare il contenuto o eliminare il component
 
 ### Riabilitazione dell’ereditarietà per un componente {#re-enabling-inheritance-for-a-component}
 
-Per abilitare l’ereditarietà di un componente, seleziona la **Riabilita ereditarietà** sulla barra degli strumenti del componente.
+Per abilitare l&#39;ereditarietà per un componente, seleziona l&#39;icona **Riabilita ereditarietà** sulla barra degli strumenti del componente.
 
 ![Icona Riabilita ereditarietà](../assets/re-enable-inheritance-icon.png)
 
@@ -535,11 +535,11 @@ In seguito puoi riabilitare l’ereditarietà per una proprietà, se necessario.
 
    ![Pulsante Annulla ereditarietà](../assets/cancel-inheritance-button.png)
 
-1. In **Annulla ereditarietà** finestra di dialogo di conferma, seleziona **Sì**.
+1. Nella finestra di dialogo di conferma **Annulla ereditarietà**, seleziona **Sì**.
 
 ### Ripristinare le proprietà di una pagina Live Copy {#revert-properties-of-a-live-copy-page}
 
-Per abilitare l’ereditarietà di una proprietà, seleziona la **Ripristina ereditarietà** accanto alla proprietà.
+Per abilitare l&#39;ereditarietà per una proprietà, seleziona l&#39;icona **Ripristina ereditarietà** visualizzata accanto alla proprietà.
 
 ![Pulsante Ripristina ereditarietà](../assets/revert-inheritance-button.png)
 

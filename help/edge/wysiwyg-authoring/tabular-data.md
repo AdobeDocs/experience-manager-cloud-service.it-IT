@@ -44,7 +44,7 @@ Questo documento utilizza l’esempio dei reindirizzamenti per illustrare come c
 
 Per creare mappature utilizzando i fogli di calcolo nel progetto AEM con Edge Delivery Services, è necessario aver creato il sito utilizzando il relativo modello più recente.
 
-Consulta il documento [Guida introduttiva per sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) per ulteriori informazioni.
+Per ulteriori informazioni, consulta il documento [Guida introduttiva per sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 ## Creazione di un foglio di calcolo {#spreadsheet}
 

@@ -1,5 +1,5 @@
 ---
-title: Architettura di [!DNL Assets]
+title: Architettura di  [!DNL Assets]
 description: Architettura di Adobe Experience Manager Assets as a [!DNL Cloud Service]
 contentOwner: AG
 feature: Asset Management, Asset Compute Microservices
@@ -12,11 +12,11 @@ ht-degree: 36%
 
 ---
 
-# Architettura di Assets as a [!DNL Cloud Service] soluzione {#assets-architecture}
+# Architettura di Assets come soluzione [!DNL Cloud Service] {#assets-architecture}
 
-[!DNL Experience Manager Assets] as a [!DNL Cloud Service] si basa su [!DNL Adobe Experience Manager] e offre un buon confronto con le offerte più recenti [!DNL Experience Manager] 6.5. Il [!DNL Cloud Service] offre un’architettura e funzionalità adattate per essere un servizio nativo per il cloud. Le modifiche apportate all’architettura sottostante non consentono che tutte le funzionalità di cui all’Experience Manager 6, paragrafo 5, facciano parte del [!DNL Cloud Service].
+[!DNL Experience Manager Assets] as a [!DNL Cloud Service] si basa su [!DNL Adobe Experience Manager] e si confronta bene con l&#39;offerta più recente [!DNL Experience Manager] 6.5. L&#39;offerta [!DNL Cloud Service] presenta un&#39;architettura e funzionalità adeguate per essere un servizio nativo per il cloud. Le modifiche apportate all&#39;architettura sottostante non consentono a tutte le funzionalità Experience Manager 6.5 di essere incluse in [!DNL Cloud Service].
 
-Per una panoramica dell’architettura dei microservizi per le risorse, consulta questa pagina [panoramica dei microservizi per le risorse](asset-microservices-overview.md#asset-microservices-architecture).
+Per visualizzare la panoramica dell&#39;architettura dei microservizi per le risorse, consulta questa [panoramica dei microservizi per le risorse](asset-microservices-overview.md#asset-microservices-architecture).
 
 **Consulta anche**
 

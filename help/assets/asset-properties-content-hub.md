@@ -14,7 +14,7 @@ ht-degree: 8%
 
 ![Immagine banner metadati](assets/metadata-banner-image.png)
 
-[!DNL The Content Hub] consente di visualizzare informazioni sulla risorsa, fondamentali per una distribuzione efficiente delle risorse. Si tratta della raccolta di tutti i dati disponibili per una risorsa.
+[!DNL The Content Hub] consente di visualizzare informazioni sulla risorsa, che sono fondamentali per una distribuzione efficiente delle risorse. Si tratta della raccolta di tutti i dati disponibili per una risorsa.
 
 La visualizzazione delle proprietà delle risorse consente di categorizzare ulteriormente le risorse ed è utile in caso di aumento della quantità di informazioni digitali. Ricorrendo solo ai nomi dei file, alle miniature e alla memoria dell’utente, è possibile gestire alcune centinaia di file. Tuttavia, questo approccio non è scalabile quando aumentano il numero di persone coinvolte e il numero di risorse gestite. Inoltre, il valore di una risorsa digitale aumenta man mano che la risorsa diventa:
 
@@ -24,26 +24,26 @@ La visualizzazione delle proprietà delle risorse consente di categorizzare ulte
 
 ## Prerequisiti {#prerequisites}
 
-[Utenti Content Hub](deploy-content-hub.md#onboard-content-hub-users) può eseguire le azioni menzionate in questo articolo.
+[Gli utenti di Content Hub](deploy-content-hub.md#onboard-content-hub-users) possono eseguire le azioni indicate in questo articolo.
 
 ## Visualizzare le proprietà di una risorsa {#properties-ui}
 
-Prima di utilizzare, condividere o scaricare una risorsa, puoi visualizzarla più da vicino. La funzione di anteprima consente di visualizzare non solo le immagini, ma anche alcuni altri tipi di risorse supportati. Oltre a visualizzare la risorsa, puoi visualizzarne le informazioni dettagliate e intraprendere altre azioni. Per visualizzare le informazioni di una risorsa, passa alla risorsa oppure [ricerca](search-assets.md) la risorsa, quindi fai clic sulla risorsa per aprirne le proprietà. La figura seguente illustra i campi disponibili nella pagina delle proprietà di una risorsa:
+Prima di utilizzare, condividere o scaricare una risorsa, puoi visualizzarla più da vicino. La funzione di anteprima consente di visualizzare non solo le immagini, ma anche alcuni altri tipi di risorse supportati. Oltre a visualizzare la risorsa, puoi visualizzarne le informazioni dettagliate e intraprendere altre azioni. Per visualizzare le informazioni di una risorsa, passa alla risorsa o [cerca](search-assets.md) la risorsa, quindi fai clic sulla risorsa per aprirne le proprietà. La figura seguente illustra i campi disponibili nella pagina delle proprietà di una risorsa:
 
-![Proprietà di un’interfaccia utente delle risorse](assets/properties-ui.png)
+![Proprietà dell&#39;interfaccia utente di una risorsa](assets/properties-ui.png)
 
-* **R:** Titolo di una risorsa
-* **B:** Percentuale di risorse di zoom o anteprima più vicine mediante zoom in/out
+* **A:** titolo di una risorsa
+* **B:** Percentuale di risorse di zoom o anteprima più vicine mediante zoom avanti o indietro
 * **C:** Annulla zoom alla percentuale selezionata in precedenza
-* **D:** Passa alla risorsa precedente o successiva
-* **E:** Conteggio Assets
-* **F:** Scaricare la risorsa
+* **D:** Passare alla risorsa precedente o successiva
+* **E:** conteggio Assets
+* **F:** scarica la risorsa
 * **G:** Modifica risorsa tramite [!DNL Adobe Express]
-* **H:** Comprimere o visualizzare in anteprima le informazioni di una risorsa
-* **I:** Condividere la risorsa
+* **H:** Comprimi o visualizza in anteprima le informazioni di una risorsa
+* **I:** Condividi la risorsa
 * **J:** Aggiungi risorsa a [!DNL Collection]
-* **K:** Chiudi schermata di anteprima
-* **L:** Informazioni su una risorsa, tra cui titolo, formato, dimensione, risoluzione, tag, tag colore e tag avanzati.
+* **K:** Chiudi la schermata di anteprima
+* **L:** informazioni di una risorsa che includono titolo, formato, dimensione, risoluzione, tag, tag colore e smart tag.
 
 ## Formati supportati {#supported-formats}
 
@@ -99,13 +99,13 @@ Nella tabella seguente sono illustrati i formati di file supportati in [!DNL the
 
 Dopo aver caricato una risorsa, Content Hub ne deriva alcune proprietà che vengono generate automaticamente. Di seguito è riportato un elenco di alcuni di essi:
 
-* **Dimensione:** Dimensione mostra il valore logico di una risorsa in base alle sue dimensioni. Questo chiarisce lo spazio occupato da una risorsa in un archivio. [!DNL The Content Hub] supporta risorse fino a 2 GB.
+* **Dimensioni:** Le dimensioni mostrano il valore logico di una risorsa in base alle dimensioni. Questo chiarisce lo spazio occupato da una risorsa in un archivio. [!DNL The Content Hub] supporta risorse fino a 2 GB.
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **Tag avanzati:** [!DNL The Content Hub] utilizza i servizi di contenuti avanzati di Adobe Sensei per addestrare le risorse utilizzando l’algoritmo di riconoscimento sulla struttura basata su tag. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Grazie ai tag avanzati è possibile velocizzare le attività relative ai contenuti dei progetti grazie alla possibilità di trovare rapidamente le risorse rilevanti. Gli smart tag sono un esempio di informazioni sulla risorsa non contenute nell’immagine. [!DNL The Content Hub] applica automaticamente i tag avanzati alle risorse, per impostazione predefinita.
+* **Tag avanzati:** [!DNL The Content Hub] utilizza i servizi di contenuti avanzati di Adobe Sensei per addestrare le risorse utilizzando l&#39;algoritmo di riconoscimento sulla struttura basata su tag. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Grazie ai tag avanzati è possibile velocizzare le attività relative ai contenuti dei progetti grazie alla possibilità di trovare rapidamente le risorse rilevanti. Gli smart tag sono un esempio di informazioni sulla risorsa non contenute nell’immagine. [!DNL The Content Hub] applica automaticamente i tag avanzati alle risorse per impostazione predefinita.
 
-* **Tag colore:** [Tag colore](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) ti aiuta a riconoscere una risorsa utilizzando colori identificati automaticamente in una risorsa utilizzando le funzionalità di intelligenza artificiale di Sensei di Adobe.
+* **Tag colore:** [I tag colore](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) consentono di riconoscere una risorsa utilizzando colori identificati automaticamente in una risorsa mediante le funzionalità di IA per l&#39;analisi dei colori di Adobe in Sensei.
 
 * Data di caricamento
 
@@ -117,7 +117,7 @@ Dopo aver caricato una risorsa, Content Hub ne deriva alcune proprietà che veng
 
 Sono inoltre disponibili proprietà specificate durante l’aggiunta di risorse a Content Hub. Per ulteriori informazioni, consulta [Aggiungere risorse approvate dal marchio a Content Hub](upload-brand-approved-assets.md). Tali proprietà vengono visualizzate anche nella pagina delle proprietà della risorsa.
 
-Gli amministratori possono anche configurare le proprietà visualizzate per ogni risorsa. Per ulteriori informazioni, consulta [Configurare l’interfaccia utente di Content Hub](configure-content-hub-ui-options.md#configure-asset-details-content-hub).
+Gli amministratori possono anche configurare le proprietà visualizzate per ogni risorsa. Per ulteriori informazioni, vedere [Configurare l&#39;interfaccia utente di Content Hub](configure-content-hub-ui-options.md#configure-asset-details-content-hub).
 
 <!--
 

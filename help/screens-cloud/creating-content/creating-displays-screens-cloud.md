@@ -1,5 +1,5 @@
 ---
-title: Creazione e gestione di visualizzazioni in Schermi as a Cloud Service
+title: Creazione e gestione di visualizzazioni in Screens as a Cloud Service
 description: Questa pagina descrive come creare e gestire le visualizzazioni in Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 feature: Authoring Screens
@@ -11,7 +11,7 @@ ht-degree: 3%
 
 ---
 
-# Creazione e gestione di visualizzazioni in Schermi as a Cloud Service {#create-displays-screens-cloud}
+# Creazione e gestione di visualizzazioni in Screens as a Cloud Service {#create-displays-screens-cloud}
 
 Dopo aver pubblicato il canale, è ora possibile creare la visualizzazione nel provider di servizi Screens.
 
@@ -26,10 +26,10 @@ Questo documento spiega come creare e gestire le visualizzazioni nel provider di
 
 ## Passaggi per creare una visualizzazione {#create-display}
 
-Per creare la visualizzazione dal provider di servizi Screens, effettua le seguenti operazioni:
+Per creare la visualizzazione dal provider di servizi Screens, attenersi alla procedura descritta di seguito.
 
-1. Dalla tua istanza di AEM Cloud Service, accedi al provider di servizi Screens.
-1. Seleziona **Display** dal pannello di navigazione a sinistra e fai clic su **Crea** dall&#39;angolo superiore destro dello schermo.
+1. Dall’istanza di AEM Cloud Service, accedi a Screens Services Provider.
+1. Seleziona **Visualizzazioni** dal pannello di navigazione a sinistra e fai clic su **Crea** nell&#39;angolo superiore destro dello schermo.
 
    ![immagine](/help/screens-cloud/assets/display/disp-1.png)
 
@@ -37,11 +37,11 @@ Per creare la visualizzazione dal provider di servizi Screens, effettua le segue
 
    ![immagine](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Inserisci il titolo come **LoopChannelDisplay** in **Nome visualizzato** e fai clic su **Crea**.
+1. Immetti il titolo come **LoopingChannelDisplay** in **Nome visualizzato** e fai clic su **Crea**.
 
    ![immagine](/help/screens-cloud/assets/display/disp3.png)
 
-1. La visualizzazione con titolo **LoopChannelDisplay** sarà ora visibile nell’elenco di visualizzazione.
+1. La visualizzazione con titolo **LoopingChannelDisplay** sarà ora visibile nell&#39;elenco di visualizzazione.
 
    ![immagine](/help/screens-cloud/assets/display/disp-4.png)
 
@@ -49,7 +49,7 @@ Per creare la visualizzazione dal provider di servizi Screens, effettua le segue
 
 È possibile eliminare una visualizzazione dal provider di servizi Screens.
 
-Seleziona la visualizzazione e fai clic su **Elimina** dalla parte inferiore del pannello, come illustrato nella figura riportata di seguito.
+Seleziona la visualizzazione e fai clic su **Elimina** nella parte inferiore del pannello, come illustrato nella figura seguente.
 
 ![immagine](/help/screens-cloud/assets/display/disp-5.png)
 
@@ -67,7 +67,7 @@ Puoi passare dalla barra delle cartelle alla visualizzazione di tutte le cartell
 
    ![immagine](/help/screens-cloud/assets/display/toggle-rail.png)
 
-1. Seleziona **Nascondi cartelle** per chiuderlo di nuovo.
+1. Seleziona **Nascondi cartelle** per chiuderlo nuovamente.
 
 ## Come creare una cartella {#create-folder}
 
@@ -78,9 +78,9 @@ Puoi creare cartelle per organizzare meglio le visualizzazioni.
 
    ![immagine](/help/screens-cloud/assets/display/verify-view.png)
 
-   Nota: **Tutte le visualizzazioni** deve essere selezionato nella barra laterale delle cartelle e la navigazione breadcrumb deve mostrare solo **Display**.
+   Nota: **Tutte le visualizzazioni** devono essere selezionate nella barra laterale della cartella e la navigazione delle breadcrumb deve mostrare solo **visualizzazioni**.
 
-1. Fai clic sul pulsante &quot;Crea&quot; in alto a destra e seleziona la **Cartella** opzione.
+1. Fai clic sul pulsante Crea in alto a destra e seleziona l&#39;opzione **Cartella**.
 
    ![immagine](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -98,9 +98,9 @@ Puoi creare cartelle per organizzare meglio le visualizzazioni.
    ![immagine](/help/screens-cloud/assets/display/Nestedview.png)
 
    * La cartella deve essere selezionata nella barra laterale della cartella.
-   * La navigazione delle breadcrumb deve mostrare il nome della cartella corrente accanto a **Display**.
+   * Nella navigazione delle breadcrumb deve essere visualizzato il nome della cartella corrente accanto a **Visualizzazioni**.
 
-1. Clic  **Crea**  in alto a destra e seleziona la **Cartella** opzione.
+1. Fai clic su **Crea** in alto a destra e seleziona l&#39;opzione **Cartella**.
 
    ![immagine](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -120,7 +120,7 @@ Puoi spostare il contenuto nelle nuove cartelle per organizzare meglio le visual
 
 ![immagine](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Nota**: la cartella deve essere selezionata nella barra laterale della cartella. Inoltre, la navigazione delle breadcrumb deve mostrare il nome della cartella corrente accanto a **Display**.
+**Nota**: la cartella deve essere selezionata nella barra laterale della cartella. Inoltre, nella navigazione delle breadcrumb deve essere visualizzato il nome della cartella corrente accanto a **Visualizzazioni**.
 
 ## Come eliminare il contenuto da una cartella {#delete-folder}
 
@@ -130,9 +130,9 @@ Tutte le operazioni della cartella sono accessibili tramite la barra delle azion
 
 1. Nella vista inventario, seleziona la cartella secondaria che desideri eliminare e assicurati che sia vuota.
 
-1. Clic **Elimina** nella barra delle azioni di selezione. L’azione è disabilitata se la cartella non è vuota.
+1. Fai clic sull&#39;azione **Elimina** nella barra delle azioni di selezione. L’azione è disabilitata se la cartella non è vuota.
 
 
 ## Passaggio successivo {#whats-next}
 
-Ora che hai imparato a creare e gestire le visualizzazioni per il progetto, devi continuare il percorso Screens as a Cloud Service esaminando il documento [Assegnazione di un canale a una visualizzazione in Schermi as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).
+Dopo aver appreso come creare e gestire le visualizzazioni per il progetto, è necessario continuare con l&#39;percorso di Screens as a Cloud Service esaminando il documento [Assegnazione del canale a una visualizzazione in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).

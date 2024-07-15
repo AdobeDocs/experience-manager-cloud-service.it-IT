@@ -16,13 +16,13 @@ ht-degree: 18%
 
 La gestione delle risorse Dynamic Medie (immagini, video e risorse interattive) dopo il caricamento comporta diverse attività, tra cui la visualizzazione in anteprima, il download o la pubblicazione.
 
-In anteprima, potete anche applicare i predefiniti immagine (solo per le immagini) o i predefiniti visualizzatore (per video e immagini). Non è possibile applicare entrambe le opzioni a una risorsa. Consulta [Applicare i predefiniti visualizzatore](viewer-presets.md) e [Applicare predefiniti immagine](image-presets.md).
+In anteprima, potete anche applicare i predefiniti immagine (solo per le immagini) o i predefiniti visualizzatore (per video e immagini). Non è possibile applicare entrambe le opzioni a una risorsa. Consulta [Applica predefiniti visualizzatore](viewer-presets.md) e [Applica predefiniti immagine](image-presets.md).
 
-Le informazioni generali sulla gestione delle risorse si trovano in [Gestire le risorse con l’interfaccia utente touch](/help/assets/manage-digital-assets.md).
+Le informazioni generali sulla gestione delle risorse si trovano in [Gestione di Assets con l&#39;interfaccia utente touch](/help/assets/manage-digital-assets.md).
 
 Negli argomenti seguenti vengono descritte le operazioni che è possibile eseguire per gestire le risorse di Dynamic Medie:
 
 * [Best practice per ottimizzare la qualità delle immagini](best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Anteprima delle risorse Dynamic Media](previewing-assets.md)
-* [Pubblicare risorse Dynamic Medie](publishing-dynamicmedia-assets.md)
+* [Publish Dynamic Medie Assets](publishing-dynamicmedia-assets.md)
 * [Utilizzare i selettori](working-with-selectors.md)

@@ -28,4 +28,4 @@ Scopri l’architettura basata sugli eventi, gli eventi di Adobe I/O e gli event
 
 >[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
 
-Scopri come generare e pubblicare eventi utilizzando eventi in un’applicazione App Builder.
+Scopri come creare una pubblicazione che possa utilizzare gli eventi in un’applicazione App Builder.

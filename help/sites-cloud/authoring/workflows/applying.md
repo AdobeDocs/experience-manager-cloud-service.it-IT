@@ -55,7 +55,7 @@ Puoi avviare un flusso di lavoro da:
 * [con l’opzione Crea della barra degli strumenti di Sites](#starting-a-workflow-from-the-sites-toolbar);
 * [dalla barra Timeline della console Sites](#starting-a-workflow-from-the-timeline).
 
-In entrambi i casi, devi [Specificare i dettagli del flusso di lavoro nella procedura guidata Crea flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
+In entrambi i casi, è necessario [Specificare i dettagli del flusso di lavoro nella Creazione guidata flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Avvio di un flusso di lavoro dalla barra degli strumenti di Sites {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -119,7 +119,7 @@ Puoi specificare i dettagli:
 
 1. Al passaggio **Ambito** puoi selezionare:
 
-   * **Aggiungi contenuto** per aprire [browser percorsi](/help/sites-cloud/authoring/path-selection.md) e seleziona le risorse aggiuntive; quando nel browser, seleziona **Seleziona** per aggiungere contenuti all’istanza di flusso di lavoro.
+   * **Aggiungi contenuto** per aprire il [browser percorsi](/help/sites-cloud/authoring/path-selection.md) e selezionare risorse aggiuntive; quando è nel browser, selezionare **Seleziona** per aggiungere il contenuto all&#39;istanza del flusso di lavoro.
 
    * Una risorsa esistente per visualizzare le seguenti azioni:
 

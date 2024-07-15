@@ -46,12 +46,12 @@ Un architetto dell’informazione esegue tali attività solo occasionalmente, qu
 
 1. Al termine della creazione del modello, selezionare **Salva**.
 
-1. La modalità del modello creato dipende dalla selezione o meno **Abilita modello** durante la creazione del modello:
+1. La modalità del modello creato dipende dalla selezione o meno di **Abilita modello** durante la creazione del modello:
    * selezionato: il nuovo modello è già **abilitato**
    * non selezionato: il nuovo modello viene creato nella modalità **Bozza**
 
 1. Se non è già abilitato, per poter essere utilizzato il modello deve essere **abilitato**.
-   1. Selezionate il modello creato, quindi selezionate **Abilita**.
+   1. Selezionare il modello creato, quindi selezionare **Abilita**.
 
       ![Abilitazione del modello](../assets/models-enable.png)
    1. Conferma l’abilitazione del modello toccando o facendo clic su **Abilita** nella finestra di dialogo di conferma.

@@ -22,14 +22,14 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 
 >[!NOTE]
 >
->I frammenti di contenuto sono **Sites** ma sono memorizzati come **Risorse**.
+>I frammenti di contenuto sono una funzionalità di **Sites**, ma sono memorizzati come **Assets**.
 >
->Ora sono gestite principalmente con **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** , anche se possono ancora essere gestite dalla **[Risorse](/help/assets/content-fragments/content-fragments-managing.md)** console.
+>Ora sono gestite principalmente con la console **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, anche se possono ancora essere gestite dalla console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
 >Esistono due editor per l’authoring dei frammenti di contenuto:
 >
->* Il nuovo editor per [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), è accessibile principalmente da **Frammenti di contenuto** console.
->* Il [editor originale](/help/assets/content-fragments/content-fragments-variations.md) è accessibile principalmente da **Risorse** console.
+>* Il nuovo editor per [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md) è accessibile principalmente dalla console **Frammenti di contenuto**.
+>* L&#39;[editor originale](/help/assets/content-fragments/content-fragments-variations.md) è accessibile principalmente dalla console **Assets**.
 
 >[!NOTE]
 >
@@ -129,12 +129,12 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 
 Quando un frammento di contenuto specifico viene aggiunto alla pagina, è disponibile un segnaposto **Trascina qui i componenti** tra ciascun paragrafo HTML (e nella parte superiore/inferiore) del frammento.
 
-Questo ti consente di aggiungere contenuto aggiuntivo [nel mezzo (ovvero nel contenuto intermedio)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) il contenuto del frammento (in qualsiasi punto disponibile), senza dover modificare il frammento principale.
+In questo modo è possibile aggiungere contenuto aggiuntivo [nel contenuto intermedio (ovvero nel contenuto intermedio)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) nel contenuto del frammento (in qualsiasi punto disponibile), senza dover modificare il frammento principale.
 
 Per il contenuto intermedio è possibile:
 
-* Aggiungere componenti da [Browser Componenti.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* Aggiungere risorse da [Browser risorse.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* Aggiungi componenti dal browser [Componenti.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+* Aggiungi risorse dal browser [Assets.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
 * usare [Contenuto associato](#using-associated-content) come origine per il contenuto intermedio.
 
 >[!CAUTION]

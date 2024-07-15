@@ -34,7 +34,7 @@ Per sospendere manualmente gli ambienti di un programma sandbox, segui la proced
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , tocca o fai clic sul programma da sospendere per visualizzarne i dettagli.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, tocca o fai clic sul programma che desideri sospendere per visualizzarne i dettagli.
 
 1. Dalla scheda **Ambienti**, fai clic sul pulsante con i puntini di sospensione e seleziona **Console sviluppatori**.
 
@@ -50,11 +50,11 @@ Per sospendere manualmente gli ambienti di un programma sandbox, segui la proced
 
    ![Conferma della sospensione](assets/hibernate-2.png)
 
-Quando la sospensione ha esito positivo, viene visualizzata la notifica di completamento del processo di sospensione per l’ambiente in **Console per sviluppatori** schermo.
+Quando la sospensione viene eseguita correttamente, nella schermata **Developer Console** viene visualizzata la notifica di completamento del processo di sospensione per l&#39;ambiente in uso.
 
 ![Conferma della sospensione](assets/hibernate-4.png)
 
-In Console sviluppatori puoi anche fare clic sul pulsante **Ambienti** collegamento nelle breadcrumb sopra **Pod** elenco a discesa per un elenco di ambienti da sospendere.
+In Developer Console è inoltre possibile fare clic sul collegamento **Ambienti** nel percorso di navigazione sopra l&#39;elenco a discesa **Pod** per visualizzare un elenco di ambienti da sospendere.
 
 ![Elenco degli ambienti da sospendere](assets/hibernate-1b.png)
 
@@ -68,13 +68,13 @@ Puoi sospendere manualmente il programma sandbox da Console sviluppatori.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , tocca o fai clic sul programma da riattivare per visualizzarne i dettagli.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, tocca o fai clic sul programma che desideri riattivare per visualizzarne i dettagli.
 
 1. Dalla scheda **Ambienti**, fai clic sul pulsante con i puntini di sospensione e seleziona **Console sviluppatori**.
 
    * Per ulteriori dettagli su Developer Console, consulta [Accesso a Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console).
 
-1. Clic **De-ibernazione**.
+1. Fare clic su **Riattiva**.
 
    ![Pulsante Riattiva](assets/de-hibernation-img1.png)
 
@@ -91,7 +91,7 @@ Puoi sospendere manualmente il programma sandbox da Console sviluppatori.
    ![Riattivazione completa](assets/de-hibernation-img4.png)
 
 
-In Console sviluppatori puoi anche fare clic sul pulsante **Ambienti** collegamento nelle breadcrumb sopra **Pod** elenco a discesa per un elenco di ambienti da riattivare.
+In Developer Console è inoltre possibile fare clic sul collegamento **Ambienti** nel percorso di navigazione sopra l&#39;elenco a discesa **Pod** per visualizzare un elenco di ambienti da riattivare.
 
 ![Elenco dei pod sospesi](assets/de-hibernate-1b.png)
 

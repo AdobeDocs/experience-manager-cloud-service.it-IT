@@ -38,8 +38,8 @@ Gli utenti spesso pensano che un’implementazione headless limiti gli autori a 
 
 I requisiti per un’implementazione che utilizza l’Editor universale sono molto semplici e supportano:
 
-* **Qualsiasi architettura** : rendering lato server, rendering lato edge, rendering lato client e così via.
-* **Qualsiasi framework** - AEM &quot;vanilla&quot; o qualsiasi framework di terze parti come React, Next.js, Angular e così via.
+* **Qualsiasi architettura**: rendering lato server, rendering lato edge, rendering lato client e così via.
+* **Qualsiasi framework** - Vanilla AEM o qualsiasi framework di terze parti come React, Next.js, Angular e così via.
 * **Qualsiasi hosting** - Può essere ospitato localmente su AEM o su un dominio remoto
 
 ### Qualsiasi contenuto {#any-content}
@@ -54,7 +54,7 @@ Un autore di contenuto deve avere la stessa potente esperienza di modifica prece
 
 Per un autore di contenuto, il contenuto non riguarda solo le informazioni contenute, ma anche il rendering e la ricezione. Il contenuto viene fornito con metadati aggiuntivi e regole di strumentazione, che l’editor universale può comprendere e modificare, tra cui:
 
-* **Applicazione di layout e stile** - Utilizzando un sistema di stili, l’operatore marketing e l’autore di contenuti possono applicare stili diversi al contenuto e creare layout diversi per il contenuto, ad esempio colonne, caroselli, schede, fisarmoniche e così via.
+* **Applicazione del layout e dello stile** - Utilizzando un sistema di stili, l&#39;operatore marketing e l&#39;autore di contenuti possono applicare stili diversi al contenuto e creare layout diversi per il contenuto, ad esempio colonne, caroselli, schede, fisarmoniche e così via.
 
 ## Valore {#value}
 
@@ -86,12 +86,12 @@ Un professionista del marketing desidera creare contenuto personalizzato in base
 
 Quando esplori l’Editor universale e procedi alla sua implementazione nei tuoi progetti, tieni presenti le seguenti limitazioni.
 
-* Non più di 25 risorse AEM (frammenti di contenuto, pagine, frammenti di esperienza, risorse, ecc.) devono essere riferimenti come strumentazione su una singola pagina.
-* AEM as a Cloud Service è l&#39;unico back-end AEM supportato.
-* Rilascio as a Cloud Service di AEM `2023.8.13099` o superiore.
+* Non più di 25 risorse AEM (frammenti di contenuto, pagine, frammenti di esperienza, Assets, ecc.) devono essere riferimenti come strumentazione su una singola pagina.
+* AEM as a Cloud Service è l’unico back-end AEM supportato.
+* È richiesta la versione di AEM as a Cloud Service `2023.8.13099` o successiva.
 * Gli autori dei contenuti devono avere un proprio account Experience Cloud.
-* Chrome ed Edge sono i browser supportati
+* Chrome e Edge sono i browser supportati
 
 ## Passaggi successivi {#next-steps}
 
-Consulta il documento [Casi d’uso e percorsi di apprendimento dell’editor universale](/help/implementing/universal-editor/use-cases.md) per ulteriori informazioni sui casi d’uso comuni per Universal Editor e per scoprire le risorse di documentazione adatte per supportarti nel progetto.
+Consulta il documento [Casi d&#39;uso e percorsi di apprendimento dell&#39;editor universale](/help/implementing/universal-editor/use-cases.md) per ulteriori informazioni sui casi d&#39;uso comuni per l&#39;editor universale e per scoprire le risorse di documentazione appropriate per supportarti nel progetto.

@@ -1,5 +1,5 @@
 ---
-title: Assegnazione di un canale a una visualizzazione in Schermi as a Cloud Service
+title: Assegnazione di un canale a una visualizzazione in Screens as a Cloud Service
 description: Questa pagina descrive come assegnare un canale a una visualizzazione in Screens as a Cloud Service.
 exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
 feature: Authoring Screens
@@ -11,13 +11,13 @@ ht-degree: 2%
 
 ---
 
-# Assegnazione di un canale a una visualizzazione in Schermi as a Cloud Service {#assign-channel-displays-screens-cloud}
+# Assegnazione di un canale a una visualizzazione in Screens as a Cloud Service {#assign-channel-displays-screens-cloud}
 
 Al termine della configurazione del progetto, devi assegnare il canale a una visualizzazione per visualizzarne il contenuto.
 
 ## Obiettivo {#objective}
 
-Questo documento spiega come assegnare un canale a una visualizzazione, una volta che la visualizzazione è pronta e hai aggiunto contenuti al canale e lo hai pubblicato. Dopo aver letto, dovresti essere in grado di capire come assegnare un canale a una visualizzazione dal provider di servizi Screens.
+Questo documento spiega come assegnare un canale a una visualizzazione, una volta che la visualizzazione è pronta e hai aggiunto contenuti al canale e lo hai pubblicato. Dopo la lettura, è necessario essere in grado di capire come assegnare un canale a una visualizzazione da Screens Services Provider.
 
 ## Prerequisiti {#prerequisites}
 
@@ -30,13 +30,13 @@ Prima di eseguire i passaggi seguenti per assegnare un canale a una visualizzazi
 
 Per assegnare un canale a una visualizzazione, segui i passaggi seguenti:
 
-1. Passa a Screens Services Provider e seleziona **Display** dal pannello di navigazione a sinistra.
+1. Passare a Provider servizi Screens e selezionare **Visualizzazioni** dal pannello di navigazione a sinistra.
 
-1. Clic **Assegna canale** sul display.
+1. Fare clic su **Assegna canale** alla visualizzazione.
 
    ![immagine](/help/screens-cloud/assets/display/assignchannel-1.png)
 
-1. Compila i campi seguenti da **Assegna un canale** .
+1. Compila i campi seguenti dalla finestra di dialogo **Assegna un canale**.
 
    ![immagine](/help/screens-cloud/assets/display/assignchannel-2.png)
 
@@ -48,7 +48,7 @@ Per assegnare un canale a una visualizzazione, segui i passaggi seguenti:
 
    1. Seleziona la data di inizio e la data di fine da **Attivazione**.
 
-1. Clic **+ Aggiungi ricorrenza** per aggiungere una pianificazione di ricorrenza per il canale.
+1. Fai clic su **+ Aggiungi ricorrenza** per aggiungere una pianificazione di ricorrenza per il tuo canale.
 
    ![immagine](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
@@ -57,12 +57,12 @@ Per assegnare un canale a una visualizzazione, segui i passaggi seguenti:
 
    È possibile impostare le seguenti opzioni:
 
-   * **Nome**: titolo dello Schedule ricorrente.
-   * **Ripeti**: scegli se la pianificazione viene eseguita su base giornaliera, settimanale, mensile o annuale.
+   * **Nome**: titolo della pianificazione di ricorrenza.
+   * **Ripeti**: scegli se la pianificazione viene eseguita ogni giorno, ogni settimana, ogni mese o ogni anno.
    * **Inizio**: ora di inizio della pianificazione.
    * **Fine**: ora di fine della pianificazione. Puoi impostarla in base all’ora o alla durata.
-   * **Ora**: la pianificazione termina a un’ora specificata.
-   * **Durata**: la pianificazione viene eseguita per una particolare durata di tempo in ore o minuti.
+   * **Ora**: la pianificazione termina all&#39;ora specificata.
+   * **Durata**: la pianificazione viene eseguita per un periodo di tempo specifico in ore o minuti.
 
 1. Fai clic su **Crea**. Potete vedere che a quel display è assegnato un canale, come mostrato nella figura seguente.
 
@@ -71,4 +71,4 @@ Per assegnare un canale a una visualizzazione, segui i passaggi seguenti:
 
 ## Passaggio successivo {#whats-next}
 
-Ora che hai assegnato il canale a una visualizzazione, devi continuare il percorso Screens as a Cloud Service esaminando il documento [Installazione e configurazione di Screens Player per AEM as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Ora che hai assegnato il canale a una visualizzazione, devi continuare l&#39;percorso di Screens as a Cloud Service esaminando il documento [Installazione e configurazione di Screens Player per AEM as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

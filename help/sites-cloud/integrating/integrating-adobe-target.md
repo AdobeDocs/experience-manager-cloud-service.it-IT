@@ -21,7 +21,7 @@ Come parte di Adobe Experience Cloud, Adobe Target consente di aumentare la rile
 
 Adobe Launch è necessario per gestire le proprietà lato client sia per Analytics sia per Target nelle pagine AEM (librerie/tag JS). Detto questo, l’integrazione con Launch è necessaria per il “targeting dell’esperienza”.
 
-Per esportare frammenti di esperienza e/o di contenuto in Target, è necessario [Configurazione Adobe Target](#create-configuration), incluso [Integrazione IMS](#ims-configuration).
+Per esportare frammenti di esperienza e/o di contenuto in Target, è necessaria la [configurazione Adobe Target](#create-configuration), inclusa l&#39;[integrazione IMS](#ims-configuration).
 
 >[!NOTE]
 >
@@ -39,13 +39,13 @@ Per esportare frammenti di esperienza e/o di contenuto in Target, è necessario 
 
 ### Configurazione IMS {#ims-configuration}
 
-L’integrazione di AEM con Adobe Target tramite l’API di Target Standard richiede la configurazione di Adobe IMS (Identity Management System). È necessario creare la configurazione IMS di Target (dopo il provisioning di Target). Consulta [Configurazione delle integrazioni IMS per AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) e il video [Integrazione di Experience Platform Launch e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it) per scoprire come creare la configurazione IMS di Target.
+L’integrazione di AEM con Adobe Target tramite l’API di Target Standard richiede la configurazione di Adobe IMS (Identity Management System). È necessario creare la configurazione IMS di Target (dopo il provisioning di Target). Consulta [Configurazione delle integrazioni IMS per AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) e il video [Integrazione del Experience Platform Launch e dell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it) per scoprire come creare la configurazione IMS di Target.
 
 >[!NOTE]
 >
->[Le integrazioni IMS ora sono configurate con OAuth S2S](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>[Le integrazioni IMS sono ora configurate con OAuth S2S](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
 >
->Le configurazioni precedenti sono state effettuate con [Credenziali JWT ora obsolete nella console Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Le configurazioni precedenti sono state create con [credenziali JWT che ora sono soggette a deprecazione in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ Una proprietà è un contenitore con estensioni, regole ed elementi dati.
 Le **Estensioni** sono il contenitore che gestisce le impostazioni della libreria principale. L’estensione Adobe Target supporta implementazioni lato client tramite l’SDK JavaScript di Target per web morderno, at.js. Aggiungi entrambe le estensioni **Adobe Target** e **Adobe ContextHub**.
 
 1. Seleziona l’opzione Catalogo estensioni e cerca Target nel filtro.
-2. Seleziona **Adobe Target** at.js e fai clic sull’opzione Installa.
+2. Seleziona **Adobe Target** at.js e fai clic sull&#39;opzione Installa.
    ![Ricerca Target](assets/search_ext1.png "Ricerca Target")
 3. Seleziona il pulsante **Configura**. Osserva la finestra di configurazione con le credenziali dell’account Target importate e la versione at.js per questa estensione.
 4. Seleziona **Salva** per aggiungere l’estensione Target alla proprietà Launch. Dovresti essere in grado di visualizzare l’estensione Target elencata nell’elenco **Estensioni installate**.

@@ -114,7 +114,7 @@ Puoi anche creare versioni dalla timeline delle versioni. Seleziona la versione 
 
 **Autorizzazioni richieste:** `Can Edit`, `Owner` o le autorizzazioni di amministratore per una risorsa.
 
-La vista Risorse consente di impostare lo stato delle risorse disponibili nell’archivio. Imposta lo stato di una risorsa per gestire meglio il consumo a valle di risorse digitali.
+La vista Assets consente di impostare lo stato delle risorse disponibili nell’archivio. Imposta lo stato di una risorsa per gestire meglio il consumo a valle di risorse digitali.
 
 Puoi assegnare alle risorse i seguenti stati:
 
@@ -130,14 +130,14 @@ Per impostare lo stato di una risorsa:
 
 1. Seleziona la risorsa e fai clic su **[!UICONTROL Dettagli]** nella barra degli strumenti.
 
-1. In **[!UICONTROL Base]** , seleziona lo stato della risorsa dalla scheda **[!UICONTROL Stato]** elenco a discesa. I valori possibili sono Approvato, Rifiutato e Nessuno stato (impostazione predefinita).
+1. Nella scheda **[!UICONTROL Base]**, seleziona lo stato della risorsa dall&#39;elenco a discesa **[!UICONTROL Stato]**. I valori possibili sono Approvato, Rifiutato e Nessuno stato (impostazione predefinita).
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
 
 ### Impostare la data di scadenza di una risorsa {#set-asset-expiration-date}
 
-La vista Risorse consente inoltre di impostare la data di scadenza delle risorse disponibili nell’archivio. È quindi possibile [filtrare i risultati della ricerca](search-assets-view.md#refine-search-results) in base allo stato `Expired` delle risorse. Inoltre, è possibile specificare un intervallo di date di scadenza per le risorse per filtrare ulteriormente i risultati della ricerca.
+La vista Assets consente inoltre di impostare la data di scadenza delle risorse disponibili nell’archivio. È quindi possibile [filtrare i risultati della ricerca](search-assets-view.md#refine-search-results) in base allo stato `Expired` delle risorse. Inoltre, è possibile specificare un intervallo di date di scadenza per le risorse per filtrare ulteriormente i risultati della ricerca.
 
 Per impostare la data di scadenza di una risorsa:
 
@@ -147,13 +147,13 @@ Per impostare la data di scadenza di una risorsa:
 
 L’indicatore `Expired` nella scheda delle risorse sostituisce l’indicatore `Approved` o `Rejected` impostato per una risorsa.
 
-Per ulteriori informazioni, consulta la sezione su come filtrare le risorse in base allo stato [Cercare le risorse nella vista Risorse](search-assets-view.md).
+Puoi anche filtrare le risorse in base allo stato. Per ulteriori informazioni, consulta [Cercare le risorse nella vista Assets](search-assets-view.md).
 
 ## Personalizzare i moduli di metadati per includere il campo dello stato delle risorse {#customize-asset-status-metadata-form}
 
 **Autorizzazioni richieste:** Amministratore
 
-La vista Risorse fornisce molti campi di metadati standard per impostazione predefinita. Spesso le organizzazioni hanno l’esigenza di aggiungere altri metadati, specifici per l’azienda. I moduli di metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina [!UICONTROL Dettagli] di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse.
+La vista Assets fornisce molti campi di metadati standard per impostazione predefinita. Spesso le organizzazioni hanno l’esigenza di aggiungere altri metadati, specifici per l’azienda. I moduli di metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina [!UICONTROL Dettagli] di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse.
 
 Per ulteriori informazioni su come aggiungere ulteriori campi di metadati al modulo, consulta [Moduli di metadati](metadata-assets-view.md#metadata-forms).
 
@@ -167,7 +167,7 @@ Per aggiungere al modulo il campo di metadati Data di scadenza, trascina nel mod
 
 ## Passaggi successivi {#next-steps}
 
-* [Guarda un video per gestire le risorse nella vista Risorse](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets-essentials/basics/managing)
+* [Guarda un video per gestire le risorse nella visualizzazione Assets](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets-essentials/basics/managing)
 
 * Fornisci feedback sui prodotti utilizzando l’opzione [!UICONTROL Feedback] disponibile nell’interfaccia utente della vista Risorse
 

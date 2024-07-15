@@ -6,15 +6,15 @@ role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 92%
+source-wordcount: '1520'
+ht-degree: 100%
 
 ---
 
 
 # Assegnazione dei membri del gruppo ai profili di prodotto di Cloud Manager {#assign-team-members}
 
-In questa parte del [percorso di onboarding,](overview.md) scopri come assegnare i membri del gruppo ai profili di prodotto di Cloud Manager.
+In questa sezione del [percorso di onboarding](overview.md) scoprirai come assegnare i membri del gruppo ai profili di prodotto di Cloud Manager.
 
 ## Obiettivo {#objective}
 
@@ -33,7 +33,7 @@ Dopo aver letto questo documento, dovresti:
 
 ## Prerequisiti {#prerequisites}
 
-Per assegnare i membri del gruppo ai profili di prodotto, devi disporre dei dettagli dei membri del gruppo che devono accedere a AEM as a Cloud Service, tra cui:
+Per assegnare i membri del gruppo ai profili di prodotto, devi disporre dei dettagli dei membri del gruppo che devono accedere ad AEM as a Cloud Service, tra cui:
 
 * Nomi
 * Indirizzi e-mail
@@ -73,7 +73,7 @@ Tramite Admin Console è possibile visualizzare l’elenco dei profili di Cloud 
 
    ![Cloud Manager](/help/journey-onboarding/assets/assign-team2.png)
 
-1. Puoi visualizzare l’elenco dei profili di prodotto preconfigurati di Cloud Manager.
+1. Viene visualizzato l’elenco dei profili di prodotto preconfigurati per Cloud Manager.
 
    ![Profili di prodotto](/help/journey-onboarding/assets/assign-team3.png)
 
@@ -177,11 +177,11 @@ In questa parte del percorso di onboarding hai scoperto come assegnare i membri 
 * Conoscere i tre importanti profili di prodotto di Cloud Manager: **Proprietario business**, **Responsabile dell’implementazione** e **Sviluppatore**.
 * Saper assegnare i membri del gruppo ai profili di prodotto di Cloud Manager.
 
-Ora puoi continuare il percorso di onboarding passando al documento successivo [Accedere a Cloud Manager,](cloud-manager.md) dove scopri come accedere a Cloud Manager e creare le risorse del progetto.
+Ora puoi continuare il tuo percorso di onboarding passando al documento [Accesso a Cloud Manager](cloud-manager.md), dove verrà illustrato come accedere a Cloud Manager e creare le risorse del progetto.
 
 ## Risorse aggiuntive {#additional-resources}
 
-È consigliabile continuare il percorso di onboarding come descritto in precedenza. Queste sono alcune risorse aggiuntive utili per approfondire un argomento specifico di questo percorso.
+È consigliabile continuare il percorso di onboarding nel modo descritto in precedenza. Queste sono alcune risorse aggiuntive utili se desideri approfondire un particolare argomento di questo percorso.
 
 * [Introduzione a Cloud Manager](/help/onboarding/cloud-manager-introduction.md): informazioni su Cloud Manager, i programmi e gli ambienti di Cloud Manager.
 * [Profili di prodotto di Cloud Manager](/help/onboarding/aem-cs-team-product-profiles.md): informazioni su team e profili di prodotto di AEM as a Cloud Service.

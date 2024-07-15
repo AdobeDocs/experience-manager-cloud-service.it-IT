@@ -36,7 +36,7 @@ Per creare contenuti per un’app utilizzando l’editor universale, l’app dev
 
 ## Accedi {#sign-in}
 
-Dopo aver instrumentato l’app per l’utilizzo dell’editor universale, accedi all’editor universale. È necessario un Adobe ID per accedere e [accedere all’editor universale.](getting-started.md#request-access)
+Dopo aver instrumentato l’app per l’utilizzo dell’editor universale, accedi all’editor universale. Per accedere è necessario un Adobe ID e [accedere all&#39;editor universale.](getting-started.md#request-access)
 
 Dopo aver effettuato l’accesso, immetti l’URL della pagina da modificare nella [barra degli indirizzi.](#location-bar) in modo da poter iniziare a modificare i contenuti, come [contenuto testo](#text-mode) o il [contenuto multimediale.](#media-mode)
 
@@ -95,9 +95,9 @@ Seleziona l’icona che rappresenta l’utente per accedere alle impostazioni ut
 
 ### Barra degli strumenti Editor universale {#universal-editor-toolbar}
 
-La barra degli strumenti di Universal Editor è sempre presente nella parte superiore dello schermo immediatamente sotto [l’intestazione dell’Experience Cloud.](#experience-cloud-header) Consente un accesso rapido per passare a un’altra pagina di modifica e di pubblicazione della pagina corrente.
+La barra degli strumenti di Universal Editor è sempre presente nella parte superiore dello schermo immediatamente sotto [ l&#39;intestazione dell&#39;Experience Cloud.](#experience-cloud-header) Consente un accesso rapido per passare a un’altra pagina di modifica e di pubblicazione della pagina corrente.
 
-![Barra degli strumenti Editor universale](assets/universal-editor-toolbar.png)
+![Barra degli strumenti di Universal Editor](assets/universal-editor-toolbar.png)
 
 #### Pulsante Home {#home-button}
 
@@ -111,7 +111,7 @@ Nella pagina iniziale è possibile immettere l&#39;URL del sito che si desidera 
 
 >[!NOTE]
 >
->Qualsiasi pagina che desideri modificare con Universal Editor deve essere [dotato di strumenti per supportare Universal Editor.](getting-started.md)
+>Qualsiasi pagina che si desidera modificare con l&#39;editor universale deve essere [dotata di strumenti per supportare l&#39;editor universale.](getting-started.md)
 
 #### Barra della posizione {#location-bar}
 
@@ -125,11 +125,11 @@ La barra della posizione mostra l’indirizzo della pagina che stai modificando.
 
 >[!NOTE]
 >
->Qualsiasi pagina che desideri modificare con Universal Editor deve essere [dotato di strumenti per supportare Universal Editor.](getting-started.md)
+>Qualsiasi pagina che si desidera modificare con l&#39;editor universale deve essere [dotata di strumenti per supportare l&#39;editor universale.](getting-started.md)
 
 #### Impostazioni intestazione autenticazione {#authentication-settings}
 
-Se necessario, seleziona l’icona delle impostazioni dell’intestazione di autenticazione [imposta un’intestazione di autenticazione personalizzata a scopo di sviluppo locale.](/help/implementing/universal-editor/developer-overview.md#auth-header)
+Se devi [impostare un&#39;intestazione di autenticazione personalizzata a scopo di sviluppo locale, seleziona l&#39;icona delle impostazioni dell&#39;intestazione di autenticazione.](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![Pulsante Impostazioni intestazione autenticazione](assets/authentication-header-settings.png)
 
@@ -159,7 +159,7 @@ In modalità anteprima, la pagina viene riprodotta nell’editor come verrebbe v
 
 >[!TIP]
 >
->Utilizza il tasto di scelta rapida `P` per attivare e disattivare la modalità anteprima.
+>Utilizzare il tasto di scelta rapida `P` per passare alla modalità anteprima e viceversa.
 
 #### Apri anteprima app {#open-app-preview}
 
@@ -179,7 +179,7 @@ Seleziona il pulsante Pubblica per pubblicare le modifiche al contenuto live per
 
 >[!TIP]
 >
->Consulta il documento [Pubblicazione di contenuti con l’editor universale](publishing.md) per ulteriori informazioni sulla pubblicazione con Universal Editor.
+>Per ulteriori informazioni sulla pubblicazione con Universal Editor, vedere il documento [Pubblicazione di contenuti con Universal Editor](publishing.md).
 
 ### L’editor {#editor}
 
@@ -187,7 +187,7 @@ L’editor occupa la maggior parte della finestra ed è l’area in cui viene es
 
 ![Editor](assets/editor.png)
 
-Se l’editor è in [modalità anteprima,](#preview-mode) il contenuto sarà navigabile e potrai seguire i collegamenti, ma non puoi modificarlo.
+Se l&#39;editor è in modalità [anteprima,](#preview-mode) il contenuto sarà navigabile e puoi seguire i collegamenti, ma non puoi modificarlo.
 
 ### Barra delle proprietà {#properties-rail}
 
@@ -231,7 +231,7 @@ Durante la modifica, le opzioni per il componente selezionato vengono visualizza
 
 ![Icona Modifica](assets/edit.png)
 
-Toccando o facendo clic sul pulsante di modifica si apre [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in una nuova scheda. Questo consente di accedere a tutte le funzionalità dell’Editor frammento di contenuto per modificare il frammento di contenuto associato.
+Toccando o facendo clic sul pulsante Modifica si apre l&#39;[Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in una nuova scheda. Questo consente di accedere a tutte le funzionalità dell’Editor frammento di contenuto per modificare il frammento di contenuto associato.
 
 A seconda delle esigenze del flusso di lavoro, può essere utile modificare il frammento di contenuto nell’editor universale o direttamente nell’editor frammento di contenuto.
 
@@ -245,25 +245,25 @@ Se selezioni un componente contenitore nella struttura del contenuto o nell’ed
 
 ![Icona Aggiungi](assets/ue-add-component-icon.png)
 
-Toccando o facendo clic sul pulsante Aggiungi si apre un menu a discesa dei componenti disponibili per [aggiungi al contenitore selezionato.](#adding-components)
+Toccando o facendo clic sul pulsante Aggiungi si apre un menu a discesa dei componenti disponibili per [aggiungere al contenitore selezionato.](#adding-components)
 
 ![Aggiungi menu di scelta rapida](assets/add-context-menu.png)
 
 >[!TIP]
 >
->Utilizza il tasto di scelta rapida `A` per aggiungere un componente a un componente contenitore selezionato.
+>Utilizzare il tasto di scelta rapida `A` per aggiungere un componente a un componente contenitore selezionato.
 
-##### Eliminare {#delete}
+##### Elimina {#delete}
 
 Se selezioni un componente all’interno di un componente contenitore nella struttura del contenuto o nell’editor, l’opzione Elimina viene visualizzata nella barra delle proprietà.
 
 ![Icona Elimina](assets/ue-delete-component-icon.png)
 
-Toccando o facendo clic sul pulsante Elimina [elimina il componente.](#deleting-components)
+Toccando o facendo clic sul pulsante Elimina [il componente viene eliminato.](#deleting-components)
 
 >[!TIP]
 >
->Utilizza il tasto di scelta rapida `Shift+Backspace` per eliminare un componente selezionato da un contenitore.
+>Utilizzare il tasto di scelta rapida `Shift+Backspace` per eliminare un componente selezionato da un contenitore.
 
 ## Modifica del contenuto {#editing-content}
 
@@ -273,9 +273,9 @@ La modifica del contenuto è semplice e intuitiva. Quando passi il mouse sul con
 
 >[!TIP]
 >
->Per impostazione predefinita, tocca o fai clic sul contenuto per selezionarlo per la modifica. Se desideri navigare nel contenuto seguendo i collegamenti, passa a [modalità anteprima.](#preview-mode)
+>Per impostazione predefinita, tocca o fai clic sul contenuto per selezionarlo per la modifica. Se desideri esplorare il contenuto tramite i seguenti collegamenti, passa alla modalità di anteprima [.](#preview-mode)
 
-A seconda del contenuto selezionato, è possibile che siano disponibili diverse opzioni di modifica diretta e che siano disponibili ulteriori informazioni e opzioni per il contenuto nel [barra delle proprietà.](#properties-rail)
+A seconda del contenuto selezionato, è possibile che siano disponibili diverse opzioni di modifica diretta e che siano disponibili ulteriori informazioni e opzioni per il contenuto nella barra delle proprietà di [.](#properties-rail)
 
 ### Modifica del testo normale {#edit-plain-text}
 
@@ -300,7 +300,7 @@ Per modificare il testo nella posizione desiderata, fai doppio clic o tocca due 
 Per comodità, le opzioni di formattazione e i dettagli del testo sono disponibili in due posizioni.
 
 * Il **menu di scelta rapida** si apre sopra il blocco di testo RTF e offre opzioni di formattazione di base nel contesto. A causa di limiti di spazio, alcune opzioni potrebbero essere nascoste dietro il pulsante con i puntini di sospensione.
-* Il **barra delle proprietà** mostra tutte le opzioni di formattazione disponibili insieme al testo.
+* La barra delle proprietà **** mostra tutte le opzioni di formattazione disponibili insieme al testo.
 
 Le modifiche vengono salvate automaticamente quando lo stato attivo lascia il campo modificato.
 
@@ -308,10 +308,10 @@ Le modifiche vengono salvate automaticamente quando lo stato attivo lascia il ca
 
 Puoi visualizzarne i dettagli nella barra delle proprietà.
 
-![Editing di file multimediali](assets/ue-edit-media.png)
+![Modifica dei file multimediali](assets/ue-edit-media.png)
 
 1. Tocca o fai clic sull’anteprima dell’immagine selezionata nella barra delle proprietà.
-1. Il [selettore risorse](/help/assets/asset-selector.md#using-asset-selector) viene visualizzata una finestra che consente di selezionare una risorsa.
+1. Viene visualizzata la finestra [selettore risorse](/help/assets/asset-selector.md#using-asset-selector) che consente di selezionare una risorsa.
 1. Seleziona per selezionare una nuova risorsa.
 1. Seleziona **Seleziona** per tornare alla barra delle proprietà in cui è stata sostituita la risorsa.
 
@@ -319,7 +319,7 @@ Le modifiche vengono salvate automaticamente nel contenuto.
 
 ### Modifica di frammenti di contenuto {#edit-content-fragment}
 
-Se si seleziona un [Frammento di contenuto,](/help/sites-cloud/administering/content-fragments/overview.md) puoi modificarne i dettagli nella barra delle proprietà.
+Se selezioni un [frammento di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) puoi modificarne i dettagli nella barra delle proprietà.
 
 ![Modifica di un frammento di contenuto](assets/ue-edit-cf.png)
 
@@ -329,7 +329,7 @@ Se selezioni un campo correlato a un frammento di contenuto, il frammento di con
 
 Le modifiche vengono salvate automaticamente una volta che lo stato attivo lascia il campo modificato nella barra delle proprietà.
 
-Se desideri modificare il frammento di contenuto in [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md) invece, fai clic su [pulsante modifica](#edit) nella barra delle modalità.
+Se invece desideri modificare il frammento di contenuto nell&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), fai clic sul [pulsante di modifica](#edit) nella barra delle modalità.
 
 A seconda delle esigenze del flusso di lavoro, può essere utile modificare il frammento di contenuto nell’editor universale o direttamente nell’editor frammento di contenuto.
 
@@ -344,7 +344,7 @@ Il componente viene inserito nel contenitore e può essere modificato nell’edi
 
 >[!TIP]
 >
->Utilizza il tasto di scelta rapida `A` per aggiungere un componente al contenitore selezionato.
+>Utilizzare il tasto di scelta rapida `A` per aggiungere un componente al contenitore selezionato.
 
 ### Eliminazione di componenti dai contenitori {#deleting-components}
 
@@ -359,12 +359,12 @@ Il componente selezionato è stato eliminato.
 
 >[!TIP]
 >
->Utilizza il tasto di scelta rapida `Shift+Backspace` per eliminare il componente selezionato dal relativo contenitore.
+>Utilizzare il tasto di scelta rapida `Shift+Backspace` per eliminare il componente selezionato dal relativo contenitore.
 
 ### Riordinamento dei componenti nei contenitori {#reordering-components}
 
 1. Seleziona un componente contenitore nella struttura del contenuto o nell’editor.
-1. Se non è già in [modalità struttura contenuto,](#content-tree-mode) passa ad esso.
+1. Se non è già in modalità [struttura contenuto,](#content-tree-mode) passa alla struttura.
 1. Seleziona l’icona della freccia del contenitore per espanderne il contenuto nella struttura del contenuto.
 1. Trascina le icone delle maniglie accanto ai componenti all’interno del contenitore per mostrare che puoi riorganizzarli. Trascina i componenti per riordinarli all’interno del contenitore.
 
@@ -378,10 +378,10 @@ I componenti vengono riordinati sia nella struttura del contenuto che nell’edi
 
 Quando hai finito di modificare il contenuto, spesso desideri navigare in esso per vedere come si presenta nel contenuto di altre pagine. In [modalità anteprima](#preview-mode) puoi fare clic sui collegamenti per navigare nel contenuto come farebbe un lettore. Il contenuto viene riprodotto nell’editor così come verrebbe pubblicato.
 
-In modalità anteprima, toccando o facendo clic sul contenuto si reagisce come se si trattasse di un normale lettore. Se desideri selezionare il contenuto da modificare, disattiva da [modalità anteprima.](#preview-mode)
+In modalità anteprima, toccando o facendo clic sul contenuto si reagisce come se si trattasse di un normale lettore. Se si desidera selezionare il contenuto da modificare, uscire dalla modalità di anteprima [.](#preview-mode)
 
 ## Risorse aggiuntive {#additional-resources}
 
 Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
-* [Pubblicazione di contenuti con l’editor universale](publishing.md) - Scopri come l’Editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
+* [Pubblicazione di contenuti con l&#39;editor universale](publishing.md) - Scopri come l&#39;editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.

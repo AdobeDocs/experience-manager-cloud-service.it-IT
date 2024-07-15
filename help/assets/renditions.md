@@ -33,32 +33,32 @@ Questi rendering consentono alle organizzazioni di fornire esperienze personaliz
 
 * Devi essere un utente con licenza di AEM Dynamic Medie.
 
-* Utilizzare [!UICONTROL Visualizzazione amministratore] per impostare:
+* Utilizza [!UICONTROL Visualizzazione amministratore] per configurare:
    * [Profili immagine ritaglio avanzato](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
    * [Predefiniti immagine](/help/assets/dynamic-media/managing-image-presets.md)
 
-  È possibile [cambiare visualizzazione](/help/assets/assets-view-introduction.md#how-to-access-assets-view) per visualizzare in anteprima le rappresentazioni dinamiche nella vista Risorse.
+  È possibile [cambiare la visualizzazione](/help/assets/assets-view-introduction.md#how-to-access-assets-view) in un secondo momento per visualizzare in anteprima le rappresentazioni dinamiche nella visualizzazione Assets.
 
 ### Visualizzare e scaricare le rappresentazioni dinamiche {#view-renditions}
 
-Per visualizzare o scaricare rappresentazioni dinamiche di immagini in [!DNL Experience Manager Assets], effettua le seguenti operazioni:
+Per visualizzare o scaricare le rappresentazioni dinamiche delle immagini in [!DNL Experience Manager Assets], eseguire la procedura seguente:
 
-1. Vai a **[!UICONTROL Gestione risorse]** > **[!UICONTROL Risorse]**.
+1. Vai a **[!UICONTROL Gestione Assets]** > **[!UICONTROL Assets]**.
 
 1. Passa alla cartella delle risorse applicabile.
 
-1. Fai clic sull’immagine da visualizzare e fai clic su **[!UICONTROL Dettagli]**.
+1. Fai clic sull&#39;immagine da visualizzare e fai clic su **[!UICONTROL Dettagli]**.
 
-1. Nel menu di destra, fai clic su **[!UICONTROL Rappresentazioni]**. <br> Il **[!UICONTROL Rappresentazioni]** viene aperto con il **[!UICONTROL Dinamico]** e **[!UICONTROL Ritaglio avanzato]** copie trasformate.
+1. Nel menu di destra, fai clic su **[!UICONTROL Rappresentazioni]**. <br> Il pannello **[!UICONTROL Rappresentazioni]** si apre con le rappresentazioni disponibili **[!UICONTROL Dinamiche]** e **[!UICONTROL Ritaglio avanzato]**.
 
    ![rappresentazioni dinamiche](assets/preset_smart_crop.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. Fai clic sulla rappresentazione da visualizzare o scaricare.
 
-1. Fai clic su ![icona di download](assets/do-not-localize/download-icon.png) accanto alla rappresentazione dinamica da scaricare. <br> In alternativa, è possibile selezionare la rappresentazione dell&#39;immagine e fare clic su **[!UICONTROL Scarica rappresentazione]** nella parte inferiore.
+1. Fai clic sull&#39;icona ![scarica](assets/do-not-localize/download-icon.png) accanto al rendering dinamico da scaricare. <br> In alternativa, è possibile selezionare la rappresentazione dell&#39;immagine e fare clic sull&#39;opzione **[!UICONTROL Scarica rappresentazione]** nella parte inferiore.
 
-   Puoi fare clic su ![icona di download](assets/do-not-localize/download-icon.png) icona disponibile nella parte superiore di **[!UICONTROL Ritaglio avanzato]** per scaricare tutte le rappresentazioni di ritaglio avanzato disponibili per tale risorsa.
+   Puoi fare clic sull&#39;icona ![scarica](assets/do-not-localize/download-icon.png) disponibile nella parte superiore della sezione **[!UICONTROL Ritaglio avanzato]** per scaricare tutte le rappresentazioni di Ritaglio avanzato disponibili per tale risorsa.
 
 >[!NOTE]
 >

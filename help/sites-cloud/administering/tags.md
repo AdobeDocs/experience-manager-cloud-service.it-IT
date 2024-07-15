@@ -19,13 +19,13 @@ I tag sono un metodo intuitivo per classificare il contenuto. Possono essere con
 In Adobe Experience Manager (AEM), un tag può essere una proprietà di:
 
 * Un nodo di contenuto per una pagina
-   * Consulta il documento [Utilizzo dei tag](/help/sites-cloud/authoring/sites-console/tags.md) per ulteriori informazioni.
+   * Per ulteriori informazioni, vedere il documento [Utilizzo dei tag](/help/sites-cloud/authoring/sites-console/tags.md).
 * Un nodo di metadati per una risorsa
-   * Consulta il documento [Gestione dei metadati per le risorse digitali](/help/assets/manage-metadata.md) per ulteriori informazioni.
+   * Per ulteriori informazioni, vedere il documento [Gestione dei metadati per Digital Assets](/help/assets/manage-metadata.md).
 
 >[!TIP]
 >
->È consigliabile ridurre al minimo il numero di tag relativi alle stesse idee. Ad esempio, se gestisci i contenuti per un negozio di alimentari all&#39;aperto, probabilmente non avrai bisogno di un tag per entrambi **calzature** e **scarpe**.
+>È consigliabile ridurre al minimo il numero di tag relativi alle stesse idee. Ad esempio, se gestisci contenuti per un negozio di articoli all&#39;aperto, probabilmente non avrai bisogno di un tag per **scarpe** e **scarpe**.
 
 ## Funzioni tag {#tag-features}
 
@@ -36,7 +36,7 @@ I tag offrono funzioni affidabili per organizzare e gestire i contenuti.
    * Queste tassonomie sono globali in tutta l&#39;AEM.
 * I tag possono essere applicati dagli autori e utilizzati dai visitatori del sito.
 * Indipendentemente dall’autore, tutte le forme di tag sono disponibili per la selezione, sia durante l’assegnazione a una pagina che durante la ricerca.
-* I tag vengono utilizzati da [Componente Elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) per generare elenchi dinamici in base ai tag selezionati.
+* I tag vengono utilizzati dal [componente Elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) per generare elenchi dinamici in base ai tag selezionati.
 
 ## Requisiti dei tag {#requirements}
 
@@ -44,10 +44,10 @@ Sono disponibili alcuni dettagli tecnici da tenere a mente durante la creazione 
 
 * I tag devono essere univoci all’interno di uno spazio dei nomi specifico.
 * Il nome di un tag non può includere delimitatori di tag:
-   * Due punti (`:`) - Delimita il tag namespace
+   * Due punti (`:`) - Delimita il tag dello spazio dei nomi
    * Barra (`/`) - Delimita i tag secondari
 * Se il titolo di un tag include delimitatori di tag, questi verranno eliminati nell’interfaccia utente.
-* I tag possono essere creati e la loro tassonomia può essere modificata dai membri del `tag-administrators` gruppo e membri con diritti di modifica per `/content/cq:tags`.
+* I tag possono essere creati e la relativa tassonomia può essere modificata dai membri del gruppo `tag-administrators` e dai membri con diritti di modifica per `/content/cq:tags`.
    * Un tag che contiene tag figlio viene definito tag contenitore.
    * Un tag che non è un tag contenitore viene definito tag foglia.
    * Uno spazio dei nomi dei tag può essere un tag foglia o un tag contenitore.
@@ -65,57 +65,57 @@ La console dei tag consente di creare e gestire i tag e le relative tassonomie. 
 Per accedere alla console dei tag:
 
 1. Accedi a un ambiente di authoring con privilegi di amministratore.
-1. Nel menu di navigazione globale seleziona **`Tools`** > **`General`** >
+1. Nel menu di navigazione globale selezionare **`Tools`** > **`General`** >
    **`Tagging`**.
 
-![Console sui tag in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
+![Console di assegnazione tag in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
 
 ## Creazione di nuovi tag {#creating-new-tags}
 
 Esistono diversi passaggi per creare e utilizzare i tag per organizzare i contenuti.
 
-1. [Creare uno spazio dei nomi per i tag](#creating-namespaces) (o sceglierne uno esistente da riutilizzare).
+1. [Crea uno spazio dei nomi per i tag](#creating-namespaces) (o scegline uno esistente da riutilizzare).
 1. [Crea un nuovo tag.](#creating-tags)
-1. [Pubblica il tag.](#publishing-tags)
+1. [Publish il tag.](#publishing-tags)
 
 ### Creazione di spazi dei nomi {#creating-namespaces}
 
 Per organizzare altri tag viene utilizzato uno spazio dei nomi. Può essere considerato come il tag di livello più basso e viene in genere utilizzato per raggruppare altri tag.
 
-1. Per creare uno spazio dei nomi, apri [console di assegnazione tag](#tagging-console) e seleziona la **Crea** nella barra degli strumenti e quindi **Crea spazio dei nomi**.
+1. Per creare uno spazio dei nomi, apri la [console di assegnazione tag](#tagging-console) e seleziona il pulsante **Crea** nella barra degli strumenti, quindi **Crea spazio dei nomi**.
 
    ![Finestra di dialogo Aggiungi spazio dei nomi](/help/sites-cloud/administering/assets/add-namespace.png)
 
 1. Fornisci le informazioni necessarie.
 
-   * **Titolo** - Titolo dello spazio dei nomi visualizzato dall’utente nell’interfaccia utente (facoltativo)
-   * **Nome** - Se non viene specificato alcun nome, viene creato un nome di nodo valido dalla **Titolo**. Consulta il documento [Framework di assegnazione tag AEM](/help/implementing/developing/introduction/tagging-framework.md#tagid) per ulteriori informazioni.
+   * **Titolo** - Titolo per lo spazio dei nomi visualizzato nell&#39;interfaccia utente (facoltativo)
+   * **Nome** - Se non viene specificato un nome, viene creato un nome di nodo valido dal **Titolo**. Per ulteriori informazioni, consulta il documento [Framework di assegnazione tag AEM](/help/implementing/developing/introduction/tagging-framework.md#tagid).
    * **Descrizione** - Descrizione dello spazio dei nomi (facoltativo)
 
-1. Una volta inserite le informazioni richieste, seleziona **Crea**.
+1. Una volta immesse le informazioni richieste, seleziona **Crea**.
 
 Viene creato lo spazio dei nomi. Nella console dei tag, gli spazi dei nomi si trovano al livello più basso (nella colonna all’estrema sinistra della console) e sono rappresentati da icone di cartelle, che riflettono la loro natura di &quot;contenitore&quot; o raggruppamento di altri tag.
 
-Ora puoi [creare nuovi tag](#creating-tags) in questo spazio dei nomi o [gestisci i tag esistenti.](#managing-tags)
+Ora puoi [creare nuovi tag](#creating-tags) in questo spazio dei nomi o [gestire i tag esistenti.](#managing-tags)
 
-Uno spazio dei nomi non deve necessariamente contenere tag secondari. Poiché uno spazio dei nomi è di per sé un tag, può essere utilizzato per organizzare il contenuto come qualsiasi altro tag. Tuttavia, per continuare a creare una tassonomia dei tag strutturata, è possibile [crea tag secondari](#creating-tags) in quello spazio dei nomi in base ai requisiti del progetto.
+Uno spazio dei nomi non deve necessariamente contenere tag secondari. Poiché uno spazio dei nomi è di per sé un tag, può essere utilizzato per organizzare il contenuto come qualsiasi altro tag. Tuttavia, per continuare a creare una tassonomia dei tag strutturata, puoi [creare tag secondari](#creating-tags) all&#39;interno di tale spazio dei nomi in base ai requisiti del progetto.
 
 ### Creazione di tag {#creating-tags}
 
 I tag vengono generalmente aggiunti agli spazi dei nomi.
 
-1. Per creare un tag, apri [console di assegnazione tag.](#tagging-console)
+1. Per creare un tag, apri la [console di assegnazione tag.](#tagging-console)
 
 1. Seleziona lo spazio dei nomi in cui desideri creare il tag. In alternativa, seleziona un altro tag per creare un tag secondario al di sotto di esso.
 
-1. Seleziona la **Crea** sulla barra degli strumenti e quindi **Crea tag**.
+1. Selezionare il pulsante **Crea** sulla barra degli strumenti e quindi **Crea tag**.
 
-1. Il **Crea tag** viene visualizzata una finestra di dialogo. Fornisci le informazioni richieste per il nuovo tag.
+1. Viene visualizzata la finestra di dialogo **Crea tag**. Fornisci le informazioni richieste per il nuovo tag.
 
-   * **Titolo** - Titolo da visualizzare per il tag (obbligatorio)
-   * **Nome** - Nome del tag (obbligatorio). Se non viene specificato, viene creato un nome di nodo valido dal **Titolo**. Consulta [TagID](/help/implementing/developing/introduction/tagging-framework.md#tagid).
-   * **Descrizione** - Una descrizione del tag
-   * **Percorso tag** : viene impostato automaticamente sullo spazio dei nomi (o tag) selezionato nella console di assegnazione tag. Per aggiornare manualmente questo valore, tocca o fai clic sull’icona del selettore del percorso.
+   * **Titolo** - Titolo visualizzato per il tag (obbligatorio)
+   * **Nome** - Nome del tag (obbligatorio). Se non viene specificato, verrà creato un nome di nodo valido dal **Titolo**. Vedi [TagID](/help/implementing/developing/introduction/tagging-framework.md#tagid).
+   * **Descrizione** - Descrizione del tag
+   * **Percorso tag**: lo spazio dei nomi (o tag) selezionato nella console di assegnazione tag viene impostato automaticamente. Per aggiornare manualmente questo valore, tocca o fai clic sull’icona del selettore del percorso.
 
    ![Finestra di dialogo Crea tag](assets/create-tag.png)
 
@@ -132,23 +132,23 @@ I tag consentono di creare in modo flessibile la propria tassonomia in base alle
 
 Come per la creazione di qualsiasi altro contenuto in AEM, dopo aver creato un tag (o namespace), questo esiste solo nell’ambiente di authoring. Affinché i tag siano disponibili per gli utenti, devi pubblicarli.
 
-1. Per pubblicare un tag, apri [console di assegnazione tag.](#tagging-console)
+1. Per pubblicare un tag, apri la [console di assegnazione tag.](#tagging-console)
 
-1. Seleziona il tag o i tag da pubblicare e, nella barra degli strumenti, seleziona **Pubblica**.
+1. Selezionare il tag o i tag da pubblicare e nella barra degli strumenti selezionare **Publish**.
 
-   ![Selezione dei tag nella console](assets/select-tags.png)
+   ![Selezione di tag nella console](assets/select-tags.png)
 
-1. Il **Pubblica tag** richiede una conferma per la pubblicazione dei tag selezionati. Seleziona **Pubblica**.
+1. La finestra di dialogo **Tag Publish** richiede una conferma per la pubblicazione dei tag selezionati. Seleziona **Pubblica**.
 
-   ![Finestra modale di conferma del tag di pubblicazione](assets/publish-tag.png)
+   ![Il modale di conferma del tag Publish](assets/publish-tag.png)
 
-1. L’azione di pubblicazione viene confermata con un **Completato** .
+1. L&#39;azione di pubblicazione è confermata con una finestra di dialogo **Operazione riuscita**.
 
-   ![Finestra di dialogo Pubblica tag completata](assets/publish-tag-success.png)
+   ![Finestra di dialogo per il completamento del tag Publish](assets/publish-tag-success.png)
 
 I tag selezionati sono in coda per la pubblicazione. Analogamente al contenuto della pagina, vengono pubblicati solo i tag selezionati, indipendentemente dal fatto che contengano o meno tag secondari.
 
-Per pubblicare un’intera tassonomia (uno spazio dei nomi e tag secondari), la best practice prevede la creazione di un’ [pacchetto](/help/implementing/developing/tools/package-manager.md) dello spazio dei nomi (vedi [Nodo principale tassonomia](/help/implementing/developing/introduction/tagging-framework.md#taxonomy-root-node)).
+Per pubblicare un&#39;intera tassonomia (uno spazio dei nomi e tag secondari), la procedura consigliata consiste nel creare un [pacchetto](/help/implementing/developing/tools/package-manager.md) dello spazio dei nomi (vedi [Nodo principale tassonomia](/help/implementing/developing/introduction/tagging-framework.md#taxonomy-root-node)).
 
 <!--
 Be sure to [apply permissions](#setting-tag-permissions) to the namespace before creating the package.
@@ -156,7 +156,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ## Gestione dei tag {#managing-tags}
 
-Puoi eseguire diverse azioni sui tag e sugli spazi dei nomi esistenti per gestirli e organizzarli. È sufficiente selezionare un tag o uno spazio dei nomi nel [console di assegnazione tag](#tagging-console) per visualizzare nella barra degli strumenti le azioni disponibili.
+Puoi eseguire diverse azioni sui tag e sugli spazi dei nomi esistenti per gestirli e organizzarli. È sufficiente selezionare un tag o uno spazio dei nomi nella [console di assegnazione tag](#tagging-console) per visualizzare nella barra degli strumenti le azioni disponibili.
 
 * [Visualizza proprietà](#viewing-tag-properties)
 * [Modifica](#editing-tags)
@@ -164,7 +164,7 @@ Puoi eseguire diverse azioni sui tag e sugli spazi dei nomi esistenti per gestir
 * [Riferimenti](#viewing-tag-references)
 * [Spostare](#moving-tags)
 * [Unisci](#merging-tags)
-* [Eliminare](#deleting-tags)
+* [Elimina](#deleting-tags)
 
 Quando lo spazio sulla barra degli strumenti è sufficiente, dietro l’icona con i puntini di sospensione sono disponibili opzioni aggiuntive.
 
@@ -174,27 +174,27 @@ Quando nella console dei tag è selezionato un singolo tag, uno spazio dei nomi 
 
 ![Colonna dettagli tag](assets/tag-details-column.png)
 
-Per visualizzare ulteriori dettagli sul tag, tra cui chi l’ha pubblicato per ultimo e quando, passa dalla console al **Proprietà** visualizzazione.
+Per visualizzare ulteriori dettagli sul tag, tra cui chi l&#39;ha pubblicato per ultimo e quando, passa dalla console alla visualizzazione **Proprietà**.
 
-1. Per visualizzare le proprietà di un tag, apri [console di assegnazione tag.](#tagging-console)
+1. Per visualizzare le proprietà di un tag, apri la [console di assegnazione tag.](#tagging-console)
 
-1. Seleziona il tag di cui desideri visualizzare le proprietà e, nella barra a sinistra, seleziona **Proprietà**.
+1. Seleziona il tag di cui desideri visualizzare le proprietà e nella barra a sinistra seleziona **Proprietà**.
 
-   ![Selezione della vista delle proprietà](assets/view-tag-properties.png)
+   ![Selezione della visualizzazione delle proprietà](assets/view-tag-properties.png)
 
 1. Le proprietà dettagliate del tag selezionato vengono visualizzate nella barra a sinistra.
 
    ![Visualizzazione delle proprietà dei tag](assets/tag-properties.png)
 
-Per ulteriori dettagli sulla selezione delle modalità di visualizzazione e della barra, consulta [Operazioni di base](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
+Per ulteriori dettagli sulla selezione delle modalità di visualizzazione e della barra, vedere [Operazioni di base](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Modifica dei tag {#editing-tags}
 
 I tag e gli spazi dei nomi possono essere modificati dopo la creazione.
 
-1. Per modificare un tag, apri [console di assegnazione tag.](#tagging-console)
+1. Per modificare un tag, apri la [console di assegnazione tag.](#tagging-console)
 
-1. Seleziona il tag da modificare e, nella barra degli strumenti, seleziona **Modifica**.
+1. Seleziona il tag da modificare e nella barra degli strumenti seleziona **Modifica**.
 
 1. Apporta le modifiche desiderate. È possibile modificare:
 
@@ -202,45 +202,45 @@ I tag e gli spazi dei nomi possono essere modificati dopo la creazione.
    * **Descrizione**
    * [**Localizzazione**](#managing-tags-in-different-languages)
 
-1. Dopo aver apportato le modifiche, seleziona **Invia**.
+1. Dopo aver apportato le modifiche, selezionare **Invia**.
 
-Per informazioni dettagliate sull’aggiunta delle traduzioni per lingua, consulta la sezione su [Gestione dei tag in lingue diverse](#managing-tags-in-different-languages).
+Per informazioni dettagliate sull&#39;aggiunta di traduzioni per lingua, vedere la sezione relativa a [Gestione dei tag in lingue diverse](#managing-tags-in-different-languages).
 
-Se le modifiche apportate riguardano un tag già pubblicato, potrebbe essere utile [ripubblicarlo.](#publishing-tags)
+Se le modifiche apportate riguardano un tag già pubblicato, [ripubblicarlo.](#publishing-tags)
 
 ### Annullamento della pubblicazione dei tag {#unpublishing-tags}
 
 Per disattivare i tag nell’istanza di authoring e rimuoverli dall’istanza di pubblicazione, puoi annullarne la pubblicazione.
 
-1. Per annullare la pubblicazione di un tag, apri [console di assegnazione tag.](#tagging-console)
+1. Per annullare la pubblicazione di un tag, apri la [console di assegnazione tag.](#tagging-console)
 
-1. Seleziona il tag o i tag da annullare la pubblicazione e, nella barra degli strumenti, seleziona **Annulla pubblicazione**.
+1. Seleziona il tag o i tag da annullare la pubblicazione e nella barra degli strumenti seleziona **Annulla pubblicazione**.
 
-   ![Selezione dei tag nella console](assets/select-tags.png)
+   ![Selezione di tag nella console](assets/select-tags.png)
 
-1. Il **Annulla pubblicazione tag** richiede una conferma per la pubblicazione dei tag selezionati. Seleziona **Pubblica**.
+1. La finestra di dialogo **Annulla pubblicazione tag** richiede una conferma per la pubblicazione dei tag selezionati. Seleziona **Pubblica**.
 
-   ![Finestra modale di conferma del tag di pubblicazione](assets/unpublish-tag.png)
+   ![Il modale di conferma del tag Publish](assets/unpublish-tag.png)
 
-1. L’azione di annullamento della pubblicazione viene confermata con un **Completato** .
+1. L&#39;azione di annullamento della pubblicazione è confermata con una finestra di dialogo **Operazione riuscita**.
 
-   ![Finestra di dialogo Pubblica tag completata](assets/unpublish-tag-success.png)
+   ![Finestra di dialogo per il completamento del tag Publish](assets/unpublish-tag-success.png)
 
 I tag selezionati sono in coda per l&#39;annullamento della pubblicazione. Se il tag selezionato è un tag contenitore, tutti i relativi tag figlio verranno disattivati nell’ambiente di authoring e rimossi dall’ambiente di pubblicazione.
 
 ### Visualizzazione dei riferimenti dei tag {#viewing-tag-references}
 
-Può essere utile vedere a quale contenuto viene applicato un particolare tag. Per farlo, utilizza **Riferimenti** nella console dei tag.
+Può essere utile vedere a quale contenuto viene applicato un particolare tag. Puoi farlo utilizzando la visualizzazione **Riferimenti** nella console di assegnazione tag.
 
-1. Per visualizzare i riferimenti di un tag, aprite [console di assegnazione tag.](#tagging-console)
+1. Per visualizzare i riferimenti di un tag, apri la [console di assegnazione tag.](#tagging-console)
 
-1. Seleziona il tag di cui desideri visualizzare i riferimenti e, nella barra a sinistra, seleziona **Riferimenti**.
+1. Seleziona il tag di cui desideri visualizzare i riferimenti e nella barra a sinistra seleziona **Riferimenti**.
 
-   ![Selezione della vista delle proprietà](assets/view-tag-references.png)
+   ![Selezione della visualizzazione delle proprietà](assets/view-tag-references.png)
 
 1. Il numero totale di riferimenti per il tag selezionato viene visualizzato nella barra a sinistra.
 
-   ![Visualizzazione dei riferimenti di tag](assets/tag-references.png)
+   ![Visualizzazione dei riferimenti ai tag](assets/tag-references.png)
 
 1. Seleziona il numero di riferimenti tag per visualizzare l’elenco dettagliato dei contenuti assegnati al tag.
 
@@ -248,7 +248,7 @@ Può essere utile vedere a quale contenuto viene applicato un particolare tag. P
 
 Passa il mouse o seleziona un contenuto con riferimento nell’elenco per visualizzare il percorso completo del contenuto.
 
-Per ulteriori dettagli sulla selezione delle modalità di visualizzazione e della barra, consulta [Operazioni di base](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
+Per ulteriori dettagli sulla selezione delle modalità di visualizzazione e della barra, vedere [Operazioni di base](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Spostamento dei tag {#moving-tags}
 
@@ -258,16 +258,16 @@ Può essere necessario riorganizzare la tassonomia dei tag spostando un tag in u
 >
 >È consigliabile che solo gli amministratori possano spostare e rinominare i tag.
 
-1. Per spostare o rinominare un tag, aprire [console di assegnazione tag.](#tagging-console)
+1. Per spostare o rinominare un tag, aprire la console di assegnazione tag [.](#tagging-console)
 
-1. Seleziona il tag da spostare o rinominare e fai clic su **Sposta** nella barra degli strumenti.
+1. Selezionare il tag da spostare o rinominare e selezionare **Sposta** nella barra degli strumenti.
 
-1. In **Sposta tag** , specifica la proprietà da modificare.
+1. Nella finestra di dialogo **Sposta tag**, specifica la proprietà da modificare.
 
    * **Rinomina in** - Nuovo nome da assegnare al tag
       * Questo campo viene precompilato con il nome corrente del tag.
       * Lascia invariato se desideri solo spostare il tag e non rinominarlo.
-   * **Sposta in** - Posizione in cui si desidera spostare il tag
+   * **Sposta in** - Posizione in cui spostare il tag
       * Questo campo viene precompilato con la posizione corrente del tag.
       * Lascia invariato se desideri rinominare solo il tag e non spostarlo.
 
@@ -279,31 +279,31 @@ Il tag viene rinominato e/o spostato nella nuova posizione. Quando il tag selezi
 
 ### Unione di tag {#merging-tags}
 
-Se la tassonomia dei tag include duplicati o tag simili, può essere utile unirli. Quando il tag `A` viene unito nel tag `B`, tutte le pagine con tag `A` diventa taggato con tag `B` tag e `A` non è più disponibile per gli autori.
+Se la tassonomia dei tag include duplicati o tag simili, può essere utile unirli. Quando il tag `A` viene unito al tag `B`, tutte le pagine contrassegnate con il tag `A` vengono contrassegnate con il tag `B` e il tag `A` non è più disponibile per gli autori.
 
-1. Per unire due tag, apri [console di assegnazione tag.](#tagging-console)
+1. Per unire due tag, apri la [console di assegnazione tag.](#tagging-console)
 
-1. Seleziona il tag da unire in un altro tag, quindi fai clic su **Unisci** nella barra degli strumenti.
+1. Selezionare il tag da unire in un altro tag, quindi selezionare **Unisci** nella barra degli strumenti.
 
-1. In **Unisci tag** , seleziona la **Sfoglia** icona del **Unisci in** per specificare in quale tag si desidera unire il tag selezionato.
+1. Nella finestra di dialogo **Unisci tag**, seleziona l&#39;icona **Sfoglia** del campo **Unisci in** per specificare in quale tag desideri unire il tag selezionato.
 
    ![Finestra di dialogo Unisci tag](assets/merge-tag.png)
 
 1. Seleziona **Invia**.
 
-Il tag selezionato nella console viene unito al tag specificato nella finestra di dialogo. Quando un tag di riferimento viene spostato o unito, il tag non viene fisicamente eliminato in modo tale da poter mantenere i riferimenti. Consulta [Framework di assegnazione tag AEM](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) per ulteriori informazioni.
+Il tag selezionato nella console viene unito al tag specificato nella finestra di dialogo. Quando un tag di riferimento viene spostato o unito, il tag non viene fisicamente eliminato in modo tale da poter mantenere i riferimenti. Per ulteriori informazioni, vedere [Framework di assegnazione tag AEM](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags).
 
 ### Eliminazione dei tag {#deleting-tags}
 
 Se la tassonomia dei tag cambia e non è necessario specificare un tag o uno spazio dei nomi, è possibile eliminarlo.
 
-1. Per eliminare un tag, apri [console di assegnazione tag.](#tagging-console)
+1. Per eliminare un tag, apri la [console di assegnazione tag.](#tagging-console)
 
-1. Seleziona il tag da eliminare, quindi fai clic su **Elimina** nella barra degli strumenti.
+1. Selezionare il tag da eliminare, quindi selezionare **Elimina** nella barra degli strumenti.
 
-1. Il **Elimina tag** richiede una conferma per eliminare i tag selezionati. Seleziona **Elimina**.
+1. La finestra di dialogo **Elimina tag** richiede una conferma per eliminare i tag selezionati. Seleziona **Elimina**.
 
-   ![Finestra modale di conferma Elimina tag](assets/delete-tag.png)
+   ![Finestra modale di conferma eliminazione tag](assets/delete-tag.png)
 
 1. L’AEM verifica che non sia presente alcun riferimento al tag.
 
@@ -354,17 +354,17 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 ## Gestione dei tag in lingue diverse {#managing-tags-in-different-languages}
 
-Il `title` di un tag può essere tradotta in più lingue. Una volta tradotto, il titolo del tag appropriato può essere visualizzato in base all’utente o alla lingua del contenuto.
+La proprietà `title` di un tag può essere tradotta in più lingue. Una volta tradotto, il titolo del tag appropriato può essere visualizzato in base all’utente o alla lingua del contenuto.
 
 Supponiamo di avere un tag denominato `Animals` che vogliamo tradurre in tedesco e francese.
 
-1. Apri [console di assegnazione tag.](#tagging-console)
+1. Apri la console di assegnazione tag [.](#tagging-console)
 
-1. Seleziona il tag da tradurre, quindi fai clic su **Modifica** nella barra degli strumenti.
+1. Seleziona il tag da tradurre, quindi seleziona **Modifica** nella barra degli strumenti.
 
-1. In **Modifica tag** nella finestra di dialogo **Localizzazione** , selezionare la lingua di destinazione, ad esempio il tedesco.
+1. Nella finestra di dialogo **Modifica tag**, nella colonna **Localizzazione**, selezionare la lingua di destinazione, ad esempio il tedesco.
 
-1. In **Tedesco** che viene visualizzato, inserisci il titolo tradotto.
+1. Nel campo **Tedesco** visualizzato, fornisci il titolo tradotto.
 
 1. Ripeti i due passaggi precedenti per il francese.
 
@@ -374,10 +374,10 @@ Supponiamo di avere un tag denominato `Animals` che vogliamo tradurre in tedesco
 
 Per le pagine di contenuto, la lingua scelta per il tag viene presa dalla lingua della pagina, se disponibile.
 
-Tuttavia, nell’ambiente di authoring, AEM utilizza l’impostazione della lingua utente. Quindi nella console di assegnazione tag, per `Animals` tag, `Animaux` verrebbe visualizzato per un utente che imposta la lingua sul francese nelle proprietà utente.
+Tuttavia, nell’ambiente di authoring, AEM utilizza l’impostazione della lingua utente. Nella console dei tag, quindi, per il tag `Animals`, `Animaux` verrebbe visualizzato per un utente che imposta la lingua sul francese nelle proprietà utente.
 
 Per aggiungere una nuova lingua alla finestra di dialogo, consulta il documento [Creazione di tag nelle applicazioni AEM](/help/implementing/developing/introduction/tagging-applications.md#adding-a-new-language-to-the-edit-tag-dialog)
 
 >[!TIP]
 >
->Per ulteriori informazioni sulle funzioni di localizzazione dell’AEM, consulta [Traduzione Di Contenuti Per Siti Multilingue](/help/sites-cloud/administering/translation/overview.md).
+>Per ulteriori informazioni sulle funzionalità di localizzazione dell&#39;AEM, vedere [Traduzione del contenuto per siti multilingue](/help/sites-cloud/administering/translation/overview.md).

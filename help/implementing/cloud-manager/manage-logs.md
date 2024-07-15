@@ -39,7 +39,7 @@ Per scaricare i registri, effettua le seguenti operazioni:
 
    ![Finestra di dialogo Scarica registri](assets/download-preview.png)
 
-   Nel caso [Aree geografiche di pubblicazione aggiuntive](/help/operations/additional-publish-regions.md) sono abilitati per il tuo ambiente, potrai selezionare ogni area geografica e scaricare i relativi registri separatamente, come mostrato di seguito:
+   Se per l&#39;ambiente sono abilitate [altre aree geografiche di Publish](/help/operations/additional-publish-regions.md), sarà possibile selezionare ciascuna area e scaricare i relativi registri separatamente, come illustrato di seguito:
 
    ![Scarica registri per altre aree geografiche di pubblicazione](assets/download-publish-region-logs.png)
 
@@ -92,7 +92,7 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->Estrai [questa risorsa video](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) per ulteriori informazioni sul debug di AEM as a Cloud Service.
+>Consulta [questa risorsa video](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) per ulteriori informazioni sul debug di AEM as a Cloud Service.
 
 Per ulteriori informazioni sull’API di Cloud Manager e sull’interfaccia della riga di comando Adobe I/O, vedi le seguenti risorse aggiuntive:
 

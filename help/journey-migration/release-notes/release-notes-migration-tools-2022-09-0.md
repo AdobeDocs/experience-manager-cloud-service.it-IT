@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Note sulla versione 2022.9.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2022.9.0 degli strumenti di migrazione in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione degli strumenti di migrazione in AEM as a Cloud Service 2022.9.0.
 
 ## Analisi delle best practice {#bpa-release}
 
@@ -23,7 +23,7 @@ La data di pubblicazione di Best Practices Analyzer v2.1.34 è il 12 settembre 2
 
 ### Novità {#what-is-new-bpa}
 
-* BPA ora può rilevare e segnalare se il cliente ha aggiunto una configurazione di logger personalizzata. AEM as a Cloud Service non supporta file di registro personalizzati. Tutti i file di registro devono essere reindirizzati a `error.log`
+* BPA ora può rilevare e segnalare se il cliente ha aggiunto una configurazione di logger personalizzata. AEM as a Cloud Service non supporta i file di registro personalizzati. Tutti i file di registro devono essere reindirizzati a `error.log`
 * BPA ora può creare rapporti sui diversi tipi MIME binari presenti nell’archivio del cliente e sui conteggi ad essi associati.
 
 ### Correzioni di bug {#bug-fixes-bpa}

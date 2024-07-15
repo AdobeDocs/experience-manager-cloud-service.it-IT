@@ -46,14 +46,14 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
   <tr>
     <td>Pulizia delle versioni</td>
     <td>Cliente</td>
-    <td>L’eliminazione della versione è attualmente disabilitata per impostazione predefinita, ma il criterio può essere configurato come descritto nella <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione Pulizia delle versioni e del registro di controllo</a> sezione.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sostituiti.<br>
+    <td>L'eliminazione della versione è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del log di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Elimina log di controllo</td>
     <td>Cliente</td>
-    <td>L’eliminazione del registro di controllo è attualmente disabilitata per impostazione predefinita, ma è possibile configurare i criteri, come descritto in <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione Pulizia delle versioni e del registro di controllo</a> sezione.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sostituiti.<br>
+    <td>L'eliminazione del registro di controllo è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del registro di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
    </td>
    </td>
   </tr>
@@ -67,15 +67,15 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <td>Eliminazione di attività ad hoc</td>
     <td>Cliente</td>
     <td>
-    <p>Deve essere eseguito in git. Sostituisci il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>.</p>
-    <p>Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore. Assegna un nome <code>granite_TaskPurgeTask</code>, con attributo <code>sling:resourceType</code> imposta su <code>granite/operations/components/maintenance/task</code> Attributo e <code>granite.maintenance.name</code> imposta su <code>TaskPurge</code>. Configura le proprietà OSGI, vedi <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> per l’elenco delle proprietà.</p>
+    <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>.</p>
+    <p>Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore. Denominarlo <code>granite_TaskPurgeTask</code>, con l'attributo <code>sling:resourceType</code> impostato su <code>granite/operations/components/maintenance/task</code> e l'attributo <code>granite.maintenance.name</code> impostato su <code>TaskPurge</code>. Configurare le proprietà OSGI. Per l'elenco delle proprietà, vedere <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>.</p>
   </td>
   </tr>
     <tr>
     <td>Eliminazione flussi di lavoro</td>
     <td>Cliente</td>
     <td>
-    <p>Deve essere eseguito in git. Sostituisci il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
+    <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
     <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_WorkflowPurgeTask</code>) con le proprietà appropriate. Configura le proprietà OSGI secondo la <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=it#regular-purging-of-workflow-instances">Documentazione delle attività di manutenzione di AEM 6.5</a>.</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <td>Eliminazione progetti</td>
     <td>Cliente</td>
     <td>
-    <p>Deve essere eseguito in git. Sostituisci il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
+    <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
     <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà opportune. Consulta l’elenco delle proprietà OSGI in "Adobe Projects Purge Configuration" (Configurazione rimozione progetti ).</p>
   </td>
   </tr>
@@ -118,7 +118,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <p><strong>windowStartTime=HH:MM</strong> utilizzando un orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono iniziare l’esecuzione.</p>
     <p><strong>windowEndTime=HH:MM</strong> utilizzando un orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione settimanale devono interrompere l’esecuzione se non sono già state completate.</p>
     <p>Un'attività di manutenzione non può essere eseguita più di una volta in questo intervallo di tempo.</p>
-    <p><strong>windowScheduleWeekdays= Array di due valori da 1 a 7 (ad esempio, [5,5])</strong> Il primo valore dell’array è il giorno iniziale in cui il processo è pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L’ora esatta di inizio e di fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
+    <p><strong>windowScheduleWeekdays= Array di due valori da 1 a 7 (ad esempio, [5,5])</strong> Il primo valore dell’array è il giorno iniziale in cui il processo viene pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L’ora esatta di inizio e di fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
     </td>
   </tr>
   <tr>
@@ -130,7 +130,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <p><strong>windowStartTime=HH:MM</strong> utilizzando un orologio da 24 ore.  Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono iniziare l’esecuzione.</p>
     <p><strong>windowEndTime=HH:MM</strong> utilizzando un orologio da 24 ore. Definisce quando le attività di manutenzione associate alla finestra Manutenzione mensile devono interrompere l’esecuzione se non sono già state completate.</p>
     <p>Un'attività di manutenzione non può essere eseguita più di una volta in questo intervallo di tempo.</p>
-    <p><strong>windowScheduleWeekdays=Array di due valori da 1 a 7 (ad esempio, [5,5])</strong> Il primo valore dell’array è il giorno iniziale in cui il processo è pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L’ora esatta di inizio e di fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
+    <p><strong>windowScheduleWeekdays=Array di due valori da 1 a 7 (ad esempio, [5,5])</strong> Il primo valore dell’array è il giorno iniziale in cui il processo viene pianificato e il secondo valore è il giorno finale in cui il processo viene interrotto. L’ora esatta di inizio e di fine è regolata rispettivamente da windowStartTime e windowEndTime.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 per pianificare la prima settimana del mese o 1 per pianificare l’ultima settimana del mese. L'assenza di un valore consente di pianificare in modo efficace i processi nel giorno gestito da windowScheduleWeekdays (ogni mese).</p>
     </td>
     </tr>
@@ -219,7 +219,7 @@ Dichiara un file di configurazione e distribuiscilo come descritto nei passaggi 
 > 
 >Allo stesso modo, una volta distribuito il nodo di eliminazione del registro di controllo nel file di configurazione, è necessario mantenerlo dichiarato e non rimuoverlo.
 
-**1** : crea la seguente cartella e struttura di file nella cartella di livello principale del progetto in Git:
+**1** - crea la cartella e la struttura di file seguenti nella cartella principale del progetto in Git:
 
 ```
 config/
@@ -231,9 +231,9 @@ config/
 * una proprietà &quot;kind&quot; con il valore &quot;MaintenanceTasks&quot;.
 * una proprietà &quot;version&quot; (al momento ci troviamo alla versione 1).
 * un oggetto &quot;metadata&quot; facoltativo con la proprietà `envTypes` con un elenco separato da virgole del tipo di ambiente (dev, stage, prod) per il quale è valida questa configurazione. Se non viene dichiarato alcun oggetto metadati, la configurazione è valida per tutti i tipi di ambiente.
-* un oggetto dati con entrambi `versionPurge` e `auditLogPurge` oggetti.
+* un oggetto dati con `versionPurge` e `auditLogPurge` oggetti.
 
-Vedi le definizioni e la sintassi del `versionPurge` e `auditLogPurge` oggetti di seguito.
+Vedere le definizioni e la sintassi degli oggetti `versionPurge` e `auditLogPurge`.
 
 È necessario strutturare la configurazione in modo simile all’esempio seguente:
 
@@ -273,11 +273,11 @@ Tieni presente che affinché la configurazione sia valida:
 >[!NOTE]
 >È possibile utilizzare `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad esempio, `yq mt.yaml`).
 
-**3** : configura le pipeline di configurazione non di produzione e di produzione.
+**3** - Configura le pipeline di configurazione non di produzione e di produzione.
 
 Gli ambienti di sviluppo rapido (RDE) non supportano l’eliminazione. Per altri tipi di ambiente nei programmi di produzione (non sandbox), crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager.
 
-Consulta [configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configurazione di pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) per ulteriori dettagli.
+Per ulteriori dettagli, vedi [configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configurazione delle pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 ### Pulizia delle versioni {#version-purge}
 
@@ -309,7 +309,7 @@ Gli ambienti creati prima dell’attivazione dell’eliminazione predefinita pre
 
 Le proprietà consentite sono elencate di seguito.
 
-Le colonne che indicano *predefinito* indicare i valori di default futuri, quando vengono applicati i valori di default; *TBD* riflette un id ambiente non ancora determinato.
+Le colonne che indicano *default* indicano i valori predefiniti in futuro, quando verranno applicati i valori predefiniti; *TBD* riflette un ID ambiente non ancora determinato.
 
 | Proprietà | valore predefinito futuro per envs>TBD | valore predefinito futuro per envs&lt;=TBD | obbligatorio | tipo | Valori |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
@@ -332,9 +332,9 @@ maximumVersions = 10
 minimumVersions = 2
 ```
 
-Se al giorno 23 sono presenti 11 versioni, la versione meno recente verrà eliminata alla successiva esecuzione dell&#39;attività di manutenzione di eliminazione, poiché `maximumVersions` è impostata su 10.
+Se al giorno 23 sono presenti 11 versioni, la versione meno recente verrà eliminata alla successiva esecuzione dell&#39;attività di manutenzione di eliminazione, poiché la proprietà `maximumVersions` è impostata su 10.
 
-Se al giorno 31 sono presenti 5 versioni, solo 3 verranno eliminate dal giorno `minimumVersions` è impostata su 2.
+Se al giorno 31 sono presenti 5 versioni, solo 3 verranno eliminate poiché la proprietà `minimumVersions` è impostata su 2.
 
 Esempio:
 
@@ -344,7 +344,7 @@ maximumVersions = 0
 minimumVersions = 1
 ```
 
-Le versioni più recenti di 30 giorni non verranno eliminate dal `maximumVersions` è impostata su 0.
+Non verranno eliminate versioni più recenti di 30 giorni, poiché la proprietà `maximumVersions` è impostata su 0.
 
 Verrà conservata una versione precedente ai 30 giorni.
 
@@ -375,7 +375,7 @@ Gli ambienti creati prima dell’attivazione dell’eliminazione predefinita pre
 
 Le proprietà consentite sono elencate di seguito.
 
-Le colonne che indicano *predefinito* indicare i valori di default futuri, quando vengono applicati i valori di default; *TBD* riflette un id ambiente non ancora determinato.
+Le colonne che indicano *default* indicano i valori predefiniti in futuro, quando verranno applicati i valori predefiniti; *TBD* riflette un ID ambiente non ancora determinato.
 
 
 | Proprietà | valore predefinito futuro per envs>TBD | valore predefinito futuro per envs&lt;=TBD | obbligatorio | tipo | Valori |
@@ -383,4 +383,4 @@ Le colonne che indicano *predefinito* indicare i valori di default futuri, quand
 | regole | - | - | Sì | Oggetto | Uno o più dei seguenti nodi: replica, pagine, dam. Ciascuno di questi nodi definisce regole, con le proprietà seguenti. Tutte le proprietà devono essere dichiarate. |
 | maximumAgeDays | 7 giorni | per tutti, 2557 (7 anni + 2 giorni bisestili) | Sì | numero intero | Per replica, pagine o dam: il numero di giorni in cui vengono conservati i registri di audit. I registri di controllo precedenti al valore configurato vengono eliminati. |
 | contentPath | &quot;/content&quot; | &quot;/content&quot; | Sì | Stringa | Percorso in cui verranno eliminati i registri di audit, per il tipo correlato. Deve essere impostato su &quot;/content&quot;. |
-| tipi | tutti i valori | tutti i valori | Sì | Array di enumerazione | Per **replica**, i valori enumerati sono: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. Per **pagine**, i valori enumerati sono: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. Per **dam**, i valori enumerati sono: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVE, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
+| tipi | tutti i valori | tutti i valori | Sì | Array di enumerazione | Per **replication**, i valori enumerati sono: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. Per **pagine**, i valori enumerati sono: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. Per **dam**, i valori enumerati sono: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVE, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |

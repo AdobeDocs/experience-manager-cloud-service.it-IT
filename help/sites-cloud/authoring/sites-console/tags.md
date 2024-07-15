@@ -16,7 +16,7 @@ ht-degree: 93%
 
 I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere considerati come parole chiave o etichette da allegare a una pagina, una risorsa o altro contenuto, per consentire la ricerca di contenuti specifici o correlati.
 
-* Consulta [Amministrazione dei tag](/help/sites-cloud/administering/tags.md) per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati.
+* Per informazioni sulla creazione e la gestione dei tag e sui tag di contenuto applicati, vedere [Amministrazione dei tag](/help/sites-cloud/administering/tags.md).
 * Per informazioni sul framework dei tag e sull’inclusione e l’estensione dei tag in applicazioni personalizzate, consulta [Assegnazione tag per sviluppatori](/help/implementing/developing/introduction/tagging-framework.md).
 
 ## Dieci motivi per utilizzare l’assegnazione tag {#ten-reasons-to-use-tagging}

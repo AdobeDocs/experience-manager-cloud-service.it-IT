@@ -16,7 +16,7 @@ ht-degree: 88%
 
 Nella console Frammenti di contenuto è disponibile una selezione di scelte rapide da tastiera.
 
-AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono applicabili quando [modifica di pagine](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), altri a [uso generale delle console](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
+AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono applicabili quando [si modificano le pagine](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), altre quando [si utilizzano le console](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >

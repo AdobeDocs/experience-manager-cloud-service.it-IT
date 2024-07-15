@@ -1,5 +1,5 @@
 ---
-title: Anteprima - Rappresentazione JSON (risorse - Frammenti di contenuto)
+title: Anteprima - Rappresentazione JSON (Assets - Frammenti di contenuto)
 description: Scopri come visualizzare facilmente in anteprima la rappresentazione JSON dei frammenti di contenuto durante l’implementazione della soluzione AEM headless.
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 feature: Content Fragments
@@ -20,7 +20,7 @@ Durante lo sviluppo di modelli per frammenti di contenuto come parte dell’impl
 >
 >I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
 >
->Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console).
+>Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l&#39;editor originale, a cui si accede principalmente dalla console **Assets**. Per informazioni dettagliate sul nuovo editor, a cui si accede principalmente dalla console **Frammenti di contenuto**, consulta la documentazione di Sites [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 Utilizzo dell’icona **Anteprima**:
 

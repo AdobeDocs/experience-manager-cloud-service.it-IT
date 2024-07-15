@@ -36,7 +36,7 @@ Se il provider di servizi di traduzione non fornisce un connettore per l’integ
 
 >[!NOTE]
 >
->L&#39;utente deve essere membro di `project-administrators` per utilizzare le funzioni Copia in lingua.
+>L&#39;utente deve essere membro del gruppo `project-administrators` per utilizzare le funzionalità Copia in lingua.
 
 ## Best practice   {#best-practices}
 

@@ -4,8 +4,8 @@ description: Inizia qui per una panoramica dei percorsi guidati disponibili per 
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 82%
+source-wordcount: '409'
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ Inizia qui per una panoramica dei percorsi guidati disponibili per comprendere l
 
 ## Percorsi di documentazione AEM {#documentation-journeys}
 
-[Un Percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e complicati, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente dell’AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o dell’AEM.
+[Un percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e complicati, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente di AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o di AEM.
 
-I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti dei clienti.
+I percorsi di documentazione sono progettati in base ai principi delle best practice, alla luce delle ultime ricerche condotte da Adobe, della comprovata esperienza nell’implementazione da parte di consulenti di Adobe e del feedback raccolto sui progetti della clientela.
 
 Se desideri sapere come Adobe consiglia di risolvere i casi aziendali con AEM Sites, puoi iniziare dai Percorsi AEM Sites.
 
@@ -31,7 +31,7 @@ I Percorsi di Sites sono progettati per utenti tipo diversi, definendo i requisi
 
 Viene definito un percorso individuale per un utente tipo specifico o pubblico, oltre che per altri utenti tipo con cui il lettore interagisce.
 
-Le informazioni nei percorsi possono essere utili a più utenti tipo, ma un percorso è destinato a un utente specifico e alcune informazioni possono essere superflue per determinati ruoli.
+Le informazioni nei percorsi possono essere utili a più utenti tipo, ma un percorso è mirato a un utente specifico e alcune informazioni possono essere superflue per determinati ruoli.
 
 ## Percorsi Sites {#sites-journeys}
 

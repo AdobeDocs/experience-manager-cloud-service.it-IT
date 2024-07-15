@@ -18,23 +18,23 @@ Scopri come utilizzare il pannello laterale nell’editor di siti AEM per aggiun
 
 ## Modalità pannello laterale {#modes}
 
-Il pannello laterale è sempre accessibile nell’editor di pagine toccando o facendo clic sul pulsante **Attiva/Disattiva pannello laterale** nella barra degli strumenti dell’editor pagina.
+Il pannello laterale è sempre accessibile nell&#39;editor di pagine toccando o facendo clic sull&#39;icona **Attiva/Disattiva pannello laterale** nella barra degli strumenti dell&#39;editor di pagine.
 
 ![Icona del pannello laterale](assets/editor-side-panel-side-panel-toggle.png)
 
 Quando apri il pannello laterale, questo si apre scorrendo dal lato sinistro e puoi quindi selezionare tra tre schede importanti:
 
-* [Browser Componenti](#components-browser) per aggiungere nuovi contenuti alla pagina
+* [Browser componenti](#components-browser) per aggiungere nuovo contenuto alla pagina
 * [Browser risorse](#assets-browser) per aggiungere nuove risorse alla pagina
 * [Struttura contenuto](#content-tree) per sfogliare la struttura della pagina
 
 ## Browser Componenti   {#components-browser}
 
-[Componenti](/help/implementing/developing/components/overview.md) sono i blocchi predefiniti utilizzati per creare contenuti con l’editor di pagine AEM. Posiziona più componenti in una pagina e configurane le opzioni per creare la pagina di contenuto.
+[I componenti](/help/implementing/developing/components/overview.md) sono i blocchi predefiniti utilizzati per creare contenuti con l&#39;editor di pagine AEM. Posiziona più componenti in una pagina e configurane le opzioni per creare la pagina di contenuto.
 
 Il browser Componenti mostra tutti componenti disponibili per la pagina corrente. Questi possono essere trascinati nella posizione appropriata, quindi modificati per aggiungere il contenuto.
 
-Tocca o fai clic su **Componenti** nel pannello laterale per accedere al **Componenti** browser.
+Tocca o fai clic sulla scheda **Components** nel pannello laterale per accedere al browser **Components**.
 
 ![Icona del browser Componenti nel pannello laterale](assets/editor-side-panel-components-browser.png)
 
@@ -62,7 +62,7 @@ Per aggiungere un componente alla pagina, fai clic sul componente richiesto e tr
 
 ### Utilizzo del browser Componenti {#using-component-browser}
 
-Componenti in **Componenti** browser sono rappresentati da:
+I componenti nel browser **Components** sono rappresentati da:
 
 * Nome componente
 * Gruppo di componenti (in grigio)
@@ -75,17 +75,17 @@ Dalla barra degli strumenti nella parte superiore del browser **Componenti**, pu
 * Filtrare i componenti per nome
 * Limita la visualizzazione a uno specifico gruppo selezionandolo dall’elenco a discesa.
 
-Per una descrizione più dettagliata del componente, puoi selezionare l’icona delle informazioni accanto al componente nella **Componenti** browser (se disponibile). Ad esempio, per il **frammento di contenuto**:
+Per una descrizione più dettagliata del componente, puoi selezionare l&#39;icona delle informazioni accanto al componente nel browser **Componenti** (se disponibile). Ad esempio, per il **frammento di contenuto**:
 
 ![Informazioni sul browser Componenti](assets/editor-side-panel-component-description.png)
 
-Per informazioni più dettagliate sui componenti disponibili, vedi [Console Componenti.](/help/sites-cloud/authoring/components-console.md)
+Per informazioni più dettagliate sui componenti disponibili, vedere [Console componenti.](/help/sites-cloud/authoring/components-console.md)
 
 ## Browser Risorse {#assets-browser}
 
-Il **Risorse** il browser mostra tutto [risorse](/help/assets/overview.md) disponibili per l&#39;utilizzo nella pagina corrente.
+Nel browser **Assets** sono visualizzate tutte le [risorse](/help/assets/overview.md) disponibili per la pagina corrente.
 
-Tocca o fai clic su **Risorse** per sfogliare le risorse.
+Tocca o fai clic sulla scheda **Assets** nel pannello laterale per sfogliare le risorse.
 
 ![Pulsante Browser risorse](assets/editor-side-panel-assets-browser-tab.png)
 
@@ -115,13 +115,13 @@ Per aggiungere una risorsa alla pagina, selezionala e trascinala sul componente 
 
 ![Browser risorse sul desktop](assets/editor-side-panel-assets-browser-desktop.png)
 
-### Utilizzo del browser Risorse {#using-assets-browser}
+### Utilizzo del browser Assets {#using-assets-browser}
 
 Per aggiungere una risorsa alla pagina, selezionala e trascinala nella posizione desiderata. Può trattarsi di:
 
 * un componente esistente del tipo appropriato.
    * Ad esempio, puoi trascinare una risorsa di tipo immagine su un componente Immagine.
-* A [segnaposto](/help/sites-cloud/authoring/page-editor/edit-content.md#component-placeholder) nel sistema paragrafo per creare un componente del tipo appropriato.
+* Un [segnaposto](/help/sites-cloud/authoring/page-editor/edit-content.md#component-placeholder) nel sistema paragrafo per creare un componente del tipo appropriato.
    * Ad esempio, puoi trascinare una risorsa di tipo immagine nel sistema paragrafo per creare un componente Immagine.
 
 >[!NOTE]
@@ -142,13 +142,13 @@ Se devi apportare rapidamente una modifica a una risorsa, puoi avviare [l’edit
 
 ## Struttura contenuto {#content-tree}
 
-Il **Struttura contenuto** offre una panoramica di tutti i componenti della pagina in una gerarchia, per consentirti di visualizzare rapidamente come viene composta la pagina.
+La **Struttura contenuto** offre una panoramica di tutti i componenti della pagina in una gerarchia, in modo da poter vedere immediatamente come viene composta la pagina.
 
 >[!NOTE]
 >
 >La struttura del contenuto non è disponibile quando si modifica una pagina su un dispositivo mobile (se la larghezza del browser è inferiore a 1024 px).
 
-Tocca o fai clic su **Struttura contenuto** per accedere alla struttura del contenuto.
+Tocca o fai clic sulla scheda **Struttura contenuto** per accedere alla struttura contenuto.
 
 ![Pulsante Struttura contenuto](assets/editor-side-panel-content-tree-tab.png)
 
@@ -178,8 +178,8 @@ Se il componente su cui fai clic nella struttura ad albero è modificabile, a de
 
 ### Una Live Copy {#live-copy}
 
-Una pagina che fa parte di un [live copy](/help/sites-cloud/administering/msm/overview.md), in cui i componenti vengono ereditati da un’altra pagina, avrà opzioni diverse.
+Una pagina che fa parte di una [Live Copy](/help/sites-cloud/administering/msm/overview.md), in cui i componenti vengono ereditati da un&#39;altra pagina, avrà opzioni diverse.
 
 ## Browser Contenuto associato {#associated-content-browser}
 
-Se la pagina contiene frammenti di contenuto, puoi anche accedere a [browser per Contenuto associato.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)
+Se la pagina contiene frammenti di contenuto, è possibile accedere anche al browser [Contenuto associato.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)

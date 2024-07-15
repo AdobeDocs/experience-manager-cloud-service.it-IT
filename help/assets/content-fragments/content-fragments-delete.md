@@ -1,5 +1,5 @@
 ---
-title: Frammenti di contenuto - Considerazioni sull’eliminazione (risorse - Frammenti di contenuto)
+title: Frammenti di contenuto - Considerazioni sull’eliminazione (Assets - Frammenti di contenuto)
 description: Esamina queste considerazioni importanti prima di definire i criteri di eliminazione dei frammenti di contenuto in AEM. I frammenti di contenuto sono uno strumento potente per la distribuzione di contenuti headless e occorre considerare attentamente le implicazioni relative all’eliminazione di tali contenuti.
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 feature: Content Fragments
@@ -24,14 +24,14 @@ In relazione alle autorizzazioni di eliminazione, i frammenti di contenuto devon
 
 1. **Il frammento di contenuto come singola entità.**
 
-   * **Caso d’uso**: utente che deve modificare/aggiornare un frammento di contenuto - **ed eliminare un intero frammento**.
+   * **Caso d&#39;uso**: utente che deve modificare o aggiornare un frammento di contenuto - **ed eliminare un intero frammento**.
    * **Autorizzazioni**: l’autorizzazione Elimina può essere assegnata tramite la gestione degli utenti e/o dei gruppi. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **Le numerose sottoentità che compongono un frammento di contenuto, come varianti e sotto-nodi.**
 
    Il funzionamento di base dell’editor di frammenti di contenuto prevede che tali elementi secondari transitori possano essere eliminati. Ad esempio, quando si manipolano le varianti, ma anche durante la modifica dei metadati o la gestione dei contenuti associati.
 
-   * **Caso d’uso**: utente che deve modificare/aggiornare un frammento di contenuto - **senza poter eliminare un intero frammento**.
+   * **Caso d&#39;uso**: utente che deve modificare o aggiornare un frammento di contenuto - **senza poter eliminare un intero frammento**.
    * **Autorizzazioni**: vedi [Autorizzazioni necessarie solo per la funzionalità dell’editor](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]

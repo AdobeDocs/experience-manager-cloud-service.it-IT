@@ -29,11 +29,11 @@ Per accedere alla dashboard delle licenze, segui la procedura riportata di segui
 
 >[!NOTE]
 >
->Un utente in **Proprietario business** Per visualizzare la dashboard delle licenze, è necessario aver effettuato l’accesso al ruolo.
+>Un utente con il ruolo **Proprietario business** deve aver effettuato l&#39;accesso per visualizzare la dashboard delle licenze.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , passare alla **Licenza** scheda.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, passa alla scheda **Licenza**.
 
 ![Dashboard delle licenze](assets/license-dashboard.png)
 
@@ -45,14 +45,14 @@ La dashboard è divisa in tre sezioni:
 
 Ogni sezione riepiloga ciò che è disponibile e come viene utilizzato, se del caso. Attualmente, anche se nel tenant sono presenti altre soluzioni, vengono visualizzate solo quelle Sites.
 
-* Il **Stato** Questa colonna mostra il numero di diritti inutilizzati rispetto al totale disponibile per il tenant.
+* La colonna **Stato** visualizza il numero di diritti inutilizzati rispetto al totale disponibile per il tenant.
 * La colonna **Configurato per** indica i programmi ai quali il diritto per la soluzione è stato applicato.
    * Un diritto viene considerato utilizzato solo quando è stato creato un ambiente di produzione o, se ne esiste uno, se su di esso è stata eseguita una pipeline di aggiornamento.
 * Una volta selezionata, la colonna **Utilizzo** visualizza le richieste di contenuto presentate negli ultimi 12 mesi sotto forma di grafico.
 
 >[!TIP]
 >
->Per informazioni su come gestire i diritti Adobe in tutta l’organizzazione da Admin Console, consulta [Panoramica Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html).
+>Per informazioni su come gestire i diritti Adobe in tutta l&#39;organizzazione da Admin Console, consulta la [panoramica Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html).
 
 ## Domande frequenti {#faq}
 
@@ -64,7 +64,7 @@ Viene conteggiata una richiesta di contenuto per ogni visualizzazione di pagina 
 
 Le richieste di contenuto escludono le richieste o le attività avviate da o per conto di Adobe al solo scopo di fornire prodotti e servizi. È escluso anche il traffico dell’agente utente identificato da Adobe come proveniente da bot, crawler e spider relativi ai comuni motori di ricerca e servizi di social media.
 
-Vedi anche [Informazioni sulle richieste di contenuto di Cloud Service](/help/implementing/cloud-manager/content-requests.md).
+Vedi anche [Informazioni sulle richieste di contenuto del Cloud Service](/help/implementing/cloud-manager/content-requests.md).
 
 ### In che modo Adobe Experience Manager misura le richieste di contenuto? {#how-are-content-requests-measured}
 
@@ -72,11 +72,11 @@ Le richieste di contenuto vengono tracciate sui server Edge di AEM as a Cloud Se
 
 AEM inoltre offre regole per escludere bot noti, tra cui servizi noti che visitano regolarmente il sito per aggiornare l’indice di ricerca o il servizio.
 
-Vedi anche [Informazioni sulle richieste di contenuto di Cloud Service](/help/implementing/cloud-manager/content-requests.md).
+Vedi anche [Informazioni sulle richieste di contenuto del Cloud Service](/help/implementing/cloud-manager/content-requests.md).
 
 ### Perché il rapporto di Analytics mostra risultati diversi rispetto alle richieste di contenuto di AEM? {#why-are-reports-different}
 
-Le richieste di contenuto possono presentare varianze con gli strumenti di reporting di Analytics di un’organizzazione. Per ulteriori informazioni, consulta [Informazioni sulle richieste di contenuto di Cloud Service](/help/implementing/cloud-manager/content-requests.md).
+Le richieste di contenuto possono presentare varianze con gli strumenti di reporting di Analytics di un’organizzazione. Per ulteriori informazioni, vedere [Informazioni sulle richieste di contenuto di Cloud Service](/help/implementing/cloud-manager/content-requests.md).
 
 ### Come posso ottenere ulteriori informazioni sul volume di richieste di contenuto? {#current-request-volumes}
 

@@ -16,7 +16,7 @@ ht-degree: 82%
 
 La console **Offerte** in futuro diventerà obsoleta. Da ora in poi:
 
-* Disponibile solo per i clienti che hanno *legacy* offerte già definite (ovvero preesistenti)
+* Disponibile solo per i clienti con *offerte legacy* già definite (ovvero preesistenti)
 * si consiglia di convertire tali offerte legacy in offerte basate su frammenti di esperienza;
    * non appena l’ultima offerta legacy sarà stata convertita o rimossa, la console **Offerte** non sarà più disponibile.
 
@@ -89,7 +89,7 @@ Se necessario, aggiungi dei tag.
 
 1. Conferma con **Fine**.
 
-   Se ora passi a **Offerte con frammenti di esperienza** nella console, puoi visualizzare il nuovo frammento di esperienza e le relative varianti.
+   Se ora passi alla console **Offerte con frammenti di esperienza**, puoi visualizzare il nuovo frammento di esperienza e le relative varianti.
 
 ### Targeting con il modello di offerte {#targeting-offers-template}
 
@@ -129,12 +129,12 @@ Crea un marchio a cui sono associate le offerte. Apri un marchio nella console O
 
 Quando crei un marchio utilizzando la console Offerte, questo viene visualizzato anche nella [Console Attività](/help/sites-cloud/authoring/personalization/activities.md) dove puoi aggiungere e amministrare attività per il marchio.
 
-1. Nella console Navigazione, seleziona **Personalizzazione** > **Offerte**.
+1. Nella console Navigazione, seleziona **Personalization** > **Offerte**.
 
    ![Navigazione alla console Offerte](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
-1. Seleziona **Crea** e poi **Crea** **Marchio**.
-1. Seleziona il modello del brand e seleziona **Successivo**.
+1. Seleziona **Crea** e quindi **Crea** **Marchio**.
+1. Seleziona il modello del brand e seleziona **Avanti**.
 1. Digita un titolo per il marchio in base a come desideri che appaia nelle console Offerte e Attività. Facoltativamente, digita o seleziona uno o più tag da associare al marchio.
 1. Seleziona **Crea**.
 
@@ -165,9 +165,9 @@ Dopo aver creato l’offerta, puoi aprirla per eseguire l’authoring del conten
 
    ![Creazione di una cartella di offerta](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
-1. Seleziona la **Pagina offerta** e quindi selezionare **Successivo**.
-1. Digita un titolo per l’offerta e facoltativamente seleziona o digita uno o più tag da associare all’offerta, quindi seleziona **Crea**.
-1. Nella finestra di dialogo di conferma, per aprire l’offerta da modificare seleziona **Apri pagina**.
+1. Seleziona il modello **Pagina di offerta** e quindi **Successivo**.
+1. Digita un titolo per l&#39;offerta e facoltativamente seleziona o digita uno o più tag da associare all&#39;offerta, quindi seleziona **Crea**.
+1. Nella finestra di dialogo di conferma, per aprire l&#39;offerta di modifica, seleziona **Apri pagina**.
 
 ### Modifica di un’offerta {#editing-an-offer}
 
@@ -175,7 +175,7 @@ Apri un’offerta e modifica il contenuto in base a come desideri che appaia nel
 
 Puoi aprire un’offerta da una cartella in una libreria di offerte o dai risultati della ricerca. Puoi anche aprire un’offerta da un’esperienza che utilizza l’offerta.
 
-1. Nella console Offerte, seleziona l’icona accanto all’offerta e fai clic su **Modifica**.
+1. Nella console Offerte, seleziona l&#39;icona accanto all&#39;offerta e seleziona **Modifica**.
 1. Aggiungi componenti all’offerta e modifica normalmente il contenuto dei componenti.
 
 ### Eliminazione di un’offerta {#deleting-an-offer}
@@ -184,15 +184,15 @@ Elimina un’offerta quando non è più necessaria. Quando tenti di eliminare un
 
 Puoi eliminare un’offerta quando visualizzi il contenuto di una cartella in una libreria di offerte o nei risultati della ricerca.
 
-1. Nella console Offerte, seleziona l’icona accanto all’offerta e fai clic su **Elimina**.
+1. Nella console Offerte, seleziona l&#39;icona accanto all&#39;offerta e seleziona **Elimina**.
 
-   Seleziona l’offerta e seleziona **Elimina**.
+   Seleziona l&#39;offerta e seleziona **Elimina**.
 
-1. Nella finestra di dialogo visualizzata, seleziona **Elimina** per confermare l’eliminazione.
+1. Nella finestra di dialogo visualizzata, seleziona **Elimina** per confermare l&#39;eliminazione.
 1. Se l’offerta viene utilizzata in una o più esperienze, viene visualizzata una finestra di dialogo per indicare che si fa riferimento all’offerta:
 
-   * Per eliminare l’offerta e rimuoverla dalle esperienze, seleziona **Forza eliminazione**.
-   * Per mantenere l’offerta, seleziona **Annulla**.
+   * Per eliminare l&#39;offerta e rimuoverla dalle esperienze, selezionare **Forza eliminazione**.
+   * Per mantenere l&#39;offerta, selezionare **Annulla**.
 
 ### Ricerca di offerte {#searching-for-offers}
 

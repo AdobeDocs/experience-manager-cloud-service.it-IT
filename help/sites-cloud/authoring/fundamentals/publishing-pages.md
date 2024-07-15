@@ -52,7 +52,7 @@ A seconda della posizione, puoi pubblicare:
 
 >[!NOTE]
 >
->Se desideri mantenere l’ordine delle pagine, devi utilizzare [Gestisci pubblicazione](#manage-publication) per pubblicare la pagina padre insieme a eventuali pagine figlie, in un’unica azione.
+>Se desideri mantenere l&#39;ordine delle pagine, devi utilizzare [Gestisci pubblicazione](#manage-publication) per pubblicare la pagina padre insieme alle pagine figlie in un&#39;unica azione.
 >
 >L’ordine delle pagine non è garantito:
 >* se sono selezionate per la pubblicazione solo le pagine figlie (in quanto le informazioni sull’ordine si trovano nella pagina padre)
@@ -74,7 +74,7 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
    * La pagina viene pubblicata direttamente, se non sono presenti riferimenti da pubblicare.
    * Se la pagina include riferimenti da pubblicare, questi sono elencati nella procedura guidata di **Pubblicazione**, dove è possibile:
-      * Specifica le risorse, i tag e così via, da pubblicare insieme alla pagina, quindi utilizza **Pubblica** per completare il processo.
+      * Specifica le risorse, i tag e così via da pubblicare insieme alla pagina, quindi utilizza **Publish** per completare il processo.
       * Seleziona **Annulla** per annullare l’azione.
 
    ![Pubblicazione di riferimenti alla pagina](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -93,7 +93,7 @@ Se stai modificando una pagina, puoi pubblicarla direttamente dall’editor.
 
 >[!NOTE]
 >
->Pagine a cui si accede tramite [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell’editor non può essere pubblicato. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
+>Impossibile pubblicare le pagine a cui accedono [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell&#39;editor. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
 
 ### Pubblicazione dalla console {#publishing-from-the-console}
 
@@ -108,7 +108,7 @@ Nella console Sites sono disponibili due opzioni per la pubblicazione:
 
 Per pubblicare una pagina con Pubblicazione rapida:
 
-1. Seleziona le pagine desiderate nella console Sites e fai clic su **Pubblicazione rapida** pulsante.
+1. Selezionare le pagine nella console Sites e fare clic sul pulsante **Publish rapido**.
 
    ![Selezione delle pagine per la pubblicazione](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -128,7 +128,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
 >[!NOTE]
 >
->Se desideri mantenere l’ordine delle pagine, devi utilizzare **Gestisci pubblicazione** per pubblicare la pagina padre insieme alle eventuali pagine figlie in un’unica azione.
+>Se vuoi mantenere l&#39;ordine delle pagine devi utilizzare **Gestisci pubblicazione** per pubblicare la pagina padre insieme alle pagine figlie in un&#39;unica azione.
 >
 >L’ordine delle pagine non è garantito:
 >* se sono selezionate per la pubblicazione solo le pagine figlie (in quanto le informazioni sull’ordine si trovano nella pagina padre)
@@ -136,11 +136,11 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
 Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblicazione:
 
-1. Seleziona le pagine desiderate nella console Sites e fai clic su **Gestisci pubblicazione** pulsante.
+1. Selezionare le pagine desiderate nella console Sites e fare clic sul pulsante **Gestisci pubblicazione**.
 
    ![Selezione delle pagine per la pubblicazione](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Il primo passo, **Opzioni**, consente di:
+1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Il primo passaggio, **Opzioni**, consente di:
 
    * **Azione**
 
@@ -240,17 +240,17 @@ Con una [procedura simile alla pubblicazione](#publishing-pages), è possibile a
 
 ### Annullamento della pubblicazione dall’editor  {#unpublishing-from-the-editor}
 
-Durante la modifica di una pagina, se desideri annullarne la pubblicazione seleziona **Annulla pubblicazione pagina** nel **Informazioni pagina** menu, come si farebbe [pubblicare la pagina](#publishing-from-the-editor).
+Durante la modifica di una pagina, se desideri annullarne la pubblicazione seleziona **Annulla pubblicazione pagina** nel menu **Informazioni pagina**, esattamente come [pubblicheresti la pagina](#publishing-from-the-editor).
 
 >[!NOTE]
 >
->Pagine a cui si accede tramite [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell’editor non può essere annullata. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
+>Non è possibile annullare la pubblicazione delle pagine a cui accedono [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) nell&#39;editor. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
 
 ### Annullamento della pubblicazione dalla console  {#unpublishing-from-the-console}
 
 Puoi utilizzare [l’opzione Gestisci pubblicazione per eseguire la pubblicazione](#manage-publication), ma anche per annullarla.
 
-1. Seleziona le pagine desiderate nella console Sites e fai clic su **Gestisci pubblicazione** pulsante.
+1. Selezionare le pagine desiderate nella console Sites e fare clic sul pulsante **Gestisci pubblicazione**.
 1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Nel primo passaggio, **Opzioni**, seleziona **Annulla pubblicazione** anziché l’opzione predefinita **Pubblica**.
 
    ![Annullamento della pubblicazione - Opzioni](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
@@ -274,7 +274,7 @@ Dopo aver inserito o aggiornato un numero considerevole di pagine di contenuto, 
 
 È possibile utilizzare [Gestisci pubblicazione](#manage-publication) nella console Sites.
 
-1. Nella console Sites, seleziona la pagina principale della struttura da pubblicare o di cui vuoi annullare la pubblicazione e fai clic su **Gestisci pubblicazione**.
+1. Nella console Sites, seleziona la pagina principale della struttura che desideri pubblicare o annullare la pubblicazione e seleziona **Gestisci pubblicazione**.
 1. Viene avviata la procedura guidata **Gestisci pubblicazione**. Scegli se e quando pubblicare o annullare la pubblicazione e seleziona **Avanti** per continuare.
 1. Nel passaggio **Ambito**, seleziona la pagina principale e fai clic su **Includi elementi secondari**.
 

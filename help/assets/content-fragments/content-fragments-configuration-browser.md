@@ -1,5 +1,5 @@
 ---
-title: Frammenti di contenuto - Browser configurazioni (Risorse - Frammenti di contenuto)
+title: Frammenti di contenuto - Browser configurazioni (Assets - Frammenti di contenuto)
 description: Scopri come abilitare la funzionalità Frammenti di contenuto nel Browser configurazioni.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 feature: Content Fragments
@@ -41,7 +41,7 @@ Per utilizzare alcune [funzionalità dei frammenti di contenuto](#creating-a-con
 
 >[!NOTE]
 >
->Consulta [Browser configurazioni](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Vedi [Browser configurazioni](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Per utilizzare alcune [funzionalità dei frammenti di contenuto](#creating-a-con
 
 ### Applica la configurazione alla cartella Risorse {#apply-the-configuration-to-your-assets-folder}
 
-Quando la configurazione **globale** è abilitato per la funzionalità frammento di contenuto, quindi si applica a qualsiasi cartella Risorse.
+Quando la configurazione **global** è abilitata per la funzionalità frammento di contenuto, viene applicata a qualsiasi cartella di Assets.
 
 Per utilizzare altre configurazioni con una cartella Risorse simile, ovvero escludendo il formato globale, è necessario definire la connessione. Questa operazione viene eseguita selezionando l’appropriata **Configurazione** nella scheda **Servizi cloud** della finestra **Proprietà cartella** della cartella specifica.
 

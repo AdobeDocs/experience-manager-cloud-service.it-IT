@@ -38,22 +38,22 @@ Questo documento descrive gli strumenti disponibili per la risoluzione dei probl
 
 Il debug degli ambienti per sviluppatori di AEM as a Cloud Service è disponibile in Developer Console per gli ambienti di sviluppo, stage e produzione.
 
-Consulta [Implementazione per AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) per ulteriori informazioni sugli strumenti di sviluppo.
+Per ulteriori informazioni sugli strumenti di sviluppo, consulta [Implementazione per AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools).
 
 ## CRXDE Lite {#crxde-lite}
 
 In qualità di utente, puoi accedere a CRXDE Lite nell’ambiente di sviluppo ma non in quello di stage o produzione.
 
 >[!IMPORTANT]
->Scrittura in archivi immutabili come `/libs` e `/apps` in fase di runtime genera errori. Inoltre, non hai accesso agli strumenti per sviluppatori per gli ambienti di staging e produzione.
+>La scrittura in archivi immutabili come `/libs` e `/apps` in fase di runtime genera errori. Inoltre, non hai accesso agli strumenti per sviluppatori per gli ambienti di staging e produzione.
 
-Consulta [Sviluppo con CRXDE Lite](/help/implementing/developing/tools/crxde.md) per ulteriori informazioni su come sviluppare l’applicazione AEM utilizzando CRXDE Lite.
+Consulta [Sviluppo con CRXDE Lite](/help/implementing/developing/tools/crxde.md) per ulteriori informazioni su come sviluppare l&#39;applicazione AEM utilizzando CRXDE Lite.
 
 ## Gestione dei registri {#managing-logs}
 
 Gli utenti possono accedere a un elenco dei file di registro disponibili per l’ambiente selezionato.
 
-Consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) per scoprire come accedere e gestire i registri tramite l’interfaccia utente o dall’API tramite Cloud Manager.
+Consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/manage-logs.md) per scoprire come accedere e gestire i registri tramite l&#39;interfaccia utente o dall&#39;API tramite Cloud Manager.
 
 ## Contattare il supporto {#contacting-support}
 
@@ -63,7 +63,7 @@ Consulta [Accesso e gestione dei registri](/help/implementing/cloud-manager/mana
 >abstract="Per eventuali domande o dubbi, contatta il Team di supporto AEM di Adobe."
 >additional-url="https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html" text="Supporto per Experience Cloud"
 
-Se hai domande sull’accesso al Cloud Service, contatta il rappresentante del tuo Adobe o [Supporto per Experience Cloud](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per ulteriori dettagli.
+Se hai domande sull&#39;accesso al Cloud Service, contatta il rappresentante dell&#39;Adobe o il [supporto per l&#39;Experience Cloud](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per maggiori dettagli.
 
 ## Apprendimenti documento {#document-learnings}
 

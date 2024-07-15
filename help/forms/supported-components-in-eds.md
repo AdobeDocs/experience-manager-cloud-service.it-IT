@@ -1,36 +1,36 @@
 ---
 title: Componenti del modulo Edge Delivery Services AEM Forms
-description: I Edge Delivery Services AEM Forms sono stati progettati per offrire prestazioni di picco, consentendoti di immaginare il futuro della raccolta dati semplificata e del coinvolgimento degli utenti. L’articolo elenca tutti i componenti Forms disponibili come predefiniti per i moduli EDD.
+description: Edge Delivery Services per AEM Forms è progettato per offrire prestazioni di picco, per semplificare e ottimizzare le esperienze di raccolta dati e coinvolgimento degli utenti. L’articolo elenca tutti i componenti Forms disponibili come predefiniti per i moduli EDD.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
 
 
 
-# Componenti HTML supportati nella distribuzione Edge del blocco di modulo
+# Componenti HTML supportati in Edge Delivery per il blocco di moduli
 
-AEM Forms Edge Delivery include un blocco modulo. Il blocco di modulo consente di creare facilmente moduli per l&#39;acquisizione e l&#39;archiviazione dei dati acquisiti.
+AEM Forms Edge Delivery include un blocco Modulo. Il blocco di modulo consente di creare facilmente moduli per l&#39;acquisizione e l&#39;archiviazione dei dati acquisiti.
 
-Il blocco Modulo supporta componenti OOTB HTML-5 come testo, e-mail, numero, data e molto altro. Supporta inoltre elementi di area di testo, selezione e set di campi e include funzioni di convalida di input native per HTML-5. Il blocco modulo crea una struttura HTML uniforme per tutti i tipi di campi e i contenitori, garantendo la coerenza. Anche tu [assegnare uno stile ai tipi di campo](https://adobe-rnd.github.io/form-block/customization/styling_form) utilizzando `form.css` file.
+Il blocco Modulo supporta componenti OOTB HTML-5 come testo, e-mail, numero, data e molto altro. Supporta inoltre elementi di area di testo, selezione e set di campi e include funzioni di convalida di input native per HTML-5. Il blocco modulo crea una struttura HTML uniforme per tutti i tipi di campi e i contenitori, garantendo la coerenza. È inoltre possibile [assegnare uno stile ai tipi di campo](https://adobe-rnd.github.io/form-block/customization/styling_form) utilizzando il file `form.css`.
 
 ## Tipi di input HTML 5 supportati nel blocco modulo
 
 Il blocco modulo supporta una serie di tipi di input HTML 5 ed esegue il rendering dei moduli creati con i componenti core dell’AEM.
 
-Questa tabella illustra la corrispondenza tra i componenti core e i tipi di input HTML-5 in Edge Delivery:
+La tabella seguente illustra la corrispondenza tra i componenti core e i tipi di input HTML-5 in Edge Delivery:
 
 <table>
  <tbody>
   <tr>
    <td><b>Componenti di base</b> </td>
-   <td><b>Tipo di ingresso HTML 5</b> </td>
+   <td>Tipo di input <b>HTML5</b> </td>
    <td><b>Dettagli</b></td>
   </tr>
   <tr>
@@ -70,7 +70,7 @@ Questa tabella illustra la corrispondenza tra i componenti core e i tipi di inpu
    <td> Consente agli utenti di selezionare una o più opzioni da un elenco. Vengono generate più caselle di controllo con nomi identici, ognuna corrispondente a un elemento nell'enum. </td>
   </tr>
   <tr>
-   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button.html">Gruppo pulsante di opzione</td>
+   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button.html">Gruppo pulsanti di scelta</td>
    <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio">radio multipla</a></td>
    <td> Consente a un utente di selezionare un’opzione da un gruppo di opzioni correlate. Più pulsanti di scelta vengono generati con nomi identici, ciascuno corrispondente a un elemento nell'enum.</td>
   </tr>
@@ -110,7 +110,7 @@ Questa tabella illustra la corrispondenza tra i componenti core e i tipi di inpu
    <td> Consente all'utente di immettere e modificare un indirizzo e-mail. Se l’utente aggiunge più attributi, è possibile aggiungere o modificare un elenco di indirizzi e-mail.</td>
   </tr>
    <tr>
-   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/telephone-input.html">Ingresso telefono</a></td>
+   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/telephone-input.html">Inserimento numero di telefono</a></td>
    <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel">tel</a></td>
    <td>Consente all'utente di immettere e modificare un numero di telefono.</td>
   </tr>

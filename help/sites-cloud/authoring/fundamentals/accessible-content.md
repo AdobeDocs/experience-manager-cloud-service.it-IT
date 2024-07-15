@@ -98,7 +98,7 @@ Tipi specifici di contenuto non testuale che richiedono alternative testuali pot
 
 * Foto illustrative: si tratta di immagini di persone, oggetti o luoghi. È importante considerare il ruolo della foto nella pagina e la descrizione consigliata del contenuto dell’immagine, in quanto la tecnologia per l’accessibilità annuncia il tipo di elemento (ad esempio, `graphic` o `image`). L’utilizzo di `screenshot` o `illustration` nelle descrizioni di testo alternative può apportare maggiore chiarezza a seconda del contesto. La coerenza è un fattore essenziale ed è quindi importante che la decisione presa valga per tutto un team di authoring e sia applicata uniformemente in tutta l’esperienza utente.
 * Icone: si tratta di piccoli pittogrammi (immagini) che veicolano informazioni specifiche. Devono essere utilizzati in modo coerente all’interno di una pagina e del sito. Tutte le istanze dell’icona in una pagina o in un sito devono avere lo stesso testo alternativo, breve e sintetico, a meno che questo determini inutili duplicazioni di testo adiacente.
-* Grafici e diagrammi: in genere rappresentano dati numerici. Pertanto, un&#39;opzione per fornire un testo alternativo potrebbe essere quella di includere un breve riepilogo delle principali tendenze mostrate nel grafico o grafico. Se necessario, fornisci anche una descrizione più dettagliata nel testo utilizzando **Descrizione** campo in **Avanzate** scheda proprietà immagine. Inoltre, è possibile fornire i dati di origine in formato tabulare altrove nella pagina o nel sito.
+* Grafici e diagrammi: in genere rappresentano dati numerici. Pertanto, un&#39;opzione per fornire un testo alternativo potrebbe essere quella di includere un breve riepilogo delle principali tendenze mostrate nel grafico o grafico. Se necessario, fornisci anche una descrizione più dettagliata nel testo utilizzando il campo **Description** nella scheda **Advanced** delle proprietà dell&#39;immagine. Inoltre, è possibile fornire i dati di origine in formato tabulare altrove nella pagina o nel sito.
 * Mappe, diagrammi, diagrammi di flusso: per gli elementi grafici che forniscono dati spaziali (ad esempio, per la descrizione di relazioni tra oggetti o un processo), assicurati che il messaggio principale venga comunicato in formato testuale e che tali informazioni testuali vengano posizionate in prossimità di ciascun punto di dati associato. Per le mappe, potrebbe non risultare pratico fornire un equivalente di testo completo. Se la mappa ha lo scopo di aiutare le persone a individuare una posizione particolare, il testo alternativo dell’immagine della mappa può indicare brevemente *Mappa di X*, fornendo poi le indicazioni per tale posizione in un altro testo della pagina o attraverso il campo **Descrizione**, disponibile nella scheda **Avanzate** del componente **Immagine**.
 * CAPTCHA: un CAPTCHA è un *test di Turing pubblico completamente automatizzato per distinguere fra computer ed esseri umani*. Si tratta di un controllo di sicurezza utilizzato sulle pagine web per distinguere gli esseri umani da software dannosi, ma che può creare barriere di accessibilità. Si tratta di immagini che richiedono agli utenti di descrivere ciò che visualizzano, per poter superare un test di sicurezza. Non è possibile fornire un’alternativa testuale all’immagine, pertanto è necessario prendere in considerazione soluzioni alternative non grafiche. Il W3C fornisce diversi suggerimenti. Ognuno di questi approcci presenta pro e contro.
 
@@ -285,7 +285,7 @@ Segui le indicazioni fornite per [Audiodescrizione o tipo di media alternativo (
 
 ### Adattabile (1.3)  {#adaptable}
 
-[Linea guida 1.3 - Adattabile: creare contenuti che possano essere rappresentati in modalità differenti (ad esempio con un layout più semplice), senza perdere informazioni o struttura.](https://www.w3.org/TR/WCAG/#adaptable)
+[Linea guida 1.3 - Adattabile: creare contenuti che possano essere rappresentati in modi diversi (ad esempio con un layout più semplice), senza perdere informazioni o struttura.](https://www.w3.org/TR/WCAG/#adaptable)
 
 Questa linea guida copre i requisiti necessari per supportare le persone che:
 
@@ -307,7 +307,7 @@ Questo criterio di successo esiste affinché tali informazioni strutturali venga
 
 #### Come soddisfare il criterio - Informazioni e correlazioni (1.3.1)  {#how-to-meet-info-and-relationships}
 
-AEM consente di creare facilmente contenuti web significativi dal punto di vista semantico utilizzando gli elementi HTML appropriati. Apri il contenuto della pagina nell’editor Rich Text (un componente testo) e utilizza **Paraformat** menu (simbolo di paragrafo) per specificare l&#39;elemento strutturale appropriato, ad esempio paragrafo, intestazione e così via.
+AEM consente di creare facilmente contenuti web significativi dal punto di vista semantico utilizzando gli elementi HTML appropriati. Apri il contenuto della pagina nell&#39;editor Rich Text (un componente testo) e utilizza il menu **Formato paragrafo** (simbolo di paragrafo) per specificare l&#39;elemento strutturale appropriato (ad esempio paragrafo, intestazione e così via).
 
 Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizzando i seguenti elementi, dove necessario:
 
@@ -346,7 +346,7 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
 
 * **Enfasi**: utilizza l’elemento `<strong>` o `<em>` per indicare l’enfasi. Non utilizzare le intestazioni per evidenziare il testo all’interno dei paragrafi.
    * Evidenzia il testo che desideri mettere in evidenza.
-   * Fai clic su **B** icona (per `<strong>`) o **I** icona (per `<em>`) visualizzato all&#39;interno del **Proprietà** (assicurati che sia selezionato HTML).
+   * Fai clic sull&#39;icona **B** (per `<strong>`) o sull&#39;icona **I** (per `<em>`) nel pannello **Proprietà** (accertati che HTML sia selezionato).
 
      >[!NOTE]
      >
@@ -442,7 +442,7 @@ Allo stesso modo, le informazioni che richiedono di distinguere suoni diversi (a
 
 Assicurati che anche tutte le informazioni che si basano sulle caratteristiche visive del contenuto della pagina siano presentate in un formato alternativo.
 
-* Non fare affidamento alla posizione visiva per dare informazioni. Ad esempio, se desideri indirizzare gli utenti a un menu sul lato destro della pagina per accedere a ulteriori informazioni, non fare riferimento a *il menu a destra*; invece, assegna un nome al menu (ad esempio, tramite un’intestazione) e fai riferimento a tale nome nel testo.
+* Non fare affidamento alla posizione visiva per dare informazioni. Ad esempio, se desideri indirizzare gli utenti a un menu sul lato destro della pagina per accedere a ulteriori informazioni, non fare riferimento a *il menu sul lato destro*; invece, assegna un nome al menu (ad esempio, tramite un&#39;intestazione) e fai riferimento a tale nome nel testo.
 * Non fare affidamento sullo stile del testo (ad esempio, testo in grassetto o in corsivo) come unico modo per trasmettere le informazioni.
 
 >[!NOTE]
@@ -476,7 +476,7 @@ Ad esempio, una persona daltonica non è in grado di distinguere le tonalità di
 
 Inoltre, il colore non può essere percepito da persone che utilizzano browser di solo testo, dispositivi di visualizzazione in bianco e nero o una stampa in bianco e nero della pagina.
 
-Un ulteriore aspetto da considerare è il *selezionato* state di un elemento dell’interfaccia (ad esempio schede, interruttori, ecc.) che deve essere veicolato in un modo diverso rispetto al solo colore e a una semplice presentazione visiva. Per questi elementi può essere utile aggiungere pattern, forme e informazioni a livello di programmazione per creare un’esperienza completa, non basata su un senso specifico.
+Un ulteriore aspetto da considerare è lo stato *selected* di un elemento dell&#39;interfaccia, ad esempio schede e pulsanti di attivazione/disattivazione. Tale stato deve essere veicolato in un modo diverso rispetto al solo colore e a una semplice presentazione visiva. Per questi elementi può essere utile aggiungere pattern, forme e informazioni a livello di programmazione per creare un’esperienza completa, non basata su un senso specifico.
 
 #### Come soddisfare il criterio - Uso del colore (1.4.1)  {#how-to-meet-use-of-color}
 
@@ -842,7 +842,7 @@ Soprattutto, fai in modo che lo scopo di un collegamento sia chiaramente descrit
    * Testo: I nostri corsi serali per l’autunno 2010 - Dettagli.
    * Motivo: modificando leggermente il testo e la posizione dell’elemento di collegamento è possibile migliorare il testo di collegamento:
 
-I collegamenti dovrebbero essere formulati in modo coerente tra le pagine, in particolare per le barre di navigazione. Ad esempio, se si chiama un collegamento a una pagina specifica **Pubblicazione** su una pagina, utilizza il testo anche su altre pagine per garantire la coerenza.
+I collegamenti dovrebbero essere formulati in modo coerente tra le pagine, in particolare per le barre di navigazione. Ad esempio, se un collegamento a una pagina specifica è denominato **Pubblicazioni** in una pagina, utilizza il testo nelle altre pagine per garantire la coerenza.
 
 Al momento in cui scriviamo, l’uso degli attributi title per garantire che collegamenti simili presentati in una pagina forniscano informazioni univoche sulla destinazione implica alcuni problemi (ad esempio, “ulteriori informazioni” spesso fa riferimento a una serie di destinazioni diverse):
 
@@ -877,7 +877,7 @@ Benché sia consigliabile fornire un testo di collegamento che identifichi lo sc
 
 In alcuni casi, laddove in una pagina siano presenti diversi collegamenti (ciascuno dei quali fornisce la direzione di un collegamento con dettagli complessi ma necessari), può essere opportuno prevedere una versione alternativa della pagina web che mostri lo stesso contenuto, ma in cui il testo dei collegamenti non sia così dettagliato.
 
-In alternativa, è possibile utilizzare script in modo da fornire una quantità minima di testo nel collegamento, ma attivando un controllo appropriato posizionato nella parte superiore della pagina, il testo del collegamento è *espanso* in dettaglio. Un approccio simile consiste nell’utilizzare i CSS per *nascondi* il collegamento completo da parte di utenti normovedenti, ma lo invia comunque a tutti gli utenti di utilità di lettura dello schermo. Questo obiettivo non rientra nel campo di applicazione del presente documento, ma ulteriori informazioni su come raggiungerlo sono reperibili nel [Ulteriori informazioni - Scopo del collegamento (nel contesto) (2.4.4)](#more-information-link-purpose-in-context) sezione.
+In alternativa, è possibile utilizzare script in modo da fornire una quantità minima di testo all&#39;interno del collegamento, ma attivando un controllo appropriato posizionato nella parte superiore della pagina, il testo del collegamento viene *espanso* in ulteriori dettagli. Un approccio simile consiste nell&#39;utilizzare CSS per *nascondere* il collegamento completo agli utenti normovedenti, ma mostrarlo agli utenti di utilità di lettura dello schermo. Questo non rientra nell&#39;ambito di questo documento, ma ulteriori informazioni su come ottenere questo risultato sono disponibili nella sezione [Ulteriori informazioni - Scopo del collegamento (nel contesto) (2.4.4)](#more-information-link-purpose-in-context).
 
 #### Ulteriori informazioni - Scopo del collegamento (nel contesto) (2.4.4) {#more-information-link-purpose-in-context}
 
@@ -989,7 +989,7 @@ In AEM, la lingua predefinita della pagina viene impostata durante la creazione,
 
 * [Comprendere il criterio di successo 3.1.1](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
 * [Come soddisfare il criterio di successo 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
-* I codici sono basati sulla norma ISO 639-1. Un elenco più completo dei codici per ciascuna lingua è disponibile sul sito [Sito W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
+* I codici sono basati sulla norma ISO 639-1. Un elenco più completo dei codici per ogni lingua è disponibile nel sito [W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
 
 ### Parti in lingua (3.1.2)    {#language-of-parts}
 
@@ -1210,7 +1210,7 @@ Le etichette sono posizionate immediatamente a destra del campo.
 * Tutti gli altri componenti del modulo (ad esempio caselle di testo, caselle combinate):
 Le etichette sono posizionate immediatamente sopra o a sinistra del campo.
 
-In moduli semplici con funzionalità limitata, etichettare in modo appropriato `Submit` può fungere da etichetta per il campo adiacente (ad esempio, `Search`). Ciò è utile in situazioni in cui potrebbe risultare difficile trovare spazio per il testo dell’etichetta.
+Nei moduli semplici con funzionalità limitata, l&#39;etichettatura appropriata di un pulsante `Submit` può fungere da etichetta per il campo adiacente, ad esempio `Search`. Ciò è utile in situazioni in cui potrebbe risultare difficile trovare spazio per il testo dell’etichetta.
 
 #### Ulteriori informazioni - Etichette o istruzioni (3.3.2) {#more-information-labels-or-instructions}
 

@@ -23,14 +23,14 @@ Questo documento illustra in dettaglio questi due casi d’uso e mostra come sap
 
 >[!TIP]
 >
->Se non lo hai già fatto, controlla il documento [Introduzione all’editor universale](/help/implementing/universal-editor/introduction.md) per una panoramica e un valore completi di Universal Editor.
+>Se non lo hai già fatto, consulta il documento [Introduzione all&#39;editor universale](/help/implementing/universal-editor/introduction.md) per una panoramica completa e un valore dell&#39;editor universale.
 
 ## Casi d’uso {#use-cases}
 
 L’editor universale offre agli autori dei contenuti un editor visivo comodo e intuitivo, indipendentemente dal tipo di contenuto che creano. I due casi d’uso principali sono:
 
-* [Authoring WYSIWYG](#wysiwyg-authoring) : utilizza la console AEM Sites per gestire i contenuti e le pagine di authoring all’interno dell’AEM utilizzando l’editor universale
-* [Authoring headless](#headless-authoring) : crea contenuti nella tua applicazione headless personalizzata utilizzando l’Editor universale.
+* [Authoring WYSIWYG](#wysiwyg-authoring) - Utilizza la console AEM Sites per gestire i contenuti e creare pagine all&#39;interno dell&#39;AEM tramite l&#39;editor universale
+* [Authoring headless](#headless-authoring): creazione di contenuti nella tua applicazione headless personalizzata tramite l&#39;editor universale.
 
 ### Authoring WYSIWYG {#wysiwyg-authoring}
 
@@ -40,9 +40,9 @@ In questo modo è possibile beneficiare degli strumenti disponibili nella consol
 
 Se questo è il tuo caso d’uso, come prossimo passo, consulta i seguenti documenti per una panoramica completa su come iniziare a utilizzare Universal Editor in AEM.
 
-1. [Guida introduttiva per sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Introduzione al primo progetto Universal Editor in AEM
-1. [Creazione di blocchi instrumentati per l’utilizzo con l’editor universale](/help/edge/wysiwyg-authoring/create-block.md) - Scopri come dotare di strumenti i blocchi per rendere i contenuti modificabili nell’Editor universale
-1. [Modellazione dei contenuti per l’authoring WYSIWYG con progetti Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) - Scopri i dettagli della struttura dei blocchi per modellare in modo efficace i contenuti da utilizzare con Universal Editor.
+1. [Guida introduttiva per sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Introduzione al primo progetto Universal Editor nell&#39;AEM
+1. [Creazione di blocchi instrumentati per l&#39;utilizzo con Universal Editor](/help/edge/wysiwyg-authoring/create-block.md) - Scopri come dotare di strumenti i blocchi per rendere modificabili i contenuti nell&#39;Universal Editor
+1. [Modellazione dei contenuti per l&#39;authoring WYSIWYG con progetti di Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) - Scopri i dettagli della struttura dei blocchi per modellare in modo efficace i contenuti da utilizzare con l&#39;editor universale.
 
 Dopo aver letto questi documenti, puoi tornare a questa pagina per scoprire il caso d’uso dell’authoring headless e il funzionamento generale dell’Editor universale.
 
@@ -69,13 +69,13 @@ L’editor universale funziona nel modo seguente.
 1. L’autore del contenuto modifica il contenuto della pagina in un’interfaccia WYSIWYG intuitiva, modificando direttamente.
 1. L&#39;editor universale salva automaticamente le modifiche in AEM.
 
-Per ulteriori informazioni sull&#39;architettura di Universal Editor, consultare il documento [Architettura di Universal Editor.](/help/implementing/universal-editor/architecture.md)
+Per ulteriori informazioni sull&#39;architettura di Universal Editor, vedere il documento [Architettura di Universal Editor.](/help/implementing/universal-editor/architecture.md)
 
 ## Concetti relativi all’editor universale {#concepts}
 
 Affinché una pagina o un’app possa essere modificata dall’editor universale, deve essere dotata di strumenti appropriati. Una volta dotata di strumenti, può essere ulteriormente adattata alle esigenze del progetto.
 
-* [Attributi e tipi](/help/implementing/universal-editor/attributes-types.md) - Affinché un&#39;app o una pagina possa essere modificata dall&#39;editor universale, deve essere dotata di strumenti appropriati. Ciò include l’inclusione dei metadati corretti in modo che l’editor possa modificare il contenuto dell’app.
-* [Definizioni di modelli, campi e tipi di componenti](/help/implementing/universal-editor/field-types.md) - Una volta che i metadati sono presenti per abilitare la modifica di un componente, puoi definire quali campi e tipi di componenti possono essere manipolati nella barra delle proprietà dell’editor. A tale scopo, crea un modello e crea un collegamento a tale modello dal componente.
-* [Personalizzazione dell’esperienza di authoring di Universal Editor](/help/implementing/universal-editor/customizing.md) - Una volta che l’app o la pagina è completamente dotata di strumenti, l’esperienza dell’editor universale può essere ulteriormente adattata filtrando i componenti disponibili o estendendo le funzionalità dell’editor.
-* [Eventi editor universale](/help/implementing/universal-editor/events.md) - Puoi personalizzare ulteriormente l’app reagendo agli eventi standard inviati da Universal per le modifiche al contenuto e all’interfaccia utente.
+* [Attributi e tipi](/help/implementing/universal-editor/attributes-types.md) - Affinché un&#39;app o una pagina possa essere modificata dall&#39;editor universale, è necessario che sia dotata di strumenti appropriati. Ciò include l’inclusione dei metadati corretti in modo che l’editor possa modificare il contenuto dell’app.
+* [Definizioni modello, campi e tipi di componente](/help/implementing/universal-editor/field-types.md) - Una volta che i metadati sono presenti per consentire la modifica di un componente, puoi definire quali campi e tipi di componente possono essere modificati nella barra delle proprietà dell&#39;editor. A tale scopo, crea un modello e crea un collegamento a tale modello dal componente.
+* [Personalizzazione dell&#39;esperienza di authoring dell&#39;editor universale](/help/implementing/universal-editor/customizing.md) - Una volta che l&#39;app o la pagina è completamente dotata di strumenti, l&#39;esperienza dell&#39;editor universale può essere ulteriormente adattata filtrando i componenti disponibili o estendendo la funzionalità dell&#39;editor.
+* [Eventi editor universale](/help/implementing/universal-editor/events.md) - Puoi personalizzare ulteriormente l&#39;app reagendo agli eventi standard inviati da Universal alle modifiche al contenuto e all&#39;interfaccia utente.

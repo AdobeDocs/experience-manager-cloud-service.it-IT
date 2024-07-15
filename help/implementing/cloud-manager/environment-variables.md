@@ -40,10 +40,10 @@ Tra i casi d’uso tipici per l’utilizzo delle variabili di ambiente vi sono:
 >Per poter aggiungere o modificare le variabili di ambiente è necessario avere il ruolo [**Responsabile della distribuzione**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
 
 1. Accedi a Adobe Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Il giorno **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** , seleziona quella che desideri gestire.
-1. Dalla barra di navigazione laterale, seleziona la **Ambienti** per il programma scelto, quindi selezionare l&#39;ambiente per il quale si desidera creare una variabile di ambiente.
+1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** selezionare quello che si desidera gestire.
+1. Dalla barra di navigazione laterale, seleziona la finestra **Ambienti** per il programma scelto, quindi seleziona l&#39;ambiente per il quale desideri creare una variabile di ambiente.
 1. Nel dettaglio dell’ambiente seleziona la scheda **Configurazione**, quindi seleziona **Aggiungi** per aprire la finestra di dialogo **Configurazione ambiente**.
-   * Se stai aggiungendo una variabile di ambiente per la prima volta, puoi visualizzare un’ **Aggiungi configurazione** al centro della pagina. Apri la finestra di dialogo **Configurazione ambiente** con questo pulsante o con **Aggiungi**.
+   * Se stai aggiungendo una variabile di ambiente per la prima volta, puoi visualizzare un pulsante **Aggiungi configurazione** al centro della pagina. Apri la finestra di dialogo **Configurazione ambiente** con questo pulsante o con **Aggiungi**.
 
    ![Scheda Configurazione](assets/configuration-tab.png)
 
@@ -68,7 +68,7 @@ Nella parte superiore della tabella, a fianco della variabile appena aggiunta, v
 
 >[!TIP]
 >
->Per aggiungere più variabili, si consiglia di aggiungere la prima variabile e quindi utilizzare **Aggiungi** pulsante in **Configurazione ambiente** per aggiungere altre variabili. In questo modo è possibile aggiungerle all’ambiente con un unico aggiornamento.
+>Se desideri aggiungere più variabili, ti consigliamo di aggiungere la prima variabile e quindi di utilizzare il pulsante **Aggiungi** nella finestra di dialogo **Configurazione ambiente** per aggiungere altre variabili. In questo modo è possibile aggiungerle all’ambiente con un unico aggiornamento.
 
 ## Aggiornamento delle variabili di ambiente {#update-variables}
 
@@ -76,9 +76,9 @@ Dopo aver creato le variabili di ambiente, è possibile aggiornarle con il pulsa
 
 1. Accedi a Adobe Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager elenca i vari programmi disponibili. Seleziona quello che desideri gestire.
-1. Nel pannello di navigazione, seleziona la **Ambienti** per il programma scelto, quindi selezionare l&#39;ambiente per il quale si desidera modificare una variabile di ambiente.
+1. Nel pannello di navigazione, seleziona la finestra **Ambienti** per il programma scelto, quindi seleziona l&#39;ambiente per il quale desideri modificare una variabile di ambiente.
 1. Nel dettaglio dell’ambiente seleziona la scheda **Configurazione**, quindi seleziona **Aggiungi/aggiorna** in alto a destra per aprire la finestra di dialogo **Configurazione ambiente**.
-1. Utilizzando il pulsante con i puntini di sospensione nell’ultima colonna della riga della variabile che desideri modificare, seleziona **Modifica** o **Elimina**.
+1. Utilizzando il pulsante con i puntini di sospensione nell&#39;ultima colonna della riga della variabile da modificare, selezionare **Modifica** o **Elimina**.
 
    ![Modifica o elimina variabile](assets/edit-delete-variable.png)
 
@@ -94,7 +94,7 @@ Dopo aver creato le variabili di ambiente, è possibile aggiornarle con il pulsa
 
 >[!TIP]
 >
->Per aggiornare più variabili, si consiglia di utilizzare il **Configurazione ambiente** per aggiornare tutte le variabili necessarie contemporaneamente prima di toccare o fare clic su **Salva**. In questo modo è possibile aggiungerle all’ambiente con un unico aggiornamento.
+>Per aggiornare più variabili, si consiglia di utilizzare la finestra di dialogo **Configurazione ambiente** per aggiornare tutte le variabili necessarie contemporaneamente prima di toccare o fare clic su **Salva**. In questo modo è possibile aggiungerle all’ambiente con un unico aggiornamento.
 
 ## Utilizzo delle variabili di ambiente {#using}
 
@@ -118,7 +118,7 @@ Negli ambienti di authoring, anteprima e pubblicazione è possibile utilizzare s
 
 ### Dispatcher {#dispatcher}
 
-Solo le variabili di ambiente normali possono essere utilizzate dal [Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) I segreti non possono essere utilizzati.
+Solo le variabili di ambiente normali possono essere utilizzate dal [Dispatcher.Impossibile utilizzare ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) segreti.
 
 Tuttavia, le variabili di ambiente non possono essere utilizzate in `IfDefine` direttive.
 

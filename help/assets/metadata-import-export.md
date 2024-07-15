@@ -24,8 +24,8 @@ L’importazione dei metadati è asincrona e non impedisce le prestazioni del si
 >
 >Per importare metadati su spazi dei nomi personalizzati, registra innanzitutto gli spazi dei nomi.
 
-1. Accedi a [!DNL Assets] interfaccia utente, selezionare **[!UICONTROL Crea]** dalla barra degli strumenti e seleziona **[!UICONTROL Metadati]** dal menu.
-1. In **[!UICONTROL Importazione metadati]** pagina, fai clic su **[!UICONTROL Seleziona file]**. Scegli il file CSV con i metadati.
+1. Passa all&#39;interfaccia utente [!DNL Assets], seleziona **[!UICONTROL Crea]** dalla barra degli strumenti e seleziona **[!UICONTROL Metadati]** dal menu.
+1. Nella pagina **[!UICONTROL Importazione metadati]**, fare clic su **[!UICONTROL Seleziona file]**. Scegli il file CSV con i metadati.
 1. Fornisci i seguenti parametri:
 
    | Parametro | Descrizione |
@@ -33,14 +33,14 @@ L’importazione dei metadati è asincrona e non impedisce le prestazioni del si
    | Dimensione batch | Numero di risorse in un batch per le quali devono essere importati i metadati. Il valore predefinito è 50. Il valore massimo è 100. |
    | Separatore di campi | Il valore predefinito è `,` (una virgola). È possibile specificare qualsiasi altro carattere. |
    | Delimitatore multivalore | Separatore per i valori dei metadati. Il valore predefinito è `|`. |
-   | Avvia flussi di lavoro | False per impostazione predefinita. Se impostato su `true` e le impostazioni predefinite sono attive per il flusso di lavoro Writeback di metadati DAM (che scrive i metadati nei dati binari XMP). L’abilitazione dei flussi di lavoro rallenta il sistema. |
+   | Avvia flussi di lavoro | False per impostazione predefinita. Se è impostato su `true` e sono attive le impostazioni predefinite per il flusso di lavoro Writeback di metadati DAM (che scrive i metadati nei dati binari XMP). L’abilitazione dei flussi di lavoro rallenta il sistema. |
    | Nome colonna percorso risorsa | Definisce il nome della colonna per il file CSV con le risorse. |
 
-1. Seleziona **[!UICONTROL Importa]** dalla barra degli strumenti. Dopo l’importazione dei metadati, viene inviata una notifica alla casella in entrata delle notifiche. Passa alla pagina delle proprietà della risorsa e verifica che i valori dei metadati siano importati correttamente per le risorse.
+1. Seleziona **[!UICONTROL Importa]** nella barra degli strumenti. Dopo l’importazione dei metadati, viene inviata una notifica alla casella in entrata delle notifiche. Passa alla pagina delle proprietà della risorsa e verifica che i valori dei metadati siano importati correttamente per le risorse.
 
-1. Per aggiungere data e marca temporale per importare i metadati, utilizza `YYYY-MM-DDThh:mm:ss.fff-00:00` formato per data e ora. Data e ora sono separate da `T`, `hh` è il numero di ore nel formato 24 ore, `fff` è nanosecondi, e `-00:00` è lo scostamento del fuso orario. Ad esempio: `2020-03-26T11:26:00.000-07:00` è il 26 marzo 2020 alle 11:26:00.000 PST.
+1. Per aggiungere data e timestamp per importare i metadati, utilizzare il formato `YYYY-MM-DDThh:mm:ss.fff-00:00` per data e ora. La data e l&#39;ora sono separate da `T`, `hh` è in ore nel formato 24 ore, `fff` è in nanosecondi e `-00:00` è in offset fuso orario. Ad esempio, `2020-03-26T11:26:00.000-07:00` è il 26 marzo 2020 alle 11:26:00.000 PST.
 
-   * Il formato della data dipende dall’intestazione della colonna e dal formato in essa contenuto. Ad esempio, se la data è in formato reclamo `yyyy-MM-dd'T'HH:mm:ssXXX` quindi la rispettiva intestazione di colonna deve essere `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
+   * Il formato della data dipende dall’intestazione della colonna e dal formato in essa contenuto. Ad esempio, se la data è un reclamo con formato `yyyy-MM-dd'T'HH:mm:ssXXX`, la rispettiva intestazione di colonna deve essere `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
    * Il formato di data predefinito è `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
 
 <!-- Hidden via cqdoc-17869>
@@ -52,7 +52,7 @@ L’importazione dei metadati è asincrona e non impedisce le prestazioni del si
 
 ## Esporta metadati {#export-metadata}
 
-Puoi esportare i metadati per più risorse in formato CSV. I metadati vengono esportati in modo asincrono e non influiscono sulle prestazioni del sistema. Per esportare i metadati, Experience Manager scorre le proprietà del nodo della risorsa `jcr:content/metadata` e i relativi nodi secondari ed esporta le proprietà dei metadati in un file CSV.
+Puoi esportare i metadati per più risorse in formato CSV. I metadati vengono esportati in modo asincrono e non influiscono sulle prestazioni del sistema. Per esportare i metadati, Experience Manager analizza le proprietà del nodo risorsa `jcr:content/metadata` e dei relativi nodi figlio ed esporta le proprietà dei metadati in un file CSV.
 
 Alcuni casi d’uso per l’esportazione in blocco di metadati sono:
 
@@ -63,23 +63,23 @@ Alcuni casi d’uso per l’esportazione in blocco di metadati sono:
 
 >[!NOTE]
 >
->Le esportazioni di metadati sono limitate a 1.048.575 risorse, corrispondenti alle dimensioni massime del foglio di lavoro in Microsoft Excel. Se una gerarchia esportata contiene più di questo numero di risorse, nel file CSV verranno inclusi solo i metadati delle prime 1.048.575 risorse.
+>Le esportazioni di metadati sono limitate a 1.048.575 Assets, corrispondenti alle dimensioni massime del foglio di lavoro in Microsoft Excel. Se una gerarchia esportata contiene più di questo numero di Assets, nel file CSV verranno inclusi solo i metadati del primo Assets 1.048.575.
 
-1. Seleziona la cartella delle risorse contenente le risorse di cui desideri esportare i metadati. Dalla barra degli strumenti, seleziona **[!UICONTROL Esportare i metadati]**.
-1. Nella finestra di dialogo Esportazione metadati, specifica un nome per il file CSV. Per esportare i metadati per le risorse nelle sottocartelle, seleziona **[!UICONTROL Includere le risorse nelle sottocartelle]**.
+1. Seleziona la cartella delle risorse contenente le risorse di cui desideri esportare i metadati. Dalla barra degli strumenti, seleziona **[!UICONTROL Esporta metadati]**.
+1. Nella finestra di dialogo Esportazione metadati, specifica un nome per il file CSV. Per esportare i metadati per le risorse nelle sottocartelle, selezionare **[!UICONTROL Includi risorse nelle sottocartelle]**.
 
    ![Interfaccia e opzioni per esportare i metadati di tutte le risorse in una cartella](assets/export_metadata_page.png "Interfaccia e opzioni per esportare i metadati di tutte le risorse in una cartella")
 
 1. Seleziona le opzioni desiderate. Fornisci un nome file e, se necessario, una data.
 
-1. In **[!UICONTROL Proprietà da esportare]** , specificare se si desidera esportare tutte le proprietà o proprietà specifiche. Se selezioni Proprietà selettive da esportare, aggiungi le proprietà desiderate.
+1. Nel campo **[!UICONTROL Proprietà da esportare]**, specificare se si desidera esportare tutte le proprietà o proprietà specifiche. Se selezioni Proprietà selettive da esportare, aggiungi le proprietà desiderate.
 
 1. Dalla barra degli strumenti, seleziona **[!UICONTROL Esporta]**. Un messaggio conferma che i metadati vengono esportati. Chiudi il messaggio.
-1. Apri la notifica della casella in entrata del processo di esportazione. Seleziona il processo e fai clic su **[!UICONTROL Apri]** nella barra degli strumenti. Per scaricare il file CSV con i metadati, seleziona **[!UICONTROL Download CSV]** dalla barra degli strumenti. Fai clic su **[!UICONTROL Chiudi]**.
+1. Apri la notifica della casella in entrata del processo di esportazione. Seleziona il processo e fai clic su **[!UICONTROL Apri]** nella barra degli strumenti. Per scaricare il file CSV con i metadati, seleziona **[!UICONTROL Scarica CSV]** nella barra degli strumenti. Fai clic su **[!UICONTROL Chiudi]**.
 
    ![Finestra di dialogo per scaricare il file CSV contenente i metadati esportati in blocco](assets/csv_download.png)
 
-   *Figura: Finestra di dialogo per scaricare il file CSV contenente i metadati esportati in blocco.*
+   *Figura: finestra di dialogo per scaricare il file CSV contenente i metadati esportati in blocco.*
 
 **Consulta anche**
 
@@ -98,4 +98,4 @@ Alcuni casi d’uso per l’esportazione in blocco di metadati sono:
 
 >[!MORELIKETHIS]
 >
->* [Importare metadati durante l’importazione di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor)
+>* [Importa metadati durante l&#39;importazione di risorse in blocco](/help/assets/add-assets.md#asset-bulk-ingestor)

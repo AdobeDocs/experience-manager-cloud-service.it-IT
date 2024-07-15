@@ -66,7 +66,7 @@ Puoi aggiungere nuove attività ai progetti. Queste attività vengono visualizza
 
 Per aggiungere un’attività:
 
-1. Nel progetto, nella sezione **Attività** , seleziona l’icona +. Si apre la finestra **Aggiungi attività**.
+1. Nel progetto, nella sezione **Attività**, seleziona l&#39;icona +. Si apre la finestra **Aggiungi attività**.
 1. Inserisci le informazioni sull’attività. Il titolo dell’attività e il gruppo a cui è assegnata sono obbligatori. Informazioni aggiuntive, tra cui il percorso del contenuto, la descrizione, la priorità dell’attività e la data di scadenza, sono facoltative. Inoltre, puoi selezionare la scheda **Avanzate**, per inserire il nome dell’attività che viene usato per assegnare un nome all’URL.
 
    ![Aggiungi un’attività](/help/sites-cloud/authoring/assets/projects-add-task.png)

@@ -67,7 +67,7 @@ Tieni presente che AEM dispone di due approcci principali per la creazione di Li
 
 Di seguito sono riportate alcune considerazioni da tenere a mente durante la creazione di un sito:
 
-* Per creare un sito, è necessario [configurazione blueprint](creating-live-copies.md#managing-blueprint-configurations).
+* Per creare un sito, è necessaria una [configurazione blueprint](creating-live-copies.md#managing-blueprint-configurations).
 * Per consentire la selezione dei percorsi linguistici da creare in un nuovo sito, le lingue root corrispondenti devono esistere nella blueprint (sorgente).
 * Una volta creato un [nuovo sito come Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (usando **Crea**, poi **Sito**), i primi due livelli di questa Live Copy sono *shallow*. Gli elementi figli della pagina non appartengono alla relazione live, ma se viene trovata una relazione live corrispondente al trigger, verrà comunque generato un rollout.
 
@@ -141,7 +141,7 @@ Pertanto, ti consigliamo di utilizzare i trigger `onModify` solo se i vantaggi d
 
 ### Tipi di nodo/proprietà {#node-types-properties}
 
-Oltre a personalizzare le azioni di rollout, MSM ti consente anche di personalizzare le proprietà dei nodi in fase di rollout. Il [La configurazione MSM OSGi consente di escludere i tipi di nodo](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) dall&#39;origine alla Live Copy.
+Oltre a personalizzare le azioni di rollout, MSM ti consente anche di personalizzare le proprietà dei nodi in fase di rollout. La configurazione OSGi [MSM ti consente di escludere i tipi di nodo](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) dall&#39;essere copiati dal sorgente alla Live Copy.
 
 ## Ulteriori informazioni {#further-information}
 

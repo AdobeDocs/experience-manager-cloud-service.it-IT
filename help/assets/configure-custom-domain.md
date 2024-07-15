@@ -24,14 +24,14 @@ In Adobe Cloud Manager, puoi dare risalto al tuo sito web aggiungendo un dominio
 
 Per configurare un dominio personalizzato per il livello di pubblicazione, effettua le seguenti operazioni:
 
-1. Vai a **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Panoramica del programma]** > **[!UICONTROL Certificati SSL]**e aggiungi il certificato SSL.
+1. Vai a **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Panoramica del programma]** > **[!UICONTROL Certificati SSL]** e aggiungi il tuo certificato SSL.
    ![immagine](/help/assets/assets/ssl-certificate.png)
-Scopri come aggiungere [Certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) in Adobe Cloud Manager.
+Scopri come aggiungere il [certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) in Adobe Cloud Manager.
 
-1. Dopo aver aggiunto il certificato SSL, aggiungi un dominio personalizzato. Clic **[!UICONTROL Impostazioni dominio]** e specifica il dominio personalizzato rispetto al **[!UICONTROL servizio Publish]** opzione.
-Ulteriori informazioni su [dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+1. Dopo aver aggiunto il certificato SSL, aggiungi un dominio personalizzato. Fai clic su **[!UICONTROL Impostazioni dominio]** e specifica il dominio personalizzato in base all&#39;opzione **[!UICONTROL Servizio Publish]**.
+Ulteriori informazioni sul [dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-1. Aggiungi 2 [Record CNAME](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) nel record DNS corrispondente ai domini di pubblicazione.
+1. Aggiungi 2 [record CNAME](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) nel record DNS corrispondenti ai domini di pubblicazione.
 L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritardi di propagazione del DNS.
 
 1. Segnala un caso di supporto per facilitare la configurazione del dominio personalizzato, garantendo che venga indirizzato al livello di consegna.

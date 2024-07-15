@@ -20,13 +20,13 @@ ht-degree: 9%
 >title="Test funzionali"
 >abstract="Scopri i tre diversi tipi di test funzionali integrati nel processo di distribuzione di AEM as a Cloud Service per garantire la qualità e l’affidabilità del codice."
 
-Scopri i gate di qualità disponibili nella sezione [Processo di implementazione as a Cloud Service dell’AEM](/help/implementing/cloud-manager/deploy-code.md), i diversi tipi di test funzionali incorporati, come contribuire e come utilizzarli al meglio nel contesto di una strategia di test globale.
+Scopri i gate di qualità disponibili nel [processo di distribuzione di AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md), i diversi tipi di test funzionali incorporati, come contribuire e come utilizzarli al meglio nel contesto di una strategia di test globale.
 
 ## Panoramica
 
-Il diagramma seguente fornisce una panoramica di alto livello delle pipeline disponibili nel contesto di una strategia di test complessiva e [Processo di implementazione as a Cloud Service dell’AEM](/help/implementing/cloud-manager/deploy-code.md).
+Il diagramma seguente fornisce una panoramica di alto livello delle pipeline disponibili nel contesto di una strategia complessiva di test e del [processo di distribuzione di AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 
-![gate di qualità dell’implementazione di AEM Cloud Service](assets/functional-testing/quality-gates-compact.svg)
+![Gate di qualità della distribuzione di AEM Cloud Service](assets/functional-testing/quality-gates-compact.svg)
 
 ## Scopo
 
@@ -40,41 +40,42 @@ I gate di qualità incorporati convalidano principalmente la funzionalità del p
 
 ## Gate di qualità
 
-Il diagramma seguente fornisce una panoramica dettagliata dei gate di qualità disponibili e del loro utilizzo nella strategia complessiva di test e nella [Processo di implementazione as a Cloud Service dell’AEM](/help/implementing/cloud-manager/deploy-code.md).
+Il diagramma seguente fornisce una visualizzazione dettagliata dei gate di qualità disponibili e del loro utilizzo nella strategia complessiva di test e nel [processo di distribuzione di AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 
-![gate di qualità dell’implementazione di AEM Cloud Service](assets/functional-testing/quality-gates-overview.svg)
+![Gate di qualità della distribuzione di AEM Cloud Service](assets/functional-testing/quality-gates-overview.svg)
 
 ### Riepilogo dei gate di qualità forniti dal cliente
 
-|                               | Test di unità | Personalizzato<br/> Test funzionali | Personalizzato<br/> Test dell’interfaccia utente | Cliente<br/> Convalide | Manuale<br/> Test |
+|                               | Test di unità | Test funzionali <br/> personalizzati | Test dell&#39;interfaccia utente <br/> personalizzati | Customer<br/> Validations | Test <br/> manuali |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
-| **Pipeline di produzione** | Sì<br/>Blocco<br/> | Sì<br/>Blocco<br/>Timeout 60 m | Sì<br/>Blocco<br/>Timeout 30 m | No | No |
-| **Pipeline non di produzione** | Sì<br/>Blocco<br/> | Opt-in<br/>Blocco<br/>Timeout 60 m | Opt-in<br/>Blocco<br/>Timeout 30 m | No | No |
-| **Adobe di convalida interna** | Sì<br/>Blocco<br/> | Sì<br/>Blocco<br/>Timeout 60 m | Sì<br/>Blocco<br/>Timeout 30 m | No | No |
-| **CI/CD cliente** | Sì | Sì | Sì | Sì | Sì |
-| **Sviluppatore locale del cliente** | Sì | Sì | Sì | Sì | Sì |
+| **Pipeline di produzione** | Sì<br/>Blocco<br/> | Sì<br/>Timeout blocco<br/>60m | Sì<br/>Timeout blocco<br/>30m | No | No |
+| **Pipeline non di produzione** | Sì<br/>Blocco<br/> | Consenso<br/>Blocco<br/>Timeout di 60m | Consenso<br/>Blocco<br/>Timeout di 30m | No | No |
+| **Adobe convalida interna** | Sì<br/>Blocco<br/> | Sì<br/>Timeout blocco<br/>60m | Sì<br/>Timeout blocco<br/>30m | No | No |
+| **IC cliente/CD** | Sì | Sì | Sì | Sì | Sì |
+| **Sviluppatore locale cliente** | Sì | Sì | Sì | Sì | Sì |
 
 ### Test di unità
 
 Ti invitiamo a fornire gli unit test per l’applicazione AEM, su cui si basa ogni strategia di test. Hanno lo scopo di essere veloci e frequenti e di fornire feedback rapidi e tempestivi. Sono strettamente integrati nei flussi di lavoro per sviluppatori, nel tuo CI/CD e nelle pipeline di implementazione del servizio cloud AEM.
 
-Vengono implementati utilizzando JUnit e vengono eseguiti con Maven. Consulta [modulo core del progetto Archetipo AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) ad esempio, unit test per AEM e guida introduttiva.
+Vengono implementati utilizzando JUnit e vengono eseguiti con Maven. Per un esempio di unit test per AEM e per una guida introduttiva, consulta il modulo [core dell&#39;Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests).
 
 ### Qualità del codice
 
 Questo gate di qualità è configurato come preconfigurato ed esegue l’analisi del codice statico sul codice dell’applicazione AEM.
 
-Consulta [Test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md) e [Regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md) per ulteriori informazioni.
+Per ulteriori informazioni, vedere [Test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md) e [Regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ### Test del prodotto
 
 I test funzionali del prodotto sono una serie di test stabili di integrazione HTTP (IT) delle funzionalità principali in AEM, come le attività di authoring e replica. Adobe li fornisce e li mantiene pronti all’uso. Queste misure hanno lo scopo di impedire l’implementazione di modifiche al codice personalizzato dell’applicazione nel caso in cui interrompano le funzionalità principali del prodotto AEM.
 
-Vengono implementati utilizzando Junit, vengono eseguiti utilizzando Maven e utilizzano il [Client di test AEM](https://github.com/adobe/aem-testing-clients). La suite di test del prodotto viene mantenuta come [progetto open-source](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), segue le best practice e può essere considerato un buon punto di partenza per l’implementazione dei test.
+Vengono implementati utilizzando Junit, vengono eseguiti utilizzando Maven e utilizzano i [client di test AEM](https://github.com/adobe/aem-testing-clients) ufficiali. La suite di test del prodotto viene mantenuta come
+un [progetto open-source](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), segue le best practice e può essere considerato un buon punto di partenza per l&#39;implementazione dei test.
 
 ### Test funzionali personalizzati
 
-Come i test del prodotto, i test funzionali del cliente sono test di integrazione HTTP (IT) e sono anche implementati utilizzando Junit, vengono eseguiti utilizzando Maven e costruiti sul server ufficiale [Client di test AEM](https://github.com/adobe/aem-testing-clients).
+Come i test di prodotto, i test funzionali del cliente sono test di integrazione HTTP (IT) e sono anche implementati utilizzando Junit, vengono eseguiti utilizzando Maven e generati sui [client di test AEM](https://github.com/adobe/aem-testing-clients) ufficiali.
 
 >[!NOTE]
 >
@@ -82,7 +83,7 @@ Come i test del prodotto, i test funzionali del cliente sono test di integrazion
 
 Per mantenere efficienti le esecuzioni della pipeline, consigliamo di concentrarsi sulle funzioni chiave e sui flussi di interazione dell’utente principale. Si consiglia un tempo di esecuzione di circa 15 minuti o meno per i test funzionali. Si consiglia di eseguire suite di test funzionali complete che non rientrano in questo gate di qualità come parte delle pipeline di convalida generali del cliente durante il flusso di sviluppo del cliente.
 
-Consulta [test di prodotto open source](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) o [Modulo it.tests di Archetipo progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html) ad esempio.
+Per esempi, consulta [test di prodotto open source](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) o il modulo [it.tests dell&#39;Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html).
 
 Consulta [Test funzionali Java](/help/implementing/cloud-manager/java-functional-testing.md) per ulteriori informazioni.
 
@@ -96,29 +97,29 @@ I test sono inclusi in un’immagine Docker, progettata per essere il più volat
 >
 >I test personalizzati dell’interfaccia utente vengono eseguiti nelle pipeline di produzione e non di produzione (opt-in) utilizzate dalle modifiche dell’applicazione AEM, dalle implementazioni e dagli aggiornamenti push dei prodotti AEM e rappresentano pertanto un contributo chiave per garantire il corretto funzionamento dell’applicazione e aumentare la sicurezza della versione. I test dell’interfaccia utente del cliente vengono eseguiti anche in pipeline interne di convalida pre-release per ogni cliente, per fornire un feedback tempestivo.
 >
->I contenitori non Selenium devono eseguire test utilizzando un proxy HTTP basato sulle variabili di ambiente in [Sezione Test dell’interfaccia utente.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+>I contenitori non Selenium devono eseguire i test utilizzando un proxy HTTP basato sulle variabili di ambiente nella [sezione dei test dell&#39;interfaccia utente.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 Per mantenere efficienti le esecuzioni della pipeline, consigliamo di concentrarci sulle funzioni chiave e sui principali flussi di interazione degli utenti. Si consiglia di eseguire suite di test dell’interfaccia utente complete che non rientrano in questo gate di qualità come parte delle pipeline di convalida generali del cliente durante il flusso di sviluppo del cliente.
 
-Consulta [esempi di test open source](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) o [Modulo ui.tests di Archetipo progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html) ad esempio.
+Per esempi, consulta [esempi open source](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) o il modulo [ui.tests dell&#39;Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html).
 
 Consulta [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) per ulteriori informazioni.
 
 ### Audit dell’esperienza
 
-Il gate di qualità dell’audit dell’esperienza sta eseguendo [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) controlli di audit sulla pagina web del cliente.
+Il gate di qualità dell&#39;audit dell&#39;esperienza sta eseguendo [controlli Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) sulla pagina Web del cliente.
 
-Questo gate di qualità è fornito da AEM predefinito, ma non blocca le pipeline di distribuzione. Per impostazione predefinita, un controllo di audit sulla pagina principale (`/`) dell&#39;istanza Publish. Puoi contribuire configurando fino a 25 percorsi personalizzati considerati per i controlli di audit.
+Questo gate di qualità è fornito da AEM predefinito, ma non blocca le pipeline di distribuzione. Per impostazione predefinita, viene eseguito un controllo di audit sulla pagina principale (`/`) dell&#39;istanza Publish. Puoi contribuire configurando fino a 25 percorsi personalizzati considerati per i controlli di audit.
 
-Consulta [Test di Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) per ulteriori informazioni.
+Per ulteriori informazioni, vedere [Test di verifica dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 ### Convalide cliente
 
 Il gate di qualità delle convalide del cliente è un segnaposto per la strategia e l’impegno di test del cliente stesso, eseguiti prima che le modifiche dell’applicazione del cliente raggiungano le pipeline di implementazione cloud dell’AEM.
 
-Qui puoi scegliere gli strumenti e i framework che preferisci. A differenza dei test delle funzioni dei clienti e dei test dell’interfaccia utente personalizzati, non esistono limiti correlati all’AEM as a Cloud Service e pertanto consigliamo di eseguire qui test funzionali e dell’interfaccia utente di lunga durata.
+Qui puoi scegliere gli strumenti e i framework che preferisci. A differenza dei test delle funzioni dei clienti e dei test dell’interfaccia utente personalizzati, non esistono limiti relativi ad AEM as a Cloud Service e pertanto consigliamo di eseguire qui test funzionali e dell’interfaccia utente di lunga durata.
 
-Anche se sei libero di scegliere qualsiasi strumento e framework, ti consigliamo di allineare i test di integrazione e i test dell’interfaccia utente basati su HTTP con gli strumenti e i framework disponibili nei test funzionali personalizzati e nei gate di qualità dei test dell’interfaccia utente personalizzati. Si consiglia di integrare [Ambienti di sviluppo rapido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) nella tua strategia di test locale per eseguire test il più vicino possibile agli ambienti cloud AEM.
+Anche se sei libero di scegliere qualsiasi strumento e framework, ti consigliamo di allineare i test di integrazione e i test dell’interfaccia utente basati su HTTP con gli strumenti e i framework disponibili nei test funzionali personalizzati e nei gate di qualità dei test dell’interfaccia utente personalizzati. È consigliabile integrare [ambienti di sviluppo rapido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) nella strategia di test locale per eseguire test il più vicino possibile agli ambienti cloud AEM.
 
 ### Test manuale
 

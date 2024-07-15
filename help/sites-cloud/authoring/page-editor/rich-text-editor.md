@@ -18,7 +18,7 @@ L’editor Rich Text è un componente di base per aggiungere di contenuti di tes
 
 ## Modifica diretta {#in-place-editing}
 
-Selezionando un componente basato su testo con un solo clic per visualizzare [barra degli strumenti del componente.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+Selezione di un componente basato su testo con un solo clic per visualizzare la barra degli strumenti del componente [.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
 
 ![Barra degli strumenti del componente](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 

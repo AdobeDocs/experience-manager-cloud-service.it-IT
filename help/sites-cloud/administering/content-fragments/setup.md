@@ -14,7 +14,7 @@ ht-degree: 37%
 
 # Frammenti di contenuto - Configurazione {#content-fragments-setup}
 
-I frammenti di contenuto as a Cloud Service all’interno di Adobe Experience Manager (AEM) consentono di preparare contenuti pronti per l’uso in più posizioni e su più canali. È ideale per la distribuzione headless e l’authoring delle pagine.
+I Frammenti di contenuto all’interno di Adobe Experience Manager (AEM) as a Cloud Service consentono di preparare contenuti pronti per l’uso in più posizioni e su più canali. È ideale per la distribuzione headless e l’authoring delle pagine.
 
 Per abilitare la tua istanza per la funzionalità Frammento di contenuto è necessario abilitare:
 
@@ -24,7 +24,7 @@ Per abilitare la tua istanza per la funzionalità Frammento di contenuto è nece
   >
   >Se non si abilita **Modelli per frammenti di contenuto**:
   >
-  >* il **Crea** non sarà disponibile per la creazione di modelli.
+  >* l&#39;opzione **Crea** non sarà disponibile per la creazione di modelli.
   >* non potrai [selezionare la configurazione Sites per creare il relativo endpoint](/help/headless/graphql-api/graphql-endpoint.md).
 
 * **Query GraphQL persistenti**: facoltativo
@@ -32,15 +32,15 @@ Per abilitare la tua istanza per la funzionalità Frammento di contenuto è nece
 Configurazione dell’istanza completata:
 
 * da [abilitazione della funzionalità nel browser configurazioni](#enable-content-fragment-functionality-configuration-browser)
-* allora [applicazione della configurazione alle singole cartelle di Assets](#apply-the-configuration-to-your-folder)
+* quindi [applicare la configurazione alle singole cartelle di Assets](#apply-the-configuration-to-your-folder)
 
 ## Abilitare la funzionalità Frammenti di contenuto nel browser configurazioni {#enable-content-fragment-functionality-configuration-browser}
 
-Per utilizzare la funzionalità Frammento di contenuto, dei modelli di Frammento di contenuto e delle query persistenti di GraphQL, puoi **deve** per prima cosa abilitarli tramite **Browser configurazioni**:
+Per utilizzare la funzionalità Frammento di contenuto dei modelli di Frammento di contenuto e delle query persistenti di GraphQL, **devi** prima abilitarli tramite il **Browser configurazioni**:
 
 >[!NOTE]
 >
->Per ulteriori dettagli, consulta [Browser configurazioni](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Per ulteriori dettagli, vedere [Browser configurazioni](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
@@ -59,8 +59,8 @@ Per utilizzare la funzionalità Frammento di contenuto, dei modelli di Frammento
 1. Utilizza **Crea** per aprire la finestra di dialogo, in cui:
 
    1. Specificare un **Titolo**.
-   1. Al momento della creazione, il **Nome** diventa il nome del nodo nell’archivio.
-È possibile immettere un nome. Se lasci vuoto il campo, questo viene generato automaticamente in base al titolo, quindi regolato in base a [Convenzioni di denominazione AEM](/help/implementing/developing/introduction/naming-conventions.md); se necessario, è possibile regolare il risultato.
+   1. Al momento della creazione, **Name** diventa il nome del nodo nell&#39;archivio.
+È possibile immettere un nome. Se si lascia vuoto il campo, questo verrà generato automaticamente in base al titolo, quindi regolato in base alle [convenzioni di denominazione AEM](/help/implementing/developing/introduction/naming-conventions.md). Se necessario, sarà possibile modificare il risultato.
    1. Per attivarne l’uso, seleziona
       * **Modelli per frammenti di contenuto**
       * **Query persistenti GraphQL**
@@ -71,8 +71,8 @@ Per utilizzare la funzionalità Frammento di contenuto, dei modelli di Frammento
 
 ## Applicare la configurazione alla cartella {#apply-the-configuration-to-your-folder}
 
-Quando la configurazione **globale** è abilitato per la funzionalità Frammento di contenuto, quindi si applica a qualsiasi cartella Risorse accessibile tramite **Risorse** console.
+Quando la configurazione **global** è abilitata per la funzionalità Frammento di contenuto, viene applicata a qualsiasi cartella Assets accessibile tramite la console **Assets**.
 
-Per utilizzare altre configurazioni (escludendo quindi globali) con una cartella Risorse simile, è necessario definire la connessione. A tale scopo, seleziona il **Configurazione** nel **Cloud Service** scheda di **Proprietà cartella** della cartella appropriata.
+Per utilizzare altre configurazioni con una cartella Assets simile, escludendo quindi quelle globali, è necessario definire la connessione. A tale scopo, selezionare la **Configurazione** appropriata nella scheda **Cloud Service** delle **Proprietà cartella** della cartella appropriata.
 
 ![Applica configurazione](assets/cf-setup-apply-conf.png)

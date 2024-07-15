@@ -33,7 +33,7 @@ Questa pagina fornisce una panoramica del riutilizzo dei contenuti con MSM. Nell
 
 >[!NOTE]
 >
->MSM può essere utilizzato anche per Assets, inclusi i frammenti di contenuto. Consulta [Riutilizzare i frammenti di contenuto con MSM per le risorse](/help/assets/reuse-assets-using-msm.md) (disponibile solo tramite la console Risorse ).
+>MSM può essere utilizzato anche per Assets, inclusi i frammenti di contenuto. Vedi [Riutilizzare i frammenti di contenuto utilizzando MSM per Assets](/help/assets/reuse-assets-using-msm.md) (disponibile solo tramite la console Assets).
 
 ## Scenari possibili {#possible-scenarios}
 
@@ -115,14 +115,14 @@ MSM è direttamente accessibile nell’interfaccia utente utilizzando diverse op
 
 * **Crea sito** (**Sites**)
 
-   * MSM consente di gestire più siti web che condividono contenuti comuni. Ad esempio, i siti web sono spesso disponibili per il pubblico internazionale in modo che la maggior parte dei contenuti sia comune in tutti i Paesi, con un sottoinsieme di contenuti specifici per il singolo Paese. MSM consente di: [crea Live Copy che aggiornano automaticamente uno o più siti in base al sito sorgente](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Questo consente anche di applicare una struttura di base comune, utilizzare i contenuti comuni tra più siti, mantenere un aspetto comune e ottimizzare gli sforzi per gestire i contenuti che differiscono effettivamente tra i siti. La creazione di un sito in questo modo:
+   * MSM consente di gestire più siti web che condividono contenuti comuni. Ad esempio, i siti web sono spesso disponibili per il pubblico internazionale in modo che la maggior parte dei contenuti sia comune in tutti i Paesi, con un sottoinsieme di contenuti specifici per il singolo Paese. MSM consente di [creare Live Copy che aggiornano automaticamente uno o più siti in base al sito di origine](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Questo consente anche di applicare una struttura di base comune, utilizzare i contenuti comuni tra più siti, mantenere un aspetto comune e ottimizzare gli sforzi per gestire i contenuti che differiscono effettivamente tra i siti. La creazione di un sito in questo modo:
       * Richiede una configurazione blueprint predefinita per specificare la sorgente.
       * Crea una Live Copy della sorgente (predefinita).
       * Fornisce all’utente il pulsante di **Rollout**.
 
 * **Crea Live Copy** (**Sites**)
 
-   * MSM consente di: [crea una Live Copy ad hoc (una tantum) di una singola pagina o sottosezione di un sito web.](creating-live-copies.md#creating-a-live-copy-of-a-page) Ad esempio, duplicando un ramo secondario per fornire informazioni su una versione nuova/aggiornata di un prodotto. Creazione di una Live Copy in questo modo:
+   * MSM consente di [creare una Live Copy ad hoc (una tantum) di una singola pagina o sottosezione di un sito Web.](creating-live-copies.md#creating-a-live-copy-of-a-page) Ad esempio, duplicando un ramo secondario per fornire informazioni su una versione nuova/aggiornata di un prodotto. Creazione di una Live Copy in questo modo:
       * Crea una Live Copy ad-hoc (non è richiesta alcuna configurazione blueprint).
       * Può essere utilizzata per creare (immediatamente) una Live Copy di qualsiasi pagina/ramo.
       * Richiede **Sincronizza** (non fornisce il pulsante di **Rollout**).
@@ -137,15 +137,15 @@ MSM è direttamente accessibile nell’interfaccia utente utilizzando diverse op
 
 * **Panoramica delle Live Copy** (**Sites**)
 
-   * Questa console consente di [visualizza e gestisci la blueprint e le relative Live Copy.](live-copy-overview.md)
+   * Questa console consente di [visualizzare e gestire la blueprint e le relative Live Copy.](live-copy-overview.md)
 
 * **Blueprint** (**Strumenti** - **Sites**)
 
-   * Questa console consente di [crea e gestisci le configurazioni blueprint.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Questa console consente di [creare e gestire le configurazioni blueprint.](creating-live-copies.md#creating-a-blueprint-configuration)
 
 >[!NOTE]
 >
->MSM può essere utilizzato con entrambe le pagine e [Frammenti esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md) poiché questi frammenti fanno parte di un’esperienza (pagina).
+>MSM può essere utilizzato sia con le pagine che con [Frammenti esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md) in quanto tali frammenti fanno parte di un&#39;esperienza (pagina).
 
 >[!NOTE]
 >
@@ -177,7 +177,7 @@ Come introduzione, la tabella seguente fornisce una panoramica dei termini princ
 
 >[!TIP]
 >
->Consulta [Estensione di Multi Site Manager](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) per i nomi degli oggetti.
+>Vedere [Estensione di Multi Site Manager](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) per i nomi degli oggetti.
 
 ## Live Copy {#live-copies}
 
@@ -194,7 +194,7 @@ Nell&#39;esempio precedente, `/content/wknd/language-masters/en` è il sito mast
 
 * Il contenuto seguente `/content/wknd/language-masters/en` è la sorgente.
 * Il contenuto seguente `/content/wknd/language-masters/en` viene copiato sotto i nodi `/content/wknd/us/en/` e `/content/wknd/ca/en`. Queste sono le Live Copy.
-* Gli autori modificano le pagine di seguito `/content/wknd/language-masters/en`.
+* Gli autori modificano le pagine sotto `/content/wknd/language-masters/en`.
 * Quando viene attivato, MSM sincronizza queste modifiche con le Live Copy.
 
 ### Live Copy - Composizione {#live-copies-composition}
@@ -324,11 +324,11 @@ I passaggi seguenti descrivono la procedura standard per riutilizzare il contenu
 1. Sviluppa il contenuto del sito sorgente.
 1. Determina la configurazione di rollout da utilizzare.
 
-   1. MSM [installa diverse configurazioni di rollout](live-copy-sync-config.md#installed-rollout-configurations) che può soddisfare diversi casi d’uso.
-   1. Facoltativamente puoi [creare una configurazione di rollout](live-copy-sync-config.md#creating-a-rollout-configuration) se necessario.
+   1. MSM [installa diverse configurazioni di rollout](live-copy-sync-config.md#installed-rollout-configurations) che possono soddisfare diversi casi d&#39;uso.
+   1. Se necessario, puoi [creare una configurazione di rollout](live-copy-sync-config.md#creating-a-rollout-configuration).
 
 1. Determina dove devi [specificare le configurazioni di rollout da utilizzare](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) e configurale correttamente.
-1. Se necessario, [creare una configurazione blueprint](creating-live-copies.md#creating-a-blueprint-configuration) che identifica il contenuto sorgente della Live Copy.
+1. Se necessario, [crea una configurazione blueprint](creating-live-copies.md#creating-a-blueprint-configuration) che identifica il contenuto sorgente della Live Copy.
 1. [Crea una Live Copy.](creating-live-copies.md#creating-a-live-copy)
 1. Apporta le modifiche necessarie al contenuto sorgente. Dovresti utilizzare il normale processo di revisione e approvazione del contenuto stabilito dall&#39;organizzazione.
 1. [Esegui il roll out](creating-live-copies.md#rolling-out-a-blueprint) del blueprint, oppure [sincronizza la Live Copy](creating-live-copies.md#synchronizing-a-live-copy) con le modifiche.

@@ -21,12 +21,12 @@ La fase di implementazione include:
 * [Content Transfer](#content-transfer)
 
 
-Fai clic sulla scheda del progetto per aprire la pagina di destinazione del progetto e passare alla sezione **Implementazione** come illustrato nella figura riportata di seguito.
+Fai clic sulla scheda del progetto per aprire la pagina di destinazione del progetto e passare alla sezione **Implementazione**, come illustrato nella figura seguente.
 
 ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->Consulta [Creazione e gestione di un progetto in Cloud Acceleration Manager](getting-started-cam.md#create-project) per ulteriori informazioni.
+>Per ulteriori informazioni, vedere [Creazione e gestione di un progetto in Cloud Acceleration Manager](getting-started-cam.md#create-project).
 
 
 ## Utilizzo della scheda Sviluppo locale {#local-development}
@@ -35,7 +35,7 @@ La scheda Sviluppo locale fornisce tutti i contenuti pertinenti che possono aiut
 
 Segui questa sezione per esplorare la scheda dell’attività Sviluppo locale:
 
-1. Clic **Visualizza** dal **Sviluppo locale** Card.
+1. Fai clic su **Visualizza** dalla scheda **Sviluppo locale**.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
@@ -46,11 +46,11 @@ Segui questa sezione per esplorare la scheda dell’attività Sviluppo locale:
 
 ## Utilizzo della scheda di refactoring del codice {#code-refactoring}
 
-La scheda delle attività di refactoring del codice fornisce tutte le informazioni pertinenti ed evidenzia le aree di refactoring del codice da rivedere e risolvere quando si passa a AEM as a Cloud Service.
+La scheda dell’attività Refactoring del codice fornisce tutte le informazioni pertinenti ed evidenzia le aree di refactoring del codice da rivedere e risolvere durante il passaggio ad AEM as a Cloud Service.
 
 Segui questa sezione per esplorare la scheda dell’attività Refactoring del codice:
 
-1. Clic **Revisione** dal **Refactoring del codice** scheda attività.
+1. Fai clic su **Rivedi** dalla scheda attività **Refactoring del codice**.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
@@ -65,22 +65,22 @@ Segui questa sezione per esplorare la scheda dell’attività Refactoring del co
 >[!NOTE]
 >Rivedi il contenuto di queste schede per comprendere alcune aree aggiuntive non coperte da Best Practices Analyzer.
 
-Il **Dispatcher** Questa scheda fornisce informazioni su come strutturare le configurazioni di Apache e Dispatcher as a Cloud Service per l’AEM e su come convalidarle ed eseguirle localmente prima di distribuirle negli ambienti Cloud. Descrive anche il debug in ambienti Cloud.
+La scheda **Dispatcher** fornisce informazioni su come strutturare le configurazioni di AEM as a Cloud Service Apache e Dispatcher e su come convalidarle ed eseguirle localmente prima di distribuirle negli ambienti Cloud. Descrive anche il debug in ambienti Cloud.
 
 ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-Il **Test** fornisce informazioni su test funzionali, audit dell’esperienza e test dell’interfaccia utente.
+La scheda **Test** fornisce informazioni sui test funzionali, dell&#39;audit dell&#39;esperienza e dell&#39;interfaccia utente.
 
 ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
-## Utilizzo della scheda di implementazione as a Cloud Service dell’AEM {#aem-as-a-cloud-service-deployment}
+## Utilizzo della scheda di implementazione di AEM as a Cloud Service {#aem-as-a-cloud-service-deployment}
 
-La scheda Distribuzione as a Cloud Service dell’AEM fornisce tutti i contenuti pertinenti che consentono di distribuire il codice in as a Cloud Service per l’AEM.
+La scheda Distribuzione di AEM as a Cloud Service fornisce tutti i contenuti rilevanti per la distribuzione del codice in AEM as a Cloud Service.
 
-Leggi questa sezione per esplorare la scheda di attività Scheda di distribuzione as a Cloud Service AEM:
+Leggi questa sezione per esplorare la scheda di attività Scheda di distribuzione AEM as a Cloud Service:
 
-1. Clic **Visualizza** dal **Distribuzione as a Cloud Service AEM** scheda attività.
+1. Fai clic su **Visualizza** dalla scheda attività **Distribuzione AEM as a Cloud Service**.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
@@ -91,27 +91,27 @@ Leggi questa sezione per esplorare la scheda di attività Scheda di distribuzion
 
 ## Utilizzo della scheda Content Transfer {#content-transfer}
 
-La scheda Content Transfer (Trasferimento contenuti) consente di avviare e gestire il trasferimento dei contenuti dall’istanza AEM corrente all’AEM as a Cloud Service.
+La scheda Content Transfer (Trasferimento contenuti) consente di avviare e gestire il trasferimento dei contenuti dall’istanza AEM corrente ad AEM as a Cloud Service.
 
 Segui questa sezione per esplorare la scheda delle attività di Trasferimento contenuti:
 
-1. Clic **Revisione** dal **Trasferimento dei contenuti** scheda attività.
+1. Fai clic su **Rivedi** dalla scheda attività **Trasferimento contenuti**.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. Per avviare un trasferimento di contenuti, devi creare un set di migrazione. Clic **Crea set di migrazione**. Un set di migrazione consente di trasferire i contenuti a AEM as a Cloud Service.
+1. Per avviare un trasferimento di contenuti, devi creare un set di migrazione. Fare clic su **Crea set di migrazione**. Un set di migrazione consente di trasferire i contenuti ad AEM as a Cloud Service.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
-   >Un set di migrazione scade dopo un periodo prolungato di inattività. Consulta [Scadenza set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) per i dettagli.
+   >Un set di migrazione scade dopo un periodo prolungato di inattività. Per informazioni dettagliate, consulta [Scadenza set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry).
 
    >[!NOTE]
-   >Consulta [prerequisiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=it) e [best practice e linee guida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it) prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti).
+   >Consulta [prerequisiti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=it) e le [best practice e linee guida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it) prima di utilizzare lo strumento Content Transfer (Trasferimento contenuti).
 
-1. Scarica e installa lo strumento Content Transfer (Trasferimento contenuti) per popolare il set di migrazione e completare la fase di estrazione del trasferimento dei contenuti. Revisione [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it) per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti).
+1. Scarica e installa lo strumento Content Transfer (Trasferimento contenuti) per popolare il set di migrazione e completare la fase di estrazione del trasferimento dei contenuti. Consulta [Guida introduttiva allo strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it) per scoprire come utilizzare lo strumento Content Transfer.
 
-1. Per acquisire il contenuto dal set di migrazione in un ambiente su AEM as a Cloud Service, devi avviare un’acquisizione. Accedi a **Processi di acquisizione** e fai clic su **Nuova acquisizione**. Revisione [Acquisizione di contenuti in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) in questo modo puoi imparare a completare la fase di acquisizione del trasferimento dei contenuti.
+1. Per acquisire i contenuti dal set di migrazione in un ambiente su AEM as a Cloud Service, devi avviare un’acquisizione. Passa a **Processi di acquisizione** e fai clic su **Nuova acquisizione**. Rivedi [Acquisizione del contenuto in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) per scoprire come completare la fase di acquisizione del trasferimento dei contenuti.
 
    ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
@@ -130,4 +130,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso come accedere a Cloud Acceleration Manager e come utilizzare la fase di implementazione, puoi passare alla revisione del passaggio successivo nella [Vai alla fase live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).
+Dopo aver appreso come accedere a Cloud Acceleration Manager e come utilizzare la fase di implementazione, puoi passare alla revisione del passaggio successivo della [fase di lancio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).

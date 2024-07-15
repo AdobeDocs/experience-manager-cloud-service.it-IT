@@ -14,11 +14,11 @@ ht-degree: 39%
 
 # Editor pagina AEM {#editing-page-content}
 
-Una volta creata la pagina in [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) puoi modificare il contenuto della pagina utilizzando l’editor di pagine AEM, uno strumento utile per creare i contenuti.
+Una volta creata la pagina nella console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) puoi modificarne il contenuto utilizzando l&#39;editor di pagine AEM, uno strumento utile per la creazione dei contenuti.
 
 >[!NOTE]
 >
->Quando si modifica una pagina in [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) la console aprirà l’editor appropriato per il file della pagina [modello:](/help/sites-cloud/authoring/sites-console/templates.md) nell&#39;editor di pagine descritto in questo documento oppure [Editor universale.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>Durante la modifica di una pagina nella console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) la console aprirà l&#39;editor appropriato per il modello [ della pagina:](/help/sites-cloud/authoring/sites-console/templates.md) o l&#39;editor di pagine descritto in questo documento o [Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >
@@ -28,11 +28,11 @@ Una volta creata la pagina in [**Sites** console,](/help/sites-cloud/authoring/s
 
 L’editor pagina dell’AEM è composto principalmente da tre sezioni:
 
-1. [Barra degli strumenti](#toolbar) : la barra degli strumenti consente di accedere rapidamente a modifica della modalità di pagina e ad altre impostazioni di pagina.
-1. [Pannello laterale](#side-panel) : il pannello laterale consente di accedere ai componenti e alle risorse della pagina, nonché ad altri strumenti di authoring.
-1. [L’editor](#editor) : nell’editor puoi apportare modifiche al contenuto e visualizzarlo in anteprima.
+1. [Barra degli strumenti](#toolbar): consente di accedere rapidamente alla modifica della modalità della pagina e ad altre impostazioni di pagina.
+1. [Pannello laterale](#side-panel) - Il pannello laterale consente di accedere ai componenti e alle risorse della pagina e ad altri strumenti di creazione.
+1. [Editor](#editor) - Nell&#39;editor è possibile apportare modifiche al contenuto e visualizzarne l&#39;anteprima.
 
-![Layout dell’editor pagina](assets/page-editor-layout.png)
+![Layout dell&#39;editor pagina](assets/page-editor-layout.png)
 
 Per aggiungere i contenuti si trascinano sulla pagina specifici [componenti](/help/sites-cloud/authoring/components-console.md), in base al tipo di contenuto, che possono quindi essere modificati, spostati o eliminati.
 
@@ -40,11 +40,11 @@ Per aggiungere i contenuti si trascinano sulla pagina specifici [componenti](/he
 
 La barra degli strumenti della pagina consente di accedere alle funzionalità appropriate per il contesto, a seconda della configurazione della pagina.
 
-![Barra degli strumenti dell’editor pagina](assets/page-editor-toolbar.png)
+![Barra degli strumenti dell&#39;editor di pagine](assets/page-editor-toolbar.png)
 
 #### Pannello laterale {#side-panel-button}
 
-Questo apre/chiude il [pannello laterale,](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) che contiene il Browser risorse, il Browser componenti e la Struttura contenuto.
+Verrà aperto/chiuso il pannello laterale [,](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) che contiene il browser Risorse, il browser Componenti e la struttura contenuto.
 
 ![Icona del pannello laterale](assets/page-editor-side-panel-toggle.png)
 
@@ -54,7 +54,7 @@ Questo fornisce accesso a informazioni di pagina dettagliate, inclusi i dettagli
 
 ![Pulsante Informazioni pagina](assets/page-editor-page-information-icon.png)
 
-**Informazioni pagina** apre un menu a discesa che fornisce dettagli sull’ultima modifica e sull’ultima pubblicazione della pagina selezionata. Sono disponibili azioni aggiuntive a seconda delle caratteristiche della pagina, del sito e dell’istanza.
+**Informazioni pagina** apre un menu a discesa che fornisce dettagli sull&#39;ultima modifica e sull&#39;ultima pubblicazione della pagina selezionata. Sono disponibili azioni aggiuntive a seconda delle caratteristiche della pagina, del sito e dell’istanza.
 
 * [Apri proprietà](/help/sites-cloud/authoring/sites-console/page-properties.md)
 * [Rollout pagina](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
@@ -72,13 +72,13 @@ Inoltre, se necessario, **Informazioni pagina** può fornire accesso alle analis
 
 #### Emulatore {#emulator}
 
-In questo modo viene attivato [barra degli strumenti emulatore](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate), utilizzato per emulare l’aspetto della pagina su un altro dispositivo. Questa funzione viene abilitata automaticamente in modalità layout.
+In questo modo viene attivata o disattivata la barra degli strumenti dell&#39;[emulatore](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate), utilizzata per emulare l&#39;aspetto della pagina su un altro dispositivo. Questa funzione viene abilitata automaticamente in modalità layout.
 
 ![Pulsante Emulatore](assets/page-editor-emulator.png)
 
 #### ContextHub {#context-hub}
 
-Verrà aperto il [ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) È disponibile solo in **Anteprima** modalità.
+Verrà aperto [ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) È disponibile solo in modalità **Anteprima**.
 
 ![Pulsante Context Hub](assets/page-editor-context-hub.png)
 
@@ -90,7 +90,7 @@ Questo è il titolo della pagina, rappresentato in lettere maiuscole come inform
 
 #### Selettore modalità {#mode-selector}
 
-Il selettore di modalità visualizza la [modalità](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) e consente di selezionare un’altra modalità, ad esempio modifica, layout, timewarp o targeting.
+Il selettore di modalità visualizza la [modalità](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) corrente e consente di selezionare un&#39;altra modalità, ad esempio modifica, layout, timewarp o targeting.
 
 ![Pulsante Selettore modalità](assets/page-editor-mode-selector.png)
 
@@ -98,29 +98,29 @@ Esistono diverse modalità di modifica di una pagina che consentono di eseguire 
 
 * [Modifica](/help/sites-cloud/authoring/page-editor/edit-content.md) - Modalità da utilizzare per la modifica del contenuto della pagina
 * [Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) - Consente di creare e modificare il layout dinamico a seconda del dispositivo (se la pagina si basa su un contenitore di layout)
-* [Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md) - Maggiore rilevanza dei contenuti attraverso il targeting e la misurazione su tutti i canali
-* [Timewarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - Visualizzare lo stato di una pagina in un determinato momento
+* [Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md) - Migliora la rilevanza dei contenuti tramite il targeting e la misurazione su tutti i canali
+* [Timewarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - Visualizza lo stato di una pagina in un determinato momento
 * [Stato Live Copy](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status) - Consente una rapida panoramica dello stato della Live Copy e dei componenti che non sono ereditati
 * [Modalità Sviluppatore](/help/implementing/developing/tools/developer-mode.md)
-* [Anteprima](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages) : visualizza la pagina così come viene visualizzata nell’ambiente di pubblicazione; o per spostarti utilizzando i collegamenti presenti nel contenuto.
-* [Annota](/help/sites-cloud/authoring/page-editor/annotations.md) - Aggiungere o visualizzare annotazioni sulla pagina
+* [Anteprima](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages) - Visualizza la pagina così come è visualizzata nell&#39;ambiente di pubblicazione; oppure per spostarti utilizzando i collegamenti presenti nel contenuto
+* [Annota](/help/sites-cloud/authoring/page-editor/annotations.md) - Aggiungi o visualizza annotazioni nella pagina
 
 >[!NOTE]
 >
 >* A seconda delle caratteristiche della pagina, alcune modalità potrebbero non essere disponibili.
 >* L’accesso ad alcune modalità richiede le autorizzazioni/i privilegi appropriati.
 >* La modalità Sviluppatore non è disponibile sui dispositivi mobili a causa di restrizioni di spazio.
->* È presente un [scelta rapida da tastiera](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) per passare da **Anteprima** e la modalità attualmente selezionata (ad esempio, **Modifica**, **Layout** e così via).
+>* La [scelta rapida da tastiera](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) (`Ctrl-Shift-M`) consente di passare da **Anteprima** alla modalità attualmente selezionata, ad esempio **Modifica**, **Layout** e così via.
 
 #### Anteprima {#preview}
 
-Il **Anteprima** pulsante abilita [modalità anteprima.](#preview-mode), per visualizzare la pagina così come verrà visualizzata al momento della pubblicazione.
+Il pulsante **Anteprima** abilita la modalità di anteprima [.](#preview-mode), visualizzazione della pagina così come apparirà al momento della pubblicazione.
 
 ![Pulsante Anteprima](assets/page-editor-preview.png)
 
 #### Annotazioni {#annotate}
 
-**Annota** consente di aggiungere [annotazioni](/help/sites-cloud/authoring/page-editor/annotations.md) alla pagina durante la revisione. Dopo la prima annotazione, l’icona viene sostituita da un numero che indica quante annotazioni sono presenti sulla pagina.
+La modalità **Annota** consente di aggiungere [annotazioni](/help/sites-cloud/authoring/page-editor/annotations.md) alla pagina durante la revisione. Dopo la prima annotazione, l’icona viene sostituita da un numero che indica quante annotazioni sono presenti sulla pagina.
 
 ![Pulsante Annotazione](assets/page-editor-annotations.png)
 
@@ -132,25 +132,25 @@ Il pannello laterale consente di accedere a tre schede diverse.
 * Browser risorse per aggiungere nuove risorse alla pagina
 * Struttura contenuto per sfogliare la struttura della pagina
 
-![Pannello laterale dell’editor pagina](assets/page-editor-side-panel.png)
+![Pannello laterale dell&#39;editor di pagine](assets/page-editor-side-panel.png)
 
-Consulta il documento [Pannello laterale dell’Editor pagina](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) per ulteriori informazioni.
+Per ulteriori informazioni, vedere il documento [Pannello laterale editor pagine](/help/sites-cloud/authoring/page-editor/editor-side-panel.md).
 
 ### Editor {#editor}
 
 Nell’editor puoi apportare modifiche direttamente al contenuto della pagina. Il rendering della pagina viene eseguito come verrebbe visualizzato e puoi trascinare e rilasciare nuovi contenuti utilizzando le risorse o i browser dei componenti nel pannello laterale, nonché modificare i contenuti direttamente.
 
-![Editor dell’editor pagina](assets/page-editor-editor.png)
+![Editor dell&#39;editor di pagine](assets/page-editor-editor.png)
 
 ## Modifica del contenuto {#editing-content}
 
 Ora che conosci l’editor pagina, puoi modificare il contenuto.
 
-Consulta il documento [Modifica di contenuti con l’Editor pagina AEM](/help/sites-cloud/authoring/page-editor/edit-content.md) per ulteriori informazioni.
+Per ulteriori informazioni, vedere il documento [Modifica del contenuto con l&#39;Editor pagina AEM](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 ## Notifica di stato {#status-notification}
 
-Se una pagina fa parte di un [workflow](/help/sites-cloud/authoring/workflows/overview.md) Per più flussi di lavoro, queste informazioni vengono visualizzate in una barra di notifica sotto la barra degli strumenti durante la modifica della pagina.
+Se una pagina fa parte di un [flusso di lavoro](/help/sites-cloud/authoring/workflows/overview.md) o di più flussi di lavoro, queste informazioni vengono visualizzate in una barra di notifica sotto la barra degli strumenti durante la modifica della pagina.
 
 ![Notifica flusso di lavoro](assets/page-editor-editing-workflow-notification.png)
 
@@ -172,7 +172,7 @@ Se la pagina è soggetta a più flussi di lavoro, il numero dei flussi di lavoro
 
 ## Stato della Live Copy   {#live-copy-status}
 
-Il **Stato Live Copy** la modalità pagina offre una rapida panoramica dello stato live copy e dei componenti che non vengono ereditati:
+La modalità pagina **Stato Live Copy** offre una rapida panoramica dello stato della Live Copy e dei componenti che non vengono ereditati:
 
 * Bordo verde: ereditato
 * Bordo rosa: l’ereditarietà è stata annullata
@@ -185,12 +185,12 @@ Esempio:
 
 Esistono due opzioni per visualizzare in anteprima una pagina:
 
-* [Modalità Anteprima](#preview-mode) - Anteprima rapida diretta
+* [Modalità anteprima](#preview-mode) - Anteprima rapida e diretta
 * [Visualizza come pubblicato](#view-as-published) - Anteprima completa che apre la pagina in una nuova scheda
 
 >[!TIP]
 >
->* I collegamenti nel contenuto sono visibili, ma non accessibili in **Modifica** modalità.
+>* I collegamenti nel contenuto sono visibili, ma non accessibili in modalità **Modifica**.
 >* Per effettuare la navigazione tramite i collegamenti, utilizza una delle opzioni di anteprima.
 >* Utilizza la [scelta rapida da tastiera](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `Ctrl-Shift-M` per passare dall’anteprima all’ultima modalità selezionata.
 
@@ -225,7 +225,7 @@ Una volta bloccato, nella barra degli strumenti dell’editor pagina viene visua
 
 ![Esempio di pagina bloccata](assets/page-editor-editing-locked-page.png)
 
-Lo sblocco di una pagina è molto simile a [blocco della pagina](#locking-a-page). Una volta bloccata la pagina, le opzioni di blocco vengono sostituite da quelle di sblocco.
+Lo sblocco di una pagina è molto simile al [blocco della pagina](#locking-a-page). Una volta bloccata la pagina, le opzioni di blocco vengono sostituite da quelle di sblocco.
 
 >[!CAUTION]
 >
@@ -246,4 +246,4 @@ Le icone seguenti consentono di annullare o ripristinare un’azione. Vengono vi
 
 >[!NOTE]
 >
->Consulta il documento [Limitazioni per Annulla e Ripristina](/help/sites-cloud/authoring/page-editor/undo-redo.md) per informazioni dettagliate su cosa è possibile fare quando si annullano e si ripristinano le modifiche apportate a una pagina.
+>Per informazioni sulle possibilità di annullare e ripristinare le modifiche apportate a una pagina, consulta il documento [Limitazioni per annullare e ripristinare](/help/sites-cloud/authoring/page-editor/undo-redo.md).

@@ -1,6 +1,6 @@
 ---
 title: Note sulla versione 2020.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.7.0 as a Cloud Service."
+description: "[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2020.7.0."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 feature: Release Information
 role: Admin
@@ -35,7 +35,7 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 
 ### Novità in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] è un servizio scalabile ed estensibile per l’elaborazione delle risorse. Gli amministratori possono configurare [!DNL Experience Manager] per richiamare le applicazioni personalizzate create utilizzando [!DNL Asset Compute Service]. Gli sviluppatori possono utilizzare il servizio per creare applicazioni personalizzate specializzate per casi d’uso complessi. Questo servizio web può generare miniature per diversi tipi di file, eseguire il rendering di immagini di alta qualità da formati di file Adobe, codificare video (in futuro), estrarre metadati, estrarre testo completo come precursore per l’indicizzazione ed eseguire una risorsa in tutti i tipi di file disponibili [!DNL Sensei] servizi. vedi [utilizzare i microservizi delle risorse e i profili di elaborazione](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] è un servizio scalabile ed estensibile per l’elaborazione delle risorse. Gli amministratori possono configurare [!DNL Experience Manager] per richiamare le applicazioni personalizzate create utilizzando [!DNL Asset Compute Service]. Gli sviluppatori possono utilizzare il servizio per creare applicazioni personalizzate specializzate per casi d’uso complessi. Questo servizio Web può generare miniature per diversi tipi di file, eseguire il rendering di immagini di alta qualità da formati di file Adobe, codificare video (in futuro), estrarre metadati, estrarre testo completo come precursore per l&#39;indicizzazione ed eseguire una risorsa tramite tutti i servizi [!DNL Sensei] disponibili. vedi [utilizzare i microservizi delle risorse e i profili di elaborazione](/help/assets/asset-microservices-configure-and-use.md).
 
 * La configurazione iniziale di [!DNL Dynamic Media] in [!DNL Experience Manager] as a Cloud Service è stata migliorata ed è ora più robusta. Fornisce agli amministratori indicazioni sull’avanzamento dei processi.
 
@@ -43,13 +43,13 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 
 * I passaggi di un flusso di lavoro non compatibili con un’implementazione Cloud Service ora sono contrassegnati da un avviso nell’editor per [!UICONTROL modelli di flusso di lavoro]. Inoltre, durante l’esecuzione dei flussi di lavoro esistenti nell’ambiente di Cloud Service, vengono saltati i passaggi del flusso di lavoro non compatibili.
 
-* Modelli di flusso di lavoro creati dai clienti che vengono distribuiti in `/conf/global` nel progetto Git associato all’ambiente in [!DNL Cloud Manager] vengono distribuiti automaticamente in `/var` e quindi disponibile in [!DNL Experience Manager]. I modelli di flusso di lavoro dei prodotti in `/libs` che sono stati modificati dai clienti non vengono distribuiti automaticamente in `/var`.
+* I modelli di flusso di lavoro creati dai clienti distribuiti in `/conf/global` nel progetto Git associato all&#39;ambiente in [!DNL Cloud Manager] vengono automaticamente distribuiti in `/var` e sono quindi disponibili in [!DNL Experience Manager]. I modelli di flusso di lavoro dei prodotti in `/libs` che sono stati modificati dai clienti non vengono distribuiti automaticamente in `/var`.
 
 ### Bug corretti {#assets-bugs-fixed}
 
 * La procedura guidata Sposta risorsa non si carica come previsto per le risorse incluse nelle raccolte. (CQ-4296756)
 * I valori di `dam:size` e `dam:sha1` sono esclusi dal writeback XMP. (CQ-4237355)
-* Quando si annullano in blocco le risorse, [!DNL Brand Portal] genera un errore che suggerisce che l’URI della richiesta è troppo lungo. (CQ-4299474)
+* Quando si annullano in blocco le risorse, [!DNL Brand Portal] genera un errore che suggerisce che l&#39;URI della richiesta è troppo lungo. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -57,7 +57,7 @@ I connettori di [!DNL Experience Manager] as a Cloud Service per [!DNL Adobe Tar
 
 AEM Commerce è ora disponibile su Cloud Service.
 
-Consulta [Guida introduttiva di AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) per ulteriori dettagli.
+Per ulteriori dettagli, consulta [Guida introduttiva a AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html).
 
 ## Componenti core {#core-components}
 
@@ -68,7 +68,7 @@ La versione 2.11.0 dei [Componenti core di AEM](https://experienceleague.adobe.c
 * Introduzione di un nuovo [componente Visualizzatore PDF](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * È ora disponibile il supporto di AMP (Accelerated Mobile Pages) per i componenti core. Consente di creare esperienze cliente più veloci, con transizioni di pagina istantanee quando si accede al sito da un risultato di ricerca Google mobile, migliorando il coinvolgimento degli utenti e la SEO (Search Engine Optimization).
-Consulta [Supporto AMP per i Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) per ulteriori dettagli.
+Per ulteriori dettagli, vedere [Supporto AMP per i Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html).
 
 * Compatibilità con la versione 1.0.2 del [Livello dati client di Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it).
 
@@ -123,7 +123,7 @@ Per ulteriori informazioni, consulta Utilizzo del supporto Java 11.
 
 ### Novità {#what-is-new-foundations}
 
-* [I registri possono essere inoltrati agli account Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs), che consente alle organizzazioni di utilizzare il proprio investimento Splunk.
+* [I registri possono essere inoltrati agli account Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs), il che consente alle organizzazioni di utilizzare il proprio investimento Splunk.
 
 * È possibile assegnare un [indirizzo IP di uscita statico e dedicato](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) al traffico in uscita programmato nel codice Java, utile per alcune integrazioni.
 
@@ -139,7 +139,7 @@ Leggi questa sezione per saperne di più sulle novità e sugli aggiornamenti di 
 
 * La versione precedente di Cloud Readiness Analyzer non poteva girare su Adobe Experience Manager (AEM) 6.1. È stato aggiunto il supporto esplicito per gli utenti del gruppo di amministratori.
 
-  Consulta [Installazione di CRA in AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) per ulteriori dettagli.
+  Per ulteriori dettagli, vedere [Installazione di CRA in AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61).
 
 * Nel rapporto di riepilogo veniva visualizzata una marca temporale di scadenza errata.
 

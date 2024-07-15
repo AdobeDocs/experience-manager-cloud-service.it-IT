@@ -1,6 +1,6 @@
 ---
 title: Note sulla versione 2020.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] Note sulla versione 2020.9.0 as a Cloud Service."
+description: "[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2020.9.0."
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 feature: Release Information
 role: Admin
@@ -23,7 +23,7 @@ La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2020.
 
 ### Novità in [!DNL Sites] {#what-is-new-sites}
 
-* SDK JavaScript per l’editor di applicazioni a pagina singola (SPA) [è ora open source](/help/implementing/developing/hybrid/reference-materials.md).
+* L&#39;SDK di JavaScript per l&#39;editor di applicazioni a pagina singola (SPA) [ è ora open source](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -33,10 +33,10 @@ La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2020.
 
 * Miglioramenti in [!DNL Dynamic Media]
 
-   * Pubblicazione selettiva: ora un team di marketing può accedere [!DNL Dynamic Media] ritaglio avanzato delle immagini e delle rappresentazioni dinamiche sincronizzate con [!DNL Dynamic Media] in modo che possano creare materiali promozionali, senza dover pubblicare tali risorse su [!DNL Dynamic Media] per la distribuzione globale. [!DNL Experience Manager] e [!DNL Dynamic Media] la pubblicazione è scollegata e può avvenire separatamente. Consulta [pubblicazione selettiva](/help/assets/dynamic-media/selective-publishing.md).
-   * Gli amministratori possono ora reimpostare [!DNL Dynamic Media] Password di Cloud Service ricevuta al momento del provisioning. Il ripristino può essere eseguito in [!DNL Experience Manager] senza dover utilizzare l&#39;interfaccia utente di [!DNL Dynamic Media Classic] app desktop.
+   * Publish selettivo: ora un team di marketing può accedere alle immagini con ritaglio avanzato [!DNL Dynamic Media] e alle rappresentazioni dinamiche sincronizzate con [!DNL Dynamic Media], in modo da creare materiali promozionali senza dover pubblicare tali risorse in [!DNL Dynamic Media] per la distribuzione globale. La pubblicazione di [!DNL Experience Manager] e [!DNL Dynamic Media] è scollegata e può avvenire separatamente. Vedi [pubblicazione selettiva](/help/assets/dynamic-media/selective-publishing.md).
+   * Gli amministratori ora possono reimpostare la password di Cloud Service di [!DNL Dynamic Media] ricevuta al momento del provisioning. La reimpostazione può essere eseguita nell&#39;interfaccia utente di [!DNL Experience Manager], senza dover utilizzare l&#39;app desktop [!DNL Dynamic Media Classic].
 
-* Per informazioni sui seguenti miglioramenti, consulta [novità di Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=it).
+* Per informazioni sui seguenti miglioramenti, vedere [Novità di Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=it).
 
    * Anteprima PDF avanzata con l’integrazione di Adobe Document Cloud View SDK.
    * Funzionalità di download con un solo clic.
@@ -52,7 +52,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Novità {#what-is-new-commerce}
 
-* È stata rilasciata la versione 1.3.0 dei Componenti core CIF. Consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) per ulteriori dettagli.
+* È stata rilasciata la versione 1.3.0 dei Componenti core CIF. Per ulteriori dettagli, consulta [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0).
 
 * È ora disponibile la funzionalità di anteprima con prodotti/categorie per i modelli di prodotto e categoria. Questo consente agli utenti aziendali e agli esperti di marketing dell’AEM di visualizzare i modelli di prodotto e categoria con dati reali.
 
@@ -88,7 +88,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Readin
 
 ### Novità {#what-is-new-cra}
 
-* Cloud Readiness Analyzer (Analisi di preparazione al cloud) dispone di una console di stato iniziale che presenta un’intestazione **Genera report** per consentire all’utente di fare clic per eseguire lo strumento CRA.
+* Cloud Readiness Analyzer (Analisi di preparazione al cloud) dispone di una console di stato iniziale che visualizza un pulsante **Genera report** esplicito su cui l&#39;utente può fare clic per eseguire l&#39;analisi di preparazione al cloud.
 
 * Durante l’esecuzione, l’interfaccia utente di Cloud Readiness Analyzer mostra lo stato di avanzamento. Vengono visualizzati gli elementi in fase di analisi e i risultati rilevati durante l&#39;esecuzione.
 
@@ -108,7 +108,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti della versione 
 
 * L’interfaccia dello strumento Content Transfer dispone di una funzione di ricaricamento automatico che ricarica la pagina della panoramica ogni 30 secondi.
 
-* Pulsante aggiunto all&#39;interfaccia utente CTT per il recupero *Token di accesso* facilmente.
+* Pulsante aggiunto all&#39;interfaccia utente CTT per recuperare facilmente *il token di accesso*.
 
 * Messaggio di convalida descrittivo aggiunto per *URL* e *Nome set di migrazione*.
 
@@ -120,8 +120,8 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Strumenti di
 
 * Il plug-in AIO-CLI supporta Repository Modernizer e consente agli utenti di eseguire lo strumento utilizzando il plug-in.
 
-  Consulta [Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) per ulteriori dettagli.
+  Per ulteriori dettagli, consulta [Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration).
 
 * L’utility Repository Modernizer può essere utilizzata per ristrutturare i pacchetti di progetto esistenti in pacchetti compatibili con la struttura di progetto definita per AEM as a Cloud Service.
 
-  Consulta [Risorsa Git: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) per ulteriori dettagli.
+  Per ulteriori dettagli, vedi [Risorsa Git: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).

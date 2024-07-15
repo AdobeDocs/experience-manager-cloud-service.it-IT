@@ -337,7 +337,7 @@ Per esportare un frammento di contenuto da AEM in Target (dopo aver specificato 
    
    -->
 
-1. Seleziona **Esporta senza pubblicare** o **Pubblica** secondo necessità.
+1. Seleziona **Esporta senza pubblicare** o **Publish** come richiesto.
 
    >[!NOTE]
    >
@@ -349,7 +349,7 @@ Per esportare un frammento di contenuto da AEM in Target (dopo aver specificato 
    >
    >Selezionando **Pubblica**, il frammento di contenuto verrà pubblicato immediatamente e verrà inviato a Target.
 
-1. Seleziona **OK** nella finestra di dialogo di conferma.
+1. Selezionare **OK** nella finestra di dialogo di conferma.
 
    Il frammento di contenuto ora dovrebbe trovarsi in Target.
 

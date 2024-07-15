@@ -50,7 +50,7 @@ Per aprire la casella in entrata delle notifiche AEM:
 
 1. Seleziona l’indicatore nella barra degli strumenti.
 
-1. Seleziona **Visualizza tutto**. Il **Casella in entrata AEM** viene aperto. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
+1. Seleziona **Visualizza tutto**. Verrà aperta la cartella Posta in arrivo **AEM**. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
 1. La vista predefinita è [Vista elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view). Questa operazione viene effettuata con il selettore vista (barra degli strumenti, in alto a destra).
 
    Per entrambe le viste puoi inoltre definire le [Impostazioni vista](#inbox-view-settings). Le opzioni disponibili dipendono dalla vista corrente.
@@ -145,7 +145,7 @@ Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
    * Viene avviata una procedura guidata per un’azione
    * Viene aperta una pagina della documentazione
 
-   Ad esempio: **Delega** apre una finestra di dialogo:
+   Ad esempio, **Delegate** apre una finestra di dialogo:
 
    ![Delega di un’attività della casella in entrata](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 

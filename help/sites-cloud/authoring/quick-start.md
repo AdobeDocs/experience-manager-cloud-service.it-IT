@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Guida rapida all’authoring {#quick-guide-to-authoring}
 
-Inizia qui per una guida rapida di alto livello per iniziare a creare contenuti utilizzando **Sites** console.
+Inizia qui per una guida rapida di alto livello per iniziare a creare contenuti utilizzando la console **Sites**.
 
 >[!TIP]
 >
@@ -23,36 +23,36 @@ Inizia qui per una guida rapida di alto livello per iniziare a creare contenuti 
 
 ## Tutto inizia nella console Sites. {#sites-console}
 
-Per creare nuovi contenuti o visualizzare e gestire quelli esistenti, la panoramica centrale è la **Sites** console.
+Per creare nuovi contenuti o visualizzare e gestire quelli esistenti, la panoramica centrale è la console **Sites**.
 
-Quando accedi per la prima volta all’AEM, arrivi alla schermata di navigazione globale. Tocca o fai clic su **Sites** per aprire **Sites** console.
+Quando accedi per la prima volta all’AEM, arrivi alla schermata di navigazione globale. Tocca o fai clic su **Sites** per aprire la console **Sites**.
 
 ![Navigazione globale](assets/getting-started-global-navigation.png)
 
-Per accedere alla navigazione globale da qualsiasi altra posizione in AEM, tocca o fai clic sul pulsante **Adobe Experience Manager** in alto a sinistra in qualsiasi schermata AEM, che apre una sovrapposizione a discesa della navigazione globale.
+Per accedere alla navigazione globale da qualsiasi altra posizione in AEM, tocca o fai clic sul collegamento **Adobe Experience Manager** in alto a sinistra di qualsiasi schermata AEM, che apre una sovrapposizione a discesa della navigazione globale.
 
-Una volta nella **Sites** , il contenuto è semplice da navigare ed è presentato in una vista a colonne per impostazione predefinita.
+Una volta nella console **Sites**, il contenuto è semplice da spostarsi ed è presentato in una vista a colonne per impostazione predefinita.
 
-![Console Sites](assets/getting-started-sites-console.png)
+![La console Sites](assets/getting-started-sites-console.png)
 
 ## Viste {#views}
 
-Per impostazione predefinita, il **Sites** la console si apre in **Colonna** visualizzazione. Ogni livello di gerarchia viene visualizzato come una colonna che si presta bene a contenuti organizzati gerarchicamente in base al web.
+Per impostazione predefinita, la console **Sites** viene aperta nella visualizzazione **Colonna**. Ogni livello di gerarchia viene visualizzato come una colonna che si presta bene a contenuti organizzati gerarchicamente in base al web.
 
-![Vista a colonne](assets/getting-started-column-view.png)
+![Visualizzazione colonne](assets/getting-started-column-view.png)
 
 Tocca o fai clic su una voce in una colonna per selezionarla o aprire il livello successivo nella gerarchia. Un elemento selezionato è indicato con un segno di spunta.
 
 Sono disponibili due visualizzazioni aggiuntive:
 
 * **Vista a schede** - Questa vista presenta ogni voce come una scheda facilmente manipolabile, rendendo le opzioni aggiuntive facilmente accessibili.
-* **Vista a elenco** - Presenta un singolo livello di gerarchia come un singolo elenco, fornendo maggiori dettagli sui singoli elementi.
+* **Vista a elenco** - Presenta un singolo livello di una gerarchia come un singolo elenco, fornendo maggiori dettagli sui singoli elementi.
 
 Utilizza il commutatore di visualizzazione in alto a sinistra dello schermo per passare da una visualizzazione all’altra. In questo documento viene utilizzata la visualizzazione colonne predefinita.
 
 ## Navigazione nel contenuto {#navigating}
 
-**Vista a colonne** presenta il contenuto come una serie di colonne a cascata. Se si seleziona un elemento nella colonna corrente, i relativi dettagli vengono visualizzati nella colonna successiva a destra, se si tratta di un documento, oppure nel contenuto del livello gerarchico successivo, se si tratta di una cartella.
+**Vista a colonne** presenta il contenuto come una serie di colonne a catena. Se si seleziona un elemento nella colonna corrente, i relativi dettagli vengono visualizzati nella colonna successiva a destra, se si tratta di un documento, oppure nel contenuto del livello gerarchico successivo, se si tratta di una cartella.
 
 ![Visualizzazione colonne in dettaglio](assets/getting-started-column-detail.png)
 
@@ -70,7 +70,7 @@ La ricerca viene visualizzata come sovrapposizione a discesa sull’intera conso
 
 ## Creazione di contenuti {#creating}
 
-Per creare una nuova pagina, passa alla posizione in cui desideri che si trovi nella gerarchia dei contenuti e quindi tocca o fai clic sul pulsante **Crea** nella barra degli strumenti.
+Per creare una nuova pagina, passa alla posizione desiderata nella gerarchia dei contenuti, quindi tocca o fai clic sul pulsante **Crea** nella barra degli strumenti.
 
 ![Crea](assets/getting-started-create.png)
 
@@ -80,27 +80,27 @@ A seconda di ciò che selezioni per creare, la procedura guidata appropriata ini
 
 ## Modifica contenuto {#editing}
 
-Per modificare una pagina, tocca o fai clic su per selezionarla nella **Sites** console. Quindi, nella barra degli strumenti visualizzata, tocca o fai clic sul pulsante **Modifica** icona.
+Per modificare una pagina, toccare o fare clic per selezionarla nella console **Sites**. Nella barra degli strumenti visualizzata, tocca o fai clic sull&#39;icona **Modifica**.
 
 ![Selezione del contenuto da modificare](assets/getting-started-edit.png)
 
 Verrà aperta la pagina nell’editor appropriato per il contenuto.
 
-Se desideri semplicemente aggiornare le proprietà di una pagina, ad esempio i tag o il nome, puoi toccare o fare clic sul pulsante **Proprietà** nella barra degli strumenti.
+Se desideri semplicemente aggiornare le proprietà di una pagina, ad esempio i tag o il nome, puoi toccare o fare clic sull&#39;icona **Proprietà** nella barra degli strumenti.
 
 ## Organizzazione dei contenuti {#organizing}
 
-Per spostare o copiare una pagina, selezionala nella console, quindi nella barra degli strumenti tocca o fai clic su **Sposta** o **Copia**. Viene avviata una procedura guidata che illustra i passaggi necessari per spostare o copiare la pagina, definendo il nome e la posizione della pagina risultante.
+Per spostare o copiare una pagina, selezionarla nella console, quindi nella barra degli strumenti toccare o fare clic su **Sposta** o **Copia**. Viene avviata una procedura guidata che illustra i passaggi necessari per spostare o copiare la pagina, definendo il nome e la posizione della pagina risultante.
 
-![Procedura guidata Sposta pagina](assets/getting-started-move-page.png)
+![Spostamento guidato pagine](assets/getting-started-move-page.png)
 
 ## Pubblicazione del contenuto {#publishing}
 
-Una volta apportate le modifiche desiderate al contenuto, utilizzando **Sites** console, puoi pubblicare il contenuto. Seleziona il contenuto da pubblicare e tocca o fai clic sul pulsante **Pubblicazione rapida** nella barra degli strumenti.
+Dopo aver apportato le modifiche desiderate al contenuto utilizzando la console **Sites**, puoi pubblicare il contenuto. Seleziona il contenuto da pubblicare e tocca o fai clic sull&#39;icona **Publish rapido** nella barra degli strumenti.
 
 ![Pubblicazione rapida](assets/getting-started-quick-publish.png)
 
-Conferma la pubblicazione toccando o facendo clic su **Pubblica** nella finestra di dialogo.
+Conferma la pubblicazione toccando o facendo clic su **Publish** nella finestra di dialogo.
 
 ## Risorse aggiuntive {#additional-resources}
 

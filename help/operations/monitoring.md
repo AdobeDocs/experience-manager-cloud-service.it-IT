@@ -21,23 +21,23 @@ Adobe Experience Manager as a Cloud Service offre funzionalità di osservazione 
 
 AEM as a Cloud Service utilizza centinaia di monitor nativi per il cloud per segnalare in modo continuo lo stato di ciascun ambiente (24 ore su 24, 7 giorni su 7) per 365 giorni all’anno. Le definizioni dei monitor non sono statiche, ma vengono continuamente riviste per migliorare la capacità di rilevamento precoce. Inoltre, Adobe dispone di procedure di chiamata configurate per rispondere agli avvisi.
 
-Per informazioni su altri tipi di monitoraggio, ad esempio la registrazione o il monitoraggio tramite Cloud Manager, consulta [Risorse aggiuntive](#resources).
+Se hai bisogno di informazioni su altri tipi di monitoraggio, ad esempio la registrazione o il monitoraggio tramite Cloud Manager, consulta [Risorse aggiuntive](#resources).
 
 ## Disponibilità esterna {#external-availability}
 
 La disponibilità esterna è composta da due parti: Service Edge e Custom Monitoring.
 
-### Service Edge {#service-edge}
+### Edge del servizio {#service-edge}
 
-Tutti gli ambienti dell’AEM as a Cloud Service sono monitorati per la disponibilità. Tuttavia, Service Edge Monitoring è configurato solo per gli ambienti di produzione e le metriche vengono utilizzate per calcolare lo SLA del cliente. Prende in considerazione la fase di runtime dell’ambiente e la CDN as a Cloud Service dall’AEM. Service Edge Monitoring utilizza cinque posizioni distinte vicine all’area geografica scelta e verifica periodicamente la disponibilità. L’indisponibilità di un sito attiva un avviso e coinvolge i team e i processi di supporto su richiesta di Adobe.
+Tutti gli ambienti AEM as a Cloud Service vengono monitorati per verificarne la disponibilità. Tuttavia, il monitoraggio di Service Edge è configurato solo per gli ambienti di produzione e le metriche vengono utilizzate per calcolare lo SLA del cliente. Prende in considerazione la fase di esecuzione dell’ambiente e la rete CDN di AEM as a Cloud Service. Service Edge Monitoring utilizza cinque posizioni distinte vicine all’area geografica scelta e verifica periodicamente la disponibilità. L’indisponibilità di un sito attiva un avviso e coinvolge i team e i processi di supporto su richiesta di Adobe.
 
 ### Monitoraggio personalizzato {#custom-monitoring}
 
-Con il monitoraggio personalizzato, i clienti possono facoltativamente fornire fino a cinque URL di proprietà web distinti prima [andare in diretta](/help/journey-migration/go-live.md). Questi URL devono essere validi e restituire un codice di risposta HTTP 200. Questi monitor supportano i clienti che [porta la propria rete CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) davanti alla rete CDN Adobe e a qualsiasi routing del traffico esterno utilizzato davanti all&#39;AEM as a Cloud Service che non è sotto il controllo dell&#39;Adobe. Gli avvisi derivanti dai controlli di monitoraggio personalizzati coinvolgono i team e i processi di supporto di Adobe.
+Con il monitoraggio personalizzato, i clienti possono facoltativamente fornire fino a cinque URL di proprietà Web distinti prima di [andare in diretta](/help/journey-migration/go-live.md). Questi URL devono essere validi e restituire un codice di risposta HTTP 200. Questi monitor supportano i clienti che [portano la propria rete CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) davanti alla rete CDN Adobe e a qualsiasi routing del traffico esterno utilizzato davanti ad AEM as a Cloud Service che non è sotto il controllo di Adobe. Gli avvisi derivanti dai controlli di monitoraggio personalizzati coinvolgono i team e i processi di supporto di Adobe.
 
 >[!NOTE]
 >
-> Questa funzionalità è disponibile solo per ambienti di produzione e clienti con [Supporto cloud avanzato.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) In caso di domande, contatta il team del tuo account di Adobe.
+> Questa funzionalità è disponibile solo per gli ambienti di produzione e i clienti con [Supporto cloud avanzato.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) In caso di domande, contatta il team del tuo account di Adobe.
 
 ## Monitoraggio di moduli interni {#module-monitoring}
 
@@ -55,7 +55,7 @@ Vengono aggiunti controlli aggiuntivi agli ambienti per i quali è stato eseguit
 
 ## Osservabilità del cliente {#customer-observability}
 
-I clienti possono utilizzare [Monitoraggio delle prestazioni delle applicazioni New Relic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) che fornisce dati sulle prestazioni in tempo reale raccolti e tracciati per l’analisi e la risoluzione dei problemi. Utilizzando la suite di monitoraggio, i clienti possono osservare direttamente varie metriche, quali: metriche delle prestazioni JVM, tempo di transazione per Java™, chiamate esterne in background e chiamate al database.
+I clienti possono utilizzare la suite [Monitoraggio delle prestazioni delle applicazioni di New Relic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) che fornisce dati sulle prestazioni in tempo reale raccolti e tracciati per l&#39;analisi e la risoluzione dei problemi. Utilizzando la suite di monitoraggio, i clienti possono osservare direttamente varie metriche, quali: metriche delle prestazioni JVM, tempo di transazione per Java™, chiamate esterne in background e chiamate al database.
 
 ## Risorse aggiuntive {#resources}
 

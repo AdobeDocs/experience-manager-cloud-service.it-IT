@@ -66,7 +66,7 @@ Le sezioni seguenti, [Autore di contenuti](#as-a-content-author) e [Autore di mo
 Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le seguenti operazioni:
 
 1. Installa il CSS come librerie client, come descritto nella sezione [Panoramica](#overview).
-1. Configura le classi CSS che desideri rendere disponibili agli autori di contenuto come descritto nella sezione [Autore di modelli](#as-a-template-author).
+1. Configura le classi CSS che desideri rendere disponibili agli autori dei contenuti come descritto nella sezione [Autore di modelli](#as-a-template-author).
 1. Gli autori di contenuti possono quindi utilizzare gli stili come descritto nella sezione [Autore di contenuti](#as-a-content-author).
 
 ### Autore di contenuti  {#as-a-content-author}
@@ -76,7 +76,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
    ![Sistema di stili per l’autore](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. Seleziona la **Stili** sulla barra degli strumenti del **Elenco** per aprire il menu degli stili e modificare l&#39;aspetto del componente.
+1. Selezionare il pulsante **Stili** sulla barra degli strumenti del componente **Elenco** per aprire il menu degli stili e modificare l&#39;aspetto del componente.
 
    ![Selezione degli stili](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -86,7 +86,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 ### Autore di modelli  {#as-a-template-author}
 
-1. Durante la modifica della pagina mastro in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modifica il modello della pagina tramite **Informazioni pagina > Modifica modello**.
+1. Durante la modifica della pagina mastro in lingua inglese di WKND all&#39;indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modificare il modello della pagina tramite **Informazioni pagina > Modifica modello**.
 
    ![Modifica modello](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -98,7 +98,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
    ![Modifica delle proprietà](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
-   * **Nome gruppo:** Gli stili possono essere raggruppati nel menu di stile visualizzato dall’autore del contenuto durante la configurazione dello stile del componente.
+   * **Nome gruppo:** gli stili possono essere raggruppati nel menu di stile visualizzato dall&#39;autore del contenuto durante la configurazione dello stile del componente.
    * **Combinazione degli stili:** consente di selezionare più stili in contemporanea all’interno del gruppo.
    * **Nome stile:** la descrizione dello stile che verrà visualizzata dall’autore del contenuto durante la configurazione dello stile del componente.
    * **Classi CSS:** il nome effettivo della classe CSS associata allo stile.
@@ -162,4 +162,4 @@ Questa proprietà è impostata sul nodo `cq:Component`. Esempio:
 
 Questa capacità di definire i nomi degli stili è utile per i componenti molto generici, come Contenitore di layout o il componente Frammento di contenuto, al fine di attribuire loro un significato aggiuntivo.
 
-Ad esempio, consente di attribuire a un Contenitore di layout semantiche come `<main>`, `<aside>`, `<nav>`e così via.
+Ad esempio, consente di attribuire a un Contenitore di layout semantiche come `<main>`, `<aside>`, `<nav>` e così via.

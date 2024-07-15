@@ -1,5 +1,5 @@
 ---
-title: Markdown (Risorse - Frammenti di contenuto)
+title: Markdown (Assets - Frammenti di contenuto)
 description: Scopri in che modo l’editor dei frammenti di contenuto utilizza la sintassi markdown per consentire di creare facilmente contenuti headless.
 feature: Content Fragments
 role: User
@@ -14,13 +14,13 @@ ht-degree: 80%
 
 # Markdown {#markdown}
 
-Quando sei [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’editor di frammenti di contenuto utilizza *markdown* sintassi per consentire di scrivere facilmente contenuti per la distribuzione headless o per l’authoring delle pagine:
+Quando si esegue l&#39;[authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l&#39;editor dei frammenti di contenuto utilizza la sintassi *markdown* per consentire di scrivere facilmente contenuti per la distribuzione headless o per l&#39;authoring delle pagine:
 
 >[!NOTE]
 >
 >I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
 >
->Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l’editor originale, a cui si accede principalmente da **Risorse** console. Consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), per informazioni dettagliate sul nuovo editor (accessibile principalmente dal **Frammenti di contenuto** console).
+>Sono disponibili due editor per l’authoring dei frammenti di contenuto. Questa sezione tratta l&#39;editor originale, a cui si accede principalmente dalla console **Assets**. Per informazioni dettagliate sul nuovo editor, a cui si accede principalmente dalla console **Frammenti di contenuto**, consulta la documentazione di Sites [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ![Editor markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

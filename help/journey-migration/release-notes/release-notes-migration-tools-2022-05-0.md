@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Note sulla versione 2022.5.0 degli strumenti di migrazione in AEM as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2022.5.0 degli strumenti di migrazione in AEM as a Cloud Service.
+Questa pagina illustra le note sulla versione degli strumenti di migrazione in AEM as a Cloud Service 2022.5.0.
 
 ## Analisi delle best practice {#bpa-release}
 
@@ -41,7 +41,7 @@ La data di pubblicazione dello strumento Content Transfer v2.0.10 è il 2 giugno
 
 ### Novità {#what-is-new-ctt}
 
-* Lo strumento Content Transfer (CTT) è stato evoluto per funzionare con Cloud Acceleration Manager e semplificare l’intero processo di trasferimento dei contenuti. CTT ora si concentra sull’esecuzione di estrazioni di contenuto. Il servizio di acquisizione CTT è ora integrato in Cloud Acceleration Manager. I vantaggi offerti da questa evoluzione sono:
+* Lo strumento Content Transfer (CTT) è stato sviluppato per lavorare con Cloud Acceleration Manager per semplificare l’intero processo di trasferimento dei contenuti. CTT ora si concentra sull’esecuzione di estrazioni di contenuto. Il servizio di acquisizione CTT è ora integrato in Cloud Acceleration Manager. I vantaggi offerti da questa evoluzione sono:
    * Metodo self-service per estrarre un set di migrazione una volta e acquisirlo in più ambienti in parallelo.
    * È stata migliorata l’esperienza dell’utente grazie a migliori stati di caricamento, guardrail e gestione degli errori.
    * I registri di acquisizione sono persistenti e sono sempre disponibili per la risoluzione dei problemi.
@@ -50,8 +50,8 @@ La data di pubblicazione dello strumento Content Transfer v2.0.10 è il 2 giugno
 
 ### Data di rilascio {#release-date-cam}
 
-La data di pubblicazione di Cloud Acceleration Manager è il 2 giugno 2022.
+La data di rilascio per Cloud Acceleration Manager è il 2 giugno 2022.
 
 ### Novità {#what-is-new-cam}
 
-* Cloud Acceleration Manager ora consente agli utenti di avviare e gestire trasferimenti di contenuti per spostare i contenuti dall’istanza AEM di un cliente (On-Premise o Adobe Managed Services) all’AEM as a Cloud Service come parte di un progetto di migrazione. Consulta [Utilizzo della scheda Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) per ulteriori dettagli.
+* Cloud Acceleration Manager ora fornisce agli utenti di avviare e gestire trasferimenti di contenuti per spostare i contenuti dall’istanza AEM di un cliente (On-Premise o Adobe Managed Services) ad AEM as a Cloud Service come parte di un progetto di migrazione. Per ulteriori dettagli, vedere [Utilizzo della scheda Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer).

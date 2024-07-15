@@ -31,20 +31,20 @@ Continua a leggere per i dettagli sull’invio asincrono in Adaptive Forms.
 
 Per configurare l’invio asincrono per un modulo adattivo:
 
-1. In modalità di creazione di moduli adattivi, seleziona l’oggetto Contenitore modulo e fai clic su ![cmppr1](assets/configure-icon.svg) per aprirne le proprietà.
-1. In **[!UICONTROL Invio]** proprietà, abilita **[!UICONTROL Utilizzare l’invio asincrono]**.
-1. In **[!UICONTROL All’invio]** , selezionare una delle opzioni seguenti da eseguire in caso di invio corretto del modulo.
+1. In modalità creazione modulo adattivo, seleziona l’oggetto Contenitore modulo e seleziona ![cmppr1](assets/configure-icon.svg) per aprirne le proprietà.
+1. Nella sezione delle proprietà **[!UICONTROL Invio]**, abilita **[!UICONTROL Usa invio asincrono]**.
+1. Nella sezione **[!UICONTROL All&#39;invio]**, selezionare una delle opzioni seguenti da eseguire in caso di invio del modulo corretto.
 
-   * **[!UICONTROL Reindirizza a URL]**: reindirizza all’URL o alla pagina specificata al momento dell’invio del modulo. Puoi specificare un URL o sfogliare per scegliere il percorso di una pagina in **[!UICONTROL URL/percorso di reindirizzamento]** campo.
-   * **[!UICONTROL Mostra messaggio]**: visualizza un messaggio all’invio del modulo. È possibile scrivere un messaggio nel campo di testo sotto **[!UICONTROL Mostra messaggio]** opzione. Il campo di testo supporta la formattazione RTF.
+   * **[!UICONTROL Reindirizza all&#39;URL]**: reindirizza all&#39;URL o alla pagina specificata all&#39;invio del modulo. Puoi specificare un URL o sfogliare per scegliere il percorso di una pagina nel campo **[!UICONTROL URL/percorso di reindirizzamento]**.
+   * **[!UICONTROL Mostra messaggio]**: visualizza un messaggio all&#39;invio del modulo. Puoi scrivere un messaggio nel campo di testo sotto l&#39;opzione **[!UICONTROL Mostra messaggio]**. Il campo di testo supporta la formattazione RTF.
 
-1. Seleziona ![check-button1](assets/save_icon.svg) per salvare le proprietà.
+1. Selezionare ![check-button1](assets/save_icon.svg) per salvare le proprietà.
 
 ## Funzionamento dell’invio asincrono {#how-asynchronous-submission-works}
 
-[!DNL Experience Manager Forms] fornisce gestori predefiniti di errori e operazioni riuscite per l’invio dei moduli. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un modulo viene inviato, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull’evento di successo o errore per l’invio. Le informazioni vengono passate come parametri al gestore pertinente per eseguire la funzione.
+[!DNL Experience Manager Forms] fornisce gestori predefiniti di errori e operazioni riuscite per l&#39;invio di moduli. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un modulo viene inviato, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull’evento di successo o errore per l’invio. Le informazioni vengono passate come parametri al gestore pertinente per eseguire la funzione.
 
-Inoltre, gli autori e gli sviluppatori di moduli possono scrivere regole a livello di modulo per ignorare i gestori predefiniti. Per ulteriori informazioni, consulta [Ignora gestori predefiniti tramite regole](#custom).
+Inoltre, gli autori e gli sviluppatori di moduli possono scrivere regole a livello di modulo per ignorare i gestori predefiniti. Per ulteriori informazioni, vedere [Sostituire i gestori predefiniti tramite le regole](#custom).
 
 Esaminiamo innanzitutto la risposta del server per gli eventi di successo e di errore.
 
@@ -104,14 +104,14 @@ Il gestore degli errori legge la risposta del server e visualizza di conseguenza
 
 ## Ignora gestori predefiniti tramite regole {#custom}
 
-Gli sviluppatori e gli autori di moduli possono scrivere regole a livello di modulo per ignorare i gestori predefiniti. La risposta del server per eventi di successo ed errore viene esposta a livello di modulo, a cui gli sviluppatori possono accedere utilizzando `$event.data` nelle regole.
+Gli sviluppatori e gli autori di moduli possono scrivere regole a livello di modulo per ignorare i gestori predefiniti. La risposta del server per eventi di successo ed errore è esposta a livello di modulo, a cui gli sviluppatori possono accedere utilizzando `$event.data` nelle regole.
 
 Per scrivere regole per gestire eventi di successo e di errore, effettua le seguenti operazioni.
 
-1. Apri il modulo adattivo in modalità di creazione, seleziona un oggetto modulo qualsiasi e fai clic su ![edit-rules1](assets/edit-rules-icon.svg) per aprire l’editor di regole.
-1. Seleziona **[!UICONTROL Modulo]** nella struttura Oggetti modulo e selezionare **[!UICONTROL Crea]**.
-1. Scegli **[!UICONTROL è stato inviato correttamente]** o **[!UICONTROL invio non riuscito]** dal **[!UICONTROL Seleziona stato]** elenco a discesa.
-1. Definisci un **[!UICONTROL Then]** azione per lo stato selezionato. Ad esempio, seleziona **[!UICONTROL Accedi a]** e quindi digita o incolla un URL. È inoltre possibile trascinare qualsiasi funzione utilizzando **[!UICONTROL Funzioni]** alla regola.
+1. Apri il modulo adattivo in modalità di creazione, seleziona un oggetto modulo qualsiasi, quindi seleziona ![modifica-regole1](assets/edit-rules-icon.svg) per aprire l’editor di regole.
+1. Selezionare **[!UICONTROL Modulo]** nella struttura Oggetti modulo e selezionare **[!UICONTROL Crea]**.
+1. Scegliere **[!UICONTROL inviato correttamente]** o **[!UICONTROL invio non riuscito]** dall&#39;elenco a discesa **[!UICONTROL Seleziona stato]**.
+1. Definisci un&#39;azione **[!UICONTROL Then]** per lo stato selezionato. Selezionare ad esempio **[!UICONTROL Accedi a]** e quindi digitare o incollare un URL. Puoi anche trascinare qualsiasi funzione utilizzando la scheda **[!UICONTROL Funzioni]** nella regola.
 
    ![gestore invio riuscito](assets/form-submission-handler.png)
 

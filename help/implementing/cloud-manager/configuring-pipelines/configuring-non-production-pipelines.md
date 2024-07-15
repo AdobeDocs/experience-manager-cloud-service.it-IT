@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1400'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 73%
 
 Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
 
-Un utente deve disporre di **[Responsabile dell’implementazione](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** per configurare le pipeline non di produzione.
+Per configurare le pipeline non di produzione, l&#39;utente deve avere il ruolo **[Responsabile dell&#39;implementazione](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**.
 
 ## Pipeline non di produzione {#non-production-pipelines}
 
@@ -70,9 +70,9 @@ Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza
 1. Dalla scheda **Codice sorgente** della finestra di dialogo **Aggiungi pipeline non di produzione**, seleziona il tipo di codice da elaborare con la pipeline.
 
    * **[Codice full stack](#full-stack-code)**
-   * **[Distribuzione mirata](#targeted-deployment)**
+   * **[Distribuzione di destinazione](#targeted-deployment)**
 
-Consulta [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) per ulteriori informazioni sui tipi di pipeline.
+Per ulteriori informazioni sui tipi di pipeline, consulta [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 I passaggi per completare la creazione della pipeline non di produzione variano a seconda del tipo di codice sorgente selezionato. Accedi ai collegamenti riportati qui sopra per passare alla sezione successiva del documento e completare la configurazione della pipeline.
 
@@ -103,7 +103,7 @@ Per completare la configurazione della pipeline non di produzione del codice ful
       * **Test funzionali del prodotto**: esegui [test funzionali del prodotto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) rispetto all’ambiente di sviluppo.
       * **Test funzionali personalizzato**: esegui [test funzionali personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) rispetto all’ambiente di sviluppo.
       * **Test personalizzati dell’interfaccia utente**: esegui [test personalizzati dell’interfaccia utente](/help/implementing/cloud-manager/ui-testing.md) per applicazioni personalizzate.
-      * **Audit dell’esperienza** - Esecuzione [Audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **Audit dell&#39;esperienza** - Esegui [Audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-testing.md)
 
    ![Pipeline full stack](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -113,35 +113,35 @@ Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.m
 
 ### Distribuzione mirata {#targeted-deployment}
 
-Una distribuzione mirata distribuisce il codice solo per parti selezionate dell’applicazione AEM. In tale distribuzione è possibile scegliere di: **Includi** uno dei seguenti tipi di codice:
+Una distribuzione mirata distribuisce il codice solo per parti selezionate dell’applicazione AEM. In tale distribuzione è possibile scegliere di **Includere** uno dei seguenti tipi di codice:
 
-* **Config** : configura le impostazioni per le regole del filtro del traffico nell’ambiente AEM.
-   * Consulta il documento [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md) per scoprire come gestire le regole del filtro del traffico nell’archivio in modo che vengano distribuite correttamente.
-   * Durante l’esecuzione di una pipeline di distribuzione di destinazione, le configurazioni [ad esempio configurazioni WAF](/help/security/traffic-filter-rules-including-waf.md) verranno implementati, purché vengano salvati nell’ambiente, nell’archivio e nel ramo definiti nella pipeline.
+* **Configurazione** - Configura le impostazioni per le regole del filtro del traffico nell&#39;ambiente AEM.
+   * Per informazioni su come gestire le regole del filtro del traffico nell&#39;archivio in modo che vengano distribuite correttamente, consulta il documento [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md).
+   * Durante l&#39;esecuzione di una pipeline di distribuzione di destinazione, le configurazioni [quali le configurazioni WAF](/help/security/traffic-filter-rules-including-waf.md) verranno distribuite, purché vengano salvate nell&#39;ambiente, nell&#39;archivio e nel ramo definiti nella pipeline.
    * In qualsiasi momento può essere presente una sola pipeline di configurazione per ogni ambiente.
-* **Codice front-end** : configura JavaScript e CSS per il front-end dell’applicazione AEM.
+* **Codice front-end**: configura JavaScript e CSS per il front-end dell&#39;applicazione AEM.
    * Con le pipeline front-end, i team di sviluppo front-end acquisiscono maggiore indipendenza e il processo di sviluppo può essere accelerato.
    * Per informazioni sul funzionamento di questo processo e alcune considerazioni per sfruttare al massimo il suo potenziale, consulta il documento [Sviluppo di Sites con la pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
-* **Configurazione a livello web** : configura le proprietà del dispatcher per archiviare, elaborare e consegnare le pagine web al client.
-   * Consulta il documento [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) per ulteriori dettagli.
+* **Configurazione a livello web**: configura le proprietà del dispatcher per archiviare, elaborare e consegnare le pagine web al client.
+   * Per ulteriori dettagli, consulta il documento [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines).
    * Se esiste una pipeline del codice a livello web per l’ambiente selezionato, questa selezione è disabilitata.
    * Se già disponi di una pipeline full stack distribuita in un ambiente, creando una pipeline di configurazione a livello web per lo stesso ambiente la configurazione del livello web esistente nella pipeline full stack verrà ignorata.
 
 >[!NOTE]
 >
->Le pipeline a livello web e di configurazione non sono supportate con archivi privati. Consulta il documento [Aggiunta di archivi privati in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) per maggiori dettagli e per l’elenco completo delle limitazioni.
+>Le pipeline a livello web e di configurazione non sono supportate con gli archivi privati. Per dettagli e un elenco completo delle limitazioni, consulta [Aggiunta di archivi privati in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 
 I passaggi per completare la creazione della pipeline di distribuzione non di produzione con targeting sono gli stessi quando scegli un tipo di distribuzione.
 
 1. Scegliere il tipo di distribuzione desiderato.
 
-![Opzioni di implementazione mirate](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-targeted-deployment.png)
+![Opzioni di distribuzione di destinazione](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-targeted-deployment.png)
 
-1. Definisci il **Ambienti di implementazione idonei**.
+1. Definisci gli **ambienti di distribuzione idonei**.
 
    * Se la pipeline è di distribuzione, seleziona gli ambienti in cui eseguire la distribuzione.
 
-1. Sotto **Codice sorgente**, definisci le seguenti opzioni:
+1. In **Codice Source**, definire le opzioni seguenti:
 
    * **Archivio**: questa opzione definisce da quale archivio Git la pipeline deve recuperare il codice.
 
@@ -152,13 +152,13 @@ I passaggi per completare la creazione della pipeline di distribuzione non di pr
    * **Ramo Git**: questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
       * Immetti i primi caratteri del nome del ramo: la funzione di completamento automatico di questo campo. trova i rami corrispondenti che puoi selezionare.
    * **Posizione codice**: definisce il percorso nel ramo dell’archivio selezionato dal quale la pipeline deve recuperare il codice.
-   * **Pipeline** - Per le pipeline front-end non di produzione, è possibile abilitare **[Audit dell’esperienza.](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **Pipeline** - Per le pipeline front-end non di produzione, è possibile abilitare **[Audit dell&#39;esperienza.](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
-   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
+   ![Pipeline di configurazione](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Se hai abilitato Audit dell’esperienza, tocca o fai clic su **Continua** per passare al **Audit dell’esperienza** in cui è possibile definire i percorsi da includere sempre nell’audit dell’esperienza.
+1. Se hai abilitato Audit dell&#39;esperienza, tocca o fai clic su **Continua** per passare alla scheda **Audit dell&#39;esperienza** in cui puoi definire i percorsi che devono sempre essere inclusi nell&#39;Audit dell&#39;esperienza.
 
-   * Se hai abilitato **Audit dell’esperienza**, consulta il documento [Audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) per informazioni dettagliate su come configurare.
+   * Se hai abilitato **Audit dell&#39;esperienza**, consulta il documento [Audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) per informazioni dettagliate su come configurare.
    * In caso contrario, salta questo passaggio.
 
 1. Per salvare la pipeline, tocca o fai clic su **Salva**.

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Font supportati per la generazione di PDF in Forms as a Cloud Service pronti all’uso (OOTB)  {#ootb-supported-fonts-overview}
 
-AEM Forms as a Cloud Service offre diversi font incorporati supportati che possono essere utilizzati direttamente in [API di comunicazione](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Documento di record per i componenti core](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), e [Documento di record per i componenti di base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
+AEM Forms as a Cloud Service offre diversi font incorporati supportati OOTB che possono essere utilizzati direttamente all&#39;interno di [API di comunicazione](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Documento di record per i componenti core](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) e [Documento di record per i componenti di base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 
 <!--
 
@@ -52,5 +52,5 @@ L&#39;elenco dei font supportati dalla OOTB è:
 * eurosign.ttf
 
 
-Oltre ai tipi di carattere sopra indicati, è possibile utilizzare tipi di carattere personalizzati per conferire ai PDF un aspetto specifico. Per attivare i tipi di carattere personalizzati, [aggiungere font personalizzati all’ambiente Forms as a Cloud Service](/help/forms/use-custom-fonts.md) con una licenza valida.
+Oltre ai tipi di carattere sopra indicati, è possibile utilizzare tipi di carattere personalizzati per conferire ai PDF un aspetto specifico. Per abilitare i caratteri personalizzati, [aggiungi i caratteri personalizzati al tuo ambiente Forms as a Cloud Service](/help/forms/use-custom-fonts.md) con una licenza valida.
 

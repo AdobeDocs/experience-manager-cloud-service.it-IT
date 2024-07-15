@@ -1,5 +1,5 @@
 ---
-title: Modelli per frammenti di contenuto (Risorse - Frammenti di contenuto)
+title: Modelli per frammenti di contenuto (Assets - Frammenti di contenuto)
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM, consentendoti di creare frammenti di contenuto con contenuti strutturati.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
@@ -14,7 +14,7 @@ ht-degree: 86%
 
 # Modelli per frammenti di contenuto {#content-fragment-models}
 
-I modelli per frammenti di contenuto nell’AEM definiscono la struttura del contenuto per il [frammenti di contenuto,](/help/assets/content-fragments/content-fragments.md) fungere da base per i contenuti headless.
+I modelli per frammenti di contenuto in AEM definiscono la struttura del contenuto per i [frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) che fungono da base per i contenuti headless.
 
 Per utilizzare i modelli di frammento di contenuto:
 
@@ -33,12 +33,12 @@ Per utilizzare i modelli di frammento di contenuto:
    >
    >Se l’[utilizzo di modelli per frammenti di contenuto non è stato abilitato](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’opzione **Crea** non sarà disponibile.
 
-1. Specifica la **Titolo modello**.
-Puoi anche definire varie proprietà; ad esempio, aggiungi **Tag**, a **Descrizione**, e seleziona **Abilita modello** a [abilita il modello](#enabling-disabling-a-content-fragment-model) se necessario.
+1. Specifica il **titolo modello**.
+Puoi anche definire varie proprietà; ad esempio, aggiungi **Tag**, **Descrizione** e seleziona **Abilita modello** per [abilitare il modello](#enabling-disabling-a-content-fragment-model), se necessario.
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni su **Pattern URL anteprima predefinito** vedi [Modello per frammenti di contenuto - Proprietà](#content-fragment-model-properties).
+   >Per informazioni dettagliate sul **Pattern URL di anteprima predefinito** vedi [Modello per frammenti di contenuto - Proprietà](#content-fragment-model-properties).
 
    ![titolo e descrizione](assets/cfm-models-02.png)
 
@@ -153,10 +153,10 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
   Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
 * **Rendering come** 
-Sono disponibili varie opzioni per realizzare o riprodurre il campo in un frammento. Spesso questa proprietà ti consente di definire se l’autore vede una singola istanza del campo o se può creare più istanze. Quando **Campo multiplo** è utilizzato è possibile definire il numero minimo e massimo di elementi - vedere [Convalida](#validation) per ulteriori dettagli.
+Sono disponibili varie opzioni per realizzare o riprodurre il campo in un frammento. Spesso questa proprietà ti consente di definire se l’autore vede una singola istanza del campo o se può creare più istanze. Quando si utilizza **Campo multiplo** è possibile definire il numero minimo e massimo di elementi. Per ulteriori dettagli, vedere [Convalida](#validation).
 
 * **Etichetta campo**
-Inserimento di un **Etichetta campo** genererà automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente, se necessario.
+L&#39;immissione di un **Etichetta campo** genererà automaticamente un **Nome proprietà**, che può quindi essere aggiornato manualmente, se necessario.
 
 * **Convalida**
 La convalida di base è disponibile tramite meccanismi quali la proprietà **Obbligatorio**. Alcuni tipi di dati dispongono di campi di convalida aggiuntivi. Vedi [Convalida](#validation) per ulteriori dettagli.
@@ -188,7 +188,7 @@ Il contenuto (per il campo specifico) deve essere univoco in tutti i frammenti d
 
   >[!CAUTION]
   >
-  Se desideri utilizzare MSM (che crea copie dei frammenti di contenuto), qualsiasi **Univoco** I vincoli devono essere rimossi da tutti i tipi di dati utilizzati nei rispettivi modelli per frammenti di contenuto.
+  Se desideri utilizzare MSM (che crea copie dei frammenti di contenuto), tutti i vincoli **Unique** devono essere rimossi da qualsiasi tipo di dati utilizzato nei rispettivi modelli per frammenti di contenuto.
 
 * Vedi **[Riferimento contenuto](#content-reference)** per ulteriori dettagli su quel tipo di dati specifico e sulle relative proprietà.
 
@@ -217,15 +217,15 @@ Diversi tipi di dati includono ora la possibilità di definire requisiti di conv
    * Verifica un modello di frammento di contenuto specifico.
 * **Numero minimo di elementi** / **Numero massimo di elementi**
 
-  Campi definiti come **Campo multiplo** (impostato con **Rendering come**) puoi scegliere:
+  I campi definiti come **Campo multiplo** (impostati con **Rendering come**) dispongono delle opzioni seguenti:
 
    * **Numero minimo di elementi**
    * **Numero massimo di elementi**
 
   Questi vengono convalidati:
 
-   * Il valore massimo viene convalidato nella [Editor frammento di contenuto originale](/help/assets/content-fragments/content-fragments-variations.md).
-   * Entrambi sono convalidati nel [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md).
+   * Il valore massimo viene convalidato nell&#39;[Editor frammento di contenuto originale](/help/assets/content-fragments/content-fragments-variations.md).
+   * Entrambi sono convalidati nell&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Utilizzo di riferimenti per creare contenuti nidificati {#using-references-to-form-nested-content}
 
@@ -247,9 +247,11 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 >
 AEM ha una protezione periodica per:
 >
-* Riferimenti al contenuto Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
+* Riferimenti contenuto
+Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
 >
-* Riferimenti frammento in GraphQL Se crei una query approfondita che restituisce più frammenti di contenuto a cui fanno riferimento l’uno nell’altro, alla prima occorrenza restituirà null.
+* Riferimenti frammento in GraphQL
+Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituirà null.
 
 ### Riferimento contenuto {#content-reference}
 
@@ -335,7 +337,7 @@ Puoi modificare le **Proprietà** di un modello per frammenti di contenuto:
 
      >[!NOTE]
      >
-     Viene utilizzato solo da *nuovo* Editor frammento di contenuto. Consulta [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) per ulteriori informazioni.
+     Utilizzato solo dall&#39;*new* Editor frammento di contenuto. Per ulteriori informazioni, vedere [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties).
 
 
 ## Abilitazione o disabilitazione di un modello per frammenti di contenuto {#enabling-disabling-a-content-fragment-model}

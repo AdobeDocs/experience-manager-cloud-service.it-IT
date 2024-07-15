@@ -18,11 +18,11 @@ Scopri come gestire le pagine del tuo sito web in AEM, incluso lo spostamento, l
 
 >[!TIP]
 >
->Prima di iniziare a gestire le pagine, acquisisci familiarità con [organizzazione delle pagine in AEM.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>Prima di iniziare a gestire le pagine, conoscere [l&#39;organizzazione delle pagine in AEM.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
 
 >[!TIP]
 >
->Ce ne sono diversi [scelte rapide da tastiera](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) che puoi utilizzare dalla console dei siti web per organizzare le pagine in modo più efficiente.
+>Esistono diverse [scelte rapide da tastiera](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) che è possibile utilizzare dalla console dei siti Web per organizzare le pagine in modo più efficiente.
 
 ## Privilegi di accesso {#access-privileges}
 
@@ -32,40 +32,40 @@ Nell’eventualità di problemi, rivolgiti al tuo amministratore di sistema.
 
 ## Apertura di una pagina per la modifica {#opening-a-page-for-editing}
 
-Dopo [creazione di una pagina](/help/sites-cloud/authoring/sites-console/creating-pages.md) o passare a una pagina esistente utilizzando [il **Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) puoi aprirlo per la modifica.
+Dopo aver [creato una pagina](/help/sites-cloud/authoring/sites-console/creating-pages.md) o aver visitato una pagina esistente utilizzando [la console **Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) puoi aprirla per la modifica.
 
-1. Apri [il **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Apri [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Passa alla pagina da modificare.
 1. Seleziona la pagina mediante:
 
    * [Azioni rapide](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) e barra degli strumenti
 
-1. Tocca o fai clic su **Modifica** icona.
+1. Tocca o fai clic sull&#39;icona **Modifica**.
 
    Pulsante ![Modifica](/help/sites-cloud/authoring/assets/edit.png)
 
-1. La pagina viene aperta e puoi modificarla come necessario. A seconda della modalità di creazione della pagina selezionata, il **Modifica** verrà aperto l’editor appropriato.
-   * [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md) - Per le pagine create con l’Editor pagina dell’AEM
-   * [Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md) - Per le pagine create con l’Editor universale
+1. La pagina viene aperta e puoi modificarla come necessario. A seconda della modalità di creazione della pagina selezionata, l&#39;azione **Modifica** aprirà l&#39;editor appropriato.
+   * [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md) - Per le pagine create con l&#39;Editor pagina AEM
+   * [Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md) - Per le pagine create con l&#39;editor universale
 
 ## Copiare e incollare una pagina    {#copying-and-pasting-a-page}
 
 Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
-1. Apri [il **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Apri [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Individuare la pagina da copiare.
 1. Seleziona la pagina mediante:
 
    * [Azioni rapide](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) e barra degli strumenti
 
-1. Tocca o fai clic su **Copia** icona della pagina.
+1. Tocca o fai clic sull&#39;icona della pagina **Copia**.
 
    ![Copia](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Passa al percorso in cui desideri inserire la nuova copia della pagina.
-1. Seleziona la **Incolla** che è diventata disponibile.
+1. Seleziona l&#39;icona **Incolla** che è diventata disponibile.
 
    ![Incolla](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -75,7 +75,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
    ![Finestra di dialogo Incolla](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Seleziona la **Incolla** per confermare la transazione e creare le nuove pagine.
+1. Seleziona il pulsante **Incolla** per confermare la transazione e creare le nuove pagine.
 
 >[!NOTE]
 >
@@ -95,20 +95,20 @@ La procedura per spostare o rinominare una pagina è sostanzialmente la stessa e
 
 In AEM è disponibile una funzionalità che consente di aggiornare eventuali collegamenti interni che rimandano alla pagina da rinominare/spostare. Questa operazione può essere eseguita a livello di singola pagina, per assicurare la massima flessibilità.
 
-1. Apri [il **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Apri [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Individuare la pagina da spostare.
 1. Seleziona la pagina mediante:
 
    * [Azioni rapide](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) e barra degli strumenti
 
-1. Tocca o fai clic su **Sposta** per aprire la procedura guidata sposta pagina.
+1. Tocca o fai clic sull&#39;icona della pagina **Sposta** per aprire la procedura guidata Sposta pagina.
 
    ![Pulsante Sposta](/help/sites-cloud/authoring/assets/move.png)
 
-1. Dalla sezione **Rinomina** passaggio della procedura guidata puoi effettuare le seguenti operazioni:
+1. Dal passaggio **Rinomina** della procedura guidata puoi effettuare le seguenti operazioni:
 
-   * Specifica il nome da assegnare alla pagina spostata, quindi seleziona **Successivo** per procedere.
+   * Specifica il nome da assegnare alla pagina spostata, quindi seleziona **Avanti** per continuare.
    * Seleziona **Annulla** per interrompere la procedura.
 
    ![Spostare e rinominare la pagina](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -119,7 +119,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
    >
    >Se sposti la pagina in una posizione in cui esiste già una pagina con lo stesso nome, il sistema genera automaticamente una variante del nome aggiungendo un numero. Ad esempio, se `beach` esiste già, una nuova pagina con il nome `beach` diventerà `beach1`.
 
-1. Dalla sezione **Seleziona destinazione** passaggio della procedura guidata puoi effettuare le seguenti operazioni:
+1. Dal passaggio **Seleziona destinazione** della procedura guidata puoi effettuare le seguenti operazioni:
 
    * Utilizza la [vista a colonne](/help/sites-cloud/authoring/basic-handling.md#column-view) per accedere alla nuova posizione della pagina:
 
@@ -151,7 +151,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 1. Tocca o fai clic su **Sposta** per definire quando deve essere eseguita l&#39;azione di spostamento.
 
    * **Ora** attiverà un [processo asincrono](#asynchronous-actions) per spostare immediatamente la pagina.
-   * **Più tardi** ti consentirà di pianificare una data per l’elaborazione dello spostamento.
+   * **Più tardi** ti consentirà di pianificare una data per l&#39;elaborazione dello spostamento.
 
    ![Definizione di quando spostare](assets/managing-pages-move-page-now-later.png)
 
@@ -173,7 +173,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
 Le azioni di spostamento delle pagine vengono sempre elaborate in modo asincrono, consentendo all’utente di continuare a creare nell’interfaccia utente senza ostacoli.
 
-Lo stato dei processi asincroni può essere controllato in [**Stato processi asincroni** dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) a **Navigazione globale** > **Strumenti** > **Operazioni** > **Processi**
+Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato processi asincroni**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) in **Navigazione globale** > **Strumenti** > **Operazioni** > **Processi**
 
 >[!TIP]
 >
@@ -181,7 +181,7 @@ Lo stato dei processi asincroni può essere controllato in [**Stato processi asi
 
 ### Eliminazione di una pagina {#deleting-a-page}
 
-1. Apri [il **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Apri [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Passare alla pagina che si desidera eliminare.
 1. Utilizza la [modalità di selezione](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) per selezionare la pagina richiesta, quindi utilizza **Elimina** dalla barra degli strumenti:
 
@@ -194,9 +194,9 @@ Lo stato dei processi asincroni può essere controllato in [**Stato processi asi
    * **Intendi archiviare le pagine prima di eliminarle?** - Se questa opzione è selezionata, al momento dell’eliminazione verranno create versioni delle pagine selezionate da eliminare.
       * [Le versioni possono essere ripristinate in un momento successivo](/help/sites-cloud/authoring/sites-console/page-versions.md).
       * Le pagine eliminate senza versioni precedenti non possono essere ripristinate.
-1. Tocca o fai clic su **Annulla** per interrompere l’azione oppure **Elimina** per confermare l’azione.
+1. Tocca o fai clic su **Annulla** per interrompere l&#39;azione o su **Elimina** per confermare l&#39;azione.
    * Se la pagina non contiene riferimenti, viene eliminata.
-   * Se la pagina contiene riferimenti, viene visualizzata una finestra di messaggio per informare che **Si fa riferimento a una o più pagine.** Puoi selezionare **Forza eliminazione** o **Annulla**.
+   * Se la pagina contiene riferimenti, verrà visualizzata una finestra di messaggio per informare che **Si fa riferimento a una o più pagine.** È possibile selezionare **Forza eliminazione** o **Annulla**.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ Lo stato dei processi asincroni può essere controllato in [**Stato processi asi
 
 Puoi creare cartelle per organizzare file e pagine.
 
-1. Apri [il **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Apri [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Passa alla posizione desiderata.
 1. Per aprire l’elenco delle opzioni, seleziona **Crea** dalla barra degli strumenti
 1. Seleziona **Cartella** per aprire la finestra di dialogo. Nella finestra puoi immettere il **Nome** e il **Titolo**:

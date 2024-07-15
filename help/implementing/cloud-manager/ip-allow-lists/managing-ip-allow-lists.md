@@ -18,7 +18,7 @@ Inserire nell&#39;elenco Consentiti Scopri come visualizzare, modificare, elimin
 
 ## Visualizzazione e aggiornamento degli elenchi IP consentiti {#update-ip-allow-lists}
 
-Un utente in **Proprietario business** o **Responsabile dell’implementazione** per visualizzare e aggiornare un inserisco nell&#39;elenco Consentiti IP, è possibile eseguire la procedura seguente.
+L&#39;utente con il ruolo **Proprietario business** o **Responsabile dell&#39;implementazione** può visualizzare e aggiornare un inserisco nell&#39;elenco Consentiti di IP seguendo la procedura riportata di seguito.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
@@ -27,7 +27,7 @@ Un utente in **Proprietario business** o **Responsabile dell’implementazione**
 1. Identificare la riga per i inserisce nell&#39;elenco Consentiti IP da visualizzare o aggiornare.
 1. Fai clic sul pulsante con i puntini di sospensione all’estrema destra della riga.
 1. Seleziona l’opzione **Visualizza e aggiorna**.
-1. Il **Visualizza e aggiorna** procedura guidata visualizza il nome, gli indirizzi IP (o intervalli) che definiscono la regola insieme agli ambienti e ai servizi a cui la regola viene applicata.
+1. La procedura guidata **Visualizza e aggiorna** visualizza il nome, gli indirizzi IP (o intervalli) che definiscono la regola insieme agli ambienti e ai servizi a cui la regola viene applicata.
 1. Modifica il nome o gli indirizzi IP, a seconda delle esigenze, e conferma quanto inserito.
 
 L&#39;aggiunta o la rimozione di un nuovo intervallo IP da un elenco Consentiti IP viene automaticamente applicata/rimossa da tutti gli ambienti/servizi corrispondenti ai quali era stata precedentemente applicata.
@@ -40,17 +40,17 @@ Non è possibile aggiornare un elenco Consentiti IP mentre è in corso un aggior
 
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 
-1. Fai clic su **Stato** icona per il elenco Consentiti di IP da  dalla tabella **Ambienti** e seleziona la **ELENCHI CONSENTITI IP** pagina.
+1. Dalla tabella della schermata **Ambienti**, fai clic sull&#39;icona **Stato** del elenco Consentiti IP e seleziona la pagina **Elenchi consentiti IP**.
 
 1. Cloud Manager visualizza lo stato del inserisco nell&#39;elenco Consentiti di come descritto [nella sezione seguente.](#status)
 
 ### Stato di un elenco IP consentiti {#status}
 
-[Durante il controllo dello stato dei elenchi Consentiti IP,](#check-allow-list-status) possono avere uno dei seguenti valori.
+inserire nell&#39;elenco Consentiti [Il controllo dello stato dei IP può avere uno dei valori seguenti](#check-allow-list-status).
 
-* **Applicato** - Il inserisco nell&#39;elenco Consentiti di IP è stato applicato correttamente a uno o più ambienti.
+* **Applicato** - Il inserisco nell&#39;elenco Consentiti IP è stato applicato correttamente a uno o più ambienti.
 
-* **Aggiornamento** - È in corso un aggiornamento del elenco Consentiti di IP, che può includere una o più applicazioni o la rimozione dell&#39;elenco.
+* **Aggiornamento in corso** - È in corso l&#39;aggiornamento del inserisco nell&#39;elenco Consentiti di aggiornamento dell&#39;elenco IP, che può includere una o più applicazioni o la rimozione dell&#39;elenco.
 
    * Ogni applicazione o rimozione viene elencata con il relativo stat: **Non avviato**, **In corso**, **Completato** o **Non riuscito**.
 
@@ -59,9 +59,9 @@ Non è possibile aggiornare un elenco Consentiti IP mentre è in corso un aggior
       * Lo stato **Non riuscito** viene visualizzato nel caso in cui un’applicazione o rimozione dell’aggiornamento risulti non riuscita.
       * Lo stato rimane **Non riuscito** fino alla risoluzione di tutti gli errori.
          * Per poter risolvere l&#39;errore, seleziona l&#39;icona **Riprova** accanto allo stato.
-      * Non è possibile aggiornare o eliminare un elenco Consentiti IP con un **Non riuscito** stato.
+      * Impossibile aggiornare o eliminare un elenco Consentiti IP con stato **Non riuscito**.
 
-* **Eliminazione** - È in corso l&#39;eliminazione di un elenco Consentiti di.
+* inserire nell&#39;elenco Consentiti **Eliminazione in corso** - È in corso l&#39;eliminazione di un IP.
    * L’eliminazione comporta la rimozione dell’elenco da tutti i servizi.
    * Ogni rimozione viene elencata con il relativo stato: **Non avviato**, **In corso**, **Completato** o **Non riuscito**.
    * Al termine dell’operazione di eliminazione:
@@ -74,11 +74,11 @@ Non è possibile aggiornare un elenco Consentiti IP mentre è in corso un aggior
    * Se una rimozione non va a buon fine, lo stato diventa **Eliminazione non riuscita.** 
    * Lo stato rimane **Eliminazione non riuscita** fino alla risoluzione di tutti gli errori.
       * Per risolvere gli errori, seleziona **Elimina** dal menu con i puntini di sospensione all’estrema destra della riga della tabella.
-   * Non è possibile aggiornare un elenco Consentiti IP durante il quale lo stato è **Non riuscito**.
+   * Non è possibile aggiornare un elenco Consentiti di IP lo stato è **Non riuscito**.
 
 ## Eliminazione di un elenco IP consentiti {#delete-allow-list}
 
-Un utente in **Proprietario business** o **Responsabile dell’implementazione** per visualizzare e aggiornare un inserisco nell&#39;elenco Consentiti IP, è possibile eseguire la procedura seguente.
+L&#39;utente con il ruolo **Proprietario business** o **Responsabile dell&#39;implementazione** può visualizzare e aggiornare un inserisco nell&#39;elenco Consentiti di IP seguendo la procedura riportata di seguito.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
@@ -92,10 +92,10 @@ Se si elimina un elenco Consentiti IP, questo viene automaticamente rimosso da t
 
 ## Configurazioni CDN preesistenti {#pre-existing-cdn}
 
-Se disponi di una configurazione CDN preesistente per i inserisce nell&#39;elenco Consentiti di IP, viene visualizzato un messaggio informativo sulla **ELENCO CONSENTITI IP** pagina. Il messaggio ti incoraggia ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
+Se disponi di una configurazione CDN preesistente per i inserisce nell&#39;elenco Consentiti di IP, viene visualizzato un messaggio informativo sulla pagina **Elenco consentiti IP**. Il messaggio ti incoraggia ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che siano visibili e configurabili in Cloud Manager.
 
 Il messaggio non viene più visualizzato dopo aver eseguito la migrazione di tutte le configurazioni dell’ambiente preesistenti tramite l’interfaccia utente. Potrebbero essere necessari 1-2 giorni lavorativi affinché il messaggio non venga più visualizzato.
 
-Consulta [Aggiunta di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) per ulteriori dettagli.
+Vedi [Aggiunta di un Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) per ulteriori dettagli.
 
 Un messaggio simile viene visualizzato anche nelle pagine **Certificati SSL** e **Ambienti** degli ambienti che presentano configurazioni CDN preesistenti per i certificati SSL o nomi di dominio personalizzati.
