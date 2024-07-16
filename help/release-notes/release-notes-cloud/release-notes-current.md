@@ -3,10 +3,10 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1566963898fb7f6999e3fad796b938128521bcce
+source-git-commit: 445d15c1449b968325c77becce8b0a547ba151d6
 workflow-type: tm+mt
-source-wordcount: '1957'
-ht-degree: 100%
+source-wordcount: '1941'
+ht-degree: 99%
 
 ---
 
@@ -22,9 +22,9 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 >[!NOTE]
 >
->Consulta [Ultimi aggiornamenti della documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates) per informazioni dettagliate sugli aggiornamenti della documentazione non direttamente correlati a una versione.
+>Per ricevere una notifica e-mail mensile sugli aggiornamenti delle note sulla versione di Experience Cloud, abbonati ad [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
 
-## Data di pubblicazione {#release-date}
+## Data di rilascio {#release-date}
 
 La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.6.0) è il 27 giugno 2024. La prossima versione funzionale (2024.7.0) è pianificata per il 25 luglio 2024.
 
@@ -252,5 +252,4 @@ L’elenco completo dei rilasci di generare varianti è disponibile [qui](/help/
 
 ## Note sulla versione di Experience Cloud {#experience-cloud}
 
-Informazioni sulle versioni di altre applicazioni Experience Cloud sono disponibili [qui](https://experienceleague.adobe.com/it/docs/release-notes/experience-cloud/current).
-Per ricevere una notifica e-mail mensile sugli aggiornamenti delle note sulla versione di Experience Cloud, abbonati ad [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
+Puoi trovare informazioni sulle versioni di altre applicazioni Experience Cloud [qui](https://experienceleague.adobe.com/it/docs/release-notes/experience-cloud/current).
