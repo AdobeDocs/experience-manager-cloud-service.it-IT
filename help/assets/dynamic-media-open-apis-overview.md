@@ -2,10 +2,10 @@
 title: Dynamic Medie con funzionalità OpenAPI
 description: Scopri i concetti chiave, ad esempio perché utilizzare Dynamic Medie con funzionalità OpenAPI e come abilitarlo.
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 0%
+source-wordcount: '1061'
+ht-degree: 1%
 
 ---
 
@@ -117,6 +117,10 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Medie con funzion
 </td>
 </table>
 <table>
+
+
+
+<table>
 <td>
    <a href="/help/assets/search-assets-api.md">
    <img alt="Cercare risorse nell’archivio Experience Manager Assets" src="./assets/search-assets-api-overview.png" />
@@ -156,5 +160,48 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Medie con funzion
       L'amministratore DAM <em> o i Brand Manager limitano l'accesso configurando i ruoli per le risorse approvate nell'istanza di authoring di AEM as a Cloud Service.</em>
    </p>
 </td>
+
+</table>
+<table>
+<td>
+   <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+   <img alt="Integrare AEM Assets remoto con AEM Sites" src="./assets/connected-assets-rdam.png" />
+   </a>
+   <div>
+      <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+      <strong>Integrare AEM Assets remoto con AEM Sites</strong>
+      </a>
+   </div>
+   <p>
+      <em>Scopri come integrare AEM Assets remoto con l’ambiente AEM Sites. </em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+   <img alt="Domande frequenti su Dynamic Medie con funzionalità OpenAPI" src="./assets/dynamic-media-faqs.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+      <strong>Domande frequenti su Dynamic Medie con funzionalità OpenAPI</strong>
+      </a>
+   </div>
+   <p>
+      <em>Ottieni una risposta alle domande più frequenti su Dynamic Medie con funzionalità OpenAPI.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/configure-custom-domain.md">
+   <img alt="Configurare domini personalizzati" src="./assets/configure-custom-domain.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/configure-custom-domain.md">
+      <strong>Configura dominio personalizzato</strong>
+      </a>
+   </div>
+   <p>
+      <em>Se AEM as a Cloud Service viene fornito con un dominio predefinito, puoi personalizzarlo in base alle tue esigenze.</em>
+   </p>
+</td>
+
 </table>
 
