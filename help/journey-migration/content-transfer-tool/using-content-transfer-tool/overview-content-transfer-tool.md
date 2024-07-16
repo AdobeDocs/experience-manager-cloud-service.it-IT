@@ -4,7 +4,7 @@ description: Scopri come utilizzare lo strumento Content Transfer (Trasferimento
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 52%
@@ -68,7 +68,7 @@ Nella fase di acquisizione, per applicare il contenuto delta sul contenuto corre
 >title="Scadenza di un set di migrazione"
 >abstract="Ottieni informazioni sulla scadenza di un set di migrazione."
 
-Tutti i set di migrazione scadranno dopo un periodo prolungato di inattività di circa 90 giorni. Una volta visualizzati gli indicatori sulla scheda del progetto e sulle righe della tabella del processo di migrazione per un periodo di tempo, il set di migrazione scadrà e i relativi dati non saranno più disponibili. Il termine di scadenza può essere facilmente prorogato agendo sulla migrazione impostata da:
+Tutti i set di migrazione scadranno dopo un periodo prolungato di inattività di circa 45 giorni. Una volta visualizzati gli indicatori sulla scheda del progetto e sulle righe della tabella del processo di migrazione per un periodo di tempo, il set di migrazione scadrà e i relativi dati non saranno più disponibili. Il termine di scadenza può essere facilmente prorogato agendo sulla migrazione impostata da:
 
 * modifica della descrizione
 * ottenimento della chiave di estrazione
