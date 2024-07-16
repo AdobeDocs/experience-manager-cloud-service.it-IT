@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3938'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -501,7 +501,7 @@ Ulteriori informazioni sul [Centro azioni](/help/operations/actions-center.md), 
 ![Notifica Centro azioni](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
-La proprietà alert può essere applicata al nodo dell&#39;azione per tutti i tipi di azione (consenti, blocco, registro).
+La proprietà dell’avviso può essere applicata al nodo dell’azione per tutti i tipi di azione (consenti, blocco, registro).
 
 ```
 kind: "CDN"
@@ -531,7 +531,7 @@ Una notifica e-mail [Centro azioni](/help/operations/actions-center.md) verrà i
 
 Se questa soglia viene raggiunta, Adobe bloccherà il traffico da tale indirizzo IP. Tuttavia si consiglia di adottare misure aggiuntive per proteggere l’origine, tra cui la configurazione delle regole del filtro del traffico del limite di frequenza e bloccare i picchi a soglie più basse. Per una procedura guidata, consulta [Tutorial sul blocco degli attacchi DoS e DDoS tramite le regole del traffico](#tutorial-blocking-DDoS-with-rules).
 
-Questo avviso è abilitato per impostazione predefinita, ma può essere disabilitato utilizzando la proprietà *enable_ddos_alerts*, impostata su false. Una volta attivato, l&#39;avviso non si riattiverà fino al giorno successivo (UTC).
+Questo avviso è attivato per impostazione predefinita, ma può essere disattivato utilizzando la proprietà *enable_ddos_alerts* e impostandola su false. Una volta attivato, l’avviso non si riattiverà fino al giorno successivo (UTC).
 
 ```
 kind: "CDN"
