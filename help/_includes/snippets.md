@@ -1,8 +1,8 @@
 ---
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 2acaafab86c0552e63e7b38b2a774c3c6afd6f9c
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 100%
+source-wordcount: '564'
+ht-degree: 86%
 
 ---
 # Snippet {#snippets}
@@ -87,8 +87,8 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
      </tr>
    <tr>
     <td>Eseguire operazioni matematiche in un campo del pannello ripetibile </td>
-    <td>Le funzioni matematiche OOTB (preconfigurate) possono essere applicate ai campi del pannello ripetibile per eseguire funzioni come la somma e la media. </td>
-    <td>Le operazioni matematiche nel campo del pannello ripetibile possono essere eseguite utilizzando le funzioni personalizzate.
+    <td>Le funzioni matematiche OOTB possono essere applicate ai campi del pannello ripetibili per eseguire funzioni come somma e media utilizzando l’editor di regole. È necessario fornire due argomenti: il primo specifica il pannello ripetibile contenente il campo, mentre il secondo specifica il campo all’interno del pannello ripetibile corrispondente. </td>
+    <td>Le operazioni matematiche sul campo del pannello ripetibile possono essere eseguite utilizzando le funzioni personalizzate. È inoltre possibile applicare le funzioni matematiche direttamente ai campi del pannello ripetibile utilizzando l’editor di regole.
    </td>
    </tr>
       <tr>
