@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
+source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
 workflow-type: tm+mt
 source-wordcount: '5735'
 ht-degree: 1%
@@ -13,13 +13,13 @@ ht-degree: 1%
 ---
 
 
+# Aggiungere regole a un modulo adattivo (componenti core) {#adaptive-forms-rule-editor}
+
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Componenti core) | Questo articolo |
 | AEM as a Cloud Service (Componenti di base) | [Fai clic qui](/help/forms/rule-editor.md) |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
-
-# Aggiungere regole a un modulo adattivo (componenti core) {#adaptive-forms-rule-editor}
 
 La funzione dell’editor di regole consente agli utenti aziendali e agli sviluppatori di Forms di scrivere regole sugli oggetti Adaptive Form. Queste regole definiscono le azioni da attivare sugli oggetti modulo in base a condizioni preimpostate, input dell&#39;utente e azioni dell&#39;utente sul modulo. Consente di semplificare ulteriormente l’esperienza di compilazione dei moduli, garantendo precisione e velocità.
 
@@ -170,10 +170,10 @@ _
 
 ![Campi multipli consentiti in Quando](/help/forms/assets/allowed-multiple-field-when.png)
 
-##### Considerazioni sull&#39;utilizzo di campi multipli consentiti nella funzione Quando condizione
+##### Considerazioni durante l&#39;utilizzo di Campi multipli consentiti nella funzione Quando condizione
 
-* Assicurarsi che il [componente principale sia impostato sulla versione 3.0.14 o successiva](https://github.com/adobe/aem-core-forms-components) per utilizzare questa funzionalità nell&#39;editor delle regole.
-* Se le regole vengono applicate a campi diversi all&#39;interno della condizione Quando, la regola si attiva anche se viene modificato solo uno di questi campi.
+* Assicurarsi che il [componente core sia impostato sulla versione 3.0.14 o successiva](https://github.com/adobe/aem-core-forms-components) per utilizzare questa funzione nell&#39;regola editor.
+* Se le regole vengono applicate a campi diversi all&#39;interno della condizione Quando, il regola attiva lineare se viene modificato solo uno di tali campi.
 
 
 <!--
@@ -274,13 +274,13 @@ Il tipo di regola **[!UICONTROL Imposta valore di]** consente di impostare il va
 
 Il tipo di regola **Imposta valore di** non è disponibile per tutti gli oggetti modulo, ad esempio pannelli e pulsanti della barra degli strumenti. Una regola Set Value Of standard ha la seguente struttura:
 
-Imposta il valore dell&#39;oggetto A su di:
+Impostare il valore dell&#39;oggetto A su:
 
 (stringa ABC) O
 (proprietà oggetto X dell&#39;oggetto C) O
 (valore da una funzione) O
-(valore tratto da un&#39;espressione matematica) O
-(valore di output di un servizio del modello di dati);
+(valore da un&#39;espressione matematica) O
+(valore di output di un servizio di modello dati);
 
 Quando (facoltativo):
 
@@ -445,7 +445,7 @@ Quando viene toccato, questo pulsante attiva o disattiva il riquadro delle funzi
 
 L’editor di regole visive è l’area in cui si scrivono le regole nella modalità editor visivo dell’interfaccia utente dell’editor di regole. Ti consente di selezionare un tipo di regola e di definire di conseguenza condizioni e azioni. Quando si definiscono condizioni e azioni in una regola, è possibile trascinare gli oggetti modulo e le funzioni dal riquadro Oggetti modulo e funzioni.
 
-Per ulteriori informazioni sull&#39;utilizzo dell&#39;editor di regole visive, vedere [Scrivere regole](rule-editor.md#p-write-rules-p).
+Per ulteriori informazioni sull&#39;utilizzo di regola editor visivi, vedere [Scrivere regole](rule-editor.md#p-write-rules-p).
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -460,9 +460,9 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. Click **[!UICONTROL Save]**.
 -->
 
-### E. Pulsanti Fine e annulla {#done-and-cancel-buttons}
+### E. Pulsanti Fine e Annulla {#done-and-cancel-buttons}
 
-Il **[!UICONTROL pulsante Fine]** viene utilizzato per salvare una regola. È possibile salvare una regola incompleta. Tuttavia, incompleti non sono validi e non vengono eseguiti. Le regole salvate in un oggetto modulo vengono elencate al successivo avvio dell&#39;editor di regole dallo stesso oggetto modulo. Puoi gestire le regole esistenti in tale vista. Per ulteriori informazioni, vedere [Gestire le regole](rule-editor.md#p-manage-rules-p).
+Il **[!UICONTROL pulsante Fine]** viene utilizzato per salvare un regola. È possibile salvare un regola incompleto. Tuttavia, gli incompleti vengono non valido e non vengono eseguiti. Le regole salvate in un oggetto modulo vengono elencate quando si lanciare la regola editor successiva dallo stesso oggetto modulo. Puoi gestire le regole esistenti in tale vista. Per ulteriori informazioni, vedere [Gestire le regole](rule-editor.md#p-manage-rules-p).
 
 Il pulsante **[!UICONTROL Annulla]** elimina le modifiche apportate a una regola e chiude l&#39;editor di regole.
 
@@ -574,7 +574,7 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
-   Nel campo dell&#39;espressione estesa selezionare **[!UICONTROL diviso per]** dal **[!UICONTROL campo Seleziona operatore]** e **[!UICONTROL Numero]** dal **[!UICONTROL campo Seleziona opzione]** . Quindi, specificare **[!UICONTROL 2]** nel campo del numero.
+   Nel campo dell&#39;espressione estesa, selezionare **[!UICONTROL diviso per]** dal **[!UICONTROL campo Seleziona operatore]** e **[!UICONTROL Numero]** dal **[!UICONTROL campo Seleziona opzione]** . Quindi, specificare **[!UICONTROL 2]** nel campo numero.
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
@@ -592,7 +592,7 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
    * Seleziona o trascina dalla scheda Oggetto Forms il campo **[!UICONTROL Stato civile]** nel primo campo **[!UICONTROL Rilascia oggetto o seleziona qui]**.
 
-   * Select **[!UICONTROL è uguale a]** dal **[!UICONTROL campo Seleziona operatore]** .
+   * Seleziona **[!UICONTROL è uguale a]** dal **[!UICONTROL campo Seleziona operatore]** .
 
    * Seleziona Stringa nell&#39;altro **[!UICONTROL Rilascia l&#39;oggetto o seleziona qui]** campo e specifica **[!UICONTROL Sposato]** nel campo **[!UICONTROL Immetti una stringa]**.
 
@@ -863,13 +863,13 @@ Di seguito è riportato un esempio di regola nidificata che visualizza un messag
 
 ![Espressione complessa](assets/complexexpression.png)
 
-Puoi anche trascinare le condizioni all’interno di una regola per modificarla. Seleziona e passa il puntatore del mouse sull&#39;handle ( ![handle](assets/drag-handle.svg)) prima di una condizione. Quando il puntatore diventa il simbolo della mano, come illustrato di seguito, trascinare la condizione in un punto qualsiasi all&#39;interno della regola. La struttura delle regole cambia.
+Puoi anche trascinare le condizioni all’interno di una regola per modificarla. Seleziona e passa il puntatore del mouse sull&#39;handle ( ![handle](assets/drag-handle.svg)) prima di una condizione. Una volta che il puntatore diventa il simbolo della mano, come mostrato di seguito, trascinare la condizione in un punto qualsiasi della regola. La struttura regola cambia.
 
 ![Trascinamento della selezione](assets/drag-and-drop.png)
 
-## Condizioni di espressione della data {#dateexpression}
+## Condizioni dell&#39;espressione data {#dateexpression}
 
-L&#39;editor delle regole consente di utilizzare il confronto delle date per creare condizioni.
+La regola editor consente di utilizzare i confronti di date per creare condizioni.
 
 Di seguito è riportata una condizione di esempio che visualizza un oggetto di testo statico se l’ipoteca sulla casa è già stata accettata, che l’utente indica compilando il campo data.
 
