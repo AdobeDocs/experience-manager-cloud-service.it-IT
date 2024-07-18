@@ -3,9 +3,9 @@ title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 445d15c1449b968325c77becce8b0a547ba151d6
+source-git-commit: 544fa6be686071275abd34a76f785c89b5ac3ed9
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1965'
 ht-degree: 99%
 
 ---
@@ -32,13 +32,11 @@ La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience
 
 Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-notes/maintenance/latest.md).
 
-<!--  ## Release Video {#release-video}
+## Video sulla versione {#release-video}
 
-Have a look at the June 2024 Release Overview video for a summary of the features added in the 2024.6.0 release:
+Dai un’occhiata al video Panoramica sulla versione di giugno 2024 per un riepilogo delle funzioni aggiunte alla versione 2024.6.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3430779?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
