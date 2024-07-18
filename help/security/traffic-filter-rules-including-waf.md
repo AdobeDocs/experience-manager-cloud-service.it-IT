@@ -4,10 +4,10 @@ description: Configurazione delle regole del filtro del traffico, incluse le reg
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
-workflow-type: ht
+source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
+workflow-type: tm+mt
 source-wordcount: '3938'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -531,7 +531,7 @@ Una notifica e-mail [Centro azioni](/help/operations/actions-center.md) verrà i
 
 Se questa soglia viene raggiunta, Adobe bloccherà il traffico da tale indirizzo IP. Tuttavia si consiglia di adottare misure aggiuntive per proteggere l’origine, tra cui la configurazione delle regole del filtro del traffico del limite di frequenza e bloccare i picchi a soglie più basse. Per una procedura guidata, consulta [Tutorial sul blocco degli attacchi DoS e DDoS tramite le regole del traffico](#tutorial-blocking-DDoS-with-rules).
 
-Questo avviso è attivato per impostazione predefinita, ma può essere disattivato utilizzando la proprietà *enable_ddos_alerts* e impostandola su false. Una volta attivato, l’avviso non si riattiverà fino al giorno successivo (UTC).
+Questo avviso è abilitato per impostazione predefinita, ma può essere disabilitato utilizzando la proprietà *defaultTrafficAlerts*, impostata su false. Una volta attivato, l’avviso non si riattiverà fino al giorno successivo (UTC).
 
 ```
 kind: "CDN"
@@ -540,7 +540,7 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-    enable_ddos_alerts: false
+   defaultTrafficAlerts: false
 ```
 
 ## Registri CDN {#cdn-logs}
