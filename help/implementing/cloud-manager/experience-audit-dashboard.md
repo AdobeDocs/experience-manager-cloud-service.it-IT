@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1995'
 ht-degree: 7%
 
 ---
@@ -112,7 +112,7 @@ Oltre al riepilogo presentato nei dettagli di un&#39;esecuzione della pipeline, 
 
 Toccando o facendo clic su **Visualizza pagine più lente** si apre la finestra di dialogo **5 pagine più lente**, in cui sono visualizzate le cinque pagine con le prestazioni più basse [configurate per il controllo.](#configuration)
 
-![Cinque più lenti](assets/experience-audit-slowest-five.jpg)
+![Cinque più lenti](assets/experience-audit-slowest-five.png)
 
 I punteggi sono suddivisi per **Prestazioni**, **Accessibilità**, **Best practice** e **SEO** insieme alla deviazione di ogni metrica dall&#39;ultimo controllo di audit.
 
@@ -166,7 +166,7 @@ La sezione **Recommendations** mostra un set aggregato di approfondimenti. Per i
 
 Tocca o fai clic sulla freccia per visualizzare i dettagli di qualsiasi consiglio.
 
-![Dettagli consiglio](assets/experience-audit-recommendation-details.png)
+![Dettagli consiglio](assets/experience-audit-recommendations-details.png)
 
 Quando disponibili, i dettagli espansi dei consigli contengono anche la percentuale di impatto dei consigli, per concentrarti sui cambiamenti più incisivi.
 
@@ -184,7 +184,7 @@ Toccando o facendo clic sul collegamento di una pagina particolare si aggiorna i
 
 ![Risultati pagina](assets/experience-audit-page-results.png)
 
-La scheda **Rapporti non elaborati** fornisce punteggi per ogni controllo di audit della pagina. Tocca o fai clic sull&#39;icona **Scarica** per recuperare un file JSON dei dati non elaborati.
+La scheda **Rapporti non elaborati** fornisce punteggi per ogni controllo di audit della pagina. Tocca o fai clic sulla data del rapporto nella colonna **Rapporto faro** per recuperare un file JSON dei dati non elaborati.
 
 ![Report non elaborato](assets/experience-audit-raw-reports.png)
 
@@ -200,6 +200,10 @@ Per eseguire un&#39;analisi on-demand, passa alla scheda **Report** per visualiz
 
 ![Analisi su richiesta](assets/experience-audit-on-demand.png)
 
+Il pulsante **Esegui scansione** non è più disponibile ed è contrassegnato con un&#39;icona dell&#39;orologio quando è già in esecuzione un&#39;analisi su richiesta.
+
+![Analisi su richiesta in esecuzione](assets/experience-audit-on-demand-running.png)
+
 Le scansioni on-demand attivano un controllo dell&#39;esperienza per le ultime 25 [pagine configurate](#configuration) e in genere terminano in pochi minuti.
 
 Al termine, il grafico dei punteggi verrà aggiornato automaticamente e potrai esaminare i risultati esattamente come per una scansione dell’esecuzione della pipeline.
@@ -214,15 +218,15 @@ Puoi filtrare il grafico dei punteggi in base al tipo di trigger utilizzando il 
 
 ## L’audit dell’esperienza riscontra problemi {#issues}
 
-Se le [pagine configurate](#configuration) per il controllo non erano disponibili, il controllo dell&#39;esperienza ne riflette la disponibilità.
+Se le [pagine configurate](#configuration) per l&#39;audit non erano disponibili o si sono verificati altri errori nel controllo di audit, l&#39;audit dell&#39;esperienza ne tiene conto.
 
 La pipeline mostra una sezione di errore espandibile per visualizzare i percorsi URL relativi a cui non poteva accedere.
 
 ![Problemi rilevati dall&#39;audit dell&#39;esperienza](assets/experience-audit-issues.jpg)
 
-Se visualizzi il report completo, i dettagli sono visualizzati nella sezione **[Risultati analisi controllo esperienza](#results)**.
+Se si visualizza il report completo, i dettagli sono visualizzati nella sezione **[Risultati analisi audit dell&#39;esperienza](#results)**, anch&#39;essa espandibile.
 
-![Problemi relativi ai report completi](assets/experience-audit-issues-reports.jpeg)
+![Problemi relativi ai report completi](assets/experience-audit-issues-report.png)
 
 Alcuni motivi per cui le pagine potrebbero non essere disponibili sono i seguenti:
 
@@ -253,8 +257,7 @@ Questi possono essere migliorati:
 
 I dettagli seguenti forniscono informazioni aggiuntive su come l’audit dell’esperienza valuta il sito. Non sono necessarie per l’utilizzo generale della funzione e sono fornite qui per completezza.
 
-* Anche se i [percorsi di pagina di audit dell&#39;esperienza configurati](#configuration) mostrano il dominio `.com` dell&#39;editore, l&#39;audit analizza il dominio di origine (`.net`) per garantire che vengano rilevati i problemi introdotti durante lo sviluppo.
-   * Il dominio `.com` utilizza una rete CDN e potrebbe fornire punteggi migliori o contenere risultati memorizzati nella cache.
+* Il controllo di audit esegue la scansione del dominio di origine (`.com`) definito nei [percorsi di pagina del controllo dell&#39;esperienza configurati](#configuration) dell&#39;editore per simulare in modo più accurato le esperienze utente reali e consentire di prendere decisioni più informate sulla gestione e l&#39;ottimizzazione dei siti Web.
 * Nelle pipeline full stack di produzione, viene analizzato l’ambiente di staging.
    * Per garantire che il controllo fornisca dettagli rilevanti durante il controllo, il contenuto dell’ambiente di staging deve essere il più simile possibile all’ambiente di produzione.
 * Le pagine visualizzate nel menu a discesa **Seleziona** nella sezione [**Punteggi pagina - tendenza**](#trend) sono tutte pagine note analizzate in passato dall&#39;audit dell&#39;esperienza.

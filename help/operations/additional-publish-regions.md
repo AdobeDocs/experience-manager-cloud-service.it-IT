@@ -4,12 +4,13 @@ description: Scopri in che modo AEM as a Cloud Service supporta ulteriori aree g
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 78%
+source-wordcount: '663'
+ht-degree: 71%
 
 ---
+
 
 # Aree geografiche di pubblicazione aggiuntiva {#additional-publish-regions}
 
@@ -22,7 +23,9 @@ Le organizzazioni possono concedere licenze fino a tre aree geografiche di pubbl
 
 >[!NOTE]
 >
->Questa funzione è attualmente disponibile solo per AEM Sites. Inoltre, non può essere applicata a programmi sandbox. Inoltre, per ulteriori funzioni relative alle aree di pubblicazione è necessario aggiornare il programma alla versione AEM 12142 o successiva.
+>* Questa funzione è disponibile per le soluzioni Sites e Forms.
+>* Questa funzionalità non può essere applicata a [programmi sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* Questa funzione richiede l’aggiornamento del programma alla versione AEM 12142 o successiva.
 
 ## Casi d’uso {#use-cases}
 
@@ -57,7 +60,9 @@ Se sono abilitate altre aree, i registri separati per ciascuna area saranno resi
 
 Tieni presenti le seguenti limitazioni quando consideri di utilizzare aree di pubblicazione aggiuntive.
 
-* È possibile aggiungere aree geografiche di pubblicazione aggiuntiva solo ad AEM Sites. Altre aree geografiche di pubblicazione non si estendono ad altre soluzioni AEM o funzionalità correlate implementate nello stesso programma (ad esempio, AEM Forms o Adobe Learning Manager).
+* È possibile aggiungere altre aree geografiche di pubblicazione solo ad AEM Sites o AEM Forms.
+   * Altre aree geografiche di pubblicazione non si estendono ad altre soluzioni AEM o funzionalità correlate implementate nello stesso programma (ad esempio, AEM Assets o Adobe Learning Manager).
+   * Tuttavia, queste soluzioni possono essere aggiunte a un programma a condizione che disponga di almeno una soluzione Sites o Forms applicabile.
 * È possibile aggiungere altre aree solo se i diritti associati sono disponibili e non utilizzati nel tenant.
 * È possibile aggiungere fino a tre aree geografiche di pubblicazione aggiuntiva a ogni singolo ambiente.
 * Ulteriori aree geografiche sono disponibili solo nei programmi di produzione. Questa funzione non è disponibile nei programmi sandbox.

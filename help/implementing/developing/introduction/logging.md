@@ -4,7 +4,7 @@ description: Scopri come utilizzare la funzione di registrazione per AEM as a Cl
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 8%
@@ -561,9 +561,9 @@ I registri CDN sono distinti dagli altri registri in quanto sono conformi al for
 
 ### Registri per altre aree geografiche di Publish {#logs-for-additional-publish-regions}
 
-Se per un particolare ambiente sono abilitate ulteriori aree geografiche di Publish, i registri di ciascuna area saranno disponibili per il download da Cloud Manager, come indicato in precedenza.
+Se per un particolare ambiente sono abilitate ulteriori aree di pubblicazione, i registri di ciascuna area saranno disponibili per il download da Cloud Manager, come indicato in precedenza.
 
-I registri AEM e i registri dispatcher per le aree Publish aggiuntive specificheranno la regione nelle prime 3 lettere dopo l’ID ambiente, come esemplificato da **nld2** nel campione seguente, che fa riferimento a un’ulteriore istanza AEM Publish situata nei Paesi Bassi:
+I registri AEM e i registri dispatcher per le aree di pubblicazione aggiuntive specificheranno la regione nelle prime 3 lettere dopo l’ID ambiente, come esemplificato da **nld2** nel campione seguente, che fa riferimento a un’ulteriore istanza di pubblicazione AEM situata nei Paesi Bassi:
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"

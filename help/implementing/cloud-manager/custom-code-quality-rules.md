@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
+source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
 workflow-type: tm+mt
-source-wordcount: '4482'
-ht-degree: 88%
+source-wordcount: '4513'
+ht-degree: 87%
 
 ---
 
@@ -1267,3 +1267,12 @@ AEM Cloud Service vieta la creazione di tokenizer con nomi non corretti negli an
 >[!WARNING]
 >
 >Ti invitiamo a risolvere questo problema il prima possibile poiché, a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md), causerà un errore nelle pipeline.
+
+### La Configurazione Delle Definizioni Di Indicizzazione Non Deve Contenere Spazi {#oakpal-indexing-definitions-spaces}
+
+* **Chiave**: PathSpacesCheck
+* **Tipo**: miglioramento
+* **Gravità**: minore
+* **Da**: versione 2024.7.0
+
+AEM Cloud Service non consente la creazione di definizioni di indicizzazione che contengono proprietà con spazi.

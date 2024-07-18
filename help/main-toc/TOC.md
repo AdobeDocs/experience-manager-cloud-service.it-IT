@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c51eb106ca0d32f2a0eb07973ebb70da2b4c4c96
-workflow-type: ht
-source-wordcount: '5155'
+source-git-commit: 2814a61976d1815e0f0deff2e35ccad4731cfb09
+workflow-type: tm+mt
+source-wordcount: '5160'
 ht-degree: 100%
 
 ---
@@ -102,6 +102,7 @@ ht-degree: 100%
    + Note sulla versione per Cloud Manager {#cloud-manager}
       + [Note sulla versione corrente](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [Note sulla versione 2024.6.0](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
          + [Note sulla versione 2024.5.0](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
          + [Note sulla versione 2024.4.0](/help/implementing/cloud-manager/release-notes/2024/2024-4-0.md)
          + [Note sulla versione 2024.3.0](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
