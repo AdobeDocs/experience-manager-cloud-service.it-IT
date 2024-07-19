@@ -4,10 +4,10 @@ description: Questa pagina descrive come accedere a Screens Services Provider.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: f91166ca0349636386aa8721ded5b3bbda1cdb51
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 6%
+source-wordcount: '430'
+ht-degree: 4%
 
 ---
 
@@ -33,11 +33,11 @@ Per configurare il provider di servizi Screens, attenersi alla procedura descrit
    >[!CAUTION]
    >Se hai accesso a più organizzazioni, assicurati di aver effettuato l’accesso a quella corretta. Per cambiare organizzazione, fai clic sul nome dell’organizzazione nell’angolo in alto a destra della schermata e scegli l’organizzazione a cui desideri accedere.
 
-2. Fai clic sull’icona a forma di ingranaggio accanto a Progetto (angolo superiore sinistro)
+1. Fai clic sull’icona a forma di ingranaggio accanto a Progetto (angolo superiore sinistro)
 
    ![immagine](/help/screens-cloud/assets/configure/configure-screens0.png)
 
-3. Immettete i dettagli riportati di seguito nella finestra di dialogo Modifica impostazioni.
+1. Immettete i dettagli riportati di seguito nella finestra di dialogo Modifica impostazioni.
    * **URL Publish** - URL di pubblicazione AEM (ad esempio, `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **Url autore** - URL autore AEM (ad esempio, `https://author-p12345-e12345.adobeaemcloud.com`)
 
@@ -46,13 +46,49 @@ Per configurare il provider di servizi Screens, attenersi alla procedura descrit
 
    ![immagine](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. Fai clic su **Salva** per connettersi al provider di contenuti Screens
+1. Fai clic su **Salva** per connetterti al provider di contenuti Screens.
 
-5. Seleziona **Canali** dalla barra di navigazione a sinistra e fai clic su **apri nel provider di contenuti**.
+1. Dopo aver configurato l’istanza di pubblicazione dell’AEM in modo da consentire l’accesso solo a indirizzi IP attendibili tramite la funzione di Inserisce nell&#39;elenco Consentiti di IP di Cloud Manager, devi configurare un’intestazione con un valore chiave nella finestra di dialogo delle impostazioni, come illustrato di seguito.
+Anche gli IP che devono essere inseriti nella whitelist devono essere spostati nel file di configurazione e [non applicati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) dalle impostazioni di Cloud Manager.
+
+   ![immagine](/help/screens-cloud/assets/configure/configure-screens20.png)
+
+La stessa chiave deve essere configurata nella configurazione CDN dell’AEM.  È consigliabile non inserire il valore dell&#39;intestazione direttamente in GITHub e utilizzare un [riferimento segreto](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets).
+Di seguito è riportato un esempio di configurazione [CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf):
+
+    tipo: &quot;CDN&quot;
+    versione: &quot;1&quot;
+    metadati:
+    envTypes: [&quot;dev&quot;, &quot;stage&quot;, &quot;prod&quot;]
+    dati:
+    trafficFilters:
+    rules:
+    - nome: &quot;block-request-from-not-allowed-ips&quot;
+    quando:
+    allOf:
+    - reqProperty: clientIp
+    notIn: [&quot;101.41.112.0/24&quot;]
+    - reqProperty: tier
+    equals: publish
+    action: block
+    - name: &quot;allow-requests-with-header&quot;
+    when:
+    allOf:
+    - reqProperty: tier
+    equals: publish
+    - reqProperty: path
+    equals: /screens/channels.json
+    - reqHeader: x-screens-inserire nell&#39;elenco Consentiti-key
+    equals: ${\
+    {CDN_HEADER_KEY}
+    action:
+    type: allow
+
+1. Seleziona **Canali** dalla barra di navigazione a sinistra e fai clic su **apri nel provider di contenuti**.
 
    ![immagine](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. Il provider di contenuti Screens si apre in un’altra scheda che consente di creare il contenuto.
+1. Il provider di contenuti Screens si apre in un’altra scheda che consente di creare il contenuto.
 
    ![immagine](/help/screens-cloud/assets/configure/configure-screens2.png)
 
