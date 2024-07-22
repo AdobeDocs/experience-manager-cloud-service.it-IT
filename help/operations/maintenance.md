@@ -4,9 +4,9 @@ description: Scopri le attività di manutenzione in AEM as a Cloud Service e com
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b8bed4acf895f1cf04ea92ae27b87c7bfb38863d
+source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2107'
 ht-degree: 30%
 
 ---
@@ -84,7 +84,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <td>Cliente</td>
     <td>
     <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
-    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà opportune. Consulta l’elenco di [proprietà OSGI](/help/implementing/deploying/configuring-osgi.md) in **Configurazione eliminazione progetti di Adobe ** .</p>
+    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà appropriate. Visualizza l'elenco delle <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">proprietà OSGi</a> per <b>Configurazione rimozione progetti Adobi</b>.</p>
   </td>
   </tr>
   </tbody>
