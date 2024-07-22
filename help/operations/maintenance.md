@@ -4,9 +4,9 @@ description: Scopri le attività di manutenzione in AEM as a Cloud Service e com
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
+source-git-commit: b8bed4acf895f1cf04ea92ae27b87c7bfb38863d
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2110'
 ht-degree: 30%
 
 ---
@@ -84,7 +84,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <td>Cliente</td>
     <td>
     <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
-    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà opportune. Consulta l’elenco delle proprietà OSGI in "Adobe Projects Purge Configuration" (Configurazione rimozione progetti ).</p>
+    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà opportune. Consulta l’elenco di [proprietà OSGI](/help/implementing/deploying/configuring-osgi.md) in **Configurazione eliminazione progetti di Adobe ** .</p>
   </td>
   </tr>
   </tbody>
