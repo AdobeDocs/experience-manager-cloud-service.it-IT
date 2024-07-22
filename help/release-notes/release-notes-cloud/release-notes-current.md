@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
 workflow-type: tm+mt
 source-wordcount: '1965'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 >
 >Per ricevere una notifica e-mail mensile sugli aggiornamenti delle note sulla versione di Experience Cloud, abbonati ad [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.6.0) è il 27 giugno 2024. La prossima versione funzionale (2024.7.0) è pianificata per il 25 luglio 2024.
 
@@ -252,4 +252,4 @@ L’elenco completo dei rilasci di generare varianti è disponibile [qui](/help/
 
 ## Note sulla versione di Experience Cloud {#experience-cloud}
 
-Puoi trovare informazioni sulle versioni di altre applicazioni Experience Cloud [qui](https://experienceleague.adobe.com/it/docs/release-notes/experience-cloud/current).
+Informazioni sulle versioni di altre applicazioni Experience Cloud sono disponibili [qui](https://experienceleague.adobe.com/it/docs/release-notes/experience-cloud/current).
