@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 35ac4cfb18e348281d2b126bdc3b292c84590f3a
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '649'
 ht-degree: 76%
 
 ---
@@ -39,7 +39,9 @@ Quando un certificato scade, i domini in uso con il certificato scaduto smettera
 1. Dalla schermata **Ambienti**, accedi alla schermata **Certificati SSL**.
 1. Puoi visualizzare una tabella con una riga per ogni certificato SSL installato correttamente nel programma. Fai clic sul pulsante con i puntini di sospensione all&#39;estrema destra della riga del certificato che desideri aggiornare e seleziona **Visualizza e aggiorna**.
 1. Vengono visualizzati i dettagli del certificato, che possono essere aggiornati.
-1. Esegui la pipeline per distribuire il certificato aggiornato.
+1. Salva le modifiche.
+
+Le modifiche salvate vengono applicate automaticamente.
 
 >[!NOTE]
 >
