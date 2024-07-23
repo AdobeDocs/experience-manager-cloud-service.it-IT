@@ -4,9 +4,9 @@ description: Scopri come inoltrare i registri a Splunk e ad altri fornitori di r
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4116f63c4a19b90849e4b55f0c10409530be7d3e
+source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1349'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ Questo articolo è organizzato nel modo seguente:
             enabled: false
    ```
 
-1. Per tipi di ambiente diversi da RDE (attualmente non supportato), crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager.
+1. Per tipi di ambiente diversi da RDE (attualmente non supportato), crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager; tieni presente che le pipeline full stack e le pipeline a livello web non distribuiscono il file di configurazione.
 
    * [Consulta Configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
    * [Consulta Configurazione delle pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
@@ -254,10 +254,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com/aem_logs/aem"
+      url: "https://example.com:8443/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
+
+Considerazioni:
+
+* La stringa URL deve includere **https://**, altrimenti la convalida non riuscirà. Se nella stringa URL non è inclusa alcuna porta, viene utilizzata la porta 443 (la porta HTTPS predefinita).
+* Se desideri utilizzare una porta diversa da 443, forniscila come parte dell&#39;URL.
 
 #### Registri CDN HTTPS {#https-cdn}
 
@@ -267,8 +272,7 @@ Esiste anche una proprietà denominata `sourcetype`, impostata sul valore `aemcd
 
 >[!NOTE]
 >
-> Prima dell&#39;invio della prima voce di registro CDN, il server HTTP deve completare una richiesta una tantum: una richiesta inviata al percorso ``wellknownpath`` deve rispondere con ``*``.
-
+> Prima dell&#39;invio della prima voce di registro CDN, il server HTTP deve completare una richiesta una tantum: una richiesta inviata al percorso ``/.well-known/fastly/logging/challenge`` deve rispondere con un asterisco ``*`` nel corpo e il codice di stato 200.
 
 #### Registri AEM HTTPS {#https-aem}
 
