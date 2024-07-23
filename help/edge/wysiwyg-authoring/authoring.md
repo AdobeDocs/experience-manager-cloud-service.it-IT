@@ -1,18 +1,18 @@
 ---
-title: Authoring dei contenuti per Edge Delivery
+title: Authoring dei contenuti WYSIWYG per Edge Delivery Services
 description: Scopri come funziona l’authoring dei contenuti con Edge Delivery Services e come creare contenuti AEM con Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f0cb108c620a31c4f8a48f1d2530860ca01b06c3
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 85%
+source-wordcount: '448'
+ht-degree: 69%
 
 ---
 
 
-# Authoring dei contenuti per Edge Delivery {#authoring-edge}
+# Authoring dei contenuti WYSIWYG per Edge Delivery Services {#authoring-edge}
 
 Con Edge Delivery Services, l’authoring è semplice, veloce e flessibile. Per creare contenuti per Edge Delivery Services, sono disponibili due opzioni:
 
@@ -25,7 +25,7 @@ Quando utilizzi Edge Delivery Services con AEM as a Cloud Service, l’elemento 
 
 ![Funzionamento dell&#39;authoring WYSIWYG con i Edge Delivery Services](assets/how-aem-edge-works.png)
 
-1. [L&#39;ambiente di authoring WYSIWYG](/help/sites-cloud/authoring/quick-start.md) viene utilizzato per la gestione dei contenuti, ad esempio per la creazione di nuove pagine, frammenti di esperienza e frammenti di contenuto.
+1. [L&#39;ambiente AEM Sites](/help/sites-cloud/authoring/quick-start.md) viene utilizzato per la gestione dei contenuti, ad esempio per la creazione di nuove pagine, frammenti di esperienza e frammenti di contenuto.
    * Sono disponibili tutte le funzioni di AEM, ad esempio flussi di lavoro, MSM, traduzione, lanci e così via.
 1. [L’Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md) viene utilizzato per creare i contenuti gestiti in AEM.
    * L’Editor universale offre un’interfaccia utente nuova e moderna per l’authoring dei contenuti.
@@ -52,9 +52,8 @@ Per informazioni dettagliate su come effettuare l’authoring con l’Editor uni
 
 Consulta la [Guida introduttiva per sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) per scoprire come avviare un progetto personalizzato per l&#39;authoring con AEM e Edge Delivery Services.
 
-## Authoring basato su documenti  {#document-based}
+## Metodi di authoring aggiuntivi  {#authoring-methods}
 
-Con l’authoring basato su documenti, puoi utilizzare origini diverse, ad esempio documenti Microsoft Word e Google. I documenti provenienti da queste origini diventano pagine del sito web. È possibile trasferire titoli, elenchi, immagini, elementi font e video dall’origine iniziale al tuo sito web. Puoi aggiungere metadati a scopo di SEO o utilizzare blocchi per lavorare con contenuti strutturati e aggiungere funzionalità.
+L’authoring WYSIWYG è uno strumento potente e intuitivo per gli autori di contenuti. Tuttavia, ci sono molti casi d’uso diversi di authoring ed è per questo che AEM offre soluzioni di authoring aggiuntive.
 
-Per ulteriori dettagli sull’authoring basato su documenti, consulta [questo documento nella documentazione di Edge Delivery Services.](/help/edge/docs/authoring.md)
-
+Per ulteriori informazioni sulle soluzioni per l&#39;authoring offerte dall&#39;AEM, tra cui l&#39;authoring basato su documenti e headless, consulta il documento [Scelta di un metodo di authoring](/help/edge/authoring-methods.md).
