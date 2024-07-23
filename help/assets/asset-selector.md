@@ -4,7 +4,7 @@ description: Utilizza il Selettore risorse per cercare, trovare e recuperare i m
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: e357dd0b9b2e67d4989a34054737a91743d0933a
+source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
 workflow-type: tm+mt
 source-wordcount: '4550'
 ht-degree: 36%
@@ -745,7 +745,7 @@ Utilizza il seguente frammento di codice per visualizzare un messaggio popup per
 
 Il selettore risorse consente di aggiungere un filtro per la selezione dei tag. Supporta un gruppo di tag che combina tutti i tag pertinenti a un particolare gruppo di tag. Inoltre, ti consente di selezionare altri tag corrispondenti alla risorsa che stai cercando. Inoltre, puoi anche impostare i gruppi di tag predefiniti sotto il filtro di chiamata contestuale, che vengono utilizzati principalmente da te in modo che siano accessibili da te in movimento.
 
-> 
+>
 >
 > * Per abilitare il filtro di assegnazione tag nella ricerca, è necessario aggiungere lo snippet di codice di chiamata contestuale.
 > * È obbligatorio utilizzare la proprietà name corrispondente al tipo di gruppo di tag `(property=xcm:keywords.id=)`.
