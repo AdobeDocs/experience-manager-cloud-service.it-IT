@@ -4,7 +4,7 @@ description: Scopri come utilizzare lo strumento Content Transfer (Trasferimento
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
+source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 52%
@@ -49,7 +49,7 @@ Il trasferimento dei contenuti prevede due fasi:
 
 Un set di migrazione ha i seguenti attributi:
 
-* Con la nuova versione, puoi creare un massimo di venti set di migrazione all’interno di un progetto creato in Cloud Acceleration Manager.
+* Con la nuova versione, puoi creare un massimo di dieci set di migrazione all’interno di un progetto creato in Cloud Acceleration Manager.
 * Ogni set di migrazione deve avere un nome univoco.
 
 Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
