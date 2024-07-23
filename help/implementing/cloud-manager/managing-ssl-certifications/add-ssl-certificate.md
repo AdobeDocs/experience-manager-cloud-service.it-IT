@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
+source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 69%
+source-wordcount: '598'
+ht-degree: 76%
 
 ---
 
@@ -63,14 +63,6 @@ Una volta salvato, il certificato viene visualizzato come una nuova riga nella t
 ## Errori relativi ai certificati {#certificate-errors}
 
 Se un certificato non è installato correttamente o non soddisfa i requisiti di Cloud Manager, possono verificarsi alcuni errori.
-
-### Assicurati che la formattazione della riga sia corretta {#line-formatting}
-
-Quando si incollano valori per **Certificato**, **Chiave privata** e **Catena certificati**, le nuove righe devono essere solo dopo BEGIN CERTIFICATE e prima di END CERTIFICATE. Ad esempio, i valori incollati devono essere costruiti come segue:
-
-* `-----BEGIN CERTIFICATE-----` deve apparire sulla propria riga.
-* `-----END CERTIFICATE-----` deve apparire sulla propria riga.
-* Il contenuto del certificato deve apparire sulla propria riga come una stringa lunga **senza nuove righe** tra `-----BEGIN CERTIFICATE-----` e `-----END CERTIFICATE-----`.
 
 ### Rimuovi certificati client {#client-certificates}
 
