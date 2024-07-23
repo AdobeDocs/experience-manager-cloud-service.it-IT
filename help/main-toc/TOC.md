@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2814a61976d1815e0f0deff2e35ccad4731cfb09
-workflow-type: ht
-source-wordcount: '5160'
-ht-degree: 100%
+source-git-commit: 11624bc35020247494e3ae66c9601c1da505c8bf
+workflow-type: tm+mt
+source-wordcount: '5265'
+ht-degree: 97%
 
 ---
 
@@ -692,13 +692,21 @@ ht-degree: 100%
             + [Utilizzare Turnstile in un modulo adattivo](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Aggiungere un handler degli errori personalizzato in un modulo adattivo](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/supporting-new-language-localization-core-components.md)
-            + [Creare e utilizzare funzioni personalizzate](/help/forms/create-and-use-custom-functions.md)
-            + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/rule-editor-core-components.md)
             + [Progettare uno schema JSON per un modulo adattivo (componenti core)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Aggiungere versioni, commenti e annotazioni a un modulo adattivo](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Confronta i moduli adattivi](/help/forms/compare-forms.md)
             + [Conversione di moduli adattivi basati su componenti di base in moduli basati su Componenti core tramite lo strumento utility di migrazione](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Salvare un modulo adattivo come bozza](/help/forms/save-core-component-based-form-as-draft.md)
+            + Introduzione all&#39;editor di regole per Forms adattivo basato su componenti core{#rule-editor-core-components}
+               + [Introduzione all’editor di regole per Forms adattivo basato su componenti core](/help/forms/rule-editor-core-components.md)
+               + [Interfaccia utente dell’Editor regole per Forms adattivo basato su componenti core](/help/forms/rule-editor-core-components-user-interface.md)
+               + [Differenza tra l’Editor di regole di base e l’Editor di regole dei componenti core](/help/forms/rule-editor-core-components-difference-tables.md)
+               + [Tipi di operatori ed eventi disponibili nell’editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-events-operators.md)
+               + [Esempi per un editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-usecases.md)
+            + Introduzione alle funzioni personalizzate per Forms adattivo basato su componenti core{#create-and-use-custom-function-core-component}
+               + [Introduzione alle funzioni personalizzate per Forms adattivo basato su componenti core](/help/forms/create-and-use-custom-functions.md)
+               + [Creare e utilizzare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
+               + [Esempi di funzioni personalizzate per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-components-use-cases.md)
       + Componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)
