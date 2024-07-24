@@ -1,8 +1,8 @@
 ---
 source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '656'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 # Snippet {#snippets}
@@ -117,13 +117,13 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
   <table>
   </tbody>
 
-## Editor regole Vedere anche {#see-also-rule-editor}
+## Consulta anche l’editor di regole {#see-also-rule-editor}
 
-* [Introduzione all’editor di regole per Forms adattivo basato su componenti core](/help/forms/rule-editor-core-components.md)
+* [Introduzione all’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components.md)
 * [Tipi di operatori ed eventi nell’editor di regole di un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-events-operators.md)
-* [Interfaccia utente dell’editor di regole per Forms adattivo basato su componenti core](/help/forms/rule-editor-core-components-user-interface.md)
+* [Interfaccia utente dell’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components-user-interface.md)
 * [Diversi casi d’uso dell’editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-user-interface.md)
 * [Differenza nelle varie edizioni dell’editor di regole](/help/forms/rule-editor-core-components-difference-tables.md)
-* [Introduzione alle funzioni personalizzate per Forms adattivo basato su componenti core](/help/forms/create-and-use-custom-functions.md)
+* [Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core](/help/forms/create-and-use-custom-functions.md)
 * [Creare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
 * [Esempi di sviluppo e utilizzo di funzioni personalizzate](/help/forms/custom-function-core-components-use-cases.md)
