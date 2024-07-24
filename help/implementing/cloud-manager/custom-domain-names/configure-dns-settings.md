@@ -1,30 +1,35 @@
 ---
 title: Configurazione delle impostazioni DNS
-description: Scopri come configurare le impostazioni DNS per i nomi di dominio personalizzati.
+description: Scopri come configurare le impostazioni DNS per i nomi di dominio personalizzati consente al sito di servire i visitatori.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 92%
+source-wordcount: '416'
+ht-degree: 49%
 
 ---
 
+
 # Configurazione delle impostazioni DNS {#configure-dns}
 
-Dopo aver verificato e distribuito correttamente il nome di dominio personalizzato, è possibile aggiornare il relativo record DNS con il provider DNS. In questo modo il sito diventa disponibile per gli utenti. Pertanto, questa attività viene generalmente eseguita prima della pubblicazione.
+Dopo la verifica e la distribuzione del nome di dominio personalizzato [,](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) è possibile aggiornare i record DNS del nome di dominio personalizzato con il provider DNS. In questo modo il sito diventa disponibile per gli utenti. Pertanto, questa attività viene generalmente eseguita prima della pubblicazione.
 
 ## Cosa sono le impostazioni DNS? {#dns-settings}
 
-Dopo aver eseguito il provisioning di un record `CNAME` o A, tutto il traffico Internet del dominio viene indirizzato alla posizione a cui punta. Se non si esegue il provisioning di tale posizione per il servizio del traffico, si verifica un’interruzione. Se non si eseguono test, potrebbero essere riscontrati errori nel contenuto. Per questo il passaggio viene eseguito sempre dopo il completamento del test, quanto tutto è pronto per la pubblicazione.
+Una volta eseguito il provisioning di un record `CNAME` o A, tutto il traffico Internet del dominio verrà indirizzato alla posizione a cui punta. Se non si esegue il provisioning di tale posizione per il servizio del traffico, si verifica un’interruzione. Se non si eseguono test, potrebbero essere riscontrati errori nel contenuto. Per questo il passaggio viene eseguito sempre dopo il completamento del test, quanto tutto è pronto per la pubblicazione.
 
-Per configurare queste impostazioni è necessario determinare e impostare `CNAME` o un record Apex affinché il nome di dominio personalizzato punti al nome di dominio di Cloud Manager. Le sezioni riportate di seguito aiutano a determinare il tipo di record appropriato per la configurazione DNS in uso.
+Per configurare queste impostazioni, è necessario determinare se è necessario configurare un record `CNAME` o apex affinché il nome di dominio personalizzato punti al nome di dominio Cloud Manager. Le sezioni seguenti di questo documento ti aiuteranno a determinare quale tipo di record è appropriato per la configurazione DNS.
 
->[!NOTE]
->
->Chi svolge l’operazione deve essere in grado di accedere al provider DNS (l’azienda da cui hai acquistato il dominio) o di contattarlo, nonché di apportare gli aggiornamenti alle impostazioni DNS.
+## Requisiti {#requirements}
+
+È necessario soddisfare questi requisiti prima di configurare i record DNS.
+
+* Se non disponi ancora di questa informazione, identifica l’host o il registrar del dominio.
+* È necessario essere in grado di modificare i record DNS per il dominio dell&#39;organizzazione o di contattare la persona appropriata che può farlo.
+* È necessario aver già verificato il nome di dominio personalizzato configurato come descritto nel documento [Verifica dello stato del nome di dominio.](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
 
 ## Record CNAME {#cname-record}
 
@@ -51,3 +56,7 @@ Aggiungi i seguenti `A` record alle impostazioni DNS del dominio tramite il prov
 * `A record for domain @ pointing to IP 151.101.131.10`
 
 * `A record for domain @ pointing to IP 151.101.195.10`
+
+## Passaggi successivi {#next-steps}
+
+Dopo aver configurato i record DNS per il nome di dominio personalizzato, sarà necessario verificare tali impostazioni in Cloud Manager. Procedi al documento [Verifica dello stato del record DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) per finalizzare il nome di dominio personalizzato.
