@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 7a0e40f53eb3bb84c973ec3e28c7edcd8c847e25
 workflow-type: tm+mt
 source-wordcount: '5270'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -697,14 +697,14 @@ ht-degree: 97%
             + [Confronta i moduli adattivi](/help/forms/compare-forms.md)
             + [Conversione di moduli adattivi basati su componenti di base in moduli basati su Componenti core tramite lo strumento utility di migrazione](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Salvare un modulo adattivo come bozza](/help/forms/save-core-component-based-form-as-draft.md)
-            + Introduzione all&#39;editor di regole per Forms adattivo basato su componenti core{#rule-editor-core-components}
-               + [Introduzione all’editor di regole per Forms adattivo basato su componenti core](/help/forms/rule-editor-core-components.md)
-               + [Interfaccia utente dell’Editor regole per Forms adattivo basato su componenti core](/help/forms/rule-editor-core-components-user-interface.md)
-               + [Differenza tra l’Editor di regole di base e l’Editor di regole dei componenti core](/help/forms/rule-editor-core-components-difference-tables.md)
+            + Introduzione all’editor di regole per moduli adattivi basati su componenti core{#rule-editor-core-components}
+               + [Introduzione all’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components.md)
+               + [Interfaccia utente dell’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components-user-interface.md)
+               + [Differenza tra editor di regole di base e editor di regole dei componenti core](/help/forms/rule-editor-core-components-difference-tables.md)
                + [Tipi di operatori ed eventi disponibili nell’editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-events-operators.md)
                + [Esempi per un editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-usecases.md)
-            + Introduzione alle funzioni personalizzate per Forms adattivo basato su componenti core{#create-and-use-custom-function-core-component}
-               + [Introduzione alle funzioni personalizzate per Forms adattivo basato su componenti core](/help/forms/create-and-use-custom-functions.md)
+            + Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core{#create-and-use-custom-function-core-component}
+               + [Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core](/help/forms/create-and-use-custom-functions.md)
                + [Creare e utilizzare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
                + [Esempi di funzioni personalizzate per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-components-use-cases.md)
       + Componenti di base {#authoring-adaptive-forms-foundation-components}
