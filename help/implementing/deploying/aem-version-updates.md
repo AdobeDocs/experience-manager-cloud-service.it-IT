@@ -4,10 +4,10 @@ description: Scopri in che modo Adobe Experience Manager (AEM) as a Cloud Servic
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 1%
+source-wordcount: '997'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ Tramite NIMU, il cliente può utilizzare la pipeline in qualsiasi momento, anche
 #### Aggiorna attività
 
 La versione corrente dell’AEM può ancora essere controllata per ogni ambiente, come prima, utilizzando il pannello Ambienti dell’interfaccia utente di Cloud Manager. Gli stessi gate di qualità utilizzati nella pipeline vengono utilizzati dagli aggiornamenti di manutenzione non intrusivi, inclusi i test scritti dal cliente.
-Quando un aggiornamento di manutenzione non intrusivo viene applicato agli ambienti del programma, viene inviata una notifica all’interfaccia utente di Cloud Manager. Puoi configurarlo per l’invio anche all’e-mail.
+Una [notifica dell&#39;interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/notifications.md) verrà inviata ogni volta che viene applicato un aggiornamento di manutenzione non intrusivo agli ambienti del programma. Puoi configurarlo per l’invio anche all’e-mail.
 
 >[!NOTE]
 >
@@ -102,3 +102,11 @@ In genere, gli aggiornamenti non comportano tempi di inattività, incluso per l�
 Questa funzione consente all’AEM di fare riferimento simultaneamente a più archivi. In una [distribuzione continua](/help/implementing/deploying/overview.md#how-rolling-deployments-work), la nuova versione dell&#39;AEM contiene il proprio `/libs` (l&#39;archivio immutabile basato su TarMK). Si distingue dalla versione precedente dell&#39;AEM, anche se entrambi fanno riferimento a un archivio condivise mutabile basato su DocumentMK che contiene aree come `/content` , `/conf` , `/etc` e altri.
 
 Poiché sia la versione precedente che quella nuova hanno versioni proprie di `/libs`, possono essere entrambe attive durante l&#39;aggiornamento continuo. E, entrambi possono prendere il traffico fino a quando il vecchio è completamente sostituito dal nuovo.
+
+## Ulteriori informazioni {#further-information}
+
+Per maggiori dettagli sui temi correlati:
+
+* [Pipeline CI/CD di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+* [Notifica interfaccia utente Cloud Manager](/help/implementing/cloud-manager/notifications.md)
+* [Architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)
