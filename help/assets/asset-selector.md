@@ -4,9 +4,9 @@ description: Utilizza il Selettore risorse per cercare, trovare e recuperare i m
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
+source-git-commit: 04560cd5b15ceb79b6a480c60e78e061276a39eb
 workflow-type: tm+mt
-source-wordcount: '4550'
+source-wordcount: '4561'
 ht-degree: 36%
 
 ---
@@ -424,8 +424,7 @@ Puoi utilizzare le proprietà del Selettore risorse per personalizzarne il rende
 | *dimensioneFinestraDiDialogo* | acquisizione di piccole, medie, grandi, a schermo intero o intero | Stringa | Facoltativo | È possibile controllare il layout specificandone le dimensioni utilizzando le opzioni specificate. |
 | *colorScheme* | Chiaro o scuro | No | | Questa proprietà viene utilizzata per impostare il tema di un&#39;applicazione Asset Selector. Puoi scegliere tra tema chiaro o scuro. |
 | *filterRepoList* | Funzione | No |  | È possibile utilizzare la funzione di callback `filterRepoList` che chiama l&#39;archivio Experience Manager e restituisce un elenco filtrato di archivi. |
-| *getExpiryStatus* | Funzione | No | | Fornisce lo stato di una risorsa scaduta. La funzione restituisce `EXPIRED`, `EXPIRING_SOON` o `NOT_EXPIRED` in base alla data di scadenza di una risorsa fornita. Consulta [personalizzare le risorse scadute](#customize-expired-assets). |
-| *allowSelectionAndDrag* | Booleano | No | Falso | Il valore della funzione può essere `true` o `false`. Quando il valore è impostato su `false`, la risorsa scaduta non può essere selezionata o trascinata nell&#39;area di lavoro. |
+| *expiryOptions* | Funzione | | | È possibile utilizzare tra le due proprietà seguenti: **getExpiryStatus** che fornisce lo stato di una risorsa scaduta. La funzione restituisce `EXPIRED`, `EXPIRING_SOON` o `NOT_EXPIRED` in base alla data di scadenza di una risorsa fornita. Consulta [personalizzare le risorse scadute](#customize-expired-assets). È inoltre possibile utilizzare **allowSelectionAndDrag** in cui il valore della funzione può essere `true` o `false`. Quando il valore è impostato su `false`, la risorsa scaduta non può essere selezionata o trascinata nell&#39;area di lavoro. |
 | *showToast* | | No | | Consente al selettore risorse di visualizzare un messaggio popup personalizzato per la risorsa scaduta. |
 <!--
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
