@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 69%
+source-wordcount: '1376'
+ht-degree: 68%
 
 ---
 
@@ -114,9 +114,9 @@ Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.m
 
 Una distribuzione mirata distribuisce il codice solo per parti selezionate dell’applicazione AEM. In tale distribuzione è possibile scegliere di **Includere** uno dei seguenti tipi di codice:
 
-* **Configurazione** - Configura le impostazioni per le regole del filtro del traffico nell&#39;ambiente AEM.
-   * Per informazioni su come gestire le configurazioni nell&#39;archivio in modo che vengano distribuite correttamente, consulta il documento [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md).
-   * Durante l&#39;esecuzione di una pipeline di distribuzione di destinazione, verranno distribuite [configurazioni WAF](/help/security/traffic-filter-rules-including-waf.md), a condizione che vengano salvate nell&#39;ambiente, nell&#39;archivio e nel ramo definiti nella pipeline.
+* **Configurazione** - Configura le impostazioni per varie funzionalità nell&#39;ambiente AEM.
+   * Consulta l&#39;articolo [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md) per un elenco delle configurazioni supportate, che include l&#39;inoltro del registro, le attività di manutenzione correlate all&#39;eliminazione e varie configurazioni CDN, e per gestirle nel tuo archivio in modo che vengano distribuite correttamente.
+   * Quando si esegue una pipeline di distribuzione di destinazione, le configurazioni vengono distribuite, purché vengano salvate nell’ambiente, nell’archivio e nel ramo definiti nella pipeline.
    * In qualsiasi momento può essere presente una sola pipeline di configurazione per ogni ambiente.
 * **Codice front-end**: configura JavaScript e CSS per il front-end dell&#39;applicazione AEM.
    * Con le pipeline front-end, i team di sviluppo front-end acquisiscono maggiore indipendenza e il processo di sviluppo può essere accelerato.

@@ -4,38 +4,31 @@ description: Scopri come ignorare la pagina di errore predefinita ospitando file
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 5%
+source-wordcount: '365'
+ht-degree: 1%
 
 ---
 
+
 # Configurazione delle pagine di errore CDN {#cdn-error-pages}
 
-Nel caso improbabile che la [rete CDN gestita dall&#39;Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) non raggiunga l&#39;origine dell&#39;AEM, per impostazione predefinita la rete CDN fornisce una pagina di errore generica senza marchio che indica che il server non può essere raggiunto. È possibile ignorare la pagina di errore predefinita ospitando file statici nell&#39;archiviazione self-hosted, ad esempio Amazon S3 o Azure Blob Storage, e facendo riferimento a tali file in un file di configurazione distribuito utilizzando la [pipeline di configurazione di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+Nel caso improbabile che la [rete CDN gestita dall&#39;Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) non raggiunga l&#39;origine dell&#39;AEM, per impostazione predefinita la rete CDN fornisce una pagina di errore generica senza marchio che indica che il server non può essere raggiunto. È possibile ignorare la pagina di errore predefinita ospitando i file statici nell&#39;archiviazione con hosting autonomo, ad esempio Amazon S3 o Azure Blob Storage, e facendo riferimento a tali file in un file di configurazione distribuito utilizzando la pipeline di configurazione [config di Cloud Manager.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
 
 ## Configurazione {#setup}
 
 Prima di poter sovrascrivere la pagina di errore predefinita, è necessario effettuare le seguenti operazioni:
 
-* Crea questa cartella e struttura di file nella cartella di livello principale del progetto Git:
+1. Creare un file denominato `cdn.yaml` o simile, facendo riferimento alla sezione relativa alla sintassi riportata di seguito.
 
-```
-config/
-     cdn.yaml
-```
+1. Posizionare il file in una cartella di primo livello denominata *config* o simile, come descritto nell&#39;articolo [config pipeline](/help/operations/config-pipeline.md#folder-structure).
 
-* Il file di configurazione `cdn.yaml` deve contenere sia i metadati che le regole descritte negli esempi seguenti. Il parametro `kind` deve essere impostato su `CDN` e la versione deve essere impostata sulla versione dello schema, attualmente `1`.
+1. Creare una pipeline di configurazione in Cloud Manager, come descritto nell&#39;articolo [config pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
-* Crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager. Consulta [configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configurazione delle pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+1. Distribuisci la configurazione.
 
-**Note**
-
-* Al momento gli RDE non supportano la pipeline di configurazione.
-* Puoi utilizzare `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad es. `yq cdn.yaml`).
-
-### Configurazione {#configuration}
+### Sintassi {#syntax}
 
 La pagina di errore viene implementata come applicazione a pagina singola (SPA) e fa riferimento a una serie di proprietà, come illustrato nell’esempio seguente.  I file statici a cui fanno riferimento gli URL devono essere ospitati da te su un servizio accessibile a Internet come Amazon S3 o Azure Blob Storage.
 
@@ -54,6 +47,8 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+Per una descrizione delle proprietà al di sopra del nodo dati, consulta l&#39;articolo [config pipeline](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà kind deve essere *CDN* e la proprietà `version` deve essere impostata su *1*.
+
 
 | Nome | Proprietà consentite | Significato |
 |-----------|--------------------------|-------------|

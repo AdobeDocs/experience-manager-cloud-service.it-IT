@@ -4,10 +4,10 @@ description: Sfruttare il Centro operativo per intervenire in modo comodo in cas
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 7630481aab89b31057509f23aab334e17c537257
+source-git-commit: 22d5975a0c4ee180bbcda906b035d306a352b752
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 55%
+source-wordcount: '1045'
+ht-degree: 53%
 
 ---
 
@@ -76,6 +76,7 @@ Nella tabella seguente sono elencati i tipi di notifica attualmente supportati i
 | Coda di replica bloccata | Problema | Sblocca la coda seguendo le istruzioni contenute nella [Documentazione di replica](/help/operations/replication.md#troubleshooting) |
 | Query GraphQL persistente non valida | Problema | Correggere la query GraphQL non valida facendo riferimento alla [documentazione sulla risoluzione dei problemi relativi alle query GraphQL persistenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Picco di traffico all’origine | Problema | Protect l’origine configurando le regole del filtro del traffico del limite di velocità che si attivano a soglie inferiori all’avviso di picco di traffico predefinito all’origine.  Consulta la sezione [Blocco di attacchi DoS e DDoS tramite le regole del traffico](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) della documentazione sulle regole del filtro del traffico, che fa riferimento a un&#39;esercitazione. |
+| Regole dei filtri di traffico CDN attivate | Problema | Se la regola del filtro del traffico corrispondente riflette un attacco e il sito non blocca tale traffico, proteggi il sito configurando una regola del filtro del traffico in modalità di blocco. Consulta la sezione [Protezione dei siti Web con regole del filtro del traffico (incluse le regole di WAF)](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) della documentazione sulle regole del filtro del traffico, che fa riferimento a un&#39;esercitazione. |
 | Le pagine contengono un numero elevato di nodi | Proattiva | Riduci il numero totale di nodi all’interno di una pagina. Consulta la [documentazione sulla complessità delle pagine](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | Numero elevato di istanze del flusso di lavoro in esecuzione | Proattiva | Termina i flussi di lavoro in esecuzione che non sono più necessari. Scopri come [configurare un processo di eliminazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | Certificato S2S in scadenza | Proattiva | Scopri come aggiornare una credenziale nella [Documentazione sulla generazione dei token di accesso per le API lato server](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Numero elevato di connessioni | Proattiva | Scopri il connection pooling in [Connection pooling insieme alla documentazione delle reti avanzate](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |

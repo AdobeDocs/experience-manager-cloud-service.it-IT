@@ -4,10 +4,10 @@ description: Configurazione delle regole del filtro del traffico, incluse le reg
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
-workflow-type: ht
-source-wordcount: '3938'
-ht-degree: 100%
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+workflow-type: tm+mt
+source-wordcount: '3939'
+ht-degree: 92%
 
 ---
 
@@ -24,7 +24,7 @@ La maggior parte di queste regole del filtro del traffico è disponibile per tut
 
 Una sottocategoria delle regole del filtro del traffico richiede una licenza di sicurezza avanzata o una licenza di protezione WAF-DDoS. Queste potenti regole sono note come regole del filtro del traffico WAF (Web Application Firewall) (o regole WAF in breve) e hanno accesso ai [contrassegni WAF](#waf-flags-list) descritti di seguito in questo articolo.
 
-Le regole del filtro del traffico possono essere distribuite ai tipi di ambiente di sviluppo, di staging e di produzione nei programmi di produzione (non sandbox) tramite le pipeline di configurazione di Cloud Manager. Il supporto per gli RDE sarà disponibile in futuro.
+Le regole del filtro del traffico possono essere distribuite tramite le pipeline di configurazione di Cloud Manager ai tipi di ambiente di sviluppo, di staging e di produzione nei programmi di produzione (non sandbox). Il supporto per gli RDE sarà disponibile in futuro.
 
 [Segui con un tutorial](#tutorial) per sviluppare rapidamente competenze concrete su questa funzione.
 
@@ -64,13 +64,13 @@ La clientela può adottare misure proattive per mitigare gli attacchi a livello 
 
 Ad esempio, al livello Apache, è possibile configurare il [modulo Dispatcher](https://experienceleague.adobe.com/it/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) o [ModSecurity](https://experienceleague.adobe.com/it/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) per limitare l’accesso a determinati contenuti.
 
-Come descritto in questo articolo, le regole del filtro del traffico possono essere distribuite alla rete CDN gestita da Adobe, utilizzando la pipeline di configurazione di Cloud Manager. Oltre alle regole del filtro del traffico basate su proprietà come indirizzo IP, percorso e intestazioni, o alle regole basate sull’impostazione dei limiti di frequenza, è possibile anche concedere in licenza una potente sottocategoria di regole del filtro del traffico, chiamate regole WAF.
+Come descritto in questo articolo, le regole del filtro del traffico possono essere distribuite nella rete CDN gestita Adobe utilizzando le pipeline di configurazione [ di Cloud Manager.](/help/operations/config-pipeline.md) Oltre alle regole del filtro del traffico basate su proprietà quali indirizzo IP, percorso e intestazioni o su regole basate sull&#39;impostazione dei limiti di velocità, i clienti possono anche concedere in licenza una potente sottocategoria di regole del filtro del traffico denominate regole di WAF.
 
 ## Processo consigliato {#suggested-process}
 
 Di seguito è riportato un processo end-to-end di alto livello consigliato per individuare le regole corrette per il filtro del traffico:
 
-1. Configurare le pipeline di configurazione di produzione e non di produzione, come descritto nella sezione [Configurazione](#setup).
+1. Configurare le pipeline di configurazione non di produzione e di produzione, come descritto nella sezione [Configurazione](#setup).
 1. Chi dispone della licenza per la sottocategoria delle regole del filtro del traffico WAF deve abilitarle in Cloud Manager.
 1. Leggi e prova l’esercitazione per comprendere concretamente come utilizzare le regole del filtro del traffico, incluse le regole WAF, se disponi della licenza. Il tutorial illustra come distribuire le regole in un ambiente di sviluppo, simulare traffico dannoso, scaricare i [Registri CDN](#cdn-logs) e analizzarli negli [strumenti della dashboard](#dashboard-tooling).
 1. Copia le regole iniziali consigliate in `cdn.yaml` e implementa la configurazione nell’ambiente di produzione in modalità registro.
@@ -80,14 +80,7 @@ Di seguito è riportato un processo end-to-end di alto livello consigliato per i
 
 ## Configurazione {#setup}
 
-1. Innanzitutto, crea la cartella e la struttura di file seguenti nella cartella di livello principale del progetto in Git:
-
-   ```
-   config/
-        cdn.yaml
-   ```
-
-1. `cdn.yaml` deve contenere metadati nonché un elenco di regole dei filtri di traffico e regole WAF.
+1. Creare un file `cdn.yaml` con un set di regole del filtro del traffico, incluse le regole di WAF.
 
    ```
    kind: "CDN"
@@ -108,33 +101,22 @@ Di seguito è riportato un processo end-to-end di alto livello consigliato per i
          action: block
    ```
 
-Il parametro `kind` deve essere impostato su `CDN` e la versione deve essere impostata sulla versione dello schema, attualmente `1`. Consulta gli esempi seguenti:
+   Per una descrizione delle proprietà al di sopra del nodo `data`, consulta l&#39;articolo ](/help/operations/config-pipeline.md#common-syntax) della pipeline di configurazione [. Il valore della proprietà `kind` deve essere impostato su *CDN* e la versione su `1`.
 
-
-<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
 1. Se le regole WAF sono concesse in licenza, per gli scenari di programma nuovi ed esistenti, devi abilitare la funzione in Cloud Manager, come descritto di seguito.
 
    1. Per configurare WAF su un nuovo programma, seleziona la casella di controllo **Protezione WAF-DDOS** nella scheda **Sicurezza** quando [aggiungi un programma di produzione.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
-   1. Per configurare WAF su un programma esistente: [modifica il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) e nella scheda **Sicurezza** deseleziona o seleziona l’opzione **WAF-DDOS** in qualsiasi momento.
+   1. Per configurare WAF su un programma esistente, [modifica il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) e nella scheda **Sicurezza** deseleziona o seleziona l&#39;opzione **WAF-DDOS** in qualsiasi momento.
 
-1. Per tipi di ambiente diversi da RDE, crea una pipeline di configurazione della distribuzione mirata in Cloud Manager.
-
-   * [Consulta Configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [Consulta Configurazione delle pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
-
-Per gli RDE viene utilizzata la riga di comando, ma RDE non è attualmente supportato.
-
-**Note**
-
-* Puoi utilizzare `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad es. `yq cdn.yaml`).
+1. Creare una pipeline di configurazione in Cloud Manager, come descritto nell&#39;articolo della pipeline di configurazione [.](/help/operations/config-pipeline.md#managing-in-cloud-manager) La pipeline farà riferimento a una cartella `config` di primo livello con il file `cdn.yaml` posizionato in un punto qualsiasi al di sotto, come [descritto qui](/help/operations/config-pipeline.md#folder-structure).
 
 ## Sintassi delle regole del filtro del traffico {#rules-syntax}
 
-Puoi configurare `traffic filter rules` affinché corrisponda a pattern quali IP, agente utente, intestazioni di richiesta, nome host, geo e URL.
+Puoi configurare *le regole del filtro del traffico* in modo che corrispondano a pattern quali IP, agente utente, intestazioni di richiesta, nome host, area geografica e URL.
 
-Chi dispone di una licenza per l’offerta Sicurezza avanzata o Protezione WAF-DDoS può anche configurare una categoria speciale di regole per il filtro del traffico denominata `WAF traffic filter rules` (o regole WAF in breve) che fa riferimento a uno o più [contrassegni WAF](#waf-flags-list).
+I clienti che dispongono di una licenza per l&#39;offerta Protezione avanzata o Protezione WAF-DDoS possono anche configurare una categoria speciale di regole del filtro del traffico denominata *Regole del filtro del traffico di WAF* (o regole di WAF in breve) che fanno riferimento a uno o più [flag di WAF](#waf-flags-list).
 
 Di seguito è riportato un esempio di un set di regole per il filtro del traffico, che include anche una regola WAF.
 
@@ -280,6 +262,8 @@ La proprietà `wafFlags`, che può essere utilizzata nelle regole del filtro del
 | SCANNER | Scanner | Identifica i servizi e gli strumenti di scansione più diffusi. |
 | RESPONSESPLIT | HTTP Response Splitting | Identifica quando i caratteri CRLF vengono inviati come input all’applicazione per inserire le intestazioni nella risposta HTTP. |
 | XML-ERROR | Errore di codifica XML | Corpo della richiesta POST, PUT o PATCH specificato come contenente XML nell’intestazione della richiesta &quot;Content-Type&quot;, ma contenente errori di analisi XML. Questo è spesso correlato a un errore di programmazione o a una richiesta automatizzata o dannosa. |
+| DATACENTER | Datacenter | Identifica la richiesta come proveniente da un provider di hosting noto. Questo tipo di traffico non è comunemente associato a un utente finale reale. |
+
 
 ## Considerazioni {#considerations}
 
@@ -752,7 +736,7 @@ Sono disponibili due tutorial.
 
 Il tutorial illustra:
 
-* L’impostazione della pipeline di configurazione di Cloud Manager
+* Configurazione della pipeline di configurazione di Cloud Manager
 * Utilizzo di strumenti per simulare traffico dannoso
 * Dichiarazione delle regole per filtrare il traffico, incluse le regole WAF
 * Analisi dei risultati con gli strumenti della dashboard

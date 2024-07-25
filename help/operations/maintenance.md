@@ -4,12 +4,13 @@ description: Scopri le attività di manutenzione in AEM as a Cloud Service e com
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2055'
 ht-degree: 30%
 
 ---
+
 
 # Attività di manutenzione in AEM as a Cloud Service {#maintenance-tasks-in-aem-as-a-cloud-service}
 
@@ -219,23 +220,19 @@ Dichiara un file di configurazione e distribuiscilo come descritto nei passaggi 
 > 
 >Allo stesso modo, una volta distribuito il nodo di eliminazione del registro di controllo nel file di configurazione, è necessario mantenerlo dichiarato e non rimuoverlo.
 
-**1** - crea la cartella e la struttura di file seguenti nella cartella principale del progetto in Git:
+**1** Creare un file denominato `mt.yaml` o simile.
 
-```
-config/
-     mt.yaml
-```
+**2** Posizionare il file in una cartella di primo livello denominata `config` o simile, come descritto nell&#39;articolo della pipeline [config.](/help/operations/config-pipeline.md#folder-structure)
 
-**2** - Dichiara le proprietà nel file di configurazione, che includono:
+**3** - Dichiara le proprietà nel file di configurazione, che includono:
 
-* una proprietà &quot;kind&quot; con il valore &quot;MaintenanceTasks&quot;.
-* una proprietà &quot;version&quot; (al momento ci troviamo alla versione 1).
-* un oggetto &quot;metadata&quot; facoltativo con la proprietà `envTypes` con un elenco separato da virgole del tipo di ambiente (dev, stage, prod) per il quale è valida questa configurazione. Se non viene dichiarato alcun oggetto metadati, la configurazione è valida per tutti i tipi di ambiente.
+* alcune proprietà sopra il nodo dati. per una descrizione, vedere l&#39;articolo [config pipeline](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *MaintenanceTasks* e la versione deve essere *1*.
+
 * un oggetto dati con `versionPurge` e `auditLogPurge` oggetti.
 
 Vedere le definizioni e la sintassi degli oggetti `versionPurge` e `auditLogPurge`.
 
-È necessario strutturare la configurazione in modo simile all’esempio seguente:
+Struttura la configurazione in modo simile all’esempio seguente:
 
 ```
 kind: "MaintenanceTasks"
@@ -270,14 +267,7 @@ Tieni presente che affinché la configurazione sia valida:
 * tutte le proprietà devono essere definite. Non sono presenti valori predefiniti ereditati.
 * devono essere rispettati i tipi (interi, stringhe, booleani, ecc.) nelle tabelle delle proprietà sottostanti.
 
->[!NOTE]
->È possibile utilizzare `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad esempio, `yq mt.yaml`).
-
-**3** - Configura le pipeline di configurazione non di produzione e di produzione.
-
-Gli ambienti di sviluppo rapido (RDE) non supportano l’eliminazione. Per altri tipi di ambiente nei programmi di produzione (non sandbox), crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager.
-
-Per ulteriori dettagli, vedi [configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configurazione delle pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+**4** - Creare una pipeline di configurazione in Cloud Manager, come descritto nell&#39;articolo della pipeline di configurazione [.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Le sandbox e gli ambienti di sviluppo rapido (RDE) non supportano l&#39;eliminazione.
 
 ### Pulizia delle versioni {#version-purge}
 

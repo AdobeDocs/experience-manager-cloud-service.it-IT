@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7a0e40f53eb3bb84c973ec3e28c7edcd8c847e25
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '5270'
+source-wordcount: '5273'
 ht-degree: 99%
 
 ---
@@ -1251,6 +1251,7 @@ ht-degree: 99%
    + [Attività di manutenzione](/help/operations/maintenance.md)
    + [Ripristino self-service](/help/operations/restore.md)
    + [Processi asincroni](/help/operations/asynchronous-jobs.md)
+   + [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md)
    + [Rimozione dell’indice generico Lucene](/help/operations/removal-generic-lucene-index.md)
    + [Best practice per query e indicizzazione](/help/operations/query-and-indexing-best-practices.md)
 + Conformità {#compliance}

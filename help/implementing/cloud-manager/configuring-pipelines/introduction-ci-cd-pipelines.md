@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 585c934465215c48b9441a95c03e4c116859103e
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 89%
+source-wordcount: '1500'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,8 @@ Una pipeline non di produzione serve principalmente per eseguire controlli di qu
 Oltre ai tipi di produzione e non di produzione, le pipeline possono essere differenziate in base al tipo di codice che distribuiscono.
 
 * **[Pipeline full stack](#full-stack-pipeline)**: distribuiscono simultaneamente le build del codice back-end e front-end contenenti una o più applicazioni server di AEM con configurazioni HTTPD/Dispatcher
-* **[Pipeline di configurazione](#config-deployment-pipeline)** - Configura e distribuisci le regole del filtro del traffico, incluse le regole WAF, in pochi minuti
+* **[Pipeline di configurazione](#config-deployment-pipeline)**: distribuiscono rapidamente le configurazioni per funzionalità quali l&#39;inoltro del registro, le attività di manutenzione correlate all&#39;eliminazione e varie configurazioni CDN, quali le regole del filtro del traffico (incluse le regole di WAF), le trasformazioni di richieste e risposte, i selettori dell&#39;origine, i reindirizzamenti lato client, le pagine di errore, le chiavi CDN gestite dal cliente, le chiavi API di eliminazione e l&#39;autenticazione di base.
+   * Per informazioni dettagliate, consulta il documento [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md).
 * **[Pipeline front-end](#front-end)**: distribuiscono le build del codice front-end contenenti una o più applicazioni dell’interfaccia utente lato client
 * **[Pipeline di configurazione a livello web](#web-tier-config-pipelines)**: distribuiscono le configurazioni HTTPD/Dispatcher
 
@@ -71,11 +72,10 @@ La tabella seguente riepiloga le pipeline disponibili in Cloud Manager e i relat
 | Di produzione o non di produzione | Distribuzione | Full stack | Distribuisce simultaneamente le build del codice back-end e front-end con le configurazioni HTTPD/Dispatcher | Quando è necessario distribuire il codice front-end in contemporanea al codice del server AEM.<br>Quando non sono ancora state implementate le pipeline front-end o di configurazione a livello web. |
 | Di produzione o non di produzione | Distribuzione | Front-end | Distribuisce la build del codice front-end contenente una o più applicazioni dell’interfaccia utente lato client | Supporta più pipeline front-end simultanee<br>Distribuzioni molto più rapide rispetto al tipo full stack |
 | Di produzione o non di produzione | Distribuzione | Configurazione a livello web | Distribuisce le configurazioni HTTPD/Dispatcher | Distribuzione in pochi minuti |
-| Di produzione o non di produzione | Distribuzione | Configurazione | Distribuisce le regole di filtro del traffico | Distribuzione in pochi minuti |
+| Di produzione o non di produzione | Distribuzione | Configurazione | Distribuisce [configurazione per una serie di funzionalità](/help/operations/config-pipeline.md) relative a CDN, inoltro log ed eliminazione di attività di manutenzione | Distribuzione in pochi minuti |
 | Non di produzione | Qualità del codice | Full stack | Esegue controlli di qualità del codice full stack senza una distribuzione | Supporta più pipeline |
 | Non di produzione | Qualità del codice | Front-end | Esegue controlli di qualità del codice front-end senza una distribuzione | Supporta più pipeline |
 | Non di produzione | Qualità del codice | Configurazione a livello web | Esegue controlli di qualità del codice su configurazioni dispatcher senza una distribuzione | Supporta più pipeline |
-| Non di produzione | Qualità del codice | Configurazione | Distribuisce le regole di filtro del traffico |  |
 
 Il diagramma seguente illustra le configurazioni delle pipeline di Cloud Manager con archivio tradizionale front-end singolo o indipendente.
 
@@ -116,9 +116,9 @@ Per informazioni su come configurare le pipeline full stack, consulta i seguenti
 
 ## Configurare le pipeline {#config-deployment-pipeline}
 
-Con una pipeline di configurazione è possibile configurare e distribuire in pochi minuti le regole del filtro del traffico, incluse le regole WAF.
+Con una pipeline di configurazione puoi distribuire rapidamente configurazioni per l’inoltro dei registri, attività di manutenzione relative all’eliminazione e varie configurazioni CDN, come regole del filtro del traffico (incluse le regole di WAF), trasformazioni di richieste e risposte, selettori di origine, reindirizzamenti lato client, pagine di errore, chiavi CDN gestite dal cliente, chiavi API di eliminazione e autenticazione di base.
 
-Per informazioni su come gestire le configurazioni nell&#39;archivio in modo che vengano distribuite correttamente, consulta [Regole filtro traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md).
+Consulta il documento [Utilizzo delle pipeline di configurazione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) per un elenco completo delle funzioni supportate e per scoprire come gestire le configurazioni nell&#39;archivio in modo che vengano distribuite correttamente.
 
 ### Configurazione delle pipeline di configurazione {#configure-config-deployment}
 
