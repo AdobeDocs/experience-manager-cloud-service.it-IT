@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
+source-git-commit: f6b4ca55d69de3bb20e2232dbc29d1aadae2cd10
 workflow-type: tm+mt
-source-wordcount: '5283'
+source-wordcount: '5297'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 99%
    + Note sulla versione delle funzioni di AEMaaCS {#release-notes}
       + [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Note sulla versione 2024.6.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
          + [Note sulla versione 2024.5.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
          + [Note sulla versione 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [Note sulla versione 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
@@ -686,6 +687,7 @@ ht-degree: 99%
             + [Inviare un modulo adattivo all’archiviazione BLOB di Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Inviare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [Collegare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [Configurare il sito SharePoint con accesso limitato utilizzando l’ambito di autorizzazione](/help/forms/configure-sharepoint-site-limited-access.md)
             + [Integrare un modulo adattivo AEM con il flusso di lavoro di AEM](/help/forms/configure-submit-action-workflow.md)
             + [Configurare l’azione di invio Invia a endpoint REST per moduli adattivi](/help/forms/configure-submit-action-restpoint.md)
             + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)

@@ -1,8 +1,8 @@
 ---
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
-workflow-type: ht
-source-wordcount: '656'
-ht-degree: 100%
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 98%
 
 ---
 # Snippet {#snippets}
@@ -100,7 +100,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
    </tr>
    <tr>
     <td>Supporto ES10 </td>
-    <td>ES10 non è ancora supportato. </td>
+    <td>ES10 non è ancora supportato. Supporta solo le funzioni JavaScript ES5. </td>
     <td>Supporto di funzioni JavaScript moderne, come le funzioni let e arrow (supporto ES10) all’interno delle funzioni personalizzate. 
    </td>
    </tr>

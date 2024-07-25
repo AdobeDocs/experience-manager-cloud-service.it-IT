@@ -4,13 +4,13 @@ description: L’articolo delinea vari casi d’uso per un editor di regole in u
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: c600af3f2e866483cda2426e188dbc104b07688e
+exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
+source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1125'
 ht-degree: 0%
 
 ---
-
 
 # Diversi casi d’uso dell’editor di regole
 
@@ -18,9 +18,10 @@ L’articolo fornisce esempi dettagliati di editor di regole per un modulo adatt
 Ora, parliamo delle diverse implementazioni per un editor di regole.
 
 
-## Semplificare i calcoli complessi in pannelli ripetibili con funzioni incorporate
+## Semplificare i calcoli complessi in pannelli ripetibili con le funzioni
 
-L’editor di regole ti consente di utilizzare funzioni predefinite come Somma, Min, Max e Unisci direttamente sui campi all’interno di pannelli ripetibili. Ciò consente una potente automazione, che consente di implementare una logica di business complessa senza codice personalizzato.
+L’editor di regole ti consente di utilizzare funzioni predefinite come Somma, Min, Max e Unisci direttamente sui campi all’interno di pannelli ripetibili. Puoi anche passare un valore di campo del pannello ripetibile alla funzione che accetta array di numeri, array di stringhe, array booleano, ecc. Ciò consente una potente automazione, che consente di implementare una logica di business complessa senza codice personalizzato.
+
 Immaginate un modulo con un pannello ripetibile in cui ogni istanza del pannello raccoglie informazioni sul valore dichiarato delle risorse.
 
 ![Modulo ripetibile](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
@@ -32,6 +33,10 @@ Immaginate un modulo con un pannello ripetibile in cui ogni istanza del pannello
 Quando si compila un modulo, aggiungendo istanze per dichiarare i valori delle risorse, il pulsante `Calculate Asset Value` calcola la somma totale di tutti i valori delle risorse dichiarate e visualizza il risultato nella casella di testo `assetvalue`.
 
 ![Supporto dei campi del pannello ripetibili nelle funzioni OOTB](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+
+>[!NOTE]
+>
+> Se il valore del campo del pannello ripetibile viene passato a una funzione che non accetta un array, il valore del campo dell’ultima istanza del pannello ripetibile viene passato alla funzione.
 
 Questo è solo un esempio! Esplora le [funzioni](#b-form-objects-and-functions-br) disponibili per semplificare i flussi di lavoro e migliorare la precisione dei dati nei moduli.
 

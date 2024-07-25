@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 1%
@@ -561,7 +561,7 @@ Oltre alle funzioni predefinite, come *Somma di*, elencate in Output funzioni, �
 * Se desideri una configurazione e una descrizione personalizzate
 * Poiché esistono diversi modi per dichiarare una funzione in `JavaScript,` e i commenti consentono di tenere traccia delle funzioni.
 
-L’editor di regole supporta la sintassi JavaScript ES2015 per script e funzioni personalizzate.
+L’editor di regole supporta la sintassi JavaScript ES5 per gli script e le funzioni personalizzate.
 Per ulteriori informazioni, vedere [jsdoc.app](https://jsdoc.app/).
 
 `jsdoc` tag supportati:

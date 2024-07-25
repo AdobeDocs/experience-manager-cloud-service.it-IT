@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+source-git-commit: 8585ec309b04e04b9a8dcaa43063369d1c9d5d24
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1174'
 ht-degree: 4%
 
 ---
@@ -91,8 +91,6 @@ Sebbene sia possibile ottenere la maggior parte dei casi d’uso utilizzando qua
 * Se una regola verifica la presenza di una condizione ed esegue immediatamente un&#39;azione quando fornisce un valore in un campo o esce da un campo, si consiglia di scrivere una regola con un costrutto condizione-azione o il tipo di regola When nel campo in cui viene valutata la condizione.
 * La condizione nella regola When viene valutata quando un utente modifica il valore dell&#39;oggetto su cui viene applicata la regola When. Tuttavia, se desideri che l’azione si attivi quando il valore cambia sul lato server, come per il prepopolamento del valore, è consigliabile scrivere una regola When che attivi l’azione quando il campo viene inizializzato.
 * Quando si scrivono regole per gli oggetti menu a discesa, pulsanti di scelta o caselle di controllo, le opzioni o i valori di tali oggetti modulo nel modulo vengono precompilati nell’editor di regole.
-
-## Passaggio successivo
 
 Per informazioni su come utilizzare l&#39;interfaccia utente per scrivere e gestire regole in un editor di regole, consulta l&#39;articolo [Interfaccia utente dell&#39;editor di regole per Forms adattivo basato su Componenti core](/help/forms/rule-editor-core-components-user-interface.md).
 
