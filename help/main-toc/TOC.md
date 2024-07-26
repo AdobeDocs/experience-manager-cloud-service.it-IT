@@ -334,7 +334,7 @@ ht-degree: 99%
          + [Navigazione nell’editor universale](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [Authoring dei contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Pubblicazione di contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/publishing.md)
-         + [Ereditarietà dei contenuti nell’editor universale](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [Ereditarietà di contenuti nell’editor universale](/help/sites-cloud/authoring/universal-editor/inheritance.md)
       + Frammenti {#fragments}
          + [Frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Frammenti di esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md)
