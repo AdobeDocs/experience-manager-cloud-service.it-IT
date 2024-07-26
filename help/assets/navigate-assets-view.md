@@ -4,10 +4,10 @@ description: Comprendere l’interfaccia utente e la navigazione in [!DNL Assets
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: b8ee421c5105c95dc4a509d3b2e32fa43b1adc0b
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 88%
+source-wordcount: '966'
+ht-degree: 81%
 
 ---
 
@@ -31,7 +31,8 @@ Quando accedi a [!DNL Assets view], viene visualizzata la seguente interfaccia.
 
 ## Sfogliare e visualizzare le risorse e le cartelle {#browse-repository}
 
-È possibile sfogliare le cartelle dall’interfaccia utente principale o dalla barra laterale a sinistra. Durante la navigazione, puoi visualizzare le miniature delle risorse per sfogliare visivamente l’archivio oppure i dettagli delle risorse per trovare rapidamente quella desiderata. Le opzioni disponibili nella barra laterale a sinistra sono:
+È possibile sfogliare le cartelle dall’interfaccia utente principale o dalla barra laterale a sinistra. In Experience Manager Assets ora vengono visualizzate anteprime visive del contenuto della cartella sulla miniatura della cartella durante la navigazione o la ricerca del contenuto, migliorando la reperibilità delle risorse disponibili nell’archivio di AEM Assets. Questa miniatura consente di risparmiare tempo nella ricerca di risorse specifiche all’interno di una cartella nell’archivio di AEM Assets.
+Durante l’esplorazione delle risorse in una cartella, puoi utilizzare l’interfaccia per visualizzare le miniature delle risorse e sfogliare visivamente l’archivio oppure visualizzare i dettagli delle risorse per trovare rapidamente la risorsa desiderata. Le opzioni disponibili nella barra laterale a sinistra sono:
 
 * [La mia area di lavoro](/help/assets/my-workspace-assets-view.md): Assets ora include un’area di lavoro personalizzabile che fornisce widget per accedere facilmente a specifiche aree dell’interfaccia di Assets e alle informazioni che ti interessano di più. Questa pagina funge da soluzione unica per fornire una panoramica degli elementi di lavoro e consentire un accesso rapido ai flussi di lavoro chiave. L’accesso più comodo a queste opzioni aumenta l’efficienza e la velocità dei contenuti.
 * [Attività](/help/assets/my-workspace-assets-view.md): nella scheda **Le mie attività** puoi visualizzare le attività che ti sono state assegnate. Nella scheda **Attività assegnate** trovi invece le attività che hai creato. Inoltre, le attività completate si trovano nella scheda **Attività completate**.
@@ -61,7 +62,7 @@ In [!DNL Assets view], puoi visualizzare le risorse, le cartelle e i risultati d
 
 Per individuare una risorsa, puoi ordinare le risorse in ordine crescente o decrescente di `Name`, `Relevancy`, `Size`, `Modified` e `Created`.
 
-Per accedere a una cartella, fai doppio clic sulle miniature della cartella o selezionala dalla barra laterale a sinistra. Per visualizzare i dettagli di una cartella, selezionala e fai clic su Dettagli nella barra degli strumenti in alto. Per spostarsi verso l’alto o il basso nella gerarchia, utilizza la barra laterale a sinistra o le breadcrumb in alto.
+Per spostarti all’interno di una cartella, fai doppio clic sulle miniature della cartella o selezionala dalla barra laterale a sinistra. Per visualizzare i dettagli di una cartella, selezionala e fai clic su Dettagli nella barra degli strumenti in alto. Per spostarsi verso l’alto o il basso nella gerarchia, utilizza la barra laterale a sinistra o le breadcrumb in alto.
 
 ![Sfogliare le cartelle](assets/browsing-folders.png)
 
