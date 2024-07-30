@@ -4,7 +4,7 @@ description: Questa pagina descrive come installare e configurare i lettori in S
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -71,10 +71,12 @@ In ogni `ping` sono incluse le seguenti proprietà:
 | lastContentChange {string} | timestamp dell’ultima modifica al contenuto |
 
 >[!NOTE]
+>
 >Facoltativamente, puoi abilitare una proprietà più avanzata dalle preferenze del lettore (Abilita monitoraggio della riproduzione):
->|Proprietà|Descrizione|
->|—|—|
->|isContentRendering {boolean}|true se la GPU può confermare che sta riproducendo il contenuto effettivo (in base all&#39;analisi dei pixel)|
+>
+>| Proprietà | Descrizione |
+>|---|---|
+>| isContentRendering {boolean} | true se la GPU può confermare che sta riproducendo il contenuto effettivo (in base all&#39;analisi dei pixel) |
 
 ### Limitazioni {#limitations}
 

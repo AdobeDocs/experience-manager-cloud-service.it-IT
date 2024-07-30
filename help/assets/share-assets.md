@@ -4,7 +4,7 @@ description: Distribuisci le risorse digitali utilizzando metodi come share as a
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 3%
@@ -121,6 +121,7 @@ Il modello e-mail può essere personalizzato utilizzando testo normale o HTML. I
 | `${emailMessage}` | Corpo dell’e-mail |
 | `${pagePath}` | URL del collegamento condiviso |
 | `${linkExpiry}` | Data di scadenza del collegamento condiviso |
+
 <!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |-->
 
 #### Esempio di modello e-mail personalizzato {#custom-email-template-example}

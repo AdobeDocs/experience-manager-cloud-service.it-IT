@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 9a3678e8e28806c3c7574d2cfd047c30537d7f41
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '10491'
 ht-degree: 1%
@@ -909,6 +909,7 @@ Non è possibile scaricare la traccia audio originale estratta da un file video 
    | Crea una cartella separata per ogni risorsa | Creare una cartella per ogni file di didascalia o di traccia audio selezionato per il download. |
    | E-mail | Utilizza il tuo programma e-mail predefinito per inviare il file .zip a un indirizzo e-mail specificato. |
    | Risorse | Specifica il numero di file da scaricare e la dimensione totale combinata di tutti i file selezionati. Deselezionando questa opzione, il pulsante **[!UICONTROL Scarica]** viene disattivato, impedendo di scaricare qualsiasi file. |
+
 1. Seleziona **[!UICONTROL Scarica]**.
 1. Publish il video. Consulta [Risorse Publish](publishing-dynamicmedia-assets.md).
 

@@ -6,7 +6,7 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
 workflow-type: tm+mt
 source-wordcount: '3454'
 ht-degree: 1%
@@ -30,6 +30,7 @@ E ora, ottieni un punteggio Google Core Web Vital migliore per LCP (Largest Cont
 >Prova e scopri i vantaggi dei modificatori di immagini Dynamic Medie e dell&#39;imaging avanzato con Dynamic Medie [_Snapshot_](https://snapshot.scene7.com/).
 >
 > Snapshot è uno strumento di dimostrazione visiva, progettato per illustrare la potenza di Dynamic Medie per la distribuzione di immagini ottimizzate e dinamiche. Sperimenta immagini di test o URL Dynamic Medie per osservare visivamente l’output di vari modificatori di immagini Dynamic Medie e ottimizzazioni Smart Imaging per i seguenti elementi:
+>
 >* Dimensione del file (con consegna WebP e AVIF)
 >* Larghezza di banda di rete
 >* DPR (Device Pixel Ratio, rapporto pixel dispositivo)
@@ -133,13 +134,15 @@ Quando un’immagine viene richiesta da un utente, Smart Imaging controlla le ca
 * Converti automaticamente in AVIF se il browser supporta il formato
 * Converti automaticamente in WebP se la conversione AVIF non è stata utile o se il browser non supporta AVIF
 * Converti automaticamente in JPEG2000 se Safari non supporta WebP
-* Converti automaticamente in JPEGXR per IE 9+ o se Edge non supporta WebP\
+* Converti automaticamente in JPEGXR per IE 9+ o se Edge non supporta WebP
+
   | Formato immagine | Browser supportati |
-|—|—|
-| AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
-| WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
-| JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
-| JPEGX | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+  |---|---|
+  | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
+  | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
+  | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
+  | JPEGX | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+
 * Per i browser che non supportano questi formati, viene fornito il formato immagine richiesto originariamente.
 
 Se la dimensione dell&#39;immagine originale è inferiore a quella prodotta da Smart Imaging, viene distribuita l&#39;immagine originale.
@@ -477,5 +480,5 @@ See also [When working with images](/help/assets/dynamic-media/adding-dynamic-me
 
 >[!MORELIKETHIS]
 >
->* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) -->
->>
+>* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) 
+-->
