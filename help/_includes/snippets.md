@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
-workflow-type: tm+mt
+source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
+workflow-type: ht
 source-wordcount: '662'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 # Snippet {#snippets}
@@ -122,7 +122,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 * [Introduzione all’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components.md)
 * [Tipi di operatori ed eventi nell’editor di regole di un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-events-operators.md)
 * [Interfaccia utente dell’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components-user-interface.md)
-* [Diversi casi d’uso dell’editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-user-interface.md)
+* [Diversi casi d’uso dell’editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-usecases.md)
 * [Differenza nelle varie edizioni dell’editor di regole](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core](/help/forms/create-and-use-custom-functions.md)
 * [Creare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
