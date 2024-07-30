@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: af2985f29cb867162061bbac465b19637aa0ecad
+source-git-commit: 5296d46658f591d7736587c98b112006d947321d
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1288'
 ht-degree: 10%
 
 ---
@@ -21,11 +21,6 @@ Le richieste di contenuto sono richieste pervenute in AEM Sites (anche in relazi
 ## Informazioni sulle richieste di contenuto di Cloud Service {#understanding-cloud-service-content-requests}
 
 Per i clienti che utilizzano la rete CDN preconfigurata, le richieste di contenuto del Cloud Service vengono misurate tramite la raccolta di dati lato server. Questa raccolta è abilitata tramite l’analisi del registro CDN. Le richieste di contenuto vengono raccolte automaticamente lato server ai margini di Adobe Experience Manager as a Cloud Service, tramite l’analisi automatizzata dei file di registro provenienti dalla rete CDN di AEM as a Cloud Service. Questa operazione viene eseguita isolando dal CDN le richieste che restituiscono il contenuto HTML `(text/html)` o JSON `(application/json)` e si basa su diverse regole di inclusione ed esclusione descritte di seguito. Una richiesta di contenuto si verifica indipendentemente dal contenuto restituito distribuito dalle cache CDN o dal contenuto che ritorna all’origine della CDN (dispatcher dell’AEM).
-
-Per i clienti che utilizzano la propria rete CDN, la raccolta lato client offre un riflesso più preciso delle interazioni, garantendo una misura affidabile del coinvolgimento del sito web tramite il servizio [Monitoraggio dell&#39;uso reale](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md). In questo modo i clienti possono ottenere informazioni avanzate sul traffico e sulle prestazioni delle loro pagine. Pur essendo utile per tutti i clienti, offre un riflesso rappresentativo delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web acquisendo il numero di visualizzazioni di pagina dal lato client.
-
-Per i clienti che utilizzano la propria rete CDN oltre ad AEM as a Cloud Service, il reporting lato server restituisce numeri che non possono essere utilizzati per confrontare con le richieste di contenuto concesse in licenza. Con il [Monitoraggio Real Use](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe può riflettere una misura affidabile del coinvolgimento del sito Web.
-
 
 ### Varianze delle richieste di contenuto del Cloud Service {#content-requests-variances}
 
