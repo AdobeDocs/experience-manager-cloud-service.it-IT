@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
+source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
 workflow-type: tm+mt
 source-wordcount: '4105'
 ht-degree: 0%
@@ -76,15 +76,23 @@ Le best practice per i visualizzatori Dynamic Medie sono linee guida essenziali 
 
 Seguendo queste best practice, puoi ottenere un’integrazione perfetta, una gestione efficiente delle risorse e interazioni migliorate con i visualizzatori. La sincronizzazione delle risorse, l’utilizzo del ritaglio intelligente e il rispetto delle linee guida di inclusione dei file di JavaScript sono tutte pratiche importanti. Questi consigli aiutano a mantenere l’integrità e l’affidabilità della distribuzione dei contenuti multimediali su varie piattaforme e dispositivi.
 
-* **Sincronizza visualizzatore Assets:** Prima di utilizzare il lettore, assicurati che tutte le risorse visualizzatore siano sincronizzate con Dynamic Medie. Per la risoluzione dei problemi del visualizzatore, vai all&#39;articolo [Risoluzione dei problemi dei visualizzatori Dynamic Medie](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
-* **Pagina Gestione esempi:** Accedere alla pagina Gestione esempi in `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
-* **Publish Assets:** Assicurati che le risorse siano pubblicate prima di visualizzarle nei visualizzatori di consegna.
-* **Riproduzione automatica video disattivata:** Per la funzionalità di riproduzione automatica nei video, utilizza le impostazioni video disattivate perché i browser limitano la riproduzione di video con volume.
-* **Ritaglio avanzato:** utilizza il componente Immagine v3 per il ritaglio avanzato per migliorare la presentazione delle risorse immagine.
-* **Inclusione di file JavaScript:** Includi nella pagina solo il file JavaScript del visualizzatore principale. Evita di fare riferimento a file JavaScript aggiuntivi che la logica di runtime del visualizzatore potrebbe scaricare. In particolare, non collegare direttamente la libreria `Utils.js` dell&#39;SDK di HTML5 dal percorso di contesto `/s7viewers` (noto come inclusione SDK consolidata). La logica del visualizzatore gestisce la posizione di `Utils.js` o di librerie di visualizzatori di runtime simili, che possono cambiare tra le versioni. Adobe non mantiene sul server le versioni precedenti di inclusioni visualizzatore secondarie, pertanto il riferimento diretto a esse può interrompere la funzionalità del visualizzatore negli aggiornamenti futuri.
-* **Linee guida per l&#39;incorporamento:** Utilizza la documentazione per le linee guida per l&#39;incorporamento specifiche per ciascun visualizzatore.
+* **Sincronizza Assets visualizzatore:**
+Prima di utilizzare il lettore, assicurati che tutte le risorse visualizzatore siano sincronizzate con Dynamic Medie. Per la risoluzione dei problemi del visualizzatore, vai all&#39;articolo [Risoluzione dei problemi dei visualizzatori Dynamic Medie](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
+* **Pagina Gestione esempi:**
+Accedere alla pagina di gestione esempi in `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+* **Assets Publish:**
+Assicurati che le risorse siano pubblicate prima di visualizzarle nei visualizzatori di consegna.
+* **Riproduzione automatica video disattivata:**
+Per la funzionalità di riproduzione automatica dei video, utilizza le impostazioni per la disattivazione dell’audio dei video, in quanto i browser limitano la riproduzione dei video con il volume.
+* **Ritaglio avanzato:**
+Utilizza il componente Immagine v3 per il ritaglio avanzato per migliorare la presentazione delle risorse immagine.
+* **Inclusione di file JavaScript:**
+Includi solo il file JavaScript del visualizzatore principale nella pagina. Evita di fare riferimento a file JavaScript aggiuntivi che la logica di runtime del visualizzatore potrebbe scaricare. In particolare, non collegare direttamente la libreria `Utils.js` dell&#39;SDK di HTML5 dal percorso di contesto `/s7viewers` (noto come inclusione SDK consolidata). La logica del visualizzatore gestisce la posizione di `Utils.js` o di librerie di visualizzatori di runtime simili, che possono cambiare tra le versioni. Adobe non mantiene sul server le versioni precedenti di inclusioni visualizzatore secondarie, pertanto il riferimento diretto a esse può interrompere la funzionalità del visualizzatore negli aggiornamenti futuri.
+* **Linee guida per l&#39;incorporamento:**
+Utilizza la documentazione per incorporare le linee guida specifiche di ciascun visualizzatore.
 Vuoi saperne di più? Vai a [Visualizzatori per AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
-* **Esercitazione SDK ed esempi:** per una conoscenza approfondita delle API dei componenti SDK, consulta l&#39;[Esercitazione SDK per visualizzatori](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) e gli [Esempi di applicazioni SDK per HTML5](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html).
+* **Esercitazione SDK ed esempi:**
+Consulta l&#39;[Esercitazione SDK per visualizzatori](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) e gli esempi di applicazioni SDK [HTML5](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) per una conoscenza approfondita delle API dei componenti SDK.
 
 
 ## Preparare le risorse per la consegna
