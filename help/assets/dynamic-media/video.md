@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: f41e2f6ce39fff9615e35928d3f569e9254325d0
 workflow-type: tm+mt
-source-wordcount: '10491'
-ht-degree: 1%
+source-wordcount: '9406'
+ht-degree: 2%
 
 ---
 
@@ -524,7 +524,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 * TRATTINO
 * Sottotitoli multipli e tracce audio
-* Sottotitoli generati da IA
+* Sottotitoli generati da IA (accesso anticipato)
 
 Come Adobe di caso di assistenza clienti che hai creato e inviato.
 
@@ -534,7 +534,7 @@ L’abilitazione di una qualsiasi delle tre funzionalità precedenti, le abilita
 | --- | --- |
 | TRATTINO | DASH (Digital Adaptive Streaming over HTTP) è lo standard internazionale per lo streaming video ed è ampiamente adottato tra diversi visualizzatori video. Quando DASH è abilitato sul tuo account, puoi scegliere tra DASH o HLS per lo streaming video adattivo. In alternativa, è possibile optare per entrambi con il passaggio automatico tra i lettori quando si seleziona **[!UICONTROL auto]** come tipo di riproduzione nel predefinito visualizzatore.<br>Alcuni vantaggi chiave dell&#39;attivazione di DASH sul tuo account includono:<br>·Creare un pacchetto di video DASH per lo streaming con bitrate adattivo. Questo metodo porta a una maggiore efficienza nella consegna. Lo streaming adattivo assicura la migliore esperienza di visualizzazione per i clienti.<br>·Streaming ottimizzato per il browser con lettori Dynamic Medie passa da HLS a DASH per garantire la migliore qualità del servizio. Il lettore video passa automaticamente a HLS quando si utilizza un browser Safari.<br>·È possibile configurare il metodo di streaming preferito (HLS o DASH) modificando il predefinito visualizzatore video.<br>·La codifica video ottimizzata garantisce che non venga utilizzato spazio di archiviazione aggiuntivo durante l&#39;attivazione della funzionalità DASH. Viene creato un unico set di codifiche video sia per HLS che per DASH per ottimizzare i costi di archiviazione video.<br>·Consente di rendere la distribuzione di video più accessibile ai clienti.<br>·Ottieni l&#39;URL di streaming anche tramite API. |
 | Sottotitoli multipli e tracce audio | Potete trarre vantaggio dall&#39;attivazione automatica del supporto di più didascalie e tracce audio. Dopo l’abilitazione, tutti i video successivi caricati vengono elaborati con una nuova architettura back-end che include il supporto per l’aggiunta di più didascalie e tracce audio ai video. |
-| Sottotitoli generati da IA | Crea didascalie per i video basati su AI. Utilizzando l’intelligenza artificiale, crea la trascrizione del video e la converte in sottotitoli. Anche la timeline è definita. |
+| Sottotitoli generati da IA (accesso anticipato) | Crea didascalie per i video basati su AI. Utilizzando l’intelligenza artificiale, crea la trascrizione del video e la converte in sottotitoli. Anche la timeline è definita. |
 
 >[!IMPORTANT]
 >
@@ -549,7 +549,7 @@ L’abilitazione di una qualsiasi delle tre funzionalità precedenti, le abilita
    * Ambiente Cloud Service (ID programma e ID ambiente).
    * Nome dell&#39;account della società Dynamic Medie.
    * La tua area geografica di Dynamic Medie: Nord America (NA), Asia-Pacifico (APAC) o Europa-Medio Oriente-Asia (EMEA).
-   * Specifica che su AEM as a Cloud Service desideri abilitare il supporto per DASH, sottotitoli multipli e tracce audio multiple e sottotitoli generati da IA sul tuo account Dynamic Medie.
+   * Specifica di abilitare il supporto per DASH, sottotitoli multipli e tracce audio multiple e sottotitoli generati da IA (Early Access) sul tuo account Dynamic Medie in AEM as a Cloud Service.
 
 1. L’Assistenza clienti di Adobe ti aggiunge alla Lista di attesa clienti in base all’ordine in cui vengono inviate le richieste.
 1. Quando Adobe è pronto a gestire la richiesta, l’Assistenza clienti ti contatta per coordinare e impostare una data limite per l’abilitazione.
@@ -560,31 +560,23 @@ L’abilitazione di una qualsiasi delle tre funzionalità precedenti, le abilita
    * Crea il tuo [profilo video](/help/assets/dynamic-media/video-profiles.md) come al solito.
    * [Aggiungi più didascalie e tracce audio](#add-msma) al tuo video.
 
-
 ## Informazioni sul supporto di più didascalie e tracce audio per video in Dynamic Medie{#about-msma}
 
-Con la funzionalità di didascalia multipla e traccia audio in Dynamic Medie, è possibile aggiungere facilmente più tracce audio. È inoltre possibile aggiungere più file di didascalia utilizzando i propri file `.vtt` (Video Text Track) o i file di didascalia generati da IA. I sottotitoli generati dall’intelligenza artificiale in Dynamic Medie sono progettati per migliorare l’accessibilità e il coinvolgimento video generando automaticamente sottotitoli accurati e sincronizzati. Questa tecnologia utilizza algoritmi di intelligenza artificiale avanzati per trascrivere i contenuti parlati in testo, che viene quindi visualizzato come didascalie nel video. Di seguito sono riportate alcune delle caratteristiche principali di questa tecnologia:
-
-* **Trascrizione automatica:** Il sistema di intelligenza artificiale trascrive le parole pronunciate in testo in tempo reale, garantendo che le didascalie vengano generate rapidamente e con precisione.
-* **Supporto multilingue:** i sottotitoli possono essere consegnati automaticamente in più di 60 lingue, facilitando il raggiungimento di un pubblico globale.
-* **Accessibilità migliorata:** fornendo didascalie, i video diventano più accessibili agli utenti non udenti o con problemi di udito o alle persone che preferiscono guardare video con l&#39;audio disattivato.
-* **Coinvolgimento migliorato:** I sottotitoli possono contribuire a mantenere l&#39;attenzione del visualizzatore e a migliorare la comprensione, soprattutto in ambienti rumorosi o quando la lingua nativa del visualizzatore è diversa dalla lingua del video.
-
-Queste funzioni rendono i sottotitoli basati sull’intelligenza artificiale uno strumento utile per i creatori di contenuti che desiderano migliorare l’accessibilità e il coinvolgimento dei contenuti video.
+Con la funzionalità di didascalia multipla e traccia audio in Dynamic Medie, è possibile aggiungere facilmente più didascalie e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono gestire anche le didascalie e le tracce audio da una singola scheda nell’interfaccia utente.
 
 ![Scheda Sottotitoli e tracce audio in Dynamic Medie insieme a una tabella che mostra i file di didascalia .VTT caricati e i file di traccia audio .MP3 caricati per un video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
+
 Alcuni dei casi d’uso da considerare per aggiungere più didascalie e tracce audio al video principale sono i seguenti:
 
-| Tipo | Caso d’uso |
-|--- |--- |
-| **Sottotitoli** | Supporto di più lingue |
-|  | Testo descrittivo per accessibilità |
-| **Brani audio** | Supporto di più lingue |
-|  | Brani di commento |
-|  | Audio descrittivo |
 
-Tutti i formati video [supportati in Dynamic Medie](/help/assets/file-format-support.md) e tutti i visualizzatori video Dynamic Medie, ad eccezione del visualizzatore *Video_360* di Dynamic Medie, sono supportati per l&#39;utilizzo con più didascalie e tracce audio.
+| Tipo | Caso d’uso |
+| --- | --- |
+| Sottotitoli | Supporto multilingue<br>Testo descrittivo per l&#39;accessibilità |
+| Tracce audio | Supporto di più lingue<br>Brani di commento<br>Audio descrittivo |
+
+
+Tutti i formati video [supportati in Dynamic Medie](/help/assets/file-format-support.md) e tutti i visualizzatori video Dynamic Medie, ad eccezione del visualizzatore Dynamic Medie Video_360, sono supportati per l&#39;utilizzo con più didascalie e tracce audio.
 
 La funzionalità di tracciamento multi-didascalia e multi-audio è disponibile per il tuo account Dynamic Medie tramite un interruttore di funzioni che deve essere abilitato (attivato) da Adobe Customer Support.
 
@@ -594,161 +586,272 @@ Prima di aggiungere più didascalie e tracce audio al video, assicurati di avere
 
 * Dynamic Medie è configurato in un ambiente AEM.
 * Alla cartella in cui vengono acquisiti i video viene applicato il profilo video [Dynamic Medie](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [Sul tuo account Dynamic Medie sono abilitati i brani multi-didascalia/audio e i sottotitoli generati da IA](#enable-dash).
+* [La traccia multi-didascalia e multi-audio è abilitata sul tuo account Dynamic Medie](/help/assets/dynamic-media/video.md#enable-dash).
 
 I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltre, i file di traccia audio aggiunti sono supportati con il formato MP3.
 
 >[!IMPORTANT]
 >
->Per i video caricati *prima* che abilitano il supporto per più didascalie/tracce audio o le didascalie generate da IA sul tuo account Dynamic Medie, [devi rielaborarle](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione garantisce che questi video possano utilizzare le funzioni multiple caption/audio track e caption generate dall’intelligenza artificiale. Dopo la rielaborazione, gli URL del video continuano a funzionare e a essere riprodotti come al solito.
+>Tutti i video caricati prima di abilitare il supporto di didascalie multiple e tracce audio sul tuo account Dynamic Medie, [devono essere rielaborati](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Questo passaggio di rielaborazione video è necessario affinché siano disponibili capacità di didascalia multipla e di traccia audio. Gli URL del video continuano a funzionare e a essere riprodotti come di consueto, dopo la rielaborazione.
 
 **Per aggiungere più didascalie e tracce audio al video:**
 
 1. [Carica il video principale in una cartella](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) a cui è già stato assegnato un profilo video.
 1. Passa alla risorsa video caricata a cui desideri aggiungere più didascalie e tracce audio.
 1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
-1. Sulla barra degli strumenti fare clic sull&#39;icona Proprietà, ovvero un cerchio contenente una &quot;i&quot;.
-   ![Risorsa video selezionata con segno di spunta sull&#39;immagine miniatura video e Proprietà visualizzazione evidenziate sulla barra degli strumenti.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Risorsa video selezionata nella vista a schede.*
+1. Sulla barra degli strumenti, seleziona l’icona Proprietà (un cerchio con una &quot;i&quot; all’interno).
+
+   ![Pulsante Proprietà risorsa.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Risorsa video selezionata nella vista a schede.*
+
 1. Nella pagina Proprietà del video, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
 
+
    >[!TIP]
-   >Se la scheda **[!UICONTROL Sottotitoli e tracce audio]** non è visualizzata, significa che è presente uno dei due elementi seguenti:
-   >
+   >Se la scheda [!UICONTROL Sottotitoli e tracce audio] non è visualizzata, significa che è presente uno dei due elementi seguenti:
    >* Alla cartella in cui si trova il video selezionato non è assegnato alcun profilo video. In tal caso, vedere [Applicare un profilo video alla cartella](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
-   >* In alternativa, Dynamic Medie deve rielaborare il video. In tal caso, vedere [Rielaborare le risorse Dynamic Medie in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >* In alternativa, il video deve essere rielaborato da Dynamic Medie. In tal caso, vedere [Rielaborare le risorse Dynamic Medie in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+   Dopo aver completato una delle attività di cui sopra, torna a questi passaggi.
+
+   ![Proprietà risorsa ](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Scheda Sottotitoli e tracce audio nella pagina Proprietà del video.*
+
+1. (Facoltativo) Per aggiungere uno o più file di didascalia a un video, effettuate le seguenti operazioni:
+
+   * Seleziona **[!UICONTROL Carica didascalie]**.
+   * Passa a uno o più file .vtt (Video Text Tracks) e selezionali, quindi aprili.
+   * Affinché i sottotitoli siano visibili sul lettore multimediale, devi aggiungere i dettagli richiesti (metadati) su ciascun file di sottotitoli caricato. Seleziona l’icona a forma di matita a destra del nome di un file di didascalia. Nella finestra di dialogo Modifica didascalia, immetti i seguenti dettagli richiesti sul file, quindi seleziona **[!UICONTROL Salva]**. Ripeti questa procedura per ogni file di didascalia caricato:
+
+
+   | Metadati didascalia | Descrizione |
+   | --- | --- | 
+   | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Impossibile utilizzare lo stesso nome di file per ulteriori file di didascalia e tracce audio. |
+   | Lingua | Selezionare la lingua della didascalia. |
+   | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo**: il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include anche i rumori di fondo, la differenziazione degli altoparlanti e altre informazioni rilevanti, oltre alla traduzione o alla trascrizione della finestra di dialogo, rendendo il contenuto più accessibile per gli utenti non udenti o ipoudenti. |
+   | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Ad esempio, Inglese (CC). |
+
+   Se necessario, puoi modificare i metadati dei sottotitoli in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
+
+1. (Facoltativo) Per aggiungere una o più tracce audio a un video, effettuate le seguenti operazioni:
+
+   * Seleziona **[!UICONTROL Carica tracce audio]**.
+   * Passa a uno o più file .mp3 e selezionali, quindi aprili.
+   * Affinché le tracce audio siano visibili nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** sul lettore multimediale, è necessario aggiungere i dettagli richiesti su ogni file di traccia audio aggiunto. Selezionate l&#39;icona della matita a destra del nome di un file di traccia audio. Nella finestra di dialogo Modifica traccia audio, immetti i seguenti dettagli richiesti, quindi seleziona **[!UICONTROL Salva]**. Ripetere questa procedura per ogni file di traccia audio caricato.
+
+   | Metadati traccia audio | Descrizione |
+   | --- | --- |
+   | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Impossibile utilizzare lo stesso nome di file per altri file di traccia audio o di didascalia. |
+   | Lingua | Selezionate la lingua della traccia audio. |
+   | Tipo | Selezionate il tipo di traccia audio in uso.<br>**Originale** - Traccia audio originariamente allegata al video e rappresentata come `[Original]` nell&#39;etichetta con lingua inglese selezionata per impostazione predefinita. Anche se è possibile modificare **[!UICONTROL Label]** e **[!UICONTROL Language]** nella finestra di dialogo **[!UICONTROL Modifica traccia audio]**, se il video principale viene rielaborato, per impostazione predefinita vengono utilizzati i valori originali.<br>**Standard** - Traccia audio aggiuntiva per una lingua diversa dall&#39;originale.<br>**Descrizione audio**: traccia audio che include anche una narrazione descrittiva delle azioni non verbali e dei gesti nel video, rendendo il contenuto più accessibile agli utenti ipovedenti. |
+   | Etichetta | Testo visualizzato come nome della traccia audio nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** nel lettore multimediale. L’etichetta è ciò che il cliente vede e che corrisponde a una traccia audio. Ad esempio, `English [Original]`. L&#39;etichetta audio associata a un video è impostata su `[Original]` per impostazione predefinita. |
+
+   Se necessario, potete modificare i metadati della traccia audio in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
+
+1. Nell&#39;angolo superiore destro della pagina, dall&#39;elenco a discesa **[!UICONTROL Salva e chiudi]**, selezionare **[!UICONTROL Salva]**. I file vengono caricati e inizia l’elaborazione dei metadati, come illustrato nella colonna Stato dell’interfaccia.
+
+   >[!NOTE]
    >
-   >Dopo aver completato una delle attività di cui sopra, torna a questi passaggi.
+   >In base alle impostazioni di caching dell’istanza, l’elaborazione dei metadati può richiedere diversi minuti prima che venga visualizzata nell’anteprima e negli URL pubblicati.
 
-   ![Scheda Sottotitoli e tracce audio nella pagina Proprietà.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *Scheda Sottotitoli e tracce audio nella pagina Proprietà del video.*
+1. (Facoltativo) Se hai selezionato **[!UICONTROL Salva e chiudi]** nel passaggio precedente, invece di selezionare **[!UICONTROL Salva]**, puoi comunque visualizzare lo stato di elaborazione dei file caricati. Consulta [Visualizzare lo stato del ciclo di vita dei file di didascalia e traccia audio caricati](/help/assets/dynamic-media/video.md#lifecycle-status-video).
 
-1. Per aggiungere una o più tracce audio a un video, effettuate le seguenti operazioni:
-   1. Seleziona **[!UICONTROL Carica tracce audio]**.
-   1. Passa a uno o più file .mp3 e selezionali, quindi aprili.
-   1. Affinché le tracce audio siano visibili nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** sul lettore multimediale, è necessario aggiungere i dettagli richiesti su ciascun file di traccia audio. In questo modo, tutte le tracce audio sono elencate e accessibili correttamente. Selezionate l&#39;icona della matita a destra del nome di un file di traccia audio. Nella finestra di dialogo **Modifica traccia audio** immettere i dettagli richiesti seguenti:
+1. (Facoltativo) Visualizza l&#39;anteprima del video prima della pubblicazione per assicurarti che i sottotitoli e l&#39;audio funzionino come previsto. Vedi [Anteprima di un video con più sottotitoli e tracce audio](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle).
 
-      | Metadati traccia audio | Descrizione |
+1. Publish il video. Consulta [Risorse Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+
+
+
+<!--
+
+## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
+
+With multiple caption and audio track capability in Dynamic Media, you can easily add multiple audio tracks. You can also add multiple caption files using either your own `.vtt` (Video Text Track) files or AI-generated caption files. AI-generated captions in Dynamic Media are designed to enhance video accessibility and engagement by automatically generating accurate and synchronized subtitles. This technology uses advanced AI algorithms to transcribe spoken content into text, which is then displayed as captions on the video. Some key features of this technology include the following:
+
+* **Automatic Transcription:** The AI system transcribes spoken words into text in real-time, ensuring that captions are generated quickly and accurately.
+* **Multilingual Support:** Captions can be automatically delivered in more than 60 languages, making it easier to reach a global audience.
+* **Enhanced Accessibility:** By providing captions, videos become more accessible to viewers who are deaf or hard of hearing, or people who prefer to watch videos with the sound off.
+* **Improved Engagement:** Captions can help retain viewer attention and improve comprehension, especially in noisy environments or when the viewer's native language is different from the video's language.
+
+These features make AI-powered captions a valuable tool for content creators looking to enhance their video content's accessibility and engagement. 
+
+![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
+
+Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
+
+| Type | Use case |
+|--- |--- |
+| **Captions** | Multiple language support |
+|  | Descriptive text for accessibility |
+| **Audio tracks** | Multiple language support  |
+|  | Commentary tracks |
+|  | Descriptive audio |
+
+All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers - except the Dynamic Media *Video_360* viewer - are supported for use with multiple captions and audio tracks.
+
+Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
+
+### Add multiple captions and audio tracks to your video {#add-msma}
+
+Before you add multiple caption and audio tracks to your video, be sure you already have the following in-place:
+
+* Dynamic Media is set up in an AEM environment.
+* A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+* [Multi-caption/audio tracks and AI-generated captions are enabled on your Dynamic Media account](#enable-dash).
+
+Added captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
+
+>[!IMPORTANT]
+>
+>For videos uploaded *before* enabling multiple caption/audio track support or AI-generated captions on your Dynamic Media account, [you need to reprocess them](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This reprocessing step ensures that these videos can use the multiple caption/audio track and AI-generated caption features. After reprocessing, the video URLs continue to function and play as usual.
+
+**To add multiple captions and audio tracks to your video:**
+
+1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
+1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, click the Properties icon (a circle with an "i" in it).
+![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
+1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+
+   >[!TIP]
+   >If you do not see the **[!UICONTROL Captions & Audio Tracks]** tab, it means either one of two things:
+   >
+   >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
+   >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >
+   >When you have completed either one of the above tasks, return to these steps.
+  
+   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
+   *Captions and audio tracks tab on the video's Properties page.*
+
+1. To add one or more audio tracks to a video, do the following:
+   1. Select **[!UICONTROL Upload Audio Tracks]**.
+   1. Navigate to, and select, one or more .mp3 files and open them.
+   1. For audio tracks to be visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, you must add required details about each audio track file. Doing so ensures that all audio tracks are properly listed and accessible. Select the pencil icon to the right of an audio track file name. In the **Edit Audio Track** dialog box, enter the following required details:
+    
+      | Audio Track metadata | Description |
       |--- |--- |
-      | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Impossibile utilizzare lo stesso nome di file per altri file di traccia audio o di didascalia. |
-      | Lingua | Selezionate la lingua corretta della traccia audio. |
-      | Tipo | Selezionate il tipo di traccia audio in uso.<br>**Originale** - La traccia audio originariamente allegata al video e rappresentata come `[Original]` nell&#39;etichetta con la lingua `English` selezionata per impostazione predefinita. Anche se è possibile modificare **[!UICONTROL Label]** e **[!UICONTROL Language]** nella finestra di dialogo **[!UICONTROL Modifica traccia audio]**, se il video principale viene rielaborato, per impostazione predefinita vengono utilizzati i valori originali.<br>**Standard** - Traccia audio aggiuntiva per una lingua diversa dall&#39;originale.<br>**Descrizione audio**: traccia audio che include anche una narrazione descrittiva delle azioni non verbali e dei gesti nel video, rendendo il contenuto più accessibile agli utenti ipovedenti. |
-      | Etichetta | Testo visualizzato come nome della traccia audio nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** nel lettore multimediale. L’etichetta è ciò che il cliente vede e che corrisponde a una traccia audio. Ad esempio, `English [Original]`. L&#39;etichetta audio associata a un video è impostata su `[Original]` per impostazione predefinita. |
+      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files. |
+      | Language | Select the correct language of the audio track. |
+      | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
+      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
 
-      Se necessario, potete modificare i metadati della traccia audio in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
+      You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
-   1. Nell&#39;angolo superiore destro della pagina, nel menu a discesa **[!UICONTROL Salva e chiudi]**, fai clic su **[!UICONTROL Salva]**.
-   1. Effettua una delle operazioni seguenti:
-      * Ripetete questa procedura per ogni file di traccia audio caricato.
-      * Procedi al passaggio successivo per aggiungere sottotitoli a un video.
+   1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**.
+   1. Do one of the following:
+        * Repeat this process for each audio track file that you upload.
+        * Continue to the next step to add captions to a video.
 
-1. Per aggiungere uno o più file di didascalia a un video, scegli quale dei seguenti casi d’uso si adatta meglio allo scenario:
-
-   |  | Caso d’uso | Opzione Crea didascalia da utilizzare |
+1. To add one or more caption files to a video, choose which one of the following use cases best fits your scenario:
+   
+   |  | Use case | Create Caption option to use |
    | --- | --- | --- |
-   | **Opzione 1** | Ho i miei file di didascalia preesistenti nelle lingue che voglio usare.<br>Vedere **Opzione 1** di seguito. | **[!UICONTROL Carica file]** |
-   | **Opzione 2** | Desidero che AI generi i miei file di didascalia in più lingue.<br>Vedere **Opzione 2** di seguito. | **[!UICONTROL Converti tracce audio]** |
-   | **Opzione 3** | È necessario correggere il testo di un file di didascalia (`.vtt`), ricaricarlo per sostituire il file `.vtt` precedente, quindi far tradurre il file corretto da AI.<br>Vedere **Opzione 3** di seguito. | **[!UICONTROL Traduci didascalia]** |
+   | **Option 1** | I have my own pre-existing caption files that are in the languages that I want to use.<br>See **Option 1** below. | **[!UICONTROL Upload Files]** |
+   | **Option 2** | I want AI to generate my caption files in multiple languages.<br>See **Option 2** below. | **[!UICONTROL Convert audio tracks]** |
+   | **Option 3** | Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file.<br>See **Option 3** below. | **[!UICONTROL Translate caption]** |
 
-   ![Opzioni per la creazione dei sottotitoli.](/help/assets/dynamic-media/assets/msma-createcaption.png)
-   *Il menu a discesa Crea didascalia offre tre opzioni: Carica file, Converti tracce audio e Traduci didascalia.*
+    ![Create Captions options.](/help/assets/dynamic-media/assets/msma-createcaption.png)
+    *The Create Captions drop-down menu gives you three options: Upload Files, Convert audio tracks, and Translate caption.*
 
-+++**Opzione 1:** *Ho i miei file di didascalia preesistenti nelle lingue che voglio utilizzare* (**[!UICONTROL Carica file]**)
+    +++**Option 1:** *I have my own pre-existing caption files that are in the languages that I want to use* (**[!UICONTROL Upload Files]** option)
 
-   1. Nella parte superiore destra della pagina, fai clic su **[!UICONTROL Crea didascalia]** > **[!UICONTROL Carica file]**.
-   1. Passare a uno o più file `.vtt` preesistenti e selezionarli.
-   1. Affinché i sottotitoli siano visibili sul lettore multimediale, *devi* aggiungere i dettagli richiesti su *ogni* file di sottotitoli che carichi. Seleziona l’icona a forma di matita a destra del nome di un file di didascalia. Nella finestra di dialogo **Modifica didascalia** immettere i dettagli richiesti seguenti sul file:
+    1. Near the upper-right side of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Upload files]**.
+    1. Navigate to, and select, one or more of your pre-existing `.vtt` files and open them.
+    1. For captions to be visible on the media player, you *must* add the required details about *each* caption file that you upload. Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, enter the following required details about the file:
+    
+        | Caption metadata | Description |
+        |--- |--- |
+        | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
+        | Language | Select the language of the caption. After a caption file is processed, this language field becomes uneditable (dimmed) |
+        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises, speaker differentiation, and other relevant details, along with dialogue translation or transcription, enhancing accessibility for individuals who are deaf or hard of hearing. |
+        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
 
-      | Metadati didascalia | Descrizione |
-      |--- |--- |
-      | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Impossibile utilizzare lo stesso nome di file per ulteriori file di didascalia e tracce audio. |
-      | Lingua | Selezionare la lingua della didascalia. Dopo l&#39;elaborazione di un file di didascalia, questo campo della lingua diventa non modificabile (inattivo) |
-      | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo**: il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include i rumori di fondo, la differenziazione degli altoparlanti e altri dettagli rilevanti, insieme alla traduzione o alla trascrizione del dialogo, migliorando l&#39;accessibilità per gli individui non udenti o ipoudenti. |
-      | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Esempio: `English (CC)`. |
+        You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
-      Se necessario, puoi modificare i metadati dei sottotitoli in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the **Status** column of the interface.
 
-   1. Nell&#39;angolo superiore destro della pagina, nel menu a discesa **[!UICONTROL Salva e chiudi]**, fai clic su **[!UICONTROL Salva]**. I file vengono caricati e inizia l&#39;elaborazione dei metadati, come mostrato nella colonna **Stato** dell&#39;interfaccia.
+        >[!NOTE]
+        >
+        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
 
-      >[!NOTE]
-      >
-      >In base alle impostazioni di caching dell’istanza, l’elaborazione dei metadati può richiedere diversi minuti prima che venga visualizzata nell’anteprima e negli URL pubblicati.
+    1. If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+    1. Continue to step 8.
 
-   1. Se hai selezionato **[!UICONTROL Salva e chiudi]** nel passaggio precedente, invece di selezionare **[!UICONTROL Salva]**, puoi comunque visualizzare lo stato di elaborazione dei file caricati. Consulta [Visualizzare lo stato del ciclo di vita dei file di didascalia e traccia audio caricati](#lifecycle-status-video).
-   1. Continuare con il passaggio 8.
+    +++
 
-+++
+    +++**Option 2:** *I want AI to generate my caption files in multiple languages* (**[!UICONTROL Convert audio tracks]** option)
 
-+++**Opzione 2:** *Desidero che AI generi i miei file di didascalia in più lingue* (**[!UICONTROL Opzione Converti tracce audio]**)
+    1. Near the upper-right corner of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Convert audio tracks]**.
 
-   1. Fai clic su **[!UICONTROL Crea didascalia]** > **[!UICONTROL Converti tracce audio]** nell&#39;angolo superiore destro della pagina.
+        ![Convert audio tracks dialog box.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
+        *The Convert Audio Tracks dialog box uses AI to generate caption files in multiple languages.*
 
-      ![Finestra di dialogo Converti tracce audio.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
-      *La finestra di dialogo Converti tracce audio utilizza l&#39;intelligenza artificiale per generare file di didascalia in più lingue.*
+    1. In the **Convert Audio Tracks** dialog box, set the following options:
+    
+        | Option | Description |
+        |--- |--- |
+        | Audio track to convert | In the drop-down list, choose the uploaded audio track file from which you want captions generated using AI.  |
+        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
 
-   1. Nella finestra di dialogo **Converti tracce audio**, impostare le opzioni seguenti:
+    1. Click **[!UICONTROL Done]**.
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
+    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
 
-      | Opzione | Descrizione |
-      |--- |--- |
-      | Traccia audio da convertire | Nell’elenco a discesa, scegli il file di traccia audio caricato dal quale desideri generare i sottotitoli utilizzando l’intelligenza artificiale. |
-      | Lingue di output | Nell&#39;elenco a discesa selezionare una o più lingue in cui si desidera visualizzare il file di didascalia.<br>Per rimuovere una lingua selezionata, fare clic su **X**.<br>Durante la riproduzione del video, l&#39;elenco delle lingue viene visualizzato nel lettore multimediale nell&#39;ordine in cui sono state selezionate qui. |
+        >[!NOTE]
+        >
+        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
 
-   1. Fai clic su **[!UICONTROL Fine]**.
-   1. Nell&#39;angolo superiore destro della pagina, nel menu a discesa **[!UICONTROL Salva e chiudi]**, fai clic su **[!UICONTROL Salva]**.
-   1. Fai di nuovo clic sulla scheda **[!UICONTROL Didascalie e tracce audio]**. Vengono creati uno o più file di didascalia e inizia l&#39;elaborazione, come mostrato nella colonna **Stato** dell&#39;interfaccia. Vedi anche [Visualizzare lo stato del ciclo di vita dei file di didascalia e di traccia audio caricati](#lifecycle-status-video).
+    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
 
-      >[!NOTE]
-      >
-      >In base alle impostazioni di caching dell’istanza, l’elaborazione dei metadati può richiedere diversi minuti prima che venga visualizzata nell’anteprima e negli URL pubblicati.
+        | Caption metadata | Description |
+        | --- | --- |
+        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
+        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
 
-   1. (Facoltativo) Seleziona l’icona della matita a destra del nome di un file di didascalia. Nella finestra di dialogo **Modifica didascalia** è possibile modificare i dettagli seguenti sul file:
+        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
+    1. Continue to step 8.
 
-      | Metadati didascalia | Descrizione |
-      | --- | --- |
-      | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo**: il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include i rumori di sottofondo e la differenziazione degli altoparlanti. Comprende anche altre informazioni pertinenti, insieme alla traduzione o trascrizione della finestra di dialogo. Questo approccio rende i contenuti più accessibili per gli individui non udenti o ipoudenti. |
-      | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Esempio: `English (CC)`. |
+    +++
 
-      Se necessario, puoi modificare alcuni metadati di didascalia in un secondo momento. Quando il video viene pubblicato, i dettagli dei metadati si riflettono sugli URL pubblici nei video pubblicati.
-   1. Continuare con il passaggio 8.
+    +++**Option 3:** *Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file* (**[!UICONTROL Translate captions]** option)
 
-+++
+    1. Click **[!UICONTROL Create Caption]** > **[!UICONTROL Translate captions]**. This option is available if one or more caption files were already added and processed.
 
-+++**Opzione 3:** *È necessario correggere il testo di un file di didascalia (`.vtt`), ricaricarlo per sostituire il file `.vtt` precedente, quindi fare in modo che AI traduca il file corretto* (**[!UICONTROL Traduci didascalie]**)
+        ![Translate Captions dialog box.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
+        *The Translate Captions dialog box lets you use an existing caption file to have AI generate new caption files in multiple languages.*
 
-   1. Fai clic su **[!UICONTROL Crea didascalia]** > **[!UICONTROL Traduci didascalie]**. Questa opzione è disponibile se uno o più file di didascalia sono già stati aggiunti ed elaborati.
+    1. In the **Translate caption** dialog box, set the following options:
 
-      ![Finestra di dialogo Traduci didascalie.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
-      *La finestra di dialogo Traduci didascalie consente di utilizzare un file di didascalia esistente per generare nuovi file di didascalia in più lingue.*
+        | Option | Description |
+        |--- |--- |
+        | Caption to translate | In the drop-down list, choose a caption file from which you want the captions generated using AI. |
+        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
 
-   1. Nella finestra di dialogo **Traduci didascalia** impostare le opzioni seguenti:
+    1. Click **[!UICONTROL Done]**.
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
+    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
 
-      | Opzione | Descrizione |
-      |--- |--- |
-      | Didascalia da tradurre | Nell’elenco a discesa, scegli un file di didascalia da cui desideri generare i sottotitoli utilizzando l’intelligenza artificiale. |
-      | Lingue di output | Nell&#39;elenco a discesa selezionare una o più lingue in cui si desidera visualizzare il file di didascalia.<br>Per rimuovere una lingua selezionata, fare clic su **X**.<br>Durante la riproduzione del video, l&#39;elenco delle lingue viene visualizzato nel lettore multimediale nell&#39;ordine in cui sono state selezionate qui. |
+        >[!NOTE]
+        >
+        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
 
-   1. Fai clic su **[!UICONTROL Fine]**.
-   1. Nell&#39;angolo superiore destro della pagina, nel menu a discesa **[!UICONTROL Salva e chiudi]**, fai clic su **[!UICONTROL Salva]**.
-   1. Fai di nuovo clic sulla scheda **[!UICONTROL Didascalie e tracce audio]**. Vengono creati uno o più file di didascalia e inizia l&#39;elaborazione, come mostrato nella colonna **Stato** dell&#39;interfaccia. Vedi anche [Visualizzare lo stato del ciclo di vita dei file di didascalia e di traccia audio caricati](#lifecycle-status-video).
+    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
 
-      >[!NOTE]
-      >
-      >In base alle impostazioni di caching dell’istanza, l’elaborazione dei metadati può richiedere diversi minuti prima che venga visualizzata nell’anteprima e negli URL pubblicati.
+        | Caption metadata | Description |
+        | --- | --- |
+        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text also includes background noises, speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
+        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
 
-   1. (Facoltativo) Seleziona l’icona della matita a destra del nome di un file di didascalia. Nella finestra di dialogo **Modifica didascalia** è possibile modificare i dettagli seguenti sul file:
+        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
 
-      | Metadati didascalia | Descrizione |
-      | --- | --- |
-      | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo**: il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include anche i rumori di sottofondo e la differenziazione degli altoparlanti. Comprende anche altre informazioni pertinenti, insieme alla traduzione o trascrizione della finestra di dialogo. Questo approccio rende i contenuti più accessibili per gli individui non udenti o ipoudenti. |
-      | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Esempio: `English (CC)`. |
+    1. Continue to step 8.
 
-      Se necessario, puoi modificare alcuni metadati di didascalia in un secondo momento. Quando il video viene pubblicato, i dettagli dei metadati si riflettono sugli URL pubblici nei video pubblicati.
+    +++
 
-   1. Continuare con il passaggio 8.
+1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](#preview-video-audio-subtitle).
+1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
-+++
-
-1. (Facoltativo) Visualizza l&#39;anteprima del video prima della pubblicazione per assicurarti che i sottotitoli e l&#39;audio funzionino come previsto. Vedi [Anteprima di un video con più sottotitoli e tracce audio](#preview-video-audio-subtitle).
-1. Publish il video. Consulta [Risorse Publish](publishing-dynamicmedia-assets.md).
+-->
 
 #### Informazioni sull&#39;aggiunta di file di didascalia e traccia audio a un video già pubblicato
 
@@ -779,7 +882,7 @@ Le modifiche apportate a più sottotitoli hanno la precedenza su una didascalia 
 1. Publish il video come al solito.
 L’URL esistente con il modificatore didascalia ora può caricare più didascalie.
 
-### Visualizzare lo stato del ciclo di vita dei file di didascalia e traccia audio caricati{#lifecycle-status-video}
+### Visualizzare lo stato del ciclo di vita dei file di didascalia e traccia audio caricati {#lifecycle-status-video}
 
 Puoi osservare lo stato del ciclo di vita di qualsiasi file di didascalia o traccia audio caricato nel video principale. Puoi farlo dalla scheda **Sottotitoli e tracce audio** di **Proprietà**.
 
