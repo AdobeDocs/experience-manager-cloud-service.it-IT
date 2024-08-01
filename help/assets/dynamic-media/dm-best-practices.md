@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
+source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
 workflow-type: tm+mt
-source-wordcount: '4105'
+source-wordcount: '4118'
 ht-degree: 0%
 
 ---
@@ -77,9 +77,11 @@ Le best practice per i visualizzatori Dynamic Medie sono linee guida essenziali 
 Seguendo queste best practice, puoi ottenere un’integrazione perfetta, una gestione efficiente delle risorse e interazioni migliorate con i visualizzatori. La sincronizzazione delle risorse, l’utilizzo del ritaglio intelligente e il rispetto delle linee guida di inclusione dei file di JavaScript sono tutte pratiche importanti. Questi consigli aiutano a mantenere l’integrità e l’affidabilità della distribuzione dei contenuti multimediali su varie piattaforme e dispositivi.
 
 * **Sincronizza Assets visualizzatore:**
-Prima di utilizzare il lettore, assicurati che tutte le risorse visualizzatore siano sincronizzate con Dynamic Medie. Per la risoluzione dei problemi del visualizzatore, vai all&#39;articolo [Risoluzione dei problemi dei visualizzatori Dynamic Medie](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
-* **Pagina Gestione esempi:**
-Accedere alla pagina di gestione esempi in `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+Prima di utilizzare il lettore, assicurati che tutte le risorse visualizzatore siano sincronizzate con Dynamic Medie.
+
+   * Accedere alla pagina di gestione esempi in `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`. Questa pagina consente di risincronizzare le risorse di un visualizzatore, tra cui icone pronte all’uso, file CSS e predefiniti.
+   * In caso di problemi con il visualizzatore, vai all&#39;articolo [Risoluzione dei problemi relativi ai visualizzatori Dynamic Medie](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
+
 * **Assets Publish:**
 Assicurati che le risorse siano pubblicate prima di visualizzarle nei visualizzatori di consegna.
 * **Riproduzione automatica video disattivata:**
@@ -400,6 +402,7 @@ Vuoi saperne di più? Vai a [Smart Imaging](/help/assets/dynamic-media/imaging-f
 
 **Caso di business:** *Dopo aver pubblicato nuovi contenuti o sovrascritto quelli esistenti, come è possibile garantire che le modifiche vengano visualizzate immediatamente sulla rete CDN?*
 
-La rete CDN (Content Delivery Network) memorizza nella cache le risorse Dynamic Medie per consentirne la rapida distribuzione ai clienti. Quando vengono apportati aggiornamenti a queste risorse, è importante che le modifiche diventino effettive immediatamente sul sito web. Rimuovendo o annullando la validità della cache CDN, le risorse consegnate da Dynamic Medie possono essere aggiornate rapidamente. Questo approccio elimina la necessità di attendere la scadenza della cache in base al valore TTL (Time To Live), che in genere è impostato su dieci ore. È invece possibile inviare una richiesta dall’interfaccia utente di Dynamic Medie per far scadere la cache in pochi minuti.
+La rete CDN (Content Delivery Network) memorizza nella cache le risorse Dynamic Medie per consentirne la rapida distribuzione ai clienti. Quando vengono apportati aggiornamenti a queste risorse, è importante che le modifiche diventino effettive immediatamente sul sito web. Rimuovendo o annullando la validità della cache CDN, le risorse consegnate da Dynamic Medie possono essere aggiornate rapidamente. Questo approccio elimina la necessità di attendere la scadenza della cache in base al valore TTL (Time To Live), che in genere è impostato su dieci ore.
+A seconda del caso d’uso specifico, puoi aggiornare di conseguenza le impostazioni TTL (Time to Live) della rete CDN.
 
 Vuoi saperne di più? Vai a [Invalida la cache CDN tramite Dynamic Medie](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
