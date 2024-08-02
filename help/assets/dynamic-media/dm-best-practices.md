@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
+source-git-commit: 220a8d8aecde76c7d77ebab16fda2158316c08dd
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -406,7 +406,6 @@ Vuoi saperne di più? Vai a [Smart Imaging](/help/assets/dynamic-media/imaging-f
 
 **Caso di business:** *Dopo aver pubblicato nuovi contenuti o sovrascritto quelli esistenti, come è possibile garantire che le modifiche vengano visualizzate immediatamente sulla rete CDN?*
 
-La rete CDN (Content Delivery Network) memorizza nella cache le risorse Dynamic Medie per consentirne la rapida distribuzione ai clienti. Quando vengono apportati aggiornamenti a queste risorse, è importante che le modifiche diventino effettive immediatamente sul sito web. Rimuovendo o annullando la validità della cache CDN, le risorse consegnate da Dynamic Medie possono essere aggiornate rapidamente. Questo approccio elimina la necessità di attendere la scadenza della cache in base al valore TTL (Time To Live), che in genere è impostato su dieci ore.
-A seconda del caso d’uso specifico, puoi aggiornare di conseguenza le impostazioni TTL (Time to Live) della rete CDN.
+La rete CDN (Content Delivery Network) memorizza nella cache le risorse Dynamic Medie per consentirne la rapida distribuzione ai clienti. Quando vengono apportati aggiornamenti a queste risorse, è importante che le modifiche diventino effettive immediatamente sul sito web. Rimuovendo o annullando la validità della cache CDN, le risorse consegnate da Dynamic Medie possono essere aggiornate rapidamente. Questo approccio elimina la necessità di attendere la scadenza della cache in base al valore TTL (Time To Live), che in genere è impostato su dieci ore. A seconda del caso d’uso specifico, puoi aggiornare di conseguenza le impostazioni TTL (Time to Live) della rete CDN.
 
 Vuoi saperne di più? Vai a [Invalida la cache CDN tramite Dynamic Medie](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
