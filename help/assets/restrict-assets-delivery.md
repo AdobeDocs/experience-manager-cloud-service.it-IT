@@ -3,9 +3,9 @@ title: Limitare la consegna di risorse in Experience Manager
 description: Scopri come limitare la consegna delle risorse in [!DNL Experience Manager].
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
+source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Se il campo non è disponibile, procedi come segue per aggiungerlo:
    1. Seleziona il **[!UICONTROL gruppo utenti]** da aggiungere ed estrai **[!UICONTROL orgID]** e **[!UICONTROL userGroupID]** dall&#39;URL oppure utilizza l&#39;ID organizzazione, ad esempio `{orgID}@AdobeOrg:{usergroupID}`.
 
 1. Aggiungi l&#39;ID gruppo al campo **[!UICONTROL Ruoli]** delle proprietà della risorsa. <br>
-Gli ID gruppo definiti nel campo **[!UICONTROL Ruoli]** sono gli unici utenti che possono accedere alla risorsa. Puoi anche aggiungere l&#39;ID client IMS e l&#39;ID profilo IMS nel campo **[!UICONTROL Ruoli]**. Esempio: `{orgId}@AdobeOrg:{profileId}`.
+Gli ID gruppo definiti nel campo **[!UICONTROL Ruoli]** sono gli unici utenti che possono accedere alla risorsa. Oltre all&#39;ID gruppo IMS, puoi anche aggiungere l&#39;ID utente IMS e l&#39;ID profilo IMS nel campo **[!UICONTROL Ruoli]**. Esempio: `{orgId}@AdobeOrg:{profileId}`.
 
    >[!NOTE]
    >
