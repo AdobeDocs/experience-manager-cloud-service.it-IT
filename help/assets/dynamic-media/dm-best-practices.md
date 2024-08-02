@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
+source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -162,14 +162,17 @@ Utilizza regolarmente le seguenti raccomandazioni per garantire che le immagini 
 
 * **Nomi file immagine significativi:**
 Utilizza nomi di file descrittivi che riflettono il contenuto dell’immagine. Ad esempio:
+
    * utilizza `myCompany-Silver-Wrist-Watch`
    * *evitare* `myCompany_Silver_Wrist_Watch` o `myCompanySilverWristWatch`
 
   In questo modo i motori di ricerca possono comprendere il contesto dell’immagine e migliorare la SEO (Search Engine Optimization). Google preferisce i trattini ai caratteri di sottolineatura o agli spazi nel nome di un file. Inoltre, evita di concatenare le parole in un nome di file.
 * **Dominio personalizzato:**
 Implementa un dominio personalizzato che includa la tua azienda o il tuo nome del brand per rafforzare il riconoscimento e la fiducia nel brand. Ad esempio:
+
    * utilizza `http://images.mycompany.com/is/image/companyname/`
    * *evitare* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
+
 * **Struttura delle cartelle compatibile con SEO:**
 Organizza le immagini in una struttura di cartelle che includa il nome o il marchio della tua azienda per una migliore indicizzazione, come `http://images.mycompany.com/is/image/companyname/`.
 * **Set di regole di Dynamic Medie:**
@@ -309,6 +312,7 @@ Carica il file video originale. Assicurati che sia un video ad alta risoluzione 
 Visualizza l’anteprima del video per assicurarti che tutto si presenti come previsto. Una volta soddisfatto, procedi e pubblicalo. Questo passaggio rende il video accessibile al pubblico.
 * **Collegamento o incorporamento:**
 Dopo la pubblicazione, sono disponibili due opzioni.
+
    * **Collegamento diretto:**
 Utilizza l’URL fornito per il collegamento diretto al video. Inseriscilo nel collegamento appropriato sul sito di marketing.
    * **Incorpora il video:**
