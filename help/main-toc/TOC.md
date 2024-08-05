@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ae2805097007d3d056e30b9c8420b47027a3af0e
+source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
 workflow-type: tm+mt
-source-wordcount: '5304'
-ht-degree: 99%
+source-wordcount: '5315'
+ht-degree: 100%
 
 ---
 
@@ -162,6 +162,9 @@ ht-degree: 99%
          + [Note sulla versione 2020.2.0](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
    + Note sulla versione per gli strumenti di migrazione {#migration-tools}
       + [Note sulla versione corrente](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + 2024 {#2024}
+         + [Note sulla versione 2024.01.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
+         + [Note sulla versione 2024.05.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-05-0.md)
       + 2023 {#2023}
          + [Note sulla versione 2023.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
          + [Note sulla versione 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
@@ -289,7 +292,7 @@ ht-degree: 99%
       + [Strumenti di modernizzazione AEM](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
    + [Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
-   + [Siti e Edge Delivery Services](/help/sites-cloud/sites-and-edge.md)
+   + [Sites e Edge Delivery Services](/help/sites-cloud/sites-and-edge.md)
    + Authoring {#authoring}
       + [Guida rapida all’authoring delle pagine](/help/sites-cloud/authoring/quick-start.md)
       + [Operazioni di base](/help/sites-cloud/authoring/basic-handling.md)
