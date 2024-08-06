@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7ec5d5e3ca487ff84bc0b1f7f040aec9475059e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 93%
+source-wordcount: '1204'
+ht-degree: 90%
 
 ---
 
@@ -131,6 +131,7 @@ Per impostare lo stato di una risorsa:
 1. Seleziona la risorsa e fai clic su **[!UICONTROL Dettagli]** nella barra degli strumenti.
 
 1. Nella scheda **[!UICONTROL Base]**, seleziona lo stato della risorsa dall&#39;elenco a discesa **[!UICONTROL Stato]**. I valori possibili sono Approvato, Rifiutato e Nessuno stato (impostazione predefinita).
+Se per il tuo ambiente è stato eseguito il provisioning di Dynamic Medie con funzionalità OpenAPI, Experience Manager Assets genera un URL pubblico non appena la risorsa viene contrassegnata come `Approved`.
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
