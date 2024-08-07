@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 96bf1d56d24da851ad4713e3cb0728fd7a18da18
+source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 10%
+source-wordcount: '1269'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Varianze delle richieste di contenuto del Cloud Service {#content-requests-variances}
 
-Le richieste di contenuto possono presentare varianze all’interno degli strumenti di reporting di Analytics di un’organizzazione, come riepilogato nella tabella seguente. In generale, *non* utilizza strumenti di analisi che raccolgono dati tramite strumenti lato client per generare rapporti sul numero di richieste di contenuto per un determinato sito, semplicemente perché spesso dipendono dal consenso dell&#39;utente ad essere attivati, perdendo così una frazione significativa del traffico. Gli strumenti di Analytics che raccolgono i dati lato server nei file di registro, o i rapporti CDN per i clienti che aggiungono la propria CDN oltre ad AEM as a Cloud Service, forniranno conteggi migliori. Per la generazione di rapporti sulle visualizzazioni di pagina e sulle relative prestazioni, l&#39;opzione consigliata di Adobe è [Adobe RUM Data Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md).
+Le richieste di contenuto possono presentare varianze all’interno degli strumenti di reporting di Analytics di un’organizzazione, come riepilogato nella tabella seguente. In generale, *non* utilizza strumenti di analisi che raccolgono dati tramite strumenti lato client per generare rapporti sul numero di richieste di contenuto per un determinato sito, semplicemente perché spesso dipendono dal consenso dell&#39;utente ad essere attivati, perdendo così una frazione significativa del traffico. Gli strumenti di Analytics che raccolgono i dati lato server nei file di registro, o i rapporti CDN per i clienti che aggiungono la propria CDN oltre ad AEM as a Cloud Service, forniranno conteggi migliori.
 
 | Motivo della varianza | Spiegazione |
 |---|---|
