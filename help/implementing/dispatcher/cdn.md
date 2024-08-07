@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -59,7 +59,7 @@ Scopri come configurare queste funzioni utilizzando i file YAML in Git e distrib
 
 ### Eliminare i contenuti memorizzati in cache sulla rete CDN {#purge-cdn}
 
-L’impostazione di TTL utilizzando l’intestazione HTTP Cache-Control è un approccio efficace per bilanciare le prestazioni di distribuzione e l’aggiornamento dei contenuti. Tuttavia, negli scenari in cui è fondamentale distribuire immediatamente i contenuti aggiornati, può essere utile eliminare direttamente la cache CDN.
+Impostando il valore TTL (Time to Live) mediante l’intestazione HTTP cache-control è possibile bilanciare in modo efficace le prestazioni di distribuzione dei contenuti e lo stato di aggiornamento degli stessi. Tuttavia, negli scenari in cui è fondamentale distribuire immediatamente i contenuti aggiornati, può essere utile eliminare direttamente la cache CDN.
 
 Leggi informazioni su [configurazione di un token API di eliminazione](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) e [eliminazione del contenuto CDN memorizzato nella cache](/help/implementing/dispatcher/cdn-cache-purge.md).
 
@@ -67,7 +67,7 @@ Leggi informazioni su [configurazione di un token API di eliminazione](/help/imp
 
 Per i casi di utilizzo di autenticazione leggera che includono soggetti interessati alle attività di revisione del contenuto, proteggi il contenuto visualizzando una finestra di dialogo di autenticazione di base che richiede un nome utente e una password. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-credentials-authentication.md) e partecipazione al programma iniziale.
 
-## La rete CDN del cliente punta alla rete CDN gestita dall’AEM {#point-to-point-CDN}
+## La CDN del cliente punta alla CDN gestita da AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
