@@ -4,7 +4,7 @@ description: Scopri come utilizzare la funzione di registrazione per AEM as a Cl
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
+source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
 workflow-type: tm+mt
 source-wordcount: '2829'
 ht-degree: 8%
@@ -617,9 +617,9 @@ I registri CDN verranno inoltrati a Splunk per richieste di nuovi ticket di supp
 
 >[!NOTE]
 >
->Non è possibile inoltrare a Splunk registri specifici e registri utente specifici.
+>Impossibile inoltrare a Splunk *registri specifici* e *registri specifici*.
 >
->Tutti i registri verranno inoltrati a Splunk, dove eventuali ulteriori filtri possono essere eseguiti dal cliente in base alle sue esigenze.
+>**Tutti** i registri verranno inoltrati a Splunk, dove il cliente potrà applicare ulteriori filtri in base alle proprie esigenze.
 
 ### Abilitazione dell’inoltro Splunk {#enabling-splunk-forwarding}
 
