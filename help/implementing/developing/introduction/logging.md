@@ -4,9 +4,9 @@ description: Scopri come utilizzare la funzione di registrazione per AEM as a Cl
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
+source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
 workflow-type: tm+mt
-source-wordcount: '2797'
+source-wordcount: '2829'
 ht-degree: 8%
 
 ---
@@ -550,7 +550,7 @@ I registri CDN sono distinti dagli altri registri in quanto sono conformi al for
 | *stato* | Il codice di stato HTTP come valore intero. |
 | *res_age* | Il tempo (in secondi) in cui una risposta è stata memorizzata nella cache (in tutti i nodi). |
 | *pop* | Centro dati del server cache CDN. |
-| *regole* | Nomi di [regole filtro traffico](/help/security/traffic-filter-rules-including-waf.md) e flag WAF corrispondenti, che indicano anche se la corrispondenza ha generato un blocco. Vuoto se non corrisponde alcuna regola. |
+| *regole* | Nomi delle [regole del filtro del traffico](/help/security/traffic-filter-rules-including-waf.md) e dei flag di WAF corrispondenti, che indicano anche se la corrispondenza ha generato un blocco. Vuoto se non corrisponde alcuna regola. |
 
 
 ## Come accedere ai registri {#how-to-access-logs}
@@ -614,6 +614,12 @@ I clienti con account Splunk possono richiedere tramite ticket di assistenza cli
 La larghezza di banda di rete associata ai registri inviati a Splunk è considerata parte dell&#39;utilizzo di I/O di rete del cliente.
 
 I registri CDN verranno inoltrati a Splunk per richieste di nuovi ticket di supporto; i clienti che hanno già abilitato l’inoltro Splunk potranno aggiungere i registri CDN in futuro.
+
+>[!NOTE]
+>
+>Non è possibile inoltrare a Splunk registri specifici e registri utente specifici.
+>
+>Tutti i registri verranno inoltrati a Splunk, dove eventuali ulteriori filtri possono essere eseguiti dal cliente in base alle sue esigenze.
 
 ### Abilitazione dell’inoltro Splunk {#enabling-splunk-forwarding}
 
