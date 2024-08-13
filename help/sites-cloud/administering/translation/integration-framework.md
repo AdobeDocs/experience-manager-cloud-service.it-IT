@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4f5346200499f125ea986bc094446359ed10bd81
 workflow-type: tm+mt
-source-wordcount: '1462'
-ht-degree: 75%
+source-wordcount: '1481'
+ht-degree: 73%
 
 ---
 
@@ -34,15 +34,20 @@ I seguenti fornitori di servizi di traduzione forniscono un’implementazione de
 
 * [Microsoft](connect-ms-translator.md)
 * [Traduzioni.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
-* [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
-* [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
-* [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
-* [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
-<!-- THIS URL IS 404 * [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html) -->
+* [Memsource](https://exchange.adobe.com/apps/ec/103166/memsource-connector-for-adobe-experience-manager)
+* [XTM Cloud](https://exchange.adobe.com/apps/ec/105037/xtm-connect-for-adobe-experience-manager)
+* [Lingotek](https://exchange.adobe.com/apps/ec/90088/lingotek-collaborative-translation-platform)
+* [RWS](https://exchange.adobe.com/apps/ec/108277/rws-language-cloud)
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
-* [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
+
+>[!NOTE]
+>
+>Per trovare l’elenco più recente dei fornitori di traduzione umana e automatica, consulta queste pagine:
+>
+>* [Traduzione umana AEM](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=aem+human+translation&amp;sort=RELEVANCE)
+>* [Traduzione automatica AEM](https://exchange.adobe.com/apps/browse/ec?q=AEM+machine+translation&amp;product=All&amp;partnerLevel=All&amp;sort=RELEVANCE)
+>
 
 Dopo aver installato un pacchetto di connettori, puoi crearne una configurazione cloud. In genere, è necessario fornire le credenziali per l’autenticazione con il servizio di traduzione. Per informazioni sull&#39;aggiunta di una configurazione cloud per il connettore Microsoft® Translator, vedere [Integrazione con Microsoft® Translator](connect-ms-translator.md).
 
