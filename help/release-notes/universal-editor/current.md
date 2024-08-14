@@ -1,19 +1,20 @@
 ---
-title: Note sulla versione di Universal Editor 2024.06.28
-description: Queste sono le note sulla versione 2024.06.28 di Universal Editor.
+title: Note sulla versione di Universal Editor 2024.08.13
+description: Queste sono le note sulla versione 2024.08.13 di Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: cc94ad2ba42707bb7541217f0225b995f64ad84f
+exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
+source-git-commit: d71d3481004f2429c018c536b3e12784cf597f85
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 1%
+source-wordcount: '369'
+ht-degree: 0%
 
 ---
 
 
-# Note sulla versione di Universal Editor 2024.06.28 {#release-notes}
+# Note sulla versione di Universal Editor 2024.08.13 {#release-notes}
 
-Queste sono le note sulla versione del 28 giugno 2024 di Universal Editor.
+Queste sono le note sulla versione di Universal Editor del 13 agosto 2024.
 
 >[!TIP]
 >
@@ -21,18 +22,19 @@ Queste sono le note sulla versione del 28 giugno 2024 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* **Home**: le pagine recenti vengono visualizzate come elenco, senza immagini di anteprima.
-* **Barra di posizione**: è stata aggiunta la convalida URL avanzata, che impone l&#39;utilizzo degli URL HTTPS e degli hash di supporto negli URL per l&#39;account delle applicazioni instradate tramite hash.
-* **Navigazione tramite tastiera**: la selezione della sovrapposizione pagina è stata scollegata dallo stato attivo della barra delle proprietà per migliorare la navigazione tramite tastiera sulla pagina senza perdere lo stato attivo.
-* **Etichette elemento**: il valore di fallback per le etichette ora utilizza `data-aue-prop` invece di `data-aue-type` per un&#39;identificazione più chiara nelle sovrapposizioni e nella struttura del contenuto.
-* **Editor Rich Text modale**: un pulsante **Annulla** è stato aggiunto al modale dell&#39;editor Rich Text quando lo si apre dal pannello delle proprietà.
-* **Servizio UE sul nodo**: è stato reintrodotto il supporto HTTP per il servizio Universal Editor, in quanto tutte le connessioni HTTPS vengono terminate a livello di Dispatcher.
-* **API per copia interna**: è stata aggiunta un&#39;API al servizio Universal Editor per la copia dei componenti, consentendo la futura introduzione delle opzioni della barra degli strumenti per la copia e la duplicazione dei contenuti.
+* **Tipi di dati personalizzati**: adatta l&#39;editor alle tue esigenze di dati univoci con la possibilità di creare campi personalizzati nel pannello delle proprietà.
+   * Che tu stia sviluppando un selettore di prodotti personalizzato per i casi d’uso di e-commerce o compilando un elenco a discesa con i valori provenienti dai tuoi backend, questa funzione ti offre il controllo necessario sui dati utilizzati dagli autori per comporre i contenuti.
+* **Trascinamento selezione tra contenitori**: maggiore flessibilità nella composizione del layout con la possibilità di spostare i componenti tra contenitori diversi tramite trascinamento all&#39;interno del pannello [Struttura contenuto.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* **Integrazione GitHub ottimizzata**: è stata introdotta la memorizzazione in cache per le risposte GitHub, velocizzando notevolmente il recupero dei tag e di `universal-editor-cors-library`, con conseguente esperienza utente più veloce e fluida.
+* **Pacchetto RPM Managed Services**: in Adobe è ora disponibile un pacchetto RPM per semplificare la distribuzione e la gestione del servizio Universal Editor, semplificando la manutenzione e riducendo il sovraccarico operativo per i servizi gestiti.
+* **Convalida del token IMS configurabile**: per aumentare la flessibilità nella gestione dei token, la convalida del token IMS è ora facoltativa.
+   * Questa opzione di configurazione consente di disabilitare la convalida in base alle esigenze, semplificando le impostazioni del gateway cloud.
+* **Integrazione Splunk**: la registrazione Splunk è stata integrata in Universal Editor Service Express, migliorando il monitoraggio e la diagnostica.
+   * Questa integrazione garantisce un tracciamento efficiente dei registri, operazioni più semplici e una risoluzione più rapida dei problemi.
 
 ## Correzioni di bug {#bug-fixes}
 
-* **Breadcrumb pannello proprietà**: il menu del pannello proprietà per gli elementi nidificati in profondità, che non è rimasto aperto, è stato corretto.
-* **Selettore frammento di contenuto**: il selettore frammento di contenuto è stato migliorato per garantire che rispetti le regole definite nel modello frammento di contenuto o in `data-aue-filter`.
-* **Inserimento componente**: l&#39;elenco per l&#39;inserimento di nuovi componenti che non sono stati aggiornati con precisione dopo il passaggio a un&#39;altra pagina è stato corretto.
-* **Stato pubblicazione**: la gestione degli stati di pubblicazione è stata migliorata per funzionare in modo più coerente.
-* **Correzioni varie**: questa versione contiene anche varie correzioni minori, la pulizia del debito tecnico, miglioramenti della sicurezza e test consolidati per la stabilità e le prestazioni complessive.
+* **Feedback di pubblicazione avanzato**: se la pubblicazione non riesce a causa di autorizzazioni insufficienti, il feedback fornito all&#39;utente durante la pubblicazione è stato migliorato per visualizzare un avviso chiaro, anziché indicare semplicemente un errore.
+* **Gestione URL migliorata**: sono stati risolti i problemi di codifica/decodifica URL errata che causavano errori di pubblicazione.
+* **Gestione accurata dei dati**: è stato risolto un problema a causa del quale i numeri in virgola mobile non venivano memorizzati correttamente come numeri interi, garantendo una gestione precisa dei dati nel contenuto.
+* **Sicurezza e stabilità**: le vulnerabilità di sicurezza nelle immagini Docker sono state corrette e la copertura dei test per i componenti critici come il selettore dei componenti e le breadcrumb è stata implementata, garantendo un&#39;esperienza di editor più sicura, stabile e affidabile.
