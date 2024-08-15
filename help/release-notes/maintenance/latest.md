@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
 workflow-type: tm+mt
 source-wordcount: '1176'
-ht-degree: 17%
+ht-degree: 81%
 
 ---
 
@@ -24,18 +24,18 @@ Con la versione di attivazione della funzione 2024.8.0 verrà fornito il set di 
 
 ### Miglioramenti {#enhancements-17465}
 
-* FORMS-15436 - Gestisce con cura l’eccezione nell’Utilità di pianificazione di Adobe Sign Status.
+* FORMS-15436 - Gestisci con cura l’eccezione nel modulo di pianificazione di Adobe Sign Status.
 * FORMS-15362 - Aggiungi la configurazione per forms-foundation in aemds per abilitare l’accesso.
 * FORMS-15261 - SPA non esegue il rendering nell’editor di Forms.
-* FORMS-15138 - Gestione della compatibilità con le versioni precedenti di dati Double a causa dell’aggiornamento sling commons json.
+* FORMS-15138 - Gestione della compatibilità con le versioni precedenti di dati doppi a causa dell’aggiornamento Sling Commons JSON.
 * FORMS-15113 - Modifica del nome della chiave in sid da visitorId per il tracciamento RUM.
-* FORMS-15103 - Assets allegato in un modulo non viene pubblicato in Edge delivery.
+* FORMS-15103 - Risorse allegate in un modulo non vengono pubblicate in Edge Delivery.
 * FORMS-15082 - Schema JSON da mappare ai componenti del modulo adattivo personalizzato.
 * FORMS-15002 - Registrazione del tipo di modello dei frammenti v1.
-* FORMS-14845 - Supporto per xdpRef nelle basi dei componenti core tramite Forms Manager.
-* FORMS-14840 - Errori del servizio di precompilazione Forms.
-* FORMS-14836 - Migliora l’interfaccia utente di Forms Manager per elencare i modelli di frammenti AF1.
-* FORMS-14834 - Supporto di modelli per frammenti in AF1.
+* FORMS-14845 - Supporto per xdpRef nel modulo delle basi dei componenti core tramite Forms Manager.
+* FORMS-14840 - Errori del servizio di precompilazione dei moduli.
+* FORMS-14836 - Migliora l’interfaccia utente di Forms Manager per elencare i modelli dei frammenti AF1.
+* FORMS-14834 - Supporto dei modelli per i frammenti in AF1.
 * FORMS-14275 - Sovrascrittura della pagina di ringraziamento e del messaggio di ringraziamento nel contenitore Incorpora.
 * FORMS-13623 - Abilita la funzionalità basata sul tempo di salvataggio automatico per V2.
 * FORMS-8651 - Finestra di dialogo di avviso sulla modifica della configurazione del modello dati nella pagina delle proprietà del modulo.
@@ -43,12 +43,12 @@ Con la versione di attivazione della funzione 2024.8.0 verrà fornito il set di 
 * SITES-23285 - API REST per frammenti di contenuto: crea un endpoint per elencare tutte le lingue disponibili.
 * SITES-22857 - API REST per frammenti di contenuto: i campi di enumerazione della casella di controllo non devono consentire l’impostazione di più proprietà su false.
 * SITES-22813 - API REST per frammenti di contenuto: definisci le proprietà min/max per i campi di enumerazione.
-* SITES-22031 - API REST per frammenti di contenuto: ottiene i modelli di frammenti di contenuto consentiti per la cartella di un frammento.
-* SITES-17640 - API REST per frammenti di contenuto: convalida dell’operazione Publish per frammenti di contenuto.
+* SITES-22031 - API REST per frammenti di contenuto: ottieni i modelli di frammenti di contenuto consentiti per la cartella di un frammento.
+* SITES-17640 - API REST per frammenti di contenuto: convalida dell’operazione di pubblicazione del frammento di contenuto.
 * SITES-22677 - API REST per frammenti di contenuto: recupera un elenco semplice di riferimenti discendenti.
 * SITES-22207 - Modello duplicato nella creazione di frammenti di contenuto.
-* SITES-23093 - Evento: aggiungi tag ai payload per gli eventi del modello per frammenti di contenuto.
-* SITES-23092 - Evento: aggiungi tag ai payload per gli eventi dei frammenti di contenuto.
+* SITES-23093 - Eventi: aggiungi tag ai payload per gli eventi del modello per frammenti di contenuto.
+* SITES-23092 - Eventi: aggiungi tag ai payload per gli eventi dei frammenti di contenuto.
 * SITES-22447 - Aggiungi il supporto per l’ereditarietà delle proprietà dei frammenti di esperienza alla scheda Proprietà di base.
 * SITES-12209 - Migliora le prestazioni dell’Editor criteri aggiungendo cq:policy all’indice.
 
@@ -56,39 +56,39 @@ Con la versione di attivazione della funzione 2024.8.0 verrà fornito il set di 
 
 * CQ-4358028 - Impossibile creare il progetto se viene caricata la miniatura.
 * CQ-4357891 - Problema di sequenza di XLIFF esportato.
-* CQ-4357059 - Il completamento del processo di traduzione impiega ore a causare il timeout 503 in AEMaaCS.
+* CQ-4357059 - Il completamento del processo di traduzione impiega ore causando il timeout 503 in AEMaaCS.
 * FORMS-15320 - L’invio di e-mail non funziona nel modulo basato su componenti core.
-* FORMS-15272 - AEM Forms - Il gruppo di caselle di controllo invia solo un valore.
-* FORMS-15269 - Problemi relativi al prodotto dopo l’16461 della versione di manutenzione.
+* FORMS-15272 - AEM Forms: il gruppo di caselle di controllo invia solo un valore.
+* FORMS-15269 - Problemi relativi al prodotto dopo la versione di manutenzione 16461.
 * FORMS-15174 - Problema JsonSchemaParser isValid.
-* FORMS-15095 - Il Textbox Multiline Può Essere Esteso Oltre Ai Pannelli Contenenti In AEM Forms.
-* FORMS-15057 - L’elenco FDM Sharepoint genera un errore di allegati per l’invio > 999.
-* FORMS-15011 - L’editor core causa un errore della console durante l’apertura di un modulo nell’editor.
-* FORMS-14809 - La cartella SDK non viene creata automaticamente all’interno della directory temporanea condivisa.
-* FORMS-14327 - API dei servizi Forms : Estrai dati:- fornisce un codice di risposta 500 quando viene fornito un pdf non interattivo nell’input.
-* FORMS-7475 - L’ordinamento non funziona sulla pagina di creazione dei moduli adattivi.
-* FORMS-3309 - Se durante l’invio di un modulo sono selezionate più opzioni, in un DoR generato viene visualizzata una sola opzione.
-* SITES-23646 - L’endpoint dei modelli GraphQL non riesce per i modelli creati con OpenAPI se i campi contengono valori univoci.
-* SITES-23637 - API REST per frammenti di contenuto: OpenAPI non utilizza il tipo di valore corretto per le enumerazioni.
-* SITES-23573 - API REST per frammenti di contenuto: le relazioni live non vengono rispettate nei frammenti di contenuto GET da UUID.
-* SITES-23535 - API REST per frammenti di contenuto: i campi multipli dell’enumerazione del modello per frammenti di contenuto hanno valori vuoti.
-* SITES-23534 - API REST per i frammenti di contenuto: ClassCastException di convalida dei frammenti di contenuto.
-* SITES-23524 - Adatta l’endpoint dei modelli BFF di GraphQL per supportare campi di enumerazione a più campi.
-* SITES-23467 - API REST per frammenti di contenuto: i modelli di ricerca non riescono a causa di un problema del cursore.
-* SITES-23327 - ArrayIndexOutOfBoundsException in AuditLogTimelineEventProvider durante la descrizione dell’elaborazione dell’evento della sequenza temporale.
-* SITES-23277 - API REST per frammenti di contenuto: la verifica della relazione live del campo per frammenti di contenuto deve essere eseguita solo per le Live Copy.
-* SITES-23232 - La convalida personalizzata non funziona nella nuova interfaccia utente dell’editor CF.
-* SITES-23090 - API REST per frammenti di contenuto: impossibile aggiornare il titolo di un frammento di contenuto bloccato.
-* SITES-22981 - La promozione di un lancio nidificato non profondo non è una pubblicazione.
-* SITES-22870 - PathAttributesHandler.processSrcAttr ArrayIndexOutOfBoundsException.
-* SITES-22814 - API REST per frammenti di contenuto: i valori dei campi dei frammenti di enumerazione delle caselle di controllo devono essere ordinati in base alle chiavi definite nel modello.
-* SITES-22716 - Problema con l’elenco di utilizzo live dei componenti OOTB.
-* SITES-22457 - La promozione di un lancio non profondo non comporta l’aggiornamento del contenuto sorgente.
-* SITES-22449 - Impossibile salvare le modifiche nei frammenti di contenuto dopo l’aggiornamento AEM P20.
-* SITES-22279 - API REST per frammenti di contenuto: nel frammento di contenuto manca l’attributo univoco per i tipi di enumerazione.
-* SITES-22203 - API REST per frammenti di contenuto: allinea le API di gestione in modo che rispondano allo stesso modo per la stessa situazione.
-* SITES-21973 - API REST per frammenti di contenuto: nel modello manca l’attributo univoco per i tipi di enumerazione.
-* SITES-20364 - 302 Reindirizzamenti non funzionanti con il selettore nell’URL.
+* FORMS-15095: la casella di testo su più righe può essere estesa oltre i pannelli contenitori in AEM Forms.
+* FORMS-15057: l’elenco FDM Sharepoint genera un errore negli allegati per l’invio > 999.
+* FORMS-15011: l’editor core causa un errore della console durante l’apertura di un modulo nell’editor.
+* FORMS-14809: la cartella SDK non viene creata automaticamente all’interno della directory temporanea condivisa.
+* FORMS-14327: API del servizio Forms: estrazione dati: fornisce un codice di risposta 500 quando viene fornito un pdf non interattivo nell’input.
+* FORMS-7475: l’ordinamento non funziona sulla pagina di creazione dei moduli adattivi.
+* FORMS-3309: se durante l’invio di un modulo sono selezionate più opzioni, viene visualizzata una sola opzione in un DoR generato.
+* SITES-23646: l’endpoint dei modelli GraphQL non riesce per i modelli creati con OpenAPI se i campi contengono valori univoci.
+* SITES-23637: API REST per frammenti di contenuto: OpenAPI non utilizza il tipo di valore corretto per le enumerazioni.
+* SITES-23573: API REST per frammenti di contenuto: le relazioni live non vengono rispettate nei frammenti di contenuto GET da uuid.
+* SITES-23535: API REST per frammenti di contenuto: i campi multipli dell’enumerazione del modello per frammenti di contenuto hanno valori vuoti.
+* SITES-23534: API REST per frammenti di contenuto: ClassCastException nella convalida dei frammenti di contenuto.
+* SITES-23524: adatta l’endpoint dei modelli BFF di GraphQL per supportare campi di enumerazione nei campi multipli.
+* SITES-23467: API REST per frammenti di contenuto: i modelli di ricerca non riescono a causa di un problema del cursore.
+* SITES-23327: ArrayIndexOutOfBoundsException in AuditLogTimelineEventProvider durante la descrizione dell’elaborazione dell’evento della timeline.
+* SITES-23277: API REST per frammenti di contenuto: la verifica della relazione live del campo per frammenti di contenuto deve essere eseguita solo per le Live Copy.
+* SITES-23232: la convalida personalizzata non funziona nella nuova interfaccia utente dell’editor CF.
+* SITES-23090: API REST per frammenti di contenuto: impossibile aggiornare il titolo di un frammento di contenuto bloccato.
+* SITES-22981: la promozione di un lancio nidificato non profondo non è una pubblicazione.
+* SITES-22870: PathAttributesHandler.processSrcAttr ArrayIndexOutOfBoundsException.
+* SITES-22814: API REST per frammenti di contenuto: i valori dei campi dei frammenti di enumerazione delle caselle di controllo devono essere ordinati in base alle chiavi definite nel modello.
+* SITES-22716: problema con l’elenco di utilizzo live dei componenti OOTB.
+* SITES-22457: la promozione di un lancio non profondo non comporta l’aggiornamento del contenuto sorgente.
+* SITES-22449: impossibile salvare le modifiche nei frammenti di contenuto dopo l’aggiornamento AEM P20.
+* SITES-22279: API REST per frammenti di contenuto: nel frammento di contenuto manca l’attributo univoco per i tipi di enumerazione.
+* SITES-22203: API REST per frammenti di contenuto: allinea le API di gestione in modo che rispondano allo stesso modo per la stessa situazione.
+* SITES-21973: API REST per frammenti di contenuto: nel modello manca l’attributo univoco per i tipi di enumerazione.
+* SITES-20364: reindirizzamenti 302 non funzionanti con il selettore nell’URL.
 * SITES-21198 - VersionPreviewServlet: la pulizia viene eseguita contemporaneamente su tutti i nodi del cluster, causando conflitti di unione e blocchi commit.
 
 ### Problemi noti {#known-issues-17465}
