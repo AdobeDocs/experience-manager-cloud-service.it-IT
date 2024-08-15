@@ -4,9 +4,9 @@ description: Scopri come utilizzare la rete CDN gestita dall’AEM e come indiri
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1555'
 ht-degree: 18%
 
 ---
@@ -178,7 +178,7 @@ Il CDN gestito da AEM aggiunge intestazioni a ogni richiesta con:
 >
 >Se è presente una rete CDN gestita dal cliente, queste intestazioni riflettono la posizione del server proxy CDN del cliente anziché il client effettivo. Pertanto, per la rete CDN gestita dal cliente, le intestazioni di geolocalizzazione devono essere gestite dalla rete CDN del cliente.
 
-I valori per i codici paese sono i codici Alpha-2 descritti [qui](https://en.wikipedia.org/wiki/ISO_3166-1).
+I valori per i codici paese sono i codici Alpha-2 descritti in [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 I valori per i codici continente sono:
 

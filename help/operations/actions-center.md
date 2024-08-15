@@ -4,10 +4,10 @@ description: Sfruttare il Centro operativo per intervenire in modo comodo in cas
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 22d5975a0c4ee180bbcda906b035d306a352b752
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 53%
+ht-degree: 50%
 
 ---
 
@@ -30,7 +30,7 @@ Dalla schermata del Centro azioni è possibile selezionare un programma e un amb
 
 ## Configurazione {#configuration}
 
-Per configurare la ricezione delle notifiche e-mail del Centro azioni, crea i profili di prodotto descritti [in questo articolo](/help/journey-onboarding/notification-profiles.md), ovvero Notifica per problema - Cloud Service e Notifica proattiva - Cloud Service. Assegna inoltre gli ID Adobe appropriati dalla tua organizzazione a tali profili. Questo consente all’amministratore di determinare quali utenti sono qualificati per ricevere queste notifiche e-mail.
+Per configurare le notifiche e-mail del Centro azioni di ricezione, creare i profili di prodotto come descritto in [Profili di notifica](/help/journey-onboarding/notification-profiles.md), ovvero Notifica per incidente - Cloud Service e Notifica proattiva - Cloud Service. Assegna inoltre gli ID Adobe appropriati dalla tua organizzazione a tali profili. Questo consente all’amministratore di determinare quali utenti sono qualificati per ricevere queste notifiche e-mail.
 
 >[!NOTE]
 >Le notifiche e-mail del Centro azioni funzionano a livello di organizzazione e gli abbonati quindi ricevono notifiche per tutti i programmi e gli ambienti all’interno degli stessi.
@@ -65,7 +65,7 @@ AEM as a Cloud Service dispone di diversi tipi di notifiche, ma nel Centro azion
 |---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | Problemi operativi | Problemi critici che richiedono un intervento immediato | Utente assegnato al profilo di prodotto “Notifica per problema - Cloud Service” | X |
 | Consigli proattivi | Ottimizzazioni da pianificare | Utente assegnato al profilo di prodotto “Notifica proattiva - Cloud Service” | X |
-| Stati della pipeline di Cloud Manager | Informazioni sullo stato delle pipeline | Utente con ruoli Proprietario business, Responsabile del programma o Responsabile della distribuzione, casella di controllo &quot;Altri&quot; selezionata in [Preferenze Experience Cloud](https://experience.adobe.com/preferences), come [descritto qui](/help/implementing/cloud-manager/notifications.md). |                           |
+| Stati della pipeline di Cloud Manager | Informazioni sullo stato delle pipeline | Utente con ruoli Proprietario business, Responsabile del programma o Responsabile della distribuzione, casella di controllo &quot;Altri&quot; selezionata in [Preferenze Experience Cloud](https://experience.adobe.com/preferences), vedi [Notifiche](/help/implementing/cloud-manager/notifications.md). |                           |
 
 ## Tipi di notifica supportati {#supported-notification-types}
 

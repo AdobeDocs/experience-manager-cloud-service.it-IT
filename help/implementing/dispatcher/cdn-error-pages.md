@@ -4,9 +4,9 @@ description: Scopri come ignorare la pagina di errore predefinita ospitando file
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ Prima di poter sovrascrivere la pagina di errore predefinita, è necessario effe
 
 1. Creare un file denominato `cdn.yaml` o simile, facendo riferimento alla sezione relativa alla sintassi riportata di seguito.
 
-1. Posizionare il file in una cartella di primo livello denominata *config* o simile, come descritto nell&#39;articolo [config pipeline](/help/operations/config-pipeline.md#folder-structure).
+1. Posizionare il file in una cartella di primo livello denominata *config* o simile, come descritto in [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure).
 
-1. Creare una pipeline di configurazione in Cloud Manager, come descritto nell&#39;articolo [config pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Creare una pipeline di configurazione in Cloud Manager, come descritto in [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Distribuisci la configurazione.
 
@@ -47,7 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
-Per una descrizione delle proprietà al di sopra del nodo dati, consulta l&#39;articolo [config pipeline](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà kind deve essere *CDN* e la proprietà `version` deve essere impostata su *1*.
+Per una descrizione delle proprietà al di sopra del nodo dati, vedi [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà kind deve essere *CDN* e la proprietà `version` deve essere impostata su *1*.
 
 
 | Nome | Proprietà consentite | Significato |

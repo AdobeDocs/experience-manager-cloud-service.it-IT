@@ -4,9 +4,9 @@ description: Scopri come utilizzare la funzione di registrazione per AEM as a Cl
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2831'
 ht-degree: 8%
 
 ---
@@ -628,7 +628,7 @@ Nella richiesta di supporto, i clienti devono indicare:
 * Indirizzo endpoint HEC di tipo Splunk. Questo endpoint deve avere un certificato SSL valido ed essere accessibile al pubblico.
 * Indice Splunk
 * Porta Splunk
-* Token HEC Splunk. Per ulteriori informazioni, vedere [questa pagina](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
+* Token HEC Splunk. Per ulteriori informazioni, vedere [Esempi di Raccolta eventi HTTP](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
 
 Le proprietà di cui sopra devono essere specificate per ciascuna combinazione di programma/tipo di ambiente pertinente. Ad esempio, se un cliente desidera ambienti di sviluppo, staging e produzione, deve fornire tre serie di informazioni, come indicato di seguito.
 

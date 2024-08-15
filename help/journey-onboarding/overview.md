@@ -5,10 +5,10 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 100%
+source-wordcount: '1292'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Congratulazioni per aver scelto AEM as a Cloud Service. Questo documento è il p
 
 ## Introduzione {#introduction}
 
-Adobe Experience Manager è una potente suite di servizi per contenuti componibili che offre rapidamente esperienze personalizzate di forte impatto su qualsiasi canale, consentendo di sbloccare contenuti da tutti e per tutti. **Edge Delivery Services** è l’innovazione più recente di Adobe Experience Manager che consente una velocità eccezionale dei contenuti offrendo esperienze senza pari. Per scoprire come iniziare a utilizzare Edge Delivery Services, consulta [questa pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=it). Per informazioni sull’utilizzo di Edge Delivery Services, consulta la pagina [Tutorial per sviluppatori](https://www.hlx.live/developer/tutorial).
+Adobe Experience Manager è una potente suite di servizi per contenuti componibili che offre rapidamente esperienze personalizzate di forte impatto su qualsiasi canale, consentendo di sbloccare contenuti da tutti e per tutti. **Edge Delivery Services** è l’innovazione più recente di Adobe Experience Manager che consente una velocità eccezionale dei contenuti offrendo esperienze senza pari. Scopri come iniziare a usare i Edge Delivery Services consultando [Panoramica dei Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=it). Per informazioni sull’utilizzo di Edge Delivery Services, consulta la pagina [Tutorial per sviluppatori](https://www.hlx.live/developer/tutorial).
 
 L’onboarding è il processo durante il quale l’amministratore di sistema designato configura AEM as a Cloud Service per l’organizzazione. Il procedimento include il provisioning iniziale delle risorse cloud e l’assegnazione degli utenti ai ruoli in base alle rispettive responsabilità lavorative. In questo modo, ogni membro può collegarsi e accedere alle proprie risorse in AEM as a Cloud Service.
 

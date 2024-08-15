@@ -4,10 +4,10 @@ description: Supporto del sistema di gestione delle immagini per Adobe Experienc
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 100%
+source-wordcount: '1941'
+ht-degree: 93%
 
 ---
 
@@ -60,9 +60,9 @@ Dopo aver predisposto l’organizzazione IMS, il cliente deve configurare il pro
 1. L’amministratore di sistema esegue la configurazione IDP in Admin Console per configurare l’accesso Single Sign-On.
 1. L’amministratore AEM gestisce i gruppi locali, nonché autorizzazioni e privilegi come al solito.
 
-Le informazioni di base su Adobe Identity Management, inclusa la configurazione IDP, sono disponibili [qui](https://helpx.adobe.com/it/enterprise/using/set-up-identity.html).
+Le nozioni di base di Adobe Identity Management, inclusa la configurazione IDP, sono descritte in [Configura identità e Single Sign-On](https://helpx.adobe.com/it/enterprise/using/set-up-identity.html).
 
-L’utilizzo di Enterprise Administration e Admin Console sono trattati [qui](https://helpx.adobe.com/it/enterprise/admin-guide.html).
+L&#39;amministrazione Enterprise e l&#39;utilizzo di Admin Console sono trattati in [Benvenuto nella guida per l&#39;amministrazione di Enterprise e Team](https://helpx.adobe.com/it/enterprise/admin-guide.html).
 
 ### Onboarding degli utenti in Admin Console {#onboarding-users-in-admin-console}
 
@@ -96,27 +96,29 @@ Lo strumento User Sync viene distribuito tramite l’archivio Github di Adobe di
 
 >[!NOTE]
 >
->La versione prerelease **2.4RC1** include il supporto per la creazione di gruppi dinamici ed è disponibile [qui](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
+>È disponibile una versione prerelease **2.4RC1** con supporto per la creazione di gruppi dinamici in [Strumento User Sync v2.4rc1 su GitHub](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
 
 Le funzioni principali di questa versione includono la possibilità di mappare dinamicamente i nuovi gruppi LDAP per l’iscrizione degli utenti in Admin Console, nonché la creazione dinamica di gruppi di utenti.
 
-Ulteriori informazioni sulle nuove funzioni per i gruppi sono disponibili [qui](https://adobe-apiplatform.github.io/user-sync.py/fr/user-manual/advanced_configuration.html#additional-group-options).
+Ulteriori informazioni sulle nuove funzionalità dei gruppi sono disponibili all&#39;indirizzo [Adobe User Sync Tool - Additional Group Options](https://adobe-apiplatform.github.io/user-sync.py/fr/user-manual/advanced_configuration.html#additional-group-options).
 
 **Documentazione di User Sync**
 
-Per ulteriori dettagli, consulta la [documentazione di User Sync](https://adobe-apiplatform.github.io/user-sync.py/it/).
+Consulta:
 
-Lo strumento User Sync deve essere registrato come client UMAPI di Adobe Developer come descritto nella procedura disponibile [qui](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+* [Documentazione di User Sync](https://adobe-apiplatform.github.io/user-sync.py/it/)
 
-La documentazione di Adobe Developer Console è disponibile [qui](https://developer.adobe.com/developer-console/).
+* Lo strumento User Sync deve essere registrato come client UMAPI di Adobe Developer utilizzando la procedura di [Autenticazione per l&#39;accesso API](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)
 
-L’API User Management utilizzata dallo strumento User Sync è descritta [qui](https://adobe-apiplatform.github.io/user-sync.py/it/).
+* la [documentazione di Adobe Developer Console](https://developer.adobe.com/developer-console/)
+
+* API di gestione [utente utilizzata dallo strumento User Sync](https://adobe-apiplatform.github.io/user-sync.py/it/)
 
 ## Configurazione di Adobe Experience as a Cloud Service {#aem-configuration}
 
 >[!NOTE]
 >
->La configurazione di AEM IMS richiesta viene impostata automaticamente durante il provisioning degli ambienti e delle istanze di AEM. Tuttavia, l’amministratore può modificarla in base alle proprie esigenze utilizzando il metodo descritto [qui](/help/implementing/deploying/overview.md).
+>La configurazione di AEM IMS richiesta viene impostata automaticamente durante il provisioning degli ambienti e delle istanze di AEM. Tuttavia, l&#39;amministratore può modificarlo in base alle proprie esigenze. Vedere [Distribuzione in AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 La configurazione di AEM IMS richiesta viene impostata automaticamente durante il provisioning degli ambienti e delle istanze di AEM. Gli amministratori dei clienti possono modificare parte della configurazione in base alle proprie esigenze.
 

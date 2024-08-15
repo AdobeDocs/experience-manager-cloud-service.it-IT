@@ -4,9 +4,9 @@ description: Scopri come configurare le credenziali e l’autenticazione CDN dic
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1266'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Come descritto nella pagina [CDN in AEM as a Cloud Service](/help/implementing/d
 
 Come parte della configurazione, la rete CDN Adobe e la rete CDN cliente devono concordare un valore dell&#39;intestazione HTTP `X-AEM-Edge-Key`. Questo valore viene impostato su ogni richiesta, sulla rete CDN del cliente, prima che venga instradato alla rete CDN dell’Adobe, la quale verifica che il valore sia quello previsto, in modo che possa essere considerato attendibile da altre intestazioni HTTP, incluse quelle che consentono di instradare la richiesta all’origine AEM appropriata.
 
-Al valore *X-AEM-Edge-Key* fanno riferimento le proprietà `edgeKey1` e `edgeKey2` in un file denominato `cdn.yaml` o simile, in una cartella `config` di primo livello. Leggi l&#39;articolo [Pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure) per informazioni dettagliate sulla struttura delle cartelle e su come distribuire la configurazione.
+Al valore *X-AEM-Edge-Key* fanno riferimento le proprietà `edgeKey1` e `edgeKey2` in un file denominato `cdn.yaml` o simile, in una cartella `config` di primo livello. Leggi [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure) per informazioni dettagliate sulla struttura delle cartelle e su come distribuire la configurazione.
 
 La sintassi è descritta di seguito:
 
@@ -54,7 +54,7 @@ data:
           authenticator: edge-auth
 ```
 
-Per una descrizione delle proprietà sopra il nodo `data`, consulta l&#39;articolo [Pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
+Per una descrizione delle proprietà al di sopra del nodo `data`, vedere [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
 
 Altre proprietà includono:
 
@@ -76,7 +76,7 @@ Altre proprietà includono:
 
 ## Rimuovi token API {#purge-API-token}
 
-I clienti possono [eliminare la cache CDN](/help/implementing/dispatcher/cdn-cache-purge.md) utilizzando un token API di rimozione dichiarato. Il token è dichiarato in un file denominato `cdn.yaml` o simile, in una cartella `config` di primo livello. Leggi l&#39;articolo [sulla pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure) per informazioni dettagliate sulla struttura delle cartelle e su come distribuire la configurazione.
+I clienti possono [eliminare la cache CDN](/help/implementing/dispatcher/cdn-cache-purge.md) utilizzando un token API di rimozione dichiarato. Il token è dichiarato in un file denominato `cdn.yaml` o simile, in una cartella `config` di primo livello. Leggi [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure) per informazioni dettagliate sulla struttura delle cartelle e su come distribuire la configurazione.
 
 La sintassi è descritta di seguito:
 
@@ -100,7 +100,7 @@ data:
            authenticator: purge-auth
 ```
 
-Per una descrizione delle proprietà al di sopra del nodo `data`, consulta l&#39;articolo ](/help/operations/config-pipeline.md#common-syntax) della pipeline di configurazione [. Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
+Per una descrizione delle proprietà al di sopra del nodo `data`, vedere [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
 
 Altre proprietà includono:
 
@@ -156,7 +156,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-Per una descrizione delle proprietà al di sopra del nodo `data`, consulta l&#39;articolo ](/help/operations/config-pipeline.md#common-syntax) della pipeline di configurazione [. Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
+Per una descrizione delle proprietà al di sopra del nodo `data`, vedere [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
 
 Inoltre, la sintassi include:
 

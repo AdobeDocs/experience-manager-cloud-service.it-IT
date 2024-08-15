@@ -4,9 +4,9 @@ description: Scopri i passaggi necessari per assicurarti che l’installazione d
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1907'
 ht-degree: 6%
 
 ---
@@ -38,7 +38,7 @@ AEM as a Cloud Service offre molte nuove funzioni e opportunità per gestire i p
 
 Oltre a questi miglioramenti, sono state introdotte diverse differenze tra le installazioni on-premise di AEM e Managed Services Adobe, rispetto ad AEM as a Cloud Service.
 
-L’elenco degli elementi nella tabella seguente è il sottoinsieme delle modifiche più rilevanti per una migrazione ad AEM as a Cloud Service. È possibile consultare l&#39;elenco completo delle modifiche rilevanti [qui](/help/release-notes/aem-cloud-changes.md).
+L’elenco degli elementi nella tabella seguente è il sottoinsieme delle modifiche più rilevanti per una migrazione ad AEM as a Cloud Service. È possibile consultare l&#39;elenco completo delle [modifiche di rilievo apportate ad Adobe Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 <table>
 <thead>
@@ -117,7 +117,7 @@ L’elenco degli elementi nella tabella seguente è il sottoinsieme delle modifi
   <tr>
     <td>Moduli di avvio per flusso di lavoro</td>
     <td></td>
-    <td>Rimuovi dal codice tutti i moduli di avvio dei flussi di lavoro che attivano Flusso di lavoro per risorse di aggiornamento DAM predefinito o personalizzato. <br>Tutte le risorse caricate in AEM as a Cloud Service verranno elaborate dal servizio di elaborazione delle risorse. Per i passaggi personalizzati, vedere <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> flussi di lavoro di elaborazione Post</a> per informazioni su come impostare e configurare flussi di lavoro di post-elaborazione.</td>
+    <td>Rimuovi dal codice tutti i moduli di avvio dei flussi di lavoro che attivano Flusso di lavoro per risorse di aggiornamento DAM predefinito o personalizzato. <br>Tutte le risorse caricate in AEM as a Cloud Service verranno elaborate dal servizio di elaborazione delle risorse. Per i passaggi personalizzati, consulta <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> flussi di lavoro di post-elaborazione</a> su come impostare e configurare flussi di lavoro di post-elaborazione.</td>
   </tr>
   <tr>
     <td>Passaggi rappresentazione personalizzata</td>

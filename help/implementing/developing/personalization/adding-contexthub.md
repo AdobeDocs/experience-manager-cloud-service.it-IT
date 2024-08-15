@@ -4,9 +4,9 @@ description: Aggiungi ContextHub alle pagine per abilitare le funzioni di Contex
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ I candidati all’archivio personalizzato possono definire funzioni aggiuntive c
 >
 >ContextHub non è a conoscenza, per impostazione predefinita, dell’accesso attualmente utilizzato sui server di pubblicazione e tali utenti sono considerati da ContextHub come &quot;Anonimi&quot;.
 >
->Puoi rendere ContextHub consapevole degli utenti connessi caricando l’archivio profili. Vedi [codice di esempio su GitHub qui](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>Puoi rendere ContextHub consapevole degli utenti connessi caricando l’archivio profili. Vedi il codice di esempio: [aem-sample-we-retail su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### Evento ContextHub {#contexthub-eventing}
 

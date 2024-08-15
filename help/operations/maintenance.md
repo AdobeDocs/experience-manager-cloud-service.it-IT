@@ -4,9 +4,9 @@ description: Scopri le attività di manutenzione in AEM as a Cloud Service e com
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2053'
 ht-degree: 30%
 
 ---
@@ -222,11 +222,11 @@ Dichiara un file di configurazione e distribuiscilo come descritto nei passaggi 
 
 **1** Creare un file denominato `mt.yaml` o simile.
 
-**2** Posizionare il file in una cartella di primo livello denominata `config` o simile, come descritto nell&#39;articolo della pipeline [config.](/help/operations/config-pipeline.md#folder-structure)
+**2** Posizionare il file in una cartella di primo livello denominata `config` o simile, come descritto in [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure).
 
 **3** - Dichiara le proprietà nel file di configurazione, che includono:
 
-* alcune proprietà sopra il nodo dati. per una descrizione, vedere l&#39;articolo [config pipeline](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *MaintenanceTasks* e la versione deve essere *1*.
+* alcune proprietà sopra il nodo dati. Per una descrizione, vedere [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *MaintenanceTasks* e la versione deve essere *1*.
 
 * un oggetto dati con `versionPurge` e `auditLogPurge` oggetti.
 

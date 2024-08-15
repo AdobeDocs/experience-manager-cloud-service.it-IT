@@ -5,10 +5,10 @@ exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 100%
+source-wordcount: '1056'
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,7 @@ L’SDK di AEM viene utilizzato per generare e distribuire il codice personalizz
 
 Diverso dall’SDK di AEM, l’**SDK headless** di AEM è un set di librerie che possono essere utilizzate dai client per interagire in modo rapido e semplice con le API di AEM headless tramite HTTP.
 
-Per ulteriori informazioni sull’SDK headless di AEM, consulta la sezione [documentazione qui](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=it).
+Per ulteriori informazioni, consulta [SDK headless per AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=it).
 
 ## Strumenti di sviluppo aggiuntivi {#additional-development-tools}
 

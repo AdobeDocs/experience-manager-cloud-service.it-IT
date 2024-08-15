@@ -5,10 +5,10 @@ feature: Integration
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 81%
+source-wordcount: '593'
+ht-degree: 75%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 81%
 L’integrazione di Adobe Analytics e AEM as a Cloud Service consente di monitorare l’attività della pagina web. L&#39;integrazione richiede:
 
 * utilizzo dell’interfaccia utente touch per creare una configurazione di Analytics in AEM as a Cloud Service. Per integrare Adobe Analytics con AEM as a Cloud Service è necessaria l’autenticazione IMS.
-* aggiunta e configurazione di Adobe Analytics come estensione in [Adobe Launch](#analytics-launch). Per ulteriori dettagli su Adobe Launch, consulta [questa pagina](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=it).
+* aggiunta e configurazione di Adobe Analytics come estensione in [Adobe Launch](#analytics-launch). Per ulteriori dettagli su Adobe Launch, puoi iniziare con la [guida rapida](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=it).
 
 Rispetto alle versioni precedenti di AEM, il supporto del framework non viene fornito nella configurazione di Analytics in AEM as a Cloud Service. Ora invece viene eseguito tramite Adobe Launch, che è lo strumento per la strumentazione di un sito AEM con funzionalità di Analytics (librerie JS). In Adobe Launch, viene creata una proprietà in cui è possibile configurare l&#39;estensione Adobe Analytics e creare regole per inviare dati ad Adobe Analytics. Adobe Launch ha sostituito l’attività di analisi fornita da SiteCatalyst.
 
@@ -43,7 +43,7 @@ I campi presenti nella finestra di configurazione sono i seguenti:
 |---|---|
 | Titolo | Nome della configurazione |
 | Configurazione IMS | Seleziona la configurazione IMS (vedi il capitolo seguente) |
-| Segmento | Opzione per utilizzare un segmento di Analytics definito nella suite di reporting corrente. I rapporti di Analytics vengono filtrati in base al segmento. Per ulteriori dettagli, consulta [questa pagina](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=it). |
+| Segmento | Opzione per utilizzare un segmento di Analytics definito nella suite di reporting corrente. I rapporti di Analytics vengono filtrati in base al segmento. Per ulteriori dettagli, consulta [Informazioni sui segmenti](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=it). |
 | Suite per report | Un archivio in cui puoi inviare dati e richiamare rapporti. Una suite di reporting definisce il reporting indipendente e completo su un sito Web scelto, su un insieme di siti Web o su un sottoinsieme di pagine Web. Puoi visualizzare i rapporti recuperati da una singola suite e modificare questo campo in una configurazione in qualsiasi momento in base alle tue esigenze. |
 
 ### Adobe Analytics con autenticazione IMS {#configuration-parameters-ims}
@@ -68,7 +68,7 @@ Adobe Analytics può essere aggiunto come estensione nella proprietà Launch. È
 
 * Guarda [questo video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html?lang=it) per scoprire come configurare l’estensione Analytics in Launch per un sito di base.
 
-* Consulta [questa pagina](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=it) per informazioni su come creare regole e inviare dati ad Adobe Analytics.
+* Consulta [Aggiungere Adobe Analytics](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=it) per informazioni dettagliate su come creare regole e inviare dati ad Adobe Analytics.
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: Scopri le nozioni di base del caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2897'
 ht-degree: 1%
 
 ---
@@ -245,7 +245,7 @@ Per gli ambienti creati a ottobre 2023 o versioni successive, per memorizzare in
 
 Invia un ticket di supporto se desideri disabilitare questo comportamento.
 
-Per gli ambienti creati prima di ottobre 2023, si consiglia di configurare la proprietà `ignoreUrlParams` della configurazione di Dispatcher come [documentato qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+Per gli ambienti creati prima di ottobre 2023, si consiglia di configurare la proprietà `ignoreUrlParams` della configurazione di Dispatcher; vedere [Configurazione di Dispatcher - Ignorare i parametri URL](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 Esistono due possibilità per ignorare i parametri di marketing. (dove il primo è preferito per ignorare il busting della cache tramite parametri di query):
 

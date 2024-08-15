@@ -4,7 +4,7 @@ description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e l
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2745'
 ht-degree: 4%
@@ -184,7 +184,7 @@ Nello sviluppo locale (utilizzando l&#39;SDK), `/apps` e `/libs` possono essere 
 
 I clienti possono accedere a CRXDE lite nell’ambiente di sviluppo del livello di authoring, ma non in quello di stage o produzione. Impossibile scrivere nell&#39;archivio immutabile (`/libs`, `/apps`) in fase di esecuzione. Se si tenta di eseguire questa operazione, verranno generati errori.
 
-È invece possibile avviare il Browser dell’archivio da AEM as a Cloud Service Developer Console, fornendo una vista in sola lettura nell’archivio per tutti gli ambienti sui livelli di authoring, pubblicazione e anteprima. Ulteriori informazioni sul Browser dell&#39;archivio [qui](/help/implementing/developing/tools/repository-browser.md).
+È invece possibile avviare il Browser dell’archivio da AEM as a Cloud Service Developer Console, fornendo una vista in sola lettura nell’archivio per tutti gli ambienti sui livelli di authoring, pubblicazione e anteprima. Per ulteriori informazioni, vedere [Browser repository](/help/implementing/developing/tools/repository-browser.md).
 
 In AEM as a Cloud Service Developer Console sono disponibili una serie di strumenti per il debug degli ambienti di sviluppo AEM as a Cloud Service per gli ambienti RDE, di sviluppo, di stage e di produzione. L’URL può essere determinato regolando gli URL del servizio Author o Publish nel modo seguente:
 
@@ -194,7 +194,7 @@ Per avviare AEM as a Cloud Service Developer Console in base a un parametro di a
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-Per ulteriori informazioni, vedere [questa pagina](/help/release-notes/home.md).
+Per ulteriori informazioni, vedere [Informazioni sulla versione](/help/release-notes/home.md).
 
 Gli sviluppatori possono generare informazioni sullo stato e risolvere varie risorse.
 

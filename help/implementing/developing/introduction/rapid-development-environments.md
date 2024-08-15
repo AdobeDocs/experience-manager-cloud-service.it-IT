@@ -4,9 +4,9 @@ description: Scopri come utilizzare gli ambienti di sviluppo rapido per le itera
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '4215'
+source-wordcount: '4241'
 ht-degree: 4%
 
 ---
@@ -153,7 +153,7 @@ Per gli ambienti in cui nessun utente può eseguire il comando di configurazione
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * È possibile cercare il proprio ID organizzazione utilizzando il metodo [descritto qui.](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
+   * Puoi cercare il tuo ID organizzazione utilizzando il metodo documentato in [Visualizza ID organizzazione](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. Quindi, configura l’ID del programma:
 
@@ -167,7 +167,7 @@ Per gli ambienti in cui nessun utente può eseguire il comando di configurazione
 
    `aio login`
 
-   Per questi passaggi è necessario essere membri del profilo di prodotto **Sviluppatore - Cloud Service** di Cloud Manager. Vedi [questa pagina](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) per ulteriori dettagli.
+   Per questi passaggi è necessario essere membri del profilo di prodotto **Sviluppatore - Cloud Service** di Cloud Manager. Per ulteriori dettagli, vedere [Assegnazione dei membri del gruppo ai profili di prodotto di Cloud Manager - Assegnazione del profilo di prodotto sviluppatore](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
 
 Per ulteriori informazioni e dimostrazioni, guarda il video tutorial [su come impostare un RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 </details>
@@ -1005,7 +1005,7 @@ Al momento della creazione, gli RDE vengono impostati sulla versione di Adobe Ex
 
 ### Errori relativi ad autorizzazioni insufficienti {#insufficient-permissions}
 
-Per utilizzare il plug-in RDE, è necessario essere membri del profilo di prodotto Cloud Manager **Developer - Cloud Service**. Vedi [questa pagina](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) per ulteriori dettagli.
+Per utilizzare il plug-in RDE, è necessario essere membri del profilo di prodotto Cloud Manager **Developer - Cloud Service**. Per ulteriori dettagli, vedere [Assegnazione dei membri del gruppo ai profili di prodotto di Cloud Manager - Assegnazione del profilo di prodotto sviluppatore](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
 
 In alternativa, puoi confermare di disporre di questo ruolo di sviluppatore se puoi accedere alla console per sviluppatori eseguendo questo comando:
 

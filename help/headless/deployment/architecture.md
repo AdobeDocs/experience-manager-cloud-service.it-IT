@@ -4,10 +4,10 @@ description: Scopri l’architettura di alto livello di Adobe Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Un ambiente AEM tipico è costituito da un servizio di authoring, un servizio di
 
 * Il **Dispatcher** è un server web statico potenziato con il modulo dispatcher AEM. Fornisce funzionalità di caching e un ulteriore livello di sicurezza. Il **Dispatcher** è posto davanti ai servizi di **pubblicazione** e **anteprima**.
 
-All’interno di un programma AEM as a Cloud Service puoi avere diversi ambienti: Dev, Stage e Prod. Ogni ambiente ha il proprio servizio specifico di **authoring**, **pubblicazione** e **anteprima**. Ulteriori informazioni sulla gestione degli [ambienti qui](/help/implementing/cloud-manager/manage-environments.md).
+All’interno di un programma AEM as a Cloud Service puoi avere diversi ambienti: Dev, Stage e Prod. Ogni ambiente ha il proprio servizio specifico di **authoring**, **pubblicazione** e **anteprima**. Per ulteriori informazioni, consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Modello di pubblicazione di authoring
 

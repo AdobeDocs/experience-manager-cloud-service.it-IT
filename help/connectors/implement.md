@@ -4,10 +4,10 @@ description: Scopri i connettori, cosa possono fare e come implementare questi p
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 96%
+source-wordcount: '936'
+ht-degree: 94%
 
 ---
 
@@ -60,7 +60,7 @@ Per supportare le distribuzioni continue, i pacchetti AEM as a Cloud Service, di
 * `/apps`
 * `/content` e `/conf`
 
-I connettori devono attenersi alle presenti linee guida sui pacchetti, descritte in [questo articolo](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Anche i connettori esistenti devono essere riadattati per adeguarsi.
+I connettori devono attenersi alle presenti linee guida per la creazione di pacchetti, descritte in [Struttura di progetto AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Anche i connettori esistenti devono essere riadattati per adeguarsi.
 
 Inoltre, solo Adobe dovrebbe scrivere il codice in `/libs`, con clienti e partner che scrivono in `/apps`.
 

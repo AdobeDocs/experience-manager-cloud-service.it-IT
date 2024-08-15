@@ -4,10 +4,10 @@ description: Dispatcher è un livello di memorizzazione in cache e sicurezza dav
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 94%
+source-wordcount: '222'
+ht-degree: 85%
 
 ---
 
@@ -40,4 +40,4 @@ La richiesta di query persistenti viene eseguita su un endpoint diverso. Nella c
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-È possibile richiedere query persistenti utilizzando `GET`, memorizzando nella cache la risposta a livello di Dispatcher e CDN. Ulteriori dettagli sulla memorizzazione in cache e sull’annullamento della validità della cache sono disponibili [qui](/help/implementing/dispatcher/caching.md).
+È possibile richiedere query persistenti utilizzando `GET`, memorizzando nella cache la risposta a livello di Dispatcher e CDN. Ulteriori dettagli sul caching e sull&#39;annullamento della validità della cache sono disponibili in [Introduzione al caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).

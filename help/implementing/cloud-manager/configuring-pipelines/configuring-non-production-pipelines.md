@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 74%
+source-wordcount: '1403'
+ht-degree: 75%
 
 ---
 
@@ -116,7 +116,7 @@ Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.m
 Una distribuzione mirata distribuisce il codice solo per parti selezionate dell’applicazione AEM. In tale distribuzione è possibile scegliere di **Includere** uno dei seguenti tipi di codice:
 
 * **Configurazione** - Configura le impostazioni per varie funzionalità nell&#39;ambiente AEM.
-   * Consulta l&#39;articolo [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md) per un elenco delle configurazioni supportate, che include l&#39;inoltro del registro, le attività di manutenzione correlate all&#39;eliminazione e varie configurazioni CDN, e per gestirle nel tuo archivio in modo che vengano distribuite correttamente.
+   * Consulta [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md) per un elenco delle configurazioni supportate, che include l&#39;inoltro del registro, le attività di manutenzione correlate all&#39;eliminazione e varie configurazioni CDN, e per gestirle nel tuo archivio in modo che vengano distribuite correttamente.
    * Quando si esegue una pipeline di distribuzione di destinazione, le configurazioni vengono distribuite, purché vengano salvate nell’ambiente, nell’archivio e nel ramo definiti nella pipeline.
    * In qualsiasi momento può essere presente una sola pipeline di configurazione per ogni ambiente.
 * **Codice front-end**: configura JavaScript e CSS per il front-end dell&#39;applicazione AEM.

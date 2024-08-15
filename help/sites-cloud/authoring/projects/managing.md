@@ -5,10 +5,10 @@ exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 82%
+source-wordcount: '876'
+ht-degree: 81%
 
 ---
 
@@ -92,7 +92,7 @@ Per aggiungere elementi a un riquadro:
 
    ![Aggiungere un elemento a un riquadro](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Aggiungi un elemento alla tessera come faresti quando crei una tessera. I riquadri di progetto sono descritti [qui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In questo esempio è stato aggiunto un altro flusso di lavoro.
+1. Aggiungi un elemento alla tessera come faresti quando crei una tessera. Per ulteriori dettagli, vedere [Riquadri progetto](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In questo esempio è stato aggiunto un altro flusso di lavoro.
 
 ### Apertura di un riquadro {#opening-a-tile}
 

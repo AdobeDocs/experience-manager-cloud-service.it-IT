@@ -4,10 +4,10 @@ description: Comprendi l’autenticazione necessaria per le query remote GraphQL
 feature: Headless, Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 100%
+source-wordcount: '231'
+ht-degree: 96%
 
 ---
 
@@ -41,4 +41,4 @@ Tutte le richieste effettuate utilizzando il token di accesso verranno effettuat
 
 Ciò significa che dovrai verificare che l’account utente disponga delle autorizzazioni necessarie per eseguire le query GraphQL.
 
-Puoi controllare le autorizzazioni tramite GraphiQL, sull’istanza locale. Maggiori dettagli sulle [autorizzazioni sono disponibili qui](/help/headless/security/permissions.md).
+Puoi controllare le autorizzazioni tramite GraphiQL, sull’istanza locale. Per ulteriori dettagli vedi [Considerazioni sulle autorizzazioni per contenuti headless](/help/headless/security/permissions.md).

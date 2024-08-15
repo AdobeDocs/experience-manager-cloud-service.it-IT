@@ -4,9 +4,9 @@ description: Questa pagina descrive come creare e gestire i canali in Screens as
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1102'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ Sono disponibili i seguenti modelli durante l&#39;utilizzo della procedura guida
 
 Questa funzionalità consente di definire una pianificazione di attivazione predefinita per un canale e di utilizzarla per impostazione predefinita per ogni assegnazione di una visualizzazione. Questo fornisce un metodo in modo che non sia necessario ripetere la complicata definizione della pianificazione.
 
-1. Passare al provider di servizi Screens da [qui](https://experience.adobe.com/screens).
+1. Passare a [Provider servizi Screens](https://experience.adobe.com/screens).
 
 ### Creare dettagli di assegnazione predefiniti per un canale {#create-default}
 

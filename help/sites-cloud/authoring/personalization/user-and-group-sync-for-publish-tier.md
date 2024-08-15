@@ -5,10 +5,10 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 54159c25b60277268ade16b437891f268873fecf
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 66%
+source-wordcount: '1343'
+ht-degree: 64%
 
 ---
 
@@ -129,7 +129,7 @@ una richiesta all’Assistenza clienti che indica il programma e gli ambienti ap
 
 ## Autorizzazioni (gruppi di utenti chiusi) {#permissions-closed-user-groups}
 
-I criteri di accesso al livello di pubblicazione, denominati anche gruppi di utenti chiusi, sono definiti nell’autore AEM come [qui descritto](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Per limitare alcune sezioni o pagine di un sito Web a determinati utenti, applica i CUG necessari utilizzando l’autore AEM, come descritto qui, e replicali sul livello di pubblicazione.
+I criteri di accesso al livello Publish, denominati anche gruppi di utenti chiusi, sono definiti nell&#39;autore AEM. Vedere [Creazione di un gruppo di utenti chiuso](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Per limitare alcune sezioni o pagine di un sito Web a determinati utenti, applica i CUG necessari utilizzando l’autore AEM, come descritto qui, e replicali sul livello di pubblicazione.
 
 * Se gli utenti effettuano l&#39;accesso autenticandosi con un provider di identità (IdP) utilizzando SAML, il gestore di autenticazione identificherà l&#39;appartenenza al gruppo degli utenti (che devono corrispondere ai CUG sul livello di pubblicazione) e manterrà l&#39;associazione tra l&#39;utente e il gruppo attraverso un record dell&#39;archivio
 * Se l&#39;accesso viene eseguito senza l&#39;integrazione IdP, il codice personalizzato può applicare le stesse relazioni di struttura dell&#39;archivio.

@@ -4,7 +4,7 @@ description: Questo documento descrive i passaggi consigliati per caricare un SP
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
@@ -362,7 +362,7 @@ Per abilitare la modifica all’interno dell’AEM per questo esempio di SPA, so
 
 ## Limitazioni del framework {#framework-limitations}
 
-Il componente RemotePage prevede che l&#39;implementazione fornisca un manifesto di risorse come quello [trovato qui](https://github.com/shellscape/webpack-manifest-plugin). Il componente RemotePage, tuttavia, è stato testato per funzionare solo con il framework React (e Next.js tramite il componente remote-page-next ) e pertanto non supporta il caricamento remoto di applicazioni da altri framework, come ad Angular.
+Il componente RemotePage prevede che l&#39;implementazione fornisca un manifesto delle risorse come [webpack-manifest-plugin su GitHub](https://github.com/shellscape/webpack-manifest-plugin). Il componente RemotePage, tuttavia, è stato testato per funzionare solo con il framework React (e Next.js tramite il componente remote-page-next ) e pertanto non supporta il caricamento remoto di applicazioni da altri framework, come ad Angular.
 
 ## Risorse aggiuntive {#additional-resources}
 

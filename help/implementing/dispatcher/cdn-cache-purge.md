@@ -4,9 +4,9 @@ description: Scopri come rimuovere gli oggetti memorizzati in cache dalla cache 
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 # Eliminazione della cache CDN {#cdn-purge-cache}
 
 La rimozione rimuove un oggetto dalla cache CDN di Adobe, determinando richieste future che procedono all’origine come mancanti nella cache, anziché essere servite dalla cache.
-AEM as a Cloud Service consente di configurare un token API di rimozione, che può quindi essere utilizzato nelle chiamate API di rimozione. Leggi l&#39;articolo [Configurazione delle credenziali CDN e dell&#39;autenticazione](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) per scoprire come configurare questo token utilizzando le direttive di autenticazione della pipeline di configurazione di Cloud Manager.
+AEM as a Cloud Service consente di configurare un token API di rimozione, che può quindi essere utilizzato nelle chiamate API di rimozione. Leggi [Configurazione delle credenziali CDN e dell&#39;autenticazione](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) per scoprire come configurare questo token utilizzando le direttive di autenticazione della pipeline di configurazione di Cloud Manager.
 
 Sono supportate tre varianti di eliminazione:
 
@@ -75,4 +75,4 @@ Tenere presente che l&#39;intestazione `X-AEM-Purge` deve includere il valore &#
 
 ## Interazioni con il livello Apache/Dispatcher {#apache-layer}
 
-Come descritto nell&#39;[articolo sul flusso di distribuzione dei contenuti](/help/implementing/dispatcher/overview.md), la rete CDN recupera il contenuto dal livello Apache/Dispatcher, se la cache è scaduta. Ciò significa che prima di eliminare una risorsa dalla rete CDN, è necessario assicurarsi che una nuova versione del contenuto sia disponibile anche in Dispatcher. Per ulteriori dettagli vedi anche [Annullamento della validità della cache di Dispatcher](/help/implementing/dispatcher/caching.md#disp).
+Come descritto in [Flusso di distribuzione dei contenuti](/help/implementing/dispatcher/overview.md), la rete CDN recupera il contenuto dal livello Apache/Dispatcher, se la cache è scaduta. Ciò significa che prima di eliminare una risorsa dalla rete CDN, è necessario assicurarsi che una nuova versione del contenuto sia disponibile anche in Dispatcher. Per ulteriori dettagli vedi anche [Annullamento della validità della cache di Dispatcher](/help/implementing/dispatcher/caching.md#disp).

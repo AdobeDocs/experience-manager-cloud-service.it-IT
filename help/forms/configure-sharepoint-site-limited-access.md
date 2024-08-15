@@ -4,10 +4,10 @@ Description: Learn how to configure SharePoint Site with limited access using th
 keywords: Come configurare il sito SharePoint con accesso limitato?, Configurare SharePoint con accesso limitato, Utilizzare l'ambito di autorizzazione per limitare l'accesso al sito SharePoint.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 4962c058e2cc2135dd3626655ba7b21dbdcbd455
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 2%
+source-wordcount: '817'
+ht-degree: 3%
 
 ---
 
@@ -52,7 +52,7 @@ Per informazioni su come recuperare `Client ID`, `Client Secret` e `Tenant ID` p
 
 Per utilizzare l&#39;autorizzazione API `Sites.Selected` è necessaria un&#39;applicazione registrata nel portale di Azure con le autorizzazioni appropriate impostate per i siti SharePoint Online. Questa configurazione garantisce che l’applicazione disponga dell’autorizzazione necessaria per interagire con il sito SharePoint all’interno dell’ambito definito, fornendo in tal modo l’accesso limitato richiesto.
 
-Fare riferimento all&#39;[articolo](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) per istruzioni sullo sviluppo di applicazioni che utilizzano le autorizzazioni `Sites.Selected` per SharePoint Online Sites.
+Per istruzioni sullo sviluppo di applicazioni che utilizzano le autorizzazioni `Sites.Selected` per Sites SharePoint Online, consulta l&#39;[articolo del blog - Sviluppo di applicazioni che utilizzano le autorizzazioni Sites.Selected per i siti SPO](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476).
 
 ### Imposta l’ambito di autorizzazione all’istanza AEM
 

@@ -4,9 +4,9 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3c546a05cf91dd8dcba39e42cd0f19857713f130
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1314'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Prima di configurare il traffico sulla rete CDN, è necessario effettuare le seg
 
 1. Creare un file denominato `cdn.yaml` o simile, facendo riferimento ai vari snippet di configurazione nelle sezioni seguenti.
 
-   Tutti i snippet hanno queste proprietà comuni, descritte nell&#39;articolo [Pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su *1*.
+   Tutti i frammenti hanno queste proprietà comuni, descritte in [Pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su *1*.
 
    ```
    kind: "CDN"
@@ -48,9 +48,9 @@ Prima di configurare il traffico sulla rete CDN, è necessario effettuare le seg
      envTypes: ["dev"]
    ```
 
-1. Posiziona il file in un punto qualsiasi della cartella di primo livello denominata *config* o simile, come descritto nell&#39;articolo [Pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure).
+1. Posizionare il file in una cartella di primo livello denominata *config* o simile, come descritto in [Pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure).
 
-1. Creare una pipeline di configurazione in Cloud Manager, come descritto nell&#39;articolo [Pipeline di configurazione](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Creare una pipeline di configurazione in Cloud Manager, come descritto in [Pipeline di configurazione](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Distribuisci la configurazione.
 

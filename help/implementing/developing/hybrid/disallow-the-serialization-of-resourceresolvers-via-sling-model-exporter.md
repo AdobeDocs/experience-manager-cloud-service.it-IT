@@ -4,9 +4,9 @@ description: Non consentire la serializzazione di ResourceResolver tramite Sling
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '529'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 La funzione Sling Model Exporter consente di serializzare gli oggetti Sling Models in formato JSON. Questa funzione è ampiamente utilizzata in quanto consente all’SPA (applicazioni a pagina singola) di accedere facilmente ai dati dell’AEM. Sul lato dell’implementazione, per serializzare questi oggetti viene utilizzata la libreria Jacson Databind.
 
-La serializzazione è un&#39;operazione ricorsiva. Partendo da un &quot;oggetto principale&quot;, esegue un&#39;iterazione ricorsiva in tutti gli oggetti idonei e serializza questi e i relativi elementi secondari. Puoi trovare una descrizione dei campi serializzati in [questo articolo](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
+La serializzazione è un&#39;operazione ricorsiva. Partendo da un &quot;oggetto principale&quot;, esegue un&#39;iterazione ricorsiva in tutti gli oggetti idonei e serializza questi e i relativi elementi secondari. È possibile trovare una descrizione dei campi serializzati nell&#39;articolo [Jackson - Decide quali campi vengono serializzati/deserializzati](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
 
 Questo approccio serializza tutti i tipi di oggetti in JSON e naturalmente può anche serializzare un oggetto Sling `ResourceResolver`, se è coperto dalle regole di serializzazione. Si tratta di un problema, in quanto il servizio `ResourceResolver` (e quindi anche l&#39;oggetto del servizio che lo rappresenta) contiene informazioni potenzialmente riservate che non devono essere divulgate. Ad esempio:
 

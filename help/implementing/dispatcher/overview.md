@@ -4,10 +4,10 @@ description: Ulteriori informazioni sul flusso di dati per la distribuzione dei 
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 93%
+ht-degree: 87%
 
 ---
 
@@ -36,4 +36,4 @@ Le sezioni seguenti forniscono ulteriori dettagli sulla distribuzione dei conten
 * [Memorizzazione in cache](/help/implementing/dispatcher/caching.md)
 
 
-Sono disponibili informazioni sulla replica dal servizio di authoring al servizio di pubblicazione [qui](/help/operations/replication.md).
+Per informazioni sulla replica dal servizio di authoring al servizio di pubblicazione, vedere [Replica](/help/operations/replication.md).

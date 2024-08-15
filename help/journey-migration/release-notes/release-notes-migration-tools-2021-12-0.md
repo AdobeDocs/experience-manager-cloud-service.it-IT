@@ -4,10 +4,10 @@ description: Note sulla versione 2021.12.0 degli strumenti di migrazione in AEM 
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 45%
+ht-degree: 38%
 
 ---
 
@@ -16,7 +16,8 @@ ht-degree: 45%
 Questa pagina illustra le note sulla versione di AEM as a Cloud Service 2021.12.0 per gli strumenti di migrazione.
 
 >[!NOTE]
->Per visualizzare le note sulla versione corrente di Adobe Experience Manager as a Cloud Service, fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=it).
+>
+>Per le ultime note sulla versione, consulta [Note sulla versione corrente di Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Analisi delle best practice {#bpa-release}
 

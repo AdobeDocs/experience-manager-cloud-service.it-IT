@@ -4,9 +4,9 @@ description: Questa pagina descrive come accedere a Screens Services Provider.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '382'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ Nella sezione seguente viene illustrato come configurare e configurare il provid
 
 Per configurare il provider di servizi Screens, attenersi alla procedura descritta di seguito.
 
-1. Passare al provider di servizi Screens da [qui](https://experience.adobe.com/screens).
+1. Passare a [Provider servizi Screens](https://experience.adobe.com/screens).
 
    >[!CAUTION]
    >Se hai accesso a più organizzazioni, assicurati di aver effettuato l’accesso a quella corretta. Per cambiare organizzazione, fai clic sul nome dell’organizzazione nell’angolo in alto a destra della schermata e scegli l’organizzazione a cui desideri accedere.

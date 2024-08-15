@@ -4,9 +4,9 @@ description: Scopri come personalizzare i componenti core CIF dell’AEM. Il tut
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: ef58cf5b216ef308cc65436f2eed2e500fb2bd96
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2300'
 ht-degree: 9%
 
 ---
@@ -175,7 +175,7 @@ Utilizzare quindi un IDE di GraphQL per verificare che l&#39;attributo `eco_frie
 
    >[!TIP]
    >
-   > Ulteriori informazioni su [Adobe Commerce GraphQL qui](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   > Per ulteriori informazioni, vedere [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Aggiornare il modello Sling per Product Teaser {#updating-sling-model-product-teaser}
 
@@ -385,7 +385,7 @@ In questo caso, desideri applicare un banner sopra il teaser per indicare che il
 
    Quando si chiama un metodo Sling Model in HTL, la parte `get` e `is` del metodo viene eliminata e la prima lettera viene convertita in minuscolo. `isShowBadge()` diventa `.showBadge` e `isEcoFriendly` diventa `.ecoFriendly`. In base al valore booleano restituito da `.isEcoFriendly()` determina se `<span>Eco Friendly</span>` è visualizzato.
 
-   Ulteriori informazioni su `data-sly-test` e altre [istruzioni di blocco HTL sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
+   Ulteriori informazioni su `data-sly-test` e altre istruzioni di blocco HTL sono disponibili in [Specifica HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
 
 1. Salva le modifiche e distribuisci gli aggiornamenti a AEM utilizzando le tue competenze Maven, da un terminale della riga di comando:
 
@@ -479,7 +479,7 @@ A questo punto, la logica per la visualizzazione del badge **Rispettoso dell&#39
 
 ## Complimenti {#congratulations}
 
-Hai personalizzato il tuo primo componente AEM CIF. Scarica [i file della soluzione completati qui](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+Hai personalizzato il tuo primo componente AEM CIF. Puoi [scaricare i file della soluzione qui](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## Sfida bonus {#bonus-challenge}
 
