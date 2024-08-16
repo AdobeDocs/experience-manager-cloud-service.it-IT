@@ -4,10 +4,10 @@ description: Scopri le nozioni di base sull’accesso e la navigazione nell’Ed
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 58c58243dc98a21161afe0976da4dcdc235da0d3
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 40%
+source-wordcount: '1576'
+ht-degree: 36%
 
 ---
 
@@ -137,7 +137,7 @@ La barra della posizione mostra l’indirizzo della pagina che stai modificando.
 
 >[!TIP]
 >
->Usa il tasto di scelta rapida `L` per aprire la barra degli indirizzi.
+>Utilizzare il tasto di scelta rapida `l` (la lettera l) per aprire la barra degli indirizzi.
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ In modalità anteprima, la pagina viene riprodotta nell’editor come verrebbe v
 
 >[!TIP]
 >
->Utilizzare il tasto di scelta rapida `P` per passare alla modalità anteprima e viceversa.
+>Utilizzare il tasto di scelta rapida `p` per passare alla modalità anteprima e viceversa.
 
 #### Apri anteprima app {#open-app-preview}
 
@@ -185,7 +185,11 @@ Seleziona l’icona di anteprima dell’app aperta per aprire la pagina che stai
 
 >[!TIP]
 >
->Usa il tasto di scelta rapida `O` (la lettera O) per aprire l’anteprima dell’app.
+>Utilizzare il tasto di scelta rapida `o` (la lettera o) per aprire l&#39;anteprima dell&#39;app.
+
+>[!TIP]
+>
+>L&#39;URL di anteprima per l&#39;app [ può essere personalizzato.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
 
 #### Pubblicazione {#publish}
 
@@ -196,6 +200,14 @@ Seleziona il pulsante Pubblica per pubblicare le modifiche al contenuto live per
 >[!TIP]
 >
 >Per ulteriori informazioni sulla pubblicazione con Universal Editor, vedere il documento [Pubblicazione di contenuti con Universal Editor](publishing.md).
+
+#### Puntini di sospensione {#ellipsis}
+
+Altre opzioni standard sono accessibili tramite il pulsante con i puntini di sospensione.
+
+![Pulsante Puntini di sospensione](assets/ellipsis.png)
+
+Ad esempio, la possibilità di annullare la pubblicazione di una pagina (ovvero di annullare l&#39;azione del pulsante [**Publish**](#publish)) è accessibile tramite il pulsante con i puntini di sospensione.
 
 #### Pulsanti aggiuntivi {#additional-toolbar-buttons}
 
@@ -216,7 +228,7 @@ Se l&#39;editor è in modalità [anteprima,](#preview-mode) il contenuto sarà n
 
 La barra delle proprietà è sempre presente lungo il lato destro dell’editor. A seconda della modalità, può mostrare i dettagli di un componente selezionato nel contenuto o la gerarchia dei contenuti della pagina.
 
-![Barra delle proprietà](assets/component-rail.png)
+![Barra delle proprietà](assets/properties-rail.png)
 
 #### Modalità proprietà {#properties-mode}
 
@@ -232,7 +244,7 @@ Non tutti i componenti hanno dettagli che possono essere visualizzati e/o modifi
 
 >[!TIP]
 >
->Usa il tasto di scelta rapida `D` per passare alla modalità proprietà.
+>Usa il tasto di scelta rapida `d` per passare alla modalità proprietà.
 
 #### Modalità struttura contenuto {#content-tree-mode}
 
@@ -246,21 +258,21 @@ Quando si seleziona un elemento nella struttura del contenuto, l’editor scorre
 
 >[!TIP]
 >
->Usa il tasto di scelta rapida `F` per passare alla modalità struttura contenuto.
+>Usa il tasto di scelta rapida `f` per passare alla modalità struttura contenuto.
 
-##### Modifica {#edit}
+##### Apri nell’editor di frammenti di contenuto {#edit}
 
-Durante la modifica, le opzioni per il componente selezionato vengono visualizzate nella barra delle proprietà, dove è possibile modificarlo. Se il componente selezionato è un frammento di contenuto, puoi anche selezionare il pulsante Modifica.
+Durante la modifica, le opzioni per il componente selezionato vengono visualizzate nella barra delle proprietà, dove è possibile modificarlo. Se il componente selezionato è un frammento di contenuto, è inoltre possibile selezionare il pulsante **Apri in CF Editor**.
 
-![Icona Modifica](assets/edit.png)
+![Apri nell&#39;icona Editor CF](assets/open-in-cf-editor.png)
 
-Toccando o facendo clic sul pulsante Modifica si apre l&#39;[Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in una nuova scheda. Questo consente di accedere a tutte le funzionalità dell’Editor frammento di contenuto per modificare il frammento di contenuto associato.
+Toccando o facendo clic sul pulsante **Apri in CF Editor** si apre l&#39;[Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in una nuova scheda. Questo ti consente di accedere a tutte le funzionalità dell’editor di frammenti di contenuto per modificare il frammento di contenuto associato.
 
 A seconda delle esigenze del flusso di lavoro, può essere utile modificare il frammento di contenuto nell’editor universale o direttamente nell’editor frammento di contenuto.
 
 >[!TIP]
 >
->Utilizza il tasto di scelta rapida `E` per modificare un componente selezionato.
+>Utilizzare il tasto di scelta rapida `e` per aprire un frammento di contenuto selezionato nell&#39;editor frammenti di contenuto.
 
 ##### Aggiungi {#add}
 
@@ -274,7 +286,7 @@ Toccando o facendo clic sul pulsante Aggiungi si apre un menu a discesa dei comp
 
 >[!TIP]
 >
->Utilizzare il tasto di scelta rapida `A` per aggiungere un componente a un componente contenitore selezionato.
+>Utilizzare il tasto di scelta rapida `a` per aggiungere un componente a un componente contenitore selezionato.
 
 ##### Elimina {#delete}
 

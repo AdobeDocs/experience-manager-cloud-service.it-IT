@@ -4,10 +4,10 @@ description: Scopri i campi e i tipi di componenti che possono essere modificati
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
+source-git-commit: 9e808f2d4b57d6b1043f2e3e6300a1e37f3cbb35
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 12%
+source-wordcount: '1183'
+ht-degree: 11%
 
 ---
 
@@ -302,6 +302,12 @@ Il selettore Frammento di contenuto può essere utilizzato per selezionare un [F
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
 | `variationName` | `string` | Nome della variabile per memorizzare la variante selezionata. Se non è definito, non viene visualizzato alcun selettore varianti | No |
+
+>[!NOTE]
+>
+>L&#39;editor universale [convalida i campi dei frammenti di contenuto in base ai relativi modelli](/help/assets/content-fragments/content-fragments-models.md#validation), consentendo di applicare le regole di integrità dei dati, ad esempio i pattern regex e i vincoli di univocità.
+>
+>In questo modo, il contenuto soddisfa i requisiti aziendali specifici prima della pubblicazione.
 
 >[!BEGINTABS]
 

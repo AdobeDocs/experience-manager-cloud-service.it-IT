@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3922375b52ae64d08cdc64d475a95e8bd240a587
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 26%
+source-wordcount: '1297'
+ht-degree: 24%
 
 ---
 
@@ -33,7 +33,7 @@ A questo scopo, l’editor universale offre agli autori di contenuti un’interf
 
 ## Modifica del contenuto {#editing-content}
 
-La modifica del contenuto è semplice e intuitiva. Quando passi il mouse sul contenuto nell’editor, il contenuto modificabile viene evidenziato con una casella blu.
+La modifica del contenuto è semplice e intuitiva. Quando passi il mouse sul contenuto nell’editor, il contenuto modificabile viene evidenziato con un sottile contorno blu.
 
 ![Il contenuto modificabile viene evidenziato da una casella blu](assets/editable-content.png)
 
@@ -49,7 +49,7 @@ Per modificare il testo nella posizione desiderata, fai doppio clic o tocca due 
 
 ![Modifica del contenuto](assets/editing-content.png)
 
-Per salvare le modifiche, premere Invio/Ritorna o selezionare all&#39;esterno della casella.
+Il contorno blu sottile si trasforma in un contorno blu pesante per indicare la selezione e viene visualizzato un cursore. Apportare le modifiche e premere Invio/Ritorna o selezionare all&#39;esterno della casella di testo per salvare le modifiche.
 
 Quando selezioni il componente testo, i relativi dettagli vengono visualizzati nella barra delle proprietà [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) È inoltre possibile modificare il testo nella barra.
 
@@ -65,10 +65,21 @@ Per modificare il testo nella posizione desiderata, fai doppio clic o tocca due 
 
 Per comodità, le opzioni di formattazione e i dettagli del testo sono disponibili in due posizioni.
 
-* Il **menu di scelta rapida** si apre sopra il blocco di testo RTF e offre opzioni di formattazione di base nel contesto. A causa di limiti di spazio, alcune opzioni potrebbero essere nascoste dietro il pulsante con i puntini di sospensione.
-* La barra delle proprietà **[](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)** mostra tutte le opzioni di formattazione disponibili insieme al testo.
+#### Menu di scelta rapida {#context-menu}
+
+Il menu di scelta rapida si apre sopra il blocco di testo RTF e offre opzioni di formattazione di base nel contesto. A causa di limiti di spazio, alcune opzioni potrebbero essere nascoste dietro il pulsante con i puntini di sospensione.
+
+![Menu di scelta rapida RTF](assets/rich-text-context-menu.png)
 
 Le modifiche vengono salvate automaticamente quando lo stato attivo lascia il campo modificato.
+
+#### Barra delle proprietà {#properties-rail}
+
+Nella barra delle proprietà [](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) è visualizzato un elemento per il testo selezionato. Tocca la voce per aprire una finestra di dialogo che presenta un’area di lavoro più grande per modificare il testo.
+
+![Finestra di dialogo per la modifica di testo RTF](assets/rich-text-canvas.png)
+
+Tocca o fai clic rispettivamente su **Annulla** o **Fine** per ignorare o salvare le modifiche.
 
 ### Editing di file multimediali {#edit-media}
 
@@ -95,9 +106,19 @@ Se selezioni un campo correlato a un frammento di contenuto, il frammento di con
 
 Le modifiche vengono salvate automaticamente una volta che lo stato attivo lascia il campo modificato nella barra delle proprietà.
 
-Se invece desideri modificare il frammento di contenuto nell&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), fai clic sul [pulsante di modifica](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) nella barra delle proprietà.
+Se invece desideri modificare il frammento di contenuto nell&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), tocca o fai clic sul pulsante [**Apri nell&#39;editor CF**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) nella barra delle proprietà.
+
+>[!TIP]
+>
+>Utilizzare il tasto di scelta rapida `e` per modificare il frammento di contenuto selezionato nell&#39;editor frammenti di contenuto.
 
 A seconda delle esigenze del flusso di lavoro, può essere utile modificare il frammento di contenuto nell’editor universale o direttamente nell’editor frammento di contenuto.
+
+>[!NOTE]
+>
+>L&#39;editor universale [convalida i campi dei frammenti di contenuto in base ai relativi modelli](/help/assets/content-fragments/content-fragments-models.md#validation), consentendo di applicare le regole di integrità dei dati, ad esempio i pattern regex e i vincoli di univocità.
+>
+>In questo modo, il contenuto soddisfa i requisiti aziendali specifici prima della pubblicazione.
 
 ### Aggiunta di componenti ai contenitori {#adding-components}
 
@@ -110,7 +131,7 @@ Il componente viene inserito nel contenitore e può essere modificato nell’edi
 
 >[!TIP]
 >
->Utilizzare il tasto di scelta rapida `A` per aggiungere un componente al contenitore selezionato.
+>Utilizzare il tasto di scelta rapida `a` per aggiungere un componente al contenitore selezionato.
 
 ### Eliminazione di componenti dai contenitori {#deleting-components}
 

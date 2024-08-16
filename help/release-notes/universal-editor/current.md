@@ -4,9 +4,9 @@ description: Queste sono le note sulla versione 2024.08.13 di Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: d71d3481004f2429c018c536b3e12784cf597f85
+source-git-commit: aad4d0353fb5e2eacb518b72e935def931d0798a
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ Queste sono le note sulla versione di Universal Editor del 13 agosto 2024.
 
 * **Tipi di dati personalizzati**: adatta l&#39;editor alle tue esigenze di dati univoci con la possibilità di creare campi personalizzati nel pannello delle proprietà.
    * Che tu stia sviluppando un selettore di prodotti personalizzato per i casi d’uso di e-commerce o compilando un elenco a discesa con i valori provenienti dai tuoi backend, questa funzione ti offre il controllo necessario sui dati utilizzati dagli autori per comporre i contenuti.
-* **Trascinamento selezione tra contenitori**: maggiore flessibilità nella composizione del layout con la possibilità di spostare i componenti tra contenitori diversi tramite trascinamento all&#39;interno del pannello [Struttura contenuto.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* **Trascinamento selezione tra contenitori**: maggiore flessibilità nella composizione del layout con la possibilità di [spostare i componenti tra contenitori diversi tramite trascinamento](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) nel pannello [Struttura contenuto.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
 * **Integrazione GitHub ottimizzata**: è stata introdotta la memorizzazione in cache per le risposte GitHub, velocizzando notevolmente il recupero dei tag e di `universal-editor-cors-library`, con conseguente esperienza utente più veloce e fluida.
 * **Pacchetto RPM Managed Services**: in Adobe è ora disponibile un pacchetto RPM per semplificare la distribuzione e la gestione del servizio Universal Editor, semplificando la manutenzione e riducendo il sovraccarico operativo per i servizi gestiti.
 * **Convalida del token IMS configurabile**: per aumentare la flessibilità nella gestione dei token, la convalida del token IMS è ora facoltativa.
    * Questa opzione di configurazione consente di disabilitare la convalida in base alle esigenze, semplificando le impostazioni del gateway cloud.
-* **Integrazione Splunk**: la registrazione Splunk è stata integrata in Universal Editor Service Express, migliorando il monitoraggio e la diagnostica.
+* **Integrazione Splunk**: la registrazione Splunk è stata integrata nel [servizio Editor universale per lo sviluppo locale,](/help/implementing/universal-editor/local-dev.md) migliorando il monitoraggio e la diagnostica.
    * Questa integrazione garantisce un tracciamento efficiente dei registri, operazioni più semplici e una risoluzione più rapida dei problemi.
 
 ## Correzioni di bug {#bug-fixes}

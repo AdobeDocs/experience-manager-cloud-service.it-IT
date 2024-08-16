@@ -4,9 +4,9 @@ description: Scopri i diversi punti di estensione e altre funzioni che consenton
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 34ae1d57e77e209e179aca5c556954dbfb170498
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -115,6 +115,18 @@ Le condizioni possono essere definite utilizzando lo schema [JsonLogic.](https:/
 ![Campo di testo visualizzato](assets/shown.png)
 
 >[!ENDTABS]
+
+### URL di anteprima personalizzati {#custom-preview-urls}
+
+Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview`, che si aprirà facendo clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell&#39;editor [.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+Questa opzione è particolarmente utile per le applicazioni con requisiti di anteprima specifici, ad esempio quelle [che utilizzano Edge Delivery Services con creazione WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+
+Per farlo, includi semplicemente l’URL di anteprima desiderato in un metatag dell’app instrumentata come nell’esempio seguente.
+
+```html
+<meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>
+```
 
 ## Estensione dell’interfaccia utente dell’editor universale {#extending}
 
