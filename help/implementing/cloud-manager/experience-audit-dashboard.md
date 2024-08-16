@@ -1,13 +1,13 @@
 ---
 title: Dashboard di Experience Audit
-description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO tramite un’interfaccia dashboard chiara e informativa.
+description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione, garantendo che le modifiche soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO. Fornisce un’interfaccia dashboard chiara e informativa per monitorare queste metriche.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
+source-git-commit: 72868ab808ebbd99c5e81805e7669083c5c754fb
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '1927'
 ht-degree: 7%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 7%
 
 # Dashboard di Experience Audit {#experience-audit-dashboard}
 
-Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO tramite un’interfaccia dashboard chiara e informativa.
+Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione, garantendo che le modifiche soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO. Fornisce un’interfaccia dashboard chiara e informativa per monitorare queste metriche.
 
 >[!NOTE]
 >
->Questa funzione è disponibile solo per [il programma per i primi utilizzatori.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Questa funzionalità è disponibile solo per [il programma per l&#39;adozione anticipata](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
 >
->Per informazioni dettagliate sulla funzione di audit dell&#39;esperienza esistente per AEM as a Cloud Service, consulta il documento [Test di audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-testing.md)
+>Per informazioni dettagliate sulla funzione di audit dell&#39;esperienza esistente per AEM as a Cloud Service, consulta [Test di audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 ## Panoramica {#overview}
 
-L’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche implementate:
+L’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche vengano implementate:
 
 1. soddisfino gli standard di base per prestazioni, accessibilità, best practice, SEO (Search Engine Optimization) e PWA (app web progressiva);
 
@@ -41,9 +41,9 @@ L&#39;audit dell&#39;esperienza è basato su [Google Lighthouse](https://develop
 
 L’audit dell’esperienza è disponibile per Cloud Manager:
 
-* Pipeline di produzione dei siti, per impostazione predefinita
-* Sviluppo di pipeline full stack, facoltativamente
-* Sviluppo di pipeline front-end, facoltativamente
+* (Impostazione predefinita) Pipeline di produzione di Sites
+* Sviluppo di pipeline full stack (facoltativo)
+* Sviluppo di pipeline front-end (facoltativo)
 
 Per ulteriori informazioni su come configurare il controllo di audit per gli ambienti facoltativi, vedere la [sezione Configurazione](#configuration).
 
@@ -55,15 +55,15 @@ L’audit dell’esperienza è disponibile per impostazione predefinita per le p
 
 1. A seconda del tipo di pipeline che desideri configurare, segui le istruzioni riportate di seguito:
 
-   * Aggiungi una nuova [pipeline di produzione,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) se desideri definire i percorsi da valutare dal controllo di audit.
+   * Aggiungi una nuova [pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) per definire i percorsi che dovranno essere valutati dal controllo di audit.
    * Aggiungi una nuova [pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) se desideri abilitare il controllo di audit su una pipeline front-end o di sviluppo full-stack.
    * Oppure puoi [modificare una pipeline esistente,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e aggiornare le opzioni esistenti.
 
-1. Se stai aggiungendo o modificando una pipeline non di produzione per la quale desideri utilizzare l&#39;audit dell&#39;esperienza, devi selezionare la casella di controllo **Audit dell&#39;esperienza** nella scheda **Codice Source**.
+1. Per utilizzare Audit dell&#39;esperienza quando si aggiunge o si modifica una pipeline non di produzione, selezionare la casella di controllo **Audit dell&#39;esperienza**. È possibile trovare questa opzione nella scheda **Codice Source**.
 
    ![Abilitazione dell&#39;audit dell&#39;esperienza](assets/experience-audit-enable.jpg)
 
-   * Questo è necessario solo per le pipeline non di produzione.
+   * Necessario solo per pipeline non di produzione.
    * La scheda **Audit dell&#39;esperienza** viene visualizzata quando la casella di controllo è selezionata.
 
 1. Sia per le pipeline di produzione che per quelle non di produzione, puoi definire i percorsi da includere nell’audit dell’esperienza nella scheda **Audit dell’esperienza**.
@@ -73,7 +73,7 @@ L’audit dell’esperienza è disponibile per impostazione predefinita per le p
 
    ![Definizione di un percorso per l’audit dell’esperienza](assets/experience-audit-add-page.png)
 
-1. Tocca o fai clic su **Aggiungi pagina** e il percorso viene completato automaticamente con l&#39;indirizzo dell&#39;ambiente e aggiunto alla tabella dei percorsi.
+1. Facendo clic su **Aggiungi pagina**, il percorso viene completato automaticamente con l’indirizzo dell’ambiente e aggiunto alla tabella dei percorsi.
 
    ![Salvataggio del percorso nella tabella](assets/experience-audit-page-added.png)
 
@@ -82,11 +82,11 @@ L’audit dell’esperienza è disponibile per impostazione predefinita per le p
    * Puoi aggiungere fino a un massimo di 25 percorsi.
    * Se non definisci alcun percorso, per impostazione predefinita la pagina Home del sito viene inclusa nell’audit dell’esperienza.
 
-1. Per salvare la pipeline, fai clic su **Salva**.
+1. Fai clic su **Salva**.
 
 ## Risultati dell’audit dell’esperienza {#results}
 
-I risultati dell&#39;audit dell&#39;esperienza sono presentati nella fase **Test dello staging** della pipeline di produzione tramite la [pagina di esecuzione della pipeline di produzione.](/help/implementing/cloud-manager/deploy-code.md)
+I risultati dell&#39;audit dell&#39;esperienza sono presentati nella fase **Test dello staging** della pipeline di produzione tramite la [pagina di esecuzione della pipeline di produzione](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Dashboard nella pipeline](assets/experience-audit-dashboard.jpg)
 
@@ -94,39 +94,39 @@ L&#39;audit dell&#39;esperienza fornisce i punteggi medi di Google Lighthouse pe
 
 Da questa visualizzazione di riepilogo nella fase **Test dello staging** della pipeline, sono disponibili due opzioni:
 
-* **[Visualizza pagine più lente](#view-slowest-pages)**
-* **[Visualizza report completo](#view-full-report)**
+* **[Visualizza le pagine più lente](#view-slowest-pages)**
+* **[Visualizza il report completo](#view-full-report)**
 
-Oltre al riepilogo presentato nei dettagli di un&#39;esecuzione della pipeline, puoi anche accedere direttamente ai risultati completi del controllo di audit utilizzando la scheda **Rapporti** del dashboard di Cloud Manager per accedere direttamente a [il rapporto completo](#view-full-report).
+Puoi accedere ai risultati completi del controllo di audit facendo clic sulla scheda **Rapporti** nel dashboard di Cloud Manager. Oltre al riepilogo mostrato nei dettagli di esecuzione della pipeline, puoi visualizzare [direttamente il report completo](#view-full-report).
 
 >[!TIP]
 >
 >Nelle sezioni seguenti viene descritto come visualizzare i risultati dell’audit dell’esperienza.
 >
->* Per informazioni dettagliate sul funzionamento del controllo di audit, vedere la sezione [Dettagli sulla valutazione del controllo di audit dell&#39;esperienza.](#details)
->* Se desideri sapere come eseguire un audit dell&#39;esperienza su richiesta, consulta la sezione [Rapporti di audit on demand.](#on-demand)
->* In caso di problemi con il controllo di audit, consulta la sezione [Problemi rilevati dal controllo di audit dell&#39;esperienza.](#issues)
->* Per suggerimenti generali sulle prestazioni, vedere la sezione [Suggerimenti generali sulle prestazioni.](#performance-tips)
+>* Per ulteriori dettagli sul funzionamento del controllo di audit, vedere [Dettagli valutazione controllo esperienza](#details).
+>* Per informazioni su come eseguire un audit dell&#39;esperienza su richiesta, consulta [Rapporti di audit on demand](#on-demand).
+>* Se si verificano problemi con il controllo di audit, vedere [Problemi rilevati durante il controllo di audit dell&#39;esperienza](#issues).
+>* Per suggerimenti generali sulle prestazioni, vedere [Suggerimenti generali sulle prestazioni](#performance-tips).
 
-### Visualizza pagine più lente {#view-slowest-pages}
+### Visualizzare le pagine più lente {#view-slowest-pages}
 
-Toccando o facendo clic su **Visualizza pagine più lente** si apre la finestra di dialogo **5 pagine più lente**, in cui sono visualizzate le cinque pagine con le prestazioni più basse [configurate per il controllo.](#configuration)
+Fai clic su **Visualizza pagine più lente** per aprire la finestra di dialogo **5 pagine più lente**. Vengono visualizzate le cinque pagine con le prestazioni più basse [configurate per l&#39;audit](#configuration).
 
 ![Cinque più lenti](assets/experience-audit-slowest-five.png)
 
-I punteggi sono suddivisi per **Prestazioni**, **Accessibilità**, **Best practice** e **SEO** insieme alla deviazione di ogni metrica dall&#39;ultimo controllo di audit.
+Cloud Manager suddivide i punteggi per **Prestazioni**, **Accessibilità**, **Best practice** e **SEO**, mostrando la deviazione di ogni metrica dal controllo precedente.
 
-Per impostazione predefinita, la finestra di dialogo si apre con i punteggi per i dispositivi mobili. Puoi modificare i punteggi del desktop con l&#39;interruttore **Dispositivi** nella parte superiore della finestra di dialogo.
+Per impostazione predefinita, viene visualizzata la finestra di dialogo con i punteggi per i dispositivi mobili. Puoi visualizzare i punteggi del desktop utilizzando l&#39;interruttore **Dispositivi** nella parte superiore della finestra di dialogo.
 
-La finestra di dialogo offre una panoramica rapida. Per informazioni dettagliate, tocca o fai clic su **Visualizza report completo**.
+La finestra di dialogo offre una rapida panoramica. Per informazioni dettagliate, fare clic su **Visualizza report completo**.
 
-### Visualizza report completo {#view-full-report}
+### Visualizza il rapporto completo {#view-full-report}
 
-Per visualizzare il rapporto completo sull’audit dell’esperienza:
+Per visualizzare il rapporto completo sull’audit dell’esperienza, effettua le seguenti operazioni:
 
-* Tocca o fai clic su **Visualizza report completo** nella finestra di dialogo **[5 pagine più lente](#view-slowest-pages)**.
-* Tocca o fai clic su **Visualizza report completo** durante la visualizzazione della [esecuzione di una pipeline.](#results)
-* Tocca o fai clic sulla scheda **Rapporti** in Cloud Manager.
+* Fai clic su **`View full report`** nella finestra di dialogo **[5 pagine più lente](#view-slowest-pages)**.
+* Fare clic su **`View full report`** quando si visualizza l&#39;[esecuzione di una pipeline](#results).
+* Fai clic sulla scheda **Rapporti** in Cloud Manager.
 
 È stata aperta la scheda **Rapporti** di Cloud Manager, che mostra **Audit dell&#39;esperienza**.
 
@@ -134,26 +134,26 @@ Per visualizzare il rapporto completo sull’audit dell’esperienza:
 
 La relazione si articola in due aree:
 
-* **[Punteggi pagina - tendenza](#trend)**
-* **[Risultati analisi audit esperienza](#results)**
+* **[Punteggi pagina — tendenza](#trend)**
+* **[Risultati analisi controllo esperienza](#results)**
 
-#### Punteggi pagina - tendenza {#trend}
+#### Punteggi di pagina — tendenza {#trend}
 
-Per impostazione predefinita, la visualizzazione selezionata per **Punteggi pagina - tendenza** è **Punteggi mediani** per **Ultimi 6 mesi**.
+Per impostazione predefinita, la visualizzazione selezionata per **Punteggi pagina — tendenza** è **punteggi mediani** per **Ultimi 6 mesi**.
 
-Utilizza i menu a discesa **Seleziona** e **Visualizza** nella parte superiore e inferiore del pulsante del grafico per selezionare rispettivamente i dettagli specifici della pagina e i diversi intervalli di tempo. Tocca o fai clic sul pulsante e sul pulsante **aggiorna tendenza** nella parte superiore del grafico per applicare le selezioni e aggiornare il grafico.
+Utilizza i menu a discesa **Seleziona** e **Visualizza** nella parte superiore e inferiore del pulsante del grafico per selezionare rispettivamente i dettagli specifici della pagina e i diversi intervalli di tempo. Fai clic su **Aggiorna tendenza** nella parte superiore del grafico per applicare le selezioni e aggiornare il grafico.
 
 Quando si sposta il mouse sul grafico, una descrizione comando visualizza i valori per le categorie di Google Lighthouse in specifici momenti nel tempo.
 
 ![Dettagli tendenza](assets/experience-audit-trend-details.png)
 
-Se tocchi o fai clic sul grafico in un determinato momento, viene visualizzato un messaggio con i dettagli della scansione. Tocca o fai clic su **apri analisi audit esperienza** per caricare i risultati dell&#39;analisi nella sezione **[Risultati analisi audit esperienza](#scan-results)**.
+Se fai clic sul grafico in un determinato momento, viene visualizzato un messaggio con i dettagli della scansione. Fai clic su **apri analisi audit esperienza** per caricare i risultati dell&#39;analisi nella sezione **[Risultati analisi audit esperienza](#scan-results)**.
 
 ![Seleziona un&#39;altra scansione](assets/experience-audit-open-scan.png)
 
-#### Risultati analisi audit esperienza {#scan-results}
+#### Risultati scansione dell’audit dell’esperienza {#scan-results}
 
-La sezione **Risultati dell&#39;analisi dell&#39;audit dell&#39;esperienza** fornisce consigli su come migliorare il punteggio e i dettagli di tutte le pagine digitalizzate. È diviso in due sezioni:
+La sezione **Risultati analisi audit esperienza** fornisce consigli su come migliorare il punteggio e i dettagli di tutte le pagine digitalizzate. È diviso in due sezioni:
 
 * **[Recommendations](#recommendations)**
 * **[Pagine digitalizzate](#scanned-pages)**
@@ -164,39 +164,39 @@ La sezione **Recommendations** mostra un set aggregato di approfondimenti. Per i
 
 ![Recommendations](assets/experience-audit-recommendations.png)
 
-Tocca o fai clic sulla freccia per visualizzare i dettagli di qualsiasi consiglio.
+Fai clic sulla freccia per qualsiasi consiglio per visualizzarne i dettagli.
 
 ![Dettagli consiglio](assets/experience-audit-recommendations-details.png)
 
 Quando disponibili, i dettagli espansi dei consigli contengono anche la percentuale di impatto dei consigli, per concentrarti sui cambiamenti più incisivi.
 
-Tocca o fai clic sul collegamento **visualizza pagine** nella visualizzazione dei dettagli per visualizzare le pagine a cui si applica il consiglio.
+Fai clic sul collegamento **visualizza pagine** nella visualizzazione dei dettagli per visualizzare le pagine a cui si applica il consiglio.
 
 ![Pagine per i dettagli dei consigli](assets/experience-audit-details-pages.png)
 
 ##### Pagine digitalizzate {#scanned-pages}
 
-La sezione **Pagine digitalizzate** fornisce punteggi dettagliati su tutte le pagine digitalizzate. È possibile utilizzare i pulsanti **Precedente** e **Successivo** per scorrere i risultati e scegliere il numero di pagine da visualizzare.
+La sezione **Pagine digitalizzate** fornisce dettagli sui punteggi di tutte le pagine digitalizzate. Utilizza i pulsanti **Precedente** e **Successivo** per scorrere i risultati e scegliere il numero di pagine da visualizzare.
 
 ![Pagine digitalizzate](assets/experience-audit-scanned-pages.png)
 
-Toccando o facendo clic sul collegamento di una pagina particolare si aggiorna il filtro **Seleziona** della [**sezione Punteggi pagina - tendenza**](#trend) e viene visualizzata la scheda **Punteggi e consigli** per la pagina selezionata.
+Fai clic sul collegamento di una pagina particolare per aggiornare il filtro **Seleziona** della sezione ](#trend) [**Punteggi pagina — tendenza** e visualizzare la scheda **Punteggi e consigli** per la pagina selezionata.
 
 ![Risultati pagina](assets/experience-audit-page-results.png)
 
-La scheda **Rapporti non elaborati** fornisce punteggi per ogni controllo di audit della pagina. Tocca o fai clic sulla data del rapporto nella colonna **Rapporto faro** per recuperare un file JSON dei dati non elaborati.
+La scheda **Rapporti non elaborati** fornisce punteggi per ogni controllo di audit della pagina. Fare clic sulla data del report nella colonna **Report di Lighthouse** per recuperare un file JSON dei dati non elaborati.
 
 ![Report non elaborato](assets/experience-audit-raw-reports.png)
 
-Verrà aperta una nuova scheda nel browser che punta a `https://googlechrome.github.io/lighthouse/viewer/` con un URL firmato del report JSON (JavaScript Object Notation) non elaborato di Lighthouse per la pagina selezionata, che verrà aperto automaticamente per l&#39;ispezione dettagliata
+Nel browser viene visualizzata una nuova scheda che ti indirizza a `https://googlechrome.github.io/lighthouse/viewer/`. Carica automaticamente un URL firmato contenente il rapporto JSON non elaborato di Lighthouse per la pagina selezionata, consentendo un’ispezione dettagliata.
 
 ![Visualizzazione del report non elaborato](assets/experience-audit-view-raw-report.png)
 
-## Rapporti di audit on-demand {#on-demand}
+## Rapporti di controllo della scansione su richiesta {#on-demand}
 
-Oltre a essere eseguiti durante l’esecuzione della pipeline, i rapporti di audit dell’esperienza possono essere generati on-demand. Questa è una buona soluzione per eseguire rapidamente la scansione delle pagine, senza dover eseguire una pipeline.
+Oltre a essere eseguiti durante l’esecuzione della pipeline, i rapporti di audit dell’esperienza possono essere generati on-demand. Questa opzione è una buona soluzione per scansionare le pagine rapidamente, senza dover eseguire una pipeline.
 
-Per eseguire un&#39;analisi on-demand, passa alla scheda **Report** per visualizzare il report di audit completo, quindi tocca o fai clic sul pulsante **Esegui analisi**.
+Per eseguire un&#39;analisi on-demand, passa alla scheda **Report** per visualizzare il report di audit completo, quindi fai clic sul pulsante **Esegui analisi**.
 
 ![Analisi su richiesta](assets/experience-audit-on-demand.png)
 
@@ -206,7 +206,7 @@ Il pulsante **Esegui scansione** non è più disponibile ed è contrassegnato co
 
 Le scansioni on-demand attivano un controllo dell&#39;esperienza per le ultime 25 [pagine configurate](#configuration) e in genere terminano in pochi minuti.
 
-Al termine, il grafico dei punteggi verrà aggiornato automaticamente e potrai esaminare i risultati esattamente come per una scansione dell’esecuzione della pipeline.
+Al termine, il grafico dei punteggi viene aggiornato automaticamente e puoi esaminare i risultati esattamente come per una scansione dell’esecuzione della pipeline.
 
 Puoi filtrare il grafico dei punteggi in base al tipo di trigger utilizzando il selettore **Trigger**.
 
@@ -218,7 +218,7 @@ Puoi filtrare il grafico dei punteggi in base al tipo di trigger utilizzando il 
 
 ## L’audit dell’esperienza riscontra problemi {#issues}
 
-Se le [pagine configurate](#configuration) per l&#39;audit non erano disponibili o si sono verificati altri errori nel controllo di audit, l&#39;audit dell&#39;esperienza ne tiene conto.
+Se le [pagine configurate](#configuration) per l&#39;audit non erano disponibili o si sono verificati altri errori nel controllo di audit, l&#39;audit dell&#39;esperienza riflette questo fatto.
 
 La pipeline mostra una sezione di errore espandibile per visualizzare i percorsi URL relativi a cui non poteva accedere.
 
@@ -244,10 +244,10 @@ Alcuni motivi per cui le pagine potrebbero non essere disponibili sono i seguent
 
 Due dei problemi di impatto più comuni e facili da risolvere riguardano Cumulative Layout Shifts (CLS) e Largest Contentful Paint (LCP).
 
-Questi possono essere migliorati:
+Puoi migliorare queste aree eseguendo le seguenti operazioni:
 
-* Caricamento non lento delle immagini sopra la piega (il contenuto visibile nel browser senza dover scorrere verso il basso).
-* Assegnare la corretta priorità al modo in cui le risorse vengono caricate (ad esempio, caricando in modo asincrono le immagini sotto la piega dopo il caricamento del documento).
+* Caricamento non lento delle immagini al di sopra della piega: il contenuto visibile nel browser senza dover scorrere verso il basso.
+* Assegnare la corretta priorità al caricamento delle risorse (ad esempio, caricando in modo asincrono le immagini sotto la piega dopo il caricamento del documento).
 * Preacquisizione dei file JavaScript e CSS utilizzati per eseguire il rendering del contenuto sopra la piega (se necessario).
 * Riservare lo spazio verticale assegnando proporzioni ai contenitori che vengono caricati lentamente o renderizzati in un secondo momento.
 * Conversione di immagini in formato WebP per ridurne le dimensioni.
@@ -257,12 +257,10 @@ Questi possono essere migliorati:
 
 I dettagli seguenti forniscono informazioni aggiuntive su come l’audit dell’esperienza valuta il sito. Non sono necessarie per l’utilizzo generale della funzione e sono fornite qui per completezza.
 
-* Il controllo di audit esegue la scansione del dominio di origine (`.com`) definito nei [percorsi di pagina del controllo dell&#39;esperienza configurati](#configuration) dell&#39;editore per simulare in modo più accurato le esperienze utente reali e consentire di prendere decisioni più informate sulla gestione e l&#39;ottimizzazione dei siti Web.
-* Nelle pipeline full stack di produzione, viene analizzato l’ambiente di staging.
-   * Per garantire che il controllo fornisca dettagli rilevanti durante il controllo, il contenuto dell’ambiente di staging deve essere il più simile possibile all’ambiente di produzione.
-* Le pagine visualizzate nel menu a discesa **Seleziona** nella sezione [**Punteggi pagina - tendenza**](#trend) sono tutte pagine note analizzate in passato dall&#39;audit dell&#39;esperienza.
+* Il controllo di audit esegue la scansione del dominio di origine (`.com`) dai [percorsi di pagina del controllo dell&#39;esperienza configurati](#configuration) dell&#39;editore per simulare esperienze utente reali, consentendo di prendere decisioni migliori sulla gestione e l&#39;ottimizzazione dei siti Web.
+* Nelle pipeline full stack di produzione, viene analizzato l’ambiente di staging. Per garantire che il controllo fornisca dettagli rilevanti durante il controllo, il contenuto dell’ambiente di staging deve essere il più simile possibile all’ambiente di produzione.
+* Le pagine visualizzate nell&#39;elenco a discesa **Seleziona** nella sezione [**Punteggi pagina — tendenza**](#trend) sono tutte pagine note analizzate in passato dall&#39;audit dell&#39;esperienza.
 * [Un consiglio](#recommendations) può avere un guadagno potenziale e una differenza rispetto all&#39;analisi precedente.
-   * L’audit dell’esperienza stima il guadagno potenziale elaborando il rapporto non elaborato per ogni pagina e correlando i byte sprecati o i millisecondi con un’informazione approfondita che ha un impatto ponderato sul punteggio delle prestazioni.
-   * L’audit fornisce queste informazioni (nonché le pagine interessate) per aiutare a decidere quale raccomandazione perseguire.
-   * Per ulteriori dettagli, vedere la [sezione Suggerimenti generali sulle prestazioni](#performance-tips)
-* Dato che una pipeline front-end può essere distribuita in un ambiente esistente (oppure che più pipeline front-end hanno come destinazione lo stesso ambiente) e i risultati della scansione sono aggregati a livello di ambiente, i punteggi, le tendenze e i consigli vengono visualizzati nello stesso ambiente selezionato, indipendentemente dall’esecuzione della pipeline che ha attivato la scansione.
+* L’audit dell’esperienza stima i potenziali miglioramenti elaborando il rapporto non elaborato per ogni pagina. Mette in correlazione i byte sprecati o i millisecondi con le informazioni, assegnando un impatto ponderato sul punteggio delle prestazioni. L’audit fornisce queste informazioni, insieme alle pagine interessate, per aiutarti a decidere quale consiglio seguire.
+Per ulteriori dettagli, consulta la [sezione Suggerimenti generali sulle prestazioni](#performance-tips).
+* Una pipeline front-end può essere implementata in un ambiente esistente e più pipeline front-end possono essere indirizzate allo stesso ambiente. Poiché i risultati della scansione sono aggregati a livello di ambiente, i punteggi, le tendenze e i consigli sono coerenti. Questi risultati vengono visualizzati nell’ambiente selezionato, indipendentemente dalla pipeline che ha attivato l’analisi.
