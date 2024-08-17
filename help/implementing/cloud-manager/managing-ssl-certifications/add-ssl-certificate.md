@@ -1,33 +1,31 @@
 ---
-title: Aggiunta di un certificato SSL
+title: Aggiungere un certificato SSL
 description: Scopri come aggiungere un certificato SSL personalizzato con gli strumenti self-service di Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 64aa010c3d840adad9e1ab6040a6d80c07cd8455
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 65%
+source-wordcount: '659'
+ht-degree: 45%
 
 ---
 
 
-# Aggiunta di un certificato SSL {#adding-an-ssl-certificate}
+# Aggiungere un certificato SSL {#adding-an-ssl-certificate}
 
 Scopri come aggiungere un certificato SSL personalizzato con gli strumenti self-service di Cloud Manager.
 
 >[!TIP]
 >
->Il provisioning di un certificato può richiedere alcuni giorni. L’Adobe consiglia pertanto di eseguire il provisioning del certificato con largo anticipo rispetto a qualsiasi scadenza o data di pubblicazione.
+>Il provisioning di un certificato può richiedere alcuni giorni. L’Adobe raccomanda pertanto di predisporre il certificato con largo anticipo rispetto a qualsiasi scadenza o data di pubblicazione.
 
-## Requisiti dei certificati {#certificate-requirements}
+## Requisiti del certificato {#certificate-requirements}
 
-Consulta la sezione **Requisiti del certificato** del documento [Introduzione alla gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) per assicurarti che il certificato che desideri aggiungere sia supportato da AEM as a Cloud Service.
+Rivedi **Requisiti del certificato** in [Introduzione alla gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) per assicurarti che AEM as a Cloud Service supporti il certificato che desideri aggiungere.
 
-## Aggiunta di un certificato {#adding-a-cert}
-
-Per aggiungere un certificato con Cloud Manager, segui la procedura riportata di seguito.
+## Aggiungi un certificato {#adding-a-cert}
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
@@ -35,28 +33,23 @@ Per aggiungere un certificato con Cloud Manager, segui la procedura riportata di
 
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 
-1. Fai clic su **Certificati SSL** nel pannello di navigazione a sinistra. Nella schermata principale viene visualizzata una tabella con i dettagli di tutti i certificati SSL esistenti.
+1. Nel pannello di navigazione a sinistra, in **Servizi**, fai clic su **Certificati SSL**. Se necessario, fai clic sull’icona dell’hamburger nell’angolo in alto a sinistra per visualizzare il pannello di navigazione. Viene visualizzata una tabella con i dettagli di eventuali certificati SSL esistenti.
 
    ![Aggiunta di un certificato SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
 1. Fare clic su **Aggiungi certificato SSL** per aprire la finestra di dialogo **Aggiungi certificato SSL**.
 
-   * Inserisci un nome per il certificato nel campo **Nome certificato**.
-      * Il nome è unicamente a scopo informativo e può essere qualsiasi nome che ti aiuta a ricordare facilmente il certificato.
-   * Incolla i valori **Certificato**, **Chiave privata** e **Catena certificati** nei rispettivi campi.
-      * Tutti e tre i campi sono obbligatori.
+   * Immettere un nome per il certificato in **Nome certificato**. Questo campo è solo a scopo informativo e può essere qualsiasi nome che ti aiuti a fare riferimento facilmente al certificato.
+   * Incolla il **certificato**, la **chiave privata** e la **catena di certificati** nei rispettivi campi. I tre campi sono obbligatori.
 
    ![Finestra di dialogo Aggiungi certificato SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * Vengono visualizzati tutti gli eventuali errori rilevati.
-      * Prima di salvare il certificato è necessario risolvere tutti gli errori.
-      * Per ulteriori informazioni su come risolvere gli errori comuni, consulta la sezione [Errori relativi ai certificati](#certificate-errors).
+   * Vengono visualizzati tutti gli eventuali errori rilevati nei valori. Prima di poter salvare il certificato, è necessario risolvere tutti gli errori.
+Per ulteriori informazioni su come risolvere gli errori comuni, consulta [Errori relativi ai certificati](#certificate-errors).
 
-1. Per salvare il certificato, fai clic su **Salva**.
+1. Fai clic su **Salva**.
 
-Una volta salvato, il certificato viene visualizzato come una nuova riga nella tabella.
-
-![Certificato SSL salvato](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![Certificato SSL salvato](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)Il certificato viene ora visualizzato come una nuova riga nella tabella, simile all&#39;immagine precedente.
 
 >[!NOTE]
 >
@@ -100,9 +93,9 @@ Quando aggiungi un certificato, se ricevi un errore simile al seguente:
 The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
 ```
 
-È probabile che tu abbia incluso il certificato client nella catena di certificati. Verifica che la catena non includa il certificato client e riprova.
+È probabile che tu abbia incluso il certificato client nella catena di certificati. Assicurati che la catena non includa il certificato client e riprova.
 
-### Criteri del certificato {#certificate-policy}
+### Criterio certificato {#certificate-policy}
 
 Se visualizzi il seguente errore, controlla i criteri del certificato.
 
@@ -110,7 +103,7 @@ Se visualizzi il seguente errore, controlla i criteri del certificato.
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-Normalmente i criteri del certificato sono identificati dai valori OID incorporati. Per visualizzare i criteri del certificato, genera il certificato come testo e ricerca i valori OID.
+I valori OID incorporati solitamente identificano i criteri del certificato. L’output di un certificato come testo e la ricerca dell’OID rivelano i criteri del certificato.
 
 Puoi generare i dettagli del certificato come testo basandoti sull’esempio seguente come guida.
 
@@ -158,7 +151,7 @@ Cloud Manager richiede che il certificato SSL sia valido per almeno 90 giorni da
 
 ## Passaggi successivi {#next-steps}
 
-Congratulazioni Ora disponi di un certificato SSL funzionante per il progetto. Questo è spesso il primo passo per impostare un nome di dominio personalizzato.
+Congratulazioni Ora disponi di un certificato SSL funzionante per il progetto. Questo passaggio è spesso il primo a configurare un nome di dominio personalizzato.
 
-* Per continuare la configurazione di un nome di dominio personalizzato, vedere il documento [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
-* Per informazioni sull&#39;aggiornamento e la gestione dei certificati SSL in Cloud Manager, consulta il documento [Gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md).
+* Per impostare un nome di dominio personalizzato, vedere [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+* Per informazioni sull&#39;aggiornamento e la gestione dei certificati SSL in Cloud Manager, vedere [Gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md).
