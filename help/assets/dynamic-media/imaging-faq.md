@@ -6,9 +6,9 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
+source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
 workflow-type: tm+mt
-source-wordcount: '3454'
+source-wordcount: '3455'
 ht-degree: 1%
 
 ---
@@ -162,7 +162,7 @@ Per i formati di file di immagine che supportano la trasparenza come PNG, puoi c
 
 I comandi Image Server `fmt` e `qlt` non sono supportati. Tutti i comandi rimanenti sono supportati.
 
-## Domande frequenti sull&#39;imaging avanzato{#smart-imaging-faq}
+## Domande frequenti sulla tecnologia Smart Imaging{#smart-imaging-faq}
 
 +++**Sono presenti costi di licenza associati a Smart Imaging?**
 
