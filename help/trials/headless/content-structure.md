@@ -23,7 +23,7 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
->title="Avviare la console del modello"
+>title="Avvia la console Modelli"
 >abstract="Scopriamo come creare uno schema riutilizzabile, denominato modello per frammenti di contenuto, per il contenuto in Adobe Experience Manager as a Cloud Service. Guarda il video per comprendere il motivo per cui questo passaggio è importante. <br><br>In questo modulo di apprendimento utilizzerai come esempio un sito di viaggi e vedrai in dettaglio come creare un modello che rappresenta un viaggio.<br><br>Avvia questo modulo in una nuova scheda facendo clic sul pulsante sottostante e quindi segui questa guida."
 >additional-url="https://video.tv.adobe.com/v/3413261?captions=ita" text="Video introduttivo sulla struttura dei contenuti"
 
@@ -53,7 +53,7 @@ In questo esempio, viene creato un modello che rappresenta la struttura dati di 
 
 ## Utilizzo dell’Editor modelli {#configure-model}
 
-Ora hai un modello chiamato **Adventure**, ma non dispone di dettagli come durata, destinazione e attività. Prima di poter utilizzare il modello, è necessario definire la struttura dei relativi dati.
+Ora hai un modello chiamato **Adventure** (Avventura), ma non dispone di dettagli come durata, destinazione e attività. Prima di poter utilizzare il modello, è necessario definire la struttura dei relativi dati.
 
 Nell’editor di modelli per frammenti di contenuto è possibile configurare i tipi di dati e le proprietà che definiscono il contenuto del modello.
 
@@ -72,7 +72,7 @@ Nell’editor di modelli per frammenti di contenuto è possibile configurare i t
 
 In questo modo, puoi aggiungere al modello tutti i campi necessari per supportare qualsiasi struttura dati necessaria. I tipi di campi dati variano, ma il processo di aggiunta al modello rimane lo stesso.
 
-Procedi alla sezione successiva per aggiungere i campi necessari per completare e salvare il modello **Adventure**
+Procedi alla sezione successiva per aggiungere i campi necessari per completare e salvare il modello **Adventure** (Avventura)
 
 ![Passaggi uno, due e tre per aggiungere campi al modello](assets/do-not-localize/define-model-fields.png)
 
@@ -82,7 +82,7 @@ Hai già un campo per il titolo dell&#39;avventura. Ora devi aggiungere dei camp
 
 >[!TIP]
 >
->Il modello di **Avventura** si basa sul sito di esempio WKND per AEM. Puoi [visitare il sito WKND qui](https://wknd.site/us/en/adventures/yosemite-backpacking.html) per visualizzare il contenuto che utilizza il modello **Adventure**.
+>Il modello **Adventure** (Avventura) si basa sul sito di esempio WKND per AEM. Puoi [visitare il sito WKND qui](https://wknd.site/us/en/adventures/yosemite-backpacking.html) per visualizzare il contenuto che utilizza il modello **Adventure**.
 
 Segui gli stessi passaggi indicati sopra per aggiungere questi ulteriori campi. L’unica differenza consiste nelle proprietà che devi impostare.
 
