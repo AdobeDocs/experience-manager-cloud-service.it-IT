@@ -23,7 +23,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
->title="Avvio della console Frammenti di contenuto"
+>title="Avvia la console Frammenti di contenuto"
 >abstract="La creazione di contenuti coerenti e di alta qualità che funzionano perfettamente nelle applicazioni e nei siti web ti permette di offrire ai tuoi clienti esperienze eccezionali. Questo modulo ti guida nella creazione dei primi contenuti headless tramite la console Frammenti di contenuto.<br><br>Avvia questo modulo in una nuova scheda facendo clic sul pulsante sottostante, quindi segui questa guida."
 
 >[!CONTEXTUALHELP]
@@ -43,7 +43,7 @@ La console Frammenti di contenuto viene utilizzata per creare e modificare conte
 
 1. La finestra di dialogo **Nuovo frammento di contenuto** si apre e lì puoi iniziare a creare un frammento di contenuto. La **Posizione** viene compilata automaticamente con le posizioni in cui verranno salvati i nuovi contenuti.
 
-1. Nel menu a discesa **Modello di frammento di contenuto**, seleziona il modello di frammento di contenuto **Avventura** creato in precedenza.
+1. Nel menu a discesa **Modello di frammento di contenuto**, seleziona il modello di frammento di contenuto **Adventure** (Avventura) creato in precedenza.
 
 1. Aggiungi `Tuscany` come **Titolo** descrittivo per il frammento di contenuto. In questo modo è possibile identificare il frammento nella console.
 
@@ -77,7 +77,7 @@ Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento
 
    ![Aggiungi risorsa](assets/do-not-localize/add-asset.png)
 
-1. Viene visualizzata la finestra di dialogo **Seleziona risorsa**. Utilizzando il navigatore ad albero nel pannello a sinistra, passa a **Tutte le risorse** > **aem-demo-assets** > **it** > **avventure** > **ciclismo-toscana**.
+1. Viene visualizzata la finestra di dialogo **Seleziona risorsa**. Utilizzando il navigatore ad albero nel pannello a sinistra, passa a **All assets** > **aem-demo-assets** > **en** > **adventures** > **cycling-tuscany** (Tutte le risorse > aem-demo-assets > it > avventure > ciclismo-toscana).
 
 1. I contenuti della cartella **ciclismo-toscana** vengono visualizzati a destra. Seleziona l’immagine `ADOBESTOCK_141786166.JPEG`.
 
@@ -87,7 +87,7 @@ Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento
 
 1. L’immagine selezionata viene visualizzata nel frammento di contenuto. Le modifiche vengono salvate automaticamente dall’editor.
 
-1. Al termine, seleziona il pulsante **Pubblica** in alto a destra nell’editor. Questo rende il frammento di contenuto disponibile per il consumo da parte di app esterne. Seleziona **Ora** dal menu a discesa. Puoi anche pianificarlo per la pubblicazione in un secondo momento.
+1. Al termine, seleziona il pulsante **Pubblica** in alto a destra nell’editor. Questo rende il frammento di contenuto disponibile per il consumo da parte di app esterne. Seleziona **Adesso** dal menu a discesa. Puoi anche pianificarlo per la pubblicazione in un secondo momento.
 
    ![Pubblica contenuto](assets/do-not-localize/publish.png)
 

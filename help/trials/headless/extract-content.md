@@ -23,7 +23,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
->title="Avviare GraphQL Explorer"
+>title="Avvia GraphQL Explorer"
 >abstract="GraphQL fornisce un’API basata su query che consente alle applicazioni client esterne di eseguire query AEM solo per il contenuto necessario, utilizzando una singola chiamata API. Segui questo modulo per scoprire come eseguire due diversi tipi di query. Quindi scopri come recuperare il contenuto dal frammento di contenuto creato nel modulo precedente.<br><br>Avvia questo modulo in una nuova scheda facendo clic qui sotto."
 
 >[!CONTEXTUALHELP]

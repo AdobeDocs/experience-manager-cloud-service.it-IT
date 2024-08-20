@@ -23,7 +23,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
->title="Avviare l’Editor universale"
+>title="Avvia l’Editor universale"
 >abstract="Questa guida descrive l’Editor universale e come consente a chiunque di modificare ogni aspetto del contenuto in qualsiasi implementazione, per velocizzare le operazioni.<br><br>Per avviare questo modulo in una nuova scheda, fai clic qui sotto, quindi segui questa guida."
 
 >[!CONTEXTUALHELP]
@@ -95,7 +95,7 @@ Poiché devi selezionare il contenuto per modificarlo nell’editor, quest’ult
 
 1. Nella barra degli strumenti dell’editor universale, seleziona **Anteprima**.
 
-1. Ora seleziona il collegamento **Ulteriori informazioni** per l’articolo principale.
+1. Ora seleziona il collegamento **Read More** (Leggi) per l’articolo principale.
 
    ![Modalità anteprima](assets/do-not-localize/ue-preview-publish-1.png)
 
@@ -109,7 +109,7 @@ Poiché devi selezionare il contenuto per modificarlo nell’editor, quest’ult
 
 Il contenuto viene pubblicato.
 
-## Modifica di frammenti di contenuto {#editing-fragments}
+## Modificare i frammenti di contenuto {#editing-fragments}
 
 Per velocizzare l’authoring dei contenuti quando la modifica strutturata di contenuti headless risulta più vantaggiosa della modifica diretta, dall’editor universale puoi accedere rapidamente anche all’editor di frammenti di contenuto.
 

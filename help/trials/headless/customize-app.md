@@ -23,7 +23,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
->title="Avviare l’editor dei frammenti di contenuto"
+>title="Avvia l’editor dei frammenti di contenuto"
 >abstract="Ora vediamo come funziona l’authoring di contenuti headless. La tua versione di prova AEM headless dispone di un’app React di esempio, utile per capire quanto è facile gestire i contenuti in modo indipendente e veloce, senza i tempi solitamente associati allo sviluppo di app.<br><br>Per avviare questo modulo in una nuova scheda, fai clic qui sotto, quindi segui questa guida."
 
 >[!CONTEXTUALHELP]

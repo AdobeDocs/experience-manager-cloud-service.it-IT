@@ -49,7 +49,7 @@ Facendo clic sul pulsante **Avvia l’app CodePen di esempio** dalla versione di
           ...
 ```
 
-Se invece visualizzi un errore, controlla la console del browser per ulteriori dettagli o contattaci Se invece visualizzi un errore, controlla la console del browser per ulteriori dettagli o contattaci [via e-mail](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
+Se invece visualizzi un errore, controlla la console del browser per ulteriori dettagli o contattaci [via e-mail](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
 
 Ora che conosci qualcosa di CodePen, puoi configurare l’app per recuperare i dati dalla query persistente creata in un modulo precedente.
 
@@ -100,9 +100,9 @@ Alla riga 25, viene indicato da quale query GraphQL persistente l’app deve rec
 
 ## Modificare il rendering JSON {#change-rendering}
 
-Attualmente, il codice JSON viene renderizzato così com’è in un tag `pre`, ma non è un modo molto creativo. La CodePen può essere cambiata per utilizzare invece la funzione `resultToDom()` per illustrare come è possibile iterare la risposta JSON per creare un risultato più interessante.
+Attualmente, il codice JSON viene renderizzato così com’è in un tag `pre`, ma non è un modo molto creativo. È possibile impostare CodePen in modo da utilizzare la funzione `resultToDom()` per illustrare come è possibile iterare la risposta JSON per creare un risultato più interessante.
 
-1. Per apportare questa modifica, commenta la riga 37 e rimuovi il commento dalla riga 40:
+1. Per apportare questa modifica, imposta come commento la riga 37 e rimuovi i caratteri per commento dalla riga 40:
 
    ```javascript
    // Output the results to a pre tag
@@ -112,7 +112,7 @@ Attualmente, il codice JSON viene renderizzato così com’è in un tag `pre`, m
    resultToDom(queryResult);
    ```
 
-1. Questa funzione eseguirà anche il rendering di tutte le immagini incluse nella risposta JSON come tag `img`. Se i frammenti di contenuto **Adventure** creati non includono immagini, puoi provare a usare la query persistente `aem-demo-assets/adventures-all` modificando la riga 25:
+1. Questa funzione eseguirà anche il rendering di tutte le immagini incluse nella risposta JSON come tag `img`. Se i frammenti di contenuto **Adventure** (Avventura) creati non includono immagini, puoi provare a usare la query persistente `aem-demo-assets/adventures-all` modificando la riga 25:
 
    ```javascript
    persistedQueryName = 'aem-demo-assets/adventures-all';
@@ -122,4 +122,4 @@ Questa query produce una risposta JSON che include le immagini e la funzione `re
 
 ![Risultato della query adventures-all e della funzione di rendering resultToDom](assets/do-not-localize/adventures-all-query-result.png)
 
-Ora che hai creato modelli e query, il tuo team addetto ai contenuti può procedere con il lavoro. Nel modulo successivo viene mostrato il flusso dell’autore di contenuto.
+Ora che hai creato modelli e query, il tuo team addetto ai contenuti può procedere con il lavoro. Nel modulo successivo viene mostrato il flusso per gli autori dei contenuti.
