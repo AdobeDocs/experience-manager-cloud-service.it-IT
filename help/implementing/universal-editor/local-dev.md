@@ -4,10 +4,10 @@ description: Scopri in che modo Universal Editor supporta la modifica sulle ista
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5a6795056090908652a72730939024e974a9a697
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 2%
+source-wordcount: '819'
+ht-degree: 4%
 
 ---
 
@@ -38,7 +38,7 @@ A questo scopo, devi configurare l’AEM per l’esecuzione su HTTPS. A scopo di
 
 Universal Editor Service non è un&#39;intera copia di Universal Editor, ma solo un sottoinsieme delle sue funzioni per garantire che le chiamate dall&#39;ambiente AEM locale non vengano instradate su Internet, ma da un endpoint definito controllato.
 
-Per eseguire una copia locale del servizio Editor universale è necessario [NodeJS versione 16](https://nodejs.org/en/download/releases).
+Per eseguire una copia locale del servizio Editor universale è necessario [NodeJS versione 20](https://nodejs.org/en/download/releases).
 
 Il servizio Universal Editor è disponibile tramite Software Distribution. Per informazioni dettagliate su come accedervi, consultare la [documentazione sulla distribuzione software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it).
 
@@ -56,25 +56,43 @@ $ openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certi
 
 Il comando genera un file `key.pem` e un file `certificate.pem`. Salvare questi file nello stesso percorso del file `universal-editor-service.cjs`.
 
-## Configurazione del servizio Editor universale {#setting-up-service}
+## Configurazione del servizio Universal Editor {#setting-up-service}
 
 È necessario impostare alcune variabili di ambiente in NodeJS per eseguire il servizio Universal Editor in locale.
 
 Nello stesso percorso dei file `universal-editor-service.cjs`, `key.pem` e `certificate.pem`, creare un file `.env` con il contenuto seguente.
 
 ```text
-EXPRESS_PORT=8000
-EXPRESS_PRIVATE_KEY=./key.pem
-EXPRESS_CERT=./certificate.pem
-NODE_TLS_REJECT_UNAUTHORIZED=0
+UES_PORT=8000
+UES_PRIVATE_KEY=./key.pem
+UES_CERT=./certificate.pem
+UES_TLS_REJECT_UNAUTHORIZED=false
 ```
 
-La variabile ha i seguenti significati:
+Nel nostro esempio, questi sono i valori minimi richiesti per lo sviluppo locale. La tabella seguente descrive questi e altri valori aggiuntivi disponibili.
 
-* `EXPRESS_PORT`: definisce la porta su cui il servizio Universal Editor è in ascolto
-* `EXPRESS_PRIVATE`: punta alla [chiave privata creata in precedenza,](#ue-https) `key.pem`
-* `EXPRESS_CERT`: punta al tuo [certificato creato in precedenza,](#ue-https) `certificate.pem`
-* `NODE_TLS_REJECT_UNAUTHORIZED=0`: accetta certificati autofirmati
+| Valore | Facoltativo | Predefiniti | Descrizione |
+|---|---|---|---|
+| `UES_PORT` | Sì | `8080` | Porta su cui viene eseguito il server |
+| `UES_PRIVATE_KEY` | Sì | Nessuno | Percorso della chiave privata per il server HTTPS |
+| `UES_CERT` | Sì | Nessuno | Percorso del file di certificazione per il server HTTPS |
+| `UES_TLS_REJECT_UNAUTHORIZED` | Sì | `true` | Rifiuta connessioni TLS non autorizzate |
+| `UES_DISABLE_IMS_VALIDATION` | Sì | `false` | Disattiva convalida IMS |
+| `UES_ENDPOINT_MAPPING` | Sì | Vuoto | Mappatura degli endpoint per le riscritture interne<br>Esempio: `UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br>Risultato: il servizio Editor universale si connetterà a `http://10.0.0.1:4502` invece della connessione specificata `https://your-public-facing-author-domain.net` |
+| `UES_LOG_LEVEL` | Sì | `info` | Livello di registro per il server. I valori possibili sono `silly`, `trace`, `debug`, `verbose`, `info`, `log`, `warn`, `error` e `fatal` |
+| `UES_SPLUNK_HEC_URL` | Sì | Nessuno | URL HEC per endpoint Splunk |
+| `UES_SPLUNK_TOKEN` | Sì | Nessuno | Token Splunk |
+| `UES_SPLUNK_INDEX` | Sì | Nessuno | Indice in cui scrivere i registri |
+| `UES_SPLUNK_SOURCE` | Sì | `universal-editor-service` | Nome dell&#39;origine nei registri di splunk |
+
+>[!NOTE]
+>
+>Prima della versione ](/help/release-notes/universal-editor/current.md) di [2024.08.13 di Universal Editor, nel file `.env` erano richieste le seguenti variabili. Questi valori saranno supportati fino al 1° ottobre 2024 per la compatibilità con le versioni precedenti.
+>
+>`EXPRESS_PORT=8000`
+>`EXPRESS_PRIVATE_KEY=./key.pem`
+>`EXPRESS_CERT=./certificate.pem`
+>`NODE_TLS_REJECT_UNAUTHORIZED=0`
 
 ## Esecuzione del servizio Editor universale {#running-ue}
 
