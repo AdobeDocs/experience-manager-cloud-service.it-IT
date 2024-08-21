@@ -4,7 +4,7 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
+source-git-commit: 1eeb15c16581c945beb90495801c525697a46710
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 81%
@@ -96,8 +96,7 @@ Con la versione di attivazione della funzione 2024.8.0 verrà fornito il set di 
 * ASSETS-40875 - La classe AssetDeleteHandler ascolta gli eventi di eliminazione delle risorse ed esegue azioni specifiche in base al tipo di evento di eliminazione (PRE_DELETE o POST_DELETE). In alcuni scenari, il tipo di evento POST_DELETE causa un’eccezione NullPointerException.
 * FORMS-14340 - Errore nella creazione di un’istanza di FormsAndDocumentOmniSearchHandler e CloudStorageSubmitActionInserter. Queste sono innocue istruzioni di registro.
 * FORMS-15818 - Voce del descrittore del componente &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.Istruzioni *.xml&#39; non trovate nei registri del server. Queste sono innocue istruzioni di registro.
-* 
-   * SITES-23662 - L’utente che attiva una pubblicazione non può essere estratto dalle istruzioni di registro JCR nei registri del server. Questa è una funzione in fase di sviluppo che potrebbe causare errori intermittenti e innocui di tipo &quot;Impossibile trovare un ID utente valido nel batch di eventi OSGI&quot; nel registro.
+* SITES-23662 - L’utente che attiva una pubblicazione non può essere estratto dalle istruzioni di registro JCR nei registri del server. Questa è una funzione in fase di sviluppo che potrebbe causare errori intermittenti e innocui di tipo &quot;Impossibile trovare un ID utente valido nel batch di eventi OSGI&quot; nel registro.
 
 ### Notifica di modifica {#change-notice-17465}
 
