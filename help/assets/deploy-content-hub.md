@@ -2,13 +2,13 @@
 title: Distribuisci [!DNL Content Hub]
 description: Scopri come distribuire e attivare Content Hub, fornire accesso agli utenti con diversi tipi di privilegi (caricare risorse, Adobi Express di utenti) e fornire privilegi di amministratore agli utenti.
 role: Admin
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: 58194858-6e1c-460b-bab3-3496176b2851
+source-git-commit: 1cc17d10a687ede6b3b091578ed20a39414bb235
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
-
 
 # Distribuire l’hub di contenuti {#deploy-content-hub}
 
@@ -64,15 +64,23 @@ Se hai poca esperienza con Experience Manager Assets, fai clic su **[!UICONTROL 
 
 ### Istanza di Content Hub e profilo di prodotto in Admin Console{#content-hub-instance-product-profile}
 
-Dopo l&#39;abilitazione di [Content Hub per Assets as a Cloud Service con Cloud Manager](#enable-content-hub), viene creata una nuova istanza in AEM Assets as a Cloud Service Admin Console con `contenthub` come suffisso:
+Dopo l&#39;abilitazione di [Content Hub per Assets as a Cloud Service con Cloud Manager](#enable-content-hub), viene creata una nuova istanza in AEM Assets as a Cloud Service Admin Console con `delivery` come suffisso:
 
 ![Nuova istanza per Content Hub](assets/new-instance-content-hub.png)
+
+>[!NOTE]
+>
+>Se è stato eseguito il provisioning di Content Hub prima del 14 agosto 2024, la nuova istanza viene creata con `contenthub` come suffisso.
 
 Tieni presente che il nome dell&#39;istanza per Content Hub non contiene `author` o `publish`.
 
 Fai clic sul nome dell’istanza per visualizzare il profilo di prodotto Content Hub.
 
 ![Profilo prodotto Content Hub](assets/content-hub-product-profile.png)
+
+>[!NOTE]
+>
+>Se hai eseguito il provisioning di Content Hub prima del 14 agosto 2024, il profilo di prodotto Content Hub presenta `contenthub` menzionato dopo `Limited Users` invece di `delivery`.
 
 ## Passaggio 2: onboarding di Content Hub administrator {#onboard-content-hub-administrator}
 
@@ -192,6 +200,3 @@ Per configurare gli utenti di Experience Manager Assets:
    >[!NOTE]
    >
    > Non è necessario essere aggiunti al [profilo di prodotto Content Hub](#onboard-content-hub-users) per gli utenti di Experience Manager Assets.
-
-
-
