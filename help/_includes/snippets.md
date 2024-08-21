@@ -1,8 +1,8 @@
 ---
-source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
+source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 95%
 
 ---
 # Snippet {#snippets}
@@ -80,7 +80,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
   </tr>
   <tr>
     <td>Impostare le opzioni dell’elenco a discesa </td>
-    <td>Le opzioni dell’elenco a discesa vengono impostate utilizzando la proprietà <b>Imposta le opzioni di</b> dell’editor di regole.</td>
+    <td>Le opzioni dell'elenco a discesa vengono impostate utilizzando la proprietà <b>Set Options of</b> dell'editor di regole.</td>
     <td>Le opzioni dell’elenco a discesa vengono impostate utilizzando le funzioni personalizzate. 
    </td>
    </tr>
@@ -92,7 +92,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
    </td>
    </tr>
       <tr>
-    <td>Convalida/Reimposta campo/pannello/regola modulo in “Then” </td>
+    <td>Convalida/Reimposta regola campo/pannello/modulo in "Then" </td>
     <td>Le funzioni di convalida e ripristino supportano solo l’oggetto modulo nell’editor di regole. 
    </td>
     <td>Le funzioni di convalida e ripristino supportano il modulo, il pannello o l’oggetto campo nell’editor di regole. 
@@ -127,3 +127,10 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 * [Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core](/help/forms/create-and-use-custom-functions.md)
 * [Creare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
 * [Esempi di sviluppo e utilizzo di funzioni personalizzate](/help/forms/custom-function-core-components-use-cases.md)
+
+
+## ELENCHI CONSENTITI IP e pipeline front-end {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>Aggiungere qui la nota importante.
