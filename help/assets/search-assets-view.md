@@ -4,7 +4,7 @@ description: Scopri come cercare e individuare le risorse nella vista AEM Assets
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 940e62432b8234f90c84d6c7a09dd60e643a3ae5
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 92%
@@ -237,7 +237,7 @@ Puoi aggiungere il logo del tuo brand e l’immagine di sfondo alla pagina Home 
 1. Accedi a **[!UICONTROL Personalizza la pagina Home Cerca prima]** e fai clic su **[!UICONTROL Anteprima]**. Attiva o disattiva **[!UICONTROL Tema scuro]** per visualizzare l’anteprima della pagina Home con tema scuro o chiaro.
 1. Fai clic su **[!UICONTROL Chiudi]** per chiudere la schermata di anteprima.
 
-   ![Anteprima della pagina Home Cerca prima](assets/search-first-preview.gif)
+   ![Anteprima della pagina Home Cerca prima](/help/assets/assets/search-first-preview.gif)
 
 ## Ricerca contestuale {#contextual-search}
 
@@ -253,7 +253,7 @@ Per accedere alla ricerca contestuale in Experience Manager Assets:
 
 1. Definisci il prompt di testo nella casella di testo Cerca e fai clic su **[!UICONTROL Ricerca contestuale]**.
 
-   ![Prompt del testo di ricerca contestuale](assets/contextual-search-text-prompt.png)
+   ![Prompt del testo di ricerca contestuale](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets] visualizza i risultati della ricerca.
 
