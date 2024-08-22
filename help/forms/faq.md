@@ -6,10 +6,10 @@ role: User
 feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 100%
+source-wordcount: '975'
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,8 @@ No, il passaggio di verifica non è disponibile per [!DNL Forms] as a Cloud Serv
 * **È possibile aggiungere grafici a un modulo adattivo?**
 Sì, puoi aggiungere grafici ai moduli adattivi. I moduli adattivi forniscono un componente grafico. È possibile utilizzarlo per aggiungere grafici a un modulo adattivo.
 
-* **È possibile collegare un modello dati del modulo (FDM) a un modello di database relazionale?**&#x200B;È possibile collegare un modello dati del modulo (FDM) a [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] e al profilo utente di Experience Manager come origini dati. Il supporto per il collegamento di un modello dati del modulo (FDM) a un database relazionale non è disponibile.
+* **È possibile collegare un modello di dati modulo a un modello di database relazionale?**
+È possibile connettere un modello dati modulo a [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] e un profilo utente di Experience Manager come origini dati. <!--Support to connect a Form Data Model with a relational database is not available.-->
 
 * **È possibile utilizzare certificati personalizzati con il modello dati del modulo (FDM) per l’autenticazione?** Il modello dati del modulo (FDM) non fornisce un metodo per utilizzare certificati personalizzati per l’autenticazione. Pertanto, i certificati personalizzati come x509 e SSL bidirezionale non sono supportati.
 
