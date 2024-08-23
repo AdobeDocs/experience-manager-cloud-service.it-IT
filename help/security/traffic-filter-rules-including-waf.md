@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3937'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Di seguito è riportato un processo end-to-end di alto livello consigliato per i
          action: block
    ```
 
-   Per una descrizione delle proprietà al di sopra del nodo `data`, vedere [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere impostato su *CDN* e la versione su `1`.
+   Consulta [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax) per una descrizione delle proprietà al di sopra del nodo `data`. Il valore della proprietà `kind` deve essere impostato su *CDN* e la versione su `1`.
 
 
 1. Se le regole WAF sono concesse in licenza, per gli scenari di programma nuovi ed esistenti, devi abilitare la funzione in Cloud Manager, come descritto di seguito.
@@ -110,7 +110,7 @@ Di seguito è riportato un processo end-to-end di alto livello consigliato per i
 
    1. Per configurare WAF su un programma esistente: [modifica il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) e nella scheda **Sicurezza** deseleziona o seleziona l’opzione **WAF-DDOS** in qualsiasi momento.
 
-1. Crea una pipeline di configurazione in Cloud Manager, come descritto nell’[articolo sulle pipeline di configurazione.](/help/operations/config-pipeline.md#managing-in-cloud-manager) La pipeline farà riferimento a una cartella `config` di primo livello con il file `cdn.yaml` posizionato in un punto qualsiasi al di sotto. Vedere [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure).
+1. Crea una pipeline di configurazione in Cloud Manager, come descritto nell’[articolo sulle pipeline di configurazione.](/help/operations/config-pipeline.md#managing-in-cloud-manager) La pipeline farà riferimento a una cartella `config` di primo livello con il file `cdn.yaml` posizionato in un punto qualsiasi al di sotto, consulta [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure).
 
 ## Sintassi delle regole di filtro del traffico {#rules-syntax}
 
@@ -215,7 +215,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Adobe consiglia di utilizzare [regex101](https://regex101.com/) e [Fastly Fiddle](https://fiddle.fastly.dev/), quando si lavora con regex. Per ulteriori informazioni su come Fastly gestisce regex, consulta la documentazione di [fastly: espressioni regolari in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
+* Adobe consiglia di utilizzare [regex101](https://regex101.com/) e [Fastly Fiddle](https://fiddle.fastly.dev/), quando si lavora con regex. Per ulteriori informazioni su come Fastly gestisce regex, consulta la [documentazione di fastly: espressioni regolari in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Struttura delle azioni {#action-structure}

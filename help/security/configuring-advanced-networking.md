@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5743'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -787,7 +787,7 @@ Se nell’area geografica primaria è già abilitata una configurazione di rete 
 La procedura è in gran parte simile alle istruzioni precedenti. Tuttavia, se l’ambiente di produzione non è ancora stato abilitato per la rete avanzata, è possibile testare la configurazione abilitandola prima in un ambiente di staging:
 
 1. Crea un’infrastruttura di rete per tutte le aree geografiche tramite chiamata POST all’[API Crea infrastruttura di rete di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). L’unica differenza nella configurazione JSON del payload rispetto all’area geografica primaria è la proprietà dell’area geografica.
-1. Per l’ambiente di staging, abilita e configura l’ambiente con ambito di rete avanzato eseguendo il comando `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Per ulteriori informazioni, consulta [la documentazione API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. Per l’ambiente di staging, abilita e configura l’ambiente con ambito di rete avanzato eseguendo il comando `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Per ulteriori informazioni, consulta la [documentazione dell’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration).
 1. Se necessario, blocca l’infrastruttura esterna, preferibilmente tramite FQDN (ad esempio `p1234.external.adobeaemcloud.com`). In alternativa, puoi farlo per indirizzo IP
 1. Se l’ambiente di staging funziona come previsto, abilita e configura la configurazione di rete avanzata con ambito di ambiente per la produzione.
 
