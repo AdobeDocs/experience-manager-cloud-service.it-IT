@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1eeb15c16581c945beb90495801c525697a46710
 workflow-type: tm+mt
 source-wordcount: '1176'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 17465 {#release-17465}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 17465, rilasciata al pubblico il giovedì 14 agosto 2024. La precedente versione di manutenzione era la 17258.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 17465, rilasciata al pubblico il 14 agosto 2024. La precedente versione di manutenzione era la 17258.
 
 Con la versione di attivazione della funzione 2024.8.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -89,14 +89,14 @@ Con la versione di attivazione della funzione 2024.8.0 verrà fornito il set di 
 * SITES-22203: API REST per frammenti di contenuto: allinea le API di gestione in modo che rispondano allo stesso modo per la stessa situazione.
 * SITES-21973: API REST per frammenti di contenuto: nel modello manca l’attributo univoco per i tipi di enumerazione.
 * SITES-20364: reindirizzamenti 302 non funzionanti con il selettore nell’URL.
-* SITES-21198 - VersionPreviewServlet: la pulizia viene eseguita contemporaneamente su tutti i nodi del cluster, causando conflitti di unione e blocchi commit.
+* SITES-21198: VersionPreviewServlet: la pulizia viene eseguita contemporaneamente in tutti i nodi del cluster, causando conflitti di unione e commit di blocchi.
 
 ### Problemi noti {#known-issues-17465}
 
-* ASSETS-40875 - La classe AssetDeleteHandler ascolta gli eventi di eliminazione delle risorse ed esegue azioni specifiche in base al tipo di evento di eliminazione (PRE_DELETE o POST_DELETE). In alcuni scenari, il tipo di evento POST_DELETE causa un’eccezione NullPointerException.
-* FORMS-14340 - Errore nella creazione di un’istanza di FormsAndDocumentOmniSearchHandler e CloudStorageSubmitActionInserter. Queste sono innocue istruzioni di registro.
-* FORMS-15818 - Voce del descrittore del componente &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.Istruzioni *.xml&#39; non trovate nei registri del server. Queste sono innocue istruzioni di registro.
-* SITES-23662 - L’utente che attiva una pubblicazione non può essere estratto dalle istruzioni di registro JCR nei registri del server. Questa è una funzione in fase di sviluppo che potrebbe causare errori intermittenti e innocui di tipo &quot;Impossibile trovare un ID utente valido nel batch di eventi OSGI&quot; nel registro.
+* ASSETS-40875: La classe AssetDeleteHandler ascolta gli eventi di eliminazione delle risorse ed esegue azioni specifiche in base al tipo di evento di eliminazione (PRE_DELETE o POST_DELETE). In alcuni scenari, il tipo di evento POST_DELETE causa un’eccezione NullPointerException.
+* FORMS-14340: Errore nella creazione di un’istanza di FormsAndDocumentOmniSearchHandler e CloudStorageSubmitActionInserter. Queste sono innocue istruzioni di registro.
+* FORMS-15818: Voce del descrittore del componente “OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml” istruzioni non trovate nei registri del server. Queste sono innocue istruzioni di registro.
+* SITES-23662: L’utente che attiva una pubblicazione non può essere estratto dalle istruzioni di registro JCR nei registri del server. Questo è per una funzione in fase di sviluppo che potrebbe causare errori intermittenti e innocui di tipo “Impossibile trovare un ID utente valido nel batch di eventi OSGI” nel registro.
 
 ### Notifica di modifica {#change-notice-17465}
 
@@ -104,13 +104,13 @@ Con la versione di attivazione della funzione 2024.8.0 verrà fornito il set di 
 
 ### Funzioni e API obsolete {#deprecated-17465}
 
-Si noti che è in corso l&#39;aggiornamento di `com.day.cq.wcm.api` e con la versione corrente sono stati contrassegnati come `@Deprecated` alcuni dei relativi metodi e classi. Questi verranno rimossi nelle versioni future, quindi se utilizzi uno di questi, valuta di passare alle alternative suggerite.
+Si noti che è in corso l’aggiornamento di `com.day.cq.wcm.api` e con la versione corrente sono stati contrassegnati come `@Deprecated` alcuni dei relativi metodi e classi. Questi verranno rimossi nelle versioni future, quindi se utilizzi uno di questi, valuta di passare alle alternative suggerite.
 
 Le funzioni e le API obsolete e rimosse in AEM as a Cloud Service sono descritte nei dettagli nel documento [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
 ### Correzioni di sicurezza {#security-17465}
 
-AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione affronta 7 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
+AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione riguarda 7 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
 
 ### Tecnologie incorporate {#embedded-tech-17465}
 
