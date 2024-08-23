@@ -4,10 +4,10 @@ description: Edge Delivery Services per AEM Forms sono stati progettati per offr
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
+source-git-commit: 5670e0ab7e6cb47bcc2dd7608aa3f01dc4ec0704
 workflow-type: tm+mt
 source-wordcount: '1043'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -104,7 +104,7 @@ I seguenti diagrammi illustrano il processo di creazione, pubblicazione e invio 
 * [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
-* [Monitoraggio degli utenti in tempo reale](https://www.aem.live/developer/rum#authentication)
+* [Monitoraggio per uso reale](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
