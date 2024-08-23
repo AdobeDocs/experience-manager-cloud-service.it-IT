@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
@@ -223,9 +223,9 @@ Per un layout dinamico efficace, l’autore di contenuto deve essere in grado di
 
 Per consentire agli autori di aggiungere ulteriori griglie reattive alle pagine di contenuto, devi abilitare il componente Contenitore di layout per la pagina. Puoi eseguire questa operazione utilizzando:
 
-* **Tramite l&#39;ambiente di authoring** - [Modifica i modelli di pagina](/help/sites-cloud/authoring/sites-console/templates.md) per abilitare il contenitore di layout per una pagina.
+* **Tramite l&#39;ambiente di authoring** - [Modifica i modelli di pagina](/help/sites-cloud/authoring/page-editor/templates.md) per abilitare il contenitore di layout per una pagina.
 * **Definizione componente**. Utilizzare `allowedComponent` o un&#39;inclusione statica durante la definizione del componente.
 
 ### Configurare la griglia del contenitore di layout {#configure-the-grid-of-the-layout-container}
 
-È possibile configurare il numero di colonne disponibili per ogni istanza specifica del contenitore di layout [modificando i modelli di pagina.](/help/sites-cloud/authoring/sites-console/templates.md)
+È possibile configurare il numero di colonne disponibili per ogni istanza specifica del contenitore di layout [modificando i modelli di pagina.](/help/sites-cloud/authoring/page-editor/templates.md)

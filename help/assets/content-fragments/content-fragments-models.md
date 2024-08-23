@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3011'
 ht-degree: 86%
@@ -387,7 +387,7 @@ Per implementare la governance dei contenuti, puoi configurare dei **Criteri** n
 
 >[!NOTE]
 >
-Il meccanismo è simile a [consentire modelli di pagina](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) per una pagina e i relativi elementi secondari, nelle proprietà avanzate di una pagina.
+Il meccanismo è simile a [consentire modelli di pagina](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) per una pagina e i relativi elementi secondari, nelle proprietà avanzate di una pagina.
 
 Per configurare i **Criteri** dei **Modelli per frammenti di contenuto consentiti**:
 

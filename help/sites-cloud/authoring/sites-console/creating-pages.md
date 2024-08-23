@@ -5,12 +5,13 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6e13244d7ba7bb6e7a51525b66274427fe21d664
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 29%
+source-wordcount: '477'
+ht-degree: 27%
 
 ---
+
 
 # Creazione delle pagine {#creating-pages}
 
@@ -38,9 +39,8 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
 
 1. Dal primo passaggio della procedura guidata, puoi effettuare le seguenti operazioni:
 
-   * Seleziona il modello da utilizzare per creare la nuova pagina, quindi seleziona **Successivo** per continuare.
-
-   * Seleziona **Annulla** per interrompere la procedura.
+   * Seleziona il modello da utilizzare per creare la nuova pagina, quindi seleziona **Successivo** per procedere o **Annulla** per interrompere il processo.
+   * I modelli sono supportati sia per l&#39;[Editor pagine](/help/sites-cloud/authoring/page-editor/introduction.md) che per l&#39;[Editor universale.](/help/edge/wysiwyg-authoring/templates.md)
 
    ![Selezione di un modello per una nuova pagina](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 

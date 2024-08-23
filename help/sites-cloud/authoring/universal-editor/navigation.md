@@ -4,7 +4,7 @@ description: Scopri le nozioni di base sull’accesso e la navigazione nell’Ed
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 36%
@@ -48,7 +48,7 @@ Una volta che l’app è dotata di strumenti per funzionare con l’editor unive
 
 >[!NOTE]
 >
->Durante la modifica di una pagina nella console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) la console aprirà l&#39;editor appropriato per il modello [ della pagina:](/help/sites-cloud/authoring/sites-console/templates.md) o l&#39;editor universale descritto in questo documento o l&#39;editor di [ pagine.](/help/sites-cloud/authoring/page-editor/introduction.md)
+>Durante la modifica di una pagina nella console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) la console aprirà l&#39;editor appropriato per il modello [ della pagina:](/help/sites-cloud/authoring/page-editor/templates.md) o l&#39;editor universale descritto in questo documento o l&#39;editor di [ pagine.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ### Accesso diretto {#accessing-directly}
 

@@ -4,7 +4,7 @@ description: Guida di riferimento per sviluppatori per i dettagli dei componenti
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 1%
@@ -223,9 +223,9 @@ Nella finestra di dialogo sono definiti i singoli campi:
 
 ### Finestre di dialogo per progettazione {#design-dialogs}
 
-Le finestre di dialogo per progettazione sono simili alle finestre di dialogo utilizzate per modificare e configurare il contenuto, ma forniscono agli autori di modelli l’interfaccia per la pro-configurazione e i dettagli di progettazione per tale componente su un modello di pagina. I modelli di pagina vengono quindi utilizzati dagli autori dei contenuti per creare pagine di contenuto. Per informazioni dettagliate sulla creazione dei modelli, consulta la [documentazione dei modelli](/help/sites-cloud/authoring/sites-console/templates.md).
+Le finestre di dialogo per progettazione sono simili alle finestre di dialogo utilizzate per modificare e configurare il contenuto, ma forniscono agli autori di modelli l’interfaccia per la pro-configurazione e i dettagli di progettazione per tale componente su un modello di pagina. I modelli di pagina vengono quindi utilizzati dagli autori dei contenuti per creare pagine di contenuto. Per informazioni dettagliate sulla creazione dei modelli, consulta la [documentazione dei modelli](/help/sites-cloud/authoring/page-editor/templates.md).
 
-[Le finestre di dialogo per progettazione vengono utilizzate durante la modifica di un modello di pagina](/help/sites-cloud/authoring/sites-console/templates.md), anche se non sono necessarie per tutti i componenti. Ad esempio, i componenti **Titolo** e **Immagine** dispongono entrambi di finestre di dialogo di progettazione, mentre il componente **Condivisione social media** no.
+[Le finestre di dialogo per progettazione vengono utilizzate durante la modifica di un modello di pagina](/help/sites-cloud/authoring/page-editor/templates.md), anche se non sono necessarie per tutti i componenti. Ad esempio, i componenti **Titolo** e **Immagine** dispongono entrambi di finestre di dialogo di progettazione, mentre il componente **Condivisione social media** no.
 
 ### Coral UI e Granite UI {#coral-and-granite}
 
@@ -280,7 +280,7 @@ Dopo aver creato un componente, devi abilitarlo per utilizzarlo. Il suo utilizzo
 
 Una volta definito, il componente deve essere reso disponibile per l’uso. Per rendere un componente disponibile per l’utilizzo in un modello, devi abilitarlo nel criterio del Contenitore di layout del modello.
 
-Per informazioni dettagliate sulla creazione dei modelli, consulta la [documentazione dei modelli](/help/sites-cloud/authoring/sites-console/templates.md).
+Per informazioni dettagliate sulla creazione dei modelli, consulta la [documentazione dei modelli](/help/sites-cloud/authoring/page-editor/templates.md).
 
 ### Componenti e contenuti creati {#components-and-the-content-they-create}
 

@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 79%
@@ -50,4 +50,4 @@ Oltre ai componenti core WCM, puoi utilizzare anche [Componenti core dei moduli 
 
 ### Configurazione dei modelli {#configuring-templates}
 
-Se la pagina è basata sul modello moderno consigliato e modificabile, puoi [modificare il modello](/help/sites-cloud/authoring/sites-console/templates.md) per attivarlo o disattivarlo, nonché modificare i parametri di componenti specifici.
+Se la pagina è basata sul modello moderno consigliato e modificabile, puoi [modificare il modello](/help/sites-cloud/authoring/page-editor/templates.md) per attivarlo o disattivarlo, nonché modificare i parametri di componenti specifici.

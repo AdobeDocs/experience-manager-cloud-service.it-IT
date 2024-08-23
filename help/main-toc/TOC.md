@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a9b7e2fbafcfc4b5592cc95e6bbd1e8e0f631757
+source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
 workflow-type: tm+mt
-source-wordcount: '5340'
-ht-degree: 100%
+source-wordcount: '5348'
+ht-degree: 99%
 
 ---
 
@@ -319,7 +319,6 @@ ht-degree: 100%
          + [Proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md)
          + [Anteprima delle pagine](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Pubblicazione delle pagine](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
-         + [Modelli di pagina](/help/sites-cloud/authoring/sites-console/templates.md)
          + [Versioni di pagina](/help/sites-cloud/authoring/sites-console/page-versions.md)
          + [Differenze tra pagine](/help/sites-cloud/authoring/sites-console/page-diff.md)
          + [Utilizzo dei tag](/help/sites-cloud/authoring/sites-console/tags.md)
@@ -330,6 +329,7 @@ ht-degree: 100%
          + [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [Pannello laterale editor](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [Modifica delle pagine](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [Modelli di pagina](/help/sites-cloud/authoring/page-editor/templates.md)
          + [Aggiunta di annotazioni di pagina](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [Editor Rich Text](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
          + [Layout reattivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
@@ -344,6 +344,7 @@ ht-degree: 100%
          + [Authoring dei contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Pubblicazione di contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [Ereditarietà di contenuti nell’editor universale](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [Modelli di pagina](/help/edge/wysiwyg-authoring/templates.md)
       + Frammenti {#fragments}
          + [Frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Frammenti di esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -886,6 +887,8 @@ ht-degree: 100%
       + [Modellazione dei contenuti](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [Dati tabulari e fogli di calcolo](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [Progetti esistenti e Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
+      + [Gestione dei dati di tassonomia](/help/edge/wysiwyg-authoring/taxonomy.md)
+      + [Funzioni siti WIP](/help/edge/wysiwyg-authoring/wip-features.md)
    + Authoring basato su documenti {#document-authoring}
       + [Authoring](/help/edge/docs/authoring.md)
       + [Metadati in blocco](/help/edge/docs/bulk-metadata.md)

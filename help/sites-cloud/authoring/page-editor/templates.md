@@ -2,9 +2,12 @@
 title: Creazione di modelli di pagina
 description: Il modello definisce la struttura della pagina risultante e, grazie all’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: c79aeaab9d33f1c2a15f93d58847798c6caff31c
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4524'
 ht-degree: 84%
 
 ---
@@ -13,7 +16,7 @@ ht-degree: 84%
 
 Quando crei una pagina, devi selezionare un modello, che viene utilizzato come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, tutto il contenuto iniziale e i componenti che possono essere utilizzati.
 
-Con **Editor modelli**, la creazione e la manutenzione dei modelli non è un&#39;attività riservata agli sviluppatori. Può essere coinvolto anche un tipo di “power user”, detto **autore dimodelli**. Gli sviluppatori devono comunque occuparsi di configurare l’ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che questi elementi di base sono implementati, l’**autore del modello** avrà la flessibilità di creare e configurare i modelli senza un progetto di sviluppo.
+Con l’**Editor modelli**, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori. Può essere coinvolto anche un tipo di “power user”, detto **autore dimodelli**. Gli sviluppatori devono comunque occuparsi di configurare l’ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che questi elementi di base sono implementati, l’**autore del modello** avrà la flessibilità di creare e configurare i modelli senza un progetto di sviluppo.
 
 La **Console modelli** consente agli autori di modelli di:
 
@@ -78,7 +81,7 @@ Quando crei un modello modificabile:
    * [Struttura](#editing-a-template-structure-template-author): contenuto predefinito che non può essere modificato nelle pagine create con il modello.
    * [Contenuto iniziale](#editing-a-template-initial-content-author): contenuto predefinito che potrà essere modificato nelle pagine create con il modello.
    * [Layout](#editing-a-template-layout-template-author): per una vasta gamma di dispositivi.
-   * [Stili](/help/sites-cloud/authoring/features/style-system.md): definisci gli stili da utilizzare con il modello e i suoi componenti.
+   * [Stili](/help/sites-cloud/authoring/page-editor/style-system.md): definisci gli stili da utilizzare con il modello e i suoi componenti.
 * [Abilita il modello](#enabling-a-template-template-author) da utilizzare durante la creazione di una pagina
 * [Consenti il modello](#allowing-a-template-author) per la pagina o la sezione richiesta del sito web
 * [Pubblica il modello](#publishing-a-template-template-author) per renderlo disponibile nell’ambiente di pubblicazione
@@ -184,7 +187,7 @@ Un modello può essere abilitato o disabilitato per renderlo disponibile o non d
 
 1. Nella **console Modelli**, seleziona il modello.
 1. Seleziona **Abilita** o **Disabilita** nella barra degli strumenti e di nuovo nella finestra di dialogo di conferma.
-1. È ora possibile utilizzare il modello durante la [creazione di una pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), anche se probabilmente si desidera [modificare il modello](#editing-templates-template-authors) in base alle proprie esigenze.
+1. È ora possibile utilizzare il modello durante la [creazione di una pagina](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), anche se probabilmente si desidera [modificare il modello](#editing-templates-template-authors) in base alle proprie esigenze.
 
 >[!NOTE]
 >
@@ -194,7 +197,7 @@ Un modello può essere abilitato o disabilitato per renderlo disponibile o non d
 
 Un modello può essere reso disponibile o non disponibile per alcuni rami di pagina.
 
-1. Apri le [Proprietà pagina](/help/sites-cloud/authoring/fundamentals/page-properties.md) per la pagina principale del ramo in cui desideri rendere disponibile il modello.
+1. Apri le [Proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md) per la pagina principale del ramo in cui desideri rendere disponibile il modello.
 1. Apri la scheda **Avanzate**.
 1. In **Impostazioni modello** utilizza **Aggiungi campo** per specificare il percorso del modello.
 
@@ -270,7 +273,7 @@ Quando un componente è stato sbloccato, è possibile definire il [contenuto ini
 
 #### Layout {#template-layout}
 
-Con il [layout](#editing-a-template-layout-template-author) è possibile predefinire il layout del modello per i formati di dispositivo richiesti. La modalità **Layout** per la creazione dei modelli ha le stesse funzionalità della modalità [**Layout** per la creazione delle pagine.](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)
+Con il [layout](#editing-a-template-layout-template-author) è possibile predefinire il layout del modello per i formati di dispositivo richiesti. La modalità **Layout** per la creazione dei modelli ha le stesse funzionalità della modalità [**Layout** per la creazione delle pagine.](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)
 
 #### Criteri di pagina {#template-page-policies}
 
@@ -278,9 +281,9 @@ Con il [layout](#editing-a-template-layout-template-author) è possibile predefi
 
 #### Stili {#template-styles}
 
-Il [sistema di stili](/help/sites-cloud/authoring/features/style-system.md) consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
+Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
 
-Per ulteriori informazioni, consulta la [documentazione sul sistema di stili](/help/sites-cloud/authoring/features/style-system.md).
+Per ulteriori informazioni, consultare la [documentazione sul sistema di stili](/help/sites-cloud/authoring/page-editor/style-system.md).
 
 ### Modifica di un modello - Struttura - Autore del modello {#editing-a-template-structure-template-author}
 
@@ -319,7 +322,7 @@ Una volta aggiunto, ogni componente viene contrassegnato con:
 
 >[!NOTE]
 >
->Sebbene non sia identica, l’aggiunta di componenti e risorse a un modello ha molte somiglianze con azioni simili durante la [creazione di pagine](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+>Sebbene non sia identica, l&#39;aggiunta di componenti e risorse a un modello ha molte somiglianze con azioni simili durante l&#39;authoring di [pagine.](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 #### Azioni dei componenti {#component-actions}
 
@@ -536,7 +539,7 @@ Sebbene tutto il contenuto creato in modalità **Struttura** sia visibile nel **
 
 ### Modifica di un modello - Layout - Autore del modello {#editing-a-template-layout-template-author}
 
-È possibile definire il layout del modello per una serie di dispositivi. Il [Layout reattivo](/help/sites-cloud/authoring/features/responsive-layout.md) per i modelli funziona come per la creazione delle pagine.
+È possibile definire il layout del modello per una serie di dispositivi. Il [Layout reattivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) per i modelli funziona come per la creazione delle pagine.
 
 >[!NOTE]
 >
@@ -611,7 +614,7 @@ Con le proprietà della pagina è possibile definire le librerie lato client ric
 
 ### Modifica di un modello - Proprietà pagina iniziale - Autore {#editing-a-template-initial-page-properties-author}
 
-L’opzione **Proprietà pagina iniziale** consente di definire le [proprietà della pagina iniziale](/help/sites-cloud/authoring/fundamentals/page-properties.md) da utilizzare per la creazione delle pagine risultanti.
+L’opzione **Proprietà pagina iniziale** consente di definire le [proprietà della pagina iniziale](/help/sites-cloud/authoring/sites-console/page-properties.md) da utilizzare per la creazione delle pagine risultanti.
 
 1. Dall’editor dei modelli, seleziona **Informazioni pagina** dalla barra degli strumenti, quindi **Proprietà pagina iniziale** per aprire la finestra di dialogo.
 

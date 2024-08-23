@@ -4,10 +4,10 @@ description: Scopri come utilizzare i fogli di calcolo per gestire i dati tabula
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 98%
+source-wordcount: '970'
+ht-degree: 97%
 
 ---
 
@@ -130,6 +130,7 @@ Ora che sai come creare un foglio di calcolo di reindirizzamento, puoi creare qu
 * Metadati
 * Intestazioni
 * Configurazione
+* [Tassonomia](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Segui semplicemente gli stessi passaggi descritti nelle sezioni [Crea foglio di calcolo](#spreadsheet) e [Aggiorna paths.json](#paths-json), scegli il modello appropriato e aggiorna il file `paths.json` in modo appropriato.
 
@@ -138,6 +139,7 @@ Per [Configurazione](https://www.aem.live/docs/configuration), [Intestazioni](ht
 * Configurazione: `/.helix/config.json`
 * Intestazioni: `/.helix/headers.json`
 * Metadati: `/metadata.json`
+* Tassonomia: per ulteriori informazioni, vedere il documento [Gestione dei dati di tassonomia](/help/edge/wysiwyg-authoring/taxonomy.md).
 
 Inoltre, è possibile [creare un foglio di calcolo personalizzato](#own-spreadsheet) con colonne arbitrarie per uso personale.
 

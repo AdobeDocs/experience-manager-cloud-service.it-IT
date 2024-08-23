@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '2099'
 ht-degree: 92%
@@ -95,7 +95,7 @@ La creazione di cartelle consente di:
 
   >[!NOTE]
   >
-  >Per creare un modello personalizzato, puoi utilizzare [l’editor modelli](/help/sites-cloud/authoring/sites-console/templates.md).
+  >Per creare un modello personalizzato, puoi utilizzare [l’editor modelli](/help/sites-cloud/authoring/page-editor/templates.md).
 
 Nel progetto WKND alcuni frammenti esperienza vengono strutturati in base a `Contributors`. La struttura utilizzata illustra anche come utilizzare altre funzioni, come la gestione multisito (incluse le copie per lingua).
 

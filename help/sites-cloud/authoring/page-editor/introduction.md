@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
@@ -18,7 +18,7 @@ Una volta creata la pagina nella console [**Sites**,](/help/sites-cloud/authorin
 
 >[!NOTE]
 >
->Durante la modifica di una pagina nella console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) la console aprirà l&#39;editor appropriato per il modello [ della pagina:](/help/sites-cloud/authoring/sites-console/templates.md) o l&#39;editor di pagine descritto in questo documento o [Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>Durante la modifica di una pagina nella console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) la console aprirà l&#39;editor appropriato per il modello [ della pagina:](/help/sites-cloud/authoring/page-editor/templates.md) o l&#39;editor di pagine descritto in questo documento o [Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Questo fornisce accesso a informazioni di pagina dettagliate, inclusi i dettagli
 * [Blocca pagina](/help/sites-cloud/authoring/page-editor/introduction.md#locking-unlocking)
 * [Pubblica pagina](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
 * [Annulla pubblicazione pagina](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
-* [Modifica modello](/help/sites-cloud/authoring/sites-console/templates.md)
+* [Modifica modello](/help/sites-cloud/authoring/page-editor/templates.md)
 * [Visualizza come pubblicato](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
 * [Visualizza in Amministrazione](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Aiuto](/help/sites-cloud/authoring/basic-handling.md#accessing-help)
