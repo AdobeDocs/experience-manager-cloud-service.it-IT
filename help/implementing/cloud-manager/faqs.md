@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Questo documento fornisce risposte alle domande più frequenti su Cloud Manager 
 
 Sì. Aggiungi il `maven-toolchains-plugin` con le impostazioni appropriate per Java™ 11.
 
-Il processo è documentato. Vedere [Creazione guidata progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+Il processo è documentato: consulta [Procedura guidata per la creazione di progetti](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
 
 Ad esempio, consulta il [codice del progetto di esempio WKND](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
@@ -33,7 +33,7 @@ Quando si tenta di passare da Java™ 8 a 11, la build di AEM Cloud Manager potr
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 > [Help 1]
 ```
 
-Per istruzioni su come rimuovere questo plug-in, vedi [Da annotazioni SCR ad annotazioni OSGI](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+Per istruzioni su come rimuovere questo plug-in, consulta [Da annotazioni SCR ad annotazioni OSGI](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
 ## Dopo il passaggio da Java™ 8 a Java™ 11, la build restituisce un errore relativo a RequireJavaVersion. Cosa posso fare? {#build-fails-requirejavaversion}
 
@@ -61,11 +61,11 @@ Questo valore consente di installare la distribuzione successiva anche se la ver
 
 È possibile impostare la versione su `-SNAPSHOT` per le build o le implementazioni negli ambienti di staging e produzione. Cloud Manager imposta automaticamente un numero di versione corretto e crea un tag in Git per l’utente. Se necessario, è possibile fare riferimento a questo tag in un secondo momento.
 
-Per ulteriori dettagli sulla gestione delle versioni, vedi [Gestione delle versioni dei progetti Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Per ulteriori dettagli sulla gestione delle versioni, consulta [Gestione delle versioni dei progetti Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Come funziona il controllo delle versioni di pacchetti e bundle per le distribuzioni negli ambienti di staging e produzione? {#snapshot-version}
 
-Nelle distribuzioni negli ambienti di staging e produzione viene generata una versione automatica. Vedere [Gestione versioni progetto Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Nelle distribuzioni in ambienti di staging e produzione, viene generata una versione automatica: consulta [Gestione delle versioni dei progetti Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Per il controllo delle versioni personalizzato per le distribuzioni negli ambienti di staging e produzione, imposta una versione Maven in tre parti appropriata, come ad esempio `1.0.0`. Aumenta il numero della versione per ogni esecuzione della distribuzione nell’ambiente di produzione.
 
