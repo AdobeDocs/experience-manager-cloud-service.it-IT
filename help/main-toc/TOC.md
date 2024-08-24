@@ -1000,7 +1000,7 @@ ht-degree: 99%
          + [Come accedere ai contenuti tramite API di consegna AEM](/help/journey-headless/developer/access-your-content.md)
          + [Come aggiornare i contenuti tramite API di AEM Assets](/help/journey-headless/developer/update-your-content.md)
          + [Come mettere tutto insieme](/help/journey-headless/developer/put-it-all-together.md)
-         + [Come vivere con la tua applicazione headless](/help/journey-headless/developer/go-live.md)
+         + [Come pubblicare con la tua applicazione headless](/help/journey-headless/developer/go-live.md)
          + [Facoltativo - Come creare applicazioni a pagina singola con AEM](/help/journey-headless/developer/create-spa.md)
          + [Portale per sviluppatori (risorse aggiuntive)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
       + Percorso Architect di contenuti headless {#architect}
