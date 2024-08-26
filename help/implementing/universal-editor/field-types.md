@@ -4,10 +4,10 @@ description: Scopri i campi e i tipi di componenti che possono essere modificati
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9e808f2d4b57d6b1043f2e3e6300a1e37f3cbb35
+source-git-commit: 8516cf6e9ec080824848a2b84fd669eddfaa3165
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 11%
+source-wordcount: '1185'
+ht-degree: 12%
 
 ---
 
@@ -99,6 +99,7 @@ Di seguito sono elencati i tipi di componenti che è possibile utilizzare per il
 | [Contenitore](#container) | `container` |
 | [Frammento di contenuto](#content-fragment) | `aem-content-fragment` |
 | [Data e ora](#date-time) | `date-time` |
+| [Frammento esperienza](#experience-fragment) | `aem-experience-fragment` |
 | [Selezione multipla](#multiselect) | `multiselect` |
 | [Numero](#number) | `number` |
 | [Gruppo pulsanti di scelta](#radio-group) | `radio-group` |
