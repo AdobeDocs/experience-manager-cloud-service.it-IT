@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: f41e2f6ce39fff9615e35928d3f569e9254325d0
+source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
 workflow-type: tm+mt
 source-wordcount: '9406'
 ht-degree: 2%
@@ -143,7 +143,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 * Configura i lettori video in base alle tue esigenze di branding.
 * Integra il video nel tuo sito web, sito mobile o app mobile con un semplice URL o codice da incorporare.
 
-Vedi [Riproduzione video dinamica](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) esempio.
+<!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
 Vedere anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizzatori solo per Experience Manager Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) nella [Guida di riferimento visualizzatori Dynamic Medie](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
@@ -562,7 +562,7 @@ L’abilitazione di una qualsiasi delle tre funzionalità precedenti, le abilita
 
 ## Informazioni sul supporto di più didascalie e tracce audio per video in Dynamic Medie{#about-msma}
 
-Con la funzionalità di didascalia multipla e traccia audio in Dynamic Medie, è possibile aggiungere facilmente più didascalie e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono gestire anche le didascalie e le tracce audio da una singola scheda nell’interfaccia utente.
+Con la funzionalità di didascalia multipla e traccia audio in Dynamic Medie, è possibile aggiungere facilmente più didascalie e tracce audio a un video principale. Grazie a questa funzionalità, i tuoi video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono gestire anche le didascalie e le tracce audio da una singola scheda nell’interfaccia utente.
 
 ![Scheda Sottotitoli e tracce audio in Dynamic Medie insieme a una tabella che mostra i file di didascalia .VTT caricati e i file di traccia audio .MP3 caricati per un video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
@@ -609,7 +609,7 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
    >[!TIP]
    >Se la scheda [!UICONTROL Sottotitoli e tracce audio] non è visualizzata, significa che è presente uno dei due elementi seguenti:
    >* Alla cartella in cui si trova il video selezionato non è assegnato alcun profilo video. In tal caso, vedere [Applicare un profilo video alla cartella](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
-   >* In alternativa, il video deve essere rielaborato da Dynamic Medie. In tal caso, vedere [Rielaborare le risorse Dynamic Medie in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >* In alternativa, Dynamic Medie deve rielaborare il video. In tal caso, vedere [Rielaborare le risorse Dynamic Medie in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
    Dopo aver completato una delle attività di cui sopra, torna a questi passaggi.
 
@@ -618,7 +618,7 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
 1. (Facoltativo) Per aggiungere uno o più file di didascalia a un video, effettuate le seguenti operazioni:
 
    * Seleziona **[!UICONTROL Carica didascalie]**.
-   * Passa a uno o più file .vtt (Video Text Tracks) e selezionali, quindi aprili.
+   * Individuare e selezionare uno o più file `.vtt` (tracce di testo video) e aprirli.
    * Affinché i sottotitoli siano visibili sul lettore multimediale, devi aggiungere i dettagli richiesti (metadati) su ciascun file di sottotitoli caricato. Seleziona l’icona a forma di matita a destra del nome di un file di didascalia. Nella finestra di dialogo Modifica didascalia, immetti i seguenti dettagli richiesti sul file, quindi seleziona **[!UICONTROL Salva]**. Ripeti questa procedura per ogni file di didascalia caricato:
 
 
@@ -626,7 +626,7 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
    | --- | --- | 
    | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Impossibile utilizzare lo stesso nome di file per ulteriori file di didascalia e tracce audio. |
    | Lingua | Selezionare la lingua della didascalia. |
-   | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo**: il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include anche i rumori di fondo, la differenziazione degli altoparlanti e altre informazioni rilevanti, oltre alla traduzione o alla trascrizione della finestra di dialogo, rendendo il contenuto più accessibile per gli utenti non udenti o ipoudenti. |
+   | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo**: il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include i rumori di sottofondo e l&#39;identificazione dell&#39;oratore. Oltre alla traduzione o trascrizione del dialogo, essa contiene anche altri dettagli pertinenti. Questa funzionalità rende il contenuto più accessibile agli utenti non udenti o ipoudenti. |
    | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Ad esempio, Inglese (CC). |
 
    Se necessario, puoi modificare i metadati dei sottotitoli in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
@@ -635,7 +635,7 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
 
    * Seleziona **[!UICONTROL Carica tracce audio]**.
    * Passa a uno o più file .mp3 e selezionali, quindi aprili.
-   * Affinché le tracce audio siano visibili nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** sul lettore multimediale, è necessario aggiungere i dettagli richiesti su ogni file di traccia audio aggiunto. Selezionate l&#39;icona della matita a destra del nome di un file di traccia audio. Nella finestra di dialogo Modifica traccia audio, immetti i seguenti dettagli richiesti, quindi seleziona **[!UICONTROL Salva]**. Ripetere questa procedura per ogni file di traccia audio caricato.
+   * Per rendere visibili i brani audio nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** sul lettore multimediale, aggiungere i dettagli richiesti per ogni file di brano audio. Assicurarsi di includere tutte le informazioni necessarie per una corretta visualizzazione. Selezionate l&#39;icona della matita a destra del nome di un file di traccia audio. Nella finestra di dialogo Modifica traccia audio, immetti i seguenti dettagli richiesti, quindi seleziona **[!UICONTROL Salva]**. Ripetere questa procedura per ogni file di traccia audio caricato.
 
    | Metadati traccia audio | Descrizione |
    | --- | --- |
@@ -931,7 +931,7 @@ Nella finestra di dialogo **Imposta come predefinito**, seleziona **[!UICONTROL 
 1. Nell&#39;angolo superiore destro selezionare **[!UICONTROL Salva e chiudi]**.
 1. Publish il video. Consulta [Risorse Publish](publishing-dynamicmedia-assets.md).
 
-### Visualizzare in anteprima un video con più sottotitoli e tracce audio{#preview-video-audio-subtitle}
+### Visualizzare in anteprima un video con più sottotitoli e tracce audio {#preview-video-audio-subtitle}
 
 Dopo aver caricato i file di didascalia e di traccia audio in un video ed elaborato, potete utilizzare il visualizzatore video Dynamic Medie per visualizzare in anteprima tutte le diverse tracce. In questo modo è possibile vedere l&#39;aspetto e l&#39;audio del video per i clienti e assicurarsi che si comporti come previsto.
 
@@ -993,7 +993,7 @@ Non è possibile scaricare la traccia audio originale estratta da un file video 
 
 **Caso d&#39;uso:** Il download di un file di didascalia potrebbe essere necessario se si verifica un errore in un file `.vtt`. È sufficiente scaricare il file `.vtt` errato, aprirlo in un editor di testo normale e apportare le correzioni necessarie. Dopo aver salvato il file `.vtt`, caricalo di nuovo. Quindi, utilizza l&#39;opzione **[!UICONTROL Traduci didascalie]** per tradurre nuovamente il file `.vtt` corretto.
 
-**Per scaricare i file di didascalia o di traccia audio da un video:**
+**Per scaricare i file di didascalia o di traccia audio caricati in un video:**
 
 1. Passa alla risorsa video di cui desideri impostare la traccia audio predefinita.
 1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
@@ -1182,7 +1182,7 @@ Quando si modifica la miniatura di un video, viene ignorata la generazione della
 
 La possibilità di personalizzare una miniatura video è disponibile solo dopo aver applicato un profilo video alla cartella in cui si trova il video.
 
-### Aggiunta di una miniatura video personalizzata {#adding-a-custom-video-thumbnail}
+### Aggiungi una miniatura video personalizzata {#adding-a-custom-video-thumbnail}
 
 1. Accertati di aver già eseguito le seguenti operazioni:
 

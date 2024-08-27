@@ -1,8 +1,9 @@
 ---
 title: Gestione dei dati di tassonomia
 description: Scopri come gestire i dati della tassonomia per utilizzare i tag con il tuo AEM con i siti Edge Delivery Services.
+feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: f6716611efa3de845ead15048eab89243bdedcc1
+source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 7%

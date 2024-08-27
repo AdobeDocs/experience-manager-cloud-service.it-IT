@@ -1,7 +1,9 @@
 ---
 title: Note sulla versione 2024.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Note sulla versione 2024.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: effb2f01dc26a7ab80b18c9e80ecc7286cb67284
+feature: Release Information
+role: Admin
+source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 100%
@@ -130,7 +132,7 @@ Questa versione apporta un aggiornamento significativo all’editor di regole vi
 
 Il programma di accesso anticipato per AEM Forms offre un’opportunità unica per ottenere l’accesso esclusivo a innovazioni all’avanguardia prima di chiunque altro e contribuire a definirne lo sviluppo. Il programma offre l’accesso a molteplici innovazioni.
 
-In queste note sulla versione sono elencate le innovazioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma per l’accesso anticipato, consulta la [Documentazione del programma per l’accesso anticipato ad AEM Forms](/help/forms/early-access-ea-features.md).
+In queste note sulla versione sono elencate le innovazioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma per l’accesso anticipato, consulta la [documentazione del programma per l’accesso anticipato ad AEM Forms](/help/forms/early-access-ea-features.md).
 
 #### Metodi di protezione bot migliorati
 

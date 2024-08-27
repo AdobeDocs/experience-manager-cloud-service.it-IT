@@ -1,10 +1,10 @@
 ---
 title: Note sulla versione 2022.1.0 degli strumenti di migrazione in AEM as a Cloud Service
 description: Note sulla versione 2022.1.0 degli strumenti di migrazione in AEM as a Cloud Service
-feature: Release Information
 exl-id: cbd0c316-bda3-48fb-89d6-a8f97bad1970
+feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 6%
