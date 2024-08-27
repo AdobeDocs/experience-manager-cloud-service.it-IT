@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8728af7d9baee0c9324c1e9be1ae66d105396c40
+source-git-commit: 7a1181a372928602b8fd0eb4699789217473a94c
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 73%
@@ -133,5 +133,5 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 
 >[!IMPORTANT]
 >
->Se per lo sviluppo di siti utilizzi, o desideri utilizzare, la pipeline front-end, è necessario aggiungere in anticipo l’Elenco consentiti IP di Cloud Manager.
+>Se utilizzi, o intendi utilizzare, la pipeline front-end per sviluppare siti, è necessario aggiungere in anticipo l’Elenco consentiti IP di Cloud Manager.
 >Consulta [Utilizzo dell&#39;Elenco consentiti IP di Cloud Manager con la pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).

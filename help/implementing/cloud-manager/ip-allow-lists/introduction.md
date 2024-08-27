@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: 96179c5f88e8546c12674e34afd0269c1f196d65
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 15%
@@ -34,7 +34,7 @@ Dopo l&#39;aggiunta, è possibile applicare o rimuovere più volte [Elenchi cons
 
 ## Utilizzo dell’Elenco consentiti IP di Cloud Manager con la pipeline front-end {#allowlists-frontend-pipeline}
 
-Se si utilizza, o si intende utilizzare, la pipeline [front-end per sviluppare siti](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md), è necessario aggiungere in anticipo il seguente Elenco consentiti IP di Cloud Manager.
+Se si utilizza, o si intende utilizzare, la pipeline front-end [per sviluppare siti](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md), è necessario aggiungere in anticipo il seguente Elenco consentiti IP di Cloud Manager.
 
 Quando [aggiungi l&#39;Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist), denominalo *`Cloud Manager`*, quindi copia l&#39;elenco di indirizzi seguente e incollali nella finestra di dialogo Elenco consentiti IP.
 
