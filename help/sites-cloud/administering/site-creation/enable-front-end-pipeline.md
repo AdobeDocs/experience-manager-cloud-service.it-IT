@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 47%
+ht-degree: 45%
 
 ---
 
@@ -50,7 +50,7 @@ AEM puà adattare automaticamente il sito esistente per utilizzare la pipeline f
 
 {{add-cm-allowlist-frontend-pipeline}}
 
-L’abilitazione del sito viene eseguita dalla console Sites utilizzando la [Barra del sito.](site-rail.md)
+L&#39;abilitazione del sito viene eseguita dalla console Sites utilizzando la [barra Sito](site-rail.md).
 
 1. Accedi ad AEM e naviga sul tuo sito tramite la **Navigazione globale** > **Sites**.
 1. Seleziona il sito nella console. Seleziona la directory principale del sito e non le pagine figlie.
