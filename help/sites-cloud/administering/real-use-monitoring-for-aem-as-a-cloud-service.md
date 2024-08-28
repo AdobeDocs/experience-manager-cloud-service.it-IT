@@ -4,10 +4,10 @@ description: Scopri come utilizzare il monitoraggio in tempo reale (RUM, Real Us
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8ccef0103ae7fb75171431eeb36f7352f6467d56
+source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 0%
+source-wordcount: '1282'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Il monitoraggio lato client funziona solo per i clienti con AEM Cloud Service versione **2024.5.16461** e successive.
+>Il monitoraggio lato client funziona solo per i clienti con Cloud Service AEM (Adobe Experience Manager) versione **2024.5.16461** e successive.
 
 ## Panoramica {#overview}
 
-Il servizio Real Use Monitoring (RUM) è una tecnologia di monitoraggio delle prestazioni che acquisisce e analizza in tempo reale le esperienze utente digitali di un sito web o di un’applicazione. Fornisce visibilità sulle prestazioni in tempo reale di un’applicazione web e approfondisce l’esperienza dell’utente finale. Il servizio si concentra sull’ottimizzazione delle prestazioni monitorando gli impegni del sito web, anziché gli utenti stessi.
+Il servizio RUM (Real Use Monitoring) è una tecnologia di monitoraggio delle prestazioni che acquisisce e analizza in tempo reale le esperienze utente digitali di un sito web o di un’applicazione. Fornisce visibilità sulle prestazioni in tempo reale di un’applicazione web e approfondisce l’esperienza dell’utente finale. Il servizio si concentra sull’ottimizzazione delle prestazioni monitorando gli impegni del sito web, anziché gli utenti stessi.
 
 Con RUM, le metriche delle prestazioni chiave vengono tracciate direttamente dall’avvio dell’URL fino a quando la richiesta non viene trasmessa al browser. Aiuta gli sviluppatori a migliorare l’applicazione per facilitarne l’utilizzo per gli utenti finali.
 
@@ -33,9 +33,8 @@ Con RUM, le metriche delle prestazioni chiave vengono tracciate direttamente dal
 
 ## Chi può trarre vantaggio da un servizio di monitoraggio di utilizzo reale? {#who-can-benefit-from-rum-service}
 
-Il servizio Real Use Monitoring è utile per tutti i clienti. Offre un riflesso rappresentativo delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web acquisendo il numero di visualizzazioni di pagina lato client.
+L’AEM ha sviluppato il RUM per aiutare i clienti e gli Adobi a comprendere come i visitatori interagiscono con i siti AEM. RUM può essere utilizzato per aiutare a diagnosticare i problemi di prestazioni e misurare l&#39;efficacia degli esperimenti. RUM preserva la privacy dei visitatori attraverso il campionamento (viene monitorata solo una piccola porzione di tutte le visualizzazioni di pagina) e non vengono raccolte informazioni personali identificabili (PII, personally identifiable information).
 
-Per tutti gli Adobi di clienti, questo servizio fornisce informazioni preziose sulle interazioni degli utenti. I clienti che utilizzano la propria rete CDN possono beneficiare di rapporti sul traffico semplificati, in quanto Adobe ora integra direttamente la raccolta dei dati, eliminando la necessità di creare rapporti separati durante i cicli di rinnovo.
 
 ## Comprendere il funzionamento del servizio di monitoraggio Real Use {#understand-how-the-rum-service-works}
 
@@ -110,7 +109,7 @@ Quando si analizzano i dati RUM, potrebbero verificarsi delle variazioni nelle v
 
 1. **Il percorso `/.rum` è bloccato sul sito, come posso risolvere il problema?**
 
-   Il percorso `/.rum` è necessario per il funzionamento della raccolta RUM. Se disponi di una rete CDN davanti a quella che Adobe fornisce come parte di AEM as a Cloud Service, assicurati che il percorso `/.rum` inoltri alla stessa origine AEM del resto del contenuto AEM. E assicurati che non venga regolato in alcun modo.
+   Il percorso `/.rum` è necessario per il funzionamento della raccolta RUM. Se utilizzi una rete CDN davanti all&#39;AEM as a Cloud Service di Adobe, accertati che il percorso `/.rum` inoltri alla stessa origine AEM degli altri contenuti AEM. E assicurati che non venga regolato in alcun modo.
 
 1. **La raccolta RUM viene conteggiata nelle richieste di contenuto per scopi contrattuali?**
 
