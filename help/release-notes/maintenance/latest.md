@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 82be9b2b328343e827b90bd8266d93127757f477
+source-git-commit: eb01b6982578ad1300163c2fd536e844afc815fa
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 39%
+source-wordcount: '736'
+ht-degree: 51%
 
 ---
 
@@ -27,22 +27,16 @@ Con la versione di attivazione della funzione 2024.9.0 verrà fornito il set di 
 * CQ-4353778: Eventi del processo di traduzione.
 * CQ-4354583: invia eventi del processo di traduzione tramite la pipeline Adobe.
 * CQ-4356479: consenti solo al codice Adobe di utilizzare il contesto del servlet /adobe.
-* CQ-4358133: ottimizzare l’utilizzo di Jenkins worker.
 * CQ-4358226: la funzionalità Salva parola chiave di traduzione non funziona per un particolare formato stringa.
 * CQ-4358270: Kit di traduzione AEM: 8 agosto.
 * CQ-4358310: aggiungi oak-compat-query-spi-1.2 a quickstart.
-* GRANITE-36205: Aggiornamento automatico per il rilascio interno di oak in QS.
 * GRANITE-49833: supporto del batch per il mittente dell’evento e il proxy.
 * GRANITE-52053: Rimuovi gli utilizzi di Commons Collections 3: Platform other.
 * GRANITE-52492: recupero asincrono elastico in caso di ripristino PIT.
-* GRANITE-53086: Aggiorna la versione del plug-in jacoco al 0.8.12 in AEMaaCS.
 * GRANITE-53099: Aggiornamento ad Apache Felix Http Jetty 5.1.24.
 * GRANITE-53125: aggiungi la classificazione a CloudEvent.
 * GRANITE-53328: Aggiornamento di Filevault a 3.8.0-T20240726111512-3cc11d50 contenente miglioramenti alla registrazione dello stashing.
-* GRANITE-53340: AEM660: controllo delle versioni e ramificazione corretti per 660 CQ/Platform.
-* GRANITE-53341: non visualizzare avvisi sull’utilizzo di ACS Commons 6.
 * GRANITE-53453: aggiornamento di commons-lang alla versione 3.15.0.
-* GRANITE-53473: impostazioni Sling non obsolete.
 * GRANITE-53478: Aggiornare Filevault alla versione 3.8.0.
 * GRANITE-53505: Aggiornare QS a commons-collections-3.2.2-adobe-2.
 * GRANITE-53528: Aggiornare la versione degli artefatti della piattaforma.
@@ -71,7 +65,10 @@ Con la versione di attivazione della funzione 2024.9.0 verrà fornito il set di 
 
 ### Problemi noti {#known-issues-17569}
 
-Nessuno.
+* ASSETS-40875: La classe AssetDeleteHandler ascolta gli eventi di eliminazione delle risorse ed esegue azioni specifiche in base al tipo di evento di eliminazione (PRE_DELETE o POST_DELETE). In alcuni scenari, il tipo di evento POST_DELETE causa un’eccezione NullPointerException.
+* FORMS-14340: Errore nella creazione di un’istanza di FormsAndDocumentOmniSearchHandler e CloudStorageSubmitActionInserter. Queste sono innocue istruzioni di registro.
+* FORMS-15818: Voce del descrittore del componente “OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml” istruzioni non trovate nei registri del server. Queste sono innocue istruzioni di registro.
+* SITES-23662: L’utente che attiva una pubblicazione non può essere estratto dalle istruzioni di registro JCR nei registri del server. Questo è per una funzione in fase di sviluppo che potrebbe causare errori intermittenti e innocui di tipo “Impossibile trovare un ID utente valido nel batch di eventi OSGI” nel registro.
 
 ### Notifica di modifica {#change-notice-17569}
 
