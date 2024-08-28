@@ -96,7 +96,7 @@ Alla riga 25, viene indicato da quale query GraphQL persistente l’app deve rec
 
 1. Una volta apportata questa modifica, l’app dovrebbe aggiornarsi automaticamente e stampare la risposta JSON non elaborata dalla query persistente all’elemento div `#output`. Se viene visualizzato un messaggio di errore, verifica la console per ulteriori dettagli. Se hai ancora problemi con questo passaggio, contattaci [via e-mail](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
 
-1. Questo codice JSON contiene le proprietà esatte necessarie per la tua app? In caso contrario, torna alla guida di apprendimento [Estrarre contenuto utilizzando l’API GraphQL](https://experience.adobe.com/it/experiencemanager/learn/extract_content_using_graphql) per apportare modifiche. Al termine, non dimenticare di salvare e pubblicare la query.
+1. Questo codice JSON contiene le proprietà esatte necessarie per la tua app? In caso contrario, torna alla guida di apprendimento [Estrarre contenuto utilizzando l’API GraphQL](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) per apportare modifiche. Al termine, non dimenticare di salvare e pubblicare la query.
 
 ## Modificare il rendering JSON {#change-rendering}
 

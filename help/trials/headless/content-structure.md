@@ -36,7 +36,7 @@ ht-degree: 100%
 
 La console Modelli per frammenti di contenuto si apre in una nuova scheda. Considera la console Modelli per frammenti di contenuto come una libreria di modelli, in cui puoi creare modelli e gestire quelli esistenti.
 
-In questo esempio, viene creato un modello che rappresenta la struttura dati di un viaggio presentato su un sito web di viaggi. Un viaggio che utilizza questo modello viene definito come un’**Avventura**.
+In questo esempio, viene creato un modello che rappresenta la struttura dati di un viaggio. Un viaggio che utilizza questo modello viene definito come un’**Avventura**.
 
 1. Fai clic su **Crea** in alto a destra per iniziare a creare un modello per frammenti di contenuto.
 
@@ -100,7 +100,7 @@ Segui gli stessi passaggi indicati sopra per aggiungere questi ulteriori campi. 
 
    * **Rendering come:** **Riferimento contenuto** - Quando crei un’avventura, questo campo punta alla risorsa immagine che rappresenta questo viaggio.
    * **Etichetta campo:** `Image` - Questa è l’etichetta che viene visualizzata per questo campo quando si crea un’avventura.
-   * **Percorso radice:** `/content/dam/aem-demo-assets/en`: specifica un percorso del punto iniziale durante l’esplorazione delle risorse con il Selettore risorse.
+   * **Percorso directory principale:** `/content/dam/aem-demo-assets/en`: specifica un percorso del punto iniziale durante l’esplorazione delle risorse con il Selettore risorse.
 
 1. Dopo aver aggiunto i campi necessari per il modello per frammenti di contenuto, fai clic su **Salva** in alto a destra.
 

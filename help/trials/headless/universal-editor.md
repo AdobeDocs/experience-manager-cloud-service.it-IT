@@ -59,7 +59,7 @@ Utilizzando l’editor universale è inoltre possibile sostituire le immagini ri
 
 1. Seleziona l’immagine del surfista per selezionarla.
 
-1. Nella barra dei componenti puoi visualizzare i dettagli della risorsa. Seleziona la miniatura dell’**Immagine in primo piano**.
+1. Nella barra dei componenti puoi visualizzare i dettagli della risorsa. Seleziona la miniatura in **Featured Image** (Immagine in primo piano).
 
    ![Selezione di un’immagine da modificare](assets/do-not-localize/ue-edit-media.png)
 
@@ -119,12 +119,12 @@ Per velocizzare l’authoring dei contenuti quando la modifica strutturata di co
 
 1. Scorri la pagina verso il basso fino alla sezione **Adventures** (Avventure).
 
-1. Seleziona una delle avventure come **Bali Surf Camp** (Campo da surf di Bali) per selezionarla.
+1. Seleziona una delle avventure come **Bali Surf Camp** per selezionarla.
 
    * Osserva il contorno blu del componente selezionato. Quando viene selezionato un frammento di contenuto, nella scheda deve essere visualizzato il nome del frammento di contenuto. In questo caso, **Bali Surf Camp**.
    * Poiché l’editor universale consente di selezionare qualsiasi oggetto nella pagina, è possibile selezionare singolarmente anche i componenti che fanno parte di un frammento di contenuto. Seleziona dove indicato nell’illustrazione per selezionare tutto il componente Frammento di contenuto.
 
-1. L’icona **Modifica** appare nella barra dei componenti. Seleziona l’cona **Modifica** per aprire l’editor dei frammenti di contenuto in una nuova scheda.
+1. L’icona **Modifica** appare nella barra dei componenti. Seleziona l’icona **Modifica** per aprire l’editor dei frammenti di contenuto in una nuova scheda.
 
 ![Selezione di frammenti di contenuto nell’editor universale](assets/do-not-localize/ue-content-fragments.png)
 

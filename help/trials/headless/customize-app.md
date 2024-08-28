@@ -53,7 +53,7 @@ L’editor frammenti di contenuto mostra il layout di base dell’app come framm
 
 1. L’editor apre il pannello di intestazione dell’app per la mountain bike. Ogni pannello è costituito da livelli, che rappresentano le immagini e il testo di cui è composta l’esperienza.
 
-1. Seleziona il livello di testo **Mtn Biker in Canyon Text Laye** per aprire i dettagli del livello nell’editor. Il livello è costituito da più frammenti di contenuto che controllano il testo visualizzato in questo pannello dell’app.
+1. Seleziona il livello di testo **Mtn Biker in Canyon Text Layer** per aprire i dettagli del livello nell’editor. Il livello è costituito da più frammenti di contenuto che controllano il testo visualizzato in questo pannello dell’app.
 
 1. Seleziona l’elemento di testo **Mtn Biker in Canyon Title**. Viene aperto l’editor frammenti di contenuto che mostra il contenuto del frammento e consente di modificarlo.
 
@@ -107,7 +107,7 @@ Ora che hai aggiornato l’immagine del biker, vediamo come aggiungere nuovi con
 
 1. Seleziona il livello **Mtn Biking - Shoppable**.
 
-1. Per creare una didascalia su questo pannello, crea un frammento di contenuto per opportunità di acquisto. Seleziona il pulsante **+ Crea nuovo frammento**.
+1. Per creare una didascalia su questo pannello, crea un frammento di contenuto per opportunità di acquisto. Seleziona il pulsante **+ Crea frammento di contenuto**.
 
    ![Aggiungere un’opportunità di acquisto](assets/do-not-localize/add-reference-1-5.png)
 
@@ -123,7 +123,7 @@ Ora che hai aggiornato l’immagine del biker, vediamo come aggiungere nuovi con
 
 1. Assegna un nome all’opportunità di acquisto nel campo **Testo**, ad esempio `Yellow shorts`.
 
-1. Imposta i valori **X** e **Y**. Questi valori rappresentano il punto in cui la didascalia dovrà essere sovrapposta sul pannello. Le modifiche apportate al frammento vengono salvate automaticamente dall’editor.
+1. Imposta i valori **X** e **Y**. Questi valori rappresentano il punto in cui la didascalia dovrà essere sovrapposta sul pannello. Le modifiche apportate al frammento vengono salvate automaticamente dall’editor
 
    * **X**: `-5`
    * **Y**: `-10`

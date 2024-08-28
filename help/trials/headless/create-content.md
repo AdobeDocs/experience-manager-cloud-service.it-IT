@@ -79,7 +79,7 @@ Dopo aver salvato e aperto il nuovo frammento di contenuto, l’editor frammento
 
 1. Viene visualizzata la finestra di dialogo **Seleziona risorsa**. Utilizzando il navigatore ad albero nel pannello a sinistra, passa a **All assets** > **aem-demo-assets** > **en** > **adventures** > **cycling-tuscany** (Tutte le risorse > aem-demo-assets > it > avventure > ciclismo-toscana).
 
-1. I contenuti della cartella **ciclismo-toscana** vengono visualizzati a destra. Seleziona l’immagine `ADOBESTOCK_141786166.JPEG`.
+1. I contenuti della cartella **cycling-tuscany** (ciclismo-toscana) vengono visualizzati a destra. Seleziona l’immagine `ADOBESTOCK_141786166.JPEG`.
 
 1. Scegli **Seleziona**.
 

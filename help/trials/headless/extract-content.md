@@ -177,7 +177,7 @@ Verrà creata una query persistente che include i dati che si desidera utilizzar
 
 1. Quando la query ti soddisfa, fai clic sul pulsante **Salva con nome** nella parte superiore dell’editor delle query per renderla persistente.
 
-1. Nel menu a comparsa **Nome query**, assegna alla query il nome `adventure-list`.
+1. Nel menu a comparsa **Nome della query**, assegna alla query il nome `adventure-list`.
 
 1. Seleziona **Salva con nome**.
 
