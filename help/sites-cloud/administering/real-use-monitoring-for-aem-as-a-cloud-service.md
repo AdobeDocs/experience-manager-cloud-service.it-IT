@@ -4,9 +4,9 @@ description: Scopri come utilizzare il monitoraggio in tempo reale (RUM, Real Us
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
+source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1274'
 ht-degree: 1%
 
 ---
@@ -31,16 +31,16 @@ Con RUM, le metriche delle prestazioni chiave vengono tracciate direttamente dal
 >
 >La funzione &quot;Real User Monitoring&quot; è stata rinominata &quot;Real Use Monitoring&quot;, in quanto riflette meglio la vera essenza del servizio.
 
-## Chi può trarre vantaggio da un servizio di monitoraggio di utilizzo reale? {#who-can-benefit-from-rum-service}
+## Chi può trarre vantaggio da un servizio di monitoraggio Real Use? {#who-can-benefit-from-rum-service}
 
 L’AEM ha sviluppato il RUM per aiutare i clienti e gli Adobi a comprendere come i visitatori interagiscono con i siti AEM. RUM può essere utilizzato per aiutare a diagnosticare i problemi di prestazioni e misurare l&#39;efficacia degli esperimenti. RUM preserva la privacy dei visitatori attraverso il campionamento (viene monitorata solo una piccola porzione di tutte le visualizzazioni di pagina) e non vengono raccolte informazioni personali identificabili (PII, personally identifiable information).
 
 
-## Comprendere il funzionamento del servizio di monitoraggio Real Use {#understand-how-the-rum-service-works}
+## Comprendere il funzionamento del servizio di monitoraggio Real Use Monitoring {#understand-how-the-rum-service-works}
 
-Adobe Experience Manager (AEM) utilizza Real Use Monitoring (RUM) per aiutare i clienti e gli Adobi a comprendere come i visitatori interagiscono con i siti AEM. Consente di diagnosticare i problemi di prestazioni e di misurare l&#39;efficacia degli esperimenti. RUM preserva la privacy dei visitatori attraverso il campionamento (viene monitorata solo una piccola porzione di tutte le visualizzazioni di pagina) e non vengono raccolte informazioni personali identificabili (PII, personally identifiable information).
+L’AEM utilizza RUM per aiutare i clienti e gli Adobi a comprendere come i visitatori interagiscono con i siti AEM. Consente di diagnosticare i problemi di prestazioni e di misurare l&#39;efficacia degli esperimenti. RUM preserva la privacy dei visitatori attraverso il campionamento (viene monitorata solo una piccola porzione di tutte le visualizzazioni di pagina) e non vengono raccolte informazioni personali identificabili (PII, personally identifiable information).
 
-## Servizio di monitoraggio per uso reale e privacy {#rum-service-and-privacy}
+## Servizio di monitoraggio Real Use e privacy {#rum-service-and-privacy}
 
 Il servizio Real Use Monitoring nell’AEM è progettato per preservare la privacy dei visitatori e ridurre al minimo la raccolta dei dati. In qualità di visitatore, significa che il sito che stai visitando o che stai rendendo disponibile agli Adobi non raccoglie informazioni personali.
 
@@ -52,7 +52,7 @@ Le soluzioni di analisi web tradizionali tentano di raccogliere dati su ogni sin
 
 Quando si decide se raccogliere o meno i dati, la procedura avviene in modalità di visualizzazione pagina per pagina, rendendo praticamente impossibile tenere traccia delle interazioni tra più pagine. Per progettazione, RUM non ha alcun concetto di visitatori o sessioni, ma solo di visualizzazioni di pagina.
 
-## Quali dati vengono raccolti {#what-data-is-being-collected}
+## Quali dati vengono raccolti? {#what-data-is-being-collected}
 
 Il servizio Real Use Monitoring è progettato per impedire la raccolta di informazioni personali. Di seguito sono elencate tutte le informazioni raccolte da RUM:
 
@@ -76,7 +76,7 @@ Real Use Monitoring monitora automaticamente il traffico lato client per fornire
 
 If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
 
-## Utilizzo dei dati del servizio di monitoraggio Real Use {#how-rum-service-data-is-being-used}
+## Utilizzo dei dati del Real Use Monitoring Service {#how-rum-service-data-is-being-used}
 
 I dati RUM sono utili per i seguenti scopi:
 
@@ -84,11 +84,11 @@ I dati RUM sono utili per i seguenti scopi:
 * Per semplificare la ricerca automatica del traffico che include le visualizzazioni di pagina.
 * Per capire come l’AEM interagisce con altri script (ad esempio analisi, targeting o librerie esterne) sulla stessa pagina, per aumentare la compatibilità.
 
-## Limitazioni e nozioni di base sulla varianza nelle visualizzazioni di pagina e nelle metriche delle prestazioni {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
+## Limitazioni e comprensione della varianza nelle visualizzazioni di pagina e nelle metriche delle prestazioni {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
 
 Quando si analizzano i dati RUM, potrebbero verificarsi delle variazioni nelle visualizzazioni di pagina e in altre metriche delle prestazioni. Queste varianze possono essere attribuite a diversi fattori inerenti al monitoraggio in tempo reale lato client. Di seguito sono riportate alcune considerazioni chiave che i clienti devono tenere presenti quando interpretano i dati RUM:
 
-1. **Blocchi del tracker**
+1. **Blocchi del tracciamento**
 
    * Gli utenti finali che utilizzano bloccanti del tracciamento o estensioni della privacy possono impedire la raccolta dati RUM, in quanto questi strumenti limitano l’esecuzione degli script di tracciamento. Questa restrizione può portare a visualizzazioni di pagina e interazioni utente non riportate correttamente, creando una discrepanza tra l’attività effettiva del sito e i dati acquisiti da RUM.
 
