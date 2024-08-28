@@ -3,10 +3,13 @@ title: Come aggiungere il testo della guida per i campi Forms adattivi dell’AE
 description: AEM Forms consente di aggiungere assistenza contestuale ai campi e ai pannelli del modulo adattivo come testo o file multimediali avanzati, inclusi i video.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+feature: Adaptive Forms, Foundation Components
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 1%
 
 ---
@@ -64,8 +67,3 @@ Oltre alla guida contestuale per i campi modulo, è possibile specificare la gui
 L&#39;aggiunta della Guida per il pannello visualizza **?Icona** accanto alla descrizione del pannello. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione Contenuto della guida della finestra di dialogo per modifica del pannello.
 
 ![Esempio di guida contestuale a livello di pannello del modulo](assets/photoshop-1.png)
-
->[!MORELIKETHIS]
->
->* [Aggiungi testo segnaposto ai campi modulo](/help/forms/placeholder-text-in-aem-forms.md)
->* [Aggiungi nota a piè di pagina a un modulo adattivo per testo RTF](/help/forms/footnotes-richtextsupport.md)

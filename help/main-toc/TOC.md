@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
-workflow-type: ht
-source-wordcount: '5348'
-ht-degree: 100%
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+workflow-type: tm+mt
+source-wordcount: '5478'
+ht-degree: 97%
 
 ---
 
@@ -681,6 +681,7 @@ ht-degree: 100%
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
          + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
          + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
+         + [Progettare uno schema XML per un modulo adattivo](/help/forms/adaptive-form-xml-schema-form-model.md)
    + Moduli adattivi {#adaptive-forms-authoring}
       + [Creare un modulo adattivo](/help/forms/create-an-adaptive-form.md)
       + [Creare un frammento di modulo adattivo](/help/forms/adaptive-form-fragments.md)
@@ -730,12 +731,17 @@ ht-degree: 100%
             + [Revisione dei moduli convertiti](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=it#welcome-to-review-and-correct-editor)
          + Creare un modulo adattivo {#create-an-adaptive-form-on-forms-cs}
             + [Introduzione all’authoring di moduli adattivi](/help/forms/introduction-forms-authoring.md)
+            + [Creazione della Guida contestuale per i campi modulo](/help/forms/authoring-in-field-help.md)
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form.md)
             + [Temi, modelli e modelli di dati di riferimento](/help/forms/reference-themes-templates-data-models.md)
             + [Creare un modello](/help/forms/template-editor.md)
             + [Creare un tema](/help/forms/themes.md)
+            + [Riferimento a frammenti di moduli adattivi](/help/forms/reference-adaptive-form-fragments.md)
+            + [Sincronizzazione di Forms adattivo con i modelli di modulo XFA](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + [Supporto XFA in Adaptive Forms basato su XDP](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [Progettazione di uno schema JSON per un modulo adattivo](/help/forms/adaptive-form-json-schema-form-model.md)
             + [Miglioramento delle prestazioni dei moduli di grandi dimensioni con caricamento lento](/help/forms/lazy-loading-adaptive-forms.md)
+            + [Pubblicazione e annullamento della pubblicazione di moduli e documenti](/help/forms/publishing-unpublishing-forms.md)
          + Aggiungere componenti a un modulo adattivo {#add-components-to-an-adaptive-form}
             + [Utilizzare il CAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms.md)
             + [Utilizzare hCAPTCHA in un modulo adattivo](/help/forms/integrate-adaptive-forms-hcaptcha.md)
@@ -748,10 +754,15 @@ ht-degree: 100%
             + [Impostare il layout di un modulo adattivo](/help/forms/layout-capabilities-adaptive-forms.md)
             + [Utilizzare la modalità Layout per ridimensionare i componenti](/help/forms/resize-using-layout-mode.md)
             + [Creare un’esperienza di acquisizione dati in più passaggi](/help/forms/introduction-form-sequence.md)
+            + [Costrutti di stile per Forms adattivo](/help/forms/styling-constructs-adaptive-forms.md)
             + [Applicare stili CSS in linea ai singoli componenti del modulo adattivo](/help/forms/inline-style-adaptive-forms.md)
+            + [Come si utilizza il componente Separatore in Adaptive Forms?](/help/forms/separator-component-in-adaptive-forms.md)
          + Aggiungere regole ed utilizzare espressioni in un modulo adattivo {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Aggiungere regole a un modulo adattivo](/help/forms/rule-editor.md)
             + [Aggiungere un handler di errori personalizzato utilizzando il servizio di chiamata dell’editor di regole](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [Concedere l’accesso all’editor di regole a specifici gruppi di utenti](/help/forms/rule-editor-access-user-groups.md)
+            + [Utilizzo delle espressioni SOM in Adaptive Forms](/help/forms/using-som-expressions-adaptive-forms.md)
+            + [Espressioni modulo adattivo](/help/forms/adaptive-form-expressions.md)
          + Utilizzo [!DNL Adobe Sign] {#use-adobe-sign}
             + [Utilizzare Adobe Sign per apporre la firma elettronica a un modulo adattivo](/help/forms/working-with-adobe-sign.md)
          + Configurare le azioni di invio e l’invio dei metadati {#configure-submit-actions-and-metadata-submission}
@@ -759,6 +770,8 @@ ht-degree: 100%
             + [Configurare la pagina di reindirizzamento](/help/forms/configuring-redirect-page.md)
             + [Configurare l’invio asincrono per un modulo adattivo](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [Creare un’azione di invio personalizzata](/help/forms/custom-submit-action-form.md)
+            + [Aggiungere informazioni dai dati utente ai metadati di invio del modulo](/help/forms/form-submission-metadata.md)
+            + [API per richiamare il servizio Form Data Model (FDM) da Adaptive Forms](/help/forms/invoke-form-data-model-services.md)
          + [Precompilare i campi di un modulo adattivo](/help/forms/prepopulate-adaptive-form-fields.md)
          + [Genera documento di record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [Aggiungere il supporto per nuove lingue a un modulo adattivo](/help/forms/supporting-new-language-localization.md)
@@ -769,11 +782,16 @@ ht-degree: 100%
             + [Creare un modulo adattivo accessibile](/help/forms/creating-accessible-adaptive-forms.md)
          + [Configurare Forms Portal](/help/forms/configure-forms-portal.md)
          + [Creare e gestire le revisioni](/help/forms/create-reviews-forms.md)
+         + [Associare i revisori di invio a un modulo](/help/forms/adding-reviewers-form.md)
+         + [Creare e gestire recensioni per un modulo adattivo](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [Parole chiave per moduli adattivi](/help/forms/adaptive-forms-keywords.md)
       + [Anteprima di un modulo](/help/forms/previewing-forms.md)
    + Flussi di lavoro incentrati sui moduli {#create-form-centric-workflows}
+      + [Introduzione al flusso di lavoro incentrato su Forms](/help/forms/aem-forms-workflow.md)
       + [Utilizzare passaggi incentrati su Forms in un flusso di lavoro + riferimento a passaggi](/help/forms/aem-forms-workflow-step-reference.md)
       + [Utilizzare le variabili in un flusso di lavoro incentrato su Forms](/help/forms/variable-in-aem-workflows.md)
+      + [Selezione dinamica di utenti o gruppi nel flusso di lavoro AEM](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+      + [Gestione delle applicazioni e delle attività di Forms nella casella in entrata AEM](/help/forms/manage-applications-inbox.md)
       + [Utilizzare l&#39;opzione Fuori sede](/help/forms/configure-out-of-office-settings.md)
    + API di comunicazione {#using-communications}
       + [Introduzione alle API di comunicazione](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -781,6 +799,7 @@ ht-degree: 100%
       + [Elaborazione in batch delle API di comunicazione](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Installare e configurare Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Utilizzare Forms Designer per creare modelli](/help/forms/use-forms-designer.md)
+      + [Modifica del contenuto di Page Zero in Designer](/help/forms/changing-page-zero-content-designer.md)
       + [Utilizzo di font personalizzati nei documenti PDF](/help/forms/use-custom-fonts.md)
       + [Elenco dei font supportati nei documenti PDF](/help/forms/supported-out-of-the-box-fonts.md)
       + [Problemi noti, best practice e domande frequenti](/help/forms/communications-known-issues-limitations.md)
@@ -926,6 +945,7 @@ ht-degree: 100%
          + [Caricare le opzioni dall’URL a un modulo](/help/edge/docs/forms/load-options-from-url.md)
          + [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
          + [Utilizzare le regole per aggiungere un comportamento dinamico a un modulo](/help/edge/docs/forms/rules-forms.md)
+         + [Espressioni Regex per le convalide](/help/edge/docs/forms/regex-forms.md)
          + [Mostrare un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
       + Funzionalità {#advanced-features-edge-delivery-services-forms}
          + [Utilizzare i frammenti del modulo](/help/edge/docs/forms/form-fragments.md)

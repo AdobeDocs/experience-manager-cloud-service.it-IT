@@ -2,9 +2,10 @@
 title: Espressioni regolari comunemente utilizzate per la convalida dei campi modulo di Edge Delivery Services di AEM Forms
 description: Espressioni regolari comunemente utilizzate per la convalida dei campi modulo di Edge Delivery Services di AEM Forms
 feature: Edge Delivery Services
+role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 100%

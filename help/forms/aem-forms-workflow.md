@@ -4,9 +4,13 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 'Utilizza AEM Forms Workflow per automatizzare e creare rapidamente flussi di lavoro per i processi aziendali. Ad esempio: revisione e approvazione, Generazione di PDF, Flussi di lavoro di Adobe Sign.'
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Adaptive Forms
+role: User, Developer
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2335'
 ht-degree: 1%
 
 ---
@@ -197,7 +201,7 @@ Puoi avviare o attivare un flusso di lavoro incentrato su Forms:
 
 ### Invio di una domanda dalla casella in entrata AEM {#inbox}
 
-L&#39;applicazione del flusso di lavoro creata è disponibile come applicazione nella cartella Posta in arrivo. Gli utenti membri del gruppo [!DNL workflow-users] possono compilare e inviare l&#39;applicazione che attiva il flusso di lavoro associato. Per informazioni sull&#39;utilizzo della Posta in arrivo AEM per inviare applicazioni e gestire attività, vedere [Gestione di applicazioni e attività Forms nella Posta in arrivo AEM](manage-applications-/help/sites-cloud/authoring/inbox.md).
+L&#39;applicazione del flusso di lavoro creata è disponibile come applicazione nella cartella Posta in arrivo. Gli utenti membri del gruppo [!DNL workflow-users] possono compilare e inviare l&#39;applicazione che attiva il flusso di lavoro associato.
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
@@ -270,9 +274,3 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### Rimuovi istanze flusso di lavoro {#purge-workflow-instances}
 
 La riduzione al minimo del numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, vedi [Rimozione regolare delle istanze del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=it) eliminazione delle istanze del flusso di lavoro
-
-
->[!MORELIKETHIS]
->
->* [Utilizza il flusso di lavoro di traduzione AEM per localizzare il Forms adattivo e il documento record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
->* [Variabili nei flussi di lavoro AEM incentrati su Forms](/help/forms/variable-in-aem-workflows.md)
