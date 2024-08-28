@@ -2,7 +2,7 @@
 source-git-commit: 7a1181a372928602b8fd0eb4699789217473a94c
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 # Snippet {#snippets}
@@ -92,7 +92,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
    </td>
    </tr>
       <tr>
-    <td>Convalida/Reimposta regola campo/pannello/modulo in "Then" </td>
+    <td>Convalida/Reimposta campo/pannello/regola modulo in “Then” </td>
     <td>Le funzioni di convalida e ripristino supportano solo l'oggetto modulo nell'editor di regole. 
    </td>
     <td>Le funzioni di convalida e ripristino supportano il modulo/pannello/oggetto campo nell’editor di regole. 
