@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 5670e0ab7e6cb47bcc2dd7608aa3f01dc4ec0704
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ I seguenti diagrammi illustrano il processo di creazione, pubblicazione e invio 
 * [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
-* [Monitoraggio per uso reale](https://www.aem.live/developer/rum#authentication)
+* [Monitoraggio dell’utilizzo reale](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
