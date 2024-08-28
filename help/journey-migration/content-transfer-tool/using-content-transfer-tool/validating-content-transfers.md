@@ -4,12 +4,13 @@ description: Utilizzare lo strumento Content Transfer (Trasferimento contenuti) 
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 2%
+source-wordcount: '1189'
+ht-degree: 1%
 
 ---
+
 
 # Convalida dei trasferimenti di contenuto {#validating-content-transfers}
 
@@ -134,23 +135,28 @@ Oltre a essere incluso nel registro di acquisizione, è possibile accedere al ra
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## Convalidare la migrazione dell’entità {#how-to-validate-principal-migration}
+## Convalidare la migrazione dell’entità {#how-to-validate-group-migration}
 
-Consulta [Mappatura utenti e migrazione utenti/gruppi/ruoli](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) per leggere i dettagli sulle migrazioni degli utenti/gruppi/ruoli e per sapere perché è necessario.
+Consulta [Migrazione gruppo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) per leggere i dettagli della migrazione principale e i motivi per cui è necessaria.
 
-Una volta completata correttamente l’estrazione e l’acquisizione, sono disponibili un riepilogo e un rapporto della migrazione principale. Queste informazioni possono essere utilizzate per verificare quali utenti e gruppi sono stati migrati correttamente e, forse, per determinare perché alcuni non lo sono stati.
+Una volta completata correttamente l’estrazione e l’acquisizione, sono disponibili un riepilogo e un rapporto della migrazione principale. Queste informazioni possono essere utilizzate per verificare quali gruppi sono stati migrati correttamente e, forse, per determinare perché alcuni non lo sono stati.
 
 Per visualizzare queste informazioni, passa a Cloud Acceleration Manager. Fai clic sulla scheda del progetto e poi sulla scheda Content Transfer (Trasferimento contenuti). Passa a **Processi di acquisizione** e individua l&#39;acquisizione da verificare. Fai clic sui tre punti (**...**) per l&#39;acquisizione, quindi fai clic su **Visualizza riepilogo entità** nel menu a discesa.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Viene visualizzata una finestra di dialogo con le informazioni di riepilogo. Utilizzare le icone della guida per una descrizione più completa. Fai clic sul pulsante **Scarica rapporto** per scaricare il rapporto CSV completo.
+Viene visualizzata una finestra di dialogo con le informazioni di riepilogo. Utilizzare le icone della guida per una descrizione più completa. Fai clic sul pulsante **Scarica rapporto** per scaricare il rapporto CSV completo.  Inoltre, alla fine di questo rapporto c’è il Rapporto utenti, che può essere utilizzato per la gestione degli utenti dopo la migrazione.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
->[!NOTE]
->
->Se la mappatura utente è disattivata, viene visualizzata un&#39;altra variante di questa finestra di dialogo. Indica che la mappatura utente è stata disabilitata e non mostra i 3 campi che forniscono i valori di mappatura utente.
+Il rapporto principale sulla migrazione conterrà:
+
+* È stata eseguita la migrazione di ogni gruppo e del primo percorso di contenuto che ha attivato la migrazione del gruppo. Il gruppo potrebbe trovarsi anche in altri percorsi, ma viene segnalato solo il primo trovato per un determinato gruppo. Indica anche se è stato trovato in un ACL o in un criterio CUG.
+* Ogni gruppo non è stato migrato e il motivo per cui non è stato migrato.  In genere si tratta di uno dei seguenti motivi:
+   * È un gruppo incorporato
+   * È già presente nel sistema di destinazione
+   * Non è incluso in un criterio ACL o CUG per il contenuto di cui si esegue la migrazione
+   * Ha un campo univoco duplicato (uno tra rep:principalName, rep:authorizableId, jcr:uuid o rep:externalId è già presente nella destinazione, ma tutti devono essere univoci)
 
 ## Risoluzione dei problemi {#troubleshooting}
 
@@ -166,6 +172,6 @@ Alcuni percorsi dai digest di estrazione e acquisizione sono esclusi appositamen
 
 I percorsi attualmente esclusi dai digest includono: `cqdam.text.txt` rappresentazioni, nodi all&#39;interno di `/home` e nodi all&#39;interno di `/jcr:system`.
 
-### I gruppi di utenti chiusi non funzionano {#validating-cugs}
+### Gruppi utenti chiusi {#validating-cugs}
 
 Vedere [Migrazione di gruppi utenti chiusi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) per ulteriori considerazioni sull&#39;utilizzo di un criterio Gruppo utenti chiuso.

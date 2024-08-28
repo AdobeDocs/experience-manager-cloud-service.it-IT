@@ -4,7 +4,7 @@ description: Scopri come estrarre il contenuto da un’istanza Adobe Experience 
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 19%
@@ -41,7 +41,7 @@ Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferiment
 
 1. Viene visualizzata la finestra di dialogo Estrazione. Fai clic su **Estrai** per avviare la fase di estrazione.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
 
    >[!NOTE]
    >Facoltativamente, puoi sovrascrivere il contenitore di staging durante la fase di estrazione. Se **Sovrascrivi contenitore di staging** è disabilitato, le estrazioni per le migrazioni successive in cui i percorsi di contenuto o le impostazioni delle versioni di inclusione non sono stati modificati possono essere più rapide. Tuttavia, se le impostazioni dei percorsi di contenuto o delle versioni di inclusione sono state modificate, **Sovrascrivi contenitore di staging** deve essere abilitato.

@@ -6,18 +6,19 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
+
 
 # Utilizzo dello strumento di mappatura utenti (legacy) {#using-user-mapping-tool}
 
 >[!INFO]
 >
->Questa documentazione fa riferimento a una versione obsoleta dello strumento. Per ulteriori informazioni sulla versione più recente, vedere [Mappatura utenti e migrazione entità](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Questa documentazione fa riferimento a una versione obsoleta dello strumento. Per ulteriori informazioni sull&#39;ultima versione, vedere [Migrazione gruppo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
 Lo strumento di mappatura utenti utilizza un’API che consente di cercare gli utenti Adobe Identity Management System (IMS) tramite e-mail e restituire i loro ID IMS. Questa API richiede che l’utente crei un ID client per la propria organizzazione, un segreto client e un token di accesso o Bearer.
 

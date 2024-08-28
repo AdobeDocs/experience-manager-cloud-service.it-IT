@@ -4,9 +4,9 @@ description: Scopri come eseguire la migrazione una volta che il codice e il con
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1223'
 ht-degree: 3%
 
 ---
@@ -101,7 +101,6 @@ Considera che l’intera acquisizione non riesce se una qualsiasi delle seguenti
 
 * Un nodo JCR con un nome che supera i 150 caratteri
 * Un nodo JCR di dimensioni superiori a 16 MB
-* Qualsiasi utente/gruppo con `rep:AuthorizableID` acquisito già presente in AEM as a Cloud Service
 * Se una risorsa estratta e acquisita viene spostata in un percorso diverso nell’origine o nella destinazione prima della successiva iterazione della migrazione.
 
 ## Integrità risorsa {#asset-health}
