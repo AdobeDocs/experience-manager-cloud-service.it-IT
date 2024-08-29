@@ -3,8 +3,8 @@ title: Come salvare il modulo adattivo basato sui componenti core come bozza e u
 description: Scopri come salvare come bozza un modulo adattivo basato su componenti core. Scopri anche come utilizzare il componente Bozze e invii per elencare le bozze e gli invii per gli utenti connessi?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
-role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+role: User, Developer
+source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 2%
