@@ -1,228 +1,180 @@
 ---
-title: Come si salva un modulo adattivo basato su componente core come bozza?
-description: Scopri come salvare un modulo adattivo basato su componenti core come bozza, creare un portale Forms e utilizzare i componenti core predefiniti in una pagina AEM Sites.
+title: Come salvare il modulo adattivo basato sui componenti core come bozza e utilizzare il componente Bozze e invii per elencare bozze e invii?
+description: Scopri come salvare come bozza un modulo adattivo basato su componenti core. Scopri anche come utilizzare il componente Bozze e invii per elencare le bozze e gli invii per gli utenti connessi?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
+source-git-commit: 72e8223c91e5722e27ebd6853b8b75a7415f3e4d
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 1%
+source-wordcount: '1375'
+ht-degree: 2%
 
 ---
 
 
-# Salva modulo adattivo basato su componente core come bozza {#save-af-form}
+# Salvare ed elencare i moduli come bozze nella pagina Sites
 
-Salvare un modulo adattivo come bozza è una funzione essenziale che migliora l’efficienza e la precisione dell’utente. Questa funzionalità consente agli utenti di salvare l’avanzamento e tornare per completare le attività in un secondo momento senza perdere le informazioni immesse. L&#39;opzione `save-as-draft` garantisce flessibilità nella gestione dei tempi, riduce il rischio di perdita di dati e mantiene la precisione delle richieste. È possibile salvare i moduli come bozze per completarli in un secondo momento.
+Si consideri un utente che inizia a compilare un modulo ma deve sospendere e tornare in un secondo momento. L&#39;AEM offre un&#39;opzione `save-as-draft` che consente all&#39;utente di salvare il modulo come bozza per il completamento futuro. Per facilitare questa fase, AEM fornisce il componente **Bozze e invii** Portale dei moduli pronto all&#39;uso, che visualizza le bozze e gli invii sulle pagine AEM Sites. Il componente elenca i moduli salvati come bozze da completare in un secondo momento, nonché quelli inviati. Solo gli utenti connessi possono modificare le bozze o visualizzare i moduli inviati. Tuttavia, se un utente anonimo passa all&#39;elenco dei moduli utilizzando il componente **Ricerca e elenco** e salva un modulo come bozza, tale bozza non viene elencata dal componente **Bozze e invii**. Per visualizzare le bozze e gli invii, è necessario che gli utenti abbiano effettuato l&#39;accesso al momento dell&#39;invio del modulo.
 
-## Considerazioni
+![Icona Bozze](assets/drafts-component.png){width="250" align="center"}
 
-* [Abilita i componenti core Adaptive Forms per il tuo ambiente.](/help/forms/enable-adaptive-forms-core-components.md)
+## Prerequisiti
 
-* Verificare che il componente core [sia impostato sulla versione 3.0.24 o successiva](https://github.com/adobe/aem-core-forms-components) per utilizzare questa funzionalità.
-* Assicurati di disporre di un account di archiviazione [Azure e di una chiave di accesso](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) per autorizzare l&#39;accesso all&#39;account di archiviazione Azure.
+* [Abilita i componenti core Forms adattivi per il tuo ambiente.](/help/forms/enable-adaptive-forms-core-components.md)
 
-## Salvare un modulo adattivo come bozza
+  Dopo aver distribuito i Componenti core più recenti nell’ambiente, i componenti del portale Forms diventano accessibili nell’ambiente di authoring.
 
-L&#39;integrazione dei dati di [!DNL Experience Manager Forms] (data-integration.md) fornisce la configurazione dell&#39;archiviazione [!DNL Azure] per integrare i moduli con i servizi di archiviazione [!DNL Azure]. Il modello dati modulo può essere utilizzato per creare Forms adattivo che interagisce con il server [!DNL Azure] per abilitare i flussi di lavoro aziendali.
+* [Configura il connettore di archiviazione e archiviazione unificata di Azure per il componente Forms Portal per bozze e invii](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
-Per salvare il modulo come bozza, verificare di disporre di un account di archiviazione Azure e di una chiave di accesso per autorizzare l&#39;accesso all&#39;account di archiviazione [!DNL Azure]. Per salvare un modulo come bozza, effettuare le seguenti operazioni:
+### Configurare il connettore di archiviazione e archiviazione unificata di Azure per il componente Forms Portal per bozze e invii
 
-1. [Crea configurazione archiviazione Azure](#create-azure-storage-configuration)
-1. [Configurare il connettore di archiviazione unificata per Forms Portal](#configure-usc-forms-portal)
-1. [Creare una regola per salvare un modulo adattivo come bozza](#rule-to-save-adaptive-form-as-draft)
-
-
-### 1. Creare la configurazione di archiviazione Azure {#create-azure-storage-configuration}
-
-Una volta che si dispone di un account di archiviazione Azure e di una chiave di accesso per autorizzare l&#39;accesso all&#39;account di archiviazione [!DNL Azure], eseguire la procedura seguente per creare la configurazione di archiviazione Azure:
+Il componente **Bozze e invii** richiede una configurazione dell&#39;archiviazione per il salvataggio e l&#39;elenco delle bozze sulla pagina AEM Sites. Il connettore di archiviazione unificata offre un framework per collegare l’AEM allo storage esterno. Per salvare il modulo come bozza, verificare di disporre di un account di archiviazione Azure e di una chiave di accesso per autorizzare l&#39;accesso all&#39;account di archiviazione [!DNL Azure]. Una volta che disponi dell’account di archiviazione Azure e della chiave di accesso, effettua le seguenti operazioni per creare una configurazione di archiviazione Azure:
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
 
-   ![Selezione scheda di archiviazione Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![Selezione scheda di archiviazione Azure](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
 
 1. Selezionare una cartella di configurazione per creare la configurazione e selezionare **[!UICONTROL Crea]**.
 
-   ![Seleziona cartella di configurazione archiviazione di Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png)
+   ![Seleziona cartella di configurazione archiviazione di Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
 
 1. Specifica un titolo per la configurazione nel campo **[!UICONTROL Titolo]**.
 1. Specificare il nome dell&#39;account di archiviazione [!DNL Azure] nei campi **[!UICONTROL Account di archiviazione Azure]** e **[!UICONTROL Chiave di accesso Azure]**.
 
-   ![Configurazione archiviazione Azure](/help/forms/assets/save-form-as-draft-azure-storage.png)
+   ![Configurazione archiviazione Azure](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
 
 1. Fai clic su **Salva**.
 
->[!NOTE]
->
-> È possibile recuperare l&#39;**[!UICONTROL account di archiviazione Azure]** e la **[!UICONTROL chiave di accesso Azure]** dal [portale Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+   >[!NOTE]
+   >
+   > È possibile recuperare l&#39;**[!UICONTROL account di archiviazione Azure]** e la **[!UICONTROL chiave di accesso Azure]** dal [portale Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
 
-
-### 2. Configurare il connettore di archiviazione unificata per Forms Portal {#configure-usc-forms-portal}
-
-Dopo aver creato la configurazione di archiviazione di Azure, configurare il connettore di archiviazione unificata per Forms Portal, attenendosi alla procedura seguente:
+   Dopo aver creato la configurazione di archiviazione di Azure, configurare il connettore di archiviazione unificata per Forms Portal, attenendosi alla procedura seguente:
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Connettore di archiviazione unificata]**.
 
-   ![Archiviazione connettore unificato](/help/forms/assets/save-form-as-draft-unified-connector.png)
+   ![Archiviazione connettore unificato](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
 
 1. Nella sezione **[!UICONTROL Forms Portal]**, selezionare **[!UICONTROL Azure]** dall&#39;elenco a discesa **[!UICONTROL Archiviazione]**.
-1. Specificare il [percorso di configurazione per la configurazione di archiviazione Azure](#create-azure-storage-configuration) nel campo **[!UICONTROL Percorso configurazione di archiviazione]**.
+1. Specificare il percorso di configurazione per la configurazione di archiviazione Azure nel campo **[!UICONTROL Percorso configurazione di archiviazione]**.
 
-   ![Impostazione archiviazione connettore unificato](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
+   ![Impostazione archiviazione connettore unificato](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"}
 
-1. Seleziona **[!UICONTROL Salva]**, quindi seleziona **[!UICONTROL Publish]** per pubblicare la configurazione.
+1. Seleziona **[!UICONTROL Salva]**.
 
-### 3. Creare regole per salvare un modulo adattivo come bozza {#rule-to-save-adaptive-form-as-draft}
+>[!NOTE]
+>
+> Se devi configurare un’opzione di archiviazione, diversa da Azure, scrivi a aem-forms-ea@adobe.com dal tuo indirizzo e-mail ufficiale con i requisiti dettagliati.
 
-Per salvare un modulo come bozza, creare una regola **Salva modulo** in un componente modulo, ad esempio un pulsante. Quando si fa clic sul pulsante, la regola viene attivata e il modulo viene salvato come bozza. Per creare la regola **Salva modulo** in un componente pulsante, effettua le seguenti operazioni:
+Dopo aver configurato correttamente il connettore di archiviazione e archiviazione unificata di Azure per l&#39;archiviazione delle bozze e dei moduli inviati, aggiungere il componente **Bozze e invii** nella pagina di AEM Sites.
 
-1. Nell’istanza Autore, apri un modulo adattivo in modalità di modifica.
-1. Dal riquadro di sinistra, selezionare l&#39;icona ![Componenti](assets/components_icon.png) e trascinare il componente **[!UICONTROL Pulsante]** nel modulo.
-1. Selezionare il componente **[!UICONTROL Button]**, quindi l&#39;icona ![Configura](assets/configure_icon.png).
-1. Seleziona l&#39;icona **[!UICONTROL Modifica regole]** per aprire l&#39;editor di regole.
-1. Seleziona **[!UICONTROL Crea]** per configurare e creare la regola.
-1. Nella sezione **[!UICONTROL When]**, seleziona **is clicked** e nella sezione **[!UICONTROL Then]** seleziona l&#39;opzione **Save Form**.
-1. Seleziona **[!UICONTROL Fine]** per salvare la regola.
+## Come aggiungere il componente Bozze e invii a una pagina di AEM Sites?
 
-![Crea regola per il pulsante](/help/forms/assets/save-form-as-drfat-create-rule.png)
-
-Quando visualizzi l&#39;anteprima di un modulo adattivo, lo compili e fai clic sul pulsante **Salva modulo**, il modulo viene salvato come bozza per un utilizzo successivo.
-
-## Componente Bozze e invii per elencare le bozze sulla pagina AEM Sites
-
-AEM Forms fornisce il componente portale **Bozze e invii** pronto all&#39;uso per visualizzare i moduli salvati sulle pagine di AEM Sites. Il componente **Bozze e invii** mostra i moduli salvati come bozze per il completamento successivo e i moduli inviati. Questo componente offre un’esperienza personalizzata per qualsiasi utente connesso elencando le bozze e gli invii relativi al Forms adattivo creato dall’utente.
-
-È possibile utilizzare i componenti predefiniti di Forms Portal per elencare le bozze dei moduli nella pagina di AEM Sites. Per utilizzare il componente portale **Bozze e invii**, effettua le seguenti operazioni:
-
-1. [Abilita componente Forms Portal per bozze e invii](#enable-component)
-2. [Pagina Aggiungi componenti Bozze e invii in AEM Sites](#Add-drafts-submissions-component)
-3. [Configura componente Bozze e invii](#configure-drafts-submissions-component)
-
-### 1. Abilitare il componente Forms Portal Bozze e invii{#enable-component}
-
-Per abilitare il componente **[!UICONTROL Bozze e invii]** nel criterio del modello, effettuare le seguenti operazioni:
+È possibile utilizzare i componenti predefiniti di Forms Portal per elencare le bozze e gli invii nella pagina Sites. Per aggiungere il componente del portale **Bozze e invii**, effettua le seguenti operazioni:
 
 1. Apri la pagina AEM Sites in modalità **Modifica**.
 1. Vai a **[!UICONTROL Informazioni pagina]** > **[!UICONTROL Modifica modello]**
-   ![Modifica criterio modello](/help/forms/assets/save-form-as-draft-edit-template.png)
+   ![Modifica criterio modello](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
 
 1. Fai clic sul **[!UICONTROL Criterio]** e seleziona la casella di controllo **[!UICONTROL Bozze e invii]** in **[Nome progetto archetipo AEM] - Forms and Communications Portal**.
 
-   ![Selezione criteri](/help/forms/assets/save-form-as-draft-enable-policy.png)
+   ![Selezione criteri](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
 
 1. Fai clic su **[!UICONTROL Fine]**.
+1. Ora riapri la pagina AEM Sites in modalità di authoring.
+1. Nell’editor pagina, individua la sezione che consente di aggiungere il componente Forms Portal.
+1. Fai clic sull&#39;icona **Aggiungi**. L’icona è un segno più (+) che indica l’opzione per aggiungere nuovi componenti.
 
-Una volta abilitato il componente portale, puoi utilizzarlo nell’istanza di authoring della pagina AEM Sites.
+   Facendo clic sull&#39;icona **Aggiungi** viene visualizzata una finestra di dialogo **Inserisci nuovo componente** in cui sono visualizzati vari componenti da inserire.
 
-### 2. Pagina Aggiungere il componente Bozze e invii di AEM Sites{#Add-drafts-submissions-component}
+   >[!NOTE]
+   >
+   > In alternativa, puoi anche trascinare e rilasciare il componente.
 
-Puoi creare e personalizzare Forms Portal sui siti web creati con AEM aggiungendo e configurando i componenti del portale. Prima di utilizzare il componente [Bozze e invii nella pagina AEM Sites, assicurati che sia abilitato](#enable-component).
+1. Sfoglia i componenti disponibili nella finestra di dialogo e seleziona il componente desiderato dall’elenco. Selezionare ad esempio il componente **Bozze e invii** dall&#39;elenco per aggiungere il componente **Bozze e invii** di Forms Portal.
 
-Per aggiungere un componente, trascina e rilascia il componente dal riquadro del componente **Bozze e invii** al contenitore di layout nella pagina, oppure seleziona l&#39;icona Aggiungi sul contenitore di layout e aggiungi il componente dalla finestra di dialogo **[!UICONTROL Inserisci nuovo componente]**.
+   ![Aggiungi bozza e componente invio](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"}
 
-![Aggiungi bozza e componente invio](/help/forms/assets/save-form-as-draft-add-dns.png)
+Ora configura le proprietà del componente **Bozze e invii** in base ai requisiti.
 
-### 3. Configurare il componente Bozze e invii {#configure-drafts-submissions-component}
+## Configurare le proprietà del componente Bozze e invii
 
-Il componente **Bozze e invii** visualizza i moduli salvati come bozza per il completamento successivo e i moduli inviati. Per configurare **Bozze e invii**, effettuare le seguenti operazioni:
+Puoi configurare le proprietà di **Bozze e invii**:
 1. Seleziona il componente **Bozze e invii**.
 1. Fare clic sull&#39;icona ![Configura](assets/configure_icon.png) per visualizzare la finestra di dialogo.
 1. Nella finestra di dialogo **[!UICONTROL Bozze e invii]**, specifica quanto segue:
    * **Titolo** Per identificare un componente in una pagina Sites e per impostazione predefinita, il titolo viene visualizzato sopra il componente.
-   * **Tipo**: per indicare il modulo come bozza o inviato.
+   * **Seleziona tipo**: per indicare il modulo come bozza o inviato. Se si sceglie **Bozza di Forms**, verranno visualizzati i moduli salvati come bozze. In alternativa, selezionando **Forms inviato** vengono visualizzati i moduli inviati dagli utenti connessi.
    * **Layout**: per visualizzare le bozze degli elenchi o i moduli inviati in formato scheda o elenco.
 
-   ![Proprietà dei componenti Bozza e Invio](/help/forms/assets/save-form-as-draft-dns-properties.png)
+   ![Proprietà dei componenti Bozza e Invio](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"}
 
-1. Fai clic su **Fine**.
+## Configurare i moduli da salvare come bozze
 
-Quando **[!UICONTROL Seleziona tipo]** è selezionato come **Bozza di Forms**, vengono visualizzati i moduli salvati come bozze:
-![Icona Bozze](assets/drafts-component.png)
+È possibile configurare Forms adattivo nei due modi seguenti per salvarlo come bozza da utilizzare in un secondo momento:
+* [Azione utente](#user-action)
+* [Salvataggio automatico](#auto-save)
 
-Quando **[!UICONTROL Seleziona tipo]** è selezionato come **Forms inviato**, vengono visualizzati i moduli inviati:
+### Azione utente
 
-![Icona Invii](assets/submission-listing.png)
+>[!NOTE]
+>
+> Assicurati che la versione dei [Componenti core sia impostata su 3.0.24 o successiva](https://github.com/adobe/aem-core-forms-components) per salvare i moduli come bozze utilizzando la regola **Salva modulo**.
 
-È possibile aprire il modulo facendo clic sul relativo modulo.
+Per salvare un modulo come bozza, creare una regola **Salva modulo** in un componente modulo, ad esempio un pulsante. Quando si fa clic sul pulsante, la regola viene attivata e il modulo viene salvato come bozza. Per creare una regola **Salva modulo** in un componente pulsante, effettua le seguenti operazioni:
 
-<!--
+1. Aprire un modulo adattivo in modalità di modifica.
+1. Seleziona l&#39;icona **[!UICONTROL Modifica regole]** per aprire l&#39;editor di regole per il componente **Button**.
+1. Seleziona **[!UICONTROL Crea]** per configurare e creare la regola per il pulsante.
+1. Nella sezione **[!UICONTROL When]**, seleziona **is clicked** e nella sezione **[!UICONTROL Then]** seleziona l&#39;opzione **Save Form**.
+1. Seleziona **[!UICONTROL Fine]** per salvare la regola.
 
-### Configure Search & Lister Component {#configure-search-lister-component}
+   ![Crea regola per il pulsante](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}
 
-The Search & Lister component is used to list adaptive forms on a page and to implement search on the listed forms. 
+Quando visualizzi l&#39;anteprima di un modulo adattivo, lo compili e fai clic sul pulsante **Salva modulo**, il modulo viene salvato come bozza.
 
-![Search and Lister icon](assets/search-and-lister-component.png)
+### Salvataggio automatico
 
-To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The [!UICONTROL Search and Lister] dialog opens.
+<span class="preview"> Questo articolo contiene informazioni sulla funzionalità **Salvataggio automatico**, una funzionalità non definitiva. La funzione pre-release è accessibile solo tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features).</span>
 
-1. In the [!UICONTROL Display] tab, configure the following:
-    * In **[!UICONTROL Title]**, specify the title for the Search & Lister component. An indicative title enables the users perform quick search across the list of forms.
-    * From the **[!UICONTROL Layout]** list, select the layout to represent the forms in card or list format.
-    * Select **[!UICONTROL Hide Search]** and **[!UICONTROL Hide Sorting]** to hide the search and sort by features.
-    * In **[!UICONTROL Tooltip]**, provide the tooltip that appears when you hover over the component. 
-1. In the [!UICONTROL Asset Folder] tab, specify the location from where the forms are pulled and listed on the page. You can configure multiple folder locations.
-1. In the [!UICONTROL Results] tab, configure the maximum number of forms to display per page. The default is eight forms per page.
+>[!NOTE]
+>
+> Assicurati che la versione dei [Componenti core sia impostata su 3.0.52 o successiva](https://github.com/adobe/aem-core-forms-components) per salvare i moduli come bozze utilizzando la funzione di salvataggio automatico.
 
-### Configure Link Component {#configure-link-component}
+Puoi anche configurare un modulo adattivo in modo che venga salvato automaticamente in base a un evento basato sul tempo, affinché il modulo venga salvato dopo la durata specificata. Quando [abiliti i componenti di Forms Portal per il tuo ambiente](/help/forms/list-forms-on-sites-page.md#enable-forms-portal-components-for-your-existing-environment), la scheda **Salvataggio automatico** viene visualizzata nelle proprietà del contenitore Forms. Puoi configurare la funzione di salvataggio automatico per un modulo adattivo:
 
-The link component enables you to provide links to an adaptive form on the page. To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The [!UICONTROL Edit Link Component] dialog opens.
+1. Nell’istanza di authoring, apri un modulo adattivo in modalità di modifica.
+1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
+1. Fai clic sull&#39;icona Proprietà contenitore guida ![Proprietà guida](/help/forms/assets/configure-icon.svg) e apri la scheda **[!UICONTROL Salvataggio automatico]**.
 
-1. In the [!UICONTROL Display] tab, provide the link caption and tooltip to ease identification of the forms represented by the link.
-1. In the [!UICONTROL Asset Info] tab, specify the repository path where the asset is stored. 
-1. In the [!UICONTROL Query Params] tab, specify the additional parameters in the key-value pair format. When the link is clicked, these additional parameters and passed along with the form.
+   ![Salvataggio automatico](/help/forms/assets/auto-save.png){width="250" align="center"}
 
-## Configure Asynchronous Form Submission Using Adobe Sign {#configure-asynchronous-form-submission-using-adobe-sign}
+1. Selezionare la casella di controllo **[!UICONTROL Abilita]** per abilitare il salvataggio automatico del modulo.
+1. Configura **[!UICONTROL Trigger]** come **Basato sul tempo**, per salvare automaticamente il modulo <!--based on the occurrence of an event or--> dopo un intervallo di tempo specifico.
+1. Specificare l&#39;intervallo di tempo in **[!UICONTROL Salvataggio automatico in questo intervallo (in secondi)]** per impostare la durata che attiva il salvataggio automatico del modulo nell&#39;intervallo definito.
+1. Fai clic su **[!UICONTROL Fine]**.
 
-You can configure to submit an adaptive form only when all the recipients have completed the signing ceremony. Follow the steps below to configure the setting using Adobe Sign.
+## Visualizzare le bozze/i moduli inviati nella pagina Sites utilizzando il componente Bozze e invii
 
-1. In the author instance, open an Adaptive Form in the edit mode.
-1. From the left pane, select the Properties icon and expand the **[!UICONTROL ELECTRONIC SIGNTATURE]** option.
-1. Select **[!UICONTROL Enable Adobe Sign]**. Various configuration options display. 
-1. In the [!UICONTROL Submit the form] section, select the **[!UICONTROL after every recipient completes signing ceremony]** option to configure the Submit Form action, where the form is first sent to all the recipients for signing. Once all the recipients have signed the form, only then the form is submitted. 
+Per visualizzare le bozze salvate o i moduli inviati, utilizza il componente **Bozze e invii** di Forms Portal.
+Quando **[!UICONTROL Seleziona tipo]** è selezionato come **Bozza di Forms** nella [finestra di dialogo per configurazione del componente Bozze e invii](#configure-properties-of-the-drafts--submissions-component), i moduli salvati come bozze vengono visualizzati nella pagina Sites. Per aprire le bozze, fai clic sui puntini di sospensione (...) e completa il modulo.
 
-## Save Adaptive Forms As Drafts {#save-adaptive-forms-as-drafts}
+![Icona Bozze](assets/drafts-component.png){width="250" align="center"}
 
-You can save forms as Drafts for completing them later. There are two ways in which a form is saved as a draft:
+Quando **[!UICONTROL Seleziona tipo]** è selezionato come **Forms inviato** nella [finestra di dialogo per configurazione del componente Bozze e invii](#configure-properties-of-the-drafts--submissions-component), vengono visualizzati i moduli inviati. È possibile visualizzare i moduli inviati ma non modificarli.
 
-* Create a "Save Form" rule on a form component, for example, a button. On clicking the button, the rule triggers and the form are saved a draft.
-* Enable Auto-Save feature, which saves the form as per the specified event or after a configured interval of time.
+![Icona Invii](assets/submission-listing.png){width="250" align="center"}
 
-### Create Rules to Save an Adaptive Form as Draft {#rule-to-save-adaptive-form-as-draft}
+È inoltre possibile eliminare i moduli facendo clic sui puntini di sospensione (...) visualizzati nell&#39;angolo inferiore destro del modulo.
 
-To create a "Save Form" rule on a form component, for example, a button, follow the steps below:
+## Passaggi successivi
 
-1. In the author instance, open an Adaptive Form in edit mode.
-1. From the left pane, select ![Components icon](assets/components_icon.png) and drag the [!UICONTROL Button] component to the form.
-1. Select the [!UICONTROL Button] component and then select the ![Configure icon](assets/configure_icon.png). 
-1. Select the [!UICONTROL Edit Rules] icon to open the Rule Editor. 
-1. Select **[!UICONTROL Create]** to configure and create the rule.
-1. In the [!UICONTROL When] section, select "is clicked" and in the [!UICONTROL Then] section, select the "Save Form" options.
-1. Select **[!UICONTROL Done]** to save the rule.
+Nel prossimo articolo, scopri [come aggiungere riferimenti ai moduli nella pagina Sites utilizzando il componente Collega portale Forms](/help/forms/add-form-link-to-aem-sites-page.md).
 
-### Enable Auto-save {#enable-auto-save}
+## Articoli correlati
 
-You can configure the auto-save feature for an adaptive form as follows:
-
-1. In the author instance, open an Adaptive Form in edit mode.
-1. From the left pane, select the ![Properties icon](assets/configure_icon.png) and expand the [!UICONTROL AUTO-SAVE] option.
-1. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form. You can configure the following:
-* By default, the [!UICONTROL Adaptive Form Event] is set to "true", which implies that the form is auto-saved after every event.
-* In [!UICONTROL Trigger], configure to trigger auto-save based on the occurrence of an event or after a specific interval of time.
--->
+{{forms-portal-see-also}}
 
 ## Consulta anche {#see-also}
 
 {{see-also}}
-
-
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
->* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
->* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
-
--->

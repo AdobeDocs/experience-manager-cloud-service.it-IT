@@ -1,203 +1,53 @@
 ---
 title: Come si crea un portale Forms su una pagina Experience Manager Sites?
 description: Scopri come creare un portale Forms e utilizzare i componenti core predefiniti in una pagina di AEM Sites.
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Core Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 1%
+source-wordcount: '359'
+ht-degree: 4%
 
 ---
 
-# Aggiungere Forms Portal a una pagina di AEM Sites {#publish-forms-on-portal}
 
-<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+# Introduzione a Forms Portal
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
-| AEM as a Cloud Service | Questo articolo |
+| AEM as a Cloud Service (Componenti core) | Questo articolo |
 
-In un tipico scenario di distribuzione di un portale incentrato sui moduli, lo sviluppo di moduli e lo sviluppo di portali sono due attività separate. Mentre i progettisti di moduli progettano e memorizzano i moduli in un repository, gli sviluppatori Web creano un&#39;applicazione Web per elencare i moduli e gestirne l&#39;invio. Forms viene copiato sul livello web in quanto non vi è alcuna comunicazione tra l’archivio dei moduli e l’applicazione web.
+Forms Portal consente di visualizzare ed elencare in modo efficiente Forms adattivo su una pagina AEM Sites. È utile per le organizzazioni che richiedono una piattaforma per presentare sistematicamente vari moduli ai propri utenti.
 
-Tali scenari spesso causano problemi di gestione e ritardi nella produzione. Ad esempio, se nell&#39;archivio è disponibile una versione più recente di un modulo, è necessario sostituire il modulo sul livello Web, modificare l&#39;applicazione Web e ridistribuire il modulo sul sito pubblico. La ridistribuzione dell’applicazione web potrebbe causare tempi di inattività del server. In genere, il tempo di inattività del server è un’attività pianificata e pertanto le modifiche non possono essere inviate istantaneamente al sito pubblico.
+Si consideri ad esempio uno scenario in cui una banca deve visualizzare vari moduli sul proprio sito Web. La banca organizza moduli come moduli di richiesta di prestito, moduli per l’apertura di un conto e moduli per sondaggi di feedback sul sito web e utilizza il portale Forms per elencarli in modo dinamico. Il portale Forms consente agli utenti di elencare e cercare moduli nel sito Web della banca. Gli utenti anonimi possono visualizzare e sfogliare l’elenco dei moduli disponibili, ma per accedere alle versioni in bozza o inviare i moduli completati è necessario che abbiano effettuato l’accesso. Inoltre, il portale Forms viene utilizzato anche per aggiungere collegamenti di riferimento ai moduli in una pagina AEM Sites
 
-AEM Forms fornisce componenti portale che riducono i costi generali di gestione e i ritardi di produzione. I componenti consentono agli sviluppatori Web di creare e personalizzare un portale Forms nei siti Web creati con Adobe Experience Manager (AEM).
+I componenti del portale moduli forniscono le funzionalità seguenti:
 
-I componenti del portale moduli consentono di aggiungere le funzionalità seguenti:
-
-* Elencare i moduli in layout personalizzati. Sono disponibili i layout della vista a elenco e della vista a schede. È possibile creare layout personalizzati.
-* Consente di visualizzare metadati personalizzati e azioni personalizzate durante la visualizzazione dell&#39;elenco.
-* Elenca i moduli pubblicati dall’interfaccia utente di AEM Forms nell’istanza di pubblicazione in cui vengono utilizzati i componenti di Forms Portal.
-* Consenti agli utenti finali di eseguire il rendering dei moduli in formato HTML e PDF.
+* Elencare i moduli in layout personalizzati. Sono disponibili i layout della vista a elenco e della vista a schede.
 * Abilita la ricerca di moduli in base a titolo e descrizione.
-* Utilizza CSS personalizzato per personalizzare l’aspetto del portale.
-* Creare collegamenti ai moduli.
-* Elenca le bozze e gli invii relativi a Adaptive Forms creati dall’utente.
+* Creare collegamenti ai moduli per accedervi e condividerli facilmente.
+* Elenca le bozze e gli invii creati dall&#39;utente.
 
-## Componenti di una pagina del portale Forms {#forms-portal-components}
+## Componenti di un portale Forms
+
+![Componenti di Forms Portal](/help/forms/assets/forms-portal.png)
 
 AEM Forms fornisce i seguenti componenti portale pronti all’uso:
 
-* Ricerca ed elenco: questo componente consente di elencare i moduli dall’archivio dei moduli alla pagina del portale e fornisce opzioni di configurazione per elencare i moduli in base a criteri specificati.
+* **Ricerca ed elenco**: elenca i moduli in una pagina Sites e offre opzioni di configurazione per filtrare i moduli in base a criteri specificati.
+* **Bozze e invii**: vengono visualizzati i moduli salvati come bozza per il completamento successivo e i moduli inviati. Vengono visualizzati sia i moduli salvati come bozze da compilare in un secondo momento sia quelli inviati. Offre un’esperienza personalizzata per qualsiasi utente connesso.
+* **Collegamento**: crea un collegamento a un modulo in un punto qualsiasi della pagina.
 
-* Bozze e invii: mentre il componente Ricerca ed elenco visualizza i moduli resi pubblici da Forms Author, il componente Bozze e invii visualizza i moduli salvati come bozze da compilare in un secondo momento e quelli inviati. Questo componente fornisce un’esperienza personalizzata a qualsiasi utente connesso.
+## Passaggi successivi
 
-* Collegamento: questo componente consente di creare un collegamento a un modulo in un punto qualsiasi della pagina.
+Nel prossimo articolo, scopri [come elencare i moduli nella pagina Sites utilizzando il componente Search &amp; Lister di Forms Portal](/help/forms/list-forms-on-sites-page.md).
 
-È possibile [importare i componenti predefiniti di Forms Portal](#import-forms-portal-components-aem-archetype) dall&#39;archetipo del progetto AEM. Dopo l’importazione, esegui le seguenti configurazioni:
+## Articoli correlati
 
-* [Configurare un’archiviazione esterna](#configure-azure-storage-adaptive-forms)
-
-* [Abilitare i componenti di Forms Portal](#enable-forms-portal-components)
-
-* [Configurare i componenti di Forms Portal](#configure-forms-portal-components)
-
-## Importare componenti di Forms Portal {#import-forms-portal-components-aem-archetype}
-
-Per importare componenti predefiniti di Forms Portal in AEM Forms as a Cloud Service, effettua le seguenti operazioni:
-
-1. **Clona archivio Git Cloud Manager nell&#39;istanza di sviluppo locale:** L&#39;archivio Git di Cloud Manager contiene un progetto AEM predefinito. È basato su [Archetipo AEM](https://github.com/adobe/aem-project-archetype/). Clona l’archivio Git di Cloud Manager utilizzando la gestione self-service dell’account Git dall’interfaccia utente di Cloud Manager per portare il progetto nell’ambiente di sviluppo locale. Per informazioni dettagliate sull&#39;accesso all&#39;archivio, vedere [Accesso agli archivi](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
-
-1. **Crea [!DNL Experience Manager Forms] come progetto [Cloud Service]:** Crea [!DNL Experience Manager Forms] come progetto [Cloud Service] basato su [Archetipo AEM 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) o versione successiva. L&#39;archetipo consente agli sviluppatori di iniziare facilmente a sviluppare per l&#39;as a Cloud Service [!DNL AEM Forms]. Include inoltre alcuni temi e modelli di esempio per aiutarti a iniziare rapidamente.
-
-   Per creare [!DNL Experience Manager Forms] as a Cloud Service progetto, aprire il prompt dei comandi ed eseguire il comando seguente. Per includere [!DNL Forms] configurazioni, temi e modelli specifici, impostare `includeForms=y`.
-
-   ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=30 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
-   ```
-
-   Inoltre, modifica `appTitle`, `appId` e `groupId` nel comando precedente per riflettere l&#39;ambiente.
-
-   Quando il progetto è pronto, aggiorna la proprietà `<core.forms.components.version>x.y.z</core.forms.components.version>` nel livello principale `pom.xml` del progetto Archetype per riflettere la versione più recente di [core-forms-components](https://github.com/adobe/aem-core-forms-components) nel progetto `AEM Archetype`.
-
-1. **Distribuisci il progetto nell&#39;ambiente di sviluppo locale:** Puoi utilizzare il comando seguente per eseguire la distribuzione nell&#39;ambiente di sviluppo locale
-
-   `mvn -PautoInstallPackage clean install`
-
-   Per l&#39;elenco completo dei comandi, vedere [Generazione e installazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
-
-1. [Distribuisci il codice nell&#39;ambiente [!DNL AEM Forms] as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
-
-
-## Configurare l’archiviazione Azure per Adaptive Forms {#configure-azure-storage-adaptive-forms}
-
-[[!DNL Experience Manager Forms] Integrazione dati](data-integration.md) fornisce la configurazione di archiviazione [!DNL Azure] per integrare i moduli con i servizi di archiviazione [!DNL Azure]. Il modello di dati del modulo (FDM) può essere utilizzato per creare Forms adattivo che interagisce con il server [!DNL Azure] per abilitare i flussi di lavoro aziendali.
-
-### Crea configurazione archiviazione Azure {#create-azure-storage-configuration}
-
-Prima di eseguire questi passaggi, verificare di disporre di un account di archiviazione Azure e di una chiave di accesso per autorizzare l&#39;accesso all&#39;account di archiviazione [!DNL Azure].
-
-1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
-1. Selezionare una cartella per creare la configurazione e selezionare **[!UICONTROL Crea]**.
-1. Specifica un titolo per la configurazione nel campo **[!UICONTROL Titolo]**.
-1. Specificare il nome dell&#39;account di archiviazione [!DNL Azure] nel campo **[!UICONTROL Account di archiviazione Azure]**.
-
-### Configurare il connettore di archiviazione unificata per Forms Portal {#configure-usc-forms-portal}
-
-Per configurare il connettore di archiviazione unificata per i flussi di lavoro AEM, effettua le seguenti operazioni:
-
-1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Connettore di archiviazione unificata]**.
-1. Nella sezione **[!UICONTROL Forms Portal]**, selezionare **[!UICONTROL Azure]** dall&#39;elenco a discesa **[!UICONTROL Archiviazione]**.
-1. Specificare il [percorso di configurazione per la configurazione di archiviazione Azure](#create-azure-storage-configuration) nel campo **[!UICONTROL Percorso configurazione di archiviazione]**.
-1. Seleziona **[!UICONTROL Publish]**, quindi seleziona **[!UICONTROL Salva]** per salvare la configurazione.
-
-## Abilita componenti di Forms Portal {#enable-forms-portal-components}
-
-Per utilizzare qualsiasi componente core (inclusi i componenti portale predefiniti) in un sito Adobe Experience Manager (AEM), è necessario creare un componente proxy e abilitarlo per il sito. Per la creazione di un componente proxy e l&#39;abilitazione dei componenti del portale, vedere [Utilizzo dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components).
-
-Una volta attivato, il componente portale può essere utilizzato nell&#39;istanza di authoring della pagina Sites.
-
-## Aggiungere e configurare componenti di Forms Portal {#configure-forms-portal-components}
-
-Puoi creare e personalizzare Forms Portal sui siti web creati con AEM aggiungendo e configurando i componenti del portale. Prima di utilizzare i [componenti nel portale Forms, assicurati che siano abilitati](#enable-forms-portal-components).
-
-Per aggiungere un componente, trascinare e rilasciare il componente dal riquadro Componenti al contenitore di layout nella pagina oppure selezionare l&#39;icona di aggiunta nel contenitore di layout e aggiungere il componente dalla finestra di dialogo [!UICONTROL Inserisci nuovo componente].
-
-### Configura componente Bozze e invii {#configure-drafts-submissions-component}
-
-Il componente Bozze e invii visualizza i moduli salvati come bozze da compilare in un secondo momento e quelli inviati. Per configurare, selezionare il componente, quindi selezionare l&#39;icona ![Configura](assets/configure_icon.png). Nella finestra di dialogo [!UICONTROL Bozze e invii], specifica il titolo per indicare il modulo come bozza o inviato. Seleziona anche se il componente deve elencare le bozze di moduli o i moduli inviati in formato scheda o elenco.
-
-![Icona Bozze](assets/drafts-component.png)
-
-![Icona Invii](assets/submission-listing.png)
-
-### Configurare il componente Ricerca ed elenco {#configure-search-lister-component}
-
-Il componente Ricerca ed Elenco viene utilizzato per elencare i moduli adattivi su una pagina e per implementare la ricerca nei moduli elencati.
-
-![Icona Ricerca ed elenco](assets/search-and-lister-component.png)
-
-Per configurare, selezionare il componente, quindi selezionare l&#39;icona ![Configura](assets/configure_icon.png). Viene visualizzata la finestra di dialogo [!UICONTROL Ricerca ed elenco].
-
-1. Nella scheda [!UICONTROL Visualizzazione], configura quanto segue:
-   * In **[!UICONTROL Titolo]**, specificare il titolo del componente Ricerca ed elenco. Un titolo indicativo consente agli utenti di eseguire ricerche rapide nell’elenco dei moduli.
-   * Dall&#39;elenco **[!UICONTROL Layout]**, selezionare il layout per rappresentare i moduli in formato scheda o elenco.
-   * Seleziona **[!UICONTROL Nascondi ricerca]** e **[!UICONTROL Nascondi ordinamento]** per nascondere la ricerca e ordinare per funzionalità.
-   * In **[!UICONTROL Descrizione]**, fornire la descrizione che viene visualizzata quando si passa il puntatore sul componente.
-1. Nella scheda [!UICONTROL Cartella risorse], specifica il percorso da cui i moduli vengono estratti ed elencati nella pagina. Puoi configurare più percorsi di cartelle.
-1. Nella scheda [!UICONTROL Risultati], configura il numero massimo di moduli da visualizzare per pagina. Il valore predefinito è otto moduli per pagina.
-
-### Configura componente collegamento {#configure-link-component}
-
-Il componente collegamento consente di fornire nella pagina i collegamenti a un modulo adattivo. Per configurare, selezionare il componente, quindi selezionare l&#39;icona ![Configura](assets/configure_icon.png). Viene visualizzata la finestra di dialogo [!UICONTROL Modifica componente collegamento].
-
-1. Nella scheda [!UICONTROL Visualizzazione], fornisci la didascalia del collegamento e la descrizione comando per facilitare l&#39;identificazione dei moduli rappresentati dal collegamento.
-1. Nella scheda [!UICONTROL Informazioni risorsa], specifica il percorso dell&#39;archivio in cui è memorizzata la risorsa.
-1. Nella scheda [!UICONTROL Parametri query], specifica i parametri aggiuntivi nel formato della coppia chiave-valore. Quando fai clic sul collegamento, questi parametri aggiuntivi vengono trasmessi insieme al modulo.
-
-## Configurare L’Invio Di Moduli Asincroni Tramite Adobe Sign {#configure-asynchronous-form-submission-using-adobe-sign}
-
-Puoi configurare per l’invio di un modulo adattivo solo quando tutti i destinatari hanno completato la cerimonia di firma. Segui i passaggi seguenti per configurare l’impostazione utilizzando Adobe Sign.
-
-1. Nell’istanza di authoring, apri un modulo adattivo in modalità di modifica.
-1. Nel riquadro sinistro selezionare l&#39;icona Proprietà ed espandere l&#39;opzione **[!UICONTROL FIRMA ELETTRONICA]**.
-1. Selezionare **[!UICONTROL Abilita Adobe Sign]**. Vengono visualizzate diverse opzioni di configurazione.
-1. Nella sezione [!UICONTROL Invia il modulo], seleziona l&#39;opzione **[!UICONTROL dopo che ogni destinatario ha completato la cerimonia di firma]** per configurare l&#39;azione Invia modulo, in cui il modulo viene inviato per la prima volta a tutti i destinatari per la firma. Una volta che tutti i destinatari hanno firmato il modulo, solo allora il modulo viene inviato.
-
-## Salva Forms Adattivo Come Bozze {#save-adaptive-forms-as-drafts}
-
-È possibile salvare i moduli come bozze per completarli in un secondo momento. Esistono due modi in cui un modulo viene salvato come bozza:
-
-* Crea una regola &quot;Salva modulo&quot; su un componente modulo, ad esempio un pulsante. Facendo clic sul pulsante, la regola viene attivata e il modulo viene salvato come bozza.
-* Abilita la funzione di salvataggio automatico, che salva il modulo in base all’evento specificato o dopo un intervallo di tempo configurato.
-
-### Creare regole per salvare un modulo adattivo come bozza {#rule-to-save-adaptive-form-as-draft}
-
-Per creare una regola &quot;Salva modulo&quot; su un componente modulo, ad esempio un pulsante, segui i passaggi seguenti:
-
-1. Nell’istanza di authoring, apri un modulo adattivo in modalità di modifica.
-1. Dal riquadro di sinistra, selezionare l&#39;icona ![Componenti](assets/components_icon.png) e trascinare il componente [!UICONTROL Pulsante] nel modulo.
-1. Selezionare il componente [!UICONTROL Button], quindi l&#39;icona ![Configura](assets/configure_icon.png).
-1. Seleziona l&#39;icona [!UICONTROL Modifica regole] per aprire l&#39;editor di regole.
-1. Seleziona **[!UICONTROL Crea]** per configurare e creare la regola.
-1. Nella sezione [!UICONTROL When], seleziona &quot;è stato fatto clic&quot; e nella sezione [!UICONTROL Then] seleziona le opzioni &quot;Save Form&quot;.
-1. Seleziona **[!UICONTROL Fine]** per salvare la regola.
-
-### Abilita salvataggio automatico {#enable-auto-save}
-
-Puoi configurare la funzione di salvataggio automatico per un modulo adattivo come segue:
-
-1. Nell’istanza di authoring, apri un modulo adattivo in modalità di modifica.
-1. Nel riquadro sinistro selezionare l&#39;icona ![Proprietà](assets/configure_icon.png) ed espandere l&#39;opzione [!UICONTROL SALVATAGGIO AUTOMATICO].
-1. Selezionare la casella di controllo **[!UICONTROL Abilita]** per abilitare il salvataggio automatico del modulo. Puoi configurare quanto segue:
-* Per impostazione predefinita, [!UICONTROL Evento modulo adattivo] è impostato su &quot;true&quot;, il che implica che il modulo viene salvato automaticamente dopo ogni evento.
-* In [!UICONTROL Trigger], configurare per attivare il salvataggio automatico in base all&#39;occorrenza di un evento o dopo un intervallo di tempo specifico.
+{{forms-portal-see-also}}
 
 ## Consulta anche {#see-also}
 
 {{see-also}}
-
-
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
->* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
->* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
-
--->

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
+source-git-commit: 9c6cf85ccc4e15671669b2fc59b01e7c0cef10e2
 workflow-type: tm+mt
-source-wordcount: '5481'
-ht-degree: 97%
+source-wordcount: '5528'
+ht-degree: 96%
 
 ---
 
@@ -691,6 +691,7 @@ ht-degree: 97%
       + Componenti core {#authoring-adaptive-forms-core-components}
          + Creare un modulo adattivo {#create-an-adaptive-form-on-forms-cs}
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
+            + [Impostare il layout di un modulo adattivo basato su componenti core](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [Creare un frammento di modulo adattivo](/help/forms/adaptive-form-fragments-core-components.md)
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
             + [Creare un modello di modulo adattivo basato sui componenti core](/help/forms/template-editor-core-components.md)
@@ -715,7 +716,6 @@ ht-degree: 97%
             + [Aggiungere versioni, commenti e annotazioni a un modulo adattivo](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Confronta i moduli adattivi](/help/forms/compare-forms.md)
             + [Conversione di moduli adattivi basati su componenti di base in moduli basati su Componenti core tramite lo strumento utility di migrazione](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [Salvare un modulo adattivo come bozza](/help/forms/save-core-component-based-form-as-draft.md)
             + Introduzione all’editor di regole per moduli adattivi basati su componenti core{#rule-editor-core-components}
                + [Introduzione all’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components.md)
                + [Interfaccia utente dell’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components-user-interface.md)
@@ -726,6 +726,11 @@ ht-degree: 97%
                + [Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core](/help/forms/create-and-use-custom-functions.md)
                + [Creare e utilizzare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
                + [Esempi di funzioni personalizzate per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-components-use-cases.md)
+            + Introduzione a Forms Portal e ai relativi componenti{#introduction-to-forms-portal}
+               + [Introduzione al componente Forms Portal](/help/forms/configure-forms-portal.md)
+               + [Elencare i moduli nella pagina Sites utilizzando il componente Ricerca ed elenco](/help/forms/list-forms-on-sites-page.md)
+               + [Salvare ed elencare i moduli come bozze nella pagina Sites utilizzando il componente Bozze e invii](/help/forms/save-core-component-based-form-as-draft.md)
+               + [Aggiungere collegamenti modulo alla pagina Sites utilizzando il componente Collegamento](/help/forms/add-form-link-to-aem-sites-page.md)
       + Componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)
@@ -782,7 +787,6 @@ ht-degree: 97%
             + [Riutilizzare le proprietà dei metadati di un modulo adattivo](/help/forms/reusing-adaptive-forms.md)
          + Migliorare l’accessibilità di un modulo adattivo {#accessible-adaptive-forms}
             + [Creare un modulo adattivo accessibile](/help/forms/creating-accessible-adaptive-forms.md)
-         + [Configurare Forms Portal](/help/forms/configure-forms-portal.md)
          + [Creare e gestire le revisioni](/help/forms/create-reviews-forms.md)
          + [Associare i revisori di invio a un modulo](/help/forms/adding-reviewers-form.md)
          + [Creare e gestire recensioni per un modulo adattivo](/help/forms/review-adaptiveforms-in-sites-page.md)
