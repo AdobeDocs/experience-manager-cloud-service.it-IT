@@ -4,7 +4,7 @@ description: Il layout e l’aspetto di Adaptive Forms su vari dispositivi sono 
 feature: Adaptive Forms, Core Components
 keywords: Layout del modulo adattivo basato su componenti core, layout diversi per i moduli, layout di modulo dinamico AEM, layout di modulo AEM Cloud Service, tipi di layout di modulo nei componenti core AEM, layout di modulo adattivo
 role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -138,10 +138,10 @@ Esaminiamo il processo dettagliato per l’inserimento di un layout e l’aggiun
 
 1. Nell’editor modulo, individua la sezione che consente di aggiungere un layout.
 
-   ![Editor modulo](/help/forms/assets/form-editor.png){width="200" align="center"}
+   ![Editor modulo](/help/forms/assets/form-editor.png)
 1. Fai clic sull&#39;icona **Aggiungi**. L’icona è un segno più (+) che indica l’opzione per aggiungere nuovi componenti.
 
-   ![Inserisci layout](/help/forms/assets/insert-layout-add-icon.png){width="200" align="center"}
+   ![Inserisci layout](/help/forms/assets/insert-layout-add-icon.png)
 
    Facendo clic sull&#39;icona **Aggiungi** viene visualizzata una finestra di dialogo **Inserisci nuovo componente** in cui sono visualizzati vari componenti da inserire.
 
@@ -151,20 +151,20 @@ Esaminiamo il processo dettagliato per l’inserimento di un layout e l’aggiun
 
 1. Sfoglia i componenti disponibili nella finestra di dialogo e seleziona il layout desiderato dall’elenco. Nel nostro caso, selezioniamo il componente Schede orizzontali per inserire il layout delle schede orizzontali.
 
-   ![Seleziona schede orizzontali](/help/forms/assets/select-horizontal-tab.png){width="200" align="center"}
+   ![Seleziona schede orizzontali](/help/forms/assets/select-horizontal-tab.png)
 
    Quando si aggiunge al modulo il componente Schede orizzontali, inizialmente è costituito da due pannelli vuoti, denominati Item1 e Item2, per impostazione predefinita. Devi aggiungere manualmente i componenti del modulo a questi pannelli.
 
-   ![Schede orizzontali](/help/forms/assets/insert-tabs-on-top.png){width="200" align="center"}
+   ![Schede orizzontali](/help/forms/assets/insert-tabs-on-top.png)
 
 1. Apri le proprietà del componente Schede orizzontali e specifica il nome del componente.
 Ad esempio, in questo caso, aggiungiamo il nome del componente Schede orizzontali come Modulo di richiesta IT.
 
-   ![Aggiungi nome per schede orizzontali](/help/forms/assets/change-name-of-horizontal-tabs.png){width="200" align="center"}
+   ![Aggiungi nome per schede orizzontali](/help/forms/assets/change-name-of-horizontal-tabs.png)
 
 1. Fai clic su **Fine**.
 
-   ![Schede orizzontali](/help/forms/assets/tabs-on-top-rename-component.png){width="200" align="center"}
+   ![Schede orizzontali](/help/forms/assets/tabs-on-top-rename-component.png)
 
 Una volta aggiunto il componente layout nel modulo, modifica il numero di pannelli in base ai requisiti.
 
@@ -174,43 +174,43 @@ Aggiungi un nuovo pannello al componente Schede orizzontali:
 
 1. Apri le proprietà del componente Schede orizzontali e fai clic sulla scheda **Elementi**.
 
-   ![Scheda elemento per schede orizzontali](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
+   ![Scheda elemento per schede orizzontali](/help/forms/assets/tabs-on-top-items-tab.png)
 
 1. Fai clic sull&#39;icona **Aggiungi** per aggiungere un nuovo pannello.
 
-   ![Aggiungi nuovo pannello](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
+   ![Aggiungi nuovo pannello](/help/forms/assets/tabs-on-top-add-panel.png)
 
    Quando si fa clic sull&#39;icona **Aggiungi**, viene visualizzata la finestra di dialogo **Inserisci nuovo componente**.
 
 1. Seleziona il componente del pannello.
 
-   ![Aggiungi nuovo pannello](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
+   ![Aggiungi nuovo pannello](/help/forms/assets/tabs-on-top-new-panel.png)
 
    Quando selezioni il componente pannello, il nuovo pannello viene aggiunto nel layout orizzontale.
 
-   ![Aggiungi nuovo pannello](/help/forms/assets/tabs-on-top-add-new-panel.png){width="200" align="center"}
+   ![Aggiungi nuovo pannello](/help/forms/assets/tabs-on-top-add-new-panel.png)
 
    Assegna un nome al nuovo pannello. In caso contrario, non puoi salvare le proprietà del componente Schede orizzontali.
 
 1. Specificate i nomi dei pannelli come mostrato nella figura riportata di seguito:
 
-   ![Nomi pannello](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
+   ![Nomi pannello](/help/forms/assets/tabs-on-tops-panel-name.png)
 
 1. Fai clic su **Fine**.
 
    Dopo aver fatto clic su **Fine**, i tre pannelli vengono visualizzati affiancati in una riga. I nomi dei pannelli vengono visualizzati come intestazioni per ciascun pannello e puoi aggiungere componenti modulo a ciascun pannello.
 
-   ![Nomi pannello](/help/forms/assets/tabs-on-top-initial-view.png){width="200" align="center"}
+   ![Nomi pannello](/help/forms/assets/tabs-on-top-initial-view.png)
 
    Puoi configurare le proprietà del componente pannello. Ad esempio, il modulo di richiesta IT non include i titoli dei pannelli, ecco i passaggi per configurare le proprietà del componente pannello.
 
 1. Apri le proprietà del primo pannello.
 
-   ![Proprietà pannello 1](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
+   ![Proprietà pannello 1](/help/forms/assets/tabs-on-tops-panel1-properties.png)
 
 1. Selezionare la casella di controllo **Nascondi titolo** dalla scheda **Base**.
 
-   ![Nascondi titolo](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
+   ![Nascondi titolo](/help/forms/assets/tabs-on-top-hide-panel.png)
 
 1. Fai clic su **Fine**.
 
@@ -224,41 +224,41 @@ Allo stesso modo, potete nascondere i titoli anche per gli altri due pannelli. A
 
 1. Individua la sezione all’interno del pannello che consente di aggiungere componenti.
 1. Fai clic sull&#39;icona **Aggiungi**. L’icona è un segno più (+) che indica l’opzione per aggiungere nuovi componenti.
-   ![Inserisci layout](/help/forms/assets/tabs-on-top-add-component.png){width="200" align="center"}
+   ![Inserisci layout](/help/forms/assets/tabs-on-top-add-component.png)
 
    Facendo clic sull&#39;icona **Aggiungi** viene visualizzata una finestra di dialogo **Inserisci nuovo componente** in cui sono visualizzati vari componenti da inserire.
 
-   ![Finestra di dialogo Inserisci nuovo componente](/help/forms/assets/insert-new-component.png){width="200" align="center"}
+   ![Finestra di dialogo Inserisci nuovo componente](/help/forms/assets/insert-new-component.png)
 
 1. Sfoglia i componenti disponibili nella finestra di dialogo che viene visualizzata e seleziona il componente desiderato. Nel nostro caso, seleziona il componente Casella di testo.
 1. Apri le proprietà del componente aggiunto e specifica il nome. Consente di modificare le proprietà del componente Casella di testo aggiunto e di specificarne il nome.
-   ![Inserisci layout](/help/forms/assets/tabs-on-top-textbox-component.png){width="200" align="center"}
+   ![Inserisci layout](/help/forms/assets/tabs-on-top-textbox-component.png)
 1. Allo stesso modo, aggiungi altri due componenti Casella di testo e assegna ai componenti un nome ID e-mail e un Reparto.\
-   ![Primo pannello](/help/forms/assets/tabs-on-tops-first-panel.png){width="200" align="center"}
+   ![Primo pannello](/help/forms/assets/tabs-on-tops-first-panel.png)
 
    Dopo aver aggiunto i componenti nel primo pannello, puoi procedere con l’aggiunta dei componenti al secondo pannello.
 
 1. Per cambiare pannello, fare clic su **Seleziona pannello** nella barra degli strumenti.
 
-   ![Pannello Switch](/help/forms/assets/tabs-on-top-select-panel.png){width="200" align="center"}
+   ![Pannello Switch](/help/forms/assets/tabs-on-top-select-panel.png)
 
    Quando fai clic su **Seleziona pannello**, viene visualizzato l&#39;elenco dei pannelli aggiunti nel componente Schede orizzontali.
 
-   ![Pannello Switch](/help/forms/assets/tabs-on-tops-panel2.png){width="200" align="center"}
+   ![Pannello Switch](/help/forms/assets/tabs-on-tops-panel2.png)
 
 1. Selezionare **2 pannello** dall&#39;elenco dei pannelli e la visualizzazione cambia dal primo pannello al secondo.
 
-   ![Secondo pannello](/help/forms/assets/tabs-on-top-panel2-component.png){width="200" align="center"}
+   ![Secondo pannello](/help/forms/assets/tabs-on-top-panel2-component.png)
 
 1. Ripetete i passi descritti dal punto 2 al punto 4 per aggiungere i componenti desiderati nel pannello 2 come mostrato nella figura seguente:
 
-   ![Componenti del secondo pannello](/help/forms/assets/panel-2-components.png){width="200" align="center"}
+   ![Componenti del secondo pannello](/help/forms/assets/panel-2-components.png)
 
 1. Passare al pannello **3** seguendo i passaggi descritti nei passaggi 6 e 7.
 
 1. Ripeti i passaggi descritti dal passaggio 2 al passaggio 4 per aggiungere il componente desiderato nel pannello 3:
 
-   ![Componenti del terzo pannello](/help/forms/assets/panel-3-component.png){width="200" align="center"}
+   ![Componenti del terzo pannello](/help/forms/assets/panel-3-component.png)
 
 1. Fai clic su **[!UICONTROL Anteprima]** nell&#39;angolo in alto a destra dell&#39;ambiente di authoring.
 
@@ -319,7 +319,7 @@ Puoi anche [trascinare i componenti](#extra-bytes) per aggiungere i componenti d
 
 Puoi anche eliminare il componente modulo dal pannello utilizzando l&#39;icona ![Elimina](/help/forms/assets/Smock_Delete_18_N.svg).
 
-![Eliminazione di un componente](/help/forms/assets/delete-component.png){width="200" align="center"}
+![Eliminazione di un componente](/help/forms/assets/delete-component.png)
 
 Puoi anche aggiungere le convalide richieste per i componenti, in base alle esigenze.
 
@@ -333,11 +333,11 @@ Per sostituire il layout esistente di un modulo, effettuare le seguenti operazio
 
 1. Fare clic sull&#39;icona Sostituisci nella barra degli strumenti del componente layout per visualizzare la finestra di dialogo **[!UICONTROL Sostituisci componente]**.
 
-   ![Sostituisci layout](/help/forms/assets/replace-layout.png){width="200" align="center"}
+   ![Sostituisci layout](/help/forms/assets/replace-layout.png)
 
 1. Selezionare il layout desiderato dalla finestra di dialogo **[!UICONTROL Sostituisci componente]**.
 
-   ![Finestra di dialogo Sostituisci componente](/help/forms/assets/replace-component.png){width="200" align="center"}
+   ![Finestra di dialogo Sostituisci componente](/help/forms/assets/replace-component.png)
 
    Dopo aver selezionato il layout, la disposizione dei componenti all’interno del layout cambia di conseguenza. Ad esempio, seleziona il componente Schede verticali dalla finestra di dialogo **[!UICONTROL Sostituisci componente]**; la disposizione del pannello cambia in Schede a sinistra:
 
@@ -350,11 +350,11 @@ Per trascinare i componenti nell’editor di moduli, effettua le seguenti operaz
 1. Individua la sezione che ti consente di aggiungere componenti.
 1. Passa al pannello a sinistra nell&#39;ambiente di authoring e fai clic su **Componenti**.
 
-   ![Pannello Componenti](/help/forms/assets/add-new-component.png){width="200" align="center"}
+   ![Pannello Componenti](/help/forms/assets/add-new-component.png)
 
    Quando si fa clic sull&#39;opzione **Componenti**, viene visualizzato l&#39;elenco dei componenti disponibili.
 
-   ![Pannello Componenti](/help/forms/assets/add-new-component2.png){width="200" align="center"}
+   ![Pannello Componenti](/help/forms/assets/add-new-component2.png)
 
 1. Sfoglia i componenti disponibili e seleziona il componente desiderato.
 
