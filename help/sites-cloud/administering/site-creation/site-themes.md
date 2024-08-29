@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 92c0e556eb1f92dadd396a479a8bf933715935a7
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 100%
+source-wordcount: '364'
+ht-degree: 91%
 
 ---
 
@@ -39,12 +39,14 @@ I temi del sito vengono utilizzati in due modi diversi:
 
 ## Struttura del tema del sito {#structure}
 
-I temi del sito sono semplicemente pacchetti con una struttura logica che riflette chiaramente lo scopo del contenuto. Un tema del sito ha la seguente struttura, tipica di un progetto front-end.
+I temi del sito sono semplicemente pacchetti con una struttura logica che riflette chiaramente lo scopo del contenuto. Per un progetto front-end tipico, l’Adobe consiglia la seguente struttura per un tema del sito:
 
-* `src/main.ts`: il punto di ingresso principale del tema JS &amp; CSS
+* `src/theme.ts`: il punto di ingresso principale del tema JS &amp; CSS
 * `src/site`: file JS &amp; CSS applicabili all’intero sito
 * `src/components`: file JS &amp; CSS specifici per i componenti AEM
 * `src/resources`: file statici come icone, loghi e font
+
+A seconda delle esigenze specifiche del progetto, la struttura del tema può variare fino a quando viene mantenuto il punto di ingresso principale, `src/theme.ts`.
 
 ## Tema del sito standard {#standard-site-theme}
 
