@@ -4,19 +4,21 @@ description: Scopri come salvare come bozza un modulo adattivo basato su compone
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 72e8223c91e5722e27ebd6853b8b75a7415f3e4d
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1376'
 ht-degree: 2%
 
 ---
 
 
-# Salvare ed elencare i moduli come bozze nella pagina Sites
+# Salvare i moduli come bozze e elencarli nella pagina Sites
+
+<span class="preview"> Questo articolo contiene informazioni sulla funzionalità **Salvataggio automatico**, una funzionalità non definitiva. La funzione pre-release è accessibile solo tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features).</span>
 
 Si consideri un utente che inizia a compilare un modulo ma deve sospendere e tornare in un secondo momento. L&#39;AEM offre un&#39;opzione `save-as-draft` che consente all&#39;utente di salvare il modulo come bozza per il completamento futuro. Per facilitare questa fase, AEM fornisce il componente **Bozze e invii** Portale dei moduli pronto all&#39;uso, che visualizza le bozze e gli invii sulle pagine AEM Sites. Il componente elenca i moduli salvati come bozze da completare in un secondo momento, nonché quelli inviati. Solo gli utenti connessi possono modificare le bozze o visualizzare i moduli inviati. Tuttavia, se un utente anonimo passa all&#39;elenco dei moduli utilizzando il componente **Ricerca e elenco** e salva un modulo come bozza, tale bozza non viene elencata dal componente **Bozze e invii**. Per visualizzare le bozze e gli invii, è necessario che gli utenti abbiano effettuato l&#39;accesso al momento dell&#39;invio del modulo.
 
-![Icona Bozze](assets/drafts-component.png){width="250" align="center"}
+![Icona Bozze](assets/drafts-component.png)
 
 ## Prerequisiti
 
@@ -32,16 +34,16 @@ Il componente **Bozze e invii** richiede una configurazione dell&#39;archiviazio
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
 
-   ![Selezione scheda di archiviazione Azure](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
+   ![Selezione scheda di archiviazione Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. Selezionare una cartella di configurazione per creare la configurazione e selezionare **[!UICONTROL Crea]**.
 
-   ![Seleziona cartella di configurazione archiviazione di Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
+   ![Seleziona cartella di configurazione archiviazione di Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. Specifica un titolo per la configurazione nel campo **[!UICONTROL Titolo]**.
 1. Specificare il nome dell&#39;account di archiviazione [!DNL Azure] nei campi **[!UICONTROL Account di archiviazione Azure]** e **[!UICONTROL Chiave di accesso Azure]**.
 
-   ![Configurazione archiviazione Azure](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
+   ![Configurazione archiviazione Azure](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
 1. Fai clic su **Salva**.
 
@@ -53,12 +55,12 @@ Il componente **Bozze e invii** richiede una configurazione dell&#39;archiviazio
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Connettore di archiviazione unificata]**.
 
-   ![Archiviazione connettore unificato](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
+   ![Archiviazione connettore unificato](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
 1. Nella sezione **[!UICONTROL Forms Portal]**, selezionare **[!UICONTROL Azure]** dall&#39;elenco a discesa **[!UICONTROL Archiviazione]**.
 1. Specificare il percorso di configurazione per la configurazione di archiviazione Azure nel campo **[!UICONTROL Percorso configurazione di archiviazione]**.
 
-   ![Impostazione archiviazione connettore unificato](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"}
+   ![Impostazione archiviazione connettore unificato](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
 1. Seleziona **[!UICONTROL Salva]**.
 
@@ -74,11 +76,11 @@ Dopo aver configurato correttamente il connettore di archiviazione e archiviazio
 
 1. Apri la pagina AEM Sites in modalità **Modifica**.
 1. Vai a **[!UICONTROL Informazioni pagina]** > **[!UICONTROL Modifica modello]**
-   ![Modifica criterio modello](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![Modifica criterio modello](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. Fai clic sul **[!UICONTROL Criterio]** e seleziona la casella di controllo **[!UICONTROL Bozze e invii]** in **[Nome progetto archetipo AEM] - Forms and Communications Portal**.
 
-   ![Selezione criteri](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
+   ![Selezione criteri](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Fai clic su **[!UICONTROL Fine]**.
 1. Ora riapri la pagina AEM Sites in modalità di authoring.
@@ -93,7 +95,7 @@ Dopo aver configurato correttamente il connettore di archiviazione e archiviazio
 
 1. Sfoglia i componenti disponibili nella finestra di dialogo e seleziona il componente desiderato dall’elenco. Selezionare ad esempio il componente **Bozze e invii** dall&#39;elenco per aggiungere il componente **Bozze e invii** di Forms Portal.
 
-   ![Aggiungi bozza e componente invio](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"}
+   ![Aggiungi bozza e componente invio](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 Ora configura le proprietà del componente **Bozze e invii** in base ai requisiti.
 
@@ -107,7 +109,7 @@ Puoi configurare le proprietà di **Bozze e invii**:
    * **Seleziona tipo**: per indicare il modulo come bozza o inviato. Se si sceglie **Bozza di Forms**, verranno visualizzati i moduli salvati come bozze. In alternativa, selezionando **Forms inviato** vengono visualizzati i moduli inviati dagli utenti connessi.
    * **Layout**: per visualizzare le bozze degli elenchi o i moduli inviati in formato scheda o elenco.
 
-   ![Proprietà dei componenti Bozza e Invio](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"}
+   ![Proprietà dei componenti Bozza e Invio](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 ## Configurare i moduli da salvare come bozze
 
@@ -129,13 +131,11 @@ Per salvare un modulo come bozza, creare una regola **Salva modulo** in un compo
 1. Nella sezione **[!UICONTROL When]**, seleziona **is clicked** e nella sezione **[!UICONTROL Then]** seleziona l&#39;opzione **Save Form**.
 1. Seleziona **[!UICONTROL Fine]** per salvare la regola.
 
-   ![Crea regola per il pulsante](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}
+   ![Crea regola per il pulsante](/help/forms/assets/save-form-as-drfat-create-rule.png)
 
 Quando visualizzi l&#39;anteprima di un modulo adattivo, lo compili e fai clic sul pulsante **Salva modulo**, il modulo viene salvato come bozza.
 
 ### Salvataggio automatico
-
-<span class="preview"> Questo articolo contiene informazioni sulla funzionalità **Salvataggio automatico**, una funzionalità non definitiva. La funzione pre-release è accessibile solo tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features).</span>
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ Puoi anche configurare un modulo adattivo in modo che venga salvato automaticame
 1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
 1. Fai clic sull&#39;icona Proprietà contenitore guida ![Proprietà guida](/help/forms/assets/configure-icon.svg) e apri la scheda **[!UICONTROL Salvataggio automatico]**.
 
-   ![Salvataggio automatico](/help/forms/assets/auto-save.png){width="250" align="center"}
+   ![Salvataggio automatico](/help/forms/assets/auto-save.png)
 
 1. Selezionare la casella di controllo **[!UICONTROL Abilita]** per abilitare il salvataggio automatico del modulo.
 1. Configura **[!UICONTROL Trigger]** come **Basato sul tempo**, per salvare automaticamente il modulo <!--based on the occurrence of an event or--> dopo un intervallo di tempo specifico.
@@ -159,11 +159,11 @@ Puoi anche configurare un modulo adattivo in modo che venga salvato automaticame
 Per visualizzare le bozze salvate o i moduli inviati, utilizza il componente **Bozze e invii** di Forms Portal.
 Quando **[!UICONTROL Seleziona tipo]** è selezionato come **Bozza di Forms** nella [finestra di dialogo per configurazione del componente Bozze e invii](#configure-properties-of-the-drafts--submissions-component), i moduli salvati come bozze vengono visualizzati nella pagina Sites. Per aprire le bozze, fai clic sui puntini di sospensione (...) e completa il modulo.
 
-![Icona Bozze](assets/drafts-component.png){width="250" align="center"}
+![Icona Bozze](assets/drafts-component.png)
 
 Quando **[!UICONTROL Seleziona tipo]** è selezionato come **Forms inviato** nella [finestra di dialogo per configurazione del componente Bozze e invii](#configure-properties-of-the-drafts--submissions-component), vengono visualizzati i moduli inviati. È possibile visualizzare i moduli inviati ma non modificarli.
 
-![Icona Invii](assets/submission-listing.png){width="250" align="center"}
+![Icona Invii](assets/submission-listing.png)
 
 È inoltre possibile eliminare i moduli facendo clic sui puntini di sospensione (...) visualizzati nell&#39;angolo inferiore destro del modulo.
 

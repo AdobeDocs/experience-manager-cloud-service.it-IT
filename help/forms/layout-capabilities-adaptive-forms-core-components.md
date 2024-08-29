@@ -4,7 +4,7 @@ description: Il layout e l’aspetto di Adaptive Forms su vari dispositivi sono 
 feature: Adaptive Forms, Core Components
 keywords: Layout del modulo adattivo basato su componenti core, layout diversi per i moduli, layout di modulo dinamico AEM, layout di modulo AEM Cloud Service, tipi di layout di modulo nei componenti core AEM, layout di modulo adattivo
 role: User, Developer, Admin
-source-git-commit: b06d86ffc620327a744f53733e3bf84fe8c03f2f
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Il modulo adattivo basato su componenti core supporta i seguenti tipi di layout:
 
 Il layout del pannello è utile per organizzare i campi correlati in modo da semplificare la navigazione e la ricerca del contenuto corrispondente. Il layout del pannello dispone i componenti del modulo all’interno di sezioni o pannelli distinti in un modulo adattivo.
 
-![Layout pannello](/help/forms/assets/panel-layout.png){width="250" align="center"}
+![Layout pannello](/help/forms/assets/panel-layout.png)
 
 Layout pannello
 
@@ -54,7 +54,7 @@ Layout pannello
 
 Il layout della procedura guidata semplifica un modulo complesso suddividendolo in passaggi distinti. Ogni passaggio rappresenta una parte diversa del processo e gli utenti possono spostarsi tra i passaggi in sequenza, spesso con i pulsanti **Successivo** e **Precedente**. È possibile utilizzare il layout della procedura guidata per creare un modulo che comprenda più sezioni o passaggi.
 
-![Layout guidato](/help/forms/assets/wizard-layout-compare.gif){width="250" align="center"}
+![Layout guidato](/help/forms/assets/wizard-layout-compare.gif)
 
 Layout procedura guidata
 
@@ -64,7 +64,7 @@ Layout procedura guidata
 
 Il layout delle schede verticali è noto anche come tabulazioni nel layout sinistro. Il layout tabulazioni verticali organizza pannelli o sezioni lungo il lato sinistro di un modulo. Si tratta di un layout comune per i moduli in cui pannelli/sezioni sono impilati verticalmente per facilitarne la lettura e la navigazione.
 
-![Layout verticale](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+![Layout verticale](/help/forms/assets/vertical-tab.gif)
 
 Layout schede verticali
 
@@ -76,7 +76,7 @@ Layout schede verticali
 Il layout delle schede orizzontali è noto anche come Tabulazioni nel layout superiore. Il layout tabulazioni orizzontali dispone i pannelli o le sezioni affiancate in una riga. Questo layout presenta le sezioni del modulo in modo lineare per tutta la larghezza del modulo o del pannello.
 
 
-![Layout orizzontale](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+![Layout orizzontale](/help/forms/assets/horizontal-layout.gif)
 
 Layout schede orizzontali
 
@@ -87,7 +87,7 @@ Layout schede orizzontali
 
 Il layout del Pannello a soffietto mostra il contenuto in sezioni o pannelli comprimibili in un Modulo adattivo. Quando una sezione viene espansa, il contenuto viene visualizzato all’interno di, mentre le altre sezioni rimangono compresse. Questo layout è ideale per visualizzare grandi quantità di informazioni in un formato compatto.
 
-![Layout Accordion](/help/forms/assets/accordion-layout-compare.gif){width="250" align="center"}
+![Layout Accordion](/help/forms/assets/accordion-layout-compare.gif)
 
 Layout Accordion
 
@@ -132,7 +132,7 @@ Esaminiamo il processo dettagliato per l’inserimento di un layout e l’aggiun
 1. Nell&#39;angolo superiore sinistro selezionare **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Apri un modulo adattivo esistente in modalità di modifica, se è già stato creato.
 
-   ![Aprire un modulo adattivo](/help/forms/assets/insert-layout.png){width="250" align="center"}
+   ![Aprire un modulo adattivo](/help/forms/assets/insert-layout.png)
 
    In alternativa, puoi anche [creare un nuovo modulo adattivo](/help/forms/creating-adaptive-form-core-components.md).
 
@@ -176,13 +176,13 @@ Aggiungi un nuovo pannello al componente Schede orizzontali:
 
    ![Scheda elemento per schede orizzontali](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
 
-2. Fai clic sull&#39;icona **Aggiungi** per aggiungere un nuovo pannello.
+1. Fai clic sull&#39;icona **Aggiungi** per aggiungere un nuovo pannello.
 
    ![Aggiungi nuovo pannello](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
 
    Quando si fa clic sull&#39;icona **Aggiungi**, viene visualizzata la finestra di dialogo **Inserisci nuovo componente**.
 
-3. Seleziona il componente del pannello.
+1. Seleziona il componente del pannello.
 
    ![Aggiungi nuovo pannello](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
 
@@ -192,11 +192,11 @@ Aggiungi un nuovo pannello al componente Schede orizzontali:
 
    Assegna un nome al nuovo pannello. In caso contrario, non puoi salvare le proprietà del componente Schede orizzontali.
 
-4. Specificate i nomi dei pannelli come mostrato nella figura riportata di seguito:
+1. Specificate i nomi dei pannelli come mostrato nella figura riportata di seguito:
 
    ![Nomi pannello](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
 
-5. Fai clic su **Fine**.
+1. Fai clic su **Fine**.
 
    Dopo aver fatto clic su **Fine**, i tre pannelli vengono visualizzati affiancati in una riga. I nomi dei pannelli vengono visualizzati come intestazioni per ciascun pannello e puoi aggiungere componenti modulo a ciascun pannello.
 
@@ -204,15 +204,15 @@ Aggiungi un nuovo pannello al componente Schede orizzontali:
 
    Puoi configurare le proprietà del componente pannello. Ad esempio, il modulo di richiesta IT non include i titoli dei pannelli, ecco i passaggi per configurare le proprietà del componente pannello.
 
-6. Apri le proprietà del primo pannello.
+1. Apri le proprietà del primo pannello.
 
    ![Proprietà pannello 1](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
 
-7. Selezionare la casella di controllo **Nascondi titolo** dalla scheda **Base**.
+1. Selezionare la casella di controllo **Nascondi titolo** dalla scheda **Base**.
 
    ![Nascondi titolo](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
 
-8. Fai clic su **Fine**.
+1. Fai clic su **Fine**.
 
 Allo stesso modo, potete nascondere i titoli anche per gli altri due pannelli. Al termine, puoi procedere con l’aggiunta di componenti modulo a ciascun pannello.
 
@@ -262,7 +262,7 @@ Allo stesso modo, potete nascondere i titoli anche per gli altri due pannelli. A
 
 1. Fai clic su **[!UICONTROL Anteprima]** nell&#39;angolo in alto a destra dell&#39;ambiente di authoring.
 
-   ![Layout orizzontale](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+   ![Layout orizzontale](/help/forms/assets/horizontal-layout.gif)
 
 Puoi anche [trascinare i componenti](#extra-bytes) per aggiungere i componenti del modulo a ciascun pannello.
 
@@ -341,7 +341,7 @@ Per sostituire il layout esistente di un modulo, effettuare le seguenti operazio
 
    Dopo aver selezionato il layout, la disposizione dei componenti all’interno del layout cambia di conseguenza. Ad esempio, seleziona il componente Schede verticali dalla finestra di dialogo **[!UICONTROL Sostituisci componente]**; la disposizione del pannello cambia in Schede a sinistra:
 
-   ![Layout verticale](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+   ![Layout verticale](/help/forms/assets/vertical-tab.gif)
 
 ## Byte aggiuntivi
 

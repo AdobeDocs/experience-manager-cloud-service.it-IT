@@ -3,7 +3,7 @@ title: Come si elencano i moduli su una pagina di Adobe Experience Manager Sites
 description: Scopri come elencare i moduli su una pagina AEM Sites.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Immaginate un utente che visita il sito web della banca alla ricerca di un modul
 
 Il componente **Ricerca ed elenco** del portale Forms consente di visualizzare ed elencare i moduli in una pagina Sites. Gli utenti possono configurare e presentare un elenco completo di moduli basato su criteri specifici per soddisfare i requisiti organizzativi. Gli utenti anonimi possono visitare la pagina Sites per visualizzare e sfogliare i moduli disponibili. I moduli elencati possono essere ordinati in ordine crescente o decrescente utilizzando l&#39;opzione a discesa **Ordina per** nell&#39;angolo superiore destro dello schermo.
 
-![Icona Ricerca ed elenco](assets/search-and-lister-component.png){width="250" align="center"}
+![Icona Ricerca ed elenco](assets/search-and-lister-component.png)
 
 ## Prerequisito
 
@@ -58,11 +58,11 @@ Per aggiungere il componente del portale **Ricerca e elenco** alla pagina Sites,
 
 1. Apri la pagina AEM Sites in modalità **Modifica**.
 1. Vai a **[!UICONTROL Informazioni pagina]** > **[!UICONTROL Modifica modello]**
-   ![Modifica criterio modello](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![Modifica criterio modello](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. Fai clic sul **[!UICONTROL Criterio]** e seleziona la casella di controllo **[!UICONTROL Ricerca ed elenco]** in **[Nome progetto Archetipo AEM] - Forms and Communications Portal**.
 
-   ![Selezione criteri](/help/forms/assets/search-lister-enable-policy.png){width="250" align="center"}
+   ![Selezione criteri](/help/forms/assets/search-lister-enable-policy.png)
 
 1. Fai clic su **[!UICONTROL Fine]**.
 1. Ora riapri la pagina AEM Sites in modalità di authoring.
@@ -78,7 +78,7 @@ Per aggiungere il componente del portale **Ricerca e elenco** alla pagina Sites,
 
 1. Sfoglia i componenti disponibili nella finestra di dialogo e seleziona il componente desiderato dall’elenco. Selezionare ad esempio il componente **Ricerca ed elenco** dall&#39;elenco per aggiungere il componente **Ricerca ed elenco** di Forms Portal.
 
-   ![Componente Ricerca ed elenco](/help/forms/assets/add-search-lister.png){width="250" align="center"}
+   ![Componente Ricerca ed elenco](/help/forms/assets/add-search-lister.png)
 
 Ora configura le proprietà del componente **Ricerca ed elenco**.
 
@@ -88,7 +88,7 @@ Puoi personalizzare facilmente le proprietà dei componenti **Cerca ed Elenca** 
 
 ### Scheda Visualizzazione
 
-![Scheda Visualizzazione](/help/forms/assets/search-and-lister-display-tab.png){width="250" align="center"}
+![Scheda Visualizzazione](/help/forms/assets/search-and-lister-display-tab.png)
 
 1. In **[!UICONTROL Titolo]**, specificare il titolo del componente Ricerca ed elenco. Un titolo indicativo consente agli utenti di eseguire una ricerca rapida nell’elenco dei moduli.
 1. Dall&#39;elenco **[!UICONTROL Layout]**, selezionare il layout per rappresentare i moduli nel formato scheda o elenco.
@@ -97,14 +97,14 @@ Puoi personalizzare facilmente le proprietà dei componenti **Cerca ed Elenca** 
 
 ### Scheda Risorsa
 
-![Scheda Risorsa](/help/forms/assets/search-and-lister-asset-tab.png){width="250" align="center"}
+![Scheda Risorsa](/help/forms/assets/search-and-lister-asset-tab.png)
 
 1. Nella scheda **[!UICONTROL Cartella risorse]**, specifica il percorso da cui i moduli vengono estratti ed elencati nella pagina.
 1. Utilizzando **[!UICONTROL Aggiungi un altro percorso]**, puoi configurare più percorsi cartella.
 
 ### Scheda Risultati
 
-![Scheda Visualizzazione](/help/forms/assets/search-and-lister-result-tab.png){width="250" align="center"}
+![Scheda Visualizzazione](/help/forms/assets/search-and-lister-result-tab.png)
 
 Nella scheda **[!UICONTROL Risultati]**, configura il numero massimo di moduli da visualizzare per pagina. Il valore predefinito è otto moduli per pagina.
 
@@ -112,7 +112,7 @@ Nella scheda **[!UICONTROL Risultati]**, configura il numero massimo di moduli d
 
 Per visualizzare l&#39;elenco dei moduli, utilizzare il componente **Ricerca e elenco** di Forms Portal. Visualizza l&#39;anteprima della pagina AEM Sites per visualizzare l&#39;elenco dei moduli della cartella **Assets** visualizzata sullo schermo. Puoi anche cercare un modulo specifico utilizzando la barra di ricerca.
 
-![Icona Ricerca ed elenco](assets/search-and-lister-component.png){width="250" align="center"}
+![Icona Ricerca ed elenco](assets/search-and-lister-component.png)
 
 <!--
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}
