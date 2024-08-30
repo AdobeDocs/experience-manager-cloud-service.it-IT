@@ -4,10 +4,10 @@ description: Scopri come configurare le credenziali e l’autenticazione CDN dic
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 2%
+source-wordcount: '1283'
+ht-degree: 5%
 
 ---
 
@@ -54,7 +54,7 @@ data:
           authenticator: edge-auth
 ```
 
-Per una descrizione delle proprietà al di sopra del nodo `data`, vedere [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
+Consulta [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax) per una descrizione delle proprietà al di sopra del nodo `data`. Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
 
 Altre proprietà includono:
 
@@ -100,7 +100,7 @@ data:
            authenticator: purge-auth
 ```
 
-Per una descrizione delle proprietà al di sopra del nodo `data`, vedere [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
+Consulta [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax) per una descrizione delle proprietà al di sopra del nodo `data`. Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
 
 Altre proprietà includono:
 
@@ -118,6 +118,8 @@ Altre proprietà includono:
 
 >[!NOTE]
 >La chiave di eliminazione deve essere configurata come [variabile di ambiente Cloud Manager di tipo segreto](/help/operations/config-pipeline.md#secret-env-vars), prima che venga distribuita la configurazione che vi fa riferimento.
+
+Puoi fare riferimento a [un&#39;esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) incentrata sulla configurazione delle chiavi di eliminazione e sull&#39;esecuzione dell&#39;eliminazione della cache CDN.
 
 ## Autenticazione di base {#basic-auth}
 
@@ -156,7 +158,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-Per una descrizione delle proprietà al di sopra del nodo `data`, vedere [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
+Consulta [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax) per una descrizione delle proprietà al di sopra del nodo `data`. Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
 
 Inoltre, la sintassi include:
 

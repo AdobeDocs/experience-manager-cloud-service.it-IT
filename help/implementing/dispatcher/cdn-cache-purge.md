@@ -4,9 +4,9 @@ description: Scopri come rimuovere gli oggetti memorizzati in cache dalla cache 
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '450'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,8 @@ Tutte le varianti di eliminazione condividono quanto segue:
 
 >[!CAUTION]
 >La rimozione della cache CDN, in particolare con il flag rigido, aumenterà il traffico all’origine e potrebbe causare un’interruzione quando non viene eseguita correttamente.
+
+Puoi fare riferimento a [un&#39;esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) incentrata sulla configurazione delle chiavi di eliminazione e sull&#39;esecuzione dell&#39;eliminazione della cache CDN.
 
 ## Eliminazione di un singolo URL {#single-purge}
 
