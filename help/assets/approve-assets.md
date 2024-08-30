@@ -2,9 +2,10 @@
 title: Approvare le risorse in Experience Manager
 description: Scopri come approvare le risorse in [!DNL Experience Manager].
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
+source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '676'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ Se devi visualizzare la proprietà a cui è mappato il campo **[!UICONTROL Stato
 
 ## Approvare risorse {#approve-assets}
 
-È possibile approvare le risorse sia in [!DNL Experience Manager] che in [!DNL Experience Manager Assets]. Per approvare le risorse in [!DNL Experience Manager], eseguire la procedura seguente:
+Per approvare le risorse in [!DNL Experience Manager Admin view], eseguire la procedura seguente:
 
 1. Seleziona le risorse e fai clic su **[!UICONTROL Proprietà]** nel riquadro superiore.
 1. Nella scheda **[!UICONTROL Base]**, scorri verso il basso fino a **[!UICONTROL Stato revisione]**.
@@ -51,7 +52,7 @@ Se devi visualizzare la proprietà a cui è mappato il campo **[!UICONTROL Stato
 ## Approva in blocco le risorse {#bulk-approve-assets}
 
 Semplifica il flusso di lavoro approvando rapidamente più risorse contemporaneamente. Puoi approvare in blocco le risorse per accelerare il processo di approvazione, risparmiando tempo e migliorando la produttività.
-<br>Segui questi passaggi per approvare risorse in blocco in [!DNL Experience Manager]:
+<br>Segui questi passaggi per approvare risorse in blocco in [!DNL Experience Manager Admin view]:
 
 1. Crea una cartella nell’ambiente di authoring (https://author-pXXX-eYYY.adobeaemcloud.com). Sostituisci _XXX_ con il tuo ID programma e _YYY_ con l&#39;ID ambiente dell&#39;Experience Manager.
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**.
@@ -102,4 +103,3 @@ Per copiare l’URL di consegna di una risorsa approvata all’interno dell’ar
    >[!NOTE]
    >
    >L’opzione per copiare l’URL di consegna per le risorse approvate è disponibile nella vista Assets.
-
