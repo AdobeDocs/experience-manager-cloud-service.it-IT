@@ -4,7 +4,7 @@ description: Il layout e l’aspetto di Adaptive Forms su vari dispositivi sono 
 feature: Adaptive Forms, Core Components
 keywords: Layout del modulo adattivo basato su componenti core, layout diversi per i moduli, layout di modulo dinamico AEM, layout di modulo AEM Cloud Service, tipi di layout di modulo nei componenti core AEM, layout di modulo adattivo
 role: User, Developer, Admin
-source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
+source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -326,8 +326,6 @@ Puoi anche aggiungere le convalide richieste per i componenti, in base alle esig
 ## Come si sostituisce un layout esistente con un nuovo layout?
 
 È possibile sostituire un layout di un modulo con un nuovo layout, che comporta la modifica della disposizione e della visualizzazione dei componenti all’interno di un modulo.
-
-
 
 Per sostituire il layout esistente di un modulo, effettuare le seguenti operazioni:
 
