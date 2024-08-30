@@ -4,9 +4,9 @@ description: Scopri come salvare come bozza un modulo adattivo basato su compone
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
+source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1384'
 ht-degree: 2%
 
 ---
@@ -44,6 +44,8 @@ Il componente **Bozze e invii** richiede una configurazione dell&#39;archiviazio
 1. Specificare il nome dell&#39;account di archiviazione [!DNL Azure] nei campi **[!UICONTROL Account di archiviazione Azure]** e **[!UICONTROL Chiave di accesso Azure]**.
 
    ![Configurazione archiviazione Azure](/help/forms/assets/save-form-as-draft-azure-storage.png)
+
+   Immettere `Connection String` nella casella di testo `Azure Storage Account` e `Azure Key` nella casella di testo `Azure Access key`.
 
 1. Fai clic su **Salva**.
 
