@@ -4,9 +4,9 @@ description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i c
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
 workflow-type: tm+mt
-source-wordcount: '2905'
+source-wordcount: '2982'
 ht-degree: 12%
 
 ---
@@ -214,11 +214,20 @@ Le best practice indicano che, se è necessario eseguire un&#39;acquisizione **N
 >abstract="Una causa comune di errore di acquisizione è il superamento della dimensione massima dei valori delle proprietà del nodo. Per risolvere il problema, segui la documentazione, compresa quella relativa al rapporto BPA."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=it" text="Prerequisiti per la migrazione"
 
-I valori delle proprietà del nodo memorizzati in MongoDB non possono superare i 16 MB. Se un valore di nodo supera le dimensioni supportate, l’acquisizione non riesce e il registro conterrà un errore `BSONObjectTooLarge` e specificherà quale nodo ha superato il massimo consentito. Questa è una restrizione di MongoDB.
+I valori delle proprietà del nodo memorizzati in MongoDB non possono superare i 16 MB. Se un valore di nodo supera le dimensioni supportate, l’acquisizione non riesce e il registro conterrà:
+
+* un errore `BSONObjectTooLarge` e specificare quale nodo ha superato il massimo consentito oppure
+* un errore `BsonMaximumSizeExceededException`, che indica che è probabile che un nodo contenente caratteri unicode superi la dimensione massima **
+
+Questa è una restrizione di MongoDB.
 
 Per ulteriori informazioni e un collegamento a uno strumento Oak che consenta di trovare tutti i nodi di grandi dimensioni, vedere la nota `Node property value in MongoDB` in [Prerequisiti per lo strumento Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md). Dopo aver risolto tutti i nodi con dimensioni elevate, esegui di nuovo l’estrazione e l’acquisizione.
 
 Per evitare questa restrizione, eseguire [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sull&#39;istanza AEM di origine e rivedere i risultati che presenta, in particolare il pattern [&quot;Unsupported Repository Structure&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
+
+>[!NOTE]
+>
+>[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) versione 2.1.50+ genererà rapporti sui nodi di grandi dimensioni contenenti caratteri Unicode che superano le dimensioni massime. Assicurati di eseguire la versione più recente. Le versioni BPA precedenti al 2.1.50 non identificano e generano rapporti su questi nodi di grandi dimensioni e devono essere individuate separatamente utilizzando il prerequisito per lo strumento Oak indicato sopra.
 
 ### Acquisizione annullata {#ingestion-rescinded}
 
