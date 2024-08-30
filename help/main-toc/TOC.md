@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 14c07774254c8479e8962c367a16cd3a6d3af012
+source-git-commit: f7508f2113d81aae205c63a25097ed920b124011
 workflow-type: tm+mt
-source-wordcount: '5533'
+source-wordcount: '5538'
 ht-degree: 96%
 
 ---
@@ -618,6 +618,7 @@ ht-degree: 96%
       + [Distribuire l’hub di contenuti](/help/assets/deploy-content-hub.md)
       + [Configurare l’interfaccia utente dell’hub di contenuti](/help/assets/configure-content-hub-ui-options.md)
       + [Caricare o importare risorse approvate dal marchio nell’hub di contenuti](/help/assets/upload-brand-approved-assets.md)
+      + [Approvare risorse per Content Hub](/help/assets/approve-assets-content-hub.md)
       + [Cercare risorse nell’hub di contenuti](/help/assets/search-assets-content-hub.md)
       + [Proprietà risorsa](/help/assets/asset-properties-content-hub.md)
       + [Condividere risorse nell’hub di contenuti](/help/assets/share-assets-content-hub.md)
