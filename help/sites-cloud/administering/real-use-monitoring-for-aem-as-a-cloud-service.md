@@ -4,9 +4,9 @@ description: Scopri come utilizzare il monitoraggio in tempo reale (RUM, Real Us
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
+source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1213'
 ht-degree: 1%
 
 ---
@@ -34,11 +34,6 @@ Con RUM, le metriche delle prestazioni chiave vengono tracciate direttamente dal
 ## Chi può trarre vantaggio da un servizio di monitoraggio Real Use? {#who-can-benefit-from-rum-service}
 
 L’AEM ha sviluppato il RUM per aiutare i clienti e gli Adobi a comprendere come i visitatori interagiscono con i siti AEM. RUM può essere utilizzato per aiutare a diagnosticare i problemi di prestazioni e misurare l&#39;efficacia degli esperimenti. RUM preserva la privacy dei visitatori attraverso il campionamento (viene monitorata solo una piccola porzione di tutte le visualizzazioni di pagina) e non vengono raccolte informazioni personali identificabili (PII, personally identifiable information).
-
-
-## Comprendere il funzionamento del servizio di monitoraggio Real Use Monitoring {#understand-how-the-rum-service-works}
-
-L’AEM utilizza RUM per aiutare i clienti e gli Adobi a comprendere come i visitatori interagiscono con i siti AEM. Consente di diagnosticare i problemi di prestazioni e di misurare l&#39;efficacia degli esperimenti. RUM preserva la privacy dei visitatori attraverso il campionamento (viene monitorata solo una piccola porzione di tutte le visualizzazioni di pagina) e non vengono raccolte informazioni personali identificabili (PII, personally identifiable information).
 
 ## Servizio di monitoraggio Real Use e privacy {#rum-service-and-privacy}
 
