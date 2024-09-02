@@ -4,10 +4,10 @@ description: Configurazione delle regole del filtro del traffico, incluse le reg
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '3937'
-ht-degree: 100%
+source-git-commit: dee1a768c1cec6cf0e7c321d4d76a486db661d13
+workflow-type: tm+mt
+source-wordcount: '3928'
+ht-degree: 99%
 
 ---
 
@@ -255,7 +255,7 @@ La proprietà `wafFlags`, che può essere utilizzata nelle regole del filtro del
 | MALFORMED-DATA | Dati non validi nel corpo della richiesta | Corpo della richiesta POST, PUT o PATCH non valido in base all’intestazione della richiesta “Content-Type”. Ad esempio, se è specificata un’intestazione di richiesta “Content-Type: application/x-www-form-urlencoded” che contiene un corpo POST che è JSON. Spesso si tratta di un errore di programmazione, richiesta automatizzata o dannosa. Richiede l&#39;agente 3.2 o versione successiva. |
 | SANS | Traffico IP dannoso | [SANS Internet Storm Center](https://isc.sans.edu/) elenco di indirizzi IP segnalati che hanno eseguito attività dannose. |
 | NO-CONTENT-TYPE | Intestazione di richiesta “Content-Type” mancante | Una richiesta POST, PUT o PATCH senza intestazione di richiesta “Content-Type”. Per impostazione predefinita, i server delle applicazioni devono assumere in questo caso “Content-Type: text/plain; charset=us-ascii”. In molte richieste automatizzate e dannose potrebbe mancare “Content Type”. |
-| NOUA | Nessun agente utente | Molte richieste automatizzate e dannose utilizzano agenti utente falsi o mancanti per rendere difficile identificare il tipo di dispositivo che effettua le richieste. |
+| NOUA | Nessun agente utente | Indica che una richiesta non conteneva alcuna intestazione &quot;User-Agent&quot; o che il valore dell’intestazione non era impostato. |
 | TORNODE | Traffico Tor | Tor è un software che nasconde l’identità di un utente. Un picco nel traffico Tor può indicare che un hacker sta cercando di mascherare la sua posizione. |
 | NULLBYTE | Byte Null | I byte Null non vengono in genere visualizzati in una richiesta e indicano che la richiesta è in formato non corretto e potenzialmente dannoso. |
 | PRIVATEFILE | File privati | I file privati sono di solito di natura riservata, ad esempio, un file `.htaccess` Apache o un file di configurazione, che potrebbero causare la perdita di informazioni riservate. |
