@@ -3,11 +3,10 @@ title: Come possiamo creare e utilizzare i temi in Adaptive Forms?
 description: Puoi utilizzare i temi per assegnare uno stile e fornire un’identità visiva a un modulo adattivo utilizzando i Componenti core. Puoi condividere un tema in qualsiasi numero di Adaptive Forms.
 keywords: moduli adattivi con stili di Componenti core. utilizzo del tema nei Componenti core, assegnazione di stili ai moduli adattivi, personalizzazione dei temi
 feature: Adaptive Forms, Core Components
-exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
 workflow-type: tm+mt
-source-wordcount: '2879'
+source-wordcount: '2816'
 ht-degree: 3%
 
 ---
@@ -172,7 +171,7 @@ Per clonare un tema, attenersi alle istruzioni riportate di seguito.
 
 #### 3. Personalizzare un tema {#customize-the-theme}
 
-È possibile personalizzare singoli componenti o apportare modifiche a livello di tema utilizzando le variabili globali di un tema. Eventuali modifiche apportate alle variabili globali influiscono su tutti i singoli componenti. Ad esempio, puoi utilizzare le variabili globali per modificare il colore del bordo di tutti i componenti di un modulo adattivo e un colore di riempimento luminoso per impostare CTA (invito all’azione) utilizzando il componente pulsante:
+È possibile personalizzare singoli componenti o apportare modifiche a livello di tema utilizzando le variabili globali di un tema. Eventuali modifiche apportate alle variabili globali influiscono su tutti i singoli componenti. Ad esempio, è possibile utilizzare le variabili globali per modificare il colore del bordo di tutti i componenti di un modulo adattivo e un colore di riempimento luminoso per impostare CTA (Invito all’azione) utilizzando il componente pulsante:
 
 * [Impostare gli stili del livello tema](#theme-customization-global-level)
 
@@ -428,11 +427,6 @@ I temi per moduli adattivi vengono utilizzati come parte di un modello di modulo
 * **Modifica della larghezza del layout del pannello contenitore**
 
   La modifica della larghezza del layout del pannello contenitore non è consigliata. Quando si specifica la larghezza di un pannello contenitore, questo diventa statico e non si adatta a visualizzazioni diverse.
-
-* **Utilizzo di un editor moduli o di un editor temi per l&#39;utilizzo di intestazione e piè di pagina**
-
-  Utilizzare un editor di temi se si desidera applicare uno stile all&#39;intestazione e al piè di pagina utilizzando opzioni di stile quali stile del carattere, sfondo e trasparenza.
-Se si desidera fornire informazioni quali un&#39;immagine del logo, il nome della società nell&#39;intestazione e le informazioni sul copyright nel piè di pagina, utilizzare le opzioni dell&#39;editor dei moduli.
 
 ## Domande frequenti {#faq}
 
