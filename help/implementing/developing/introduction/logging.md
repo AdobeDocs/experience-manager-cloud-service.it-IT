@@ -4,9 +4,9 @@ description: Scopri come utilizzare la funzione di registrazione per AEM as a Cl
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2834'
 ht-degree: 8%
 
 ---
@@ -144,12 +144,13 @@ I livelli di registro AEM sono impostati per tipo di ambiente tramite la configu
 
 I registri Java AEM sono definiti come configurazione OSGi e quindi sono destinati a ambienti AEM as a Cloud Service specifici utilizzando le cartelle in modalità di esecuzione.
 
-Configura la registrazione Java per i pacchetti Java personalizzati tramite le configurazioni OSGi per la factory Sling LogManager. Sono supportate due proprietà di configurazione:
+Configura la registrazione Java per i pacchetti Java personalizzati tramite le configurazioni OSGi per la factory Sling LogManager. Sono supportate tre proprietà di configurazione:
 
 | Proprietà di configurazione OSGi | Descrizione |
 |---|---|
-| org.apache.sling.commons.log.names | I pacchetti Java per i quali raccogliere le istruzioni di registro. |
-| org.apache.sling.commons.log.level | Livello di registro in cui registrare i pacchetti Java, specificato da org.apache.sling.commons.log.names |
+| `org.apache.sling.commons.log.names` | I pacchetti Java per i quali raccogliere le istruzioni di registro. |
+| `org.apache.sling.commons.log.level` | Livello di log in cui registrare i pacchetti Java, specificato da `org.apache.sling.commons.log.names` |
+| `org.apache.sling.commons.log.file` | Specificare la destinazione per l&#39;output: `logs/error.log` |
 
 La modifica di altre proprietà di configurazione OSGi LogManager può causare problemi di disponibilità in AEM as a Cloud Service.
 
@@ -163,6 +164,7 @@ Di seguito sono riportati alcuni esempi delle configurazioni di registrazione co
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "debug"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -174,6 +176,7 @@ Di seguito sono riportati alcuni esempi delle configurazioni di registrazione co
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "warn"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -185,6 +188,7 @@ Di seguito sono riportati alcuni esempi delle configurazioni di registrazione co
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "error"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
