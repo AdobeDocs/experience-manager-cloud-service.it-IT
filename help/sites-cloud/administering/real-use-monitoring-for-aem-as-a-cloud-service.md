@@ -4,9 +4,9 @@ description: Scopri come utilizzare il monitoraggio in tempo reale (RUM, Real Us
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
+source-git-commit: 917e9496dcbb8c6fe72b7a718211ee5bbecb3323
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1200'
 ht-degree: 1%
 
 ---
@@ -93,10 +93,11 @@ Quando si analizzano i dati RUM, potrebbero verificarsi delle variazioni nelle v
 
 ## Domande frequenti {#faq}
 
+<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+1. **Can customers integrate the RUM service scripts with third-party systems like Dynatrace?**
 
-1. **I clienti possono integrare gli script del servizio RUM con sistemi di terze parti come Dynatrace?**
-
-   Sì.
+   Yes.
+-->
 
 1. **Le metriche relative ai valori di tipo &quot;Interazione con la vernice successiva&quot;, &quot;Tempo al primo byte&quot; e &quot;Prima vernice di contenuto&quot; vengono raccolte?**
 
