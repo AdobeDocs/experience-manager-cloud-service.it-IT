@@ -2,7 +2,7 @@
 source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 77%
+ht-degree: 97%
 
 ---
 # Snippet {#snippets}
@@ -18,11 +18,11 @@ ht-degree: 77%
 ## Consulta anche {#see-also}
 
 * [Creare un modulo adattivo di AEM](/help/forms/creating-adaptive-form-core-components.md)
-* [Aggiungere un modulo adattivo AEM alla pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Aggiungere un modulo adattivo AEM a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Applicare i temi a un modulo adattivo AEM](/help/forms/using-themes-in-core-components.md)
-* [Aggiungere componenti a un modulo adattivo di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [Aggiungere componenti a un modulo adattivo di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [Utilizzare il CAPTCHA in un modulo adattivo AEM](/help/forms/captcha-adaptive-forms-core-components.md)
-* [Generare una versione PDF (DoR) di un modulo adattivo AEM](/help/forms/generate-document-of-record-core-components.md)
+* [Generare la versione PDF (DoR) di un modulo adattivo AEM](/help/forms/generate-document-of-record-core-components.md)
 * [Tradurre un modulo adattivo di AEM](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Abilitare Adobe Analytics per un modulo adattivo per tenere traccia dell’utilizzo dei moduli](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [Collegare un modulo adattivo a Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
@@ -32,7 +32,7 @@ ht-degree: 77%
 * [Collegare un modulo adattivo a Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Utilizzare Adobe Sign in un modulo adattivo di AEM](/help/forms/working-with-adobe-sign.md)
 * [Aggiungere una nuova lingua per un modulo adattivo](/help/forms/supporting-new-language-localization-core-components.md)
-* [Inviare dati del modulo adattivo a un database](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
+* [Inviare dati del modulo adattivo a un database](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [Inviare dati del modulo adattivo a un endpoint REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Inviare dati del modulo adattivo al flusso di lavoro di AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Utilizzare il portale dei moduli per elencare moduli adattivi di AEM su un sito web di AEM](/help/forms/configure-forms-portal.md)
@@ -66,7 +66,7 @@ ht-degree: 77%
 * [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
 
 
-## Differenza tra l’editor delle regole nei componenti core e l’editor delle regole nei componenti di base {#rule-editor-diff}
+## Differenza tra l’editor di regole nei Componenti core e nei Componenti di base {#rule-editor-diff}
 
 Nella tabella seguente viene illustrata la differenza tra le funzioni disponibili nei Componenti core e i Componenti di base dell’editor di regole:
 
@@ -74,28 +74,28 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
   <tbody>
   <tr>
     <td><strong>Funzioni</strong></td>
-    <td><strong>Componenti di base per moduli adattivi</strong></td>
-    <td><strong>Componenti core modulo adattivo</strong></td>   
+    <td><strong>Componenti di base dei moduli adattivi</strong></td>
+    <td><strong>Componenti core dei moduli adattivi</strong></td>   
     </tr>
   </tr>
   <tr>
-    <td>Impostare l'elenco a discesa delle opzioni </td>
-    <td>L'elenco a discesa delle opzioni viene impostato utilizzando la proprietà <b>Imposta opzioni di</b> dell'editor di regole.</td>
+    <td>Impostare le opzioni dell’elenco a discesa </td>
+    <td>Le opzioni dell’elenco a discesa vengono impostate utilizzando la proprietà <b>Imposta le opzioni di</b> dell’editor di regole.</td>
     <td>Le opzioni dell’elenco a discesa vengono impostate utilizzando le funzioni personalizzate. 
    </td>
    </tr>
      </tr>
    <tr>
     <td>Eseguire operazioni matematiche in un campo del pannello ripetibile </td>
-    <td>Le funzioni matematiche OOTB possono essere applicate ai campi del pannello ripetibili per eseguire funzioni come somma, media utilizzando l’Editor di regole. È necessario fornire due argomenti: il primo specifica il pannello ripetibile contenente il campo, mentre il secondo specifica il campo all’interno del pannello ripetibile corrispondente. </td>
-    <td>Le operazioni matematiche nel campo del pannello ripetibile possono essere eseguite utilizzando le funzioni personalizzate. È inoltre possibile applicare le funzioni matematiche direttamente ai campi del pannello ripetibile nell'Editor regole.
+    <td>Le funzioni matematiche integrate possono essere applicate ai campi del pannello ripetibile per eseguire funzioni come la somma e la media utilizzando l’editor di regole. È necessario fornire due argomenti: il primo specifica il pannello ripetibile contenente il campo, mentre il secondo specifica il campo all’interno del pannello ripetibile corrispondente. </td>
+    <td>Le operazioni matematiche nel campo del pannello ripetibile possono essere eseguite utilizzando le funzioni personalizzate. È inoltre possibile applicare le funzioni matematiche direttamente ai campi del pannello ripetibile nell’editor di regole.
    </td>
    </tr>
       <tr>
     <td>Convalida/Reimposta campo/pannello/regola modulo in “Then” </td>
-    <td>Le funzioni di convalida e ripristino supportano solo l'oggetto modulo nell'editor di regole. 
+    <td>Le funzioni di convalida e ripristino supportano solo l’oggetto modulo nell’editor di regole. 
    </td>
-    <td>Le funzioni di convalida e ripristino supportano il modulo/pannello/oggetto campo nell’editor di regole. 
+    <td>Le funzioni di convalida e ripristino supportano il modulo, il pannello o l’oggetto campo nell’editor di regole. 
    </td>
    </tr>
    <tr>
@@ -149,9 +149,9 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
-## Aggiungere un Elenco consentiti IP di Cloud Manager e pipeline front-end {#add-cm-allowlist-frontend-pipeline}
+## Aggiungere un elenco di indirizzi IP consentiti e pipeline front-end di Could Manager {#add-cm-allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->Se utilizzi, o intendi utilizzare, la pipeline front-end per sviluppare siti, è necessario aggiungere in anticipo l’Elenco consentiti IP di Cloud Manager.
->Consulta [Utilizzo dell&#39;Elenco consentiti IP di Cloud Manager con la pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>Se utilizzi, o intendi utilizzare, la pipeline front-end per sviluppare siti, è necessario aggiungere in anticipo l’elenco consentiti IP di Cloud Manager.
+>Consulta [Utilizzo dell’Elenco consentiti IP di Cloud Manager con la pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
