@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: eb01b6982578ad1300163c2fd536e844afc815fa
 workflow-type: tm+mt
 source-wordcount: '736'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -18,50 +18,50 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 17569 {#release-17569}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 17569, rilasciata al pubblico il mercoledì 27 agosto 2024. La precedente versione di manutenzione era la 17465.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 17569, rilasciata al pubblico il 27 agosto 2024. La precedente versione di manutenzione era la 17465.
 
-Con la versione di attivazione della funzione 2024.9.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Con la versione di attivazione funzioni 2024.9.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ### Miglioramenti {#enhancements-17569}
 
-* CQ-4353778: Eventi del processo di traduzione.
-* CQ-4354583: invia eventi del processo di traduzione tramite la pipeline Adobe.
+* CQ-4353778: eventi del processo di traduzione.
+* CQ-4354583: invio di eventi del processo di traduzione tramite la pipeline Adobe.
 * CQ-4356479: consenti solo al codice Adobe di utilizzare il contesto del servlet /adobe.
-* CQ-4358226: la funzionalità Salva parola chiave di traduzione non funziona per un particolare formato stringa.
-* CQ-4358270: Kit di traduzione AEM: 8 agosto.
-* CQ-4358310: aggiungi oak-compat-query-spi-1.2 a quickstart.
-* GRANITE-49833: supporto del batch per il mittente dell’evento e il proxy.
-* GRANITE-52053: Rimuovi gli utilizzi di Commons Collections 3: Platform other.
+* CQ-4358226: la funzionalità per la parola chiave Salva traduzione non funziona per un particolare formato stringa.
+* CQ-4358270: kit di traduzione AEM: 8 agosto.
+* CQ-4358310: aggiunta di oak-compat-query-spi-1.2 a quickstart.
+* GRANITE-49833: supporto di batch per proxy e oggetto Sender di eventi.
+* GRANITE-52053: rimozione degli utilizzi di ”Commons Collections 3: Platform others”.
 * GRANITE-52492: recupero asincrono elastico in caso di ripristino PIT.
-* GRANITE-53099: Aggiornamento ad Apache Felix Http Jetty 5.1.24.
-* GRANITE-53125: aggiungi la classificazione a CloudEvent.
-* GRANITE-53328: Aggiornamento di Filevault a 3.8.0-T20240726111512-3cc11d50 contenente miglioramenti alla registrazione dello stashing.
-* GRANITE-53453: aggiornamento di commons-lang alla versione 3.15.0.
-* GRANITE-53478: Aggiornare Filevault alla versione 3.8.0.
-* GRANITE-53505: Aggiornare QS a commons-collections-3.2.2-adobe-2.
-* GRANITE-53528: Aggiornare la versione degli artefatti della piattaforma.
-* GRANITE-53547: fornisci API alternative evitando l’utilizzo di Apache Commons Lang 2.
-* GRANITE-53575: utilizzare BSAFE 6.2.5 in CS.
-* GRANITE-53608: Aggiornare Oak all’ultima versione pubblica (1.68.0).
-* SITES-23583: i test di Sites Evergreen non riescono su Java 17.
-* SKYOPS-79535: aggiornamento allo script rum v2.
-* SKYOPS-79816: abilitare l’attività di Sling Feature Analyzer per le mappature degli utenti del servizio in FACT Tool.
-* SKYOPS-81179: l’AEM crea dei test per l’attivazione dei bundle.
-* SKYOPS-81866: visualizza avvisi per i bundle noti per essere incompatibili con Java 21.
-* SKYOPS-82660: aggiorna l’API Sling alla versione 2.27.6.
+* GRANITE-53099: aggiornamento ad Apache Felix Http Jetty 5.1.24.
+* GRANITE-53125: aggiunta della classificazione a CloudEvent.
+* GRANITE-53328: aggiornamento di Filevault a 3.8.0-T20240726111512-3cc11d50 cont miglioramenti alla registrazione dello stashing.
+* GRANITE-53453: aggiornamento di commons-lang to 3.15.0.
+* GRANITE-53478: aggiornamento di Filevault alla versione 3.8.0.
+* GRANITE-53505: aggiornamento di QS a commons-collections-3.2.2-adobe-2.
+* GRANITE-53528: aggiornamento della versione degli artefatti Platform.
+* GRANITE-53547: API alternative per evitare l’utilizzo di Apache Commons Lang 2.
+* GRANITE-53575: utilizzo di BSAFE 6.2.5 in CS.
+* GRANITE-53608: aggiornamento di Oak all’ultima versione pubblica (1.68.0).
+* SITES-23583: mancata riuscita dei test Evergreen di Sites su Java 17.
+* SKYOPS-79535: aggiornamento dello script rum v2.
+* SKYOPS-79816: abilitazione dell’attività Sling Feature Analyzer per le mappature degli utenti del servizio nello strumento FACT.
+* SKYOPS-81179: testing delle build di AEM per l’attivazione di bundle.
+* SKYOPS-81866: avvertenze per bundle noti per incompatibilità con Java 21.
+* SKYOPS-82660: aggiornamento dell’API Sling alla versione 2.27.6.
 * SKYOPS-82961: aggiornamento a Sling ResourceResolver 1.12.0-T20240723153354-a0270a0.
-* SKYOPS-83356: crea un dashboard globale per il tracciamento delle versioni JVM utilizzate nelle distribuzioni AEM.
-* SKYOPS-83436: il rollout di Java Runtime 21 interrompe la creazione di moduli adattivi AEM Forms.
-* SKYOPS-84272: registra la versione Java utilizzata all’avvio del modulo di avvio di AEM.
+* SKYOPS-83356: creazione di una dashboard globale per il tracciamento delle versioni JVM utilizzate nelle distribuzioni AEM.
+* SKYOPS-83436: il rollout di Java Runtime 21 interrompe la creazione di moduli adattivi di AEM Forms.
+* SKYOPS-84272: registrazione della versione Java utilizzata all’avvio del modulo di avvio di AEM.
 
 ### Problemi risolti {#fixed-issues-17569}
 
-* CMGR-60225: errore di esecuzione della pipeline identificato sul cliente AEM Sites CS durante la convalida dell’aggiornamento alle 17486 sulla versione AEM.
-* GRANITE-45919: Paesi soggetti a embargo nell’elenco Paese in Modifica impostazioni utente.
+* CMGR-60225: errore di esecuzione della pipeline individuato dal cliente AEM Sites CS durante la convalida dell’aggiornamento alla versione 17486 di AEM.
+* GRANITE-45919: paesi soggetti a embargo nell’elenco Paese/Regione in Modifica impostazioni utente.
 * GRANITE-51715: il selettore a volte non immette la selezione nel campo di testo.
 * GRANITE-53290: controlla correttamente il protocollo durante l’analisi dell’URL nel controllo XSS.
 * GRANITE-53576: definizione errata della classificazione del servizio nelle configurazioni OSGi.
-* SKYOPS-82129: Memoryleak nei modelli Sling.
+* SKYOPS-82129: perdita di memoria nei modelli Sling.
 
 ### Problemi noti {#known-issues-17569}
 
@@ -88,7 +88,7 @@ AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle 
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
-| AEM Oak | 1,68,0 | [API Oak API 1.68.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.68.0/index.html) |
-| API SLING AEM | 2.27.6 | [API Sling Apache 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM Oak | 1.68.0 | [API Oak API 1.68.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.68.0/index.html) |
+| API SLING AEM | 2.27.6 | [API Apache Sling 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.24-1.4.0 | [Specifiche HTML Template Language](https://github.com/adobe/htl-spec) |
-| Componenti core AEM | 2,26,0 | [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
+| Componenti core AEM | 2.26.0 | [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
