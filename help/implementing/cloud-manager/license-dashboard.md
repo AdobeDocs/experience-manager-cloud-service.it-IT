@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '1101'
-ht-degree: 31%
+source-wordcount: '925'
+ht-degree: 37%
 
 ---
 
@@ -63,11 +63,14 @@ Ogni sezione riepiloga ciò che è disponibile e come viene utilizzato, se del c
 >
 >Per informazioni su come gestire i diritti Adobe in tutta l&#39;organizzazione da Admin Console, consulta la [panoramica Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html).
 
-## Visualizza dettagli utilizzo {#view-usage-details}
+## Visualizza i dettagli sull’utilizzo {#view-usage-details}
 
-Il pulsante **Visualizza dettagli sull&#39;utilizzo** consente di accedere alla finestra **Dettagli sull&#39;utilizzo** della soluzione scelta. Questa finestra fornisce una suddivisione dettagliata che include grafici per mostrare l’utilizzo della soluzione. Il modo in cui viene misurato l’utilizzo dipende dalla soluzione scelta.
+<!--
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
-### Dettagli sull’utilizzo dei siti {#sites-usage-details}
+Il pulsante **Visualizza dettagli sull&#39;utilizzo** nell&#39;area Licenza di Cloud Manager fornisce un&#39;analisi dettagliata dell&#39;utilizzo corrente delle risorse. Se cliccato, si apre un report o un dashboard che mostra metriche importanti relative alla licenza. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Questa funzionalità consente di monitorare e assicurarsi di rimanere entro i limiti del contratto, offrendo al contempo informazioni approfondite per una migliore pianificazione e ottimizzazione delle risorse.
+
+### Dettagli sull’utilizzo di Sites {#sites-usage-details}
 
 La finestra **Dettagli sull&#39;utilizzo di Sites** presenta grafici che offrono una panoramica dell&#39;utilizzo delle licenze Sites in base a [richieste di contenuto.](#what-is-a-content-request)
 
@@ -77,27 +80,28 @@ Il lato sinistro della finestra presenta un grafico a torta che mostra il raggru
 
 Il lato destro della finestra presenta un grafico ad area che mostra l&#39;utilizzo suddiviso per programma nel tempo per l&#39;anno di contratto selezionato. Al passaggio del mouse viene visualizzata una finestra a comparsa con i dettagli del programma per il momento selezionato.
 
-### Dettagli sull’utilizzo di Assets {#assets-usage-details}
+<!-- REMOVED AS PER CQDOC-21983
+### Assets usage details {#assets-usage-details}
 
-La finestra **Dettagli sull&#39;utilizzo di Assets** presenta grafici che offrono una panoramica sull&#39;utilizzo delle licenze Assets in base a [storage](#storage) e [utenti standard.](#standard-users) Selezionare la scheda appropriata per alternare le visualizzazioni.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
 
-Sia per le visualizzazioni di archiviazione che per quelle degli utenti standard, è possibile utilizzare il menu a discesa **Tipo di ambiente** per alternare la visualizzazione tra gli ambienti di produzione, stage e sviluppo.
+For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
-#### Archiviazione {#storage}
+#### Storage {#storage}
 
-![Finestra dei dettagli sull&#39;utilizzo di Assets per l&#39;archiviazione](assets/assets-usage-details-storage.png)
+![Assets usage details window for storage](assets/assets-usage-details-storage.png)
 
-Il lato sinistro della finestra presenta un grafico a torta che mostra il raggruppamento del contratto per l&#39;anno contrattuale selezionato nel menu a discesa **Visualizza anno contrattuale**.
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-Il lato destro della finestra presenta un grafico ad area che mostra l&#39;utilizzo suddiviso per programma nel tempo per l&#39;anno di contratto selezionato. Al passaggio del mouse viene visualizzata una finestra a comparsa con i dettagli del programma per il momento selezionato.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
-#### Utenti standard {#standard-users}
+#### Standard Users {#standard-users}
 
-![Finestra dei dettagli sull&#39;utilizzo di Assets per gli utenti standard](assets/assets-usage-details-standard-users.png)
+![Assets usage details window for standard-users](assets/assets-usage-details-standard-users.png)
 
-Il lato sinistro della finestra presenta un grafico a torta che mostra il raggruppamento del contratto per l&#39;anno contrattuale selezionato nel menu a discesa **Visualizza anno contrattuale**.
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-Il lato destro della finestra presenta un grafico ad area che mostra l&#39;utilizzo suddiviso per programma nel tempo per l&#39;anno di contratto selezionato. Al passaggio del mouse viene visualizzata una finestra a comparsa con i dettagli del programma per il momento selezionato.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time. -->
 
 ## Domande frequenti {#faq}
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 97%
+source-wordcount: '914'
+ht-degree: 95%
 
 ---
 # Snippet {#snippets}
@@ -155,3 +155,9 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >
 >Se utilizzi, o intendi utilizzare, la pipeline front-end per sviluppare siti, è necessario aggiungere in anticipo l’elenco consentiti IP di Cloud Manager.
 >Consulta [Utilizzo dell’Elenco consentiti IP di Cloud Manager con la pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+
+## Utilizzo di Dynamic Media {#work-with-dynamic-media}
+
+>[!TIP]
+>
+>Sei nuovo su Dynamic Medie? Per una rapida panoramica di alto livello di Dynamic Medie, vedi [Utilizzare Dynamic Medie](/help/assets/dynamic-media/dynamic-media.md).
