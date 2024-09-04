@@ -3,9 +3,9 @@ title: Distribuisci [!DNL Content Hub]
 description: Scopri come distribuire e attivare Content Hub, fornire accesso agli utenti con diversi tipi di privilegi (caricare risorse, Adobi Express di utenti) e fornire privilegi di amministratore agli utenti.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 9ac22ebcca619d91a38111bd706986b8d4a4d189
+source-git-commit: 3bb3920d043c83dac6f8e566761b626236bd2a04
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1569'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Nella tabella seguente sono riepilogati i tipi di utenti Content Hub disponibili
 
 >[!NOTE]
 >
->[Gli utenti di Experience Manager Assets](#experience-manager-assets-users) possono approvare risorse in Experience Manager Assets as a Cloud Service per renderle disponibili in Content Hub. Questi utenti devono essere aggiunti a AEM > Production Author instance > AEM Users product profile utilizzando Admin Console.
+>[Gli utenti di Experience Manager Assets](#experience-manager-assets-users) possono approvare risorse in un ambiente Experience Manager Assets as a Cloud Service per renderle disponibili su Content Hub. Questi utenti devono essere aggiunti a AEM > Production Author instance > AEM Users product profile utilizzando Admin Console.
 
 ## Passaggio 1: abilitare Content Hub per Experience Manager Assets tramite Cloud Manager {#enable-content-hub}
 
