@@ -4,9 +4,9 @@ description: Scopri come configurare le credenziali e l’autenticazione CDN dic
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
+source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1443'
 ht-degree: 5%
 
 ---
@@ -72,7 +72,7 @@ Altre proprietà includono:
    * action - deve specificare &quot;authentication&quot; (autentica), facendo riferimento all’autenticatore previsto.
 
 >[!NOTE]
->La chiave Edge deve essere configurata come [variabile di ambiente Cloud Manager di tipo segreto](/help/operations/config-pipeline.md#secret-env-vars), prima che venga distribuita la configurazione che vi fa riferimento.
+>La chiave Edge deve essere configurata come [variabile di ambiente Cloud Manager di tipo segreto](/help/operations/config-pipeline.md#secret-env-vars), prima che venga distribuita la configurazione che vi fa riferimento. Si consiglia di utilizzare una chiave casuale univoca della lunghezza minima di 32 byte. Ad esempio, la libreria di crittografia Open SSL può generare una chiave casuale eseguendo il comando `openssl rand -hex 32`.
 
 ### Migrazione sicura per ridurre il rischio di blocco del traffico {#migrating-safely}
 
@@ -140,7 +140,7 @@ Altre proprietà includono:
    * action - deve specificare &quot;authentication&quot; (autentica), facendo riferimento all’autenticatore previsto.
 
 >[!NOTE]
->La chiave di eliminazione deve essere configurata come [variabile di ambiente Cloud Manager di tipo segreto](/help/operations/config-pipeline.md#secret-env-vars), prima che venga distribuita la configurazione che vi fa riferimento.
+>La chiave di eliminazione deve essere configurata come [variabile di ambiente Cloud Manager di tipo segreto](/help/operations/config-pipeline.md#secret-env-vars), prima che venga distribuita la configurazione che vi fa riferimento. Si consiglia di utilizzare una chiave casuale univoca della lunghezza minima di 32 byte; ad esempio, la libreria di crittografia Open SSL può generare una chiave casuale eseguendo il comando openssl rand -hex 32
 
 Puoi fare riferimento a [un&#39;esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) incentrata sulla configurazione delle chiavi di eliminazione e sull&#39;esecuzione dell&#39;eliminazione della cache CDN.
 
