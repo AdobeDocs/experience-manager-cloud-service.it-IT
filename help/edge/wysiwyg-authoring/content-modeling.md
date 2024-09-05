@@ -4,9 +4,9 @@ description: Scopri come funziona la modellazione dei contenuti per l’authorin
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 8d9ae4c7512198bd3e01a881665621d3ecbcd98d
+source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2242'
 ht-degree: 83%
 
 ---
@@ -18,7 +18,7 @@ Scopri come funziona la modellazione dei contenuti per l’authoring WYSIWYG con
 
 ## Prerequisiti {#prerequisites}
 
-I progetti che utilizzano l&#39;authoring WYSIWYG con Edge Delivery Services ereditano la maggior parte dei meccanismi di qualsiasi altro progetto di Edge Delivery Services, indipendentemente dall&#39;origine di contenuto o dal metodo di authoring [.](/help/edge/wysiwyg-authoring/authoring.md)
+I progetti che utilizzano l&#39;authoring di WYSIWYG con i Edge Delivery Services ereditano la maggior parte dei meccanismi di qualsiasi altro progetto di Edge Delivery Services, indipendentemente dall&#39;origine di contenuto o dal metodo di authoring [.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Prima di iniziare a modellare il contenuto per il progetto, assicurati di aver letto la seguente documentazione.
 
@@ -39,11 +39,11 @@ In AEM, questo contenuto viene implementato come componenti con modelli predefin
 * **Immagine**: origine, descrizione
 * **Pulsante**: testo, titolo, URL, tipo (predefinito, primario, secondario)
 
-Il modello di questi componenti fa parte del [Boilerplate per l&#39;authoring WYSIWYG con Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+Il modello di questi componenti fa parte del [Boilerplate per la creazione di WYSIWYG con Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
 
 ## Blocchi {#blocks}
 
-I blocchi vengono utilizzati per creare contenuti più complessi con stili e funzionalità specifici. A differenza del contenuto predefinito, i blocchi richiedono una semantica aggiuntiva. I blocchi possono essere collegati a [componenti nell’editor di pagine AEM.](/help/implementing/developing/components/overview.md)
+I blocchi vengono utilizzati per creare contenuti più complessi con stili e funzionalità specifici. A differenza del contenuto predefinito, i blocchi richiedono semantica aggiuntiva.
 
 I blocchi sono essenzialmente parti di contenuto arricchite da JavaScript e formattate con un foglio di stile.
 
@@ -650,13 +650,13 @@ Per farlo, crea un modello di componente con l’ID dei `page-metadata`.
 
 ## Passaggi successivi {#next-steps}
 
-Ora che sai come modellare i contenuti, puoi creare blocchi per i tuoi Edge Delivery Services con il progetto di authoring WYSIWYG.
+Ora che sai come modellare i contenuti, puoi creare blocchi per i tuoi Edge Delivery Services con il progetto di authoring di WYSIWYG.
 
-Per informazioni su come creare blocchi instrumentati per l&#39;utilizzo con l&#39;editor universale in WYSIWYG con progetti Edge Delivery Services, vedere il documento [Creazione di blocchi instrumentati per l&#39;utilizzo con l&#39;editor universale](/help/edge/wysiwyg-authoring/create-block.md).
+Consulta il documento [Creazione di blocchi instrumentati per l&#39;utilizzo con Universal Editor](/help/edge/wysiwyg-authoring/create-block.md) per scoprire come creare blocchi instrumentati per l&#39;utilizzo con Universal Editor nei progetti di creazione di Edge Delivery Services in WYSIWYG.
 
-Se hai già familiarità con la creazione di blocchi, consulta il documento [Guida introduttiva per gli sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) per iniziare a utilizzare un nuovo sito Adobe Experience Manager con Edge Delivery Services e l&#39;Editor universale per l&#39;authoring dei contenuti.
+Se hai già familiarità con la creazione di blocchi, consulta il documento [Guida introduttiva per gli sviluppatori per l&#39;authoring di WYSIWYG con i Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) per iniziare a utilizzare un nuovo sito Adobe Experience Manager con i Edge Delivery Services e Universal Editor per l&#39;authoring dei contenuti.
 
 >[!TIP]
 >
->Per una procedura dettagliata end-to-end di creazione di un nuovo progetto Edge Delivery Services abilitato per l&#39;authoring WYSIWYG con AEM as a Cloud Service come origine di contenuto, visualizzare [questo webinar AEM GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
+>Per una procedura dettagliata end-to-end di creazione di un nuovo progetto Edge Delivery Services abilitato per la creazione di WYSIWYG con AEM as a Cloud Service come origine di contenuto, visualizzare [questo webinar AEM GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
 
