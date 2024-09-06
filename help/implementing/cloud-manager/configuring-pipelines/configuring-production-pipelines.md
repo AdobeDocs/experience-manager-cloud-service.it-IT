@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 69%
@@ -102,11 +102,11 @@ Per completare la configurazione della pipeline di produzione del codice full st
 
 1. Fornisci percorsi da includere nell’audit dell’esperienza.
 
-   * Per informazioni dettagliate, consulta il documento [Test di audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-testing.md#configuration).
+   * Per informazioni dettagliate, consulta il documento [Test di audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration).
 
 1. Per salvare la pipeline, fai clic su **Salva**.
 
-I percorsi configurati per l’audit dell’esperienza vengono inviati al servizio e valutati in termini di prestazioni, accessibilità, SEO (Search Engine Optimization), best practice e test PWA (web app progressiva) durante l’esecuzione della pipeline. Per ulteriori informazioni, consulta la sezione dedicata alla [lettura dei risultati dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md).
+I percorsi configurati per l’audit dell’esperienza vengono inviati al servizio e valutati in termini di prestazioni, accessibilità, SEO (Search Engine Optimization), best practice e test PWA (web app progressiva) durante l’esecuzione della pipeline. Per ulteriori informazioni, consulta la sezione dedicata alla [lettura dei risultati dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md).
 
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
 

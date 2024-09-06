@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 9%
@@ -97,7 +97,7 @@ I test sono inclusi in un’immagine Docker, progettata per essere il più volat
 >
 >I test personalizzati dell’interfaccia utente vengono eseguiti nelle pipeline di produzione e non di produzione (opt-in) utilizzate dalle modifiche dell’applicazione AEM, dalle implementazioni e dagli aggiornamenti push dei prodotti AEM e rappresentano pertanto un contributo chiave per garantire il corretto funzionamento dell’applicazione e aumentare la sicurezza della versione. I test dell’interfaccia utente del cliente vengono eseguiti anche in pipeline interne di convalida pre-release per ogni cliente, per fornire un feedback tempestivo.
 >
->I contenitori non Selenium devono eseguire i test utilizzando un proxy HTTP basato sulle variabili di ambiente nella [sezione dei test dell&#39;interfaccia utente.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+>I contenitori non Selenium devono eseguire i test utilizzando un proxy HTTP basato sulle variabili di ambiente nella [Sezione test interfaccia utente](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
 Per mantenere efficienti le esecuzioni della pipeline, consigliamo di concentrarci sulle funzioni chiave e sui principali flussi di interazione degli utenti. Si consiglia di eseguire suite di test dell’interfaccia utente complete che non rientrano in questo gate di qualità come parte delle pipeline di convalida generali del cliente durante il flusso di sviluppo del cliente.
 
@@ -111,7 +111,7 @@ Il gate di qualità dell&#39;audit dell&#39;esperienza sta eseguendo [controlli 
 
 Questo gate di qualità è fornito da AEM predefinito, ma non blocca le pipeline di distribuzione. Per impostazione predefinita, viene eseguito un controllo di audit sulla pagina principale (`/`) dell&#39;istanza Publish. Puoi contribuire configurando fino a 25 percorsi personalizzati considerati per i controlli di audit.
 
-Per ulteriori informazioni, vedere [Test di verifica dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-testing.md).
+Per ulteriori informazioni, vedere [Test di verifica dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md).
 
 ### Convalide cliente
 

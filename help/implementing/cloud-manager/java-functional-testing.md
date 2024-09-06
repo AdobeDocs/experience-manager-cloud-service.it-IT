@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -22,12 +22,12 @@ Al momento della creazione di un nuovo archivio di codice in Cloud Manager, una 
 
 >[!NOTE]
 >
->Se l’archivio è stato creato prima della creazione automatica delle cartelle `it.tests` di Cloud Manager, puoi anche generare la versione più recente utilizzando l’[archetipo di progetto AEM.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Se l’archivio è stato creato prima della creazione automatica delle cartelle `it.tests` di Cloud Manager, puoi anche generare la versione più recente utilizzando l’[archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
 Una volta ottenuto il contenuto della cartella `it.tests`, puoi utilizzarla come base per i test e quindi:
 
-1. [Sviluppare esempi di test.](#writing-functional-tests)
-1. [Eseguire i test in locale.](#local-test-execution)
+1. [Sviluppa i test case](#writing-functional-tests).
+1. [Eseguire i test localmente](#local-test-execution).
 1. Salvare il codice nell’archivio di Cloud Manager ed eseguire una pipeline di Cloud Manager.
 
 ## Scrittura di test funzionali personalizzati {#writing-functional-tests}

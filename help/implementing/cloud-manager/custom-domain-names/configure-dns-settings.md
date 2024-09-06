@@ -5,7 +5,7 @@ exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 49%
@@ -29,7 +29,7 @@ Per configurare queste impostazioni, è necessario determinare se è necessario 
 
 * Se non disponi ancora di questa informazione, identifica l’host o il registrar del dominio.
 * È necessario essere in grado di modificare i record DNS per il dominio dell&#39;organizzazione o di contattare la persona appropriata che può farlo.
-* È necessario aver già verificato il nome di dominio personalizzato configurato come descritto nel documento [Verifica dello stato del nome di dominio.](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+* È necessario aver già verificato il nome di dominio personalizzato configurato come descritto nel documento [Verifica dello stato del nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 ## Record CNAME {#cname-record}
 

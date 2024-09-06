@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1197'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -64,7 +64,7 @@ La fase di **implementazione nell’ambiente di staging** prevede i passaggi rip
 * **Analisi del codice**: questo passaggio valuta la qualità del codice dell’applicazione.
    * Per ulteriori informazioni sul processo di test, consulta il documento [Test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md).
 * **Genera immagini**: questo processo è responsabile della trasformazione in immagini Docker e configurazioni di Kubernetes dei pacchetti di contenuti e dispatcher generati dalla fase di build.
-* **Implementazione nell’ambiente di staging**: l’immagine viene implementata nell’ambiente di staging in preparazione alla [fase di test nell’ambente di staging.](#stage-testing)
+* **Distribuzione nell&#39;area di staging** - L&#39;immagine viene distribuita nell&#39;ambiente di staging in preparazione alla [fase di test nell&#39;area di staging](#stage-testing).
 
 ![Implementazione nell’ambiente di staging](assets/stage-deployment.png)
 
@@ -86,7 +86,7 @@ La fase di **test nell’ambiente di staging** prevede i seguenti passaggi.
    * Le pagine configurate vengono inviate al servizio e valutate.
    * I risultati sono informativi e mostrano i punteggi e cosa è cambiato tra il punteggio corrente e quello precedente.
    * Questo approfondimento e è utile per determinare l’eventuale introduzione di una regressione con la distribuzione corrente.
-   * Per ulteriori informazioni, consulta la sezione dedicata alla [lettura dei risultati dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-testing.md).
+   * Per ulteriori informazioni, consulta la sezione dedicata alla [lettura dei risultati dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md).
 
 ![Test nell’ambiente di staging](assets/stage-testing.png)
 
@@ -154,7 +154,7 @@ In tali circostanze, in cui è possibile eseguire una riesecuzione, la pagina di
 
 ### Riesecuzione dell’API {#reexecute-API}
 
-Oltre a essere disponibile nell&#39;interfaccia utente, puoi utilizzare [l&#39;API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) per attivare le riesecuzioni e identificare le esecuzioni attivate come riesecuzioni.
+Oltre a essere disponibile nell’interfaccia utente, è possibile utilizzare l’[API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) per attivare le riesecuzioni e identificare le esecuzioni attivate come riesecuzioni.
 
 #### Attivazione di una riesecuzione {#reexecute-deployment-api}
 

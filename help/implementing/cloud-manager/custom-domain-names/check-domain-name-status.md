@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0c9328dc5be8f0a5e0924d0fc2ec59c9fce4141b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '826'
-ht-degree: 62%
+ht-degree: 64%
 
 ---
 
@@ -21,7 +21,7 @@ Scopri come determinare se il nome di dominio personalizzato è stato verificato
 
 Prima di controllare lo stato del nome di dominio in Cloud Manager, è necessario soddisfare questi requisiti.
 
-* Devi innanzitutto aggiungere un record TXT per il dominio personalizzato come descritto nel documento [Aggiunta di un record TXT.](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+* Devi innanzitutto aggiungere un record TXT per il dominio personalizzato come descritto nel documento [Aggiunta di un record TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
 
 ## Controllare lo stato del nome di dominio personalizzato {#how-to}
 
@@ -41,7 +41,7 @@ Vengono visualizzati i dettagli dello stato. Il dominio personalizzato è pronto
 
 >[!NOTE]
 >
->Cloud Manager attiverà automaticamente la verifica quando selezioni **Crea** nel passaggio di verifica della procedura guidata **Aggiungi dominio personalizzato** quando [aggiungi un nuovo nome di dominio personalizzato a Cloud Manager.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) Per le verifiche successive, è necessario selezionare attivamente l&#39;icona di nuovo verifica accanto allo stato.
+>Cloud Manager attiverà automaticamente la verifica quando selezioni **Crea** nel passaggio di verifica della procedura guidata **Aggiungi dominio personalizzato** quando [aggiungi un nuovo nome di dominio personalizzato a Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Per le verifiche successive, devi riselezionare attivamente l’icona di verifica accanto allo stato.
 
 ## Informazioni sugli stati di verifica {#statuses}
 

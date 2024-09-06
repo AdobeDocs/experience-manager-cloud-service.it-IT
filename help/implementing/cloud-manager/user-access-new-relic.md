@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 76%
+ht-degree: 74%
 
 ---
 
@@ -109,7 +109,7 @@ Per attivare l’account come utente di New Relic, segui la procedura riportata 
 
 1. Riceverai un’e-mail da New Relic contente il collegamento per confermare l’account.
 
-Se non ricevi un’e-mail di conferma da New Relic, consulta la [sezione Risoluzione dei problemi.](#troubshooting)
+Se non ricevi un&#39;e-mail di conferma da New Relic, consulta la [sezione per la risoluzione dei problemi](#troubshooting).
 
 ## Accesso a New Relic One {#accessing-new-relic}
 
@@ -159,7 +159,7 @@ Se sei stato aggiunto come utente New Relic One come descritto nella sezione [Ge
 
 1. Riceverai un’e-mail da New Relic contente il collegamento per confermare l’account.
 
-Se dopo aver completato la procedura di accesso non riesci ad accedere al tuo account a causa di messaggi di errore relativi all’e-mail o alla password, invia un ticket di supporto tramite [Admin Console.](https://adminconsole.adobe.com/)
+Se dopo aver completato la procedura di registrazione non riesci ad accedere al tuo account a causa di messaggi di errore relativi all&#39;e-mail o alla password, invia un ticket di supporto tramite il [Admin Console](https://adminconsole.adobe.com/).
 
 Se non ricevi un’e-mail da New Relic:
 
@@ -172,7 +172,7 @@ Se non ricevi un’e-mail da New Relic:
 L’aggiunta di utenti a New Relic One prevede le seguenti limitazioni:
 
 * È possibile aggiungere fino a un massimo di 30 utenti. Se è stato raggiunto il numero massimo di utenti, rimuovine alcuni per poterne aggiungere di nuovi.
-* Gli utenti aggiunti a New Relic sono di tipo **Limitato**. Per ulteriori informazioni, consulta la [documentazione di New Relic.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
+* Gli utenti aggiunti a New Relic sono di tipo **Limitato**. Per informazioni dettagliate, vedere [la documentazione di New Relic](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change).
 * AEM as a Cloud Service offre unicamente la soluzione New Relic One APM e non fornisce supporto per avvisi, registrazione o integrazioni API.
 
 >[!NOTE]
@@ -181,7 +181,7 @@ L’aggiunta di utenti a New Relic One prevede le seguenti limitazioni:
 >
 >Segui gli stessi passaggi descritti nella sezione [Attiva l&#39;account secondario New Relic One](#activate-sub-account) di questo documento per riattivare l&#39;account secondario New Relic One.
 
-Per ulteriore assistenza o informazioni sulle offerte New Relic One per il programma AEM as a Cloud Service, apri un ticket di supporto tramite il [portale di supporto AEM.](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html)
+Per ulteriore assistenza o informazioni sulle offerte di New Relic One per i programmi AEM as a Cloud Service, apri un ticket di supporto tramite il [portale AEM dedicato all’assistenza](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 
 ## Domande frequenti su New Relic One {#faqs}
 
@@ -203,7 +203,7 @@ Nota:
 
 ### Adobe invia notifiche di avviso da New Relic One? {#alerting-new-relic}
 
-Adobe fornisce l’accesso a New Relic One solo a scopo di osservabilità e non lo utilizza per gli avvisi dei clienti o per gli avvisi operativi interni. Le notifiche per eventuali incidenti vengono inviate utilizzando [profili di notifica utente.](/help/journey-onboarding/notification-profiles.md)
+Adobe fornisce l’accesso a New Relic One solo a scopo di osservabilità e non lo utilizza per gli avvisi dei clienti o per gli avvisi operativi interni. Le notifiche per eventuali incidenti vengono inviate utilizzando [profili di notifica utente](/help/journey-onboarding/notification-profiles.md).
 
 ### Chi può accedere ai dati del servizio cloud di New Relic One? {#access-new-relic-cloud}
 

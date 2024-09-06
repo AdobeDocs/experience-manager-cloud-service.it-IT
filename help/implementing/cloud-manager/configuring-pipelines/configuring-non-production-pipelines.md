@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1402'
 ht-degree: 75%
 
 ---
@@ -103,7 +103,7 @@ Per completare la configurazione della pipeline non di produzione del codice ful
       * **Test funzionali del prodotto**: esegui [test funzionali del prodotto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) rispetto all’ambiente di sviluppo.
       * **Test funzionali personalizzato**: esegui [test funzionali personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) rispetto all’ambiente di sviluppo.
       * **Test personalizzati dell’interfaccia utente**: esegui [test personalizzati dell’interfaccia utente](/help/implementing/cloud-manager/ui-testing.md) per applicazioni personalizzate.
-      * **Audit dell&#39;esperienza** - Esegui [Audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **Audit dell&#39;esperienza** - Esegui [Audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    ![Pipeline full stack](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -152,13 +152,13 @@ I passaggi per completare la creazione della pipeline di distribuzione non di pr
    * **Ramo Git**: questa opzione definisce da quale ramo della pipeline selezionata deve essere recuperato il codice.
       * Immetti i primi caratteri del nome del ramo: la funzione di completamento automatico di questo campo. trova i rami corrispondenti che puoi selezionare.
    * **Posizione codice**: definisce il percorso nel ramo dell’archivio selezionato dal quale la pipeline deve recuperare il codice.
-   * **Pipeline** - Per le pipeline front-end non di produzione, è possibile abilitare **[Audit dell&#39;esperienza.](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **Pipeline** - Per le pipeline front-end non di produzione, è possibile abilitare **[Audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md)**.
 
    ![Pipeline di configurazione](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. Se hai abilitato Audit dell&#39;esperienza, tocca o fai clic su **Continua** per passare alla scheda **Audit dell&#39;esperienza** in cui puoi definire i percorsi che devono sempre essere inclusi nell&#39;Audit dell&#39;esperienza.
 
-   * Se hai abilitato **Audit dell&#39;esperienza**, consulta il documento [Audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) per informazioni dettagliate su come configurare.
+   * Se hai abilitato **Audit dell&#39;esperienza**, consulta il documento [Audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md) per informazioni dettagliate su come configurare.
    * In caso contrario, salta questo passaggio.
 
 1. Per salvare la pipeline, tocca o fai clic su **Salva**.

@@ -5,7 +5,7 @@ exl-id: d441de29-af41-4d3e-9155-531af9702841
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 28%
@@ -29,13 +29,13 @@ Prima di aggiungere un record TXT è necessario soddisfare i requisiti riportati
 
 * Se non disponi ancora di questa informazione, identifica l’host o il registrar del dominio.
 * È necessario essere in grado di modificare i record DNS per il dominio dell&#39;organizzazione o di contattare la persona appropriata che può farlo.
-* È innanzitutto necessario aggiungere un nome di dominio personalizzato come descritto nel documento [Aggiunta di un nome di dominio personalizzato.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+* È innanzitutto necessario aggiungere un nome di dominio personalizzato come descritto nel documento [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
 ## Aggiunta di un record TXT per la verifica {#verification}
 
 Un record TXT viene aggiunto come parte della verifica di un nome di dominio personalizzato da utilizzare con Cloud Manager.
 
-1. È innanzitutto necessario aggiungere un nome di dominio personalizzato come descritto nel documento [Aggiunta di un nome di dominio personalizzato.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. È innanzitutto necessario aggiungere un nome di dominio personalizzato come descritto nel documento [Aggiunta di un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
 1. Nella scheda **Verifica** della finestra di dialogo **Aggiungi nome di dominio**, Cloud Manager visualizza il nome e il valore TXT da utilizzare per la verifica. Copia questo valore.
 
@@ -45,7 +45,7 @@ Un record TXT viene aggiunto come parte della verifica di un nome di dominio per
 
 1. Aggiungi `_aemverification.[yourdomainname]` come **Nome** del valore e aggiungi il valore TXT esattamente come visualizzato nella finestra di dialogo **Aggiungi nome di dominio**.
 
-   * Vedi gli [esempi nella sezione seguente.](#examples)
+   * Vedi gli [esempi nella sezione seguente](#examples).
 
 1. Salva il record TXT nell’host del dominio.
 

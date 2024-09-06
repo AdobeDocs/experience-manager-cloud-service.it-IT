@@ -4,10 +4,10 @@ description: Scopri come creare, visualizzare ed eliminare gli archivi Git in Cl
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 100%
+source-wordcount: '621'
+ht-degree: 92%
 
 ---
 
@@ -71,17 +71,17 @@ Cloud Manager supporta sia gli archivi gestiti da Adobe (**Archivio Adobe**) sia
 
 ## Accedi a dati archivio {#repo-info}
 
-Quando visualizzi gli archivi nella finestra **Archivi**, puoi visualizzare i dettagli su come accedere agli archivi gestiti da Adobe a livello di programmazione toccando o facendo clic sul pulsante **Accedi a dati archivio** nella barra degli strumenti.
+Quando visualizzi i tuoi archivi nella finestra **Archivi**, puoi visualizzare i dettagli su come accedere agli archivi gestiti da Adobe a livello di programmazione facendo clic sul pulsante **Accedi a dati archivio** nella barra degli strumenti.
 
 ![Informazioni sull’archivio](assets/repo-info.png)
 
-La finestra **Informazioni archivio** si apre con i dettagli. Per ulteriori informazioni sull’accesso alle informazioni dell’archivio, consulta il documento [Accesso alle informazioni sull’archivio.](accessing-repos.md)
+La finestra **Informazioni archivio** si apre con i dettagli. Per ulteriori informazioni sull&#39;accesso alle informazioni del repository, vedere il documento [Accesso alle informazioni del repository](accessing-repos.md).
 
 ## Controlla rami/Crea progetto {#check-branches}
 
 L’azione **Controlla rami/Crea progetto** esegue due funzioni a seconda dello stato dell’archivio.
 
-* Se l’archivio è stato appena creato, l’azione crea un progetto di esempio basato sull’[Archetipo progetto AEM.](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview)
+* Se l’archivio è stato appena creato, l’azione crea un progetto di esempio basato sull’[Archetipo progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Se nell’archivio è già stato creato il progetto di esempio, viene verificato lo stato dell’archivio e dei relativi rami e vengono generati rapporti se il progetto di esempio esiste già.
 
 ![Azione Controlla rami](assets/check-branches.png)

@@ -5,7 +5,7 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 92%
@@ -36,4 +36,4 @@ Nella tabella seguente sono descritti gli scenari comuni delle soluzioni disponi
 
 >[!NOTE]
 >
->I programmi di produzione [ possono essere modificati ma non eliminati.](editing-programs.md)
+>I programmi di produzione [ possono essere modificati ma non eliminati](editing-programs.md).

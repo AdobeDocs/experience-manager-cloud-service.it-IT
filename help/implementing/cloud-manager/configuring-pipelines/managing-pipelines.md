@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 57%
+source-wordcount: '1110'
+ht-degree: 70%
 
 ---
 
@@ -29,7 +29,7 @@ Facendo clic sul pulsante con i puntini di sospensione accanto a ogni pipeline �
 * [Eseguire la pipeline](#running-pipelines)
 * [Modificare la pipeline](#editing-pipelines)
 * [Eliminare la pipeline](#deleting-pipelines)
-* [Visualizza dettagli](#view-details)
+* [Visualizzare dettagli](#view-details)
 
 Nella parte inferiore dell’elenco delle pipeline sono disponibili le opzioni generali.
 
@@ -40,7 +40,7 @@ Nella parte inferiore dell’elenco delle pipeline sono disponibili le opzioni g
 
 ## Finestra Pipeline {#pipelines}
 
-La finestra **Pipeline** mostra un elenco completo di tutte le pipeline per il programma selezionato. Questa funzione è utile in quanto presenta informazioni più complete rispetto a quelle disponibili nella [Scheda pipeline.](#pipeline-card)
+La finestra **Pipeline** mostra un elenco completo di tutte le pipeline per il programma selezionato. Questa funzione è utile in quanto presenta informazioni più complete rispetto a quelle disponibili nella [Scheda pipeline](#pipeline-card).
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
@@ -48,15 +48,15 @@ La finestra **Pipeline** mostra un elenco completo di tutte le pipeline per il p
 
 1. Dalla pagina **Panoramica del programma**, seleziona la scheda **Pipeline** per passare alla finestra **Pipeline**.
 
-1. Qui puoi visualizzare un elenco di tutte le pipeline per il programma e avviare e arrestare l&#39;esecuzione della pipeline come faresti nella **scheda Pipeline**.
+1. Qui puoi visualizzare un elenco di tutte le pipeline del programma, nonché avviare e interrompere l’esecuzione della pipeline come faresti nella **Scheda Pipeline**.
 
-Se una pipeline è in esecuzione, toccando l&#39;icona delle informazioni nella colonna **Stato** verranno visualizzati i dettagli sull&#39;esecuzione.
+Se una pipeline è in esecuzione, facendo clic sull&#39;icona delle informazioni nella colonna **Stato** vengono visualizzati i dettagli relativi all&#39;esecuzione.
 
 ![Dettagli di esecuzione della pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
-Se tocchi o fai clic su **Visualizza dettagli**, verrai reindirizzato ai [dettagli dell’esecuzione della pipeline.](#view-details)
+Facendo clic su **Visualizza dettagli**, vieni reindirizzato ai [dettagli dell’esecuzione della pipeline](#view-details).
 
-Puoi anche toccare o fare clic sul pulsante con i puntini di sospensione della pipeline per eseguire altre azioni appropriate allo stato della pipeline, ad esempio [modificarla](#editing-pipelines) o [annullare l&#39;esecuzione.](#cancel)
+Puoi anche fare clic sul pulsante con i puntini di sospensione della pipeline per eseguire altre azioni appropriate allo stato della pipeline, ad esempio [modificarla](#editing-pipelines) o [annullare l&#39;esecuzione](#cancel).
 
 ![Azioni pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
@@ -70,13 +70,13 @@ La finestra **Attività** mostra un elenco completo di tutte le esecuzioni delle
 
 1. Qui puoi visualizzare un elenco di tutte le esecuzioni della pipeline del programma, comprese le esecuzioni correnti e quelle precedenti.
 
-Se una pipeline è in esecuzione, toccando l&#39;icona delle informazioni nella colonna **Stato** verranno visualizzati i dettagli sull&#39;esecuzione.
+Se una pipeline è in esecuzione, facendo clic sull&#39;icona delle informazioni nella colonna **Stato** verranno visualizzati i dettagli sull&#39;esecuzione.
 
 ![Dettagli di esecuzione della pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Toccando o facendo clic sulla riga che rappresenta l&#39;esecuzione della pipeline, potrai visualizzare i [dettagli dell&#39;esecuzione della pipeline.](#view-details)
+Toccando o facendo clic sulla riga che rappresenta l&#39;esecuzione della pipeline, viene visualizzato il [dettaglio dell&#39;esecuzione della pipeline](#view-details).
 
-È inoltre possibile toccare o fare clic sul pulsante con i puntini di sospensione per eseguire ulteriori azioni sull&#39;esecuzione della pipeline, ad esempio per visualizzarne i dettagli o scaricare il registro, che consente di accedere alla [pagina dei dettagli della pipeline.](#view-details)
+Puoi anche fare clic sul pulsante con i puntini di sospensione per intraprendere ulteriori azioni sull&#39;esecuzione della pipeline, ad esempio visualizzarne i dettagli o scaricare il registro, per passare alla [pagina dei dettagli della pipeline](#view-details).
 
 ![Azioni di esecuzione della pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
@@ -88,15 +88,15 @@ Toccando o facendo clic sulla riga che rappresenta l&#39;esecuzione della pipeli
 
 1. L’esecuzione della pipeline viene avviata ed è indicata dalla colonna **Stato**.
 
-Per visualizzare i dettagli dell’esecuzione, fai nuovamente clic sul pulsante con i puntini di sospensione e seleziona **[Visualizza dettagli.](#view-details)**
+Per visualizzare i dettagli dell’esecuzione, fai nuovamente clic sul pulsante con i puntini di sospensione e seleziona **[Visualizza dettagli](#view-details)**.
 
-A seconda del tipo di pipeline, puoi annullare l’esecuzione facendo nuovamente clic sul pulsante con i puntini di sospensione e selezionando **Annulla**.
+A seconda del tipo di pipeline, può essere possibile annullare l’esecuzione facendo nuovamente clic sul pulsante con i puntini di sospensione e selezionando **Annulla**.
 
 ## Modifica delle pipeline {#editing-pipelines}
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Passa alla scheda **Pipeline** dalla pagina **Panoramica del programma**, fai clic sul pulsante con i puntini di sospensione accanto alla pipeline da modificare e seleziona **Modifica** dal menu.
+1. Passa alla scheda **Pipeline** dalla pagina **Panoramica del programma**, fai clic sul pulsante dei puntini di sospensione accanto alla pipeline da modificare e seleziona **Modifica** dal menu.
 
 1. Viene visualizzata la finestra di dialogo **Modifica pipeline di produzione** o **Modifica pipeline non di produzione**, che consente di modificare i dettagli inseriti durante la creazione della pipeline.
 
@@ -130,7 +130,7 @@ Puoi visualizzare i dettagli di una pipeline per visualizzarne lo stato e i regi
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Passa alla scheda **Pipeline** dalla pagina **Panoramica del programma** e fai clic sul pulsante con i puntini di sospensione accanto alla pipeline eseguita, quindi seleziona **Visualizza dettagli** dal menu.
+1. Passa alla scheda **Pipeline** dalla pagina **Panoramica programma**, fai clic sul pulsante con i puntini di sospensione accanto alla pipeline eseguita, quindi seleziona **Visualizza dettagli** dal menu.
 
 1. L’opzione reindirizza alla pagina dei dettagli della pipeline in esecuzione.
 

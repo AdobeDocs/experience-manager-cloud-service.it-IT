@@ -5,10 +5,10 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 84%
+source-wordcount: '696'
+ht-degree: 83%
 
 ---
 
@@ -117,7 +117,7 @@ Negli ambienti sospesi è ancora possibile eseguire distribuzioni e aggiornament
 
 * Gli ambienti in un programma sandbox vengono automaticamente sospesi dopo otto ore di inattività.
    * L’inattività è definita dall’assenza di richieste ricevute dal servizio di Author, Anteprima e Publish.
-   * Una volta ibernati, possono essere [riattivati manualmente.](#de-hibernation-introduction)
+   * Una volta sospesi, possono essere [riattivati manualmente].(#de-hibernation-introduction)
 * I programmi sandbox vengono eliminati dopo sei mesi di sospensione continua. Al termine di questo periodo, possono essere ricreati.
 
 >[!NOTE]

@@ -4,7 +4,7 @@ description: Scopri come configurare Cloud Manager per l’utilizzo di archivi G
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 77%
@@ -44,7 +44,7 @@ La configurazione consiste di due passaggi principali:
 
 >[!TIP]
 >
->Per informazioni dettagliate sulla gestione degli archivi in Cloud Manager, vedere [Archivi Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+>Per informazioni dettagliate sulla gestione degli archivi in Cloud Manager, consulta [Archivi di Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
 ### Convalida della proprietà dell’archivio privato {#validate-ownership}
 
@@ -110,7 +110,7 @@ Quando la richiesta pull viene chiusa o unita, la pipeline di qualità del codic
 
 ## Associazione di archivi privati alle pipeline {#pipelines}
 
-Gli archivi privati convalidati possono essere associati a [pipeline full-stack e front-end.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+Gli archivi privati convalidati possono essere associati a [pipeline full-stack e front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 >[!NOTE]
 >

@@ -1,23 +1,23 @@
 ---
-title: Gestione degli ambienti
+title: Gestisci ambienti
 description: Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '2377'
-ht-degree: 70%
+source-wordcount: '2375'
+ht-degree: 65%
 
 ---
 
 
-# Gestione degli ambienti {#managing-environments}
+# Gestisci ambienti {#managing-environments}
 
 Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 
-## Tipi di ambienti {#environment-types}
+## Tipi di ambiente {#environment-types}
 
 L’utente con le autorizzazioni necessarie può creare i seguenti tipi di ambienti (entro i limiti delle opzioni disponibili per il tenant specifico).
 
@@ -38,13 +38,13 @@ Le funzionalità dei singoli ambienti dipendono dalle soluzioni abilitate nel [p
 >
 >Gli ambienti di produzione e staging vengono creati solo in coppia. Non è possibile creare solo un ambiente di staging o solo un ambiente di produzione.
 
-## Aggiunta di un ambiente {#adding-environments}
+## Aggiungere un ambiente {#adding-environments}
 
 Per aggiungere o modificare un ambiente, un utente deve essere membro del ruolo **Proprietario business**.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, tocca o fai clic sul programma per il quale desideri aggiungere un ambiente.
+1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** fare clic sul programma per il quale si desidera aggiungere un ambiente.
 
 1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, fai clic su **Aggiungi ambiente** nella scheda **Ambienti** per aggiungere un ambiente.
 
@@ -58,7 +58,7 @@ Per aggiungere o modificare un ambiente, un utente deve essere membro del ruolo 
 
 1. Nella finestra di dialogo **Aggiungi ambiente** che viene visualizzata:
 
-   * Seleziona un [**tipo di ambiente**.](#environment-types)
+   * Selezionare un tipo di ambiente [****](#environment-types).
       * Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
    * Specifica il **nome** dell’ambiente.
       * Una volta creato l’ambiente, non è possibile modificarne il nome.
@@ -82,7 +82,7 @@ Un utente con il ruolo di **Proprietario business** può configurare gli ambient
 >
 >Puoi utilizzare l’[API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments.it) per eseguire una query su un elenco corrente di aree geografiche disponibili.
 
-### Aggiungere più aree geografiche di pubblicazione in un nuovo ambiente {#add-regions}
+### Aggiungere più aree geografiche di pubblicazione a un nuovo ambiente {#add-regions}
 
 Quando aggiungi un nuovo ambiente, puoi scegliere di configurare aree geografiche aggiuntive oltre all’area geografica primaria.
 
@@ -99,7 +99,7 @@ Quando aggiungi un nuovo ambiente, puoi scegliere di configurare aree geografich
 
 Le aree geografiche selezionate verranno applicate agli ambienti di produzione e di staging.
 
-Se non specifichi alcuna area geografica aggiuntiva, [puoi farlo in un secondo momento dopo la creazione degli ambienti.](#edit-regions)
+Se non si specificano altre aree, [sarà possibile farlo in seguito dopo la creazione degli ambienti](#edit-regions).
 
 Se desideri effettuare il provisioning di [rete avanzata](/help/security/configuring-advanced-networking.md) per il programma, si consiglia di eseguire questa operazione prima di aggiungere aree geografiche di pubblicazione aggiuntiva agli ambienti utilizzando API di Cloud Manager. In caso contrario, il traffico delle aree geografiche di pubblicazione aggiuntiva passerà attraverso il proxy dell’area geografica principale.
 
@@ -153,7 +153,7 @@ In alternativa, fai clic sul pulsante con i puntini di sospensione dell’ambien
 >
 >Nella scheda **Ambienti** sono elencati solo tre ambienti. Per visualizzare tutti gli ambienti del programma, fai clic sul pulsante **Mostra tutto** come descritto in precedenza.
 
-### Accesso al servizio di anteprima {#access-preview-service}
+### Accedere al servizio di anteprima {#access-preview-service}
 
 Cloud Manager fornisce un servizio di anteprima (fornito come servizio di pubblicazione aggiuntivo) per ogni ambiente di AEM as a Cloud Service.
 
@@ -179,7 +179,7 @@ Dopo l’attivazione puoi pubblicare il contenuto nel servizio di anteprima tram
 >
 >La versione dell’ambiente deve essere AEM `2021.05.5368.20210529T101701Z` o più recente per utilizzare il servizio di anteprima. Assicurati che una pipeline di aggiornamento sia stata eseguita correttamente nell’ambiente in uso, in modo da poter utilizzare il servizio di anteprima.
 
-### Stato di altre aree geografiche di Publish {#additional-region-status}
+### Stato di altre aree geografiche di pubblicazione {#additional-region-status}
 
 Se hai attivato altre aree di pubblicazione, puoi controllarne lo stato dalla scheda **Ambienti**.
 
@@ -209,9 +209,9 @@ In caso di problemi segnalati con altre aree geografiche di pubblicazione:
 
 Il tempo che si attende dal ripristino del sistema prima di intraprendere ulteriori azioni dipende dall&#39;impatto che il guasto di quell&#39;area ha sui sistemi.
 
-In ogni caso, il traffico [ viene sempre indirizzato all&#39;altra area più vicina che è online.](/help/operations/additional-publish-regions.md) Se continui a visualizzare i problemi, contatta l&#39;Assistenza clienti Adobe.
+In ogni caso, il traffico [viene sempre indirizzato all&#39;altra area più vicina che è online](/help/operations/additional-publish-regions.md). Se continui a visualizzare dei problemi, contatta l’Assistenza clienti di Adobe.
 
-## Aggiornamento degli ambienti {#updating-dev-environment}
+## Aggiornare ambienti {#updating-dev-environment}
 
 In qualità di servizio nativo per il cloud, gli aggiornamenti degli ambienti di sviluppo, staging e produzione all’interno dei programmi di produzione vengono gestiti automaticamente da Adobe.
 
@@ -221,7 +221,7 @@ Tuttavia, gli aggiornamenti degli ambienti nei programmi sandbox vengono gestiti
 
 ### Aggiornamenti e pipeline {#updates-pipelines}
 
-Le pipeline sono l’unico modo per [distribuire il codice negli ambienti di AEM as a Cloud Service.](deploy-code.md) Per questo motivo, ogni pipeline è associata a una particolare versione di AEM.
+Le pipeline sono l&#39;unico modo per [distribuire il codice negli ambienti di AEM as a Cloud Service](deploy-code.md). Per questo motivo, ogni pipeline è associata a una particolare versione dell’AEM.
 
 Se Cloud Manager rileva che è disponibile una versione di AEM più recente rispetto all’ultima distribuita con la pipeline, viene visualizzato lo stato **Aggiornamento disponibile** per l’ambiente.
 
@@ -230,7 +230,7 @@ Il processo di aggiornamento è quindi articolato in due fasi:
 1. Aggiornamento della pipeline all’ultima versione di AEM
 1. Esecuzione della pipeline per distribuire la nuova versione di AEM in un ambiente
 
-### Aggiornamento degli ambienti {#updating-your-environments}
+### Aggiornare gli ambienti {#updating-your-environments}
 
 >[!NOTE]
 > A partire dal 2024, le istanze di sviluppo e alcuni programmi sandbox sono già aggiornati automaticamente, pertanto non è necessario gestirne manualmente gli aggiornamenti. In seguito a questa transizione, l&#39;opzione di aggiornamento manuale dell&#39;ambiente per le istanze di sviluppo potrebbe non essere disponibile per _alcuni_ programmi.
@@ -272,7 +272,7 @@ L’opzione Elimina è disponibile anche dalla scheda **Ambienti** della finestr
 >* Non è possibile eliminare gli ambienti di produzione e di staging creati in un programma di produzione.
 >* È possibile eliminare gli ambienti di produzione e di staging contenuti in un programma sandbox.
 
-## Gestione dell’accesso {#managing-access}
+## Gestisci accesso {#managing-access}
 
 Dal menu con i puntini di sospensione dell’ambiente nella scheda **Ambienti**, seleziona **Gestisci accesso**. Puoi accedere direttamente all’istanza di authoring e gestire l’accesso all’ambiente.
 
@@ -282,7 +282,7 @@ Dal menu con i puntini di sospensione dell’ambiente nella scheda **Ambienti**,
 >
 >Vedi [Team e profili di prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) se desideri scoprire come i team e i profili di prodotto di AEM as a Cloud Service possono concedere e limitare l’accesso alle soluzioni di Adobe con licenza.
 
-## Accesso a Console sviluppatori {#accessing-developer-console}
+## Accedere alla Console per sviluppatori {#accessing-developer-console}
 
 Dal menu con i puntini di sospensione dell’ambiente nella scheda **Ambienti**, seleziona **Console sviluppatori**. Nel browser viene aperta una nuova scheda con la pagina di accesso a **Developer Console**.
 
@@ -304,13 +304,13 @@ Seleziona **Accesso locale** dal menu con i puntini di sospensione dell&#39;ambi
 
 ![Accesso locale dalla scheda Ambienti](assets/environ-login-locally-2.png)
 
-## Gestione dei nomi di dominio personalizzati {#manage-cdn}
+## Gestire i nomi di dominio personalizzati {#manage-cdn}
 
 I nomi di dominio personalizzati sono supportati in Cloud Manager per i programmi Sites sia per i servizi di pubblicazione che per quelli di anteprima.
 
 >[!TIP]
 >
->Per ulteriori informazioni, vedere il documento [Introduzione ai nomi di dominio personalizzati.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+>Per ulteriori informazioni, vedere il documento [Introduzione ai nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 ## Gestione degli elenchi IP consentiti {#manage-ip-allow-lists}
 
@@ -318,10 +318,10 @@ Gli elenchi IP consentiti sono supportati in Cloud Manager per i servizi di auth
 
 Per gestire gli elenchi IP consentiti, accedi alla scheda **Ambienti** della pagina **Panoramica** del programma. Fai clic su un singolo ambiente per gestirne i dettagli.
 
-### Applicazione di un elenco IP consentiti {#apply-ip-allow-list}
+### Applicare un Elenco consentiti IP {#apply-ip-allow-list}
 
 L’applicazione di un inserisco nell&#39;elenco Consentiti di consente di associare tutti gli intervalli IP inclusi nella definizione del elenco Consentiti di a un servizio Author o Publish in un ambiente.
 
 >[!TIP]
 >
->Per ulteriori informazioni, vedere il documento [Introduzione agli Elenchi consentiti IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>Per ulteriori informazioni, vedere il documento [Introduzione agli Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

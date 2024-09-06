@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2950c62c55942614e23d08b3bb96864d4112e8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 80%
+source-wordcount: '1499'
+ht-degree: 75%
 
 ---
 
@@ -37,8 +37,8 @@ La console Programmi personali fornisce una panoramica di tutti i programmi a cu
 1. [Barre degli strumenti](#toolbars-my-programs-toolbars) per la selezione di organizzazioni, avvisi e impostazioni account
 1. Schede che consentono di attivare/disattivare la visualizzazione corrente dei programmi.
    * Visualizzazione **Pagina principale** (predefinita) che seleziona la visualizzazione **Programmi personali** con una panoramica di tutti i programmi
-   * **Licenza** che accede alla [Dashboard delle licenze.](/help/implementing/cloud-manager/license-dashboard.md)
-   * Per impostazione predefinita, le schede sono chiuse e possono essere visualizzate utilizzando il menu hamburger nell’[intestazione Cloud Manager.](#cloud-manager-header)
+   * **Licenza** che accede alla [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md).
+   * Per impostazione predefinita, le schede sono chiuse e possono essere visualizzate utilizzando il menu hamburger nell&#39;[intestazione Cloud Manager](#cloud-manager-header).
 1. [Statistiche e invito all’azione](#statistics) per una panoramica dell’attività recente
 1. Sezione [**Programmi personali** ](#my-programs-section) con una panoramica di tutti i programmi
 1. [Collegamenti rapidi](#quick-links-section) per accedere facilmente alle risorse correlate
@@ -63,7 +63,7 @@ La prima è l’intestazione di Cloud Manager, che è persistente quando ti spos
 1. Il selettore organizzazione visualizza l’organizzazione a cui sei attualmente connesso (in questo esempio, Foundation Internal). Tocca o fai clic per passare a un’altra organizzazione se il tuo Adobe ID è associato a più di una.
 1. Tocca o fai clic sul selettore delle soluzioni per passare rapidamente ad altre soluzioni di Experience Cloud.
 1. L’icona dell’aiuto fornisce un accesso rapido alle risorse di apprendimento e supporto.
-1. Questa icona viene contrassegnata con il numero di [notifiche](/help/implementing/cloud-manager/notifications.md) incomplete attualmente assegnate.
+1. L&#39;icona delle notifiche è contrassegnata con il numero di [notifiche](/help/implementing/cloud-manager/notifications.md) incomplete attualmente assegnate.
 1. Seleziona l’icona che rappresenta l’utente per accedere alle impostazioni utente. Se non hai configurato un’immagine utente, viene assegnata un’icona in modo casuale.
 
 #### Barra degli strumenti del programma {#program-toolbar}
@@ -183,7 +183,7 @@ La panoramica del programma consente di accedere a tutti i dettagli di un progra
 
 ### Barre degli strumenti {#program-overview-toolbar}
 
-Le barre degli strumenti per la panoramica del programma sono molto simili a quelle della console [Programmi personali.](#my-programs-toolbars) Qui sono illustrate solo le differenze.
+Le barre degli strumenti per la panoramica del programma sono simili a quelle della [console Programmi personali](#my-programs-toolbars). Qui sono illustrate solo le differenze.
 
 #### Intestazione di Cloud Manager {#cloud-manager-header-2}
 
@@ -225,7 +225,7 @@ Utilizza il menu hamburger in [Intestazione di Cloud Manager](#cloud-manager-hea
 
 ### Invito all’azione {#cta}
 
-La sezione relativa agli inviti all’azione fornisce informazioni utili in base allo stato del programma. Per un nuovo programma puoi vedere i passaggi successivi offerti e un promemoria della data di pubblicazione, [impostato durante la creazione del programma.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+La sezione relativa agli inviti all’azione fornisce informazioni utili in base allo stato del programma. Per un nuovo programma è possibile visualizzare i passaggi successivi offerti e un promemoria della data di pubblicazione [impostata durante la creazione del programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Invito all&#39;azione per un nuovo programma](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
@@ -251,7 +251,7 @@ Consulta il documento [Gestione delle pipeline](/help/implementing/cloud-manager
 
 ### Scheda Prestazioni {#performance}
 
-La scheda **Prestazioni** offre una panoramica della **[dashboard CDN.](/help/implementing/cloud-manager/cdn-performance.md)**
+La scheda **Prestazioni** offre una panoramica della **[dashboard CDN](/help/implementing/cloud-manager/cdn-performance.md)**.
 
 ![Scheda Prestazioni](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

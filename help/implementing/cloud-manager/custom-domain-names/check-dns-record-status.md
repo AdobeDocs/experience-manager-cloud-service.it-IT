@@ -5,7 +5,7 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 60%
@@ -25,7 +25,7 @@ Un nome di dominio personalizzato non può gestire il traffico in tempo reale fi
 
 Prima di controllare lo stato di un record DNS tramite Cloud Manager, è necessario soddisfare questi requisiti.
 
-* È necessario aver già configurato le impostazioni DNS per il nome di dominio personalizzato come descritto nel documento [Configurazione delle impostazioni DNS.](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+* È necessario aver già configurato le impostazioni DNS per il nome di dominio personalizzato come descritto nel documento [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
 
 ## Controllare lo stato del record DNS {#how-to}
 
@@ -37,7 +37,7 @@ Prima di controllare lo stato di un record DNS tramite Cloud Manager, è necessa
 
 1. Fai clic sull’icona **Stato** del nome di dominio.
 
-Cloud Manager esegue una ricerca DNS per il nome di dominio e lo visualizza [stato corrente.](#statuses)
+Cloud Manager esegue una ricerca DNS per il nome di dominio e lo visualizza [stato corrente](#statuses).
 
 Cloud Manager attiva automaticamente una ricerca DNS quando il nome di dominio personalizzato viene verificato e distribuito correttamente per la prima volta. Per i tentativi successivi, seleziona attivamente l’icona **Nuovo tentativo di risoluzione** accanto allo stato.
 

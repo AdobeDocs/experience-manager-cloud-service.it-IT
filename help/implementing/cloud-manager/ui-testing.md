@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '2610'
 ht-degree: 79%
@@ -26,7 +26,7 @@ I test dell’interfaccia utente personalizzati sono una funzione facoltativa ch
 
 AEM fornisce una suite integrata di [gate di qualità di Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) per garantire una fluida esperienza di aggiornamento delle applicazioni personalizzate. In particolare, i gate di test IT supportano già la creazione e automazione dei test personalizzati utilizzando le API di AEM.
 
-I test dell’interfaccia utente sono inclusi in un’immagine Docker per consentire un’ampia scelta in termini di linguaggio e framework (come Cypress, Selenium, Java e Maven e JavaScript). Inoltre, un progetto di test dell&#39;interfaccia utente può essere facilmente generato utilizzando [l&#39;archetipo del progetto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
+I test dell’interfaccia utente sono inclusi in un’immagine Docker per consentire un’ampia scelta in termini di linguaggio e framework (come Cypress, Selenium, Java e Maven e JavaScript). Inoltre, un progetto di test dell&#39;interfaccia utente può essere facilmente generato utilizzando [l&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it).
 
 Adobe incoraggia l’utilizzo di Cypress, in quanto offre il ricaricamento in tempo reale e l’attesa automatica, che consente di risparmiare tempo e migliora la produttività durante il test. Cypress fornisce anche una sintassi semplice e intuitiva, che lo rende facile da apprendere e utilizzare, anche per coloro che eseguono i test per la prima volta.
 
@@ -342,7 +342,7 @@ Se non è vuoto, lo script entrypoint deve:
    * Per verificare l&#39;idoneità, è possibile utilizzare le variabili di ambiente `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` e `PROXY_RETRY_DELAY`.
    * È possibile verificare utilizzando una richiesta cURL, assicurandosi di installare cURL in `Dockerfile`.
 
-Un esempio di implementazione è disponibile nel punto di ingresso del modulo di test Cypress Sample su [GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
+Un esempio di implementazione è disponibile nel punto di ingresso del modulo di test Cypress Sample su [GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh).
 
 ## Dettagli specifici del playwright
 

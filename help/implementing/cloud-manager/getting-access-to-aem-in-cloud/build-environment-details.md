@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 77%
@@ -23,7 +23,7 @@ Cloud Manager genera e verifica il codice mediante un ambiente di build speciali
 
 * L’ambiente di build è basato su Linux, derivato da Ubuntu 22.04.
 * Apache Maven 3.9.4 è installato.
-   * Adobe consiglia agli utenti di [aggiornare i loro archivi Maven per utilizzare HTTPS invece di HTTP.](#https-maven)
+   * Adobe consiglia agli utenti di [aggiornare i loro archivi Maven per utilizzare HTTPS invece di HTTP](#https-maven).
 * Le versioni Java installate sono Oracle JDK 11.0.22 e Oracle JDK 8u401.
 * **IMPORTANTE**: per impostazione predefinita, la variabile di ambiente `JAVA_HOME` è impostata su `/usr/lib/jvm/jdk1.8.0_401` che contiene l&#39;Oracle JDK 8u401. *_Questa impostazione predefinita deve essere sostituita per i progetti AEM Cloud che utilizzano JDK 11_*. Per ulteriori dettagli, consulta la sezione [Impostazione della versione JDK di Maven](#alternate-maven-jdk-version).
 * È necessario installare anche alcuni pacchetti di sistema aggiuntivi.
@@ -32,7 +32,7 @@ Cloud Manager genera e verifica il codice mediante un ambiente di build speciali
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* Altri pacchetti possono essere installati al momento della generazione, come descritto nella sezione [Installazione di pacchetti di sistema aggiuntivi.](#installing-additional-system-packages)
+* Altri pacchetti possono essere installati in fase di build come descritto nella sezione [Installazione di pacchetti di sistema aggiuntivi](#installing-additional-system-packages).
 * Ogni generazione viene svolta in un ambiente incontaminato; il contenitore della build non conserva nessuno stato tra le esecuzioni.
 * Maven viene sempre eseguito con i tre comandi riportati di seguito.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
@@ -46,7 +46,7 @@ Cloud Manager genera e verifica il codice mediante un ambiente di build speciali
 
 ## Archivi Maven HTTPS {#https-maven}
 
-Cloud Manager [versione 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) ha iniziato un aggiornamento continuo dell’ambiente di build (completandolo con la versione 2023.12.0), che includeva un aggiornamento a Maven 3.8.8. Come modifica significativa introdotta in Maven 3.8.1 è stato apportato un miglioramento della sicurezza volto a mitigare potenziali vulnerabilità. In particolare, Maven ora disabilita tutti le corrispondenze `http://*` non sicure per impostazione predefinita, come descritto nelle [note sulla versione di Maven.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [versione 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) ha iniziato un aggiornamento continuo dell’ambiente di build (completandolo con la versione 2023.12.0), che includeva un aggiornamento a Maven 3.8.8. Come modifica significativa introdotta in Maven 3.8.1 è stato apportato un miglioramento della sicurezza volto a mitigare potenziali vulnerabilità. In particolare, Maven ora disabilita tutte le corrispondenze `http://*` non sicure per impostazione predefinita, come descritto nelle [note sulla versione di Maven](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
 
 Come risultato di questo miglioramento sulla sicurezza, alcuni utenti potrebbero riscontrare problemi durante la fase di build, in particolare durante il download di artefatti dagli archivi Maven che utilizzano connessioni HTTP non sicure.
 

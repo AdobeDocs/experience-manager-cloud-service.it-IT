@@ -5,10 +5,10 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 93%
 
 ---
 
@@ -59,10 +59,10 @@ Con queste credenziali puoi clonare una copia locale dell’archivio, apportare 
 
 ## Accesso alle informazioni dell’archivio dalla finestra Archivi {#repositories-window}
 
-Un pulsante **Accedi a dati archivio** è disponibile anche nella barra degli strumenti della finestra [**Archivi**.](managing-repositories.md) visualizza le stesse informazioni sull’accesso agli archivi gestiti da Adobe.
+Nella barra degli strumenti della finestra [**Archivi**](managing-repositories.md) è disponibile anche il pulsante **Accedi a dati archivio**. Vengono visualizzate le stesse informazioni sull’accesso agli archivi gestiti da Adobe.
 
 ## Revoca di una password di accesso {#revoke-password}
 
-Puoi revocare una password di accesso in qualsiasi momento. Per farlo, [crea un ticket di supporto per questa richiesta.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home?lang=it#support)
+Puoi revocare una password di accesso in qualsiasi momento. Per farlo, [crea un ticket di supporto per questa richiesta](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home?lang=it#support).
 
 Il ticket sarà trattato con priorità alta e dovrebbe essere revocato nell’arco della giornata.

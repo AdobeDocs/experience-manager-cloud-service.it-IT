@@ -1,77 +1,80 @@
 ---
-title: Creazione di programmi sandbox
+title: Creare programmi sandbox
 description: Scopri come creare un programma sandbox personalizzato da usare per formazione, demo, POC o altre finalità non di produzione con Cloud Manager.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 74%
+source-wordcount: '436'
+ht-degree: 15%
 
 ---
 
-# Creazione di programmi sandbox {#create-sandbox-program}
+# Creare programmi sandbox {#create-sandbox-program}
 
-Un programma sandbox viene tipicamente creato per scopi di formazione, esecuzione di demo, attivazione, POC o documentazione e non è quindi destinato a contenere traffico in tempo reale.
+Un programma sandbox viene generalmente creato a scopi di formazione, esecuzione di demo, abilitazione, POC o documentazione e non è destinato a contenere traffico in tempo reale. Vedi [Introduzione ai programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
 
-Per ulteriori informazioni sui tipi di programmi, consulta il documento [Informazioni su programmi e tipi di programmi.](program-types.md)
+Ulteriori informazioni sui tipi di programmi nel documento [Informazioni su programmi e tipi di programmi](program-types.md).
 
-## Creazione di un programma sandbox {#create}
+## Creare un programma sandbox {#create}
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, tocca o fai clic su **Aggiungi programma** nell&#39;angolo superiore destro dello schermo.
+1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, nell&#39;angolo superiore destro, fare clic su **Aggiungi programma**.
 
    ![Pagina di destinazione di Cloud Manager](assets/log-in.png)
 
-1. Dalla procedura guidata Crea programma, seleziona **Configura una sandbox** e assegna un nome al programma.
+1. Nella procedura guidata *Crea il programma*, nel campo di testo **Nome programma**, digita il nome desiderato per il programma.
+
+1. In **Obiettivo programma**, selezionare **`Set up a sandbox`**.
 
    ![Creazione del tipo di programmi](assets/create-sandbox.png)
 
-1. Facoltativamente, puoi aggiungere un’immagine al programma trascinando un file di immagine sul target **Aggiungi un’immagine del programma** o facendo clic su di esso per aggiungere un’immagine da un browser del file. Seleziona **Continua**.
+1. (Facoltativo) Nell&#39;angolo inferiore destro della finestra di dialogo della procedura guidata, effettuate una delle seguenti operazioni:
 
-   * L’immagine funge solo da titolo nella finestra di panoramica del programma e aiuta a identificarlo.
+   * Trascina e rilascia un file di immagine nella destinazione **Aggiungi un&#39;immagine del programma**.
+   * Fai clic su **Aggiungi un&#39;immagine del programma**, quindi seleziona un&#39;immagine da un browser di file.
+   * Fai clic sull’icona cestino per eliminare un’immagine aggiunta.
 
-1. Nella finestra di dialogo **Configura la sandbox**, seleziona le soluzioni da abilitare nel programma sandbox nella tabella **Soluzioni e componenti aggiuntivi**.
+1. Fai clic su **Continua**.
 
-   * Utilizza le frecce accanto ai nomi delle soluzioni per visualizzare ulteriori componenti aggiuntivi facoltativi per le soluzioni.
+1. Nella casella di riepilogo **Soluzioni e componenti aggiuntivi** selezionare una o più soluzioni da includere nel programma.
 
-   * Le soluzioni **Sites** e **Assets** sono sempre incluse nei programmi sandbox e non possono essere deselezionate.
+   * Fai clic sulla freccia a sinistra del nome di una soluzione per visualizzare eventuali componenti aggiuntivi opzionali disponibili che desideri includere con una soluzione selezionata.
+   * Le soluzioni **Sites**, **Assets** e **Edge Deliver Servicesy** sono sempre selezionate per impostazione predefinita quando si crea un programma sandbox. Non è possibile deselezionarli.
 
    ![Selezionare soluzioni e componenti aggiuntivi per una sandbox](assets/sandbox-solutions-add-ons.png)
 
-1. Dopo aver selezionato le soluzioni e i componenti aggiuntivi per il programma sandbox, fai clic su **Crea**.
-
-Nella pagina di destinazione viene visualizzata una nuova scheda del programma sandbox e un indicatore di stato che mostra l’avanzamento del processo di configurazione.
+1. Fai clic su **Crea**. Cloud Manager crea il programma sandbox e lo visualizza nella pagina di destinazione per la selezione.
 
 ![Creazione di un programma sandbox dalla pagina Panoramica](assets/sandbox-setup.png)
 
 ## Accesso alla sandbox {#access}
 
-Dalla pagina di panoramica del programma, è possibile visualizzare i dettagli della configurazione sandbox e accedere all’ambiente (non appena disponibile).
+Al termine della creazione di un nuovo programma sandbox, puoi visualizzare i dettagli della configurazione sandbox e accedere all’ambiente visualizzando la pagina di panoramica del programma.
 
-1. Dalla pagina di destinazione di Cloud Manager, fai clic sul pulsante con i puntini di sospensione del programma creato.
+1. Dalla pagina di destinazione di Cloud Manager, fai clic sul pulsante con i puntini di sospensione corrispondente al programma sandbox creato.
 
    ![Accesso alla panoramica del programma](assets/program-overview-sandbox.png)
 
-1. Dopo aver completato la procedura di creazione del progetto, puoi utilizzare l’archivio Git accedendo al collegamento **Accedi alle informazioni sull’archivio**.
+1. Al termine della creazione del progetto, puoi fare clic sul collegamento **Accedi a dati archivio** per utilizzare l&#39;archivio Git.
 
    ![Configurazione del programma](assets/create-program4.png)
 
    >[!TIP]
    >
-   >Per ulteriori informazioni sull’accesso e la gestione dell’archivio Git, consulta [Accesso a Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+   >Per ulteriori informazioni sull&#39;accesso e la gestione dell&#39;archivio Git, vedere [Accesso a Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-1. Dopo aver creato l’ambiente di sviluppo, è possibile utilizzare il collegamento **Accedi a AEM** per accedere a AEM.
+1. Dopo aver creato l&#39;ambiente di sviluppo, è possibile fare clic su **Accedi a AEM** e accedere a AEM.
 
    ![Collegamento per l’accesso a AEM](assets/create-program5.png)
 
-1. Una volta completata la distribuzione della pipeline non di produzione nell’ambiente di sviluppo, la procedura guidata nell’invito all’azione ti guida ad accedere all’ambiente di sviluppo AEM o a distribuire il codice nell’ambiente di sviluppo.
+1. Al termine della distribuzione della pipeline non di produzione nell’ambiente di sviluppo, la procedura guidata dell’invito all’azione ti guida ad accedere all’ambiente di sviluppo AEM o a distribuire il codice nell’ambiente di sviluppo.
 
    ![Distribuzione del programma sandbox](assets/create-program-setup-deploy.png)
 
 >[!TIP]
 >
->Per informazioni dettagliate su come esplorare Cloud Manager e la console **I miei programmi**, vedere il documento [Navigazione nell&#39;interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/navigation.md).
+>Consulta [Navigazione nell&#39;interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/navigation.md) per informazioni dettagliate su come esplorare Cloud Manager e comprendere la console **Programmi personali**.

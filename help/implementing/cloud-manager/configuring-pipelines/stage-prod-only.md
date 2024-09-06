@@ -1,21 +1,21 @@
 ---
 title: Pipeline solo di staging e solo di produzione
 description: Scopri come suddividere le distribuzioni di staging e produzione utilizzando pipeline dedicate.
-source-git-commit: 94e5ecb67212bcced45141cba3af8c830791473b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 92%
+source-wordcount: '942'
+ht-degree: 88%
 
 ---
 
 
 # Pipeline solo di staging e solo di produzione {#stage-prod-only}
 
-Scopri come suddividere le distribuzioni di staging e produzione utilizzando pipeline dedicate.
+Scopri come suddividere le distribuzioni di staging e di produzione utilizzando pipeline dedicate.
 
 >[!NOTE]
 >
->Questa funzione è disponibile solo per [il programma per i primi utilizzatori.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Questa funzione è disponibile solo per [il programma per i primi utilizzatori](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
 
 ## Panoramica {#overview}
 
@@ -54,9 +54,9 @@ Prima di iniziare a testare questa funzione, tieni presente anche i seguenti pro
 
 ## Creazione di pipeline {#pipeline-creation}
 
-Le pipeline solo di produzione e solo di staging vengono create in modo simile alle [pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) standard associate e alle [pipeline non di produzione.Per informazioni dettagliate, consulta questi documenti. ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+Le pipeline solo di produzione e solo di staging vengono create in modo simile alle [pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) standard associate e alle [pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Per informazioni dettagliate, consulta questi documenti.
 
-1. Nella finestra delle **Pipeline**, tocca o fai clic su **Aggiungi pipeline**.
+1. Nella finestra delle **Pipeline**, fai clic su **Aggiungi pipeline**.
 
    * Seleziona **Aggiungi pipeline non di produzione** per creare una pipeline solo di staging.
    * Seleziona **Aggiungi pipeline solo di produzione** per creare una pipeline solo di produzione.
@@ -74,7 +74,7 @@ Le pipeline solo di produzione e solo di staging vengono create in modo simile a
 ### Pipeline solo di staging {#stage-only}
 
 1. Dopo aver selezionato l’opzione **Aggiungi pipeline non di produzione**, viene aperta la finestra di dialogo **Aggiungi pipeline non di produzione**.
-1. Per creare una pipeline solo di staging, seleziona l’ambiente di staging nel campo **Ambienti di implementazione idonei** per la pipeline. Completa i campi restanti e tocca o fai clic su **Continua**.
+1. Per creare una pipeline solo di staging, seleziona l’ambiente di staging nel campo **Ambienti di implementazione idonei** per la pipeline. Completa i campi restanti e fai clic su **Continua**.
 
    ![Creazione di una pipeline solo di staging](assets/stage-only.png)
 
@@ -82,12 +82,12 @@ Le pipeline solo di produzione e solo di staging vengono create in modo simile a
 
 ### Pipeline solo di produzione {#prod-only}
 
-1. Dopo aver selezionato l’opzione **Aggiungi pipeline solo di produzione**, viene aperta la finestra di dialogo **Aggiungi pipeline solo di produzione**.
-1. Fornisci un **Nome pipeline**. Le opzioni e le funzionalità rimanenti della finestra di dialogo funzionano come quelle della finestra di dialogo per la creazione di pipeline standard associate. Per salvare la pipeline, tocca o fai clic su **Salva**.
+1. Quando selezioni l&#39;opzione **Aggiungi pipeline solo produzione**, viene visualizzata la finestra di dialogo **Aggiungi pipeline solo produzione**.
+1. Fornisci un **Nome pipeline**. Le opzioni e le funzionalità rimanenti della finestra di dialogo funzionano come quelle della finestra di dialogo per la creazione di pipeline standard associate. Fai clic su **Salva** per salvare la pipeline.
 
 ## Esecuzione di pipeline solo di produzione e solo di staging {#running}
 
-Le pipeline solo di produzione e solo di staging vengono eseguite con le stesse modalità [di tutte le altre pipeline.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) Per informazioni dettagliate, consulta la documentazione.
+Le pipeline solo di produzione e solo di staging vengono eseguite con le stesse modalità [di tutte le altre pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines). Per ulteriori informazioni, consulta la documentazione.
 
 Inoltre, un’esecuzione della pipeline solo di produzione può essere attivata direttamente dai dettagli di esecuzione di una pipeline solo di staging.
 
@@ -97,7 +97,7 @@ Una pipeline esclusivamente solo di staging viene eseguita quasi allo stesso mod
 
 ![Esecuzione pipeline solo di staging](assets/stage-only-pipeline-run.png)
 
-Il pulsante **Promuovi versione** viene visualizzato solo se ti trovi nell’ultima esecuzione riuscita della pipeline solo di staging. Una volta toccato o fatto clic, ti verrà richiesto di confermare l’esecuzione della pipeline solo di produzione o di crearne una, se non esiste già.
+Il pulsante **Promuovi versione** viene visualizzato solo se ti trovi nell’ultima esecuzione riuscita della pipeline solo di staging. Quando fai clic su, ti viene richiesto di confermare l’esecuzione della pipeline solo produzione o di crearne una, se non ne esiste già una.
 
 ### Pipeline solo di produzione {#prod-only-run}
 

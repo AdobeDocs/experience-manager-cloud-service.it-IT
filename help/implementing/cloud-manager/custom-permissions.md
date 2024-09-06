@@ -5,10 +5,10 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 41%
+ht-degree: 46%
 
 ---
 
@@ -36,9 +36,9 @@ Le autorizzazioni personalizzate consentono agli utenti di creare profili di aut
 
 Per creare e utilizzare autorizzazioni personalizzate, è necessario seguire tre passaggi:
 
-1. [Creare un profilo di prodotto.](#create)
-1. [Assegna autorizzazioni personalizzate al profilo di prodotto.](#assign-permissions)
-1. [Assegna utenti al profilo di prodotto.](#assign-users)
+1. [Crea un profilo di prodotto](#create).
+1. [Assegna autorizzazioni personalizzate al profilo di prodotto](#assign-permissions).
+1. [Assegna utenti al profilo di prodotto](#assign-users).
 
 Questa sezione descrive questi passaggi. Potrebbe essere utile visualizzare le [sezioni Termini](#terms) e [Autorizzazioni configurabili](#configurable-permissions) durante la creazione di autorizzazioni personalizzate.
 
@@ -88,7 +88,7 @@ Ora che disponi di un nuovo profilo di prodotto, puoi assegnargli le autorizzazi
    * Gli elementi di autorizzazione disponibili per l’assegnazione dell’autorizzazione si trovano nella colonna centrale indicata con Elementi di **Autorizzazioni disponibili**.
    * Gli elementi di autorizzazione assegnati si trovano nella colonna a destra indicata con **Elementi di autorizzazione inclusi**.
 
-   ![Modifica elementi di autorizzazione](assets/edit-permission-items.png)
+   ![Modificare gli elementi di autorizzazione](assets/edit-permission-items.png)
 
 1. Selezionare l&#39;icona più (`+`) accanto all&#39;elemento di autorizzazione per aggiungerlo alla colonna **Elementi di autorizzazione inclusi**.
 
@@ -104,7 +104,7 @@ Il nuovo profilo di prodotto viene ora salvato con le relative autorizzazioni pe
 
 Ora puoi assegnare gli utenti al nuovo profilo di prodotto creato con le autorizzazioni personalizzate.
 
-1. Nell&#39;Admin Console, selezionare il nome del [nuovo profilo di prodotto a cui sono state assegnate le autorizzazioni personalizzate.](#assign-permissions)
+1. Nell&#39;Admin Console, selezionare il nome del [nuovo profilo di prodotto a cui sono state assegnate le autorizzazioni personalizzate](#assign-permissions).
 
 1. Nella finestra visualizzata, seleziona la scheda **Utenti**.
 
@@ -164,9 +164,9 @@ I seguenti termini vengono utilizzati per creare e gestire autorizzazioni person
 
 | Termine | Descrizione |
 |---|---|
-| Autorizzazioni predefinite | Ruoli predefiniti come **Proprietario business** e **Responsabile dell&#39;implementazione** per gestire varie funzioni di Cloud Manager. Per informazioni dettagliate sui ruoli predefiniti, vedi [Profili team e prodotto di AEM as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md) |
+| Autorizzazioni predefinite | Ruoli predefiniti come **Proprietario business** e **Responsabile dell&#39;implementazione** per gestire varie funzioni di Cloud Manager. Per informazioni dettagliate sui ruoli predefiniti, vedere [Profili team e prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md). |
 | Autorizzazioni personalizzate | Le funzioni di Cloud Manager consentono agli utenti di creare profili di autorizzazione per definire ruoli che governano le funzioni supportate di Cloud Manager |
-| Profilo prodotto | Creato nell’Admin Console per gestire le autorizzazioni configurabili applicabili agli utenti che fanno parte del profilo di autorizzazione |
+| Profilo prodotto | Creato in Admin Console per gestire le autorizzazioni configurabili che saranno applicabili agli utenti che fanno parte del profilo di autorizzazione |
 | Autorizzazione configurabile | Autorizzazioni di Cloud Manager che possono essere configurate nel profilo di autorizzazione |
 | Elemento di autorizzazione | Programma, ambiente o risorsa pipeline a cui è possibile applicare un’autorizzazione |
 
@@ -174,7 +174,7 @@ Gli elementi autorizzazione si riferiscono all’ambito in cui viene applicata l
 
 | Tipo di elemento di autorizzazione | Esempio | Descrizione |
 |---|---|---|
-| Organizzazione | organization:companyA | Tutte le risorse applicabili di un’organizzazione. Una risorsa può essere un programma, un ambiente o una pipeline. Se l’utente aggiunge un’organizzazione per qualsiasi autorizzazione, anche tutte le nuove risorse in tale organizzazione dispongono di tale autorizzazione. |
+| Organizzazione | organization:companyA | Tutte le risorse applicabili di un’organizzazione. Una risorsa può essere un programma, un ambiente o una pipeline. Se l’utente aggiunge un’organizzazione per qualsiasi autorizzazione, anche tutte le nuove risorse in tale organizzazione disporranno di tale autorizzazione. |
 | Programma | Programma A | Tutte le risorse applicabili di un programma |
 | Ambiente | Programma A: ambiente | Applicabile a un ambiente specifico |
 | Pipeline | Programma A: pipeline | Applicabile a una pipeline specifica |
@@ -196,7 +196,7 @@ Quando utilizzi le autorizzazioni personalizzate, tieni presente le seguenti lim
 * Responsabile della distribuzione
 * Sviluppatore
 
-Per informazioni dettagliate sui ruoli predefiniti, vedi [Profili team e prodotto di AEM as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md)
+Per informazioni dettagliate sui ruoli predefiniti, vedere [Profili team e prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### Cosa succederà ai profili di autorizzazione predefiniti con l’introduzione dei profili personalizzati?
 
@@ -212,7 +212,7 @@ Non eliminare i profili di autorizzazione predefiniti dall’Admin Console.
 
 ### È possibile aggiungere utenti a più profili di autorizzazione?
 
-Sì, un utente può far parte di più profili, inclusi profili di autorizzazione predefiniti e personalizzati. Quando un utente viene assegnato a più profili, le autorizzazioni combinate di tutti i profili di autorizzazione assegnati sono disponibili per tale utente.
+Sì, un utente può far parte di più profili, inclusi profili di autorizzazione predefiniti e personalizzati. Un utente assegnato a più profili ha a disposizione le autorizzazioni combinate di tutti i profili di autorizzazione assegnati.
 
 ### Cosa succede se un utente dispone dell’autorizzazione per modificare un ambiente o una pipeline ma non ha accesso a un programma che contiene l’ambiente o la pipeline?
 

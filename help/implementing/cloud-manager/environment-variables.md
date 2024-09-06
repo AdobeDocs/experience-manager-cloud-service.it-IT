@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 76%
+ht-degree: 75%
 
 ---
 
@@ -118,7 +118,7 @@ Negli ambienti di authoring, anteprima e pubblicazione è possibile utilizzare s
 
 ### Dispatcher {#dispatcher}
 
-Solo le variabili di ambiente normali possono essere utilizzate dal [Dispatcher.Impossibile utilizzare ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) segreti.
+Solo le normali variabili di ambiente possono essere utilizzate con [i segreti del dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) non possono essere utilizzati.
 
 Tuttavia, le variabili di ambiente non possono essere utilizzate in `IfDefine` direttive.
 

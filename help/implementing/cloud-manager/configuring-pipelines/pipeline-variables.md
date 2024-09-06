@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 20%
@@ -51,7 +51,7 @@ Se una pipeline è in esecuzione, la gestione delle variabili viene bloccata.
 
 1. Viene visualizzata la finestra **Configurazione variabili**. Immetti i dettagli della variabile nella prima riga della tabella e tocca o fai clic su **Aggiungi**.
 
-   * **Nome configurazione** è un identificatore univoco per la variabile, che deve essere all&#39;origine delle [convenzioni di denominazione delle variabili della pipeline.](#naming-conventions)
+   * **Nome configurazione** è un identificatore univoco per la variabile, che deve essere all&#39;origine di [convenzioni di denominazione delle variabili della pipeline](#naming-conventions).
    * **Valore** è il valore che la variabile contiene.
    * **Passaggio applicato** è il passaggio della pipeline a cui si applica la variabile. È obbligatorio.
       * **Build**

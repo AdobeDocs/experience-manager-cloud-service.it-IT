@@ -4,7 +4,7 @@ description: Scopri come creare archivi gestiti da Adobe in Cloud Manager.
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%
@@ -31,7 +31,7 @@ La finestra **Archivi** consente di aggiungere facilmente al programma altri arc
 
    ![Finestra di dialogo Aggiungi archivio](assets/add-adobe-repository.png)
 
-Al termine della procedura guidata, il nuovo archivio viene visualizzato nella tabella nella finestra **Archivi**. A questo punto puoi associarvi una [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) o gestirlo nella finestra [**Archivi**.](managing-repositories.md)
+Al termine della procedura guidata, il nuovo archivio viene visualizzato nella tabella nella finestra **Archivi**. A questo punto puoi associarvi una [pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) o gestirlo nella finestra [**Archivi**.](managing-repositories.md)
 
 >[!TIP]
 >

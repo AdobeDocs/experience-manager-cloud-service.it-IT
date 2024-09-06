@@ -4,10 +4,10 @@ description: Scopri come i sottomoduli Git possono essere utilizzati per unire i
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 93%
+ht-degree: 90%
 
 ---
 
@@ -66,7 +66,7 @@ Questo determina un file `.gitmodules` simile al seguente.
     branch = main
 ```
 
-Per ulteriori informazioni sui moduli Git secondari, consulta il [Manuale di riferimento Git.](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+Ulteriori informazioni sui moduli Git secondari sono disponibili nel [Manuale di riferimento Git](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 ### Limitazioni e consigli {#limitations-recommendations}
 
