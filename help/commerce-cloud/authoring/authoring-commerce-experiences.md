@@ -4,9 +4,9 @@ description: Scopri come creare e creare esperienze commerciali in modo efficien
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: dbf5c47f6d66b1ce35536b0762556511386a7e38
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Questo selettore consente di sfogliare la struttura del catalogo per trovare la 
 
 ![Componente carosello senza selezione](../assets/authoring/carousel_component_without_selection.png)
 
-La finestra di dialogo per configurazione di questo componente richiede le categorie 1: n. L’CIF utilizza l’UID/ID come identificatore della categoria. Gli autori possono immettere manualmente l’UID oppure fare clic sull’icona della cartella per aprire il selettore delle categorie. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome della categoria selezionata.
+La finestra di dialogo per configurazione di questo componente richiede le categorie 1: n. L’CIF utilizza UID/ID come identificatore della categoria. Gli autori possono accedere manualmente a UID oppure fare clic sull’icona della cartella per aprire il selettore delle categorie. Dopo aver selezionato e chiuso il selettore, nella finestra di dialogo del componente viene visualizzato il nome della categoria selezionata.
 
 ![Componente carosello con selezione](../assets/authoring/carousel_component_with_selection.png)
 
@@ -71,9 +71,9 @@ Le pagine del catalogo dei prodotti CIF sono pagine virtuali di cui viene esegui
 
 ![EDITOR RICH TEXT](../assets/authoring/RTE.png)
 
-    >[!NOTE]
-    >
-    > Se vengono selezionati sia la categoria che il prodotto, il prodotto verrà utilizzato.
+>[!NOTE]
+>
+> Se vengono selezionati sia la categoria che il prodotto, viene utilizzato il prodotto.
 
 Questo crea un collegamento segnaposto che viene sostituito da un collegamento reale quando viene eseguito il rendering della pagina.
 

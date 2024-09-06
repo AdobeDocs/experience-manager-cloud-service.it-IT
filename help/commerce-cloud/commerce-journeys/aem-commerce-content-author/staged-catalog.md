@@ -4,9 +4,9 @@ description: Scopri come gestire le esperienze del catalogo dei prodotti in stag
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '485'
 ht-degree: 10%
 
 ---
@@ -25,9 +25,9 @@ Questo articolo si basa su questi principi fondamentali.
 
 Questo documento spiega come gestire l’esperienza del catalogo dei prodotti in base ai dati di prodotto raccolti in staging e ai lanci AEM. Molte volte, gli autori devono preparare in parallelo un prossimo lancio di prodotto (come una nuova collezione di abbigliamento). Questo richiede l’accesso ai dati di prodotto in staging (non ancora live) e la possibilità di preparare il contenuto. I nuovi contenuti verranno pubblicati con il lancio del prodotto.
 
-    >[!NOTE]
-    >
-    >Questa funzione è disponibile solo con Adobe Commerce o Cloud Edition e connettori di terze parti che supportano l&#39;autenticazione basata su token. Per ulteriori informazioni, vedere [Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html).
+>[!NOTE]
+>
+>Questa funzione è disponibile solo con Adobe Commerce o Cloud Edition e connettori di terze parti che supportano l’autenticazione basata su token. Per ulteriori informazioni, vedere [Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=it).
 
 Per prima cosa, vediamo come gli autori possono accedere ai dati di prodotti in staging con l’CIF.
 
@@ -45,9 +45,9 @@ Ora puoi sfogliare il catalogo con i dati dell’area intermedia. Se apri una ca
 
 ![stage plp](assets/staged-plp.png)
 
-    >[!NOTE]
-    >
-    >Omnisearch non ha un contesto e pertanto restituirà solo i dati del catalogo prodotti live
+>[!NOTE]
+>
+>Omnisearch non ha un contesto e pertanto restituirà solo i dati del catalogo dei prodotti live
 
 ## Lanci AEM {#launches}
 
