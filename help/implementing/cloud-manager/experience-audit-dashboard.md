@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 72868ab808ebbd99c5e81805e7669083c5c754fb
+source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 7%
+source-wordcount: '1950'
+ht-degree: 6%
 
 ---
 
@@ -17,17 +17,11 @@ ht-degree: 7%
 
 Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione, garantendo che le modifiche soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO. Fornisce un’interfaccia dashboard chiara e informativa per monitorare queste metriche.
 
->[!NOTE]
->
->Questa funzionalità è disponibile solo per [il programma per l&#39;adozione anticipata](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
->
->Per informazioni dettagliate sulla funzione di audit dell&#39;esperienza esistente per AEM as a Cloud Service, consulta [Test di audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-testing.md).
-
 ## Panoramica {#overview}
 
 L’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche vengano implementate:
 
-1. soddisfino gli standard di base per prestazioni, accessibilità, best practice, SEO (Search Engine Optimization) e PWA (app web progressiva);
+1. Soddisfa gli standard di base per prestazioni, accessibilità, best practice e SEO (Search Engine Optimization).
 
 1. non introducano regressioni.
 
@@ -88,7 +82,7 @@ L’audit dell’esperienza è disponibile per impostazione predefinita per le p
 
 I risultati dell&#39;audit dell&#39;esperienza sono presentati nella fase **Test dello staging** della pipeline di produzione tramite la [pagina di esecuzione della pipeline di produzione](/help/implementing/cloud-manager/deploy-code.md).
 
-![Dashboard nella pipeline](assets/experience-audit-dashboard.jpg)
+![Dashboard nella pipeline](assets/experience-audit-dashboard.png)
 
 L&#39;audit dell&#39;esperienza fornisce i punteggi medi di Google Lighthouse per le [pagine configurate](#configuration) e la differenza di punteggio rispetto all&#39;analisi precedente.
 
@@ -139,9 +133,17 @@ La relazione si articola in due aree:
 
 #### Punteggi di pagina — tendenza {#trend}
 
-Per impostazione predefinita, la visualizzazione selezionata per **Punteggi pagina — tendenza** è **punteggi mediani** per **Ultimi 6 mesi**.
+Per impostazione predefinita, la visualizzazione selezionata per **Punteggi pagina — tendenza** è **punteggi mediani** per **ultimo anno**.
 
-Utilizza i menu a discesa **Seleziona** e **Visualizza** nella parte superiore e inferiore del pulsante del grafico per selezionare rispettivamente i dettagli specifici della pagina e i diversi intervalli di tempo. Fai clic su **Aggiorna tendenza** nella parte superiore del grafico per applicare le selezioni e aggiornare il grafico.
+È possibile scegliere di visualizzare le tendenze per specifiche categorie di Lighthouse facendo clic sul nome della categoria nella legenda.
+
+![Tendenza selezionabile](assets/experience-audit-trend-selectable.png)
+
+Utilizza il menu a discesa **Seleziona** nella parte superiore del grafico per selezionare dettagli specifici della pagina e i menu a discesa **Visualizza** e **Attiva** nella parte inferiore per scegliere rispettivamente diversi intervalli di tempo e il tipo di trigger.
+
+Il menu a discesa **Visualizza** offre la possibilità di selezionare un intervallo di tempo predefinito o un intervallo personalizzato per una visualizzazione più specifica.
+
+![Visualizzazione tendenze](assets/experience-audit-trend-view.png)
 
 Quando si sposta il mouse sul grafico, una descrizione comando visualizza i valori per le categorie di Google Lighthouse in specifici momenti nel tempo.
 
@@ -164,11 +166,11 @@ La sezione **Recommendations** mostra un set aggregato di approfondimenti. Per i
 
 ![Recommendations](assets/experience-audit-recommendations.png)
 
-Fai clic sulla freccia per qualsiasi consiglio per visualizzarne i dettagli.
+Fai clic su un consiglio per visualizzarne i dettagli.
 
 ![Dettagli consiglio](assets/experience-audit-recommendations-details.png)
 
-Quando disponibili, i dettagli espansi dei consigli contengono anche la percentuale di impatto dei consigli, per concentrarti sui cambiamenti più incisivi.
+Quando disponibili, i dettagli espansi dei consigli contengono anche la percentuale di impatto dei consigli, per concentrarti sui cambiamenti più incisivi. Inoltre, le raccomandazioni estese possono includere collegamenti alla documentazione AEM e suggerimenti utili per guidare l’utente nell’implementazione delle correzioni suggerite.
 
 Fai clic sul collegamento **visualizza pagine** nella visualizzazione dei dettagli per visualizzare le pagine a cui si applica il consiglio.
 
@@ -222,7 +224,7 @@ Se le [pagine configurate](#configuration) per l&#39;audit non erano disponibili
 
 La pipeline mostra una sezione di errore espandibile per visualizzare i percorsi URL relativi a cui non poteva accedere.
 
-![Problemi rilevati dall&#39;audit dell&#39;esperienza](assets/experience-audit-issues.jpg)
+![Problemi rilevati dall&#39;audit dell&#39;esperienza](assets/experience-audit-issues.png)
 
 Se si visualizza il report completo, i dettagli sono visualizzati nella sezione **[Risultati analisi audit dell&#39;esperienza](#results)**, anch&#39;essa espandibile.
 
