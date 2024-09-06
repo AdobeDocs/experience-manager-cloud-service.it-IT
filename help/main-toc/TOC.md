@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
 workflow-type: tm+mt
-source-wordcount: '5533'
-ht-degree: 96%
+source-wordcount: '5578'
+ht-degree: 95%
 
 ---
 
@@ -456,7 +456,17 @@ ht-degree: 96%
    + [Panoramica dei microservizi per le risorse](/help/assets/asset-microservices-overview.md)
    + [Accessibilità in [!DNL Assets]](/help/assets/accessibility.md)
    + Consente di gestire i contenuti digitali {#manage}
-      + [Selettore risorse micro front-end](/help/assets/asset-selector.md)
+      + Selettore risorse micro-front-end {#asset-selector}
+         + [Panoramica di Asset Selector](/help/assets/overview-asset-selector.md)
+         + Integrazioni Asset Selector {#asset-selector-integration}
+            + [Panoramica delle integrazioni con Asset Selector](/help/assets/integrate-asset-selector.md)
+            + [Integrare Asset Selector con un’applicazione di Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [Integrare Asset Selector con un’applicazione non basata su Adobi](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Integrare Asset Selector per Dynamic Medie con funzionalità OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [Proprietà selettore risorse](/help/assets/asset-selector-properties.md)
+         + [Esempi di selettore risorse](/help/assets/asset-selector-examples.md)
+         + [Personalizzazioni di Asset Selector](/help/assets/asset-selector-customization.md)
+         + [Caricamento selettore risorse](/help/assets/asset-selector-upload.md)
       + [Selettore di destinazione micro front-end](/help/assets/destination-selector.md)
       + [Condividere le risorse](/help/assets/share-assets.md)
       + [Rielaborazione delle risorse](/help/assets/reprocessing.md)

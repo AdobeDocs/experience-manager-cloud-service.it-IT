@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
+source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 24%
@@ -88,13 +88,13 @@ Puoi visualizzarne i dettagli nella barra delle proprietà [.](/help/sites-cloud
 ![Modifica dei file multimediali](assets/ue-edit-media.png)
 
 1. Tocca o fai clic sull’anteprima dell’immagine selezionata nella barra delle proprietà.
-1. Viene visualizzata la finestra [selettore risorse](/help/assets/asset-selector.md#using-asset-selector) che consente di selezionare una risorsa.
+1. Viene visualizzata la finestra [selettore risorse](/help/assets/overview-asset-selector.md#using-asset-selector) che consente di selezionare una risorsa.
 1. Seleziona per selezionare una nuova risorsa.
 1. Seleziona **Seleziona** per tornare alla barra delle proprietà in cui è stata sostituita la risorsa.
 
 Le modifiche vengono salvate automaticamente nel contenuto.
 
-### Modifica di frammenti di contenuto {#edit-content-fragment}
+### Modificare i frammenti di contenuto {#edit-content-fragment}
 
 Se selezioni un [frammento di contenuto,](/help/sites-cloud/administering/content-fragments/overview.md) puoi modificarne i dettagli nella barra delle [proprietà.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
