@@ -2,13 +2,13 @@
 title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
 description: Integra il selettore delle risorse con varie applicazioni di Adobe, non di Adobe e di terze parti.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 55848de0-aff2-42a0-b959-c771235d9425
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 6%
 
 ---
-
 
 # Integrazione con un’applicazione non Adobe {#integrate-asset-selector-non-adobe-app}
 
@@ -18,7 +18,7 @@ Asset Selector consente di integrare utilizzando diverse applicazioni non di Ado
 
 Se integri Asset Selector con un’applicazione non di Adobe, utilizza i seguenti prerequisiti:
 
-* [Metodi di comunicazione](#overview-asset-selector.md#prereqs)
+* [Metodi di comunicazione](/help/assets/overview-asset-selector.md#prereqs)
 * imsClientId
 * imsScope
 * redirectUrl

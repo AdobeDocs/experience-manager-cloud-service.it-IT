@@ -2,7 +2,8 @@
 title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
 description: Utilizza il Selettore risorse per cercare, trovare e recuperare i metadati e le rappresentazioni delle risorse all’interno dell’applicazione.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 35%
@@ -19,7 +20,7 @@ L’interfaccia utente micro front-end è resa disponibile nell’esperienza del
 
 Il Selettore risorse offre molti vantaggi, tra cui:
 
-* Semplicità di integrazione con le applicazioni [Adobe](#integrate-asset-selector-adobe-app.md) o [non Adobe](#integrate-asset-selector.md) che utilizzano la libreria Vanilla JavaScript.
+* Semplicità di integrazione con le applicazioni [Adobe](/help/assets/integrate-asset-selector-adobe-app.md) o [non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md) che utilizzano la libreria Vanilla JavaScript.
 * Facile manutenzione poiché gli aggiornamenti al pacchetto Selettore risorse vengono automaticamente distribuiti nel selettore risorse disponibile per l’applicazione. Non sono necessari aggiornamenti all’interno dell’applicazione per caricare le modifiche più recenti.
 * Facilità di personalizzazione grazie alle proprietà disponibili che controllano la visualizzazione del Selettore risorse all’interno dell’applicazione.
 * Filtri di ricerca full-text, predefiniti e personalizzati per passare rapidamente alle risorse da utilizzare nell’esperienza di authoring.
@@ -51,8 +52,8 @@ Se hai bisogno del flusso di lavoro di autenticazione IMS di Asset Selector, uti
 
 **Ulteriori informazioni**
 
-* [Integrare Asset Selector (Selettore risorse) con un’app di Adobe](#integrate-asset-selector-adobe-app.md)
-* [Integrare il selettore risorse con un’app non basata su Adobi](#integrate-asset-selector-non-adobe-app.md)
+* [Integrare Asset Selector (Selettore risorse) con un’app di Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Integrare il selettore risorse con un’app non basata su Adobi](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Integrare le API Dynamic Media Open di Asset Selector](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
@@ -124,7 +125,7 @@ Il Selettore risorse fornisce anche opzioni di filtro predefinite per perfeziona
 
 * **[!UICONTROL Stato]:** include lo stato corrente della risorsa tra `all`, `approved`, `rejected` o `no status`.
 * **[!UICONTROL Il tipo di file]:** include `folder`, `file`, `images`, `documents` o `video`.
-* **[!UICONTROL Stato scadenza]:** fa riferimento alle risorse in base alla relativa durata di scadenza. È possibile selezionare la casella di controllo `[!UICONTROL Expired]` per filtrare le risorse scadute oppure impostare `[!UICONTROL Expiration Duration]` per visualizzare le risorse in base alla loro durata di scadenza. Quando una risorsa è già scaduta o sta per scadere, viene visualizzato un badge che illustra la stessa situazione. Inoltre, puoi controllare se consentire l’utilizzo (o il trascinamento) di una risorsa scaduta. Ulteriori informazioni su [personalizzare le risorse scadute](#asset-selector-customization.md#customize-expired-assets). Per impostazione predefinita, il badge **In scadenza** viene visualizzato per le risorse che scadono nei successivi 30 giorni. È tuttavia possibile configurare la scadenza utilizzando la proprietà `expirationDate`.
+* **[!UICONTROL Stato scadenza]:** fa riferimento alle risorse in base alla relativa durata di scadenza. È possibile selezionare la casella di controllo `[!UICONTROL Expired]` per filtrare le risorse scadute oppure impostare `[!UICONTROL Expiration Duration]` per visualizzare le risorse in base alla loro durata di scadenza. Quando una risorsa è già scaduta o sta per scadere, viene visualizzato un badge che illustra la stessa situazione. Inoltre, puoi controllare se consentire l’utilizzo (o il trascinamento) di una risorsa scaduta. Ulteriori informazioni su [personalizzare le risorse scadute](/help/assets/asset-selector-customization.md#customize-expired-assets). Per impostazione predefinita, il badge **In scadenza** viene visualizzato per le risorse che scadono nei successivi 30 giorni. È tuttavia possibile configurare la scadenza utilizzando la proprietà `expirationDate`.
 
   >[!TIP]
   >

@@ -2,7 +2,8 @@
 title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
 description: Integra il selettore delle risorse con varie applicazioni di Adobe, non di Adobe e di terze parti.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 3%
@@ -18,11 +19,11 @@ Asset Selector consente di eseguire l’integrazione utilizzando diverse applica
 
 Se integri Asset Selector con Dynamic Medie con le funzionalità OpenAPI, utilizza i seguenti prerequisiti:
 
-* [Metodi di comunicazione](#overview-asset-selector.md#prereqs)
+* [Metodi di comunicazione](/help/assets/overview-asset-selector.md#prereqs)
 * Per accedere a Dynamic Medie con funzionalità OpenAPI, è necessario disporre di licenze per:
    * Archivio Assets (ad esempio, Experience Manager Assets as a Cloud Service).
    * AEM-Dynamic Medie
-* Solo [le risorse approvate](#approved-assets.md) sono disponibili per l&#39;utilizzo per garantire la coerenza del brand.
+* Solo [le risorse approvate](/help/assets/approve-assets.md) sono disponibili per l&#39;utilizzo per garantire la coerenza del brand.
 
 ## Integrazione per Dynamic Medie con funzionalità OpenAPI {#adobe-app-integration-polaris}
 
@@ -36,7 +37,7 @@ Le proprietà `rootPath` e `path` non devono far parte di Dynamic Medie con funz
 aemTierType:[1: "delivery"]
 ```
 
-Questa configurazione ti consente di visualizzare tutte le risorse approvate senza cartelle o come struttura semplice. Per ulteriori informazioni, passa alla proprietà `aemTierType` in [Proprietà selettore risorse](#asset-selector-properties.md).
+Questa configurazione ti consente di visualizzare tutte le risorse approvate senza cartelle o come struttura semplice. Per ulteriori informazioni, passa alla proprietà `aemTierType` in [Proprietà selettore risorse](/help/assets/asset-selector-properties.md).
 
 
 ### Creare un URL di consegna dinamico da risorse approvate {#create-dynamic-media-url}

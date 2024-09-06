@@ -2,13 +2,13 @@
 title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
 description: Utilizza il selettore delle risorse per cercare, trovare e recuperare i metadati e le rappresentazioni delle risorse all’interno dell’applicazione.
 role: Admin,User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
 
 ---
-
 
 # Caricare file e cartelle in Asset Selector {#upload-files-folders}
 
@@ -28,13 +28,13 @@ Per aggiungere risorse a Selettore risorse, effettua le seguenti operazioni:
 
    È inoltre possibile visualizzare in anteprima le immagini selezionate utilizzando le miniature e fare clic sull&#39;icona X per rimuovere una particolare immagine dall&#39;elenco. L’icona X viene visualizzata solo quando passi il cursore del mouse sul nome o sulle dimensioni dell’immagine. Puoi anche fare clic su **[!UICONTROL Rimuovi tutti]** per eliminare tutti gli elementi dall&#39;elenco di caricamento.
 
-1. Per completare il processo di caricamento, fare clic su **[!UICONTROL Carica]**. Vengono visualizzate le risorse caricate. Vedi [caricamento di base](asset-selector-customization.md#basic-upload) per il codice configurabile.
+1. Per completare il processo di caricamento, fare clic su **[!UICONTROL Carica]**. Vengono visualizzate le risorse caricate. Vedi [caricamento di base](/help/assets/asset-selector-customization.md#basic-upload) per il codice configurabile.
 
 ## Caricare risorse con metadati {#upload-assets-with-metadata}
 
-Puoi aggiungere metadati alle risorse mentre le carichi immediatamente nell’applicazione. I metadati includono vari campi, ad esempio l’oggetto dell’azienda, i dettagli del prodotto, la campagna e così via. A tale scopo, viene utilizzata la proprietà `metadataSchema`. Vai a [proprietà del selettore risorse](asset-selector-properties.md) per ulteriori informazioni sulla proprietà `metadataSchema`.
+Puoi aggiungere metadati alle risorse mentre le carichi immediatamente nell’applicazione. I metadati includono vari campi, ad esempio l’oggetto dell’azienda, i dettagli del prodotto, la campagna e così via. A tale scopo, viene utilizzata la proprietà `metadataSchema`. Vai a [proprietà del selettore risorse](/help/assets/asset-selector-properties.md) per ulteriori informazioni sulla proprietà `metadataSchema`.
 
-Vedi [carica con metadati](#upload-with-metadata) per lo snippet di codice necessario per la configurazione.
+Vedi [carica con metadati](/help/assets/asset-selector-customization.md#upload-with-metadata) per lo snippet di codice necessario per la configurazione.
 
 ![carica risorse con metadati](assets/upload-with-metadata.png)
 
@@ -51,7 +51,6 @@ Vedi [carica con metadati](#upload-with-metadata) per lo snippet di codice neces
 
 ## Caricamento personalizzato {#customize-upload}
 
-Asset Selector (Selettore risorse) consente di aggiungere un modulo di caricamento personalizzato. Sono disponibili diverse personalizzazioni. Ad esempio, la proprietà [hideUploadButton](#asset-selector-properties.md) consente di nascondere il pulsante di caricamento visualizzato per impostazione predefinita nell&#39;applicazione. È invece possibile personalizzarlo per eseguire il rendering all’esterno dell’applicazione MFE in base al requisito. Consulta [caricamento personalizzato](#asset-selector-customization.md#customized-upload) per la configurazione.
+Asset Selector (Selettore risorse) consente di aggiungere un modulo di caricamento personalizzato. Sono disponibili diverse personalizzazioni. Ad esempio, la proprietà [hideUploadButton](/help/assets/asset-selector-properties.md) consente di nascondere il pulsante di caricamento visualizzato per impostazione predefinita nell&#39;applicazione. È invece possibile personalizzarlo per eseguire il rendering all’esterno dell’applicazione MFE in base al requisito. Consulta [caricamento personalizzato](/help/assets/asset-selector-customization.md#customized-upload) per la configurazione.
 
 ![Caricamento personalizzato](assets/customized-upload.png)
-

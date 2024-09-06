@@ -2,13 +2,13 @@
 title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
 description: Integra il selettore delle risorse con varie applicazioni di Adobe, non di Adobe e di terze parti.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 8%
 
 ---
-
 
 # Integrare Asset Selector con l’applicazione Adobe {#integrate-asset-selector-with-adobe-app}
 
@@ -18,7 +18,7 @@ Asset Selector consente di eseguire l’integrazione utilizzando diverse applica
 
 Utilizzare i seguenti prerequisiti se si integra Asset Selector con un&#39;applicazione [!DNL Adobe]:
 
-* [Metodi di comunicazione](#overview-asset-selector.md#prereqs)
+* [Metodi di comunicazione](/help/assets/overview-asset-selector.md#prereqs)
 * imsOrg
 * imsToken
 * apikey
@@ -27,7 +27,7 @@ Utilizzare i seguenti prerequisiti se si integra Asset Selector con un&#39;appli
 
 Nell&#39;esempio seguente viene illustrato l&#39;utilizzo di Asset Selector durante l&#39;esecuzione di un&#39;applicazione [!DNL Adobe] in Unified Shell o quando è già stato generato `imsToken` per l&#39;autenticazione.
 
-Includi il pacchetto Asset Selector nel codice utilizzando il tag `script`, come mostrato nelle _righe 6-15_ dell&#39;esempio seguente. Una volta caricato lo script, la variabile globale `PureJSSelectors` è disponibile per l’uso. Definisci il selettore risorse [proprietà](#asset-selector-properties.md) come mostrato nelle _righe 16-23_. Le proprietà `imsOrg` e `imsToken` sono entrambe necessarie per l&#39;autenticazione nell&#39;applicazione Adobe. La proprietà `handleSelection` è utilizzata per gestire le risorse selezionate. Per eseguire il rendering del Selettore risorse, chiama la funzione `renderAssetSelector` come indicato nella _riga 17_. Il Selettore risorse viene visualizzato nell’`<div>`elemento contenitore, come illustrato nelle _righe 21 e 22_.
+Includi il pacchetto Asset Selector nel codice utilizzando il tag `script`, come mostrato nelle _righe 6-15_ dell&#39;esempio seguente. Una volta caricato lo script, la variabile globale `PureJSSelectors` è disponibile per l’uso. Definisci il selettore risorse [proprietà](/help/assets/asset-selector-properties.md) come mostrato nelle _righe 16-23_. Le proprietà `imsOrg` e `imsToken` sono entrambe necessarie per l&#39;autenticazione nell&#39;applicazione Adobe. La proprietà `handleSelection` è utilizzata per gestire le risorse selezionate. Per eseguire il rendering del Selettore risorse, chiama la funzione `renderAssetSelector` come indicato nella _riga 17_. Il Selettore risorse viene visualizzato nell’`<div>`elemento contenitore, come illustrato nelle _righe 21 e 22_.
 
 Seguendo questi passaggi è possibile utilizzare Asset Selector con l&#39;applicazione [!DNL Adobe].
 
@@ -153,4 +153,3 @@ onErrorReceived: (type, msg) => {
 >* [Proprietà selettore risorse](/help/assets/asset-selector-properties.md)
 >* [Integrare le API di Dynamic Media Open di Asset Selector](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 >* [Personalizzazione del selettore risorse](/help/assets/asset-selector-customization.md)
-
