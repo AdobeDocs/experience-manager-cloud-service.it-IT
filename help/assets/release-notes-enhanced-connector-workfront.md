@@ -4,10 +4,10 @@ description: Note sulla versione di [!DNL Workfront for Experience Manager enhan
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 346f36a476a11dc7fe022df8b7b8df7aff06a2ba
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 100%
+source-wordcount: '1678'
+ht-degree: 97%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Workfront for Experience Manager enhanced connector].
 
-La data di rilascio dell’ultima versione 1.9.19 di [!DNL Workfront for Experience Manager enhanced connector] è il 12 aprile 2024.
+La data di rilascio dell’ultima versione 1.9.20 di [!DNL Workfront for Experience Manager enhanced connector] è il 6 settembre 2024.
 
 ## Caratteristiche principali della versione {#release-highlights}
 
 L’ultima versione di [!DNL Workfront for Experience Manager enhanced connector] include la seguente correzione di bug:
 
-* La mancata chiusura dei client HTTP causa problemi di memoria insufficiente.
+* Il tipo MIME viene perso durante il caricamento e la creazione di una nuova versione di una risorsa esistente.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ L’ultima versione di [!DNL Workfront for Experience Manager enhanced connector
 
 >[!IMPORTANT]
 >
->Adobe consiglia di [aggiornare alla versione 1.9.19 più recente](/help/assets/workfront-connector-install.md) di [!DNL Workfront for Experience Manager enhanced connector].
+>L&#39;Adobe consiglia di [eseguire l&#39;aggiornamento alla versione 1.9.20 ](/help/assets/workfront-connector-install.md) di [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemi noti {#known-issues}
 
@@ -38,6 +38,11 @@ L’ultima versione di [!DNL Workfront for Experience Manager enhanced connector
 * Durante l’utilizzo dell’esperienza Workfront classica, l’opzione **[!UICONTROL Invia a]** disponibile nell’elenco a discesa **[!UICONTROL Altro]** non consente di selezionare la destinazione target in Experience Manager. L’opzione **[!UICONTROL Invia a]** funziona correttamente utilizzando l’elenco a discesa **[!UICONTROL Azioni documento]**. L’opzione **[!UICONTROL Invia a]** funziona correttamente per gli elenchi a discesa **[!UICONTROL Altro]** e **[!UICONTROL Azioni documento]** disponibile nella nuova esperienza Workfront.
 
 ## Versioni precedenti {#previous-releases}
+
+### Versione di aprile 2024 {#april-2024-release}
+
+* La mancata chiusura dei client HTTP causa problemi di memoria insufficiente.
+
 
 ### Versione di marzo 2024 {#march-2024-release}
 
@@ -68,7 +73,7 @@ L’ultima versione di [!DNL Workfront for Experience Manager enhanced connector
 
 * Nessuna elaborazione del tempo di richiesta per i flussi critici nella cartella collegata, nell’aggiornamento del documento e nell’aggiornamento delle note.
 
-### Versione di novembre 2023 {#november-2023-release}
+### Versione di novembre 2023 {#nov-2023-release}
 
 * Quando si visualizza l’elenco delle cartelle AEM, il caricamento della finestra di dialogo richiede più di un minuto.
 * Gli utenti di [!DNL Workfront] autorizzati ricevono regolarmente i registri di errore di autenticazione.
