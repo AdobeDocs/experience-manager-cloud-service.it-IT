@@ -3,10 +3,11 @@ title: Note sulla versione 2024.9.0 di Cloud Manager in Adobe Experience Manager
 description: Scopri le note sulla versione 2024.9.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 17%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,9 +33,17 @@ La data di pubblicazione di Cloud Manager versione 2024.9.0 in AEM as a Cloud Se
 
   Con Cloud Manager, ora è possibile [Adobi self-service generati e gestiti da certificati SSL DV (convalida dominio)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). Questa funzionalità offre la soluzione più rapida, semplice e conveniente per creare un sito Web sicuro per l&#39;organizzazione online o l&#39;azienda. <!-- CMGR-52403 -->
 
+  >[!NOTE]
+  >
+  >I clienti di [Content Hub](/help/assets/product-overview.md) sono destinati a ricevere questa funzionalità in più fasi nell&#39;ambito di un rollout graduale.
+
 * Supporto di **Edge Delivery Services in Cloud Manager:**
 
-  Se disponi di una licenza per Edge Delivery Services come parte di AEM Sites, [ora puoi integrare il tuo sito con i Edge Delivery Services direttamente tramite Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). Questa funzione consente un’esperienza di lancio guidata e self-service. Inoltre, unifica flussi di lavoro essenziali come la gestione dei nomi di dominio, i certificati SSL e le mappature CDN in tutte le proprietà dell’AEM, garantendo coerenza ed efficienza. <!-- CMGR-49859 -->
+  Se disponi di una licenza Edge Delivery Services come parte di AEM Sites, [ora puoi integrare il tuo sito con i Edge Delivery Services direttamente tramite Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). Questa funzione consente un’esperienza di lancio guidata e self-service. Inoltre, unifica flussi di lavoro essenziali come la gestione dei nomi di dominio, i certificati SSL e le mappature CDN in tutte le proprietà dell’AEM, garantendo coerenza ed efficienza. <!-- CMGR-49859 -->
+
+  >[!NOTE]
+  >
+  >I clienti di [Content Hub](/help/assets/product-overview.md) sono destinati a ricevere questa funzionalità in più fasi nell&#39;ambito di un rollout graduale.
 
 * I clienti che utilizzano gli archivi GitHub ora possono creare e utilizzare pipeline di configurazione a livello web. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
