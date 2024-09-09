@@ -3,10 +3,10 @@ title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud 
 description: Integra il selettore delle risorse con varie applicazioni di Adobe, non di Adobe e di terze parti.
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: b85363b0a284929a2308ebee24888937f7c32841
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 47%
+source-wordcount: '178'
+ht-degree: 46%
 
 ---
 
@@ -36,6 +36,6 @@ Puoi eseguire l’autenticazione senza definire alcune delle proprietà IMS se:
 
 >[!MORELIKETHIS]
 >
->* [Personalizzazione del selettore risorse](/help/assets/asset-selector-customization.md)
+>* [Personalizzazioni di Asset Selector](/help/assets/asset-selector-customization.md)
 >* [Proprietà selettore risorse](/help/assets/asset-selector-properties.md)
->* [Integrare le API di Dynamic Media Open di Asset Selector](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrare Asset Selector con Dynamic Medie con funzionalità OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

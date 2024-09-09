@@ -3,9 +3,9 @@ title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud 
 description: Utilizza il selettore delle risorse per cercare, trovare e recuperare i metadati e le rappresentazioni delle risorse all’interno dell’applicazione.
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '517'
 ht-degree: 1%
 
 ---
@@ -54,3 +54,9 @@ Vedi [carica con metadati](/help/assets/asset-selector-customization.md#upload-w
 Asset Selector (Selettore risorse) consente di aggiungere un modulo di caricamento personalizzato. Sono disponibili diverse personalizzazioni. Ad esempio, la proprietà [hideUploadButton](/help/assets/asset-selector-properties.md) consente di nascondere il pulsante di caricamento visualizzato per impostazione predefinita nell&#39;applicazione. È invece possibile personalizzarlo per eseguire il rendering all’esterno dell’applicazione MFE in base al requisito. Consulta [caricamento personalizzato](/help/assets/asset-selector-customization.md#customized-upload) per la configurazione.
 
 ![Caricamento personalizzato](assets/customized-upload.png)
+
+>[!MORELIKETHIS]
+>
+>* [Esempi di selettore risorse](/help/assets/asset-selector-examples.md)
+>* [Integrare Asset Selector con varie applicazioni](/help/assets/integrate-asset-selector.md)
+>* [Proprietà selettore risorse](/help/assets/asset-selector-properties.md)
