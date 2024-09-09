@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: eb01b6982578ad1300163c2fd536e844afc815fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '736'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Con la versione di attivazione funzioni 2024.9.0 verrà fornito il set di funzio
 * GRANITE-53099: aggiornamento ad Apache Felix Http Jetty 5.1.24.
 * GRANITE-53125: aggiunta della classificazione a CloudEvent.
 * GRANITE-53328: aggiornamento di Filevault a 3.8.0-T20240726111512-3cc11d50 cont miglioramenti alla registrazione dello stashing.
-* GRANITE-53453: aggiornamento di commons-lang to 3.15.0.
+* GRANITE-53453: aggiornamento di commons-lang a 3.15.0.
 * GRANITE-53478: aggiornamento di Filevault alla versione 3.8.0.
 * GRANITE-53505: aggiornamento di QS a commons-collections-3.2.2-adobe-2.
 * GRANITE-53528: aggiornamento della versione degli artefatti Platform.

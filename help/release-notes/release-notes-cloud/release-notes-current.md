@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 9cc49bf83d278d4064faa1d0157201226a067cb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1142'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.8.0) è il venerdì 29 agosto 2024. La prossima versione funzionale (2024.9.0) è pianificata per il venerdì 26 settembre 2024.
+La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.8.0) è il 29 agosto 2024. La prossima versione funzionale (2024.9.0) è pianificata per il 26 settembre 2024.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -48,7 +48,7 @@ Have a look at the August 2024 Release Overview video for a summary of the featu
 
 **Authoring di AEM per Edge Delivery Services**
 
-La funzionalità [ereditarietà](/help/sites-cloud/authoring/universal-editor/inheritance.md) dei siti esistenti è ora supportata, tra cui:
+Ora è supportata, la funzionalità [ereditarietà](/help/sites-cloud/authoring/universal-editor/inheritance.md) dei siti esistenti, tra cui:
 
 * [Lanci AEM](/help/sites-cloud/authoring/launches/overview.md)
 * [MSM](/help/sites-cloud/administering/msm/overview.md) a livello di pagina
@@ -56,7 +56,7 @@ La funzionalità [ereditarietà](/help/sites-cloud/authoring/universal-editor/in
 Inoltre, sono ora supportate le seguenti funzioni di gestione delle pagine:
 
 * [I tag AEM](/help/sites-cloud/authoring/sites-console/tags.md) possono essere esportati come [tassonomia](/help/edge/wysiwyg-authoring/taxonomy.md) in Edge Delivery Services.
-* [I modelli](/help/edge/wysiwyg-authoring/templates.md) per i Edge Delivery Services saranno presto disponibili.
+* [I modelli](/help/edge/wysiwyg-authoring/templates.md) per Edge Delivery Services saranno presto disponibili.
 
 ### Programma per i primi utilizzatori {#sites-early-adopter}
 
@@ -71,21 +71,21 @@ Sfruttare l’intelligenza artificiale generativa tramite la nuova funzione di A
 
 **Generazione immagine Adobe Firefly aggiornata**
 
-Assets as a Cloud Service ora utilizza il widget più recente di Firefly che consente di generare immagini in stili diversi utilizzando Adobe Firefly. Definendone stile, composizione, dimensioni e altro ancora mediante l’editor di Firefly integrato, puoi creare e salvare rapidamente all’interno dell’archivio AEM Assets le risorse necessarie per un utilizzo immediato.
+Assets as a Cloud Service ora utilizza il widget più recente di Firefly che consente di generare immagini in stili diversi utilizzando Adobe Firefly. Definendone stile, composizione, dimensioni e altro ancora mediante l’editor di Firefly integrato, puoi creare e salvare rapidamente le risorse necessarie all’interno dell’archivio AEM Assets per un utilizzo immediato.
 
 ![Generazione immagine Adobe Firefly](/help/assets/assets/bugatti-type-57.png)
 
 **Supporto file PSB**
 
-Assets as a Cloud Service ora supporta i documenti di grandi dimensioni di Photoshop (file PSB) oltre al supporto dei file PSD esistenti.
+Assets as a Cloud Service ora supporta i documenti di grandi dimensioni di Photoshop (file PSB) oltre al supporto del file PSD esistente.
 
-### Nuovi miglioramenti in Content Hub {#content-hub-new-enhancements}
+### Nuovi miglioramenti nell’’hub di contenuti {#content-hub-new-enhancements}
 
-* Gestione migliore dei nomi di file lunghi, facile espansione del nome completo tramite descrizione comando.
+* Migliore gestione dei nomi di file lunghi, facile espansione del nome completo tramite descrizione comando.
 * Miniature migliorate per adattarsi meglio alle proporzioni dei contenuti e coprire aree di contenuto più ampie.
 * Esperienza di miniature personalizzata da AEM supportata con l’hub di contenuti.
 * Miglioramenti nella ricerca dei colori.
-* I miglioramenti nelle configurazioni salvano l’esperienza.
+* I miglioramenti nell’esperienza di salvataggio delle configurazioni.
 * È stata migliorata la pagina delle informazioni delle raccolte per riflettere il nome dell’autore.
 
 
@@ -93,38 +93,38 @@ Assets as a Cloud Service ora supporta i documenti di grandi dimensioni di Photo
 
 ### Nuove funzioni pre-release in AEM Forms {#forms-new-prerelease-features}
 
-#### Salvataggio automatico di una bozza per Forms adattivo basato su Componenti core
+#### Salvataggio automatico di una bozza per moduli adattivi basati su Componenti core
 
-Gli utenti possono ora beneficiare di una funzione di salvataggio automatico che consente di salvare automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completare la compilazione sullo stesso dispositivo o su un altro. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilare i moduli dall’inizio.
+Gli utenti possono ora beneficiare di una funzione di salvataggio automatico che consente di salvare automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completarne la compilazione sullo stesso dispositivo o su un altro. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
 
 
 ### Funzionalità per Accesso anticipato ad AEM Forms {#forms-new-early-access-features}
 
-Il programma AEM Forms Early Access Program offre un’opportunità unica per ottenere accesso esclusivo alle innovazioni all’avanguardia e contribuire a modellarne lo sviluppo.
+Il programma per l’accesso anticipato ad AEM Forms offre un’opportunità unica per ottenere l’accesso esclusivo a innovazioni all’avanguardia e contribuire a modellarne lo sviluppo.
 
 In queste note sulla versione sono elencate le innovazioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma per l’accesso anticipato, consulta la [documentazione del programma per l’accesso anticipato ad AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### Assistente AI di AEM Forms
+#### Assistente IA di AEM Forms
 
-L’intelligenza artificiale generativa per Forms adattivo offre un livello completamente nuovo di potenza e semplicità ai processi di sviluppo dei moduli. Ti consente di creare moduli migliori più rapidamente che mai.
+L’intelligenza artificiale generativa per moduli adattivi offre un livello completamente nuovo di potenza e semplicità ai processi di sviluppo dei moduli. Ti consente di creare moduli migliori più rapidamente che mai.
 
-![Generative AI Assistant, Forms adattivo](/help/forms/assets/generative-ai-assistant.png)
+![Assistente IA generativa, moduli adattivi](/help/forms/assets/generative-ai-assistant.png)
 
 Le funzionalità di intelligenza artificiale generativa offerte sono:
 
-* **Assistente AI per le query sui prodotti**: ottieni risposte immediate alle domande relative al modulo AEM. L’assistente di IA funge da knowledge base personale, fornendo indicazioni approfondite e consigli direttamente all’interno della piattaforma.
+* **Assistente IA per le query sui prodotti**: ottieni risposte immediate alle domande relative al modulo AEM. L’assistente di IA funge da knowledge base personale, fornendo indicazioni approfondite e consigli direttamente all’interno della piattaforma.
 
-* **Generazione di moduli adattivi**: creazione semplificata di moduli completi con prompt di IA generativi. La nostra intelligenza artificiale generativa genera automaticamente moduli intuitivi che riducono i casi di abbandono e personalizzano l’esperienza.
+* **Generazione di moduli adattivi**: creazione semplificata di moduli completi con prompt di IA generativa. L’intelligenza artificiale generativa di Adobe genera automaticamente moduli intuitivi che riducono i casi di abbandono e personalizzano l’esperienza.
 
-* **Generazione del pannello per Forms**: genera sezioni del modulo personalizzate in base a esigenze specifiche di raccolta dati. Ad esempio, genera sezioni per la raccolta di informazioni di pagamento, preferenze del cliente o dettagli di viaggio.
+* **Generazione del pannello per moduli**: genera sezioni del modulo personalizzate in base a esigenze specifiche di raccolta dati. Ad esempio, genera sezioni per la raccolta di informazioni di pagamento, preferenze cliente o dettagli di viaggio.
 
-* **Modifica dei layout del modulo**: prova con layout e progettazioni diversi utilizzando i prompt di IA generativi. Provare diversi layout, ad esempio la creazione guidata o le visualizzazioni a schede, per trovare il layout ideale per il modulo. Utilizza i prompt di intelligenza artificiale generativi per ottimizzare i moduli per la reattività mobile e creare moduli visivamente coinvolgenti che gli utenti apprezzano.
+* **Modifica dei layout del modulo**: prova con layout e progettazioni diversi utilizzando i prompt di IA generativa. Prova diversi layout, ad esempio la procedura guidata o le visualizzazioni a schede, per trovare il layout ideale per il modulo. Utilizza i prompt di intelligenza artificiale generativa per ottimizzare i moduli per la reattività mobile e creare moduli visivamente coinvolgenti che gli utenti apprezzano.
 
-* **Configura azione di invio**: utilizza i prompt di IA generativa per configurare facilmente un&#39;azione di invio per il modulo. Scegli da una libreria di azioni di invio predefinite o da un elenco di azioni di invio personalizzate, create e distribuite dal tuo team di sviluppo.
+* **Configura azione di invio**: utilizza i prompt di IA generativa per configurare facilmente un’azione di invio per il modulo. Scegli da una libreria di azioni di invio predefinite o da un elenco di azioni di invio personalizzate, create e implementate dal tuo team di sviluppo.
 
 >[!IMPORTANT]
 >
-> Se ti interessa partecipare al programma di accesso anticipato per qualsiasi innovazione, è sufficiente inviare un&#39;e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con l&#39;elenco delle funzionalità che ti interessano.
+> Se ti interessa partecipare al programma di accesso anticipato per qualsiasi innovazione, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con l’elenco delle funzionalità che ti interessano.
 
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
