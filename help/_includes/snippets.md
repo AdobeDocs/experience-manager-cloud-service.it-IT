@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 94%
+source-wordcount: '993'
+ht-degree: 86%
 
 ---
 # Snippet {#snippets}
@@ -161,3 +161,23 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >[!TIP]
 >
 >Sei nuovo su Dynamic Medie? Per una rapida panoramica di alto livello di Dynamic Medie, vedi [Utilizzare Dynamic Medie](/help/assets/dynamic-media/dynamic-media.md).
+
+## Vedi anche per Dynamic Medie {#see-also-dm}
+
+>[!NOTE]
+>
+>* Sei nuovo su Dynamic Medie? Per una rapida panoramica di alto livello di Dynamic Medie, vedi [Utilizzare Dynamic Medie](/help/assets/dynamic-media/dynamic-media.md).
+>
+>* Segui le [best practice per Dynamic Medie](/help/assets/dynamic-media/dm-best-practices.md) per ottenere il massimo valore.
+>
+>* Prova le funzionalità dell&#39;immagine Dynamic Medie con [lo strumento Snapshot](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>
+>* Assicurati una riproduzione video fluida con [video adattivo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
+>
+>* Ritaglio automatico di [immagini con ritaglio avanzato](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>
+>* Automatizza il ritaglio di [video con Ritaglio avanzato](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
+>
+>* Distribuisci [esperienza interattiva basata su 3D](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Altra [banca risorse Dynamic Medie](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+
