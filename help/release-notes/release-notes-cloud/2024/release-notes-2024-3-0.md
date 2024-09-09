@@ -4,10 +4,10 @@ description: Note sulla versione 2024.3.0 di [!DNL Adobe Experience Manager] as 
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 97%
+source-wordcount: '2293'
+ht-degree: 96%
 
 ---
 
@@ -116,7 +116,7 @@ Assets Essentials consente agli amministratori di gestire i livelli di accesso p
 
 ### Nuove funzioni di AEM Forms {#forms-new-features}
 
-* **[Edge Delivery Services per Adobe Experience Manager Forms](/help/edge/docs/forms/overview.md)**: Edge Delivery Services per AEM Forms è un set di servizi componibili per la gestione di un ambiente di sviluppo rapido in cui i nuovi moduli possono essere aggiornati, pubblicati e lanciati rapidamente dagli autori. Questi servizi forniscono esperienze di moduli di eccezionale e forte impatto che determinano coinvolgimento e conversioni. Queste esperienze di moduli sono facili da creare e sviluppare.
+* **[Edge Delivery Services Adobe Experience Manager Forms](/help/edge/docs/forms/overview.md)**: Edge Delivery Services per AEM Forms è un insieme componibile di servizi che consente un ambiente di sviluppo rapido in cui gli autori possono aggiornare, pubblicare e avviare rapidamente nuovi moduli. Questi servizi forniscono esperienze di moduli di eccezionale e forte impatto che determinano coinvolgimento e conversioni. Queste esperienze di moduli sono facili da creare e sviluppare.
 
   ![Funzioni di EDS Forms](/help/edge/assets/eds-forms-features.png)
 

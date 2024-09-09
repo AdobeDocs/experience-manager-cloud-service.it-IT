@@ -6,61 +6,61 @@ hide: true
 hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
-source-git-commit: 4356fcc73a9c33a11365b1eb3f2ebee5c9de24f0
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 4%
+source-wordcount: '665'
+ht-degree: 96%
 
 ---
 
 # Creare componenti personalizzati
 
-AEM Forms Edge Delivery Services ti consente di personalizzare i [componenti nativi del modulo HTML](/help/edge/docs/forms/form-components.md) e di creare moduli interattivi e di facile utilizzo. Consente di modificare i componenti del modulo con il markup predefinito, come spiegato in [Stile dei campi modulo](/help/edge/docs/forms/style-theme-forms.md) utilizzando CSS personalizzato (Cascading Style Sheets) e codice personalizzato per decorare il componente, migliorando in tal modo l&#39;aspetto dei campi modulo all&#39;interno di un blocco Forms adattivo.
+Edge Delivery Services per AEM Forms consente di personalizzare i [componenti nativi del modulo HTML](/help/edge/docs/forms/form-components.md) e di creare moduli interattivi e di facile utilizzo. Consente di modificare i componenti del modulo con il markup predefinito, come spiegato in [Stile dei campi modulo](/help/edge/docs/forms/style-theme-forms.md) utilizzando CSS personalizzato (Cascading Style Sheets) e codice personalizzato per decorare il componente, migliorando in tal modo l’aspetto dei campi modulo all’interno di un Blocco di moduli adattivi.
 
 ![Componente personalizzato](/help/edge/assets/custom-component-image.png)
 
-Questo documento illustra i passaggi necessari per creare componenti personalizzati assegnando al modulo HTML uno stile che ne ottimizza l’esperienza utente e ne aumenta l’impatto visivo.
+Questo documento illustra i passaggi necessari per creare componenti personalizzati assegnando al modulo HTML nativo uno stile che ne ottimizza l’esperienza utente e ne aumenta l’impatto visivo.
 
-Prendiamo ad esempio un componente `range` che visualizza `Estimated trip cost` in un modulo. Il componente `range` viene visualizzato come una linea retta, senza visualizzare valori quali il valore minimo, massimo o selezionato.
+Prendiamo ad esempio un componente `range` che mostra `Estimated trip cost` in un modulo. Il componente `range` viene visualizzato come una linea retta, senza visualizzare valori quali il valore minimo, massimo o selezionato.
 
 ![Componente intervallo nativo](/help/edge/assets/native-range-component.png)
 
-Iniziamo a personalizzare il campo `range` per mostrare i valori minimo, massimo e selezionato sulla linea aggiungendo stile tramite CSS e aggiungendo una funzione personalizzata per decorare un componente.
+Iniziamo a personalizzare il campo `range` per mostrare i valori minimo, massimo e selezionato sulla linea aggiungendo stile tramite CSS e una funzione personalizzata per decorare un componente.
 
 ![Componente intervallo personalizzato](/help/edge/assets/custom-range-component.png)
 
-Alla fine di questo articolo, imparerai a creare componenti personalizzati aggiungendo stili nel file CSS e nella funzione personalizzata.
+Al termine di questo articolo, imparerai a creare componenti personalizzati aggiungendo stili nel file CSS e nella funzione personalizzata.
 
 ## Prerequisiti
 
 Prima di iniziare a creare il componente personalizzato, è necessario:
 
-* Avere una conoscenza di base di [componenti HTML nativi](/help/edge/docs/forms/form-components.md).
+* Avere una conoscenza di base dei [componenti HTML nativi](/help/edge/docs/forms/form-components.md).
 * Scopri come [assegnare uno stile ai campi modulo in base al tipo di campo utilizzando i selettori CSS](/help/edge/docs/forms/style-theme-forms.md)
 
 
-## Creare un componente personalizzato
+## Creare un componente personalizzata
 
 
 ![passaggi per creare il componente personalizzato](/help/edge/docs/forms/assets/steps-to-create-custom-component.png)
 
-Comprendiamo ora ogni passaggio nel dettaglio.
+Analizziamo ora ogni passaggio nel dettaglio.
 
-Per personalizzare il componente `range`, fare riferimento al foglio di calcolo [interrogazione](/help/edge/docs/forms/assets/enquiry.xlsx), seguendo i passaggi descritti di seguito.
+Per personalizzare il componente `range`, fare riferimento al [foglio di calcolo “enquiry”](/help/edge/docs/forms/assets/enquiry.xlsx), seguendo i passaggi descritti di seguito.
 
 ### Aggiungi una funzione personalizzata per decorare il componente
 
 La funzione personalizzata aggiunta in `[../Form Block/components]` è costituita da:
 
-* **Dichiarazione di funzione**: definire il nome della funzione e i relativi parametri.
-* **Implementazione logica**: scrivere la logica per aggiungere il comportamento personalizzato per il componente.
-* **Esportazione funzione**: rendere la funzione accessibile in `[Form Block]`.
+* **Dichiarazione di funzione**: definisce il nome della funzione e i relativi parametri.
+* **Implementazione logica**: scrive la logica per aggiungere il comportamento personalizzato relativo al componente.
+* **Esportazione funzione**: rende la funzione accessibile in `[Form Block]`.
 
-Creare un file JavaScript denominato `range.js` per assegnare uno stile al componente intervallo. Per aggiungere una funzione personalizzata:
+Creiamo un file JavaScript denominato `range.js` per assegnare uno stile al componente intervallo. Per aggiungere una funzione personalizzata:
 
-1. Vai alla cartella del progetto AEM su Google Drive o SharePoint.
-1. Passa a `[../Form Block/components]`.
-1. Aggiungere un nuovo file denominato `range.js`.
+1. Passa alla cartella del progetto AEM su Google Drive o SharePoint.
+1. Accedi a `[../Form Block/components]`.
+1. Aggiungi un nuovo file denominato `range.js`.
 1. Aggiungi la seguente riga di codice:
 
    ```javascript
@@ -124,11 +124,11 @@ Creare un file JavaScript denominato `range.js` per assegnare uno stile al compo
 
 `[Form Block]` utilizza HTML semantico per eseguire il rendering dei campi modulo, inclusi campi di input, etichette e testo della Guida, con attributi standard per l&#39;accessibilità. Per fare in modo che `[Form Block]` utilizzi un decoratore personalizzato per un componente specificato, definirlo nel file `mappings.js`. Il file `mappings.js` importa una funzione che restituisce il modulo responsabile della decorazione di un particolare componente. La funzione accetta le proprietà del campo e restituisce una funzione decorativa per il campo modulo.
 
-Nel nostro caso, la funzione controlla la proprietà `fieldType` del campo e restituisce il decoratore dell&#39;intervallo personalizzato dal file `range.js` presente in `[../Form Block/components]`.
+Nel nostro caso, la funzione controlla la proprietà del campo `fieldType` e restituisce il decoratore dell’intervallo personalizzato dal file `range.js` presente in `[../Form Block/components]`.
 
-Per inserire il decoratore nel blocco di modulo:
+Per inserire il decoratore nel blocco del modulo:
 
-1. Vai a `[../Form Block/]` e apri `mapping.js`.
+1. Passa a `[../Form Block/]` e apri `mapping.js`.
 1. Aggiungi la seguente riga di codice:
 
    ```javascript
@@ -147,12 +147,12 @@ Per inserire il decoratore nel blocco di modulo:
 
 ### Aggiungi stile per il componente nel file CSS
 
-È possibile modificare l’aspetto dei campi modulo in base al tipo di campo e ai nomi di campo utilizzando selettori CSS, consentendo uno stile coerente o univoco in base ai requisiti. Per assegnare uno stile al componente, aggiungere il codice nel file `form.css` per modificare l&#39;aspetto del componente del modulo.
+È possibile modificare l’aspetto dei campi modulo in base al tipo e ai nomi di campo utilizzando i selettori CSS, consentendo uno stile coerente o univoco in base ai requisiti. Per assegnare uno stile al componente, aggiungere il codice nel file `form.css` per modificare l’aspetto del componente del modulo.
 
-Per personalizzare lo stile del componente `range`, includere in un modulo uno snippet di codice CSS con lo stile di un elemento di input `range` e dei relativi componenti associati. Ciò presuppone un layout HTML strutturato con classi come `.form` e `.range-wrapper`.
+Per personalizzare lo stile relativo al componente `range`, includere uno snippet di codice CSS in un modulo che assegna uno stile di un elemento di input `range` e dei relativi componenti associati. Ciò presuppone un layout HTML strutturato con classi come `.form` e `.range-wrapper`.
 
-Per aggiungere uno stile per un componente nel file CSS:
-1. Vai a `[../Form Block/]` e apri `form.css`.
+Per aggiungere uno stile relativo al componente nel file CSS:
+1. Passa a `[../Form Block/]` e apri `form.css`.
 1. Aggiungi la seguente riga di codice:
 
    ```javascript
@@ -210,17 +210,17 @@ Per aggiungere uno stile per un componente nel file CSS:
    ```
 1. Salva le modifiche.
 
-### Distribuire i file e generare il progetto
+### Distribuire i file e compilare il progetto
 
-Distribuisci i file aggiornati di `range.js`, `mapping.css` e `form.css` nel progetto GitHub e verifica che la build sia corretta.
+Distribuisci i file `range.js`, `mapping.css` e `form.css` aggiornati nel progetto GitHub e verifica la corretta compilazione.
 
-### Visualizzare l’anteprima del modulo utilizzando la barra laterale AEM
+### Visualizzare l’anteprima del modulo utilizzando la barra laterale di AEM
 
-Utilizza [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare in anteprima il modulo con la nuova funzione implementata che assegna lo stile al componente `range`.
+Utilizza [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l’anteprima del modulo con la nuova funzione implementata che assegna lo stile al componente `range`.
 
 ![Modulo componente personalizzato](/help/edge/assets/custom-componet-form.png)
 
-Il nuovo stile per il componente `range` mostra i valori minimo, massimo e selezionato sulla linea aggiungendo stili tramite CSS e una funzione personalizzata che include un decoratore per il componente.
+Il nuovo stile per il componente `range` mostra i valori minimi, massimi e selezionati sulla linea aggiungendo gli stili tramite CSS e una funzione personalizzata che include un decoratore per il componente.
 
 
 ## Consulta anche

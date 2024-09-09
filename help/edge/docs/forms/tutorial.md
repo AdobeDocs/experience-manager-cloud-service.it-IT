@@ -1,19 +1,19 @@
 ---
-title: 'Guida introduttiva a Edge Delivery Services di AEM Forms: tutorial per sviluppatori'
+title: 'Guida introduttiva ai Edge Delivery Services per AEM Forms: tutorial per sviluppatori'
 description: Questo tutorial ti mostrerà come essere subito operativo con un nuovo progetto di Adobe Experience Manager Forms (AEM). Tra dieci o venti minuti sarà possibile creare moduli personalizzati.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '1848'
-ht-degree: 100%
+source-wordcount: '1850'
+ht-degree: 98%
 
 ---
 
 # Guida introduttiva: tutorial per sviluppatori
 
-Nell’era digitale di oggi, la creazione di moduli facili da usare è essenziale per qualsiasi organizzazione. Edge Delivery Services (EDS) di AEM Forms consente di creare moduli utilizzando strumenti familiari come Google Docs e Microsoft Office.
+Nell’era digitale di oggi, la creazione di moduli facili da usare è essenziale per qualsiasi organizzazione. Edge Delivery Services per AEM Forms (EDS) consente di creare moduli utilizzando strumenti familiari come Google Docs e Microsoft Office.
 
 Questi moduli inviano i dati direttamente a un file Microsoft Excel o Fogli Google, consentendo di utilizzare un ecosistema dinamico e API affidabili di Fogli Google, Microsoft Excel e Microsoft SharePoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
 

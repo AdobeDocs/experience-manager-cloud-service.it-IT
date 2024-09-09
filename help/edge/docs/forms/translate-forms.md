@@ -1,20 +1,20 @@
 ---
-title: Tradurre e localizzare un modulo di Edge Delivery Services AEM Forms
-description: Tradurre e localizzare un modulo di Edge Delivery Services AEM Forms
+title: Tradurre e localizzare un Edge Delivery Services per AEM Forms
+description: Tradurre e localizzare un Edge Delivery Services per AEM Forms
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 100%
+source-wordcount: '546'
+ht-degree: 94%
 
 ---
 
 
-# Tradurre e localizzare un modulo di Edge Delivery Services AEM Forms
+# Tradurre e localizzare un Edge Delivery Services per AEM Forms
 
 In Edge Delivery Services, la traduzione dei moduli comporta la conversione del contenuto dei moduli da una lingua all’altra, con particolare attenzione alla precisione, alla chiarezza e alla coerenza. I moduli tradotti o localizzati consentono una più ampia copertura del pubblico tra diverse posizioni geografiche, migliorando così l’esperienza utente e facilitando una migliore comunicazione tra le diverse preferenze linguistiche.
 

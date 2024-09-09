@@ -1,8 +1,8 @@
 ---
-source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 95%
+source-wordcount: '915'
+ht-degree: 94%
 
 ---
 # Snippet {#snippets}
@@ -56,7 +56,7 @@ ht-degree: 95%
 
 ## Consulta anche {#see-more-forms-eds}
 
-* [Guida introduttiva a Edge Delivery Services di AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Guida introduttiva ai Edge Delivery Services per AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Impostare i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati](/help/edge/docs/forms/submit-forms.md)
 * [Pubblicare il modulo e iniziare a raccogliere i dati](/help/edge/docs/forms/publish-forms.md)
