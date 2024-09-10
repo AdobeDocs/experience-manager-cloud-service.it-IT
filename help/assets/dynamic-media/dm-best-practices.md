@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -411,3 +411,5 @@ Vuoi saperne di più? Vai a [Smart Imaging](/help/assets/dynamic-media/imaging-f
 La rete CDN (Content Delivery Network) memorizza nella cache le risorse Dynamic Medie per consentirne la rapida distribuzione ai clienti. Quando vengono apportati aggiornamenti a queste risorse, è importante che le modifiche diventino effettive immediatamente sul sito web. Rimuovendo o annullando la validità della cache CDN, le risorse consegnate da Dynamic Medie possono essere aggiornate rapidamente. Questo approccio elimina la necessità di attendere la scadenza della cache in base al valore TTL (Time To Live), che in genere è impostato su dieci ore. A seconda del caso d’uso specifico, puoi aggiornare di conseguenza le impostazioni TTL (Time to Live) della rete CDN.
 
 Vuoi saperne di più? Vai a [Invalida la cache CDN tramite Dynamic Medie](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+
+{{see-also-dm}}
