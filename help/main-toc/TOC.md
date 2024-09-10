@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2bf129d763fcad024eb3799cdf2a97bdbc2472c5
+source-git-commit: bd6106256cf812d4420f1f9d84ec008d9cd18a46
 workflow-type: tm+mt
-source-wordcount: '5586'
-ht-degree: 95%
+source-wordcount: '5592'
+ht-degree: 98%
 
 ---
 
@@ -85,6 +85,7 @@ ht-degree: 95%
    + Note sulla versione di manutenzione di AEMaaCS {#maintenance}
       + [Note sulla versione di manutenzione corrente](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
+         + [Note sulla versione di manutenzione 2024.9.0](/help/release-notes/maintenance/2024/2024-9-0.md)
          + [Note sulla versione di manutenzione 2024.8.0](/help/release-notes/maintenance/2024/2024-8-0.md)
          + [Note sulla versione di manutenzione 2024.7.0](/help/release-notes/maintenance/2024/2024-7-0.md)
          + [Note sulla versione di manutenzione 2024.6.0](/help/release-notes/maintenance/2024/2024-6-0.md)
@@ -226,7 +227,7 @@ ht-degree: 95%
       + [Creare ambienti](/help/journey-onboarding/create-environments.md)
       + [Assegnazione di profili di prodotto AEM](/help/journey-onboarding/assign-profiles-aem.md)
       + [Attività del Responsabile degli sviluppatori e del Responsabile della distribuzione](/help/journey-onboarding/developers.md)
-      + [Gestione delle entità](/help/journey-migration/managing-principals.md)
+      + [Gestione delle entità principali](/help/journey-migration/managing-principals.md)
       + [Attività degli utenti AEM](/help/journey-onboarding/aem-users.md)
       + [Elenco di controllo per la pubblicazione](/help/journey-onboarding/go-live-checklist.md)
    + Percorso AEM Reference Demos Add-On {#demo-add-on}
@@ -279,14 +280,14 @@ ht-degree: 95%
          + [Convalida dei trasferimenti di contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [Migrazione di gruppi di utenti chiusi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [Migrazione gruppo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
+         + [Migrazione dei gruppi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
          + [Estrazione del contenuto dall’origine](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Acquisizione di contenuti in Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Indicizzazione dopo la migrazione del contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
          + [Visualizzazione dei registri di un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Eliminazione di un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
-         + [Gestione delle entità dopo la migrazione](/help/journey-migration/managing-principals-after-migration.md)
+         + [Gestione delle entità principali dopo la migrazione](/help/journey-migration/managing-principals-after-migration.md)
          + [Risoluzione dei problemi dello strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Strumento di mappatura utenti precedenti (legacy){#legacy-user-mapping-tool}
             + [Panoramica](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
@@ -629,7 +630,7 @@ ht-degree: 95%
       + [Distribuire l’hub di contenuti](/help/assets/deploy-content-hub.md)
       + [Configurare l’interfaccia utente dell’hub di contenuti](/help/assets/configure-content-hub-ui-options.md)
       + [Caricare o importare risorse approvate dal marchio nell’hub di contenuti](/help/assets/upload-brand-approved-assets.md)
-      + [Approvare risorse per Content Hub](/help/assets/approve-assets-content-hub.md)
+      + [Approvare risorse per l’hub di contenuti](/help/assets/approve-assets-content-hub.md)
       + [Cercare risorse nell’hub di contenuti](/help/assets/search-assets-content-hub.md)
       + [Proprietà risorsa](/help/assets/asset-properties-content-hub.md)
       + [Condividere risorse nell’hub di contenuti](/help/assets/share-assets-content-hub.md)
@@ -704,7 +705,7 @@ ht-degree: 95%
       + Componenti core {#authoring-adaptive-forms-core-components}
          + Creare un modulo adattivo {#create-an-adaptive-form-on-forms-cs}
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
-            + [Impostare il layout di un modulo adattivo basato su componenti core](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
+            + [Impostare un layout per un modulo adattivo basato sui componenti core](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [Creare un frammento di modulo adattivo](/help/forms/adaptive-form-fragments-core-components.md)
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
             + [Creare un modello di modulo adattivo basato sui componenti core](/help/forms/template-editor-core-components.md)
@@ -739,11 +740,11 @@ ht-degree: 95%
                + [Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core](/help/forms/create-and-use-custom-functions.md)
                + [Creare e utilizzare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
                + [Esempi di funzioni personalizzate per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-components-use-cases.md)
-            + Introduzione a Forms Portal e ai relativi componenti{#introduction-to-forms-portal}
-               + [Introduzione al componente Forms Portal](/help/forms/configure-forms-portal.md)
-               + [Elencare i moduli nella pagina Sites utilizzando il componente Ricerca ed elenco](/help/forms/list-forms-on-sites-page.md)
+            + Introduzione al Portale moduli e ai relativi componenti{#introduction-to-forms-portal}
+               + [Introduzione al componente Portale moduli](/help/forms/configure-forms-portal.md)
+               + [Elencare i moduli nella pagina Sites utilizzando il componente Ricerca ed elenca](/help/forms/list-forms-on-sites-page.md)
                + [Salvare ed elencare i moduli come bozze nella pagina Sites utilizzando il componente Bozze e invii](/help/forms/save-core-component-based-form-as-draft.md)
-               + [Aggiungere collegamenti modulo alla pagina Sites utilizzando il componente Collegamento](/help/forms/add-form-link-to-aem-sites-page.md)
+               + [Aggiungere collegamenti per moduli alla pagina Sites utilizzando il componente Collegamento](/help/forms/add-form-link-to-aem-sites-page.md)
       + Componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)
@@ -751,17 +752,17 @@ ht-degree: 95%
             + [Revisione dei moduli convertiti](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=it#welcome-to-review-and-correct-editor)
          + Creare un modulo adattivo {#create-an-adaptive-form-on-forms-cs}
             + [Introduzione all’authoring di moduli adattivi](/help/forms/introduction-forms-authoring.md)
-            + [Creazione della Guida contestuale per i campi modulo](/help/forms/authoring-in-field-help.md)
+            + [Creazione di una guida contestuale per i campi modulo](/help/forms/authoring-in-field-help.md)
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form.md)
             + [Temi, modelli e modelli di dati di riferimento](/help/forms/reference-themes-templates-data-models.md)
             + [Creare un modello](/help/forms/template-editor.md)
             + [Creare un tema](/help/forms/themes.md)
-            + [Riferimento a frammenti di moduli adattivi](/help/forms/reference-adaptive-form-fragments.md)
-            + [Sincronizzazione di Forms adattivo con i modelli di modulo XFA](/help/forms/synchronizing-adaptive-forms-xfa.md)
-            + [Supporto XFA in Adaptive Forms basato su XDP](/help/forms/xfa-api-supported-in-adaptive-form.md)
+            + [Frammenti di moduli adattivi di riferimento](/help/forms/reference-adaptive-form-fragments.md)
+            + [Sincronizzazione di moduli adattivi con i modelli di modulo XFA](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + [Supporto XFA in moduli adattivi basati su XDP](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [Progettazione di uno schema JSON per un modulo adattivo](/help/forms/adaptive-form-json-schema-form-model.md)
-            + [Miglioramento delle prestazioni dei moduli di grandi dimensioni con caricamento lento](/help/forms/lazy-loading-adaptive-forms.md)
-            + [Pubblicazione e annullamento della pubblicazione di moduli e documenti](/help/forms/publishing-unpublishing-forms.md)
+            + [Migliorare le prestazioni dei moduli di grandi dimensioni con caricamento lento](/help/forms/lazy-loading-adaptive-forms.md)
+            + [Pubblicare e annullare la pubblicazione di moduli e documenti](/help/forms/publishing-unpublishing-forms.md)
          + Aggiungere componenti a un modulo adattivo {#add-components-to-an-adaptive-form}
             + [Utilizzare il CAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms.md)
             + [Utilizzare hCAPTCHA in un modulo adattivo](/help/forms/integrate-adaptive-forms-hcaptcha.md)
@@ -774,15 +775,15 @@ ht-degree: 95%
             + [Impostare il layout di un modulo adattivo](/help/forms/layout-capabilities-adaptive-forms.md)
             + [Utilizzare la modalità Layout per ridimensionare i componenti](/help/forms/resize-using-layout-mode.md)
             + [Creare un’esperienza di acquisizione dati in più passaggi](/help/forms/introduction-form-sequence.md)
-            + [Costrutti di stile per Forms adattivo](/help/forms/styling-constructs-adaptive-forms.md)
-            + [Applicare stili CSS in linea ai singoli componenti del modulo adattivo](/help/forms/inline-style-adaptive-forms.md)
-            + [Come si utilizza il componente Separatore in Adaptive Forms?](/help/forms/separator-component-in-adaptive-forms.md)
+            + [Costrutti di stile per moduli adattivi](/help/forms/styling-constructs-adaptive-forms.md)
+            + [Applicare stili CSS in linea a singoli componenti del modulo adattivo](/help/forms/inline-style-adaptive-forms.md)
+            + [Come si utilizza il componente Separatore nei moduli adattivi?](/help/forms/separator-component-in-adaptive-forms.md)
          + Aggiungere regole ed utilizzare espressioni in un modulo adattivo {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Aggiungere regole a un modulo adattivo](/help/forms/rule-editor.md)
             + [Aggiungere un handler di errori personalizzato utilizzando il servizio di chiamata dell’editor di regole](/help/forms/add-custom-error-handler-adaptive-forms.md)
             + [Concedere l’accesso all’editor di regole a specifici gruppi di utenti](/help/forms/rule-editor-access-user-groups.md)
-            + [Utilizzo delle espressioni SOM in Adaptive Forms](/help/forms/using-som-expressions-adaptive-forms.md)
-            + [Espressioni modulo adattivo](/help/forms/adaptive-form-expressions.md)
+            + [Utilizzare le espressioni SOM nei moduli adattivi](/help/forms/using-som-expressions-adaptive-forms.md)
+            + [Espressioni per moduli adattivi](/help/forms/adaptive-form-expressions.md)
          + Utilizzo [!DNL Adobe Sign] {#use-adobe-sign}
             + [Utilizzare Adobe Sign per apporre la firma elettronica a un modulo adattivo](/help/forms/working-with-adobe-sign.md)
          + Configurare le azioni di invio e l’invio dei metadati {#configure-submit-actions-and-metadata-submission}
@@ -790,8 +791,8 @@ ht-degree: 95%
             + [Configurare la pagina di reindirizzamento](/help/forms/configuring-redirect-page.md)
             + [Configurare l’invio asincrono per un modulo adattivo](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [Creare un’azione di invio personalizzata](/help/forms/custom-submit-action-form.md)
-            + [Aggiungere informazioni dai dati utente ai metadati di invio del modulo](/help/forms/form-submission-metadata.md)
-            + [API per richiamare il servizio Form Data Model (FDM) da Adaptive Forms](/help/forms/invoke-form-data-model-services.md)
+            + [Aggiungere informazioni dai dati utente ai metadati di invio di un modulo](/help/forms/form-submission-metadata.md)
+            + [API per richiamare il servizio Modello dati modulo (FDM) dai moduli adattivi](/help/forms/invoke-form-data-model-services.md)
          + [Precompilare i campi di un modulo adattivo](/help/forms/prepopulate-adaptive-form-fields.md)
          + [Genera documento di record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [Aggiungere il supporto per nuove lingue a un modulo adattivo](/help/forms/supporting-new-language-localization.md)
@@ -802,23 +803,23 @@ ht-degree: 95%
             + [Creare un modulo adattivo accessibile](/help/forms/creating-accessible-adaptive-forms.md)
          + [Creare e gestire le revisioni](/help/forms/create-reviews-forms.md)
          + [Associare i revisori di invio a un modulo](/help/forms/adding-reviewers-form.md)
-         + [Creare e gestire recensioni per un modulo adattivo](/help/forms/review-adaptiveforms-in-sites-page.md)
+         + [Creare e gestire le revisioni per un modulo adattivo](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [Parole chiave per moduli adattivi](/help/forms/adaptive-forms-keywords.md)
       + [Anteprima di un modulo](/help/forms/previewing-forms.md)
    + Flussi di lavoro incentrati sui moduli {#create-form-centric-workflows}
-      + [Introduzione al flusso di lavoro incentrato su Forms](/help/forms/aem-forms-workflow.md)
+      + [Introduzione al flusso di lavoro incentrato su moduli](/help/forms/aem-forms-workflow.md)
       + [Utilizzare passaggi incentrati su Forms in un flusso di lavoro + riferimento a passaggi](/help/forms/aem-forms-workflow-step-reference.md)
       + [Utilizzare le variabili in un flusso di lavoro incentrato su Forms](/help/forms/variable-in-aem-workflows.md)
       + [Selezione dinamica di utenti o gruppi nel flusso di lavoro AEM](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
       + [Gestione delle applicazioni e delle attività di Forms nella casella in entrata AEM](/help/forms/manage-applications-inbox.md)
-      + [Utilizzare l&#39;opzione Fuori sede](/help/forms/configure-out-of-office-settings.md)
+      + [Utilizzare l’opzione Fuori sede](/help/forms/configure-out-of-office-settings.md)
    + API di comunicazione {#using-communications}
       + [Introduzione alle API di comunicazione](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [Elaborazione sincrona delle API di comunicazione](/help/forms/aem-forms-cloud-service-communications.md)
       + [Elaborazione in batch delle API di comunicazione](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Installare e configurare Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Utilizzare Forms Designer per creare modelli](/help/forms/use-forms-designer.md)
-      + [Modifica del contenuto di Page Zero in Designer](/help/forms/changing-page-zero-content-designer.md)
+      + [Modifica del contenuto della pagina zero in Designer](/help/forms/changing-page-zero-content-designer.md)
       + [Utilizzo di font personalizzati nei documenti PDF](/help/forms/use-custom-fonts.md)
       + [Elenco dei font supportati nei documenti PDF](/help/forms/supported-out-of-the-box-fonts.md)
       + [Problemi noti, best practice e domande frequenti](/help/forms/communications-known-issues-limitations.md)

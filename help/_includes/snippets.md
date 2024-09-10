@@ -2,7 +2,7 @@
 source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 86%
+ht-degree: 89%
 
 ---
 # Snippet {#snippets}
@@ -129,12 +129,12 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 * [Esempi di sviluppo e utilizzo di una funzione personalizzata](/help/forms/custom-function-core-components-use-cases.md)
 
 
-## Forms Portal{#forms-portal-see-also}
+## Portale moduli{#forms-portal-see-also}
 
-* [Introduzione ai componenti di Forms Portal](/help/forms/configure-forms-portal.md)
+* [Introduzione ai componenti del Portale moduli](/help/forms/configure-forms-portal.md)
 * [Elencare i moduli nella pagina Sites](/help/forms/list-forms-on-sites-page.md)
 * [Salvare i moduli come bozze](/help/forms/save-core-component-based-form-as-draft.md)
-* [Aggiungere collegamenti modulo a una pagina Sites](/help/forms/add-form-link-to-aem-sites-page.md)
+* [Aggiungere collegamenti per moduli a una pagina Sites](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
 ## Elenco di indirizzi IP consentiti e pipeline e front-end di Could Manager {#allowlist-frontend-pipeline}
