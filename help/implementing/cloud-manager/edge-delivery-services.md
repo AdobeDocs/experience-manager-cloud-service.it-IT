@@ -4,9 +4,9 @@ description: Scopri come distribuire i progetti Cloud Manager utilizzando i Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc6ea60abed904ef514a4b010a9848511c28128e
+source-git-commit: dda5444ccfced079125c358f65f0dae43293ae55
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1502'
 ht-degree: 5%
 
 ---
@@ -71,7 +71,7 @@ Se hai stipulato un contratto con le licenze dei Edge Delivery Services AEM as a
 * Accedi ai report di SLA (*presto disponibile*) <!-- ADD LINK TO IT WHEN FINALLY ADDED -->
 * Supporto Adobe. Assicurati che i siti dei Edge Delivery Services siano registrati tramite un programma di produzione in Cloud Manager per ottenere il riconoscimento e il supporto corretti da parte di Adobe.
 
-## Aggiungere un sito Edge Delivery Services {#eds-add-site}
+## Aggiungere un sito Edge Delivery {#eds-add-site}
 
 Dopo aver aggiunto i Edge Delivery Services a un programma di produzione, viene applicata la licenza per i Edge Delivery Services.
 
