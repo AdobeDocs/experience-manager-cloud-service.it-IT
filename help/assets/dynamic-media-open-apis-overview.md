@@ -3,9 +3,9 @@ title: Dynamic Medie con funzionalità OpenAPI
 description: Scopri i concetti chiave, ad esempio perché utilizzare Dynamic Medie con funzionalità OpenAPI e come abilitarlo.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
+source-git-commit: 6199a8ae0033feee0c1bee4e4c50e19cd55c805c
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1062'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ Per abilitare Dynamic Medie con funzionalità OpenAPI su AEM as a Cloud Service,
 
   >[!NOTE]
   >
-  > Per l’integrazione con un’applicazione non Adobe, fornisci i nomi di dominio per la whitelist in cui è ospitata l’applicazione.
+  > Per l’integrazione con un’applicazione non Adobe, fornisci i nomi di dominio per l’elenco consentiti in cui è ospitata l’applicazione.
 
 * Dettagli dei contatti chiave dei clienti coinvolti nel progetto di integrazione.
 
