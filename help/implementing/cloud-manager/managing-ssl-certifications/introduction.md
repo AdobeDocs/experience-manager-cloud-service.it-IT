@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fcde1f323392362d826f9b4a775e468de9550716
+source-git-commit: a9bcbae1317d95e3710a19a79115f1437b418e41
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '745'
 ht-degree: 42%
 
 ---
@@ -27,12 +27,14 @@ Cloud Manager offre strumenti self-service per installare e gestire i certificat
 
 <!-- CQDOC-21758, #1 -->
 
-* **Caso d&#39;uso 1:** Cloud Manager utilizza un servizio TLS (Transport Layer Security) della piattaforma per gestire i certificati SSL e le chiavi private di proprietà del cliente provenienti da autorità di certificazione terze, ad esempio *Crittografiamo*.
-* **Caso d&#39;uso 2:** Cloud Manager consente agli utenti di configurare un certificato DV (Domain Validation) proveniente da Adobe per la configurazione rapida del dominio. I certificati DV rappresentano il livello di base della certificazione SSL e vengono spesso utilizzati per scopi di test o per proteggere i siti Web con crittografia di base. I certificati DV sono disponibili sia nei [programmi di produzione che nei programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+| | Caso d’uso | Descrizione |
+| --- | --- | --- |
+| 1 | **Adobe certificato gestito (DV)** | Cloud Manager consente agli utenti di configurare un certificato DV (Domain Validation) proveniente da Adobe per la configurazione rapida del dominio. I certificati DV rappresentano il livello di base della certificazione SSL e vengono spesso utilizzati per scopi di test o per proteggere i siti Web con crittografia di base. I certificati DV sono disponibili sia nei [programmi di produzione che nei programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). |
+| 2 | **Certificato gestito dal cliente (OV/EV)** | Cloud Manager utilizza un servizio di piattaforma TLS (Transport Layer Security) per gestire i certificati SSL di proprietà del cliente e le chiavi private di autorità di certificazione terze, ad esempio *Crittografa*. |
 
-  >
-  >
-  >Ai clienti non è consentito caricare certificati DV (convalida dominio).
+>[!NOTE]
+>
+>Ai clienti non è consentito caricare certificati DV (convalida dominio).
 
 
 ## Introduzione ai certificati {#certificates}

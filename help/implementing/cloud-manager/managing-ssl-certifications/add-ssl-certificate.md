@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fcde1f323392362d826f9b4a775e468de9550716
+source-git-commit: 3aec9d13e2eb4bbc9a972e28195a6f43e92c1842
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '968'
 ht-degree: 22%
 
 ---
@@ -44,12 +44,12 @@ Per completare l&#39;attività, l&#39;utente deve avere il ruolo **Proprietario 
 
 1. Fai clic su **Aggiungi certificato SSL** nell&#39;angolo superiore destro della pagina.
 
-1. Nella finestra di dialogo **Aggiungi certificato SSL**, in base al caso d&#39;uso specifico, eseguire una delle operazioni seguenti:
+1. Nella finestra di dialogo **Aggiungi certificato SSL**, in base al [caso d&#39;uso particolare](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), eseguire una delle operazioni seguenti:
 
-   | Caso d’uso | Passaggi |
-   | --- | --- |
-   | **Aggiungere un Adobe di certificato gestito (DV)** | **Per aggiungere un Adobe di certificato gestito (DV):**<br> a. Selezionare il tipo di certificato **Adobe gestito (DV)**.<br>![Aggiungere un certificato DV](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. Nell&#39;elenco a discesa **Seleziona domini** selezionare uno o più domini da associare al certificato DV.<br>Nessun dominio da selezionare? In tal caso, devi aggiungere un dominio personalizzato. Vedere [Aggiungere un dominio personalizzato](#add-custom-domain). Dopo aver aggiunto un nome di dominio personalizzato, torna a questo argomento e ricomincia dal passaggio 1.<br> d. Continuare con il passaggio 7. |
-   | **Aggiungere un certificato gestito dal cliente (OV/EV)** | **Per aggiungere un certificato gestito dal cliente (OV/EV):**<br> a. Selezionare il tipo di certificato **OV/EV gestito dal cliente**.<br> b. Nel campo **Nome certificato** immettere un nome per il certificato. Questo campo è solo a scopo informativo e può essere qualsiasi nome che ti aiuti a fare riferimento facilmente al certificato.<br>c. Nei campi **Certificato**, **Chiave privata** e **Catena certificati**, incolla i valori richiesti nei rispettivi campi.<br>![Finestra di dialogo Aggiungi certificato SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Vengono visualizzati tutti gli errori rilevati nei valori. Prima di poter salvare il certificato, è necessario risolvere tutti gli errori. Per ulteriori informazioni sulla risoluzione dei problemi relativi agli errori comuni, consulta [Errori relativi ai certificati](#certificate-errors).<br> d. Continuare con il passaggio 7. |
+   | | Caso d’uso | Passaggi |
+   | --- | --- | --- |
+   | 1 | **Aggiungere un Adobe di certificato gestito (DV)** | **Per aggiungere un Adobe di certificato gestito (DV):**<br> a. Selezionare il tipo di certificato **Adobe gestito (DV)**.<br>![Aggiungere un certificato DV](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. Nell&#39;elenco a discesa **Seleziona domini** selezionare uno o più domini da associare al certificato DV.<br>Nessun dominio da selezionare? In tal caso, devi aggiungere un dominio personalizzato. Vedere [Aggiungere un dominio personalizzato](#add-custom-domain). Dopo aver aggiunto un nome di dominio personalizzato, torna a questo argomento e ricomincia dal passaggio 1.<br> d. Continuare con il passaggio 7. |
+   | 2 | **Aggiungere un certificato gestito dal cliente (OV/EV)** | **Per aggiungere un certificato gestito dal cliente (OV/EV):**<br> a. Selezionare il tipo di certificato **OV/EV gestito dal cliente**.<br> b. Nel campo **Nome certificato** immettere un nome per il certificato. Questo campo è solo a scopo informativo e può essere qualsiasi nome che ti aiuti a fare riferimento facilmente al certificato.<br>c. Nei campi **Certificato**, **Chiave privata** e **Catena certificati**, incolla i valori richiesti nei rispettivi campi.<br>![Finestra di dialogo Aggiungi certificato SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Vengono visualizzati tutti gli errori rilevati nei valori. Prima di poter salvare il certificato, è necessario risolvere tutti gli errori. Per ulteriori informazioni sulla risoluzione dei problemi relativi agli errori comuni, consulta [Errori relativi ai certificati](#certificate-errors).<br> d. Continuare con il passaggio 7. |
 
 <!--
     **Add an SSL certificate:**
@@ -98,109 +98,101 @@ Prima di poter aggiungere un Adobe di certificato DV (Domain Validated) generato
 
 Se un certificato non è installato correttamente o non soddisfa i requisiti di Cloud Manager, possono verificarsi alcuni errori.
 
-+++
++++**Ordine corretto dei certificati**
 
-* **Ordine corretto dei certificati**
+Il motivo più comune alla base di una distribuzione dei certificati non riuscita è che i certificati intermedi o a catena non sono disposti nell’ordine corretto.
 
-  Il motivo più comune alla base di una distribuzione dei certificati non riuscita è che i certificati intermedi o a catena non sono disposti nell’ordine corretto.
+I file di certificato intermedi devono terminare con il certificato radice o con quello più vicino. Devono essere disposti in ordine decrescente, dal certificato `main/server` alla radice.
 
-  I file di certificato intermedi devono terminare con il certificato radice o con quello più vicino. Devono essere disposti in ordine decrescente, dal certificato `main/server` alla radice.
+È possibile determinare l’ordine dei file intermedi con il seguente comando.
 
-  È possibile determinare l’ordine dei file intermedi con il seguente comando.
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
 
-  ```shell
-  openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
-  ```
+Puoi verificare che la chiave privata e il certificato `main/server` corrispondano con i seguenti comandi.
 
-  Puoi verificare che la chiave privata e il certificato `main/server` corrispondano con i seguenti comandi.
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
 
-  ```shell
-  openssl x509 -noout -modulus -in certificate.pem | openssl md5
-  ```
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
 
-  ```shell
-  openssl rsa -noout -modulus -in ssl.key | openssl md5
-  ```
-
-  >[!NOTE]
-  >
-  >L’output di questi due comandi deve essere esattamente lo stesso. Se non riesci a individuare una chiave privata corrispondente al certificato `main/server`, ti viene richiesto di generarne una nuova generando un nuovo CSR e/o richiedendo un certificato aggiornato al fornitore SSL.
+>[!NOTE]
+>
+>L’output di questi due comandi deve essere esattamente lo stesso. Se non riesci a individuare una chiave privata corrispondente al certificato `main/server`, ti viene richiesto di generarne una nuova generando un nuovo CSR e/o richiedendo un certificato aggiornato al fornitore SSL.
 
 +++
 
-+++
++++**Rimuovi certificati client**
 
-* **Rimuovi certificati client**
+Quando aggiungi un certificato, se ricevi un errore simile al seguente:
 
-  Quando aggiungi un certificato, se ricevi un errore simile al seguente:
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
 
-  ```text
-  The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
-  ```
-
-  È probabile che tu abbia incluso il certificato client nella catena di certificati. Assicurati che la catena non includa il certificato client e riprova.
+È probabile che tu abbia incluso il certificato client nella catena di certificati. Assicurati che la catena non includa il certificato client e riprova.
 
 +++
 
-+++
++++**Criteri certificato**
 
-* **Criteri certificato**
+Se visualizzi il seguente errore, controlla i criteri del certificato.
 
-  Se visualizzi il seguente errore, controlla i criteri del certificato.
+```text
+Certificate policy must conform with EV or OV, and not DV policy.
+```
 
-  ```text
-  Certificate policy must conform with EV or OV, and not DV policy.
-  ```
+I valori OID incorporati solitamente identificano i criteri del certificato. L’output di un certificato come testo e la ricerca dell’OID rivelano i criteri del certificato.
 
-  I valori OID incorporati solitamente identificano i criteri del certificato. L’output di un certificato come testo e la ricerca dell’OID rivelano i criteri del certificato.
+Puoi generare i dettagli del certificato come testo basandoti sull’esempio seguente come guida.
 
-  Puoi generare i dettagli del certificato come testo basandoti sull’esempio seguente come guida.
+```text
+openssl x509 -in 9178c0f58cb8fccc.pem -text
+certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            91:78:c0:f5:8c:b8:fc:cc
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, ST = Arizona, L = Scottsdale, O = "GoDaddy.com, Inc.", OU = http://certs.godaddy.com/repository/, CN = Go Daddy Secure Certificate Authority - G2
+        Validity
+            Not Before: Nov 10 22:55:36 2021 GMT
+            Not After : Dec  6 15:35:06 2022 GMT
+        Subject: C = US, ST = Colorado, L = Denver, O = Alexandra Alwin, CN = adobedigitalimpact.com
+        Subject Public Key Info:
+...
+```
 
-  ```text
-  openssl x509 -in 9178c0f58cb8fccc.pem -text
-  certificate:
-      Data:
-         Version: 3 (0x2)
-         Serial Number:
-             91:78:c0:f5:8c:b8:fc:cc
-         Signature Algorithm: sha256WithRSAEncryption
-         Issuer: C = US, ST = Arizona, L = Scottsdale, O = "GoDaddy.com, Inc.", OU = http://certs.godaddy.com/repository/, CN = Go Daddy Secure Certificate Authority - G2
-          Validity
-              Not Before: Nov 10 22:55:36 2021 GMT
-              Not After : Dec  6 15:35:06 2022 GMT
-          Subject: C = US, ST = Colorado, L = Denver, O = Alexandra Alwin, CN = adobedigitalimpact.com
-          Subject Public Key Info:
-  ...
-  ```
+Il pattern OID nel testo definisce il tipo di criterio del certificato.
 
-  Il pattern OID nel testo definisce il tipo di criterio del certificato.
+| Pattern | Criterio | Accettabile in Cloud Manager |
+|---|---|---|
+| `2.23.140.1.1` | EV | Sì |
+| `2.23.140.1.2.2` | OV | Sì |
+| `2.23.140.1.2.1` | DV | No |
 
-  | Pattern | Criterio | Accettabile in Cloud Manager |
-  |---|---|---|
-  | `2.23.140.1.1` | EV | Sì |
-  | `2.23.140.1.2.2` | OV | Sì |
-  | `2.23.140.1.2.1` | DV | No |
+Conferma il criterio del certificato eseguendo il comando `grep` per i pattern OID nel testo del certificato generato.
 
-  Conferma il criterio del certificato eseguendo il comando `grep` per i pattern OID nel testo del certificato generato.
+```shell
+# "EV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.1" -B5
 
-  ```shell
-  # "EV Policy"
-  openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.1" -B5
-  
-  # "OV Policy"
-  openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
-  
-  # "DV Policy - Not Accepted"
-  openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
-  ```
+# "OV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
+
+# "DV Policy - Not Accepted"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
+```
 
 +++
 
-+++
++++**Date validità certificato**
 
-* **Date validità certificato**
-
-  Cloud Manager richiede che il certificato SSL sia valido per almeno 90 giorni dalla data corrente. Verifica la validità della catena di certificati.
+Cloud Manager richiede che il certificato SSL sia valido per almeno 90 giorni dalla data corrente. Verifica la validità della catena di certificati.
 
 +++
 
