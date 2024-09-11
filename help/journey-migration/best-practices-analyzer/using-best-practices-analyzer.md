@@ -4,7 +4,7 @@ description: Scopri come utilizzare Best Practices Analyzer per comprendere lo s
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9998fb4bc4f9f4c0f4adf67fd1b378ae662c8f70
 workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 39%
@@ -35,7 +35,7 @@ La sezione seguente per contiene considerazioni importanti sull’esecuzione di 
 * BPA può essere eseguito in qualsiasi ambiente, ma è preferibile eseguirlo in un ambiente *Stage*.
 
   >[!NOTE]
-  >Per evitare un impatto sulle istanze business critical, è consigliabile eseguire BPA in un ambiente *Author* il più simile possibile all&#39;ambiente *Production* nelle aree di personalizzazioni, configurazioni, contenuto e applicazioni utente. In alternativa, può essere eseguito su un clone dell’ambiente di *authoring* di produzione.
+  >Per evitare un impatto sulle istanze business critical, è consigliabile eseguire BPA in un ambiente *Stage* il più simile possibile all&#39;ambiente *Produzione* nelle aree di personalizzazioni, configurazioni, contenuto e applicazioni utente. In alternativa, può essere eseguito su un clone dell’ambiente di *authoring* di produzione.
 
 * La generazione del contenuto del rapporto BPA può richiedere molto tempo, da alcuni minuti ad alcune ore. Il tempo richiesto dipende in larga misura dalle dimensioni e dalla natura del contenuto dell’archivio AEM, dalla versione di AEM e da altri fattori.
 
