@@ -1,33 +1,33 @@
 ---
-title: Verifica dello stato del record DNS
-description: Scopri come determinare se la risoluzione delle impostazioni DNS avviene in modo corretto con Cloud Manager.
+title: Verifica stato record DNS
+description: Scopri come determinare se le impostazioni DNS vengono risolte correttamente utilizzando Cloud Manager.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 60%
+source-wordcount: '366'
+ht-degree: 24%
 
 ---
 
 
 # Verifica dello stato del record DNS {#check-dns-record-status}
 
-Scopri come determinare se la risoluzione delle impostazioni DNS avviene in modo corretto con Cloud Manager.
+Scopri come determinare se le impostazioni DNS vengono risolte correttamente utilizzando Cloud Manager.
 
-## Stato record DNS {#status}
+## Stato dei record DNS {#status}
 
-Un nome di dominio personalizzato non può gestire il traffico in tempo reale finché il DNS non viene risolto correttamente. Cloud Manager consente di determinare se la risoluzione del nome di dominio avviene in modo corretto nel sito web di AEM as a Cloud Service.
+Un nome di dominio personalizzato non può gestire il traffico in tempo reale finché il DNS non viene risolto correttamente. In Cloud Manager, puoi determinare se la risoluzione del nome di dominio nel sito web di AEM as a Cloud Service è corretta.
 
 ## Requisiti {#requirements}
 
-Prima di controllare lo stato di un record DNS tramite Cloud Manager, è necessario soddisfare questi requisiti.
+Rispetta questi requisiti prima di controllare lo stato di un record DNS tramite Cloud Manager.
 
-* È necessario aver già configurato le impostazioni DNS per il nome di dominio personalizzato come descritto nel documento [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
+È necessario aver già configurato le impostazioni DNS per il nome di dominio personalizzato come descritto in [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-## Controllare lo stato del record DNS {#how-to}
+## Verifica dello stato del record DNS {#how-to}
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
@@ -45,23 +45,13 @@ Cloud Manager attiva automaticamente una ricerca DNS quando il nome di dominio p
 
 Un dominio personalizzato può avere uno dei seguenti stati in Cloud Manager.
 
-* **Stato DNS non rilevato**: lo stato del DNS non viene rilevato fino alla completa verifica e distribuzione del nome di dominio personalizzato.
-
-   * Questo stato viene osservato anche quando il nome di dominio personalizzato è in fase di eliminazione.
-
-* **Risoluzione DNS errata**: indica che la risoluzione della configurazione dei record DNS non è avvenuta o è errata.
-
-   * Consulta [Configurazione delle impostazioni DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) per ulteriori informazioni.
-   * Al termine dell’operazione, seleziona l’icona **Nuovo tentativo di risoluzione** accanto allo stato.
-
-* **Risoluzione DNS in corso**: indica che la risoluzione è in corso.
-
-   * In genere questo stato viene visualizzato dopo aver selezionato l’icona **Nuovo tentativo di risoluzione** accanto allo stato.
-
-* **Risoluzione DNS corretta**: le impostazioni DNS sono configurate correttamente.
-
-   * Il sito è disponibile per i visitatori e le visitatrici.
+| Stato | Descrizione |
+| --- | --- |
+| Stato DNS non rilevato | Lo stato DNS viene rilevato solo dopo la corretta verifica e distribuzione del nome di dominio personalizzato. Questo stato viene osservato anche quando il nome di dominio personalizzato è in fase di eliminazione. |
+| Il DNS si risolve in modo non corretto | Questo stato indica che la configurazione dei record DNS non è stata risolta o è errata. Per ulteriori informazioni, consulta [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>Al termine dell&#39;operazione, è necessario selezionare l&#39;icona **Risolvi di nuovo** accanto allo stato. |
+| Risoluzione DNS in corso | Risoluzione in corso. In genere questo stato viene visualizzato dopo aver selezionato l’icona **Nuovo tentativo di risoluzione** accanto allo stato. |
+| Il DNS si risolve in modo corretto | Le impostazioni DNS sono configurate correttamente. Il sito è disponibile per i visitatori e le visitatrici. |
 
 ## Passaggi successivi {#next-steps}
 
-Congratulazioni Il dominio personalizzato è stato configurato per l&#39;utilizzo con Cloud Manager. Per informazioni dettagliate su come gestire i nomi di dominio personalizzati con Cloud Manager, consulta il documento [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
+Il dominio personalizzato è stato configurato per l&#39;utilizzo con Cloud Manager. Per informazioni dettagliate su come gestire i nomi di dominio personalizzati con Cloud Manager, consulta il documento [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
