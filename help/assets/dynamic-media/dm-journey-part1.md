@@ -11,16 +11,16 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3615'
 ht-degree: 0%
 
 ---
 
 # Percorso Dynamic Medie: nozioni di base, parte I {#dm-journey-part1}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Benvenuto nel Percorso Dynamic Medie.
 
@@ -268,7 +268,6 @@ La rappresentazione qui sopra è live! [Prova](https://s7d1.scene7.com/s7viewers
 
 La parte I di questo percorso tratta le nozioni di base su vari argomenti di Dynamic Medie. Se desideri saperne di più su ciò che leggi, utilizza i materiali seguenti per esplorare i concetti in modo più dettagliato. In caso contrario, è possibile continuare con la Parte II del percorso. Vedi [Le prossime novità di questo Percorso Dynamic Medie](#whats-next).
 
-{{see-also-dm}}
 <!--
 _Dynamic Media Help topics_
 

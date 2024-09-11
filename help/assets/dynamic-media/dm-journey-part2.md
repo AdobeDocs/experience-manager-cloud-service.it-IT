@@ -11,16 +11,16 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2621'
 ht-degree: 0%
 
 ---
 
 # Percorso Dynamic Medie: nozioni di base, parte II  {#dm-journey-part2}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Benvenuti nel Percorso Dynamic Medie: Nozioni di base, parte II, dove è possibile aspettarsi di apprendere quanto segue:
 
@@ -211,8 +211,6 @@ Leggi solo i set di immagini e i visualizzatori. Osserviamo un paio di altri vis
 ## Facoltativo - Ulteriori informazioni
 
 Per ulteriori informazioni su ciò che hai appena letto, utilizza i materiali riportati di seguito per approfondire i concetti. In caso contrario, il Percorso Dynamic Medie è completo.
-
-{{see-also-dm}}
 
 <!--
 _Dynamic Media Help topics_
