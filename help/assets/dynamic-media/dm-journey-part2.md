@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
+source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 0%
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 Benvenuti nel Percorso Dynamic Medie: Nozioni di base, parte II, dove è possibile aspettarsi di apprendere quanto segue:
 
-* Anatomia di un URL Dynamic Medie e modo in cui Dynamic Medie distribuisce i contenuti
-* Nozioni di base sulla creazione di predefiniti immagine per il rendering delle risorse
-* Set di immagini, set 360 gradi e set di file multimediali diversi
+* Anatomia di un URL Dynamic Medie e del modo in cui Dynamic Medie distribuisce i contenuti.
+* Nozioni di base sulla creazione di predefiniti immagine per il rendering delle risorse.
+* Set di immagini, set 360 gradi e set di file multimediali diversi.
 
 Vedere anche [Percorso Dynamic Medie; nozioni di base, parte I](/help/assets/dynamic-media/dm-journey-part1.md).
 
