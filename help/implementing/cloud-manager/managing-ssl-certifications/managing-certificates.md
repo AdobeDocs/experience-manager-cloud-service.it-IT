@@ -1,14 +1,14 @@
 ---
-title: Gestire i certificati SSL
+title: Gestione dei certificati SSL
 description: Scopri come controllare lo stato dei certificati SSL e come modificarli, sostituirli, aggiornarli ed eliminarli con Cloud Manager.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -25,9 +25,9 @@ Lo stato dei certificati SSL può essere visualizzato dalla pagina **Certificati
 | --- | --- |
 | Verde | Il certificato è valido per almeno 14 giorni dalla data corrente. |
 | Arancione | La scadenza del certificato è tra meno di 14 giorni.<br>· Assicurarsi di disporre di un piano per rinnovare il certificato e sostituirlo tramite l&#39;interfaccia utente di Cloud Manager per evitare possibili accessi o interruzioni del sito.<br>· Cloud Manager invia notifiche regolari nell&#39;interfaccia utente per avvisarti della scadenza imminente del certificato. |
-| Rosso | Il certificato SSL è scaduto.<br>Vedere [Aggiornare un certificato SSL scaduto gestito dal cliente](#update-ssl-certificate) o [Eliminare un certificato SSL](#deleting-an-ssl-certificate). |
+| Rosso | Il certificato SSL è scaduto.<br>Consulta [Aggiornare un certificato SSL gestito dal cliente scaduto](#update-ssl-certificate) o [Eliminare un certificato SSL](#deleting-an-ssl-certificate). |
 
-## Aggiornare un certificato SSL scaduto gestito dal cliente {#update-ssl-certificate}
+## Aggiornare un certificato SSL gestito dal cliente scaduto {#update-ssl-certificate}
 
 Quando un certificato gestito dal cliente scade, i domini in uso con il certificato scaduto non funzionano più. L’aggiornamento dei certificati garantisce che il dominio continui a funzionare come desiderato.
 
@@ -52,7 +52,7 @@ Per completare l&#39;attività, l&#39;utente deve avere il ruolo **Proprietario 
 
 1. Fai clic su **Aggiorna** per salvare le modifiche e farle applicare automaticamente.
 
-## Sostituire un certificato SSL scaduto gestito dal cliente {#replace-ssl-certificate}
+## Sostituire un certificato SSL gestito dal cliente scaduto {#replace-ssl-certificate}
 
 Segui gli stessi passaggi descritti in [Aggiornare un certificato SSL scaduto](#update-ssl-certificate) per sostituire un certificato SSL scaduto gestito dal cliente.
 
