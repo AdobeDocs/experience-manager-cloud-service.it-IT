@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 17%
+ht-degree: 13%
 
 ---
 
@@ -87,4 +87,4 @@ Il messaggio scompare dopo che tutte le configurazioni dell’ambiente preesiste
 
 Per ulteriori dettagli, vedere [Aggiungere un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
-Un messaggio simile viene visualizzato anche nelle pagine **Elenco IP consentiti** e **Ambienti** degli ambienti che presentano configurazioni CDN preesistenti per gli elenchi IP consentiti o i nomi di dominio personalizzati.
+Un messaggio simile viene visualizzato anche nelle pagine **Elenco consentiti IP** e **Ambienti** per gli ambienti che dispongono di configurazioni CDN preesistenti per Elenchi consentiti IP o nomi di dominio personalizzati.
