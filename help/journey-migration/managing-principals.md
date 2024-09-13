@@ -1,19 +1,19 @@
 ---
-title: Gestione delle entità
+title: Gestione delle entità principali
 description: Gestione delle entità di migrazione tramite Admin Console
-source-git-commit: 5bf497fb2122cc3d3ff0903aeb680a35e90f33b0
+exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Gestione delle entità {#managing-principals}
+# Gestione delle entità principali {#managing-principals}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_managingprincipals"
->title="Gestione delle entità"
+>title="Gestione delle entità principali"
 >abstract="Scopri cosa è necessario fare per gestire gli utenti durante o dopo una migrazione dei contenuti"
 
 Prima del trasferimento dei contenuti all’ambiente cloud AEM as a Cloud Service, è possibile eseguire alcune attività sull’Admin Console.  Si tratta dei seguenti elementi: creazione di utenti, gruppi e assegnazione di utenti ai gruppi; questi utenti e gruppi saranno presenti in IMS, il servizio Identity Management di Adobe, utilizzato per gestire utenti e gruppi per tutti i servizi basati su cloud di Adobe.

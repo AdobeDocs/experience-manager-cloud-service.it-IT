@@ -1,5 +1,5 @@
 ---
-title: Migrazione gruppo
+title: Migrazione dei gruppi
 description: Panoramica sulla migrazione dei gruppi in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
@@ -10,11 +10,11 @@ ht-degree: 0%
 ---
 
 
-# Migrazione gruppo {#group-migration}
+# Migrazione dei gruppi {#group-migration}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_groupmigration"
->title="Migrazione gruppo"
+>title="Migrazione dei gruppi"
 >abstract="Lo strumento Content Transfer (Trasferimento contenuti) consente di copiare i gruppi dal sistema Adobe Experience Manager (AEM) esistente ad AEM as a Cloud Service."
 
 >[!NOTE]
