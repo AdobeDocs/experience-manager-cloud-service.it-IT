@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 99a36bab3ca8d5e6a64e1fdb9c179cf8a3190a14
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1245'
+ht-degree: 79%
 
 ---
 
@@ -65,7 +65,13 @@ Sfruttare l’intelligenza artificiale generativa tramite la nuova funzione di A
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuove funzioni nella Vista risorse {#assets-view-new-features}
+### Funzione di accesso anticipato in Dynamic Medie {#dm-early-access}
+
+**Sottotitoli video basati su IA**
+
+I sottotitoli video basati sull’intelligenza artificiale in Adobe Dynamic Medie utilizzano l’intelligenza artificiale per generare automaticamente i sottotitoli per i contenuti video. Questa funzione è stata progettata per migliorare l’accessibilità e l’esperienza utente fornendo sottotitoli accurati e in tempo reale. L’intelligenza artificiale analizza la traccia audio del video per trascrivere il discorso e creare didascalie, che possono essere modificate per maggiore precisione o personalizzazione. Questi sottotitoli soddisfano i requisiti di accessibilità e migliorano il coinvolgimento video dei tipi di pubblico che si affidano al supporto video basato su testo o che preferiscono farlo.
+
+### Nuove funzioni nella vista Risorse {#assets-view-new-features}
 
 **Generazione immagine Adobe Firefly aggiornata**
 
@@ -80,7 +86,7 @@ Assets as a Cloud Service ora supporta i documenti di grandi dimensioni di Photo
 ### Nuovi miglioramenti nell’’hub di contenuti {#content-hub-new-enhancements}
 
 * Migliore gestione dei nomi di file lunghi, facile espansione del nome completo tramite descrizione comando.
-* Miniature migliorate per adattarsi meglio alle proporzioni dei contenuti e coprire aree di contenuto più ampie.
+* Miniature migliorate per adattarsi meglio alle proporzioni dei contenuti e coprire un&#39;area di contenuto più ampia.
 * Esperienza di miniature personalizzata da AEM supportata con l’hub di contenuti.
 * Miglioramenti nella ricerca dei colori.
 * I miglioramenti nell’esperienza di salvataggio delle configurazioni.
@@ -93,7 +99,7 @@ Assets as a Cloud Service ora supporta i documenti di grandi dimensioni di Photo
 
 #### Salvataggio automatico di una bozza per moduli adattivi basati su Componenti core
 
-Gli utenti possono ora beneficiare di una funzione di salvataggio automatico che consente di salvare automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completarne la compilazione sullo stesso dispositivo o su un altro. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
+Gli utenti possono ora beneficiare di una funzione di salvataggio automatico che consente di salvare automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completarne la compilazione sullo stesso dispositivo o su un altro. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilare i moduli dall’inizio.
 
 
 ### Funzionalità per Accesso anticipato ad AEM Forms {#forms-new-early-access-features}
@@ -112,17 +118,17 @@ Le funzionalità di intelligenza artificiale generativa offerte sono:
 
 * **Assistente IA per le query sui prodotti**: ottieni risposte immediate alle domande relative al modulo AEM. L’assistente di IA funge da knowledge base personale, fornendo indicazioni approfondite e consigli direttamente all’interno della piattaforma.
 
-* **Generazione di moduli adattivi**: creazione semplificata di moduli completi con prompt di IA generativa. L’intelligenza artificiale generativa di Adobe genera automaticamente moduli intuitivi che riducono i casi di abbandono e personalizzano l’esperienza.
+* **Generazione di moduli adattivi**: creazione semplificata di moduli veri e propri con prompt di IA generativi. L’intelligenza artificiale generativa di Adobe genera automaticamente moduli intuitivi che riducono i rilasci e personalizzano l’esperienza.
 
 * **Generazione del pannello per moduli**: genera sezioni del modulo personalizzate in base a esigenze specifiche di raccolta dati. Ad esempio, genera sezioni per la raccolta di informazioni di pagamento, preferenze cliente o dettagli di viaggio.
 
-* **Modifica dei layout del modulo**: prova con layout e progettazioni diversi utilizzando i prompt di IA generativa. Prova diversi layout, ad esempio la procedura guidata o le visualizzazioni a schede, per trovare il layout ideale per il modulo. Utilizza i prompt di intelligenza artificiale generativa per ottimizzare i moduli per la reattività mobile e creare moduli visivamente coinvolgenti che gli utenti apprezzano.
+* **Modifica dei layout del modulo**: prova con layout e progettazioni diversi utilizzando prompt di intelligenza artificiale generativi. Prova diversi layout, ad esempio la procedura guidata o le visualizzazioni a schede, per trovare il layout ideale per il modulo. Utilizza i prompt di intelligenza artificiale generativi per ottimizzare i moduli per la reattività mobile e creare moduli visivamente coinvolgenti che gli utenti apprezzano.
 
-* **Configura azione di invio**: utilizza i prompt di IA generativa per configurare facilmente un’azione di invio per il modulo. Scegli da una libreria di azioni di invio predefinite o da un elenco di azioni di invio personalizzate, create e implementate dal tuo team di sviluppo.
+* **Configura azione di invio**: utilizza i prompt di IA generativi per configurare facilmente un&#39;azione di invio per il modulo. Scegli da una libreria di azioni di invio predefinite o azioni di invio personalizzate create e distribuite dal team di sviluppo.
 
 >[!IMPORTANT]
 >
-> Se ti interessa partecipare al programma di accesso anticipato per qualsiasi innovazione, è sufficiente inviare un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con l’elenco delle funzionalità che ti interessano.
+> Ti interessa partecipare al programma di accesso anticipato per qualsiasi innovazione di Forms? Invia un&#39;e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con l&#39;elenco delle funzionalità che ti interessano.
 
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}

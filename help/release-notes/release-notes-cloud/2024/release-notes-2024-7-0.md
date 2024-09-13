@@ -3,10 +3,11 @@ title: Note sulla versione 2024.7.0 di [!DNL Adobe Experience Manager] as a Clou
 description: Note sulla versione 2024.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 2edaca5637c735645e2b761377b9681d9b48daa1
+exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 100%
+source-wordcount: '1605'
+ht-degree: 77%
 
 ---
 
@@ -60,19 +61,25 @@ Ti interessa provare questa funzione e condividere con noi un tuo feedback? Per 
 
 **Caricare risorse tramite il Selettore risorse**
 
-Il Selettore risorse ora offre agli autori dei contenuti la possibilità di caricare le risorse finali direttamente dal selettore, trascinandole o navigando dal file system locale. Questo permette di caricare le risorse finali nella soluzione DAM dall’applicazione desiderata.
+Il Selettore risorse ora consente agli autori di contenuto di caricare le risorse finali direttamente dal selettore, trascinandole o navigando dal file system locale. Questa funzionalità consente di caricare le risorse finali in DAM dall’applicazione desiderata.
+
+### Funzione di accesso anticipato in Dynamic Medie {#dm-early-access}
+
+**Sottotitoli video basati su IA**
+
+I sottotitoli video basati sull’intelligenza artificiale in Adobe Dynamic Medie utilizzano l’intelligenza artificiale per generare automaticamente i sottotitoli per i contenuti video. Questa funzione è stata progettata per migliorare l’accessibilità e l’esperienza utente fornendo sottotitoli accurati e in tempo reale. L’intelligenza artificiale analizza la traccia audio del video per trascrivere il discorso e creare didascalie, che possono essere modificate per maggiore precisione o personalizzazione. Questi sottotitoli soddisfano i requisiti di accessibilità e migliorano il coinvolgimento video dei tipi di pubblico che si affidano al supporto video basato su testo o che preferiscono farlo.
 
 ### Nuove funzioni nella vista Risorse {#assets-view-new-features}
 
 **Integrazione delle credenziali del contenuto**
 
-Experience Manager Assets ora supporta le credenziali del contenuto per i formati di immagine supportati. Questo fornisce informazioni sulla derivazione della risorsa e su come è stata creata, comprese eventuali modifiche apportate tramite GenAI.
+Experience Manager Assets ora supporta le credenziali del contenuto per i formati di immagine supportati. Questa funzionalità fornisce informazioni sulla derivazione della risorsa e su come è stata creata, compreso se è stata modificata utilizzando GenAI.
 
 ![Credenziali del contenuto](/help/assets/assets/content-credentials.png)
 
 **Anteprime visive del contenuto delle cartelle**
 
-In Experience Manager Assets, durante la navigazione o la ricerca di contenuti, ora le miniature delle cartelle mostrano anteprime visive del loro contenuto, migliorando la reperibilità delle risorse disponibili nell’archivio di AEM Assets.
+Experience Manager Assets ora visualizza anteprime visive del contenuto della cartella sulla miniatura della cartella durante la navigazione o la ricerca di contenuto, migliorando la reperibilità delle risorse disponibili nell’archivio AEM Assets.
 
 <!--
 
@@ -93,7 +100,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Editor di regole visivo ottimizzato per moduli adattivi basati su componenti core
 
-Gli autori di moduli adattivi possono utilizzare campi modulo ripetibili nelle funzioni pronte all’uso disponibili nell’editor di regole visivo per i componenti core, per creare logiche di business complesse nei moduli senza ricorrere alla personalizzazione o all’intervento del team di sviluppo.
+Gli autori di moduli adattivi possono utilizzare campi modulo ripetibili e funzioni predefinite dell’editor di regole visive per creare logiche di business complesse nei moduli senza la necessità di personalizzazione o supporto da parte del team di sviluppo.
 
 ### Funzionalità per Accesso anticipato ad AEM Forms {#forms-new-early-access-features}
 
@@ -103,7 +110,7 @@ In queste note sulla versione sono elencate le innovazioni incluse nella version
 
 #### Creare moduli adattivi utilizzando l’editor universale
 
-Con l’[editor universale](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) di Adobe Experience Manager puoi creare moduli adattivi in modalità WYSIWYG e mediante il semplice trascinamento degli elementi, per l’authoring di esperienze di registrazione headless e headful, distribuite tramite Edge Delivery Services. Gli autori di moduli adattivi possono facilmente creare e avviare esperimenti per varianti dei moduli nelle pagine web e determinare le esperienze con le prestazioni migliori per gli utenti finali.
+Con l’[editor universale](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) di Adobe Experience Manager puoi creare moduli adattivi in modalità WYSIWYG e mediante il semplice trascinamento degli elementi, per l’authoring di esperienze di registrazione headless e headful, distribuite tramite Edge Delivery Services. Gli autori di moduli adattivi possono facilmente creare e avviare esperimenti per varianti di moduli nelle pagine web. Questa funzionalità consente loro di determinare le esperienze con le prestazioni migliori per gli utenti finali.
 
 >[!IMPORTANT]
 >
@@ -113,22 +120,23 @@ Con l’[editor universale](https://experienceleague.adobe.com/it/docs/experienc
 
 ### Eliminare i contenuti dalla rete CDN con una chiave API self-service {#purge-cdn}
 
-Impostando il valore TTL (Time to Live) mediante l’intestazione HTTP cache-control è possibile bilanciare in modo efficace le prestazioni di distribuzione dei contenuti e lo stato di aggiornamento degli stessi. Tuttavia, negli scenari in cui è fondamentale distribuire immediatamente i contenuti aggiornati, può essere utile cancellare direttamente la cache CDN.
+Impostando il valore TTL (Time to Live) mediante l’intestazione HTTP cache-control è possibile bilanciare in modo efficace le prestazioni di distribuzione dei contenuti e lo stato di aggiornamento degli stessi. Tuttavia, negli scenari in cui è fondamentale distribuire immediatamente il contenuto aggiornato, può essere utile eliminare direttamente la cache CDN.
 
-[Scopri come](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) configurare in modalità self-service un token API di eliminazione con la pipeline di configurazione di Cloud Manager, in modo da poter [richiamare le API di eliminazione](/help/implementing/dispatcher/cdn-cache-purge.md), con le seguenti varianti:
+[Scopri come](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) eseguire autonomamente la configurazione di un token API di eliminazione utilizzando la pipeline di configurazione di Cloud Manager, in modo da poter [richiamare le API di eliminazione](/help/implementing/dispatcher/cdn-cache-purge.md), con una delle seguenti varianti:
+
 * URL singolo
 * Più URL con un tag
 * Eliminazione completa della cache CDN
 
 ### Configurazione self-service di X-AEM-Edge-Key per CDN gestita dal cliente {#customermanaged-keys}
 
-In precedenza, era necessario un ticket di supporto per generare la chiave X-AEM-Edge-Key necessaria per la configurazione di una rete CDN gestita dalla clientela. Ora è possibile eseguire questa operazione in modo autonomo tramite un file di configurazione distribuito utilizzando la pipeline di configurazione, evitando eventuali ritardi nell’onboarding di un nuovo ambiente. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+In precedenza, era necessario un ticket di supporto per generare la chiave X-AEM-Edge-Key necessaria per la configurazione di una rete CDN gestita dalla clientela. Questo flusso di lavoro è ora self-service: dichiara il valore chiave in un file di configurazione distribuito tramite la pipeline di configurazione ed elimina eventuali ritardi nell’onboarding di un nuovo ambiente. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 ### Avvisi delle regole di filtro del traffico {#traffic-filter-rules-alerts}
 
-Le regole di filtro del traffico, che includono le regole con un’eventuale licenza WAF (Web Application Firewall), permettono di configurare il traffico da bloccare.
+Le regole del filtro del traffico, che includono le regole del Firewall applicazione Web (WAF) facoltativamente consentite, consentono di configurare il traffico da bloccare.
 
-Ora puoi [iscriverti per ricevere un avviso](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) ogni volta che viene attivata una regola di filtro del traffico. Le notifiche e-mail del Centro azioni ti informeranno quando si verificano determinate condizioni di traffico, in modo che tu possa adottare le misure appropriate.
+Ora puoi [abbonarti agli avvisi](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) ogni volta che vengono attivate le regole del filtro del traffico. Le notifiche e-mail del Centro azioni ti informeranno quando si verificano determinate condizioni di traffico, in modo che tu possa adottare le misure appropriate.
 
 ### Programmi per i primi utilizzatori relativi alla distribuzione dei contenuti {#foundation-early-adopter}
 
