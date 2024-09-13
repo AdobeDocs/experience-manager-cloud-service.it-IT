@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 7%
+source-wordcount: '445'
+ht-degree: 6%
 
 ---
 
@@ -27,13 +27,16 @@ Ad Adobe, le CDN gestite, quando si utilizzano certificati DV, sono consentiti s
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Nel pannello di navigazione a sinistra, in **Servizi**, fai clic su **Configurazioni CDN**.
+1. A seconda del caso d’uso, effettua una delle seguenti operazioni:
 
-1. Fai clic su **Aggiungi** nell&#39;angolo superiore destro della pagina Configurazioni CDN.
-
-   ![Finestra di dialogo Configura CDN](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
+   | Caso d’uso | Passaggi |
+   | --- | --- |
+   | Desidero aggiungere una configurazione CDN a un sito Edge Delivery *esistente* in Cloud Manager | a. Nel pannello di navigazione a sinistra, in **Servizi**, fai clic su **Siti Edge Delivery**.<br> b. Nella tabella Edge Delivery, alla fine di una riga a cui non è associato alcun dominio, fai clic sui puntini di sospensione.<br>c. Fare clic su **Configura rete CDN**.  ![Fai clic su Configura CDN per un sito Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
+   | Desidero aggiungere una configurazione CDN in Cloud Manager | a. Nel pannello di navigazione a sinistra, in **Servizi**, fai clic su **Configurazioni CDN**.<br> b. Fai clic su **Aggiungi** nell&#39;angolo superiore destro della pagina Configurazioni CDN. |
 
 1. Nella finestra di dialogo **Configura CDN**, nell&#39;elenco a discesa **Origin**, selezionare una delle opzioni seguenti:
+
+   ![Finestra di dialogo Configura CDN](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
 
    | Origine | Descrizione |
    | --- | --- |

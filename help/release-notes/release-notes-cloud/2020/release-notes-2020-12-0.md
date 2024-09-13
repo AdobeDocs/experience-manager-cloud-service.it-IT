@@ -4,10 +4,10 @@ description: Note sulla versione 2020.12.0 di [!DNL Adobe Experience Manager] as
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 11%
+source-wordcount: '657'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 11%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service.
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 è il 17 dicembre 2020.
 La seguente versione (2021.1.0) è del 28 gennaio 2021.
@@ -32,7 +32,7 @@ La seguente versione (2021.1.0) è del 28 gennaio 2021.
 
 * Le funzionalità di [!DNL Dynamic Media] sono ora accessibili tramite i componenti core basati su immagini AEM [!DNL Sites]. Gli autori possono configurare rapidamente i componenti per utilizzare Predefiniti immagine, Ritaglio avanzato e Modificatori immagine durante la creazione di pagine Web. Consulta [Componenti core versione 2.13.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* L&#39;app desktop [!DNL Experience Manager] consente agli utenti di caricare file e cartelle trascinando i file da Esplora risorse o da Mac Finder nell&#39;interfaccia dell&#39;app desktop. Consulta [aggiungere risorse tramite l&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* L&#39;app desktop [!DNL Experience Manager] consente agli utenti di caricare file e cartelle trascinando i file da Esplora risorse o da Mac Finder nell&#39;interfaccia dell&#39;app desktop. Consulta [aggiungere risorse tramite l&#39;app desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -50,7 +50,7 @@ La data di pubblicazione di Cloud Manager in Adobe Experience Manager (AEM) as a
 
 ### Novità in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Gestione in autonomia di [certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) e dei [nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Gestione self-service di [certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) e [introduzione ai nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 * Gestione in autonomia di [elenchi IP consentiti ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
@@ -66,7 +66,7 @@ La data di pubblicazione di Cloud Manager in Adobe Experience Manager (AEM) as a
 
 ### Novità in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* È stata rilasciata la nuova versione del plug-in AIO-CLI. La versione più recente di questo plug-in include correzioni di bug per AEM Dispatcher Converter e Repository Modernizer e supporta anche una nuova utility: Index Converter. Consulta [Esperienza unificata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) per ulteriori informazioni su questo plug-in.
+* È stata rilasciata la nuova versione del plug-in AIO-CLI. La versione più recente di questo plug-in include correzioni di bug per AEM Dispatcher Converter e Repository Modernizer e supporta anche una nuova utility: Index Converter. Consulta [Esperienza unificata](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) per ulteriori informazioni su questo plug-in.
 
 * Index Converter è un’utility che può essere utilizzata per trasformare le definizioni dell’indice Oak personalizzato di un cliente in definizioni dell’indice Oak compatibili con AEM as a Cloud Service. Per ulteriori dettagli, vedere [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter).
 
@@ -76,7 +76,7 @@ La data di pubblicazione di Cloud Manager in Adobe Experience Manager (AEM) as a
 
 * Sono state apportate diverse correzioni di bug agli strumenti AEM Dispatcher Converter e Repository Modernizer. Vedere [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) e [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
-### Data di rilascio {#release-date-ctt}
+### Data di pubblicazione {#release-date-ctt}
 
 La data di pubblicazione dello strumento Content Transfer v1.1.20 è il 8 gennaio 2021.
 
@@ -86,6 +86,6 @@ La data di pubblicazione dello strumento Content Transfer v1.1.20 è il 8 gennai
 
 ### Correzioni di bug {#ctt-bug-fixes}
 
-* Lo stato dell’interfaccia utente dello strumento Content Transfer (CTT) per un set di migrazione non persiste e viene modificato dopo un periodo di inattività. Questo problema è stato risolto.
-* L’opzione per visualizzare i registri era disabilitata se i registri non erano disponibili. Questo problema è stato risolto ed è stato aggiunto un messaggio per informare gli utenti del motivo della mancanza dei registri.
-* Lo stato dell&#39;interfaccia utente dello strumento Content Transfer mostrava *FAILED* quando l&#39;utente interrompeva un&#39;acquisizione. È stato corretto per visualizzare *STOPPED*.
+* Lo stato dell’interfaccia utente dello strumento Content Transfer (CTT) per un set di migrazione non persiste e viene modificato dopo un periodo di inattività. Questo problema è ora risolto.
+* L’opzione per visualizzare i registri era disabilitata se i registri non erano disponibili. Questo problema è ora risolto e sono stati aggiunti messaggi per informare gli utenti del motivo per cui mancano i registri.
+* Lo stato dell&#39;interfaccia utente dello strumento Content Transfer mostrava *FAILED* quando l&#39;utente interrompeva un&#39;acquisizione. Il problema è ora risolto per visualizzare *STOPPED*.

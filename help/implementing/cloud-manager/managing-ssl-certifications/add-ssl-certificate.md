@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 9%
@@ -23,7 +23,7 @@ Vedi anche [Risoluzione dei problemi relativi agli errori del certificato SSL](/
 
 Il provisioning di un certificato può richiedere alcuni giorni. Di conseguenza, l’Adobe consiglia di eseguire il provisioning del certificato con largo anticipo rispetto a qualsiasi scadenza o data di pubblicazione.
 
-Controlla i **requisiti del certificato** in [Introduzione alla gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) per assicurarti che AEM as a Cloud Service supporti il certificato che desideri aggiungere.
+Controlla i **requisiti del certificato** in [Introduzione alla gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements) per assicurarti che AEM as a Cloud Service supporti il certificato che desideri aggiungere.
 
 Per completare l&#39;attività, l&#39;utente deve avere il ruolo **Proprietario business** o **Responsabile dell&#39;implementazione**.
 
@@ -45,7 +45,7 @@ Per completare l&#39;attività, l&#39;utente deve avere il ruolo **Proprietario 
 
 1. Fai clic su **Aggiungi certificato SSL** nell&#39;angolo superiore destro della pagina.
 
-1. Nella finestra di dialogo **Aggiungi certificato SSL**, in base al [caso d&#39;uso particolare](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), eseguire una delle operazioni seguenti:
+1. Nella finestra di dialogo **Aggiungi certificato SSL**, in base al [caso d&#39;uso particolare](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md), eseguire una delle operazioni seguenti:
 
    | | Caso d’uso | Passaggi |
    | --- | --- | --- |

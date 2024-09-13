@@ -4,9 +4,9 @@ description: Scopri tutti gli elementi che devono essere presenti per una pubbli
 exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '567'
 ht-degree: 56%
 
 ---
@@ -40,7 +40,7 @@ Esamina questo elenco di attività per assicurarti di eseguire una pubblicazione
       * Configura SSL e DNS in base alla documentazione del fornitore CDN.
    * Se non utilizzi una rete CDN aggiuntiva, gestisci SSL e DNS come descritto nella documentazione seguente:
       * Gestione dei certificati SSL
-         * [Introduzione alla gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [Introduzione ai certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          * [Gestire i certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Gestione dei nomi di dominio personalizzati (DNS)
          * Assicurati che il passaggio al DNS non introduca problemi imprevisti. Crea un sottodominio di test a cui connettere l’istanza di produzione prima di andare &quot;live&quot; ed esegui un ciclo di test UAT. Pertanto, se il tuo dominio è example.com, puoi creare un sottodominio test.example.com e applicarlo alla produzione. Durante il test UAT del dominio, cerca elementi quali il reindirizzamento corretto dei collegamenti, la memorizzazione in cache e le configurazioni di Dispatcher.
