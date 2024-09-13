@@ -6,8 +6,8 @@ role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '367'
+ht-degree: 83%
 
 ---
 
@@ -21,25 +21,25 @@ Questa pagina illustra le note sulla versione 2024.9.0 di Cloud Manager in AEM a
 
 ## Data di pubblicazione {#release-date}
 
-La data di pubblicazione di Cloud Manager versione 2024.9.0 in AEM as a Cloud Service è il 5 settembre 2024. La prossima versione è pianificata per il venerdì 3 ottobre 2024.
+La data di pubblicazione di Cloud Manager versione 2024.9.0 in AEM as a Cloud Service è il 5 settembre 2024. La prossima versione è pianificata per il 3 ottobre 2024.
 
 ## Novità {#what-is-new}
 
-* **Dashboard di controllo dell&#39;esperienza:**
+* **Dashboard di audit dell’esperienza:**
 
-  Il dashboard [Enhanced Experience Audit di Adobe Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md), con tecnologia Google Lighthouse, fornisce informazioni approfondite sulla qualità e le prestazioni di AEM Sites valutando i dati fondamentali su web, SEO (Search Engine Optimization) e le metriche di accessibilità. Consente agli utenti di identificare le aree da migliorare offrendo consigli actionable, consentendo ai team di migliorare l’esperienza utente, i tempi di caricamento delle pagine e la conformità del sito. Questa dashboard semplifica il monitoraggio delle metriche critiche del sito e garantisce che le applicazioni AEM soddisfino elevati standard di prestazioni e accessibilità.
+  Il [dashboard di audit dell’esperienza migliorato](/help/implementing/cloud-manager/experience-audit-dashboard.md) di Adobe Cloud Manager, gestito da Google Lighthouse, fornisce informazioni approfondite sulla qualità e sulle prestazioni di AEM Sites valutando i web vitals di base, la SEO (Search Engine Optimization) e le metriche di accessibilità. Consente agli utenti di identificare le aree da migliorare offrendo consigli utilizzabili, permettendo ai team di migliorare l’esperienza utente, i tempi di caricamento delle pagine e la conformità del sito. Questa dashboard semplifica il monitoraggio delle metriche critiche del sito e garantisce che le applicazioni AEM soddisfino elevati standard di prestazioni e accessibilità.
 
-* **Adobe di certificati di convalida del dominio generati e gestiti:**
+* **Certificati di convalida del dominio generati e gestiti da Adobe:**
 
-  Con Cloud Manager, ora è possibile [Adobi self-service generati e gestiti da certificati SSL DV (convalida dominio)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). Questa funzionalità offre la soluzione più rapida, semplice e conveniente per creare un sito Web sicuro per l&#39;organizzazione online o l&#39;azienda. <!-- CMGR-52403 -->
+  Cloud Manager ora consente di [generare e gestire certificati SSL di convalida del dominio (DV) in modalità self-service tramite Adobe](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). Questa funzionalità offre la soluzione più veloce, facile e conveniente per creare un sito web sicuro per la tua organizzazione o il tuo business online. <!-- CMGR-52403 -->
 
   >[!NOTE]
   >
   >I clienti di [Content Hub](/help/assets/product-overview.md) sono destinati a ricevere questa funzionalità in più fasi nell&#39;ambito di un rollout graduale.
 
-* Supporto di **Edge Delivery Services in Cloud Manager:**
+* **Supporto per Edge Delivery Services in Cloud Manager:**
 
-  Se disponi di una licenza Edge Delivery Services come parte di AEM Sites, [ora puoi integrare il tuo sito con i Edge Delivery Services direttamente tramite Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). Questa funzione consente un’esperienza di lancio guidata e self-service. Inoltre, unifica flussi di lavoro essenziali come la gestione dei nomi di dominio, i certificati SSL e le mappature CDN in tutte le proprietà dell’AEM, garantendo coerenza ed efficienza. <!-- CMGR-49859 -->
+  Se disponi di una licenza Edge Delivery Services come parte di AEM Sites, [ora puoi integrare il tuo sito con i Edge Delivery Services direttamente tramite Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). Questa funzione consente un’esperienza di pubblicazione guidata e self-service. Inoltre, unifica flussi di lavoro essenziali come la gestione dei nomi di dominio, i certificati SSL e le mappature CDN in tutte le proprietà di AEM, garantendo coerenza ed efficienza. <!-- CMGR-49859 -->
 
   >[!NOTE]
   >
@@ -56,6 +56,6 @@ For a chance to test some upcoming features, be a part of Adobe's early adoption
 ## Correzioni di bug
 
 * La paginazione per la vista tabella dei certificati SSL ora funziona come previsto. <!-- (CMGR-60804 - [UI] Pagination doesn't work for ssl certificates) -->
-* La versione dell&#39;artefatto errata è stata promossa quando si utilizza il pulsante **Promuovi build** da un&#39;esecuzione. <!-- ( KEEP IN? SP: YES CMGR-59519 and Slack https://cq-dev.slack.com/archives/C07LFPN2R08/p1725408253474129 ) -->
+* La versione dell’artefatto errata è stata promossa quando si utilizza il pulsante **Promuovi versione** da un’esecuzione. <!-- ( KEEP IN? SP: YES CMGR-59519 and Slack https://cq-dev.slack.com/archives/C07LFPN2R08/p1725408253474129 ) -->
 
 <!-- * Slack message says next release? SP: REMOVE (Leave in for now) SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack https://cq-dev.slack.com/archives/C07LFRE9QJU/p1725408553760009 ) --<>
