@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a9bcbae1317d95e3710a19a79115f1437b418e41
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 42%
+source-wordcount: '763'
+ht-degree: 41%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager offre strumenti self-service per installare e gestire i certificat
 
 | | Caso d’uso | Descrizione |
 | --- | --- | --- |
-| 1 | **Adobe certificato gestito (DV)** | Cloud Manager consente agli utenti di configurare un certificato DV (Domain Validation) proveniente da Adobe per la configurazione rapida del dominio. I certificati DV rappresentano il livello di base della certificazione SSL e vengono spesso utilizzati per scopi di test o per proteggere i siti Web con crittografia di base. I certificati DV sono disponibili sia nei [programmi di produzione che nei programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). |
+| 1 | **Adobe certificato gestito (DV)** | Cloud Manager consente agli utenti di configurare un certificato DV (Domain Validation) proveniente da Adobe per la configurazione rapida del dominio. I certificati DV rappresentano il livello di base della certificazione SSL e vengono spesso utilizzati per scopi di test o per proteggere i siti Web con crittografia di base. I certificati DV sono disponibili sia nei [programmi di produzione che nei programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). Dopo la creazione del certificato DV, Adobe lo rinnova automaticamente ogni tre mesi, a meno che non venga eliminato. |
 | 2 | **Certificato gestito dal cliente (OV/EV)** | Cloud Manager utilizza un servizio di piattaforma TLS (Transport Layer Security) per gestire i certificati SSL di proprietà del cliente e le chiavi private di autorità di certificazione terze, ad esempio *Crittografa*. |
 
 >[!NOTE]

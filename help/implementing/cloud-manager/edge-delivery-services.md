@@ -4,9 +4,9 @@ description: Scopri come distribuire i progetti Cloud Manager utilizzando i Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dda5444ccfced079125c358f65f0dae43293ae55
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1516'
 ht-degree: 5%
 
 ---
@@ -61,7 +61,7 @@ A seconda del caso d’uso, effettua una delle seguenti operazioni:
 
 ## Adobe di percorso consigliato per i clienti con contratto {#recommended-path-eds}
 
-In qualità di cliente a contratto, assicurati di trarre il massimo vantaggio da Adobe accedendo e utilizzando la licenza del Edge Delivery Services tramite Cloud Manager. Questo approccio consente di utilizzare [CDN gestita da Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) e di sfruttare i vantaggi principali, quali la gestione CDN self-service, inclusa la configurazione e l&#39;installazione di certificati DV o EV/OV. Se non disponi di una licenza di Edge Delivery Services con Adobe e decidi di ignorare tali vantaggi, puoi utilizzare solo una rete CDN gestita dal cliente. Questa configurazione deve essere sulla piattaforma aem.live.
+In qualità di cliente a contratto, assicurati di trarre il massimo vantaggio da Adobe accedendo e utilizzando la licenza del Edge Delivery Services tramite Cloud Manager. Questo approccio consente di utilizzare [CDN gestita da Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) e di sfruttare i vantaggi principali, quali la gestione CDN self-service, inclusa la configurazione e l&#39;aggiunta di certificati DV. Inoltre, dopo la creazione di un certificato DV, Adobe lo rinnova automaticamente ogni tre mesi, a meno che non venga eliminato. Se non disponi di una licenza di Edge Delivery Services con Adobe e decidi di ignorare questi vantaggi, puoi utilizzare solo una rete CDN gestita dal cliente. Questa configurazione deve essere sulla piattaforma `aem.live`.
 
 Se hai stipulato un contratto con le licenze dei Edge Delivery Services AEM as a Cloud Service Sites, accedi a Cloud Manager per assicurarti di poter eseguire le seguenti operazioni:
 
