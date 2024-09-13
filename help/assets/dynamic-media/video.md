@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
+source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
 workflow-type: tm+mt
-source-wordcount: '9406'
+source-wordcount: '9402'
 ht-degree: 2%
 
 ---
@@ -526,7 +526,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 * Sottotitoli multipli e tracce audio
 * Sottotitoli generati da IA (accesso anticipato)
 
-Come Adobe di caso di assistenza clienti che hai creato e inviato.
+Creando e inviando un caso di assistenza clienti di Adobe.
 
 L’abilitazione di una qualsiasi delle tre funzionalità precedenti, le abilita tutte. Pertanto, se desideri abilitare solo DASH, stai attivando tutte e tre le funzionalità elencate sopra.
 

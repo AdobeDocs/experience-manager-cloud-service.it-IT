@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
+source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 79%
+source-wordcount: '1266'
+ht-degree: 77%
 
 ---
 
@@ -67,9 +67,11 @@ Sfruttare l’intelligenza artificiale generativa tramite la nuova funzione di A
 
 ### Funzione di accesso anticipato in Dynamic Medie {#dm-early-access}
 
-**Sottotitoli video basati su IA**
+**Sottotitoli video generati da IA**
 
-I sottotitoli video basati sull’intelligenza artificiale in Adobe Dynamic Medie utilizzano l’intelligenza artificiale per generare automaticamente i sottotitoli per i contenuti video. Questa funzione è stata progettata per migliorare l’accessibilità e l’esperienza utente fornendo sottotitoli accurati e in tempo reale. L’intelligenza artificiale analizza la traccia audio del video per trascrivere il discorso e creare didascalie, che possono essere modificate per maggiore precisione o personalizzazione. Questi sottotitoli soddisfano i requisiti di accessibilità e migliorano il coinvolgimento video dei tipi di pubblico che si affidano al supporto video basato su testo o che preferiscono farlo.
+I sottotitoli video generati dall’intelligenza artificiale in Adobe Dynamic Medie utilizzano l’intelligenza artificiale per generare automaticamente i sottotitoli per i contenuti video. Questa funzione è stata progettata per migliorare l’accessibilità e l’esperienza utente fornendo sottotitoli accurati e in tempo reale. L’intelligenza artificiale analizza la traccia audio del video per trascrivere il discorso e creare didascalie, che possono essere modificate per maggiore precisione o personalizzazione. Questi sottotitoli soddisfano i requisiti di accessibilità e migliorano il coinvolgimento video dei tipi di pubblico che si affidano al supporto video basato su testo o che preferiscono farlo.
+
+Per accedere in anteprima al supporto dei sottotitoli generati dall&#39;intelligenza artificiale sul tuo account Dynamic Medie, [crea e invia un Adobe di caso all&#39;Assistenza clienti](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Nuove funzioni nella vista Risorse {#assets-view-new-features}
 
