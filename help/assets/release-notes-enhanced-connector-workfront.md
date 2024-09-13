@@ -5,9 +5,9 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
 source-git-commit: 346f36a476a11dc7fe022df8b7b8df7aff06a2ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ L’ultima versione di [!DNL Workfront for Experience Manager enhanced connector
 
 >[!IMPORTANT]
 >
->L&#39;Adobe consiglia di [eseguire l&#39;aggiornamento alla versione 1.9.20 ](/help/assets/workfront-connector-install.md) di [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe consiglia di [aggiornare alla versione 1.9.20 più recente](/help/assets/workfront-connector-install.md) di [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemi noti {#known-issues}
 
