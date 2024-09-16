@@ -8,8 +8,8 @@ breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
-source-wordcount: '5638'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -459,17 +459,17 @@ ht-degree: 96%
    + [Panoramica dei microservizi per le risorse](/help/assets/asset-microservices-overview.md)
    + [Accessibilità in [!DNL Assets]](/help/assets/accessibility.md)
    + Consente di gestire i contenuti digitali {#manage}
-      + Selettore risorse micro-front-end {#asset-selector}
-         + [Panoramica di Asset Selector](/help/assets/overview-asset-selector.md)
-         + Integrazioni Asset Selector {#asset-selector-integration}
-            + [Panoramica delle integrazioni con Asset Selector](/help/assets/integrate-asset-selector.md)
-            + [Integrare Asset Selector con un’applicazione di Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
-            + [Integrare Asset Selector con un’applicazione non basata su Adobi](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [Integrare Asset Selector per Dynamic Medie con funzionalità OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-         + [Proprietà selettore risorse](/help/assets/asset-selector-properties.md)
-         + [Esempi di selettore risorse](/help/assets/asset-selector-examples.md)
-         + [Personalizzazioni di Asset Selector](/help/assets/asset-selector-customization.md)
-         + [Caricamento selettore risorse](/help/assets/asset-selector-upload.md)
+      + Selettore risorse micro front-end {#asset-selector}
+         + [Panoramica del Selettore risorse](/help/assets/overview-asset-selector.md)
+         + Integrazioni del Selettore risorse {#asset-selector-integration}
+            + [Panoramica delle integrazioni del Selettore risorse](/help/assets/integrate-asset-selector.md)
+            + [Integrare il Selettore risorse con un’applicazione di Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [Integrare il Selettore risorse con un’applicazione non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Integrare il Selettore risorse per Dynamic Media con funzionalità OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [Proprietà del Selettore risorse](/help/assets/asset-selector-properties.md)
+         + [Esempi del Selettore risorse](/help/assets/asset-selector-examples.md)
+         + [Personalizzazioni del Selettore risorse](/help/assets/asset-selector-customization.md)
+         + [Caricamento del Selettore risorse](/help/assets/asset-selector-upload.md)
       + [Selettore di destinazione micro front-end](/help/assets/destination-selector.md)
       + [Condividere le risorse](/help/assets/share-assets.md)
       + [Rielaborazione delle risorse](/help/assets/reprocessing.md)
@@ -545,7 +545,7 @@ ht-degree: 96%
          + [Best practice per Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md)
       + [Newsletter di Dynamic Media curata da Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Impostazione di Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
-      + [Utilizzo di Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
+      + [Utilizzare Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
       + [Configurare Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [Facoltativo - Configurare Dynamic Media, impostazioni generali](/help/assets/dynamic-media/dm-general-settings.md)
       + [Facoltativo - Configurare Dynamic Media, Installazione pubblicazione](/help/assets/dynamic-media/dm-publish-settings.md)
@@ -976,7 +976,7 @@ ht-degree: 96%
          + [Componenti personalizzati](/help/edge/docs/forms/custom-components-forms.md)
          + [Monitoraggio degli utenti reali per i moduli](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + Riferimenti {#forms-references}
-         + [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
+         + [Componenti del blocco modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
    + Risorse di Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utilizzo di Sidekick](/help/edge/docs/sidekick.md)
