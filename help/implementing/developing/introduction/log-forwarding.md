@@ -4,9 +4,9 @@ description: Scopri come inoltrare i registri a Splunk e ad altri fornitori di r
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1359'
 ht-degree: 1%
 
 ---
@@ -177,9 +177,10 @@ I registri AEM (incluso Apache/Dispatcher) vengono visualizzati sotto una cartel
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 In ogni cartella verrà creato un singolo file che verrà aggiunto a. I clienti sono responsabili dell’elaborazione e della gestione di questo file, in modo che non aumenti troppo.
 
@@ -209,6 +210,9 @@ Considerazioni:
 
 * Crea una chiave API, senza alcuna integrazione con un provider cloud specifico.
 * la proprietà tags è facoltativa
+* Per i registri AEM, il tag di origine Datadog è impostato su uno dei seguenti valori: `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` o `aemhttpderror`
+* Per i registri CDN, il tag di origine Datadog è impostato su `aemcdn`
+* il tag del servizio Datadog è impostato su `adobeaemcloud`, ma è possibile sovrascriverlo nella sezione dei tag
 
 
 ### Elasticsearch e OpenSearch {#elastic}
@@ -230,10 +234,12 @@ data:
 
 Considerazioni:
 
+* per impostazione predefinita, la porta è 443. Facoltativamente, può essere sostituito con una proprietà denominata `port`
 * Per le credenziali, assicurati di utilizzare le credenziali di distribuzione anziché le credenziali dell’account. Queste sono le credenziali generate in una schermata che potrebbe assomigliare a questa immagine:
 
 ![Credenziali distribuzione elastica](/help/implementing/developing/introduction/assets/ec-creds.png)
 
+* Per i registri AEM, `index` è impostato su uno di `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` o `aemhttpderror`
 * La proprietà opzionale della pipeline deve essere impostata sul nome della pipeline di acquisizione Elasticsearch o OpenSearch, che può essere configurata per instradare la voce di registro all’indice appropriato. Il tipo di processore della pipeline deve essere impostato su *script* e il linguaggio di script su *indolore*. Di seguito è riportato un frammento di script di esempio per instradare le voci di registro in un indice come aemaccess_dev_26_06_2024:
 
 ```
@@ -254,15 +260,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com:8443/aem_logs/aem"
+      url: "https://example.com/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
 Considerazioni:
 
-* La stringa URL deve includere **https://**, altrimenti la convalida non riuscirà. Se nella stringa URL non è inclusa alcuna porta, viene utilizzata la porta 443 (la porta HTTPS predefinita).
-* Se desideri utilizzare una porta diversa da 443, forniscila come parte dell&#39;URL.
+* La stringa URL deve includere **https://**, altrimenti la convalida non riuscirà.
+* L’URL può includere una porta. Ad esempio, `https://example.com:8443/aem_logs/aem`. Se nella stringa URL non è inclusa alcuna porta, viene utilizzata la porta 443 (la porta HTTPS predefinita).
 
 #### Registri CDN HTTPS {#https-cdn}
 
@@ -278,13 +284,14 @@ Esiste anche una proprietà denominata `sourcetype`, impostata sul valore `aemcd
 
 Per i registri AEM (incluso apache/dispacher), le richieste web (POST) verranno inviate in modo continuo, con un payload json che è un array di voci di registro, con i vari formati di voci di registro come descritto in [Registrazione per AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Proprietà aggiuntive sono menzionate nella sezione [Formati di voce di registro](#log-format) di seguito.
 
-Esiste anche una proprietà denominata `sourcetype`, impostata su uno dei seguenti valori:
+Esiste anche una proprietà denominata `Source-Type`, impostata su uno dei seguenti valori:
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 ### Splunk {#splunk}
 
@@ -299,8 +306,13 @@ data:
       enabled: true
       host: "splunk-host.example.com"
       token: "${{SPLUNK_TOKEN}}"
-      index: "AEMaaCS"
+      index: "aemaacs"
 ```
+
+Considerazioni:
+
+* per impostazione predefinita, la porta è 443. Facoltativamente, può essere sostituito con una proprietà denominata `port`.
+
 
 <!--
 ### Sumo Logic {#sumologic}
@@ -343,119 +355,26 @@ aem_tier: author
 
 ## Rete avanzata {#advanced-networking}
 
->[!NOTE]
->
->Questa funzione non è ancora pronta per essere utilizzata dai primi.
-
-
 Alcune organizzazioni scelgono di limitare il traffico che può essere ricevuto dalle destinazioni di registrazione.
 
-Per il registro CDN, puoi inserire gli indirizzi IP nell&#39;elenco Consentiti, come descritto nella [documentazione rapida - Elenco IP pubblico](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se l’elenco di indirizzi IP condivisi è troppo grande, puoi inviare il traffico a un archivio BLOB di Azure (non Adobe) in cui è possibile scrivere la logica per inviare i registri da un IP dedicato alla destinazione finale.
+Per il registro CDN, puoi inserire gli indirizzi IP nell&#39;elenco Consentiti, come descritto nella [documentazione rapida - Elenco IP pubblico](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se l’elenco di indirizzi IP condivisi è troppo grande, puoi inviare traffico a un server https o a un archivio BLOB di Azure (non Adobe) in cui è possibile scrivere una logica per inviare i registri da un IP noto alla destinazione finale.
 
-Per i registri AEM (incluso Apache/Dispatcher), puoi configurare l&#39;inoltro dei registri in modo che passi attraverso [rete avanzata](/help/security/configuring-advanced-networking.md). Visualizzare i modelli per i tre tipi di rete avanzati riportati di seguito, che utilizzano un parametro facoltativo `port`, insieme al parametro `host`.
-
-### Uscita flessibile della porta {#flex-port}
-
-Se il traffico di registro si dirige verso una porta diversa da 443 (ad esempio, 8443 di seguito), configura la rete avanzata come segue:
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 8443, # something other than 443
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-e configura il file yaml come segue:
+Per i registri AEM (incluso Apache/Dispatcher), se hai configurato [rete avanzata](/help/security/configuring-advanced-networking.md), puoi utilizzare la proprietà advancedNetworking per inoltrarli da un indirizzo IP in uscita dedicato o tramite una VPN.
 
 ```
 kind: "LogForwarding"
 version: "1"
+metadata:
+  envTypes: ["dev"]
 data:
   splunk:
     default:
-      host: "${{AEM_PROXY_HOST}}"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
 ```
 
-### IP in uscita dedicato {#dedicated-egress}
-
-
-Se il traffico di registro deve provenire da un IP in uscita dedicato, configura una rete avanzata come segue:
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443, 
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-e configura il file yaml come segue:
-
-```
-      
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443    
-```
-
-### VPN {#vpn}
-
-Se il traffico di registro deve passare attraverso una VPN, configura la rete avanzata come segue:
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443,
-            "portOrig": 30443
-        }    
-    ]
-}
-
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443     
-```
