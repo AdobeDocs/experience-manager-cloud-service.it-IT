@@ -1,15 +1,15 @@
 ---
-title: Edge Delivery Services per espressioni regex di uso comune in AEM Forms per la convalida dei campi modulo
-description: Edge Delivery Services per espressioni regex di uso comune in AEM Forms per la convalida dei campi modulo
+title: Espressioni regex di uso comune per convalidare i campi modulo in Edge Delivery Services per AEM Forms
+description: Espressioni regex di uso comune per convalidare i campi modulo in Edge Delivery Services per AEM Forms
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 

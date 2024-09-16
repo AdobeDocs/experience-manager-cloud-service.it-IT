@@ -7,15 +7,15 @@ hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '665'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Creare componenti personalizzati
 
-Edge Delivery Services per AEM Forms consente di personalizzare i [componenti nativi del modulo HTML](/help/edge/docs/forms/form-components.md) e di creare moduli interattivi e di facile utilizzo. Consente di modificare i componenti del modulo con il markup predefinito, come spiegato in [Stile dei campi modulo](/help/edge/docs/forms/style-theme-forms.md) utilizzando CSS personalizzato (Cascading Style Sheets) e codice personalizzato per decorare il componente, migliorando in tal modo l’aspetto dei campi modulo all’interno di un Blocco di moduli adattivi.
+Edge Delivery Services per AEM Forms ti consente di personalizzare i [componenti nativi del modulo HTML](/help/edge/docs/forms/form-components.md) e di creare moduli interattivi e di facile utilizzo. Consente di modificare i componenti del modulo con il markup predefinito, come spiegato in [Stile dei campi modulo](/help/edge/docs/forms/style-theme-forms.md) utilizzando CSS personalizzato (Cascading Style Sheets) e codice personalizzato per decorare il componente, migliorando in tal modo l’aspetto dei campi modulo all’interno di un Blocco di moduli adattivi.
 
 ![Componente personalizzato](/help/edge/assets/custom-component-image.png)
 

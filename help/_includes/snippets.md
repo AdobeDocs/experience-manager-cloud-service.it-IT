@@ -1,8 +1,8 @@
 ---
 source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '993'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 # Snippet {#snippets}
@@ -56,14 +56,14 @@ ht-degree: 89%
 
 ## Consulta anche {#see-more-forms-eds}
 
-* [Guida introduttiva ai Edge Delivery Services per AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Guida introduttiva a Edge Delivery Services per AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Impostare i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati](/help/edge/docs/forms/submit-forms.md)
 * [Pubblicare il modulo e iniziare a raccogliere i dati](/help/edge/docs/forms/publish-forms.md)
 * [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
 * [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
-* [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
+* [Componenti del blocco modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
 
 
 ## Differenza tra l’editor di regole nei Componenti core e nei Componenti di base {#rule-editor-diff}
@@ -156,28 +156,28 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >Se utilizzi, o intendi utilizzare, la pipeline front-end per sviluppare siti, è necessario aggiungere in anticipo l’elenco consentiti IP di Cloud Manager.
 >Consulta [Utilizzo dell’Elenco consentiti IP di Cloud Manager con la pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
-## Utilizzo di Dynamic Media {#work-with-dynamic-media}
+## Utilizzare Dynamic Media {#work-with-dynamic-media}
 
 >[!TIP]
 >
->Sei nuovo su Dynamic Medie? Per una rapida panoramica di alto livello di Dynamic Medie, vedi [Utilizzare Dynamic Medie](/help/assets/dynamic-media/dynamic-media.md).
+>Hai appena cominciato a usare Dynamic Media? Per una rapida panoramica di alto livello di Dynamic Media, consulta [Utilizzare Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 
-## Vedi anche per Dynamic Medie {#see-also-dm}
+## Cerca anche Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* Sei nuovo su Dynamic Medie? Per una rapida panoramica di alto livello di Dynamic Medie, vedi [Utilizzare Dynamic Medie](/help/assets/dynamic-media/dynamic-media.md).
+>* Hai appena cominciato a usare Dynamic Media? Per una rapida panoramica di alto livello di Dynamic Media, consulta [Utilizzare Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 >
->* Segui le [best practice per Dynamic Medie](/help/assets/dynamic-media/dm-best-practices.md) per ottenere il massimo valore.
+>* Segui le [best practice per Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) per sfruttarlo al meglio.
 >
->* Prova le funzionalità dell&#39;immagine Dynamic Medie con [lo strumento Snapshot](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>* Prova le funzionalità dell&#39;immagine Dynamic Media con [lo strumento Snapshot](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
->* Assicurati una riproduzione video fluida con [video adattivo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
+>* Assicurati una riproduzione video fluida con [video adattivo](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
 >
->* Ritaglio automatico di [immagini con ritaglio avanzato](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>* Ritaglio automatico di [immagini con Ritaglio avanzato](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 >
->* Automatizza il ritaglio di [video con Ritaglio avanzato](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
+>* Automatizza il ritaglio di [video con Ritaglio avanzato](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Distribuisci [esperienza interattiva basata su 3D](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
->* Altra [banca risorse Dynamic Medie](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+>* Distribuisci [esperienza interattiva basata su 3D](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Altre [risorse su Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 

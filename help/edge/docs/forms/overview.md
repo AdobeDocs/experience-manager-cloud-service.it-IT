@@ -1,20 +1,20 @@
 ---
-title: Panoramica dei Edge Delivery Services per AEM Forms
+title: Panoramica di Edge Delivery Services per AEM Forms
 description: Edge Delivery Services per AEM Forms
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1037'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Edge Delivery Services per AEM Forms
 
 
-Edge Delivery Services per AEM Forms è un set componibile di servizi che consente un ambiente di sviluppo rapido in cui gli autori possono aggiornare, pubblicare e avviare rapidamente nuovi moduli. Questi servizi forniscono esperienze di moduli di eccezionale e forte impatto che determinano coinvolgimento e conversioni. Queste esperienze di moduli sono facili da creare e sviluppare.
+Edge Delivery Services per AEM Forms è un set di servizi componibili per un ambiente di sviluppo rapido in cui nuovi moduli possono essere aggiornati, pubblicati e lanciati rapidamente dagli autori. Questi servizi forniscono esperienze di moduli di eccezionale e forte impatto che determinano coinvolgimento e conversioni. Queste esperienze di moduli sono facili da creare e sviluppare.
 
 Questi servizi consentono di:
 
@@ -22,21 +22,19 @@ Questi servizi consentono di:
 
 * **Offrire esperienze di registrazione digitale eccezionali:** offri esperienze di registrazione digitale che vengono caricate e riprodotte rapidamente, e controlla in modo continuo le prestazioni dei moduli tramite il monitoraggio degli utenti reali (RUM, Real User Monitoring). Tempi di caricamento più rapidi e un’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento e conversione dei moduli.
 
-* **Usa set di strumenti descrittivo per sviluppatori:** Edge Delivery Services per AEM Forms
-utilizza plain HTML, CSS moderno e vanilla JavaScript per creare esperienze eccezionali, evitando la curva di apprendimento ripida di un framework specifico. Uno sviluppatore con competenze di base per lo sviluppo web può personalizzare e creare facilmente componenti ed esperienze di moduli. Non è necessario attendere l’esecuzione di una pipeline, è sufficiente archiviare il codice in GitHub e le modifiche sono live.
+* **Usare set di strumenti intuitivi per gli sviluppatori:** Edge Delivery Services per AEM Forms utilizza il normale linguaggio HTML, CSS moderni e JavaScript Vanilla per creare esperienze eccezionali, evitando la curva di apprendimento ripida di un framework specifico. Uno sviluppatore con competenze di base per lo sviluppo web può personalizzare e creare facilmente componenti ed esperienze di moduli. Non è necessario attendere l’esecuzione di una pipeline, è sufficiente archiviare il codice in GitHub e le modifiche sono live.
 
-## Panoramica dei Edge Delivery Services per AEM Forms {#edge-overview}
+## Panoramica di Edge Delivery Services per AEM Forms {#edge-overview}
 
-I Edge Delivery Services per AEM Forms offrono un elevato grado di flessibilità nella modalità di creazione dei moduli sul sito web. È possibile creare contenuti e moduli con [authoring WYSIWYG](/help/forms/creating-adaptive-form-core-components.md) nonché [authoring basato su documenti](/help/edge/docs/forms/create-forms.md). Edge Delivery Services per AEM Forms
-specifica un blocco di moduli, noto come [Blocco di Forms adattivo](/help/edge/docs/forms/create-forms.md), per aggiungere un modulo al sito dei Edge Delivery Services.
+Edge Delivery Services per AEM Forms offre un elevato grado di flessibilità nel modo in cui vengono creati i moduli sul sito web. È possibile creare contenuti e moduli con [authoring WYSIWYG](/help/forms/creating-adaptive-form-core-components.md) nonché [authoring basato su documenti](/help/edge/docs/forms/create-forms.md). Edge Delivery Services per AEM Forms fornisce un blocco di moduli, noto come [blocco di moduli adattivi](/help/edge/docs/forms/create-forms.md), per aggiungere un modulo al sito Edge Delivery Services.
 
 Ad esempio, i moduli vengono creati direttamente in Microsoft Excel o Fogli Google e questi fogli di calcolo vengono trasformati in moduli per il sito Web. Qualsiasi nuovo modulo o relativo contenuto, ad esempio un nuovo campo modulo, è immediatamente disponibile sul sito web senza che sia necessario ricrearlo.
 
 Il diagramma seguente illustra come modificare il contenuto in Microsoft Excel o Fogli Google (modifica basata su documento) e pubblicarlo in Edge Delivery Services. Mostra anche il metodo di pubblicazione AEM utilizzando l’authoring WYSIWYG (Editor universale o editor di moduli adattivi).
 
-![Pubblica in Edge Delivery Services e AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
+![Pubblicare in Edge Delivery Services e AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
-I Edge Delivery Services per AEM Forms utilizzano GitHub per consentire ai clienti di gestire e distribuire il codice direttamente dall’archivio GitHub. Ad esempio, puoi scrivere contenuti in [Fogli Google](/help/edge/docs/forms/create-forms.md) o in [Microsoft Excel](/help/edge/docs/forms/create-forms.md) e i componenti dei moduli possono essere sviluppati utilizzando CSS e JavaScript in un archivio GitHub.
+Edge Delivery Services per AEM Forms sfrutta GitHub per consentire di gestire e distribuire il codice direttamente dall’archivio GitHub. Ad esempio, puoi scrivere contenuti in [Fogli Google](/help/edge/docs/forms/create-forms.md) o in [Microsoft Excel](/help/edge/docs/forms/create-forms.md) e i componenti dei moduli possono essere sviluppati utilizzando CSS e JavaScript in un archivio GitHub.
 
 Quando i moduli sono pronti, puoi utilizzare l’estensione del browser [barra laterale di AEM](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) per visualizzare in anteprima e pubblicare gli aggiornamenti dei contenuti.
 
@@ -87,11 +85,11 @@ In sostanza, l’authoring WYSIWYG (Editor universale o [editor di moduli adatti
 >[!NOTE]
 >
 >
-> La funzionalità di authoring WYSIWYG è disponibile nell’ambito del programma per i primi utilizzatori. Se sei interessato, invia una breve e-mail dall’indirizzo di lavoro a aem-forms-ea@adobe.com per richiedere l’accesso alla funzionalità.
+> La funzionalità di authoring WYSIWYG è disponibile nell’ambito del programma per i primi utilizzatori. Se ti interessa, invia una breve e-mail dal tuo indirizzo di lavoro a aem-forms-ea@adobe.com per richiedere l’accesso a questa funzionalità.
 
 ### Edge Delivery Services per AEM Forms
 
-: authoring, pubblicazione e invio di Forms
+: authoring, pubblicazione e invio di moduli
 
 I seguenti diagrammi illustrano il processo di creazione, pubblicazione e invio di moduli tramite l’authoring basato su documenti e l’authoring WYSIWYG.
 
@@ -101,14 +99,14 @@ I seguenti diagrammi illustrano il processo di creazione, pubblicazione e invio 
 
 ## Inizia a creare i moduli
 
-* [Guida introduttiva ai Edge Delivery Services per AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Guida introduttiva a Edge Delivery Services per AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Impostare i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati](/help/edge/docs/forms/submit-forms.md)
 * [Pubblicare il modulo e iniziare a raccogliere i dati](/help/edge/docs/forms/publish-forms.md)
 * [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
 * [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
-* [Componenti del blocco di modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
+* [Componenti del blocco modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
 * [Monitoraggio dell’utilizzo reale](https://www.aem.live/developer/rum#authentication)
 
 <!-- 

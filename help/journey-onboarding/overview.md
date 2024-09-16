@@ -6,24 +6,24 @@ recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1295'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 
 # Percorso di onboarding {#onboarding-journey}
 
-Congratulazioni per aver scelto AEM as a Cloud Service. Questo documento è il punto di partenza del percorso guidato nel processo di onboarding. Che tu stia distribuendo una nuova applicazione o ne esegua la migrazione, questo percorso di onboarding configura i tuoi team. In questo modo gli utenti possono accedere ad AEM as a Cloud Service.
+Congratulazioni per aver scelto AEM as a Cloud Service. Questo documento è il punto di partenza del percorso guidato nel processo di onboarding. Se stai implementando una nuova applicazione o stai eseguendo una migrazione, con questo percorso di onboarding puoi preparare i tuoi team. Ti consente di assicurarti che gli utenti possano accedere ad AEM as a Cloud Service.
 
 ## Introduzione {#introduction}
 
-Adobe Experience Manager è una potente suite di servizi per contenuti componibili che offre rapidamente esperienze personalizzate di forte impatto su qualsiasi canale, consentendo di sbloccare contenuti da tutti e per tutti. **Edge Delivery Services** è l’innovazione più recente di Adobe Experience Manager che consente una velocità eccezionale dei contenuti offrendo esperienze senza pari. Per scoprire come iniziare a utilizzare Edge Delivery Services, consulta [Panoramica di Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview). Per informazioni sull’utilizzo di Edge Delivery Services, consulta la pagina [Tutorial per sviluppatori](https://www.aem.live/developer/tutorial).
+Adobe Experience Manager è una potente suite di servizi per contenuti componibili che offre rapidamente esperienze personalizzate di forte impatto su qualsiasi canale, consentendo di sbloccare contenuti da tutti e per tutti. **Edge Delivery Services** è l’innovazione più recente di Adobe Experience Manager che consente una velocità eccezionale dei contenuti offrendo esperienze senza pari. Per scoprire come iniziare a utilizzare Edge Delivery Services, consulta [Panoramica di Edge Delivery Services](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/overview). Per informazioni sull’utilizzo di Edge Delivery Services, consulta la pagina [Tutorial per sviluppatori](https://www.aem.live/developer/tutorial).
 
 L’onboarding è il processo durante il quale l’amministratore di sistema designato configura AEM as a Cloud Service per l’organizzazione. Il procedimento include il provisioning iniziale delle risorse cloud e l’assegnazione degli utenti ai ruoli in base alle rispettive responsabilità lavorative. In questo modo, ogni membro può collegarsi e accedere alle proprie risorse in AEM as a Cloud Service.
 
-![Il percorso di onboarding](/help/journey-onboarding/assets/onboarding-journey.png).
+![Percorso di onboarding](/help/journey-onboarding/assets/onboarding-journey.png).
 
 Questa guida affronta i più importanti argomenti relativi all’onboarding. Dopo aver concluso il percorso:
 
@@ -42,34 +42,34 @@ Sebbene possa sembrare che vi siano molte informazioni da apprendere quando si i
 
 * **Contratto**: è necessario avere familiarità con il contratto sottoscritto con Adobe in quanto definisce gli aspetti del processo di onboarding.
 * **Admin Console**: l’ambiente dove si gestiscono gli utenti e si assegnano i ruoli.
-* **Cloud Manager**: lo strumento per configurare risorse quali programmi e ambienti. Accedi a Git e crea pipeline per gestire e distribuire il codice personalizzato.
+* **Cloud Manager**: lo strumento per configurare risorse quali programmi e ambienti. Da Cloud Manager puoi accedere a Git e creare pipeline per gestire e distribuire il codice personalizzato.
 
-Tali concetti sono descritti dettagliatamente in questo percorso di onboarding. L’obiettivo è che, alla fine del percorso, sia possibile effettuare le seguenti operazioni:
+Tali concetti sono descritti dettagliatamente in questo percorso di onboarding. L’obiettivo è che, alla fine del percorso, tu possa:
 
-* Concedi all’utente necessario l’accesso ad AEM as a Cloud Service.
-* Configura le prime risorse cloud per il progetto.
-* scoperto come distribuire il codice per la prima volta e creato il primo contenuto.
+* concedere agli utenti l’accesso necessario ad AEM as a Cloud Service;
+* configurare le prime risorse cloud per il progetto;
+* sapere come distribuire il codice per la prima volta e creare il primo contenuto.
 
 In sostanza, tutto ciò che serve per iniziare al meglio un nuovo progetto AEM as a Cloud Service.
 
 ## Pubblico {#audience}
 
-Il percorso di onboarding è destinato specificatamente all&#39;**amministratore di sistema** dei clienti che hanno poca esperienza con AEM as a Cloud Service e con AEM in generale. L’amministratore di sistema è la persona che effettua l’Adobe dei contatti per prima dopo la firma del contratto AEM as a Cloud Service. In genere, è la prima persona ad accedere e configurare le risorse su AEM as a Cloud Service. Se stai leggendo questo argomento, è molto probabile che tu sia l’amministratore di sistema.
+Il percorso di onboarding è destinato specificatamente all’**amministratore di sistema** delle organizzazioni che hanno poca esperienza con AEM as a Cloud Service e con AEM in generale. Dopo aver sottoscritto il contratto di AEM as a Cloud Service, l’amministratore di sistema è la persona che viene contattata per prima da Adobe. In genere, è la prima persona ad accedere e configurare le risorse su AEM as a Cloud Service. Se stai leggendo questo argomento, è molto probabile che tu sia l’amministratore di sistema.
 
 L’amministratore di sistema gestisce tutti gli aspetti degli utenti di AEMaaCS dell’organizzazione, dall’accesso alle autorizzazioni. Tuttavia, l’amministratore di sistema deve interagire con altre persone durante il percorso.
 
 | Persona | Descrizione | Ruolo nel percorso |
 |---|---|---|
-| Amministratore di sistema | La destinazione di questo percorso fornisce il provisioning iniziale delle risorse cloud e l’assegnazione degli utenti a ruoli appropriati in base alle loro responsabilità lavorative | Gestione di tutti gli aspetti relativi agli utenti, dall’accesso alle autorizzazioni. |
-| Autore di contenuti | Crea e rivede i contenuti in AEM. | Dopo aver ricevuto le autorizzazioni dall’amministratore di sistema, gli autori possono avviare un proprio percorso nella creazione dei contenuti |
-| Sviluppatore | Sviluppa applicazioni AEM che utilizzano contenuti provenienti da fonti diverse | Una volta ricevute le autorizzazioni dall’amministratore di sistema, gli sviluppatori possono avviare il proprio percorso nello sviluppo di soluzioni |
+| Amministratore di sistema | Il destinatario di questo percorso fornisce il provisioning iniziale delle risorse cloud e assegna gli utenti ai ruoli appropriati in base alle rispettive responsabilità lavorative. | Gestione di tutti gli aspetti relativi agli utenti, dall’accesso alle autorizzazioni. |
+| Autore di contenuti | Crea e rivede i contenuti in AEM. | Dopo aver ricevuto le autorizzazioni dall’amministratore di sistema, gli autori e le autrici possono iniziare il percorso per la creazione di contenuti |
+| Sviluppatore | Sviluppa le applicazioni AEM che utilizzano contenuti provenienti da fonti diverse | Dopo aver ricevuto le autorizzazioni dall’amministratore di sistema, gli sviluppatori e le sviluppatrici possono iniziare il percorso per lo sviluppo di soluzioni |
 | Responsabile dell’implementazione | Aggiunge o aggiorna un ambiente, esegue le pipeline e distribuisce il codice nell’ambiente AEM o per la verifica della qualità del codice. | Dopo aver ricevuto le autorizzazioni dall’amministratore di sistema, i e le responsabili dell’implementazione possono iniziare il percorso per la gestione delle distribuzioni. |
 
 Questa guida all’onboarding descrive l’intero processo di onboarding come amministratore di sistema. I ruoli Utenti di AEM, Sviluppatore e Responsabile dell’implementazione sono brevemente descritti come parti aggiuntive e facoltative del percorso.
 
 >[!TIP]
 >
->Se hai poca esperienza con AEM as a Cloud Service e conosci l&#39;AEM e stai eseguendo la migrazione da Managed Services on-premise o Adobe, vedi [Percorso di migrazione AEM as a Cloud Service](/help/journey-migration/getting-started.md).
+>Se stai usando AEM as a Cloud Service per la prima volta, ma hai familiarità con AEM e stai eseguendo la migrazione da On-Premise o da Adobe Managed Services, consulta [Percorso di migrazione ad AEM as a Cloud Service](/help/journey-migration/getting-started.md).
 
 ## Panoramica del percorso di onboarding {#overview}
 
@@ -93,16 +93,16 @@ I seguenti articoli descrivono in dettaglio i concetti fondamentali dell’onboa
 
 Ora puoi iniziare il percorso di onboarding di AEM as a Cloud Service. Ti invitiamo a continuare con la sezione successiva del percorso e a leggere l’articolo [Preparazione all’onboarding](preparation.md)
 
-## percorsi di documentazione AEM {#documentation-journeys}
+## Percorsi di documentazione AEM {#documentation-journeys}
 
-[Un percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e complessi. Fornisce un resoconto che aiuta il lettore, che utilizza AEM per la prima volta, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o di AEM.
+[Un percorso di documentazione](/help/journey-documentation/documentation-journeys.md) unisce molti argomenti e caratteristiche diversi e complicati. Fornisce un resoconto che aiuta chi utilizza AEM per la prima volta a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o di AEM.
 
-I Percorsi di documentazione sono progettati in base ai principi delle best practice. Vengono informati tramite le ultime ricerche condotte da Adobe, la comprovata esperienza nell’implementazione da parte di consulenti Adobe e il feedback raccolto sui progetti dei clienti.
+I percorsi di documentazione sono progettati in base ai principi delle best practice. Sono ispirati alle ultime ricerche condotte da Adobe, alla comprovata esperienza nell’implementazione da parte dei consulenti Adobe e al feedback raccolto sui progetti dei nostri clienti.
 
-Se desideri conoscere i consigli dell’Adobe su come effettuare l’onboarding del team nella nuova applicazione AEM as a Cloud Service, inizia qui.
+Se desideri conoscere i consigli di Adobe su come procedere all’onboarding del team nella nuova applicazione AEM as a Cloud Service, inizia da qui.
 
 ## Risorse aggiuntive {#additional-resources}
 
 Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
-* [Onboarding per AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding): questo breve video offre una panoramica del processo di onboarding del Cloud Service per AEM.
+* [Onboarding per AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding): questo breve video offre una panoramica del processo di onboarding del Cloud Service per AEM.
