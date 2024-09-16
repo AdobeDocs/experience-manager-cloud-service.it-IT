@@ -1,12 +1,12 @@
 ---
 title: Post-pubblicazione
-description: Scopri come monitorare i problemi e migliorare le prestazioni
+description: Scopri come monitorare i problemi e migliorare le prestazioni.
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
+source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 16%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Risoluzione dei problemi relativi ad AEM"
->abstract="Rivedi le best practice per lo sviluppo continuo e gestisci i registri insieme a strumenti come Developer Console e CRXDE Lite per aiutarti nella risoluzione dei problemi relativi all’AEM"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=it" text="Accesso e gestione dei registri"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=it#aem-as-a-cloud-service-development-tools" text="Strumenti di sviluppo in AEM as a Cloud Service"
+>abstract="Rivedi le best practice per lo sviluppo e la gestione continui dei registri. Scopri strumenti come Developer Console e CRXDE Lite per aiutarti nella risoluzione dei problemi relativi all’AEM."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accesso e gestione dei registri"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Strumenti di sviluppo in AEM as a Cloud Service"
 
 Questo percorso è l’ultima parte, per consentirti di imparare a monitorare i problemi e migliorare le prestazioni al termine della migrazione. Assicurati che i file temporanei vengano eliminati, rivedi le best practice per lo sviluppo continuo e gestisci i registri.
 
@@ -45,7 +45,7 @@ Per ulteriori informazioni sugli strumenti di sviluppo, consulta [Implementazion
 In qualità di utente, puoi accedere a CRXDE Lite nell’ambiente di sviluppo ma non in quello di stage o produzione.
 
 >[!IMPORTANT]
->La scrittura in archivi immutabili come `/libs` e `/apps` in fase di runtime genera errori. Inoltre, non hai accesso agli strumenti per sviluppatori per gli ambienti di staging e produzione.
+>La scrittura in archivi immutabili, come `/libs` e `/apps` in fase di runtime, genera errori. Inoltre, non hai accesso agli strumenti per sviluppatori per gli ambienti di staging e produzione.
 
 Consulta [Sviluppo con CRXDE Lite](/help/implementing/developing/tools/crxde.md) per ulteriori informazioni su come sviluppare l&#39;applicazione AEM utilizzando CRXDE Lite.
 
