@@ -4,10 +4,10 @@ description: Panoramica di AEM as a Cloud Service Software Development Kit
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8ccf03ebcb4a96b66a15dc9a1161a857888278a7
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,6 +24,10 @@ Inoltre, alcuni clienti che sono stati distribuiti in precedenza con AEM 6.5 o v
 
 * **6.5 Deprecato Java™ API Jar** - un set aggiuntivo di interfacce che sono state rimosse dopo AEM 6.5
 * **6.5 Jar Javadoc obsoleto** - Javadoc per il set aggiuntivo di interfacce
+
+>[!NOTE]
+> 
+> Esistono differenze tra AEM as a Cloud Service e l’SDK in diverse aree. Per le situazioni in cui sono necessari cambiamenti rapidi e iterativi, Adobe ha introdotto ambienti di sviluppo rapido. Per ulteriori informazioni, consulta [Ambienti di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 ## Creazione per l’SDK {#building-for-the-sdk}
 
