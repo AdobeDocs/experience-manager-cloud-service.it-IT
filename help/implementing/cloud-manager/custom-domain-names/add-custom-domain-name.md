@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
+source-git-commit: f45de13049f78f97b256235d9395695cb531c40d
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 20%
+source-wordcount: '1490'
+ht-degree: 21%
 
 ---
 
@@ -21,15 +21,15 @@ Scopri come aggiungere un nome di dominio personalizzato con Cloud Manager.
 
 Prima di aggiungere un nome di dominio personalizzato in Cloud Manager, è necessario soddisfare questi requisiti.
 
-* È necessario aggiungere un certificato SSL di dominio per il dominio che si desidera aggiungere prima di aggiungere un nome di dominio personalizzato come descritto nel documento [Aggiunta di un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+* È necessario aggiungere un certificato SSL di dominio per il dominio che si desidera aggiungere prima di aggiungere un nome di dominio personalizzato come descritto nel documento [Aggiungere un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 * Per aggiungere un nome di dominio personalizzato in Cloud Manager è necessario avere il ruolo **Proprietario business** o **Responsabile dell&#39;implementazione**.
-* Utilizzare la rete CDN Fastly.
+* Utilizzare la rete CDN Fastly o di altro tipo.
 
 >[!IMPORTANT]
 >
 >Anche se utilizzi una rete CDN non Adobe, devi comunque aggiungere il dominio a Cloud Manager.
 
-## Dove aggiungere i nomi di dominio personalizzati {#}
+## Dove aggiungere nomi di dominio personalizzati {#where-to-add-cdn}
 
 In Cloud Manager è possibile aggiungere un nome di dominio personalizzato da due posizioni:
 
@@ -68,7 +68,7 @@ Non includere `http://`, `https://` o spazi durante l’inserimento del dominio.
 
    | Se hai selezionato il tipo di certificato | Descrizione |
    | --- | ---  |
-   | Certificato gestito da Adobe | Completa i [passaggi Adobi del certificato gestito](#abobe-managed-cert-steps) prima di procedere al passaggio successivo. |
+   | Certificato gestito da Adobe | Completa i [passaggi Adobi del certificato gestito](#adobe-managed-cert-steps) prima di procedere al passaggio successivo. |
    | Certificato gestito dal cliente | Completa i [passaggi del certificato gestito dal cliente](#customer-managed-cert-steps) prima di procedere al passaggio successivo. |
 
 1. Fare clic su **Verifica**.
@@ -78,7 +78,6 @@ Non includere `http://`, `https://` o spazi durante l’inserimento del dominio.
    >[!NOTE]
    >
    >Se utilizzi un certificato SSL gestito autonomamente e un provider CDN gestito autonomamente, puoi saltare questo passaggio e passare direttamente a [Aggiungi una configurazione CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) quando è pronto.
-
 
 
 ### Adobe di passaggi di certificati gestiti {#adobe-managed-cert-steps}
@@ -97,7 +96,7 @@ Per configurare queste impostazioni, determinare se è necessario configurare un
 >
 >Ad Adobe, quando si utilizzano certificati DV (convalida del dominio), sono consentiti solo i siti con convalida ACME.
 
-#### Requisiti {#dv-requirements}
+#### Requisiti {#adobe-managed-cert-dv-requirements}
 
 Rispetta questi requisiti prima di configurare i record DNS.
 
@@ -105,7 +104,7 @@ Rispetta questi requisiti prima di configurare i record DNS.
 * Essere in grado di modificare i record DNS per il dominio dell&#39;organizzazione o contattare la persona appropriata che può farlo.
 * È necessario aver già verificato il nome di dominio personalizzato configurato come descritto nel documento [Verifica dello stato del nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
-#### Record CNAME {#cname-record}
+#### Record CNAME {#adobe-managed-cert-cname-record}
 
 Un nome canonico o record CNAME è un tipo di record DNS che associa un nome alias a un nome di dominio reale o canonico. I record CNAME vengono in genere utilizzati per associare un sottodominio come `www.example.com` al dominio che ospita il contenuto del sottodominio.
 
@@ -115,7 +114,7 @@ Accedere al provider di servizi DNS e creare un record `CNAME` per far sì che i
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### Record APEX {#apex-record}
+#### Record APEX {#adobe-managed-cert-apex-record}
 
 Un dominio apex è un dominio personalizzato che non contiene un sottodominio, ad esempio `example.com`. Un dominio APEX è configurato con un record `A`, `ALIAS` o `ANAME` tramite il provider DNS. I domini apex devono puntare a indirizzi IP specifici.
 
@@ -132,7 +131,6 @@ Aggiungi i seguenti `A` record alle impostazioni DNS del dominio tramite il prov
 * `A record for domain @ pointing to IP 151.101.195.10`
 
 
-
 ### Passaggi del certificato gestito dal cliente {#customer-managed-cert-steps}
 
 Se hai selezionato il tipo di certificato *Certificato gestito dal cliente*, completa i passaggi seguenti nella finestra di dialogo **Verifica dominio**.
@@ -145,7 +143,7 @@ Un record di testo (noto anche come record TXT) è un tipo di record di risorse 
 
 Cloud Manager utilizza un record TXT specifico per autorizzare un dominio ad essere ospitato in un servizio CDN. Crea un record TXT DNS nella zona che autorizza Cloud Manager a distribuire il servizio CDN con il dominio personalizzato e associalo al servizio back-end. Questa associazione è interamente sotto il tuo controllo e autorizza Cloud Manager a distribuire contenuti dal servizio a un dominio. Tale autorizzazione può essere concessa e revocata. Il record TXT è specifico del dominio e dell’ambiente Cloud Manager.
 
-## Requisiti {#requirements-customer-cert}
+#### Requisiti {#customer-managed-cert-requirements}
 
 Prima di aggiungere un record TXT, è necessario soddisfare questi requisiti.
 
@@ -153,7 +151,7 @@ Prima di aggiungere un record TXT, è necessario soddisfare questi requisiti.
 * Essere in grado di modificare i record DNS per il dominio dell&#39;organizzazione o contattare la persona appropriata che può farlo.
 * Innanzitutto, aggiungi un nome di dominio personalizzato come descritto in precedenza in questo articolo.
 
-## Aggiungi un record TXT per la verifica {#verification}
+#### Aggiungi un record TXT per la verifica {#customer-managed-cert-verification}
 
 1. Nella finestra di dialogo **Verifica dominio**, Cloud Manager visualizza il nome e il valore TXT da utilizzare per la verifica. Copia questo valore.
 
@@ -170,7 +168,7 @@ Prima di aggiungere un record TXT, è necessario soddisfare questi requisiti.
 
 1. Salva il record TXT nell’host del dominio.
 
-## Verifica record TXT {#verify}
+#### Verifica record TXT {#customer-managed-cert-verify}
 
 Al termine dell&#39;operazione, è possibile verificare il risultato eseguendo il comando seguente.
 

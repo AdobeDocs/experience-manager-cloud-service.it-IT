@@ -5,7 +5,7 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
+source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 6%
@@ -47,11 +47,11 @@ I controlli di audit vengono eseguiti come parte della pipeline. I controlli di 
 
 L’audit dell’esperienza è disponibile per impostazione predefinita per le pipeline di produzione. Facoltativamente, può essere abilitato per lo sviluppo di pipeline full stack e front-end. In tutti i casi, è necessario definire quali percorsi di contenuto vengono valutati durante l’esecuzione della pipeline.
 
-1. A seconda del tipo di pipeline che desideri configurare, segui le istruzioni riportate di seguito:
+1. A seconda del tipo di pipeline che desideri configurare, effettua una delle seguenti operazioni:
 
    * Aggiungi una nuova [pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) per definire i percorsi che dovranno essere valutati dal controllo di audit.
-   * Aggiungi una nuova [pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) se desideri abilitare il controllo di audit su una pipeline front-end o di sviluppo full-stack.
-   * Oppure puoi [modificare una pipeline esistente,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e aggiornare le opzioni esistenti.
+   * Aggiungi una nuova [pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) se desideri abilitare il controllo di audit su una pipeline front-end o full-stack di sviluppo.
+   * In alternativa, è possibile [modificare una pipeline esistente](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e aggiornare le opzioni esistenti.
 
 1. Per utilizzare Audit dell&#39;esperienza quando si aggiunge o si modifica una pipeline non di produzione, selezionare la casella di controllo **Audit dell&#39;esperienza**. È possibile trovare questa opzione nella scheda **Codice Source**.
 
@@ -176,7 +176,7 @@ Fai clic sul collegamento **visualizza pagine** nella visualizzazione dei dettag
 
 ![Pagine per i dettagli dei consigli](assets/experience-audit-details-pages.png)
 
-##### Pagine digitalizzate {#scanned-pages}
+##### Pagine scansionate {#scanned-pages}
 
 La sezione **Pagine digitalizzate** fornisce dettagli sui punteggi di tutte le pagine digitalizzate. Utilizza i pulsanti **Precedente** e **Successivo** per scorrere i risultati e scegliere il numero di pagine da visualizzare.
 
@@ -218,7 +218,7 @@ Puoi filtrare il grafico dei punteggi in base al tipo di trigger utilizzando il 
 >
 >È possibile avviare una scansione on-demand solo se l’ambiente non viene eliminato e non sono presenti altre scansioni in sospeso nello stesso ambiente.
 
-## L’audit dell’esperienza riscontra problemi {#issues}
+## Problemi rilevati da Audit dell’esperienza {#issues}
 
 Se le [pagine configurate](#configuration) per l&#39;audit non erano disponibili o si sono verificati altri errori nel controllo di audit, l&#39;audit dell&#39;esperienza riflette questo fatto.
 
@@ -236,7 +236,6 @@ Alcuni motivi per cui le pagine potrebbero non essere disponibili sono i seguent
 * La pagina non esiste.
 * La pagina viene reindirizzata richiedendo un’autenticazione diversa da quella di base.
 * Si è verificato un problema interno.
-* Ecc.
 
 >[!TIP]
 >
@@ -255,7 +254,7 @@ Puoi migliorare queste aree eseguendo le seguenti operazioni:
 * Conversione di immagini in formato WebP per ridurne le dimensioni.
 * Utilizzo di `<picture>` e dell&#39;immagine `srcset` con dimensioni dell&#39;immagine diverse per le diverse dimensioni del riquadro di visualizzazione (assicurandosi che il ridimensionamento funzioni).
 
-## Dettagli della valutazione di Experience Audit {#details}
+## Dettagli della valutazione di Audit dell’esperienza {#details}
 
 I dettagli seguenti forniscono informazioni aggiuntive su come l’audit dell’esperienza valuta il sito. Non sono necessarie per l’utilizzo generale della funzione e sono fornite qui per completezza.
 
