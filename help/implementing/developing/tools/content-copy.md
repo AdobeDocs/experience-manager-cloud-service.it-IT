@@ -4,14 +4,14 @@ description: Lo strumento di copia dei contenuti consente agli utenti di copiare
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 33%
+source-wordcount: '1347'
+ht-degree: 34%
 
 ---
 
-# Lo strumento Copia contenuto {#content-copy}
+# Strumento Copia contenuto {#content-copy}
 
 Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai loro ambienti di produzione su AEM as a Cloud Service in ambienti più bassi a scopo di test.
 
@@ -64,8 +64,8 @@ Prima di poter copiare qualsiasi contenuto, è necessario definire un set di con
 1. Nella scheda **Percorsi del contenuto** della procedura guidata, specifica i percorsi del contenuto modificabile da includere nel set di contenuti.
 
    1. Immetti il percorso nel campo **Aggiungi percorso di inclusione**.
-   1. Fare clic su **Aggiungi percorso** per aggiungere il percorso al set di contenuti.
-   1. Fare di nuovo clic su **Aggiungi percorso** in base alle esigenze.
+   1. Fai clic su **Aggiungi percorso** per aggiungere il percorso al set di contenuti.
+   1. Se necessario, fai di nuovo clic su **Aggiungi percorso**.
       * Sono consentiti fino a 50 percorsi.
 
    ![Aggiungi percorsi al set di contenuti](assets/add-content-set-paths.png)
@@ -200,3 +200,10 @@ Lo strumento Copia contenuto presenta le seguenti limitazioni.
 * Lo strumento di copia del contenuto non dispone di funzionalità di controllo delle versioni e non è in grado di rilevare automaticamente il contenuto modificato o creato nell&#39;ambiente di origine di un set di contenuti dall&#39;ultima operazione di copia del contenuto.
    * Se desideri aggiornare l’ambiente di destinazione solo con le modifiche apportate al contenuto, dall’ultima operazione di copia del contenuto devi creare un set di contenuti. Quindi, specifica i percorsi nell’istanza sorgente in cui sono state apportate le modifiche dall’ultima operazione di copia del contenuto.
 * Le informazioni sulla versione non sono incluse in una copia del contenuto.
+
+## Problemi noti {#known-issues}
+
+Quando si utilizza la funzionalità di copia del contenuto [, tenere presente il seguente problema noto.](/help/implementing/developing/tools/content-copy.md)
+
+* Se una risorsa nell’ambiente di origine viene rinominata, l’operazione di copia del contenuto potrebbe non riuscire a causa di UUID in conflitto nell’ambiente di destinazione.
+   * Per evitare questo errore, anziché rinominare le risorse, eliminale e quindi ricreale con il nuovo nome di risorsa desiderato.
