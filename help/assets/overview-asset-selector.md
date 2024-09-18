@@ -3,9 +3,9 @@ title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud 
 description: Utilizza il Selettore risorse per cercare, trovare e recuperare i metadati e le rappresentazioni delle risorse all’interno dell’applicazione.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
+source-git-commit: 027922c304be9c36b600b04b264d571ea8ed60d4
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1314'
 ht-degree: 34%
 
 ---
@@ -196,15 +196,15 @@ Il selettore risorse consente di visualizzare la risorsa in quattro diverse visu
         <em>Informazioni su come integrare Asset Selector con le API aperte di Dynamic Medie.</em>
         </p>
      </td>
-</tr>
-<tr>
-    <td>
+     <td>
         <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Grafico delle proprietà di Asset Selector"><br/>
         <a href="asset-selector-customization.md">Proprietà selettore risorse</a>
         <p>
         <em>Scopri le nozioni di base per personalizzare vari componenti di Asset Selector, ad esempio filtri, selezione di risorse, risorse scadute e molto altro. </em>
         </p>
     </td>
+</tr>
+<tr>
     <td>
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Grafico di esempio di Asset Selector"><br/>
         <a href="asset-selector-customization.md">Esempi di selettore risorse</a>
@@ -225,6 +225,15 @@ Il selettore risorse consente di visualizzare la risorsa in quattro diverse visu
         <p>
         <em>Scopri come caricare file o cartelle in Asset Selector dal file system locale o di terze parti. </em>
         </p>
+    </td>
+     <td>
+        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Grafico delle raccolte di Asset Selector"><br/>
+        <a href="asset-selector-collections.md">Raccolte selettori risorse</a>
+        <p>
+        <em>Scopri come utilizzare le raccolte all'interno di Asset Selector utilizzando l'archivio Experience Manager. </em>
+        </p>
+    </td>
+    <td>
     </td>
 </tr>
 </table>
