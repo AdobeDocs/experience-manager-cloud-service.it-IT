@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 9323464610b804ff407f5eedf404ab2cca93a8da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '572'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -18,42 +18,42 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 17689 {#release-17689}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 17689, rilasciata al pubblico il mercoledì 10 settembre 2024. La precedente versione di manutenzione era la 17569.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 17689, rilasciata al pubblico il 10 settembre 2024. La precedente versione di manutenzione era la 17569.
 
 Con la versione di attivazione funzioni 2024.9.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ### Miglioramenti {#enhancements-17689}
 
-* ASSETS-41404: modifiche per il supporto dei miglioramenti DRM.
+* ASSETS-41404: modifiche al supporto dei miglioramenti DRM.
 * ASSETS-41621: processo di copia delle risorse asincrone aggiornato.
-* ASSETS-32166: processo di spostamento risorse asincrone aggiornato.
-* ASSETS-41429: i predefiniti per immagini sono supportati in DM OpenAPI.
-* ASSETS-38968: migliorare la rappresentazione dei riferimenti ai frammenti di contenuto.
-* ASSETS-41787, ASSETS-41183: miglioramenti per il framework Assets Bulk Operations.
+* ASSETS-32166: processo di spostamento delle risorse asincrone aggiornato.
+* ASSETS-41429: supporto dei predefiniti immagine in DM OpenAPI.
+* ASSETS-38968: miglioramento della rappresentazione dei riferimenti ai frammenti di contenuto.
+* ASSETS-41787, ASSETS-41183: miglioramenti per il framework di operazioni in blocco delle risorse.
 * GRANITE-52917: ottimizzazioni per migliorare i tempi di installazione dei pacchetti di copia dei contenuti.
-* SCRNS-3980: Rileva la schermata grigia nei lettori che hanno sottosequenze senza risorse pianificate.
+* SCRNS-3980: rilevamento della schermata grigia nei lettori che hanno sotto-sequenze senza risorse pianificate.
 
 ### Problemi risolti {#fixed-issues-17689}
 
-* ASSETS-40875: NPE spurie registrata da AssetDeleteHandler.
-* ASSETS-42422: evita di attivare il processo asincrono per lo spostamento di una singola risorsa.
+* ASSETS-40875: NPE spuria registrata da AssetDeleteHandler.
+* ASSETS-42422: attivazione del percorso asincrono per lo spostamento di una singola risorsa evitata.
 * ASSETS-41234: Unified Shell - La navigazione globale potrebbe non funzionare se viene aperta quando la barra di ricerca è aperta.
 * ASSETS-42256: Unified Shell - Tag/Badge che indica che l’ambiente funziona solo in modo intermittente.
-* ASSETS-41271: evita la ripubblicazione non necessaria di Assets durante le operazioni di spostamento.
-* ASSETS-38894: limitare i tentativi elaborando il watchdog.
-* ASSETS-40815: utilizza l’anteprima del rendering PDF per visualizzare il file PPT nell’interfaccia utente di condivisione collegamenti .
+* ASSETS-41271: la ripubblicazione non necessaria di Risorse durante le operazioni di spostamento è stata impedita.
+* ASSETS-38894: limitazione dei nuovi tentativi elaborando il watchdog.
+* ASSETS-40815: utilizzo dell’anteprima del rendering PDF per visualizzare il file PPT nell’interfaccia utente di condivisione collegamenti .
 * ASSETS-37123: impossibile caricare l’anteprima delle risorse nella finestra di dialogo Condivisione collegamenti.
-* CQ-4358156: aggiorna i collegamenti precedenti del tag da eliminare.
+* CQ-4358156: aggiornamento dei collegamenti precedenti del tag da eliminare.
 * SCRNS-4495: il pulsante Incolla fisso non funziona correttamente per diversi gruppi di utenti.
-* SCRNS-4512: dagli schermi AEMaaCS è possibile rimuovere i componenti relativi al dispositivo.
-* SCRNS-4466: nel dashboard canale, nascondi - Visualizza manifesto, genera contenuto offline, aggiorna cache manifesto, pannello di visualizzazione.
-* SCRNS-4513: Aggiungere intestazioni di colonna per la pagina dei risultati di ricerca nella vista a elenco.
+* SCRNS-4512: rimozione dei componenti relativi al dispositivo dagli schermi AEMaaCS.
+* SCRNS-4466: nella dashboard del canale, nascondi - visualizza manifesto, genera contenuto offline, aggiorna cache manifesto, pannello di visualizzazione.
+* SCRNS-4513: aggiunte intestazioni di colonna per la pagina dei risultati di ricerca nella vista a elenco.
 
 ### Problemi noti {#known-issues-17689}
 
 * FORMS-14340: errore nella creazione di un’istanza di FormsAndDocumentOmniSearchHandler e CloudStorageSubmitActionInserter. Queste sono innocue istruzioni di registro.
-* FORMS-15818: voce del descrittore del componente ‘OSGI-INF/com.adobe.aemfd.docmanager.impl.Istruzioni *.xml’ non trovate nei registri del server. Queste sono innocue istruzioni di registro.
-* SITES-23662: l’utente che attiva una pubblicazione non può essere estratto dalle istruzioni di registro JCR nei registri del server. Questa è una funzione in fase di sviluppo che potrebbe causare errori intermittenti e innocui di tipo &quot;Impossibile trovare un ID utente valido nel batch di eventi OSGI&quot; nel registro.
+* FORMS-15818: le istruzioni della voce del descrittore del componente “OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml” non trovate nei registri del server. Queste sono innocue istruzioni di registro.
+* SITES-23662: l’utente che attiva una pubblicazione non può essere estratto dalle istruzioni di registro JCR nei registri del server. Questo è per una funzione in fase di sviluppo che potrebbe causare errori intermittenti e innocui di tipo “Impossibile trovare un ID utente valido nel batch di eventi OSGI” nel registro.
 
 ### Notifica di modifica {#change-notice-17689}
 
