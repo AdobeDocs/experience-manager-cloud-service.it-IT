@@ -4,7 +4,7 @@ description: Scopri come distribuire i progetti Cloud Manager utilizzando i Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
+source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 6%
@@ -68,7 +68,7 @@ L&#39;**elenco attività di Edge Delivery** è un elenco di controllo delle atti
 
 ![Elenco attività sito Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
-|  | Attività | Descrizione |
+|   | Attività | Descrizione |
 | --- | --- | --- |
 | 1 | Partecipa al canale di collaborazione sui prodotti | Facendo clic su **Invia richiesta ora**, invia una richiesta ad Adobe per la creazione di un canale per la società. Se il canale esiste già, viene effettuato l’inoltro al canale della tua azienda. |
 | 2 | Completa i prerequisiti | Facendo clic su **Visualizza esercitazione introduttiva**, si accede alla [Guida introduttiva - Esercitazione per sviluppatori](https://www.aem.live/developer/tutorial). |
@@ -76,5 +76,7 @@ L&#39;**elenco attività di Edge Delivery** è un elenco di controllo delle atti
 | 4 | Aggiungi dominio | Vedere [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Aggiungi certificato SSL | Vedi [Aggiungi certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configurare la rete CDN del sito Edge Delivery | Vedere [Aggiungere una configurazione CDN](#add-cdn). |
+
+<!-- &#x2460; for "1" inside circle -->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
