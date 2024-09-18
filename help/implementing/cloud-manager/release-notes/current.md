@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -35,15 +35,15 @@ La data di pubblicazione di Cloud Manager versione 2024.9.0 in AEM as a Cloud Se
 
   >[!NOTE]
   >
-  >I clienti di [Content Hub](/help/assets/product-overview.md) sono destinati a ricevere questa funzionalità in più fasi nell&#39;ambito di un rollout graduale.
+  >È stato pianificato che clienti dell’[Hub di contenuti](/help/assets/product-overview.md) riceveranno questa funzionalità in fasi nell’ambito di un rollout graduale.
 
 * **Supporto per Edge Delivery Services in Cloud Manager:**
 
-  Se disponi di una licenza Edge Delivery Services come parte di AEM Sites, [ora puoi integrare il tuo sito con i Edge Delivery Services direttamente tramite Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Questa funzione consente un’esperienza di pubblicazione guidata e self-service. Inoltre, unifica flussi di lavoro essenziali come la gestione dei nomi di dominio, i certificati SSL e le mappature CDN in tutte le proprietà di AEM, garantendo coerenza ed efficienza. <!-- CMGR-49859 -->
+  Se disponi di una licenza per Edge Delivery Services come parte di AEM Sites, [ora puoi integrare il tuo sito con Edge Delivery Services direttamente tramite Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Questa funzione consente un’esperienza di pubblicazione guidata e self-service. Inoltre, unifica flussi di lavoro essenziali come la gestione dei nomi di dominio, i certificati SSL e le mappature CDN in tutte le proprietà di AEM, garantendo coerenza ed efficienza. <!-- CMGR-49859 -->
 
   >[!NOTE]
   >
-  >I clienti di [Content Hub](/help/assets/product-overview.md) sono destinati a ricevere questa funzionalità in più fasi nell&#39;ambito di un rollout graduale.
+  >È stato pianificato che clienti dell’[Hub di contenuti](/help/assets/product-overview.md) riceveranno questa funzionalità in fasi nell’ambito di un rollout graduale.
 
 * I clienti che utilizzano gli archivi GitHub ora possono creare e utilizzare pipeline di configurazione a livello web. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 

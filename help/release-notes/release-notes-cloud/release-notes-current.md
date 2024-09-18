@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
 workflow-type: tm+mt
 source-wordcount: '1266'
-ht-degree: 77%
+ht-degree: 96%
 
 ---
 
@@ -65,11 +65,11 @@ Sfruttare l’intelligenza artificiale generativa tramite la nuova funzione di A
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Funzione di accesso anticipato in Dynamic Medie {#dm-early-access}
+### Funzione per l’accesso anticipato in Dynamic Media {#dm-early-access}
 
 **Sottotitoli video generati da IA**
 
-I sottotitoli video generati dall’intelligenza artificiale in Adobe Dynamic Medie utilizzano l’intelligenza artificiale per generare automaticamente i sottotitoli per i contenuti video. Questa funzione è stata progettata per migliorare l’accessibilità e l’esperienza utente fornendo sottotitoli accurati e in tempo reale. L’intelligenza artificiale analizza la traccia audio del video per trascrivere il discorso e creare didascalie, che possono essere modificate per maggiore precisione o personalizzazione. Questi sottotitoli soddisfano i requisiti di accessibilità e migliorano il coinvolgimento video dei tipi di pubblico che si affidano al supporto video basato su testo o che preferiscono farlo.
+I sottotitoli video generati dall’intelligenza artificiale in Adobe Dynamic Medie utilizzano l’intelligenza artificiale per generare automaticamente i sottotitoli per i contenuti video. Questa funzione è stata progettata per migliorare l’accessibilità e l’esperienza utente fornendo didascalie accurate e in tempo reale. L’intelligenza artificiale analizza la traccia audio del video per trascrivere il discorso e creare didascalie, che possono essere modificate per maggiore precisione o personalizzazione. Queste didascalie soddisfano i requisiti di accessibilità e migliorano il coinvolgimento video per tipi di pubblico che si affidano al supporto video basato su testo o che preferiscono farlo.
 
 Per accedere in anteprima al supporto dei sottotitoli generati dall&#39;intelligenza artificiale sul tuo account Dynamic Medie, [crea e invia un Adobe di caso all&#39;Assistenza clienti](/help/assets/dynamic-media/video.md##enable-dash).
 
@@ -88,7 +88,7 @@ Assets as a Cloud Service ora supporta i documenti di grandi dimensioni di Photo
 ### Nuovi miglioramenti nell’’hub di contenuti {#content-hub-new-enhancements}
 
 * Migliore gestione dei nomi di file lunghi, facile espansione del nome completo tramite descrizione comando.
-* Miniature migliorate per adattarsi meglio alle proporzioni dei contenuti e coprire un&#39;area di contenuto più ampia.
+* Miniature migliorate per adattarsi meglio alle proporzioni dei contenuti e coprire un’area di contenuto più ampia.
 * Esperienza di miniature personalizzata da AEM supportata con l’hub di contenuti.
 * Miglioramenti nella ricerca dei colori.
 * I miglioramenti nell’esperienza di salvataggio delle configurazioni.
@@ -101,7 +101,7 @@ Assets as a Cloud Service ora supporta i documenti di grandi dimensioni di Photo
 
 #### Salvataggio automatico di una bozza per moduli adattivi basati su Componenti core
 
-Gli utenti possono ora beneficiare di una funzione di salvataggio automatico che consente di salvare automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completarne la compilazione sullo stesso dispositivo o su un altro. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilare i moduli dall’inizio.
+Gli utenti possono ora beneficiare di una funzione di salvataggio automatico che consente di salvare automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completarne la compilazione sullo stesso dispositivo o su un altro. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
 
 
 ### Funzionalità per Accesso anticipato ad AEM Forms {#forms-new-early-access-features}
@@ -120,17 +120,17 @@ Le funzionalità di intelligenza artificiale generativa offerte sono:
 
 * **Assistente IA per le query sui prodotti**: ottieni risposte immediate alle domande relative al modulo AEM. L’assistente di IA funge da knowledge base personale, fornendo indicazioni approfondite e consigli direttamente all’interno della piattaforma.
 
-* **Generazione di moduli adattivi**: creazione semplificata di moduli veri e propri con prompt di IA generativi. L’intelligenza artificiale generativa di Adobe genera automaticamente moduli intuitivi che riducono i rilasci e personalizzano l’esperienza.
+* **Generazione di moduli adattivi**: creazione semplificata di moduli completi con prompt di IA generativa. L’intelligenza artificiale generativa di Adobe genera automaticamente moduli intuitivi che riducono i casi di abbandono e personalizzano l’esperienza.
 
 * **Generazione del pannello per moduli**: genera sezioni del modulo personalizzate in base a esigenze specifiche di raccolta dati. Ad esempio, genera sezioni per la raccolta di informazioni di pagamento, preferenze cliente o dettagli di viaggio.
 
-* **Modifica dei layout del modulo**: prova con layout e progettazioni diversi utilizzando prompt di intelligenza artificiale generativi. Prova diversi layout, ad esempio la procedura guidata o le visualizzazioni a schede, per trovare il layout ideale per il modulo. Utilizza i prompt di intelligenza artificiale generativi per ottimizzare i moduli per la reattività mobile e creare moduli visivamente coinvolgenti che gli utenti apprezzano.
+* **Modifica dei layout del modulo**: prova con layout e progettazioni diversi utilizzando i prompt di IA generativa. Prova diversi layout, ad esempio la procedura guidata o le visualizzazioni a schede, per trovare il layout ideale per il modulo. Utilizza i prompt di intelligenza artificiale generativa per ottimizzare i moduli per la reattività mobile e creare moduli visivamente coinvolgenti che gli utenti apprezzano.
 
-* **Configura azione di invio**: utilizza i prompt di IA generativi per configurare facilmente un&#39;azione di invio per il modulo. Scegli da una libreria di azioni di invio predefinite o azioni di invio personalizzate create e distribuite dal team di sviluppo.
+* **Configura azione di invio**: utilizza i prompt di IA generativa per configurare facilmente un’azione di invio per il modulo. Scegli da una libreria di azioni di invio predefinite o personalizzate, create e implementate dal tuo team di sviluppo.
 
 >[!IMPORTANT]
 >
-> Ti interessa partecipare al programma di accesso anticipato per qualsiasi innovazione di Forms? Invia un&#39;e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con l&#39;elenco delle funzionalità che ti interessano.
+> Ti interessa partecipare al programma di accesso anticipato per qualsiasi innovazione sui moduli? Invia un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con l’elenco delle funzionalità che ti interessano.
 
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
