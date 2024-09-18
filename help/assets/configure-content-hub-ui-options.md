@@ -1,14 +1,20 @@
 ---
 title: Configurare l’interfaccia utente dell’hub di contenuti
 description: Configurare l’interfaccia utente dell’hub di contenuti
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
+source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1185'
 ht-degree: 5%
 
 ---
 
 # Configurare l’interfaccia utente dell’hub di contenuti {#configure-content-hub-user-interface}
+
+>[!CONTEXTUALHELP]
+>id="configure_content_hub"
+>title="Configurare l’interfaccia utente dell’hub di contenuti"
+>abstract="Experience Manager Assets consente agli amministratori di configurare le opzioni disponibili nell’interfaccia utente di Content Hub. In base alle opzioni di configurazione selezionate dagli amministratori, gli utenti di Content Hub possono visualizzare i campi in Content Hub. Le opzioni di configurazione includono metadati durante l’importazione di risorse, filtri, proprietà delle risorse, metadati durante la ricerca di risorse, branding personalizzato ed eventuali collegamenti personalizzati."
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Configurare le risorse in Content Hub](assets/configure-assets.png)
@@ -43,7 +49,7 @@ Per accedere alle opzioni di configurazione in Content Hub:
 
 ## Gestione delle opzioni di configurazione in Content Hub {#manage-configuration-options}
 
-Gestisci le seguenti opzioni di configurazione per i tuoi utenti:
+In qualità di amministratore, gestisci le seguenti opzioni di configurazione per i tuoi utenti:
 
 * [Importa](#configure-import-options-content-hub)
 
@@ -184,5 +190,3 @@ Allo stesso modo, puoi fare clic sull&#39;![icona Modifica](assets/do-not-locali
 Il collegamento personalizzato viene visualizzato come una nuova scheda accanto alla scheda Approfondimenti nella home page di Content Hub.
 
 ![Schede Collegamenti personalizzati dell&#39;interfaccia utente di configurazione in Content Hub](assets/configuration-ui-custom-link-tab.png)
-
-
