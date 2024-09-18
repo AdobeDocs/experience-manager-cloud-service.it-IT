@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 13%
+source-wordcount: '904'
+ht-degree: 11%
 
 ---
 
@@ -50,11 +50,30 @@ Per completare l&#39;attività, l&#39;utente deve avere il ruolo **Proprietario 
    * Nel campo **Chiave privata**, aggiorna questo campo solo se hai apportato modifiche al certificato.
    * Nel campo **Catena di certificati** (o catena di attendibilità), incollare la catena di certificati.
 
-1. Fai clic su **Aggiorna** per salvare le modifiche e farle applicare automaticamente.
+1. Fai clic su **Aggiorna** per salvare le modifiche e farle applicare automaticamente. —>
 
 ## Sostituire un certificato SSL gestito dal cliente scaduto {#replace-ssl-certificate}
 
 Segui gli stessi passaggi descritti in [Aggiornare un certificato SSL scaduto](#update-ssl-certificate) per sostituire un certificato SSL scaduto gestito dal cliente.
+
+## Rinominare un Adobe di certificato SSL gestito (#rename-an-ssl-certificate)
+
+Di seguito sono riportati alcuni motivi per cui potrebbe essere utile rinominare un certificato SSL:
+
+* **Organizzazione migliorata**: la ridenominazione del certificato può aiutare a chiarirne lo scopo, ad esempio a identificare l&#39;ambiente (ad esempio gestione temporanea, produzione) o il dominio a cui è destinato.
+* **Evitare confusione**: se gestisci più certificati, un nome chiaro e descrittivo può aiutare a evitare errori, ad esempio l&#39;applicazione del certificato errato al dominio errato.
+* **Conformità e controllo**: i certificati con nomi corretti possono essere più facili da tracciare a scopo di sicurezza e controllo.
+
+**Per rinominare un certificato SSL gestito di Adobe:**
+
+1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona il programma appropriato.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
+1. Nell’angolo in alto a sinistra della pagina, fai clic sull’icona dell’hamburger per visualizzare il menu di navigazione a sinistra.
+1. Nell&#39;intestazione **Services** fare clic su **Certificati SSL**.
+1. Nella pagina **Certificati SSL** fare clic sui puntini di sospensione alla fine di una riga di cui si desidera rinominare il certificato.
+1. Fare clic su **Rinomina**.
+1. Nella finestra di dialogo **Rinomina certificato DV** immettere il nuovo nome del certificato nel campo di testo **Nome certificato**.
+1. Fare clic su **Rinomina**.
 
 ## Eliminare un certificato SSL {#deleting-an-ssl-certificate}
 
