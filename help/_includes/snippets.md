@@ -1,8 +1,8 @@
 ---
-source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
-workflow-type: ht
-source-wordcount: '993'
-ht-degree: 100%
+source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
+workflow-type: tm+mt
+source-wordcount: '1139'
+ht-degree: 83%
 
 ---
 # Snippet {#snippets}
@@ -134,7 +134,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 * [Introduzione ai componenti del Portale moduli](/help/forms/configure-forms-portal.md)
 * [Elencare i moduli nella pagina Sites](/help/forms/list-forms-on-sites-page.md)
 * [Salvare i moduli come bozze](/help/forms/save-core-component-based-form-as-draft.md)
-* [Aggiungere collegamenti per moduli a una pagina Sites](/help/forms/add-form-link-to-aem-sites-page.md)
+* [Aggiungere collegamenti modulo a una pagina Sites](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
 ## Elenco di indirizzi IP consentiti e pipeline e front-end di Could Manager {#allowlist-frontend-pipeline}
@@ -143,7 +143,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >
 >La pipeline front-end richiede che il seguente Elenco di indirizzi IP consentiti sia aggiunto in anticipo a Cloud Manager.
 >Se necessario, [aggiungi l’Elenco di indirizzi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando il blocco di indirizzi seguente. Ogni indirizzo è separato da una virgola. Incolla il blocco nel campo **Indirizzo IP / CIDR** della finestra di dialogo **Aggiungi Elenco indirizzi IP consentiti**. Posiziona il cursore subito dopo la prima virgola nell’elenco indirizzi e premi **Invio**. Salva l’elenco.
->Per evitare interruzioni nell’esecuzione della pipeline front-end, assicurati che questo Elenco di indirizzi IP consentiti sia aggiunto a Cloud Manager *prima* di abilitare la pipeline.
+>Per evitare interruzioni nell&#39;esecuzione della pipeline front-end, assicurati che questo Elenco consentiti IP sia aggiunto a Cloud Manager *prima* di abilitare la pipeline.
 >
 >**Elenco indirizzi IP consentiti di Cloud Manager**
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
@@ -160,17 +160,17 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 
 >[!TIP]
 >
->Hai appena cominciato a usare Dynamic Media? Per una rapida panoramica di alto livello di Dynamic Media, consulta [Utilizzare Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>Hai appena cominciato a usare Dynamic Media? Per una rapida panoramica di alto livello di Dynamic Medie, vedi [Utilizzare Dynamic Medie](/help/assets/dynamic-media/dynamic-media.md).
 
 ## Cerca anche Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* Hai appena cominciato a usare Dynamic Media? Per una rapida panoramica di alto livello di Dynamic Media, consulta [Utilizzare Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>* Hai appena cominciato a usare Dynamic Media? Per una rapida panoramica di alto livello di Dynamic Medie, vedi [Utilizzare Dynamic Medie](/help/assets/dynamic-media/dynamic-media.md).
 >
 >* Segui le [best practice per Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) per sfruttarlo al meglio.
 >
->* Prova le funzionalità dell&#39;immagine Dynamic Media con [lo strumento Snapshot](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>* Prova le funzionalità dell&#39;immagine Dynamic Medie con lo [strumento Snapshot](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
 >* Assicurati una riproduzione video fluida con [video adattivo](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
 >
@@ -178,6 +178,21 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >
 >* Automatizza il ritaglio di [video con Ritaglio avanzato](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Distribuisci [esperienza interattiva basata su 3D](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Distribuisci una [esperienza interattiva basata su 3D](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Altre [risorse su Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+
+## Registrare un ticket di supporto {#support-ticket}
+
+Se un problema relativo a un prodotto richiede ulteriori indagini e risoluzione dei problemi e deve soddisfare gli SLT di risposta, puoi inviare un ticket di supporto.
+
+Per registrare un ticket di supporto, devi prima registrare il sito Edge Delivery in Cloud Manager. La registrazione del sito Web con Cloud Manager è consigliata a tutti gli utenti di AEM as a Cloud Service e [offre numerosi vantaggi](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Se non hai già registrato il tuo sito, consulta la [documentazione di Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) per i dettagli.
+
+Dopo aver registrato il sito web con Cloud Manager, segui questa procedura utilizzando l’Admin Console per inviare un ticket di supporto:
+
+1. [Segui il processo di supporto standard](https://experienceleague.adobe.com/?support-tab=home?lang=it#support) e crea un ticket.
+1. Aggiungi **Edge Delivery** nel titolo del ticket.
+1. Nella descrizione, fornisci i dettagli seguenti oltre alla descrizione del problema:
+
+   * URL del sito web live. Ad esempio: `www.mydomain.com`.
+   * URL del sito web di origine (URL `.hlx`).
 
