@@ -3,10 +3,10 @@ title: Aggiungere un sito Edge Delivery a Cloud Manager
 description: Scopri come aggiungere un sito Edge Delivery al programma di produzione o al programma sandbox.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
+source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 3%
+source-wordcount: '505'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,9 @@ Vedere anche [Introduzione ai Edge Delivery Services in Cloud Manager](/help/imp
 
      ![Aggiungi sito Edge Delivery dalla scheda Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
-   * Nell’angolo in alto a sinistra della pagina, fai clic sull’icona dell’hamburger per visualizzare il menu di navigazione a sinistra. Nell&#39;intestazione **Services** fare clic su **Siti Edge Delivery**. Fai clic su **Aggiungi sito** nell&#39;angolo superiore destro della pagina.
+   * Nell&#39;angolo superiore sinistro della pagina, fare clic su ![Mostra o nascondi spostamento laterale](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare il menu di spostamento laterale.
+Sotto l&#39;intestazione **Servizi**, fare clic su ![Pagina Web per siti Edge Delivery](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Siti Edge Delivery**.
+Fai clic su **Aggiungi sito** nell&#39;angolo superiore destro della pagina.
 
      ![Aggiungi sito Edge Delivery dal pulsante Edge Delivery Sites](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 
@@ -46,10 +48,14 @@ Vedere anche [Introduzione ai Edge Delivery Services in Cloud Manager](/help/imp
 
    | Numero passaggio | Descrizione |
    | - | - |
-   | **1** | Aggiungere un file con percorso e nome `well-known/adobe/cloudmanager-challenge.txt` al ramo `main` dell&#39;archivio Git elencato nel campo **URL archivio**. *non* aggiungere un punto all&#39;inizio del percorso.<br>Se necessario, fai clic sull&#39;icona **Copia** per copiare il percorso negli Appunti. |
-   | **2** | Aggiungi il codice visualizzato nel campo di testo del passaggio 2 al file appena creato nel passaggio 1.<br>Se necessario, fai clic sull&#39;icona **Copia** per copiare il codice negli Appunti. |
+   | **1** | Aggiungere un file con percorso e nome `well-known/adobe/cloudmanager-challenge.txt` al ramo `main` dell&#39;archivio Git elencato nel campo **URL archivio**. *non* aggiungere un punto all&#39;inizio del percorso.<br>Se necessario, fare clic su ![Copia](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) per copiare il percorso negli Appunti. |
+   | **2** | Aggiungi il codice visualizzato nel campo di testo del passaggio 2 al file appena creato nel passaggio 1.<br>Se necessario, fai clic su ![Copia](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) per copiare il codice negli Appunti. |
    | **3** | Crea una richiesta di pull nell&#39;archivio Git per le modifiche appena create, quindi uniscila in `main` per eseguire il commit del codice. |
 
 1. Fare clic su **Verifica**.
 
-Dopo la verifica dell’archivio, il suo stato nella tabella Edge Deliver Sites cambia in un cerchio verde con un segno di spunta bianco all’interno.
+Dopo la verifica dell’archivio, il suo stato nella tabella Edge Delivery Sites cambia in un cerchio verde con un segno di spunta bianco all’interno.
+
+Nella stessa tabella è possibile fare clic su ![Informazioni sul sito Edge Delivery.](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) per visualizzare i dettagli sul sito, ad esempio l&#39;URL verificato dell&#39;archivio e l&#39;URL del sito Web di anteprima e produzione.
+
+
