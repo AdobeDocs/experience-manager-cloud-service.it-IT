@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
 workflow-type: tm+mt
 source-wordcount: '5651'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -637,8 +637,8 @@ ht-degree: 97%
       + [Scaricare risorse utilizzando l’hub di contenuti](/help/assets/download-assets-content-hub.md)
       + [Gestire le raccolte nell’hub di contenuti](/help/assets/collections-content-hub.md)
       + [Modificare le immagini utilizzando Adobe Express nell’hub di contenuti](/help/assets/edit-images-content-hub.md)
-      + [Informazioni sulla risorsa in Content Hub](/help/assets/insights-content-hub.md)
-      + [Domande frequenti per Content Hub](/help/assets/frequently-asked-questions-content-hub.md)
+      + [Informazioni sulle risorse nell’hub di contenuti](/help/assets/insights-content-hub.md)
+      + [Domande frequenti sull’hub di contenuti](/help/assets/frequently-asked-questions-content-hub.md)
    + Best practice{#best-practices}
       + [Best practice per la ricerca](/help/assets/search-best-practices.md)
       + [Gestione dei metadati e best practice](/help/assets/metadata-best-practices.md)
@@ -1074,8 +1074,8 @@ ht-degree: 97%
          + [Creare programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [Programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [Creare programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [Modifica programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-         + [Sospendi ambienti](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+         + [Modificare programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [Sospendere gli ambienti](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Creazione di un progetto di applicazione AEM {#create-application-project}
          + [Creazione guidata progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configurazione del progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1083,9 +1083,9 @@ ht-degree: 97%
       + [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md)
       + Gestione del codice {#managing-code}
          + [Gestione delle versioni dei progetti Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [Gestire gli archivi in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Aggiungi archivi di Adobi](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [Aggiungi archivi privati](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Gestione degli archivi in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+         + [Aggiungere archivi Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Aggiungere archivi privati](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [Accedere agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Supporto per i sottomoduli Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utilizzare Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
@@ -1109,7 +1109,7 @@ ht-degree: 97%
             + [Panoramica del test funzionale](/help/implementing/cloud-manager/functional-testing.md)
             + [Test funzionale Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Test dell’interfaccia utente](/help/implementing/cloud-manager/ui-testing.md)
-         + [Dashboard di Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+         + [Dashboard di audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [Accedere e gestire i registri](/help/implementing/cloud-manager/manage-logs.md)
       + [Autorizzazioni personalizzate](/help/implementing/cloud-manager/custom-permissions.md)
       + [Generazione rapporti SLA](/help/implementing/cloud-manager/sla-reporting.md)
@@ -1118,30 +1118,30 @@ ht-degree: 97%
       + [Notifiche](/help/implementing/cloud-manager/notifications.md)
       + [Rete avanzata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=it)
       + Siti Edge Delivery {#edge-delivery-sites}
-         + [Introduzione ai Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+         + [Introduzione a Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Aggiungere un sito Edge Delivery a Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [Gestire siti Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
+         + [Gestire i siti Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Impostazioni dominio {#custom-domain-names}
-         + [Introduzione alle impostazioni del dominio](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         + [Introduzione alle impostazioni di dominio](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         + [Verifica stato nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-         + [Verifica stato record DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+         + [Verificare lo stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+         + [Verificare lo stato del record DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Gestione dei nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + Certificati SSL {#manage-ssl-certificates}
          + [Introduzione ai certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          + [Aggiungere un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Risolvere i problemi relativi agli errori dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
-         + [Gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+         + [Gestire i certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Configurazioni CDN {#cdn-configurations}
-         + [Aggiungi una configurazione CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [Gestione configurazioni CDN](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+         + [Aggiungere una configurazione CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [Gestire configurazioni CDN](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + Elenchi indirizzi IP consentiti {#ip-allow-lists}
          + [Introduzione agli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Aggiungere un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [Applicare e rimuovere gli Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-         + [Gestione degli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
+         + [Applicare e rimuovere gli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [Gestire gli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Comprendere le richieste di contenuto del Cloud Service](/help/implementing/cloud-manager/content-requests.md)
+      + [Comprendere le richieste di contenuto di Cloud Service](/help/implementing/cloud-manager/content-requests.md)
       + [Dashboard delle prestazioni CDN](/help/implementing/cloud-manager/cdn-performance.md)
       + [Domande frequenti su Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Sviluppo per AEM as a Cloud Service {#developing}
@@ -1150,7 +1150,7 @@ ht-degree: 97%
       + [SDK di AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [Ambienti di sviluppo rapido AEM](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [Linee guida per lo sviluppo in AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
-      + [AEM as a Cloud Service Developer Console (Beta)](/help/implementing/developing/introduction/aem-developer-console.md)
+      + [Developer Console (Beta) di AEM as a Cloud Service](/help/implementing/developing/introduction/aem-developer-console.md)
       + [Registrazione](/help/implementing/developing/introduction/logging.md)
       + [Inoltro del registro](/help/implementing/developing/introduction/log-forwarding.md)
       + [Configurazioni e browser di configurazione](/help/implementing/developing/introduction/configurations.md)
