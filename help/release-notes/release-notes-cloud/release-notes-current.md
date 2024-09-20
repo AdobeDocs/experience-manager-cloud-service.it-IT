@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1266'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -67,11 +67,11 @@ Sfruttare l’intelligenza artificiale generativa tramite la nuova funzione di A
 
 ### Funzione per l’accesso anticipato in Dynamic Media {#dm-early-access}
 
-**Sottotitoli video generati da IA**
+**Didascalie video generate dall’intelligenza artificiale**
 
-I sottotitoli video generati dall’intelligenza artificiale in Adobe Dynamic Medie utilizzano l’intelligenza artificiale per generare automaticamente i sottotitoli per i contenuti video. Questa funzione è stata progettata per migliorare l’accessibilità e l’esperienza utente fornendo didascalie accurate e in tempo reale. L’intelligenza artificiale analizza la traccia audio del video per trascrivere il discorso e creare didascalie, che possono essere modificate per maggiore precisione o personalizzazione. Queste didascalie soddisfano i requisiti di accessibilità e migliorano il coinvolgimento video per tipi di pubblico che si affidano al supporto video basato su testo o che preferiscono farlo.
+Le didascalie video generate dall’intelligenza artificiale in Adobe Dynamic Media utilizzano l’intelligenza artificiale per generare automaticamente le didascalie per i contenuti video. Questa funzione è stata progettata per migliorare l’accessibilità e l’esperienza utente fornendo didascalie accurate e in tempo reale. L’intelligenza artificiale analizza la traccia audio del video per trascrivere il discorso e creare didascalie, che possono essere modificate per maggiore precisione o personalizzazione. Queste didascalie soddisfano i requisiti di accessibilità e migliorano il coinvolgimento video per tipi di pubblico che si affidano al supporto video basato su testo o che preferiscono farlo.
 
-Per accedere in anteprima al supporto dei sottotitoli generati dall&#39;intelligenza artificiale sul tuo account Dynamic Medie, [crea e invia un Adobe di caso all&#39;Assistenza clienti](/help/assets/dynamic-media/video.md##enable-dash).
+Per ottenere l’accesso anticipato al supporto delle didascalie generate dall’intelligenza artificiale sul tuo account Dynamic Media, [crea e invia un caso all’Assistenza clienti Adobe](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Nuove funzioni nella vista Risorse {#assets-view-new-features}
 

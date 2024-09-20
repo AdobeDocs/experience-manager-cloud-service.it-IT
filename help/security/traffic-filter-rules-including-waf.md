@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: cf9e1b3c290d142095912c794de58547913faece
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4012'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Adobe invita a fornire un feedback o a porre domande sulle regole del filtro del
 
 Nel panorama digitale attuale, il traffico dannoso è una minaccia sempre presente. Adobe è consapevole della gravità del rischio e offre diverse strategie per proteggere le applicazioni della clientela e mitigare gli attacchi quando si verificano.
 
-Al limite, la rete CDN gestita dall&#39;Adobe assorbe gli attacchi DoS a livello di rete (livelli 3 e 4), inclusi gli attacchi di inondazione e riflessione/amplificazione.
+La rete CDN gestita da Adobe assorbe gli attacchi DoS a livello di rete (livelli 3 e 4) ai margini della stessa, inclusi gli attacchi di tipo flood e di riflessione/amplificazione.
 
 Per impostazione predefinita, Adobe adotta misure per evitare la riduzione delle prestazioni dovuto a picchi di traffico estremamente elevato oltre una determinata soglia. Se si verifica un attacco DoS che influisce sulla disponibilità del sito, i team operativi di Adobe vengono avvisati e adottano le misure necessarie per attenuare l’impatto.
 
@@ -477,11 +477,11 @@ data:
 
 ## Regole CVE {#cve-rules}
 
-Se WAF è concesso in licenza, Adobe applica automaticamente regole di blocco per proteggere da molti CVE noti (vulnerabilità ed esposizioni comuni); i nuovi CVE possono essere aggiunti subito dopo essere stati rilevati. I clienti non devono e non devono configurare direttamente le regole CVE.
+Se WAF è concesso in licenza, Adobe applica automaticamente regole di blocco per proteggerlo da molte Vulnerabilità ed esposizioni comuni (CVE, Common Vulnerabilities and Exposures) note; nuove CVE possono essere aggiunte subito dopo essere state rilevate. I clienti non devono configurare autonomamente le regole CVE.
 
-Se una richiesta di traffico corrisponde a un CVE, verrà visualizzata nella voce di registro CDN corrispondente.
+Se una richiesta di traffico corrisponde a una CVE, verrà visualizzata nella voce di registro CDN corrispondente.
 
-Contatta il supporto Adobe in caso di domande su un particolare CVE o se esiste una particolare regola CVE che la tua organizzazione desidera disabilitare.
+Contatta il supporto Adobe in caso di domande su una determinata CVE o se è presente una particolare regola CVE che la tua organizzazione vorrebbe disabilitare.
 
 ## Avvisi delle regole di filtro del traffico {#traffic-filter-rules-alerts}
 
