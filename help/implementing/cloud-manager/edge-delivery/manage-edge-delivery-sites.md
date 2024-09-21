@@ -3,7 +3,7 @@ title: Gestire i siti Edge Delivery in Cloud Manager
 description: Scopri come aggiungere una configurazione CDN a un sito Edge Delivery o eliminare un sito Edge Delivery.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
+source-git-commit: f684a52ca3b51d1aa4412122f7ad28dde3e2672f
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 1%
@@ -52,12 +52,12 @@ Se elimini un sito Edge Delivery Services, vengono rimosse anche le configurazio
 1. Effettuare una delle seguenti operazioni:
 
    * Dalla pagina **Panoramica del programma**, fai clic sulla scheda **Edge Delivery**. Nella tabella del sito di Edge Delivery, fai clic sui puntini di sospensione alla fine di una riga di cui desideri rimuovere il sito.
-Fai clic su ![Elimina sito Edge Delivery](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Elimina**, quindi fai di nuovo clic su **Elimina** per confermare la rimozione del sito.
+Fai clic su ![Elimina sito Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Elimina**, quindi fai di nuovo clic su **Elimina** per confermare la rimozione del sito.
 
      ![Aggiungi sito Edge Delivery dalla scheda Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-   * Nell&#39;angolo superiore sinistro della pagina, fare clic su ![Mostra o nascondi spostamento laterale](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare il menu di spostamento laterale. Sotto l&#39;intestazione **Servizi**, fare clic su ![Pagina Web per siti Edge Delivery](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Siti Edge Delivery**.
-Nella tabella del sito di Edge Delivery, fai clic sui puntini di sospensione alla fine di una riga di cui desideri rimuovere il sito. Fai clic su ![Elimina sito Edge Delivery](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Elimina**, quindi fai di nuovo clic su **Elimina** per confermare la rimozione del sito.
+   * Nell&#39;angolo superiore sinistro della pagina, fare clic su ![Mostra o nascondi spostamento laterale](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare il menu di spostamento laterale. Sotto l&#39;intestazione **Servizi**, fare clic su ![Pagina Web per siti Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Siti Edge Delivery**.
+Nella tabella del sito di Edge Delivery, fai clic sui puntini di sospensione alla fine di una riga di cui desideri rimuovere il sito. Fai clic su ![Elimina sito Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Elimina**, quindi fai di nuovo clic su **Elimina** per confermare la rimozione del sito.
 
      ![Aggiungi sito Edge Delivery dal pulsante Siti Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
