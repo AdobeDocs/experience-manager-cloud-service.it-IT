@@ -6,10 +6,10 @@ index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '1003'
-ht-degree: 100%
+source-git-commit: c9cddf9f0e344a2a24ee1a608b3ea920e258f34a
+workflow-type: tm+mt
+source-wordcount: '1013'
+ht-degree: 99%
 
 ---
 
@@ -90,6 +90,7 @@ Segui gli stessi passaggi indicati sopra per aggiungere questi ulteriori campi. 
 
    * **Rendering come:** **Area di testo** - Quando crei un’avventura, in questo campo puoi memorizzare una breve descrizione del viaggio.
    * **Etichetta campo:** `Description` - Questa è l’etichetta che viene visualizzata per questo campo quando si crea un’avventura.
+   * **Tipo predefinito**: **Testo normale** - Formato richiesto per questo esempio.
 
 1. Per aggiungere un campo in cui memorizzare il prezzo dell’avventura, trascina un campo **Testo su riga singola** e immetti le seguenti proprietà:
 
