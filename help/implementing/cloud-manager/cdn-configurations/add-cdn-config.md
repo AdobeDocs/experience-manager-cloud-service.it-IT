@@ -1,19 +1,19 @@
 ---
-title: Aggiungi una configurazione CDN
+title: Aggiungere una configurazione CDN
 description: Scopri come aggiungere una configurazione CDN per un sito Edge Delivery o un ambiente Cloud Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '448'
 ht-degree: 6%
 
 ---
 
 
-# Aggiungi una configurazione CDN {#add-cdn}
+# Aggiungere una configurazione CDN (Content Delivery Network) {#add-cdn}
 
 Per collegare un dominio con un certificato SSL sulla rete CDN gestita dall’Adobe all’interno del programma, è necessario aggiungere una configurazione CDN (Content Delivery Network).
 

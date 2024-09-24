@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '447'
 ht-degree: 34%
 
 ---
@@ -33,10 +33,10 @@ Ad Adobe, in Cloud Manager potrebbe essere utile modificare la configurazione di
 
 1. Nell’angolo in alto a sinistra della pagina, fai clic sull’icona dell’hamburger per visualizzare il menu di navigazione a sinistra.
 1. Nell&#39;intestazione **Services**, fare clic su **Configurazioni CDN**.
-1. Nella pagina **Configurazioni CDN**, fai clic sui puntini di sospensione alla fine di una riga di cui desideri modificare la CDN.
+1. Nella pagina **Configurazioni CDN**, fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) alla fine di una riga di cui desideri modificare la CDN.
 1. Fai clic su **Modifica**.
 1. Nella finestra di dialogo **Modifica configurazione CDN** eseguire le operazioni seguenti:
-   * Nell&#39;elenco a discesa **Livello** selezionare il livello (Autore o Publish) che si desidera utilizzare.
+   * Nell&#39;elenco a discesa **Livello** selezionare il livello (Publish o Anteprima) che si desidera utilizzare.
    * Nell&#39;elenco a discesa **Certificato SSL** selezionare il certificato SSL che si desidera utilizzare.
 1. Fai clic su **Aggiorna**.
 

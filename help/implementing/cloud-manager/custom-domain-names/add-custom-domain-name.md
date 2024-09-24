@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f45de13049f78f97b256235d9395695cb531c40d
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 21%
+source-wordcount: '1489'
+ht-degree: 20%
 
 ---
 
@@ -23,7 +23,7 @@ Prima di aggiungere un nome di dominio personalizzato in Cloud Manager, è neces
 
 * È necessario aggiungere un certificato SSL di dominio per il dominio che si desidera aggiungere prima di aggiungere un nome di dominio personalizzato come descritto nel documento [Aggiungere un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 * Per aggiungere un nome di dominio personalizzato in Cloud Manager è necessario avere il ruolo **Proprietario business** o **Responsabile dell&#39;implementazione**.
-* Utilizzare la rete CDN Fastly o di altro tipo.
+* Utilizzare la rete CDN (Content Delivery Network) Fastly o di altro tipo.
 
 >[!IMPORTANT]
 >
@@ -31,22 +31,22 @@ Prima di aggiungere un nome di dominio personalizzato in Cloud Manager, è neces
 
 ## Dove aggiungere nomi di dominio personalizzati {#where-to-add-cdn}
 
-In Cloud Manager è possibile aggiungere un nome di dominio personalizzato da due posizioni:
+In Cloud Manager è possibile aggiungere un nome di dominio personalizzato dalle due posizioni seguenti:
 
-* [Dalla pagina Impostazioni dominio](#adding-cdn-settings)
-* [Dalla pagina Ambienti](#adding-cdn-environments)
+* [Pagina Impostazioni dominio](#adding-cdn-settings)
+* [Pagina Ambienti](#adding-cdn-environments)
 
 Quando si aggiunge un nome di dominio personalizzato, il dominio viene gestito utilizzando il certificato valido più specifico. Se più certificati hanno lo stesso dominio, viene scelto quello aggiornato più di recente. L’Adobe consiglia di gestire i certificati in modo che non vi siano domini sovrapposti.
 
-I passaggi per entrambi i metodi descritti in questo documento si basano su Fastly. Se utilizzi una rete CDN diversa, configura il dominio con la rete CDN che hai scelto di utilizzare.
+I passaggi per entrambi i metodi descritti in questo documento si basano su Fastly. Se utilizzi una rete CDN (Content Delivery Network) diversa, configura il dominio con la rete CDN che hai scelto di utilizzare.
 
-## Aggiungere un nome di dominio personalizzato dalla pagina Impostazioni dominio {#adding-cdn-settings}
+## Aggiungere un nome di dominio personalizzato {#adding-cdn-settings}
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
-1. Nel pannello di navigazione a sinistra, seleziona la scheda **Impostazioni dominio**
+1. Nel menu laterale, in **Servizi**, selezionare **Impostazioni dominio**.
 
    ![Finestra Impostazioni dominio](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -59,7 +59,7 @@ Non includere `http://`, `https://` o spazi durante l’inserimento del dominio.
 
 1. Nella finestra di dialogo **Verifica dominio**, in **Quale tipo di certificato intendi utilizzare con questo dominio?Elenco a discesa**, selezionare una delle opzioni seguenti:
 
-   | Tipo di certificato | Descrizione |
+   | Opzione tipo di certificato | Descrizione |
    | --- | --- |
    | Certificato gestito da Adobe | Selezionare se si desidera utilizzare un certificato DV (convalida dominio). Questa opzione è ideale per la maggior parte dei casi e fornisce la convalida di base del dominio. Adobe gestisce e rinnova automaticamente il certificato. |
    | Certificato gestito dal cliente | Seleziona se desideri utilizzare un certificato EV/OV. Questa opzione offre una protezione avanzata con EV (convalida estesa) o OV (convalida organizzazione). Da utilizzare se è necessaria una verifica più rigorosa, livelli di attendibilità più elevati o un controllo personalizzato dei certificati. |
@@ -207,6 +207,8 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 
 
 ## Aggiungere un nome di dominio personalizzato dalla pagina Ambienti {#adding-cdn-environments}
+
+<!-- I DON'T SEE THIS ABILITY ANYMORE IN THE UI -->
 
 I passaggi per aggiungere un nome di dominio personalizzato dalla pagina **Ambienti** sono gli stessi di quando [si aggiunge un nome di dominio personalizzato dalla pagina Impostazioni dominio](#adding-cdn-settings), ma il punto di ingresso è diverso. Per aggiungere un nome di dominio personalizzato dalla pagina **Ambienti**, segui la procedura riportata di seguito.
 
