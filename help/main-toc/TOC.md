@@ -7,9 +7,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5651'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -470,7 +470,7 @@ ht-degree: 99%
          + [Esempi del Selettore risorse](/help/assets/asset-selector-examples.md)
          + [Personalizzazioni del Selettore risorse](/help/assets/asset-selector-customization.md)
          + [Caricamento del Selettore risorse](/help/assets/asset-selector-upload.md)
-         + [Raccolte selettore risorse](/help/assets/asset-selector-collections.md)
+         + [Raccolte del Selettore risorse](/help/assets/asset-selector-collections.md)
       + [Selettore di destinazione micro front-end](/help/assets/destination-selector.md)
       + [Condividere le risorse](/help/assets/share-assets.md)
       + [Rielaborazione delle risorse](/help/assets/reprocessing.md)
@@ -1251,7 +1251,7 @@ ht-degree: 99%
       + [API ContextHub](/help/implementing/developing/personalization/contexthub-api.md)
       + [Configurazione della segmentazione con ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=it)
    + Configurazione ed estensione di AEM as a Cloud Service {#configuring-and-extending}
-      + Estensione dell&#39;AEM con App Builder {#app-builder}
+      + Estensione di AEM con App Builder {#app-builder}
          + [Estensione di AEM con Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Introduzione ad App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Console per sviluppatori di Adobe](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
@@ -1282,7 +1282,7 @@ ht-degree: 99%
       + Internazionalizzazione{#internationalization}
          + [Internazionalizzazione dei componenti](/help/implementing/developing/extending/i18n/components.md)
          + [Internazionalizzazione delle stringhe dell’interfaccia utente](/help/implementing/developing/extending/i18n/dev.md)
-         + [Estrazione di stringhe per la traduzione](/help/implementing/developing/extending/i18n/extract.md)
+         + [Estrazione delle stringhe per la traduzione](/help/implementing/developing/extending/i18n/extract.md)
    + Implementazione in AEM as a Cloud Service {#deploying}
       + [Implementazione in AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [Aggiornamenti della versione di AEM](/help/implementing/deploying/aem-version-updates.md)
