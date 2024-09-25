@@ -4,10 +4,10 @@ description: Scopri come inoltrare i registri a Splunk e ad altri fornitori di r
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
+source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 1%
+source-wordcount: '1362'
+ht-degree: 0%
 
 ---
 
@@ -44,14 +44,7 @@ Questo articolo è organizzato nel modo seguente:
 
 ## Configurazione {#setup}
 
-1. Crea la seguente cartella e struttura di file nella cartella di livello principale del progetto in Git:
-
-   ```
-   config/
-        logForwarding.yaml
-   ```
-
-1. `logForwarding.yaml` deve contenere metadati e una configurazione simile al seguente formato (ad esempio, viene utilizzato Splunk).
+1. Creare un file denominato `logForwarding.yaml`. Deve contenere metadati, come descritto nell&#39;articolo [config pipeline](/help/operations/config-pipeline.md#common-syntax) (**kind** deve essere impostato su `LogForwarding` e la versione impostata su &quot;1&quot;), con una configurazione simile alla seguente (ad esempio, si utilizza Splunk).
 
    ```
    kind: "LogForwarding"
@@ -67,52 +60,51 @@ Questo articolo è organizzato nel modo seguente:
          index: "AEMaaCS"
    ```
 
-   Il parametro **kind** deve essere impostato su `LogForwarding` e la versione deve essere impostata sulla versione dello schema, ovvero 1.
+1. Posizionare il file in una cartella di primo livello denominata *config* o simile, come descritto in [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure).
 
-   I token nella configurazione (ad esempio `${{SPLUNK_TOKEN}}`) rappresentano segreti, che non devono essere memorizzati in Git. Dichiarale invece come Cloud Manager [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md) di tipo **segreto**. Assicurarsi di selezionare **Tutti** come valore a discesa per il campo Servizio applicato, in modo che i registri possano essere inoltrati ai livelli di authoring, pubblicazione e anteprima.
+1. Per tipi di ambiente diversi da RDE (attualmente non supportato), creare una pipeline di configurazione della distribuzione di destinazione in Cloud Manager, come indicato in [questa sezione](/help/operations/config-pipeline.md#creating-and-managing). Si noti che le pipeline full stack e le pipeline a livello web non distribuiscono il file di configurazione.
 
-   È possibile impostare valori diversi tra i registri CDN e i registri AEM (incluso Apache/Dispatcher), includendo un blocco **cdn** e/o **aem** aggiuntivo dopo il blocco **default**, in cui le proprietà possono ignorare quelle definite nel blocco **default**. È richiesta solo la proprietà abilitata. Un possibile caso di utilizzo potrebbe essere l’utilizzo di un indice Splunk diverso per i registri CDN, come illustrato nell’esempio seguente.
+1. Distribuisci la configurazione.
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          cdn:
-            enabled: true
-            token: "${{SPLUNK_TOKEN_CDN}}"
-            index: "AEMaaCS_CDN"   
-   ```
+I token nella configurazione (ad esempio `${{SPLUNK_TOKEN}}`) rappresentano segreti, che non devono essere memorizzati in Git. Dichiarale invece come [Variabili di ambiente segrete](/help/operations/config-pipeline.md#secret-env-vars) di Cloud Manager. Assicurarsi di selezionare **Tutti** come valore a discesa per il campo Servizio applicato, in modo che i registri possano essere inoltrati ai livelli di authoring, pubblicazione e anteprima.
 
-   Un altro scenario consiste nel disabilitare l’inoltro dei registri CDN o dei registri AEM (incluso Apache/Dispatcher). Ad esempio, per inoltrare solo i registri CDN, puoi configurare quanto segue:
+È possibile impostare valori diversi tra i registri CDN e i registri AEM (incluso Apache/Dispatcher), includendo un blocco **cdn** e/o **aem** aggiuntivo dopo il blocco **default**, in cui le proprietà possono ignorare quelle definite nel blocco **default**. È richiesta solo la proprietà abilitata. Un possibile caso di utilizzo potrebbe essere l’utilizzo di un indice Splunk diverso per i registri CDN, come illustrato nell’esempio seguente.
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          aem:
-            enabled: false
-   ```
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       cdn:
+         enabled: true
+         token: "${{SPLUNK_TOKEN_CDN}}"
+         index: "AEMaaCS_CDN"   
+```
 
-1. Per tipi di ambiente diversi da RDE (attualmente non supportato), crea una pipeline di configurazione della distribuzione di destinazione in Cloud Manager; tieni presente che le pipeline full stack e le pipeline a livello web non distribuiscono il file di configurazione.
+Un altro scenario consiste nel disabilitare l’inoltro dei registri CDN o dei registri AEM (incluso Apache/Dispatcher). Ad esempio, per inoltrare solo i registri CDN, puoi configurare quanto segue:
 
-   * [Consulta Configurazione delle pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [Consulta Configurazione delle pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       aem:
+         enabled: false
+```
 
 ## Registrazione della configurazione di destinazione {#logging-destinations}
 
