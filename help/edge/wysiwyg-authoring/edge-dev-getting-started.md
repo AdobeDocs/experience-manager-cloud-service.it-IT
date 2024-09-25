@@ -4,10 +4,10 @@ description: Questa guida ti aiuterà a iniziare a utilizzare un nuovo sito Adob
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 86%
+source-wordcount: '1223'
+ht-degree: 85%
 
 ---
 
@@ -113,6 +113,10 @@ Prima devi creare un nuovo progetto su GitHub, basato sul modello di Adobe.
 1. Aggiungi un messaggio di conferma come desiderato, quindi fai clic su **Conferma modifiche**, per confermarle direttamente nel ramo `main`.
 
    ![Conferma delle modifiche](assets/edge-dev-getting-started/commit-paths-changes.png)
+
+>[!TIP]
+>
+>Per ulteriori informazioni sulle mappature dei percorsi, vedere il documento [Mappatura dei percorsi per Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ### Creare e modificare un nuovo sito AEM {#create-aem-site}
 
