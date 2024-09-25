@@ -1,21 +1,21 @@
 ---
 title: Aggiungere un nome di dominio personalizzato
-description: Scopri come aggiungere un nome di dominio personalizzato con Cloud Manager.
+description: Scopri come aggiungere un nome di dominio personalizzato utilizzando Impostazioni dominio in Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 20%
+source-wordcount: '1509'
+ht-degree: 18%
 
 ---
 
 
 # Aggiungere un nome di dominio personalizzato {#adding-cdn}
 
-Scopri come aggiungere un nome di dominio personalizzato con Cloud Manager.
+Scopri come aggiungere un nome di dominio personalizzato utilizzando **Impostazioni dominio** in Cloud Manager.
 
 ## Requisiti {#requirements}
 
@@ -46,7 +46,7 @@ I passaggi per entrambi i metodi descritti in questo documento si basano su Fast
 
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
-1. Nel menu laterale, in **Servizi**, selezionare **Impostazioni dominio**.
+1. Nel menu laterale, in **Servizi**, selezionare ![Icona Impostazioni](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **Impostazioni dominio**.
 
    ![Finestra Impostazioni dominio](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -61,8 +61,8 @@ Non includere `http://`, `https://` o spazi durante l’inserimento del dominio.
 
    | Opzione tipo di certificato | Descrizione |
    | --- | --- |
-   | Certificato gestito da Adobe | Selezionare se si desidera utilizzare un certificato DV (convalida dominio). Questa opzione è ideale per la maggior parte dei casi e fornisce la convalida di base del dominio. Adobe gestisce e rinnova automaticamente il certificato. |
-   | Certificato gestito dal cliente | Seleziona se desideri utilizzare un certificato EV/OV. Questa opzione offre una protezione avanzata con EV (convalida estesa) o OV (convalida organizzazione). Da utilizzare se è necessaria una verifica più rigorosa, livelli di attendibilità più elevati o un controllo personalizzato dei certificati. |
+   | Certificato gestito da Adobe | Selezionare questo tipo di certificato se si desidera utilizzare un certificato DV (convalida dominio). Questa opzione è ideale per la maggior parte dei casi e fornisce la convalida di base del dominio. Adobe gestisce e rinnova automaticamente il certificato. |
+   | Certificato gestito dal cliente | Selezionare questo tipo di certificato per utilizzare un certificato EV/OV. Questa opzione offre una protezione avanzata con EV (convalida estesa) o OV (convalida organizzazione). Da utilizzare se è necessaria una verifica più rigorosa, livelli di attendibilità più elevati o un controllo personalizzato dei certificati. |
 
 1. Nella finestra di dialogo **Verifica dominio**, in base al tipo di certificato selezionato, eseguire una delle operazioni seguenti:
 
@@ -77,7 +77,7 @@ Non includere `http://`, `https://` o spazi durante l’inserimento del dominio.
 
    >[!NOTE]
    >
-   >Se utilizzi un certificato SSL gestito autonomamente e un provider CDN gestito autonomamente, puoi saltare questo passaggio e passare direttamente a [Aggiungi una configurazione CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) quando è pronto.
+   >Se utilizzi un certificato SSL gestito dal cliente e un provider CDN gestito dal cliente, puoi saltare l&#39;aggiunta di un certificato SSL e passare direttamente a [Aggiungi una configurazione CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) quando è pronto.
 
 
 ### Adobe di passaggi di certificati gestiti {#adobe-managed-cert-steps}
@@ -222,8 +222,8 @@ I passaggi per aggiungere un nome di dominio personalizzato dalla pagina **Ambie
 
    1. Inserisci il nome di dominio personalizzato.
    1. Seleziona il certificato SSL associato al nome dall’elenco a discesa.
-   1. Fai clic su **+Aggiungi**.
+   1. Fai clic sull&#39;icona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Aggiungi**.
 
    ![Aggiungi un nome di dominio personalizzato](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. La finestra di dialogo **Aggiungi nome dominio** si apre nella scheda **Nome dominio**. Continua come faresti per [aggiungere un nome di dominio personalizzato dalla pagina Impostazioni dominio](#adding-cdn-settings). —>
+1. La finestra di dialogo **Aggiungi nome dominio** si apre nella scheda **Nome dominio**. Continua come faresti per [aggiungere un nome di dominio personalizzato dalla pagina Impostazioni dominio](#adding-cdn-settings).
