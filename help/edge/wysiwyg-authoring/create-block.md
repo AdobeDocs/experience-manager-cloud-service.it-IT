@@ -1,33 +1,33 @@
 ---
 title: Creazione di blocchi dotati di strumenti per l’utilizzo con l’editor universale
-description: Scopri come creare blocchi instrumentati per l’utilizzo con l’Editor universale nell’authoring WYSIWYG con progetti di Edge Delivery Services.
+description: Scopri come creare blocchi instrumentati per l’utilizzo con l’Editor universale nell’authoring di WYSIWYG con progetti di Edge Delivery Services.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 772fcc2688edb57eca3b84689de1d1c47f87dcd0
+source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 64%
+source-wordcount: '1445'
+ht-degree: 62%
 
 ---
 
 
 # Creazione di blocchi dotati di strumenti per l’utilizzo con l’editor universale {#create-block}
 
-Scopri come creare blocchi instrumentati per l’utilizzo con l’Editor universale nell’authoring WYSIWYG con progetti di Edge Delivery Services.
+Scopri come creare blocchi instrumentati per l’utilizzo con l’Editor universale nell’authoring di WYSIWYG con progetti di Edge Delivery Services.
 
 ## Prerequisiti {#prerequisites}
 
-Questa guida fornisce istruzioni dettagliate su come creare blocchi instrumentati per l’editor universale nell’authoring WYSIWYG con progetti di Edge Delivery Services. Include l’aggiunta di componenti, il caricamento delle definizioni dei componenti nell’editor universale, la pubblicazione delle pagine, l’implementazione della decorazione dei blocchi e degli stili, l’introduzione delle modifiche nell’ambiente di produzione e la loro verifica. Al termine di questa guida, potrai creare e distribuire un nuovo blocco per il tuo progetto.
+Questa guida fornisce istruzioni dettagliate su come creare blocchi instrumentati per l’Editor universale nei progetti di authoring WYSIWYG con Edge Delivery Services. Include l’aggiunta di componenti, il caricamento delle definizioni dei componenti nell’editor universale, la pubblicazione delle pagine, l’implementazione della decorazione dei blocchi e degli stili, l’introduzione delle modifiche nell’ambiente di produzione e la loro verifica. Al termine di questa guida, potrai creare e distribuire un nuovo blocco per il tuo progetto.
 
 Questa guida richiede necessariamente una conoscenza esistente dell’authoring WYSIWYG con progetti di Edge Delivery Services e dell’editor universale. Prima di iniziare questa guida, è necessario avere già accesso a Edge Delivery Services e conoscere le relative nozioni di base, tra cui:
 
 * Il completamento di un [tutorial su Edge Delivery Service.](/help/edge/developer/tutorial.md)
 * L’accesso a una [sandbox di AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * L’[attivazione dell’Editor universlae nello stesso ambiente sandbox.](/help/implementing/universal-editor/getting-started.md)
-* Hai completato la [Guida introduttiva per sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
+* Hai completato la [Guida introduttiva per sviluppatori per l&#39;authoring di WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
-Questa guida si basa sul lavoro svolto nella [Guida introduttiva per sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
+Questa guida si basa sul lavoro svolto nella [Guida introduttiva per sviluppatori per la creazione di WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 ## Aggiunta di un nuovo blocco al progetto {#add-block}
 
@@ -45,7 +45,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 ### Crea modello e definizione di blocco {#create-block-model}
 
-1&amp;period; Clona il progetto GitHub localmente creato nella [Guida introduttiva per sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e aprilo in un editor scelto.
+1&amp;period; Clona il progetto GitHub localmente creato nella [Guida introduttiva per sviluppatori per l&#39;authoring di WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e aprilo in un editor scelto.
 
 * Il codice Microsoft viene utilizzato qui a scopo illustrativo.
 
@@ -155,7 +155,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 Dopo aver definito e confermato il blocco del preventivo di base nel progetto di esempio, è possibile aggiungere un blocco citazione a una pagina esistente.
 
-1. In un browser, accedi a AEM as a Cloud Service. [Utilizzando la console Sites,](/help/sites-cloud/authoring/basic-handling.md) accedi al sito creato nella [Guida introduttiva per sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e seleziona una pagina.
+1. In un browser, accedi a AEM as a Cloud Service. [Utilizzando la console Sites,](/help/sites-cloud/authoring/basic-handling.md) accedi al sito creato nella [Guida introduttiva per sviluppatori per la creazione di WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e seleziona una pagina.
 
    * In questo caso, `index` viene utilizzato a scopo illustrativo.
 
@@ -331,13 +331,19 @@ Se non stai sviluppando nel ramo `main`, puoi aggiungere `?ref=<branch>` nella b
 
 La pubblicazione di contenuti con un nuovo modello è supportata solo quando il modello viene unito al ramo `main`.
 
+## Riutilizzo dei blocchi per l&#39;authoring basato su documenti {#reusing-blocks}
+
+Se si aderisce allo stesso modello di contenuto, è possibile utilizzare i blocchi creati per l’authoring WYSIWYG utilizzando l’Editor universale per l’authoring basato su documenti.
+
+Per ulteriori informazioni, consulta il documento [Blocchi per WYSIWYG e authoring basato su documenti](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md).
+
 ## Passaggi successivi {#next-steps}
 
 Ora che sai come creare i blocchi, è fondamentale comprendere come modellare i contenuti in modo semantico per ottenere un’esperienza di sviluppo più snella.
 
-Per informazioni sul funzionamento della modellazione dei contenuti per la creazione WYSIWYG con progetti Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md), vedere il documento [Modellazione dei contenuti per la creazione WYSIWYG con progetti Edge Delivery Services.
+Per informazioni sul funzionamento della modellazione dei contenuti per la creazione di WYSIWYG con progetti Edge Delivery Services, consulta il documento [Modellazione dei contenuti per la creazione di WYSIWYG con progetti Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
 
 >[!TIP]
 >
->Per una procedura dettagliata end-to-end di creazione di un nuovo progetto Edge Delivery Services abilitato per l&#39;authoring WYSIWYG con AEM as a Cloud Service come origine di contenuto, visualizzare [questo webinar AEM GEMs.](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Per una procedura dettagliata end-to-end di creazione di un nuovo progetto Edge Delivery Services abilitato per la creazione di WYSIWYG con AEM as a Cloud Service come origine di contenuto, visualizzare [questo webinar AEM GEMs.](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 
