@@ -3,7 +3,7 @@ title: Mappatura percorsi per Edge Delivery Services
 description: Scopri come mappare i percorsi di pagina utilizzati nell’istanza di authoring AEM sui percorsi di pagina pubblici utilizzati sul sito web e controllare quali contenuti vengono pubblicati nei Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 51a2b453ccce39cb42c927a088bc088083545542
+source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -95,8 +95,8 @@ Le mappature dei percorsi possono essere configurate in uno dei due modi seguent
    }'
    ```
 
-1. Se il progetto non utilizza il servizio di configurazione, la mappatura dei percorsi viene configurata tramite un file paths.json nell’archivio GitHub dei progetti.
+1. Se il progetto non utilizza il servizio di configurazione, il mapping dei percorsi viene configurato tramite un file `paths.json` nell&#39;archivio GitHub dei progetti.
 
-   * Vedi [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](/https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) per un esempio.
+   * Vedi [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) per un esempio.
 
 In entrambi i casi, una volta configurate le mappature dei percorsi, è possibile controllare la configurazione tramite l&#39;URL di configurazione accessibile al pubblico `https://<branch>--<site>--<org>.aem.page/config.json`.
