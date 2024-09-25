@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: b5ae995623c41803f8704fa9699d3514c37e4550
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 51%
+source-wordcount: '1677'
+ht-degree: 41%
 
 ---
 
@@ -57,7 +57,7 @@ La prima è l’intestazione di Cloud Manager, che è persistente quando ti spos
 
 ![Intestazione di Experience Cloud](assets/experience-cloud-header.png)
 
-1. Fai clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (mostra/nascondi menu laterale) per accedere a una serie di schede che possono portare a parti specifiche di un singolo programma. In alternativa, è possibile passare dalla console [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md) alla console **[Programmi personali](#my-programs-console)** a seconda del contesto.
+1. Fai clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (mostra o nascondi menu laterale) per accedere a una serie di schede che possono portare a parti specifiche di un singolo programma. In alternativa, è possibile passare dalla console [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md) alla console **[Programmi personali](#my-programs-console)** a seconda del contesto.
 1. Fai clic sul pulsante Adobe Cloud Manager per tornare alla console Programmi di Cloud Manager, ovunque ti trovi in Cloud Manager.
 1. Fai clic su **Feedback** per fornire un feedback all&#39;Adobe su Cloud Manager.
 1. Fare clic sul selettore organizzazione per visualizzare l&#39;organizzazione a cui si è attualmente connessi (in questo esempio, Foundation Internal). Fai clic per passare a un’altra organizzazione se il tuo Adobe ID è associato a più di una.
@@ -90,7 +90,7 @@ Oppure, se stai iniziando la configurazione dell’organizzazione, potrebbero es
 
 Il contenuto principale della console **Programmi** è l&#39;elenco dei programmi nella sezione **Programmi**.
 
-Nella sezione **I miei programmi** sono elencate le schede che rappresentano ogni programma. Tocca o fai clic su una scheda per accedere alla pagina **Panoramica del programma** per informazioni dettagliate sul programma.
+Nella sezione **I miei programmi** sono elencate le schede che rappresentano ogni programma. Fai clic su una scheda per accedere alla pagina **Panoramica del programma** per informazioni dettagliate sul programma.
 
 >[!NOTE]
 >
@@ -101,13 +101,13 @@ Per trovare più facilmente il programma necessario, utilizzare le opzioni di or
 
 ![Opzioni di ordinamento](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
 
-* Ordina per
-   * Data di creazione (impostazione predefinita)
-   * Nome del programma
-   * Stato
-* Crescente (predefinito) / Decrescente
-* Vista griglia (predefinito)
-* Vista a elenco
+* Ordina per:
+   * **Data creazione** (impostazione predefinita)
+   * **Nome programma**
+   * **Stato**
+* ![Icona Ordinamento decrescente](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) Crescente (impostazione predefinita) / ![Icona Ordinamento decrescente](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg)
+* ![Icona visualizzazione griglia classica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) Visualizzazione griglia (impostazione predefinita)
+* ![Icona elenco visualizzazione](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) Visualizzazione elenco
 
 #### Schede del programma {#program-cards}
 
@@ -115,48 +115,42 @@ Una scheda (o riga in una tabella) rappresenta ogni programma, fornendo una pano
 
 ![Scheda Programma](assets/program-card.png)
 
-* Immagine del programma (se configurata)
-* Nome del programma
+* Immagine associata al programma, se configurata. L&#39;immagine qui sopra è &quot;WKND&quot;.
+* Nome assegnato al programma. L’immagine qui sopra mostra &quot;SecurBank Sample&quot; come nome del programma.
 * Tipo di servizio:
-   * **Experience Manager Cloud** per programmi AEM as a Cloud Service
-   * **Experience Manager** per [programmi AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager Cloud** — per programmi AEM as a Cloud Service
+   * **Experience Manager** — per [programmi AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Tipo di programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Sandbox
    * Produzione
-* Stato
-* Soluzioni configurate
-* Data di creazione
+* Stato. Nell’immagine qui sopra, lo stato è Pronto con un segno di spunta.
+* Soluzioni configurate. Nell’immagine precedente, Sites e Assets sono le soluzioni configurate.
+* Data di creazione.
 
-A seconda delle opzioni scelte durante la creazione del programma, un programma di produzione potrebbe essere contrassegnato per mostrare funzioni aggiuntive.
+Un programma di produzione potrebbe essere contrassegnato per mostrare funzioni aggiuntive scelte al momento dell’aggiunta, ad esempio:
 
-* [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
+* ![Badge HIPAA](assets/hipaa.png) [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![Badge HIPAA](assets/hipaa.png)
+* ![Badge WAF-DDOS](assets/waf-ddos-protection.png) [Protezione WAF-DDOS](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-* [Protezione WAF-DDOS](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
-
-  ![Badge WAF-DDOS](assets/waf-ddos-protection.png)
-
-* [SLA 99,99%](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
-
-  ![99,99% badge SLA](assets/9999-sla.png)
+* [99,99% SLA (contratto del livello di servizio)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
 L’icona delle informazioni consente inoltre di accedere rapidamente a informazioni aggiuntive sul programma (utili nella vista a elenco).
 
 ![Informazioni](assets/information-list-view.png)
 
-L’icona con i puntini di sospensione ti permette di accedere alle azioni aggiuntive che puoi intraprendere sul programma.
+L&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_22_N.svg) consente di accedere alle azioni aggiuntive che è possibile eseguire sul programma.
 
 ![Pulsante con i puntini di sospensione per i programmi](assets/program-ellipsis.png)
 
-* Passare a un determinato [ambiente](/help/implementing/cloud-manager/manage-environments.md) del programma
-* Apri la [Panoramica del programma](#program-overview)
-* [Modifica il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* [Eliminare un programma sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* Passa a una particolare ![icona dati](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [ambiente](/help/implementing/cloud-manager/manage-environments.md) del programma
+* Apri l&#39;![icona Panoramica programma](/help/implementing/cloud-manager/assets/program-overview.svg) [Panoramica programma](#program-overview)
+* ![Icona Modifica](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Modifica il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* ![Icona Elimina](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Elimina un programma sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
->Per ulteriori informazioni sui programmi e sulla creazione e gestione dei programmi, vedere i seguenti documenti.
+>Per ulteriori informazioni sui programmi e sull&#39;aggiunta e la gestione dei programmi, vedere:
 >
 >* [Programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 >* [Crea programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
@@ -167,9 +161,9 @@ L’icona con i puntini di sospensione ti permette di accedere alle azioni aggiu
 
 La sezione dei collegamenti rapidi consente di accedere alle risorse di uso comune correlate.
 
-## Finestra Panoramica programma {#program-overview}
+## Pagina di panoramica del programma {#program-overview}
 
-Quando si seleziona un programma nella console **[Programmi personali](#my-programs-console)**, viene visualizzata la finestra **Panoramica programma**.
+Quando si seleziona un programma nella console **[Programmi personali](#my-programs-console)**, viene visualizzata la pagina **Panoramica programma**.
 
 ![Panoramica del programma](assets/program-overview.png)
 
@@ -189,11 +183,11 @@ Le barre degli strumenti per la panoramica del programma sono simili a quelle de
 
 #### Intestazione di Cloud Manager {#cloud-manager-header-2}
 
-L’intestazione di Cloud Manager dispone di un menu hamburger che si apre automaticamente per mostrare le schede navigabili della panoramica del programma.
+Nell’angolo in alto a sinistra della pagina è l’intestazione Cloud Manager dell’Adobe. È possibile fare clic su ![Icona menu laterale](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per mostrare o nascondere il menu laterale delle schede in altre aree del software.
 
 ![Menu hamburger di Cloud Manager](assets/cloud-manager-hamburger.png)
 
-Tocca o fai clic sull’icona del menu hamburger per nascondere le schede.
+Fai clic su Adobe Cloud Manager per tornare alla Home.
 
 #### Barra degli strumenti del programma {#program-toolbar-2}
 
@@ -229,11 +223,11 @@ A ogni programma sono associate molte opzioni e molti dati. Queste opzioni e que
 
 **Risorse**
 
-* Percorsi di apprendimento: risorse di apprendimento aggiuntive su Cloud Manager
+* ![Icona libro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Book_18_N.svg) Percorsi di apprendimento - Risorse di apprendimento aggiuntive su Cloud Manager
 
 Per impostazione predefinita, quando si apre un programma si accede alla scheda **Panoramica**. Viene evidenziata la scheda corrente. Seleziona un’altra scheda per visualizzarne i dettagli.
 
-Utilizza il menu hamburger in [Intestazione di Cloud Manager](#cloud-manager-header-2) per nascondere le schede.
+Nell&#39;angolo superiore sinistro dell&#39;intestazione [Cloud Manager](#cloud-manager-header-2), fare clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare o nascondere il menu laterale delle schede.
 
 ### Invito all’intervento {#cta}
 
