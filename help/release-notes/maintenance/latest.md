@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 22f8ffc3e3acec9846a2f868be48195ca62df88b
+source-git-commit: fa2da21ef6424bce0830d503eba650e1c1bf3dc2
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1353'
 ht-degree: 18%
 
 ---
@@ -18,7 +18,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 17964 {#release-17964}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 17964, rilasciata al pubblico il giovedì 25 settembre 2024. La precedente versione di manutenzione era la 17689.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 17964, rilasciata al pubblico il giovedì 25 settembre 2024. La versione di manutenzione precedente era 17689. Le 17882 sulla versione sono state rese private a causa di un problema.
 
 Con la versione di attivazione funzioni 2024.10.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
