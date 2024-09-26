@@ -4,10 +4,10 @@ description: Scopri i vantaggi di AEM as a Cloud Service su Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '408'
+ht-degree: 95%
 
 ---
 
@@ -44,6 +44,10 @@ La funzionalità Unified Shell è attivata in AEM as a Cloud Service per imposta
 
    ![immagine](/help/overview/assets/unifiedshell3.png)
 
+>[!NOTE]
+>
+>Unified Shell può essere disabilitato anche dal codice del progetto. Vedi [Struttura dell&#39;interfaccia utente di AEM - Unified Shell](/help/implementing/developing/introduction/ui-structure.md#unified-shell).
+
 ## Passare al tema scuro {#changing-to-dark-theme}
 
 Per passare al tema scuro, fai clic sull’icona del tuo profilo. Questa azione visualizza una finestra popover come mostrato di seguito. Puoi utilizzare l’interruttore per passare al tema scuro di Unified Shell.
@@ -73,3 +77,4 @@ AEM as a Cloud Service fornisce tre tipi di ambienti: produzione, staging e svil
 Fai clic sul pulsante casella in entrata nella finestra popover per passare alla casella in entrata AEM:
 
 ![immagine](/help/overview/assets/unifiedshell6.png)
+
