@@ -5,7 +5,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_groupmigration"
 >title="Migrazione dei gruppi"
->abstract="Lo strumento Content Transfer (Trasferimento contenuti) consente di copiare i gruppi dal sistema Adobe Experience Manager (AEM) esistente ad AEM as a Cloud Service."
+>abstract="Lo strumento di trasferimento contenuti consente di copiare utenti e gruppi dal sistema Adobe Experience Manager (AEM) esistente ad AEM as a Cloud Service."
 
 >[!NOTE]
 >Per le versioni precedenti dello strumento di mappatura utenti, consulta la [documentazione legacy](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
@@ -25,9 +25,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermigration"
 >title="Utenti non migrati"
->abstract="Lo strumento Content Transfer (Trasferimento contenuti) non esegue più la migrazione degli utenti. Gli utenti devono essere gestiti nell’Admin Console."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="Documentazione dell’Admin Console AEM"
->additional-url="https://adminconsole.adobe.com/" text="Admin Console AEM"
+>abstract="Lo strumento di trasferimento contenuti non esegue più la migrazione degli utenti. Gli utenti devono essere gestiti in Admin Console."
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="Documentazione di AEM Admin Console"
+>additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
 
 Nell’ambito del percorso di transizione verso l’as a Cloud Service Adobe Experience Manager (AEM), è necessario migrare i gruppi dagli AEM esistenti ad AEM as a Cloud Service. Questa operazione viene eseguita dallo strumento Content Transfer (Trasferimento contenuti).
 

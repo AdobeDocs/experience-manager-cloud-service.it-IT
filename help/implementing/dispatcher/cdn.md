@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
 source-wordcount: '1608'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
@@ -37,7 +37,7 @@ In preparazione alla distribuzione dei contenuti utilizzando la rete CDN integra
 * [Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [Introduzione ai nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Introduzione ai certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [Aggiungi una configurazione CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [Aggiungere una configurazione CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 
 **Limitazione del traffico**
 
@@ -74,7 +74,7 @@ Leggi informazioni su [configurazione di un token API di eliminazione](/help/imp
 
 Per i casi di utilizzo di autenticazione leggera che includono soggetti interessati alle attività di revisione del contenuto, proteggi il contenuto visualizzando una finestra di dialogo di autenticazione di base che richiede un nome utente e una password. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-credentials-authentication.md) e partecipazione al programma iniziale.
 
-## La rete CDN gestita dal cliente punta alla rete CDN gestita dall’AEM {#point-to-point-CDN}
+## CDN gestita dal cliente punta alla CDN gestita di AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"

@@ -1,24 +1,24 @@
 ---
-title: Gestione delle entità dopo la migrazione
+title: Gestione delle entità principali dopo la migrazione
 description: Scopri come configurare utenti e gruppi in IMS e AEM
-source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
+exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-
-# Gestione delle entità dopo la migrazione {#managing-principals-after-migration}
+# Gestione delle entità principali dopo la migrazione {#managing-principals-after-migration}
 
 >[!CONTEXTUALHELP]
 >id="managing-principals"
->title="Gestione delle entità dopo la migrazione"
+>title="Gestione delle entità principali dopo la migrazione"
 >abstract="Scopri come configurare utenti e gruppi in IMS e AEM"
 
 Questo documento descrive i passaggi di alto livello che i clienti devono fare per configurare i propri utenti e gruppi in IMS e AEM per lavorare con il proprio ambiente AEM as a Cloud Service.
 
-## Gestione delle entità {#managing-principals}
+## Gestione delle entità principali {#managing-principals}
 
 Per AEM as a Cloud Service, gli utenti e i gruppi devono essere gestiti principalmente utilizzando l’Admin Console.  Quando si prende in considerazione una migrazione, alcune di queste attività possono essere eseguite prima che venga eseguita la migrazione dei contenuti.  Essenzialmente, di questi principali gruppi di attività
 
@@ -56,5 +56,3 @@ Poiché questi gruppi non sono in IMS, non è possibile utilizzare lo strumento 
 * Quando l’utente accede a per la prima volta, il suo utente IMS verrà creato in AEM e dovrebbe avere accesso ai nuovi gruppi e quindi ai gruppi di raccolta originali.
 
 Nota: per l’assegnazione in blocco degli utenti, è necessario utilizzare i passaggi precedenti per creare gli utenti in IMS; gli utenti già esistenti in IMS non possono essere creati nuovamente tramite il caricamento in blocco.
-
-
