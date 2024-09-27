@@ -4,10 +4,10 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1350'
-ht-degree: 2%
+source-wordcount: '1321'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ AEM as a Cloud Service offre una raccolta di funzionalità configurabili a livel
 
 * [Trasformazioni richieste](#request-transformations) - Modifica gli aspetti delle richieste in arrivo, inclusi intestazioni, percorsi e parametri.
 * [Trasformazioni di risposta](#response-transformations) - Modifica le intestazioni che stanno per essere inviate al client (ad esempio, un browser Web).
-* [Reindirizzamenti lato client](#client-side-redirectors) - attiva un reindirizzamento del browser. Questa funzione non è ancora disponibile in versione GA, ma è disponibile per gli utenti che la utilizzano da subito.
+* [Reindirizzamenti lato client](#client-side-redirectors) - attiva un reindirizzamento del browser.
 * [Selettori di origine](#origin-selectors) - proxy a un backend di origine diverso.
 
 Nella rete CDN sono configurabili anche le regole del filtro del traffico (incluso WAF), che controllano il traffico consentito o negato dalla rete CDN. Questa funzionalità è già stata rilasciata ed è possibile ottenere ulteriori informazioni nella pagina [Regole filtro del traffico, incluse le regole di WAF](/help/security/traffic-filter-rules-including-waf.md).
@@ -363,9 +363,6 @@ data:
 
 ## Reindirizzamenti lato client {#client-side-redirectors}
 
->[!NOTE]
->Questa funzione non è ancora disponibile al pubblico. Per partecipare al programma per utenti precoci, invia un&#39;e-mail a `aemcs-cdn-config-adopter@adobe.com` e descrivi il tuo caso d&#39;uso.
-
 Puoi utilizzare le regole di reindirizzamento lato client per 301, 302 e reindirizzamenti lato client simili. Se una regola corrisponde, la rete CDN risponde con una riga di stato che include il codice di stato e il messaggio (ad esempio, HTTP/1.1 301 Spostato definitivamente), nonché l’intestazione della posizione impostata.
 
 Sono consentite posizioni sia assolute che relative con valori fissi.
@@ -380,7 +377,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_redirects:
+  redirects:
     rules:
       - name: redirect-absolute
         when: { reqProperty: path, equals: "/page.html" }
