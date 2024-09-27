@@ -5,7 +5,7 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b5ae995623c41803f8704fa9699d3514c37e4550
+source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 41%
@@ -145,8 +145,8 @@ L&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_22/Smock_M
 
 * Passa a una particolare ![icona dati](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [ambiente](/help/implementing/cloud-manager/manage-environments.md) del programma
 * Apri l&#39;![icona Panoramica programma](/help/implementing/cloud-manager/assets/program-overview.svg) [Panoramica programma](#program-overview)
-* ![Icona Modifica](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Modifica il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Icona Elimina](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Elimina un programma sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Icona Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Modifica il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* ![Icona Elimina](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Elimina un programma sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -183,9 +183,9 @@ Le barre degli strumenti per la panoramica del programma sono simili a quelle de
 
 #### Intestazione di Cloud Manager {#cloud-manager-header-2}
 
-Nell’angolo in alto a sinistra della pagina è l’intestazione Cloud Manager dell’Adobe. È possibile fare clic su ![Icona menu laterale](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per mostrare o nascondere il menu laterale delle schede in altre aree del software.
+Nell’angolo in alto a sinistra della pagina è l’intestazione Cloud Manager dell’Adobe. È possibile fare clic su ![Icona menu laterale](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per mostrare o nascondere il menu laterale delle schede in altre aree del software.
 
-![Menu hamburger di Cloud Manager](assets/cloud-manager-hamburger.png)
+![Menu laterale Cloud Manager](assets/cloud-manager-hamburger.png)
 
 Fai clic su Adobe Cloud Manager per tornare alla Home.
 
