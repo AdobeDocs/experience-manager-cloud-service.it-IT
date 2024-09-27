@@ -4,10 +4,10 @@ description: Note sulla versione specifiche per le funzioni obsolete e rimosse i
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
-workflow-type: ht
-source-wordcount: '2172'
-ht-degree: 100%
+source-git-commit: 708bf370c2843dd8e2937de8fbf77843e661cf02
+workflow-type: tm+mt
+source-wordcount: '2220'
+ht-degree: 97%
 
 ---
 
@@ -271,11 +271,36 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
     <td>11/04/2022</td>
     <td>30/08/2024</td>
   </tr>
+  <tr>
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
     <td>L’uso di questa API non è più supportato in AEM as a Cloud Service.</td>
     <td>17/05/2024</td>
     <td>30/06/2024</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>Utilizza invece org.apache.sling.xss.</td>
+    <td>12/12/2023</td>
+    <td>30/06/2024</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>Il servlet in com.adobe.granite.xss.impl.servlets non è obsoleto</td>
+    <td>12/12/2023</td>
+    <td>30/06/2024</td>
   </tr>  
+  <tr>
+    <td>com.drew.*</td>
+    <td>L’estrazione dei metadati da immagini e video deve essere eseguita tramite Asset Compute nel Cloud Service o tramite Apache POI o Apache Tika.</td>
+    <td>9/17/2024</td>
+    <td>12/17/2024</td>
+  </tr>
+  <tr>
+    <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
+    <td></td>
+    <td>9/23/2024</td>
+    <td>12/23/2024</td>
+  </tr>       
 </tbody>
 </table>
 </details>
