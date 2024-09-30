@@ -1,37 +1,46 @@
 ---
-title: Aggiunta di archivi Adobe in Cloud Manager
-description: Scopri come creare archivi gestiti da Adobe in Cloud Manager.
+title: Aggiungere un archivio di Adobi in Cloud Manager
+description: Scopri come aggiungere un archivio gestito da un Adobe in Cloud Manager.
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 100%
+source-wordcount: '235'
+ht-degree: 8%
 
 ---
 
-# Aggiunta di archivi Adobe in Cloud Manager {#adobe-repositories}
+# Aggiungere un archivio di Adobi in Cloud Manager {#adobe-repositories}
 
-Scopri come creare archivi gestiti da Adobe in Cloud Manager.
+Scopri come aggiungere un archivio gestito da un Adobe in Cloud Manager.
 
-## Aggiunta di un archivio gestito da Adobe {#add-adobe-repository}
+La pagina **Archivi** semplifica l&#39;aggiunta di ulteriori archivi gestiti da Adobe a un programma selezionato.
 
-La finestra **Archivi** consente di aggiungere facilmente al programma altri archivi gestiti da Adobe.
+**Per aggiungere un archivio di Adobi in Cloud Manager:**
 
-1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
+1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l&#39;organizzazione e il programma appropriati a cui desideri aggiungere un archivio gestito da Adobe.
 
-1. Dalla pagina **Panoramica del programma**, seleziona la scheda **Archivi** per passare alla pagina **Archivi**.
+1. Nella pagina **Panoramica programma**, nel menu laterale, fare clic sulla scheda ![Icona cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Archivi**. per passare alla pagina **Archivi**.
 
-1. Fai clic su **Aggiungi archivio** nella barra degli strumenti.
+1. Nella pagina **Archivi**, in alto a destra, fare clic su **Aggiungi archivio**.
 
    ![Pulsante Aggiungi archivio](assets/add-repository.png)
 
-1. Inserisci il nome e la descrizione come richiesto e fai clic su **Salva**.
+1. Nella finestra di dialogo **Aggiungi archivio**, accertati che sia selezionato **Archivio Adobe** come tipo di archivio.
+
+1. Nei rispettivi campi di testo, immetti quanto segue:
+
+   * **Nome archivio** - Nome espressivo per il nuovo archivio.
+   * **Anteprima URL archivio** - Non è necessario immettere un percorso URL o modificare il percorso esistente perché l&#39;infrastruttura è già installata e completamente integrata e gestita da Adobe.
+   * **Descrizione (facoltativa)**: descrizione dettagliata dell&#39;archivio.
 
    ![Finestra di dialogo Aggiungi archivio](assets/add-adobe-repository.png)
 
-Al termine della procedura guidata, il nuovo archivio viene visualizzato nella tabella nella finestra **Archivi**. A questo punto puoi associarvi una [pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) o gestirlo nella finestra [**Archivi**.](managing-repositories.md)
+1. Fai clic su **Salva**.
+Il nuovo archivio viene visualizzato nella tabella della pagina **Archivi**.
+
+È ora possibile associare una [pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) a essa o gestirla all&#39;interno della [**pagina Archivi**](managing-repositories.md).
 
 >[!TIP]
 >
