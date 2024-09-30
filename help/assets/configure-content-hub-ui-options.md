@@ -2,9 +2,9 @@
 title: Configurare l’interfaccia utente dell’hub di contenuti
 description: Configurare l’interfaccia utente dell’hub di contenuti
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
+source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1374'
 ht-degree: 5%
 
 ---
@@ -60,6 +60,8 @@ In qualità di amministratore, gestisci le seguenti opzioni di configurazione pe
 * [Ricerca](#configure-metadata-search-content-hub)
 
 * [Branding](#configure-branding-content-hub)
+
+* [Risorse scadute](#expired-assets-content-hub)
 
 * [Collegamenti personalizzati](#configure-custom-links-content-hub)
 
@@ -168,6 +170,33 @@ Gli amministratori possono anche personalizzare il titolo e il corpo del testo s
 Gli aggiornamenti di branding abilitati nell’interfaccia utente di configurazione vengono visualizzati sul banner del portale Content Hub:
 
 ![Branding dell&#39;interfaccia utente di configurazione in Content Hub](assets/configuration-ui-branding-updates.png)
+
+### Risorse scadute {#expired-assets-content-hub}
+
+Gli amministratori possono controllare se le risorse scadute devono essere visibili in Content Hub. Se le risorse scadute vengono rese visibili, possono anche definire se gli utenti possono scaricarle.
+
+Per impostazione predefinita, le risorse scadute non vengono visualizzate in Content Hub.
+
+Per farlo, esegui le seguenti operazioni:
+
+1. Nell&#39;interfaccia utente di [Configurations](#access-configuration-options-content-hub), fare clic su **[!UICONTROL Expired Assets]**.
+
+1. Nella sezione **[!UICONTROL Visibile]**, abilita l&#39;interruttore **[!UICONTROL Consenti agli utenti di visualizzare le risorse scadute]** per rendere visibili in Content Hub tutte le risorse scadute.
+
+1. Dopo aver abilitato la visibilità delle risorse, puoi abilitare o disabilitare la possibilità di scaricare risorse scadute utilizzando l&#39;interruttore **[!UICONTROL Consenti agli utenti di scaricare risorse scadute]**.
+
+1. Fai clic su **[!UICONTROL Salva]** per applicare le modifiche.
+
+   ![Risorse scadute in Content Hub](assets/expired-assets-content-hub.png)
+
+Dopo aver abilitato la visibilità delle risorse, puoi visualizzare le risorse scadute su Content Hub, come illustrato nell’immagine seguente:
+
+![Risorse scadute in Content Hub](assets/view-download-expired-assets.png)
+
+Se l’amministratore ha abilitato il download, gli utenti di Content Hub possono anche scaricarlo, come evidenziato nell’immagine.
+
+Se è abilitata la visibilità delle risorse scadute, Content Hub evidenzia anche le risorse che scadono nei successivi 15 giorni utilizzando il messaggio `Expiring in n days` nella scheda delle risorse.
+
 
 ### Collegamenti personalizzati {#configure-custom-links-content-hub}
 
