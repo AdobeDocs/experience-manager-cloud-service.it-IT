@@ -4,7 +4,7 @@ description: Scopri in che modo Universal Editor consente di modificare ciò che
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 52%
@@ -14,7 +14,7 @@ ht-degree: 52%
 
 # Introduzione all’editor universale {#introduction}
 
-Universal Editor è un editor visivo versatile che fa parte di Adobe Experience Manager Sites. Consente agli autori di eseguire la modifica WYSIWYG (What-you-see-is-what-you-get) di qualsiasi esperienza headless o headful. Scopri in che modo può aiutare gli autori di contenuti a fornire esperienze eccezionali e come offre agli sviluppatori una libertà senza precedenti.
+Universal Editor è un editor visivo versatile che fa parte di Adobe Experience Manager Sites. Consente agli autori di modificare ciò che si vede è ciò che si ottiene (WYSIWYG) in qualsiasi esperienza headless o headful. Scopri in che modo può aiutare gli autori di contenuti a fornire esperienze eccezionali e come offre agli sviluppatori una libertà senza precedenti.
 
 ## Informazioni di base {#background}
 
@@ -91,6 +91,8 @@ Quando esplori l’Editor universale e procedi alla sua implementazione nei tuoi
 * È richiesta la versione di AEM as a Cloud Service `2023.8.13099` o successiva.
 * Gli autori dei contenuti devono avere un proprio account Experience Cloud.
 * Chrome e Edge sono i browser supportati
+
+{{ue-ip-allow-lists}}
 
 ## Passaggi successivi {#next-steps}
 

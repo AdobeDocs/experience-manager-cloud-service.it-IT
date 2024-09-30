@@ -5,22 +5,26 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 96179c5f88e8546c12674e34afd0269c1f196d65
+source-git-commit: 0edc6d2b32d06727c693d4630ce500e32aa336b4
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 27%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Introduzione agli elenchi IP consentiti {#introduction}
 
+Scopri come gli Elenchi consentiti IP possono limitare gli indirizzi da cui gli utenti possono accedere ai domini in AEM as a Cloud Service.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
->title="Gestione degli elenchi IP consentiti"
+>title="Gestire gli elenchi IP consentiti"
 >abstract="AEM as a Cloud Service è accessibile tramite Internet ed è protetto tramite autenticazione e autorizzazione degli utenti. È possibile utilizzare gli elenchi IP consentiti di Cloud Manager per controllare l’accesso e limitarlo ai soli indirizzi IP attendibili. Gli utenti di Cloud Manager con le autorizzazioni appropriate possono creare degli elenchi di indirizzi IP consentiti attendibili da cui gli utenti del sito possono accedere ai domini AEM."
 >additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists" text="Aggiungere un elenco IP consentiti"
 >additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists" text="Visualizzare e aggiornare un elenco di indirizzi IP consentiti"
+
+## Panoramica {#overview}
 
 Per impostazione predefinita, l’accesso a AEM as a Cloud Service avviene tramite Internet. Mentre la sicurezza viene gestita tramite l’autenticazione e l’autorizzazione degli utenti, l’inserimento nell’elenco Consentiti IP è un modo per limitare l’accesso solo agli indirizzi IP attendibili.
 
@@ -32,13 +36,21 @@ Dopo l&#39;aggiunta, è possibile applicare o rimuovere più volte [Elenchi cons
 >
 >Se non viene applicato alcun Elenco consentiti IP, per impostazione predefinita sono consentiti tutti gli indirizzi IP. Quando viene applicato un Elenco consentiti IP, non sono consentiti indirizzi IP diversi da quelli dell’Elenco consentiti IP.
 
-## Utilizzo dell’Elenco consentiti IP di Cloud Manager con la pipeline front-end {#allowlists-frontend-pipeline}
+## Limitazioni {#limitations}
+
+Prima di utilizzare gli elenchi consentiti IP, comprendi le seguenti limitazioni in termini di funzionalità, utilizzo ed effetti su altre funzioni.
+
+### Limitazioni generali degli Elenchi consentiti IP {#general}
+
+* È possibile aggiungere al programma un massimo di 50 Elenchi consentiti IP.
+* A ogni Elenco consentiti IP è possibile aggiungere un massimo di 50 indirizzi IP/CIDR.
+* I nomi di Elenchi consentiti IP sono supportati in Cloud Manager per il servizio Author, Publish o entrambi in un ambiente.
+
+### Pipeline front-end e Elenchi consentiti IP {#front-end-pipeline}
 
 Se si utilizza, o si intende utilizzare, la pipeline front-end [per sviluppare siti](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md), è necessario aggiungere in anticipo il seguente Elenco consentiti IP di Cloud Manager.
 
 Quando [aggiungi l&#39;Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist), denominalo *`Cloud Manager`*, quindi copia l&#39;elenco di indirizzi seguente e incollali nella finestra di dialogo Elenco consentiti IP.
-
-**Elenco indirizzi IP consentiti di Cloud Manager**
 
 ```text
 52.254.106.192/28
@@ -68,14 +80,8 @@ Quando [aggiungi l&#39;Elenco consentiti IP](/help/implementing/cloud-manager/ip
 
 Per evitare interruzioni nell’esecuzione della pipeline front-end, assicurati che questo Elenco consentiti IP di Cloud Manager sia aggiunto. Quindi, applica l&#39;elenco all&#39;ambiente di authoring *prima* di abilitare la pipeline.
 
-Vedere [Applica Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md).
-Vedi [Abilitare la pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+Per ulteriori informazioni, consulta i documenti [Applica Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) e [Abilita pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
+### Editor universale e Elenchi consentiti IP {#universal-editor}
 
-## Limitazioni {#limitations}
-
-Vi sono diverse limitazioni agli Elenchi consentiti IP da tenere a mente.
-
-* Nel programma è possibile aggiungere fino a 50 Elenchi consentiti IP.
-* A ogni Elenco consentiti IP è possibile aggiungere un massimo di 50 indirizzi IP/CIDR.
-* I nomi di Elenchi consentiti IP sono supportati in Cloud Manager per il servizio Author, Publish o entrambi in un ambiente.
+{{ip-allow-lists-ue}}
