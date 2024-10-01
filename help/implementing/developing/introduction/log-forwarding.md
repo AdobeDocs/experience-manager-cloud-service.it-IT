@@ -4,9 +4,9 @@ description: Scopri come inoltrare i registri a Splunk e ad altri fornitori di r
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
+source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,7 @@ Questo articolo è organizzato nel modo seguente:
 * Registrazione delle configurazioni di destinazione: ogni destinazione ha un formato leggermente diverso
 * Formati delle voci di registro: informazioni sui formati delle voci di registro
 * Rete avanzata: invio dei registri AEM e Apache/Dispatcher tramite un’uscita dedicata o tramite una VPN
+* Migrazione dall’inoltro di registro legacy: come passare dall’inoltro di registro precedentemente configurato da Adobe all’approccio self-service
 
 
 ## Configurazione {#setup}
@@ -369,4 +370,23 @@ data:
     aem:
       advancedNetworking: true
 ```
+
+## Migrazione dall’inoltro registro legacy {#legacy-migration}
+
+Prima di raggiungere la configurazione di Log Forwarding tramite un modello self-service, ai clienti veniva richiesto di aprire i ticket di supporto, dove Adobe avviava l’integrazione.
+
+I clienti che sono stati configurati in questo modo da Adobe sono invitati ad adattarsi al modello self-service quando lo desiderano. Ci sono diversi motivi per effettuare questa transizione:
+
+* È stato eseguito il provisioning di un nuovo ambiente (ad esempio, un nuovo ambiente di sviluppo o RDE).
+* Modifiche all’endpoint o alle credenziali Splunk esistenti.
+* L’Adobe aveva configurato l’inoltro del registro prima che i registri CDN fossero disponibili e desideri ricevere i registri CDN.
+* Una decisione consapevole di adattarsi in modo proattivo al modello self-service in modo che l’organizzazione disponga delle conoscenze necessarie anche prima che sia necessario un cambiamento sensibile al tempo.
+
+Per eseguire la migrazione, è sufficiente configurare il file YAML come descritto nelle sezioni precedenti. Utilizza la pipeline di configurazione Cloud Manager per distribuire in ciascuno degli ambienti in cui deve essere applicata la configurazione.
+
+È consigliabile, ma non obbligatorio, distribuire una configurazione in tutti gli ambienti in modo che siano tutti sotto il controllo self-service. In caso contrario, potresti dimenticare quali ambienti sono stati configurati da Adobe rispetto a quelli configurati in modo self-service.
+
+>[!NOTE]
+>
+>Quando l’inoltro dei registri viene distribuito in un ambiente configurato in precedenza dal supporto Adobe, puoi ricevere registri duplicati per un massimo di alcune ore. Questo alla fine si risolverà automaticamente.
 
