@@ -4,9 +4,9 @@ description: Scopri come ignorare la pagina di errore predefinita ospitando file
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -89,3 +89,9 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 I codici supportati sono: 403, 404, 406, 500 e 503.
 
 In questo modo, attivi direttamente il gestore degli errori della rete CDN per testare la risposta sintetica per un determinato codice di errore.
+
+### Tutorial
+
+Per istruzioni dettagliate su come creare, distribuire e verificare le pagine di errore CDN distribuite, consulta l&#39;esercitazione [Pagine di errore CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages).
+
+
