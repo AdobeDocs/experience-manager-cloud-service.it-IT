@@ -5,9 +5,9 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '384'
 ht-degree: 44%
 
 ---
@@ -42,9 +42,9 @@ La funzionalità **Accedi a dati archivio** è visibile agli utenti con i ruoli 
 
    ![Accedi a dati archivio sulla scheda delle pipeline](assets/pipelines-card.png)
 
-1. Per accedere alla password, è necessario generare una nuova password. Nella finestra di dialogo Informazioni archivio fare clic su **`Generate password`**.
+1. Per accedere alla password, è necessario generare una nuova password. Nella finestra di dialogo **Informazioni archivio**, selezionare **Genera password**.
 
-1. Nella finestra di dialogo di conferma, fare clic su **`Generate password`**.
+1. Nella finestra di dialogo di conferma, selezionare **Genera password**.
 
    ![Conferma la generazione della password](assets/confirm-generated-password.png)
 

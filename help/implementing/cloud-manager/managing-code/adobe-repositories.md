@@ -4,10 +4,10 @@ description: Scopri come aggiungere un archivio gestito da un Adobe in Cloud Man
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 8%
+source-wordcount: '231'
+ht-degree: 7%
 
 ---
 
@@ -21,7 +21,7 @@ La pagina **Archivi** semplifica l&#39;aggiunta di ulteriori archivi gestiti da 
 
 1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l&#39;organizzazione e il programma appropriati a cui desideri aggiungere un archivio gestito da Adobe.
 
-1. Nella pagina **Panoramica programma**, nel menu laterale, fare clic sulla scheda ![Icona cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Archivi**. per passare alla pagina **Archivi**.
+1. Nella pagina **Panoramica programma**, nel menu laterale, fare clic sulla scheda ![Icona cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Archivi**.
 
 1. Nella pagina **Archivi**, in alto a destra, fare clic su **Aggiungi archivio**.
 
@@ -32,7 +32,7 @@ La pagina **Archivi** semplifica l&#39;aggiunta di ulteriori archivi gestiti da 
 1. Nei rispettivi campi di testo, immetti quanto segue:
 
    * **Nome archivio** - Nome espressivo per il nuovo archivio.
-   * **Anteprima URL archivio** - Non è necessario immettere un percorso URL o modificare il percorso esistente perché l&#39;infrastruttura è già installata e completamente integrata e gestita da Adobe.
+   * **Anteprima URL archivio** - Non è necessario immettere un percorso URL o modificare il percorso esistente perché l&#39;infrastruttura del repository è già installata e completamente integrata e gestita da Adobe.
    * **Descrizione (facoltativa)**: descrizione dettagliata dell&#39;archivio.
 
    ![Finestra di dialogo Aggiungi archivio](assets/add-adobe-repository.png)

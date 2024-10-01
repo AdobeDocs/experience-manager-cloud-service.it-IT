@@ -1,13 +1,13 @@
 ---
 title: Gestione degli archivi in Cloud Manager
-description: Scopri come creare, visualizzare ed eliminare gli archivi GIT in Cloud Manager.
+description: Scopri come aggiungere, visualizzare ed eliminare gli archivi Git in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: b35b25bcd62c28f7894171b7b2269fa46d612686
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 14%
+source-wordcount: '708'
+ht-degree: 20%
 
 ---
 
@@ -48,7 +48,9 @@ Altre azioni disponibili nel menu a discesa includono **[Copia URL archivio](#co
    ![Pagina repository](assets/repositories.png)
    *Pagina Archivi in Cloud Manager.*
 
-## Aggiungere archivi {#adding-repositories}
+## Aggiungere un archivio {#adding-repositories}
+
+Per aggiungere un archivio, l&#39;utente deve avere il ruolo **Responsabile dell&#39;implementazione** o **Proprietario business**.
 
 Nella pagina **Archivi**, nell&#39;angolo superiore destro, fare clic su **Aggiungi archivio**
 
@@ -60,11 +62,15 @@ Cloud Manager supporta due tipi di repository: repository gestiti da Adobe (**re
 * [Aggiungere archivi Adobe in Cloud Manager](adobe-repositories.md)
 * [Aggiungere archivi privati in Cloud Manager](private-repositories.md)
 
->[!NOTE]
->
->* Per aggiungere un archivio, l&#39;utente deve avere il ruolo **Responsabile dell&#39;implementazione** o **Proprietario business**.
->* Per ogni azienda o organizzazione IMS, vi è un limite di 300 archivi per tutti i programmi.
+Per ogni azienda o organizzazione IMS, vi è un limite di 300 archivi per tutti i programmi.
 
+## Accedere alle informazioni dell’archivio {#repo-info}
+
+Quando visualizzi gli archivi nella finestra **Archivi**, puoi visualizzare i dettagli su come accedere agli archivi gestiti da Adobe a livello di programmazione facendo clic sul pulsante **Accedi a dati archivio** nella barra degli strumenti.
+
+![Informazioni sull’archivio](assets/repository-access-repo-info2.png)
+
+La finestra **Informazioni archivio** si apre con i dettagli. Per ulteriori informazioni sull’accesso alle informazioni dell’archivio, consulta [Accesso alle informazioni sull’archivio](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 ## Controlla rami/Crea progetto {#check-branches}
 
@@ -91,7 +97,7 @@ L’azione **Elimina** rimuove l’archivio dal progetto. Un archivio non può e
 
 ![Elimina](assets/repository-delete.png)
 
-L’eliminazione di un archivio rende il suo nome inutilizzabile per tutti i nuovi archivi creati in futuro. Se tenti di usare lo stesso nome, viene visualizzato il seguente messaggio di errore:
+L’eliminazione di un archivio rende il suo nome inutilizzabile per tutti i nuovi archivi creati in futuro. Se si tenta di aggiungere un repository utilizzando lo stesso nome di un repository eliminato, viene visualizzato il seguente messaggio di errore:
 
 `Repository name should be unique within organization.`
 
