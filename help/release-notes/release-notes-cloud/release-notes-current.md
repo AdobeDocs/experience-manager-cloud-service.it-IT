@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 2d5fa0b15456ad9838fa236a2b5c79d41a9af7fe
+source-git-commit: 894c5df2cdc6637bae9b4b8f2cbdd1f1162b3942
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 70%
+source-wordcount: '1289'
+ht-degree: 68%
 
 ---
 
@@ -72,6 +72,12 @@ Per ottenere l’accesso anticipato al supporto delle didascalie generate dall�
 Il Selettore risorse ora supporta la navigazione nelle raccolte per trovare la risorsa desiderata.
 ![Raccolte selettori risorse](/help/assets/assets/collections-rail-modal-view.png)
 
+### Nuove funzioni di Content Hub {#content-hub-new-features}
+
+Gli amministratori ora possono controllare se le risorse scadute devono essere visibili in Content Hub. Se le risorse scadute vengono rese visibili, possono anche definire se gli utenti possono scaricarle.
+
+![Risorse scadute in Content Hub](/help/assets/assets/view-download-expired-assets.png)
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nuove funzioni pre-release in AEM Forms {#forms-new-prerelease-features}
@@ -120,7 +126,7 @@ Le funzionalità di intelligenza artificiale generativa offerte sono:
 * I campi di Commerce non sono integrati correttamente con l’editor schema metadati di Assets.
 * Problema con i prodotti Carosello Multifield per il trascinamento.
 * Problema con il campo multiplo Categoria carosello per il trascinamento.
-* Il clic non funziona per i menu nella pagina Informazioni pagina nell’editor categoria e prodotto.
+* Il clic non funziona per i menu nella pagina Informazioni pagina nell’editor categorie e prodotti.
 * Il numero ordine non è visibile nella pagina di conferma ordine.
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
