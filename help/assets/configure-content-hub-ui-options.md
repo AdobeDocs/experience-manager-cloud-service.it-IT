@@ -5,7 +5,7 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
 workflow-type: tm+mt
 source-wordcount: '1374'
-ht-degree: 5%
+ht-degree: 12%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
 >title="Configurare l’interfaccia utente dell’hub di contenuti"
->abstract="Experience Manager Assets consente agli amministratori di configurare le opzioni disponibili nell’interfaccia utente di Content Hub. In base alle opzioni di configurazione selezionate dagli amministratori, gli utenti di Content Hub possono visualizzare i campi in Content Hub. Le opzioni di configurazione includono metadati durante l’importazione di risorse, filtri, proprietà delle risorse, metadati durante la ricerca di risorse, branding personalizzato ed eventuali collegamenti personalizzati."
+>abstract="Experience Manager Assets consente agli amministratori di configurare le opzioni disponibili nell’interfaccia utente dell’hub di contenuti. In base alle opzioni di configurazione selezionate dagli amministratori, gli utenti dell’hub di contenuti possono visualizzare i campi su di esso. Le opzioni di configurazione includono metadati durante l’importazione di risorse, filtri, proprietà delle risorse, metadati durante la ricerca di risorse, branding personalizzato ed eventuali collegamenti personalizzati."
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Configurare le risorse in Content Hub](assets/configure-assets.png)
 
-Experience Manager Assets consente agli amministratori di configurare le opzioni disponibili nell’interfaccia utente di Content Hub. In base alle opzioni di configurazione selezionate dagli amministratori, gli utenti di Content Hub possono visualizzare i campi in Content Hub. Le opzioni di configurazione includono:
+Experience Manager Assets consente agli amministratori di configurare le opzioni disponibili nell’interfaccia utente dell’hub di contenuti. In base alle opzioni di configurazione selezionate dagli amministratori, gli utenti dell’hub di contenuti possono visualizzare i campi su di esso. Le opzioni di configurazione includono:
 
 * Filtri disponibili per gli utenti durante la ricerca di risorse.
 
