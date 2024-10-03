@@ -4,10 +4,10 @@ description: Guida rapida alle linee guida WCAG (Web Content Accessibility Guide
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
 role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: bffc743b2d28c4c4815a17df75c04c8bfdc90a1e
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 97%
+source-wordcount: '1749'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,9 @@ La [versione 2.1 delle linee guida per l’accessibilità dei contenuti web (WCA
 
 >[!NOTE]
 >
->Attualmente, è in fase di sviluppo una versione [aggiornata delle linee guida, WCAG 2.2](https://www.w3.org/TR/WCAG22/), ma questa non verrà presa in considerazione al momento.
+>Poiché questi documenti sono stati scritti con la [versione aggiornata delle linee guida, WCAG 2.2](https://www.w3.org/TR/WCAG/) è stato reso disponibile a ottobre 2023.
+>
+>Vedi [Confronto con WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) e [Nuove funzioni in WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 Le linee guida WCAG 2.1 sono costituite da un insieme di criteri di successo e linee guida che non dipendono dalla tecnologia in uso e hanno l’obiettivo di rendere i contenuti web accessibili e utilizzabili da persone con disabilità. Includono suggerimenti e indicazioni per autori, designer e sviluppatori di contenuti web al fine di garantire che le risorse prodotte siano progettate in modo da essere accessibili per un pubblico che sia il più ampio possibile, indipendentemente da eventuali disabilità o limitazioni, quali disabilità visive o uditive, difficoltà di apprendimento o limiti correlati all’età.
 
