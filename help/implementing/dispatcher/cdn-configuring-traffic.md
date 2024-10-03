@@ -4,9 +4,9 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 7f7ecfcca77cc3a38f3a4517bf41c48565b9faea
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1339'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,14 @@ data:
           - type: set
             reqHeader: x-some-header
             value: some value
-            
+      - name: set-header-with-reqproperty-rule
+        when:
+          reqProperty: path
+          like: /set-header
+        actions:
+          - type: set
+            reqHeader: x-some-header
+            value: {reqProperty: path}           
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -146,9 +153,9 @@ Nella tabella seguente sono illustrate le azioni disponibili.
 
 | Nome | Proprietà | Significato |
 |-----------|--------------------------|-------------|
-| **set** | (reqProperty o reqHeader o queryParam o reqCookie), valore | Imposta un parametro di richiesta specificato (supportata solo la proprietà &quot;path&quot;) o un&#39;intestazione di richiesta, un parametro di query o un cookie su un valore specificato. |
+| **set** | (reqProperty o reqHeader o queryParam o reqCookie), valore | Imposta un parametro di richiesta specificato (supportata solo la proprietà &quot;path&quot;) o un&#39;intestazione di richiesta, un parametro di query o un cookie su un valore specificato, che può essere un valore letterale stringa o un parametro di richiesta. |
 |     | var, value | Imposta una proprietà richiesta specificata su un valore specificato. |
-| **non impostato** | reqProperty | Rimuove un parametro di richiesta specificato (è supportata solo la proprietà &quot;path&quot;) o un&#39;intestazione di richiesta, un parametro di query o un cookie da un determinato valore. |
+| **non impostato** | reqProperty | Rimuove un parametro di richiesta specificato (supportata solo la proprietà &quot;path&quot;) o un&#39;intestazione di richiesta, un parametro di query o un cookie da un determinato valore, che potrebbe essere un valore letterale stringa o un parametro di richiesta. |
 |         | var | Rimuove una variabile specificata. |
 |         | queryParamMatch | Rimuove tutti i parametri di query che corrispondono a un&#39;espressione regolare specificata. |
 | **trasformazione** | op:replace, (reqProperty o reqHeader o queryParam o reqCookie), match, replace | Sostituisce parte del parametro della richiesta (supportata solo la proprietà &quot;path&quot;) oppure l’intestazione di richiesta, il parametro di query o il cookie con un nuovo valore. |
