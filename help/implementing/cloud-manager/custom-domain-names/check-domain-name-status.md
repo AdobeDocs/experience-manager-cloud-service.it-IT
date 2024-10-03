@@ -1,14 +1,14 @@
 ---
-title: Controllo dello stato del nome di dominio
+title: Verifica stato nome dominio
 description: Scopri come verificare che Cloud Manager abbia confermato correttamente il nome di dominio personalizzato.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ff7b76f7892269f6ca001ff2c079bc693c06d93
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 28%
+source-wordcount: '832'
+ht-degree: 24%
 
 ---
 
@@ -21,7 +21,7 @@ Scopri come verificare che Cloud Manager abbia confermato correttamente il nome 
 
 Rispetta questi requisiti prima di controllare lo stato del nome di dominio in Cloud Manager.
 
-* Aggiungere innanzitutto un record TXT per il dominio personalizzato come descritto nel documento [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+* Aggiungere innanzitutto un certificato EV/OV per il dominio personalizzato come descritto nel documento [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
 ## Verifica lo stato del nome di dominio personalizzato {#how-to}
 
@@ -45,13 +45,13 @@ Vengono visualizzati i dettagli dello stato. Il dominio personalizzato è pronto
 
 ## Stati di verifica {#statuses}
 
-Cloud Manager verifica la proprietà del dominio tramite il valore [TXT](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) e visualizza uno dei seguenti messaggi di stato.
+Cloud Manager verifica la proprietà del dominio tramite il certificato gestito dal cliente. Al termine, viene visualizzato uno dei seguenti messaggi di stato:
 
 | Stato | Descrizione |
 | --- | --- |
-| Verifica del dominio non riuscita | Il valore TXT è mancante o viene rilevato con errori.<br> Per risolvere il problema, seguire le istruzioni fornite nel messaggio di stato. Al termine dell’operazione, seleziona l’icona **Nuovo tentativo di verifica** accanto allo stato. |
+| Verifica del dominio non riuscita | Il certificato EV/OV gestito dal cliente è mancante o rilevato con errori.<br> Per risolvere il problema, seguire le istruzioni fornite nel messaggio di stato. Al termine dell’operazione, seleziona l’icona **Nuovo tentativo di verifica** accanto allo stato. |
 | Verifica del dominio in corso | Verifica in corso.<br>Questo stato viene generalmente visualizzato dopo aver selezionato l&#39;icona **Verifica di nuovo** accanto allo stato. L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritardi di propagazione del DNS. |
-| Verificato - Distribuzione non riuscita | La verifica TXT è riuscita, ma la distribuzione CDN non è riuscita.<br>In questi casi, contatta il rappresentante del tuo Adobe. |
+| Verificato - Distribuzione non riuscita | La verifica del certificato EV/OV è riuscita, ma la distribuzione CDN non è riuscita.<br>In questi casi, contatta il rappresentante del tuo Adobe. |
 | Dominio verificato e implementato | Questo stato indica che il nome di dominio personalizzato è pronto per l’uso.<br>A questo punto, il nome di dominio personalizzato è pronto per essere testato e puntato al nome di dominio Cloud Manager. Per ulteriori informazioni, consulta [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | Eliminazione in corso | È in corso l’eliminazione di un nome di dominio personalizzato. |
 | Eliminazione non riuscita | Eliminazione di un nome di dominio personalizzato non riuscita. È necessario riprovare.<br>Per ulteriori informazioni, consulta [Gestire i nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md). |
@@ -63,7 +63,7 @@ Di seguito sono riportati alcuni errori comuni di verifica dei nomi di dominio e
 
 ### Errore dominio non installato {#domain-not-installed}
 
-Questo errore può verificarsi durante la convalida del dominio del record TXT anche dopo aver verificato che il record sia stato aggiornato in modo appropriato.
+Questo errore può verificarsi durante la convalida del dominio del certificato EV/OV anche dopo aver verificato che il certificato sia stato aggiornato in modo appropriato.
 
 #### Causa dell’errore {#cause}
 

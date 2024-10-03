@@ -1,20 +1,20 @@
 ---
-title: Configurazione delle pipeline di produzione
-description: Scopri come configurare le pipeline di produzione per generare e distribuire il codice negli ambienti di produzione.
+title: Aggiungere una pipeline di produzione
+description: Scopri come aggiungere una pipeline di produzione per generare e distribuire il codice negli ambienti di produzione.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 69%
+source-wordcount: '1376'
+ht-degree: 67%
 
 ---
 
 
-# Configurazione di una pipeline di produzione {#configure-production-pipeline}
+# Aggiungere una pipeline di produzione {#configure-production-pipeline}
 
 Scopri come configurare le pipeline di produzione per generare e distribuire il codice negli ambienti di produzione. Una pipeline di produzione distribuisce prima il codice nell’ambiente di staging e, dopo l’approvazione, distribuisce lo stesso codice nell’ambiente di produzione.
 
@@ -30,7 +30,7 @@ Prima di iniziare la distribuzione del codice, è necessario configurare le impo
 >
 >È possibile [modificare le impostazioni della pipeline](managing-pipelines.md) dopo la configurazione iniziale.
 
-## Aggiunta di una nuova pipeline di produzione {#adding-production-pipeline}
+## Aggiungere una nuova pipeline di produzione {#adding-production-pipeline}
 
 Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza l’interfaccia utente di [!UICONTROL Cloud Manager], puoi aggiungere una pipeline di produzione seguendo la procedura riportata di seguito.
 

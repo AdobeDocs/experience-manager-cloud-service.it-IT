@@ -4,9 +4,9 @@ description: Scopri come utilizzare Cloud Manager per modificare, aggiornare o e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '477'
 ht-degree: 7%
 
 ---
@@ -31,12 +31,12 @@ Per completare l&#39;attività, l&#39;utente deve avere il ruolo **Proprietario 
 **Per modificare una configurazione CDN:**
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
-1. Nel pannello laterale, in **Servizi**, fai clic su **Configurazioni CDN**.
-1. Nella tabella **Configurazioni CDN**, fai clic sui puntini di sospensione alla fine di una riga di cui desideri modificare la configurazione CDN.
+1. Nel pannello laterale, in **Servizi**, fai clic sull&#39;icona ![Social network](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Configurazioni CDN**.
+1. Nella tabella **Configurazioni CDN**, fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) alla fine di una riga di cui desideri aggiornare la configurazione CDN.
 
    ![Modifica di una configurazione CDN](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
 
-1. Fai clic su **Modifica**.
+1. Dal menu a discesa, fare clic su **Modifica**.
 1. Nella finestra di dialogo **Modifica configurazione CDN**, imposta una o più opzioni nel rispettivo elenco a discesa.
 
    Le opzioni visualizzate nella finestra di dialogo possono variare a seconda che si utilizzi una rete CDN gestita da Adobe o una rete CDN gestita dal cliente.
@@ -44,6 +44,26 @@ Per completare l&#39;attività, l&#39;utente deve avere il ruolo **Proprietario 
 1. Fai clic su **Aggiorna**.
 
    Lo stato del CDN modificato viene aggiornato nella tabella **Configurazioni CDN** per riflettere le modifiche apportate.
+
+<!-- ## ALTERNATE METHOD FOR EDITING A CDN CONFIGURATION from the Environments page
+    
+    The steps for adding a custom domain name from the **Environments** page are the same as when [adding a custom domain name from the Domain Settings page](#adding-cdn-settings), but the entry point differs. Follow these steps to add a custom domain name from the **Environments** page.
+    
+    1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+    
+    1. Navigate to the **Environments Detail** detail page for the environment of interest.
+    
+       ![Entering domain name on the Environment Details page](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
+    
+    1. Use the **Domain Names** table to submit the custom domain name.
+    
+       1. Enter the custom domain name.
+       1. Select the SSL certificate associated with this name from the drop-down list.
+       1. Click ![Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Add**.
+    
+       ![Add a custom domain name](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+    
+    1. The **Add domain name** dialog box opens to the **Domain Name** tab. Continue as you would for [adding a custom domain name from the Domain Settings page](#adding-cdn-settings). -->
 
 ## Eliminare una configurazione CDN {#delete-cdn}
 

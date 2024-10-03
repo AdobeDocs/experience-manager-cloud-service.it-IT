@@ -1,20 +1,20 @@
 ---
-title: Configurazione delle pipeline non di produzione
-description: Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
+title: Aggiungi una pipeline non di produzione
+description: Scopri come aggiungere una pipeline non di produzione per testare la qualità del codice prima di distribuirla negli ambienti di produzione.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 75%
+source-wordcount: '1405'
+ht-degree: 73%
 
 ---
 
 
-# Configurazione delle pipeline non di produzione {#configuring-non-production-pipelines}
+# Aggiungere una pipeline di produzione {#configuring-non-production-pipelines}
 
 Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
 
@@ -33,7 +33,7 @@ Esistono due tipi di pipeline non di produzione:
 >
 >È possibile [modificare le impostazioni della pipeline](managing-pipelines.md) dopo la configurazione iniziale.
 
-## Aggiunta di una nuova pipeline non di produzione {#adding-non-production-pipeline}
+## Aggiungi una nuova pipeline non di produzione {#adding-non-production-pipeline}
 
 Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza l’interfaccia utente di Cloud Manager, puoi aggiungere una pipeline non di produzione seguendo la procedura riportata di seguito.
 

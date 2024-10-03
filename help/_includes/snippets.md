@@ -1,5 +1,5 @@
 ---
-source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 94%
@@ -162,7 +162,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >
 >[L&#39;editor universale](/help/implementing/universal-editor/introduction.md) non è compatibile con gli elenchi consentiti IP.
 >
->Se si desidera utilizzare Universal Editor, gli elenchi consentiti IP non devono essere attivati.
+>Se si desidera utilizzare l&#39;editor universale, gli elenchi consentiti IP non devono essere attivati.
 
 ## Editor universale e Elenchi consentiti IP {#ue-ip-allow-lists}
 
@@ -197,7 +197,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >* Distribuisci un’[esperienza interattiva basata su 3D](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Altre [risorse su Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
-## Registrare un ticket di supporto {#support-ticket}
+## Registra un ticket di supporto {#support-ticket}
 
 Se un problema relativo a un prodotto richiede ulteriori indagini e tentativi di risoluzione e deve soddisfare gli SLT di risposta, puoi inviare un ticket di supporto.
 
