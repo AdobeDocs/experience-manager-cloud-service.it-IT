@@ -4,10 +4,10 @@ description: Scopri come importare in blocco le risorse utilizzando la nuova int
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 816bf0f93dd67f193f4e8a7c9bc4a7df29cb6cf5
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 93%
+source-wordcount: '1881'
+ht-degree: 87%
 
 ---
 
@@ -125,11 +125,23 @@ Per creare una configurazione di importazione in blocco in [!DNL Experience Mana
    >* Se durante la creazione dell’applicazione di Dropbox hai selezionato **Full Dropbox** (Dropbox completo), la cartella che contiene le risorse è già presente in `https://www.dropbox.com/home/bulkimport-assets`, quindi specifica `bulkimport-assets` nel campo **[!UICONTROL Cartella di origine]**.
    >* Se durante la creazione dell’applicazione di Dropbox hai selezionato **App folder** (Cartella app), la cartella che contiene le risorse è già presente in `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`, quindi specifica `bulkimport-assets` nel campo **[!UICONTROL Cartella di origine]**, dove `BulkImportAppFolderScope` fa riferimento al nome dell’applicazione. In questo caso, `Apps` viene aggiunto automaticamente dopo `home`.
 
+   >[!NOTE]
+   >
+   >Se si utilizza OneDrive come origine dati, specificare il percorso della cartella di origine in base alle regole seguenti:
+   >* Specifica solo il nome della cartella principale, senza il dominio. Se il percorso URL completo della cartella è `https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/`, specificare `/Importfolder/` nel campo **[!UICONTROL Cartella Source]**.
+   >* Se il nome della cartella contiene più parole separate da spazi, specificalo con gli spazi nella configurazione dell’importazione in blocco.
+   >* La cartella di origine deve trovarsi nella directory principale. I percorsi delle cartelle non sono supportati.
+
 1. (Facoltativo) Seleziona l’opzione **[!UICONTROL Elimina il file di origine dopo l’importazione]** per eliminare i file originali dall’archivio dati di origine dopo l’importazione in Experience Manager Assets.
 1. Seleziona la **[!UICONTROL Modalità di importazione]**. Seleziona **[!UICONTROL Ignora]**, **[!UICONTROL Sostituisci]** o **[!UICONTROL Crea versione]**. La modalità Ignora è l’impostazione predefinita e, in questa modalità, l’importazione di una risorsa viene ignorata se esiste già.
    ![Importa dettagli origine](/help/assets/assets/bulk-import-source-details.png)
 
 1. (Facoltativo) Specifica il file di metadati da importare, fornito in formato CSV, nel campo **[!UICONTROL File di metadati]**. Il file di origine dei metadati deve trovarsi nella cartella di origine. Fai clic su **[!UICONTROL Avanti]** per passare a **[!UICONTROL Posizione e filtri]**.
+
+   >[!NOTE]
+   >
+   >A seconda delle regole di sicurezza dell&#39;organizzazione, è possibile che sia necessario il consenso dell&#39;amministratore per la connessione dell&#39;applicazione allo strumento Importazione in blocco. Se necessario, l’amministratore deve fornire il consenso prima di salvare la configurazione dell’importazione in blocco.
+
 1. Per definire una posizione in DAM in cui importare le risorse utilizzando il campo **[!UICONTROL Cartella risorse di destinazione]**, specifica un percorso. Esempio: `/content/dam/imported_assets`.
 1. (Facoltativo) Nella sezione **[!UICONTROL Scegli filtri]**, specifica la dimensione minima in MB del file delle risorse da includere nel processo di acquisizione nel campo **[!UICONTROL Filtra per dimensione min]**.
 1. (Facoltativo) Specifica la dimensione massima in MB del file delle risorse da includere nel processo di acquisizione del campo **[!UICONTROL Filtra per dimensione max]**.
