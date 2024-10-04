@@ -4,10 +4,10 @@ description: Scopri come configurare funzionalità di rete avanzate come una VPN
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09a1d6065c42406f1004eb1bdd7dbf902edb279f
+source-git-commit: fd6fb14bf3acdd30efb984e1666ed91a2327d810
 workflow-type: tm+mt
-source-wordcount: '5685'
-ht-degree: 100%
+source-wordcount: '5675'
+ht-degree: 99%
 
 ---
 
@@ -216,7 +216,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 Un indirizzo IP dedicato può migliorare la sicurezza durante l’integrazione con i fornitori SaaS (ad esempio, un fornitore CRM) o altre integrazioni al di fuori di AEM as a Cloud Service che offrono un elenco Consentiti di indirizzi IP. Aggiungendo l’indirizzo IP dedicato all’elenco Consentiti, si garantisce che solo il traffico proveniente dall’istanza di AEM Cloud Service possa passare al servizio esterno. Verrà aggiunto al traffico proveniente da qualsiasi altro IP consentito.
 
-Lo stesso IP dedicato viene applicato a tutti i programmi di un cliente nella sua organizzazione Adobe e per tutti gli ambienti in ciascuno dei suoi programmi. Si applica ai servizi sia di authoring che di pubblicazione.
+Lo stesso IP dedicato viene applicato a tutti gli ambienti di un programma e si applica sia ai servizi Author che a quelli di Publish.
 
 Se la funzione di indirizzo IP dedicato non è abilitata, il traffico proveniente da AEM as a Cloud Service passa attraverso una serie di IP condivisi con altri clienti dello stesso servizio.
 
