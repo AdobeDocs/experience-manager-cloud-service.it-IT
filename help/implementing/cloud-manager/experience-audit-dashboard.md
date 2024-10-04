@@ -1,14 +1,14 @@
 ---
-title: Dashboard di Experience Audit
+title: Dashboard di audit dell’esperienza
 description: Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione, garantendo che le modifiche soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO. Fornisce un’interfaccia dashboard chiara e informativa per monitorare queste metriche.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
+source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 6%
+source-wordcount: '1534'
+ht-degree: 8%
 
 ---
 
@@ -100,7 +100,6 @@ Puoi accedere ai risultati completi del controllo di audit facendo clic sulla sc
 >* Per ulteriori dettagli sul funzionamento del controllo di audit, vedere [Dettagli valutazione controllo esperienza](#details).
 >* Per informazioni su come eseguire un audit dell&#39;esperienza su richiesta, consulta [Rapporti di audit on demand](#on-demand).
 >* Se si verificano problemi con il controllo di audit, vedere [Problemi rilevati durante il controllo di audit dell&#39;esperienza](#issues).
->* Per suggerimenti generali sulle prestazioni, vedere [Suggerimenti generali sulle prestazioni](#performance-tips).
 
 ### Visualizzare le pagine più lente {#view-slowest-pages}
 
@@ -155,38 +154,11 @@ Se fai clic sul grafico in un determinato momento, viene visualizzato un messagg
 
 #### Risultati scansione dell’audit dell’esperienza {#scan-results}
 
-La sezione **Risultati analisi audit esperienza** fornisce consigli su come migliorare il punteggio e i dettagli di tutte le pagine digitalizzate. È diviso in due sezioni:
-
-* **[Recommendations](#recommendations)**
-* **[Pagine digitalizzate](#scanned-pages)**
-
-##### Consigli {#recommendations}
-
-La sezione **Recommendations** mostra un set aggregato di approfondimenti. Per impostazione predefinita, vengono visualizzati i consigli per **prestazioni**. Utilizza il menu a discesa accanto all&#39;intestazione **Recommendations** per passare a un&#39;altra categoria.
-
-![Recommendations](assets/experience-audit-recommendations.png)
-
-Fai clic su un consiglio per visualizzarne i dettagli.
-
-![Dettagli consiglio](assets/experience-audit-recommendations-details.png)
-
-Quando disponibili, i dettagli espansi dei consigli contengono anche la percentuale di impatto dei consigli, per concentrarti sui cambiamenti più incisivi. Inoltre, le raccomandazioni estese possono includere collegamenti alla documentazione AEM e suggerimenti utili per guidare l’utente nell’implementazione delle correzioni suggerite.
-
-Fai clic sul collegamento **visualizza pagine** nella visualizzazione dei dettagli per visualizzare le pagine a cui si applica il consiglio.
-
-![Pagine per i dettagli dei consigli](assets/experience-audit-details-pages.png)
-
-##### Pagine scansionate {#scanned-pages}
-
-La sezione **Pagine digitalizzate** fornisce dettagli sui punteggi di tutte le pagine digitalizzate. Utilizza i pulsanti **Precedente** e **Successivo** per scorrere i risultati e scegliere il numero di pagine da visualizzare.
+La sezione **Risultati analisi audit esperienza** fornisce dettagli sui punteggi di tutte le pagine digitalizzate. Utilizza i pulsanti **Precedente** e **Successivo** per scorrere i risultati e scegliere il numero di pagine da visualizzare.
 
 ![Pagine digitalizzate](assets/experience-audit-scanned-pages.png)
 
-Fai clic sul collegamento di una pagina particolare per aggiornare il filtro **Seleziona** della sezione ](#trend) [**Punteggi pagina — tendenza** e visualizzare la scheda **Punteggi e consigli** per la pagina selezionata.
-
-![Risultati pagina](assets/experience-audit-page-results.png)
-
-La scheda **Rapporti non elaborati** fornisce punteggi per ogni controllo di audit della pagina. Fare clic sulla data del report nella colonna **Report di Lighthouse** per recuperare un file JSON dei dati non elaborati.
+Fai clic sul collegamento di una pagina particolare per aggiornare il filtro **Seleziona** della sezione [**Punteggi pagina — tendenza**](#trend) e visualizzare la scheda **Rapporti non elaborati** che fornisce i punteggi per ogni controllo di audit della pagina. Fare clic sulla data del report nella colonna **Report di Lighthouse** per recuperare un file JSON dei dati non elaborati.
 
 ![Report non elaborato](assets/experience-audit-raw-reports.png)
 
@@ -239,20 +211,7 @@ Alcuni motivi per cui le pagine potrebbero non essere disponibili sono i seguent
 
 >[!TIP]
 >
->[L&#39;accesso ai report non elaborati](#scanned-pages) per una pagina può fornire dettagli sul motivo per cui non è stato possibile controllare la pagina.
-
-## Suggerimenti generali sulle prestazioni {#performance-tips}
-
-Due dei problemi di impatto più comuni e facili da risolvere riguardano Cumulative Layout Shifts (CLS) e Largest Contentful Paint (LCP).
-
-Puoi migliorare queste aree eseguendo le seguenti operazioni:
-
-* Caricamento non lento delle immagini al di sopra della piega: il contenuto visibile nel browser senza dover scorrere verso il basso.
-* Assegnare la corretta priorità al caricamento delle risorse (ad esempio, caricando in modo asincrono le immagini sotto la piega dopo il caricamento del documento).
-* Preacquisizione dei file JavaScript e CSS utilizzati per eseguire il rendering del contenuto sopra la piega (se necessario).
-* Riservare lo spazio verticale assegnando proporzioni ai contenitori che vengono caricati lentamente o renderizzati in un secondo momento.
-* Conversione di immagini in formato WebP per ridurne le dimensioni.
-* Utilizzo di `<picture>` e dell&#39;immagine `srcset` con dimensioni dell&#39;immagine diverse per le diverse dimensioni del riquadro di visualizzazione (assicurandosi che il ridimensionamento funzioni).
+>[L&#39;accesso ai report non elaborati](#scan-results) per una pagina può fornire dettagli sul motivo per cui non è stato possibile controllare la pagina.
 
 ## Dettagli della valutazione di Audit dell’esperienza {#details}
 
@@ -261,7 +220,3 @@ I dettagli seguenti forniscono informazioni aggiuntive su come l’audit dell’
 * Il controllo di audit esegue la scansione del dominio di origine (`.com`) dai [percorsi di pagina del controllo dell&#39;esperienza configurati](#configuration) dell&#39;editore per simulare esperienze utente reali, consentendo di prendere decisioni migliori sulla gestione e l&#39;ottimizzazione dei siti Web.
 * Nelle pipeline full stack di produzione, viene analizzato l’ambiente di staging. Per garantire che il controllo fornisca dettagli rilevanti durante il controllo, il contenuto dell’ambiente di staging deve essere il più simile possibile all’ambiente di produzione.
 * Le pagine visualizzate nell&#39;elenco a discesa **Seleziona** nella sezione [**Punteggi pagina — tendenza**](#trend) sono tutte pagine note analizzate in passato dall&#39;audit dell&#39;esperienza.
-* [Un consiglio](#recommendations) può avere un guadagno potenziale e una differenza rispetto all&#39;analisi precedente.
-* L’audit dell’esperienza stima i potenziali miglioramenti elaborando il rapporto non elaborato per ogni pagina. Mette in correlazione i byte sprecati o i millisecondi con le informazioni, assegnando un impatto ponderato sul punteggio delle prestazioni. L’audit fornisce queste informazioni, insieme alle pagine interessate, per aiutarti a decidere quale consiglio seguire.
-Per ulteriori dettagli, consulta la [sezione Suggerimenti generali sulle prestazioni](#performance-tips).
-* Una pipeline front-end può essere implementata in un ambiente esistente e più pipeline front-end possono essere indirizzate allo stesso ambiente. Poiché i risultati della scansione sono aggregati a livello di ambiente, i punteggi, le tendenze e i consigli sono coerenti. Questi risultati vengono visualizzati nell’ambiente selezionato, indipendentemente dalla pipeline che ha attivato l’analisi.
