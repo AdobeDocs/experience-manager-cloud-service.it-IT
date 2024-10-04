@@ -4,7 +4,7 @@ description: Scopri come risolvere gli errori dei certificati SSL identificando 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: b387fee62500094d712f5e1f6025233c9397f8ec
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 48%
@@ -18,13 +18,13 @@ Se un certificato non è installato correttamente o non soddisfa i requisiti di 
 
 +++**Certificato non valido**
 
-Questo errore si verifica perché il cliente ha aggiunto una chiave privata crittografata e ha utilizzato una chiave privata formattata DER.
+Questo errore si verifica perché il cliente ha utilizzato una chiave privata crittografata e ha fornito la chiave in formato DER.
 
 +++
 
 +++**La chiave privata deve essere in formato PKCS 8**
 
-Questo errore si verifica perché il cliente ha aggiunto una chiave privata crittografata e ha utilizzato una chiave privata formattata DER.
+Questo errore si verifica perché il cliente ha utilizzato una chiave privata crittografata e ha fornito la chiave in formato DER.
 
 +++
 
