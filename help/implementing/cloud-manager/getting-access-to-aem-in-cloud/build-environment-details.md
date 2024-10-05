@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '786'
 ht-degree: 77%
 
 ---
@@ -87,7 +87,7 @@ Per supportare la funzione, Cloud Manager aggiunge le variabili di ambiente stan
 
 Il processo di build può dipendere da specifiche variabili di configurazione che sarebbe inopportuno inserire nell’archivio Git o che potrebbero dover essere modificate tra le esecuzioni della pipeline che utilizzano lo stesso ramo.
 
-Per ulteriori informazioni, consulta il documento [Configurazione delle variabili di pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
+Vedi anche [Configurare le variabili di pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) per ulteriori informazioni
 
 ## Installazione di pacchetti di sistema aggiuntivi {#installing-additional-system-packages}
 

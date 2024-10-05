@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0edc6d2b32d06727c693d4630ce500e32aa336b4
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '452'
+ht-degree: 25%
 
 ---
 
@@ -38,7 +38,7 @@ Dopo l&#39;aggiunta, è possibile applicare o rimuovere più volte [Elenchi cons
 
 ## Limitazioni {#limitations}
 
-Prima di utilizzare gli elenchi consentiti IP, comprendi le seguenti limitazioni in termini di funzionalità, utilizzo ed effetti su altre funzioni.
+Prima di utilizzare gli Elenchi consentiti IP, è necessario comprendere le seguenti limitazioni in termini di funzionalità, utilizzo ed effetti su altre funzioni.
 
 ### Limitazioni generali degli Elenchi consentiti IP {#general}
 
@@ -80,7 +80,7 @@ Quando [aggiungi l&#39;Elenco consentiti IP](/help/implementing/cloud-manager/ip
 
 Per evitare interruzioni nell’esecuzione della pipeline front-end, assicurati che questo Elenco consentiti IP di Cloud Manager sia aggiunto. Quindi, applica l&#39;elenco all&#39;ambiente di authoring *prima* di abilitare la pipeline.
 
-Per ulteriori informazioni, consulta i documenti [Applica Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) e [Abilita pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+Per ulteriori informazioni, vedere [Applica Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) e [Abilita pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
 ### Editor universale e Elenchi consentiti IP {#universal-editor}
 

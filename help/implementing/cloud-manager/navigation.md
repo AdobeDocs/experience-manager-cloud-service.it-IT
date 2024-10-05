@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 41%
+source-wordcount: '1660'
+ht-degree: 39%
 
 ---
 
@@ -45,7 +45,7 @@ La console Programmi personali fornisce una panoramica di tutti i programmi a cu
 
 >[!TIP]
 >
->Per ulteriori informazioni sui programmi, consulta il documento [Programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+>Per ulteriori informazioni sui programmi, consulta [Programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ### Barre degli strumenti {#my-programs-toolbars}
 
@@ -229,7 +229,7 @@ Per impostazione predefinita, quando si apre un programma si accede alla scheda 
 
 Nell&#39;angolo superiore sinistro dell&#39;intestazione [Cloud Manager](#cloud-manager-header-2), fare clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare o nascondere il menu laterale delle schede.
 
-### Invito all’intervento {#cta}
+### Invito all’azione {#cta}
 
 La sezione relativa agli inviti all’azione fornisce informazioni utili in base allo stato del programma. Per un nuovo programma, potrebbero essere visualizzati i passaggi successivi e un promemoria della data di pubblicazione [impostata durante la creazione del programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
@@ -245,7 +245,7 @@ La scheda **Ambienti** offre una panoramica degli ambienti e collegamenti per az
 
 Nella scheda **Ambienti** sono elencati solo tre ambienti. Per visualizzare tutti gli ambienti del programma, fai clic su **Mostra tutto**.
 
-Consulta il documento [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md) per informazioni dettagliate su come gestire gli ambienti.
+Vedi anche [Gestisci ambienti](/help/implementing/cloud-manager/manage-environments.md).
 
 ### Scheda Pipeline {#pipelines}
 
@@ -253,7 +253,7 @@ La scheda **Pipeline** offre una panoramica delle pipeline e dei collegamenti pe
 
 Nella scheda **Pipeline** sono elencate solo tre pipeline. Per visualizzare tutte le pipeline del programma, fai clic su **Mostra tutto**.
 
-Consulta il documento [Gestione delle pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) per informazioni dettagliate su come gestirle.
+Vedi anche [Gestione pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) per informazioni dettagliate su come gestire le pipeline.
 
 ### Scheda Prestazioni {#performance}
 

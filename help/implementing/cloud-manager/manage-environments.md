@@ -1,19 +1,19 @@
 ---
-title: Gestisci ambienti
+title: Gestire gli ambienti
 description: Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2371'
 ht-degree: 65%
 
 ---
 
 
-# Gestisci ambienti {#managing-environments}
+# Gestire gli ambienti {#managing-environments}
 
 Scopri i tipi di ambienti che puoi creare per il tuo progetto Cloud Manager e come farlo.
 
@@ -50,13 +50,13 @@ Per aggiungere o modificare un ambiente, un utente deve essere membro del ruolo 
 
    ![Scheda Ambienti](assets/no-environments.png)
 
-   * L’opzione **Aggiungi ambiente** è disponibile anche nella scheda **Ambienti**.
+   * L&#39;opzione **Aggiungi ambiente** è disponibile anche nella scheda ![Icona dati](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambienti**.
 
      ![Scheda Ambienti](assets/environments-tab.png)
 
    * L’opzione **Aggiungi ambiente** potrebbe essere disattivata per mancanza di autorizzazioni o a seconda delle risorse concesse in licenza.
 
-1. Nella finestra di dialogo **Aggiungi ambiente** che viene visualizzata:
+1. Nella finestra di dialogo **Aggiungi ambiente**:
 
    * Selezionare un tipo di ambiente [****](#environment-types).
       * Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
@@ -310,9 +310,9 @@ I nomi di dominio personalizzati sono supportati in Cloud Manager per i programm
 
 >[!TIP]
 >
->Per ulteriori informazioni, vedere il documento [Introduzione ai nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+>Per ulteriori informazioni, vedere [Introduzione ai nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-## Gestione degli elenchi IP consentiti {#manage-ip-allow-lists}
+## Gestire gli elenchi IP consentiti {#manage-ip-allow-lists}
 
 Gli elenchi IP consentiti sono supportati in Cloud Manager per i servizi di authoring, pubblicazione e anteprima dei programmi Sites.
 
@@ -324,4 +324,4 @@ L’applicazione di un inserisco nell&#39;elenco Consentiti di consente di assoc
 
 >[!TIP]
 >
->Per ulteriori informazioni, vedere il documento [Introduzione agli Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>Per ulteriori informazioni, vedere [Introduzione agli Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

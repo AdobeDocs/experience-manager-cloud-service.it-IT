@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 37%
+source-wordcount: '911'
+ht-degree: 34%
 
 ---
 
@@ -21,18 +21,13 @@ Cloud Manager fornisce una dashboard per visualizzare facilmente i diritti dei p
 >
 >La dashboard delle licenze si applica solo ai programmi AEM as a Cloud Service. [I programmi AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) non sono inclusi nel dashboard delle licenze.
 >
->Per determinare il tipo di servizio fornito al programma (AMS o AEMaaCS), consulta il documento [Navigazione nell&#39;interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
+>Per determinare il tipo di servizio del programma (AMS o AEMaaCS), vedi [Navigazione nell&#39;interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Panoramica {#overview}
 
-Con la dashboard delle licenze di Cloud Manager è possibile accedere facilmente alle seguenti informazioni:
+La dashboard delle licenze di Cloud Manager consente di accedere facilmente ai diritti della soluzione disponibili per tutti i programmi, inclusi ciò che viene utilizzato e ciò che è disponibile. Inoltre, le metriche di consumo delle richieste di contenuto hanno mostrato tendenze mensili per la soluzione Sites.
 
-1. Le adesioni alle soluzioni sono disponibili per tutti i programmi, inclusi quelli utilizzati e quelli disponibili
-1. Metriche sul consumo delle richieste di contenuto con trend mensili per la soluzione Sites
-
-## Utilizzare la dashboard delle licenze {#using-dashboard}
-
-Per accedere alla dashboard delle licenze, segui la procedura riportata di seguito.
+## Accedere alla dashboard delle licenze {#using-dashboard}
 
 >[!NOTE]
 >
@@ -40,7 +35,7 @@ Per accedere alla dashboard delle licenze, segui la procedura riportata di segui
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, fare clic sul pulsante del menu hamburger nell&#39;[Intestazione Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Questo mostra le schede.
-1. Tocca o fai clic sull&#39;opzione **Licenza** nella scheda.
+1. Fai clic sull&#39;opzione **Licenza** nella scheda.
 
 ![Dashboard delle licenze](assets/license-dashboard.png)
 
@@ -105,6 +100,8 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## Domande frequenti {#faq}
 
++++
+
 ### Che cos’è una richiesta di contenuto? {#what-is-a-content-request}
 
 Una richiesta di contenuto è una richiesta pervenuta in AEM Sites o in qualsiasi sistema di caching fornito dal cliente, ad esempio una rete di distribuzione di contenuti, per distribuire contenuti o dati in formato HTML come vista pagina o in formato JSON come chiamata API.
@@ -114,6 +111,9 @@ Viene conteggiata una richiesta di contenuto per ogni visualizzazione di pagina 
 Le richieste di contenuto escludono le richieste o le attività avviate da o per conto di Adobe al solo scopo di fornire prodotti e servizi. È escluso anche il traffico dell’agente utente identificato da Adobe come proveniente da bot, crawler e spider relativi ai comuni motori di ricerca e servizi di social media.
 
 Vedi anche [Comprendere le richieste di contenuto del Cloud Service](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### In che modo Adobe Experience Manager misura le richieste di contenuto? {#how-are-content-requests-measured}
 
@@ -122,15 +122,26 @@ Le richieste di contenuto vengono tracciate sui server Edge di AEM as a Cloud Se
 AEM inoltre offre regole per escludere bot noti, tra cui servizi noti che visitano regolarmente il sito per aggiornare l’indice di ricerca o il servizio.
 
 Vedi anche [Informazioni sulle richieste di contenuto del Cloud Service](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### Perché il rapporto di Analytics mostra risultati diversi rispetto alle richieste di contenuto di AEM? {#why-are-reports-different}
 
 Le richieste di contenuto possono presentare varianze con gli strumenti di reporting di Analytics di un’organizzazione. Per ulteriori informazioni, vedere [Informazioni sulle richieste di contenuto di Cloud Service](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### Come posso ottenere ulteriori informazioni sul volume di richieste di contenuto? {#current-request-volumes}
 
 Se desideri ulteriori informazioni sul volume di richieste di contenuto visualizzato nella dashboard delle licenze, il team di Adobe può fornirti un rapporto che mostra i principali driver di volume delle richieste dei contenuti. Rivolgiti al tuo team di Adobi o all’Assistenza clienti di Adobe per richiedere un rapporto sull’utilizzo ottimale.
++++
+
++++
 
 ### Cosa succede se utilizzo una mia rete CDN? {#using-own-cdn}
 
 La Dashboard delle licenze mostra solo i dati tracciati dalla rete CDN del Cloud Service. Se scegli di usare una tua rete CDN (BYOCDN), devi riportare il volume di richieste di contenuto all’Adobe su base annuale, come indicato nel contratto.
++++
+
