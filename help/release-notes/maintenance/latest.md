@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fa2da21ef6424bce0830d503eba650e1c1bf3dc2
+source-git-commit: ee3e1bedddddff0aa41665359a91a0de48fd19c8
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 98%
+source-wordcount: '1411'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 17964 {#release-17964}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 17964, rilasciata al pubblico il 25 settembre 2024. La versione di manutenzione precedente era 17689. Le 17882 sulla versione sono state rese private a causa di un problema.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 17964, rilasciata al pubblico il 25 settembre 2024. La versione di manutenzione precedente era la 17689. La versione 17882 è stata resa privata a causa di un problema.
 
 Con la versione di attivazione funzioni 2024.10.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -63,7 +63,7 @@ Con la versione di attivazione funzioni 2024.10.0 verrà fornito il set di funzi
 * SITES - 24166: mitigazione delle risorse remote per l’editor dell’interfaccia utente touch.
 * SITES - 24409: registra tutti i processori di richiesta su un solo metodo HTTP.
 * SITES - 25008: migliora la gestione di PersistenceExceptions e dei problemi di autorizzazioni.
-* SITES - 24821: [Xwalk] imposta aem.page / aem.live come predefinito.
+* SITES - 24821: imposta aem.page/aem.live come predefinito.
 
 ### Problemi risolti {#fixed-issues-17964}
 
@@ -107,7 +107,7 @@ Con la versione di attivazione funzioni 2024.10.0 verrà fornito il set di funzi
 * SITES - 23899: Eventi: gli eventi di pagina vengono ritardati o non vengono generati
 * SITES - 23961: Eventi: la creazione di modelli per frammenti di contenuto con riferimenti non riesce quando è presente la cartella di configurazione
 * SITES - 23963: Eventi: a volte gli eventi di pagina eliminata non arrivano
-* SITES - 23443: GraphQL: comportamento incoerente della query del cursore GraphQL.
+* SITES - 23443: GraphQL: GraphQL Cursor query comportamento incoerente.
 * SITES - 10994: l’ordine di attivazione della tastiera non è logico.
 * SITES - 16357: AEM: il pulsante viene troncato nella scheda Configurazione di Analytics dal menu Sites.
 * SITES - 19836: il componente ghost nel contenitore viene visualizzato nelle istanze di pubblicazione e anteprima.
@@ -123,7 +123,7 @@ Con la versione di attivazione funzioni 2024.10.0 verrà fornito il set di funzi
 * SITES - 24025: i reindirizzamenti 302 in AEM restituiscono l’intestazione della posizione utilizzando DNS interno invece di DNS pubblico
 * SITES - 24036: indagine necessaria per i caratteri persistenti in formato ASCII dell’editor Rich Text AEM
 * SITES - 24317: la configurazione proxy non funziona con l’autenticazione di base
-* SITES - 24918: [Xwalk] corregge gli errori 504 restituiti occasionalmente quando si utilizza l&#39;uscita IP dedicata.
+* SITES - 24918: correggi gli errori 504 restituiti occasionalmente quando utilizzi l’uscita IP dedicata.
 
 ### Problemi noti {#known-issues-17964}
 
@@ -131,9 +131,19 @@ Con la versione di attivazione funzioni 2024.10.0 verrà fornito il set di funzi
 
 ### Funzioni e API obsolete {#deprecated-17964}
 
-Si noti che è in corso l’aggiornamento di `com.day.cq.wcm.api` e con la versione corrente sono stati contrassegnati come `@Deprecated` alcuni dei relativi metodi e classi. Questi verranno rimossi nelle versioni future, quindi se utilizzi uno di questi, valuta di passare alle alternative suggerite.
-
 Le funzioni e le API obsolete e rimosse in AEM as a Cloud Service sono descritte nei dettagli nel documento [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
+
+Di seguito è riportato un riepilogo delle funzioni recentemente dichiarate obsolete o in fase di deprecazione.
+
+#### JavaScript Use API {#javascript-use-api}
+
+[L&#39;API di utilizzo di JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) è stata ufficialmente dichiarata obsoleta a causa delle difficoltà che gli utenti devono affrontare per il debug e la manutenzione del codice che sfrutta l&#39;API, nonché per le limitazioni delle prestazioni rispetto all&#39;alternativa Java.
+
+È consigliabile passare a [Java Use API,](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) che offre prestazioni migliori, un debug più semplice e un supporto a lungo termine maggiore.
+
+#### com.day.cq.wcm.api {#com-day-cq-wcm-api}
+
+L&#39;Adobe sta aggiornando `com.day.cq.wcm.api`. Alcuni dei relativi metodi e classi sono stati contrassegnati come `@Deprecated` nella versione corrente. che verranno rimossi nelle prossime versioni. Prendi in considerazione il passaggio alle alternative suggerite.
 
 ### Correzioni di sicurezza {#security-17964}
 
