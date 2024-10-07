@@ -1,22 +1,24 @@
 ---
-title: Risolvere i problemi relativi agli errori dei certificati SSL
-description: Scopri come risolvere gli errori dei certificati SSL identificando le cause comuni in modo da poter mantenere connessioni sicure.
+title: Risolvere i problemi relativi ai certificati SSL
+description: Scopri come risolvere i problemi relativi ai certificati SSL identificando le cause comuni in modo da poter mantenere connessioni sicure.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b387fee62500094d712f5e1f6025233c9397f8ec
+source-git-commit: 1017f84564cedcef502b017915d370119cd5a241
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 48%
+source-wordcount: '556'
+ht-degree: 31%
 
 ---
 
 
-# Risolvere i problemi relativi agli errori dei certificati SSL {#certificate-errors}
+# Risolvere i problemi relativi ai certificati SSL {#certificate-problems}
 
-Se un certificato non è installato correttamente o non soddisfa i requisiti di Cloud Manager, possono verificarsi alcuni errori.
+Scopri come risolvere i problemi relativi ai certificati SSL identificando le cause comuni in modo da poter mantenere connessioni sicure.
 
 +++**Certificato non valido**
+
+## Certificato non valido {#invalid-certificate}
 
 Questo errore si verifica perché il cliente ha utilizzato una chiave privata crittografata e ha fornito la chiave in formato DER.
 
@@ -24,11 +26,15 @@ Questo errore si verifica perché il cliente ha utilizzato una chiave privata cr
 
 +++**La chiave privata deve essere in formato PKCS 8**
 
+## La chiave privata deve essere in formato PKCS 8 {#pkcs-8}
+
 Questo errore si verifica perché il cliente ha utilizzato una chiave privata crittografata e ha fornito la chiave in formato DER.
 
 +++
 
 +++**Ordine corretto dei certificati**
+
+## Ordine corretto dei certificati {#certificate-order}
 
 Il motivo più comune alla base di una distribuzione dei certificati non riuscita è che i certificati intermedi o a catena non sono disposti nell’ordine corretto.
 
@@ -58,6 +64,8 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 +++**Rimuovi certificati client**
 
+## Rimuovi certificati client {#client-certificates}
+
 Quando aggiungi un certificato, se ricevi un errore simile al seguente:
 
 ```text
@@ -69,6 +77,8 @@ The Subject of an intermediate certificate must match the issuer in the previous
 +++
 
 +++**Criteri certificato**
+
+## Criterio certificato {#policy}
 
 Se visualizzi il seguente errore, controlla i criteri del certificato.
 
@@ -117,11 +127,26 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 # "DV Policy - Not Accepted"
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
++++
+
++++**Validità certificato
+
+## Validità del certificato {#validity}
+
+Cloud Manager richiede che il certificato SSL sia valido per almeno 90 giorni dalla data corrente. Verifica la validità della catena di certificati.
 
 +++
 
-+++**Date validità certificato**
++++**Il certificato SAN applicato al dominio non è corretto
 
-Cloud Manager richiede che il certificato SSL sia valido per almeno 90 giorni dalla data corrente. Verifica la validità della catena di certificati.
+## Il certificato SAN applicato al dominio non è corretto {#wrong-san-cert}
+
+Si supponga di voler collegare `dev.yoursite.com` e `stage.yoursite.com` all&#39;ambiente non di produzione e `prod.yoursite.com` all&#39;ambiente di produzione.
+
+Per configurare la rete CDN per questi domini, è necessario installare un certificato per ciascuno di essi, quindi installare un certificato che copre `*.yoursite.com` per i domini non di produzione e un altro che copre anche `*.yoursite.com` per i domini di produzione.
+
+Configurazione valida. Tuttavia, quando aggiorni uno dei certificati, poiché entrambi i certificati coprono la stessa voce SAN, la rete CDN installerà il certificato più recente su tutti i domini applicabili, il che potrebbe apparire imprevisto.
+
+Anche se questo comportamento può essere imprevisto, non si tratta di un errore e si tratta del comportamento standard della rete CDN sottostante. Se si dispone di due o più certificati SAN che coprono la stessa voce di dominio SAN, se tale dominio è coperto da un certificato e l&#39;altro è aggiornato, quest&#39;ultimo verrà ora installato per il dominio.
 
 +++
