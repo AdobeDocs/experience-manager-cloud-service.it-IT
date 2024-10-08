@@ -1,12 +1,12 @@
 ---
 title: Note sulla versione 2024.10.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
-description: Scopri le note sulla versione 2024.10.0 di Cloud Manager in AEM as a Cloud Service.
+description: Ulteriori informazioni sulle note sulla versione 2024.10.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
 source-git-commit: aa8d4c8c69a96054492b886893414c3e82b2f4ad
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 13%
+ht-degree: 82%
 
 ---
 
@@ -26,7 +26,7 @@ La prossima versione è prevista per il venerdì 14 novembre 2024.
 
 ## Novità {#what-is-new}
 
-* <!-- BOTH CS & AMS --> La versione dell’Archetipo AEM utilizzato in Cloud Manager è ora aggiornata alla versione 26. Vedi [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
+* <!-- BOTH CS & AMS --> L’Archetipo AEM utilizzato in Cloud Manager è ora aggiornato alla versione 26. Consulta [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 
 <!-- (CMGR-59817) -->
 
@@ -40,49 +40,49 @@ La prossima versione è prevista per il venerdì 14 novembre 2024.
 
   ![Verificare il dominio per un certificato EV/OV gestito dal cliente](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
-* <!-- CS ONLY --> Quando aggiungi o modifichi un’infrastruttura di rete, i valori nei campi Indirizzo IP e Maschera di rete vengono convalidati in base alle regole seguenti:
+* <!-- CS ONLY --> Quando aggiungi o modifichi un’infrastruttura di rete, i valori presenti nei campi dell’indirizzo IP e della maschera di rete vengono convalidati in base alle regole seguenti:
 
    * Lo spazio degli indirizzi non deve sovrapporsi agli indirizzi definiti nello spazio degli indirizzi di connessione.
    * Gli indirizzi DNS devono appartenere alla maschera di rete definita nello spazio degli indirizzi di connessione o essere pubblici.
 
   ![Finestra di dialogo Aggiungi infrastruttura di rete](/help/implementing/cloud-manager/release-notes/assets/network-infrastructure-add.png)
 
-* <!-- CS ONLY --> Sono state apportate modifiche al formato dei registri di distribuzione dell’ambiente per l’indicizzazione, l’installazione di contenuto mutabile e i processi di trasformazione.
+* <!-- CS ONLY --> Sono state apportate alcune modifiche al formato dei registri di distribuzione dell’ambiente per l’indicizzazione, l’installazione di contenuti mutabili e i processi di trasformazione.
 
   >[!NOTE]
   >
-  >Questa modifica è pianificata per l’implementazione in modo graduale con una data di completamento prevista a dicembre 2024.
+  >Questa modifica verrà implementata in modo graduale fino alla data di completamento prevista per dicembre 2024.
 
-  ![Distribuisci sulla scheda di produzione](/help/implementing/cloud-manager/release-notes/assets/deploy-to-production-card.png)
+  ![Scheda Distribuisci in produzione](/help/implementing/cloud-manager/release-notes/assets/deploy-to-production-card.png)
 
-  Il formato del registro cambierà da una semplice voce visualizzata nei seguenti elementi:
+  Il formato del registro cambierà da una voce semplice, come illustrato di seguito:
 
-  ![Il file di registro mostra voci semplici](/help/implementing/cloud-manager/release-notes/assets/log-file-simple-entry.png)
+  ![File di registro costituito da voci semplici](/help/implementing/cloud-manager/release-notes/assets/log-file-simple-entry.png)
 
-  A una voce JSON visualizzata nei seguenti elementi:
+  A una voce JSON, come illustrato di seguito:
 
-  ![File di registro con voci JSON](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png)
+  ![File di registro costituito da voci JSON](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png)
 
 
 ## Programma per i primi utilizzatori {#early-adoption}
 
-Partecipa al programma di adozione anticipata di Cloud Manager e prova le prossime funzionalità.
+Partecipa al programma per i primi utilizzatori di Cloud Manger e concediti la possibilità di testare le prossime funzionalità.
 
-### Porta il tuo Git - ora con supporto per GitLab e Bitbucket {#gitlab-bitbucket}
+### Bring Your Own Git: ora con supporto per GitLab e Bitbucket {#gitlab-bitbucket}
 
 <!-- BOTH CS & AMS -->
 
-La funzionalità **Porta il tuo Git** è stata espansa per includere il supporto per archivi esterni come GitLab e Bitbucket. Questo nuovo supporto si aggiunge a quello già esistente per gli archivi GitHub privati ed aziendali. Quando aggiungi questi nuovi repository, puoi anche collegarli direttamente alle pipeline. Puoi ospitare questi archivi su piattaforme cloud pubbliche o all’interno del cloud o dell’infrastruttura privata. Questa integrazione elimina anche la necessità di una sincronizzazione costante del codice con l’archivio Adobe e consente di convalidare le richieste pull prima di unirle in un ramo principale.
+La funzionalità **Bring Your Own Git** è stata estesa in modo da includere il supporto per archivi esterni come GitLab e Bitbucket. Questo nuovo supporto si aggiunge a quello già esistente per archivi GitHub privati ed aziendali. Quando aggiungi questi nuovi archivi, puoi anche collegarli direttamente alle pipeline. Puoi inoltre ospitare questi archivi sia su piattaforme cloud pubbliche sia all’interno della tua infrastruttura o del tuo cloud privato. Questa integrazione elimina anche la necessità di sincronizzare continuamente il codice con l’archivio Adobe e offre la possibilità di convalidare le richieste pull prima di unirle in un ramo principale.
 
-Vedi [Aggiungere archivi esterni in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+Consulta [Aggiungere archivi esterni in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
 ![Finestra di dialogo Aggiungi archivio](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >
->Attualmente, i controlli predefiniti per la qualità del codice di richiesta di pull sono esclusivi per gli archivi ospitati da GitHub, ma è in corso un aggiornamento per estendere questa funzionalità ad altri fornitori Git.
+>Attualmente, i controlli di qualità predefiniti per il codice di richiesta pull sono esclusivi degli archivi ospitati in GitHub, ma è in preparazione un aggiornamento per estendere questa funzionalità anche ad altri fornitori Git.
 
-Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID. Assicurati di includere la piattaforma Git da utilizzare e se ti trovi in una struttura di archivio privata/pubblica o aziendale.
+Se ti interessa testare questa nuova funzione e condividere il tuo feedback, invia un’e-mail a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) dall’indirizzo e-mail associato al tuo Adobe ID. Se ti trovi in una struttura di archivio privata/pubblica o aziendale, assicurati di specificare la piattaforma Git che desideri utilizzare.
 
 
 <!-- ## Bug fixes
