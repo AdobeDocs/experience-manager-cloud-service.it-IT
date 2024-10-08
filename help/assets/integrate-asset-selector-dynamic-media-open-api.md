@@ -3,14 +3,17 @@ title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud 
 description: Integra il selettore delle risorse con varie applicazioni di Adobe, non di Adobe e di terze parti.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 3%
+source-wordcount: '902'
+ht-degree: 4%
 
 ---
 
 # Integrazione per Dynamic Medie con funzionalità OpenAPI {#integrate-asset-selector-dynamic-media-open-apis}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Asset Selector consente di eseguire l’integrazione utilizzando diverse applicazioni di Adobe per consentire loro di lavorare insieme senza problemi.
 
@@ -29,7 +32,7 @@ Se integri Asset Selector con Dynamic Medie con le funzionalità OpenAPI, utiliz
 
 L’integrazione del selettore delle risorse con il processo OpenAPI di Dynamic Medie prevede diversi passaggi, tra cui la creazione di un URL Dynamic Media personalizzato o pronto per scegliere l’URL Dynamic Media, ecc.
 
-### Integrare Asset Selector per Dynamic Medie con funzionalità OpenAPI {#integrate-dynamic-media}
+### Integrare il Selettore risorse per Dynamic Media con funzionalità OpenAPI {#integrate-dynamic-media}
 
 Le proprietà `rootPath` e `path` non devono far parte di Dynamic Medie con funzionalità OpenAPI. È invece possibile configurare la proprietà `aemTierType`. Di seguito è riportata la sintassi della configurazione:
 

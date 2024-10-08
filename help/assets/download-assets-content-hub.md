@@ -2,14 +2,18 @@
 title: Scaricare risorse da Content Hub
 description: Scopri come scaricare le risorse dal portale Content Hub
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 4%
+source-wordcount: '143'
+ht-degree: 5%
 
 ---
 
 # Scaricare risorse da Content Hub {#download-assets}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Scaricare le risorse](assets/download-asset-genstudio.jpeg)

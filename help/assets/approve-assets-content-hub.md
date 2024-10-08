@@ -1,14 +1,18 @@
 ---
-title: Approvare risorse per Content Hub
+title: Approvare risorse per l’hub di contenuti
 description: Scopri come approvare le risorse in Assets as a Cloud Service per renderle disponibili in Content Hub.
-source-git-commit: f540f5934c4acbed4d7eff51a5a4ac1484fcb765
+exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 2%
+source-wordcount: '746'
+ht-degree: 4%
 
 ---
 
-# Approvare risorse per Content Hub {#approve-assets-content-hub}
+# Approvare risorse per l’hub di contenuti {#approve-assets-content-hub}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Approva risorse per Content Hub](assets/content-hub-approve-assets.png)
 
@@ -24,7 +28,7 @@ Prima di iniziare, è necessario disporre di:
 
 * Autorizzazioni di scrittura per modificare i metadati della risorsa per poter modificare il campo **[!UICONTROL Stato]** disponibile nelle [proprietà della risorsa](/help/assets/manage-organize-assets-view.md##manage-asset-status) per una risorsa.
 
-## Approvare risorse per Content Hub {#approve-assets-for-content-hub}
+## Approvare risorse per l’hub di contenuti {#approve-assets-for-content-hub}
 
 Le risorse contrassegnate come `approved` in Assets as a Cloud Service sono automaticamente disponibili in Content Hub.
 
@@ -98,6 +102,3 @@ La visualizzazione delle risorse caricate tramite Content Hub dipende dal fatto 
 * Se l&#39;opzione **[!UICONTROL Approvazione automatica]** è disabilitata, le risorse caricate tramite Content Hub non vengono visualizzate automaticamente. Le risorse sono disponibili nella cartella `hydrated-assets` dell&#39;ambiente Assets as a Cloud Service. Passa alla cartella e [modifica in blocco](#bulk-approve-assets-content-hub) lo stato di tali risorse in `Approved` per consentirne la visualizzazione in Content Hub.
 
 ![Processo di approvazione Content Hub](/help/assets/assets/content-hub-approval.png)
-
-
-

@@ -5,14 +5,17 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1905'
 ht-degree: 35%
 
 ---
 
 # Selettore di destinazione micro front-end {#Overview}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Il selettore di destinazione Microsoft-Frontend fornisce all&#39;interno dell&#39;applicazione un&#39;interfaccia utente che si integra facilmente con l&#39;archivio [!DNL Experience Manager Assets as a Cloud Service]. È possibile cercare o sfogliare la cartella appropriata all&#39;interno dell&#39;archivio [!DNL Experience Manager Assets as a Cloud Service] e caricare le risorse dall&#39;applicazione.
 

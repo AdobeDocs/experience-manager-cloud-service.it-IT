@@ -5,14 +5,17 @@ contentOwner: KK
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
 # Rielaborazione di risorse digitali {#reprocessing-digital-assets}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 È possibile rielaborare le risorse in una cartella che dispone già di un profilo di metadati esistente che è stato successivamente modificato. Se desiderate che il predefinito appena modificato venga riapplicato alle risorse esistenti nella cartella, dovete rielaborare la cartella. Puoi rielaborare tutte le risorse necessarie.
 
@@ -50,7 +53,7 @@ Se selezioni una cartella:
       * **[!UICONTROL Elaborazione dei profili]:** Scegliere questa opzione quando si desidera rielaborare un profilo selezionato. È possibile scegliere l&#39;opzione **[!UICONTROL Processo completo]** per includere l&#39;elaborazione predefinita e il profilo personalizzato assegnato a livello di cartella.
         <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-      * **[!UICONTROL Flusso di lavoro di elaborazione Post]:** Scegliere questa opzione se è necessaria un&#39;elaborazione aggiuntiva delle risorse che non può essere ottenuta utilizzando i profili di elaborazione. È possibile aggiungere alla configurazione ulteriori flussi di lavoro di post-elaborazione. L’elaborazione Post consente di aggiungere un’elaborazione completamente personalizzata oltre a quella configurabile utilizzando i microservizi per le risorse.
+      * **[!UICONTROL Flusso di lavoro di post-elaborazione]:** Scegliere questa opzione se è necessaria un&#39;ulteriore elaborazione delle risorse che non può essere ottenuta utilizzando i profili di elaborazione. È possibile aggiungere alla configurazione ulteriori flussi di lavoro di post-elaborazione. La post-elaborazione consente di aggiungere un’elaborazione completamente personalizzata oltre a quella configurabile utilizzando i microservizi per le risorse.
 
 Consulta [utilizzare i microservizi delle risorse e i profili di elaborazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) per ulteriori informazioni sui profili di elaborazione e sul flusso di lavoro di post-elaborazione.
 

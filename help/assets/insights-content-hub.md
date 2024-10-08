@@ -2,14 +2,18 @@
 title: Visualizzare informazioni approfondite sulle risorse in Content Hub
 description: Scopri come visualizzare informazioni approfondite sulle risorse in [!DNL Content Hub]
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 0%
+source-wordcount: '296'
+ht-degree: 1%
 
 ---
 
 # Informazioni su Assets in [!DNL Content Hub] {#assets-insights}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Informazioni su Assets](assets/asset-insights-banner.jpg)
 
@@ -49,4 +53,3 @@ Puoi anche visualizzare:
 * **[!UICONTROL Assets by Campaigns]**: conteggio delle risorse e percentuale rispettiva basata sulle campagne.
 * **[!UICONTROL Assets per canali]**: conteggio delle risorse e rispettiva percentuale in base ai canali utilizzati.
 * **[!UICONTROL Assets per area geografica]**: numero di risorse e percentuale rispettiva in base alle aree di utilizzo delle risorse.
-

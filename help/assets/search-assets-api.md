@@ -2,14 +2,18 @@
 title: Cerca API di Assets
 description: Scopri come utilizzare l’API Search Assets.
 role: User
-source-git-commit: 3e2fe458460fe8ec4c1dd12152c1134bfb9ca62b
+exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
 # Cerca API di Assets {#search-assets-api}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Tutte le [risorse approvate](approve-assets.md) disponibili nell&#39;archivio Experience Manager Assets possono essere cercate e quindi consegnate alle applicazioni downstream integrate utilizzando un URL di consegna.
 

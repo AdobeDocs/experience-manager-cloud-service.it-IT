@@ -4,14 +4,17 @@ description: Modifica i video utilizzando  [!DNL Adobe Express] opzioni basate s
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '797'
 ht-degree: 17%
 
 ---
 
 # Modifica video in [!DNL Assets view] {#edit-videos}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 La creazione di varianti di contenuti video è semplice per gli utenti di Assets, grazie alle [!DNL Adobe Express] azioni rapide incorporate per i video. Le azioni rapide in [!DNL Assets view] con tecnologia [!DNL Adobe Express] forniscono opzioni di modifica video intuitive, tra cui ritaglia video, ridimensiona video, taglia video e converti video in GIF.
 
@@ -21,7 +24,7 @@ Per modificare un video, vai ai dettagli del video e fai clic su [!UICONTROL Mod
 
 Diritti di accesso a [!DNL Adobe Express] e ad almeno un ambiente in AEM Assets. L’ambiente può essere uno qualsiasi degli archivi all’interno di [!DNL Assets as a Cloud Service] o [!DNL Assets view].
 
-## Modifica video con Adobe Express {#edit-video-using-express}
+## Modificare i video con Adobe Express {#edit-video-using-express}
 
 Trasformare un video in una dimensione e un orientamento perfetti è facile utilizzando [!DNL Adobe Express] azioni rapide incorporate.
 
@@ -98,7 +101,7 @@ Il video è disponibile in formato GIF per il download. Puoi salvare la risorsa 
 
 * Fornisci feedback sulla documentazione utilizzando [!UICONTROL Modifica questa pagina], ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema], ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale a destra.
 
-* Contatta l’[Assistenza clienti](https://experienceleague.adobe.com/i?support-solution=General#support).
+* Contatta l’[Assistenza clienti](https://experienceleague.adobe.com/it?support-solution=General#support).
 
 >[!MORELIKETHIS]
 >

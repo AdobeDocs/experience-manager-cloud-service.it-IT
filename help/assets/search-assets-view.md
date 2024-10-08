@@ -4,14 +4,17 @@ description: Scopri come cercare e individuare le risorse nella vista AEM Assets
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 76%
+source-wordcount: '2020'
+ht-degree: 94%
 
 ---
 
 # Cercare risorse in [!DNL Assets view] {#search-assets}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="assets_search"
@@ -19,7 +22,7 @@ ht-degree: 76%
 >abstract="Per cercare le risorse, puoi specificare una parola chiave nella barra di ricerca o filtrare le risorse in base al loro stato, al tipo di file, al tipo MIME, alla dimensione e alle date di creazione, modifica e scadenza. Oltre ai filtri standard, puoi anche applicare filtri personalizzati. Puoi salvare i risultati filtrati come Ricerca salvata o Raccolta avanzata."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=it#manage-smart-collection" text="Creare Raccolte avanzate"
 
-[!DNL Assets view] fornisce una ricerca efficace che funziona solo per impostazione predefinita. La ricerca è completa in quanto è una ricerca full-text. La potente funzionalità di ricerca consente di trovare rapidamente la risorsa appropriata e velocizza le attività relative ai contenuti. [!DNL Assets view] consente di effettuare ricerche full-text, anche nei metadati, quali tag avanzati, titolo, data di creazione e copyright.
+[!DNL Assets view] fornisce una funzione di ricerca efficace e attiva per impostazione predefinita. Si tratta di una ricerca full-text completa. La potente funzionalità di ricerca consente di trovare rapidamente la risorsa appropriata e velocizza le attività relative ai contenuti. [!DNL Assets view] consente di effettuare ricerche full-text, anche nei metadati, quali tag avanzati, titolo, data di creazione e copyright.
 
 Per cercare le risorse, effettua le operazioni seguenti:
 
@@ -27,7 +30,7 @@ Per cercare le risorse, effettua le operazioni seguenti:
 
   ![casella di ricerca](assets/search-box.png)
 
-   * Effettua la ricerca utilizzando una parola chiave e, facoltativamente, modifica la cartella. Premi Invio.
+   * Cerca utilizzando una parola chiave e, se necessario, cambia la cartella. Premi Invio.
 
    * Per iniziare a lavorare su una risorsa visualizzata di recente, fai clic nella casella di ricerca e seleziona una delle risorse visualizzate di recente che vengono proposte.
 
@@ -135,21 +138,21 @@ Per generare nuove risorse tramite [!DNL Adobe Firefly]:
 
 1. accedi all’area di lavoro di [!DNL AEM Assets].
 
-1. Digita il nome della risorsa nella barra di ricerca. Ad esempio, puoi cercare una risorsa utilizzando la parola chiave `Bugatti Type 57`. Durante la ricerca della risorsa, non viene trovato alcun risultato, perché la risorsa non è presente in nessuna cartella di risorse. Per generare le risorse tramite IA, fai clic su **[!UICONTROL Genera con Firefly]**. Viene visualizzata la schermata [!DNL Adobe Firefly].
+1. Immetti il nome della risorsa nella barra di ricerca. Ad esempio, supponiamo di cercare una risorsa utilizzando la parola chiave `Bugatti Type 57`. Durante la ricerca della risorsa, non viene trovato alcun risultato, perché la risorsa non è presente in nessuna cartella delle risorse. Per generare le risorse tramite IA, fai clic su **[!UICONTROL Genera con Firefly]**. Viene visualizzata la schermata [!DNL Adobe Firefly].
 
    ![Integrazione di Firefly](assets/firefly-integration.png)
 
-   Le nuove risorse sono state generate correttamente. È inoltre possibile modificare la descrizione dell&#39;immagine digitando il nuovo prompt di testo nella casella descrizione. [Scopri come scrivere un buon prompt di intelligenza artificiale per generare contenuti straordinari e rilevanti.](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) In alternativa, è possibile [modificare l&#39;immagine con varie altre funzionalità, ad esempio modificare lo stile, le dimensioni dell&#39;immagine e altro ancora.](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
+   Le nuove risorse sono state generate correttamente. È, inoltre, possibile modificare la descrizione dell’immagine immettendo il nuovo prompt di testo nella casella Descrizione. [Scopri come scrivere un prompt IA corretto per generare contenuti straordinari e rilevanti.](https://helpx.adobe.com/it/firefly/using/tips-and-tricks.html) In alternativa, è possibile [modificare l’immagine con varie altre funzionalità, ad esempio cambiando lo stile, le dimensioni dell’immagine e altro ancora.](https://helpx.adobe.com/it/firefly/using/text-to-image.html)
 
    ![Integrazione di Firefly](assets/bugatti-type-57.png)
 
-1. Selezionate un&#39;immagine da salvare. Fai clic su **[!UICONTROL Salva]** per salvare le risorse nella cartella preferita per accedervi facilmente.
+1. Seleziona un’immagine da salvare. Fai clic su **[!UICONTROL Salva]** per salvare le risorse nella cartella preferita e accedervi facilmente.
 
 1. Viene visualizzato il modulo Salva risorsa. Specifica i campi seguenti:
 
    * Immetti un nome per il file nel campo **Salva con nome**.
    * Seleziona una cartella di destinazione.
-   * Immetti dettagli quali nome del progetto o della campagna, parole chiave, canali, intervallo di tempo e area geografica.
+   * Fornisci dettagli quali nome del progetto o della campagna, parole chiave, canali, arco temporale e area geografica.
 
    ![Integrazione di Firefly](assets/save-generated-asset.png)
 
@@ -165,7 +168,7 @@ Per caricare la risorsa generata nell’archivio delle risorse:
 
 ## Ricerche salvate {#saved-search}
 
-La funzionalità di ricerca di [!DNL Assets view] è semplice. Dall&#39;interno della casella di ricerca, non è possibile digitare solo una parola chiave e premere Invio per visualizzare i risultati, ma è anche possibile cercare rapidamente di nuovo le parole chiave recentemente cercate con un solo clic.
+La funzionalità di ricerca di [!DNL Assets view] è semplice. Nella casella di ricerca, non puoi solo immettere una parola chiave e premere Invio per visualizzare i risultati, puoi effettuare rapidamente una nuova ricerca con un solo clic, richiamando parole chiave già utilizzate di recente.
 
 Puoi anche filtrare i risultati della ricerca in base a criteri specifici, secondo i metadati e il tipo di risorse. [!DNL Assets view] consente di salvare i parametri dei filtri utilizzati di frequente, per migliorare l’esperienza di ricerca. Puoi quindi selezionare una ricerca salvata per eseguirla di nuovo applicandone il filtro con un solo clic.
 
@@ -188,7 +191,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 Puoi selezionare le risorse da visualizzare nei risultati della ricerca ed effettuare le seguenti operazioni:
 
-* **Trova immagine simile**: trova una risorsa immagine simile nell&#39;interfaccia utente di Assets in base ai metadati e ai tag avanzati.
+* **Trova immagine simile**: trova una risorsa immagine simile nell’interfaccia utente di Assets in base ai metadati e ai tag avanzati.
 
 * **Dettagli**: visualizza e modifica le proprietà della risorsa.
 
@@ -225,20 +228,20 @@ La vista Assets consente di selezionare la pagina di destinazione predefinita pe
 Per configurare la pagina Home Cerca prima, esegui i passaggi seguenti:
 
 1. Passa a **[!UICONTROL Impostazioni]** > **[!UICONTROL Impostazioni generali]**.
-1. Seleziona **[!UICONTROL Cerca prima]**. Apre inoltre la prima configurazione correlata alla ricerca. Puoi impostare [l&#39;allineamento](#setting-alignment-search-bar) o [impostare l&#39;immagine di sfondo e il logo](#setting-background-image-and-logo) della tua home page.
+1. Seleziona **[!UICONTROL Cerca prima]**. Viene aperta la configurazione correlata Cerca prima. È possibile impostare l’[allineamento](#setting-alignment-search-bar) o [impostare l’immagine di sfondo e il logo](#setting-background-image-and-logo) della pagina Home.
 
 ### Impostazione dell’allineamento della barra di ricerca {#setting-alignment-search-bar}
 
-[!DNL Assets view] consente di modificare l&#39;allineamento della barra di ricerca. La barra di ricerca può essere visualizzata al centro o in alto. Seleziona l’allineamento appropriato e fai clic su **[!UICONTROL Salva]**.
+[!DNL Assets view] consente di modificare l’allineamento della barra di ricerca. È possibile fare in modo che la barra di ricerca venga visualizzata al centro o in alto. Seleziona l’allineamento appropriato e fai clic su **[!UICONTROL Salva]**.
 
 ![Allineamento nella pagina Home Cerca prima](assets/search-first-alignment.png)
 
 ### Impostazione dell’immagine di sfondo e del logo nella pagina Home {#setting-background-image-and-logo}
 
-Puoi aggiungere un logo del brand e un’immagine di sfondo alla prima pagina iniziale della ricerca. Esegui i passaggi seguenti:
+È possibile aggiungere il logo del brand e l’immagine di sfondo alla pagina Home “Cerca prima”. Esegui i passaggi seguenti:
 
-1. Passa alla sezione **[!UICONTROL Sfondo e immagine logo]** in **[!UICONTROL Home page]**.
-1. Fai clic su **[!UICONTROL Sostituisci]** per sfogliare le immagini dall&#39;archivio risorse esistente.
+1. Accedi alla sezione **[!UICONTROL Immagine di sfondo e logo]** nella **[!UICONTROL pagina Home]**.
+1. Fai clic su **[!UICONTROL Sostituisci]** per sfogliare le immagini dell’archivio delle risorse esistenti.
 1. Fai clic su **[!UICONTROL Salva]**. Visualizza l’[anteprima](#preview-configured-homepage) delle modifiche per esaminarle.
 
 ### Visualizzare l’anteprima della pagina Home configurata {#preview-configured-homepage}
@@ -246,7 +249,7 @@ Puoi aggiungere un logo del brand e un’immagine di sfondo alla prima pagina in
 È possibile visualizzare un’anteprima per controllare il layout e la formattazione della pagina Home Cerca prima. Utilizzando **[!UICONTROL Anteprima]**, è possibile correggere il layout o apportare modifiche in base alle necessità. Per visualizzare in anteprima la pagina Home configurata, esegui i passaggi seguenti:
 
 1. Fai clic su **[!UICONTROL Impostazioni generali]** e seleziona **[!UICONTROL Cerca prima]**.
-1. Accedi a **[!UICONTROL Personalizza la pagina Home Cerca prima]** e fai clic su **[!UICONTROL Anteprima]**. Passa al pulsante **[!UICONTROL Tema scuro]** per visualizzare l&#39;anteprima della home page in un tema scuro o chiaro.
+1. Accedi a **[!UICONTROL Personalizza la pagina Home Cerca prima]** e fai clic su **[!UICONTROL Anteprima]**. Attiva o disattiva **[!UICONTROL Tema scuro]** per visualizzare l’anteprima della pagina Home con tema scuro o chiaro.
 1. Fai clic su **[!UICONTROL Chiudi]** per chiudere la schermata di anteprima.
 
    ![Anteprima della pagina Home Cerca prima](/help/assets/assets/search-first-preview.gif)
@@ -311,7 +314,7 @@ La ricerca contestuale supporta i seguenti filtri predefiniti. Basa i prompt di 
 
 **Esempio 3**
 
-**Prompt di testo**: sono necessarie immagini di cielo blu con altezza di 1500 e 2500 pixel, create nel mese scorso e non scadute né approvate.
+**Prompt di testo**: ho bisogno di immagini con cielo azzurro, con altezza compresa tra 1500 e 2500 pixel, create lo scorso mese, approvate e non scadute.
 
 [!DNL Experience Manager Assets] applica automaticamente i seguenti filtri e visualizza i risultati della ricerca:
 

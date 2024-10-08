@@ -3,14 +3,17 @@ title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud 
 description: Integra il selettore delle risorse con varie applicazioni di Adobe, non di Adobe e di terze parti.
 role: Admin, User
 exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
-source-git-commit: 7590e0240f3f429831aee5d9620ea4fa6f32847b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '785'
 ht-degree: 8%
 
 ---
 
 # Integrare Asset Selector con l’applicazione Adobe {#integrate-asset-selector-with-adobe-app}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Asset Selector consente di eseguire l’integrazione utilizzando diverse applicazioni di Adobe per consentire loro di lavorare insieme senza problemi.
 

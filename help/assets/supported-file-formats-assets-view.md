@@ -5,19 +5,22 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 7c8f54d7c1139485717cc42dafbc87be74fd5883
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 94%
+source-wordcount: '545'
+ht-degree: 97%
 
 ---
 
 # Supporto dei formati di file in [!DNL Assets view] {#file-format-support}
 
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
+
 [!DNL Assets view] supporta un’ampia gamma di formati di file e ogni funzionalità supporta diversi tipi di file.
 
 * ![icona per file immagine](assets/image-icon.svg) Immagini: JPG, PNG, GIF, TIFF e altri
-* ![icona creative cloudtype](assets/creative-cloud-files.svg) file di Creative Cloud: PSD, PSB, AI e INDD
+* ![icona creative cloudtype](assets/creative-cloud-files.svg) File Creative Cloud: PSD, PSB, IA e INDD
 * ![icona per file da fotocamera](assets/camera-icon.svg) File Camera Raw: CR2/CR3, NEF, SRW/SRF e altri
 * ![icona per file documento](assets/document-icon.svg) Documenti: DOCX, PDF, PPTX e XLSX
 * ![icona per file video](assets/video-icon.svg) Video: MP4
@@ -46,7 +49,7 @@ I vari tipi di file sono supportati per diversi casi d’uso e funzioni, come ri
 | Cartelle | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | − |
 | Video MP4 | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | PDF | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
-| PSD, PSB, AI e INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
+| PSD, PSB, IA e INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | Altri file binari | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
 
 <!-- Hiding CC Libraries (considered beta) as per PM feedback.
@@ -78,7 +81,7 @@ I vari tipi di file sono supportati per diversi casi d’uso e funzioni, come ri
 | Video | − | ✓ | ✓ |
 | CC Libraries | − | − | − |
 | PDF | − | ✓ | ✓ |
-| PSD, PSB, AI e INDD | − | ✓ | ✓ |
+| PSD, PSB, IA e INDD | − | ✓ | ✓ |
 | Altri file binari | − | ✓ | ✓ |
 | DOC | − | ✓ | ✓ |
 | DOCX | − | ✓ | ✓ |
@@ -128,4 +131,4 @@ Gli utenti di [!DNL Adobe Asset Link] possono caricare e consegnare (caricare un
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&amp;lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General#support)

@@ -4,16 +4,19 @@ description: Modifica le immagini utilizzando le opzioni basate su [!DNL Adobe E
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: af5ca9c436dce1929f310d40369abf05e60836f8
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 59%
+source-wordcount: '1145'
+ht-degree: 77%
 
 ---
 
 # Modificare le immagini in [!DNL Assets view] {#edit-images-in-assets-view}
 
-L’interfaccia utente di visualizzazione di Assets consente di eseguire semplici operazioni di modifica delle immagini, basate su Adobe Express e integrate nell’interfaccia utente. Questa modifica include il ridimensionamento, la rimozione in background, il ritaglio e la conversione tra i formati JPEG e PNG. Inoltre, consente la modifica avanzata tramite l’interfaccia Adobe Express incorporata nell’interfaccia di visualizzazione Assets.
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
+
+L’interfaccia utente di visualizzazione di Assets consente di eseguire semplici operazioni di modifica delle immagini, basate su Adobe Express e integrate nell’interfaccia utente. Questa modifica include il ridimensionamento, la rimozione dello sfondo, il ritaglio e la conversione tra i formati JPEG e PNG. Inoltre, consente la modifica avanzata tramite l’interfaccia Adobe Express incorporata nell’interfaccia di visualizzazione Assets.
 
 Dopo aver modificato un’immagine, puoi salvarla come nuova versione. Il controllo delle versioni consente di ripristinare la risorsa originale in un secondo momento, se necessario. Per modificare un’immagine: [apri l’anteprima](https://experienceleague.adobe.com/it/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) e fai clic su **Modifica immagine**.
 
@@ -25,7 +28,7 @@ Dopo aver modificato un’immagine, puoi salvarla come nuova versione. Il contro
 
 ## Editing delle immagini {#edit-image}
 
-Passa all&#39;interfaccia utente di visualizzazione di Assets utilizzando il collegamento [Visualizzazione Assets](https://experience.adobe.com/#/assets) e selezionando l&#39;archivio appropriato. Per ricevere l’accesso, contatta l’amministratore della tua organizzazione.
+Passa all&#39;interfaccia utente di visualizzazione di Assets utilizzando il collegamento [Visualizzazione Assets](https://experience.adobe.com/#/assets) e selezionando l&#39;archivio appropriato. Per ricevere l’accesso, contatta l’amministratore dell’organizzazione.
 Per ulteriori informazioni di riferimento, fare riferimento a: [Introduzione all&#39;utilizzo di Adobe Experience Manager Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Interfaccia utente di Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) e [Casi di utilizzo di Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -35,13 +38,13 @@ Per ulteriori informazioni di riferimento, fare riferimento a: [Introduzione all
 
 ### Modifica immagine nella vista Assets tramite Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Dopo essere passati alla visualizzazione Assets, fai clic su **Assets**, seleziona un&#39;immagine e quindi fai clic su **Modifica** nella barra superiore. Nella nuova schermata vengono visualizzate le opzioni di modifica disponibili basate su Adobe Express, che includono il ridimensionamento, la rimozione dello sfondo, il ritaglio e la conversione tra i formati JPEG e PNG.
+Dopo essere passati alla visualizzazione Assets, fai clic su **Assets**, seleziona un&#39;immagine e quindi fai clic su **Modifica** nella barra superiore. Nella nuova schermata vengono visualizzate le opzioni di modifica disponibili gestite da Adobe Express, tra cui il ridimensionamento, la rimozione dello sfondo, il ritaglio e la conversione tra i formati JPEG e PNG.
 
 #### Ridimensionare l’immagine {#resize-image-using-express}
 
 Spesso occorre ridimensionare un’immagine a una dimensione specifica. Assets View consente di ridimensionare rapidamente le immagini per adattarle alle dimensioni comuni delle foto, fornendo nuove risoluzioni precalcolate per dimensioni specifiche. Per ridimensionare l&#39;immagine utilizzando Vista Assets, effettuare le seguenti operazioni:
 
-1. Fare clic su **Ridimensiona immagine** nel riquadro di sinistra. In una finestra di dialogo vengono visualizzate le funzionalità di ridimensionamento dell&#39;immagine fornite da Adobe Express.
+1. Fai clic su **Ridimensiona immagine** dal riquadro a sinistra. In una finestra di dialogo vengono visualizzate le funzionalità di ridimensionamento dell’immagine gestite da Adobe Express.
 1. Seleziona la piattaforma di social media appropriata dall’elenco a discesa Ridimensiona e seleziona le dimensioni dell’immagine tra le opzioni visualizzate.
 1. Ridimensiona l’immagine, se necessario, utilizzando il campo **Scala immagine**.
 1. Fai clic su **[!UICONTROL Applica]** per applicare le modifiche.
@@ -85,7 +88,7 @@ Puoi convertire rapidamente un’immagine JPEG in formato PNG utilizzando Adobe 
 
 ### Modificare le immagine nell’editor integrato Adobe Express {#edit-images-in-adobe-express-embedded-editor}
 
-Gli utenti che dispongono del diritto Express possono utilizzare l’editor Express incorporato nella vista Assets per modificare facilmente i contenuti e crearne di nuovi con GenAI da Adobe Firefly. Questa funzione migliora il riutilizzo dei contenuti e velocizza la loro esecuzione. Puoi anche utilizzare elementi predefiniti per migliorare la risorsa o eseguire azioni rapide per modificare l’immagine con pochi clic.
+Gli utenti che dispongono del diritto Express possono utilizzare l’editor Express incorporato nella vista Assets per modificare facilmente i contenuti e crearne di nuovi con GenAI da Adobe Firefly. Questa funzione migliora il riutilizzo dei contenuti e ne accelera la velocità. Puoi anche utilizzare elementi predefiniti per migliorare la risorsa o eseguire azioni rapide per modificare l’immagine con pochi clic.
 
 ![express nell&#39;interfaccia utente di essentials](/help/assets/assets/express-in-essentials-ui.jpg)
 Per modificare le immagini utilizzando l&#39;editor incorporato [!DNL Adobe Express], effettuare le seguenti operazioni:
@@ -95,14 +98,14 @@ Per modificare le immagini utilizzando l&#39;editor incorporato [!DNL Adobe Expr
 1. Fai clic su **Apri in Adobe Express**. L’immagine si apre in un’area di lavoro Express.
 1. Apporta le modifiche necessarie all’immagine.
 1. Se il progetto richiede l’aggiunta di ulteriori pagine, fai clic su **Aggiungi**, seleziona Risorse, immetti una cartella, seleziona un’immagine da inserire nella pagina dell’area di lavoro, quindi apporta all’immagine le modifiche necessarie.
-1. Per salvare una o più risorse, fare clic su **Salva**. Nella finestra di dialogo Salva vengono visualizzate le opzioni di salvataggio. Per scegliere tra le opzioni di salvataggio, segui una delle istruzioni seguenti in linea con le tue esigenze:
-   1. Per salvare una singola pagina, fare clic su **Salva come versione** per esportare l&#39;immagine come nuova versione (mantenendo il formato originale) e salvarla nella stessa cartella.
+1. Per salvare una o più risorse, fai clic su **Salva**. Nella finestra di dialogo Salva vengono visualizzate le opzioni di salvataggio. Per scegliere tra le opzioni di salvataggio, segui una delle istruzioni seguenti che risponda alle tue esigenze:
+   1. Per salvare una singola pagina, fai clic su **Salva come versione** per esportare l’immagine come una nuova versione (mantenendo il formato originale) e salvarla nella stessa cartella.
 
-   1. Per salvare una singola pagina, fai clic su **Salva come nuova risorsa** per esportare la risorsa in un formato diverso e salvarla in qualsiasi cartella come nuova risorsa.
+   1. Per salvare una singola pagina, fai clic su **Salva come nuova risorsa** per esportare la risorsa in un formato diverso e salvarla in qualsiasi cartella come una nuova risorsa.
 
-   1. Per salvare una singola pagina da più pagine, fai clic su **Salva come versione** per salvare la risorsa nel formato e nel percorso originali.
+   1. Se vuoi salvare una singola pagina da più pagine, fai clic su **Salva come versione** per salvare la risorsa nel formato e nella posizione originali.
 
-   1. Per salvare più pagine o una singola pagina tra più pagine, fai clic su **Salva come nuova risorsa**. Questa azione esporta le risorse singole o multiple in qualsiasi cartella e le salva come nuove risorse nel formato originale o in un formato diverso.
+   1. Per salvare più pagine o una singola pagina tra più pagine, fai clic su **Salva come nuova risorsa**. Con questa azione si esportano le risorse singole o multiple in qualsiasi cartella e si salvano come una nuova risorsa o nuove risorse nel formato originale o in un formato diverso.
 
 1. Nella finestra di dialogo Salva:
    1. Immetti un nome per il file nel campo **Salva con nome**.
@@ -196,7 +199,7 @@ TBD: Insert a video of the available social media options.
 
 * Fornisci feedback sulla documentazione utilizzando [!UICONTROL Modifica questa pagina], ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema], ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibili sulla barra laterale a destra.
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/i?support-solution=General#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >

@@ -3,14 +3,17 @@ title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud 
 description: Utilizza le funzioni per personalizzare il selettore delle risorse all’interno dell’applicazione.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1261'
 ht-degree: 24%
 
 ---
 
-# Personalizzazioni di Asset Selector {#asset-selector-customization}
+# Personalizzazioni del Selettore risorse {#asset-selector-customization}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Asset Selector (Selettore risorse) consente di personalizzare vari componenti in base a preferenze, requisiti o esigenze funzionali. Puoi personalizzare i seguenti componenti [Selettore risorse micro-front-end](#overview-asset-selector.md):
 

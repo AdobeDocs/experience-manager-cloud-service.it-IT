@@ -4,14 +4,17 @@ description: Gestisci documenti PDF in [!DNL Adobe Experience Manager] as a [!DN
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '856'
 ht-degree: 5%
 
 ---
 
 # Gestire i documenti PDF in Experience Manager Assets as a Cloud Service {#add-assets-to-experience-manager}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets si integra perfettamente con Document Cloud PDF Viewer, consentendo di visualizzare in anteprima più pagine di un documento PDF. È inoltre possibile utilizzare funzioni avanzate di visualizzazione di Document Cloud PDF, ad esempio annotazioni, testo da cercare, navigare nel documento di PDF utilizzando segnalibri e miniature e altro ancora nello stesso tetto. Experience Manager Assets consente inoltre di caricare documenti in altri formati supportati e di visualizzarli in anteprima in formato PDF.
 

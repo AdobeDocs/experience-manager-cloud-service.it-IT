@@ -4,9 +4,9 @@ description: Scopri le best practice sui metadati per gestire in modo efficace l
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1399'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,9 @@ aem metadata
 experience manager metadata-->
 
 # Gestione dei metadati e best practice {#metadata-best-practices}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- |---------|----|-----|
 
 Per dare risalto alla tua attività e coinvolgere più clienti, è fondamentale utilizzare elementi visivi di alta qualità come immagini, video e altre risorse digitali. A questo scopo, è necessario un processo che ti consenta di aggiungere metadati a tutte le risorse digitali, affinché siano facilmente ricercabili. I metadati sono dati che forniscono dettagli essenziali sulle risorse digitali, tra cui il nome, il tipo, la posizione all’interno di un archivio, la data di modifica e i tag associati alla risorsa. I metadati semplificano la gestione delle risorse, migliorano la ricercabilità e l’accessibilità e garantiscono un controllo efficace delle versioni.
 

@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2866'
+source-wordcount: '2884'
 ht-degree: 3%
 
 ---
 
 # Utilizzare i microservizi delle risorse e i profili di elaborazione {#get-started-using-asset-microservices}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 I microservizi per le risorse forniscono un’elaborazione scalabile e resiliente delle risorse utilizzando applicazioni native per il cloud (denominate anche processi di lavoro). Adobe gestisce i servizi per una gestione ottimale di diversi tipi di risorse e opzioni di elaborazione.
 
@@ -181,11 +184,11 @@ Per verificare che le risorse siano state elaborate, visualizza l&#39;anteprima 
 
 *Figura: esempio di due rappresentazioni aggiuntive generate da un profilo di elaborazione applicato alla cartella principale.*
 
-## Flussi di lavoro di elaborazione Post {#post-processing-workflows}
+## Workflow di post-elaborazione {#post-processing-workflows}
 
-In una situazione in cui è necessaria un’elaborazione aggiuntiva delle risorse che non può essere ottenuta utilizzando i profili di elaborazione, è possibile aggiungere alla configurazione ulteriori flussi di lavoro di post-elaborazione. L’elaborazione Post consente di aggiungere un’elaborazione completamente personalizzata oltre a quella configurabile utilizzando i microservizi per le risorse.
+In una situazione in cui è necessaria un’elaborazione aggiuntiva delle risorse che non può essere ottenuta utilizzando i profili di elaborazione, è possibile aggiungere alla configurazione ulteriori flussi di lavoro di post-elaborazione. La post-elaborazione consente di aggiungere un’elaborazione completamente personalizzata oltre a quella configurabile utilizzando i microservizi per le risorse.
 
-I flussi di lavoro di elaborazione Post o [Avvio automatico del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html), se configurato, vengono eseguiti automaticamente da [!DNL Experience Manager] al termine dell&#39;elaborazione dei microservizi. Non è necessario aggiungere manualmente moduli di avvio dei flussi di lavoro per attivarli. Gli esempi includono:
+I flussi di lavoro di post-elaborazione o [Avvio automatico del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html), se configurato, vengono eseguiti automaticamente da [!DNL Experience Manager] al termine dell&#39;elaborazione dei microservizi. Non è necessario aggiungere manualmente moduli di avvio dei flussi di lavoro per attivarli. Gli esempi includono:
 
 * Passaggi personalizzati del flusso di lavoro per elaborare le risorse.
 * Integrazioni per aggiungere metadati o proprietà alle risorse da sistemi esterni, ad esempio informazioni su prodotti o processi.
@@ -202,7 +205,7 @@ Per informazioni dettagliate sul passaggio del flusso di lavoro standard che pu�
 
 ### Creare modelli di flusso di lavoro di post-elaborazione {#create-post-processing-workflow-models}
 
-I modelli di flusso di lavoro di elaborazione Post sono [!DNL Experience Manager] modelli di flusso di lavoro regolari. Se hai bisogno di un’elaborazione diversa per posizioni di archivio o tipi di risorse diversi, puoi creare modelli diversi.
+I modelli di flusso di lavoro di post-elaborazione sono [!DNL Experience Manager] modelli di flusso di lavoro regolari. Se hai bisogno di un’elaborazione diversa per posizioni di archivio o tipi di risorse diversi, puoi creare modelli diversi.
 
 I passaggi di elaborazione vengono aggiunti in base alle esigenze. Puoi utilizzare sia i passaggi supportati disponibili, sia tutti i passaggi del flusso di lavoro implementati in modo personalizzato.
 
@@ -229,8 +232,8 @@ Per i casi di utilizzo tipici di post-elaborazione, considera l’utilizzo del m
 
 Puoi configurare il servizio runner flusso di lavoro personalizzato per le configurazioni avanzate che non possono essere facilmente soddisfatte applicando un flusso di lavoro a una cartella. Ad esempio, un flusso di lavoro che utilizza un’espressione regolare. Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) è un servizio OSGi. Per la configurazione sono disponibili le due opzioni seguenti:
 
-* Flussi di lavoro di elaborazione Post per percorso (`postProcWorkflowsByPath`): è possibile elencare più modelli di flusso di lavoro, in base a percorsi di archivio diversi. Separa i percorsi e i modelli utilizzando i due punti. Sono supportati percorsi di archivio semplici. Mappare questi a un modello di flusso di lavoro nel percorso `/var`. Ad esempio: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* Flussi di lavoro di elaborazione Post per espressione (`postProcWorkflowsByExpression`): è possibile elencare più modelli di flusso di lavoro, in base a espressioni regolari diverse. Le espressioni e i modelli devono essere separati da due punti. L’espressione regolare deve puntare direttamente al nodo Risorsa e non a uno dei rendering o dei file. Ad esempio: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* Flussi di lavoro di post-elaborazione per percorso (`postProcWorkflowsByPath`): è possibile elencare più modelli di flusso di lavoro, in base a percorsi di archivio diversi. Separa i percorsi e i modelli utilizzando i due punti. Sono supportati percorsi di archivio semplici. Mappare questi a un modello di flusso di lavoro nel percorso `/var`. Ad esempio: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Flussi di lavoro di post-elaborazione per espressione (`postProcWorkflowsByExpression`): è possibile elencare più modelli di flusso di lavoro, in base a espressioni regolari diverse. Le espressioni e i modelli devono essere separati da due punti. L’espressione regolare deve puntare direttamente al nodo Risorsa e non a uno dei rendering o dei file. Ad esempio: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 Per informazioni su come distribuire una configurazione OSGi, vedere [distribuire in [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
 

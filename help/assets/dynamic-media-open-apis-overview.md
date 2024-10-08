@@ -3,14 +3,17 @@ title: Dynamic Medie con funzionalità OpenAPI
 description: Scopri i concetti chiave, ad esempio perché utilizzare Dynamic Medie con funzionalità OpenAPI e come abilitarlo.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 6199a8ae0033feee0c1bee4e4c50e19cd55c805c
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1075'
 ht-degree: 1%
 
 ---
 
 # Dynamic Medie con funzionalità OpenAPI {#new-dynaminc-media-apis-overview}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|-----|
 
 In un mondo digitale in rapida evoluzione, è fondamentale sfruttare appieno il potenziale delle risorse digitali del tuo marchio per battere la concorrenza. Una soluzione DAM (Digital Assets Management) olistica facilita la governance delle risorse, promuove la coerenza del brand e accelera la distribuzione dei contenuti, garantendo al contempo l’integrità del brand e esperienze cliente eccezionali.
 

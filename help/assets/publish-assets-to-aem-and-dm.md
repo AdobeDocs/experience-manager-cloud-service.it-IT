@@ -4,14 +4,17 @@ description: Quick Publish nella vista Assets consente di pubblicare le risorse 
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 0%
+source-wordcount: '1206'
+ht-degree: 1%
 
 ---
 
 # Pubblicare risorse in AEM e Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets consente di pubblicare rapidamente le risorse su Experience Manager e Dynamic Medie utilizzando la vista Assets. In questo modo puoi gestire le risorse e pubblicarle utilizzando la [visualizzazione Assets senza passare alla visualizzazione Amministratore](/help/assets/overview.md##persona-based-experiences).
 

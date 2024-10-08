@@ -2,14 +2,17 @@
 title: Configurare l’interfaccia utente dell’hub di contenuti
 description: Configurare l’interfaccia utente dell’hub di contenuti
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 12%
+source-wordcount: '1392'
+ht-degree: 14%
 
 ---
 
 # Configurare l’interfaccia utente dell’hub di contenuti {#configure-content-hub-user-interface}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
@@ -173,7 +176,7 @@ Gli aggiornamenti di branding abilitati nell’interfaccia utente di configurazi
 
 ### Risorse scadute {#expired-assets-content-hub}
 
-Gli amministratori possono controllare se le risorse scadute devono essere visibili in Content Hub. Se le risorse scadute vengono rese visibili, possono anche definire se gli utenti possono scaricarle.
+Gli amministratori possono controllare se le risorse scadute devono essere visibili in Content Hub. Inoltre, se le risorse scadute vengono rese visibili, possono definire se gli utenti potranno scaricarle.
 
 Per impostazione predefinita, le risorse scadute non vengono visualizzate in Content Hub.
 
@@ -187,11 +190,11 @@ Per farlo, esegui le seguenti operazioni:
 
 1. Fai clic su **[!UICONTROL Salva]** per applicare le modifiche.
 
-   ![Risorse scadute in Content Hub](assets/expired-assets-content-hub.png)
+   ![Risorse scadute nell’hub di contenuti](assets/expired-assets-content-hub.png)
 
 Dopo aver abilitato la visibilità delle risorse, puoi visualizzare le risorse scadute su Content Hub, come illustrato nell’immagine seguente:
 
-![Risorse scadute in Content Hub](assets/view-download-expired-assets.png)
+![Risorse scadute nell’hub di contenuti](assets/view-download-expired-assets.png)
 
 Se l’amministratore ha abilitato il download, gli utenti di Content Hub possono anche scaricarlo, come evidenziato nell’immagine.
 

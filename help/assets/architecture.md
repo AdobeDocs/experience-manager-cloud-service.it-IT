@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Management, Asset Compute Microservices
 role: Architect
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 36%
+source-wordcount: '143'
+ht-degree: 33%
 
 ---
 
 # Architettura di Assets come soluzione [!DNL Cloud Service] {#assets-architecture}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] si basa su [!DNL Adobe Experience Manager] e si confronta bene con l&#39;offerta più recente [!DNL Experience Manager] 6.5. L&#39;offerta [!DNL Cloud Service] presenta un&#39;architettura e funzionalità adeguate per essere un servizio nativo per il cloud. Le modifiche apportate all&#39;architettura sottostante non consentono a tutte le funzionalità Experience Manager 6.5 di essere incluse in [!DNL Cloud Service].
 

@@ -4,14 +4,17 @@ description: Comprendere l’interfaccia utente e la navigazione in [!DNL Assets
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b8ee421c5105c95dc4a509d3b2e32fa43b1adc0b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 81%
+source-wordcount: '984'
+ht-degree: 86%
 
 ---
 
 # Accedere ai file e alle cartelle e visualizzare le risorse {#view-assets-and-details}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
 
@@ -31,8 +34,8 @@ Quando accedi a [!DNL Assets view], viene visualizzata la seguente interfaccia.
 
 ## Sfogliare e visualizzare le risorse e le cartelle {#browse-repository}
 
-È possibile sfogliare le cartelle dall’interfaccia utente principale o dalla barra laterale a sinistra. In Experience Manager Assets ora vengono visualizzate anteprime visive del contenuto della cartella sulla miniatura della cartella durante la navigazione o la ricerca del contenuto, migliorando la reperibilità delle risorse disponibili nell’archivio di AEM Assets. Questa miniatura consente di risparmiare tempo nella ricerca di risorse specifiche all’interno di una cartella nell’archivio di AEM Assets.
-Durante l’esplorazione delle risorse in una cartella, puoi utilizzare l’interfaccia per visualizzare le miniature delle risorse e sfogliare visivamente l’archivio oppure visualizzare i dettagli delle risorse per trovare rapidamente la risorsa desiderata. Le opzioni disponibili nella barra laterale a sinistra sono:
+È possibile sfogliare le cartelle dall’interfaccia utente principale o dalla barra laterale a sinistra. In Experience Manager Assets, durante la navigazione o la ricerca di contenuti, ora le miniature delle cartelle mostrano anteprime visive del loro contenuto, migliorando la reperibilità delle risorse disponibili nell’archivio di AEM Assets. Questa miniatura consente di risparmiare tempo nella ricerca di risorse specifiche all’interno di una cartella nell’archivio di AEM Assets.
+Quando sfogli le risorse presenti in una cartella, puoi visualizzare le miniature delle risorse per scorrere visivamente il contenuto dell’archivio o vedere i dettagli delle risorse per trovare rapidamente quella desiderata. Le opzioni disponibili nella barra laterale a sinistra sono:
 
 * [La mia area di lavoro](/help/assets/my-workspace-assets-view.md): Assets ora include un’area di lavoro personalizzabile che fornisce widget per accedere facilmente a specifiche aree dell’interfaccia di Assets e alle informazioni che ti interessano di più. Questa pagina funge da soluzione unica per fornire una panoramica degli elementi di lavoro e consentire un accesso rapido ai flussi di lavoro chiave. L’accesso più comodo a queste opzioni aumenta l’efficienza e la velocità dei contenuti.
 * [Attività](/help/assets/my-workspace-assets-view.md): nella scheda **Le mie attività** puoi visualizzare le attività che ti sono state assegnate. Nella scheda **Attività assegnate** trovi invece le attività che hai creato. Inoltre, le attività completate si trovano nella scheda **Attività completate**.
@@ -96,7 +99,7 @@ Other use cases after previewing.
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/i?support-solution=General#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >

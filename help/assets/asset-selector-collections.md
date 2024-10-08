@@ -2,15 +2,18 @@
 title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
 description: Utilizza il Selettore risorse per cercare, trovare e recuperare i metadati e le rappresentazioni delle risorse all’interno dell’applicazione.
 role: Admin,User
-source-git-commit: 5c76b28726403a6b011a55add190e6e3a6d7a390
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 8%
+source-wordcount: '479'
+ht-degree: 9%
 
 ---
 
 
 # Raccolte selettore risorse {#asset-selector-collections}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Una raccolta è un insieme di risorse, cartelle o altre raccolte all’interno di Selettore risorse. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti. A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse.
 

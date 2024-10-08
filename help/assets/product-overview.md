@@ -1,15 +1,18 @@
 ---
 title: Panoramica di Content Hub
 description: Scopri di più su Content Hub, i suoi principali vantaggi, come accedervi e come fornire un feedback sulle opzioni disponibili in Content Hub.
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '676'
 ht-degree: 6%
 
 ---
 
-
 # Panoramica di Content Hub {#overview-content-hub}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |----|-----|
 
 ![Panoramica di Content Hub](assets/content-hub-overview.png)
 

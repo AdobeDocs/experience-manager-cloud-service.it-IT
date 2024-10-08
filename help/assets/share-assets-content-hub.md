@@ -2,15 +2,18 @@
 title: Condividi Assets in [!DNL the Content Hub]
 description: Condividi Assets in [!DNL the Content Hub]
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '472'
 ht-degree: 3%
 
 ---
 
-
 # Condividere risorse nell’hub di contenuti {#search-assets-as-a-link}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Condividi immagine banner risorse](assets/share-assets-banner.png)
 
@@ -61,7 +64,3 @@ Dopo aver condiviso il collegamento per le risorse, i destinatari autorizzati po
 Per scaricare una risorsa, fai clic sul collegamento condiviso e sull’icona Scarica disponibile nella scheda delle risorse.  Puoi anche selezionare più risorse e fare clic su **[!UICONTROL Scarica]**. <!--You can either download original assets or Original+Renditions of an asset.--> [!DNL The Content Hub] scarica ciascuna risorsa una per una nel file system locale.
 
 ![Accedi ai collegamenti condivisi](assets/content-hub-access-shared-links.png)
-
-
-
-

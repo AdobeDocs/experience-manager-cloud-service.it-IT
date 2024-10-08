@@ -5,14 +5,17 @@ contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2542'
 ht-degree: 2%
 
 ---
 
 # Best practice per la ricerca in AEM Assets
+
+| [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets] fornisce metodi affidabili per la ricerca delle risorse che consentono di velocizzare i contenuti. Talvolta, trovare la risorsa giusta può essere difficile e richiedere tempo. Pertanto, la funzionalità di ricerca delle risorse in [!DNL Adobe Experience Manager Assets] è fondamentale per l&#39;utilizzo di un sistema di gestione delle risorse digitali, sia per l&#39;ulteriore utilizzo da parte dei creativi, per la gestione affidabile delle risorse da parte degli utenti aziendali e degli addetti al marketing o per l&#39;amministrazione da parte degli amministratori DAM.
 

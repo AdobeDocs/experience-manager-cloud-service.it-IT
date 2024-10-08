@@ -4,14 +4,17 @@ description: Aggiungi le tue risorse digitali a  [!DNL Adobe Experience Manager]
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '3144'
+source-wordcount: '3162'
 ht-degree: 9%
 
 ---
 
 # Aggiungi risorse digitali a [!DNL Adobe Experience Manager] come [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets] accetta molti tipi di risorse digitali da diverse origini. Memorizza i binari e le rappresentazioni create, può eseguire l&#39;elaborazione delle risorse utilizzando vari flussi di lavoro e servizi [!DNL Adobe Sensei], consente la distribuzione attraverso molti canali su molte superfici.
 

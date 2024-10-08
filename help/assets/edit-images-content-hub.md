@@ -1,14 +1,18 @@
 ---
 title: Modificare le immagini in Content Hub con Adobe Express
 description: Modificare le immagini in Content Hub con Adobe Express
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '408'
 ht-degree: 2%
 
 ---
 
 # Modificare le immagini in Content Hub {#edit-images-content-hub}
+
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Modifica immagini in Content Hub tramite Adobe Express](assets/edit-images-content-hub.png)
 
@@ -49,5 +53,3 @@ Per modificare le immagini con Content Hub:
 1. Fai clic su **[!UICONTROL Salva come nuova risorsa]** per salvare la risorsa.
 
 Gli amministratori possono anche configurare i campi obbligatori e facoltativi da visualizzare durante l’aggiunta di risorse a Content Hub, ad esempio il nome della campagna, le parole chiave, i canali e così via. Per ulteriori informazioni, vedere [Configurare l&#39;interfaccia utente di Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
-
-
