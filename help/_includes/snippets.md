@@ -2,7 +2,7 @@
 source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 # Snippet {#snippets}
@@ -156,19 +156,19 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >Se utilizzi, o intendi utilizzare, la pipeline front-end per sviluppare siti, è necessario aggiungere in anticipo l’elenco consentiti IP di Cloud Manager.
 >Consulta [Utilizzo dell’Elenco consentiti IP di Cloud Manager con la pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
-## ELENCHI CONSENTITI IP e l’editor universale {#ip-allow-lists-ue}
+## Elenchi IP consentiti ed editor universale {#ip-allow-lists-ue}
 
 >[!IMPORTANT]
 >
->[L&#39;editor universale](/help/implementing/universal-editor/introduction.md) non è compatibile con gli elenchi consentiti IP.
+>[L’editor universale](/help/implementing/universal-editor/introduction.md) non è compatibile con gli elenchi IP consentiti.
 >
 >Se si desidera utilizzare l&#39;editor universale, gli elenchi consentiti IP non devono essere attivati.
 
-## Editor universale e Elenchi consentiti IP {#ue-ip-allow-lists}
+## Editor universale ed elenchi IP consentiti {#ue-ip-allow-lists}
 
 >[!IMPORTANT]
 >
->L&#39;editor universale non è compatibile con [elenchi consentiti IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>L’editor universale non è compatibile con gli [elenchi IP consentiti.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
 >Se si desidera utilizzare l&#39;editor universale, gli Elenchi consentiti IP non devono essere attivati.
 
