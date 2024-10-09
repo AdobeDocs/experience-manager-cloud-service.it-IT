@@ -5,10 +5,10 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 98%
+source-wordcount: '1077'
+ht-degree: 96%
 
 ---
 
@@ -153,7 +153,15 @@ Per creare un lancio nidificato dalla console **Sites**, basato su un lancio esi
 
 Se fai clic su **Fine**, vieni riportato alla barra **Riferimenti** della console **Sites**, se selezioni la pagina appropriata viene visualizzato il tuo nuovo lancio.
 
-### Eliminazione di un lancio {#deleting-a-launch}
+### Clonazione di un lancio {#cloning-a-launch}
+
+È possibile clonare un lancio dalla console [Launches](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+
+* Seleziona il lancio toccando o facendo clic sulla miniatura.
+* Viene visualizzata la barra degli strumenti. Seleziona Clona.
+   * Il clone verrà visualizzato nella console.
+
+## Eliminazione di un lancio {#deleting-a-launch}
 
 Puoi eliminare un lancio dalla [console lanci](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
 

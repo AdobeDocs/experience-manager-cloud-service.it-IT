@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 94%
+source-wordcount: '897'
+ht-degree: 93%
 
 ---
 
@@ -105,9 +105,13 @@ I lanci ti consentono di:
 
 ## La console Lanci {#the-launches-console}
 
-La console Lanci fornisce una panoramica dei lanci e consente di agire su quelli elencati. Puoi accedere alla console da:
+La console Lanci fornisce una panoramica dei lanci e consente di agire su quelli elencati.
 
-* La console **Strumenti**: **Strumenti**, **Sites**, **Lanci**.
+![Console Lanci: gestisci contenuto](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+
+Puoi accedere alla console da:
+
+* Console **Strumenti**: **Strumenti**, **Generale**, **Avvii**.
 
 * **Console Launches** nella parte inferiore della sezione **Launches** della barra **Riferimenti** quando navighi nel contenuto sorgente nella console Sites.
 
@@ -116,6 +120,3 @@ La console Lanci fornisce una panoramica dei lanci e consente di agire su quelli
 * Il pulsante **Launches** in alto a destra, quando navighi nel contenuto di un lancio nella console Sites:
 
   ![Opzione Launches nella console Sites](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
-
-* O direttamente; ad esempio, con:
-  `https://<host>:<port>/libs/launches/content/launches.html`

@@ -5,7 +5,7 @@ exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 89%
@@ -42,6 +42,7 @@ se selezioni un lancio specifico, puoi quindi selezionare **Gestisci contenuto**
 
 * Console **Sites**:
 se selezioni una pagina sorgente specifica e apri **Riferimenti**, poi puoi selezionare **Lanci** seguito da **Gestisci contenuto**:
+
   ![Console Lanci: gestisci contenuto](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
   >[!NOTE]

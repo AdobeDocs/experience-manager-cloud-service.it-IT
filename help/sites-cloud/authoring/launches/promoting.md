@@ -5,7 +5,7 @@ exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 98%
@@ -74,7 +74,9 @@ Puoi promuovere i lanci dalla console **Sites** o dalla console **Lanci**:
      >[!NOTE]
      >
      >Riguarda un singolo lancio; per lanci nidificati, vedi [Promozione di un lancio nidificato](#promoting-a-nested-launch).
+
 1. Seleziona **Avanti** per procedere.
+
 1. Puoi rivedere le pagine da promuovere, a seconda dell’intervallo di pagine scelto:
 
    ![Rivedi promozione](/help/sites-cloud/authoring/assets/launches-promote-review.png)
