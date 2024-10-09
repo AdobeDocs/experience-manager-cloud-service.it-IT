@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0b69e7ff3b35685ff9ac899eb19c3b58d7f37b41
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '5675'
+source-wordcount: '5678'
 ht-degree: 99%
 
 ---
@@ -1071,7 +1071,7 @@ ht-degree: 99%
    + [Generare varianti](/help/generative-ai/generate-variations.md)
 + Implementazione {#implementing}
    + [Implementazione di applicazioni per AEM as a Cloud Service](/help/implementing/home.md)
-   + Utilizzo di Cloud Manager {#using-cloud-manager}
+   + Usa Cloud Manager {#using-cloud-manager}
       + [Navigazione](/help/implementing/cloud-manager/navigation.md)
       + Programmi {#programs}
          + [Programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -1081,7 +1081,7 @@ ht-degree: 99%
          + [Creare programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Modificare programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Sospendere gli ambienti](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + Creazione di un progetto di applicazione AEM {#create-application-project}
+      + Crea un progetto di applicazione AEM {#create-application-project}
          + [Creazione guidata progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configurazione del progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Ambiente build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
@@ -1101,13 +1101,13 @@ ht-degree: 99%
          + [Annotazioni di controllo GitHub](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md)
       + Pipeline CI-CD di Cloud Manager {#cicd-pipelines}
-         + [Introduzione](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [Introduzione alle pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Configurare una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Configurare una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [Gestire le pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [Variabili delle pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Distribuire il codice](/help/implementing/cloud-manager/deploy-code.md)
-      + Risultati dei test {#test-results}
+      + Comprendere i risultati del test {#test-results}
          + [Panoramica](/help/implementing/cloud-manager/overview-test-results.md)
          + [Test della qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md)

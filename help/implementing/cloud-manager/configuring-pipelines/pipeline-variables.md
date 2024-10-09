@@ -1,22 +1,22 @@
 ---
-title: Configurazione delle variabili di pipeline
+title: Configurare le variabili di pipeline
 description: Scopri come utilizzare le variabili della pipeline in Cloud Manager per gestire variabili di configurazione specifiche per la build.
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 20%
+source-wordcount: '551'
+ht-degree: 18%
 
 ---
 
-# Configurazione delle variabili di pipeline {#configuring-pipeline-variables}
+# Configurare le variabili della pipeline {#configuring-pipeline-variables}
 
 Il processo di build può dipendere da specifiche variabili di configurazione che sarebbe inappropriato inserire nell’archivio Git o che potrebbero dover essere modificate tra le esecuzioni della pipeline che utilizzano lo stesso ramo. Cloud Manager consente di gestire questi dati come variabili della pipeline.
 
-## Variabili delle pipeline {#pipeline-variables}
+## Variabili di pipeline {#pipeline-variables}
 
 Utilizzando Cloud Manager puoi configurare le variabili della pipeline in diversi modi.
 
@@ -28,7 +28,7 @@ Le variabili possono essere archiviate come testo normale o crittografate quando
 
 ### Convenzioni di denominazione delle variabili della pipeline {#naming-conventions}
 
-I nomi delle variabili devono rispettare le seguenti convenzioni.
+I nomi delle variabili devono rispettare le seguenti convenzioni:
 
 * Le variabili possono contenere solo caratteri alfanumerici e il carattere di sottolineatura (`_`).
 * I nomi devono essere scritti in lettere maiuscole.
@@ -39,17 +39,17 @@ I nomi delle variabili devono rispettare le seguenti convenzioni.
 
 ## Tramite l’interfaccia utente di Cloud Manager {#ui}
 
-Le variabili di pipeline possono essere configurate e gestite tramite l’interfaccia utente di Cloud Manager. Per poter aggiungere, modificare ed eliminare le variabili della pipeline, è necessario disporre delle autorizzazioni necessarie per modificare la pipeline.
+Le variabili di pipeline possono essere configurate e gestite tramite l’interfaccia utente di Cloud Manager. Per aggiungere, modificare ed eliminare variabili di pipeline è necessario disporre delle autorizzazioni necessarie per modificare la pipeline.
 
 Se una pipeline è in esecuzione, la gestione delle variabili viene bloccata.
 
-### Aggiunta di variabili di pipeline {#add-ui}
+### Aggiungere variabili della pipeline {#add-ui}
 
-1. Quando [gestisci le pipeline,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) tocca o fai clic sul pulsante con i puntini di sospensione della pipeline per la quale vuoi creare le variabili della pipeline e seleziona **Visualizza/modifica variabili** dal menu di scelta rapida.
+1. Quando [gestisci le pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), fai clic sul pulsante con i puntini di sospensione della pipeline per la quale desideri creare le variabili della pipeline e seleziona **Visualizza/modifica variabili** dal menu di scelta rapida.
 
    ![Visualizzare/modificare le variabili della pipeline](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. Viene visualizzata la finestra **Configurazione variabili**. Immetti i dettagli della variabile nella prima riga della tabella e tocca o fai clic su **Aggiungi**.
+1. Viene visualizzata la finestra **Configurazione variabili**. Immettere i dettagli della variabile nella prima riga della tabella e fare clic su **Aggiungi**.
 
    * **Nome configurazione** è un identificatore univoco per la variabile, che deve essere all&#39;origine di [convenzioni di denominazione delle variabili della pipeline](#naming-conventions).
    * **Valore** è il valore che la variabile contiene.
@@ -65,25 +65,25 @@ Se una pipeline è in esecuzione, la gestione delle variabili viene bloccata.
 
 ### Modifica delle variabili di pipeline {#edit-ui}
 
-1. Quando [gestisci le pipeline,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) tocca o fai clic sul pulsante con i puntini di sospensione della pipeline per la quale vuoi creare le variabili della pipeline e seleziona **Visualizza/modifica variabili** dal menu di scelta rapida.
+1. Quando [gestisci le pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), fai clic sul pulsante con i puntini di sospensione della pipeline per la quale desideri creare le variabili della pipeline e seleziona **Visualizza/modifica variabili** dal menu di scelta rapida.
 
    ![Visualizzare/modificare le variabili della pipeline](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. Viene visualizzata la finestra **Configurazione variabili**. Tocca o fai clic sul pulsante con i puntini di sospensione della variabile da modificare e seleziona **Modifica**.
+1. Viene visualizzata la finestra **Configurazione variabili**. Fai clic sul pulsante con i puntini di sospensione della variabile da modificare e seleziona **Modifica**.
 
    ![Modifica della variabile](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
 
-1. Aggiorna il valore della variabile come richiesto e tocca o fai clic su **Applica** (il segno di spunta alla fine della riga) per applicare la modifica oppure su **Elimina** (la freccia indietro) per ripristinarla.
+1. Aggiorna il valore della variabile come richiesto e fai clic su **Applica** (il segno di spunta alla fine della riga) per applicare la modifica oppure su **Elimina** (la freccia indietro) per ripristinarla.
 
    * È possibile modificare solo il valore della variabile.
 
    ![Modifica di una variabile](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
 
-1. Tocca o fai clic su **Salva** per salvare le modifiche apportate alle variabili nella pipeline.
+1. Fai clic su **Salva**.
 
 Se desideri eliminare una variabile, seleziona **Elimina** invece di **Modifica** dal menu con i puntini di sospensione della variabile della pipeline nella finestra **Configurazione variabili**.
 
-## Utilizzo di Cloud Manager CLI {#cli}
+## Utilizzare Cloud Manager CLI {#cli}
 
 Comando CLI per impostare una variabile.
 

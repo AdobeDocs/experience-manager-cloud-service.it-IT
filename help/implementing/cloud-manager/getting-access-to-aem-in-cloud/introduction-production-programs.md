@@ -5,10 +5,10 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 92%
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 Un programma di produzione è destinato ai team pronti per iniziare a scrivere, generare e testare il codice allo scopo di distribuirlo per ospitare il traffico in tempo reale.
 
-Dopo [aver creato un programma di produzione,](creating-production-programs.md) la [procedura guidata per la creazione di un programma](using-the-wizard.md) guida l’utente attraverso diverse opzioni selezionabili in base all’obiettivo prefissato per la creazione del programma.
+Dopo aver [creato il programma di produzione](creating-production-programs.md), una [procedura guidata per la creazione del programma](using-the-wizard.md) guida l&#39;utente attraverso le selezioni a seconda dell&#39;obiettivo dell&#39;utente nella creazione del programma.
 
 ## Opzioni per la creazione di un programma {#program-creation-options}
 

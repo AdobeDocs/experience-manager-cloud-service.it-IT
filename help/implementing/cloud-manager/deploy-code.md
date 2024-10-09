@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 81%
+source-wordcount: '1195'
+ht-degree: 79%
 
 ---
 
@@ -82,7 +82,7 @@ La fase di **test nell’ambiente di staging** prevede i seguenti passaggi.
    * I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in termini di linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium).
    * Per ulteriori dettagli, consulta [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
-* **Audit dell’esperienza**: questo passaggio nella pipeline viene sempre eseguito e non può essere saltato. Quando si esegue una pipeline di produzione, viene incluso un passaggio di audit dell’esperienza dopo i test funzionali personalizzati che eseguiranno i controlli.
+* **Audit dell’esperienza**: questo passaggio nella pipeline viene sempre eseguito e non può essere saltato. Quando si esegue una pipeline di produzione, viene incluso un passaggio di audit dell’esperienza dopo i test funzionali personalizzati che eseguono i controlli.
    * Le pagine configurate vengono inviate al servizio e valutate.
    * I risultati sono informativi e mostrano i punteggi e cosa è cambiato tra il punteggio corrente e quello precedente.
    * Questo approfondimento e è utile per determinare l’eventuale introduzione di una regressione con la distribuzione corrente.
@@ -110,7 +110,7 @@ Questo processo continua fino al completamento della distribuzione in tutti gli 
 
 ## Timeout {#timeouts}
 
-Per i seguenti passaggi è previsto un timeout in caso di attesa del feedback dell’utente:
+I seguenti passaggi si interrompono se vengono lasciati in attesa del feedback dell’utente:
 
 | Passaggio | Timeout |
 |--- |--- |

@@ -3,7 +3,7 @@ title: Note sulla versione 2024.10.0 di Cloud Manager in Adobe Experience Manage
 description: Ulteriori informazioni sulle note sulla versione 2024.10.0 di Cloud Manager in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: aa8d4c8c69a96054492b886893414c3e82b2f4ad
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 82%
@@ -90,4 +90,4 @@ Se ti interessa testare questa nuova funzione e condividere il tuo feedback, inv
 
 
 
-## Known Issues {#known-issues} -->
+## Known issues {#known-issues} -->

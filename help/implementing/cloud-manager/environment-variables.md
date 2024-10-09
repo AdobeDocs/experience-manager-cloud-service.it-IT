@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 75%
+ht-degree: 71%
 
 ---
 
@@ -90,7 +90,7 @@ Dopo aver creato le variabili di ambiente, è possibile aggiornarle con il pulsa
 
 1. Dopo aver apportato le modifiche di configurazione richieste, seleziona **Salva**.
 
-[Come per l’aggiunta delle variabili,](#add-variables) nella parte superiore della tabella e a fianco delle variabili appena aggiornate viene visualizzato un indicatore con lo stato **Aggiornamento in corso** per indicare che è in corso l’aggiornamento dell’ambiente con la configurazione. Al termine dell’operazione, le variabili di ambiente aggiornate sono visibili nella tabella.
+[Come per l&#39;aggiunta delle variabili](#add-variables), nella parte superiore della tabella e accanto alle variabili appena aggiornate viene visualizzato un indicatore con lo stato **Aggiornamento** per indicare che l&#39;ambiente è in fase di aggiornamento con la configurazione. Al termine dell’operazione, le variabili di ambiente aggiornate sono visibili nella tabella.
 
 >[!TIP]
 >

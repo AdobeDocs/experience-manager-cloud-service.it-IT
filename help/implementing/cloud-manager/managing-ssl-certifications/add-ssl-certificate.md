@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 493c5729c3107f151685a243006b17196b74c1bd
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '535'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ Scopri come aggiungere un certificato SSL personalizzato o un certificato DV (co
 ## Prerequisiti {#prerequisites}
 
 * Per aggiungere un certificato, l&#39;utente deve essere membro del ruolo **Proprietario business** o **Responsabile dell&#39;implementazione**.
-* Se stai installando un certificato personalizzato, assicurati di rivedere **Requisiti del certificato** in [Introduzione alla gestione dei certificati SSL.](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)
+* Se stai installando un tuo certificato, consulta **Requisiti del certificato** in [Introduzione alla gestione dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements).
 
 ## Aggiunta di un certificato SSL {#add-certificate}
 
@@ -55,4 +55,4 @@ Ora hai aggiunto un certificato SSL funzionante per il progetto. Questo passaggi
 
 >[!TIP]
 >
->In caso di problemi durante l&#39;aggiunta o la gestione dei certificati, vedere il documento [Risoluzione dei problemi relativi agli errori dei certificati SSL.](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
+>In caso di problemi durante l&#39;aggiunta o la gestione dei certificati, vedere [Risoluzione degli errori relativi ai certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md).

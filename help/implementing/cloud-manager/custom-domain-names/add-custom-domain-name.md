@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 17%
@@ -147,7 +147,7 @@ Se hai selezionato il tipo di certificato *Certificato gestito dal cliente*, com
 
    Dopo aver caricato un certificato EV/OV valido, lo stato del dominio viene contrassegnato come **Verificato** nella tabella **Impostazioni dominio**.
 
-   ![Tabella delle impostazioni di dominio che mostra uno stato verificato.](/help/implementing/cloud-manager/assets/domain-settings-verified.png)
+   ![Tabella delle impostazioni di dominio con stato verificato](/help/implementing/cloud-manager/assets/domain-settings-verified.png).
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)

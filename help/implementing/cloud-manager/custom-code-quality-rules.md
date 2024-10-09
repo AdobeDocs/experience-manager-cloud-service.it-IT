@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -794,7 +794,7 @@ Un problema comune è l’utilizzo di nodi denominati `config` nelle finestre di
 * **Gravità**: importante
 * **Da**: versione 2019.6.0
 
-Similmente alla [regola I pacchetti non devono contenere duplicati delle configurazioni OSGi,](#oakpal-package-osgi) si tratta di un problema comune nei progetti complessi in cui lo stesso percorso del nodo viene scritto da più pacchetti di contenuti separati. Con i pacchetti di contenuti è possibile utilizzare le dipendenze per garantire un risultato coerente. È preferibile evitare del tutto le sovrapposizioni.
+Simile alla regola [I pacchetti non devono contenere duplicati delle configurazioni OSGi](#oakpal-package-osgi), si tratta di un problema comune nei progetti complessi in cui lo stesso percorso del nodo viene scritto da più pacchetti di contenuto separati. Benché sia possibile utilizzare le dipendenze tra pacchetti di contenuti per garantire risultati coerenti, è meglio evitare del tutto le sovrapposizioni.
 
 ### La modalità di authoring predefinita non deve corrispondere all’interfaccia utente classica {#oakpal-default-authoring}
 
@@ -853,7 +853,7 @@ Se utilizzi la replica inversa, contatta Adobe per scoprire le soluzioni alterna
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
-Le librerie client Experience Manager possono contenere risorse statiche come immagini e font. Come descritto nel documento [Utilizzo dei preprocessori,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) quando si usano le librerie client abilitate al proxy le risorse statiche devono essere contenute in una cartella secondaria denominata `resources` affinché sia possibile farvi riferimento nelle istanze pubbliche.
+Le librerie client Experience Manager possono contenere risorse statiche come immagini e font. Come descritto nel documento [Utilizzo dei preprocessori](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), quando si utilizzano le librerie client abilitate al proxy le risorse statiche devono essere contenute in una cartella secondaria denominata `resources` affinché sia possibile farvi riferimento nelle istanze di pubblicazione.
 
 #### Codice non conforme {#non-compliant-proxy-enabled}
 

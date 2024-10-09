@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 70%
+source-wordcount: '1108'
+ht-degree: 68%
 
 ---
 
@@ -98,7 +98,7 @@ A seconda del tipo di pipeline, può essere possibile annullare l’esecuzione f
 
 1. Passa alla scheda **Pipeline** dalla pagina **Panoramica del programma**, fai clic sul pulsante dei puntini di sospensione accanto alla pipeline da modificare e seleziona **Modifica** dal menu.
 
-1. Viene visualizzata la finestra di dialogo **Modifica pipeline di produzione** o **Modifica pipeline non di produzione**, che consente di modificare i dettagli inseriti durante la creazione della pipeline.
+1. Viene visualizzata la finestra di dialogo **Modifica pipeline di produzione** o **Modifica pipeline non di produzione**, che consente di modificare gli stessi dettagli immessi durante la creazione della pipeline.
 
    * Per informazioni dettagliate sui campi e le opzioni di configurazione disponibili per le pipeline, consulta le pagine seguenti.
       * [Configurazione delle pipeline di produzione](configuring-production-pipelines.md)
