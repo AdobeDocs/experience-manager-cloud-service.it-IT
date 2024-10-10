@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 1c6ab84a7fadb543cc8e28424efe634627923e70
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1380'
 ht-degree: 1%
 
 ---
@@ -64,8 +64,7 @@ Per garantire una transizione fluida da AEM Forms 6.5 all’ambiente AEM as a Cl
 
   ![Risultato esecuzione di prova](assets/enable-add-on.png)
 
-* In un ambiente di Cloud Service, l&#39;utility di migrazione funziona insieme allo strumento di mappatura utenti e allo strumento di trasferimento dei contenuti. L&#39;utilità di migrazione rende le risorse [!DNL AEM Forms] compatibili con il Cloud Service e lo strumento di trasferimento dei contenuti esegue la migrazione dei contenuti dall&#39;ambiente [!DNL AEM Forms] a un ambiente as a Cloud Service [!DNL AEM]. Prima di utilizzare l&#39;utilità di migrazione, apprendere il processo di [passaggio ad AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). Il processo è costituito da due strumenti:
-   * [Strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration): lo strumento di mappatura utenti consente di mappare gli utenti con gli account utente Adobe IMS corrispondenti.
+* In un ambiente di Cloud Service, l&#39;utility di migrazione funziona insieme allo strumento Content Transfer (Trasferimento contenuti). L&#39;utilità di migrazione rende le risorse [!DNL AEM Forms] compatibili con il Cloud Service e lo strumento di trasferimento dei contenuti esegue la migrazione dei contenuti dall&#39;ambiente [!DNL AEM Forms] a un ambiente as a Cloud Service [!DNL AEM]. Prima di utilizzare l&#39;utilità di migrazione, apprendere il processo di [passaggio ad AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). Il processo utilizza il seguente strumento:
    * [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration): lo strumento Content Transfer consente di preparare e trasferire il contenuto dall&#39;ambiente esistente a un ambiente di Cloud Service. Consente agli utenti di effettuare facilmente l’aggiornamento da AEM Forms all’ambiente cloud.
 * Account con privilegi di amministratore per l&#39;as a Cloud Service [!DNL AEM Forms] e l&#39;ambiente [!DNL AEM Forms] locale.
 * Scarica e installa Best Practice Analyzer, Content Transfer Tool e l&#39;utilità di migrazione [!DNL AEM Forms] da [Software Distribution Portal.](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html)
@@ -86,11 +85,9 @@ Eseguire la procedura seguente per rendere le risorse [!DNL AEM Forms] compatibi
 
    >[!NOTE]
    >
-   > Quando effettui la migrazione da 6.5 a Cloud Service, si consiglia di utilizzare l’ambiente clonato per eseguire lo strumento Content Transfer (Trasferimento contenuti) e l’utility di migrazione. Lo strumento Content Transfer e l’utility di migrazione apportano alcune modifiche al contenuto e alle risorse. Pertanto, non eseguire lo strumento Content Transfer (Trasferimento contenuti) e l’utility di migrazione in un ambiente di produzione.
+   > Quando effettui la migrazione da 6.5 a Cloud Service, si consiglia di utilizzare un ambiente clonato per eseguire lo strumento Content Transfer (Trasferimento contenuti) e l’utility di migrazione. Lo strumento Content Transfer e l’utility di migrazione apportano alcune modifiche al contenuto e alle risorse. Pertanto, non eseguire lo strumento Content Transfer (Trasferimento contenuti) o l’utilità di migrazione in un ambiente di produzione.
 
 1. Accedi all’ambiente clonato con privilegi di amministratore.
-
-1. Esegui lo [strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) per mappare gli utenti con gli account utente Adobe IMS corrispondenti. Per accedere a un&#39;istanza [!DNL AEM Forms] as a Cloud Service sono necessari account utente Adobe IMS.
 
 1. As a Cloud Service Scaricare e installare [l&#39;utilità di trasferimento dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) e l&#39;utilità di migrazione [!DNL AEM Forms] da [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) nell&#39;ambiente clonato. È possibile utilizzare Gestione pacchetti AEM per installare lo strumento e l&#39;utility.
 
