@@ -5,10 +5,10 @@ feature: Headless, GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 solution: Experience Manager
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 3096436f8057833419249d51cb6c15e6c28e9e13
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 55%
 
 ---
 
@@ -28,7 +28,13 @@ Ciò avviene tramite una configurazione OSGi appropriata per il filtro Referrer 
 
 Il nome del file deve essere `org.apache.sling.security.impl.ReferrerFilter.cfg.json`.
 
+## Esempio di configurazione {#example-configuration}
+
 Ad esempio, per concedere l’accesso alle richieste con il Referrer `my.domain` puoi:
+
+>[!CAUTION]
+>
+>Questo è un esempio di base che potrebbe sovrascrivere la configurazione standard. È necessario assicurarsi che gli aggiornamenti dei prodotti vengano sempre applicati a qualsiasi personalizzazione.
 
 ```xml
 {
@@ -52,16 +58,28 @@ Ad esempio, per concedere l’accesso alle richieste con il Referrer `my.domain`
 }
 ```
 
->[!CAUTION]
->
->Spetta al cliente:
->
->* concedere l’accesso solo ai domini attendibili;
->* assicurarsi che non siano esposte informazioni sensibili;
->* non utilizzare una sintassi con carattere jolly [*]; questa infatti comporterebbe la disattivazione dell’accesso autenticato all’endpoint GraphQL, rendendolo accessibile a chiunque.
+## Sicurezza dei dati {#data-security}
 
 >[!CAUTION]
 >
->Tutti gli [schemi](#schema-generation) GraphQL (derivati dai modelli per frammenti di contenuto che sono stati **abilitati**) sono leggibili attraverso l’endpoint GraphQL.
->
->Ciò significa che devi assicurarti che non siano disponibili dati sensibili, che in questo modo potrebbero trapelare; ad esempio, informazioni che potrebbero essere presenti come nomi di campo nella definizione del modello.
+>È tua responsabilità affrontare pienamente i seguenti punti.
+
+Per garantire la protezione dei dati, è necessario assicurarsi che:
+
+* l&#39;accesso è **only** concesso ai domini attendibili
+
+* viene utilizzata la sintassi del carattere jolly [`*`] in **not**; questa funzione disattiva l&#39;accesso autenticato all&#39;endpoint GraphQL e la espone a tutto il mondo
+
+* le informazioni riservate sono **mai** esposte; né direttamente né indirettamente:
+
+   * Ad esempio, tutti gli [schemi di GraphQL](/help/headless/graphql-api/content-fragments.md#schema-generation) sono:
+
+      * derivato da modelli per frammenti di contenuto che sono stati **abilitati**
+
+     **e**
+
+      * sono leggibili tramite l’endpoint GraphQL
+
+     Ciò significa che le informazioni presenti come nomi di campo nella definizione del modello possono diventare disponibili.
+
+Devi accertarti che non siano disponibili dati sensibili in alcun modo, quindi tali dettagli devono essere attentamente considerati.
