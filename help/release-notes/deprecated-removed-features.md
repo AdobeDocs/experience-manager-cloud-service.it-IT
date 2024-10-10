@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 04ec933125da9ee3c84ffd948b144581d31763d6
 workflow-type: tm+mt
 source-wordcount: '2485'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="Funzioni obsolete e rimosse in AEM as a Cloud Service"
->abstract="AEM as a Cloud Service dispone di un modello di distribuzione nativo per il cloud. Alcune funzionalità sono state sostituite da controparti native per il cloud e questa scheda mostra tali funzionalità."
+>abstract="AEM as a Cloud Service dispone di un modello di distribuzione nativo per il cloud. Alcune funzionalità sono state sostituite da controparti native per il cloud e sono ora visualizzate in questa scheda."
 
 Adobe valuta costantemente le funzionalità dei prodotti, per reinventare o sostituire nel tempo le funzioni meno recenti con alternative più moderne, al fine di migliorare il valore complessivo per la clientela, tenendo comunque in considerazione la compatibilità con le versioni precedenti. Inoltre, poiché [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] offre un modello di distribuzione nativo per il cloud, alcune funzionalità sono state sostituite da controparti native per il cloud.
 
@@ -35,7 +35,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
 
 | Funzionalità | Funzione obsoleta | Sostituzione |
 | ------------ | ------------------ | ----------- |
-| [!DNL Sites] | [API per l&#39;utilizzo di JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) |
+| [!DNL Sites] | [API di utilizzo di JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API di utilizzo di Java](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Proprietà di Frammenti di esperienza per **Stato social media**. | La funzione verrà rimossa presto. |
 | [!DNL Sites] | Frammenti di contenuto semplici basati su modelli. | [Frammenti di contenuto strutturati basati su modelli](/help/assets/content-fragments/content-fragments-models.md) ora. |
 | [!DNL Assets] | Flusso di lavoro di `DAM Asset Update` per elaborare le immagini acquisite. | Per l’inserimento delle risorse si utilizzano ora i [microservizi per le risorse](/help/assets/asset-microservices-overview.md). |

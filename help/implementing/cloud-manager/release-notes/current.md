@@ -6,7 +6,7 @@ role: Admin
 source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -30,13 +30,13 @@ La prossima versione è prevista per il venerdì 14 novembre 2024.
 
 <!-- (CMGR-59817) -->
 
-* <!-- CS ONLY --> Quando si aggiunge un nuovo dominio personalizzato, il precedente metodo di verifica richiedeva un processo di convalida DNS lungo. Adobe ha semplificato questa procedura per i clienti. Ora devi solo fornire un certificato SSL valido (EV o OV), che funga da prova di proprietà. Non è più necessario aggiornare i record TXT nel DNS.
+* <!-- CS ONLY --> Quando si aggiunge un nuovo dominio personalizzato, il metodo di verifica precedente richiedeva una procedura di convalida DNS lunga. Adobe ha semplificato tale procedura per la clientela. Ora devi solo fornire un certificato SSL valido (EV o OV), che funge da prova di proprietà. Non è più necessario aggiornare i record TXT nel DNS.
 
   >[!NOTE]
   >
   >Questa funzione è applicabile solo ai certificati EV e OV gestiti dal cliente. I certificati DV gestiti da Adobe richiedono ancora la presenza di un record CNAME.
 
-  Vedere [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+  Consulta [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
   ![Verificare il dominio per un certificato EV/OV gestito dal cliente](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
