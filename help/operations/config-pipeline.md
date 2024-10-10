@@ -3,13 +3,13 @@ title: Utilizzo delle pipeline di configurazione
 description: Scopri come utilizzare le pipeline di configurazione per distribuire diverse configurazioni di AEM as a Cloud Service, ad esempio le impostazioni di inoltro del registro, le attività di manutenzione relative all’eliminazione e varie configurazioni CDN.
 feature: Operations
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
+source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '973'
 ht-degree: 1%
 
 ---
-
 
 # Utilizzo delle pipeline di configurazione {#config-pipelines}
 
@@ -38,7 +38,7 @@ La tabella seguente offre un elenco completo di tali configurazioni, con collega
 | [Regole filtro traffico, incluso WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Dichiarare le regole per bloccare il traffico dannoso |
 | [Richiedi trasformazioni](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Dichiarare le regole per trasformare la forma della richiesta di traffico |
 | [Trasformazioni risposta](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Dichiarare le regole per trasformare la forma della risposta per una determinata richiesta |
-| [Reindirizzamenti lato client](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Dichiara reindirizzamenti lato client di tipo 301/302 [ (disponibili solo per i primi utenti)](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
+| [Reindirizzamenti lato client](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Dichiara reindirizzamenti lato client 301/302 |
 | [Selettori origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Dichiarare le regole per indirizzare il traffico a diversi backend, incluse le applicazioni non basate su Adobi |
 | [Pagine errore CDN](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Sostituisci la pagina di errore predefinita se non è possibile raggiungere l’origine AEM, facendo riferimento alla posizione del contenuto statico con hosting autonomo nel file di configurazione |
 | [Rimozione CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Dichiara le chiavi API di rimozione utilizzate per rimuovere la rete CDN |
