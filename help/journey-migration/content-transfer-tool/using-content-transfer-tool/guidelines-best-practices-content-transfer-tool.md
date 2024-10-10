@@ -4,7 +4,7 @@ description: Scopri le linee guida e le best practice per l’utilizzo dello str
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 14%
@@ -52,7 +52,7 @@ La formula generale per calcolare lo spazio libero su disco richiesto è la segu
 * *node store size*: dimensione archivio nodi; dimensione della directory dell’archivio segmenti o dimensione del database MongoDB.
 Pertanto, per un archivio segmenti di 20 GB, lo spazio libero su disco richiesto è di 94 GB.
 
-* È necessario mantenere un set di migrazione per l’intera durata dell’attività di trasferimento dei contenuti per supportare l’integrazione dei contenuti. Durante l’attività di trasferimento dei contenuti è possibile creare e mantenere fino a un massimo di 20 set di migrazione per progetto in Cloud Acceleration Manager. Se sono necessari più di 20 set di migrazione, crea un secondo progetto in Cloud Acceleration Manager. Tuttavia, questo richiede una gestione del progetto aggiuntiva e una governance out-of-product per evitare la sovrascrittura dei contenuti sul target da parte di più utenti.
+* È necessario mantenere un set di migrazione per l’intera durata dell’attività di trasferimento dei contenuti per supportare l’integrazione dei contenuti. È possibile creare e mantenere un massimo di 10 set di migrazione per progetto in Cloud Acceleration Manager alla volta durante l’attività di trasferimento dei contenuti. Se sono necessari più di 10 set di migrazione, crea un secondo progetto in Cloud Acceleration Manager. Tuttavia, questo richiede una gestione del progetto aggiuntiva e una governance out-of-product per evitare la sovrascrittura dei contenuti sul target da parte di più utenti.
 
 * Evitare di modificare la directory di installazione dello strumento CTT. Per impostazione predefinita, l’installazione si svolge nel percorso crx-quickstart/cloud-migration. Questa posizione specifica viene utilizzata internamente da altre librerie. La modifica di questo percorso può causare problemi di estrazione.
 
