@@ -1,17 +1,17 @@
 ---
-title: Aggiungere archivi GitHub privati in Cloud Manager
+title: Aggiungere un archivio GitHub privato in Cloud Manager
 description: Scopri come configurare Cloud Manager per l’utilizzo di archivi GitHub privati.
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 2fa4abca9823bbc62900023d637429f3fbfd894d
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 33%
+source-wordcount: '930'
+ht-degree: 34%
 
 ---
 
-# Aggiungere archivi GitHub privati in Cloud Manager {#private-repositories}
+# Aggiungere un archivio GitHub privato in Cloud Manager {#private-repositories}
 
 Configurando Cloud Manager per l’integrazione con gli archivi GitHub privati, puoi convalidare il codice direttamente all’interno di GitHub utilizzando Cloud Manager. Questa configurazione elimina la necessità di sincronizzare regolarmente il codice con l’archivio di Adobi.
 
@@ -48,7 +48,7 @@ La configurazione di un archivio GitHub privato in Cloud Manager consiste di due
 
    ![Pagina Archivi](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
 
-1. Fai clic su **Aggiungi archivio** nell&#39;angolo superiore destro della pagina **Archivi**.
+1. Nell&#39;angolo superiore destro della pagina **Archivi** fare clic su **Aggiungi archivio**.
 
 1. Nella finestra di dialogo **Aggiungi archivio**, seleziona **Archivio privato** come tipo di archivio.
 
