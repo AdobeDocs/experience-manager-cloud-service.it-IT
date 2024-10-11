@@ -1,116 +1,113 @@
 ---
-title: Distribuzione del codice
+title: Distribuire il codice
 description: Scopri come distribuire il codice con le pipeline di Cloud Manager in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 79%
+source-wordcount: '1184'
+ht-degree: 38%
 
 ---
 
 
-# Distribuzione del codice {#deploy-your-code}
+# Implementare il codice {#deploy-your-code}
 
 Scopri come distribuire il codice nell’ambiente di produzione con le pipeline di Cloud Manager in AEM as a Cloud Service.
 
 ![Diagramma della pipeline di produzione](./assets/configure-pipeline/production-pipeline-diagram.png)
 
-La distribuzione del codice nell’ambiente di staging e successivamente nell’ambiente di produzione avviene tramite una pipeline di produzione. L’esecuzione della pipeline di produzione è suddivisa in due fasi logiche.
+La distribuzione del codice nell’ambiente di staging e successivamente nell’ambiente di produzione avviene tramite una pipeline di produzione. L’esecuzione della pipeline di produzione è suddivisa nelle due fasi logiche seguenti:
 
-1. Distribuzione nell’ambiente di staging
-   * Il codice viene generato e distribuito nell’ambiente di staging per test funzionali automatizzati, test dell’interfaccia utente, audit dell’esperienza e test di accettazione utente (UAT).
-1. Distribuzione nell’ambiente di produzione
-   * Dopo aver convalidato la build nell’ambiente di staging e averla approvata per la promozione all’ambiente di produzione, l’artefatto di build viene distribuito nell’ambiente di produzione.
+1. **Distribuzione nell&#39;ambiente di staging** - Il codice viene generato e distribuito nell&#39;ambiente di staging per test funzionali automatizzati, test dell&#39;interfaccia utente, audit dell&#39;esperienza e test di accettazione utente (UAT).
+1. **Distribuzione nell&#39;ambiente di produzione** - Una volta convalidata la build nell&#39;ambiente di staging e approvata per la promozione nell&#39;ambiente di produzione, lo stesso artefatto di build viene distribuito nell&#39;ambiente di produzione.
 
 _Solo la pipeline del codice full stack supporta il controllo del codice, i test funzionali, i test dell’interfaccia utente e l’audit dell’esperienza._
 
-## Distribuzione del codice con Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
+## Processo di distribuzione {#deployment-process}
+
+Tutte le distribuzioni di Cloud Service seguono un processo continuo per garantire l’operatività continua. Per ulteriori informazioni, consulta [Funzionamento delle implementazioni continue](/help/implementing/deploying/overview.md#how-rolling-deployments-work).
+
+>[!NOTE]
+>
+>La cache del Dispatcher viene cancellata su ogni distribuzione. Viene successivamente &quot;riscaldato&quot; prima che i nuovi nodi di pubblicazione accettino il traffico.
+
+## Distribuire il codice con Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
 Dopo aver [configurato la pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) includendo archivio, ambiente e ambiente di test, tutto è pronto per la distribuzione del codice.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, toccare o fare clic sul programma per il quale si desidera distribuire il codice.
+1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** fare clic sul programma per il quale si desidera distribuire il codice.
 
-1. Per avviare il processo di distribuzione, dall’invito all’azione presente nella schermata **Panoramica**, fai clic su **Distribuisci**.
+1. Nella pagina **Panoramica**, nell&#39;area di invito all&#39;azione, fare clic su **Distribuisci**.
 
    ![Invito all’azione](assets/deploy-code1.png)
 
-1. Si apre la schermata **Esecuzione delle pipeline**. Per avviare il processo, fai clic su **Genera**.
+1. Nella pagina **Distribuisci in produzione** fare clic su **Genera**.
 
    ![Schermata di esecuzione della pipeline](assets/deploy-code2.png)
 
-Il processo di build distribuisce il codice in tre fasi.
+Il processo di build distribuisce il codice attraverso le tre seguenti fasi ordinate:
 
-1. [Implementazione nell’ambiente di staging](#stage-deployment)
-1. [Test nell’ambiente di staging](#stage-testing)
-1. [Implementazione nell’ambiente di produzione](#production-deployment)
+1. [Fase di implementazione nell’ambiente di staging](#stage-deployment)
+1. [Fase di test dello staging](#stage-testing)
+1. [Fase di implementazione di produzione](#production-deployment)
 
 >[!TIP]
 >
 >Puoi rivedere i passaggi da vari processi di distribuzione visualizzando i registri o rivedendo i risultati per i criteri di test.
 
-## Fase di implementazione nell’ambiente di staging {#stage-deployment}
+### Fase di implementazione nell’ambiente di staging {#stage-deployment}
 
-La fase di **implementazione nell’ambiente di staging** prevede i passaggi riportati di seguito.
+La fase **Distribuzione nell&#39;ambiente di staging** prevede i seguenti passaggi:
 
-* **Convalida**: questo passaggio garantisce che la pipeline sia configurata per utilizzare le risorse attualmente disponibili. Ad esempio, i test per verificare che il ramo configurato esista e che gli ambienti siano disponibili.
-* **Test di build e dell’unità**: questo passaggio esegue un processo di compilazione containerizzato.
-   * Per ulteriori informazioni sull’ambiente di build, consulta il documento [Dettagli sull’ambiente di build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md).
-* **Analisi del codice**: questo passaggio valuta la qualità del codice dell’applicazione.
-   * Per ulteriori informazioni sul processo di test, consulta il documento [Test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md).
-* **Genera immagini**: questo processo è responsabile della trasformazione in immagini Docker e configurazioni di Kubernetes dei pacchetti di contenuti e dispatcher generati dalla fase di build.
-* **Distribuzione nell&#39;area di staging** - L&#39;immagine viene distribuita nell&#39;ambiente di staging in preparazione alla [fase di test nell&#39;area di staging](#stage-testing).
+| Passaggio della distribuzione dello staging | Descrizione |
+| --- | --- |
+| Convalida | Assicura che la pipeline sia configurata per utilizzare le risorse attualmente disponibili. Ad esempio, i test per verificare che il ramo configurato esista e che gli ambienti siano disponibili. |
+| Build e unit test | Esegue un processo di compilazione containerizzato.<br>Per informazioni dettagliate sull&#39;ambiente di compilazione, vedere [Dettagli ambiente di compilazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). |
+| Scansione del codice | Valuta la qualità del codice dell’applicazione.<br>Consulta [Test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md) per informazioni dettagliate sul processo di test. |
+| Immagini di build | Questo processo converte il contenuto e i pacchetti Dispatcher dalla fase Build in immagini Docker. Genera anche configurazioni Kubernetes basate su questi pacchetti. |
+| Implementa in staging | L&#39;immagine viene distribuita nell&#39;ambiente di staging in preparazione della [fase di test dello staging](#stage-testing). |
 
 ![Implementazione nell’ambiente di staging](assets/stage-deployment.png)
 
-## Fase di test nell’ambiente di staging {#stage-testing}
+### Fase di test dello staging {#stage-testing}
 
-La fase di **test nell’ambiente di staging** prevede i seguenti passaggi.
+La fase **Test dello staging** prevede i seguenti passaggi:
 
-* **Test funzionali del prodotto**: la pipeline di Cloud Manager esegue i test per l’ambiente di staging.
-   * Per ulteriori dettagli, consulta [Test funzionali del prodotto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing).
-
-* **Test funzionali personalizzato**: questo passaggio nella pipeline viene sempre eseguito e non può essere saltato. Se la build non produce JAR di test, il test viene superato per impostazione predefinita.
-   * Per ulteriori dettagli, consulta [Test funzionali personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).
-
-* **Test dell’interfaccia utente personalizzati**: questo passaggio è una funzione facoltativa che esegue automaticamente i test dell’interfaccia utente creati per le applicazioni personalizzate.
-   * I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in termini di linguaggio e framework (come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium).
-   * Per ulteriori dettagli, consulta [Test dell’interfaccia utente personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
-
-* **Audit dell’esperienza**: questo passaggio nella pipeline viene sempre eseguito e non può essere saltato. Quando si esegue una pipeline di produzione, viene incluso un passaggio di audit dell’esperienza dopo i test funzionali personalizzati che eseguono i controlli.
-   * Le pagine configurate vengono inviate al servizio e valutate.
-   * I risultati sono informativi e mostrano i punteggi e cosa è cambiato tra il punteggio corrente e quello precedente.
-   * Questo approfondimento e è utile per determinare l’eventuale introduzione di una regressione con la distribuzione corrente.
-   * Per ulteriori informazioni, consulta la sezione dedicata alla [lettura dei risultati dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md).
+| Passaggio del test dello staging | Descrizione |
+| --- | --- |
+| Test funzionali del prodotto | La pipeline di Cloud Manager esegue i test per l’ambiente di staging.<br>Vedere anche [Test funzionali del prodotto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
+| Test funzionali personalizzati | Questo passaggio nella pipeline viene sempre eseguito e non può essere saltato. Se la build non produce un JAR di test, il test viene superato automaticamente.<br>Vedere anche [Test funzionali personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
+| Test dell’interfaccia utente personalizzati | Funzione facoltativa che esegue automaticamente i test dell’interfaccia utente creati per le applicazioni personalizzate.<br>I test dell&#39;interfaccia utente sono basati su Selenium e inclusi in un&#39;immagine Docker per offrire flessibilità nel linguaggio e nei framework. Questo approccio consente di utilizzare Java e Maven, Node e WebDriver.io o qualsiasi framework o tecnologia basati su Selenium.<br>Vedi anche [Test dell&#39;interfaccia utente personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
+| Audit dell’esperienza | Questo passaggio nella pipeline viene sempre eseguito e non può essere saltato. Quando si esegue una pipeline di produzione, viene incluso un passaggio di audit dell’esperienza dopo i test funzionali personalizzati che eseguono i controlli.<ul><li>Le pagine configurate vengono inviate al servizio e valutate.</li><li>I risultati sono informativi e mostrano i punteggi e cosa è cambiato tra il punteggio corrente e quello precedente.</li><li>Questo approfondimento e è utile per determinare l’eventuale introduzione di una regressione con la distribuzione corrente.</li></ul>Consulta [Informazioni sui risultati dell&#39;audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
 
 ![Test nell’ambiente di staging](assets/stage-testing.png)
 
-## Fase di implementazione nell’ambiente di produzione {#production-deployment}
+### Fase di implementazione di produzione {#production-deployment}
 
-Il processo di implementazione nelle topologie di produzione è leggermente diverso per ridurre l’impatto sui visitatori di un sito AEM.
+Il processo di distribuzione nelle topologie di produzione è leggermente diverso per ridurre al minimo l’impatto sui visitatori di un sito AEM.
 
-Le implementazioni nell’ambiente di produzione seguono generalmente la stessa procedura descritta in precedenza, ma in modo continuo.
+Le distribuzioni di produzione seguono generalmente gli stessi passaggi descritti in precedenza, ma in modo continuativo. Questi passaggi includono:
 
 1. Distribuire i pacchetti AEM nel servizio Author.
-1. Scollegare dispatcher1 dal load balancer.
-1. Distribuire i pacchetti AEM in publish1 e il pacchetto dispatcher in dispatcher1; svuotare la cache del dispatcher.
-1. Ripristinare dispatcher1 nel load balancer.
-1. Dopo aver ripristinato il servizio di dispatcher1, scollegare dispatcher2 dal load balancer.
-1. Distribuire i pacchetti AEM in publish2 e il pacchetto dispatcher in dispatcher2; svuotare la cache del dispatcher.
-1. Ripristinare dispatcher2 nel load balancer.
+1. Scollegare `dispatcher1` dal load balancer.
+1. Distribuire i pacchetti AEM in `publish1` e il pacchetto Dispatcher in `dispatcher1`. Svuotare la cache di Dispatcher.
+1. Ripristina `dispatcher1` nel load balancer.
+1. Quando `dispatcher1` torna in servizio, scollegare `dispatcher2` dal load balancer.
+1. Distribuire i pacchetti AEM in `publish2` e il pacchetto Dispatcher in `dispatcher2`. Svuotare la cache di Dispatcher.
+1. Ripristina `dispatcher2` nel load balancer.
 
-Questo processo continua fino al completamento della distribuzione in tutti gli elementi Publish e Dispatcher nella topologia.
+Questo processo continua fino a quando la distribuzione non raggiunge tutti gli editori e i Dispatcher nella topologia.
 
 ![Fase di distribuzione nell’ambiente di produzione](assets/production-deployment.png)
 
-## Timeout {#timeouts}
+## Timeout durante una distribuzione {#timeouts}
 
-I seguenti passaggi si interrompono se vengono lasciati in attesa del feedback dell’utente:
+I passaggi seguenti si interrompono se vengono lasciati in attesa del feedback dell’utente durante una distribuzione:
 
 | Passaggio | Timeout |
 |--- |--- |
@@ -121,21 +118,13 @@ I seguenti passaggi si interrompono se vengono lasciati in attesa del feedback d
 | Pianificazione della distribuzione nell’ambiente di produzione | 14 giorni |
 | Supporto CSE | 14 giorni |
 
-## Processo di distribuzione {#deployment-process}
+## Riesecuzione di una distribuzione di produzione {#reexecute-deployment}
 
-Tutte le distribuzioni di Cloud Service seguono un processo continuo per garantire l’operatività continua. Per ulteriori informazioni, consulta [Funzionamento delle implementazioni continue](/help/implementing/deploying/overview.md#how-rolling-deployments-work).
+In rari casi, i passaggi di distribuzione nell’ambiente di produzione possono non riuscire per motivi transitori. In questi casi, la riesecuzione del passaggio di distribuzione nell’ambiente di produzione è supportata a condizione che il passaggio di distribuzione nell’ambiente di produzione sia stato completato, indipendentemente dal tipo di completamento (ad esempio, annullato o non riuscito). La riesecuzione crea una nuova esecuzione utilizzando la stessa pipeline composta dai tre passaggi seguenti:
 
->[!NOTE]
->
->La cache del Dispatcher viene cancellata su ogni distribuzione. Subisce successivamente un processo di riscaldamento prima che i nuovi nodi di pubblicazione accettino il traffico.
-
-## Eseguire nuovamente una distribuzione di produzione {#reexecute-deployment}
-
-In rari casi, i passaggi di distribuzione nell’ambiente di produzione possono non riuscire per motivi transitori. In questi casi, la riesecuzione del passaggio di distribuzione nell’ambiente di produzione è supportata fino a quando il passaggio di distribuzione nell’ambiente di produzione è stato completato, indipendentemente dal tipo di completamento (ad esempio, annullato o non riuscito). La riesecuzione crea una nuova esecuzione utilizzando la stessa pipeline costituita da tre passaggi.
-
-1. Passaggio di convalida: si tratta essenzialmente della stessa convalida che si verifica durante una normale esecuzione della pipeline.
-1. Passaggio di build: nel contesto di una riesecuzione, il passaggio di build copia gli artefatti e non esegue effettivamente un nuovo processo di build.
-1. Passaggio di distribuzione nell’ambiente di produzione: utilizza la stessa configurazione e le stesse opzioni del passaggio di distribuzione nell’ambiente di produzione in una normale esecuzione della pipeline.
+1. **Convalida**: la stessa convalida che si verifica durante una normale esecuzione della pipeline.
+1. **Build** - Nel contesto di una riesecuzione, il passaggio di compilazione copia gli artefatti e non esegue effettivamente un nuovo processo di compilazione.
+1. **Distribuzione di produzione** - Utilizza la stessa configurazione e le stesse opzioni del passaggio di distribuzione di produzione in una normale esecuzione della pipeline.
 
 In tali circostanze, in cui è possibile eseguire una riesecuzione, la pagina di stato della pipeline di produzione fornisce l’opzione **Riesegui** accanto a quella consueta di **Scarica registro build**.
 
@@ -147,16 +136,15 @@ In tali circostanze, in cui è possibile eseguire una riesecuzione, la pagina di
 
 ### Limitazioni {#limitations}
 
-* La riesecuzione del passaggio di distribuzione nell’ambiente di produzione è disponibile solo per l’ultima esecuzione.
-* La riesecuzione non è disponibile per le esecuzioni degli aggiornamenti push.
-   * Se l’ultima esecuzione è un aggiornamento push, non è possibile eseguirla nuovamente.
+* La riesecuzione del passaggio di distribuzione di produzione è disponibile solo per l’ultima esecuzione.
+* La riesecuzione non è disponibile per le esecuzioni degli aggiornamenti push. Se l’ultima esecuzione è un aggiornamento push, non è possibile eseguirla nuovamente.
 * Se l’ultima esecuzione non è riuscita in un qualsiasi punto precedente al passaggio di distribuzione nell’ambiente di produzione, non è possibile eseguirla nuovamente.
 
 ### Riesecuzione dell’API {#reexecute-API}
 
 Oltre a essere disponibile nell’interfaccia utente, è possibile utilizzare l’[API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) per attivare le riesecuzioni e identificare le esecuzioni attivate come riesecuzioni.
 
-#### Attivazione di una riesecuzione {#reexecute-deployment-api}
+#### Attivare una riesecuzione {#reexecute-deployment-api}
 
 Per attivare una riesecuzione, effettuare una richiesta PUT al collegamento HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` sullo stato del passaggio di distribuzione di produzione.
 
@@ -202,8 +190,8 @@ Questo collegamento è disponibile solo per il passaggio di distribuzione nell�
 
 La sintassi del valore href del collegamento HAL è solo un esempio. Il valore effettivo deve sempre essere letto dal collegamento HAL e non generato.
 
-L’invio di una richiesta PUT a questo endpoint genera una risposta 201 in caso di esito positivo; il corpo della risposta è la rappresentazione della nuova esecuzione. È simile all’avvio di un’esecuzione normale tramite l’API.
+L’invio di una richiesta PUT a questo endpoint genera una risposta 201 in caso di esito positivo; il corpo della risposta è la rappresentazione della nuova esecuzione. Questo flusso di lavoro è simile all’avvio di un’esecuzione regolare tramite l’API.
 
-#### Identificazione di un’esecuzione rieseguita {#identify-reexecution}
+#### Identificare un’esecuzione rieseguita {#identify-reexecution}
 
-Le riesecuzioni possono essere identificate dal valore `RE_EXECUTE` nel `trigger` campo.
+Il sistema identifica le riesecuzioni impostando il campo `trigger` sul valore `RE_EXECUTE`.

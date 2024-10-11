@@ -1,14 +1,14 @@
 ---
 title: Regole per la qualità del codice personalizzato
-description: Questa pagina descrive le regole per la qualità del codice personalizzato eseguite da Cloud Manager come parte del test di qualità del codice. Si basano sulle best practice dei team tecnici di Adobe Experience Manager.
+description: Scopri le regole di qualità del codice personalizzato di Cloud Manager, basate sulle best practice di Adobe Experience Manager Engineering, per garantire codice di alta qualità tramite test approfonditi.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '4513'
-ht-degree: 83%
+source-wordcount: '4421'
+ht-degree: 66%
 
 ---
 
@@ -17,17 +17,17 @@ ht-degree: 83%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Regole per la qualità del codice personalizzato"
->abstract="Questa pagina descrive le regole per la qualità del codice personalizzato eseguite da Cloud Manager come parte del test di qualità del codice. Si basano sulle best practice dei team tecnici di Adobe Experience Manager."
+>abstract="Scopri le regole di qualità del codice personalizzato di Cloud Manager, basate sulle best practice di Adobe Experience Manager Engineering, per garantire codice di alta qualità tramite test approfonditi."
 
-Questa pagina descrive le regole per la qualità del codice personalizzato eseguite da Cloud Manager come parte del [test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md). Si basano sulle best practice dei team tecnici di Experience Manager.
-
->[!NOTE]
->
->Le regole SonarQube complete non sono disponibili per il download a causa di informazioni proprietarie Adobe. È possibile scaricare l’elenco completo delle regole [utilizzando questo collegamento](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Continua a leggere questo documento per descrizioni ed esempi delle regole.
+Scopri le regole di qualità del codice personalizzato di Cloud Manager, basate sulle best practice di Adobe Experience Manager Engineering, per garantire codice di alta qualità tramite test approfonditi. Vedi anche [test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md).
 
 >[!NOTE]
 >
->Gli esempi di codice qui forniti sono esclusivamente a scopo illustrativo. Per informazioni sui concetti e le regole di qualità di SonarQube, consulta la [Documentazione sui concetti](https://docs.sonarqube.org/latest/) di SonarQube.
+>Le regole SonarQube complete non sono disponibili per il download a causa di informazioni proprietarie di Adobe. È possibile scaricare l’elenco completo delle regole [utilizzando questo collegamento](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Continua a leggere questo documento per descrizioni ed esempi delle regole.
+
+>[!NOTE]
+>
+>Gli esempi di codice qui forniti sono esclusivamente a scopo illustrativo. Per informazioni sui concetti e le regole di qualità di SonarQube, consulta la [Documentazione sui concetti](https://docs.sonarsource.com/sonarqube/latest/) di SonarQube.
 
 ## Regole di SonarQube {#sonarqube-rules}
 
@@ -115,7 +115,8 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Gravità**: critico
 * **Da**: versione 2018.6.0
 
-Durante l’esecuzione di richieste HTTP dall’interno di un’applicazione Experience Manager, è fondamentale assicurarsi che siano configurati timeout appropriati al fine di evitare un consumo di thread inutile. Sfortunatamente, i comportamenti predefiniti di entrambi i client HTTP predefiniti di Java™ (`java.net.HttpUrlConnection`) e il client Apache HTTP Components comunemente utilizzato non si interrompe mai, peranto i timeout devono pertanto essere impostati in modo esplicito. Inoltre, come best practice, questi timeout non devono superare i 60 secondi.
+Quando si effettuano richieste HTTP all’interno di un’applicazione di Experience Manager, è essenziale configurare timeout appropriati per evitare un inutile consumo di thread.
+Per impostazione predefinita, sia il client HTTP Java™ (java.net.HttpUrlConnection) che il client Apache HTTP Components ampiamente utilizzato non impongono timeout, pertanto devono essere configurati manualmente. Come best practice, i timeout devono essere impostati su un massimo di 60 secondi.
 
 #### Codice non conforme {#non-compliant-code-2}
 
@@ -190,9 +191,9 @@ public void orDoThis () {
 * **Gravità**: importante
 * **Da**: versione 2018.4.0
 
-Gli oggetti `ResourceResolver` ottenuti da `ResourceResolverFactory` consumano risorse di sistema. Sebbene esistano misure per recuperare tali risorse quando un oggetto `ResourceResolver` non è più in uso, è più efficiente chiudere in modo esplicito qualsiasi oggetto `ResourceResolver` aperto con una chiamata al metodo `close()`.
+Gli oggetti ResourceResolver ottenuti da `ResourceResolverFactory` utilizzano risorse di sistema. Sebbene esistano misure per recuperare tali risorse quando un oggetto `ResourceResolver` non è più in uso, è più efficiente chiudere in modo esplicito qualsiasi oggetto `ResourceResolver` aperto chiamando il metodo `close()`.
 
-Un equivoco relativamente comune è che gli oggetti `ResourceResolver` creati utilizzando una sessione JCR esistente non devono essere chiusi in modo esplicito, altrimenti la sessione JCR sottostante verrà chiusa. Questo non succede. Indipendentemente da come si apre un oggetto `ResourceResolver`, quando non viene più utilizzato deve essere chiuso. Poiché `ResourceResolver` implementa l’interfaccia `Closeable`, è possibile utilizzare anche la sintassi `try-with-resources` anziché richiamare esplicitamente `close()`.
+Un equivoco comune è che `ResourceResolver` oggetti creati con una sessione JCR esistente non devono essere chiusi in modo esplicito o che la loro chiusura influisca sulla sessione JCR. Queste informazioni non sono corrette. `ResourceResolver` deve essere sempre chiuso quando non è più necessario. Poiché `ResourceResolver` implementa l&#39;interfaccia `Closeable`, è possibile utilizzare anche la sintassi `try-with-resources` anziché chiamare direttamente `close()`.
 
 #### Codice non conforme {#non-compliant-code-4}
 
@@ -232,7 +233,7 @@ public void orDoThis(Session session) throws Exception {
 * **Gravità**: importante
 * **Da**: versione 2018.4.0
 
-Come descritto nella [documentazione di Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html), si sconsiglia di associare i servlet ai percorsi. I servlet associati ai percorsi non possono utilizzare controlli dell’accesso JCR standard e, di conseguenza, richiedono un’ulteriore misura di sicurezza. Anziché utilizzare i servlet associati ai percorsi, si consiglia di creare nodi nell’archivio e di registrare i servlet in base al tipo di risorsa.
+Come descritto nella [documentazione di Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html), i servlet di associazione da percorsi sono sconsigliati. I servlet associati ai percorsi non possono utilizzare controlli dell’accesso JCR standard e, di conseguenza, richiedono un’ulteriore misura di sicurezza. Anziché utilizzare i servlet associati ai percorsi, si consiglia di creare nodi nell’archivio e di registrare i servlet in base al tipo di risorsa.
 
 #### Codice non conforme {#non-compliant-code-5}
 
@@ -252,7 +253,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 * **Gravità**: minore
 * **Da**: versione 2018.4.0
 
-In generale, un’eccezione deve essere registrata una sola volta. Registrare le eccezioni più volte può causare confusione sul numero di volte che un’eccezione si è verificata. Il modello più comune che porta a questo problema è la registrazione e la generazione di un’eccezione rilevata.
+In generale, un’eccezione deve essere registrata una sola volta. Registrare le eccezioni più volte può causare confusione. Il motivo è che non è chiaro quante volte si è verificata un’eccezione. Il modello più comune che porta a questo effetto è la registrazione e la generazione di un’eccezione rilevata.
 
 #### Codice non conforme {#non-compliant-code-6}
 
@@ -319,11 +320,11 @@ public void doThis() throws Exception {
 * **Tipo**: code smell
 * **Gravità**: minore
 
-In generale, il livello di registro INFO deve essere utilizzato per delimitare azioni importanti e, per impostazione predefinita, Experience Manager è configurato per registrare a livello INFO o superiore. I metodi GET e HEAD devono essere sempre di sola lettura e non costituiscono pertanto azioni importanti. È probabile che la registrazione a livello INFO in risposta alle richieste GET o HEAD generi un notevole disturbo nel registro, rendendo così più difficile identificare le informazioni utili nei file di log. La registrazione durante la gestione delle richieste GET o HEAD deve essere a livello WARN o ERROR quando si è verificato un errore o a livello DEBUG o TRACE se è utilie fornire informazioni più approfondite sulla risoluzione dei problemi.
+In generale, il livello di registro INFO deve essere utilizzato per delimitare azioni importanti e, per impostazione predefinita, Experience Manager è configurato per registrare a livello INFO o superiore. I metodi GET e HEAD devono essere sempre di sola lettura e non costituiscono pertanto azioni importanti. È probabile che la registrazione a livello INFO in risposta alle richieste GET o HEAD generi un notevole disturbo nel registro, rendendo così più difficile identificare le informazioni utili nei file di log. Quando gestisci le richieste di GET o HEAD, registra a livello di WARN o ERROR in caso di errori. Utilizzare i livelli DEBUG o TRACE se sono necessarie informazioni dettagliate sulla risoluzione dei problemi.
 
 >[!NOTE]
 >
->Questo non si applica alle registrazioni del tipo `access.log` per ogni richiesta.
+>Non si applica alla registrazione di tipo `access.log` per ogni richiesta.
 
 #### Codice non conforme {#non-compliant-code-8}
 
@@ -348,7 +349,7 @@ public void doGet() throws Exception {
 * **Gravità**: minore
 * **Da**: versione 2018.4.0
 
-Come best practice, i messaggi del registro devono fornire informazioni contestuali sulla posizione in cui è stata generata un’eccezione nell’applicazione. Mentre il contesto può essere determinato anche tramite l’utilizzo di tracce dello stack, in generale il messaggio di registro sarà più facile da leggere e comprendere. Di conseguenza, quando si registra un’eccezione, non è consigliabile utilizzare il messaggio di eccezione come messaggio di registro. Il messaggio di eccezione contiene la descrizione del problema che si è verificato, mentre il messaggio di registro deve essere utilizzato per comunicare al lettore del registro cosa stava facendo l’applicazione quando si è verificata l’eccezione. Il messaggio di eccezione è comunque registrato. Specificando il messaggio, i registri saranno più facili da comprendere.
+Come best practice, i messaggi del registro devono fornire informazioni contestuali sulla posizione in cui è stata generata un’eccezione nell’applicazione. Mentre il contesto può essere determinato anche tramite l’utilizzo di tracce dello stack, in generale il messaggio di registro sarà più facile da leggere e comprendere. Di conseguenza, quando si registra un’eccezione, non è consigliabile utilizzare il messaggio di eccezione come messaggio di registro. Il messaggio di eccezione spiega cosa è andato storto, mentre il messaggio di registro dovrebbe informare il lettore su ciò che l’applicazione stava facendo quando si è verificata l’eccezione. Il messaggio di eccezione è comunque registrato. Specificando il messaggio, i registri saranno più facili da comprendere.
 
 #### Codice non conforme {#non-compliant-code-9}
 
@@ -381,7 +382,7 @@ public void doThis() {
 * **Gravità**: minore
 * **Da**: versione 2018.4.0
 
-Come suggerisce il nome, le eccezioni Java™ dovrebbero sempre essere utilizzate in circostanze eccezionali. Di conseguenza, quando viene rilevata un’eccezione, è importante assicurarsi che i messaggi del registro vengano registrati al livello appropriato, WARN o ERROR. In questo modo i messaggi verranno visualizzati correttamente nei registri.
+Come suggerisce il nome, le eccezioni Java™ dovrebbero sempre essere utilizzate in circostanze eccezionali. Di conseguenza, quando viene rilevata un’eccezione, è importante assicurarsi che i messaggi del registro vengano registrati al livello appropriato, WARN o ERROR. Questo processo garantisce che tali messaggi vengano visualizzati correttamente nei registri.
 
 #### Codice non conforme {#non-compliant-code-10}
 
@@ -473,14 +474,14 @@ public void doThis() {
 }
 ```
 
-### Evitare percorsi /apps e /libs hardcoded {#avoid-hardcoded-apps-and-libs-paths}
+### Evitare app e percorsi libs hardcoded {#avoid-hardcoded-apps-and-libs-paths}
 
 * **Chiave**: CQRules:CQBP-71
 * **Tipo**: code smell
 * **Gravità**: minore
 * **Da**: versione 2018.4.0
 
-In generale, i percorsi che iniziano con `/libs` e `/apps` non devono essere hardcoded, in quanto i percorsi a cui fanno riferimento sono comunemente archiviati come percorsi relativi al percorso di ricerca di Sling, impostato su `/libs,/apps` per impostazione predefinita. L’utilizzo del percorso assoluto può introdurre difetti di lieve entità che emergeranno solo in un momento successivo del ciclo di vita del progetto.
+I percorsi che iniziano con `/libs` e `/apps` in genere non devono essere hardcoded. Questi percorsi vengono in genere memorizzati in relazione al percorso di ricerca Sling, che ha come impostazione predefinita `/libs,/apps`. L’utilizzo del percorso assoluto può presentare difetti minimi che appariranno solo successivamente nel ciclo di vita del progetto.
 
 #### Codice non conforme {#non-compliant-code-13}
 
@@ -529,7 +530,7 @@ Tuttavia, in alcuni casi un’API può essere obsoleta nel contesto di Experienc
 * **Gravità**: minore
 * **Da**: versione 2023.11
 
-Il progetto Apache Sling sconsiglia l&#39;utilizzo dell&#39;annotazione `@Inject` nel contesto dei modelli Sling, in quanto può causare prestazioni non corrette se combinata con `DefaultInjectionStrategy.OPTIONAL` (a livello di campo o di classe). Devono invece essere utilizzate iniezioni più specifiche (come le annotazioni `@ValueMapValue` o `@OsgiInjector`).
+Il progetto Apache Sling sconsiglia l&#39;utilizzo dell&#39;annotazione `@Inject` nel contesto dei modelli Sling, in quanto può causare prestazioni non corrette se combinata con `DefaultInjectionStrategy.OPTIONAL` (a livello di campo o di classe). Invece, devono essere utilizzate iniezioni più specifiche (come le annotazioni `@ValueMapValue` o `@OsgiInjector`).
 
 Consulta la [documentazione di Apache Sling](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) per ulteriori informazioni sulle annotazioni consigliate e sul motivo per cui questo consiglio è stato creato.
 
@@ -541,9 +542,9 @@ Consulta la [documentazione di Apache Sling](https://sling.apache.org/documentat
 * **Gravità**: minore
 * **Da**: versione 2023.11
 
-Le applicazioni AEM spesso si rivolgono ad altre applicazioni utilizzando il protocollo HTTP e Apache HttpClient è una libreria spesso utilizzata a questo scopo. Tuttavia, la creazione di un oggetto HttpClient comporta un certo sovraccarico, pertanto tali oggetti devono essere riutilizzati il più possibile.
+Le applicazioni AEM spesso raggiungono altre applicazioni utilizzando il protocollo HTTP e Apache HttpClient è una libreria spesso utilizzata per raggiungere questo scopo. Tuttavia, la creazione di un oggetto HttpClient comporta un certo sovraccarico, pertanto tali oggetti devono essere riutilizzati il più possibile.
 
-Questa regola controlla che tale oggetto HttpClient non sia privato all&#39;interno di un metodo, ma globale a livello di classe, in modo da poterlo riutilizzare. In questo caso, il campo httpClient deve essere impostato nel costruttore della classe o nel metodo `activate()` (se questa classe è un componente/servizio OSGi).
+Questa regola controlla che tale oggetto HttpClient non sia privato all&#39;interno di un metodo, ma globale a livello di classe, in modo da poterlo riutilizzare. In questo caso, il campo HttpClient deve essere impostato nel costruttore della classe o nel metodo `activate()` (se questa classe è un componente/servizio OSGi).
 
 Consultare la [Guida all&#39;ottimizzazione](https://hc.apache.org/httpclient-legacy/performance.html) di HttpClient per informazioni su alcune best practice relative all&#39;utilizzo di HttpClient.
 
@@ -576,20 +577,20 @@ Nella sezione seguente sono descritti i controlli OakPAL eseguiti da Cloud Manag
 
 >[!NOTE]
 >
->OakPAL è un framework che convalida i pacchetti di contenuti con un archivio Oak autonomo. È stato sviluppato da un partner Experience Manager e vincitore del premio Experience Manager Rockstar North America 2019.
+>OakPAL è un framework che convalida i pacchetti di contenuti con un archivio Oak autonomo. Un partner Experience Manager, che ha vinto il premio Experience Manager Rockstar North America 2019, lo ha sviluppato.
 
-### Le API di prodotto con notazione @ProviderType non devono essere implementate o estese dai clienti {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+### I clienti non devono implementare o estendere le API di prodotto annotate con @ProviderType{#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
 * **Chiave**: CQBP-84
 * **Tipo**: bug
 * **Gravità**: critico
 * **Da**: versione 2018.7.0
 
-L’API di Experience Manager contiene interfacce e classi Java™ che devono essere utilizzate solo con il codice personalizzato, ma che non devono essere implementate. Ad esempio, l’interfaccia `com.day.cq.wcm.api.Page` deve essere attuata solo da Experience Manager.
+L&#39;API Experience Manager contiene interfacce e classi Java™ che devono essere utilizzate solo dal codice personalizzato, ma non implementate. Solo Experience Manager, ad esempio, deve implementare l&#39;interfaccia `com.day.cq.wcm.api.Page`.
 
-Quando a queste interfacce vengono aggiunti nuovi metodi, tali metodi aggiuntivi non influiscono sul codice esistente che utilizza queste interfacce. Di conseguenza, l’aggiunta di nuovi metodi a queste interfacce è considerata retrocompatibile. Tuttavia, se il codice personalizzato implementa una di queste interfacce, genera per il cliente un rischio di retrocompatibilità con le versioni precedenti.
+Quando a queste interfacce vengono aggiunti nuovi metodi, questi non influiscono sul codice esistente che utilizza tali interfacce. Di conseguenza, l’aggiunta di nuovi metodi a queste interfacce è considerata retrocompatibile. Tuttavia, se il codice personalizzato implementa una di queste interfacce, genera per il cliente un rischio di retrocompatibilità con le versioni precedenti.
 
-Le interfacce e le classi, come implementate da Experience Manager, includono un’annotazione `org.osgi.annotation.versioning.ProviderType` o a volte un’annotazione `aQute.bnd.annotation.ProviderType` legacy simile. Questa regola identifica i casi in cui tale interfaccia viene implementata o in cui una classe viene estesa dal codice personalizzato.
+Le interfacce e le classi, come implementate da Experience Manager, includono un’annotazione `org.osgi.annotation.versioning.ProviderType` o a volte un’annotazione `aQute.bnd.annotation.ProviderType` legacy simile. Questa regola identifica i casi in cui il codice personalizzato implementa tale interfaccia o estende una classe.
 
 #### Codice non conforme {#non-compliant-code-3}
 
@@ -645,7 +646,7 @@ Per ulteriori informazioni sulla personalizzazione delle definizioni dell’indi
 * **Gravità**: bloccante
 * **Da**: 2021.8.0
 
-Gli indici Oak di tipo `lucene` devono essere sempre asincroni. In caso contrario, potrebbe verificarsi un’instabilità del sistema. Ulteriori informazioni sulla struttura degli indici Lucene sono disponibili nella [documentazione di Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
+Gli indici Oak di tipo `lucene` devono essere sempre asincroni. In caso contrario, il sistema potrebbe diventare instabile. Ulteriori informazioni sulla struttura degli indici Lucene sono disponibili nella [documentazione di Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
 
 #### Codice non conforme {#non-compliant-code-indexasync}
 
@@ -674,14 +675,14 @@ Gli indici Oak di tipo `lucene` devono essere sempre asincroni. In caso contrar
         + config.xml
 ```
 
-### Gli indici Oak DAM Asset Lucene personalizzati sono strutturati correttamente  {#oakpal-damAssetLucene-sanity-check}
+### Gli indici Oak DAM Asset Lucene personalizzati sono strutturati correttamente {#oakpal-damAssetLucene-sanity-check}
 
 * **Chiave**: IndexDamAssetLucene
 * **Tipo**: bug
 * **Gravità**: bloccante
 * **Da**: 2021.6.0
 
-Affinché la ricerca delle risorse in Experience Manager Assets funzioni correttamente, le personalizzazioni dell’indice Oak `damAssetLucene` devono seguire una serie di linee guida specifiche di questo indice. Questa regola controlla che la definizione dell’indice presenti una proprietà con valori multipli denominata `tags` e contenente il valore `visualSimilaritySearch`.
+Affinché la ricerca delle risorse in Experience Manager Assets funzioni correttamente, le personalizzazioni dell&#39;indice Oak `damAssetLucene` devono seguire una serie di linee guida specifiche di questo indice. Questa regola verifica che la definizione dell&#39;indice debba avere una proprietà multivalore denominata `tags`, che contiene il valore `visualSimilaritySearch`.
 
 #### Codice non conforme {#non-compliant-code-damAssetLucene}
 
@@ -710,14 +711,14 @@ Affinché la ricerca delle risorse in Experience Manager Assets funzioni corrett
         + config.xml
 ```
 
-### I pacchetti cliente non devono creare o modificare nodi in /libs {#oakpal-customer-package}
+### I pacchetti cliente non devono creare o modificare nodi in libs {#oakpal-customer-package}
 
 * **Chiave**: BannedPath
 * **Tipo**: bug
 * **Gravità**: critico
 * **Da**: versione 2019.6.0
 
-È una best practice consolidata da tempo che la struttura del contenuto `/libs` nell’archivio dei contenuti Experience Manager debba essere considerata di sola lettura per i clienti. Modificare nodi e proprietà in `/libs` crea rischi significativi per gli aggiornamenti principali e secondari. Le modifiche a `/libs` devono essere fatte da Adobe attraverso canali ufficiali.
+È una best practice consolidata da tempo che la struttura del contenuto `/libs` nell’archivio dei contenuti Experience Manager debba essere considerata di sola lettura per i clienti. Modificare nodi e proprietà in `/libs` crea rischi significativi per gli aggiornamenti principali e secondari. Utilizzare Adobe, tramite i canali ufficiali, per apportare modifiche a `/libs`.
 
 ### I pacchetti non devono contenere duplicati delle configurazioni OSGi {#oakpal-package-osgi}
 
@@ -734,7 +735,7 @@ Un problema comune che si verifica in progetti complessi è che lo stesso compon
 >
 >Ad esempio, se la build produce pacchetti denominati `com.myco:com.myco.ui.apps` e `com.myco:com.myco.all` dove `com.myco:com.myco.all` incorpora `com.myco:com.myco.ui.apps`, tutte le configurazioni all’interno di `com.myco:com.myco.ui.apps` vengono segnalate come duplicati.
 >
->Questo è generalmente un caso in cui non si seguono le [Linee guida per la struttura dei pacchetti di contenuti](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In questo esempio specifico, nel pacchetto `com.myco:com.myco.ui.apps` risulta mancante la proprietà `<cloudManagerTarget>none</cloudManagerTarget>`.
+>In genere, si tratta di un caso in cui non si seguono le [Linee guida per la struttura dei pacchetti di contenuti](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In questo esempio, nel pacchetto `com.myco:com.myco.ui.apps` manca la proprietà `<cloudManagerTarget>none</cloudManagerTarget>`.
 
 #### Codice non conforme {#non-compliant-code-osgi}
 
@@ -764,7 +765,7 @@ Un problema comune che si verifica in progetti complessi è che lo stesso compon
 * **Gravità**: importante
 * **Da**: versione 2019.6.0
 
-Per motivi di sicurezza, i percorsi contenenti `/config/` e `/install/` sono leggibili solo dagli utenti amministratori in Experience Manager e devono essere utilizzati solo per la configurazione OSGi e i bundle OSGi. Posizionare altri tipi di contenuto in percorsi che contengono questi segmenti determina un comportamento dell’applicazione che comporta un cambio accidentale tra utenti amministratori e non amministratori.
+Per motivi di sicurezza, i percorsi contenenti `/config/` e `/install/` sono leggibili solo dagli utenti amministratori in Experience Manager e devono essere utilizzati solo per la configurazione OSGi e i bundle OSGi. Se si inseriscono altri tipi di contenuto in percorsi contenenti questi segmenti, il comportamento dell’applicazione varia involontariamente tra utenti amministratori e non amministratori.
 
 Un problema comune è l’utilizzo di nodi denominati `config` nelle finestre di dialogo dei componenti o quando si specifica la configurazione dell’editor Rich Text per la modifica in linea. Per risolvere questo problema, il nodo che causa la violazione deve essere rinominato con un nome conforme. Per la configurazione del rich text editor, specifica la nuova posizione con la proprietà `configPath` nel nodo `cq:inplaceEditing`.
 
@@ -794,9 +795,9 @@ Un problema comune è l’utilizzo di nodi denominati `config` nelle finestre di
 * **Gravità**: importante
 * **Da**: versione 2019.6.0
 
-Simile alla regola [I pacchetti non devono contenere duplicati delle configurazioni OSGi](#oakpal-package-osgi), si tratta di un problema comune nei progetti complessi in cui lo stesso percorso del nodo viene scritto da più pacchetti di contenuto separati. Benché sia possibile utilizzare le dipendenze tra pacchetti di contenuti per garantire risultati coerenti, è meglio evitare del tutto le sovrapposizioni.
+Simile alla regola [I pacchetti non devono contenere duplicati delle configurazioni OSGi](#oakpal-package-osgi), questa situazione è un problema comune nei progetti complessi in cui lo stesso percorso del nodo viene scritto da più pacchetti di contenuto separati. Benché sia possibile utilizzare le dipendenze tra pacchetti di contenuti per garantire risultati coerenti, è meglio evitare del tutto le sovrapposizioni.
 
-### La modalità di authoring predefinita non deve corrispondere all’interfaccia utente classica {#oakpal-default-authoring}
+### La modalità di authoring predefinita non deve essere interfaccia classica {#oakpal-default-authoring}
 
 * **Chiave**: ClassicUIAuthoringMode
 * **Tipo**: code smell/compatibilità con Cloud Service
@@ -805,14 +806,14 @@ Simile alla regola [I pacchetti non devono contenere duplicati delle configurazi
 
 La configurazione OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` definisce la modalità di authoring predefinita in Experience Manager. Poiché l’interfaccia classica è diventata obsoleta a partire dalla versione 6.4 di Experience Manager, ora viene segnalato un problema se la modalità di authoring predefinita è configurata sull’interfaccia utente classica.
 
-### I componenti con finestre di dialogo devono avere finestre di dialogo dell’interfaccia utente touch {#oakpal-components-dialogs}
+### I componenti con finestre di dialogo devono avere finestre di dialogo per l’interfaccia touch {#oakpal-components-dialogs}
 
 * **Chiave**: ComponentWithOnlyClassicUIDialog
 * **Tipo**: code smell/compatibilità con Cloud Service
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
-I componenti Experience Manager che dispongono di una finestra di dialogo di interfaccia classica devono sempre avere una finestra di dialogo di interfaccia utente Touch. Entrambi offrono un’esperienza di authoring ottimale e devono essere compatibili con il modello di distribuzione del Cloud Service, dove l’interfaccia utente classica non è supportata. Questa regola verifica i seguenti scenari:
+I componenti di Experience Manager che hanno una finestra di dialogo per l’interfaccia classica devono sempre avere una finestra di dialogo corrispondente per l’interfaccia touch. Entrambi offrono un’esperienza di authoring ottimale compatibile con il modello di distribuzione di Cloud Service, in cui l’interfaccia classica non è più supportata. Questa regola verifica i seguenti scenari:
 
 * Un componente con una finestra di dialogo dell’interfaccia classica (ovvero un nodo figlio `dialog`) deve avere una finestra di dialogo corrispondente dell’interfaccia Touch (ovvero un nodo figlio `cq:dialog`).
 * Un componente che ha una finestra di dialogo di progettazione per l’interfaccia utente classica (ad es. un nodo `design_dialog`) deve avere anche una finestra di dialogo di progettazione corrispondente per l’interfaccia utente touch (cioè un nodo `cq:design_dialog` secondario).
@@ -827,11 +828,11 @@ La documentazione sugli strumenti di modernizzazione di Experience Manager forni
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
-Per la compatibilità con il modello di distribuzione di Cloud Service, i singoli pacchetti di contenuti devono contenere contenuti per aree non modificabili dell’archivio (`/apps` e `/libs`) o per l’area modificabile (ovvero tutto ciò che non si trova in `/apps` o `/libs`), ma non per entrambi i tipi. Ad esempio, un pacchetto che include sia `/apps/myco/components/text` che `/etc/clientlibs/myco` non è compatibile con Cloud Service e genera un problema da segnalare.
+Per la compatibilità con il modello di distribuzione di Cloud Service, i singoli pacchetti di contenuti devono contenere contenuti per aree non modificabili dell’archivio (`/apps` e `/libs`) o per l’area modificabile (ovvero tutto ciò che non si trova in `/apps` o `/libs`), ma non per entrambi i tipi. Ad esempio, un pacchetto che include sia `/apps/myco/components/text` che `/etc/clientlibs/myco` non è compatibile con il Cloud Service e causa la segnalazione di un problema.
 
 >[!NOTE]
 >
->La regola [I pacchetti cliente non devono creare o modificare nodi in /libs](#oakpal-customer-package) si applica sempre.
+>La regola [I pacchetti cliente non devono creare o modificare nodi in libs](#oakpal-customer-package) è sempre applicabile.
 
 Per ulteriori informazioni, consulta [Struttura dei progetti Experience Manager](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
@@ -884,7 +885,7 @@ Le librerie client Experience Manager possono contenere risorse statiche come im
 * **Gravità**: importante
 * **Da**: versione 2021.2.0
 
-Con il passaggio ai microservizi delle risorse per l’elaborazione delle risorse su Experience Manager as a Cloud Service, diversi processi di flusso di lavoro utilizzati nelle versioni on-premise e AMS di Experience Manager non sono più supportati o necessari.
+Con il passaggio ai microservizi per le risorse per l’elaborazione delle risorse in Adobe Experience Manager as a Cloud Service, diversi processi di flusso di lavoro utilizzati nelle versioni on-premise e AMS non sono più supportati. Anche molti di questi flussi di lavoro sono diventati superflui.
 
 Lo strumento di migrazione nell’[archivio GitHub di Assets Experience Manager as a Cloud Service](https://github.com/adobe/aem-cloud-migration) può essere usato per aggiornare i modelli del flusso di lavoro durante la migrazione a Experience Manager as a Cloud Service.
 
@@ -908,7 +909,7 @@ La migrazione da modelli statici a modificabili può essere in gran parte automa
 
 I componenti Foundation legacy (ovvero i componenti in `/libs/foundation`) sono ora obsoleti per diverse versioni di Experience Manager, in favore dei componenti core. L’utilizzo dei componenti Foundation come base per i componenti personalizzati (tramite sovrapposizione o ereditarietà) viene scoraggiato; si consiglia di optare per la conversione nei corrispondenti componenti core.
 
-Questa conversione può essere facilitata dai [Strumenti di modernizzazione di Experience Manager](https://opensource.adobe.com/aem-modernize-tools/).
+[Strumenti di modernizzazione di Experience Manager](https://opensource.adobe.com/aem-modernize-tools/) possono facilitare questa conversione.
 
 ### Utilizza solo i nomi e l’ordine delle modalità di esecuzione supportati {#oakpal-supported-runmodes}
 
@@ -917,9 +918,9 @@ Questa conversione può essere facilitata dai [Strumenti di modernizzazione di E
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
-Experience Manager as a Cloud Service applica un criterio di denominazione rigoroso per i nomi delle modalità di esecuzione e un ordine rigoroso per tali modalità di esecuzione. L’elenco delle modalità di esecuzione supportate è disponibile nel documento [Distribuzione in Experience Manager as a Cloud Service](/help/implementing/deploying/overview.md#runmodes) e qualsiasi deviazione da queste sarà identificata come un problema.
+Experience Manager as a Cloud Service applica un criterio di denominazione rigoroso per i nomi delle modalità di esecuzione e un ordine rigoroso per tali modalità di esecuzione. L&#39;elenco delle modalità di esecuzione supportate si basa sul documento [Distribuzione nell&#39;Experience Manager as a Cloud Service](/help/implementing/deploying/overview.md#runmodes) e qualsiasi deviazione da questo elenco è identificata come un problema.
 
-### I nodi di definizione dell’indice di ricerca personalizzato devono essere nodi secondari diretti di /oak:index {#oakpal-custom-search}
+### I nodi di definizione dell’indice di ricerca personalizzato devono essere nodi secondari diretti di `/oak:index` {#oakpal-custom-search}
 
 * **Chiave**: OakIndexLocation
 * **Tipo**: code smell
@@ -935,9 +936,9 @@ Experience Manager as a Cloud Service richiede che le definizioni dell’indice 
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
-Experience Manager as a Cloud Service richiede che nelle definizioni dell’indice di ricerca personalizzato (ovvero i nodi di tipo `oak:QueryIndexDefinition`) la proprietà `compatVersion` sia impostata su `2`. Qualsiasi altro valore non è supportato da Experience Manager as a Cloud Service. Per ulteriori informazioni sugli indici di ricerca, consulta [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md).
+Experience Manager as a Cloud Service richiede che nelle definizioni dell’indice di ricerca personalizzato (ovvero i nodi di tipo `oak:QueryIndexDefinition`) la proprietà `compatVersion` sia impostata su `2`. Adobe Experience Manager as a Cloud Service non supporta altri valori. Per ulteriori informazioni sugli indici di ricerca, vedere [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md).
 
-### I nodi discendenti dei nodi di definizione dell’indice di ricerca personalizzato devono essere di tipo nt:unstructured {#oakpal-descendent-nodes}
+### I nodi discendenti dei nodi di definizione dell’indice di ricerca personalizzato devono essere di tipo `nt:unstructured `{#oakpal-descendent-nodes}
 
 * **Chiave**: IndexDescendantNodeType
 * **Tipo**: code smell
@@ -953,7 +954,7 @@ Experience Manager as a Cloud Service richiede che nelle definizioni dell’indi
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
-Un nodo di definizione dell’indice di ricerca personalizzato definito correttamente deve contenere un nodo secondario denominato `indexRules` che, a sua volta, deve avere almeno un elemento secondario. Ulteriori informazioni sono disponibili nella sezione [Documentazione Oak.](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+Un nodo di definizione dell&#39;indice di ricerca personalizzato definito correttamente deve contenere un nodo figlio denominato `indexRules`, che a sua volta deve avere almeno un nodo figlio. Ulteriori informazioni sono disponibili nella sezione [Documentazione Oak.](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 ### I nodi di definizione dell’indice di ricerca personalizzato devono rispettare le convenzioni di denominazione {#oakpal-custom-search-definitions}
 
@@ -964,7 +965,7 @@ Un nodo di definizione dell’indice di ricerca personalizzato definito corretta
 
 Experience Manager as a Cloud Service richiede che la denominazione delle definizioni dell’indice di ricerca personalizzato (ossia i nodi di tipo `oak:QueryIndexDefinition`) rispetti un modello specifico descritto nel documento [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md).
 
-### I nodi di definizione dell’indice di ricerca personalizzato devono utilizzare il tipo di indice Lucene  {#oakpal-index-type-lucene}
+### I nodi di definizione dell’indice di ricerca personalizzato devono utilizzare il tipo di indice Lucene {#oakpal-index-type-lucene}
 
 * **Chiave**: IndexType
 * **Tipo**: bug
@@ -992,7 +993,7 @@ Experience Manager as a Cloud Service non consente che le definizioni dell’ind
 Experience Manager as a Cloud Service non consente che le definizioni dell’indice di ricerca personalizzato (ovvero i nodi di tipo `oak:QueryIndexDefinition`) contengano una proprietà denominata `reindex`. L’indicizzazione tramite questa proprietà deve essere aggiornata prima della migrazione ad Experience Manager as a
 Cloud Service. Per ulteriori informazioni, consulta il documento [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md#how-to-use).
 
-### I nodi Lucene delle risorse DAM personalizzati non devono specificare &quot;queryPaths&quot; {#oakpal-damAssetLucene-queryPaths}
+### I nodi Lucene delle risorse DAM personalizzati non devono specificare `queryPaths` {#oakpal-damAssetLucene-queryPaths}
 
 * **Chiave**: IndexDamAssetLucene
 * **Tipo**: bug
@@ -1027,7 +1028,7 @@ Cloud Service. Per ulteriori informazioni, consulta il documento [Ricerca e indi
         + config.xml
 ```
 
-### Se la definizione dell&#39;indice di ricerca personalizzato contiene compatVersion, deve essere impostata su 2 {#oakpal-compatVersion}
+### Se la definizione dell&#39;indice di ricerca personalizzato contiene `compatVersion`, deve essere impostata su 2 {#oakpal-compatVersion}
 
 * **Chiave**: IndexCompatVersion
 * **Tipo**: code smell
@@ -1035,16 +1036,16 @@ Cloud Service. Per ulteriori informazioni, consulta il documento [Ricerca e indi
 * **Da**: versione 2022.1.0
 
 
-### Il nodo indice che specifica &#39;includedPaths&#39; deve inoltre specificare &#39;queryPaths&#39; con gli stessi valori {#oakpal-included-paths-without-query-paths}
+### Il nodo indice che specifica `includedPaths` deve specificare anche `queryPaths` con gli stessi valori {#oakpal-included-paths-without-query-paths}
 
 * **Chiave**: IndexIncludedPathsWithoutQueryPaths
 * **Tipo**: code smell
 * **Gravità**: minore
 * **Da**: versione 2023.1.0
 
-Per gli indici personalizzati, è necessario configurare sia `includedPaths` che `queryPaths` con valori identici. Se ne viene specificata una, l&#39;altra deve corrispondere. Tuttavia, esiste un caso speciale per gli indici di `damAssetLucene`, incluse le versioni personalizzate. Per questi, è necessario fornire solo `includedPaths`.
+Per gli indici personalizzati, configurare `includedPaths` e `queryPaths` con valori identici. Se ne viene specificata una, l&#39;altra deve corrispondere. Tuttavia, esiste un caso speciale per gli indici di `damAssetLucene`, incluse le versioni personalizzate. Per questi casi, fornisci solo `includedPaths`.
 
-### Il nodo di indice che specifica nodeScopeIndex sul tipo di nodo generico deve inoltre specificare includedPaths e queryPaths {#oakpal-full-text-on-generic-node-type}
+### Il nodo indice che specifica `nodeScopeIndex` nel tipo di nodo generico deve specificare anche `includedPaths` e `queryPaths` {#oakpal-full-text-on-generic-node-type}
 
 * **Chiave**: IndexFulltextOnGenericType
 * **Tipo**: code smell
@@ -1052,7 +1053,7 @@ Per gli indici personalizzati, è necessario configurare sia `includedPaths` che
 * **Da**: versione 2023.1.0
 
 Quando si imposta la proprietà `nodeScopeIndex` su un tipo di nodo &quot;generico&quot; come `nt:unstructured` o `nt:base`, è necessario specificare anche le proprietà `includedPaths` e `queryPaths`.
-`nt:base` può essere considerato &quot;generico&quot;, poiché tutti i tipi di nodo ereditano da esso. Pertanto, impostando `nodeScopeIndex` su `nt:base`, verranno indicizzati tutti i nodi nell&#39;archivio. Analogamente, `nt:unstructured` è anche considerato &quot;generico&quot; in quanto ci sono molti nodi negli archivi che sono di questo tipo.
+Il tipo di nodo `nt:base` può essere considerato &quot;generico&quot; perché tutti i tipi di nodo ereditano da esso. L&#39;impostazione di un `nodeScopeIndex` su `nt:base` determina quindi l&#39;indicizzazione di tutti i nodi dell&#39;archivio. Analogamente, `nt:unstructured` è anche considerato &quot;generico&quot; in quanto ci sono molti nodi negli archivi che sono di questo tipo.
 
 #### Codice non conforme {#non-compliant-code-full-text-on-generic-node-type}
 
@@ -1097,7 +1098,7 @@ Quando si imposta la proprietà `nodeScopeIndex` su un tipo di nodo &quot;generi
 * **Gravità**: minore
 * **Da**: versione 2023.1.0
 
-Se si ignora il valore predefinito, le letture delle pagine possono risultare molto lente, in particolare quando viene aggiunto più contenuto.
+L’override del valore predefinito può rallentare le letture delle pagine, in particolare quando viene aggiunto più contenuto.
 
 ### Più versioni attive dello stesso indice {#oakpal-multiple-active-versions}
 
@@ -1185,7 +1186,7 @@ Esempio:
         - analyzed: true
 ```
 
-Se la proprietà analizzata non è stata impostata in modo esplicito, il valore predefinito sarà falso.
+Se la proprietà analizzata non è impostata in modo esplicito, il relativo valore predefinito è false.
 
 ### Proprietà Tags {#tags-property}
 
@@ -1207,9 +1208,9 @@ AEM Cloud Service non consente di distribuire nel pacchetto di contenuti dell’
 
 >[!WARNING]
 >
->Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
+>È necessario risolvere questo problema il prima possibile, in quanto potrebbe causare errori di pipeline a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
 
-### La definizione dell’indice testuale personalizzato di tipo damAssetLucene deve avere il prefisso “damAssetLucene” {#oakpal-dam-asset-lucene}
+### La definizione dell’indice full-text personalizzato di tipo damAssetLucene deve avere il prefisso corretto &quot;damAssetLucene&quot; {#oakpal-dam-asset-lucene}
 
 * **Chiave**: CustomFulltextIndexesOfTheDamAssetCheck
 * **Tipo**: miglioramento
@@ -1220,7 +1221,7 @@ AEM Cloud Service non consente che la definizione di indici testuali personalizz
 
 >[!WARNING]
 >
->Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
+>Risolvi questo problema il prima possibile, poiché potrebbe causare errori di pipeline a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### I nodi di definizione dell’indice non devono contenere proprietà con lo stesso nome {#oakpal-index-property-name}
 
@@ -1233,9 +1234,9 @@ AEM Cloud Service non consente che le definizioni dell’indice di ricerca perso
 
 >[!WARNING]
 >
->Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
+>Risolvi questo problema il prima possibile, poiché potrebbe causare errori di pipeline a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
 
-### Non è consentito personalizzare alcune definizioni di indici integrati {#oakpal-customizing-ootb-index}
+### Non è consentito personalizzare alcune definizioni di indici predefiniti {#oakpal-customizing-ootb-index}
 
 * **Chiave**: RestrictIndexCustomization
 * **Tipo**: miglioramento
@@ -1253,9 +1254,9 @@ AEM Cloud Service non consente modifiche non autorizzate ai seguenti indici inte
 
 >[!WARNING]
 >
->Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
+>Risolvi questo problema il prima possibile, poiché potrebbe causare errori di pipeline a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
 
-### La configurazione dei tokenizer negli analizzatori deve essere creata con il nome “tokenizer” {#oakpal-tokenizer}
+### La configurazione dei tokenizer negli analizzatori deve essere creata con il nome &quot;tokenizer&quot; {#oakpal-tokenizer}
 
 * **Chiave**: AnalyzerTokenizerConfigCheck
 * **Tipo**: miglioramento
@@ -1266,7 +1267,7 @@ AEM Cloud Service vieta la creazione di tokenizer con nomi non corretti negli an
 
 >[!WARNING]
 >
->Ti invitiamo a risolvere questo problema il prima possibile, poiché causerà un errore nelle pipeline a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
+>Risolvi questo problema il prima possibile, poiché potrebbe causare errori di pipeline a partire dalla [versione di agosto 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### La configurazione delle definizioni di indicizzazione non deve contenere spazi {#oakpal-indexing-definitions-spaces}
 

@@ -5,9 +5,9 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1321'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 3%
 
 Scopri i gate di qualità disponibili nel [processo di distribuzione di AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md) e i vari tipi di test funzionali incorporati. Scopri come contribuire e ottimizzarne l’utilizzo nel quadro di una strategia di test completa.
 
-## Panoramica
+## Informazioni sui test funzionali
 
 Il diagramma seguente fornisce una panoramica di alto livello delle pipeline disponibili nel contesto di una strategia complessiva di test e del [processo di distribuzione di AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Gate di qualità della distribuzione di AEM Cloud Service](assets/functional-testing/quality-gates-compact.svg)
 
-## Scopo
+## Scopo dei test funzionali
 
 Lo scopo delle pipeline di distribuzione di AEM Cloud Service è facilitare distribuzioni solide e sicure in varie fasi dello sviluppo e del ciclo di vita del rilascio del prodotto AEM. Queste pipeline incorporano più gate di qualità a diversi livelli per garantire l’integrità e la sicurezza delle distribuzioni sia per le modifiche dell’applicazione AEM che per gli aggiornamenti dei prodotti AEM.
 
@@ -38,7 +38,7 @@ I gate di qualità incorporati convalidano principalmente la funzionalità del p
 
 È importante notare che questi gate di qualità non sono destinati a essere un framework di test completo per l’intera strategia di test. Il prodotto AEM è sottoposto a test approfonditi prima di entrare nel processo di implementazione del servizio cloud AEM. Allo stesso modo, l’applicazione deve essere di alta qualità prima di raggiungere la fase di distribuzione. Questo approccio garantisce che i gate di qualità si concentrino sul loro obiettivo principale di salvaguardare il processo di implementazione, anziché sostituire un regime di test completo.
 
-## Gate di qualità
+## Gate di qualità nel test
 
 Il diagramma seguente fornisce una visualizzazione dettagliata dei gate di qualità disponibili e del loro utilizzo nella strategia complessiva di test e nel [processo di distribuzione di AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 
