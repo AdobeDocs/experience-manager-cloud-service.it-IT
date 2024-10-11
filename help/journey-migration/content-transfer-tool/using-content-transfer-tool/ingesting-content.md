@@ -4,10 +4,10 @@ description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i c
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
+source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 12%
+source-wordcount: '3137'
+ht-degree: 11%
 
 ---
 
@@ -228,6 +228,20 @@ Per evitare questa restrizione, eseguire [Best Practices Analyzer](/help/journey
 >[!NOTE]
 >
 >[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) versione 2.1.50+ genererà rapporti sui nodi di grandi dimensioni contenenti caratteri Unicode che superano le dimensioni massime. Assicurati di eseguire la versione più recente. Le versioni BPA precedenti al 2.1.50 non identificano e generano rapporti su questi nodi di grandi dimensioni e devono essere individuate separatamente utilizzando il prerequisito per lo strumento Oak indicato sopra.
+
+### Errore di acquisizione a causa di errori intermittenti imprevisti {#ingestion-failure-due-to-unexpected-intermittent-errors}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
+>title="Errori intermittenti imprevisti"
+>abstract="A volte si possono verificare errori intermittenti imprevisti del servizio a valle e sfortunatamente l’unico ricorso è quello di ritentare semplicemente l’acquisizione."
+
+Talvolta, problemi intermittenti inattesi potrebbero prestarsi a acquisizioni non riuscite, dove purtroppo l’unico ricorso è quello di ritentare l’acquisizione. Esamina il registro di acquisizione per individuare la causa dell’errore e verificare se è in linea con uno degli errori elencati di seguito, dove deve essere effettuato un nuovo tentativo.
+
+## Problemi MongoDB {#mongo-db-issues}
+
+* `Atlas prescale timeout error` - La fase di acquisizione tenterà di prescrivere il database cloud di destinazione a una dimensione appropriata che sia allineata alle dimensioni del contenuto del set di migrazione da acquisire. Di rado, questa operazione non viene completata entro il periodo di tempo previsto.
+* `Exhausted mongo restore retries` - I tentativi di ripristinare un dump locale del contenuto del set di migrazione acquisito nel database cloud sono stati esauriti. Questo indica un problema generale di salute/rete con MongoDB, che spesso guarisce se stesso dopo pochi minuti.
 
 ### Acquisizione annullata {#ingestion-rescinded}
 
