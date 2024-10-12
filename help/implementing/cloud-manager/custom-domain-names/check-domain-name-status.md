@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 24%
+source-wordcount: '847'
+ht-degree: 22%
 
 ---
 
@@ -17,15 +17,11 @@ ht-degree: 24%
 
 Scopri come verificare che Cloud Manager abbia confermato correttamente il nome di dominio personalizzato.
 
-## Requisiti {#requirements}
+## Controllare lo stato di un nome di dominio personalizzato {#how-to}
 
-Rispetta questi requisiti prima di controllare lo stato del nome di dominio in Cloud Manager.
+Prima di controllare lo stato del nome di dominio in Cloud Manager, accertati di aver già aggiunto un certificato SSL gestito dal cliente (OV/EV) per il dominio personalizzato, come descritto in [Aggiungere un certificato SSL gestito dal cliente](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert).
 
-* Aggiungere innanzitutto un certificato EV/OV per il dominio personalizzato come descritto nel documento [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
-
-## Verifica lo stato del nome di dominio personalizzato {#how-to}
-
-In Cloud Manager è possibile determinare lo stato del nome di dominio personalizzato.
+**Per controllare lo stato di un nome di dominio personalizzato:**
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
@@ -33,7 +29,7 @@ In Cloud Manager è possibile determinare lo stato del nome di dominio personali
 
 1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
 
-1. Fai clic su **Impostazioni dominio** nel pannello di navigazione a sinistra.
+1. Fai clic su **Impostazioni dominio** nel menu a sinistra.
 
 1. Fai clic sull’icona **Stato** del nome di dominio.
 
@@ -41,11 +37,14 @@ Vengono visualizzati i dettagli dello stato. Il dominio personalizzato è pronto
 
 >[!NOTE]
 >
->Cloud Manager attiva automaticamente la verifica quando selezioni **Crea** nel passaggio di verifica della procedura guidata **Aggiungi dominio personalizzato** quando [aggiungi un nuovo nome di dominio personalizzato a Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Per le verifiche successive, devi riselezionare attivamente l’icona di verifica accanto allo stato.
+>Se si utilizza un certificato SSL gestito da *Adobe* con il dominio, Cloud Manager attiva automaticamente la verifica quando si fa clic su **Verifica** nella finestra di dialogo Verifica dominio quando si [aggiunge un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>
+>Se prevedi di utilizzare un **certificato SSL gestito dal cliente (OV/EV)**, il dominio viene verificato *dopo* che [aggiungi il certificato SSL OV/EV](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+
 
 ## Stati di verifica {#statuses}
 
-Cloud Manager verifica la proprietà del dominio tramite il certificato gestito dal cliente. Al termine, viene visualizzato uno dei seguenti messaggi di stato:
+Cloud Manager verifica la proprietà del dominio tramite il certificato SSL gestito dal cliente (OV/EV). Al termine, viene visualizzato uno dei seguenti messaggi di stato:
 
 | Stato | Descrizione |
 | --- | --- |
