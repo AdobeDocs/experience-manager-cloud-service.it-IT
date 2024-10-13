@@ -1,66 +1,42 @@
 ---
-title: Limitare la consegna di risorse in Experience Manager
-description: Scopri come limitare la consegna delle risorse in [!DNL Experience Manager].
+title: Limitare la distribuzione delle risorse con Dynamic Medie con funzionalità OpenAPI
+description: Scopri come limitare la consegna delle risorse con le funzionalità OpenAPI.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 1%
+source-wordcount: '1181'
+ht-degree: 0%
 
 ---
 
-# Limita l&#39;accesso alle risorse in [!DNL Experience Manager] {#restrict-access-to-assets}
+# Limitare la distribuzione delle risorse con Dynamic Medie con funzionalità OpenAPI {#restrict-access-to-assets}
 
 | [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-La governance centrale delle risorse in Experience Manager consente all’amministratore DAM o ai Brand Manager di gestire l’accesso alle risorse. Possono limitare l’accesso configurando i ruoli per le risorse approvate sul lato authoring, in particolare sull’istanza di authoring di AEM as a Cloud Service.
+La governance centrale delle risorse in Experience Manager consente all’amministratore DAM o ai Brand Manager di gestire l’accesso alle risorse disponibili tramite Dynamic Medie con funzionalità OpenAPI. Adobe Possono limitare la consegna di risorse approvate (fino a una singola risorsa) a [utenti o gruppi Identity Management System (IMS) selezionati](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) configurando determinati metadati sulle risorse nel servizio AEM as a Cloud Service Author.
 
-Gli utenti che [cercano](search-assets-api.md) o utilizzano [gli URL di consegna](deliver-assets-apis.md) possono accedere alle risorse con restrizioni dopo aver completato correttamente il processo di autorizzazione.
+Una volta che una risorsa è limitata tramite Dynamic Medie con OpenAPI, solo gli utenti (onboarded su Adobe IMS) autorizzati ad accedere a tale risorsa possono accedervi. Per accedere alla risorsa, l&#39;utente deve sfruttare le funzionalità [Search](search-assets-api.md) e [Delivery](deliver-assets-apis.md) di Dynamic Medie con OpenAPI.
 
 ![Accesso limitato alle risorse](/help/assets/assets/restricted-access.png)
-
-## Consegna limitata tramite un token IMS {#restrict-delivery-ims-token}
 
 In Experience Manager Assets, la consegna limitata tramite IMS prevede due fasi chiave:
 
 * Authoring
 * Distribuzione
 
-### Authoring {#authoring}
+## Authoring {#authoring}
 
-È possibile limitare la consegna di risorse all&#39;interno di [!DNL Experience Manager] in base ai ruoli. Per configurare i ruoli, esegui i seguenti passaggi:
+### Consegna limitata tramite un token Bearer IMS {#restrict-delivery-ims-token}
 
-1. Vai a [!DNL Experience Manager] come amministratore DAM.
-1. Seleziona la risorsa per la quale devi configurare il ruolo.
-1. Passa a **[!UICONTROL Proprietà]** > **[!UICONTROL Avanzate]** e assicurati che il campo **[!UICONTROL Ruoli]** esista nella scheda [!UICONTROL Metadati avanzati].
+È possibile limitare la consegna di risorse in [!DNL Experience Manager] in base alle identità dell&#39;utente e del gruppo IMS .
 
-   ![Metadati ruoli](/help/assets/assets/roles_metadata.jpg)
-Se il campo non è disponibile, procedi come segue per aggiungerlo:
+>[!NOTE]
+>
+> Questa funzionalità non è attualmente self-service. Per limitare la consegna delle risorse per [Utenti](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) e [Gruppi](https://helpx.adobe.com/in/enterprise/using/user-groups.html) IMS, rivolgiti al team di supporto Enterprise per informazioni su come recuperare le informazioni necessarie per limitare l&#39;accesso dal portale [Adobe Admin Console](https://adminconsole.adobe.com/) e su come configurare l&#39;accesso nel servizio di authoring di AEM as a Cloud Service.
 
-   1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Schemi metadati]**.
-   1. Selezionare lo schema metadati e fare clic su **[!UICONTROL Modifica _(e)_]**.
-   1. Aggiungi un campo **[!UICONTROL Testo con più valori]** dalla sezione **[!UICONTROL Genera modulo]** a destra alla sezione Metadati nel modulo.
-   1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel pannello **[!UICONTROL Impostazioni]**:
-      1. Cambia l&#39;etichetta **[!UICONTROL Campo]** in _Ruoli_.
-      1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam:roles_.
-
-1. Ottieni i gruppi IMS da aggiungere nei metadati dei ruoli della risorsa. Per recuperare i gruppi IMS, effettua le seguenti operazioni:
-   1. Accedi a `https://adminconsole.adobe.com/.`
-   1. Vai alla tua rispettiva organizzazione e passa a **[!UICONTROL Gruppi di utenti]**.
-   1. Seleziona il **[!UICONTROL gruppo utenti]** da aggiungere ed estrai **[!UICONTROL orgID]** e **[!UICONTROL userGroupID]** dall&#39;URL oppure utilizza l&#39;ID organizzazione, ad esempio `{orgID}@AdobeOrg:{usergroupID}`.
-
-1. Aggiungi l&#39;ID gruppo al campo **[!UICONTROL Ruoli]** delle proprietà della risorsa. <br>
-Gli ID gruppo definiti nel campo **[!UICONTROL Ruoli]** sono gli unici utenti che possono accedere alla risorsa. Oltre all&#39;ID gruppo IMS, puoi anche aggiungere l&#39;ID utente IMS e l&#39;ID profilo IMS nel campo **[!UICONTROL Ruoli]**. Esempio: `{orgId}@AdobeOrg:{profileId}`.
-
-   >[!NOTE]
-   >
-   >Per la nuova visualizzazione Assets, puoi concedere l’accesso solo fino al livello della cartella e esclusivamente ai gruppi anziché ai singoli utenti. Ulteriori informazioni sulla [gestione delle autorizzazioni in Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427429)
-
-#### Limita la consegna delle risorse utilizzando data e ora di attivazione e disattivazione {#restrict-delivery-assets-date-time}
+### Limita la consegna delle risorse utilizzando data e ora di attivazione e disattivazione {#restrict-delivery-assets-date-time}
 
 Gli autori DAM possono inoltre limitare la consegna delle risorse definendo un orario di attivazione o disattivazione disponibile nelle proprietà delle risorse.
 
@@ -95,28 +71,36 @@ Allo stesso modo, per la vista Assets, se la risorsa non è basata sullo schema 
 
 
 
-### Consegna di risorse limitate {#delivery-restricted-assets}
+## Consegna di risorse limitate {#delivery-restricted-assets}
 
-La distribuzione di risorse con restrizioni si basa sull’autorizzazione ad accedere alle risorse. L’autorizzazione si basa su un token IMS se la richiesta viene inviata da un’istanza di authoring AEM o da Asset Selector oppure su un cookie speciale se hai dei provider di identità personalizzati impostati nell’istanza di Publish o Anteprima.
+La distribuzione di risorse con restrizioni si basa sull’autorizzazione ad accedere alle risorse. L&#39;autorizzazione è tramite [Token Bearer IMS](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/) (applicazione per richieste avviate da [Selettore risorse AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)) o un cookie protetto (se sono stati impostati provider di identità personalizzati nei servizi Publish/Anteprima AEM e sono state impostate la creazione e l&#39;inclusione dei cookie nelle pagine).
 
-#### Consegna per richieste di authoring AEM o Selettore risorse {#delivery-aem-author-asset-selector}
+### Consegna per richieste di authoring AEM o Selettore risorse {#delivery-aem-author-asset-selector}
 
-Per abilitare la consegna di risorse con restrizioni nel caso in cui la richiesta venga inviata dall’istanza di authoring AEM o dal selettore di risorse, è essenziale un token IMS valido. Segui questi passaggi:
+Per abilitare la consegna di risorse limitate nel caso in cui la richiesta venga inviata dal servizio di authoring dell’AEM o dal selettore delle risorse dell’AEM, è essenziale un token IMS Bearer valido.\
+Nei servizi di authoring di AEM Cloud Service e in Selettore risorse, il token Bearer IMS viene generato e utilizzato automaticamente per le richieste dopo un accesso riuscito.
 
-1. [Generare un token di accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token).
-   * Accedi alla Console per sviluppatori del tuo ambiente AEM as a Cloud Service.
+>[!NOTE]
+>
+>Per ulteriori informazioni su come abilitare l’autenticazione IMS sulle integrazioni basate su Selettore risorse AEM, contatta il supporto Enterprise
 
-   * Passa a **[!UICONTROL Ambiente]** > **[!UICONTROL Integrazioni]** > **[!UICONTROL Token locale]** > **[!UICONTROL Ottieni token di sviluppo locale]** > **[!UICONTROL Copia valore accessToken]**. Ulteriori informazioni su [come accedere al token e agli aspetti correlati](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)
+1. Per esperienze non basate su Asset Selector, AEM as a Cloud Service e Dynamic Medie con funzionalità OpenAPI supportano attualmente integrazioni API lato server e possono generare token IMS Bearer.
+   * Segui le istruzioni [qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) per eseguire integrazioni API da servizio a server in grado di recuperare i token Bearer IMS tramite [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
+   * Per un periodo limitato, è possibile generare token Bearer IMS di breve durata per l&#39;utente autenticato in [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) per l&#39;accesso sviluppatore locale (non destinato ai casi di utilizzo in produzione) seguendo le istruzioni [qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
 
-1. Integra il token di accesso ottenuto nell&#39;intestazione **[!UICONTROL Authorization]**, assicurandoti che il relativo valore abbia il prefisso **[!UICONTROL Bearer]**.
+1. Durante l&#39;esecuzione di [richieste API Search](search-assets-api.md) e [Delivery](deliver-assets-apis.md), aggiungere il token IMS Bearer ottenuto all&#39;intestazione **[!UICONTROL Authorization]** della richiesta HTTP (assicurarsi che il relativo valore sia preceduto da **[!UICONTROL Bearer]**).
 
-1. Convalida la funzionalità del token di accesso avviando una richiesta. Dovrebbe generare un errore 404 nei casi in cui non sia presente alcun token di accesso IMS o il token di accesso fornito non presenti gli stessi utenti/gruppi/ruoli aggiunti nei metadati della risorsa.
+1. Per convalidare la restrizione di accesso, avvia una richiesta API di consegna con e senza l&#39;intestazione **[!UICONTROL Authorization]**.
+   * La risposta restituirà un codice di stato di errore `404` nei casi in cui non sia presente alcun token Bearer IMS o il token Bearer IMS fornito non appartiene all’utente a cui è stato concesso l’accesso alla risorsa (direttamente o tramite l’iscrizione al gruppo).
+   * La risposta restituirà un codice di stato di successo `200` con il contenuto binario della risorsa, se il token IMS Bearer è uno degli utenti o dei gruppi a cui è stato concesso l’accesso alla risorsa.
 
-#### Consegna per i provider di identità personalizzati nell’istanza Publish {#delivery-custom-identity-provider}
+### Distribuzione per provider di identità personalizzati sul servizio Publish {#delivery-custom-identity-provider}
 
-Nel caso di un provider di identità personalizzato configurato nell&#39;istanza di Publish o Anteprima, è possibile indicare il gruppo che deve avere accesso alle risorse protette nell&#39;attributo `groupMembership` durante il processo di configurazione. Quando si accede al provider di identità personalizzato tramite l&#39;[integrazione SAML](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), l&#39;attributo `groupMembership` viene letto e utilizzato per creare un cookie, che viene inviato in tutte le richieste di autenticazione, simile a un token IMS in caso di richiesta dell&#39;autore AEM o del selettore di risorse.
+AEM Sites, AEM Assets e Dynamic Medie con licenze OpenAPI possono essere utilizzati insieme e la consegna limitata delle risorse può essere configurata sui siti web forniti tramite AEM Publish o i servizi di anteprima.
+Se i servizi Publish e Anteprima di AEM Sites sono configurati per l&#39;utente con un [provider di identità personalizzato (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), il gruppo che deve avere accesso alle risorse protette in può essere incluso nell&#39;attributo `groupMembership` durante il processo di installazione.\
+Quando un utente del sito Web accede al provider di identità personalizzato e accede al sito Web ospitato sul servizio Publish/Anteprima, l&#39;attributo `groupMembership` viene letto e un cookie protetto viene creato e consegnato sul sito Web dopo l&#39;autenticazione. Questo cookie sicuro è incluso in tutte le richieste successive per consegnare il contenuto del sito web all’agente utente.
 
-Quando una risorsa protetta è disponibile in una pagina e viene effettuata una richiesta all’URL di consegna per eseguire il rendering della risorsa, AEM controlla i ruoli presenti nel cookie o nel token IMS e li confronta con `dam:roles property` applicati durante la creazione della risorsa. Se viene trovata una corrispondenza, la risorsa viene visualizzata.
+Quando una risorsa protetta viene richiesta su una pagina, i livelli Publish e Anteprima dell’AEM estraggono il materiale di autorizzazione dal cookie protetto e convalidano l’accesso. Se viene trovata una corrispondenza, la risorsa viene visualizzata.
 
 >[!NOTE]
 >
