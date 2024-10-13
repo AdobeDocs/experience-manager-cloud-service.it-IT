@@ -4,7 +4,7 @@ description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i c
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
+source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
 workflow-type: tm+mt
 source-wordcount: '3137'
 ht-degree: 11%
@@ -19,7 +19,7 @@ ht-degree: 11%
 >id="aemcloud_ctt_ingestion"
 >title="Acquisizione dei contenuti"
 >abstract="Per acquisizione si intende l’acquisizione dei contenuti dal set di migrazione nell’istanza Cloud Service di destinazione. Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=it#top-up-extraction-process" text="Estrazione integrativa"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Estrazione integrativa"
 
 Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effettua le seguenti operazioni:
 
@@ -94,7 +94,7 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
 >id="aemcloud_ctt_ingestion_topup"
 >title="Acquisizione integrativa"
 >abstract="Utilizza la funzione integrativa per spostare il contenuto modificato dall’ultima attività di trasferimento dei contenuti. Al termine dell’acquisizione, verifica la presenza di eventuali errori o avvisi nei registri. Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando l’Assistenza clienti di Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=it" text="Visualizzazione dei registri"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Visualizzazione dei registri"
 
 Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che consente l&#39;estrazione di contenuti differenziali eseguendo una *integrazione* del set di migrazione. Questo consente di modificare il set di migrazione in modo da includere solo il contenuto modificato rispetto all’estrazione precedente, senza dover estrarre nuovamente tutto il contenuto.
 
@@ -113,7 +113,7 @@ Inizia creando un processo di acquisizione e assicurati che **Cancella** sia dis
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Risoluzione dei problemi di acquisizione dei contenuti"
 >abstract="Consulta i registri di acquisizione e la documentazione per trovare soluzioni ai motivi comuni dell’esito negativo di un’acquisizione e trova il modo di risolvere il problema. Una volta risolto il problema, l’acquisizione può essere eseguita nuovamente."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=it" text="Convalida dei trasferimenti di contenuto"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Convalida dei trasferimenti di contenuto"
 
 ### CAM: impossibile recuperare il token di migrazione {#cam-unable-to-retrieve-the-migration-token}
 
@@ -146,13 +146,13 @@ Questo messaggio indica che Cloud Acceleration Manager non è riuscito a raggiun
 > Viene visualizzato il campo &quot;Token di migrazione&quot; perché in alcuni casi è ciò che non è consentito recuperare il token. Consentendo la trasmissione manuale, può consentire all’utente di avviare l’acquisizione rapidamente, senza alcun aiuto aggiuntivo. Se il token è fornito e il messaggio viene ancora visualizzato, il problema non era il recupero del token.
 
 * AEM as a Cloud Service mantiene lo stato dell’ambiente e, occasionalmente, deve riavviare il servizio di migrazione per vari motivi normali. Se il servizio viene riavviato, non potrà essere raggiunto, ma sarà disponibile alla fine.
-* È possibile che nell’istanza sia in esecuzione un altro processo. Ad esempio, se [Aggiornamenti versione AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) applica un aggiornamento, è possibile che il sistema sia occupato e che il servizio di migrazione non sia regolarmente disponibile. Al termine di questo processo, è possibile tentare di nuovo l’inizio dell’acquisizione.
+* È possibile che nell’istanza sia in esecuzione un altro processo. Ad esempio, se [Aggiornamenti versione AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) applica un aggiornamento, è possibile che il sistema sia occupato e che il servizio di migrazione non sia regolarmente disponibile. Al termine di questo processo, è possibile tentare di nuovo l’inizio dell’acquisizione.
 * Se è stato applicato un Inserisco nell&#39;elenco Consentiti di [IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) tramite Cloud Manager, Cloud Acceleration Manager non potrà raggiungere il servizio di migrazione. Non è possibile aggiungere un indirizzo IP per le acquisizioni perché il relativo indirizzo è dinamico. Attualmente, l’unica soluzione consiste nel disabilitare il inserisco nell&#39;elenco Consentiti di indicizzazione e acquisizione dell’IP durante il processo di acquisizione.
 * Ci possono essere altri motivi che richiedono un&#39;indagine. Se l’acquisizione o l’indicizzazione continua a non riuscire, contatta l’Assistenza clienti di Adobe.
 
 ### Aggiornamenti e acquisizioni delle versioni di AEM {#aem-version-updates-and-ingestions}
 
-[Gli aggiornamenti della versione dell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) vengono applicati automaticamente agli ambienti per mantenerli aggiornati con la versione di AEM as a Cloud Service più recente. Se l’aggiornamento viene attivato quando viene eseguita un’acquisizione, possono verificarsi risultati imprevedibili, incluso il danneggiamento dell’ambiente.
+[Gli aggiornamenti della versione dell&#39;AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) vengono applicati automaticamente agli ambienti per mantenerli aggiornati con la versione di AEM as a Cloud Service più recente. Se l’aggiornamento viene attivato quando viene eseguita un’acquisizione, possono verificarsi risultati imprevedibili, incluso il danneggiamento dell’ambiente.
 
 Se nel programma di destinazione è stato effettuato l’onboarding di &quot;Aggiornamenti della versione dell’AEM&quot;, il processo di acquisizione tenta di disabilitare la coda prima dell’avvio. Al termine dell’acquisizione, lo stato del programma di aggiornamento della versione viene ripristinato come era prima dell’inizio delle acquisizioni.
 
@@ -174,7 +174,7 @@ Se &quot;Aggiornamenti della versione dell’AEM&quot; è attivo (ovvero, gli ag
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="Violazione vincolo di unicità"
 >abstract="Una causa comune dell’errore di acquisizione senza cancellazione è un conflitto negli ID dei nodi. Può esistere soltanto uno dei nodi in conflitto."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=it#top-up-ingestion-process" text="Acquisizione integrativa"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Acquisizione integrativa"
 
 Una causa comune di un errore di [acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) è un conflitto negli ID dei nodi. Per identificare questo errore, scarica il registro di acquisizione utilizzando l’interfaccia utente di Cloud Acceleration Manager e cerca una voce come quella seguente:
 
@@ -194,7 +194,7 @@ Questo conflitto deve essere risolto manualmente. Chi ha familiarità con il con
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="Impossibile eliminare il nodo di riferimento"
 >abstract="Una causa comune dell’errore di acquisizione senza cancellazione è un conflitto di versione per un particolare nodo nell’istanza di destinazione. È necessario correggere le versioni del nodo."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=it#top-up-ingestion-process" text="Acquisizione integrativa"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Acquisizione integrativa"
 
 Un&#39;altra causa comune di un errore di [acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) è un conflitto di versione per un particolare nodo nell&#39;istanza di destinazione. Per identificare questo errore, scarica il registro di acquisizione utilizzando l’interfaccia utente di Cloud Acceleration Manager e cerca una voce come quella seguente:
 
@@ -212,7 +212,7 @@ Le best practice indicano che, se è necessario eseguire un&#39;acquisizione **N
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Proprietà del nodo di grandi dimensioni"
 >abstract="Una causa comune di errore di acquisizione è il superamento della dimensione massima dei valori delle proprietà del nodo. Per risolvere il problema, segui la documentazione, compresa quella relativa al rapporto BPA."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=it" text="Prerequisiti per la migrazione"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Prerequisiti per la migrazione"
 
 I valori delle proprietà del nodo memorizzati in MongoDB non possono superare i 16 MB. Se un valore di nodo supera le dimensioni supportate, l’acquisizione non riesce e il registro conterrà:
 
