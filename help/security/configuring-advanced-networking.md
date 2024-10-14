@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5676'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -299,7 +299,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 <tbody>
   <tr>
     <td><b>Protocollo Http o https</b></td>
-    <td>Traffico verso Azure (*.windows.net) o i servizi Adobe</td>
+    <td>Traffico verso Azure (*.windows.net) o servizi Adobe</td>
     <td>Qualsiasi</td>
     <td>Tramite gli IP del cluster condiviso (non l’IP dedicato)</td>
     <td>adobe.io<br>api.windows.net</td>
