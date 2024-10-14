@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 4%
@@ -90,13 +90,18 @@ Ora puoi aggiungere una [configurazione CDN](/help/implementing/cloud-manager/cd
 
 ## Aggiungere un certificato SSL gestito dal cliente (OV/ED) {#add-customer-managed-ssl-cert}
 
+<!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
+
 Hai bisogno di assistenza per scegliere se utilizzare un certificato SSL gestito dall’Adobe (consigliato) o un certificato SSL gestito dal cliente con il tuo dominio? Vedi [Scelta del certificato SSL da aggiungere](#which-ssl-to-add)
 
 **Per aggiungere un certificato SSL gestito dal cliente (OV/EV):**
 
 1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona il programma appropriato.
+
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
+
 1. Nell&#39;angolo superiore sinistro della pagina fare clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare il menu laterale.
+
 1. Sotto l&#39;intestazione **Services**, fare clic su ![Blocca icona chiuso](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificati SSL**.
 
    ![Aggiunta di un certificato SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
@@ -109,7 +114,8 @@ Hai bisogno di assistenza per scegliere se utilizzare un certificato SSL gestito
 Questo campo è solo a scopo informativo e può essere qualsiasi nome che ti aiuti a fare riferimento facilmente al certificato SSL.
 
 1. Nei campi **Certificato**, **Chiave privata** e **Catena di certificati**, copia i valori richiesti dal certificato SSL OV o EV e incollali nei rispettivi campi nella finestra di dialogo.
-Vengono visualizzati tutti gli eventuali errori rilevati nei valori. Prima di poter salvare il certificato, è necessario risolvere tutti gli errori. Per ulteriori informazioni sulla risoluzione dei problemi relativi agli errori comuni, consulta [Errori relativi ai certificati](#certificate-errors).
+
+   Vengono visualizzati tutti gli eventuali errori rilevati nei valori. Prima di poter salvare il certificato, è necessario risolvere tutti gli errori. Per ulteriori informazioni sulla risoluzione dei problemi relativi agli errori comuni, consulta [Errori relativi ai certificati](#certificate-errors).
 
    ![Finestra di dialogo Aggiungi certificato SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)|
 
