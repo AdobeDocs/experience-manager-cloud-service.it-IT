@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '773'
+ht-degree: 92%
 
 ---
 
@@ -24,49 +24,49 @@ Con la versione di attivazione funzioni 2024.10.0 verrà fornito il set di funzi
 
 ### Miglioramenti {#enhancements-18175}
 
-* ASSETS-38322: Abilitazione dell’evento di richiesta http per l’AEM.
-* ASSETS-41448: aggiorna il bundle auth.ims per supportare FI nelle mappature di gruppo.
-* ASSETS-41684: aggiungi configurazioni OSGI OOB per definire la mappatura FI-gruppi per Assets, Foundation, Sites e Forms.
+* ASSETS-38322: abilitazione dell’evento di richiesta HTTP per AEM.
+* ASSETS-41448: aggiornamento del bundle auth.ims per supportare FI per mappature gruppi.
+* ASSETS-41684: aggiunta di configurazioni OSGI OOB per definire FI per mappatura gruppi per Assets, Foundation, Sites e Forms.
 * ASSETS-43015: aggiornamento al bundle auth.ims più recente.
-* CQ-4356633: aggiungi un carattere aggiuntivo nella descrizione comando &quot;Solo contenuto&quot;.
-* GRANITE-50948: integrazione del servizio repository nel supporto AEM per il servizio repository.
-* GRANITE-52454: aggiunta dell’helper di supporto 0.1.2.
-* GRANITE-52454: Aggiornamento dell’helper di supporto GRANITE-52454 aggiornamento dell’helper di supporto per utilizzare la versione più recente di AEMaaCS.
-* GRANITE-53287: aggiornamento della versione del test per l’integrazione dei privilegi di sicurezza.
-* GRANITE-53485: supporta l’autenticazione dell’entità servizio per la replica dell’archiviazione BLOB di Azure.
+* CQ-4356633: aggiunta di un carattere extra nella descrizione “Solo contenuto”.
+* GRANITE-50948: integrazione del servizio di archivio in AEM. Supporto per servizio di archivio.
+* GRANITE-52454: aggiunta dell’helper di supporto versione 0.1.2.
+* GRANITE-52454: aggiornamento dell’helper di supporto GRANITE-52454. Aggiornamento dell’helper di supporto per utilizzare la versione più recente di AEMaaCS.
+* GRANITE-53287: aggiornamento della versione del test per l’integrazione di privilegi di sicurezza.
+* GRANITE-53485: supporto per l’autenticazione dell’entità principale del servizio per la replica dell’archiviazione BLOB di Azure.
 * GRANITE-53514: Treeactivation aggiornata alla versione 1.0.26.
-* GRANITE-53870: crea un meccanismo interno per saltare il controllo della versione JVM massima per l’avvio rapido.
+* GRANITE-53870: creazione di un meccanismo interno per saltare il controllo della versione max di JVM per l’avvio rapido.
 * GRANITE-53914: correggi gli errori dei test di Platform con Java 17 versione del modulo aggiornata.
-* GRANITE-53966: utilizza un pool di thread separato per la distribuzione dei contenuti.
-* GRANITE-54006: aggiorna Jackson alla versione 2.17.2.
-* GRANITE-54038: aggiungere il client Creative Cloud Enterprise IMS al elenco Consentiti di del client AEM IMS.
+* GRANITE-53966: utilizzo di un pool di thread a parte per la distribuzione dei contenuti.
+* GRANITE-54006: aggiornamento di Jackson alla versione 2.17.2.
+* GRANITE-54038: aggiunta del client IMS Creative Cloud Enterprise all’elenco Consentiti del client IMS di AEM.
 * GRANITE-54054: variabile di ambiente per com.adobe.granite.repository.impl.SystemUserValidation warnOnly.
 * GRANITE-54266: nell’SDK di produzione manca il servizio Search Suggestor.
-* GRANITE-54274: accetta client IMS di Firefly.
+* GRANITE-54274: accettazione del client IMS di Firefly.
 * GRANITE-54300: aggiornamento di Oak all’ultima versione pubblica (1.70.0).
-* GUIDES-19069: aggiungi guidesPeerLinkIndex per il componente aggiuntivo guide AEM.
+* GUIDES-19069: aggiunta di guidesPeerLinkIndex per il componente aggiuntivo AEM Guides.
 * SITES-23584: è stato corretto un test non riuscito per il componente Foundation in Java 17.
 * SKYOPS-69768: i modelli Sling non deserializzano ResourceResolver.
-* SKYOPS-76378: migliora la sicurezza dei thread per la registrazione/annullamento della registrazione ResourceBundle in i18n.
+* SKYOPS-76378: miglioramento della sicurezza dei thread per la registrazione e l’annullamento della registrazione di ResourceBundle in i18n.
 * SKYOPS-79285: Aggiorna Sling XSS alla versione 2.4.2.
-* SKYOPS-82383: espone il risultato &quot;helm-values&quot; convert-merge-analyze nel descrittore di esecuzione del comando.
-* SKYOPS-84810: salta l’esecuzione &quot;40-initialize-publish.sh&quot; all’avvio per RDE.
+* SKYOPS-82383: esposizione del risultato di conversione, unione e analisi “helm-values” nel descrittore di esecuzione del comando.
+* SKYOPS-84810: omissione dell’esecuzione “40-initialize-publish.sh” all’avvio per RDE.
 * SKYOPS-84951: correggi il codice di generazione del checksum del contenuto variabile.
-* SKYOPS-85335: aggiorna org.apache.sling.jcr.repoinit al 1.1.52.
-* SKYOPS-85336: Aggiorna Sling Commons Threads alla versione 3.3.0.
-* SKYOPS-86329: aggiornamento delle versioni dei moduli di test della piattaforma per il supporto dell’sdk Java 21.
+* SKYOPS-85335: aggiornamento di org.apache.sling.jcr.repoinit alla versione 1.1.52.
+* SKYOPS-85366: aggiornamento di Sling Commons Threads alla versione 3.3.0.
+* SKYOPS-86329: aggiornamento delle versioni dei moduli di test della piattaforma per il supporto dell’SDK Java 21.
 
 ### Problemi risolti {#fixed-issues-18175}
 
-* CNTBF-298: rimuovere jcr:uuid dai pacchetti esportati CC.
-* SKYOPS-83910: sono stati risolti i problemi di concorrenza rilevati in SKYOPS-82371.
-* GRANITE-52876: Aggiornamento a com.adobe.granite.ui.content 0.8.1448.
-* GUIDES-14445: la generazione di PDF nativi non riesce e viene generato un errore relativo all’ottenimento delle dipendenze per Node.js.
-* GUIDES-16961: il titolo con `<conref>` non viene risolto nelle dashboard Baseline e Traduzione dell&#39;editor Web.
-* GUIDES-17283: quando si seleziona l&#39;opzione **Usa metadati aggiunti nell&#39;argomento meta**, le proprietà dei metadati non vengono propagate nelle proprietà del documento dell&#39;output di Native PDF.
-* GUIDES-17793: il PDF di riferimento non viene attivato dal **dashboard Publish in blocco** durante l&#39;attivazione in blocco del contenuto pubblicato.
+* CNTBF-298: rimozione jcr:uuid dai pacchetti esportati CC.
+* SKYOPS-83910: correzione dei problemi di concorrenza rilevati in SKYOPS-82371.
+* GRANITE-52876: aggiornamento a com.adobe.granite.ui.content 0.8.1448.
+* GUIDES-14445: la generazione di PDF nativi non riesce e viene restituito un errore relativo all’ottenimento delle dipendenze per Node.js.
+* GUIDES-16961: il titolo con `<conref>` non viene risolto nelle dashboard Linea di base e Traduzione dell’editor web.
+* GUIDES-17283: quando si seleziona l’opzione **Usa metadati aggiunti nel meta-argomento**, le proprietà dei metadati non vengono propagate nelle proprietà del documento dell’output di PDF nativi.
+* GUIDES-17793: il PDF di riferimento non viene attivato dalla **dashboard per la pubblicazione in blocco** durante l’attivazione in blocco del contenuto pubblicato.
 
-Per ulteriori informazioni sulle funzioni nuove e migliorate delle Guide e sui problemi risolti nella versione, vedi la [roadmap sulla versione di Experience Manager Guides](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi risolti in questa versione, consulta [Roadmap delle versioni di Experience Manager Guides](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problemi noti {#known-issues-18175}
 
@@ -90,7 +90,7 @@ Adobe è in fase di aggiornamento `com.day.cq.wcm.api`. Parte dei metodi e delle
 
 #### org.apache.jackrabbit.oak.plugins.blob {#org.apache.jackrabbit.oak.plugins.blob}
 
-* GRANITE-54165: Depreca org.apache.jackrabbit.oak.plugins.blob nell’API pubblica.
+* GRANITE-54165: rimozione di org.apache.jackrabbit.oak.plugins.blob nell’API pubblica.
 
 ### Correzioni di sicurezza {#security-18175}
 
@@ -100,7 +100,7 @@ AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle 
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
-| AEM Oak | 1,70,0 | [API Oak API 1.70.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.70.0/index.html) |
+| AEM Oak | 1.70.0 | [API Oak API 1.70.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.70.0/index.html) |
 | API SLING AEM | 2.27.6 | [API Apache Sling 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.24-1.4.0 | [Specifiche HTML Template Language](https://github.com/adobe/htl-spec) |
 | Componenti core AEM | 2.27.0 | [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
