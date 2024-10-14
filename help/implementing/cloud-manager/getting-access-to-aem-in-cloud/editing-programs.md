@@ -1,14 +1,14 @@
 ---
-title: Modifica programmi
+title: Modificare programmi
 description: Scopri come modificare i programmi sandbox e di produzione per apportare modifiche alle opzioni dopo averli creati.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 29%
+source-wordcount: '427'
+ht-degree: 24%
 
 ---
 
@@ -70,7 +70,7 @@ L’eliminazione di un programma sandbox comporta la rimozione di tutti gli ambi
 
    ![Opzione Elimina programma](assets/delete-sandbox1.png)
 
-In alternativa, dalla pagina della panoramica di Cloud Manager, accedi alla scheda del programma, fai clic sul pulsante con i puntini di sospensione e seleziona **Elimina programma**.
+In alternativa, è possibile fare clic su https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg sulla scheda del programma nella pagina Panoramica di Cloud Manager e selezionare **Elimina programma**.
 
 ![Scheda Elimina sandbox da programma](assets/delete-sandbox2.png)
 

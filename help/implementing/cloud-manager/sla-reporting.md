@@ -5,7 +5,7 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c46b6df488722fe750e524ad2bb383f25bf00b0f
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 13%
@@ -36,7 +36,7 @@ Il grafico a linee di un anno selezionato include punti dati per ogni mese da ge
 
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
-1. Nella pagina **Panoramica programma**, nel pannello di navigazione a sinistra, fai clic su **Rapporti**.
+1. Nella pagina **Panoramica programma**, nel menu a sinistra, fare clic su **Report**.
 
 1. Fai clic su **Rapporti SLA**.
 

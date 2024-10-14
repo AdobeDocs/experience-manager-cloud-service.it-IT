@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '376'
 ht-degree: 4%
 
 ---
@@ -42,17 +42,17 @@ La dashboard presenta un punteggio complessivo per le prestazioni CDN, oltre a t
 
 ![Dashboard delle prestazioni CDN](assets/cdn-performance-dashboard.png)
 
-Per informazioni dettagliate sulle prestazioni CDN e per suggerimenti su come migliorarle, tocca o fai clic su **Visualizza tendenza**.
+Per informazioni dettagliate sulle prestazioni CDN e suggerimenti su come migliorarle, fai clic su **Visualizza tendenza**.
 
 ![Tendenza delle prestazioni](assets/cdn-performance-trend.png)
 
-Tocca o fai clic su **Visualizza** sotto il grafico per modificare l&#39;intervallo di tempo del grafico.
+Fai clic su **Visualizza** sotto il grafico per modificare l&#39;intervallo di tempo del grafico.
 
 Per suggerimenti su come migliorare le prestazioni CDN, seleziona la scheda **Recommendations**.
 
 ![Consigli CDN](assets/cdn-performance-recommendations.png)
 
-Tocca o fai clic sulla freccia accanto a qualsiasi consiglio nell’elenco per visualizzare i dettagli sui passaggi da intraprendere per migliorare e la causa del problema.
+Fai clic sulla freccia accanto a qualsiasi consiglio nell’elenco per visualizzare i dettagli su quali passi intraprendere per migliorare e la causa del problema.
 
 ## Definizione hit cache {#cache-hit}
 

@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1656'
 ht-degree: 39%
 
 ---
@@ -38,7 +38,7 @@ La console Programmi personali fornisce una panoramica di tutti i programmi a cu
 1. Schede che consentono di attivare/disattivare la visualizzazione corrente dei programmi.
    * Visualizzazione **Pagina principale** (predefinita) che seleziona la visualizzazione **Programmi personali** con una panoramica di tutti i programmi
    * **Licenza** che accede alla [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md).
-   * Per impostazione predefinita, le schede sono chiuse e possono essere visualizzate utilizzando il menu hamburger nell&#39;[intestazione Cloud Manager](#cloud-manager-header).
+   * Il valore predefinito delle schede è Chiuso e può essere visualizzato utilizzando https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg nell&#39;intestazione [Cloud Manager](#cloud-manager-header).
 1. [Statistiche e invito all’azione](#statistics) per una panoramica dell’attività recente
 1. Sezione [**Programmi personali** ](#my-programs-section) con una panoramica di tutti i programmi
 1. [Collegamenti rapidi](#quick-links-section) per accedere facilmente alle risorse correlate.
@@ -195,7 +195,7 @@ La barra degli strumenti del programma consente di passare rapidamente ad altri 
 
 ![Barra degli strumenti del programma](assets/cloud-manager-program-toolbar.png)
 
-La barra degli strumenti mostra sempre la scheda attiva, anche se le schede sono state nascoste utilizzando il menu hamburger.
+La barra degli strumenti mostra sempre la scheda in uso, anche se le schede sono state nascoste mediante https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg.
 
 ### Schede Programma {#program-tabs}
 

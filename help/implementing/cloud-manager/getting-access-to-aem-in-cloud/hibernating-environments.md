@@ -1,50 +1,52 @@
 ---
-title: Sospensione e disattivazione degli ambienti sandbox
+title: Sospensione e riattivazione degli ambienti sandbox
 description: Scopri in che modo gli ambienti di un programma sandbox entrano automaticamente in modalità di sospensione e come riattivarli.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
 source-wordcount: '696'
-ht-degree: 83%
+ht-degree: 42%
 
 ---
 
 
-# Sospensione e disattivazione degli ambienti sandbox {#hibernating-introduction}
+# Sospensione e riattivazione degli ambienti sandbox {#hibernating-introduction}
 
-Gli ambienti di un programma sandbox entrano in modalità di sospensione se non viene rilevata alcuna attività per otto ore. La sospensione è specifica degli ambienti dei programmi sandbox. Per gli ambienti dei programmi di produzione la sospensione non è disponibile.
+Gli ambienti di un programma sandbox entrano in modalità di sospensione se non viene rilevata alcuna attività per otto ore. La sospensione è specifica per gli ambienti dei programmi sandbox. Gli ambienti dei programmi di produzione non possono essere sospesi.
 
 ## Sospensione {#hibernation-introduction}
 
 La sospensione può essere attivata automaticamente o manualmente.
 
-* **Automatica**: la sospensione degli ambienti di un programma sandbox viene attivata automaticamente dopo otto ore di inattività. L’inattività è definita dall’assenza di richieste ricevute dal servizio di Author, Anteprima e Publish.
-* **Manuale**: l’utente può attivare manualmente la sospensione di un ambiente di un programma sandbox. Non si tratta di un requisito, in quanto la sospensione viene attivata automaticamente come descritto in precedenza.
+* **Automatica**: la sospensione degli ambienti di un programma sandbox viene attivata automaticamente dopo otto ore di inattività. L’inattività è definita come l’assenza di richieste ai servizi di authoring, anteprima e pubblicazione.
+* **Manuale**: l’utente può attivare manualmente la sospensione di un ambiente di un programma sandbox. Non è necessario perché la sospensione si verifica automaticamente come descritto in precedenza.
 
 Potrebbero essere necessari alcuni minuti prima che gli ambienti del programma sandbox entrino in modalità di sospensione. Durante la sospensione i dati vengono conservati.
 
-### Utilizzo della sospensione manuale {#using-manual-hibernation}
+### Sospensione manuale di un ambiente di un programma sandbox {#using-manual-hibernation}
 
-Puoi sospendere manualmente il programma sandbox da Console sviluppatori. L’accesso a Console sviluppatori di un programma sandbox è disponibile per tutti gli utenti di Cloud Manager.
+Puoi sospendere manualmente il programma sandbox da Console sviluppatori. L’accesso a Developer Console per un programma sandbox è disponibile per tutti gli utenti di Cloud Manager.
 
-Per sospendere manualmente gli ambienti di un programma sandbox, segui la procedura riportata di seguito.
+**Per sospendere manualmente un ambiente di un programma sandbox:**
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, tocca o fai clic sul programma che desideri sospendere per visualizzarne i dettagli.
+1. Nella console **[Programmi personali](/help/implementing/cloud-manager/navigation.md#my-programs)**, fare clic su un *programma sandbox* che si desidera sospendere per visualizzarne i dettagli.
 
-1. Dalla scheda **Ambienti**, fai clic sul pulsante con i puntini di sospensione e seleziona **Console sviluppatori**.
+1. Nella scheda **Ambienti**, fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), quindi su **Developer Console**.
 
    * Per ulteriori dettagli su Developer Console, consulta [Accesso a Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console).
 
-   ![Opzione di menu Console sviluppatori](assets/developer-console-menu-option.png)
+   ![Opzione di menu Console sviluppatori](/help/implementing/cloud-manager/assets/developer-console-menu-option.png)
 
-1. In Console sviluppatori, fai clic su **Sospendi**.
+1. Nella pagina **Developer Console** fare clic su **Sospendi**.
 
-   ![Pulsante Sospendi](assets/hibernate-1.png)
+<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN BETA -->
+
+![Pulsante Sospendi](assets/hibernate-1.png)
 
 1. Per confermare, fai clic su **Sospendi**.
 
@@ -54,23 +56,25 @@ Quando la sospensione viene eseguita correttamente, nella schermata **Developer 
 
 ![Conferma della sospensione](assets/hibernate-4.png)
 
-In Developer Console è inoltre possibile fare clic sul collegamento **Ambienti** nel percorso di navigazione sopra l&#39;elenco a discesa **Pod** per visualizzare un elenco di ambienti da sospendere.
+In Developer Console, fai clic sul collegamento **Ambienti** nel percorso di navigazione sopra l&#39;elenco a discesa **Pod** per visualizzare gli ambienti disponibili per la sospensione.
 
 ![Elenco degli ambienti da sospendere](assets/hibernate-1b.png)
 
-## Riattivazione {#de-hibernation-introduction}
+## Riattivazione manuale di un programma sandbox da Developer Console {#de-hibernation-introduction}
 
-Puoi sospendere manualmente il programma sandbox da Console sviluppatori.
+Puoi sospendere manualmente il programma sandbox da Developer Console.
 
 >[!IMPORTANT]
 >
 >L’utente con il ruolo **Sviluppatore** può riattivare un ambiente di un programma sandbox.
 
+**Per riattivare manualmente un programma sandbox da Developer Console:**
+
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, tocca o fai clic sul programma che desideri riattivare per visualizzarne i dettagli.
+1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** fare clic sul programma che si desidera riattivare per visualizzarne i dettagli.
 
-1. Dalla scheda **Ambienti**, fai clic sul pulsante con i puntini di sospensione e seleziona **Console sviluppatori**.
+1. Nella scheda **Ambienti**, fai clic su https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg e quindi su **Developer Console**.
 
    * Per ulteriori dettagli su Developer Console, consulta [Accesso a Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console).
 
@@ -90,8 +94,7 @@ Puoi sospendere manualmente il programma sandbox da Console sviluppatori.
 
    ![Riattivazione completa](assets/de-hibernation-img4.png)
 
-
-In Developer Console è inoltre possibile fare clic sul collegamento **Ambienti** nel percorso di navigazione sopra l&#39;elenco a discesa **Pod** per visualizzare un elenco di ambienti da riattivare.
+In Developer Console, fai clic sul collegamento **Ambienti** nel percorso di navigazione sopra l&#39;elenco a discesa **Pod** per accedere agli ambienti disponibili per la riattivazione.
 
 ![Elenco dei pod sospesi](assets/de-hibernate-1b.png)
 
@@ -99,9 +102,9 @@ In Developer Console è inoltre possibile fare clic sul collegamento **Ambienti*
 
 Tutti gli utenti con un profilo di prodotto che consente di accedere a AEM as a Cloud Service possono accedere a **Console sviluppatori** e riattivare l’ambiente.
 
-## Accesso a un ambiente sospeso {#accessing-hibernated-environment}
+## Accedere a un ambiente sospeso {#accessing-hibernated-environment}
 
-Quando un browser invia richieste al servizio di Author, Anteprima o Publish di un ambiente sospeso, l’utente visualizza una pagina di destinazione in cui viene indicato lo stato di sospensione dell’ambiente e un collegamento a Console sviluppatori da cui è possibile riattivarlo.
+Quando un utente effettua una richiesta del browser al servizio Author, Anteprima o Publish di un ambiente sospeso, incontra una pagina di destinazione. Questa pagina illustra lo stato di sospensione dell’ambiente e fornisce un collegamento a Developer Console per la riattivazione.
 
 ![Pagina di destinazione del servizio sospeso](assets/de-hibernation-img5.png)
 
@@ -109,15 +112,15 @@ Quando un browser invia richieste al servizio di Author, Anteprima o Publish di 
 
 Negli ambienti sospesi è ancora possibile eseguire distribuzioni e aggiornamenti AEM manuali.
 
-* È possibile utilizzare una pipeline per distribuire il codice personalizzato negli ambienti sospesi. L’ambiente rimane sospeso e il nuovo codice verrà visualizzato nell’ambiente alla sua riattivazione.
+* È possibile utilizzare una pipeline per distribuire il codice personalizzato negli ambienti sospesi. L’ambiente rimane sospeso e il nuovo codice viene visualizzato nell’ambiente alla sua riattivazione.
 
-* Gli aggiornamenti AEM possono essere applicati agli ambienti sospesi e attivati manualmente da Cloud Manager. L’ambiente rimane sospeso e la nuova versione verrà visualizzata nell’ambiente alla sua riattivazione.
+* Gli aggiornamenti AEM possono essere applicati agli ambienti sospesi e attivati manualmente da Cloud Manager. L’ambiente rimane sospeso e la nuova versione viene visualizzata nell’ambiente alla sua riattivazione.
 
 ## Sospensione ed eliminazione {#hibernation-deletion}
 
 * Gli ambienti in un programma sandbox vengono automaticamente sospesi dopo otto ore di inattività.
-   * L’inattività è definita dall’assenza di richieste ricevute dal servizio di Author, Anteprima e Publish.
-   * Una volta sospesi, possono essere [riattivati manualmente].(#de-hibernation-introduction)
+   * L’inattività è definita come l’assenza di richieste ai servizi di authoring, anteprima e pubblicazione.
+   * Una volta sospesi, possono essere [riattivati manualmente](#de-hibernation-introduction).
 * I programmi sandbox vengono eliminati dopo sei mesi di sospensione continua. Al termine di questo periodo, possono essere ricreati.
 
 >[!NOTE]

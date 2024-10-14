@@ -5,7 +5,7 @@ exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 19%
@@ -23,7 +23,7 @@ L&#39;utente con il ruolo **Proprietario business** o **Responsabile dell&#39;im
 **Per visualizzare e aggiornare gli Elenchi consentiti IP:**
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
-1. Dalla pagina **Panoramica**, nel pannello laterale, in **Servizi**, fai clic sull&#39;icona ![Elenco attività](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Elenchi consentiti IP**.
+1. Dalla pagina **Panoramica**, nel menu a sinistra, in **Servizi**, fai clic sull&#39;icona ![Elenco attività](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Elenchi consentiti IP**.
 1. Identifica la riga degli Elenchi consentiti IP che desideri visualizzare o aggiornare.
 1. Fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) a destra della riga.
 1. Dal menu a discesa, fare clic su **Visualizza e aggiorna**.
@@ -40,7 +40,7 @@ La finestra di dialogo **Visualizza e aggiorna Elenco consentiti IP** mostra il 
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Dalla pagina **Panoramica**, nel pannello laterale, in **Servizi**, fai clic sull&#39;icona ![Elenco attività](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Elenchi consentiti IP**.
+1. Dalla pagina **Panoramica**, nel menu a sinistra, in **Servizi**, fai clic sull&#39;icona ![Elenco attività](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Elenchi consentiti IP**.
 
 1. Nella colonna **Stato** della tabella Elenchi consentiti IP, passa il puntatore del mouse su un Elenco consentiti IP verde (in uso) per visualizzare uno o più servizi applicati.
 
@@ -63,10 +63,9 @@ L&#39;utente con il ruolo **Proprietario business** o **Responsabile dell&#39;im
 **Per eliminare un Elenco consentiti IP:**
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
-1. Dalla pagina **Panoramica**, nel pannello laterale, in **Servizi**, fai clic sull&#39;icona ![Elenco attività](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Elenchi consentiti IP**.
-1. Identifica la riga dell&#39;Elenco consentiti IP che desideri eliminare, quindi fai clic su ![Icona altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) alla fine della riga.
-1. Scegliere **Elimina** dal menu a discesa.
-1. Nella finestra di dialogo Elimina Elenco consentiti IP fare clic su **Elimina**.
+1. Dalla pagina **Panoramica**, nel menu a sinistra, in **Servizi**, fai clic sull&#39;icona ![Elenco attività](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Elenchi consentiti IP**.
+1. Identifica la riga dell&#39;Elenco consentiti IP che desideri eliminare, quindi fai clic su ![Icona altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) a destra della riga, quindi fai clic su **Elimina**.
+1. Nella finestra di dialogo **Elimina Elenco consentiti IP** fare clic su **Elimina**.
 
 ## Configurazioni CDN preesistenti {#pre-existing-cdn}
 

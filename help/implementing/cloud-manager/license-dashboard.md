@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '909'
 ht-degree: 34%
 
 ---
@@ -34,7 +34,7 @@ La dashboard delle licenze di Cloud Manager consente di accedere facilmente ai d
 >Un utente con il ruolo **Proprietario business** deve aver effettuato l&#39;accesso per visualizzare la dashboard delle licenze.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
-1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, fare clic sul pulsante del menu hamburger nell&#39;[Intestazione Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Questo mostra le schede.
+1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, fare clic su https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg nell&#39;intestazione [Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Questa azione mostra le schede.
 1. Fai clic sull&#39;opzione **Licenza** nella scheda.
 
 ![Dashboard delle licenze](assets/license-dashboard.png)

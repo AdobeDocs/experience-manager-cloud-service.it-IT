@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
-source-wordcount: '3744'
+source-wordcount: '3742'
 ht-degree: 6%
 
 ---
@@ -151,7 +151,7 @@ Consulta anche [Best practice per la codifica video](/help/assets/dynamic-media/
 
 Per definire parametri di elaborazione avanzati per altri tipi di risorse, vedere [Configurare l&#39;elaborazione delle risorse](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**Per creare un profilo video per lo streaming con bitrate adattivo**,
+**Per creare un profilo video per lo streaming con bitrate adattivo:**
 
 1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili video]**.
 1. Seleziona **[!UICONTROL Crea]**.
@@ -192,7 +192,7 @@ Ora puoi applicare il profilo alle cartelle che contengono video. Vedi [Applicaz
 
 Se scegli di non utilizzare l&#39;opzione **[!UICONTROL Codifica per streaming adattivo]**, tutti i predefiniti di codifica aggiunti al profilo vengono trattati come rappresentazioni video individuali per streaming a bitrate singolo o per distribuzione progressiva di video. Inoltre, non esiste una convalida per garantire che tutte le rappresentazioni video abbiano le stesse proporzioni.
 
-I codec di formato video supportati sono H.264 (.mp4) e WebM.
+Il codec del formato video supportato è H.264 (.mp4). <!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
 
 Vedi anche [Creare un profilo di codifica video per lo streaming con bitrate adattivo](#creating-a-video-encoding-profile-for-adaptive-streaming).
 

@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1398'
 ht-degree: 71%
 
 ---
@@ -156,12 +156,12 @@ I passaggi per completare la creazione della pipeline di distribuzione non di pr
 
    ![Pipeline di configurazione](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Se hai abilitato Audit dell&#39;esperienza, tocca o fai clic su **Continua** per passare alla scheda **Audit dell&#39;esperienza** in cui puoi definire i percorsi che devono sempre essere inclusi nell&#39;Audit dell&#39;esperienza.
+1. Se hai abilitato l&#39;audit dell&#39;esperienza, fai clic su **Continua** per passare alla scheda **Audit dell&#39;esperienza** in cui puoi definire i percorsi che devono sempre essere inclusi nell&#39;audit dell&#39;esperienza.
 
    * Se hai abilitato **Audit dell&#39;esperienza**, consulta il documento [Audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md) per informazioni dettagliate su come configurare.
    * In caso contrario, salta questo passaggio.
 
-1. Per salvare la pipeline, tocca o fai clic su **Salva**.
+1. Fai clic su **Salva** per salvare la pipeline.
 
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
 

@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 65%
+source-wordcount: '2357'
+ht-degree: 62%
 
 ---
 
@@ -109,7 +109,7 @@ Se inizialmente non hai specificato aree geografiche aggiuntive, puoi farlo dopo
 
 Puoi anche rimuovere le aree geografiche di pubblicazione aggiuntiva. Tuttavia, in un’unica operazione puoi solo aggiungere o solo rimuovere le aree geografiche. Se è necessario aggiungere un’area geografica e rimuoverne un’altra, per prima cosa aggiungi, salva la modifica e quindi rimuovi (o viceversa).
 
-1. Dalla console del programma Panoramica programma, fai clic sul pulsante con i puntini di sospensione dall’ambiente di produzione e seleziona **Modifica** dal menu.
+1. Dalla console Panoramica programma del programma, fai clic su https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg per l&#39;ambiente di produzione e seleziona **Modifica** dal menu.
 
    ![Modifica ambiente](assets/select-edit-environment.png)
 
@@ -129,7 +129,7 @@ Se desideri effettuare il provisioning di [rete avanzata](/help/security/configu
 
 Dalla pagina **Panoramica** è possibile accedere ai dettagli di un ambiente in due modi.
 
-1. Dalla pagina **Panoramica**, fai clic sulla scheda **Ambienti** nel pannello di navigazione laterale.
+1. Dalla pagina **Panoramica**, fai clic sulla scheda **Ambienti** nel menu a sinistra.
 
    ![Scheda Ambienti](assets/environments-tab2.png)
 
@@ -141,11 +141,11 @@ Dalla pagina **Panoramica** è possibile accedere ai dettagli di un ambiente in 
 
    ![Scheda Ambienti](assets/environments-tab2.png)
 
-1. Tocca o fai clic su un ambiente nell’elenco per visualizzarne i dettagli.
+1. Fai clic su un ambiente dell’elenco per visualizzarne i dettagli.
 
    ![Dettagli dell’ambiente](assets/environ-preview1.png)
 
-In alternativa, fai clic sul pulsante con i puntini di sospensione dell’ambiente desiderato, quindi seleziona **Visualizza dettagli**.
+In alternativa, fare clic su https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg dell&#39;ambiente desiderato, quindi selezionare **Visualizza dettagli**.
 
 ![Visualizza dettagli ambiente](assets/view-environment-details.png)
 
@@ -193,7 +193,7 @@ In alternativa, è possibile accedere alle stesse informazioni dalla scheda **Am
 
 1. Nella pagina **Panoramica**, seleziona la scheda **Ambienti**.
 
-1. Nella scheda **Ambienti**, seleziona l&#39;ambiente in cui desideri eseguire la query nel pannello di navigazione a sinistra.
+1. Nella scheda **Ambienti**, seleziona l&#39;ambiente in cui desideri eseguire la query nel menu a sinistra.
 
 1. Una volta selezionato un ambiente:
 
@@ -235,11 +235,11 @@ Il processo di aggiornamento è quindi articolato in due fasi:
 >[!NOTE]
 > A partire dal 2024, le istanze di sviluppo e alcuni programmi sandbox sono già aggiornati automaticamente, pertanto non è necessario gestirne manualmente gli aggiornamenti. In seguito a questa transizione, l&#39;opzione di aggiornamento manuale dell&#39;ambiente per le istanze di sviluppo potrebbe non essere disponibile per _alcuni_ programmi.
 
-Per alcuni ambienti di sviluppo e ambienti nei programmi sandbox, facendo clic sul pulsante con i puntini di sospensione nella scheda **Ambienti** è disponibile l&#39;opzione **Aggiorna**.
+L&#39;opzione **Aggiorna** è disponibile nella scheda **Ambienti** per alcuni ambienti di sviluppo e ambienti nei programmi sandbox facendo clic su https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg dell&#39;ambiente.
 
 ![Opzione Aggiorna dalla scheda Ambienti](assets/environ-update2.png)
 
-L’opzione è disponibile anche facendo clic sulla scheda **Ambienti** del programma e selezionando il pulsante con i puntini di sospensione corrispondente all’ambiente.
+Questa opzione è disponibile anche facendo clic sulla scheda **Ambienti** del programma e quindi su https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg dell&#39;ambiente.
 
 ![Opzione Aggiorna dalla scheda Ambienti](assets/environ-update3.png)
 
@@ -259,11 +259,11 @@ Il comportamento dell’opzione **Aggiorna** varia a seconda della configurazion
 
 Un utente con il ruolo **Responsabile dell&#39;implementazione** o **Proprietario business** è in grado di eliminare un ambiente di sviluppo.
 
-Dalla schermata **Panoramica** del programma, accedi alla scheda **Ambienti** e fai clic sul pulsante con i puntini di sospensione corrispondente all’ambiente che desideri eliminare.
+Dalla schermata **Panoramica** del programma nella scheda **Ambienti**, fai clic su https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg dell&#39;ambiente di sviluppo da eliminare.
 
 ![Opzione Elimina](assets/environ-delete.png)
 
-L’opzione Elimina è disponibile anche dalla scheda **Ambienti** della finestra **Panoramica** del programma. Fai clic sul pulsante con i puntini di sospensione corrispondente all’ambiente e seleziona **Elimina**.
+L’opzione Elimina è disponibile anche dalla scheda **Ambienti** della finestra **Panoramica** del programma. Fare clic su https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg dell&#39;ambiente e selezionare **Elimina**.
 
 ![Opzione Elimina dalla scheda Ambienti](assets/environ-delete2.png)
 
