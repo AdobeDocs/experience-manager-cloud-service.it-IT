@@ -3,16 +3,16 @@ title: Limitare la distribuzione delle risorse con Dynamic Medie con funzionalit
 description: Scopri come limitare la consegna delle risorse con le funzionalità OpenAPI.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
+source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 0%
+source-wordcount: '1117'
+ht-degree: 2%
 
 ---
 
 # Limitare la distribuzione delle risorse con Dynamic Medie con funzionalità OpenAPI {#restrict-access-to-assets}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 La governance centrale delle risorse in Experience Manager consente all’amministratore DAM o ai Brand Manager di gestire l’accesso alle risorse disponibili tramite Dynamic Medie con funzionalità OpenAPI. Adobe Possono limitare la consegna di risorse approvate (fino a una singola risorsa) a [utenti o gruppi Identity Management System (IMS) selezionati](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) configurando determinati metadati sulle risorse nel servizio AEM as a Cloud Service Author.
@@ -96,12 +96,4 @@ Nei servizi di authoring di AEM Cloud Service e in Selettore risorse, il token B
 
 ### Distribuzione per provider di identità personalizzati sul servizio Publish {#delivery-custom-identity-provider}
 
-AEM Sites, AEM Assets e Dynamic Medie con licenze OpenAPI possono essere utilizzati insieme e la consegna limitata delle risorse può essere configurata sui siti web forniti tramite AEM Publish o i servizi di anteprima.
-Se i servizi Publish e Anteprima di AEM Sites sono configurati per l&#39;utente con un [provider di identità personalizzato (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), il gruppo che deve avere accesso alle risorse protette in può essere incluso nell&#39;attributo `groupMembership` durante il processo di installazione.\
-Quando un utente del sito Web accede al provider di identità personalizzato e accede al sito Web ospitato sul servizio Publish/Anteprima, l&#39;attributo `groupMembership` viene letto e un cookie protetto viene creato e consegnato sul sito Web dopo l&#39;autenticazione. Questo cookie sicuro è incluso in tutte le richieste successive per consegnare il contenuto del sito web all’agente utente.
-
-Quando una risorsa protetta viene richiesta su una pagina, i livelli Publish e Anteprima dell’AEM estraggono il materiale di autorizzazione dal cookie protetto e convalidano l’accesso. Se viene trovata una corrispondenza, la risorsa viene visualizzata.
-
->[!NOTE]
->
-> Nel [ticket di supporto per attivare Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities), indica la consegna con restrizioni nel caso di utilizzo. Il team ingegneristico Adobe fornirà i chiarimenti necessari e/o definirà la procedura per la consegna limitata.
+AEM Sites, AEM Assets e Dynamic Medie con licenze OpenAPI possono essere utilizzati insieme, consentendo la distribuzione limitata di risorse da configurare sui siti web ospitati su AEM Publish o sul servizio di anteprima. Il flusso di consegna sicuro sfrutta i cookie del browser per stabilire l’accesso dell’utente e l’esistenza di un dominio personalizzato per il livello di consegna che sia un sottodominio del dominio di pubblicazione è un prerequisito per l’implementazione di questo caso d’uso. Se i servizi Publish e Anteprima di AEM Sites sono configurati per l&#39;utilizzo di un [provider di identità personalizzato (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), è necessario impostare un nuovo cookie denominato `delivery-token` che incapsula l&#39;appartenenza al gruppo dell&#39;utente durante l&#39;autenticazione dell&#39;utente del post di dominio di pubblicazione. Il livello di consegna estrae il materiale di autorizzazione dal cookie protetto e convalida l’accesso. Registra un [ticket di supporto Enterprise](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) per ulteriori dettagli.
