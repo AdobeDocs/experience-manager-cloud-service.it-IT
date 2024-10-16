@@ -4,10 +4,10 @@ description: Scopri come utilizzare gli ambienti di sviluppo rapido per le itera
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
 workflow-type: tm+mt
-source-wordcount: '4241'
-ht-degree: 4%
+source-wordcount: '4537'
+ht-degree: 3%
 
 ---
 
@@ -94,10 +94,38 @@ Dopo aver aggiunto un RDE per il programma utilizzando Cloud Manager, è possibi
    aio plugins:update
    ```
 
-1. Configura il plug-in RDE per utilizzare la tua organizzazione, il tuo programma e il tuo ambiente. Il comando di configurazione riportato di seguito fornirà all&#39;utente un elenco interattivo di programmi della propria organizzazione e mostrerà gli ambienti RDE di tale programma tra cui scegliere.
+1. Accedere utilizzando il client aio.
 
    ```
    aio login
+   ```
+   Le informazioni di accesso (token) vengono memorizzate nella configurazione globale dell&#39;aio e pertanto supportano un solo account di accesso e un&#39;unica organizzazione. Se desideri utilizzare più RDE che richiedono login o organizzazioni diversi, segui questo esempio introducendo contesti.
+
+   <details><summary>Segui questo esempio per impostare un contesto locale per uno degli accessi RDE</summary>
+   Per memorizzare localmente le informazioni di accesso in un file .aio nella directory corrente all'interno di un contesto specifico, eseguire la procedura seguente. Un contesto è anche un modo intelligente di impostare un ambiente CI/CD o uno script.  Per utilizzare questa funzione, assicurarsi di utilizzare almeno aio-cli versione 10.3.1. Aggiornalo utilizzando `npm install -g @adobe/aio-cli`
+
+   Creiamo un contesto denominato &quot;mycontext&quot; che viene quindi impostato come contesto predefinito utilizzando il plug-in di autenticazione prima di chiamare il comando di accesso.
+
+   ```
+   aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
+   aio auth ctx -s mycontext
+   aio login --no-open
+   ```
+
+
+   >[!NOTE]
+   > Il comando di accesso con l&#39;opzione `--no-open` restituirà un URL nel terminale invece di aprire il browser predefinito. Così puoi copiarlo e aprirlo con una finestra **incognito** del browser. In questo modo, la sessione attualmente connessa nella normale finestra del browser rimarrà intatta e potrai assicurarti di utilizzare l’accesso e l’organizzazione specifici necessari per il tuo contesto.
+
+   Con il primo comando viene creata una nuova configurazione del contesto di accesso, denominata `mycontext`, nel file di configurazione locale di `.aio`. Se necessario, viene creato il file. Con il secondo comando il contesto `mycontext` viene impostato come &quot;corrente&quot;, ovvero come predefinito.
+
+   Con questa configurazione attivata, il comando di accesso archivia automaticamente i token di accesso nel contesto `mycontext`, mantenendoli quindi locali.
+
+   È possibile gestire più contesti mantenendo le configurazioni locali in più cartelle. In alternativa, è possibile impostare più contesti all’interno di un singolo file di configurazione e passare da un file all’altro modificando il contesto &quot;corrente&quot;.
+   </details>
+
+1. Configura il plug-in RDE per utilizzare la tua organizzazione, il tuo programma e il tuo ambiente. Il comando di configurazione riportato di seguito fornirà all&#39;utente un elenco interattivo di programmi della propria organizzazione e mostrerà gli ambienti RDE di tale programma tra cui scegliere.
+
+   ```
    aio aem:rde:setup
    ```
 
