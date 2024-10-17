@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1272'
 ht-degree: 3%
 
 ---
@@ -81,6 +81,10 @@ Per aggiungere un webhook:
    > Si consiglia di scegliere con attenzione il nome del webhook, in quanto il nome del webhook specificato viene visualizzato nell’istanza dell’AEM.
 
 1. Fai clic su **[!UICONTROL Aggiungi]** per aggiungere una nuova connessione. Viene visualizzata la finestra di dialogo **[!UICONTROL Crea connessione]**.
+
+>[!NOTE]
+>
+> Assicurati che l&#39;account tecnico sia un membro del gruppo **utenti-moduli**; in caso contrario, l&#39;aggiunta di un webhook non riuscirà.
 
 #### Aggiungere una connessione a un webhook {#add-connection}
 
