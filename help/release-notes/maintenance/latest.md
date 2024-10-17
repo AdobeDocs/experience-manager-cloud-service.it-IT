@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '773'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 18175 {#release-18175}
 
-Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 18175, rilasciata pubblicamente il venerdì 10 ottobre 2024. La versione di manutenzione precedente era la 17964. La versione 18099 è stata resa privata a causa di un problema.
+Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 18175, rilasciata pubblicamente il 10 ottobre 2024. La versione di manutenzione precedente era la 17964. La versione 18099 è stata resa privata a causa di un problema.
 
 Con la versione di attivazione funzioni 2024.10.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -34,24 +34,24 @@ Con la versione di attivazione funzioni 2024.10.0 verrà fornito il set di funzi
 * GRANITE-52454: aggiornamento dell’helper di supporto GRANITE-52454. Aggiornamento dell’helper di supporto per utilizzare la versione più recente di AEMaaCS.
 * GRANITE-53287: aggiornamento della versione del test per l’integrazione di privilegi di sicurezza.
 * GRANITE-53485: supporto per l’autenticazione dell’entità principale del servizio per la replica dell’archiviazione BLOB di Azure.
-* GRANITE-53514: Treeactivation aggiornata alla versione 1.0.26.
+* GRANITE-53514: aggiornamento di Treeactivation alla versione 1.0.26.
 * GRANITE-53870: creazione di un meccanismo interno per saltare il controllo della versione max di JVM per l’avvio rapido.
-* GRANITE-53914: correggi gli errori dei test di Platform con Java 17 versione del modulo aggiornata.
+* GRANITE-53914: correzione degli errori di test Platform con Java 17, versione del modulo aggiornata.
 * GRANITE-53966: utilizzo di un pool di thread a parte per la distribuzione dei contenuti.
 * GRANITE-54006: aggiornamento di Jackson alla versione 2.17.2.
 * GRANITE-54038: aggiunta del client IMS Creative Cloud Enterprise all’elenco Consentiti del client IMS di AEM.
 * GRANITE-54054: variabile di ambiente per com.adobe.granite.repository.impl.SystemUserValidation warnOnly.
-* GRANITE-54266: nell’SDK di produzione manca il servizio Search Suggestor.
+* GRANITE-54266: mancanza del servizio Search Suggestor nell’SDK di produzione.
 * GRANITE-54274: accettazione del client IMS di Firefly.
 * GRANITE-54300: aggiornamento di Oak all’ultima versione pubblica (1.70.0).
 * GUIDES-19069: aggiunta di guidesPeerLinkIndex per il componente aggiuntivo AEM Guides.
-* SITES-23584: è stato corretto un test non riuscito per il componente Foundation in Java 17.
+* SITES-23584: correzione del test non riuscito per il componente Foundation in Java 17.
 * SKYOPS-69768: i modelli Sling non deserializzano ResourceResolver.
 * SKYOPS-76378: miglioramento della sicurezza dei thread per la registrazione e l’annullamento della registrazione di ResourceBundle in i18n.
-* SKYOPS-79285: Aggiorna Sling XSS alla versione 2.4.2.
+* SKYOPS-79285: aggiornamento di Sling XSS alla versione 2.4.2.
 * SKYOPS-82383: esposizione del risultato di conversione, unione e analisi “helm-values” nel descrittore di esecuzione del comando.
 * SKYOPS-84810: omissione dell’esecuzione “40-initialize-publish.sh” all’avvio per RDE.
-* SKYOPS-84951: correggi il codice di generazione del checksum del contenuto variabile.
+* SKYOPS-84951: correzione del codice di generazione del checksum per contenuti mutabili.
 * SKYOPS-85335: aggiornamento di org.apache.sling.jcr.repoinit alla versione 1.1.52.
 * SKYOPS-85366: aggiornamento di Sling Commons Threads alla versione 3.3.0.
 * SKYOPS-86329: aggiornamento delle versioni dei moduli di test della piattaforma per il supporto dell’SDK Java 21.
