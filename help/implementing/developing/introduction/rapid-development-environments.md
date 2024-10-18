@@ -4,7 +4,7 @@ description: Scopri come utilizzare gli ambienti di sviluppo rapido per le itera
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
+source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
 workflow-type: tm+mt
 source-wordcount: '4794'
 ht-degree: 3%
@@ -99,6 +99,7 @@ Dopo aver aggiunto un RDE per il programma utilizzando Cloud Manager, è possibi
    ```
    aio login
    ```
+
    Le informazioni di accesso (token) vengono memorizzate nella configurazione globale dell&#39;aio e pertanto supportano un solo account di accesso e un&#39;unica organizzazione. Se desideri utilizzare più RDE che richiedono login o organizzazioni diversi, segui questo esempio introducendo contesti.
 
    <details><summary>Segui questo esempio per impostare un contesto locale per uno degli accessi RDE</summary>
@@ -111,7 +112,6 @@ Dopo aver aggiunto un RDE per il programma utilizzando Cloud Manager, è possibi
    aio auth ctx -s mycontext
    aio login --no-open
    ```
-
 
    >[!NOTE]
    > Il comando di accesso con l&#39;opzione `--no-open` restituirà un URL nel terminale invece di aprire il browser predefinito. Così puoi copiarlo e aprirlo con una finestra **incognito** del browser. In questo modo, la sessione attualmente connessa nella normale finestra del browser rimarrà intatta e potrai assicurarti di utilizzare l’accesso e l’organizzazione specifici necessari per il tuo contesto.
@@ -153,8 +153,8 @@ Scegli `yes` per
 Una volta selezionata la configurazione locale o globale, il comando di configurazione tenterà di leggere l’ID organizzazione dall’accesso corrente e quindi di leggere i programmi dell’organizzazione. Nel caso in cui l’organizzazione non possa essere trovata, puoi inserirla manualmente insieme ad alcune indicazioni.
 
 ```
- Selected only organization: XYXYXYXYXYXYXYXXYY
- retrieving programs of your organization ...
+Selected only organization: XYXYXYXYXYXYXYXXYY
+retrieving programs of your organization ...
 ```
 
 Una volta recuperati i programmi, l’utente può selezionare dall’elenco e anche digitare per filtrare.
@@ -248,7 +248,6 @@ Tuttavia, con un’attenta coordinazione, è possibile per più sviluppatori con
 * Per informazioni dettagliate su un comando, digitare:
 
   `aio aem rde <command> --help`
-
 
 ### Flag globali {#global-flags}
 
@@ -507,7 +506,7 @@ L’esempio seguente illustra come visualizzare il livello di authoring, con un 
 >
 >Se viene visualizzato l&#39;errore `RDECLI:UNEXPECTED_API_ERROR` durante la riproduzione con i comandi dei registri per il servizio Author, reimpostare l&#39;ambiente e riprovare. Questo errore verrà generato se l’ultima operazione di ripristino è stata eseguita prima della fine di maggio 2024.
 >
-```
+>```
 >aio aem:rde:reset
 >```
 
@@ -683,6 +682,7 @@ La maggior parte dei comandi supporta il flag globale ```--json``` che sopprime 
   }
 }
 ```
+
 </details>
 
 ### Installa {#install}
@@ -723,6 +723,7 @@ La maggior parte dei comandi supporta il flag globale ```--json``` che sopprime 
   ]
 }
 ```
+
 </details>
 
 ### Elimina {#delete}
@@ -901,6 +902,7 @@ La maggior parte dei comandi supporta il flag globale ```--json``` che sopprime 
   ]
 }
 ```
+
 </details>
 
 ### Ripristina {#reset}
@@ -931,6 +933,7 @@ La maggior parte dei comandi supporta il flag globale ```--json``` che sopprime 
   "status": "reset"
 }
 ```
+
 </details>
 
 ### Riavvia {#restart}
