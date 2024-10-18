@@ -4,10 +4,10 @@ description: Scopri come controllare le pipeline create automaticamente per conv
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6eabf593a7566129d32d9a5888cc480117bef51f
+source-git-commit: 0a08d5fc033f4f4f57b824492766e5b42a801b6e
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 63%
+source-wordcount: '295'
+ht-degree: 33%
 
 ---
 
@@ -19,25 +19,31 @@ Scopri come controllare le pipeline create automaticamente per convalidare ogni 
 
 Quando si utilizzano gli [archivi privati,](private-repositories.md#using) viene creata automaticamente una [pipeline di qualità del codice full-stack](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). Tale pipeline viene avviata ogni volta che la richiesta pull viene aggiornata.
 
-È possibile verificare questi controlli creando un file `.cloudmanager/pr_pipelines.yml` nel ramo predefinito dell’archivio privato.
+È possibile controllare questi controlli creando un file di configurazione `.cloudmanager/pr_pipelines.yml` nel ramo predefinito dell&#39;archivio privato.
 
 ```yaml
 github:
   shouldDeletePreviousComment: false
+  shouldSkipCheckAnnotations: false
 pipelines:
   - type: CI_CD
     template:
       programId: 1234
       pipelineId: 456
-    namePrefix: Full Stack Code Quality Pipeline for PR 
+    namePrefix: Full Stack Code Quality Pipeline for PR
     importantMetricsFailureBehavior: CONTINUE
 ```
 
 | Parametro | Valori possibili | Predefiniti | Descrizione |
-|---|---|---|---|
-| `shouldDeletePreviousComment` | `true` oppure `false` | `false` | Se conservare solo l’ultimo commento insieme ai risultati della scansione del codice in questa richiesta pull di GitHub o mantenerli tutti |
-| `type` | `CI_CD` | n/d | Definisce il comportamento di una pipeline CI/CD |
-| `template.programID` | Numero intero | Non viene riutilizzata alcuna variabile di pipeline | Puoi utilizzarlo per riutilizzare le [variabili pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) impostate su una pipeline esistente creata automaticamente da ogni richiesta pull. |
-| `template.pipelineID` | Numero intero | Non viene riutilizzata alcuna variabile di pipeline | Puoi utilizzarlo per riutilizzare le [variabili pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) impostate su una pipeline esistente creata automaticamente da ogni richiesta pull. |
-| `namePrefix` | Stringa | `Full Stack Code Quality Pipeline for PR` | Utilizzata per impostare il nome della pipeline creata automaticamente |
+| --- | --- | --- | --- |
+| `shouldDeletePreviousComment` | `true` oppure `false` | `false` | Specifica se conservare solo l’ultimo commento con i risultati della scansione del codice in questa richiesta pull GitHub o mantenere tutto. Impostandolo su `false` (impostazione predefinita) i commenti precedenti non vengono eliminati. |
+| `shouldSkipCheckAnnotations` | `true` oppure `false` | `false` | Indica se devono essere presenti o meno annotazioni aggiuntive nella richiesta di pull di GitHub. Impostandolo su `false` (impostazione predefinita), le annotazioni di controllo non vengono ignorate e vengono incluse nel feedback. |
+| `type` | `CI_CD` | n/d | Definisce il comportamento delle configurazioni della pipeline CI/CD (Continuous Integration/Continuous Deployment). |
+| `template.programId` | Numero intero | Non viene riutilizzata alcuna variabile di pipeline | Puoi utilizzarlo per riutilizzare le [variabili pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) impostate su una pipeline esistente creata automaticamente da ogni richiesta pull. |
+| `template.pipelineId` | Numero intero | Non viene riutilizzata alcuna variabile di pipeline | Puoi utilizzarlo per riutilizzare le [variabili pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) impostate su una pipeline esistente creata automaticamente da ogni richiesta pull. |
+| `namePrefix` | Stringa | `Full Stack Code Quality Pipeline for PR` | Utilizzato per impostare il prefisso del nome della pipeline creata automaticamente. |
 | `importantMetricsFailureBehavior` | `CONTINUE` o `FAIL` o `PAUSE` | `CONTINUE` | Imposta il comportamento della metrica importante della pipeline<br>`CONTINUE` = Se una metrica importante non riesce, la pipeline si sposta automaticamente in avanti<br>`FAIL` = La pipeline termina con uno stato FAILED se una metrica importante non riesce<br>`PAUSE` = Il passaggio di analisi del codice riceve uno stato WAITING quando una metrica importante non riesce e deve essere ripreso manualmente |
+
+
+
+
