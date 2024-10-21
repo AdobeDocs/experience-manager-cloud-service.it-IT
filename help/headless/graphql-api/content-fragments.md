@@ -4,10 +4,10 @@ description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience M
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4492536120989423b639bbb75105568a9c328507
+source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
 workflow-type: tm+mt
-source-wordcount: '5469'
-ht-degree: 80%
+source-wordcount: '5557'
+ht-degree: 78%
 
 ---
 
@@ -929,6 +929,15 @@ GraphQL per frammenti di contenuto AEM consente di richiedere un URL a una risor
 La soluzione GraphQL consente di:
 
 * utilizzare `_dmS7Url` sul riferimento `ImageRef`
+   * vedi [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - Riferimento immagine](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* usa `_dmS7Url` su più riferimenti; `ImageRef`, `MultimediaRef` e `DocumentRef`
+   * vedi [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - Più riferimenti](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+* utilizza `_dmS7Url` con funzionalità di ritaglio avanzato
+
+   * La proprietà `_smartCrops` espone le configurazioni di ritaglio avanzato disponibili per una risorsa specifica
+
+   * vedi [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - con ritaglio avanzato](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -1011,6 +1020,36 @@ query allTeams {
     }
   }
 }
+```
+
+### Query di esempio per la consegna di risorse Dynamic Medie per URL, con ritaglio avanzato {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+
+Di seguito è riportato un esempio di query:
+
+* per esporre le configurazioni di ritaglio avanzato disponibili per le risorse richieste
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      title
+      teamMembers {
+        profilePicture {
+          ... on ImageRef {
+            height
+            width
+            _dmS7Url
+            _smartCrops {
+              width
+              height
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+} 
 ```
 
 ## GraphQL per AEM: riepilogo delle estensioni {#graphql-extensions}
