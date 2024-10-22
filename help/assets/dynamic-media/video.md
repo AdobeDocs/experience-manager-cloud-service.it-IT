@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
 workflow-type: tm+mt
-source-wordcount: '10490'
+source-wordcount: '10543'
 ht-degree: 1%
 
 ---
@@ -440,7 +440,7 @@ Affinché i rapporti video funzionino correttamente, viene creato automaticament
 
 **Per visualizzare i report video:**
 
-1. Nell&#39;angolo superiore sinistro dell&#39;Experience Manager, selezionare il logo dell&#39;Experience Manager. Nella barra a sinistra, vai a **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Assets]** > **[!UICONTROL Rapporti video]**.
+1. Nell&#39;angolo superiore sinistro dell&#39;Experience Manager, selezionare il logo dell&#39;Experience Manager. Nella barra a sinistra, fai clic su ![Icona Martello](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > **[!UICONTROL Rapporti video]**.
 1. Nella pagina Rapporti video eseguire una delle operazioni seguenti:
 
    * Nell&#39;angolo superiore destro selezionare l&#39;icona **[!UICONTROL Aggiorna report video]**.
@@ -532,7 +532,7 @@ L’abilitazione di una qualsiasi delle tre funzionalità precedenti, le abilita
 
 | Funzionalità | Descrizione |
 | --- | --- |
-| TRATTINO | DASH (Digital Adaptive Streaming over HTTP) è lo standard internazionale per lo streaming video ed è ampiamente adottato tra diversi visualizzatori video. Quando DASH è abilitato sul tuo account, puoi scegliere tra DASH o HLS per lo streaming video adattivo. In alternativa, è possibile optare per entrambi con il passaggio automatico tra i lettori quando si seleziona **[!UICONTROL auto]** come tipo di riproduzione nel predefinito visualizzatore.<br>Alcuni vantaggi chiave dell&#39;attivazione di DASH sul tuo account includono:<br>·Creare un pacchetto di video DASH per lo streaming con bitrate adattivo. Questo metodo porta a una maggiore efficienza nella consegna. Lo streaming adattivo assicura la migliore esperienza di visualizzazione per i clienti.<br>·Streaming ottimizzato per il browser con lettori Dynamic Medie passa da HLS a DASH per garantire la migliore qualità del servizio. Il lettore video passa automaticamente a HLS quando si utilizza un browser Safari.<br>·È possibile configurare il metodo di streaming preferito (HLS o DASH) modificando il predefinito visualizzatore video.<br>·La codifica video ottimizzata garantisce che non venga utilizzato spazio di archiviazione aggiuntivo durante l&#39;attivazione della funzionalità DASH. Viene creato un unico set di codifiche video sia per HLS che per DASH per ottimizzare i costi di archiviazione video.<br>·Consente di rendere la distribuzione di video più accessibile ai clienti.<br>·Ottieni l&#39;URL di streaming anche tramite API. |
+| TRATTINO | DASH (Digital Adaptive Streaming over HTTP) è lo standard internazionale per lo streaming video ed è ampiamente adottato tra diversi visualizzatori video. Quando DASH è abilitato sul tuo account, puoi scegliere tra DASH o HLS per lo streaming video adattivo. In alternativa, è possibile optare per entrambi con il passaggio automatico tra i lettori quando si seleziona **[!UICONTROL auto]** come tipo di riproduzione nel predefinito visualizzatore.<br>Alcuni vantaggi chiave dell&#39;attivazione di DASH sul tuo account includono:<ul><li>Video con flusso DASH del pacchetto per lo streaming con bitrate adattivo. Questo metodo porta a una maggiore efficienza nella consegna. Lo streaming adattivo assicura la migliore esperienza di visualizzazione per i clienti.</li><li>Lo streaming ottimizzato per il browser con i lettori Dynamic Medie passa dallo streaming HLS a quello DASH per garantire la migliore qualità del servizio. Il lettore video passa automaticamente a HLS quando si utilizza un browser Safari.</li><li>Puoi configurare il metodo di streaming preferito (HLS o DASH) modificando il predefinito visualizzatore video.</li><li>La codifica video ottimizzata garantisce che non venga utilizzata alcuna risorsa di archiviazione aggiuntiva durante l’abilitazione della funzionalità DASH. Viene creato un unico set di codifiche video sia per HLS che per DASH per ottimizzare i costi di archiviazione video.</li><li>Consente di rendere la distribuzione di video più accessibile ai clienti.</li><li>Ottieni l’URL di streaming anche tramite API.</li></ul> |
 | Sottotitoli multipli e tracce audio | Potete trarre vantaggio dall&#39;attivazione automatica del supporto di più didascalie e tracce audio. Dopo l’abilitazione, tutti i video successivi caricati vengono elaborati con una nuova architettura back-end che include il supporto per l’aggiunta di più didascalie e tracce audio ai video. |
 | Sottotitoli generati da IA (disponibilità limitata) | Crea didascalie per i video basati su AI. Utilizzando l’intelligenza artificiale, crea la trascrizione del video e la converte in sottotitoli. Anche la timeline è definita. |
 
@@ -554,7 +554,7 @@ L’abilitazione di una qualsiasi delle tre funzionalità precedenti, le abilita
 1. L’Assistenza clienti di Adobe ti aggiunge alla Lista di attesa clienti in base all’ordine in cui vengono inviate le richieste.
 1. Quando Adobe è pronto a gestire la richiesta, l’Assistenza clienti ti contatta per coordinare e impostare una data limite per l’abilitazione.
 1. L’Assistenza clienti Adobe ti invia una notifica dopo il completamento.
-1. A questo punto, eseguire una delle operazioni seguenti:
+1. A questo punto eseguire una o più delle operazioni seguenti:
 
    * Crea il [predefinito visualizzatore video](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) come al solito.
    * Crea il tuo [profilo video](/help/assets/dynamic-media/video-profiles.md) come al solito.
@@ -708,8 +708,8 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
 
 1. [Carica il video principale in una cartella](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) a cui è già stato assegnato un profilo video.
 1. Passa alla risorsa video caricata a cui desideri aggiungere più didascalie e tracce audio.
-1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
-1. Sulla barra degli strumenti fare clic sull&#39;icona Proprietà, ovvero un cerchio contenente una &quot;i&quot;.
+1. In modalità di selezione delle risorse, da ![Visualizza icona scheda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista a schede) o ![Visualizza icona elenco](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista a elenco), seleziona la risorsa video.
+1. Sulla barra degli strumenti fare clic su ![Icona informazioni](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Proprietà.
    ![Risorsa video selezionata con segno di spunta sull&#39;immagine miniatura video e Proprietà visualizzazione evidenziate sulla barra degli strumenti.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Risorsa video selezionata nella vista a schede.*
 1. Nella pagina Proprietà del video, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
 
@@ -722,12 +722,12 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
    >Dopo aver completato una delle attività di cui sopra, torna a questi passaggi.
 
    ![Scheda Sottotitoli e tracce audio nella pagina Proprietà.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *Scheda Sottotitoli e tracce audio nella pagina Proprietà del video.*
+   *Scheda Brani didascalia e audio nella pagina Proprietà del video.*
 
 1. Per aggiungere una o più tracce audio a un video, effettuate le seguenti operazioni:
    1. Seleziona **[!UICONTROL Carica tracce audio]**.
    1. Passa a uno o più file .mp3 e selezionali, quindi aprili.
-   1. Affinché le tracce audio siano visibili nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** sul lettore multimediale, è necessario aggiungere i dettagli richiesti su ciascun file di traccia audio. In questo modo, tutte le tracce audio sono elencate e accessibili correttamente. Selezionate l&#39;icona della matita a destra del nome di un file di traccia audio. Nella finestra di dialogo **Modifica traccia audio** immettere i dettagli richiesti seguenti:
+   1. Affinché le tracce audio siano visibili nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** sul lettore multimediale, è necessario aggiungere i dettagli richiesti su ciascun file di traccia audio. In questo modo, tutte le tracce audio sono elencate e accessibili correttamente. Fai clic sull&#39;icona ![Disegna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) a destra del nome di un file di traccia audio. Nella finestra di dialogo **Modifica traccia audio** immettere i dettagli richiesti seguenti:
 
       | Metadati traccia audio | Descrizione |
       |--- |--- |
@@ -758,7 +758,7 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
 
    1. Nella parte superiore destra della pagina, fai clic su **[!UICONTROL Crea didascalia]** > **[!UICONTROL Carica file]**.
    1. Passare a uno o più file `.vtt` preesistenti e selezionarli.
-   1. Affinché i sottotitoli siano visibili sul lettore multimediale, *devi* aggiungere i dettagli richiesti su *ogni* file di sottotitoli che carichi. Seleziona l’icona a forma di matita a destra del nome di un file di didascalia. Nella finestra di dialogo **Modifica didascalia** immettere i dettagli richiesti seguenti sul file:
+   1. Affinché i sottotitoli siano visibili sul lettore multimediale, *devi* aggiungere i dettagli richiesti su *ogni* file di sottotitoli che carichi. Fai clic sull&#39;icona ![Disegna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) a destra del nome di un file di didascalia. Nella finestra di dialogo **Modifica didascalia** immettere i dettagli richiesti seguenti sul file:
 
       | Metadati didascalia | Descrizione |
       |--- |--- |
@@ -791,8 +791,8 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
 
       | Opzione | Descrizione |
       |--- |--- |
-      | Traccia audio da convertire | Nell’elenco a discesa, scegli il file di traccia audio caricato dal quale desideri generare i sottotitoli utilizzando l’intelligenza artificiale. |
-      | Lingue di output | Nell&#39;elenco a discesa selezionare una o più lingue in cui si desidera visualizzare il file di didascalia.<br>Per rimuovere una lingua selezionata, fare clic su **X**.<br>Durante la riproduzione del video, l&#39;elenco delle lingue viene visualizzato nel lettore multimediale nell&#39;ordine in cui sono state selezionate qui. |
+      | Traccia audio da convertire | Fai clic sull&#39;icona ![freccia giù](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), quindi scegli il file di traccia audio caricato dal quale desideri generare i sottotitoli con IA. |
+      | Lingue di output | Fai clic sull&#39;icona ![freccia giù](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), quindi seleziona una o più lingue in cui vuoi visualizzare il file di didascalia.<br>Per rimuovere una lingua selezionata, fare clic sull&#39;icona ![Chiudi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>Durante la riproduzione del video, l&#39;elenco delle lingue viene visualizzato nel lettore multimediale nell&#39;ordine in cui sono state selezionate qui. |
 
    1. Fai clic su **[!UICONTROL Fine]**.
    1. Nell&#39;angolo superiore destro della pagina, nel menu a discesa **[!UICONTROL Salva e chiudi]**, fai clic su **[!UICONTROL Salva]**.
@@ -802,7 +802,7 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
       >
       >In base alle impostazioni di caching dell’istanza, l’elaborazione dei metadati può richiedere diversi minuti prima che venga visualizzata nell’anteprima e negli URL pubblicati.
 
-   1. (Facoltativo) Seleziona l’icona della matita a destra del nome di un file di didascalia. Nella finestra di dialogo **Modifica didascalia** è possibile modificare i dettagli seguenti sul file:
+   1. (Facoltativo) Fai clic su ![Icona Disegno](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) a destra del nome di un file di didascalia. Nella finestra di dialogo **Modifica didascalia** è possibile modificare i dettagli seguenti sul file:
 
       | Metadati didascalia | Descrizione |
       | --- | --- |
@@ -821,12 +821,12 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
       ![Finestra di dialogo Traduci didascalie.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
       *La finestra di dialogo Traduci didascalie consente di utilizzare un file di didascalia esistente per generare nuovi file di didascalia in più lingue.*
 
-   1. Nella finestra di dialogo **Traduci didascalia** impostare le opzioni seguenti:
+   1. Nella finestra di dialogo **Traduci didascalie**, imposta le opzioni seguenti:
 
       | Opzione | Descrizione |
       |--- |--- |
-      | Didascalia da tradurre | Nell’elenco a discesa, scegli un file di didascalia da cui desideri generare i sottotitoli utilizzando l’intelligenza artificiale. |
-      | Lingue di output | Nell&#39;elenco a discesa selezionare una o più lingue in cui si desidera visualizzare il file di didascalia.<br>Per rimuovere una lingua selezionata, fare clic su **X**.<br>Durante la riproduzione del video, l&#39;elenco delle lingue viene visualizzato nel lettore multimediale nell&#39;ordine in cui sono state selezionate qui. |
+      | Didascalia da tradurre | Fai clic sull&#39;icona ![freccia giù](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), quindi scegli un file di didascalia da cui desideri generare le didascalie utilizzando l&#39;intelligenza artificiale. |
+      | Lingue di output | Fai clic sull&#39;icona ![freccia giù](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), quindi seleziona una o più lingue in cui vuoi visualizzare il file di didascalia.<br>Per rimuovere una lingua selezionata, fare clic sull&#39;icona ![Chiudi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>Durante la riproduzione del video, l&#39;elenco delle lingue viene visualizzato nel lettore multimediale nell&#39;ordine in cui sono state selezionate qui. |
 
    1. Fai clic su **[!UICONTROL Fine]**.
    1. Nell&#39;angolo superiore destro della pagina, nel menu a discesa **[!UICONTROL Salva e chiudi]**, fai clic su **[!UICONTROL Salva]**.
@@ -836,7 +836,7 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e VTT di Adobe. Inoltr
       >
       >In base alle impostazioni di caching dell’istanza, l’elaborazione dei metadati può richiedere diversi minuti prima che venga visualizzata nell’anteprima e negli URL pubblicati.
 
-   1. (Facoltativo) Seleziona l’icona della matita a destra del nome di un file di didascalia. Nella finestra di dialogo **Modifica didascalia** è possibile modificare i dettagli seguenti sul file:
+   1. (Facoltativo) Fai clic su ![Icona Disegno](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) a destra del nome di un file di didascalia. Nella finestra di dialogo **Modifica didascalia** è possibile modificare i dettagli seguenti sul file:
 
       | Metadati didascalia | Descrizione |
       | --- | --- |
@@ -888,11 +888,12 @@ Puoi osservare lo stato del ciclo di vita di qualsiasi file di didascalia o trac
 **Per visualizzare lo stato del ciclo di vita di un video:**
 
 1. Passa alla risorsa video di cui desideri visualizzare lo stato del ciclo di vita.
-1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
-1. Sulla barra degli strumenti, seleziona l’icona Proprietà (un cerchio con una &quot;i&quot; all’interno).
-1. Nella pagina Proprietà, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**. Nella colonna Stato (Status), notate lo stato di ogni didascalia o file audio.
+1. In modalità di selezione delle risorse, da ![Visualizza icona scheda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista a schede) o ![Visualizza icona elenco](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista a elenco), seleziona la risorsa video.
+1. Sulla barra degli strumenti fare clic su ![Icona informazioni](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Proprietà.
+1. Nella pagina **Proprietà**, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
+1. Nella colonna **[!UICONTROL Stato]**, annota lo stato di ogni didascalia o file audio.
 
-| Stato traccia audio o didascalia | Descrizione |
+| Stato dei sottotitoli e delle tracce audio | Descrizione |
 | --- | --- |
 | Elaborazione | Quando viene aggiunta e salvata una nuova didascalia o un nuovo file di traccia audio, il file entra in uno stato di &quot;Elaborazione&quot;. Dynamic Medie elabora il file allegando il manifesto di streaming al video principale. |
 | Elaborato | Al termine dell&#39;elaborazione, il file di didascalia o di traccia audio, o la traccia audio originale associata al video principale, viene visualizzato in stato &quot;Elaborato&quot;. Puoi visualizzare in anteprima i file di didascalia e di traccia audio che appaiono come &quot;Elaborati&quot; *prima* che il video venga pubblicato live. |
@@ -900,7 +901,6 @@ Puoi osservare lo stato del ciclo di vita di qualsiasi file di didascalia o trac
 | Non riuscito | Lo stato &quot;Non riuscito&quot; indica che l&#39;elaborazione di un file di didascalia o di traccia audio non è stata completata. Elimina la didascalia o il file di traccia audio e caricalo di nuovo. |
 | La pagina di cui è stata annullata la pubblicazione   | Quando si annulla esplicitamente la pubblicazione di un video principale pubblicato, vengono annullati anche i file di didascalia o di traccia audio aggiunti al video. |
 
-![Colonna di stato evidenziata per i campi Sottotitoli e Tracce audio.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Stato del ciclo di vita di ogni didascalia e file di traccia audio caricati.*
 
 ### Impostare l&#39;audio predefinito per un video con più tracce audio
 
@@ -918,16 +918,16 @@ Tuttavia, tutti i file di traccia audio caricati possono essere impostati come a
 **Per impostare l&#39;audio predefinito per un video con più tracce audio:**
 
 1. Passa alla risorsa video di cui desideri impostare la traccia audio predefinita.
-1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
-1. Sulla barra degli strumenti, seleziona l’icona Proprietà (un cerchio con una &quot;i&quot; all’interno).
+1. In modalità di selezione delle risorse, da ![Visualizza icona scheda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista a schede) o ![Visualizza icona elenco](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista a elenco), seleziona la risorsa video.
+1. Sulla barra degli strumenti fare clic su ![Icona informazioni](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Proprietà.
 1. Nella pagina Proprietà, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
 1. Sotto l&#39;intestazione **Tracce audio**, selezionare il file di traccia audio che si desidera impostare come predefinito del video.
-1. Seleziona **[!UICONTROL Imposta come predefinito]**.
-Nella finestra di dialogo **Imposta come predefinito**, seleziona **[!UICONTROL Sostituisci]**.
+1. Fai clic sull&#39;![icona audio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Imposta come predefinito]**.
+1. Nella finestra di dialogo **Imposta come predefinito** fare clic su **[!UICONTROL Sostituisci]**.
 
    ![L&#39;intestazione Tracce audio con il nome del file di traccia audio selezionato ed evidenziato il pulsante Imposta come predefinito.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*Impostazione della traccia audio predefinita per un video.*
 
-1. Nell&#39;angolo superiore destro selezionare **[!UICONTROL Salva e chiudi]**.
+1. Nell&#39;angolo superiore destro fare clic su **[!UICONTROL Salva e chiudi]**.
 1. Publish il video. Consulta [Risorse Publish](publishing-dynamicmedia-assets.md).
 
 ### Visualizzare in anteprima un video con più sottotitoli e tracce audio {#preview-video-audio-subtitle}
@@ -948,21 +948,20 @@ Consulta [Aggiungere Dynamic Medie Assets alle pagine](/help/assets/dynamic-medi
 
 1. In **[!UICONTROL Assets]**, passa a un video esistente a cui sono stati aggiunti più sottotitoli e tracce audio.
 1. Fai clic sulla risorsa video per aprirla in modalità anteprima.
-1. Nella pagina di anteprima, nell&#39;angolo superiore sinistro della pagina, seleziona l&#39;elenco a discesa, quindi seleziona **[!UICONTROL Visualizzatori]**.
+1. Nella pagina di anteprima, nell&#39;angolo superiore sinistro della pagina, fai clic sull&#39;icona ![Barra a sinistra](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![freccia giù](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), quindi seleziona **[!UICONTROL Visualizzatori]**.
 
    ![Elenco a discesa con l&#39;opzione Visualizzatori.](/help/assets/dynamic-media/assets/msma-selectviewers.png)
 
-1. Nell&#39;elenco Visualizzatori selezionare il visualizzatore che si desidera utilizzare per l&#39;anteprima video. Ad esempio, la schermata seguente mostra il visualizzatore **[!UICONTROL Video]** selezionato.
+1. Nell&#39;angolo superiore sinistro della pagina fare clic sull&#39;icona ![Barra a sinistra](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) Visualizzatori ![Icona freccia giù](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), quindi selezionare un visualizzatore da utilizzare per l&#39;anteprima video.
 
-   ![Selezione del visualizzatore video dall&#39;elenco a discesa Visualizzatori.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
-
-1. Nell&#39;angolo in basso a destra, a sinistra dell&#39;icona del volume, selezionare l&#39;icona a forma di fumetto, quindi selezionare l&#39;audio o la didascalia che si desidera ascoltare o vedere o entrambi. Se lo desideri, in Sottotitoli puoi disattivare la visualizzazione di qualsiasi sottotitolo facendo clic su **[!UICONTROL Disattivato]**.
+1. Nell’angolo in basso a destra della pagina, fai clic sull’icona del fumetto, quindi seleziona l’audio o il sottotitolo/didascalia che desideri ascoltare o visualizzare, oppure entrambi.
 
    ![Elenco a comparsa Audio e didascalie nel visualizzatore video.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulazione di un utente che seleziona l&#39;audio e la didascalia per la riproduzione del video.*
 
-1. Per iniziare la riproduzione, seleziona il pulsante **[!UICONTROL Riproduci]** del video.
-Osserva i pulsanti **[!UICONTROL URL]** e **[!UICONTROL Incorpora]** nell&#39;angolo inferiore sinistro. Utilizza questi pulsanti per [collegare l&#39;URL del video all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o per [incorporare il video rispettivamente in una pagina Web](/help/assets/dynamic-media/embed-code.md).
-1. Selezionare **[!UICONTROL Chiudi]** nell&#39;angolo superiore destro della pagina di anteprima.
+1. Per iniziare la riproduzione, fare clic sull&#39;icona ![PLay](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+Se lo desideri, fai clic sull&#39;icona ![Ingrandisci](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg) per ingrandire la finestra di visualizzazione.
+Osserva i pulsanti **[!UICONTROL URL]** e **[!UICONTROL Incorpora]** nell&#39;angolo inferiore sinistro della pagina. Utilizza questi pulsanti per [collegare l&#39;URL del video all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o per [incorporare il video rispettivamente in una pagina Web](/help/assets/dynamic-media/embed-code.md).
+1. Fai clic su **[!UICONTROL Chiudi]** nell&#39;angolo superiore destro della pagina di anteprima.
 
 ### Eliminare i file di didascalia o di traccia audio da un video
 
@@ -973,13 +972,13 @@ Non è possibile eliminare la traccia audio originale estratta da un video princ
 **Per eliminare i file di didascalia o di traccia audio da un video:**
 
 1. Passa alla risorsa video di cui desideri impostare la traccia audio predefinita.
-1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
-1. Sulla barra degli strumenti, seleziona l’icona Proprietà (un cerchio con una &quot;i&quot; all’interno).
+1. In modalità di selezione delle risorse, da ![Visualizza icona scheda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista a schede) o ![Visualizza icona elenco](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista a elenco), seleziona la risorsa video.
+1. Sulla barra degli strumenti fare clic su ![Icona informazioni](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Proprietà.
 1. Nella pagina Proprietà, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
 1. Effettuare una delle seguenti operazioni:
 
-   * Sottotitoli: sotto l&#39;intestazione **Sottotitoli**, seleziona uno o più file di sottotitoli da eliminare dal video, quindi fai clic su **[!UICONTROL Elimina]**.
-   * Tracce audio - Sotto l&#39;intestazione **Tracce audio**, selezionare uno o più file di tracce audio che si desidera eliminare dal video, quindi fare clic su **[!UICONTROL Elimina]**.
+   * Sottotitoli: sotto l&#39;intestazione **Sottotitoli**, seleziona uno o più file di sottotitoli da eliminare dal video, quindi fai clic sull&#39;icona ![Elimina](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Elimina]**.
+   * Tracce audio - Sotto l&#39;intestazione **Tracce audio**, seleziona uno o più file di tracce audio da eliminare dal video, quindi fai clic sull&#39;icona ![Elimina](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Elimina]**.
 
 1. Nella finestra di dialogo Elimina fare clic su **[!UICONTROL OK]**.
 1. Publish il video.
@@ -995,22 +994,23 @@ Non è possibile scaricare la traccia audio originale estratta da un file video 
 **Per scaricare i file di didascalia o di traccia audio caricati in un video:**
 
 1. Passa alla risorsa video di cui desideri impostare la traccia audio predefinita.
-1. In modalità di selezione delle risorse, dalla Vista a elenco o dalla Vista a schede, seleziona la risorsa video.
-1. Sulla barra degli strumenti, seleziona l’icona Proprietà (un cerchio con una &quot;i&quot; all’interno).
-1. Nella pagina Proprietà, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
+1. In modalità di selezione delle risorse, da ![Visualizza icona scheda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista a schede) o ![Visualizza icona elenco](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista a elenco), seleziona la risorsa video.
+1. Sulla barra degli strumenti fare clic su ![Icona informazioni](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Proprietà.
+1. Nella pagina **Proprietà**, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
 1. Effettuare una delle seguenti operazioni:
 
-   * Sottotitoli: sotto l&#39;intestazione **Sottotitoli**, seleziona uno o più file di sottotitoli da scaricare dal video, quindi seleziona **[!UICONTROL Scarica]**.
-   * Tracce audio - Sotto l&#39;intestazione **Tracce audio**, seleziona uno o più file di tracce audio da scaricare dal video, quindi seleziona **[!UICONTROL Scarica]**.
+   * Sottotitoli: sotto l&#39;intestazione **Sottotitoli**, seleziona uno o più file di sottotitoli da scaricare dal video, quindi fai clic sull&#39;icona ![Scarica](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Scarica]**.
+   * Tracce audio - Sotto l&#39;intestazione **Tracce audio**, seleziona uno o più file di tracce audio da scaricare dal video, quindi fai clic sull&#39;icona ![Scarica](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Scarica]**.
 
 1. Nella finestra di dialogo Scarica impostare le opzioni seguenti:
 
-   | Opzione | Descrizione |
+   | Opzione di download | Descrizione |
    |--- |--- |
    | Salva con nome | Utilizzare il nome file predefinito specificato nel campo di testo Salva con nome oppure specificare un nome personalizzato. |
    | Crea una cartella separata per ogni risorsa | Creare una cartella per ogni file di didascalia o di traccia audio selezionato per il download. |
    | E-mail | Utilizza il tuo programma e-mail predefinito per inviare il file .zip a un indirizzo e-mail specificato. |
    | Risorse | Specifica il numero di file da scaricare e la dimensione totale combinata di tutti i file selezionati. Deselezionando questa opzione, il pulsante **[!UICONTROL Scarica]** viene disattivato, impedendo di scaricare qualsiasi file. |
+   | Rappresentazioni | Una rappresentazione si riferisce a una versione alternativa o a un’anteprima del file originale, in genere una versione più piccola o a risoluzione inferiore. Se è visualizzato come 0 B, probabilmente significa che non è disponibile alcuna versione alternativa o che è troppo piccolo per registrare una dimensione. |
 
 1. Seleziona **[!UICONTROL Scarica]**.
 1. Publish il video. Consulta [Risorse Publish](publishing-dynamicmedia-assets.md).
@@ -1060,7 +1060,7 @@ Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, vede
 
    For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.-->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
 
 Seguire le istruzioni visualizzate da un sito per creare e salvare il file WebVTT. Al termine, copiate il contenuto del file di didascalia e incollatelo in un editor di testo normale e salvatelo con un&#39;estensione VTT.
 
@@ -1085,11 +1085,11 @@ In genere, si desidera assegnare al file di didascalia `.vtt` lo stesso nome del
 
      Annotare `,1` alla fine del percorso della didascalia. Subito dopo l&#39;estensione del nome file VTT nel percorso, è possibile abilitare (attivare) o disabilitare (disattivare) il pulsante dei sottotitoli codificati sulla barra del lettore video impostando rispettivamente su `,1` o `,0`.
 
-   * Per un&#39;esperienza di visualizzazione video incorporata, selezionare **[!UICONTROL Codice di incorporamento]**. Nella finestra di dialogo Incorpora codice, seleziona e copia il codice da incorporare negli Appunti, quindi incolla il codice in un semplice editor di testo. Aggiungi il codice da incorporare copiato con la seguente sintassi:
+   * Per un&#39;esperienza di visualizzazione video incorporata, fare clic su **[!UICONTROL Codice di incorporamento]**. Nella finestra di dialogo Incorpora codice, seleziona e copia il codice da incorporare negli Appunti, quindi incolla il codice in un semplice editor di testo. Aggiungi il codice da incorporare copiato con la seguente sintassi:
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-     Annotare `,1` alla fine del percorso della didascalia. Subito dopo l&#39;estensione del nome file VTT nel percorso, è possibile abilitare (attivare) o disabilitare (disattivare) il pulsante dei sottotitoli codificati sulla barra del lettore video impostando rispettivamente su `,1` o `,0`.
+     Osserva `,1` alla fine del percorso della didascalia. Subito dopo l&#39;estensione del nome file VTT nel percorso, è possibile abilitare (attivare) o disabilitare (disattivare) il pulsante dei sottotitoli codificati sulla barra del lettore video impostando rispettivamente su `,1` o `,0`.
 
 ## Aggiungere marcatori capitolo al video {#adding-chapter-markers-to-video}
 
@@ -1170,7 +1170,6 @@ Vedere [WebVTT: formato delle tracce di testo per video Web](https://w3c.github.
    </table>
 
 
-
 ## Informazioni sulle miniature video {#about-video-thumbnails}
 
 Una miniatura video è una versione di dimensioni ridotte di un fotogramma video o di una risorsa immagine che rappresenta il video per il cliente. La miniatura dovrebbe servire a incoraggiare un cliente a selezionare il video.
@@ -1190,26 +1189,28 @@ La possibilità di personalizzare una miniatura video è disponibile solo dopo a
 
    * [I tuoi video sono stati caricati nella cartella](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
+
 1. Passa a una risorsa video caricata di cui desideri modificare l’immagine in miniatura.
-1. In modalità di selezione delle risorse da **[!UICONTROL Vista a elenco]** o **[!UICONTROL Vista a schede]**, seleziona la risorsa video.
-1. Sulla barra degli strumenti, seleziona l&#39;icona **[!UICONTROL Proprietà]** (un cerchio con una &quot;i&quot; all&#39;interno).
-1. Nella pagina Proprietà del video, seleziona **[!UICONTROL Modifica miniatura]**.
-1. Nella pagina Modifica miniatura eseguire una delle operazioni seguenti:
+1. In modalità di selezione delle risorse, da ![Visualizza icona scheda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista a schede) o ![Visualizza icona elenco](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista a elenco), seleziona la risorsa video.
+1. Sulla barra degli strumenti fare clic su ![Icona informazioni](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Proprietà.
+1. Nella pagina Proprietà del video, fai clic su **[!UICONTROL Cambia miniatura]**.
+1. Nella finestra di dialogo Cambia miniatura eseguire una delle operazioni seguenti:
 
    * Per utilizzare un fotogramma del video come nuova miniatura:
 
-      * Sulla barra degli strumenti fare clic sull&#39;opzione **[!UICONTROL Seleziona frame da video]**.
-      * Selezionare il pulsante Riproduci, quindi selezionare il pulsante Pausa sul fotogramma che si desidera catturare come nuova miniatura del video.
+      * Sulla barra degli strumenti fare clic sulla scheda **[!UICONTROL Seleziona frame da video]**.
+      * Fai clic sull&#39;icona ![Play](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+      * Fare clic sull&#39;icona ![Pausa](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PauseCircle_22_N.svg) del fotogramma che si desidera acquisire come nuova miniatura del video.
 
    * Per utilizzare una risorsa immagine come nuova miniatura:
 
-      * Sulla barra degli strumenti, selezionare **[!UICONTROL Seleziona miniatura da Assets]**.
-      * Seleziona **[!UICONTROL Seleziona miniatura]**.
+      * Sulla barra degli strumenti fare clic sulla scheda **[!UICONTROL Seleziona miniatura da Assets]**.
+      * Fare clic sul pulsante **[!UICONTROL Seleziona miniatura]**.
       * Passa a una risorsa immagine caricata e pubblicata in precedenza che desideri utilizzare. La risorsa viene ridimensionata automaticamente in modo da fungere da immagine miniatura per il video.
-      * Seleziona la risorsa immagine, quindi seleziona **[!UICONTROL Seleziona]**.
+      * Seleziona la risorsa immagine, quindi fai clic su **[!UICONTROL Seleziona]**.
 
-1. Nella pagina Modifica miniatura, seleziona **[!UICONTROL Salva modifica]**.
-1. Nella pagina Proprietà del video, nell&#39;angolo superiore destro, seleziona **[!UICONTROL Salva e chiudi]**.
+1. Nella finestra di dialogo Cambia miniatura fare clic su **[!UICONTROL Salva modifica]**.
+1. Nella pagina Proprietà del video, nell&#39;angolo superiore destro, fai clic su **[!UICONTROL Salva e chiudi]** o **[!UICONTROL Salva]**.
 
 
 
