@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: b616f85df5211897286cc7031fdff809296ebcd6
+source-git-commit: 9d4c8946dcdf0e175a54a1dcf55513f01e5648aa
 workflow-type: tm+mt
-source-wordcount: '4118'
+source-wordcount: '4114'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Vuoi saperne di più? Vai a [Best practice per ottimizzare la qualità delle imm
 
 Poiché la percezione della qualità dell&#39;immagine varia da persona a persona, a volte un approccio sistematico alla sperimentazione è essenziale per ottenere risultati desiderabili. Adobe Experience Manager facilita questo processo con più di 100 comandi Dynamic Medie per il miglioramento delle immagini.
 
-Vuoi saperne di più? Guarda [Snapshot Dynamic Medie](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minuti, 17 secondi).
+Vuoi saperne di più? Guarda [Snapshot Dynamic Medie](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minuti, 17 secondi).
 
 Per valutare l&#39;impatto di questi diversi comandi sulla qualità delle immagini, puoi caricare un&#39;immagine in Dynamic Medie, utilizzare l&#39;interfaccia dello strumento all&#39;URL specificato e applicare i comandi che desideri provare.
 
@@ -154,7 +154,7 @@ Il ritaglio avanzato è una funzione in Dynamic Medie che utilizza Adobe Sensei,
 
 Una best practice prevede la creazione di un profilo immagine con Ritaglio avanzato. Nel profilo, puoi definire diverse dimensioni dello schermo e consentire ad Adobe Sensei di fare il resto, assicurandoti che le immagini e i video siano sempre ottimizzati per il dispositivo dell’utente.
 
-Vuoi saperne di più? Guarda [Utilizzo di Ritaglio avanzato con AEM Assets Dynamic Medie](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuti, 35 secondi) e [Utilizzo di Ritaglio avanzato Dynamic Medie per video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minuti, 22 secondi).
+Vuoi saperne di più? Guarda [Utilizzo di Ritaglio avanzato con AEM Assets Dynamic Medie](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuti, 35 secondi) e [Utilizzo di Ritaglio avanzato Dynamic Medie per video](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minuti, 22 secondi).
 
 ### Migliorare le classificazioni SEO
 
@@ -163,14 +163,14 @@ Vuoi saperne di più? Guarda [Utilizzo di Ritaglio avanzato con AEM Assets Dynam
 Utilizza regolarmente le seguenti raccomandazioni per garantire che le immagini contribuiscano in modo efficace alla strategia SEO complessiva.
 
 * **Nomi file immagine significativi:**
-Utilizza nomi di file descrittivi che riflettono il contenuto dell’immagine. Ad esempio:
+Utilizza nomi di file descrittivi che riflettono il contenuto dell’immagine. Ad esempio,
 
    * utilizza `myCompany-Silver-Wrist-Watch`
    * *evitare* `myCompany_Silver_Wrist_Watch` o `myCompanySilverWristWatch`
 
   In questo modo i motori di ricerca possono comprendere il contesto dell’immagine e migliorare la SEO (Search Engine Optimization). Google preferisce i trattini ai caratteri di sottolineatura o agli spazi nel nome di un file. Inoltre, evita di concatenare le parole in un nome di file.
 * **Dominio personalizzato:**
-Implementa un dominio personalizzato che includa la tua azienda o il tuo nome del brand per rafforzare il riconoscimento e la fiducia nel brand. Ad esempio:
+Implementa un dominio personalizzato che includa la tua azienda o il tuo nome del brand per rafforzare il riconoscimento e la fiducia nel brand. Ad esempio,
 
    * utilizza `http://images.mycompany.com/is/image/companyname/`
    * *evitare* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
@@ -182,7 +182,7 @@ Scopri come trasformare gli URL in modo condizionale in base a vari fattori, mig
 Vuoi saperne di più? Vai a [Utilizza i set di regole per trasformare gli URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
 * **Imaging avanzato e ritaglio avanzato:**
 Utilizza le funzioni Smart Imaging e Ritaglio avanzato di Dynamic Medie per distribuire immagini ottimizzate e reattive. In questo modo non solo migliora i tempi di caricamento delle pagine, ma contribuisce anche positivamente alle classificazioni SEO (Search Engine Optimization).
-Vuoi saperne di più? Vai a [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) oppure guarda [Utilizzo di Smart Crop con AEM Assets Dynamic Medie](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuti, 35 secondi).
+Vuoi saperne di più? Vai a [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) oppure guarda [Utilizzo di Smart Crop con AEM Assets Dynamic Medie](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuti, 35 secondi).
 
 Ricorda che queste best practice si allineano bene con le best practice Google per l’immagine SEO. Tali pratiche sottolineano l’importanza di fornire contesto e chiarezza ai motori di ricerca attraverso convenzioni di denominazione appropriate, dati strutturati e consegna di immagini ottimizzata.
 
@@ -198,9 +198,9 @@ Dynamic Medie offre una suite di comandi per migliorare le immagini e creare eff
 
 | Attività | Cosa fare |
 | --- | --- |
-| **Carica e pubblica l&#39;immagine originale** | · Iniziare caricando l&#39;immagine originale su Dynamic Medie.<br>· Assicurarsi che sia pubblicato e accessibile tramite un URL.<br>· In questo esempio, viene caricata in Dynamic Medie un&#39;immagine d&#39;archivio di un orologio con sfondo bianco (chiamiamola &quot;Immagine X&quot;).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer) |
-| **Creare una maschera** | · Sviluppare una maschera che definisca il soggetto (l&#39;area in cui si desidera applicare gli effetti) e lo sfondo (l&#39;area da modificare).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)<br>· Le maschere sono in genere immagini in scala di grigio, in cui il bianco rappresenta l&#39;oggetto e il nero rappresenta lo sfondo. Puoi creare maschere utilizzando strumenti come Adobe Photoshop.<br>Ulteriori informazioni? Vai a [Creazione e modifica di una maschera rapida in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>· Per &quot;Immagine X&quot;, creare una maschera che delinei con precisione il soggetto che si desidera migliorare. Ad esempio, una persona, un oggetto e così via. |
-| **Applicare i comandi URL di Dynamic Medie per gli effetti** | Dopo aver inserito la maschera, usate i comandi URL per applicare effetti come ombre esterne o cambiate il colore di sfondo in &quot;Immagine X&quot;. Di seguito sono riportati due esempi:<br><br> · **Effetto ombreggiatura esterna:**<br> Per aggiungere un effetto ombreggiatura esterna lungo il limite dell&#39;oggetto, modificare l&#39;URL in questo modo:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>In questo URL, il parametro `$shadow$` crea l&#39;effetto ombreggiatura e `color=0,0,0` imposta il colore dell&#39;ombreggiatura su nero.<br>· **Modifica colore sfondo:**<br> Per modificare il colore di sfondo, utilizzare l&#39;URL con un valore diverso:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> In questo esempio, `color=255,255,0` imposta il colore di sfondo su giallo. Modifica lo sfondo con un colore specifico per un impatto visivo. |
+| **Carica e pubblica l&#39;immagine originale** | <ul><li> Per iniziare, carica l’immagine originale su Dynamic Medie.</li><li> Assicurati che sia pubblicato e accessibile tramite un URL.</li><li> In questo esempio, viene caricata su Dynamic Medie un’immagine d’archivio di un orologio con sfondo bianco (chiamiamola &quot;Immagine X&quot;).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
+| **Creare una maschera** | <ul><li> Sviluppare una maschera che definisca il soggetto (l&#39;area in cui si desidera applicare gli effetti) e lo sfondo (l&#39;area che si desidera modificare).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> Le maschere sono in genere immagini in scala di grigio, dove il bianco rappresenta il soggetto e il nero rappresenta lo sfondo. Puoi creare maschere utilizzando strumenti come Adobe Photoshop.<br>Ulteriori informazioni? Vai a [Creazione e modifica di una maschera rapida in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).</li><li> Per &quot;Immagine X&quot;, creare una maschera che delinei con precisione il soggetto che si desidera migliorare. Ad esempio, una persona, un oggetto e così via.</li></ul> |
+| **Applicare i comandi URL di Dynamic Medie per gli effetti** | Dopo aver inserito la maschera, usate i comandi URL per applicare effetti come un bagliore esterno o cambiate il colore di sfondo in &quot;Immagine X&quot;. Di seguito sono riportati due esempi:<ul><li> **Effetto bagliore esterno:**<br> Per aggiungere un effetto bagliore esterno lungo il limite del soggetto, modificare l&#39;URL in questo modo:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>In questo URL, i parametri `op_blur`, `op_grow` e `opac` creano l&#39;effetto bagliore esterno.</li><li> **Modifica colore di sfondo:**<br> Per modificare il colore di sfondo, utilizzare l&#39;URL con un valore diverso per il colore di sfondo:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> In questo esempio, `color=255,255,0` imposta il colore di sfondo su giallo. Modifica lo sfondo con un colore specifico per un impatto visivo.</li></ul> |
 
 #### Aggiungi un bordo immagine
 
@@ -222,7 +222,7 @@ Se desideri sovrapporre un logo o un’icona a un’immagine esistente, Dynamic 
 | --- | --- |
 | **Carica e pubblica l&#39;immagine di base** | Innanzitutto, carica e pubblica l&#39;immagine di base sulla quale vuoi sovrapporre il logo o l&#39;icona. È possibile utilizzare qualsiasi immagine come base.<br>Questa è un&#39;immagine di base:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
 | **Carica e pubblica l&#39;immagine del logo o dell&#39;icona** | Quindi, carica e pubblica l’immagine che desideri sovrapporre all’immagine di base. L&#39;immagine deve essere un file PNG trasparente con il logo o l&#39;icona che si desidera sovrapporre.<br>Immagine PNG trasparente di un oggetto stella con effetti di trasparenza che verrà sovrapposta:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Applica l&#39;URL di Dynamic Medie** | Ora crea un URL Dynamic Medie che combina l’immagine di base con l’immagine del logo o dell’icona. Per ottenere questo effetto, puoi utilizzare i comandi URL.<br>La struttura dell&#39;URL è simile alla seguente:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>dove la risorsa<br>· `hotspotRetailBaseImage` è l&#39;immagine di base.<br>· `starxp` è l&#39;immagine logo/icona.<br>· `layer=1` specifica che il logo o l&#39;icona deve essere sovrapposto all&#39;immagine di base.<br>· `scale=1.25` regola le dimensioni del logo o dell&#39;icona.<br>· `posN=0.33,-.25` determina la posizione del logo/icona rispetto all&#39;immagine di base.<br>· `fmt=png` garantisce che l&#39;output sia in formato PNG. |
+| **Applica l&#39;URL di Dynamic Medie** | Ora crea un URL Dynamic Medie che combina l’immagine di base con l’immagine del logo o dell’icona. Per ottenere questo effetto, puoi utilizzare i comandi URL.<br>La struttura dell&#39;URL è simile alla seguente:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>in cui la risorsa<ul><li> `hotspotRetailBaseImage` è l&#39;immagine di base.</li><li> `starxp` è l&#39;immagine del logo/icona.</li><li> `layer=1` specifica che il logo o l&#39;icona deve essere sovrapposto all&#39;immagine di base.</li><li> `scale=1.25` regola le dimensioni del logo o dell&#39;icona.</li><li> `posN=0.33,-.25` determina la posizione del logo/icona rispetto all&#39;immagine di base.</li><li> `fmt=png` assicura che l&#39;output sia in formato PNG.</li></ul> |
 
 Per saperne di più Vai a [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) per ulteriori dettagli sul comando `src` e altri comandi URL di Dynamic Medie.
 
