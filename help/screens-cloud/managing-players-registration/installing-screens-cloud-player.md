@@ -4,9 +4,9 @@ description: Questa pagina descrive come installare e configurare i lettori in S
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '595'
 ht-degree: 1%
 
 ---
@@ -35,13 +35,13 @@ Per aggiornare il lettore, segui i passaggi seguenti:
 
 1. Fare clic sulla scheda **Configurazione** e fare clic sul pulsante **In fabbrica** sotto l&#39;opzione **Ripristina**.
 
-   ![immagine](/help/screens-cloud/assets/player/installplayer-2.png)
+   ![Pulsante To Factory nell&#39;opzione Reset](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. Fai clic su **Conferma** per ripristinare il lettore.
 
 1. Di nuovo dalla scheda **Configurazione** e fai clic sul pulsante **Passa a modalità cloud** in **Attiva/disattiva modalità di esecuzione**.
 
-   ![immagine](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![Pulsante Passa a modalità cloud nell&#39;opzione Attiva/Disattiva modalità di esecuzione](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Fai clic su **Conferma** per richiedere conferma quando si passa alla modalità cloud e si annulla la registrazione del lettore.
 

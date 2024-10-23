@@ -4,9 +4,9 @@ description: Cos’è AEM Screens as a Cloud Service.
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '366'
 ht-degree: 59%
 
 ---
@@ -31,4 +31,4 @@ Screens as a Cloud Service ha due componenti principali, ovvero:
 
 In qualità di utente as a Cloud Service di AEM Screens, puoi aggiungere e gestire contenuti nei canali. È possibile registrare e gestire visualizzazioni e lettori dalle interfacce progettate appositamente per Screens as a Cloud Service, ovvero **Screens Services Provider** e **Screens Content Provider**.
 
-![immagine](/help/screens-cloud/assets/architecture-screenscloud.png)
+![Panoramica dell&#39;architettura](/help/screens-cloud/assets/architecture-screenscloud.png)

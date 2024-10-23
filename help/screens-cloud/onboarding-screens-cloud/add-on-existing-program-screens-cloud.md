@@ -4,9 +4,9 @@ description: Scopri come aggiungere un componente aggiuntivo Screens a un progra
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '247'
 ht-degree: 3%
 
 ---
@@ -33,14 +33,14 @@ Per aggiungere Screens come componente aggiuntivo a un programma esistente, effe
 
 1. Passa al progetto e fai clic sull&#39;opzione **Modifica programma** nella pagina **Panoramica** di Cloud Manager.
 
-   ![immagine](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
+   ![Modifica programma](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
    >[!NOTE]
    >Nella pagina **Modifica programma** sono visualizzate due schede **Generale** e **Soluzioni e componenti aggiuntivi**.
 
 1. Nella scheda **Soluzioni e componenti aggiuntivi** sono visualizzate opzioni quali Sites, Assets e Screens. Selezionare l&#39;opzione del componente aggiuntivo **Screens**, come illustrato nella figura seguente.
 
-   ![immagine](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+   ![Opzione del componente aggiuntivo Screens](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
 1. Dopo aver selezionato le opzioni, fai clic su **Aggiorna**.
 

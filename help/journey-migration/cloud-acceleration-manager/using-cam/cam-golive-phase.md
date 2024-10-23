@@ -4,10 +4,10 @@ description: Questa pagina fornisce una panoramica della fase di pubblicazione i
 exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 2%
+source-wordcount: '144'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ La scheda Lancio fornisce tutti i contenuti rilevanti che evidenziano la prepara
 
 Fai clic sulla scheda del progetto per aprire la pagina di destinazione del progetto e passare alla sezione **Lancio**, come illustrato nella figura riportata di seguito.
 
-![immagine](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+![Pubblica](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
 >Per ulteriori informazioni, vedere [Creazione e gestione di un progetto in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project).
@@ -29,8 +29,8 @@ Segui questa sezione per esplorare la scheda dell’attività Go Live:
 
 1. Fai clic sul pulsante **Visualizza** nella scheda **Vai alla versione live**.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+   ![Pubblica - Visualizza](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 1. Un carosello di contenuti mostra informazioni rilevanti per questa fase del percorso di migrazione.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)
+   ![Il carosello del contenuto visualizza informazioni rilevanti](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)
