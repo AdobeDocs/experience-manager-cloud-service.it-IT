@@ -4,10 +4,10 @@ description: Guida alla migrazione a Experience Manager as a Cloud Service per i
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7c704aa09ae4a6a3368b1eccb12982360a3350b3
 workflow-type: tm+mt
-source-wordcount: '1464'
-ht-degree: 22%
+source-wordcount: '1472'
+ht-degree: 17%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 22%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=it" text="Novità e differenze"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=it" text="Introduzione ad AEM as a Cloud Service."
 
-Adobe Experience Manager (AEM) as a Cloud Service offre una base riprogettata per Experience Manager, basata su un’infrastruttura basata su contenitori, sviluppo basato su API e processo DevOps guidato, che consente agli addetti al marketing e agli sviluppatori di tenere sempre il passo con le innovazioni nella gestione dell’esperienza del cliente.
+Adobe Experience Manager (AEM as a Cloud Service) offre ad Experience Manager un’architettura aggiornata. Questa base si basa su un’infrastruttura basata su contenitori, su uno sviluppo basato su API e su un processo DevOps guidato. Questo consente agli addetti al marketing e agli sviluppatori di stare al passo con le innovazioni nella gestione della customer experience.
 
-Il Cloud Service riunisce funzionalità avanzate ed estensibilità di Adobe Experience Manager con l&#39;agilità della moderna architettura nativa per il cloud, consentendo ai marchi di soddisfare la domanda in continua evoluzione dei consumatori.
+Il Cloud Service riunisce funzionalità avanzate ed estensibilità di Adobe Experience Manager con l&#39;agilità della moderna architettura nativa per il cloud, consentendo ai brand di soddisfare la domanda in continua evoluzione dei consumatori.
 
-Questa pagina illustra il processo graduale consigliato per la transizione dei clienti da varie implementazioni di Experience Manager a Experience Manager as a Cloud Service e per aiutare i clienti esistenti a fornire esperienze continue e connesse su questa piattaforma moderna, specifica per la gestione delle esperienze.
+Questa pagina illustra l’approccio graduale consigliato per la transizione dei clienti dalle distribuzioni di Experienci Manager precedenti all’as a Cloud Service Experience Manager. La nuova piattaforma appositamente progettata consente di offrire esperienze connesse e continue.
 
 <!-- It primarily focuses on:
 * Getting Started with Adobe Experience Manager as a Cloud Service
@@ -33,7 +33,7 @@ Questa pagina illustra il processo graduale consigliato per la transizione dei c
 
 Per una rappresentazione generale del percorso di migrazione, vedere il diagramma seguente.
 
-![immagine](/help/journey-migration/assets/migration-process.png)
+![Rappresentazione generale del percorso di migrazione](/help/journey-migration/assets/migration-process.png)
 
 ## Guida introduttiva ad Adobe Experience Manager as a Cloud Service {#getting-started}
 
@@ -51,7 +51,7 @@ Per una rappresentazione generale del percorso di migrazione, vedere il diagramm
 
 Le nozioni di base sullo sviluppo del codice in Adobe Experience Manager as a Cloud Service sono simili a quelle delle soluzioni Adobe Experience Manager On Premise e Managed Services.
 
-Gli sviluppatori scrivono il codice e lo testano localmente, che viene quindi inviato agli ambienti Adobe Experience Manager as a Cloud Service remoti.
+Gli sviluppatori scrivono il codice e lo sottopongono a test localmente, quindi lo inviano agli ambienti Adobe Experience Manager as a Cloud Service remoti.
 
 Consulta le risorse di supporto autonomo sull’implementazione per un Experience Manager as a Cloud Service di come personalizzare la distribuzione degli as a Cloud Service Experienci Manager.
 
@@ -64,9 +64,9 @@ Consulta le risorse di supporto autonomo sull’implementazione per un Experienc
 
 ### Implementazione in corso
 
-Gli sviluppatori scrivono il codice e lo testano localmente, che viene quindi inviato agli ambienti AEM as a Cloud Service remoti.
+Gli sviluppatori scrivono il codice e lo sottopongono a test localmente, quindi lo inviano agli ambienti AEM as a Cloud Service remoti.
 
-Cloud Manager, che era uno strumento opzionale per la distribuzione dei contenuti per Managed Services, è necessario. Questo è ora l’unico meccanismo per distribuire il codice negli ambienti AEM as a Cloud Service.
+È ora necessario Cloud Manager, uno strumento opzionale per la distribuzione dei contenuti di Managed Services. È l’unico meccanismo per distribuire il codice negli ambienti AEM as a Cloud Service.
 
 Consulta le risorse di supporto autonomo su come configurare e distribuire in ambienti AEM as a Cloud Service.
 
@@ -113,18 +113,22 @@ Consulta le risorse di supporto autonomo su come configurare e distribuire in am
 
 Ad Experience Manager as a Cloud Service, i team possono concentrarsi sull’innovazione invece di pianificare gli aggiornamenti dei prodotti. Le nuove funzioni dei prodotti vengono testate in modo approfondito e distribuite ai team senza interruzioni, in modo che possano sempre accedere all’applicazione all’avanguardia.
 
-Il passaggio da percorso a Cloud Service prevede tre fasi: pianificazione, esecuzione e Post Go-live.
+Il passaggio da percorso a Cloud Service prevede tre fasi: pianificazione, esecuzione e post-pubblicazione.
 Per una transizione corretta e senza problemi, è necessario garantire una pianificazione adeguata e attenersi alle best practice descritte nella presente guida.
 
 La figura seguente mostra una rappresentazione di alto livello della transizione consigliata da percorso a Cloud Service.
 
-![immagine](/help/journey-migration/assets/home-img1.png)
+![Rappresentazione di alto livello del percorso di transizione consigliato al Cloud Service](/help/journey-migration/assets/home-img1.png)
 
 <br>
 
 ### Pianificazione
 
-Prima di iniziare la transizione percorso per Cloud Service, è necessario acquisire familiarità con l’Experience Manager, esaminare le modifiche di rilievo apportate al as a Cloud Service e rivedere anche le funzioni che sono state sostituite o dichiarate obsolete.
+Prima di iniziare la transizione da un percorsi Cloud Service all’altro, è necessario:
+
+* acquisire familiarità con l’as a Cloud Service Experience Manager
+* rivedere le modifiche di rilievo apportate
+* esaminare le feature sostituite o dichiarate obsolete
 
 <table>
 <tr>

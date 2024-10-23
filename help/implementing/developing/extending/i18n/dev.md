@@ -4,9 +4,9 @@ description: Java&trade; e le API di JavaScript consentono di internazionalizzar
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a0afa0d733b8493883770d03fc1a55db247aaf71
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -174,7 +174,7 @@ Verifica se hai internazionalizzato tutte le stringhe nell’interfaccia utente.
 
 L’immagine seguente mostra la traduzione stub per la home page dell’AEM:
 
-![chlimage_1](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+![Traduzione stub per la home page AEM](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 Per impostare la lingua per l’utente, configura la proprietà lingua del nodo delle preferenze per l’account utente.
 

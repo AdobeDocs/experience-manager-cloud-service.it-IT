@@ -4,9 +4,9 @@ description: Assicurarsi che il codice e il contenuto siano pronti per la migraz
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2288'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ I passaggi esatti della transizione al Cloud Service dipendono dai sistemi acqui
 
 La figura seguente mostra i passaggi principali della fase che comporta la conversione del codice e del contenuto per l’utilizzo con AEM as a Cloud Service:
 
-![immagine](/help/journey-migration/assets/exec-image1.png)
+![Passaggi di conversione](/help/journey-migration/assets/exec-image1.png)
 
 Inizieremo a specificare gli strumenti da utilizzare per ottenere questo risultato nei capitoli seguenti.
 
@@ -217,7 +217,7 @@ La tabella seguente illustra un tracker di migrazione funzionale:
 
 Nella sezione seguente sono illustrati i passaggi importanti e le attività associate che è possibile utilizzare per formulare una strategia e una tempistica di migrazione dei contenuti.
 
-![immagine](/help/journey-migration/assets/content-migration2.png)
+![Passaggi per formulare una strategia di migrazione](/help/journey-migration/assets/content-migration2.png)
 
 ### Filtraggio {#fitment}
 

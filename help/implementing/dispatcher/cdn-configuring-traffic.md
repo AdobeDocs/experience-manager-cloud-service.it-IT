@@ -4,9 +4,9 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 6ea53e6b2b009895dccf99ac0265dc42b68db509
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1341'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Tutte queste regole, dichiarate in un file di configurazione nel controllo del c
 
 Dal punto di vista funzionale, le varie feature menzionate in precedenza vengono valutate nella seguente sequenza:
 
-![immagine](/help/implementing/dispatcher/assets/order.png)
+![Ordine di valutazione](/help/implementing/dispatcher/assets/order.png)
 
 ## Configurazione {#initial-setup}
 
