@@ -4,10 +4,10 @@ description: Scopri come configurare funzionalità di rete avanzate come una VPN
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
-workflow-type: ht
-source-wordcount: '5676'
-ht-degree: 100%
+source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+workflow-type: tm+mt
+source-wordcount: '5657'
+ht-degree: 99%
 
 ---
 
@@ -563,9 +563,7 @@ La tabella seguente descrive il routing del traffico.
 
 ### Domini utili per la configurazione {#vpn-useful-domains-for-configuration}
 
-Il diagramma seguente fornisce una rappresentazione visiva di un insieme di domini e IP associati che sono utili per la configurazione e lo sviluppo. La tabella riportata di seguito descrive tali domini e IP.
-
-![Configurazione del dominio VPN](/help/security/assets/AdvancedNetworking.jpg)
+La tabella seguente descrive un set di domini e IP utili per la configurazione e lo sviluppo.
 
 <table>
 <thead>
