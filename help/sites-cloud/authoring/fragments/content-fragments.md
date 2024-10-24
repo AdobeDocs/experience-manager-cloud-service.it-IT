@@ -1,24 +1,24 @@
 ---
 title: Frammenti di contenuto
-description: I frammenti di contenuto di Adobe Experience Manager as a Cloud Service consentono di progettare, creare, redigere e utilizzare contenuti indipendenti dalla pagina.
+description: I Frammenti di contenuto di Adobe Experience Manager as a Cloud Service ti consentono di progettare, creare, curare e utilizzare contenuti indipendenti dal canale che possono essere utilizzati anche durante l’authoring delle pagine.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b2b38a3163925fdc2bd4c5f78aaddb44ae716601
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 91%
+source-wordcount: '1267'
+ht-degree: 83%
 
 ---
 
 # Frammenti di contenuto {#content-fragments}
 
-I frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/sites-cloud/administering/content-fragments/overview.md).
+I frammenti di contenuto in Adobe Experience Manager (AEM as a Cloud Service) sono [creati e gestiti come risorse indipendenti dalla pagina](/help/sites-cloud/administering/content-fragments/overview.md), che consentono di creare contenuti indipendenti dal canale, insieme a varianti (possibilmente specifiche del canale). Puoi utilizzare questi frammenti, e le relative varianti, durante l’authoring delle pagine di contenuto.
 
-I frammenti di contenuto consentono di creare contenuto utilizzabile in qualsiasi canale, con possibili varianti per canali specifici. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
-
-Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto strutturati possono anche essere utilizzati per distribuire contenuti AEM, tramite Content Services a canali diversi dalle pagine AEM.
+>[!CAUTION]
+>
+>Questa pagina deve essere letta insieme a [Utilizzo dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) (e pagine correlate), in quanto introduce la terminologia e i concetti di base, oltre a informazioni sulla creazione e la gestione dei frammenti e sulla distribuzione di frammenti di contenuto strutturati a canali diversi dalle pagine AEM.
 
 >[!NOTE]
 >
@@ -39,11 +39,7 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 >
->Per ulteriori informazioni, consulta [Frammenti di contenuto e frammenti di esperienza in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
-
->[!CAUTION]
->
->Questa pagina deve essere letta insieme a [Utilizzo dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) (e pagine correlate), in quanto introduce la terminologia e i concetti di base e spiega come creare e gestire i frammenti.
+>Per ulteriori informazioni, consulta [Comprensione dei frammenti di contenuto e dei frammenti di esperienza in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
 
 I frammenti di contenuto consentono:
 
