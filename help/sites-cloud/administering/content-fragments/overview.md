@@ -1,20 +1,20 @@
 ---
 title: Panoramica sull’utilizzo dei frammenti di contenuto
-description: Scopri come i frammenti di contenuto in AEM as a Cloud Service ti consentono di creare e utilizzare contenuti; ideali per la distribuzione headless e l’authoring delle pagine.
+description: Scopri come i frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service consentono di creare e utilizzare contenuti strutturati; ideali per la distribuzione headless e l’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1807'
 ht-degree: 40%
 
 ---
 
 # Panoramica sull’utilizzo dei frammenti di contenuto {#overview-working-with-content-fragments}
 
-Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto ti consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-cloud/authoring/fragments/content-fragments.md). Consentono di preparare contenuti pronti per l’uso in più posizioni e su più canali, ideali per la distribuzione headless e l’authoring delle pagine.
+Con Adobe Experience Manager (AEM) as a Cloud Service, i Frammenti di contenuto ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalla pagina. Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per [distribuzione headless](/help/headless/what-is-headless.md) e [creazione pagine](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!IMPORTANT]
 >

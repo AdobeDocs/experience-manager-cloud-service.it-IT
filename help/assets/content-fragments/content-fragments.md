@@ -1,20 +1,20 @@
 ---
 title: Utilizzo dei frammenti di contenuto (Assets - Frammenti di contenuto)
-description: Scopri come gli as a Cloud Service di Frammenti di contenuto in Adobe Experience Manager (AEM) ti consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina, ideali per l’authoring delle pagine e la distribuzione headless. Inoltre, come possono essere utilizzati insieme a MSM.
+description: Scopri come l’as a Cloud Service Frammenti di contenuto in Adobe Experience Manager (AEM) ti consente di progettare, creare, curare e utilizzare contenuti, ideali per l’authoring delle pagine e la distribuzione headless.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2220'
 ht-degree: 57%
 
 ---
 
 # Utilizzo di frammenti di contenuto {#working-with-content-fragments}
 
-Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto ti consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-cloud/authoring/fragments/content-fragments.md). Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless. Possono inoltre essere utilizzati insieme a [Gestione multisito per consentire di riutilizzare il contenuto](#reusing-content-fragments-with-msm).
+Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto ti consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalle pagine](/help/sites-cloud/authoring/fragments/content-fragments.md). Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless. Possono inoltre essere utilizzati insieme a [Gestione multisito per consentire di riutilizzare il contenuto](#reusing-content-fragments-with-msm).
 
 I frammenti di contenuto contengono contenuto strutturato:
 
