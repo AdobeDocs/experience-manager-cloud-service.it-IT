@@ -6,9 +6,9 @@ hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
-source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
+source-git-commit: c721a8db801602389822222b08ca4ea1fd2293e4
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '303'
 ht-degree: 13%
 
 ---
@@ -31,8 +31,9 @@ I gruppi vengono inclusi automaticamente in una migrazione CTT/CAM ad Adobe Expe
 Per utilizzare i gruppi utenti chiusi (CUG) in AEM as a Cloud Service, gli utenti devono essere presenti nell’istanza di authoring ed essere membri dei gruppi di utenti chiusi (CUG) pertinenti.  Questa operazione può essere eseguita utilizzando pacchetti; se gli utenti CUG sono utenti IMS, potrebbero essere già presenti.  Gli utenti dei gruppi di utenti chiusi (CUG) devono quindi essere resi membri dei gruppi di utenti chiusi (CUG) dell’AEM.
 
 Per abilitare il comportamento dei gruppi utenti chiusi (CUG) nell’istanza Publish,
-1. I gruppi CUG devono essere attivati (replicandoli insieme ai relativi membri nell’istanza Publish) e
-1. Le pagine protette con i criteri per i gruppi utenti chiusi (CUG) devono essere pubblicate (in modo da abilitare l’istanza Publish e tenere traccia dei criteri).
+1. I gruppi CUG devono essere attivati (replicandoli insieme ai relativi membri nell’istanza Publish),
+1. È necessario annullare la pubblicazione di *Tutte* le pagine protette con criteri CUG (per cancellare il conteggio dei CUG globali) e
+1. Le pagine protette con i criteri per i gruppi utenti chiusi (CUG) devono quindi essere pubblicate (in modo da abilitare l’istanza Publish e tenere traccia dei criteri).
 1. Dopo la pubblicazione di tutte le pagine, verifica la funzionalità per ogni pagina protetta con gruppo utenti chiusi.
 
 Per ulteriori informazioni, vedere [Gruppi utenti chiusi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=it).
