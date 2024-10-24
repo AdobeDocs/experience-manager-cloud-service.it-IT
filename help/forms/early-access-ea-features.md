@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 681121c98f61f045702a7d9c2ffad1473d7f5b2a
+source-git-commit: 2c70f7aec042c384cd37985877954b627d95879e
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 22%
+ht-degree: 30%
 
 ---
 
@@ -27,23 +27,23 @@ Se sei interessato a partecipare al nostro programma di Accesso anticipato per q
 
 ## Innovazioni nell’accesso in anteprima
 
-### IA generativa di AEM Forms (Gen AI)
+### Assistente di AEM Forms AI (Gen AI)
 
-L’intelligenza artificiale generativa per Forms adattivo offre un livello completamente nuovo di potenza e semplicità ai processi di sviluppo dei moduli. Con l’aiuto delle funzioni di intelligenza artificiale, puoi creare moduli migliori più rapidamente che mai.
+L’intelligenza artificiale generativa per moduli adattivi offre un livello completamente nuovo di potenza e semplicità ai processi di sviluppo dei moduli. Con l’aiuto delle funzioni di intelligenza artificiale, puoi creare moduli migliori più rapidamente che mai.
 
-![Generative AI Assistant, Forms adattivo](/help/forms/assets/generative-ai-assistant.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3435527)
 
-Le funzionalità di intelligenza artificiale generativa offerte sono:
+Le funzionalità di intelligenza artificiale generativa offerte tramite AEM Forms AI Assistant sono:
 
-* **Assistente AI per le query sui prodotti**: ottieni risposte immediate alle domande relative al modulo AEM. Il nostro assistente di intelligenza artificiale funge da knowledge base personale, fornendo indicazioni approfondite e consigli direttamente all’interno della piattaforma.
+* **Assistente IA per le query sui prodotti**: ottieni risposte immediate alle domande relative al modulo AEM. Il nostro assistente di intelligenza artificiale funge da knowledge base personale, fornendo indicazioni approfondite e consigli direttamente all’interno della piattaforma.
 
-* **Generazione di moduli adattivi**: creazione semplificata di moduli completi con prompt di IA generativi. La nostra intelligenza artificiale generativa genera automaticamente moduli intuitivi che riducono i casi di abbandono e personalizzano l’esperienza.
+* **Generazione di moduli adattivi**: creazione semplificata di moduli completi con prompt di IA generativa. L’intelligenza artificiale generativa di Adobe genera automaticamente moduli intuitivi che riducono i casi di abbandono e personalizzano l’esperienza.
 
 * **Generazione di pannelli per Forms**: consentire all&#39;intelligenza artificiale di eseguire il sollevamento pesante. Genera pannelli per moduli predefiniti personalizzati per esigenze specifiche di raccolta dati. Ad esempio, genera sezioni per la raccolta di informazioni di pagamento, preferenze del cliente o dettagli di viaggio. Risparmia tempo e assicurati la coerenza con layout e funzionalità predefiniti.
 
-* **Modifica dei layout del modulo**: prova con layout e progettazioni diversi utilizzando i prompt di IA generativi. Provare diversi layout, ad esempio la creazione guidata o le visualizzazioni a schede, per trovare il layout ideale per il modulo. Utilizza i prompt di intelligenza artificiale generativi per ottimizzare i moduli per la reattività mobile e creare moduli visivamente coinvolgenti che gli utenti apprezzano.
+* **Modifica dei layout del modulo**: prova con layout e progettazioni diversi utilizzando i prompt di IA generativa. Prova diversi layout, ad esempio la procedura guidata o le visualizzazioni a schede, per trovare il layout ideale per il modulo. Utilizza i prompt di intelligenza artificiale generativa per ottimizzare i moduli per la reattività mobile e creare moduli visivamente coinvolgenti che gli utenti apprezzano.
 
-* **Configura azione di invio**: utilizza i prompt di IA generativa per configurare facilmente un&#39;azione di invio per il modulo. Scegli da una libreria di azioni di invio predefinite o da un elenco di azioni di invio personalizzate, create e distribuite dal tuo team di sviluppo.
+* **Configura azione di invio**: utilizza i prompt di IA generativa per configurare facilmente un’azione di invio per il modulo. Scegli da una libreria di azioni di invio predefinite o da un elenco di azioni di invio personalizzate, create e implementate dal tuo team di sviluppo.
 
 
 ### Connettore AEM Forms Workfront Fusion
@@ -135,12 +135,12 @@ Offrendo più opzioni CAPTCHA, AEM Forms ti consente di selezionare la soluzione
 
 Sei pronto a integrare una di queste soluzioni CAPTCHA con il tuo modulo adattivo? La nostra documentazione fornisce istruzioni dettagliate per ciascuno di essi: [Cloudflare Turnstile](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
-### API di Doc Assurance
+### API Doc Assurance
 
 
-Le API di AEM Forms Doc Assurance sono un set di strumenti all’interno delle API di comunicazione di Cloud Service di AEM Forms che ti consentono di gestire la sicurezza e l’interazione dell’utente dei documenti PDF.
+Le API Assurance di AEM Forms Doc sono un set di strumenti all’interno delle API di comunicazione di Cloud Service di AEM Forms che ti consentono di gestire la sicurezza e l’interazione dell’utente dei documenti PDF.
 
-Ecco un raggruppamento delle funzioni delle API di Doc Assurance:
+Ecco un raggruppamento delle funzioni delle API Doc Assurance:
 
 * **Crittografa e decrittografa documenti**: esegui il Protect dei documenti rendendo il contenuto illeggibile con la crittografia. È possibile controllare quali parti del PDF sono crittografate, inclusi l&#39;intero documento, contenuto specifico, metadati o allegati.
 
@@ -152,7 +152,7 @@ Ecco un raggruppamento delle funzioni delle API di Doc Assurance:
 
   Quando ai documenti PDF vengono aggiunti i diritti di utilizzo appropriati, i destinatari possono eseguire attività abilitate dall’interno di Adobe Reader.
 
-Nel complesso, [le API Doc Assurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) ti aiutano a migliorare la sicurezza e la conformità dei documenti aggiungendo un ulteriore livello di controllo.
+Nel complesso, le [API Doc Assurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) ti aiutano a migliorare la sicurezza e la conformità dei documenti aggiungendo un ulteriore livello di controllo.
 
 
 ### API dei servizi Forms
