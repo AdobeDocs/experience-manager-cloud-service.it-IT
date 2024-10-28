@@ -2,16 +2,16 @@
 title: Configurare l’interfaccia utente dell’hub di contenuti
 description: Configurare l’interfaccia utente dell’hub di contenuti
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: b74067002a676a4d206dac170022ce0ec6d223de
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 14%
+source-wordcount: '1822'
+ht-degree: 12%
 
 ---
 
 # Configurare l’interfaccia utente dell’hub di contenuti {#configure-content-hub-user-interface}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
@@ -59,6 +59,7 @@ In qualità di amministratore, gestisci le seguenti opzioni di configurazione pe
 * [Filtri](#configure-filters-content-hub)
 
 * [Dettagli risorsa](#configure-asset-details-content-hub)
+* [Scheda risorse](#asset-card)
 
 * [Ricerca](#configure-metadata-search-content-hub)
 
@@ -143,6 +144,25 @@ Le proprietà abilitate nell’interfaccia utente di configurazione vengono visu
 
 ![Proprietà risorsa in Content Hub](assets/config-ui-asset-properties.png)
 
+### Scheda risorse {#asset-card}
+
+Nell&#39;interfaccia utente di Content Hub, la visualizzazione a livello di risorsa mostra la **scheda risorse** delle risorse approvate. Nella scheda delle risorse vengono visualizzati i dettagli chiave della risorsa per gli utenti. La scheda delle risorse presenta la miniatura delle risorse, i metadati delle risorse e altre opzioni utilizzabili. Gli amministratori di Content Hub aggiungono i campi di metadati a livello di archivio per visualizzare contemporaneamente il nome e il valore dei metadati nella scheda delle risorse di tutte le risorse. La scheda risorsa accetta sei campi di metadati. Il campo metadati include il nome metadati e la proprietà metadati. Nella scheda risorsa vengono visualizzati i metadati e il relativo valore. L&#39;amministratore specifica il nome dei metadati e lo mappa sulla proprietà corretta. La proprietà dei metadati esegue il rendering di un valore di metadati nella scheda delle risorse. La proprietà dei metadati è collegata alle proprietà della risorsa, pertanto il valore dei metadati renderizzati varia tra tutte le schede delle risorse. Ad esempio, gli amministratori aggiungono metadati **Concessi in licenza** nella scheda delle risorse e mappano questi **Concessi in licenza** metadati alla proprietà dei metadati corretta. Le schede delle risorse nell&#39;interfaccia utente di Content Hub visualizzano questi metadati **Concessi in licenza** e il relativo valore di metadati (**Sì** o **No**). In questo esempio, Assets con una licenza visualizza **Sì** nella scheda delle risorse, mentre le risorse senza licenza visualizzano **NO**.
+
+![Proprietà risorsa in Content Hub](/help/assets/assets/metadata-on-asset-card.png)
+
+#### Aggiungere, modificare o eliminare metadati in Scheda risorse {#add-edit-delete-metadata}
+
+Per aggiungere metadati a una risorsa, consulta le istruzioni di seguito:
+
+1. Nell&#39;interfaccia utente di [Configurations](#access-configuration-options-content-hub), fare clic su **Asset Card**.
+2. Fare clic su **Aggiungi metadati**. Viene visualizzata la finestra di dialogo **Aggiungi metadati scheda risorse**.
+3. Specifica il nome dei metadati nel campo **Etichetta** e seleziona una proprietà dei metadati nel campo **Metadati**. Ad esempio, assegna ai metadati il nome **Concesso in licenza** e seleziona **dc:license** come proprietà dei metadati. La proprietà dei metadati selezionata viene mappata su un valore visualizzato con i metadati nell’interfaccia utente di Content Hub. In questo esempio, la proprietà **dc:license** è mappata all&#39;ID licenza. Questa proprietà segue il percorso della risorsa specificata (licenza PDF) per individuare la risorsa corrispondente e di conseguenza esegue il rendering di un valore booleano (**Yes** o **No**) nell&#39;interfaccia utente in base alla presenza della risorsa. Se il PDF della licenza viene trovato, verrà visualizzato **Sì**. In caso contrario, verrà visualizzato **No**. Pertanto, nell&#39;interfaccia utente di Content Hub, per le risorse con ID licenza viene visualizzato **Sì**, mentre per le risorse senza ID licenza viene visualizzato **No**.
+4. Fai clic su **Conferma** e quindi su **Salva** per applicare le modifiche in modo che la nuova proprietà venga visualizzata nella pagina dei dettagli della risorsa.
+   ![scheda risorse](/help/assets/assets/asset-card.png)
+
+Allo stesso modo, fai clic su ![modifica](/help/assets/assets/edit-content-hub.svg) disponibile accanto a ciascuna proprietà disponibile, per apportare le modifiche necessarie, oppure fai clic su ![elimina](/help/assets/assets/delete-content-hub.svg) per eliminare eventuali proprietà di metadati esistenti. Fai clic su **Salva** dopo aver apportato tutte le modifiche necessarie per applicarle.
+
+
 ### Ricerca {#configure-metadata-search-content-hub}
 
 Gli amministratori possono definire i campi di metadati in cui eseguire le ricerche quando un utente specifica un criterio di ricerca in Content Hub. Esegui i passaggi seguenti:
@@ -174,7 +194,7 @@ Gli aggiornamenti di branding abilitati nell’interfaccia utente di configurazi
 
 ![Branding dell&#39;interfaccia utente di configurazione in Content Hub](assets/configuration-ui-branding-updates.png)
 
-### Risorse scadute {#expired-assets-content-hub}
+### Risorse scadute{#expired-assets-content-hub}
 
 Gli amministratori possono controllare se le risorse scadute devono essere visibili in Content Hub. Inoltre, se le risorse scadute vengono rese visibili, possono definire se gli utenti potranno scaricarle.
 
