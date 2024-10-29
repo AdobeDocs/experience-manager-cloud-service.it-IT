@@ -4,9 +4,9 @@ description: Scopri come utilizzare gli ambienti di sviluppo rapido per le itera
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
+source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
 workflow-type: tm+mt
-source-wordcount: '4794'
+source-wordcount: '4863'
 ht-degree: 3%
 
 ---
@@ -202,7 +202,7 @@ Per ulteriori informazioni e dimostrazioni, guarda il video tutorial [su come im
 
 ## Utilizzo di RDE durante lo sviluppo di una nuova feature {#using-rde-while-developing-a-new-feature}
 
-L’Adobe consiglia il seguente flusso di lavoro per lo sviluppo di una nuova funzione:
+Per lo sviluppo di una nuova funzione, Adobe consiglia il seguente flusso di lavoro:
 
 * Una volta raggiunta un’attività cardine intermedia e convalidata correttamente localmente con l’SDK di AEM as a Cloud Service, invia il codice a un ramo della funzione Git. Il ramo non deve ancora far parte della riga principale, anche se l’impegno su Git è facoltativo. Ciò che costituisce un &quot;traguardo intermedio&quot; varia in base alle abitudini del team. Gli esempi includono alcune nuove righe di codice, mezza giornata di lavoro o il completamento di una sottofunzione.
 
@@ -277,7 +277,7 @@ Il modello di utilizzo generale è `aio aem:rde:install <artifact>`.
 
 Di seguito sono riportati alcuni esempi:
 
-<u>Distribuzione di un pacchetto di contenuti</u>
+#### Distribuzione di un pacchetto di contenuti {#deploy-content-package}
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
@@ -300,7 +300,7 @@ Qualsiasi pacchetto AEM può essere distribuito, ad esempio pacchetti con codice
 >
 >La configurazione Dispatcher per il progetto WKND non viene distribuita tramite l’installazione del pacchetto di contenuti sopra indicata. Distribuiscilo separatamente seguendo i passaggi &quot;Distribuzione di una configurazione Apache/Dispatcher&quot;.
 
-<u>Distribuzione di una configurazione OSGI</u>
+#### Distribuzione di una configurazione OSGI {#deploy-OSGI-config}
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
@@ -311,7 +311,7 @@ In cui la risposta per una distribuzione corretta è simile alla seguente:
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u>Distribuzione di un bundle</u>
+#### Distribuzione di un bundle {#deploy-bundle}
 
 Per distribuire un bundle, utilizza:
 
@@ -324,7 +324,7 @@ In cui la risposta per una distribuzione corretta è simile alla seguente:
 #3: deploy staged for osgi-bundle org.apache.felix.gogo.jline-1.1.8.jar on author,publish - done by 9E0725C05D53BE1A0B49431C@AdobeID at 2022-09-14T07:54:28.882Z
 ```
 
-<u>Distribuzione di un file di contenuto</u>
+#### Distribuzione di un file di contenuto {#deploy-content-file}
 
 Per distribuire un file di contenuto, utilizza:
 
@@ -337,7 +337,7 @@ In cui la risposta per una distribuzione corretta è simile alla seguente:
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u>Distribuzione di una configurazione Apache/Dispatcher</u>
+#### Distribuzione di una configurazione Apache/Dispatcher {#deploy-apache-config}
 
 Per questo tipo di configurazione, l’intera struttura di cartelle deve essere sotto forma di un file zip.
 
@@ -388,6 +388,26 @@ The analyser found the following errors for publish :
 ```
 
 L’esempio di codice riportato sopra illustra il comportamento se un bundle non si risolve. In questo caso, è &quot;staging&quot; e viene installato solo se i suoi requisiti (importazioni mancanti, in questo caso) sono soddisfatti tramite l&#39;installazione di un altro codice.
+
+#### Distribuzione della configurazione correlata alla pipeline di configurazione (configurazioni yaml) {#deploy-config-pipeline}
+
+Le configurazioni specifiche dell&#39;ambiente (uno o più file yaml) descritte nell&#39;articolo [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md) possono essere distribuite come segue:
+
+`aio aem:rde:install -t env-config ./my-config-folder`
+dove my-config-folder è la cartella principale contenente le configurazioni yaml.
+
+In alternativa, è possibile installare un file zip contenente la struttura della cartella di configurazione:
+
+`aio aem:rde:install -t env-config config.zip`
+
+Si noti che la matrice envTypes del file yaml deve includere il valore *rde*, come nell&#39;esempio seguente:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["rde"]
+```
 
 ### Distribuzione di codice front-end basato su temi e modelli del sito {#deploying-themes-to-rde}
 
@@ -998,7 +1018,7 @@ Inoltre, tieni presente le seguenti considerazioni:
 
 ## Di quante RDE ho bisogno? {#how-many-rds-do-i-need}
 
-È disponibile un RDE per ogni soluzione concessa in licenza e l’Adobe offre anche RDE aggiuntivi, che possono essere concessi in licenza per programmi di produzione (non sandbox).
+È disponibile un RDE per ogni soluzione concessa in licenza e Adobe offre anche RDE aggiuntivi che possono essere concessi in licenza per programmi di produzione (non sandbox).
 
 Il numero di RDE necessari dipende dalla composizione e dai processi di un’organizzazione. Il modello più flessibile è quello in cui un’organizzazione acquista un RDE dedicato per ciascuno dei propri sviluppatori AEM Cloud Service. In questo modello, ogni sviluppatore può testare il proprio codice sull’RDE senza coordinarsi con gli altri membri del gruppo per determinare se è disponibile un ambiente RDE.
 

@@ -4,9 +4,9 @@ description: Scopri come utilizzare le pipeline di configurazione per distribuir
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
+source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Scopri come utilizzare le pipeline di configurazione per distribuire diverse con
 
 Una pipeline di configurazione di Cloud Manager distribuisce i file di configurazione (creati in formato YAML) in un ambiente di destinazione. È possibile configurare in questo modo diverse funzioni in AEM as a Cloud Service, tra cui l’inoltro del registro, le attività di manutenzione relative all’eliminazione e diverse funzioni CDN.
 
-Le pipeline di configurazione possono essere distribuite tramite Cloud Manager ai tipi di ambiente di sviluppo, stage e produzione nei programmi di produzione (non sandbox). RDE non supportati.
+Le pipeline di configurazione possono essere distribuite tramite Cloud Manager ai tipi di ambiente di sviluppo, stage e produzione nei programmi di produzione (non sandbox). I file di configurazione possono essere distribuiti in ambienti di sviluppo rapido (RDE) utilizzando [strumenti della riga di comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
 Le sezioni seguenti di questo documento forniscono una panoramica di informazioni importanti su come è possibile utilizzare le pipeline di configurazione e su come devono essere strutturate le relative configurazioni. Descrive i concetti generali condivisi tra tutte le funzionalità o un sottoinsieme di quelle supportate dalle pipeline di configurazione.
 
@@ -39,10 +39,10 @@ La tabella seguente offre un elenco completo di tali configurazioni, con collega
 | [Richiedi trasformazioni](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Dichiarare le regole per trasformare la forma della richiesta di traffico |
 | [Trasformazioni risposta](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Dichiarare le regole per trasformare la forma della risposta per una determinata richiesta |
 | [Reindirizzamenti lato client](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Dichiara reindirizzamenti lato client 301/302 |
-| [Selettori origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Dichiarare le regole per indirizzare il traffico a diversi backend, incluse le applicazioni non basate su Adobi |
+| [Selettori origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Dichiarare le regole per indirizzare il traffico a diversi backend, incluse le applicazioni non Adobe |
 | [Pagine errore CDN](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Sostituisci la pagina di errore predefinita se non è possibile raggiungere l’origine AEM, facendo riferimento alla posizione del contenuto statico con hosting autonomo nel file di configurazione |
 | [Rimozione CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Dichiara le chiavi API di rimozione utilizzate per rimuovere la rete CDN |
-| [Token HTTP CDN gestito dal cliente](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Dichiara il valore della chiave X-AEM-Edge-Key necessaria per chiamare la rete CDN di Adobe da una rete CDN del cliente |
+| [Token HTTP CDN gestito dal cliente](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Dichiara il valore della chiave X-AEM-Edge necessaria per chiamare la rete CDN di Adobe da una rete CDN del cliente |
 | [Autenticazione di base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Dichiara i nomi utente e le password per una finestra di dialogo di autenticazione di base che protegge alcuni URL [ (disponibile solo per i primi utenti)](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
 | [Attività di manutenzione Pulizia versione](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza l’archivio AEM dichiarando le regole per determinare quando le versioni dei contenuti devono essere eliminate |
 | [Attività di manutenzione eliminazione registro di controllo](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza il registro di audit dell’AEM per migliorare le prestazioni dichiarando regole su quando eliminare i registri |
@@ -53,6 +53,9 @@ La tabella seguente offre un elenco completo di tali configurazioni, con collega
 Per informazioni su come creare e configurare le pipeline, consulta il documento [Pipeline CI/CD.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
 
 Durante la creazione di una pipeline di configurazione in Cloud Manager, assicurati di selezionare una **distribuzione mirata** anziché **codice full stack** durante la configurazione della pipeline.
+
+Come indicato in precedenza, la configurazione per gli RDE viene distribuita utilizzando [strumenti della riga di comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) anziché una pipeline.
+
 
 ## Sintassi comune {#common-syntax}
 

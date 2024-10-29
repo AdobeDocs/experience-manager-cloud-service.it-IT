@@ -4,7 +4,7 @@ description: Scopri come inoltrare i registri a Splunk e ad altri fornitori di r
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
+source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Questo articolo è organizzato nel modo seguente:
 
 1. Posizionare il file in una cartella di primo livello denominata *config* o simile, come descritto in [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure).
 
-1. Per tipi di ambiente diversi da RDE (attualmente non supportato), creare una pipeline di configurazione della distribuzione di destinazione in Cloud Manager, come indicato in [questa sezione](/help/operations/config-pipeline.md#creating-and-managing). Si noti che le pipeline full stack e le pipeline a livello web non distribuiscono il file di configurazione.
+1. Per tipi di ambiente diversi da RDE (che utilizza strumenti della riga di comando), creare una pipeline di configurazione della distribuzione di destinazione in Cloud Manager, come indicato da [questa sezione](/help/operations/config-pipeline.md#creating-and-managing). Si noti che le pipeline full stack e le pipeline a livello web non distribuiscono il file di configurazione.
 
 1. Distribuisci la configurazione.
 
@@ -356,7 +356,7 @@ aem_tier: author
 
 Alcune organizzazioni scelgono di limitare il traffico che può essere ricevuto dalle destinazioni di registrazione.
 
-Per il registro CDN, puoi inserire gli indirizzi IP nell&#39;elenco Consentiti, come descritto nella [documentazione rapida - Elenco IP pubblico](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se l’elenco di indirizzi IP condivisi è troppo grande, puoi inviare traffico a un server https o a un archivio BLOB di Azure (non Adobe) in cui è possibile scrivere una logica per inviare i registri da un IP noto alla destinazione finale.
+Per il registro CDN, puoi inserire gli indirizzi IP nell&#39;elenco Consentiti, come descritto nella [documentazione rapida - Elenco IP pubblico](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se l’elenco degli indirizzi IP condivisi è troppo grande, puoi inviare traffico a un server https o a un archivio BLOB di Azure (non Adobe) in cui è possibile scrivere una logica per inviare i registri da un IP noto alla destinazione finale.
 
 Per i registri AEM (incluso Apache/Dispatcher), se hai configurato [rete avanzata](/help/security/configuring-advanced-networking.md), puoi utilizzare la proprietà advancedNetworking per inoltrarli da un indirizzo IP in uscita dedicato o tramite una VPN.
 
@@ -385,7 +385,7 @@ I clienti che sono stati configurati in questo modo da Adobe sono invitati ad ad
 
 * È stato eseguito il provisioning di un nuovo ambiente (ad esempio, un nuovo ambiente di sviluppo o RDE).
 * Modifiche all’endpoint o alle credenziali Splunk esistenti.
-* L’Adobe aveva configurato l’inoltro del registro prima che i registri CDN fossero disponibili e desideri ricevere i registri CDN.
+* Adobe ha configurato l’inoltro dei registri prima che i registri CDN fossero disponibili e desideri ricevere i registri CDN.
 * Una decisione consapevole di adattarsi in modo proattivo al modello self-service in modo che l’organizzazione disponga delle conoscenze necessarie anche prima che sia necessario un cambiamento sensibile al tempo.
 
 Per eseguire la migrazione, è sufficiente configurare il file YAML come descritto nelle sezioni precedenti. Utilizza la pipeline di configurazione Cloud Manager per distribuire in ciascuno degli ambienti in cui deve essere applicata la configurazione.
@@ -398,5 +398,5 @@ Per eseguire la migrazione, è sufficiente configurare il file YAML come descrit
 
 >[!NOTE]
 >
->Quando l’inoltro dei registri viene distribuito in un ambiente configurato in precedenza dal supporto Adobe, puoi ricevere registri duplicati per un massimo di alcune ore. Questo alla fine si risolverà automaticamente.
+>Quando l’inoltro dei registri viene distribuito in un ambiente configurato in precedenza dal supporto Adobe, è possibile che vengano visualizzati registri duplicati per un massimo di alcune ore. Questo alla fine si risolverà automaticamente.
 
