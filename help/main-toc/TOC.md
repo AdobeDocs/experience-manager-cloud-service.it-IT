@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2d41b880ec3988b72128c7aac8b619c337a89427
-workflow-type: ht
-source-wordcount: '5684'
-ht-degree: 100%
+source-git-commit: 04c9ab33d0f6023195cffe9929cfad172a230216
+workflow-type: tm+mt
+source-wordcount: '5681'
+ht-degree: 99%
 
 ---
 
@@ -728,7 +728,6 @@ ht-degree: 100%
             + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
             + [Utilizzare reCAPTCHA di Google in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Utilizzare hCAPTCHA in un modulo adattivo](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [Utilizzare Turnstile in un modulo adattivo](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Aggiungere un handler degli errori personalizzato in un modulo adattivo](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/supporting-new-language-localization-core-components.md)
             + [Progettare uno schema JSON per un modulo adattivo (componenti core)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -1306,6 +1305,7 @@ ht-degree: 100%
       + [Convalida e debug con la versione legacy degli strumenti di Dispatcher](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Configurazione del traffico sulla rete CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [Reindirizzamenti URL senza pipeline](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
       + [Il lato Edge include](/help/implementing/dispatcher/edge-side-includes.md)
       + [Configurazione delle credenziali CDN e dell’autenticazione](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [Configurazione delle pagine di errore della rete CDN](/help/implementing/dispatcher/cdn-error-pages.md)

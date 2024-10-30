@@ -2,29 +2,28 @@
 title: Come si utilizza hCaptcha&reg; in un componente core modulo adattivo AEM?
 description: Migliora la sicurezza dei moduli con il servizio hCaptcha&reg; senza sforzo. Guida dettagliata all’interno!
 topic-tags: Adaptive Forms, author
-keywords: hCaptcha&reg; servizio, Forms adattivo, CAPTCHA challenge, prevenzione bot, Componenti core, sicurezza invio modulo, prevenzione posta indesiderata modulo
+keywords: hCaptcha&reg; service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: bba5e5d283da616baa57b788181af73d59d86ee3
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 24%
+source-wordcount: '960'
+ht-degree: 25%
 
 ---
 
-# Connetti il tuo ambiente AEM Forms con hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
+# Connect your AEM Forms environment with hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
-<span class="preview"> Questa funzione è in fase di adozione anticipata. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
+<span class="preview"> Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
 Il CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra esseri umani e programmi o bot automatizzati. Rappresenta una sfida e valuta la risposta dell’utente per determinare se si tratta di un essere umano o di un bot che interagisce con il sito. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o avere scopi dannosi.
 
 AEM Forms as a Cloud Service supporta le seguenti soluzioni CAPTCHA:
 
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-* [Tornello Cloudflare](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
 * [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
 
 ## Integrare l’ambiente AEM Forms con hCaptcha Captcha
@@ -40,18 +39,18 @@ AEM Forms as a Cloud Service supporta hCaptcha® nei componenti core di Forms ad
 
 Per configurare hCaptcha® con AEM Forms, è necessario ottenere la chiave del sito [hCaptcha® e la chiave segreta](https://docs.hcaptcha.com/switch/#get-your-hcaptcha-sitekey-and-secret-key) dal sito Web hCaptcha®.
 
-### Configurare hCaptcha® {#steps-to-configure-hcaptcha}
+### Configure hCaptcha® {#steps-to-configure-hcaptcha}
 
-Per integrare AEM Forms con il servizio hCaptcha®, effettua le seguenti operazioni:
+To integrate AEM Forms with hCaptcha® service, perform the following steps:
 
-1. Crea un Contenitore di configurazione nell’ambiente AEM Forms as a Cloud Service. Un contenitore di configurazione contiene le configurazioni cloud utilizzate per collegare l’AEM a servizi esterni. Per creare e configurare un contenitore di configurazione per collegare il tuo ambiente AEM Forms con hCaptcha®:
+1. Create a Configuration Container on your AEM Forms as a Cloud Service environment. A Configuration Container holds Cloud Configurations used to connect AEM to external services. To create and configure a Configuration Container to connect your AEM Forms environment with hCaptcha®:
    1. Apri la tua istanza di AEM Forms as a Cloud Service.
-   1. Vai a **[!UICONTROL Strumenti > Generale > Browser configurazioni]**.
-   1. Nel Browser configurazioni, puoi selezionare una cartella esistente o crearne una. Puoi creare una cartella e abilitare per essa l’opzione Configurazioni cloud o Abilitare l’opzione Configurazioni cloud per una cartella esistente:
+   1. ****
+   1. In the Configuration Browser, you can select an existing folder or create a folder. You can create a folder and enable the Cloud Configurations option for it or Enable the Cloud Configurations option for an existing folder:
 
-      * Per creare una cartella e abilitare l’opzione Configurazioni cloud:
-         1. Nel browser configurazioni fare clic su **[!UICONTROL Crea]**.
-         1. Nella finestra di dialogo Crea configurazione, specifica un nome e un titolo, quindi seleziona l&#39;opzione **[!UICONTROL Configurazioni cloud]**.
+      * To create a folder and enable the Cloud Configurations option for it:
+         1. ****
+         1. ****
          1. Fai clic su **[!UICONTROL Crea]**.
       * Per abilitare l’opzione Configurazioni cloud per una cartella esistente:
          1. Nel Browser configurazioni, selezionare la cartella e selezionare **[!UICONTROL Proprietà]**.
@@ -65,14 +64,14 @@ Per integrare AEM Forms con il servizio hCaptcha®, effettua le seguenti operazi
       ![Configurazione hCaptcha®](assets/config-hcaptcha.png)
    1. Specificare **[!UICONTROL Titolo]**, **[!UICONTROL Nome]**, **[!UICONTROL Chiave sito]** e **[!UICONTROL Chiave segreta]** per il servizio hCaptcha® [ottenuto nel prerequisito](#prerequisite). Seleziona **[!UICONTROL Crea]**.
 
-      ![Configura il Cloud Service per connettere il tuo ambiente AEM Forms con hCaptcha®](assets/create-hcaptcha-config.png)
+      ![](assets/create-hcaptcha-config.png)
 
    >[!NOTE]
-   > Gli utenti non devono modificare [URL di convalida JavaScript lato client](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) e [URL di convalida lato server](https://docs.hcaptcha.com/#verify-the-user-response-server-side) in quanto sono già precompilati per la convalida hCaptcha®.
+   > [](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage)[](https://docs.hcaptcha.com/#verify-the-user-response-server-side)
 
-   Una volta configurato, il servizio hCAPTCHA è disponibile per l&#39;utilizzo in un [modulo adattivo basato su componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
+   [](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-## Utilizzare hCaptcha® in un componente core Forms adattivo {#using-hCaptcha®-core-components}
+## {#using-hCaptcha®-core-components}
 
 1. Apri la tua istanza di AEM Forms as a Cloud Service.
 1. Vai a **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
@@ -89,19 +88,19 @@ Per integrare AEM Forms con il servizio hCaptcha®, effettua le seguenti operazi
    ![hCaptcha® v2](assets/config-hcaptcha-v2.png)
 
    * **[!UICONTROL Nome]:** Specifica il nome per il componente Captcha. Puoi identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell&#39;editor di regole.
-   * **[!UICONTROL Titolo]:** Specifica il titolo del componente Captcha.
+   * ****
    * **[!UICONTROL Impostazioni di configurazione]:** seleziona una configurazione cloud impostata per hCaptcha®.
-   * **Dimensione captcha:** È possibile selezionare la dimensione di visualizzazione della finestra di dialogo di verifica hCaptcha®. Utilizza l’opzione **[!UICONTROL Compatta]** per visualizzare una dimensione ridotta e **[!UICONTROL Normale]** per visualizzare una finestra di dialogo di verifica hCaptcha® di dimensioni relativamente grandi.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
-   * **[!UICONTROL Messaggio di convalida]:** Fornisci un messaggio di convalida per la convalida Captcha al momento dell&#39;invio del modulo.
+   * **** Utilizza l’opzione **[!UICONTROL Compatta]** per visualizzare una dimensione ridotta e **[!UICONTROL Normale]** per visualizzare una finestra di dialogo di verifica hCaptcha® di dimensioni relativamente grandi.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
+   * ****
    * **[!UICONTROL Messaggio di convalida script]**: questa opzione consente di inserire un messaggio da visualizzare in caso di errore di convalida dello script.
      >[!NOTE]
-     >Puoi avere più configurazioni cloud nell’ambiente per uno scopo simile. Quindi, scegli il servizio con attenzione. Se non è elencato alcun servizio, consulta [Connettere l&#39;ambiente AEM Forms con hCaptcha®](#connect-your-forms-environment-with-hcaptcha-service) per scoprire come creare un Cloud Service che colleghi l&#39;ambiente AEM Forms al servizio hCaptcha®.
+     >You can have multiple Cloud Configurations in your environment for a similar purpose. So, choose the service carefully. [](#connect-your-forms-environment-with-hcaptcha-service)
      <!--* **Error Message:** Provide the error message to display to the user when the Captcha submission fails.-->
 
 1. Seleziona **[!UICONTROL Fine]**.
 
 
-Ora, solo i moduli legittimi, in cui il compilatore di moduli elimina con successo la sfida posta dal servizio hCaptcha® sono consentiti per l’invio del modulo. hCaptcha®
+Now, only legitimate forms, in which the form filler successfully clears the challenge posed by the hCaptcha® service are allowed for the form submission. hCaptcha®
 
 **hCaptcha® è un marchio registrato di Intuition Machines, Inc.**
 

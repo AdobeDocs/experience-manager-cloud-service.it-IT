@@ -6,9 +6,9 @@ keywords: Servizio Google reCAPTCHA, Forms adattivo, sfida CAPTCHA, prevenzione 
 feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: bba5e5d283da616baa57b788181af73d59d86ee3
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '937'
 ht-degree: 11%
 
 ---
@@ -25,7 +25,6 @@ Il CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans
 AEM Forms as a Cloud Service supporta le seguenti soluzioni CAPTCHA:
 
 * [Google reCAPTCHA](#connect-your-aem-forms-environment-with-recaptcha-service-by-google)
-* [Tornello Cloudflare](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
 * [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
 
 
@@ -74,7 +73,7 @@ Per utilizzare reCAPTCHA in Adaptive Forms:
 1. Seleziona un Forms adattivo e seleziona **[!UICONTROL Modifica]**. Il modulo adattivo si apre nell’editor di Forms adattivo.
 1. Dal browser componenti, trascina il componente **[!UICONTROL Modulo adattivo reCAPTCHA]** nel Modulo adattivo.
 
-   La convalida di Google reCAPTCHA è sensibile al tempo e scade tra circa un paio di minuti. Pertanto, l&#39;Adobe consiglia di inserire il componente **[!UICONTROL reCAPTCHA]** del modulo adattivo immediatamente prima del pulsante **[!UICONTROL Invia]**.
+   La convalida di Google reCAPTCHA è sensibile al tempo e scade tra circa un paio di minuti. Pertanto, Adobe consiglia di inserire il componente **[!UICONTROL reCAPTCHA]** del modulo adattivo immediatamente prima del pulsante **[!UICONTROL Invia]**.
 
 1. Seleziona il componente **[!UICONTROL reCAPTCHA]** del modulo adattivo e l&#39;icona ![Proprietà](assets/configure-icon.svg). Apre la finestra di dialogo delle proprietà. Specifica le seguenti proprietà obbligatorie:
    * **[!UICONTROL Nome]:** È possibile identificare facilmente un componente modulo con il relativo nome univoco sia nel modulo che nell&#39;editor di regole, ma il nome non deve contenere spazi o caratteri speciali.
