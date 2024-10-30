@@ -2,10 +2,10 @@
 title: Configurare l’interfaccia utente dell’hub di contenuti
 description: Configurare l’interfaccia utente dell’hub di contenuti
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: b74067002a676a4d206dac170022ce0ec6d223de
+source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
 workflow-type: tm+mt
-source-wordcount: '1822'
-ht-degree: 12%
+source-wordcount: '1526'
+ht-degree: 15%
 
 ---
 
@@ -146,18 +146,14 @@ Le proprietà abilitate nell’interfaccia utente di configurazione vengono visu
 
 ### Scheda risorse {#asset-card}
 
-Nell&#39;interfaccia utente di Content Hub, la visualizzazione a livello di risorsa mostra la **scheda risorse** delle risorse approvate. Nella scheda delle risorse vengono visualizzati i dettagli chiave della risorsa per gli utenti. La scheda delle risorse presenta la miniatura delle risorse, i metadati delle risorse e altre opzioni utilizzabili. Gli amministratori di Content Hub aggiungono i campi di metadati a livello di archivio per visualizzare contemporaneamente il nome e il valore dei metadati nella scheda delle risorse di tutte le risorse. La scheda risorsa accetta sei campi di metadati. Il campo metadati include il nome metadati e la proprietà metadati. Nella scheda risorsa vengono visualizzati i metadati e il relativo valore. L&#39;amministratore specifica il nome dei metadati e lo mappa sulla proprietà corretta. La proprietà dei metadati esegue il rendering di un valore di metadati nella scheda delle risorse. La proprietà dei metadati è collegata alle proprietà della risorsa, pertanto il valore dei metadati renderizzati varia tra tutte le schede delle risorse. Ad esempio, gli amministratori aggiungono metadati **Concessi in licenza** nella scheda delle risorse e mappano questi **Concessi in licenza** metadati alla proprietà dei metadati corretta. Le schede delle risorse nell&#39;interfaccia utente di Content Hub visualizzano questi metadati **Concessi in licenza** e il relativo valore di metadati (**Sì** o **No**). In questo esempio, Assets con una licenza visualizza **Sì** nella scheda delle risorse, mentre le risorse senza licenza visualizzano **NO**.
+Puoi anche configurare i campi di metadati chiave da visualizzare nella **scheda risorse** fino a un massimo di 6 campi. Per farlo, esegui le seguenti operazioni:
 
-![Proprietà risorsa in Content Hub](/help/assets/assets/metadata-on-asset-card.png)
-
-#### Aggiungere, modificare o eliminare metadati in Scheda risorse {#add-edit-delete-metadata}
-
-Per aggiungere metadati a una risorsa, consulta le istruzioni di seguito:
+![metadati chiave nella scheda risorse](/help/assets/assets/asset-card-key-metadata.png)
 
 1. Nell&#39;interfaccia utente di [Configurations](#access-configuration-options-content-hub), fare clic su **Asset Card**.
 2. Fare clic su **Aggiungi metadati**. Viene visualizzata la finestra di dialogo **Aggiungi metadati scheda risorse**.
-3. Specifica il nome dei metadati nel campo **Etichetta** e seleziona una proprietà dei metadati nel campo **Metadati**. Ad esempio, assegna ai metadati il nome **Concesso in licenza** e seleziona **dc:license** come proprietà dei metadati. La proprietà dei metadati selezionata viene mappata su un valore visualizzato con i metadati nell’interfaccia utente di Content Hub. In questo esempio, la proprietà **dc:license** è mappata all&#39;ID licenza. Questa proprietà segue il percorso della risorsa specificata (licenza PDF) per individuare la risorsa corrispondente e di conseguenza esegue il rendering di un valore booleano (**Yes** o **No**) nell&#39;interfaccia utente in base alla presenza della risorsa. Se il PDF della licenza viene trovato, verrà visualizzato **Sì**. In caso contrario, verrà visualizzato **No**. Pertanto, nell&#39;interfaccia utente di Content Hub, per le risorse con ID licenza viene visualizzato **Sì**, mentre per le risorse senza ID licenza viene visualizzato **No**.
-4. Fai clic su **Conferma** e quindi su **Salva** per applicare le modifiche in modo che la nuova proprietà venga visualizzata nella pagina dei dettagli della risorsa.
+3. Specifica il nome dei metadati nel campo **Etichetta** e seleziona una proprietà dei metadati nel campo **Metadati**.
+4. Fai clic su **Conferma**, quindi su **Salva** per applicare le modifiche in modo che la nuova proprietà venga visualizzata nella pagina dei dettagli della risorsa.
    ![scheda risorse](/help/assets/assets/asset-card.png)
 
 Allo stesso modo, fai clic su ![modifica](/help/assets/assets/edit-content-hub.svg) disponibile accanto a ciascuna proprietà disponibile, per apportare le modifiche necessarie, oppure fai clic su ![elimina](/help/assets/assets/delete-content-hub.svg) per eliminare eventuali proprietà di metadati esistenti. Fai clic su **Salva** dopo aver apportato tutte le modifiche necessarie per applicarle.
