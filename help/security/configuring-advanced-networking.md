@@ -4,9 +4,9 @@ description: Scopri come configurare funzionalità di rete avanzate come una VPN
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '5657'
+source-wordcount: '5618'
 ht-degree: 99%
 
 ---
@@ -236,10 +236,6 @@ La configurazione dell’indirizzo IP in uscita dedicato è analoga a quella del
 >
 >Una volta creati, i tipi di infrastruttura degli indirizzi IP in uscita dedicati non possono essere modificati. L’unico modo per modificare i valori di configurazione consiste nell’eliminarli e ricrearli.
 
->[!INFO]
->
->Se è configurato un IP in uscita dedicato, l’inoltro Splunk continuerà a utilizzare gli intervalli di uscita dinamici. Non è possibile configurare l’inoltro Splunk per l’utilizzo di un IP in uscita dedicato.
-
 ### Configurazione interfaccia utente {#configuring-dedicated-egress-provision-ui}
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
@@ -411,7 +407,6 @@ Sono supportati la maggior parte dei dispositivi VPN con tecnologia IPSec. Consu
 >Di seguito sono riportate le limitazioni di un’infrastruttura VPN:
 >
 >* Il supporto è limitato a una singola connessione VPN
->* La funzionalità di inoltro Splunk non è possibile tramite una connessione VPN.
 >* Per risolvere i nomi host privati, i risolutori DNS devono essere elencati nello spazio degli indirizzi del gateway.
 
 ### Configurazione interfaccia utente {#configuring-vpn-ui}

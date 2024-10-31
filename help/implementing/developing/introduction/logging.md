@@ -4,10 +4,10 @@ description: Scopri come utilizzare la funzione di registrazione per AEM as a Cl
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 8%
+source-wordcount: '2376'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 AEM as a Cloud Service è una piattaforma che consente ai clienti di includere codice personalizzato per creare esperienze univoche per la propria base di clienti. Tenendo presente questo aspetto, il servizio di registrazione è una funzione fondamentale per eseguire il debug e comprendere l’esecuzione del codice negli ambienti di sviluppo locali e cloud, in particolare negli ambienti di sviluppo di AEM as a Cloud Service.
 
-Le impostazioni di registrazione e i livelli di registro di AEM as a Cloud Service vengono gestiti in file di configurazione memorizzati come parte del progetto AEM in Git e distribuiti come parte del progetto AEM tramite Cloud Manager. La registrazione in AEM as a Cloud Service può essere suddivisa in due set logici:
+Le impostazioni di registrazione e i livelli di registro di AEM as a Cloud Service vengono gestiti in file di configurazione memorizzati come parte del progetto AEM in Git e distribuiti come parte del progetto AEM tramite Cloud Manager. La registrazione in AEM as a Cloud Service può essere suddivisa in tre set logici:
 
 * Registrazione AEM, che esegue la registrazione a livello di applicazione AEM
 * Registrazione del server web/Dispatcher Apache HTTPD, che esegue la registrazione del server web e di Dispatcher sul livello Publish.
@@ -344,7 +344,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>310</td>
 </tr>
 <tr>
-<td>Referer</td>
+<td>Referrer</td>
 <td>-</td>
 </tr>
 <tr>
@@ -510,8 +510,6 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service fornisce l’accesso ai registri CDN, utili per i casi d’uso, inclusa l’ottimizzazione della percentuale di hit della cache. Il formato di registro CDN non può essere personalizzato e non è possibile impostarlo su modalità diverse, ad esempio info, avvertenza o errore.
 
-I registri CDN verranno inoltrati a Splunk per nuove richieste di ticket di supporto per l’inoltro Splunk. I clienti che hanno già abilitato l’inoltro Splunk potranno aggiungere i registri CDN in futuro.
-
 **Esempio**
 
 ```
@@ -611,82 +609,18 @@ A seconda del traffico e della quantità di istruzioni di registro scritte da De
 * Fatto con buon senso, e solo se assolutamente necessario
 * riportati ai livelli appropriati e ridistribuiti il più presto possibile
 
-## Registri Splunk {#splunk-logs}
+## Inoltro del registro {#log-forwarding}
 
-I clienti con account Splunk possono richiedere tramite ticket di assistenza clienti che i loro registri di AEM Cloud Service vengano inoltrati all’indice appropriato. I dati di registrazione sono equivalenti a quelli disponibili nei download dei registri di Cloud Manager, ma i clienti potrebbero trovare conveniente utilizzare le funzioni di query disponibili nel prodotto Splunk.
+Anche se i registri possono essere scaricati da Cloud Manager, per alcune organizzazioni è utile inoltrarli a una destinazione di registrazione preferita. L’AEM supporta i registri di streaming per le seguenti destinazioni:
 
-La larghezza di banda di rete associata ai registri inviati a Splunk è considerata parte dell&#39;utilizzo di I/O di rete del cliente.
+* Archiviazione BLOB di Azure
+* Datadog
+* HTTPD
+* Elasticsearch (e OpenSearch)
+* Splunk
 
-I registri CDN verranno inoltrati a Splunk per richieste di nuovi ticket di supporto; i clienti che hanno già abilitato l’inoltro Splunk potranno aggiungere i registri CDN in futuro.
-
->[!NOTE]
->
->Impossibile inoltrare a Splunk *registri specifici* e *registri specifici*.
->
->**Tutti** i registri verranno inoltrati a Splunk, dove il cliente potrà applicare ulteriori filtri in base alle proprie esigenze.
-
-### Abilitazione dell’inoltro Splunk {#enabling-splunk-forwarding}
-
-Nella richiesta di supporto, i clienti devono indicare:
-
-* Indirizzo endpoint HEC di tipo Splunk. Questo endpoint deve avere un certificato SSL valido ed essere accessibile al pubblico.
-* Indice Splunk
-* Porta Splunk
-* Token HEC Splunk. Per ulteriori informazioni, vedere [Esempi di Raccolta eventi HTTP](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
-
-Le proprietà di cui sopra devono essere specificate per ciascuna combinazione di programma/tipo di ambiente pertinente. Ad esempio, se un cliente desidera ambienti di sviluppo, staging e produzione, deve fornire tre serie di informazioni, come indicato di seguito.
+Per informazioni dettagliate su come configurare questa funzione, consulta l&#39;[articolo sull&#39;inoltro del registro](/help/implementing/developing/introduction/log-forwarding.md).
 
 >[!NOTE]
 >
->L’inoltro Splunk per ambienti di programmi sandbox non è supportato.
-
->[!NOTE]
->
->La funzionalità di inoltro Splunk non è possibile da un indirizzo IP in uscita dedicato.
-
-È necessario assicurarsi che la richiesta iniziale includa tutti gli ambienti di sviluppo che devono essere abilitati, oltre agli ambienti di staging/produzione. Splunk deve avere un certificato SSL ed essere rivolto al pubblico.
-
-Se uno qualsiasi dei nuovi ambienti di sviluppo creati dopo la richiesta iniziale deve avere Inoltro Splunk, ma non lo ha abilitato, è necessario effettuare una richiesta aggiuntiva.
-
-Inoltre, se sono stati richiesti ambienti di sviluppo, è possibile che in altri ambienti di sviluppo non inclusi nella richiesta o persino in ambienti sandbox l’inoltro Splunk sia abilitato e che questi condividano un indice Splunk. I clienti possono utilizzare il campo `aem_env_id` per distinguere questi ambienti.
-
-Di seguito è riportato un esempio di richiesta di assistenza clienti:
-
-Programma 123, Ambiente produzione
-
-* Indirizzo endpoint HEC Splunk: `splunk-hec-ext.acme.com`
-* Indice Splunk: acme_123prod (il cliente può scegliere qualsiasi convenzione di denominazione desideri)
-* Porta Splunk: 443
-* Token HEC Splunk: ABC123
-
-Programma 123, Stage Env
-
-* Indirizzo endpoint HEC Splunk: `splunk-hec-ext.acme.com`
-* Indice Splunk: acme_123stage
-* Porta Splunk: 443
-* Token HEC Splunk: ABC123
-
-Programma 123, Env sviluppo
-
-* Indirizzo endpoint HEC Splunk: `splunk-hec-ext.acme.com`
-* Indice Splunk: acme_123dev
-* Porta Splunk: 443
-* Token HEC Splunk: ABC123
-
-Può essere sufficiente utilizzare lo stesso indice Splunk per ogni ambiente, nel qual caso è possibile utilizzare il campo `aem_env_type` per differenziare in base ai valori dev, stage e prod. Se sono presenti più ambienti di sviluppo, è possibile utilizzare anche il campo `aem_env_id`. Alcune organizzazioni possono scegliere un indice separato per i registri dell’ambiente di produzione se l’indice associato limita l’accesso a un set ridotto di utenti Splunk.
-
-Di seguito è riportato un esempio di voce di registro:
-
-```
-aem_env_id: 1242
-aem_env_type: dev
-aem_program_id: 12314
-aem_tier: author
-file_path: /var/log/aem/error.log
-host: 172.34.200.12 
-level: INFO
-msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
-orig_time: 16.07.2020 08:35:32.346
-pod_name: aemloggingall-aem-author-77797d55d4-74zvt
-splunk_customer: true
-```
+>L’inoltro dei registri per gli ambienti di programmi sandbox non è supportato.

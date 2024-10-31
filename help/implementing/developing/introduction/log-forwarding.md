@@ -1,12 +1,12 @@
 ---
 title: Inoltro registro per AEM as a Cloud Service
-description: Scopri come inoltrare i registri a Splunk e ad altri fornitori di registrazione in AEM as a Cloud Service
+description: Scopri come inoltrare i registri ai fornitori di accesso in AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
+source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1781'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Questa funzione non è ancora stata rilasciata e alcune destinazioni di registrazione potrebbero non essere disponibili al momento del rilascio. Nel frattempo, puoi aprire un ticket di supporto per inoltrare i registri a **Splunk**, come descritto in [Registrazione per AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md).
+>L’inoltro del registro è ora configurato in modo self-service, diverso dal metodo legacy, che richiedeva l’invio di un ticket di supporto Adobe. Consulta la sezione [Migrazione](#legacy-migration) se l&#39;inoltro del registro è stato configurato da Adobe.
 
-I clienti che dispongono di una licenza per un fornitore di servizi di registrazione o che ospitano un prodotto di registrazione possono inoltrare i registri AEM (incluso Apache/Dispatcher) e i registri CDN alle destinazioni di registrazione associate. AEM as a Cloud Service supporta le seguenti destinazioni di registrazione:
+I clienti con una licenza di un fornitore di registrazione o che ospitano un prodotto di registrazione possono inoltrare i registri AEM (incluso Apache/Dispatcher) e CDN alla destinazione di registrazione associata. AEM as a Cloud Service supporta le seguenti destinazioni di registrazione:
 
 * Archiviazione BLOB di Azure
-* DataDog
+* Datadog
 * Elasticsearch o OpenSearch
 * HTTPS
 * Splunk
 
-L’inoltro dei registri viene configurato in modo self-service dichiarando una configurazione in Git e distribuendola tramite la pipeline di configurazione di Cloud Manager ai tipi di ambiente di sviluppo, staging e produzione nei programmi di produzione (non sandbox).
+L’inoltro dei registri viene configurato in modo self-service dichiarando una configurazione in Git e distribuendola tramite la pipeline di configurazione Cloud Manager ai tipi di ambiente RDE, dev, stage e produzione nei programmi di produzione (non sandbox).
 
 È disponibile un’opzione per instradare i registri AEM e Apache/Dispatcher tramite l’infrastruttura di rete avanzata dell’AEM, ad esempio l’IP in uscita dedicato.
 
@@ -139,6 +139,8 @@ Ecco una schermata di esempio della configurazione del token SAS:
 
 ![Configurazione token SAS BLOB di Azure](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
+Se i registri non vengono più consegnati dopo il corretto funzionamento precedente, verificare se il token SAS configurato è ancora valido, in quanto potrebbe essere scaduto.
+
 #### Registri CDN archiviazione BLOB di Azure {#azureblob-cdn}
 
 Ogni server di registrazione distribuito a livello globale produrrà un nuovo file ogni pochi secondi, nella cartella `aemcdn`. Una volta creato, il file non verrà più aggiunto a. Il formato del nome file è YYY-MM-DDThh:mm:ss.sss-uniqueid.log. Ad esempio, 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
@@ -202,10 +204,12 @@ data:
 Considerazioni:
 
 * Crea una chiave API, senza alcuna integrazione con un provider cloud specifico.
-* la proprietà tags è facoltativa
+* La proprietà tags è facoltativa
 * Per i registri AEM, il tag di origine Datadog è impostato su uno dei seguenti valori: `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` o `aemhttpderror`
 * Per i registri CDN, il tag di origine Datadog è impostato su `aemcdn`
-* il tag del servizio Datadog è impostato su `adobeaemcloud`, ma è possibile sovrascriverlo nella sezione dei tag
+* Il tag del servizio Datadog è impostato su `adobeaemcloud`, ma è possibile sovrascriverlo nella sezione dei tag
+* Se la pipeline di acquisizione utilizza i tag Datadog per determinare l’indice appropriato per i registri di inoltro, verifica che tali tag siano configurati correttamente nel file YAML di inoltro del registro. I tag mancanti possono impedire l’acquisizione corretta del registro, se la pipeline dipende da essi.
+
 
 
 ### Elasticsearch e OpenSearch {#elastic}
@@ -307,6 +311,8 @@ Considerazioni:
 * Per impostazione predefinita, la porta è 443. Facoltativamente, può essere sostituito con una proprietà denominata `port`.
 * Il campo sourcetype avrà uno dei seguenti valori, a seconda del registro specifico: *aemaccess*, *aemerror*,
   *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+* Se gli IP richiesti sono stati inseriti nell&#39;elenco Consentiti e i registri non vengono ancora consegnati, verifica che non vi siano regole firewall che impongono la convalida del token Splunk. Fastly esegue un passaggio di convalida iniziale in cui viene inviato intenzionalmente un token Splunk non valido. Se il firewall è impostato in modo da interrompere le connessioni con token Splunk non validi, il processo di convalida non riuscirà e Fastly non sarà in grado di consegnare i registri all’istanza Splunk.
+
 
 >[!NOTE]
 >
