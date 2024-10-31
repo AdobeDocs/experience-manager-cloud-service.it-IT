@@ -1,16 +1,16 @@
 ---
 title: Domande frequenti su Content Hub
 description: Risposte ad alcune delle domande più frequenti su Content Hub.
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 3b8a80e346fe63450f9b57733c67de2e4b52b2b8
 workflow-type: tm+mt
 source-wordcount: '1100'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Domande frequenti su Content Hub {#content-hub-frequently-asked-questions}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Domande frequenti su Content Hub](assets/content-hub-faqs.png)
@@ -74,7 +74,7 @@ Per trovare rapidamente le risorse caricate tramite Content Hub nell’ambiente 
 
 ## Perché non visualizzo l’opzione Modifica con Adobe Express nella scheda delle risorse per poter eseguire il remix delle risorse e creare nuove varianti? {#edit-using-express-not-available}
 
-Per visualizzare l&#39;opzione di modifica tramite Adobe Express sulla scheda delle risorse, oltre ai privilegi per [utenti Content Hub con diritti per il remix delle risorse in nuove varianti](#onboard-content-hub-users-add-assets) è necessario disporre di diritti Adobe Express. Adobe Express deve essere distribuito nella stessa organizzazione in Adobe Admin Console, dove viene distribuito Adobe Experience Manager.
+Per visualizzare l&#39;opzione di modifica tramite Adobe Express sulla scheda delle risorse, oltre ai privilegi per [utenti Content Hub con diritti per il remix delle risorse in nuove varianti](#onboard-content-hub-users-add-assets) è necessario disporre di diritti Adobe Express. Adobe Express Adobe deve essere distribuito nella stessa organizzazione in Admin Console, dove viene distribuito Adobe Experience Manager.
 
 ## È possibile impostare Content Hub in modo che le linee guida del marchio della mia organizzazione vengano visualizzate come collegamento nella pagina Home? {#content-hub-setup-brand-guidelines}
 
@@ -82,7 +82,7 @@ Puoi aggiungere collegamenti personalizzati come schede separate, oltre alle sch
 
 ## È prevista la migrazione dei clienti Brand Portal esistenti a Content Hub? {#migration-brand-portal}
 
-Adobe fornisce supporto per la migrazione da Brand Portal a Content Hub che puoi utilizzare creando un ticket di supporto Adobe.
+Adobe fornisce supporto per la migrazione da Brand Portal a Content Hub, che puoi utilizzare creando un ticket di supporto Adobe.
 
 ## Perché non è possibile visualizzare l’opzione Impostazioni prodotto/Configurazione in Content Hub? {#ui-configuration-option-missing}
 
