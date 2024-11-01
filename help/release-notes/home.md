@@ -4,10 +4,10 @@ description: Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Se
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 25e5fa5a37ac65010cbc6a55f50268f95e4e33a6
+source-git-commit: 45d0d96e686d4e6c4d6cf96a8897533701665c64
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 99%
+ht-degree: 89%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Prodotto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versione | 2024.9.0 |
+| Versione | 2024.10.0 |
 | Tipo | Aggiornamenti continui |
 | Data di disponibilità | Aggiornamento continuo |
 
@@ -27,7 +27,7 @@ Con il modello di rilascio continuo in [!DNL Adobe Experience Manager] as a Clou
 * [Le versioni di funzioni](/help/release-notes/release-notes-cloud/release-notes-current.md) vengono rilasciate con frequenza mensile prevedibile e sono incentrate su nuove funzionalità e innovazioni dei prodotti.
 * [Le versioni di manutenzione](/help/release-notes/maintenance/latest.md) vengono eseguite frequentemente e si concentrano su aggiornamenti di sicurezza, correzioni di bug e miglioramenti delle prestazioni. Ciò assicura che [!DNL Adobe Experience Manager] as a Cloud Service sia sempre aggiornato con eventuali correzioni critiche.
 
-Oltre alla rapidità dell’innovazione, [!DNL Adobe Experience Manager] as a Cloud Service offre anche la flessibilità di visualizzare in anteprima le prossime funzioni con un mese di anticipo rispetto al momento in cui vengono rilasciate in produzione. Questo consente di valutare l’impatto di una versione futura sull’organizzazione sottoponendo a test le funzioni nel proprio ambiente personalizzato e di formare/preparare gli utenti interni con largo anticipo. Se disponi di un componente aggiuntivo AEM, per esempio Forms, puoi selezionarlo nella sezione [impostazioni del programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) per verificare che sia aggiornato.
+Oltre alla rapidità dell’innovazione, [!DNL Adobe Experience Manager] as a Cloud Service offre anche la flessibilità di visualizzare in anteprima le prossime funzioni con un mese di anticipo rispetto al momento in cui vengono rilasciate in produzione. Questo consente di valutare l’impatto di una versione futura sull’organizzazione sottoponendo a test le funzioni nel proprio ambiente personalizzato e formando/preparando gli utenti interni con largo anticipo. Se disponi di un componente aggiuntivo AEM, per esempio Forms, puoi selezionarlo nella sezione [impostazioni del programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) per verificare che sia aggiornato.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Oltre alla rapidità dell’innovazione, [!DNL Adobe Experience Manager] as a Cl
 
 Per prepararsi per una versione:
 
-1. Segnale sui calendari: controlla le date chiave per i rilasci mensili nella [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=it#aem-as-cloud-service) e segnale sui tuoi calendari in modo da svolgere le attività principali richieste per la preparazione alla versione.
+1. Segnale sui calendari: controlla le date chiave per i rilasci mensili nella [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem-as-cloud-service) e segnale sui tuoi calendari in modo da svolgere le attività principali richieste per la preparazione alla versione.
 1. Consulta le note sulla versione: leggi la sezione delle [note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md) per acquisire familiarità con le funzioni di rilascio e prerelease.
 1. Accedi e prova le nuove funzioni: abilita il [canale della prerelease](/help/release-notes/prerelease.md) negli ambienti di non produzione e inizia a provare le funzioni da valutare negli ambienti personalizzati.
 1. Forma gli utenti: utilizza la documentazione e le risorse di Experience League per aggiornare rapidamente gli utenti sulle nuove funzioni.

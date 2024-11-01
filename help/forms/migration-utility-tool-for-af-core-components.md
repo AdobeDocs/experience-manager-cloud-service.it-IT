@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
+source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '993'
 ht-degree: 3%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 3%
 
 <span class="preview"> La funzionalità è disponibile nel programma di adozione anticipata. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
-L&#39;utility di conversione Forms, parte della suite di [strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-Tools/), consente di convertire facilmente Forms adattivo creato con i componenti Foundation legacy in moduli che sfruttano le funzionalità moderne e supportate dei componenti core.
+L&#39;utility di conversione Forms, parte della suite dello strumento di modernizzazione [AEM](https://opensource.adobe.com/aem-modernize-tools/), consente di convertire facilmente Forms adattivo creato con i componenti Foundation legacy in moduli che sfruttano le funzionalità moderne e supportate dei componenti core.
 
 ## Cos’è l’AEM Modernize Tools?
 
-[Strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-Tools/) fa riferimento a un insieme di utilità o applicazioni software progettate per facilitare il processo di modernizzazione o aggiornamento dei progetti Adobe Experience Manager (AEM). Questi strumenti in genere aiutano a convertire i vecchi componenti o funzionalità all’interno dell’AEM in alternative più recenti, più efficienti e supportate. Forms Conversion Utility viene installato in Strumenti di modernizzazione AEM per convertire i Forms adattivi basati su componenti di base in moduli basati su componenti di base.
+[Strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/) fa riferimento a un insieme di utilità o applicazioni software progettate per facilitare il processo di modernizzazione o aggiornamento dei progetti Adobe Experience Manager (AEM). Questi strumenti in genere aiutano a convertire i vecchi componenti o funzionalità all’interno dell’AEM in alternative più recenti, più efficienti e supportate. Forms Conversion Utility viene installato in Strumenti di modernizzazione AEM per convertire i Forms adattivi basati su componenti di base in moduli basati su componenti di base.
 
 Forms Conversion Utility converte i Forms adattivi basati su componenti Foundation precedenti in moduli basati su componenti core più recenti. Questo processo di conversione garantisce l’allineamento dei moduli agli standard e alle funzionalità più recenti, migliorando potenzialmente le prestazioni, la compatibilità e la facilità di manutenzione all’interno dell’ambiente AEM.
 
@@ -68,7 +68,7 @@ Per installare gli strumenti di modernizzazione AEM nell’ambiente AEM Forms lo
 
    `java -jar aem-author-p4502.jar`
 
-1. Clona l&#39;archivio dello strumento di modernizzazione [AEM](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms) nel sistema locale.
+1. Clona l&#39;archivio dello strumento di modernizzazione [AEM](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) nel sistema locale.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
@@ -101,7 +101,7 @@ Per abilitare e utilizzare gli strumenti di modernizzazione AEM per l’ambiente
 
 ![Regola componente di modernizzazione AEM](/help/forms/assets/aem-modernize-tools-component-rule.png)
 
-## Esegui l’utility di conversione dei moduli per convertire i moduli basati su Componenti Foundation in moduli basati su Componenti core
+## Esegui l’utility di conversione moduli per convertire i moduli basati su Componenti Foundation in moduli basati su Componenti core
 
 1. Vai a **[!UICONTROL Strumenti > Strumenti di modernizzazione AEM > Conversione Forms]**.
 

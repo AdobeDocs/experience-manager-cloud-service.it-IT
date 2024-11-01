@@ -1,12 +1,12 @@
 ---
-title: Utilizzo delle pipeline di configurazione
+title: Utilizzo di \s
 description: Scopri come utilizzare le pipeline di configurazione per distribuire diverse configurazioni di AEM as a Cloud Service, ad esempio le impostazioni di inoltro del registro, le attività di manutenzione relative all’eliminazione e varie configurazioni CDN.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
+source-git-commit: 4d8f6f37541c0d712019f21a5684ec4bd5133de3
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '997'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,9 @@ Scopri come utilizzare le pipeline di configurazione per distribuire diverse con
 
 Una pipeline di configurazione di Cloud Manager distribuisce i file di configurazione (creati in formato YAML) in un ambiente di destinazione. È possibile configurare in questo modo diverse funzioni in AEM as a Cloud Service, tra cui l’inoltro del registro, le attività di manutenzione relative all’eliminazione e diverse funzioni CDN.
 
-Le pipeline di configurazione possono essere distribuite tramite Cloud Manager ai tipi di ambiente di sviluppo, stage e produzione nei programmi di produzione (non sandbox). I file di configurazione possono essere distribuiti in ambienti di sviluppo rapido (RDE) utilizzando [strumenti della riga di comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+Le pipeline di configurazione possono essere distribuite tramite Cloud Manager ai tipi di ambiente di sviluppo, di staging e di produzione nei programmi di produzione (non sandbox). I file di configurazione possono essere distribuiti in ambienti di sviluppo rapido (RDE) utilizzando [strumenti della riga di comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
-Le sezioni seguenti di questo documento forniscono una panoramica di informazioni importanti su come è possibile utilizzare le pipeline di configurazione e su come devono essere strutturate le relative configurazioni. Descrive i concetti generali condivisi tra tutte le funzionalità o un sottoinsieme di quelle supportate dalle pipeline di configurazione.
+Nelle sezioni seguenti di questo documento viene fornita una panoramica di informazioni importanti su come utilizzare le pipeline di configurazione e su come strutturare le relative configurazioni. Descrive i concetti generali condivisi tra tutte le funzionalità o un sottoinsieme di quelle supportate dalle pipeline di configurazione.
 
 * [Configurazioni supportate](#configurations) - Elenco di configurazioni che possono essere distribuite con le pipeline di configurazione
 * [Creazione e gestione delle pipeline di configurazione](#creating-and-managing) - Come creare una pipeline di configurazione.
@@ -43,16 +43,16 @@ La tabella seguente offre un elenco completo di tali configurazioni, con collega
 | [Pagine errore CDN](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Sostituisci la pagina di errore predefinita se non è possibile raggiungere l’origine AEM, facendo riferimento alla posizione del contenuto statico con hosting autonomo nel file di configurazione |
 | [Rimozione CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Dichiara le chiavi API di rimozione utilizzate per rimuovere la rete CDN |
 | [Token HTTP CDN gestito dal cliente](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Dichiara il valore della chiave X-AEM-Edge necessaria per chiamare la rete CDN di Adobe da una rete CDN del cliente |
-| [Autenticazione di base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Dichiara i nomi utente e le password per una finestra di dialogo di autenticazione di base che protegge alcuni URL [ (disponibile solo per i primi utenti)](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
+| [Autenticazione di base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Dichiara i nomi utente e le password per una finestra di dialogo di autenticazione di base che protegge alcuni URL. |
 | [Attività di manutenzione Pulizia versione](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza l’archivio AEM dichiarando le regole per determinare quando le versioni dei contenuti devono essere eliminate |
 | [Attività di manutenzione eliminazione registro di controllo](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza il registro di audit dell’AEM per migliorare le prestazioni dichiarando regole su quando eliminare i registri |
-| [Inoltro registro](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Non ancora disponibile: configura gli endpoint e le credenziali per l’inoltro dei registri a varie destinazioni (ad esempio, Splunk, Datadog, HTTPS) |
+| [Inoltro registro](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configurare gli endpoint e le credenziali per l’inoltro dei registri a varie destinazioni, tra cui Archiviazione BLOB di Azure, Datadog, HTTPS, Elasticsearch, Splunk) |
 
 ## Creazione e gestione delle pipeline di configurazione {#creating-and-managing}
 
 Per informazioni su come creare e configurare le pipeline, consulta il documento [Pipeline CI/CD.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
 
-Durante la creazione di una pipeline di configurazione in Cloud Manager, assicurati di selezionare una **distribuzione mirata** anziché **codice full stack** durante la configurazione della pipeline.
+Durante la creazione di una pipeline di configurazione in Cloud Manager, assicurati di selezionare una **distribuzione di destinazione** anziché **codice full stack** durante la configurazione della pipeline.
 
 Come indicato in precedenza, la configurazione per gli RDE viene distribuita utilizzando [strumenti della riga di comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) anziché una pipeline.
 
@@ -70,7 +70,7 @@ Ogni file di configurazione inizia con proprietà simili al seguente snippet di 
 
 | Proprietà | Descrizione | Predefiniti |
 |---|---|---|
-| `kind` | Stringa che determina il tipo di configurazione, ad esempio inoltro registro, regole del filtro del traffico o trasformazioni di richiesta | Obbligatorio, nessun valore predefinito |
+| `kind` | Stringa che determina il tipo di configurazione, ad esempio inoltro registro, regole del filtro del traffico o trasformazioni richieste | Obbligatorio, nessun valore predefinito |
 | `version` | Stringa che rappresenta la versione dello schema | Obbligatorio, nessun valore predefinito |
 | `envTypes` | Questa matrice di stringhe è una proprietà figlio del nodo `metadata`. I valori possibili sono dev, stage, prod o qualsiasi combinazione e determinano per quali tipi di ambiente verrà elaborata la configurazione. Ad esempio, se l&#39;array include solo `dev`, la configurazione non verrà caricata negli ambienti di staging o di produzione, anche se la configurazione è distribuita lì. | Tutti i tipi di ambiente (dev, stage, prod) |
 
@@ -111,7 +111,7 @@ La struttura del file sarà simile alla seguente:
   logForwarding.yaml
 ```
 
-Utilizza questa struttura quando la stessa configurazione è sufficiente per tutti gli ambienti e per tutti i tipi di configurazione (CDN, inoltro registro, ecc.). In questo scenario, la proprietà dell&#39;array `envTypes` includerebbe tutti i tipi di ambiente.
+Utilizza questa struttura quando la stessa configurazione è sufficiente per tutti gli ambienti e per tutti i tipi di configurazione (CDN, inoltro registro e così via). In questo scenario, la proprietà dell&#39;array `envTypes` includerebbe tutti i tipi di ambiente.
 
 ```yaml
    kind: "cdn"

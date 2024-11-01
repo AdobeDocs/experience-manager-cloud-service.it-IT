@@ -1,20 +1,18 @@
 ---
-title: Note sulla versione corrente per  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Note sulla versione 2024.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2024.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 9b6cbe2d1a076b6c06fb3e9d55b79e124d4abc96
+source-git-commit: 0c4db1b70aa665e1802a316ece26db1e06f40b24
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 64%
+source-wordcount: '1324'
+ht-degree: 91%
 
 ---
 
-# Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Note sulla versione 2024.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La sezione seguente illustra le note specifiche sulla versione corrente (più recente) di [!DNL Experience Manager] as a Cloud Service.
+La sezione seguente illustra le note sulla versione funzionale 2024.9.0 di [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -28,34 +26,32 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.10.0) è il venerdì 31 ottobre 2024. La prossima versione funzionale (2024.11.0) è pianificata per il venerdì 21 novembre 2024.
+La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.9.0) è il 26 settembre 2024. La prossima versione funzionale (2024.10.0) è pianificata per il 31 ottobre 2024.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
 Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-notes/maintenance/latest.md).
 
-<!-- ## Release Video {#release-video}
+## Video sulla versione {#release-video}
 
-Have a look at the October 2024 Release Overview video for a summary of the features added in the 2024.10.0 release:
+Dai un’occhiata al video Panoramica della versione di settembre 2024 per un riepilogo delle funzioni aggiunte alla versione 2024.9.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
 
--->
-
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**Eventi pagina modernizzati**
+### Nuova funzione in Experience Manager Sites {#new-feature-sites}
 
-I seguenti eventi pagina di AEM Sites sono ora disponibili come eventi fruibili esternamente basati su AEM as a Cloud Service Eventing Platform. Gli eventi possono essere elaborati tramite Adobe I/O per interagire con i processi esterni.
-* Pagina pubblicata
-* Pagina di cui è stata annullata la pubblicazione
-* Pagina eliminata
+#### Gestione della traduzione {#translation-management}
+
+I flussi di lavoro di traduzione AEM e le azioni API ora attivano gli eventi per fornire informazioni approfondite sulle modifiche dello stato del processo di traduzione. Gli utenti possono iscriversi a questi eventi tramite Adobe Developer Console. Per ulteriori informazioni sull’API di gestione della traduzione AEM, consulta [qui](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/).
 
 ### Programma per i primi utilizzatori {#sites-early-adopter}
 
 **Generare varianti**
 
 Sfruttare l’intelligenza artificiale generativa tramite la nuova funzione di AEM, [genera varianti](/help/generative-ai/generate-variations.md), ora accessibile in Cloud Service. Genera varianti consente di generare e ridimensionare la creazione di contenuti tramite l’utilizzo dell’intelligenza artificiale generativa. Rivolgiti al tuo team Adobe Account per prendere in considerazione il programma.
+
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -67,33 +63,16 @@ Le didascalie video generate dall’intelligenza artificiale in Adobe Dynamic Me
 
 Per ottenere l’accesso anticipato al supporto delle didascalie generate dall’intelligenza artificiale sul tuo account Dynamic Media, [crea e invia un caso all’Assistenza clienti Adobe](/help/assets/dynamic-media/video.md##enable-dash).
 
-### Nuove funzioni nella vista Risorse {#assets-view-new-features}
+### Nuove funzioni in Selettore risorse {#asset-selector-new-features}
 
-**Report pianificati**
-
-Ora è possibile generare automaticamente i rapporti nella vista Assets in base a una pianificazione ricorrente o in una data futura, riducendo gli sforzi per individuare informazioni basate sui dati.
-
-![Report pianificati-](/help/assets/assets/scheduled-reports-tab.png)
+Il Selettore risorse ora supporta la navigazione nelle raccolte per trovare la risorsa desiderata.
+![Raccolte del selettore risorse](/help/assets/assets/collections-rail-modal-view.png)
 
 ### Nuove funzioni nell’hub di contenuti {#content-hub-new-features}
 
-**Digital Rights Management per risorse con licenza**
-
-Le organizzazioni possono ora aumentare la conformità alle licenze e ridurre al minimo il rischio di condividere le risorse con le condizioni di licenza sfruttando DRM per le risorse concesse in licenza agli utenti di Content Hub, che devono rivedere e accettare le condizioni di licenza prima di iniziare a scaricare le risorse concesse in licenza.
-
-![download-multiple-license](/help/assets/assets/download-multiple-license.png)
-
-**Configurazione metadati scheda risorse**
-
-Content Hub ora consente di configurare fino a un massimo di 6 campi di metadati chiave da visualizzare nella scheda delle risorse.
-
-![metadati chiave nella scheda risorse](/help/assets/assets/asset-card-key-metadata.png)
-
-**Configurare la visibilità e il download delle risorse scadute**
-
 Gli amministratori ora possono verificare se rendere visibili le risorse scadute nell’hub di contenuti. Inoltre, se le risorse scadute vengono rese visibili, possono definire se gli utenti potranno scaricarle.
 
-![Risorse scadute nell’hub di contenuti](/help/assets/assets/expired-assets-content-hub.png)
+![Risorse scadute nell’hub di contenuti](/help/assets/assets/view-download-expired-assets.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -102,6 +81,7 @@ Gli amministratori ora possono verificare se rendere visibili le risorse scadute
 #### Salvataggio automatico di una bozza per moduli adattivi basati su Componenti core
 
 Gli utenti possono ora beneficiare di una funzione di salvataggio automatico che consente di salvare automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completarne la compilazione sullo stesso dispositivo o su un altro. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
+
 
 ### Funzionalità per Accesso anticipato ad AEM Forms {#forms-new-early-access-features}
 
@@ -133,34 +113,31 @@ Le funzionalità di intelligenza artificiale generativa offerte sono:
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 
+### Miglioramenti {#improvements-fixes-cif}
+
+* Rendi il limite delle categorie personalizzabile.
+
 ### Correzioni di bug {#bug-fixes-cif}
 
-* Sono stati corretti i test dell’interfaccia utente per il corretto funzionamento con i componenti core CIF.
-* È stato risolto un problema a causa del quale il formato dell’URL della categoria non funzionava come previsto nell’istanza cloud.
+* I campi di Commerce non sono correttamente integrati nell’editor schema metadati di Assets.
+* Problema con più campi dei prodotti carosello per il trascinamento.
+* Problema con più campi della categoria carosello per il trascinamento.
+* Il clic del mouse non funziona per i menu nelle informazioni della pagina nella pagina dell’editor di categorie e prodotti.
+* Il numero ordine non è visibile nella pagina di conferma dell&#39;ordine.
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
-### Inoltro dei registri self-service con opzione di rete avanzata {#log-forwarding}
+### Edge Side Includes (ESI) per il caricamento di contenuti dinamici {#esi}
 
-Mentre i registri AEM (incluso Apache/Dispatcher) e CDN possono essere scaricati da Cloud Manager, molte organizzazioni trovano utile inviare in streaming tali registri a una destinazione di registrazione preferita. AEM ora supporta [l&#39;inoltro del registro](/help/implementing/developing/introduction/log-forwarding.md) ad Azure Blob Storage, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. I registri AEM possono essere facoltativamente inoltrati tramite configurazioni di rete avanzate, ad esempio utilizzando un indirizzo IP dedicato.
+Adobe Managed CDN ora supporta [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), un linguaggio di markup per l’assemblaggio di contenuti web dinamici a livello Edge. Includendo snippet ESI, è possibile memorizzare nella cache la pagina HTML generale sulla rete CDN con valori TTL più elevati e recuperare con maggiore frequenza dall’origine le sezioni più piccole che richiedono aggiornamenti più frequenti (TTL più bassi). Questa funzionalità verrà implementata in modo graduale.
 
-Questa funzionalità è configurata dagli utenti in modo autonomo e distribuita utilizzando la [pipeline di configurazione](/help/operations/config-pipeline.md).
+### Autenticazione di base alla rete CDN {#basicauth-cdn}
 
-### Reindirizzamenti URL senza pipeline per utenti aziendali {#pipeline-free-redirects}
+Proteggi alcune risorse di contenuto visualizzando una finestra di dialogo di autenticazione di base che richiede un nome utente e una password. Questa funzione è destinata principalmente a casi d’uso di autenticazione leggera, come la revisione dei contenuti da parte delle parti aziendali interessate, anziché fungere da soluzione completa per i diritti di accesso degli utenti finali. L’elenco di nome utente e password viene gestito in Git tramite un file di configurazione distribuito tramite Pipeline di configurazione, con riferimento a variabili di ambiente Cloud Manager di tipo segreto. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-I reindirizzamenti lato browser sono utili quando una pagina web viene rimossa o spostata o in altri scenari. Con [Reindirizzamenti URL senza pipeline](/help/implementing/dispatcher/pipeline-free-url-redirects.md), è possibile inserire un file di mappa di riscrittura Apache in un percorso di pubblicazione AEM, dove viene caricato automaticamente, senza dover eseguire il commit del file nel controllo del codice sorgente o avviare una pipeline Cloud Manager.
+### Reindirizzamenti lato client {#client-side-redirects}
 
-Le opzioni per la pubblicazione del file di riscrittura includono il caricamento come risorsa, l’utilizzo di ACS Commons Rewrite Map Manager o l’interazione con un’interfaccia utente personalizzata.
-
-### Pipeline di configurazione per RDE {#config-pipeline-rdes}
-
-Gli ambienti di sviluppo rapido sono uno strumento potente per distribuire e testare rapidamente il codice e la configurazione in un ambiente Cloud. Gli RDE ora supportano [la sincronizzazione dei file YAML di configurazione](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), incluse le impostazioni CDN quali le regole del filtro del traffico e le trasformazioni di richieste/risposte, nonché l&#39;inoltro del registro e altre opzioni di configurazione. [Per ulteriori dettagli, vedere l&#39;elenco completo](/help/operations/config-pipeline.md) delle opzioni di configurazione supportate.
-
-### Nuovi profili di prodotto {#new-product-profiles}
-
-Quando viene creato un nuovo ambiente AEM, i profili di prodotto vengono visualizzati automaticamente in Adobe Admin Console, consentendo agli amministratori di assegnare l’accesso alle soluzioni e alle funzionalità concesse in licenza.
-
-I nuovi ambienti includono ora un set aggiornato di profili di prodotto, che li rendono compatibili con le funzioni future, inclusa la generazione di credenziali API in Adobe Developer Console. Gli ambienti esistenti saranno in grado di aggiornare i loro profili di prodotto in una versione futura. [Ulteriori informazioni](/help/onboarding/aem-cs-team-product-profiles.md).
+Dichiara [i reindirizzamenti del browser](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in un file di configurazione Git distribuiti e valutati nella rete CDN. Questa funzione può essere utile in scenari quali l’eliminazione di pagine, la modifica della struttura del sito e l’ottimizzazione SEO (Search Engine Optimization).
 
 ### Nuovo Developer Console di AEM (Beta pubblica) {#aem-developer-console-beta}
 
@@ -169,6 +146,14 @@ Prova una [Developer Console di AEM](/help/implementing/developing/introduction/
 Chiunque può accedere alla versione Beta pubblica facendo clic sul pulsante *Nuova console disponibile* nella Developer Console di AEM corrente. Adobe accoglie con favore qualsiasi feedback che è possibile inviare via e-mail all’indirizzo **<aemcs-new-devconsole-ui-beta@adobe.com>**.
 
 ![Schermata dei bundle OSGi nella Developer Console di AEM](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+
+### Gli utenti aziendali possono dichiarare i reindirizzamenti al di fuori di Git (programma per i primi utilizzatori) {#apache-rewritemaps-early-adopter}
+
+In modo simile ad AEM 6.5, Apache/dispatcher acquisisce le mappe di riscrittura che si trovano in una posizione specifica nell’archivio di pubblicazione e le carica, senza richiedere l’esecuzione di una pipeline a livello web. Questo approccio consente agli utenti aziendali di specificare reindirizzamenti utilizzando un foglio di calcolo o un’interfaccia utente, come ACS Commons Redirect Map Manager o un’applicazione personalizzata. Partecipa al programma per i primi utilizzatori inviando un’e-mail a **<aemcs-cdn-config-adopter@adobe.com>**.
+
+### Pipeline di configurazione per gli RDE (Programma per i primi utilizzatori) {#config-pipeline-rdes-early-adopter}
+
+La [pipeline di configurazione](/help/operations/config-pipeline.md) viene utilizzata per distribuire le configurazioni dei file yaml, incluse le opzioni CDN (regole del filtro del traffico, trasformazioni di richiesta/risposta e così via). Partecipa al programma per i primi utilizzatori inviando un’e-mail a **<aemcs-cdn-config-adopter@adobe.com>** per distribuire queste configurazioni anche negli RDE (Rapid Development Environments) che utilizzano una CLI.
 
 ## Guide di [!DNL Experience Manager] {#guides}
 
