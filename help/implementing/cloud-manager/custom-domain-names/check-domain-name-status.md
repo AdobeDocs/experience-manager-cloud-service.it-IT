@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 22%
+source-wordcount: '846'
+ht-degree: 20%
 
 ---
 
@@ -37,7 +37,7 @@ Vengono visualizzati i dettagli dello stato. Il dominio personalizzato è pronto
 
 >[!NOTE]
 >
->Se si utilizza un certificato SSL gestito da *Adobe* con il dominio, Cloud Manager attiva automaticamente la verifica quando si fa clic su **Verifica** nella finestra di dialogo Verifica dominio quando si [aggiunge un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>Se si utilizza un certificato SSL *gestito (DV) da Adobe* con il dominio, Cloud Manager attiva automaticamente la verifica quando si fa clic su **Verifica** nella finestra di dialogo Verifica dominio quando si [aggiunge un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 >
 >Se prevedi di utilizzare un **certificato SSL gestito dal cliente (OV/EV)**, il dominio viene verificato *dopo* che [aggiungi il certificato SSL OV/EV](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
@@ -50,7 +50,7 @@ Cloud Manager verifica la proprietà del dominio tramite il certificato SSL gest
 | --- | --- |
 | Verifica del dominio non riuscita | Il certificato EV/OV gestito dal cliente è mancante o rilevato con errori.<br> Per risolvere il problema, seguire le istruzioni fornite nel messaggio di stato. Al termine dell’operazione, seleziona l’icona **Nuovo tentativo di verifica** accanto allo stato. |
 | Verifica del dominio in corso | Verifica in corso.<br>Questo stato viene generalmente visualizzato dopo aver selezionato l&#39;icona **Verifica di nuovo** accanto allo stato. L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritardi di propagazione del DNS. |
-| Verificato - Distribuzione non riuscita | La verifica del certificato EV/OV è riuscita, ma la distribuzione CDN non è riuscita.<br>In questi casi, contatta il rappresentante del tuo Adobe. |
+| Verificato - Distribuzione non riuscita | La verifica del certificato EV/OV è riuscita, ma la distribuzione CDN non è riuscita.<br>In questi casi, contatta il tuo rappresentante Adobe. |
 | Dominio verificato e implementato | Questo stato indica che il nome di dominio personalizzato è pronto per l’uso.<br>A questo punto, il nome di dominio personalizzato è pronto per essere testato e puntato al nome di dominio Cloud Manager. Per ulteriori informazioni, consulta [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | Eliminazione in corso | È in corso l’eliminazione di un nome di dominio personalizzato. |
 | Eliminazione non riuscita | Eliminazione di un nome di dominio personalizzato non riuscita. È necessario riprovare.<br>Per ulteriori informazioni, consulta [Gestire i nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md). |
@@ -76,11 +76,11 @@ L’errore viene corretto come segue:
 
 * Collega il dominio APEX e tutti i sottodomini all’account Fastly AEM as a Cloud Service con questa opzione. Per ulteriori informazioni, consulta [Utilizzo dei domini nella documentazione Fastly](https://docs.fastly.com/en/guides/working-with-domains).
 
-* Se il dominio apex ha più sottodomini per siti AEM as a Cloud Service e non AEM che devono essere collegati a diversi account Fastly, prova a installare il dominio in Cloud Manager. Questo processo consente di gestire le connessioni del sottodominio tra diversi account Fastly. Se l’installazione del dominio non riesce, crea un ticket di assistenza clienti con Fastly in modo che Adobe possa seguire il caso con Fastly per tuo conto.
+* Se il dominio apex ha più sottodomini per siti AEM as a Cloud Service e non AEM che devono essere collegati a diversi account Fastly, prova a installare il dominio in Cloud Manager. Questo processo consente di gestire le connessioni del sottodominio tra diversi account Fastly. Se l’installazione del dominio non riesce, crea un ticket di assistenza clienti con Fastly in modo che Adobe possa eseguire il follow-up con Fastly per tuo conto.
 
 >[!TIP]
 >
->Per risolvere i problemi di delega del dominio con Fastly in genere sono necessari 1-2 giorni lavorativi. Per questo motivo, si consiglia vivamente di installare i domini molto prima della loro data di Go Live.
+>Per risolvere i problemi di delega del dominio con Fastly in genere sono necessari 1-2 giorni lavorativi. Per questo motivo, si consiglia di installare i domini molto prima della loro data di Go Live.
 
 >[!NOTE]
 >

@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 815bd75844ed164973c6acc07a6bf37a39d616b8
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 44%
+source-wordcount: '704'
+ht-degree: 41%
 
 ---
 
@@ -61,7 +61,7 @@ L’aggiunta di un nome di dominio personalizzato richiede l’interazione tra i
 
 >[!TIP]
 >
->L’impostazione di nomi di dominio personalizzati con AEM as a Cloud Service è in genere un processo semplice. Tuttavia, a volte possono verificarsi problemi di delega del dominio la cui risoluzione può richiedere 1-2 giorni lavorativi. Per questo motivo, si consiglia vivamente di installare i domini con grande anticipo rispetto alla data di Go Live prevista. Per ulteriori informazioni, vedere il documento [Verifica stato nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+>L’impostazione di nomi di dominio personalizzati con AEM as a Cloud Service è in genere un processo semplice. Tuttavia, a volte possono verificarsi problemi di delega del dominio la cui risoluzione può richiedere 1-2 giorni lavorativi. Per questo motivo, si consiglia di installare i domini molto prima della loro data di Go Live. Per ulteriori informazioni, vedere il documento [Verifica stato nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 ## Limitazioni {#limitations}
 
