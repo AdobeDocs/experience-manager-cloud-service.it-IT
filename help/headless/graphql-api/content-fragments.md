@@ -4,9 +4,9 @@ description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience M
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
+source-git-commit: 575b626447f6b88c1be601fbbd4de7eeb0264019
 workflow-type: tm+mt
-source-wordcount: '5557'
+source-wordcount: '5582'
 ht-degree: 78%
 
 ---
@@ -30,6 +30,10 @@ L’utilizzo dell’API GraphQL in AEM consente la consegna efficiente di Framme
 >
 >* [AEM Commerce sfrutta i dati da una piattaforma Commerce tramite GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* I Frammenti di contenuto AEM collaborano con l’API GraphQL di AEM (un’implementazione personalizzata, basata su GraphQL standard) per fornire contenuti strutturati da utilizzare nelle applicazioni.
+
+>[!NOTE]
+>
+>Per una panoramica delle varie API disponibili e un confronto di alcuni dei concetti coinvolti, consulta [API AEM per la distribuzione e la gestione strutturate dei contenuti](/help/headless/apis-headless-and-content-fragments.md).
 
 >[!NOTE]
 >
@@ -742,11 +746,11 @@ La soluzione GraphQL consente di:
 
 >[!NOTE]
 >
->È possibile utilizzare un **Riferimento contenuto** sia per le risorse DAM che per quelle Dynamic Medie. Il recupero dell’URL appropriato utilizza parametri diversi:
+>È possibile utilizzare un **Riferimento contenuto** sia per le risorse DAM che per quelle Dynamic Media. Il recupero dell’URL appropriato utilizza parametri diversi:
 >* `_dynamicUrl`: una risorsa DAM
->* `_dmS7Url` : risorsa Dynamic Medie
+>* `_dmS7Url` : risorsa Dynamic Media
 > 
->Se la risorsa a cui si fa riferimento è una risorsa DAM, il valore per `_dmS7Url` sarà `null`. Consulta [Consegna risorse Dynamic Medie tramite URL nelle query GraphQL](#dynamic-media-asset-delivery-by-url).
+>Se la risorsa a cui si fa riferimento è una risorsa DAM, il valore per `_dmS7Url` sarà `null`. Consulta [Consegna risorse Dynamic Media tramite URL nelle query GraphQL](#dynamic-media-asset-delivery-by-url).
 
 ### Struttura della richiesta di trasformazione {#structure-transformation-request}
 
@@ -922,39 +926,39 @@ Esistono le seguenti limitazioni:
    * Nessuna memorizzazione in cache sull&#39;authoring
    * Memorizzazione in cache al momento della pubblicazione - tempo massimo di 10 minuti (non può essere modificato dal client)
 
-## Consegna delle risorse Dynamic Medie tramite URL nelle query GraphQL{#dynamic-media-asset-delivery-by-url}
+## Consegna delle risorse Dynamic Media tramite URL nelle query GraphQL{#dynamic-media-asset-delivery-by-url}
 
-GraphQL per frammenti di contenuto AEM consente di richiedere un URL a una risorsa AEM Dynamic Medie (Scene7) (a cui fa riferimento un **riferimento contenuto**).
+GraphQL per frammenti di contenuto AEM consente di richiedere un URL a una risorsa AEM Dynamic Media (Scene7) (a cui fa riferimento un **riferimento contenuto**).
 
 La soluzione GraphQL consente di:
 
 * utilizzare `_dmS7Url` sul riferimento `ImageRef`
-   * vedi [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - Riferimento immagine](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+   * vedi [Query di esempio per la consegna di risorse Dynamic Media tramite URL - Riferimento immagine](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 * usa `_dmS7Url` su più riferimenti; `ImageRef`, `MultimediaRef` e `DocumentRef`
-   * vedi [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - Più riferimenti](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+   * vedi [Query di esempio per la consegna di risorse Dynamic Media tramite URL - Più riferimenti](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 * utilizza `_dmS7Url` con funzionalità di ritaglio avanzato
 
    * La proprietà `_smartCrops` espone le configurazioni di ritaglio avanzato disponibili per una risorsa specifica
 
-   * vedi [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - con ritaglio avanzato](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
+   * vedi [Query di esempio per la consegna di risorse Dynamic Media tramite URL - con ritaglio avanzato](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
->Per questo è necessario disporre di una [configurazione cloud Dynamic Medie](/help/assets/dynamic-media/config-dm.md).
+>Per questo è necessario disporre di una [configurazione cloud Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 >
 >Questo aggiunge gli attributi `dam:scene7File` e `dam:scene7Domain` ai metadati della risorsa quando viene creata.
 
 >[!NOTE]
 >
->È possibile utilizzare un **Riferimento contenuto** sia per le risorse DAM che per quelle Dynamic Medie. Il recupero dell’URL appropriato utilizza parametri diversi:
+>È possibile utilizzare un **Riferimento contenuto** sia per le risorse DAM che per quelle Dynamic Media. Il recupero dell’URL appropriato utilizza parametri diversi:
 >
->* `_dmS7Url` : risorsa Dynamic Medie
+>* `_dmS7Url` : risorsa Dynamic Media
 >* `_dynamicUrl`: una risorsa DAM
 > 
->Se la risorsa a cui si fa riferimento è una risorsa di Dynamic Medie, il valore per `_dynamicURL` sarà `null`. Consulta [consegna di immagini ottimizzate per il web nelle query GraphQL](#web-optimized-image-delivery-in-graphql-queries).
+>Se la risorsa a cui si fa riferimento è una risorsa di Dynamic Media, il valore per `_dynamicURL` sarà `null`. Consulta [consegna di immagini ottimizzate per il web nelle query GraphQL](#web-optimized-image-delivery-in-graphql-queries).
 
-### Query di esempio per la consegna di risorse Dynamic Medie tramite URL - Riferimento immagine{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
+### Query di esempio per la consegna di risorse Dynamic Media tramite URL - Riferimento immagine{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 Di seguito è riportato un esempio di query:
 * per più frammenti di contenuto di tipo `team` e `person`, restituendo un valore `ImageRef`
@@ -981,7 +985,7 @@ query allTeams {
 } 
 ```
 
-### Query di esempio per la consegna di risorse Dynamic Medie tramite URL: più riferimenti{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
+### Query di esempio per la consegna di risorse Dynamic Media tramite URL: più riferimenti{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 Di seguito è riportato un esempio di query:
 * per più frammenti di contenuto di tipo `team` e `person`, che restituiscono un `ImageRef`, `MultimediaRef` e `DocumentRef`:
@@ -1022,7 +1026,7 @@ query allTeams {
 }
 ```
 
-### Query di esempio per la consegna di risorse Dynamic Medie per URL, con ritaglio avanzato {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+### Query di esempio per la consegna di risorse Dynamic Media per URL, con ritaglio avanzato {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
 
 Di seguito è riportato un esempio di query:
 
@@ -1145,11 +1149,11 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
             * [Query di esempio per la consegna di immagini ottimizzate per il web con un singolo parametro specificato](#web-optimized-image-delivery-single-query-variable)
 
-      * `_dmS7Url`: nel riferimento `ImageRef` per la consegna dell&#39;URL a una [risorsa Dynamic Medie](#dynamic-media-asset-delivery-by-url)
+      * `_dmS7Url`: nel riferimento `ImageRef` per la consegna dell&#39;URL a una [risorsa Dynamic Media](#dynamic-media-asset-delivery-by-url)
 
-         * Vedi [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+         * Vedi [Query di esempio per la consegna di risorse Dynamic Media tramite URL - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-         * Vedi [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - Riferimenti multipli](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+         * Vedi [Query di esempio per la consegna di risorse Dynamic Media tramite URL - Riferimenti multipli](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
    * `_tags`: per visualizzare gli ID dei frammenti di contenuto o delle varianti che contengono tag; si tratta di un array di `cq:tags` identificatori.
 

@@ -5,10 +5,10 @@ landing-page-description: Scopri come utilizzare e amministrare Headless in Adob
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 97%
+source-wordcount: '701'
+ht-degree: 94%
 
 ---
 
@@ -46,8 +46,8 @@ AEM as a Cloud Service è uno strumento flessibile per il modello di implementaz
    * I frammenti di contenuto vengono creati dagli autori di contenuti tramite l’editor di frammenti di contenuto di AEM.
    * I frammenti di contenuto sono memorizzati come AEM Assets, ma possono essere gestiti tramite la console Risorse o la [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 1. **API per la distribuzione dei contenuti**
-   * L’API GraphQL di AEM supporta la distribuzione di frammenti di contenuto.
-   * L’API REST di AEM Assets supporta le operazioni CRUD relative ai frammenti di contenuto.
+   * Per una panoramica delle varie API disponibili e un confronto di alcuni dei concetti coinvolti, consulta [API AEM per la distribuzione e la gestione strutturate dei contenuti](/help/headless/apis-headless-and-content-fragments.md).
+
    * La distribuzione diretta dei contenuti è possibile anche mediante l’[esportazione JSON del componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it).
 
 ## Primi passi {#first-steps}

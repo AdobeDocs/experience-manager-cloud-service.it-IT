@@ -4,9 +4,9 @@ description: L’AEM dispone di API estese e potenti che puoi utilizzare per il 
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b3405279393be51b805c1129c171bb2249fd5726
+source-git-commit: 7c2d2fc7b37d70bee4764921a138af6379401064
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '635'
 ht-degree: 4%
 
 ---
@@ -75,6 +75,7 @@ L’AEM offre componenti personalizzabili e opzioni per la distribuzione dei con
 | [API GraphQL per frammenti di contenuto](/help/headless/graphql-api/content-fragments.md) | Consentire la distribuzione efficiente dei frammenti di contenuto ai client JavaScript nelle implementazioni CMS headless |
 | [Frammenti di contenuto API HTTP Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato esatto delle richieste di risorse HTTP supportate |
 | [OpenAPI per il modello Frammento di contenuto e Frammento di contenuto](/help/headless/content-fragment-openapis.md) | OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto |
+| [REST OpenAPI per AEM per la distribuzione dei frammenti di contenuto](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | API REST HTTP sui Edge Delivery Services AEM, progettata per fornire contenuti strutturati dai frammenti di contenuto in formato JSON. |
 
 ## API specifiche per SPA {#spa-apis}
 

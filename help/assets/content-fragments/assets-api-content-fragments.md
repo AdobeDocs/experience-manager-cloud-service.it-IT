@@ -4,9 +4,9 @@ description: Scopri il supporto per i frammenti di contenuto nell’API HTTP di 
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1829'
 ht-degree: 14%
 
 ---
@@ -23,6 +23,8 @@ ht-degree: 14%
 Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, un elemento importante della funzione di distribuzione headless di Adobe Experience Manager (AEM).
 
 >[!NOTE]
+>
+>Per una panoramica delle varie API disponibili e un confronto di alcuni dei concetti coinvolti, consulta [API AEM per la distribuzione e la gestione strutturate dei contenuti](/help/headless/apis-headless-and-content-fragments.md).
 >
 >Sono disponibili anche [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md).
 
