@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
 source-wordcount: '5618'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -558,7 +558,7 @@ La tabella seguente descrive il routing del traffico.
 
 ### Domini utili per la configurazione {#vpn-useful-domains-for-configuration}
 
-La tabella seguente descrive un set di domini e IP utili per la configurazione e lo sviluppo.
+La tabella seguente descrive un insieme di domini e IP che sono utili per la configurazione e lo sviluppo.
 
 <table>
 <thead>
