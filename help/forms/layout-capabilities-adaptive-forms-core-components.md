@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: Layout del modulo adattivo basato su componenti core, layout diversi per i moduli, layout di modulo dinamico AEM, layout di modulo AEM Cloud Service, tipi di layout di modulo nei componenti core AEM, layout di modulo adattivo
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
+source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2104'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Adaptive Forms fornisce componenti di prima classe per il layout e la progettazione efficace dei moduli. Il layout controlla il modo in cui i componenti vengono visualizzati in un modulo. Forms adattivo supporta vari layout: pannello, procedura guidata, pannello a soffietto, schede nelle schede superiore/orizzontale e schede nelle schede sinistra/verticale.
 
-![Tipi di layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}
+<!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
 ## Prerequisito
 

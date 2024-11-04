@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d256fe6c551943727c7e953a6dbd6443789616c3
+source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
-source-wordcount: '5741'
-ht-degree: 99%
+source-wordcount: '5745'
+ht-degree: 98%
 
 ---
 
@@ -739,6 +739,7 @@ ht-degree: 99%
             + [Progettare uno schema JSON per un modulo adattivo (componenti core)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Aggiungere versioni, commenti e annotazioni a un modulo adattivo](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Confronta i moduli adattivi](/help/forms/compare-forms.md)
+            + [Crea azione di invio personalizzata](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Conversione di moduli adattivi basati su componenti di base in moduli basati su Componenti core tramite lo strumento utility di migrazione](/help/forms/migration-utility-tool-for-af-core-components.md)
             + Introduzione all’editor di regole per moduli adattivi basati su componenti core{#rule-editor-core-components}
                + [Introduzione all’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components.md)
