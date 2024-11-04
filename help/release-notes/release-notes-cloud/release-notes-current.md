@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
+source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 59%
+source-wordcount: '1514'
+ht-degree: 57%
 
 ---
 
@@ -83,19 +83,19 @@ Ora è possibile generare automaticamente i rapporti nella vista Assets in base 
 
 **Digital Rights Management per risorse con licenza**
 
-Le organizzazioni possono ora aumentare la conformità alle licenze e ridurre al minimo il rischio di condividere le risorse con le condizioni di licenza sfruttando DRM per le risorse concesse in licenza agli utenti di Content Hub, che devono rivedere e accettare le condizioni di licenza prima di iniziare a scaricare le risorse concesse in licenza.
+Le organizzazioni possono ora aumentare la conformità alle licenze e ridurre al minimo il rischio di condividere le risorse con le condizioni di licenza sfruttando DRM per le risorse concesse in licenza agli utenti di Content Hub, che devono rivedere e accettare le condizioni di licenza prima di iniziare a scaricare le risorse concesse in licenza. Per ulteriori informazioni, consulta [Gestire le risorse con licenza in Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
 **Configurazione metadati scheda risorse**
 
-Content Hub ora consente di configurare fino a un massimo di 6 campi di metadati chiave da visualizzare nella scheda delle risorse.
+Content Hub ora consente di configurare fino a un massimo di 6 campi di metadati chiave da visualizzare nella scheda delle risorse. Per ulteriori informazioni, consulta la sezione Scheda risorse in [Configurare Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
 
 ![metadati chiave nella scheda risorse](/help/assets/assets/asset-card-key-metadata.png)
 
 **Configurare la visibilità e il download delle risorse scadute**
 
-Gli amministratori ora possono verificare se rendere visibili le risorse scadute nell’hub di contenuti. Inoltre, se le risorse scadute vengono rese visibili, possono definire se gli utenti potranno scaricarle.
+Gli amministratori ora possono verificare se rendere visibili le risorse scadute nell’hub di contenuti. Se le risorse scadute vengono rese visibili, possono anche definire se gli utenti possono scaricarle. Per ulteriori informazioni, vedere la sezione Assets scaduta in [Configurare Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
 
 ![Risorse scadute nell’hub di contenuti](/help/assets/assets/expired-assets-content-hub.png)
 
