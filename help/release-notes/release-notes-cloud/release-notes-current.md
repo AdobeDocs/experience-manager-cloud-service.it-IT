@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a5159f2ff49b8e216087df4206c14a9ccd89f336
+source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 63%
+source-wordcount: '1480'
+ht-degree: 59%
 
 ---
 
@@ -143,6 +143,19 @@ Le funzionalità di intelligenza artificiale generativa offerte sono:
 * È stato risolto un problema a causa del quale il formato dell’URL della categoria non funzionava come previsto nell’istanza cloud.
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
+
+### Configurazione per controllare l’invio dei moduli {#configuration-submissions}
+
+Per controllare l&#39;invio di moduli Coral o Foundation in posizioni specifiche, AEM ha introdotto una nuova configurazione: `com.adobe.granite.ui.components.FormRestrict`. Questa configurazione è costituita da due campi:
+
+1. **Aggiungi percorsi consentiti**: specifica i percorsi in cui sono consentite le azioni del modulo.
+1. **Limita comportamento**: determina il comportamento per i percorsi con restrizioni (percorsi non inclusi nell&#39;elenco Consentiti). Puoi scegliere tra due opzioni:
+   * **Popup** (impostazione predefinita): visualizza una notifica popup.
+   * **Impedisci**:Blocca l&#39;invio di moduli.
+
+>[!NOTE]
+>
+>Questa configurazione non è supportata per tutti i moduli Coral o Foundation che si trovano in `/apps`, `/libs`, `/mnt/overlay` e `/mnt/override`.
 
 ### Inoltro dei registri self-service con opzione di rete avanzata {#log-forwarding}
 
