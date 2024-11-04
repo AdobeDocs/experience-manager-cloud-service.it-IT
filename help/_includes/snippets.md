@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
+source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 95%
+source-wordcount: '1274'
+ht-degree: 93%
 
 ---
 # Snippet {#snippets}
@@ -178,7 +178,10 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >
 >L’editor universale non è compatibile con gli [elenchi IP consentiti.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
->Se desideri utilizzare l’editor universale, gli elenchi IP consentiti non devono essere abilitati.
+>Se desideri utilizzare l’Editor universale, devi effettuare le seguenti operazioni:
+>
+>* Non abilitare gli Elenchi consentiti IP.
+>* [Esegui la tua istanza del servizio Universal Editor.](/help/implementing/universal-editor/local-dev.md)
 
 ## Utilizzare Dynamic Media {#work-with-dynamic-media}
 
