@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
+source-git-commit: 31fc69523107719d6f33d7a0845407547b57f4a7
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 24%
+source-wordcount: '1317'
+ht-degree: 23%
 
 ---
 
@@ -159,7 +159,11 @@ Il componente selezionato è stato eliminato.
 
 1. Il componente trascinato diventa grigio nella struttura del contenuto, mentre il punto di inserimento è rappresentato da una linea blu. Rilasciate il componente per posizionarlo nella nuova posizione.
 
-I componenti vengono riordinati sia nella struttura del contenuto che nell’editor
+I componenti vengono riordinati sia nella struttura del contenuto che nell’editor.
+
+>[!NOTE]
+>
+>Impossibile spostare i componenti tra contenitori se è impostato un filtro [componente](/help/implementing/universal-editor/customizing.md#filtering-components) diverso tra i contenitori di origine e di destinazione.
 
 ## Anteprima del contenuto {#previewing-content}
 

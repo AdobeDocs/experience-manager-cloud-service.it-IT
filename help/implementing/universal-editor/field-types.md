@@ -4,9 +4,9 @@ description: Scopri i campi e i tipi di componenti che possono essere modificati
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8516cf6e9ec080824848a2b84fd669eddfaa3165
+source-git-commit: 5153d18b6bb8934479a02cbaa5236acef7c80cd1
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1281'
 ht-degree: 12%
 
 ---
@@ -139,7 +139,11 @@ Un tipo di componente tag AEM abilita un selettore di tag AEM, che può essere u
 
 #### Contenuto AEM {#aem-content}
 
-Un tipo di componente di contenuto AEM abilita un selettore di contenuti AEM, che può essere utilizzato per impostare riferimenti al contenuto.
+Un tipo di componente di contenuto AEM abilita un selettore di contenuti AEM, che può essere utilizzato per impostare riferimenti al contenuto. Offre un tipo di convalida aggiuntivo.
+
+| Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
+|---|---|---|---|
+| `rootPath` | `string` | Percorso che il selettore di contenuti aprirà per consentire all’utente di selezionare il contenuto AEM, limitando la selezione a tale directory e sottodirectory | No |
 
 >[!BEGINTABS]
 
@@ -298,11 +302,15 @@ Un tipo di componente contenitore consente il raggruppamento di componenti. Offr
 
 #### Frammenti di contenuto {#content-fragment}
 
-Il selettore Frammento di contenuto può essere utilizzato per selezionare un [Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) e le relative varianti (se necessario). Offre una configurazione aggiuntiva.
+Il selettore Frammento di contenuto può essere utilizzato per selezionare un [Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) e le relative varianti (se necessario). Offre una configurazione e una convalida aggiuntive.
 
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
 | `variationName` | `string` | Nome della variabile per memorizzare la variante selezionata. Se non è definito, non viene visualizzato alcun selettore varianti | No |
+
+| Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
+|---|---|---|---|
+| `rootPath` | `string` | Percorso che il selettore contenuto aprirà per consentire all’utente di selezionare il Frammento di contenuto, limitando la selezione a tale directory e sottodirectory | No |
 
 >[!NOTE]
 >
@@ -430,11 +438,15 @@ Offre inoltre un tipo di convalida aggiuntivo.
 
 #### Frammento di esperienza {#experience-fragment}
 
-Il selettore Frammento esperienza può essere utilizzato per selezionare un [Frammento esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md) e le relative varianti (se necessario). Offre una configurazione aggiuntiva.
+Il selettore Frammento esperienza può essere utilizzato per selezionare un [Frammento esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md) e le relative varianti (se necessario). Offre una configurazione e una convalida aggiuntive.
 
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
 | `variationName` | `string` | Nome della variabile per memorizzare la variante selezionata. Se non è definito, non viene visualizzato alcun selettore varianti | No |
+
+| Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
+|---|---|---|---|
+| `rootPath` | `string` | Percorso che il selettore contenuto aprirà per consentire all’utente di selezionare il frammento di esperienza, limitando la selezione a tale directory e sottodirectory | No |
 
 >[!BEGINTABS]
 
