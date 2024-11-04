@@ -4,13 +4,13 @@ description: AEM Forms supporta funzioni personalizzate che consentono agli uten
 keywords: Aggiungi una funzione personalizzata, utilizza una funzione personalizzata, crea una funzione personalizzata, utilizza la funzione personalizzata nell’editor di regole.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: f5c17382052b4d116deaae564f1a2b9fdbb5ea0a
+exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 0%
+source-wordcount: '1340'
+ht-degree: 2%
 
 ---
-
 
 # Creare una funzione personalizzata per un modulo adattivo basato su componenti core
 
@@ -226,7 +226,7 @@ Visualizziamo in anteprima il modulo per osservare come le funzioni personalizza
 
 >[!NOTE]
 >
-> È possibile fare riferimento alla seguente cartella [funzione personalizzata](/help/forms/assets//customfunctions.zip). Scarica e installa questa cartella nella tua istanza AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+> È possibile fare riferimento alla seguente cartella [funzione personalizzata](/help/forms/assets//customfunctions.zip). Scarica e installa questa cartella nella tua istanza AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
 ## Funzioni delle funzioni personalizzate
 
@@ -238,49 +238,7 @@ Approfondiamo le funzioni personalizzate.
 
 ### Supporto asincrono nelle funzioni personalizzate {#support-of-async-functions}
 
-Le funzioni personalizzate asincrone non vengono visualizzate nell’elenco dell’editor di regole. Tuttavia, è possibile richiamare funzioni asincrone all’interno di funzioni personalizzate create utilizzando espressioni di funzioni sincrone.
-
-![Sincronizza e sincronizza funzione personalizzata](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
-
->[!NOTE]
->
-> Il vantaggio di chiamare funzioni asincrone nelle funzioni personalizzate è che le funzioni asincrone consentono l’esecuzione simultanea di più attività, con il risultato di ogni funzione utilizzata all’interno delle funzioni personalizzate.
-
-Osserva il codice seguente per scoprire come richiamare funzioni asincrone utilizzando funzioni personalizzate:
-
-```javascript
-    
-    async function asyncFunction() {
-    const response = await fetch('https://petstore.swagger.io/v2/store/inventory');
-    const data = await response.json();
-    return data;
-    }
-
-    /**
-    * callAsyncFunction
-    * @name callAsyncFunction callAsyncFunction
-    */
-    function callAsyncFunction() {
-    asyncFunction()
-        .then(responseData => {
-        console.log('Response data:', responseData);
-        })
-        .catch(error => {
-         console.error('Error:', error);
-    });
-}
-```
-
-Nell&#39;esempio precedente, la funzione asyncFunction è un `asynchronous function`. Esegue un&#39;operazione asincrona effettuando una richiesta `GET` a `https://petstore.swagger.io/v2/store/inventory`. Attende la risposta utilizzando `await`, analizza il corpo della risposta come JSON utilizzando `response.json()`, quindi restituisce i dati. La funzione `callAsyncFunction` è una funzione personalizzata sincrona che richiama la funzione `asyncFunction` e visualizza i dati di risposta nella console. Sebbene la funzione `callAsyncFunction` sia sincrona, chiama la funzione asyncFunction asincrona e gestisce il risultato con `then` e `catch` istruzioni.
-
-Per vedere come funziona, aggiungiamo un pulsante e creiamo una regola per il pulsante che richiama la funzione asincrona al clic di un pulsante.
-
-![creazione regola per funzione asincrona](/help/forms/assets/rule-for-async-funct.png)
-
-Fare riferimento all&#39;illustrazione della finestra della console seguente per dimostrare che quando l&#39;utente fa clic sul pulsante `Fetch`, viene richiamata la funzione personalizzata `callAsyncFunction`, che a sua volta chiama una funzione asincrona `asyncFunction`. Inspect nella finestra della console per visualizzare la risposta al pulsante, fai clic su:
-
-![Finestra della console](/help/forms/assets/async-custom-funct-console.png)
-
+Puoi implementare funzioni asincrone nell’editor di regole utilizzando funzioni personalizzate. Per istruzioni su come eseguire questa operazione, consulta l&#39;articolo [Utilizzo di funzioni asincrone in un modulo adattivo](/help/forms/using-async-funct-in-rule-editor.md).
 
 ### Supporto di oggetti di ambito Field e Global nelle funzioni personalizzate {#support-field-and-global-objects}
 
@@ -289,6 +247,8 @@ Gli oggetti Field fanno riferimento ai singoli componenti o elementi di un modul
 >[!NOTE]
 >
 > `param {scope} globals` deve essere l&#39;ultimo parametro e non viene visualizzato nell&#39;editor di regole di un modulo adattivo.
+
+Per ulteriori informazioni sugli oggetti ambito, vedere l&#39;articolo [Oggetti ambito nelle funzioni personalizzate](/help/forms/custom-function-core-component-scope-function.md).
 
 ### Supporto della memorizzazione in cache nella funzione personalizzata
 

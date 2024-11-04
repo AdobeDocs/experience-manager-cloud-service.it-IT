@@ -1,8 +1,8 @@
 ---
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: d761370dcf6530bf557de6f8a0e7b6e111eb9e35
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 97%
+source-wordcount: '1260'
+ht-degree: 95%
 
 ---
 # Snippet {#snippets}
@@ -111,6 +111,12 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
    <td>L’opzione <b>Imposta valore di</b> non supporta l’<b>Output del servizio</b> per richiamare le API nell’editor di regole.
    </td>
    </tr>
+   <tr>
+   <td>Navigare tra i pannelli</td>
+   <td> I componenti <b>Pulsante Successivo</b> e <b>Pulsante Precedente</b> sono forniti per spostarsi tra i pannelli. Un pulsante di navigazione posizionato all’interno del contenitore funziona sui relativi elementi secondari</td>
+   <td> La regola <b>Navigazione nel pannello</b> è disponibile nell'editor di regole, consentendo agli utenti di creare regole per spostarsi tra gli elementi figlio dei pannelli.
+   </td>
+   </tr>
    </tr>
    </tr>
   </tbody>
@@ -126,6 +132,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 * [Differenza nelle varie edizioni dell’editor di regole](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core](/help/forms/create-and-use-custom-functions.md)
 * [Creare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
+* [Oggetto ambito nelle funzioni personalizzate](/help/forms/custom-function-core-component-scope-function.md)
 * [Esempi di sviluppo e utilizzo di una funzione personalizzata](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -162,7 +169,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >
 >[L’editor universale](/help/implementing/universal-editor/introduction.md) non è compatibile con gli elenchi IP consentiti.
 >
->Se si desidera utilizzare l&#39;editor universale, gli elenchi consentiti IP non devono essere attivati.
+>Se desideri utilizzare l’editor universale, gli elenchi IP consentiti non devono essere abilitati.
 
 ## Editor universale ed elenchi IP consentiti {#ue-ip-allow-lists}
 
@@ -170,7 +177,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >
 >L’editor universale non è compatibile con gli [elenchi IP consentiti.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
->Se si desidera utilizzare l&#39;editor universale, gli Elenchi consentiti IP non devono essere attivati.
+>Se desideri utilizzare l’editor universale, gli elenchi IP consentiti non devono essere abilitati.
 
 ## Utilizzare Dynamic Media {#work-with-dynamic-media}
 
@@ -197,7 +204,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >* Distribuisci un’[esperienza interattiva basata su 3D](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Altre [risorse su Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
-## Registra un ticket di supporto {#support-ticket}
+## Registrare un ticket di supporto {#support-ticket}
 
 Se un problema relativo a un prodotto richiede ulteriori indagini e tentativi di risoluzione e deve soddisfare gli SLT di risposta, puoi inviare un ticket di supporto.
 

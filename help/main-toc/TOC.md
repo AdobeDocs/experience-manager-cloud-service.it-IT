@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0e7c58b2a4d0f0704f8693c0dddae0b1a033ec83
+source-git-commit: d256fe6c551943727c7e953a6dbd6443789616c3
 workflow-type: tm+mt
-source-wordcount: '5729'
+source-wordcount: '5741'
 ht-degree: 99%
 
 ---
@@ -746,9 +746,11 @@ ht-degree: 99%
                + [Differenza tra editor di regole di base e editor di regole dei componenti core](/help/forms/rule-editor-core-components-difference-tables.md)
                + [Tipi di operatori ed eventi disponibili nell’editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-events-operators.md)
                + [Esempi per un editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-usecases.md)
+               + [Utilizzo di funzioni asincrone in un modulo adattivo](/help/forms/using-async-funct-in-rule-editor.md)
             + Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core{#create-and-use-custom-function-core-component}
                + [Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core](/help/forms/create-and-use-custom-functions.md)
                + [Creare e utilizzare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
+               + [Oggetto ambito nelle funzioni personalizzate](/help/forms/custom-function-core-component-scope-function.md)
                + [Esempi di funzioni personalizzate per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-components-use-cases.md)
             + Introduzione al Portale moduli e ai relativi componenti{#introduction-to-forms-portal}
                + [Introduzione al componente Portale moduli](/help/forms/configure-forms-portal.md)

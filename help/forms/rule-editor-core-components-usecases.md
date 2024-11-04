@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
+source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,26 @@ ht-degree: 0%
 L’articolo fornisce esempi dettagliati di editor di regole per un modulo adattivo basato su componenti core, fornendo informazioni sulla sua corretta implementazione per scenari diversi. L’editor di regole consente agli sviluppatori di definire e gestire la logica che controlla il comportamento dei moduli.
 Ora, parliamo delle diverse implementazioni per un editor di regole.
 
+
+## Navigazione tra i pannelli utilizzando il pulsante
+
+L’editor di regole consente di aggiungere pulsanti di navigazione ai layout del pannello, ad esempio Schede orizzontali, Schede verticali, Pannello a soffietto o Procedura guidata. Questi pulsanti migliorano l’esperienza utente semplificando le transizioni tra i diversi pannelli di un modulo, spostando lo stato attivo sul pannello selezionato.
+
+Immagina di interagire con la sezione delle impostazioni di profilo di un’applicazione, in cui la navigazione è facilitata da pulsanti anziché schede. Quando si immettono le impostazioni del profilo dal dashboard principale, si incontrano una serie di pannelli dedicati a diversi aspetti del loro profilo: **Informazioni personali**, **Sicurezza account** e **Preferenze di notifica**.
+
+Ogni pannello contiene campi e opzioni pertinenti per l’aggiornamento di informazioni specifiche. I pulsanti di spostamento, ad esempio `Next` e `Back`, sono posizionati in modo evidente e consentono di spostarsi tra questi pannelli. Fai clic su `Next` per portare l&#39;utente al pannello **Sicurezza account** e fai clic su `Back` per tornare al pannello **Informazioni personali**. Questo metodo di navigazione garantisce una transizione fluida tra le sezioni senza perdere contesto, fornendo un’esperienza utente fluida e intuitiva. L’utilizzo dei pulsanti di navigazione semplifica il processo di gestione delle impostazioni del profilo, rendendo l’interazione più organizzata e di facile utilizzo.
+
+È possibile utilizzare la regola `Navigate among the panels` per creare regole di navigazione per i pulsanti che consentono il passaggio tra pannelli diversi.  Selezionare l&#39;attributo `Shift focus to the next item` per spostare lo stato attivo sul pannello successivo nel layout.
+
+![Regola pannello successivo](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+
+Quando si fa clic sul pulsante `Next`, lo stato attivo si sposta sul pannello successivo nel layout.
+
+![Pulsante Avanti per spostarsi nel pannello](/help/forms/assets/navigate-in-panel.gif)
+
+Analogamente, è possibile creare una regola per il pulsante `Previous` per spostare lo stato attivo sul pannello precedente.
+
+![Regola pannello precedente](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
 ## Semplificare i calcoli complessi in pannelli ripetibili con le funzioni
 

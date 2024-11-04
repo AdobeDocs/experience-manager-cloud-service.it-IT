@@ -4,13 +4,13 @@ description: Il layout e l’aspetto di Adaptive Forms su vari dispositivi sono 
 feature: Adaptive Forms, Core Components
 keywords: Layout del modulo adattivo basato su componenti core, layout diversi per i moduli, layout di modulo dinamico AEM, layout di modulo AEM Cloud Service, tipi di layout di modulo nei componenti core AEM, layout di modulo adattivo
 role: User, Developer, Admin
-source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
+exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
+source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
 
 ---
-
 
 # Funzionalità di layout di Forms adattivo basate sui componenti core
 
@@ -261,7 +261,6 @@ Allo stesso modo, potete nascondere i titoli anche per gli altri due pannelli. A
    ![Componenti del terzo pannello](/help/forms/assets/panel-3-component.png)
 
 1. Fai clic su **[!UICONTROL Anteprima]** nell&#39;angolo in alto a destra dell&#39;ambiente di authoring.
-
    ![Layout orizzontale](/help/forms/assets/horizontal-layout.gif)
 
 Puoi anche [trascinare i componenti](#extra-bytes) per aggiungere i componenti del modulo a ciascun pannello.

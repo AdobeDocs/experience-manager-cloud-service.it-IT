@@ -7,15 +7,15 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Introduzione alle funzioni personalizzate per Forms adattivo basato su componenti core
+# Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -72,7 +72,7 @@ Il parametro è un elenco di argomenti utilizzati dalle funzioni personalizzate.
    * data[]: rappresenta una matrice di valori di data.
    * array: rappresenta una matrice generica contenente valori di vari tipi.
    * object: rappresenta un oggetto modulo passato a una funzione personalizzata anziché passare direttamente il relativo valore.
-   * ambito: rappresenta l&#39;oggetto globals, che contiene variabili di sola lettura quali istanze di moduli, istanze di campi di destinazione e metodi per l&#39;esecuzione di modifiche di moduli all&#39;interno di funzioni personalizzate. Viene dichiarato come ultimo parametro nelle annotazioni di JavaScript e non è visibile nell’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo. Per ulteriori informazioni sull&#39;oggetto Globals e su come utilizzarlo, [fare clic qui](/help/forms/custom-function-core-component-create-function.md#field-and-global-scope-objects-support-in-custom-functions).
+   * ambito: rappresenta l&#39;oggetto globals, che contiene variabili di sola lettura quali istanze di moduli, istanze di campi di destinazione e metodi per l&#39;esecuzione di modifiche di moduli all&#39;interno di funzioni personalizzate. Viene dichiarato come ultimo parametro nelle annotazioni di JavaScript e non è visibile nell’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo. Per ulteriori informazioni sull&#39;oggetto Globals e su come utilizzarlo, [fare clic qui](/help/forms/custom-function-core-component-scope-function.md).
 
 Il tipo di parametro non fa distinzione tra maiuscole e minuscole e non sono consentiti spazi nel nome del parametro.
 

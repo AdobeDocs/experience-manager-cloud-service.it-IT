@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: d9f4e14edb1d7a84f130dea0c82734574404601c
+source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2124'
 ht-degree: 3%
 
 ---
@@ -90,7 +90,7 @@ Clona l’archivio dei componenti core di Forms adattivi: per aggiungere una lin
    git clone https://github.com/adobe/aem-core-forms-components.git
    ```
 
-   Questo comando scarica l&#39;archivio e crea una cartella denominata `aem-core-forms-components` nel computer. In questa guida questa cartella viene indicata come `[Adaptive Forms Core Components repository]`
+   Questo comando scarica l&#39;archivio e crea una cartella denominata `aem-core-forms-components` nel computer. In questa guida questa cartella viene indicata come `[Adaptive Forms Core Components repository]`.
 
 
 ## Aggiungi una lingua {#add-localization-support-for-non-supported-locales}
@@ -228,6 +228,28 @@ Ora incorporiamo la libreria `clientlib-it-custom-locale` nella directory del pr
 
       ![Incollare clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
+1. Aggiorna il percorso `aemLangUrl` in `languageinit.js`
+
+   1. Passa alla seguente directory all&#39;interno della [directory del progetto AEMaaCS]:
+
+      ```
+      /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib/clientlib-it-custom-locale/js
+      ```
+
+   1. Apri il file `languageinit.js` nell&#39;editor.
+   1. Individuare la riga seguente nel file `languageinit.js`:
+
+      `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
+
+   1. Sostituisci `forms-core-components-it` con il tuo `<app-id>` (ID effettivo dell&#39;applicazione) nella riga precedente.
+
+      `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
+
+      ![file-init-lingua](/help/forms/assets/language-init-name-change.png)
+
+>[!NOTE]
+>  
+> Se non sostituisci `forms-core-components-it` con il nome del progetto o `<app-id>`, la traduzione del componente selezione data non riesce.
 
 ### Crea un file per la nuova lingua:
 
@@ -371,7 +393,7 @@ Questi passaggi ti guidano attraverso l’anteprima di un modulo adattivo con le
 
 ## Procedure consigliate per il supporto della nuova localizzazione {#best-practices}
 
-* L’Adobe consiglia di creare un progetto di traduzione dopo la creazione di un modulo adattivo. Ciò semplifica il processo di localizzazione.
+* Adobe consiglia di creare un progetto di traduzione dopo la creazione di un modulo adattivo. Ciò semplifica il processo di localizzazione.
 * Quando i componenti Casella numerica e Selettore data vengono convertiti in una lingua specifica, possono verificarsi problemi di formattazione. Per ovviare a questo problema, è stata incorporata un&#39;opzione **Lingua** nella finestra di dialogo Configura del [componente Selezione data](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) e del [componente Casella numerica](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 

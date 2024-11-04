@@ -4,13 +4,13 @@ description: L’articolo delinea vari casi d’uso per una funzione personalizz
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 580e206427f2205fa8ca537ab4988a90c988171b
+exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 0%
 
 ---
-
 
 # Esempi di sviluppo e utilizzo di funzioni personalizzate
 
@@ -264,7 +264,7 @@ Fare riferimento all&#39;illustrazione di `console window` seguente per dimostra
 
 Scopri in che modo le funzioni personalizzate utilizzano gli oggetti campo e globali per sostituire i gestori di invio con l&#39;aiuto di un modulo `Contact Us`.
 
-Aggiungi la seguente riga di codice come descritto nella sezione [create-custom-function](/help/forms/custom-function-core-component-create-function.md) per personalizzare l&#39;invio o il messaggio di errore per l&#39;invio dei moduli e visualizzare i messaggi di invio dei moduli in una casella modale:
+Aggiungi la seguente riga di codice come descritto nella sezione [create-custom-functionas](/help/forms/custom-function-core-component-create-function.md) per personalizzare l&#39;invio o il messaggio di errore per l&#39;invio dei moduli e visualizzare i messaggi di invio dei moduli in una casella modale:
 
 ```javascript
 /**
