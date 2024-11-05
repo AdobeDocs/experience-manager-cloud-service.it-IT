@@ -4,9 +4,9 @@ description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i c
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
+source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3187'
 ht-degree: 11%
 
 ---
@@ -52,6 +52,7 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
    * **Cancellazione:** Scegliere il valore `Wipe`
       * L&#39;opzione **Cancella** imposta il punto iniziale della destinazione per l&#39;acquisizione. Se **Cancella** è abilitato, la destinazione, incluso tutto il suo contenuto, verrà reimpostata sulla versione dell&#39;AEM specificata in Cloud Manager. Se non è abilitata, la destinazione mantiene il contenuto corrente come punto di partenza.
       * Questa opzione **NON** influisce sul modo in cui verrà eseguita l&#39;acquisizione del contenuto. L&#39;acquisizione utilizza sempre una strategia di sostituzione dei contenuti e _non_ una strategia di unione dei contenuti. Pertanto, nei casi **Cancella** e **Non Cancella**, l&#39;acquisizione di un set di migrazione sovrascriverà i contenuti nello stesso percorso sulla destinazione. Ad esempio, se il set di migrazione contiene `/content/page1` e la destinazione contiene già `/content/page1/product1`, l&#39;acquisizione rimuove l&#39;intero percorso `page1` e le relative pagine secondarie, incluso `product1`, e lo sostituisce con il contenuto nel set di migrazione. Ciò significa che è necessario eseguire un&#39;attenta pianificazione durante l&#39;esecuzione di un&#39;acquisizione **Non-Wipe** in una destinazione che contiene qualsiasi contenuto che deve essere mantenuto.
+      * Le acquisizioni non wipe sono progettate appositamente per il caso d’uso di acquisizione integrativa. Queste acquisizioni mirano ad avere una quantità incrementale di nuovi contenuti che sono cambiati rispetto all’ultima acquisizione in un set di migrazione esistente. Al di fuori di questo caso d’uso, l’esecuzione di acquisizioni senza cancellazione potrebbe richiedere tempi di acquisizione molto lunghi.
 
    >[!IMPORTANT]
    > Se l&#39;impostazione **Cancella** è abilitata per l&#39;acquisizione, verrà ripristinato l&#39;intero archivio esistente, incluse le autorizzazioni utente sull&#39;istanza del Cloud Service di destinazione. La reimpostazione è vera anche per un utente amministratore aggiunto al gruppo **amministratori** e tale utente deve essere aggiunto nuovamente al gruppo amministratori per avviare un&#39;acquisizione.
@@ -135,7 +136,7 @@ Puoi avviare un&#39;acquisizione nell&#39;ambiente di destinazione solo se appar
 
 ### Impossibile raggiungere il servizio di migrazione {#unable-to-reach-migration-service}
 
-Dopo aver richiesto un’acquisizione, è possibile che venga visualizzato all’utente un messaggio simile al seguente: &quot;Il servizio di migrazione nell’ambiente di destinazione non è raggiungibile. In tal caso, riprova più tardi o contatta il supporto Adobe.&quot;
+Dopo aver richiesto un’acquisizione, è possibile che venga visualizzato all’utente un messaggio simile al seguente: &quot;Il servizio di migrazione nell’ambiente di destinazione non è raggiungibile. In tal caso, riprova più tardi o contatta l’assistenza Adobe.&quot;
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
