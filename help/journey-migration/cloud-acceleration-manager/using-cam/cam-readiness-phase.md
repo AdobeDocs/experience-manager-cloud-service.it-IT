@@ -4,10 +4,10 @@ description: Questa pagina fornisce una panoramica sulla fase di preparazione in
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 9%
+source-wordcount: '1084'
+ht-degree: 7%
 
 ---
 
@@ -24,11 +24,11 @@ Per passare alla fase di preparazione, segui la procedura riportata di seguito:
 
 1. Fai clic sulla scheda del progetto.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
+   ![Scheda Progetto](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
 1. Nella pagina di destinazione del progetto, passa alla sezione **Preparazione**, come illustrato nella figura seguente.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
+   ![Preparazione](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
    >Per ulteriori informazioni, consulta Creazione e gestione di un progetto in Cloud Acceleration Manager.
@@ -43,7 +43,7 @@ Per passare alla fase di preparazione, segui la procedura riportata di seguito:
 
 1. Fai clic su **Rivedi** dalla scheda **Analisi delle best practice**.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
+   ![Analisi delle best practice - Revisione](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
 1. Scarica Best Practices Analyzer (BPA).
 
@@ -57,14 +57,14 @@ Per passare alla fase di preparazione, segui la procedura riportata di seguito:
 
 1. In CAM, fai clic su **Ottieni chiave di caricamento**, in modo da ottenere la chiave utilizzata per configurare il sistema per caricare automaticamente i rapporti BPA direttamente in CAM.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
+   ![Ottieni chiave di caricamento](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
    >Il rapporto può ancora essere caricato manualmente, ma l’utilizzo della Chiave di caricamento semplifica l’operazione. Nota che il rapporto non può essere caricato manualmente se sei in modalità di navigazione in incognito del browser.
 
 1. Dopo aver caricato un nuovo rapporto, puoi vedere il rapporto Analisi delle best practice in CAM.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+   ![Rapporto sull&#39;analisi delle best practice](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
    >[!NOTE]
    >Se vengono caricati più rapporti diversi, il rapporto visualizzato in dettaglio è sempre quello con la data di creazione più recente (non la data di caricamento).
@@ -82,7 +82,7 @@ Effettua le seguenti operazioni:
 
 1. Fare clic sull&#39;azione **Anteprima di stampa**.
 
-   ![immagine](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
+   ![Anteprima di stampa](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
 
 1. Nella nuova scheda con il report visualizzato in anteprima stampabile, fai clic su **Stampa** per stampare il report in formato PDF.
 
@@ -91,7 +91,7 @@ Effettua le seguenti operazioni:
    >* L&#39;opzione **Salva come PDF** è consigliata e supportata per la funzionalità precedente.
    >* Se si utilizza il pulsante Stampa del browser, verrà stampata una sola pagina.
 
-   ![immagine](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
+   ![Stampa](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Utilizzo della linea di tendenza della vista {#trendline-view-cam}
 
@@ -104,15 +104,15 @@ Per visualizzare i rapporti dall’opzione della linea di tendenza, segui i pass
 
 1. Passa al progetto e fai clic su **Rivedi** dalla scheda **Analisi delle best practice** nella fase **Preparazione**.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![Analisi delle best practice - Revisione](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Dall&#39;elenco a discesa **Visualizza**, fare clic su **Rapporto linea di tendenza**, come illustrato nella figura seguente.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
+   ![Rapporto linea di tendenza](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
 1. Facendo clic su **Report linea di tendenza** viene aperta la visualizzazione della linea di tendenza del report.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
+   ![Visualizzazione linea di tendenza](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
 
    >[!NOTE]
@@ -124,14 +124,14 @@ Per visualizzare i rapporti dall’opzione della linea di tendenza, segui i pass
    >1. **Tendenza modelli e componenti personalizzati**
    >
    >Potete aggiungere o modificare la vista grafica mediante il menu a discesa, come illustrato nella figura riportata di seguito.
-   >![immagine](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
+   >![Selezionare la visualizzazione grafica](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### Analisi del rapporto di Best Practices Analyzer {#analysis-report}
 
 Esplora le seguenti schede disponibili nella pagina Report di analisi delle best practice:
 
-![immagine](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
+![Rapporto di analisi delle best practice](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
 > Con ogni scheda, puoi:
@@ -144,21 +144,21 @@ Esplora le seguenti schede disponibili nella pagina Report di analisi delle best
 
 La scheda **Proprietà report** fornisce informazioni sulle proprietà del report come la data, la durata, i filtri, la data di caricamento e i dettagli di Adobe Experience Manager (AEM).
 
-![immagine](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
+![Proprietà report](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Panoramica del rapporto {#report-overview}
 
 Questa scheda **Panoramica report** fornisce i risultati del report e i livelli di gravità che si applicano quando si valuta la fattibilità del passaggio ad AEM as a Cloud Service, come illustrato nella figura seguente.
 
-![immagine](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
+![Panoramica report](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
 Facendo clic su questo report si apre la scheda **Report**.
 
-![immagine](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
+![Scheda Report](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
 
 Puoi filtrare il rapporto in base alla rilevanza, al sottotipo o al conteggio.
 
-![immagine](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
+![Filtri per report](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
 >Consulta [Interpretazione del rapporto di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) per informazioni sulle categorie di risultati e sui livelli di importanza.
@@ -183,17 +183,17 @@ Da questa scheda è possibile esaminare le informazioni riportate di seguito.
 * Valutazione
 * Considerazioni sulla migrazione dei contenuti
 
-  ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+  ![Valutazione complessità migrazione](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Utilizzo della scheda Pianificazione e configurazione {#planning-setup}
 
 1. Fare clic su **Visualizza** dalla scheda **Pianificazione e installazione**. Questa scheda fornisce tutti i contenuti utili per pianificare e configurare la migrazione dell’AEM.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
+   ![Pianificazione E Installazione - Vista](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
 1. Un carosello di contenuti mostra tutte le informazioni rilevanti per questa fase del percorso di migrazione.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
+   ![Pianificazione E Installazione Del Carosello](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ### Eliminazione di un rapporto di analisi delle best practice dalla vista Linea di tendenza {#delete-trendline}
 
@@ -202,23 +202,23 @@ Da questa scheda è possibile esaminare le informazioni riportate di seguito.
 
 1. Passa al progetto e fai clic su **Rivedi** dalla scheda **Analisi delle best practice** nella fase **Preparazione**.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![Analisi delle best practice - Revisione](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Fare clic su **...**.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![Ellisse](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
 1. Nell&#39;elenco a discesa fare clic su **Visualizza linea di tendenza**, come illustrato nella figura seguente.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
+   ![Visualizza linea di tendenza](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
 1. Fare clic sull&#39;icona Elimina nella schermata **Report linea di tendenza**.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
+   ![Rapporto linea di tendenza - Elimina](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. Fai clic su **Elimina** per confermare l&#39;eliminazione.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
+   ![Elimina](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## Passaggio successivo {#whats-next}
 

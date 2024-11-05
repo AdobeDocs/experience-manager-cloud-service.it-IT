@@ -4,10 +4,10 @@ description: Questa pagina fornisce una panoramica sulla fase di implementazione
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 5%
+source-wordcount: '648'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ La fase di implementazione include:
 
 Fai clic sulla scheda del progetto per aprire la pagina di destinazione del progetto e passare alla sezione **Implementazione**, come illustrato nella figura seguente.
 
-![immagine](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
+![Pagina di destinazione del progetto - Implementazione](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
 >Per ulteriori informazioni, vedere [Creazione e gestione di un progetto in Cloud Acceleration Manager](getting-started-cam.md#create-project).
@@ -37,11 +37,11 @@ Segui questa sezione per esplorare la scheda dell’attività Sviluppo locale:
 
 1. Fai clic su **Visualizza** dalla scheda **Sviluppo locale**.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
+   ![Scheda Sviluppo Locale](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
 1. Un carosello di contenuti mostra le informazioni rilevanti per questa fase del percorso di migrazione.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
+   ![Carosello di sviluppo locale](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## Utilizzo della scheda di refactoring del codice {#code-refactoring}
@@ -52,7 +52,7 @@ Segui questa sezione per esplorare la scheda dell’attività Refactoring del co
 
 1. Fai clic su **Rivedi** dalla scheda attività **Refactoring del codice**.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
+   ![Scheda di refactoring del codice](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
 1. Nella pagina viene visualizzato l’elenco delle attività di refactoring del codice organizzate in base al livello di gravità. Per saperne di più, fai clic sulle due icone evidenziate.
 
@@ -67,11 +67,11 @@ Segui questa sezione per esplorare la scheda dell’attività Refactoring del co
 
 La scheda **Dispatcher** fornisce informazioni su come strutturare le configurazioni di AEM as a Cloud Service Apache e Dispatcher e su come convalidarle ed eseguirle localmente prima di distribuirle negli ambienti Cloud. Descrive anche il debug in ambienti Cloud.
 
-![immagine](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
+![Scheda Dispatcher](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
 La scheda **Test** fornisce informazioni sui test funzionali, dell&#39;audit dell&#39;esperienza e dell&#39;interfaccia utente.
 
-![immagine](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
+![Scheda Test](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## Utilizzo della scheda di implementazione di AEM as a Cloud Service {#aem-as-a-cloud-service-deployment}
@@ -82,11 +82,11 @@ Leggi questa sezione per esplorare la scheda di attività Scheda di distribuzion
 
 1. Fai clic su **Visualizza** dalla scheda attività **Distribuzione AEM as a Cloud Service**.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
+   ![Distribuzione AEM as a Cloud Service - scheda](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. Un carosello di contenuti mostra le informazioni rilevanti per questa fase del percorso di migrazione.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
+   ![Distribuzione AEM as a Cloud Service - carosello](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## Utilizzo della scheda Content Transfer {#content-transfer}
@@ -97,11 +97,11 @@ Segui questa sezione per esplorare la scheda delle attività di Trasferimento co
 
 1. Fai clic su **Rivedi** dalla scheda attività **Trasferimento contenuti**.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
+   ![Trasferimento contenuti - Revisione](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
 1. Per avviare un trasferimento di contenuti, devi creare un set di migrazione. Fare clic su **Crea set di migrazione**. Un set di migrazione consente di trasferire i contenuti ad AEM as a Cloud Service.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
+   ![Crea set di migrazione](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >Un set di migrazione scade dopo un periodo prolungato di inattività. Per informazioni dettagliate, consulta [Scadenza set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry).
@@ -113,13 +113,13 @@ Segui questa sezione per esplorare la scheda delle attività di Trasferimento co
 
 1. Per acquisire i contenuti dal set di migrazione in un ambiente su AEM as a Cloud Service, devi avviare un’acquisizione. Passa a **Processi di acquisizione** e fai clic su **Nuova acquisizione**. Rivedi [Acquisizione del contenuto in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) per scoprire come completare la fase di acquisizione del trasferimento dei contenuti.
 
-   ![immagine](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+   ![Processi di acquisizione](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
 <!--### Estimating Content Transfer Time {#calculating}
 
 A Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
+   ![Content Transfer Tool calculator](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
    >[!NOTE]
    >These times are estimates only. Factor such as network speeds and time to scale up instances have not been accounted for in these estimates.
