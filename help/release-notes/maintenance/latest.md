@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
+source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '629'
 ht-degree: 32%
 
 ---
@@ -56,8 +56,11 @@ Con la versione di attivazione funzioni 2024.11.0 verrà fornito il set di funzi
 * SITES-25456: Eventi: quando si sposta una pagina, oltre all’evento di spostamento della pagina viene generato un evento di eliminazione della pagina.
 * SITES-25658: Eventi: il livello e sourceUrl non vengono popolati negli eventi di stato del contenuto della pagina.
 * SITES-6497: Lanci: la pagina Crea in lancio non funziona.
+* SITES-25938: Launches: eliminazione imprevista dopo un progetto di traduzione.
 * SITES-25393: Edge Delivery con Universal Editor: nodi di testo persi durante il rendering del testo RTF formattato con un singolo paragrafo.
 * SITES-24643: Edge Delivery con Universal Editor: gli attributi di metadati OpenGraph e twitter non funzionano nel modello di metadati della pagina.
+* SITES-25401: Frammenti esperienza: aggiornamento di riferimento XF lento
+
 
 ### Problemi noti {#known-issues-18459}
 
