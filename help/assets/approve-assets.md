@@ -3,16 +3,16 @@ title: Approvare le risorse in Experience Manager
 description: Scopri come approvare le risorse in [!DNL Experience Manager].
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '713'
+ht-degree: 4%
 
 ---
 
 # Approva risorse in [!DNL Experience Manager]
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 I Brand Manager e gli addetti al marketing mantengono un controllo rigoroso sulle risorse del brand. È disponibile per l’uso solo la versione approvata e più recente della risorsa, che garantisce la coerenza del brand su tutti i canali e le applicazioni.
@@ -90,19 +90,21 @@ Allo stesso modo, per approvare in blocco le risorse all’interno di una cartel
 
 ## Copiare l’URL di consegna per le risorse approvate {#copy-delivery-url-approved-assets}
 
-L&#39;URL di consegna per tutte le risorse approvate nell&#39;archivio è disponibile se nell&#39;istanza di AEM as a Cloud Service è abilitato [!UICONTROL Dynamic Medie con funzionalità OpenAPI].
+L&#39;URL di consegna per tutte le risorse approvate nell&#39;archivio è disponibile se nell&#39;istanza di AEM as a Cloud Service è abilitato [!UICONTROL Dynamic Media con funzionalità OpenAPI].
 
 Per copiare l’URL di consegna di una risorsa approvata all’interno dell’archivio:
 
 1. Seleziona la risorsa e fai clic su **[!UICONTROL Dettagli]**.
 
-1. Fai clic sull’icona Rappresentazioni disponibile nel riquadro a destra.
+1. Fai clic sull’icona Dynamic Media disponibile nel riquadro a destra.
 
-1. Seleziona **[!UICONTROL Dynamic Medie con OpenAPI]** disponibile nella sezione **[!UICONTROL Dynamic]**.
+1. Selezionare **[!UICONTROL Dynamic Media con OpenAPI]** disponibile nel pannello **[!UICONTROL Dynamic Media]**.
 
 1. Fai clic su **[!UICONTROL Copia URL]** per copiare l&#39;URL di consegna della risorsa.
-   ![copia URL di consegna](/help/assets/assets/copy-delivery-url.png)
+   ![rappresentazioni dinamiche](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
    >L’opzione per copiare l’URL di consegna per le risorse approvate è disponibile nella vista Assets.
+
+Per informazioni sulle altre rappresentazioni visualizzate nel pannello Dynamic Media, consulta [Visualizzare e scaricare le rappresentazioni di Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).

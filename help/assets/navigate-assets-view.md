@@ -4,16 +4,16 @@ description: Comprendere l’interfaccia utente e la navigazione in [!DNL Assets
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 86%
+source-wordcount: '998'
+ht-degree: 74%
 
 ---
 
 # Accedere ai file e alle cartelle e visualizzare le risorse {#view-assets-and-details}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
@@ -34,7 +34,7 @@ Quando accedi a [!DNL Assets view], viene visualizzata la seguente interfaccia.
 
 ## Sfogliare e visualizzare le risorse e le cartelle {#browse-repository}
 
-È possibile sfogliare le cartelle dall’interfaccia utente principale o dalla barra laterale a sinistra. In Experience Manager Assets, durante la navigazione o la ricerca di contenuti, ora le miniature delle cartelle mostrano anteprime visive del loro contenuto, migliorando la reperibilità delle risorse disponibili nell’archivio di AEM Assets. Questa miniatura consente di risparmiare tempo nella ricerca di risorse specifiche all’interno di una cartella nell’archivio di AEM Assets.
+È possibile sfogliare le cartelle dall’interfaccia utente principale o dalla barra laterale a sinistra. In Experience Manager Assets vengono visualizzate anteprime visive del contenuto della cartella sulla miniatura della cartella durante la navigazione o la ricerca di contenuto. Questo migliora l’individuazione delle risorse disponibili nell’archivio AEM Assets. Questa miniatura consente di risparmiare tempo nella ricerca di risorse specifiche all’interno di una cartella nell’archivio di AEM Assets.
 Quando sfogli le risorse presenti in una cartella, puoi visualizzare le miniature delle risorse per scorrere visivamente il contenuto dell’archivio o vedere i dettagli delle risorse per trovare rapidamente quella desiderata. Le opzioni disponibili nella barra laterale a sinistra sono:
 
 * [La mia area di lavoro](/help/assets/my-workspace-assets-view.md): Assets ora include un’area di lavoro personalizzabile che fornisce widget per accedere facilmente a specifiche aree dell’interfaccia di Assets e alle informazioni che ti interessano di più. Questa pagina funge da soluzione unica per fornire una panoramica degli elementi di lavoro e consentire un accesso rapido ai flussi di lavoro chiave. L’accesso più comodo a queste opzioni aumenta l’efficienza e la velocità dei contenuti.
@@ -77,9 +77,9 @@ Prima di utilizzare, condividere o scaricare una risorsa, puoi visualizzarla pi�
 
 Per visualizzare in anteprima una risorsa, selezionala e fai clic sull’[!UICONTROL Dettagli] ![icona dei dettagli](assets/do-not-localize/edit-in-icon.png) dalla barra degli strumenti nella parte superiore. Non puoi solo visualizzare la risorsa, ma anche i metadati dettagliati e intraprendere altre azioni.
 
-![Visualizzare in anteprima una risorsa](assets/preview-asset-2.png)
+![Visualizzare in anteprima una risorsa](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: tornare alla cartella corrente o al risultato della ricerca corrente nell’archivio **B**: nome e formato del file che si sta visualizzando in anteprima **C**: assegnare le attività **D**: metadati avanzati **E**: parole chiave e tag avanzati **F**: commentare e annotare **G**: visualizzare le attività relative alla risorsa selezionata **H**: visualizzare e gestire le versioni **I**: visualizzare le rappresentazioni dell&#39;immagine **J**: modificare l’immagine **K**: metadati di base **L**: metadati avanzati **M**: parole chiave e tag avanzati **N**: visualizzare un’anteprima più dettagliata. Zoom, schermo intero e altre opzioni **O**: passare alla risorsa precedente o successiva nella cartella corrente senza tornare alla cartella
+**A**: Tornare alla cartella corrente o al risultato della ricerca corrente nel repository **B**: Nome e formato per il file visualizzato in anteprima **C**: Assegna attività **D**: Metadati avanzati **E**: Parole chiave e tag avanzati **F**: Commenta e annota **G**: Visualizza attività relative alla risorsa selezionata **H**: Visualizza e gestisci versioni **I**: Visualizza rappresentazioni dell&#39;immagine **J**: Modifica immagine **K**: visualizza le rappresentazioni di Dynamic Media, inclusi Ritaglio avanzato e Dynamic Media con le rappresentazioni delle funzionalità OpenAPI. **L**: metadati di base **M**: metadati avanzati **N**: parole chiave e tag avanzati **O**: passare alla risorsa precedente o successiva nella cartella corrente senza tornare alla cartella **P**: visualizzare un&#39;anteprima più dettagliata. Zoom, schermo intero e altre opzioni.
 
 Puoi anche visualizzare in anteprima i video.
 
