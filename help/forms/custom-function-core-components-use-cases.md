@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2134'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 0%
 L’articolo fornisce esempi dettagliati di funzioni personalizzate per un modulo adattivo basato su componenti core, fornendo informazioni utili sulla loro effettiva implementazione in vari scenari. Le funzioni personalizzate vengono utilizzate nell’editor di regole di un’AEM Forms, consentendo agli sviluppatori di definire e controllare la logica che regola il comportamento dei moduli.
 Questo articolo esplora diverse implementazioni di funzioni personalizzate, mostrando come possono essere utilizzate per adattare i moduli in modo da soddisfare requisiti specifici e migliorare le funzionalità generali.
 
-## Impostare le opzioni dell’elenco a discesa utilizzando le funzioni personalizzate
+## Popolare le opzioni dell’elenco a discesa utilizzando le funzioni personalizzate
 
-L&#39;editor di regole nei Componenti core non supporta la proprietà **Imposta opzioni di** per impostare le opzioni dell&#39;elenco a discesa in fase di esecuzione. Tuttavia, è possibile impostare le opzioni dell’elenco a discesa utilizzando le funzioni personalizzate.
+L&#39;editor di regole nei componenti core non supporta la proprietà **Imposta opzioni** per popolare dinamicamente le opzioni dell&#39;elenco a discesa in fase di esecuzione. Tuttavia, puoi popolare le opzioni dell’elenco a discesa utilizzando funzioni personalizzate, che ti consentono di recuperare le opzioni in base a una logica specifica. Le funzioni personalizzate forniscono maggiore flessibilità e controllo su come e quando vengono compilate le opzioni a discesa, migliorando l’esperienza utente.
 
-Aggiungi il seguente codice nella funzione personalizzata come descritto nella sezione [create-custom-function](/help/forms/custom-function-core-component-create-function.md) per impostare le opzioni dell&#39;elenco a discesa utilizzando le funzioni personalizzate:
+Per popolare le opzioni dell&#39;elenco a discesa utilizzando una funzione personalizzata, aggiungere il codice seguente come descritto nella sezione [create-custom-function](/help/forms/custom-function-core-component-create-function.md):
+
 
 ```javascript
     /**
