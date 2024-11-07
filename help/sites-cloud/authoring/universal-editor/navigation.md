@@ -4,13 +4,13 @@ description: Scopri le nozioni di base sull’accesso e la navigazione nell’Ed
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 36%
+source-wordcount: '1615'
+ht-degree: 35%
 
 ---
-
 
 # Accesso e navigazione nell’editor universale {#navigating}
 
@@ -54,7 +54,7 @@ Una volta che l’app è dotata di strumenti per funzionare con l’editor unive
 
 1. Accedi all’editor universale. Per accedere è necessario un Adobe ID e [accedere all&#39;editor universale.](/help/implementing/universal-editor/getting-started.md#request-access)
 
-1. Dopo aver effettuato l’accesso, immetti l’URL della pagina da modificare nella [barra degli indirizzi.](#location-bar) in modo da poter iniziare a modificare i contenuti, come [contenuto testo](#text-mode) o il [contenuto multimediale.](#media-mode)
+1. Dopo aver effettuato l’accesso, immetti l’URL della pagina da modificare nella [barra degli indirizzi.](#location-bar) in modo da poter iniziare a modificare contenuti quali testo o contenuti multimediali.
 
 ## Comprendere l’interfaccia utente {#ui}
 
@@ -280,7 +280,7 @@ Se selezioni un componente contenitore nella struttura del contenuto o nell’ed
 
 ![Icona Aggiungi](assets/ue-add-component-icon.png)
 
-Toccando o facendo clic sul pulsante Aggiungi si apre un menu a discesa dei componenti disponibili per [aggiungere al contenitore selezionato.](#adding-components)
+Toccando o facendo clic sul pulsante Aggiungi si apre un menu a discesa dei componenti disponibili per [aggiungere al contenitore selezionato.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
 
 ![Aggiungi menu di scelta rapida](assets/add-context-menu.png)
 
@@ -288,13 +288,21 @@ Toccando o facendo clic sul pulsante Aggiungi si apre un menu a discesa dei comp
 >
 >Utilizzare il tasto di scelta rapida `a` per aggiungere un componente a un componente contenitore selezionato.
 
+##### Duplica {#duplicate}
+
+Se selezioni un componente all’interno di un componente contenitore nella struttura del contenuto o nell’editor, l’opzione di duplicazione viene visualizzata nella barra delle proprietà.
+
+![Icona duplicata](assets/duplicate.png)
+
+Toccando o facendo clic sul pulsante di duplicazione [viene duplicato il componente selezionato.](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+
 ##### Elimina {#delete}
 
 Se selezioni un componente all’interno di un componente contenitore nella struttura del contenuto o nell’editor, l’opzione Elimina viene visualizzata nella barra delle proprietà.
 
 ![Icona Elimina](assets/ue-delete-component-icon.png)
 
-Toccando o facendo clic sul pulsante Elimina [il componente viene eliminato.](#deleting-components)
+Toccando o facendo clic sul pulsante Elimina [il componente viene eliminato.](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
 
 >[!TIP]
 >
