@@ -4,10 +4,10 @@ description: Scopri la versione di Cloud Manager 2024.11.0 in AEM as a Cloud Ser
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+source-git-commit: 87293526ca9c10a142bc1d1d3a35562b171da385
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 29%
+source-wordcount: '784'
+ht-degree: 30%
 
 ---
 
@@ -38,9 +38,9 @@ Partecipa al programma per i primi utilizzatori di Cloud Manger e concediti la p
 
 ### Home page AEM {#aem-home}
 
-La Home di AEM è un nuovo punto di partenza centralizzato per la gestione di contenuti, risorse e siti in Adobe Experience Manager. Studiata per fornire un’esperienza personalizzata, la Home dell’AEM aiuta gli utenti a navigare facilmente nell’ecosistema dell’AEM in base ai loro ruoli e obiettivi. È progettata per fungere da guida, offrendo informazioni chiave e azioni consigliate per raggiungere in modo efficiente i risultati desiderati. Presentando una roadmap chiara e basata su persone, la Home dell’AEM assicura che gli utenti trovino rapidamente ciò di cui hanno bisogno per raggiungere i loro obiettivi, supportando un’esperienza più semplice ed efficace in tutte le funzionalità dell’AEM.
+La Home di AEM introduce un punto di partenza centralizzato per la gestione di contenuti, risorse e siti in Adobe Experience Manager. Progettata per offrire un’esperienza personalizzata, la Home dell’AEM ti consente di navigare nell’ecosistema dell’AEM senza problemi in base ai tuoi ruoli e obiettivi. Funge da guida e fornisce informazioni chiave e azioni consigliate per aiutarti a raggiungere gli obiettivi in modo efficiente. Con un layout chiaro e personalizzato, la Home dell’AEM assicura un accesso rapido a strumenti essenziali, supportando un’esperienza semplificata ed efficace in tutte le funzioni dell’AEM.
 
-Disponibile per i primi clienti che lo hanno adottato, la Home di AEM offre un’esperienza avanzata che ottimizza i flussi di lavoro, assegna priorità agli obiettivi e guida i risultati. Optando per il consenso, avrete l&#39;opportunità di dare forma allo sviluppo della Home dell&#39;AEM, fornendo un feedback che influenza la sua evoluzione per servire al meglio la comunità dell&#39;AEM.
+Disponibile per i primi utenti, AEM Home offre un’esperienza ottimizzata incentrata sul miglioramento dei flussi di lavoro, sulla definizione delle priorità degli obiettivi e sulla distribuzione dei risultati. Opt in consente di influenzare lo sviluppo della Home dell&#39;AEM fornendo un feedback che aiuta a modellarne il futuro e ne aumenta il valore per l&#39;intera comunità dell&#39;AEM.
 
 Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID. Accertati di includere le seguenti informazioni:
 
