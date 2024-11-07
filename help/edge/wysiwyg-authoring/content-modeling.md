@@ -4,10 +4,10 @@ description: Scopri come funziona la modellazione dei contenuti per l’authorin
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '2196'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -112,7 +112,7 @@ Per ogni blocco, lo sviluppatore:
 * deve definire il nome del blocco, che verrà sottoposto a rendering nell’intestazione della tabella del blocco;
    * Il nome del blocco viene utilizzato per recuperare lo stile e lo script corretti per decorare il blocco.
 * può definire un [ID modello.](/help/implementing/universal-editor/field-types.md#model-structure);
-   * L’ID modello è un riferimento al modello del componente, che definisce i campi disponibili per l’autore nella barra delle proprietà.
+   * L’ID modello è un riferimento al modello del componente, che definisce i campi disponibili per l’autore nel pannello delle proprietà.
 * può definire un [ID filtro](/help/implementing/universal-editor/customizing.md#filtering-components).
    * L’ID filtro è un riferimento al filtro del componente che consente di modificare il comportamento di authoring, ad esempio limitando quali elementi secondari possono essere aggiunti al blocco o alla sezione o quali funzioni dell’editor Rich Text sono abilitate.
 

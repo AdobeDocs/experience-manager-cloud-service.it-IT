@@ -4,7 +4,7 @@ description: Scopri i casi d’uso principali di Universal Editor e come utilizz
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2db4428065b3611a43137514864573947d32fff7
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Per ulteriori informazioni sull&#39;architettura di Universal Editor, vedere il 
 Affinché una pagina o un’app possa essere modificata dall’editor universale, deve essere dotata di strumenti appropriati.
 
 * [Attributi e tipi](/help/implementing/universal-editor/attributes-types.md) - Affinché un&#39;app o una pagina possa essere modificata dall&#39;editor universale, è necessario che sia dotata di strumenti appropriati. Ciò include l’inclusione dei metadati corretti in modo che l’editor possa modificare il contenuto dell’app.
-* [Definizioni modello, campi e tipi di componente](/help/implementing/universal-editor/field-types.md) - Una volta che i metadati sono presenti per consentire la modifica di un componente, puoi definire quali campi e tipi di componente possono essere modificati nella barra delle proprietà dell&#39;editor.
+* [Definizioni modello, campi e tipi di componente](/help/implementing/universal-editor/field-types.md) - Una volta che i metadati sono presenti per consentire la modifica di un componente, puoi definire quali campi e tipi di componente possono essere modificati nel pannello delle proprietà dell&#39;editor.
 * [Eventi editor universale](/help/implementing/universal-editor/events.md) - Puoi personalizzare ulteriormente l&#39;app migliorando l&#39;esperienza di modifica nell&#39;app tramite l&#39;utilizzo di eventi generati dall&#39;editor universale sul contenuto o sulle interazioni dell&#39;interfaccia utente.
 
 L’editor universale può anche essere adattato in base alle esigenze del progetto.

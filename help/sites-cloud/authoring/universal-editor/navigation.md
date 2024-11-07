@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 35%
+ht-degree: 33%
 
 ---
 
@@ -63,7 +63,7 @@ L’interfaccia utente è divisa in queste aree principali.
 * [Intestazione di Experience Cloud](#experience-cloud-header)
 * [Barra degli strumenti Editor universale](#universal-editor-toolbar)
 * [L’editor](#editor)
-* [Barra delle proprietà](#properties-rail)
+* [Pannello delle proprietà](#properties-rail)
 
 ![Interfaccia utente dell’editor universale](assets/ui.png)
 
@@ -224,19 +224,19 @@ L’editor occupa la maggior parte della finestra ed è l’area in cui viene es
 
 Se l&#39;editor è in modalità [anteprima,](#preview-mode) il contenuto sarà navigabile e puoi seguire i collegamenti, ma non puoi modificarlo.
 
-### Barra delle proprietà {#properties-rail}
+### Pannello Proprietà {#properties-rail}
 
-La barra delle proprietà è sempre presente lungo il lato destro dell’editor. A seconda della modalità, può mostrare i dettagli di un componente selezionato nel contenuto o la gerarchia dei contenuti della pagina.
+Il pannello delle proprietà è sempre presente lungo il lato destro dell’editor. A seconda della modalità, può mostrare i dettagli di un componente selezionato nel contenuto o la gerarchia dei contenuti della pagina.
 
-![Barra delle proprietà](assets/properties-rail.png)
+![Pannello delle proprietà](assets/properties-rail.png)
 
 #### Modalità proprietà {#properties-mode}
 
-In modalità proprietà, la barra mostra le proprietà del componente attualmente selezionato nell’editor. Questa è la modalità predefinita della barra delle proprietà quando viene caricata una pagina.
+In modalità proprietà, il pannello mostra le proprietà del componente attualmente selezionato nell’editor. Questa è la modalità predefinita del pannello delle proprietà quando viene caricata una pagina.
 
 ![Modalità proprietà](assets/properties-mode.png)
 
-A seconda del tipo di componente selezionato, i dettagli possono essere visualizzati e modificati nella barra delle proprietà.
+A seconda del tipo di componente selezionato, i dettagli possono essere visualizzati e modificati nel pannello delle proprietà.
 
 ![Dettagli dei componenti](assets/component-details.png)
 
@@ -248,7 +248,7 @@ Non tutti i componenti hanno dettagli che possono essere visualizzati e/o modifi
 
 #### Modalità struttura contenuto {#content-tree-mode}
 
-In modalità struttura contenuto, la barra mostra la gerarchia del contenuto della pagina.
+In modalità struttura contenuto, il pannello mostra la gerarchia del contenuto della pagina.
 
 ![Modalità struttura contenuto](assets/content-tree-mode.png)
 
@@ -262,7 +262,7 @@ Quando si seleziona un elemento nella struttura del contenuto, l’editor scorre
 
 ##### Apri nell’editor di frammenti di contenuto {#edit}
 
-Durante la modifica, le opzioni per il componente selezionato vengono visualizzate nella barra delle proprietà, dove è possibile modificarlo. Se il componente selezionato è un frammento di contenuto, è inoltre possibile selezionare il pulsante **Apri in CF Editor**.
+Durante la modifica, le opzioni per il componente selezionato vengono visualizzate nel pannello delle proprietà, dove è possibile modificarlo. Se il componente selezionato è un frammento di contenuto, è inoltre possibile selezionare il pulsante **Apri in CF Editor**.
 
 ![Apri nell&#39;icona Editor CF](assets/open-in-cf-editor.png)
 
@@ -276,7 +276,7 @@ A seconda delle esigenze del flusso di lavoro, può essere utile modificare il f
 
 ##### Aggiungi {#add}
 
-Se selezioni un componente contenitore nella struttura del contenuto o nell’editor, l’opzione aggiungi viene visualizzata nella barra delle proprietà.
+Se selezioni un componente contenitore nella struttura del contenuto o nell’editor, l’opzione aggiungi viene visualizzata nel pannello delle proprietà.
 
 ![Icona Aggiungi](assets/ue-add-component-icon.png)
 
@@ -290,7 +290,7 @@ Toccando o facendo clic sul pulsante Aggiungi si apre un menu a discesa dei comp
 
 ##### Duplica {#duplicate}
 
-Se selezioni un componente all’interno di un componente contenitore nella struttura del contenuto o nell’editor, l’opzione di duplicazione viene visualizzata nella barra delle proprietà.
+Se selezioni un componente all’interno di un componente contenitore nella struttura del contenuto o nell’editor, nel pannello delle proprietà viene visualizzata l’opzione di duplicazione.
 
 ![Icona duplicata](assets/duplicate.png)
 
@@ -298,7 +298,7 @@ Toccando o facendo clic sul pulsante di duplicazione [viene duplicato il compone
 
 ##### Elimina {#delete}
 
-Se selezioni un componente all’interno di un componente contenitore nella struttura del contenuto o nell’editor, l’opzione Elimina viene visualizzata nella barra delle proprietà.
+Se selezioni un componente all’interno di un componente contenitore nella struttura del contenuto o nell’editor, l’opzione Elimina viene visualizzata nel pannello delle proprietà.
 
 ![Icona Elimina](assets/ue-delete-component-icon.png)
 
@@ -310,7 +310,7 @@ Toccando o facendo clic sul pulsante Elimina [il componente viene eliminato.](/h
 
 #### Pulsanti aggiuntivi {#additional-properties-rail-buttons}
 
-Universal Editor offre un&#39;esperienza di authoring personalizzabile ed estensibile. Se trovi pulsanti aggiuntivi nella barra delle proprietà, l’Editor universale è stato esteso.
+Universal Editor offre un&#39;esperienza di authoring personalizzabile ed estensibile. Se nel pannello delle proprietà sono presenti pulsanti aggiuntivi, l&#39;Editor universale è stato esteso.
 
 * Per informazioni dettagliate sulle possibilità di estensione, vedere [Personalizzazione ed estensione dell&#39;editor universale.](/help/implementing/universal-editor/customizing.md)
 * Per informazioni dettagliate sul funzionamento di una singola estensione, consulta la [documentazione di Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)

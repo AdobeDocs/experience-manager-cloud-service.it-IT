@@ -4,10 +4,10 @@ description: Scopri come funziona l’authoring dei contenuti con Edge Delivery 
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7e8446bec18eaeb4eb017dd63436a066d3a90fed
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 64%
+ht-degree: 61%
 
 ---
 
@@ -44,7 +44,7 @@ Universal Editor fornisce un’interfaccia utente grafica moderna e intuitiva pe
 
 ![Aggiunta e disposizione di blocchi nell&#39;editor universale](assets/blocks.png)
 
-I dettagli dei blocchi possono quindi essere configurati nella barra delle Proprietà.
+I dettagli dei blocchi possono quindi essere configurati nel pannello Proprietà.
 
 ![Configurazione delle proprietà del blocco](assets/block-properties.png)
 

@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 22%
@@ -41,7 +41,7 @@ La modifica del contenuto è semplice e intuitiva. Quando passi il mouse sul con
 >
 >Per impostazione predefinita, tocca o fai clic sul contenuto per selezionarlo per la modifica. Se desideri esplorare il contenuto tramite i seguenti collegamenti, passa alla modalità di anteprima [.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-A seconda del contenuto selezionato, è possibile che siano disponibili diverse opzioni di modifica diretta e che siano disponibili ulteriori informazioni e opzioni per il contenuto nella barra delle proprietà di [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+A seconda del contenuto selezionato, è possibile che siano disponibili diverse opzioni di modifica diretta e che siano disponibili ulteriori informazioni e opzioni per il contenuto nel pannello [proprietà.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### Modifica del testo normale {#edit-plain-text}
 
@@ -51,11 +51,11 @@ Per modificare il testo nella posizione desiderata, fai doppio clic o tocca due 
 
 Il contorno blu sottile si trasforma in un contorno blu pesante per indicare la selezione e viene visualizzato un cursore. Apportare le modifiche e premere Invio/Ritorna o selezionare all&#39;esterno della casella di testo per salvare le modifiche.
 
-Quando selezioni il componente testo, i relativi dettagli vengono visualizzati nella barra delle proprietà [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) È inoltre possibile modificare il testo nella barra.
+Quando selezioni il componente testo, i relativi dettagli vengono visualizzati nel pannello delle proprietà [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Puoi anche modificare il testo nel pannello.
 
-![Modifica del testo nella barra delle proprietà](assets/ue-editing-text-component-rail.png)
+![Modifica del testo nel pannello delle proprietà](assets/ue-editing-text-component-rail.png)
 
-Inoltre, i dettagli sul testo sono disponibili nella barra delle proprietà. Le modifiche vengono salvate automaticamente una volta che lo stato attivo lascia il campo modificato nella barra delle proprietà.
+Inoltre, i dettagli sul testo sono disponibili nel pannello delle proprietà. Le modifiche vengono salvate automaticamente quando lo stato attivo lascia il campo modificato nel pannello delle proprietà.
 
 ### Modifica del testo formattato {#edit-rich-text}
 
@@ -73,9 +73,9 @@ Il menu di scelta rapida si apre sopra il blocco di testo RTF e offre opzioni di
 
 Le modifiche vengono salvate automaticamente quando lo stato attivo lascia il campo modificato.
 
-#### Barra delle proprietà {#properties-rail}
+#### Pannello Proprietà {#properties-rail}
 
-Nella barra delle proprietà [](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) è visualizzato un elemento per il testo selezionato. Tocca la voce per aprire una finestra di dialogo che presenta un’area di lavoro più grande per modificare il testo.
+Nel [pannello delle proprietà](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) viene visualizzato un elemento per il testo selezionato. Tocca la voce per aprire una finestra di dialogo che presenta un’area di lavoro più grande per modificare il testo.
 
 ![Finestra di dialogo per la modifica di testo RTF](assets/rich-text-canvas.png)
 
@@ -83,30 +83,30 @@ Tocca o fai clic rispettivamente su **Annulla** o **Fine** per ignorare o salvar
 
 ### Editing di file multimediali {#edit-media}
 
-Puoi visualizzarne i dettagli nella barra delle proprietà [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Puoi visualizzarne i dettagli nel pannello [proprietà.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Modifica dei file multimediali](assets/ue-edit-media.png)
 
-1. Tocca o fai clic sull’anteprima dell’immagine selezionata nella barra delle proprietà.
+1. Tocca o fai clic sull’anteprima dell’immagine selezionata nel pannello proprietà.
 1. Viene visualizzata la finestra [selettore risorse](/help/assets/overview-asset-selector.md#using-asset-selector) che consente di selezionare una risorsa.
 1. Seleziona per selezionare una nuova risorsa.
-1. Seleziona **Seleziona** per tornare alla barra delle proprietà in cui è stata sostituita la risorsa.
+1. Seleziona **Seleziona** per tornare al pannello delle proprietà in cui è stata sostituita la risorsa.
 
 Le modifiche vengono salvate automaticamente nel contenuto.
 
 ### Modificare i frammenti di contenuto {#edit-content-fragment}
 
-Se selezioni un [frammento di contenuto,](/help/sites-cloud/administering/content-fragments/overview.md) puoi modificarne i dettagli nella barra delle [proprietà.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Se selezioni un [frammento di contenuto,](/help/sites-cloud/administering/content-fragments/overview.md) puoi modificarne i dettagli nel pannello [proprietà.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Modifica di un frammento di contenuto](assets/ue-edit-cf.png)
 
-I campi definiti nel modello di contenuto del frammento di contenuto selezionato vengono visualizzati e modificabili nella barra delle proprietà.
+I campi definiti nel modello di contenuto del frammento di contenuto selezionato vengono visualizzati e modificabili nel pannello delle proprietà.
 
-Se selezioni un campo correlato a un frammento di contenuto, il frammento di contenuto viene caricato nella barra dei componenti e il campo viene scorruto automaticamente in.
+Se selezioni un campo correlato a un frammento di contenuto, il frammento di contenuto viene caricato nel pannello dei componenti e il campo viene scorruto automaticamente in.
 
-Le modifiche vengono salvate automaticamente una volta che lo stato attivo lascia il campo modificato nella barra delle proprietà.
+Le modifiche vengono salvate automaticamente quando lo stato attivo lascia il campo modificato nel pannello delle proprietà.
 
-Se invece desideri modificare il frammento di contenuto nell&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), tocca o fai clic sul pulsante [**Apri nell&#39;editor CF**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) nella barra delle proprietà.
+Se invece desideri modificare il frammento di contenuto nell&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), tocca o fai clic sul pulsante [**Apri nell&#39;editor CF**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) nel pannello delle proprietà.
 
 >[!TIP]
 >
@@ -123,7 +123,7 @@ A seconda delle esigenze del flusso di lavoro, può essere utile modificare il f
 ### Aggiunta di componenti ai contenitori {#adding-components}
 
 1. Selezionare un componente contenitore nella [struttura contenuto](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) o nell&#39;editor.
-1. Quindi seleziona l’icona Aggiungi nella barra delle proprietà.
+1. Quindi selezionate l&#39;icona Aggiungi nel pannello delle proprietà.
 
    ![Selezione di un componente da aggiungere a un contenitore](assets/ue-add-component.png)
 
@@ -136,7 +136,7 @@ Il componente viene inserito nel contenitore e può essere modificato nell’edi
 ### Duplicazione di componenti nei contenitori {#duplicating-components}
 
 1. Selezionare un componente in un contenitore utilizzando la [struttura contenuto](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) o l&#39;editor.
-1. Quindi seleziona l&#39;icona **Duplica** nella barra delle proprietà.
+1. Quindi seleziona l&#39;icona **Duplica** nel pannello delle proprietà.
 
    ![Selezione di un componente da aggiungere a un contenitore](assets/ue-duplicate-component.png)
 1. Il componente viene duplicato e inserito sotto il componente selezionato.
@@ -148,7 +148,7 @@ Il componente viene inserito nel contenitore e può essere modificato nell’edi
 1. Selezionare un componente contenitore nella [struttura contenuto](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) o nell&#39;editor.
 1. Seleziona l’icona della freccia del contenitore per espanderne il contenuto nella struttura del contenuto.
 1. Quindi, nella struttura del contenuto, seleziona un componente all’interno del contenitore.
-1. Seleziona l’icona Elimina nella barra delle proprietà.
+1. Selezionate l&#39;icona Elimina nel pannello delle proprietà.
 
    ![Eliminazione di un componente](assets/ue-delete-component.png)
 

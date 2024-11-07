@@ -4,7 +4,7 @@ description: Se sei uno sviluppatore AEM interessato al funzionamento di Univers
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 0%
@@ -240,7 +240,7 @@ I componenti devono inoltre essere dotati di strumenti per poter essere modifica
 
 1. Nell’Editor universale, fai clic sul componente teaser nella parte superiore della pagina per verificare che ora sia possibile selezionarlo.
 
-1. Se fai clic sull&#39;icona **Struttura contenuto** nella barra delle proprietà di Universal Editor, noterai che l&#39;editor ha riconosciuto tutti i teaser sulla pagina ora che l&#39;hai dotata della strumentazione. Il teaser selezionato è quello evidenziato.
+1. Se si fa clic sull&#39;icona **Struttura contenuto** nel pannello delle proprietà di Universal Editor, è possibile vedere che l&#39;editor ha riconosciuto tutti i teaser sulla pagina dopo averla dotata di strumenti. Il teaser selezionato è quello evidenziato.
 
    ![Selezione del componente teaser instrumentato](assets/dev-select-teaser.png)
 
@@ -307,7 +307,7 @@ Se si visualizza la scheda di rete degli strumenti di sviluppo del browser e si 
 
 Quando si utilizza l’editor universale per modificare il contenuto dell’AEM di produzione, l’editor universale utilizza lo stesso token IMS utilizzato per accedere all’editor e autenticarsi nell’AEM per facilitare la riscrittura in JCR.
 
-Quando si sviluppa localmente, non è possibile utilizzare il provider di identità AEM poiché i token IMS vengono passati solo ai domini di proprietà dell’Adobe. Devi fornire manualmente un modo per eseguire l’autenticazione impostando esplicitamente un’intestazione di autenticazione.
+Quando si sviluppa localmente, non è possibile utilizzare il provider di identità AEM poiché i token IMS vengono passati solo ai domini di proprietà di Adobe. Devi fornire manualmente un modo per eseguire l’autenticazione impostando esplicitamente un’intestazione di autenticazione.
 
 1. Nell&#39;interfaccia di Universal Editor, fare clic sull&#39;icona **Intestazioni di autenticazione** nella barra degli strumenti.
 
@@ -355,13 +355,13 @@ Puoi vedere la modifica persistente in JCR.
 >
 >L&#39;esempio di intestazione di autenticazione di base `Basic YWRtaW46YWRtaW4=` è per la combinazione utente/password di `admin:admin`, come è comune per lo sviluppo AEM locale.
 
-## Strumentazione dell’app per la barra delle proprietà {#properties-rail}
+## Strumentazione dell’app per il pannello Proprietà {#properties-rail}
 
 Ora disponi di un’app dotata di strumenti per essere modificabile tramite l’Editor universale.
 
-La modifica è attualmente limitata alla modifica in linea del titolo del teaser. Tuttavia, in alcuni casi la modifica diretta non è sufficiente. Il testo, come il titolo del teaser, può essere modificato nella posizione in cui si trova con l’input della tastiera. Tuttavia, gli elementi più complicati devono poter essere visualizzati e consentire la modifica di dati strutturati separati da come vengono riprodotti nel browser. A questo serve la barra delle proprietà.
+La modifica è attualmente limitata alla modifica in linea del titolo del teaser. Tuttavia, in alcuni casi la modifica diretta non è sufficiente. Il testo, come il titolo del teaser, può essere modificato nella posizione in cui si trova con l’input della tastiera. Tuttavia, gli elementi più complicati devono poter essere visualizzati e consentire la modifica di dati strutturati separati da come vengono riprodotti nel browser. A questo serve il pannello delle proprietà.
 
-Per aggiornare l’app in modo da utilizzare la barra delle proprietà per la modifica, torna al file di intestazione del componente Pagina dell’app. Qui sono già state stabilite le connessioni all&#39;istanza di sviluppo AEM locale e al servizio Universal Editor locale. Qui devi definire i componenti modificabili nell’app e i relativi modelli di dati.
+Per aggiornare l’app in modo da utilizzare il pannello delle proprietà per la modifica, torna al file di intestazione del componente Pagina dell’app. Qui sono già state stabilite le connessioni all&#39;istanza di sviluppo AEM locale e al servizio Universal Editor locale. Qui devi definire i componenti modificabili nell’app e i relativi modelli di dati.
 
 1. Apri CRXDE Lite.
 
@@ -462,7 +462,7 @@ Per aggiornare l’app in modo da utilizzare la barra delle proprietà per la mo
 
 ## Cosa significa tutto questo? {#what-does-it-mean-2}
 
-Per poter essere modificabili utilizzando la barra delle proprietà, i componenti devono essere assegnati a `groups`, pertanto ogni definizione inizia come un elenco di gruppi contenenti i componenti.
+Per poter essere modificati tramite il pannello delle proprietà, i componenti devono essere assegnati a `groups`, pertanto ogni definizione inizia come un elenco di gruppi contenenti i componenti.
 
 * `title` è il nome del gruppo.
 * `id` è l&#39;identificatore univoco del gruppo, in questo caso i componenti generali che compongono il contenuto della pagina, ad esempio i componenti avanzati per il layout di pagina.
@@ -487,7 +487,7 @@ Ogni componente deve quindi essere mappato a un `model` per definire i singoli c
 * `label` è la descrizione del campo visualizzato nell&#39;interfaccia utente dell&#39;editor.
 * `valueType` è il tipo di dati.
 
-## Strumentazione del componente per la barra Proprietà {#properties-rail-component}
+## Strumentazione del componente per il pannello Proprietà {#properties-rail-component}
 
 È inoltre necessario definire a livello di componente quale modello utilizzare.
 
@@ -509,17 +509,17 @@ Ogni componente deve quindi essere mappato a un `model` per definire i singoli c
 
 1. Fare clic su **Salva tutto** nella barra degli strumenti e ricaricare l&#39;editor universale.
 
-Ora puoi testare la barra delle proprietà dotata di strumenti per il componente.
+Ora puoi testare il pannello delle proprietà dotato di strumenti per il componente.
 
 1. Nell’Editor universale, fai clic sul titolo del teaser per modificarlo ancora una volta.
 
-1. Fai clic sulla barra delle proprietà per visualizzare la scheda delle proprietà e visualizzare i campi appena instrumentati.
+1. Fai clic sul pannello delle proprietà per visualizzare la scheda delle proprietà e visualizzare i campi appena instrumentati.
 
-   ![Barra delle proprietà instrumentata](assets/dev-properties-rail-instrumented.png)
+   ![Pannello delle proprietà instrumentato](assets/dev-properties-rail-instrumented.png)
 
-Ora puoi modificare il titolo del teaser in linea come in precedenza o nella barra delle proprietà. In entrambi i casi, le modifiche vengono mantenute nell’istanza di sviluppo AEM locale.
+Ora puoi modificare il titolo del teaser in linea come in precedenza o nel pannello delle proprietà. In entrambi i casi, le modifiche vengono mantenute nell’istanza di sviluppo AEM locale.
 
-## Aggiungi campi aggiuntivi alla barra delle proprietà {#add-fields}
+## Aggiungi campi aggiuntivi al pannello Proprietà {#add-fields}
 
 Utilizzando la struttura di base del modello dati per il componente già implementato, puoi aggiungere campi aggiuntivi seguendo lo stesso modello.
 
@@ -555,9 +555,9 @@ Ad esempio, puoi aggiungere un campo per regolare lo stile del componente.
 
 1. Fai clic sul titolo del teaser per modificarlo ancora una volta.
 
-1. Fai clic sulla barra delle proprietà e osserva che è presente un nuovo campo per regolare lo stile del componente.
+1. Fai clic sul pannello delle proprietà e osserva che è presente un nuovo campo per regolare lo stile del componente.
 
-   ![Barra delle proprietà dotata di strumenti con campo di stile](assets/dev-style-instrumented.png)
+   ![Pannello delle proprietà instrumentato con il campo di stile](assets/dev-style-instrumented.png)
 
 Qualsiasi campo nel JCR del componente può essere esposto in questo modo nell’Editor universale.
 
@@ -580,8 +580,8 @@ Quando inizi a dotare la tua app di strumenti, tieni presente i passaggi di base
 1. [È stato instrumentato il componente teaser.](#instrumenting-components)
 1. [Hai instrumentato i sottocomponenti del teaser.](#subcomponents)
 1. [È stata definita un&#39;intestazione di autenticazione personalizzata che consente di salvare le modifiche utilizzando il servizio Universal Editor locale.](#auth-header)
-1. [Hai instrumentato l&#39;app per utilizzare la barra delle proprietà.](#properties-rail)
-1. [Hai instrumentato il componente teaser per utilizzare la barra delle proprietà.](#properties-rail-component)
+1. [Hai instrumentato l’app per utilizzare il pannello delle proprietà.](#properties-rail)
+1. [Hai instrumentato il componente teaser per utilizzare il pannello delle proprietà.](#properties-rail-component)
 
 Puoi seguire questi stessi passaggi per dotare la tua app di strumenti per l’utilizzo con l’Editor universale. Tutte le proprietà nel JCR possono essere esposte all’Editor universale.
 

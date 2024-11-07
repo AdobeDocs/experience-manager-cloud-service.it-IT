@@ -4,7 +4,7 @@ description: Scopri i diversi eventi inviati dall’editor universale che puoi u
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
@@ -55,7 +55,7 @@ Il payload è un contenuto del servizio Universal Editor, con contenuto di fallb
 
 ### aue:content-details {#content-details}
 
-L&#39;evento `aue:content-details` viene attivato quando un componente viene caricato nella barra delle proprietà.
+L&#39;evento `aue:content-details` viene attivato quando un componente viene caricato nel pannello delle proprietà.
 
 Il payload è il contenuto del componente e, facoltativamente, il relativo schema.
 
@@ -91,7 +91,7 @@ Il payload è il componente, il contenitore di origine e il contenitore di desti
 
 ### aue:patch di contenuto {#content-patch}
 
-L&#39;evento `aue:content-patch` viene attivato quando i dati di un componente vengono aggiornati nella barra delle proprietà.
+L&#39;evento `aue:content-patch` viene attivato quando i dati di un componente vengono aggiornati nel pannello delle proprietà.
 
 Il payload è una patch JSON delle proprietà aggiornate.
 

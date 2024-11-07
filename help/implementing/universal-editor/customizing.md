@@ -4,7 +4,7 @@ description: Scopri i diversi punti di estensione e altre funzioni che consenton
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
+source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 1%
@@ -75,9 +75,9 @@ L&#39;impostazione dell&#39;attributo `components` in una definizione di filtro 
 ]
 ```
 
-### Mostra e nascondi componenti in modo condizionale nella barra delle proprietà {#conditionally-hide}
+### Mostra e nascondi componenti in modo condizionale nel pannello Proprietà {#conditionally-hide}
 
-Anche se uno o più componenti possono essere generalmente disponibili per gli autori, in alcune situazioni potrebbe non avere senso. In questi casi, è possibile nascondere i componenti nella barra delle proprietà aggiungendo un attributo `condition` ai campi [ del modello di componente.](/help/implementing/universal-editor/field-types.md#fields)
+Anche se uno o più componenti possono essere generalmente disponibili per gli autori, in alcune situazioni potrebbe non avere senso. In questi casi, è possibile nascondere i componenti nel pannello delle proprietà aggiungendo un attributo `condition` ai campi [ del modello di componente.](/help/implementing/universal-editor/field-types.md#fields)
 
 Le condizioni possono essere definite utilizzando lo schema [JsonLogic.](https://jsonlogic.com/) Se la condizione è true, il campo verrà visualizzato. Se la condizione è false, il campo verrà nascosto.
 
@@ -132,7 +132,7 @@ Per farlo, includi semplicemente l’URL di anteprima desiderato in un metatag d
 
 In qualità di servizio di Adobe Experience Cloud, l’interfaccia utente dell’editor universale può essere estesa utilizzando App Builder e Experience Manager.
 
-Le estensioni dell’interfaccia utente sono applicazioni JavaScript create con Adobe App Builder che possono essere incorporate in applicazioni UI eseguite in Adobe Experience Cloud Unified Shell, ad esempio Universal Editor. Puoi aggiungere i tuoi pulsanti e le tue azioni al menu dell’intestazione e alla barra delle proprietà, nonché creare eventi personalizzati per Universal Editor.
+Le estensioni dell’interfaccia utente sono applicazioni JavaScript create con Adobe App Builder che possono essere incorporate in applicazioni UI eseguite in Adobe Experience Cloud Unified Shell, ad esempio Universal Editor. Puoi aggiungere pulsanti e azioni personalizzati al menu e al pannello delle proprietà dell’intestazione, nonché creare eventi personalizzati per Universal Editor.
 
 Se desideri esplorare queste possibilità, consulta le seguenti risorse:
 

@@ -4,10 +4,10 @@ description: Scopri l’architettura dell’editor universale e il flusso di dat
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 83%
+ht-degree: 74%
 
 ---
 
@@ -36,7 +36,7 @@ Questo documento delinea ciascuno di questi blocchi predefiniti e la loro modali
 ### Editor {#editors}
 
 * **Editor universale**: l’editor universale utilizza un DOM abilitato per consentire la modifica diretta dei contenuti. Consulta il documento [Attributi e tipi](attributes-types.md) per informazioni dettagliate sui metadati necessari. Consulta il documento [Guida introduttiva all’editor universale in AEM](getting-started.md) per un esempio della strumentazione in AEM.
-* **Barra delle proprietà** - Alcune proprietà dei componenti non possono essere modificate nel contesto, ad esempio il tempo di rotazione di un carosello o la scheda del Pannello a soffietto che deve essere sempre aperta o chiusa. Per consentire la modifica di tali informazioni sui componenti, nella barra laterale dell’editor viene fornito un editor basato su moduli.
+* **Pannello delle proprietà** - Alcune proprietà dei componenti non possono essere modificate nel contesto, ad esempio il tempo di rotazione di un carosello o la scheda del Pannello a soffietto che deve essere sempre aperta o chiusa. Per consentire la modifica di tali informazioni sui componenti, nel pannello laterale dell’editor viene fornito un editor basato su moduli.
 
 ### App remota {#remote-app}
 
@@ -51,7 +51,7 @@ L’editor universale richiede un SDK minimo, pertanto la strumentazione rientra
 
 ### Livello di persistenza {#persistence-layer}
 
-* **Modello per frammenti di contenuto**: per supportare la barra laterale per la modifica delle proprietà dei frammenti di contenuto, dell’editor di frammenti di contenuto e degli editor basati su moduli, sono necessari modelli per componente e frammenti di contenuto.
+* **Modello per frammenti di contenuto** - Per supportare il pannello per la modifica delle proprietà dei frammenti di contenuto, sono necessari l&#39;Editor frammenti di contenuto e gli editor basati su moduli, modelli per componente e frammento di contenuto.
 * **Contenuto** - Il contenuto può essere archiviato ovunque, ad esempio in AEM, Magento e così via.
 
 ![Livello di persistenza](assets/persistence-layer.png)

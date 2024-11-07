@@ -1,10 +1,10 @@
 ---
 title: Definizioni di modelli, campi e tipi di componenti
-description: Scopri i campi e i tipi di componenti che possono essere modificati dall’Editor universale nella barra delle proprietà, con alcuni esempi. Scopri come creare una definizione di modello e un collegamento al componente per sfruttare al meglio la tua app.
+description: Scopri i campi e i tipi di componenti che l’Editor universale può modificare nel pannello delle proprietà con alcuni esempi. Scopri come creare una definizione di modello e un collegamento al componente per sfruttare al meglio la tua app.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5153d18b6bb8934479a02cbaa5236acef7c80cd1
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 12%
@@ -14,11 +14,11 @@ ht-degree: 12%
 
 # Definizioni di modelli, campi e tipi di componenti {#field-types}
 
-Scopri i campi e i tipi di componenti che possono essere modificati dall’Editor universale nella barra delle proprietà, con alcuni esempi. Scopri come creare una definizione di modello e un collegamento al componente per sfruttare al meglio la tua app.
+Scopri i campi e i tipi di componenti che l’Editor universale può modificare nel pannello delle proprietà con alcuni esempi. Scopri come creare una definizione di modello e un collegamento al componente per sfruttare al meglio la tua app.
 
 ## Panoramica {#overview}
 
-Quando adattate le vostre app per l&#39;uso con l&#39;Editor universale, dovete dotare gli strumenti dei componenti e definire quali campi e tipi di componenti possono essere manipolati nella barra delle proprietà dell&#39;editor. A tale scopo, crea un modello e crea un collegamento a tale modello dal componente.
+Quando adattate le vostre app per l&#39;uso con l&#39;Editor universale, dovete instrumentare i componenti e definire quali campi e tipi di componenti possono essere manipolati nel pannello delle proprietà dell&#39;editor. A tale scopo, crea un modello e crea un collegamento a tale modello dal componente.
 
 Questo documento fornisce una panoramica della definizione di un modello, dei campi e dei tipi di componenti disponibili, insieme ad esempi di configurazioni.
 
@@ -28,7 +28,7 @@ Questo documento fornisce una panoramica della definizione di un modello, dei ca
 
 ## Struttura definizione modello {#model-structure}
 
-Per configurare un componente tramite la barra delle proprietà nell’Editor universale, è necessario che esista una definizione di modello e che tale definizione sia collegata al componente.
+Per configurare un componente tramite il pannello delle proprietà nell’Editor universale, è necessario che esista una definizione di modello e che tale definizione sia collegata al componente.
 
 La definizione del modello è una struttura JSON che inizia con un array di modelli.
 
@@ -36,7 +36,7 @@ La definizione del modello è una struttura JSON che inizia con un array di mode
 [
   {
     "id": "model-id",        // must be unique
-    "fields": []             // array of fields which shall be rendered in the properties rail
+    "fields": []             // array of fields which shall be rendered in the properties panel
   }
 ]
 ```
