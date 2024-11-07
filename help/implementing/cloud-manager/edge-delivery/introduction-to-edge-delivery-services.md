@@ -4,10 +4,10 @@ description: Scopri come distribuire i progetti Cloud Manager utilizzando i Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
+source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 8%
+source-wordcount: '756'
+ht-degree: 10%
 
 ---
 
@@ -73,16 +73,17 @@ L&#39;**elenco attività di Edge Delivery** è un elenco di controllo delle atti
 
 |   | Attività | Descrizione |
 | --- | --- | --- |
-| 1 | Partecipa al canale di collaborazione sui prodotti | Facendo clic su **Invia richiesta ora**, invia una richiesta ad Adobe per la creazione di un canale per la società. Se il canale esiste già, viene effettuato l’inoltro al canale della tua azienda. |
+| 1 | Partecipa al canale di collaborazione sui prodotti | Facendo clic su **Invia richiesta ora** invia una richiesta ad Adobe per creare un canale per la tua azienda. Se il canale esiste già, viene effettuato l’inoltro al canale della tua azienda. |
 | 2 | Completa i prerequisiti | Facendo clic su **Visualizza esercitazione introduttiva**, si accede alla [Guida introduttiva - Esercitazione per sviluppatori](https://www.aem.live/developer/tutorial). |
 | 3 | Aggiungi sito Edge Delivery | Consulta [Aggiungere un sito Edge Delivery](#eds-add-site). |
-| 4 | Aggiungi dominio | Vedere [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
+| 4 | Aggiungi dominio | Consulta [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Aggiungi certificato SSL | Vedi [Aggiungi certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
-| 6 | Configurare la rete CDN del sito Edge Delivery | Vedere [Aggiungere una configurazione CDN](#add-cdn). |
+| 6 | Configurare la rete CDN del sito Edge Delivery | Vedere [Aggiungere una configurazione CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md). |
+| 7 | Vai in diretta | Completa l’ultimo passaggio in Go Live. |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
-## Registra un ticket di supporto {#eds-support-ticket}
+## Registrare un ticket di supporto {#eds-support-ticket}
 
 {{support-ticket}}
 

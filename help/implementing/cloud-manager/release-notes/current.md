@@ -1,72 +1,51 @@
 ---
-title: Note sulla versione 2024.10.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
-description: Ulteriori informazioni sulle note sulla versione 2024.10.0 di Cloud Manager in AEM as a Cloud Service.
+title: Note sulla versione 2024.11.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service
+description: Scopri la versione di Cloud Manager 2024.11.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+workflow-type: tm+mt
+source-wordcount: '799'
+ht-degree: 29%
 
 ---
 
-# Note sulla versione 2024.10.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Note sulla versione 2024.11.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Questa pagina illustra le note sulla versione 2024.10.0 di Cloud Manager in AEM as a Cloud Service.
+Scopri la versione 2024.11.0 di Cloud Manager nell’as a Cloud Service AEM (Adobe Experience Manager).
 
 >[!NOTE]
 >
 >Consulta le [note sulla versione corrente di Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-## Data di pubblicazione {#release-date}
+## Date di rilascio {#release-date}
 
-La data di pubblicazione di Cloud Manager versione 2024.10.0 in AEM as a Cloud Service è il 3 ottobre 2024.
+La data di pubblicazione di Cloud Manager 2024.11.0 in AEM as a Cloud Service è il 7 novembre 2024.
 
-La prossima versione è prevista per il venerdì 14 novembre 2024.
+La prossima versione pianificata è il 5 dicembre 2024.
 
 ## Novità {#what-is-new}
 
-* <!-- BOTH CS & AMS --> L’Archetipo AEM utilizzato in Cloud Manager è ora aggiornato alla versione 26. Consulta [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
+* Scopri le ultime innovazioni nei Edge Delivery Services con AEM Cloud Service, ora disponibile per l’esplorazione nel tuo programma Sandbox. [Ulteriori informazioni](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md#auto-creation) <!-- (CMGR-62319) -->
+* La pagina Impostazioni dominio in AEM Cloud Manager ora include una funzione di ricerca che consente di individuare rapidamente i domini per nome. Puoi immettere parole chiave nel campo di ricerca per filtrare e visualizzare i domini corrispondenti, semplificando così la gestione efficiente di più domini. Inoltre, la pagina offre filtri di stato, ad esempio **Verificato** e **Non verificato**, per perfezionare ulteriormente i risultati della ricerca. <!-- (CMGR-62615) -->
 
-<!-- (CMGR-59817) -->
-
-* <!-- CS ONLY --> Quando si aggiunge un nuovo dominio personalizzato, il metodo di verifica precedente richiedeva una procedura di convalida DNS lunga. Adobe ha semplificato tale procedura per la clientela. Ora devi solo fornire un certificato SSL valido (EV o OV), che funge da prova di proprietà. Non è più necessario aggiornare i record TXT nel DNS.
-
-  >[!NOTE]
-  >
-  >Questa funzione è applicabile solo ai certificati EV e OV gestiti dal cliente. I certificati DV gestiti da Adobe richiedono ancora la presenza di un record CNAME.
-
-  Consulta [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
-
-  ![Verificare il dominio per un certificato EV/OV gestito dal cliente](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
-
-* <!-- CS ONLY --> Quando aggiungi o modifichi un’infrastruttura di rete, i valori presenti nei campi dell’indirizzo IP e della maschera di rete vengono convalidati in base alle regole seguenti:
-
-   * Lo spazio degli indirizzi non deve sovrapporsi agli indirizzi definiti nello spazio degli indirizzi di connessione.
-   * Gli indirizzi DNS devono appartenere alla maschera di rete definita nello spazio degli indirizzi di connessione o essere pubblici.
-
-  ![Finestra di dialogo Aggiungi infrastruttura di rete](/help/implementing/cloud-manager/release-notes/assets/network-infrastructure-add.png)
-
-* <!-- CS ONLY --> Sono state apportate alcune modifiche al formato dei registri di distribuzione dell’ambiente per l’indicizzazione, l’installazione di contenuti mutabili e i processi di trasformazione.
-
-  >[!NOTE]
-  >
-  >Questa modifica verrà implementata in modo graduale fino alla data di completamento prevista per dicembre 2024.
-
-  ![Scheda Distribuisci in produzione](/help/implementing/cloud-manager/release-notes/assets/deploy-to-production-card.png)
-
-  Il formato del registro cambierà da una voce semplice, come illustrato di seguito:
-
-  ![File di registro costituito da voci semplici](/help/implementing/cloud-manager/release-notes/assets/log-file-simple-entry.png)
-
-  A una voce JSON, come illustrato di seguito:
-
-  ![File di registro costituito da voci JSON](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png)
-
+![Campo di ricerca nelle impostazioni del dominio](/help/implementing/cloud-manager/assets/domain-settings-search.png)
 
 ## Programma per i primi utilizzatori {#early-adoption}
 
 Partecipa al programma per i primi utilizzatori di Cloud Manger e concediti la possibilità di testare le prossime funzionalità.
+
+### Home page AEM {#aem-home}
+
+La Home di AEM è un nuovo punto di partenza centralizzato per la gestione di contenuti, risorse e siti in Adobe Experience Manager. Studiata per fornire un’esperienza personalizzata, la Home dell’AEM aiuta gli utenti a navigare facilmente nell’ecosistema dell’AEM in base ai loro ruoli e obiettivi. È progettata per fungere da guida, offrendo informazioni chiave e azioni consigliate per raggiungere in modo efficiente i risultati desiderati. Presentando una roadmap chiara e basata su persone, la Home dell’AEM assicura che gli utenti trovino rapidamente ciò di cui hanno bisogno per raggiungere i loro obiettivi, supportando un’esperienza più semplice ed efficace in tutte le funzionalità dell’AEM.
+
+Disponibile per i primi clienti che lo hanno adottato, la Home di AEM offre un’esperienza avanzata che ottimizza i flussi di lavoro, assegna priorità agli obiettivi e guida i risultati. Optando per il consenso, avrete l&#39;opportunità di dare forma allo sviluppo della Home dell&#39;AEM, fornendo un feedback che influenza la sua evoluzione per servire al meglio la comunità dell&#39;AEM.
+
+Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID. Accertati di includere le seguenti informazioni:
+
+* Il ruolo più adatto al tuo profilo: Autore di contenuti, Sviluppatore, Proprietario business, Amministratore o Altro (fornisci una descrizione).
+* Superficie di accesso AEM principale: AEM Sites, AEM Assets, AEM Forms, Cloud Manager o altro (fornisci una descrizione).
 
 ### Bring Your Own Git: ora con supporto per GitLab e Bitbucket {#gitlab-bitbucket}
 
@@ -82,12 +61,17 @@ Consulta [Aggiungere archivi esterni in Cloud Manager](/help/implementing/cloud-
 >
 >Attualmente, i controlli di qualità predefiniti per il codice di richiesta pull sono esclusivi degli archivi ospitati in GitHub, ma è in preparazione un aggiornamento per estendere questa funzionalità anche ad altri fornitori Git.
 
-Se ti interessa testare questa nuova funzione e condividere il tuo feedback, invia un’e-mail a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) dall’indirizzo e-mail associato al tuo Adobe ID. Se ti trovi in una struttura di archivio privata/pubblica o aziendale, assicurati di specificare la piattaforma Git che desideri utilizzare.
+Se ti interessa testare questa nuova funzione e condividere il tuo feedback, invia un’e-mail a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) dall’indirizzo e-mail associato al tuo Adobe ID. Assicurati di includere la piattaforma Git da utilizzare e se ti trovi in una struttura di archivio privata/pubblica o aziendale. —>
 
 
-<!-- ## Bug fixes
+## Correzioni di bug
+
+* Un aggiornamento recente ha risolto un problema in SonarQube a causa del quale in alcuni casi non venivano rilevate password hardcoded. La correzione ora include un controllo pattern espanso e si allinea agli standard di rilevamento predefiniti in SonarQube. <!-- CMGR-62682 -->
+* Quando si tenta di aggiornare un certificato SSL in Cloud Manager, viene visualizzato un errore sconosciuto dopo aver fatto clic su **[!UICONTROL Aggiorna]** nella finestra di dialogo **[!UICONTROL Visualizza e aggiorna certificato SSL]**. <!-- CMGR-62848 -->
+* In Cloud Manager, gli aggiornamenti del certificato SSL non riuscivano e veniva visualizzato l’errore &quot;Il nuovo certificato non corrisponde ai domini esistenti&quot;, anche quando i domini erano identici ma presentavano differenze in lettere maiuscole o minuscole. L&#39;aggiornamento ora riconosce i domini senza distinzione tra maiuscole e minuscole, allineandoli agli standard RFC. <!-- CMGR-62844 -->
+* In Cloud Manager, le associazioni dei Elenchi Consentiti di indirizzi IP sono rimaste bloccate in uno stato di esecuzione perché mancavano collegamenti chiave esterni alle configurazioni del dominio. La correzione ora garantisce che i binding del Inserisco nell&#39;elenco Consentiti di IP siano collegati correttamente alle configurazioni di dominio associate. <!-- CMGR-62838 -->
+* Cloud Manager convalida lo stato OCSP (Online Certificate Status Protocol) di un certificato SSL. Adobe consiglia inoltre di convalidare l&#39;integrità del certificato localmente utilizzando uno strumento come `openssl verify -untrusted intermediate.pem certificate.pem` prima di installarlo tramite Cloud Manager. Per ulteriori dettagli, consulta la [documentazione sui requisiti del certificato SSL](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates#requirements). <!-- CMGR-62341  -->
 
 
 
-
-## Known issues {#known-issues} -->
+<!-- ## Known issues {#known-issues} -->
