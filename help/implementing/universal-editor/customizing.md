@@ -4,9 +4,9 @@ description: Scopri i diversi punti di estensione e altre funzioni che consenton
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34ae1d57e77e209e179aca5c556954dbfb170498
+source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '646'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ Le condizioni possono essere definite utilizzando lo schema [JsonLogic.](https:/
 
 Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview`, che si aprirà facendo clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell&#39;editor [.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
-Questa opzione è particolarmente utile per le applicazioni con requisiti di anteprima specifici, ad esempio quelle [che utilizzano Edge Delivery Services con creazione WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+Ciò è particolarmente utile per le applicazioni con requisiti di anteprima specifici, ad esempio quelle [che utilizzano Edge Delivery Services con l&#39;authoring WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Per farlo, includi semplicemente l’URL di anteprima desiderato in un metatag dell’app instrumentata come nell’esempio seguente.
 
@@ -132,7 +132,7 @@ Per farlo, includi semplicemente l’URL di anteprima desiderato in un metatag d
 
 In qualità di servizio di Adobe Experience Cloud, l’interfaccia utente dell’editor universale può essere estesa utilizzando App Builder e Experience Manager.
 
-Le estensioni dell’interfaccia utente sono applicazioni JavaScript create con Adobe App Builder che possono essere incorporate nelle applicazioni UI eseguite in Adobe Experience Cloud Unified Shell, ad esempio Universal Editor. Puoi aggiungere i tuoi pulsanti e le tue azioni al menu dell’intestazione e alla barra delle proprietà, nonché creare eventi personalizzati per Universal Editor.
+Le estensioni dell’interfaccia utente sono applicazioni JavaScript create con Adobe App Builder che possono essere incorporate in applicazioni UI eseguite in Adobe Experience Cloud Unified Shell, ad esempio Universal Editor. Puoi aggiungere i tuoi pulsanti e le tue azioni al menu dell’intestazione e alla barra delle proprietà, nonché creare eventi personalizzati per Universal Editor.
 
 Se desideri esplorare queste possibilità, consulta le seguenti risorse:
 
