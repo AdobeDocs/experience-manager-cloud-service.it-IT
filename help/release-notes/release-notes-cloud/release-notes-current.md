@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
 workflow-type: tm+mt
 source-wordcount: '1514'
-ht-degree: 57%
+ht-degree: 86%
 
 ---
 
@@ -28,7 +28,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.10.0) è il venerdì 31 ottobre 2024. La prossima versione funzionale (2024.11.0) è pianificata per il venerdì 21 novembre 2024.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.10.0) è il 31 ottobre 2024. La prossima versione funzionale (2024.11.0) è pianificata per il 21 novembre 2024.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -46,7 +46,7 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 **Eventi pagina modernizzati**
 
-I seguenti eventi pagina di AEM Sites sono ora disponibili come eventi fruibili esternamente basati su AEM as a Cloud Service Eventing Platform. Gli eventi possono essere elaborati tramite Adobe I/O per interagire con i processi esterni.
+I seguenti eventi pagina di AEM Sites sono ora disponibili come eventi fruibili esternamente basati sulla piattaforma di eventi di AEM as a Cloud Service. Gli eventi possono essere elaborati tramite Adobe I/O per interagire con i processi esterni.
 * Pagina pubblicata
 * Pagina di cui è stata annullata la pubblicazione
 * Pagina eliminata
@@ -57,9 +57,9 @@ I seguenti eventi pagina di AEM Sites sono ora disponibili come eventi fruibili 
 
 Sfruttare l’intelligenza artificiale generativa tramite la nuova funzione di AEM, [genera varianti](/help/generative-ai/generate-variations.md), ora accessibile in Cloud Service. Genera varianti consente di generare e ridimensionare la creazione di contenuti tramite l’utilizzo dell’intelligenza artificiale generativa. Rivolgiti al tuo team Adobe Account per prendere in considerazione il programma.
 
-**REST OpenAPI per AEM per la distribuzione dei frammenti di contenuto**
+**OpenAPI REST di AEM per la distribuzione dei frammenti di contenuto**
 
-L&#39;API REST [AEM per la distribuzione dei frammenti di contenuto](/help/headless/aem-rest-openapi-content-fragment-delivery.md) è ora disponibile per AEM as a Cloud Service.
+OpenAPI REST di [AEM per la distribuzione dei frammenti di contenuto](/help/headless/aem-rest-openapi-content-fragment-delivery.md) è ora disponibile per AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -73,15 +73,15 @@ Per ottenere l’accesso anticipato al supporto delle didascalie generate dall�
 
 ### Nuove funzioni nella vista Risorse {#assets-view-new-features}
 
-**Report pianificati**
+**Rapporti pianificati**
 
-Ora è possibile generare automaticamente i rapporti nella vista Assets in base a una pianificazione ricorrente o in una data futura, riducendo gli sforzi per individuare informazioni basate sui dati.
+Ora è possibile generare automaticamente i rapporti nella vista Risorse in base a una pianificazione ricorrente o in una data futura, riducendo gli sforzi per individuare informazioni basate sui dati.
 
-![Report pianificati-](/help/assets/assets/scheduled-reports-tab.png)
+![Rapporti pianificati](/help/assets/assets/scheduled-reports-tab.png)
 
 ### Nuove funzioni nell’hub di contenuti {#content-hub-new-features}
 
-**Digital Rights Management per risorse con licenza**
+**Digital Rights Management per le risorse con licenza**
 
 Le organizzazioni possono ora aumentare la conformità alle licenze e ridurre al minimo il rischio di condividere le risorse con le condizioni di licenza sfruttando DRM per le risorse concesse in licenza agli utenti di Content Hub, che devono rivedere e accettare le condizioni di licenza prima di iniziare a scaricare le risorse concesse in licenza. Per ulteriori informazioni, consulta [Gestire le risorse con licenza in Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
@@ -140,7 +140,7 @@ Le funzionalità di intelligenza artificiale generativa offerte sono:
 ### Correzioni di bug {#bug-fixes-cif}
 
 * Sono stati corretti i test dell’interfaccia utente per il corretto funzionamento con i componenti core CIF.
-* È stato risolto un problema a causa del quale il formato dell’URL della categoria non funzionava come previsto nell’istanza cloud.
+* È stato risolto un problema a causa del quale il formato dell’URL delle categorie non funzionava come previsto nell’istanza cloud.
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
@@ -157,27 +157,27 @@ Per controllare l&#39;invio di moduli Coral o Foundation in posizioni specifiche
 >
 >Questa configurazione non è supportata per tutti i moduli Coral o Foundation che si trovano in `/apps`, `/libs`, `/mnt/overlay` e `/mnt/override`.
 
-### Inoltro dei registri self-service con opzione di rete avanzata {#log-forwarding}
+### Inoltro self-service dei registri con opzione di rete avanzata {#log-forwarding}
 
-Mentre i registri AEM (incluso Apache/Dispatcher) e CDN possono essere scaricati da Cloud Manager, molte organizzazioni trovano utile inviare in streaming tali registri a una destinazione di registrazione preferita. AEM ora supporta [l&#39;inoltro del registro](/help/implementing/developing/introduction/log-forwarding.md) ad Azure Blob Storage, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. I registri AEM possono essere facoltativamente inoltrati tramite configurazioni di rete avanzate, ad esempio utilizzando un indirizzo IP dedicato.
+Anche se i registri di AEM (inclusi Apache/Dispatcher) e della CDN possono essere scaricati da Cloud Manager, molte organizzazioni trovano utile inviare in streaming tali registri a una destinazione di registrazione preferita. AEM ora supporta l’[inoltro dei registri](/help/implementing/developing/introduction/log-forwarding.md) ad Azure Blob Storage, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. I registri di AEM possono essere facoltativamente inoltrati tramite configurazioni di rete avanzate, ad esempio utilizzando un indirizzo IP dedicato.
 
-Questa funzionalità è configurata dagli utenti in modo autonomo e distribuita utilizzando la [pipeline di configurazione](/help/operations/config-pipeline.md).
+Questa funzione può essere configurata dagli utenti in modo autonomo e distribuita mediante la [pipeline di configurazione](/help/operations/config-pipeline.md).
 
 ### Reindirizzamenti URL senza pipeline per utenti aziendali {#pipeline-free-redirects}
 
-I reindirizzamenti lato browser sono utili quando una pagina web viene rimossa o spostata o in altri scenari. Con [Reindirizzamenti URL senza pipeline](/help/implementing/dispatcher/pipeline-free-url-redirects.md), è possibile inserire un file di mappa di riscrittura Apache in un percorso di pubblicazione AEM, dove viene caricato automaticamente, senza dover eseguire il commit del file nel controllo del codice sorgente o avviare una pipeline Cloud Manager.
+I reindirizzamenti lato browser sono utili quando una pagina web viene rimossa o spostata, o in altri scenari. Con [Reindirizzamenti URL senza pipeline](/help/implementing/dispatcher/pipeline-free-url-redirects.md), è possibile inserire un file di mappa di riscrittura Apache in un percorso di pubblicazione AEM, dove viene caricato automaticamente, senza dover eseguire il commit del file nel controllo del codice sorgente o avviare una pipeline Cloud Manager.
 
 Le opzioni per la pubblicazione del file di riscrittura includono il caricamento come risorsa, l’utilizzo di ACS Commons Rewrite Map Manager o l’interazione con un’interfaccia utente personalizzata.
 
 ### Pipeline di configurazione per RDE {#config-pipeline-rdes}
 
-Gli ambienti di sviluppo rapido sono uno strumento potente per distribuire e testare rapidamente il codice e la configurazione in un ambiente Cloud. Gli RDE ora supportano [la sincronizzazione dei file YAML di configurazione](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), incluse le impostazioni CDN quali le regole del filtro del traffico e le trasformazioni di richieste/risposte, nonché l&#39;inoltro del registro e altre opzioni di configurazione. [Per ulteriori dettagli, vedere l&#39;elenco completo](/help/operations/config-pipeline.md) delle opzioni di configurazione supportate.
+Gli ambienti di sviluppo rapido (RDE, Rapid Development Environments) sono uno strumento potente per distribuire e testare rapidamente il codice e la configurazione in un ambiente Cloud. Gli RDE ora supportano la [sincronizzazione dei file YAML di configurazione](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), incluse le impostazioni CDN quali le regole del filtro del traffico e le trasformazioni di richieste o risposte, nonché l’inoltro dei registri e altre opzioni di configurazione. Per ulteriori dettagli, [consulta l’elenco completo](/help/operations/config-pipeline.md) delle opzioni di configurazione supportate.
 
 ### Nuovi profili di prodotto {#new-product-profiles}
 
-Quando viene creato un nuovo ambiente AEM, i profili di prodotto vengono visualizzati automaticamente in Adobe Admin Console, consentendo agli amministratori di assegnare l’accesso alle soluzioni e alle funzionalità concesse in licenza.
+Quando viene creato un nuovo ambiente AEM, i profili di prodotto vengono visualizzati automaticamente in Adobe Admin Console, consentendo agli amministratori di assegnare l’accesso alle soluzioni e alle funzioni concesse in licenza.
 
-I nuovi ambienti includono ora un set aggiornato di profili di prodotto, che li rendono compatibili con le funzioni future, inclusa la generazione di credenziali API in Adobe Developer Console. Gli ambienti esistenti saranno in grado di aggiornare i loro profili di prodotto in una versione futura. [Ulteriori informazioni](/help/onboarding/aem-cs-team-product-profiles.md).
+I nuovi ambienti includono ora un set aggiornato di profili di prodotto, rendendoli compatibili con le funzioni future, inclusa la generazione di credenziali API in Adobe Developer Console. Gli ambienti esistenti saranno in grado di aggiornare i relativi profili di prodotto in una versione futura. [Ulteriori informazioni](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### Nuovo Developer Console di AEM (Beta pubblica) {#aem-developer-console-beta}
 
