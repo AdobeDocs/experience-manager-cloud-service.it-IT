@@ -4,10 +4,10 @@ description: Queste sono le note sulla versione 2024.11.05 dell’editor univers
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 4bccfcb877c8b1a947b15935aa82ecb005e62213
+source-git-commit: e7839425012a101321b19d728f0ea3f0272dc394
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 23%
+source-wordcount: '151'
+ht-degree: 29%
 
 ---
 
@@ -24,9 +24,4 @@ Queste sono le note sulla versione del 5 novembre 2024 di Universal Editor.
 
 * **Pipeline di rollback per il servizio Universal Editor:** Una pipeline di rollback consente ai team di Adobe on-call di ripristinare rapidamente il servizio Universal Editor in qualsiasi ramo specifico, se necessario, garantendo un&#39;elevata disponibilità tramite il ripristino rapido in caso di problemi.
 * **Chiamate API ottimizzate per le operazioni sui contenuti:** il servizio Universal Editor ora utilizza API JSON invece delle API HTML per operazioni di creazione, copia e spostamento tramite SlingPostServlet, semplificando l&#39;analisi delle risposte.
-
-## Programma di adozione anticipata per il supporto della versione 6.5 {#early-adoption}
-
-L’Editor universale è ora disponibile per i casi d’uso headless quando si utilizza AEM 6.5 come parte di un programma per utenti iniziali.
-
-Se ti interessa testare questa nuova funzione e condividere i tuoi commenti, invia un’e-mail al tuo Customer Success Manager Adobe dall’indirizzo e-mail associato al tuo Adobe ID.
+* **Supporto per l&#39;editor universale in AEM 6.5:** L&#39;editor universale è ora disponibile per i casi d&#39;uso headless [con AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction.html)
