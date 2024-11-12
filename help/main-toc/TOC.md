@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 69428ec9709dae212e568e6100b4451ea3c67289
+source-git-commit: c1ecafc1790917ad247ae05720d6c4ed8e165cea
 workflow-type: tm+mt
-source-wordcount: '5782'
+source-wordcount: '5787'
 ht-degree: 98%
 
 ---
@@ -642,6 +642,7 @@ ht-degree: 98%
       + [Gestire i tag](/help/assets/tagging-management-assets-view.md)
       + [Credenziali del contenuto](/help/assets/content-credentials.md)
       + [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+      + [Estensibilità dell’interfaccia utente di visualizzazione di AEM Assets](/help/assets/aem-assets-view-ui-extensibility.md)
    + Hub di contenuti {#content-hub}
       + [Panoramica](/help/assets/product-overview.md)
       + [Distribuire l’hub di contenuti](/help/assets/deploy-content-hub.md)
@@ -1093,7 +1094,7 @@ ht-degree: 98%
    + [Implementazione di applicazioni per AEM as a Cloud Service](/help/implementing/home.md)
    + Utilizzare Cloud Manager {#using-cloud-manager}
       + [Navigazione](/help/implementing/cloud-manager/navigation.md)
-      + [Home page AEM](/help/implementing/cloud-manager/aem-home.md)
+      + [Pagina Home di AEM](/help/implementing/cloud-manager/aem-home.md)
       + Programmi {#programs}
          + [Programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
