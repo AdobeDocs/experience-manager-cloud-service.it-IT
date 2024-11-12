@@ -1,27 +1,31 @@
 ---
-title: Creazione di modelli di pagina
-description: Il modello definisce la struttura della pagina risultante e, grazie all’editor di modelli, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori
+title: Modelli per creare pagine modificabili con l’Editor pagina
+description: È possibile utilizzare l’Editor modelli per creare modelli utilizzabili dagli autori di contenuti per creare pagine modificabili con l’Editor pagina.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
 workflow-type: tm+mt
-source-wordcount: '4524'
-ht-degree: 84%
+source-wordcount: '4415'
+ht-degree: 77%
 
 ---
 
-# Creazione di modelli di pagina   {#creating-page-templates}
 
-Quando crei una pagina, devi selezionare un modello, che viene utilizzato come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, tutto il contenuto iniziale e i componenti che possono essere utilizzati.
+# Modelli per creare pagine modificabili con l’Editor pagina {#creating-page-templates}
 
-Con l’**Editor modelli**, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori. Può essere coinvolto anche un tipo di “power user”, detto **autore dimodelli**. Gli sviluppatori devono comunque occuparsi di configurare l’ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che questi elementi di base sono implementati, l’**autore del modello** avrà la flessibilità di creare e configurare i modelli senza un progetto di sviluppo.
+È possibile utilizzare l’Editor modelli per creare modelli utilizzabili dagli autori di contenuti per creare pagine modificabili con l’Editor pagina.
 
-La **Console modelli** consente agli autori di modelli di:
+## Panoramica {#overview}
 
-* Creare un nuovo modello o copiarne uno esistente.
-* Gestione del ciclo di vita del modello.
+Quando un autore crea una pagina, deve selezionare un modello da utilizzare come base per la nuova pagina. Il modello definisce la struttura della pagina risultante, tutto il contenuto iniziale e i componenti che possono essere utilizzati durante la modifica della pagina nell’Editor pagina.
+
+>[!NOTE]
+>
+>[Sono disponibili anche modelli per la creazione di pagine modificabili con Universal Editor.](/help/sites-cloud/authoring/universal-editor/templates.md)
+
+Con **Editor modelli**, la creazione e la gestione dei modelli non è un&#39;attività che riguarda solo gli sviluppatori. Un tipo di utente avanzato, denominato **autore di modelli**, può creare modelli. Gli sviluppatori devono configurare l&#39;ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che queste nozioni di base sono implementate, **l&#39;autore del modello** ha la flessibilità di creare e configurare i modelli senza coinvolgere uno sviluppatore.
 
 L’**Editor modelli** consente agli autori di modelli di:
 
@@ -29,9 +33,9 @@ L’**Editor modelli** consente agli autori di modelli di:
 * Preconfigurare i componenti.
 * Definire quali componenti possono essere modificati nelle pagine create con il modello.
 
-Questo documento illustra come un **autore di modelli** può utilizzare la console e l’editor modelli per creare e gestire modelli modificabili.
+Questo documento spiega come un **autore di modelli** può utilizzare l&#39;**Editor modelli** per creare e gestire modelli modificabili.
 
-Per informazioni dettagliate su come funzionano i modelli modificabili a livello tecnico, consulta il documento per sviluppatori [Modelli di pagina](/help/implementing/developing/components/templates.md).
+Per informazioni dettagliate sul funzionamento dei modelli modificabili a livello tecnico, vedere il documento per sviluppatori [Modelli modificabili](/help/implementing/developing/components/templates.md) per ulteriori informazioni.
 
 >[!NOTE]
 >
@@ -39,15 +43,15 @@ Per informazioni dettagliate su come funzionano i modelli modificabili a livello
 
 ## Prima di iniziare {#before-you-start}
 
+Prima di iniziare, è importante considerare che la creazione di un modello richiede collaborazione. Per questo motivo per ogni attività è indicato il relativo [Ruolo](#roles). Questo non influisce sul modo in cui si utilizza effettivamente un modello per creare una pagina, ma su come una pagina si relaziona al suo modello.
+
 >[!NOTE]
 >
 >Un amministratore deve configurare una cartella di modelli nel **browser delle configurazioni** e applicare le autorizzazioni appropriate prima che un autore possa creare un modello in tale cartella.
 
-Prima di iniziare, è importante considerare che la creazione di un modello richiede collaborazione. Per questo motivo per ogni attività è indicato il relativo [Ruolo](#roles). Questo non influisce sul modo in cui si utilizza effettivamente un modello per creare una pagina, ma su come una pagina si relaziona al suo modello.
-
 ### Ruoli {#roles}
 
-La creazione di un nuovo modello tramite **Templates Console (Console modelli)** e **Editor modelli** richiede la collaborazione tra i seguenti ruoli:
+La creazione di un nuovo modello richiede la collaborazione tra i seguenti ruoli:
 
 * **Amministratore**:
    * Crea una nuova cartella per i modelli che richiede i diritti di `admin`.
@@ -72,9 +76,6 @@ Le attività descritte nel presente documento sono elencate con il ruolo respons
 
 Quando crei un modello modificabile:
 
-* Utilizza la console dei **Modelli**. Questa funzione è disponibile nella sezione **Generale** della console degli **Strumenti**.
-   * Oppure direttamente da: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
-* Se necessario, puoi [creare una cartella per i modelli](#creating-a-template-folder-admin).
 * [Crea un nuovo modello](#creating-a-new-template-template-author), che sarà inizialmente vuoto.
 * [Definisci proprietà aggiuntive](#defining-template-properties-template-author) per il modello, se necessario
 * [Modifica il modello](#editing-templates-template-authors) per definire:
@@ -92,7 +93,7 @@ Quando crei un modello modificabile:
 
 >[!TIP]
 >
->Non inserire mai informazioni che devono essere internazionalizzate in un modello. <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>Non immettere mai informazioni che devono essere [internazionalizzate](/help/implementing/developing/extending/i18n/dev.md) in un modello.
 >
 >Per gli elementi modello che devono essere localizzati, come intestazioni e piè di pagina, utilizza le funzioni di [localizzazione dei componenti core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it)
 
@@ -102,7 +103,7 @@ Quando crei un modello modificabile:
 
 ### Creazione di un nuovo modello - Autore del modello {#creating-a-new-template-template-author}
 
-1. Apri **Templates Console** (tramite **Tools >** **General**) e passa alla cartella desiderata.
+1. Apri **[Templates Console](/help/sites-cloud/administering/templates-console.md)** e passa alla cartella desiderata.
 
    >[!NOTE]
    >
@@ -129,7 +130,7 @@ Quando crei un modello modificabile:
    >
    >Quando viene creato un nuovo modello, questo viene contrassegnato come **Bozza** nella console, a indicare che non è ancora disponibile per l’uso da parte degli autori di pagine.
 
->[!NOTE]
+>[!TIP]
 >
 >I modelli sono strumenti potenti per semplificare il flusso di lavoro di creazione della pagina. Tuttavia, troppi modelli possono sopraffare gli autori e confondere la creazione di pagine. Una buona regola è mantenere il numero di modelli sotto i 100.
 >
@@ -148,15 +149,7 @@ Un modello può avere le seguenti proprietà:
 * Descrizione
    * Descrizione facoltativa per fornire ulteriori informazioni sul modello e sul relativo utilizzo, ad esempio nella procedura guidata **Crea pagina**.
 
-Per visualizzare e/o modificare le proprietà:
-
-1. Nella **console Modelli**, seleziona il modello.
-1. Seleziona **Visualizza proprietà** dalla barra degli strumenti o le opzioni rapide per aprire la finestra di dialogo.
-1. Ora è possibile visualizzare o modificare le proprietà del modello.
-
->[!NOTE]
->
->Lo stato di un modello (bozza, attivato o disattivato) è indicato nella console.
+Dopo aver creato il modello, utilizzare **[Templates Console](/help/sites-cloud/administering/templates-console.md)** per visualizzare o modificare le proprietà del modello.
 
 #### Immagine della miniatura del modello {#template-thumbnail-image}
 
@@ -181,17 +174,11 @@ Per poter utilizzare un modello quando si crea una pagina, è necessario svolger
 
 Un modello può essere abilitato o disabilitato per renderlo disponibile o non disponibile nella procedura guidata **Crea pagina**.
 
+Utilizzare la **[console Modelli](/help/sites-cloud/administering/templates-console.md)** per abilitare o disabilitare un modello.
+
 >[!CAUTION]
 >
 >Una volta abilitato un modello, viene visualizzato un avviso quando un autore di modelli inizia ad aggiornare ulteriormente il modello. In tal modo l’utente viene informato che è possibile fare riferimento al modello e che eventuali modifiche potrebbero interessare le pagine che vi fanno riferimento.
-
-1. Nella **console Modelli**, seleziona il modello.
-1. Seleziona **Abilita** o **Disabilita** nella barra degli strumenti e di nuovo nella finestra di dialogo di conferma.
-1. È ora possibile utilizzare il modello durante la [creazione di una pagina](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), anche se probabilmente si desidera [modificare il modello](#editing-templates-template-authors) in base alle proprie esigenze.
-
->[!NOTE]
->
->Lo stato di un modello (bozza, attivato o disattivato) è indicato nella console.
 
 #### Consentire un modello - Autore {#allowing-a-template-author}
 
@@ -211,7 +198,6 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
    >
    >Se l’elenco **Modelli consentiti** viene lasciato vuoto, la struttura ad albero viene percorsa verso l’alto finché non viene trovato un valore/elenco.
    >
-   >
    >Consulta [Disponibilità dei modelli](/help/implementing/developing/components/templates.md#template-availability): i principi per i modelli consentiti rimangono gli stessi.
 
 1. Fai clic su **Salva** per salvare le modifiche alle proprietà della pagina.
@@ -224,10 +210,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
 
 Poiché al modello viene fatto riferimento durante il rendering di una pagina, il modello completamente configurato deve essere pubblicato in modo che sia disponibile nell’ambiente di pubblicazione.
 
-1. Nella **console Modelli**, seleziona il modello.
-1. Seleziona **Pubblica** nella barra degli strumenti per aprire la procedura guidata.
-1. Seleziona **Criteri per contenuto** da pubblicare in tandem.
-1. Seleziona **Pubblica** nella barra degli strumenti per completare l’azione.
+Modelli di Publish tramite la console **[Modelli.](/help/sites-cloud/administering/templates-console.md)**
 
 ## Modifica dei modelli - Autori dei modelli   {#editing-templates-template-authors}
 
@@ -664,4 +647,4 @@ Quando crei dei modelli, prendi in considerazione quanto segue:
    >AEM fornisce avvisi espliciti quando si modifica lo stato di blocco dei componenti nei modelli che non sono più bozze.
 
 1. [Creazione di cartelle personalizzate](#creating-a-template-folder-admin) per i modelli specifici del sito.
-1. [Pubblica i modelli](#publishing-a-template-template-author) dalla console **Modelli**.
+1. [Publish i tuoi modelli](#publishing-a-template-template-author) dalla console **[Modelli.]**(/help/sites-cloud/administering/templates-console.md)
