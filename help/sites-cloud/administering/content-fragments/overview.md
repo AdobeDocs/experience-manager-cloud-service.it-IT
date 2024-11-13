@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 40%
+source-wordcount: '1818'
+ht-degree: 39%
 
 ---
 
@@ -20,7 +20,7 @@ Con Adobe Experience Manager (AEM) as a Cloud Service, i Frammenti di contenuto 
 >
 >È possibile accedere ai frammenti di contenuto da due console: **Frammenti di contenuto** e **Assets**.
 >
->Sono inoltre disponibili due editor per i frammenti di contenuto. Entrambi gli editor sono accessibili da entrambe le console.
+>Esistono anche due editor per l’authoring dei frammenti di contenuto; sebbene la funzionalità di base sia la stessa, vi sono alcune differenze. Entrambi gli editor sono accessibili da entrambe le console.
 >
 >Questa sezione tratta la console **Frammenti di contenuto** e l&#39;editor frammenti di contenuto *new*. Questi sono stati sviluppati per la distribuzione di contenuti headless (anche se possono essere utilizzati in tutti gli scenari)
 >

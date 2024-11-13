@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
 workflow-type: tm+mt
-source-wordcount: '3011'
-ht-degree: 86%
+source-wordcount: '3120'
+ht-degree: 78%
 
 ---
 
@@ -106,36 +106,59 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 Per definire il modello è disponibile una selezione di tipi di dati:
 
 * **Testo su riga singola**
-   * Aggiungi uno o più campi di una singola riga di testo; la lunghezza massima può essere definita
+   * Aggiungi un campo per una singola riga di testo; è possibile definire la lunghezza massima
+   * Il campo può essere configurato per consentire agli autori di frammenti di creare nuove istanze del campo
+
 * **Testo su più righe**
-   * L’area di testo può essere RTF, Testo normale o Markdown
+   * Area di testo che può essere RTF, Testo normale o Markdown
+   * Il campo può essere configurato per consentire agli autori di frammenti di creare nuove istanze del campo
+
+  >[!NOTE]
+  >
+  Se l&#39;area di testo è RTF, Testo normale o Markdown, è definito nel modello dalla proprietà **Tipo predefinito**.
+  >
+  Questo formato non può essere modificato dall&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), ma solo dal modello.
+
 * **Numero**
-   * Aggiungi uno o più campi numerici
+   * Aggiungere un campo numerico
+   * Il campo può essere configurato per consentire agli autori di frammenti di creare nuove istanze del campo
+
 * **Booleano**
    * Aggiungi una casella di controllo booleana
+
 * **Data e ora**
-   * Aggiungi una data e/o un’ora
+   * Aggiungere un campo data e/o ora
+
 * **Enumerazione**
-   * Aggiungere un set di campi casella di controllo, pulsanti di scelta o elenco a discesa
+   * Aggiungere un set di campi Casella di controllo, Pulsante di scelta o A discesa
+      * Puoi specificare le opzioni disponibili per l’autore del frammento
+
 * **Tag**
    * Consente agli autori di frammenti di accedere alle aree dei tag e di selezionarle
+
 * **Riferimento contenuto**
    * I riferimenti ad altri contenuti di qualsiasi tipo possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
    * Se si fa riferimento a un’immagine, è possibile scegliere di mostrare una miniatura
+   * Il campo può essere configurato per consentire agli autori di frammenti di creare nuove istanze del campo
+
 * **Riferimento frammento**
    * I riferimenti ad altri frammenti di contenuto possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
-   * Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
-      * Modificare direttamente il frammento a cui si fa riferimento.
+   * Il campo può essere configurato per consentire agli autori di frammenti di:
+      * Modificare direttamente il frammento a cui si fa riferimento
       * Creare un nuovo frammento di contenuto basato sul modello appropriato
+      * Crea nuove istanze del campo
+
 * **Oggetto JSON**
    * Consente all’autore del frammento di contenuto di immettere la sintassi JSON negli elementi corrispondenti di un frammento.
       * Questo fa sì che AEM possa memorizzare direttamente JSON con copia e incolla da un altro servizio.
       * Il codice JSON viene trasmesso e riprodotto come codice JSON in GraphQL.
-      * Include l’evidenziazione della sintassi JSON, il completamento automatico e l’evidenziazione degli errori nell’editor dei frammenti di contenuto.
+      * Include le funzioni di evidenziazione della sintassi JSON, completamento automatico ed evidenziazione degli errori nell’editor dei frammenti di contenuto.
+
 * **Segnaposto scheda**
-   * Consente l’introduzione di schede da utilizzare per la modifica del contenuto dei frammenti di contenuto.
-Nell’editor modelli viene mostrato come divisore che separa le sezioni dell’elenco dei tipi di dati di contenuto. Ogni istanza rappresenta l’inizio di una nuova scheda.
-Nell’editor frammenti ogni istanza viene visualizzata come una scheda.
+   * Consente l’introduzione di schede da utilizzare per la modifica del contenuto di Frammenti di contenuto.
+      * Vengono visualizzati come divisori nell’editor modelli, separando le sezioni dell’elenco dei tipi di dati di contenuto. Ogni istanza rappresenta l’inizio di una nuova scheda.
+      * Nell’editor frammenti ogni istanza viene visualizzata come una scheda.
+
      >[!NOTE]
      >
      Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.

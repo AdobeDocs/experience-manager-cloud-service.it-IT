@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2704'
 ht-degree: 7%
 
 ---
@@ -60,6 +60,7 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
    * Scheda **Proprietà**, in cui puoi aggiornare il **Titolo** e la **Descrizione** del frammento, oppure la **Variante**
 * Pannello centrale: presenta i campi e il contenuto effettivi della variante selezionata
    * Consente di modificare il contenuto
+      * se configurati (come più) nel modello, vari tipi di dati ti consentono di **Aggiungere** istanze del campo pertinente
    * Se i campi **Segnaposto scheda** sono definiti all&#39;interno del modello, vengono visualizzati qui e possono essere utilizzati per la navigazione. Verranno presentati orizzontalmente o come elenco a discesa.
 
   >[!NOTE]
@@ -85,7 +86,7 @@ Nel pannello a sinistra puoi vedere:
 
 * l&#39;elenco di **[Varianti](#variations)** create per questo frammento:
    * **Principale** è la variante presente al momento della creazione del frammento di contenuto. Puoi aggiungerne altre in un secondo momento
-   * puoi utilizzare Genera varianti (#generate-variations) per utilizzare un modello basato su prompt creato da Adobe per un caso d’uso specifico.
+   * Puoi utilizzare Genera varianti (#generate-variations) per utilizzare un modello basato su prompt creato da Adobe per un caso d’uso specifico.
    * puoi anche [creare una variante](#create-variation)
 * **Campi** all&#39;interno del frammento e relative varianti:
    * l&#39;icona indica il [Tipo di dati](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -174,7 +175,7 @@ Per utilizzare le Varianti generative nell’Editor frammento di contenuto:
 
    >[!NOTE]
    >
-   >I modelli di prompt di Adobe disponibili al momento sono limitati, ma ne verranno aggiunti altri in versioni future.
+   >I modelli di prompt di Adobe disponibili sono ora limitati, ma ne verranno aggiunti altri in versioni future.
 
    ![Esporta per generare varianti nel frammento di contenuto](assets/cfm-generate-variations2.png)
 
