@@ -4,9 +4,10 @@ description: Scopri come configurare l’invalidazione push per creare una tua C
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
+source-git-commit: 0ac6856e8f3e664fcc7e3c08faac4c4f5c16af18
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '161'
 ht-degree: 2%
 
 ---
@@ -28,4 +29,4 @@ Le seguenti proprietà di configurazione definiscono il nome dell’host di prod
 
 Dopo aver apportato modifiche al foglio di configurazione, gli utenti devono visualizzarle in anteprima e attivarle con lo strumento [Sidekick](/help/edge/docs/sidekick.md) per applicare gli aggiornamenti.
 
-Vedere anche [Introduzione ai Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).
+Vedere anche [Informazioni sull&#39;elenco attività di Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).
