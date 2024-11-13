@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
+source-git-commit: eadb29c44dd57bda51f77a92a62016eae51dcc65
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 32%
+source-wordcount: '820'
+ht-degree: 76%
 
 ---
 
@@ -18,48 +18,57 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 18459 {#18459}
 
-Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 18459, rilasciata pubblicamente il mercoledì 5 novembre 2024. La versione di manutenzione precedente era la 18311.
+Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 18459, rilasciata pubblicamente il 5 novembre 2024. La versione di manutenzione precedente era la 18311.
 
 Con la versione di attivazione funzioni 2024.11.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ### Miglioramenti {#enhancements-18459}
 
-* CQ-4357471: aggiungi il supporto per la traduzione dei dizionari i18n in AEMaaCS.
-* SITES-23591: Frammenti di contenuto: aggiornamento del frammento di contenuto per il supporto UUID.
-* SITES-25440: Frammenti di contenuto: API di ricerca CFM per mostrare lo stato di replica.
-* SITES-24369: Frammenti di contenuto: miglioramenti alla documentazione OpenAPI.
-* SITES-25478: Frammenti di contenuto: aggiungi il supporto back-end per riferimenti a risorse esterne.
-* SITES-26119: Frammenti di contenuto: aggiungi il supporto di riferimenti a risorse esterne nel tipo di riferimento.
-* SITES-21199: Edge Delivery con Universal Editor: aggiunta del supporto per modelli creati da pagine.
-* SITES-20311: Edge Delivery con Universal Editor: aggiunta del supporto per l’importazione di CSV in fogli di calcolo.
-* SITES-24821: Edge Delivery con Universal Editor: imposta aem.page/aem.live come impostazione predefinita per l’integrazione con Edge Delivery.
+* CQ-4357471: aggiunta del supporto per la traduzione dei dizionari i18n in AEMaaCS.
+* SITES-23591: Frammenti di contenuto - aggiornamento del frammento di contenuto per il supporto UUID.
+* SITES-25440: Frammenti di contenuto - API di ricerca CFM per mostrare lo stato di replica.
+* SITES-24369 - Frammenti di contenuto: Miglioramenti alla documentazione OpenAPI.
+* SITES-25478 - Frammenti di contenuto: aggiunta del supporto di back-end di riferimenti a risorse esterne.
+* SITES-26119 - Frammenti di contenuto: aggiunta del supporto di riferimenti a risorse esterne nel tipo di riferimento.
+* SITES-21199 - Edge Delivery con editor universale: aggiunta del supporto per modelli creati da pagine.
+* SITES-20311 - Edge Delivery con editor universale: aggiunta del supporto per l’importazione di CSV nei fogli di calcolo.
+* SITES-24821 - Edge Delivery con editor universale : impostazione aem.page/aem.live come predefinita per l’integrazione con Edge Delivery.
+* FORMS-11646: Impostazione delle variabili globalContext per le pagine rilevanti di AEM Forms
+* FORMS-14833: AEM Forms ora può includere frammenti di moduli adattivi nel documento di record finale (DoR).
+* FORMS-14255: gli utenti possono ora beneficiare di una funzione di salvataggio automatico che consente di salvare automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completare la compilazione sullo stesso dispositivo o su un altro.
+
 
 ### Problemi risolti {#fixed-issues-18459}
 
-* CQ-4358730: CQPagePreviewGenerator ha esito negativo quando sono presenti più di 10 chiavi da tradurre.
-* FORMS-14978: abilitazione del caricamento della pagina per un modulo basato su Componente core per l’editor di temi.
-* FORMS-16596: problema di accessibilità: i pulsanti disattivati non sono riconosciuti dal Reader dello schermo.
+* CQ-4358730: CQPagePreviewGenerator non riesce quando sono presenti più di 10 chiavi da tradurre.
+* FORMS-14978: abilitazione del caricamento della pagina per un modulo basato su componente core per l’editor di temi.
+* FORMS-16596 - Problema di accessibilità: i pulsanti disattivati non sono riconosciuti dall’assistente vocale.
 * SITES-10575: MSM: Blueprint Bloomfilter Loader tenta di caricare più di 100.000 righe.
-* SITES-20755: Frammenti di contenuto: il riferimento della risorsa con aggiornamento UUID non mostra la miniatura.
-* SITES-26253: Frammenti di contenuto: migrazione UUID: cambia l’argomento del processo sling in generico.
-* SITES-21338: Frammenti di contenuto: l’endpoint referencedBy non restituisce il riferimento di pagina corretto.
-* SITES-24421: Frammenti di contenuto: l’endpoint di modifica del CF non funziona per il CF recuperato tramite GET CF.
-* SITES-25461: Frammenti di contenuto: il filtro per modello nella ricerca di CF deve fare distinzione tra maiuscole e minuscole.
-* SITES-25471: Frammenti di contenuto: corregge la convalida dei modelli globali in ModelValidatorServlet.
-* SITES-25795: Frammenti di contenuto: l’API del modello CF non riesce se non è impostata alcuna data cq.
-* SITES-25817: Frammenti di contenuto: Migliora la promozione di Launch: aggiorna l’ultima promozione per Launches CF.
-* SITES-26030: Frammenti di contenuto: Endpoint /referencesTree non restituisce l’intestazione necessaria.
-* SITES-26031: Frammenti di contenuto: lo stato della replica non viene restituito sull’endpoint di ricerca CFM.
-* SITES-26213: Frammenti di contenuto: i frammenti di contenuto con annullamento della pubblicazione devono convalidare solo i riferimenti pubblicati.
-* SITES-26226: Frammenti di contenuto: avvia un problema del flusso di lavoro quando nessuno dei percorsi specificati è utilizzabile.
-* SITES-26238: Frammenti di contenuto: i riferimenti alle risorse restituiti dall’API hanno un ordine diverso rispetto a quello di JCR.
-* SITES-25456: Eventi: quando si sposta una pagina, oltre all’evento di spostamento della pagina viene generato un evento di eliminazione della pagina.
-* SITES-25658: Eventi: il livello e sourceUrl non vengono popolati negli eventi di stato del contenuto della pagina.
-* SITES-6497: Lanci: la pagina Crea in lancio non funziona.
-* SITES-25938: Launches: eliminazione imprevista dopo un progetto di traduzione.
-* SITES-25393: Edge Delivery con Universal Editor: nodi di testo persi durante il rendering del testo RTF formattato con un singolo paragrafo.
-* SITES-24643: Edge Delivery con Universal Editor: gli attributi di metadati OpenGraph e twitter non funzionano nel modello di metadati della pagina.
-* SITES-25401: Frammenti esperienza: aggiornamento di riferimento XF lento
+* SITES-20755 - Frammenti di contenuto: il riferimento della risorsa con aggiornamento UUID non mostra la miniatura.
+* SITES-26253 - Frammenti di contenuto - Migrazione UUID: modifica dell’argomento del processo sling per essere generico.
+* SITES-21338 - Frammenti di contenuto: l’endpoint referencedBy non restituisce il riferimento di pagina corretto.
+* SITES-24421 - Frammenti di contenuto: l’endpoint di modifica del CF non funziona per il CF recuperato tramite GET CF.
+* SITES-25461 - Frammenti di contenuto: il filtro per modello nella ricerca di CF deve fare distinzione tra maiuscole e minuscole.
+* SITES-25471 - Frammenti di contenuto: correzione della convalida dei modelli globali in ModelValidatorServlet.
+* SITES-25795 - Frammenti di contenuto: l’API del modello CF non riesce se non è impostata alcuna data cq.
+* SITES-25817 - Frammenti di contenuto - Miglioramento di promoteLaunch: aggiornamento dell’ultima promozione per CF dei lanci.
+* SITES-26030 - Frammenti di contenuto: endpoint/referencesTree non restituisce l’intestazione necessaria.
+* SITES-26031 - Frammenti di contenuto: lo stato della replica non viene restituito sull’endpoint di ricerca CFM.
+* SITES-26213 - Frammenti di contenuto: i frammenti di contenuto con annullamento della pubblicazione devono convalidare solo i riferimenti pubblicati.
+* SITES-26226 - Frammenti di contenuto: viene avviato un problema del flusso di lavoro quando nessuno dei percorsi specificati è utilizzabile.
+* SITES-26238 - Frammenti di contenuto: i riferimenti alle risorse restituiti dall’API hanno un ordine diverso rispetto a quello di JCR.
+* SITES-25456 - Eventi: quando si sposta una pagina, oltre all’evento di spostamento della pagina viene generato un evento di eliminazione della pagina.
+* SITES-25658 - Eventi: il livello e sourceUrl non vengono popolati negli eventi di stato del contenuto della pagina.
+* SITES-6497 - Lanci: la pagina Crea in lancio non funziona.
+* SITES-25938 - Lanci: eliminazione imprevista dopo un progetto di traduzione.
+* SITES-25393 - Edge Delivery con editor universale: nodi di testo persi durante il rendering del testo RTF formattato con un singolo paragrafo.
+* SITES-24643 - Edge Delivery con editor universale: gli attributi di metadati OpenGraph e Twitter non funzionano nel modello di metadati della pagina.
+* SITES-25401 - Frammenti esperienza: aggiornamento di riferimento XF lento
+* GRANITE-53907: impossibile identificare l’utente del servizio come super utente del flusso di lavoro
+* CQ-4358028: la creazione di un progetto AEM non riesce quando un utente con il solo gruppo amministratori di progetto carica una nuova miniatura nella pagina di creazione del progetto.
+* FORMS-15682: il problema riguarda l’integrazione di AEM Forms e Dynamics FDM. Quando un utente invia un modulo, il documento di record (DOR) non viene inviato come allegato PDF al campo dell’entità specificato.
+* FORMS-15799: la pagina Firma di Adobe Sign GovCloud nota il rendering nell’iframe
+* FORMS-16113: quando un utente, che è un amministratore dell’account Adobe Sign, tenta di accedere a un documento inviato da un altro utente (anche un amministratore), l’API del contratto GET può restituire un ID contratto diverso da quello generato inizialmente al momento della creazione del contratto.
 
 
 ### Problemi noti {#known-issues-18459}
