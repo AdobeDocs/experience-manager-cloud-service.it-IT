@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+source-git-commit: 2652582ce2a740c958c10bea42c7674513706735
 workflow-type: tm+mt
-source-wordcount: '5794'
+source-wordcount: '5799'
 ht-degree: 98%
 
 ---
@@ -1149,6 +1149,7 @@ ht-degree: 98%
       + Siti Edge Delivery {#edge-delivery-sites}
          + [Introduzione a Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Aggiungere un sito Edge Delivery a Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [Configurare la convalida push per un sito Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Gestire i siti Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Impostazioni dominio {#custom-domain-names}
          + [Introduzione alle impostazioni di dominio](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -1163,7 +1164,6 @@ ht-degree: 98%
          + [Gestire i certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Configurazioni CDN {#cdn-configurations}
          + [Aggiungere una configurazione CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [Configura convalida push](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)
          + [Gestire configurazioni CDN](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + Elenchi indirizzi IP consentiti {#ip-allow-lists}
          + [Introduzione agli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
