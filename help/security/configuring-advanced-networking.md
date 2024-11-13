@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -398,7 +398,7 @@ Per verificare che il traffico sia effettivamente in uscita all’indirizzo IP d
 
 ## Virtual Private Network (VPN) {#vpn}
 
-Una VPN consente la connessione a un’infrastruttura on-premise o a un centro dati dalle istanze di authoring, pubblicazione o anteprima. Ciò può essere utile, ad esempio, per proteggere l’accesso a un database. Consente inoltre la connessione ai fornitori SaaS, ad esempio un fornitore di CRM che supporta la VPN.
+Una VPN consente la connessione a un’infrastruttura on-premise o a un centro dati dalle istanze di authoring, pubblicazione o anteprima. Ciò può essere utile, ad esempio, per proteggere l’accesso a un database. Consente inoltre di connettersi ai fornitori SaaS, ad esempio un fornitore di CRM che supporta la VPN.
 
 Sono supportati la maggior parte dei dispositivi VPN con tecnologia IPSec. Consulta le informazioni nella colonna **Istruzioni di configurazione Route Based** in [questo elenco di dispositivi.](https://learn.microsoft.com/it-it/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) Configura il dispositivo come descritto nella tabella.
 
@@ -774,7 +774,7 @@ La procedura è quasi identica alle istruzioni degli indirizzi IP in uscita dedi
 
 I seguenti punti sono forniti come linee guida informative e includono best practice per la risoluzione dei problemi. Questi consigli hanno lo scopo di aiutare a diagnosticare e risolvere in modo efficace i problemi.
 
-### Connection pooling {#connection-pooling-advanced-networking}
+### Pool di connessioni {#connection-pooling-advanced-networking}
 
 Il pool di connessioni è una tecnica ideata per creare e sostenere un archivio di connessioni, pronte per essere utilizzate fin da subito dai thread che possano richiederle. Su varie piattaforme e risorse online si possono trovare numerose tecniche di connection pooling, ciascuna con i suoi meriti e considerazioni particolari. Incoraggiamo i nostri clienti a studiare queste metodologie per identificare quella più compatibile con l’architettura del loro sistema.
 
