@@ -3,9 +3,10 @@ title: Estensibilità dell’interfaccia utente di visualizzazione di AEM Assets
 description: Scopri la funzionalità di estensibilità dell’interfaccia utente di AEM Assets View. L’interfaccia utente di AEM Assets View consente di aggiungere componenti personalizzati dell’interfaccia utente per soddisfare esigenze aziendali specifiche.
 feature: App Builder
 role: User, Developer
-source-git-commit: c1446200898102881a20508031d4853c61f7c964
+exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
+source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 3%
 
 ---
@@ -26,7 +27,7 @@ Puoi aggiungere le estensioni a livello di risorsa, cartella e raccolta. L’est
 Accedi alla vista Assets nei seguenti modi:
 ![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 
-## Dove viene visualizzato il componente Estensibilità dell’interfaccia utente aggiunto nell’interfaccia utente di visualizzazione di Assets? {#ui-extensibility-panel-assets-view}
+## Dove vengono visualizzate le estensioni dell’interfaccia utente nell’interfaccia utente di visualizzazione di Assets? {#ui-extensibility-panel-assets-view}
 
 Nella Vista Assets, passa alla pagina Dettagli di una risorsa, cartella o raccolta. In questa pagina Dettagli è presente un pannello dedicato che mostra l’estensione dell’interfaccia utente aggiunta.
 ![area di lavoro personale](/help/assets/assets/my-workspace-assets-view3.png)
@@ -52,5 +53,3 @@ Nella Vista Assets, passa alla pagina Dettagli di una risorsa, cartella o raccol
 1. Configura l&#39;ambiente locale e scopri come sviluppare estensioni dell&#39;interfaccia utente nella vista Assets creando la prima estensione dell&#39;interfaccia utente. Per ulteriori dettagli, consulta [Sviluppo dell&#39;estensione AEM Assets View](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) passo dopo passo.
 1. Configura l’app utilizzando AIO CLI per generare la struttura di estensione di base e il codice richiesto. Per informazioni dettagliate, consulta [Generazione del codice per la visualizzazione AEM Assets](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/).
 1. Verifica le estensioni a livello locale per assicurarti che funzionino come previsto prima della distribuzione. Esegui l’estensione in un ambiente completamente isolato o con isolamento parziale e connetti l’estensione alla visualizzazione AEM Assets di produzione per il test. Per informazioni dettagliate, consulta [Risoluzione dei problemi - Estendibilità visualizzazione AEM Assets](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/).
-
-
