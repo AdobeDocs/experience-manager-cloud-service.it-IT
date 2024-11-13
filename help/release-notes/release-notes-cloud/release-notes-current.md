@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
+source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 86%
+source-wordcount: '1670'
+ht-degree: 89%
 
 ---
 
@@ -83,29 +83,37 @@ Ora è possibile generare automaticamente i rapporti nella vista Risorse in base
 
 **Digital Rights Management per le risorse con licenza**
 
-Le organizzazioni possono ora aumentare la conformità alle licenze e ridurre al minimo il rischio di condividere le risorse con le condizioni di licenza sfruttando DRM per le risorse concesse in licenza agli utenti di Content Hub, che devono rivedere e accettare le condizioni di licenza prima di iniziare a scaricare le risorse concesse in licenza. Per ulteriori informazioni, consulta [Gestire le risorse con licenza in Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+Le organizzazioni possono ora aumentare la conformità alle licenze e ridurre al minimo il rischio di condividere le risorse con le condizioni di licenza sfruttando DRM per le risorse concesse in licenza agli utenti dell’hub di contenuti, che dovranno rivedere e accettare le condizioni di licenza prima di iniziare a scaricare le risorse concesse in licenza. Per ulteriori informazioni, consulta [Gestire le risorse con licenza nell’hub di contenuti](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
 **Configurazione metadati scheda risorse**
 
-Content Hub ora consente di configurare fino a un massimo di 6 campi di metadati chiave da visualizzare nella scheda delle risorse. Per ulteriori informazioni, consulta la sezione Scheda risorse in [Configurare Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
+L’hub di contenuti ora consente di configurare fino a un massimo di 6 campi di metadati chiave da visualizzare nella scheda delle risorse. Per ulteriori informazioni, consulta la sezione Scheda risorse in [Configurare l’hub di contenuti](/help/assets/configure-content-hub-ui-options.md#asset-card).
 
 ![metadati chiave nella scheda risorse](/help/assets/assets/asset-card-key-metadata.png)
 
 **Configurare la visibilità e il download delle risorse scadute**
 
-Gli amministratori ora possono verificare se rendere visibili le risorse scadute nell’hub di contenuti. Se le risorse scadute vengono rese visibili, possono anche definire se gli utenti possono scaricarle. Per ulteriori informazioni, vedere la sezione Assets scaduta in [Configurare Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
+Gli amministratori ora possono verificare se rendere visibili le risorse scadute nell’hub di contenuti. Inoltre, se le risorse scadute vengono rese visibili, possono definire se gli utenti potranno scaricarle. Per ulteriori informazioni, consulta la sezione Risorse scadute in [Configurare l’hub di contenuti](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
 
 ![Risorse scadute nell’hub di contenuti](/help/assets/assets/expired-assets-content-hub.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
+### Nuove funzioni in AEM Forms {#forms-new-features}
+
+* **Migliora l&#39;esperienza utente con i pulsanti di spostamento nei layout del pannello**: è ora possibile aggiungere pulsanti di spostamento ai layout del pannello, ad esempio Schede orizzontali, Schede verticali, Accordi o Procedura guidata. Questi pulsanti migliorano l’esperienza utente semplificando le transizioni tra i pannelli e concentrandosi sul pannello selezionato.
+
+* **Specificare gli stili di visualizzazione per i componenti DoR (Document of Record)**: in un file XFA è ora possibile specificare gli stili di visualizzazione per i componenti Document of Record. Questi stili possono essere applicati successivamente ai componenti corrispondenti nell’editor di Forms adattivo.
+
 ### Nuove funzioni pre-release in AEM Forms {#forms-new-prerelease-features}
 
-#### Salvataggio automatico di una bozza per moduli adattivi basati su Componenti core
+* **Salvataggio automatico di una bozza per i Componenti core basati su Adaptive Forms**: gli utenti possono ora beneficiare di una funzione di salvataggio automatico che salva automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completarne la compilazione sullo stesso dispositivo o su un altro. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
 
-Gli utenti possono ora beneficiare di una funzione di salvataggio automatico che consente di salvare automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completarne la compilazione sullo stesso dispositivo o su un altro. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
+* **Aggiornare facilmente gli ambiti di Adobe Sign**: è possibile modificare gli ambiti di una configurazione Adobe Sign direttamente dalla pagina Configurazioni AEM Cloud, rendendo più rapido e semplice l&#39;aggiornamento delle configurazioni esistenti.
+
+* **Supporto di funzioni asincrone per Forms adattivo**: quando il modulo adattivo richiede operazioni asincrone, ad esempio l&#39;attesa di processi esterni o il recupero dei dati, è possibile implementare queste operazioni con funzioni personalizzate e configurarle nell&#39;editor di regole.
 
 ### Funzionalità per Accesso anticipato ad AEM Forms {#forms-new-early-access-features}
 
@@ -146,12 +154,12 @@ Le funzionalità di intelligenza artificiale generativa offerte sono:
 
 ### Configurazione per controllare l’invio dei moduli {#configuration-submissions}
 
-Per controllare l&#39;invio di moduli Coral o Foundation in posizioni specifiche, AEM ha introdotto una nuova configurazione: `com.adobe.granite.ui.components.FormRestrict`. Questa configurazione è costituita da due campi:
+Per controllare gli invii dei moduli Coral o Foundation in posizioni specifiche, AEM ha introdotto una nuova configurazione: `com.adobe.granite.ui.components.FormRestrict`. Questa configurazione è costituita da due campi:
 
 1. **Aggiungi percorsi consentiti**: specifica i percorsi in cui sono consentite le azioni del modulo.
-1. **Limita comportamento**: determina il comportamento per i percorsi con restrizioni (percorsi non inclusi nell&#39;elenco Consentiti). Puoi scegliere tra due opzioni:
-   * **Popup** (impostazione predefinita): visualizza una notifica popup.
-   * **Impedisci**:Blocca l&#39;invio di moduli.
+1. **Limita comportamento**: determina il comportamento per i percorsi con restrizioni (percorsi non inclusi nell’elenco Consentiti). Puoi scegliere tra due opzioni:
+   * **Popup** (impostazione predefinita): mostra una notifica popup.
+   * **Impedisci**: blocca l’invio di moduli.
 
 >[!NOTE]
 >
