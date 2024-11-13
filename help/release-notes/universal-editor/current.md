@@ -1,10 +1,10 @@
 ---
-title: Note sulla versione 2024.11.12 dell’editor universale
-description: Queste sono le note sulla versione 2024.11.12 dell’editor universale.
+title: Note sulla versione 2024.11.13 dell’editor universale
+description: Queste sono le note sulla versione 2024.11.13 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 03ccad00e689052ada8cca976d6c385be01d3cc9
+source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 12%
@@ -12,9 +12,9 @@ ht-degree: 12%
 ---
 
 
-# Note sulla versione 2024.11.12 dell’editor universale {#release-notes}
+# Note sulla versione 2024.11.13 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 12 novembre 2024 di Universal Editor.
+Queste sono le note sulla versione del 13 novembre 2024 di Universal Editor.
 
 >[!TIP]
 >
