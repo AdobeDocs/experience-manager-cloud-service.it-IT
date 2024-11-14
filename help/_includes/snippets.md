@@ -1,8 +1,8 @@
 ---
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 93%
+source-wordcount: '1259'
+ht-degree: 92%
 
 ---
 # Snippet {#snippets}
@@ -214,7 +214,7 @@ Se un problema relativo a un prodotto richiede ulteriori indagini e tentativi di
 
 Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Edge Delivery in Cloud Manager. La registrazione del sito web in Cloud Manager è consigliata a tutti gli utenti di AEM as a Cloud Service e [offre numerosi vantaggi](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Se non hai già registrato il tuo sito, puoi trovare ulteriori informazioni nella [documentazione di Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
 
-Dopo aver registrato il sito web in Cloud Manager, per inviare un ticket di supporto utilizza Admin Console e segui questa procedura:
+**Per registrare un ticket di supporto:**
 
 1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/?support-tab=home?lang=it#support).
 1. Aggiungi **Edge Delivery** nel titolo del ticket.
