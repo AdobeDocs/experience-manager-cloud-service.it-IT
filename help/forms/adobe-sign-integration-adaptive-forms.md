@@ -4,7 +4,8 @@ description: Scopri come configurare Adobe Acrobat Sign per  [!DNL AEM Forms] as
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
-source-git-commit: 551123925e43c98f8870f4a5da028d211f5c8ffb
+exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
+source-git-commit: 31a4a8b5b86439483b058c1fb132979476aab2e5
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 1%
@@ -104,7 +105,7 @@ Dopo aver impostato i prerequisiti, eseguire la procedura seguente per configura
    * [!DNL widget_write]
    * [!DNL workflow_read]
 
-   
+   >[!NOTE]
    > È possibile modificare il modificatore ambiti da `self` a `account` direttamente dall&#39;interfaccia utente dell&#39;AEM, come indicato nel passaggio 12.
 
    Per informazioni dettagliate su come configurare le impostazioni OAuth per un&#39;applicazione [!DNL Adobe Acrobat Sign] e ottenere le chiavi, vedere [Configurare le impostazioni OAuth per la documentazione per gli sviluppatori dell&#39;applicazione](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md).
