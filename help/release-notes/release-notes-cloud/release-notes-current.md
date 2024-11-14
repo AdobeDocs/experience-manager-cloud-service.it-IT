@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
+source-git-commit: 4e74efa73f0f7d6d9db13001dbc5ebc2ddba98cd
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1633'
 ht-degree: 89%
 
 ---
@@ -101,19 +101,19 @@ Gli amministratori ora possono verificare se rendere visibili le risorse scadute
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nuove funzioni in AEM Forms {#forms-new-features}
+### Nuova funzione in AEM Forms {#forms-new-features}
 
-* **Migliora l&#39;esperienza utente con i pulsanti di spostamento nei layout del pannello**: è ora possibile aggiungere pulsanti di spostamento ai layout del pannello, ad esempio Schede orizzontali, Schede verticali, Accordi o Procedura guidata. Questi pulsanti migliorano l’esperienza utente semplificando le transizioni tra i pannelli e concentrandosi sul pannello selezionato.
+* [Migliora l&#39;esperienza utente con i pulsanti di spostamento nei layout del pannello](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): è ora possibile aggiungere pulsanti di spostamento ai layout del pannello, ad esempio Schede orizzontali, Schede verticali, Accordi o Procedura guidata. Questi pulsanti migliorano l’esperienza utente semplificando le transizioni tra i pannelli e concentrandosi sul pannello selezionato.
 
-* **Specificare gli stili di visualizzazione per i componenti DoR (Document of Record)**: in un file XFA è ora possibile specificare gli stili di visualizzazione per i componenti Document of Record. Questi stili possono essere applicati successivamente ai componenti corrispondenti nell’editor di Forms adattivo.
+<!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
 ### Nuove funzioni pre-release in AEM Forms {#forms-new-prerelease-features}
 
-* **Salvataggio automatico di una bozza per i Componenti core basati su Adaptive Forms**: gli utenti possono ora beneficiare di una funzione di salvataggio automatico che salva automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completarne la compilazione sullo stesso dispositivo o su un altro. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
+* [Salvataggio automatico di una bozza per i Componenti core basati su Adaptive Forms](/help/forms/save-core-component-based-form-as-draft.md): gli utenti possono ora beneficiare di una funzione di salvataggio automatico che salva automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completarne la compilazione sullo stesso dispositivo o su un altro. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
 
-* **Aggiornare facilmente gli ambiti di Adobe Sign**: è possibile modificare gli ambiti di una configurazione Adobe Sign direttamente dalla pagina Configurazioni AEM Cloud, rendendo più rapido e semplice l&#39;aggiornamento delle configurazioni esistenti.
+* [Aggiornare facilmente gli ambiti di Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): è possibile modificare gli ambiti di una configurazione Adobe Sign direttamente dalla pagina Configurazioni AEM Cloud, rendendo più rapido e semplice l&#39;aggiornamento delle configurazioni esistenti.
 
-* **Supporto di funzioni asincrone per Forms adattivo**: quando il modulo adattivo richiede operazioni asincrone, ad esempio l&#39;attesa di processi esterni o il recupero dei dati, è possibile implementare queste operazioni con funzioni personalizzate e configurarle nell&#39;editor di regole.
+* [Supporto di funzioni asincrone per Forms adattivo](/help/forms/using-async-funct-in-rule-editor.md): quando il modulo adattivo richiede operazioni asincrone, ad esempio l&#39;attesa di processi esterni o il recupero dei dati, è possibile implementare queste operazioni con funzioni personalizzate e configurarle nell&#39;editor di regole.
 
 ### Funzionalità per Accesso anticipato ad AEM Forms {#forms-new-early-access-features}
 
@@ -123,7 +123,7 @@ In queste note sulla versione sono elencate le innovazioni incluse nella version
 
 #### Assistente IA di AEM Forms
 
-L’intelligenza artificiale generativa per moduli adattivi offre un livello completamente nuovo di potenza e semplicità ai processi di sviluppo dei moduli. Ti consente di creare moduli migliori più rapidamente che mai.
+[L&#39;intelligenza artificiale generativa per Forms adattivo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) offre un livello completamente nuovo di potenza e semplicità ai processi di sviluppo dei moduli. Ti consente di creare moduli migliori più rapidamente che mai.
 
 ![Assistente IA generativa, moduli adattivi](/help/forms/assets/generative-ai-assistant.png)
 
