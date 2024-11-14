@@ -1,13 +1,13 @@
 ---
-title: Imposta annullamento validità push
-description: Scopri come configurare l’invalidazione push per creare una tua CDN di produzione.
+title: Impostare l’annullamento della validità push per un sito Edge Delivery
+description: Scopri come configurare l’invalidazione push per un sito Edge Delivery per garantire aggiornamenti dei contenuti e un controllo efficace della memorizzazione in cache.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
+source-git-commit: 1a391837ded0af0c5bb436c34a5818f418436308
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '172'
 ht-degree: 2%
 
 ---

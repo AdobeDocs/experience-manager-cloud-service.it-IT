@@ -4,9 +4,9 @@ description: Scopri come distribuire i progetti Cloud Manager utilizzando i Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
+source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '766'
 ht-degree: 10%
 
 ---
@@ -63,13 +63,13 @@ Un Edge Delivery Services può essere aggiunto in diversi modi a seconda di come
 >* Una volta che la licenza Edge Delivery Services viene applicata o rimossa da un programma, la modifica ha effetto immediato senza la necessità di eseguire una pipeline.
 
 
-## Informazioni sull’elenco delle attività di Edge Delivery {#ed-todo-list}
+## Informazioni sull’elenco delle cose da fare di Edge Delivery in Cloud Manager {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-L&#39;**elenco attività di Edge Delivery** è un elenco di controllo delle attività di onboarding che ti guiderà attraverso l&#39;onboarding e la gestione del tuo sito Edge Delivery fino al [lancio](/help/journey-onboarding/go-live-checklist.md).
+L&#39;**elenco attività di Edge Delivery** in Cloud Manager è un elenco di controllo delle attività di onboarding che ti guiderà attraverso l&#39;onboarding e la gestione del tuo sito Edge Delivery fino al [lancio](/help/journey-onboarding/go-live-checklist.md).
 
-![Elenco attività sito Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Elenco attività sito Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Attività | Descrizione |
 | --- | --- | --- |
