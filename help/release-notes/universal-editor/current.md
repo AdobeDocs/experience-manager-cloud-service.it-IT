@@ -5,16 +5,16 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '370'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
 
 # Note sulla versione 2024.11.13 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 13 novembre 2024 di Universal Editor.
+Queste sono le note sulla versione del 13 novembre 2024 dell’editor universale.
 
 >[!TIP]
 >
@@ -22,22 +22,22 @@ Queste sono le note sulla versione del 13 novembre 2024 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* **Opzione Riprova per timeout CORS:** Con [versione 2024.09.26,](/help/release-notes/universal-editor/2024/2024-09-26.md) è stato introdotto un pannello di errore quando l&#39;editor non è riuscito a stabilire una connessione alla pagina caricata, impedendo il caricamento di stati infiniti.
+* **Opzione Riprova per timeout CORS:** con la [versione 2024.09.26](/help/release-notes/universal-editor/2024/2024-09-26.md), era stato introdotto un pannello di errore quando l’editor non riusciva a stabilire una connessione alla pagina caricata, impedendo il caricamento di stati infiniti.
    * Con questa versione, l’editor continua automaticamente a riprovare e, una volta stabilita la connessione, è possibile riprendere la modifica.
-   * Questa funzione è particolarmente utile per le pagine che potrebbero richiedere più tempo di un minuto prima dell’inizializzazione.
-* **Miglioramenti dell&#39;estendibilità per sviluppatori:** Universal Editor ora supporta la trasmissione di eventi alle estensioni, consentendo agli sviluppatori di estensioni di sottoscrivere [eventi.](/help/implementing/universal-editor/events.md)
-   * Questo consente agli sviluppatori di [reagire agli eventi dell&#39;editor all&#39;interno delle loro estensioni personalizzate.](/help/implementing/universal-editor/customizing.md#extending)
-* **Selezione componente persistente:** I componenti selezionati nell&#39;editor persisteranno anche dopo l&#39;aggiornamento del browser.
-   * In questo modo gli utenti possono continuare a lavorare senza perdere il loro contesto durante il ricaricamento della pagina.
-* **Collegamenti rapidi localizzati:** La sezione **Collegamenti rapidi** nella schermata iniziale fornisce ora collegamenti localizzati alla documentazione, consentendo agli utenti di accedere facilmente alle guide pertinenti in base alle loro preferenze linguistiche.
-* **ID richiesta per debug avanzato:** Le notifiche di errore ora includono un **ID richiesta** nella sezione dei dettagli, che è correlato a `x-request-id header`.
-   * In questo modo i team di progettazione Adobe possono tracciare e diagnosticare più facilmente i problemi confrontando tali errori con i registri interni.
+   * Questa funzione è particolarmente utile per le pagine che potrebbero richiedere più di un minuto di timeout prima dell’inizializzazione.
+* **Miglioramenti dell’estensibilità per sviluppatori:** l’editor universale ora supporta la trasmissione di eventi alle estensioni, consentendo a chi sviluppa estensioni di iscriversi agli [eventi.](/help/implementing/universal-editor/events.md)
+   * Potrà così [reagire agli eventi dell’editor direttamente dalle propria estensione personalizzata.](/help/implementing/universal-editor/customizing.md#extending)
+* **Selezione persistente dei componenti:** i componenti selezionati nell’editor ora persisteranno anche dopo l’aggiornamento della finestra del browser.
+   * In questo modo l’utente può continuare a lavorare senza perdere il contesto durante il ricaricamento della pagina.
+* **Collegamenti rapidi localizzati:** la sezione **Collegamenti rapidi** nella schermata Home fornisce ora collegamenti localizzati che consentono di accedere facilmente alla documentazione e alle guide pertinenti in base alle preferenze impostate per la lingua.
+* **ID richiesta per debug avanzato:** le notifiche di errore ora includono un **ID richiesta** nella sezione dei dettagli, che è correlato all’`x-request-id header`.
+   * In questo modo i team tecnici di Adobe possono tracciare e diagnosticare più facilmente i problemi confrontando tali errori con i registri interni.
 
 ## Altri miglioramenti {#other-improvements}
 
-* **Etichette di struttura contenuto lungo fisso:** è stato risolto un problema che causava la disattivazione delle etichette lunghe nel pannello **Struttura contenuto**
-   * In questo modo le maniglie di trascinamento sono sempre visibili per il riordinamento dei contenuti.
-* **Etichette proprietà lunghe corrette:** è stato corretto un bug a causa del quale le etichette dei campi lunghi nel pannello **Proprietà** si sovrapponevano alle informazioni di convalida dei campi
+* **Correzione di etichette lunghe nella struttura del contenuto:** è stato risolto un problema a causa del quale le etichette lunghe risultavano troncate nel pannello **Struttura contenuto**
+   * In questo modo le maniglie di trascinamento sono sempre visibili per consentire il riordinamento dei contenuti.
+* **Correzione di etichette lunghe delle proprietà:** è stato corretto un bug a causa del quale le etichette dei campi lunghe nel pannello **Proprietà** si sovrapponevano alle informazioni di convalida dei campi
 * **Scorrimento orizzontale nel pannello Proprietà:** è stato risolto un problema che causava lo scorrimento orizzontale di elementi di grandi dimensioni nel pannello **Proprietà**
-* **Barra degli strumenti inattiva risolta durante le notifiche:** La barra degli strumenti **Adobe Experience Cloud** superiore è ora completamente funzionante quando vengono visualizzate le [notifiche](https://spectrum.adobe.com/page/toast/).
-* **Stabilità migliorata:** sono stati aggiunti limiti di errore per gestire valori imprevisti, impedendo l&#39;arresto anomalo dell&#39;intera interfaccia utente quando un singolo renderer o convalida non riesce, migliorando la robustezza
+* **Correzione per barra degli strumenti inattiva durante le notifiche:** la barra superiore degli strumenti di **Adobe Experience Cloud** è ora completamente funzionante quando vengono visualizzate le notifiche [toast](https://spectrum.adobe.com/page/toast/).
+* **Miglioramento della stabilità:** sono stati aggiunti limiti di errore per gestire valori imprevisti, impedendo l’arresto anomalo dell’intera interfaccia utente quando un singolo rendering o convalida non riesce, migliorandone la stabilità.
