@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 2b34b23c05ff125a24fb0969d0239a384e773011
 workflow-type: tm+mt
 source-wordcount: '1633'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -103,17 +103,17 @@ Gli amministratori ora possono verificare se rendere visibili le risorse scadute
 
 ### Nuova funzione in AEM Forms {#forms-new-features}
 
-* [Migliora l&#39;esperienza utente con i pulsanti di spostamento nei layout del pannello](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): è ora possibile aggiungere pulsanti di spostamento ai layout del pannello, ad esempio Schede orizzontali, Schede verticali, Accordi o Procedura guidata. Questi pulsanti migliorano l’esperienza utente semplificando le transizioni tra i pannelli e concentrandosi sul pannello selezionato.
+* [Esperienza utente ottimizzata con pulsanti di navigazione nei layout dei pannelli](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): è ora possibile aggiungere pulsanti di navigazione ai layout dei pannelli, ad esempio Schede orizzontali, Schede verticali, Pannelli a soffietto o Procedura guidata. Questi pulsanti migliorano l’esperienza utente semplificando il passaggio da un pannello a un altro e concentrandosi sul pannello selezionato.
 
 <!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
 ### Nuove funzioni pre-release in AEM Forms {#forms-new-prerelease-features}
 
-* [Salvataggio automatico di una bozza per i Componenti core basati su Adaptive Forms](/help/forms/save-core-component-based-form-as-draft.md): gli utenti possono ora beneficiare di una funzione di salvataggio automatico che salva automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completarne la compilazione sullo stesso dispositivo o su un altro. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
+* [Salvataggio automatico di una bozza per componenti core basati su moduli adattivi](/help/forms/save-core-component-based-form-as-draft.md): una funzione di salvataggio automatico consente di salvare automaticamente come bozza un modulo parzialmente completato. L’utente potrà quindi completare in un secondo momento la compilazione del modulo, anche da un altro dispositivo. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
 
-* [Aggiornare facilmente gli ambiti di Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): è possibile modificare gli ambiti di una configurazione Adobe Sign direttamente dalla pagina Configurazioni AEM Cloud, rendendo più rapido e semplice l&#39;aggiornamento delle configurazioni esistenti.
+* [Aggiornamento facile degli ambiti di Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): è possibile modificare gli ambiti di una configurazione Adobe Sign direttamente dalla pagina Configurazioni AEM Cloud, per aggiornare le configurazioni esistenti in modo più rapido e semplice.
 
-* [Supporto di funzioni asincrone per Forms adattivo](/help/forms/using-async-funct-in-rule-editor.md): quando il modulo adattivo richiede operazioni asincrone, ad esempio l&#39;attesa di processi esterni o il recupero dei dati, è possibile implementare queste operazioni con funzioni personalizzate e configurarle nell&#39;editor di regole.
+* [Supporto di funzioni asincrone per moduli adattivi](/help/forms/using-async-funct-in-rule-editor.md): quando un modulo adattivo richiede operazioni asincrone, ad esempio l’attesa per processi esterni o il recupero di dati, è possibile implementare queste operazioni con funzioni personalizzate e configurarle nell’editor di regole.
 
 ### Funzionalità per Accesso anticipato ad AEM Forms {#forms-new-early-access-features}
 

@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 74%
+ht-degree: 93%
 
 ---
 
@@ -26,8 +26,8 @@ Con la versione di attivazione funzioni 2024.11.0 verrà fornito il set di funzi
 
 * CQ-4357471: aggiunta del supporto per la traduzione dei dizionari i18n in AEMaaCS.
 * FORMS-11646: impostazione delle variabili globalContext per le pagine rilevanti di AEM Forms.
-* FORMS-14833: AEM Forms ora può includere frammenti di moduli adattivi nel documento di record finale (DoR).
-* FORMS-14255: gli utenti possono ora beneficiare di una funzione di salvataggio automatico che consente di salvare automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completare la compilazione sullo stesso dispositivo o su un altro.
+* FORMS-14833 - AEM Forms ora consente di includere frammenti di moduli adattivi nel documento record (DoR) finale.
+* FORMS-14255 - Una funzione di salvataggio automatico consente di salvare automaticamente come bozza un modulo parzialmente completato. L’utente potrà quindi completare in un secondo momento la compilazione del modulo, anche da un altro dispositivo.
 * SITES-23591: Frammenti di contenuto - aggiornamento del frammento di contenuto per il supporto UUID.
 * SITES-25440: Frammenti di contenuto - API di ricerca CFM per mostrare lo stato di replica.
 * SITES-24369 - Frammenti di contenuto: Miglioramenti alla documentazione OpenAPI.
@@ -40,11 +40,11 @@ Con la versione di attivazione funzioni 2024.11.0 verrà fornito il set di funzi
 ### Problemi risolti {#fixed-issues-18598}
 
 * CQ-4358730: CQPagePreviewGenerator non riesce quando sono presenti più di 10 chiavi da tradurre.
-* CQ-4358028: la creazione di un progetto AEM non riesce quando un utente con il solo gruppo amministratori di progetto carica una nuova miniatura nella pagina di creazione del progetto.
+* CQ-4358028 - La creazione di un progetto AEM non riesce se utenti appartenenti solo al gruppo amministratori di progetto caricano una nuova miniatura nella pagina di creazione del progetto.
 * FORMS-14978: abilitazione del caricamento della pagina per un modulo basato su componente core per l’editor di temi.
-* FORMS-15682: il problema riguarda l’integrazione di AEM Forms e Dynamics FDM. Quando un utente invia un modulo, il documento di record (DOR) non viene inviato come allegato PDF al campo dell’entità specificato.
+* FORMS-15682 - Il problema riguarda l’integrazione di AEM Forms e Dynamics FDM. Quando si invia un modulo, il documento di record (DOR) non viene inviato come allegato PDF al campo dell’entità specificato.
 * FORMS-15799: nella pagina Adobe Sign GovCloud Signature il rendering è effettivamente visibile nell’iframe.
-* FORMS-16113: quando un utente, che è un amministratore dell’account Adobe Sign, tenta di accedere a un documento inviato da un altro utente (anche un amministratore), l’API del contratto GET può restituire un ID contratto diverso da quello generato inizialmente al momento della creazione del contratto.
+* FORMS-16113 - Se utenti con il ruolo di amministratore dell’account Adobe Sign tentano di accedere a un documento inviato da un’altra persona (anch’essa con ruolo di amministratore), l’API GET per l’accordo potrebbe restituire un ID di accordo diverso da quello generato inizialmente al momento della creazione dell’accordo in questione.
 * FORMS-16596 - Problema di accessibilità: i pulsanti disattivati non sono riconosciuti dall’assistente vocale.
 * GRANITE-53907: impossibile identificare l’utente del servizio come utente con privilegi avanzati del flusso di lavoro.
 * SKYOPS-90560: la versione più recente del modello Sling influisce sulle prestazioni dell’esportazione del modello Sling.
