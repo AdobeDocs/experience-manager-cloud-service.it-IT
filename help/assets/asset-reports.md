@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 9%
+source-wordcount: '991'
+ht-degree: 10%
 
 ---
 
 # Rapporti sulle risorse {#asset-reports}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | Versione | Collegamento articolo |
@@ -26,7 +26,7 @@ Il reporting delle risorse consente di valutare l&#39;utilità della distribuzio
 
 Utilizza le informazioni contenute nei rapporti per derivare le metriche di successo chiave con cui misurare il livello di adozione di [!DNL Assets] all&#39;interno della tua azienda e da parte dei clienti.
 
-Il framework di reporting [!DNL Assets] utilizza [!DNL Sling] processi per elaborare in modo asincrono le richieste di report in modo ordinato. È scalabile per archivi di grandi dimensioni. L’elaborazione asincrona dei rapporti aumenta l’efficienza e la velocità con cui vengono generati.
+Il framework di reporting [!DNL Assets] utilizza [!DNL Sling] processi in modo asincrono per elaborare le richieste di report in modo ordinato. È scalabile per archivi di grandi dimensioni. L’elaborazione asincrona dei rapporti aumenta l’efficienza e la velocità con cui vengono generati.
 
 L’interfaccia di gestione dei rapporti è intuitiva e include opzioni e controlli dettagliati per accedere ai rapporti archiviati e visualizzare gli stati di esecuzione dei rapporti (operazione riuscita, non riuscita e in coda).
 
@@ -37,7 +37,7 @@ Quando viene generato un report, viene inviata una notifica tramite <!-- through
 [!DNL Experience Manager Assets] genera i seguenti rapporti standard:
 
 * Carica
-* Scarica
+* Download
 * Scadenza
 * Modifiche
 * Pubblicazione
@@ -65,7 +65,7 @@ Gli amministratori di [!DNL Adobe Experience Manager] possono generare e persona
    ![Pagina Strumenti per passare al report risorse](assets/navigation.png)
 
 1. Nella pagina [!UICONTROL Rapporti risorse], fai clic su **[!UICONTROL Crea]** nella barra degli strumenti.
-1. Dalla pagina **[!UICONTROL Crea report]**, scegli il report che desideri creare e fai clic su **[!UICONTROL Avanti]**.
+1. Dalla pagina **[!UICONTROL Crea report]**, scegli il report che desideri creare e fai clic su **[!UICONTROL Avanti]**. Iscriviti a un **profilo di prodotto Amministratore AEM** per creare un report **Scarica**. Consulta [Assegnazione dei profili di prodotto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) per acquisire il diritto a un profilo di prodotto Amministratore AEM.
 
    ![Seleziona tipo di report](assets/choose_report.png)
 
@@ -103,12 +103,12 @@ Gli amministratori di [!DNL Adobe Experience Manager] possono generare e persona
 
    ![Selezionare o annullare la selezione delle colonne del report](assets/configure_columns.png)
 
-   Per visualizzare un nome di colonna o un percorso di proprietà personalizzato, configura le proprietà per il binario della risorsa nel nodo `jcr:content` in CRX. In alternativa, aggiungilo tramite il selettore del percorso delle proprietà.
+   Per visualizzare un nome di colonna o un percorso di proprietà personalizzato, configura le proprietà per il binario della risorsa nel nodo `jcr:content` in CRX. In alternativa, aggiungilo tramite un selettore del percorso della proprietà.
 
    ![Selezionare o annullare la selezione delle colonne del report](assets/custom_columns.png)
 
 1. Fai clic su **[!UICONTROL Crea]** nella barra degli strumenti. Un messaggio notifica che la generazione del rapporto è stata avviata.
-1. Nella pagina [!UICONTROL Report risorse], lo stato di generazione del report si basa sullo stato corrente del processo di report, ad esempio [!UICONTROL Operazione riuscita], [!UICONTROL Non riuscita], [!UICONTROL In coda] o [!UICONTROL Pianificato]. Lo stesso stato viene visualizzato nella casella in entrata delle notifiche.Per visualizzare la pagina del report, fare clic sul collegamento al report. In alternativa, selezionare il report e fare clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
+1. Nella pagina [!UICONTROL Report risorse], lo stato di generazione del report si basa sullo stato corrente del processo di report, ad esempio [!UICONTROL Operazione riuscita], [!UICONTROL Non riuscita], [!UICONTROL In coda] o [!UICONTROL Pianificato]. Lo stesso stato viene visualizzato nella casella in entrata delle notifiche. Per visualizzare la pagina del rapporto, fai clic sul collegamento al rapporto. In alternativa, selezionare il report e fare clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
 
    <!--![A generated report](assets/report_page.png)-->
    ![stato report generato](assets/report-status.JPG)
