@@ -4,9 +4,9 @@ description: Scopri come eseguire il servizio Universal Editor per lo sviluppo l
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
@@ -76,9 +76,17 @@ UES_PORT=8000
 UES_PRIVATE_KEY=./key.pem
 UES_CERT=./certificate.pem
 UES_TLS_REJECT_UNAUTHORIZED=false
+UES_CORS_PRIVATE_NETWORK=true
 ```
 
-Nel nostro esempio, questi sono i valori minimi richiesti per lo sviluppo locale. La tabella seguente descrive questi e altri valori aggiuntivi disponibili.
+Nel nostro esempio, questi sono i valori minimi richiesti per lo sviluppo locale.
+
+>[!NOTE]
+>
+>Se si esegue Chrome versione 130+, è necessario abilitare l&#39;invio di intestazioni CORS per [accesso alla rete privata](https://wicg.github.io/private-network-access/#private-network-request) utilizzando l&#39;opzione `UES_CORS_PRIVATE_NETWORK`.
+
+
+La tabella seguente descrive questi e altri valori aggiuntivi disponibili.
 
 | Valore | Facoltativo | Predefiniti | Descrizione |
 |---|---|---|---|
@@ -93,6 +101,7 @@ Nel nostro esempio, questi sono i valori minimi richiesti per lo sviluppo locale
 | `UES_SPLUNK_TOKEN` | Sì | Nessuno | Token Splunk |
 | `UES_SPLUNK_INDEX` | Sì | Nessuno | Indice in cui scrivere i registri |
 | `UES_SPLUNK_SOURCE` | Sì | `universal-editor-service` | Nome dell&#39;origine nei registri di splunk |
+| `UES_CORS_PRIVATE_NETWORK` | Sì | `false` | Abilita l&#39;invio di intestazioni CORS per consentire [una rete privata.](https://wicg.github.io/private-network-access/#private-network-request) richiesto per gli utenti di Chrome versione 130+ |
 
 >[!NOTE]
 >
