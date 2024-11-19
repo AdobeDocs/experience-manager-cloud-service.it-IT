@@ -4,10 +4,10 @@ description: Scopri come utilizzare i fogli di calcolo per gestire i dati tabula
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 69c8e54bde6c6047fdefbbbb1f166af690584f88
+source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 92%
+source-wordcount: '1284'
+ht-degree: 73%
 
 ---
 
@@ -44,7 +44,7 @@ Questo documento utilizza l’esempio dei reindirizzamenti per illustrare come c
 
 Per creare mappature utilizzando i fogli di calcolo nel progetto AEM con Edge Delivery Services, è necessario aver creato il sito utilizzando il relativo modello più recente.
 
-Per ulteriori informazioni, consulta il documento [Guida introduttiva per sviluppatori per l&#39;authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
+Per ulteriori informazioni, consulta il documento [Guida introduttiva per sviluppatori per l&#39;authoring di WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 ## Creazione di un foglio di calcolo {#spreadsheet}
 
@@ -80,6 +80,52 @@ In questo esempio verrà creato un foglio di calcolo per gestire i reindirizzame
    * Utilizza il tasto Tab per spostarti sulla cella successiva.
    * Se necessario, l’editor aggiunge nuove righe al foglio di calcolo.
    * Per eliminare o spostare una riga, utilizza l’icona **Elimina** alla fine di ogni riga e le maniglie di trascinamento all’inizio di ogni riga, rispettivamente.
+
+## Importazione dei dati del foglio di calcolo {#importing}
+
+Oltre a modificare i fogli di calcolo nell’Editor pagina AEM, puoi anche importare dati da un file CSV.
+
+1. Durante la modifica del foglio di calcolo in AEM, tocca o fai clic sul pulsante **Carica** in alto a sinistra dello schermo.
+1. Nell’elenco a discesa, seleziona la modalità di importazione dei dati.
+   * **Sostituisci il documento** per sostituire il contenuto dell&#39;intero foglio di calcolo con il contenuto del file CSV che verrà caricato.
+   * **Aggiungi al documento** per aggiungere i dati del file CSV che verranno caricati nel contenuto del foglio di calcolo esistente.
+1. Nella finestra di dialogo visualizzata, seleziona il file CSV, quindi tocca o fai clic su **Apri**.
+
+Viene visualizzata una finestra di dialogo durante l’elaborazione dell’importazione. Una volta completato, i dati nel file CSV vengono aggiunti o sostituiti al contenuto del foglio di calcolo. Se si verificano errori, ad esempio una mancata corrispondenza delle colonne, questi vengono segnalati in modo da poter correggere il file CSV.
+
+>[!NOTE]
+>
+>* Le intestazioni nel file CSV devono corrispondere esattamente alle colonne nel foglio di calcolo.
+>* L’importazione dell’intero file CSV non modifica le intestazioni di colonna, ma solo le righe di contenuto.
+>* Se devi aggiornare le colonne, devi farlo nell’Editor pagina AEM prima di eseguire l’importazione del file CSV.
+>* Un file CSV non può superare i 10 MB per l&#39;importazione.
+
+A seconda della selezione di `mode`, è possibile anche `create`, `replace` o `append` per i fogli di calcolo utilizzando un CSV e un comando cURL simile al seguente.
+
+```text
+curl --request POST \
+  --url http://<aem-instance>/bin/asynccommand \
+  --header 'content-type: multipart/form-data' \
+  --form file=@/path/to/your.csv \
+  --form spreadsheetPath=/content/<your-site>/<your-spreadsheet> \
+  --form 'spreadsheetTitle=Your Spreadsheet' \
+  --form cmd=spreadsheetImport \
+  --form operation=asyncSpreadsheetImport \
+  --form _charset_=utf-8 \
+  --form mode=append
+```
+
+La chiamata restituisce una pagina HTML con informazioni sull’ID del processo.
+
+```text
+Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
+```
+
+[È possibile utilizzare la console **Processi**](/help/operations/asynchronous-jobs.md) per visualizzare lo stato del processo o utilizzare l&#39;ID restituito per eseguire una query.
+
+```text
+https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1
+```
 
 ## Pubblicazione di un foglio di calcolo paths.json {#paths-json}
 
