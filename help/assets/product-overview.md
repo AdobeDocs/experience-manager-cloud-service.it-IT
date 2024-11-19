@@ -2,19 +2,25 @@
 title: Panoramica di Content Hub
 description: Scopri di più su Content Hub, i suoi principali vantaggi, come accedervi e come fornire un feedback sulle opzioni disponibili in Content Hub.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 6%
+source-wordcount: '704'
+ht-degree: 7%
 
 ---
 
 # Panoramica di Content Hub {#overview-content-hub}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |----|-----|
 
 ![Panoramica di Content Hub](assets/content-hub-overview.png)
+
+>[!AVAILABILITY]
+>
+>La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Content Hub PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 L’hub di contenuti è disponibile come parte di Experience Manager Assets as a Cloud Service per rendere accessibili i contenuti in linea con il marchio alle organizzazioni e ai loro partner commerciali. Si concentra sulla distribuzione delle risorse per l’attivazione su larga scala e la creazione di varianti di contenuti sul brand per una maggiore agilità di marketing.
 
@@ -62,7 +68,7 @@ Content Hub richiede un ambiente di authoring di produzione di Experience Manage
 
 Per consigliare miglioramenti relativi al prodotto, fai clic su **[!UICONTROL Feedback]** accanto al nome della tua organizzazione nella parte superiore dell&#39;interfaccia utente di Content Hub.
 
-Specifica un oggetto, una descrizione del consiglio e, se necessario, allega i file. Fai clic su **[!UICONTROL Invia]** per inviare il feedback all&#39;Adobe.
+Specifica un oggetto, una descrizione del consiglio e, se necessario, allega i file. Fai clic su **[!UICONTROL Invia]** per inviare il feedback ad Adobe.
 
 ![Feedback su Content Hub](assets/content-hub-feedback.png)
 

@@ -3,19 +3,25 @@ title: Proprietà risorsa in [!DNL the Content Hub]
 description: Scopri come visualizzare e gestire le proprietà delle risorse in [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 9%
+source-wordcount: '645'
+ht-degree: 11%
 
 ---
 
 # Gestire le proprietà delle risorse in Content Hub {#asset-properties}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Immagine banner metadati](assets/metadata-banner-image.png)
+
+>[!AVAILABILITY]
+>
+>La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Content Hub PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 [!DNL The Content Hub] consente di visualizzare informazioni sulla risorsa, che sono fondamentali per una distribuzione efficiente delle risorse. Si tratta della raccolta di tutti i dati disponibili per una risorsa.
 
@@ -108,7 +114,7 @@ Dopo aver caricato una risorsa, Content Hub ne deriva alcune proprietà che veng
 
 * **Tag avanzati:** [!DNL The Content Hub] utilizza i servizi di contenuti avanzati di Adobe Sensei per addestrare le risorse utilizzando l&#39;algoritmo di riconoscimento sulla struttura basata su tag. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Grazie ai tag avanzati è possibile velocizzare le attività relative ai contenuti dei progetti grazie alla possibilità di trovare rapidamente le risorse rilevanti. Gli smart tag sono un esempio di informazioni sulla risorsa non contenute nell’immagine. [!DNL The Content Hub] applica automaticamente i tag avanzati alle risorse per impostazione predefinita.
 
-* **Tag colore:** [I tag colore](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) consentono di riconoscere una risorsa utilizzando colori identificati automaticamente in una risorsa mediante le funzionalità di IA per l&#39;analisi dei colori di Adobe in Sensei.
+* **Tag colore:** [I tag colore](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) consentono di riconoscere una risorsa utilizzando colori identificati automaticamente in una risorsa mediante le funzionalità di IA per Sensei di Adobe.
 
 * Data di caricamento
 

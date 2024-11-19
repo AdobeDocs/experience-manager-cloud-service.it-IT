@@ -3,17 +3,23 @@ title: Integrare AEM Assets con le applicazioni a valle
 description: Integrare AEM Assets con le applicazioni a valle
 role: User
 exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 8%
 
 ---
 
 # Integrare AEM Assets con le applicazioni a valle {#integrate-dynamic-media-open-apis}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>La guida alle funzionalità di Dynamic Media con OpenAPI è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Dynamic Media con funzionalità OpenAPI PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Tutte le [risorse approvate](/help/assets/approve-assets.md) disponibili nell&#39;archivio Experience Manager Assets sono disponibili per la distribuzione alle applicazioni a valle.
 
@@ -27,6 +33,6 @@ Il selettore delle risorse Microsoft-Frontend di Adobe fornisce un&#39;interfacc
 
 >[!MORELIKETHIS]
 >
->* [Integrare Asset Selector con varie applicazioni](/help/assets/integrate-asset-selector.md)
->* [Proprietà selettore risorse](/help/assets/asset-selector-properties.md)
->* [Personalizzazione del selettore risorse](/help/assets/asset-selector-customization.md)
+* [Integrare Asset Selector con varie applicazioni](/help/assets/integrate-asset-selector.md)
+* [Proprietà selettore risorse](/help/assets/asset-selector-properties.md)
+* [Personalizzazione del selettore risorse](/help/assets/asset-selector-customization.md)

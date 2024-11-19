@@ -3,9 +3,9 @@ title: Scaricare risorse da Content Hub
 description: Scopri come scaricare le risorse dal portale Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '554'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 3%
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Scaricare le risorse](assets/download-asset-genstudio.jpeg)
+
+>[!AVAILABILITY]
+>
+>La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Content Hub PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub ti consente di scaricare e condividere le risorse. Queste risorse possono includere immagini, video o qualsiasi altro contenuto digitale. Content Hub migliora l’accessibilità e l’adattabilità per una distribuzione efficace delle risorse.
 
@@ -36,7 +42,7 @@ In alternativa, fai clic su ![scarica](/help/assets/assets/download-icon.svg) ne
 
      >[!NOTE]
      >
-     >La casella di controllo termini e condizioni viene visualizzata solo per le risorse concesse in licenza. Inoltre, nella finestra di dialogo Risorsa viene visualizzata un’anteprima dei termini e delle condizioni della licenza solo per le risorse con licenze approvate. [Approva la licenza della risorsa](/help/assets/approve-assets-content-hub.md) prima di effettuare il download per abilitare l&#39;anteprima delle condizioni di licenza nella finestra di dialogo della risorsa.
+     La casella di controllo termini e condizioni viene visualizzata solo per le risorse concesse in licenza. Inoltre, nella finestra di dialogo Risorsa viene visualizzata un’anteprima dei termini e delle condizioni della licenza solo per le risorse con licenze approvate. [Approva la licenza della risorsa](/help/assets/approve-assets-content-hub.md) prima di effettuare il download per abilitare l&#39;anteprima delle condizioni di licenza nella finestra di dialogo della risorsa.
 
    * Fai clic sulla **Casella di rappresentazione originale** per tornare alla rappresentazione della risorsa originale nel riquadro a sinistra.
 1. Accetta i termini e le condizioni di licenza (per la risorsa concessa in licenza) e fai clic su **Scarica** per scaricare la risorsa.
@@ -48,13 +54,13 @@ In alternativa, fai clic su ![scarica](/help/assets/assets/download-icon.svg) ne
 
    >[!NOTE]
    >
-   >[Abilita l&#39;opzione di download per le risorse scadute](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) per scaricarle. Possono essere scaricate solo le risorse scadute per le quali è stato abilitato il download.
+   [Abilita l&#39;opzione di download per le risorse scadute](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) per scaricarle. Possono essere scaricate solo le risorse scadute per le quali è stato abilitato il download.
 
    <a id="Download-asset-dialog-box"></a> **Finestra di dialogo Scarica risorse:** Questa finestra di dialogo visualizza l&#39;elenco delle licenze associate alle risorse selezionate nel riquadro a sinistra. Seleziona una licenza per visualizzarne in anteprima i termini e le condizioni (in formato pdf) nel riquadro centrale e l’anteprima delle risorse associate e il relativo conteggio nel riquadro a destra. Le licenze riviste sono evidenziate in blu chiaro.
 
    >[!NOTE]
    >
-   > La finestra di dialogo **Scarica risorsa** visualizza in anteprima i termini e le condizioni della licenza solo per le licenze approvate. [Approva le licenze delle risorse](/help/assets/approve-assets-content-hub.md) prima di scaricarle per visualizzare in anteprima le condizioni di licenza nella **finestra di dialogo Scarica risorsa**.
+   La finestra di dialogo **Scarica risorsa** visualizza in anteprima i termini e le condizioni della licenza solo per le licenze approvate. [Approva le licenze delle risorse](/help/assets/approve-assets-content-hub.md) prima di scaricarle per visualizzare in anteprima le condizioni di licenza nella **finestra di dialogo Scarica risorsa**.
 
 1. Fare clic su ![remove-icon](/help/assets/assets/remove-icon.svg) per rimuovere una licenza dalla finestra di dialogo di download.
 

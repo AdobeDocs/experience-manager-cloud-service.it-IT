@@ -1,33 +1,39 @@
 ---
-title: Dynamic Medie con funzionalità OpenAPI
-description: Scopri i concetti chiave, ad esempio perché utilizzare Dynamic Medie con funzionalità OpenAPI e come abilitarlo.
+title: Dynamic Media con funzionalità OpenAPI
+description: Scopri i concetti chiave, ad esempio perché utilizzare Dynamic Media con funzionalità OpenAPI e come abilitarlo.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 1%
+source-wordcount: '1109'
+ht-degree: 2%
 
 ---
 
-# Dynamic Medie con funzionalità OpenAPI {#new-dynaminc-media-apis-overview}
+# Dynamic Media con funzionalità OpenAPI {#new-dynaminc-media-apis-overview}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|-----|
+
+>[!AVAILABILITY]
+>
+>La guida alle funzionalità di Dynamic Media con OpenAPI è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Dynamic Media con funzionalità OpenAPI PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 In un mondo digitale in rapida evoluzione, è fondamentale sfruttare appieno il potenziale delle risorse digitali del tuo marchio per battere la concorrenza. Una soluzione DAM (Digital Assets Management) olistica facilita la governance delle risorse, promuove la coerenza del brand e accelera la distribuzione dei contenuti, garantendo al contempo l’integrità del brand e esperienze cliente eccezionali.
 
-Dynamic Medie con funzionalità OpenAPI pone DAM al centro di un ecosistema agile ed efficiente della catena di fornitura dei contenuti per garantire la governance e la distribuzione delle risorse.
+Dynamic Media con funzionalità OpenAPI pone DAM al centro di un ecosistema agile ed efficiente della catena di fornitura dei contenuti per garantire la governance e la distribuzione delle risorse.
 
-## Perché utilizzare Dynamic Medie con funzionalità OpenAPI? {#dynamic-media-open-api-features}
+## Perché utilizzare Dynamic Media con funzionalità OpenAPI? {#dynamic-media-open-api-features}
 
-Dynamic Medie con funzionalità OpenAPI offre i seguenti vantaggi chiave:
+Dynamic Media con funzionalità OpenAPI offre i seguenti vantaggi chiave:
 
-* **Integrazioni senza soluzione di continuità**: Dynamic Medie con funzionalità OpenAPI offre un set completo di API di ricerca e consegna. Consente agli sviluppatori di [integrare facilmente la distribuzione delle risorse con le applicazioni](/help/assets/integrate-dynamic-media-open-apis.md). Le applicazioni includono applicazioni Adobe e di terze parti. Fornisce un [interfaccia utente del selettore delle risorse di Microsoft Frontend](/help/assets/overview-asset-selector.md) per cercare e selezionare le risorse approvate. Il selettore può essere integrato facilmente con qualsiasi applicazione basata su framework JavaScript come React JS, Angular JS e Vanilla JS.
+* **Integrazioni senza soluzione di continuità**: Dynamic Media con funzionalità OpenAPI offre un set completo di API di ricerca e consegna. Consente agli sviluppatori di [integrare facilmente la distribuzione delle risorse con le applicazioni](/help/assets/integrate-dynamic-media-open-apis.md). Le applicazioni includono applicazioni di Adobe e di terze parti. Fornisce un [interfaccia utente del selettore delle risorse di Microsoft Frontend](/help/assets/overview-asset-selector.md) per cercare e selezionare le risorse approvate. Il selettore può essere integrato facilmente con qualsiasi applicazione basata su framework JavaScript come React JS, Angular JS e Vanilla JS.
 
 * **Gestione centralizzata delle risorse digitali**: DAM è l&#39;unica fonte di verità per tutte le risorse digitali. Le risorse digitali vengono gestite centralmente in AEM Assets e distribuite alle applicazioni di consumo mediante riferimento utilizzando gli URL di consegna, senza copiare i file binari delle risorse.
 
-* **Aggiornamenti in tempo reale**: qualsiasi modifica apportata alle risorse approvate in DAM, inclusi gli aggiornamenti della versione e le modifiche ai metadati, viene automaticamente riportata negli URL di consegna. Con un valore TTL (Time-to-Live) breve di 10 minuti configurato per Dynamic Medie con funzionalità OpenAPI tramite CDN, gli aggiornamenti diventano visibili in meno di 10 minuti su tutte le interfacce di authoring e pubblicazione.
+* **Aggiornamenti in tempo reale**: qualsiasi modifica apportata alle risorse approvate in DAM, inclusi gli aggiornamenti della versione e le modifiche ai metadati, viene automaticamente riportata negli URL di consegna. Con un valore TTL (Time-to-Live) breve di 10 minuti configurato per Dynamic Media con funzionalità OpenAPI tramite CDN, gli aggiornamenti diventano visibili in meno di 10 minuti su tutte le interfacce di authoring e pubblicazione.
 
 * **Coerenza marchio**: solo [risorse approvate dal marchio](/help/assets/approve-assets.md) sono esposte alle applicazioni a valle. [I Brand Manager e gli addetti al marketing mantengono uno stretto controllo sulle risorse del brand](/help/assets/restrict-assets-delivery.md). È disponibile per l’uso solo la versione approvata e più recente della risorsa, che garantisce la coerenza del brand su tutti i canali e le applicazioni.
 
@@ -35,47 +41,47 @@ Dynamic Medie con funzionalità OpenAPI offre i seguenti vantaggi chiave:
 
 * **Trasformazione dinamica delle risorse**: il nostro sistema consente la trasformazione immediata delle immagini utilizzando i parametri URL noti come modificatori di immagini. [Ad esempio, larghezza, altezza, rotazione, capovolgimento, qualità, ritaglio, formato e ritaglio avanzato](/help/assets/deliver-assets-apis.md). Le rappresentazioni trasformate vengono generate dinamicamente e distribuite senza problemi tramite la rete CDN.
 
-* **Consegna sicura delle risorse**: Dynamic Medie con funzionalità OpenAPI offre un meccanismo per controllare l&#39;accesso alle risorse digitali. È possibile specificare ruoli o gruppi di utenti come metadati per le risorse da proteggere e impostare un intervallo di tempo predefinito durante il quale [solo gli utenti autorizzati possono accedere a queste risorse](/help/assets/restrict-assets-delivery.md). Gli URL di consegna per le risorse protette non vengono risolti per gli utenti non autorizzati durante il periodo limitato.
+* **Consegna sicura delle risorse**: Dynamic Media con funzionalità OpenAPI offre un meccanismo per controllare l&#39;accesso alle risorse digitali. È possibile specificare ruoli o gruppi di utenti come metadati per le risorse da proteggere e impostare un intervallo di tempo predefinito durante il quale [solo gli utenti autorizzati possono accedere a queste risorse](/help/assets/restrict-assets-delivery.md). Gli URL di consegna per le risorse protette non vengono risolti per gli utenti non autorizzati durante il periodo limitato.
 
 * **Informazioni sui dati per prendere decisioni informate (in arrivo)**: oltre alla gestione e alla consegna delle risorse, acquisisce informazioni sulla consegna dei dati nelle consegne di risorse in CDN, consentendo ai Brand Manager di tenere traccia delle metriche di consegna tra i canali. Consente loro di prendere decisioni basate sui dati per ottimizzare continuamente la governance delle risorse e le strategie di distribuzione.
 
-![Diagramma del flusso di dati API aperto di Dynamic Medie](assets/dm-openapi-dfd.png)
+![Diagramma del flusso di dati API aperto di Dynamic Media](assets/dm-openapi-dfd.png)
 
-## Prerequisiti per accedere a Dynamic Medie con funzionalità OpenAPI {#prerequisites-dynaminc-media-open-apis}
+## Prerequisiti per accedere a Dynamic Media con funzionalità OpenAPI {#prerequisites-dynaminc-media-open-apis}
 
-Per accedere a Dynamic Medie con funzionalità OpenAPI, è necessario disporre di licenze per:
+Per accedere a Dynamic Media con funzionalità OpenAPI, è necessario disporre di licenze per:
 
 * AEM Assets as a Cloud Service
 
-* Dynamic Medie AEM
+* Dynamic Media AEM
 
-## Come abilitare Dynamic Medie con le funzionalità OpenAPI? {#enable-dynamic-media-open-apis}
+## Come abilitare Dynamic Media con le funzionalità OpenAPI? {#enable-dynamic-media-open-apis}
 
-Prima di inviare una richiesta per abilitare Dynamic Medie con funzionalità OpenAPI su AEM as a Cloud Service, accertati che non sia già abilitato.
+Prima di inviare una richiesta per abilitare Dynamic Media con funzionalità OpenAPI su AEM as a Cloud Service, accertati che non sia già abilitato.
 
-Una volta soddisfatti i [prerequisiti](#prerequisites-dynaminc-media-open-apis) e se Dynamic Medie con funzionalità OpenAPI è abilitato nell&#39;istanza AEM as a Cloud Service, è disponibile un URL di consegna per ogni risorsa approvata nell&#39;archivio. Per informazioni su come copiare l&#39;URL di consegna, consulta [Copiare l&#39;URL di consegna per le risorse approvate](approve-assets.md#copy-delivery-url-approved-assets) . L’Adobe consiglia di utilizzare questo metodo per verificare che Dynamic Medie con funzionalità OpenAPI sia abilitato su AEM as a Cloud Service prima di inviare un ticket di supporto per abilitarlo.
+Una volta soddisfatti i [prerequisiti](#prerequisites-dynaminc-media-open-apis) e se Dynamic Media con funzionalità OpenAPI è abilitato nell&#39;istanza AEM as a Cloud Service, è disponibile un URL di consegna per ogni risorsa approvata nell&#39;archivio. Per informazioni su come copiare l&#39;URL di consegna, consulta [Copiare l&#39;URL di consegna per le risorse approvate](approve-assets.md#copy-delivery-url-approved-assets) . Adobe consiglia di utilizzare questo metodo per verificare che Dynamic Media con funzionalità OpenAPI sia abilitato su AEM as a Cloud Service prima di inviare un ticket di supporto per abilitarlo.
 
-Per abilitare Dynamic Medie con funzionalità OpenAPI su AEM as a Cloud Service, invia un ticket di supporto di Adobe con i seguenti dettagli:
+Per abilitare Dynamic Media con funzionalità OpenAPI su AEM as a Cloud Service, invia un ticket di supporto Adobe con i seguenti dettagli:
 
 * Programma Cloud Service e ID ambiente
 
-* Dettagli del caso d’uso da risolvere con Dynamic Medie con l’integrazione delle funzionalità OpenAPI.
+* Dettagli del caso d’uso da risolvere con Dynamic Media con l’integrazione delle funzionalità OpenAPI.
 
-* Dettagli delle applicazioni a valle da integrare con Dynamic Medie con funzionalità OpenAPI.
+* Dettagli delle applicazioni a valle da integrare con Dynamic Media con funzionalità OpenAPI.
 
   >[!NOTE]
   >
-  > Per l’integrazione con un’applicazione non Adobe, fornisci i nomi di dominio per l’elenco consentiti in cui è ospitata l’applicazione.
+  Per l’integrazione con un’applicazione non Adobe, fornisci i nomi di dominio per indicare l’elenco consentiti in cui è ospitata l’applicazione.
 
 * Dettagli dei contatti chiave dei clienti coinvolti nel progetto di integrazione.
 
 * Elenco dei membri chiave del team dell’account di Adobe (e-mail).
 
-Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Medie con funzionalità OpenAPI nell’ambiente dei Cloud Service e condiviso i dettagli, come l’ID client IMS, per consentire all’utente di procedere con l’integrazione.
+Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzionalità OpenAPI nell’ambiente dei Cloud Service e condiviso i dettagli, come l’ID client IMS, per consentire all’utente di procedere con l’integrazione.
 
 >[!NOTE]
 >
->Escludi `/conf/global/settings/dam/assets-configurations/assetdelivery` da qualsiasi pacchetto di contenuti, per evitare la disattivazione di Dynamic Medie con funzionalità OpenAPI.
+Escludi `/conf/global/settings/dam/assets-configurations/assetdelivery` da qualsiasi pacchetto di contenuti, per evitare la disattivazione di Dynamic Media con funzionalità OpenAPI.
 
 ## Approfondisci le funzionalità chiave {#learn-more-key-capabilities}
 
@@ -182,15 +188,15 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Medie con funzion
 </td>
 <td>
    <a href="/help/assets/dynamic-media-open-apis-faqs.md">
-   <img alt="Domande frequenti su Dynamic Medie con funzionalità OpenAPI" src="./assets/dynamic-media-faqs.jpeg" />
+   <img alt="Domande frequenti su Dynamic Media con funzionalità OpenAPI" src="./assets/dynamic-media-faqs.jpeg" />
    </a>
    <div>
       <a href="/help/assets/dynamic-media-open-apis-faqs.md">
-      <strong>Domande frequenti su Dynamic Medie con funzionalità OpenAPI</strong>
+      <strong>Domande frequenti su Dynamic Media con funzionalità OpenAPI</strong>
       </a>
    </div>
    <p>
-      <em>Ottieni una risposta alle domande più frequenti su Dynamic Medie con funzionalità OpenAPI.</em>
+      <em>Ottieni una risposta alle domande più frequenti su Dynamic Media con funzionalità OpenAPI.</em>
    </p>
 </td>
 <td>

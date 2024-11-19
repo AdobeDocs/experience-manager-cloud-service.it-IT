@@ -2,9 +2,9 @@
 title: Approvare risorse per l’hub di contenuti
 description: Scopri come approvare le risorse in Assets as a Cloud Service per renderle disponibili in Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '774'
 ht-degree: 6%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 6%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Approva risorse per Content Hub](assets/content-hub-approve-assets.png)
+
+>[!AVAILABILITY]
+>
+>La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Content Hub PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 I Brand Manager e gli addetti al marketing mantengono un controllo rigoroso sulle risorse del brand. Solo la versione approvata e più recente della risorsa è disponibile per l’utilizzo in Content Hub, garantendo la coerenza del brand su tutti i canali e le applicazioni.
 
@@ -34,7 +40,7 @@ Le risorse contrassegnate come `approved` in Assets as a Cloud Service sono auto
 
 >[!NOTE]
 >
->Assets as a Cloud Service e Content Hub devono utilizzare la stessa organizzazione per le risorse da visualizzare in Content Hub.
+Assets as a Cloud Service e Content Hub devono utilizzare la stessa organizzazione per le risorse da visualizzare in Content Hub.
 
 Per impostare lo stato della risorsa come `approved` utilizzando la vista Assets in AEM as a Cloud Service:
 
@@ -89,7 +95,7 @@ Segui questi passaggi per automatizzare l&#39;approvazione per le risorse appena
 
 >[!NOTE]
 > 
->Questo approccio approva le nuove risorse create nella cartella. Per le risorse esistenti nella cartella, devi selezionarle e approvarle manualmente.
+Questo approccio approva le nuove risorse create nella cartella. Per le risorse esistenti nella cartella, devi selezionarle e approvarle manualmente.
 
 ## Gestire le risorse caricate tramite Content Hub {#manage-assets-uploaded-using-content-hub}
 

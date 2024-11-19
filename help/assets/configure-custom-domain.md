@@ -2,17 +2,23 @@
 title: Configurare un dominio personalizzato per il livello Publish
 description: Scopri come configurare un dominio personalizzato per il livello di pubblicazione in Adobe Cloud Manager.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 7%
+source-wordcount: '313'
+ht-degree: 11%
 
 ---
 
 # Configurare un dominio personalizzato per il livello di pubblicazione{#configure-custom-domain}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>La guida alle funzionalità di Dynamic Media con OpenAPI è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Dynamic Media con funzionalità OpenAPI PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 In Adobe Cloud Manager, puoi dare risalto al tuo sito web aggiungendo un dominio personalizzato. Se AEM as a Cloud Service viene fornito con un dominio predefinito, puoi personalizzarlo in base alle tue esigenze.
 
@@ -25,7 +31,7 @@ In Adobe Cloud Manager, puoi dare risalto al tuo sito web aggiungendo un dominio
 
 ## Configurare un dominio personalizzato per il livello di pubblicazione
 
-1. Vai a **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Panoramica del programma]** > **[!UICONTROL Certificati SSL]** e aggiungi il tuo certificato SSL.
+1. Adobe Vai a **[!UICONTROL Cloud Manager]** > **[!UICONTROL Panoramica del programma]** > **[!UICONTROL Certificati SSL]** e aggiungi il tuo certificato SSL.
    ![immagine](/help/assets/assets/ssl-certificate.png)
 Scopri come aggiungere il [certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) in Adobe Cloud Manager.
 
@@ -39,4 +45,4 @@ L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritar
 
 >[!NOTE]
 >
->Aggiungi il dominio personalizzato all’elenco degli URL di reindirizzamento consentiti. L’elenco si trova nel client IMS per il selettore risorse.<br>Coordinati con il rispettivo team di Adobi per eseguire questa attività fornendo la stringa di dominio personalizzata.
+Aggiungi il dominio personalizzato all’elenco degli URL di reindirizzamento consentiti. L’elenco si trova nel client IMS per il selettore risorse.<br>Coordinati con il rispettivo team di Adobe per eseguire questa attività fornendo la stringa di dominio personalizzata.

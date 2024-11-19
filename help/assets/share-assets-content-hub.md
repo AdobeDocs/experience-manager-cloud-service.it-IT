@@ -3,19 +3,25 @@ title: Condividi Assets in [!DNL the Content Hub]
 description: Condividi Assets in [!DNL the Content Hub]
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 3%
+source-wordcount: '500'
+ht-degree: 6%
 
 ---
 
 # Condividere risorse nell’hub di contenuti {#search-assets-as-a-link}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Condividi immagine banner risorse](assets/share-assets-banner.png)
+
+>[!AVAILABILITY]
+>
+>La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Content Hub PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 La condivisione delle risorse tramite un collegamento è un modo pratico per rendere le risorse disponibili agli utenti [!DNL the Content Hub]. Questa funzionalità consente agli utenti autorizzati di accedere e scaricare le risorse condivise con loro. Quando si scaricano risorse da un collegamento condiviso, [!DNL the Content Hub] utilizza un servizio asincrono che offre un download più rapido e ininterrotto.
 

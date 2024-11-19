@@ -3,9 +3,9 @@ title: Carica le risorse approvate dal tuo marchio in [!DNL Content Hub]
 description: Scopri come caricare le risorse approvate dal marchio in Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 54300b9f27f1092a491820ab5279ee1633c6d53d
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '986'
 ht-degree: 2%
 
 ---
@@ -19,6 +19,12 @@ ht-degree: 2%
 
 | [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Content Hub PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 [Gli utenti di Content Hub con i diritti per aggiungere risorse](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) possono aggiungere risorse a Content Hub dal file system locale o importare risorse da OneDrive o da origini dati di Dropbox. Tutte le risorse vengono visualizzate al livello superiore in Content Hub, indipendentemente dalla struttura di cartelle disponibile nel file system locale o nelle origini dati di OneDrive e di Dropbox, per migliorare le funzionalità di ricerca.
 
@@ -57,7 +63,7 @@ Per aggiungere risorse a Content Hub, effettua le seguenti operazioni:
 
 1. Definisci il nome per il caricamento utilizzando il campo **[!UICONTROL Nome campagna]**. Puoi usare un nome esistente o crearne uno nuovo. Il Content Hub offre più opzioni quando si digita il nome. <!--You can define multiple Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.-->
 
-   Come best practice, l’Adobe consiglia di specificare i valori negli altri campi e di migliorare l’esperienza di ricerca delle risorse caricate.
+   Come best practice, Adobe consiglia di specificare i valori negli altri campi e di migliorare l’esperienza di ricerca delle risorse caricate.
 
 1. Definisci allo stesso modo i valori per i campi **[!UICONTROL Parole chiave]**, **[!UICONTROL Canali]**, **[!UICONTROL Intervallo temporale]** e **[!UICONTROL Area]**. Assegnare tag e raggruppare le risorse per parole chiave, canali e posizione consente a tutti coloro che utilizzano il contenuto aziendale approvato di trovare tali risorse e mantenerle organizzate.
 

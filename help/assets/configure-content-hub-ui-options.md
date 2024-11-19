@@ -2,9 +2,9 @@
 title: Configurare l’interfaccia utente dell’hub di contenuti
 description: Configurare l’interfaccia utente dell’hub di contenuti
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1557'
 ht-degree: 15%
 
 ---
@@ -18,9 +18,16 @@ ht-degree: 15%
 >id="configure_content_hub"
 >title="Configurare l’interfaccia utente dell’hub di contenuti"
 >abstract="Experience Manager Assets consente agli amministratori di configurare le opzioni disponibili nell’interfaccia utente dell’hub di contenuti. In base alle opzioni di configurazione selezionate dagli amministratori, gli utenti dell’hub di contenuti possono visualizzare i campi su di esso. Le opzioni di configurazione includono metadati durante l’importazione di risorse, filtri, proprietà delle risorse, metadati durante la ricerca di risorse, branding personalizzato ed eventuali collegamenti personalizzati."
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/98bce651-721c-442e-98b8-c43e7708e44c_1698834577.854x480at800_h264.mp4" text="Guarda il video"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Configurare le risorse in Content Hub](assets/configure-assets.png)
+
+>[!AVAILABILITY]
+>
+>La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Content Hub PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Experience Manager Assets consente agli amministratori di configurare le opzioni disponibili nell’interfaccia utente dell’hub di contenuti. In base alle opzioni di configurazione selezionate dagli amministratori, gli utenti dell’hub di contenuti possono visualizzare i campi su di esso. Le opzioni di configurazione includono:
 
@@ -112,7 +119,7 @@ Content Hub consente agli amministratori di configurare i filtri da visualizzare
 
    >[!NOTE]
    >
-   >Il nuovo filtro viene visualizzato nella pagina di ricerca solo se nell’archivio è presente almeno una risorsa che soddisfa i criteri del filtro.
+   Il nuovo filtro viene visualizzato nella pagina di ricerca solo se nell’archivio è presente almeno una risorsa che soddisfa i criteri del filtro.
 
 Allo stesso modo, puoi fare clic sull&#39;![icona Modifica](assets/do-not-localize/edit_icon.svg), disponibile accanto a ciascun filtro disponibile, per modificare le etichette o fare clic sull&#39;icona Elimina per eliminare un filtro esistente. Fai clic su **[!UICONTROL Salva]** dopo aver apportato tutte le modifiche necessarie per applicarle.
 

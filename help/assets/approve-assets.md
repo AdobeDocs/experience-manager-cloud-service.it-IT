@@ -3,9 +3,9 @@ title: Approvare le risorse in Experience Manager
 description: Scopri come approvare le risorse in [!DNL Experience Manager].
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '747'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 4%
 
 | [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>La guida alle funzionalità di Dynamic Media con OpenAPI è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Dynamic Media con funzionalità OpenAPI PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 I Brand Manager e gli addetti al marketing mantengono un controllo rigoroso sulle risorse del brand. È disponibile per l’uso solo la versione approvata e più recente della risorsa, che garantisce la coerenza del brand su tutti i canali e le applicazioni.
 
@@ -36,7 +42,7 @@ Se devi visualizzare la proprietà a cui è mappato il campo **[!UICONTROL Stato
 
 >[!NOTE]
 >
->Se le risorse o le cartelle hanno uno schema predefinito diverso, assicurati di effettuare questo aggiornamento in quello specifico schema.
+Se le risorse o le cartelle hanno uno schema predefinito diverso, assicurati di effettuare questo aggiornamento in quello specifico schema.
 
 ## Approvare risorse {#approve-assets}
 
@@ -78,7 +84,7 @@ Semplifica il flusso di lavoro approvando rapidamente più risorse contemporanea
 
 >[!NOTE]
 > 
->Questo approccio approva le nuove risorse create nella cartella. Per le risorse esistenti nella cartella, devi selezionarle e approvarle manualmente. <br> In alternativa, è possibile utilizzare l&#39;opzione **[!UICONTROL Rielabora]** per applicare le modifiche dal profilo metadati alle risorse precedenti.
+Questo approccio approva le nuove risorse create nella cartella. Per le risorse esistenti nella cartella, devi selezionarle e approvarle manualmente. <br> In alternativa, è possibile utilizzare l&#39;opzione **[!UICONTROL Rielabora]** per applicare le modifiche dal profilo metadati alle risorse precedenti.
 
 Allo stesso modo, per approvare in blocco le risorse all’interno di una cartella nella vista Assets:
 
@@ -105,6 +111,6 @@ Per copiare l’URL di consegna di una risorsa approvata all’interno dell’ar
 
    >[!NOTE]
    >
-   >L’opzione per copiare l’URL di consegna per le risorse approvate è disponibile nella vista Assets.
+   L’opzione per copiare l’URL di consegna per le risorse approvate è disponibile nella vista Assets.
 
 Per informazioni sulle altre rappresentazioni visualizzate nel pannello Dynamic Media, consulta [Visualizzare e scaricare le rappresentazioni di Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).

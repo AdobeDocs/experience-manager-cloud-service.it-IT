@@ -3,20 +3,26 @@ title: Gestire le raccolte in Content Hub
 description: Scopri come gestire le raccolte in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 4%
+source-wordcount: '663'
+ht-degree: 6%
 
 ---
 
 # Gestisci raccolte in [!DNL Content Hub] {#manage-collections}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![Gestire le raccolte](assets/manage-collection.png)
+
+>[!AVAILABILITY]
+>
+>La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Content Hub PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Una raccolta fa riferimento a un insieme di risorse che possono essere condivise tra gli utenti. Una raccolta può includere risorse da posizioni diverse mantenendo al contempo la loro integrità referenziale.
 

@@ -1,23 +1,29 @@
 ---
-title: Limitare la distribuzione delle risorse con Dynamic Medie con funzionalità OpenAPI
+title: Limitare la distribuzione delle risorse con Dynamic Media con funzionalità OpenAPI
 description: Scopri come limitare la consegna delle risorse con le funzionalità OpenAPI.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1151'
 ht-degree: 2%
 
 ---
 
-# Limitare la distribuzione delle risorse con Dynamic Medie con funzionalità OpenAPI {#restrict-access-to-assets}
+# Limitare la distribuzione delle risorse con Dynamic Media con funzionalità OpenAPI {#restrict-access-to-assets}
 
 | [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-La governance centrale delle risorse in Experience Manager consente all’amministratore DAM o ai Brand Manager di gestire l’accesso alle risorse disponibili tramite Dynamic Medie con funzionalità OpenAPI. Adobe Possono limitare la consegna di risorse approvate (fino a una singola risorsa) a [utenti o gruppi Identity Management System (IMS) selezionati](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) configurando determinati metadati sulle risorse nel servizio AEM as a Cloud Service Author.
+>[!AVAILABILITY]
+>
+>La guida alle funzionalità di Dynamic Media con OpenAPI è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Dynamic Media con funzionalità OpenAPI PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-Una volta che una risorsa è limitata tramite Dynamic Medie con OpenAPI, solo gli utenti (onboarded su Adobe IMS) autorizzati ad accedere a tale risorsa possono accedervi. Per accedere alla risorsa, l&#39;utente deve sfruttare le funzionalità [Search](search-assets-api.md) e [Delivery](deliver-assets-apis.md) di Dynamic Medie con OpenAPI.
+La governance centrale delle risorse in Experience Manager consente all’amministratore DAM o ai Brand Manager di gestire l’accesso alle risorse disponibili tramite Dynamic Media con funzionalità OpenAPI. Adobe Possono limitare la consegna di risorse approvate (fino a una singola risorsa) all&#39;[utente o ai gruppi di Identity Management System (IMS) selezionati](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) configurando alcuni metadati sulle risorse nel servizio di authoring di AEM as a Cloud Service.
+
+Una volta che una risorsa è limitata tramite Dynamic Media con OpenAPI, solo gli utenti (onboarded su Adobe IMS) autorizzati ad accedere a tale risorsa possono accedervi. Per accedere alla risorsa, l&#39;utente deve sfruttare le funzionalità [Search](search-assets-api.md) e [Delivery](deliver-assets-apis.md) di Dynamic Media con OpenAPI.
 
 ![Accesso limitato alle risorse](/help/assets/assets/restricted-access.png)
 
@@ -34,7 +40,7 @@ In Experience Manager Assets, la consegna limitata tramite IMS prevede due fasi 
 
 >[!NOTE]
 >
-> Questa funzionalità non è attualmente self-service. Per limitare la consegna delle risorse per [Utenti](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) e [Gruppi](https://helpx.adobe.com/in/enterprise/using/user-groups.html) IMS, rivolgiti al team di supporto Enterprise per informazioni su come recuperare le informazioni necessarie per limitare l&#39;accesso dal portale [Adobe Admin Console](https://adminconsole.adobe.com/) e su come configurare l&#39;accesso nel servizio di authoring di AEM as a Cloud Service.
+Questa funzionalità non è attualmente self-service. Per limitare la consegna delle risorse per [Utenti](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) e [Gruppi](https://helpx.adobe.com/in/enterprise/using/user-groups.html) IMS, rivolgiti al team di supporto Enterprise per informazioni su come recuperare le informazioni necessarie per limitare l&#39;accesso dal portale [Adobe Admin Console](https://adminconsole.adobe.com/) e su come configurare l&#39;accesso nel servizio di authoring di AEM as a Cloud Service.
 
 ### Limita la consegna delle risorse utilizzando data e ora di attivazione e disattivazione {#restrict-delivery-assets-date-time}
 
@@ -82,9 +88,9 @@ Nei servizi di authoring di AEM Cloud Service e in Selettore risorse, il token B
 
 >[!NOTE]
 >
->Per ulteriori informazioni su come abilitare l’autenticazione IMS sulle integrazioni basate su Selettore risorse AEM, contatta il supporto Enterprise
+Per ulteriori informazioni su come abilitare l’autenticazione IMS sulle integrazioni basate su Selettore risorse AEM, contatta il supporto Enterprise
 
-1. Per esperienze non basate su Asset Selector, AEM as a Cloud Service e Dynamic Medie con funzionalità OpenAPI supportano attualmente integrazioni API lato server e possono generare token IMS Bearer.
+1. Per esperienze non basate su Asset Selector, AEM as a Cloud Service e Dynamic Media con funzionalità OpenAPI supportano attualmente integrazioni API lato server e possono generare token IMS Bearer.
    * Segui le istruzioni [qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) per eseguire integrazioni API da servizio a server in grado di recuperare i token Bearer IMS tramite [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
    * Per un periodo limitato, è possibile generare token Bearer IMS di breve durata per l&#39;utente autenticato in [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) per l&#39;accesso sviluppatore locale (non destinato ai casi di utilizzo in produzione) seguendo le istruzioni [qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
 
@@ -96,4 +102,4 @@ Nei servizi di authoring di AEM Cloud Service e in Selettore risorse, il token B
 
 ### Distribuzione per provider di identità personalizzati sul servizio Publish {#delivery-custom-identity-provider}
 
-AEM Sites, AEM Assets e Dynamic Medie con licenze OpenAPI possono essere utilizzati insieme, consentendo la distribuzione limitata di risorse da configurare sui siti web ospitati su AEM Publish o sul servizio di anteprima. Il flusso di consegna sicuro sfrutta i cookie del browser per stabilire l’accesso dell’utente e l’esistenza di un dominio personalizzato per il livello di consegna che sia un sottodominio del dominio di pubblicazione è un prerequisito per l’implementazione di questo caso d’uso. Se i servizi Publish e Anteprima di AEM Sites sono configurati per l&#39;utilizzo di un [provider di identità personalizzato (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), è necessario impostare un nuovo cookie denominato `delivery-token` che incapsula l&#39;appartenenza al gruppo dell&#39;utente durante l&#39;autenticazione dell&#39;utente del post di dominio di pubblicazione. Il livello di consegna estrae il materiale di autorizzazione dal cookie protetto e convalida l’accesso. Registra un [ticket di supporto Enterprise](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) per ulteriori dettagli.
+AEM Sites, AEM Assets e Dynamic Media con licenze OpenAPI possono essere utilizzati insieme, consentendo la distribuzione limitata di risorse da configurare sui siti web ospitati su AEM Publish o sul servizio di anteprima. Il flusso di consegna sicuro sfrutta i cookie del browser per stabilire l’accesso dell’utente e l’esistenza di un dominio personalizzato per il livello di consegna che sia un sottodominio del dominio di pubblicazione è un prerequisito per l’implementazione di questo caso d’uso. Se i servizi Publish e Anteprima di AEM Sites sono configurati per l&#39;utilizzo di un [provider di identità personalizzato (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), è necessario impostare un nuovo cookie denominato `delivery-token` che incapsula l&#39;appartenenza al gruppo dell&#39;utente durante l&#39;autenticazione dell&#39;utente del post di dominio di pubblicazione. Il livello di consegna estrae il materiale di autorizzazione dal cookie protetto e convalida l’accesso. Registra un [ticket di supporto Enterprise](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) per ulteriori dettagli.

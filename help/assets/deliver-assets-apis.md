@@ -3,17 +3,23 @@ title: API di consegna
 description: Scopri come utilizzare le API di consegna.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 1%
+source-wordcount: '589'
+ht-degree: 3%
 
 ---
 
 # API di consegna {#delivery-apis}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>La guida alle funzionalità di Dynamic Media con OpenAPI è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>
+>[!BADGE Guida di Dynamic Media con funzionalità OpenAPI PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Tutte le [risorse approvate](approve-assets.md) disponibili nell&#39;archivio Experience Manager Assets possono essere [cercate](search-assets-api.md) e quindi consegnate alle applicazioni downstream integrate utilizzando un URL di consegna.
 
@@ -27,9 +33,9 @@ La tabella seguente illustra l’utilizzo delle varie API di consegna disponibil
 
 | API di consegna | Descrizione |
 |---|---|
-| [Rappresentazione binaria ottimizzata per il web della risorsa nel formato di output richiesto](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Restituisce la rappresentazione binaria ottimizzata per il web della risorsa nel formato di output richiesto in base all’ID risorsa inviato nella richiesta. Inoltre, puoi definire vari modificatori di immagini, ad esempio larghezza, altezza, rotazione, capovolgimento, qualità, ritaglio, formato e [ritaglio avanzato](/help/assets/dynamic-media/image-profiles.md). Consulta [Dettagli API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) per i formati e i modificatori di immagini supportati.<br>L&#39;Adobe consiglia di utilizzare questa API per tutti i tipi di formato immagine. |
+| [Rappresentazione binaria ottimizzata per il web della risorsa nel formato di output richiesto](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Restituisce la rappresentazione binaria ottimizzata per il web della risorsa nel formato di output richiesto in base all’ID risorsa inviato nella richiesta. Inoltre, puoi definire vari modificatori di immagini, ad esempio larghezza, altezza, rotazione, capovolgimento, qualità, ritaglio, formato e [ritaglio avanzato](/help/assets/dynamic-media/image-profiles.md). Consulta [Dettagli API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) per i formati e i modificatori di immagini supportati.<br>Adobe consiglia di utilizzare questa API per tutti i tipi di formato immagine. |
 | [Rappresentazione binaria ottimizzata per il web della risorsa](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) | L’API di convenienza che applica i valori predefiniti alla rappresentazione binaria ottimizzata per il web della risorsa restituita nella risposta. I valori predefiniti includono un formato standard JPEG/WEBP, qualità => 65 e larghezza => 1024. |
-| [File binario caricato originale della risorsa](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | Restituisce i file binari caricati originariamente per la risorsa. L’Adobe consiglia di utilizzare questa API per i tipi di formato di documento e le immagini SVG. |
+| [File binario caricato originale della risorsa](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | Restituisce i file binari caricati originariamente per la risorsa. Adobe consiglia di utilizzare questa API per i tipi di formati di documento e le immagini SVG. |
 | [Rendering pregenerato della risorsa disponibile nell&#39;ambiente di authoring AEM Assets](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) | Restituisce il bitstream del rendering della risorsa disponibile nell’ambiente di authoring AEM Assets in base all’ID risorsa e al nome del rendering inviati nella richiesta. |
 | [Metadati risorsa](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | Restituisce le proprietà associate a una risorsa, ad esempio titolo, descrizione, CreateDate, ModifyDate e così via. |
 | [Contenitore lettore per la risorsa video](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Restituisce il contenitore del lettore per la risorsa video. Puoi incorporare il lettore in un elemento iframe HTML e riprodurre il video. |
