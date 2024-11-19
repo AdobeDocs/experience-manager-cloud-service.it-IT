@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
+source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 93%
+source-wordcount: '852'
+ht-degree: 92%
 
 ---
 
@@ -33,6 +33,7 @@ Con la versione di attivazione funzioni 2024.11.0 verrà fornito il set di funzi
 * SITES-24369 - Frammenti di contenuto: Miglioramenti alla documentazione OpenAPI.
 * SITES-25478 - Frammenti di contenuto: aggiunta del supporto di back-end di riferimenti a risorse esterne.
 * SITES-26119 - Frammenti di contenuto: aggiunta del supporto di riferimenti a risorse esterne nel tipo di riferimento.
+* SITES-24609: Frammenti di contenuto: migliorare la convalida durante l’eliminazione dei frammenti di contenuto.
 * SITES-21199 - Edge Delivery con editor universale: aggiunta del supporto per modelli creati da pagine.
 * SITES-20311 - Edge Delivery con editor universale: aggiunta del supporto per l’importazione di CSV nei fogli di calcolo.
 * SITES-24821 - Edge Delivery con editor universale : impostazione aem.page/aem.live come predefinita per l’integrazione con Edge Delivery.
