@@ -4,9 +4,9 @@ description: Scopri le linee guida e le best practice per l’utilizzo dello str
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
+source-git-commit: 943685ed9c33ba42c4dd1cb941b2eca1cce8bfe8
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1389'
 ht-degree: 14%
 
 ---
@@ -40,7 +40,7 @@ Le seguenti linee guida e best practice sono applicabili alla nuova versione del
 
 * Esegui [Pulizia revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=it) e [controlli di coerenza dell&#39;archivio dati](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) nell&#39;archivio **source** per identificare potenziali problemi e ridurre le dimensioni dell&#39;archivio.
 
-* Nella fase di acquisizione, l&#39;Adobe consiglia di eseguire l&#39;acquisizione utilizzando la modalità *Cancella* abilitata, in cui l&#39;archivio esistente (Author o Publish) nell&#39;ambiente di Cloud Service Adobe Experience Manager (AEM) di destinazione viene eliminato. Quindi, esegui l’aggiornamento con i dati del set di migrazione. Questa modalità è più veloce della modalità in cui la cancellazione è disattivata e il set di migrazione viene applicato al contenuto corrente.
+* Nella fase di acquisizione, Adobe consiglia di eseguire l&#39;acquisizione utilizzando la modalità *Cancella* abilitata, in cui l&#39;archivio esistente (Author o Publish) nell&#39;ambiente di Cloud Service Adobe Experience Manager (AEM) di destinazione viene eliminato. Quindi, esegui l’aggiornamento con i dati del set di migrazione. Questa modalità è più veloce della modalità in cui la cancellazione è disattivata e il set di migrazione viene applicato al contenuto corrente.
 
 * Al termine dell’attività di trasferimento dei contenuti, nell’ambiente Cloud Service è necessaria la giusta struttura di progetto per garantire il corretto rendering dei contenuti.
 
@@ -72,11 +72,9 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 
 * Se l&#39;impostazione **Cancella contenuto esistente nell&#39;istanza Cloud prima dell&#39;acquisizione** è abilitata, elimina l&#39;intero archivio esistente e crea un nuovo archivio in cui acquisire il contenuto. Ciò significa che vengono ripristinate tutte le impostazioni, comprese le autorizzazioni sull’istanza del Cloud Service di destinazione. È anche vero per un utente amministratore aggiunto al gruppo **amministratori**. L&#39;utente deve essere letto al gruppo **amministratori** per recuperare il token di accesso per lo strumento Content Transfer (Trasferimento contenuti).
 
-* Le acquisizioni non supportano l’unione di contenuti da più origini nell’istanza del Cloud Service target se il contenuto dalle due origini viene spostato negli stessi percorsi sulla destinazione. Per spostare il contenuto da più origini in un’unica istanza del Cloud Service target, assicurati che non vi siano sovrapposizioni dei percorsi del contenuto dalle origini.
-
 * La chiave di estrazione è valida per 14 giorni dal momento in cui è stata creata o rinnovata. Può essere rinnovato in qualsiasi momento. Se la chiave di estrazione è scaduta, non puoi eseguire un’estrazione.
 
-* Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferirlo dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione del contenuto in un ambiente Publish. Qualsiasi contenuto specificato nel set di migrazione viene acquisito nell’istanza di destinazione selezionata. Un utente può acquisire un set di migrazione in un’istanza Author, Publish o in entrambe. L’Adobe consiglia di installare CTT nell’istanza di authoring di origine per spostare il contenuto nell’istanza di authoring di destinazione durante lo spostamento del contenuto in un’istanza di produzione. Allo stesso modo, installa CTT sull’istanza Publish di origine per spostare il contenuto nell’istanza Publish di destinazione. Per ulteriori dettagli, vedere [Esecuzione dello strumento Content Transfer in un&#39;istanza di Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool).
+* Lo strumento Content Transfer (CTT) non esegue alcun tipo di analisi del contenuto prima di trasferirlo dall’istanza sorgente all’istanza di destinazione. Ad esempio, CTT non distingue tra contenuto pubblicato e non pubblicato durante l’acquisizione del contenuto in un ambiente Publish. Qualsiasi contenuto specificato nel set di migrazione viene acquisito nell’istanza di destinazione selezionata. Un utente può acquisire un set di migrazione in un’istanza Author, Publish o in entrambe. Adobe consiglia di installare CTT nell’istanza di authoring di origine per spostare il contenuto nell’istanza di authoring di destinazione durante lo spostamento del contenuto in un’istanza di produzione. Allo stesso modo, installa CTT sull’istanza Publish di origine per spostare il contenuto nell’istanza Publish di destinazione. Per ulteriori dettagli, vedere [Esecuzione dello strumento Content Transfer in un&#39;istanza di Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool).
 
 * I gruppi trasferiti dallo strumento Content Transfer (Trasferimento contenuti) sono solo quelli necessari in base al contenuto per soddisfare le autorizzazioni. Il processo _Estrazione_ copia l&#39;intero `/home/groups` nel set di migrazione. Per ulteriori informazioni, vedere [Migrazione gruppo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md). Il processo _Acquisizione_ copia tutti i gruppi a cui si fa riferimento negli ACL del contenuto migrato. Vedere [Migrazione di gruppi utenti chiusi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) per ulteriori considerazioni sui gruppi utilizzati in un criterio Gruppo utenti chiuso (CUG).
 
@@ -91,6 +89,8 @@ Segui le indicazioni riportate in questa sezione per comprendere le valutazioni 
 * Se desideri eseguire integrazioni, la struttura del contenuto esistente non deve cambiare dal momento in cui viene effettuata l’estrazione iniziale a quando viene eseguita l’estrazione integrativa. I top-up non possono essere eseguiti su contenuti la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questo passaggio durante il processo di migrazione.
 
 * Se si desidera includere le versioni come parte di un set di migrazione e si stanno eseguendo integrazioni con `wipe=false`, è necessario disabilitare la rimozione delle versioni a causa di una limitazione corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione delle versioni e stai eseguendo integrazioni in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
+
+* Lo strumento Content Transfer (CTT) non supporta le acquisizioni di unione. Per consolidare i contenuti di più sistemi in un&#39;unica istanza di Cloud Service, è possibile eseguire la migrazione solo delle versioni di un sistema di origine. Questo processo richiede l’utilizzo di migrazioni con il parametro wipe=false, che può causare tempi di acquisizione estesi a causa della natura incrementale dell’operazione. Se possibile, consolidare i contenuti in un unico sistema di origine prima di iniziare la migrazione per eliminare la necessità di unire i contenuti.
 
 * Un set di migrazione scade dopo un periodo prolungato di inattività, trascorso il quale i relativi dati non sono più disponibili. Rivedi [Scadenza set di migrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) per ulteriori dettagli.
 
