@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Edge Delivery Services
 role: User
 exl-id: 21745f53-a7ef-4eec-9170-b267c2f4314e
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 4%
@@ -35,7 +35,7 @@ Nell&#39;elenco seguente vengono illustrate le feature WIP e le soluzioni altern
 | [Copia lingua](/help/sites-cloud/administering/translation/overview.md) | Parzialmente disponibile | I componenti ereditano il contenuto, ma l’ereditarietà può essere ripristinata solo a livello di pagina | [Ereditarietà dei contenuti nell&#39;editor universale](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [Gestione multisito](/help/sites-cloud/administering/msm/overview.md) | Parzialmente disponibile | I componenti ereditano il contenuto, ma l’ereditarietà può essere ripristinata solo a livello di pagina | [Ereditarietà dei contenuti nell&#39;editor universale](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [Lanci](/help/sites-cloud/authoring/launches/overview.md) | Parzialmente disponibile | I componenti ereditano il contenuto, ma l’ereditarietà può essere ripristinata solo a livello di pagina | [Ereditarietà dei contenuti nell&#39;editor universale](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
-| [Modelli di pagina](/help/sites-cloud/authoring/page-editor/templates.md) | In arrivo! | Le pagine create da modelli sono copie indipendenti del modello originale. | [Utilizzo dei modelli di pagina con Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md) |
+| [Modelli di pagina](/help/sites-cloud/authoring/page-editor/templates.md) | Parzialmente disponibile | Le pagine create da modelli sono copie indipendenti del modello originale. | [Utilizzo dei modelli di pagina con Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md) |
 | [Hub di contesto e destinazione](/help/sites-cloud/authoring/personalization/overview.md) | Non disponibile |  |  |
 | [Timewarp](/help/sites-cloud/authoring/launches/preview.md) | Non disponibile |  |  |
 | [Contenuto associato](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser) | Non disponibile |  |  |
