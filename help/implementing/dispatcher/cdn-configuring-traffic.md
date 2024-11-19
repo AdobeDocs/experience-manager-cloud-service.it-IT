@@ -4,7 +4,7 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 198b3e29c3cd392db3ee42eeca22e3c8c414420f
+source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Configurazione del traffico sulla rete CDN {#cdn-configuring-cloud}
 
-AEM as a Cloud Service offre una raccolta di funzionalità configurabili a livello di [CDN gestita dall&#39;Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) che modificano la natura delle richieste in ingresso o delle risposte in uscita. Le seguenti regole, descritte in dettaglio in questa pagina, possono essere dichiarate per ottenere il seguente comportamento:
+AEM as a Cloud Service offre una raccolta di funzionalità configurabili a livello di [rete CDN gestita da Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) che modificano la natura delle richieste in arrivo o delle risposte in uscita. Le seguenti regole, descritte in dettaglio in questa pagina, possono essere dichiarate per ottenere il seguente comportamento:
 
 * [Trasformazioni richieste](#request-transformations) - Modifica gli aspetti delle richieste in arrivo, inclusi intestazioni, percorsi e parametri.
 * [Trasformazioni di risposta](#response-transformations) - Modifica le intestazioni che stanno per essere inviate al client (ad esempio, un browser Web).
@@ -295,7 +295,7 @@ Nella tabella seguente sono illustrate le azioni disponibili.
 
 ## Selettori di origine {#origin-selectors}
 
-Puoi sfruttare la rete CDN dell’AEM per indirizzare il traffico a diversi backend, incluse le applicazioni non basate su Adobi (ad esempio in base al percorso o al sottodominio).
+Puoi sfruttare la rete CDN dell’AEM per indirizzare il traffico a diversi backend, incluse le applicazioni non Adobe (ad esempio in base al percorso o al sottodominio).
 
 Esempio di configurazione:
 
@@ -369,7 +369,7 @@ data:
             - reqProperty: domain
               equals: <Production Host>
             - reqProperty: path
-              matches: "^^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
+              matches: "^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
         action:
           type: selectOrigin
           originName: aem-live
@@ -379,7 +379,7 @@ data:
 ```
 
 >[!NOTE]
-> Poiché viene utilizzata la rete CDN gestita dell&#39;Adobe, assicurati di configurare l&#39;annullamento della validità push in modalità **gestita**, seguendo la [documentazione dell&#39;annullamento della validità push dei Edge Delivery Services](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+> Poiché viene utilizzata la rete CDN gestita di Adobe, assicurati di configurare l&#39;annullamento della validità push in modalità **gestita**, seguendo la [documentazione sull&#39;annullamento della validità push dei Edge Delivery Services](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
 ## Reindirizzamenti lato client {#client-side-redirectors}
@@ -431,7 +431,7 @@ experimental_redirects:
           reqProperty: clientCountry
           transform:
             - op: replace
-              match: '^(/.*)$'
+              match: '^(.*)$'
               replacement: 'https://www.example.com/\1/home'
             - op: tolower
     - name: www-redirect
@@ -442,6 +442,6 @@ experimental_redirects:
           reqProperty: path
           transform:
             - op: replace
-              match: '^(/.*)$'
+              match: '^/(.*)$'
               replacement: 'https://www.example.com/\1'
 ```

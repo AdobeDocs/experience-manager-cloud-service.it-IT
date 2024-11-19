@@ -1,19 +1,19 @@
 ---
 title: Eliminazione della cache CDN
-description: Scopri come rimuovere gli oggetti memorizzati in cache dalla cache CDN Adobe configurando il token API di eliminazione che può quindi essere utilizzato nelle chiamate API.
+description: Scopri come rimuovere gli oggetti memorizzati in cache dalla cache Adobe CDN configurando il token API di eliminazione che può quindi essere utilizzato nelle chiamate API.
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
+source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '469'
 ht-degree: 1%
 
 ---
 
 # Eliminazione della cache CDN {#cdn-purge-cache}
 
-La rimozione rimuove un oggetto dalla cache CDN di Adobe, determinando richieste future che procedono all’origine come mancanti nella cache, anziché essere servite dalla cache.
+La rimozione rimuove un oggetto dalla cache di Adobe CDN, determinando richieste future che procedono all’origine come mancanti nella cache, anziché essere servite dalla cache.
 AEM as a Cloud Service consente di configurare un token API di rimozione, che può quindi essere utilizzato nelle chiamate API di rimozione. Leggi [Configurazione delle credenziali CDN e dell&#39;autenticazione](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) per scoprire come configurare questo token utilizzando le direttive di autenticazione della pipeline di configurazione di Cloud Manager.
 
 Sono supportate tre varianti di eliminazione:
@@ -74,6 +74,19 @@ curl
 ```
 
 Tenere presente che l&#39;intestazione `X-AEM-Purge` deve includere il valore &#39;all&#39;.
+
+## Interazione con CDN gestito dal cliente
+
+Nel caso di una [rete CDN gestita dal cliente](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) è necessario specificare anche `X-Forwarded-Host` e `X-AEM-Edge-Key`:
+
+```
+curl
+-X PURGE "https://publish-p1234-e5467.adobeaemcloud.com/resource-path" \
+-H 'X-AEM-Purge-Key: <my_purge_key>' \
+-H 'X-AEM-Edge-Key: <my_edge_key>' \
+-H 'X-Forwarded-Host: <my_forwarded_domain>'
+```
+
 
 ## Interazioni con il livello Apache/Dispatcher {#apache-layer}
 
