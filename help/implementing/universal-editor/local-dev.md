@@ -4,7 +4,7 @@ description: Scopri come eseguire il servizio Universal Editor per lo sviluppo l
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
+source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 2%
@@ -154,7 +154,7 @@ Una volta impostato, ogni chiamata di aggiornamento del contenuto dovrebbe passa
 
 Con il servizio [Universal Editor Service in esecuzione localmente](#running-ue) e la [pagina di contenuto dotata di strumenti per l&#39;utilizzo del servizio locale](#using-loca-ue), ora è possibile avviare l&#39;editor.
 
-1. Apri il browser per `https://localhost:8000/corslib/LATEST`.
+1. Apri il browser per `https://localhost:8000/ping`.
 1. Indirizza il browser per accettare [il certificato autofirmato.](#ue-https)
 1. Una volta che il certificato autofirmato è attendibile, è possibile modificare la pagina utilizzando il servizio Universal Editor locale.
 
