@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 18598 {#18598}
 
-Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 18598, rilasciata pubblicamente il giovedì 13 novembre 2024. La versione di manutenzione precedente era la 18311. La versione 18459 è stata resa privata a causa di un problema.
+Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 18598, rilasciata pubblicamente il 13 novembre 2024. La versione di manutenzione precedente era la 18311. La versione 18459 è stata resa privata a causa di un problema.
 
 Con la versione di attivazione funzioni 2024.11.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -41,14 +41,14 @@ Con la versione di attivazione funzioni 2024.11.0 verrà fornito il set di funzi
 ### Problemi risolti {#fixed-issues-18598}
 
 * CQ-4358730: CQPagePreviewGenerator non riesce quando sono presenti più di 10 chiavi da tradurre.
-* CQ-4358028 - La creazione di un progetto AEM non riesce se utenti appartenenti solo al gruppo amministratori di progetto caricano una nuova miniatura nella pagina di creazione del progetto.
+* CQ-4358028: la creazione di un progetto AEM non riesce se utenti appartenenti solo al gruppo amministratori di progetto caricano una nuova miniatura nella pagina di creazione del progetto.
 * FORMS-14978: abilitazione del caricamento della pagina per un modulo basato su componente core per l’editor di temi.
 * FORMS-15682 - Il problema riguarda l’integrazione di AEM Forms e Dynamics FDM. Quando si invia un modulo, il documento di record (DOR) non viene inviato come allegato PDF al campo dell’entità specificato.
-* FORMS-15799: nella pagina Adobe Sign GovCloud Signature il rendering è effettivamente visibile nell’iframe.
-* FORMS-16113 - Se utenti con il ruolo di amministratore dell’account Adobe Sign tentano di accedere a un documento inviato da un’altra persona (anch’essa con ruolo di amministratore), l’API GET per l’accordo potrebbe restituire un ID di accordo diverso da quello generato inizialmente al momento della creazione dell’accordo in questione.
-* FORMS-16596 - Problema di accessibilità: i pulsanti disattivati non sono riconosciuti dall’assistente vocale.
+* FORMS-15799: la pagina Firma di Adobe Sign GovCloud non esegue il rendering in iFrame.
+* FORMS-16113: se utenti con il ruolo di amministratore dell’account Adobe Sign tentano di accedere a un documento inviato da un’altra persona (anch’essa con ruolo di amministratore), l’API GET per l’accordo potrebbe restituire un ID di accordo diverso da quello generato inizialmente al momento della creazione dell’accordo in questione.
+* FORMS-16596 - Poblema di accessibilità: i pulsanti disattivati non sono riconosciuti dall’assistente vocale.
 * GRANITE-53907: impossibile identificare l’utente del servizio come utente con privilegi avanzati del flusso di lavoro.
-* SKYOPS-90560: la versione più recente del modello Sling influisce sulle prestazioni dell’esportazione del modello Sling.
+* SKYOPS-90560: la versione più recente del modello Sling influisce sulle prestazioni della relativa esportazione.
 * SITES-10575: MSM: Blueprint Bloomfilter Loader tenta di caricare più di 100.000 righe.
 * SITES-20755 - Frammenti di contenuto: il riferimento della risorsa con aggiornamento UUID non mostra la miniatura.
 * SITES-26253 - Frammenti di contenuto - Migrazione UUID: modifica dell’argomento del processo sling per essere generico.
@@ -69,7 +69,7 @@ Con la versione di attivazione funzioni 2024.11.0 verrà fornito il set di funzi
 * SITES-25938 - Lanci: eliminazione imprevista dopo un progetto di traduzione.
 * SITES-25393 - Edge Delivery con editor universale: nodi di testo persi durante il rendering del testo RTF formattato con un singolo paragrafo.
 * SITES-24643 - Edge Delivery con editor universale: gli attributi di metadati OpenGraph e Twitter non funzionano nel modello di metadati della pagina.
-* SITES-25401: Frammenti esperienza: aggiornamento di riferimento XF lento.
+* SITES-25401 - Frammenti di esperienza: aggiornamento di riferimento XF lento.
 
 ### Problemi noti {#known-issues-18598}
 
