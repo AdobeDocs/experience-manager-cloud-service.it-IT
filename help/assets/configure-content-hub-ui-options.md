@@ -2,7 +2,7 @@
 title: Configurare l’interfaccia utente dell’hub di contenuti
 description: Configurare l’interfaccia utente dell’hub di contenuti
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
 workflow-type: tm+mt
 source-wordcount: '1557'
 ht-degree: 15%
@@ -18,7 +18,7 @@ ht-degree: 15%
 >id="configure_content_hub"
 >title="Configurare l’interfaccia utente dell’hub di contenuti"
 >abstract="Experience Manager Assets consente agli amministratori di configurare le opzioni disponibili nell’interfaccia utente dell’hub di contenuti. In base alle opzioni di configurazione selezionate dagli amministratori, gli utenti dell’hub di contenuti possono visualizzare i campi su di esso. Le opzioni di configurazione includono metadati durante l’importazione di risorse, filtri, proprietà delle risorse, metadati durante la ricerca di risorse, branding personalizzato ed eventuali collegamenti personalizzati."
->additional-url="https://images-tv.adobe.com/mpcv3/4477/98bce651-721c-442e-98b8-c43e7708e44c_1698834577.854x480at800_h264.mp4" text="Guarda il video"
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/74a81d1c-0cfe-41f4-8a06-18ff70604e45_1732023385.854x480at800_h264.mp4" text="Guarda il video"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Configurare le risorse in Content Hub](assets/configure-assets.png)
