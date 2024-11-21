@@ -4,10 +4,10 @@ description: Note sulla versione specifiche per le funzioni obsolete e rimosse i
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: de73e38580895e3d8fe2029b59907d4c722556db
+source-git-commit: 644228b1bdae20c1ed6ca1de71b4c60d75f2cc4a
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 96%
+source-wordcount: '2603'
+ht-degree: 97%
 
 ---
 
@@ -42,9 +42,11 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
 | [!DNL Assets] | Carica risorse direttamente in [!DNL Experience Manager]. Consulta [API di caricamento risorse obsolete](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilizza il [caricamento binario diretto](/help/assets/add-assets.md). Per informazioni di carattere tecnico, consulta l’articolo sulle [API di caricamento diretto](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Alcuni passaggi](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) del flusso di lavoro `DAM Asset Update` non sono supportati, inclusa la chiamata di strumenti della riga di comando come [!DNL ImageMagick]. | [I microservizi per le risorse](/help/assets/asset-microservices-overview.md) sostituiscono numerosi flussi di lavoro. Per l’elaborazione personalizzata, utilizza i [flussi di lavoro di post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | Transcodifica FFmpeg dei video. | Per generare le miniature FFmpeg, utilizza i [microservizi per le risorse](/help/assets/asset-microservices-overview.md). Per la transcodifica FFmpeg, utilizza [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | Interfaccia utente di replica ad albero nella scheda “Distribuisci” dell’agente di replica (rimozione dopo il 30 settembre 2021) | [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o approcci al [flusso di lavoro della struttura dei contenuti di pubblicazione](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Né la scheda Distribuzione nella schermata di amministrazione dell’agente di replica né l’API di replica possono essere utilizzate per replicare pacchetti di contenuti superiori a 10 MB. È invece possibile utilizzare [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o il [flusso di lavoro della struttura dei contenuti di pubblicazione](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Interfaccia utente di replica ad albero nella scheda “Distribuisci” dell’agente di replica (rimozione dopo il 30 settembre 2021) | [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Avvicinamenti al passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation). |
+| [!DNL Foundation] | Né la scheda Distribuisci nella schermata di amministrazione dell’agente di replica né l’API di replica possono essere utilizzate per replicare pacchetti di contenuti superiori a 10 MB. | [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Le integrazioni che utilizzano credenziali generate dai progetti di Adobe Developer Console perderanno gradualmente il supporto per le credenziali dell’account servizio (JWT). Non sarà possibile creare nuove credenziali dell’account servizio (JWT) in Adobe Developer Console a partire dal 1° maggio 2024, anche se le credenziali dell’account servizio (JWT) esistenti possono ancora essere utilizzate per le integrazioni già configurate fino al 1° gennaio 2025, momento in cui le credenziali dell’account servizio (JWT) esistenti non funzioneranno più e i clienti dovranno effettuare la migrazione alle credenziali da server a server OAuth. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migra](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) alle credenziali da server a server OAuth. |
+| [!DNL Foundation] | Flusso di lavoro Struttura contenuto di Publish e il relativo passaggio Flusso di lavoro Struttura contenuto di Publish, utilizzato per le repliche delle gerarchie di contenuto. | Utilizza [il passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation), che offre prestazioni migliori. |
+
 
 ## Funzioni rimosse {#removed-features}
 
@@ -180,7 +182,7 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
-    <td>Questa API è obsoleta poiché Apache Abdera è un progetto ritirato dal 2017.</td>
+    <td>Questa API è obsoleta poiché Apache Abdera è un progetto ritirato nel 2017.</td>
     <td>08/04/2019</td>
     <td>29/09/2021</td>
   </tr>
@@ -501,14 +503,14 @@ Ulteriori informazioni sulla configurazione OSGI sono disponibili in [questa pos
 
 ## Aggiornamento Java Runtime alla versione 21 {#java-runtime-update-21}
 
-AEM as a Cloud Service passerà a Java 21 Runtime. Al fine di garantire la compatibilità, è essenziale apportare le seguenti modifiche:
+AEM as a Cloud Service passerà alla versione Java Runtime 21. Al fine di garantire la compatibilità, è essenziale apportare le seguenti modifiche:
 
 ### Versione minima di org.objectweb.asm {#org.objectweb.asm}
 
-Aggiorna l’utilizzo di org.objectweb.asm alla versione 9.5 o successiva per garantire il supporto dei runtime JVM più recenti.
+Aggiorna l’utilizzo di org.objectweb.asm alla versione 9.5 o successiva per garantire il supporto dei JVM runtime più recenti.
 
 ### Versione minima di org.apache.groovy {#org.apache.groovy}
 
-Aggiorna l’utilizzo di org.apache.groovy alla versione 4.0.22 o successiva per garantire il supporto per i runtime JVM più recenti.
+Aggiorna l’utilizzo di org.apache.groovy alla versione 4.0.22 o successiva per garantire il supporto per i JVM runtime più recenti.
 
-Questo bundle può essere incluso indirettamente aggiungendo dipendenze di terze parti come la Console di Groovy dell’AEM.
+Questo bundle può essere incluso indirettamente aggiungendo dipendenze di terze parti come Groovy Console di AEM.

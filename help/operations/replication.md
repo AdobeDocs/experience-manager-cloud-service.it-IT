@@ -4,10 +4,10 @@ description: Scopri la distribuzione e la risoluzione dei problemi di replica in
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 60006b0e0b5215263b53cbb7fec840c47fcef1a8
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 38%
+source-wordcount: '1701'
+ht-degree: 31%
 
 ---
 
@@ -23,11 +23,10 @@ Adobe Experience Manager as a Cloud Service utilizza la funzionalità [Distribuz
 
 >[!NOTE]
 >
->Se sei interessato alla pubblicazione in blocco di contenuti, utilizza il [Flusso di lavoro struttura contenuto Publish](#publish-content-tree-workflow).
->Questo passaggio di flusso di lavoro è stato creato appositamente per il Cloud Service e può gestire in modo efficiente payload di grandi dimensioni.
+>Se ti interessa pubblicare contenuti in blocco, crea un flusso di lavoro utilizzando il [Passaggio del flusso di lavoro di attivazione struttura](#tree-activation), che può gestire in modo efficiente payload di grandi dimensioni.
 >Si sconsiglia di creare un codice personalizzato per la pubblicazione in blocco.
->Se devi personalizzare per qualsiasi motivo, puoi attivare questo passaggio di flusso di lavoro/flusso di lavoro utilizzando le API di flusso di lavoro esistenti.
->È sempre buona prassi pubblicare solo i contenuti che devono essere pubblicati. Inoltre, fai attenzione a non cercare di pubblicare un gran numero di contenuti, se non è necessario. Tuttavia, non vi sono limiti alla quantità di contenuto che è possibile inviare tramite il flusso di lavoro Struttura contenuto di Publish.
+>Se devi personalizzare per qualsiasi motivo, puoi attivare un flusso di lavoro con questo passaggio utilizzando API di flusso di lavoro esistenti.
+>È sempre buona prassi pubblicare solo i contenuti che devono essere pubblicati. E fai attenzione a non pubblicare un gran numero di contenuti, se non è necessario. Tuttavia, non vi sono limiti alla quantità di contenuto che è possibile inviare tramite flussi di lavoro con il passaggio Flusso di lavoro di attivazione struttura.
 
 ### Annullamento/pubblicazione rapida - Annullamento/pubblicazione pianificata {#publish-unpublish}
 
@@ -51,7 +50,84 @@ L’inclusione degli elementi secondari di una cartella per l’opzione &quot;Pu
 
 Puoi trovare informazioni più dettagliate su Gestisci pubblicazione nella sezione [Documentazione di base sulla pubblicazione](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
+### Passaggio del flusso di lavoro di attivazione struttura {#tree-activation}
+
+Il passaggio del flusso di lavoro Attivazione albero ha lo scopo di replicare in modo performante una gerarchia profonda di nodi di contenuto. Si interrompe automaticamente quando la coda diventa troppo grande per consentire ad altre repliche di procedere in parallelo con latenza minima.
+
+Creare un modello di flusso di lavoro che utilizza il passaggio del processo `TreeActivation`:
+
+1. Dalla home page di AEM as a Cloud Service, vai a **Strumenti - Flusso di lavoro - Modelli**.
+1. Nella pagina Modelli di flusso di lavoro, premi **Crea** nell&#39;angolo superiore destro dello schermo.
+1. Aggiungi un titolo e un nome al modello. Per ulteriori informazioni, vedere [Creazione di modelli di flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it).
+1. Selezionare il modello creato dall&#39;elenco e premere **Modifica**
+1. Nella finestra seguente, eliminare il passo visualizzato per impostazione predefinita
+1. Trascinate il passo del processo nel flusso del modello corrente:
+
+   ![Passaggio processo](/help/operations/assets/processstep.png)
+
+1. Selezionare il passaggio Processo nel flusso e selezionare **Configura** premendo l&#39;icona chiave inglese.
+1. Seleziona la scheda **Processo** e seleziona `Publish Content Tree` dall&#39;elenco a discesa, quindi seleziona la casella di controllo **Avanzamento gestore**
+
+   ![Attivazione struttura](/help/operations/assets/new-treeactivationstep.png)
+
+1. Imposta eventuali parametri aggiuntivi nel campo **Argomenti**. Più argomenti separati da virgole possono essere uniti tra loro. Esempio:
+
+   `enableVersion=false,agentId=publish,chunkSize=50,maxTreeSize=500000,dryRun=false,filters=onlyModified,maxQueueSize=10`
+
+   >[!NOTE]
+   >
+   >Per l’elenco dei parametri, consulta la sezione **Parametri** di seguito.
+
+1. Premi **Fine** per salvare il modello di flusso di lavoro.
+
+**Parametri**
+
+| Nome | impostazione predefinita | descrizione |
+| -------------- | ------- | --------------------------------------------------------------- |
+| percorso |         | percorso principale da cui iniziare |
+| agentId | pubblicazione | Nome dell’agente di replica da utilizzare |
+| chunkSize | 50 | Numero di percorsi da raggruppare in una singola replica |
+| maxTreeSize | 500000 | Numero massimo di nodi per una struttura da considerare di piccole dimensioni |
+| maxQueueSize | 10 | Numero massimo di elementi nella coda di replica |
+| enableVersion | false | Abilita controllo delle versioni |
+| dryRun | false | Se è impostato su true, la replica non viene chiamata |
+| userId |         | solo per il lavoro. Nel flusso di lavoro viene utilizzato l’utente che chiama il flusso di lavoro |
+| filtri |         | Elenco dei nomi dei filtri dei nodi. Vedi il filtro supportato di seguito |
+
+**Filtri di supporto**
+
+| Nome | descrizione |
+| ------------- | ------------------------------------------- |
+| onlyModified | Nodi modificati dall&#39;ultima pubblicazione |
+| onlyPublished | Nodi pubblicati in precedenza |
+
+
+**Supporto per la ripresa in seguito a interruzioni**
+
+Il flusso di lavoro elabora il contenuto in blocchi, ciascuno dei quali rappresenta un sottoinsieme del contenuto completo da pubblicare.  Se il flusso di lavoro viene interrotto dal sistema, continuerà da dove è stato interrotto.
+
+**Monitoraggio dell&#39;avanzamento del flusso di lavoro**
+
+1. Dalla home page di AEM as a Cloud Service, vai a **Strumenti - Generale - Processi**.
+1. Osserva la riga corrispondente al flusso di lavoro. La colonna *progress* fornisce un&#39;indicazione dell&#39;avanzamento della replica. Ad esempio, può visualizzare 41/564 e, dopo l’aggiornamento, può essere aggiornato a 52/564.
+
+   ![Stato attivazione albero](/help/operations/assets/treeactivation-progress.png)
+
+
+1. Selezionando e aprendo la riga verranno forniti ulteriori dettagli sullo stato dell’esecuzione del flusso di lavoro.
+
+   ![Dettagli stato attivazione albero](/help/operations/assets/treeactivation-progress-details.png)
+
+
+
 ### Flusso di lavoro della struttura dei contenuti di pubblicazione {#publish-content-tree-workflow}
+
+>[!NOTE]
+>
+>Questa funzione è stata sostituita dal passaggio Attivazione albero più performante, che può essere incluso in un flusso di lavoro personalizzato.
+
+<details>
+<summary>Fai clic qui per ulteriori informazioni su questa funzione obsoleta.</summary>
 
 È possibile attivare una replica della struttura scegliendo **Strumenti - Flusso di lavoro - Modelli** e copiando il modello di flusso di lavoro preconfigurato **Pubblica struttura contenuto**, come mostrato di seguito:
 
@@ -61,7 +137,7 @@ Non richiamare il modello originale. Assicurati invece di copiare prima il model
 
 Come tutti i flussi di lavoro, può anche essere richiamato tramite API. Per ulteriori informazioni, vedere [Interazione con i flussi di lavoro a livello di programmazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
-In alternativa, è possibile creare un modello di flusso di lavoro che utilizza il passaggio del processo `Publish Content Tree`:
+In alternativa, è possibile creare un modello di flusso di lavoro che utilizza il passaggio del processo `Publish Content Tree`.
 
 1. Dalla home page di AEM as a Cloud Service, vai a **Strumenti - Flusso di lavoro - Modelli**.
 1. Nella pagina Modelli di flusso di lavoro, premi **Crea** nell&#39;angolo superiore destro dello schermo.
@@ -117,10 +193,7 @@ Di seguito sono riportati alcuni esempi di registri generati durante un flusso d
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
-**Supporto per la ripresa in seguito a interruzioni**
-
-Il flusso di lavoro elabora il contenuto in blocchi, ciascuno dei quali rappresenta un sottoinsieme del contenuto completo da pubblicare. Se il flusso di lavoro viene interrotto dal sistema, viene riavviato ed elaborato il blocco non ancora elaborato. Un’istruzione di registro indica che il contenuto è stato ripreso da un percorso specifico.
+</details>
 
 ### API di replica {#replication-api}
 
