@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f3ceb5ebf348b5f3f496b1db04d7dd7c9a0ac5c
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 25%
+source-wordcount: '890'
+ht-degree: 22%
 
 ---
 
@@ -41,9 +41,9 @@ La dashboard delle licenze di Cloud Manager consente di accedere facilmente ai d
 
 La dashboard è divisa in tre sezioni:
 
-* **Soluzioni**: in questa sezione vengono riepilogate le soluzioni per le quali si dispone di una licenza, come ad esempio Sites o Assets.
-* **Componenti aggiuntivi**: in questa sezione vengono riepilogati i componenti aggiuntivi disponibili per le soluzioni concesse in licenza.
-* **Altri diritti**: in questa sezione vengono riepilogati la sandbox e l&#39;ambiente di sviluppo nonché altri diritti utilizzabili all&#39;interno del tenant.
+* **Soluzioni** - Quali soluzioni hai concesso la licenza.
+* **Componenti aggiuntivi** - Quali componenti aggiuntivi disponibili per le soluzioni concesse in licenza.
+* **Altri diritti** - Quale ambiente sandbox e di sviluppo e altri diritti è possibile utilizzare all&#39;interno del tenant.
 
 Ogni sezione riepiloga ciò che è disponibile e come viene utilizzato, se del caso. Attualmente, anche se nel tenant sono presenti altre soluzioni, vengono visualizzate solo quelle Sites e Assets.
 

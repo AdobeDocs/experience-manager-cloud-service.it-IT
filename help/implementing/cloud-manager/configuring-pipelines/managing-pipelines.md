@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 32%
+source-wordcount: '1162'
+ht-degree: 34%
 
 ---
 
@@ -60,9 +60,9 @@ Puoi anche fare clic sull&#39;icona ![Puntini di sospensione - Altro](https://sp
 
 ![Azioni pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
-## Pagina attività {#activity}
+## Pagina Attività {#activity}
 
-Nella pagina **Attività** è visualizzato un elenco completo di tutte le esecuzioni delle pipeline per il programma selezionato e di altri importanti eventi del programma.
+Nella pagina **Attività** è visualizzato un elenco completo di tutte le esecuzioni delle pipeline per il programma selezionato e altri importanti eventi del programma.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
