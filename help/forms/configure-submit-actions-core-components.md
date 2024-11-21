@@ -5,10 +5,10 @@ keywords: come selezionare l’azione di invio per un modulo adattivo, collegare
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 11%
+source-wordcount: '701'
+ht-degree: 10%
 
 ---
 
@@ -21,7 +21,8 @@ ht-degree: 11%
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
-| AEM as a Cloud Service | Questo articolo |
+| AEM as a Cloud Service (Componenti di base) | [Fai clic qui](/help/forms/configuring-submit-actions.md) |
+| AEM as a Cloud Service (Componenti core) | Questo articolo |
 
 Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tramite un modulo adattivo. Viene attivato quando un utente fa clic sul pulsante **[!UICONTROL Invia]** in un modulo adattivo. Forms as a Cloud Service, per Forms adattivo basato su Componenti core, offre una serie di azioni di invio predefinite. Queste azioni di invio pronte all’uso ti consentono di:
 
@@ -68,11 +69,13 @@ Per informazioni dettagliate sulle seguenti azioni di invio, vedere:
 * [Invia all’endpoint REST](/help/forms/configure-submit-action-restpoint.md)
 * [Invia a OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Richiama un flusso di lavoro AEM](/help/forms/configure-submit-action-workflow.md)
+* [Invia a Marketo enagage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 È inoltre possibile inviare un modulo adattivo ad altre configurazioni di archiviazione:
 
 * [Collegare un modulo adattivo all’applicazione Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Collegare un modulo adattivo a Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Collegare un modulo adattivo a Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
 È possibile [personalizzare le azioni di invio predefinite](custom-submit-action-form.md). Inoltre, puoi personalizzare le azioni di invio per allinearle a specifici requisiti organizzativi.
 

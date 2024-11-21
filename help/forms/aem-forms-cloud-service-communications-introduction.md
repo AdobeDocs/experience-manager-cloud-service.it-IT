@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: dcf7bde3bc73b70002f87f14d905cd294280ff94
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 42%
+source-wordcount: '2374'
+ht-degree: 41%
 
 ---
 
@@ -174,7 +174,7 @@ Il servizio di estrazione documenti consente di ottenere le proprietà di un doc
 
 * Ottiene le proprietà di un documento PDF, ad esempio se il PDF dispone di allegati, commenti, versione Acrobat e molto altro.
 * Estrai i diritti di utilizzo abilitati in un documento PDF, gli utenti recuperano i diritti di utilizzo abilitati o disabilitati in un documento PDF per l’estensibilità di Adobe Acrobat Reader.
-* Ottenere le informazioni sui metadati presenti in un documento PDF; i metadati sono informazioni sul documento, distinte dal contenuto del documento, ad esempio testo e grafica. L&#39;Adobe Piattaforma di metadati estensibili (XMP) è uno standard per la gestione dei metadati dei documenti. Il servizio XMP Utilities può recuperare i metadati XMP dai documenti PDF ed esportare i metadati XMP nei documenti PDF.
+* Ottenere le informazioni sui metadati presenti in un documento PDF; i metadati sono informazioni sul documento, distinte dal contenuto del documento, ad esempio testo e grafica. Adobe Extensible Metadata Platform (XMP) è uno standard per la gestione dei metadati dei documenti. Il servizio XMP Utilities può recuperare i metadati XMP dai documenti PDF ed esportare i metadati XMP nei documenti PDF.
 
 La [documentazione di riferimento API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i servizi forniti dalle API. La documentazione di riferimento API è disponibile anche in formato .yaml. Puoi scaricare il file .yaml e caricarlo su Postman per verificare la funzionalità delle API.
 
@@ -194,7 +194,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### Convertire e convalidare documenti conformi a PDF/A
 
-Le API per la conversione di documenti di comunicazione consentono di convertire un documento PDF in PDF/A. È possibile utilizzare le API per convertire un documento PDF in un documento conforme a PDF/A e anche per determinare se un documento PDF è conforme a PDF/A. PDF/A è un formato di archiviazione destinato alla conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non include contenuti audio e video.
+Le API per la conversione di documenti di comunicazione consentono di convertire un documento PDF in PDF/A. È possibile utilizzare le API per convertire un documento PDF in un documento conforme a PDF/A e anche per determinare se un documento PDF è conforme a PDF/A. PDF/A è un formato di archiviazione destinato alla conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non contiene contenuti audio e video. Gli standard di conformità PDF/A supportati includono PDF/A-1a, 1b, 2a, 2b, 3a e 3b.
 
 ### Converti PDF in XDP {#convert-pdf-to-xdp}
 
@@ -214,6 +214,24 @@ Le API di firma consentono all’organizzazione di proteggere la sicurezza e la 
 * Aggiungere un campo firma invisibile a un documento PDF.
 * Firma il campo della firma specificato in un documento PDF.
 * Certifica un documento PDF
+* Rimuovi la firma dal campo della firma specificato in un documento PDF
+* Elimina il campo della firma specificato da un documento PDF
+
+<span class="preview"> Rimuovere la firma dal campo della firma specificato ed eliminare il campo della firma specificato da un documento di PDF disponibile nel programma per l&#39;adozione anticipata. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
+
+
+<!--
+
+### Remove Signature APIs
+
+The Remove Signature API helps to remove an existing digital signatures from a PDF document. This API is useful when you need to update or revise a signed document and reapply signatures. It maintains document integrity while effectively clearing signatures from specific pages or the entire file. Use cases include re-signing documents with updated data or clearing previous approvals for revised versions.
+
+
+### Remove Signature Field APIs
+
+The Remove Signature Field API is tailored for removing signature fields from a PDF document. This is ideal when you need to delete empty or unused signature fields to streamline document presentation. It enables users to eliminate signature fields without impacting other form fields or the document structure, making it easier to create cleaner, final versions of a document that no longer require signatures.
+
+-->
 
 ### API di crittografia
 

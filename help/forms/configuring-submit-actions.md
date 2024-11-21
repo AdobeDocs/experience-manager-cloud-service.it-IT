@@ -4,9 +4,9 @@ description: Un modulo adattivo fornisce più azioni di invio. Un’azione di in
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3929'
 ht-degree: 3%
 
 ---
@@ -16,9 +16,10 @@ ht-degree: 3%
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
-| AEM as a Cloud Service | Questo articolo |
+| AEM as a Cloud Service (Componenti core) | [Fai clic qui](/help/forms/configure-submit-actions-core-components.md) |
+| AEM as a Cloud Service (Componenti di base) | Questo articolo |
 
-**Si applica a**: ✔️ componenti di base modulo adattivo. ❌ [Componenti core modulo adattivo](/help/forms/configure-submit-actions-core-components.md). L&#39;Adobe consiglia di utilizzare i Componenti core per [aggiungere Forms adattivo a una pagina di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) o per [creare Forms adattivo autonomo](creating-adaptive-form-core-components.md).
+**Si applica a**: ✔️ componenti di base modulo adattivo. ❌ [Componenti core modulo adattivo](/help/forms/configure-submit-actions-core-components.md). Adobe consiglia di utilizzare i Componenti core per [aggiungere Forms adattivo a una pagina di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) o per [creare un Forms adattivo autonomo](creating-adaptive-form-core-components.md).
 
 Un&#39;azione di invio viene attivata quando un utente fa clic sul pulsante **[!UICONTROL Invia]** in un modulo adattivo. Forms as a Cloud Service fornisce le seguenti azioni di invio pronte all’uso.
 
@@ -31,6 +32,7 @@ Un&#39;azione di invio viene attivata quando un utente fa clic sul pulsante **[!
 * [Invia ad Azure Blob Storage](#azure-blob-storage)
 * [Invia a Power Automate](#microsoft-power-automate)
 * [Invia a Workfront Fusion](#workfront-fusion)
+* [Invia a Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
 Puoi anche [estendere le azioni di invio predefinite](custom-submit-action-form.md) per creare un&#39;azione di invio personalizzata.
 

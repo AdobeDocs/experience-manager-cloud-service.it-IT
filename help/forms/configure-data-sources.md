@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 1%
@@ -29,7 +29,7 @@ L&#39;integrazione dei dati di [!DNL Experience Manager Forms] consente di confi
 * Servizi web basati su SOAP
 * Servizi OData (versione 4.0)
 * Microsoft® Dynamics
-* ForzaVendite
+* Salesforce
 * Archiviazione BLOB di Microsoft® Azure
 
 L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), l&#39;autenticazione di base e i tipi di autenticazione con chiave API predefiniti e consente l&#39;implementazione dell&#39;autenticazione personalizzata per l&#39;accesso ai servizi Web. Mentre i servizi RESTful, basati su SOAP e OData sono configurati nell&#39;as a Cloud Service [!DNL Experience Manager], JDBC per i database relazionali e il connettore per il profilo utente [!DNL Experience Manager] sono configurati nella console Web [!DNL Experience Manager].
@@ -329,7 +329,6 @@ When you enable mutual authentication for form data model (FDM), both the data s
 ## Passaggi successivi {#next-steps}
 
 Hai configurato le origini dati. È quindi possibile creare un modello dati modulo (FDM) oppure, se è già stato creato un modello dati modulo (FDM) senza un&#39;origine dati, associarlo alle origini dati configurate. Per ulteriori dettagli, vedere [Crea modello dati modulo](create-form-data-models.md).
-
 
 <!--
 

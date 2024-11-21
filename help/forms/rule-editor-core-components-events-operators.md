@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2148'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ L’editor di regole fornisce i seguenti operatori logici ed eventi utilizzando 
 * **Non È Vuoto**
 * **Ha selezionato:** Restituisce true quando l&#39;utente seleziona un&#39;opzione particolare per una casella di controllo, un elenco a discesa o un pulsante di scelta.
 * **È inizializzato (evento):** Restituisce true quando viene eseguito il rendering di un oggetto modulo nel browser.
-* **È modificato (evento):** restituisce true quando il utente modifica il valore immesso o l&#39;opzione selezionata per un oggetto modulo.
+* **È stato modificato (evento):** Restituisce true quando l&#39;utente modifica il valore immesso o l&#39;opzione selezionata per un oggetto modulo.
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -44,9 +44,9 @@ L’editor di regole fornisce i seguenti operatori logici ed eventi utilizzando 
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
 * **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
 
-### Tipi di regola disponibili in regola editor {#available-rule-types-in-rule-editor}
+### Tipi di regole disponibili nell’editor di regole {#available-rule-types-in-rule-editor}
 
-Il editor regola fornisce un set di tipi di regola predefiniti che è possibile utilizzare per scrivere regole. Diamo un&#39;occhiata a ciascun tipo di regola in dettaglio. Per ulteriori informazioni sulla scrittura di regole nell&#39;editor di regole, vedere [Scrivi regole](/help/forms/rule-editor-core-components-user-interface.md#write-rules).
+L’editor di regole fornisce un set di tipi di regole predefiniti che è possibile utilizzare per scrivere regole. Esaminiamo in dettaglio ogni tipo di regola. Per ulteriori informazioni sulla scrittura di regole nell&#39;editor di regole, vedere [Scrivi regole](/help/forms/rule-editor-core-components-user-interface.md#write-rules).
 
 #### [!UICONTROL Quando] {#whenruletype}
 
@@ -63,27 +63,25 @@ In parole semplici, una regola When tipica è strutturata come segue:
 `Then, do the following:`
 
 `Action 2 on Object B;`
-`AND`
-&quot;Azione 3 sull’oggetto C;
+`AND`«Azione 3 sull&#39;oggetto C;
 
 `Else, do the following:`
 
-`Action 2 on Object C;`
-_
+`Action 2 on Object C;`_
 
 Quando si dispone di un componente con più valori, ad esempio pulsanti di scelta o elenco, durante la creazione di una regola per tale componente le opzioni vengono recuperate e rese disponibili automaticamente al creatore della regola. Non è necessario digitare nuovamente i valori delle opzioni.
 
 Ad esempio, un elenco include quattro opzioni: Rosso, Blu, Verde e Giallo. Durante la creazione della regola, le opzioni (pulsanti di scelta) vengono recuperate e rese disponibili automaticamente al creatore della regola come segue:
 
-![Opzioni di visualizzazione con più valori](assets/multivaluefcdisplaysoptions.png)
+![Più valori visualizza le opzioni](assets/multivaluefcdisplaysoptions.png)
 
-Durante la scrittura di un Quando regola, potete attivare l&#39;azione Cancella Valore di. Cancella valore dell&#39;azione cancella il valore dell&#39;oggetto specificato. L&#39;opzione Clear Value (Cancella valore) nell&#39;istruzione When consente di creare condizioni complesse con più campi. È possibile aggiungere l&#39;istruzione Else per aggiungere ulteriori condizioni
+Durante la scrittura di una regola When, puoi attivare l&#39;azione Cancella valore di. Cancella azione Valore Di cancella il valore dell&#39;oggetto specificato. La presenza di Clear Valore of come opzione nell&#39;istruzione When consente di creare condizioni complesse con più campi. È possibile aggiungere l&#39;istruzione Else per aggiungere ulteriori condizioni
 
-![Cancella valore di](assets/clearvalueof.png)
+![Cancella valore](assets/clearvalueof.png)
 
 >[!NOTE]
 >
-> Quando il tipo di regola supporta solo istruzioni then-else a livello singolo.
+> Quando il tipo regola supporta solo istruzioni then-else a livello singolo.
 
 ##### Più campi consentiti in [!UICONTROL When] {#allowed-multiple-fields}
 
@@ -97,20 +95,20 @@ Quando:
 
 E/O
 
-(Oggetto B Condizione 2)
+(Condizione 2 dell&#39;oggetto B)
 
-Quindi, effettua le seguenti operazioni:
+Quindi, procedi come segue:
 
 Azione 1 sull&#39;oggetto A
 
 _
 
-![Più campi consentiti in When](/help/forms/assets/allowed-multiple-field-when.png)
+![Campi multipli consentiti in Quando](/help/forms/assets/allowed-multiple-field-when.png)
 
-**Considerazioni durante l&#39;utilizzo di Campi multipli consentiti nella funzione Quando condizione**
+**Considerazioni durante l&#39;utilizzo di più campi consentiti nella funzionalità condizione When**
 
-* Assicurarsi che il [componente core sia impostato sulla versione 3.0.14 o successiva](https://github.com/adobe/aem-core-forms-components) per utilizzare questa funzione nell&#39;regola editor.
-* Se le regole vengono applicate a campi diversi all&#39;interno della condizione Quando, il regola attiva lineare se viene modificato solo uno di tali campi.
+* Assicurati che il componente core [ sia impostato sulla versione 3.0.14 o successiva](https://github.com/adobe/aem-core-forms-components) per utilizzare questa funzione nell&#39;editor di regole.
+* Se le regole vengono applicate a campi diversi all’interno della condizione When, la regola viene attivata anche se solo uno di questi campi viene modificato.
 
 
 <!--
@@ -130,10 +128,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-Se nella funzione Condizione When sono presenti più campi consentiti, segui i passaggi di risoluzione dei problemi descritti di seguito.
+Se i campi multipli consentiti nella funzionalità Quando condizione riscontrano problemi, seguire la procedura di risoluzione dei problemi come segue:
 
-1. Apri il modulo in modalità di modifica.
-1. Apri il browser Contenuti e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
+1. Aprire il modulo in modalità di modifica.
+1. Apri la browser contenuto e seleziona il **[!UICONTROL componente Contenitore]** guida del modulo adattivo.
 1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
 1. Fai clic su Fine e salva di nuovo la finestra di dialogo.
 
@@ -145,7 +143,13 @@ Se nella funzione Condizione When sono presenti più campi consentiti, segui i p
 
 **[!UICONTROL Disabilita]** Disabilita l&#39;oggetto specificato.
 
-**[!UICONTROL Richiama servizio]** Richiama un servizio configurato in un modello dati modulo (FDM). Quando scegli l’operazione Richiama servizio, viene visualizzato un campo. Quando tocca il campo, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo (FDM) nell&#39;istanza [!DNL Experience Manager]. Quando si sceglie un servizio Modello dati modulo, vengono visualizzati più campi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato. Vedi la regola di esempio per richiamare i servizi del modello dati modulo (FDM).
+**[!UICONTROL Richiama servizio]** Richiama un servizio configurato in un modello dati modulo (FDM). Quando scegli l’operazione Richiama servizio, viene visualizzato un campo. Quando tocca il campo, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo (FDM) nell&#39;istanza [!DNL Experience Manager]. Quando si sceglie un servizio Modello dati modulo, vengono visualizzati più campi in cui è possibile mappare gli oggetti modulo con i parametri di input per il servizio specificato. Puoi mappare i parametri di output tramite l’opzione payload dell’evento per il servizio specificato. Puoi anche creare regole per la gestione delle risposte di esito positivo e negativo dell’operazione Richiama servizio utilizzando l’editor di regole.
+
+>[!NOTE]
+>
+> Per ulteriori informazioni sul servizio Invoke, [fai clic qui](/help/forms/invoke-service-enhancements-rule-editor.md).
+
+Vedi la regola di esempio per richiamare i servizi del modello dati modulo (FDM).
 
 Oltre al servizio Modello dati modulo, è possibile specificare un URL WSDL diretto per richiamare un servizio Web. Tuttavia, un servizio di modello dati modulo presenta molti vantaggi e l’approccio consigliato per richiamare un servizio.
 
@@ -164,13 +168,13 @@ Il tipo di regola **[!UICONTROL Imposta proprietà]** consente di impostare il v
 * readOnly (booleano)
 * obbligatorio (booleano)
 * screenReaderText (stringa)
-* valid (booleano)
+* valido (booleano)
 * errorMessage (stringa)
 * impostazione predefinita (numero, stringa, data)
 * enumNames (Stringa[])
 * chartType (String)
 
-Ad esempio, consente di definire regole per visualizzare la casella di testo quando si fa clic su un pulsante. Per definire una regola è possibile utilizzare una funzione personalizzata, un oggetto modulo, una proprietà oggetto o un output di servizio.
+Ad esempio, consente di definire regole per visualizzare la casella di testo quando si fa clic su un pulsante. Per definire un regola è possibile utilizzare una funzione personalizzata, un oggetto modulo, una proprietà o l&#39;output di un servizio.
 
 ![Imposta proprietà](assets/set_property_rule_new.png)
 
@@ -184,29 +188,29 @@ La figura seguente illustra un esempio di attivazione dinamica della casella di 
 
 ![Proprietà oggetto](assets/object_property_set_property_new.png)
 
-**[!UICONTROL Cancella Valore Di]** Cancella il valore dell&#39;oggetto specificato.
+**[!UICONTROL Cancella valore di]** Cancella il valore dell&#39;oggetto specificato.
 
-**[!UICONTROL Imposta stato attivo]** Imposta concentrarsi sull&#39;oggetto specificato.
+**[!UICONTROL Imposta stato attivo]** Imposta lo stato attivo sull&#39;oggetto specificato.
 
-**[!UICONTROL Invia modulo]** Invia il modulo.
+**[!UICONTROL Invia modulo]** invia il modulo.
 
-**** Reimposta Reimposta il modulo o l&#39;oggetto specificato.
+**[!UICONTROL Reimposta]** Reimposta il modulo o l&#39;oggetto specificato.
 
-**[!UICONTROL Convalida]** Convalida il modulo o l&#39;oggetto specificato.
+**[!UICONTROL Convalida]** convalida il modulo o l&#39;oggetto specificato.
 
-**[!UICONTROL Aggiungi istanza]** Aggiunge un istanza del pannello o della riga di tabella ripetibile specificata.
+**[!UICONTROL Aggiungi istanza]** Aggiunge un&#39;istanza del pannello o della riga di tabella ripetibile specificata.
 
 **[!UICONTROL Rimuovi istanza]** Rimuove un&#39;istanza del pannello o della riga di tabella ripetibile specificata.
 
 **[!UICONTROL Output funzione]** Definisce una regola basata su funzioni predefinite o personalizzate.
 
-**[!UICONTROL Passa a]** Passa ad altre risorse Adaptive Forms, ad esempio immagini o frammenti di documenti, oppure a un URL esterno. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Passa a Passa ad]** altri Forms adattivi, ad altre risorse quali immagini o frammenti di documenti oppure a un URL esterno. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL Evento di invio]** Attiva azioni o comportamenti specifici in base a condizioni o eventi predefiniti.
+**[!UICONTROL Dispatch Event]** Attiva azioni o comportamenti specifici in base a condizioni o eventi predefiniti.
 
-#### [!UICONTROL Imposta valore di] {#set-value-of}
+#### [!UICONTROL Imposta Valore di] {#set-value-of}
 
-Il tipo di regola **[!UICONTROL Imposta valore di]** consente di impostare il valore di un oggetto modulo a seconda che la condizione specificata sia soddisfatta o meno. Il valore può essere impostato sul valore di un altro oggetto, una stringa letterale, un valore derivato da un&#39;espressione matematica o una funzione, un valore di una proprietà di un altro oggetto o l&#39;output di un servizio del modello di dati modulo. Analogamente, è possibile verificare la presenza di una condizione su un componente, una stringa, una proprietà o valori derivati da una funzione o un&#39;espressione matematica.
+Il **[!UICONTROL set Valore di]** regola tipo consente di impostare il valore di un oggetto modulo a seconda che la condizione specificata sia soddisfatta o meno. Il valore può essere impostato su un valore di un altro oggetto, una stringa letterale, un valore derivato da un&#39;espressione matematica o una funzione, un valore di una proprietà di un altro oggetto o l&#39;output di un servizio Form Data Model. Analogamente, è possibile verificare la presenza di una condizione su un componente, una stringa, una proprietà o valori derivati da una funzione o un&#39;espressione matematica.
 
 Il tipo di regola **Imposta valore di** non è disponibile per tutti gli oggetti modulo, ad esempio pannelli e pulsanti della barra degli strumenti. Una regola Set Value Of standard ha la seguente struttura:
 
@@ -324,7 +328,7 @@ Una tipica regola di **navigazione tra i pannelli** per spostare lo stato attivo
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-Allo stesso modo puoi scrivere **Spostarsi tra i pannelli** regola per spostare concentrarsi al pannello precedente:
+Analogamente, puoi scrivere **Navigare tra i pannelli** regola per spostare lo stato attivo sul pannello precedente:
 
 `Navigate among the panels`
 
@@ -334,11 +338,11 @@ Allo stesso modo puoi scrivere **Spostarsi tra i pannelli** regola per spostare 
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-Per maggiori dettagli su come creare un regola per spostarsi in un pannello, [fai clic qui](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
+Per ulteriori dettagli su come creare una regola per navigare in un pannello, [fai clic qui](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
 
-#### [!UICONTROL Chiamata di funzione asincrona]
+#### [!UICONTROL Chiamata funzione asincrona]
 
-<span class="preview"> Si tratta di una funzionalità pre-release accessibile tramite il nostro [canale](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features) di pre-release. </span>
+<span class="preview"> Si tratta di una funzionalità preliminare accessibile tramite il [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
 
 Il tipo di regola **[!UICONTROL Chiamata funzione asincrona]** consente di eseguire funzioni asincrone. Consente di avviare una chiamata di funzione che funziona in modo indipendente dal thread di esecuzione principale, consentendo ad altri processi di continuare l’esecuzione senza attendere il completamento della funzione asincrona.
 

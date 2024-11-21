@@ -4,9 +4,9 @@ description: Scopri come salvare come bozza un modulo adattivo basato su compone
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
+source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1387'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Salvare i moduli come bozze e elencarli nella pagina Sites
 
-<span class="preview"> Questo articolo contiene informazioni sulla funzionalità **Salvataggio automatico**, una funzionalità non definitiva. La funzione pre-release è accessibile solo tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features).</span>
+<span class="preview"> Questo articolo contiene informazioni sulla funzionalità **Bozze**, una funzionalità non definitiva. La funzione pre-release è accessibile solo tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features).</span>
 
 Si consideri un utente che inizia a compilare un modulo ma deve sospendere e tornare in un secondo momento. L&#39;AEM offre un&#39;opzione `save-as-draft` che consente all&#39;utente di salvare il modulo come bozza per il completamento futuro. Per facilitare questa fase, AEM fornisce il componente **Bozze e invii** Portale dei moduli pronto all&#39;uso, che visualizza le bozze e gli invii sulle pagine AEM Sites. Il componente elenca i moduli salvati come bozze da completare in un secondo momento, nonché quelli inviati. Solo gli utenti connessi possono modificare le bozze o visualizzare i moduli inviati. Tuttavia, se un utente anonimo passa all&#39;elenco dei moduli utilizzando il componente **Ricerca e elenco** e salva un modulo come bozza, tale bozza non viene elencata dal componente **Bozze e invii**. Per visualizzare le bozze e gli invii, è necessario che gli utenti abbiano effettuato l&#39;accesso al momento dell&#39;invio del modulo.
 
@@ -137,7 +137,7 @@ Per salvare un modulo come bozza, creare una regola **Salva modulo** in un compo
 
 Quando visualizzi l&#39;anteprima di un modulo adattivo, lo compili e fai clic sul pulsante **Salva modulo**, il modulo viene salvato come bozza.
 
-### Salvataggio automatico
+### Bozze
 
 >[!NOTE]
 >
@@ -147,13 +147,13 @@ Puoi anche configurare un modulo adattivo in modo che venga salvato automaticame
 
 1. Nell’istanza di authoring, apri un modulo adattivo in modalità di modifica.
 1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
-1. Fai clic sull&#39;icona Proprietà contenitore guida ![Proprietà guida](/help/forms/assets/configure-icon.svg) e apri la scheda **[!UICONTROL Salvataggio automatico]**.
+1. Fare clic sull&#39;icona delle proprietà del contenitore della guida ![Proprietà guida](/help/forms/assets/configure-icon.svg) e aprire la scheda **[!UICONTROL Bozze]**.
 
    ![Salvataggio automatico](/help/forms/assets/auto-save.png)
 
-1. Selezionare la casella di controllo **[!UICONTROL Abilita]** per abilitare il salvataggio automatico del modulo.
-1. Configura **[!UICONTROL Trigger]** come **Basato sul tempo**, per salvare automaticamente il modulo <!--based on the occurrence of an event or--> dopo un intervallo di tempo specifico.
-1. Specificare l&#39;intervallo di tempo in **[!UICONTROL Salvataggio automatico in questo intervallo (in secondi)]** per impostare la durata che attiva il salvataggio automatico del modulo nell&#39;intervallo definito.
+1. Selezionare la casella di controllo **[!UICONTROL Salva automaticamente bozze]** per abilitare il salvataggio automatico del modulo come bozze.
+1. Configura **[!UICONTROL Salva preferenza]** come **Salva bozze a intervalli regolari**, per salvare automaticamente il modulo <!--based on the occurrence of an event or--> dopo un intervallo di tempo specifico.
+1. Specificare l&#39;intervallo di tempo in **[!UICONTROL Frequenza intervallo di salvataggio (secondi)]** per impostare la durata che attiva il salvataggio automatico del modulo all&#39;intervallo definito.
 1. Fai clic su **[!UICONTROL Fine]**.
 
 ## Visualizzare le bozze/i moduli inviati nella pagina Sites utilizzando il componente Bozze e invii

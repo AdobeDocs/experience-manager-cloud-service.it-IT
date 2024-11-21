@@ -1,8 +1,8 @@
 ---
-source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
+source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 92%
+source-wordcount: '1323'
+ht-degree: 88%
 
 ---
 # Snippet {#snippets}
@@ -53,6 +53,7 @@ ht-degree: 92%
 * [Invia a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Collegare un modulo adattivo all’applicazione Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Collegare un modulo adattivo a Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [Collegare un modulo adattivo a Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Crea azione di invio personalizzata](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## Consulta anche {#see-more-forms-eds}
@@ -131,6 +132,8 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 * [Interfaccia utente dell’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components-user-interface.md)
 * [Diversi casi d’uso dell’editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-usecases.md)
 * [Differenza nelle varie edizioni dell’editor di regole](/help/forms/rule-editor-core-components-difference-tables.md)
+* [Utilizzo di funzioni asincrone in un modulo adattivo](/help/forms/using-async-funct-in-rule-editor.md)
+* [Richiama miglioramenti al servizio nell’Editor di regole visive per i moduli basati su componenti core](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core](/help/forms/create-and-use-custom-functions.md)
 * [Creare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
 * [Oggetto ambito nelle funzioni personalizzate](/help/forms/custom-function-core-component-scope-function.md)
@@ -144,6 +147,12 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 * [Salvare i moduli come bozze](/help/forms/save-core-component-based-form-as-draft.md)
 * [Aggiungere collegamenti per moduli a una pagina Sites](/help/forms/add-form-link-to-aem-sites-page.md)
 
+## Marketo Engage{#marketo-engage-see-also}
+
+* [Integrare il Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+* [Configura nuovo modulo da integrare con il Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [Configurare l’origine dati di Marketo Engage per Forms adattivo esistente](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Configurare l’azione di invio al Marketo Engage per i moduli esistenti](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Elenco di indirizzi IP consentiti e pipeline e front-end di Could Manager {#allowlist-frontend-pipeline}
 
