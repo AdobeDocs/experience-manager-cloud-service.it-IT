@@ -4,9 +4,9 @@ description: Scopri la funzionalità di estensibilità dell’interfaccia utente
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
+source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '598'
 ht-degree: 3%
 
 ---
@@ -17,10 +17,13 @@ ht-degree: 3%
 | ------------- | --------------------------- |---------|----|-----|
 
 La vista AEM Assets dispone della funzionalità di estensibilità dell’interfaccia utente. Questa funzionalità consente agli utenti di aggiungere componenti personalizzati all’interfaccia utente di Assets View per soddisfare esigenze aziendali specifiche che le funzionalità predefinite della visualizzazione AEM Assets non soddisfano. Questa funzione di estensibilità migliora la flessibilità di AEM Assets View, che consente alle organizzazioni di adattare l’interfaccia per flussi di lavoro e requisiti specifici.
-Puoi aggiungere le estensioni a livello di risorsa, cartella e raccolta. L’estensione aggiunta viene visualizzata in un pannello dedicato nella pagina Dettagli della risorsa, della raccolta o della cartella.
+Puoi aggiungere le estensioni a livello di risorsa, cartella e raccolta. L’estensione aggiunta viene visualizzata all’interno di un pannello dedicato nella pagina Dettagli risorsa, raccolta o cartella.
 
 >[!IMPORTANT]
-> L&#39;estensibilità dell&#39;interfaccia utente di visualizzazione di AEM Assets è disponibile con [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
+>
+> * L&#39;estensibilità dell&#39;interfaccia utente di visualizzazione di AEM Assets è disponibile con [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
+> * L’estensibilità dell’interfaccia utente di visualizzazione di Assets è disponibile nella versione di as a Beta. Per accedere in anteprima all&#39;estensibilità dell&#39;interfaccia utente di visualizzazione di Assets, [crea e invia un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+> * Puoi fornire feedback sulla documentazione espandendo le opzioni di feedback dettagliato e facendo clic su Segnala un problema.
 
 ## <a id="1"></a> Come accedere alla vista Assets
 
@@ -32,9 +35,6 @@ Accedi alla vista Assets nei seguenti modi:
 Nella Vista Assets, passa alla pagina Dettagli di una risorsa, cartella o raccolta. In questa pagina Dettagli è presente un pannello dedicato che mostra l’estensione dell’interfaccia utente aggiunta.
 ![area di lavoro personale](/help/assets/assets/my-workspace-assets-view3.png)
 
->[!NOTE]
->
-> L’estensibilità dell’interfaccia utente di visualizzazione di AEM Assets è disponibile nella versione di as a Beta. Puoi fornire feedback sulla documentazione espandendo le opzioni di feedback dettagliato e facendo clic su Segnala un problema.
 
 ## Prerequisiti per l’aggiunta del componente Estensibilità
 
