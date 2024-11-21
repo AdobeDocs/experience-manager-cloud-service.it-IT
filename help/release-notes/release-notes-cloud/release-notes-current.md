@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 083e334c2ac248e15168ae3ec4c8daf2b2888ee5
+source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 42%
+source-wordcount: '1778'
+ht-degree: 40%
 
 ---
 
@@ -51,6 +51,10 @@ Trasforma rapidamente qualsiasi pagina di Edge Delivery in un modello di pagina.
 Importazione CSV **[!DNL Edge Delivery Services]per la pubblicazione tramite un&#39;istanza AEM**
 
 Gestisci in modo efficiente i dati del foglio di calcolo di Edge Delivery (ad es. reindirizzamenti) nello strumento del foglio di calcolo preferito e caricalo su AEM tramite il nuovo importazione CSV. [Ulteriori informazioni](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
+
+### Funzionalità prerelease in AEM Sites
+
+È stato migliorato il riferimento ai frammenti di contenuto con riferimenti univoci basati su ID, garantendo collegamenti stabili che rimangono validi anche quando le risorse o i frammenti vengono spostati, eliminando la necessità di aggiornamenti o ripubblicazione. Limitazione corrente: i riferimenti a pagine non sono ancora supportati con ID univoci. Se nei frammenti di contenuto si fa riferimento alle pagine, questa funzionalità non deve essere utilizzata.
 
 ### Programma per i primi utilizzatori {#sites-early-adopter}
 
