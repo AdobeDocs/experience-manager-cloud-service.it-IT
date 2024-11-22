@@ -3,13 +3,10 @@ title: Come si utilizza Turnstile in un modulo adattivo per AEM?
 description: Migliora la sicurezza dei moduli con il servizio Turnstile. Guida dettagliata all’interno!
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
 role: User, Developer
-source-git-commit: d69d64a02c62b9a796188107cfe1ab7543b5a2be
+source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '952'
 ht-degree: 12%
 
 ---
@@ -29,13 +26,13 @@ AEM Forms as a Cloud Service supporta le seguenti soluzioni CAPTCHA:
 
 ## Integrare l’ambiente AEM Forms con Turnstile Captcha
 
-Il Turnstile Captcha di Cloudflare è una misura di sicurezza che mira a proteggere moduli e siti da bot automatizzati, attacchi dannosi, spam e traffico automatizzato indesiderato. Presenta una casella di controllo all’invio del modulo per verificare che sia umana, prima di consentire loro di inviare il modulo. AEM Forms as a Cloud Service supporta Turnstile Captcha nei componenti core di Forms adattivi.
+Il Turnstile Captcha di Cloudflare è una misura di sicurezza che mira a proteggere moduli e siti da bot automatizzati, attacchi dannosi, spam e traffico automatizzato indesiderato. Presenta una casella di controllo all’invio del modulo per verificare che sia umana, prima di consentire loro di inviare il modulo. AEM Forms as a Cloud Service supporta Turnstile Captcha in Adaptive Forms.
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
 ### Prerequisiti per integrare l’ambiente AEM Forms con Turnstile Captcha {#prerequisite}
 
-Per configurare Turnstile per i componenti core di AEM Forms, è necessario ottenere la [chiave del sito e la chiave segreta](https://developers.cloudflare.com/turnstile/get-started/) Turnstile dal sito Web Turnstile.
+Per configurare Turnstile per AEM Forms, è necessario ottenere la [chiave del sito e la chiave segreta](https://developers.cloudflare.com/turnstile/get-started/) dal sito Web Turnstile.
 
 ### Passaggi per configurare Turnstile per AEM Forms{#steps-to-configure-turnstile}
 

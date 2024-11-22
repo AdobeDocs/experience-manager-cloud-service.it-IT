@@ -4,13 +4,10 @@ description: Migliora la sicurezza dei moduli con il servizio hCaptcha&reg; senz
 topic-tags: Adaptive Forms, author
 keywords: hCaptcha&reg; service, Forms adattivo, CAPTCHA challenge, prevenzione bot, sicurezza invio modulo, prevenzione spam modulo
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '981'
 ht-degree: 19%
 
 ---
@@ -31,7 +28,7 @@ AEM Forms as a Cloud Service supporta le seguenti soluzioni CAPTCHA:
 
 Il servizio hCaptcha® protegge i moduli da bot, spam e abusi automatizzati. Pone una sfida in un widget casella di controllo e valuta la risposta dell’utente per determinare se si tratta di un essere umano o di un bot che interagisce con il modulo. Questo impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o praticare attività dannose.
 
-AEM Forms as a Cloud Service supporta hCaptcha® nei componenti core di Forms adattivi. Puoi utilizzarlo per presentare una richiesta di verifica del widget casella di controllo all’invio del modulo.
+AEM Forms as a Cloud Service supporta hCaptcha® in Adaptive Forms. Puoi utilizzarlo per presentare una richiesta di verifica del widget casella di controllo all’invio del modulo.
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 

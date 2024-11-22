@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b677ab1781491059098cbf63f13f72555d6012b3
+source-git-commit: d74ca698d0b6992d1f58173fbcd6bac399421fef
 workflow-type: tm+mt
-source-wordcount: '5880'
+source-wordcount: '5883'
 ht-degree: 97%
 
 ---
@@ -750,7 +750,7 @@ ht-degree: 97%
             + [Configurare l’azione di invio Invia a endpoint REST per moduli adattivi](/help/forms/configure-submit-action-restpoint.md)
             + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
             + [Utilizzare reCAPTCHA di Google in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Utilizzare hCAPTCHA in un modulo adattivo](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Utilizzare hCAPTCHA in un modulo adattivo Componenti core](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Aggiungere un handler degli errori personalizzato in un modulo adattivo](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/supporting-new-language-localization-core-components.md)
             + [Progettare uno schema JSON per un modulo adattivo (componenti core)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -797,7 +797,7 @@ ht-degree: 97%
          + Aggiungere componenti a un modulo adattivo {#add-components-to-an-adaptive-form}
             + [Utilizzare il CAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms.md)
             + [Utilizzare hCAPTCHA in un modulo adattivo](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [Utilizzare Turnstile in un modulo adattivo](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [Utilizzare il CAPTCHA a tornello in un modulo adattivo](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Utilizzare componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
             + [Applicare una firma scarabocchio](/help/forms/signing-forms-using-scribble.md)
             + [Aggiungere una tabella a un modulo adattivo](/help/forms/adaptive-forms-tables.md)
