@@ -6,18 +6,19 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: c94805dfcc382c33ec1b7f8ae0a9e8a91f8fb479
+exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
+source-git-commit: 0ca20c601a640e7acea5b49c7d399475e7af9fbc
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 3%
+source-wordcount: '384'
+ht-degree: 34%
 
 ---
 
 # Informazioni su Adobe Experience Manager Home {#aem-home}
 
-La Home di AEM introduce un punto di partenza centralizzato per la gestione di contenuti, risorse e siti in Adobe Experience Manager. Progettata per offrire un’esperienza personalizzata, la Home dell’AEM ti consente di navigare nell’ecosistema dell’AEM senza problemi in base ai tuoi ruoli e obiettivi. Funge da guida e fornisce informazioni chiave e azioni consigliate per aiutarti a raggiungere gli obiettivi in modo efficiente. Con un layout chiaro e personalizzato, la Home dell’AEM assicura un accesso rapido a strumenti essenziali, supportando un’esperienza semplificata ed efficace in tutte le funzioni dell’AEM.
+La pagina Home di AEM rappresenta un punto di partenza centralizzato per la gestione di contenuti, risorse e siti in Adobe Experience Manager. Progettata per offrire un’esperienza personalizzata, la pagina Home di AEM consente di navigare nell’ecosistema di AEM in modo semplice in base ai ruoli e agli obiettivi. Funge da guida e fornisce informazioni chiave e azioni consigliate per aiutare a raggiungere gli obiettivi in modo efficiente. Con un layout chiaro e personalizzato, la pagina Home di AEM assicura un accesso rapido a strumenti essenziali, supportando un’esperienza semplificata ed efficace in tutte le funzioni di AEM.
 
-Disponibile per i primi utenti, AEM Home offre un’esperienza ottimizzata incentrata sul miglioramento dei flussi di lavoro, sulla definizione delle priorità degli obiettivi e sulla distribuzione dei risultati. Opt in consente di influenzare lo sviluppo della Home dell&#39;AEM fornendo un feedback che aiuta a modellarne il futuro e ne aumenta il valore per l&#39;intera comunità dell&#39;AEM.
+Disponibile per i primi utilizzatori, la pagina Home di AEM offre un’esperienza ottimizzata incentrata sul miglioramento dei flussi di lavoro, sulla definizione delle priorità degli obiettivi e sulla distribuzione dei risultati. Consentendone l’utilizzo permette di influenzare lo sviluppo della pagina Home di AEM fornendo un feedback che aiuta a modellarne il futuro e ne aumenta il valore per l’intera comunità di AEM.
 
 ## AEM Home up close {#aem-home-about}
 
@@ -30,16 +31,26 @@ La [pagina Adobe Experience Manager](https://experience.adobe.com/#/experiencema
 * Distribuzione di software e
 * Extension Manager
 
-Queste soluzioni sono ora spostate nella navigazione principale in **Strumenti**. Inoltre, i nuovi elementi di navigazione per **Sites** e **Assets** offrono ora l&#39;accesso rapido alle funzioni chiave di Adobe Experience Manager, tra cui Assets, Raccolte, Siti e Frammenti di contenuto.
+Queste soluzioni sono ora spostate nella navigazione principale in **Strumenti**. Inoltre, i nuovi elementi di navigazione per **Sites** e **Assets** forniscono accesso rapido alle funzioni chiave di Adobe Experience Manager come Assets, Raccolte, Siti e Frammenti di contenuto. Queste funzioni sono disponibili per l’ambiente di produzione principale a cui hai accesso.
 
-![Home page AEM](/help/implementing/cloud-manager/assets/aem-home-author-environments.png)
+![Ambienti Home AEM](/help/implementing/cloud-manager/assets/aem-home-author-environments.png)
 
 Fungendo da hub centrale per Adobe Experience Manager, la home page AEM si espande con widget e azioni aggiuntivi personalizzati per ogni ruolo utente. Completamente personalizzabile, la pagina consente di scegliere il layout ottimale per lo schermo. I widget possono essere filtrati in modo che solo quelli selezionati vengano visualizzati nella pagina principale, garantendo un’esperienza personalizzata.
 
-![Home page AEM](/help/implementing/cloud-manager/assets/aem-home-custom.png)
+![Home AEM personalizzata](/help/implementing/cloud-manager/assets/aem-home-custom.png)
 
 I widget possono anche essere ridimensionati e riposizionati sulla pagina in base alle tue esigenze e preferenze.
 
-![Home page AEM](/help/implementing/cloud-manager/assets/aem-home-widgets.png)
+![Widget Home AEM](/help/implementing/cloud-manager/assets/aem-home-widgets.png)
 
-Nella sezione **Ambienti di authoring** sono visualizzati tutti gli ambienti AEM a cui puoi accedere, mentre nella sezione **Recenti** è incluso un elenco delle pagine visitate di recente che vengono tracciate all&#39;interno del sistema AEM.
+Nella sezione **Ambienti di authoring** sono visualizzati tutti gli ambienti AEM a cui puoi accedere, mentre nella sezione **Recenti** è incluso un elenco delle pagine visitate di recente che vengono tracciate all&#39;interno dei sistemi AEM.
+
+Gli elementi di navigazione includono Assets Browse, che carica l’archivio dell’ambiente di produzione accessibile all’utente.
+
+![Elementi di navigazione Home AEM](/help/implementing/cloud-manager/assets/aem-home-navigation.png)
+
+Se non è disponibile alcun ambiente AEM Cloud Service di produzione, le opzioni risultano disabilitate (non disponibili) per l’utente.
+
+![](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
+
+

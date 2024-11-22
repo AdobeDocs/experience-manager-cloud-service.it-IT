@@ -4,8 +4,8 @@ description: Ulteriori informazioni sulla versione 2024.11.0 di Cloud Manager in
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 87293526ca9c10a142bc1d1d3a35562b171da385
-workflow-type: ht
+source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ Consulta [Aggiungere archivi esterni in Cloud Manager](/help/implementing/cloud-
 >
 >Attualmente, i controlli di qualità predefiniti per il codice di richiesta pull sono esclusivi degli archivi ospitati in GitHub, ma è in preparazione un aggiornamento per estendere questa funzionalità anche ad altri fornitori Git.
 
-Se ti interessa testare questa nuova funzione e condividere il tuo feedback, invia un’e-mail a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) dall’indirizzo e-mail associato al tuo Adobe ID. Se ti trovi in una struttura di archivio privata/pubblica o aziendale, assicurati di specificare la piattaforma Git che desideri utilizzare. -->
+Se ti interessa testare questa nuova funzione e condividere il tuo feedback, invia un’e-mail a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) dall’indirizzo e-mail associato al tuo Adobe ID. Se ti trovi in una struttura di archivio privata/pubblica o aziendale, assicurati di specificare la piattaforma Git che desideri utilizzare.
 
 
 ## Correzioni di bug

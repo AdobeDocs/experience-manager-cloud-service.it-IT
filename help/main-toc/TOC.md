@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d74ca698d0b6992d1f58173fbcd6bac399421fef
+source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
 workflow-type: tm+mt
-source-wordcount: '5883'
-ht-degree: 97%
+source-wordcount: '5886'
+ht-degree: 96%
 
 ---
 
@@ -1100,6 +1100,7 @@ ht-degree: 97%
          + [Scopri come definire metadati e tag per i frammenti di contenuto](/help/journey-headless/author/metadata-tagging.md)
 + Intelligenza artificiale generativa {#generative-ai}
    + [Generare varianti](/help/generative-ai/generate-variations.md)
+   + [Assistente (Beta limitato)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementazione {#implementing}
    + [Implementazione di applicazioni per AEM as a Cloud Service](/help/implementing/home.md)
    + Utilizzare Cloud Manager {#using-cloud-manager}
@@ -1123,7 +1124,7 @@ ht-degree: 97%
          + [Gestione degli archivi in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Aggiungere un archivio Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Aggiungere un archivio privato](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Aggiungere un archivio esterno (primi utilizzatori)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Aggiungere un archivio esterno (Beta limitato)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Accedere agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Supporto per i sottomoduli Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utilizzare Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
