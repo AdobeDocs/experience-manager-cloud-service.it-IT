@@ -4,7 +4,7 @@ description: Scopri come utilizzare GraphQL con AEM in modo da distribuire conte
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: afff23f505b789667e4d34683d0dfd11b1a436a8
+source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
 workflow-type: tm+mt
 source-wordcount: '1940'
 ht-degree: 90%
@@ -1493,8 +1493,6 @@ La query seguente restituisce tutti gli `attachments`: un campo specifico (grupp
 ```
 
 ### Query di esempio per un frammento di contenuto di un modello specifico utilizzando riferimenti UUID {#sample-wknd-fragment-specific-model-uuid-references}
-
-<!-- CQDOC-21487 - need more details on both, text must be checked too -->
 
 Tali query rappresentano interrogazioni per ottenere:
 
