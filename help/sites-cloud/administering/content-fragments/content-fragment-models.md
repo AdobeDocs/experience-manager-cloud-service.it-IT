@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
+source-git-commit: e59c432a2f6b0f2034829b3cb3f88679aa182048
 workflow-type: tm+mt
-source-wordcount: '3284'
-ht-degree: 52%
+source-wordcount: '3591'
+ht-degree: 48%
 
 ---
 
 # Modelli per frammenti di contenuto {#content-fragment-models}
+
+>[!IMPORTANT]
+>
+>Varie funzioni dei Modelli per frammenti di contenuto sono disponibili tramite il Programma per l’adozione anticipata.
+>
+>Per visualizzare lo stato e le modalità di applicazione, se sei interessato, consulta le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 I modelli per frammenti di contenuto in Adobe Experience Manager (AEM as a Cloud Service) definiscono la struttura per il contenuto dei [frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md). Questi frammenti possono quindi essere utilizzati per l’authoring delle pagine o come base per i contenuti headless.
 
@@ -180,18 +186,33 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 
 * **Tag**
    * Consente agli autori di frammenti di accedere alle aree dei tag e di selezionarle
+* **Riferimento frammento**
+   * I riferimenti ad altri frammenti di contenuto possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
+   * Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
+      * Modificare direttamente il frammento a cui si fa riferimento.
+      * Creare un nuovo frammento di contenuto basato sul modello appropriato
+      * Crea nuove istanze del campo
+   * Il riferimento specifica il percorso della risorsa di riferimento, ad esempio `/content/dam/path/to/resource`
+* **Riferimento frammento (UUID)**
+   * I riferimenti ad altri frammenti di contenuto possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
+   * Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
+      * Modificare direttamente il frammento a cui si fa riferimento.
+      * Creare un nuovo frammento di contenuto basato sul modello appropriato
+      * Crea nuove istanze del campo
+   * Nell’editor, il riferimento specifica il percorso della risorsa di riferimento; internamente, il riferimento viene mantenuto come ID univoco universale (UUID) che fa riferimento alla risorsa
+      * Non è necessario conoscere l’UUID; nell’editor frammenti puoi individuare il frammento richiesto
 
 * **Riferimento contenuto**
    * I riferimenti ad altri contenuti di qualsiasi tipo possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
    * Se si fa riferimento a un’immagine, è possibile scegliere di mostrare una miniatura
    * Il campo può essere configurato per consentire agli autori di frammenti di creare nuove istanze del campo
-
-* **Riferimento frammento**
-   * I riferimenti ad altri frammenti di contenuto possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
-   * Il campo può essere configurato per consentire agli autori di frammenti di:
-      * Modificare direttamente il frammento a cui si fa riferimento
-      * Creare un nuovo frammento di contenuto basato sul modello appropriato
-      * Crea nuove istanze del campo
+   * Il riferimento specifica il percorso della risorsa di riferimento, ad esempio `/content/dam/path/to/resource`
+* **Riferimento contenuto (UUID)**
+   * I riferimenti ad altri contenuti di qualsiasi tipo possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
+   * Se si fa riferimento a un’immagine, è possibile scegliere di mostrare una miniatura
+   * Il campo può essere configurato per consentire agli autori di frammenti di creare nuove istanze del campo
+   * Nell’editor, il riferimento specifica il percorso della risorsa di riferimento; internamente, il riferimento viene mantenuto come ID univoco universale (UUID) che fa riferimento alla risorsa
+      * Non è necessario conoscere l’UUID; nell’editor frammenti puoi individuare la risorsa richiesta
 
 * **Oggetto JSON**
    * Consente all’autore del frammento di contenuto di immettere la sintassi JSON negli elementi corrispondenti di un frammento.
@@ -293,17 +314,28 @@ Diversi tipi di dati includono ora la possibilità di definire requisiti di conv
 
 I frammenti di contenuto possono formare contenuto nidificato utilizzando uno dei seguenti tipi di dati:
 
-* **[Riferimento contenuto](#content-reference)**
+* [Riferimento contenuto](#content-reference)
    * Fornisce un semplice riferimento ad altri contenuti; di qualsiasi tipo.
+   * Forniti dai tipi di dati:
+      * **Riferimento contenuto** - basato su percorso
+      * **Riferimento contenuto (UUID)** - basato su UUID
    * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
-* **[Riferimento frammento](#fragment-reference-nested-fragments)** (frammenti nidificati)
+* [Riferimento frammento](#fragment-reference-nested-fragments) (frammenti nidificati)
    * Fa riferimento ad altri frammenti, a seconda dei modelli specifici indicati.
+   * Forniti dai tipi di dati:
+      * **Riferimento frammento** - basato su percorso
+      * **Riferimento frammento (UUID)** - basato su UUID
    * Consente di includere/recuperare dati strutturati.
+
      >[!NOTE]
      >
      Questo metodo è particolarmente interessante quando si utilizza [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Può essere configurato per uno o più riferimenti (nel frammento risultante).
+
+>[!NOTE]
+>
+Consulta [Aggiornare i frammenti di contenuto per i riferimenti UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) per ulteriori informazioni su contenuto/riferimento frammento e riferimento contenuto/riferimento frammento (UUID) e per l&#39;aggiornamento ai tipi di dati basati su UUID.
 
 >[!NOTE]
 >
@@ -323,11 +355,11 @@ Per ulteriori dettagli vedi [API GraphQL AEM per l&#39;utilizzo con frammenti di
 
 ### Riferimento contenuto {#content-reference}
 
-Il Riferimento contenuto consente di eseguire il rendering del contenuto da un’altra origine, ad esempio un’immagine, una pagina o un frammento di esperienza.
+I tipi di dati **Riferimento contenuto** e **Riferimento contenuto (UUID)** consentono di eseguire il rendering del contenuto da un&#39;altra origine, ad esempio immagine, pagina o frammento di esperienza.
 
 Oltre alle proprietà standard puoi specificare:
 
-* Il **percorso principale**, che specifica dove memorizzare qualsiasi contenuto a cui si fa riferimento
+* **Percorso principale**, che specifica o rappresenta la posizione in cui archiviare il contenuto a cui si fa riferimento
   >[!NOTE]
   >
   Questo è obbligatorio se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l’editor di frammenti di contenuto.
@@ -350,7 +382,7 @@ Oltre alle proprietà standard puoi specificare:
 
 ### Riferimento frammento (frammenti nidificati) {#fragment-reference-nested-fragments}
 
-Il riferimento frammento fa riferimento a uno o più frammenti di contenuto. Questa funzione è particolarmente interessante per il recupero dei contenuti da utilizzare nell’app, in quanto consente di recuperare dati strutturati con più livelli.
+I tipi di dati **Riferimento frammento** e **Riferimento frammento (UUID)** possono fare riferimento a uno o più frammenti di contenuto. Questa funzione è particolarmente interessante per il recupero dei contenuti da utilizzare nell’app, in quanto consente di recuperare dati strutturati con più livelli.
 
 Ad esempio:
 
@@ -386,9 +418,8 @@ Oltre alle proprietà standard puoi definire:
 * **Tipo di modello**
 È possibile selezionare più modelli. Quando si aggiungono riferimenti a un frammento di contenuto, tutti i frammenti a cui si fa riferimento devono essere stati creati utilizzando questi modelli.
 
-* **Percorso radice**
-
-Specifica un percorso radice per tutti i frammenti a cui si fa riferimento.
+* **Percorso principale**
+Specifica o rappresenta un percorso principale per tutti i frammenti a cui si fa riferimento.
 
 * **Consenti creazione di frammenti**
 

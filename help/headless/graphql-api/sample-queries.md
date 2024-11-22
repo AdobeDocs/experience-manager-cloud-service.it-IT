@@ -4,16 +4,22 @@ description: Scopri come utilizzare GraphQL con AEM in modo da distribuire conte
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: afff23f505b789667e4d34683d0dfd11b1a436a8
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 95%
+source-wordcount: '1940'
+ht-degree: 90%
 
 ---
 
 # Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query {#learn-graphql-with-aem-sample-content-queries}
 
 Scopri come utilizzare GraphQL con AEM in modo da distribuire contenuti headless esplorando contenuti e query di esempio.
+
+>[!IMPORTANT]
+>
+>Varie funzioni dell’API GraphQL da utilizzare con i frammenti di contenuto sono disponibili tramite il programma Early Adopter.
+>
+>Per visualizzare lo stato e le modalità di applicazione, se sei interessato, consulta le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
@@ -1486,6 +1492,79 @@ La query seguente restituisce tutti gli `attachments`: un campo specifico (grupp
 }
 ```
 
+### Query di esempio per un frammento di contenuto di un modello specifico utilizzando riferimenti UUID {#sample-wknd-fragment-specific-model-uuid-references}
+
+<!-- CQDOC-21487 - need more details on both, text must be checked too -->
+
+Tali query rappresentano interrogazioni per ottenere:
+
+* l’UUID per un frammento di contenuto e per le risorse o i frammenti di contenuto di riferimento
+* risultato restituito tramite la proprietà JSON `_id`
+
+#### Query di esempio per un frammento di contenuto di un modello specifico utilizzando un riferimento UUID {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
+
+La query seguente restituisce tutti i riferimenti di contenuto utilizzando `_id` e `_path`:
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+        title
+        featuredImage {
+          ... on ImageRef {
+            _id
+            _path           
+          }
+        }
+        authorFragment {
+          firstName
+          lastName
+          profilePicture {
+            ... on ImageRef {
+              _id
+              _path
+            }
+          }
+        }
+      }
+  }
+}
+```
+
+#### Query di esempio per frammenti di contenuto per riferimento UUID {#sample-wknd-fragment-specific-model-by-uuid-reference}
+
+La query seguente restituisce tutti i riferimenti di contenuto relativi a un `_id` specifico:
+
+```graphql
+{
+  articleById(_id: "3ce2bf53-7436-4d3e-b19a-2793bc2ca63e") {
+    item {
+      _id
+      _path
+      title
+      featuredImage {
+        ... on ImageRef {
+          _id
+          _path
+        }
+      }
+      authorFragment {
+        firstName
+        lastName
+        profilePicture {
+          ... on ImageRef {
+            _id
+            _path
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ### Query di esempio per un singolo frammento di contenuto con riferimento dell’editor Rich Text in linea {#sample-wknd-single-fragment-rte-inline-reference}
 
 Questa query rappresenta un’interrogazione per ottenere:
@@ -1796,7 +1875,7 @@ Questa query rappresenta un’interrogazione:
 } 
 ```
 
-## Query di esempio per la distribuzione di DAM e Dynamic Medie Assets {#sample-queries-delivery-DAM-DM}
+## Query di esempio per la distribuzione di DAM e Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
 
 Per la consegna di immagini ottimizzate per il web (di risorse DAM):
 
@@ -1804,11 +1883,11 @@ Per la consegna di immagini ottimizzate per il web (di risorse DAM):
 
 * [Query di esempio per la consegna di immagini ottimizzate per il web con un singolo parametro specificato](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
 
-Per la consegna dell’URL a una risorsa Dynamic Medie
+Per la consegna dell’URL a una risorsa Dynamic Media
 
-* Vedi [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - Riferimento immagine](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* Vedi [Query di esempio per la consegna di risorse Dynamic Media tramite URL - Riferimento immagine](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-* Vedi [Query di esempio per la consegna di risorse Dynamic Medie tramite URL - Riferimenti multipli](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* Vedi [Query di esempio per la consegna di risorse Dynamic Media tramite URL - Riferimenti multipli](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## Struttura di esempio dei frammenti di contenuto (utilizzata con GraphQL) {#content-fragment-structure-graphql}
 
