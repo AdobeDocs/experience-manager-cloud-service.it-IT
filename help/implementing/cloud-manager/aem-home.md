@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: ecf42a4bda424bb344e1b348924f1435a99f26c7
+source-git-commit: 529e5919381d6c347f1eb45f913b2b529de80fd6
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '389'
 ht-degree: 34%
 
 ---
@@ -51,7 +51,6 @@ Gli elementi di navigazione includono Assets Browse, che carica l’archivio del
 
 Se non è disponibile alcun ambiente AEM Cloud Service di produzione, le opzioni risultano disabilitate (non disponibili) per l’utente.
 
-![](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
-
-
+![Home AEM senza ambienti di produzione](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
+.
 
