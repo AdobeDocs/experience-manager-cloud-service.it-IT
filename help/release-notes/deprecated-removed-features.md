@@ -4,10 +4,10 @@ description: Note sulla versione specifiche per le funzioni obsolete e rimosse i
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0ab75d1e49e06152cf3f4e8effe7d6d918b262c8
+source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 93%
+source-wordcount: '2800'
+ht-degree: 90%
 
 ---
 
@@ -505,7 +505,9 @@ Ulteriori informazioni sulla configurazione OSGI sono disponibili in [questa pos
 
 AEM as a Cloud Service passerà alla versione Java Runtime 21. Al fine di garantire la compatibilità, è essenziale apportare le seguenti modifiche:
 
-### Requisiti di generazione:
+### Requisiti runtime
+
+Queste regolazioni sono necessarie per garantire la compatibilità con Java 21 Runtime. Le librerie possono essere aggiornate in qualsiasi momento in quanto sono compatibili con le versioni precedenti di Java.
 
 #### Versione minima di org.objectweb.asm {#org.objectweb.asm}
 
@@ -517,9 +519,13 @@ Aggiorna l’utilizzo di org.apache.groovy alla versione 4.0.22 o successiva per
 
 Questo bundle può essere incluso indirettamente aggiungendo dipendenze di terze parti come Groovy Console di AEM.
 
+### Requisiti per la generazione
+
+Queste regolazioni sono necessarie per consentire la creazione del progetto con versioni più recenti di Java, ma non sono necessarie per la compatibilità di runtime. I plug-in Maven possono essere aggiornati in qualsiasi momento in quanto sono compatibili con versioni precedenti di Java.
+
 #### Versione minima di bnd-maven-plugin {#bnd-maven-plugin}
 
-Aggiorna l’utilizzo di bnd-maven-plugin alla versione 6.4.0 o successiva per garantire il supporto per i runtime JVM più recenti.
+Aggiorna l’utilizzo di bnd-maven-plugin alla versione 6.4.0 per garantire il supporto dei runtime JVM più recenti. Le versioni 7 o successive non sono compatibili con Java 11 o versioni precedenti, pertanto al momento non è consigliato effettuare un aggiornamento a tale versione.
 
 #### Versione minima di aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
