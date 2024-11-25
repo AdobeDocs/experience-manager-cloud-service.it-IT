@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
 workflow-type: tm+mt
 source-wordcount: '5886'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -474,10 +474,10 @@ ht-degree: 96%
    + [Panoramica dei microservizi per le risorse](/help/assets/asset-microservices-overview.md)
    + [Accessibilità in [!DNL Assets]](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
-   + [Abilita Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
+   + [Abilitare Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Utenti di Assets Collaborator](/help/assets/assets-collaborator-users.md)
-   + Consente di gestire i contenuti digitali {#manage}
+   + Gestire i contenuti digitali {#manage}
       + Selettore risorse micro front-end {#asset-selector}
          + [Panoramica del Selettore risorse](/help/assets/overview-asset-selector.md)
          + Integrazioni del Selettore risorse {#asset-selector-integration}
@@ -645,21 +645,21 @@ ht-degree: 96%
       + [Credenziali del contenuto](/help/assets/content-credentials.md)
       + [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
       + [Estensibilità dell’interfaccia utente di visualizzazione di AEM Assets](/help/assets/aem-assets-view-ui-extensibility.md)
-   + Hub di contenuti {#content-hub}
+   + Content Hub {#content-hub}
       + [Panoramica](/help/assets/product-overview.md)
-      + [Distribuire l’hub di contenuti](/help/assets/deploy-content-hub.md)
-      + [Caricare o importare risorse approvate dal marchio nell’hub di contenuti](/help/assets/upload-brand-approved-assets.md)
-      + [Configurare l’interfaccia utente dell’hub di contenuti](/help/assets/configure-content-hub-ui-options.md)
-      + [Approvare risorse per l’hub di contenuti](/help/assets/approve-assets-content-hub.md)
-      + [Cercare risorse nell’hub di contenuti](/help/assets/search-assets-content-hub.md)
-      + [Proprietà risorsa](/help/assets/asset-properties-content-hub.md)
-      + [Condividere risorse nell’hub di contenuti](/help/assets/share-assets-content-hub.md)
-      + [Scaricare risorse utilizzando l’hub di contenuti](/help/assets/download-assets-content-hub.md)
-      + [Gestire Assets con licenza su Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
-      + [Gestire le raccolte nell’hub di contenuti](/help/assets/collections-content-hub.md)
-      + [Modificare le immagini utilizzando Adobe Express nell’hub di contenuti](/help/assets/edit-images-content-hub.md)
-      + [Informazioni sulle risorse nell’hub di contenuti](/help/assets/insights-content-hub.md)
-      + [Domande frequenti sull’hub di contenuti](/help/assets/frequently-asked-questions-content-hub.md)
+      + [Implementare Content Hub](/help/assets/deploy-content-hub.md)
+      + [Caricare o importare risorse approvate dal brand in Content Hub](/help/assets/upload-brand-approved-assets.md)
+      + [Configurare l’interfaccia utente di Content Hub](/help/assets/configure-content-hub-ui-options.md)
+      + [Approvare risorse per Content Hub](/help/assets/approve-assets-content-hub.md)
+      + [Cercare risorse in Content Hub](/help/assets/search-assets-content-hub.md)
+      + [Proprietà delle risorse](/help/assets/asset-properties-content-hub.md)
+      + [Condividere risorse in Content Hub](/help/assets/share-assets-content-hub.md)
+      + [Scaricare risorse utilizzando Content Hub](/help/assets/download-assets-content-hub.md)
+      + [Gestire risorse con licenza in Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
+      + [Gestire le raccolte in Content Hub](/help/assets/collections-content-hub.md)
+      + [Modificare le immagini utilizzando Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
+      + [Informazioni sulle risorse in Content Hub](/help/assets/insights-content-hub.md)
+      + [Domande frequenti su Content Hub](/help/assets/frequently-asked-questions-content-hub.md)
    + Best practice{#best-practices}
       + [Best practice per la ricerca](/help/assets/search-best-practices.md)
       + [Gestione dei metadati e best practice](/help/assets/metadata-best-practices.md)
@@ -1043,7 +1043,7 @@ ht-degree: 96%
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
       + [Anteprima JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=it)
-   + [API AEM per la distribuzione e la gestione strutturata dei contenuti](/help/headless/apis-headless-and-content-fragments.md)
+   + [API AEM per la consegna e la gestione di contenuti strutturati](/help/headless/apis-headless-and-content-fragments.md)
    + API di GraphQL {#graphql-api}
       + [API di GraphQL per frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
       + [Gestione endpoint di GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1054,7 +1054,7 @@ ht-degree: 96%
       + [Aggiornamento dei frammenti di contenuto per riferimenti UUID](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [Query di esempio GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Risoluzione dei problemi delle query GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [OpenAPI REST AEM per la distribuzione dei frammenti di contenuto](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [OpenAPI REST AEM per la consegna dei frammenti di contenuto](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [Frammenti di contenuto e modelli OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Supporto dei frammenti di contenuto nell’API HTTP delle risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=it)
    + Sicurezza {#security}

@@ -7,7 +7,7 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: db661281831dcb07491dca16e73e835b487814a6
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 5%
+ht-degree: 96%
 
 ---
 
@@ -17,43 +17,43 @@ Dopo aver aggiunto un sito Edge Delivery al programma di produzione, viene appli
 
 Per [registrare un ticket di supporto per il progetto Edge Delivery](/help/edge/overview.md##support-ticket) è necessario aggiungere un sito Edge Delivery a Cloud Manager.
 
-Vedere anche [Introduzione ai Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
+Consulta anche [Introduzione a Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
 
 **Per aggiungere un sito Edge Delivery a Cloud Manager:**
 
-1. Accedere a Cloud Manager all&#39;indirizzo [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) e selezionare il programma appropriato.
-1. Effettua una delle operazioni seguenti:
+1. Accedi a Cloud Manager all’indirizzo [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) e seleziona il programma appropriato.
+1. Effettua una delle seguenti operazioni:
 
-   * Dalla pagina **Panoramica del programma**, fai clic sulla scheda **Edge Delivery**. Quindi, nell&#39;angolo inferiore destro della pagina, fare clic su **Aggiungi sito Edge Delivery**.
+   * Dalla pagina **Panoramica del programma**, fai clic sulla scheda **Edge Delivery**. Quindi, nell’angolo inferiore a destra della pagina, fai clic su **Aggiungi sito Edge Delivery**.
 
-     ![Aggiungi sito Edge Delivery dalla scheda Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
+     ![Aggiungere un sito Edge Delivery dalla scheda Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
-   * Nell&#39;angolo superiore sinistro della pagina fare clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare il menu sul lato sinistro.
-Nell&#39;intestazione **Services** fare clic sull&#39;icona ![Pagina Web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Siti Edge Delivery**.
-Fai clic su **Aggiungi sito** nell&#39;angolo superiore destro della pagina.
+   * Nell’angolo superiore a sinistra della pagina fai clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare il menu sul lato sinistro.
+Nell’intestazione **Servizi** fai clic sull’![icona Pagina Web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Siti Edge Delivery**.
+Fai clic su **Aggiungi sito** nell’angolo superiore a destra della pagina.
 
-     ![Aggiungi sito Edge Delivery dal pulsante Edge Delivery Sites](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
+     ![Aggiungere un sito Edge Delivery dal pulsante Edge Delivery Sites](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 
 1. Nella finestra di dialogo **Aggiungi sito Edge Delivery**, fornisci le seguenti informazioni nei campi obbligatori:
 
-   | Campo di testo | Descrizione |
+   | Campo testo | Descrizione |
    | - | --- |
    | Nome sito | Immetti il nome del sito Edge Delivery che stai aggiungendo.<br>Il nome funge da identificatore univoco per il sito in Cloud Manager. |
    | URL archivio | Immetti l’archivio Git in cui è memorizzato il codice del sito web.<br>Questo campo consente a Cloud Manager di estrarre il codice da tale archivio durante il processo di distribuzione. |
    | Descrizione sito (facoltativa) | Immetti una breve descrizione del sito Edge Delivery che stai aggiungendo.<br>Una descrizione consente di identificare e differenziare il sito, semplificandone la gestione e il riconoscimento tra gli altri siti aggiunti. |
 
-1. Nell&#39;angolo inferiore destro della finestra di dialogo fare clic su **Aggiungi**.
+1. Nell’angolo inferiore a destra della finestra di dialogo, fai clic su **Aggiungi**.
 
-1. Nella finestra di dialogo **Verifica proprietà del repository**, verificare la proprietà del repository eseguendo la procedura seguente:
+1. Nella finestra di dialogo **Verifica proprietà dell’archivio**, controlla la proprietà del repository eseguendo la procedura seguente:
 
    | Numero passaggio | Descrizione |
    | - | - |
-   | **1** | Aggiungere un file con percorso e nome `well-known/adobe/cloudmanager-challenge.txt` al ramo `main` dell&#39;archivio Git elencato nel campo **URL archivio**. *non* aggiungere un punto all&#39;inizio del percorso.<br>Se necessario, fare clic su ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) per copiare il percorso negli Appunti. |
-   | **2** | Aggiungi il codice visualizzato nel campo di testo del passaggio 2 al file appena creato nel passaggio 1.<br>Se necessario, fai clic su ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) per copiare il codice negli Appunti. |
-   | **3** | Crea una richiesta di pull nell&#39;archivio Git per le modifiche appena create, quindi uniscila in `main` per eseguire il commit del codice. |
+   | **1** | Aggiungi un file con percorso e nome `well-known/adobe/cloudmanager-challenge.txt` al ramo `main` dell’archivio Git elencato nel campo **URL archivio**. *Non* aggiungere un punto all’inizio del percorso.<br>Se necessario, fai clic su ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) per copiare il percorso negli Appunti. |
+   | **2** | Aggiungi il codice visualizzato nel campo di testo del passaggio 2 al file appena creato nel passaggio 1.<br>Se necessario, fai clic su ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) per copiare il codice negli appunti. |
+   | **3** | Crea una richiesta di pull nell’archivio Git per le modifiche appena create, quindi uniscila in `main` per eseguire il commit del codice. |
 
-1. Fare clic su **Verifica**.
+1. Fai clic su **Verifica**.
 
-Quando l’archivio viene verificato, il suo stato nella tabella Edge Delivery Sites viene aggiornato. Un cerchio verde con un segno di spunta bianco all&#39;interno indica lo stato.
+Quando l’archivio viene verificato, il suo stato nella tabella Edge Delivery Sites viene aggiornato. Un cerchio verde con un segno di spunta bianco all’interno indica lo stato.
 
-Nella stessa tabella fare clic su ![Informazioni sul sito Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) per visualizzare i dettagli del sito. Queste informazioni includono l’URL dell’archivio verificato, insieme agli URL del sito web di anteprima e produzione.
+Nella stessa tabella fai clic su ![Informazioni sul sito Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) per visualizzarne i dettagli. Queste informazioni includono l’URL dell’archivio verificato, insieme agli URL del sito web di anteprima e produzione.

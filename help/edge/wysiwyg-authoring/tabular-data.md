@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ Questo documento utilizza l’esempio dei reindirizzamenti per illustrare come c
 
 Per creare mappature utilizzando i fogli di calcolo nel progetto AEM con Edge Delivery Services, è necessario aver creato il sito utilizzando il relativo modello più recente.
 
-Per ulteriori informazioni, consulta il documento [Guida introduttiva per sviluppatori per l&#39;authoring di WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
+Per ulteriori informazioni, consulta il documento [Guida introduttiva per gli sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 ## Creazione di un foglio di calcolo {#spreadsheet}
 
@@ -150,7 +150,7 @@ Affinché AEM possa pubblicare i dati nel foglio di calcolo, è inoltre necessar
 
    >[!NOTE]
    >
-   >Questa voce `paths.json` si basa sull&#39;esempio di creazione di reindirizzamenti utilizzando dati tabulari. Assicurarsi di aggiornare il percorso appropriato per il tipo di foglio di calcolo [ che si sta creando.](#other)
+   >Questa voce `paths.json` si basa sull’esempio di creazione di reindirizzamenti utilizzando dati tabulari. Assicurati di aggiornare il percorso appropriato per il [tipo di foglio di calcolo che si sta creando.](#other)
 
 1. Fai clic su **Conferma modifiche...** per salvare le modifiche apportate a `main`.
 
@@ -174,7 +174,7 @@ Il foglio di calcolo dei reindirizzamenti ora è pubblicato e accessibile al pub
 
 >[!TIP]
 >
->Per ulteriori informazioni sulle mappature dei percorsi, vedere il documento [Mappatura dei percorsi per Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+>Per ulteriori informazioni sulle mappature dei percorsi, consulta il documento [Mappatura dei percorsi per Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## Altri tipi di fogli di calcolo {#other}
 
@@ -193,7 +193,7 @@ Per [Configurazione](https://www.aem.live/docs/configuration), [Intestazioni](ht
 * Configurazione: `/.helix/config.json`
 * Intestazioni: `/.helix/headers.json`
 * Metadati: `/metadata.json`
-* Tassonomia: per ulteriori informazioni, vedere il documento [Gestione dei dati di tassonomia](/help/edge/wysiwyg-authoring/taxonomy.md).
+* Tassonomia: per ulteriori informazioni, consulta il documento [Gestione dei dati di tassonomia](/help/edge/wysiwyg-authoring/taxonomy.md).
 
 Inoltre, è possibile [creare un foglio di calcolo personalizzato](#own-spreadsheet) con colonne arbitrarie per uso personale.
 
