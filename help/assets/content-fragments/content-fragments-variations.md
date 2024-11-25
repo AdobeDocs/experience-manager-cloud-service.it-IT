@@ -5,7 +5,7 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
 workflow-type: tm+mt
 source-wordcount: '2504'
 ht-degree: 52%
@@ -14,7 +14,7 @@ ht-degree: 52%
 
 # Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
-[Le varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una caratteristica significativa dei frammenti di contenuto nell&#39;as a Cloud Service di Adobe Experience Manager (AEM). Questo perché ti consente di creare e modificare copie del contenuto **Master** da utilizzare su canali e scenari specifici. In particolare, questo rende la distribuzione di contenuti headless ancora più flessibile.
+[Le varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una caratteristica significativa dei frammenti di contenuto nell&#39;as a Cloud Service Adobe Experience Manager (AEM). Questo perché ti consente di creare e modificare copie del contenuto **Master** da utilizzare su canali e scenari specifici. In particolare, questo rende la distribuzione di contenuti headless ancora più flessibile.
 
 >[!NOTE]
 >
