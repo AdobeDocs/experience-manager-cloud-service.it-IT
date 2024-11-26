@@ -4,9 +4,9 @@ description: Scopri come creare blocchi abilitati per l’utilizzo con l’edito
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1428'
 ht-degree: 97%
 
 ---
@@ -328,8 +328,6 @@ Aggiungendo una proprietà `classes` al blocco, quella di cui è stato eseguito 
 Con questa guida hai eseguito la conferma direttamente nel ramo `main` per semplicità. La sperimentazione in un archivio di esempio in genere non è un problema. Per il lavoro effettivo del progetto, [dovresti seguire le best practice di sviluppo](https://www.aem.live/docs/dev-collab-and-good-practices) sviluppando in un ramo diverso e rivedendo tutte le modifiche tramite richiesta pull prima di unire nel `main`.
 
 Se non stai sviluppando nel ramo `main`, puoi aggiungere `?ref=<branch>` nella barra di posizione dell’editor universale per caricare la pagina dal ramo. `<branch>` è il nome del ramo utilizzato per l’anteprima del progetto o gli URL live, ad esempio `https://<branch>--<repo>--<owner>.hlx.page`.
-
-La pubblicazione di contenuti con un nuovo modello è supportata solo quando il modello viene unito al ramo `main`.
 
 ## Riutilizzo dei blocchi per l’authoring basato su documenti {#reusing-blocks}
 
