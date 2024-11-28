@@ -3,9 +3,9 @@ title: API di consegna
 description: Scopri come utilizzare le API di consegna.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '627'
 ht-degree: 6%
 
 ---
@@ -44,7 +44,8 @@ La tabella seguente illustra l’utilizzo delle varie API di consegna disponibil
 
 >[!NOTE]
 >
-[I predefiniti immagine, la creazione di immagini avanzate e altri modificatori di immagini](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) sono disponibili come funzionalità di disponibilità limitata. Per ottenere l&#39;accesso, [crea e invia un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+* [I predefiniti immagine, la creazione di immagini avanzate e altri modificatori di immagini](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) sono disponibili come funzionalità di disponibilità limitata. Per ottenere l&#39;accesso, [crea e invia un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+* Ritaglio avanzato non disponibile con [Assets Prime](/help/assets/assets-ultimate-overview.md).
 
 ## Endpoint API di consegna {#delivery-apis-endpoint}
 

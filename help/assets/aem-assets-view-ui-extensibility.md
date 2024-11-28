@@ -4,16 +4,16 @@ description: Scopri la funzionalità di estensibilità dell’interfaccia utente
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '589'
 ht-degree: 3%
 
 ---
 
 # Estensibilità dell’interfaccia utente di visualizzazione di AEM Assets{#AEM-Assets-View-UI-Extensibility}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 La vista AEM Assets dispone della funzionalità di estensibilità dell’interfaccia utente. Questa funzionalità consente agli utenti di aggiungere componenti personalizzati all’interfaccia utente di Assets View per soddisfare esigenze aziendali specifiche che le funzionalità predefinite della visualizzazione AEM Assets non soddisfano. Questa funzione di estensibilità migliora la flessibilità di AEM Assets View, che consente alle organizzazioni di adattare l’interfaccia per flussi di lavoro e requisiti specifici.
@@ -39,7 +39,7 @@ Nella Vista Assets, passa alla pagina Dettagli di una risorsa, cartella o raccol
 ## Prerequisiti per l’aggiunta del componente Estensibilità
 
 * [Accesso alla visualizzazione Assets](#1).
-* Adobe Accesso a [Generatore di app](https://developer.adobe.com/app-builder/docs/overview/), incluso in [Assets Ultimate](/help/assets/assets-ultimate-overview.md) per impostazione predefinita.
+* Accedi al [generatore di app Adobe](https://developer.adobe.com/app-builder/docs/overview/).
 * Autorizzato a Sviluppatore del ruolo Amministratore di sistema all’interno dell’organizzazione. Per ulteriori informazioni, vedere [questo](https://developer.adobe.com/uix/docs/guides/get-access/).
 * Lo strumento per riga di comando Adobe IO (AIO CLI) deve essere installato sui computer locali. Questo strumento è essenziale per la creazione e la distribuzione di progetti di estensione. Per ulteriori informazioni, vedere [questo](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up).
 * Buona conoscenza delle tecnologie JavaScript, Node.js e React.
