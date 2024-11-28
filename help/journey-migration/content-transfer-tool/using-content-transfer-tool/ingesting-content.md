@@ -4,10 +4,10 @@ description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i c
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
+source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
 workflow-type: tm+mt
-source-wordcount: '3187'
-ht-degree: 11%
+source-wordcount: '3296'
+ht-degree: 10%
 
 ---
 
@@ -169,6 +169,17 @@ Se &quot;Aggiornamenti della versione dell’AEM&quot; è attivo (ovvero, gli ag
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
+### Errore di acquisizione a causa di un ambiente cloud non in stato pronto {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
+>title="Ambiente cloud non in stato pronto"
+>abstract="In rare istanze, nell’ambiente cloud di destinazione potrebbero verificarsi problemi imprevisti che impediscono l’acquisizione."
+
+In rari casi, nell’ambiente del Cloud Service di destinazione dell’acquisizione potrebbero verificarsi problemi imprevisti. Di conseguenza, l’acquisizione non riuscirà perché l’ambiente non è nello stato &quot;ready&quot; previsto. Controlla il registro di acquisizione per visualizzare ulteriori dettagli sullo stato di errore riscontrato.
+
+Assicurati che l’ambiente di authoring sia disponibile e attendi alcuni minuti prima di ripetere l’acquisizione. Se il problema persiste, contatta l’assistenza clienti segnalando lo stato di errore riscontrato.
+
 ### Errore di acquisizione integrativa a causa della violazione del vincolo di unicità {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
@@ -239,7 +250,7 @@ Per evitare questa restrizione, eseguire [Best Practices Analyzer](/help/journey
 
 Talvolta, problemi intermittenti inattesi potrebbero prestarsi a acquisizioni non riuscite, dove purtroppo l’unico ricorso è quello di ritentare l’acquisizione. Esamina il registro di acquisizione per individuare la causa dell’errore e verificare se è in linea con uno degli errori elencati di seguito, dove deve essere effettuato un nuovo tentativo.
 
-## Problemi MongoDB {#mongo-db-issues}
+#### Problemi MongoDB {#mongo-db-issues}
 
 * `Atlas prescale timeout error` - La fase di acquisizione tenterà di prescrivere il database cloud di destinazione a una dimensione appropriata che sia allineata alle dimensioni del contenuto del set di migrazione da acquisire. Di rado, questa operazione non viene completata entro il periodo di tempo previsto.
 * `Exhausted mongo restore retries` - I tentativi di ripristinare un dump locale del contenuto del set di migrazione acquisito nel database cloud sono stati esauriti. Questo indica un problema generale di salute/rete con MongoDB, che spesso guarisce se stesso dopo pochi minuti.
