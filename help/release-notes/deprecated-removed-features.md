@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
 workflow-type: tm+mt
 source-wordcount: '2800'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -42,10 +42,10 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
 | [!DNL Assets] | Carica risorse direttamente in [!DNL Experience Manager]. Consulta [API di caricamento risorse obsolete](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilizza il [caricamento binario diretto](/help/assets/add-assets.md). Per informazioni di carattere tecnico, consulta l’articolo sulle [API di caricamento diretto](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Alcuni passaggi](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) del flusso di lavoro `DAM Asset Update` non sono supportati, inclusa la chiamata di strumenti della riga di comando come [!DNL ImageMagick]. | [I microservizi per le risorse](/help/assets/asset-microservices-overview.md) sostituiscono numerosi flussi di lavoro. Per l’elaborazione personalizzata, utilizza i [flussi di lavoro di post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | Transcodifica FFmpeg dei video. | Per generare le miniature FFmpeg, utilizza i [microservizi per le risorse](/help/assets/asset-microservices-overview.md). Per la transcodifica FFmpeg, utilizza [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | Interfaccia utente di replica ad albero nella scheda “Distribuisci” dell’agente di replica (rimozione dopo il 30 settembre 2021) | [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Avvicinamenti al passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation). |
-| [!DNL Foundation] | Né la scheda Distribuisci nella schermata di amministrazione dell’agente di replica né l’API di replica possono essere utilizzate per replicare pacchetti di contenuti superiori a 10 MB. | [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | Interfaccia utente di replica ad albero nella scheda “Distribuisci” dell’agente di replica (rimozione dopo il 30 settembre 2021) | [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o approccio al [Passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation). |
+| [!DNL Foundation] | Né la scheda Distribuzione nella schermata di amministrazione dell’agente di replica né l’API di replica possono essere utilizzate per replicare pacchetti di contenuti superiori a 10 MB. | [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Le integrazioni che utilizzano credenziali generate dai progetti di Adobe Developer Console perderanno gradualmente il supporto per le credenziali dell’account servizio (JWT). Non sarà possibile creare nuove credenziali dell’account servizio (JWT) in Adobe Developer Console a partire dal 1° maggio 2024, anche se le credenziali dell’account servizio (JWT) esistenti possono ancora essere utilizzate per le integrazioni già configurate fino al 1° gennaio 2025, momento in cui le credenziali dell’account servizio (JWT) esistenti non funzioneranno più e i clienti dovranno effettuare la migrazione alle credenziali da server a server OAuth. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migra](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) alle credenziali da server a server OAuth. |
-| [!DNL Foundation] | Flusso di lavoro Struttura contenuto di Publish e il relativo passaggio Flusso di lavoro Struttura contenuto di Publish, utilizzato per le repliche delle gerarchie di contenuto. | Utilizza [il passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation), che offre prestazioni migliori. |
+| [!DNL Foundation] | Il flusso di lavoro Pubblica contenuti struttura e il relativo passaggio Flusso di lavoro di pubblicazione contenuti struttura, utilizzato per le repliche delle gerarchie di contenuto. | Utilizza [il passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation), che offre prestazioni migliori. |
 
 
 ## Funzioni rimosse {#removed-features}
@@ -274,7 +274,7 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
   </tr>
   <tr>
     <td>org.slf4j.event    </td>
-    <td>Questa API slf4j interna non è supportata da AEM as a Cloud Service.</td>
+    <td>Questa API slf4j interna non è supportata da AEM as a Cloud Service</td>
     <td>11/04/2022</td>
     <td>30/08/2024</td>
   </tr>
@@ -318,7 +318,7 @@ Se stai utilizzando `org.apache.sling.commons.auth` e/o `org.apache.sling.common
 
 Elenco azioni:
 * Aggiornamento di ACS AEM Commons alla versione più recente
-* Esegui la migrazione da `org.apache.sling.commons.auth` e/o `org.apache.sling.commons.auth.spi` a `org.apache.sling.auth` resp.`org.apache.sling.auth.spi`.
+* Esegui la migrazione da `org.apache.sling.commons.auth` e/o `org.apache.sling.commons.auth.spi` a `org.apache.sling.auth` resp. `org.apache.sling.auth.spi`.
 
 ### Rimozione di `org.eclipse.jetty*` {#org.eclipse.jetty}
 
@@ -529,15 +529,15 @@ Aggiorna l’utilizzo di bnd-maven-plugin alla versione 6.4.0 per garantire il s
 
 #### Versione minima di aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
-Aggiorna l’utilizzo di aemanalyser-maven-plugin alla versione 1.6.6 o successiva per garantire il supporto per i runtime JVM più recenti.
+Aggiorna l’utilizzo di aemanalyser-maven-plugin alla versione 1.6.6 o successiva per garantire il supporto dei runtime JVM più recenti.
 
 #### Versione minima di maven-bundle-plugin  {#maven-bundle-plugin}
 
-Aggiorna l’utilizzo di maven-bundle-plugin alla versione 5.1.5 o successiva per garantire il supporto per i runtime JVM più recenti.
+Aggiorna l’utilizzo di maven-bundle-plugin alla versione 5.1.5 o successiva per garantire il supporto dei runtime JVM più recenti.
 
 #### Aggiornare le dipendenze in maven-scr-plugin  {#maven-scr-plugin}
 
-`maven-scr-plugin` non è direttamente compatibile con Java 17 e 21. Tuttavia, è possibile generare i file descrittori aggiornando la versione della dipendenza ASM all’interno della configurazione del plug-in, in modo simile allo snippet seguente:
+Il `maven-scr-plugin` non è direttamente compatibile con Java 17 e 21. Tuttavia, è possibile generare i file descrittori aggiornando la versione della dipendenza ASM all’interno della configurazione del plug-in, in modo simile allo snippet seguente:
 
 ```
 [source,xml]
