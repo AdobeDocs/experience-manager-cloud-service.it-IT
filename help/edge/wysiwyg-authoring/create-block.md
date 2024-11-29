@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
 workflow-type: tm+mt
 source-wordcount: '1428'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -165,7 +165,7 @@ Dopo aver definito e confermato il blocco del preventivo di base nel progetto di
 
    * Per caricare la pagina, potrebbe essere necessario toccare o fare clic su **Accedi con Adobe** per autenticarsi ad AEM nell’editor universale.
 
-1. Nell’editor universale, seleziona una sezione. Nel pannello delle proprietà, tocca o fai clic sull&#39;icona **Aggiungi**, quindi seleziona il nuovo blocco **Preventivo** dal menu.
+1. Nell’editor universale, seleziona una sezione. Nella barra delle proprietà, tocca o fai clic sull’icona **Aggiungi** e quindi seleziona il nuovo blocco **Citazione** dal menu.
 
    * L’icona **Aggiungi** è un simbolo più.
    * Sai di aver selezionato una sezione se il contorno blu dell’oggetto selezionato presenta una scheda etichettata come **Sezione**.
@@ -175,7 +175,7 @@ Dopo aver definito e confermato il blocco del preventivo di base nel progetto di
 
 1. La pagina viene ricaricata e il blocco della citazione viene aggiunto nella parte inferiore della sezione selezionata con il contenuto predefinito specificato nel file `component-definitions.json`.
 
-   * Il blocco delle virgolette può essere selezionato e modificato come qualsiasi altro blocco sul posto o nel pannello delle proprietà.
+   * Il blocco della citazione può essere selezionato e modificato come qualsiasi altro blocco nella stessa posizione o nel pannello delle proprietà.
    * Lo stile viene applicato in un passaggio successivo.
 
    ![Pagina con il nuovo blocco della citazione nella sezione selezionata](assets/create-block/quote-added.png)
