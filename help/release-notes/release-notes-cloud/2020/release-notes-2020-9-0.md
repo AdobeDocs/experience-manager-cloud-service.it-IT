@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione 2020.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2020.9.0."
+description: '[!DNL Adobe Experience Manager] note sulla versione 2020.9.0 di as a Cloud Service.'
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 15%
+ht-degree: 14%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 è il 24 settembre 2020.
 
@@ -70,7 +70,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Data di pubblicazione {#release-date-cm}
 
-La data di rilascio di [!UICONTROL Cloud Manager] versione 2020.9.0 è il venerdì 3 settembre 2020.
+La data di pubblicazione di [!UICONTROL Cloud Manager] versione 2020.9.0 è il 3 settembre 2020.
 
 ### Novità {#what-is-new-cloud-manager}
 

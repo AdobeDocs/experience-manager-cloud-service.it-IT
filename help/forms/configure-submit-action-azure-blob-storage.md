@@ -4,7 +4,7 @@ Description: Learn how to create an Azure Blob Storage Configuration in AEM Form
 keywords: Integrazione dell’archiviazione Azure Blob con AEM Forms, invio dei dati all’archiviazione Azure, creazione della configurazione dell’archiviazione Azure in AEM Forms, utilizzo dell’archiviazione Azure Blob nell’azione di invio di Forms adattivo
 feature: Adaptive Forms, Core Components
 exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
-title: "Come configurare un’azione di invio per un modulo adattivo?"
+title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt

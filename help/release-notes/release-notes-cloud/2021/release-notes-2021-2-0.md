@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione 2021.2.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2021.2.0."
+description: '[!DNL Adobe Experience Manager] note sulla versione 2021.2.0 di as a Cloud Service.'
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 32%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service.
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 è il 25 febbraio 2021.
 La seguente versione (2021.3.0) sarà del 25 marzo 2021.
@@ -131,13 +131,13 @@ La data di pubblicazione dello strumento Content Transfer v1.2.4 è il 10 febbra
 
 * Quando si mappavano più utenti, gli ID IMS di alcuni utenti non venivano mappati correttamente. Questo problema è stato risolto.
 
-### Data di rilascio {#release-date-ctt-feb}
+### Data di pubblicazione {#release-date-ctt-feb}
 
 La data di pubblicazione dello strumento Content Transfer v1.2.2 è il 1° febbraio 2021.
 
 ### Novità dello strumento Content Transfer {#what-is-new-ctt}
 
-* Nuove funzionalità e interfaccia utente aggiunte allo strumento Content Transfer (Trasferimento contenuti) - Strumento di mappatura utenti. Questa funzione mappa automaticamente utenti e gruppi esistenti ai loro ID di sistema Adobe Identity Management come parte dell’attività di migrazione dei contenuti.
+* Nuove funzionalità e interfaccia utente aggiunte allo strumento Content Transfer (Trasferimento contenuti) - Strumento di mappatura utenti. Questa funzione mappa automaticamente utenti e gruppi esistenti ai loro ID di sistema di Adobe Identity Management come parte dell’attività di migrazione dei contenuti.
 Vedi [Utilizzo dello strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) per ulteriori dettagli.
 * Lo strumento Content Transfer (Trasferimento contenuti) ora esegue la migrazione di tutti i gruppi e gli utenti a cui si fa riferimento nel set di migrazione, inclusi gli elementi figlio.
 * Gli utenti possono selezionare alcuni percorsi in `/etc` durante la creazione dei set di migrazione.
@@ -153,7 +153,7 @@ La data di rilascio di Best Practices Analyzer v2.1.2 è il 18 febbraio 2021.
 * Possibilità di rilevare l’utilizzo dell’implementazione di AEM Forms e AEM Forms e di indicare le aree rilevanti per la migrazione ad AEM Forms as a Cloud Service.
 * Possibilità di rilevare e segnalare l’utilizzo e il numero di componenti e modelli personalizzati.
 * Possibilità di rilevare il tipo di archivio nodi e di archivio dati utilizzati.
-* Possibilità di rilevare l’utilizzo di Dynamic Medie.
+* Possibilità di rilevare l’utilizzo di Dynamic Media.
 * Possibilità di rilevare la versione Java utilizzata.
 
 ## Strumenti di refactoring del codice {#code-refactoring-tools}

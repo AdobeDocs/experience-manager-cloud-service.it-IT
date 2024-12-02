@@ -1,6 +1,6 @@
 ---
 title: Note sulla versione 2020.2.0
-description: "[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2020.2.0."
+description: '[!DNL Adobe Experience Manager] note sulla versione 2020.2.0 di as a Cloud Service.'
 exl-id: 005c4756-44c6-4af5-9b0c-0fc07bd211a0
 feature: Release Information
 role: Admin
@@ -15,7 +15,7 @@ ht-degree: 91%
 
 Questa pagina illustra le note generali sulla versione di Experience Manager as a Cloud Service 2020.2.0.
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio per Experience Manager as a Cloud Service 2020.2.0 è il giovedì 13 febbraio 2020.
 

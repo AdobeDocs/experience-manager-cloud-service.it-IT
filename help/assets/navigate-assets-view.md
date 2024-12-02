@@ -1,5 +1,5 @@
 ---
-title: Interfaccia utente '[!DNL Assets view]'
+title: Interfaccia utente di [!DNL Assets view]
 description: Comprendere l’interfaccia utente e la navigazione in [!DNL Assets view].
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
@@ -13,7 +13,7 @@ ht-degree: 74%
 
 # Accedere ai file e alle cartelle e visualizzare le risorse {#view-assets-and-details}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->

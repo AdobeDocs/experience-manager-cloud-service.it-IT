@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione 2021.3.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2021.3.0."
+description: '[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2021.3.0.'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1271'
-ht-degree: 34%
+ht-degree: 33%
 
 ---
 
@@ -66,7 +66,7 @@ Nel corso degli anni, AEM Forms ha aiutato molte organizzazioni a fornire esperi
 
 È possibile utilizzare [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) per creare moduli digitali, connettere i moduli a origini dati esistenti, integrare i moduli con Adobe Sign per aggiungere firme elettroniche ai moduli, generare documenti di record (DoR) per archiviare i moduli inviati come file PDF. Il servizio può anche convertire i PDF forms esistenti in moduli digitali. Oltre alle funzioni standard di AEM Forms, il servizio offre diverse funzionalità native per il cloud, come il ridimensionamento automatico, l&#39;assenza di tempi di inattività per gli aggiornamenti e l&#39;ambiente di sviluppo nativo per il cloud.
 
-Puoi rivolgerti al tuo rappresentante di Adobe per una demo o per registrarti al servizio.
+Puoi rivolgerti al tuo rappresentante Adobe per una demo o per registrarti al servizio.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -85,7 +85,7 @@ Puoi rivolgerti al tuo rappresentante di Adobe per una demo o per registrarti al
 
 Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.3.0.
 
-## Data di rilascio {#release-date-cm-march}
+## Data di pubblicazione {#release-date-cm-march}
 
 La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.3.0 è l’11 marzo 2021.
 La prossima versione è pianificata per il venerdì 8 aprile 2021.
@@ -142,7 +142,7 @@ La data di pubblicazione dello strumento Content Transfer v1.3.4 è il 19 marzo 
 
 * CTT ignorava il contenuto delle cartelle con lo stesso nome ma con un trattino nel nome. Questo problema è stato risolto.
 
-### Data di rilascio {#release-date-ctt-march}
+### Data di pubblicazione {#release-date-ctt-march}
 
 La data di pubblicazione dello strumento Content Transfer v1.3.0 è il 4 marzo 2021.
 

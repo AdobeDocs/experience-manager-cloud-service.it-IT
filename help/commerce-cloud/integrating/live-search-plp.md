@@ -1,5 +1,5 @@
 ---
-title: Componente CIF della pagina dell'elenco prodotti '[!DNL Live Search]'
+title: Componente CIF della pagina di elenco prodotti [!DNL Live Search]
 description: Utilizzo di componenti CIF per abilitare [!DNL Live Search] il componente Pagina di elenco prodotti in un sito AEM
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework

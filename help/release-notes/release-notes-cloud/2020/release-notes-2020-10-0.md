@@ -1,6 +1,6 @@
 ---
 title: Note sulla versione 2020.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2020.10.0."
+description: '[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2020.10.0.'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 feature: Release Information
 role: Admin
@@ -15,7 +15,7 @@ ht-degree: 24%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 è il 28 ottobre 2020.
 La seguente versione (2020.11.0) sarà del 1° dicembre 2020.
@@ -79,7 +79,7 @@ Per registrarti al programma beta, puoi inviare un’e-mail all’indirizzo [!DN
 
 ### Data di pubblicazione {#release-date-cm}
 
-La data di rilascio per Cloud Manager nell’Experience Manager as a Cloud Service 2020.10.0 di è il 2 ottobre 2020.
+La data di rilascio per Cloud Manager nell’Experienci Manager as a Cloud Service 2020.10.0 di è il 2 ottobre 2020.
 
 ### Novità in [!DNL Cloud Manager] {#what-is-new-cm}
 

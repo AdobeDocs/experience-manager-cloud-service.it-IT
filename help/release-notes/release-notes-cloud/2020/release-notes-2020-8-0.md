@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione 2020.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2020.8.0."
+description: '[!DNL Adobe Experience Manager] note sulla versione 2020.8.0 di as a Cloud Service.'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
 source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1031'
-ht-degree: 35%
+ht-degree: 33%
 
 ---
 
@@ -46,7 +46,7 @@ La sezione seguente illustra le note generali sulla versione di Experience Manag
 
 * Le anteprime dei documenti PDF nativi e ad alta fedeltà sono ora disponibili in Brand Portal. Vedi [panoramica del visualizzatore di documenti](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* È ora possibile annullare la validità della rete CDN direttamente da [!DNL Dynamic Media] in AEM as a Cloud Service (anziché utilizzare [!DNL Dynamic Media Classic]). In questo modo le risorse più recenti vengono servite in pochi minuti anziché in alcune ore. Vedere [Annullamento della validità della cache CDN tramite Dynamic Medie](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+* È ora possibile annullare la validità della rete CDN direttamente da [!DNL Dynamic Media] in AEM as a Cloud Service (anziché utilizzare [!DNL Dynamic Media Classic]). In questo modo le risorse più recenti vengono servite in pochi minuti anziché in alcune ore. Vedere [Annullamento della validità della cache CDN tramite Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
 * Il supporto per l&#39;accesso facilitato è stato aggiunto ai controlli dell&#39;interfaccia utente, alla navigazione, alla navigazione e alla ricerca in [!DNL Assets].
 
@@ -74,7 +74,7 @@ La sezione seguente illustra le note generali sulla versione di Experience Manag
 
 ### Data di pubblicazione {#release-date-cm}
 
-La data di rilascio di [!UICONTROL Cloud Manager] versione 2020.8.0 è il venerdì 6 agosto 2020.
+La data di pubblicazione di [!UICONTROL Cloud Manager] versione 2020.8.0 è il 6 agosto 2020.
 
 ### Novità {#what-is-new-cloud-manager}
 
@@ -142,6 +142,6 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Strumenti di
 
 * Plug-in AIO-CLI rilasciato per unificare gli strumenti di refactoring del codice per consentire agli sviluppatori di richiamare ed eseguire strumenti di refactoring del codice da un’unica posizione. Per ulteriori dettagli, consulta [Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration).
 
-* AEM Dispatcher Converter esteso per supportare le conversioni delle configurazioni Managed Services Dispatcher on-premise e Adobe in configurazioni Dispatcher compatibili con AEM as a Cloud Service. Per ulteriori dettagli, consulta [Risorsa Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter).
+* AEM Dispatcher Converter esteso per supportare le conversioni delle configurazioni Dispatcher On-Premise e Adobe Managed Services in configurazioni Dispatcher compatibili con AEM as a Cloud Service. Per ulteriori dettagli, consulta [Risorsa Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter).
 
 * AEM Dispatcher Converter riscritto in ` node.js ` e integrato con il plug-in AIO-CLI.

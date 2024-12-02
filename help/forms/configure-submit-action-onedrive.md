@@ -4,7 +4,7 @@ Description: Explore the streamlined process of connecting AEM Forms with Micros
 keywords: Integrazione di AEM Forms OneDrive, connessione a Microsoft OneDrive, configurazione di OneDrive con moduli AEM
 feature: Adaptive Forms, Core Components
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
-title: "Come configurare un’azione di invio per un modulo adattivo?"
+title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt

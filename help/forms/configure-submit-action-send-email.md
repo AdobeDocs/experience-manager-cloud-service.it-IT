@@ -4,7 +4,7 @@ Description: Explore the process to set up email notifications when submitting a
 keywords: come inviare un’e-mail per un modulo adattivo, Azione di invio e-mail, E-mail modulo adattivo, E-mail di invio modulo, Guida all’invio e-mail
 feature: Adaptive Forms, Core Components
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
-title: "Come configurare un’azione di invio per un modulo adattivo?"
+title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt

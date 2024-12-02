@@ -1,10 +1,10 @@
 ---
 Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
-keywords: Endpoint REST di AEM Forms, Invia a endpoint REST, Dati Post a URL REST, Configura azione endpoint REST
+keywords: Endpoint REST di AEM Forms, invia all’endpoint REST, invia dati all’URL REST, configura azione endpoint REST
 feature: Adaptive Forms, Core Components
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-title: "Come configurare un’azione di invio per un modulo adattivo?"
+title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt

@@ -4,7 +4,7 @@ Description: Explore the process of automated workflow initiation with AEM Forms
 keywords: Flusso di lavoro AEM, integra modulo adattivo con flusso di lavoro AEM, richiama azione di invio flusso di lavoro AEM
 feature: Adaptive Forms, Core Components
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
-title: "Come configurare un’azione di invio per un modulo adattivo?"
+title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt

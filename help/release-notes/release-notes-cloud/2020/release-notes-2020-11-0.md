@@ -1,6 +1,6 @@
 ---
 title: Note sulla versione 2020.11.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] as a Cloud Service note sulla versione 2020.11.0."
+description: '[!DNL Adobe Experience Manager] note sulla versione as a Cloud Service per 2020.11.0.'
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
 feature: Release Information
 role: Admin
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Experience Manager] as a Cloud Service.
 
-## Data di rilascio {#release-date}
+## Data di pubblicazione {#release-date}
 
 La data di rilascio per [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 è il 2 dicembre 2020.
 La seguente versione (2020.12.0) sarà del 17 dicembre 2020
@@ -54,7 +54,7 @@ La seguente versione (2020.12.0) sarà del 17 dicembre 2020
    * Quando si seleziona una cella della griglia dalla griglia presente nella pagina, lo stato attivo si sposta sulla barra delle azioni visualizzata sullo schermo.
    * Gli utenti visivi possono distinguere tra testo normale e un collegamento, poiché vengono visualizzati indizi visivi (sottolineatura e icona con freccia) per i collegamenti a tutte le soluzioni nella home page di [!DNL Experience Manager].
 
-* **Predefiniti per set di batch in Dynamic Medie**: ora puoi automatizzare la creazione e l&#39;organizzazione di più risorse in un set di immagini o set 360 gradi al momento del caricamento dei file di risorse in una cartella singolarmente o utilizzando l&#39;acquisizione in blocco.
+* **Predefiniti per set di batch in Dynamic Media**: ora puoi automatizzare la creazione e l&#39;organizzazione di più risorse in un set di immagini o set 360 gradi al momento del caricamento dei file di risorse in una cartella singolarmente o utilizzando l&#39;acquisizione in blocco.
 
   Consulta [Informazioni sui predefiniti per set di batch](/help/assets/dynamic-media/batch-set-presets-dm.md).
 

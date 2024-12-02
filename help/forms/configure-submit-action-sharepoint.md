@@ -4,7 +4,7 @@ Description: Learn how to send data from your Adaptive Form to a SharePoint stor
 keywords: Come connettere l'elenco di SharePoint per un modulo adattivo?, Come connettere la raccolta documenti di SharePoint per un modulo adattivo, Inviare a SharePoint, Creare una configurazione della raccolta documenti di SharePoint, Utilizzare l'azione Invia a SharePoint in un modulo adattivo, Connettere un modulo adattivo a Microsoft&reg; Elenco SharePoint.
 feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
-title: "Come configurare un’azione di invio per un modulo adattivo?"
+title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
 source-git-commit: 5e1d08e82cafc3a8a715653727f42ce0048f2b1f
 workflow-type: tm+mt
