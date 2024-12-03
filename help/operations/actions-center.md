@@ -4,10 +4,10 @@ description: Sfruttare il Centro operativo per intervenire in modo comodo in cas
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 41e06c75229d78827e35164eca37a96d6feeb730
+source-git-commit: 1bfa9ff24d3515a450216f3569b1e8b0b1e31ecc
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 48%
+source-wordcount: '1118'
+ht-degree: 47%
 
 ---
 
@@ -47,7 +47,7 @@ Nel Centro azioni è disponibile un elenco di altre notifiche recenti. È consig
 
 ![Elenco notifiche](/help/operations/assets/notification-list.png)
 
-Nella maggior parte dei casi, il pop-up deve fornire tutto il contesto necessario per risolvere il problema. Tuttavia, in caso di domande relative al supporto di Adobe, è possibile fare clic sul collegamento **Contatta il supporto** nel popup. Viene visualizzato un modulo dal quale è possibile descrivere la domanda e inviarla per creare un ticket di supporto, che includerà anche un riferimento alla notifica specifica in modo che un tecnico del supporto Adobe abbia il contesto pertinente.
+Nella maggior parte dei casi, il pop-up deve fornire tutto il contesto necessario per risolvere il problema. Tuttavia, in caso di domande relative al supporto Adobe, è possibile fare clic sul collegamento **Contatta il supporto** nel popup. Viene visualizzato un modulo dal quale è possibile descrivere la domanda e inviarla per creare un ticket di supporto, che includerà anche un riferimento alla notifica specifica in modo che un tecnico del supporto Adobe abbia il contesto pertinente.
 
 ![Contatta supporto 1](/help/operations/assets/contact-support1.png)
 
@@ -77,7 +77,7 @@ Nella tabella seguente sono elencati i tipi di notifica attualmente supportati i
 | Query GraphQL persistente non valida | Problema | Correggere la query GraphQL non valida facendo riferimento alla [documentazione sulla risoluzione dei problemi relativi alle query GraphQL persistenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Picco di traffico all’origine | Problema | Protect l’origine configurando le regole del filtro del traffico del limite di velocità che si attivano a soglie inferiori all’avviso di picco di traffico predefinito all’origine.  Consulta la sezione [Blocco di attacchi DoS e DDoS tramite le regole del traffico](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) della documentazione sulle regole del filtro del traffico, che fa riferimento a un&#39;esercitazione. |
 | Regole dei filtri di traffico CDN attivate | Problema | Se la regola del filtro del traffico corrispondente riflette un attacco e il sito non blocca tale traffico, proteggi il sito configurando una regola del filtro del traffico in modalità di blocco. Consulta la sezione [Protezione dei siti Web con regole del filtro del traffico (incluse le regole di WAF)](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) della documentazione sulle regole del filtro del traffico, che fa riferimento a un&#39;esercitazione. |
-| Errori di inoltro registro Splunk | Problema | Verifica che l’endpoint Splunk funzioni e sia raggiungibile dal tuo ambiente AEM Cloud Service. Per ulteriori informazioni sull&#39;inoltro del registro, visita la [documentazione sull&#39;inoltro del registro Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs). Se hai bisogno di assistenza per la risoluzione dei problemi o se devi apportare modifiche alla configurazione di registrazione, genera un ticket di supporto con un Adobe. |
+| Errori di inoltro registro Splunk | Problema | Verifica che l’endpoint Splunk funzioni e sia raggiungibile dal tuo ambiente AEM Cloud Service. Per ulteriori informazioni sull&#39;inoltro del registro, visita la [documentazione sull&#39;inoltro del registro Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs). Se hai bisogno di assistenza per la risoluzione dei problemi o se devi apportare modifiche alla configurazione di registrazione, genera un ticket di supporto con Adobe. |
 | Le pagine contengono un numero elevato di nodi | Proattiva | Riduci il numero totale di nodi all’interno di una pagina. Consulta la [documentazione sulla complessità delle pagine](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | Numero elevato di istanze del flusso di lavoro in esecuzione | Proattiva | Termina i flussi di lavoro in esecuzione che non sono più necessari. Scopri come [configurare un processo di eliminazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | Certificato S2S in scadenza | Proattiva | Scopri come aggiornare una credenziale nella [Documentazione sulla generazione dei token di accesso per le API lato server](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Numero elevato di connessioni | Proattiva | Scopri il connection pooling in [Connection pooling insieme alla documentazione delle reti avanzate](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
@@ -86,4 +86,5 @@ Nella tabella seguente sono elencati i tipi di notifica attualmente supportati i
 | Utenti aggiunti direttamente al gruppo personalizzato | Proattiva | Gli utenti devono essere aggiunti ai gruppi IMS pertinenti e questi gruppi IMS devono essere aggiunti come membri dei gruppi AEM. Allinea con [Best practice IMS](/help/security/ims-support.md) | |
 | Contenuto JCR mancante | Proattiva | Aggiungi un nodo di contenuto JCR mancante. Consulta la [documentazione di Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
 | Flussi di lavoro completati non eliminati | Proattiva | Riduci al minimo il numero di istanze del flusso di lavoro e migliora le prestazioni eliminando le istanze del flusso di lavoro che hanno più di 90 giorni. Scopri come [configurare le attività di manutenzione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance) | |
-| Tipo di risorsa Sling mancante nella pagina | Proattiva | Aggiungi nodo di tipo di risorsa Sling mancante. Consulta la [documentazione di Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |
+| Tipo di risorsa Sling mancante nella pagina | Proattiva | Aggiungi nodo di tipo di risorsa Sling mancante. Consulta la [documentazione di Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| Query lenta | Proattiva | Correggi le query lente definendo le definizioni di indice corrette come suggerito dalla [Scheda di riferimento rapido per le query JCQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) |
