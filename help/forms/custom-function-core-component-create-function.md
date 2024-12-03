@@ -5,7 +5,7 @@ keywords: Aggiungi una funzione personalizzata, utilizza una funzione personaliz
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Prima di iniziare ad aggiungere una funzione personalizzata al Forms adattivo, v
 * **Git:** Questo sistema di controllo della versione è necessario per la gestione delle modifiche al codice. Se non lo hai installato, scaricalo da https://git-scm.com.
 
 
-## Creare una funzione personalizzata {#create-custom-function}
+## Creare una funzione personalizzata
 
 Crea una libreria client per chiamare funzioni personalizzate nell’editor di regole. Per ulteriori informazioni, vedere [Utilizzo di librerie lato client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 

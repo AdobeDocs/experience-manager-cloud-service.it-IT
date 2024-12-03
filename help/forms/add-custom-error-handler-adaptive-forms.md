@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2336'
 ht-degree: 1%
 
 ---
@@ -197,7 +197,7 @@ Per informazioni su come utilizzare un gestore di errori predefinito utilizzando
 1. Seleziona **[!UICONTROL Crea]**.
 1. Crea una condizione nella sezione **When** della regola. Ad esempio, **Quando[il nome del campo ID animale domestico]** viene modificato. Selezione modificata dall&#39;elenco a discesa **Seleziona stato**.
 1. Nella sezione **Then**, seleziona **[!UICONTROL Richiama servizio]** dall&#39;elenco a discesa **Seleziona azione**.
-1. Selezionare un servizio **Post** e le associazioni dati corrispondenti dalla sezione **Input**. Ad esempio, per convalidare **ID animale**, selezionare un **servizio Post** come **GET/{petId}** e selezionare **ID animale** nella sezione **Input**.
+1. Seleziona un **Servizio post** e le associazioni dati corrispondenti dalla sezione **Input**. Ad esempio, per convalidare **ID animale**, selezionare un **servizio post** come **GET/animale domestico/{petId}** e selezionare **ID animale** nella sezione **Input**.
 1. Selezionare le associazioni dati dalla sezione **Output**. Seleziona **Nome animale** nella sezione **Output**.
 1. Seleziona **[!UICONTROL Gestore errori predefinito]** dalla sezione **Gestore errori**.
 1. Fai clic su **[!UICONTROL Fine]**.
@@ -222,19 +222,24 @@ Il gestore degli errori personalizzati è una funzione (libreria client) progett
 Per capire come creare e utilizzare un gestore di errori personalizzato utilizzando l&#39;azione Richiama servizio](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) dell&#39;editor di regole, prendiamo ad esempio il modulo adattivo con due campi, **ID animale domestico** e **Nome animale**, e utilizziamo un gestore di errori personalizzato nel campo **ID animale** per verificare la presenza di vari errori restituiti dall&#39;endpoint REST configurato per richiamare un servizio esterno, ad esempio `200 - OK`,`404 - Not Found`, `400 - Bad Request`.[
 
 Per aggiungere e utilizzare un gestore di errori personalizzato in un modulo adattivo, effettua le seguenti operazioni:
-1. [Crea un gestore degli errori personalizzato](#create-custom-error-message)
-1. [Utilizza l’Editor regole per configurare un gestore degli errori personalizzato](#use-custom-error-handler)
+1. [Aggiungi funzione personalizzata per gestore errori](#1-add-custom-function-for-error-handler)
+2. [Utilizza l’Editor regole per configurare un gestore degli errori personalizzato](#use-custom-error-handler)
 
-#### 1. Creare un gestore degli errori personalizzato {#create-custom-error-message}
+#### 1. Aggiungi la funzione personalizzata per il gestore degli errori
 
-Per creare una funzione di errore personalizzata, effettuare le seguenti operazioni:
+>[!NOTE]
+>
+> Per informazioni su come aggiungere funzioni personalizzate, fai clic su [Crea funzioni personalizzate in un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
 
-1. [Clona l&#39;archivio as a Cloud Service di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. Creare una cartella nella cartella `[AEM Forms as a Cloud Service repository folder]/apps/`. Ad esempio, creare una cartella denominata `experience-league`
-1. Passare a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` e creare un `ClientLibraryFolder` come `clientlibs`.
-1. Creare una cartella denominata `js`.
-1. Passare alla cartella `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`.
-1. Aggiungere un file JavaScript, ad esempio `function.js`. Il file contiene il codice per il gestore degli errori personalizzato.
+<!-- To create a custom error function, perform the following steps:
+
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
+2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
+3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
+4. Create a folder named `js`.
+5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder. -->
+
+1. Aggiungere il codice seguente per il gestore degli errori personalizzato nel file JavaScript, ad esempio `function.js`. Il file contiene il codice per il gestore degli errori personalizzato.
 Aggiungiamo il seguente codice al file JavaScript per visualizzare la risposta e le intestazioni, ricevute dall’endpoint del servizio REST, nella console del browser.
 
    ```javascript
@@ -253,43 +258,45 @@ Aggiungiamo il seguente codice al file JavaScript per visualizzare la risposta e
        }
    ```
 
-   Per chiamare il gestore errori predefinito dal gestore errori personalizzato, viene utilizzata la seguente riga del codice di esempio:
-   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+<!--
+1. Save the `function.js` file.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
+2. Add a text file as `js.txt`. The file contains:
 
-   >[!NOTE]
-   >
-   > Nel file `.content.xml`, aggiungere le proprietà `allowProxy` e `categories`.
-   >
-   > * `allowProxy = [Boolean]true`
-   > * `categories= customfunctionsdemo`
-   >Ad esempio, in questo caso, [custom-errorhandler-name] viene fornito come `customfunctionsdemo`.
+    ```javascript
+        #base=js
+        functions.js
+    ```
 
-1. Salva il file `function.js`.
-1. Passare alla cartella `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`.
-1. Aggiungere un file di testo come `js.txt`. Il file contiene:
+3. Save the `js.txt` file.    
+The created folder structure looks like:
 
-   ```javascript
-       #base=js
-       functions.js
-   ```
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
 
-1. Salva il file `js.txt`.\
-   La struttura di cartelle creata è simile alla seguente:
 
-   ![Struttura cartella della libreria client creata](/help/forms/assets/customclientlibrary_folderstructure.png)
+    >[!NOTE]
+    >
+    > * Per chiamare il gestore errori predefinito dal gestore errori personalizzato, viene utilizzata la seguente riga del codice di esempio: &quot;guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+    > * Nel file `.content.xml`, aggiungi le proprietà &quot;allowProxy&quot; e &quot;category&quot; per utilizzare la libreria client del gestore errori personalizzato in un modulo adattivo.
+    >
+    >   * `allowProxy = [Boolean]true`
+    >   * `category= customfunctionsdemo`
+    >       Ad esempio, in questo caso, [custom-errorhandler-name] viene fornito come &quot;customfunctionsdemo&quot;.
 
-   >[!NOTE]
-   >
-   > Per ulteriori informazioni su come creare funzioni personalizzate, fare clic su [funzioni personalizzate nell&#39;Editor regole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules).
 
-1. Aggiungi, esegui il commit e invia le modifiche nell’archivio utilizzando i seguenti comandi:
+1. Aggiungi, esegui il commit e invia le modifiche nell’archivio.
 
-   ```javascript
-       git add .
-       git commit -a -m "Adding error handling files"
-       git push
-   ```
+<!--
+    using the below commands:
+         
+    ```javascript
 
+        git add .
+        git commit -a -m "Adding error handling files"
+        git push
+    ```
+
+-->
 1. [Esegui la pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 Una volta eseguita correttamente la pipeline, il gestore degli errori personalizzato diventa disponibile nell’editor di regole del modulo adattivo. Ora vediamo come configurare e utilizzare un gestore di errori personalizzato utilizzando il servizio Invoke dell’editor di regole in AEM Forms.
@@ -308,7 +315,7 @@ Per utilizzare un gestore degli errori personalizzato utilizzando l&#39;azione R
 1. Seleziona **[!UICONTROL Crea]**.
 1. Crea una condizione nella sezione **When** della regola. Ad esempio, quando **[il nome del campo ID animale domestico]** viene modificato, selezionare **è cambiato** dall&#39;elenco a discesa **Seleziona stato**.
 1. Nella sezione **Then**, seleziona **[!UICONTROL Richiama servizio]** dall&#39;elenco a discesa **Seleziona azione**.
-1. Selezionare un servizio **Post** e le associazioni dati corrispondenti dalla sezione **Input**. Ad esempio, per convalidare **ID animale**, selezionare un **servizio Post** come **GET/{petId}** e selezionare **ID animale** nella sezione **Input**.
+1. Seleziona un **Servizio post** e le associazioni dati corrispondenti dalla sezione **Input**. Ad esempio, per convalidare **ID animale**, selezionare un **servizio post** come **GET/animale domestico/{petId}** e selezionare **ID animale** nella sezione **Input**.
 1. Selezionare le associazioni dati dalla sezione **Output**. Selezionare ad esempio **Nome animale** nella sezione **Output**.
 1. Seleziona **[!UICONTROL Gestore errori personalizzato]** dalla sezione **[!UICONTROL Gestore errori]**.
 1. Fai clic su **[!UICONTROL Fine]**.
