@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+source-git-commit: 47ee6803146acd93ed62b7eef1419d52f870ae90
 workflow-type: tm+mt
-source-wordcount: '5886'
-ht-degree: 97%
+source-wordcount: '5890'
+ht-degree: 100%
 
 ---
 
@@ -205,6 +205,7 @@ ht-degree: 97%
    + Note sulla versione per l&#39;editor universale {#univeral-editor}
       + [Note sulla versione corrente per l’editor universale](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
+         + [Note sulla versione 2024.11.13](/help/release-notes/universal-editor/2024/2024-11-13.md)
          + [Note sulla versione 2024.11.05](/help/release-notes/universal-editor/2024/2024-11-05.md)
          + [Note sulla versione 2024.10.29](/help/release-notes/universal-editor/2024/2024-10-29.md)
          + [Note sulla versione 2024.09.27](/help/release-notes/universal-editor/2024/2024-09-27.md)
@@ -456,7 +457,7 @@ ht-degree: 97%
             + [Best practice per la traduzione](/help/sites-cloud/administering/translation/best-practices.md)
       + [Amministrazione dei tag](/help/sites-cloud/administering/tags.md)
       + [Amministrazione dei flussi di lavoro](/help/sites-cloud/administering/workflows-administering.md)
-      + [Console modelli](/help/sites-cloud/administering/templates-console.md)
+      + [Console Modelli](/help/sites-cloud/administering/templates-console.md)
    + Integrazione con AEM as a Cloud Service {#integrations}
       + [Integrazione con Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integrazione con Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
@@ -644,7 +645,7 @@ ht-degree: 97%
       + [Gestire i tag](/help/assets/tagging-management-assets-view.md)
       + [Credenziali del contenuto](/help/assets/content-credentials.md)
       + [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-      + [Estensibilità dell’interfaccia utente di visualizzazione di AEM Assets](/help/assets/aem-assets-view-ui-extensibility.md)
+      + [Estensibilità dell’interfaccia utente della vista di AEM Assets](/help/assets/aem-assets-view-ui-extensibility.md)
    + Content Hub {#content-hub}
       + [Panoramica](/help/assets/product-overview.md)
       + [Implementare Content Hub](/help/assets/deploy-content-hub.md)
@@ -720,11 +721,11 @@ ht-degree: 97%
          + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
          + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
          + [Progettare uno schema XML per un modulo adattivo](/help/forms/adaptive-form-xml-schema-form-model.md)
-         + Integrare Forms adattivo con Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+         + Integrare moduli adattivi con Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
             + [Integrare Adobe Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-            + [Configura nuovo modulo da integrare con il Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [Configurare l’origine dati Adobe Marketo Engage per Forms adattivo esistente](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [Configurare l’azione di invio al Marketo Engage per i moduli esistenti](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+            + [Configurare un nuovo modulo da integrare con Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [Configurare l’origine dati Adobe Marketo Engage per moduli adattivi esistenti](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [Configurare l’azione di invio a Marketo Engage per i moduli esistenti](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Moduli adattivi {#adaptive-forms-authoring}
       + [Creare un modulo adattivo](/help/forms/create-an-adaptive-form.md)
       + [Creare un frammento di modulo adattivo](/help/forms/adaptive-form-fragments.md)
@@ -750,13 +751,13 @@ ht-degree: 97%
             + [Configurare l’azione di invio Invia a endpoint REST per moduli adattivi](/help/forms/configure-submit-action-restpoint.md)
             + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
             + [Utilizzare reCAPTCHA di Google in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Utilizzare hCAPTCHA in un modulo adattivo Componenti core](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Utilizzare hCAPTCHA in un modulo adattivo per i componenti core](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Aggiungere un handler degli errori personalizzato in un modulo adattivo](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/supporting-new-language-localization-core-components.md)
             + [Progettare uno schema JSON per un modulo adattivo (componenti core)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Aggiungere versioni, commenti e annotazioni a un modulo adattivo](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Confronta i moduli adattivi](/help/forms/compare-forms.md)
-            + [Crea azione di invio personalizzata](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+            + [Creare un’azione di invio personalizzata](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Conversione di moduli adattivi basati su componenti di base in moduli basati su Componenti core tramite lo strumento utility di migrazione](/help/forms/migration-utility-tool-for-af-core-components.md)
             + Introduzione all’editor di regole per moduli adattivi basati su componenti core{#rule-editor-core-components}
                + [Introduzione all’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components.md)
@@ -765,7 +766,7 @@ ht-degree: 97%
                + [Tipi di operatori ed eventi disponibili nell’editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-events-operators.md)
                + [Esempi per un editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-usecases.md)
                + [Utilizzo di funzioni asincrone in un modulo adattivo](/help/forms/using-async-funct-in-rule-editor.md)
-               + [Richiama miglioramenti al servizio nell’Editor di regole visive per i moduli basati su componenti core](/help/forms/invoke-service-enhancements-rule-editor.md)
+               + [Miglioramenti a Avvia servizio nell’editor di regole visive per i moduli basati su componenti core](/help/forms/invoke-service-enhancements-rule-editor.md)
             + Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core{#create-and-use-custom-function-core-component}
                + [Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core](/help/forms/create-and-use-custom-functions.md)
                + [Creare e utilizzare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
@@ -797,7 +798,7 @@ ht-degree: 97%
          + Aggiungere componenti a un modulo adattivo {#add-components-to-an-adaptive-form}
             + [Utilizzare il CAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms.md)
             + [Utilizzare hCAPTCHA in un modulo adattivo](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [Utilizzare il CAPTCHA a tornello in un modulo adattivo](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [Utilizzare il CAPTCHA turnstile in un modulo adattivo](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Utilizzare componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
             + [Applicare una firma scarabocchio](/help/forms/signing-forms-using-scribble.md)
             + [Aggiungere una tabella a un modulo adattivo](/help/forms/adaptive-forms-tables.md)
@@ -959,7 +960,7 @@ ht-degree: 97%
       + [Dati tabulari e fogli di calcolo](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [Gestione dei dati di tassonomia](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [WYSIWYG e blocchi basati su documenti](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
-      + [Pagine con DAM Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
+      + [Pagine con risorse DAM](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [Funzioni siti WIP](/help/edge/wysiwyg-authoring/wip-features.md)
    + Authoring basato su documenti {#document-authoring}
       + [Authoring](/help/edge/docs/authoring.md)
@@ -1100,7 +1101,7 @@ ht-degree: 97%
          + [Scopri come definire metadati e tag per i frammenti di contenuto](/help/journey-headless/author/metadata-tagging.md)
 + Intelligenza artificiale generativa {#generative-ai}
    + [Generare varianti](/help/generative-ai/generate-variations.md)
-   + [Assistente (Beta limitato)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [Assistente (Beta limitata)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementazione {#implementing}
    + [Implementazione di applicazioni per AEM as a Cloud Service](/help/implementing/home.md)
    + Utilizzare Cloud Manager {#using-cloud-manager}
@@ -1124,7 +1125,7 @@ ht-degree: 97%
          + [Gestione degli archivi in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Aggiungere un archivio Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Aggiungere un archivio privato](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Aggiungere un archivio esterno (Beta limitato)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Aggiungere un archivio esterno (Beta limitata)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Accedere agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Supporto per i sottomoduli Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utilizzare Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
