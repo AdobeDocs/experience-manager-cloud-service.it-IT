@@ -1,17 +1,17 @@
 ---
-title: Estensibilità dell’interfaccia utente di visualizzazione di AEM Assets
+title: Estensibilità dell’interfaccia utente della vista di AEM Assets
 description: Scopri la funzionalità di estensibilità dell’interfaccia utente di AEM Assets View. L’interfaccia utente di AEM Assets View consente di aggiungere componenti personalizzati dell’interfaccia utente per soddisfare esigenze aziendali specifiche.
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
+source-git-commit: bbb183470e12c0fc81c821fc2e0c1e7d77c33707
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 3%
+source-wordcount: '576'
+ht-degree: 5%
 
 ---
 
-# Estensibilità dell’interfaccia utente di visualizzazione di AEM Assets{#AEM-Assets-View-UI-Extensibility}
+# Estensibilità dell’interfaccia utente della vista di AEM Assets{#AEM-Assets-View-UI-Extensibility}
 
 | [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -22,7 +22,7 @@ Puoi aggiungere le estensioni a livello di risorsa, cartella e raccolta. L’est
 >[!IMPORTANT]
 >
 > * L&#39;estensibilità dell&#39;interfaccia utente di visualizzazione di AEM Assets è disponibile con [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
-> * L’estensibilità dell’interfaccia utente di visualizzazione di Assets è disponibile nella versione di as a Beta. Per accedere in anteprima all&#39;estensibilità dell&#39;interfaccia utente di visualizzazione di Assets, [crea e invia un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+> * Per accedere all&#39;estensibilità dell&#39;interfaccia utente di visualizzazione di Assets, [crea e invia un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 > * Puoi fornire feedback sulla documentazione espandendo le opzioni di feedback dettagliato e facendo clic su Segnala un problema.
 
 ## <a id="1"></a> Come accedere alla vista Assets
