@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
+source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
-source-wordcount: '2336'
+source-wordcount: '2323'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ Utilizzando l&#39;azione Invoke Service](https://experienceleague.adobe.com/docs
 
 Utilizzando l’editor di regole, puoi:
 * [Aggiungi funzione gestore errori predefinita](#add-default-errror-handler)
-* [Aggiungi funzione di gestione degli errori personalizzata](#add-custom-errror-handler)
+* [Aggiungi funzione di gestione degli errori personalizzata](#add-custom-error-handler-function)
 
 
 ### Aggiungi funzione gestore errori predefinita {#add-default-errror-handler}
@@ -208,7 +208,7 @@ Come risultato di questa regola, i valori immessi per **ID animale** controllano
 
 ![visualizza il messaggio di errore predefinito quando aggiungi un gestore degli errori predefinito in un modulo per gestire le risposte agli errori](/help/forms/assets/default-error-message.png)
 
-### Aggiungi funzione di gestione degli errori personalizzata {#add-custom-errror-handler}
+### Aggiungi funzione di gestione degli errori personalizzata
 
 È possibile aggiungere una funzione di gestione degli errori personalizzata per eseguire alcune delle azioni seguenti:
 
@@ -222,14 +222,12 @@ Il gestore degli errori personalizzati è una funzione (libreria client) progett
 Per capire come creare e utilizzare un gestore di errori personalizzato utilizzando l&#39;azione Richiama servizio](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) dell&#39;editor di regole, prendiamo ad esempio il modulo adattivo con due campi, **ID animale domestico** e **Nome animale**, e utilizziamo un gestore di errori personalizzato nel campo **ID animale** per verificare la presenza di vari errori restituiti dall&#39;endpoint REST configurato per richiamare un servizio esterno, ad esempio `200 - OK`,`404 - Not Found`, `400 - Bad Request`.[
 
 Per aggiungere e utilizzare un gestore di errori personalizzato in un modulo adattivo, effettua le seguenti operazioni:
-1. [Aggiungi funzione personalizzata per gestore errori](#1-add-custom-function-for-error-handler)
+1. [Aggiungi funzione personalizzata per gestore errori](#1-add-the-custom-function-for-the-error-handler)
 2. [Utilizza l’Editor regole per configurare un gestore degli errori personalizzato](#use-custom-error-handler)
 
 #### 1. Aggiungi la funzione personalizzata per il gestore degli errori
 
->[!NOTE]
->
-> Per informazioni su come aggiungere funzioni personalizzate, fai clic su [Crea funzioni personalizzate in un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
+Per informazioni su come aggiungere funzioni personalizzate, fai clic su [Crea funzioni personalizzate in un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
 
 <!-- To create a custom error function, perform the following steps:
 
@@ -258,6 +256,20 @@ Aggiungiamo il seguente codice al file JavaScript per visualizzare la risposta e
        }
    ```
 
+   >[!NOTE]
+   >
+   > * Per chiamare il gestore errori predefinito dal gestore errori personalizzato, viene utilizzata la seguente riga del codice di esempio: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+   > * Nel file `.content.xml`, aggiungi le proprietà `allowProxy` e `categories` per utilizzare la libreria client del gestore degli errori personalizzata in un modulo adattivo.
+   >
+   >   * `allowProxy = [Boolean]true`
+   >   * `categories= customfunctionsdemo`
+   >       Ad esempio, in questo caso, [custom-errorhandler-name] viene fornito come `customfunctionsdemo`.
+
+
+1. Aggiungi, esegui il commit e invia le modifiche nell’archivio.
+
+<!--
+
 <!--
 1. Save the `function.js` file.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
@@ -271,22 +283,7 @@ Aggiungiamo il seguente codice al file JavaScript per visualizzare la risposta e
 3. Save the `js.txt` file.    
 The created folder structure looks like:
 
-    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
-
-
-    >[!NOTE]
-    >
-    > * Per chiamare il gestore errori predefinito dal gestore errori personalizzato, viene utilizzata la seguente riga del codice di esempio: &quot;guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-    > * Nel file `.content.xml`, aggiungi le proprietà &quot;allowProxy&quot; e &quot;category&quot; per utilizzare la libreria client del gestore errori personalizzato in un modulo adattivo.
-    >
-    >   * `allowProxy = [Boolean]true`
-    >   * `category= customfunctionsdemo`
-    >       Ad esempio, in questo caso, [custom-errorhandler-name] viene fornito come &quot;customfunctionsdemo&quot;.
-
-
-1. Aggiungi, esegui il commit e invia le modifiche nell’archivio.
-
-<!--
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) 
     using the below commands:
          
     ```javascript
@@ -295,8 +292,8 @@ The created folder structure looks like:
         git commit -a -m "Adding error handling files"
         git push
     ```
-
 -->
+
 1. [Esegui la pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 Una volta eseguita correttamente la pipeline, il gestore degli errori personalizzato diventa disponibile nell’editor di regole del modulo adattivo. Ora vediamo come configurare e utilizzare un gestore di errori personalizzato utilizzando il servizio Invoke dell’editor di regole in AEM Forms.
