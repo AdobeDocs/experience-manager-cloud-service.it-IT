@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2800'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -505,9 +505,9 @@ Ulteriori informazioni sulla configurazione OSGI sono disponibili in [questa pos
 
 AEM as a Cloud Service passerà alla versione Java Runtime 21. Al fine di garantire la compatibilità, è essenziale apportare le seguenti modifiche:
 
-### Requisiti runtime
+### Requisiti Runtime
 
-Queste regolazioni sono necessarie per garantire la compatibilità con Java 21 Runtime. Le librerie possono essere aggiornate in qualsiasi momento in quanto sono compatibili con le versioni precedenti di Java.
+Queste modifiche sono necessarie per garantire la compatibilità con Java Runtime 21. Le librerie possono essere aggiornate in qualsiasi momento in quanto sono compatibili con le versioni precedenti di Java.
 
 #### Versione minima di org.objectweb.asm {#org.objectweb.asm}
 
@@ -519,9 +519,9 @@ Aggiorna l’utilizzo di org.apache.groovy alla versione 4.0.22 o successiva per
 
 Questo bundle può essere incluso indirettamente aggiungendo dipendenze di terze parti come Groovy Console di AEM.
 
-### Requisiti per la generazione
+### Requisiti del tempo di generazione:
 
-Queste regolazioni sono necessarie per consentire la creazione del progetto con versioni più recenti di Java, ma non sono necessarie per la compatibilità di runtime. I plug-in Maven possono essere aggiornati in qualsiasi momento in quanto sono compatibili con versioni precedenti di Java.
+Queste modifiche sono necessarie per consentire la creazione del progetto con versioni più recenti di Java, ma non sono necessarie per la compatibilità di runtime. I plug-in Maven possono essere aggiornati in qualsiasi momento in quanto sono compatibili con versioni precedenti di Java.
 
 #### Versione minima di bnd-maven-plugin {#bnd-maven-plugin}
 
