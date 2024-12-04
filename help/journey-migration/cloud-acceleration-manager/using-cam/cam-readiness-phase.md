@@ -4,9 +4,9 @@ description: Questa pagina fornisce una panoramica sulla fase di preparazione in
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
-source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1096'
 ht-degree: 7%
 
 ---
@@ -60,7 +60,7 @@ Per passare alla fase di preparazione, segui la procedura riportata di seguito:
    ![Ottieni chiave di caricamento](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >Il rapporto può ancora essere caricato manualmente, ma l’utilizzo della Chiave di caricamento semplifica l’operazione. Nota che il rapporto non può essere caricato manualmente se sei in modalità di navigazione in incognito del browser.
+   >Il rapporto può ancora essere caricato manualmente, ma l’utilizzo della Chiave di caricamento semplifica l’operazione. Nota che il rapporto non può essere caricato manualmente se la sua dimensione è pari o superiore a circa 200 MB. Inoltre, il rapporto non può essere caricato utilizzando la modalità di navigazione in incognito del browser.
 
 1. Dopo aver caricato un nuovo rapporto, puoi vedere il rapporto Analisi delle best practice in CAM.
 

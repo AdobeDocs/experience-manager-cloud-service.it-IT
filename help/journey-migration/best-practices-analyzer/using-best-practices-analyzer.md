@@ -4,10 +4,10 @@ description: Scopri come utilizzare Best Practices Analyzer per comprendere lo s
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 39%
+source-wordcount: '2724'
+ht-degree: 38%
 
 ---
 
@@ -85,6 +85,9 @@ Segui questa sezione per scoprire come visualizzare il rapporto Best Practices A
 
 >[!NOTE]
 >È possibile saltare il caricamento automatico in CAM selezionando **Ignora caricamento automatico report in CAM**. Se scegli di saltare, dovrai scaricare manualmente il rapporto BPA come file con valori separati da virgole e quindi caricare il file in CAM. Si consiglia di utilizzare l’opzione carica chiave, in quanto semplifica l’operazione.
+
+>[!IMPORTANT]
+>Quando si carica manualmente in CAM, le dimensioni dei report sono limitate a circa 200 MB. Per i rapporti più grandi dovrai sfruttare il caricamento automatico.
 
 1. Il pulsante **Genera** diventa attivo quando viene fornita una chiave valida. Fai clic su **Genera** per avviare la generazione del rapporto.
 
