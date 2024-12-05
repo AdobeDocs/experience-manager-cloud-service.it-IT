@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
+source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1020'
 ht-degree: 16%
 
 ---
@@ -86,7 +86,7 @@ Se hai selezionato il tipo di certificato *Adobe certificato gestito*, completa 
 
 Per verificare il dominio in uso, è necessario aggiungere e verificare un CNAME.
 
-Una volta eseguito il provisioning di un record `CNAME` o A, tutto il traffico Internet del dominio viene indirizzato alla posizione a cui punta. Se non si esegue il provisioning di tale posizione per il servizio del traffico, si verifica un’interruzione. Se non si eseguono test, potrebbero essere riscontrati errori nel contenuto. Questo è il motivo per cui questo passaggio viene sempre eseguito dopo il completamento del test e sei pronto per andare live.
+Una volta eseguito il provisioning, un tipo di record `CNAME` o `A` indirizza tutto il traffico Internet del dominio alla posizione a cui punta. Se non si esegue il provisioning di tale posizione per il servizio del traffico, si verifica un’interruzione. Se non si eseguono test, potrebbero essere riscontrati errori nel contenuto. Questo è il motivo per cui questo passaggio viene sempre eseguito dopo il completamento del test e sei pronto per andare live.
 
 Per configurare queste impostazioni, determinare se è necessario configurare un record apex o `CNAME` per far sì che il nome di dominio personalizzato punti al nome di dominio Cloud Manager. Le sezioni seguenti di questo documento possono essere utili per determinare il tipo di record appropriato per la configurazione DNS.
 
@@ -130,7 +130,7 @@ Aggiungi i seguenti `A` record alle impostazioni DNS del dominio tramite il prov
 
 >[!TIP]
 >
->È possibile impostare *CNAME* o *Un record* nel server DNS che gestisce per risparmiare tempo.
+>Per risparmiare tempo, è possibile impostare il record *CNAME* o *Un record* nel server DNS di riferimento.
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
