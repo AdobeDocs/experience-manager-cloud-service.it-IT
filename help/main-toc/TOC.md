@@ -7,7 +7,7 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 47ee6803146acd93ed62b7eef1419d52f870ae90
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5890'
 ht-degree: 100%
 
