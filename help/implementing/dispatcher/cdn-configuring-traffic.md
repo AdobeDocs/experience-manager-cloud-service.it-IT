@@ -4,9 +4,9 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
+source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1377'
 ht-degree: 1%
 
 ---
@@ -241,7 +241,7 @@ data:
 
 ## Trasformazioni di risposta {#response-transformations}
 
-Le regole di trasformazione delle risposte consentono di impostare e annullare l’impostazione delle intestazioni delle risposte in uscita della rete CDN. Inoltre, consulta l’esempio precedente per un riferimento a una variabile precedentemente impostata in una regola di trasformazione della richiesta.
+Le regole di trasformazione delle risposte consentono di impostare e annullare l’impostazione delle intestazioni delle risposte in uscita della rete CDN. Inoltre, consulta l’esempio precedente per un riferimento a una variabile precedentemente impostata in una regola di trasformazione della richiesta. È inoltre possibile impostare il codice di stato della risposta.
 
 Esempio di configurazione:
 
@@ -282,6 +282,15 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
+      # Example: setting status code
+      - name: status-code-rule
+        when:
+          reqProperty: path
+          like: status-code
+        actions:
+          - type: set
+            respProperty: status
+            value: '410'        
 ```
 
 **Azioni**
@@ -291,6 +300,7 @@ Nella tabella seguente sono illustrate le azioni disponibili.
 | Nome | Proprietà | Significato |
 |-----------|--------------------------|-------------|
 | **set** | reqHeader, value | Imposta un&#39;intestazione specificata su un valore specificato nella risposta. |
+|          | respProperty, value | Imposta una proprietà di risposta. Supporta solo la proprietà &quot;status&quot; per impostare il codice di stato. |
 | **non impostato** | respHeader | Rimuove un’intestazione specificata dalla risposta. |
 
 ## Selettori di origine {#origin-selectors}
