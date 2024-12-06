@@ -4,9 +4,9 @@ description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i c
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
+source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3322'
 ht-degree: 10%
 
 ---
@@ -64,8 +64,9 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
    >[!IMPORTANT]
    > Puoi avviare un&#39;acquisizione nell&#39;ambiente di destinazione solo se appartieni al gruppo locale **amministratori AEM** nel servizio di authoring del Cloud Service di destinazione. Se non riesci ad avviare un&#39;acquisizione, vedi [Impossibile avviare l&#39;acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) per ulteriori dettagli.
 
-1. Dopo aver selezionato le opzioni di acquisizione, viene visualizzata una stima della sua durata. Si tratta di una stima ottimale basata su dati storici di acquisizioni simili.
+1. Una volta selezionate le opzioni di acquisizione, è possibile visualizzarne una stima della durata. Si tratta di una stima ottimale basata su dati storici di acquisizioni simili.
 
+   * Questa stima non viene calcolata o visualizzata per **acquisizioni non wipe**, poiché CAM non sa quanti contenuti sono presenti nel sistema di destinazione in questo caso.
    * Questa stima viene calcolata e visualizzata solo se sono stati raccolti e sono disponibili i valori &quot;Verifica dimensione&quot; dell’estrazione.
    * Questo valore è una stima e, anche se viene calcolato in modo intelligente, non deve essere considerato esatto. Vari fattori possono modificare la durata effettiva.
    * Durante l&#39;acquisizione, questo valore sarà disponibile anche nella finestra di dialogo delle durate, a cui è possibile accedere tramite l&#39;azione &quot;**Visualizza durate**&quot; dell&#39;acquisizione.
