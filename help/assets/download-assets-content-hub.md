@@ -3,16 +3,16 @@ title: Scaricare risorse da Content Hub
 description: Scopri come scaricare le risorse dal portale Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 28424cb184d0378669498c78e571961227f6539a
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Scaricare risorse da Content Hub {#download-assets}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
@@ -20,56 +20,85 @@ ht-degree: 3%
 
 >[!AVAILABILITY]
 >
->La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza l’Assistente IA di Adobe Acrobat per rispondere alle tue domande.
 >
->[!BADGE Guida di Content Hub PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Guida di Content Hub - PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Content Hub ti consente di scaricare e condividere le risorse. Queste risorse possono includere immagini, video o qualsiasi altro contenuto digitale. Content Hub migliora l’accessibilità e l’adattabilità per una distribuzione efficace delle risorse.
+Content Hub ti consente di scaricare e condividere le risorse. Nell&#39;interfaccia utente di Content Hub vengono visualizzate solo le risorse approvate. Queste risorse possono includere immagini, video o qualsiasi altro contenuto digitale. Content Hub migliora l’accessibilità e l’adattabilità per una distribuzione efficace delle risorse.
 
-Puoi scaricare una singola risorsa o più risorse utilizzando Content Hub. Vengono scaricate le versioni originali della risorsa.
+Puoi scaricare una o più risorse e i relativi rendering disponibili tramite Content Hub.
 
-## Scarica una singola risorsa concessa in licenza {#single-download-asset}
+## Scaricare una risorsa e le relative rappresentazioni {#download-asset-renditions}
 
-Seleziona una risorsa e fai clic su ![scarica](/help/assets/assets/download-icon.svg) nella barra superiore. Nella finestra di dialogo Scarica risorsa viene visualizzata la licenza della risorsa. Accettare i termini e le condizioni di licenza e fare clic su **Scarica**.
-In alternativa, fai clic su ![scarica](/help/assets/assets/download-icon.svg) nella scheda delle risorse per scaricare la risorsa.
+Per scaricare una risorsa e le relative rappresentazioni, esegui i seguenti passaggi:
 
-### Scarica una singola risorsa concessa in licenza dalla finestra di dialogo Risorsa {#single-download-from-asset-dialog-box}
+1. Fai clic sulla risorsa per visualizzarne le proprietà.
 
-1. Fai clic sulla miniatura della risorsa. Viene visualizzata la finestra di dialogo della risorsa.
-1. Fai clic su ![scarica](/help/assets/assets/download-icon.svg) nella barra degli strumenti più a destra. Nel riquadro di download vengono visualizzate le rappresentazioni delle risorse e la casella di controllo per l&#39;accettazione dei termini e delle condizioni delle licenze.
-   ![finestra di dialogo per download singolo](/help/assets/assets/asset-dialog-box-for-single-download.png)
-   * Fare clic sul collegamento termini e condizioni per visualizzare le condizioni di licenza nel riquadro a sinistra.
+1. Fai clic su ![scarica](/help/assets/assets/download-icon.svg) per avviare il processo di download. Il pannello Scarica elenca tutte le rappresentazioni di risorse disponibili (originali + altre).
+
+   >[!NOTE]
+   >
+   Le rappresentazioni vengono visualizzate solo se la loro visibilità è abilitata mediante l&#39;interfaccia utente [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+
+1. Seleziona le rappresentazioni e fai clic su **[!UICONTROL Scarica]**.
+
+   ![Scarica rappresentazioni di risorse singole](/help/assets/assets/download-single-asset-renditions.png)
+
+
+Se stai scaricando una risorsa con licenza, seleziona **[!UICONTROL Ho letto e accettato i termini e le condizioni di cui sopra]**, quindi fai clic su **[!UICONTROL Scarica]**. Puoi anche fare clic su **[!UICONTROL termini e condizioni]** per visualizzare la licenza della risorsa. L’anteprima della licenza viene visualizzata solo se la risorsa viene approvata utilizzando l’ambiente di authoring Assets as a Cloud Service. Per ulteriori informazioni, consulta [Gestire le risorse con licenza nell’hub di contenuti](/help/assets/manage-licensed-assets-on-content-hub.md).
+
+## Scaricare più risorse e le relative rappresentazioni {#download-multiple-assets-renditions}
+
+Per scaricare più risorse e le relative rappresentazioni, esegui i seguenti passaggi:
+
+1. Seleziona le risorse e fai clic su ![scarica](/help/assets/assets/download-icon.svg) **[!UICONTROL Scarica]**. Nella schermata [!UICONTROL Scarica risorse] sono elencate tutte le risorse selezionate.
+1. Fai clic su **[!UICONTROL Scarica]** per selezionare tra le varie opzioni di download per iniziare il download:
+
+   * **Scarica [!UICONTROL Originali]**: seleziona questa opzione per scaricare le risorse selezionate nel modulo originale.
+   * **Scarica [!UICONTROL Solo rappresentazioni]**: seleziona questa opzione per scaricare tutte le rappresentazioni disponibili delle risorse, ad eccezione delle risorse originali.
+   * **Scarica [!UICONTROL Originali e tutte le rappresentazioni]**: seleziona questa opzione per scaricare sia le rappresentazioni originali che quelle delle risorse selezionate.
+
+     ![Scarica più rappresentazioni](/help/assets/assets/download-multiple-renditions.png)
 
      >[!NOTE]
      >
-     La casella di controllo termini e condizioni viene visualizzata solo per le risorse concesse in licenza. Inoltre, nella finestra di dialogo Risorsa viene visualizzata un’anteprima dei termini e delle condizioni della licenza solo per le risorse con licenze approvate. [Approva la licenza della risorsa](/help/assets/approve-assets-content-hub.md) prima di effettuare il download per abilitare l&#39;anteprima delle condizioni di licenza nella finestra di dialogo della risorsa.
+     Le rappresentazioni vengono visualizzate solo se la loro visibilità è abilitata mediante l&#39;interfaccia utente [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
 
-   * Fai clic sulla **Casella di rappresentazione originale** per tornare alla rappresentazione della risorsa originale nel riquadro a sinistra.
-1. Accetta i termini e le condizioni di licenza (per la risorsa concessa in licenza) e fai clic su **Scarica** per scaricare la risorsa.
+   Se una delle risorse selezionate è una risorsa con licenza, fai clic sulla licenza della risorsa nel riquadro a sinistra per visualizzarne l&#39;anteprima. In questo modo potrai selezionare **[!UICONTROL Ho letto e accettato i termini e le condizioni di cui sopra]**, quindi fai clic su **[!UICONTROL Scarica]**. L’anteprima della licenza viene visualizzata solo se la risorsa viene approvata utilizzando l’ambiente di authoring Assets as a Cloud Service. Per ulteriori informazioni, consulta [Gestire le risorse con licenza nell’hub di contenuti](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-## Scarica più Assets con licenza{#multi-download}
-
-1. Seleziona le risorse e fai clic su ![scarica](/help/assets/assets/download-icon.svg) nella barra superiore. La finestra di dialogo visualizzata dipende dal fatto che l’elenco di download includa risorse scadute o solo risorse non scadute. <br/>
-   **Finestra di dialogo Scarica risorse scadute:** In questa finestra di dialogo viene visualizzata l&#39;anteprima delle risorse scadute insieme alla data di scadenza nel riquadro a sinistra. Nel riquadro a destra viene visualizzato il totale delle risorse scadute selezionate. Fai clic su **Procedi con tutte le risorse** per scaricare le risorse scadute con altre risorse (se presenti). Viene visualizzata la finestra di dialogo Scarica risorse. Per ulteriori informazioni, consulta la [finestra di dialogo Scarica risorse](#Download-asset-dialog-box).
-
-   >[!NOTE]
-   >
-   [Abilita l&#39;opzione di download per le risorse scadute](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) per scaricarle. Possono essere scaricate solo le risorse scadute per le quali è stato abilitato il download.
-
-   <a id="Download-asset-dialog-box"></a> **Finestra di dialogo Scarica risorse:** Questa finestra di dialogo visualizza l&#39;elenco delle licenze associate alle risorse selezionate nel riquadro a sinistra. Seleziona una licenza per visualizzarne in anteprima i termini e le condizioni (in formato pdf) nel riquadro centrale e l’anteprima delle risorse associate e il relativo conteggio nel riquadro a destra. Le licenze riviste sono evidenziate in blu chiaro.
-
-   >[!NOTE]
-   >
-   La finestra di dialogo **Scarica risorsa** visualizza in anteprima i termini e le condizioni della licenza solo per le licenze approvate. [Approva le licenze delle risorse](/help/assets/approve-assets-content-hub.md) prima di scaricarle per visualizzare in anteprima le condizioni di licenza nella **finestra di dialogo Scarica risorsa**.
-
-1. Fare clic su ![remove-icon](/help/assets/assets/remove-icon.svg) per rimuovere una licenza dalla finestra di dialogo di download.
-
-1. Accetta i termini e le condizioni, quindi fai clic su **Scarica** per scaricare le risorse associate alle licenze disponibili nel riquadro a sinistra.
    ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
-### Scarica Assets senza licenza {#download-non-licensed-assets}
+<!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
+1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
+1. Optional: Click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the dialog box.
+1. Select **I have read and accept all the terms and conditions mentioned above.** 
+1. Click **Download** to download the selected assets.-->
 
-Per scaricare risorse non concesse in licenza, seleziona le risorse e fai clic su ![scarica](/help/assets/assets/download-icon.svg) nella barra superiore.
+<!---This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
+
+
+The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
+**Download expired assets dialog box:** This dialog box displays the expired assets' preview along with their expiry date in the left pane. The expired assets' count out of total selected displays in the right pane. Click **Proceed with all assets** to download expired assets with other assets (if present). The Download assets dialog box displays. See the [Download assets dialog box](#Download-asset-dialog-box) to proceed further.
+    
+    >[!NOTE]
+    >
+    >[Enable the download option for expired assets](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) to download them. Only expired assets that have enabled downloading are available for download.
+
+   <a id="Download-asset-dialog-box"></a> **Download assets dialog box:** This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the associated assets' preview and their count in the right pane. Reviewed licenses are highlighted in light blue.
+
+    >[!NOTE]
+    >
+    > The **Download Asset dialog box** previews licensing terms and conditions only for approved licenses. [Approve the assets' licenses](/help/assets/approve-assets-content-hub.md) before downloading them to preview their licensing terms in the **Download Asset dialog box**.
+
+1. Click  ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the download dialog box. 
+
+1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.-->
+<!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+
+<!---
+### Download non-licensed Assets {#download-non-licensed-assets}
+
+ To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
 
 
 

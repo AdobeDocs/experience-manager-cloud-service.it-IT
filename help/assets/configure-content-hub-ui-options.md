@@ -1,22 +1,22 @@
 ---
-title: Configurare l’interfaccia utente dell’hub di contenuti
-description: Configurare l’interfaccia utente dell’hub di contenuti
+title: Configurare l’interfaccia utente di Content Hub
+description: Configurare l’interfaccia utente di Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
+source-git-commit: deeb1487ce51f2a91e556b32f9db2a644656d828
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Configurare l’interfaccia utente dell’hub di contenuti {#configure-content-hub-user-interface}
+# Configurare l’interfaccia utente di Content Hub {#configure-content-hub-user-interface}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
->title="Configurare l’interfaccia utente dell’hub di contenuti"
+>title="Configurare l’interfaccia utente di Content Hub"
 >abstract="Experience Manager Assets consente agli amministratori di configurare le opzioni disponibili nell’interfaccia utente dell’hub di contenuti. In base alle opzioni di configurazione selezionate dagli amministratori, gli utenti dell’hub di contenuti possono visualizzare i campi su di esso. Le opzioni di configurazione includono metadati durante l’importazione di risorse, filtri, proprietà delle risorse, metadati durante la ricerca di risorse, branding personalizzato ed eventuali collegamenti personalizzati."
 >additional-url="https://images-tv.adobe.com/mpcv3/4477/74a81d1c-0cfe-41f4-8a06-18ff70604e45_1732023385.854x480at800_h264.mp4" text="Guarda il video"
 
@@ -25,9 +25,9 @@ ht-degree: 15%
 
 >[!AVAILABILITY]
 >
->La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza l’Assistente IA di Adobe Acrobat per rispondere alle tue domande.
 >
->[!BADGE Guida di Content Hub PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Guida di Content Hub - PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Experience Manager Assets consente agli amministratori di configurare le opzioni disponibili nell’interfaccia utente dell’hub di contenuti. In base alle opzioni di configurazione selezionate dagli amministratori, gli utenti dell’hub di contenuti possono visualizzare i campi su di esso. Le opzioni di configurazione includono:
 
@@ -73,6 +73,8 @@ In qualità di amministratore, gestisci le seguenti opzioni di configurazione pe
 * [Branding](#configure-branding-content-hub)
 
 * [Risorse scadute](#expired-assets-content-hub)
+
+* [Rappresentazioni](#renditions-content-hub)
 
 * [Collegamenti personalizzati](#configure-custom-links-content-hub)
 
@@ -165,7 +167,6 @@ Puoi anche configurare i campi di metadati chiave da visualizzare nella **scheda
 
 Allo stesso modo, fai clic su ![modifica](/help/assets/assets/edit-content-hub.svg) disponibile accanto a ciascuna proprietà disponibile, per apportare le modifiche necessarie, oppure fai clic su ![elimina](/help/assets/assets/delete-content-hub.svg) per eliminare eventuali proprietà di metadati esistenti. Fai clic su **Salva** dopo aver apportato tutte le modifiche necessarie per applicarle.
 
-
 ### Ricerca {#configure-metadata-search-content-hub}
 
 Gli amministratori possono definire i campi di metadati in cui eseguire le ricerche quando un utente specifica un criterio di ricerca in Content Hub. Esegui i passaggi seguenti:
@@ -223,6 +224,23 @@ Se l’amministratore ha abilitato il download, gli utenti di Content Hub posson
 
 Se è abilitata la visibilità delle risorse scadute, Content Hub evidenzia anche le risorse che scadono nei successivi 15 giorni utilizzando il messaggio `Expiring in n days` nella scheda delle risorse.
 
+### Rappresentazioni {#renditions-content-hub}
+
+Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+
+Content Hub consente di scaricare le rappresentazioni statiche. Le rappresentazioni statiche sono rappresentazioni diverse del file originale di una risorsa, generate in modo nativo. Alcuni esempi includono le miniature o le rappresentazioni ottimizzate per i dispositivi mobili. Gli amministratori possono gestire e controllare la disponibilità delle rappresentazioni delle risorse e decidere se scaricare o meno le risorse originali.
+
+Per farlo, esegui le seguenti operazioni:
+
+Nell&#39;interfaccia utente delle [Configurazioni](#access-configuration-options-content-hub), fare clic su **[!UICONTROL Rappresentazioni]**. Sono disponibili le seguenti opzioni:
+
+* Abilita l&#39;interruttore [!UICONTROL Abilita la disponibilità delle rappresentazioni statiche] per rendere visibili tutte le rappresentazioni statiche in Content Hub.
+
+* Abilita o disabilita **[!UICONTROL Consenti agli utenti di scaricare risorse originali]** per controllare la disponibilità del download di risorse originali.
+
+  ![Configura copie trasformate in Content Hub](assets/config-renditions.png)
+
+Per informazioni su come visualizzare e scaricare le rappresentazioni statiche in Content Hub, vedi [scaricare risorse in Content Hub](/help/assets/download-assets-content-hub.md).
 
 ### Collegamenti personalizzati {#configure-custom-links-content-hub}
 

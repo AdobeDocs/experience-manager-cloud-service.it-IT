@@ -4,16 +4,16 @@ description: Scopri come AEM Assets e Dynamic Media semplificano la gestione eff
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: a3a6456dec178c36c9fe8acfb6f98915fc86e490
+source-git-commit: eb5886b5ed6a6f5b52303b4fccf5c266178b36f8
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Visualizzare e gestire le rappresentazioni in Experience Manager Assets{#renditions}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Le rappresentazioni in Adobe Experience Manager (AEM) sono versioni personalizzate di risorse digitali, come le immagini, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. L’AEM facilita la creazione e la gestione di queste rappresentazioni, migliorando l’esperienza di utilizzo. Puoi creare miniature, ottimizzare immagini per il web o per dispositivi mobili, aggiungere filigrane, visualizzare e scaricare rappresentazioni dinamiche o ritaglio avanzato e fare molto di più.
@@ -25,12 +25,22 @@ Le rappresentazioni sono classificate come statiche e dinamiche e ogni tipo pres
 ## Rappresentazioni statiche {#static-renditions}
 
 Le rappresentazioni statiche sono versioni pregenerate delle risorse digitali, in genere create durante l’inserimento o la modifica delle risorse. Questi rendering sono ottimizzati per scopi e piattaforme specifici, come le miniature web, i formati facili da usare sui dispositivi mobili per la progettazione reattiva o le versioni ad alta risoluzione per la stampa, garantendo un’esperienza efficiente e coerente.
-Scopri [come visualizzare e scaricare](#view-dynamic-renditions) rappresentazioni statiche in [!DNL Experience Manager Assets].
+Scopri come [visualizzare e scaricare le rappresentazioni statiche](#view-and-download-static-renditions) in Experience Manager Assets.
+
+### Visualizzare e scaricare le rappresentazioni statiche{#view-and-download-static-renditions}
+
+Per visualizzare le rappresentazioni delle risorse e scaricarle, effettua le seguenti operazioni:
+
+1. Nella visualizzazione Assets, fai clic su **Assets**, accedi a una cartella, seleziona una risorsa e fai clic su **Dettagli**.
+1. Fai clic sull’icona della rappresentazione disponibile nel riquadro a destra.
+1. Seleziona una copia trasformata per visualizzarne l&#39;anteprima e fai clic sull&#39;icona ![scarica](/help/assets/assets/download-icon.svg) per scaricarla.
+
+   ![Visualizza e scarica rappresentazioni dinamiche](/help/assets/assets/view-download-static-rendition.png)
 
 ## Rappresentazioni dinamiche {#dynamic-renditions}
 
 Le rappresentazioni dinamiche sono versioni personalizzate delle risorse create in tempo reale per soddisfare esigenze specifiche, ad esempio per ridimensionare le immagini in base alla risoluzione del dispositivo o per adattarle a proporzioni diverse.
-Questi rendering consentono alle organizzazioni di fornire esperienze personalizzate e ottimizzate per soddisfare diverse esigenze di pubblico. È possibile visualizzare e scaricare le rappresentazioni dinamiche in [!DNL Experience Manager Assets].
+Questi rendering consentono alle organizzazioni di fornire esperienze personalizzate e ottimizzate per soddisfare diverse esigenze di pubblico. Puoi visualizzare e scaricare le rappresentazioni dinamiche in Experience Manager Assets.
 
 ## Rappresentazioni Dynamic Media {#dynamic-media-renditions}
 
