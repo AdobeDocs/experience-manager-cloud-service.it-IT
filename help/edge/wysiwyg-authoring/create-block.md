@@ -51,7 +51,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 ![Clonazione del progetto](assets/create-block/clone.png)
 
-2. Modifica il file `component-definition.json` nella directory principale del progetto e aggiungi la seguente definizione per il nuovo blocco citazione e salva il file.
+&#x200B;2. Modifica il file `component-definition.json` nella directory principale del progetto e aggiungi la seguente definizione per il nuovo blocco citazione e salva il file.
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-3. Modifica il file `component-models.json` nella directory principale del progetto e aggiungi la seguente [definizione del modello](/help/implementing/universal-editor/field-types.md#model-structure) per il nuovo blocco citazione e salva il file.
+&#x200B;3. Modifica il file `component-models.json` nella directory principale del progetto e aggiungi la seguente [definizione del modello](/help/implementing/universal-editor/field-types.md#model-structure) per il nuovo blocco citazione e salva il file.
 
 * Per ulteriori informazioni su quello che è importante considerare durante la creazione di modelli di contenuto, consulta il documento [Modellazione dei contenuti per l’authoring WYSIWYG con progetti Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
 
@@ -119,7 +119,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-4. Modifica il file `component-filters.json` nella directory principale del progetto e aggiungi il blocco citazione alla [definizione di filtro](/help/implementing/universal-editor/customizing.md#filtering-components) per consentire l’aggiunta del blocco a qualsiasi sezione e salva il file.
+&#x200B;4. Modifica il file `component-filters.json` nella directory principale del progetto e aggiungi il blocco citazione alla [definizione di filtro](/help/implementing/universal-editor/customizing.md#filtering-components) per consentire l’aggiunta del blocco a qualsiasi sezione e salva il file.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-5. Utilizzando Git, conferma queste modifiche nel ramo `main`.
+&#x200B;5. Utilizzando Git, conferma queste modifiche nel ramo `main`.
 
 * La conferma di `main` è solo a scopo illustrativo. [Segui le best practice](https://www.aem.live/docs/dev-collab-and-good-practices) e utilizza una richiesta pull per il lavoro di progetto effettivo.
 
@@ -196,7 +196,7 @@ Ora che disponi di un blocco della citazione di lavoro puoi applicare ad esso lo
 
 ![Crea una cartella delle citazioni](assets/create-block/new-folder.png)
 
-3. Nella nuova cartella delle `quote`, aggiungi un file delle `quote.js` per implementare il blocco decorativo aggiungendo il seguente JavaScript e salva il file.
+&#x200B;3. Nella nuova cartella delle `quote`, aggiungi un file delle `quote.js` per implementare il blocco decorativo aggiungendo il seguente JavaScript e salva il file.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4. Nella cartella `quote`, aggiungi un file `quote.css` per definire lo stile del blocco aggiungendo il seguente codice CSS e salva il file.
+&#x200B;4. Nella cartella `quote`, aggiungi un file `quote.css` per definire lo stile del blocco aggiungendo il seguente codice CSS e salva il file.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5. Utilizzando Git, conferma queste modifiche nel ramo `main`.
+&#x200B;5. Utilizzando Git, conferma queste modifiche nel ramo `main`.
 
 * La conferma di `main` è solo a scopo illustrativo. [Segui le best practice](https://www.aem.live/docs/dev-collab-and-good-practices) e utilizza una richiesta pull per il lavoro di progetto effettivo.
 
-6. Torna alla scheda del browser dell’editor universale in cui stavi modificando la pagina del progetto e ricarica la pagina per visualizzare il blocco con lo stile.
+&#x200B;6. Torna alla scheda del browser dell’editor universale in cui stavi modificando la pagina del progetto e ricarica la pagina per visualizzare il blocco con lo stile.
 
-7. Visualizza il blocco delle citazioni ora formattato sulla pagina.
+&#x200B;7. Visualizza il blocco delle citazioni ora formattato sulla pagina.
 
 ![Blocco delle citazioni formattato nell’editor universale](assets/create-block/quote-styled.png)
 
-8. Verifica che le modifiche siano state inviate alla produzione passando alla pagina pubblicata. Il collegamento sarà simile a `https://<branch>--<repo>--<owner>.aem.page`
+&#x200B;8. Verifica che le modifiche siano state inviate alla produzione passando alla pagina pubblicata. Il collegamento sarà simile a `https://<branch>--<repo>--<owner>.aem.page`
 
 ![Blocco delle citazioni pubblicato e formattato](assets/create-block/quote-styled-published.png)
 
