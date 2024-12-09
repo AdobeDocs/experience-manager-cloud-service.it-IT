@@ -4,8 +4,8 @@ description: Scopri come creare blocchi abilitati per l’utilizzo con l’edito
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
-workflow-type: ht
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 ![Clonazione del progetto](assets/create-block/clone.png)
 
-&#x200B;2. Modifica il file `component-definition.json` nella directory principale del progetto e aggiungi la seguente definizione per il nuovo blocco citazione e salva il file.
+2. Modifica il file `component-definition.json` nella directory principale del progetto e aggiungi la seguente definizione per il nuovo blocco citazione e salva il file.
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-&#x200B;3. Modifica il file `component-models.json` nella directory principale del progetto e aggiungi la seguente [definizione del modello](/help/implementing/universal-editor/field-types.md#model-structure) per il nuovo blocco citazione e salva il file.
+3. Modifica il file `component-models.json` nella directory principale del progetto e aggiungi la seguente [definizione del modello](/help/implementing/universal-editor/field-types.md#model-structure) per il nuovo blocco citazione e salva il file.
 
 * Per ulteriori informazioni su quello che è importante considerare durante la creazione di modelli di contenuto, consulta il documento [Modellazione dei contenuti per l’authoring WYSIWYG con progetti Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
 
@@ -119,7 +119,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-&#x200B;4. Modifica il file `component-filters.json` nella directory principale del progetto e aggiungi il blocco citazione alla [definizione di filtro](/help/implementing/universal-editor/customizing.md#filtering-components) per consentire l’aggiunta del blocco a qualsiasi sezione e salva il file.
+4. Modifica il file `component-filters.json` nella directory principale del progetto e aggiungi il blocco citazione alla [definizione di filtro](/help/implementing/universal-editor/customizing.md#filtering-components) per consentire l’aggiunta del blocco a qualsiasi sezione e salva il file.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-&#x200B;5. Utilizzando Git, conferma queste modifiche nel ramo `main`.
+5. Utilizzando Git, conferma queste modifiche nel ramo `main`.
 
 * La conferma di `main` è solo a scopo illustrativo. [Segui le best practice](https://www.aem.live/docs/dev-collab-and-good-practices) e utilizza una richiesta pull per il lavoro di progetto effettivo.
 
@@ -182,7 +182,7 @@ Dopo aver definito e confermato il blocco del preventivo di base nel progetto di
 
 1. Quando sei soddisfatto del contenuto della citazione, puoi pubblicare la pagina toccando o facendo clic sul pulsante **Pubblica** nella barra degli strumenti dell’editor universale.
 
-1. Verifica che il contenuto sia stato pubblicato passando alla pagina pubblicata. Il collegamento sarà simile a `https://<branch>--<repo>--<owner>.hlx.page`
+1. Verifica che il contenuto sia stato pubblicato passando alla pagina pubblicata. Il collegamento sarà simile a `https://<branch>--<repo>--<owner>.aem.page`
 
    ![Citazione pubblicata](assets/create-block/quote-published.png)
 
@@ -196,7 +196,7 @@ Ora che disponi di un blocco della citazione di lavoro puoi applicare ad esso lo
 
 ![Crea una cartella delle citazioni](assets/create-block/new-folder.png)
 
-&#x200B;3. Nella nuova cartella delle `quote`, aggiungi un file delle `quote.js` per implementare il blocco decorativo aggiungendo il seguente JavaScript e salva il file.
+3. Nella nuova cartella delle `quote`, aggiungi un file delle `quote.js` per implementare il blocco decorativo aggiungendo il seguente JavaScript e salva il file.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-&#x200B;4. Nella cartella `quote`, aggiungi un file `quote.css` per definire lo stile del blocco aggiungendo il seguente codice CSS e salva il file.
+4. Nella cartella `quote`, aggiungi un file `quote.css` per definire lo stile del blocco aggiungendo il seguente codice CSS e salva il file.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-&#x200B;5. Utilizzando Git, conferma queste modifiche nel ramo `main`.
+5. Utilizzando Git, conferma queste modifiche nel ramo `main`.
 
 * La conferma di `main` è solo a scopo illustrativo. [Segui le best practice](https://www.aem.live/docs/dev-collab-and-good-practices) e utilizza una richiesta pull per il lavoro di progetto effettivo.
 
-&#x200B;6. Torna alla scheda del browser dell’editor universale in cui stavi modificando la pagina del progetto e ricarica la pagina per visualizzare il blocco con lo stile.
+6. Torna alla scheda del browser dell’editor universale in cui stavi modificando la pagina del progetto e ricarica la pagina per visualizzare il blocco con lo stile.
 
-&#x200B;7. Visualizza il blocco delle citazioni ora formattato sulla pagina.
+7. Visualizza il blocco delle citazioni ora formattato sulla pagina.
 
 ![Blocco delle citazioni formattato nell’editor universale](assets/create-block/quote-styled.png)
 
-&#x200B;8. Verifica che le modifiche siano state inviate alla produzione passando alla pagina pubblicata. Il collegamento sarà simile a `https://<branch>--<repo>--<owner>.hlx.page`
+8. Verifica che le modifiche siano state inviate alla produzione passando alla pagina pubblicata. Il collegamento sarà simile a `https://<branch>--<repo>--<owner>.aem.page`
 
 ![Blocco delle citazioni pubblicato e formattato](assets/create-block/quote-styled-published.png)
 
@@ -327,7 +327,7 @@ Aggiungendo una proprietà `classes` al blocco, quella di cui è stato eseguito 
 
 Con questa guida hai eseguito la conferma direttamente nel ramo `main` per semplicità. La sperimentazione in un archivio di esempio in genere non è un problema. Per il lavoro effettivo del progetto, [dovresti seguire le best practice di sviluppo](https://www.aem.live/docs/dev-collab-and-good-practices) sviluppando in un ramo diverso e rivedendo tutte le modifiche tramite richiesta pull prima di unire nel `main`.
 
-Se non stai sviluppando nel ramo `main`, puoi aggiungere `?ref=<branch>` nella barra di posizione dell’editor universale per caricare la pagina dal ramo. `<branch>` è il nome del ramo utilizzato per l’anteprima del progetto o gli URL live, ad esempio `https://<branch>--<repo>--<owner>.hlx.page`.
+Se non stai sviluppando nel ramo `main`, puoi aggiungere `?ref=<branch>` nella barra di posizione dell’editor universale per caricare la pagina dal ramo. `<branch>` è il nome del ramo utilizzato per l’anteprima del progetto o gli URL live, ad esempio `https://<branch>--<repo>--<owner>.aem.page`.
 
 ## Riutilizzo dei blocchi per l’authoring basato su documenti {#reusing-blocks}
 

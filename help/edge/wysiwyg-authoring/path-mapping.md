@@ -3,13 +3,13 @@ title: Mappatura percorsi per Edge Delivery Services
 description: Scopri come mappare i percorsi di pagina utilizzati nell’istanza di authoring AEM sui percorsi di pagina pubblici utilizzati sul sito web e come controllare quali contenuti vengono pubblicati in Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
-workflow-type: ht
+exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
-
 
 # Mappatura percorsi per Edge Delivery Services {#path-mapping}
 
@@ -20,7 +20,7 @@ Scopri come mappare i percorsi di pagina utilizzati nell’istanza di authoring 
 Per poter creare contenuti WYSIWYG utilizzando AEM e pubblicarli in Edge Delivery Services, è necessario impostare la mappatura del percorso del progetto. Questa mappatura ha due scopi.
 
 * Mappa e crea una relazione tra i percorsi di pagina utilizzati nell’istanza di authoring AEM e i percorsi di pagina pubblici utilizzati sul sito web.
-* Controlla quale contenuto (pagine, fogli, risorse, ecc.) viene pubblicato in Edge Delivery Services.
+* Controlla quali contenuti (pagine, fogli, risorse, ecc.) vengono pubblicati nei Edge Delivery Services.
 
 La mappatura del percorso deve essere configurata per ogni progetto singolarmente e in base al contenuto e alla struttura URL del progetto. Viene utilizzato da AEM durante la pubblicazione dei contenuti e durante la modifica dei contenuti nell’[Editor universale.](/help/sites-cloud/authoring/universal-editor/navigation.md)
 
@@ -79,7 +79,7 @@ Le mappature dei percorsi possono essere configurate in uno dei due modi seguent
 
    ```text
    curl --request POST \
-     --url https://admin.hlx.page/config/{org}/sites/{site}/public.json \
+     --url https://admin.aem.page/config/{org}/sites/{site}/public.json \
      --header 'Content-Type: application/json' \
      --header 'x-auth-token: ......' \
      --data '{
