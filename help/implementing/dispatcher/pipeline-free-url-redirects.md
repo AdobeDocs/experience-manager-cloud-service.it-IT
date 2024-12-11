@@ -4,7 +4,7 @@ description: Scopri come dichiarare i reindirizzamenti 301 o 302 senza accesso a
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 639a8927fb232f7d4a18e0f49b1221c184066787
+source-git-commit: 7968aa15df2a592efb41af228ee79e8c8d4e218b
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -30,7 +30,7 @@ AEM as a Cloud Service offre [diversi approcci](https://experienceleague.adobe.c
 Questa funzione si basa sulla capacità di Apache/Dispatcher dell’AEM di caricare (o ricaricare) uno o più file di mappa di riscrittura posizionati in una posizione specifica nell’archivio di pubblicazione. È importante ricordare che il modo in cui i file vengono ricevuti è al di fuori dell’ambito di questa funzione, ma puoi prendere in considerazione uno dei seguenti metodi:
 
 * Acquisizione della mappa di riscrittura come risorsa nell’interfaccia utente di authoring e pubblicazione.
-* Installazione di [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)([almeno versione 6.7.0 o successiva](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), che include un&#39;interfaccia utente per la gestione dei mapping degli URL e può inoltre pubblicare il file di mapping di riscrittura.
+* Installazione di [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([almeno versione 6.7.0 o successiva](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), che include un&#39;interfaccia utente per la gestione dei mapping degli URL e può inoltre pubblicare il file di mapping di riscrittura.
 * Massima flessibilità scrivendo un&#39;applicazione personalizzata. Ad esempio, un’interfaccia utente o un’interfaccia a riga di comando per gestire le mappature URL oppure un modulo per caricare una mappa di riscrittura, che utilizza quindi le API AEM per pubblicare il file della mappa di riscrittura.
 
 >[!NOTE]
