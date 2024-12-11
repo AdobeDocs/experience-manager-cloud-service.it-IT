@@ -4,9 +4,9 @@ description: Se sei uno sviluppatore AEM interessato al funzionamento di Univers
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3160'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ Devi aggiungere la libreria JavaScript necessaria al componente pagina dell’ap
 1. Aggiungi la libreria JavaScript alla fine del file.
 
    ```html
-   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
+   <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
    ```
 
 1. Fare clic su **Salva tutto** e quindi ricaricare l&#39;editor universale.
@@ -160,7 +160,12 @@ La pagina ora viene caricata con la libreria JavaScript appropriata per consenti
 >[!TIP]
 >
 >* La libreria può essere caricata nell’intestazione o nel piè di pagina.
->* La libreria [ di `universal-editor-embedded.js` è disponibile in NPM](https://www.npmjs.com/package/@adobe/universal-editor-cors) e puoi ospitarla autonomamente se necessario o inserirla direttamente nell&#39;applicazione.
+
+>[!NOTE]
+>
+>Il metodo consigliato in precedenza per includere la libreria JavaScript, `<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>` o tramite npmjs.com non è più consigliato in quanto il pacchetto è stato dichiarato obsoleto.
+>
+>Se un’app utilizza ancora il pacchetto obsoleto, nell’editor universale viene visualizzato un avviso nell’interfaccia utente per segnalare che è stato rilevato un pacchetto obsoleto.
 
 ## Definizione di una connessione per rendere le modifiche permanenti {#connection}
 

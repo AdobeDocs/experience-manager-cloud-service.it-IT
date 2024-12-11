@@ -4,10 +4,10 @@ description: Scopri come accedere all’editor universale e come iniziare a prep
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
+source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 72%
+source-wordcount: '627'
+ht-degree: 62%
 
 ---
 
@@ -24,7 +24,17 @@ Sebbene Universal Editor possa modificare il contenuto da qualsiasi origine, que
 
 ## Prepara la pagina {#instrument-page}
 
-Il servizio di editor universale richiede un [nome risorsa uniforme (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) per identificare e utilizzare il sistema back-end corretto per il contenuto dell’app in fase di modifica. Pertanto, è necessario uno schema URN per mappare il contenuto alle risorse di contenuto.
+Per eseguire il rendering e la modifica della pagina nell’editor universale è necessaria una libreria JavaScript.
+
+Il servizio Universal Editor richiede inoltre un URN [per identificare e utilizzare il sistema di back-end corretto per il contenuto dell&#39;app da modificare. ](https://en.wikipedia.org/wiki/Uniform_Resource_Name) Pertanto, è necessario uno schema URN per mappare il contenuto alle risorse di contenuto.
+
+### Includi la libreria CORS di Universal Editor {#cors-library}
+
+Per consentire all&#39;editor universale di connettersi all&#39;app, l&#39;app deve includere la libreria CORS dell&#39;editor universale. Aggiungi il seguente script all’app.
+
+```html
+ <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
+```
 
 ### Creazione di connessioni {#connections}
 
