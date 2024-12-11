@@ -4,9 +4,9 @@ description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i c
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
+source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
 workflow-type: tm+mt
-source-wordcount: '3322'
+source-wordcount: '3412'
 ht-degree: 10%
 
 ---
@@ -48,6 +48,9 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
 
    >[!NOTE]
    > Se il livello di destinazione è `Author`, l&#39;istanza di authoring viene chiusa per tutta la durata dell&#39;acquisizione e diventa non disponibile per gli utenti (ad esempio, autori o utenti che eseguono attività di manutenzione). Il motivo è proteggere il sistema e impedire eventuali modifiche che potrebbero andare perse o causare un conflitto di acquisizione. Assicurati che il tuo team sia a conoscenza di questo fatto. Inoltre, l’ambiente risulta ibernato durante l’acquisizione dell’autore.
+
+   >[!NOTE]
+   > Se il livello di destinazione è `Publish`, l&#39;istanza di pubblicazione rimane in esecuzione durante l&#39;acquisizione.  Tuttavia, se il processo di compattazione è in esecuzione durante l’acquisizione, è probabile che si verifichi un conflitto tra i due processi.  Per questo motivo, il processo di acquisizione 1) disabilita lo script di compattazione temporizzata, in modo che la compattazione non venga avviata durante l’acquisizione, e 2) verifica se la compattazione è attualmente in esecuzione e, in caso affermativo, attende il completamento prima che l’acquisizione proceda.  Se l’acquisizione per la pubblicazione richiede più tempo del previsto, controlla i registri di acquisizione per individuare le istruzioni di registro correlate.
 
    * **Cancellazione:** Scegliere il valore `Wipe`
       * L&#39;opzione **Cancella** imposta il punto iniziale della destinazione per l&#39;acquisizione. Se **Cancella** è abilitato, la destinazione, incluso tutto il suo contenuto, verrà reimpostata sulla versione dell&#39;AEM specificata in Cloud Manager. Se non è abilitata, la destinazione mantiene il contenuto corrente come punto di partenza.
