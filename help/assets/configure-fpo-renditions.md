@@ -1,30 +1,30 @@
 ---
 title: Genera solo rappresentazioni per posizionamento per Adobe InDesign
-description: Genera rappresentazioni FPO di risorse nuove ed esistenti utilizzando il flusso di lavoro Experience Manager Assets e ImageMagick.
+description: Genera rappresentazioni FPO (solo per posizionamento) di risorse nuove ed esistenti tramite il flusso di lavoro di Experience Manager Assets e ImageMagick.
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 10%
+source-wordcount: '527'
+ht-degree: 13%
 
 ---
 
 # Genera solo rappresentazioni per posizionamento per Adobe InDesign {#fpo-renditions}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/configure-fpo-renditions.html?lang=en) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/configure-fpo-renditions) |
 | AEM as a Cloud Service | Questo articolo |
 
-Quando si inseriscono risorse di grandi dimensioni da Experience Manager nei documenti di Adobe InDesign, un professionista deve attendere molto tempo dopo aver [inserito una risorsa](https://helpx.adobe.com/indesign/using/placing-graphics.html). Nel frattempo, l’utente non può utilizzare l’InDesign. Questo interrompe il flusso creativo e influisce negativamente sull’esperienza utente. Adobe consente di inserire temporaneamente copie trasformate di piccole dimensioni nei documenti InDesign. Quando è necessario l’output finale, ad esempio per i flussi di lavoro di stampa e pubblicazione, le risorse originali a risoluzione completa sostituiscono la rappresentazione temporanea in background. Questo aggiornamento asincrono in background accelera il processo di progettazione per aumentare la produttività e non ostacola il processo creativo.
+Quando si inseriscono risorse di grandi dimensioni da Experience Manager nei documenti di Adobe InDesign, un professionista deve attendere molto tempo dopo aver [inserito una risorsa](https://helpx.adobe.com/indesign/using/placing-graphics.html). Nel frattempo, l’utente non può utilizzare l’InDesign. Questo interrompe il flusso creativo e influisce negativamente sull’esperienza utente. Adobe consente di inserire temporaneamente nei documenti InDesign copie trasformate di piccole dimensioni. Quando è necessario l’output finale, ad esempio per i flussi di lavoro di stampa e pubblicazione, le risorse originali a risoluzione completa sostituiscono la rappresentazione temporanea in background. Questo aggiornamento asincrono in background accelera il processo di progettazione per aumentare la produttività e non ostacola il processo creativo.
 
-Assets fornisce rappresentazioni utilizzate solo per il posizionamento (FPO). Queste copie trasformate FPO hanno dimensioni di file ridotte ma hanno le stesse proporzioni. Se per una risorsa non è disponibile una rappresentazione FPO, Adobe InDesign utilizza la risorsa originale. Questo meccanismo di fallback assicura che il flusso di lavoro creativo proceda senza interruzioni.
+Assets fornisce copie trasformate utilizzate solo per il posizionamento (FPO). Queste copie trasformate FPO hanno dimensioni di file ridotte ma hanno le stesse proporzioni. Se per una risorsa non è disponibile una rappresentazione FPO, Adobe InDesign utilizza la risorsa originale. Questo meccanismo di fallback assicura che il flusso di lavoro creativo proceda senza interruzioni.
 
 L’Experience Manager as a Cloud Service offre funzionalità di elaborazione delle risorse native per il cloud per generare le rappresentazioni FPO. Utilizza i microservizi per le risorse per la generazione di rappresentazioni. Puoi configurare la generazione del rendering delle risorse appena caricate e delle risorse esistenti in Experience Manager.
 
@@ -45,7 +45,7 @@ Selezionare **[!UICONTROL Crea rappresentazione oggetto Criteri di gruppo]** per
 
 ## Genera rappresentazioni di nuove risorse {#generate-renditions-of-new-assets}
 
-Per generare le rappresentazioni dell&#39;oggetto Criteri di gruppo delle nuove risorse, applicare il **[!UICONTROL profilo di elaborazione]** alla cartella nelle proprietà della cartella. Nella pagina Proprietà di una cartella, fai clic sulla scheda **[!UICONTROL Elaborazione risorse]**, seleziona il **[!UICONTROL profilo FPO]** come **[!UICONTROL Profilo elaborazione]** e salva le modifiche. Tutte le nuove risorse caricate nella cartella vengono elaborate utilizzando questo profilo.
+Per generare le rappresentazioni dell&#39;oggetto Criteri di gruppo delle nuove risorse, applicare il **[!UICONTROL profilo di elaborazione]** alla cartella nelle proprietà della cartella. Nella pagina Proprietà di una cartella, fare clic sulla scheda **[!UICONTROL Elaborazione risorse]**, selezionare il **[!UICONTROL profilo FPO]** come **[!UICONTROL Profilo elaborazione]** e salvare le modifiche. Tutte le nuove risorse caricate nella cartella vengono elaborate utilizzando questo profilo.
 
 ![add-fpo-rendition](assets/add-fpo-rendition.png)
 
@@ -59,7 +59,7 @@ Per generare le rappresentazioni, seleziona le risorse e segui questi passaggi.
 
 ## Visualizza rappresentazioni FPO {#view-fpo-renditions}
 
-Al termine del flusso di lavoro, è possibile controllare le rappresentazioni dell&#39;oggetto Criteri di gruppo generate. Nell’interfaccia utente di Experience Manager Assets, fai clic sulla risorsa per aprire un’anteprima di grandi dimensioni. Apri la barra a sinistra e seleziona **[!UICONTROL Rappresentazioni]**. In alternativa, utilizzare la scelta rapida da tastiera `Alt + 3` quando l&#39;anteprima è aperta.
+È possibile verificare che le copie trasformate dell&#39;oggetto Criteri di gruppo generate vengano eseguite al termine del flusso di lavoro. Nell’interfaccia utente di Experience Manager Assets, fai clic sulla risorsa per aprire un’anteprima di grandi dimensioni. Apri la barra a sinistra e seleziona **[!UICONTROL Rappresentazioni]**. In alternativa, utilizzare la scelta rapida da tastiera `Alt + 3` quando l&#39;anteprima è aperta.
 
 Fare clic su **[!UICONTROL Rendering FPO]** per caricarne l&#39;anteprima. Se necessario, è possibile fare clic con il pulsante destro del mouse sulla copia trasformata e salvarla nel file system. Controlla le rappresentazioni disponibili nella barra a sinistra.
 
