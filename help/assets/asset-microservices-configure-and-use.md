@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
 workflow-type: tm+mt
-source-wordcount: '2926'
+source-wordcount: '2909'
 ht-degree: 3%
 
 ---
@@ -74,8 +74,6 @@ Il profilo di elaborazione può includere una rappresentazione FPO (solo per pos
 
 ### Creare un profilo standard {#create-standard-profile}
 
-Per creare un profilo di elaborazione standard, effettuare le seguenti operazioni:
-
 1. Gli amministratori accedono a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili di elaborazione]**. Fai clic su **[!UICONTROL Crea]**.
 1. Specifica un nome che ti aiuti a identificare in modo univoco il profilo quando applichi a una cartella.
 1. Per generare le rappresentazioni dell&#39;oggetto Criteri di gruppo, nella scheda **[!UICONTROL Immagine]** abilitare **[!UICONTROL Crea rappresentazione oggetto Criteri di gruppo]**. Inserisci un valore **[!UICONTROL Quality]** da 1 a 100.
@@ -124,8 +122,6 @@ Gli sviluppatori possono utilizzare [!DNL Asset Compute Service] per [creare app
 >Non è possibile modificare i metadati standard utilizzando le applicazioni personalizzate. Puoi modificare solo i metadati personalizzati.
 
 ### Creare un profilo personalizzato {#create-custom-profile}
-
-Per creare un profilo personalizzato, segui questi passaggi:
 
 1. Gli amministratori accedono a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili di elaborazione]** > **[!UICONTROL Crea]**.
 1. Nella pagina Profilo di elaborazione, fai clic sulla scheda **[!UICONTROL Personalizzato]**, quindi fai clic su **[!UICONTROL Aggiungi nuovo]**.
