@@ -4,7 +4,7 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
+source-git-commit: cb1581e96f1cfeadf6ee37cae4738d9d51177504
 workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 1%
@@ -431,7 +431,7 @@ data:
 Le posizioni di un reindirizzamento possono essere valori letterali stringa (ad esempio, https://www.example.com/page) o il risultato di una proprietà (ad esempio, percorso) che viene facoltativamente trasformata con la seguente sintassi:
 
 ```
-experimental_redirects:
+redirects:
   rules:
     - name: country-code-redirect
       when: { reqProperty: path, like: "/" }
