@@ -4,10 +4,10 @@ description: Scopri in che modo Universal Editor consente di modificare ciò che
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: b8d56873b7bc23295fefc35a826b8047c626649e
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 51%
+source-wordcount: '992'
+ht-degree: 52%
 
 ---
 
@@ -87,8 +87,7 @@ Un professionista del marketing desidera creare contenuto personalizzato in base
 Quando esplori l’Editor universale e procedi alla sua implementazione nei tuoi progetti, tieni presenti le seguenti limitazioni.
 
 * Non più di 25 risorse AEM (frammenti di contenuto, pagine, frammenti di esperienza, Assets, ecc.) devono essere riferimenti come strumentazione su una singola pagina.
-* AEM as a Cloud Service è l’unico back-end AEM supportato.
-   * [Il sostegno per l&#39;AEM 6.5 è disponibile nell&#39;ambito di un programma di adozione anticipata.](/help/release-notes/universal-editor/current.md#early-adoption)
+* AEM as a Cloud Service e [AEM 6.5](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) sono gli unici back-end AEM supportati.
 * È richiesta la versione di AEM as a Cloud Service `2023.8.13099` o successiva.
 * Gli autori dei contenuti devono avere un proprio account Experience Cloud.
 * Come parte di AEM, Universal Editor supporta gli stessi browser desktop di AEM.
