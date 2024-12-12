@@ -4,10 +4,10 @@ description: L’AEM dispone di API estese e potenti che puoi utilizzare per il 
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7c2d2fc7b37d70bee4764921a138af6379401064
+source-git-commit: 4182374ea9d603ed53e75511d34fdfcf69829200
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 4%
+source-wordcount: '660'
+ht-degree: 5%
 
 ---
 
@@ -70,12 +70,17 @@ L’AEM offre componenti personalizzabili e opzioni per la distribuzione dei con
 | [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) | Componenti WCM (Web Content Management) standardizzati per AEM per velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei siti Web |
 | [Esportatore JSON](/help/implementing/developing/components/json-exporter.md) | Distribuisci il contenuto di qualsiasi pagina AEM in formato modello dati JSON |
 | [Abilitazione dell’esportazione JSON per un componente](/help/implementing/developing/components/enabling-json-exporter.md) | Generare l’esportazione JSON di contenuto componente basato su un framework modeler |
+| [OpenAPI per il modello Frammento di contenuto e Frammento di contenuto](/help/headless/content-fragment-openapis.md) | OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto |
+| [OpenAPI REST di AEM per la distribuzione dei frammenti di contenuto](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | API REST HTTP sui Edge Delivery Services AEM, progettata per fornire contenuti strutturati dai frammenti di contenuto in formato JSON. |
+| [API GraphQL per frammenti di contenuto](/help/headless/graphql-api/content-fragments.md) | Consentire la distribuzione efficiente dei frammenti di contenuto ai client JavaScript nelle implementazioni CMS headless |
+|  |  |
 | [API Assets](/help/assets/mac-api-assets.md) | Consente operazioni di creazione-lettura-aggiornamento-eliminazione (CRUD) sulle risorse, inclusi dati binari, metadati, rappresentazioni e commenti. Consulta API HTTP di AEM Assets |
 | [API HTTP frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md) | Accedere ai contenuti dei frammenti di contenuto direttamente tramite l’API HTTP tramite operazioni CRUD |
-| [API GraphQL per frammenti di contenuto](/help/headless/graphql-api/content-fragments.md) | Consentire la distribuzione efficiente dei frammenti di contenuto ai client JavaScript nelle implementazioni CMS headless |
 | [Frammenti di contenuto API HTTP Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato esatto delle richieste di risorse HTTP supportate |
-| [OpenAPI per il modello Frammento di contenuto e Frammento di contenuto](/help/headless/content-fragment-openapis.md) | OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto |
-| [REST OpenAPI per AEM per la distribuzione dei frammenti di contenuto](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | API REST HTTP sui Edge Delivery Services AEM, progettata per fornire contenuti strutturati dai frammenti di contenuto in formato JSON. |
+
+>[!NOTE]
+>
+>Per una panoramica delle varie API disponibili e un confronto di alcuni dei concetti coinvolti, consulta [API AEM per la distribuzione e la gestione strutturate dei contenuti](/help/headless/apis-headless-and-content-fragments.md).
 
 ## API specifiche per SPA {#spa-apis}
 
