@@ -5,16 +5,16 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 1252814d99927cb8fff81b66f6e7caca92bb6e9a
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 86%
+source-wordcount: '1904'
+ht-degree: 82%
 
 ---
 
 # Metadati in Visualizza Risorse {#metadata}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Con metadati si intendono i dati o la descrizione dei dati. Ad esempio, le immagini come risorsa possono contenere informazioni sulla fotocamera con cui sono state scattate o su eventuale copyright. Queste informazioni sono metadati dell’immagine. I metadati sono fondamentali per una gestione efficiente delle risorse. I metadati raccolgono tutti i dati disponibili per una risorsa, ma non sono necessariamente contenuti in essa.
@@ -170,6 +170,19 @@ Per rimuovere un modulo di metadati da una cartella:
 1. Seleziona la cartella e fai clic su **[!UICONTROL Rimuovi]**. È anche possibile selezionare più cartelle dall’elenco.
 
 Puoi passare anche alla pagina dei dettagli della cartella e selezionare **[!UICONTROL Modulo di metadati mappato dal sistema]** dal campo **[!UICONTROL Moduli di metadati]**, per rimuovere il modulo di metadati assegnato da una cartella.
+
+### Utilizzo del componente Collegamento nel modulo metadati {#link-component-metadata-form}
+
+Il componente collegamento viene utilizzato per abilitare URL esterni, inclusi collegamenti di archiviazione, informazioni sul copyright, moduli di contatto e così via. Per utilizzare il componente Collega nel modulo metadati, devi [configurare il modulo metadati](#metadata-forms).
+
+Per utilizzare il componente Collega nel modulo metadati, segui i passaggi seguenti:
+
+1. Vai alla pagina dei dettagli della risorsa e passa a **[!UICONTROL URL collegamento]**.
+1. Aggiungi un URL da utilizzare per reindirizzare la risorsa selezionata.
+1. Fare clic su **[!UICONTROL Aggiungi collegamento]**. Eseguire una delle azioni seguenti:
+   * Fai clic sull&#39;![icona Copia](assets/do-not-localize/copy.svg) per copiare l&#39;URL.
+   * Fai clic su ![icona Modifica](assets/do-not-localize/edit.svg) per modificare l&#39;URL.
+1. Fai clic su **[!UICONTROL Salva]** per salvare le modifiche.
 
 ## Passaggi successivi {#next-steps}
 
