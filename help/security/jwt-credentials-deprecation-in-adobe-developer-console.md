@@ -4,9 +4,9 @@ description: Ulteriori informazioni sull’impatto della rimozione delle credenz
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '770'
 ht-degree: 63%
 
 ---
@@ -64,11 +64,11 @@ Quando Cloud Manager esegue il provisioning di ambienti AEM as a Cloud Service, 
 
 Questa sezione fornisce le risposte alle domande più frequenti sulla rimozione delle credenziali JWT per i progetti generati automaticamente in AEM as a Cloud Service.
 
-**Come è possibile determinare quali progetti vengono generati automaticamente?**
-Passa a Adobe Developer Console | Sezione Progetti.  I progetti generati automaticamente da AEM as a Cloud Service avranno un’icona a forma di lucchetto con l’identificatore &quot;Auto-generated&quot;.  I progetti generati automaticamente seguono il formato AEM-p#####-e###### e vengono creati dall’utente dell’account tecnico.
+**Come posso sapere quali progetti vengono generati automaticamente?**
 
-<img width="439" alt="immagine" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
+Passa a Adobe Developer Console | Sezione Progetti.  I progetti generati automaticamente da AEM as a Cloud Service avranno un’icona a forma di lucchetto con l’identificatore &quot;Generato automaticamente&quot;.  I progetti generati automaticamente seguono il formato AEM-p#####-e###### e vengono creati dall’utente dell’account tecnico.
 
+![Progetti generati automaticamente](/help/security/assets/jwt-alert.png)
 
 **Cosa succede se si verificano problemi con i nostri progetti generati automaticamente?**
 
