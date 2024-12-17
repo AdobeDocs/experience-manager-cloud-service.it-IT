@@ -1,26 +1,26 @@
 ---
-title: Approvare risorse per l’hub di contenuti
+title: Approvare risorse per Content Hub
 description: Scopri come approvare le risorse in Assets as a Cloud Service per renderle disponibili in Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 95bf82ceead9d06bc0f5720f1a6af945afc27622
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 6%
+source-wordcount: '837'
+ht-degree: 20%
 
 ---
 
-# Approvare risorse per l’hub di contenuti {#approve-assets-content-hub}
+# Approvare risorse per Content Hub {#approve-assets-content-hub}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Approva risorse per Content Hub](assets/content-hub-approve-assets.png)
 
 >[!AVAILABILITY]
 >
->La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza l’Assistente IA di Adobe Acrobat per rispondere alle tue domande.
 >
->[!BADGE Guida di Content Hub PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Guida di Content Hub - PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 I Brand Manager e gli addetti al marketing mantengono un controllo rigoroso sulle risorse del brand. Solo la versione approvata e più recente della risorsa è disponibile per l’utilizzo in Content Hub, garantendo la coerenza del brand su tutti i canali e le applicazioni.
 
@@ -34,7 +34,7 @@ Prima di iniziare, è necessario disporre di:
 
 * Autorizzazioni di scrittura per modificare i metadati della risorsa per poter modificare il campo **[!UICONTROL Stato]** disponibile nelle [proprietà della risorsa](/help/assets/manage-organize-assets-view.md##manage-asset-status) per una risorsa.
 
-## Approvare risorse per l’hub di contenuti{#approve-assets-for-content-hub}
+## Approvare risorse per Content Hub{#approve-assets-for-content-hub}
 
 Le risorse contrassegnate come `approved` in Assets as a Cloud Service sono automaticamente disponibili in Content Hub.
 
@@ -59,7 +59,7 @@ Approva in blocco le risorse utilizzando la vista Assets per AEM Assets as a Clo
 
 Per approvare in blocco le risorse all’interno di una cartella nella vista Assets:
 
-1. Seleziona le risorse e fai clic su **[!UICONTROL Modifica in blocco metadati]**.
+1. Seleziona le risorse e fai clic su **[!UICONTROL Modifica metadati in blocco]**.
 
 1. Seleziona **[!UICONTROL Approvato]** nel campo **[!UICONTROL Stato]** disponibile nella sezione [!UICONTROL Proprietà] nel riquadro di destra.
 
@@ -85,6 +85,12 @@ Segui questi passaggi per automatizzare l&#39;approvazione per le risorse appena
    1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam:status_.
    1. Cambia il valore predefinito in _approvato_.
 
+1. Analogamente al passaggio 6, trascinare un **[!UICONTROL Campo di testo a riga singola]** dalla sezione **[!UICONTROL Genera modulo]** a destra alla sezione Metadati nel modulo.
+1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel pannello **[!UICONTROL Impostazioni]**:
+   1. Cambia l&#39;etichetta **[!UICONTROL Campo]** in _Destinazione attivazione_.
+   1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam:activationTarget_.
+   1. Cambia il valore predefinito in _contentthub_.
+
 1. Fai clic su **[!UICONTROL Salva]**.
 1. Nella pagina **[!UICONTROL Profili metadati]**, seleziona il profilo metadati appena creato.
 1. Fai clic su **[!UICONTROL Applica profilo metadati a cartelle]** nella barra delle azioni superiore.
@@ -103,8 +109,8 @@ Questo approccio approva le nuove risorse create nella cartella. Per le risorse 
 
 La visualizzazione delle risorse caricate tramite Content Hub dipende dal fatto che sia stato abilitato [l&#39;interruttore di approvazione automatica](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub):
 
-* Se l&#39;opzione **[!UICONTROL Approvazione automatica]** è abilitata, le risorse caricate tramite Content Hub saranno automaticamente disponibili.
+* Se il pulsante **[!UICONTROL Approvazione automatica]** è attivato, le risorse caricate tramite Content Hub sono automaticamente disponibili.
 
-* Se l&#39;opzione **[!UICONTROL Approvazione automatica]** è disabilitata, le risorse caricate tramite Content Hub non vengono visualizzate automaticamente. Le risorse sono disponibili nella cartella `hydrated-assets` dell&#39;ambiente Assets as a Cloud Service. Passa alla cartella e [modifica in blocco](#bulk-approve-assets-content-hub) lo stato di tali risorse in `Approved` per consentirne la visualizzazione in Content Hub.
+* Se il pulsante **[!UICONTROL Approvazione automatica]** è disattivato, le risorse caricate tramite Content Hub non vengono visualizzate automaticamente. Le risorse sono disponibili nella cartella `hydrated-assets` dell’ambiente Assets as a Cloud Service. Passa alla cartella e [modifica in blocco](#bulk-approve-assets-content-hub) lo stato di tali risorse in `Approved` per consentirne la visualizzazione in Content Hub.
 
 ![Processo di approvazione Content Hub](/help/assets/assets/content-hub-approval.png)
