@@ -2,9 +2,9 @@
 title: Integrare AEM Assets durante la creazione di contenuti per Edge Delivery Services
 description: Scopri come integrare AEM Assets con i Edge Delivery Services. Questa integrazione consente di integrare AEM Assets con Microsoft Word e Google Docs, integrare AEM Assets con Universal Editor, integrare Dynamic Media con funzionalità OpenAPI con Universal Editor e integrare Dynamic Media con funzionalità OpenAPI con Microsoft Word e Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: def807c2bb1b2fe337879b3abe2c0a5d1b5f1dea
+source-git-commit: 9e7701152e1da4afc73d3d5ba271b04df2054397
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Per utilizzare il riferimento della risorsa, è necessario disporre di:
 * Adesione a un ambiente di Cloud Service Assets in cui è abilitato Dynamic Media con funzionalità Open API.
 * Una licenza Dynamic Media.
 * Il plug-in della barra laterale di AEM Assets è abilitato con il riferimento di copia per le risorse immagine. Per ulteriori dettagli, vedere [questo](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) per l&#39;authoring basato su documenti e [questo](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) per l&#39;authoring basato su Universal Editor.
-* Assets che sono approvati. Le Assets approvate hanno `dam:status=Approved` tramite il backend o le azioni dell&#39;interfaccia utente dei Cloud Service Assets.
+* Assets che sono approvati. Le risorse approvate hanno `dam:status=Approved` tramite il backend o le azioni dell&#39;interfaccia utente dei Cloud Service di Assets.
 
 ### Utilizzare le risorse distribuite tramite Dynamic Media con funzionalità OpenAPI{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
@@ -83,4 +83,4 @@ Vedi [Viaggi WKND](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-h
 Configura l’Editor universale per l’integrazione con AEM Assets. Questa integrazione consente di utilizzare Dynamic Media con funzionalità OpenAPI per distribuire le risorse.
 
 * Consulta [Configurazione nel sito Edge Delivery](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) per aggiungere una funzione di selezione risorse personalizzata in Universal Editor. Il selettore di risorse personalizzato consente di inserire direttamente le risorse nel contenuto dell’Editor universale.
-* Per informazioni su come accedere ad AEM Assets e inserire le risorse durante la creazione in Universal Editor, consulta la [Panoramica dell&#39;estensione](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview).
+* Consulta [Panoramica dell&#39;estensione](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) per scoprire come accedere ad AEM Assets e inserire le risorse durante la creazione in Universal Editor.
