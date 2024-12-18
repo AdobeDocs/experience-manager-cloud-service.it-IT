@@ -966,9 +966,9 @@ ht-degree: 99%
       + [WYSIWYG e blocchi basati su documenti](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [Pagine con risorse DAM](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [Funzioni siti WIP](/help/edge/wysiwyg-authoring/wip-features.md)
-      + [Riutilizzo del codice tra siti diversi](/help/edge/wysiwyg-authoring/repoless.md)
-      + [Gestione multisito di Ripoless](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [Repoless Stage e ambienti di produzione](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [Riutilizzo del codice in siti diversi](/help/edge/wysiwyg-authoring/repoless.md)
+      + [Gestione di più siti senza archivio](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [Ambienti di produzione e staging senza archivio](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
    + Authoring basato su documenti {#document-authoring}
       + [Authoring](/help/edge/docs/authoring.md)
       + [Metadati in blocco](/help/edge/docs/bulk-metadata.md)
