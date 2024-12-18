@@ -1,17 +1,17 @@
 ---
-title: Riutilizzo del codice tra siti diversi
+title: Riutilizzo del codice in siti diversi
 description: Se hai molti siti simili che per lo più si presentano e si comportano allo stesso modo, ma hanno contenuti diversi, scopri come condividere il codice tra più siti in un modello di repoless.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
+source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 0%
+source-wordcount: '1041'
+ht-degree: 2%
 
 ---
 
-
-# Riutilizzo del codice tra siti diversi {#repoless}
+# Riutilizzo del codice in siti diversi {#repoless}
 
 Se hai molti siti simili che per lo più si presentano e si comportano allo stesso modo, ma hanno contenuti diversi, scopri come condividere il codice tra più siti in un modello di repoless.
 
@@ -45,7 +45,7 @@ Sono disponibili diversi passaggi per attivare la funzionalità di ripolling per
 
 1. [Recupera token di accesso](#access-token)
 1. [Configura servizio di configurazione](#config-service)
-1. [Imposta controllo di accesso](#access-control)
+1. [Aggiungi configurazione del sito e account tecnico](#access-control)
 1. [Aggiorna configurazione AEM](#update-aem)
 1. [Autentica sito](#authenticate-site)
 
@@ -126,9 +126,9 @@ Contatta Adobe tramite il canale di Slack del progetto o solleva un problema di 
 
 Una volta creata la configurazione pubblica, puoi accedervi tramite un URL simile a `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` per verificarla.
 
-### Imposta controllo di accesso {#access-control}
+### Aggiungi mappatura percorso per configurazione sito e imposta account tecnico {#access-control}
 
-Per impostare il controllo degli accessi, devi fornire l’account tecnico.
+Devi creare una configurazione del sito e aggiungerla alla mappatura del percorso.
 
 1. Crea una nuova pagina nella directory principale del sito e scegli il modello [**Configurazione**.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
    * È possibile lasciare vuota la configurazione con solo le colonne predefinite `key` e `value`. Devi solo crearlo.
@@ -156,28 +156,31 @@ Per impostare il controllo degli accessi, devi fornire l’account tecnico.
    ```text
    curl 'https://main--<your-aem-project>--<your-github-org>.aem.live/config.json'
    ```
-1. Nel browser, ora puoi recuperare l’account tecnico nella risposta del seguente collegamento.
+
+Una volta mappata la configurazione del sito, puoi configurare il controllo degli accessi definendo l’account tecnico in modo che disponga dei privilegi per la pubblicazione.
+
+1. Nel browser, recupera l’account tecnico nella risposta del seguente collegamento.
 
    ```text
    https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
    ```
 
-La risposta sarà simile alla seguente.
+1. La risposta sarà simile alla seguente.
 
-```json
-{
-  "total": 1,
-  "offset": 0,
-  "limit": 1,
-  "data": [
-    {
-      "key": "admin.role.publish",
-      "value": "<tech-account-id>@techacct.adobe.com"
-    }
-  ],
-  ":type": "sheet"
-}
-```
+   ```json
+   {
+     "total": 1,
+     "offset": 0,
+     "limit": 1,
+     "data": [
+       {
+         "key": "admin.role.publish",
+         "value": "<tech-account-id>@techacct.adobe.com"
+       }
+     ],
+     ":type": "sheet"
+   }
+   ```
 
 1. Imposta l’account tecnico nella configurazione con un comando cURL simile al seguente.
 
@@ -226,8 +229,8 @@ Il progetto è ora configurato per l’utilizzo in repoless.
 
 Ora che il sito di base è configurato per l’utilizzo di repoless, puoi creare altri siti che sfruttano la stessa base di codice. Fai riferimento alla seguente documentazione a seconda del caso d’uso.
 
-* [Gestione multisito di Ripoless](/help/edge/wysiwyg-authoring/repoless-msm.md)
-* [Repoless Stage e ambienti di produzione](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [Gestione di più siti senza archivio](/help/edge/wysiwyg-authoring/repoless-msm.md)
+* [Ambienti di produzione e staging senza archivio](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
 
 ## Risoluzione dei problemi {#troubleshooting}
 
