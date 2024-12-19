@@ -4,7 +4,8 @@ description: Migliora la sicurezza dei moduli con il servizio Turnstile. Guida d
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 819c376671ee141e1bcf885a22f161b327ce2c15
+exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
+source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 14%
@@ -91,13 +92,13 @@ Per integrare AEM Forms con il servizio Turnstile, effettuare le seguenti operaz
    * **[!UICONTROL Impostazioni configurazione]:** Seleziona una configurazione cloud configurata per il servizio Turnstile Captcha.
      >[!NOTE]
      >* Puoi avere più configurazioni cloud nell’ambiente per uno scopo simile. Quindi, scegli il servizio con attenzione. Se non è elencato alcun servizio, vedere la sezione [Configurazione di Turnstile](#steps-to-configure-hcaptcha) per informazioni sulla creazione di un contenitore di configurazione per la connessione dell&#39;ambiente AEM Forms al servizio Turnstile.
+
    * **[!UICONTROL Convalida]:** Fornisci la convalida Captcha sotto forma di messaggio di errore:
+
       * **Messaggio di errore:** Fornisci il messaggio di errore da visualizzare all&#39;utente quando l&#39;invio Captcha non riesce.
         >[!NOTE]
         >* Un messaggio di errore viene visualizzato solo se il CAPTCHA è compilato sul lato client.
-
-
-1. Seleziona **[!UICONTROL Fine]**.
+1. Fai clic su **[!UICONTROL Fine]**.
 
 
 Ora, solo le forme legittime, in cui il compilatore di moduli elimina con successo la sfida posta dal servizio Turnstile sono consentite per l&#39;invio del modulo.
