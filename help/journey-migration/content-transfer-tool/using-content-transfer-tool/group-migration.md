@@ -2,9 +2,9 @@
 title: Migrazione dei gruppi
 description: Panoramica sulla migrazione dei gruppi in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 7e7b311d425ae6cdee9eb9311c0a12af84f81096
+source-git-commit: bb041cf13d5e82fc4135f0849b03eeeed9a5d009
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1476'
 ht-degree: 4%
 
 ---
@@ -31,22 +31,22 @@ ht-degree: 4%
 
 Nell’ambito del percorso di transizione verso l’as a Cloud Service Adobe Experience Manager (AEM), è necessario migrare i gruppi dagli AEM esistenti ad AEM as a Cloud Service. Questa operazione viene eseguita dallo strumento Content Transfer (Trasferimento contenuti).
 
-Una modifica importante per AEM as a Cloud Service è l’utilizzo completamente integrato degli ID Adobe per accedere al livello di authoring. Questo processo richiede l&#39;utilizzo di [Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per la gestione di utenti e gruppi di utenti. Le informazioni sul profilo utente sono centralizzate in Adobe Identity Management System (IMS), che fornisce il single sign-on in tutte le applicazioni cloud Adobe. Per ulteriori dettagli, vedere [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). A causa di questa modifica, gli utenti vengono creati automaticamente sull’AEM al primo accesso tramite IMS.  Pertanto, CTT non esegue la migrazione degli utenti al sistema cloud.  Gli utenti IMS devono essere inseriti in gruppi IMS, che possono essere gruppi migrati o nuovi gruppi inseriti nei gruppi AEM a cui è stata concessa l’autorizzazione per accedere al contenuto AEM da migrare.  In questo modo, gli utenti del sistema cloud avranno lo stesso accesso che avevano sul loro sistema AEM sorgente.
+Una modifica importante per AEM as a Cloud Service è l’utilizzo completamente integrato degli ID di Adobe per accedere al livello di authoring. Questo processo richiede l&#39;utilizzo di [Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per la gestione di utenti e gruppi di utenti. Le informazioni sul profilo utente sono centralizzate in Adobe Identity Management System (IMS), che fornisce il single sign-on in tutte le applicazioni cloud di Adobe. Per ulteriori dettagli, vedere [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). A causa di questa modifica, gli utenti vengono creati automaticamente sull’AEM al primo accesso tramite IMS.  Pertanto, CTT non esegue la migrazione degli utenti al sistema cloud.  Gli utenti IMS devono essere inseriti in gruppi IMS, che possono essere gruppi migrati o nuovi gruppi inseriti nei gruppi AEM a cui è stata concessa l’autorizzazione per accedere al contenuto AEM da migrare.  In questo modo, gli utenti del sistema cloud avranno lo stesso accesso che avevano sul loro sistema AEM sorgente.
 
 ## Dettagli migrazione gruppo {#group-migration-detail}
 
 Lo strumento Content Transfer (Trasferimento contenuti) e Cloud Acceleration Manager eseguiranno la migrazione dei gruppi associati al contenuto da migrare al cloud system. Lo strumento Content Transfer (Trasferimento contenuti) esegue questa operazione copiando tutti i gruppi dal sistema AEM di origine durante il processo di estrazione. CAM Ingestion seleziona e migra solo alcuni gruppi:
 
+* Se un gruppo si trova su un criterio ACL o CUG di contenuto migrato, verrà eseguita la migrazione di tale gruppo, con alcune eccezioni elencate di seguito.
 * Esistono diversi gruppi integrati e già presenti nel sistema cloud di destinazione; la migrazione di questi non avviene mai.
-* Verrà effettuata la migrazione dei gruppi di membri diretti di qualsiasi gruppo incorporato a cui viene fatto riferimento direttamente o indirettamente in un criterio ACL o CUG di contenuti migrati, per garantire che gli utenti membri diretti o indiretti di tali gruppi mantengano l’accesso ai contenuti migrati.
-* Se un gruppo si trova su un criterio ACL o CUG di contenuto migrato, verrà eseguita la migrazione di tale gruppo.
+   * Alcuni gruppi incorporati possono includere gruppi di membri che sono _non_ incorporati. Verrà eseguita la migrazione di tutti i gruppi di membri di questo tipo (membri diretti o membri di membri, ecc.) a cui viene fatto riferimento in un criterio ACL o CUG di contenuto migrato, per garantire che gli utenti membri di questi gruppi mantengano (direttamente o indirettamente) l&#39;accesso al contenuto migrato.
 * Non verrà eseguita la migrazione di altri gruppi, ad esempio quelli non trovati in un criterio ACL o CUG, quelli già presenti nel sistema di destinazione e quelli con dati con vincoli di univocità già presenti nel sistema di destinazione.
 
 Il percorso registrato/segnalato per un gruppo è solo il primo percorso che ha attivato la migrazione del gruppo e tale gruppo potrebbe trovarsi anche in altri percorsi di contenuto.
 
 La maggior parte dei gruppi migrati è configurata per essere gestita da IMS.  Ciò significa che un gruppo in IMS con lo stesso nome sarà collegato al gruppo in AEM e tutti gli utenti IMS nel gruppo IMS diventeranno utenti AEM e membri del gruppo in AEM.  Questo consente agli utenti di avere accesso al contenuto in base a ACL o criteri CUG per il gruppo.
 
-I gruppi migrati non sono più considerati &quot;gruppi locali&quot;; sono gruppi IMS e devono essere ricreati in IMS in modo da poter essere sincronizzati tra AEM e IMS.  Admin Console I gruppi possono essere creati in IMS tramite, tra gli altri metodi, singolarmente o in blocco.  Consulta [Gestione dei gruppi di utenti](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) per informazioni dettagliate sulla creazione di gruppi singolarmente o in blocco nell&#39;Admin Console.
+Si noti che i gruppi migrati non sono più considerati &quot;gruppi locali&quot; dell’AEM; sono gruppi pronti per l’IMS nell’AEM anche se potrebbero non esistere ancora nell’IMS.  Devono essere ricreati separatamente in IMS in modo che possano essere sincronizzati tra AEM e IMS.  Admin Console I gruppi possono essere creati in IMS tramite, tra gli altri metodi, singolarmente o in blocco.  Consulta [Gestione dei gruppi di utenti](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) per informazioni dettagliate sulla creazione di gruppi singolarmente o in blocco nell&#39;Admin Console.
 
 L’eccezione a questa configurazione IMS si verifica con i gruppi creati dalle raccolte Assets. Quando una raccolta viene creata su AEM, vengono creati gruppi per l’accesso a tale raccolta; tali gruppi vengono migrati al sistema cloud, ma non sono configurati per essere gestiti da IMS.  Per aggiungere utenti IMS a questi gruppi, è necessario aggiungerli nella pagina Proprietà gruppo dell’interfaccia utente di Assets, singolarmente o collettivamente, come parte di un altro gruppo IMS.
 
