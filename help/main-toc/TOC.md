@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4e9d49aef85f79e99894153237cc58a75458b1e5
+source-git-commit: 9388187a14129420d17d5ccdadd20313f123d870
 workflow-type: tm+mt
-source-wordcount: '5929'
+source-wordcount: '5938'
 ht-degree: 99%
 
 ---
@@ -755,7 +755,8 @@ ht-degree: 99%
             + [Configurare l’azione di invio Invia a endpoint REST per moduli adattivi](/help/forms/configure-submit-action-restpoint.md)
             + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
             + [Utilizzare reCAPTCHA di Google in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Utilizzare hCAPTCHA in un modulo adattivo per i componenti core](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Utilizzare hCaptcha nei componenti core di un modulo adattivo](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Utilizzare Turnstile Captcha nei componenti core di un modulo adattivo](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Aggiungere un handler degli errori personalizzato in un modulo adattivo](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Aggiungere una lingua per un modulo adattivo basato sui componenti core](/help/forms/supporting-new-language-localization-core-components.md)
             + [Progettare uno schema JSON per un modulo adattivo (componenti core)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
