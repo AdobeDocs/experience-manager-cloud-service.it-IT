@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
+source-git-commit: eba6aec89e645e443ba6f4ca5aff66a39288ff1e
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 14%
@@ -98,6 +98,7 @@ Per integrare AEM Forms con il servizio Turnstile, effettuare le seguenti operaz
       * **Messaggio di errore:** Fornisci il messaggio di errore da visualizzare all&#39;utente quando l&#39;invio Captcha non riesce.
         >[!NOTE]
         >* Un messaggio di errore viene visualizzato solo se il CAPTCHA è compilato sul lato client.
+
 1. Fai clic su **[!UICONTROL Fine]**.
 
 
