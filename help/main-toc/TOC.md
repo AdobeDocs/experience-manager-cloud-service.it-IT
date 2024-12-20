@@ -640,8 +640,8 @@ ht-degree: 99%
       + [Modificare i video](/help/assets/edit-videos-assets-view.md)
       + [Visualizzare e gestire le rappresentazioni](/help/assets/renditions.md)
       + [Gestire i metadati delle risorse](/help/assets/metadata-assets-view.md)
-      + [Rinomina in blocco](/help/assets/bulk-rename-assets-view.md)
-      + [Modifica in blocco dei metadati](/help/assets/bulk-metadata-edit.md)
+      + [Rinominare in blocco](/help/assets/bulk-rename-assets-view.md)
+      + [Modificare i metadati in blocco](/help/assets/bulk-metadata-edit.md)
       + [Condividere le risorse](/help/assets/share-links-for-assets-view.md)
       + [Gestire le raccolte](/help/assets/manage-collections-assets-view.md)
       + [Osservare risorse, cartelle e raccolte](/help/assets/manage-notifications-assets-view.md)
@@ -1114,7 +1114,7 @@ ht-degree: 99%
    + [Implementazione di applicazioni per AEM as a Cloud Service](/help/implementing/home.md)
    + Utilizzare Cloud Manager {#using-cloud-manager}
       + [Navigazione](/help/implementing/cloud-manager/navigation.md)
-      + [Pannello di avvio AEM](/help/implementing/cloud-manager/aem-home.md)
+      + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
       + Programmi {#programs}
          + [Programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
