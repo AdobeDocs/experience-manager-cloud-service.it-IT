@@ -2,7 +2,7 @@
 title: Integrare AEM Assets durante la creazione di contenuti per Edge Delivery Services
 description: Scopri come integrare AEM Assets con i Edge Delivery Services. Questa integrazione consente di integrare AEM Assets con Microsoft Word e Google Docs, integrare AEM Assets con Universal Editor, integrare Dynamic Media con funzionalità OpenAPI con Universal Editor e integrare Dynamic Media con funzionalità OpenAPI con Microsoft Word e Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: e6fd7b1d16aac5e7021a8c309f6483f98746e85e
+source-git-commit: f57edede03cf55110122c59f2874a5f40ffa9c76
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 3%
@@ -78,7 +78,7 @@ Guarda questo video per scoprire come distribuire le risorse utilizzando Dynamic
 
 ## Sito Edge Delivery Services di esempio{#example-of-an-Edge-Delivery-Services-site}
 
-Vedi [Viaggi WKND](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home). Questo sito viene creato utilizzando le funzionalità di authoring basato su documenti dei Edge Delivery Services. Il contenuto del sito è stato creato in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT), utilizzando Dynamic Media con funzionalità OpenAPI per la distribuzione delle risorse. Una volta creato, il contenuto viene pubblicato direttamente dal documento. Per questa configurazione di authoring basato su documenti, tutti i file essenziali, le cartelle, le configurazioni, lo stile e i codici di funzionalità del sito Web sono archiviati in questo [archivio Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks).
+Vedi [Viaggi WKND](http://bit.ly/3DExLnf). Questo sito viene creato utilizzando le funzionalità di authoring basato su documenti dei Edge Delivery Services. Il contenuto del sito è stato creato in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT), utilizzando Dynamic Media con funzionalità OpenAPI per la distribuzione delle risorse. Una volta creato, il contenuto viene pubblicato direttamente dal documento. Per questa configurazione di authoring basato su documenti, tutti i file essenziali, le cartelle, le configurazioni, lo stile e i codici di funzionalità del sito Web sono archiviati in questo [archivio Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks).
 
 ## Integrazione di AEM Assets con flussi di authoring per Edge Delivery Services basati su Universal Editor {#integrate-aem-assets-with-universal-editor}
 
