@@ -5,9 +5,9 @@ exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
 source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '770'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -62,32 +62,32 @@ Quando Cloud Manager esegue il provisioning di ambienti AEM as a Cloud Service, 
 
 ## Domande frequenti sui progetti generati automaticamente {#autogen-projects-faqs}
 
-Questa sezione fornisce le risposte alle domande più frequenti sulla rimozione delle credenziali JWT per i progetti generati automaticamente in AEM as a Cloud Service.
+Questa sezione fornisce risposte alle domande più frequenti sulla rimozione delle credenziali JWT per i progetti generati automaticamente in AEM as a Cloud Service.
 
-**Come posso sapere quali progetti vengono generati automaticamente?**
+**Come è possibile sapere quali progetti vengono generati automaticamente?**
 
-Passa a Adobe Developer Console | Sezione Progetti.  I progetti generati automaticamente da AEM as a Cloud Service avranno un’icona a forma di lucchetto con l’identificatore &quot;Generato automaticamente&quot;.  I progetti generati automaticamente seguono il formato AEM-p#####-e###### e vengono creati dall’utente dell’account tecnico.
+Passare a Adobe Developer Console | Sezione Progetti.  I progetti generati automaticamente da AEM as a Cloud Service avranno un’icona a forma di lucchetto con l’identificatore “Generato automaticamente”.  I progetti generati automaticamente seguono il formato AEM-p#####-e###### e vengono creati dall’utente dell’account tecnico.
 
 ![Progetti generati automaticamente](/help/security/assets/jwt-alert.png)
 
-**Cosa succede se si verificano problemi con i nostri progetti generati automaticamente?**
+**Cosa succede se si verificano problemi con i progetti generati automaticamente personali?**
 
-Contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+Contattare l’[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 
-**Procedere con la migrazione dei progetti generati automaticamente?**
+**È necessario procedere con la migrazione dei progetti generati automaticamente?**
 
-Non è richiesta alcuna azione in quanto Adobe eseguirà la migrazione automatica per tuo conto per gli ambienti con AEM Release 17258 (Aug &#39;24) e versioni successive.
+Non è richiesta alcuna azione in quanto Adobe eseguirà la migrazione automatica per conto dell’utente per gli ambienti con versione AEM 17258 (agosto ’24) e versioni successive.
 
 **Quali sono le tempistiche per la migrazione dei progetti generati automaticamente?**
 
 Adobe avvierà un approccio di migrazione graduale nel primo trimestre del 2025, a partire dagli ambienti di sviluppo.
 
-**Che impatto ha la nostra istanza di AEM as a Cloud Service se la versione dell&#39;AEM è precedente alla 17258 della versione dell&#39;AEM (agosto &#39;24)?**
+**Che impatto avrà l’istanza di AEM as a Cloud Service se la versione di AEM è precedente alla versione AEM 17258 (agosto ’24)?**
 
-Le integrazioni di progetto generate automaticamente cesseranno di funzionare se non verrà effettuata la migrazione a OAuth entro giugno 2025.
+Le integrazioni dei progetti generati automaticamente cesseranno di funzionare se non verrà effettuata la migrazione a OAuth entro giugno 2025.
 
-Per garantire una transizione senza problemi, i clienti devono contattare [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) tempestivamente e avviare il processo di aggiornamento alla [versione più recente dell&#39;AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). Ciò fornirà un ampio lasso di tempo per il test di regressione e consentirà a Adobe di gestire in modo efficiente la migrazione dei progetti.
+Per garantire una transizione fluida, la clientela dovrà contattare prontamente [l’Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) e avviare il processo di aggiornamento alla [versione più recente di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). Questo fornirà un ampio lasso di tempo per il test di regressione e consentirà a Adobe di gestire in modo efficiente la migrazione dei progetti.
 
-**Posso effettuare l&#39;aggiornamento a una versione OAuth supportata senza aggiornare la versione AEM di AEM as a Cloud Service?**
+**È possibile effettuare l’aggiornamento a una versione OAuth supportata senza aggiornare la versione AEM di AEM as a Cloud Service?**
 
-No. Per garantire una transizione senza problemi, i clienti devono contattare [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) tempestivamente e avviare il processo di aggiornamento alla [versione più recente dell&#39;AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). Ciò fornirà un ampio lasso di tempo per il test di regressione e consentirà a Adobe di gestire in modo efficiente la migrazione dei progetti.
+No. Per garantire una transizione fluida, la clientela dovrà contattare prontamente [l’Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) e avviare il processo di aggiornamento alla [versione più recente di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). Questo fornirà un ampio lasso di tempo per il test di regressione e consentirà a Adobe di gestire in modo efficiente la migrazione dei progetti.
