@@ -4,9 +4,9 @@ description: Scopri come configurare le credenziali e l’autenticazione CDN dic
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
+source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 La rete CDN fornita dall’Adobe dispone di diverse funzioni e servizi, alcuni dei quali si basano sulle credenziali e sull’autenticazione per garantire un livello adeguato di sicurezza aziendale. Dichiarando le regole in un file di configurazione distribuito tramite la pipeline [config di Cloud Manager,](/help/operations/config-pipeline.md) i clienti possono configurare in modo autonomo quanto segue:
 
-* Il valore dell’intestazione HTTP X-AEM-Edge-Key utilizzato dalla rete CDN Adobe per convalidare le richieste provenienti da una rete CDN gestita dal cliente.
+* Il valore dell’intestazione HTTP X-AEM-Edge-Key utilizzato dalla rete CDN di Adobe per convalidare le richieste provenienti da una rete CDN gestita dal cliente.
 * Token API utilizzato per eliminare le risorse nella cache CDN.
 * Un elenco di combinazioni nome utente/password che possono accedere a contenuto con restrizioni, inviando un modulo di autenticazione di base.
 
@@ -28,9 +28,11 @@ Ognuna di queste, inclusa la sintassi di configurazione, è descritta nella prop
 
 Come descritto nella pagina [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN), i clienti possono scegliere di instradare il traffico attraverso la propria rete CDN, denominata anche CDN cliente (talvolta denominata BYOCDN).
 
-Come parte della configurazione, la rete CDN Adobe e la rete CDN cliente devono concordare un valore dell&#39;intestazione HTTP `X-AEM-Edge-Key`. Questo valore viene impostato su ogni richiesta, sulla rete CDN del cliente, prima che venga instradato alla rete CDN dell’Adobe, la quale verifica che il valore sia quello previsto, in modo che possa essere considerato attendibile da altre intestazioni HTTP, incluse quelle che consentono di instradare la richiesta all’origine AEM appropriata.
+Come parte della configurazione, la rete CDN di Adobe e la rete CDN del cliente devono concordare un valore dell&#39;intestazione HTTP `X-AEM-Edge-Key`. Questo valore viene impostato su ogni richiesta alla rete CDN del cliente, prima che venga instradato alla rete CDN dell’Adobe, la quale verifica che il valore sia come previsto, in modo che possa considerare attendibili altre intestazioni HTTP, incluse quelle che consentono di instradare la richiesta all’origine AEM appropriata.
 
 Al valore *X-AEM-Edge-Key* fanno riferimento le proprietà `edgeKey1` e `edgeKey2` in un file denominato `cdn.yaml` o simile, in una cartella `config` di primo livello. Leggi [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure) per informazioni dettagliate sulla struttura delle cartelle e su come distribuire la configurazione.  La sintassi è descritta nell’esempio seguente.
+
+Per ulteriori informazioni di debug ed errori comuni, controllare [Errori comuni](/help/implementing/dispatcher/cdn.md#common-errors).
 
 >[!WARNING]
 >L’accesso diretto senza una chiave X-AEM-Edge-Key corretta verrà negato per tutte le richieste che corrispondono alla condizione (nell’esempio seguente significa tutte le richieste al livello di pubblicazione). Se devi introdurre gradualmente l&#39;autenticazione, consulta la sezione [Migrazione sicura per ridurre il rischio di traffico bloccato](#migrating-safely).
@@ -79,7 +81,7 @@ Altre proprietà includono:
 
 ### Migrazione sicura per ridurre il rischio di blocco del traffico {#migrating-safely}
 
-Se il sito è già attivo, presta attenzione durante la migrazione alla rete CDN gestita dal cliente, poiché una configurazione errata può bloccare il traffico pubblico; questo perché solo le richieste con il valore di intestazione X-AEM-Edge-Key previsto verranno accettate dalla rete CDN Adobe. Si consiglia un approccio quando nella regola di autenticazione viene temporaneamente inclusa una condizione aggiuntiva, che causa il blocco della richiesta solo se viene inclusa un’intestazione di test o se viene trovato un percorso corrispondente:
+Se il sito è già attivo, presta attenzione durante la migrazione alla rete CDN gestita dal cliente, poiché una configurazione errata può bloccare il traffico pubblico; in quanto solo le richieste con il valore di intestazione X-AEM-Edge-Key previsto verranno accettate dalla rete CDN di Adobe. Si consiglia un approccio quando nella regola di autenticazione viene temporaneamente inclusa una condizione aggiuntiva, che causa il blocco della richiesta solo se viene inclusa un’intestazione di test o se viene trovato un percorso corrispondente:
 
 ```
     - name: edge-auth-rule
@@ -147,7 +149,7 @@ Altre proprietà includono:
    * name - una stringa descrittiva.
    * tipo: deve essere purge.
    * purgeKey1 - il valore deve fare riferimento a una [variabile di ambiente di tipo segreto Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars). Per il campo Servizio applicato, selezionare Tutto. Si consiglia che il valore (ad esempio, `${{CDN_PURGEKEY_031224}}`) rifletta il giorno in cui è stato aggiunto.
-   * purgeKey2: utilizzato per la rotazione dei segreti, come descritto nella sezione [rotating secrets](#rotating-secrets) di seguito. È necessario dichiarare almeno uno di `purgeKey1` e `purgeKey2`.
+   * purgeKey2: utilizzato per la rotazione dei segreti, come descritto nella sezione [segreti rotanti](#rotating-secrets) seguente. È necessario dichiarare almeno uno di `purgeKey1` e `purgeKey2`.
 * Regole: consente di dichiarare quale degli autenticatori deve essere utilizzato e se si tratta del livello di pubblicazione e/o anteprima.  Include:
    * name - una stringa descrittiva
    * when: condizione che determina quando valutare la regola, in base alla sintassi nell&#39;articolo [Regole filtro traffico](/help/security/traffic-filter-rules-including-waf.md). In genere, include un confronto del livello corrente (ad esempio, pubblicazione).
@@ -202,7 +204,7 @@ Inoltre, la sintassi include:
    * name - una stringa descrittiva
    * tipo - deve essere `basic`
    * array di un massimo di 10 credenziali, ognuna delle quali include le seguenti coppie nome/valore, che gli utenti finali possono immettere nella finestra di dialogo autenticazione di base:
-      * user (utente): nome dell’utente
+      * user (utente): nome dell’utente.
       * password: il valore deve fare riferimento a una variabile di ambiente di tipo segreto [Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars), con **All** selezionato come campo del servizio.
 * Regole: consente di dichiarare quali degli autenticatori devono essere utilizzati e quali risorse devono essere protette. Ogni regola include:
    * name - una stringa descrittiva

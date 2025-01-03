@@ -4,10 +4,10 @@ description: Scopri come utilizzare la rete CDN gestita dall’AEM e come indiri
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 6600f5c1861e496ae8ee3b6d631ed8c033c4b7ef
 workflow-type: tm+mt
-source-wordcount: '1602'
-ht-degree: 12%
+source-wordcount: '1745'
+ht-degree: 11%
 
 ---
 
@@ -23,12 +23,12 @@ AEM as a Cloud Service viene fornito con una rete CDN integrata, progettata per 
 
 La rete CDN gestita dall&#39;AEM soddisfa le esigenze di prestazioni e sicurezza della maggior parte dei clienti. Per il livello di pubblicazione, i clienti possono scegliere di indirizzare il traffico attraverso la propria rete CDN, che devono gestire. Questa opzione è disponibile caso per caso, in particolare quando i clienti dispongono di integrazioni legacy con un provider CDN difficili da sostituire.
 
-I clienti che desiderano pubblicare sul livello Edge Delivery Services possono sfruttare i vantaggi della rete CDN gestita di Adobe. Vedi [Adobe CDN gestito](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+I clienti che desiderano pubblicare sul livello Edge Delivery Services possono sfruttare la rete CDN gestita di Adobe. Vedi [CDN gestito da Adobe](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## CDN gestita da Adobe {#aem-managed-cdn}
+## CDN gestito da Adobe {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
@@ -91,14 +91,14 @@ Se un cliente deve utilizzare la propria rete CDN esistente, può gestirla e pun
 
 Istruzioni di configurazione:
 
-1. Puntare la CDN all’ingresso della CDN Adobe come dominio di origine. Esempio: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. Impostare SNI sull&#39;ingresso della rete CDN in Adobe.
+1. Adobe Puntare la rete CDN all’ingresso della rete CDN come dominio di origine. Esempio: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Impostare SNI sull&#39;ingresso della rete CDN Adobe.
 1. Imposta l’intestazione Host sul dominio di origine. Ad esempio: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Impostare l&#39;intestazione `X-Forwarded-Host` con il nome di dominio in modo che l&#39;AEM possa determinare l&#39;intestazione host. Ad esempio: `X-Forwarded-Host:example.com`.
 1. Imposta `X-AEM-Edge-Key`. Il valore deve essere configurato utilizzando una pipeline di configurazione di Cloud Manager, come descritto in [questo articolo](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
-   * Necessario affinché il CDN Adobe possa convalidare l&#39;origine delle richieste e passare le intestazioni `X-Forwarded-*` all&#39;applicazione AEM. Ad esempio, `X-Forwarded-For` viene utilizzato per determinare l&#39;IP del client. Pertanto, è responsabilità del chiamante fidato (ovvero, la rete CDN gestita dal cliente) garantire la correttezza delle intestazioni `X-Forwarded-*` (vedi la nota seguente).
-   * Facoltativamente, l&#39;accesso all&#39;ingresso di Adobe CDN può essere bloccato quando non è presente un `X-AEM-Edge-Key`. Informa l’Adobe se hai bisogno di accedere direttamente all’ingresso della rete CDN di Adobe (da bloccare).
+   * Necessario affinché Adobe CDN possa convalidare l&#39;origine delle richieste e passare le intestazioni `X-Forwarded-*` all&#39;applicazione AEM. Ad esempio, `X-Forwarded-For` viene utilizzato per determinare l&#39;IP del client. Pertanto, è responsabilità del chiamante fidato (ovvero, la rete CDN gestita dal cliente) garantire la correttezza delle intestazioni `X-Forwarded-*` (vedi la nota seguente).
+   * Facoltativamente, l&#39;accesso all&#39;ingresso di Adobe CDN può essere bloccato quando non è presente un `X-AEM-Edge-Key`. Informa Adobe se hai bisogno di accedere direttamente all’ingresso di Adobe CDN (da bloccare).
 
 Consulta la sezione [Configurazioni di esempio del fornitore CDN](#sample-configurations) per esempi di configurazione dai principali fornitori CDN.
 
@@ -120,7 +120,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Quando utilizzi una tua rete CDN, non è necessario installare domini e certificati in Cloud Manager. Il routing nella rete CDN di Adobe viene eseguito utilizzando il dominio predefinito `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, che deve essere inviato nell&#39;intestazione della richiesta `Host`. La sovrascrittura dell&#39;intestazione della richiesta `Host` con un nome di dominio personalizzato potrebbe instradare la richiesta in modo errato tramite la rete CDN di Adobe.
+>Quando utilizzi una tua rete CDN, non è necessario installare domini e certificati in Cloud Manager. Il routing nell&#39;Adobe CDN viene eseguito utilizzando il dominio predefinito `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, che deve essere inviato nell&#39;intestazione della richiesta `Host`. La sovrascrittura dell&#39;intestazione della richiesta `Host` con un nome di dominio personalizzato potrebbe instradare la richiesta in modo errato tramite Adobe CDN o causare errori 421.
 
 >[!NOTE]
 >
@@ -133,6 +133,30 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 L’hop aggiuntivo tra la rete CDN del cliente e la rete CDN dell’AEM è necessario solo in caso di errore della cache. Utilizzando le strategie di ottimizzazione della cache descritte in questo articolo, l’aggiunta di una rete CDN del cliente dovrebbe introdurre solo una latenza trascurabile.
 
 Questa configurazione CDN del cliente è supportata per il livello di pubblicazione, ma non prima del livello di authoring.
+
+### Configurazione di debug
+
+Per eseguire il debug di una configurazione BYOCDN, utilizzare l&#39;intestazione `x-aem-debug` con il valore `edge=true`. Ad esempio:
+
+In Linux®:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
+```
+
+In Windows:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
+```
+
+Questo rifletterà alcune proprietà utilizzate nella richiesta nell&#39;intestazione di risposta `x-aem-debug`. Ad esempio:
+
+```
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+```
+
+Utilizzando questa si possono verificare, ad esempio, i valori di host, se l’autenticazione edge è configurata, nonché il valore dell’intestazione x-forwarded-host, se è impostata una chiave edge e quale chiave viene utilizzata (nel caso in cui una chiave corrisponda).
 
 ### Esempio di configurazioni fornitore CDN {#sample-configurations}
 
@@ -160,6 +184,11 @@ Le configurazioni di esempio fornite mostrano le impostazioni di base necessarie
 **Reindirizzamento all&#39;endpoint del servizio di pubblicazione**
 
 Quando una richiesta riceve una risposta 403 non consentita, significa che mancano alcune intestazioni richieste. Una causa comune è che la rete CDN gestisce sia il traffico del dominio APEX che quello del dominio `www`, ma non aggiunge l&#39;intestazione corretta per il dominio `www`. Per risolvere questo problema, controlla i registri CDN di AEM as a Cloud Service e verifica le intestazioni di richiesta necessarie.
+
+**Errore 421: reindirizzamento errato**
+
+Quando una richiesta riceve un errore 421 con un corpo intorno a `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate`, indica che il set HTTP `Host` non corrisponde ad alcun host nei certificati per l&#39;host. In genere ciò indica che l&#39;impostazione `Host` o SNI è errata. Assicurarsi che sia `Host` che le impostazioni SNI puntino alla pubblicazione-p&lt;PROGRAM_ID>-e<ENV-ID>Host .adobeaemcloud.com.
+
 
 **Troppi reindirizzamenti al ciclo**
 
