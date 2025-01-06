@@ -4,9 +4,9 @@ description: Scopri come dichiarare i reindirizzamenti 301 o 302 senza accesso a
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: e30a9fbe74f1f5cd8a924dc3fec140fad5e0a164
+source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service offre [diversi approcci](https://experienceleague.adobe.c
 * Il numero di reindirizzamenti varia da poche a decine di migliaia.
 * Si desidera scegliere l&#39;opzione di un&#39;interfaccia utente, che può essere creata come progetto personalizzato o utilizzando [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) o [ACS Commons Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
 
-Questa funzione si basa sulla capacità di Apache/Dispatcher dell’AEM di caricare (o ricaricare) uno o più file di mappa di riscrittura posizionati in una posizione specifica nell’archivio di pubblicazione. È importante ricordare che il modo in cui i file vengono ricevuti è al di fuori dell’ambito di questa funzione, ma puoi prendere in considerazione uno dei seguenti metodi:
+Il nucleo di questa funzione è la capacità di Apache/Dispatcher dell’AEM di caricare (o ricaricare) uno o più file di mappa di riscrittura posizionati in una posizione specifica nell’archivio di pubblicazione (in modo che sia scaricabile dalla pubblicazione AEM). È importante ricordare che il modo in cui i file vengono ricevuti è al di fuori dell’ambito di questa funzione, ma puoi prendere in considerazione uno dei seguenti metodi:
 
 * Acquisizione della mappa di riscrittura come risorsa nell’interfaccia utente di authoring e pubblicazione.
 * Installazione di [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([almeno versione 6.7.0 o successiva](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), che include un&#39;interfaccia utente per la gestione dei mapping URL e può inoltre pubblicare il file di mapping di riscrittura.
