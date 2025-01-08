@@ -5,20 +5,20 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 96%
+source-wordcount: '1169'
+ht-degree: 79%
 
 ---
 
-# Test di qualità del codice {#code-quality-testing}
+# Test della qualità del codice {#code-quality-testing}
 
 Scopri come funziona il test di qualità del codice delle pipeline e come può migliorare la qualità delle distribuzioni.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_codequalitytests"
->title="Test di qualità del codice"
+>title="Test della qualità del codice"
 >abstract="Il test di qualità del codice valuta il codice dell’applicazione in base a un set di regole relative alla qualità. È lo scopo principale di una pipeline destinata solo alla qualità del codice e viene eseguito immediatamente dopo la fase di build in tutte le pipeline di produzione e non di produzione."
 
 ## Introduzione {#introduction}
@@ -29,21 +29,23 @@ Per ulteriori informazioni sui diversi tipi di pipeline, consulta il documento [
 
 ## Regole per la qualità del codice {#understanding-code-quality-rules}
 
-Il test di qualità del codice controlla il codice sorgente per garantire che soddisfi determinati criteri di qualità. Questa funzione è implementata tramite una combinazione di SonarQube e un’analisi dei contenuti a livello di pacchetto tramite OakPAL. Sono previste oltre 100 regole, che combinano regole Java generiche e regole specifiche per AEM. Alcune delle regole specifiche per AEM sono create in base alle best practice indicate dal team ingegneristico di AEM e sono denominate [regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Il test di qualità del codice controlla il codice sorgente per garantire che soddisfi determinati criteri di qualità. Questo passaggio è implementato tramite una combinazione di SonarQube e l’esame dei contenuti a livello di pacchetto tramite OakPAL. Sono previste oltre 100 regole, che combinano regole Java generiche e regole specifiche per AEM. Alcune delle regole specifiche per AEM sono create in base alle best practice indicate dal team ingegneristico di AEM e sono denominate [regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
->[!NOTE]
+È possibile scaricare l&#39;elenco completo corrente delle regole [utilizzando questo collegamento](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+
+>[!IMPORTANT]
 >
->È possibile scaricare l’elenco completo delle regole [utilizzando questo collegamento](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+>A partire da giovedì 13 febbraio 2025 (Cloud Manager 2025.2.0), Cloud Manager Code Quality utilizza una versione aggiornata di SonarQube 9.9 e un elenco aggiornato di regole che puoi [scaricare qui](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
 
 ### Valutazioni a tre livelli {#three-tiered-gate}
 
 I problemi identificati dai test di qualità del codice vengono assegnati a una delle tre categorie.
 
-* **Critico**: problemi che causano errore immediato nell’esecuzione della pipeline.
+* **Critico**: si tratta di problemi che causano un errore immediato della pipeline.
 
-* **Importante**: problemi che causano la sospensione dell’esecuzione della pipeline. I ruoli Responsabile dell’implementazione, Responsabile del progetto o Proprietario business possono ignorare i problemi, facendo in tal caso procedere la pipeline, o accettarli, causando in tal caso l’arresto della pipeline con un errore.
+* **Importante**: si tratta di problemi che causano la sospensione dell’esecuzione della pipeline. Un Responsabile della distribuzione, un Project Manager o un Proprietario business possono ignorare i problemi, consentendo alla pipeline di procedere. In alternativa, può accettare i problemi, causando l’interruzione della pipeline con un errore.
 
-* **Informativo**: problemi indicati unicamente a scopi informativi e che non hanno impatto sull’esecuzione della pipeline.
+* **Informazioni** - Problemi forniti a scopo puramente informativo e che non hanno alcun impatto sull&#39;esecuzione della pipeline
 
 >[!NOTE]
 >
@@ -51,7 +53,7 @@ I problemi identificati dai test di qualità del codice vengono assegnati a una 
 
 ### Valutazioni {#ratings}
 
-I risultati di questo passaggio sono presentati come **Valutazioni**.
+I risultati di questo passaggio vengono consegnati come **Valutazioni**.
 
 Nella tabella seguente sono riepilogate le valutazioni e le soglie di errore per ciascuna categoria: problemi critici, importanti e informativi.
 
@@ -68,7 +70,7 @@ Nella tabella seguente sono riepilogate le valutazioni e le soglie di errore per
 
 >[!NOTE]
 >
->Per ulteriori dettagli sulle definizioni, consulta il documento [Definizioni delle metriche di SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/).
+>Per ulteriori dettagli sulle definizioni, consulta il documento [Definizioni delle metriche di SonarQube](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/).
 
 >[!NOTE]
 >
@@ -76,7 +78,7 @@ Nella tabella seguente sono riepilogate le valutazioni e le soglie di errore per
 
 ## Gestione dei falsi positivi {#dealing-with-false-positives}
 
-Il processo di controllo qualità non è perfetto e talvolta identifica erroneamente problemi non effettivamente presenti. Sono indicati come **falsi positivi**.
+Il processo di controllo qualità non è perfetto e talvolta identifica erroneamente problemi che non sono effettivamente problemi. Questo stato è denominato **falso positivo**.
 
 In questi casi, il codice sorgente può essere annotato con l’annotazione Java standard `@SuppressWarnings` che specifica l’ID della regola come attributo dell’annotazione. Tra i falsi positivi comuni si annovera ad esempio il caso in cui la regola SonarQube per rilevare le password hardcoded può essere molto rigida riguardo al modo in cui una password hardcoded viene identificata.
 
@@ -87,7 +89,7 @@ Il codice riportato di seguito è abbastanza comune in un progetto AEM, che pres
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-SonarQube genera in questo caso una vulnerabilità bloccante. Dopo aver esaminato il codice, riconosci che non si tratta di una vulnerabilità e puoi annotare il codice con l’ID della regola appropriato.
+SonarQube genera una vulnerabilità di blocco. Dopo aver rivisto il codice, riconosci che tale errore non è una vulnerabilità e puoi annotare il codice con l’ID della regola appropriata.
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -95,7 +97,7 @@ SonarQube genera in questo caso una vulnerabilità bloccante. Dopo aver esaminat
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-Tuttavia, se il codice era:
+Tuttavia, se in realtà il codice era:
 
 ```java
 @Property(label = "Service Password", value = "mysecretpassword")
@@ -106,14 +108,14 @@ la soluzione corretta è rimuovere la password hardcoded.
 
 >[!NOTE]
 >
->Anche se è una best practice fare l’annotazione `@SuppressWarnings` nel modo più specifico possibile, ossia annotare solo l’istruzione o il blocco specifici che causano il problema, è possibile annotare a livello di classe.
+>Sebbene sia consigliabile rendere l&#39;annotazione `@SuppressWarnings` il più specifica possibile, ad esempio annotando solo l&#39;istruzione o il blocco causa del problema, è anche possibile aggiungere annotazioni a livello di classe.
 
 >[!NOTE]
 >Sebbene non esista un esplicito passaggio per i test di sicurezza, durante il passaggio di qualità del codice vengono valutate alcune regole per la qualità del codice relative alla sicurezza. Per ulteriori informazioni sulla sicurezza in Cloud Service, consulta [Panoramica sulla sicurezza di AEM as a Cloud Service](/help/security/cloud-service-security-overview.md).
 
 ## Ottimizzazione dell’analisi dei pacchetti di contenuti {#content-package-scanning-optimization}
 
-Come parte del processo di analisi della qualità, Cloud Manager esegue l’analisi dei pacchetti di contenuti prodotti dalla build Maven. Per accelerare il processo, Cloud Manager offre delle ottimizzazioni che risultano efficaci quando si osservano determinati vincoli relativi ai pacchetti. La più significativa è l’ottimizzazione eseguita per i progetti che producono un singolo pacchetto di contenuti, generalmente denominato pacchetto &quot;all&quot;, che contiene diversi altri pacchetti di contenuti prodotti dalla build e contrassegnati come ignorati. Quando Cloud Manager rileva questo scenario, anziché decomprimere il pacchetto “all”, scansiona i singoli pacchetti di contenuti e li ordina in base alle dipendenze. Consideriamo ad esempio il seguente output di build.
+Come parte del processo di analisi della qualità, Cloud Manager esegue l’analisi dei pacchetti di contenuti prodotti dalla build Maven. Cloud Manager offre ottimizzazioni per accelerare questo processo, che è efficace quando si osservano determinati vincoli relativi ai pacchetti. L’ottimizzazione più significativa riguarda i progetti che producono un singolo pacchetto &quot;all&quot; (tutti), contenente più pacchetti di contenuto della build contrassegnati come ignorati. Quando Cloud Manager rileva questo scenario, anziché decomprimere il pacchetto “all”, scansiona i singoli pacchetti di contenuti e li ordina in base alle dipendenze. Consideriamo ad esempio il seguente output di build.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (pacchetto di contenuti)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (pacchetto di contenuti ignorato)
@@ -123,9 +125,9 @@ Se gli unici elementi all’interno di `myco-all-1.0.0-SNAPSHOT.zip` sono i due 
 
 Per i progetti che producono decine di pacchetti incorporati, è comprovato che questa ottimizzazione consente di risparmiare fino a 10 minuti per ogni esecuzione della pipeline.
 
-Un caso speciale può verificarsi quando il pacchetto di contenuti “all” include una combinazione di pacchetti di contenuti e bundle OSGi ignorati. Ad esempio, se `myco-all-1.0.0-SNAPSHOT.zip` contiene i due pacchetti incorporati precedentemente menzionati oltre a uno o più bundle OSGi, allora viene creato un nuovo pacchetto di contenuti minimo con i soli bundle OSGi. Questo pacchetto viene sempre denominato `cloudmanager-synthetic-jar-package` e i bundle contenuti vengono inseriti in `/apps/cloudmanager-synthetic-installer/install`.
+Un caso speciale può verificarsi quando il pacchetto di contenuti “all” include una combinazione di pacchetti di contenuti e bundle OSGi ignorati. Ad esempio, se `myco-all-1.0.0-SNAPSHOT.zip` contiene i due pacchetti incorporati precedentemente menzionati oltre a uno o più bundle OSGi, allora viene creato un nuovo pacchetto di contenuti minimo con i soli bundle OSGi. Questo pacchetto viene sempre denominato `cloudmanager-synthetic-jar-package` e i bundle contenuti sono inseriti in `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >
 >* Questa ottimizzazione non influisce sui pacchetti distribuiti in AEM.
->* Poiché la corrispondenza tra i pacchetti di contenuti incorporati e i pacchetti di contenuti ignorati si basa sui nomi file, questa ottimizzazione non può essere eseguita se più pacchetti di contenuti ignorati presentano lo stesso nome file o se questo viene modificato durante l’incorporamento.
+>* La corrispondenza tra pacchetti di contenuti incorporati e pacchetti di contenuti ignorati si basa sui nomi dei file. Questa ottimizzazione non può verificarsi se più pacchetti ignorati condividono lo stesso nome di file o se il nome di file cambia durante l’incorporamento.
