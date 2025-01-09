@@ -4,10 +4,10 @@ description: Scopri come creare blocchi abilitati per l’utilizzo con l’edito
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1415'
+ht-degree: 96%
 
 ---
 
@@ -45,13 +45,13 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 ### Crea modello e definizione di blocco {#create-block-model}
 
-1\. Clona il progetto GitHub localmente creato nella [Guida introduttiva per sviluppatori per l&#39;authoring di WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e aprilo in un editor scelto.
+1\. Clona localmente il progetto GitHub che hai creato nella [Guida introduttiva per sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e aprilo in un editor a tua scelta.
 
 * Il codice Microsoft viene utilizzato qui a scopo illustrativo.
 
 ![Clonazione del progetto](assets/create-block/clone.png)
 
-2\. Modifica il file `component-definition.json` nella directory principle del progetto e aggiungi la seguente definizione per il nuovo blocco citazione e salva il file.
+2\. Modificare il file [`component-definition.json`](/help/implementing/universal-editor/component-definition.md) nella radice del progetto e aggiungere la seguente definizione per il nuovo blocco di virgolette e salvare il file.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-4. Modifica il file `component-filters.json` nella directory principale del progetto e aggiungi il blocco citazione alla [definizione di filtro](/help/implementing/universal-editor/customizing.md#filtering-components) per consentire l’aggiunta del blocco a qualsiasi sezione e salvare il file.
+4\. Modificare il file [`component-filters.json`](/help/implementing/universal-editor/customizing.md#filtering-components) nella radice del progetto e aggiungere il blocco delle virgolette alla [definizione filtro](/help/implementing/universal-editor/customizing.md#filtering-components) per consentire l&#39;aggiunta del blocco a qualsiasi sezione e il salvataggio del file.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-5. Utilizzando Git, conferma queste modifiche nel ramo `main`.
+5\. Utilizzando Git, conferma queste modifiche nel ramo `main`.
 
 * La conferma di `main` è solo a scopo illustrativo. [Segui le best practice](https://www.aem.live/docs/dev-collab-and-good-practices) e utilizza una richiesta pull per il lavoro di progetto effettivo.
 
@@ -196,7 +196,7 @@ Ora che disponi di un blocco della citazione di lavoro puoi applicare ad esso lo
 
 ![Crea una cartella delle citazioni](assets/create-block/new-folder.png)
 
-3\. Nella nuova cartella delle `quote`, aggiungi un file delle `quote.js` per implementare il blocco decorativo aggiungendo il seguente JavaScript e salvare il file.
+3\. Nella nuova cartella delle `quote`, aggiungi un file delle `quote.js` per implementare il blocco decorativo aggiungendo il seguente JavaScript e salva il file.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4. Nella cartella delle `quote`, aggiungi un file delle `quote.css` per definire lo stile del blocco aggiungendo il seguente codice CSS e salvare il file.
+4\. Nella cartella delle `quote`, aggiungi un file delle `quote.css` per definire lo stile del blocco aggiungendo il seguente codice CSS e salva il file.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5. Utilizzando Git, conferma queste modifiche nel ramo `main`.
+5\. Utilizzando Git, conferma queste modifiche nel ramo `main`.
 
 * La conferma di `main` è solo a scopo illustrativo. [Segui le best practice](https://www.aem.live/docs/dev-collab-and-good-practices) e utilizza una richiesta pull per il lavoro di progetto effettivo.
 
-6. Torna alla scheda del browser dell’editor universale in cui stavi modificando la pagina del progetto e ricarica la pagina per visualizzare il blocco formattato.
+6\. Torna alla scheda del browser dell’editor universale in cui stavi modificando la pagina del progetto e ricarica la pagina per visualizzare il blocco con lo stile.
 
-7. Visualizza il blocco delle citazioni ora formattato sulla pagina.
+7\. Visualizza il blocco delle citazioni ora formattato sulla pagina.
 
 ![Blocco delle citazioni formattato nell’editor universale](assets/create-block/quote-styled.png)
 
-8. Verifica che le modifiche siano state inviate alla produzione passando alla pagina pubblicata. Il collegamento sarà simile a `https://<branch>--<repo>--<owner>.aem.page`
+8\. Verifica che le modifiche siano state inviate alla produzione passando alla pagina pubblicata. Il collegamento sarà simile a `https://<branch>--<repo>--<owner>.aem.page`
 
 ![Blocco delle citazioni pubblicato e formattato](assets/create-block/quote-styled-published.png)
 

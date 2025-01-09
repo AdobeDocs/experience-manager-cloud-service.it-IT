@@ -4,10 +4,10 @@ description: Scopri come funziona la modellazione dei contenuti per l’authorin
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
 workflow-type: tm+mt
-source-wordcount: '2196'
-ht-degree: 98%
+source-wordcount: '2195'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ Il file [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-x
 
 Tieni presente che non tutti i blocchi devono avere un modello. Alcuni blocchi sono semplicemente [contenitori](#container) per un elenco di elementi secondari, in cui ognuno di essi ha un proprio modello.
 
-È inoltre necessario definire quali blocchi esistono e possono essere aggiunti a una pagina utilizzando l’Editor universale. Il file [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) elenca i componenti man mano che vengono resi disponibili dall’Editor universale.
+È inoltre necessario definire quali blocchi esistono e possono essere aggiunti a una pagina utilizzando l’Editor universale. Nel file [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) sono elencati i componenti man mano che vengono resi disponibili dall&#39;editor universale.
 
 ```json
 {
