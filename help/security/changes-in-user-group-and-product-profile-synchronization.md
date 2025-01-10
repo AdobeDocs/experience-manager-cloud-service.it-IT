@@ -5,9 +5,9 @@ feature: Security
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: c3e3905d3896d79149a386241d798f78631184b3
+source-git-commit: 32ce30ce136a714e277e00197d38ea380c777377
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -19,16 +19,15 @@ Ogni volta che un utente accede ad AEM as a Cloud Service o viene utilizzato un 
 
 Il 28 gennaio, per ridurre il disordine nell’interfaccia utente e ottimizzare le prestazioni, saranno introdotte alcune modifiche nel comportamento di sincronizzazione, con la conseguente comparsa di un numero minore di gruppi nell’AEM. Verranno rimosse due categorie di gruppi AEM:
 
-1. Gruppi AEM con suffisso `GROUP_NAME_SUFFIX`. Questi gruppi non vengono visualizzati in Adobe Developer Console, ma vengono visualizzati nella schermata Gestione gruppi AEM, come illustrato di seguito. Nel caso improbabile che l’applicazione AEM faccia riferimento a tali gruppi, assicurati di utilizzare i gruppi di utenti di Adobe Admin Console.
+1. Gruppi AEM con suffisso `GROUP_NAME_SUFFIX`. Questi gruppi non vengono visualizzati in Adobe Developer Console, ma vengono visualizzati nella schermata Gestione gruppi AEM, come illustrato di seguito. Nel caso improbabile che l’applicazione AEM faccia riferimento a tali gruppi, assicurati invece di fare riferimento ai gruppi di utenti Adobe Admin Console senza tale suffisso.
 
    ![Gruppi rimossi 1](/help/security/assets/removed-groups-1.png)
 
-1. Gruppi AEM associati a profili di prodotto Adobe Admin Console non correlati al livello AEM specifico o alla combinazione di ambienti (ad esempio, `author` o `e4535`). Ciò può includere profili di prodotto che sono:
+1. Gruppi AEM associati a profili di prodotto di Adobe Admin Console non correlati all’ambiente specifico. Ciò può includere profili di prodotto che sono:
 
    * relativi ad altri prodotti di Adobe
    * relative ad altri programmi dell&#39;AEM
    * correlati ad altri ambienti AEM nello stesso programma AEM
-   * correlati a un livello diverso (ad esempio, `author` rispetto a `publish`) nello stesso ambiente AEM
    * relativo a Cloud Manager (ad esempio, `Business Owner - Cloud Service`)
 
    Nell&#39;immagine seguente, ad esempio, sono presenti molte righe con il pattern `AEM Administrators-<suffix>` o `AEM Users-<suffix>` in cui il suffisso non è correlato all&#39;ambiente corrente.
@@ -43,11 +42,4 @@ Verrà visualizzato il Adobe Admin Console, come illustrato nella schermata segu
 
 ![Suffissi nell&#39;Admin Console](/help/security/assets/admin-console-profile-suffixes.png)
 
-Nel caso improbabile che l’applicazione AEM faccia riferimento a tali gruppi, assicurati di utilizzare i gruppi di utenti di Adobe Admin Console.
-
->[!NOTE]
->
->In particolare, fai attenzione a queste potenziali insidie:
->
->1. L’applicazione AEM si basa su un gruppo AEM sincronizzato da un profilo di prodotto Cloud Manager
->1. Il livello di pubblicazione dell’applicazione AEM si basa su un gruppo AEM sincronizzato da un profilo di prodotto del livello di authoring. Questo vale anche per lo scenario inverso (livello di authoring che si basa sul livello di pubblicazione).
+Nel caso improbabile che l’applicazione AEM faccia riferimento a un gruppo che non apparirà più nell’AEM, assicurati invece di utilizzare i) un profilo di prodotto della giusta istanza AEM o ii) un gruppo di utenti Adobe Admin Console.
