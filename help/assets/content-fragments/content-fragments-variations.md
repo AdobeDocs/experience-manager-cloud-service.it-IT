@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
+source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
 workflow-type: tm+mt
-source-wordcount: '2504'
-ht-degree: 52%
+source-wordcount: '2518'
+ht-degree: 51%
 
 ---
 
@@ -314,6 +314,10 @@ Per annotare un frammento:
 1. Se chiudi l’editor a schermo intero, le annotazioni restano evidenziate. Se selezionata, viene visualizzata una finestra di dialogo che consente di modificare ulteriormente l’annotazione.
 
    ![annota](assets/cfm-variations-07c.png)
+
+>[!NOTE]
+>
+>La funzionalità Annotazioni non mostra i commenti immessi nel nuovo [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
 
 ### Visualizzazione, modifica ed eliminazione delle annotazioni {#viewing-editing-deleting-annotations}
 

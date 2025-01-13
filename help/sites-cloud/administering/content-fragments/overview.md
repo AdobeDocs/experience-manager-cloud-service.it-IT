@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1857'
 ht-degree: 39%
 
 ---
 
 # Panoramica sull’utilizzo dei frammenti di contenuto {#overview-working-with-content-fragments}
+
+>[!IMPORTANT]
+>
+>Varie funzioni dei Frammenti di contenuto e dei Modelli di frammenti di contenuto sono disponibili tramite il Programma per gli sviluppatori iniziali.
+>
+>Per visualizzare lo stato e le modalità di applicazione, se sei interessato, consulta le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Con Adobe Experience Manager (AEM) as a Cloud Service, i Frammenti di contenuto ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalla pagina. Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per [distribuzione headless](/help/headless/what-is-headless.md) e [creazione pagine](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
@@ -91,8 +97,11 @@ Questa pagina e quelle seguenti descrivono le attività di creazione, configuraz
 
 Dopo la creazione dei frammenti, puoi:
 
-* [Utilizza la console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md) per accedere ai frammenti, pubblicarli (per visualizzarli in anteprima o produrli) e farvi riferimento
-* [Utilizza l&#39;editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md) per modificare, pubblicare (per l&#39;anteprima o la produzione) e fare riferimento ai frammenti
+* [Utilizzare la console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md) per:
+   * accedere ai frammenti, pubblicarli (per l’anteprima o la produzione) e farvi riferimento
+* [Utilizza l&#39;editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md) per:
+   * modificare, pubblicare (per visualizzare in anteprima o produrre) e fare riferimento ai frammenti
+   * collaborare con altri autori utilizzando Commenti
 * [Analizza](/help/sites-cloud/administering/content-fragments/analysis.md) la struttura del frammento di contenuto, utilizzando l&#39;editor
 * [Accedi ai tuoi frammenti con GraphQL per la consegna headless nelle tue applicazioni](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 * [Oppure utilizza i tuoi frammenti per creare le pagine](/help/sites-cloud/authoring/fragments/content-fragments.md)

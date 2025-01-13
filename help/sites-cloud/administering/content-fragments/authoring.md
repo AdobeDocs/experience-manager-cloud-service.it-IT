@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2841'
 ht-degree: 7%
 
 ---
 
 # Authoring dei frammenti di contenuto {#authoring-content-fragments}
+
+>[!IMPORTANT]
+>
+>Varie funzioni dell’Editor frammento di contenuto sono disponibili tramite il programma di adozione anticipata.
+>
+>Per visualizzare lo stato e le modalità di applicazione, se sei interessato, consulta le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 L’authoring dei frammenti di contenuto si concentra sia sulla distribuzione headless che sull’authoring delle pagine.
 
@@ -58,6 +64,7 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
    * questi collegamenti possono essere utilizzati per [esplorare la struttura dei frammenti di contenuto](#navigate-structure)
 * pannello a destra: presenta le schede [che mostrano le proprietà (metadati) e i tag](#view-properties-tags), informazioni sulla [cronologia delle versioni](#view-version-history) e informazioni relative a [copie per lingua](#view-language-copies)
    * Scheda **Proprietà**, in cui puoi aggiornare il **Titolo** e la **Descrizione** del frammento, oppure la **Variante**
+   * Nella scheda **Commenti** puoi aggiungere e leggere commenti per collaborare con altri autori
 * Pannello centrale: presenta i campi e il contenuto effettivi della variante selezionata
    * Consente di modificare il contenuto
       * se configurati (come più) nel modello, vari tipi di dati ti consentono di **Aggiungere** istanze del campo pertinente
@@ -466,6 +473,25 @@ Ad esempio:
 >
 >Per ulteriori dettagli sulla traduzione di un frammento di contenuto e sulla creazione di copie per lingua, consulta [Percorso di traduzione headless AEM](/help/journey-headless/translation/overview.md).
 
+## Commento sul frammento {#commenting-on-your-fragment}
+
+La scheda **Commenti** nel pannello di destra offre le seguenti funzionalità:
+
+* Aggiungi un nuovo commento
+* Assegnare tag a utenti specifici in un commento
+   * Riceveranno una notifica, con un collegamento per aprire direttamente il frammento
+* Metti Mi piace a un commento esistente
+* Rispondi a un commento
+* Formattare i commenti; è disponibile la formattazione di base
+* Eseguire una ricerca di testo tra i commenti esistenti
+* Modifica un commento esistente
+* Elimina commenti
+
+![Editor frammento di contenuto - scheda Commenti](assets/cf-authoring-comments.png)
+
+>[!NOTE]
+>
+>Questi commenti non sono visibili come [Annotazioni nell&#39;editor originale](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment) né nella [Timeline della console Assets](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 ## Visualizzare l’anteprima del frammento {#preview-content-fragment}
 
