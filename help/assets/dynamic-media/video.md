@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
+source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
 workflow-type: tm+mt
-source-wordcount: '10564'
+source-wordcount: '10560'
 ht-degree: 2%
 
 ---
@@ -31,8 +31,8 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
    * Crea un tuo profilo di codifica video. In alternativa, puoi semplicemente utilizzare il profilo predefinito _Codifica video adattiva_ fornito con Dynamic Media.
 
-      * [Crea un profilo di codifica video](/help/assets/dynamic-media/video-profiles.
-      * La risoluzione massima di codifica video in uscita è 8.192 × 4.320 o 4.320 × 8.192.md#create-a-video-encoding-profile-for-adaptive-streaming).
+      * [Crea un profilo di codifica video](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * La risoluzione massima di codifica video in uscita è 8.192 × 4.320 o 4.320 × 8.192.md.
       * Ulteriori informazioni su [Best practice per la codifica video](#best-practices-for-encoding-videos).
 
    * Associa il profilo di elaborazione video a una o più cartelle in cui stai per caricare i video sorgente principali.
