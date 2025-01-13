@@ -1,17 +1,17 @@
 ---
-title: Gestione multisito di Ripoless
+title: Gestione di più siti senza archivio
 description: Scopri i consigli sulle best practice per impostare un progetto in modo riorganizzato con siti localizzati che sfruttano un’unica base di codice, ciascuno gestito da Edge Delivery Services.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '1222'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# Gestione multisito di Ripoless {#repoless-msm}
+# Gestione di più siti senza archivio {#repoless-msm}
 
 Scopri i consigli sulle best practice per impostare un progetto in modo riorganizzato con siti localizzati che sfruttano un’unica base di codice, ciascuno gestito da Edge Delivery Services.
 
@@ -140,7 +140,7 @@ In questo esempio verrà creato il sito `wknd-ch` per la presenza svizzera di WK
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },
