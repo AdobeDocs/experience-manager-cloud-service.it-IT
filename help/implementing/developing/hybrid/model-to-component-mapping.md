@@ -1,10 +1,10 @@
 ---
 title: Mappatura di un modello dinamico a un componente per SPA
-description: Questo articolo descrive come avviene la mappatura del modello dinamico ai componenti nell’SDK per SPA di JavaScript per l’AEM.
+description: Questo articolo descrive come avviene la mappatura del modello dinamico ai componenti in JavaScript SPA SDK for AEM.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -13,7 +13,9 @@ ht-degree: 0%
 
 # Mappatura di un modello dinamico a un componente per SPA {#dynamic-model-to-component-mapping-for-spas}
 
-Questo documento descrive come avviene la mappatura del modello dinamico ai componenti nell’SDK per SPA di JavaScript per l’AEM.
+Questo documento descrive come avviene la mappatura del modello dinamico ai componenti in JavaScript SPA SDK for AEM.
+
+{{ue-over-spa}}
 
 ## Modulo ComponentMapping {#componentmapping-module}
 

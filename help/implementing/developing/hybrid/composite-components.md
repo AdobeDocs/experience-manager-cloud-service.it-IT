@@ -4,7 +4,7 @@ description: Scopri come creare componenti compositi personalizzati, composti da
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -18,6 +18,8 @@ I componenti compositi utilizzano la natura modulare dei componenti dell’AEM c
 Quando i componenti compositi vengono implementati correttamente nel framework dell’Editor applicazioni a pagina singola (SPA) dell’AEM, gli autori dei contenuti possono trascinare e rilasciare tali componenti come farebbero con qualsiasi altro componente, ma possono comunque modificare singolarmente ogni componente che costituisce il componente composito.
 
 Questo articolo illustra come aggiungere un componente composito all’applicazione a pagina singola per lavorare direttamente con l’editor SPA dell’AEM.
+
+{{ue-over-spa}}
 
 ## Caso d’uso {#use-case}
 

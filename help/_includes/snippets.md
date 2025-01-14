@@ -1,8 +1,8 @@
 ---
-source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
+source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 88%
+source-wordcount: '1367'
+ht-degree: 96%
 
 ---
 # Snippet {#snippets}
@@ -53,8 +53,8 @@ ht-degree: 88%
 * [Invia a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Collegare un modulo adattivo all’applicazione Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Collegare un modulo adattivo a Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
-* [Collegare un modulo adattivo a Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
-* [Crea azione di invio personalizzata](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+* [Collegare un modulo adattivo a Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
+* [Creare un’azione di invio personalizzata](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## Consulta anche {#see-more-forms-eds}
 
@@ -114,9 +114,9 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
    </td>
    </tr>
    <tr>
-   <td>Navigare tra i pannelli</td>
-   <td> I componenti <b>Pulsante Successivo</b> e <b>Pulsante Precedente</b> sono forniti per spostarsi tra i pannelli. Un pulsante di navigazione posizionato all’interno del contenitore funziona sui relativi elementi secondari</td>
-   <td> La regola <b>Navigazione nel pannello</b> è disponibile nell'editor di regole, consentendo agli utenti di creare regole per spostarsi tra gli elementi figlio dei pannelli.
+   <td>Spostarsi tra i pannelli</td>
+   <td> I componenti <b>pulsante Successivo</b> e <b>pulsante Precedente</b> vengono forniti per spostarsi tra i pannelli. Un pulsante di navigazione posizionato all’interno del contenitore funziona sui relativi elementi secondari</td>
+   <td> La regola <b>Navigazione nel pannello</b> è disponibile nell’editor di regole, consentendo agli utenti di creare regole per spostarsi tra i pannelli secondari.
    </td>
    </tr>
    </tr>
@@ -133,7 +133,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 * [Diversi casi d’uso dell’editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-usecases.md)
 * [Differenza nelle varie edizioni dell’editor di regole](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Utilizzo di funzioni asincrone in un modulo adattivo](/help/forms/using-async-funct-in-rule-editor.md)
-* [Richiama miglioramenti al servizio nell’Editor di regole visive per i moduli basati su componenti core](/help/forms/invoke-service-enhancements-rule-editor.md)
+* [Miglioramenti a Avvia servizio nell’editor di regole visive per i moduli basati su componenti core](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core](/help/forms/create-and-use-custom-functions.md)
 * [Creare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
 * [Oggetto ambito nelle funzioni personalizzate](/help/forms/custom-function-core-component-scope-function.md)
@@ -149,10 +149,10 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 
 ## Marketo Engage{#marketo-engage-see-also}
 
-* [Integrare il Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-* [Configura nuovo modulo da integrare con il Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [Configurare l’origine dati di Marketo Engage per Forms adattivo esistente](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [Configurare l’azione di invio al Marketo Engage per i moduli esistenti](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Integrare Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+* [Configurare nuovo modulo da integrare con Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [Configurare l’origine dati di Marketo Engage per moduli adattivi esistente](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Configurare l’azione di invio a Marketo Engage per i moduli esistenti](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Elenco di indirizzi IP consentiti e pipeline e front-end di Could Manager {#allowlist-frontend-pipeline}
 
@@ -187,10 +187,10 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >
 >L’editor universale non è compatibile con gli [elenchi IP consentiti.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
->Se desideri utilizzare l’Editor universale, devi effettuare le seguenti operazioni:
+>Se desideri utilizzare l’editor universale, è necessario effettuare una delle seguenti operazioni:
 >
->* Non abilitare gli Elenchi consentiti IP.
->* [Esegui la tua istanza del servizio Universal Editor.](/help/implementing/universal-editor/local-dev.md)
+>* Non abilitare gli elenchi di indirizzi IP consentiti.
+>* [Eseguire la tua istanza del servizio editor universale.](/help/implementing/universal-editor/local-dev.md)
 
 ## Utilizzare Dynamic Media {#work-with-dynamic-media}
 
@@ -217,7 +217,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >* Distribuisci un’[esperienza interattiva basata su 3D](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Altre [risorse su Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
-## Registrare un ticket di supporto {#support-ticket}
+## Registrare un ticket di assistenza {#support-ticket}
 
 Se un problema relativo a un prodotto richiede ulteriori indagini e tentativi di risoluzione e deve soddisfare gli SLT di risposta, puoi inviare un ticket di supporto.
 
@@ -232,3 +232,11 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
    * URL del sito web live. Ad esempio: `www.mydomain.com`.
    * URL del sito web di origine (URL `.hlx`).
 
+## L&#39;editor universale è da preferirsi all&#39;editor SPA {#ue-over-spa}
+
+>[!IMPORTANT]
+>
+>L’editor SPA rimane supportato da Adobe, ma gli editor preferiti per la gestione dei contenuti headless nell’AEM sono ora:
+>
+>* [Editor universale](/help/edge/wysiwyg-authoring/authoring.md) per la modifica visiva di contenuti headless.
+>* [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo di contenuti headless.

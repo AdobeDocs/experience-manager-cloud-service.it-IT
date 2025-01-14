@@ -4,9 +4,9 @@ description: Questo documento descrive i passaggi consigliati per caricare un SP
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2370'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 1%
 # Modifica di uno SPA esterno in AEM {#editing-external-spa-within-aem}
 
 Quando decidi [quale livello di integrazione](/help/implementing/developing/headful-headless.md) desideri avere tra l&#39;SPA esterno e l&#39;AEM, tieni presente che devi essere in grado di modificare e visualizzare l&#39;SPA all&#39;interno dell&#39;AEM, spesso.
+
+{{ue-over-spa}}
 
 ## Panoramica {#overview}
 
@@ -35,7 +37,7 @@ Innanzitutto, devi caricare l’SPA esterno nel tuo progetto AEM.
 
 1. Sostituisci `src` nella cartella dei progetti `/ui.frontend` con la cartella `src` dell&#39;applicazione React.
 1. Includere eventuali dipendenze aggiuntive nel file `/ui.frontend/package.json` dell&#39;app `package.json`.
-   * Assicurati che le dipendenze dell&#39;SDK SPA siano di [versioni consigliate](/help/implementing/developing/hybrid/getting-started-react.md#dependencies).
+   * Verificare che le dipendenze del SDK SPA siano di [versioni consigliate](/help/implementing/developing/hybrid/getting-started-react.md#dependencies).
 1. Includere eventuali personalizzazioni nella cartella `/public`.
 1. Includere eventuali script o stili in linea aggiunti nel file `/public/index.html`.
 
@@ -79,7 +81,7 @@ In questo esempio, `ModelManager` è inizializzato e viene creato un `ModelStore
 
 * `path` - All&#39;inizializzazione, il modello nel percorso definito viene recuperato e memorizzato in `ModelStore`. Questo percorso può essere utilizzato per recuperare `rootModel` all&#39;inizializzazione, se necessario.
 * `modelClient` - Consente di fornire un client personalizzato responsabile del recupero del modello.
-* `model` - Un oggetto `model` passato come parametro viene generalmente popolato quando [si utilizza SSR](/help/implementing/developing/hybrid/ssr.md).
+* `model` - Un oggetto `model` passato come parametro viene generalmente popolato quando si utilizza SSR.
 
 ### Componenti foglia compatibili con AEM {#authorable-leaf-components}
 
@@ -375,4 +377,3 @@ I seguenti materiali di riferimento possono essere utili per comprendere l&#39;S
 * [Materiali di riferimento SPA (riferimenti API)](/help/implementing/developing/hybrid/reference-materials.md)
 * [Blueprint SPA e PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [Routing modello SPA](/help/implementing/developing/hybrid/routing.md)
-* [Rendering lato server e SPA](/help/implementing/developing/hybrid/ssr.md)

@@ -4,7 +4,7 @@ description: Per le applicazioni a pagina singola nell’AEM, l’app è respons
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Routing modello SPA{#spa-model-routing}
 
 Per le applicazioni a pagina singola nell’AEM, l’app è responsabile del routing. Questo documento descrive il meccanismo di instradamento, il contratto e le opzioni disponibili.
+
+{{ue-over-spa}}
 
 ## Indirizzamento progetto {#project-routing}
 

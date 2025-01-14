@@ -4,7 +4,7 @@ description: Questo articolo illustra un esempio di applicazione per l’SPA, sp
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 6%
@@ -20,6 +20,8 @@ La funzione di authoring dell’SPA offre una soluzione completa per il supporto
 >[!NOTE]
 >
 >Questo articolo si basa sul framework React. Per il documento corrispondente per il framework Angular, vedi [Guida introduttiva all&#39;SPA nell&#39;AEM - Angular](getting-started-angular.md).
+
+{{ue-over-spa}}
 
 ## Introduzione {#introduction}
 
@@ -268,4 +270,4 @@ La condivisione delle informazioni è regolarmente necessaria per i componenti d
 * La [Panoramica dell’editor di SPA](editor-overview.md) approfondisce il modello di comunicazione tra AEM e SPA.
 * [Progetto WKND SPA](wknd-tutorial.md) è un&#39;esercitazione passo passo che implementa un semplice progetto SPA nell&#39;AEM.
 * [Mappatura dinamica da modello a componente per SPA](model-to-component-mapping.md) spiega il modello dinamico alla mappatura dei componenti e come funziona all&#39;interno dell&#39;SPA nell&#39;AEM.
-* [Blueprint SPA](blueprint.md) offre informazioni approfondite sul funzionamento dell&#39;SDK SPA per AEM nel caso in cui si desideri implementare l&#39;SPA in AEM per un framework diverso da React o Angular o semplicemente desideri una comprensione più approfondita.
+* [Blueprint SPA](blueprint.md) offre informazioni approfondite sul funzionamento del SDK SPA per l&#39;AEM nel caso in cui si desideri implementare l&#39;SPA nell&#39;AEM per un framework diverso da React o Angular o semplicemente desideri una comprensione più approfondita.
