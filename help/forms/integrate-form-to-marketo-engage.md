@@ -4,15 +4,15 @@ Description: Learn how to integrate your Marketo Engage instance with AEM Forms.
 Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 74cd25f9-1ee1-4f3f-8e02-8714071e7c86
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-
-# Integrare il Marketo Engage con AEM Forms
+# Integrare Marketo Engage con AEM Forms
 
 <span class="preview"> La funzionalità è disponibile nel programma di adozione anticipata. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
@@ -66,24 +66,26 @@ Di seguito sono riportati i prerequisiti per connettere il Marketo Engage ad AEM
 
 ![Flusso di lavoro](/help/forms/assets/workflow-marketo-1.png)
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442865/engage-marketo-aem-forms-aem)
+
 La configurazione Cloud collega l’istanza Experience Manager all’istanza Adobe Marketo Engage. Per creare una configurazione cloud di Marketo Engage, effettua le seguenti operazioni:
 
 1. Vai a **Strumenti** > **Cloud Service** > **Marketo Engage**.
 
    ![Marketo Engage](/help/forms/assets/marketo-engage.png)
 
-1. Apri una cartella per ospitare la configurazione e fai clic su **Crea**. Viene visualizzata la finestra **Crea configurazione Marketo Engage**.
+2. Apri una cartella per ospitare la configurazione e fai clic su **Crea**. Viene visualizzata la finestra **Crea configurazione Marketo Engage**.
 
    >[!NOTE]
    >
    > È inoltre possibile [configurare la cartella per le configurazioni del servizio cloud](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations).
 
-1. Specifica il **Titolo** della configurazione e le credenziali per la connessione al servizio. Puoi recuperare le credenziali di autenticazione dal dashboard di Adobe Marketo Engage:
+3. Specifica il **Titolo** della configurazione e le credenziali per la connessione al servizio. Puoi recuperare le credenziali di autenticazione dal dashboard di Adobe Marketo Engage:
    * **ID client** e **Segreto client** sono disponibili in **Amministratore** > **Integrazione** > **LaunchPoint** selezionando il servizio personalizzato e facendo clic su **Visualizza dettagli**.
    * **L&#39;URL identità** è disponibile in **Admin** > **Integration** > **Web Services** come **Identity** nella sezione **REST API**.
 
-1. Fai clic su **Connetti**.  Se la connessione ha esito positivo, viene visualizzato il messaggio `Authentication Successful`.
-1. Fai clic su **[!UICONTROL Crea]** per salvare le impostazioni di configurazione cloud.
+4. Fai clic su **Connetti**.  Se la connessione ha esito positivo, viene visualizzato il messaggio `Authentication Successful`.
+5. Fai clic su **[!UICONTROL Crea]** per salvare le impostazioni di configurazione cloud.
 
 ![Configurazione cloud Marketo Engage](/help/forms/assets/marketo-engage-cloud-configuration.png)
 
@@ -102,6 +104,3 @@ Hai creato la configurazione del servizio cloud per integrare Adobe Marketo Enga
 ## Consulta anche
 
 {{marketo-engage-see-also}}
-
-
-

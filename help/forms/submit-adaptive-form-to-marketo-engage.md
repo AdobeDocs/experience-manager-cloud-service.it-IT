@@ -4,15 +4,15 @@ Description: Learn how to configure the submit action of Adaptive Form to send d
 Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
-
-# Configurare l’azione di invio al Marketo Engage per i moduli esistenti
+# Configurare l’azione di invio a Marketo Engage per i moduli esistenti
 
 <span class="preview"> La funzionalità è disponibile nel programma di adozione anticipata. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
@@ -34,13 +34,15 @@ Prerequisito per configurare l’azione di invio per il Marketo Engage:
 
 ## Come si configura l’azione di invio al Marketo Engage per i moduli esistenti?
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
+
 È possibile configurare l’azione di invio di un modulo adattivo per inviare dati a Adobe Marketo Engage. Per configurare l&#39;azione di invio al Marketo Engage, effettuare le seguenti operazioni:
 
 1. Apri il modulo adattivo per la modifica.
-1. Aprire la Struttura contenuto e selezionare il **[!UICONTROL Contenitore guida]**.
-1. Fai clic sull&#39;icona Proprietà contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo con cui configurare l’azione di invio.
-1. Apri la scheda **[!UICONTROL Invio]** e seleziona un&#39;azione di invio come **Invia al Marketo Engage**.
-1. Fai clic su **[!UICONTROL Fine]**.
+2. Aprire la Struttura contenuto e selezionare il **[!UICONTROL Contenitore guida]**.
+3. Fai clic sull&#39;icona Proprietà contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo con cui configurare l’azione di invio.
+4. Apri la scheda **[!UICONTROL Invio]** e seleziona un&#39;azione di invio come **Invia al Marketo Engage**.
+5. Fai clic su **[!UICONTROL Fine]**.
 
 ![Azione di invio Marketo](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%}
 

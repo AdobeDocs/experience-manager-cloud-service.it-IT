@@ -4,15 +4,15 @@ Description: Learn how to use Marketo Engage schema in Adaptive Forms.
 Keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Marketo instance data source with form? , Connect a form to Marketo.
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
-
-# Configurare l’origine dati di Marketo Engage per Forms adattivo esistente
+# Configurare l’origine dati di Marketo Engage per moduli adattivi esistente
 
 <span class="preview"> La funzionalità è disponibile nel programma di adozione anticipata. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
@@ -36,16 +36,18 @@ Prerequisito per l&#39;utilizzo dell&#39;origine dati di Marketo Engage con i mo
 
 ## Come configurare un modulo adattivo esistente per l’origine dati di Marketo Engage?
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
+
 Per configurare un modulo adattivo con l’origine dati di Marketo Engage, effettua le seguenti operazioni:
 1. Accedi all&#39;istanza Autore [!DNL Experience Manager Forms].
 
-1. Apri il modulo adattivo per la modifica.
-1. Aprire la Struttura contenuto e selezionare il **[!UICONTROL Contenitore guida]**.
-1. Fai clic sull&#39;icona Proprietà contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare l’origine dati.
-1. Apri la scheda **[!UICONTROL Modello dati]** e seleziona un modello di modulo come **Connettore**.
-1. Selezionare **[!UICONTROL Connettore]** dall&#39;elenco a discesa.
+2. Apri il modulo adattivo per la modifica.
+3. Aprire la Struttura contenuto e selezionare il **[!UICONTROL Contenitore guida]**.
+4. Fai clic sull&#39;icona Proprietà contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare l’origine dati.
+5. Apri la scheda **[!UICONTROL Modello dati]** e seleziona un modello di modulo come **Connettore**.
+6. Selezionare **[!UICONTROL Connettore]** dall&#39;elenco a discesa.
 
-1. Dopo aver selezionato il **[!UICONTROL connettore]**, puoi selezionare la configurazione cloud.
+7. Dopo aver selezionato il **[!UICONTROL connettore]**, puoi selezionare la configurazione cloud.
 
    ![Seleziona Connettore Marketo](/help/forms/assets/select-marketo-connector.png)
 
@@ -53,7 +55,7 @@ Per configurare un modulo adattivo con l’origine dati di Marketo Engage, effet
 
    ![Marketo Data Source](/help/forms/assets/marketo-engage-data-source.png)
 
-1. Fai clic su **[!UICONTROL Fine]**.
+8. Fai clic su **[!UICONTROL Fine]**.
 
 In alternativa, puoi anche modificare le proprietà del modulo adattivo per modificarne la configurazione associata.
 
@@ -81,5 +83,3 @@ Ora hai configurato l’origine dati di Marketo Engage per Adaptive Forms. Succe
 ## Consulta anche
 
 {{marketo-engage-see-also}}
-
-
