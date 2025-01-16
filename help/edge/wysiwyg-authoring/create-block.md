@@ -4,10 +4,10 @@ description: Scopri come creare blocchi abilitati per l’utilizzo con l’edito
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 ![Clonazione del progetto](assets/create-block/clone.png)
 
-2\. Modificare il file [`component-definition.json`](/help/implementing/universal-editor/component-definition.md) nella radice del progetto e aggiungere la seguente definizione per il nuovo blocco di virgolette e salvare il file.
+2\. Modifica del file [`component-definition.json` ](/help/implementing/universal-editor/component-definition.md) nella directory principale del progetto e aggiungere la seguente definizione per il nuovo blocco citazione e salvare il file.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 >[!ENDTABS]
 
-4\. Modificare il file [`component-filters.json`](/help/implementing/universal-editor/customizing.md#filtering-components) nella radice del progetto e aggiungere il blocco delle virgolette alla [definizione filtro](/help/implementing/universal-editor/customizing.md#filtering-components) per consentire l&#39;aggiunta del blocco a qualsiasi sezione e il salvataggio del file.
+4\. Modifica del file [`component-filters.json` ](/help/implementing/universal-editor/filtering.md) nella directory principale del progetto e aggiungi il blocco citazione alla [definizione di filtro](/help/implementing/universal-editor/filtering.md) per consentire l’aggiunta del blocco a qualsiasi sezione e salvare il file.
 
 >[!BEGINTABS]
 

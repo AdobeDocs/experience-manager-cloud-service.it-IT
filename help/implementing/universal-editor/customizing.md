@@ -4,10 +4,10 @@ description: Scopri i diversi punti di estensione e altre funzioni che consenton
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
+source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 1%
+source-wordcount: '579'
+ht-degree: 4%
 
 ---
 
@@ -41,39 +41,7 @@ Il pulsante **Publish** può quindi essere eliminato completamente in un&#39;app
 
 ### Filtraggio dei componenti {#filtering-components}
 
-Quando utilizzi l’Editor universale, puoi limitare i componenti consentiti per componente contenitore. A questo scopo, devi introdurre un tag script aggiuntivo che punti alla definizione del filtro.
-
-```html
-<script type="application/vnd.adobe.aue.filter+json" src="/static/filter-definition.json"></script>
-```
-
-Una definizione di filtro potrebbe avere un aspetto simile al seguente, il che impedirebbe a un contenitore di aggiungere solo testo e immagini.
-
-```json
-[
-  {
-    "id": "container-filter",
-     "components": ["text", "image"]
-   }
-]
-```
-
-È quindi possibile fare riferimento alla definizione del filtro dal componente contenitore aggiungendo la proprietà `data-aue-filter`, passando l&#39;ID del filtro definito in precedenza.
-
-```html
-data-aue-filter="container-filter"
-```
-
-L&#39;impostazione dell&#39;attributo `components` in una definizione di filtro su `null` consente tutti i componenti, come se non ci fosse alcun filtro.
-
-```json
-[
-  {
-    "id": "another-container-filter",
-     "components": null
-   }
-]
-```
+È possibile limitare i componenti consentiti per contenitore nell’Editor universale utilizzando i filtri dei componenti. Per ulteriori informazioni, vedere il documento [Componenti filtro](/help/implementing/universal-editor/filtering.md).
 
 ### Mostra e nascondi componenti in modo condizionale nel pannello Proprietà {#conditionally-hide}
 
@@ -120,7 +88,7 @@ Le condizioni possono essere definite utilizzando lo schema [JsonLogic.](https:/
 
 Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview`, che si aprirà facendo clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell&#39;editor [.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
-Ciò è particolarmente utile per le applicazioni con requisiti di anteprima specifici, ad esempio quelle [che utilizzano Edge Delivery Services con l&#39;authoring WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+Ciò è particolarmente utile per le applicazioni con requisiti di anteprima specifici, ad esempio quelle [che utilizzano Edge Delivery Services con l’authoring WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Per farlo, includi semplicemente l’URL di anteprima desiderato in un metatag dell’app instrumentata come nell’esempio seguente.
 

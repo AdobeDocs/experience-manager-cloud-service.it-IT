@@ -4,10 +4,10 @@ description: Scopri come funziona la modellazione dei contenuti per l’authorin
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Il file [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-x
 
 Tieni presente che non tutti i blocchi devono avere un modello. Alcuni blocchi sono semplicemente [contenitori](#container) per un elenco di elementi secondari, in cui ognuno di essi ha un proprio modello.
 
-È inoltre necessario definire quali blocchi esistono e possono essere aggiunti a una pagina utilizzando l’Editor universale. Nel file [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) sono elencati i componenti man mano che vengono resi disponibili dall&#39;editor universale.
+È inoltre necessario definire quali blocchi esistono e possono essere aggiunti a una pagina utilizzando l’Editor universale. Il file [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) elenca i componenti man mano che vengono resi disponibili dall’Editor universale.
 
 ```json
 {
@@ -113,7 +113,7 @@ Per ogni blocco, lo sviluppatore:
    * Il nome del blocco viene utilizzato per recuperare lo stile e lo script corretti per decorare il blocco.
 * può definire un [ID modello.](/help/implementing/universal-editor/field-types.md#model-structure);
    * L’ID modello è un riferimento al modello del componente, che definisce i campi disponibili per l’autore nel pannello delle proprietà.
-* può definire un [ID filtro](/help/implementing/universal-editor/customizing.md#filtering-components).
+* può definire un [ID filtro](/help/implementing/universal-editor/filtering.md).
    * L’ID filtro è un riferimento al filtro del componente che consente di modificare il comportamento di authoring, ad esempio limitando quali elementi secondari possono essere aggiunti al blocco o alla sezione o quali funzioni dell’editor Rich Text sono abilitate.
 
 Tutte queste informazioni vengono memorizzate in AEM quando un blocco viene aggiunto a una pagina. Se manca il tipo di risorsa o il nome del blocco, il blocco non verrà riprodotto sulla pagina.
@@ -245,7 +245,7 @@ Un esempio sono i [metadati della sezione.](/help/edge/developer/markup-sections
 
 Entrambe le strutture precedenti hanno una singola dimensione: l’elenco delle proprietà. I blocchi contenitore consentono di aggiungere elementi secondari (di solito dello stesso tipo o modello) e sono quindi bidimensionali. Questi blocchi supportano ancora le relative proprietà sottoposte a rendering come righe con una singola colonna. Tuttavia, consentono anche di aggiungere elementi secondari, per i quali ogni elemento viene riprodotto come riga e ogni proprietà come colonna all’interno di tale riga.
 
-Nell’esempio seguente, un blocco accetta un elenco di icone collegate come elementi secondari, dove ogni icona collegata ha un’immagine e un collegamento. Osserva l’[ID filtro](/help/implementing/universal-editor/customizing.md#filtering-components) impostato nei dati del blocco per fare riferimento alla configurazione del filtro.
+Nell’esempio seguente, un blocco accetta un elenco di icone collegate come elementi secondari, dove ogni icona collegata ha un’immagine e un collegamento. Osserva l’[ID filtro](/help/implementing/universal-editor/filtering.md) impostato nei dati del blocco per fare riferimento alla configurazione del filtro.
 
 >[!BEGINTABS]
 
@@ -536,9 +536,9 @@ Allo stesso modo in cui uno sviluppatore può definire e modellare più [blocchi
 
 Il modello di contenuto di Edge Delivery Services consente deliberatamente un solo livello di nidificazione, ovvero qualsiasi contenuto o blocco predefinito contenuto in una sezione. Ciò significa che per avere componenti visivi più complessi che possono contenere altri componenti, devono essere modellati come sezioni e combinati utilizzando il blocco automatico lato-client. Esempi tipici di ciò sono le schede e le sezioni comprimibili come i pannelli a soffietto.
 
-Una sezione può essere definita nello stesso modo di un blocco, ma con il tipo di risorsa `core/franklin/components/section/v1/section`. Le sezioni possono avere un nome e un [ID filtro,](/help/implementing/universal-editor/customizing.md#filtering-components) utilizzati soltanto dall’[Editor universale](/help/implementing/universal-editor/introduction.md), nonché un [ID modello,](/help/implementing/universal-editor/field-types.md#model-structure) utilizzato per eseguire il rendering dei metadati della sezione. Il modello è in questo modo il modello del blocco di metadati della sezione, che verrà automaticamente aggiunto a una sezione come blocco di valore-chiave, se non è vuoto.
+Una sezione può essere definita nello stesso modo di un blocco, ma con il tipo di risorsa `core/franklin/components/section/v1/section`. Le sezioni possono avere un nome e un [ID filtro,](/help/implementing/universal-editor/filtering.md) utilizzati soltanto dall’[Editor universale](/help/implementing/universal-editor/introduction.md), nonché un [ID modello,](/help/implementing/universal-editor/field-types.md#model-structure) utilizzato per eseguire il rendering dei metadati della sezione. Il modello è in questo modo il modello del blocco di metadati della sezione, che verrà automaticamente aggiunto a una sezione come blocco di valore-chiave, se non è vuoto.
 
-L’[ID modello](/help/implementing/universal-editor/field-types.md#model-structure) e l’[ID filtro](/help/implementing/universal-editor/customizing.md#filtering-components) della sezione predefinita è `section`. Può essere utilizzato per modificare il comportamento della sezione predefinita. L’esempio seguente aggiunge alcuni stili e un’immagine di sfondo al modello di metadati della sezione.
+L’[ID modello](/help/implementing/universal-editor/field-types.md#model-structure) e l’[ID filtro](/help/implementing/universal-editor/filtering.md) della sezione predefinita è `section`. Può essere utilizzato per modificare il comportamento della sezione predefinita. L’esempio seguente aggiunge alcuni stili e un’immagine di sfondo al modello di metadati della sezione.
 
 ```json
 {
