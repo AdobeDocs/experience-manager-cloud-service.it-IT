@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
+source-git-commit: bd2162d7b2187637d76a5182a0cae39b5bac8791
 workflow-type: tm+mt
-source-wordcount: '5954'
+source-wordcount: '5958'
 ht-degree: 99%
 
 ---
@@ -206,6 +206,7 @@ ht-degree: 99%
    + Note sulla versione per l&#39;editor universale {#univeral-editor}
       + [Note sulla versione corrente per l’editor universale](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
+         + [Note sulla versione 2024.12.02](/help/release-notes/universal-editor/2024/2024-12-02.md)
          + [Note sulla versione 2024.11.13](/help/release-notes/universal-editor/2024/2024-11-13.md)
          + [Note sulla versione 2024.11.05](/help/release-notes/universal-editor/2024/2024-11-05.md)
          + [Note sulla versione 2024.10.29](/help/release-notes/universal-editor/2024/2024-10-29.md)
@@ -224,7 +225,7 @@ ht-degree: 99%
    + [Panoramica sulla sicurezza per AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
    + [Configurazione di networking avanzato per AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
    + [Supporto IMS per AEM as a Cloud Service](/help/security/ims-support.md)
-   + [Modifiche nella sincronizzazione di gruppi di utenti e profili di prodotto](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
+   + [Modifiche alla sincronizzazione del gruppo utenti e del profilo prodotto](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
    + [Supporto per i cookie dello stesso sito per AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Supporto OAuth2 per il servizio di posta](/help/security/oauth2-support-for-mail-service.md)
    + [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md)

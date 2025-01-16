@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2024.12.02 dell’editor universale
-description: Queste sono le note sulla versione 2024.12.02 dell’editor universale.
+title: Note sulla versione 2054.01.16 dell’editor universale
+description: Queste sono le note sulla versione 2025.01.16 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2aae8c63358680758e4f5324f38dea1bc2c47155
+source-git-commit: 14bc45917f56ecf358278848e7e830afb1fedccd
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 16%
+source-wordcount: '236'
+ht-degree: 19%
 
 ---
 
 
-# Note sulla versione 2024.12.02 dell’editor universale {#release-notes}
+# Note sulla versione 2025.01.16 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 2 dicembre 2024 di Universal Editor.
+Queste sono le note sulla versione del 16 gennaio 2025 di Universal Editor.
 
 >[!TIP]
 >
@@ -22,18 +22,15 @@ Queste sono le note sulla versione del 2 dicembre 2024 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* **Navigazione tramite tastiera della struttura contenuto**: [La struttura contenuto,](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) disponibile nel pannello laterale, è ora completamente accessibile tramite tastiera.
-   * Gli autori possono navigare e interagire con gli elementi della visualizzazione struttura utilizzando controlli da tastiera standard, in conformità alle [linee guida WCAG 2.1](/help/sites-cloud/authoring/page-editor/accessible-content.md) per l&#39;accessibilità.
-   * Questo miglioramento garantisce che tutti gli elementi interattivi all’interno della struttura siano utilizzabili da tastiera, migliorando l’inclusività per gli utenti che si affidano alla navigazione da tastiera.
-* **Deselezione degli elementi modificabili**: gli autori possono ora deselezionare gli elementi modificabili precedentemente selezionati nella pagina.
-   * Questo elimina le distrazioni quando gli autori desiderano visualizzare la pagina senza bordi di selezione attivi.
-* **Selettore frammenti**: nelle istanze di AEM as a Cloud Service, i riferimenti ai frammenti ora aprono il selettore frammenti come selettore contenuto, fornendo funzionalità migliorate come il rispetto dei modelli di frammenti di contenuto consentiti, la ricerca di frammenti di contenuto e un’esperienza complessiva migliorata.
-   * Ciò è in linea con le altre interfacce utente di Adobe e migliora la coerenza.
-   * [Per gli ambienti AEM 6.5,](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) il selettore di contenuti esistente rimane in uso.
-* **Descrizione contenitore**: [Il componente contenitore](/help/implementing/universal-editor/field-types.md#container) utilizzato nel pannello [proprietà,](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail) per fare riferimento al contenuto, ora supporta un attributo descrizione, visualizzato sopra i campi contenitore.
-   * Questa aggiunta migliora la chiarezza fornendo agli autori il contesto dei campi raggruppati che stanno modificando.
+* **Deprecazione della libreria CORS &lt; 3.0.0** - Per garantire la compatibilità futura e migliorare la sicurezza, l&#39;Editor universale ora supporta esclusivamente la versione 3.0.0 o successiva della
+  Libreria `@Adobe Express/universal-editor-cors`.
+   * La libreria viene ora distribuita esclusivamente tramite [`universal-editor-service.adobe.io/cors.js`.](http://universal-editor-service.adobe.io/cors.js)
+   * All’apertura di una pagina che utilizza versioni precedenti della libreria CORS, viene visualizzata una notifica di obsolescenza alla quale gli utenti dovranno effettuare l’aggiornamento.
+* **Punto di estensione per la pagina di destinazione** - [È stato introdotto un nuovo punto di estensione](/help/implementing/universal-editor/customizing.md#extending) per la visualizzazione delle estensioni nella barra laterale della pagina di destinazione dell&#39;editor universale.
+   * Ora gli sviluppatori possono specificare se le estensioni sono applicabili all’editor, alla pagina di destinazione o a entrambi, offrendo maggiore personalizzazione e usabilità.
 
 ## Altri miglioramenti {#other-improvements}
 
-* **Sincronizzazione campi Rich Text**: è stata migliorata la sincronizzazione del contenuto non elaborato e di cui è stato eseguito il rendering all&#39;interno dei campi Rich Text nel pannello delle proprietà, risolvendo i problemi all&#39;interno dei progetti di Edge Delivery Services in cui il contenuto Rich Text e la rappresentazione di cui è stato eseguito il rendering possono differire.
-* **Eventi modalità di modifica**: l&#39;editor universale ora emette in modo affidabile eventi modalità di modifica, anche dopo il ricaricamento delle app remote.
+* **Sono stati corretti URL non validi negli elementi recenti nella pagina di destinazione**. È stato risolto un problema a causa del quale gli URL visualizzati nell&#39;elenco &quot;Recenti&quot; nella pagina di destinazione dell&#39;editor universale risultavano danneggiati.
+* **Sincronizzazione tema in Unified Shell** - L&#39;editor universale sincronizza ora in modo dinamico il tema con le impostazioni di Unified Shell del sistema e regola automaticamente tra le modalità chiara e scura.
+   * Ciò assicura un aspetto visivo coerente tra i micro front-end, inclusi i selettori di frammenti e risorse.
