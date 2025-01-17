@@ -4,10 +4,10 @@ description: Accedi ai dati nella sezione dei rapporti di vista Risorse per valu
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 6e0cd465f8695c948ece4679e083d6b9b35dded4
+source-git-commit: c92fc95d7f2774b24664b457bf785120945fc966
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 67%
+source-wordcount: '1540'
+ht-degree: 85%
 
 ---
 
@@ -48,7 +48,7 @@ L’ambiente di visualizzazione AEM Assets offre funzionalità di reporting comp
 
    **Nella scheda Configurazione:**
 
-   1. **Tipo di report:** Seleziona un tipo tra [!UICONTROL upload], [!UICONTROL download] o [Rapporto di consegna Dynamic Media](#dynamic-media-delivery-reports).
+   1. **Tipo di report:** seleziona un tipo tra [!UICONTROL caricamento], [!UICONTROL download] o [Rapporto di consegna Dynamic Media](#dynamic-media-delivery-reports).
    1. **Titolo:** aggiungi un titolo al rapporto.
    1. **Descrizione**: specifica una descrizione facoltativa per il rapporto.
    1. **Seleziona il percorso della cartella:** seleziona un percorso della cartella per generare il rapporto delle risorse caricate e scaricate all’interno di quella cartella specifica. Ad esempio, se hai bisogno del rapporto sulle risorse caricate in una cartella, specifica il percorso di tale cartella.
@@ -136,52 +136,54 @@ L’ambiente di visualizzazione AEM Assets offre funzionalità di reporting comp
     </tbody>
    </table>
 
-## Rapporti di consegna Dynamic Media {#dynamic-media-delivery-reports}
+## Rapporti sulle consegne Dynamic Media {#dynamic-media-delivery-reports}
 
-Ottieni informazioni dettagliate sulla consegna delle risorse effettuata con Dynamic Media, con numero di consegna a livello di risorsa, informazioni sul referrer, percorso della risorsa in AEM Assets e ID univoco della risorsa. È possibile generare rapporti per tutte le risorse distribuite tramite l’archivio Dynamic Media for AEM Assets o per una specifica gerarchia di cartelle in AEM Assets. Inoltre, le informazioni sui report di distribuzione di Dynamic Media consentono di misurare il ROI delle risorse consegnate, le prestazioni dei canali e le attività di gestione delle risorse con informazioni dettagliate.
+Ottieni informazioni dettagliate sulla consegna delle risorse effettuata con Dynamic Media, con numero di consegna a livello di risorsa, informazioni sul referrer, percorso della risorsa in AEM Assets e ID univoco della risorsa. È possibile generare rapporti per tutte le risorse consegnate tramite Dynamic Media all’archivio AEM Assets o a una specifica gerarchia di cartelle in AEM Assets. Inoltre, le informazioni approfondite sui rapporti di consegna Dynamic Media consentono di misurare il ROI delle risorse consegnate, le prestazioni dei canali e di intraprendere attività di gestione delle risorse informate.
 
+<!--
 >[!NOTE]
 > 
->Per accedere in anteprima al report di consegna di Dynamic Media sul tuo account Dynamic Media, [crea e invia un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+-->
 
 ### Prerequisiti {#prereqs-dynamic-media-delivery-reports}
 
-È necessario disporre di una licenza Dynamic Media per la creazione e l&#39;utilizzo di questo report.
+Per la creazione e l’utilizzo di questo rapporto, è necessario disporre di una licenza Dynamic Media.
 
 >[!IMPORTANT]
 > 
 >* Vengono forniti rapporti per le risorse consegnate tramite Dynamic Media.
->* I rapporti vengono generati per il primo milione di righe. Per acquisire tutti i file entro questo limite, è consigliabile includere la colonna del destinatario che inoltra per le cartelle più piccole.
+>* I rapporti vengono generati per il primo milione di righe. Per acquisire tutti i file entro questo limite, è consigliabile includere la colonna del referrer per le cartelle più piccole.
 >* I rapporti possono essere generati solo per gli ultimi 3 mesi.
 
 ### Creare un rapporto di consegna Dynamic Media{#create-dynamic-media-delivery-report}
 
-1. Creare un report di consegna Dynamic Media, seguendo i passaggi indicati in [Creare un report](#create-report).
+1. Crea un rapporto di consegna Dynamic Media, seguendo i passaggi indicati in [Creare un rapporto](#create-report).
 
-1. Seleziona **[!UICONTROL Consegna Dynamic Media]** dall&#39;elenco a discesa **[!UICONTROL Tipo di report]**.
+1. Seleziona **[!UICONTROL Consegna Dynamic Media]** dall’elenco a discesa **[!UICONTROL Tipo di rapporto]**.
 
-   ![Elenco a discesa Report di consegna Dynamic Media](assets/dynamic-media-delivery-report-option.png)
+   ![Menu a discesa Rapporto di consegna Dynamic Media](assets/dynamic-media-delivery-report-option.png)
 
 
-1. Nella scheda **[!UICONTROL Colonne]**, puoi selezionare la colonna **[!UICONTROL Referrer]** per includerla nel report.
+1. Nella scheda **[!UICONTROL Colonne]**, puoi selezionare la colonna **[!UICONTROL Referrer]** per includerla nel rapporto.
 
    ![Referrer](assets/referrer.png)
 
-   Tutte le colonne del report scaricato sono di sola lettura, ad eccezione della colonna **Referrer**, che è possibile modificare per includere o escludere dal report. <!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
+   Tutte le colonne del rapporto scaricato sono di sola lettura, ad eccezione della colonna **Referrer**, che è possibile modificare per includerla o escluderla dal rapporto. <!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
 
 ### Azioni eseguite sul rapporto di consegna di Dynamic Media {#actions-performed-dynamic-media-delivery-reports}
 
 Dopo aver creato il rapporto, puoi effettuare le seguenti operazioni:
 
-* **[!UICONTROL Elimina]**: è possibile eliminare il report selezionato.
-* **[!UICONTROL Scarica CSV]**: puoi scaricare il rapporto selezionato in formato CSV. Il rapporto scaricato è costituito dalle colonne Nome, Percorso, DynamicMediaID, Referrer, Hits.
-   * Nella colonna **Destinatario che inoltra** è riportato l&#39;URL in cui la risorsa viene consegnata o inclusa.
+* **[!UICONTROL Elimina]**: è possibile eliminare il rapporto selezionato.
+* **[!UICONTROL Scarica CSV]**: puoi scaricare il rapporto selezionato in formato CSV. Il rapporto scaricato è costituito dalle colonne Nome, Percorso, DynamicMediaID, Referrer, Hit.
+   * La colonna **Referrer** riporta l’URL in cui la risorsa viene consegnata o inclusa.
 
-   * Nella colonna **Hit** è indicato il numero di volte in cui la risorsa viene consegnata (numero di consegne).
+   * La colonna **Hit** elenca il numero di volte in cui la risorsa viene consegnata (conteggio consegne).
 
 Per eliminare o scaricare come CSV il rapporto di consegna di Dynamic Media, consulta [Visualizzare e scaricare il rapporto esistente](#View-and-download-existing-report).
 
-![File CSV scaricato nel rapporto di consegna di Dynamic Media](assets/csv-dynamic-media-delivery-report.png)
+![CSV scaricato sul rapporto di consegna di Dynamic Media](assets/csv-dynamic-media-delivery-report.png)
 
 
 ## Visualizzare e scaricare il rapporto esistente {#View-and-download-existing-report}
