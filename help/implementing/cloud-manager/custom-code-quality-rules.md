@@ -1,6 +1,6 @@
 ---
 title: Regole per la qualità del codice personalizzato
-description: Scopri le regole di qualità del codice personalizzato di Cloud Manager, basate sulle best practice di Adobe Experience Manager Engineering, per garantire codice di alta qualità tramite test approfonditi.
+description: Scopri le regole di qualità del codice personalizzato di Cloud Manager, basate sulle best practice dei tecnici di Adobe Experience Manager, per garantire codici di alta qualità tramite test approfonditi.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
 source-wordcount: '4421'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Regole per la qualità del codice personalizzato"
->abstract="Scopri le regole di qualità del codice personalizzato di Cloud Manager, basate sulle best practice di Adobe Experience Manager Engineering, per garantire codice di alta qualità tramite test approfonditi."
+>abstract="Scopri le regole di qualità del codice personalizzato di Cloud Manager, basate sulle best practice dei tecnici di Adobe Experience Manager, per garantire codici di alta qualità tramite test approfonditi."
 
 Scopri le regole di qualità del codice personalizzato di Cloud Manager, basate sulle best practice di Adobe Experience Manager Engineering, per garantire codice di alta qualità tramite test approfonditi. Vedi anche [test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md).
 
@@ -918,7 +918,7 @@ I componenti Foundation legacy (ovvero i componenti in `/libs/foundation`) sono 
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
-Experience Manager as a Cloud Service applica un criterio di denominazione rigoroso per i nomi delle modalità di esecuzione e un ordine rigoroso per tali modalità di esecuzione. L&#39;elenco delle modalità di esecuzione supportate si basa sul documento [Distribuzione nell&#39;Experience Manager as a Cloud Service](/help/implementing/deploying/overview.md#runmodes) e qualsiasi deviazione da questo elenco è identificata come un problema.
+Experience Manager as a Cloud Service applica un criterio di denominazione rigoroso per i nomi delle modalità di esecuzione e un ordine rigoroso per tali modalità di esecuzione. L&#39;elenco delle modalità di esecuzione supportate si basa sul documento [Distribuzione nell&#39;Experienci Manager as a Cloud Service](/help/implementing/deploying/overview.md#runmodes) e qualsiasi deviazione da questo elenco è identificata come un problema.
 
 ### I nodi di definizione dell’indice di ricerca personalizzato devono essere nodi secondari diretti di `/oak:index` {#oakpal-custom-search}
 

@@ -19,7 +19,7 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
->title="Scarica"
+>title="Download"
 >abstract="Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza di origine di Adobe Experience Manager (AEM). Assicurati di scaricare la versione più recente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=it" text="Note sulla versione"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html" text="Portale di distribuzione software"

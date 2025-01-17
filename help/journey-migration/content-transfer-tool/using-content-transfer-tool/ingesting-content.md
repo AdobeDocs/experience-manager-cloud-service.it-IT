@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
 workflow-type: tm+mt
 source-wordcount: '3412'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 10%
 >id="aemcloud_ctt_ingestion"
 >title="Acquisizione dei contenuti"
 >abstract="Per acquisizione si intende l’acquisizione dei contenuti dal set di migrazione nell’istanza Cloud Service di destinazione. Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Estrazione integrativa"
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Estrazione integrativa"
 
 Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effettua le seguenti operazioni:
 
@@ -99,7 +99,7 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
 >id="aemcloud_ctt_ingestion_topup"
 >title="Acquisizione integrativa"
 >abstract="Utilizza la funzione integrativa per spostare il contenuto modificato dall’ultima attività di trasferimento dei contenuti. Al termine dell’acquisizione, verifica la presenza di eventuali errori o avvisi nei registri. Eventuali errori devono essere risolti immediatamente affrontando i problemi segnalati o contattando l’Assistenza clienti di Adobe."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Visualizzazione dei registri"
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Visualizzazione dei registri"
 
 Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che consente l&#39;estrazione di contenuti differenziali eseguendo una *integrazione* del set di migrazione. Questo consente di modificare il set di migrazione in modo da includere solo il contenuto modificato rispetto all’estrazione precedente, senza dover estrarre nuovamente tutto il contenuto.
 
@@ -118,7 +118,7 @@ Inizia creando un processo di acquisizione e assicurati che **Cancella** sia dis
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Risoluzione dei problemi di acquisizione dei contenuti"
 >abstract="Consulta i registri di acquisizione e la documentazione per trovare soluzioni ai motivi comuni dell’esito negativo di un’acquisizione e trova il modo di risolvere il problema. Una volta risolto il problema, l’acquisizione può essere eseguita nuovamente."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Convalida dei trasferimenti di contenuto"
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Convalida dei trasferimenti di contenuto"
 
 ### CAM: impossibile recuperare il token di migrazione {#cam-unable-to-retrieve-the-migration-token}
 
@@ -190,7 +190,7 @@ Assicurati che l’ambiente di authoring sia disponibile e attendi alcuni minuti
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="Violazione vincolo di unicità"
 >abstract="Una causa comune dell’errore di acquisizione senza cancellazione è un conflitto negli ID dei nodi. Può esistere soltanto uno dei nodi in conflitto."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Acquisizione integrativa"
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Acquisizione integrativa"
 
 Una causa comune di un errore di [acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) è un conflitto negli ID dei nodi. Per identificare questo errore, scarica il registro di acquisizione utilizzando l’interfaccia utente di Cloud Acceleration Manager e cerca una voce come quella seguente:
 
@@ -210,7 +210,7 @@ Questo conflitto deve essere risolto manualmente. Chi ha familiarità con il con
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="Impossibile eliminare il nodo di riferimento"
 >abstract="Una causa comune dell’errore di acquisizione senza cancellazione è un conflitto di versione per un particolare nodo nell’istanza di destinazione. È necessario correggere le versioni del nodo."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Acquisizione integrativa"
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Acquisizione integrativa"
 
 Un&#39;altra causa comune di un errore di [acquisizione integrativa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) è un conflitto di versione per un particolare nodo nell&#39;istanza di destinazione. Per identificare questo errore, scarica il registro di acquisizione utilizzando l’interfaccia utente di Cloud Acceleration Manager e cerca una voce come quella seguente:
 
@@ -228,7 +228,7 @@ Le best practice indicano che, se è necessario eseguire un&#39;acquisizione **N
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Proprietà del nodo di grandi dimensioni"
 >abstract="Una causa comune di errore di acquisizione è il superamento della dimensione massima dei valori delle proprietà del nodo. Per risolvere il problema, segui la documentazione, compresa quella relativa al rapporto BPA."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Prerequisiti per la migrazione"
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Prerequisiti per la migrazione"
 
 I valori delle proprietà del nodo memorizzati in MongoDB non possono superare i 16 MB. Se un valore di nodo supera le dimensioni supportate, l’acquisizione non riesce e il registro conterrà:
 
@@ -245,12 +245,12 @@ Per evitare questa restrizione, eseguire [Best Practices Analyzer](/help/journey
 >
 >[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) versione 2.1.50+ genererà rapporti sui nodi di grandi dimensioni contenenti caratteri Unicode che superano le dimensioni massime. Assicurati di eseguire la versione più recente. Le versioni BPA precedenti al 2.1.50 non identificano e generano rapporti su questi nodi di grandi dimensioni e devono essere individuate separatamente utilizzando il prerequisito per lo strumento Oak indicato sopra.
 
-### Errore di acquisizione a causa di errori intermittenti imprevisti {#ingestion-failure-due-to-unexpected-intermittent-errors}
+### Acquisizione non riuscita a causa di errori intermittenti imprevisti {#ingestion-failure-due-to-unexpected-intermittent-errors}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
 >title="Errori intermittenti imprevisti"
->abstract="A volte si possono verificare errori intermittenti imprevisti del servizio a valle e sfortunatamente l’unico ricorso è quello di ritentare semplicemente l’acquisizione."
+>abstract="A volte si possono verificare errori intermittenti imprevisti del servizio a valle e sfortunatamente l’unico rimedio è quello di ritentare semplicemente l’acquisizione."
 
 Talvolta, problemi intermittenti inattesi potrebbero prestarsi a acquisizioni non riuscite, dove purtroppo l’unico ricorso è quello di ritentare l’acquisizione. Esamina il registro di acquisizione per individuare la causa dell’errore e verificare se è in linea con uno degli errori elencati di seguito, dove deve essere effettuato un nuovo tentativo.
 
