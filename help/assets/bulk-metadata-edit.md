@@ -1,10 +1,10 @@
 ---
 title: Modifica in blocco dei metadati nella vista Assets
-description: Scopri come modificare simultaneamente i metadati di più risorse disponibili nella visualizzazione Assets.
+description: Scopri come aggiornare un set predefinito di campi di metadati standard per più risorse disponibili contemporaneamente nella vista Assets.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 55cb3bb5771c154191fe5b59e56cf9f077590169
+source-git-commit: 692ff4fbb5b7e703f727d6e20d87c4fc0abdb350
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
