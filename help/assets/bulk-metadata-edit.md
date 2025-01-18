@@ -2,7 +2,7 @@
 title: Modifica in blocco dei metadati nella vista Assets
 description: Scopri come aggiornare un set predefinito di campi di metadati standard per più risorse disponibili contemporaneamente nella vista Assets.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 692ff4fbb5b7e703f727d6e20d87c4fc0abdb350
+source-git-commit: f986cbc979ecdb9e704257a8b94db9de0d67d4f1
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Per modificare in blocco i metadati di più risorse contemporaneamente, esegui i
      >
      >Puoi modificare i metadati di 100 risorse alla volta.
 
-Per visualizzare i metadati applicati a una risorsa, passa alla pagina dei dettagli della risorsa (seleziona la risorsa e fai clic su **Dettagli**), quindi fai clic su ![](/help/assets/assets/info-icon-solid-black.svg) per visualizzare i metadati della risorsa nel pannello **Informazioni**.
+Per visualizzare gli aggiornamenti dei metadati applicati a una risorsa, passa alla pagina dei dettagli della risorsa (seleziona la risorsa e fai clic su **Dettagli**) e fai clic su ![](/help/assets/assets/info-icon-solid-black.svg) per visualizzare i metadati della risorsa nel pannello **Informazioni**.
 
 >[!NOTE]
 >
