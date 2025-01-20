@@ -1,14 +1,14 @@
 ---
 title: Authoring dei frammenti di contenuto
-description: Scopri come creare contenuti per i frammenti di contenuto e creare varianti di tali contenuti in base allo scopo. Ciò offre maggiore flessibilità sia per la distribuzione headless che per l’authoring delle pagine.
+description: Scopri come creare contenuti per i frammenti di contenuto e creare varianti di tali contenuti in base allo scopo. I frammenti di contenuto offrono maggiore flessibilità sia per la distribuzione headless che per l’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
+source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
 workflow-type: tm+mt
-source-wordcount: '2841'
-ht-degree: 7%
+source-wordcount: '2851'
+ht-degree: 6%
 
 ---
 
@@ -68,7 +68,9 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
 * Pannello centrale: presenta i campi e il contenuto effettivi della variante selezionata
    * Consente di modificare il contenuto
       * se configurati (come più) nel modello, vari tipi di dati ti consentono di **Aggiungere** istanze del campo pertinente
-   * Se i campi **Segnaposto scheda** sono definiti all&#39;interno del modello, vengono visualizzati qui e possono essere utilizzati per la navigazione. Verranno presentati orizzontalmente o come elenco a discesa.
+   * Se i campi **Segnaposto scheda** sono definiti nel modello, vengono visualizzati qui e:
+      * può essere utilizzato per la navigazione
+      * verrà visualizzato orizzontalmente o come elenco a discesa
 
   >[!NOTE]
   >
@@ -102,7 +104,7 @@ Nel pannello a sinistra puoi vedere:
 
 ### Segui collegamenti {#follow-links}
 
-In varie parti dell’editor è possibile visualizzare l’icona del collegamento. Può essere utilizzato per aprire l’elemento visualizzato, ad esempio un Modello per frammento di contenuto, un Riferimento principale o un frammento a cui si fa riferimento:
+In varie parti dell’editor è possibile visualizzare l’icona del collegamento. Questa icona può essere utilizzata per aprire l’elemento visualizzato, ad esempio un modello per frammenti di contenuto, un riferimento principale o un frammento a cui si fa riferimento:
 
 ![Editor frammento di contenuto - Icona collegamento](assets/cf-authoring-link-icon.png)
 
@@ -475,7 +477,7 @@ Ad esempio:
 
 ## Commento sul frammento {#commenting-on-your-fragment}
 
-La scheda **Commenti** nel pannello di destra offre le seguenti funzionalità:
+Per consentire la collaborazione all&#39;interno del prodotto e nel contesto, la scheda **Commenti** nel pannello di destra offre le seguenti funzionalità:
 
 * Aggiungi un nuovo commento
 * Assegnare tag a utenti specifici in un commento
