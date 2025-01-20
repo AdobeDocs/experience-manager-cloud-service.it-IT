@@ -4,7 +4,7 @@ description: Questo tutorial ti mostrerà come essere subito operativo con un nu
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1806'
 ht-degree: 92%
@@ -67,7 +67,7 @@ Il modello standard di AEM Forms consente di iniziare rapidamente un progetto AE
    * `<repository>` denota l’archivio GitHub.
    * `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
 
-   Ad esempio, se il nome del ramo è `main`, l&#39;archivio è `wefinance` e il proprietario è `wkndform`, il sito Web sarà attivo e operativo in [https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)
+   Ad esempio, se il nome del ramo è `main`, l&#39;archivio è `wefinance` e il proprietario è `wkndform`, il sito Web sarà attivo e operativo in [https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)
 
 
 
