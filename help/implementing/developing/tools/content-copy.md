@@ -4,10 +4,10 @@ description: Lo strumento di copia dei contenuti consente agli utenti di copiare
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
+source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 34%
+source-wordcount: '1286'
+ht-degree: 36%
 
 ---
 
@@ -68,7 +68,7 @@ Prima di poter copiare qualsiasi contenuto, è necessario definire un set di con
    1. Se necessario, fai di nuovo clic su **Aggiungi percorso**.
       * Sono consentiti fino a 50 percorsi.
 
-   ![Aggiungi percorsi al set di contenuti](assets/add-content-set-paths.png)
+   ![Aggiunta di percorsi al set di contenuti](assets/add-content-set-paths.png)
 
 1. Se devi perfezionare o limitare il set di contenuti, i percorsi secondari possono essere esclusi.
 
@@ -175,7 +175,7 @@ A tale scopo, nella pagina **Attività copia contenuto** selezionare l&#39;azion
 >
 >Quando annulli un’operazione di copia del contenuto, questa può tradursi in una copia parziale del contenuto nell’ambiente di destinazione. Questa situazione può lasciare l’ambiente di destinazione inutilizzabile.
 >
->Se l’ambiente si trova in questo stato a causa di una cancellazione, contatta l’Assistenza clienti Adobe.
+>Se l’ambiente si trova in questo stato a causa di una cancellazione, contatta l’Assistenza clienti di Adobe.
 
 ### Accesso ai registri {#accessing-logs}
 
@@ -200,10 +200,3 @@ Lo strumento Copia contenuto presenta le seguenti limitazioni.
 * Lo strumento di copia del contenuto non dispone di funzionalità di controllo delle versioni e non è in grado di rilevare automaticamente il contenuto modificato o creato nell&#39;ambiente di origine di un set di contenuti dall&#39;ultima operazione di copia del contenuto.
    * Se desideri aggiornare l’ambiente di destinazione solo con le modifiche apportate al contenuto, dall’ultima operazione di copia del contenuto devi creare un set di contenuti. Quindi, specifica i percorsi nell’istanza sorgente in cui sono state apportate le modifiche dall’ultima operazione di copia del contenuto.
 * Le informazioni sulla versione non sono incluse in una copia del contenuto.
-
-## Problemi noti {#known-issues}
-
-Quando si utilizza la funzionalità di copia del contenuto [, tenere presente il seguente problema noto.](/help/implementing/developing/tools/content-copy.md)
-
-* Se una risorsa nell’ambiente di origine viene rinominata, l’operazione di copia del contenuto potrebbe non riuscire a causa di UUID in conflitto nell’ambiente di destinazione.
-   * Per evitare questo errore, anziché rinominare le risorse, eliminale e quindi ricreale con il nuovo nome di risorsa desiderato.
