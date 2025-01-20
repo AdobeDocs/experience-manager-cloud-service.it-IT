@@ -8,10 +8,10 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
+source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 3%
+source-wordcount: '1060'
+ht-degree: 5%
 
 ---
 
@@ -37,7 +37,18 @@ Forms Conversion Utility converte i Forms adattivi basati su componenti Foundati
 
 * In caso di conversioni corrette, tutte le regole applicate al modulo vengono rimosse. Le regole non vengono migrate automaticamente. È necessario ricreare e applicare manualmente queste regole al modulo convertito.
 * Le impostazioni di traduzione utilizzate nel modulo originale non vengono riportate. Riconfigura la traduzione per il modulo convertito.
-  <!-- * If the form built on Foundation Components contains custom function rules, you have to rewrite these rules for the converted form based on Core Components.-->
+* Se il modulo basato su Componenti Foundation contiene script o regole di funzione personalizzate, è necessario riscriverli per il modulo convertito basato su Componenti core.
+* I seguenti componenti di base OOTB non sono ancora supportati nei Componenti core e vengono quindi eliminati nel modulo convertito:
+   * Blocco Adobe Sign
+   * Grafico
+   * Elenco dei file allegati
+   * Segnaposto Nota a piè di pagina
+   * Scelta immagine
+   * Pulsante Avanti
+   * Pulsante precedente
+   * Firma a mano
+   * Passaggio di riepilogo
+   * Barra degli strumenti
 
 ## Prerequisiti per utilizzare gli strumenti di modernizzazione AEM
 
@@ -68,7 +79,7 @@ Per installare gli strumenti di modernizzazione AEM nell’ambiente AEM Forms lo
 
    `java -jar aem-author-p4502.jar`
 
-1. Clona l&#39;archivio dello strumento di modernizzazione [AEM](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) nel sistema locale.
+1. Clona l&#39;archivio dello strumento di modernizzazione [AEM](https://github.com/adobe/forms-modernizer) nel sistema locale.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]

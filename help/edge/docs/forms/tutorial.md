@@ -4,10 +4,10 @@ description: Questo tutorial ti mostrerà come essere subito operativo con un nu
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1850'
-ht-degree: 100%
+source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+workflow-type: tm+mt
+source-wordcount: '1806'
+ht-degree: 92%
 
 ---
 
@@ -61,27 +61,27 @@ Il modello standard di AEM Forms consente di iniziare rapidamente un progetto AE
    >
    > Se utilizzi GitHub Enterprise con filtro IP, puoi aggiungere il seguente IP all’elenco Consentiti: 3.227.118.73
 
-   Congratulazioni Hai un nuovo sito web in esecuzione su `https://<branch>--<repo>--<owner>.hlx.page/`.
+   Congratulazioni Hai un nuovo sito web in esecuzione su `https://<branch>--<repo>--<owner>.aem.page/`.
 
    * `<branch>` fa riferimento al ramo dell’archivio GitHub.
    * `<repository>` denota l’archivio GitHub.
    * `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
 
-   Ad esempio, se il nome del ramo è `main`, l’archivio è `wefinance` e il proprietario è `wkndforms`, il sito web sarà operativo e funzionante all’indirizzo [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
+   Ad esempio, se il nome del ramo è `main`, l&#39;archivio è `wefinance` e il proprietario è `wkndform`, il sito Web sarà attivo e operativo in [https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)
 
 
 
 ### Collegare l’origine del proprio contenuto
 
-L’archivio GitHub appena creato punta a contenuti di esempio di [archiviati in una cartella di Google Drive](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). Questo contenuto di sola lettura fornisce un ottimo punto di partenza per i moduli. Puoi copiarlo in Google Drive e personalizzarlo in base alle esigenze.
+<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Contenuto di esempio su Google Drive](/help/edge/assets/folder-with-sample-content.png)
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
 
 Per copiare il contenuto di esempio nella cartella del contenuto e indirizzarvi l’archivio GitHub:
 
 1. crea una nuova cartella specifica per il contenuto AEM in Google Drive o Microsoft SharePoint. Questo documento utilizza una cartella creata in Microsoft SharePoint.
 
-1. Condividi la cartella con l’utente di Adobe Experience Manager (helix@adobe.com).
+1. Condividi la cartella con l’utente di Adobe Experience Manager (forms@adobe.com).
 
    ![Utilizza l’opzione Gestisci accesso per condividere la cartella con l’utente AEM - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
 
@@ -90,13 +90,13 @@ Per copiare il contenuto di esempio nella cartella del contenuto e indirizzarvi 
 
    Assicurati di aver fornito all’utente di Adobe Experience Manager le autorizzazioni di modifica per la cartella.
 
-   ![Condividi la cartella con l’utente AEM e fornisci le autorizzazioni di modifica-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![Condividi cartella con utente AEM, fornisci i diritti di modifica-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   ![Condividi la cartella con l’utente AEM e fornisci le autorizzazioni di modifica - Google Drive](/help/edge/assets/add-aem-user-google-folder.png)
+   ![Condividi cartella con utente AEM, fornisci i diritti di modifica- Google Drive](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
-1. Copia nella cartella il contenuto di esempio [archiviato nella cartella Google Drive](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Per copiare:
+1. Copia il [contenuto di esempio](/help/edge/assets/wefinance1.zip) nella cartella. Per copiare:
 
-   1. scarica i file insieme o singolarmente.
+   1. Decomprimi la cartella scaricata e copia il contenuto.
 
       ![Scarica contenuto di esempio](/help/edge/assets/download-sample-content.png)
 
@@ -113,7 +113,7 @@ Per copiare il contenuto di esempio nella cartella del contenuto e indirizzarvi 
 
    1. vai all’archivio GitHub che hai creato in precedenza utilizzando moduli AEM ricorrenti.
    1. Apri `fstab.yaml` per la modifica.
-   1. Sostituisci il riferimento esistente con il percorso della cartella condivisa con l’utente AEM (helix@adobe.com).
+   1. Sostituisci il riferimento esistente con il percorso della cartella condivisa con l’utente AEM (forms@adobe.com).
 
       ![Contenuto di esempio su Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -175,7 +175,7 @@ Per visualizzare in anteprima il contenuto non pubblicato:
 
 
    ```HTML
-   https://<branch>--<repository>--<owner>.hlx.live
+   https://<branch>--<repository>--<owner>.aem.live
    ```
 
    * `<branch>` fa riferimento al ramo dell’archivio GitHub.
@@ -183,11 +183,9 @@ Per visualizzare in anteprima il contenuto non pubblicato:
    * `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
 
 
-   URL `https://<branch>--<repo>--<owner>.hlx.page/enquiry`
+   URL `https://<branch>--<repo>--<owner>.aem.page/enquiry`
 
-   Ad esempio, se l’archivio del progetto è denominato “wefinance”, si trova sotto il proprietario dell’account “wkndforms” e stai utilizzando il ramo “main”, l’URL è:
-
-   [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
+   Ad esempio, se l&#39;archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto il proprietario dell&#39;account &quot;wkndform&quot; e si utilizza il ramo &quot;main&quot; e il nome del modulo come `enquiry`, l&#39;URL è: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry).
 
 ### Creare un modulo
 
@@ -195,11 +193,11 @@ Il contenuto di esempio include un foglio “enquiry” che funge da modello per
 
 ![Modulo di richiesta](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-Iniziamo con l’aggiornamento dell’etichetta di un campo. Apri il foglio “enquiry” per la modifica, cambia l’etichetta del pulsante Invia in `Let's Chat` e utilizza AEM Sidekick per visualizzare in anteprima e pubblicare il file.
+Iniziamo con l’aggiornamento dell’etichetta di un campo. Apri il foglio “enquiry” per la modifica, cambia l’etichetta del pulsante Invia in `Let's Talk` e utilizza AEM Sidekick per visualizzare in anteprima e pubblicare il file.
 
 ![Modulo di richiesta](/help/edge/assets/enquiry-form-preview-publish.png)
 
-Quando visualizzi in anteprima o pubblichi il file, una versione JSON del file viene visualizzata in una nuova scheda. Copia l’URL di anteprima (.hlx.page) o di pubblicazione (.hlx.live) del file.
+Quando visualizzi in anteprima o pubblichi il file, una versione JSON del file viene visualizzata in una nuova scheda. Copia l’URL di anteprima (.aem.page) o pubblicazione (.aem.live) del file.
 
 ![JSON del foglio di calcolo del modulo](/help/edge/assets//preview-and-publish-enquiry-form.png)
 
@@ -216,13 +214,16 @@ Per visualizzare in anteprima il modulo di richiesta aggiornato, passa al seguen
 
 
 ```HTML
-    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+    https://<branch>--<repository>--<owner>.aem.page/enquiry
        
 ```
 
-L’etichetta del pulsante Invia viene aggiornata in `Let's Chat`.
+L’etichetta del pulsante Invia viene aggiornata in `Let's Talk`.
 
-![Modulo di richiesta](/help/edge/assets/updated-form.png)
+[![Modulo di richiesta](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+
+URL: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+
 
 Per informazioni dettagliate sulla creazione e la pubblicazione di un nuovo modulo, consulta la guida [creare un modulo](/help/edge/docs/forms/create-forms.md).
 
@@ -254,8 +255,8 @@ La cartella `blocks/form` del blocco di moduli adattivi è un ambiente playgroun
 
 Vuoi mostrare la creazione? Utilizza Git per confermare e implementare le modifiche. Questo aggiorna gli ambienti di anteprima e di produzione accessibili tramite questi URL (sostituisci i segnaposto con i dettagli del progetto):
 
-Anteprima:`https://<branch>--<repo>--<owner>.hlx.page/`
-Produzione: `https://<branch>--<repo>--<owner>.hlx.live/`
+Anteprima:`https://<branch>--<repo>--<owner>.aem.page/`
+Produzione: `https://<branch>--<repo>--<owner>.aem.live/`
 
 Congratulazioni L’ambiente di sviluppo locale è stato configurato correttamente e le modifiche sono state distribuite.
 

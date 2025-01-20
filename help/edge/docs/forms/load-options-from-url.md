@@ -4,10 +4,10 @@ description: Le opzioni dell’elenco a discesa sono incluse in un foglio di cal
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 35fe88437dd86d490feeafe5bfc25ffda23234fb
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '472'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +21,6 @@ I vantaggi del caricamento delle opzioni a discesa da un foglio di calcolo separ
 
 * Gestione semplificata: mantiene le opzioni a discesa in una posizione centralizzata per semplificare gli aggiornamenti e le aggiunte.
 * Maggiore efficienza: elimina la necessità di aggiungere manualmente lunghi elenchi di opzioni all’interno della definizione del modulo.
-
-
-
 
 ![Opzioni a discesa](/help/forms/assets/drop-down-options.png)
 
@@ -58,8 +55,8 @@ Immetti le opzioni relative al paese nella colonna “Opzione” (e nella colonn
 
 1. Visualizzare in anteprima e pubblicare il foglio `shared-country` utilizzando [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   Fai riferimento all’URL che mostra il foglio `shared-country`:
-https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
+   Ad esempio, se l&#39;archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto il proprietario dell&#39;account &quot;wkndform&quot; e si utilizza il ramo &quot;main&quot;, l&#39;URL che mostra il foglio `shared-country`:
+   [https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)
 
 >[!NOTE]
 >
@@ -79,13 +76,14 @@ La proprietà `Options` di un campo `select` accetta un URL. L’URL restituisce
 
    ![Menu a discesa per paese](/help/forms/assets/load-dropdown-options-form.png)
 
-Puoi fare riferimento al [foglio di calcolo “enquiry”](/help/forms/assets/enquiry-options.xlsx) per aggiungere l’URL per caricare le opzioni dell’elenco a discesa.
+Puoi fare riferimento al [foglio di calcolo “enquiry”](/help/edge/assets/enquiry.xlsx) per aggiungere l’URL per caricare le opzioni dell’elenco a discesa.
 
 Dopo aver integrato l’URL nella definizione del modulo per caricare le opzioni dell’elenco a discesa, tali opzioni per l’elenco a discesa `Destination` iniziano a comparire dall’URL.
 
-Consulta l’URL seguente, che mostra il modulo `enquiry` che visualizza le opzioni salvate nel foglio separato:
+<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
 
-https://main--wefinance--wkndforms.hlx.live/enquiry-form
+[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+-->
 
 ## Consulta anche
 

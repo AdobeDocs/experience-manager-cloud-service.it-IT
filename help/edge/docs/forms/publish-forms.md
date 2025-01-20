@@ -4,10 +4,10 @@ description: Pubblicare un modulo Edge Delivery Services di AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '549'
-ht-degree: 100%
+source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
+workflow-type: tm+mt
+source-wordcount: '594'
+ht-degree: 77%
 
 ---
 
@@ -30,7 +30,7 @@ Quando vuoi condividere il modulo con i clienti per la raccolta o l’invio dei 
 
 1. Apri l’account Microsoft SharePoint o Google Drive e passa alla directory del progetto AEM Edge Delivery.
 
-1. Apri il foglio di calcolo contenente il modulo. Ad esempio, il modulo `enquiry` della cartella di lavoro Microsoft Excel.
+1. Apri il foglio di calcolo contenente il modulo. Ad esempio, la [richiesta](/help/edge/assets/enquiry.xlsx) da cartella di lavoro di Microsoft Excel.
 
 1. Utilizza [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l’anteprima del foglio.
 
@@ -44,16 +44,16 @@ Quando vuoi condividere il modulo con i clienti per la raccolta o l’invio dei 
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       https://<branch>--<repository>--<owner>.aem.live/<form>.json
    ```
 
    * `<branch>` fa riferimento al ramo dell’archivio GitHub.
    * `<repository>` denota l’archivio GitHub.
    * `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
 
-   Ad esempio, se l’archivio del progetto è denominato “portal”, si trova sotto l’account “wkndforms” e stai utilizzando il ramo “main”, l’URL avrà l’aspetto seguente:
+   Ad esempio, se l’archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto l’account &quot;wkndform&quot; e stai utilizzando il ramo &quot;principale&quot; e il modulo come &quot;richiesta&quot;, l’URL avrà l’aspetto seguente:
 
-   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+   [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
 
 +++
 
@@ -66,15 +66,15 @@ Per aggiungere il modulo alla pagina web:
 
 1. accedi all’account Microsoft SharePoint o Google Drive e passa alla `[AEM Edge Delivery project directory]`.
 
-1. Apri un file del documento in cui desideri incorporare il modulo. Ad esempio, puoi aprire il file `index.docx` oppure creare un nuovo documento.
+1. Apri un file del documento in cui desideri incorporare il modulo. È ad esempio possibile aprire il file [modulo-richiesta.docx](/help/edge/assets/enquiry-form.docx) o, in alternativa, creare un nuovo documento.
 
 1. Identifica la sezione desiderata all’interno del documento in cui desideri inserire il modulo, quindi passa a tale sezione.
 
-1. Aggiungi al file un blocco denominato “Modulo”, simile all’esempio fornito di seguito:
+1. Aggiungi al file un blocco denominato &quot;Modulo&quot;. Ad esempio, se l’archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto il proprietario dell’account &quot;wkndform&quot; e stai utilizzando il ramo &quot;principale&quot;.
 
    | Modulo |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
 
    ![Aggiungi al file un blocco denominato “Modulo”](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -85,25 +85,29 @@ Per aggiungere il modulo alla pagina web:
    >
    > Verifica che l’URL sia formattato come collegamento ipertestuale anziché essere visualizzato come testo normale.
 
-   Utilizza l’URL di anteprima (.URL della pagina) a scopo di sviluppo o test oppure l’URL di pubblicazione (.live) per la produzione. Di seguito sono riportati alcuni esempi con URL di anteprima e pubblicazione:
+   Utilizza l’URL di anteprima (.page URL) a scopo di sviluppo o test oppure l’URL di pubblicazione (.live) per la produzione.
+
+   Ad esempio, se l’archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto il proprietario dell’account &quot;wkndform&quot; e stai utilizzando il ramo &quot;principale&quot;.
+
+   Di seguito sono riportati alcuni esempi con URL di anteprima e pubblicazione:
 
    **URL di anteprima**
 
    | Modulo |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
 
 
    **URL di pubblicazione**
 
    | Modulo |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
 
-1. Utilizza [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l’anteprima della pagina web. Nella pagina viene ora visualizzato il modulo. Ad esempio, questo è il modulo basato su [foglio di calcolo interrogazione](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
+1. Utilizza [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l’anteprima della pagina web. Nella pagina viene ora visualizzato il modulo. Ad esempio, questo è il modulo basato su [foglio di calcolo interrogazione](/help/edge/assets/enquiry.xlsx):
 
 
-   ![Un esempio di modulo EDS](/help/edge/assets/eds-form.png)
+   ![Un esempio di modulo EDS](/help/edge/assets/updated-form.png)
 
 1. Utilizza AEM Sidekick per pubblicare il modulo. Ora, ogni cliente può compilare il modulo e inviarlo.
 
