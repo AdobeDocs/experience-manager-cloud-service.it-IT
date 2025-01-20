@@ -4,7 +4,7 @@ description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e l
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
+source-git-commit: 9c684e3a82353c9e241efc9ee1f3bed694d8635a
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 4%
@@ -59,7 +59,7 @@ Si consiglia vivamente che tutte le connessioni HTTP in uscita impostino timeout
 
 Per il codice che non applica questi timeout, le istanze AEM in esecuzione su AEM as a Cloud Service applicheranno un timeout globale. Questi valori di timeout sono di 10 secondi per le chiamate di connessione e di 60 secondi per le chiamate di lettura per le connessioni.
 
-L&#39;Adobe consiglia di utilizzare la [libreria Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) fornita per creare connessioni HTTP.
+Adobe consiglia di utilizzare la [libreria Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) fornita per effettuare connessioni HTTP.
 
 Le alternative che sono note per funzionare, ma che possono richiedere di fornire personalmente la dipendenza sono:
 
@@ -174,7 +174,7 @@ Le immagini thread negli ambienti Cloud vengono raccolte su base continuativa, m
 
 Per lo sviluppo locale, gli sviluppatori hanno accesso completo a CRXDE Lite (`/crx/de`) e alla console Web AEM (`/system/console`).
 
-Nello sviluppo locale (utilizzando l&#39;SDK), `/apps` e `/libs` possono essere scritti direttamente in, il che è diverso dagli ambienti Cloud in cui le cartelle di primo livello non sono modificabili.
+Nello sviluppo locale (utilizzando SDK), `/apps` e `/libs` possono essere scritti direttamente in, il che è diverso dagli ambienti Cloud in cui le cartelle di primo livello non sono modificabili.
 
 ### Strumenti di sviluppo in AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
@@ -191,7 +191,7 @@ I clienti possono accedere a CRXDE lite nell’ambiente di sviluppo del livello 
 
 In AEM as a Cloud Service Developer Console sono disponibili una serie di strumenti per il debug degli ambienti di sviluppo AEM as a Cloud Service per gli ambienti RDE, di sviluppo, di stage e di produzione. L’URL può essere determinato regolando gli URL del servizio Author o Publish nel modo seguente:
 
-`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 Per avviare AEM as a Cloud Service Developer Console in base a un parametro di ambiente descritto di seguito, è possibile utilizzare il seguente comando CLI di Cloud Manager:
 
