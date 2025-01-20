@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
 source-git-commit: cddfcddc0ca3652270bdb735e580386ac9ff1fc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 65%
 
 Ogni volta che un utente accede ad AEM as a Cloud Service o viene utilizzato un token di accesso, i gruppi di utenti, i profili di prodotto e i servizi del profilo di prodotto di Adobe Admin Console vengono sincronizzati nell’archivio AEM come gruppi.
 
-Con le versioni AEM superiori a 18751 (una versione di manutenzione inizierà a essere implementata negli ambienti di produzione il 27 gennaio), al fine di ridurre il disordine nell’interfaccia utente e ottimizzare le prestazioni, ci saranno alcune modifiche al comportamento di sincronizzazione, con conseguente minor numero di gruppi visualizzati nell’AEM. Verranno rimosse due categorie di gruppi AEM:
+Con le versioni di AEM superiori alla 18751 (una versione di manutenzione inizierà a essere implementata negli ambienti di produzione il 27 gennaio), al fine di ridurre il disordine nell’interfaccia utente e ottimizzare le prestazioni, saranno introdotte alcune modifiche al comportamento di sincronizzazione, con conseguente minor numero di gruppi visualizzati in AEM. Verranno rimosse due categorie di gruppi AEM:
 
-1. Gruppi AEM con suffisso `GROUP_NAME_SUFFIX`. Questi gruppi non vengono visualizzati in Adobe Developer Console, ma nella schermata Gestione dei gruppi AEM, come illustrato di seguito. Nel caso improbabile che l’applicazione AEM faccia riferimento a tali gruppi, assicurati invece di fare riferimento ai gruppi di utenti Adobe Admin Console senza tale suffisso.
+1. Gruppi AEM con suffisso `GROUP_NAME_SUFFIX`. Questi gruppi non vengono visualizzati in Adobe Developer Console, ma nella schermata Gestione dei gruppi AEM, come illustrato di seguito. Nel caso improbabile che l’applicazione AEM faccia riferimento a tali gruppi, assicurarsi di utilizzare invece i gruppi di utenti di Adobe Admin Console senza quel suffisso.
 
    ![Gruppi rimossi 1](/help/security/assets/removed-groups-1.png)
 
@@ -42,5 +42,5 @@ In questo modo si accede ad Adobe Admin Console, come illustrato nella schermata
 
 ![Suffissi in Admin Console](/help/security/assets/admin-console-profile-suffixes.png)
 
-Nel caso improbabile che l’applicazione AEM faccia riferimento a un gruppo che non apparirà più nell’AEM, assicurati invece di utilizzare i) un profilo di prodotto della giusta istanza AEM o ii) un gruppo di utenti Adobe Admin Console.
+Nel caso improbabile che l’applicazione AEM faccia riferimento a un gruppo che non apparirà più in AEM, assicurarsi invece di utilizzare i) un profilo di prodotto della giusta istanza AEM o ii) un gruppo di utenti Adobe Admin Console.
 
