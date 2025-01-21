@@ -5,7 +5,7 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 35%
@@ -14,7 +14,7 @@ ht-degree: 35%
 
 # Selettore di destinazione micro front-end {#Overview}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Il selettore di destinazione Microsoft-Frontend fornisce all&#39;interno dell&#39;applicazione un&#39;interfaccia utente che si integra facilmente con l&#39;archivio [!DNL Experience Manager Assets as a Cloud Service]. È possibile cercare o sfogliare la cartella appropriata all&#39;interno dell&#39;archivio [!DNL Experience Manager Assets as a Cloud Service] e caricare le risorse dall&#39;applicazione.
@@ -271,10 +271,10 @@ Ti consente di creare una cartella nella cartella di destinazione di [!DNL Adobe
 
 Il selettore delle destinazioni consente di visualizzare la risorsa in quattro diverse visualizzazioni:
 
-* **![Vista a elenco](assets/do-not-localize/list-view.png) [!UICONTROL Vista a elenco]**: la vista a elenco mostra i file e le cartelle in modo scorrevole in una singola colonna.
-* **![vista griglia](assets/do-not-localize/grid-view.png) [!UICONTROL Vista griglia]**: la vista griglia mostra i file e le cartelle in modo scorrevole in una griglia di righe e colonne.
-* **![vista galleria](assets/do-not-localize/gallery-view.png) [!UICONTROL Vista galleria]**: la vista galleria mostra i file o le cartelle in un elenco orizzontale bloccato al centro.
-* **![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista a cascata]**: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
+* ![Vista a elenco](assets/do-not-localize/list-view.png) [!UICONTROL **Vista a elenco**]: la vista a elenco mostra i file e le cartelle in modo scorrevole in una singola colonna.
+* ![vista griglia](assets/do-not-localize/grid-view.png) [!UICONTROL **Vista griglia**]: la vista griglia mostra i file e le cartelle in modo scorrevole in una griglia di righe e colonne.
+* ![vista galleria](assets/do-not-localize/gallery-view.png) [!UICONTROL **Vista galleria**]: la vista galleria mostra i file o le cartelle in un elenco orizzontale bloccato al centro.
+* ![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vista a cascata**]: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
 
 ### Info {#info}
 

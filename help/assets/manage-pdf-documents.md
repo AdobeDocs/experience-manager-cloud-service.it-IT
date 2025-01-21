@@ -4,28 +4,29 @@ description: Gestisci documenti PDF in [!DNL Adobe Experience Manager] as a [!DN
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 5%
+source-wordcount: '853'
+ht-degree: 6%
 
 ---
 
 # Gestire i documenti PDF in Experience Manager Assets as a Cloud Service {#add-assets-to-experience-manager}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets si integra perfettamente con Document Cloud PDF Viewer, consentendo di visualizzare in anteprima più pagine di un documento PDF. È inoltre possibile utilizzare funzioni avanzate di visualizzazione di Document Cloud PDF, ad esempio annotazioni, testo da cercare, navigare nel documento di PDF utilizzando segnalibri e miniature e altro ancora nello stesso tetto. Experience Manager Assets consente inoltre di caricare documenti in altri formati supportati e di visualizzarli in anteprima in formato PDF.
 
 Document Cloud PDF Viewer offre i seguenti vantaggi ad AEM Assets:
+
 * [Supporto per i componenti visualizzatore Document Cloud di PDF](#pdf-doc-cloud)
 * [Supporto per Anteprima pagine multiple e Annotazioni per PDF Assets](#multi-page)
 * [Supporto per l&#39;anteprima di più pagine per documenti in altri formati](#multi-format)
 
-> Suggerimento
-> Se non riesci a ottenere l&#39;anteprima di più pagine di un documento di PDF caricato in precedenza, seleziona il PDF e fai clic su **![Rielabora](/help/assets/assets/Reprocess.svg) Rielabora Assets**.
+>[!TIP]
 >
+> Se non riesci a ottenere l&#39;anteprima di più pagine di un documento di PDF caricato in precedenza, seleziona il PDF e fai clic su ![Rielabora](/help/assets/assets/Reprocess.svg) **Rielabora Assets**.
 
 ## Supporto per i componenti visualizzatore Document Cloud di PDF {#pdf-doc-cloud}
 
@@ -57,9 +58,9 @@ Adobe Experience Manager Assets consente di visualizzare in anteprima un documen
 
 Puoi anche applicare [annotazioni](#pdf-annotations) al documento PDF in un&#39;anteprima su più pagine.
 
-> NOTA
-> La dimensione massima di una risorsa che puoi visualizzare in anteprima è di 100 MB.
+>[!NOTE]
 >
+> La dimensione massima di una risorsa che puoi visualizzare in anteprima è di 100 MB.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -72,6 +73,7 @@ Puoi anche applicare [annotazioni](#pdf-annotations) al documento PDF in un&#39;
 Experience Manager Assets consente di aggiungere commenti a un documento PDF. Un documento PDF può contenere più annotazioni.
 
 Per annotare un documento PDF, effettuare le seguenti operazioni:
+
 1. Passa all’interfaccia di Assets e individua il documento PDF a cui desideri aggiungere un’annotazione. Il visualizzatore PDF nativo si apre a destra con l&#39;anteprima del documento PDF selezionato.
 1. Fai clic su **Annota** nel menu principale.
 Di seguito sono riportate le annotazioni che possono essere applicate a un documento PDF:
@@ -126,15 +128,16 @@ Oltre ai documenti PDF, è possibile visualizzare in anteprima più pagine per i
 ![Anteprima multipagina di documenti in altri formati](/help/assets/assets/multi-page-other-formats.png)
 
 Per l&#39;anteprima di più pagine di altri formati di documento supportati, effettuare le seguenti operazioni:
+
 1. Segui i passaggi per [caricare risorse in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Sfogliare il documento da caricare e visualizzare in anteprima.
 1. Aprire il documento.
 1. Seleziona PDF nella sezione statica del pannello a sinistra. Il pannello a destra mostra l’anteprima di più pagine di una risorsa. Seleziona la miniatura dal pannello a sinistra per scegliere la pagina da visualizzare in anteprima.
 
-> NOTA
+>[!NOTE]
+>
 > * La dimensione massima di una risorsa che puoi visualizzare in anteprima è di 100 MB.
 > * La dimensione massima dei file XLS o XLSX da visualizzare in anteprima è di 20 MB.
->
 
 **Consulta anche**
 

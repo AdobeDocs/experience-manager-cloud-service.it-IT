@@ -3,10 +3,10 @@ title: Selettore risorse per [!DNL Adobe Experience Manager] as a [!DNL Cloud Se
 description: Utilizza il Selettore risorse per cercare, trovare e recuperare i metadati e le rappresentazioni delle risorse all’interno dell’applicazione.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: ht
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+workflow-type: tm+mt
 source-wordcount: '1332'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -159,10 +159,10 @@ Puoi ordinare le risorse all’interno selettore risorse per nome, dimensione o 
 
 Il selettore risorse consente di visualizzare la risorsa in quattro diversi modi:
 
-* **![vista a elenco](assets/do-not-localize/list-view.png) [!UICONTROL Vista a elenco]**: la vista a elenco mostra i file e le cartelle in una singola colonna scorrevole.
-* **![vista griglia](assets/do-not-localize/grid-view.png) [!UICONTROL Vista griglia]**: con la vista griglia i file e le cartelle scorrono in una griglia di righe e colonne.
-* **![vista galleria](assets/do-not-localize/gallery-view.png) [!UICONTROL Vista galleria]**: la vista galleria mostra i file o le cartelle in un elenco orizzontale bloccato al centro.
-* **![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista a cascata]**: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
+* ![vista a elenco](assets/do-not-localize/list-view.png) [!UICONTROL **Vista a elenco**]: la vista a elenco mostra i file e le cartelle in una singola colonna scorrevole.
+* ![vista griglia](assets/do-not-localize/grid-view.png) [!UICONTROL **Vista griglia**]: con la vista griglia i file e le cartelle scorrono in una griglia di righe e colonne.
+* ![vista galleria](assets/do-not-localize/gallery-view.png) [!UICONTROL **Vista galleria**]: la vista galleria mostra i file o le cartelle in un elenco orizzontale bloccato al centro.
+* ![visualizzazione a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Visualizzazione a cascata**] Nella visualizzazione a cascata sono visualizzati file o cartelle sotto forma di Bridge.
 
 **Grafico Panoramica**
 
