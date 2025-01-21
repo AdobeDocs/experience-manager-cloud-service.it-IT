@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
+source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 5%
@@ -31,7 +31,7 @@ Forms Conversion Utility converte i Forms adattivi basati su componenti Foundati
 
 >[!NOTE]
 > 
-> Si consiglia di installare gli strumenti di modernizzazione AEM nell’installazione locale dell’AEM. Migrare il Forms adattivo basato su componenti di base ai moduli basati su componenti di base. Scarica il modulo e le relative risorse. Quindi, carica il modulo e le relative risorse nell’ambiente richiesto.
+>Si consiglia di installare gli strumenti di modernizzazione AEM nell’installazione locale dell’AEM. Migrare il Forms adattivo basato su componenti di base ai moduli basati su componenti di base. Scarica il modulo e le relative risorse. Quindi, carica il modulo e le relative risorse nell’ambiente richiesto.
 
 ## Considerazioni durante l’utilizzo degli strumenti di modernizzazione dell’AEM {#considerations}
 
@@ -39,6 +39,7 @@ Forms Conversion Utility converte i Forms adattivi basati su componenti Foundati
 * Le impostazioni di traduzione utilizzate nel modulo originale non vengono riportate. Riconfigura la traduzione per il modulo convertito.
 * Se il modulo basato su Componenti Foundation contiene script o regole di funzione personalizzate, è necessario riscriverli per il modulo convertito basato su Componenti core.
 * I seguenti componenti di base OOTB non sono ancora supportati nei Componenti core e vengono quindi eliminati nel modulo convertito:
+
    * Blocco Adobe Sign
    * Grafico
    * Elenco dei file allegati
@@ -54,10 +55,9 @@ Forms Conversion Utility converte i Forms adattivi basati su componenti Foundati
 
 * [Configurare l’ambiente di sviluppo locale per AEM Forms](/help/forms/setup-local-development-environment.md)
 * [Abilita i componenti core Forms adattivi per il tuo ambiente.](/help/forms/enable-adaptive-forms-core-components.md)
-
 * Aggiungi gli utenti al gruppo [!DNL forms-users]. I membri del gruppo [!DNL forms-users] dispongono delle autorizzazioni per creare un modulo adattivo.
-
 * Gli utenti con i seguenti ruoli dispongono delle autorizzazioni per installare gli strumenti di modernizzazione AEM in un ambiente AEM:
+
    * Ruolo Sviluppatore
    * Ruolo amministratore
 
@@ -68,7 +68,7 @@ Per un elenco dettagliato dei gruppi di utenti specifici per i moduli, vedere [G
 Per installare e configurare gli strumenti di modernizzazione AEM:
 
 1. [Installare gli strumenti di modernizzazione AEM nell’ambiente AEM Forms locale](#install-aem-modernize-Tools)
-2. [Abilitare gli strumenti di modernizzazione AEM per l’ambiente AEM Forms locale](#enable-aem-modernize-Tools)
+1. [Abilitare gli strumenti di modernizzazione AEM per l’ambiente AEM Forms locale](#enable-aem-modernize-Tools)
 
 ### Installare gli strumenti di modernizzazione AEM nell’ambiente AEM Forms locale {#install-aem-modernize-Tools}
 
@@ -93,6 +93,7 @@ Per installare gli strumenti di modernizzazione AEM nell’ambiente AEM Forms lo
    ```Shell
        mvn clean install 
    ```
+
 ![Immagine di installazione completata](/help/forms/assets/aem-modernize-install-steps.png)
 
 Una volta completata l’installazione, gli strumenti di modernizzazione AEM diventano disponibili per il tuo ambiente.
@@ -128,10 +129,12 @@ Per abilitare e utilizzare gli strumenti di modernizzazione AEM per l’ambiente
 
 1. Specifica il **[!UICONTROL nome processo]**.
 1. Nella scheda **[!UICONTROL Modulo]** è possibile selezionare una delle opzioni seguenti:
+
    * **Nessuno**: selezionare l&#39;opzione se non si desidera creare una copia dei moduli basati sul componente Foundation prima di avviare la conversione del modulo.
    * **Ripristina**: selezionare l&#39;opzione per ripristinare lo stato del modulo prima di avviare la conversione.
    * **Copia in Target**: selezionare l&#39;opzione per creare una copia dei moduli basati sul componente di base prima di avviare la conversione del modulo.
-Nel nostro caso, l&#39;opzione **Copia in Target** è selezionata. Se l&#39;opzione **Copia in Target** è selezionata, le opzioni **[!UICONTROL Percorso Source]** e **[!UICONTROL Percorso Target]** diventano visibili.
+
+   Nel nostro caso, l&#39;opzione **Copia in Target** è selezionata. Se l&#39;opzione **Copia in Target** è selezionata, le opzioni **[!UICONTROL Percorso Source]** e **[!UICONTROL Percorso Target]** diventano visibili.
 
 1. Specificare il nome `source folder` nel **[!UICONTROL percorso Source]**.
 1. Specificare il nome `target folder` nel **[!UICONTROL percorso di destinazione]**.
@@ -152,6 +155,7 @@ Nel nostro caso, l&#39;opzione **Copia in Target** è selezionata. Se l&#39;opzi
    ![Strumenti di modernizzazione AEM completati](/help/forms/assets/aem-modernize-tools-success.png)
 
 1. Seleziona il modulo adattivo e seleziona > **[!UICONTROL Proprietà]**. Viene visualizzata la pagina Proprietà modulo.
+
    ![Cartella di destinazione degli strumenti di modernizzazione AEM](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. Selezionare **[!UICONTROL Salva e chiudi]** per salvare nuovamente le proprietà del modulo convertito.
