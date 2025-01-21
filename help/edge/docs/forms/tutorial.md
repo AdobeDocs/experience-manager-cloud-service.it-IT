@@ -4,9 +4,9 @@ description: Questo tutorial ti mostrerà come essere subito operativo con un nu
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1803'
 ht-degree: 92%
 
 ---
@@ -67,9 +67,8 @@ Il modello standard di AEM Forms consente di iniziare rapidamente un progetto AE
    * `<repository>` denota l’archivio GitHub.
    * `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
 
-   Ad esempio, se il nome del ramo è `main`, l&#39;archivio è `wefinance` e il proprietario è `wkndform`, il sito Web sarà attivo e operativo in [https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)
-
-
+   Ad esempio, se il nome del ramo è `main`, l&#39;archivio è `wefinance` e il proprietario è `wkndforms`, il sito Web sarà operativo alle `https://main--wefinance--wkndforms.aem.page`
+&lt;!—(https://main--wefinance--wkndform.aem.page)-->
 
 ### Collegare l’origine del proprio contenuto
 
@@ -135,8 +134,6 @@ Per copiare il contenuto di esempio nella cartella del contenuto e indirizzarvi 
 
    1. Conferma l’aggiornamento del file `fsatb.yaml` dopo aver aggiornato il riferimento e tutto sembra a posto. Se riscontri problemi di build, consulta [Risoluzione dei problemi di build di GitHub](#troubleshooting-github-build-issues).
 
-
-
       ![Conferma l’aggiornamento del file fsatab.yaml](/help/edge/assets/commit-updated-fstab-yaml.png)
 
       Questo consente di collegare la cartella dei contenuti al sito web. Dopo aver aggiornato il riferimento, potresti riscontrare inizialmente gli errori “404 non trovato”. Questo perché il contenuto non è ancora stato visualizzato in anteprima. Nella sezione successiva viene illustrato come iniziare a creare e visualizzare in anteprima i contenuti.
@@ -185,7 +182,8 @@ Per visualizzare in anteprima il contenuto non pubblicato:
 
    URL `https://<branch>--<repo>--<owner>.aem.page/enquiry`
 
-   Ad esempio, se l&#39;archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto il proprietario dell&#39;account &quot;wkndform&quot; e si utilizza il ramo &quot;main&quot; e il nome del modulo come `enquiry`, l&#39;URL è: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry).
+   Ad esempio, se l&#39;archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto il proprietario dell&#39;account &quot;wkndform&quot; e si utilizza il ramo &quot;main&quot; e il nome del modulo come `enquiry`, l&#39;URL è: `https://main--wefinance--wkndform.aem.live/enquiry`.
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### Creare un modulo
 
@@ -199,7 +197,7 @@ Iniziamo con l’aggiornamento dell’etichetta di un campo. Apri il foglio “e
 
 Quando visualizzi in anteprima o pubblichi il file, una versione JSON del file viene visualizzata in una nuova scheda. Copia l’URL di anteprima (.aem.page) o pubblicazione (.aem.live) del file.
 
-![JSON del foglio di calcolo del modulo](/help/edge/assets//preview-and-publish-enquiry-form.png)
+![JSON del foglio di calcolo del modulo](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
 Apri il file `enquiry` e sostituisci l’URL nel blocco del modulo con l’URL del file copiato nel passaggio precedente. Assicurati che l’URL sia un collegamento ipertestuale.
 
@@ -220,9 +218,12 @@ Per visualizzare in anteprima il modulo di richiesta aggiornato, passa al seguen
 
 L’etichetta del pulsante Invia viene aggiornata in `Let's Talk`.
 
-[![Modulo di richiesta](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+![Modulo di richiesta](/help/edge/assets/updated-form.png)
 
-URL: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
+
+URL: `https://main--wefinance--wkndform.aem.live/enquiry`
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 
 Per informazioni dettagliate sulla creazione e la pubblicazione di un nuovo modulo, consulta la guida [creare un modulo](/help/edge/docs/forms/create-forms.md).

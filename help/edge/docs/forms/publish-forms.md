@@ -4,10 +4,10 @@ description: Pubblicare un modulo Edge Delivery Services di AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
+source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 77%
+source-wordcount: '587'
+ht-degree: 78%
 
 ---
 
@@ -53,7 +53,8 @@ Quando vuoi condividere il modulo con i clienti per la raccolta o l’invio dei 
 
    Ad esempio, se l’archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto l’account &quot;wkndform&quot; e stai utilizzando il ramo &quot;principale&quot; e il modulo come &quot;richiesta&quot;, l’URL avrà l’aspetto seguente:
 
-   [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json`
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
 
 +++
 
@@ -74,7 +75,7 @@ Per aggiungere il modulo alla pagina web:
 
    | Modulo |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
    ![Aggiungi al file un blocco denominato “Modulo”](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -95,16 +96,16 @@ Per aggiungere il modulo alla pagina web:
 
    | Modulo |
    |---|
-   | [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.page/enquiry.json` |
 
 
    **URL di pubblicazione**
 
    | Modulo |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
-1. Utilizza [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l’anteprima della pagina web. Nella pagina viene ora visualizzato il modulo. Ad esempio, questo è il modulo basato su [foglio di calcolo interrogazione](/help/edge/assets/enquiry.xlsx):
+1. Utilizza [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare l’anteprima della pagina web. Nella pagina viene ora visualizzato il modulo. Ad esempio, questo è il modulo basato su [foglio di calcolo interrogazione](/help/edge/assets/enquiry-form.docx):
 
 
    ![Un esempio di modulo EDS](/help/edge/assets/updated-form.png)

@@ -4,17 +4,17 @@ description: Creare moduli potenti più rapidamente utilizzando fogli di calcolo
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 086706a1b9ab211738ea2978b73e1681b04ddac2
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 84%
+source-wordcount: '426'
+ht-degree: 65%
 
 ---
 
 # Impostare i Fogli Google o i file Microsoft Excel per iniziare ad accettare i dati
 
 
-Una volta che hai [creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/create-forms.md), è ora di abilitare il foglio di calcolo corrispondente per iniziare a ricevere i dati. Puoi abilitare manualmente il foglio di calcolo per accettare i dati oppure utilizzare le API di amministrazione per consentire a un foglio di calcolo di accettare i dati.
+Dopo aver [creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/create-forms.md), è ora di abilitare il foglio di calcolo corrispondente per iniziare a ricevere i dati. Puoi abilitare manualmente il foglio di calcolo per accettare i dati oppure utilizzare le API di amministrazione per consentire a un foglio di calcolo di accettare i dati.
 
 ![Ecosistema di authoring basato sul documento](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -34,19 +34,19 @@ Per abilitare il foglio di calcolo ad accettare i dati,
    >
    > Se il foglio `incoming` non è presente, AEM non invia alcun dato al foglio di calcolo.
 
-2. In questo foglio inserisci una tabella denominata “intake_form”. Seleziona il numero di colonne necessarie per far corrispondere i nomi dei campi modulo. Poi, nella barra degli strumenti, vai su Inserisci > Tabella e fai clic su OK.
+1. In questo foglio inserisci una tabella denominata “intake_form”. Seleziona il numero di colonne necessarie per far corrispondere i nomi dei campi modulo. Poi, nella barra degli strumenti, vai su Inserisci > Tabella e fai clic su OK.
 
-3. Modifica il nome della tabella in “intake_form”. In Microsoft Excel, per modificare il nome della tabella, selezionala e fai clic su Progettazione tabella.
+1. Modifica il nome della tabella in “intake_form”. In Microsoft Excel, per modificare il nome della tabella, selezionala e fai clic su Progettazione tabella.
 
-4. Successivamente, aggiungi i nomi dei campi modulo come intestazioni della tabella. Per verificare che i campi siano esattamente gli stessi, puoi copiarli e incollarli dal foglio “shared-default”.  Nel foglio “shared-default” seleziona e copia gli ID modulo elencati nella colonna “Nome”, ad eccezione del campo Invia.
+1. Successivamente, aggiungi i nomi dei campi modulo come intestazioni della tabella. Per assicurarti che i campi siano esattamente gli stessi, puoi copiarli e incollarli dal foglio &quot;shared-aem&quot;.  Nel foglio &quot;shared-aem&quot;, seleziona e copia gli ID modulo elencati nella colonna &quot;Nome&quot;, ad eccezione del campo invio.
 
-5. Nel foglio “in entrata”, seleziona Incolla speciale > Trasponi righe in colonne per copiare gli ID dei campi come intestazioni di colonna in questo nuovo foglio. Conserva solo i campi di cui è necessario acquisire i dati, gli altri possono essere ignorati.
+1. Nel foglio “in entrata”, seleziona Incolla speciale > Trasponi righe in colonne per copiare gli ID dei campi come intestazioni di colonna in questo nuovo foglio. Conserva solo i campi di cui è necessario acquisire i dati, gli altri possono essere ignorati.
 
-   Ogni valore nella colonna `Name` del foglio `shared-default`, escluso il pulsante Invia, può essere utilizzato come intestazione nel foglio `incoming`. Ad esempio, considera l’immagine seguente che illustra le intestazioni per un modulo di &quot;richiesta di informazioni&quot;:
+   Ogni valore nella colonna `Name` del foglio `shared-aem`, escluso il pulsante Invia, può essere utilizzato come intestazione nel foglio `incoming`. Ad esempio, considera l’immagine seguente che illustra le intestazioni per un modulo di &quot;richiesta di informazioni&quot;:
 
    ![Campi per un modulo contattaci](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-6. Utilizza l&#39;estensione [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare in anteprima gli aggiornamenti del modulo. Il foglio è ora pronto per accettare gli invii dei moduli in entrata.
+1. Utilizza l&#39;estensione [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare in anteprima gli aggiornamenti del modulo. Il foglio è ora pronto per accettare gli invii dei moduli in entrata.
 
    >[!NOTE]
    >
@@ -59,7 +59,7 @@ Una volta configurato il foglio per la ricezione dei dati, è possibile [visuali
 
 >[!WARNING]
 >
->  I fogli “shared-default” non devono mai contenere informazioni personali identificabili o dati sensibili che l’utente non intende rendere accessibili pubblicamente.
+>  I fogli &quot;shared-aem&quot; non devono mai contenere informazioni personali identificabili o dati sensibili che l’utente non è a suo agio nell’essere accessibili al pubblico.
 
 <!--
 ### Use Admin APIs to enable a spreadsheet to accept data

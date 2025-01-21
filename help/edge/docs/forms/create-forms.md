@@ -4,10 +4,10 @@ description: Crea moduli perfetti, velocemente. ⚡ authoring basato su document
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 4dcc580a6e3b49b1839fbb0f101c172bddf5cfcc
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 88%
+source-wordcount: '782'
+ht-degree: 86%
 
 ---
 
@@ -60,8 +60,6 @@ Ensure a smooth GitHub build process by addressing potential issues:
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
-+++
-
 +++ Passaggio 1: creare un modulo utilizzando Microsoft Excel o foglio Google.
 
 Invece di navigare attraverso processi complessi, la creazione di un modulo può essere ottenuta facilmente utilizzando un foglio di calcolo. È possibile definire le righe e le colonne che costituiranno la struttura del modulo. Ogni riga rappresenta un singolo utente [campo modulo](/help/edge/docs/forms/form-components.md#available-components) e le intestazioni di colonna definiscono le corrispondenti [proprietà campo](/help/edge/docs/forms/form-components.md#components-properties).
@@ -76,15 +74,15 @@ Per procedere con la creazione del modulo:
 
 1. Crea una cartella di lavoro di Microsoft Excel o un foglio di Google ovunque all’interno della directory di progetto AEM Edge Delivery. Ad esempio, crea un foglio di calcolo denominato `enquiry` nella directory del progetto AEM Edge Delivery su Google Drive.
 
-   ![Contenuto di esempio su Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+   <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
 1. Assicurati che il foglio sia condiviso con l’utente AEM appropriato (ad esempio `forms@adobe.com`) [in base alle configurazioni specificate per il progetto](https://www.aem.live/docs/setup-customer-sharepoint). Concedi all’utente l’autorizzazione di modifica per il foglio.
 
-1. Apri il foglio di calcolo creato e rinomina il foglio predefinito in “shared-default”.
+1. Apri il foglio di calcolo creato e rinomina il foglio predefinito in &quot;shared-aem&quot;.
 
    ![rinominare il foglio predefinito in “shared-default”](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Per aggiungere i campi modulo, inserire le righe e le intestazioni di colonna nel foglio “shared-default”. Ogni riga deve rappresentare un [campo modulo](/help/edge/docs/forms/form-components.md#available-components), con intestazioni di colonna che definiscono il campo corrispondente [proprietà](/help/edge/docs/forms/form-components.md#components-properties).
+1. Per aggiungere i campi modulo, inserisci righe e intestazioni di colonna nel foglio &quot;shared-aem&quot;. Ogni riga deve rappresentare un [campo modulo](/help/edge/docs/forms/form-components.md#available-components), con intestazioni di colonna che definiscono il campo corrispondente [proprietà](/help/edge/docs/forms/form-components.md#components-properties).
 
 
    Per un avvio rapido, considera copiare il contenuto del [Foglio di calcolo interrogazione](/help/edge/assets/enquiry.xlsx) nel proprio foglio di calcolo. Dopo aver copiato il contenuto, salva il foglio di calcolo.
@@ -109,7 +107,8 @@ Per procedere con la creazione del modulo:
 
    Ad esempio, se l’archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto l’account &quot;wkndform&quot; e stai utilizzando il ramo &quot;main&quot;, l’URL avrà un aspetto simile al seguente:
 
-   [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)
+`https://main--wefinance--wkndform.aem.page/enquiry.json`
+&lt;!—(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
 
 
 +++
@@ -131,7 +130,7 @@ Finora è stata preparata la struttura del modulo. Ora, per visualizzare in ante
 
    | Modulo |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
 
    ![Aggiungere un blocco di moduli adattivi alla pagina web](/help/edge/assets/enquiry-doc-to-embed-form.png)
