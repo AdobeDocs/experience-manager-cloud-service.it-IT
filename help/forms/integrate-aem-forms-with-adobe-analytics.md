@@ -5,7 +5,7 @@ exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 1%
@@ -118,7 +118,7 @@ Per configurare gli elementi dati, effettua le seguenti operazioni:
 
 1. Seleziona **[!UICONTROL Salva]** per salvare l&#39;elemento dati.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337472)
+>[!VIDEO](https://video.tv.adobe.com/v/337472)
 
 ### Configurare le regole {#configure-rules}
 
@@ -180,7 +180,7 @@ Per creare regole basate sull&#39;estensione **[!UICONTROL Adobe Experience Mana
 
    Puoi creare regole per tutti i tipi di evento, ad esempio Abbandona, Errore, Visita campo, Aiuto, Rendering, Salva e Invia.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
 ### Flussi Publish {#publish-flow}
@@ -207,9 +207,9 @@ Prima di creare una configurazione di Adobe Launch, crea una [configurazione Ado
 
 ### Crea configurazione di Adobe Launch {#create-adobe-launch-configuration}
 
-Per creare una configurazione Launch di Adobe, effettua le seguenti operazioni:
+Per creare una configurazione di Adobe Launch, effettua le seguenti operazioni:
 
-1. Nell&#39;istanza di AEM Forms Author, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazioni di Launch Adobe]**.
+1. Nell&#39;istanza di AEM Forms Author, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazioni di Adobe Launch]**.
 
 1. Selezionare una cartella per creare la configurazione e selezionare **[!UICONTROL Crea]**.
 

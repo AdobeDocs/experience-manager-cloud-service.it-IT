@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3184'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Il Cloud Service AEM Forms fornisce i componenti Contenitore modulo adattivo e F
 
 ## Perché utilizzare i componenti core Forms adattivi per creare un modulo adattivo in una pagina o in un frammento di esperienza di AEM Sites?
 
-Se in passato hai creato un componente Forms Foundation adattivo o moduli semplici basati su HTML per i siti, l’Adobe consiglia di utilizzare i componenti core Forms adattivi per creare un modulo adattivo nella pagina o nel frammento di esperienza di AEM Sites. Consente di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito, migliorando l’esperienza complessiva di creazione e gestione dei moduli per Adaptive Forms. Esaminiamo alcune di queste funzioni:
+Se in passato hai creato un componente Forms Foundation adattivo o moduli semplici basati su HTML per i siti, Adobe consiglia di utilizzare i componenti core Forms adattivi per creare un modulo adattivo nella pagina o nel frammento di esperienza di AEM Sites. Consente di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito, migliorando l’esperienza complessiva di creazione e gestione dei moduli per Adaptive Forms. Esaminiamo alcune di queste funzioni:
 
 * **Controllo delle versioni:** le pagine AEM Sites offrono [solide funzionalità di controllo delle versioni](/help/sites-cloud/authoring/sites-console/page-versions.md), che consentono di tenere traccia e gestire versioni diverse dei moduli. In questo modo è possibile apportare modifiche e miglioramenti ai moduli mantenendo la possibilità di ripristinare le versioni precedenti, se necessario. Il controllo delle versioni garantisce un approccio controllato e organizzato allo sviluppo e all’evoluzione dei moduli.
 * **Targeting (integrazione con Adobe Target):** Con le funzionalità di targeting delle pagine di AEM Sites, puoi anche [personalizzare l&#39;esperienza del modulo per tipi di pubblico diversi](/help/sites-cloud/integrating/integrating-adobe-target.md). Utilizzando i segmenti utente e i criteri di targeting, è possibile adattare il contenuto, la progettazione o il comportamento del modulo a specifici gruppi di utenti. Questo ti consente di fornire un’esperienza di modulo personalizzata e rilevante, aumentando i tassi di coinvolgimento e conversione.
@@ -72,13 +72,11 @@ Puoi sfruttare appieno questa funzione utilizzando le seguenti opzioni:
 
 Prima di iniziare a creare un modulo adattivo, abilita i componenti core Forms adattivi e aggiungi le librerie client Forms adattivi alla pagina AEM Sites:
 
-+++  Abilitare i componenti core Forms adattivi per il tuo ambiente AEM Cloud Service
+### Abilitare i componenti core Forms adattivi per il tuo ambiente AEM Cloud Service
 
 Assicurati che i [Componenti core adattivi di Forms siano abilitati per il tuo ambiente AEM Forms as a Cloud Service](enable-adaptive-forms-core-components.md).
 
-+++
-
-+++  Aggiungere librerie client Forms adattive alla pagina o al frammento di esperienza AEM Sites
+### Aggiungere librerie client Forms adattive alla pagina o al frammento di esperienza AEM Sites
 
 Per abilitare la funzionalità completa del componente Contenitore Forms adattivo, aggiungi le librerie client Customheaderlibs e Customfooterlibs alla pagina AEM Sites utilizzando la pipeline di distribuzione. Per aggiungere le librerie:
 
@@ -123,9 +121,7 @@ Per abilitare la funzionalità completa del componente Contenitore Forms adattiv
 
 1. [Esegui la pipeline di distribuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) per distribuire le librerie client nell&#39;ambiente AEM as a Cloud Service.
 
-+++
-
-+++ Abilita Adaptive Forms Container per la pagina o il frammento di esperienza AEM Sites
+### Abilita Adaptive Forms Container per la pagina o il frammento di esperienza AEM Sites
 
 Per abilitare il componente [!UICONTROL Contenitore Forms adattivo] nel criterio del modello, eseguire la procedura seguente:
 

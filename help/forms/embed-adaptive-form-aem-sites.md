@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 5321fed58f66b2beabcacc2de4b7dfb2dc3754f1
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3145'
 ht-degree: 0%
@@ -75,13 +75,11 @@ Puoi sfruttare appieno questa funzione utilizzando le seguenti opzioni:
 
 Prima di iniziare a incorporare un nuovo modulo adattivo o un modulo adattivo preesistente utilizzando **[!UICONTROL Forms adattivo - Incorpora(v2)]**, abilita **Componenti core Forms adattivo** e aggiungi **Librerie client Forms adattive** alla pagina AEM Sites:
 
-+++  Abilitare i componenti core Forms adattivi per il tuo ambiente AEM Cloud Service
+### Abilitare i componenti core Forms adattivi per il tuo ambiente AEM Cloud Service
 
 Assicurati che i [Componenti core adattivi di Forms siano abilitati per il tuo ambiente AEM Forms as a Cloud Service](enable-adaptive-forms-core-components.md).
 
-+++
-
-+++  Aggiungere librerie client Forms adattive alla pagina o al frammento di esperienza AEM Sites
+### Aggiungere librerie client Forms adattive alla pagina o al frammento di esperienza AEM Sites
 
 Quando l&#39;opzione **[!UICONTROL Quando il modulo copre l&#39;intera larghezza di una pagina]** è selezionata nella finestra di dialogo di configurazione **[!UICONTROL Contenitori modulo]** e vengono utilizzati Forms adattivi che utilizzano i componenti core, è necessario includere le librerie client nella pagina del sito corrispondente.
 
@@ -130,9 +128,7 @@ Aggiungi le **librerie client Customheaderlibs** e **Customfooterlibs** alla pag
 
 1. [Esegui la pipeline di distribuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) per distribuire le librerie client nell&#39;ambiente AEM as a Cloud Service.
 
-+++
-
-+++ Abilita **[!UICONTROL Forms adattivo - Incorpora(v2)]** per la pagina o il frammento di esperienza AEM Sites
+### Abilita Forms adattivo: incorpora(v2) per la pagina o il frammento di esperienza AEM Sites
 
 Per abilitare il componente **[!UICONTROL Forms adattivo - Incorpora(v2)]** nel criterio del modello, eseguire la procedura seguente:
 
@@ -142,8 +138,6 @@ Per abilitare il componente **[!UICONTROL Forms adattivo - Incorpora(v2)]** nel 
 1. Fai clic su **[!UICONTROL Fine]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
-
-+++
 
 ## Incorporare un modulo adattivo utilizzando il componente Forms adattivo - Incorpora(v2) {#embed-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
@@ -249,7 +243,7 @@ Per convertire un modulo adattivo nella pagina di AEM Sites in un frammento di e
 È possibile personalizzare le impostazioni avanzate del componente **[!UICONTROL Modulo adattivo - Incorpora(v2)]**. Nella finestra di dialogo **[!UICONTROL Modifica Forms adattivo - Incorpora]** puoi specificare quanto segue:
 
 * **Percorso risorsa**: seleziona un modulo adattivo da incorporare. Viene compilato automaticamente se viene rilasciato dal browser Assets.
-* **Invio Post**: selezionare l&#39;azione da attivare all&#39;invio del modulo. Puoi scegliere di visualizzare un messaggio di ringraziamento o una pagina di ringraziamento.
+* **Invio post** : seleziona l&#39;azione da attivare all&#39;invio del modulo. Puoi scegliere di visualizzare un messaggio di ringraziamento o una pagina di ringraziamento.
    * **Mostra messaggio di ringraziamento**: scrivi un messaggio utilizzando l&#39;editor Rich Text per visualizzarlo all&#39;invio del modulo. Questa opzione è disponibile solo quando si sceglie di visualizzare un messaggio di ringraziamento.
    * **Mostra pagina di ringraziamento**: sfoglia e seleziona la pagina da visualizzare all&#39;invio del modulo. Questa opzione è disponibile solo quando si sceglie di visualizzare una pagina di ringraziamento.
    * **Reindirizza alla pagina di ringraziamento**: abilita l&#39;opzione per sostituire la pagina contenente il modulo adattivo incorporato con la pagina di ringraziamento. In caso contrario, la pagina di ringraziamento sostituisce il modulo adattivo nel componente **[!UICONTROL Forms adattivo - Incorpora(v2)]**, senza aggiornare i siti sottostanti alla pagina. Questa opzione è disponibile solo quando si sceglie di visualizzare una pagina di ringraziamento.
