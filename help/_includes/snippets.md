@@ -2,7 +2,7 @@
 source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1371'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 # Snippet {#snippets}
@@ -233,11 +233,11 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
    * URL del sito web live. Ad esempio: `www.mydomain.com`.
    * URL del sito web di origine (URL `.hlx`).
 
-## L&#39;editor universale è da preferirsi all&#39;editor SPA {#ue-over-spa}
+## L’editor universale è da preferirsi all’editor SPA {#ue-over-spa}
 
 >[!IMPORTANT]
 >
->L’editor SPA rimane supportato da Adobe, ma gli editor preferiti per la gestione dei contenuti headless nell’AEM sono ora:
+>L’editor SPA rimane supportato da Adobe, ma gli editor preferiti per la gestione dei contenuti headless in AEM ora sono:
 >
 >* [Editor universale](/help/edge/wysiwyg-authoring/authoring.md) per la modifica visiva di contenuti headless.
->* [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo di contenuti headless.
+>* [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica di contenuti headless basata su modulo.

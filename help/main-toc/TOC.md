@@ -1260,7 +1260,7 @@ ht-degree: 99%
          + [Definizioni di modelli, campi e tipi di componenti](/help/implementing/universal-editor/field-types.md)
          + [App di esempio SecurBank](/help/implementing/universal-editor/securbank.md)
          + [Eventi](/help/implementing/universal-editor/events.md)
-         + [Filtraggio dei componenti](/help/implementing/universal-editor/filtering.md)
+         + [Filtrare i componenti](/help/implementing/universal-editor/filtering.md)
          + [Personalizzazione](/help/implementing/universal-editor/customizing.md)
          + [Architettura](/help/implementing/universal-editor/architecture.md)
          + [Autenticazione](/help/implementing/universal-editor/authentication.md)
