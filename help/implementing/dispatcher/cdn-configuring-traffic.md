@@ -4,9 +4,9 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: cb1581e96f1cfeadf6ee37cae4738d9d51177504
+source-git-commit: c57fba06f23fa57fbf26796e747bb76f6a7a4203
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -158,6 +158,7 @@ Nella tabella seguente sono illustrate le azioni disponibili.
 | **non impostato** | reqProperty | Rimuove un parametro di richiesta specificato (supportata solo la proprietà &quot;path&quot;) o un&#39;intestazione di richiesta, un parametro di query o un cookie da un determinato valore, che potrebbe essere un valore letterale stringa o un parametro di richiesta. |
 |         | var | Rimuove una variabile specificata. |
 |         | queryParamMatch | Rimuove tutti i parametri di query che corrispondono a un&#39;espressione regolare specificata. |
+|         | queryParamDoesNotMatch | Rimuove tutti i parametri di query che non corrispondono a un&#39;espressione regolare specificata. |
 | **trasformazione** | op:replace, (reqProperty o reqHeader o queryParam o reqCookie o var), match, replace | Sostituisce parte del parametro di richiesta (supportata solo la proprietà &quot;path&quot;), dell’intestazione di richiesta, del parametro di query, del cookie o della variabile con un nuovo valore. |
 |              | op:tolower, (reqProperty o reqHeader o queryParam o reqCookie o var) | Imposta sul valore minuscolo il parametro della richiesta (supportata solo la proprietà &quot;path&quot; ), l&#39;intestazione di richiesta, il parametro di query, il cookie o la variabile. |
 
@@ -449,7 +450,7 @@ redirects:
       action:
         type: redirect
         location:
-          reqProperty: path
+          reqProperty: url
           transform:
             - op: replace
               match: '^/(.*)$'
