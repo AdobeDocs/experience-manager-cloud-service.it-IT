@@ -4,14 +4,16 @@ description: Ulteriori informazioni sulla versione 2025.1.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 4ec2f22b399528f35c07a95d7487264149521338
+source-git-commit: f6c1aa32647bcabeb0781973f81b75c11edc6a5d
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 22%
+source-wordcount: '412'
+ht-degree: 19%
 
 ---
 
 # Note sulla versione 2025.1.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
+
+<!-- https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3389843928 -->
 
 Ulteriori informazioni sulla versione 2025.1.0 di Cloud Manager in AEM (Adobe Experience Manager) as a Cloud Service.
 
@@ -28,7 +30,7 @@ La prossima versione è pianificata per il venerdì 13 febbraio 2025.
 
 ## Novità {#what-is-new}
 
-* **Regole di qualità del codice:** il passaggio Qualità codice di Cloud Manager inizierà con SonarQube Server 9.9 con la versione 2025.2.0 di Cloud Manager, pianificata per giovedì 13 febbraio 2025.
+* **Regole di qualità del codice - Aggiornamento del server SonarQube:** il passaggio Qualità del codice di Cloud Manager inizierà a utilizzare SonarQube Server 9.9 con la versione 2025.2.0 di Cloud Manager, pianificata per giovedì 13 febbraio 2025.
 
 Per preparare, le regole SonarQube aggiornate sono ora disponibili in [Regole per la qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
 
@@ -56,6 +58,10 @@ Inoltre, impostare la variabile seguente per garantire che il passaggio di quali
       * Il runtime Java 21 viene distribuito durante la generazione con Java 17 o Java 21.
       * Il rollout graduale a tutti gli ambienti Cloud Manager inizia a febbraio per le sandbox e gli ambienti di sviluppo e si estende agli ambienti di produzione in aprile.
       * I clienti che creano con Java 11 e desiderano adottare il runtime Java 21 *precedente* possono contattare Adobe all&#39;indirizzo [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+
+* **&quot;Configurazioni CDN&quot; rinominate &quot;Mappature dominio&quot;:** Come parte dei miglioramenti dell&#39;interfaccia utente in AEM Cloud Manager, l&#39;etichetta &quot;Configurazioni CDN&quot; è ora rinominata &quot;Mappature dominio&quot; per migliorare l&#39;allineamento terminologico con le funzionalità. <!-- CMGR-64738 -->
+
+  ![&quot;Configurazioni CDN&quot; rinominate &quot;Mapping dominio&quot; nell&#39;interfaccia utente](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
 
 <!-- ## Early adoption program {#early-adoption}
