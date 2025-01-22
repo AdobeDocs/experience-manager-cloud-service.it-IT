@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 30d128c914b1eea19fb324f6587a364da3ebba1d
 workflow-type: tm+mt
-source-wordcount: '4421'
-ht-degree: 67%
+source-wordcount: '4384'
+ht-degree: 65%
 
 ---
 
@@ -21,9 +21,11 @@ ht-degree: 67%
 
 Scopri le regole di qualità del codice personalizzato di Cloud Manager, basate sulle best practice di Adobe Experience Manager Engineering, per garantire codice di alta qualità tramite test approfonditi. Vedi anche [test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md).
 
->[!NOTE]
+Le regole SonarQube complete non sono disponibili per il download a causa di informazioni proprietarie di Adobe. È possibile scaricare l&#39;elenco completo delle *regole correnti* [utilizzando questo collegamento](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Continua a leggere questo documento per descrizioni ed esempi delle regole.
+
+>[!IMPORTANT]
 >
->Le regole SonarQube complete non sono disponibili per il download a causa di informazioni proprietarie di Adobe. È possibile scaricare l’elenco completo delle regole [utilizzando questo collegamento](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Continua a leggere questo documento per descrizioni ed esempi delle regole.
+>A partire da giovedì 13 febbraio 2025 (Cloud Manager 2025.2.0), la qualità del codice di Cloud Manager utilizzerà una versione aggiornata di SonarQube 9.9 e un elenco aggiornato di regole che è possibile [scaricare qui](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
 
 >[!NOTE]
 >
@@ -187,7 +189,7 @@ public void orDoThis () {
 ### Chiudere sempre gli oggetti ResourceResolver {#resourceresolver-objects-should-always-be-closed}
 
 * **Chiave**: CQRules:CQBP-72
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: importante
 * **Da**: versione 2018.4.0
 
@@ -229,7 +231,7 @@ public void orDoThis(Session session) throws Exception {
 ### Non utilizzare i percorsi Sling Servlet per registrare i Servlet {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **Chiave**: CQRules:CQBP-75
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: importante
 * **Da**: versione 2018.4.0
 
@@ -249,7 +251,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### Le eccezioni rilevate devono essere registrate o generate, non entrambe {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **Chiave**: CQRules:CQBP-44---CatchAndEitherLogOrThrow
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2018.4.0
 
@@ -291,7 +293,7 @@ public void orDoThis() throws MyCustomException {
 ### Evitare le istruzioni di registro immediatamente seguite da un’istruzione di generazione {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **Chiave**: CQRules:CQBP-44---ConsecutivelyLogAndThrow
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2018.4.0
 
@@ -317,7 +319,7 @@ public void doThis() throws Exception {
 ### Evita la registrazione a INFO durante la gestione delle richieste GET o HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **Chiave**: CQRules:CQBP-44---LogInfoInGetOrHeadRequests
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 
 In generale, il livello di registro INFO deve essere utilizzato per delimitare azioni importanti e, per impostazione predefinita, Experience Manager è configurato per registrare a livello INFO o superiore. I metodi GET e HEAD devono essere sempre di sola lettura e non costituiscono pertanto azioni importanti. È probabile che la registrazione a livello INFO in risposta alle richieste GET o HEAD generi un notevole disturbo nel registro, rendendo così più difficile identificare le informazioni utili nei file di log. Quando gestisci le richieste di GET o HEAD, registra a livello di WARN o ERROR in caso di errori. Utilizzare i livelli DEBUG o TRACE se sono necessarie informazioni dettagliate sulla risoluzione dei problemi.
@@ -345,7 +347,7 @@ public void doGet() throws Exception {
 ### Non utilizzare Exception.getMessage() come primo parametro di un&#39;istruzione di registrazione {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **Chiave**: CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2018.4.0
 
@@ -378,7 +380,7 @@ public void doThis() {
 ### La registrazione dei blocchi catch deve essere a livello WARN o ERROR {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **Chiave**: CQRules:CQBP-44---WrongLogLevelInCatchBlock
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2018.4.0
 
@@ -411,7 +413,7 @@ public void doThis() {
 ### Non stampare le tracce dello stack sulla console {#do-not-print-stack-traces-to-the-console}
 
 * **Chiave**: CQRules:CQBP-44---ExceptionPrintStackTrace
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2018.4.0
 
@@ -444,7 +446,7 @@ public void doThis() {
 ### Non trasmettere a output standard o errore standard {#do-not-output-to-standard-output-or-standard-error}
 
 * **Chiave**: CQRules:CQBP-44—LogLevelConsolePrinters
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2018.4.0
 
@@ -477,7 +479,7 @@ public void doThis() {
 ### Evitare app e percorsi libs hardcoded {#avoid-hardcoded-apps-and-libs-paths}
 
 * **Chiave**: CQRules:CQBP-71
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2018.4.0
 
@@ -502,7 +504,7 @@ public void doThis(Resource resource) {
 ### Non utilizzare lo Sling Scheduler {#sonarqube-sling-scheduler}
 
 * **Chiave**: CQRules:AMSCORE-554
-* **Tipo**: code smell/compatibilità con Cloud Service
+* **Tipo**: Compatibilità `Code Smell`/Cloud Service
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
@@ -513,7 +515,7 @@ Per ulteriori informazioni sulla gestione dei processi Sling in ambienti cluster
 ### Non utilizzare API obsolete di Experience Manager {#sonarqube-aem-deprecated}
 
 * **Chiave**: AMSCORE-553
-* **Tipo**: code smell/compatibilità con Cloud Service
+* **Tipo**: Compatibilità `Code Smell`/Cloud Service
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
@@ -800,7 +802,7 @@ Simile alla regola [I pacchetti non devono contenere duplicati delle configurazi
 ### La modalità di authoring predefinita non deve essere interfaccia classica {#oakpal-default-authoring}
 
 * **Chiave**: ClassicUIAuthoringMode
-* **Tipo**: code smell/compatibilità con Cloud Service
+* **Tipo**: Compatibilità `Code Smell`/Cloud Service
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
@@ -809,7 +811,7 @@ La configurazione OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 ### I componenti con finestre di dialogo devono avere finestre di dialogo per l’interfaccia touch {#oakpal-components-dialogs}
 
 * **Chiave**: ComponentWithOnlyClassicUIDialog
-* **Tipo**: code smell/compatibilità con Cloud Service
+* **Tipo**: Compatibilità `Code Smell`/Cloud Service
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
@@ -824,7 +826,7 @@ La documentazione sugli strumenti di modernizzazione di Experience Manager forni
 ### I pacchetti non devono contenere un mix di contenuti mutabili e immutabili {#oakpal-packages-immutable}
 
 * **Chiave**: ImmutableMutableMixedPackage
-* **Tipo**: code smell/compatibilità con Cloud Service
+* **Tipo**: Compatibilità `Code Smell`/Cloud Service
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
@@ -839,7 +841,7 @@ Per ulteriori informazioni, consulta [Struttura dei progetti Experience Manager]
 ### Non utilizzare agenti di replica inversa {#oakpal-reverse-replication}
 
 * **Chiave**: ReverseReplication
-* **Tipo**: code smell/compatibilità con Cloud Service
+* **Tipo**: Compatibilità `Code Smell`/Cloud Service
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
@@ -892,7 +894,7 @@ Lo strumento di migrazione nell’[archivio GitHub di Assets Experience Manager 
 ### È preferibile utilizzare modelli modificabili rispetto ai modelli statici {#oakpal-static-template}
 
 * **Chiave**: StaticTemplateUsage
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
@@ -903,7 +905,7 @@ La migrazione da modelli statici a modificabili può essere in gran parte automa
 ### L’utilizzo dei componenti di base precedenti è sconsigliato {#oakpal-usage-legacy}
 
 * **Chiave**: LegacyFoundationComponentUsage
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
@@ -914,7 +916,7 @@ I componenti Foundation legacy (ovvero i componenti in `/libs/foundation`) sono 
 ### Utilizza solo i nomi e l’ordine delle modalità di esecuzione supportati {#oakpal-supported-runmodes}
 
 * **Chiave**: SupportedRunmode
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
@@ -923,7 +925,7 @@ Experience Manager as a Cloud Service applica un criterio di denominazione rigor
 ### I nodi di definizione dell’indice di ricerca personalizzato devono essere nodi secondari diretti di `/oak:index` {#oakpal-custom-search}
 
 * **Chiave**: OakIndexLocation
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
@@ -932,7 +934,7 @@ Experience Manager as a Cloud Service richiede che le definizioni dell’indice 
 ### I nodi di definizione dell’indice di ricerca personalizzato devono avere una compatVersion di 2 {#oakpal-custom-search-compatVersion}
 
 * **Chiave**: IndexCompatVersion
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
@@ -941,7 +943,7 @@ Experience Manager as a Cloud Service richiede che nelle definizioni dell’indi
 ### I nodi discendenti dei nodi di definizione dell’indice di ricerca personalizzato devono essere di tipo `nt:unstructured `{#oakpal-descendent-nodes}
 
 * **Chiave**: IndexDescendantNodeType
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
@@ -950,7 +952,7 @@ Experience Manager as a Cloud Service richiede che nelle definizioni dell’indi
 ### I nodi di definizione dell’indice di ricerca personalizzato devono contenere un nodo secondario denominato indexRules con elementi secondari {#oakpal-custom-search-index}
 
 * **Chiave**: IndexRulesNode
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
@@ -959,7 +961,7 @@ Un nodo di definizione dell&#39;indice di ricerca personalizzato definito corret
 ### I nodi di definizione dell’indice di ricerca personalizzato devono rispettare le convenzioni di denominazione {#oakpal-custom-search-definitions}
 
 * **Chiave**: IndexName
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
@@ -977,7 +979,7 @@ Experience Manager as a Cloud Service richiede che le definizioni dell’indice 
 ### I nodi di definizione dell’indice di ricerca personalizzato non devono contenere una proprietà denominata seed {#oakpal-property-name-seed}
 
 * **Chiave**: IndexSeedProperty
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
@@ -986,7 +988,7 @@ Experience Manager as a Cloud Service non consente che le definizioni dell’ind
 ### I nodi di definizione dell’indice di ricerca personalizzato non devono contenere una proprietà denominata reindex {#oakpal-reindex-property}
 
 * **Chiave**: IndexReindexProperty
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
@@ -1031,7 +1033,7 @@ Cloud Service. Per ulteriori informazioni, consulta il documento [Ricerca e indi
 ### Se la definizione dell&#39;indice di ricerca personalizzato contiene `compatVersion`, deve essere impostata su 2 {#oakpal-compatVersion}
 
 * **Chiave**: IndexCompatVersion
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: importante
 * **Da**: versione 2022.1.0
 
@@ -1039,7 +1041,7 @@ Cloud Service. Per ulteriori informazioni, consulta il documento [Ricerca e indi
 ### Il nodo indice che specifica `includedPaths` deve specificare anche `queryPaths` con gli stessi valori {#oakpal-included-paths-without-query-paths}
 
 * **Chiave**: IndexIncludedPathsWithoutQueryPaths
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2023.1.0
 
@@ -1048,7 +1050,7 @@ Per gli indici personalizzati, configurare `includedPaths` e `queryPaths` con va
 ### Il nodo indice che specifica `nodeScopeIndex` nel tipo di nodo generico deve specificare anche `includedPaths` e `queryPaths` {#oakpal-full-text-on-generic-node-type}
 
 * **Chiave**: IndexFulltextOnGenericType
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2023.1.0
 
@@ -1094,7 +1096,7 @@ Il tipo di nodo `nt:base` può essere considerato &quot;generico&quot; perché t
 ### La proprietà queryLimitReads del motore di query non deve essere sostituita {#oakpal-query-limit-reads}
 
 * **Chiave**: OverrideOfQueryLimitReads
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2023.1.0
 
@@ -1103,7 +1105,7 @@ L’override del valore predefinito può rallentare le letture delle pagine, in 
 ### Più versioni attive dello stesso indice {#oakpal-multiple-active-versions}
 
 * **Chiave**: IndexDetectMultipleActiveVersionsOfSameIndex
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2023.1.0
 
@@ -1130,7 +1132,7 @@ L’override del valore predefinito può rallentare le letture delle pagine, in 
 ### Il nome delle definizioni di indice completamente personalizzate deve essere conforme alle linee guida ufficiali {#oakpal-fully-custom-index-name}
 
 * **Chiave**: IndexValidFullyCustomName
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2023.1.0
 
@@ -1191,7 +1193,7 @@ Se la proprietà analizzata non è impostata in modo esplicito, il relativo valo
 ### Proprietà Tags {#tags-property}
 
 * **Chiave**: IndexHasValidTagsProperty
-* **Tipo**: code smell
+* **Tipo**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2023.1.0
 
