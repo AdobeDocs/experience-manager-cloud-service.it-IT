@@ -6,7 +6,7 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 2c70f7aec042c384cd37985877954b627d95879e
+source-git-commit: 7654289713246e894388bcd9bfa995248aeb3c38
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 30%
@@ -90,7 +90,7 @@ WYSIWYG Authoring fornisce interfacce WYSIWYG (Universal Editor e Adaptive Forms
 
 ### Connettore da AEM Forms a Marketo
 
-Il connettore da AEM Forms a Marketo colma il divario tra i moduli web (Adaptive Forms) generati con Adobe Experience Manager (AEM) e la piattaforma di automazione marketing Marketo.
+Il connettore [da AEM Forms a Marketo](/help/forms/integrate-adaptive-form-with-marketo-engage.md) colma il divario tra i moduli web (Adaptive Forms) generati con Adobe Experience Manager (AEM) e la piattaforma di automazione marketing Marketo.
 
 Quando qualcuno invia un modulo sul tuo sito web creato con AEM Adaptive Forms, il connettore assicura che i dati inviati vengano inviati automaticamente a Marketo. Questo elimina la necessità di inserire manualmente i dati e riduce il rischio di errori.
 
