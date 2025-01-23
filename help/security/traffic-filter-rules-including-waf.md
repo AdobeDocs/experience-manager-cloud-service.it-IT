@@ -4,10 +4,10 @@ description: Configurazione delle regole del filtro del traffico, incluse le reg
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 1b4c427a36ee26522e9da499156f78276e099bd0
+source-git-commit: f2616fb8f27d4f966243c3a43abedcc46ceff477
 workflow-type: tm+mt
-source-wordcount: '4037'
-ht-degree: 99%
+source-wordcount: '4053'
+ht-degree: 98%
 
 ---
 
@@ -184,7 +184,7 @@ Un gruppo di condizioni è composto da più condizioni semplici e/o da condizion
 
 | **Proprietà** | **Tipo** | **Descrizione** |
 |---|---|---|
-| reqProperty | `string` | Proprietà richiesta.<br><br>Una di:<br><ul><li>`path`: restituisce il percorso completo di un URL senza i parametri di query. (utilizza `pathRaw` per la variante senza escape)</li><li>`url`: restituisce l&#39;URL completo, inclusi i parametri di query. (utilizza `urlRaw` per la variante senza escape)</li><li>`queryString`: restituisce la parte di query di un URL</li><li>`method`: restituisce il metodo HTTP utilizzato nella richiesta.</li><li>`tier`: restituisce uno tra `author`, `preview` o `publish`.</li><li>`domain`: restituisce la proprietà del dominio (come definito nell’intestazione `Host`) in minuscolo</li><li>`clientIp`: restituisce l’IP del client.</li><li>`clientCountry`: restituisce un codice di due lettere ([simbolo indicatore regionale](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) che identifica il paese in cui si trova il client.</li></ul> |
+| reqProperty | `string` | Proprietà richiesta.<br><br>Una di:<br><ul><li>`path`: restituisce il percorso completo di un URL senza i parametri di query. (utilizza `pathRaw` per la variante senza escape)</li><li>`url`: restituisce l&#39;URL completo, inclusi i parametri di query. (utilizza `urlRaw` per la variante senza escape)</li><li>`queryString`: restituisce la parte di query di un URL</li><li>`method`: restituisce il metodo HTTP utilizzato nella richiesta.</li><li>`tier`: restituisce uno tra `author`, `preview` o `publish`.</li><li>`domain`: restituisce la proprietà del dominio (come definito nell’intestazione `Host`) in minuscolo</li><li>`clientIp`: restituisce l’IP del client.</li><li>`forwardedDomain`: restituisce il primo dominio definito nell&#39;intestazione `X-Forwarded-Host` in minuscolo</li><li>`forwardedIp`: restituisce il primo IP nell&#39;intestazione `X-Forwarded-For`.</li><li>`clientCountry`: restituisce un codice di due lettere ([simbolo indicatore regionale](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) che identifica il paese in cui si trova il client.</li></ul> |
 | reqHeader | `string` | Restituisce l’intestazione di richiesta con il nome specificato |
 | queryParam | `string` | Restituisce il parametro di query con il nome specificato |
 | reqCookie | `string` | Restituisce il cookie con il nome specificato |
