@@ -4,9 +4,9 @@ description: Scopri le nozioni di base del caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: fc555922139fe0604bf36dece27a2896a1a374d9
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2924'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Define DISABLE_DEFAULT_CACHING
 
 Questo metodo è utile, ad esempio, quando la logica di business richiede l’ottimizzazione dell’intestazione age (con un valore basato sul giorno del calendario) perché per impostazione predefinita l’intestazione age è impostata su 0. Detto questo, **fai attenzione quando disattivi la memorizzazione nella cache predefinita.**
 
-* può essere ignorato per tutto il contenuto HTML/Text definendo la variabile `EXPIRATION_TIME` in `global.vars` utilizzando gli strumenti Dispatcher dell&#39;SDK di AEM as a Cloud Service.
+* può essere sovrascritto per tutto il contenuto HTML/Text definendo la variabile `EXPIRATION_TIME` in `global.vars` utilizzando gli strumenti AEM as a Cloud Service SDK Dispatcher.
 * può essere ignorato a un livello più granulare, incluso il controllo indipendente della CDN e della cache del browser, con le seguenti direttive Apache `mod_headers`:
 
   ```
@@ -43,7 +43,7 @@ Questo metodo è utile, ad esempio, quando la logica di business richiede l’ot
   ```
 
   >[!NOTE]
-  >L’intestazione Surrogate-Control si applica alla rete CDN gestita dall’Adobe. Se utilizzi una [rete CDN gestita dal cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN), potrebbe essere necessaria un&#39;intestazione diversa a seconda del provider CDN in uso.
+  >L’intestazione Surrogate-Control si applica alla rete CDN gestita da Adobe. Se utilizzi una [rete CDN gestita dal cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN), potrebbe essere necessaria un&#39;intestazione diversa a seconda del provider CDN in uso.
 
   Presta attenzione quando imposti intestazioni di controllo cache globale o intestazioni di cache simili che corrispondono a un’ampia regola, in modo che non vengano applicate a contenuti che devono essere mantenuti privati. Valuta l’utilizzo di più direttive per garantire che le regole vengano applicate in modo granulare. Detto questo, AEM as a Cloud Service rimuove l’intestazione della cache se rileva che è stata applicata a ciò che rileva come non memorizzabile in cache da Dispatcher, come descritto nella documentazione di Dispatcher. Per forzare l&#39;AEM ad applicare sempre le intestazioni di memorizzazione in cache, è possibile aggiungere l&#39;opzione **`always`** come segue:
 
@@ -231,7 +231,7 @@ Per informazioni sul download dei registri CDN e sull&#39;analisi del rapporto d
 
 ### Comportamento richiesta HEAD {#request-behavior}
 
-Quando si riceve una richiesta HEAD nel CDN di Adobe per una risorsa **non** memorizzata nella cache, la richiesta viene trasformata e ricevuta dall&#39;istanza di Dispatcher e/o AEM come richiesta GET. Se la risposta è memorizzabile in cache, le richieste HEAD successive vengono servite dalla rete CDN. Se la risposta non è memorizzabile in cache, le richieste HEAD successive vengono passate all&#39;istanza Dispatcher, AEM o entrambe, per un periodo di tempo che dipende dal TTL `Cache-Control`.
+Quando si riceve una richiesta HEAD in Adobe CDN per una risorsa **non** memorizzata nella cache, la richiesta viene trasformata e ricevuta dall&#39;istanza di Dispatcher e/o AEM come richiesta GET. Se la risposta è memorizzabile in cache, le richieste HEAD successive vengono servite dalla rete CDN. Se la risposta non è memorizzabile in cache, le richieste HEAD successive vengono passate all&#39;istanza Dispatcher, AEM o entrambe, per un periodo di tempo che dipende dal TTL `Cache-Control`.
 
 ### Parametri della campagna di marketing {#marketing-parameters}
 
@@ -240,12 +240,24 @@ Gli URL del sito web includono spesso parametri della campagna di marketing util
 Per gli ambienti creati a ottobre 2023 o versioni successive, per memorizzare in cache meglio le richieste, la rete CDN rimuoverà i parametri di query comuni relativi al marketing, in particolare quelli che corrispondono al seguente pattern regex:
 
 ```
-^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid|msclkid|ttclid)$
 ```
 
-Invia un ticket di supporto se desideri disabilitare questo comportamento.
+Questa funzionalità può essere attivata e disattivata utilizzando un flag `requestTransformations` nella [configurazione CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
-Per gli ambienti creati prima di ottobre 2023, si consiglia di configurare la proprietà `ignoreUrlParams` della configurazione di Dispatcher; vedere [Configurazione di Dispatcher - Ignorare i parametri URL](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+Ad esempio, per interrompere la rimozione dei parametri di marketing al livello CDN 1, è necessario distribuire `removeMarketingParams: false` utilizzando una configurazione contenente la sezione seguente.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev", "stage", "prod"]
+data:
+  requestTransformations:
+    removeMarketingParams: false
+```
+
+Se la funzionalità `removeMarketingParams` è disabilitata a livello CDN, è comunque consigliabile configurare la proprietà `ignoreUrlParams` della configurazione Dispatcher. Vedere [Configurazione di Dispatcher - Ignorare i parametri URL](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 Esistono due possibilità per ignorare i parametri di marketing. (dove il primo è preferito per ignorare il busting della cache tramite parametri di query):
 
@@ -260,7 +272,7 @@ Nell&#39;esempio seguente solo i parametri `page` e `product` non vengono ignora
 }
 ```
 
-1. Consenti tutti i parametri eccetto quelli di marketing. Il file [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) definisce un elenco di parametri di marketing di uso comune che verranno ignorati. L&#39;Adobe non aggiornerà questo file. Può essere esteso dagli utenti a seconda dei provider di marketing.
+1. Consenti tutti i parametri eccetto quelli di marketing. Il file [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) definisce un elenco di parametri di marketing di uso comune che verranno ignorati. Adobe non aggiornerà questo file. Può essere esteso dagli utenti a seconda dei provider di marketing.
 
 ```
 /ignoreUrlParams {
@@ -285,7 +297,7 @@ Quando l’istanza Publish riceve una nuova versione di una pagina o di una riso
 
 ## Annullamento esplicito della validità della cache di Dispatcher {#explicit-invalidation}
 
-L’Adobe consiglia di fare affidamento sulle intestazioni di cache standard per controllare il ciclo di vita della distribuzione dei contenuti. Tuttavia, se necessario, è possibile annullare la validità del contenuto direttamente in Dispatcher.
+Adobe consiglia di fare affidamento sulle intestazioni di cache standard per controllare il ciclo di vita della distribuzione dei contenuti. Tuttavia, se necessario, è possibile annullare la validità del contenuto direttamente in Dispatcher.
 
 L’elenco seguente contiene scenari in cui potresti voler invalidare esplicitamente la cache (mentre facoltativamente stai in ascolto del completamento dell’invalidazione):
 
@@ -459,7 +471,7 @@ public class InvalidatedHandler implements EventHandler {
 
 >[!NOTE]
 >
->Il CDN di Adobe non viene scaricato quando Dispatcher viene invalidato. La rete CDN gestita dall’Adobe rispetta i TTL e quindi non è necessario scaricarla.
+>Quando Dispatcher viene invalidato, il CDN di Adobe non viene scaricato. La rete CDN gestita da Adobe rispetta i TTL e quindi non è necessario scaricarla.
 
 ### API di replica {#replication-api}
 
@@ -518,7 +530,7 @@ Quando vengono rilasciate in produzione le nuove versioni delle librerie, le pag
 
 Il meccanismo alla base di questa funzionalità è un hash serializzato, che viene aggiunto al collegamento della libreria client. Garantisce un URL univoco con versione affinché il browser possa memorizzare in cache i file CSS/JS. L’hash serializzato viene aggiornato solo quando cambia il contenuto della libreria client. Ciò significa che se si verificano aggiornamenti non correlati (ovvero, nessuna modifica ai css/js sottostanti della libreria client) anche con una nuova distribuzione, il riferimento rimane lo stesso. A sua volta, assicura meno interruzioni alla cache del browser.
 
-### Abilitazione delle versioni Longcache delle librerie lato client - Quickstart dell’SDK di AEM as a Cloud Service {#enabling-longcache}
+### Abilitazione delle versioni Longcache delle librerie lato client: AEM as a Cloud Service SDK Quickstart {#enabling-longcache}
 
 Le inclusioni clientlib predefinite in una pagina HTML hanno un aspetto simile al seguente:
 
@@ -534,10 +546,10 @@ Quando è abilitato il controllo rigoroso delle versioni di clientlib, viene agg
 
 Il controllo delle versioni rigorose di clientlib è abilitato per impostazione predefinita in tutti gli ambienti AEM as a Cloud Service.
 
-Per abilitare il controllo rigoroso delle versioni clientlib nel Quickstart dell’SDK locale, effettua le seguenti operazioni:
+Per abilitare il controllo rigoroso delle versioni di clientlib in SDK Quickstart locale, eseguire le operazioni seguenti:
 
 1. Passa a Gestione configurazione OSGi `<host>/system/console/configMgr`
-1. Trova la configurazione OSGi, ad Adobe Granite HTML Library Manager:
+1. Trova la configurazione OSGi per Adobe Granite HTML Library Manager:
    * Seleziona la casella di controllo per abilitare il controllo delle versioni rigorose
    * Nel campo con etichetta **Chiave cache lato client a lungo termine**, immetti il valore di /.*;hash
 1. Salva le modifiche. Non è necessario salvare questa configurazione nel controllo del codice sorgente perché AEM as a Cloud Service la abilita automaticamente negli ambienti di sviluppo, stage e produzione.
