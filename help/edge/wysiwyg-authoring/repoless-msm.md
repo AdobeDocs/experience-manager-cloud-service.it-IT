@@ -4,9 +4,9 @@ description: Scopri i consigli sulle best practice per impostare un progetto in 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 42218450ab03201c69c59053f720954183f4b652
+source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1261'
 ht-degree: 2%
 
 ---
@@ -112,6 +112,10 @@ In questo esempio verrà creato il sito `wknd-ch` per la presenza svizzera di WK
    * La configurazione di `code` deve essere la stessa utilizzata per la creazione iniziale del progetto.
    * `content` > `source` > `url` deve essere adattato al nome del nuovo sito che stai creando. In questo esempio è `wknd-ch`.
    * Ad esempio, il nome del sito nell&#39;URL di POST e `content` > `source` > `url` devono essere uguali.
+   * Adattare il blocco `admin` per definire gli utenti che devono disporre di accesso amministrativo completo al sito.
+      * Si tratta di un array di indirizzi e-mail.
+      * È possibile utilizzare il carattere jolly `*`.
+      * Per ulteriori informazioni, vedere il documento [Configurazione dell&#39;autenticazione per gli autori](https://www.aem.live/docs/authentication-setup-authoring#default-roles).
 
    ```text
    curl --request POST \
@@ -138,7 +142,7 @@ In questo esempio verrà creato il sito `wknd-ch` per la presenza svizzera di WK
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
