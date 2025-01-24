@@ -4,10 +4,10 @@ description: Ulteriori informazioni sulla versione 2025.1.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
+source-git-commit: 9850a52626c2bd80f7528931d23691dff1dd3eb2
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 11%
+source-wordcount: '811'
+ht-degree: 10%
 
 ---
 
@@ -80,6 +80,17 @@ La prossima versione è pianificata per il venerdì 13 febbraio 2025.
 * **Supporto avanzato per i siti Edge Delivery Services:** Cloud Manager ora supporta l&#39;onboarding per i siti Edge Delivery Services più recenti. Questo aggiornamento include un refactoring completo della rete CDN e dello stack di consegna, che migliora la robustezza e la manutenibilità.
 
 * **Aggiornamento anticipato del programma Adopter - Supporto della convalida PR per Bitbucket e GitLab:** Cloud Manager ora supporta la convalida della richiesta di pull (PR) per le versioni Cloud e self-hosted di Bitbucket e GitLab. Questa funzione consente ai clienti di testare le modifiche al codice in base alle soglie di qualità del codice di Adobe prima di unire una PR. Garantendo una qualità del codice più elevata prima dell’unione, questo miglioramento migliora in modo significativo la percentuale di modifiche del codice nelle pipeline di produzione, riducendo i tempi di commercializzazione e semplificando i flussi di lavoro di sviluppo.
+
+* **Opzioni di filtro avanzate per le pipeline:** Cloud Manager ora include opzioni di filtro avanzate nella pagina Pipeline, che consentono di accedere rapidamente ai dati rilevanti e migliorare l&#39;efficienza della distribuzione. Alcune delle caratteristiche principali includono:
+
+   * **Filtro con più criteri:** Affina i risultati della ricerca con filtri quali il nome della pipeline, l&#39;ambiente e il codice di distribuzione.
+   * **Ricerca semplificata delle pipeline:** Individua facilmente pipeline specifiche per velocizzare la navigazione e migliorare la gestione del flusso di lavoro.
+
+  Nel complesso, questi miglioramenti rendono la gestione e l’implementazione delle pipeline più efficienti e di facile utilizzo.
+
+  ![Funzionalità filtri pipeline](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
+
+* **Configurazione CDN self-service per il servizio Edge Delivery:** I nuovi utenti che utilizzano il servizio Edge Delivery ora possono configurare la propria rete CDN in modo indipendente tramite Cloud Manager. Questo aggiornamento estende il supporto da `.hlx.page/live` al nuovo `.aem.page/live`, fornendo maggiore flessibilità e una configurazione semplificata per gli utenti.
 
 
 <!-- ## Early adoption program {#early-adoption}
