@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 3d9ad70351bfdedb6d81e90d9d193fac3088a3ec
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 22%
+source-wordcount: '1025'
+ht-degree: 19%
 
 ---
 
@@ -40,7 +40,7 @@ Cloud Manager offre strumenti self-service per installare e gestire i certificat
 
 | | Modello | Descrizione |
 | --- | --- | --- |
-| A | **[Adobe di certificato SSL gestito (DV)](#adobe-managed)** | Cloud Manager consente agli utenti di configurare i certificati DV (Domain Validation) forniti da Adobe per la configurazione rapida del dominio. |
+| A | **[Adobe certificato SSL gestito (DV)](#adobe-managed)** | Cloud Manager consente agli utenti di configurare i certificati DV (Domain Validation) forniti da Adobe per una configurazione rapida del dominio. |
 | B | **[Certificato SSL gestito dal cliente (OV/EV)](#customer-managed)** | Cloud Manager offre un servizio di piattaforma TLS (Transport Layer Security) che consente di gestire i certificati SSL OV ed EV di tua proprietà e le chiavi private di autorità di certificazione terze, ad esempio *Crittografiamo*. |
 
 Entrambi i modelli offrono le seguenti funzionalità generali per la gestione dei certificati:
@@ -53,7 +53,7 @@ Entrambi i modelli offrono le seguenti funzionalità generali per la gestione de
 >
 >[Per aggiungere e associare un dominio personalizzato a un ambiente](/help/implementing/cloud-manager/custom-domain-names/introduction.md), è necessario disporre di un certificato SSL valido relativo al dominio.
 
-### Adobe di certificati SSL gestiti (DV) {#adobe-managed}
+### Certificati SSL gestiti (DV) da Adobe {#adobe-managed}
 
 I certificati DV rappresentano il livello di base della certificazione SSL e vengono spesso utilizzati per scopi di test o per proteggere i siti Web con crittografia di base. I certificati DV sono disponibili sia nei [programmi di produzione che nei programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
@@ -73,20 +73,47 @@ OV ed EV offrono inoltre queste funzioni sui certificati DV in Cloud Manager.
 >
 >Se disponi di più domini personalizzati, potresti non voler caricare un certificato ogni volta che aggiungi un nuovo dominio. In tal caso, potresti trarre vantaggio dall’ottenimento di un singolo certificato che copre più domini.
 
->[!NOTE]
->
->Se due certificati coprono lo stesso dominio, viene applicato quello più esatto.
->
->Ad esempio, se il dominio è `dev.adobe.com` e si dispone di un certificato per `*.adobe.com` e un altro per `dev.adobe.com`, verrà utilizzato quello più specifico (`dev.adobe.com`).
-
 #### Requisiti per i certificati SSL OV/EV gestiti dal cliente {#requirements}
 
 Se scegli di aggiungere un certificato OV/EV SSL gestito dal cliente, questo deve soddisfare i seguenti requisiti:
 
-* AEM as a Cloud Service accetta certificati conformi ai criteri OV (convalida organizzazione) o EV (convalida estesa).
+* Il certificato deve essere conforme ai criteri OV (convalida organizzazione) o EV (convalida estesa).
    * Cloud Manager non supporta l&#39;aggiunta di certificati DV (Domain Validation) personalizzati.
+* I certificati autofirmati non sono supportati.
 * Qualsiasi certificato deve essere un certificato TLS X.509 di un’autorità di certificazione attendibile con una chiave privata RSA a 2048 bit corrispondente.
-* I certificati autofirmati non sono accettati.
+
+#### Best practice per la gestione dei certificati
+
+* **Evitare la sovrapposizione dei certificati:**
+
+   * Per garantire una gestione fluida dei certificati, evita di distribuire certificati sovrapposti che corrispondono allo stesso dominio. Ad esempio, l’utilizzo di un certificato con caratteri jolly (*.example.com) insieme a un certificato specifico (dev.example.com) può causare confusione.
+   * Il livello TLS dà priorità al certificato più specifico e distribuito di recente.
+
+  Scenari di esempio:
+
+   * &quot;Dev Certificate&quot; copre `dev.example.com` e viene distribuito come mapping di dominio per `dev.example.com`.
+   * &quot;Il certificato dello staging&quot; copre `stage.example.com` e viene distribuito come mapping di dominio per `stage.example.com`.
+   * Se &quot;Stage Certificate&quot; viene distribuito/aggiornato *dopo* &quot;Dev Certificate&quot;, vengono inviate anche le richieste per `dev.example.com`.
+
+     Per evitare tali conflitti, assicurati che i certificati abbiano un ambito preciso per i domini a cui sono destinati.
+
+* **Certificati con caratteri jolly:**
+
+  I certificati con caratteri jolly (ad esempio `*.example.com`) sono supportati, ma devono essere utilizzati solo quando necessario. In caso di sovrapposizione, prevale il certificato più specifico. Ad esempio, il certificato specifico serve `dev.example.com` invece del carattere jolly (`*.example.com`).
+
+* **Convalida e risoluzione dei problemi:**
+Prima di tentare di installare un certificato con Cloud Manager, Adobe consiglia di convalidare l&#39;integrità del certificato a livello locale utilizzando strumenti quali `openssl`. Ad esempio,
+
+  `openssl verify -untrusted intermediate.pem certificate.pem`
+
+
+<!--
+>[!NOTE]
+>
+>If two certificates cover the same domain are installed, the one that is more exact is applied.
+>
+>For example, if your domain is `dev.adobe.com` and you have one certificate for `*.adobe.com` and another for `dev.adobe.com`, the more specific one (`dev.adobe.com`) is used.
+-->
 
 #### Formato dei certificati gestiti dal cliente {#certificate-format}
 
@@ -112,13 +139,9 @@ Converti i certificati in formato diverso da PEM con i seguenti comandi `openssl
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
->[!TIP]
->
->L&#39;Adobe consiglia di convalidare localmente l&#39;integrità del certificato utilizzando uno strumento quale `openssl verify -untrusted intermediate.pem certificate.pem` prima di tentare l&#39;installazione tramite Cloud Manager.
-
 ## Limitazione del numero di certificati SSL installati {#limitations}
 
-In qualsiasi momento, Cloud Manager consente un massimo di 50 certificati SSL installati. Questi certificati possono essere associati a uno o più ambienti nel programma e includere anche eventuali certificati scaduti.
+In qualsiasi momento, Cloud Manager supporta fino a 50 certificati installati. Questi certificati possono essere associati a uno o più ambienti nel programma e includere anche eventuali certificati scaduti.
 
 Se hai raggiunto il limite, rivedi i certificati e prendi in considerazione l’eliminazione di eventuali certificati scaduti. Oppure, raggruppa più domini nello stesso certificato poiché un certificato può coprire più domini (fino a 100 SAN).
 
