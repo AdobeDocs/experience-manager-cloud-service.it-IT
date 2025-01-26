@@ -5,7 +5,7 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 4f2dcb02c3ad00ef9735679d8bd4cce568bfabb5
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 1%
@@ -100,7 +100,7 @@ Per configurare il servizio Invio di Forms con Google Sheets o Microsoft Excel, 
 > * Condividi il foglio `incoming` con Adobe Experience Manager `forms@adobe.com` e concedi l&#39;accesso di modifica.
 > * Visualizza l&#39;anteprima e pubblica il foglio `incoming` nella barra laterale.
 
-Per informazioni su come formattare la richiesta POST per la configurazione del foglio, consulta la [documentazione API](https://main--afb--adobe.hlx.page/docs/index.html#/paths/~1%7Bid%7D/post). Osserva l’esempio fornito di seguito:
+Per informazioni su come formattare la richiesta POST per la configurazione del foglio, consulta la [documentazione API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). Osserva l’esempio fornito di seguito:
 
 Puoi utilizzare strumenti come curl o Postman per eseguire questa richiesta POST, come mostrato di seguito.
 
