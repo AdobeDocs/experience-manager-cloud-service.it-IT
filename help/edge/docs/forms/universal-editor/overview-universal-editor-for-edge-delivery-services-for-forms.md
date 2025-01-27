@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 9d5950793f5b3e3c3d6229b9de9d5c020a164dd7
+source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '958'
 ht-degree: 13%
 
 ---
@@ -149,7 +149,7 @@ L’Editor universale fornisce i seguenti componenti di modulo pronti all’uso:
 <table>
   <thead>
     <tr>
-      <th>Bello</th> 
+      <th></th> 
       <th>Componenti del modulo</th>
       <th>Descrizione</th>
     </tr>
