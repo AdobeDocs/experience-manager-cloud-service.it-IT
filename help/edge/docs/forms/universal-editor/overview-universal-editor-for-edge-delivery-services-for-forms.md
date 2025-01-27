@@ -1,14 +1,14 @@
 ---
-title: Panoramica di Edge Delivery Services per AEM Forms
-description: Edge Delivery Services per AEM Forms progettati per garantire prestazioni di picco, che consentono di immaginare il futuro della raccolta dati semplificata e del coinvolgimento degli utenti.
+title: Editor universale per Edge Delivery Services per Forms (blocco Forms EDS)
+description: Utilizzare Universal Editor for Edge Delivery Services for Forms (blocco EDS Forms) per creare Forms adattivo.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b9364394f683fa8af5d28723e5f10b20b001ea37
+source-git-commit: 9d5950793f5b3e3c3d6229b9de9d5c020a164dd7
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 14%
+source-wordcount: '959'
+ht-degree: 13%
 
 ---
 
@@ -21,9 +21,7 @@ Con Universal Editor, gli utenti possono utilizzare gli elementi modulo (come ca
 
 L&#39;editor universale è specificamente focalizzato sui Edge Delivery Services (EDS). Il punto di forza di Universal Editor risiede nel suo solido set di funzioni, che include funzionalità avanzate di creazione dei moduli, modifica dinamica delle regole e integrazione perfetta con varie sorgenti di dati. Gli utenti possono progettare rapidamente moduli dinamici utilizzando componenti predefiniti, modelli personalizzabili e un’ampia libreria di elementi modulo.
 
-![Editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){{width=50%, align-center}}
-
-
+![Editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=50%, align-center}
 
 Le funzionalità di Universal Editor sono state progettate con attenzione per mantenere un rendering lato client leggero, la compatibilità tra browser diversi e la rigorosa aderenza agli standard di accessibilità.
 
@@ -40,17 +38,17 @@ Le funzionalità di Universal Editor sono state progettate con attenzione per ma
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="Interfaccia WYSIWYG" alt="Editor regole">
     <h3>Editor regole</h3>
-    <p>Progetta moduli reattivi che si adattino facilmente ai diversi dispositivi. Visualizza in anteprima e verifica i progetti per desktop, tablet e dispositivi mobili utilizzando la modalità reattiva.</p>
+    <p>L’editor di regole consente agli utenti di creare interazioni di moduli dinamici utilizzando regole basate su eventi, convalida immediata e gestione degli errori tramite lightweight JavaScript e JSON.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Interfaccia WYSIWYG" alt="Invia azioni">
+    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="Interfaccia WYSIWYG" alt="Modalità reattiva">
     <h3>Modalità reattiva </h3>
-    <p>Progetta moduli che si adattino perfettamente ai diversi dispositivi (desktop, tablet e dispositivi mobili). Utilizza la modalità reattiva per visualizzare in anteprima il modulo per schermi di varie dimensioni.</p>
+    <p>Progetta moduli che si adattino perfettamente ai diversi dispositivi (desktop, tablet e dispositivi mobili). Utilizza la modalità reattiva per visualizzare in anteprima e testare i moduli per diverse dimensioni di schermo.</p>
   </div>
 </div>
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG Interface alt= Interfaccia" WYSIWYG Interface"> 
+    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="WYSIWYG Interface alt= Interfaccia" WYSIWYG Interface"> 
     <h3>Personalizzazione</h3>
     <p>Personalization utilizza i dati utente per fornire esperienze di modulo personalizzate, regolando dinamicamente il contenuto, il layout o le opzioni in base alle preferenze dell’utente.</p>
   </div>
@@ -60,9 +58,9 @@ Le funzionalità di Universal Editor sono state progettate con attenzione per ma
     <p>Il test A/B (sperimentazione) consente alle organizzazioni di sperimentare diverse progettazioni di moduli, layout e funzionalità per identificare le varianti con le prestazioni migliori.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/task-management.svg" alt="Interfaccia WYSIWYG" alt="Invia azioni">
+    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Interfaccia WYSIWYG" alt="Integrazione con Adobe Workfront">
     <h3> Gestione attività </h3>
-    <p>L’integrazione con Adobe Workfront consente ai team di gestire le attività di creazione e manutenzione dei moduli, garantendo una collaborazione fluida e flussi di lavoro semplificati.</p>
+    <p>L’integrazione con Adobe Workfront consente ai team di gestire le attività di creazione e manutenzione dei moduli, garantendo flussi di lavoro semplificati.</p>
   </div>
 </div>
 
@@ -75,12 +73,12 @@ Le funzionalità di Universal Editor sono state progettate con attenzione per ma
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="Interfaccia WYSIWYG" alt="Associazione dei dati">
     <h3>Associazione dei dati</h3>
-    <p>L'associazione dati consente connessioni dirette tra campi modulo e origini dati back-end, supportando aggiornamenti in tempo reale e mappatura avanzata dei dati.</p>
+    <p>L'associazione dati consente connessioni dirette tra i campi modulo e le origini dati back-end, supporta gli aggiornamenti in tempo reale e la mappatura avanzata dei dati per l'archiviazione strutturata dei dati dei reclami.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="Interfaccia WYSIWYG" alt="Internazionalizzazione/localizzazione">
     <h3>Pubblicazione/Annullamento della pubblicazione</h3>
-    <p>È possibile controllare facilmente la visibilità dei moduli, pubblicandoli o annullandone la pubblicazione con pochi clic per gestire in modo dinamico la disponibilità, l'accesso degli utenti e gli aggiornamenti dei contenuti.</p>
+    <p>È possibile controllare facilmente la visibilità dei moduli, pubblicarli o annullarne la pubblicazione con pochi clic per gestire dinamicamente la disponibilità e gli aggiornamenti dei contenuti.</p>
   </div>
 </div>
 
@@ -91,7 +89,7 @@ Le funzionalità di Universal Editor sono state progettate con attenzione per ma
     <p>Ottieni informazioni sul comportamento degli utenti, sulle interazioni dei moduli e sulle percentuali di invio con analisi e tracciamento integrati per abilitare l’ottimizzazione dei moduli basati sui dati.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interfaccia WYSIWYG" alt="Sperimentazione (Test A/B)">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Interfaccia WYSIWYG" alt="Invia azioni">
     <h3>Invia azioni</h3>
     <p>Le azioni di invio supportano l’integrazione back-end, la logica di invio condizionale, gli endpoint sicuri e i preprocessori, semplificando i flussi di lavoro di invio.</p>
   </div>
@@ -286,7 +284,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## Onboarding
 
-Per abilitare l’editor universale e l’editor di regole per il tuo ambiente o per richiedere funzioni aggiuntive come Forms Portal, Document of Record, l’integrazione di Adobe Sign o il supporto per la lingua da destra a sinistra, invia una e-mail a mailto:aem-forms-ea@adobe.com dal tuo indirizzo ufficiale insieme alla richiesta.
+Per abilitare l&#39;editor universale e l&#39;editor di regole per il tuo ambiente o per richiedere funzionalità aggiuntive come Forms Portal, Document of Record, Adobe Sign Integration o supporto per la lingua da destra a sinistra, invia una e-mail a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) dal tuo indirizzo ufficiale insieme alla richiesta.
 
 
 
