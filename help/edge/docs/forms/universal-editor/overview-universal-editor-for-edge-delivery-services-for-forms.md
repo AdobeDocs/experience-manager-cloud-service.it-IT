@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 64270a0d3b65ac327b14826117631deeb749c95f
+source-git-commit: 60998217ea7d3d9c426975510b433308b0ddea14
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 14%
+source-wordcount: '939'
+ht-degree: 15%
 
 ---
 
@@ -17,13 +17,15 @@ ht-degree: 14%
 
 L’Editor universale è progettato per aiutare i creatori di contenuti e gli autori di moduli a creare, gestire e modificare facilmente i moduli. Offre un&#39;esperienza di editing semplice, visiva ed efficiente incentrata sui Edge Delivery Services (EDS).
 
-Con Universal Editor, gli utenti possono utilizzare gli elementi modulo (come campi di testo, caselle di controllo e pulsanti di scelta) per creare moduli in un&#39;interfaccia What You See Is What You Get (WYSIWYG). Questo approccio rende la creazione di moduli intuitiva e accessibile, anche per chi non dispone di competenze tecniche.
+Con Universal Editor, gli utenti possono utilizzare gli elementi modulo (come campi di testo, caselle di controllo e pulsanti di scelta) per creare moduli in un&#39;interfaccia What You See Is What You Get (WYSIWYG). L’approccio WYSIWYG rende la creazione di moduli intuitiva e accessibile, anche per chi non dispone di competenze tecniche.
+
+L&#39;editor universale è specificamente focalizzato sui Edge Delivery Services (EDS). Il punto di forza di Universal Editor risiede nel suo solido set di funzioni, che include funzionalità avanzate di creazione dei moduli, modifica dinamica delle regole e integrazione perfetta con varie sorgenti di dati. Gli utenti possono progettare rapidamente moduli dinamici utilizzando componenti predefiniti, modelli personalizzabili e un’ampia libreria di elementi modulo.
 
 ![Editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
 
-Universal Editor consente ai creatori di contenuti e agli autori di moduli di creare, gestire e modificare i moduli in modo semplice ed efficiente. Questo editor è specificamente focalizzato sui Edge Delivery Services (EDS).
 
-Il punto di forza di Universal Editor risiede nel suo solido set di funzioni, che include funzionalità avanzate di creazione dei moduli, modifica dinamica delle regole e integrazione perfetta con varie sorgenti di dati. Gli utenti possono progettare rapidamente moduli dinamici utilizzando componenti predefiniti, modelli personalizzabili e un’ampia libreria di elementi modulo. Queste funzionalità sono state progettate con attenzione per mantenere un rendering lato client leggero, la compatibilità tra browser diversi e la rigorosa aderenza agli standard di accessibilità.
+
+Le funzionalità di Universal Editor sono state progettate con attenzione per mantenere un rendering lato client leggero, la compatibilità tra browser diversi e la rigorosa aderenza agli standard di accessibilità.
 
 ## Caratteristiche principali di Universal Editor per EDS Forms
 
@@ -36,7 +38,7 @@ Il punto di forza di Universal Editor risiede nel suo solido set di funzioni, ch
  </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interfaccia WYSIWYG" alt="Editor regole">
+    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="Interfaccia WYSIWYG" alt="Editor regole">
     <h3>Editor regole</h3>
     <p>Progetta moduli reattivi che si adattino facilmente ai diversi dispositivi. Visualizza in anteprima e verifica i progetti per desktop, tablet e dispositivi mobili utilizzando la modalità reattiva.</p>
   </div>
@@ -53,12 +55,12 @@ Il punto di forza di Universal Editor risiede nel suo solido set di funzioni, ch
     <p>Personalization utilizza i dati utente per fornire esperienze di modulo personalizzate, regolando dinamicamente il contenuto, il layout o le opzioni in base alle preferenze dell’utente.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interfaccia WYSIWYG" alt="Editor regole">
+    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="Interfaccia WYSIWYG" alt="Editor regole">
     <h3>Test A/B</h3>
     <p>Il test A/B (sperimentazione) consente alle organizzazioni di sperimentare diverse progettazioni di moduli, layout e funzionalità per identificare le varianti con le prestazioni migliori.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interfaccia WYSIWYG" alt="Invia azioni">
+    <img src="/help/edge/docs/forms/universal-editor/assets/task-management.svg" alt="Interfaccia WYSIWYG" alt="Invia azioni">
     <h3> Gestione attività </h3>
     <p>L’integrazione con Adobe Workfront consente ai team di gestire le attività di creazione e manutenzione dei moduli, garantendo una collaborazione fluida e flussi di lavoro semplificati.</p>
   </div>
@@ -76,7 +78,7 @@ Il punto di forza di Universal Editor risiede nel suo solido set di funzioni, ch
     <p>L'associazione dati consente connessioni dirette tra campi modulo e origini dati back-end, supportando aggiornamenti in tempo reale e mappatura avanzata dei dati.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interfaccia WYSIWYG" alt="Internazionalizzazione/localizzazione">
+    <img src="/help/edge/docs/forms/universal-editor/assets/localization.svg" alt="Interfaccia WYSIWYG" alt="Internazionalizzazione/localizzazione">
     <h3>Pubblicazione/Annullamento della pubblicazione</h3>
     <p>È possibile controllare facilmente la visibilità dei moduli, pubblicandoli o annullandone la pubblicazione con pochi clic per gestire in modo dinamico la disponibilità, l'accesso degli utenti e gli aggiornamenti dei contenuti.</p>
   </div>
@@ -84,7 +86,7 @@ Il punto di forza di Universal Editor risiede nel suo solido set di funzioni, ch
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interfaccia WYSIWYG" alt="Analytics e tracciamento">
+    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Interfaccia WYSIWYG" alt="Analytics e tracciamento">
     <h3>Analytics e tracciamento</h3>
     <p>Ottieni informazioni sul comportamento degli utenti, sulle interazioni dei moduli e sulle percentuali di invio con analisi e tracciamento integrati per abilitare l’ottimizzazione dei moduli basati sui dati.</p>
   </div>
@@ -113,23 +115,11 @@ Il punto di forza di Universal Editor risiede nel suo solido set di funzioni, ch
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interfaccia WYSIWYG" alt="Componenti personalizzati">
-    <h3>Componenti personalizzati</h3>
-    <p>I componenti personalizzati consentono agli sviluppatori di estendere le funzionalità dei moduli creando elementi univoci personalizzati per casi d’uso specifici a livello organizzativo.
+    <h3>Configurazione di ringraziamento</h3>
+    <p>Personalizzare facilmente il messaggio di riconoscimento o la pagina mostrata agli utenti dopo l'invio corretto del modulo.
     </p>
   </div>
 </div>
-
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interfaccia WYSIWYG" alt="Configurazione di ringraziamento">
-    <h3>Configurazione di ringraziamento</h3>
-    <p>Personalizzare facilmente il messaggio di riconoscimento o la pagina mostrata agli utenti dopo l'invio corretto del modulo.</p>
-  </div>
-    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interfaccia WYSIWYG" alt="Invia azioni">
-    <h3>Invia azioni</h3>
-    <p>Le azioni di invio facilitano i flussi di lavoro di invio dei moduli con l’integrazione back-end e le connessioni di endpoint sicure.</p>
-  </div>
 </div>
 
 
