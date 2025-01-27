@@ -4,10 +4,10 @@ description: Creare moduli potenti più rapidamente utilizzando fogli di calcolo
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 79%
+source-wordcount: '873'
+ht-degree: 80%
 
 ---
 
@@ -19,7 +19,7 @@ Dopo aver [creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/c
 * [Abilitare manualmente il foglio di calcolo per accettare i dati](#manually-enable-the-spreadsheet-to-accept-data)
 * [Utilizza le API di amministrazione per abilitare un foglio di calcolo ad accettare i dati](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
-![Ecosistema di authoring basato su documenti](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+![Ecosistema di authoring basato sul documento](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 
 <!--
@@ -27,9 +27,6 @@ Dopo aver [creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/c
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
 -->
-
-È possibile [configurare il servizio di invio di Forms manualmente](#configuring-the-forms-submission-service-manually) o [configurare il servizio di invio di Forms utilizzando l&#39;API](#configuring-the-forms-submission-service-using-api).
-
 
 ## Abilitare manualmente il foglio di calcolo per accettare i dati
 
