@@ -4,10 +4,10 @@ description: Scopri come aggiungere un archivio esterno in Cloud Manager. Cloud 
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 9d58d9342a8c0337b1fa0c80b40f1cf6d07c2eee
+source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 94%
+source-wordcount: '740'
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,7 @@ Scopri come aggiungere un archivio esterno in Cloud Manager. Cloud Manager suppo
 
 >[!NOTE]
 >
->Questa funzionalità è disponibile solo per [il programma di adozione anticipata](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
+>Questa funzione è disponibile solo tramite il programma di adozione anticipata. Per ulteriori dettagli e per iscriverti come utente iniziale, consulta [Porta il tuo Git, ora con supporto per GitLab e Bitbucket](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket).
 
 ## Configurare un archivio esterno
 
