@@ -4,10 +4,10 @@ description: Scopri le attività di manutenzione in AEM as a Cloud Service e com
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 30%
+source-wordcount: '2043'
+ht-degree: 31%
 
 ---
 
@@ -27,7 +27,7 @@ Nelle versioni precedenti di AEM, era possibile configurare le attività di manu
 
 >[!CAUTION]
 >
->Adobe si riserva il diritto di sovrascrivere le impostazioni di configurazione di un’attività di manutenzione del cliente per attenuare problemi come il degrado delle prestazioni.
+>Adobe si riserva il diritto di sovrascrivere le impostazioni di configurazione delle attività di manutenzione di un cliente per attenuare problemi quali il degrado delle prestazioni.
 
 Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
 
@@ -85,7 +85,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <td>Cliente</td>
     <td>
     <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
-    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà appropriate. Visualizza l'elenco delle <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">proprietà OSGi</a> per <b>Configurazione rimozione progetti Adobi</b>.</p>
+    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà appropriate. Visualizza l'elenco delle <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">proprietà OSGi</a> per <b>Configurazione eliminazione progetti Adobe</b>.</p>
   </td>
   </tr>
   </tbody>
@@ -267,7 +267,7 @@ Tieni presente che affinché la configurazione sia valida:
 * tutte le proprietà devono essere definite. Non sono presenti valori predefiniti ereditati.
 * devono essere rispettati i tipi (interi, stringhe, booleani, ecc.) nelle tabelle delle proprietà sottostanti.
 
-**4** - Creare una pipeline di configurazione in Cloud Manager, come descritto nell&#39;articolo della pipeline di configurazione [.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Le sandbox e gli ambienti di sviluppo rapido (RDE) non supportano l&#39;eliminazione.
+**4** - Crea una pipeline di configurazione in Cloud Manager, come descritto nell&#39;articolo della pipeline di configurazione [config.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
 
 ### Pulizia delle versioni {#version-purge}
 

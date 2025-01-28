@@ -4,9 +4,9 @@ description: Scopri come inoltrare i registri ai fornitori di accesso in AEM as 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
+source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1985'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ I clienti con una licenza di un fornitore di registrazione o che ospitano un pro
 * HTTPS
 * Splunk
 
-L’inoltro dei registri viene configurato in modo self-service dichiarando una configurazione in Git e distribuendola tramite la pipeline di configurazione Cloud Manager ai tipi di ambiente RDE, dev, stage e produzione nei programmi di produzione (non sandbox).
+L’inoltro dei registri viene configurato in modo self-service dichiarando una configurazione in Git e può essere distribuito tramite pipeline di configurazione Cloud Manager ai tipi di ambiente di sviluppo, staging e produzione. Il file di configurazione può essere distribuito negli ambienti di sviluppo rapido (RDE) utilizzando gli strumenti della riga di comando.
 
 È disponibile un’opzione per instradare i registri AEM e Apache/Dispatcher tramite l’infrastruttura di rete avanzata dell’AEM, ad esempio l’IP in uscita dedicato.
 
