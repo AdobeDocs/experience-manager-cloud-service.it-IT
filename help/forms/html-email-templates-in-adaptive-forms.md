@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -43,10 +43,13 @@ Prima di procedere, assicurati di aver caricato il modello di HTML nell’ambien
 1. Apri il modulo adattivo per la modifica.
 1. Vai a **Browser contenuti**, seleziona il **Contenitore guida**, quindi tocca l&#39;icona delle proprietà. Verrà visualizzata una finestra di dialogo con il titolo `Adaptive Form Container`.
 1. Vai alla scheda **Invio** e seleziona l&#39;azione di invio **Invia e-mail**.
+
+   ![Invia azione di invio e-mail](/help/forms/assets/send-email-action.png)
+
 1. Abilita l&#39;opzione **Usa modello esterno**.
 1. Abilita l&#39;opzione **Usa modello HTML**.
 1. Fai clic sull’icona della cartella per l’opzione Percorso modello esterno e sfoglia per selezionare il modello di HTML.
-1. Fai clic su Fine per salvare la configurazione.
+1. Fai clic su **Fine** per salvare la configurazione.
 
 Il modello di HTML è ora configurato per il modulo adattivo.
 
@@ -55,7 +58,6 @@ Il modello di HTML è ora configurato per il modulo adattivo.
 1. Apri il modulo adattivo per la modifica.
 1. Vai a **Browser contenuti**, seleziona il **Contenitore guida**, quindi tocca l&#39;icona delle proprietà. Verrà visualizzata una finestra di dialogo con il titolo `Adaptive Form Container`.
 1. Vai alla scheda **Invio** e seleziona l&#39;azione di invio **Invia e-mail**.
-1. Abilita l&#39;opzione **Usa modello esterno**.
 1. Abilita l&#39;opzione **Usa modello HTML**.
 1. Digita o incolla il codice HTML direttamente nella casella **Modello e-mail** fornita.
 
@@ -149,8 +151,6 @@ Di seguito è riportato un esempio di modello di e-mail di testo normale:
     Best regards,
     Your Team
 ```
-
-Sostituisci i segnaposto (${name}, ${email}, ecc.) con i nomi dei campi modulo corrispondenti nel modulo adattivo.
 
 ## Best practice per i modelli e-mail per HTML
 
