@@ -4,7 +4,7 @@ description: Utilizza i temi del modulo adattivo per applicare uno stile e forni
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -13,7 +13,9 @@ ht-degree: 1%
 
 # Creazione e utilizzo di temi {#creating-and-using-themes}
 
-<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+>[!NOTE]
+>
+> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base.
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -41,7 +43,7 @@ Viene avviata una procedura guidata per creare un tema.
 
 1. Specifica un modulo per visualizzare in anteprima il tema nel campo **[!UICONTROL Anteprima predefinita per questo tema]**. Fare clic su **[!UICONTROL Usa predefinito]** per utilizzare il modulo predefinito per visualizzare l&#39;anteprima del tema.
 
-1. Specificare un **[!UICONTROL contenitore configurazione]**. Puoi scegliere un **[!UICONTROL Contenitore configurazione]** che contiene i dettagli di configurazione del tipo di carattere di Adobe per il tuo account. Puoi anche lasciare vuota l&#39;opzione per il momento e specificare i dettagli in seguito da [proprietà tema](#metadata-of-a-theme).
+1. Specificare un **[!UICONTROL contenitore configurazione]**. Puoi scegliere un **[!UICONTROL Contenitore configurazione]** che contiene i dettagli di configurazione di Adobe Font per il tuo account. Puoi anche lasciare vuota l&#39;opzione per il momento e specificare i dettagli in seguito da [proprietà tema](#metadata-of-a-theme).
 
 1. Fai clic su **[!UICONTROL Crea]** e quindi su **[!UICONTROL Modifica]** per aprire il tema nell&#39;Editor temi, oppure fai clic su **[!UICONTROL Fine]** per tornare alla pagina dei temi.
 

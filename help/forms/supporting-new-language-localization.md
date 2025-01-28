@@ -4,7 +4,7 @@ description: Per Adaptive Forms, puoi aggiungere lingue per più lingue oltre a 
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 1%
@@ -13,7 +13,9 @@ ht-degree: 1%
 
 # Supporto di nuove lingue per la localizzazione di Forms adattivi {#supporting-new-locales-for-adaptive-forms-localization}
 
-<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+>[!NOTE]
+>
+> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base.
 
 
 | Versione | Collegamento articolo |
@@ -156,7 +158,7 @@ Ottieni una [libreria client di esempio](/help/forms/assets/locale-support-sampl
 
 ## Procedure consigliate per il supporto della nuova localizzazione {#best-practices}
 
-* L’Adobe consiglia di creare un progetto di traduzione dopo la creazione di un modulo adattivo.
+* Adobe consiglia di creare un progetto di traduzione dopo la creazione di un modulo adattivo.
 
 * Quando vengono aggiunti nuovi campi in un modulo adattivo esistente:
    * **Per la traduzione automatica**: ricreare il dizionario ed eseguire il progetto di traduzione. I campi aggiunti a un modulo adattivo dopo la creazione di un progetto di traduzione rimangono non tradotti.

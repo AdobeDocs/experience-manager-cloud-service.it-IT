@@ -4,7 +4,7 @@ description: AEM Forms fornisce esempi di temi, modelli e modelli di dati per mo
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 4%
@@ -19,7 +19,9 @@ ht-degree: 4%
 | Modulo adattivo basato su componenti core | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
 | Modulo adattivo basato su componenti di base | Questo articolo |
 
-<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+>[!NOTE]
+>
+> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base.
 
 AEM Forms as a Cloud Service fornisce più temi di riferimento, modelli e modelli di dati dei moduli (FDM) per aiutarti a iniziare rapidamente a creare un Forms adattivo. È possibile scaricare il [pacchetto di contenuti di riferimento dal portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) e utilizzare [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) per installare il [pacchetto di contenuti di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) nell&#39;ambiente di produzione, sviluppo o sviluppo locale per ottenere queste risorse di riferimento nel proprio ambiente.
 
@@ -119,7 +121,7 @@ Il Forms adattivo può quindi interagire con i server Microsoft Dynamics 365 e S
 
 * Scrivere dati in Microsoft Dynamics 365 e Salesforce all’invio di moduli adattivi.
 * Scrivere dati in Microsoft Dynamics 365 e Salesforce tramite entità personalizzate definite in Form Data Model (FDM) e viceversa.
-* Effettua query su Microsoft Dynamics 365 e server Salesforce per dati e precompila Forms adattivo.
+* Eseguire una query su Microsoft Dynamics 365 e Salesforce Server per dati e precompilare Adaptive Forms.
 * Leggi i dati da Microsoft Dynamics 365 e dal server Salesforce.
 
 È possibile ottenere il seguente modello dati modulo installando il [pacchetto di contenuto di riferimento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/it/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
@@ -127,7 +129,7 @@ Il Forms adattivo può quindi interagire con i server Microsoft Dynamics 365 e S
 * Microsoft® Dynamics 365
 * Salesforce
 
-Per informazioni sull&#39;utilizzo di questi modelli, vedere [Configurare Microsoft Dynamics 365 e i servizi cloud Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+Per informazioni sull&#39;utilizzo di questi modelli, vedere [Configurare Microsoft Dynamics 365 e Salesforce Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
 
 
 ## Consulta anche {#see-also}
