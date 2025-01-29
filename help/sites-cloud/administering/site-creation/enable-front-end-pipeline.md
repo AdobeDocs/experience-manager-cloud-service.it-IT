@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 45%
+source-wordcount: '625'
+ht-degree: 39%
 
 ---
 
@@ -66,3 +66,14 @@ Ora il tuo sito è pronto per utilizzare la pipeline front-end. Per ulteriori in
 * [Utilizzo della barra Sito per gestire il tema del sito](site-rail.md)
 * [Percorso di Creazione Rapida dei Siti](/help/journey-sites/quick-site/overview.md): questo percorso di documentazione offre una panoramica del processo di distribuzione di un sito tramite la pipeline front-end e lo strumento di Creazione Rapida dei Siti.
 * [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end): questo documento descrive la pipeline front-end nel contesto dei livelli pipeline full-stack e web.
+
+## Pipeline front-end e domini personalizzati {#custom-domains}
+
+Come descritto nella sezione [Dettagli tecnici](#technical-details), l&#39;attivazione della funzione Pipeline front-end per un sito crea un nodo `SiteConfig` e `HtmlPageItemsConfig` sotto `/conf/<site-name>/sling:configs`.
+
+Se si desidera utilizzare la funzionalità [Domini personalizzati di Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/introduction.md) per il sito insieme alla pipeline front-end, è necessario aggiungere proprietà aggiuntive a questi nodi.
+
+1. Impostare la proprietà `customFrontendPrefix` in `SiteConfig` per il sito.
+1. Il valore `prefixPath` di `HtmlPageItemsConfig` viene aggiornato con il dominio personalizzato.
+
+Le pagine del sito fanno quindi riferimento agli artefatti del tema da tale URL aggiornato.
