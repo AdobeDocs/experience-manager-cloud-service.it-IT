@@ -4,10 +4,10 @@ description: Ulteriori informazioni sulla versione 2025.1.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
+source-git-commit: 17f6c359a0396c3ee68b43d0140d637856f7f502
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -100,7 +100,7 @@ Per ulteriori informazioni su “Bring Your Own Git”, ora con supporto per Git
 
 * **Ambiente di test avanzato:** soluzione appositamente progettata per colmare il divario tra sviluppo e produzione. Personalizzato per le esigenze aziendali, questo ambiente replica le specifiche a livello di produzione per supportare test di accettazione utente (UAT) accurati e valutazioni approfondite delle prestazioni.
 
-Se ti interessa partecipare al programma Early Adopter, [completa questo modulo](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.it%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJoiMC4wLjAwMDAiLCJQIjoiV2luMzIi LCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserv=0) e inviaci un&#39;e-mail con i tuoi `OrgID` (dettagli da seguire).
+Se ti interessa partecipare al programma Early Adopter, [completa questo modulo](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.it%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJoiMC4wLjAwMDAiLCJQIjoiV2luMzIi LCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserv=0) e invia un&#39;e-mail a [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) con il tuo `OrgID`.
 
 
 
