@@ -3,23 +3,23 @@ title: Approvare le risorse in Experience Manager
 description: Scopri come approvare le risorse in [!DNL Experience Manager].
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 4%
+source-wordcount: '1115'
+ht-degree: 11%
 
 ---
 
 # Approva risorse in [!DNL Experience Manager]
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!AVAILABILITY]
 >
->La guida alle funzionalità di Dynamic Media con OpenAPI è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>La guida di Dynamic Media con funzionalità OpenAPI è ora disponibile in formato PDF. Scarica l’intera guida e utilizza l’Assistente IA di Adobe Acrobat per rispondere alle tue domande.
 >
->[!BADGE Guida di Dynamic Media con funzionalità OpenAPI PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE Guida di Dynamic Media con funzionalità OpenAPI - PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 I Brand Manager e gli addetti al marketing mantengono un controllo rigoroso sulle risorse del brand. È disponibile per l’uso solo la versione approvata e più recente della risorsa, che garantisce la coerenza del brand su tutti i canali e le applicazioni.
 
@@ -37,8 +37,19 @@ Prima di approvare una risorsa, devi effettuare un aggiornamento una tantum dell
 1. Seleziona lo schema metadati applicabile e fai clic su **[!UICONTROL Modifica]**. <br>Viene aperto l&#39;Editor modulo schema metadati **[!UICONTROL 2} con la scheda**[!UICONTROL  Base ]**evidenziata.]**
 1. Scorri verso il basso e fai clic su **[!UICONTROL Verifica stato]**.
 1. Fai clic sulla scheda **[!UICONTROL Regole]** nel pannello laterale destro.
-1. Deseleziona **[!UICONTROL Disattiva modifica]** e fai clic su **[!UICONTROL Salva]**.
+1. Deseleziona **[!UICONTROL Disabilita modifica]**.
 Se devi visualizzare la proprietà a cui è mappato il campo **[!UICONTROL Stato revisione]**, passa alla scheda **[!UICONTROL Impostazioni]** e visualizza il valore `./jcr:content/metadata/dam:status` nel campo **[!UICONTROL Mappa sulla proprietà]**.
+1. Trascina e rilascia un campo **[!UICONTROL A discesa]** dalla sezione **[!UICONTROL Genera modulo]** a destra alla sezione Metadati nel modulo.
+1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel pannello **[!UICONTROL Impostazioni]**:
+   1. Cambia l&#39;etichetta **[!UICONTROL Campo]** in _Destinazione approvazione_.
+   1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam:activationTarget_.
+   1. Aggiungere le scelte con `contenthub` e `delivery` come valori di opzione.
+
+   >[!NOTE]
+   >
+   Quando selezioni la destinazione di approvazione come Content Hub utilizzando la vista Assets, le risorse vengono rese disponibili in Content Hub agli utenti che fanno parte della stessa organizzazione. Quando selezioni un target di approvazione come Consegna, le risorse sono disponibili per tutti gli utenti.
+
+1. Fai clic su **[!UICONTROL Salva]**.
 
 >[!NOTE]
 >
@@ -50,7 +61,7 @@ Per approvare le risorse in [!DNL Experience Manager Admin view], eseguire la pr
 
 1. Seleziona le risorse e fai clic su **[!UICONTROL Proprietà]** nel riquadro superiore.
 1. Nella scheda **[!UICONTROL Base]**, scorri verso il basso fino a **[!UICONTROL Stato revisione]**.
-1. Cambia lo stato di revisione in **[!UICONTROL Approvato]**.
+1. Cambia lo stato revisione in **[!UICONTROL Approvato]**.
    ![immagine](/help/assets/assets/approve-old-ui.png)
 1. Fai clic su **[!UICONTROL Salva e chiudi]**.
 
@@ -74,6 +85,15 @@ Semplifica il flusso di lavoro approvando rapidamente più risorse contemporanea
    1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam:status_.
    1. Cambia il valore predefinito in _approvato_.
 
+1. Trascina e rilascia un campo **[!UICONTROL A discesa]** dalla sezione **[!UICONTROL Genera modulo]** a destra alla sezione Metadati nel modulo.
+1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel pannello **[!UICONTROL Impostazioni]**:
+   1. Cambia l&#39;etichetta **[!UICONTROL Campo]** in _Destinazione approvazione_.
+   1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam:activationTarget_.
+   1. Aggiungere le scelte con `contenthub` e `delivery` come valori di opzione.
+
+   >[!NOTE]
+   >
+   Quando selezioni la destinazione di approvazione come Content Hub utilizzando la vista Assets, le risorse vengono rese disponibili in Content Hub agli utenti che fanno parte della stessa organizzazione. Quando selezioni un target di approvazione come Consegna, le risorse sono disponibili per tutti gli utenti.
 1. Fai clic su **[!UICONTROL Salva]**.
 1. Nella pagina **[!UICONTROL Profili metadati]**, seleziona il profilo metadati appena creato.
 1. Fai clic su **[!UICONTROL Applica profilo metadati a cartelle]** nella barra delle azioni superiore.
@@ -88,9 +108,22 @@ Questo approccio approva le nuove risorse create nella cartella. Per le risorse 
 
 Allo stesso modo, per approvare in blocco le risorse all’interno di una cartella nella vista Assets:
 
-1. Seleziona le risorse e fai clic su **[!UICONTROL Modifica in blocco metadati]**.
+1. Seleziona le risorse e fai clic su **[!UICONTROL Modifica metadati in blocco]**.
 
 1. Seleziona **[!UICONTROL Approvato]** nel campo **[!UICONTROL Stato]** disponibile nella sezione [!UICONTROL Proprietà] nel riquadro di destra.
+
+   Se selezioni lo stato come `Approved` e se [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) o [Content Hub](/help/assets/product-overview.md) o entrambi sono abilitati per il tuo Experience Manager Assets, puoi visualizzare le opzioni `Delivery` e `Content Hub` disponibili nel campo **[!UICONTROL Destinazione approvazione]**.
+
+   * Seleziona **[!UICONTROL Consegna]** per rendere le risorse disponibili sia per Dynamic Media con funzionalità OpenAPI che per Content Hub. Se Content Hub non è abilitato, la selezione di questa opzione rende le risorse disponibili solo per Dynamic Media con funzionalità OpenAPI.
+   * Seleziona **[!UICONTROL Content Hub]** per rendere le risorse disponibili per Content Hub.
+
+   ![Stato approvazione](/help/assets/assets/approval-status-delivery.png)
+
+   Se non utilizzi il modulo metadati predefinito e non riesci a visualizzare il campo **[!UICONTROL Destinazione approvazione]**, [modifica il modulo metadati](/help/assets/metadata-assets-view.md#metadata-forms) per trascinare il campo **[!UICONTROL Approvazione per]** dai componenti disponibili nel modulo metadati e fai clic su **[!UICONTROL Salva]**.
+
+   >[!NOTE]
+   >
+   Se selezioni la destinazione di approvazione come `Content Hub` utilizzando la vista Assets all&#39;interno di un&#39;organizzazione, le risorse vengono rese disponibili in Content Hub agli utenti che fanno parte della stessa organizzazione.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
