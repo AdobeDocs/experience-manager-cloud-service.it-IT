@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 43%
+ht-degree: 93%
 
 ---
 
@@ -59,44 +59,44 @@ La prossima pubblicazione è pianificata per il 13 febbraio 2025.
       * Il rollout graduale a tutti gli ambienti Cloud Manager inizia a febbraio per le sandbox e gli ambienti di sviluppo e verrà esteso agli ambienti di produzione ad aprile.
       * La clientela che genera con Java 11 e desidera adottare il runtime di Java 21 *precedente* può contattare Adobe all’indirizzo [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
-* **&quot;Configurazioni CDN&quot; rinominate &quot;Mapping dominio&quot;:** Come parte dei miglioramenti dell&#39;interfaccia utente in AEM Cloud Manager, l&#39;etichetta &quot;Configurazioni CDN&quot; è ora rinominata &quot;Mapping dominio&quot;. Questa modifica migliora l’allineamento terminologico con la funzionalità. <!-- CMGR-64738 -->
+* **“Configurazioni CDN” rinominate “Mappature di dominio”:** come parte dei miglioramenti dell’interfaccia utente in AEM Cloud Manager, l’etichetta “Configurazioni CDN” è ora rinominata “Mappature di dominio”. Questa modifica migliora l’allineamento terminologico con la funzionalità. <!-- CMGR-64738 -->
 
   ![“Configurazioni CDN” rinominate “Mappature di dominio” nell’interfaccia utente](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
-* **Effettuare il provisioning di un sito Edge Delivery con un clic:** Cloud Manager consente ora agli utenti con le autorizzazioni e le licenze appropriate di creare un sito Edge Delivery Services di esempio con un solo clic. Questo processo semplificato offre le seguenti funzionalità automatizzate:
+* **Provisioning di un sito Edge Delivery con un clic:** Cloud Manager consente ora agli utenti con le autorizzazioni e le licenze appropriate di creare un sito Edge Delivery Services di esempio con un solo clic. Questo processo semplificato offre le seguenti funzionalità automatizzate:
 
-   * **Integrazione GitHub**: crea automaticamente un archivio GitHub all&#39;interno di un&#39;organizzazione esistente, preconfigurato con un modello standard per i Edge Delivery Services.
-   * **Installazione dell&#39;app di sincronizzazione del codice AEM** - Installa l&#39;applicazione di sincronizzazione del codice AEM nell&#39;archivio, garantendo la sincronizzazione e la distribuzione senza problemi.
-   * **Configurazione del Collaboration dei contenuti** - Collega una cartella di Google Drive designata per l&#39;archiviazione dei contenuti, fornendo un ambiente collaborativo per la gestione dei contenuti.
-   * **Pubblicazione dei contenuti** - Gli utenti possono ora pubblicare i contenuti per i siti con provisioning direttamente dall&#39;interfaccia utente di Cloud Manager, semplificando i flussi di lavoro e migliorando l&#39;efficienza.
-   * **Collaboration avanzato** - La piattaforma consente agli utenti di aggiungere più collaboratori alla cartella di archiviazione dei contenuti di Google Drive, semplificando il lavoro di squadra e i contributi ai contenuti.
+   * **Integrazione GitHub**: crea automaticamente, all’interno di un’organizzazione esistente, un archivio GitHub preconfigurato con un modello standard per Edge Delivery Services.
+   * **Installazione dell’app di sincronizzazione del codice AEM**: installa l’applicazione di sincronizzazione del codice AEM nell’archivio, garantendo la sincronizzazione e la distribuzione senza problemi.
+   * **Configurazione della collaborazione sui contenuti:** collega una cartella di Google Drive designata per l’archiviazione dei contenuti, fornendo un ambiente collaborativo per la relativa gestione.
+   * **Pubblicazione dei contenuti**: gli utenti possono ora pubblicare i contenuti per i siti con provisioning direttamente dall’interfaccia utente di Cloud Manager, semplificando i flussi di lavoro e migliorando l’efficienza.
+   * **Collaborazione avanzata**: la piattaforma consente agli utenti di aggiungere più collaboratori alla cartella di archiviazione dei contenuti di Google Drive, semplificando il lavoro di squadra e i contributi ai contenuti.
 
-  Questi miglioramenti mirano a migliorare l’automazione, semplificare i processi di configurazione e migliorare la collaborazione per gli utenti dei Edge Delivery Services. <!-- CMGR-59362 -->
+  Questi miglioramenti mirano ad aumentare l’automazione, semplificare i processi di configurazione e valorizzare la collaborazione degli utenti di Edge Delivery Services. <!-- CMGR-59362 -->
 
   ![Provisioning di un sito Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
 
-  ![Finestra di dialogo Provisioning sito Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+  ![Finestra di dialogo Provisioning del sito Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
 
-* **Supporto avanzato per i siti Edge Delivery Services:** Cloud Manager ora supporta l&#39;onboarding per i siti Edge Delivery Services più recenti. Questo aggiornamento include un refactoring completo della rete CDN e dello stack di consegna, che migliora la robustezza e la manutenibilità.
+* **Supporto avanzato per i siti Edge Delivery Services:** Cloud Manager ora supporta l’onboarding dei siti Edge Delivery Services più recenti. Questo aggiornamento include un refactoring completo della rete CDN e dello stack di consegna, migliorando la robustezza e la manutenibilità.
 
-* **Opzioni di filtro avanzate per le pipeline:** Cloud Manager ora include opzioni di filtro avanzate nella pagina Pipeline, che consentono di accedere rapidamente ai dati rilevanti e migliorare l&#39;efficienza della distribuzione. Alcune delle caratteristiche principali includono:
+* **Opzioni di filtro avanzate per le pipeline:** Cloud Manager ora nella pagina Pipeline include opzioni di filtro avanzate, che consentono di accedere rapidamente ai dati rilevanti e di migliorare l’efficienza della distribuzione. Alcune delle caratteristiche principali includono:
 
-   * **Filtro con più criteri:** Affina i risultati della ricerca con filtri quali il nome della pipeline, l&#39;ambiente e il codice di distribuzione.
-   * **Ricerca semplificata delle pipeline:** Individua facilmente pipeline specifiche per velocizzare la navigazione e migliorare la gestione del flusso di lavoro.
+   * **Filtro con più criteri:** affina i risultati della ricerca con filtri quali il nome della pipeline, l’ambiente e il codice di distribuzione.
+   * **Ricerca semplificata delle pipeline:** individua facilmente pipeline specifiche per velocizzare la navigazione e migliorare la gestione del flusso di lavoro.
 
   Nel complesso, questi miglioramenti rendono la gestione e l’implementazione delle pipeline più efficienti e di facile utilizzo.
 
   ![Funzionalità filtri pipeline](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
 
-* **Configurazione CDN self-service per il servizio Edge Delivery:** I nuovi utenti che utilizzano il servizio Edge Delivery ora possono configurare la propria rete CDN in modo indipendente tramite Cloud Manager. Questo aggiornamento estende il supporto da `.hlx.page/live` al nuovo `.aem.page/live`, fornendo maggiore flessibilità e una configurazione semplificata per gli utenti.
+* **Configurazione CDN self-service per il servizio Edge Delivery:** i nuovi utenti che utilizzano il servizio Edge Delivery ora possono configurare la propria rete CDN in modo indipendente tramite Cloud Manager. Questo aggiornamento estende il supporto da `.hlx.page/live` al nuovo `.aem.page/live`, fornendo maggiore flessibilità e una configurazione semplificata per gli utenti.
 
 ## Programma per i primi utilizzatori {#early-adoption}
 
 Partecipa al programma per i primi utilizzatori di Cloud Manger e concediti la possibilità di testare le prossime funzionalità.
 
-* **Aggiornamento anticipato del programma Adopter - Supporto della convalida PR per Bitbucket e GitLab:** Cloud Manager ora supporta la convalida della richiesta di pull (PR) per le versioni Cloud e self-hosted di Bitbucket e GitLab. Questa funzione consente ai clienti di testare le modifiche al codice in base alle soglie di qualità del codice di Adobe prima di unire una PR. Garantendo una qualità del codice più elevata prima dell’unione, questo miglioramento migliora in modo significativo la percentuale di modifiche del codice nelle pipeline di produzione, riducendo i tempi di commercializzazione e semplificando i flussi di lavoro di sviluppo.
+* **Aggiornamento del programma per i primi utilizzatori, supporto della convalida PR per Bitbucket e GitLab:** Cloud Manager ora supporta la convalida della richiesta di pull (PR) per le versioni Cloud e self-hosted di Bitbucket e GitLab. Questa funzionalità consente ai clienti di testare le modifiche al codice in base alle soglie di qualità del codice di Adobe prima di unire una PR. Garantendo una qualità del codice più elevata prima dell’unione, questo miglioramento aumenta in modo significativo la percentuale di modifiche del codice nelle pipeline di produzione, riducendo i tempi di commercializzazione e semplificando i flussi di lavoro di sviluppo.
 
-Per ulteriori informazioni su &quot;Bring Your Own Git&quot;, ora con supporto per GitLab e Bitbucket, e per iscriverti come utente con privilegi avanzati, consulta le [note sulla versione di ottobre 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
+Per ulteriori informazioni su “Bring Your Own Git”, ora con supporto per GitLab e Bitbucket, e per iscriverti come primo utilizzatore, consulta le [note sulla versione di ottobre 2024 di Cloud Manager](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
 
 * **Ambiente di test avanzato:** soluzione appositamente progettata per colmare il divario tra sviluppo e produzione. Personalizzato per le esigenze aziendali, questo ambiente replica le specifiche a livello di produzione per supportare test di accettazione utente (UAT) accurati e valutazioni approfondite delle prestazioni.
 
