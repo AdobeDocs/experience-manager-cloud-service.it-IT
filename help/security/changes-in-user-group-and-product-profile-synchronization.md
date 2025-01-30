@@ -6,10 +6,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: cddfcddc0ca3652270bdb735e580386ac9ff1fc7
-workflow-type: ht
-source-wordcount: '361'
-ht-degree: 100%
+source-git-commit: 5c103fcce1ae47bc89f4f572d89967c62c1f7603
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 79%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Ogni volta che un utente accede ad AEM as a Cloud Service o viene utilizzato un token di accesso, i gruppi di utenti, i profili di prodotto e i servizi del profilo di prodotto di Adobe Admin Console vengono sincronizzati nell’archivio AEM come gruppi.
 
-Con le versioni di AEM superiori alla 18751 (una versione di manutenzione inizierà a essere implementata negli ambienti di produzione il 27 gennaio), al fine di ridurre il disordine nell’interfaccia utente e ottimizzare le prestazioni, saranno introdotte alcune modifiche al comportamento di sincronizzazione, con conseguente minor numero di gruppi visualizzati in AEM. Verranno rimosse due categorie di gruppi AEM:
+A partire dalla versione di manutenzione dell’AEM 19149, il comportamento di sincronizzazione del gruppo viene modificato per ridurre il disordine nell’interfaccia utente e ottimizzare le prestazioni. In particolare, l&#39;appartenenza al gruppo di utenti delle due seguenti categorie di gruppi AEM non sarà più sincronizzata:
 
 1. Gruppi AEM con suffisso `GROUP_NAME_SUFFIX`. Questi gruppi non vengono visualizzati in Adobe Developer Console, ma nella schermata Gestione dei gruppi AEM, come illustrato di seguito. Nel caso improbabile che l’applicazione AEM faccia riferimento a tali gruppi, assicurarsi di utilizzare invece i gruppi di utenti di Adobe Admin Console senza quel suffisso.
 
@@ -44,3 +44,4 @@ In questo modo si accede ad Adobe Admin Console, come illustrato nella schermata
 
 Nel caso improbabile che l’applicazione AEM faccia riferimento a un gruppo che non apparirà più in AEM, assicurarsi invece di utilizzare i) un profilo di prodotto della giusta istanza AEM o ii) un gruppo di utenti Adobe Admin Console.
 
+Le appartenenze ai gruppi dell’utente vengono sincronizzate al momento dell’accesso all’ambiente e rimosse dai gruppi non correlati all’ambiente corrente. I gruppi stessi rimangono e includono gli utenti che non hanno effettuato l’accesso da quando la funzione è stata abilitata.
