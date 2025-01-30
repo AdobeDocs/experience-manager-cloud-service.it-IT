@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 75a011ed952e1801f0988942d4501a52d348bb3f
+source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
 workflow-type: tm+mt
-source-wordcount: '1759'
-ht-degree: 46%
+source-wordcount: '1812'
+ht-degree: 43%
 
 ---
 
@@ -59,7 +59,7 @@ La versione minima supportata di AEM as a Cloud Service per le nuove interfacce 
 
 **Frammenti di contenuto migliorati**
 
-È stato migliorato il [frammento di contenuto con riferimento a riferimenti univoci basati su ID](/help/headless/graphql-api/uuid-reference-upgrade.md), garantendo collegamenti stabili che rimangono validi anche quando le risorse o i frammenti vengono spostati, eliminando la necessità di aggiornamenti o ripubblicazione. Limitazione corrente: i riferimenti a pagine non sono ancora supportati con ID univoci. Se nei frammenti di contenuto si fa riferimento alle pagine, questa funzionalità non deve essere utilizzata.
+È stato migliorato il [frammento di contenuto con riferimento a riferimenti univoci basati su ID](/help/headless/graphql-api/uuid-reference-upgrade.md), per garantire che le query GraphQL per i singoli frammenti di contenuto possano rimanere stabili anche se il frammento è stato spostato in un’altra posizione. Ciò è ora possibile con le query &quot;ByID&quot;. Anche se i percorsi possono cambiare, interrompendo potenzialmente le query &quot;ByPath&quot;, gli UUID sono stabili. I nuovi ID possono anche essere restituiti come proprietà in qualsiasi query o altra richiesta API applicabile. Limitazione corrente (2025.1): i riferimenti a pagine non sono ancora supportati con ID univoci. Se nei frammenti di contenuto si fa riferimento alle pagine, questa funzionalità non deve essere utilizzata. La limitazione verrà rimossa nella prossima versione di AEM as a Cloud Service.
 
 **OpenAPI REST di AEM per la distribuzione dei frammenti di contenuto**
 
