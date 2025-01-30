@@ -4,10 +4,10 @@ description: Note sulla versione specifiche per le funzioni obsolete e rimosse i
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: b0bc2eb4298a88c6dc421390dd9527e181386b5d
-workflow-type: ht
-source-wordcount: '2513'
-ht-degree: 100%
+source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
+workflow-type: tm+mt
+source-wordcount: '2543'
+ht-degree: 98%
 
 ---
 
@@ -35,6 +35,8 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
 
 | Funzionalità | Funzione obsoleta | Sostituzione |
 | ------------ | ------------------ | ----------- |
+| Sites | [Funzionalità PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Nessuno |
+| Sites | [Editor SPA](/help/implementing/developing/hybrid/introduction.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) per la modifica visiva.<br>- [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo. |
 | [!DNL Sites] | [API di utilizzo di JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API di utilizzo di Java](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Proprietà di Frammenti di esperienza per **Stato social media**. | La funzione è pianificata per la rimozione a breve. |
 | [!DNL Sites] | Frammenti di contenuto semplici basati su modelli. | [Frammenti di contenuto strutturati basati su modelli](/help/assets/content-fragments/content-fragments-models.md) ora. |

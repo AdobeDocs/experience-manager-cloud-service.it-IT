@@ -4,12 +4,13 @@ description: Scopri come gestire i dati di tassonomia per utilizzare i tag in AE
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 100%
+source-wordcount: '974'
+ht-degree: 85%
 
 ---
+
 
 # Gestione dei dati di tassonomia {#managing-taxonomy-data}
 
@@ -77,7 +78,7 @@ Inizia a modificare una pagina di tassonomia come qualsiasi altra pagina in AEM.
 
 La pagina visualizzata nell’Editor pagina è in modalità di sola lettura perché il contenuto della tassonomia viene generato automaticamente dai tag e dagli spazi dei nomi selezionati. Questi fungono da filtro per generare automaticamente il contenuto della tassonomia. Pertanto, non vi è alcun motivo di modificare direttamente la pagina nell’editor.
 
-AEM aggiorna automaticamente il contenuto della pagina della tassonomia quando si aggiornano i tag e gli spazi dei nomi sottostanti. Tuttavia, è necessario [ripubblicare la tassonomia](#publishing) dopo eventuali modifiche per renderle disponibili agli utenti.
+AEM aggiorna automaticamente il contenuto della pagina della tassonomia quando si aggiornano i tag e gli spazi dei nomi sottostanti. Tuttavia, è necessario [ripubblicare la tassonomia](#publishing) dopo qualsiasi modifica per rendere tali modifiche disponibili agli utenti.
 
 ## Aggiornare paths.json per la pubblicazione della tassonomia {#paths-json}
 
@@ -155,6 +156,10 @@ Utilizza `<taxonomy-json-name>` definito durante la [mappatura della tassonomia 
       "title": "Translate"
     }
   ],
+  "columns": [
+    "tag",
+    "title"
+  ],
   ":type": "sheet"
 }
 ```
@@ -162,3 +167,47 @@ Utilizza `<taxonomy-json-name>` definito durante la [mappatura della tassonomia 
 Questi dati JSON verranno aggiornati automaticamente durante l’aggiornamento della tassonomia e la ripubblicano. L’app può accedere a queste informazioni a livello di programmazione per i tuoi utenti.
 
 [Se mantieni i tag in più lingue,](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) è possibile accedere a tali lingue passando il codice della lingua ISO2 come valore di un parametro `sheet=`.
+
+## Esposizione di proprietà tag aggiuntive {#additional-properties}
+
+Per impostazione predefinita, la tassonomia conterrà i valori `tag` e `title` come mostrato [ nell&#39;esempio precedente.](#accessing) È possibile configurare la tassonomia per esporre proprietà tag aggiuntive. In questo esempio verrà esposta la descrizione del tag.
+
+1. Utilizza la console Sites per selezionare la tassonomia creata.
+1. Tocca o fai clic sull&#39;icona **Proprietà** nella barra degli strumenti.
+1. Nella sezione **Proprietà aggiuntive**, tocca o fai clic su **Aggiungi** per aggiungere un campo.
+1. Nel nuovo campo, inserisci il nome della proprietà JRC da esporre. In questo caso, immettere `jcr:description` per la descrizione del tag.
+1. Tocca o fai clic su **Salva e chiudi**.
+1. Con la tassonomia ancora selezionata, tocca o fai clic su **Publish rapido** nella barra degli strumenti.
+
+Ora [quando accedi alla tassonomia,](#accessing) la descrizione del tag (o qualsiasi proprietà scelta per esporre) è inclusa nel JSON.
+
+```json
+{
+  "total": 3,
+  "offset": 0,
+  "limit": 3,
+  "data": [
+    {
+      "tag": "default:",
+      "title": "Standard Tags",
+      "jcr:description": "These are the standard tags"
+    },
+    {
+      "tag": "do-not-translate",
+      "title": "Do Not Translate",
+      "jcr:description": "Tag to mark pages that should not be translated"
+    },
+    {
+      "tag": "translate",
+      "title": "Translate",
+      "jcr:description": "Tag to mark pages that should be translated"
+    }
+  ],
+  "columns": [
+    "tag",
+    "title",
+    "jcr:description"
+  ],
+  ":type": "sheet"
+}
+```

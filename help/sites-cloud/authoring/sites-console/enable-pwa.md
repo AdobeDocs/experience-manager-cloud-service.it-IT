@@ -5,10 +5,10 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4c4e05ae636701d914b654b7342a4bc2403c56c0
 workflow-type: tm+mt
-source-wordcount: '1896'
-ht-degree: 65%
+source-wordcount: '1926'
+ht-degree: 64%
 
 ---
 
@@ -26,6 +26,12 @@ Grazie a una configurazione semplice, un autore di contenuti può ora abilitare 
 >* Supporto dal team di sviluppo
 >
 >Prima di utilizzare questa funzione, Adobe consiglia di discuterne con il team di sviluppo per definire il modo migliore per utilizzarla per il progetto.
+
+>[!IMPORTANT]
+>
+>Le funzioni progressive web app (PWA) per AEM Sites sono diventate obsolete.
+>
+>I progetti esistenti che utilizzano questa funzione continueranno a essere supportati, ma i nuovi progetti non dovrebbero utilizzare questa funzione.
 
 ## Introduzione {#introduction}
 
@@ -203,7 +209,7 @@ Non tutte le funzionalità di PWA sono disponibili per AEM Sites. Questi sono al
 
 * Le pagine non vengono sincronizzate o aggiornate automaticamente se l’utente non sta utilizzando l’app.
 
-L’Adobe consiglia inoltre quanto segue quando si implementa PWA.
+Adobe consiglia inoltre quanto segue quando si implementa PWA.
 
 ### Riduci al minimo il numero di risorse da pre-memorizzare in cache. {#minimize-precache}
 
