@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
 workflow-type: tm+mt
 source-wordcount: '3412'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -173,12 +173,12 @@ Se &quot;Aggiornamenti della versione dell’AEM&quot; è attivo (ovvero, gli ag
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Errore di acquisizione a causa di un ambiente cloud non in stato pronto {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+### Errore di acquisizione a causa di un ambiente cloud che non presenta lo stato Pronto {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
->title="Ambiente cloud non in stato pronto"
->abstract="In rare istanze, nell’ambiente cloud di destinazione potrebbero verificarsi problemi imprevisti che impediscono l’acquisizione."
+>title="Ambiente cloud che non presenta lo stato Pronto"
+>abstract="In rare istanze, nell’ambiente cloud di destinazione potrebbero verificarsi problemi imprevisti che causano il fallimento dell’acquisizione."
 
 In rari casi, nell’ambiente del Cloud Service di destinazione dell’acquisizione potrebbero verificarsi problemi imprevisti. Di conseguenza, l’acquisizione non riuscirà perché l’ambiente non è nello stato &quot;ready&quot; previsto. Controlla il registro di acquisizione per visualizzare ulteriori dettagli sullo stato di errore riscontrato.
 
