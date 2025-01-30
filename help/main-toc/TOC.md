@@ -1017,7 +1017,7 @@ ht-degree: 99%
          + [Utilizzare le regole per aggiungere un comportamento dinamico a un modulo](/help/edge/docs/forms/rules-forms.md)
          + [Espressioni Regex per le convalide](/help/edge/docs/forms/regex-forms.md)
          + [Mostrare un messaggio di ringraziamento personalizzato dopo l’invio di un modulo](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Utilizza il servizio di invio Forms](/help/forms/forms-submission-service.md)
+         + [Utilizzare il servizio di invio dei moduli](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
          + [Panoramica - Editor universale per Edge Delivery Services per Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + Funzionalità {#advanced-features-edge-delivery-services-forms}
@@ -1027,7 +1027,7 @@ ht-degree: 99%
          + [Utilizzare reCAPTCHA per proteggere i moduli](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componenti personalizzati](/help/edge/docs/forms/custom-components-forms.md)
          + [Monitoraggio degli utenti reali per i moduli](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Pubblicazione di Forms per Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
+         + [Pubblicazione di moduli per Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + Riferimenti {#forms-references}
          + [Componenti del blocco modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
    + Risorse di Edge Delivery {#resources}

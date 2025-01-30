@@ -7,14 +7,14 @@ role: Admin, Architect, Developer
 source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 80%
+ht-degree: 97%
 
 ---
 
 # Impostare i Fogli Google o i file Microsoft Excel per iniziare ad accettare i dati
 
 
-Dopo aver [creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/create-forms.md), è ora di abilitare il foglio di calcolo corrispondente per iniziare a ricevere i dati. È possibile
+Una volta che hai [creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/create-forms.md), è il momento di abilitare il foglio di calcolo corrispondente per iniziare a ricevere i dati. È possibile
 
 * [Abilitare manualmente il foglio di calcolo per accettare i dati](#manually-enable-the-spreadsheet-to-accept-data)
 * [Utilizza le API di amministrazione per abilitare un foglio di calcolo ad accettare i dati](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
@@ -32,7 +32,7 @@ Dopo aver [creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/c
 
 Per abilitare il foglio di calcolo ad accettare i dati,
 
-1. Aprire il foglio di calcolo contenente il modulo e aggiungere un nuovo foglio, rinominandolo in `incoming`. Ad esempio, la [richiesta](/help/edge/assets/enquiry.xlsx) da cartella di lavoro di Microsoft Excel.
+1. Apri il foglio di calcolo contenente il modulo e aggiungi un nuovo foglio, rinominandolo `incoming`. Ad esempio, il modulo di [interrogazione](/help/edge/assets/enquiry.xlsx) della cartella di lavoro Microsoft Excel.
 
    >[!WARNING]
    >
@@ -42,15 +42,15 @@ Per abilitare il foglio di calcolo ad accettare i dati,
 
 1. Modifica il nome della tabella in “intake_form”. In Microsoft Excel, per modificare il nome della tabella, selezionala e fai clic su Progettazione tabella.
 
-1. Successivamente, aggiungi i nomi dei campi modulo come intestazioni della tabella. Per assicurarti che i campi siano esattamente gli stessi, puoi copiarli e incollarli dal foglio &quot;shared-aem&quot;.  Nel foglio &quot;shared-aem&quot;, seleziona e copia gli ID modulo elencati nella colonna &quot;Nome&quot;, ad eccezione del campo invio.
+1. Successivamente, aggiungi i nomi dei campi modulo come intestazioni della tabella. Per verificare che i campi siano esattamente gli stessi, puoi copiarli e incollarli dal foglio “shared-aem”.  Nel foglio “shared-aem” seleziona e copia gli ID modulo elencati nella colonna “Nome”, ad eccezione del campo Invia.
 
 1. Nel foglio “in entrata”, seleziona Incolla speciale > Trasponi righe in colonne per copiare gli ID dei campi come intestazioni di colonna in questo nuovo foglio. Conserva solo i campi di cui è necessario acquisire i dati, gli altri possono essere ignorati.
 
-   Ogni valore nella colonna `Name` del foglio `shared-aem`, escluso il pulsante Invia, può essere utilizzato come intestazione nel foglio `incoming`. Ad esempio, considera l’immagine seguente che illustra le intestazioni per un modulo di &quot;richiesta di informazioni&quot;:
+   Ogni valore nella colonna `Name` del foglio `shared-aem`, escluso il pulsante Invia, può essere utilizzato come intestazione nel foglio `incoming`. Ad esempio, prendi in considerazione l’immagine seguente che illustra le intestazioni per un modulo di “interrogazione”:
 
    ![Campi per un modulo contattaci](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Utilizza l&#39;estensione [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare in anteprima gli aggiornamenti del modulo. Il foglio è ora pronto per accettare gli invii dei moduli in entrata.
+1. Utilizza l’estensione [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzare in anteprima gli aggiornamenti del modulo. Il foglio è ora pronto per accettare gli invii dei moduli in entrata.
 
    >[!NOTE]
    >
@@ -59,11 +59,11 @@ Per abilitare il foglio di calcolo ad accettare i dati,
 
 Una volta aggiunti i nomi dei campi al foglio `incoming`, il modulo diventa pronto per accettare gli invii. Puoi visualizzare in anteprima il modulo e, tramite questo, inviare i dati al foglio.
 
-Una volta configurato il foglio per la ricezione dei dati, è possibile [visualizzare l&#39;anteprima del modulo](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> per iniziare a inviare dati al foglio.
+Una volta configurato il foglio per la ricezione dei dati, puoi [visualizzare in anteprima il modulo](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> o iniziare a inviare i dati al foglio.
 
 >[!WARNING]
 >
->  I fogli &quot;shared-aem&quot; non devono mai contenere informazioni personali identificabili o dati sensibili che l’utente non è a suo agio nell’essere accessibili al pubblico.
+>  I fogli “shared-aem” non devono mai contenere informazioni personali identificabili o dati sensibili che l’utente non intende rendere accessibili pubblicamente.
 
 
 ## Utilizza le API di amministrazione per abilitare un foglio di calcolo ad accettare i dati
