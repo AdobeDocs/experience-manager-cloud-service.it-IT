@@ -5,9 +5,9 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '698'
 ht-degree: 42%
 
 ---
@@ -74,7 +74,7 @@ Puoi sospendere manualmente il programma sandbox da Developer Console.
 
 1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** fare clic sul programma che si desidera riattivare per visualizzarne i dettagli.
 
-1. Nella scheda **Ambienti**, fai clic su https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg e quindi su **Developer Console**.
+1. Nella scheda **Ambienti**, fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), quindi su **Developer Console**.
 
    * Per ulteriori dettagli su Developer Console, consulta [Accesso a Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console).
 

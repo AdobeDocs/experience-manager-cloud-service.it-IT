@@ -4,10 +4,10 @@ description: Scopri come aggiungere un sito Edge Delivery al programma di produz
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 96%
+source-wordcount: '498'
+ht-degree: 92%
 
 ---
 
@@ -48,12 +48,12 @@ Fai clic su **Aggiungi sito** nell’angolo superiore a destra della pagina.
 
    | Numero passaggio | Descrizione |
    | - | - |
-   | **1** | Aggiungi un file con percorso e nome `well-known/adobe/cloudmanager-challenge.txt` al ramo `main` dell’archivio Git elencato nel campo **URL archivio**. *Non* aggiungere un punto all’inizio del percorso.<br>Se necessario, fai clic su ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) per copiare il percorso negli Appunti. |
-   | **2** | Aggiungi il codice visualizzato nel campo di testo del passaggio 2 al file appena creato nel passaggio 1.<br>Se necessario, fai clic su ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) per copiare il codice negli appunti. |
+   | **1** | Aggiungi un file con percorso e nome `well-known/adobe/cloudmanager-challenge.txt` al ramo `main` dell’archivio Git elencato nel campo **URL archivio**. *Non* aggiungere un punto all’inizio del percorso.<br>Se necessario, fare clic sull&#39;icona ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) per copiare il percorso negli Appunti. |
+   | **2** | Aggiungi il codice visualizzato nel campo di testo del passaggio 2 al file appena creato nel passaggio 1.<br>Se necessario, fai clic sull&#39;icona ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) per copiare il codice negli Appunti. |
    | **3** | Crea una richiesta di pull nell’archivio Git per le modifiche appena create, quindi uniscila in `main` per eseguire il commit del codice. |
 
 1. Fai clic su **Verifica**.
 
-Quando l’archivio viene verificato, il suo stato nella tabella Edge Delivery Sites viene aggiornato. Un cerchio verde con un segno di spunta bianco all’interno indica lo stato.
+Una volta verificato l’archivio, il relativo stato viene aggiornato nella tabella dei siti Edge Delivery. Un cerchio verde con un segno di spunta bianco all’interno indica lo stato.
 
-Nella stessa tabella fai clic su ![Informazioni sul sito Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) per visualizzarne i dettagli. Queste informazioni includono l’URL dell’archivio verificato, insieme agli URL del sito web di anteprima e produzione.
+Nella stessa tabella fare clic su ![Informazioni sull&#39;icona del sito Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) per visualizzare i dettagli del sito. Queste informazioni includono l’URL dell’archivio verificato, insieme agli URL del sito web di anteprima e produzione.

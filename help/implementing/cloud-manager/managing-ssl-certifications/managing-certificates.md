@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 9%
+source-wordcount: '1023'
+ht-degree: 14%
 
 ---
 
@@ -21,7 +21,7 @@ Scopri come controllare lo stato dei certificati SSL e come modificarli, sostitu
 
 Cloud Manager offre una panoramica dello stato di tutti i certificati del programma.
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona il programma appropriato.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 1. Nell&#39;angolo superiore sinistro della pagina fare clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare il menu laterale.
 1. Sotto l&#39;intestazione **Services**, fare clic su ![Blocca icona chiuso](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificati SSL**.
@@ -42,11 +42,11 @@ Per completare l&#39;attività, l&#39;utente deve avere il ruolo **Proprietario 
 
 **Per aggiornare un certificato SSL gestito dal cliente scaduto:**
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona il programma appropriato.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 1. Nell&#39;angolo superiore sinistro della pagina fare clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare il menu laterale.
 1. Sotto l&#39;intestazione **Services**, fare clic su ![Blocca icona chiuso](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificati SSL**.
-1. Nella riga del certificato gestito del cliente scaduto che desideri aggiornare, fai clic su https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg all&#39;estrema destra, quindi su **Visualizza e aggiorna**.
+1. Nella riga del certificato gestito del cliente scaduto che desideri aggiornare, fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) all&#39;estrema destra, quindi fai clic su **Visualizza e aggiorna**.
 
    ![Aggiorna una certificazione SSL gestita dal cliente scaduta](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -62,7 +62,7 @@ Per completare l&#39;attività, l&#39;utente deve avere il ruolo **Proprietario 
 
 >[!NOTE]
 >
->Se si dispone di due o più certificati SAN che coprono la stessa voce di dominio SAN, se tale dominio è coperto da un certificato e l&#39;altro è aggiornato, quest&#39;ultimo viene installato per il dominio.
+>Se due o più certificati SAN coprono la stessa voce di dominio SAN e uno di essi viene aggiornato, il sistema installa il certificato aggiornato per il dominio.
 >
 >Per ulteriori informazioni, vedere [Risoluzione dei problemi relativi ai certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert).
 
@@ -70,7 +70,7 @@ Per completare l&#39;attività, l&#39;utente deve avere il ruolo **Proprietario 
 
 Segui gli stessi passaggi descritti in [Aggiornare un certificato SSL scaduto](#update-ssl-certificate) per sostituire un certificato SSL scaduto gestito dal cliente.
 
-## Rinominare un Adobe di certificato SSL gestito (#rename-an-ssl-certificate)
+## Rinominare un certificato SSL gestito di Adobe (#rename-an-ssl-certificate)
 
 Di seguito sono riportati alcuni motivi per cui potrebbe essere utile rinominare un certificato SSL:
 
@@ -78,9 +78,9 @@ Di seguito sono riportati alcuni motivi per cui potrebbe essere utile rinominare
 * **Evitare confusione**: se gestisci più certificati, un nome chiaro e descrittivo può aiutare a evitare errori, ad esempio l&#39;applicazione del certificato errato al dominio errato.
 * **Conformità e controllo**: i certificati con nomi corretti possono essere più facili da tracciare a scopo di sicurezza e controllo.
 
-**Per rinominare un certificato SSL gestito di Adobe:**
+**Per rinominare un certificato SSL gestito da Adobe:**
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona il programma appropriato.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
@@ -88,28 +88,28 @@ Di seguito sono riportati alcuni motivi per cui potrebbe essere utile rinominare
 
 1. Sotto l&#39;intestazione **Services**, fare clic su ![Blocca icona chiuso](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificati SSL**.
 
-1. Nella pagina **Certificati SSL**, fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) alla fine di una riga il cui **Adobe ha gestito** il certificato SSL che desideri rinominare.
+1. Nella pagina **Certificati SSL**, fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) alla fine di una riga di cui desideri rinominare il certificato SSL **Adobe gestito**.
 
 1. Scegliere **Rinomina** dal menu a discesa.
 
 1. Nella finestra di dialogo **Rinomina certificato DV** immettere il nuovo nome del certificato nel campo di testo **Nome certificato**.
 
-1. Fare clic su **Rinomina**.
+1. Fai clic su **Rinomina**.
 
 
 ## Eliminare un certificato SSL {#deleting-an-ssl-certificate}
 
-L’eliminazione di Adobi di certificati SSL gestiti o gestiti dal cliente da Cloud Manager è un’azione permanente che non può essere annullata. Come best practice, Adobe consiglia di salvare i file SSL localmente prima di eliminarli in Cloud Manager.
+L’eliminazione di certificati SSL gestiti da Adobe o dal cliente da Cloud Manager è un’azione permanente che non può essere annullata. Come best practice, Adobe consiglia di salvare i file SSL localmente prima di eliminarli in Cloud Manager.
 
 >[!NOTE]
 >
->Non puoi eliminare un certificato SSL gestito di Adobe a cui sono associati uno o più domini attivi. Prima di eliminare il certificato SSL è necessario eliminare tutti i domini attivi associati. Per ulteriori informazioni, consulta [Gestire i nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
+>Non puoi eliminare un certificato SSL gestito da Adobe a cui sono associati uno o più domini attivi. Prima di eliminare il certificato SSL è necessario eliminare tutti i domini attivi associati. Per ulteriori informazioni, consulta [Gestire i nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
 
 Per completare l&#39;attività, l&#39;utente deve avere il ruolo **Proprietario business** o **Responsabile dell&#39;implementazione**.
 
 **Per eliminare un certificato SSL:**
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona il programma appropriato.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 

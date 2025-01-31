@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 24%
+source-wordcount: '420'
+ht-degree: 25%
 
 ---
 
@@ -21,12 +21,12 @@ Dalla **Panoramica del programma**, gli utenti con le autorizzazioni necessarie 
 
 * Aggiungere la soluzione Sites a un programma esistente con Assets e viceversa.
 * Rimuovere Sites o Assets da un programma esistente con entrambi Sites e Assets.
-* Aggiungere una seconda soluzione non utilizzata a un programma esistente o nuovo.
+* Aggiungere una soluzione non utilizzata a un programma esistente o crearne uno nuovo.
 * Eliminare i programmi sandbox.
 
 ## Autorizzazioni {#permissions}
 
-Per modificare i programmi o eliminare i programmi sandbox e accedere alla dashboard delle licenze, è necessario avere il ruolo **Proprietario business**.
+È necessario avere il ruolo **Proprietario business** per modificare i programmi, eliminare i programmi sandbox e accedere alla dashboard delle licenze.
 
 ## Modificare un programma {#editing}
 
@@ -46,7 +46,7 @@ Ogni volta che si modifica un programma, incluso l&#39;aggiunta o la rimozione d
 
    ![Scheda Generale](assets/edit-program-prod1.png)
 
-1. Le opzioni disponibili per la modifica del programma sono le stesse della creazione del programma.
+1. Le opzioni disponibili per la modifica del programma sono le stesse per la creazione del programma.
    * Per informazioni dettagliate sulle singole opzioni, consulta [Creare programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) e [Creare programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
    * [Ulteriori opzioni](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) potrebbero essere disponibili per il programma di produzione in base ai diritti dell&#39;organizzazione.
 
@@ -70,7 +70,7 @@ L’eliminazione di un programma sandbox comporta la rimozione di tutti gli ambi
 
    ![Opzione Elimina programma](assets/delete-sandbox1.png)
 
-In alternativa, è possibile fare clic su https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg sulla scheda del programma nella pagina Panoramica di Cloud Manager e selezionare **Elimina programma**.
+In alternativa, è possibile fare clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) sulla scheda del programma nella pagina della panoramica di Cloud Manager e selezionare **Elimina programma**.
 
 ![Scheda Elimina sandbox da programma](assets/delete-sandbox2.png)
 
