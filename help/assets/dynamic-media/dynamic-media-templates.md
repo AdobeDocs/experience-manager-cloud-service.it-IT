@@ -3,9 +3,10 @@ title: Come gestire i modelli di Dynamic Media?
 description: Scopri come creare modelli Dynamic Media utilizzando un editor di modelli WYSIWYG e includere più immagini e livelli di testo per creare rapidamente banner e volantini e utilizzarli nelle applicazioni a valle.
 hide: true
 role: User
-source-git-commit: ada339567716a126d3288246c148c551dff298f4
+exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
+source-git-commit: ea903daafedb420602700f4b1b4a3ad6bd8ede97
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2590'
 ht-degree: 0%
 
 ---
@@ -55,19 +56,18 @@ Per creare un modello DM, effettuare le seguenti operazioni:
 1. [Modificare o eliminare un livello](#edit-or-delete-a-layer)
 1. [Livelli parametrizzati](#parameterise-a-layer)
 
-
 ### Creare un’area di lavoro vuota{#create-a-canvas}
 
 Per creare un’area di lavoro vuota, effettua le seguenti operazioni:
 
-1. Passa alla visualizzazione Assets e fai clic su **Dynamic Media Assets** disponibile nel pannello a sinistra.
+1. Passa alla visualizzazione Assets e fai clic su **[!UICONTROL Dynamic Media Assets]** disponibile nel pannello a sinistra.
 
    ![](/help/assets/assets/dm-templates/DM-Assets1.png)
 
-1. Fai clic su **Crea modello** per salvare il modello in Dynamic Media Assets oppure passa a una cartella e fai clic su **Crea modello** per salvare il modello in tale cartella. Viene visualizzata la finestra di dialogo **Nuovo modello**.
+1. Fai clic su **[!UICONTROL Crea modello]** per salvare il modello in Dynamic Media Assets oppure passa a una cartella e fai clic su **[!UICONTROL Crea modello]** per salvare il modello in tale cartella. Viene visualizzata la finestra di dialogo **[!UICONTROL Nuovo modello]**.
    ![](/help/assets/assets/dm-templates/new-template.png)
-Per [creare una cartella](/help/assets/add-delete-assets-view.md) in **Dynamic Media Assets**, creare una cartella in **Assets**. La struttura di cartelle in **Assets** viene replicata in **Dynamic Media Assets**.
-1. Specifica un nome di modello, definisci la larghezza e l&#39;altezza dell&#39;area di lavoro e fai clic su **Crea**. Viene visualizzata un&#39;area di lavoro vuota con opzioni di menu su entrambi i lati da utilizzare per la creazione del modello. Passa il puntatore del mouse sulle opzioni del menu per visualizzarne la descrizione comando.
+Per [creare una cartella](/help/assets/add-delete-assets-view.md) in **[!UICONTROL Dynamic Media Assets]**, creare una cartella in **[!UICONTROL Assets]**. La struttura di cartelle in **[!UICONTROL Assets]** viene replicata in **[!UICONTROL Dynamic Media Assets]**.
+1. Specifica un nome di modello, definisci la larghezza e l&#39;altezza dell&#39;area di lavoro e fai clic su **[!UICONTROL Crea]**. Viene visualizzata un&#39;area di lavoro vuota con opzioni di menu su entrambi i lati da utilizzare per la creazione del modello. Passa il puntatore del mouse sulle opzioni del menu per visualizzarne la descrizione comando.
    ![](/help/assets/assets/dm-templates/blank-canvas-page.png)
 
 >[!NOTE]
@@ -91,7 +91,7 @@ Per [creare una cartella](/help/assets/add-delete-assets-view.md) in **Dynamic M
 * ![](/help/assets/assets/dm-templates/zoomout.svg): fare clic per ridurre l&#39;area di lavoro o premere **Ctrl** + **-** (Windows) o **Cmd** + **-** (Mac).
 * Premi **Backspace** o **delete** per eliminare il livello selezionato se non si sta modificando testo o proprietà.
 
-Fare clic su ![](/help/assets/assets/dm-templates/show-layers-list.svg) e altre opzioni (![](/help/assets/assets/dm-templates/three-dots.svg)) sul livello Area di lavoro per modificare le dimensioni dell&#39;area di lavoro in qualsiasi momento durante la creazione del modello.
+Fare clic su ![](/help/assets/assets/dm-templates/show-layers-list.svg) **>** ulteriori opzioni (![](/help/assets/assets/dm-templates/three-dots.svg)) sul livello Canvas per modificare le dimensioni canvas in qualsiasi momento durante la creazione del modello.
 ![](/help/assets/assets/dm-templates/edit-canvas1.png)
 
 >[!NOTE]
@@ -104,7 +104,7 @@ Per aggiungere immagini all’area di lavoro, effettua le seguenti operazioni:
 
 1. Fai clic su ![](/help/assets/assets/dm-templates/add-image.svg) per visualizzare il pannello [Selettore risorse](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Il pannello mostra le immagini dell’istanza di AEM Assets che sono sincronizzate con Dynamic Media.
 1. Sfoglia il pannello o usa le parole chiave nella barra di ricerca per trovare un’immagine specifica.
-1. Trascina e rilascia un’immagine nell’area di lavoro per utilizzarla. Vedere il [pannello Proprietà](#4) per ridimensionare o riposizionare un livello nell&#39;area di lavoro.
+1. Trascina e rilascia un’immagine nell’area di lavoro per utilizzarla. Vedere il [**[!UICONTROL pannello Proprietà]**](#reposition-resize-delete-a-layer) per ridimensionare o riposizionare un livello nell&#39;area di lavoro.
    ![](/help/assets/assets/dm-templates/add-image-to-canvas.png)
 
 ### Aggiungere livelli di testo all&#39;area di lavoro{#add-text-to-the-canvas}
@@ -113,10 +113,10 @@ Per aggiungere livelli di testo all’area di lavoro, effettua le seguenti opera
 
 1. Fare clic su ![](/help/assets/assets/dm-templates/add-text.svg) per aggiungere un livello di testo all&#39;area di lavoro e aprire il pannello Proprietà.
 1. Selezionate il livello e fate clic sul testo per aggiornarlo.
-1. Abilitare **Ridimensionamento avanzato del testo** nel pannello Proprietà per regolare automaticamente la lunghezza del testo e la dimensione del font in modo che si adattino in modo ottimale all&#39;area designata.
+1. Abilitare **[!UICONTROL Ridimensionamento avanzato del testo]** nel pannello Proprietà per regolare automaticamente la lunghezza del testo e la dimensione del font in modo che si adattino in modo ottimale all&#39;area designata.
    ![](/help/assets/assets/dm-templates/add-text-layer.png)
 
-Vedere il [pannello Proprietà](#4) per riposizionare, ridimensionare, ruotare o eliminare il livello. Formatta il testo con il carattere, le dimensioni, il colore, lo stile e l&#39;allineamento desiderati (nel livello) modificandone i valori nei rispettivi campi nella sezione **Testo** del pannello.
+Vedere il [**[!UICONTROL pannello Proprietà]**](#reposition-resize-delete-a-layer) per riposizionare, ridimensionare, ruotare o eliminare il livello. Formatta il testo con il carattere, le dimensioni, il colore, lo stile e l&#39;allineamento desiderati (nel livello) modificandone i valori nei rispettivi campi nella sezione **[!UICONTROL Testo]** del pannello.
 
 >[!NOTE]
 >
@@ -128,8 +128,8 @@ Per modificare o eliminare un livello area di lavoro, esegui la procedura seguen
 
 1. Fare clic su ![](/help/assets/assets/dm-templates/show-layers-list.svg) e selezionare il livello nell&#39;area di lavoro o nell&#39;elenco Livelli.
 1. Fai clic su **altre opzioni** (![](/help/assets/assets/dm-templates/three-dots.svg)) per modificare o eliminare il livello.
-1. Fai clic su **Elimina** per eliminare il livello.
-1. Fai clic su **Modifica** per modificare il livello utilizzando il [pannello Proprietà](#4).
+1. Fai clic su **[!UICONTROL Elimina]** per eliminare il livello.
+1. Fai clic su **[!UICONTROL Modifica]** per modificare il livello utilizzando il [**[!UICONTROL pannello Proprietà]**](#reposition-resize-delete-a-layer).
    ![](/help/assets/assets/dm-templates/edit-delete-layer.png)
 
 ### Pannello Proprietà{#properties-panel}
@@ -144,7 +144,7 @@ In questo pannello viene visualizzata la posizione del punto centrale del livell
 ![](/help/assets/assets/dm-templates/properties-panel.png)
 
 Dal pannello delle proprietà di un livello, selezionate un altro livello nell&#39;area di lavoro per passare al relativo pannello delle proprietà.
-<a id="4"></a>
+
 
 #### Riposizionare, ridimensionare, ruotare o eliminare un livello{#reposition-resize-delete-a-layer}
 
@@ -153,27 +153,27 @@ Per modificare un livello testo o immagine, consulta le seguenti azioni di modif
 * **Riposizionare il livello:** Trascinare il livello per spostarlo in qualsiasi punto dell&#39;area di lavoro. Questa azione aggiorna i valori X e Y nel pannello delle proprietà.
 * **Ridimensiona il livello:** Seleziona il livello e trascina i relativi quadratini di ridimensionamento per ridimensionarlo. Questa azione aggiorna i valori W (larghezza) e H (altezza) nel pannello delle proprietà.
 * **Ruotare il livello:** Trascinare la maniglia quadrata posizionata verticalmente sopra il livello per ruotarlo intorno al centro. Questa azione aggiorna i valori degli angoli nel pannello delle proprietà.
-* **Eliminare il livello:** Premere **Backspace** o **delete** e quindi fare clic su **Confirm** per eliminare il livello selezionato.
+* **Eliminare il livello:** Premere **Backspace** o **delete** e quindi fare clic su **[!UICONTROL Confirm]** per eliminare il livello selezionato.
 
 #### Opzioni di formattazione del testo{#text-formatting-options-on-properties-panel}
 
-Formatta il testo con il carattere, le dimensioni, il colore, lo stile e l&#39;allineamento desiderati (nel livello) modificandone i valori nei rispettivi campi nella sezione **Testo** del pannello.
+Formatta il testo con il carattere, le dimensioni, il colore, lo stile e l&#39;allineamento desiderati (nel livello) modificandone i valori nei rispettivi campi nella sezione **[!UICONTROL Testo]** del pannello.
 
-**Ridimensionamento automatico del testo:** Assicurarsi di includere **Ridimensionamento automatico del testo** ([Adattamento al testo](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) per adattarlo in modo ottimale a qualsiasi testo nell&#39;area designata, modificandone in modo intelligente la dimensione e la lunghezza del carattere. Questa funzionalità impedisce l&#39;overflow del testo o riduce al minimo gli spazi in eccesso nella parte inferiore.
+**[!UICONTROL Ridimensionamento automatico del testo]** Assicurarsi di includere **[!UICONTROL Ridimensionamento automatico del testo]** ([Adattamento al testo](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) per adattarlo in modo ottimale a qualsiasi testo nell&#39;area designata, modificandone in modo intelligente la dimensione e la lunghezza del carattere. Questa funzionalità impedisce l&#39;overflow del testo o riduce al minimo gli spazi in eccesso nella parte inferiore.
 ![](/help/assets/assets/dm-templates/smart-text-resize.png)
 
 ### Livelli parametrizzati {#parameterise-a-layer}
 
 Dopo aver creato un modello con più livelli di immagini e testi, impostate i parametri per i livelli selezionati. Quando un livello o la relativa proprietà sono parametrizzati, ottiene una coppia chiave-valore (detta anche parametro). Questo parametro può essere incluso nell’URL del modello per aggiornare la posizione, le dimensioni o il contenuto del livello in tempo reale, con conseguente personalizzazione del modello in un attimo.
 
-Per parametrizzare un livello: <a id="1"></a>
+Per parametrizzare un livello:
 
-1. fare clic su ![](/help/assets/assets/dm-templates/show-layers-list.svg), selezionare un livello e fare clic su **Parametri**. Viene visualizzato il pannello **Parametri**.
-1. Attiva **Includi parametro** per parametrizzare una proprietà. Vedi [questo](#parameterisation-options-or-allowed-parameters) per conoscere il comportamento della proprietà dopo la parametrizzazione.
+1. fare clic su ![](/help/assets/assets/dm-templates/show-layers-list.svg), selezionare un livello e fare clic su **[!UICONTROL Parametri]**. Viene visualizzato il pannello **[!UICONTROL Parametri]**.
+1. Attiva **[!UICONTROL Includi parametro]** per parametrizzare una proprietà. Vedi [questo](#parameterisation-options-or-allowed-parameters) per conoscere il comportamento della proprietà dopo la parametrizzazione.
 1. **Facoltativo:** Rinominare il nome del parametro. Il nome di un parametro è seguito da un suffisso. Per un livello selezionato, tutte le relative proprietà con parametri condividono lo stesso nome di livello seguito da un suffisso variabile. Rinominate il nome del livello seguendo la convenzione di denominazione semantica in modo che, quando includete il parametro nell&#39;URL, il nome del parametro spieghi da solo il contenuto o lo scopo del livello.
-1. Fai clic su **Salva**.
+1. Fai clic su **[!UICONTROL Salva]**.
    ![](/help/assets/assets/dm-templates/parameterise-a-layer.png)
-Per passare dal pannello Parametri di un&#39;immagine al livello testo, selezionare il livello nell&#39;area di lavoro e fare clic su **Parametri**.
+Per passare dal pannello Parametri di un&#39;immagine al livello testo, selezionare il livello nell&#39;area di lavoro e fare clic su **[!UICONTROL Parametri]**.
 
 #### Opzione del pannello Parametri {#parameterisation-options-or-allowed-parameters}
 
@@ -203,32 +203,32 @@ Un altro modo per mantenere flessibili i modelli consiste nell&#39;utilizzare un
 
 Seguire questi passaggi per assegnare lo stesso nome ai parametri nascosti (![](/help/assets/assets/dm-templates/Visibility-icon.svg)) di più livelli, consentendo di nasconderli o visualizzarli contemporaneamente.
 
-1. Passa al [pannello Parametri](#1) di un livello.
-1. Attiva/disattiva il parametro **Nascondi** se non è già stato impostato in precedenza come parametro.
+1. Passa al [**[!UICONTROL pannello Proprietà]**](#parameterise-a-layer) di un livello.
+1. Attiva/disattiva il parametro **[!UICONTROL Nascondi]** se non è già stato impostato in precedenza come parametro.
 1. **Facoltativo:** rinominare il parametro Nascondi.
 1. Copia il nome del parametro Nascondi.
-1. Passa al pannello Parametri degli altri livelli selezionandoli dall&#39;area di lavoro e, se non sono parametrizzati, imposta il parametro **Nascondi**.
-1. Sostituisci il nome del parametro **** Hide con il nome copiato.
-1. Fai clic su **Salva** per raggruppare i livelli.
-1. Eseguire i passaggi 3 e 4 nella sezione [Anteprima e Publish](#2) per visualizzare le modifiche.
+1. Passa al pannello Parametri degli altri livelli selezionandoli dall&#39;area di lavoro e, se non sono parametrizzati, imposta il parametro **[!UICONTROL Nascondi]**.
+1. Sostituisci il nome del **[!UICONTROL parametro]** con il nome copiato.
+1. Fai clic su **[!UICONTROL Salva]** per raggruppare i livelli.
+1. Eseguire i passaggi 3 e 4 nella sezione [**[!UICONTROL Anteprima e Publish]**](#preview-and-publish-template-and-copy-template-deliver-url) per visualizzare le modifiche.
 
 ## Anteprima e pubblicazione del modello per copiare l’URL di consegna{#preview-and-publish-template-and-copy-template-deliver-url}
 
 Per visualizzare in anteprima e pubblicare il modello e copiare l’URL di consegna, effettua le seguenti operazioni:
 
-1. Nella pagina dell&#39;area di lavoro fare clic su **Anteprima**. Puoi anche passare a **Vista Assets > Dynamic Media Assets >** Trova e seleziona il modello **>** fai clic su **Modifica modello >** fai clic su **Anteprima**. Nella pagina di anteprima vengono visualizzati il modello, i relativi parametri (livelli e proprietà con parametri), lo stato di pubblicazione e l&#39;opzione **Publish**. <a id="3"></a>
-1. Seleziona i parametri dal pannello **Parametri modello** per modificarne i valori e aggiornare immediatamente il contenuto, le dimensioni, la posizione o la formattazione del testo del livello del modello corrispondente nell&#39;anteprima. Ad esempio:
+1. Nella pagina dell&#39;area di lavoro fare clic su **[!UICONTROL Anteprima]**. Puoi anche passare a **[!UICONTROL Visualizzazione Assets]** **>** **[!UICONTROL Dynamic Media Assets]** **>** trovare e selezionare il modello **>** fare clic su **[!UICONTROL Modifica modello]** **>** fare clic su **[!UICONTROL Anteprima]**. Nella pagina di anteprima vengono visualizzati il modello, i relativi parametri (livelli e proprietà con parametri), lo stato di pubblicazione e l&#39;opzione **[!UICONTROL Publish]**.
+1. Seleziona i parametri dal pannello **[!UICONTROL Parametri modello]** per modificarne i valori e aggiornare immediatamente il contenuto, le dimensioni, la posizione o la formattazione del testo del livello del modello corrispondente nell&#39;anteprima. Ad esempio:
    1. Selezionare un livello di testo e modificarne il testo oppure
-   1. Seleziona un livello immagine, fai clic su ![](/help/assets/assets/dm-templates/add-image.svg), seleziona un&#39;immagine dal selettore risorse, quindi fai clic su **Aggiorna**.
+   1. Seleziona un livello immagine, fai clic su ![](/help/assets/assets/dm-templates/add-image.svg), seleziona un&#39;immagine dal selettore risorse, quindi fai clic su **[!UICONTROL Aggiorna]**.
 
-   Il modello viene aggiornato immediatamente, visualizzando il testo modificato e sostituendo l’immagine precedente con quella nuova. Inoltre, il valore del parametro immagine riflette il nuovo percorso immagine. Analogamente, potete ridimensionare un livello regolandone i valori e le modifiche vengono applicate al modello in tempo reale. <a id="2"></a>
+   Il modello viene aggiornato immediatamente, visualizzando il testo modificato e sostituendo l’immagine precedente con quella nuova. Inoltre, il valore del parametro immagine riflette il nuovo percorso immagine. Analogamente, potete ridimensionare un livello regolandone i valori e le modifiche vengono applicate al modello in tempo reale.
 1. Selezionare dall&#39;elenco il parametro Nascondi per [livelli raggruppati](#group-layers) per visualizzarli o nasconderli nel modello.
-1. **Facoltativo:** Modificare il valore del **Nascondi parametro** tra 0 e 1 e fare clic su **Aggiorna** per visualizzare le modifiche. I livelli con lo stesso parametro Nascondi (Hide) vengono nascosti o visualizzati insieme. Allo stesso modo, potete controllare la visibilità dei livelli dall&#39;URL.
+1. **Facoltativo:** Modificare il valore del parametro **[!UICONTROL Hide]** tra 0 e 1 e fare clic su **[!UICONTROL Aggiorna]** per visualizzare le modifiche. I livelli con lo stesso parametro Nascondi (Hide) vengono nascosti o visualizzati insieme. Allo stesso modo, potete controllare la visibilità dei livelli dall&#39;URL.
 
    ![](/help/assets/assets/dm-templates-publish-status.png)
-Puoi anche attivare **Includi tutti i parametri** per modificare tutti i valori dei parametri visualizzati e visualizzare gli aggiornamenti nell&#39;anteprima del modello.
+Puoi anche attivare **[!UICONTROL Includi tutti i parametri]** per modificare tutti i valori dei parametri visualizzati e visualizzare gli aggiornamenti nell&#39;anteprima del modello.
    <br>
-1. Per pubblicare il modello nella pagina di anteprima, fare clic su **Publish** e confermare la pubblicazione. Viene visualizzato il messaggio Publish Complete e lo stato di pubblicazione viene aggiornato su Pubblicato.
+1. Per pubblicare il modello nella pagina di anteprima, fare clic su **[!UICONTROL Publish]** e confermare la pubblicazione. Viene visualizzato il messaggio Publish Complete e lo stato di pubblicazione viene aggiornato su Pubblicato.
 
 >[!NOTE]
 >
@@ -236,12 +236,12 @@ Puoi anche attivare **Includi tutti i parametri** per modificare tutti i valori 
 
 ### Copiare l’URL di consegna
 
-I parametri selezionati nella pagina **Anteprima** diventano i parametri URL nell&#39;URL del modello.
+I parametri selezionati nella pagina **[!UICONTROL Anteprima]** diventano i parametri URL nell&#39;URL del modello.
 
 Per copiare l’URL del modello pubblicato visualizzato nell’anteprima:
 
-1. Fare clic su **Copia URL**. Viene visualizzata la finestra di dialogo **Copia URL**. Seleziona e copia l’URL visualizzato. Il primo parametro nell&#39;URL inizia dopo un punto interrogativo **(?)** e una coppia chiave-valore iniziano con **$** e terminano con **&amp;**. La chiave e il valore sono separati da un segno di uguale **(=)**, con la chiave a sinistra e il valore a destra.
-1. Incolla questo URL nella scheda del browser e visualizza il modello live. Personalizza il modello in tempo reale aggiornando il valore del parametro richiesto (valore della chiave) nell&#39;URL direttamente come mostrato nel [passaggio 2](#3) della **sezione Anteprima e Publish**.
+1. Fare clic su **[!UICONTROL Copia URL]**. Viene visualizzata la finestra di dialogo **[!UICONTROL Copia URL]**. Seleziona e copia l’URL visualizzato. Il primo parametro nell&#39;URL inizia dopo un punto interrogativo **(?)** e una coppia chiave-valore iniziano con **$** e terminano con **&amp;**. La chiave e il valore sono separati da un segno di uguale **(=)**, con la chiave a sinistra e il valore a destra.
+1. Incolla questo URL nella scheda del browser e visualizza il modello live. Personalizza il modello in tempo reale aggiornando il valore del parametro richiesto (valore della chiave) nell&#39;URL direttamente come mostrato nel [passaggio 2](#preview-and-publish-template-and-copy-template-deliver-url) della **sezione Anteprima e Publish**.
 1. Utilizza questo URL per accelerare il merchandising dei tuoi prodotti o servizi. Puoi condividere questo URL con i clienti o integrarlo nel tuo sito web o in qualsiasi applicazione di terze parti a valle per visualizzare il banner e aggiornarlo in tempo reale per riflettere le offerte in corso.
 
 Scopri come creare un modello di Dynamic Media passo dopo passo in questo video.
@@ -264,10 +264,10 @@ Incolla questo URL aggiornato nel browser per visualizzare le modifiche.
 
 Modifica il modello seguendo questi passaggi:
 
-1. Nella visualizzazione Assets, fare clic su **Dynamic Media Assets**.
+1. Nella visualizzazione Assets, fare clic su **[!UICONTROL Dynamic Media Assets]**.
 2. Passa alla posizione del modello.
 3. Seleziona il modello.
-4. Fare clic su **Modifica modello**. Nell&#39;area di lavoro del modello vengono visualizzati il modello e l&#39;elenco di tutti i relativi livelli nel pannello Livelli. Inizia a modificare il modello in base ai requisiti.
+4. Fare clic su **[!UICONTROL Modifica modello]**. Nell&#39;area di lavoro del modello vengono visualizzati il modello e l&#39;elenco di tutti i relativi livelli nel pannello Livelli. Inizia a modificare il modello in base alle tue esigenze.
 
 ## Punti importanti da notare {#important-points-to-note}
 
