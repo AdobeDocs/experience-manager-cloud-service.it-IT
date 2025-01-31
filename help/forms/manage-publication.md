@@ -6,23 +6,26 @@ feature: Adaptive Forms
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
-source-git-commit: d3c089dcca80255f53c0888d46ee1b4b6246741e
+exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
+source-git-commit: 64f4e62201c590e5da2f3b1f7e570a018dc8135c
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 0%
+source-wordcount: '945'
+ht-degree: 1%
 
 ---
 
-
 # &#x200B;Gestisci pubblicazione in Experience Manager Forms
 
-In qualità di amministratore di Adobe Experience Manager Forms, puoi pubblicare i moduli dall’istanza di authoring a Experience Manager Forms. È possibile pianificare la pubblicazione di un modulo o di una cartella in una data o in un&#39;ora successiva. Dopo la pubblicazione, gli utenti possono accedere e compilare i moduli.
+In qualità di amministratore di Adobe Experience Manager (AEM) Forms, puoi pubblicare i moduli dall’istanza di authoring a Experience Manager Forms. È inoltre possibile pianificare la pubblicazione di un modulo o di una cartella per una data o un&#39;ora successiva. Dopo la pubblicazione, gli utenti possono accedere e compilare i moduli.
 
-Nell’interfaccia di Experience Manager Forms, puoi pubblicare un modulo utilizzando:
+In Experience Manager Forms è possibile pubblicare un modulo utilizzando uno dei metodi seguenti:
 * [Opzione Publish](#publish-forms-using-the-publish-option)
 * [Opzione Gestisci pubblicazione](#publish-forms-using-the-manage-publication-option)
 
-Se si apportano modifiche successive ai moduli o alla cartella originali in Experience Manager Forms, le modifiche non verranno applicate nell&#39;istanza **Publish** fino a quando non si ripubblica da Experience Manager Forms. Le modifiche in corso di lavorazione non sono disponibili nell&#39;istanza **Publish**. Nell&#39;istanza **Publish** sono disponibili solo le modifiche pubblicate da un amministratore.
+## Aspetti da considerare
+
+* Solo i membri del gruppo `forms-users` possono utilizzare l&#39;opzione **Gestisci pubblicazione** per pubblicare i moduli.
+* Le modifiche apportate ai moduli o alle cartelle in Experience Manager Forms non vengono visualizzate nell&#39;istanza **Publish** finché non vengono ripubblicate. In questo modo gli aggiornamenti in corso di lavorazione non saranno più disponibili nell&#39;istanza **Publish**. Solo le modifiche pubblicate in modo esplicito da un amministratore vengono applicate all&#39;istanza **Publish**.
 
 ## Publish forms utilizzando l&#39;opzione Publish
 
@@ -34,13 +37,14 @@ L&#39;opzione **Publish** consente di pubblicare immediatamente un modulo. Per p
 
    ![Publish e Annulla pubblicazione modulo](/help/edge/docs/forms/assets/publish-form-option.png)
 
-   Dopo la pubblicazione del modulo e delle risorse correlate, viene visualizzata una finestra di dialogo **Operazione completata**. Fai clic su **Chiudi** per chiudere la finestra di dialogo.
+   Dopo la pubblicazione del modulo e delle risorse correlate, viene visualizzata una finestra di dialogo **Operazione completata**.
+1. Fai clic su **Chiudi**.
 
    ![Finestra di dialogo di successo](/help/forms/assets/publish-success.png)
 
 ### Annullare la pubblicazione del modulo
 
-Dopo aver pubblicato correttamente il modulo utilizzando l&#39;opzione **Publish** e le relative risorse, puoi anche annullarne la pubblicazione utilizzando il pulsante **[!UICONTROL Annulla pubblicazione]** sulla barra degli strumenti. Per annullare la pubblicazione di un modulo:
+Dopo aver pubblicato correttamente il modulo utilizzando l&#39;opzione **Publish** e le relative risorse, puoi anche annullarne la pubblicazione utilizzando il pulsante **[!UICONTROL Annulla pubblicazione]** disponibile sulla barra degli strumenti. Per annullare la pubblicazione di un modulo:
 
 1. Per annullare la pubblicazione del modulo e delle risorse correlate, selezionare il modulo e fare clic su **[!UICONTROL Annulla pubblicazione]** nella barra degli strumenti
 
@@ -49,24 +53,25 @@ Dopo aver pubblicato correttamente il modulo utilizzando l&#39;opzione **Publish
 
    ![Rimuovi ](/help/forms/assets/unpublish-asset.png)
 
-   Dopo aver annullato la pubblicazione del modulo e delle risorse correlate, viene visualizzata la finestra di dialogo **Operazione riuscita**. Fai clic su **Chiudi** per chiudere la finestra di dialogo.
+   Dopo aver annullato la pubblicazione del modulo e delle risorse correlate, viene visualizzata la finestra di dialogo **Operazione riuscita**.
+1. Fai clic su **Chiudi**.
 
    ![annullamento pubblicazione completato](/help/forms/assets/unpublishing-start.png)
 
 ## Publish Form mediante l&#39;opzione Gestisci pubblicazione
 
-Gestisci pubblicazione consente di pubblicare o annullare la pubblicazione dei contenuti da e verso la destinazione selezionata, di aggiungere contenuto all’elenco di pubblicazione dalla cartella Moduli e documenti, di selezionare i riferimenti da pubblicare e pianificare la pubblicazione a una data o un’ora successiva.  Per pubblicare i moduli con l’opzione Gestisci pubblicazione:
+Gestisci pubblicazione consente di pubblicare o annullare la pubblicazione dei contenuti da e verso la destinazione selezionata, aggiungere contenuto all&#39;elenco di pubblicazione dalla cartella `forms&documents`, selezionare i riferimenti da pubblicare e pianificare la pubblicazione a una data o un&#39;ora successiva.  Per pubblicare i moduli con l&#39;opzione **Gestisci pubblicazione**:
 
 1. Dalla console Experience Manager Forms, passa alla cartella principale e seleziona il modulo da pubblicare.
 1. Fai clic sull&#39;opzione **[!UICONTROL Gestisci pubblicazione]** nella barra degli strumenti.
 
    ![Opzione Gestisci pubblicazione](/help/forms/assets/manage-publication-option.png)
 
-   Viene visualizzata l&#39;interfaccia **Gestisci pubblicazione**:
+   Viene visualizzata l&#39;interfaccia utente **Gestisci pubblicazione**:
 
    ![Gestisci pubblicazione](/help/forms/assets/manage-publication.png)
 
-   Nell&#39;interfaccia **Gestisci pubblicazione** sono disponibili le opzioni seguenti:
+   Nell&#39;interfaccia utente **Gestisci pubblicazione** sono disponibili le seguenti opzioni:
 
    * **Azioni**
 
@@ -76,7 +81,7 @@ Gestisci pubblicazione consente di pubblicare o annullare la pubblicazione dei c
    * **Destinazione**
 
       * **Publish**: istanza Publish Forms to Experience Manager Forms (AEM) Publish.
-      * **Anteprima**: istanza di anteprima da Publish Forms a Experience Manager Forms (AEM).
+      * **Anteprima**: istanza Anteprima da Publish Forms a Experience Manager Forms (AEM).
 
    * **Pianificazione**
 
@@ -84,28 +89,33 @@ Gestisci pubblicazione consente di pubblicare o annullare la pubblicazione dei c
       * **Più tardi**: Publish Forms basato su **Data di attivazione** o ora
 
 1. Fai clic su **Avanti** per continuare.
-1. Nella scheda **Ambito**, utilizza l&#39;opzione [Aggiungi contenuto](#add-content) per aggiungere altro contenuto per la pubblicazione. È ad esempio possibile aggiungere altri file Forms o Document of Record.
+1. (Facoltativo) Nella scheda **Ambito**, utilizza l&#39;opzione [Aggiungi contenuto](#add-content) per aggiungere altro contenuto per la pubblicazione. È ad esempio possibile aggiungere altri file Forms o Document of Record.
    ![scheda ambito](/help/forms/assets/scope-tab.png)
 1. Fai clic su **[!UICONTROL Publish]** per pubblicare i moduli e le risorse correlate. Viene visualizzato un messaggio di operazione riuscita.
    ![messaggio di pubblicazione completato](/help/forms/assets/publish-successful.png)
 
 ### Aggiungi contenuto
 
-La pubblicazione in Experience Manager Forms consente di aggiungere ulteriore contenuto (moduli e cartelle) all’elenco di pubblicazione. È possibile aggiungere altri moduli o cartelle all&#39;elenco dalla cartella `formsanddocuments`. Non è tuttavia possibile aggiungere moduli da più cartelle alla volta. Per aggiungere altri moduli per la pubblicazione:
+La pubblicazione in Experience Manager Forms consente di aggiungere ulteriore contenuto (moduli) all’elenco di pubblicazione.
+Per aggiungere altri moduli per la pubblicazione:
 
 1. Fai clic sul pulsante **Aggiungi contenuto** per aggiungere altro contenuto.
 
    ![Aggiungi contenuto](/help/forms/assets/add-content.png)
 
-1. Selezionare il modulo dalla schermata **Seleziona percorso**. È possibile aggiungere più moduli da una cartella o più cartelle alla volta. Non è tuttavia possibile aggiungere moduli da più cartelle alla volta.
+2. Selezionare il modulo dalla schermata **Seleziona percorso**.
 
    ![Aggiungi contenuto](/help/forms/assets/add-assets.png)
 
-1. Per configurare i riferimenti da pubblicare o meno per un modulo, selezionare il modulo e fare clic su **[!UICONTROL Riferimenti pubblicati]**.
+   >[!NOTE]
+   >
+   > È possibile aggiungere altri moduli o cartelle all&#39;elenco dalla cartella `formsanddocuments`. Non è tuttavia possibile aggiungere moduli da più cartelle alla volta.
+
+3. Per configurare i riferimenti da pubblicare o meno per un modulo, selezionare il modulo e fare clic su **[!UICONTROL Riferimenti pubblicati]**.
 
    ![riferimenti pubblicati](/help/forms/assets/published-references.png)
 
-1. Nella finestra di dialogo **Riferimenti pubblicati**, deseleziona le risorse che intendi non pubblicare e fai clic su **[!UICONTROL Fine]**.
+4. Nella finestra di dialogo **Riferimenti pubblicati**, deseleziona le risorse che intendi non pubblicare e fai clic su **[!UICONTROL Fine]**.
    ![finestra di dialogo riferimenti pubblicati](/help/forms/assets/published-references-dialog.png)
 
 <!--
@@ -135,27 +145,30 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
 
 ### Publish o annullare la pubblicazione di un modulo in un secondo momento
 
-Oltre a consentire di pubblicare o annullare la pubblicazione dei moduli in una data e in un’ora successive, l’opzione Pubblica o Annulla pubblicazione successiva consente anche di configurare un flusso di lavoro. I moduli vengono pubblicati o ne viene annullata la pubblicazione dopo il completamento del flusso di lavoro. Per pianificare la pubblicazione o l&#39;annullamento della pubblicazione di un modulo:
+Oltre a consentire di pubblicare o annullare la pubblicazione dei moduli in una data e in un’ora successive, l’opzione Pubblica o Annulla pubblicazione successiva consente anche di configurare un flusso di lavoro. I moduli vengono pubblicati o ne viene annullata la pubblicazione dopo il completamento del flusso di lavoro.
+
+Per pianificare la pubblicazione o l&#39;annullamento della pubblicazione di un modulo:
 
 1. Dalla console Experience Manager Forms, passa alla cartella principale e seleziona il modulo da pianificare per la pubblicazione.
 1. Fai clic sull&#39;opzione **[!UICONTROL Gestisci pubblicazione]** nella barra degli strumenti.
 
    ![Gestisci pubblicazione](/help/forms/assets/manage-publication.png)
 
-1. Fai clic su **Publish** o **Annulla pubblicazione** da **[!UICONTROL Azione]**, quindi seleziona la **[!UICONTROL Destinazione]** in cui desideri pubblicare o annullare la pubblicazione del contenuto.
+1. Fai clic su **Publish** o **Annulla pubblicazione** da **[!UICONTROL Azione]**.
+1. Seleziona la **[!UICONTROL Destinazione]** in cui desideri pubblicare o annullare la pubblicazione del contenuto.
    * **Anteprima**: utilizzare l&#39;opzione **Anteprima** per pubblicare o annullare la pubblicazione in un ambiente di anteprima Experience Manager Forms. Gli ambienti di anteprima Experience Manager Forms vengono utilizzati per testare i moduli di sviluppo.
-   * **Publish**: utilizza l&#39;opzione Experience Manager Forms Publish per inviare il modulo all&#39;ambiente di pubblicazione Experience Manager Forms quando sarà pronto per l&#39;utilizzo in un ambiente di produzione.
+   * **Publish**: utilizza l&#39;opzione **Publish** di Experience Manager Forms per inviare il modulo all&#39;ambiente di pubblicazione di Experience Manager Forms quando sarà pronto per l&#39;utilizzo in un ambiente di produzione.
 
-1. Seleziona **[!UICONTROL Più tardi]** da Pianificazione.
+1. Seleziona **[!UICONTROL Più tardi]** da **Pianificazione**.
 
    ![Gestisci pubblicazione più tardi](/help/forms/assets/manage-publication-later.png)
 
 1. Seleziona un **[!UICONTROL Data di attivazione]** e specifica la data e l&#39;ora.
 1. Fai clic su **[!UICONTROL Avanti]**.
-1. Nella scheda **Ambito**, **[!UICONTROL Aggiungi contenuto]** (se necessario).
+1. (Facoltativo) Nella scheda **Ambito**, aggiungi contenuto utilizzando **[!UICONTROL Aggiungi contenuto]**.
    ![Gestisci pubblicazione aggiungi contenuto in seguito](/help/forms/assets/publish-later-add-content.png)
 1. Fai clic su **[!UICONTROL Avanti]**.
-1. (Facoltativo) Nella scheda **Flussi di lavoro**, specifica un **[!UICONTROL Titolo flusso di lavoro]**.
+1. Nella scheda **Flussi di lavoro**, specifica un **[!UICONTROL Titolo flusso di lavoro]**.
 1. Fai clic su **[!UICONTROL Publish Later]**.
 
    ![Flusso di lavoro Gestisci pubblicazione](/help/forms/assets/manage-publication-workflows.png)
