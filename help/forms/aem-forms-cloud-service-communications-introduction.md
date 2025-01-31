@@ -5,9 +5,9 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
+source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2435'
 ht-degree: 41%
 
 ---
@@ -62,9 +62,16 @@ Le API per la generazione dei documenti possono essere utilizzate per creare un 
 ![Creazione di documenti PDF](assets/outPutPDF_popup.png)
 Figura: flusso di lavoro tipico per la creazione di un documento PDF
 
+L’API di generazione del documento restituisce il documento PDF generato. Facoltativamente, puoi anche caricare i PDF generati nell’archiviazione BLOB di Azure.
+
+<span class="preview"> Il caricamento dei PDF generati utilizzando l&#39;API di generazione documenti nella funzionalità di archiviazione BLOB di Azure si trova in [Programma di adozione anticipata](/help/forms/early-access-ea-features.md). Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
+
+
 ### Creazione di documenti PostScript (PS), PCL (Printer Command Language) e Zebra Printing Language (ZPL) {#create-PS-PCL-ZPL-documents}
 
 È possibile utilizzare le API di generazione dei documenti per creare documenti PostScript (PS), Printer Command Language (PCL) e Zebra Printing Language (ZPL) basati su un progetto di modulo XDP o su un documento PDF. Queste API consentono di unire la struttura di un modulo ai dati del modulo per generare un documento. È possibile salvare il documento in un file e sviluppare un processo personalizzato per inviarlo a una stampante.
+
+
 
 <!-- ### Processing batch data to create multiple documents
 

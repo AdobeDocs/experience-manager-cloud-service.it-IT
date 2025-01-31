@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
+source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 43%
+source-wordcount: '1750'
+ht-degree: 41%
 
 ---
 
@@ -150,12 +150,6 @@ Forms adattivo consente di utilizzare i modelli e-mail di HTML. I modelli e-mail
 #### Supporto di archiviazione cloud avanzata: caricamento diretto di PDF nell’archiviazione BLOB di Azure
 
 Le API di AEM Forms Document Generation ora supportano il caricamento diretto dei documenti PDF generati nell’archiviazione BLOB di Azure. Questo miglioramento semplifica l’archiviazione e il recupero, migliorando l’efficienza e l’integrazione con i flussi di lavoro cloud.
-
-* **[Supporto di stringhe codificate Base64 per file allegati](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: il componente File allegati nei moduli adattivi basati su componenti core ora include un’opzione per inviare i file allegati come stringhe codificate Base64.
-
->[!IMPORTANT]
->
-> Ti interessa partecipare al programma di accesso anticipato per qualsiasi innovazione sui moduli? Invia un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con l’elenco delle funzionalità che ti interessano.## Componente aggiuntivo CIF {#cloud-services-cif}
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
