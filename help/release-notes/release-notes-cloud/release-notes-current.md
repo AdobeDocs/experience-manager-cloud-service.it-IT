@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
+source-git-commit: 20db0990c506aeb473b71132813cec053009275f
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 41%
+source-wordcount: '1750'
+ht-degree: 38%
 
 ---
 
@@ -126,13 +126,21 @@ Le didascalie video generate dall’intelligenza artificiale in Adobe Dynamic Me
 
 ### Nuove funzioni in AEM Forms {#forms-new-features}
 
-* **Gestisci pubblicazione**: puoi utilizzare il flusso di lavoro &quot;Gestisci pubblicazione&quot; per pubblicare o annullare la pubblicazione di moduli in ambienti diversi, in genere dall&#39;istanza di authoring alle istanze di pubblicazione e anteprima. Consente agli utenti di pubblicare, annullare o pianificare la pubblicazione dei contenuti in modo semplice.
+#### Gestisci pubblicazione 
 
-* **[Salvataggio automatico di una bozza per componenti core basati su moduli adattivi](/help/forms/save-core-component-based-form-as-draft.md)**: una funzione di salvataggio automatico consente di salvare automaticamente come bozza un modulo parzialmente completato. L’utente potrà quindi completare in un secondo momento la compilazione del modulo, anche da un altro dispositivo. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
+Puoi utilizzare il flusso di lavoro &quot;Gestisci pubblicazione&quot; per pubblicare o annullare la pubblicazione dei moduli in ambienti diversi, in genere dall’istanza di authoring a quelle di pubblicazione e anteprima. Consente agli utenti di pubblicare, annullare o pianificare la pubblicazione dei contenuti in modo semplice.
 
-* **[Miglioramenti all&#39;editor di regole](/help/forms/invoke-service-enhancements-rule-editor.md)**: per Forms adattivo basato su Componenti core, puoi utilizzare l&#39;output di Invoke Service per popolare le opzioni a discesa e impostare pannelli ripetibili o singoli. Inoltre, questo output può essere utilizzato per convalidare altri campi.
+#### Salvataggio automatico di una bozza per moduli adattivi basati su Componenti core
 
-* **[Esperienza utente ottimizzata con pulsanti di navigazione nei layout dei pannelli](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: è ora possibile aggiungere pulsanti di navigazione ai layout dei pannelli, ad esempio Schede orizzontali, Schede verticali, Pannelli a soffietto o Procedura guidata. Questi pulsanti migliorano l’esperienza utente semplificando il passaggio da un pannello a un altro e concentrandosi sul pannello selezionato.
+Gli utenti possono ora beneficiare di una [funzione di salvataggio automatico](/help/forms/save-core-component-based-form-as-draft.md) che salva automaticamente come bozza un modulo parzialmente completato. L’utente potrà quindi completare in un secondo momento la compilazione del modulo, anche da un altro dispositivo. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
+
+#### Miglioramenti dell’editor di regole
+
+Per Forms adattivo basato su Componenti core, puoi utilizzare l&#39;output [di Invoke Service per popolare le opzioni a discesa e impostare un pannello ripetibile o singolo](/help/forms/invoke-service-enhancements-rule-editor.md). Inoltre, questo output può essere utilizzato per convalidare altri campi.
+
+#### Migliora l’esperienza utente con i pulsanti di navigazione nei layout dei pannelli
+
+È ora possibile aggiungere pulsanti di spostamento ai layout del pannello, ad esempio Schede orizzontali, Schede verticali, Pannello a soffietto o Procedura guidata. Questi pulsanti [migliorano l&#39;esperienza utente semplificando le transizioni tra i pannelli, concentrandosi sul pannello selezionato](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button).
 
 
 ### Funzionalità per Accesso anticipato ad AEM Forms {#forms-new-early-access-features}
@@ -141,15 +149,15 @@ Il programma per l’accesso anticipato ad AEM Forms offre un’opportunità uni
 
 In queste note sulla versione sono elencate le innovazioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma per l’accesso anticipato, consulta la [documentazione del programma per l’accesso anticipato ad AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### [Modelli e-mail HTML in Forms adattivo](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### Modelli e-mail per HTML in Forms adattivo
 
-Forms adattivo consente di utilizzare i modelli e-mail di HTML. I modelli e-mail di HTML consentono di inviare e-mail avanzate, personalizzate e visivamente accattivanti quando viene inviato un modulo. Queste e-mail possono essere personalizzate con i dati del modulo e migliorate utilizzando vari tag e-mail, come immagini e collegamenti. Con Adaptive Forms, puoi caricare un file contenente un modello di HTML o utilizzare un editor di testo normale per creare questi modelli.
+Forms adattivo consente di utilizzare [modelli e-mail di HTML](/help/forms/html-email-templates-in-adaptive-forms.md). I modelli e-mail di HTML consentono di inviare e-mail avanzate, personalizzate e visivamente accattivanti quando viene inviato un modulo. Queste e-mail possono essere personalizzate con i dati del modulo e migliorate utilizzando vari tag e-mail, come immagini e collegamenti. Con Adaptive Forms, puoi caricare un file contenente un modello di HTML o utilizzare un editor di testo normale per creare questi modelli.
 
 ![Modelli e-mail HTML](/help/forms/assets/html-email.png)
 
 #### Supporto di archiviazione cloud avanzata: caricamento diretto di PDF nell’archiviazione BLOB di Azure
 
-Le API di AEM Forms Document Generation ora supportano il caricamento diretto dei documenti PDF generati nell’archiviazione BLOB di Azure. Questo miglioramento semplifica l’archiviazione e il recupero, migliorando l’efficienza e l’integrazione con i flussi di lavoro cloud.
+Le API di AEM Forms Document Generation ora consentono di [caricare direttamente i documenti PDF generati nell&#39;archiviazione BLOB di Azure](/help/forms/early-access-ea-features.md#doc-generation-api). Questo miglioramento semplifica l’archiviazione e il recupero, migliorando l’efficienza e l’integrazione con i flussi di lavoro cloud.
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
