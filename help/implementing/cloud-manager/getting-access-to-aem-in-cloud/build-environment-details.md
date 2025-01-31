@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7098f8aacf42e84f40b266ecae2c6fe28c84b0d3
+source-git-commit: d5461217cfec894a922b2f476aabfc04df45d9d0
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1488'
 ht-degree: 31%
 
 ---
@@ -92,7 +92,7 @@ Si consiglia la seguente strategia di distribuzione:
 
 ##### Informazioni su alcune funzioni di traduzione {#translation-features}
 
-Le seguenti funzioni potrebbero non funzionare correttamente durante la generazione con Java 21 o Java 17 e Adobe prevede di risolverle entro l’inizio del 2025:
+Le seguenti funzioni potrebbero non funzionare correttamente se distribuite in fase di runtime Java 21 e Adobe prevede di risolverle entro l’inizio del 2025:
 
 * Errore di `XLIFF` (formato file di interscambio localizzazione XML) durante l&#39;utilizzo di Traduzione umana.
 * `I18n` (internazionalizzazione) non gestisce correttamente le lingue ebraico (`he`), indonesiano (`in`) e yiddish (`yi`) a causa di modifiche nel costruttore Locale nelle versioni Java più recenti.
