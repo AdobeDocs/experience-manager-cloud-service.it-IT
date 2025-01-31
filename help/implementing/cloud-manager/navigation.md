@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 39%
+source-wordcount: '1665'
+ht-degree: 38%
 
 ---
 
@@ -133,7 +133,7 @@ Un programma di produzione potrebbe essere contrassegnato per mostrare funzioni 
 
 * ![Badge WAF-DDOS](assets/waf-ddos-protection.png) [Protezione WAF-DDOS](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-* [99,99% SLA (contratto del livello di servizio)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
+* [99,99% SLA (Service level agreement)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
 L’icona delle informazioni consente inoltre di accedere rapidamente a informazioni aggiuntive sul programma (utili nella vista a elenco).
 
@@ -215,7 +215,7 @@ A ogni programma sono associate molte opzioni e molti dati. Queste opzioni e que
 * ![Icona pagine Web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [Siti Edge Delivery](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Gestisci siti Edge Delivery
 * ![Icona Impostazioni](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [Impostazioni dominio](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Gestisci nomi di dominio personalizzati per il programma
 * ![Blocca icona chiusa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [Certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - Gestisci certificati SSL per il programma
-* ![Icona social network](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [Configurazioni CDN](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Gestisci configurazioni CDN
+* ![Icona social network](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [Mappature dominio](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Gestisci mapping dominio
 * ![Icona elenco attività](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Definisci elenchi consentiti per determinati indirizzi IP
 * ![Icona casella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [Set di contenuti](/help/implementing/developing/tools/content-copy.md) - Set di contenuti creati a scopo di copia
 * ![Icona Cronologia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [Attività copia contenuto](/help/implementing/developing/tools/content-copy.md) - Attività copia contenuto
@@ -243,7 +243,7 @@ Per un programma live, lo stato dell’ultima implementazione con collegamenti p
 
 La scheda **Ambienti** offre una panoramica degli ambienti e collegamenti per azioni rapide.
 
-Nella scheda **Ambienti** sono elencati solo tre ambienti. Per visualizzare tutti gli ambienti del programma, fai clic su **Mostra tutto**.
+Nella scheda **Ambienti** sono elencati solo tre ambienti. Fai clic sull&#39;icona ![Flusso di lavoro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Mostra tutto** per visualizzare tutti gli ambienti del programma.
 
 Vedi anche [Gestisci ambienti](/help/implementing/cloud-manager/manage-environments.md).
 
@@ -251,7 +251,7 @@ Vedi anche [Gestisci ambienti](/help/implementing/cloud-manager/manage-environme
 
 La scheda **Pipeline** offre una panoramica delle pipeline e collegamenti per azioni rapide.
 
-Nella scheda **Pipeline** sono elencate solo tre pipeline. Per visualizzare tutte le pipeline del programma, fai clic su **Mostra tutto**.
+Nella scheda **Pipeline** sono elencate solo tre pipeline. Fai clic sull&#39;icona ![Flusso di lavoro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Mostra tutto** per visualizzare tutte le pipeline del programma.
 
 Vedi anche [Gestione pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) per informazioni dettagliate su come gestire le pipeline.
 

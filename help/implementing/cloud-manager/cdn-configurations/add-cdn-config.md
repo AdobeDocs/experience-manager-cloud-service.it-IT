@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 10%
+source-wordcount: '447'
+ht-degree: 11%
 
 ---
 
@@ -31,8 +31,8 @@ Ad Adobe, per le CDN gestite, quando si utilizza un certificato SSL DV, sono con
 
    | Caso d’uso | Passaggi |
    | --- | --- |
-   | Desidero aggiungere una configurazione CDN a un sito Edge Delivery *esistente* in Cloud Manager | a. Nel menu a sinistra, in **Servizi**, fai clic su **Siti Edge Delivery**.<br> b. Nella tabella di Edge Delivery, alla fine di una riga a cui non è associato un dominio, fare clic su ![Icona Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Fare clic su **Configura rete CDN**. |
-   | Desidero aggiungere una configurazione CDN in Cloud Manager | a. Nel menu a sinistra, in **Servizi**, fai clic su **Configurazioni CDN**.<br> b. Fai clic su **Aggiungi** nell&#39;angolo superiore destro della pagina Configurazioni CDN. |
+   | Desidero aggiungere una configurazione CDN a un sito Edge Delivery *esistente* in Cloud Manager | a. Nel menu a sinistra, in **Servizi**, fai clic sull&#39;icona ![Pagine Web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Siti Edge Delivery**.<br> b. Nella tabella di Edge Delivery, alla fine di una riga a cui non è associato un dominio, fare clic su ![Icona Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Fare clic su **Configura rete CDN**. |
+   | Desidero aggiungere una configurazione CDN in Cloud Manager | a. Nel menu a sinistra, in **Servizi**, fai clic sull&#39;icona ![Social network](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Mappature dominio**.<br> b. Fare clic su **Aggiungi** nell&#39;angolo superiore destro della pagina Mapping domini. |
 
 1. Nella finestra di dialogo **Configura CDN**, nell&#39;elenco a discesa **Origin**, selezionare una delle opzioni seguenti:
 

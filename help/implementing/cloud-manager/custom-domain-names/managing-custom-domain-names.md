@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 19%
+source-wordcount: '795'
+ht-degree: 20%
 
 ---
 
@@ -33,9 +33,9 @@ In Adobe Cloud Manager, potrebbe essere utile modificare la configurazione di un
 
 1. Nell&#39;angolo superiore sinistro della pagina fare clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare il menu sul lato sinistro.
 
-1. Nell&#39;intestazione **Services**, fare clic su **Configurazioni CDN**.
+1. Nell&#39;intestazione **Servizi** fare clic su ![Icona social network](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Mapping dominio**.
 
-1. Nella pagina **Configurazioni CDN**, fai clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) alla fine di una riga di cui desideri modificare la CDN.
+1. Nella pagina **Mappature dominio**, fai clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) alla fine di una riga di cui desideri modificare il CDN.
 
 1. Fai clic su **Modifica**.
 

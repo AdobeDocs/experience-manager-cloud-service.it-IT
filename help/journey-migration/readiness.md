@@ -4,9 +4,9 @@ description: Scopri i passaggi necessari per assicurarti che l’installazione d
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1915'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ Questo documento consente di comprendere quali fattori è necessario considerare
 
 AEM as a Cloud Service offre molte nuove funzioni e opportunità per gestire i progetti AEM.
 
-Oltre a questi miglioramenti, sono state introdotte diverse differenze tra le installazioni on-premise di AEM e Managed Services Adobe, rispetto ad AEM as a Cloud Service.
+Oltre a questi miglioramenti, sono state introdotte diverse differenze tra le installazioni on-premise di AEM e Adobe Managed Services, rispetto ad AEM as a Cloud Service.
 
 L’elenco degli elementi nella tabella seguente è il sottoinsieme delle modifiche più rilevanti per una migrazione ad AEM as a Cloud Service. È possibile consultare l&#39;elenco completo delle [modifiche di rilievo apportate ad Adobe Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
@@ -161,7 +161,7 @@ L’elenco degli elementi nella tabella seguente è il sottoinsieme delle modifi
 
 Adobe valuta costantemente le funzionalità dei prodotti per reinventare o sostituire nel tempo le funzioni meno recenti con alternative più moderne al fine di migliorare il valore complessivo per il cliente, tenendo comunque in considerazione la compatibilità con le versioni precedenti.
 
-L&#39;Adobe consiglia di consultare [Funzioni obsolete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html#deprecated-features) per acquisire familiarità con le funzionalità contrassegnate come obsolete nell&#39;Experience Manager as a Cloud Service. Scopri l’impatto sull’implementazione dell’AEM.
+Adobe consiglia di consultare [Funzioni obsolete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html#deprecated-features) per acquisire familiarità con le funzioni e le funzionalità contrassegnate come obsolete nell&#39;Experience Manager as a Cloud Service. Scopri l’impatto sull’implementazione dell’AEM.
 
 ## Pianifica una revisione dell’installazione dell’AEM {#review-planning}
 
@@ -179,7 +179,7 @@ Il primo passaggio consiste nel valutare se sei pronto a passare dalla versione 
 
 Effettua una valutazione completa del tuo attuale codice sorgente AEM rispetto alle modifiche di rilievo e alle funzioni obsolete, per determinare il livello di impegno previsto nel percorso di transizione.
 
-Il numero di risultati può influenzare direttamente le tempistiche e il successo complessivo del progetto. Pertanto, Adobe consiglia di scoprirne il più possibile in modo da poter pianificare la consegna. In alternativa, avvia le conversazioni in modo da poter riprogettare qualsiasi personalizzazione necessaria per essere in linea con la best practice di AEM as a Cloud Service.
+Il numero di risultati può influenzare direttamente le tempistiche e il successo complessivo del progetto. Pertanto, Adobe consiglia di scoprirne il più possibile in modo da pianificare la consegna. In alternativa, avvia le conversazioni in modo da poter riprogettare qualsiasi personalizzazione necessaria per essere in linea con la best practice di AEM as a Cloud Service.
 
 **Analisi delle best practice**
 
@@ -196,7 +196,7 @@ Un report tipico deve contenere i seguenti input:
 * Documentazione che descrive il set di funzioni di una particolare installazione AEM
 * Dettagli sulle configurazioni personalizzate e sul codice dell’AEM
 * Configurazioni Dispatcher di produzione
-* Configurazioni CDN (se presenti)
+* Mappature del dominio (configurazioni CDN) (se presenti)
 
 **Socializzare il report**
 
@@ -220,6 +220,6 @@ Una volta compreso l&#39;ambito delle modifiche necessarie per passare ad AEM as
 
 * [Guida introduttiva a Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md): guida completa all&#39;utilizzo di Cloud Acceleration Manager per velocizzare il passaggio al cloud.
 * [AEM as a Cloud Service: introduzione, architettura e pensiero diverso](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
-* [AEM come Home del Cloud Service](/help/overview/introduction.md) - Per una panoramica della documentazione dell&#39;Experience Manager as a Cloud Service, inizia qui.
+* [AEM come Home del Cloud Service](/help/overview/introduction.md) - Per una panoramica della documentazione dell&#39;Experienci Manager as a Cloud Service, inizia qui.
 * [Panoramica di AEM as a Cloud Service](/help/overview/introduction.md) - Questa guida fornisce una panoramica di Experience Manager as a Cloud Service, inclusa un&#39;introduzione, la terminologia e l&#39;architettura.
 * [Percorso di onboarding](/help/journey-onboarding/overview.md)- Questa guida fornisce un riepilogo di come iniziare a utilizzare l&#39;Experience Manager as a Cloud Service, incluso come ottenere l&#39;accesso e configurare il team.

@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '2367'
-ht-degree: 40%
+source-wordcount: '2374'
+ht-degree: 39%
 
 ---
 
@@ -194,9 +194,9 @@ Se hai attivato altre aree di pubblicazione, puoi controllarne lo stato dalla sc
 
 In alternativa, è possibile accedere alle stesse informazioni dalla scheda **Ambienti**.
 
-1. Nella pagina **Panoramica**, seleziona la scheda **Ambienti**.
+1. Nella pagina **Panoramica**, fai clic sull&#39;icona ![Dati](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambienti**.
 
-1. Nella scheda **Ambienti**, seleziona l&#39;ambiente in cui desideri eseguire la query nel menu a sinistra.
+1. Nella pagina **Ambienti**, seleziona l&#39;ambiente in cui desideri eseguire la query nel menu a sinistra.
 
 1. Dopo aver selezionato un ambiente:
 
@@ -306,7 +306,7 @@ Questa opzione è disponibile anche nella scheda **Ambiente** della finestra **P
 
      ![Accesso locale](assets/environ-login-locally.png)
 
-   * Nel pannello laterale sinistro, fai clic su **Ambienti**. Nella pagina **Ambienti**, fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), quindi su **Accesso locale**.
+   * Nel pannello a sinistra, fai clic sull&#39;icona ![Dati](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambienti**. Nella pagina **Ambienti**, fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), quindi su **Accesso locale**.
 
      ![Accesso locale dalla scheda Ambienti](assets/environ-login-locally-2.png)
 
@@ -322,7 +322,7 @@ I nomi di dominio personalizzati sono supportati in Cloud Manager per i programm
 
 In Cloud Manager è supportato un Elenco consentiti IP per i servizi di authoring, pubblicazione e anteprima dei programmi Sites.
 
-Per gestire gli Elenchi consentiti IP, accedi alla scheda **Ambienti** della pagina **Panoramica** del programma. Fai clic su un singolo ambiente per gestirne i dettagli.
+Per gestire gli Elenchi consentiti IP, passa alla pagina ![Icona dati](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambienti** della pagina **Panoramica** del programma. Fai clic su un singolo ambiente per gestirne i dettagli.
 
 ### Applicare un Elenco consentiti IP {#apply-ip-allow-list}
 
