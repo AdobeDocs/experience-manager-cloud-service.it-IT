@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: b4ed1039e199f520a1d7b44ae9af11ecdf52f5c3
+source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 30%
+source-wordcount: '1998'
+ht-degree: 26%
 
 ---
 
@@ -109,6 +109,11 @@ Pronto per iniziare? I seguenti articoli forniscono istruzioni dettagliate per u
 
 ## Ulteriori innovazioni nell’accesso in anteprima
 
+### Modelli e-mail per HTML in Forms adattivo
+
+Forms adattivo consente di utilizzare i modelli e-mail di HTML. I modelli e-mail di HTML consentono di inviare e-mail avanzate, personalizzate e visivamente accattivanti quando viene inviato un modulo. Queste e-mail possono essere personalizzate con i dati del modulo e migliorate utilizzando vari tag e-mail, come immagini e collegamenti. Con Adaptive Forms, puoi caricare un file contenente un modello di HTML o utilizzare un editor di testo normale per creare questi modelli.
+
+
 ### Supporto lingue da destra a sinistra (RTL)
 
 È ora possibile visualizzare il Forms adattivo in una lingua RTL (Right-to-Left), per un’esperienza utente più completa e una maggiore facilità d’uso.
@@ -170,6 +175,20 @@ Il servizio Forms genera moduli PDF interattivi per l’acquisizione dei dati. P
 * **Estrazione e importazione dei dati**: importa i dati in un modulo PDF esistente ed estrae i dati da un modulo PDF compilato. Sono supportati sia i formati di dati XDP che XML e l’importazione in moduli PDF non XFA (noti anche come AcroForms); supporta anche i dati FDF e XFDF.
 
 * **Convalida dei dati**: convalida dei dati inviati, in formato XDP o XML, in base a un modello creato utilizzando AEM Forms Designer.
+
+### API di generazione documento
+
+L’API di generazione dei documenti include una funzione facoltativa che consente il caricamento diretto dei PDF generati nell’archiviazione BLOB di Azure. Alcuni vantaggi chiave del caricamento di PDF direttamente nell’archiviazione BLOB di Azure tramite l’API di generazione dei documenti sono:
+
+* **Integrazione perfetta con Cloud Storage**:
+Il caricamento diretto dei PDF generati nell’archiviazione BLOB di Azure elimina la necessità di ulteriori passaggi manuali o programmatici per trasferire i file, semplificando i flussi di lavoro e migliorando l’efficienza.
+
+* **Gestione centralizzata dei documenti**:
+L’archiviazione dei PDF nell’archiviazione BLOB di Azure consente la gestione centralizzata dei documenti, semplificando l’organizzazione, il recupero e la gestione dei file generati in vari casi d’uso.
+
+* **Protezione migliorata**: sfruttando le funzionalità di protezione integrate di Azure, ad esempio la crittografia a riposo e il controllo degli accessi basato sui ruoli, i documenti sensibili rimangono protetti durante l&#39;archiviazione.
+
+* **Percorsi di archiviazione personalizzabili**: la possibilità di definire percorsi di directory personalizzati garantisce che i PDF generati siano archiviati in percorsi organizzati e specifici dell&#39;applicazione, migliorando la gestione dei file.
 
 ## Consulta anche
 
