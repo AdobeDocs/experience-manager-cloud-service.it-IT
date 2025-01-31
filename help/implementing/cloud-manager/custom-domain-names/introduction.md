@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
+source-git-commit: 2724eaaaade94be89d33da5eecec4444cf851bd0
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 40%
@@ -75,7 +75,7 @@ L’utilizzo di nomi di dominio personalizzati con AEMaaCS presenta diverse limi
 * È possibile aggiungere un solo nome di dominio alla volta.
 * AEM as a Cloud Service non supporta i domini con caratteri jolly come `*.example.com`.
 * Prima di aggiungere un nome di dominio personalizzato, è necessario installare un certificato SSL valido contenente il nome di dominio personalizzato (i certificati con caratteri jolly sono validi).
-* Sono necessari ulteriori passaggi di configurazione per utilizzare un nome di dominio personalizzato con [la funzione Pipeline front-end.](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains)
+* Sono necessari ulteriori passaggi di configurazione per utilizzare un nome di dominio personalizzato con [la funzionalità pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains).
 
 ## Inizia {#get-started}
 
