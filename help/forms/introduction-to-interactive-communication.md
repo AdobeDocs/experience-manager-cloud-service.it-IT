@@ -5,13 +5,13 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-exl-id: 7656d6fb-8727-491d-8216-7770b78ff854
-source-git-commit: 32558fc6cd0e325132230b09f7f00a0dfaf7af0d
+source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '332'
 ht-degree: 3%
 
 ---
+
 
 # Comunicazioni interattive
 
@@ -21,11 +21,7 @@ Le comunicazioni interattive centralizzano e gestiscono la creazione, l&#39;asse
 
 Dalle istituzioni finanziarie che generano estratti conto alle agenzie governative che semplificano le notifiche di benefit, le comunicazioni interattive sono lo strumento ideale per creare corrispondenza di alta qualità, sicura e legalmente conforme con facilità ed efficienza.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444094/)
-
-<!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
-
--->
+![Editor di comunicazione interattiva](/help/forms/assets/ic-editor.png)
 
 ## Funzionalità di base
 
@@ -47,17 +43,9 @@ Le funzionalità principali dell’editor di comunicazioni interattive sono:
 
 ## Onboarding
 
-1. **Richiedi accesso**: invia un&#39;e-mail a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) dal tuo indirizzo ufficiale
-2. **Installazione dell&#39;amministratore**: Adobe abiliterà l&#39;accesso e fornirà i privilegi di amministratore
-3. **Inizia a creare**: inizia con la tua prima corrispondenza utilizzando il nostro [editor intuitivo](https://video.tv.adobe.com/v/3444094/).
+L’editor di comunicazioni interattive è disponibile nel programma di accesso anticipato per le distribuzioni di Forms as a Cloud Service. Per richiedere l&#39;accesso, invia un&#39;e-mail all&#39;ID organizzazione e ai dettagli del programma per le tue distribuzioni di Forms as a Cloud Service a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) dal tuo indirizzo ufficiale. Una volta ottenuto l&#39;accesso, inizia a [creare la prima corrispondenza](/help/forms/create-your-first-communication.md)
 
-## Domande frequenti
 
-**D: posso importare un XDP esistente nell&#39;editor di comunicazioni interattive?**
-Sì, puoi importare un XDP esistente e utilizzarlo come punto di partenza. Tutte le feature non supportate vengono evidenziate durante il processo di importazione.
-
-**Q: l&#39;editor di comunicazioni interattive è disponibile per le distribuzioni on-premise?**
-No, l’editor è disponibile solo per le distribuzioni as a Cloud Service di Forms.
 
 
 
@@ -134,8 +122,10 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 
 ## Avanti
 
-* Creare la prima corrispondenza
+* [Creare la prima corrispondenza](/help/forms/create-your-first-communication.md)
+* [Problemi frequenti](/help/forms/interactive-communications-faq.md)
 * Acquisisci familiarità con la terminologia e i concetti
 * Panoramica dell’editor di comunicazioni interattive
 * Creare un frammento
 * Visualizzare in anteprima e verificare una corrispondenza
+
