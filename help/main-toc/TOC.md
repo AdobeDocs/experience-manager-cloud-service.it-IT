@@ -774,7 +774,7 @@ ht-degree: 99%
             + [Confronta i moduli adattivi](/help/forms/compare-forms.md)
             + [Creare un’azione di invio personalizzata](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Conversione di moduli adattivi basati su componenti di base in moduli basati su Componenti core tramite lo strumento utility di migrazione](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [Modelli e-mail in Forms adattivo](/help/forms/html-email-templates-in-adaptive-forms.md)
+            + [Modelli e-mail nei moduli adattivi](/help/forms/html-email-templates-in-adaptive-forms.md)
             + Introduzione all’editor di regole per moduli adattivi basati su componenti core{#rule-editor-core-components}
                + [Introduzione all’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components.md)
                + [Interfaccia utente dell’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1024,7 +1024,7 @@ ht-degree: 99%
          + [Mostrare un messaggio di ringraziamento personalizzato dopo l’invio di un modulo](/help/edge/docs/forms/thank-you-page-form.md)
          + [Utilizzare il servizio di invio dei moduli](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
-         + [Panoramica - Editor universale per Edge Delivery Services per Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Panoramica: editor universale per Edge Delivery Services per Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Guida introduttiva](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Aggiungi regole all&#39;editor di regole](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + Funzionalità {#advanced-features-edge-delivery-services-forms}
