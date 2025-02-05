@@ -1,53 +1,54 @@
 ---
-title: Editor universale per Edge Delivery Services per Forms (blocco Forms EDS)
-description: Utilizzare Universal Editor for Edge Delivery Services for Forms (blocco EDS Forms) per creare Forms adattivo.
+title: Editor universale per Edge Delivery Services per Forms (EDS Forms Block)
+description: Utilizza l’editor universale per Edge Delivery Services per Forms (EDS Forms Block) per creare moduli adattivi.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: tm+mt
+exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
+source-git-commit: 5059437eca1dcfbfb26d1ff7b12d532472951568
+workflow-type: ht
 source-wordcount: '1114'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
-# Editor universale per Edge Delivery Services per Forms (blocco Forms EDS)
+# Editor universale per Edge Delivery Services per Forms (EDS Forms Block)
 
-Universal Editor rivoluziona la creazione di moduli per Adobe Edge Delivery Services (EDS) offrendo un’interfaccia What You See Is What You Get (WYSIWYG) semplice, visiva e intuitiva. Progettato per i creatori di contenuti e gli autori di moduli, elimina la complessità dei processi tradizionali di creazione dei moduli, rendendoli accessibili anche agli utenti non tecnici.
+L’editor universale rivoluziona la creazione di moduli per Edge Delivery Services (EDS) di Adobe grazie a un’interfaccia WYSIWYG (What You See Is What You Get) semplice, visiva e intuitiva. Progettato per chi crea contenuti e moduli, elimina la complessità dei processi tradizionali di creazione dei moduli, rendendola accessibile anche agli utenti non tecnici.
 
-Con Universal Editor è possibile progettare rapidamente moduli interattivi e reattivi utilizzando componenti predefiniti quali campi di testo, caselle di controllo e pulsanti di scelta. Il suo solido set di funzioni supporta regole dinamiche, integrazione perfetta dei dati e personalizzazione avanzata, garantendo che ogni modulo sia personalizzato in base alle tue esigenze.
+Con l’editor universale è possibile progettare rapidamente moduli interattivi e reattivi utilizzando componenti predefiniti quali campi di testo, caselle di controllo e pulsanti di scelta. Il suo solido set di funzioni supporta regole dinamiche, integrazione perfetta dei dati e personalizzazione avanzata, affinché ogni modulo possa essere personalizzato in base alle tue esigenze.
 
-Che si tratti di gestire un rendering leggero lato client, garantire la compatibilità tra browser diversi o rispettare rigorosi standard di accessibilità, Universal Editor offre una soluzione semplificata per la creazione e la gestione dei moduli.
+Che si tratti di gestire un rendering snello lato client, garantire la compatibilità tra browser diversi o rispettare rigorosi standard di accessibilità, l’editor universale offre una soluzione semplificata per la creazione e la gestione dei moduli.
 
 ![Editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} —>
 
-## Caratteristiche principali di Universal Editor per EDS Forms
+## Caratteristiche principali dell’editor universale per EDS Forms
 
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interfaccia WYSIWYG"> 
     <h3>Interfaccia WYSIWYG</h3>
-    <p>Universal Editor fornisce un'interfaccia WYSIWYG per la progettazione di moduli con una libreria di componenti predefinita, una progettazione reattiva, una creazione basata su modelli e modifiche ai campi in tempo reale.
+    <p>L’editor universale fornisce un’interfaccia WYSIWYG per la progettazione di moduli con una libreria di componenti predefinita e funzionalità per la progettazione responsive, la creazione basata su modelli e la modifica dei campi in tempo reale.
  </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="Editor regole">
-    <h3>Editor regole</h3>
-    <p>L’editor di regole consente agli utenti di creare interazioni di moduli dinamici utilizzando regole basate su eventi, convalida immediata e gestione degli errori tramite lightweight JavaScript e JSON.</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="Editor di regole">
+    <h3>Editor di regole</h3>
+    <p>L’editor di regole consente di creare interazioni dinamiche nei moduli utilizzando regole basate su eventi, convalida immediata e gestione degli errori tramite codici JavaScript e JSON snelli.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="Modalità reattiva">
     <h3>Modalità reattiva </h3>
-    <p>Progetta moduli che si adattino perfettamente ai diversi dispositivi (desktop, tablet e dispositivi mobili). Utilizza la modalità reattiva per visualizzare in anteprima e testare i moduli per diverse dimensioni di schermo.</p>
+    <p>Progetta moduli che si adattino perfettamente ai diversi dispositivi (desktop, tablet e dispositivi mobili). Utilizza la modalità reattiva per visualizzare in anteprima e testare i moduli per schermi di diverse dimensioni.</p>
   </div>
 </div>
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="Personalizzazione"> 
     <h3>Personalizzazione</h3>
-    <p>Personalization utilizza i dati utente per fornire esperienze di modulo personalizzate, regolando dinamicamente il contenuto, il layout o le opzioni in base alle preferenze dell’utente.</p>
+    <p>La personalizzazione utilizza i dati utente per fornire esperienze di modulo personalizzate, regolando dinamicamente il contenuto, il layout o le opzioni in base alle preferenze dell’utente.</p>
   </div>
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="Servizi di precompilazione">
@@ -55,27 +56,27 @@ Che si tratti di gestire un rendering leggero lato client, garantire la compatib
     <p>I servizi di precompilazione compilano automaticamente i campi del modulo con i dati utente pertinenti provenienti da varie origini, riducendo l’input manuale e migliorando l’esperienza utente.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="Editor regole">
+    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="Editor di regole">
     <h3>Test A/B</h3>
-    <p>Il test A/B (sperimentazione) consente alle organizzazioni di sperimentare diverse progettazioni di moduli, layout e funzionalità per identificare le varianti con le prestazioni migliori.</p>
+    <p>Il test A/B (sperimentazione) consente alle organizzazioni di sperimentare diverse progettazioni, layout e funzionalità nei moduli per individuare le varianti che offrono prestazioni migliori.</p>
   </div>
 </div>
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Analytics e tracciamento">
-    <h3>Analytics e tracciamento</h3>
-    <p>Ottieni informazioni sul comportamento degli utenti, sulle interazioni dei moduli e sulle percentuali di invio con analisi e tracciamento integrati per abilitare l’ottimizzazione dei moduli basati sui dati.</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Analisi e tracciamento">
+    <h3>Analisi e tracciamento</h3>
+    <p>Con le funzionalità di analisi e tracciamento integrate puoi ottenere informazioni sul comportamento degli utenti, sulle interazioni con i moduli e sui tassi di invio, per l’ottimizzazione dei moduli basata sui dati.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Integrazione con Adobe Workfront">
-    <h3> Gestione attività </h3>
-    <p>L’integrazione con Adobe Workfront consente ai team di gestire le attività di creazione e manutenzione dei moduli, garantendo flussi di lavoro semplificati.</p>
+    <h3> Gestione delle attività </h3>
+    <p>L’integrazione con Adobe Workfront consente ai team di gestire le attività di creazione e manutenzione dei moduli, garantendo flussi di lavoro più semplici e diretti.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="Associazione dei dati">
     <h3>Associazione dei dati</h3>
-    <p>L'associazione dati consente connessioni dirette tra i campi modulo e le origini dati back-end, supporta gli aggiornamenti in tempo reale e la mappatura avanzata dei dati per l'archiviazione strutturata dei dati dei reclami.</p>
+    <p>L’associazione dei dati consente connessioni dirette tra i campi modulo e le origini dati back-end, supporta gli aggiornamenti in tempo reale e la mappatura avanzata dei dati per l’archiviazione strutturata e conforme dei dati.</p>
   </div>
 </div>
 
@@ -86,12 +87,12 @@ Che si tratti di gestire un rendering leggero lato client, garantire la compatib
     <p>È possibile controllare facilmente la visibilità dei moduli, pubblicandoli o annullandone la pubblicazione direttamente dall’editor con pochi clic, per gestire dinamicamente la disponibilità e gli aggiornamenti dei contenuti in tempo reale.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Invia azioni">
-    <h3>Invia azioni</h3>
-    <p>Le azioni di invio supportano l’integrazione back-end, la logica di invio condizionale, gli endpoint sicuri e i preprocessori, semplificando i flussi di lavoro di invio.</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Azioni di invio">
+    <h3>Azioni di invio</h3>
+    <p>Le azioni di invio supportano l’integrazione back-end, la logica di invio condizionale, gli endpoint sicuri e i preprocessori, per flussi di lavoro di invio più semplici e diretti.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="Gestione attività">
+    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="Gestione delle attività">
     <h3>Componenti personalizzati</h3>
     <p>I componenti personalizzati consentono agli sviluppatori di estendere le funzionalità dei moduli creando elementi univoci personalizzati per casi d’uso specifici a livello organizzativo.</p>
   </div>
@@ -99,19 +100,19 @@ Che si tratti di gestire un rendering leggero lato client, garantire la compatib
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="Personalizzazione editor">
-    <h3>Personalizzazione editor</h3>
+    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="Personalizzazione dell’editor">
+    <h3>Personalizzazione dell’editor</h3>
     <p>Gli sviluppatori possono estendere le funzionalità dell’editor tramite le estensioni dell’interfaccia utente, abilitando soluzioni personalizzate che soddisfano esigenze organizzative specifiche.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Incorporazione di Forms">
-    <h3>Incorporazione di Forms</h3>
-    <p>Incorpora i moduli direttamente nelle pagine Sites dei Edge Delivery Services utilizzando il componente incorporato di Universal Editor per un’esperienza utente fluida.</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Incorporazione di moduli">
+    <h3>Incorporazione di moduli</h3>
+    <p>Incorpora i moduli direttamente nelle pagine dei siti di Edge Delivery Services utilizzando il componente incorporato dell’editor universale per un’esperienza utente fluida.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="Componenti personalizzati">
-    <h3>Configurazione di ringraziamento</h3>
-    <p>Personalizzare facilmente il messaggio di riconoscimento o la pagina mostrata agli utenti dopo l'invio corretto del modulo.
+    <h3>Configurazione del ringraziamento</h3>
+    <p>Personalizza facilmente il messaggio di ringraziamento o la pagina mostrata agli utenti dopo l’invio corretto del modulo.
     </p>
   </div>
 </div>
@@ -139,21 +140,21 @@ Che si tratti di gestire un rendering leggero lato client, garantire la compatib
 
 * **Editor Customization via UI Extension**: Developers can extend the functionality of the Universal Editor through UI extensions, enabling tailored solutions that fit specific organizational needs. -->
 
-## Componenti modulo predefiniti
+## Componenti dei moduli predefiniti
 
-L’Editor universale fornisce i seguenti componenti di modulo pronti all’uso:
+L’editor universale fornisce i seguenti componenti dei moduli predefiniti:
 
 <table>
   <thead>
     <tr>
       <th></th> 
-      <th>Componenti del modulo</th>
+      <th>Componenti dei moduli</th>
       <th>Descrizione</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="22"><img src="/help/edge/docs/forms/universal-editor/assets/adaptive-forms-components.png" alt="Componenti del modulo" style="width: 100%;"></td> 
+      <td rowspan="22"><img src="/help/edge/docs/forms/universal-editor/assets/adaptive-forms-components.png" alt="Componenti dei moduli" style="width: 100%;"></td> 
       <td><b>Pannello a soffietto</b></td>
       <td>Struttura del pannello comprimibile per organizzare il contenuto.</td>
     </tr>
@@ -162,8 +163,8 @@ L’Editor universale fornisce i seguenti componenti di modulo pronti all’uso:
       <td>Aggiunge elementi interattivi per azioni quali navigazione o logica personalizzata.</td>
     </tr>
     <tr>
-      <td><b>Captcha</b></td>
-      <td>Impedisce la posta indesiderata richiedendo agli utenti di completare un'attività di verifica umana utilizzando Google reCaptcha o HCaptcha.</td>
+      <td><b>CAPTCHA</b></td>
+      <td>Impedisce la posta indesiderata richiedendo agli utenti di completare un’attività di verifica umana utilizzando Google reCAPTCHA o hCAPTCHA.</td>
     </tr>
     <tr>
       <td><b>Casella di controllo</b></td>
@@ -175,7 +176,7 @@ L’Editor universale fornisce i seguenti componenti di modulo pronti all’uso:
     </tr>
     <tr>
       <td><b>Selettore data</b></td>
-      <td>Consente agli utenti di selezionare una data utilizzando un'interfaccia calendario.</td>
+      <td>Consente agli utenti di selezionare una data utilizzando un’interfaccia calendario.</td>
     </tr>
     <tr>
       <td><b>Elenchi a discesa</b></td>
@@ -199,7 +200,7 @@ L’Editor universale fornisce i seguenti componenti di modulo pronti all’uso:
     </tr>
     <tr>
       <td><b>Finestra modale</b></td>
-      <td>Visualizza una finestra di dialogo a comparsa, spesso utilizzata per avvisi, informazioni aggiuntive o conferma.</td>
+      <td>Mostra una finestra di dialogo a comparsa, spesso utilizzata per avvisi, informazioni aggiuntive o conferma.</td>
     </tr>
     <tr>
       <td><b>Campo numerico</b></td>
@@ -223,10 +224,10 @@ L’Editor universale fornisce i seguenti componenti di modulo pronti all’uso:
     </tr>
     <tr>
       <td><b>Pulsante Invia</b></td>
-      <td>Attiva l'invio di moduli e avvia flussi di lavoro definiti.</td>
+      <td>Attiva l’invio di moduli e avvia flussi di lavoro definiti.</td>
     </tr>
     <tr>
-      <td><b>Campo Numero di telefono</b></td>
+      <td><b>Campo numero di telefono</b></td>
       <td>Acquisisce i numeri di telefono con una formattazione basata sul paese.</td>
     </tr>
     <tr>
@@ -235,11 +236,11 @@ L’Editor universale fornisce i seguenti componenti di modulo pronti all’uso:
     </tr>
     <tr>
       <td><b>Campo testo</b></td>
-      <td>DC acquisisce l’input a riga singola, ad esempio nomi o indirizzi e-mail.</td>
+      <td>Acquisisce l’input a riga singola, ad esempio nomi o indirizzi e-mail.</td>
     </tr>
     <tr>
       <td><b>Procedura guidata</b></td>
-      <td>Guida gli utenti in un processo di modulo in più parti.</td>
+      <td>Guida gli utenti attraverso un processo di modulo in più parti.</td>
     </tr>
   </tbody>
 </table>
@@ -281,28 +282,28 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## Onboarding
 
-Per abilitare Universal Editor e le sue funzioni avanzate come l’editor di regole, scrivi a noi all’indirizzo aem-forms-ea@adobe.com dal tuo ID e-mail ufficiale . Il team di Adobe è a tua disposizione per aiutarti a trasformare la tua esperienza di creazione moduli.
+Per abilitare l’editor universale e le sue funzioni avanzate come l’editor di regole, contattaci all’indirizzo aem-forms-ea@adobe.com dal tuo ID e-mail ufficiale. Il team di Adobe è a tua disposizione per aiutarti a trasformare la tua esperienza di creazione moduli.
 
-## Domande frequenti
+## Domande frequenti (FAQ)
 
-**Q. Chi può utilizzare Universal Editor?**
-Universal Editor è progettato per un pubblico ampio, tra cui:
+**D. Chi può utilizzare l’editor universale?**
+L’editor universale è progettato per un pubblico ampio, tra cui:
 
 * Creatori di contenuti che desiderano creare moduli visivamente accattivanti.
 * Sviluppatori che richiedono funzionalità avanzate di personalizzazione e integrazione.
 * Organizzazioni alla ricerca di soluzioni di moduli scalabili, sicure e conformi.
 
-**D: è possibile integrare i moduli creati con Universal Editor nei sistemi esistenti?**
-Assolutamente. Universal Editor supporta l&#39;associazione diretta dei dati con i sistemi back-end, consentendo aggiornamenti in tempo reale e mappatura avanzata dei dati. Si integra anche con strumenti come Adobe Workfront per la gestione delle attività e supporta endpoint sicuri per i flussi di lavoro di invio dei dati.
+**D: è possibile integrare i moduli creati con l’editor universale nei sistemi esistenti?**
+Assolutamente. L’editor universale supporta l’associazione diretta dei dati con i sistemi back-end, consentendo aggiornamenti in tempo reale e mappatura avanzata dei dati. Si integra anche con strumenti come Adobe Workfront per la gestione delle attività e supporta endpoint sicuri per i flussi di lavoro di invio dei dati.
 
 **D: è possibile personalizzare i componenti del modulo?**
-Sì, Universal Editor consente agli sviluppatori di creare componenti personalizzati personalizzati in base a esigenze organizzative specifiche. Inoltre, puoi estendere le funzionalità dell’editor tramite estensioni dell’interfaccia utente e flussi di lavoro personalizzati.
+Sì, l’editor universale consente agli sviluppatori di creare componenti personalizzati in base a esigenze organizzative specifiche. Inoltre, puoi estendere le funzionalità dell’editor tramite estensioni dell’interfaccia utente e flussi di lavoro personalizzati.
 
-**D: in che modo Universal Editor gestisce l&#39;accessibilità?**
-L’editor universale è progettato in modo da rispettare rigorosamente gli standard di accessibilità, incluse le linee guida WCAG (Web Content Accessibility Guidelines). In questo modo i moduli sono utilizzabili da persone con disabilità e forniscono un’esperienza inclusiva.
+**D: in che modo l’editor universale gestisce l’accessibilità?**
+L’editor universale è progettato in modo da rispettare rigorosamente gli standard di accessibilità, incluse le linee guida per l’accessibilità dei contenuti WCAG (Web Content Accessibility Guidelines). In questo modo i moduli sono utilizzabili da persone affette da disabilità e forniscono un’esperienza inclusiva.
 
-**D: che tipo di analisi posso ottenere dai moduli?**
-Universal Editor include strumenti di analisi e tracciamento incorporati per monitorare le interazioni degli utenti, i tassi di invio dei moduli e le metriche di conversione. Queste informazioni consentono di ottimizzare i moduli per ottenere prestazioni migliori.
+**D: che tipo di analisi è possibile ottenere dai moduli?**
+L’editor universale include strumenti di analisi e tracciamento incorporati per monitorare le interazioni degli utenti, i tassi di invio dei moduli e le metriche di conversione. Queste informazioni consentono di ottimizzare i moduli per ottenere prestazioni migliori.
 
 
 ## Inizia a creare i moduli

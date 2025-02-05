@@ -5,19 +5,19 @@ feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
 source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '873'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Impostare i Fogli Google o i file Microsoft Excel per iniziare ad accettare i dati
 
 
-Una volta che hai [creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/create-forms.md), è il momento di abilitare il foglio di calcolo corrispondente per iniziare a ricevere i dati. È possibile
+Una volta che hai [creato e visualizzato in anteprima il modulo](/help/edge/docs/forms/create-forms.md), è il momento di abilitare il foglio di calcolo corrispondente per iniziare a ricevere i dati. Operazioni disponibili:
 
 * [Abilitare manualmente il foglio di calcolo per accettare i dati](#manually-enable-the-spreadsheet-to-accept-data)
-* [Utilizza le API di amministrazione per abilitare un foglio di calcolo ad accettare i dati](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
+* [Utilizza le API amministratore per abilitare un foglio di calcolo ad accettare i dati](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![Ecosistema di authoring basato sul documento](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -66,7 +66,7 @@ Una volta configurato il foglio per la ricezione dei dati, puoi [visualizzare in
 >  I fogli “shared-aem” non devono mai contenere informazioni personali identificabili o dati sensibili che l’utente non intende rendere accessibili pubblicamente.
 
 
-## Utilizza le API di amministrazione per abilitare un foglio di calcolo ad accettare i dati
+## Utilizza le API amministratore per abilitare un foglio di calcolo ad accettare i dati
 
 Puoi inoltre inviare una richiesta POST al modulo per abilitarlo ad accettare dati e per configurare le intestazioni per il foglio `incoming`. Dopo aver ricevuto la richiesta POST, il servizio analizza il corpo della richiesta e genera in modo autonomo le intestazioni e i fogli essenziali, necessari per l’acquisizione dei dati.
 
@@ -154,7 +154,7 @@ Per utilizzare le API di amministrazione per abilitare un foglio di calcolo ad a
 
    Il modulo è ora abilitato per l’accettazione dei dati. Nel foglio di calcolo puoi inoltre osservare le seguenti modifiche:
 
-## Il foglio viene modificato automaticamente dopo che è stato abilitato per accettare i dati.
+## modifiche automatiche al foglio dopo che è stato abilitato per l’accettazione dei dati.
 
 Una volta che il foglio è impostato per ricevere i dati, nel foglio di calcolo si osservano le seguenti modifiche:
 
