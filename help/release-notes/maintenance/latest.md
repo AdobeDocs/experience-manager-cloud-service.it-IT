@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 77d8ebeaa3914f4a91d2cf27ccc5b048e64d6b38
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 22%
+source-wordcount: '919'
+ht-degree: 21%
 
 ---
 
@@ -85,6 +85,8 @@ Con la versione di attivazione funzioni 2025.2.0 verrà fornito il set di funzio
 * SITES-26660: il confronto delle versioni dei frammenti di contenuto potrebbe essere interrotto se il @ContentType è di tipo &quot;stringa&quot;.
 * SITES-26626: CustomErrorMessage mancante nei campi numerici e booleani.
 * SITES-26268: Se durante la creazione di un frammento viene restituito un codice di stato errato, viene restituito un riferimento non valido.
+* FORMS-18098, FORMS-17954: impossibile caricare Forms adattivo in modalità Internet Explorer nel browser Microsoft Edge.
+* FORMS-17162: la pubblicazione di una risorsa comporta l’esecuzione di query OOTB che riducono le prestazioni di pubblicazione.
 
 ### Problemi noti {#known-issues-19352}
 
