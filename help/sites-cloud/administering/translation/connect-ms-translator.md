@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
-source-git-commit: 2314ad30ea31b49d832ce0fdf729420e0ee70e0c
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 65%
+ht-degree: 53%
 
 ---
 
@@ -18,7 +18,7 @@ AEM fornisce un connettore integrato per [Microsoft Translator](https://www.micr
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta il [Percorso di traduzione Sites](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o di traduzione.
+>Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione dell&#39;AEM, ideali per chi non ha esperienza di AEM o traduzione.
 
 | Proprietà | Descrizione |
 |---|---|
@@ -29,7 +29,7 @@ AEM fornisce un connettore integrato per [Microsoft Translator](https://www.micr
 
 La procedura seguente crea una configurazione di Microsoft Translator.
 
-1. Nel pannello di navigazione [,](/help/sites-cloud/authoring/basic-handling.md#first-steps) seleziona **Strumenti** > **Cloud Service** > **Cloud Service di traduzione**.
+1. Nel [pannello di navigazione](/help/sites-cloud/authoring/basic-handling.md#first-steps), seleziona **Strumenti** > **Cloud Service** > **Cloud Service di traduzione**.
 1. Passa alla posizione in cui desideri creare la configurazione. Normalmente si trova nel sito principale oppure può essere una configurazione globale predefinita.
 1. Seleziona il pulante **Crea**.
 1. Definisci la configurazione.

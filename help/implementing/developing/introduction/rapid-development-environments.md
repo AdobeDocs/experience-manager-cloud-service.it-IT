@@ -4,7 +4,7 @@ description: Scopri come utilizzare gli ambienti di sviluppo rapido per le itera
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4990'
 ht-degree: 3%
@@ -1062,7 +1062,7 @@ Per informazioni su RDE in AEM as a Cloud Service, consulta l&#39;esercitazione 
 
 ### Come ottenere la versione più recente dell’AEM per un RDE esistente {#get-latest-aem-version}
 
-Al momento della creazione, gli RDE vengono impostati sulla versione di Adobe Experience Manager (AEM) più recente disponibile. Un [ripristino RDE,](#reset-rde) che può essere eseguito utilizzando Cloud Manager o il comando `aio aem:rde:reset`, esegue un ciclo RDE e lo imposta sulla versione dell&#39;AEM disponibile più di recente.
+Al momento della creazione, gli RDE vengono impostati sulla versione di Adobe Experience Manager (AEM) più recente disponibile. Un [ripristino RDE](#reset-rde), che può essere eseguito utilizzando Cloud Manager o il comando `aio aem:rde:reset`, esegue un ciclo RDE e lo imposta sulla versione dell&#39;AEM disponibile più di recente.
 
 ## Risoluzione dei problemi del plug-in aio RDE {#aio-rde-plugin-troubleshooting}
 

@@ -4,7 +4,7 @@ description: Scopri come eseguire il servizio Universal Editor per lo sviluppo l
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 2%
@@ -101,7 +101,7 @@ La tabella seguente descrive questi e altri valori aggiuntivi disponibili.
 | `UES_SPLUNK_TOKEN` | Sì | Nessuno | Token Splunk |
 | `UES_SPLUNK_INDEX` | Sì | Nessuno | Indice in cui scrivere i registri |
 | `UES_SPLUNK_SOURCE` | Sì | `universal-editor-service` | Nome dell&#39;origine nei registri di splunk |
-| `UES_CORS_PRIVATE_NETWORK` | Sì | `false` | Abilita l&#39;invio di intestazioni CORS per consentire [una rete privata.](https://wicg.github.io/private-network-access/#private-network-request) richiesto per gli utenti di Chrome versione 130+ |
+| `UES_CORS_PRIVATE_NETWORK` | Sì | `false` | Abilita l&#39;invio di intestazioni CORS per consentire [la rete privata](https://wicg.github.io/private-network-access/#private-network-request). Richiesto per gli utenti di Chrome versione 130+ |
 
 >[!NOTE]
 >
@@ -155,6 +155,6 @@ Una volta impostato, ogni chiamata di aggiornamento del contenuto dovrebbe passa
 Con il servizio [Universal Editor Service in esecuzione localmente](#running-ue) e la [pagina di contenuto dotata di strumenti per l&#39;utilizzo del servizio locale](#using-loca-ue), ora è possibile avviare l&#39;editor.
 
 1. Apri il browser per `https://localhost:8000/ping`.
-1. Indirizza il browser per accettare [il certificato autofirmato.](#ue-https)
+1. Indirizza il browser per accettare [il certificato autofirmato](#ue-https).
 1. Una volta che il certificato autofirmato è attendibile, è possibile modificare la pagina utilizzando il servizio Universal Editor locale.
 

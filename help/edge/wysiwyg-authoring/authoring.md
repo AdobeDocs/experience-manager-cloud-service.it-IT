@@ -4,10 +4,10 @@ description: Scopri come funziona l’authoring dei contenuti con Edge Delivery 
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -44,11 +44,11 @@ L’editor universale fornisce un’interfaccia grafica moderna e intuitiva per 
 
 ![Aggiunta e disposizione di blocchi nell’editor universale](assets/blocks.png)
 
-I dettagli dei blocchi possono quindi essere configurati nel pannello Proprietà.
+I dettagli dei blocchi possono quindi essere configurati nel pannello delle Proprietà.
 
 ![Configurazione delle proprietà del blocco](assets/block-properties.png)
 
-Per informazioni dettagliate su come effettuare l’authoring con l’Editor universale, consulta il documento [Authoring dei contenuti con l’Editor universale.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+Per informazioni dettagliate su come eseguire l&#39;authoring utilizzando l&#39;editor universale, vedere il documento [Authoring dei contenuti con l&#39;editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 Consulta la [Guida introduttiva per sviluppatori di authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) per scoprire come avviare un proprio progetto per l’authoring di AEM e Edge Delivery Services.
 

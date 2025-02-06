@@ -5,7 +5,7 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 23%
@@ -108,11 +108,11 @@ Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determi
 
 ## Sito {#site}
 
-La visualizzazione **Sito** del pannello laterale mostra i dettagli dei siti [creati utilizzando un modello di sito.](/help/sites-cloud/administering/site-creation/create-site.md)
+La visualizzazione **Sito** del pannello laterale mostra i dettagli dei siti [creati utilizzando un modello di sito](/help/sites-cloud/administering/site-creation/create-site.md).
 
 ![Pannello del sito](assets/console-side-panel-site-paenl.png)
 
-Per ulteriori informazioni su come utilizzare il pannello per gestire il tema del sito [, vedere il documento [Utilizzo del pannello Sito per gestire il tema del sito](/help/sites-cloud/administering/site-creation/site-rail.md).](/help/sites-cloud/administering/site-creation/site-themes.md).
+Per ulteriori informazioni su come utilizzare il pannello per gestire il [tema del sito](/help/sites-cloud/administering/site-creation/site-themes.md), consulta il documento [Utilizzo del pannello del sito per gestire il tema del sito](/help/sites-cloud/administering/site-creation/site-rail.md).
 
 Se non hai ancora configurato la pipeline front-end per abilitare la creazione di siti basati su temi, il pannello laterale offrirà tale opzione.
 
@@ -120,7 +120,7 @@ Se non hai ancora configurato la pipeline front-end per abilitare la creazione d
 
 >[!TIP]
 >
->Per una descrizione end-to-end del processo di creazione di un sito da un modello e personalizzazione del relativo tema, vedi [Percorso di Creazione Rapida dei Siti.](/help/journey-sites/quick-site/overview.md)
+>Per una descrizione end-to-end del processo di creazione di un sito da un modello e personalizzazione del relativo tema, consulta [Percorso di creazione rapida dei siti](/help/journey-sites/quick-site/overview.md).
 
 ## Filtro {#filter}
 

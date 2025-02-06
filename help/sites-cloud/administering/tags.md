@@ -5,7 +5,7 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 1%
@@ -75,8 +75,8 @@ Per accedere alla console dei tag:
 Esistono diversi passaggi per creare e utilizzare i tag per organizzare i contenuti.
 
 1. [Crea uno spazio dei nomi per i tag](#creating-namespaces) (o scegline uno esistente da riutilizzare).
-1. [Crea un nuovo tag.](#creating-tags)
-1. [Publish il tag.](#publishing-tags)
+1. [Crea un nuovo tag](#creating-tags).
+1. [Publish il tag](#publishing-tags).
 
 ### Creazione di spazi dei nomi {#creating-namespaces}
 
@@ -96,7 +96,7 @@ Per organizzare altri tag viene utilizzato uno spazio dei nomi. Può essere cons
 
 Viene creato lo spazio dei nomi. Nella console dei tag, gli spazi dei nomi si trovano al livello più basso (nella colonna all’estrema sinistra della console) e sono rappresentati da icone di cartelle, che riflettono la loro natura di &quot;contenitore&quot; o raggruppamento di altri tag.
 
-Ora puoi [creare nuovi tag](#creating-tags) in questo spazio dei nomi o [gestire i tag esistenti.](#managing-tags)
+Ora puoi [creare nuovi tag](#creating-tags) in questo spazio dei nomi o [gestire i tag esistenti](#managing-tags).
 
 Uno spazio dei nomi non deve necessariamente contenere tag secondari. Poiché uno spazio dei nomi è di per sé un tag, può essere utilizzato per organizzare il contenuto come qualsiasi altro tag. Tuttavia, per continuare a creare una tassonomia dei tag strutturata, puoi [creare tag secondari](#creating-tags) all&#39;interno di tale spazio dei nomi in base ai requisiti del progetto.
 
@@ -104,7 +104,7 @@ Uno spazio dei nomi non deve necessariamente contenere tag secondari. Poiché un
 
 I tag vengono generalmente aggiunti agli spazi dei nomi.
 
-1. Per creare un tag, apri la [console di assegnazione tag.](#tagging-console)
+1. Per creare un tag, apri la [console tag](#tagging-console).
 
 1. Seleziona lo spazio dei nomi in cui desideri creare il tag. In alternativa, seleziona un altro tag per creare un tag secondario al di sotto di esso.
 
@@ -132,7 +132,7 @@ I tag consentono di creare in modo flessibile la propria tassonomia in base alle
 
 Come per la creazione di qualsiasi altro contenuto in AEM, dopo aver creato un tag (o namespace), questo esiste solo nell’ambiente di authoring. Affinché i tag siano disponibili per gli utenti, devi pubblicarli.
 
-1. Per pubblicare un tag, apri la [console di assegnazione tag.](#tagging-console)
+1. Per pubblicare un tag, apri la [console tag](#tagging-console).
 
 1. Selezionare il tag o i tag da pubblicare e nella barra degli strumenti selezionare **Publish**.
 
@@ -176,7 +176,7 @@ Quando nella console dei tag è selezionato un singolo tag, uno spazio dei nomi 
 
 Per visualizzare ulteriori dettagli sul tag, tra cui chi l&#39;ha pubblicato per ultimo e quando, passa dalla console alla visualizzazione **Proprietà**.
 
-1. Per visualizzare le proprietà di un tag, apri la [console di assegnazione tag.](#tagging-console)
+1. Per visualizzare le proprietà di un tag, apri la [console tag](#tagging-console).
 
 1. Seleziona il tag di cui desideri visualizzare le proprietà e nella barra a sinistra seleziona **Proprietà**.
 
@@ -192,7 +192,7 @@ Per ulteriori dettagli sulla selezione delle modalità di visualizzazione e dell
 
 I tag e gli spazi dei nomi possono essere modificati dopo la creazione.
 
-1. Per modificare un tag, apri la [console di assegnazione tag.](#tagging-console)
+1. Per modificare un tag, apri la [console tag](#tagging-console).
 
 1. Seleziona il tag da modificare e nella barra degli strumenti seleziona **Modifica**.
 
@@ -206,13 +206,13 @@ I tag e gli spazi dei nomi possono essere modificati dopo la creazione.
 
 Per informazioni dettagliate sull&#39;aggiunta di traduzioni per lingua, vedere la sezione relativa a [Gestione dei tag in lingue diverse](#managing-tags-in-different-languages).
 
-Se le modifiche apportate riguardano un tag già pubblicato, [ripubblicarlo.](#publishing-tags)
+Se le modifiche apportate riguardano un tag già pubblicato, [ripubblicarlo](#publishing-tags).
 
 ### Annullamento della pubblicazione dei tag {#unpublishing-tags}
 
 Per disattivare i tag nell’istanza di authoring e rimuoverli dall’istanza di pubblicazione, puoi annullarne la pubblicazione.
 
-1. Per annullare la pubblicazione di un tag, apri la [console di assegnazione tag.](#tagging-console)
+1. Per annullare la pubblicazione di un tag, apri la [console tag](#tagging-console).
 
 1. Seleziona il tag o i tag da annullare la pubblicazione e nella barra degli strumenti seleziona **Annulla pubblicazione**.
 
@@ -232,7 +232,7 @@ I tag selezionati sono in coda per l&#39;annullamento della pubblicazione. Se il
 
 Può essere utile vedere a quale contenuto viene applicato un particolare tag. Puoi farlo utilizzando la visualizzazione **Riferimenti** nella console di assegnazione tag.
 
-1. Per visualizzare i riferimenti di un tag, apri la [console di assegnazione tag.](#tagging-console)
+1. Per visualizzare i riferimenti di un tag, apri la [console tag](#tagging-console).
 
 1. Seleziona il tag di cui desideri visualizzare i riferimenti e nella barra a sinistra seleziona **Riferimenti**.
 
@@ -258,7 +258,7 @@ Può essere necessario riorganizzare la tassonomia dei tag spostando un tag in u
 >
 >È consigliabile che solo gli amministratori possano spostare e rinominare i tag.
 
-1. Per spostare o rinominare un tag, aprire la console di assegnazione tag [.](#tagging-console)
+1. Per spostare o rinominare un tag, aprire la [console di assegnazione tag](#tagging-console).
 
 1. Selezionare il tag da spostare o rinominare e selezionare **Sposta** nella barra degli strumenti.
 
@@ -281,7 +281,7 @@ Il tag viene rinominato e/o spostato nella nuova posizione. Quando il tag selezi
 
 Se la tassonomia dei tag include duplicati o tag simili, può essere utile unirli. Quando il tag `A` viene unito al tag `B`, tutte le pagine contrassegnate con il tag `A` vengono contrassegnate con il tag `B` e il tag `A` non è più disponibile per gli autori.
 
-1. Per unire due tag, apri la [console di assegnazione tag.](#tagging-console)
+1. Per unire due tag, apri la [console tag](#tagging-console).
 
 1. Selezionare il tag da unire in un altro tag, quindi selezionare **Unisci** nella barra degli strumenti.
 
@@ -297,7 +297,7 @@ Il tag selezionato nella console viene unito al tag specificato nella finestra d
 
 Se la tassonomia dei tag cambia e non è necessario specificare un tag o uno spazio dei nomi, è possibile eliminarlo.
 
-1. Per eliminare un tag, apri la [console di assegnazione tag.](#tagging-console)
+1. Per eliminare un tag, apri la [console tag](#tagging-console).
 
 1. Selezionare il tag da eliminare, quindi selezionare **Elimina** nella barra degli strumenti.
 
@@ -358,7 +358,7 @@ La proprietà `title` di un tag può essere tradotta in più lingue. Una volta t
 
 Supponiamo di avere un tag denominato `Animals` che vogliamo tradurre in tedesco e francese.
 
-1. Apri la console di assegnazione tag [.](#tagging-console)
+1. Apri la [console di assegnazione tag](#tagging-console).
 
 1. Seleziona il tag da tradurre, quindi seleziona **Modifica** nella barra degli strumenti.
 

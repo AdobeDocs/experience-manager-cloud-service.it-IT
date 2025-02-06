@@ -8,13 +8,13 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
+exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2335'
 ht-degree: 1%
 
 ---
-
 
 # Flusso di lavoro incentrato su Forms su OSGi {#forms-centric-workflow-on-osgi}
 
@@ -45,7 +45,7 @@ Il diagramma seguente illustra la procedura end-to-end per creare, eseguire e mo
 * Un flusso di lavoro è una rappresentazione di un processo aziendale reale. Tenere pronto il processo aziendale reale e l&#39;elenco dei partecipanti al processo aziendale. Inoltre, tieni il materiale collaterale (Forms adattivo, documenti di PDF e altro) pronto prima di iniziare a creare un flusso di lavoro.
 * Un flusso di lavoro può avere più fasi. Queste fasi vengono visualizzate nella Casella in entrata AEM e aiutano a segnalare l’avanzamento del flusso di lavoro. Dividere il processo aziendale in fasi logiche.
 * Puoi configurare il passaggio di assegnazione delle attività dei flussi di lavoro AEM per inviare notifiche e-mail agli utenti o agli assegnatari. Pertanto, [abilita notifiche e-mail](#configure-email-service).
-* Un flusso di lavoro può inoltre utilizzare il segno Adobe per le firme digitali. Se prevedi di utilizzare Adobe Sign in un flusso di lavoro, [configura Adobe Sign per [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) prima di utilizzarlo in un flusso di lavoro.
+* Un flusso di lavoro può inoltre utilizzare Adobe sign per le firme digitali. Se prevedi di utilizzare Adobe Sign in un flusso di lavoro, [configura Adobe Sign per [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) prima di utilizzarlo in un flusso di lavoro.
 
 ## Creare un modello di flusso di lavoro {#create-a-workflow-model}
 
@@ -78,7 +78,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per una richiesta d
 1. Abilita le notifiche e-mail. Puoi configurare il flusso di lavoro incentrato su Forms su OSGi per inviare notifiche e-mail agli utenti o agli assegnatari. Per abilitare le notifiche e-mail, effettua le seguenti configurazioni:
 
    1. Passare a Gestione configurazione AEM in `https://[server]:[port]/system/console/configMgr`.
-   1. Apri la configurazione del servizio di posta CQ **[!UICONTROL Day]**. Specificare un valore per i campi **[!UICONTROL Nome host server SMTP]**, **[!UICONTROL Porta server SMTP,]** e **[!UICONTROL &quot;Da&quot; indirizzo]**. Fai clic su **[!UICONTROL Salva]**.
+   1. Apri la configurazione del servizio di posta CQ **[!UICONTROL Day]**. Specificare un valore per i campi **[!UICONTROL Nome host server SMTP]**, **[!UICONTROL Porta server SMTP]** e **[!UICONTROL &quot;Da&quot; indirizzo]**. Fai clic su **[!UICONTROL Salva]**.
    1. Apri la configurazione di **[!UICONTROL Day CQ Link Externalizer]**. Nel campo **[!UICONTROL Domini]**, specifica il nome host/indirizzo IP effettivo e il numero di porta per le istanze locali, di authoring e di pubblicazione. Fai clic su **[!UICONTROL Salva]**.
 
 1. Creare fasi del flusso di lavoro. Un flusso di lavoro può avere più fasi. Queste fasi vengono visualizzate nella casella in entrata AEM e segnalano l’avanzamento del flusso di lavoro.
@@ -268,7 +268,7 @@ You can associate and execute a Forms-centric workflow on OSGi on submission of 
 You can use the Assign Task and Send Email steps of AEM Workflows to send an email. Perform the following steps to specify email servers and other configurations required to send email:
 
 1. Go to AEM configuration manager at `https://[server]:[port]/system/console/configMgr`.
-1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
+1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**. -->
 
 ### Rimuovi istanze flusso di lavoro {#purge-workflow-instances}

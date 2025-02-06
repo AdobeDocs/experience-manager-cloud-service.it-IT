@@ -4,10 +4,10 @@ description: Crea un sito demo in AEM basato su una libreria di modelli preconfi
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ Crea un sito demo in AEM basato su una libreria di modelli preconfigurati.
 
 ## La storia finora {#story-so-far}
 
-Nel precedente documento del percorso AEM Reference Demos Add-On, [Crea programma,](create-program.md) hai fatto il primo passaggio di configurazione per creare un programma a scopo di test e hai utilizzato una pipeline per distribuire il contenuto aggiuntivo. Ora dovresti:
+Nel documento precedente del percorso aggiuntivo Demo di riferimento AEM, [Crea programma](create-program.md), hai effettuato il primo passaggio di configurazione per creare un programma a scopo di test e hai utilizzato una pipeline per distribuire il contenuto aggiuntivo. Ora dovresti:
 
 * Scopri come utilizzare Cloud Manager per creare un programma.
 * Scopri come attivare AEM Reference Demos Add-On per il nuovo programma.
@@ -105,8 +105,8 @@ Adesso che hai completato questa parte del percorso di AEM Reference Demo Add-On
 
 Puoi testare le funzioni di AEM utilizzando il contenuto aggiuntivo. Sono disponibili due opzioni per continuare il percorso:
 
-* Se desideri una demo per testare il contenuto completo di AEM Screens, assicurati di aver implementato un sito basato su **Modello del sito We.Cafe** come descritto in precedenza e continua tramite [Abilita AEM Screens per il tuo sito dimostrativo.](screens.md)
-* Se utilizzi solo contenuti demo di Sites, continua con [Gestire i siti demo,](manage.md) dove troverai informazioni sugli strumenti disponibili per gestire i siti demo e su come rimuoverli.
+* Se desideri una demo per testare completamente il contenuto di AEM Screens, assicurati di aver distribuito un sito basato su **Modello del sito We.Cafe** come descritto in precedenza e continua con [Abilita AEM Screens per il tuo sito demo](screens.md).
+* Se utilizzi solo contenuti demo di Sites, continua con [Gestire i siti demo](manage.md), dove scopri gli strumenti disponibili per aiutarti a gestire i siti demo e come rimuoverli.
 
 ## Risorse aggiuntive {#additional-resources}
 

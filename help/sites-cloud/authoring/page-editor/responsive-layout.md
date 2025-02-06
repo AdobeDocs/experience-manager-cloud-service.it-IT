@@ -5,7 +5,7 @@ exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 78%
@@ -52,7 +52,7 @@ A seconda del progetto, il Contenitore di layout può essere utilizzato come sis
 
 >[!TIP]
 >
->L&#39;Adobe fornisce [documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del layout reattivo come riferimento per gli sviluppatori front-end, consentendo loro di utilizzare la griglia AEM al di fuori dell&#39;AEM, ad esempio, durante la creazione di modelli statici di HTML per un futuro sito AEM.
+>Adobe fornisce la [documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del layout reattivo come riferimento per gli sviluppatori front-end, consentendo loro di utilizzare la griglia AEM al di fuori dell&#39;AEM, ad esempio, durante la creazione di modelli statici di HTML per un futuro sito AEM.
 
 >[!NOTE]
 >
@@ -137,7 +137,7 @@ Un **Contenitore di layout** è un sistema paragrafo che:
 
 >[!NOTE]
 >
->Se non è già disponibile, il **Contenitore di layout** deve essere [attivato in modo esplicito per un sistema paragrafo/pagina.](/help/sites-cloud/administering/responsive-layout.md)
+>Se non è già disponibile, il **Contenitore di layout** deve essere [attivato in modo esplicito per un sistema paragrafo/pagina](/help/sites-cloud/administering/responsive-layout.md).
 
 1. Il **Contenitore di layout** è disponibile come componente standard nel [browser componenti](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Da qui puoi trascinarlo nella posizione desiderata sulla pagina, dopodiché potrai vedere il segnaposto **Trascina qui i componenti**.
 1. È quindi possibile aggiungere componenti al Contenitore di layout. Questi componenti includeranno il contenuto vero e proprio:
@@ -184,7 +184,7 @@ La modalità **Layout** può essere avviata in due modi.
 * Utilizzando il menu [modalità nella barra degli strumenti](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) e selezionando la modalità **Layout**
    * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Impostazione destinazione**.
    * La modalità **Layout** rimane persistente; si esce dalla modalità **Layout** solo quando si seleziona un’altra modalità mediante il selettore di modalità.
-* Quando [si modifica un singolo componente.](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)
+* Durante la[modifica di un singolo componente](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout).
    * Utilizzando l’opzione **Layout** nel menu azione rapida del componente, puoi passare alla modalità **Layout**.
    * La modalità **Layout** persiste quando si modifica il componente e torna alla modalità **Modifica** quando è attivo un altro componente.
 

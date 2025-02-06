@@ -4,10 +4,10 @@ description: Scopri le configurazioni di Adobe Experience Manager (AEM) e come g
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1482'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -78,7 +78,7 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
 
    * Il **titolo** deve essere descrittivo.
    * Il **nome** diventa il nome del nodo nell’archivio.
-      * Viene generato automaticamente in base al titolo e regolato in base alle [convenzioni di denominazione AEM.](naming-conventions.md)
+      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM](naming-conventions.md).
       * Se necessario è possibile modificarlo.
 1. Controlla il tipo di configurazioni che desideri consentire.
    * [Segmenti Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -200,7 +200,7 @@ Per supportare questa ricerca nella configurazione, AEM dispone di un meccanismo
 
 Le configurazioni dell’AEM si basano sulle configurazioni in base al contesto di Sling. I bundle Sling forniscono un’API di servizio che può essere utilizzata per ottenere configurazioni in base al contesto. Le configurazioni in base al contesto sono configurazioni correlate a una risorsa di contenuto o a una struttura di risorse come [descritto nell&#39;esempio precedente](#developer-example).
 
-Per ulteriori dettagli su configurazioni in base al contesto, esempi e modalità di utilizzo, consulta la [documentazione di Sling.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
+Per ulteriori dettagli su configurazioni in base al contesto, esempi e come utilizzarle, consulta la [documentazione di Sling](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### Console Web di ConfMgr {#confmgr-web-console}
 

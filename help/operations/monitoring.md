@@ -4,7 +4,7 @@ description: Monitoraggio dell’infrastruttura e dei servizi in AEM as a Cloud 
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 5%
@@ -29,21 +29,21 @@ La disponibilità esterna è composta da due parti: Service Edge e Custom Monito
 
 ### Edge del servizio {#service-edge}
 
-Tutti gli ambienti AEM as a Cloud Service vengono monitorati per verificarne la disponibilità. Tuttavia, il monitoraggio di Service Edge è configurato solo per gli ambienti di produzione e le metriche vengono utilizzate per calcolare lo SLA del cliente. Prende in considerazione la fase di esecuzione dell’ambiente e la rete CDN di AEM as a Cloud Service. Service Edge Monitoring utilizza cinque posizioni distinte vicine all’area geografica scelta e verifica periodicamente la disponibilità. L’indisponibilità di un sito attiva un avviso e coinvolge i team e i processi di supporto su richiesta di Adobe.
+Tutti gli ambienti AEM as a Cloud Service vengono monitorati per verificarne la disponibilità. Tuttavia, il monitoraggio di Service Edge è configurato solo per gli ambienti di produzione e le metriche vengono utilizzate per calcolare il SLA del cliente. Prende in considerazione la fase di esecuzione dell’ambiente e la rete CDN di AEM as a Cloud Service. Service Edge Monitoring utilizza cinque posizioni distinte vicine all’area geografica scelta e verifica periodicamente la disponibilità. L’indisponibilità di un sito attiva un avviso e coinvolge i team e i processi di supporto Adobe on-call.
 
 ### Monitoraggio personalizzato {#custom-monitoring}
 
-Con il monitoraggio personalizzato, i clienti possono facoltativamente fornire fino a cinque URL di proprietà Web distinti prima di [andare in diretta](/help/journey-migration/go-live.md). Questi URL devono essere validi e restituire un codice di risposta HTTP 200. Questi monitor supportano i clienti che [portano la propria rete CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) davanti alla rete CDN Adobe e a qualsiasi routing del traffico esterno utilizzato davanti ad AEM as a Cloud Service che non è sotto il controllo di Adobe. Gli avvisi derivanti dai controlli di monitoraggio personalizzati coinvolgono i team e i processi di supporto di Adobe.
+Con il monitoraggio personalizzato, i clienti possono facoltativamente fornire fino a cinque URL di proprietà Web distinti prima di [andare in diretta](/help/journey-migration/go-live.md). Questi URL devono essere validi e restituire un codice di risposta HTTP 200. Questi monitor supportano i clienti che [portano la propria rete CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) davanti all&#39;Adobe CDN e a qualsiasi routing del traffico esterno utilizzato davanti ad AEM as a Cloud Service che non è sotto il controllo di Adobe. Gli avvisi risultanti dai controlli di monitoraggio personalizzati coinvolgono i team e i processi di supporto di Adobe.
 
 >[!NOTE]
 >
-> Questa funzionalità è disponibile solo per gli ambienti di produzione e i clienti con [Supporto cloud avanzato.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) In caso di domande, contatta il team del tuo account di Adobe.
+> Questa funzionalità è disponibile solo per ambienti di produzione e clienti con [Supporto cloud avanzato](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons). In caso di domande, contatta il team del tuo account di Adobe.
 
 ## Monitoraggio di moduli interni {#module-monitoring}
 
 Mentre la disponibilità esterna si concentra sul monitoraggio degli utenti finali, il monitoraggio interno dei moduli osserva se i sottosistemi dell&#39;architettura funzionano nominalmente senza deterioramento delle funzioni o delle prestazioni. In caso di problemi, vengono attivati avvisi che consentono di eseguire le riparazioni automaticamente o tramite il coinvolgimento del team operativo, con l&#39;obiettivo di evitare problemi di disponibilità. Esistono varie categorie di monitor. Di seguito sono riportati alcuni esempi di controlli:
 
-* La percentuale di attesa della CPU non supera una determinata soglia.
+* La percentuale di iowait di CPU non supera una determinata soglia.
 * Le ridistribuzioni delle istanze non superano una determinata frequenza.
 * L&#39;utilizzo del disco è inferiore a una determinata soglia.
 * La dimensione dell’archivio di authoring rientra in alcuni limiti.

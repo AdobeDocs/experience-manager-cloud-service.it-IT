@@ -4,13 +4,13 @@ description: Scopri in che modo Universal Editor supporta l’ereditarietà dei 
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
+exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '475'
 ht-degree: 4%
 
 ---
-
 
 # Ereditarietà di contenuti nell’editor universale {#inheritance}
 
@@ -42,7 +42,7 @@ Per modificare parte del contenuto delle copie, gli autori interrompono l’ered
 
 Quando una pagina fa parte di MSM o di un lancio e il contenuto viene modificato con l&#39;Editor universale, l&#39;editor disabilita automaticamente l&#39;ereditarietà per tutte le modifiche apportate dagli autori sulla pagina, garantendo che il contenuto modificato venga mantenuto quando gli aggiornamenti vengono sincronizzati dalla blueprint.
 
-L’autore non deve fare clic su un pulsante o adottare altri passaggi per disabilitare l’ereditarietà prima di apportare modifiche locali. Non appena viene apportata una modifica, l’ereditarietà viene implicitamente annullata. Questo è in contrasto con l&#39;[Editor pagina.](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components)
+L’autore non deve fare clic su un pulsante o adottare altri passaggi per disabilitare l’ereditarietà prima di apportare modifiche locali. Non appena viene apportata una modifica, l’ereditarietà viene implicitamente annullata. Questo flusso di lavoro è in contrasto con [Editor pagina](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
 L’editor universale non influisce sul meccanismo di ereditarietà sottostante. Per ulteriori dettagli sul funzionamento dell’ereditarietà, consulta la seguente documentazione.
 
@@ -55,6 +55,6 @@ L’editor universale non influisce sul meccanismo di ereditarietà sottostante.
    * L&#39;ereditarietà può essere ripristinata solo per l&#39;intera pagina tramite
       * [Console Panoramica Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
       * [Console dei lanci](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * Utilizzo del pulsante **Reimposta** nella scheda **Live Copy** della finestra [proprietà pagina.](/help/sites-cloud/authoring/sites-console/page-properties.md)
+      * Utilizzo del pulsante **Reimposta** nella scheda **Live Copy** della finestra [proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md).
 * Gli autori non dispongono di un feedback visivo per vedere quali componenti hanno la loro ereditarietà disabilitata e quali ancora la mantengono.
-* Queste funzionalità sono attualmente limitate ai componenti nelle pagine e non sono ancora applicabili a [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md), nonostante siano disponibili anche le funzionalità MSM e Launch.
+* Queste funzioni sono attualmente limitate ai componenti nelle pagine e non si applicano ancora a [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md), nonostante questi dispongano anche delle funzionalità MSM e Launch.

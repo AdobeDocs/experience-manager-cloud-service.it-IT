@@ -5,10 +5,11 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: b55f7260628f759de2718290624cdc82da7a2961
+exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -20,7 +21,7 @@ Internazionalizza i componenti e le finestre di dialogo in modo che le relative 
 
 Utilizza il seguente processo per internazionalizzare i componenti e fornire l’interfaccia utente in diverse lingue:
 
-1. [Implementare i componenti utilizzando codice che internazionalizza le stringhe.](/help/implementing/developing/extending/i18n/dev.md) Il codice identifica le stringhe da tradurre e seleziona la lingua da presentare in fase di esecuzione.
+1. [Implementare i componenti utilizzando codice che internazionalizza le stringhe](/help/implementing/developing/extending/i18n/dev.md). Il codice identifica le stringhe da tradurre e seleziona la lingua da presentare in fase di esecuzione.
 1. Crea dizionari e aggiungi le stringhe in inglese da tradurre.
 1. Esporta il dizionario in formato XLIFF, traduci le stringhe, quindi importa nuovamente i file XLIFF in AEM.
 1. Incorpora il dizionario nel processo di gestione del rilascio dell’applicazione.

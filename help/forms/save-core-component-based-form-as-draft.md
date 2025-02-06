@@ -4,7 +4,7 @@ description: Scopri come salvare come bozza un modulo adattivo basato su compone
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 2%
@@ -22,7 +22,7 @@ Si consideri un utente che inizia a compilare un modulo ma deve sospendere e tor
 
 ## Prerequisiti
 
-* [Abilita i componenti core Forms adattivi per il tuo ambiente.](/help/forms/enable-adaptive-forms-core-components.md)
+* [Abilita i componenti core adattivi di Forms per il tuo ambiente](/help/forms/enable-adaptive-forms-core-components.md).
 
   Dopo aver distribuito i Componenti core più recenti nell’ambiente, i componenti del portale Forms diventano accessibili nell’ambiente di authoring.
 

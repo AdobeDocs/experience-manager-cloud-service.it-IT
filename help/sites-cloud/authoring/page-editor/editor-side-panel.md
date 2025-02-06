@@ -5,7 +5,7 @@ exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 38%
@@ -79,7 +79,7 @@ Per una descrizione più dettagliata del componente, puoi selezionare l&#39;icon
 
 ![Informazioni sul browser Componenti](assets/editor-side-panel-component-description.png)
 
-Per informazioni più dettagliate sui componenti disponibili, vedere [Console componenti.](/help/sites-cloud/authoring/components-console.md)
+Per informazioni più dettagliate sui componenti disponibili, vedi [Console componenti](/help/sites-cloud/authoring/components-console.md)
 
 ## Browser Risorse {#assets-browser}
 
@@ -182,4 +182,4 @@ Una pagina che fa parte di una [Live Copy](/help/sites-cloud/administering/msm/o
 
 ## Browser Contenuto associato {#associated-content-browser}
 
-Se la pagina contiene frammenti di contenuto, è possibile accedere anche al browser [Contenuto associato.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)
+Se la pagina contiene frammenti di contenuto, è possibile accedere anche al browser [Contenuto associato](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content).

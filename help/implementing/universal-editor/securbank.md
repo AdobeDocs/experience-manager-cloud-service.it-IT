@@ -4,7 +4,7 @@ description: Scopri l’Editor universale con esperienza pratica utilizzando l�
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -24,12 +24,12 @@ Scopri l’Editor universale con esperienza pratica utilizzando l’app SecurBan
 
 L’installazione dell’app SecurBank è immediata, ma poiché interessa molte aree di AEM as a Cloud Service sono necessari diversi passaggi. Di seguito è riportata una panoramica dei passaggi principali.
 
-1. [Crea un programma sandbox in Cloud Manager.](#create-sandbox-program)
-1. [Clona l’archivio Git del programma e aggiornalo con il contenuto del progetto AEM di SecurBank.](#clone-and-update)
-1. [Esegui la pipeline per distribuire il progetto AEM SecurBank.](#run-pipeline)
-1. [Recupera le credenziali di Cloud Manager per lo sviluppo di app web locali.](#retrieve-credentials)
-1. [Scarica e configura l’app web SecurBank.](#download-web-app)
-1. [Esegui l’app web SecurBank.](#run-web-app)
+1. [Crea un programma sandbox in Cloud Manager](#create-sandbox-program).
+1. [Clona l&#39;archivio Git del programma e aggiornalo con il contenuto del progetto AEM di SecurBank](#clone-and-update).
+1. [Esegui la pipeline per distribuire il progetto AEM SecurBank](#run-pipeline).
+1. [Recupera le credenziali di Cloud Manager per lo sviluppo di app Web locali](#retrieve-credentials).
+1. [Scarica e configura l&#39;app Web SecurBank](#download-web-app).
+1. [Esegui l&#39;app Web SecurBank](#run-web-app).
 
 Le sezioni seguenti descrivono in dettaglio le singole attività richieste.
 
@@ -42,13 +42,13 @@ Sarà necessario un nuovo programma Cloud Manager in cui installare SecurBank.
 1. Crea un nuovo programma sandbox per l’app SecurBank.
 
    * Utilizza le opzioni predefinite per selezionare **Soluzioni e componenti aggiuntivi**.
-   * Per informazioni dettagliate su come creare un programma sandbox, consulta il documento [Creazione di programmi sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+   * Per informazioni dettagliate su come creare un programma sandbox, consulta il documento [Creazione di programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
 
 ### Clona l’archivio Git del programma e aggiornalo con il contenuto del progetto AEM di SecurBank. {#clone-and-update}
 
 1. Una volta creato il programma, aprilo e nella scheda **Archivi** tocca o fai clic sul pulsante **Accedi a dati archivio** per aprire la finestra di dialogo **Informazioni archivio** e visualizzare le credenziali necessarie per accedere all&#39;archivio Git per l&#39;ambiente sandbox.
 
-   * Per informazioni dettagliate su come accedere alle informazioni del repository, vedere il documento [Accesso agli archivi.](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+   * Per informazioni dettagliate su come accedere alle informazioni del repository, vedere il documento [Accesso agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 1. Utilizzando le credenziali nella finestra di dialogo **Informazioni archivio**, clonare l&#39;archivio nel computer locale.
 
@@ -71,7 +71,7 @@ Con il commit del progetto AEM per SecurBank nell’archivio sandbox, è possibi
 1. Torna alla scheda **Panoramica** del programma sandbox in Cloud Manager ed esegui la pipeline non di produzione full stack.
 
    * Deseleziona tutte le opzioni per l’esecuzione della pipeline.
-   * Per ulteriori informazioni sull&#39;esecuzione delle pipeline, vedere il documento [Gestione delle pipeline.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
+   * Per ulteriori informazioni sull&#39;esecuzione delle pipeline, vedere il documento [Gestione delle pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines).
 
 ### Recupera le credenziali di Cloud Manager per lo sviluppo di app web locali. {#retrieve-credentials}
 

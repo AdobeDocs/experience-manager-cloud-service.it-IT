@@ -4,7 +4,7 @@ description: Scopri i campi e i tipi di componenti che l’Editor universale pu�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e22a2570a11df8d5f82037414f689f20b6fdb94
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 13%
@@ -24,7 +24,7 @@ Questo documento fornisce una panoramica della definizione di un modello, dei ca
 
 >[!TIP]
 >
->Se non sai come gestire l&#39;app per l&#39;editor universale, consulta il documento [Panoramica dell&#39;editor universale per gli sviluppatori AEM.](/help/implementing/universal-editor/developer-overview.md)
+>Se non sai come gestire l&#39;app per l&#39;editor universale, consulta il documento [Panoramica dell&#39;editor universale per gli sviluppatori AEM](/help/implementing/universal-editor/developer-overview.md).
 
 ## Struttura definizione modello {#model-structure}
 
@@ -139,7 +139,7 @@ Un tipo di componente tag AEM abilita un selettore di tag AEM, che può essere u
 
 #### Contenuto AEM {#aem-content}
 
-Un tipo di componente di contenuto AEM abilita un selettore di contenuti AEM, che può essere utilizzato per selezionare qualsiasi risorsa AEM. A differenza del componente [riferimento,](#reference) che può solo selezionare le risorse, il componente contenuto AEM può fare riferimento a qualsiasi contenuto AEM. Offre un tipo di convalida aggiuntivo.
+Un tipo di componente di contenuto AEM abilita un selettore di contenuti AEM, che può essere utilizzato per selezionare qualsiasi risorsa AEM. A differenza del [componente di riferimento](#reference), che può solo selezionare le risorse, il componente contenuto AEM può fare riferimento a qualsiasi contenuto AEM. Offre un tipo di convalida aggiuntivo.
 
 | Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
@@ -646,7 +646,7 @@ Un tipo di componente gruppo di scelta consente una selezione reciprocamente esc
 
 #### Riferimento {#reference}
 
-Un tipo di componente di riferimento abilita un selettore di risorse AEM, che può essere utilizzato per selezionare qualsiasi risorsa AEM a cui fare riferimento. A differenza del componente di contenuto [AEM,](#aem-content) che può selezionare qualsiasi risorsa AEM, il componente di riferimento può fare riferimento solo alle risorse. Offre un tipo di convalida aggiuntivo.
+Un tipo di componente di riferimento abilita un selettore di risorse AEM, che può essere utilizzato per selezionare qualsiasi risorsa AEM a cui fare riferimento. A differenza del [componente contenuto AEM](#aem-content), che può selezionare qualsiasi risorsa AEM, il componente di riferimento può fare riferimento solo alle risorse. Offre un tipo di convalida aggiuntivo.
 
 Un tipo di componente di riferimento consente un riferimento a un altro oggetto dati dall&#39;oggetto corrente.
 

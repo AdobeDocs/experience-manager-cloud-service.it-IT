@@ -4,10 +4,10 @@ description: Adobe Experience Manager ottimizza le prestazioni completando in mo
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 64%
+ht-degree: 60%
 
 ---
 
@@ -85,7 +85,7 @@ AEM esegue un processo di eliminazione ogni giorno alle 01:00 per eliminare i pr
 
 Puoi modificare la pianificazione per il processo di eliminazione e il periodo per il quale i dettagli dei processi completati vengono conservati prima di essere eliminati. Puoi anche configurare il numero massimo di processi completati per i quali i dettagli devono essere conservati.
 
-1. Accedere alla console Web AEM di Quickstart Jar dell&#39;SDK dell&#39;AEM all&#39;indirizzo `https://<host>:<port>/system/console` come utente amministratore.
+1. Accedere alla console Web AEM di SDK Quickstart Jar dell&#39;AEM all&#39;indirizzo `https://<host>:<port>/system/console` come utente amministratore.
 1. Passa a **OSGi** > **Configurazione**
 1. Apri il lavoro **[!UICONTROL Adobe Granite Async Jobs Purge Scheduled Job]** (Processo pianificato di rimozione dei processi asincroni di Adobe Granite).
 1. Specifica:
@@ -101,9 +101,9 @@ Puoi modificare la pianificazione per il processo di eliminazione e il periodo p
 
 Quando il numero di risorse o cartelle da eliminare supera la soglia, l’operazione di eliminazione viene eseguita in modo asincrono.
 
-1. Accedere alla console Web AEM di Quickstart Jar dell&#39;SDK dell&#39;AEM all&#39;indirizzo `https://<host>:<port>/system/console` come utente amministratore.
+1. Accedere alla console Web AEM di SDK Quickstart Jar dell&#39;AEM all&#39;indirizzo `https://<host>:<port>/system/console` come utente amministratore.
 1. Passa a **OSGi** > **Configurazione**
-1. Dalla console Web, apri la **[!UICONTROL configurazione della coda predefinita del processo asincrono]**.
+1. Dalla console Web, apri la **[!UICONTROL configurazione coda predefinita processo asincrono]**.
 1. Nella casella **[!UICONTROL Threshold number of assets]** (Soglia risorse), specifica il limite di risorse o cartelle per l’elaborazione asincrona delle operazioni di eliminazione.
 
    ![Soglia per l’eliminazione delle risorse](assets/async-delete-threshold.png)
@@ -115,9 +115,9 @@ Quando il numero di risorse o cartelle da eliminare supera la soglia, l’operaz
 
 Quando il numero di risorse, cartelle o riferimenti da spostare supera la soglia, l’operazione di spostamento viene eseguita in modo asincrono.
 
-1. Accedere alla console Web AEM di Quickstart Jar dell&#39;SDK dell&#39;AEM all&#39;indirizzo `https://<host>:<port>/system/console` come utente amministratore.
+1. Accedere alla console Web AEM di SDK Quickstart Jar dell&#39;AEM all&#39;indirizzo `https://<host>:<port>/system/console` come utente amministratore.
 1. Passa a **OSGi** > **Configurazione**
-1. Dalla console Web, apri la **[!UICONTROL configurazione dell’elaborazione asincrona del processo di spostamento.]**
+1. Dalla console Web, apri la **[!UICONTROL configurazione elaborazione processo di spostamento asincrono]**.
 1. Nella casella **[!UICONTROL Threshold number of assets/references]** (Soglia risorse/riferimenti), specifica il numero limite di risorse, cartelle o riferimenti per l’elaborazione asincrona delle operazioni di spostamento.
 
    ![Soglia per lo spostamento delle risorse](assets/async-move-threshold.png)
@@ -127,9 +127,9 @@ Quando il numero di risorse, cartelle o riferimenti da spostare supera la soglia
 
 ### Configurare le operazioni MSM asincrone {#configuring-asynchronous-msm-operations}
 
-1. Accedere alla console Web AEM di Quickstart Jar dell&#39;SDK dell&#39;AEM all&#39;indirizzo `https://<host>:<port>/system/console` come utente amministratore.
+1. Accedere alla console Web AEM di SDK Quickstart Jar dell&#39;AEM all&#39;indirizzo `https://<host>:<port>/system/console` come utente amministratore.
 1. Passa a **OSGi** > **Configurazione**
-1. Dalla console Web, apri la **[!UICONTROL configurazione dell’elaborazione asincrona del processo di spostamento.]**
+1. Dalla console Web, apri la **[!UICONTROL configurazione dell&#39;elaborazione asincrona del processo di spostamento delle pagine]**.
 1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio, success, failed.
 
    ![Configurazione MSM](assets/async-msm.png)

@@ -5,16 +5,16 @@ exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # Scopri di più sullo sviluppo di CMS headless {#learn-about}
 
-In questa parte del [Percorso per sviluppatori headless di AEM,](overview.md) scopri la tecnologia headless e perché usarla.
+In questa sezione del [Percorso di sviluppatori headless AEM](overview.md), scopri la tecnologia headless e perché usarla.
 
 ## Obiettivo {#objective}
 
@@ -127,9 +127,9 @@ Sviluppa questa conoscenza e continua il tuo percorso AEM headless rivedendo il 
 
 ## Risorse aggiuntive {#additional-resources}
 
-Si raccomanda di spostarsi nella parte successiva del percorso per lo sviluppo headless eseguendo la verifica del documento [Guida introduttiva ad AEM headless as a Cloud Service,](getting-started.md). Di seguito si trovano alcune risorse aggiuntive e facoltative per approfondire concetti menzionati in questo documento, ma non richieste per continuare il percorso headless.
+Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless esaminando il documento [Guida introduttiva all&#39;as a Cloud Service headless AEM](getting-started.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
 
-* [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Comprendere la struttura di AEM as a Cloud Service
+* [Introduzione all’Architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Comprendere la struttura di AEM as a Cloud Service
 * [Introduzione ad AEM come CMS headless](/help/headless/introduction.md)
 * Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
 * [Tutorial di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it): segui questi pratici tutorial per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.

@@ -4,7 +4,7 @@ description: La funzionalità di Asset Share Query Builder è esposta tramite un
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -29,7 +29,7 @@ L’API REST consente di accedere alle stesse funzioni tramite HTTP con risposte
 
 ## Sessione Gem {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti Adobi.
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti Adobe.
 
 Puoi [rivedere la sessione dedicata al generatore di query](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) per una panoramica e l&#39;utilizzo dello strumento.
 
@@ -487,7 +487,7 @@ Utilizza il debugger di AEM Query Builder per generare una query XPath spiegabil
 >
 >La configurazione dei logger è descritta nel documento [Registrazione](/help/implementing/developing/introduction/logging.md).
 
-L&#39;output del log (livello INFO) dell&#39;implementazione del generatore di query durante l&#39;esecuzione della query descritta nella sezione precedente [Test e debug:](#testing-and-debugging)
+L&#39;output del log (livello INFO) dell&#39;implementazione del generatore di query durante l&#39;esecuzione della query descritta nella sezione precedente [Test e debug](#testing-and-debugging)
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):

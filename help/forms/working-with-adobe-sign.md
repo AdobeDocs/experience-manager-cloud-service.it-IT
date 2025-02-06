@@ -6,7 +6,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3243'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Per creare un modulo adattivo abilitato alla firma:
 
    * Se non si dispone di un modello di modulo personalizzato, selezionare l&#39;opzione **[!UICONTROL Genera documento di record]**. Quando utilizzi l’opzione, nel documento inviato per la firma vengono visualizzati tutti i campi del modulo adattivo.
 
-1. Selezionare **[!UICONTROL Crea.]** È stato creato un modulo adattivo abilitato alla firma. Puoi aggiungere i campi [!DNL Adobe Sign] al modulo e inviarlo per la firma.
+1. Seleziona **[!UICONTROL Crea]**. Viene creato un modulo adattivo abilitato alla firma. Puoi aggiungere i campi [!DNL Adobe Sign] al modulo e inviarlo per la firma.
 
 #### Abilita [!DNL Adobe Sign] per un modulo adattivo {#editafsign}
 

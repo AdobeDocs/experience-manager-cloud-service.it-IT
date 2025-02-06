@@ -5,10 +5,10 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 74%
+ht-degree: 72%
 
 ---
 
@@ -83,7 +83,7 @@ Oltre a visualizzare le annotazioni, la modalità Annota consente di creare, mod
 
 1. Dopo aver modificato un’annotazione, puoi effettuare le seguenti operazioni:
 
-   * Selezionare l&#39;indicatore di testo per aprire l&#39;annotazione. Una volta aperto, è possibile visualizzare il testo completo, apportare modifiche o [eliminare l’annotazione.](#deleting-annotations)
+   * Selezionare l&#39;indicatore di testo per aprire l&#39;annotazione. Una volta aperto, è possibile visualizzare il testo completo, apportare modifiche o [eliminare l&#39;annotazione](#deleting-annotations).
    * Riposiziona il marcatore di testo.
    * Selezionate una linea di sketch per selezionarlo e trascinarlo nella posizione desiderata.
    * Spostare o copiare un componente

@@ -4,7 +4,7 @@ description: Scopri come impostare siti separati per gli ambienti di staging e p
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 2%
@@ -17,7 +17,7 @@ Scopri come impostare siti separati per gli ambienti di staging e produzione sfr
 
 ## Panoramica {#overview}
 
-È possibile impostare un sito per l’ambiente di produzione separato dall’ambiente di staging. La configurazione di un secondo sito per una configurazione separata di staging e produzione è simile alla configurazione [ richiesta per la gestione multisito.](/help/edge/wysiwyg-authoring/repoless-msm.md) In effetti, può essere combinato con le strutture del sito MSM se necessario.
+È possibile impostare un sito per l’ambiente di produzione separato dall’ambiente di staging. L&#39;impostazione di un secondo sito per un&#39;installazione separata di staging e produzione è simile all&#39;[installazione richiesta per la gestione multisito](/help/edge/wysiwyg-authoring/repoless-msm.md). Infatti, può essere combinato con le strutture del sito MSM se necessario.
 
 Questo documento utilizza l’esempio tipico di ambienti di staging e produzione separati. Puoi creare ambienti separati per qualsiasi ambiente.
 
@@ -33,8 +33,8 @@ In questo esempio, si presume che sia già stato creato un sito di produzione pe
 
 Esistono due passaggi per configurare un sito di produzione separato.
 
-1. [Crea nuovi siti Edge Delivery Services per l’ambiente di produzione.](#create-edge-site)
-1. [Aggiorna la configurazione cloud in AEM per il sito di produzione.](#update-cloud-configuration)
+1. [Crea nuovi siti Edge Delivery Services per l&#39;ambiente di produzione](#create-edge-site).
+1. [Aggiorna la configurazione cloud in AEM per il sito di produzione](#update-cloud-configuration).
 
 ### Creazione di nuovi siti di Edge Delivery Services per l’ambiente di produzione {#create-edge-site}
 

@@ -4,10 +4,10 @@ description: Scopri come creare profili utente in Admin Console per gestire la r
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1130'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Di tanto in tanto, Adobe contatta gli utenti in merito ai loro ambienti AEM as a
 * **Notifica per incidente**: queste notifiche vengono inviate se si verifica un incidente o se Adobe ha identificato un potenziale problema di disponibilità che interessa il tuo ambiente AEM as a Cloud Service.
 * **Notifica proattiva**: queste notifiche vengono inviate quando un membro del team del supporto Adobe desidera fornire indicazioni su una potenziale ottimizzazione o consigli su come sfruttare al megliio l’ambiente AEM as a Cloud Service.
 
-Gli utenti possono inoltre ricevere queste notifiche per programmi specifici in base alle [autorizzazioni personalizzate per gruppi.](/help/implementing/cloud-manager/custom-permissions.md)
+Gli utenti possono inoltre ricevere queste notifiche per programmi specifici in base alle loro [autorizzazioni di gruppo personalizzate](/help/implementing/cloud-manager/custom-permissions.md).
 
 È inoltre supportata l’assegnazione di gruppi a notifiche proattive, con la possibilità di assegnare direttamente utenti e gruppi ai profili di prodotto.
 
@@ -43,7 +43,7 @@ Poiché i profili utente vengono creati e gestiti in Admin Console, prima di cre
 
 Per impostare correttamente la ricezione delle notifiche, crea due profili utente. Questi passaggi vengono eseguiti una sola volta.
 
-1. Accedi a Admin Console all’indirizzo [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Accedi all&#39;Admin Console alle [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
 1. Assicurati di essere nell’organizzazione appropriata.
 
@@ -103,7 +103,7 @@ Segui questi passaggi per aggiungere utenti per i quali non sono ancora stati im
 
    ![Utenti](assets/product_services.png)
 
-1. Se l’ID federato per i membri del team non è ancora stato impostato, seleziona la scheda **Utenti** nell’area di navigazione in alto, quindi seleziona **Aggiungi utente**. In caso contrario, passa alla sezione [Aggiungere utenti esistenti ai profili.](#existing-users)
+1. Se l’ID federato per i membri del team non è ancora stato impostato, seleziona la scheda **Utenti** nell’area di navigazione in alto, quindi seleziona **Aggiungi utente**. In caso contrario, passare alla sezione [Aggiungi utenti esistenti ai profili](#existing-users).
 
    ![Utenti](assets/cloud_manager_add_user.png)
 
@@ -136,7 +136,7 @@ Segui questi passaggi per aggiungere utenti per i quali esistono già ID federat
 
 1. Seleziona la scheda **Utenti** nell’area di navigazione in alto.
 
-1. Se l’ID federato esiste già per il membro del team che desideri aggiungere a un gruppo di notifiche, individua l’utente nell’elenco e fai clic su di esso. In caso contrario, passa alla sezione [Aggiungere nuovi utenti ai profili.](#add-user)
+1. Se l’ID federato esiste già per il membro del team che desideri aggiungere a un gruppo di notifiche, individua l’utente nell’elenco e fai clic su di esso. In caso contrario, passare alla sezione [Aggiungi nuovi utenti ai profili](#add-user).
 
 1. Nella sezione **Prodotti** della finestra dei dettagli utente, fai clic sul pulsante dei puntini di sospensione e quindi seleziona **Modifica**.
 

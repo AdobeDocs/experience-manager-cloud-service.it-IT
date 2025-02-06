@@ -4,7 +4,7 @@ description: ContextHub è un framework per l’archiviazione, la manipolazione 
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%
@@ -25,7 +25,7 @@ L’API JavaScript lato client ti consente di accedere ai dati per personalizzar
 
 ## Presentazione {#presentation}
 
-La barra degli strumenti [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md) consente agli addetti al marketing e agli autori di visualizzare e manipolare i dati dell&#39;archivio per simulare l&#39;esperienza utente durante la creazione delle pagine. La barra degli strumenti è costituita da gruppi di moduli dell&#39;interfaccia utente che forniscono l&#39;accesso agli archivi [ContextHub,](#persistence) che mantengono i dati ContextHub sul client.
+La barra degli strumenti [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md) consente agli addetti al marketing e agli autori di visualizzare e manipolare i dati dell&#39;archivio per simulare l&#39;esperienza utente durante la creazione delle pagine. La barra degli strumenti è costituita da gruppi di moduli di interfaccia utente che forniscono l&#39;accesso agli [archivi ContextHub](#persistence), che rendono persistenti i dati ContextHub sul client.
 
 Ogni modulo dell’interfaccia utente ContextHub è un’istanza di un tipo di modulo predefinito:
 

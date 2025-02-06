@@ -1,23 +1,23 @@
 ---
-source-git-commit: 8d8e5ba548c13d3d908a549f52a8b91946b35361
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 55%
+source-wordcount: '503'
+ht-degree: 67%
 
 ---
 # Contributi alla documentazione di Adobe Experience Manager Cloud Service
 
-Grazie per aver scelto di contribuire alla documentazione di Adobe Experience Manager Cloud Service. Il team della documentazione accoglie con favore i contributi ai contenuti da parte dell’intera comunità dei lettori e di colleghi Adobi.
+Grazie per aver scelto di contribuire alla documentazione di Adobe Experience Manager Cloud Service. Il team della documentazione accoglie con favore i contributi ai contenuti da parte dell’intera community di lettori e di colleghi Adobe.
 
 Questo file descrive come contribuire e indica le linee guida da seguire per apportare i contributi.
 
 ## Codice di condotta per open source Adobe
 
-Questo progetto ha adottato il [Codice di condotta per open source Adobe](code-of-conduct.md). Contribuendo alla documentazione di AEM si accetta implicitamente di aderire a questo codice di condotta. Segnala comportamenti non accettabili a [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+Questo progetto ha adottato il [Codice di condotta per open source Adobe](code-of-conduct.md). Contribuendo alla documentazione di AEM si accetta implicitamente di aderire a questo codice di condotta. Segnala eventuali comportamenti inaccettabili all’indirizzo e-mail [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Linee guida per contribuire
 
-Se da un lato sono benvenuti tutti i contributi per migliorare la documentazione dell’AEM, assicurati che i contributi aderiscano, ove possibile, a determinati standard e linee guida. Rivedi [Linee guida per contribuire alla documentazione dell’AEM](guidelines.md) per ulteriori informazioni.
+Se da un lato sono benvenuti tutti i contributi per migliorare la documentazione dell’AEM, assicurati che i contributi aderiscano, ove possibile, a determinati standard e linee guida. Per ulteriori informazioni, consulta le [Linee guida per contribuire alla documentazione di AEM](guidelines.md).
 
 ## Come contribuire
 
@@ -36,13 +36,13 @@ Il metodo scelto dipende dal grado di familiarità con le procedure di modifica 
 
 Desideri proporre un suggerimento o un’osservazione sulla documentazione corrente o segnalare un potenziale errore nella descrizione di una funzione? In tal caso, crea un problema. I problemi sono eccellenti anche se hai qualcosa da contribuire, ma non ti senti a tuo agio a modificare la documentazione o a fare una richiesta.
 
-La segnalazione di un problema consente di descrivere facilmente la tua proposta per migliorare la documentazione, che verrà esaminata da un membro del team addetto alla documentazione dei AEM. Fai clic su **[!UICONTROL Segnala un problema]** nella parte superiore del pannello di navigazione a destra di qualsiasi pagina per creare un problema.
+La segnalazione di un problema consente di descrivere facilmente la tua proposta per migliorare la documentazione, che verrà esaminata da un membro del team addetto alla documentazione dei AEM. Fai clic sul collegamento **[!UICONTROL Segnala un problema]** in alto nel pannello di navigazione a destra di qualsiasi pagina per creare un problema.
 
 ### Creare una richiesta pull {#create-a-pull-request}
 
-Se noti un problema e sai esattamente come correggerlo, puoi creare una richiesta. Le richieste consentono di apportare alla documentazione le modifiche desiderate che, prima di essere pubblicate, saranno esaminate da un membro del team addetto alla documentazione di AEM. Fai clic su **[!UICONTROL Modifica questa pagina]** collega nella parte superiore del pannello di navigazione a destra di qualsiasi pagina per apportare le modifiche suggerite e creare la richiesta di pull.
+Se noti un problema e sai esattamente come correggerlo, puoi creare una richiesta. Le richieste consentono di apportare alla documentazione le modifiche desiderate che, prima di essere pubblicate, saranno esaminate da un membro del team addetto alla documentazione di AEM. Fai clic sul collegamento **[!UICONTROL Modifica questa pagina]** nella parte superiore del pannello di navigazione a destra di qualsiasi pagina per apportare le modifiche suggerite e creare la richiesta di pull.
 
-Tutte le richieste devono essere accompagnate da un [contratto di licenza per i collaboratori (CLA) firmato.](https://opensource.adobe.com/cla.html) In questo modo si concede ad Adobe il permesso di ridistribuire i contributi come parte del progetto. È sufficiente inviare un CLA di Adobe una sola volta; se lo hai già inviato in passato, non è necessario ripetere questa operazione.
+Tutte le richieste pull devono essere accompagnate da un [contratto di licenza per i collaboratori (CLA)](https://opensource.adobe.com/cla.html) firmato. In questo modo ad Adobe è dato il permesso di ridistribuire i contributi come parte del progetto. È sufficiente inviare un CLA di Adobe una sola volta; se lo hai già inviato in passato, non è necessario ripetere questa operazione.
 
 ### Breve video introduttivo
 
@@ -52,9 +52,9 @@ Nel video seguente viene brevemente illustrato come segnalare un problema e crea
 
 ### Contributi da dipendenti Adobe
 
-Se sei un dipendente Adobe e vuoi fornire un contributo, utilizza `AdobeDocs` organizzazione nell’archivio Git aziendale.
+Se sei un dipendente di Adobe e desideri fornire un contributo, utilizza l’organizzazione `AdobeDocs` nell’archivio Git aziendale.
 
-Il team di documentazione è soddisfatto di qualsiasi contributo e, se inserito nell’archivio pubblico, lo esaminerà. Tuttavia, le richieste pull dei dipendenti Adobe sono più facili da elaborare e possono essere approvate più rapidamente nell’archivio aziendale. Assicurati che eventuali informazioni proprietarie vengano discusse solo sull’archivio aziendale.
+Il team di documentazione è soddisfatto di qualsiasi contributo e, se inserito nell’archivio pubblico, lo esaminerà. Tuttavia, le richieste pull dei dipendenti Adobe sono più facili da elaborare e possono essere approvate più rapidamente nell’archivio aziendale. Assicurati che eventuali informazioni proprietarie vengano affrontate solo nell’archivio aziendale.
 
 ## Ulteriori informazioni
 

@@ -5,10 +5,10 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3088'
-ht-degree: 43%
+ht-degree: 40%
 
 ---
 
@@ -30,7 +30,7 @@ Inoltre, durante la progettazione di una tassonomia, è importante considerare l
 
 ### Query nei componenti {#queries-in-components}
 
-Poiché le query possono essere una delle operazioni più gravose su un sistema AEM, è consigliabile evitarle nei componenti. Spesso, l’esecuzione di più query ogni volta che viene eseguito il rendering di una pagina può compromettere le prestazioni del sistema. Esistono due strategie che possono essere utilizzate per evitare l’esecuzione di query durante il rendering dei componenti: **[navigazione dei nodi](#traversing-nodes)** e **[preacquisizione dei risultati.](#prefetching-results)**
+Poiché le query possono essere una delle operazioni più gravose su un sistema AEM, è consigliabile evitarle nei componenti. Spesso, l’esecuzione di più query ogni volta che viene eseguito il rendering di una pagina può compromettere le prestazioni del sistema. Esistono due strategie che possono essere utilizzate per evitare l&#39;esecuzione di query durante il rendering dei componenti: **[navigazione dei nodi](#traversing-nodes)** e **[preacquisizione dei risultati](#prefetching-results)**.
 
 ### Navigazione dei nodi {#traversing-nodes}
 
@@ -62,14 +62,14 @@ Una strategia simile può essere utilizzata per mantenere il risultato in una ca
 
 ## Ottimizzazione delle query {#optimizing-queries}
 
-La documentazione Oak fornisce una [panoramica di alto livello sulle modalità di esecuzione delle query.](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing) Questo costituisce la base di tutte le attività di ottimizzazione descritte nel presente documento.
+La documentazione di Oak fornisce una [panoramica di alto livello sulle modalità di esecuzione delle query](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing). Questo costituisce la base di tutte le attività di ottimizzazione descritte nel presente documento.
 
 AEM as a Cloud Service fornisce lo [strumento Prestazioni query](#query-performance-tool), progettato per supportare l&#39;implementazione di query efficienti.
 
 * Vengono visualizzate le query già eseguite con le relative caratteristiche di prestazione e la pianificazione delle query.
 * Consente l’esecuzione di query ad-hoc a vari livelli, a partire dalla semplice visualizzazione della pianificazione delle query, fino all’esecuzione della query completa.
 
-Lo strumento Prestazioni query è raggiungibile tramite la [Console per sviluppatori in Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it#queries) Lo strumento Prestazioni query di AEM as a Cloud Service fornisce ulteriori informazioni sui dettagli dell’esecuzione della query sulla versione 6.x di AEM.
+Lo strumento Prestazioni query è raggiungibile tramite [Developer Console in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it#queries). Lo strumento Prestazioni query di AEM as a Cloud Service fornisce ulteriori informazioni sui dettagli dell’esecuzione della query sulla versione AEM 6.x.
 
 Questo grafico illustra il flusso generale da utilizzare per ottimizzare le query con lo strumento Prestazioni query.
 

@@ -5,7 +5,7 @@ exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4415'
 ht-degree: 77%
@@ -23,7 +23,7 @@ Quando un autore crea una pagina, deve selezionare un modello da utilizzare come
 
 >[!NOTE]
 >
->[Sono disponibili anche modelli per la creazione di pagine modificabili con Universal Editor.](/help/sites-cloud/authoring/universal-editor/templates.md)
+>[Sono disponibili anche modelli per la creazione di pagine modificabili con Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md).
 
 Con **Editor modelli**, la creazione e la gestione dei modelli non è un&#39;attività che riguarda solo gli sviluppatori. Un tipo di utente avanzato, denominato **autore di modelli**, può creare modelli. Gli sviluppatori devono configurare l&#39;ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che queste nozioni di base sono implementate, **l&#39;autore del modello** ha la flessibilità di creare e configurare i modelli senza coinvolgere uno sviluppatore.
 
@@ -95,7 +95,7 @@ Quando crei un modello modificabile:
 >
 >Non immettere mai informazioni che devono essere [internazionalizzate](/help/implementing/developing/extending/i18n/dev.md) in un modello.
 >
->Per gli elementi modello che devono essere localizzati, come intestazioni e piè di pagina, utilizza le funzioni di [localizzazione dei componenti core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it)
+>Per gli elementi modello che devono essere localizzati, ad esempio intestazioni e piè di pagina, utilizzare le [funzionalità di localizzazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it).
 
 ### Creazione di una cartella di modelli - Amministratore {#creating-a-template-folder-admin}
 
@@ -210,7 +210,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
 
 Poiché al modello viene fatto riferimento durante il rendering di una pagina, il modello completamente configurato deve essere pubblicato in modo che sia disponibile nell’ambiente di pubblicazione.
 
-Modelli di Publish tramite la console **[Modelli.](/help/sites-cloud/administering/templates-console.md)**
+Modelli di Publish che utilizzano **[Templates Console](/help/sites-cloud/administering/templates-console.md)**.
 
 ## Modifica dei modelli - Autori dei modelli   {#editing-templates-template-authors}
 
@@ -305,7 +305,7 @@ Una volta aggiunto, ogni componente viene contrassegnato con:
 
 >[!NOTE]
 >
->Sebbene non sia identica, l&#39;aggiunta di componenti e risorse a un modello ha molte somiglianze con azioni simili durante l&#39;authoring di [pagine.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+>Sebbene non sia identica, l’aggiunta di componenti e risorse a un modello ha molte somiglianze con azioni simili durante la [creazione di pagine](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 #### Azioni dei componenti {#component-actions}
 
@@ -647,4 +647,4 @@ Quando crei dei modelli, prendi in considerazione quanto segue:
    >AEM fornisce avvisi espliciti quando si modifica lo stato di blocco dei componenti nei modelli che non sono più bozze.
 
 1. [Creazione di cartelle personalizzate](#creating-a-template-folder-admin) per i modelli specifici del sito.
-1. [Publish i tuoi modelli](#publishing-a-template-template-author) dalla console **[Modelli.]**(/help/sites-cloud/administering/templates-console.md)
+1. [Publish i tuoi modelli](#publishing-a-template-template-author) dalla **[console Modelli]**(/help/sites-cloud/administering/templates-console.md).

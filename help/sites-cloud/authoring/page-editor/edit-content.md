@@ -5,10 +5,10 @@ exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -44,7 +44,7 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 
   ![Segnaposto per l’aggiunta di un nuovo componente a una pagina](assets/edit-content-component-placeholder.png)
 
-* Quando [sposta un componente esistente,](#movging-components) verrà visualizzato come un quadrato blu.
+* Quando [si sposta un componente esistente](#movging-components), questo verrà visualizzato come un quadrato blu.
 
   ![Segnaposto per lo spostamento di un componente esistente su una pagina](assets/edit-content-move-placeholder.png)
 
@@ -54,8 +54,8 @@ In entrambi i casi, la destinazione selezionata verrà visualizzata come un cont
 
 Puoi aggiungere un nuovo componente utilizzando il [browser componenti](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Il segnaposto [componente](#component-placeholder) mostra dove stai posizionando il componente.
 
-1. Verificare che l&#39;editor di pagine sia in modalità [**Modifica**.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
-1. Apri il browser dei componenti [.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+1. Verificare che l&#39;editor di pagine sia in modalità [**Modifica**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector).
+1. Apri il [browser Componenti](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser).
 1. Trascina il componente richiesto nella [posizione richiesta](#component-placeholder) e rilascialo.
 1. [Modifica](#edit-content) il componente appena inserito.
 
@@ -67,7 +67,7 @@ Puoi aggiungere un nuovo componente utilizzando il [browser componenti](/help/si
 
 Puoi aggiungere un nuovo componente utilizzando il segnaposto **Trascina qui i componenti** del sistema paragrafo:
 
-1. Verificare che l&#39;editor di pagine sia in modalità [**Modifica**.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. Verificare che l&#39;editor di pagine sia in modalità [**Modifica**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector).
 1. Per selezionare e aggiungere un nuovo componente dal sistema paragrafo esistono due modi:
 
    * Seleziona l’opzione **Inserisci componente** (+) dalla barra degli strumenti di un componente esistente o dalla casella **Trascina qui i componenti**.
@@ -87,13 +87,13 @@ Puoi aggiungere un nuovo componente utilizzando il segnaposto **Trascina qui i c
 
 ## Aggiunta di una risorsa {#adding-asset}
 
-Puoi anche aggiungere un nuovo componente alla pagina trascinando una risorsa dal browser [ risorse.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) Crea automaticamente un componente del tipo appropriato (e contenente la risorsa).
+Puoi anche aggiungere un nuovo componente alla pagina trascinando una risorsa dal browser [risorse](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser). Questo crea automaticamente un componente del tipo appropriato (e che contiene la risorsa).
 
 Puoi configurare questo comportamento per l’installazione in uso. Per ulteriori informazioni, consultare il documento [Guida di riferimento ai componenti](/help/implementing/developing/components/reference.md#component-placeholders).
 
 Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 
-1. Assicurati che la pagina sia in modalità [**Modifica**.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. Assicurati che la pagina sia in [**modalità Modifica**.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
 1. Apri il [browser Risorse](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser).
 1. Trascina la risorsa richiesta nella posizione desiderata. Il segnaposto [componente](#component-placeholder) mostra dove è posizionato il componente e viene visualizzata una destinazione in cui verrà inserito.
 1. Rilascia la risorsa sul target. Nella posizione richiesta viene creato un componente appropriato per il tipo di risorsa, contenente la risorsa selezionata.
@@ -133,7 +133,7 @@ Le azioni disponibili nella barra degli strumenti del componente sono appropriat
 
   ![Pulsante Elimina](assets/edit-content-delete.png)
 
-* **Inserisci componente** apre la finestra di dialogo per [aggiungere un nuovo componente.](#adding-a-component-from-the-paragraph-system)
+* **Inserisci componente** apre la finestra di dialogo per [aggiungere un nuovo componente](#adding-a-component-from-the-paragraph-system).
 
   ![Pulsante Inserisci](assets/edit-content-insert-component.png)
 
@@ -219,7 +219,7 @@ Invece di passare più volte dalla modalità di modifica alla [modalità di layo
 
    ![Pulsante Layout della barra degli strumenti del componente](assets/edit-content-layout.png)
 
-1. Una volta selezionata l&#39;azione Layout, è possibile modificare il layout del componente come si fa in modalità [layout.](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)
+1. Una volta selezionata l&#39;azione Layout, è possibile modificare il layout del componente come si fa in [modalità layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode).
 
    * Vengono visualizzate le maniglie di ridimensionamento del componente.
    * La barra degli strumenti dell’emulatore viene visualizzata nella parte superiore dello schermo.

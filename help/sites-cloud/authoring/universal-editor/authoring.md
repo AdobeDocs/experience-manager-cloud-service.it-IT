@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1378'
-ht-degree: 23%
+source-wordcount: '1370'
+ht-degree: 22%
 
 ---
 
@@ -25,11 +25,11 @@ A questo scopo, l’editor universale offre agli autori di contenuti un’interf
 
 >[!NOTE]
 >
->In questo documento si presuppone che tu abbia già familiarità con le modalità di accesso e navigazione all’Editor universale. In caso contrario, vedere il documento [Accesso e navigazione nell&#39;editor universale.](/help/sites-cloud/authoring/universal-editor/navigation.md)
+>In questo documento si presuppone che tu abbia già familiarità con le modalità di accesso e navigazione all’Editor universale. In caso contrario, vedere [Accesso e navigazione nell&#39;editor universale](/help/sites-cloud/authoring/universal-editor/navigation.md).
 
 >[!TIP]
 >
->Per un’introduzione più dettagliata all’editor universale, consulta il documento [Introduzione all’editor universale.](/help/implementing/universal-editor/introduction.md)
+>Per un&#39;introduzione più dettagliata all&#39;editor universale, vedere [Introduzione all&#39;editor universale](/help/implementing/universal-editor/introduction.md).
 
 ## Modifica del contenuto {#editing-content}
 
@@ -39,9 +39,9 @@ La modifica del contenuto è semplice e intuitiva. Quando passi il mouse sul con
 
 >[!TIP]
 >
->Per impostazione predefinita, tocca o fai clic sul contenuto per selezionarlo per la modifica. Se desideri esplorare il contenuto tramite i seguenti collegamenti, passa alla modalità di anteprima [.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
+>Per impostazione predefinita, tocca o fai clic sul contenuto per selezionarlo per la modifica. Se desideri esplorare il contenuto tramite i seguenti collegamenti, passa alla [modalità anteprima](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
 
-A seconda del contenuto selezionato, è possibile che siano disponibili diverse opzioni di modifica diretta e che siano disponibili ulteriori informazioni e opzioni per il contenuto nel pannello [proprietà.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+A seconda del contenuto selezionato, è possibile che siano disponibili diverse opzioni di modifica diretta e che siano disponibili ulteriori informazioni e opzioni per il contenuto nel [pannello delle proprietà](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
 
 ### Modifica del testo normale {#edit-plain-text}
 
@@ -51,7 +51,7 @@ Per modificare il testo nella posizione desiderata, fai doppio clic o tocca due 
 
 Il contorno blu sottile si trasforma in un contorno blu pesante per indicare la selezione e viene visualizzato un cursore. Apportare le modifiche e premere Invio/Ritorna o selezionare all&#39;esterno della casella di testo per salvare le modifiche.
 
-Quando selezioni il componente testo, i relativi dettagli vengono visualizzati nel pannello delle proprietà [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Puoi anche modificare il testo nel pannello.
+Quando selezioni il componente testo, i relativi dettagli vengono visualizzati nel [pannello delle proprietà](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). Potete anche modificare il testo nel pannello.
 
 ![Modifica del testo nel pannello delle proprietà](assets/ue-editing-text-component-rail.png)
 
@@ -83,7 +83,7 @@ Tocca o fai clic rispettivamente su **Annulla** o **Fine** per ignorare o salvar
 
 ### Editing di file multimediali {#edit-media}
 
-Puoi visualizzarne i dettagli nel pannello [proprietà.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Puoi visualizzarne i dettagli nel [pannello delle proprietà](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
 
 ![Modifica dei file multimediali](assets/ue-edit-media.png)
 
@@ -96,7 +96,7 @@ Le modifiche vengono salvate automaticamente nel contenuto.
 
 ### Modificare i frammenti di contenuto {#edit-content-fragment}
 
-Se selezioni un [frammento di contenuto,](/help/sites-cloud/administering/content-fragments/overview.md) puoi modificarne i dettagli nel pannello [proprietà.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Se selezioni un [frammento di contenuto](/help/sites-cloud/administering/content-fragments/overview.md), puoi modificarne i dettagli nel [pannello delle proprietà](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
 
 ![Modifica di un frammento di contenuto](assets/ue-edit-cf.png)
 
@@ -163,7 +163,7 @@ Il componente selezionato è stato eliminato.
 
 ### Riordinamento dei componenti nei contenitori {#reordering-components}
 
-1. Se non è già in modalità [struttura contenuto,](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) passa alla struttura.
+1. Se non è già in [modalità struttura contenuto](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), passare a tale modalità.
 1. Seleziona un componente contenitore nella struttura del contenuto o nell’editor.
 1. Seleziona l’icona della freccia del contenitore per espanderne il contenuto nella struttura del contenuto.
 1. Trascina le icone delle maniglie accanto ai componenti all’interno del contenitore per mostrare che puoi riorganizzarli. Trascina i componenti per riordinarli all’interno del contenitore.
@@ -182,7 +182,7 @@ I componenti vengono riordinati sia nella struttura del contenuto che nell’edi
 
 Quando hai finito di modificare il contenuto, spesso desideri navigare in esso per vedere come si presenta nel contenuto di altre pagine. In [modalità anteprima](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) puoi fare clic sui collegamenti per navigare nel contenuto come farebbe un lettore. Il contenuto viene riprodotto nell’editor così come verrebbe pubblicato.
 
-In modalità anteprima, toccando o facendo clic sul contenuto si reagisce come se si trattasse di un normale lettore. Se si desidera selezionare il contenuto da modificare, uscire dalla modalità di anteprima [.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
+In modalità anteprima, toccando o facendo clic sul contenuto si reagisce come se si trattasse di un normale lettore. Se si desidera selezionare il contenuto da modificare, uscire dalla [modalità anteprima](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
 
 ## Risorse aggiuntive {#additional-resources}
 
@@ -204,4 +204,4 @@ L’ereditarietà è il meccanismo in cui il contenuto può essere collegato in 
 
 Utilizzando l’Editor universale, puoi annullare l’ereditarietà dei contenuti semplicemente aggiornandone il contenuto. L’editor disabilita automaticamente l’ereditarietà per tutte le modifiche apportate dagli autori sulla pagina, garantendo che il contenuto modificato venga mantenuto quando gli aggiornamenti vengono sincronizzati dalla blueprint.
 
-Per ulteriori dettagli sul funzionamento dell&#39;ereditarietà con l&#39;Editor universale, vedere il documento [Ereditarietà contenuto nell&#39;Editor universale.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+Per ulteriori dettagli sul funzionamento dell&#39;ereditarietà mediante l&#39;Editor universale, vedere [Ereditarietà contenuto nell&#39;Editor universale](/help/sites-cloud/authoring/universal-editor/inheritance.md).

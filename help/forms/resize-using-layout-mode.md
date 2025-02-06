@@ -5,7 +5,7 @@ role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 1%
@@ -127,7 +127,7 @@ Per attivare la modalità Layout, seleziona **[!UICONTROL Layout]** dall&#39;ele
 Per disattivare la modalità Layout, effettua le seguenti operazioni:
 
 1. Seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Modelli]** e apri il modello utilizzato nel modulo in modalità **[!UICONTROL Modifica]**.
-1. Selezionare il Contenitore modulo nel riquadro di sinistra e selezionare **[!UICONTROL Criterio.]**
+1. Selezionare il Contenitore modulo nel riquadro di sinistra e selezionare **[!UICONTROL Criterio]**.
 
    ![Disattiva modalità layout](assets/policy_disable_layout_mode.png)
 

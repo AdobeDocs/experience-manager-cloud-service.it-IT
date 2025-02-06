@@ -8,10 +8,10 @@ exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ AEM Sites è un potente set di strumenti per la creazione e la gestione di esper
 
 Per tradurre i contenuti, AEM offre strumenti altrettanto potenti, che consentono la distribuzione più rapida possibile al pubblico in altre aree geografiche o con diverse impostazioni internazionali. Questo percorso di documentazione introduce gli strumenti di authoring per comprendere come viene creato e gestito il contenuto in AEM, per poi passare a ciò che è necessario sapere per gestire il progetto di traduzione.
 
-Se conosci già AEM Sites e le tue esigenze di traduzione, potresti avere già le conoscenze di base di questo percorso. In caso affermativo, considera la possibilità di fare riferimento alla nostra documentazione tecnica collegata alla [sezione risorse aggiuntive più avanti](#additional-resources).
+Se conosci già AEM Sites e le tue esigenze di traduzione, potresti avere già le conoscenze di base di questo percorso. In caso affermativo, considera la possibilità di fare riferimento alla nostra documentazione tecnica collegata alla [sezione risorse aggiuntive di seguito](#additional-resources).
 
 ## Percorsi di documentazione AEM {#documentation-journeys}
 

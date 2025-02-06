@@ -4,7 +4,7 @@ description: Il seguente tutorial illustra i passaggi necessari per creare un co
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Per completare questa esercitazione, sono necessari i seguenti elementi:
 
 1. Ambiente di sviluppo locale
 
-I passaggi dell&#39;esercitazione e le schermate vengono eseguiti utilizzando **CRXDE Liti**. È inoltre possibile utilizzare gli IDE per completare l&#39;esercitazione. Ulteriori informazioni sull&#39;utilizzo di un IDE per sviluppare [con AEM sono disponibili qui.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+I passaggi dell&#39;esercitazione e le schermate vengono eseguiti utilizzando **CRXDE Lite**. È inoltre possibile utilizzare gli IDE per completare l&#39;esercitazione. Ulteriori informazioni sull&#39;utilizzo di un IDE per sviluppare [con AEM sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
 
 
 ## Configurazione del progetto {#project-setup}
@@ -382,7 +382,7 @@ AEM Screens utilizza [modelli di pagina statici](https://experienceleague.adobe.
 
 Di seguito viene creata una pagina Progettazione dell&#39;esecuzione di We.Retail in cui sono memorizzate tutte le configurazioni specifiche del progetto.
 
-1. In **CRXDE Liti** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs`, passa a `/apps/settings/wcm/designs`
+1. In **CRXDE Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs`, passa a `/apps/settings/wcm/designs`
 1. Creare un nodo sotto la cartella delle progettazioni, denominato `we-retail-run` con un tipo di `cq:Page`.
 1. Nella pagina `we-retail-run` aggiungere un altro nodo denominato `jcr:content` di tipo `nt:unstructured`. Aggiungi le seguenti proprietà al nodo `jcr:content`:
 
@@ -439,7 +439,7 @@ Il componente Hello World deve essere utilizzato su un canale di sequenza. Per t
 
    ![2018-04-30_at_5_53pm](assets/2018-04-30_at_5_53pm.png)
 
-1. In **CRXDE Liti** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par`, passa a `/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par`. La proprietà `components` ora include `group:Screens`, `group:We.Retail Run - Content`.
+1. In **CRXDE Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par`, passa a `/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par`. La proprietà `components` ora include `group:Screens`, `group:We.Retail Run - Content`.
 
    ![Configurazione progettazione in /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1_14pm.png)
 

@@ -4,10 +4,10 @@ description: Scopri come impostare un nuovo programma e una nuova pipeline per d
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Scopri come impostare un nuovo programma e una nuova pipeline per distribuire il
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso del componente aggiuntivo Demo di riferimento Adobe Experience Manager (AEM), [Comprendere l’installazione del componente aggiuntivo Demo di riferimento AEM,](installation.md), hai imparato come funziona il processo di installazione del componente aggiuntivo Demo di riferimento, illustrando come funzionano i diversi componenti insieme. Ora dovresti:
+Nel documento precedente del percorso Adobe Experience Manager (AEM) Reference Demos Add-on, [Comprendere l&#39;installazione di Reference Demos Add-on](installation.md), hai imparato come funziona il processo di installazione del componente aggiuntivo Reference Demos, illustrando come funzionano i diversi componenti insieme. Ora dovresti:
 
 * Avere una conoscenza di base di Cloud Manager.
 * Scoprire come le pipeline forniscono contenuto e configurazione ad AEM.

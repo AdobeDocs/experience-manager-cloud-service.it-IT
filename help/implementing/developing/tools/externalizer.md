@@ -4,7 +4,7 @@ description: Externalizer è un servizio OSGi che consente di trasformare in mod
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Il servizio Externalizer ti consente di definire a livello centrale il dominio c
 
 >[!NOTE]
 >
->Come per l&#39;applicazione di [configurazioni OSGi per AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration), è necessario eseguire i passaggi seguenti in un&#39;istanza sviluppatore locale e quindi confermare il codice del progetto per la distribuzione.
+>Come quando si applicano [configurazioni OSGi per AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration), è necessario eseguire i passaggi seguenti su un&#39;istanza di sviluppatore locale e quindi confermare il codice del progetto per la distribuzione.
 
 Per definire un mapping di dominio per il servizio Externalizer:
 
@@ -74,7 +74,7 @@ Per definire un mapping di dominio per il servizio Externalizer:
 
    * **`scheme`** è in genere http o https, ma può essere un altro protocollo.
 
-      * L’Adobe consiglia di utilizzare https per applicare i collegamenti https.
+      * Adobe consiglia di utilizzare https per applicare i collegamenti https.
       * Viene utilizzato se il codice client non sostituisce lo schema quando viene richiesta l’esternalizzazione di un URL.
 
    * **`server`** è il nome host (nome di dominio o indirizzo ip).

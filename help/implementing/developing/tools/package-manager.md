@@ -4,7 +4,7 @@ description: Scopri le nozioni di base di AE; gestione dei pacchetti con Gestion
 feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 7fdb4e3da7172e3a94f105c8b2a46ef77a565532
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3772'
 ht-degree: 3%
@@ -47,7 +47,7 @@ Per ulteriori dettagli su come gestire i pacchetti per AEMaaCS, vedi [Distribuzi
 
 ## Dimensione pacchetto {#package-size}
 
-L’Adobe consiglia di non creare pacchetti di grandi dimensioni. In questo modo si evitano problemi di timeout durante il caricamento e il download dei pacchetti.
+Adobe consiglia di non creare pacchetti di grandi dimensioni. In questo modo si evitano problemi di timeout durante il caricamento e il download dei pacchetti.
 
 Come regola generale, un pacchetto deve essere trasmesso per intero entro 60 secondi. In questo modo viene fornita la formula seguente come guida.
 
@@ -98,7 +98,7 @@ Per creare, modificare, caricare e installare pacchetti, gli utenti devono dispo
 È possibile accedere a Gestione pacchetti in tre modi:
 
 1. Dal menu principale AEM > **Strumenti** > **Distribuzione** > **Pacchetti**
-1. Da [CRXDE Liti](crxde.md) utilizzando la barra del commutatore superiore
+1. Da [CRXDE Lite](crxde.md) utilizzando la barra del commutatore superiore
 1. Accedendo direttamente a `http://<host>:<port>/crx/packmgr/`
 
 ### Interfaccia utente di Gestione pacchetti {#ui}
@@ -125,7 +125,7 @@ Se si fa clic sul nome di un pacchetto, la voce nell&#39;elenco dei pacchetti vi
 * [Modifica](#edit-package)
 * [Build](#building-a-package)
 * [Reinstalla](#reinstalling-packages)
-* [Scarica](#downloading-packages-to-your-file-system)
+* [Download](#downloading-packages-to-your-file-system)
 
 Ulteriori azioni sono disponibili sotto il pulsante **Altro**.
 
@@ -197,7 +197,7 @@ Durante la creazione di regole, viene definita un&#39;espressione regolare (nota
 | include | Include includerà tutti i file e le cartelle nella directory specificata che corrispondono all&#39;espressione regolare. Includi **non** includerà altri file o cartelle dal percorso radice specificato. |
 | escludi | Escludi escluderà tutti i file e le cartelle che corrispondono all’espressione regolare. |
 
-I filtri dei pacchetti vengono spesso definiti al momento della creazione del pacchetto [.](#creating-a-new-package) Tuttavia, è anche possibile modificarli in un secondo momento, dopodiché il pacchetto deve essere ricompilato per aggiornarne il contenuto in base alle nuove definizioni di filtro.
+I filtri dei pacchetti vengono spesso definiti al momento della prima [creazione del pacchetto](#creating-a-new-package). Tuttavia, possono anche essere modificate in un secondo momento, dopodiché il pacchetto deve essere ricompilato per aggiornarne il contenuto in base alle nuove definizioni di filtro.
 
 >[!TIP]
 >
@@ -242,7 +242,7 @@ Puoi allegare più schermate al pacchetto per fornire una rappresentazione visiv
 
 ### Creazione di un pacchetto {#creating-a-new-package}
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Fare clic su **Crea pacchetto**.
 
@@ -266,7 +266,7 @@ Puoi allegare più schermate al pacchetto per fornire una rappresentazione visiv
 
    ![Nuovo pacchetto](assets/new-package.png)
 
-1. Fai clic su **Modifica** per definire il contenuto del [pacchetto.](#package-contents) Fare clic su **Salva** al termine della modifica delle impostazioni.
+1. Fai clic su **Modifica** per definire il [contenuto del pacchetto](#package-contents). Fai clic su **Salva** dopo aver completato la modifica delle impostazioni.
 
 1. Ora puoi [Generare](#building-a-package) il tuo pacchetto.
 
@@ -274,13 +274,13 @@ Non è obbligatorio costruire immediatamente il pacchetto dopo averlo creato. Un
 
 >[!TIP]
 >
->Per evitare timeout, l&#39;Adobe consiglia a [non creare pacchetti di grandi dimensioni.](#package-size)
+>Per evitare timeout, Adobe consiglia a [di non creare pacchetti di grandi dimensioni](#package-size).
 
 ### Creazione di un pacchetto {#building-a-package}
 
 Un pacchetto viene spesso creato contemporaneamente alla [creazione del pacchetto](#creating-a-new-package), ma è possibile tornare in un secondo momento per generare o ricreare il pacchetto. Questo può essere utile se il contenuto all’interno dell’archivio è stato modificato o i filtri del pacchetto sono stati modificati.
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Aprire i dettagli del package dall&#39;elenco dei package facendo clic sul nome del package.
 
@@ -290,13 +290,13 @@ Un pacchetto viene spesso creato contemporaneamente alla [creazione del pacchett
 
 >[!TIP]
 >
->Per evitare timeout, l&#39;Adobe consiglia a [non creare pacchetti di grandi dimensioni.](#package-size)
+>Per evitare timeout, Adobe consiglia a [di non creare pacchetti di grandi dimensioni](#package-size).
 
 ### Modifica di un pacchetto {#edit-package}
 
 Una volta caricato un pacchetto in AEM, puoi modificarne le impostazioni.
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Aprire i dettagli del package dall&#39;elenco dei package facendo clic sul nome del package.
 
@@ -310,7 +310,7 @@ Potrebbe essere necessario [ricompilare il pacchetto](#building-a-package) per a
 
 Una volta creato un pacchetto, è possibile eseguirne il rewrapping. Il ritorno a capo determina la modifica delle informazioni del pacchetto senza anteprime, descrizioni e così via, senza modificare il contenuto del pacchetto.
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Aprire i dettagli del package dall&#39;elenco dei package facendo clic sul nome del package.
 
@@ -324,7 +324,7 @@ Una volta creato un pacchetto, è possibile eseguirne il rewrapping. Il ritorno 
 
 Poiché ogni versione di un pacchetto viene visualizzata nell&#39;elenco come qualsiasi altro pacchetto, Gestione pacchetti può trovare altre versioni di un pacchetto selezionato.
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Aprire i dettagli del package dall&#39;elenco dei package facendo clic sul nome del package.
 
@@ -334,7 +334,7 @@ Poiché ogni versione di un pacchetto viene visualizzata nell&#39;elenco come qu
 
 Dopo aver generato un pacchetto, puoi visualizzarne il contenuto.
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Aprire i dettagli del package dall&#39;elenco dei package facendo clic sul nome del package.
 
@@ -348,7 +348,7 @@ Dopo aver generato un pacchetto, puoi visualizzarne il contenuto.
 
 ### Download dei pacchetti nel file system {#downloading-packages-to-your-file-system}
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Aprire i dettagli del package dall&#39;elenco dei package facendo clic sul nome del package.
 
@@ -358,11 +358,11 @@ Dopo aver generato un pacchetto, puoi visualizzarne il contenuto.
 
 >[!TIP]
 >
->Per evitare timeout, l&#39;Adobe consiglia a [non creare pacchetti di grandi dimensioni.](#package-size)
+>Per evitare timeout, Adobe consiglia a [di non creare pacchetti di grandi dimensioni](#package-size).
 
 ### Caricamento di pacchetti dal file system {#uploading-packages-from-your-file-system}
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Selezionare la cartella del gruppo in cui si desidera caricare il pacchetto.
 
@@ -370,7 +370,7 @@ Dopo aver generato un pacchetto, puoi visualizzarne il contenuto.
 
 1. Fornisci le informazioni necessarie sul pacchetto caricato.
 
-   ![Finestra di dialogo per il caricamento del pacchetto](assets/package-upload-dialog.png)
+   ![Finestra di dialogo Caricamento pacchetto.](assets/package-upload-dialog.png)
 
    * **Pacchetto** - Utilizza il pulsante **Sfoglia...** per selezionare il pacchetto richiesto dal file system locale.
    * **Forza caricamento** - Se esiste già un pacchetto con questo nome, questa opzione forza il caricamento e sovrascrive il pacchetto esistente.
@@ -381,7 +381,7 @@ Il contenuto del pacchetto esiste ora in AEM, ma per renderlo disponibile per l&
 
 >[!TIP]
 >
->Per evitare timeout, l&#39;Adobe consiglia a [non creare pacchetti di grandi dimensioni.](#package-size)
+>Per evitare timeout, Adobe consiglia a [di non creare pacchetti di grandi dimensioni](#package-size).
 
 ### Convalida dei pacchetti {#validating-packages}
 
@@ -471,14 +471,14 @@ Utilizzando le informazioni fornite dalla convalida, i nodi interessati possono 
 
 La convalida dei pacchetti può essere eseguita in due modi diversi:
 
-* [Tramite l’interfaccia di Gestione pacchetti](#via-package-manager)
-* [Tramite richiesta HTTP POST, ad esempio con cURL](#via-post-request)
+* [Tramite l&#39;interfaccia utente di Gestione pacchetti](#via-package-manager).
+* [Tramite richiesta HTTP POST, ad esempio con cURL](#via-post-request).
 
 La convalida deve sempre avvenire dopo il caricamento del pacchetto, ma prima della sua installazione.
 
 ##### Convalida Dei Pacchetti Tramite Gestione Pacchetti {#via-package-manager}
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Aprire i dettagli del package dall&#39;elenco dei package facendo clic sul nome del package.
 
@@ -516,7 +516,7 @@ Durante la convalida tramite richiesta POST, la risposta viene inviata nuovament
 
 I pacchetti sono definiti dai relativi filtri. In Gestione pacchetti puoi applicare i filtri di un pacchetto al contenuto dell’archivio esistente per mostrare quale contenuto dell’archivio è coperto dalla definizione del filtro del pacchetto.
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Aprire i dettagli del package dall&#39;elenco dei package facendo clic sul nome del package.
 
@@ -534,7 +534,7 @@ Il caricamento di un pacchetto aggiunge solo il contenuto del pacchetto all’ar
 
 Prima dell’installazione del pacchetto, Gestione pacchetti crea automaticamente un pacchetto di istantanee contenente il contenuto sovrascritto. Questa istantanea viene reinstallata se si disinstalla il pacchetto.
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Aprire i dettagli del pacchetto che si desidera installare dall&#39;elenco dei pacchetti facendo clic sul nome del pacchetto.
 
@@ -556,7 +556,7 @@ Una volta completata e completata l&#39;installazione, l&#39;elenco dei pacchett
 
 ### Reinstallazione dei pacchetti {#reinstalling-packages}
 
-La reinstallazione dei pacchetti esegue gli stessi passaggi in un pacchetto già installato elaborato durante l&#39;installazione iniziale del pacchetto [.](#installing-packages)
+La reinstallazione dei pacchetti esegue gli stessi passaggi in un pacchetto già installato elaborato durante l&#39;installazione iniziale del pacchetto [](#installing-packages).
 
 ### Caricamento e installazione basati su file system {#file-system-based-upload-and-installation}
 
@@ -576,7 +576,7 @@ Se l&#39;istanza non è in esecuzione, i pacchetti inseriti nella cartella `inst
 
 La disinstallazione del pacchetto ripristina il contenuto dell’archivio allo snapshot creato automaticamente da Gestione pacchetti prima dell’installazione.
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Aprire i dettagli del pacchetto che si desidera disinstallare dall&#39;elenco dei pacchetti facendo clic sul nome del pacchetto.
 
@@ -590,7 +590,7 @@ La disinstallazione del pacchetto ripristina il contenuto dell’archivio allo s
 
 L’eliminazione di un pacchetto comporta solo l’eliminazione dei relativi dettagli da Gestione pacchetti. Se il pacchetto è già stato installato, il contenuto installato non verrà eliminato.
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Aprire i dettagli del package che si desidera eliminare dall&#39;elenco dei package facendo clic sul nome del package.
 
@@ -602,7 +602,7 @@ L’eliminazione di un pacchetto comporta solo l’eliminazione dei relativi det
 
 Replica il contenuto di un pacchetto per installarlo nell’istanza Publish.
 
-1. [Accedere a Gestione pacchetti.](#accessing)
+1. [Accedere a Gestione pacchetti](#accessing).
 
 1. Aprire i dettagli del package che si desidera replicare dall&#39;elenco dei package facendo clic sul nome del package.
 
@@ -614,6 +614,6 @@ Replica il contenuto di un pacchetto per installarlo nell’istanza Publish.
 
 I pacchetti AEM possono essere utilizzati per creare e condividere contenuti tra ambienti AEMaaCS.
 
-[Distribuzione software](https://downloads.experiencecloud.adobe.com) fornisce pacchetti AEM da utilizzare nell&#39;SDK AEM per lo sviluppo locale. I pacchetti AEM forniti nella Distribuzione di software non devono essere installati in ambienti cloud AEMaaCS a meno che non siano espressamente approvati dal Supporto Adobe.
+[Distribuzione software](https://downloads.experiencecloud.adobe.com) fornisce pacchetti AEM da utilizzare sul SDK AEM di sviluppo locale. I pacchetti AEM forniti in Distribuzione di software non devono essere installati in ambienti cloud AEMaaCS se non espressamente approvati dal supporto Adobe.
 
-Per ulteriori informazioni, vedere la [documentazione sulla distribuzione software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it)
+Per ulteriori informazioni, vedere la [documentazione sulla distribuzione di software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it).

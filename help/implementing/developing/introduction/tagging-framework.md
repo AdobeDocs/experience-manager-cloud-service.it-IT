@@ -4,7 +4,7 @@ description: Assegna tag ai contenuti e utilizza l’infrastruttura di tag AEM p
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Questo articolo si concentra sul framework sottostante che supporta l’assegnaz
 
 Per assegnare tag ai contenuti e utilizzare l&#39;infrastruttura dei tag AEM:
 
-* Il tag deve esistere come nodo di tipo [`cq:Tag`](#cq-tag-node-type) nel nodo principale della tassonomia [.](#taxonomy-root-node)
+* Il tag deve esistere come nodo di tipo [`cq:Tag`](#cq-tag-node-type) nel [nodo principale della tassonomia](#taxonomy-root-node).
 * Il mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin) deve essere incluso nel nodo del contenuto con tag `NodeType`.
-* [`TagID`](#tagid) viene aggiunto alla proprietà [`cq:tags`](#cq-tags-property) del nodo di contenuto e viene risolto in un nodo di tipo [`cq:Tag`.](#cq-tag-node-type)
+* [`TagID`](#tagid) viene aggiunto alla proprietà [`cq:tags`](#cq-tags-property) del nodo di contenuto e viene risolto in un nodo di tipo [`cq:Tag`](#cq-tag-node-type).
 
 ## cq:Tag Node Type {#cq-tag-node-type}
 
@@ -41,18 +41,18 @@ Il framework dei tag limita inoltre l’utilizzo da parte di autori e visitatori
 ### Caratteristiche tag {#tag-characteristics}
 
 * Il tipo di nodo è `cq:Tag`.
-* Il nome del nodo è un componente di [`TagID`.](#tagid)
-* [`TagID`](#tagid) include sempre uno spazio dei nomi [.](#tag-namespace)
+* Il nome del nodo è un componente di [`TagID`](#tagid).
+* [`TagID`](#tagid) include sempre uno [spazio dei nomi](#tag-namespace).
 * La proprietà `jcr:title` (il titolo da visualizzare nell&#39;interfaccia utente) è facoltativa.
 * La proprietà `jcr:description` è facoltativa.
-* Quando si contengono nodi figlio, viene indicato come tag contenitore [.](#container-tags)
-* Il tag viene archiviato nel repository sotto un percorso di base denominato [nodo principale della tassonomia.](#taxonomy-root-node)
+* Quando si contengono nodi figlio, viene indicato come [tag contenitore](#container-tags).
+* Il tag viene archiviato nel repository sotto un percorso di base denominato [nodo principale della tassonomia](#taxonomy-root-node).
 
 ### ID tag {#tagid}
 
 Un `TagID` identifica un percorso che viene risolto in un nodo di tag nell&#39;archivio.
 
-In genere, `TagID` è una scorciatoia `TagID` che inizia con lo spazio dei nomi oppure può essere un `TagID` assoluto a partire dal nodo principale della tassonomia [.](#taxonomy-root-node)
+In genere, `TagID` è una scorciatoia `TagID` che inizia con lo spazio dei nomi oppure può essere un `TagID` assoluto che inizia dal [nodo principale della tassonomia](#taxonomy-root-node).
 
 Quando il contenuto viene taggato, se non esiste ancora, la proprietà [`cq:tags`](#cq-tags-property) viene aggiunta al nodo del contenuto e `TagID` al valore dell&#39;array `String` della proprietà.
 
@@ -68,7 +68,7 @@ In AEM, il percorso di base è `/content/cq:tags` e il nodo principale è di tip
 
 Gli spazi dei nomi consentono di raggruppare gli elementi. Il caso d’uso più tipico consiste nell’avere uno spazio dei nomi per sito (ad esempio, pubblico rispetto a interno) o per applicazione più grande (ad esempio, Sites o Assets), ma gli spazi dei nomi possono essere utilizzati per varie altre esigenze. Nell’interfaccia utente, gli spazi dei nomi vengono utilizzati per mostrare solo il sottoinsieme di tag (ovvero i tag di un determinato spazio dei nomi) applicabile al contenuto corrente.
 
-Lo spazio dei nomi del tag è il primo livello della sottostruttura della tassonomia, ovvero il nodo immediatamente sotto il nodo principale della tassonomia [.](#taxonomy-root-node) Uno spazio dei nomi è un nodo di tipo `cq:Tag` il cui elemento padre non è un tipo di nodo `cq:Tag`.
+Lo spazio dei nomi del tag è il primo livello della sottostruttura della tassonomia, ovvero il nodo immediatamente sotto il [nodo principale della tassonomia](#taxonomy-root-node). Uno spazio dei nomi è un nodo di tipo `cq:Tag` il cui elemento padre non è un tipo di nodo `cq:Tag`.
 
 Tutti i tag hanno uno spazio dei nomi. Se non viene specificato alcuno spazio dei nomi, il tag viene assegnato allo spazio dei nomi predefinito, ovvero `TagID` `default`, ovvero `/content/cq:tags/default`. In questi casi, il valore predefinito è `Standard Tags`.
 
@@ -107,7 +107,7 @@ Per ulteriori dettagli, vedi:
 
 ### Controllo accesso {#access-control}
 
-I tag esistono come nodi nell&#39;archivio nel nodo principale della tassonomia [.](#taxonomy-root-node) È possibile consentire o negare agli autori e ai visitatori del sito la creazione di tag in un determinato spazio dei nomi impostando ACL appropriati nell&#39;archivio.
+I tag esistono come nodi nell&#39;archivio nel nodo principale della tassonomia [](#taxonomy-root-node). È possibile consentire o negare agli autori e ai visitatori del sito la creazione di tag in un determinato spazio dei nomi impostando ACL appropriati nell’archivio.
 
 Il rifiuto delle autorizzazioni di lettura per alcuni tag o spazi dei nomi controlla la possibilità di applicare tag a contenuto specifico.
 

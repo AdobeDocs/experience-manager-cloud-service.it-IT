@@ -5,9 +5,9 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1625'
 ht-degree: 45%
 
 ---
@@ -45,7 +45,7 @@ Le opzioni visualizzate dipendono dalla console corrente. Ad esempio, in **Sites
 
 ![Esempio di selettore pannello laterale](assets/sites-console-side-panel-selector.png)
 
-Per ulteriori informazioni sul pannello laterale, consulta il documento [Pannello laterale della console Sites.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+Per ulteriori informazioni sul pannello laterale, vedere [Pannello laterale console Sites](/help/sites-cloud/authoring/sites-console/console-side-panel.md).
 
 ### Breadcrumb {#breadcrumbs}
 
@@ -194,7 +194,7 @@ La vista Elenco fornisce informazioni per ogni risorsa al livello corrente di un
 ![Vista a elenco](assets/sites-console-list-view.png)
 
 * Per spostarti verso il basso nella struttura, tocca o fai clic sul nome delle risorse; per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](#the-header).
-* Per selezionare facilmente tutti gli elementi nell&#39;elenco, utilizzare la casella di controllo [**Seleziona tutto** nella barra degli strumenti.](#select-all)
+* Per selezionare facilmente tutti gli elementi nell&#39;elenco, utilizzare la casella di controllo [**Seleziona tutto** nella barra degli strumenti](#select-all).
 
 * Per seleziona le colonne da visualizzare utilizza l’opzione **Impostazioni vista** sotto il pulsante Viste. È possibile visualizzare le colonne seguenti:
 

@@ -4,10 +4,10 @@ description: Scopri Cloud Manager e come viene utilizzato per installare il comp
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -104,7 +104,7 @@ Ora che hai completato questa parte del percorso del Componente aggiuntivo demo 
 * Scoprire come le pipeline forniscono contenuto e configurazione ad AEM.
 * Scoprire come i modelli possono creare siti precompilati con contenuti dimostrativi con pochi clic.
 
-Sviluppa questa conoscenza e continua il percorso di Creazione rapida del sito AEM con la revisione del documento [Creare un programma e una pipeline,](create-program.md) dove verrà illustrato come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.
+Approfondisci l&#39;argomento e continua il percorso di Creazione Rapida dei Siti AEM consultando [Crea un programma e una pipeline](create-program.md), dove viene illustrato come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.
 
 ## Risorse aggiuntive {#additional-resources}
 

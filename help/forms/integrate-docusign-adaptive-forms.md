@@ -4,7 +4,7 @@ description: Scopri come utilizzare DocuSign con un modulo adattivo per raccogli
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 0%
@@ -185,7 +185,7 @@ Per creare un modulo adattivo abilitato alla firma:
 
    - Se non si dispone di un modello di modulo personalizzato, selezionare l&#39;opzione **[!UICONTROL Genera documento di record]**. Quando utilizzi l’opzione, nel documento inviato per la firma vengono visualizzati tutti i campi del modulo adattivo.
 
-1. Selezionare **[!UICONTROL Crea.]** È stato creato un modulo adattivo abilitato alla firma. Puoi aggiungere i campi [!DNL DocuSign] al modulo e inviarlo per la firma.
+1. Seleziona **[!UICONTROL Crea]**. Viene creato un modulo adattivo abilitato alla firma. Puoi aggiungere i campi [!DNL DocuSign] al modulo e inviarlo per la firma.
 1. Apri il modulo adattivo in modalità di modifica. Nella scheda **[!UICONTROL Contenuto]**, seleziona **[!UICONTROL Contenitore modulo]** e ![Configura](assets/configure-icon.svg).
 
 1. Nella sezione **[!UICONTROL Invio]**, selezionare **[!UICONTROL Invia con firme elettroniche DocuSign]** dall&#39;elenco a discesa **[!UICONTROL Azione invio]**.

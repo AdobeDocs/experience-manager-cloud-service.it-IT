@@ -4,10 +4,10 @@ description: Scopri i diversi punti di estensione e altre funzioni che consenton
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -39,15 +39,15 @@ Il pulsante **Publish** può quindi essere eliminato completamente in un&#39;app
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
 ```
 
-### Filtraggio dei componenti {#filtering-components}
+### Filtrare i componenti {#filtering-components}
 
 È possibile limitare i componenti consentiti per contenitore nell’Editor universale utilizzando i filtri dei componenti. Per ulteriori informazioni, vedere il documento [Componenti filtro](/help/implementing/universal-editor/filtering.md).
 
 ### Mostra e nascondi componenti in modo condizionale nel pannello Proprietà {#conditionally-hide}
 
-Anche se uno o più componenti possono essere generalmente disponibili per gli autori, in alcune situazioni potrebbe non avere senso. In questi casi, è possibile nascondere i componenti nel pannello delle proprietà aggiungendo un attributo `condition` ai campi [ del modello di componente.](/help/implementing/universal-editor/field-types.md#fields)
+Anche se uno o più componenti possono essere generalmente disponibili per gli autori, in alcune situazioni potrebbe non avere senso. In questi casi, è possibile nascondere i componenti nel pannello delle proprietà aggiungendo un attributo `condition` ai campi [ del modello di componente](/help/implementing/universal-editor/field-types.md#fields).
 
-Le condizioni possono essere definite utilizzando lo schema [JsonLogic.](https://jsonlogic.com/) Se la condizione è true, il campo verrà visualizzato. Se la condizione è false, il campo verrà nascosto.
+Le condizioni possono essere definite utilizzando lo schema [JsonLogic](https://jsonlogic.com/). Se la condizione è true, il campo viene visualizzato. Se la condizione è false, il campo verrà nascosto.
 
 >[!BEGINTABS]
 
@@ -86,9 +86,9 @@ Le condizioni possono essere definite utilizzando lo schema [JsonLogic.](https:/
 
 ### URL di anteprima personalizzati {#custom-preview-urls}
 
-Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview`, che si aprirà facendo clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell&#39;editor [.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+È possibile specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview`, che verrà aperta quando si fa clic sul pulsante **Apri pagina** nella barra degli strumenti superiore destra dell&#39;editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
-Ciò è particolarmente utile per le applicazioni con requisiti di anteprima specifici, ad esempio quelle [che utilizzano Edge Delivery Services con l’authoring WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+Questo è particolarmente utile per le applicazioni con requisiti di anteprima specifici, ad esempio quelle [che utilizzano Edge Delivery Services con l&#39;authoring di WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
 
 Per farlo, includi semplicemente l’URL di anteprima desiderato in un metatag dell’app instrumentata come nell’esempio seguente.
 
@@ -110,6 +110,6 @@ Se desideri esplorare queste possibilità, consulta le seguenti risorse:
 
 >[!TIP]
 >
->Se preferisci imparare da esempio, consulta l&#39;esercitazione sull&#39;estensibilità dell&#39;interfaccia utente dell&#39;AEM [.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Anche se si concentra sull&#39;estensione della console Frammenti di contenuto, i concetti per l&#39;implementazione di un&#39;estensione dell&#39;interfaccia utente nell&#39;editor universale sono gli stessi.
+>Se preferisci imparare da esempio, consulta l&#39;[esercitazione sull&#39;estensibilità dell&#39;interfaccia utente dell&#39;AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Anche se si concentra sull’estensione della console Frammenti di contenuto, i concetti per l’implementazione di un’estensione dell’interfaccia utente nell’Editor universale sono gli stessi.
 
-[Utilizzando Extension Manager in AEM Sites,](https://developer.adobe.com/uix/docs/extension-manager/) puoi abilitare o disabilitare le estensioni per singole istanze, accedere alle estensioni di prime parti di Adobe, incluse quelle per Universal Editor, e molto altro.
+[Utilizzando Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), puoi abilitare o disabilitare le estensioni per singole istanze, accedere alle estensioni di prime parti di Adobe, incluse quelle per Universal Editor, e molto altro.

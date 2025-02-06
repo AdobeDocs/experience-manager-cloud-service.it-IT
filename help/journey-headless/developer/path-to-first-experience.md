@@ -5,16 +5,16 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1956'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # Percorso della tua prima esperienza con AEM Headless {#path-to-first-experience}
 
-In questa parte del [Percorso per sviluppatori headless AEM,](overview.md) comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprenderai le best practice per rendere il percorso il più semplice possibile.
+In questa sezione del [Percorso di sviluppatori headless AEM](overview.md), comprenderai i passaggi per implementare la tua prima esperienza headless nell&#39;AEM, incluse considerazioni sulla pianificazione, e imparerai le best practice per rendere il percorso più fluido possibile.
 
 ## Percorso affrontato finora {#story-so-far}
 
@@ -77,7 +77,7 @@ Gli autori e le autrici creano contenuti in base ai modelli di contenuto definit
 
 ## Configurazione {#setup}
 
-Prima di iniziare a utilizzare le funzionalità headless in AEM, assicurati che tutte le funzioni richieste siano abilitate. Questa sezione descrive i requisiti necessari. I passi effettivi per eseguire questi passaggi sono descritti più avanti nel [Percorso per sviluppatori headless di AEM.](#overview.md)
+Prima di iniziare a utilizzare le funzionalità headless in AEM, assicurati che tutte le funzioni richieste siano abilitate. Questa sezione descrive i requisiti necessari. I passaggi effettivi per eseguire questi passaggi sono descritti più avanti in [Percorso di sviluppatori headless AEM](#overview.md).
 
 Facoltativamente, per ulteriori informazioni sui singolo argomenti, puoi anche consultare le [risorse aggiuntive](#additional-resources).
 
@@ -143,7 +143,7 @@ Indipendentemente dal tuo stile di apprendimento, Adobe vuole che tu abbia succe
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless consultando il documento [Come modellare i contenuti come Modelli di contenuto AEM](model-your-content.md) le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono indispensabili per continuare il percorso headless.
+Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless consultando il documento [Come modellare il contenuto come modelli di contenuto AEM](model-your-content.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
 
 * [Percorso di traduzione AEM headless](/help/journey-headless/translation/overview.md): questo percorso di documentazione ti offre un’ampia comprensione della tecnologia headless, dell’utilizzo di AEM dei contenuti headless e di come tradurli.
 * [Sviluppo headless per AEM Sites as a Cloud Service](/help/headless/introduction.md): una rapida introduzione per orientare lo sviluppatore AEM Headless nell’utilizzo delle funzioni necessarie

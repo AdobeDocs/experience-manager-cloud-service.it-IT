@@ -4,10 +4,10 @@ description: Crea una configurazione come primo passo per familiarizzare con le 
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 92%
+ht-degree: 74%
 
 ---
 
@@ -21,7 +21,7 @@ Il browser di configurazioni fornisce un’API di configurazione generica, una s
 
 Nel contesto della gestione dei contenuti headless in AEM, considera una configurazione come un’area di lavoro all’interno di AEM dove puoi creare modelli di contenuto, che definiscono la struttura dei contenuti e dei frammenti di contenuto futuri. Puoi avere più configurazioni per separare questi modelli.
 
-Se hai familiarità con i [modelli di pagina in un’implementazione completa di AEM,](/help/sites-cloud/authoring/page-editor/templates.md) l’utilizzo delle configurazioni per la gestione dei modelli di contenuto è simile.
+Se hai familiarità con [modelli di pagina in un&#39;implementazione completa dell&#39;AEM](/help/sites-cloud/authoring/page-editor/templates.md), l&#39;utilizzo delle configurazioni per la gestione dei modelli di contenuto è simile.
 
 ## Come creare una configurazione {#how-to-create-a-configuration}
 
@@ -49,8 +49,8 @@ Se necessario, puoi creare più configurazioni. È inoltre possibile nidificare 
 
 ## Passaggi successivi {#next-steps}
 
-Utilizzando questa configurazione, ora puoi passare alla seconda parte della guida introduttiva e [creare modelli per frammenti di contenuto.](create-content-model.md)
+Utilizzando questa configurazione, ora puoi passare alla seconda parte della guida introduttiva e [creare modelli per frammenti di contenuto](create-content-model.md).
 
 >[!TIP]
 >
->Per informazioni complete sul browser di configurazioni, [consulta la documentazione del browser di configurazioni](/help/implementing/developing/introduction/configurations.md).
+>Per informazioni complete sul browser di configurazioni, vedere la [documentazione del browser di configurazioni](/help/implementing/developing/introduction/configurations.md).

@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 63%
+ht-degree: 61%
 
 ---
 
@@ -59,7 +59,7 @@ La gestione del rollout consente di attivare o disattivare la gestione dei confl
 
 Questa operazione viene eseguita utilizzando [Configurazione OSGi](/help/implementing/deploying/configuring-osgi.md) di **Day CQ WCM Rollout Manager**. Imposta il valore **Gestisci i conflitti con le pagine create manualmente** ( `rolloutmgr.conflicthandling.enabled`) su true se il gestore di rollout deve gestire i conflitti da una pagina creata in Live Copy con un nome esistente in blueprint.
 
-AEM segue un [comportamento predefinito quando la gestione dei conflitti è stata disattivata.](#behavior-when-conflict-handling-deactivated)
+L&#39;AEM ha [comportamento predefinito quando la gestione dei conflitti è stata disattivata](#behavior-when-conflict-handling-deactivated).
 
 ## Gestori dei conflitti {#conflict-handlers}
 
@@ -118,7 +118,7 @@ I gestori di conflitti personalizzati possono:
 
 ### Comportamento quando la gestione dei conflitti è disattivata {#behavior-when-conflict-handling-deactivated}
 
-Se [disattivi manualmente la gestione dei conflitti,](#rollout-manager-and-conflict-handling) AEM non interviene su alcuna pagina in conflitto. Le pagine non in conflitto sono distribuite come previsto.
+Se [disattivi manualmente la gestione dei conflitti](#rollout-manager-and-conflict-handling), l&#39;AEM non interverrà su alcuna pagina in conflitto. Le pagine non in conflitto sono distribuite come previsto.
 
 >[!CAUTION]
 >

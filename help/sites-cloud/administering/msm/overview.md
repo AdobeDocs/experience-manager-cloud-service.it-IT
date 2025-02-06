@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2721'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -122,7 +122,7 @@ MSM è direttamente accessibile nell’interfaccia utente utilizzando diverse op
 
 * **Crea Live Copy** (**Sites**)
 
-   * MSM consente di [creare una Live Copy ad hoc (una tantum) di una singola pagina o sottosezione di un sito Web.](creating-live-copies.md#creating-a-live-copy-of-a-page) Ad esempio, duplicando un ramo secondario per fornire informazioni su una versione nuova/aggiornata di un prodotto. Creazione di una Live Copy in questo modo:
+   * MSM consente di [creare una Live Copy ad hoc (una tantum) di una singola pagina o sottosezione di un sito Web](creating-live-copies.md#creating-a-live-copy-of-a-page). Ad esempio, duplicando un ramo secondario per fornire informazioni su una versione nuova/aggiornata di un prodotto. Creazione di una Live Copy in questo modo:
       * Crea una Live Copy ad-hoc (non è richiesta alcuna configurazione blueprint).
       * Può essere utilizzata per creare (immediatamente) una Live Copy di qualsiasi pagina/ramo.
       * Richiede **Sincronizza** (non fornisce il pulsante di **Rollout**).
@@ -137,11 +137,11 @@ MSM è direttamente accessibile nell’interfaccia utente utilizzando diverse op
 
 * **Panoramica delle Live Copy** (**Sites**)
 
-   * Questa console consente di [visualizzare e gestire la blueprint e le relative Live Copy.](live-copy-overview.md)
+   * Questa console consente di [visualizzare e gestire la blueprint e le relative Live Copy](live-copy-overview.md).
 
 * **Blueprint** (**Strumenti** - **Sites**)
 
-   * Questa console consente di [creare e gestire le configurazioni blueprint.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Questa console consente di [creare e gestire le configurazioni blueprint](creating-live-copies.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ Le configurazioni di rollout possono essere riutilizzate, in modo che una o più
 
 ### Conflitti di rollout {#rollout-conflicts}
 
-I rollout possono complicarsi, specialmente quando gli autori modificano il contenuto sia nella sorgente che nella Live Copy. Quindi è utile essere a conoscenza di come AEM gestisce qualsiasi [conflitto che potrebbe verificarsi durante il rollout.](rollout-conflicts.md)
+I rollout possono complicarsi, specialmente quando gli autori modificano il contenuto sia nella sorgente che nella Live Copy. È quindi utile essere a conoscenza di come AEM gestisce qualsiasi [conflitto che potrebbe verificarsi durante il rollout](rollout-conflicts.md).
 
 ### Sospensione e annullamento dell’ereditarietà e della sincronizzazione {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -329,7 +329,7 @@ I passaggi seguenti descrivono la procedura standard per riutilizzare il contenu
 
 1. Determina dove devi [specificare le configurazioni di rollout da utilizzare](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) e configurale correttamente.
 1. Se necessario, [crea una configurazione blueprint](creating-live-copies.md#creating-a-blueprint-configuration) che identifica il contenuto sorgente della Live Copy.
-1. [Crea una Live Copy.](creating-live-copies.md#creating-a-live-copy)
+1. [Crea una Live Copy](creating-live-copies.md#creating-a-live-copy).
 1. Apporta le modifiche necessarie al contenuto sorgente. Dovresti utilizzare il normale processo di revisione e approvazione del contenuto stabilito dall&#39;organizzazione.
 1. [Esegui il roll out](creating-live-copies.md#rolling-out-a-blueprint) del blueprint, oppure [sincronizza la Live Copy](creating-live-copies.md#synchronizing-a-live-copy) con le modifiche.
 

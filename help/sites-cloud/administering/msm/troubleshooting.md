@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 51%
@@ -91,4 +91,4 @@ Se viene trovata una pagina &quot;indipendente&quot;, MSM sceglie di rinominare 
 
 Una tale pagina indipendente in una sottostruttura Live Copy è in genere il risultato di un&#39;operazione **Scollega** oppure la pagina Live Copy precedente è stata eliminata manualmente da un autore e quindi ricreata con lo stesso nome.
 
-Per evitare questo problema, utilizza la funzione Live Copy **Sospendi** invece di **Scollega**. Ulteriori dettagli sull&#39;azione **Stacca** sono disponibili in [questo articolo.](creating-live-copies.md)
+Per evitare questo problema, utilizza la funzione Live Copy **Sospendi** invece di **Scollega**. Ulteriori dettagli sull&#39;azione **Stacca** sono disponibili in [questo articolo](creating-live-copies.md).

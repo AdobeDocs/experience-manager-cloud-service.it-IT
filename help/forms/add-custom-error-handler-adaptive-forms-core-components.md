@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2332'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -198,7 +198,7 @@ Per informazioni su come utilizzare un gestore di errori predefinito utilizzando
 1. Seleziona **[!UICONTROL Crea]**.
 1. Crea una condizione nella sezione **When** della regola. Ad esempio, **Quando[il nome del campo ID animale domestico]** viene modificato. Selezione modificata dall&#39;elenco a discesa **Seleziona stato**.
 1. Nella sezione **Then**, seleziona **[!UICONTROL Richiama servizio]** dall&#39;elenco a discesa **Seleziona azione**.
-1. Selezionare un servizio **Post** e le associazioni dati corrispondenti dalla sezione **Input**. Ad esempio, per convalidare **ID animale**, selezionare un **servizio Post** come **GET/{petId}** e selezionare **ID animale** nella sezione **Input**.
+1. Seleziona un **Servizio post** e le associazioni dati corrispondenti dalla sezione **Input**. Ad esempio, per convalidare **ID animale**, selezionare un **servizio post** come **GET/animale domestico/{petId}** e selezionare **ID animale** nella sezione **Input**.
 1. Selezionare le associazioni dati dalla sezione **Output**. Seleziona **Nome animale** nella sezione **Output**.
 1. Seleziona **[!UICONTROL Gestore errori predefinito]** dalla sezione **Gestore errori**.
 1. Fai clic su **[!UICONTROL Fine]**.
@@ -232,7 +232,7 @@ Per creare una funzione di errore personalizzata, effettuare le seguenti operazi
 
 Per creare una funzione di errore personalizzata, effettuare le seguenti operazioni:
 
-1. [Clona l&#39;archivio as a Cloud Service di AEM Forms.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+1. [Clona l&#39;archivio as a Cloud Service di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 1. Creare una cartella nella cartella `[AEM Forms as a Cloud Service repository folder]/apps/`. Ad esempio, creare una cartella denominata `experience-league`
 1. Passare a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` e creare un `ClientLibraryFolder` come `clientlibs`.
 1. Creare una cartella denominata `js`.
@@ -290,7 +290,7 @@ Aggiungiamo il seguente codice al file JavaScript per visualizzare la risposta e
        git push
    ```
 
-1. [Esegui la pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
+1. [Eseguire la pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 Una volta eseguita correttamente la pipeline, il gestore degli errori personalizzato diventa disponibile nell’editor di regole del modulo adattivo. Ora vediamo come configurare e utilizzare un gestore di errori personalizzato utilizzando il servizio Invoke dell’editor di regole in AEM Forms.
 
@@ -306,7 +306,7 @@ Per utilizzare un gestore degli errori personalizzato utilizzando l&#39;azione R
 1. Seleziona **[!UICONTROL Crea]**.
 1. Crea una condizione nella sezione **When** della regola. Ad esempio, quando **[il nome del campo ID animale domestico]** viene modificato, selezionare **è cambiato** dall&#39;elenco a discesa **Seleziona stato**.
 1. Nella sezione **Then**, seleziona **[!UICONTROL Richiama servizio]** dall&#39;elenco a discesa **Seleziona azione**.
-1. Selezionare un servizio **Post** e le associazioni dati corrispondenti dalla sezione **Input**. Ad esempio, per convalidare **ID animale**, selezionare un **servizio Post** come **GET/{petId}** e selezionare **ID animale** nella sezione **Input**.
+1. Seleziona un **Servizio post** e le associazioni dati corrispondenti dalla sezione **Input**. Ad esempio, per convalidare **ID animale**, selezionare un **servizio post** come **GET/animale domestico/{petId}** e selezionare **ID animale** nella sezione **Input**.
 1. Selezionare le associazioni dati dalla sezione **Output**. Selezionare ad esempio **Nome animale** nella sezione **Output**.
 1. Seleziona **[!UICONTROL Gestore errori personalizzato]** dalla sezione **[!UICONTROL Gestore errori]**.
 1. Fai clic su **[!UICONTROL Fine]**.

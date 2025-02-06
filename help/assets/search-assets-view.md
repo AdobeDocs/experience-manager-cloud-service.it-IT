@@ -4,7 +4,7 @@ description: Scopri come cercare e individuare le risorse nella vista AEM Assets
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 94%
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 # Cercare risorse in [!DNL Assets view] {#search-assets}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
@@ -142,7 +142,7 @@ Per generare nuove risorse tramite [!DNL Adobe Firefly]:
 
    ![Integrazione di Firefly](assets/firefly-integration.png)
 
-   Le nuove risorse sono state generate correttamente. È, inoltre, possibile modificare la descrizione dell’immagine immettendo il nuovo prompt di testo nella casella Descrizione. [Scopri come scrivere un prompt IA corretto per generare contenuti straordinari e rilevanti.](https://helpx.adobe.com/it/firefly/using/tips-and-tricks.html) In alternativa, è possibile [modificare l’immagine con varie altre funzionalità, ad esempio cambiando lo stile, le dimensioni dell’immagine e altro ancora.](https://helpx.adobe.com/it/firefly/using/text-to-image.html)
+   Le nuove risorse sono state generate correttamente. È, inoltre, possibile modificare la descrizione dell’immagine immettendo il nuovo prompt di testo nella casella Descrizione. [Scopri come scrivere un buon prompt di intelligenza artificiale per generare contenuti straordinari e rilevanti](https://helpx.adobe.com/it/firefly/using/tips-and-tricks.html). In alternativa, è possibile [modificare l&#39;immagine con varie altre funzionalità, come la modifica dello stile, delle dimensioni dell&#39;immagine e altro ancora](https://helpx.adobe.com/it/firefly/using/text-to-image.html).
 
    ![Integrazione di Firefly](assets/bugatti-type-57.png)
 

@@ -5,16 +5,16 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1344'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # Come accedere al contenuto tramite API di consegna di AEM {#access-your-content}
 
-In questa parte del [Percorso per sviluppatori headless di AEM](overview.md) scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto e inviarlo all’app (consegna headless).
+In questa sezione del [Percorso di sviluppatori headless AEM](overview.md), puoi imparare a utilizzare le query GraphQL per accedere ai contenuti dei frammenti di contenuto e inviarli all&#39;app (consegna headless).
 
 ## Percorso affrontato finora {#story-so-far}
 

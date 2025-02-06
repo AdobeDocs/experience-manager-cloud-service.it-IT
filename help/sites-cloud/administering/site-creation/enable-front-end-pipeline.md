@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 39%
+ht-degree: 35%
 
 ---
 
@@ -18,7 +18,7 @@ Scopri come abilitare la pipeline front-end per i siti esistenti per utilizzare 
 
 ## Panoramica {#overview}
 
-La pipeline front-end è un meccanismo che può distribuire rapidamente solo il codice front-end dei siti Web basato sui [temi del sito](site-themes.md) e i [modelli del sito.](site-templates.md)
+La pipeline front-end è un meccanismo che può distribuire rapidamente solo il codice front-end dei siti Web basato su [temi del sito](site-themes.md) e [modelli del sito](site-templates.md).
 
 Questa pipeline gestisce solo il codice front-end, rendendo il processo di distribuzione più rapido rispetto alle distribuzioni full-stack. Consente agli sviluppatori front-end di personalizzare facilmente il sito senza dover conoscere l’AEM.
 

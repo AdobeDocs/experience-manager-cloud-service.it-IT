@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
@@ -14,11 +14,11 @@ ht-degree: 39%
 
 # Editor pagina AEM {#editing-page-content}
 
-Una volta creata la pagina nella console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) puoi modificarne il contenuto utilizzando l&#39;editor di pagine AEM, uno strumento utile per la creazione dei contenuti.
+Dopo aver creato la pagina nella console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), puoi modificarne il contenuto utilizzando l&#39;editor di pagine dell&#39;AEM, uno strumento utile per la creazione dei contenuti.
 
 >[!NOTE]
 >
->Durante la modifica di una pagina nella console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) la console aprirà l&#39;editor appropriato per il modello [ della pagina:](/help/sites-cloud/authoring/page-editor/templates.md) o l&#39;editor di pagine descritto in questo documento o [Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>Durante la modifica di una pagina nella console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), la console aprirà l&#39;editor appropriato per il [modello](/help/sites-cloud/authoring/page-editor/templates.md) della pagina, ovvero l&#39;editor pagina descritto in questo documento o l&#39;[Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ La barra degli strumenti della pagina consente di accedere alle funzionalità ap
 
 #### Pannello laterale {#side-panel-button}
 
-Verrà aperto/chiuso il pannello laterale [,](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) che contiene il browser Risorse, il browser Componenti e la struttura contenuto.
+Verrà aperto/chiuso il [pannello laterale](/help/sites-cloud/authoring/page-editor/editor-side-panel.md), che contiene il Browser risorse, il Browser componenti e la Struttura contenuto.
 
 ![Icona del pannello laterale](assets/page-editor-side-panel-toggle.png)
 
@@ -78,7 +78,7 @@ In questo modo viene attivata o disattivata la barra degli strumenti dell&#39;[e
 
 #### ContextHub {#context-hub}
 
-Verrà aperto [ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) È disponibile solo in modalità **Anteprima**.
+Verrà aperto [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). È disponibile solo in modalità **Anteprima**.
 
 ![Pulsante Context Hub](assets/page-editor-context-hub.png)
 
@@ -114,7 +114,7 @@ Esistono diverse modalità di modifica di una pagina che consentono di eseguire 
 
 #### Anteprima {#preview}
 
-Il pulsante **Anteprima** abilita la modalità di anteprima [.](#preview-mode), visualizzazione della pagina così come apparirà al momento della pubblicazione.
+Il pulsante **Anteprima** abilita la modalità [anteprima](#preview-mode), in cui viene visualizzata la pagina così come verrà visualizzata al momento della pubblicazione.
 
 ![Pulsante Anteprima](assets/page-editor-preview.png)
 

@@ -4,7 +4,7 @@ description: Scopri i consigli sulle best practice per impostare un progetto in 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1261'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Puoi utilizzare MSM per creare un’intera struttura di contenuto per il tuo mar
 Per configurare MSM in un caso di utilizzo di repoless, devi prima completare una serie di attività.
 
 * In questo documento si presuppone che sia già stato creato un sito per il progetto in base alla [Guida introduttiva per sviluppatori per l&#39;authoring di WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
-* È necessario che [abbia già abilitato la funzionalità di ripolling per il progetto.](/help/edge/wysiwyg-authoring/repoless.md)
+* Devi avere già [abilitato la funzione di ripolling per il progetto](/help/edge/wysiwyg-authoring/repoless.md).
 
 ## Caso d’uso {#use-case}
 
@@ -55,9 +55,9 @@ Il contenuto in `language-masters` è l&#39;origine di Live Copy per i siti loca
 
 Sono disponibili diversi passaggi per configurare il caso di utilizzo dei ripoli MSM.
 
-1. [Aggiornare le configurazioni del sito AEM.](#update-aem-configurations)
-1. [Crea nuovi siti Edge Delivery Services per le pagine localizzate.](#create-edge-sites)
-1. [Aggiorna la configurazione cloud in AEM per i siti localizzati.](#update-cloud-configurations)
+1. [Aggiorna configurazioni sito AEM](#update-aem-configurations).
+1. [Crea nuovi siti Edge Delivery Services per le pagine localizzate](#create-edge-sites).
+1. [Aggiorna la configurazione cloud in AEM per i siti localizzati](#update-cloud-configurations).
 
 ### Aggiornare le configurazioni del sito AEM {#update-aem-configurations}
 

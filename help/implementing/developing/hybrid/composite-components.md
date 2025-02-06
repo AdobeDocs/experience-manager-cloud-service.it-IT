@@ -4,7 +4,7 @@ description: Scopri come creare componenti compositi personalizzati, composti da
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -30,16 +30,16 @@ Questo articolo utilizza il componente tipico della scheda come caso d’uso di 
 I seguenti modelli per il supporto dei casi di utilizzo dei componenti compositi richiedono i seguenti prerequisiti.
 
 * L’istanza di sviluppo AEM è in esecuzione localmente sulla porta 4502 con un progetto di esempio.
-* Un&#39;app React esterna funzionante [è abilitata per la modifica in AEM.](editing-external-spa.md)
-* L&#39;app React è caricata nell&#39;editor AEM [tramite il componente RemotePage.](remote-page.md)
+* Hai un&#39;app React esterna funzionante [abilitata per la modifica in AEM](editing-external-spa.md).
+* L&#39;app React è caricata nell&#39;editor AEM [tramite il componente RemotePage](remote-page.md).
 
 ## Aggiunta di componenti compositi a un SPA {#adding-composite-components}
 
 Esistono tre diversi modelli per implementare il componente composito a seconda dell’implementazione SPA all’interno dell’AEM.
 
-* [Il componente non esiste nel progetto AEM.](#component-does-not-exist)
-* [Il componente esiste nel progetto AEM, ma il contenuto richiesto no.](#content-does-not-exist)
-* [Il componente e il contenuto richiesto sono entrambi presenti nel progetto AEM.](#both-exist)
+* [Il componente non esiste nel progetto AEM](#component-does-not-exist).
+* [Il componente è presente nel progetto AEM, ma il contenuto richiesto non lo è](#content-does-not-exist).
+* [Il componente e il contenuto richiesto sono entrambi presenti nel progetto AEM](#both-exist).
 
 Le sezioni seguenti forniscono esempi di implementazione di ogni caso utilizzando il componente scheda come esempio.
 
@@ -134,7 +134,7 @@ In questo caso, il componente scheda è già stato creato nel progetto AEM conte
 
 Puoi quindi aggiungerlo all’SPA e recuperarne il contenuto.
 
-1. Crea un componente corrispondente nell’SPA a questo scopo. Assicurati che i componenti secondari siano mappati sui corrispondenti tipi di risorse AEM all’interno del progetto SPA. In questo esempio vengono utilizzati gli stessi componenti `AEMText` e `AEMImage` descritti [ nel caso precedente.](#component-does-not-exist)
+1. Crea un componente corrispondente nell’SPA a questo scopo. Assicurati che i componenti secondari siano mappati sui corrispondenti tipi di risorse AEM all’interno del progetto SPA. In questo esempio vengono utilizzati gli stessi componenti `AEMText` e `AEMImage` descritti [ nel caso precedente](#component-does-not-exist).
 
    ```javascript
    import React from 'react';
@@ -178,4 +178,4 @@ Se il contenuto esiste nell’AEM, può essere incluso direttamente nell’SPA f
 
 ![Percorso composito nella struttura del nodo](assets/composite-path.png)
 
-Il componente `AEMCard` corrisponde al componente definito [ nel caso d&#39;uso precedente.](#content-does-not-exist) In questo caso il contenuto definito nella posizione precedente nel progetto AEM è incluso nell&#39;SPA.
+Il componente `AEMCard` corrisponde a [ definito nel caso d&#39;uso precedente](#content-does-not-exist). In questo caso, il contenuto del progetto AEM, definito nel punto precedente, è incluso nell’SPA.

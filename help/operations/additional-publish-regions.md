@@ -4,7 +4,7 @@ description: Scopri in che modo AEM as a Cloud Service supporta ulteriori aree g
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 71%
@@ -24,7 +24,7 @@ Le organizzazioni possono concedere licenze fino a tre aree geografiche di pubbl
 >[!NOTE]
 >
 >* Questa funzione è disponibile per le soluzioni Sites e Forms.
->* Questa funzionalità non può essere applicata a [programmi sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* Questa funzionalità non può essere applicata a [programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
 >* Questa funzione richiede l’aggiornamento del programma alla versione AEM 12142 o successiva.
 
 ## Casi d’uso {#use-cases}
@@ -41,7 +41,7 @@ Dopo aver concesso in licenza un’area geografica di pubblicazione aggiuntiva, 
 
 Le aree geografiche di pubblicazione aggiuntiva vengono applicate agli ambienti di staging e produzione, ma non agli ambienti RDE o di sviluppo.
 
-Nel caso in cui un’area geografica non sia più disponibile, i clienti non dovranno gestire l’instradamento del traffico verso le aree disponibili, in quanto è gestito dalla rete CDN di Adobe.
+Nel caso in cui un’area geografica non sia più disponibile, i clienti non dovranno gestire l’instradamento del traffico verso le aree disponibili in quanto è gestito dalla rete CDN di Adobe.
 
 Come descritto nella sezione Considerazioni avanzate sulla rete di seguito, si consiglia ai clienti che utilizzano la rete avanzata di configurarla per ogni area di pubblicazione aggiuntiva per mantenere la disponibilità nel caso in cui un’area non sia più disponibile.
 

@@ -5,7 +5,7 @@ exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 29%
@@ -31,7 +31,7 @@ I contenuti possono essere di diversi tipi, tra cui pagine, risorse e pubblicazi
 
 ![Diagramma relativo a authoring, pubblicazione e dispatcher](assets/author-publish.jpg)
 
-Per ulteriori dettagli sull&#39;architettura tecnica di AEM as a Cloud Service, vedere il documento [Introduzione all&#39;architettura di Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
+Per ulteriori dettagli sull&#39;architettura tecnica di AEM as a Cloud Service, vedere il documento [Introduzione all&#39;architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md).
 
 {{edge-delivery-authoring}}
 

@@ -4,9 +4,9 @@ description: Scopri come utilizzare le pipeline di configurazione per distribuir
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ La tabella seguente offre un elenco completo di tali configurazioni, con collega
 
 ## Creazione e gestione delle pipeline di configurazione {#creating-and-managing}
 
-Per informazioni su come creare e configurare le pipeline, consulta il documento [Pipeline CI/CD.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
+Per informazioni su come creare e configurare le pipeline, consulta [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 Durante la creazione di una pipeline di configurazione in Cloud Manager, assicurati di selezionare una **distribuzione di destinazione** anziché **codice full stack** durante la configurazione della pipeline.
 
@@ -95,7 +95,7 @@ oppure
     cdn.yaml
 ```
 
-I nomi delle cartelle e dei file sotto `/config` sono arbitrari. Il file YAML, tuttavia, deve includere un valore di proprietà [`kind` valido.](#configurations)
+I nomi delle cartelle e dei file sotto `/config` sono arbitrari. Il file YAML, tuttavia, deve includere un valore di proprietà [`kind` valido](#configurations).
 
 In genere, le configurazioni vengono distribuite in tutti gli ambienti. Se tutti i valori delle proprietà sono identici per ogni ambiente, è sufficiente un singolo file YAML. Tuttavia, è comune che i valori delle proprietà differiscano tra gli ambienti, ad esempio durante il test di un ambiente inferiore.
 

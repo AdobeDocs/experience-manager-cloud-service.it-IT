@@ -4,7 +4,7 @@ description: Il componente RemotePage è un componente di pagina personalizzato 
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -41,9 +41,9 @@ Per ulteriori dettagli sull&#39;SPA esterno modificabile nell&#39;AEM, vedere l&
 
 ## Limitazioni {#limitations}
 
-* Il componente RemotePage prevede che l&#39;implementazione fornisca un manifesto delle risorse come quello [ trovato qui.](https://github.com/shellscape/webpack-manifest-plugin) Il componente RemotePage, tuttavia, è stato testato per funzionare solo con il framework React (e Next.js tramite il componente remote-page-next) e pertanto non supporta il caricamento remoto di applicazioni da altri framework, ad esempio Angular.
+* Il componente RemotePage prevede che l&#39;implementazione fornisca un manifesto di risorse come quello [trovato qui](https://github.com/shellscape/webpack-manifest-plugin). Il componente RemotePage, tuttavia, è stato testato per funzionare solo con il framework React (e Next.js tramite il componente remote-page-next ) e pertanto non supporta il caricamento remoto di applicazioni da altri framework, come ad Angular.
 * I CSS interni definiti nel file HTML principale dell’applicazione e i CSS in linea sul nodo DOM principale non saranno disponibili durante il rendering remoto nell’AEM.
 
 ## Dettagli tecnici {#technical-details}
 
-Come il resto del progetto SPA dell’AEM, il componente RemotePage è open source. Per informazioni tecniche complete sul componente RemotePage, [consulta l&#39;archivio GitHub.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
+Come il resto del progetto SPA dell’AEM, il componente RemotePage è open source. Per informazioni tecniche complete sul componente RemotePage, [consulta l&#39;archivio GitHub](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage).

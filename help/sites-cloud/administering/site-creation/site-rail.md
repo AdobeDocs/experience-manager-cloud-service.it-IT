@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 38%
+ht-degree: 31%
 
 ---
 
@@ -34,7 +34,7 @@ Il pannello Sito consente di gestire le informazioni relative a temi e modelli p
 
 ## Download di origini tema {#downloading-theme-sources}
 
-Quando crei un sito in AEM basato su un [modello di sito,](site-templates.md) puoi scaricare il [tema del sito](site-themes.md) utilizzando il pannello Sito.
+Quando crei un sito in AEM basato su un [modello di sito](site-templates.md), puoi scaricare il [tema del sito](site-themes.md) utilizzando il pannello Sito.
 
 Con il pannello Sito visualizzato nella console Sites, seleziona la pagina principale del sito per visualizzare informazioni sul tema.
 
@@ -44,7 +44,7 @@ Selezionare **Scarica origini tema** per scaricare una copia locale del tema del
 
 ## Scaricare le risorse dei modelli {#downloading-template-resources}
 
-[Modelli di sito](site-templates.md) può contenere informazioni oltre alla struttura del contenuto del sito e al [tema del sito.](site-themes.md) Ad esempio, i modelli di sito possono contenere progetti wireframe o altri file relativi al sito.
+[Modelli del sito](site-templates.md) può contenere informazioni oltre alla struttura del contenuto del sito e [al tema del sito](site-themes.md). Ad esempio, i modelli di sito possono contenere progetti wireframe o altri file relativi al sito.
 
 Se il sito è basato su un modello, con il pannello Sito visualizzato nella console Sites, seleziona la pagina principale del sito per visualizzare informazioni sul tema, incluse ulteriori risorse.
 
@@ -84,4 +84,4 @@ Con il pannello Sito visualizzato nella console Sites, seleziona la pagina princ
 
 ![Abilitazione pipeline front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 
-Per ulteriori informazioni, consulta il documento [Abilitazione pipeline front-end.](enable-front-end-pipeline.md)
+Per ulteriori informazioni, vedere il documento [Abilitazione pipeline front-end](enable-front-end-pipeline.md).

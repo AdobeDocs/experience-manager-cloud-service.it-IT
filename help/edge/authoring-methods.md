@@ -4,10 +4,10 @@ description: Scopri considerazioni importanti ai fini della creazione di contenu
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
-source-git-commit: ceaedd8ee76b6a5008e0310cf7677660d84c1e44
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -54,7 +54,7 @@ La prima considerazione da tenere presente dovrebbe essere la modalità di distr
 Questo può aiutarti a decidere se ti serve:
 
 * [AEM come CMS headless](/help/headless/introduction.md) utilizzando l’Editor frammento di contenuto e/o l’Editor universale.
-* Edge Delivery Services di AEM utilizzando la [modifica basata su documento](/help/edge/docs/authoring.md) o l’[authoring WYSIWYG con l’editor universale.](/help/edge/wysiwyg-authoring/authoring.md)
+* Edge Delivery Services AEM che utilizzano la [modifica basata su documenti](/help/edge/docs/authoring.md) o la [creazione di WYSIWYG con Universal Editor](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Preferenze di authoring dei contenuti {#content-authoring}
 
@@ -64,8 +64,8 @@ La considerazione successiva dovrebbe essere come creare i contenuti. La seguent
 
 Questo può aiutarti a decidere se ti serve:
 
-* Edge Delivery Services AEM utilizzando la [modifica basata su documento.](/help/edge/docs/authoring.md)
-* [Authoring WYSIWYG con l’editor universale.](/help/edge/wysiwyg-authoring/authoring.md)
+* Edge Delivery Services AEM che utilizzano la [modifica basata su documento](/help/edge/docs/authoring.md).
+* [Creazione di WYSIWYG con Universal Editor](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Obiettivi del progetto {#project-goals}
 

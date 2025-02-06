@@ -4,10 +4,10 @@ description: Scopri i passaggi per abilitare l’esperienza completa di AEM Scre
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '2666'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Scopri i passaggi per abilitare l’esperienza completa di AEM Screens as a Clou
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso del componente aggiuntivo Demo di riferimento AEM, [Crea sito demo,](create-site.md) hai creato un sito demo basato sui modelli del componente aggiuntivo Demo di riferimento. Ora dovresti:
+Nel documento precedente del percorso del componente aggiuntivo Demo di riferimento AEM, [Crea sito demo](create-site.md), hai creato un sito demo basato sui modelli del componente aggiuntivo Demo di riferimento. Ora dovresti:
 
 * Comprendere come accedere all’ambiente di authoring AEM.
 * Conoscere come creare un sito basato su un modello.
@@ -104,8 +104,8 @@ Al termine della procedura guidata, troverai il contenuto distribuito in Sites e
 
 Ora che disponi di contenuti dimostrativi We.Cafe, puoi scegliere come testare AEM Screens:
 
-* Per esplorare solo i contenuti della console AEM Sites, inizia a esplorare e scopri di più nella sezione [Risorse aggiuntive](#additional-resources)! non è richiesta alcuna ulteriore azione.
-* Se desideri utilizzare le funzioni dinamiche complete di AEM Screens, continua con la sezione successiva, [Modifica dinamica del contenuto di Screens.](#dynamically-change)
+* Se desideri esplorare solo il contenuto all&#39;interno della console AEM Sites, è sufficiente iniziare a esplorare e scoprire di più nella sezione [Risorse aggiuntive](#additional-resources). Non è richiesta alcuna ulteriore azione.
+* Se desideri utilizzare le funzioni dinamiche complete di AEM Screens, continua con la sezione successiva, [Modifica dinamica del contenuto di Screens](#dynamically-change).
 
 ## Modifica dinamica del contenuto di Screens {#dynamically-change}
 
@@ -390,7 +390,7 @@ Adesso che hai completato questa parte del percorso del Componente aggiuntivo De
 * Comprendere il contenuto demo di We.Cafe.
 * Sapere come configurare AEM Screens per We.Cafe.
 
-Adesso sei pronto per esplorare le funzionalità di AEM Screens utilizzando i tuoi siti demo. Prosegui alla sezione successiva del percorso, [Gestire i siti demo](manage.md), dove verranno illustrati gli strumenti disponibili per aiutarti a gestire i siti demo e come rimuoverli.
+Adesso sei pronto per esplorare le funzionalità di AEM Screens utilizzando i tuoi siti demo. Passa alla sezione successiva del percorso, [Gestire i siti demo](manage.md), in cui trovi le informazioni sugli strumenti disponibili per gestire i siti demo e su come rimuoverli.
 
 Puoi consultare alcune delle risorse aggiuntive disponibili nella [Sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
 

@@ -4,7 +4,7 @@ description: Scopri i casi d’uso principali di Universal Editor e come utilizz
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -69,7 +69,7 @@ L’editor universale funziona nel modo seguente.
 1. L’autore del contenuto modifica il contenuto della pagina in un’interfaccia intuitiva di WYSIWYG, modificando direttamente la pagina.
 1. Le modifiche vengono automaticamente riportate nell&#39;origine dati in modo permanente nell&#39;Editor universale.
 
-Per ulteriori informazioni sull&#39;architettura di Universal Editor, vedere il documento [Architettura di Universal Editor.](/help/implementing/universal-editor/architecture.md)
+Per ulteriori informazioni sull&#39;architettura di Universal Editor, vedere il documento [Architettura di Universal Editor](/help/implementing/universal-editor/architecture.md).
 
 ## Concetti relativi all’editor universale {#concepts}
 

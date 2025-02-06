@@ -5,10 +5,10 @@ exl-id: fe065972-39db-4074-a802-85895c701efd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Scopri come distribuire il tema del sito utilizzando la pipeline.
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di creazione rapida di siti AEM, [Personalizzare il tema del sito,](customize-theme.md) hai imparato come è costruito il tema, come personalizzarlo e come testarlo utilizzando il contenuto live AEM, e ora devi:
+Nel documento precedente del percorso di Creazione Rapida dei Siti AEM, [Personalizzare il tema del sito](customize-theme.md), hai imparato come è costruito il tema, come personalizzarlo e come testarlo utilizzando il contenuto live AEM, e ora dovresti:
 
 * Comprendere la struttura di base del tema del sito e come modificarlo.
 * Scopri come testare le personalizzazioni dei temi utilizzando contenuti AEM reali tramite proxy locale.
@@ -78,7 +78,7 @@ Puoi verificare lo stato della pipeline per visualizzarne i dettagli dell’avan
 Una volta completata la pipeline, puoi informare l’amministratore per convalidare le modifiche. L’amministratore:
 
 1. Aprirà l’ambiente di authoring AEM.
-1. Accederà al [il sito creato in precedenza dall’amministratore.](create-site.md)
+1. Accedi al [sito creato in precedenza dall&#39;amministratore](create-site.md).
 1. Modificherà una delle pagine di contenuto.
 1. Visualizzerà le modifiche applicate.
 

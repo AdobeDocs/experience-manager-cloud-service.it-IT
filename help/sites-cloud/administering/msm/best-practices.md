@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 92%
+source-wordcount: '1414'
+ht-degree: 91%
 
 ---
 
@@ -99,7 +99,7 @@ Le modifiche alla struttura del contenuto in una struttura blueprint/sorgente ve
 * Lo **spostamento** delle pagine in una blueprint **non** fa sì che le pagine corrispondenti vengano spostate in Live Copy dopo il rollout con la configurazione di rollout standard:
    * Questo comportamento si spiega con il fatto che lo spostamento di una pagina include implicitamente l’eliminazione di una pagina. Questo potrebbe causare un comportamento imprevisto al momento della pubblicazione, in quanto l’eliminazione delle pagine sull’autore disattiva automaticamente il contenuto corrispondente al momento della pubblicazione. Questo può anche avere un effetto aggiuntivo sugli elementi correlati come collegamenti, segnalibri e altri.
       * L’ereditarietà dei contenuti nelle rispettive pagine Live Copy viene aggiornata per riflettere la nuova posizione del relativo sorgente nella blueprint.
-      * Per realizzare completamente lo spostamento di una pagina da una blueprint a una Live Copy, considera le [best practice per lo spostamento delle pagine.](#page-move)
+      * Per realizzare completamente lo spostamento di una pagina da blueprint a Live Copy, considera le [best practice per lo spostamento delle pagine].(#page-move)
 
 ### Best practice per lo spostamento delle pagine {#page-move}
 

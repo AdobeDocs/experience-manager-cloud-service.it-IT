@@ -4,7 +4,7 @@ description: Con il design reattivo, le stesse esperienze possono essere visuali
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -73,7 +73,7 @@ L&#39;esercitazione [WKND](develop-wknd-tutorial.md) utilizza questa strategia p
 
 ### Utilizzo delle query multimediali con le pagine AEM {#using-media-queries-with-aem-pages}
 
-[Il progetto di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e l&#39;archetipo del progetto AEM [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) utilizzano il [componente core Pagina,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) che include clientlibs tramite i criteri di pagina.
+[Il progetto di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e l&#39;archetipo del progetto AEM [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) utilizzano il [componente core Pagina](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), che include clientlibs tramite i criteri di pagina.
 
 Se il tuo componente pagina non è basato sul componente core pagina, puoi anche includere la cartella della libreria client nello script HTL o JSP. In questo modo si genera e si fa riferimento al file CSS con le query multimediali necessarie per il funzionamento della griglia reattiva.
 

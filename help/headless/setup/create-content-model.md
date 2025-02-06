@@ -4,10 +4,10 @@ description: Definisci la struttura del contenuto da creare e distribuire utiliz
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 88%
+ht-degree: 74%
 
 ---
 
@@ -17,7 +17,7 @@ Definisci la struttura del contenuto da creare e distribuire utilizzando le funz
 
 ## Cosa sono i modelli per frammenti di contenuto? {#what-are-content-fragment-models}
 
-[Ora che hai creato una configurazione,](create-configuration.md) puoi utilizzarla per creare modelli per frammenti di contenuto.
+[Dopo aver creato una configurazione](create-configuration.md), è possibile utilizzarla per creare modelli per frammenti di contenuto.
 
 I modelli per frammenti di contenuto definiscono la struttura dei dati e del contenuto da creare e gestire in AEM. Servono come una sorta di impalcatura per i tuoi contenuti. Nella creazione di contenuti, questi vengono selezionati dagli autori in base ai modelli per frammenti di contenuto da te definiti, utilizzati come riferimento.
 
@@ -67,8 +67,8 @@ Puoi creare più modelli. I modelli possono fare riferimento ad altri frammenti 
 
 ## Passaggi successivi {#next-steps}
 
-Dopo aver definito le strutture dei frammenti di contenuto mediante la creazione di modelli, puoi passare alla terza parte della guida introduttiva e [creare cartelle in cui memorizzare gli stessi frammenti.](create-assets-folder.md)
+Dopo aver definito le strutture dei frammenti di contenuto mediante la creazione di modelli, puoi passare alla terza parte della guida introduttiva e [creare cartelle in cui memorizzare gli stessi frammenti](create-assets-folder.md).
 
 >[!TIP]
 >
->Per informazioni complete sui modelli per frammenti di contenuto, consulta la [documentazione sui modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+>Per informazioni complete sui modelli per frammenti di contenuto, consulta la [documentazione sui modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).

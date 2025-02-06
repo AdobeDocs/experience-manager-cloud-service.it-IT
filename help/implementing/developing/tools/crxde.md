@@ -4,7 +4,7 @@ description: CRXDE Lite fa parte del modulo quickstart dell’AEM ed è disponib
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 1%
@@ -34,7 +34,7 @@ L’interfaccia utente di CRXDE Lite viene visualizzata come segue nel browser:
 
 >[!TIP]
 >
->Puoi anche accedere a CRXDE Lite dal menu AEM. Dal menu principale selezionare **Strumenti** > **Generale** > **CRXDE Liti**.
+>Puoi anche accedere a CRXDE Lite dal menu AEM. Dal menu principale selezionare **Strumenti** > **Generale** > **CRXDE Lite**.
 
 ## Panoramica dell’interfaccia utente {#overview-of-the-user-interface}
 
@@ -42,7 +42,7 @@ L&#39;interfaccia utente di CRXDE Lite è composta da numerose parti e da numero
 
 ### Barra del commutatore superiore {#top-switcher-bar}
 
-La barra di commutazione superiore consente di passare rapidamente da CRXDE Lite a Gestione pacchetti [.](package-manager.md)
+La barra di commutazione superiore consente di passare rapidamente da CRXDE Lite a [Gestione pacchetti](package-manager.md).
 
 ### Widget percorso nodo {#node-path-widget}
 
@@ -64,7 +64,7 @@ Il filtro di navigazione ad albero (icona binocolo) consente di filtrare i nodi 
 
 Il **riquadro di modifica** consente di visualizzare il contenuto del file attualmente selezionato nell&#39;archivio. Ogni file aperto viene rappresentato come la relativa scheda nel riquadro.
 
-La scheda **Home** consente di eseguire ricerche nel contenuto e/o nella documentazione e di accedere alla documentazione per gli sviluppatori e al supporto per gli Adobi.
+La scheda **Home** consente di eseguire ricerche nel contenuto e/o nella documentazione e di accedere alla documentazione per gli sviluppatori e al supporto Adobe.
 
 Fare doppio clic su un file nel **riquadro di Explorer** per visualizzarne il contenuto nel **riquadro di modifica**. Puoi quindi modificarlo e salvare le modifiche.
 
@@ -183,7 +183,7 @@ Per creare una cartella con CRXDE Lite:
 Per creare un nodo con CRXDE Lite:
 
 1. Apri CRXDE Lite nel browser.
-1. Nel [**riquadro Exploerer**,](#explorer-pane) fare clic con il pulsante destro del mouse sul nodo in cui si desidera creare il nuovo nodo, selezionare **Crea**, quindi **Crea nodo**.
+1. Nel [**riquadro Exploerer**](#explorer-pane), fare clic con il pulsante destro del mouse sul nodo in cui si desidera creare il nuovo nodo, selezionare **Crea**, quindi **Crea nodo**.
 1. Immetti **Name** e seleziona **Type**.
 1. Fai clic su **OK**.
 1. Fare clic sul pulsante [**Salva tutto**](#save-all-button) per salvare le modifiche nel server.
@@ -201,7 +201,7 @@ La convalida relativa all’autorizzazione o meno del nodo creato dal tipo di no
 Per creare una proprietà con CRXDE Lite:
 
 1. Apri CRXDE Lite nel browser.
-1. Nel [**riquadro Esplosione**,](#explorer-pane) selezionare il nodo in cui si desidera aggiungere la nuova proprietà.
+1. Nel [**riquadro Esplosione**](#explorer-pane), selezionare il nodo in cui si desidera aggiungere la nuova proprietà.
 1. Nella [**scheda Proprietà**](#properties-tab) nel riquadro inferiore, immettere **Nome**, **Tipo** e **Valore**.
 1. Fare clic su **Aggiungi**.
 1. Fare clic sul pulsante [**Salva tutto**](#save-all-button) per salvare le modifiche nel server.
@@ -211,10 +211,10 @@ Per creare una proprietà con CRXDE Lite:
 Per creare un file con CRXDE Lite:
 
 1. Apri CRXDE Lite nel browser.
-1. Nel [**riquadro Esplora risorse**,](#explorer-pane) fare clic con il pulsante destro del mouse sul componente in cui si desidera creare il file, selezionare **Crea**, quindi **Crea file**.
+1. Nel [**riquadro Esplora risorse**](#explorer-pane), fare clic con il pulsante destro del mouse sul componente in cui si desidera creare il file, selezionare **Crea**, quindi **Crea file**.
 1. Immetti il file **Name** inclusa la relativa estensione.
 1. Fai clic su **OK**.
-1. Il nuovo file si apre come scheda nel [**riquadro di modifica**.](#edit-pane)
+1. Il nuovo file si apre come scheda nel [**riquadro di modifica**](#edit-pane).
 1. Modifica il file.
 1. Fare clic sul pulsante [**Salva tutto**](#save-all-button) per salvare le modifiche.
 

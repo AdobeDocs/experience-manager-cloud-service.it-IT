@@ -5,16 +5,16 @@ contentOwner: KK
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '703'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 # Rielaborazione di risorse digitali {#reprocessing-digital-assets}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 È possibile rielaborare le risorse in una cartella che dispone già di un profilo di metadati esistente che è stato successivamente modificato. Se desiderate che il predefinito appena modificato venga riapplicato alle risorse esistenti nella cartella, dovete rielaborare la cartella. Puoi rielaborare tutte le risorse necessarie.
@@ -77,7 +77,7 @@ Ulteriori informazioni su [Rielabora tag colore per immagini esistenti in DAM](h
 
 ### Ritaglio avanzato {#reprocessing-smart-crop}
 
-Ulteriori informazioni su [Dynamic Medie Smart Cropping](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) che consente di applicare alle risorse caricate specifiche configurazioni di nitidezza e ritaglio (**[!UICONTROL Smart Cropping]** e ritaglio pixel).
+Ulteriori informazioni su [Dynamic Media Smart Cropping](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) che consente di applicare alle risorse caricate specifiche configurazioni di nitidezza e ritaglio (**[!UICONTROL Smart Cropping]** e ritaglio pixel).
 
 ### Metadati {#reprocessing-metadata}
 
@@ -85,13 +85,13 @@ Ulteriori informazioni su [Dynamic Medie Smart Cropping](https://experienceleagu
 
 Ulteriori informazioni su [Rielaborazione dei profili di metadati](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en).
 
-### Rielaborare le risorse Dynamic Medie in una cartella {#reprocessing-dynamic-media}
+### Rielaborare le risorse Dynamic Media in una cartella {#reprocessing-dynamic-media}
 
-È possibile rielaborare le risorse in una cartella che dispone già di un profilo immagine Dynamic Medie esistente o di un profilo video Dynamic Medie modificato successivamente. Per ulteriori informazioni, visita [Rielabora risorse Dynamic Medie in una cartella.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+È possibile rielaborare le risorse in una cartella che dispone già di un profilo immagine Dynamic Media esistente o di un profilo video Dynamic Media modificato successivamente. Per ulteriori informazioni, visita [Rielabora risorse Dynamic Media in una cartella](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en).
 
 >[!NOTE]
 >
->È necessario configurare [!DNL Dynamic Media] nell&#39;ambiente per abilitare la finestra di dialogo Dynamic Medie.
+>È necessario configurare [!DNL Dynamic Media] nell&#39;ambiente per abilitare la finestra di dialogo Dynamic Media.
 >
 
 ### Flussi di lavoro

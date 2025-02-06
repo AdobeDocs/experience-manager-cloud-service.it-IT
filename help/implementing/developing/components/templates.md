@@ -4,7 +4,7 @@ description: Scopri come vengono utilizzati i modelli modificabili durante la cr
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3443'
 ht-degree: 4%
@@ -225,7 +225,7 @@ Per creare una cartella, puoi effettuare le seguenti operazioni:
 
 >[!NOTE]
 >
->Nel [Browser configurazioni](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) è possibile modificare la cartella globale e attivare l&#39;opzione **Modelli modificabili** se si desidera creare modelli in questa cartella, tuttavia questa non è la best practice consigliata.
+>Nel [Browser configurazioni](/help/implementing/developing/introduction/configurations.md#using-configuration-browser), è possibile modificare la cartella globale e attivare l&#39;opzione **Modelli modificabili** se si desidera creare modelli in questa cartella, tuttavia questa non è la best practice consigliata.
 
 ### ACL e gruppi {#acls-and-groups}
 
@@ -467,7 +467,7 @@ Definisce il contenuto iniziale di una nuova pagina al momento della creazione:
 
 ### Layout {#layout}
 
-Quando [modifichi un modello, puoi definire il layout](/help/sites-cloud/authoring/page-editor/templates.md), questo utilizza il [layout responsivo standard,](/help/sites-cloud/administering/responsive-layout.md) che può essere [configurato nella pagina dall&#39;autore di contenuto.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+Quando [modifichi un modello puoi definire il layout](/help/sites-cloud/authoring/page-editor/templates.md), questo utilizza il [layout responsive standard](/help/sites-cloud/administering/responsive-layout.md), che può essere [configurato nella pagina dall&#39;autore di contenuto](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 ### Criteri per contenuto {#content-policies}
 

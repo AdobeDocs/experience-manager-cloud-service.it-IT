@@ -4,10 +4,10 @@ description: Scopri in che modo Cloud Manager supporta il progetto AEM tramite p
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ L’amministratore di sistema è responsabile della configurazione del team Clou
 
 Per accedere a Cloud Manager, segui la procedura riportata di seguito.
 
-1. Accedi alla pagina di accesso di Cloud Manager all’indirizzo [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/).
+1. Passare alla pagina di accesso di Cloud Manager all&#39;indirizzo [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/).
 
 1. Dalla pagina **Programmi e prodotti** di Cloud Manager, seleziona il programma per aprire la pagina **Panoramica**.
 
@@ -38,7 +38,7 @@ Puoi accedere alla pagina Programmi e prodotti di Cloud Manager anche dalla pagi
 
 ## Autorizzazioni basate sui ruoli in Cloud Manager {#role-based-permissions}
 
-| Autorizzazione | Descrizione | Proprietario business | Responsabile dell’implementazione | Program Manager (Responsabile programma) | Sviluppatore |
+| Autorizzazione | Descrizione | Proprietario business | Responsabile della distribuzione | Responsabile del programma | Sviluppatore |
 |--- |--- |--- |--- |--- |--- |
 | Aggiunta di un programma<br>Modifica di un programma | Aggiunta di un nuovo programma<br>Aggiunta o rimozione di soluzioni o componenti aggiuntivi | x |  |  |  |
 | Creazione di un ambiente | Creazione degli ambienti di produzione + staging e sviluppo | x | x |  |  |

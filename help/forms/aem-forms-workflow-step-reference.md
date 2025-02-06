@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utilizzare i flussi di lavoro AEM, utilizzando Assegna passaggi attività, converti in passaggi PDF/A, Genera un documento di passaggi registrati, Utilizza flussi di lavoro, Firma passaggio documento, Genera un passaggio di output stampato, Genera output PDF non interattivo
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '7379'
 ht-degree: 0%
@@ -121,7 +121,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
     -->
 
 * **[!UICONTROL Assegnatario]** > **[!UICONTROL Assegna opzioni]**: specifica il metodo per assegnare l&#39;attività a un utente. È possibile assegnare dinamicamente l&#39;attività a un utente o a un gruppo utilizzando lo script Selettore partecipanti oppure assegnare l&#39;attività a un utente o a un gruppo AEM specifico.
-* **[!UICONTROL Selettore partecipanti]**: l&#39;opzione è disponibile quando l&#39;opzione **[!UICONTROL Assegna dinamicamente a un utente o a un gruppo]** è selezionata nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, vedere [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio personalizzato Partecipante dinamico Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
+* **[!UICONTROL Selettore partecipanti]**: l&#39;opzione è disponibile quando l&#39;opzione **[!UICONTROL Assegna dinamicamente a un utente o a un gruppo]** è selezionata nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, vedere [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio personalizzato Partecipante dinamico Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Partecipanti]**: il campo è disponibile quando l&#39;opzione **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** è selezionata nel campo **[!UICONTROL Selettore partecipanti]**. Il campo consente di selezionare utenti o gruppi per l&#39;opzione RandomParticipantChooser.
 
@@ -150,7 +150,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
 * **[!UICONTROL Route]**: un&#39;attività può diramarsi in route diverse. Se selezionata nella casella in entrata AEM, la route restituisce un valore e i rami del flusso di lavoro si basano sulla route selezionata. È possibile archiviare le route in una variabile di matrice di tipi di dati String oppure selezionare **[!UICONTROL Letterale]** per aggiungere le route manualmente.
 
 * **[!UICONTROL Titolo route]**: specificare il titolo della route. Viene visualizzato nella casella in entrata AEM.
-* **[!UICONTROL Icona rosso corallo]**: specificare un attributo HTML di un&#39;icona rosso corallo. La libreria CorelUI di Adobe fornisce un ampio set di icone touch-first. È possibile scegliere e utilizzare un&#39;icona per il ciclo di lavorazione. Viene visualizzato insieme al titolo nella casella in entrata AEM. Se memorizzi le route in una variabile, le route utilizzano un&#39;icona di corallo &quot;Tag&quot; predefinita.
+* **[!UICONTROL Icona rosso corallo]**: specificare un attributo HTML di un&#39;icona rosso corallo. La libreria Adobe CorelUI fornisce un vasto set di icone touch-first. È possibile scegliere e utilizzare un&#39;icona per il ciclo di lavorazione. Viene visualizzato insieme al titolo nella casella in entrata AEM. Se memorizzi le route in una variabile, le route utilizzano un&#39;icona di corallo &quot;Tag&quot; predefinita.
 * **[!UICONTROL Consenti all&#39;assegnatario di aggiungere commenti]**: selezionare questa opzione per abilitare i commenti per l&#39;attività. L’assegnatario può aggiungere i commenti dalla casella in entrata AEM al momento dell’invio dell’attività.
 * **[!UICONTROL Salva commento nella variabile]**: salva il commento in una variabile di tipo dati String. Questa opzione viene visualizzata solo se si seleziona la casella di controllo **[!UICONTROL Consenti all&#39;assegnatario di aggiungere commenti]**.
 
@@ -554,7 +554,7 @@ Il passaggio Genera output stampato ha le seguenti proprietà:
 
 * **[!UICONTROL Impostazioni locali]**: specifica la lingua utilizzata per generare il documento PDF. Se fornisci un valore letterale, seleziona una lingua dall’elenco o scegli uno dei seguenti valori:
    * **[!UICONTROL Per utilizzare il server predefinito]**:
-Impostazione predefinita. Utilizzare l&#39;impostazione Locale configurata sul server [!DNL AEM Forms]. L&#39;impostazione Locale viene configurata utilizzando la console di amministrazione. (Vedi [Guida di Designer](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).)
+Impostazione predefinita. Utilizzare l&#39;impostazione Locale configurata sul server [!DNL AEM Forms]. L&#39;impostazione Locale viene configurata utilizzando la console di amministrazione. (Vedi [Guida di Designer](https://helpx.adobe.com/content/dam/help/it/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
    * **[!UICONTROL Per utilizzare un valore personalizzato]**:
 Digita il codice locale nella casella letterale o seleziona una variabile stringa contenente il codice locale. Per un elenco completo dei codici delle impostazioni internazionali supportati, vedere https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.

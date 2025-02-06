@@ -5,10 +5,10 @@ exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1359'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggi
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione di AEM headless, [Traduci contenuto,](configure-connector.md) hai imparato a utilizzare i progetti di traduzione in AEM per tradurre i contenuti headless. Ora dovresti:
+Nel documento precedente del percorso di traduzione headless AEM, [Traduci contenuto](configure-connector.md), hai imparato a utilizzare i progetti di traduzione AEM per tradurre i contenuti headless. Ora dovresti:
 
 * Sapere cos’è un progetto di traduzione.
 * Essere in grado di creare nuovi progetti di traduzione.
@@ -119,7 +119,7 @@ Al progetto è stata aggiunta una nuova scheda di processo. In questo esempio è
 
 Noterai che le statistiche elencate nella nuova scheda (numero di risorse e frammenti di contenuto) sono diverse. Questo perché AEM riconosce ciò che è cambiato dopo l’ultima traduzione e include solo il contenuto che deve essere tradotto. Ciò include la ritraduzione dei contenuti aggiornati e la prima traduzione dei nuovi contenuti.
 
-Da questo punto, [inizia e gestisci il tuo processo di traduzione proprio come hai fatto con l’originale.](translate-content.md#using-translation-project)
+Da questo punto, [avvia e gestisci il processo di traduzione proprio come hai fatto con l&#39;originale](translate-content.md#using-translation-project).
 
 ### Aggiornamento di un progetto di traduzione creato manualmente {#updating-manual-project}
 
@@ -141,15 +141,15 @@ Per aggiornare una traduzione è possibile aggiungere al progetto esistente un n
    ![Seleziona lingua di destinazione](assets/select-target-language.png)
 
 1. Una volta impostata la lingua di destinazione del nuovo processo di traduzione, seleziona il pulsante con i puntini di sospensione nella parte inferiore della scheda del processo per visualizzarne i dettagli.
-1. Il processo è vuoto al momento della creazione. Aggiungi contenuto al processo toccando o facendo clic sul pulsante **Aggiungi** e utilizzando il browser del percorso [come in precedenza durante la creazione del progetto di traduzione.](translate-content.md##manually-creating)
+1. Il processo è vuoto al momento della creazione. Aggiungi contenuto al processo toccando o facendo clic sul pulsante **Aggiungi** e utilizzando il browser percorsi [come in precedenza durante la creazione del progetto di traduzione](translate-content.md##manually-creating).
 
 >[!TIP]
 >
 >I potenti filtri del browser del percorso possono essere utili di nuovo per trovare solo il contenuto aggiornato.
 >
->Per ulteriori informazioni sul browser percorsi, consulta la [sezione risorse aggiuntive.](#additional-resources)
+>Ulteriori informazioni sul browser percorsi sono disponibili nella [sezione risorse aggiuntive](#additional-resources).
 
-Da questo punto, [inizia e gestisci il tuo processo di traduzione proprio come hai fatto con l’originale.](translate-content.md#using-translation-project)
+Da questo punto, [avvia e gestisci il processo di traduzione proprio come hai fatto con l&#39;originale](translate-content.md#using-translation-project).
 
 ## Fine del percorso? {#end-of-journey}
 

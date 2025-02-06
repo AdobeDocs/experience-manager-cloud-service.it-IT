@@ -4,7 +4,7 @@ description: Scopri come ignorare la pagina di errore predefinita ospitando file
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Configurazione delle pagine di errore CDN {#cdn-error-pages}
 
-Nel caso improbabile che la [rete CDN gestita dall&#39;Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) non raggiunga l&#39;origine dell&#39;AEM, per impostazione predefinita la rete CDN fornisce una pagina di errore generica senza marchio che indica che il server non può essere raggiunto. È possibile ignorare la pagina di errore predefinita ospitando i file statici nell&#39;archiviazione con hosting autonomo, ad esempio Amazon S3 o Azure Blob Storage, e facendo riferimento a tali file in un file di configurazione distribuito utilizzando la pipeline di configurazione [config di Cloud Manager.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+Nel caso improbabile che la rete CDN [gestita da Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) non raggiunga l&#39;origine dell&#39;AEM, per impostazione predefinita la rete CDN fornisce una pagina di errore generica senza marchio che indica che il server non è raggiungibile. È possibile ignorare la pagina di errore predefinita ospitando i file statici nell&#39;archiviazione con hosting autonomo, ad esempio Amazon S3 o Azure Blob Storage, e facendo riferimento a tali file in un file di configurazione distribuito utilizzando la pipeline di configurazione [config](/help/operations/config-pipeline.md#managing-in-cloud-manager) di Cloud Manager.
 
 ## Configurazione {#setup}
 

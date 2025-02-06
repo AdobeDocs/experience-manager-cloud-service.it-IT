@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 2%
+ht-degree: 26%
 
 ---
 
@@ -19,9 +19,9 @@ Scopri come creare modelli da utilizzare per creare pagine modificabili con Univ
 
 >[!NOTE]
 >
->[Sono disponibili anche modelli per la creazione di pagine modificabili con Editor pagine.](/help/sites-cloud/authoring/page-editor/templates.md)
+>[Sono disponibili anche modelli per la creazione di pagine modificabili con Editor pagina](/help/sites-cloud/authoring/page-editor/templates.md).
 
-## Cosa sono i modelli di pagina? {#what-are}
+## Che cosa sono i modelli di pagina? {#what-are}
 
 Le linee guida di branding e marketing spesso impongono layout particolari per le pagine di contenuti. Spesso è anche una realtà pratica che molte delle tue pagine condividano la stessa struttura e layout. Per risparmiare tempo agli autori di contenuti, le pagine possono essere create dai modelli.
 
@@ -33,21 +33,21 @@ Per utilizzare i modelli per la creazione di pagine modificabili con l’Editor 
 
 Innanzitutto, abilita i modelli modificabili per la configurazione del sito.
 
-1. Utilizza la console **Sites** e [seleziona la directory principale del tuo sito.](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)
+1. Utilizza la console **Sites** e [seleziona la directory principale del tuo sito](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
 1. Dopo aver selezionato la directory principale del sito, tocca o fai clic sull&#39;icona [**Proprietà**](/help/sites-cloud/authoring/sites-console/page-properties.md) nella barra degli strumenti.
 1. Nella scheda **Avanzate** della finestra di dialogo delle proprietà, prendi nota del valore nel campo **Configurazione cloud**.
 1. Dalla navigazione principale, scegli **Strumenti** -> **Generale** -> **Browser configurazioni**.
-1. Nel **[Browser configurazioni,](/help/implementing/developing/introduction/configurations.md)** seleziona la configurazione indicata nel passaggio precedente e tocca o fai clic su **Proprietà** nella barra degli strumenti.
+1. Nel **[Browser configurazioni](/help/implementing/developing/introduction/configurations.md)**, seleziona la configurazione indicata nel passaggio precedente e tocca o fai clic su **Proprietà** nella barra degli strumenti.
 1. Nella finestra **Proprietà di configurazione**, seleziona l&#39;opzione **Modelli modificabili**.
-1. Toccare o fare clic su **Salva e chiudi**.
+1. Tocca o fai clic su **Salva e chiudi**.
 
 Una volta abilitata la configurazione, devi consentire i modelli per il sito.
 
-1. Utilizza la console **Sites** e [seleziona la directory principale del tuo sito.](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)
+1. Utilizza la console **Sites** e [seleziona la directory principale del tuo sito](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
 1. Dopo aver selezionato la directory principale del sito, tocca o fai clic sull&#39;icona [**Proprietà**](/help/sites-cloud/authoring/sites-console/page-properties.md) nella barra degli strumenti.
 1. Nella scheda **Advanced** della finestra di dialogo delle proprietà nella sezione **Template Settings**, tocca o fai clic sul pulsante **Add**.
 1. Nel nuovo campo vuoto visualizzato in **Modelli consentiti**, aggiungi il percorso `/conf/<site>/settings/wcm/templates/.*`.
-1. Toccare o fare clic su **Salva e chiudi**.
+1. Tocca o fai clic su **Salva e chiudi**.
 
 È ora possibile utilizzare i modelli per creare pagine per il sito. Questa operazione deve essere eseguita una sola volta per ogni sito/configurazione in cui si desidera utilizzare i modelli durante la creazione di pagine modificabili con Universal Editor.
 
@@ -61,19 +61,19 @@ Una volta abilitata la configurazione, devi consentire i modelli per il sito.
 
 1. Nella scheda **Avanzate** della finestra di dialogo delle proprietà nella sezione **Impostazioni modello**, seleziona l&#39;opzione **Usa pagina come modello**.
 
-1. Toccare o fare clic su **Salva e chiudi**.
+1. Tocca o fare clic su **Salva e chiudi**.
 
-È ora possibile utilizzare la nuova pagina come modello durante la creazione di nuove pagine.
+Puoi ora utilizzare la nuova pagina come modello durante la creazione di nuove pagine.
 
 ## Creazione di una pagina da un modello {#creating-from-template}
 
-La creazione di una pagina da un modello modificabile con l&#39;Editor universale equivale al flusso di lavoro di [creazione di qualsiasi altra pagina.](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+La creazione di una pagina da un modello modificabile con l&#39;Editor universale equivale al flusso di lavoro di [creazione di qualsiasi altra pagina](/help/sites-cloud/authoring/sites-console/creating-pages.md).
 
 1. Utilizza la console **Sites** per [passare al percorso](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources) in cui desideri creare la nuova pagina.
 
 1. Tocca o fai clic su **Crea** -> **Pagina**.
 
-1. Nella scheda **Modello** della procedura guidata **Crea pagina**, è possibile selezionare il modello su cui basare la nuova pagina. Tocca o fai clic sul modello desiderato per selezionarlo, quindi tocca o fai clic su **Avanti**.
+1. Nella scheda **Modello** della procedura guidata **Crea pagina**, è possibile selezionare il modello su cui basare la nuova pagina. Tocca o fai clic sul modello per selezionarlo, quindi tocca o fai clic su **Successivo**.
 
 Completa la procedura guidata come faresti per qualsiasi altra pagina e hai creato la nuova pagina in base al modello selezionato.
 
@@ -87,6 +87,6 @@ I modelli di pagina definiscono solo il contenuto iniziale delle pagine. Le pagi
 
 ## Modelli modificabili {#editable-templates}
 
-Anche le pagine create con [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md) possono essere basate su modelli. I modelli utilizzati per creare pagine per l&#39;Editor universale e l&#39;Editor pagina sfruttano entrambi i [modelli modificabili dell&#39;AEM.](/help/implementing/developing/components/templates.md)
+Anche le pagine create con [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md) possono essere basate su modelli. I modelli utilizzati per creare pagine per l&#39;Editor universale e l&#39;Editor pagina sfruttano entrambi i [modelli modificabili](/help/implementing/developing/components/templates.md) dell&#39;AEM.
 
 I modelli utilizzati per creare pagine modificabili con Editor pagina utilizzano tutte le funzioni dei modelli modificabili. I modelli utilizzati per creare pagine modificabili con Universal Editor utilizzano solo la funzione di contenuto iniziale.

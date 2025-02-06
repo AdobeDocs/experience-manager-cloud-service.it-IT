@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Configurazione del contenitore di layout e della modalità di layout {#configuring-layout-container-and-layout-mode}
 
-[Layout reattivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) è un meccanismo per realizzare [la progettazione Web reattiva.](https://en.wikipedia.org/wiki/Responsive_web_design) Consente all&#39;autore di contenuto di creare pagine Web con layout e dimensioni dipendenti dai dispositivi utilizzati dagli utenti.
+[Layout reattivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) è un meccanismo per la realizzazione di [design responsive](https://en.wikipedia.org/wiki/Responsive_web_design). Questo consente all’autore di contenuto di creare pagine web con un layout e dimensioni che dipendono dai dispositivi utilizzati dagli utenti.
 
 AEM consente di realizzare il layout dinamico per le pagine utilizzando una combinazione di meccanismi:
 
@@ -50,7 +50,7 @@ La modalità **Layout** consente di utilizzare l&#39;emulatore per regolare il l
 
 ### Configurare i punti di interruzione {#configure-breakpoints}
 
-I punti di interruzione sono vitali per la progettazione reattiva e definiscono come e quando il contenuto viene regolato sul dispositivo di destinazione. Tuttavia, presta attenzione, poiché ogni punto di interruzione introdotto genererà ulteriore lavoro per gli autori in modo da includere il contenuto. Spesso possono essere sufficienti due punti di interruzione, incluso il punto di interruzione predefinito che è sempre presente. L&#39;Adobe consiglia di non creare più di tre punti di interruzione, incluso il valore predefinito, ovvero non più di due nodi sotto `cq:responsive/breakpoint`.
+I punti di interruzione sono vitali per la progettazione reattiva e definiscono come e quando il contenuto viene regolato sul dispositivo di destinazione. Tuttavia, presta attenzione, poiché ogni punto di interruzione introdotto genererà ulteriore lavoro per gli autori in modo da includere il contenuto. Spesso possono essere sufficienti due punti di interruzione, incluso il punto di interruzione predefinito che è sempre presente. Adobe consiglia di non creare più di tre punti di interruzione, incluso il valore predefinito, ovvero non più di due nodi sotto `cq:responsive/breakpoint`.
 
 * I punti di interruzione hanno un titolo e una larghezza:
    * Il titolo descrive il raggruppamento di dispositivi generico, se necessario con orientamento.
@@ -228,4 +228,4 @@ Per consentire agli autori di aggiungere ulteriori griglie reattive alle pagine 
 
 ### Configurare la griglia del contenitore di layout {#configure-the-grid-of-the-layout-container}
 
-È possibile configurare il numero di colonne disponibili per ogni istanza specifica del contenitore di layout [modificando i modelli di pagina.](/help/sites-cloud/authoring/page-editor/templates.md)
+Puoi configurare il numero di colonne disponibili per ogni istanza specifica del contenitore di layout [modificando i modelli di pagina](/help/sites-cloud/authoring/page-editor/templates.md).

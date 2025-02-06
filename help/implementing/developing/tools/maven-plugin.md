@@ -1,21 +1,21 @@
 ---
-title: Plug-in Maven pacchetto di contenuti Adobe
+title: Plug-in Maven per pacchetto di contenuti Adobe
 description: Utilizza il plug-in Maven Content Package per distribuire le applicazioni AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
 
 ---
 
-# Plug-in Maven pacchetto di contenuti Adobe {#adobe-content-package-maven-plugin}
+# Plug-in Maven per pacchetto di contenuti Adobe {#adobe-content-package-maven-plugin}
 
-Utilizza il plug-in Maven Adobe Content Package per integrare le attività di distribuzione e gestione dei pacchetti nei progetti Maven.
+Utilizza il plug-in Maven per pacchetti di contenuti Adobe per integrare le attività di distribuzione e gestione dei pacchetti nei progetti Maven.
 
-La distribuzione dei pacchetti costruiti all&#39;AEM viene eseguita dal plug-in Maven Adobe Content Package e consente l&#39;automazione delle attività normalmente eseguite con AEM [Gestione pacchetti:](/help/implementing/developing/tools/package-manager.md)
+La distribuzione dei pacchetti costruiti all&#39;AEM viene eseguita dal plug-in Maven del pacchetto di contenuti Adobe e consente l&#39;automazione delle attività normalmente eseguite con AEM [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md)
 
 * Creare nuovi pacchetti dai file nel file system.
 * Installare e disinstallare pacchetti su AEM.
@@ -23,7 +23,7 @@ La distribuzione dei pacchetti costruiti all&#39;AEM viene eseguita dal plug-in 
 * Ottieni un elenco dei pacchetti installati su AEM.
 * Rimuovere un pacchetto dall’AEM.
 
-Questo documento descrive come utilizzare Maven per gestire queste attività. Tuttavia è anche importante comprendere [come sono strutturati i progetti AEM e i relativi pacchetti.](#aem-project-structure)
+Questo documento descrive come utilizzare Maven per gestire queste attività. Tuttavia è anche importante comprendere [come sono strutturati i progetti AEM e i relativi pacchetti](#aem-project-structure).
 
 >[!NOTE]
 >
@@ -31,9 +31,9 @@ Questo documento descrive come utilizzare Maven per gestire queste attività. Tu
 
 >[!NOTE]
 >
->Il pacchetto **creation** è ora di proprietà del plug-in Maven [Apache Jackrabbit FileVault Package.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>Il pacchetto **creation** è ora di proprietà del [plug-in Apache Jackrabbit FileVault Package Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/).
 >
->In questo articolo viene descritta la **distribuzione** dei pacchetti costruiti per l&#39;AEM come eseguito dal plug-in Maven per il pacchetto di contenuti Adobe.
+>In questo articolo viene descritta la **distribuzione** dei pacchetti costruiti per l&#39;AEM come eseguito dal plug-in Maven del pacchetto di contenuti Adobe.
 
 ## Pacchetti e struttura del progetto AEM {#aem-project-structure}
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service aderisce alle best practice più recenti per la gestione 
 
 ## Ottenere il plug-in Maven del pacchetto di contenuti {#obtaining-the-content-package-maven-plugin}
 
-Il plug-in è disponibile nell&#39;archivio centrale [Maven.](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
+Il plug-in è disponibile dall&#39;[archivio centrale Maven](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public).
 
 ## Obiettivi e parametri del plug-in Maven del pacchetto di contenuti
 

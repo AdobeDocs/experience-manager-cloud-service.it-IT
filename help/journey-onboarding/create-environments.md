@@ -4,20 +4,20 @@ description: Scopri come creare i primi ambienti con Cloud Manager.
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # Creazione di ambienti {#create-environments}
 
-In questa sezione del [percorso di onboarding](overview.md) scoprirai come creare i primi ambienti con Cloud Manager.
+In questa sezione del [percorso di onboarding](overview.md), scopri come creare i primi ambienti con Cloud Manager.
 
 ## Obiettivo {#objective}
 
-Dopo aver letto il documento precedente di questo percorso di onboarding, [Creazione di programmi,](create-program.md) ora disponi di un programma di Cloud Manager personale. Ora puoi scoprire come creare i primi ambienti per tale programma con Cloud Manager.
+Dopo aver letto il documento precedente di questo percorso di onboarding, [Creazione di programmi](create-program.md), ora disponi di un programma Cloud Manager personalizzato. Ora puoi scoprire come creare i primi ambienti per tale programma con Cloud Manager.
 
 Dopo aver letto questo documento:
 

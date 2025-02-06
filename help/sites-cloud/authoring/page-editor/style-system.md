@@ -5,10 +5,10 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 87%
+ht-degree: 85%
 
 ---
 
@@ -113,7 +113,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
 I componenti core versione 2 e successive sono già configurati in modo da sfruttare il sistema di stili e non richiedono alcuna configurazione aggiuntiva.
 
-I passaggi seguenti sono necessari solo per abilitare il sistema di stile per i componenti personalizzati o per [abilitare la scheda Stili opzionale nella finestra di dialogo Modifica](#enable-styles-tab-edit).
+I passaggi seguenti sono necessari solo per abilitare il sistema di stili per i componenti personalizzati o per [abilitare la scheda Stili opzionale nella finestra di dialogo Modifica](#enable-styles-tab-edit).
 
 ### Abilitare la scheda Stili nella finestra di dialogo di progettazione {#enable-styles-tab-design}
 

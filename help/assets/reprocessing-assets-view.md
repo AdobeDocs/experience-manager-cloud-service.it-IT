@@ -2,7 +2,8 @@
 title: Rielaborazione di risorse digitali
 description: Scopri i vari metodi di rielaborazione delle risorse digitali
 role: User, Leader, Developer
-source-git-commit: b041aa680b65ba4da0d7bf90fcb849a6388a9838
+exl-id: 19ca5278-929e-438b-9436-928f6c9f87d5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -81,7 +82,7 @@ Ulteriori informazioni su [Rielaborazione dei profili di metadati](https://exper
 
 ### Rielaborare le risorse Dynamic Media in una cartella {#reprocessing-dynamic-media}
 
-È possibile rielaborare le risorse in una cartella che dispone già di un profilo immagine Dynamic Media esistente o di un profilo video Dynamic Media modificato successivamente. Per ulteriori informazioni, visita [Rielabora risorse Dynamic Media in una cartella.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+È possibile rielaborare le risorse in una cartella che dispone già di un profilo immagine Dynamic Media esistente o di un profilo video Dynamic Media modificato successivamente. Per ulteriori informazioni, visita [Rielabora risorse Dynamic Media in una cartella](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en).
 
 >[!NOTE]
 >

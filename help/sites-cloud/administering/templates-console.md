@@ -4,13 +4,13 @@ description: Scopri come la console dei modelli funge da posizione centrale per 
 solution: Experience Manager Sites
 feature: Administering
 role: User
-source-git-commit: 993f81e0ff2b71ce2edf59a2c74398db3abe8f06
+exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Console Modelli {#templates-console}
 
@@ -20,10 +20,10 @@ Scopri come la console dei modelli funge da posizione centrale per visualizzare 
 
 Durante la creazione di una pagina, devi selezionare un modello. Il modello di pagina viene utilizzato come base per la nuova pagina. [I modelli modificabili dell&#39;AEM](/help/implementing/developing/components/templates.md) possono definire la struttura della pagina risultante, qualsiasi contenuto iniziale e i componenti che possono essere utilizzati (proprietà di progettazione).
 
-Agli autori di contenuti viene presentata una selezione di modelli disponibili quando [creano nuove pagine nella console Sites.I modelli ](/help/sites-cloud/authoring/sites-console/creating-pages.md) possono essere utilizzati per creare pagine modificabili con:
+Agli autori di contenuti viene presentata una selezione di modelli disponibili quando [creano nuove pagine nella console Sites](/help/sites-cloud/authoring/sites-console/creating-pages.md). I modelli possono essere utilizzati per creare pagine modificabili con:
 
 * [Editor pagina](/help/sites-cloud/authoring/page-editor/templates.md) o
-* [Editor universale](/help/sites-cloud/authoring/universal-editor/templates.md)
+* [L’editor universale](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 La console Modelli consente a un amministratore di visualizzare e gestire tutti i modelli di pagina da una posizione centrale.
 
@@ -58,7 +58,7 @@ Seleziona un modello per visualizzare le opzioni disponibili nella barra degli s
 La modifica di un modello apre l’editor utilizzato per creare il modello. Effettua una delle seguenti operazioni:
 
 * [Editor modelli](/help/sites-cloud/authoring/page-editor/templates.md)
-* [Editor universale](/help/sites-cloud/authoring/universal-editor/templates.md)
+* [L’editor universale](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 Utilizzando l’editor appropriato, puoi apportare le modifiche necessarie al modello. La modifica di un modello in uso può avere effetti sugli autori.
 
@@ -73,7 +73,7 @@ Se un autore inizia a creare un modello con l’editor di modelli già abilitato
 
 ## Proprietà {#properties}
 
-È possibile modificare [le proprietà del modello](/help/sites-cloud/authoring/page-editor/templates.md) in modo analogo a [modificare le proprietà della pagina.Le proprietà del modello ](/help/sites-cloud/authoring/sites-console/page-properties.md) includono:
+È possibile modificare le [proprietà del modello](/help/sites-cloud/authoring/page-editor/templates.md) nello stesso modo in cui è possibile [modificare le proprietà della pagina](/help/sites-cloud/authoring/sites-console/page-properties.md).Le proprietà del modello includono:
 
 * Titolo modello
 * Descrizione
@@ -135,6 +135,6 @@ Seleziona il modello e tocca o fai clic su **Elimina** per eliminarlo.
 
 ## Creazione di modelli {#create}
 
-Utilizza il pulsante **Crea** nella console per creare un nuovo modello nel percorso corrente. Per informazioni dettagliate sulla creazione di un modello, vedere il documento [Modelli per la creazione di pagine modificabili con Editor pagina.](/help/sites-cloud/authoring/page-editor/templates.md)
+Utilizza il pulsante **Crea** nella console per creare un nuovo modello nel percorso corrente. Per informazioni dettagliate sulla creazione di un modello, vedere il documento [Modelli per creare pagine modificabili con Editor pagina](/help/sites-cloud/authoring/page-editor/templates.md).
 
 Il pulsante **Crea** viene utilizzato solo per creare modelli modificabili con l&#39;Editor pagina. Per informazioni sulla creazione di modelli basati su pagine create con Universal Editor, vedere il documento [Modelli per creare pagine modificabili con Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md).

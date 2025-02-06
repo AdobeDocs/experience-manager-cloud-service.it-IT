@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 67%
@@ -15,7 +15,7 @@ ht-degree: 67%
 
 # Organizzazione delle pagine {#creating-and-organizing-pages}
 
-Scopri come organizzare il tuo sito web con l’AEM. Dopo aver compreso le modalità di organizzazione delle pagine, è possibile [creare nuove pagine](/help/sites-cloud/authoring/sites-console/creating-pages.md) e [gestire le pagine esistenti.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+Scopri come organizzare il tuo sito web con l’AEM. Una volta compreso come organizzare le pagine, puoi [creare nuove pagine](/help/sites-cloud/authoring/sites-console/creating-pages.md) e [gestire le pagine esistenti](/help/sites-cloud/authoring/sites-console/managing-pages.md).
 
 {{edge-delivery-authoring}}
 
@@ -51,7 +51,7 @@ Di seguito è riportato un esempio tratto dal sito [WKND Tutorial](https://exper
    /...
 ```
 
-Questa struttura può essere visualizzata dalla console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) dove è possibile spostarsi tra le pagine del sito Web ed eseguire azioni sulle pagine.
+Questa struttura può essere visualizzata dalla console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), che consente di spostarsi tra le pagine del sito Web ed eseguire azioni sulle pagine.
 
 ## Convenzioni di denominazione delle pagine {#page-naming-conventions}
 

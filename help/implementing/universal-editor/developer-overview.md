@@ -4,9 +4,9 @@ description: Se sei uno sviluppatore AEM interessato al funzionamento di Univers
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '3160'
+source-wordcount: '3179'
 ht-degree: 0%
 
 ---
@@ -33,17 +33,17 @@ A tal fine, prende un esempio standard che la maggior parte degli sviluppatori A
 Per seguire questa panoramica, è necessario disporre dei seguenti elementi.
 
 * [Un&#39;istanza di sviluppo locale di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it)
-   * L&#39;istanza di sviluppo locale deve essere [configurata con HTTPS a scopo di sviluppo il `localhost`.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=it)
-   * [È necessario installare il sito di dimostrazione WKND.](https://github.com/adobe/aem-guides-wknd)
-* [Accesso all’editor universale](/help/implementing/universal-editor/getting-started.md#onboarding)
-* [Un servizio Universal Editor locale](/help/implementing/universal-editor/local-dev.md) in esecuzione per scopi di sviluppo
-   * Accertati di indirizzare il browser a [accettare il certificato autofirmato dei servizi locali.](/help/implementing/universal-editor/local-dev.md#editing)
+   * L&#39;istanza di sviluppo locale deve essere [configurata con HTTPS a scopo di sviluppo il `localhost`](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=it).
+   * [È necessario installare il sito di dimostrazione WKND](https://github.com/adobe/aem-guides-wknd).
+* [Accesso all&#39;editor universale](/help/implementing/universal-editor/getting-started.md#onboarding).
+* [Servizio locale dell&#39;editor universale](/help/implementing/universal-editor/local-dev.md) in esecuzione a scopo di sviluppo.
+   * Assicurarsi di indirizzare il browser a [accettare il certificato autofirmato dei servizi locali](/help/implementing/universal-editor/local-dev.md#editing).
 
-Al di là della generale familiarità con lo sviluppo web, questo documento presuppone una conoscenza di base con lo sviluppo dell’AEM. Se non hai esperienza con lo sviluppo di AEM, valuta di rivedere [l&#39;esercitazione WKND prima di continuare.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+Al di là della generale familiarità con lo sviluppo web, questo documento presuppone una conoscenza di base con lo sviluppo dell’AEM. Se non hai esperienza con lo sviluppo di AEM, valuta di rivedere [l&#39;esercitazione WKND prima di continuare](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 ## Avviare l’AEM e accedere all’editor universale {#sign-in}
 
-Se non lo hai già fatto, devi avere la tua istanza di sviluppo AEM locale in esecuzione con WKND installato e HTTPS abilitato come [descritto nei prerequisiti.](#prerequisites) Questa panoramica presuppone che l&#39;istanza sia in esecuzione alle `https://localhost:8443`.
+Se non lo hai già fatto, devi avere la tua istanza di sviluppo AEM locale in esecuzione con WKND installato e HTTPS abilitato come [descritto nei prerequisiti](#prerequisites). Questa panoramica presuppone che l&#39;istanza sia in esecuzione alle `https://localhost:8443`.
 
 1. Apri la pagina mastro principale in lingua inglese WKND nell’editor AEM.
 
@@ -189,7 +189,7 @@ Tuttavia, probabilmente hai notato che non puoi interagire con la pagina nell’
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
 
-   * Si consiglia sempre di utilizzare la versione più recente della libreria. Se hai bisogno di una versione precedente, consulta il documento [Guida introduttiva all&#39;editor universale in AEM.](/help/implementing/universal-editor/getting-started.md#alternative)
+   * Si consiglia sempre di utilizzare la versione più recente della libreria. Se hai bisogno di una versione precedente, consulta il documento [Guida introduttiva all&#39;editor universale in AEM](/help/implementing/universal-editor/getting-started.md#alternative).
 
 1. Aggiungere alla fine del file i metadati necessari per la connessione al servizio Universal Editor locale.
 
@@ -572,21 +572,21 @@ Congratulazioni Ora puoi personalizzare le tue app per l’AEM in modo che funzi
 
 Quando inizi a dotare la tua app di strumenti, tieni presente i passaggi di base eseguiti in questo esempio.
 
-1. [Puoi configurare l’ambiente di sviluppo.](#prerequisites)
+1. [È stato configurato l&#39;ambiente di sviluppo](#prerequisites).
    * AEM in esecuzione in locale su HTTPS con WKND installato
    * Servizio Universal Editor in esecuzione in locale su HTTPS
 1. Hai aggiornato le impostazioni OSGi dell’AEM per consentirne il caricamento remoto del contenuto.
    * [&quot;org.apache.sling.engine.impl.SlingMainServlet&quot;](#sameorigin)
    * [&quot;com.day.crx.security.token.impl.impl.TokenAuthenticationHandler&quot;](#samesite-cookies)
-1. [Hai aggiunto il ](#ue-connect-remote-frame)
-1. [Hai definito una connessione per rendere persistenti le modifiche in ](#connection)
+1. [Hai aggiunto la libreria `universal-editor-embedded.js` al file `customheaderlibs.html` del componente page dell&#39;app](#ue-connect-remote-frame).
+1. [Hai definito una connessione per rendere persistenti le modifiche nel file `customheaderlibs.html` del componente page dell&#39;app](#connection).
    * È stata definita una connessione all’istanza di sviluppo AEM locale.
    * È stata inoltre definita una connessione al servizio Universal Editor locale.
-1. [È stato instrumentato il componente teaser.](#instrumenting-components)
-1. [Hai instrumentato i sottocomponenti del teaser.](#subcomponents)
-1. [È stata definita un&#39;intestazione di autenticazione personalizzata che consente di salvare le modifiche utilizzando il servizio Universal Editor locale.](#auth-header)
-1. [Hai instrumentato l’app per utilizzare il pannello delle proprietà.](#properties-rail)
-1. [Hai instrumentato il componente teaser per utilizzare il pannello delle proprietà.](#properties-rail-component)
+1. [Componente teaser ](#instrumenting-components) instrumentato.
+1. [Sono stati utilizzati i sottocomponenti del teaser](#subcomponents).
+1. [È stata definita un&#39;intestazione di autenticazione personalizzata che consente di salvare le modifiche utilizzando il servizio Universal Editor locale](#auth-header).
+1. [Hai instrumentato l&#39;app per utilizzare il pannello delle proprietà](#properties-rail).
+1. [Il componente teaser è stato instrumentato per utilizzare il pannello delle proprietà](#properties-rail-component).
 
 Puoi seguire questi stessi passaggi per dotare la tua app di strumenti per l’utilizzo con l’Editor universale. Tutte le proprietà nel JCR possono essere esposte all’Editor universale.
 

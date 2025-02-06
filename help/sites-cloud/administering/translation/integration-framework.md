@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: c4cb466bf6a9b6f8f4a28943d28bdb524610f5ad
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1447'
-ht-degree: 72%
+ht-degree: 69%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 72%
 
 Il Translation Integration Framework si integra con servizi di traduzione di terze parti per orchestrare la traduzione dei contenuti AEM. Comporta tre passaggi fondamentali.
 
-1. [Connessione al fornitore di servizi di traduzione.](#connecting-to-a-translation-service-provider)
-1. [Creare una configurazione del framework di integrazione della traduzione.](#creating-a-translation-integration-configuration)
-1. [Associa le configurazioni cloud alle pagine.](#configuring-pages-for-translation)
+1. [Connettiti al tuo provider di servizi di traduzione](#connecting-to-a-translation-service-provider).
+1. [Creare una configurazione del framework di integrazione della traduzione](#creating-a-translation-integration-configuration).
+1. [Associa le configurazioni cloud alle pagine](#configuring-pages-for-translation).
 
 Per una panoramica delle funzioni di traduzione dei contenuti di AEM, vedi [Traduzione di contenuti per siti multilingue](overview.md).
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta il [Percorso di traduzione Sites](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o di traduzione.
+>Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione dell&#39;AEM, ideali per chi non ha esperienza di AEM o traduzione.
 
 ## Connessione a un fornitore di servizi di traduzione {#connecting-to-a-translation-service-provider}
 
@@ -58,7 +58,7 @@ Dopo aver configurato un Translation Integration Framework, puoi [associarlo all
 
 Una singola configurazione del framework controlla come vengono tradotti il contenuto e le risorse della pagina. Per creare una configurazione di traduzione:
 
-1. Nel [menu di navigazione globale,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) seleziona **Strumenti > Cloud Service e Cloud Service di traduzione**.
+1. Nel [menu di navigazione globale](/help/sites-cloud/authoring/basic-handling.md#global-navigation), seleziona **Strumenti > Cloud Service e Cloud Service di traduzione**.
 1. Passa alla posizione in cui desideri creare la configurazione nella struttura del contenuto. Questo è spesso basato su un sito specifico o può essere globale.
 1. Fornisci le seguenti informazioni nei campi, quindi seleziona **Crea**.:
    1. Seleziona **Tipo di configurazione** nel menu a discesa.

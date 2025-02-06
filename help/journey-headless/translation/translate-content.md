@@ -5,10 +5,10 @@ exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2120'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -72,7 +72,7 @@ Viene visualizzato un messaggio che informa che il progetto è stato creato.
 
 >[!NOTE]
 >
->Si presume che la struttura linguistica necessaria per le lingue di traduzione sia già stata creata come parte della [definizione della struttura del contenuto.](getting-started.md#content-structure) Questo dovrebbe essere fatto in collaborazione con l&#39;architetto dei contenuti.
+>Si presume che la struttura linguistica necessaria per le lingue di traduzione sia già stata creata come parte della [definizione della struttura del contenuto](getting-started.md#content-structure). Questo dovrebbe essere fatto in collaborazione con l&#39;architetto dei contenuti.
 >
 >Se le cartelle della lingua non vengono create in anticipo, non sarà possibile creare copie in lingua come descritto nei passaggi precedenti.
 
@@ -187,7 +187,7 @@ Per aggiungere contenuto a un lavoro di traduzione:
 >
 >Il browser del percorso è un potente strumento che consente di cercare, filtrare e navigare nel contenuto. Seleziona il pulsante **Solo contenuto/Filtri** per attivare/disattivare il pannello laterale e visualizzare filtri avanzati, ad esempio **Data di modifica** o **Stato della traduzione**.
 >
->Per ulteriori informazioni sul browser percorsi, consulta la [sezione risorse aggiuntive.](#additional-resources)
+>Ulteriori informazioni sul browser percorsi sono disponibili nella [sezione risorse aggiuntive](#additional-resources).
 
 Puoi utilizzare i passaggi precedenti per aggiungere il contenuto necessario a tutte le lingue (processi) per il progetto. Dopo aver selezionato tutti i contenuti, puoi avviare la traduzione.
 
@@ -205,7 +205,7 @@ Le traduzioni automatiche risultano automaticamente con lo stato **Approvato**. 
 
 ## Revisione dei contenuti tradotti {#reviewing}
 
-[Come visto in precedenza,](#using-translation-project) il contenuto tradotto automaticamente torna in AEM con lo stato **Approvato** poiché si presume che, poiché si utilizza la traduzione automatica, non sia necessario alcun intervento umano. Tuttavia è ancora possibile rivedere il contenuto tradotto.
+[Come visto in precedenza](#using-translation-project), il contenuto tradotto automaticamente torna in AEM con lo stato di **Approvato** poiché si presume che, poiché si utilizza la traduzione automatica, non sia necessario alcun intervento umano. Tuttavia è ancora possibile rivedere il contenuto tradotto.
 
 Basta andare al lavoro di traduzione completato e selezionare una riga toccando o facendo clic sulla casella di spunta. L’icona **Mostra in Frammenti di contenuto** si trova nella barra degli strumenti.
 
@@ -249,7 +249,7 @@ Approfondisci questo argomento e continua il tuo percorso di traduzione in AEM h
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia raccomandato passare alla parte successiva del percorso di traduzione headless esaminando il documento [Pubblicare il contenuto tradotto,](publish-content.md) di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
+Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione headless esaminando il documento [Contenuto tradotto Publish](publish-content.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
 
 * [Gestione dei progetti di traduzione](/help/sites-cloud/administering/translation/managing-projects.md): scopri i dettagli dei progetti di traduzione e le funzioni aggiuntive, come i flussi di lavoro di traduzione umana e i progetti multilingue.
 * [Strumenti e ambiente di authoring](/help/sites-cloud/authoring/path-selection.md#path-selection): AEM offre diversi meccanismi per organizzare e modificare i contenuti, tra cui un browser del percorso affidabile.

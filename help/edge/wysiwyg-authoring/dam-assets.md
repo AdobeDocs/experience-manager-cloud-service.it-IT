@@ -3,13 +3,13 @@ title: Pubblicazione di pagine con DAM Assets tramite Edge Delivery Services
 description: Scopri le impostazioni necessarie per garantire che le risorse DAM per le pagine vengano pubblicate facilmente nei Edge Delivery Services.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 65a3b4d923a91702e7ea9b13356802836fa4ce0b
+exl-id: 160f0474-a72d-4183-a2b2-2f8ba177605d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 2%
 
 ---
-
 
 # Pubblicazione di pagine con DAM Assets tramite Edge Delivery Services {#dam-assets}
 
@@ -21,8 +21,8 @@ Durante la modifica del contenuto per l’Editor universale, è ovviamente possi
 
 Per garantire questo comportamento senza soluzione di continuità, l’AEM e i Edge Delivery Services devono avere accesso adeguato al DAM per poter pubblicare. Ciò include:
 
-* [Assicurarsi che le cartelle di risorse siano accessibili.](#accessible)
-* [Accertarsi che alla cartella delle risorse sia assegnata la configurazione corretta (come richiesto).](#configuration)
+* [Verifica dell&#39;accessibilità delle cartelle di risorse](#accessible).
+* [Verifica che alla cartella delle risorse sia assegnata la configurazione corretta (come richiesto)](#configuration).
 
 ## Garanzia di accessibilità delle cartelle di Assets {#accessible}
 
@@ -54,4 +54,4 @@ Per supportare entrambi questi casi d&#39;uso, è necessario assegnare una [conf
 1. Tocca o fai clic su **Annulla** nella finestra delle proprietà, passa a **Assets** -> **File** e seleziona la cartella DAM.
 1. Tocca o fai clic su **Proprietà** nella barra degli strumenti.
 1. Nella scheda **Cloud Service** della finestra delle proprietà, seleziona nel campo **Configurazione cloud** la stessa configurazione indicata in precedenza.
-1. Toccare o fare clic su **Salva e chiudi**.
+1. Tocca o fai clic su **Salva e chiudi**.

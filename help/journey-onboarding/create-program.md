@@ -4,20 +4,20 @@ description: Scopri come creare il tuo primo programma con Cloud Manager.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
 # Creazione di un programma {#create-program}
 
-In questa sezione del [percorso di onboarding](overview.md) scoprirai come creare il tuo primo programma con Cloud Manager.
+In questa sezione del [percorso di onboarding](overview.md), imparerai a utilizzare Cloud Manager per creare il tuo primo programma.
 
 ## Obiettivo {#objective}
 
-Dopo aver rivisto il documento precedente di questo percorso di onboarding, [Accesso a Cloud Manager,](cloud-manager.md) hai appurato di avere accesso a Cloud Manager. Ora puoi creare il primo programma.
+Dopo aver esaminato il documento precedente di questo percorso di onboarding, [Accedi a Cloud Manager](cloud-manager.md), hai appurato di avere accesso a Cloud Manager. Ora puoi creare il primo programma.
 
 Dopo aver letto questo documento, saprai:
 
@@ -68,7 +68,7 @@ Dopo aver completato il programma, i membri dell’organizzazione assegnati al p
 
 ## Passaggio successivo {#whats-next}
 
-Ora che hai creato il primo programma, puoi creare degli ambienti da aggiungere. Consulta il documento [Creazione degli ambienti](create-environments.md) prima di continuare il percorso di onboarding.
+Ora che hai creato il primo programma, puoi creare degli ambienti da aggiungere. Continua il tuo percorso di onboarding passando al documento [Creazione di ambienti](create-environments.md).
 
 ## Risorse aggiuntive {#additional-resources}
 

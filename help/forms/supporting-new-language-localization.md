@@ -4,7 +4,7 @@ description: Per Adaptive Forms, puoi aggiungere lingue per più lingue oltre a 
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Per aggiungere il supporto per una nuova lingua in fase di esecuzione di Adaptiv
 #### 1. Clonare l’archivio {#clone-the-repository}
 
 1. Dalla riga di comando, individua il punto in cui desideri duplicare l’archivio di Cloud Service di Forms.
-1. Eseguire il comando [ recuperato da Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) È simile a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. Esegui il comando [recuperato da Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git). È simile a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Utilizza il nome utente e la password Git per clonare l’archivio.
 1. Apri la cartella clonata dell’archivio di Cloud Service di Forms nell’editor preferito.
 

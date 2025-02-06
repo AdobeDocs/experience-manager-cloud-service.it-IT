@@ -4,10 +4,10 @@ description: Scopri come accedere all’editor universale e come iniziare a prep
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 41%
+ht-degree: 38%
 
 ---
 
@@ -18,7 +18,7 @@ Scopri come accedere all’editor universale e come iniziare a preparare la tua 
 
 >[!TIP]
 >
->Se preferisci approfondire direttamente un esempio, puoi rivedere l’[app di esempio dell’editor universale su GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
+>Se preferisci immergerti direttamente in un esempio, puoi rivedere l&#39;[app di esempio dell&#39;editor universale su GitHub](https://github.com/adobe/universal-editor-sample-editable-app).
 
 Sebbene Universal Editor possa modificare il contenuto da qualsiasi origine, questo documento utilizzerà come esempio un’app AEM. Questo documento ti guiderà attraverso questi passaggi.
 
@@ -122,7 +122,7 @@ Se desideri abilitare solo alcune estensioni per una pagina, puoi impostarle in 
 
 ## Definisci per quali percorsi di contenuto o `sling:resourceType` s deve essere aperto l’Editor universale. (Opzionale) {#content-paths}
 
-Se disponi di un progetto AEM esistente che utilizza [l&#39;editor di pagine](/help/sites-cloud/authoring/page-editor/introduction.md), quando gli autori di contenuti modificano le pagine, queste vengono aperte automaticamente con l&#39;editor di pagine. Puoi definire quale editor AEM aprire in base ai percorsi dei contenuti o a `sling:resourceType`, semplificando così l&#39;esperienza per gli autori, indipendentemente dall&#39;editor richiesto per il contenuto selezionato.
+Se disponi di un progetto AEM esistente che utilizza [l&#39;editor di pagine](/help/sites-cloud/authoring/page-editor/introduction.md), quando gli autori di contenuto modificano le pagine, queste vengono aperte automaticamente con l&#39;editor di pagine. Puoi definire quale editor AEM aprire in base ai percorsi dei contenuti o a `sling:resourceType`, semplificando così l&#39;esperienza per gli autori, indipendentemente dall&#39;editor richiesto per il contenuto selezionato.
 
 1. Apri Configuration Manager.
 

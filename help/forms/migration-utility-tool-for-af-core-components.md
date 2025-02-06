@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 5%
@@ -53,8 +53,8 @@ Forms Conversion Utility converte i Forms adattivi basati su componenti Foundati
 
 ## Prerequisiti per utilizzare gli strumenti di modernizzazione AEM
 
-* [Configurare l’ambiente di sviluppo locale per AEM Forms](/help/forms/setup-local-development-environment.md)
-* [Abilita i componenti core Forms adattivi per il tuo ambiente.](/help/forms/enable-adaptive-forms-core-components.md)
+* [Configura l&#39;ambiente di sviluppo locale per AEM Forms](/help/forms/setup-local-development-environment.md).
+* [Abilita i componenti core adattivi di Forms per il tuo ambiente](/help/forms/enable-adaptive-forms-core-components.md).
 * Aggiungi gli utenti al gruppo [!DNL forms-users]. I membri del gruppo [!DNL forms-users] dispongono delle autorizzazioni per creare un modulo adattivo.
 * Gli utenti con i seguenti ruoli dispongono delle autorizzazioni per installare gli strumenti di modernizzazione AEM in un ambiente AEM:
 

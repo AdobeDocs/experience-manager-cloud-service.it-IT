@@ -8,15 +8,15 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1328'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Pubblicazione e annullamento della pubblicazione di moduli e documenti{#publishing-and-unpublishing-forms-and-documents}
+# Pubblicare e annullare la pubblicazione di moduli e documenti{#publishing-and-unpublishing-forms-and-documents}
 
 [!DNL AEM Forms] consente di creare, pubblicare e annullare facilmente la pubblicazione dei moduli. Il server [!DNL AEM Forms] fornisce due istanze: Author e Publish. L’istanza di authoring è per la creazione e la gestione di risorse e risorse del modulo. L’istanza di Publish serve a mantenere le risorse e le risorse correlate disponibili per gli utenti finali.
 
@@ -122,7 +122,7 @@ Per pubblicare tutte le risorse di Gestione della corrispondenza su un server, c
 
 ## Automatizzare la pubblicazione e l&#39;annullamento della pubblicazione per Forms e documenti {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-[!DNL AEM Forms] ti consente di pianificare la pubblicazione e l&#39;annullamento della pubblicazione delle risorse per Forms &amp; Documents. Puoi specificare la pianificazione nell’Editor metadati. Per ulteriori informazioni sulla gestione dei metadati del modulo, vedere [Gestione dei metadati del modulo.](manage-form-metadata.md)
+[!DNL AEM Forms] ti consente di pianificare la pubblicazione e l&#39;annullamento della pubblicazione delle risorse per Forms &amp; Documents. Puoi specificare la pianificazione nell’Editor metadati. Per ulteriori informazioni sulla gestione dei metadati del modulo, vedere [Gestione dei metadati del modulo](manage-form-metadata.md).
 
 Per pianificare la data e l’ora di pubblicazione e di annullamento della pubblicazione delle risorse di Forms e Documents, segui la procedura riportata di seguito:
 

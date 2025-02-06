@@ -4,7 +4,7 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c57fba06f23fa57fbf26796e747bb76f6a7a4203
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Nella rete CDN sono configurabili anche le regole del filtro del traffico (inclu
 
 Inoltre, se la rete CDN non è in grado di contattare la relativa origine, puoi scrivere una regola che fa riferimento a una pagina di errore personalizzata con hosting autonomo (di cui viene quindi eseguito il rendering). Ulteriori informazioni leggendo l&#39;articolo [Configurazione delle pagine di errore CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
-Tutte queste regole, dichiarate in un file di configurazione nel controllo del codice sorgente, vengono distribuite tramite la pipeline di configurazione [ di Cloud Manager.](/help/operations/config-pipeline.md) Tieni presente che la dimensione cumulativa del file di configurazione, incluse le regole del filtro del traffico, non può superare i 100 KB.
+Tutte queste regole, dichiarate in un file di configurazione nel controllo del codice sorgente, vengono distribuite tramite la pipeline [config](/help/operations/config-pipeline.md) di Cloud Manager. Tieni presente che la dimensione cumulativa del file di configurazione, incluse le regole del filtro del traffico, non può superare i 100 KB.
 
 ## Ordine di valutazione {#order-of-evaluation}
 

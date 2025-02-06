@@ -4,13 +4,13 @@ description: Puoi utilizzare i temi per assegnare uno stile e fornire un’ident
 keywords: moduli adattivi con stili di Componenti core. utilizzo del tema nei Componenti core, assegnazione di stili ai moduli adattivi, personalizzazione dei temi
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
+exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2816'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
-
 
 # Utilizzare i temi per assegnare uno stile ai Componenti core basati su Adaptive Forms{#themes-for-af-using-core-components}
 
@@ -65,7 +65,7 @@ La personalizzazione di un tema si riferisce al processo di modifica, formattazi
 
 * Acquisisci familiarità con [la configurazione di una pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) e avere conoscenze di base su come impostare una pipeline ti aiuta a gestire e distribuire in modo efficiente le personalizzazioni dei temi.
 * Scopri come [configurare un utente con il ruolo di collaboratore](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Le informazioni su come configurare un utente con il ruolo di collaboratore consentono di concedere le autorizzazioni necessarie per la personalizzazione del tema.
-* Installa la versione più recente di [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven è uno strumento di automazione della build comunemente utilizzato per i progetti Java™. L’installazione della versione più recente garantisce che tu disponga delle dipendenze necessarie per la personalizzazione del tema.
+* Installa la versione più recente di [Apache Maven](https://maven.apache.org/download.cgi). Apache Maven è uno strumento di automazione della build comunemente utilizzato per i progetti Java™. L’installazione della versione più recente garantisce che tu disponga delle dipendenze necessarie per la personalizzazione del tema.
 * Installa un editor di testo normale. Microsoft® Visual Studio Code. L&#39;utilizzo di un editor di testo normale come Microsoft® Visual Studio Code fornisce un ambiente semplice per la modifica e la modifica dei file dei temi.
 
 ### Configurare l’ambiente
@@ -373,7 +373,7 @@ Ora, invia le modifiche all’archivio dei temi del Cloud Service AEM Forms.
 
 ##### 5.3 Eseguire la pipeline front-end {#run-a-frontend-pipeline}
 
-Il tema viene distribuito utilizzando la pipeline front-end [.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Per distribuire il tema, effettua le seguenti operazioni:
+Il tema viene distribuito utilizzando la [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Per distribuire il tema, effettua le seguenti operazioni:
 
 1. Accedi al tuo archivio AEM Cloud Manager.
 1. Fai clic sul pulsante **[!UICONTROL Aggiungi]** nella sezione **[!UICONTROL Pipeline]**.

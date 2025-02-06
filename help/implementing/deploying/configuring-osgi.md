@@ -4,7 +4,7 @@ description: Configurazione OSGi con valori segreti e valori specifici dell’am
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3321'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Puoi gestire le impostazioni di configurazione per i componenti OSGi tramite i f
 
 >[!TIP]
 >
->Puoi utilizzare Cloud Manager per configurare le variabili di ambiente. Per ulteriori informazioni, consulta la documentazione [qui.](/help/implementing/cloud-manager/environment-variables.md)
+>Puoi utilizzare Cloud Manager per configurare le variabili di ambiente. Per ulteriori informazioni, consulta la documentazione [qui](/help/implementing/cloud-manager/environment-variables.md).
 
 ## File di configurazione OSGi {#osgi-configuration-files}
 
@@ -189,13 +189,13 @@ I nomi dei file factory di configurazione OSGi utilizzano la convenzione di deno
 
 ### Generazione di configurazioni OSGi tramite QuickStart per SDK AEM {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
-La console web AEM di Quickstart Jar per AEM SDK può essere utilizzata per configurare i componenti OSGi ed esportare le configurazioni OSGi come JSON. Questo è utile per configurare i componenti OSGi forniti dall’AEM le cui proprietà OSGi e i relativi formati di valore potrebbero non essere ben compresi dallo sviluppatore che definisce le configurazioni OSGi nel progetto AEM.
+La console web AEM di SDK Quickstart Jar per AEM può essere utilizzata per configurare i componenti OSGi ed esportare le configurazioni OSGi come JSON. Questo è utile per configurare i componenti OSGi forniti dall’AEM le cui proprietà OSGi e i relativi formati di valore potrebbero non essere ben compresi dallo sviluppatore che definisce le configurazioni OSGi nel progetto AEM.
 
 >[!NOTE]
 >
 >L&#39;interfaccia utente di configurazione della console Web AEM scrive `.cfg.json` file nell&#39;archivio. Pertanto, tieni presente questo flusso di lavoro per evitare potenziali comportamenti imprevisti durante lo sviluppo locale, quando le configurazioni OSGi definite dal progetto AEM possono differire dalle configurazioni generate.
 
-1. Accedere alla console Web AEM di Quickstart Jar dell&#39;SDK AEM in `https://<host>:<port>/system/console` come utente amministratore
+1. Accedere alla console Web AEM di SDK Quickstart Jar dell&#39;AEM in `https://<host>:<port>/system/console` come utente amministratore
 1. Passa a **OSGi** > **Configurazione**
 1. Per configurare, individua il componente OSGi e selezionane il titolo da modificare
    ![Configurazione OSGi](./assets/configuring-osgi/configuration.png)
@@ -266,7 +266,7 @@ I valori per le variabili non devono superare i 2048 caratteri.
 >
 >Esistono regole relative all’utilizzo di alcuni prefissi per i nomi delle variabili:
 >
->1. I nomi delle variabili con prefisso `INTERNAL_`, `ADOBE_` o `CONST_` sono riservati per Adobe. Tutte le variabili impostate dal cliente che iniziano con questi prefissi vengono ignorate.
+>1. I nomi delle variabili con prefisso `INTERNAL_`, `ADOBE_` o `CONST_` sono riservati da Adobe. Tutte le variabili impostate dal cliente che iniziano con questi prefissi vengono ignorate.
 >
 >1. I clienti non devono fare riferimento a variabili con prefisso `INTERNAL_` o `ADOBE_`.
 >

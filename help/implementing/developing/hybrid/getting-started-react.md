@@ -4,7 +4,7 @@ description: Questo articolo illustra un esempio di applicazione per l’SPA, sp
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 6%
@@ -182,7 +182,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 In questo esempio la classe `AppPage` estende `Page`, che contiene i metodi di contenuto interno che possono quindi essere utilizzati.
 
-`Page` acquisisce la rappresentazione JSON del modello di pagina ed elabora il contenuto per racchiudere/decorare ogni elemento della pagina. Ulteriori dettagli su `Page` sono disponibili nel documento [Blueprint SPA.](blueprint.md)
+`Page` acquisisce la rappresentazione JSON del modello di pagina ed elabora il contenuto per racchiudere/decorare ogni elemento della pagina. Ulteriori dettagli su `Page` sono disponibili nel documento [Blueprint SPA](blueprint.md).
 
 ### Image.js {#image-js}
 

@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -348,7 +348,7 @@ Per modificare il contenuto della Live Copy, puoi:
 
 Puoi aggiungere componenti a una pagina Live Copy in qualsiasi momento. Lo stato di ereditarietà della Live Copy e del relativo sistema paragrafo non controlla la possibilità di aggiungere componenti.
 
-Quando la pagina Live Copy viene sincronizzata con la pagina di origine, i componenti aggiunti rimangono invariati. Consulta anche [Modifica dell’ordine dei componenti in una pagina Live Copy.](#changing-the-order-of-components-on-a-live-copy-page)
+Quando la pagina Live Copy viene sincronizzata con la pagina di origine, i componenti aggiunti rimangono invariati. Vedi anche [Modifica dell&#39;ordine dei componenti in una pagina Live Copy](#changing-the-order-of-components-on-a-live-copy-page).
 
 >[!TIP]
 >

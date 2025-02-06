@@ -4,10 +4,10 @@ description: Note sulla versione 2023.9.0 di [!DNL Adobe Experience Manager] as 
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 79%
+ht-degree: 81%
 
 ---
 
@@ -28,7 +28,7 @@ La sezione seguente illustra le note sulla versione funzionale 2023.9.0 di [!DNL
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.9.0) è il venerdì 28 settembre 2023. La prossima versione funzionale (2023.10.0) è pianificata per il venerdì 26 ottobre 2023.
+La data di rilascio della versione corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.9.0) è il venerdì 28 settembre 2023. La prossima versione funzionale (2023.10.0) è pianificata per il venerdì 26 ottobre 2023.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -36,7 +36,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 ## Video sulla versione {#release-video}
 
-Dai un’occhiata al video Panoramica sulla versione di settembre 2023 per un riepilogo delle funzioni aggiunte alla versione 2023.9.0:
+Dai un’occhiata al video Panoramica della versione di settembre 2023 per un riepilogo delle funzioni aggiunte alla versione 2023.9.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
@@ -58,7 +58,7 @@ Ora puoi assegnare il modulo metadati a una cartella specifica all’interno del
 
 ### Nuove funzioni nella vista Amministratore {#admin-view-features}
 
-* **Integrare AEM Assets as a Cloud Service con l&#39;authoring basato su documenti per Edge Delivery Services**: integrare AEM Assets con l&#39;authoring basato su documenti per Edge Delivery Services per consentire agli autori di siti Web di [utilizzare le immagini disponibili negli archivi AEM Assets durante l&#39;authoring di documenti nei documenti Microsoft Word o Google](/help/edge/using.md#integrate-assets-edge).
+* **Integrare AEM Assets as a Cloud Service con l&#39;authoring basato su documenti per Edge Delivery Services**: integrare AEM Assets con l&#39;authoring basato su documenti per Edge Delivery Services per consentire agli autori di siti Web di [utilizzare le immagini disponibili negli archivi AEM Assets durante l&#39;authoring di documenti in Microsoft Word o Google Docs](/help/edge/using.md#integrate-assets-edge).
 
 * **Estrai archivi ZIP**: possibilità di selezionare archivi ZIP gestiti in Experience Manager e [di estrarre i file direttamente in Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) senza scaricarli.
 
@@ -118,9 +118,9 @@ Ora puoi assegnare il modulo metadati a una cartella specifica all’interno del
 
 ### Nuovo comportamento di caching CDN per i parametri URL relativi alla campagna {#cache-url-params}
 
-Per i nuovi ambienti, la rete CDN rimuoverà i parametri di query relativi al marketing per impostazione predefinita, al fine di aumentare le prestazioni della campagna di marketing e i rapporti di hit della cache. Gli ambienti esistenti non subiscono modifiche. [Ulteriori informazioni.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+Per i nuovi ambienti, la rete CDN rimuoverà i parametri di query relativi al marketing per impostazione predefinita, al fine di aumentare le prestazioni della campagna di marketing e i rapporti di hit della cache. Gli ambienti esistenti non subiscono modifiche. [Ulteriori informazioni](/help/implementing/dispatcher/caching.md#marketing-parameters).
 
-### Regole filtro traffico (incluse le regole WAF) programma per l’adozione anticipata {#waf-early-adopter}
+### Regole del filtro del traffico (incluse le regole di WAF) programma di adozione anticipata {#waf-early-adopter}
 
 Filtra il traffico sulla rete CDN in base a:
 

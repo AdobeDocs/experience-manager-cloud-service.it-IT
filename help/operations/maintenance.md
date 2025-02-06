@@ -4,7 +4,7 @@ description: Scopri le attività di manutenzione in AEM as a Cloud Service e com
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 31%
@@ -267,7 +267,7 @@ Tieni presente che affinché la configurazione sia valida:
 * tutte le proprietà devono essere definite. Non sono presenti valori predefiniti ereditati.
 * devono essere rispettati i tipi (interi, stringhe, booleani, ecc.) nelle tabelle delle proprietà sottostanti.
 
-**4** - Crea una pipeline di configurazione in Cloud Manager, come descritto nell&#39;articolo della pipeline di configurazione [config.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+**4** - Crea una pipeline di configurazione in Cloud Manager, come descritto nell&#39;articolo [pipeline di configurazione](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Pulizia delle versioni {#version-purge}
 

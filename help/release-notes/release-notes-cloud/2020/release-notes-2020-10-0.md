@@ -4,7 +4,7 @@ description: '[!DNL Adobe Experience Manager] as a Cloud Service note sulla vers
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 24%
@@ -26,7 +26,7 @@ La seguente versione (2020.11.0) sarà del 1° dicembre 2020.
 
 * **[Componenti core 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)**: Adobe Experience Manager as a Cloud Service beneficia degli aggiornamenti automatici all&#39;ultima versione dei Componenti core. La versione 2.12.0 include gli ultimi miglioramenti apportati dalla community. I miglioramenti includono [un nuovo gestore di moduli POST;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) la possibilità di includere tag di metadati, JavaScript e CSS personalizzati [ tramite la configurazione basata sul contesto;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) e un&#39;utilità [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) per semplificare l&#39;integrazione di Adobe Data Layer nei componenti personalizzati. Visualizza l&#39;[elenco delle modifiche](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) nella versione 2.12.0.
 
-* **[Archetipo progetto 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)**: la base consigliata per l&#39;avvio di un nuovo progetto Experience Manager è stata migliorata. Ora include il nuovo [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it), l&#39;opzione per [recapitare il sito in AMP,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) e i nuovi [punti di estensione per aggiungere il progetto CSS/JS.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
+* **[Archetipo progetto 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)**: la base consigliata per l&#39;avvio di un nuovo progetto Experience Manager è stata migliorata. Ora include il nuovo [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it), l&#39;opzione per [recapitare il sito in AMP](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) e i nuovi [punti di estensione per aggiungere il progetto CSS/JS](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading).
 
 * **[Cartelle ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**: possibilità di creare cartelle di pubblico per organizzare, trovare e selezionare facilmente i segmenti di pubblico da utilizzare per le funzionalità di targeting delle offerte ContextHub.
 

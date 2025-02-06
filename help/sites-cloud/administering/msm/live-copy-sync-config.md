@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2414'
 ht-degree: 90%
@@ -46,7 +46,7 @@ Ogni configurazione di rollout utilizza un attivatore (o trigger) di rollout che
 
 Nella tabella seguente sono elencate le configurazioni di rollout che vengono installate con AEM. La tabella contiene le azioni di attivazione e sincronizzazione per ciascuna configurazione di rollout.
 
-Se le azioni di configurazione del rollout installate non soddisfano i requisiti, puoi [creare una configurazione di rollout.](#creating-a-rollout-configuration)
+Se le azioni di configurazione rollout installate non soddisfano i requisiti, puoi [creare una configurazione di rollout](#creating-a-rollout-configuration).
 
 | Nome | Descrizione | Attivatore | [Azioni di sincronizzazione](#synchronization-actions) |
 |---|---|---|---|
@@ -61,7 +61,7 @@ Se le azioni di configurazione del rollout installate non soddisfano i requisiti
 
 Nella tabella seguente sono elencate le azioni di sincronizzazione che vengono installate con AEM.
 
-Se le azioni installate non soddisfano le tue esigenze, puoi [Creare una nuova azione di sincronizzazione.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+Se le azioni installate non soddisfano le tue esigenze, puoi [Creare una nuova azione di sincronizzazione](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action).
 
 | Nome azione | Descrizione | Proprietà |
 |---|---|---|
@@ -88,7 +88,7 @@ Se le azioni installate non soddisfano le tue esigenze, puoi [Creare una nuova a
 È possibile [creare una configurazione di rollout](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) quando le configurazioni di rollout installate non soddisfano i requisiti dell&#39;applicazione eseguendo i passaggi seguenti.
 
 1. [Creare la configurazione di rollout:](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
-1. [Aggiungi azioni di sincronizzazione alla configurazione di rollout.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
+1. [Aggiungi azioni di sincronizzazione alla configurazione di rollout](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration).
 
 La nuova configurazione di rollout è quindi disponibile quando configuri le configurazioni di rollout su una pagina blueprint o Live Copy.
 

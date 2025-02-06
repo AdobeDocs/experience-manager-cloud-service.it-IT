@@ -4,10 +4,10 @@ description: Scopri gli strumenti disponibili per aiutarti a gestire i siti demo
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,13 +17,13 @@ Scopri gli strumenti disponibili per aiutarti a gestire i siti demo e come rimuo
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso del componente aggiuntivo Demo di riferimento AEM, [Crea sito,](create-site.md) hai creato un nuovo sito demo basato sui modelli del componente aggiuntivo Demo di riferimento. Ora dovresti:
+Nel documento precedente del percorso aggiuntivo Demo di riferimento AEM, [Crea sito](create-site.md), è stato creato un nuovo sito demo basato sui modelli del componente aggiuntivo Demo di riferimento. Ora dovresti:
 
 * Comprendere come accedere all’ambiente di authoring AEM.
 * Conoscere come creare un sito basato su un modello.
 * Comprendere le nozioni di base per navigare nella struttura del sito e modificare una pagina.
 
-Se hai anche [abilitato AEM Screens per il sito demo,](screens.md) dovresti anche:
+Se hai anche [abilitato AEM Screens per il tuo sito demo](screens.md), dovresti anche:
 
 * Conoscere le nozioni di base di AEM Screens.
 * Comprendere il contenuto demo di We.Cafe.

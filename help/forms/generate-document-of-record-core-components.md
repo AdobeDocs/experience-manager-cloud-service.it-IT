@@ -4,7 +4,7 @@ description: Scopri come generare un modello per un documento di record (DoR) pe
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3131'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Carica il modello XFA (file XDP) nella tua istanza di AEM Forms. Per configurare
 1. Nella finestra Proprietà, selezionare **[!UICONTROL Modello modulo]**.
 1. Nella scheda **[!UICONTROL Modello modulo]**, nel menu a discesa **[!UICONTROL Seleziona da]**, selezionare **[!UICONTROL Modello dati modulo]**, **[!UICONTROL Schema]** o **[!UICONTROL Nessuno]**. È inoltre possibile selezionare un modello di modulo durante la creazione di un modulo.
 1. Nella sezione Configurazione modello del documento record della scheda Modello modulo, selezionare **Associa modello modulo come modello del documento record**. Quando si seleziona questa opzione, vengono visualizzati tutti i modelli XFA (file XDP) disponibili sul computer. Selezionare il file appropriato. Inoltre, assicurati che venga utilizzato lo stesso schema (schema dati) per il modulo adattivo e il modello XFA selezionato (file XDP).
-1. Fai clic su **[!UICONTROL Fine.]**
+1. Fai clic su **[!UICONTROL Fine]**
 
 Il modulo adattivo è ora configurato per utilizzare un file XDP come modello per il documento di record. Il passaggio successivo consiste nel [associare i componenti del modulo adattivo ai campi modello corrispondenti](#bind-adaptive-form-components-with-template-fields).
 
@@ -57,7 +57,7 @@ Carica Adobe Acrobat PDF (Acroform) nella tua istanza di AEM Forms. Per configur
 1. Nella finestra Proprietà, selezionare **[!UICONTROL Modello modulo]**.
 1. Nella scheda **[!UICONTROL Modello modulo]**, nel menu a discesa **[!UICONTROL Seleziona da]**, selezionare **[!UICONTROL Modello dati modulo]**, **[!UICONTROL Schema]** o **[!UICONTROL Nessuno]**. È inoltre possibile selezionare un modello di modulo durante la creazione di un modulo.
 1. Nella sezione Configurazione modello del documento record della scheda Modello modulo, selezionare **Associa modello modulo come modello del documento record**. Selezionando questa opzione, vengono visualizzati tutti gli Acrobat PDF (Acroform) disponibili sul computer. Selezionare l&#39;Acroform che si desidera utilizzare.
-1. Fai clic su **[!UICONTROL Fine.]**
+1. Fai clic su **[!UICONTROL Fine]**
 
 Il modulo adattivo è ora configurato per utilizzare un Acroform come modello per documento di record. Il passaggio successivo consiste nel [associare i componenti del modulo adattivo ai campi modello corrispondenti](#bind-adaptive-form-components-with-template-fields).
 
@@ -78,7 +78,7 @@ Per configurare un modulo adattivo in modo da generare automaticamente un docume
 1. Nella finestra Proprietà, selezionare **[!UICONTROL Modello modulo]**.
 1. Nella scheda **[!UICONTROL Modello modulo]**, nel menu a discesa **[!UICONTROL Seleziona da]**, selezionare **[!UICONTROL Modello dati modulo]**, **[!UICONTROL Schema]** o **[!UICONTROL Nessuno]**. È inoltre possibile selezionare un modello di modulo durante la creazione di un modulo.
 1. Nella sezione Configurazione modello del documento record della scheda Modello modulo, selezionare **Genera documento record**.
-1. Fai clic su **[!UICONTROL Fine.]**
+1. Fai clic su **[!UICONTROL Fine]**
 
 ## Associare i componenti del modulo adattivo ai campi modello {#bind-adaptive-form-components-with-template-fields}
 

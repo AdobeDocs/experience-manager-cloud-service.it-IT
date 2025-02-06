@@ -4,10 +4,10 @@ description: Note sulla versione 2021.5.0 di [!DNL Adobe Experience Manager] as 
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 46%
+ht-degree: 45%
 
 ---
 
@@ -35,7 +35,7 @@ La seguente versione (2021.6.0) sarà del 28 giugno 2021.
 
 * [API obsolete](/help/release-notes/deprecated-removed-features.md): è disponibile un elenco delle ultime API obsolete per AEM as a Cloud Service.
 
-* [Plug-in Maven SDK Build Analyzer per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it): aggiorna i progetti Maven all&#39;ultima versione, con la verifica di API Java obsolete e altri miglioramenti.
+* [Plug-in Maven di AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=it): aggiorna i progetti Maven all&#39;ultima versione, con la verifica di API Java obsolete e altri miglioramenti.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -68,10 +68,10 @@ La seguente versione (2021.6.0) sarà del 28 giugno 2021.
 * Il caricamento di file di grandi dimensioni provoca l&#39;arresto anomalo di [!DNL Experience Manager desktop app]. (CQ-4320942)
 * Le opzioni della barra degli strumenti sono diverse quando la stessa raccolta viene selezionata all’interno di una cartella e quando viene selezionata da un risultato di ricerca. (CQ-4321406)
 
-#### Novità di Dynamic Medie {#what-is-new-dm}
+#### Novità di Dynamic Media {#what-is-new-dm}
 
-* La funzione Smart Imaging DPR (Device Pixel Ratio) e l&#39;ottimizzazione della larghezza di banda della rete consentono di fornire immagini di alta qualità in modo efficiente su dispositivi con display ad alta risoluzione e larghezza di banda limitata. Per ulteriori informazioni, consulta [Domande frequenti su Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) e [Ottimizzazione immagine con formati immagine di nuova generazione WebP e AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
-* È stato introdotto il supporto per il formato AVIF di nuova generazione nella distribuzione Dynamic Medie (modificatore URL fmt).
+* La funzione Smart Imaging DPR (Device Pixel Ratio) e l&#39;ottimizzazione della larghezza di banda della rete consentono di fornire immagini di alta qualità in modo efficiente su dispositivi con display ad alta risoluzione e larghezza di banda limitata. Per ulteriori informazioni, consulta [Domande frequenti su Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) e [Ottimizzazione immagine con formati immagine di nuova generazione WebP e AVIF](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4).
+* È stato introdotto il supporto per il formato AVIF di nuova generazione nella distribuzione Dynamic Media (modificatore URL fmt).
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -101,7 +101,7 @@ Per registrarti al programma beta, puoi inviare un’e-mail all’indirizzo form
 
 Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.5.0.
 
-### Data di rilascio {#release-date-cm-may}
+### Data di pubblicazione {#release-date-cm-may}
 
 La data di pubblicazione di Cloud Manager in AEM as a Cloud Service 2021.5.0 è il 6 maggio 2021.
 La prossima versione è pianificata per il venerdì 3 giugno 2021.
@@ -158,7 +158,7 @@ La data di pubblicazione dello strumento Content Transfer v1.4.6 è il 27 maggio
 
 * Durante l’esecuzione di Mappatura utenti, se gli utenti avevano lo stesso indirizzo e-mail sulla destinazione e sull’host, ma nomi utente diversi, l’intera acquisizione non riusciva. Questo problema è stato risolto. In questo caso, l&#39;utente/gruppo viene ignorato e registrato come conflitto nel file di registro.
 
-### Data di rilascio {#release-date-ctt}
+### Data di pubblicazione {#release-date-ctt}
 
 La data di pubblicazione dello strumento Content Transfer v1.4.0 è l’11 maggio 2021.
 

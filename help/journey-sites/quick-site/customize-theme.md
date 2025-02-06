@@ -5,10 +5,10 @@ exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
@@ -18,7 +18,7 @@ Scopri come è fatto il tema del sito, come personalizzarlo e come testarlo util
 
 ## La storia finora {#story-so-far}
 
-Nel documento precedente del percorso di Creazione Rapida dei Siti AEM, [Recuperare le informazioni di accesso all’archivio Git,](retrieve-access.md) hai imparato come gli sviluppatori front-end usino Cloud Manager per accedere alle informazioni dell’archivio git, e ora dovresti:
+Nel documento precedente del percorso di Creazione Rapida dei Siti AEM, [Recuperare le informazioni di accesso all&#39;archivio Git](retrieve-access.md), hai imparato come lo sviluppatore front-end utilizza Cloud Manager per accedere alle informazioni dell&#39;archivio Git, e ora dovresti:
 
 * Comprendere ad alto livello cosa è Cloud Manager.
 * Aver recuperato le credenziali per accedere al Git AEM in modo da poter eseguire il commit delle personalizzazioni.
@@ -111,7 +111,7 @@ Puoi continuare a personalizzare il tema in base ai requisiti forniti dall’amm
 Una volta completate le personalizzazioni, puoi eseguirne il commit nell’archivio Git AEM. Innanzitutto devi clonare l’archivio sul computer locale.
 
 1. Dalla riga di comando, individua il punto in cui desideri duplicare l’archivio.
-1. Esegui il comando [precedentemente recuperato da Cloud Manager.](retrieve-access.md) Dovrebbe essere simile a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Usa il nome utente e la password git che [hai recuperato nella parte precedente di questo percorso.](retrieve-access.md)
+1. Esegui il comando [precedentemente recuperato da Cloud Manager](retrieve-access.md). Deve essere simile a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Usa il nome utente e la password Git [recuperati nella parte precedente del percorso](retrieve-access.md).
 
    ![Clonare l&#39;archivio](assets/clone-repo.png)
 
@@ -138,11 +138,11 @@ Dopo aver completato questa parte del percorso di creazione rapida sito di AEM, 
 * Scopri come testare le personalizzazioni dei temi utilizzando contenuti AEM reali tramite proxy locale.
 * Scopri come eseguire il commit delle modifiche nell’archivio Git AEM.
 
-Approfondisci l’argomento e continua il percorso di Creazione Rapida dei Siti AEM consultando il documento [Distribuire Il tema personalizzato](deploy-theme.md), dove verrà illustrato come distribuire il tema utilizzando la pipeline front-end.
+Approfondisci l&#39;argomento e continua il percorso di Creazione Rapida dei Siti AEM consultando il documento [Distribuire Il tema personalizzato](deploy-theme.md), dove viene illustrato come distribuire il tema utilizzando la pipeline front-end.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Ti consigliamo di passare alla parte successiva del percorso Creazione Rapida dei Siti consultando il documento [Distribuire Il tema personalizzato,](deploy-theme.md) tuttavia di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento la cui lettura è facoltativa.
+Sebbene sia consigliabile passare alla parte successiva del percorso Creazione Rapida dei Siti consultando il documento [Distribuire Il tema personalizzato](deploy-theme.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso.
 
 * [Tema del sito AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e): questo è l’archivio GitHub del tema del sito AEM.
 * [npm](https://www.npmjs.com): i temi AEM utilizzati per costruire rapidamente i siti sono basati su npm.

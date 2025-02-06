@@ -5,7 +5,7 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 27%
@@ -19,7 +19,7 @@ Scopri come creare nuove pagine per il tuo sito web utilizzando la console **Sit
 
 >[!TIP]
 >
->Prima di iniziare la creazione di nuove pagine, conoscere [l&#39;organizzazione delle pagine in AEM.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>Prima di iniziare a creare nuove pagine, acquisisci familiarità con [l&#39;organizzazione delle pagine in AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 ## Privilegi di accesso {#access-privileges}
 
@@ -31,7 +31,7 @@ In caso di problemi, contattare l&#39;amministratore di sistema.
 
 A meno che le pagine non siano già state create tutte, prima di poter iniziare a creare il contenuto dovrai creare una pagina:
 
-1. Apri [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Apri [la console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Passa alla posizione in cui desideri creare la nuova pagina.
 1. Apri il selettore a discesa utilizzando l’opzione **Crea** nella barra degli strumenti, quindi seleziona **Pagina** dall’elenco:
 
@@ -40,7 +40,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
 1. Dal primo passaggio della procedura guidata, puoi effettuare le seguenti operazioni:
 
    * Seleziona il modello da utilizzare per creare la nuova pagina, quindi seleziona **Successivo** per procedere o **Annulla** per interrompere il processo.
-   * I modelli sono supportati sia per l&#39;[Editor pagine](/help/sites-cloud/authoring/page-editor/introduction.md) che per l&#39;[Editor universale.](/help/sites-cloud/authoring/universal-editor/templates.md)
+   * I modelli sono supportati sia per l&#39;[Editor pagine](/help/sites-cloud/authoring/page-editor/introduction.md) che per l&#39;[Editor universale](/help/sites-cloud/authoring/universal-editor/templates.md).
 
    ![Selezione di un modello per una nuova pagina](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
@@ -76,7 +76,7 @@ A meno che le pagine non siano già state create tutte, prima di poter iniziare 
 
    * Se scegli **Apri**, la console **Sites** apre l&#39;editor appropriato in base al modello della nuova pagina:
       * [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md)
-      * [Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md)
+      * [L’editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 Se torni alla console, puoi visualizzare la nuova pagina:
 

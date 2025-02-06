@@ -4,7 +4,7 @@ description: Scopri in che modo Adobe Experience Manager (AEM) as a Cloud Servic
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 2%
@@ -59,7 +59,7 @@ Esistono due tipi di aggiornamenti delle versioni di AEM:
 
 ## Errore di aggiornamento {#update-failure}
 
-Gli aggiornamenti AEM passano attraverso una pipeline di convalida del prodotto intensa e completamente automatizzata che coinvolge più fasi, garantendo l&#39;assenza di interruzioni del servizio per tutti i sistemi in produzione. I controlli di integrità vengono utilizzati per monitorare lo stato dell&#39;applicazione. Se questi controlli non vanno a buon fine durante un aggiornamento di AEM as a Cloud Service, la versione non procede e Adobe indaga il motivo per cui l’aggiornamento ha causato questo comportamento imprevisto.
+Gli aggiornamenti AEM passano attraverso una pipeline di convalida del prodotto intensa e completamente automatizzata che coinvolge più fasi, garantendo l&#39;assenza di interruzioni del servizio per tutti i sistemi in produzione. I controlli di integrità vengono utilizzati per monitorare lo stato dell&#39;applicazione. Se questi controlli non vanno a buon fine durante un aggiornamento di AEM as a Cloud Service, la versione non procede e Adobe indaga sul motivo per cui l’aggiornamento ha causato questo comportamento imprevisto.
 
 Quando distribuisci una nuova versione del codice personalizzato nel tuo ambiente, [I test funzionali del prodotto e personalizzati](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) svolgono un ruolo cruciale. Essi garantiscono che i sistemi di produzione rimangano stabili e funzionanti anche dopo l’applicazione di una modifica. Questi test vengono applicati anche nel processo di aggiornamento della versione AEM.
 
@@ -97,7 +97,7 @@ Se riscontri un problema relativo alla regressione, invia un caso di supporto tr
 
 ## Archivio nodi compositi {#composite-node-store}
 
-In genere, gli aggiornamenti non comportano tempi di inattività, incluso per l’istanza di authoring, che è un cluster di nodi. Aggiornamenti continui sono possibili a causa di [la funzionalità archivio nodi composito in Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+In genere, gli aggiornamenti non comportano tempi di inattività, incluso per l’istanza di authoring, che è un cluster di nodi. Aggiornamenti continui sono possibili a causa di [la funzionalità archivio nodi composito in Oak](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html).
 
 Questa funzione consente all’AEM di fare riferimento simultaneamente a più archivi. In una [distribuzione continua](/help/implementing/deploying/overview.md#how-rolling-deployments-work), la nuova versione dell&#39;AEM contiene il proprio `/libs` (l&#39;archivio immutabile basato su TarMK). Si distingue dalla versione precedente dell&#39;AEM, anche se entrambi fanno riferimento a un archivio condivise mutabile basato su DocumentMK che contiene aree come `/content` , `/conf` , `/etc` e altri.
 

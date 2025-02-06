@@ -5,10 +5,10 @@ exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -78,7 +78,7 @@ Acquisite queste conoscenze, continua il tuo percorso di traduzione headless in 
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione headless consultando il documento [Introduzione alla traduzione headless in AEM,](getting-started.md) di seguito troverai alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
+Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione headless esaminando il documento [Introduzione alla traduzione headless dell&#39;AEM](getting-started.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
 
 * [MSM e traduzione](/help/sites-cloud/administering/msm-and-translation.md): dettagli del gestore multisito di AEM e come funzionano i suoi strumenti di traduzione
 * [Introduzione ad AEM come CMS headless](/help/headless/introduction.md)

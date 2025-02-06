@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 93%
+ht-degree: 88%
 
 ---
 
@@ -18,11 +18,11 @@ Le regole di traduzione identificano il contenuto da tradurre per le pagine, i c
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta il [Percorso di traduzione Sites](/help/journey-sites/translation/overview.md) per una guida attraverso la traduzione di contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o di traduzione.
+>Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione dell&#39;AEM, ideali per chi non ha esperienza di AEM o traduzione.
 
 ## Frammenti di contenuto e regole di traduzione {#content-fragments}
 
-Le regole di traduzione descritte in questo documento si applicano ai frammenti di contenuto solo se l’opzione **Abilita campi del modello di contenuto per la traduzione** non è stata abilitata nel [livello di configurazione del framework di integrazione della traduzione.](integration-framework.md#assets-configuration-properties)
+Le regole di traduzione descritte in questo documento si applicano ai frammenti di contenuto solo se l&#39;opzione **Abilita campi del modello di contenuto per la traduzione** non è stata attivata al [livello di configurazione del framework di integrazione della traduzione](integration-framework.md#assets-configuration-properties).
 
 Se l’opzione **Abilita campi del modello di contenuto per la traduzione** è attiva, AEM utilizzerà il campo **Traducibile** su [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) per determinare se il campo deve essere tradotto e crea automaticamente le conseguenti regole di traduzione. Questa opzione sostituisce eventuali regole di traduzione create e non richiede alcun intervento o passaggi aggiuntivi.
 

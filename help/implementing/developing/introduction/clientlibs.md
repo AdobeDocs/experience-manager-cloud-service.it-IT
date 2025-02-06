@@ -4,7 +4,7 @@ description: AEM fornisce cartelle di librerie lato client, che consentono di me
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2497'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Utilizzo delle librerie lato client su AEM as a Cloud Service {#using-client-side-libraries}
 
-Le esperienze digitali si basano in larga misura sull’elaborazione lato client guidata da codice JavaScript e CSS complesso. Le librerie lato client (clientlibs) dell’AEM consentono di organizzare e archiviare centralmente queste librerie lato client all’interno dell’archivio. In combinazione con il [processo di sviluppo front-end nell&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), la gestione del codice front-end per il progetto AEM diventa semplice.
+Le esperienze digitali si basano in larga misura sull’elaborazione lato client guidata da codice JavaScript e CSS complesso. Le librerie lato client (clientlibs) dell’AEM consentono di organizzare e archiviare centralmente queste librerie lato client all’interno dell’archivio. In combinazione con il [processo di compilazione front-end nell&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), la gestione del codice front-end per il progetto AEM diventa semplice.
 
 I vantaggi dell’utilizzo di clientlibs in AEM includono:
 
@@ -27,7 +27,7 @@ Clientlibs è la soluzione integrata per la distribuzione di CSS e JavaScript da
 
 >[!TIP]
 >
->Anche gli sviluppatori front-end che creano CSS e JavaScript per progetti AEM devono acquisire familiarità con l&#39;archetipo di progetto [AEM e il relativo processo di compilazione front-end automatizzato.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>Anche gli sviluppatori front-end che creano CSS e JavaScript per progetti AEM devono acquisire familiarità con l&#39;archetipo di progetto [AEM e il relativo processo di compilazione front-end automatizzato](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
 ## Cosa sono le librerie lato client {#what-are-clientlibs}
 
@@ -37,7 +37,7 @@ L’AEM raccoglie i file CSS e JavaScript del sito in un unico file, in una posi
 
 ## Sviluppo front-end per AEM as a Cloud Service {#fed-for-aemaacs}
 
-Tutte le risorse JavaScript, CSS e altre risorse front-end devono essere mantenute nel modulo [ui.frontend dell&#39;archetipo di progetto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) La flessibilità dell&#39;archetipo consente di utilizzare i moderni strumenti web di scelta per creare e gestire queste risorse.
+Tutte le risorse JavaScript, CSS e altre risorse front-end devono essere mantenute nel modulo [ui.frontend dell&#39;Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html). La flessibilità dell’archetipo consente di utilizzare i moderni strumenti web a tua scelta per creare e gestire tali risorse.
 
 L&#39;archetipo può quindi compilare le risorse in singoli file CSS e JS, incorporandoli automaticamente in un `cq:clientLibraryFolder` nell&#39;archivio.
 
@@ -92,7 +92,7 @@ Per rendere accessibili le librerie client in `/apps`, viene utilizzato un servl
 1. Se è necessario gestire risorse statiche, creare una sottocartella denominata `resources` sotto la cartella della libreria client.
    * Se si archiviano risorse statiche in un punto qualsiasi diverso dalla cartella `resources`, non è possibile farvi riferimento in un&#39;istanza Publish.
 1. Aggiungere i file di origine alla cartella della libreria.
-   * Questa operazione viene in genere eseguita dal processo di compilazione front-end dell&#39;archetipo di progetto [AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+   * Questa operazione viene in genere eseguita dal processo di compilazione front-end dell&#39;[Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
    * Se necessario, è possibile organizzare i file di origine in sottocartelle.
 1. Selezionare la cartella della libreria client e fare clic su **Crea > Crea file**.
 1. Nella casella Nome file digitare uno dei seguenti nomi di file e fare clic su OK:
@@ -109,7 +109,7 @@ Per rendere accessibili le librerie client in `/apps`, viene utilizzato un servl
 
 ## Distribuzione di librerie lato client {#serving-clientlibs}
 
-Una volta configurata [la cartella della libreria client come richiesto](#creating-clientlib-folders), è possibile richiedere clientlibs tramite proxy. Ad esempio:
+Una volta che la cartella della libreria client è [configurata come richiesta](#creating-clientlib-folders), è possibile richiedere clientlibs tramite proxy. Ad esempio:
 
 * Hai una libreria client in `/apps/myproject/clientlibs/foo`
 * È presente un&#39;immagine statica in `/apps/myprojects/clientlibs/foo/resources/icon.png`
@@ -137,7 +137,7 @@ This is possible. Still need detail.
 
 ## Librerie client di Author e Publish {#clientlibs-author-publish}
 
-La maggior parte delle clientlibs è richiesta nell’istanza di pubblicazione dell’AEM. In altre parole, lo scopo della maggior parte delle clientlibs è quello di produrre l’esperienza dell’utente finale del contenuto. Per clientlibs nelle istanze di pubblicazione, è possibile utilizzare [strumenti di compilazione front-end](#fed-for-aemaacs) e distribuirli tramite [cartelle di librerie client come descritto in precedenza.](#creating-clientlib-folders)
+La maggior parte delle clientlibs è richiesta nell’istanza di pubblicazione dell’AEM. In altre parole, lo scopo della maggior parte delle clientlibs è quello di produrre l’esperienza dell’utente finale del contenuto. Per clientlibs nelle istanze di pubblicazione, è possibile utilizzare [strumenti di compilazione front-end](#fed-for-aemaacs) e distribuirli tramite [cartelle di librerie client come descritto in precedenza](#creating-clientlib-folders).
 
 Tuttavia, in alcuni casi le librerie client possono essere necessarie per personalizzare l’esperienza di authoring. Ad esempio, per personalizzare una finestra di dialogo potrebbe essere necessario distribuire piccoli bit di CSS o JS nell’istanza di authoring dell’AEM.
 
@@ -178,7 +178,7 @@ Esistono diverse altre funzioni supportate dalle cartelle delle librerie client 
 >
 >Queste funzioni aggiuntive delle cartelle delle librerie client non sono necessarie in AEM as a Cloud Service e pertanto il loro utilizzo è sconsigliato. Sono elencati qui per completezza.
 
-### Adobe Granite HTML Libreria Manager {#html-library-manager}
+### Gestione librerie Adobe Granite HTML {#html-library-manager}
 
 È possibile controllare ulteriori impostazioni della libreria client tramite il pannello **Adobe Granite HTML Library Manager** della console di sistema in `https://<host>:<port>/system/console/configMgr`).
 
@@ -348,7 +348,7 @@ Per ulteriori dettagli sulle opzioni GCC, vedi [documentazione GCC](https://deve
 YUI è impostato come minimizzatore predefinito in AEM. Per cambiare in GCC, segui la procedura riportata di seguito.
 
 1. Vai a Apache Felix Config Manager in (`http://<host>:<port/system/console/configMgr`)
-1. Trova e modifica **Adobe Granite HTML Library Manager**.
+1. Trova e modifica **Gestione libreria HTML di Adobe Granite**.
 1. Abilita l&#39;opzione **Minify** (se non già abilitata).
 1. Imposta il valore **Configurazioni predefinite processore JS** su `min:gcc`.
    * Le opzioni possono essere passate se separate da un punto e virgola, ad esempio `min:gcc;obfuscate=true`.

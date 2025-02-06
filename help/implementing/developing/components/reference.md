@@ -4,7 +4,7 @@ description: Guida di riferimento per sviluppatori per i dettagli dei componenti
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 1%
@@ -17,7 +17,7 @@ I componenti sono al centro della creazione di un’esperienza nell’AEM. I [Co
 
 >[!TIP]
 >
->Prima di fare riferimento a questo documento, assicurati di aver completato l&#39;[esercitazione WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e di avere quindi familiarità con [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e con l&#39;[Archetipo progetto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
+>Prima di fare riferimento a questo documento, assicurati di aver completato l&#39;[esercitazione WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e di avere pertanto familiarità con [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e con [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it).
 
 Poiché l’esercitazione WKND copre la maggior parte dei casi d’uso, questo documento è inteso solo come supplemento a tali risorse. Fornisce informazioni tecniche approfondite sulla struttura e la configurazione dei componenti in AEM e non intende essere una guida introduttiva.
 
@@ -74,7 +74,7 @@ Questa logica (facoltativa) può essere implementata in diversi modi e viene ric
 La struttura di una componente AEM è potente e flessibile. Le parti principali sono:
 
 * [Tipo risorsa](#resource-type)
-* [Definizione componente](#component-definition)
+* [Definizione del componente](#component-definition)
 * [Proprietà e nodi figlio di un componente](#properties-and-child-nodes-of-a-component)
 * [Finestre di dialogo](#dialogs)
 * [Finestre di dialogo per progettazione](#design-dialogs)
@@ -88,11 +88,11 @@ Un elemento chiave della struttura è il tipo di risorsa.
 
 Si tratta di un’astrazione che aiuta a garantire che, anche quando l’aspetto cambia nel tempo, l’intenzione rimanga nel tempo.
 
-### Definizione componente {#component-definition}
+### Definizione del componente {#component-definition}
 
 La definizione di un componente può essere suddivisa come segue:
 
-* I componenti AEM si basano su [Sling.](https://sling.apache.org/documentation.html)
+* I componenti AEM si basano su [Sling](https://sling.apache.org/documentation.html).
 * I componenti AEM si trovano in `/libs/core/wcm/components`.
 * I componenti specifici del progetto/sito si trovano in `/apps/<myApp>/components`.
 * I componenti standard AEM sono definiti come `cq:Component` e presentano gli elementi chiave:
@@ -105,32 +105,32 @@ La definizione di un componente può essere suddivisa come segue:
 * **Nodo principale**:
    * `<mycomponent> (cq:Component)` - Nodo gerarchico del componente.
 * **Proprietà vitali**:
-   * `jcr:title` - Titolo componente; ad esempio, utilizzato come etichetta quando il componente è elencato in [Browser componenti](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) e [Console componenti](/help/sites-cloud/authoring/components-console.md)
-   * `jcr:description` - Descrizione del componente; utilizzato come suggerimento del mouse nella console Componenti e browser
-   * Per ulteriori informazioni, vedere la sezione [Icona componente](#component-icon)
+   * `jcr:title` - Titolo componente; ad esempio, utilizzato come etichetta quando il componente è elencato in [Browser componenti](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) e [Console componenti](/help/sites-cloud/authoring/components-console.md).
+   * `jcr:description` - Descrizione del componente; utilizzato come suggerimento del mouse nel browser Componenti e nella console Componenti.
+   * Per ulteriori informazioni, vedere la sezione [Icona componente](#component-icon).
 * **Nodi figlio vitali**:
-   * `cq:editConfig (cq:EditConfig)` - Definisce le proprietà di modifica del componente e consente la visualizzazione del componente nel browser Componenti
+   * `cq:editConfig (cq:EditConfig)` - Definisce le proprietà di modifica del componente e consente la visualizzazione del componente nel browser Componenti.
       * Se il componente ha una finestra di dialogo, questa viene visualizzata automaticamente nel browser Componenti o nel Sidekick, anche se cq:editConfig non esiste.
    * `cq:childEditConfig (cq:EditConfig)` - Controlla gli aspetti dell&#39;interfaccia utente di authoring per i componenti figlio che non definiscono il proprio `cq:editConfig`.
    * `cq:dialog (nt:unstructured)` - Finestra di dialogo per questo componente. Definisce l’interfaccia che consente all’utente di configurare il componente e/o modificare il contenuto.
-   * `cq:design_dialog (nt:unstructured)` - Modifica progettazione per questo componente
+   * `cq:design_dialog (nt:unstructured)` - Modifica progettazione per questo componente.
 
 #### Icona componente {#component-icon}
 
 L’icona o l’abbreviazione del componente viene definita tramite le proprietà JCR del componente quando questo viene creato dallo sviluppatore. Queste proprietà vengono valutate nell&#39;ordine seguente e viene utilizzata la prima proprietà valida trovata.
 
-1. `cq:icon` - Proprietà stringa che punta a un&#39;icona standard nella [Libreria interfaccia utente Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon) da visualizzare nel browser componenti
+1. `cq:icon` - Proprietà stringa che punta a un&#39;icona standard nella [Libreria interfaccia utente Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon) da visualizzare nel browser componenti.
    * Utilizza il valore dell’attributo HTML dell’icona Coral.
-1. `abbreviation` - Proprietà stringa per personalizzare l&#39;abbreviazione del nome del componente nel browser componenti
+1. `abbreviation` - Proprietà stringa per personalizzare l&#39;abbreviazione del nome del componente nel browser componenti.
    * L’abbreviazione deve essere limitata a due caratteri.
    * Se si specifica una stringa vuota, l&#39;abbreviazione verrà generata dai primi due caratteri della proprietà `jcr:title`.
-      * Ad esempio, &quot;Im&quot; per &quot;Immagine&quot;
+      * Ad esempio, &quot;Im&quot; per &quot;Immagine&quot;.
       * Il titolo localizzato viene utilizzato per creare l’abbreviazione.
    * L&#39;abbreviazione viene tradotta solo se il componente ha una proprietà `abbreviation_commentI18n`, che viene quindi utilizzata come suggerimento di traduzione.
-1. `cq:icon.png` o `cq:icon.svg` - Icona per questo componente, visualizzata nel browser Componenti
+1. `cq:icon.png` o `cq:icon.svg` - Icona per questo componente, visualizzata nel browser Componenti.
    * 20 x 20 pixel sono le dimensioni delle icone dei componenti standard.
       * Le icone più grandi vengono ridimensionate (lato client).
-   * Il colore consigliato è rgb(112, 112, 112) > #707070
+   * Il colore consigliato è rgb(112, 112, 112) > #707070.
    * Lo sfondo delle icone dei componenti standard è trasparente.
    * Sono supportati solo `.png` e `.svg` file.
    * Se si esegue l&#39;importazione dal file system tramite il plug-in Eclipse, i nomi dei file devono essere preceduti, ad esempio, da `_cq_icon.png` o `_cq_icon.svg`.
@@ -172,7 +172,7 @@ Un componente è un nodo di tipo `cq:Component` e presenta le proprietà e i nod
 | `cq:isContainer` | `Boolean` | Indica se il componente è un componente contenitore e può quindi contenere altri componenti, ad esempio un sistema paragrafo. |
 | `cq:dialog` | `nt:unstructured` | Questa è la definizione della finestra di dialogo per modifica del componente. |
 | `cq:design_dialog` | `nt:unstructured` | Questa è la definizione della finestra di dialogo per progettazione del componente. |
-| `cq:editConfig` | `cq:EditConfig` | Definisce la configurazione [edit del componente.](#edit-behavior) |
+| `cq:editConfig` | `cq:EditConfig` | Definisce la configurazione [edit del componente](#edit-behavior). |
 | `cq:htmlTag` | `nt:unstructured` | In questo modo vengono restituiti attributi di tag aggiuntivi che vengono aggiunti al tag HTML circostante. Abilita l’aggiunta di attributi ai div generati automaticamente. |
 | `cq:noDecoration` | `Boolean` | Se true, il componente non viene renderizzato con le classi div e css generate automaticamente. |
 | `cq:template` | `nt:unstructured` | Se individuato, questo nodo viene utilizzato come modello di contenuto quando il componente viene aggiunto dal browser Componenti. |
@@ -256,7 +256,7 @@ Se consideri la finestra di dialogo come un semplice contenitore per un elemento
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-In particolare, l&#39;interfaccia utente Granite fornisce una serie di componenti di campo adatti all&#39;utilizzo nelle finestre di dialogo o, più in generale, nei [moduli.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
+Più precisamente, l&#39;interfaccia utente Granite fornisce una serie di componenti di campo adatti all&#39;utilizzo nelle finestre di dialogo o, più in generale, nei [moduli](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html).
 
 Dopo aver creato il tipo di risorsa, è possibile creare un&#39;istanza del campo aggiungendo un nuovo nodo nella finestra di dialogo, con la proprietà `sling:resourceType` che fa riferimento al tipo di risorsa appena introdotto.
 
@@ -317,7 +317,7 @@ Il comportamento di modifica di un componente è configurato aggiungendo un nodo
    * `cq:inplaceEditing` (tipo di nodo `cq:InplaceEditingConfig`): definisce una configurazione di modifica diretta per il componente
    * `cq:listeners` (tipo di nodo `cq:EditListenersConfig`): definisce cosa accade prima o dopo che si verifica un&#39;azione sul componente
 
-Ci sono molte configurazioni esistenti nell&#39;AEM. Puoi cercare facilmente proprietà specifiche o nodi secondari utilizzando lo strumento Query in **CRXDE Liti**.
+Ci sono molte configurazioni esistenti nell&#39;AEM. Puoi cercare facilmente proprietà specifiche o nodi secondari utilizzando lo strumento Query in **CRXDE Lite**.
 
 ### Segnaposto Componente {#component-placeholders}
 
@@ -339,7 +339,7 @@ HTML Il tipico script HTL che esegue il rendering del segnaposto sopra riportato
 
 Nell&#39;esempio precedente, `isEmpty` è una variabile che è true solo quando il componente non ha contenuto ed è invisibile all&#39;autore.
 
-Per evitare la ripetizione, l’Adobe consiglia agli implementatori di componenti di utilizzare un modello HTL per questi segnaposto, [simile a quello fornito dai Componenti core.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Per evitare ripetizioni, Adobe consiglia agli implementatori di componenti di utilizzare un modello HTL per questi segnaposto, [simile a quello fornito dai Componenti core](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
 
 L’utilizzo del modello nel collegamento precedente viene quindi eseguito con la seguente riga di HTL:
 
@@ -350,7 +350,7 @@ L’utilizzo del modello nel collegamento precedente viene quindi eseguito con l
 
 Nell&#39;esempio precedente, `model.text` è la variabile che è true solo quando il contenuto ha contenuto ed è visibile.
 
-Un esempio di utilizzo di questo modello è disponibile nei Componenti core, [ad esempio nel Componente titolo.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+Un esempio di utilizzo di questo modello è disponibile nei Componenti core, [ad esempio nel Componente titolo](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27).
 
 ### Configurazione con i nodi secondari cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 

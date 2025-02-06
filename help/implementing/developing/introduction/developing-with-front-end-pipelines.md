@@ -4,7 +4,7 @@ description: Con la pipeline front-end, viene data maggiore indipendenza agli sv
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Sviluppo di Sites con la pipeline front-end {#developing-site-with-front-end-pipeline}
 
-[Con la pipeline front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può guadagnare una notevole velocità. Questo documento descrive il funzionamento di questo processo e contiene alcune considerazioni di cui tenere conto per sfruttare appieno il potenziale.
+[Con la pipeline front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end), viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può guadagnare una notevole velocità. Questo documento descrive il funzionamento di questo processo e contiene alcune considerazioni di cui tenere conto per sfruttare appieno il potenziale.
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Contratto di sviluppo front-end {#front-end-build-contract}
 
-Analogamente all&#39;ambiente di build [full stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) la pipeline front-end dispone di un proprio ambiente. Gli sviluppatori possono utilizzare questa pipeline con una certa flessibilità, purché venga rispettato il seguente contratto di sviluppo front-end.
+Analogamente all&#39;[ambiente di build full stack](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md), la pipeline front-end dispone di un proprio ambiente. Gli sviluppatori possono utilizzare questa pipeline con una certa flessibilità, purché venga rispettato il seguente contratto di sviluppo front-end.
 
 La pipeline front-end richiede che il progetto Node.js front-end utilizzi la direttiva script `build` per generare la build distribuita. Questo perché Cloud Manager utilizza il comando `npm run build` per generare il progetto distribuibile per la build front-end.
 
@@ -84,4 +84,4 @@ I passaggi seguenti sono generalmente consigliati quando è necessario apportare
 ## Risorse aggiuntive {#additional-resources}
 
 * [Temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md) - Scopri come utilizzare i temi del sito AEM per personalizzare lo stile e la progettazione del sito.
-* [Generatore di temi del sito AEM](https://github.com/adobe/aem-site-theme-builder) - L&#39;Adobe fornisce un generatore di temi del sito AEM come set di script per la creazione di nuovi temi del sito.
+* [Generatore di temi del sito AEM](https://github.com/adobe/aem-site-theme-builder) - Adobe fornisce un generatore di temi del sito AEM come set di script per la creazione di nuovi temi del sito.

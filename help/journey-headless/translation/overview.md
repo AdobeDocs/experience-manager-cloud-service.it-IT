@@ -5,10 +5,10 @@ exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Questa guida affronta i più importanti argomenti relativi alla traduzione headl
 
 L’obiettivo è quello di darti ampie informazioni sulla tecnologia headless, su come funzionano i contenuti headless di AEM e come tradurli. Se non hai familiarità con nessuno di questi argomenti, questo è il posto giusto per iniziare.
 
-Se conosci già AEM, i contenuti headless e la traduzione, potresti avere già le conoscenze di base di questo percorso. In caso affermativo, considera la possibilità di fare riferimento alla nostra documentazione tecnica collegata alla [sezione delle risorse aggiuntive più avanti.](#additional-resources)
+Se conosci già AEM, i contenuti headless e la traduzione, potresti avere già le conoscenze di base di questo percorso. Prendi in considerazione di fare riferimento alla nostra documentazione tecnica collegata alla [sezione risorse aggiuntive di seguito](#additional-resources).
 
 ## Percorsi di documentazione AEM {#documentation-journeys}
 

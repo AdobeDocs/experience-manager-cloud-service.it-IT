@@ -4,9 +4,9 @@ description: Scopri il supporto per i frammenti di contenuto nell’API HTTP di 
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1827'
 ht-degree: 14%
 
 ---
@@ -39,7 +39,7 @@ Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, un el
 
 >[!NOTE]
 >
->Per informazioni aggiornate sulle API Experience Manager, visita anche [API Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Per informazioni aggiornate sulle API Experience Manager, visita [API Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 L&#39;[API REST di Assets](/help/assets/mac-api-assets.md) consente agli sviluppatori di Adobe Experience Manager as a Cloud Service di accedere ai contenuti (memorizzati nell&#39;AEM) direttamente tramite l&#39;API HTTP, mediante operazioni CRUD (Create, Read, Update, Delete).
 

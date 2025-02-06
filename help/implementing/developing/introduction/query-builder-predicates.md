@@ -4,7 +4,7 @@ description: Riferimento predicato per l’API Query Builder in AEM as a Cloud S
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 1%
@@ -171,7 +171,7 @@ Non supporta l’estrazione dei facet.
 
 ### hasPermission {#haspermission}
 
-Questo predicato limita il risultato agli elementi in cui la sessione corrente dispone dei privilegi [JCR specificati.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Questo predicato limita il risultato agli elementi in cui la sessione corrente dispone dei [privilegi JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) specificati.
 
 Un predicato di sola filtraggio e non può utilizzare un indice di ricerca. Non supporta l’estrazione dei facet.
 

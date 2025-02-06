@@ -4,7 +4,7 @@ description: Scopri come mappare i percorsi di pagina utilizzati nell’istanza 
 feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 97%
@@ -20,9 +20,9 @@ Scopri come mappare i percorsi di pagina utilizzati nell’istanza di authoring 
 Per poter creare contenuti WYSIWYG utilizzando AEM e pubblicarli in Edge Delivery Services, è necessario impostare la mappatura del percorso del progetto. Questa mappatura ha due scopi.
 
 * Mappa e crea una relazione tra i percorsi di pagina utilizzati nell’istanza di authoring AEM e i percorsi di pagina pubblici utilizzati sul sito web.
-* Controlla quali contenuti (pagine, fogli, risorse, ecc.) vengono pubblicati nei Edge Delivery Services.
+* Controlla quali contenuti (pagine, fogli, risorse, ecc.) vengono pubblicati in Edge Delivery Services.
 
-La mappatura del percorso deve essere configurata per ogni progetto singolarmente e in base al contenuto e alla struttura URL del progetto. Viene utilizzato da AEM durante la pubblicazione dei contenuti e durante la modifica dei contenuti nell’[Editor universale.](/help/sites-cloud/authoring/universal-editor/navigation.md)
+La mappatura del percorso deve essere configurata per ogni progetto singolarmente e in base al contenuto e alla struttura URL del progetto. Viene utilizzato dall&#39;AEM durante la pubblicazione dei contenuti e durante la modifica dei contenuti nell&#39;[Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md).
 
 ## Formato di configurazione {#configuration-format}
 

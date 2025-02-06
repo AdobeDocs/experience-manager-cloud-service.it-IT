@@ -5,7 +5,7 @@ exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 64%
@@ -18,7 +18,7 @@ Scopri come gestire le pagine del tuo sito web in AEM, incluso lo spostamento, l
 
 >[!TIP]
 >
->Prima di iniziare a gestire le pagine, conoscere [l&#39;organizzazione delle pagine in AEM.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>Prima di iniziare a gestire le pagine, acquisisci familiarità con [l&#39;organizzazione delle pagine in AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 >[!TIP]
 >
@@ -32,9 +32,9 @@ Nell’eventualità di problemi, rivolgiti al tuo amministratore di sistema.
 
 ## Apertura di una pagina per la modifica {#opening-a-page-for-editing}
 
-Dopo aver [creato una pagina](/help/sites-cloud/authoring/sites-console/creating-pages.md) o aver visitato una pagina esistente utilizzando [la console **Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) puoi aprirla per la modifica.
+Dopo aver [creato una pagina](/help/sites-cloud/authoring/sites-console/creating-pages.md) o aver visitato una pagina esistente utilizzando [la console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), puoi aprirla per la modifica.
 
-1. Apri [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Apri [la console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Passa alla pagina da modificare.
 1. Seleziona la pagina mediante:
 
@@ -53,7 +53,7 @@ Dopo aver [creato una pagina](/help/sites-cloud/authoring/sites-console/creating
 
 Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
-1. Apri [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Apri [la console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Individuare la pagina da copiare.
 1. Seleziona la pagina mediante:
 
@@ -95,7 +95,7 @@ La procedura per spostare o rinominare una pagina è sostanzialmente la stessa e
 
 In AEM è disponibile una funzionalità che consente di aggiornare eventuali collegamenti interni che rimandano alla pagina da rinominare/spostare. Questa operazione può essere eseguita a livello di singola pagina, per assicurare la massima flessibilità.
 
-1. Apri [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Apri [la console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Individuare la pagina da spostare.
 1. Seleziona la pagina mediante:
 
@@ -181,7 +181,7 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
 
 ### Eliminazione di una pagina {#deleting-a-page}
 
-1. Apri [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Apri [la console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Passare alla pagina che si desidera eliminare.
 1. Utilizza la [modalità di selezione](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) per selezionare la pagina richiesta, quindi utilizza **Elimina** dalla barra degli strumenti:
 
@@ -213,7 +213,7 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
 
 Puoi creare cartelle per organizzare file e pagine.
 
-1. Apri [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Apri [la console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Passa alla posizione desiderata.
 1. Per aprire l’elenco delle opzioni, seleziona **Crea** dalla barra degli strumenti
 1. Seleziona **Cartella** per aprire la finestra di dialogo. Nella finestra puoi immettere il **Nome** e il **Titolo**:

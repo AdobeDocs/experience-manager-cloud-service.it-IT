@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 92c0e556eb1f92dadd396a479a8bf933715935a7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 91%
+ht-degree: 86%
 
 ---
 
@@ -30,7 +30,7 @@ I siti creati con modelli AEM consentono di scaricare, personalizzare e applicar
 
 I temi del sito vengono utilizzati in due modi diversi:
 
-* Vengono utilizzati come parte di un modello del sito per definire lo stile durante la [creazione di un sito.](create-site.md)
+* Vengono utilizzati come parte di un modello di sito per definire lo stile durante la [creazione di un sito](create-site.md).
 * Vengono scaricati dopo la creazione di un sito basato su un modello in modo che uno sviluppatore front-end possa personalizzare ulteriormente lo stile.
 
 >[!TIP]
@@ -39,7 +39,7 @@ I temi del sito vengono utilizzati in due modi diversi:
 
 ## Struttura del tema del sito {#structure}
 
-I temi del sito sono semplicemente pacchetti con una struttura logica che riflette chiaramente lo scopo del contenuto. Per un progetto front-end tipico, l’Adobe consiglia la seguente struttura per un tema del sito:
+I temi del sito sono semplicemente pacchetti con una struttura logica che riflette chiaramente lo scopo del contenuto. Per un progetto front-end tipico, Adobe consiglia la seguente struttura per un tema del sito:
 
 * `src/theme.ts`: il punto di ingresso principale del tema JS &amp; CSS
 * `src/site`: file JS &amp; CSS applicabili all’intero sito

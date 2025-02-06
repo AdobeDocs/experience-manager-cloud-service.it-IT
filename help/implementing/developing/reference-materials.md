@@ -4,7 +4,7 @@ description: L’AEM dispone di API estese e potenti che puoi utilizzare per il 
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4182374ea9d603ed53e75511d34fdfcf69829200
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 5%
@@ -59,7 +59,7 @@ Se l’AEM fornisce un’API, preferiscila a Sling, JCR e OSGi. Se l’AEM non f
 
 >[!TIP]
 >
->Per informazioni dettagliate su queste linee guida, consulta il documento [Comprendere le best practice per le API Java.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+>Per informazioni dettagliate su queste linee guida, consulta il documento [Comprendere le best practice per le API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html).
 
 ## Servizi e API di distribuzione e gestione dei contenuti AEM {#delivery-apis}
 

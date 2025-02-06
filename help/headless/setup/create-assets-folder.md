@@ -4,10 +4,10 @@ description: Utilizza i modelli per frammenti di contenuto di AEM per definire l
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 83%
+ht-degree: 81%
 
 ---
 
@@ -38,7 +38,7 @@ Di solito, un amministratore deve creare cartelle solo occasionalmente, per orga
    ![Crea cartella](../assets/assets-folder-create.png)
 1. Seleziona la cartella creata passando il puntatore del mouse e toccando il segno di spunta. Dalla barra degli strumenti, seleziona **Proprietà** (oppure utilizza le `p` [scelte rapide da tastiera](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)).
 1. In **Proprietà**, seleziona la scheda **Servizi cloud**.
-1. In **Configurazione cloud** seleziona la [configurazione creata in precedenza.](create-configuration.md)
+1. Per **Configurazione cloud** seleziona la [configurazione creata in precedenza](create-configuration.md).
    ![Configurare la cartella delle risorse](../assets/assets-folder-configure.png)
 1. Seleziona **Salva e chiudi**.
 1. Selezionare **OK** nella finestra di conferma.

@@ -4,7 +4,7 @@ description: Scopri i diversi eventi inviati dall’editor universale che puoi u
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
@@ -27,7 +27,7 @@ Tutti gli eventi seguono una convenzione di denominazione.
 
 Ad esempio, `aue:content-update` e `aue:ui-select`
 
-Gli eventi includono il payload della richiesta e della risposta e vengono attivati una volta che la chiamata corrispondente ha esito positivo. Per ulteriori dettagli sulle chiamate e esempi dei payload, consulta il documento [Chiamate all&#39;editor universale.](/help/implementing/universal-editor/calls.md)
+Gli eventi includono il payload della richiesta e della risposta e vengono attivati una volta che la chiamata corrispondente ha esito positivo. Per ulteriori dettagli sulle chiamate e esempi dei payload, consulta il documento [Chiamate all&#39;editor universale](/help/implementing/universal-editor/calls.md).
 
 ## Eventi aggiornamento contenuto {#content-events}
 

@@ -4,10 +4,10 @@ description: Scopri come utilizzare i fogli di calcolo per gestire i dati tabula
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 78%
+ht-degree: 94%
 
 ---
 
@@ -34,11 +34,11 @@ Questo documento utilizza l’esempio dei reindirizzamenti per illustrare come c
 
 >[!TIP]
 >
->Per ulteriori informazioni sul funzionamento generale dei fogli di calcolo con Edge Delivery Services, consulta il documento [Fogli di calcolo e JSON.](/help/edge/developer/spreadsheets.md)
+>Per ulteriori informazioni sul funzionamento generale dei fogli di calcolo con i Edge Delivery Services, vedere il documento [Fogli di calcolo e JSON](/help/edge/developer/spreadsheets.md).
 
 >[!TIP]
 >
->I fogli di calcolo devono essere utilizzati solo per conservare i dati tabulari. Per l’archiviazione di dati strutturati, [consulta le funzionalità headless di AEM.](/help/headless/introduction.md)
+>I fogli di calcolo devono essere utilizzati solo per conservare i dati tabulari. Per l&#39;archiviazione dei dati strutturati, [controlla le funzionalità headless dell&#39;AEM](/help/headless/introduction.md).
 
 ## Prerequisiti {#prerequisites}
 
@@ -81,26 +81,26 @@ In questo esempio verrà creato un foglio di calcolo per gestire i reindirizzame
    * Se necessario, l’editor aggiunge nuove righe al foglio di calcolo.
    * Per eliminare o spostare una riga, utilizza l’icona **Elimina** alla fine di ogni riga e le maniglie di trascinamento all’inizio di ogni riga, rispettivamente.
 
-## Importazione dei dati del foglio di calcolo {#importing}
+## Importazione di dati da un foglio di calcolo {#importing}
 
-Oltre a modificare i fogli di calcolo nell’Editor pagina AEM, puoi anche importare dati da un file CSV.
+Oltre a modificare i fogli di calcolo nell’Editor pagina di AEM, puoi anche importare dei dati da un file CSV.
 
-1. Durante la modifica del foglio di calcolo in AEM, tocca o fai clic sul pulsante **Carica** in alto a sinistra dello schermo.
+1. Durante la modifica del foglio di calcolo in AEM, tocca o fai clic sul pulsante **Carica** in alto a sinistra.
 1. Nell’elenco a discesa, seleziona la modalità di importazione dei dati.
-   * **Sostituisci il documento** per sostituire il contenuto dell&#39;intero foglio di calcolo con il contenuto del file CSV che verrà caricato.
+   * **Sostituisci documento** per sostituire il contenuto dell’intero foglio di calcolo con il contenuto del file CSV che verrà caricato.
    * **Aggiungi al documento** per aggiungere i dati del file CSV che verranno caricati nel contenuto del foglio di calcolo esistente.
 1. Nella finestra di dialogo visualizzata, seleziona il file CSV, quindi tocca o fai clic su **Apri**.
 
-Viene visualizzata una finestra di dialogo durante l’elaborazione dell’importazione. Una volta completato, i dati nel file CSV vengono aggiunti o sostituiti al contenuto del foglio di calcolo. Se si verificano errori, ad esempio una mancata corrispondenza delle colonne, questi vengono segnalati in modo da poter correggere il file CSV.
+Durante l’elaborazione dell’importazione, viene visualizzata una finestra di dialogo. Al termine, i dati del file CSV vengono aggiunti o sostituiti al contenuto del foglio di calcolo. Se si verificano errori, ad esempio una mancata corrispondenza delle colonne, questi vengono segnalati in modo da poter correggere il file CSV.
 
 >[!NOTE]
 >
 >* Le intestazioni nel file CSV devono corrispondere esattamente alle colonne nel foglio di calcolo.
->* L’importazione dell’intero file CSV non modifica le intestazioni di colonna, ma solo le righe di contenuto.
->* Se devi aggiornare le colonne, devi farlo nell’Editor pagina AEM prima di eseguire l’importazione del file CSV.
->* Un file CSV non può superare i 10 MB per l&#39;importazione.
+>* L’importazione dell’intero file CSV non modifica le intestazioni di colonna, ma solo le righe del contenuto.
+>* Se devi aggiornare le colonne, devi farlo nell’Editor pagina di AEM prima di importare il file CSV.
+>* È possibile importare file CSV con una dimensione massima di 10 MB.
 
-A seconda della selezione di `mode`, è possibile anche `create`, `replace` o `append` per i fogli di calcolo utilizzando un CSV e un comando cURL simile al seguente.
+A seconda della modalità (`mode`) selezionata, è possibile anche creare (`create`), sostituire (`replace`) o aggiungere (`append`) ai fogli di calcolo utilizzando un CSV e un comando cURL simile al seguente.
 
 ```text
 curl --request POST \
@@ -121,7 +121,7 @@ La chiamata restituisce una pagina HTML con informazioni sull’ID del processo.
 Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
 ```
 
-[È possibile utilizzare la console **Processi**](/help/operations/asynchronous-jobs.md) per visualizzare lo stato del processo o utilizzare l&#39;ID restituito per eseguire una query.
+[Puoi utilizzare la console **Processi**](/help/operations/asynchronous-jobs.md) per visualizzare lo stato del processo o utilizzare l’ID restituito per eseguire una query.
 
 ```text
 https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1
@@ -150,7 +150,7 @@ Affinché AEM possa pubblicare i dati nel foglio di calcolo, è inoltre necessar
 
    >[!NOTE]
    >
-   >Questa voce `paths.json` si basa sull’esempio di creazione di reindirizzamenti utilizzando dati tabulari. Assicurati di aggiornare il percorso appropriato per il [tipo di foglio di calcolo che si sta creando.](#other)
+   >Questa voce `paths.json` si basa sull’esempio di creazione di reindirizzamenti utilizzando dati tabulari. Assicurati di aggiornare il percorso appropriato per il [tipo di foglio di calcolo che stai creando](#other).
 
 1. Fai clic su **Conferma modifiche...** per salvare le modifiche apportate a `main`.
 
@@ -174,7 +174,7 @@ Il foglio di calcolo dei reindirizzamenti ora è pubblicato e accessibile al pub
 
 >[!TIP]
 >
->Per ulteriori informazioni sulle mappature dei percorsi, consulta il documento [Mappatura dei percorsi per Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+>Per ulteriori informazioni sui mapping dei percorsi, vedere il documento [Mapping dei percorsi per Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ## Altri tipi di fogli di calcolo {#other}
 
@@ -205,7 +205,7 @@ Inoltre, è possibile [creare un foglio di calcolo personalizzato](#own-spreadsh
 
 ## Creazione di un proprio foglio di calcolo {#own-spreadsheet}
 
-1. Segui gli stessi passaggi descritti nella sezione [Creare un foglio di calcolo.](#spreadsheet)
+1. Seguire gli stessi passaggi nella sezione [Crea foglio di calcolo](#spreadsheet).
 
 1. Quando selezioni il modello, scegli **Foglio di calcolo**.
 

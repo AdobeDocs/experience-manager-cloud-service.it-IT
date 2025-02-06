@@ -4,7 +4,7 @@ description: Questo documento descrive il contratto generale, indipendente dal f
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 1%
@@ -81,7 +81,7 @@ Il modello di pagina utilizza il modulo di esportazione del modello JSON, a sua 
 * `:itemsOrder`: elenco ordinato dei figli. L’oggetto mappa JSON non garantisce l’ordine dei relativi campi. Grazie alla mappa e all’array corrente, il consumatore dell’API beneficia di entrambe le strutture
 * `:path`: percorso contenuto di un elemento (presente negli elementi che rappresentano una pagina)
 
-Consulta anche [Guida introduttiva di AEM Content Services.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+Vedi anche [Guida introduttiva di AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it).
 
 ### Modulo specifico per framework {#framework-specific-module}
 

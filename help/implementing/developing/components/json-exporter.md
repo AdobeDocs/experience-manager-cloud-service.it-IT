@@ -4,7 +4,7 @@ description: I Content Services dell’AEM sono progettati per generalizzare la 
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 17%
@@ -65,7 +65,7 @@ La pagina può contenere un singolo frammento di contenuto o più componenti di 
 
   >[!NOTE]
   >
-  >Anche se non si tratta di un&#39;implementazione standard, sono supportati [più selettori,](enabling-json-exporter.md#multiple-selectors) ma `model` deve essere il primo.
+  >Anche se non si tratta di un&#39;implementazione standard, [sono supportati più selettori](enabling-json-exporter.md#multiple-selectors), ma `model` deve essere il primo.
 
 ### Ulteriori informazioni {#further-information}
 

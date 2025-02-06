@@ -5,16 +5,16 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3068'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # Guida introduttiva ad AEM headless as a Cloud Service {#getting-started}
 
-In questa parte del [Percorso per sviluppatori headless di AEM,](overview.md) scopri cosa è necessario per avviare il tuo progetto con AEM headless.
+In questa sezione del [Percorso di sviluppatori headless AEM](overview.md), scopri cosa è necessario per avviare il tuo progetto con AEM headless.
 
 ## Percorso affrontato finora {#story-so-far}
 
@@ -65,7 +65,7 @@ Al livello più semplice, la creazione di esperienze digitali in AEM richiede i 
 1. Quando il contenuto è pronto, viene replicato nell’istanza di pubblicazione.
 1. È possibile, quindi, richiamare le API per recuperare questo contenuto.
 
-AEM headless sviluppa questa base tecnica offrendo strumenti potenti per gestire contenuti headless che saranno [descritti nella sezione successiva.](#aem-headless-basics)
+AEM Headless si basa su questa base tecnica offrendo potenti strumenti per gestire contenuti headless, come [descritto nella sezione successiva](#aem-headless-basics).
 
 ## Nozioni di base su AEM headless {#aem-headless-basics}
 
@@ -195,7 +195,7 @@ La gerarchia delle cartelle può affrontare due problemi principali relativi all
 * [Traduzione](#translation): AEM gestisce la traduzione dei contenuti mantenendone delle copie in cartelle specifiche delle impostazioni locali.
 * Organizzazione: le cartelle vengono utilizzate per definire una gerarchia di contenuti necessaria per supportare le esigenze di traduzione e per gestire in modo logico i frammenti di contenuto.
 
-AEM consente una struttura dei contenuti flessibile e una gerarchia può essere arbitrariamente grande. Tuttavia è importante rendersi conto che eventuali modifiche nella struttura delle cartelle possono avere conseguenze indesiderate per le query esistenti che [si basano sul percorso del contenuto.](#developer) Pertanto, una gerarchia ben definita, chiaramente impostata in anticipo, può essere utile per gli autori dei contenuti.
+AEM consente una struttura dei contenuti flessibile e una gerarchia può essere arbitrariamente grande. È tuttavia importante comprendere che eventuali modifiche nella struttura delle cartelle possono avere conseguenze indesiderate per le query esistenti che [utilizzano il percorso del contenuto](#developer). Pertanto, una gerarchia ben definita, chiaramente definita in anticipo, può essere utile per gli autori di contenuti.
 
 Le cartelle possono anche essere limitate per consentire solo alcuni tipi di contenuto (in base ai Modelli per frammenti di contenuto). Si consiglia di specificare sempre in modo esplicito quali modelli sono consentiti per tutte le cartelle nella gerarchia. Specifica del contenuto consentito per una determinata cartella:
 
@@ -241,7 +241,7 @@ Gli sviluppatori devono tenere presenti alcuni consigli di base durante la piani
 * Per ottenere le migliori prestazioni delle query, utilizza sempre query persistenti in AEM. Queste sono trattate più avanti nel percorso.
 * GraphQL è dichiarativo secondo il motto “Chiedi esattamente ciò di cui hai bisogno, e ottieni esattamente quello.” Ciò significa che, durante la creazione di query GraphQL, devi evitare sempre query di tipo `select *` che è possibile creare in un database relazionale.
 
-Per una [tipica implementazione headless con l’utilizzo di AEM,](#level-1) lo sviluppatore non deve necessariamente conoscere la codifica di AEM.
+Per un&#39;implementazione [tipica headless tramite AEM](#level-1), lo sviluppatore non richiede alcuna conoscenza di codice dell&#39;AEM.
 
 ### Requisiti di prestazioni {#performance-requirements}
 
@@ -280,7 +280,7 @@ Continua il tuo percorso AEM headless rivedendo il documento successivo [Percors
 
 ## Risorse aggiuntive {#additional-resources}
 
-Mentre si raccomanda di spostarsi nella parte successiva del percorso per lo sviluppo headless esaminando il documento [Percorso per la prima esperienza con AEM Headless,](path-to-first-experience.md) di seguito si trovano alcune risorse aggiuntive e facoltative per approfondire alcuni concetti menzionati in questo documento, ma non sono richieste per continuare il percorso headless.
+Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless esaminando il documento [Percorso della tua prima esperienza con AEM headless](path-to-first-experience.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
 
 * [Percorso di traduzione AEM headless](/help/journey-headless/translation/overview.md) - Questo percorso di documentazione ti consente di comprendere meglio la tecnologia headless, come AEM gestisce i contenuti headless e come tu puoi tradurli.
 * [Introduzione all’Architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Comprendere la struttura di AEM as a Cloud Service

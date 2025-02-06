@@ -5,10 +5,10 @@ exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 43%
+ht-degree: 47%
 
 ---
 
@@ -18,7 +18,7 @@ Spesso durante l’authoring è necessario selezionare un’altra risorsa, ad es
 
 ## Campi percorso   {#path-fields}
 
-L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull&#39;utilizzo e la modifica dei componenti, vedere [Componenti per l&#39;authoring delle pagine.](/help/sites-cloud/authoring/page-editor/components.md)
+L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull’utilizzo e la modifica dei componenti, consulta [Componenti per l’authoring delle pagine](/help/sites-cloud/authoring/page-editor/components.md).
 
 I campi percorso dispongono di funzionalità di completamento automatico e di look-ahead per facilitare l’individuazione di una risorsa.
 
@@ -32,7 +32,7 @@ Oppure puoi iniziare a digitare nel campo percorso e AEM fornirà i percorsi cor
 
 ## Browser Percorsi {#path-browser}
 
-Il browser percorsi è organizzato come la [vista a colonne](/help/sites-cloud/authoring/basic-handling.md#column-view) della console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) consentendo una selezione più dettagliata delle risorse.
+Il browser percorsi è organizzato come la [vista a colonne](/help/sites-cloud/authoring/basic-handling.md#column-view) della console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), consentendo una selezione più dettagliata delle risorse.
 
 ![Browser Percorsi](/help/sites-cloud/authoring/assets/path-browser.png)
 

@@ -4,10 +4,10 @@ description: Scopri come ripristinare il contenuto di AEM as a Cloud Service dal
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 50%
+source-wordcount: '1338'
+ht-degree: 49%
 
 ---
 
@@ -31,7 +31,7 @@ In entrambi i casi, la versione del codice personalizzato e la versione dell’A
 
 >[!TIP]
 >
->È inoltre possibile ripristinare i backup [utilizzando l’API pubblica.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+>È inoltre possibile ripristinare i backup [utilizzando l&#39;API pubblica](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
 >[!WARNING]
 >
@@ -43,10 +43,10 @@ In entrambi i casi, la versione del codice personalizzato e la versione dell’A
 
 Prima di eseguire il ripristino completo del contenuto, prendere in considerazione queste opzioni per ripristinare più facilmente il contenuto.
 
-* Se è disponibile un pacchetto per il percorso eliminato, installarlo nuovamente utilizzando [Gestione pacchetti.](/help/implementing/developing/tools/package-manager.md)
-* Se il percorso eliminato era una pagina in Sites, utilizzare la funzione [Ripristina struttura.](/help/sites-cloud/authoring/sites-console/page-versions.md)
-* Se il percorso eliminato era una cartella di risorse e i file originali sono disponibili, ricaricali tramite [la console Assets.](/help/assets/add-assets.md)
-* Se il contenuto eliminato era costituito da risorse, provare a [ripristinare le versioni precedenti delle risorse.](/help/assets/manage-digital-assets.md)
+* Se è disponibile un pacchetto per il percorso eliminato, installarlo nuovamente utilizzando [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md).
+* Se il percorso eliminato era una pagina in Sites, utilizzare la funzione [Ripristina struttura](/help/sites-cloud/authoring/sites-console/page-versions.md).
+* Se il percorso eliminato era una cartella di risorse e i file originali sono disponibili, ricaricali tramite [la console Assets](/help/assets/add-assets.md).
+* Se il contenuto eliminato era costituito da risorse, provare a [ripristinare le versioni precedenti delle risorse](/help/assets/manage-digital-assets.md).
 
 Se nessuna delle opzioni di cui sopra funziona e il contenuto del percorso eliminato è significativo, eseguire un ripristino del contenuto come descritto nelle sezioni seguenti.
 
@@ -93,7 +93,7 @@ Determina innanzitutto l’intervallo di tempo del contenuto da ripristinare. Qu
 
    ![Backup disponibili](assets/backup-available.png)
 
-1. Individuare il backup che si desidera ripristinare utilizzando l&#39;icona delle informazioni per visualizzare informazioni relative alla versione del codice e dell&#39;AEM inclusi nel backup e considerare le implicazioni di un ripristino quando [si sceglie il backup.](#choosing-the-right-backup)
+1. Trovare il backup da ripristinare utilizzando l&#39;icona delle informazioni per visualizzare le informazioni relative alla versione del codice e della release AEM incluse nel backup e considerare le implicazioni di un ripristino quando [si sceglie il backup](#choosing-the-right-backup).
 
    ![Informazioni sul backup](assets/backup-info.png)
 

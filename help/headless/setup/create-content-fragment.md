@@ -4,10 +4,10 @@ description: Scopri come utilizzare i Frammenti di contenuto AEM per progettare,
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 85%
+ht-degree: 72%
 
 ---
 
@@ -29,7 +29,7 @@ Gli autori dei contenuti creano un certo numero di Frammenti di contenuto per ra
 
 1. Accedi ad AEM as a Cloud Service e dal menu principale seleziona **Navigazione** > **Frammenti di contenuto**.
 
-1. Seleziona la cartella [ creata in precedenza.](create-assets-folder.md)
+1. Seleziona la [cartella creata in precedenza](create-assets-folder.md).
 1. Seleziona **Crea**.
 1. La creazione di un frammento di contenuto viene presentata come una finestra di dialogo.
 Seleziona la posizione e il modello da utilizzare per creare il frammento di contenuto.
@@ -49,8 +49,8 @@ I Frammenti di contenuto possono fare riferimento ad altre risorse in AEM. [Ques
 
 ## Passaggi successivi {#next-steps}
 
-Dopo aver creato un Frammento di contenuto, puoi passare alla parte finale della guida introduttiva e [creare richieste API per accedere e distribuire frammenti di contenuto.](create-api-request.md)
+Dopo aver creato un frammento di contenuto, puoi passare alla parte finale della guida introduttiva e [creare richieste API per accedere e distribuire frammenti di contenuto](create-api-request.md).
 
 >[!TIP]
 >
->Per informazioni complete sulla gestione dei Frammenti di contenuto, consulta la sezione [Documentazione sui Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md).
+>Per informazioni complete sulla gestione dei frammenti di contenuto, consulta la [documentazione sui frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md).
