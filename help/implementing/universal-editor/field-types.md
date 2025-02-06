@@ -4,9 +4,9 @@ description: Scopri i campi e i tipi di componenti che l’Editor universale pu�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1353'
 ht-degree: 13%
 
 ---
@@ -305,11 +305,13 @@ Un tipo di componente contenitore consente il raggruppamento di componenti. Offr
 
 #### Frammenti di contenuto {#content-fragment}
 
-Il selettore Frammento di contenuto può essere utilizzato per selezionare un [Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) e le relative varianti (se necessario). Offre una configurazione e una convalida aggiuntive.
+Il selettore Frammento di contenuto può essere utilizzato per selezionare un [Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) e le relative varianti (se necessario). Offre una configurazione aggiuntiva.
 
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
 | `variationName` | `string` | Nome della variabile per memorizzare la variante selezionata. Se non è definito, non viene visualizzato alcun selettore varianti | No |
+
+Offre inoltre un tipo di convalida aggiuntivo.
 
 | Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
@@ -444,11 +446,13 @@ Offre inoltre un tipo di convalida aggiuntivo.
 
 #### Frammento di esperienza {#experience-fragment}
 
-Il selettore Frammento esperienza può essere utilizzato per selezionare un [Frammento esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md) e le relative varianti (se necessario). Offre una configurazione e una convalida aggiuntive.
+Il selettore Frammento esperienza può essere utilizzato per selezionare un [Frammento esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md) e le relative varianti (se necessario). Offre una configurazione aggiuntiva.
 
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
 | `variationName` | `string` | Nome della variabile per memorizzare la variante selezionata. Se non è definito, non viene visualizzato alcun selettore varianti | No |
+
+Offre inoltre un tipo di convalida aggiuntivo.
 
 | Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
