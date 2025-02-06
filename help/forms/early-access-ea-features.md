@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
+source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '2056'
 ht-degree: 26%
 
 ---
@@ -111,7 +111,19 @@ Pronto per iniziare? I seguenti articoli forniscono istruzioni dettagliate per u
 
 ### Modelli e-mail per HTML in Forms adattivo
 
-Forms adattivo consente di utilizzare i modelli e-mail di HTML. I modelli e-mail di HTML consentono di inviare e-mail avanzate, personalizzate e visivamente accattivanti quando viene inviato un modulo. Queste e-mail possono essere personalizzate con i dati del modulo e migliorate utilizzando vari tag e-mail, come immagini e collegamenti. Con Adaptive Forms, puoi caricare un file contenente un modello di HTML o utilizzare un editor di testo normale per creare questi modelli.
+
+Forms adattivo consente di utilizzare [modelli e-mail di HTML](/help/forms/html-email-templates-in-adaptive-forms.md). I modelli e-mail di HTML consentono di inviare e-mail avanzate, personalizzate e visivamente accattivanti quando viene inviato un modulo. Queste e-mail possono essere personalizzate con i dati del modulo e migliorate utilizzando vari tag e-mail, come immagini e collegamenti. Con Adaptive Forms, puoi caricare un file contenente un modello di HTML o utilizzare un editor di testo normale per creare questi modelli.
+
+![Modelli e-mail HTML](/help/forms/assets/html-email.png)
+
+### Azione invio servizi Web RESTful
+
+Forms adattivo ora può inviare facilmente i dati acquisiti agli endpoint REST esterni autenticati con la nuova azione di invio dei servizi web RESTful:
+
+* Standard supportati: Swagger 2.0 e 3.0 per una facile integrazione API
+* Autenticazione sicura: OAuth 2.0, autenticazione di base, chiave API e autenticazione personalizzata
+* Formati di dati flessibili: dati modulo in più parti, JSON e codifica URL (coppie chiave-valore)
+
 
 
 ### Supporto lingue da destra a sinistra (RTL)
