@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
+source-git-commit: 636183e0597bed24b3e437ed53a35c9e64ac0504
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '950'
 ht-degree: 21%
 
 ---
@@ -56,6 +56,11 @@ Con la versione di attivazione funzioni 2025.2.0 verrà fornito il set di funzio
 
 ### Problemi risolti {#fixed-issues-19352}
 
+* CQ-4356756: non tradurre il supporto per le risorse correlate.
+* CQ-4358206: Il modulo di pianificazione della traduzione di ripetizione non funziona per i progetti di traduzione.
+* CQ-4358126: impossibile selezionare la sottocartella di configurazione nel servizio cloud di traduzione.
+* FORMS-18098, FORMS-17954: impossibile caricare Forms adattivo in modalità Internet Explorer nel browser Microsoft Edge.
+* FORMS-17162: la pubblicazione di una risorsa comporta l’esecuzione di query OOTB che riducono le prestazioni di pubblicazione.
 * SITES-28415: Edge Delivery con Universal Editor: Correggi pulsante Apri proprietà per fogli di calcolo.
 * SITES-26669: Edge Delivery con Universal Editor: Correggi i problemi durante il caricamento di file CSV codificati in UTF-8 con una distinta base come foglio di calcolo.
 * SITES-26543: Edge Delivery con Universal Editor: Correggi i blocchi vuoti senza che un modello riproduca un markup errato.
@@ -85,8 +90,6 @@ Con la versione di attivazione funzioni 2025.2.0 verrà fornito il set di funzio
 * SITES-26660: il confronto delle versioni dei frammenti di contenuto potrebbe essere interrotto se il @ContentType è di tipo &quot;stringa&quot;.
 * SITES-26626: CustomErrorMessage mancante nei campi numerici e booleani.
 * SITES-26268: Se durante la creazione di un frammento viene restituito un codice di stato errato, viene restituito un riferimento non valido.
-* FORMS-18098, FORMS-17954: impossibile caricare Forms adattivo in modalità Internet Explorer nel browser Microsoft Edge.
-* FORMS-17162: la pubblicazione di una risorsa comporta l’esecuzione di query OOTB che riducono le prestazioni di pubblicazione.
 
 ### Problemi noti {#known-issues-19352}
 
