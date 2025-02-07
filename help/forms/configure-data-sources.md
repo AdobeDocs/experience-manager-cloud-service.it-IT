@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '2129'
-ht-degree: 1%
+source-wordcount: '2339'
+ht-degree: 2%
 
 ---
 
@@ -123,7 +123,10 @@ Per configurare la cartella per le configurazioni del servizio cloud:
 
 ## Configurare i servizi web RESTful {#configure-restful-web-services}
 
-I servizi Web RESTful possono essere descritti utilizzando [Specifiche Swagger](https://swagger.io/specification/v2/) in formato JSON o YAML in un file di definizione [!DNL Swagger]. Per configurare il servizio Web RESTful in [!DNL Experience Manager] as a Cloud Service, verificare di disporre del file [!DNL Swagger] ([Swagger versione 2.0](https://swagger.io/specification/v2/)) o del file [!DNL Swagger] ([Swagger versione 3.0](https://swagger.io/specification/v3/)) nel file system o dell&#39;URL in cui è ospitato il file.
+I servizi Web RESTful possono essere descritti utilizzando [Specifiche Swagger](https://swagger.io/specification/v2/) in formato JSON o YAML in un file di definizione [!DNL Swagger] o un endpoint di servizio.
+
+>[!NOTE]
+> Per configurare il servizio Web RESTful in [!DNL Experience Manager] as a Cloud Service, verificare di disporre del file [!DNL Swagger] ([Swagger versione 2.0](https://swagger.io/specification/v2/)) o del file [!DNL Swagger] ([Swagger versione 3.0](https://swagger.io/specification/v3/)) nel file system o dell&#39;URL in cui è ospitato il file.
 
 ### Configurare i servizi RESTful per la specifica API Open versione 2.0 {#configure-restful-services-open-api-2.0}
 
@@ -177,6 +180,31 @@ Alcune delle operazioni non supportate dalla versione 3.0 della specifica Open A
 * Diversi corpi di richiesta per diversi tipi MIME per una singola operazione
 
 Per informazioni dettagliate, vedere la specifica [OpenAPI 3.0](https://swagger.io/specification/v3/).
+
+### Configurare i servizi RESTful tramite Service Endpoint {#configure-restful-services-service-endpoint}
+
+<span class="preview"> La funzionalità Service Endpoint si trova nel programma Early Adopter ed è applicabile solo ai Componenti core. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
+
+1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
+
+   Per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud, consulta [Configurare la cartella per le configurazioni del servizio cloud](configure-data-sources.md#cloud-folder).
+
+1. Selezionare **[!UICONTROL Crea]** per aprire la **[!UICONTROL Creazione guidata configurazione Data Source]**.
+
+1. Specifica un nome e, facoltativamente, un titolo per la configurazione. Seleziona **[!UICONTROL Servizio RESTful]** dal menu a discesa **[!UICONTROL Tipo di servizio]**. Se necessario, sfoglia e seleziona un&#39;immagine di anteprima per la configurazione, quindi seleziona **[!UICONTROL Avanti]**.
+
+1. Nella pagina successiva, seleziona **[!UICONTROL Endpoint servizio]** dal menu a discesa **[!UICONTROL Servizio RESTful]**.
+
+   ![Endpoint servizio](/help/forms/assets/select-service-endpoint.png)
+
+1. Specificare **[!UICONTROL URL endpoint servizio]**.
+
+   >[!NOTE]
+   > Per impostazione predefinita, il tipo di metodo è POST.
+1. Selezionare uno dei tipi di contenuto che si desidera scegliere dall&#39;elenco a discesa. I tipi di contenuto sono Dati modulo in più parti, JSON e codificati in URL (coppia chiave-valore).
+1. Ora puoi selezionare uno qualsiasi dei tipi di autenticazione, ad esempio OAuth 2.0, Autenticazione di base, Chiave API, Autenticazione personalizzata, dall’elenco a discesa.
+   ![Tipo di autenticazione dell&#39;endpoint del servizio](/help/forms/assets/service-endpoint-authtype.png)
+1. Fai clic su Crea.
 
 ### Configurazione del client HTTP Form Data Model (FDM) per ottimizzare le prestazioni {#fdm-http-client-configuration}
 
@@ -258,7 +286,7 @@ Impostare la proprietà `importAllowlistPattern` della configurazione **[!UICONT
 }
 ```
 
-Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando l&#39;SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza di Cloud Service.
+Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando il SDK dell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza del Cloud Service.
 
 ## Configurare i servizi OData {#config-odata}
 

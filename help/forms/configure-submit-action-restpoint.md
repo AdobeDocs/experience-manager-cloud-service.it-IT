@@ -3,13 +3,12 @@ Title: How to configure submit to Rest Endpoint submit action for an Adaptive Fo
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
 keywords: Endpoint REST di AEM Forms, invia all’endpoint REST, invia dati all’URL REST, configura azione endpoint REST
 feature: Adaptive Forms, Core Components
-exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
 title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 1%
+source-wordcount: '703'
+ht-degree: 4%
 
 ---
 
@@ -30,7 +29,7 @@ Alcuni dei vantaggi della configurazione dell&#39;azione di invio **[!UICONTROL 
 
 ## Configurare l’azione di invio Invia a endpoint REST {#steps-to-configure-submit-to-restendpoint-submit-action}
 
-Per configurare l’azione di invio:
+Per configurare l’azione di invio in base alla specifica API aperta Swagger:
 
 1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
 1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
@@ -68,6 +67,20 @@ Per configurare l’azione di invio:
    Puoi anche **[!UICONTROL abilitare la richiesta di POST]** e fornire un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso radice del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
 
 1. Fai clic su **[!UICONTROL Fine]**.
+
+### Configurare l’azione di invio in base all’endpoint del servizio REST {#config-service-endpoint-auth}
+
+<span class="preview"> La funzionalità Service Endpoint si trova nel programma Early Adopter ed è applicabile solo ai Componenti core. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
+
+1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
+1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Fare clic sulla scheda **[!UICONTROL Invio]**.
+1. Dall&#39;elenco a discesa **[!UICONTROL Invia azione]**, selezionare **[!UICONTROL Invia all&#39;endpoint REST]**.
+1. Abilita la richiesta POST.
+1. Specifica l’URL dell’endpoint REST.
+1. Selezionare la configurazione creata per il tipo di autenticazione dell&#39;endpoint REST del servizio e i tipi di contenuto. Per ulteriori informazioni sul tipo di autenticazione e sui tipi di contenuto, visita [configurare le origini dati](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
+   ![Configurazione dell&#39;endpoint REST](assets/rest-service-endpoint-config.png)
+1. Fai clic su Fine.
 
 ## Best practice
 
