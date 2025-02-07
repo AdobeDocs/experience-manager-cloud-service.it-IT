@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3d9ad70351bfdedb6d81e90d9d193fac3088a3ec
+source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 19%
+source-wordcount: '1088'
+ht-degree: 16%
 
 ---
 
@@ -20,7 +20,7 @@ Scopri gli strumenti self-service forniti da Cloud Manager per installare e gest
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Gestire i certificati SSL"
->abstract="Scopri gli strumenti self-service di Cloud Manager per l’installazione e la gestione dei certificati SSL al fine di proteggere il sito per gli utenti. Cloud Manager si avvale di un servizio di piattaforma TLS per gestire i certificati SSL e le chiavi private di proprietà dei clienti ottenuti da autorità di certificazione terze."
+>abstract="Scopri gli strumenti self-service di Cloud Manager per installare e gestire i certificati SSL al fine di proteggere il sito per gli utenti. Cloud Manager si avvale di un servizio di piattaforma TLS per gestire i certificati SSL e le chiavi private di proprietà dei clienti ottenuti da autorità di certificazione terze."
 >additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Visualizzazione, aggiornamento e sostituzione di un certificato SSL"
 >additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Controllo dello stato di un certificato SSL"
 
@@ -40,7 +40,7 @@ Cloud Manager offre strumenti self-service per installare e gestire i certificat
 
 | | Modello | Descrizione |
 | --- | --- | --- |
-| A | **[Adobe certificato SSL gestito (DV)](#adobe-managed)** | Cloud Manager consente agli utenti di configurare i certificati DV (Domain Validation) forniti da Adobe per una configurazione rapida del dominio. |
+| A | **[Certificato SSL gestito da Adobe](#adobe-managed)** | Cloud Manager consente agli utenti di configurare i certificati DV (Domain Validation) forniti da Adobe per una configurazione rapida del dominio. |
 | B | **[Certificato SSL gestito dal cliente (OV/EV)](#customer-managed)** | Cloud Manager offre un servizio di piattaforma TLS (Transport Layer Security) che consente di gestire i certificati SSL OV ed EV di tua proprietà e le chiavi private di autorità di certificazione terze, ad esempio *Crittografiamo*. |
 
 Entrambi i modelli offrono le seguenti funzionalità generali per la gestione dei certificati:
@@ -53,13 +53,13 @@ Entrambi i modelli offrono le seguenti funzionalità generali per la gestione de
 >
 >[Per aggiungere e associare un dominio personalizzato a un ambiente](/help/implementing/cloud-manager/custom-domain-names/introduction.md), è necessario disporre di un certificato SSL valido relativo al dominio.
 
-### Certificati SSL gestiti (DV) da Adobe {#adobe-managed}
+### Certificati SSL gestiti da Adobe {#adobe-managed}
 
 I certificati DV rappresentano il livello di base della certificazione SSL e vengono spesso utilizzati per scopi di test o per proteggere i siti Web con crittografia di base. I certificati DV sono disponibili sia nei [programmi di produzione che nei programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 Dopo la creazione del certificato DV, Adobe lo rinnova automaticamente ogni tre mesi, a meno che non venga eliminato.
 
-### Certificati SSL OV/EV gestiti dal cliente {#customer-managed}
+### Certificati SSL gestiti dal cliente (OV/EV) {#customer-managed}
 
 I certificati OV ed EV offrono informazioni convalidate dalla CA. Tali informazioni aiutano gli utenti a valutare se il proprietario del sito web, il mittente dell’e-mail o il firmatario digitale dei documenti di codice o PDF possa essere considerato attendibile. I certificati DV non consentono tale verifica della proprietà.
 
@@ -75,12 +75,23 @@ OV ed EV offrono inoltre queste funzioni sui certificati DV in Cloud Manager.
 
 #### Requisiti per i certificati SSL OV/EV gestiti dal cliente {#requirements}
 
-Se scegli di aggiungere un certificato OV/EV SSL gestito dal cliente, questo deve soddisfare i seguenti requisiti:
+Se scegli di aggiungere un certificato SSL personalizzato gestito dal cliente, questo deve soddisfare i seguenti requisiti aggiornati:
 
+* I certificati di convalida del dominio (DV) e i certificati autofirmati non sono supportati.
 * Il certificato deve essere conforme ai criteri OV (convalida organizzazione) o EV (convalida estesa).
-   * Cloud Manager non supporta l&#39;aggiunta di certificati DV (Domain Validation) personalizzati.
-* I certificati autofirmati non sono supportati.
-* Qualsiasi certificato deve essere un certificato TLS X.509 di un’autorità di certificazione attendibile con una chiave privata RSA a 2048 bit corrispondente.
+* Il certificato deve essere un certificato TLS X.509 rilasciato da un’autorità di certificazione (CA) attendibile.
+* I tipi di chiave di crittografia supportati sono i seguenti:
+
+   * Supporto standard RSA a 2048 bit.
+Le chiavi RSA di dimensioni superiori a 2048 bit (come le chiavi RSA a 3072 bit o a 4096 bit) non sono attualmente supportate.
+   * Chiavi di curva ellittica (EC) `prime256v1` (`secp256r1`) e `secp384r1`
+   * Certificati ECDSA (Elliptic Curve Digital Signature Algorithm). Tali certificati sono consigliati in Adobe rispetto a RSA per migliorare le prestazioni, la sicurezza e l&#39;efficienza.
+
+* I certificati devono essere formattati correttamente per superare la convalida. Le chiavi private devono essere nel formato `PKCS#8`.
+
+>[!NOTE]
+>Se l&#39;organizzazione richiede la conformità utilizzando chiavi RSA a 3072 bit, l&#39;alternativa consigliata dall&#39;Adobe è l&#39;utilizzo di certificati ECDSA (`secp256r1` o `secp384r1`).
+
 
 #### Best practice per la gestione dei certificati
 
