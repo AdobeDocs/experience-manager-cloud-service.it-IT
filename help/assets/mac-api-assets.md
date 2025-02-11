@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 4cec40947f1b50dd627321cabfbe43033a224f8b
+source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1693'
 ht-degree: 6%
 
 ---
 
-# API HTTP [!DNL Adobe Experience Manager Assets] {#assets-http-api}
+# Gestire le risorse digitali con l&#39;API HTTP [!DNL Adobe Experience Manager Assets]{#assets-http-api}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | Versione | Collegamento articolo |
@@ -24,7 +24,7 @@ ht-degree: 6%
 
 ## Panoramica {#overview}
 
-L&#39;API HTTP [!DNL Assets] consente operazioni di creazione-lettura-aggiornamento-eliminazione (CRUD) sulle risorse digitali, inclusi i metadati, sulle rappresentazioni e sui commenti, insieme a contenuti strutturati che utilizzano [!DNL Experience Manager] frammenti di contenuto. È esposto in `/api/assets` ed è implementato come API REST. Include [supporto per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md).
+L&#39;API HTTP [!DNL Assets] dell&#39;AEM abilita le operazioni CRUD (create, read, update, delete) sulle risorse digitali tramite un&#39;interfaccia REST in /`api/assets`. Queste operazioni si applicano ai metadati delle risorse, alle rappresentazioni e ai commenti. Include [supporto per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ La risposta API è un file JSON per alcuni tipi MIME e un codice di risposta per
 
 ## Frammenti di contenuto {#content-fragments}
 
-Un [frammento di contenuto](/help/assets/content-fragments/content-fragments.md) è un tipo speciale di risorsa. Può essere utilizzato per accedere a dati strutturati, ad esempio testi, numeri, date e così via. Poiché esistono diverse differenze per `standard` risorse (come immagini o documenti), alcune regole aggiuntive si applicano alla gestione dei frammenti di contenuto.
+Un [frammento di contenuto](/help/assets/content-fragments/content-fragments.md) è una risorsa strutturata in cui sono memorizzati testo, numeri e date. Poiché esistono diverse differenze per `standard` risorse (come immagini o documenti), alcune regole aggiuntive si applicano alla gestione dei frammenti di contenuto.
 
 Per ulteriori informazioni, vedere il supporto per [Frammenti di contenuto nell&#39; [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -55,7 +55,7 @@ Per ulteriori informazioni, vedere il supporto per [Frammenti di contenuto nell&
 
 ## Modello dati {#data-model}
 
-L&#39;API HTTP [!DNL Assets] espone due elementi principali, cartelle e risorse (per le risorse standard). Inoltre, espone elementi più dettagliati per i modelli di dati personalizzati che descrivono i contenuti strutturati nei frammenti di contenuto. Per ulteriori informazioni, consulta [Modelli dati per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
+L&#39;API HTTP [!DNL Assets] espone principalmente due elementi: cartelle e risorse standard. Inoltre, fornisce elementi dettagliati per i modelli di dati personalizzati utilizzati nei frammenti di contenuto. Per ulteriori dettagli, consulta Modelli di dati per frammenti di contenuto. Per ulteriori informazioni, consulta [Modelli dati per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
 
 >[!NOTE]
 >
@@ -63,14 +63,14 @@ L&#39;API HTTP [!DNL Assets] espone due elementi principali, cartelle e risorse 
 
 ### Cartelle {#folders}
 
-Le cartelle sono simili alle directory dei file system tradizionali. La cartella può contenere solo risorse, solo cartelle o cartelle e risorse. Le cartelle hanno i seguenti componenti:
+Le cartelle sono simili alle directory dei file system tradizionali. Le cartelle possono contenere risorse, sottocartelle o entrambe. Le cartelle hanno i seguenti componenti:
 
 **Entità**: le entità di una cartella sono i relativi elementi secondari, che possono essere cartelle e risorse.
 
 **Proprietà**:
 
-* `name` è il nome della cartella. È lo stesso dell’ultimo segmento nel percorso URL senza estensione.
-* `title` è un titolo facoltativo della cartella che può essere visualizzato al posto del nome.
+* `name`: nome della cartella (l&#39;ultimo segmento del percorso URL, senza estensione).
+* `title`: viene visualizzato un titolo facoltativo al posto del nome della cartella.
 
 >[!NOTE]
 >
@@ -78,18 +78,18 @@ Le cartelle sono simili alle directory dei file system tradizionali. La cartella
 
 **I collegamenti** nelle cartelle espongono tre collegamenti:
 
-* `self`: collegamento a se stesso.
+* `self`: collegamento alla cartella stessa.
 * `parent`: collegamento alla cartella principale.
-* `thumbnail`: (facoltativo) collegamento a un&#39;immagine di miniatura della cartella.
+* `thumbnail` (facoltativo): collegamento a un&#39;immagine di miniatura della cartella.
 
 ### Risorse {#assets}
 
 In [!DNL Experience Manager] una risorsa contiene i seguenti elementi:
 
-* Proprietà e metadati della risorsa.
-* File binario della risorsa caricato originariamente.
-* Più rappresentazioni configurate. Possono essere immagini di diverse dimensioni, video di diverse codifiche o pagine estratte da file PDF o [!DNL Adobe InDesign].
-* Commenti facoltativi.
+* **Proprietà e metadati:** Informazioni descrittive sulla risorsa.
+* **File binario:** Il file caricato originariamente.
+* **Rappresentazioni:** più rappresentazioni configurate (ad esempio immagini di varie dimensioni, diverse codifiche video o pagine estratte da file PDF/Adobe InDesign).
+* **Commenti (facoltativo):** osservazioni fornite dall&#39;utente.
 
 Per informazioni sugli elementi nei frammenti di contenuto, vedere [Supporto dei frammenti di contenuto nell&#39;API HTTP Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -173,7 +173,7 @@ Una chiamata API non riesce con un codice di risposta `500` se il nodo principal
 
 ## Creare una risorsa {#create-an-asset}
 
-Consulta [caricamento risorse](developer-reference-material-apis.md) per informazioni su come creare una risorsa. Non è possibile creare una risorsa utilizzando l’API HTTP.
+La creazione di risorse non è supportata tramite questa API HTTP. Per creare le risorse, utilizza l&#39;API [caricamento risorse](developer-reference-material-apis.md).
 
 ## Aggiornare un binario di risorse {#update-asset-binary}
 
@@ -181,7 +181,7 @@ Consulta [caricamento risorse](developer-reference-material-apis.md) per informa
 
 ## Aggiornare i metadati di una risorsa {#update-asset-metadata}
 
-Aggiorna le proprietà dei metadati della risorsa. Se si aggiorna una proprietà nello spazio dei nomi `dc:`, l&#39;API aggiorna la stessa proprietà nello spazio dei nomi `jcr`. L’API non sincronizza le proprietà nei due spazi dei nomi.
+Questa operazione aggiorna i metadati della risorsa. Quando si aggiornano le proprietà nello spazio dei nomi `dc:`, viene aggiornata la proprietà `jcr:` corrispondente. Tuttavia, l’API non sincronizza le proprietà sotto i due spazi dei nomi.
 
 **Richiesta**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
@@ -196,7 +196,10 @@ Aggiorna le proprietà dei metadati della risorsa. Se si aggiorna una proprietà
 
 Crea una rappresentazione per una risorsa. Se non viene fornito il nome del parametro della richiesta, il nome del file viene utilizzato come nome della rappresentazione.
 
-**Parametri**: i parametri sono `name` per il nome della rappresentazione e `file` come riferimento di file.
+**Parametri**: i parametri sono:
+
+`name`: per il nome della rappresentazione.
+`file`: file binario per la copia trasformata come riferimento.
 
 **Richiesta**
 
@@ -292,9 +295,9 @@ Elimina una risorsa (-tree) nel percorso specificato.
 
 ## Suggerimenti, best practice e limitazioni {#tips-limitations}
 
-* Dopo l&#39;[!UICONTROL Ora di disattivazione], una risorsa e le relative rappresentazioni non sono disponibili tramite l&#39;interfaccia Web [!DNL Assets] e tramite l&#39;API HTTP. L&#39;API restituisce il messaggio di errore 404 se [!UICONTROL Ora di attivazione] è nel futuro o [!UICONTROL Ora di disattivazione] è nel passato.
+* Assets e le relative copie trasformate non sono più disponibili tramite l&#39;interfaccia Web [!DNL Assets] e l&#39;API HTTP quando viene raggiunta l&#39;[!UICONTROL Ora di disattivazione]. L&#39;API restituisce un errore 404 se [!UICONTROL Ora di attivazione] è nel futuro o [!UICONTROL Ora di disattivazione] è nel passato.
 
-* L’API HTTP di Assets non restituisce i metadati completi. Gli spazi dei nomi sono hardcoded e vengono restituiti solo tali spazi dei nomi. Per i metadati completi, vedere il percorso della risorsa `/jcr_content/metadata.json`.
+* L’API HTTP di Assets restituisce solo un sottoinsieme di metadati. Gli spazi dei nomi sono hardcoded e vengono restituiti solo tali spazi dei nomi. Per i metadati completi, vedere il percorso della risorsa `/jcr_content/metadata.json`.
 
 * Alcune proprietà della cartella o della risorsa sono mappate a un prefisso diverso quando vengono aggiornate utilizzando le API. Il prefisso `jcr` di `jcr:title`, `jcr:description` e `jcr:language` viene sostituito con il prefisso `dc`. Pertanto, nel JSON restituito, `dc:title` e `dc:description` contengono rispettivamente i valori di `jcr:title` e `jcr:description`.
 

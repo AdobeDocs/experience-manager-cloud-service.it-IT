@@ -5,16 +5,28 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 3%
+source-wordcount: '1377'
+ht-degree: 2%
 
 ---
 
+
 # Configurazione del contenitore di layout e della modalità di layout {#configuring-layout-container-and-layout-mode}
 
-[Layout reattivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) è un meccanismo per la realizzazione di [design responsive](https://en.wikipedia.org/wiki/Responsive_web_design). Questo consente all’autore di contenuto di creare pagine web con un layout e dimensioni che dipendono dai dispositivi utilizzati dagli utenti.
+Scopri come configurare il contenitore di layout e la modalità di layout per abilitare i layout reattivi per gli autori di contenuti.
+
+>[!TIP]
+>
+>Questo documento descrive come un amministratore del sito può configurare il contenitore di layout per supportare la progettazione web responsive. Sono disponibili risorse aggiuntive:
+>
+>* Per gli autori di contenuto, i dettagli sull&#39;utilizzo delle funzionalità di progettazione reattiva in una pagina di contenuto sono disponibili nel documento [Layout reattivo.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+>* Per gli sviluppatori, i dettagli del Contenitore di layout e della griglia reattiva sono descritti nel documento [Progettazione reattiva,](/help/implementing/developing/introduction/responsive-design.md) che fornisce suggerimenti e suggerimenti per l&#39;utilizzo dei contenitori di layout e della griglia reattiva durante la progettazione del sito.
+
+## Panoramica {#overview}
+
+Il layout reattivo è un meccanismo per la realizzazione di [responsive web design](https://en.wikipedia.org/wiki/Responsive_web_design). Questo consente all’autore di contenuto di creare pagine web con un layout e dimensioni che dipendono dai dispositivi utilizzati dagli utenti.
 
 AEM consente di realizzare il layout dinamico per le pagine utilizzando una combinazione di meccanismi:
 
@@ -229,3 +241,9 @@ Per consentire agli autori di aggiungere ulteriori griglie reattive alle pagine 
 ### Configurare la griglia del contenitore di layout {#configure-the-grid-of-the-layout-container}
 
 Puoi configurare il numero di colonne disponibili per ogni istanza specifica del contenitore di layout [modificando i modelli di pagina](/help/sites-cloud/authoring/page-editor/templates.md).
+
+### Griglie reattive nidificate {#nested-responsive-grids}
+
+La best practice consigliata da Adobe è mantenere la struttura il più piatto possibile.
+
+Se non puoi evitare di utilizzare le griglie reattive nidificate, consulta il documento per sviluppatori [Progettazione reattiva.](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids)
