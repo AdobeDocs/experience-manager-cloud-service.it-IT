@@ -656,7 +656,7 @@ ht-degree: 99%
       + [Gestire i rapporti](/help/assets/manage-reports-assets-view.md)
       + [Rielaborazione](/help/assets/reprocessing-assets-view.md)
       + [Gestire i tag](/help/assets/tagging-management-assets-view.md)
-      + [Credenziali del contenuto](/help/assets/content-credentials.md)
+      + [Content Credentials](/help/assets/content-credentials.md)
       + [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
       + [Estensibilità dell’interfaccia utente della vista di AEM Assets](/help/assets/aem-assets-view-ui-extensibility.md)
    + Content Hub {#content-hub}
@@ -708,7 +708,7 @@ ht-degree: 99%
       + [Migrare da [!DNL AEM 6.5 Forms] o precedenti verso [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppi e autorizzazioni](/help/forms/forms-groups-privileges-tasks.md)
       + [Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse](/help/forms/import-export-forms-templates.md)
-      + [Publish Adaptive Forms tramite Gestisci pubblicazione](/help/forms/manage-publication.md)
+      + [Pubblicare Forms adattivo tramite Gestisci pubblicazione](/help/forms/manage-publication.md)
    + Guida introduttiva {#getting-started-forms}
       + [Caso d’uso e configurazione di un ambiente di sviluppo](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Creare il modulo di richiesta del prestito](/help/forms/create-adaptive-form-tutorial.md)

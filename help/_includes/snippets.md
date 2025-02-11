@@ -237,7 +237,7 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 
 >[!IMPORTANT]
 >
->L&#39;editor SPA [ è stato dichiarato obsoleto](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) per i nuovi progetti. Resta supportato da Adobe per i progetti esistenti, ma non dovrebbe essere utilizzato per i nuovi progetti. Gli editor preferiti per la gestione dei contenuti headless in AEM sono ora:
+>L&#39;editor SPA [ è stato dichiarato obsoleto](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) per i nuovi progetti. Rimane supportato da Adobe per i progetti esistenti, ma non deve essere utilizzato per i nuovi progetti. Gli editor preferiti per la gestione dei contenuti headless in AEM sono ora:
 >
 >* [Editor universale](/help/edge/wysiwyg-authoring/authoring.md) per la modifica visiva di contenuti headless.
 >* [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica di contenuti headless basata su modulo.

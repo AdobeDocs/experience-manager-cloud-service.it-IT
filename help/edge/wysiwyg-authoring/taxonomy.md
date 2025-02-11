@@ -82,7 +82,7 @@ AEM aggiorna automaticamente il contenuto della pagina della tassonomia quando s
 
 ## Aggiornare paths.json per la pubblicazione della tassonomia {#paths-json}
 
-Come quando [gestisci e pubblichi dati tabulari per il sito Edge Delivery Services](/help/edge/wysiwyg-authoring/tabular-data.md), devi aggiornare il file `paths.json` del progetto per consentire la pubblicazione dei dati della tassonomia.
+Come quando [gestisci e pubblichi dati tabulari per il tuo sito Edge Delivery Services](/help/edge/wysiwyg-authoring/tabular-data.md), devi aggiornare il file `paths.json` del progetto per consentire la pubblicazione dei dati della tassonomia.
 
 1. Apri la directory principale del progetto in GitHub.
 
@@ -118,7 +118,7 @@ Questo processo deve essere eseguito una sola volta per pagina di tassonomia. Al
 
 Una tassonomia non è disponibile per l’editor universale o per i tuoi utenti fino a quando non viene pubblicata.
 
-Le pagine della tassonomia vengono pubblicate come qualsiasi altra pagina da [utilizzando le icone **Publish rapido** o **Gestisci pubblicazione** nella barra degli strumenti](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
+Le pagine della tassonomia vengono pubblicate come qualsiasi altra pagina da [utilizzando le icone **Pubblicazione rapida** o **Gestisci pubblicazione** nella barra degli strumenti](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 È necessario ripubblicare la pagina di tassonomia ogni volta che:
 
@@ -177,7 +177,7 @@ Per impostazione predefinita, la tassonomia conterrà `tag` e `title` valori com
 1. Nella sezione **Proprietà aggiuntive**, tocca o fai clic su **Aggiungi** per aggiungere un campo.
 1. Nel nuovo campo, inserisci il nome della proprietà JRC da esporre. In questo caso, immettere `jcr:description` per la descrizione del tag.
 1. Tocca o fai clic su **Salva e chiudi**.
-1. Con la tassonomia ancora selezionata, tocca o fai clic su **Publish rapido** nella barra degli strumenti.
+1. Con la tassonomia ancora selezionata, tocca o fai clic su **Pubblicazione rapida** nella barra degli strumenti.
 
 Ora [quando accedi alla tassonomia](#accessing), la descrizione del tag (o qualsiasi proprietà scelta per esporre) è inclusa nel JSON.
 
