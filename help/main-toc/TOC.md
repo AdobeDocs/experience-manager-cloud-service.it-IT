@@ -708,7 +708,7 @@ ht-degree: 99%
       + [Migrare da [!DNL AEM 6.5 Forms] o precedenti verso [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppi e autorizzazioni](/help/forms/forms-groups-privileges-tasks.md)
       + [Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse](/help/forms/import-export-forms-templates.md)
-      + [Pubblicare Forms adattivo tramite Gestisci pubblicazione](/help/forms/manage-publication.md)
+      + [Pubblicare moduli adattivi tramite Gestisci pubblicazione](/help/forms/manage-publication.md)
    + Guida introduttiva {#getting-started-forms}
       + [Caso d’uso e configurazione di un ambiente di sviluppo](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Creare il modulo di richiesta del prestito](/help/forms/create-adaptive-form-tutorial.md)
@@ -1028,7 +1028,7 @@ ht-degree: 99%
       + WYSIWYG {#universal-editor}
          + [Panoramica: editor universale per Edge Delivery Services per Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Guida introduttiva](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Aggiungi regole all&#39;editor di regole](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Aggiungere regole utilizzando l’editor di regole](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + Funzionalità {#advanced-features-edge-delivery-services-forms}
          + [Utilizzare i frammenti del modulo](/help/edge/docs/forms/form-fragments.md)
          + [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
@@ -1202,9 +1202,9 @@ ht-degree: 99%
          + [Aggiungere un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Risolvere i problemi relativi agli errori dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [Gestire i certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Mappature dominio {#cdn-configurations}
+      + Mappature dei domini {#cdn-configurations}
          + [Aggiungere una configurazione CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [Gestire le mappature del dominio](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+         + [Gestire le mappature dei domini](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + Elenchi indirizzi IP consentiti {#ip-allow-lists}
          + [Introduzione agli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Aggiungere un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

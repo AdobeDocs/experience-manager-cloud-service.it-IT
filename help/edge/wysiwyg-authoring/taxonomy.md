@@ -7,7 +7,7 @@ exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 65%
+ht-degree: 75%
 
 ---
 
@@ -78,7 +78,7 @@ Inizia a modificare una pagina di tassonomia come qualsiasi altra pagina in AEM.
 
 La pagina visualizzata nell’Editor pagina è in modalità di sola lettura perché il contenuto della tassonomia viene generato automaticamente dai tag e dagli spazi dei nomi selezionati. Questi fungono da filtro per generare automaticamente il contenuto della tassonomia. Pertanto, non vi è alcun motivo di modificare direttamente la pagina nell’editor.
 
-AEM aggiorna automaticamente il contenuto della pagina della tassonomia quando si aggiornano i tag e gli spazi dei nomi sottostanti. Tuttavia, è necessario [ripubblicare la tassonomia](#publishing) dopo qualsiasi modifica per rendere tali modifiche disponibili agli utenti.
+AEM aggiorna automaticamente il contenuto della pagina della tassonomia quando si aggiornano i tag e gli spazi dei nomi sottostanti. Tuttavia, è necessario [ripubblicare la tassonomia](#publishing) dopo eventuali modifiche per renderle disponibili agli utenti.
 
 ## Aggiornare paths.json per la pubblicazione della tassonomia {#paths-json}
 
@@ -173,9 +173,9 @@ Questi dati JSON verranno aggiornati automaticamente durante l’aggiornamento d
 Per impostazione predefinita, la tassonomia conterrà `tag` e `title` valori come visualizzati [nell&#39;esempio precedente](#accessing). Puoi configurare la tassonomia per esporre proprietà tag aggiuntive. In questo esempio verrà esposta la descrizione del tag.
 
 1. Utilizza la console Sites per selezionare la tassonomia creata.
-1. Tocca o fai clic sull&#39;icona **Proprietà** nella barra degli strumenti.
+1. Tocca o fai clic sull’icona **Proprietà** nella barra degli strumenti.
 1. Nella sezione **Proprietà aggiuntive**, tocca o fai clic su **Aggiungi** per aggiungere un campo.
-1. Nel nuovo campo, inserisci il nome della proprietà JRC da esporre. In questo caso, immettere `jcr:description` per la descrizione del tag.
+1. Nel nuovo campo, inserisci il nome della proprietà JRC da esporre. In questo caso, immetti `jcr:description` per la descrizione del tag.
 1. Tocca o fai clic su **Salva e chiudi**.
 1. Con la tassonomia ancora selezionata, tocca o fai clic su **Pubblicazione rapida** nella barra degli strumenti.
 
