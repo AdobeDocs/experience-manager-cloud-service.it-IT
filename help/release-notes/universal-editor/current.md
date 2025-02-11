@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '236'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -31,6 +31,6 @@ Queste sono le note sulla versione del 16 gennaio 2025 dell’editor universale.
 
 ## Altri miglioramenti {#other-improvements}
 
-* **Sono stati corretti URL non validi negli elementi recenti nella pagina di destinazione**. È stato risolto un problema a causa del quale gli URL visualizzati nell&#39;elenco &quot;Recenti&quot; nella pagina di destinazione dell&#39;editor universale risultavano danneggiati.
+* **Sono stati corretti URL non validi negli elementi recenti nella pagina di destinazione**: è stato risolto un problema a causa del quale gli URL visualizzati nell’elenco “Recenti” nella pagina di destinazione dell’editor universale risultavano danneggiati.
 * **Sincronizzazione tema in Unified Shell**. L’editor universale sincronizza ora in modo dinamico il tema con le impostazioni di Unified Shell del sistema e regola automaticamente tra le modalità chiara e scura.
    * Ciò assicura un aspetto visivo coerente tra i micro front-end, inclusi i selettori di frammenti e risorse.
