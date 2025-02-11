@@ -1,25 +1,25 @@
 ---
-title: Guida introduttiva di Edge Delivery Services per AEM Forms in Universal Editor - Tutorial per sviluppatori
-description: Questo tutorial ti mostrerà come essere subito operativo con un nuovo progetto di Adobe Experience Manager Forms (AEM). Tra dieci o venti minuti, avrai creato il tuo Edge Delivery Services Forms in Universal Editor.
+title: 'Guida introduttiva a Edge Delivery Services per AEM Forms nell’editor universale: tutorial per sviluppatori'
+description: Questo tutorial ti mostrerà come iniziare subito con un nuovo progetto Adobe Experience Manager Forms (AEM). Tra dieci o venti minuti, avrai creato i tuoi moduli di Edge Delivery Services nell’editor universale.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 0410e1d16ad26d3169c01cca3ad9040e3c4bfc9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1623'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
-# Guida introduttiva di Edge Delivery Services per AEM Forms con Universal Editor (WYSIWYG)
+# Guida introduttiva a Edge Delivery Services per AEM Forms utilizzando l’editor universale (WYSIWYG)
 
-Nell’era digitale di oggi, i moduli di facile utilizzo sono essenziali per tutte le organizzazioni. I Forms di Edge Delivery Services vengono creati utilizzando l’Editor universale, che offre funzionalità WYSIWYG (what-you-see-is-what-you-get). Fornisce un’interfaccia moderna e intuitiva per un’authoring efficiente dei moduli.
+Nell’era digitale di oggi, i moduli facili da usare sono essenziali per qualsiasi organizzazione. I moduli di Edge Delivery Services vengono creati utilizzando l’Editor universale, che offre funzionalità WYSIWYG (what-you-see-is-what-you-get). Fornisce un’interfaccia moderna e intuitiva per l’authoring efficiente dei moduli.
 
-AEM Forms fornisce un blocco, noto come blocco di Forms adattivo, per facilitare la creazione di Edge Delivery Services Forms per l’acquisizione e l’archiviazione dei dati. È possibile [creare un nuovo progetto AEM preconfigurato con il blocco Forms adattivo](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) o [aggiungere il blocco Forms adattivo a un progetto AEM esistente](#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM Forms fornisce un blocco, noto come blocco di moduli adattivi, per facilitare la creazione di moduli di Edge Delivery Services per l’acquisizione e l’archiviazione dei dati. È possibile [creare un nuovo progetto AEM preconfigurato con Blocco moduli adattivi](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oppure [aggiungere il Blocco moduli adattivi a un progetto AEM esistente](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-Questa esercitazione consente di creare, visualizzare in anteprima e pubblicare un modulo personalizzato con un progetto di sito Adobe Experience Manager nuovo o esistente mediante l&#39;authoring WYSIWYG di Universal Editor.
+Questo tutorial ti consente di creare, visualizzare in anteprima e pubblicare un modulo personalizzato con un progetto di sito Adobe Experience Manager nuovo o esistente mediante l’authoring WYSIWYG dell’editor universale.
 
 
 ## Prerequisiti
@@ -39,23 +39,23 @@ Il modello standard di AEM Forms consente di iniziare rapidamente un progetto AE
    1. Passa a [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
       ![AEM Forms standard](/help/edge/docs/forms/assets/eds-form-boilerplate.png)
-   1. Fare clic sull&#39;opzione **Usa questo modello** e selezionare l&#39;opzione **Crea nuovo repository**.
+   1. Fai clic su **Usa questo modello** e seleziona l’opzione **Crea un nuovo archivio**.
 
-      ![Creare un nuovo archivio con AEM Forms standard](/help/edge/docs/forms/assets/use-eds-form-template.png)
+      ![Creare un nuovo archivio con il modello standard per AEM Forms](/help/edge/docs/forms/assets/use-eds-form-template.png)
 
-      Viene visualizzata la schermata **Crea nuovo repository**.
+      Viene visualizzata la schermata **Crea nuovo archivio**.
 
-   1. Nella schermata **Crea nuovo repository**, selezionare **proprietario** e specificare **nome repository**. Adobe consiglia di impostare l&#39;archivio su **Pubblico**. Quindi, seleziona l’opzione **pubblico** e fai clic su **Crea archivio**.
+   1. Nella schermata **Crea nuovo archivio**, seleziona il **proprietario** e specifica **Nome archivio**. Adobe consiglia di impostare l’archivio su **Pubblico**. Quindi, seleziona l’opzione **pubblico** e fai clic su **Crea archivio**.
 
       ![Impostare l’archivio su pubblico](/help/edge/docs/forms/assets/name-eds-repo.png)
 
 1. Installa l’app GitHub della sincronizzazione del codice AEM nell’archivio. Per installare:
    1. Passa a [https://github.com/apps/aem-code-sync/installations/new](https://github.com/apps/aem-code-sync/installations/new).
-   1. Nella schermata **Installa AEM Code Sync**, seleziona l&#39;opzione **Seleziona solo archivi** e seleziona il nuovo archivio creato. Fai clic su **Salva**.
+   1. Nella schermata **Installa sincronizzazione codice AEM**, seleziona **Seleziona solo archivi** e seleziona quello appena creato. Fai clic su **Salva**.
 
    ![Impostare l’archivio su pubblico](/help/edge/docs/forms/assets/aem-code-sync-up.png)
 
-1. Ora collega l’archivio GitHub creato con AEM Forms Boilerplate al tuo ambiente di authoring di progetti AEM. Per connettersi:
+1. Ora collega l’archivio GitHub creato utilizzando il Modello di archivio standard per AEM Forms al tuo ambiente di authoring di progetti AEM. Per connettersi:
 
    1. vai all’archivio GitHub che hai creato in precedenza utilizzando moduli AEM ricorrenti.
    1. Apri il file **fstab.yaml** per la modifica.
@@ -67,71 +67,71 @@ Il modello standard di AEM Forms consente di iniziare rapidamente un progetto AE
 
       ![modifica file fstab.yaml](/help/edge/docs/forms/assets/edit-fstab-file.png)
 
-   1. Esegui il commit del file **fstab.yaml** aggiornato, dopo aver aggiornato il riferimento e tutto sembra a posto.
+   1. Dopo aver aggiornato il riferimento e una volta che tutto sembra corretto, conferma l’aggiornamento del file **fstab.yaml**.
 
       ![conferma le modifiche](/help/edge/docs/forms/assets/commit-fstab-changes.png)
 
       Se riscontri problemi di build, consulta [Risoluzione dei problemi di build di GitHub](#troubleshooting-github-build-issues).
 
-### Crea un nuovo progetto AEM
+### Creare un nuovo progetto AEM
 
 Ora che disponi di un progetto GitHub, puoi procedere con la creazione e la pubblicazione di un nuovo progetto AEM nell’istanza di authoring di AEM as a Cloud Service.
 1. Per creare un nuovo progetto AEM:
 
-   1. Accedi all&#39;istanza di authoring di AEM as a Cloud Service e seleziona **Sites**.
+   1. Accedi all’istanza di authoring di AEM as a Cloud Service e seleziona **Sites**.
 
-      ![seleziona siti](/help/edge/assets/select-sites.png)
+      ![seleziona Sites](/help/edge/assets/select-sites.png)
 
    1. Fai clic su **Crea** > **Sito da modello**.
 
       ![create-sites](/help/edge/docs/forms/assets/create-sites.png)
 
-   1. Selezionare il modello del sito Edge Delivery Services e fare clic su **Avanti**.
+   1. Seleziona il modello Sito Edge Delivery Services e fai clic su **Avanti**.
 
       ![select-site-template](/help/edge/docs/forms/assets/select-site-template.png)
 
       >[!NOTE]
       >
-      > * Se il modello del sito Edge Delivery Services non è disponibile nell&#39;istanza di creazione, fare clic sul pulsante Importa per caricare il modello.
-      > * Puoi scaricare i modelli di sito Edge Delivery Services da [GitHub](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+      > * Se il modello Sito Edge Delivery Services non è disponibile nell’istanza di authoring, fai clic sul pulsante Importa per caricare il modello.
+      > * È possibile scaricare i modelli per siti Edge Delivery Services da [GitHub](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
    1. Immetti i seguenti dettagli per creare un nuovo progetto AEM:
       * **Titolo sito**: aggiungi un titolo descrittivo per il sito.
-      * **Titolo sito** - Utilizza `site-name` definito nel passaggio precedente.
+      * **Titolo sito**: utilizza il `site-name` che hai definito nel passaggio precedente.
       * **URL GitHub**: utilizza l’URL del progetto GitHub creato nel passaggio precedente.
 
       ![crea sito AEM](/help/edge/docs/forms/assets/create-aem-site.png)
 
-   1. Viene visualizzata la finestra di dialogo **Crea sito**. Fare clic su **OK**.
+   1. Viene visualizzata la finestra di dialogo **Crea sito**. Fai clic su **OK**.
 
       ![fai clic su ok](/help/edge/docs/forms/assets/click-ok-aem-site.png)
 
-      In pochi minuti, viene creato il nuovo progetto AEM.
+      In pochi minuti viene creato il nuovo progetto AEM.
 
-   1. Passa al nuovo progetto AEM creato nella console Sites e fai clic su **Modifica**.
+   1. Passa al progetto AEM appena creato nella console Sites e fai clic su **Modifica**.
 In questo caso, la pagina `index.html` viene utilizzata a scopo illustrativo.
 
       ![modifica sito AEM](/help/edge/docs/forms/assets/edit-site.png)
 
-      Il progetto AEM si apre nell’Editor universale in una nuova scheda, che abilita l’authoring WYSIWYG. Ora puoi modificare il tuo progetto AEM.
+      Il progetto AEM si apre nell’editor universale in una nuova scheda, che abilita l’authoring in modalità WYSIWYG. È ora possibile modificare il progetto AEM.
 
-      ![Il sito verrà aperto in Universal Editor](/help/edge/docs/forms/assets/site-in-universal-editor.png)
+      ![Il sito si apre nell’editor universale](/help/edge/docs/forms/assets/site-in-universal-editor.png)
 
 1. Pubblicare il progetto AEM creato
 
-   Una volta terminata la modifica del progetto AEM, pubblicalo. Per pubblicare:
+   Una volta terminata la modifica del progetto AEM, è il momento di pubblicarlo. Per pubblicarlo:
 
    1. Nella console Sites, seleziona tutte le pagine del progetto AEM e fai clic su **Pubblicazione rapida**.
 
-      ![pubblica progetto AEM Sites](/help/edge/docs/forms/assets/publish-sites.png)
+      ![pubblicare il progetto AEM Sites](/help/edge/docs/forms/assets/publish-sites.png)
 
-   1. Viene visualizzata la finestra di conferma **Pubblicazione rapida**. Fare clic su **Pubblica** per avviare il processo di pubblicazione.
+   1. Viene visualizzata la finestra di dialogo di conferma **Pubblicazione rapida**. Fai clic su **Pubblica** per avviare il processo di pubblicazione.
 
-      ![Finestra di conferma pubblicazione rapida](/help/edge/docs/forms/assets/quick-publish.png)
+      ![Finestra di dialogo di conferma per Pubblicazione rapida](/help/edge/docs/forms/assets/quick-publish.png)
 
-      In alternativa, è possibile pubblicare le pagine di AEM Project direttamente dall’interfaccia utente di Universal Editor.
+      In alternativa, è possibile pubblicare le pagine dei progetti AEM direttamente dall’interfaccia utente dell’editor universale.
 
-      ![Finestra di conferma pubblicazione rapida](/help/edge/docs/forms/assets/qui.png)
+      ![Finestra di dialogo di conferma per Pubblicazione rapida](/help/edge/docs/forms/assets/qui.png)
 
    Congratulazioni Hai un nuovo sito web in esecuzione su `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`.
 
@@ -140,16 +140,16 @@ In questo caso, la pagina `index.html` viene utilizzata a scopo illustrativo.
    * `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
    * `<site-name>` fa riferimento al nome del sito creato.
 
-   Ad esempio, se il nome del ramo è `main`, l&#39;archivio è `edsforms`, il proprietario è `wkndforms` e il `site-name` è `eds-forms`, il sito Web sarà operativo alle `https://main--edsforms--wkndforms.aem.page/content/eds-forms/`
+   Ad esempio, se il nome del ramo è `main`, l’archivio è `edsforms`, il proprietario è `wkndforms` e `site-name` è `eds-forms`, il sito web sarà operativo e funzionante all’indirizzo `https://main--edsforms--wkndforms.aem.page/content/eds-forms/`
 
    >[!NOTE]
    >
-   > * Per visualizzare la pagina `index.html` del progetto AEM, utilizzare l&#39;URL: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
-   > * Per visualizzare pagine diverse da `index page` del progetto AEM, utilizzare l&#39;URL: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<site-page-name>`
+   > * Per visualizzare la pagina `index.html` del progetto AEM, utilizza l’URL: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
+   > * Per visualizzare pagine diverse da `index page` del progetto AEM, utilizza l’URL: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<site-page-name>`
 
-Ora puoi iniziare a [creare e aggiungere moduli al tuo progetto AEM](#add-edge-delivery-services-forms-to-aem-project).
+Puoi iniziare a [creare e aggiungere moduli al progetto AEM](#add-edge-delivery-services-forms-to-aem-project).
 
-## Aggiungere un blocco Forms adattivo al progetto AEM esistente
+## Aggiungere un blocco per moduli adattivi al progetto AEM esistente
 
 Se disponi di un progetto AEM esistente, puoi integrare il blocco di moduli adattivi nel progetto corrente per iniziare a creare i moduli.
 
@@ -160,30 +160,30 @@ Se disponi di un progetto AEM esistente, puoi integrare il blocco di moduli adat
 
 Per integrare:
 
-1. Clona l&#39;archivio GitHub Adaptive Forms Block: [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) nel computer.
-1. All&#39;interno della cartella scaricata, trovare la cartella `blocks/form` e copiarla.
-1. Clona l’archivio GitHub di AEM Project sul computer.
-1. Passare alla cartella `blocks` nell&#39;archivio AEM Project locale e incollare la cartella del modulo copiata.
-1. Esegui il commit e invia queste modifiche all’archivio dei progetti AEM su GitHub.
+1. Clona l’archivio GitHub del blocco di moduli adattivi: [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) sul computer.
+1. All’interno della cartella scaricata, trova la cartella `blocks/form` e copiala.
+1. Clona l’archivio GitHub del progetto AEM sul computer.
+1. Passa alla cartella `blocks` nell’archivio progetti AEM locale e incolla la cartella del modulo copiata.
+1. Conferma e implementa queste modifiche al progetto AEM su GitHub.
 
-Tutto qui. Il blocco Forms adattivo ora fa parte del progetto AEM. Puoi [iniziare a creare e aggiungere moduli al progetto AEM](#add-edge-delivery-services-forms-to-aem-site-project).
+Tutto qui. Il blocco di moduli adattivi fa ora parte del progetto AEM. Puoi [iniziare a creare e aggiungere moduli al progetto AEM](#add-edge-delivery-services-forms-to-aem-site-project).
 
-## Creare AEM Forms con WYSIWYG
+## Creare AEM Forms utilizzando WYSIWYG
 
-Puoi aprire il progetto AEM nell’editor universale per la creazione di WYSIWYG, dove puoi modificare il progetto e aggiungere la sezione Moduli adattivi per includere i moduli Edge Delivery Services nelle pagine di progetto AEM.
+Puoi aprire il progetto AEM nell’editor universale per l’authoring WYSIWYG, dove puoi modificare il progetto e aggiungere la sezione Modulo adattivo per includere i moduli Edge Delivery Services nelle pagine del progetto AEM.
 
 1. Aggiungi la sezione Modulo adattivo alla pagina del progetto AEM. Per aggiungere:
-   1. Passa al progetto AEM nella console Sites e fai clic su **Modifica**. La pagina Progetto AEM viene visualizzata in Universal Editor per la modifica.
+   1. Passa al progetto AEM nella console Sites e fai clic su **Modifica**. La pagina Progetto AEM viene aperta nell’editor universale per la modifica.
 In questo caso, la pagina `index.html` viene utilizzata a scopo illustrativo.
-   1. Apri la struttura Contenuto e passa alla posizione in cui desideri aggiungere la sezione Modulo adattivo.
-   1. Fai clic sull&#39;icona **[!UICONTROL Aggiungi]** e seleziona il componente **[!UICONTROL Modulo adattivo]** dall&#39;elenco dei componenti.
+   1. Apri la Struttura contenuto e passa alla posizione in cui desideri aggiungere la sezione Modulo adattivo.
+   1. Fai clic sull’icona **[!UICONTROL Aggiungi]** e seleziona il componente **[!UICONTROL Modulo adattivo]** dall’elenco dei componenti.
 
    ![struttura contenuto](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
 
-   La sezione Modulo adattivo viene aggiunta nella posizione specificata. Ora puoi iniziare ad aggiungere i componenti del modulo alla pagina Progetto AEM.
+   La sezione Modulo adattivo viene aggiunta nella posizione specificata. È ora possibile iniziare ad aggiungere i componenti del modulo alla pagina Progetto AEM.
 
-1. Aggiungi componenti modulo alla sezione Modulo adattivo aggiunta. Per aggiungere componenti modulo:
-   1. Passa alla sezione Modulo adattivo aggiunto nella struttura Contenuto.
+1. Aggiungi componenti del modulo alla sezione Modulo adattivo aggiunta. Per aggiungere componenti del modulo:
+   1. Passa alla sezione Modulo adattivo aggiunto nella Struttura contenuto.
 
       ![blocco modulo adattivo aggiunto](/help/edge/docs/forms/assets/adative-form-block.png)
 
@@ -192,9 +192,9 @@ In questo caso, la pagina `index.html` viene utilizzata a scopo illustrativo.
 
       ![aggiungi componente](/help/edge/docs/forms/assets/add-component.png)
 
-      È inoltre possibile trascinare i componenti Forms adattivi richiesti, in quanto Universal Editor offre una funzione di trascinamento intuitiva.
+      È inoltre possibile trascinare i componenti dei Moduli adattivi richiesti, in quanto l’editor universale offre una funzione di trascinamento intuitiva.
 
-   1. Seleziona il componente Modulo adattivo aggiunto per aggiornarne le proprietà utilizzando **[!UICONTROL Proprietà]**.
+   1. Seleziona il componente Modulo adattivo aggiunto e aggiornane le proprietà utilizzando **[!UICONTROL Proprietà]**.
 
       ![apri proprietà](/help/edge/docs/forms/assets/component-properties.png)
 
@@ -204,58 +204,58 @@ In questo caso, la pagina `index.html` viene utilizzata a scopo illustrativo.
 
    >[!NOTE]
    >
-   > È importante pubblicare nuovamente la pagina del progetto AEM dopo aver apportato modifiche; in caso contrario, gli aggiornamenti non sono visibili nel browser.
+   > È importante pubblicare nuovamente la pagina del progetto AEM dopo aver apportato modifiche; in caso contrario, gli aggiornamenti non saranno visibili nel browser.
 
-1. Ripubblica la pagina Progetto AEM.
+1. Pubblicare nuovamente la pagina del progetto AEM.
 
-   1. Fai clic su **Pubblica** per pubblicare nuovamente la pagina del progetto AEM dopo l&#39;aggiunta del modulo.
+   1. Fai clic su **Pubblica** per pubblicare nuovamente la pagina del progetto AEM dopo aver aggiunto il modulo.
 
       ![pubblica modulo](/help/edge/docs/forms/assets/publish-form.png)
 
-   1. Viene visualizzata la finestra di conferma **Pubblica**. Fare clic su **Pubblica** per avviare la pubblicazione.
+   1. Viene visualizzata la finestra di dialogo di conferma di **Pubblicazione**. Fai clic su **Pubblica** per avviare la pubblicazione.
 
       ![pubblica modulo1](/help/edge/docs/forms/assets/publish-form1.png)
 
-      Dopo aver fatto clic sul pulsante **Pubblica** verrà visualizzato il messaggio `Publish started successfully`.
+      Dopo aver fatto clic sul pulsante **Pubblica**, viene visualizzato il messaggio `Publish started successfully`.
 
       ![pubblica modulo2](/help/edge/docs/forms/assets/publish-form2.png)
 
-   È ora possibile visualizzare la pagina Progetto AEM con il Edge Delivery Services Form aggiunto al seguente URL:
+   È ora possibile visualizzare la pagina del progetto AEM con il modulo Edge Delivery Services aggiunto al seguente URL:
    `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`.
 
-   Ad esempio, se il nome del ramo è `main`, l&#39;archivio è `edsforms`, il proprietario è `wkndforms` e il nome del sito è `eds-forms`, l&#39;URL sarà:
+   Ad esempio, se il nome del ramo è `main`, l’archivio è `edsforms`, il proprietario è `wkndforms` e il nome del sito è `eds-forms`, l’URL sarà:
    `https://main--edsforms--wkndforms.aem.page/content/eds-forms/`
 
    ![indice pagina](/help/edge/docs/forms/assets/publish-index-page.png)
 
-Puoi assegnare uno stile al Forms Edge Delivery Services modificando i file `.css` e `.js` nel blocco Forms adattivo e [configurando un ambiente di sviluppo AEM locale](#set-up-local-aem-development-environment) per visualizzare le modifiche istantaneamente nel browser.
+Puoi assegnare uno stile ai moduli di Edge Delivery Services modificando i file `.css` e `.js` nel blocco moduli adattivi e [configurando un ambiente di sviluppo AEM locale](#set-up-local-aem-development-environment) per visualizzare le modifiche istantaneamente nel browser.
 
-## Configurare l’ambiente di sviluppo AEM locale
+## Configurare un ambiente di sviluppo AEM locale
 
-Puoi impostare un ambiente di sviluppo AEM locale per lo sviluppo locale di stili e componenti personalizzati. Per essere operativi con un ambiente di sviluppo AEM locale:
+Puoi configurare un ambiente di sviluppo AEM locale per sviluppare stili e componenti personalizzati a livello locale. Per essere operativi con un ambiente di sviluppo AEM locale:
 
-1. **Installare AEM CLI**: AEM CLI semplifica le attività di sviluppo. Installalo a livello globale utilizzando npm:
+1. **Installa AEM CLI**: AEM CLI semplifica le attività di sviluppo. Installalo a livello globale utilizzando npm:
 
    ```Bash
        npm install -g @adobe/aem-cli
    ```
 
-1. **Clona il progetto GitHub**: clona l&#39;archivio del progetto AEM da GitHub con il comando seguente, sostituendo <owner> con il proprietario dell’archivio e <repo> con il nome dell’archivio:
+1. **Clona il progetto GitHub**: clona l’archivio del progetto da GitHub utilizzando il seguente comando, sostituendolo <owner> con il proprietario dell’archivio e <repo> con il nome dell’archivio:
 
    ```
    git clone https://github.com/<owner>/<repo>
    ```
 
-1. **Avvia l&#39;ambiente locale**: accedi alla directory del progetto e avvia l&#39;istanza AEM locale con un singolo comando:
+1. **Avvia l’ambiente locale**: passa alla directory del progetto e attiva l’istanza AEM locale con un singolo comando:
 
    ```
    cd <repo>
    aem up
    ```
 
-È possibile apportare modifiche locali nella cartella Blocco di Forms adattivo `blocks/form` per la formattazione e la codifica dei moduli. Modificare i file `.css` o `.js` in questa directory e verificare che le modifiche si riflettono immediatamente nel browser.
+È possibile apportare modifiche locali nella cartella Blocco moduli adattivi `blocks/form` per la formattazione e la codifica dei moduli. Modifica i file `.css` o `.js` all’interno di questa directory e le modifiche saranno immediatamente applicate nel browser.
 
-Una volta completate le modifiche, utilizza i comandi Git per eseguire il commit e inviarle. Questo aggiorna gli ambienti di anteprima e produzione, accessibili dai seguenti URL (sostituisci i segnaposto con i dettagli del progetto):
+Una volta completate le modifiche, utilizza i comandi Git per confermarle e inviarle. Questo aggiorna gli ambienti di anteprima e di produzione accessibili tramite questi URL (sostituisci i segnaposto con i dettagli del progetto):
 
 Anteprima:`https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
 Produzione: `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
