@@ -3,7 +3,8 @@ title: Note sulla versione 2024.9.0 di [!DNL Adobe Experience Manager] as a Clou
 description: Note sulla versione 2024.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 0c4db1b70aa665e1802a316ece26db1e06f40b24
+exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
+source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -80,7 +81,7 @@ Gli amministratori ora possono verificare se rendere visibili le risorse scadute
 
 #### Salvataggio automatico di una bozza per moduli adattivi basati su Componenti core
 
-Gli utenti possono ora beneficiare di una funzione di salvataggio automatico che consente di salvare automaticamente come bozza un modulo parzialmente completato. Potranno tornare in un secondo momento per completarne la compilazione sullo stesso dispositivo o su un altro. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
+Gli utenti possono ora beneficiare di una funzione di salvataggio automatico che consente di salvare automaticamente come bozza un modulo parzialmente completato. L’utente potrà quindi completare in un secondo momento la compilazione del modulo, anche da un altro dispositivo. Questa funzione migliora i tassi di conversione per le organizzazioni riducendo l’abbandono dei moduli, in quanto gli utenti non devono ricominciare a compilarli dall’inizio.
 
 
 ### Funzionalità per Accesso anticipato ad AEM Forms {#forms-new-early-access-features}
@@ -97,7 +98,7 @@ L’intelligenza artificiale generativa per moduli adattivi offre un livello com
 
 Le funzionalità di intelligenza artificiale generativa offerte sono:
 
-* **Assistente IA per le query sui prodotti**: ottieni risposte immediate alle domande relative al modulo AEM. L’assistente di IA funge da knowledge base personale, fornendo indicazioni approfondite e consigli direttamente all’interno della piattaforma.
+* **Assistente IA per le query sui prodotti**: ottieni risposte immediate alle domande relative al modulo AEM. L’Assistente IA funge da knowledge base personale, fornendo indicazioni approfondite e consigli direttamente all’interno della piattaforma.
 
 * **Generazione di moduli adattivi**: creazione semplificata di moduli completi con prompt di IA generativa. L’intelligenza artificiale generativa di Adobe genera automaticamente moduli intuitivi che riducono i casi di abbandono e personalizzano l’esperienza.
 
@@ -157,7 +158,7 @@ La [pipeline di configurazione](/help/operations/config-pipeline.md) viene utili
 
 ## Guide di [!DNL Experience Manager] {#guides}
 
-L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

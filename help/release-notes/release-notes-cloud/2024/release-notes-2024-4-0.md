@@ -4,9 +4,9 @@ description: Note sulla versione 2024.4.0 di [!DNL Adobe Experience Manager] as 
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: bc0ae042c378f24b88da84768cdcc9573926ac89
 workflow-type: tm+mt
-source-wordcount: '2727'
+source-wordcount: '2707'
 ht-degree: 98%
 
 ---
@@ -286,9 +286,7 @@ Questa funzione consente di utilizzare i dati memorizzati nei file JSON e di riu
 In qualità di amministratore, puoi configurare più URL di risorse per alcuni connettori come Generic REST Client, Salsify, Akeneo e bacheche Microsoft Azure DevOps (ADO).
 Quindi, in qualità di autore, puoi connetterti alle origini dati per creare snippet o argomenti utilizzando i generatori. Questa funzione è utile in quanto non è necessario creare un’origine dati per ogni URL. Consente di recuperare rapidamente i dati da una qualsiasi delle risorse per una particolare origine dati in un singolo snippet di contenuto o argomento. Visualizza ulteriori dettagli sui connettori delle origini dati e su come [configurare un connettore di origine dati dall’interfaccia utente](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Scopri come [utilizzare dati dall’origine dati](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
 
-Per ulteriori informazioni sulle nuove funzioni e sui miglioramenti, consulta [Novità della versione 2024.04.0](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
-
-Per un elenco dei problemi risolti in questa versione, consulta [Problemi risolti nella versione 2024.4.0](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
+Per ulteriori informazioni sulle nuove funzionalità e sui miglioramenti, visualizzare [Informazioni sulle versioni di Experience Manager Guides](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

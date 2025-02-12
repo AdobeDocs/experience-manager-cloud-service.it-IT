@@ -5,8 +5,8 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 20db0990c506aeb473b71132813cec053009275f
-workflow-type: ht
+source-git-commit: cdf1a62ca7c8d25b146cb7b6c1329f064e42df56
+workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 100%
 
@@ -202,7 +202,7 @@ Chiunque può accedere alla versione Beta pubblica facendo clic sul pulsante *Nu
 
 ## Guide di [!DNL Experience Manager] {#guides}
 
-L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
+L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

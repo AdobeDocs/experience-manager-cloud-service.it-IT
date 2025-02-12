@@ -3,7 +3,8 @@ title: Note sulla versione 2024.6.0 di [!DNL Adobe Experience Manager] as a Clou
 description: Note sulla versione 2024.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
+source-git-commit: 6d548f10caa32bb5a7a6b0afe762f60058eca2fe
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 100%
@@ -230,7 +231,7 @@ Adobe Managed CDN ora supporta [Edge Side Includes (ESI)](/help/implementing/dis
 
 ## Guide di [!DNL Experience Manager] {#guides}
 
-L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

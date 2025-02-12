@@ -4,7 +4,7 @@ description: Note sulla versione 2024.10.0 di [!DNL Adobe Experience Manager] as
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: c3beecaab03c3721ad2fb70658a335d17f9a66d0
+source-git-commit: bf3ccd88bc29db136ff5445f76e196b6ac8c52c7
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 100%
@@ -126,7 +126,7 @@ In queste note sulla versione sono elencate le innovazioni incluse nella version
 
 Le funzionalità di intelligenza artificiale generativa offerte sono:
 
-* **Assistente IA per le query sui prodotti**: ottieni risposte immediate alle domande relative al modulo AEM. L’assistente di IA funge da knowledge base personale, fornendo indicazioni approfondite e consigli direttamente all’interno della piattaforma.
+* **Assistente IA per le query sui prodotti**: ottieni risposte immediate alle domande relative al modulo AEM. L’Assistente IA funge da knowledge base personale, fornendo indicazioni approfondite e consigli direttamente all’interno della piattaforma.
 
 * **Generazione di moduli adattivi**: creazione semplificata di moduli completi con prompt di IA generativa. L’intelligenza artificiale generativa di Adobe genera automaticamente moduli intuitivi che riducono i casi di abbandono e personalizzano l’esperienza.
 
@@ -194,7 +194,7 @@ Chiunque può accedere alla versione Beta pubblica facendo clic sul pulsante *Nu
 
 ## Guide di [!DNL Experience Manager] {#guides}
 
-L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0).
+L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

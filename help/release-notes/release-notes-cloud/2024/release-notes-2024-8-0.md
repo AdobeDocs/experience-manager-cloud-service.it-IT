@@ -4,7 +4,7 @@ description: Note sulla versione 2024.8.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 61b40acf4f51c16a694b7c3b13ee1c480670ee3f
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 100%
@@ -109,7 +109,7 @@ L’intelligenza artificiale generativa per moduli adattivi offre un livello com
 
 Le funzionalità di intelligenza artificiale generativa offerte sono:
 
-* **Assistente IA per le query sui prodotti**: ottieni risposte immediate alle domande relative al modulo AEM. L’assistente di IA funge da knowledge base personale, fornendo indicazioni approfondite e consigli direttamente all’interno della piattaforma.
+* **Assistente IA per le query sui prodotti**: ottieni risposte immediate alle domande relative al modulo AEM. L’Assistente IA funge da knowledge base personale, fornendo indicazioni approfondite e consigli direttamente all’interno della piattaforma.
 
 * **Generazione di moduli adattivi**: creazione semplificata di moduli completi con prompt di IA generativa. L’intelligenza artificiale generativa di Adobe genera automaticamente moduli intuitivi che riducono i casi di abbandono e personalizzano l’esperienza.
 
@@ -146,10 +146,9 @@ In modo simile ad AEM 6.5, Apache/dispatcher acquisisce le mappe di riscrittura 
 
 Adobe Managed CDN ora supporta [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), un linguaggio di markup per l’assemblaggio di contenuti web dinamici a livello di edge. Includendo snippet ESI, è possibile memorizzare nella cache la pagina HTML generale sulla rete CDN con valori TTL più elevati e recuperare con maggiore frequenza dall’origine le sezioni più piccole che richiedono aggiornamenti più frequenti (TTL più bassi). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-
 ## Guide di [!DNL Experience Manager] {#guides}
 
-L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

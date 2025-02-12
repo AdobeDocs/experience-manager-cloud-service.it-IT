@@ -4,10 +4,10 @@ description: Note sulla versione 2024.7.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
-source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
+source-git-commit: ce6b0db34488a49d15d4c1197bdee80c63a2e0fa
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 76%
+ht-degree: 83%
 
 ---
 
@@ -63,21 +63,21 @@ Ti interessa provare questa funzione e condividere con noi un tuo feedback? Per 
 
 Il Selettore risorse ora consente agli autori di contenuto di caricare le risorse finali direttamente dal selettore, trascinandole o navigando dal file system locale. Questa funzionalità consente di caricare le risorse finali in DAM dall’applicazione desiderata.
 
-### Funzione di accesso anticipato in Dynamic Medie {#dm-early-access}
+### Funzione per l’accesso anticipato in Dynamic Media {#dm-early-access}
 
-**Sottotitoli video generati da IA**
+**Didascalie video generate dall’intelligenza artificiale**
 
-I sottotitoli video generati dall’intelligenza artificiale in Adobe Dynamic Medie utilizzano l’intelligenza artificiale per generare automaticamente i sottotitoli per i contenuti video. Questa funzione è stata progettata per migliorare l’accessibilità e l’esperienza utente fornendo sottotitoli accurati e in tempo reale. L’intelligenza artificiale analizza la traccia audio del video per trascrivere il discorso e creare didascalie, che possono essere modificate per maggiore precisione o personalizzazione. Questi sottotitoli soddisfano i requisiti di accessibilità e migliorano il coinvolgimento video dei tipi di pubblico che si affidano al supporto video basato su testo o che preferiscono farlo.
+Le didascalie video generate dall’intelligenza artificiale in Adobe Dynamic Media utilizzano l’intelligenza artificiale per generare automaticamente le didascalie per i contenuti video. Questa funzione è stata progettata per migliorare l’accessibilità e l’esperienza utente fornendo didascalie accurate e in tempo reale. L’intelligenza artificiale analizza la traccia audio del video per trascrivere il discorso e creare didascalie, che possono essere modificate per maggiore precisione o personalizzazione. Queste didascalie soddisfano i requisiti di accessibilità e migliorano il coinvolgimento video per tipi di pubblico che si affidano al supporto video basato su testo o che preferiscono farlo.
 
-Per accedere in anteprima al supporto dei sottotitoli generati dall&#39;intelligenza artificiale sul tuo account Dynamic Medie, [crea e invia un Adobe di caso all&#39;Assistenza clienti](/help/assets/dynamic-media/video.md##enable-dash).
+Per ottenere l’accesso anticipato al supporto delle didascalie generate dall’intelligenza artificiale sul tuo account Dynamic Media, [crea e invia un caso all’Assistenza clienti Adobe](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Nuove funzioni nella vista Risorse {#assets-view-new-features}
 
-**Integrazione delle credenziali del contenuto**
+**Integrazione di dati Content Credentials**
 
-Experience Manager Assets ora supporta le credenziali del contenuto per i formati di immagine supportati. Questa funzionalità fornisce informazioni sulla derivazione della risorsa e su come è stata creata, compreso se è stata modificata utilizzando GenAI.
+Experience Manager Assets ora supporta i dati Content Credentials per i formati di immagine supportati. Questa funzionalità fornisce informazioni sulla derivazione della risorsa e su come è stata creata, compreso se è stata modificata utilizzando GenAI.
 
-![Credenziali del contenuto](/help/assets/assets/content-credentials.png)
+![Content Credentials](/help/assets/assets/content-credentials.png)
 
 **Anteprime visive del contenuto delle cartelle**
 
@@ -190,7 +190,7 @@ Il Centro azioni invia una notifica proattiva quando viene rilevata una risorsa 
 
 ## Guide di [!DNL Experience Manager] {#guides}
 
-L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
