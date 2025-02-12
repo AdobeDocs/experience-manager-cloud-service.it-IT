@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d37bdc060ea569748745011346bc448a569ae91d
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 35%
+source-wordcount: '910'
+ht-degree: 25%
 
 ---
 
@@ -20,7 +20,7 @@ Scopri come abilitare la pipeline front-end per i siti esistenti per utilizzare 
 
 La pipeline front-end è un meccanismo che può distribuire rapidamente solo il codice front-end dei siti Web basato su [temi del sito](site-themes.md) e [modelli del sito](site-templates.md).
 
-Questa pipeline gestisce solo il codice front-end, rendendo il processo di distribuzione più rapido rispetto alle distribuzioni full-stack. Consente agli sviluppatori front-end di personalizzare facilmente il sito senza dover conoscere l’AEM.
+Questa pipeline gestisce solo il codice front-end, rendendo il processo di distribuzione più rapido rispetto alle distribuzioni full-stack. Consente agli sviluppatori front-end di personalizzare facilmente il sito senza dover conoscere AEM.
 
 Per impostazione predefinita, i siti basati sui modelli di sito possono sfruttare la pipeline front-end. Questo documento descrive come adattare i siti esistenti per sfruttare la pipeline front-end.
 
@@ -59,7 +59,7 @@ L&#39;abilitazione del sito viene eseguita dalla console Sites utilizzando la [b
 
    ![Abilita pipeline front-end](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)
 
-1. L’AEM ti chiede di confermare una panoramica delle modifiche apportate. Una volta confermato, il tuo sito viene adattato.
+1. AEM richiede di confermare una panoramica delle modifiche apportate. Una volta confermato, il tuo sito viene adattato.
 
 Ora il tuo sito è pronto per utilizzare la pipeline front-end. Per ulteriori informazioni sulla pipeline front-end e sulla gestione del tema del sito, consulta:
 
@@ -69,11 +69,41 @@ Ora il tuo sito è pronto per utilizzare la pipeline front-end. Per ulteriori in
 
 ## Pipeline front-end e domini personalizzati {#custom-domains}
 
+La pipeline front-end può essere utilizzata con [funzionalità domini personalizzati di Cloud Manager,](/help/implementing/cloud-manager/custom-domain-names/introduction.md) ma tieni presente i seguenti requisiti quando utilizzi le due funzionalità insieme.
+
+### File front-end statici {#static-files}
+
+Le risorse front-end statiche distribuite tramite la pipeline front-end verranno servite, per impostazione predefinita, dal dominio statico predefinito di Adobe.
+
+Se hai bisogno di un dominio personalizzato per le risorse front-end, puoi installare un dominio personalizzato sul livello di pubblicazione e configurare Dispatcher per instradare percorsi specifici (ad esempio `/static/`) alla posizione di hosting statica di Adobe. Questo metodo richiede l&#39;aggiornamento delle [regole Dispatcher](https://experienceleague.adobe.com/it/docs/experience-manager-dispatcher/using/dispatcher) per inoltrare e memorizzare in cache correttamente le richieste di risorse statiche.
+
+Dopo aver configurato il dominio personalizzato e Dispatcher, puoi configurare AEM per distribuire le risorse front-end dal dominio statico.
+
+### Configurazione {#configuration}
+
 Come descritto nella sezione [Dettagli tecnici](#technical-details), l&#39;attivazione della funzione Pipeline front-end per un sito crea un nodo `SiteConfig` e `HtmlPageItemsConfig` sotto `/conf/<site-name>/sling:configs`.
 
-Se si desidera utilizzare la funzionalità [Domini personalizzati di Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/introduction.md) per il sito insieme alla pipeline front-end, è necessario aggiungere proprietà aggiuntive a questi nodi.
+Se desideri utilizzare la funzione domini personalizzati di Cloud Manager per il sito insieme alla pipeline front-end per le risorse di stato, è necessario aggiungere proprietà aggiuntive a questi nodi.
 
 1. Impostare la proprietà `customFrontendPrefix` in `SiteConfig` per il sito.
+   1. Accedi a `/conf/<site-name>/sling:configs/com.adobe.aem.wcm.site.manager.config.SiteConfig`.
+   1. Aggiungere o aggiornare la proprietà `customFrontendPrefix = "https://your-custom-domain.com/static/"`.
 1. Il valore `prefixPath` di `HtmlPageItemsConfig` viene aggiornato con il dominio personalizzato.
+   1. Accedi a `/conf/<site-name>/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig`.
+   1. Verificare che `prefixPath` rifletta il dominio personalizzato, ad esempio `prefixPath = "https://your-custom-domain.com/static/<hash>/..."`.
+   * Se necessario, è anche possibile sovrascrivere manualmente questo valore.
+1. Verifica la configurazione.
+   1. Dopo la distribuzione, verifica che le pagine facciano riferimento correttamente agli artefatti del tema del dominio personalizzato.
+   1. Apri gli strumenti per sviluppatori del browser e controlla i percorsi dei file `theme.css` e `theme.js` per verificare che siano caricati dal dominio corretto.
 
-Le pagine del sito fanno quindi riferimento agli artefatti del tema da tale URL aggiornato.
+Le pagine del sito fanno quindi riferimento agli artefatti del tema da tale URL aggiornato. Il dispatcher indirizza quindi le richieste di tali risorse al dominio statico.
+
+## Best practice per gli sviluppatori front-end {#best-practices}
+
+Se devi sviluppare e testare le risorse front-end localmente prima di distribuirle tramite la pipeline front-end, considera i seguenti approcci:
+
+* Utilizza la modalità proxy di [Site Theme Builder](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) per ignorare gli artefatti del tema a livello locale per il test.
+* Distribuisci manualmente i file dei temi da un server di sviluppo locale e aggiorna `prefixPath` in `HtmlPageItemsConfig` in modo che corrispondano all&#39;indirizzo del server locale.
+* Assicurati che la memorizzazione nella cache del browser sia disabilitata durante il test per visualizzare gli aggiornamenti live.
+
+Per ulteriori dettagli sullo sviluppo front-end locale, consulta la [documentazione di Site Theme Builder.](https://github.com/adobe/aem-site-theme-builder)
