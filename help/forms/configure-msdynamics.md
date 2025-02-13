@@ -3,10 +3,10 @@ title: Come si configura Microsoft Dynamics 365 in modelli di dati di moduli pre
 description: Scopri come integrare Microsoft Dynamics 365 con Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: fadbe44e0dba4e7dcbad230c286d6126e68910bc
+source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -68,8 +68,9 @@ Creare un account in **Power Platform Admin Center** per:
 
 Dopo aver configurato i prerequisiti di cui sopra, puoi procedere con l’integrazione di Adaptive Forms con Microsoft® Dynamics 365. Per inviare dati a Microsoft® Dynamics 365 all’invio del modulo, effettua le seguenti operazioni:
 
-[1. Configura configurazione servizio cloud per Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
-[2. Crea modello dati modulo (FDM)](#2-create-form-data-model-fdm)
+[1. Configurare la configurazione del servizio cloud per Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
+
+[2. Creare un modello dati modulo (FDM)](#2-create-form-data-model-fdm)
 
 ### 1. Configurare la configurazione del servizio cloud per Microsoft Dynamics
 

@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3ab46e78581893591f56793bc0561aea4f2fbef5
+source-git-commit: e25b08e824ba5f0ba6d60b334ebb50d13442f590
 workflow-type: tm+mt
 source-wordcount: '6077'
 ht-degree: 99%
@@ -1036,7 +1036,7 @@ ht-degree: 99%
          + [Panoramica: editor universale per Edge Delivery Services per Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Guida introduttiva](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Aggiungere regole a utilizzando l’Editor regole](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Creare componenti personalizzati](/help/edge/docs/forms/universal-editor/create-custom-component)
+         + [Creare componenti personalizzati](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Utilizzare reCAPTCHA nei moduli](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
       + Funzionalità {#advanced-features-edge-delivery-services-forms}
          + [Utilizzare i frammenti del modulo](/help/edge/docs/forms/form-fragments.md)
