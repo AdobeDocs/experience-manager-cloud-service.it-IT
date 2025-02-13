@@ -5,7 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+hide: true
+hidefromtoc: true
+source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 2%
@@ -34,7 +36,7 @@ ht-degree: 2%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Il Cloud Service OData di MS Dynamics (servizio OData) è disponibile con tutte le modalità di esecuzione. Per ulteriori informazioni sulla configurazione delle modalità di esecuzione per un&#39;istanza [!DNL Experience Manager], vedere [Modalità di esecuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=it#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (servizio OData) è disponibile con tutte le modalità di esecuzione. Per ulteriori informazioni sulla configurazione delle modalità di esecuzione per un&#39;istanza [!DNL Experience Manager], vedere [Modalità di esecuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=it#runmodes).
 
 AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Ulteriori informazioni su queste opzioni sono disponibili nell&#39;articolo [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md).
 
@@ -117,7 +119,7 @@ Per registrare un client OAuth nel computer Active Directory Federation Services
 
 ## Configura servizio cloud per il servizio [!DNL Microsoft Dynamics] {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
-Un servizio OData è identificato dall&#39;URL radice del servizio. Per configurare un servizio OData in [!DNL Experience Manager] as a Cloud Service, verificare di disporre dell&#39;URL principale del servizio e procedere come segue:
+Un servizio OData è identificato dall&#39;URL radice del servizio. Per configurare un servizio OData in as a Cloud Service [!DNL Experience Manager], verificare di disporre dell&#39;URL principale del servizio e procedere come segue:
 
 <!--The **MS Dynamics OData Cloud Service (OData Service)** configuration comes with default OData configuration. To configure it to connect with your [!DNL Microsoft Dynamics] service, do the following.-->
 
@@ -125,7 +127,7 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 >
 >Per una guida dettagliata alla configurazione di [!DNL Microsoft Dynamics 365], online o on-premise, vedere [[!DNL Microsoft Dynamics] Configurazione OData](ms-dynamics-odata-configuration.md).
 
-1. Vai a **[!UICONTROL Strumenti > Cloud Service > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
+1. Vai a **[!UICONTROL Strumenti > Servizi cloud > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 
    Per informazioni sulla creazione e la configurazione di una cartella per le configurazioni del servizio cloud, consulta [Configurare la cartella per le configurazioni del servizio cloud](#cloud-folder).
 
@@ -147,7 +149,7 @@ Modello dati modulo (FDM)
 
    Si è il modello dati modulo nella pagina di configurazione del servizio cloud, in cui viene visualizzato un messaggio che informa che la configurazione OData è stata salvata correttamente.
 
-Il servizio cloud Cloud Service OData (OData Service) di MS Dynamics è configurato e connesso al servizio Dynamics. Modello dati modulo (FDM)
+Il servizio cloud MS Dynamics OData Cloud Service (OData Service) è configurato e connesso al servizio Dynamics. Modello dati modulo (FDM)
 
 ## Crea modello dati modulo (FDM) {#create-form-data-model}
 

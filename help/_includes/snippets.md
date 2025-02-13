@@ -1,8 +1,8 @@
 ---
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 98%
+source-wordcount: '1394'
+ht-degree: 97%
 
 ---
 # Snippet {#snippets}
@@ -43,7 +43,8 @@ ht-degree: 98%
 ## Azioni di invio per modulo adattivo {#af-submit-action}
 
 * [Invia e-mail](/help/forms/configure-submit-action-send-email.md)
-* [Invia a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Invia a raccolta documenti di SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [Invia a elenco SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
 * [Invia usando il modello dati modulo](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [Invia ad Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Invia all’endpoint REST](/help/forms/configure-submit-action-restpoint.md)
@@ -52,7 +53,7 @@ ht-degree: 98%
 * [Invia a Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Invia a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Collegare un modulo adattivo all’applicazione Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Collegare un modulo adattivo a Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [Collegare un modulo adattivo a Microsoft](/help/forms/configure-msdynamics.md)
 * [Collegare un modulo adattivo a Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Creare un’azione di invio personalizzata](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 

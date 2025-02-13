@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 901172d201e968ec00eb8c988107a6a9fb7a5e7b
+source-git-commit: 3ab46e78581893591f56793bc0561aea4f2fbef5
 workflow-type: tm+mt
-source-wordcount: '6058'
+source-wordcount: '6077'
 ht-degree: 99%
 
 ---
@@ -737,7 +737,8 @@ ht-degree: 99%
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
          + [Configura [!DNL Azure] archiviazione](/help/forms/configure-azure-storage.md)
-         + [Configurazione [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servizi cloud](/help/forms/configure-msdynamics-salesforce.md)
+         + [Configura  [!DNL Microsoft Dynamics 365]  servizi cloud](/help/forms/configure-msdynamics.md)
+         + [Configurare i servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
          + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
          + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
@@ -761,8 +762,11 @@ ht-degree: 99%
             + [Configurare l’azione di invio per un modulo adattivo](/help/forms/configure-submit-actions-core-components.md)
             + [Inviare un modulo adattivo all’archiviazione BLOB di Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Inviare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + [Collegare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [Configurare il sito SharePoint con accesso limitato utilizzando l’ambito di autorizzazione](/help/forms/configure-sharepoint-site-limited-access.md)
+            + Connetti un modulo adattivo a Microsoft® SharePoint{#connect-to-sharepoint}
+               + [Collegare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+               + [Invia a raccolta documenti di SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
+               + [Invia a elenco SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
+               + [Configurare il sito SharePoint con accesso limitato utilizzando l’ambito di autorizzazione](/help/forms/configure-sharepoint-site-limited-access.md)
             + [Integrare un modulo adattivo AEM con il flusso di lavoro di AEM](/help/forms/configure-submit-action-workflow.md)
             + [Configurare l’azione di invio Invia a endpoint REST per moduli adattivi](/help/forms/configure-submit-action-restpoint.md)
             + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
