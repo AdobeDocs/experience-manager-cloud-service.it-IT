@@ -4,9 +4,9 @@ description: Questo tutorial ti mostrerà come essere subito operativo con un nu
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: ec3a9982494df35faf1df9f49416197dc96f1b4a
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1920'
 ht-degree: 92%
 
 ---
@@ -67,7 +67,7 @@ Il modello standard di AEM Forms consente di iniziare rapidamente un progetto AE
    * `<repository>` denota l’archivio GitHub.
    * `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
 
-   Ad esempio, se il nome del ramo è `main`, l&#39;archivio è `wefinance` e il proprietario è `wkndforms`, il sito Web sarà operativo alle `https://main--wefinance--wkndforms.aem.page`
+   Ad esempio, se il nome del ramo è `main`, l’archivio è `wefinance` e il proprietario è `wkndforms`, il sito web sarà operativo e funzionante all’indirizzo `https://main--wefinance--wkndforms.aem.page`
 &lt;!—(https://main--wefinance--wkndform.aem.page)-->
 
 ### Collegare l’origine del proprio contenuto
@@ -89,9 +89,9 @@ Per copiare il contenuto di esempio nella cartella del contenuto e indirizzarvi 
 
    Assicurati di aver fornito all’utente di Adobe Experience Manager le autorizzazioni di modifica per la cartella.
 
-   ![Condividi cartella con utente AEM, fornisci i diritti di modifica-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
+   ![Condividi la cartella con l’utente AEM e fornisci le autorizzazioni di modifica-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   ![Condividi cartella con utente AEM, fornisci i diritti di modifica- Google Drive](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
+   ![Condividi la cartella con l’utente AEM e fornisci le autorizzazioni di modifica - Google Drive](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
 1. Copia il [contenuto di esempio](/help/edge/assets/wefinance1.zip) nella cartella. Per copiare:
 
@@ -182,7 +182,7 @@ Per visualizzare in anteprima il contenuto non pubblicato:
 
    URL `https://<branch>--<repo>--<owner>.aem.page/enquiry`
 
-   Ad esempio, se l&#39;archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto il proprietario dell&#39;account &quot;wkndform&quot; e si utilizza il ramo &quot;main&quot; e il nome del modulo come `enquiry`, l&#39;URL è: `https://main--wefinance--wkndform.aem.live/enquiry`.
+   Ad esempio, se l’archivio del progetto è denominato “wefinance”, si trova sotto il proprietario dell’account “wkndform” e stai utilizzando il ramo “main” e il nome del modulo come `enquiry`, l’URL è:`https://main--wefinance--wkndform.aem.live/enquiry`.
 &lt;!—(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### Creare un modulo
@@ -195,7 +195,7 @@ Iniziamo con l’aggiornamento dell’etichetta di un campo. Apri il foglio “e
 
 ![Modulo di richiesta](/help/edge/assets/enquiry-form-preview-publish.png)
 
-Quando visualizzi in anteprima o pubblichi il file, una versione JSON del file viene visualizzata in una nuova scheda. Copia l’URL di anteprima (.aem.page) o pubblicazione (.aem.live) del file.
+Quando visualizzi in anteprima o pubblichi il file, una versione JSON del file viene visualizzata in una nuova scheda. Copia l’URL di anteprima (.aem.page) o di pubblicazione (.aem.live) del file.
 
 ![JSON del foglio di calcolo del modulo](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
@@ -277,12 +277,31 @@ Se disponi di un progetto AEM esistente, puoi integrare il blocco di moduli adat
 
 Per integrare:
 
-1. clona sul computer l’archivio del blocco di moduli adattivi: [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
+1. **Aggiungi file e cartelle richiesti**
+   1. Copia e incolla le cartelle e i file seguenti da [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) nel tuo progetto AEM:
 
-1. All’interno della cartella scaricata, individua la cartella `blocks/form`. Copia questa cartella. Ora è possibile passare alla cartella `blocks` locale del progetto AEM e incollare qui la cartella del modulo copiato.
+      * [blocco modulo](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) cartella
+      * [cartella-comune](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) modulo
+      * cartella [componenti modulo](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)
+      * file [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
+      * file [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
+
+1. **Aggiornare le definizioni dei componenti e i file dei modelli**
+   1. Passa al file `../models/_component-definition.json` nel progetto AEM e aggiornalo con le modifiche apportate al file [_component-definition.json in AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
+
+   1. Passa al file `../models/_component-models.json` nel progetto AEM e aggiornalo con le modifiche apportate al file [_component-models.json in AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+
+1. **Aggiungi editor di moduli nello script dell&#39;editor**
+   1. Passa al file `../scripts/editor-support.js` nel progetto AEM e aggiornalo con le modifiche apportate al file [editor-support.js nel pannello di AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+1. **Aggiorna file di configurazione ESLint**
+   1. Passa al file `../.eslintignore` nel progetto AEM e aggiungi la seguente riga di codici per evitare errori relativi al motore di regole del blocco di moduli:
+
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
 
 1. Conferma e implementa queste modifiche al progetto AEM su GitHub.
-
 
 Tutto qui. Il blocco di moduli adattivi fa ora parte del progetto AEM. Puoi iniziare a creare e aggiungere moduli alle pagine AEM.
 

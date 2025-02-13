@@ -6,14 +6,14 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0410e1d16ad26d3169c01cca3ad9040e3c4bfc9f
-workflow-type: ht
-source-wordcount: '2111'
-ht-degree: 100%
+source-git-commit: 1244bafe1263c52a584b587845c1a12b9ddfd333
+workflow-type: tm+mt
+source-wordcount: '2236'
+ht-degree: 77%
 
 ---
 
-# Introduzione all’editor di regole nell’editor universale
+# Introduzione all’editor di regole nell’authoring di WYSIWYG
 
 È possibile aggiungere il comportamento di un modulo dinamico utilizzando l’editor di regole, che consente di creare regole. Queste regole abilitano la visibilità dei campi condizionali, automatizzano i calcoli in base a quanto immesso dall’utente e migliorano l’esperienza utente complessiva. Semplificando il processo di compilazione dei moduli, l’editor di regole favorisce sia l’accuratezza che l’efficienza.
 
@@ -41,21 +41,23 @@ Per istruzioni dettagliate, consulta [Aggiungere una regola condizionale](#2-add
 
 ## Come si abilita l’estensione dell’editor di regole?
 
-Nell’editor universale, per impostazione predefinita l’editor di regole non è attivato. Per richiedere che l’estensione dell’editor di regole venga abilitata per il tuo ambiente, invia un’e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+In Universal Editor, l’estensione Rule Editor non è attivata per impostazione predefinita. Per abilitare l&#39;estensione Editor regole, scrivi a noi all&#39;indirizzo [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) dal tuo ID e-mail ufficiale.
 
 Una volta che l’estensione dell’editor di regole sarà stata abilitata per il tuo ambiente, l’icona ![edit-rules](/help/forms/assets/edit-rules-icon.svg) sarà visibile nell’angolo in alto a destra dell’editor.
 
 ![Editor di regole dell’editor universale](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
 
-Seleziona l’oggetto modulo per il quale vuoi scrivere una regola e fai clic sull’icona ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Viene visualizzata l’interfaccia utente dell’editor di regole.
+Selezionare il componente modulo per il quale si desidera scrivere una regola e fare clic sull&#39;icona ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Viene visualizzata l’interfaccia utente dell’editor di regole.
 
 ![Interfaccia utente dell’editor di regole](/help/edge/docs/forms/assets/rule-editor-for-field.png)
+
+In questo articolo, `form object` e `form component` sono utilizzati in modo intercambiabile.
 
 Ora puoi iniziare a scrivere regole o logica di business per il campo modulo selezionato utilizzando i [tipi di regole disponibili nell’editor di regole](#available-rule-types-in-rule-editor).
 
 ## Interfaccia utente dell’editor di regole
 
-Quando si fa clic sull’icona ![edit-rules](/help/forms/assets/edit-rules-icon.svg), si apre l’editor visivo dell’editor di regole:
+L&#39;editor dell&#39;editor di regole viene aperto quando si fa clic sull&#39;icona ![edit-rules](/help/forms/assets/edit-rules-icon.svg):
 
 ![Interfaccia utente dell’editor di regole](/help/edge/docs/forms/assets/rule-editor-interface.png)
 
@@ -68,20 +70,20 @@ Quando si fa clic sull’icona ![edit-rules](/help/forms/assets/edit-rules-icon.
   </thead>
   <tbody>
     <tr>
-      <td>1. Visualizzazione delle regole dei componenti</td>
-      <td>Visualizza il titolo dell’oggetto modulo tramite il quale è stato avviato l’editor di regole e il tipo di regola attualmente selezionato.</td>
+      <td>1. Titolo</td>
+      <td>Visualizza il titolo del componente modulo e il tipo di regola selezionato. Ad esempio, 'Inserisci stipendio lordo' è un componente casella di testo per il quale è selezionato il tipo di regola 'Quando'. </td>
     </tr>
     <tr>
       <td>2. Oggetti modulo e funzioni</td>
-      <td>La scheda <b>Oggetti modulo</b> mostra una vista gerarchica di tutti gli oggetti contenuti nel modulo. La scheda <b>Funzioni</b> include un set di funzioni incorporate.</td>
+      <td>La scheda <b>Oggetti Forms</b> mostra una visualizzazione gerarchica di tutti i componenti contenuti nel modulo. La scheda <b>Funzioni</b> include un set di funzioni incorporate nell'editor di regole.</td>
     </tr>
     <tr>
       <td>3. Per passare a Oggetti modulo e Funzioni</td>
-      <td>Quando viene toccato questo pulsante, diventa attivo il riquadro Oggetti modulo o il riquadro Funzioni.</td>
+      <td>L'interruttore mostra o nasconde alternativamente il riquadro delle funzioni e degli oggetti del modulo. </td>
     </tr>
     <tr>
       <td>4. Editor visivo di regole</td>
-      <td>L’editor visivo di regole è l’area in cui si scrivono le regole nella modalità editor visivo dell’interfaccia utente dell’editor di regole.</td>
+      <td>L’editor di regole visive è l’interfaccia in cui puoi creare regole per i componenti del modulo.</td>
     </tr>
     <tr>
       <td>5. Tasti Fine e Annulla</td>
@@ -90,7 +92,7 @@ Quando si fa clic sull’icona ![edit-rules](/help/forms/assets/edit-rules-icon.
   </tbody>
 </table>
 
-Tutte le regole esistenti su un oggetto modulo vengono elencate quando si seleziona l’oggetto. Puoi visualizzare il titolo e un’anteprima del riepilogo delle regole nell’editor di regole visivo. Inoltre, puoi modificare l’ordine delle regole, modificarle, abilitarle, disabilitarle o eliminarle.
+Tutte le regole esistenti su un componente modulo vengono elencate quando si seleziona il componente. Puoi visualizzare il titolo e un’anteprima del riepilogo delle regole nell’editor delle regole. Inoltre, puoi modificare l’ordine delle regole, modificarle, abilitarle, disabilitarle o eliminarle.
 
 ![mostra le regole disponibili dell’oggetto modulo](/help/edge/docs/forms/assets/rule-editor15.png)
 
@@ -108,51 +110,55 @@ L’editor di regole fornisce un insieme di tipi di regole predefinite che è po
   <tbody>
     <tr>
       <td>Imposta valore di</td>
-      <td>Imposta il valore di un oggetto modulo a seconda che la condizione specificata sia soddisfatta o meno.</td>
+      <td>Imposta il valore di un componente modulo a seconda che la condizione specificata sia soddisfatta o meno.</td>
     </tr>
     <tr>
       <td>Cancella valore di</td>
-      <td>Cancella il valore dell’oggetto specificato.</td>
+      <td>Cancella il valore del componente modulo specificato.</td>
     </tr>
     <tr>
       <td>Nascondi/Mostra</td>
-      <td>Nasconde o mostra un oggetto modulo a seconda che una condizione sia soddisfatta o meno.</td>
+      <td>Nasconde o mostra un componente modulo a seconda che una condizione sia soddisfatta o meno.</td>
     </tr>
     <tr>
       <td>Abilita/Disabilita</td>
-      <td>Attiva o disattiva un oggetto modulo a seconda che una condizione sia soddisfatta o meno.</td>
+      <td>Attiva o disattiva un componente modulo in base al soddisfacimento o meno di una condizione.</td>
     </tr>
     <tr>
       <td>Convalida</td>
-      <td>Convalida il modulo o un oggetto specificato.</td>
+      <td>Controlla il componente modulo in base a una condizione e visualizza un errore se la condizione non è soddisfatta. </td>
     </tr>
     <tr>
       <td>Quando  </td>
-      <td>Segue il costrutto della regola di azione <i>condition-action-alternate</i> o <i>condition-action</i>. Specifica una condizione per la valutazione seguita da un’azione da attivare se la condizione viene soddisfatta.</td>
+      <td>Specifica una condizione per la valutazione seguita da un’azione da attivare se la condizione viene soddisfatta. Segue il costrutto della regola di azione <i>condition-action-alternate</i> o <i>condition-action</i>. </td>
     </tr>
     <tr>
       <td>Formato</td>
-      <td>Formatta un oggetto modulo in base a una funzione o a un’espressione regolare.</td>
+      <td> Modifica il valore visualizzato del componente modulo utilizzando l’espressione specificata quando cambia il relativo valore.</td>
     </tr>
     <tr>
       <td>Avvia servizio</td>
-      <td>Richiama un servizio configurato in un modello dati modulo (FDM).</td>
+      <td>Richiama un servizio configurato utilizzando API esterne, modello dati modulo o servizi web RESTful.</td>
     </tr>
     <tr>
       <td>Imposta proprietà</td>
-      <td>Imposta il valore di una proprietà dell’oggetto specificato in base a una condizione.</td>
+      <td>Imposta il valore di una proprietà del componente modulo specificato in base a una condizione.</td>
     </tr>
     <tr>
       <td>Imposta stato attivo</td>
-      <td>Imposta lo stato attivo sull’oggetto specificato.</td>
+      <td>Imposta lo stato attivo sul componente modulo specificato.</td>
     </tr>
     <tr>
       <td>Salva modulo</td>
-      <td>Salva il modulo.</td>
+      <td>Consente di salvare il modulo come bozza utilizzando il componente Forms Portal Bozze e invii. </td>
     </tr>
     <tr>
-      <td>Invia/Reimposta modulo</td>
-      <td>Invia o reimposta il modulo.</td>
+      <td>Invia modulo</td>
+      <td>Invia il modulo.</td>
+    </tr>
+    <tr>
+      <td>Reimposta modulo</td>
+      <td>Reimposta il modulo.</td>
     </tr>
     <tr>
       <td>Aggiungi/Rimuovi istanza</td>
@@ -208,10 +214,10 @@ Per creare un modulo nell’editor universale:
 1. Apri un modulo nell’editor universale per la modifica.
 1. Aggiungi i seguenti componenti modulo:
    * Modulo di calcolo imposta (titolo)
-   * Stipendio lordo (inserimento testo)
-   * Detrazione aggiuntiva (inserimento testo)
-   * Reddito imponibile (inserimento testo)
-   * Imposta dovuta (inserimento testo)
+   * Stipendio lordo (input numero)
+   * Detrazione aggiuntiva (input numero)
+   * Reddito imponibile (input numero)
+   * Imposta a debito (input numero)
    * Invia (pulsante Invia)
 1. Nascondi il campo modulo `Additional Deduction` aprendo `Properties`.
 
@@ -221,11 +227,10 @@ Per creare un modulo nell’editor universale:
 
 Dopo aver creato il modulo, scrivi la prima regola per visualizzare il campo `Additional Deduction` solo se lo stipendio lordo supera i 50.000 dollari. Per aggiungere una regola condizionale:
 
-1. Apri un modulo nell’editor universale per la modifica.
-1. Seleziona il componente **[!UICONTROL Stipendio lordo]** nella struttura contenuto e seleziona ![edit-rules](/help/forms/assets/edit-rules-icon.svg).
+1. Apri un modulo in Universal Editor per la modifica e seleziona il campo **[!UICONTROL Stipendio lordo]** nella struttura contenuto, quindi seleziona ![edit-rules](/help/forms/assets/edit-rules-icon.svg). In alternativa, è possibile selezionare il campo **[!UICONTROL Stipendio lordo]** direttamente dal riquadro **[!UICONTROL Oggetto Forms]**.
    ![Esempio di editor di regole1](/help/edge/docs/forms/assets/rule-editor3.png)
 Viene visualizzata l’interfaccia dell’editor di regole visivo.
-1. Fai clic su **[!UICONTROL Crea]** per avviare l’editor di regole.
+1. Fai clic su **[!UICONTROL Crea]** per creare le regole.
    ![Esempio di editor di regole2](/help/edge/docs/forms/assets/rule-editor4.png)
 Per impostazione predefinita, è selezionato il tipo di regola `Set Value Of`. Sebbene non sia possibile cambiare o modificare l’oggetto selezionato, è possibile utilizzare l’elenco a discesa delle regole per selezionare un altro tipo di regola.\
    ![Esempio di editor di regole3](/help/edge/docs/forms/assets/rule-editor5.png)
@@ -258,7 +263,8 @@ La regola viene visualizzata nell’editor di regole nel modo seguente.
 
 Scrivi quindi una regola per calcolare il `Taxable Income`, che è la differenza tra `Gross Salary` e `Additional Deduction` (se applicabile). Per aggiungere la regola di calcolo nel campo **[!UICONTROL Reddito imponibile]**, esegui i seguenti passaggi:
 
-1. In modalità di authoring, seleziona il campo **[!UICONTROL Reddito imponibile]** e quindi l’icona ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Successivamente, seleziona **[!UICONTROL Crea]** per avviare l’editor di regole.
+1. In modalità di authoring, seleziona il campo **[!UICONTROL Reddito imponibile]** e quindi l’icona ![edit-rules](/help/forms/assets/edit-rules-icon.svg). In alternativa, è possibile selezionare il campo **[!UICONTROL Reddito imponibile]** direttamente dal riquadro **[!UICONTROL Oggetto Forms]**.
+1. Selezionare **[!UICONTROL Crea]** per creare la regola.
    ![Editor di regole, esempio 13](/help/edge/docs/forms/assets/rule-editor16.png)
 1. Seleziona **[!UICONTROL Seleziona opzione]** e scegli **[!UICONTROL Espressione matematica]**. Si apre un campo in cui scrivere espressioni matematiche.
    ![Editor di regole, esempio 14](/help/edge/docs/forms/assets/rule-editor17.png)
@@ -276,7 +282,7 @@ Scrivi quindi una regola per calcolare il `Taxable Income`, che è la differenza
 
    Aggiungi ora una regola per il campo `Tax Payable `, determinata moltiplicando il reddito imponibile per l’aliquota fiscale. Per semplicità, supponiamo un’aliquota fissa di `10%`.
 
-1. In modalità di authoring, seleziona il campo **[!UICONTROL Imposta dovuta]** e seleziona l’icona ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Quindi, seleziona **[!UICONTROL Crea]** per avviare l’editor di regole.
+1. In modalità di authoring, seleziona il campo **[!UICONTROL Imposta dovuta]** e seleziona l’icona ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Selezionare **[!UICONTROL Crea]** per creare le regole.
    ![Editor di regole, esempio 16](/help/edge/docs/forms/assets/rule-editor19.png)
 1. Seleziona **[!UICONTROL Seleziona opzione]** e seleziona **[!UICONTROL Espressione matematica]**. Si apre un campo in cui scrivere espressioni matematiche.
    ![Editor di regole, esempio 17](/help/edge/docs/forms/assets/rule-editor20.png)
@@ -364,9 +370,15 @@ Per utilizzare la funzione personalizzata nell’editor di regole:
 
    ![Funzione personalizzata nell’editor di regole](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 
-1. **Visualizza l’anteprima del modulo**: visualizza l’anteprima del modulo con la nuova funzione implementata.
+1. **Anteprima del modulo**: visualizza l&#39;anteprima del modulo con la funzione appena implementata.
 
-## Articoli correlati
+## Informazioni aggiuntive
+
+>[!NOTE]
+>
+> Nell’editor universale, le importazioni statiche e dinamiche non sono supportate negli script di funzioni personalizzati. Aggiungere il codice completo nel file `../[blocks]/form/functions.js`.
+
+Questo articolo fornisce informazioni limitate sull’editor di regole disponibile nell’editor universale. Per ulteriori informazioni sull’editor di regole e sulle funzioni personalizzate, consulta i seguenti articoli:
 
 {{see-also-rule-editor}}
 

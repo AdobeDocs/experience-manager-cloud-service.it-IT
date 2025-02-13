@@ -4,7 +4,7 @@ description: Scopri come salvare come bozza un modulo adattivo basato su compone
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 508265c72f458b062e1667fd42403743fa293586
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 <span class="preview"> Questo articolo contiene informazioni sulla funzionalità **Bozze**, una funzionalità non definitiva. La funzione pre-release è accessibile solo tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features).</span>
 
-Si consideri un utente che inizia a compilare un modulo ma deve sospendere e tornare in un secondo momento. L&#39;AEM offre un&#39;opzione `save-as-draft` che consente all&#39;utente di salvare il modulo come bozza per il completamento futuro. Per facilitare questa fase, AEM fornisce il componente **Bozze e invii** Portale dei moduli pronto all&#39;uso, che visualizza le bozze e gli invii sulle pagine AEM Sites. Il componente elenca i moduli salvati come bozze da completare in un secondo momento, nonché quelli inviati. Solo gli utenti connessi possono modificare le bozze o visualizzare i moduli inviati. Tuttavia, se un utente anonimo passa all&#39;elenco dei moduli utilizzando il componente **Ricerca e elenco** e salva un modulo come bozza, tale bozza non viene elencata dal componente **Bozze e invii**. Per visualizzare le bozze e gli invii, è necessario che gli utenti abbiano effettuato l&#39;accesso al momento dell&#39;invio del modulo.
+Si consideri un utente che inizia a compilare un modulo ma deve sospendere e tornare in un secondo momento. AEM offre un&#39;opzione `save-as-draft` che consente all&#39;utente di salvare il modulo come bozza per il completamento futuro. Per facilitare questa fase, AEM fornisce il componente predefinito **Bozze e invii** di Forms Portal, che consente di visualizzare le bozze e gli invii nelle pagine di AEM Sites. Il componente elenca i moduli salvati come bozze da completare in un secondo momento, nonché quelli inviati. Solo gli utenti connessi possono modificare le bozze o visualizzare i moduli inviati. Tuttavia, se un utente anonimo passa all&#39;elenco dei moduli utilizzando il componente **Ricerca e elenco** e salva un modulo come bozza, tale bozza non viene elencata dal componente **Bozze e invii**. Per visualizzare le bozze e gli invii, è necessario che gli utenti abbiano effettuato l&#39;accesso al momento dell&#39;invio del modulo.
 
 ![Icona Bozze](assets/drafts-component.png)
 
@@ -30,9 +30,9 @@ Si consideri un utente che inizia a compilare un modulo ma deve sospendere e tor
 
 ### Configurare il connettore di archiviazione e archiviazione unificata di Azure per il componente Forms Portal per bozze e invii
 
-Il componente **Bozze e invii** richiede una configurazione dell&#39;archiviazione per il salvataggio e l&#39;elenco delle bozze sulla pagina AEM Sites. Il connettore di archiviazione unificata offre un framework per collegare l’AEM allo storage esterno. Per salvare il modulo come bozza, verificare di disporre di un account di archiviazione Azure e di una chiave di accesso per autorizzare l&#39;accesso all&#39;account di archiviazione [!DNL Azure]. Una volta che disponi dell’account di archiviazione Azure e della chiave di accesso, effettua le seguenti operazioni per creare una configurazione di archiviazione Azure:
+Il componente **Bozze e invii** richiede una configurazione dell&#39;archiviazione per il salvataggio e l&#39;elenco delle bozze sulla pagina AEM Sites. Il connettore di archiviazione unificata offre un framework per collegare AEM con l’archiviazione esterna. Per salvare il modulo come bozza, verificare di disporre di un account di archiviazione Azure e di una chiave di accesso per autorizzare l&#39;accesso all&#39;account di archiviazione [!DNL Azure]. Una volta che disponi dell’account di archiviazione Azure e della chiave di accesso, effettua le seguenti operazioni per creare una configurazione di archiviazione Azure:
 
-1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
+1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Archiviazione Azure]**.
 
    ![Selezione scheda di archiviazione Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
 
@@ -80,7 +80,7 @@ Dopo aver configurato correttamente il connettore di archiviazione e archiviazio
 1. Vai a **[!UICONTROL Informazioni pagina]** > **[!UICONTROL Modifica modello]**
    ![Modifica criterio modello](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. Fai clic sul **[!UICONTROL Criterio]** e seleziona la casella di controllo **[!UICONTROL Bozze e invii]** in **[Nome progetto archetipo AEM] - Forms and Communications Portal**.
+1. Fai clic sul **[!UICONTROL Criterio]** e seleziona la casella di controllo **[!UICONTROL Bozze e invii]** in **[Nome progetto Archetipo AEM] - Forms and Communications Portal**.
 
    ![Selezione criteri](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
@@ -131,7 +131,7 @@ Per salvare un modulo come bozza, creare una regola **Salva modulo** in un compo
 1. Seleziona l&#39;icona **[!UICONTROL Modifica regole]** per aprire l&#39;editor di regole per il componente **Button**.
 1. Seleziona **[!UICONTROL Crea]** per configurare e creare la regola per il pulsante.
 1. Nella sezione **[!UICONTROL When]**, seleziona **is clicked** e nella sezione **[!UICONTROL Then]** seleziona l&#39;opzione **Save Form**.
-1. Seleziona **[!UICONTROL Fine]** per salvare la regola.
+1. Per salvare la regola, fai clic su **[!UICONTROL Fine]**.
 
    ![Crea regola per il pulsante](/help/forms/assets/save-form-as-drfat-create-rule.png)
 

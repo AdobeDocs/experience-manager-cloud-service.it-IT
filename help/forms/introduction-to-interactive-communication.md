@@ -3,13 +3,13 @@ title: Introduzione alla comunicazione interattiva
 description: Progettazione di comunicazioni dinamiche e basate su dati con facilità grazie alle comunicazioni interattive AEM Forms
 feature: Release Information
 role: Admin
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: 2b0231b960c7e7ded0fc891124f170feb45f9f2c
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 2%
 
 ---
-
 
 # Comunicazioni interattive
 
@@ -19,7 +19,17 @@ Le comunicazioni interattive centralizzano e gestiscono la creazione, l&#39;asse
 
 Dalle istituzioni finanziarie che generano estratti conto alle agenzie governative che semplificano le notifiche di benefit, le comunicazioni interattive sono lo strumento ideale per creare corrispondenza di alta qualità, sicura e legalmente conforme con facilità ed efficienza.
 
+
+<!--  >[!VIDEO](https://video.tv.adobe.com/v/3444094)
+
+[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+
+ ![Interactive Communication Editor](/help/assets/ic-editor.png)
+
+-->
+
 ![Editor di comunicazione interattiva](/help/forms/assets/ic-editor.png)
+
 
 ## Funzionalità di base
 
@@ -41,7 +51,7 @@ Le funzionalità principali dell’editor di comunicazioni interattive sono:
 
 ## Onboarding
 
-L’editor di comunicazioni interattive è disponibile nel programma di accesso anticipato per le distribuzioni di Forms as a Cloud Service. Per richiedere l&#39;accesso, invia un&#39;e-mail all&#39;ID organizzazione e ai dettagli del programma per le tue distribuzioni di Forms as a Cloud Service a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) dal tuo indirizzo ufficiale. Una volta ottenuto l&#39;accesso, inizia a [creare la prima corrispondenza](https://video.tv.adobe.com/v/3444094/).
+L’editor di comunicazioni interattive è disponibile nel programma di accesso anticipato per le distribuzioni di Forms as a Cloud Service. Per richiedere l&#39;accesso, invia un&#39;e-mail all&#39;ID organizzazione e ai dettagli del programma per le distribuzioni Forms as a Cloud Service a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) dal tuo indirizzo ufficiale. Una volta ottenuto l&#39;accesso, inizia a [creare la prima corrispondenza](https://video.tv.adobe.com/v/3444094/).
 
 
 ## Avanti
