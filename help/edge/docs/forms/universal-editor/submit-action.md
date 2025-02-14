@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 2cb18eb1bf755df48e2d9d10fabf3cdb95e79e57
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 3%
@@ -46,7 +46,7 @@ Per configurare un endpoint REST:
 
 {width=50%,height=50%}![Abilita post richiesta per moduli adattivi](/help/forms/assets/enable-post-request-ue.png)
 
->
+>[!NOTE]
 >
 > * Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, `/content/restEndPoint`. Per tali richieste successive, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
 > * Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell&#39;URL è `https://host:port/path_to_rest_end_point`. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.

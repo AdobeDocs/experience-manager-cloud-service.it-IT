@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a765af62628d8b6308d6f712f450a5a1e62640d9
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Puoi pubblicare qualsiasi **modulo adattivo basato su EDS** in Edge Delivery seg
 1. Per verificare lo stato di pubblicazione del modulo, fai di nuovo clic su **Pubblica**.
    ![Stato pubblicazione](/help/forms/assets/publish-status.png)
 
-1. Per **annullare la pubblicazione** di un modulo, apri il modulo nell&#39;editor, fai clic sul menu a tre punti in alto a destra e seleziona **Annulla pubblicazione**.
+1. Per **annullare la pubblicazione** di un modulo, apri il modulo nell&#39;editor, fai clic sul menu a tre punti in alto a destra e fai clic su **Annulla pubblicazione**.
    ![Annulla pubblicazione](/help/forms/assets/unpublish--form.png)
 
 ## Abilitare l’invio di moduli su Edge Delivery configurando un filtro Referrer per AEM Publisher
