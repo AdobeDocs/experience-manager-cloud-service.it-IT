@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
+source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 87%
@@ -53,8 +53,7 @@ Il blocco di moduli adattivi offre una struttura HTML standardizzata che semplif
 * **Aggiorna stili predefiniti**: è possibile modificare gli stili predefiniti di un modulo modificando il `/blocks/form/form.css file`. Questo file offre uno stile completo per un modulo, con supporto per i moduli della procedura guidata in più passaggi. Viene enfatizzato l’utilizzo di variabili CSS personalizzate per una facile modifica, manutenzione e uno stile uniforme tra i moduli. &lt;!- Per istruzioni sull&#39;aggiunta del blocco Forms adattivo al progetto, consultare [creare un modulo](/help/edge/docs/forms/create-forms.md).
 
 * **Stile CSS per Forms**: per garantire la corretta applicazione degli stili, racchiudi il CSS specifico per il modulo nel selettore `main .form form`. In questo modo, gli stili verranno indirizzati solo agli elementi del modulo all’interno dell’area del contenuto principale, evitando conflitti con altre parti del sito web.
-
-  Esempio:
+Esempio:
 
   ```css
   main .form form input {
@@ -68,8 +67,7 @@ Il blocco di moduli adattivi offre una struttura HTML standardizzata che semplif
   main .form form label {
     /* Add styles specific to labels inside the form */
   }
-  ```
-
+  
 ## Struttura dei componenti
 
 Il Blocco moduli adattivi offre una struttura HTML coerente per vari elementi del modulo, garantendo così uno stile e una gestione più semplici. Puoi manipolare i componenti utilizzando i CSS a scopo di stile.
