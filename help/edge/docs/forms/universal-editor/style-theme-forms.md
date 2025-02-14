@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: c7f973e373137654bd9c2084bd592ed392896cf1
+source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
 workflow-type: tm+mt
 source-wordcount: '1843'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -46,6 +46,29 @@ La comprensione dei [concetti CSS fondamentali](https://www.w3schools.com/css/cs
 * [Modello casella](https://www.w3schools.com/css/css_boxmodel.asp): il modello casella CSS descrive la struttura degli elementi HTML come un’area di contenuto circondata da riempimenti, bordi e margini.
 * Flexbox/Griglia: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) e [Layout griglia](https://www.w3schools.com/css/css_grid.asp) sono strumenti potenti per la creazione di progettazioni dinamiche e flessibili.
 
+## Applicazione di uno stile a un modulo per un blocco di moduli adattivi
+
+Il blocco di moduli adattivi offre una struttura HTML standardizzata che semplifica la selezione e lo stile dei componenti dei moduli:
+
+* **Aggiorna stili predefiniti**: è possibile modificare gli stili predefiniti di un modulo modificando il `/blocks/form/form.css file`. Questo file offre uno stile completo per un modulo, con supporto per i moduli della procedura guidata in più passaggi. Viene enfatizzato l’utilizzo di variabili CSS personalizzate per una facile modifica, manutenzione e uno stile uniforme tra i moduli. &lt;!- Per istruzioni sull&#39;aggiunta del blocco Forms adattivo al progetto, consultare [creare un modulo](/help/edge/docs/forms/create-forms.md).
+
+* **Stile CSS per Forms**: per garantire la corretta applicazione degli stili, racchiudi il CSS specifico per il modulo nel selettore `main .form form`. In questo modo, gli stili verranno indirizzati solo agli elementi del modulo all’interno dell’area del contenuto principale, evitando conflitti con altre parti del sito web.
+
+  Esempio:
+
+  ```css
+  main .form form input {
+    /* Add styles specific to input fields inside the form */
+  }
+  
+  main .form form button {
+    /* Add styles specific to buttons inside the form */
+  }
+  
+  main .form form label {
+    /* Add styles specific to labels inside the form */
+  }
+  ```
 
 ## Struttura dei componenti
 
@@ -137,30 +160,6 @@ main .form form .field-first-name input {
   border-radius: 4px;
 }
 ```
-
-**Formattazione di un modulo per il blocco Forms adattivo**
-
-Il blocco di moduli adattivi offre una struttura HTML standardizzata che semplifica la selezione e lo stile dei componenti dei moduli:
-
-* **Aggiorna stili predefiniti**: è possibile modificare gli stili predefiniti di un modulo modificando il `/blocks/form/form.css file`. Questo file offre uno stile completo per un modulo, con supporto per i moduli della procedura guidata in più passaggi. Viene enfatizzato l’utilizzo di variabili CSS personalizzate per una facile modifica, manutenzione e uno stile uniforme tra i moduli. &lt;!- Per istruzioni sull&#39;aggiunta del blocco Forms adattivo al progetto, consultare [creare un modulo](/help/edge/docs/forms/create-forms.md).
-
-* **Stile CSS per Forms**: per garantire la corretta applicazione degli stili, racchiudi il CSS specifico per il modulo nel selettore `main .form form`. In questo modo, gli stili verranno indirizzati solo agli elementi del modulo all’interno dell’area del contenuto principale, evitando conflitti con altre parti del sito web.
-
-  Esempio:
-
-  ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
-  
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
-  
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
-  ```
 
 +++
 

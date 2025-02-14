@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
+source-git-commit: da2f673319dd5cec764408b4517698a9d39031bb
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '735'
 ht-degree: 3%
 
 ---
@@ -140,3 +140,8 @@ L’opzione All’invio consente di configurare un messaggio di azione di invio 
 1. Al clic, viene visualizzata la seguente opzione:
    * **[!UICONTROL All&#39;invio]**: all&#39;invio consente di personalizzare un messaggio da visualizzare all&#39;invio di un modulo. Per impostazione predefinita, quando un modulo viene inviato correttamente, all’utente viene visualizzato il messaggio personalizzato &quot;Grazie per l’invio del modulo&quot;.
 Puoi anche personalizzare il messaggio di ringraziamento all&#39;invio del modulo selezionando l&#39;opzione per **[!UICONTROL Mostra messaggio]** e aggiungere/modificare il messaggio nel **Editor** Rich Text.
+
+
+## Consulta anche
+
+{{see-more-forms-eds}}
