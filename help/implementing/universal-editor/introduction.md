@@ -4,7 +4,7 @@ description: Scopri in che modo Universal Editor consente di modificare ciò che
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b8d56873b7bc23295fefc35a826b8047c626649e
+source-git-commit: 2947c4cb1fad7e1c7635a0e423a4adfe23013f79
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 52%
@@ -20,9 +20,9 @@ Universal Editor è un editor visivo versatile che fa parte di Adobe Experience 
 
 Universal Editor offre un’esperienza di authoring in-context efficiente e intuitiva che richiede una formazione minima. Con esso, gli autori possono gestire i loro contenuti direttamente nel contesto dell’esperienza web, esattamente come apparirà ai visitatori. Essendo un vero editor come servizio e complessivamente più flessibile, intende alla fine sostituire l’Editor pagina.
 
-Gli autori traggono vantaggio dalla flessibilità dell’Editor universale in quanto supporta lo stesso editing visivo coerente per tutte le forme di contenuto AEM: la modifica diretta e la composizione del layout sono possibili anche per i frammenti di contenuto e i componenti di pagina. Le due forme di contenuto possono anche essere modificate quando si presentano affiancate in un’esperienza web, senza che gli autori debbano cambiare contesto. Si tratta di un miglioramento enorme rispetto ai precedenti editor dell&#39;AEM che supportavano un solo tipo di contenuto.
+Gli autori traggono vantaggio dalla flessibilità dell’Editor universale in quanto supporta lo stesso editing visivo coerente per tutte le forme di contenuto AEM: la modifica diretta e la composizione del layout sono possibili anche per i frammenti di contenuto e i componenti di pagina. Le due forme di contenuto possono anche essere modificate quando si presentano affiancate in un’esperienza web, senza che gli autori debbano cambiare contesto. Si tratta di un miglioramento notevole rispetto ai precedenti editor in AEM che supportavano un solo tipo di contenuto.
 
-Gli sviluppatori traggono vantaggio dalla versatilità di Universal Editor in quanto supporta anche un vero e proprio disaccoppiamento dell’implementazione. Consente agli sviluppatori di utilizzare virtualmente qualsiasi framework o architettura a loro scelta, senza imporre vincoli di SDK o tecnologia. Questa flessibilità consente anche di dotare le app web esistenti di strumenti facilmente utilizzabili dall’editor universale, senza doverle riprogettare.
+Gli sviluppatori traggono vantaggio dalla versatilità di Universal Editor in quanto supporta anche un vero e proprio disaccoppiamento dell’implementazione. Consente agli sviluppatori di utilizzare virtualmente qualsiasi framework o architettura a loro scelta, senza imporre alcun vincolo di SDK o tecnologia. Questa flessibilità consente anche di dotare le app web esistenti di strumenti facilmente utilizzabili dall’editor universale, senza doverle riprogettare.
 
 ## Veramente universale {#universal}
 
@@ -87,10 +87,10 @@ Un professionista del marketing desidera creare contenuto personalizzato in base
 Quando esplori l’Editor universale e procedi alla sua implementazione nei tuoi progetti, tieni presenti le seguenti limitazioni.
 
 * Non più di 25 risorse AEM (frammenti di contenuto, pagine, frammenti di esperienza, Assets, ecc.) devono essere riferimenti come strumentazione su una singola pagina.
-* AEM as a Cloud Service e [AEM 6.5](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) sono gli unici back-end AEM supportati.
+* AEM as a Cloud Service e [AEM 6.5](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) sono gli unici backend AEM supportati.
 * È richiesta la versione di AEM as a Cloud Service `2023.8.13099` o successiva.
-* Gli autori dei contenuti devono avere un proprio account Experience Cloud.
-* Come parte di AEM, Universal Editor supporta gli stessi browser desktop di AEM.
+* Gli autori dei contenuti devono disporre di un proprio account Experience Cloud.
+* Come parte di AEM, l&#39;editor universale [supporta gli stessi browser desktop di AEM.](/help/overview/supported-platforms.md)
    * Le versioni mobili di questi browser non sono supportate.
 
 {{ue-ip-allow-lists}}
