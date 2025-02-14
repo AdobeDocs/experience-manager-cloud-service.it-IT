@@ -4,7 +4,7 @@ description: Gestisci documenti PDF in [!DNL Adobe Experience Manager] as a [!DN
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+source-git-commit: 1652df9e774d8212b1bcc2898ca5d57e2a0d13bc
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 6%
@@ -16,44 +16,44 @@ ht-degree: 6%
 | [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Experience Manager Assets si integra perfettamente con Document Cloud PDF Viewer, consentendo di visualizzare in anteprima più pagine di un documento PDF. È inoltre possibile utilizzare funzioni avanzate di visualizzazione di Document Cloud PDF, ad esempio annotazioni, testo da cercare, navigare nel documento di PDF utilizzando segnalibri e miniature e altro ancora nello stesso tetto. Experience Manager Assets consente inoltre di caricare documenti in altri formati supportati e di visualizzarli in anteprima in formato PDF.
+Experience Manager Assets si integra perfettamente con Document Cloud PDF Viewer, consentendo di visualizzare in anteprima più pagine di un documento PDF. Inoltre, è possibile utilizzare funzioni avanzate del visualizzatore PDF di Document Cloud, quali annotazioni, testo da cercare, navigare nel documento PDF utilizzando segnalibri e miniature e altro ancora nello stesso tetto. Experience Manager Assets consente inoltre di caricare documenti in altri formati supportati e di visualizzarli in anteprima in un formato PDF.
 
-Document Cloud PDF Viewer offre i seguenti vantaggi ad AEM Assets:
+Il visualizzatore PDF di Document Cloud offre ad AEM Assets i seguenti vantaggi:
 
 * [Supporto per i componenti visualizzatore Document Cloud di PDF](#pdf-doc-cloud)
-* [Supporto per Anteprima pagine multiple e Annotazioni per PDF Assets](#multi-page)
+* [Supporto per l’anteprima di più pagine e le annotazioni per la risorsa PDF](#multi-page)
 * [Supporto per l&#39;anteprima di più pagine per documenti in altri formati](#multi-format)
 
 >[!TIP]
 >
-> Se non riesci a ottenere l&#39;anteprima di più pagine di un documento di PDF caricato in precedenza, seleziona il PDF e fai clic su ![Rielabora](/help/assets/assets/Reprocess.svg) **Rielabora Assets**.
+> Se non riesci a ottenere l&#39;anteprima di più pagine di un documento PDF caricato in precedenza, seleziona il PDF e fai clic su ![Rielabora](/help/assets/assets/Reprocess.svg) **Rielabora Assets**.
 
 ## Supporto per i componenti visualizzatore Document Cloud di PDF {#pdf-doc-cloud}
 
 Il visualizzatore nativo di PDF Doc Cloud dispone dei seguenti componenti in AEM Assets:
 
-* **Il visualizzatore di PDF che utilizza le miniature di pagina** La visualizzazione delle miniature è una piccola anteprima delle pagine di un documento di PDF. Utilizzando le miniature, puoi passare direttamente alla pagina desiderata. Puoi accedere alle miniature del documento PDF selezionato tramite ![miniatura](/help/assets/assets/thumbnail.svg) nel riquadro a sinistra.
+* **Il visualizzatore PDF che utilizza le miniature di pagina** La visualizzazione delle miniature è una piccola anteprima delle pagine di un documento PDF. Utilizzando le miniature, puoi passare direttamente alla pagina desiderata. Puoi accedere alle miniature del documento PDF selezionato tramite ![miniatura](/help/assets/assets/thumbnail.svg) nel riquadro a sinistra.
 
-* **Il visualizzatore di PDF che utilizza i segnalibri** Bookmark è un collegamento diretto che consente di passare al contenuto del documento. Puoi accedere ai segnalibri del documento PDF selezionato tramite ![segnalibro](/help/assets/assets/bookmark.svg) nel riquadro a sinistra.
+* **Il visualizzatore PDF che utilizza i segnalibri** Bookmark è un collegamento diretto che consente di passare al contenuto del documento. Puoi accedere ai segnalibri del documento PDF selezionato tramite ![segnalibro](/help/assets/assets/bookmark.svg) nel riquadro a sinistra.
 
-* **Cerca in PDF** È possibile utilizzare la ricerca ![Cerca](/help/assets/assets/Search.svg) per cercare il testo nel documento di PDF.
+* **Cerca in PDF** Puoi utilizzare la ricerca ![cerca](/help/assets/assets/Search.svg) per cercare il testo nel documento di PDF.
 
 * **Pagina su/Pagina giù** Utilizzare Pagina su ![Pagina su](/help/assets/assets/ArrowUp.svg) o Pagina giù ![Pagina giù](/help/assets/assets/ArrowDown.svg) per scorrere il documento.
 
-* **Zoom indietro/Zoom avanti** Utilizza Zoom indietro ![Zoom indietro](/help/assets/assets/ZoomOut.svg) o Zoom avanti ![Zoom avanti](/help/assets/assets/ZoomIn.svg) per applicare una visualizzazione in sequenza al documento.
+* **Zoom indietro/Zoom avanti** Utilizza Zoom indietro ![Zoom indietro](/help/assets/assets/Zoom-out.svg) o Zoom avanti ![Zoom avanti](/help/assets/assets/zoom-in.svg) per applicare una visualizzazione in sequenza al documento.
 
 * **Adatta pagina** Utilizzare le dimensioni di larghezza e altezza per adattare il documento alle dimensioni dello schermo.
 
-* **Ancorare/Disancorare PDF** Utilizzando questa opzione è possibile ancorare o disancorare i componenti del visualizzatore nativo di PDF.
+* **Ancorare/Disinserire PDF** Utilizzando questa opzione è possibile ancorare o disancorare i componenti del visualizzatore nativo di PDF.
 
-## Supporto per Anteprima pagine multiple e Annotazioni per PDF Assets {#multi-page}
+## Supporto per l’anteprima di più pagine e le annotazioni per la risorsa PDF {#multi-page}
 
 Adobe Experience Manager Assets consente di visualizzare in anteprima un documento PDF costituito da diverse pagine. Per visualizzare in anteprima più pagine di un documento PDF, attenersi alla seguente procedura:
 
-1. Segui i passaggi per [caricare risorse in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
+1. Segui i passaggi per [caricare le risorse in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Sfogliare il documento PDF da caricare e visualizzare in anteprima.
 1. Aprire il documento.
-1. Per impostazione predefinita, il visualizzatore documenti di PDF viene caricato. Potete anche selezionare la rappresentazione PDF nel pannello della rappresentazione.
+1. Il visualizzatore documenti di PDF viene caricato per impostazione predefinita. Potete anche selezionare la rappresentazione PDF nel pannello della rappresentazione.
 1. Nel menu a discesa Rappresentazioni selezionare **Tutte le rappresentazioni**.
 
 Puoi anche applicare [annotazioni](#pdf-annotations) al documento PDF in un&#39;anteprima su più pagine.
@@ -74,9 +74,9 @@ Experience Manager Assets consente di aggiungere commenti a un documento PDF. Un
 
 Per annotare un documento PDF, effettuare le seguenti operazioni:
 
-1. Passa all’interfaccia di Assets e individua il documento PDF a cui desideri aggiungere un’annotazione. Il visualizzatore PDF nativo si apre a destra con l&#39;anteprima del documento PDF selezionato.
+1. Vai all’interfaccia di Assets e individua il documento PDF a cui desideri aggiungere un’annotazione. Il visualizzatore PDF nativo si apre a destra con l&#39;anteprima del documento PDF selezionato.
 1. Fai clic su **Annota** nel menu principale.
-Di seguito sono riportate le annotazioni che possono essere applicate a un documento PDF:
+Di seguito sono riportate le annotazioni che possono essere applicate a un documento di PDF:
 
 <table>
         <tr>
@@ -109,7 +109,7 @@ Di seguito sono riportate le annotazioni che possono essere applicate a un docum
         </tr>
         <tr>
             <td> Disegno <img src="/help/assets/assets/Draw.svg"> </td>
-            <td> Inserire un'immagine nel PDF. </td>
+            <td> Inserisce un'immagine visiva in PDF. </td>
         </tr>
         <tr>
             <td> <img src="/help/assets/assets/Erase.svg"> Cancella disegno </td>
@@ -123,13 +123,13 @@ Di seguito sono riportate le annotazioni che possono essere applicate a un docum
 
 ## Supporto per l&#39;anteprima di più pagine per documenti in altri formati {#multi-format}
 
-Oltre ai documenti PDF, è possibile visualizzare in anteprima più pagine per i documenti in altri tipi di formato. I tipi di formato di documento supportati sono TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX. Experience Manager Assets converte automaticamente questi formati di documento in un formato PDF e li rende disponibili per l&#39;anteprima.
+Oltre ai documenti di PDF, è possibile visualizzare in anteprima più pagine per i documenti in altri tipi di formato. I tipi di formato di documento supportati sono TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX. Experience Manager Assets converte automaticamente questi formati di documento in un formato PDF e li rende disponibili per l&#39;anteprima.
 
 ![Anteprima multipagina di documenti in altri formati](/help/assets/assets/multi-page-other-formats.png)
 
 Per l&#39;anteprima di più pagine di altri formati di documento supportati, effettuare le seguenti operazioni:
 
-1. Segui i passaggi per [caricare risorse in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
+1. Segui i passaggi per [caricare le risorse in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Sfogliare il documento da caricare e visualizzare in anteprima.
 1. Aprire il documento.
 1. Seleziona PDF nella sezione statica del pannello a sinistra. Il pannello a destra mostra l’anteprima di più pagine di una risorsa. Seleziona la miniatura dal pannello a sinistra per scegliere la pagina da visualizzare in anteprima.
