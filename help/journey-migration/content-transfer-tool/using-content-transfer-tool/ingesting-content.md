@@ -1,12 +1,12 @@
 ---
 title: Acquisizione di contenuti in Cloud Service
-description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza del Cloud Service di destinazione.
+description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i contenuti dal set di migrazione in un’istanza Cloud Service di destinazione.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 01c2bda6b688bb85a214991f7594585f87850ec2
 workflow-type: tm+mt
-source-wordcount: '3411'
+source-wordcount: '3441'
 ht-degree: 12%
 
 ---
@@ -43,7 +43,7 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
       * Le acquisizioni non supportano destinazioni di tipo RDE (Rapid Development Environment) o Anteprima e non vengono visualizzate come possibile scelta di destinazione, anche se l’utente ha accesso a esse.
       * Anche se un set di migrazione può essere acquisito in più destinazioni contemporaneamente, una destinazione può essere la destinazione di una sola acquisizione in esecuzione o in attesa alla volta.
 
-   * **Livello:** Selezionare il livello. (Autore/Publish).
+   * **Livello:** Selezionare il livello. (Autore/Pubblicazione).
       * Se l&#39;origine era `Author`, si consiglia di acquisirla nel livello `Author` sulla destinazione. Analogamente, se l&#39;origine è `Publish`, anche la destinazione dovrebbe essere `Publish`.
 
    >[!NOTE]
@@ -53,19 +53,19 @@ Per acquisire il set di migrazione utilizzando Cloud Acceleration Manager, effet
    > Se il livello di destinazione è `Publish`, l&#39;istanza di pubblicazione rimane in esecuzione durante l&#39;acquisizione.  Tuttavia, se il processo di compattazione è in esecuzione durante l’acquisizione, è probabile che si verifichi un conflitto tra i due processi.  Per questo motivo, il processo di acquisizione 1) disabilita lo script di compattazione temporizzata, in modo che la compattazione non venga avviata durante l’acquisizione, e 2) verifica se la compattazione è attualmente in esecuzione e, in caso affermativo, attende il completamento prima che l’acquisizione proceda.  Se l’acquisizione per la pubblicazione richiede più tempo del previsto, controlla i registri di acquisizione per individuare le istruzioni di registro correlate.
 
    * **Cancellazione:** Scegliere il valore `Wipe`
-      * L&#39;opzione **Cancella** imposta il punto iniziale della destinazione per l&#39;acquisizione. Se **Cancella** è abilitato, la destinazione, incluso tutto il suo contenuto, verrà reimpostata sulla versione dell&#39;AEM specificata in Cloud Manager. Se non è abilitata, la destinazione mantiene il contenuto corrente come punto di partenza.
+      * L&#39;opzione **Cancella** imposta il punto iniziale della destinazione per l&#39;acquisizione. Se **Cancella** è abilitato, la destinazione, incluso tutto il suo contenuto, verrà reimpostata sulla versione di AEM specificata in Cloud Manager. Se non è abilitata, la destinazione mantiene il contenuto corrente come punto di partenza.
       * Questa opzione **NON** influisce sul modo in cui verrà eseguita l&#39;acquisizione del contenuto. L&#39;acquisizione utilizza sempre una strategia di sostituzione dei contenuti e _non_ una strategia di unione dei contenuti. Pertanto, nei casi **Cancella** e **Non Cancella**, l&#39;acquisizione di un set di migrazione sovrascriverà i contenuti nello stesso percorso sulla destinazione. Ad esempio, se il set di migrazione contiene `/content/page1` e la destinazione contiene già `/content/page1/product1`, l&#39;acquisizione rimuove l&#39;intero percorso `page1` e le relative pagine secondarie, incluso `product1`, e lo sostituisce con il contenuto nel set di migrazione. Ciò significa che è necessario eseguire un&#39;attenta pianificazione durante l&#39;esecuzione di un&#39;acquisizione **Non-Wipe** in una destinazione che contiene qualsiasi contenuto che deve essere mantenuto.
       * Le acquisizioni non wipe sono progettate appositamente per il caso d’uso di acquisizione integrativa. Queste acquisizioni mirano ad avere una quantità incrementale di nuovi contenuti che sono cambiati rispetto all’ultima acquisizione in un set di migrazione esistente. Al di fuori di questo caso d’uso, l’esecuzione di acquisizioni senza cancellazione potrebbe richiedere tempi di acquisizione molto lunghi.
 
    >[!IMPORTANT]
-   > Se l&#39;impostazione **Cancella** è abilitata per l&#39;acquisizione, verrà ripristinato l&#39;intero archivio esistente, incluse le autorizzazioni utente sull&#39;istanza del Cloud Service di destinazione. La reimpostazione è vera anche per un utente amministratore aggiunto al gruppo **amministratori** e tale utente deve essere aggiunto nuovamente al gruppo amministratori per avviare un&#39;acquisizione.
+   > Se l&#39;impostazione **Cancella** è abilitata per l&#39;acquisizione, verrà ripristinato l&#39;intero archivio esistente, incluse le autorizzazioni utente sull&#39;istanza di Cloud Service di destinazione. La reimpostazione è vera anche per un utente amministratore aggiunto al gruppo **amministratori** e tale utente deve essere aggiunto nuovamente al gruppo amministratori per avviare un&#39;acquisizione.
 
    * **Pre-copia:** Scegli il valore `Pre-copy`
       * Puoi eseguire il passaggio di pre-copia opzionale per velocizzare notevolmente l’acquisizione. Per ulteriori dettagli, vedi [Acquisizione con AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
       * Se si utilizza l’acquisizione con pre-copia (per S3 o Azure Data Store), si consiglia di eseguire prima l’acquisizione `Author` da sola. In questo modo l&#39;acquisizione di `Publish` risulta più rapida quando viene eseguita in un secondo momento.
 
    >[!IMPORTANT]
-   > Puoi avviare un&#39;acquisizione nell&#39;ambiente di destinazione solo se appartieni al gruppo locale **amministratori AEM** nel servizio di authoring del Cloud Service di destinazione. Se non riesci ad avviare un&#39;acquisizione, vedi [Impossibile avviare l&#39;acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) per ulteriori dettagli.
+   > Puoi avviare un&#39;acquisizione nell&#39;ambiente di destinazione solo se appartieni al gruppo **amministratori AEM** locale nel servizio Cloud Service Author di destinazione. Se non riesci ad avviare un&#39;acquisizione, vedi [Impossibile avviare l&#39;acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) per ulteriori dettagli.
 
 1. Una volta selezionate le opzioni di acquisizione, è possibile visualizzarne una stima della durata. Si tratta di una stima ottimale basata su dati storici di acquisizioni simili.
 
@@ -122,7 +122,7 @@ Inizia creando un processo di acquisizione e assicurati che **Cancella** sia dis
 
 ### CAM: impossibile recuperare il token di migrazione {#cam-unable-to-retrieve-the-migration-token}
 
-Il recupero automatico del token di migrazione potrebbe non riuscire per diversi motivi, inclusa la [configurazione di un elenco consentiti IP tramite Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) nell&#39;ambiente del Cloud Service di destinazione. In questi scenari, quando tenti di avviare un’acquisizione viene visualizzata la seguente finestra di dialogo:
+Il recupero automatico del token di migrazione potrebbe non riuscire per diversi motivi, inclusa la [configurazione di un elenco consentiti IP tramite Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) nell&#39;ambiente Cloud Service di destinazione. In questi scenari, quando tenti di avviare un’acquisizione viene visualizzata la seguente finestra di dialogo:
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -130,17 +130,17 @@ Recupera manualmente il token di migrazione facendo clic sul collegamento &quot;
 
 >[!NOTE]
 >
->Il token è disponibile per gli utenti che appartengono al gruppo **Amministratori AEM** locale nel servizio Author del Cloud Service di destinazione.
+>Il token è disponibile per gli utenti che appartengono al gruppo **amministratori AEM** locale nel servizio Cloud Service Author di destinazione.
 
 ### Impossibile avviare l’acquisizione {#unable-to-start-ingestion}
 
-Puoi avviare un&#39;acquisizione nell&#39;ambiente di destinazione solo se appartieni al gruppo locale **amministratori AEM** nel servizio di authoring del Cloud Service di destinazione. Se non appartieni al gruppo di amministratori AEM, quando tenti di avviare un’acquisizione viene visualizzato un errore come mostrato di seguito. Puoi chiedere all&#39;amministratore di aggiungerti ai **amministratori AEM** locali oppure di richiedere il token stesso, che potrai quindi incollare nel campo **Input token di migrazione**.
+Puoi avviare un&#39;acquisizione nell&#39;ambiente di destinazione solo se appartieni al gruppo **amministratori AEM** locale nel servizio Cloud Service Author di destinazione. Se non appartieni al gruppo amministratori di AEM, quando tenti di avviare un’acquisizione viene visualizzato un errore come mostrato di seguito. Puoi chiedere all&#39;amministratore di aggiungerti agli **amministratori AEM** locali oppure di richiedere il token stesso, che potrai quindi incollare nel campo **Input token di migrazione**.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ### Impossibile raggiungere il servizio di migrazione {#unable-to-reach-migration-service}
 
-Dopo aver richiesto un’acquisizione, è possibile che venga visualizzato all’utente un messaggio simile al seguente: &quot;Il servizio di migrazione nell’ambiente di destinazione non è raggiungibile. In tal caso, riprova più tardi o contatta l’assistenza Adobe.&quot;
+Dopo aver richiesto un’acquisizione, è possibile che venga visualizzato all’utente un messaggio simile al seguente: &quot;Il servizio di migrazione nell’ambiente di destinazione non è raggiungibile. In tal caso, riprova più tardi o contatta il supporto Adobe.&quot;
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
@@ -151,25 +151,25 @@ Questo messaggio indica che Cloud Acceleration Manager non è riuscito a raggiun
 > Viene visualizzato il campo &quot;Token di migrazione&quot; perché in alcuni casi è ciò che non è consentito recuperare il token. Consentendo la trasmissione manuale, può consentire all’utente di avviare l’acquisizione rapidamente, senza alcun aiuto aggiuntivo. Se il token è fornito e il messaggio viene ancora visualizzato, il problema non era il recupero del token.
 
 * AEM as a Cloud Service mantiene lo stato dell’ambiente e, occasionalmente, deve riavviare il servizio di migrazione per vari motivi normali. Se il servizio viene riavviato, non potrà essere raggiunto, ma sarà disponibile alla fine.
-* È possibile che nell’istanza sia in esecuzione un altro processo. Ad esempio, se [Aggiornamenti versione AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) applica un aggiornamento, è possibile che il sistema sia occupato e che il servizio di migrazione non sia regolarmente disponibile. Al termine di questo processo, è possibile tentare di nuovo l’inizio dell’acquisizione.
+* È possibile che nell’istanza sia in esecuzione un altro processo. Se ad esempio [Aggiornamenti della versione di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) applica un aggiornamento, è possibile che il sistema sia occupato e che il servizio di migrazione non sia regolarmente disponibile. Al termine di questo processo, è possibile tentare di nuovo l’inizio dell’acquisizione.
 * Se è stato applicato un Inserisco nell&#39;elenco Consentiti di [IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) tramite Cloud Manager, Cloud Acceleration Manager non potrà raggiungere il servizio di migrazione. Non è possibile aggiungere un indirizzo IP per le acquisizioni perché il relativo indirizzo è dinamico. Attualmente, l’unica soluzione consiste nel disabilitare il inserisco nell&#39;elenco Consentiti di indicizzazione e acquisizione dell’IP durante il processo di acquisizione.
 * Ci possono essere altri motivi che richiedono un&#39;indagine. Se l’acquisizione o l’indicizzazione continua a non riuscire, contatta l’Assistenza clienti di Adobe.
 
 ### Aggiornamenti e acquisizioni delle versioni di AEM {#aem-version-updates-and-ingestions}
 
-[Gli aggiornamenti della versione dell&#39;AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) vengono applicati automaticamente agli ambienti per mantenerli aggiornati con la versione di AEM as a Cloud Service più recente. Se l’aggiornamento viene attivato quando viene eseguita un’acquisizione, possono verificarsi risultati imprevedibili, incluso il danneggiamento dell’ambiente.
+[Gli aggiornamenti della versione di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) vengono applicati automaticamente agli ambienti per mantenerli aggiornati con la versione di AEM as a Cloud Service più recente. Se l’aggiornamento viene attivato quando viene eseguita un’acquisizione, possono verificarsi risultati imprevedibili, incluso il danneggiamento dell’ambiente.
 
-Se nel programma di destinazione è stato effettuato l’onboarding di &quot;Aggiornamenti della versione dell’AEM&quot;, il processo di acquisizione tenta di disabilitare la coda prima dell’avvio. Al termine dell’acquisizione, lo stato del programma di aggiornamento della versione viene ripristinato come era prima dell’inizio delle acquisizioni.
-
->[!NOTE]
->
-> Non è più necessario registrare un ticket di supporto per disabilitare &quot;Aggiornamenti della versione AEM&quot;.
-
-Se &quot;Aggiornamenti della versione dell’AEM&quot; è attivo (ovvero, gli aggiornamenti sono in esecuzione o sono in coda per l’esecuzione), l’acquisizione non inizierà e l’interfaccia utente visualizza il seguente messaggio. Una volta completati gli aggiornamenti, è possibile avviare l’acquisizione. Cloud Manager può essere utilizzato per visualizzare lo stato corrente delle pipeline del programma.
+Se nel programma di destinazione è stato effettuato l’onboarding di &quot;Aggiornamenti della versione di AEM&quot;, il processo di acquisizione tenta di disabilitare la coda prima dell’avvio. Al termine dell’acquisizione, lo stato del programma di aggiornamento della versione viene ripristinato come era prima dell’inizio delle acquisizioni.
 
 >[!NOTE]
 >
-> &quot;Aggiornamenti della versione dell’AEM&quot; viene eseguito nella pipeline dell’ambiente e attende che la pipeline sia pulita. Se gli aggiornamenti vengono messi in coda per un periodo più lungo del previsto, accertati che in un flusso di lavoro personalizzato la pipeline non sia bloccata involontariamente.
+> Non è più necessario registrare un ticket di supporto per disabilitare &quot;Aggiornamenti della versione di AEM&quot;.
+
+Se &quot;Aggiornamenti della versione di AEM&quot; è attivo (ovvero, gli aggiornamenti sono in esecuzione o sono in coda per l’esecuzione), l’acquisizione non inizierà e l’interfaccia utente visualizza il seguente messaggio. Una volta completati gli aggiornamenti, è possibile avviare l’acquisizione. Cloud Manager può essere utilizzato per visualizzare lo stato corrente delle pipeline del programma.
+
+>[!NOTE]
+>
+> &quot;Aggiornamenti della versione di AEM&quot; viene eseguito nella pipeline dell’ambiente e attende che la pipeline sia pulita. Se gli aggiornamenti vengono messi in coda per un periodo più lungo del previsto, accertati che in un flusso di lavoro personalizzato la pipeline non sia bloccata involontariamente.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
@@ -180,7 +180,7 @@ Se &quot;Aggiornamenti della versione dell’AEM&quot; è attivo (ovvero, gli ag
 >title="Ambiente cloud che non presenta lo stato Pronto"
 >abstract="In rare istanze, nell’ambiente cloud di destinazione potrebbero verificarsi problemi imprevisti che causano il fallimento dell’acquisizione."
 
-In rari casi, nell’ambiente del Cloud Service di destinazione dell’acquisizione potrebbero verificarsi problemi imprevisti. Di conseguenza, l’acquisizione non riuscirà perché l’ambiente non è nello stato &quot;ready&quot; previsto. Controlla il registro di acquisizione per visualizzare ulteriori dettagli sullo stato di errore riscontrato.
+In rari casi, nell’ambiente Cloud Service di destinazione dell’acquisizione potrebbero verificarsi problemi imprevisti. Di conseguenza, l’acquisizione non riuscirà perché l’ambiente non è nello stato &quot;ready&quot; previsto. Controlla il registro di acquisizione per visualizzare ulteriori dettagli sullo stato di errore riscontrato.
 
 Assicurati che l’ambiente di authoring sia disponibile e attendi alcuni minuti prima di ripetere l’acquisizione. Se il problema persiste, contatta l’assistenza clienti segnalando lo stato di errore riscontrato.
 
@@ -239,7 +239,7 @@ Questa è una restrizione di MongoDB.
 
 Per ulteriori informazioni e un collegamento a uno strumento Oak che consenta di trovare tutti i nodi di grandi dimensioni, vedere la nota `Node property value in MongoDB` in [Prerequisiti per lo strumento Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md). Dopo aver risolto tutti i nodi con dimensioni elevate, esegui di nuovo l’estrazione e l’acquisizione.
 
-Per evitare questa restrizione, eseguire [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sull&#39;istanza AEM di origine e rivedere i risultati che presenta, in particolare il pattern [&quot;Unsupported Repository Structure&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
+Per evitare questa restrizione, esegui [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sull&#39;istanza AEM di origine e controlla i risultati che presenta, in particolare il pattern [&quot;Unsupported Repository Structure&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
 
 >[!NOTE]
 >
@@ -258,6 +258,7 @@ Talvolta, problemi intermittenti inattesi potrebbero prestarsi a acquisizioni no
 
 * `Atlas prescale timeout error` - La fase di acquisizione tenterà di prescrivere il database cloud di destinazione a una dimensione appropriata che sia allineata alle dimensioni del contenuto del set di migrazione da acquisire. Di rado, questa operazione non viene completata entro il periodo di tempo previsto.
 * `Exhausted mongo restore retries` - I tentativi di ripristinare un dump locale del contenuto del set di migrazione acquisito nel database cloud sono stati esauriti. Questo indica un problema generale di salute/rete con MongoDB, che spesso guarisce se stesso dopo pochi minuti.
+* `Mongo network error` - A volte, stabilire una connessione a MongoDB può non riuscire, causando l’uscita anticipata del processo di acquisizione e la segnalazione di errore. Deve essere effettuato un semplice nuovo tentativo di acquisizione.
 
 ### Acquisizione annullata {#ingestion-rescinded}
 
@@ -272,12 +273,12 @@ Un’acquisizione creata con un’estrazione in esecuzione come set di migrazion
 
 In generale, non è consigliabile modificare i dati dell’ambiente cloud tra una acquisizione e l’altra.
 
-Quando una risorsa viene eliminata dalla destinazione del Cloud Service utilizzando l’interfaccia utente Assets Touch, i dati del nodo vengono eliminati, ma il BLOB della risorsa con l’immagine non viene eliminato immediatamente. Viene contrassegnato per l’eliminazione in modo che non venga più visualizzato nell’interfaccia utente; tuttavia, rimane nell’archivio dati fino a quando non si verifica la raccolta di oggetti inattivi e il BLOB viene rimosso.
+Quando una risorsa viene eliminata dalla destinazione Cloud Service tramite l’interfaccia utente Assets Touch, i dati del nodo vengono eliminati, ma il BLOB della risorsa con l’immagine non viene eliminato immediatamente. Viene contrassegnato per l’eliminazione in modo che non venga più visualizzato nell’interfaccia utente; tuttavia, rimane nell’archivio dati fino a quando non si verifica la raccolta di oggetti inattivi e il BLOB viene rimosso.
 
 Se una risorsa migrata in precedenza viene eliminata e l’acquisizione successiva viene eseguita prima che il Garbage Collector abbia completato l’eliminazione della risorsa, l’acquisizione dello stesso set di migrazione non ripristinerà la risorsa eliminata. Quando l’acquisizione controlla l’ambiente cloud della risorsa, non sono presenti dati del nodo; pertanto, l’acquisizione copia i dati del nodo nell’ambiente cloud. Tuttavia, quando controlla l’archivio BLOB, vede che il BLOB è presente e salta la copia del BLOB. Per questo motivo i metadati sono presenti dopo l’acquisizione quando la risorsa viene esaminata dall’interfaccia utente touch, ma l’immagine no. I set di migrazione e l’acquisizione dei contenuti non sono stati progettati per gestire questo caso. Hanno lo scopo di aggiungere nuovi contenuti all’ambiente cloud e non ripristinare i contenuti migrati in precedenza.
 
 ## Passaggio successivo {#whats-next}
 
-Quando l’acquisizione viene completata correttamente, l’indicizzazione AEM viene avviata automaticamente. Per ulteriori informazioni, vedere [Indicizzazione dopo la migrazione del contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md).
+Una volta completata l’acquisizione, l’indicizzazione AEM viene avviata automaticamente. Per ulteriori informazioni, vedere [Indicizzazione dopo la migrazione del contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md).
 
-Una volta completato l’inserimento del contenuto nel Cloud Service, puoi visualizzare i registri di ciascun passaggio (estrazione e acquisizione) e cercare gli errori. Per ulteriori informazioni, consulta [Visualizzazione dei registri per un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md).
+Una volta completato l’inserimento dei contenuti in Cloud Service, puoi visualizzare i registri di ogni passaggio (estrazione e acquisizione) e cercare gli errori. Per ulteriori informazioni, consulta [Visualizzazione dei registri per un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md).
