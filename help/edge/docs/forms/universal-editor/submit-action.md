@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '733'
 ht-degree: 3%
 
 ---
-
 
 # Azione di invio modulo adattivo
 
@@ -44,7 +44,7 @@ Per configurare un endpoint REST:
 1. Specifica l’URL dell’endpoint REST.
 1. Puoi anche **abilitare la richiesta POST** e fornire un URL per pubblicare la richiesta.
 
-{width=50%,height=50%}![Abilita post richiesta per moduli adattivi](/help/forms/assets/enable-post-request-ue.png)
+![Abilita richiesta post per moduli adattivi](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Invia azione di invio e-mail consente di inviare un messaggio e-mail a uno o pi�
 1. Consente di semplificare il flusso di lavoro integrando direttamente l’invio dei moduli nelle notifiche e-mail.
 1. Aiuta le organizzazioni a personalizzare il contenuto delle e-mail, adattandolo quindi a specifiche esigenze di comunicazione.
 
-{width=50%,height=50%}![Proprietà modulo adattivo nell&#39;editor universale](/help/forms/assets/submit-actions-ue.png)
+![Proprietà modulo adattivo nell&#39;editor universale](/help/forms/assets/submit-actions-ue.png)
 
 
 Per configurare un’azione di invio come E-mail per l’invio del modulo:
@@ -140,5 +140,3 @@ L’opzione All’invio consente di configurare un messaggio di azione di invio 
 1. Al clic, viene visualizzata la seguente opzione:
    * **[!UICONTROL All&#39;invio]**: all&#39;invio consente di personalizzare un messaggio da visualizzare all&#39;invio di un modulo. Per impostazione predefinita, quando un modulo viene inviato correttamente, all’utente viene visualizzato il messaggio personalizzato &quot;Grazie per l’invio del modulo&quot;.
 Puoi anche personalizzare il messaggio di ringraziamento all&#39;invio del modulo selezionando l&#39;opzione per **[!UICONTROL Mostra messaggio]** e aggiungere/modificare il messaggio nel **Editor** Rich Text.
-
-
