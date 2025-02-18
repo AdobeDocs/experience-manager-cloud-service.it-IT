@@ -4,10 +4,10 @@ description: Scopri i campi e i tipi di componenti che l’Editor universale pu�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 13%
+source-wordcount: '1496'
+ht-degree: 11%
 
 ---
 
@@ -24,7 +24,7 @@ Questo documento fornisce una panoramica della definizione di un modello, dei ca
 
 >[!TIP]
 >
->Se non sai come gestire l&#39;app per l&#39;editor universale, consulta il documento [Panoramica dell&#39;editor universale per gli sviluppatori AEM](/help/implementing/universal-editor/developer-overview.md).
+>Se non sai come gestire l&#39;app per l&#39;editor universale, consulta il documento [Panoramica dell&#39;editor universale per sviluppatori AEM](/help/implementing/universal-editor/developer-overview.md).
 
 ## Struttura definizione modello {#model-structure}
 
@@ -43,11 +43,41 @@ La definizione del modello è una struttura JSON che inizia con un array di mode
 
 Consulta la sezione **[Fields](#fields)** di questo documento per ulteriori informazioni su come definire l&#39;array `fields`.
 
+È possibile collegare un modello a un componente in due modi: utilizzando la [definizione del componente](#component-definition) o [tramite la strumentazione.](#instrumentation)
+
+### Collegamento tramite la definizione del componente {#component-definition}
+
+Questo è il metodo preferito per collegare il modello al componente. In questo modo puoi mantenere il collegamento a livello centrale nella definizione del componente e consentire il trascinamento dei componenti tra i contenitori.
+
+È sufficiente includere la proprietà `model` nella direttiva `template` nel file component-definition.json.
+
+```json
+...
+"template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  ...
+           }
+...
+```
+
+Per informazioni dettagliate, vedere il documento [Definizione del componente.](/help/implementing/universal-editor/component-definition.md)
+
+### Collegamento tramite strumentazione {#instrumentation}
+
 Per utilizzare la definizione del modello con un componente, è possibile utilizzare l&#39;attributo `data-aue-model`.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
 ```
+
+>[!NOTE]
+>
+>Prima di controllare la definizione del componente, Universal Editor controlla se un modello è collegato tramite la strumentazione e lo utilizza. Ciò significa che:
+>
+>* I progetti che hanno implementato il collegamento al modello tramite la strumentazione continueranno a funzionare così come sono senza bisogno di modifiche.
+>* Se si definisce il modello nella [definizione del componente](#component-definition) e nella strumentazione, la strumentazione verrà sempre utilizzata.
 
 ## Caricamento di una definizione di modello {#loading-model}
 
@@ -111,7 +141,7 @@ Di seguito sono elencati i tipi di componenti che è possibile utilizzare per il
 
 #### Tag AEM {#aem-tag}
 
-Un tipo di componente tag AEM abilita un selettore di tag AEM, che può essere utilizzato per allegare i tag al componente.
+Un tipo di componente Tag di AEM abilita un selettore di tag di AEM, che può essere utilizzato per allegare i tag al componente.
 
 >[!BEGINTABS]
 
@@ -133,17 +163,17 @@ Un tipo di componente tag AEM abilita un selettore di tag AEM, che può essere u
 
 >[!TAB Schermata]
 
-![Schermata del tipo di componente tag AEM](assets/component-types/aem-tag-picker.png)
+![Schermata del tipo di componente tag di AEM](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
 #### Contenuto AEM {#aem-content}
 
-Un tipo di componente di contenuto AEM abilita un selettore di contenuti AEM, che può essere utilizzato per selezionare qualsiasi risorsa AEM. A differenza del [componente di riferimento](#reference), che può solo selezionare le risorse, il componente contenuto AEM può fare riferimento a qualsiasi contenuto AEM. Offre un tipo di convalida aggiuntivo.
+Un tipo di componente contenuto di AEM abilita un selettore di contenuti di AEM, che può essere utilizzato per selezionare qualsiasi risorsa AEM. A differenza del [componente di riferimento](#reference), che può selezionare solo le risorse, il componente di contenuto AEM può fare riferimento a qualsiasi contenuto AEM. Offre un tipo di convalida aggiuntivo.
 
 | Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
-| `rootPath` | `string` | Percorso che il selettore di contenuti aprirà per consentire all’utente di selezionare il contenuto AEM, limitando la selezione a tale directory e sottodirectory | No |
+| `rootPath` | `string` | Percorso che il selettore contenuto aprirà per consentire all’utente di selezionare il contenuto di AEM, limitando la selezione a tale directory e sottodirectory | No |
 
 >[!BEGINTABS]
 
@@ -169,7 +199,7 @@ Un tipo di componente di contenuto AEM abilita un selettore di contenuti AEM, ch
 
 >[!TAB Schermata]
 
-![Schermata del tipo di componente contenuto AEM](assets/component-types/aem-content-picker.png)
+![Schermata del tipo di componente contenuto di AEM](assets/component-types/aem-content-picker.png)
 
 >[!ENDTABS]
 
@@ -650,7 +680,7 @@ Un tipo di componente gruppo di scelta consente una selezione reciprocamente esc
 
 #### Riferimento {#reference}
 
-Un tipo di componente di riferimento abilita un selettore di risorse AEM, che può essere utilizzato per selezionare qualsiasi risorsa AEM a cui fare riferimento. A differenza del [componente contenuto AEM](#aem-content), che può selezionare qualsiasi risorsa AEM, il componente di riferimento può fare riferimento solo alle risorse. Offre un tipo di convalida aggiuntivo.
+Un tipo di componente di riferimento abilita un selettore risorse di AEM, che può essere utilizzato per selezionare qualsiasi risorsa di AEM a cui fare riferimento. A differenza del [componente contenuto AEM](#aem-content), che può selezionare qualsiasi risorsa AEM, il componente di riferimento può fare riferimento solo alle risorse. Offre un tipo di convalida aggiuntivo.
 
 Un tipo di componente di riferimento consente un riferimento a un altro oggetto dati dall&#39;oggetto corrente.
 
@@ -763,7 +793,7 @@ Un tipo di componente seleziona consente di selezionare una singola opzione da u
 
 >[!ENDTABS]
 
-#### Linguetta {#tab}
+#### Tab {#tab}
 
 Un tipo di componente Scheda consente di raggruppare altri campi di input in più schede per migliorare l’organizzazione del layout per gli autori.
 

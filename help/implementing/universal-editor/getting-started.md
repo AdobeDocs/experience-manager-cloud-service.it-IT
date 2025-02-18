@@ -4,7 +4,7 @@ description: Scopri come accedere all’editor universale e come iniziare a prep
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 38%
@@ -20,7 +20,7 @@ Scopri come accedere all’editor universale e come iniziare a preparare la tua 
 >
 >Se preferisci immergerti direttamente in un esempio, puoi rivedere l&#39;[app di esempio dell&#39;editor universale su GitHub](https://github.com/adobe/universal-editor-sample-editable-app).
 
-Sebbene Universal Editor possa modificare il contenuto da qualsiasi origine, questo documento utilizzerà come esempio un’app AEM. Questo documento ti guiderà attraverso questi passaggi.
+Anche se l’editor universale può modificare il contenuto da qualsiasi origine, questo documento utilizzerà come esempio un’app AEM. Questo documento ti guiderà attraverso questi passaggi.
 
 ## Prepara la pagina {#instrument-page}
 
@@ -139,8 +139,8 @@ Se disponi di un progetto AEM esistente che utilizza [l&#39;editor di pagine](/h
 
 AEM aprirà l’Editor universale per le pagine basate su questa configurazione nell’ordine seguente.
 
-1. AEM controllerà le mappature in `Universal Editor Opening Mapping` e se il contenuto si trova in uno dei percorsi qui definiti, verrà aperto l&#39;editor universale.
-1. Per il contenuto non incluso nei percorsi definiti in `Universal Editor Opening Mapping`, l&#39;AEM controlla se il `resourceType` del contenuto corrisponde a quelli definiti in **Sling:resourceTypes che verranno aperti da Universal Editor** e se il contenuto corrisponde a uno di questi tipi, l&#39;editor universale verrà aperto in `${author}${path}.html`.
+1. AEM controllerà le mappature in `Universal Editor Opening Mapping` e se il contenuto si trova in uno dei percorsi qui definiti, verrà aperto l&#39;Editor universale.
+1. Per il contenuto non incluso nei percorsi definiti in `Universal Editor Opening Mapping`, AEM controlla se il `resourceType` del contenuto corrisponde a quelli definiti in **Sling:resourceTypes che verranno aperti da Universal Editor** e se il contenuto corrisponde a uno di questi tipi, l&#39;Editor universale verrà aperto in `${author}${path}.html`.
 1. In caso contrario, AEM apre l’Editor pagina.
 
 Per definire le mappature nel campo **Mappatura di apertura dell&#39;editor universale** sono disponibili le seguenti variabili.
@@ -155,7 +155,7 @@ Per definire le mappature nel campo **Mappatura di apertura dell&#39;editor univ
 
 ### Mappature di esempio {#example-mappings}
 
-* Apri tutte le pagine in `/content/foo` nell&#39;istanza di creazione AEM:
+* Apri tutte le pagine in `/content/foo` in AEM Author:
 
    * `/content/foo:${author}${path}.html?login-token=${token}`
    * Ciò comporta l&#39;apertura di `https://localhost:4502/content/foo/x.html?login-token=<token>`
@@ -177,7 +177,7 @@ Per ulteriori informazioni sull’editor universale, consulta questi documenti.
 
 * [Introduzione all’editor universale](introduction.md): scopri come l’editor universale consente di modificare ogni aspetto di qualsiasi contenuto in qualsiasi implementazione per fornire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 * [Authoring dei contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md): scopri quanto è semplice e intuitivo per gli autori di contenuto creare contenuto utilizzando l’editor universale.
-* [Pubblicazione di contenuti con l&#39;editor universale](/help/sites-cloud/authoring/universal-editor/publishing.md) - Scopri come l&#39;editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
+* [Pubblicazione di contenuti con l&#39;editor universale](/help/implementing/universal-editor/publishing.md) - Scopri come l&#39;editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
 * [Architettura dell’editor universale](architecture.md): scopri l’architettura dell’editor universale e come avviene il flusso di dati tra i suoi servizi e livelli.
 * [Attributi e tipi](attributes-types.md): scopri gli attributi e i tipi di dati richiesti dall’editor universale.
 * [Autenticazione dell’editor universale](authentication.md): scopri come l’editor universale effettua l’autenticazione.

@@ -4,9 +4,9 @@ description: Comprendi in dettaglio il contratto JSON tra la definizione del com
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Il file `component-definition.json` definisce i componenti disponibili per gli a
 
 >[!TIP]
 >
->Per una panoramica del processo di modellazione del contenuto, vedere il documento [Modellazione del contenuto per l&#39;authoring WYSIWYG con progetti di Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
+>Per una panoramica del processo di modellazione del contenuto, vedere il documento [Modellazione del contenuto per l&#39;authoring WYSIWYG con progetti Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
 
 >[!TIP]
 >
@@ -33,35 +33,42 @@ Di seguito è riportato un esempio di `component-definition.json` completo ma se
 
 ```json
 {
-  "groups": [
+  "groups":[
     {
-      "title": "General Components",
-      "id": "general",
-      "components": [
+      "title":"General Components",
+      "id":"general",
+      "components":[
         {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "aem": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+          "title":"Text",
+          "id":"text",
+          "plugins":{
+            "aem":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             },
-            "aem65": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+            "aem65":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             }
           }
-        },
-      }
-   ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -100,11 +107,18 @@ Una volta definito `plugin`, devi indicare se è correlato alla pagina o al fram
 
 Se il componente è contenuto nella pagina, puoi fornire le seguenti informazioni.
 
-* `name` definisce un nome facoltativo salvato nel JCR per il componente appena creato.
-   * Solo informativo e non generalmente visualizzato nell&#39;interfaccia utente come `title` è.
 * `resourceType` definisce il [Sling](/help/implementing/developing/introduction/sling-cheatsheet.md) `resourceType` utilizzato per il rendering del componente.
-* `template` definisce la chiave o i valori facoltativi da scrivere automaticamente nel componente appena creato.
+* `template` definisce la chiave o i valori facoltativi da scrivere automaticamente nel componente appena creato e definisce quale filtro e/o modello applicare al componente.
    * Utile per testo esplicativo, campione o segnaposto.
+
+#### `template` {#template}
+
+Fornendo coppie chiave/valore facoltative, `template` può scriverle automaticamente nel nuovo componente. È inoltre possibile specificare i seguenti valori facoltativi.
+
+* `model` definisce quale [modello](/help/implementing/universal-editor/field-types.md#model-structure) viene utilizzato con il componente.
+   * Il modello viene quindi mantenuto centralmente nella definizione del componente e non è necessario che sia [specificata la strumentazione.](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * Questo consente di spostare i componenti tra contenitori diversi.
+* `filter` definisce quale [filtro](/help/implementing/universal-editor/filtering.md) deve essere utilizzato con il componente.
 
 ### `cf` {#cf}
 

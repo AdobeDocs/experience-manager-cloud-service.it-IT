@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
+source-git-commit: e87447922b856d4cbbd09fb4dcd4ae2b5da6ff50
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 27%
+source-wordcount: '1623'
+ht-degree: 26%
 
 ---
 
@@ -193,7 +193,7 @@ Seleziona l’icona di anteprima dell’app aperta per aprire la pagina che stai
 
 #### Pubblicazione {#publish}
 
-Seleziona il pulsante Pubblica per pubblicare le modifiche al contenuto live per consentirne l’utilizzo da parte dei lettori.
+Seleziona il pulsante Pubblica per pubblicare le modifiche al contenuto live per l’utilizzo da parte dei lettori o in un ambiente di anteprima per la revisione.
 
 ![Pulsante pubblica](assets/publish.png)
 

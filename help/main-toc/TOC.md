@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 22a0f65a4136fcf90ff9c19825d6d2bf37578045
+source-git-commit: e2ff4c3c8cfa9f4aa78d8ee02dcd242a10003438
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6081'
 ht-degree: 98%
 
 ---
@@ -374,10 +374,10 @@ ht-degree: 98%
          + [Sistema di stili](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [Annulla limitazioni ripristino](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Editor universale {#universal-editor}
-         + [Navigazione nell’editor universale](/help/sites-cloud/authoring/universal-editor/navigation.md)
-         + [Authoring dei contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [Pubblicazione di contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/publishing.md)
-         + [Ereditarietà di contenuti nell’editor universale](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [Navigazione](/help/sites-cloud/authoring/universal-editor/navigation.md)
+         + [Authoring](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [Pubblicazione](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [Ereditarietà](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [Modelli di pagina](/help/sites-cloud/authoring/universal-editor/templates.md)
       + Frammenti {#fragments}
          + [Frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md)
@@ -1287,6 +1287,7 @@ ht-degree: 98%
          + [Attributi e tipi di elementi](/help/implementing/universal-editor/attributes-types.md)
          + [Definizione del componente](/help/implementing/universal-editor/component-definition.md)
          + [Definizioni di modelli, campi e tipi di componenti](/help/implementing/universal-editor/field-types.md)
+         + [Pubblicazione](/help/implementing/universal-editor/publishing.md)
          + [App di esempio SecurBank](/help/implementing/universal-editor/securbank.md)
          + [Eventi](/help/implementing/universal-editor/events.md)
          + [Filtrare i componenti](/help/implementing/universal-editor/filtering.md)

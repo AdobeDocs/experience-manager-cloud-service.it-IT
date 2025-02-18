@@ -5,10 +5,10 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
 workflow-type: tm+mt
-source-wordcount: '1936'
-ht-degree: 81%
+source-wordcount: '1926'
+ht-degree: 75%
 
 ---
 
@@ -16,26 +16,26 @@ ht-degree: 81%
 
 Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, l’obiettivo è [renderli disponibili nel sito web pubblico](/help/sites-cloud/authoring/author-publish.md) (l’ambiente di pubblicazione).
 
-Questa operazione è denominata pubblicazione della pagina. Quando si rimuove una pagina dall’ambiente di pubblicazione, si parla di annullamento della pubblicazione. Durante la pubblicazione e l’annullamento della pubblicazione la pagina rimane disponibile nell’ambiente di authoring per ulteriori modifiche fino a quando non la elimini.
+Questa operazione è denominata pubblicazione della pagina. Quando si rimuove una pagina dall’ambiente di pubblicazione, si parla di annullamento della pubblicazione. Durante la pubblicazione e l’annullamento della pubblicazione, la pagina rimane disponibile nell’ambiente di authoring per ulteriori modifiche fino a quando non viene eliminata.
 
 Puoi anche pubblicare o annullare la pubblicazione di una pagina immediatamente o in una data/ora futura predefinita.
 
 >[!NOTE]
 >
->La pubblicazione di un frammento di esperienza segue sostanzialmente la stessa procedura utilizzata per la pubblicazione di una pagina, ma dalla console o dall’editor Frammenti di esperienza.
+>La pubblicazione di un [frammento di esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md) segue sostanzialmente la stessa procedura utilizzata per la pubblicazione di una pagina, ma dalla console o dall&#39;editor frammenti di esperienza.
 
 ## Terminologia {#terminology}
 
 È possibile riscontrare termini diversi relativi alla pubblicazione mentre si lavora con Adobe Experience Manager (AEM) as a Cloud Service.
 
 * **Pubblicare/Annullare la pubblicazione**
-   * Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
+   * Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico negli ambienti di pubblicazione e/o anteprima.
    * Questi termini sono utilizzati nella documentazione di AEM.
 * **Attivare/Disattivare**
    * Sinonimi di pubblicare/annullare la pubblicazione.
    * Questi termini sono stati utilizzati nelle versioni precedenti di AEM.
 * **Replicare/Replica**
-   * Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro al momento di pubblicazione di una pagina.
+   * Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un servizio all’altro al momento della pubblicazione di una pagina (ad esempio, dall’authoring all’anteprima).
    * Questi termini vengono utilizzati principalmente dagli sviluppatori.
 
 ## Pubblicazione delle pagine {#publishing-pages-1}
@@ -56,15 +56,12 @@ A seconda della posizione, puoi pubblicare:
 
 >[!NOTE]
 >
->Se desideri mantenere l&#39;ordine delle pagine, devi utilizzare [Gestisci pubblicazione](#manage-publication) per pubblicare la pagina padre insieme alle pagine figlie in un&#39;unica azione.
+>Se vuoi mantenere l&#39;ordine delle pagine devi utilizzare [Gestisci pubblicazione](#manage-publication) per pubblicare la pagina padre insieme alle pagine figlie in un&#39;unica azione.
 >
 >L’ordine delle pagine non è garantito:
+>
 >* se sono selezionate per la pubblicazione solo le pagine figlie (in quanto le informazioni sull’ordine si trovano nella pagina padre)
 >* se le pagine padre e figlio vengono pubblicate in azioni separate
-
->[!NOTE]
->
-> Per ulteriori possibilità consulta **Ora di attivazione** e **Ora di disattivazione** nella [Scheda Base delle Proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
 ### Pubblicazione dall’Editor pagina {#publishing-from-the-page-editor}
 
@@ -78,7 +75,7 @@ Se stai modificando una pagina nell&#39;[editor di pagine](/help/sites-cloud/aut
 
    * La pagina viene pubblicata direttamente, se non sono presenti riferimenti da pubblicare.
    * Se la pagina include riferimenti da pubblicare, questi sono elencati nella procedura guidata di **Pubblicazione**, dove è possibile:
-      * Specifica le risorse, i tag e così via da pubblicare insieme alla pagina, quindi utilizza **Publish** per completare il processo.
+      * Specifica le risorse, i tag e così via da pubblicare insieme alla pagina, quindi utilizza **Pubblica** per completare il processo.
       * Seleziona **Annulla** per annullare l’azione.
 
    ![Pubblicazione di riferimenti alla pagina](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -112,7 +109,7 @@ Nella console **Sites** sono disponibili due opzioni per la pubblicazione:
 
 Per pubblicare una pagina con Pubblicazione rapida:
 
-1. Selezionare le pagine nella console Sites e fare clic sul pulsante **Publish rapido**.
+1. Selezionare le pagine desiderate nella console Sites e fare clic sul pulsante **Pubblicazione rapida**.
 
    ![Selezione delle pagine per la pubblicazione](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -128,15 +125,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 
 #### Gestisci pubblicazione  {#manage-publication}
 
-**Gestisci pubblicazione** offre più opzioni rispetto alla **Pubblicazione rapida** e consente di includere pagine secondarie, personalizzare i riferimenti e avviare tutti i flussi di lavoro applicabili. Consente inoltre di pubblicare la pagina in un secondo momento.
-
->[!NOTE]
->
->Se vuoi mantenere l&#39;ordine delle pagine devi utilizzare **Gestisci pubblicazione** per pubblicare la pagina padre insieme alle pagine figlie in un&#39;unica azione.
->
->L’ordine delle pagine non è garantito:
->* se sono selezionate per la pubblicazione solo le pagine figlie (in quanto le informazioni sull’ordine si trovano nella pagina padre)
->* se le pagine padre e figlio vengono pubblicate in azioni separate
+**Gestisci pubblicazione** offre più opzioni rispetto a **Pubblicazione rapida**, consentendo l&#39;inclusione di pagine figlie, la personalizzazione dei riferimenti, la pubblicazione in un servizio di anteprima (se disponibile) e l&#39;avvio di tutti i flussi di lavoro applicabili e offrendo la possibilità di pubblicare in un secondo momento.
 
 Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblicazione:
 
@@ -150,6 +139,10 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
      Scegliere di pubblicare le pagine selezionate o annullarne la pubblicazione.
 
+   * **Destinazione**
+
+     Scegli se desideri pubblicare nel servizio di pubblicazione (impostazione predefinita) o nel servizio di anteprima. Disponibile solo se è configurato il servizio di anteprima [.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+
    * **Pianificazione**
 
      Scegli se eseguire l’azione ora o in un secondo momento.
@@ -159,6 +152,10 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
      >[!NOTE]
      >
      >Per annullare un’attività di pubblicazione, anche programmata per un momento successivo, accedete alla [console Flusso di lavoro](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) e interrompete il flusso di lavoro corrispondente.
+
+     >[!NOTE]
+     >
+     >La pianificazione del contenuto per la pubblicazione non corrisponde a [**Ora di attivazione** e **Ora di disattivazione** disponibili nelle proprietà della pagina,](/help/sites-cloud/authoring/sites-console/page-properties.md#basic), ma può essere utilizzata in circostanze simili.
 
    ![Opzioni di Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -232,6 +229,8 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
    * Definire un titolo del pacchetto del flusso di lavoro se è stata selezionata l’opzione per mantenere il pacchetto del flusso di lavoro.
 
 1. Fai clic su **Pubblica** o **Pubblica più tardi** per completare la pubblicazione.
+
+
 
 ## Annullamento della pubblicazione delle pagine {#unpublishing-pages}
 
