@@ -4,9 +4,9 @@ description: Scopri come limitare i componenti consentiti per contenitore nellâ€
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '153'
 ht-degree: 3%
 
 ---
@@ -53,4 +53,7 @@ L&#39;impostazione dell&#39;attributo `components` in una definizione di filtro 
 
 >[!TIP]
 >
->Scopri le altre opzioni di personalizzazione ed estensione disponibili per l&#39;editor universale nel documento [Personalizzazione ed estensione dell&#39;editor universale](/help/implementing/universal-editor/customizing.md).
+>Scopri altre opzioni di personalizzazione ed estensione disponibili per lâ€™editor universale nei documenti:
+>
+>* [Personalizzazione dell&#39;editor universale](/help/implementing/universal-editor/customizing.md)
+>* [Estensione dell&#39;editor universale](/help/implementing/universal-editor/extending.md)

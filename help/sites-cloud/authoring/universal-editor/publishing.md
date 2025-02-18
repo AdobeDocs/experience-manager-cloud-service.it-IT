@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 69%
+source-wordcount: '591'
+ht-degree: 61%
 
 ---
 
@@ -17,9 +17,19 @@ ht-degree: 69%
 
 Scopri in che modo l’editor universale pubblica i contenuti e come le tue app possono gestire i contenuti pubblicati.
 
+## Pubblicazione di contenuti come autore {#publishing-content}
+
+Quando sei un autore di contenuti pronto per pubblicare i tuoi contenuti, devi semplicemente toccare o fare clic sull&#39;icona [Pubblica **nella barra degli strumenti dell&#39;editor universale.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)**
+
+Puoi anche pubblicare [dalla console Sites](/help/sites-cloud/authoring/sites-console/publishing-pages.md), utile quando desideri pubblicare più pagine di contenuto.
+
+>[!NOTE]
+>
+>L&#39;editor universale supporta [estensioni ed estensibilità dell&#39;interfaccia utente](/help/implementing/universal-editor/extending.md) per consentire ai flussi di lavoro di supportare il processo di pubblicazione.
+
 ## Somiglianze con AEM {#similarities}
 
-Per gli utenti di AEM, il processo di pubblicazione dei contenuti con Universal Editor funziona come di consueto: al momento della pubblicazione nell’AEM, i contenuti vengono replicati dal livello di authoring a quello di pubblicazione.
+Per gli utenti di AEM, il processo di pubblicazione dei contenuti con Universal Editor funziona come di consueto: al momento della pubblicazione in AEM, i contenuti vengono replicati dal livello di authoring a quello di pubblicazione.
 
 ## Differenze {#differences}
 

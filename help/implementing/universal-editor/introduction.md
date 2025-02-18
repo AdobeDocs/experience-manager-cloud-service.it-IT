@@ -1,70 +1,84 @@
 ---
 title: Introduzione all’editor universale
-description: Scopri in che modo Universal Editor consente di modificare ciò che vedi è ciò che ottieni (WYSIWYG) di qualsiasi esperienza headless e headful. Scopri in che modo questo può aiutare gli autori di contenuto a fornire esperienze eccezionali, aumentare la velocità del contenuto e fornire agli sviluppatori un’esperienza di sviluppo all’avanguardia.
+description: Universal Editor è uno strumento di authoring visivo moderno progettato per consentire all’organizzazione di marketing di produrre esperienze web di impatto.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2947c4cb1fad7e1c7635a0e423a4adfe23013f79
+source-git-commit: ae962d89b842b0708c1ac8633bb49c86cb2edfda
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 52%
+source-wordcount: '949'
+ht-degree: 10%
 
 ---
 
 
 # Introduzione all’editor universale {#introduction}
 
-Universal Editor è un editor visivo versatile che fa parte di Adobe Experience Manager Sites. Consente agli autori di modificare ciò che si vede è ciò che si ottiene (WYSIWYG) in qualsiasi esperienza headless o headful. Scopri in che modo può aiutare gli autori di contenuti a fornire esperienze eccezionali e come offre agli sviluppatori una libertà senza precedenti.
+Universal Editor è uno strumento di authoring visivo moderno progettato per consentire all’organizzazione di marketing di produrre esperienze web di impatto.
 
-## Informazioni di base {#background}
+## Panoramica {#overview}
 
-Universal Editor offre un’esperienza di authoring in-context efficiente e intuitiva che richiede una formazione minima. Con esso, gli autori possono gestire i loro contenuti direttamente nel contesto dell’esperienza web, esattamente come apparirà ai visitatori. Essendo un vero editor come servizio e complessivamente più flessibile, intende alla fine sostituire l’Editor pagina.
+Universal Editor è un editor visivo versatile che fa parte di Adobe Experience Manager Sites. Consente agli autori di eseguire la modifica di ciò che vedi è ciò che ottieni (WYSIWYG) di qualsiasi esperienza headless o headful. Offre:
 
-Gli autori traggono vantaggio dalla flessibilità dell’Editor universale in quanto supporta lo stesso editing visivo coerente per tutte le forme di contenuto AEM: la modifica diretta e la composizione del layout sono possibili anche per i frammenti di contenuto e i componenti di pagina. Le due forme di contenuto possono anche essere modificate quando si presentano affiancate in un’esperienza web, senza che gli autori debbano cambiare contesto. Si tratta di un miglioramento notevole rispetto ai precedenti editor in AEM che supportavano un solo tipo di contenuto.
+* **Modifica immediata**: gli autori possono modificare il contenuto direttamente nell&#39;esperienza di anteprima, eliminando la necessità di individuare e passare alle singole origini di contenuto.
+* **Modifica visiva**: mentre apporti modifiche, gli autori vedono immediatamente come influiscono sull&#39;esperienza effettiva del visitatore, riducendo al minimo l&#39;attrito.
+* **Opzioni individuabili**: le opzioni con etichetta chiara e un&#39;interfaccia utente intuitiva consentono agli autori di configurare i metadati e comporre layout con facilità.
+* **Non tecnico**: non è necessaria alcuna esperienza specializzata per apportare modifiche, mentre le linee guida del marchio aziendale vengono applicate automaticamente, facilitando la scalabilità delle attività di contenuto in tutta l&#39;organizzazione.
+* **Integrazione ed estensibilità**: completamente integrato con AEM, i [punti di estensione](#extensibility) flessibili dell&#39;editor universale consentono di unificare tutti gli strumenti essenziali in un&#39;unica interfaccia coesa. Dalle funzioni basate sull’intelligenza artificiale alle estensioni personalizzate in base alle esigenze aziendali specifiche, consente ai team di semplificare i flussi di lavoro e migliorare la produttività senza problemi.
 
-Gli sviluppatori traggono vantaggio dalla versatilità di Universal Editor in quanto supporta anche un vero e proprio disaccoppiamento dell’implementazione. Consente agli sviluppatori di utilizzare virtualmente qualsiasi framework o architettura a loro scelta, senza imporre alcun vincolo di SDK o tecnologia. Questa flessibilità consente anche di dotare le app web esistenti di strumenti facilmente utilizzabili dall’editor universale, senza doverle riprogettare.
+In sintesi:
 
-## Veramente universale {#universal}
+* **La flessibilità dell&#39;editor universale offre vantaggi** in quanto supporta la stessa modifica visiva coerente per tutte le forme di contenuto AEM.
+* **Gli sviluppatori traggono vantaggio** dalla versatilità di Universal Editor in quanto supporta un vero e proprio disaccoppiamento dell&#39;implementazione.
 
-L’Editor universale può essere utilizzato per qualsiasi implementazione, per qualsiasi contenuto e per qualsiasi aspetto del contenuto.
+Essendo un vero editor-as-a-service ed è nel complesso più flessibile, l&#39;editor universale intende alla fine sostituire l&#39;[Editor pagina.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
-![Cosa lo rende universale](assets/universal.png)
+## Architetture supportate {#supported-architectures}
 
-### Qualsiasi implementazione {#any-implementation}
+Universal Editor supporta le due impostazioni principali di AEM riportate di seguito.
 
-Poiché le esperienze possono essere create in tanti modi diversi, qualsiasi implementazione può utilizzare l’Editor universale, per consentire agli autori di eseguire modifiche nel contesto.
+1. **[Edge Delivery Services](/help/edge/overview.md)**: questo è l&#39;approccio preferito per la sua semplicità, il time-to-value più veloce e le prestazioni migliorate.
+1. **[Implementazioni headless](/help/headless/introduction.md)**: se disponi di un progetto headless esistente o di requisiti specifici per il rendering disaccoppiato, Universal Editor consente modifiche visive di livello Enterprise senza dover rieseguire il factoring dell&#39;intero progetto. È compatibile con praticamente qualsiasi architettura (SSR, CSR), framework web (Next.js, React, Astro, ecc.) e modelli di hosting (&quot;porta la tua app&quot;).
 
-Gli utenti spesso pensano che un’implementazione headless limiti gli autori a modificare tutto il contenuto in un’interfaccia utente basata su moduli, ma questo non vale per l’Editor universale
+>[!TIP]
+>
+>Per ulteriori dettagli sulle architetture supportate, consulta il documento [Casi d&#39;uso dell&#39;editor universale e percorsi di apprendimento](/help/implementing/universal-editor/use-cases.md).
 
-I requisiti per un’implementazione che utilizza l’Editor universale sono molto semplici e supportano:
+## Versioni di AEM supportate {#aem-versions}
 
-* **Qualsiasi architettura**: rendering lato server, rendering lato edge, rendering lato client e così via.
-* **Qualsiasi framework** - Vanilla AEM o qualsiasi framework di terze parti come React, Next.js, Angular e così via.
-* **Qualsiasi hosting** - Può essere ospitato localmente su AEM o su un dominio remoto
+L’editor universale è supportato da:
 
-### Qualsiasi contenuto {#any-content}
+* AEM as a Cloud Service (versione `2023.8.13099` o successiva)
+* AEM 6.5 (service pack 21 o 22 più un feature pack)
 
-Un autore di contenuto deve avere la stessa potente esperienza di modifica precedentemente offerta dall’editor pagina AEM. Tuttavia, l’Editor universale consente agli autori di contenuto di modificare **qualsiasi** contenuto visivamente e nel contesto e supporta:
+Questa documentazione è per l’utilizzo di Universal Editor con AEM as a Cloud Service. Per utilizzare Universal Editor con AEM 6.5, [consulta la documentazione di AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction?lang=en)
 
-* **Strutture di pagina AEM** - `cq:Components` nidificati di `cq:Pages`, compresi i Frammenti di esperienza
-* **Frammenti di contenuto AEM** - Modifica il contenuto dei Frammenti di contenuto visualizzati nel contesto dell’esperienza.
-* **Documenti** - La bozza dei concetti ha mostrato che anche i documenti Word, Excel, Google Docs o Markdown possono essere modificati nello stesso modo (WIP).
+## Funzioni {#features}
 
-### Qualsiasi aspetto {#any-aspect}
+Universal Editor offre numerose funzioni per supportare un&#39;ampia gamma di casi d&#39;uso per una gestione efficiente dei contenuti.
 
-Per un autore di contenuto, il contenuto non riguarda solo le informazioni contenute, ma anche il rendering e la ricezione. Il contenuto viene fornito con metadati aggiuntivi e regole di strumentazione, che l’editor universale può comprendere e modificare, tra cui:
+* **[WYSIWYG](/help/sites-cloud/authoring/universal-editor/authoring.md)**: consente di eseguire la modifica di qualsiasi tipo di contenuto Web, inclusi testo normale, testo RTF, file multimediali e metadati.
+* **[Composizione](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)**: crea, modifica, riordina, nidifica o elimina blocchi di contenuto di vari tipi (titoli, pulsanti, teaser, sezioni, incorporamenti, ecc.).
+* **[Layout](/help/sites-cloud/authoring/universal-editor/templates.md)**: utilizza i modelli di pagina, applica stili visivi e compone layout con blocchi come colonne, caroselli e fisarmoniche.
+* **[Simulazione dispositivo](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)**: anteprima e ottimizzazione del contenuto per diversi dispositivi visitatore durante la modifica.
+* **Omnichannel**: riutilizzare contenuti strutturati e non strutturati su più canali.
+* **[Localizzazione](/help/sites-cloud/authoring/universal-editor/inheritance.md)**: semplificazione dei flussi di lavoro di traduzione dei contenuti e gestione efficiente dell&#39;ereditarietà dei contenuti localizzati con Multi-Site Manager.
+* **Coerenza**: assicurati la conformità con le linee guida del brand e mantieni l&#39;uniformità su tutti i contenuti.
+* **Sicurezza**: [Applica controllo degli accessi](/help/implementing/universal-editor/authentication.md), proteggi l&#39;integrità del contenuto e tieni traccia delle modifiche con [un controllo delle versioni affidabile.](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* **[Pubblicazione](/help/sites-cloud/authoring/universal-editor/publishing.md)**: integra i flussi di lavoro di revisione, approvazione e pubblicazione direttamente nell&#39;editor.
+* **Unificato**: si integra completamente con gli strumenti di AEM come [Console Sites,](/help/sites-cloud/authoring/sites-console/introduction.md) [Editor frammento di contenuto,](/help/sites-cloud/administering/content-fragments/overview.md) e molti altri, fornendo un&#39;esperienza di authoring coesa.
 
-* **Applicazione del layout e dello stile** - Utilizzando un sistema di stili, l&#39;operatore marketing e l&#39;autore di contenuti possono applicare stili diversi al contenuto e creare layout diversi per il contenuto, ad esempio colonne, caroselli, schede, fisarmoniche e così via.
+## Estensibilità {#extensibility}
 
-## Valore {#value}
+L’editor universale non solo è pronto all’uso ma offre diverse possibilità di estensione.
 
-Svincolando l’esperienza di modifica del contenuto da qualsiasi sistema di distribuzione del contenuto, l’editor diventa davvero universale e flessibile, consentendo all’autore del contenuto di fornire esperienze eccezionali, di aumentare la velocità del contenuto e di fornire un’esperienza di sviluppo all’avanguardia.
+* **Le estensioni** sono numerose e pronte per supportare requisiti quali il supporto dei flussi di lavoro, la generazione di varianti e l&#39;abilitazione della sperimentazione per citarne alcune.
+* **Un&#39;interfaccia utente estensibile** consente di creare estensioni personalizzate utilizzando gli stessi framework sottostanti utilizzati dalle estensioni pronte all&#39;uso, consentendo la massima flessibilità per adattarsi alle esigenze del progetto.
+* **I punti di estensione** come blocchi, tipi di dati personalizzati ed eventi consentono un&#39;integrazione perfetta dei requisiti di business personalizzati oltre l&#39;interfaccia utente.
 
-![Valore dell’Editor universale](assets/value.png)
-
-* **Fornire esperienze eccezionali**: per consentire ai professionisti di creare un’esperienza coinvolgente per i visitatori, l’Editor universale consente loro di creare e modificare il contenuto nel contesto dell’anteprima. Questo consente di creare contenuti adatti alla progettazione dell’esperienza, in grado di costituire un percorso significativo per i visitatori.
-* **Aumento della velocità del contenuto** - Per semplificare la gestione del flusso di lavoro dei professionisti, l’Editor universale consente di modificare il contenuto nell’anteprima per guidare i professionisti mostrando solo le opzioni pertinenti a tale contesto e rende il flusso di lavoro indipendente dalle origini del contenuto.
-* **Esperienza per sviluppatori all’avanguardia** - Per supportare un panorama delle applicazioni eterogeneo nel mondo reale, l’Editor universale è completamente dissociato e indipendente dalla tecnologia, consentendo agli sviluppatori di utilizzare l’insieme di tecnologie preferito per implementare l’esperienza.
+>[!TIP]
+>
+>Per ulteriori informazioni sull&#39;estensibilità di Universal Editor, vedere il documento [Estensione di Universal Editor.](/help/implementing/universal-editor/extending.md)
 
 ## Editor universale e Editor frammento di contenuto {#universal-editor-content-fragment-editor}
 
@@ -88,7 +102,7 @@ Quando esplori l’Editor universale e procedi alla sua implementazione nei tuoi
 
 * Non più di 25 risorse AEM (frammenti di contenuto, pagine, frammenti di esperienza, Assets, ecc.) devono essere riferimenti come strumentazione su una singola pagina.
 * AEM as a Cloud Service e [AEM 6.5](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) sono gli unici backend AEM supportati.
-* È richiesta la versione di AEM as a Cloud Service `2023.8.13099` o successiva.
+* Per AEM as a Cloud Service è richiesta la versione `2023.8.13099` o successiva.
 * Gli autori dei contenuti devono disporre di un proprio account Experience Cloud.
 * Come parte di AEM, l&#39;editor universale [supporta gli stessi browser desktop di AEM.](/help/overview/supported-platforms.md)
    * Le versioni mobili di questi browser non sono supportate.

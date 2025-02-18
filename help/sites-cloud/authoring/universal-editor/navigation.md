@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1616'
 ht-degree: 27%
 
 ---
@@ -37,7 +37,7 @@ Per creare contenuti per un’app utilizzando l’editor universale, l’app dev
 
 ## Accesso all’editor universale {#accessing}
 
-Una volta che l’app è dotata di strumenti per funzionare con l’editor universale, questo può essere accessibile sia all’interno di AEM as a Cloud Service che direttamente senza accedere all’AEM.
+Una volta che l’app è dotata di strumenti per funzionare con Universal Editor, questo può essere accessibile sia all’interno di AEM as a Cloud Service che direttamente senza accedere ad AEM.
 
 ### Accesso in AEM as a Cloud Service {#accessing-aem}
 
@@ -75,7 +75,7 @@ L’intestazione di Experience Cloud è sempre presente nella parte superiore de
 
 #### Experience Manager {#experience-manager}
 
-Seleziona il collegamento Adobe Experience Cloud a sinistra dell&#39;intestazione per passare alla directory principale della tua soluzione di Experience Manager e accedere a strumenti come [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) e [Distribuzione software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it).
+Seleziona il collegamento Adobe Experience Cloud a sinistra dell&#39;intestazione per passare alla directory principale della tua soluzione Experience Manager e accedere a strumenti come [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) e [Distribuzione software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it).
 
 ![Pulsante di navigazione globale](assets/global-navigation.png)
 
@@ -207,13 +207,13 @@ Altre opzioni standard sono accessibili tramite il pulsante con i puntini di sos
 
 ![Pulsante Puntini di sospensione](assets/ellipsis.png)
 
-Ad esempio, la possibilità di annullare la pubblicazione di una pagina (ovvero di annullare l&#39;azione del pulsante [**Publish**](#publish)) è accessibile tramite il pulsante con i puntini di sospensione.
+Ad esempio, la possibilità di annullare la pubblicazione di una pagina (ovvero di annullare l&#39;azione del pulsante [**Pubblica**](#publish)) è accessibile tramite il pulsante con i puntini di sospensione.
 
 #### Pulsanti aggiuntivi {#additional-toolbar-buttons}
 
 Universal Editor offre un&#39;esperienza di authoring personalizzabile ed estensibile. Se nella barra degli strumenti sono presenti pulsanti aggiuntivi, l’editor universale è stato esteso.
 
-* Per informazioni dettagliate sulle possibilità di estensione, vedere [Personalizzazione ed estensione dell&#39;editor universale](/help/implementing/universal-editor/customizing.md).
+* Per informazioni dettagliate sulle possibilità di estensione, vedere [Estensione dell&#39;editor universale](/help/implementing/universal-editor/extending.md).
 * Per informazioni dettagliate sul funzionamento di una singola estensione, consulta la [documentazione di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### L’editor {#editor}
@@ -308,9 +308,9 @@ Toccando o facendo clic sul pulsante Elimina [il componente viene eliminato](/he
 >
 >Utilizzare il tasto di scelta rapida `Shift+Backspace` per eliminare un componente selezionato da un contenitore.
 
-#### Pulsanti aggiuntivi {#additional-properties-rail-buttons}
+## Funzioni aggiuntive {#additional-features}
 
-Universal Editor offre un&#39;esperienza di authoring personalizzabile ed estensibile. Se nel pannello delle proprietà sono presenti pulsanti aggiuntivi, l&#39;Editor universale è stato esteso.
+Universal Editor offre un&#39;esperienza di authoring personalizzabile ed estensibile. Se nel pannello delle proprietà o nella barra degli strumenti sono presenti pulsanti o opzioni aggiuntive, l&#39;editor universale è stato esteso.
 
 * Per informazioni dettagliate sulle possibilità di estensione, vedere [Personalizzazione ed estensione dell&#39;editor universale](/help/implementing/universal-editor/customizing.md).
 * Per informazioni dettagliate sul funzionamento di una singola estensione, consulta la [documentazione di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
