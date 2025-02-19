@@ -1,16 +1,16 @@
 ---
-title: Come si utilizza Turnstile in un modulo adattivo per AEM?
+title: Come si utilizza Turnstile in un modulo adattivo AEM?
 description: Migliora la sicurezza dei moduli con il servizio Turnstile. Guida dettagliata all’interno!
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
+exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
+source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 12%
 
 ---
-
 
 # Integrare Turnstile CAPTCHA con Adaptive Forms
 
@@ -36,8 +36,8 @@ Per configurare Turnstile per AEM Forms, è necessario ottenere la [chiave del s
 
 ### Passaggi per configurare Turnstile per AEM Forms{#steps-to-configure-turnstile}
 
-1. Crea un Contenitore di configurazione nell’ambiente AEM Forms as a Cloud Service. Un contenitore di configurazione contiene le configurazioni cloud utilizzate per collegare l’AEM a servizi esterni. Per creare e configurare un Contenitore di configurazione per collegare il tuo ambiente AEM Forms con Turnstile:
-   1. Apri la tua istanza di AEM Forms as a Cloud Service.
+1. Crea un Contenitore di configurazione nell’ambiente AEM Forms as a Cloud Service. Un contenitore di configurazione contiene le configurazioni cloud utilizzate per connettere AEM a servizi esterni. Per creare e configurare un Contenitore di configurazione per collegare il tuo ambiente AEM Forms con Turnstile:
+   1. Apri l’istanza di AEM Forms as a Cloud Service.
    1. Vai a **[!UICONTROL Strumenti > Generale > Browser configurazioni]**.
    1. Nel Browser configurazioni, puoi selezionare una cartella esistente o crearne una. Puoi creare una cartella e abilitare per essa l’opzione Configurazioni cloud oppure abilitare l’opzione Configurazioni cloud per una cartella esistente:
 
@@ -50,14 +50,14 @@ Per configurare Turnstile per AEM Forms, è necessario ottenere la [chiave del s
          1. Nella finestra di dialogo Proprietà di configurazione, abilita **[!UICONTROL Configurazioni cloud]**.
          1. Seleziona **[!UICONTROL Salva e chiudi]** per salvare la configurazione e uscire dalla finestra di dialogo.
 
-1. Configurare il Cloud Service:
-   1. Nell&#39;istanza dell&#39;autore AEM, vai a ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** e seleziona **[!UICONTROL Turnstile]**.
+1. Configura Cloud Service:
+   1. Nell&#39;istanza Autore AEM, vai a ![strumenti-1](assets/tools-1.png) > **[!UICONTROL Servizi cloud]** e seleziona **[!UICONTROL Turnstile]**.
       ![Turnstile nell&#39;interfaccia utente](assets/turnstile-in-ui.png)
    1. Seleziona un Contenitore di configurazione, creato o aggiornato, come descritto nella sezione precedente. Seleziona **[!UICONTROL Crea]**.
       ![Turnstile di configurazione](assets/config-hcaptcha.png)
    1. Specificare **[!UICONTROL Tipo widget]** come gestito. Il tipo di widget può cambiare in base alla chiave ottenuta nel prerequisito **[!UICONTROL Titolo]**, **[!UICONTROL Nome]**, **[!UICONTROL Chiave sito]** e **[!UICONTROL Chiave segreta]** per il servizio tornstile [ottenuto nel prerequisito](#prerequisite). Seleziona **[!UICONTROL Crea]**.
 
-      ![Configura il Cloud Service per connettere l&#39;ambiente AEM Forms con Turnstile](assets/config-turntstile.png)
+      ![Configura Cloud Service per collegare il tuo ambiente AEM Forms con Turnstile](assets/config-turntstile.png)
 
 >[!NOTE]
 > Gli utenti non devono modificare l’URL di convalida JavaScript lato client e l’URL di convalida lato server, in quanto sono già precompilati per la convalida lato client.
@@ -66,7 +66,7 @@ Una volta configurato, il servizio Turnstile Captcha è disponibile per l’util
 
 ## Utilizzare Turnstile in un modulo adattivo{#using-turnstile-foundation-components}
 
-1. Apri la tua istanza di AEM Forms as a Cloud Service.
+1. Apri l’istanza di AEM Forms as a Cloud Service.
 1. Vai a **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Seleziona un modulo adattivo e seleziona **[!UICONTROL Proprietà]**. Per l&#39;opzione **[!UICONTROL Contenitore configurazione]**, selezionare il Contenitore configurazione che contiene la configurazione cloud che connette AEM Forms con Turnstile, quindi selezionare **[!UICONTROL Salva e chiudi]**.
 
@@ -89,8 +89,10 @@ Una volta configurato, il servizio Turnstile Captcha è disponibile per l’util
       * Su un’azione dell’utente.
    * **[!UICONTROL Servizio Captcha]:** Seleziona il servizio Captcha, qui selezioni il servizio Cloudfare Turnstile Captcha.
    * **[!UICONTROL Configurazione Captcha]:** Seleziona una configurazione cloud configurata per Turnstile. ad esempio, qui puoi selezionare la **chiave gestita**.
+
      >[!NOTE]
-     >Puoi avere più configurazioni cloud nell’ambiente per uno scopo simile. Quindi, scegli il servizio con attenzione. Se non è elencato alcun servizio, consulta [Connettere l&#39;ambiente AEM Forms con Turnstile](#connect-your-forms-environment-with-turnstile-service) per scoprire come creare un Cloud Service che connette l&#39;ambiente AEM Forms con il servizio Turnstile.
+     >
+     > Puoi avere più configurazioni cloud nell’ambiente per uno scopo simile. Quindi, scegli il servizio con attenzione. Se non è elencato alcun servizio, consulta [Connettere l&#39;ambiente AEM Forms con Turnstile](#connect-your-forms-environment-with-turnstile-service) per scoprire come creare un Cloud Service che connette l&#39;ambiente AEM Forms con il servizio Turnstile.
 
    * **Messaggio di errore:** Fornisci il messaggio di errore da visualizzare all&#39;utente quando l&#39;invio Captcha non riesce.
    * **Dimensione Captcha:** È possibile selezionare la dimensione di visualizzazione della finestra di dialogo Sfida tornello. Utilizza l&#39;opzione **[!UICONTROL Compatta]** per visualizzare una finestra di dialogo di richiesta di verifica con tornello di piccole dimensioni e l&#39;opzione **[!UICONTROL Normale]** per visualizzare una finestra di dialogo di richiesta di verifica con tornello di dimensioni relativamente grandi.

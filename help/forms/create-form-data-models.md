@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1542'
 ht-degree: 1%
 
 ---
@@ -123,14 +123,15 @@ Crea file di configurazione di fabbrica OSGi con PID `org.apache.sling.caconfig.
       1. In sostituzioni, fornisci i campi che devono essere modificati in base all’ambiente nella sintassi di sostituzione Sling. Per ulteriori dettagli, vedere [Configurazione Apache Sling in base al contesto - Ignora](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Ad esempio, `cloudconfigs/fdm/{configName}/url="newURL"`.
 È possibile aggiungere più sostituzioni selezionando **[!UICONTROL +]**.
       1. Seleziona **[!UICONTROL Salva]**.
-      1. Per ottenere il codice JSON per la configurazione OSGi, segui i passaggi descritti in [Generazione di configurazioni OSGi tramite Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart) dell&#39;SDK per AEM.
+      1. Per ottenere il codice JSON per la configurazione OSGi, segui i passaggi descritti in [Generazione di configurazioni OSGi tramite AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
       1. Inserisci JSON nei file di configurazione di fabbrica OSGi creati nel passaggio precedente.
       1. Modificare il valore di `newURL` in base all&#39;ambiente (o alla modalità di esecuzione).
       1. Per modificare il valore segreto in base alla modalità di esecuzione, è possibile creare la variabile segreta utilizzando [l&#39;API di Cloud Manager](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e fare riferimento a una versione successiva nella [configurazione OSGi](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
 Quando questo progetto di archetipo viene distribuito tramite pipeline CM, l’override fornirà valori diversi in ambienti diversi (o in modalità di esecuzione).
+
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] utenti possono crittografare i valori segreti utilizzando il supporto di crittografia (per informazioni dettagliate, vedere [supporto di crittografia per le proprietà di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) e inserire testo crittografato nel valore dopo [che le configurazioni in base al contesto sono disponibili nel service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
+      >[!DNL Adobe Managed Service] utenti possono crittografare i valori segreti utilizzando il supporto di crittografia per i dettagli. Vedere [supporto di crittografia per le proprietà di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) e inserire testo crittografato nel valore dopo [che le configurazioni in base al contesto sono disponibili nel service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
 
 1. Aggiornare le definizioni dell&#39;origine dati utilizzando l&#39;opzione per aggiornare le definizioni dell&#39;origine dati nell&#39;[Editor modello dati modulo](#data-sources) per aggiornare la cache FDM tramite l&#39;interfaccia utente di FDM e ottenere la configurazione più recente.
 

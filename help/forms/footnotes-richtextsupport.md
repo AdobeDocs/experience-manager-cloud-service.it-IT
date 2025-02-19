@@ -4,7 +4,7 @@ description: Utilizza l’editor Rich Text per le note a piè di pagina in un mo
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -51,6 +51,7 @@ Per aggiungere una nota a piè di pagina in Adaptive Forms, effettuate le seguen
    >* Se sono presenti note a piè di pagina duplicate, la numerazione è uguale per tutte le note a piè di pagina duplicate.
 
 1. Dal browser componenti, trascina il componente **[!UICONTROL Segnaposto nota a piè di pagina]** nel modulo adattivo.
+
    >[!NOTE]
    >
    >* Nell&#39;istanza di pubblicazione, le note a piè di pagina vengono visualizzate nella posizione in cui il componente **[!UICONTROL Segnaposto nota a piè di pagina]** viene inserito nel modulo adattivo.

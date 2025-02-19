@@ -1,19 +1,19 @@
 ---
-title: Creazione di Bulk PDF senza sforzo - Padroneggiare l’arte con l’elaborazione in batch - La tua guida autonoma alla generazione di milioni di documenti PDF!
+title: Creazione di PDF in blocco semplice - Padroneggiare l’arte con l’elaborazione in batch - Guida autonoma alla generazione di milioni di documenti PDF!
 description: Come si creano comunicazioni personalizzate e orientate al brand?
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 2%
 
 ---
 
-# Elaborazione in batch di AEM Forms as a Cloud Service Communications
+# Elaborazione batch di comunicazioni AEM Forms as a Cloud Service
 
-Le comunicazioni consentono di creare, assemblare e distribuire comunicazioni personalizzate e orientate al brand, ad esempio corrispondenza aziendale, documenti, rendiconti, lettere di elaborazione delle richieste di rimborso, avvisi sui benefit, fatture mensili e kit di benvenuto. È possibile utilizzare le API di comunicazione per combinare un modello (XFA o PDF) con i dati del cliente per generare documenti in formato PDF, PS, PCL, DPL, IPL e ZPL.
+Le comunicazioni consentono di creare, assemblare e distribuire comunicazioni personalizzate e orientate al brand, ad esempio corrispondenza aziendale, documenti, rendiconti, lettere di elaborazione delle richieste di rimborso, avvisi sui benefit, fatture mensili e kit di benvenuto. Puoi utilizzare le API di comunicazione per combinare un modello (XFA o PDF) con i dati del cliente per generare documenti in formati PDF, PS, PCL, DPL, IPL e ZPL.
 
 Le comunicazioni forniscono API per la generazione di documenti su richiesta e pianificata. È possibile utilizzare API sincrone per API batch e on-demand (API asincrone) per la generazione pianificata dei documenti:
 
@@ -34,7 +34,7 @@ Le comunicazioni forniscono API per la generazione di documenti su richiesta e p
 
 Un&#39;operazione batch è un processo di generazione di più documenti di tipo simile per un set di record a intervalli pianificati. Un&#39;operazione batch è composta da due parti: Configurazione (definizione) ed esecuzione.
 
-* **Configurazione (definizione)**: una configurazione batch memorizza informazioni su varie risorse e proprietà da impostare per i documenti generati. Fornisce, ad esempio, dettagli sul modello XDP o PDF e sulla posizione dei dati dei clienti da utilizzare, oltre a specificare varie proprietà per i documenti di output.
+* **Configurazione (definizione)**: una configurazione batch memorizza informazioni su varie risorse e proprietà da impostare per i documenti generati. Ad esempio, fornisce dettagli sul modello XDP o PDF e sulla posizione dei dati dei clienti da utilizzare, oltre a specificare varie proprietà per i documenti di output.
 
 * **Esecuzione**: per avviare un&#39;operazione batch, passare il nome della configurazione batch all&#39;API di esecuzione batch.
 
@@ -44,11 +44,11 @@ Un&#39;operazione batch è un processo di generazione di più documenti di tipo 
 
 **Configurazione archivio dati batch (USC)**: la configurazione dei dati batch consente di configurare un&#39;istanza specifica dell&#39;archivio BLOB per le API batch. Consente di specificare i percorsi di input e output nell’archiviazione BLOB di Microsoft Azure di proprietà del cliente.
 
-**API batch**: consente di creare configurazioni batch ed eseguire le esecuzioni batch in base a queste configurazioni per unire un modello PDF o XDP con i dati e generare output nei formati PDF, PS, PCL, DPL, IPL e ZPL. Le comunicazioni forniscono API batch per la gestione della configurazione e l’esecuzione in batch.
+**API batch**: consente di creare configurazioni batch ed eseguire esecuzioni batch basate su queste configurazioni per unire un modello PDF o XDP con i dati e generare output nei formati PDF, PS, PCL, DPL, IPL e ZPL. Le comunicazioni forniscono API batch per la gestione della configurazione e l’esecuzione in batch.
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
-**Archiviazione**: le API di comunicazione utilizzano l&#39;archiviazione cloud di Microsoft Azure di proprietà del cliente per recuperare i record dei clienti e archiviare i documenti generati. È possibile configurare l’archiviazione di Microsoft Azure nella configurazione Experience Manager Cloud Service.
+**Archiviazione**: le API di comunicazione utilizzano l&#39;archiviazione cloud di Microsoft Azure di proprietà del cliente per recuperare i record dei clienti e archiviare i documenti generati. È possibile configurare l’archiviazione di Microsoft Azure nella configurazione di Experience Manager Cloud Service.
 
 **App**: applicazione personalizzata per l&#39;utilizzo delle API Batch per generare e utilizzare documenti.
 
@@ -76,20 +76,21 @@ Prima di utilizzare un&#39;operazione batch:
 * Carica dati cliente (file XML) nell’archiviazione BLOB di Microsoft Azure
 * Creare una configurazione cloud
 * Crea configurazione archivio dati batch
-* Carica modelli e altre risorse nell’istanza di Cloud Service Experience Manager Forms
+* Caricare modelli e altre risorse nell’istanza di Experience Manager Forms Cloud Service
 
-### Carica dati cliente (file XML) nell’archiviazione di Azure {#upload-customer-data-to-Azure-Storage}
+### Carica dati cliente (file XML) nell’archiviazione di Azure
 
 Nell&#39;archiviazione di Microsoft Azure creare [contenitori](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) e [caricare i dati del cliente (XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) nelle [cartelle](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) all&#39;interno dei contenitori.
+
 >[!NOTE]
 >
 >È possibile configurare l&#39;archiviazione di Microsoft Azure per pulire automaticamente la cartella di input o spostare il contenuto della cartella di output in una posizione diversa a intervalli pianificati. Tuttavia, assicurati che le cartelle non vengano pulite quando è ancora in esecuzione un’operazione batch che fa riferimento alle cartelle.
 
 ### Creare una configurazione cloud {#create-a-cloud-configuration}
 
-La configurazione Cloud connette l’istanza Experience Manager all’archiviazione di Microsoft Azure. Per creare una configurazione Cloud:
+La configurazione Cloud connette l’istanza di Experience Manager all’archiviazione di Microsoft Azure. Per creare una configurazione Cloud:
 
-1. Vai a Strumenti > Cloud Service > Archiviazione Azure
+1. Vai a Strumenti > Cloud Services > Archiviazione Azure
 1. Apri una cartella per ospitare la configurazione e fai clic su Crea. Puoi utilizzare la cartella Globale o crearne una.
 1. Specifica il nome della configurazione e le credenziali per la connessione al servizio. È possibile [recuperare queste credenziali dal portale di archiviazione di Microsoft Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
 1. Fai clic su Crea.
@@ -112,11 +113,11 @@ Per creare la configurazione:
 
 L&#39;istanza di Experience Manager è ora connessa all&#39;archiviazione di Microsoft Azure e configurata per recuperare e inviare dati a posizioni specifiche nell&#39;archiviazione di Microsoft Azure.
 
-### Carica modelli e altre risorse nella tua istanza Experience Manager {#upload-templates-and-other-assets-to-your-AEM-instance}
+### Carica modelli e altre risorse nella tua istanza di Experience Manager {#upload-templates-and-other-assets-to-your-AEM-instance}
 
 In genere, un’organizzazione dispone di più modelli. Ad esempio, un modello per gli estratti conto della carta di credito, gli estratti conto benefit e le richieste di rimborso. Carica tutti i modelli XDP e PDF nella tua istanza Experience Manager. Per caricare un modello:
 
-1. Apri l’istanza dell’Experience Manager.
+1. Apri l’istanza di Experience Manager.
 1. Passa a Forms > Forms e documenti
 1. Fai clic su Crea > Cartella e crea una cartella. Apri la cartella.
 1. Fai clic su Crea > Carica file e carica i modelli.
@@ -164,7 +165,7 @@ La risposta della richiesta di stato contiene la sezione relativa allo stato. Fo
 
 Al termine del processo, i documenti generati vengono archiviati nella cartella `success` nel percorso di destinazione specificato nella configurazione dell&#39;archivio dati batch. In caso di errori, il servizio crea una cartella `failure`. Fornisce informazioni sul tipo e sul motivo degli errori.
 
-Comprendiamo con l&#39;aiuto di un esempio: si supponga che esista un file di dati di input `record1.xml` e due tipi di output: `PDF` e `PCL`. Il percorso di destinazione contiene quindi due sottocartelle `pdf` e `pcl`, una per ciascuno dei tipi di output. Supponiamo che la generazione di PDF sia riuscita, quindi la sottocartella `pdf` contiene la sottocartella `success` che a sua volta contiene il documento PDF generato effettivo `record1.pdf`. Supponiamo che la generazione PCL non sia riuscita, quindi la sottocartella `pcl` contiene una sottocartella `failure` che a sua volta contiene un file di errore `record1.error.txt` contenente i dettagli dell&#39;errore. Inoltre, il percorso di destinazione contiene una cartella temporanea denominata `__tmp__` che contiene alcuni file necessari durante l&#39;esecuzione batch. È possibile eliminare questa cartella se non sono presenti esecuzioni batch attive che fanno riferimento alla cartella di destinazione.
+Comprendiamo con l&#39;aiuto di un esempio: si supponga che esista un file di dati di input `record1.xml` e due tipi di output: `PDF` e `PCL`. Il percorso di destinazione contiene quindi due sottocartelle `pdf` e `pcl`, una per ciascuno dei tipi di output. Supponiamo che la generazione di PDF sia riuscita, quindi la sottocartella `pdf` contiene la sottocartella `success` che a sua volta contiene il documento PDF generato `record1.pdf`. Supponiamo che la generazione PCL non sia riuscita, quindi la sottocartella `pcl` contiene una sottocartella `failure` che a sua volta contiene un file di errore `record1.error.txt` contenente i dettagli dell&#39;errore. Inoltre, il percorso di destinazione contiene una cartella temporanea denominata `__tmp__` che contiene alcuni file necessari durante l&#39;esecuzione batch. È possibile eliminare questa cartella se non sono presenti esecuzioni batch attive che fanno riferimento alla cartella di destinazione.
 
 >[!NOTE]
 >
@@ -177,6 +178,6 @@ La documentazione di riferimento API fornisce informazioni dettagliate su tutti 
 >[!MORELIKETHIS]
 >
 >* [Introduzione ad AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [Architettura di AEM Forms as a Cloud Service per le API di comunicazione e Forms adattivi](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Architettura AEM Forms as a Cloud Service per API Forms adattivi e di comunicazione](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Elaborazione comunicazione - API sincrone](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Elaborazione comunicazione - API batch](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

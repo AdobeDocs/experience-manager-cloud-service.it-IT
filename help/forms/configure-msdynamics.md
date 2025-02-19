@@ -3,7 +3,8 @@ title: Come si configura Microsoft Dynamics 365 in modelli di dati di moduli pre
 description: Scopri come integrare Microsoft Dynamics 365 con Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
+exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 0%
@@ -51,6 +52,7 @@ Creare un account in **Power Platform Admin Center** per:
    * Abilita applicazioni Microsoft Dynamics 365
 
    Segui i passaggi descritti nel video per creare un account in Power Platform Admin Center. In questo video, è stato creato un account di prova a scopo dimostrativo.
+
    >[!VIDEO](https://video.tv.adobe.com/v/3444388)
 
 1. **Registra un&#39;applicazione per [!DNL Microsoft® Dynamics 365] in Azure Active Directory**
