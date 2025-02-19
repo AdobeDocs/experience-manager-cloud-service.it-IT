@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d055ac12b8f36deb4e0244df7b6d5df8ec627557
+source-git-commit: 7f4257433c441eb6b0109f22545b3ef708c9323b
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 87%
@@ -29,7 +29,7 @@ Entro la fine dell’articolo:
 
 ## Informazioni sui tipi di campi modulo
 
-Prima di approfondire lo stile, esaminiamo i [tipi di campo](/help/edge/docs/forms/form-components.md) di un modulo comune supportato dal blocco moduli adattivi:
+Prima di approfondire lo stile, esaminiamo i [tipi di campo](/help/edge/docs/forms/universal-editor/create-custom-component.md#supported-fieldtypes) di un modulo comune supportato dal blocco moduli adattivi:
 
 * Campi di input: includono input di testo, input di e-mail, input di password e altro ancora.
 * Gruppi di caselle di controllo: utilizzati per selezionare più opzioni.
@@ -57,17 +57,17 @@ Il blocco di moduli adattivi offre una struttura HTML standardizzata che semplif
 Esempio:
 
   ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
+    main .form form input {
+        /* Add styles specific to input fields inside the form */
+    }
   
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
+    main .form form button {
+        /* Add styles specific to buttons inside the form */
+    }
   
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
+    main .form form label {
+        /* Add styles specific to labels inside the form */
+    }
   
 ## Struttura dei componenti
 
@@ -90,10 +90,10 @@ Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di pulsanti di s
 ```
 
 * Classi: l’elemento div dispone di diverse classi per il targeting di elementi e stili specifici. È necessario che le classi `{Type}-wrapper` o `field-{Name}` sviluppino un selettore CSS per assegnare uno stile a un campo modulo:
-   * {Type}: identifica il componente per tipo di campo. Ad esempio, testo (ritorno a capo automatico), numero (ritorno a capo automatico), data (ritorno a capo automatico).
-   * {Name}: identifica il componente in base al nome. Il nome del campo può contenere solo caratteri alfanumerici; i trattini consecutivi multipli nel nome vengono sostituiti da un singolo trattino `(-)` e i trattini iniziali e finali nel nome di un campo vengono rimossi. Ad esempio, nome (field-first-name field-wrapper).
-   * {FieldId}: è un identificatore univoco per il campo, generato automaticamente.
-   * {Obbligatorio}: valore booleano che indica se il campo è obbligatorio.
+* {Type}: identifica il componente per tipo di campo. Ad esempio, testo (ritorno a capo automatico), numero (ritorno a capo automatico), data (ritorno a capo automatico).
+* {Name}: identifica il componente in base al nome. Il nome del campo può contenere solo caratteri alfanumerici; i trattini consecutivi multipli nel nome vengono sostituiti da un singolo trattino `(-)` e i trattini iniziali e finali nel nome di un campo vengono rimossi. Ad esempio, nome (field-first-name field-wrapper).
+* {FieldId}: è un identificatore univoco per il campo, generato automaticamente.
+* {Obbligatorio}: valore booleano che indica se il campo è obbligatorio.
 * Etichetta: l’elemento `label` fornisce un testo descrittivo per il campo e lo associa all’elemento di input utilizzando l’attributo `for`.
 * Input: l’elemento `input` definisce il tipo di dati da immettere. Ad esempio, testo, numero, e-mail.
 * Descrizione (Facoltativa): il `div` con classe `field-description` fornisce informazioni o istruzioni aggiuntive per l’utente.
