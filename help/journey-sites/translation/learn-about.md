@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Ad alto livello, la traduzione in AEM consiste in quattro semplici passaggi:
 
 Più avanti nel percorso imparerai passo-passo i dettagli su come AEM traduce i contenuti.
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Grazie per aver iniziato il tuo percorso di traduzione in AEM Sites! Dopo aver letto questo documento, devi:
 
@@ -63,7 +63,7 @@ Approfondisci questo argomento e continua il tuo percorso di traduzione in AEM S
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione dei siti consultando il documento [Introduzione alla traduzione di AEM Sites](getting-started.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso.
+Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione di Sites rivedendo il documento [Introduzione alla traduzione in AEM Sites](getting-started.md), di seguito troverai alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma che non sono necessarie per continuare il percorso.
 
 * [Guida rapida all’authoring delle pagine](/help/sites-cloud/authoring/quick-start.md): panoramica rapida dei concetti più importanti per la creazione di contenuti con AEM Sites
 * [MSM e traduzione](/help/sites-cloud/administering/msm-and-translation.md): dettagli di AEM Multi-Site Manager e come funzionano i suoi strumenti di traduzione

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Sebbene tu possa accedere direttamente a una sezione specifica del percorso, mol
 
 ## Passaggio successivo {#what-is-next}
 
-Ora sei pronto per iniziare il tuo percorso in Adobe headless. Ti invitiamo a passare alla parte successiva del percorso e a leggere l&#39;articolo [Authoring per l&#39;as a Cloud Service headless AEM - Un&#39;introduzione](introduction.md).
+Ora sei pronto per iniziare il tuo percorso in Adobe headless. Ti invitiamo a continuare con la parte successiva del percorso e a leggere l’articolo [Authoring per AEM headless as a Cloud Service - Introduzione](introduction.md).
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}

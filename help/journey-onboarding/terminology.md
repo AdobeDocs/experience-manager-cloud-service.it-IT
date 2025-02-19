@@ -5,19 +5,19 @@ exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Terminologia di AEM as a Cloud Service {#terminology}
 
-In questa sezione del [percorso di onboarding](overview.md), imparerai parte della terminologia di AEM as a Cloud Service e la relativa struttura di base.
+In questa parte del [percorso di onboarding](overview.md) è riportata parte della terminologia di AEM as a Cloud Service e la relativa struttura di base.
 
 ## Obiettivo {#objective}
 
-Ora che hai compreso le fasi preliminari del processo di onboarding leggendo il documento [Preparazione all&#39;onboarding](preparation.md), prima di effettuare l&#39;accesso è utile comprendere alcuni termini del sistema e la relativa struttura di base.
+Ora che hai compreso le fasi preliminari del processo di onboarding leggendo il documento [Preparazione all’onboarding](preparation.md), prima di effettuare l’accesso è utile comprendere alcuni termini del sistema e la relativa struttura di base.
 
 AEM as a Cloud Service è uno strumento potente e flessibile. Per utilizzarlo è necessario conoscere la sua struttura, la terminologia e il linguaggio impiegati per descriverlo. Questo documento riepiloga alcuni termini chiave da comprendere prima di iniziare a utilizzare il sistema.
 

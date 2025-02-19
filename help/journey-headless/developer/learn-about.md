@@ -6,15 +6,15 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1626'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Scopri di più sullo sviluppo di CMS headless {#learn-about}
 
-In questa sezione del [Percorso di sviluppatori headless AEM](overview.md), scopri la tecnologia headless e perché usarla.
+In questa parte del [Percorso per sviluppatori di AEM Headless](overview.md), scoprirai la tecnologia headless e perché utilizzarla.
 
 ## Obiettivo {#objective}
 
@@ -127,7 +127,7 @@ Sviluppa questa conoscenza e continua il tuo percorso AEM headless rivedendo il 
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless esaminando il documento [Guida introduttiva all&#39;as a Cloud Service headless AEM](getting-started.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
+Sebbene sia consigliabile spostarsi nella parte successiva del percorso per lo sviluppo headless rivedendo il documento [Guida introduttiva ad AEM headless as a Cloud Service](getting-started.md), di seguito si trovano alcune risorse aggiuntive e opzionali per approfondire concetti menzionati in questo documento, che tuttavia non sono necessarie per continuare il percorso headless.
 
 * [Introduzione all’Architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Comprendere la struttura di AEM as a Cloud Service
 * [Introduzione ad AEM come CMS headless](/help/headless/introduction.md)

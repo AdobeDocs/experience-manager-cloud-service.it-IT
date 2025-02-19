@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ L’editor universale funziona solo con gli ID dei tag. Creando una pagina di ta
 
 ## Creazione di una pagina di tassonomia {#creating}
 
-Viene creata una tassonomia come [qualsiasi altra pagina in AEM](/help/sites-cloud/authoring/sites-console/creating-pages.md).
+Una tassonomia viene creata come [qualsiasi altra pagina in AEM](/help/sites-cloud/authoring/sites-console/creating-pages.md).
 
-1. Passare alla console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
+1. Passa alla console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 
 1. Seleziona il percorso in cui desideri creare la tassonomia.
 
@@ -46,7 +46,7 @@ Viene creata una tassonomia come [qualsiasi altra pagina in AEM](/help/sites-clo
 
 1. Tocca o fai clic su **Crea**.
 
-Viene creata la pagina della tassonomia. Nella finestra di dialogo **Operazione completata**, tocca o fai clic sulla finestra di dialogo **Operazione completata** per chiudere il messaggio o su **Apri** per modificare la pagina nell&#39;[Editor pagine](/help/sites-cloud/authoring/page-editor/introduction.md).
+Viene creata la pagina della tassonomia. Nella finestra di dialogo **Operazione completata**, tocca o fai clic sulla finestra di dialogo **Fine** per chiudere il messaggio o su **Apri** per modificare la pagina nell’[editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 Prendi nota del nome della pagina risultante della tassonomia da utilizzare nei passaggi seguenti.
 
@@ -54,7 +54,7 @@ Prendi nota del nome della pagina risultante della tassonomia da utilizzare nei 
 
 Inizia a modificare una pagina di tassonomia come qualsiasi altra pagina in AEM.
 
-1. Passare alla console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
+1. Passa alla console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 
 1. Seleziona la tassonomia che desideri modificare.
 
@@ -82,7 +82,7 @@ AEM aggiorna automaticamente il contenuto della pagina della tassonomia quando s
 
 ## Aggiornare paths.json per la pubblicazione della tassonomia {#paths-json}
 
-Come quando [gestisci e pubblichi dati tabulari per il tuo sito Edge Delivery Services](/help/edge/wysiwyg-authoring/tabular-data.md), devi aggiornare il file `paths.json` del progetto per consentire la pubblicazione dei dati della tassonomia.
+Nello stesso modo in cui [gestisci e pubblichi dati tabulari per il tuo sito Edge Delivery Services](/help/edge/wysiwyg-authoring/tabular-data.md), è necessario aggiornare il file `paths.json` del tuo progetto per consentire la pubblicazione dei dati della tassonomia.
 
 1. Apri la directory principale del progetto in GitHub.
 
@@ -101,7 +101,7 @@ Come quando [gestisci e pubblichi dati tabulari per il tuo sito Edge Delivery Se
    }
    ```
 
-   * `<taxonomy-page-name>` deve corrispondere al nome della [pagina tassonomia creata](#creating).
+   * `<taxonomy-page-name>` deve corrispondere al nome della [pagina di tassonomia che hai creato](#creating).
    * `<taxonomy-json-name>` può essere qualsiasi nome valido scelto.
 
 1. Fai clic su **Conferma modifiche...** per salvare le modifiche apportate a `main`.
@@ -112,20 +112,20 @@ Questo processo deve essere eseguito una sola volta per pagina di tassonomia. Al
 
 >[!TIP]
 >
->Per ulteriori informazioni sui mapping dei percorsi, vedere il documento [Mapping dei percorsi per Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
+>Per ulteriori informazioni sulle mappature dei percorsi, consulta il documento [Mappatura percorsi per Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ## Pubblicazione di una tassonomia {#publishing}
 
 Una tassonomia non è disponibile per l’editor universale o per i tuoi utenti fino a quando non viene pubblicata.
 
-Le pagine della tassonomia vengono pubblicate come qualsiasi altra pagina da [utilizzando le icone **Pubblicazione rapida** o **Gestisci pubblicazione** nella barra degli strumenti](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
+Le pagine di tassonomia vengono pubblicate come qualsiasi altra pagina [utilizzando le icone **Pubblicazione rapida** o **Gestisci pubblicazione** nella barra degli strumenti](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 È necessario ripubblicare la pagina di tassonomia ogni volta che:
 
 * Modifichi la pagina della tassonomia.
 * Effettui modifiche o aggiunte ai tag e agli spazi dei nomi inclusi nella pagina della tassonomia.
 
-Se si crea una nuova pagina di tassonomia, è necessario prima [aggiungervi un mapping al file `paths.json` del progetto](#paths-json).
+Se crei una nuova pagina di tassonomia, è necessario prima [aggiungervi una mappatura al file `paths.json` del progetto](#paths-json).
 
 ## Accesso alle informazioni sulla tassonomia {#accessing}
 
@@ -135,7 +135,7 @@ Puoi accedere alla tassonomia come dati JSON al seguente indirizzo.
 
 `https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
-Utilizza `<taxonomy-json-name>` definito durante il [mapping della tassonomia al file `paths.json` nel progetto](#paths-json). I dati della tassonomia vengono restituiti come dati JSON, come nell’esempio seguente.
+Utilizza il `<taxonomy-json-name>` definito durante la [mappatura della tassonomia al file `paths.json` nel progetto](#paths-json). I dati della tassonomia vengono restituiti come dati JSON, come nell’esempio seguente.
 
 ```json
 {
@@ -166,11 +166,11 @@ Utilizza `<taxonomy-json-name>` definito durante il [mapping della tassonomia al
 
 Questi dati JSON verranno aggiornati automaticamente durante l’aggiornamento della tassonomia e la ripubblicano. L’app può accedere a queste informazioni a livello di programmazione per i tuoi utenti.
 
-[Se si gestiscono i tag in più lingue](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages), è possibile accedere a tali lingue passando il codice della lingua ISO2 come valore di un parametro `sheet=`.
+[Se mantieni i tag in più lingue](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages), è possibile accedere a tali lingue passando il codice della lingua ISO2 come valore di un parametro `sheet=`.
 
 ## Esposizione di proprietà tag aggiuntive {#additional-properties}
 
-Per impostazione predefinita, la tassonomia conterrà `tag` e `title` valori come visualizzati [nell&#39;esempio precedente](#accessing). Puoi configurare la tassonomia per esporre proprietà tag aggiuntive. In questo esempio verrà esposta la descrizione del tag.
+Per impostazione predefinita, la tassonomia conterrà i valori `tag` e `title` come mostrato [nell’esempio precedente](#accessing). È possibile configurare la tassonomia per esporre proprietà tag aggiuntive. In questo esempio verrà esposta la descrizione del tag.
 
 1. Utilizza la console Sites per selezionare la tassonomia creata.
 1. Tocca o fai clic sull’icona **Proprietà** nella barra degli strumenti.
@@ -179,7 +179,7 @@ Per impostazione predefinita, la tassonomia conterrà `tag` e `title` valori com
 1. Tocca o fai clic su **Salva e chiudi**.
 1. Con la tassonomia ancora selezionata, tocca o fai clic su **Pubblicazione rapida** nella barra degli strumenti.
 
-Ora [quando accedi alla tassonomia](#accessing), la descrizione del tag (o qualsiasi proprietà scelta per esporre) è inclusa nel JSON.
+Ora [quando accedi alla tassonomia](#accessing), la descrizione del tag (o qualsiasi proprietà scelta da esporre) è inclusa nel JSON.
 
 ```json
 {

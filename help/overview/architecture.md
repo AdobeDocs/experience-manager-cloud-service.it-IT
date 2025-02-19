@@ -5,9 +5,9 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2713'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -180,7 +180,7 @@ Il codice e la configurazione per i progetti AEM vengono memorizzati in un archi
    * Per l’archiviazione del codice Java lato server e le configurazioni OSGI per i livelli di authoring e pubblicazione di AEM.
 * Front-end AEM:
    * Per memorizzare codice JS, CSS e HTML lato client per i livelli di authoring e pubblicazione di AEM.
-Per ulteriori dettagli su clientlibs, vedi [Utilizzo di librerie lato client in AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
+Per ulteriori dettagli su clientlibs, consultare [Utilizzo delle librerie lato client su AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 * Livello web AEM:
    * Memorizza i file di configurazione del Dispatcher per il livello di pubblicazione AEM.
 * Configurazione AEM:

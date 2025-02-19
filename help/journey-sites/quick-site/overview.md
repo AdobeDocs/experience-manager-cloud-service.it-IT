@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Eliminando le conoscenze per gli sviluppatori per la creazione di siti, eliminan
 
 ## Panoramica video {#video-overview}
 
-Per una rapida panoramica di questa funzione in azione, [puoi guardare questa introduzione di cinque minuti](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw).
+Per una rapida panoramica pratica di questa funzione, [è disponibile un’introduzione della durata di cinque minuti.](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
 
 Questo percorso di documentazione illustra in un video tutte le funzioni dettagliate per passaggi, consentendoti di comprendere il flusso di lavoro e creare nuovamente il processo nel tuo ambiente.
 
@@ -64,13 +64,13 @@ In questo percorso esplorerai molti argomenti. I seguenti articoli forniscono in
 | 6 | [Personalizzare il tema del sito](customize-theme.md) | Scopri come è fatto un tema del sito, come personalizzarlo e come testarlo utilizzando contenuti live AEM. | Sviluppatore front-end |
 | 7 | [Distribuire il tema personalizzato](deploy-theme.md) | Scopri come distribuire il tema del sito utilizzando la pipeline. | Sviluppatore front-end |
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Ora puoi iniziare il percorso di Creazione rapida di siti di Adobe.
 
 * Se sei un amministratore di AEM o di Cloud Manager, o se svolgi entrambi i ruoli di sviluppatore front-end e amministratore, oppure se desideri semplicemente comprendere il processo end-to-end in AEM, parti all’inizio del percorso con [Scopri Cloud Manager](cloud-manager.md) come illustrato di seguito.
 * Se sei solo responsabile dello sviluppo front-end e interagirai con gli amministratori di AEM e Cloud Manager, puoi passare direttamente a [Recuperare le informazioni di accesso all’archivio Git](retrieve-access.md) per accedere all’archivio Git AEM e iniziare a personalizzarlo.
-* Se sai già che AEM Sites e Cloud Manager lavorano insieme e desideri iniziare direttamente con la configurazione, puoi [passare direttamente alla creazione di un sito da un modello](create-site.md).
+* Se hai già compreso come AEM Sites e Cloud Manager lavorano insieme e desideri iniziare direttamente con la configurazione, puoi [passare direttamente alla creazione di un sito da un modello](create-site.md).
 
 ## Risorse aggiuntive {#additional-resources}
 

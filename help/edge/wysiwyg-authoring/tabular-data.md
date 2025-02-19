@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1284'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Questo documento utilizza l’esempio dei reindirizzamenti per illustrare come c
 
 >[!TIP]
 >
->Per ulteriori informazioni sul funzionamento generale dei fogli di calcolo con i Edge Delivery Services, vedere il documento [Fogli di calcolo e JSON](/help/edge/developer/spreadsheets.md).
+>Per ulteriori informazioni sul funzionamento generale dei fogli di calcolo con Edge Delivery Services, consulta il documento [Fogli di calcolo e JSON](/help/edge/developer/spreadsheets.md).
 
 >[!TIP]
 >
->I fogli di calcolo devono essere utilizzati solo per conservare i dati tabulari. Per l&#39;archiviazione dei dati strutturati, [controlla le funzionalità headless dell&#39;AEM](/help/headless/introduction.md).
+>I fogli di calcolo devono essere utilizzati solo per conservare i dati tabulari. Per l’archiviazione di dati strutturati, [approfondisci le funzionalità headless di AEM](/help/headless/introduction.md).
 
 ## Prerequisiti {#prerequisites}
 
@@ -174,7 +174,7 @@ Il foglio di calcolo dei reindirizzamenti ora è pubblicato e accessibile al pub
 
 >[!TIP]
 >
->Per ulteriori informazioni sui mapping dei percorsi, vedere il documento [Mapping dei percorsi per Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
+>Per ulteriori informazioni sulle mappature dei percorsi, consulta il documento [Mappatura percorsi per Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ## Altri tipi di fogli di calcolo {#other}
 
@@ -205,7 +205,7 @@ Inoltre, è possibile [creare un foglio di calcolo personalizzato](#own-spreadsh
 
 ## Creazione di un proprio foglio di calcolo {#own-spreadsheet}
 
-1. Seguire gli stessi passaggi nella sezione [Crea foglio di calcolo](#spreadsheet).
+1. Segui gli stessi passaggi descritti nella sezione [Creare un foglio di calcolo](#spreadsheet).
 
 1. Quando selezioni il modello, scegli **Foglio di calcolo**.
 

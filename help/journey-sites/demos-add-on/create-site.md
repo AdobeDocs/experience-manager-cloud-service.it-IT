@@ -5,9 +5,9 @@ exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 86%
 
 Crea un sito demo in AEM basato su una libreria di modelli preconfigurati.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso aggiuntivo Demo di riferimento AEM, [Crea programma](create-program.md), hai effettuato il primo passaggio di configurazione per creare un programma a scopo di test e hai utilizzato una pipeline per distribuire il contenuto aggiuntivo. Ora dovresti:
+Nel precedente documento del percorso del componente aggiuntivo Demo di riferimento AEM, [Crea programma](create-program.md), hai fatto il primo passaggio di configurazione per creare un programma a scopo di test e hai utilizzato una pipeline per distribuire il contenuto aggiuntivo. Ora dovresti aver appreso quanto segue:
 
-* Scopri come utilizzare Cloud Manager per creare un programma.
-* Scopri come attivare AEM Reference Demos Add-On per il nuovo programma.
-* Puoi eseguire una pipeline per distribuire il contenuto aggiuntivo.
+* Come utilizzare Cloud Manager per creare un programma.
+* Come attivare il componente aggiuntivo Demo di riferimento AEM per il nuovo programma.
+* Come eseguire una pipeline per distribuire contenuti aggiuntivi.
 
 Questo articolo descrive il passaggio successivo del processo di creazione di un sito o progetto AEM Screens in AEM basato sui modelli del componente aggiuntivo Demo di riferimento.
 
@@ -95,7 +95,7 @@ Congratulazioni! Ora puoi esplorare ulteriormente il contenuto del sito demo e s
 
 Crea siti aggiuntivi basati su altri modelli per esplorare diverse funzionalità AEM.
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Adesso che hai completato questa parte del percorso di AEM Reference Demo Add-On, dovresti:
 
@@ -105,8 +105,8 @@ Adesso che hai completato questa parte del percorso di AEM Reference Demo Add-On
 
 Puoi testare le funzioni di AEM utilizzando il contenuto aggiuntivo. Sono disponibili due opzioni per continuare il percorso:
 
-* Se desideri una demo per testare completamente il contenuto di AEM Screens, assicurati di aver distribuito un sito basato su **Modello del sito We.Cafe** come descritto in precedenza e continua con [Abilita AEM Screens per il tuo sito demo](screens.md).
-* Se utilizzi solo contenuti demo di Sites, continua con [Gestire i siti demo](manage.md), dove scopri gli strumenti disponibili per aiutarti a gestire i siti demo e come rimuoverli.
+* Se desideri una demo per testare il contenuto completo di AEM Screens, assicurati di aver implementato un sito basato su **Modello del sito We.Cafe** come descritto in precedenza e continua per [abilitare AEM Screens per il tuo sito demo](screens.md).
+* Se utilizzi solo contenuti demo di Sites, continua con [Gestire i siti demo](manage.md), dove troverai informazioni sugli strumenti disponibili per gestire i siti demo e su come rimuoverli.
 
 ## Risorse aggiuntive {#additional-resources}
 

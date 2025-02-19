@@ -5,9 +5,9 @@ exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 95%
 
 Scopri gli strumenti disponibili per aiutarti a gestire i siti demo e come rimuoverli.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso aggiuntivo Demo di riferimento AEM, [Crea sito](create-site.md), è stato creato un nuovo sito demo basato sui modelli del componente aggiuntivo Demo di riferimento. Ora dovresti:
+Nel documento precedente del percorso del componente aggiuntivo Demo di riferimento AEM, [Crea sito](create-site.md), hai creato un nuovo sito demo basato sui modelli del componente aggiuntivo Demo di riferimento. Ora dovresti aver appreso quanto segue:
 
-* Comprendere come accedere all’ambiente di authoring AEM.
-* Conoscere come creare un sito basato su un modello.
-* Comprendere le nozioni di base per navigare nella struttura del sito e modificare una pagina.
+* Come accedere all’ambiente di authoring AEM.
+* Come creare un sito basato su un modello.
+* Nozioni di base per navigare nella struttura del sito e modificare una pagina.
 
-Se hai anche [abilitato AEM Screens per il tuo sito demo](screens.md), dovresti anche:
+Se hai anche [abilitato AEM Screens per il sito demo](screens.md) dovresti anche:
 
 * Conoscere le nozioni di base di AEM Screens.
 * Comprendere il contenuto demo di We.Cafe.
@@ -92,14 +92,14 @@ Nello stesso modo è possibile eliminare i modelli sotto l’intestazione **Elim
 
 ## Fine del percorso? {#end-of-journey}
 
-Congratulazioni! Hai completato il percorso del componente aggiuntivo Demo di riferimento AEM. Ora dovresti:
+Congratulazioni! Hai completato il percorso del componente aggiuntivo Demo di riferimento AEM. Ora dovresti aver appreso quanto segue:
 
-* Scopri le nozioni di base di Cloud Manager e come le pipeline distribuiscono contenuti e configurazioni da AEM.
-* Scopri come utilizzare Cloud Manager per creare un programma.
-* Scopri come attivare il componente aggiuntivo Demo di riferimento per il nuovo programma e come eseguire una pipeline per distribuirne il contenuto.
-* Scopri come accedere all’ambiente di authoring AEM per creare un sito basato su un modello.
-* Scopri come accedere alle utilità demo self-service.
-* Scopri come eliminare un sito o un modello demo esistente.
+* Nozioni di base di Cloud Manager e come le pipeline distribuiscono contenuti e configurazioni da AEM.
+* Come utilizzare Cloud Manager per creare un programma.
+* Come attivare il componente aggiuntivo Demo di riferimento per il nuovo programma e come eseguire una pipeline per distribuirne il contenuto.
+* Come accedere all’ambiente di authoring AEM per creare un sito basato su un modello.
+* Come accedere alle utilità demo self-service.
+* Come eliminare un sito o un modello demo esistente.
 
 Ora puoi esplorare le funzionalità di AEM utilizzando i tuoi siti demo. Tuttavia AEM è uno strumento potente e ci sono molte opzioni aggiuntive disponibili. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
 

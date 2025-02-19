@@ -1,31 +1,31 @@
 ---
 title: Come accedere al contenuto tramite API di consegna di AEM
-description: In questa parte del Percorso per sviluppatori headless di AEM, scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
+description: In questa parte del Percorso per sviluppatori di AEM headless, scopri come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1344'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Come accedere al contenuto tramite API di consegna di AEM {#access-your-content}
 
-In questa sezione del [Percorso di sviluppatori headless AEM](overview.md), puoi imparare a utilizzare le query GraphQL per accedere ai contenuti dei frammenti di contenuto e inviarli all&#39;app (consegna headless).
+In questa parte del [Percorso per sviluppatori AEM headless](overview.md), puoi scoprire come utilizzare le query GraphQL per accedere al contenuto dei frammenti di contenuto e inviarlo all’app (consegna headless).
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso headless AEM, [Come modellare il contenuto](model-your-content.md) hai appreso le nozioni di base sulla modellazione dei contenuti in AEM, quindi ora devi capire come modellare la struttura dei contenuti, quindi realizzare tale struttura utilizzando AEM Modelli di frammento di contenuto e Frammenti di contenuto:
+Nel documento precedente del percorso AEM headless, [Come modellare il contenuto](model-your-content.md) hai appreso le nozioni di base sulla modellazione dei contenuti in AEM, quindi ora hai appreso come modellare la struttura dei contenuti, e realizzare tale struttura utilizzando i modelli per frammenti di contenuto e i frammenti di contenuto di AEM. Inoltre hai acquisito quanto segue:
 
-* Riconoscere i concetti e la terminologia relativi alla modellazione dei contenuti.
-* Scopri perché è necessaria la modellazione dei contenuti per la distribuzione di contenuti headless.
-* Scopri come realizzare questa struttura utilizzando Modelli di frammenti di contenuto di AEM (e creare contenuti con frammenti di contenuto).
-* Come modellare il contenuto; principi con esempi base.
+* I concetti e la terminologia relativi alla modellazione dei contenuti.
+* Perché è necessaria la modellazione dei contenuti per la distribuzione di contenuti headless.
+* Come realizzare questa struttura utilizzando i Modelli per frammenti di contenuto di AEM (e creare contenuti con frammenti di contenuto).
+* Come modellare i contenuti e ne conosci i principi con esempi di base.
 
-Questo articolo si basa su questi elementi fondamentali per comprendere come accedere al contenuto headless esistente in AEM utilizzando l’API GraphQL AEM.
+Sulla base di questi elementi fondamentali, questo articolo parte spiega come accedere al contenuto headless esistente in AEM utilizzando l’API GraphQL di AEM.
 
 * **Pubblico**: principiante
 * **Obiettivo**: scopri come accedere al contenuto dei frammenti di contenuto utilizzando query GraphQL di AEM:

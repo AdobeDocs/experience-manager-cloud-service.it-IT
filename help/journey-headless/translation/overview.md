@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1024'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Questa guida affronta i più importanti argomenti relativi alla traduzione headl
 
 L’obiettivo è quello di darti ampie informazioni sulla tecnologia headless, su come funzionano i contenuti headless di AEM e come tradurli. Se non hai familiarità con nessuno di questi argomenti, questo è il posto giusto per iniziare.
 
-Se conosci già AEM, i contenuti headless e la traduzione, potresti avere già le conoscenze di base di questo percorso. Prendi in considerazione di fare riferimento alla nostra documentazione tecnica collegata alla [sezione risorse aggiuntive di seguito](#additional-resources).
+Se conosci già AEM, i contenuti headless e la traduzione, potresti avere già le conoscenze di base di questo percorso. In caso affermativo, considera la possibilità di fare riferimento alla documentazione tecnica nella [sezione delle risorse aggiuntive seguente](#additional-resources).
 
 ## Percorsi di documentazione AEM {#documentation-journeys}
 
@@ -73,7 +73,7 @@ Sebbene tu possa accedere direttamente a una sezione specifica del percorso, mol
 | 4 | [Tradurre il contenuto](translate-content.md) | Utilizzare l’integrazione della traduzione e le regole per tradurre il contenuto headless. |
 | 5 | [Pubblicare contenuti tradotti](publish-content.md) | Scopri come pubblicare il contenuto tradotto e aggiornare la traduzione quando il contenuto sottostante viene aggiornato. |
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 È ora possibile iniziare a utilizzare il percorso di traduzione headless di Adobe. Ti invitiamo a continuare nella parte successiva del percorso e a leggere l’articolo [Scopri i contenuti headless e come tradurli in AEM](learn-about.md)
 

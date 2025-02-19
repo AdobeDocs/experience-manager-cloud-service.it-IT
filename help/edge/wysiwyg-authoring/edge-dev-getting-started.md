@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1212'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ Questa guida ti aiuterà a essere subito operativo con un nuovo sito Adobe Exper
 
 Prima di iniziare questa guida, è necessario avere già familiarità con le nozioni di base di e avere accesso a Edge Delivery Services, quali:
 
-* Hai completato l&#39;[esercitazione sul servizio Edge Delivery](/help/edge/developer/tutorial.md).
-* Hai accesso a una [sandbox AEM Cloud Service](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
-* Hai abilitato [Universal Editor nello stesso ambiente sandbox](/help/implementing/universal-editor/getting-started.md).
+* Hai completato il [tutorial su Edge Delivery Service](/help/edge/developer/tutorial.md).
+* Hai accesso a una [sandbox di AEM Cloud Service](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+* Hai [attivato dell’editor universale nello stesso ambiente sandbox](/help/implementing/universal-editor/getting-started.md).
 
 ## Concetti fondamentali durante lo sviluppo di Edge Delivery Services {#core-concepts}
 
@@ -52,7 +52,7 @@ I siti web vengono creati automaticamente per ciascuno dei rami, dall’antepri
 
 ## Guida introduttiva all’authoring WYSIWYG e a Edge Delivery Services {#getting-started}
 
-Dopo aver soddisfatto [i prerequisiti](#prerequisites) e aver scelto [l&#39;utilizzo dell&#39;editor universale](#editor-choice), puoi iniziare con il tuo progetto.
+Dopo aver completato [i prerequisiti](#prerequisites) e aver [scelto di utilizzare l’editor universale](#editor-choice), puoi iniziare a lavorare sul tuo progetto.
 
 ### Creare un progetto GitHub {#create-github-project}
 
@@ -116,7 +116,7 @@ Prima devi creare un nuovo progetto su GitHub, basato sul modello di Adobe.
 
 >[!TIP]
 >
->Per ulteriori informazioni sui mapping dei percorsi, vedere il documento [Mapping dei percorsi per Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
+>Per ulteriori informazioni sulle mappature dei percorsi, consulta il documento [Mappatura percorsi per Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ### Creare e modificare un nuovo sito AEM {#create-aem-site}
 
@@ -128,7 +128,7 @@ Ora che disponi di un progetto GitHub, crea un nuovo sito AEM utilizzabile dal p
 
 1. Scarica il modello del sito più recente di authoring WYSIWYG con Edge Delivery Services da GitHub all’indirizzo [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
-1. Accedi all&#39;istanza di authoring di AEM as a Cloud Service, passa alla console Sites e fai clic su **Crea** > **Sito da modello**.
+1. Accedi all’istanza di authoring di AEM as a Cloud Service, passa alla console Sites e fai clic su **Crea** > **Sito da modello**.
 
    ![Creare un nuovo sito dalla console](assets/edge-dev-getting-started/create-site-console.png)
 
@@ -140,14 +140,14 @@ Ora che disponi di un progetto GitHub, crea un nuovo sito AEM utilizzabile dal p
 
    * Il modello deve essere caricato una sola volta. Una volta caricato, può essere riutilizzato per creare ulteriori siti.
 
-1. Dopo aver creato il modello, verrà visualizzato nella procedura guidata. Fare clic per selezionarlo e quindi su **Avanti**.
+1. Dopo l’importazione, il modello verrà visualizzato nella procedura guidata. Fai clic per selezionarlo e quindi su **Avanti**.
 
    ![Seleziona modello](assets/edge-dev-getting-started/select-template.png)
 
 1. Fornisci i campi seguenti e tocca o fai clic su **Crea**.
 
    * **Titolo sito**: aggiungi un titolo descrittivo per il sito.
-   * **Titolo sito** - Utilizza `<site-name>` definito nel [passaggio precedente](#create-github-project).
+   * **Titolo sito**: utilizza il `<site-name>` che hai definito nel [passaggio precedente](#create-github-project).
    * **URL GitHub**: utilizza l’URL del progetto GitHub creato nel passaggio precedente.
 
    ![Dettagli del sito](assets/edge-dev-getting-started/create-site-details.png)
@@ -156,7 +156,7 @@ Ora che disponi di un progetto GitHub, crea un nuovo sito AEM utilizzabile dal p
 
    ![Conferma creazione del sito](assets/edge-dev-getting-started/site-creation-confirmation.png)
 
-1. Nella console Sites, passa a `index.html` del nuovo sito creato e fai clic su **Modifica** nella barra degli strumenti.
+1. Nella console Sites, passa al `index.html` del sito appena creato e fai clic su **Modifica** nella barra degli strumenti.
 
    ![Modifica del nuovo sito](assets/edge-dev-getting-started/new-site.png)
 
@@ -194,4 +194,4 @@ Per ulteriori informazioni, consulta la guida [Creazione di blocchi preparati pe
 
 >[!TIP]
 >
->Per una procedura dettagliata end-to-end di creazione di un nuovo progetto Edge Delivery Services abilitato per la creazione di WYSIWYG con AEM as a Cloud Service come origine di contenuto, visualizzare [questo webinar AEM GEMs](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
+>Per una guida completa sulla creazione di un nuovo progetto Edge Delivery Services abilitato per l’authoring WYSIWYG con AEM as a Cloud Service come origine dei contenuti, guarda [questo webinar della serie AEM GEMs](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

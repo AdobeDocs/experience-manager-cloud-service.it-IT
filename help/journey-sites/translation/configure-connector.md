@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1147'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 90%
 
 Scopri come connettere AEM a un servizio di traduzione.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione AEM Sites, [Guida introduttiva alla traduzione in AEM Sites](learn-about.md), hai imparato a organizzare i contenuti e il modo in cui gli strumenti di traduzione di AEM funzionano. Ora dovresti:
+Nel documento precedente del percorso di traduzione AEM Sites, [Guida introduttiva alla traduzione in AEM Sites](learn-about.md), hai imparato a organizzare i contenuti e il modo in cui gli strumenti di traduzione di AEM funzionano. Ora dovresti aver appreso quanto segue:
 
-* Comprendere l’importanza della struttura dei contenuti per la traduzione.
-* Comprendere come AEM archivia il contenuto.
-* Conoscere gli strumenti di traduzione di AEM.
+* L’importanza della struttura dei contenuti per la traduzione.
+* Come AEM archivia i contenuti.
+* Gli strumenti di traduzione di AEM.
 
 Questo articolo si basa su queste nozioni di base per permetterti di compiere il primo passaggio di configurazione e impostare un servizio di traduzione, che utilizzerai successivamente nel percorso per tradurre i contenuti.
 
@@ -62,7 +62,7 @@ Se scegli un altro fornitore, l’amministratore deve installare il pacchetto de
 >
 >L’utilizzo di Microsoft Translator in AEM non richiede un’ulteriore configurazione e funziona così come è senza ulteriore configurazione del connettore.
 >
->Se scegli di utilizzare il connettore Microsoft Translator a scopo di test, non è necessario eseguire i passaggi descritti nelle due sezioni successive: [Creazione di una configurazione dell&#39;integrazione di traduzione](#create-config) e [Associare la configurazione al contenuto](#associate). Si consiglia tuttavia di leggerli in modo da conoscere i passaggi necessari per configurare il connettore preferito.
+>Se scegli di utilizzare il connettore Microsoft Translator a scopo di test, non è necessario eseguire i passaggi descritti nelle due sezioni successive: [Creazione di una configurazione integrazione della traduzione](#create-config) e [Associare la configurazione al contenuto](#associate). Si consiglia tuttavia di leggerli in modo da conoscere i passaggi necessari per configurare il connettore preferito.
 >
 >La licenza di prova del connettore Microsoft Translator non è destinata alla produzione. Se si decide di ottenerne la licenza, l’amministratore di sistema deve seguire i passaggi descritti nella sezione [Risorse aggiuntive](#additional-resources) alla fine del presente documento per configurare tale licenza.
 
@@ -123,20 +123,20 @@ A questo scopo, accedi alla directory principale della lingua del contenuto. Per
 1. Vai alla navigazione globale e passa a **Navigazione** > **Risorse** > **File**.
 1. Nella console delle risorse, seleziona la directory principale per la lingua da configurare e seleziona **Proprietà**.
 1. Seleziona la scheda **Servizi cloud**.
-1. Nella sezione **Configurazioni Cloud Service**, nell’elenco a discesa **Aggiungi configurazione**, seleziona il connettore. Dovrebbe apparire nell&#39;elenco a discesa dopo aver installato il pacchetto come [descritto in precedenza](#connect-translation-provider).
+1. Nella sezione **Configurazioni Cloud Service**, nell’elenco a discesa **Aggiungi configurazione**, seleziona il connettore. Dovrebbe comparire nel menu a discesa dopo averne installato il pacchetto come [descritto in precedenza](#connect-translation-provider).
 1. Nella sezione **Configurazioni Cloud Service**, seleziona anche la configurazione nell’elenco a discesa **Aggiungi configurazione**.
 1. Seleziona **Salva e chiudi**.
 
 ![Seleziona le configurazioni del servizio cloud](assets/select-cloud-service-configurations.png)
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dovresti:
 
 * Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
 * Essere in grado di impostare la propria connessione al servizio di traduzione.
 
-Approfondisci l&#39;argomento e continua il tuo percorso di traduzione AEM Sites consultando il documento [Configurare le regole di traduzione](translation-rules.md), dove imparerai a definire quale contenuto tradurre.
+Sviluppa questa conoscenza e continua il percorso sulla traduzione per AEM Sites, consultando ora il documento [Configurare le regole di traduzione](translation-rules.md) dove scoprirai come definire i contenuti da tradurre.
 
 ## Risorse aggiuntive {#additional-resources}
 

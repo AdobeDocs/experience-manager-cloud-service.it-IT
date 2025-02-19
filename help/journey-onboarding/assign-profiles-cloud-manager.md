@@ -5,20 +5,20 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1520'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Assegnazione dei membri del gruppo ai profili di prodotto di Cloud Manager {#assign-team-members}
 
-In questa sezione del [percorso di onboarding](overview.md), scopri come assegnare i membri del gruppo ai profili di prodotto di Cloud Manager.
+In questa sezione del [percorso di onboarding](overview.md) scoprirai come assegnare i membri del gruppo ai profili di prodotto di Cloud Manager.
 
 ## Obiettivo {#objective}
 
-Nel passaggio precedente di questo percorso, [Accesso all&#39;Admin Console](admin-console.md), hai scoperto come accedere all&#39;Admin Console e verificare i tuoi privilegi come amministratore di sistema. Ora puoi consentire ai membri del gruppo di accedere a Cloud Manager. Per eseguire l’operazione, assegna i profili di prodotto.
+Nel passaggio precedente di questo percorso, [Accesso ad Admin Console](admin-console.md), hai scoperto come accedere ad Admin Console e verificare i privilegi come amministratore di sistema. Ora puoi consentire ai membri del gruppo di accedere a Cloud Manager. Per eseguire l’operazione, assegna i profili di prodotto.
 
 Quando consenti l’accesso a una soluzione Adobe agli utenti, non devi necessariamente concedere loro l’accesso completo. Con i profili di prodotto è possibile disporre di un set personalizzato di autorizzazioni utente per ogni soluzione. Assegna i profili di prodotto con Admin Console.
 
@@ -170,14 +170,14 @@ Ora gli utenti sono stati assegnati ai ruoli **Sviluppatore** e possono accedere
 
 Congratulazioni. Il nuovo team Cloud Manager appena formato (che include il tuo utente assegnato al profilo **Proprietario business**) è stato configurato. Con il ruolo **Proprietario business**, ora sei a un passo dall’accesso a Cloud Manager e dalla creazione delle risorse cloud.
 
-In questa parte del percorso di onboarding hai scoperto come assegnare i membri del gruppo ai profili in Admin Console. Ora dovresti:
+In questa parte del percorso di onboarding hai scoperto come assegnare i membri del gruppo ai profili in Admin Console. Ora dovresti aver appreso quanto segue:
 
-* Sapere cosa sono i profili di prodotto.
-* Sapere che cos’è Cloud Manager.
-* Conoscere i tre importanti profili di prodotto di Cloud Manager: **Proprietario business**, **Responsabile dell’implementazione** e **Sviluppatore**.
-* Saper assegnare i membri del gruppo ai profili di prodotto di Cloud Manager.
+* Cosa sono i profili di prodotto.
+* Che cos’è Cloud Manager.
+* Tre importanti profili di prodotto di Cloud Manager: **Proprietario business**, **Responsabile dell’implementazione** e **Sviluppatore**.
+* Come assegnare i membri del gruppo ai profili di prodotto di Cloud Manager.
 
-Ora puoi continuare il tuo percorso di onboarding passando al documento [Accedi a Cloud Manager](cloud-manager.md), dove imparerai ad accedere a Cloud Manager e a creare le risorse del progetto.
+Ora puoi continuare il tuo percorso di onboarding passando al documento [Accesso a Cloud Manager](cloud-manager.md), dove verrà illustrato come accedere a Cloud Manager e creare le risorse del progetto.
 
 ## Risorse aggiuntive {#additional-resources}
 

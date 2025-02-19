@@ -5,9 +5,9 @@ exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1415'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ Scopri come creare blocchi abilitati per l’utilizzo con l’editor universale 
 
 Questa guida fornisce istruzioni dettagliate su come creare blocchi abilitati per l’editor universale nell’authoring WYSIWYG con progetti di Edge Delivery Services. Include l’aggiunta di componenti, il caricamento delle definizioni dei componenti nell’editor universale, la pubblicazione delle pagine, l’implementazione della decorazione dei blocchi e degli stili, l’introduzione delle modifiche nell’ambiente di produzione e la loro verifica. Al termine di questa guida, potrai creare e distribuire un nuovo blocco per il tuo progetto.
 
-Questa guida richiede necessariamente una conoscenza esistente dell’authoring WYSIWYG con progetti di Edge Delivery Services e con l’editor universale. Prima di iniziare questa guida, è necessario avere già accesso a Edge Delivery Services e conoscere le relative nozioni di base, tra cui:
+Questa guida richiede necessariamente una conoscenza esistente dell’authoring WYSIWYG con progetti di Edge Delivery Services e con l’editor universale. Prima di iniziare questa guida, dovresti avere già accesso a Edge Delivery Services e conoscere le relative nozioni di base, tra cui:
 
-* Hai completato l&#39;[esercitazione sul servizio Edge Delivery](/help/edge/developer/tutorial.md).
-* Hai accesso a una [sandbox AEM Cloud Service](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
-* Hai abilitato [Universal Editor nello stesso ambiente sandbox](/help/implementing/universal-editor/getting-started.md).
+* Hai completato il [tutorial su Edge Delivery Service](/help/edge/developer/tutorial.md).
+* Hai accesso a una [sandbox di AEM Cloud Service](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+* Hai [attivato dell’editor universale nello stesso ambiente sandbox](/help/implementing/universal-editor/getting-started.md).
 * Hai completato la [Guida introduttiva per gli sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 Questa guida si basa sul lavoro svolto nella [Guida introduttiva per gli sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
@@ -155,7 +155,7 @@ Il seguente esempio di blocco citazione segue questo approccio.
 
 Dopo aver definito e confermato il blocco del preventivo di base nel progetto di esempio, è possibile aggiungere un blocco citazione a una pagina esistente.
 
-1. In un browser, accedi a AEM as a Cloud Service. [Utilizzando la console Sites](/help/sites-cloud/authoring/basic-handling.md), accedi al sito creato nella [Guida introduttiva per sviluppatori per la creazione di WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e seleziona una pagina.
+1. In un browser, accedi a AEM as a Cloud Service. [Utilizzando la console Sites](/help/sites-cloud/authoring/basic-handling.md), passa al sito creato nella [Guida introduttiva per sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e seleziona una pagina.
 
    * In questo caso, `index` viene utilizzato a scopo illustrativo.
 
@@ -281,7 +281,7 @@ Congratulazioni Ora disponi di un blocco delle citazioni completamente funzionan
 
 ### Opzioni di blocco {#block-options}
 
-Se un blocco deve avere un aspetto o un comportamento leggermente diverso a seconda di determinate circostanze, ma non sufficientemente diverso da diventare un nuovo blocco, puoi consentire agli autori di scegliere tra [opzioni blocco](content-modeling.md#type-inference).
+Se un blocco deve avere un aspetto o un comportamento leggermente diverso a seconda di determinate circostanze, ma non abbastanza diverso da diventare un nuovo blocco in sé, puoi consentire agli autori di scegliere tra le [opzioni di blocco](content-modeling.md#type-inference).
 
 Aggiungendo una proprietà `classes` al blocco, quella di cui è stato eseguito il rendering nell’intestazione della tabella per i blocchi semplici o come elenco di valori per gli elementi in un blocco contenitore.
 
@@ -343,4 +343,4 @@ Per scoprire come funziona la modellazione dei contenuti per l’authoring WYSIW
 
 >[!TIP]
 >
->Per una procedura dettagliata end-to-end di creazione di un nuovo progetto Edge Delivery Services abilitato per la creazione di WYSIWYG con AEM as a Cloud Service come origine di contenuto, visualizzare [questo webinar AEM GEMs](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
+>Per una guida completa sulla creazione di un nuovo progetto Edge Delivery Services abilitato per l’authoring WYSIWYG con AEM as a Cloud Service come origine dei contenuti, guarda [questo webinar della serie AEM GEMs](https://experienceleague.adobe.com/it/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

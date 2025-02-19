@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '919'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM Sites è un potente set di strumenti per la creazione e la gestione di esper
 
 Per tradurre i contenuti, AEM offre strumenti altrettanto potenti, che consentono la distribuzione più rapida possibile al pubblico in altre aree geografiche o con diverse impostazioni internazionali. Questo percorso di documentazione introduce gli strumenti di authoring per comprendere come viene creato e gestito il contenuto in AEM, per poi passare a ciò che è necessario sapere per gestire il progetto di traduzione.
 
-Se conosci già AEM Sites e le tue esigenze di traduzione, potresti avere già le conoscenze di base di questo percorso. In caso affermativo, considera la possibilità di fare riferimento alla nostra documentazione tecnica collegata alla [sezione risorse aggiuntive di seguito](#additional-resources).
+Se conosci già AEM Sites e le tue esigenze di traduzione, potresti avere già le conoscenze di base di questo percorso. In caso affermativo, considera la possibilità di fare riferimento alla documentazione tecnica collegata alla [sezione sulle risorse aggiuntive seguente](#additional-resources).
 
 ## Percorsi di documentazione AEM {#documentation-journeys}
 
@@ -68,7 +68,7 @@ Anche se puoi passare direttamente a una parte specifica del percorso, molti con
 | 5 | [Tradurre il contenuto](translate-content.md) | Utilizza il connettore e le regole di traduzione per tradurre il contenuto dei siti. |
 | 6 | [Pubblicare contenuti tradotti](publish-content.md) | Scopri come pubblicare il contenuto tradotto e aggiornare la traduzione quando il contenuto sottostante viene aggiornato. |
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 È ora possibile iniziare a utilizzare il percorso di traduzione dei siti di Adobe. Ti invitiamo a continuare nella parte successiva del percorso e a leggere l&#39;articolo [Scopri i contenuti dei siti e come tradurli in AEM](learn-about.md)
 

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Per poter creare contenuti WYSIWYG utilizzando AEM e pubblicarli in Edge Deliver
 * Mappa e crea una relazione tra i percorsi di pagina utilizzati nell’istanza di authoring AEM e i percorsi di pagina pubblici utilizzati sul sito web.
 * Controlla quali contenuti (pagine, fogli, risorse, ecc.) vengono pubblicati in Edge Delivery Services.
 
-La mappatura del percorso deve essere configurata per ogni progetto singolarmente e in base al contenuto e alla struttura URL del progetto. Viene utilizzato dall&#39;AEM durante la pubblicazione dei contenuti e durante la modifica dei contenuti nell&#39;[Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md).
+La mappatura del percorso deve essere configurata per ogni progetto singolarmente e in base al contenuto e alla struttura dell’URL del progetto. Viene utilizzata da AEM durante la pubblicazione e durante la modifica dei contenuti nell’[editor universale](/help/sites-cloud/authoring/universal-editor/navigation.md).
 
 ## Formato di configurazione {#configuration-format}
 

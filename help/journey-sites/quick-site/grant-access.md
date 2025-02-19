@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '776'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 82%
 
 Inserisci gli sviluppatori front-end in Cloud Manager in modo che abbiano accesso all&#39;archivio git del sito AEM e alla pipeline.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di Creazione Rapida dei Siti AEM, [Configura la pipeline](pipeline-setup.md), hai imparato a creare una pipeline front-end per gestire la personalizzazione del tema del tuo sito e ora dovresti:
+Nel documento precedente del percorso di creazione rapida di siti AEM, [Configurare la pipeline](pipeline-setup.md), hai imparato a creare una pipeline front-end per gestire la personalizzazione del tema del sito, e ora dovresti aver appreso quanto segue:
 
-* Comprendere cos’è una pipeline front-end.
-* Scoprire come impostare una pipeline front-end in Cloud Manager.
+* Cos’è una pipeline front-end.
+* Come impostare una pipeline front-end in Cloud Manager.
 
 Ora devi concedere allo sviluppatore front-end l&#39;accesso a Cloud Manager attraverso il processo di onboarding, in modo che lo possa accedere all&#39;archivio git di AEM e alla pipeline creata.
 
@@ -94,17 +94,17 @@ Con un invito e-mail a Cloud Manager per lo sviluppatore front-end, tu e l’amm
 * Il nome del programma o l&#39;URL a esso associato [copiato da Cloud Manager](pipeline-setup.md#login)
 * Requisiti di progettazione front-end
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Dopo aver completato questa parte del percorso di Creazione Rapida dei Siti AEM, dovresti conoscere:
 
 * Come aggiungere uno sviluppatore front-end come utente.
 * Come assegnare i ruoli richiesti allo sviluppatore front-end.
 
-Sviluppa questa conoscenza e continua il percorso di Creazione Rapida dei Siti AEM consultando il documento [Recuperare le informazioni di accesso all&#39;archivio Git](retrieve-access.md), che descrive la prospettiva dello sviluppatore front-end e spiega come lo sviluppatore front-end utilizza Cloud Manager per accedere alle informazioni dell&#39;archivio git.
+Approfondisci questo argomento e continua il percorso di creazione rapida di un sito AEM consultando il documento [Recuperare le informazioni di accesso all’archivio Git](retrieve-access.md), che descrive la prospettiva dello sviluppatore front-end e spiega come utilizzare Cloud Manager per accedere alle informazioni dell’archivio Git.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia consigliabile passare alla parte successiva del percorso Creazione Rapida dei Siti consultando il documento [Recupero delle credenziali dello sviluppatore Front-End](retrieve-access.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso.
+Sebbene sia consigliabile passare alla parte successiva del percorso di creazione rapida del sito consultando il documento [Recupero delle credenziali dello sviluppatore front-end](retrieve-access.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso.
 
-* [Percorso di onboarding](/help/journey-onboarding/overview.md): questa guida funge da punto di partenza per garantire che i team siano configurati e abbiano accesso a AEM as a Cloud Service.
+* [Percorso di onboarding](/help/journey-onboarding/overview.md): questa guida funge da punto di partenza per garantire che i team siano configurati e abbiano accesso ad AEM as a Cloud Service.

@@ -5,9 +5,9 @@ exl-id: 06287618-0328-40b1-bba8-84002283f23f
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 94%
 
 Scopri come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso Adobe Experience Manager (AEM) Reference Demos Add-on, [Comprendere l&#39;installazione di Reference Demos Add-on](installation.md), hai imparato come funziona il processo di installazione del componente aggiuntivo Reference Demos, illustrando come funzionano i diversi componenti insieme. Ora dovresti:
+Nel documento precedente del percorso sul componente aggiuntivo Demo di riferimento per Adobe Experience Manager (AEM), [Comprendere l’installazione del componente aggiuntivo Demo di riferimento](installation.md), hai imparato come funziona il processo di installazione del componente aggiuntivo Demo di riferimento e come funzionano insieme i diversi componenti. Ora dovresti aver appreso quanto segue:
 
-* Avere una conoscenza di base di Cloud Manager.
-* Scoprire come le pipeline forniscono contenuto e configurazione ad AEM.
-* Scoprire come i modelli possono creare siti precompilati con contenuti dimostrativi con pochi clic.
+* Conoscenza di base di Cloud Manager.
+* Come le pipeline forniscono contenuti e configurazioni ad AEM.
+* Come i modelli possono creare siti precompilati con contenuti dimostrativi con pochi clic.
 
 Questo articolo si basa su tali elementi fondamentali e mostra il primo passaggio di configurazione per creare un programma a scopo di test e utilizza una pipeline per distribuire il contenuto aggiuntivo.
 

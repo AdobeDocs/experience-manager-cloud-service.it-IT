@@ -5,9 +5,9 @@ exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '864'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ L’amministratore di sistema è responsabile della configurazione del team Clou
 
 Per accedere a Cloud Manager, segui la procedura riportata di seguito.
 
-1. Passare alla pagina di accesso di Cloud Manager all&#39;indirizzo [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/).
+1. Passa alla alla pagina di accesso di Cloud Manager all’indirizzo [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/).
 
-1. Dalla pagina **Programmi e prodotti** di Cloud Manager, seleziona il programma per aprire la pagina **Panoramica**.
+1. Per aprire la pagina **Panoramica**, seleziona il programma appropriato dalla pagina **Programmi e prodotti** di Cloud Manager.
 
 Puoi accedere alla pagina Programmi e prodotti di Cloud Manager anche dalla pagina Home di Adobe Experience Cloud, seguendo la procedura riportata di seguito.
 

@@ -5,20 +5,20 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1397'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Attività dei ruoli Sviluppatore e Responsabile dell’implementazione {#developer-deployment-manager}
 
-In questa sezione facoltativa del [percorso di onboarding](overview.md), scopri come sviluppatori e responsabili dell&#39;implementazione possono accedere a Git per sviluppare applicazioni e distribuirle con le pipeline.
+In questa sezione facoltativa del [percorso di onboarding](overview.md) scoprirai come sviluppatori e responsabili dell’implementazione possono accedere a Git per sviluppare applicazioni e utilizzare pipeline per distribuirle.
 
 ## Percorso affrontato finora {#story-so-far}
 
-Hai fatto molta strada nel tuo percorso di onboarding. Congratulazioni. L&#39;amministratore di sistema ha completato il percorso di onboarding configurando le risorse cloud necessarie e concedendo l&#39;accesso nel documento [Assegnazione dei profili di prodotto AEM](assign-profiles-aem.md).
+Hai fatto molta strada nel tuo percorso di onboarding. Congratulazioni. L’amministratore di sistema ha completato il percorso di onboarding configurando le risorse cloud necessarie e concedendo l’accesso, come descritto nel documento [Assegnazione dei profili di prodotto di AEM](assign-profiles-aem.md).
 
 Ora gli utenti con i ruoli Sviluppatore e Responsabile dell’implementazione possono iniziare a creare applicazioni personalizzate, mentre gli utenti AEM possono iniziare a creare contenuti. In questo senso, il percorso di onboarding è completo e ora è possibile utilizzare il nuovo sistema AEM as a Cloud Service illustrato in questo documento.
 
@@ -136,7 +136,7 @@ Ora che hai letto questo documento, dovresti:
 
 Hai completato con successo il tuo percorso come utente Sviluppatore o Responsabile dell’implementazione acquisendo non solo competenze lavorative su Cloud Manager, ma anche su ambienti di lavoro, archivi e pipeline. Tuttavia, c’è altro da scoprire sui potenti strumenti CI/CD di AEM as a Cloud Service. Per ulteriori informazioni, consulta la sezione [Risorse aggiuntive](#additional-resources).
 
-Se ti interessa scoprire come accedere e utilizzare AEM as a Cloud Service come autore di contenuti, continua con la sezione finale del percorso di onboarding [Attività utente AEM](aem-users.md).
+Se ti interessa scoprire come gli autori dei contenuti accedono e utilizzano AEM as a Cloud Service, continua con la sezione finale del percorso di onboarding [Attività degli utenti AEM](aem-users.md).
 
 >[!TIP]
 >

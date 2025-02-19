@@ -5,15 +5,15 @@ exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '760'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Preparazione all’onboarding {#onboarding-preparation}
 
-Ora che sai cosa ti riserva il processo di onboarding poiché hai letto l’articolo [Introduzione al Percorso di onboarding AEM as a Cloud Service](overview.md), tutto è pronto per iniziare. Tuttavia, prima di iniziare il processo di onboarding e di effettuare l’accesso al sistema, è necessario che l’amministratore comprenda una serie di passaggi preparatori.
+Ora che sai cosa ti riserva il processo di onboarding poiché hai letto l’articolo [Introduzione al percorso di onboarding di AEM as a Cloud Service](overview.md), tutto è pronto per iniziare. Tuttavia, prima di iniziare il processo di onboarding e di effettuare l’accesso al sistema, è necessario che l’amministratore comprenda una serie di passaggi preparatori.
 
 ## Obiettivo {#objective}
 
@@ -83,7 +83,7 @@ L’e-mail contiene informazioni dettagliate su come iniziare a utilizzare i ser
 
 ## Passaggio successivo {#whats-next}
 
-Ora dovresti sapere:
+Ora dovresti aver acquisito le seguenti nozioni di base:
 
 * Quali punti sono definiti nel contratto con Adobe.
 * Cosa fornisce Adobe.

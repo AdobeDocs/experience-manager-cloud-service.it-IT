@@ -6,9 +6,9 @@ hidefromtoc: true
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1347'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ I Percorsi di documentazione forniscono una struttura narrativa all’interno de
 
 Un percorso di documentazione unisce molti argomenti e caratteristiche diversi e complessi, fornendo un resoconto che aiuta il lettore, che potrebbe essere un nuovo utente di AEM, a capire e risolvere un problema di business dall’inizio alla fine, supponendo una conoscenza minima pregressa dell’argomento o di AEM.
 
-I Percorsi di documentazione sono molto diversi dai documenti tecnici AEM esistenti, che si concentrano principalmente su un’unica funzione e documentazione delle attività, supponendo la conoscenza di AEM. Concentrandosi sui concetti e rinviando i dettagli approfonditi alla documentazione tecnica esistente, i Percorsi di documentazione offrono ai lettori che non conoscono AEM un punto da cui iniziare a comprendere come sfruttare la piattaforma utilizzando le best practice per rispondere a esigenze e flussi di lavoro di business comuni. Per questo motivo, i Percorsi di documentazione fungono da complemento e non da sostituzione della [documentazione tecnica esistente dell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it).
+I Percorsi di documentazione sono molto diversi dai documenti tecnici AEM esistenti, che si concentrano principalmente su un’unica funzione e documentazione delle attività, supponendo la conoscenza di AEM. Concentrandosi sui concetti e rinviando i dettagli approfonditi alla documentazione tecnica esistente, i Percorsi di documentazione offrono ai lettori che non conoscono AEM un punto da cui iniziare a comprendere come sfruttare la piattaforma utilizzando le best practice per rispondere a esigenze e flussi di lavoro di business comuni. Per questo motivo, i Percorsi di documentazione fungono da complemento e non da sostituzione della [Documentazione tecnica AEM esistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it).
 
 ### Apprendimento per narrazione {#narrative}
 

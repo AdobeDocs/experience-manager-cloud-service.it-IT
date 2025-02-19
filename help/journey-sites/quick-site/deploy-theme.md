@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 95%
 
 Scopri come distribuire il tema del sito utilizzando la pipeline.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di Creazione Rapida dei Siti AEM, [Personalizzare il tema del sito](customize-theme.md), hai imparato come è costruito il tema, come personalizzarlo e come testarlo utilizzando il contenuto live AEM, e ora dovresti:
+Nel documento precedente del percorso di creazione rapida di siti AEM, [Personalizzare il tema del sito](customize-theme.md), hai imparato come è costruito il tema, come personalizzarlo e come testarlo utilizzando il contenuto live AEM, e ora dovresti aver appreso quanto segue:
 
-* Comprendere la struttura di base del tema del sito e come modificarlo.
-* Scopri come testare le personalizzazioni dei temi utilizzando contenuti AEM reali tramite proxy locale.
-* Scopri come eseguire il commit delle modifiche nell’archivio Git AEM.
+* La struttura di base del tema del sito e come modificarlo.
+* Come testare le personalizzazioni dei temi utilizzando contenuti AEM reali tramite proxy locale.
+* Come eseguire il commit delle modifiche nell’archivio Git AEM.
 
 Ora puoi effettuare il passaggio finale e utilizzare la pipeline per distribuirli.
 
@@ -78,7 +78,7 @@ Puoi verificare lo stato della pipeline per visualizzarne i dettagli dell’avan
 Una volta completata la pipeline, puoi informare l’amministratore per convalidare le modifiche. L’amministratore:
 
 1. Aprirà l’ambiente di authoring AEM.
-1. Accedi al [sito creato in precedenza dall&#39;amministratore](create-site.md).
+1. Passa al [sito creato in precedenza dall’amministratore](create-site.md).
 1. Modificherà una delle pagine di contenuto.
 1. Visualizzerà le modifiche applicate.
 
@@ -86,11 +86,11 @@ Una volta completata la pipeline, puoi informare l’amministratore per convalid
 
 ## Fine del percorso? {#end-of-journey}
 
-Congratulazioni. Hai completato il percorso di creazione rapida di siti di AEM. Ora dovresti:
+Congratulazioni. Hai completato il percorso di creazione rapida di siti di AEM. Ora dovresti aver appreso quanto segue:
 
-* Comprendere come Cloud Manager e la pipeline front-end funzionano per gestire e distribuire personalizzazioni front-end.
-* Conoscere come creare un sito AEM basato su un modello e come scaricare il tema del sito.
-* Come integrare uno sviluppatore front-end in modo che possa accedere all’archivio Git AEM.
+* Come Cloud Manager e la pipeline front-end funzionano per gestire e distribuire personalizzazioni front-end.
+* Come creare un sito AEM basato su un modello e scaricare il tema del sito.
+* Come introdurre uno sviluppatore front-end in modo che possa accedere all’archivio Git AEM.
 * Come personalizzare e testare un tema utilizzando il contenuto AEM proxy e confermare tali modifiche in AEM git.
 * Come distribuire la personalizzazione front-end utilizzando la pipeline.
 

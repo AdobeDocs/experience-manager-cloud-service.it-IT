@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ I dettagli dei blocchi possono quindi essere configurati nel pannello delle Prop
 
 ![Configurazione delle proprietà del blocco](assets/block-properties.png)
 
-Per informazioni dettagliate su come eseguire l&#39;authoring utilizzando l&#39;editor universale, vedere il documento [Authoring dei contenuti con l&#39;editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md).
+Per informazioni dettagliate su come utilizzare l’editor universale, consulta il documento [Authoring dei contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 Consulta la [Guida introduttiva per sviluppatori di authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) per scoprire come avviare un proprio progetto per l’authoring di AEM e Edge Delivery Services.
 

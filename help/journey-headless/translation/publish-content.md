@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1359'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 92%
 
 Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggiornamenti dei contenuti.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione headless AEM, [Traduci contenuto](configure-connector.md), hai imparato a utilizzare i progetti di traduzione AEM per tradurre i contenuti headless. Ora dovresti:
+Nel documento precedente del percorso di traduzione di AEM headless, [Tradurre il contenuto](configure-connector.md), hai imparato a utilizzare i progetti di traduzione AEM per tradurre i contenuti headless. Ora dovresti aver appreso quanto segue:
 
-* Sapere cos’è un progetto di traduzione.
-* Essere in grado di creare nuovi progetti di traduzione.
-* Utilizzare i progetti di traduzione per tradurre i contenuti headless.
+* Cos’è un progetto di traduzione.
+* Come creare nuovi progetti di traduzione.
+* Come utilizzare i progetti di traduzione per tradurre i contenuti headless.
 
 Una volta completata la traduzione iniziale, questo articolo illustra il passaggio successivo per la pubblicazione di tale contenuto e le operazioni da eseguire per aggiornare le traduzioni quando il contenuto sottostante nella directory principale della lingua cambia.
 
@@ -117,9 +117,9 @@ Al progetto è stata aggiunta una nuova scheda di processo. In questo esempio è
 
 ![Ulteriore processo di traduzione aggiunto](assets/additional-translation-job.png)
 
-Noterai che le statistiche elencate nella nuova scheda (numero di risorse e frammenti di contenuto) sono diverse. Questo perché AEM riconosce ciò che è cambiato dopo l’ultima traduzione e include solo il contenuto che deve essere tradotto. Ciò include la ritraduzione dei contenuti aggiornati e la prima traduzione dei nuovi contenuti.
+Noterai che le statistiche elencate nella nuova scheda (numero di risorse e frammenti di contenuto) sono diverse. Questo perché AEM riconosce ciò che è cambiato dopo l’ultima traduzione e include solo il contenuto che deve essere tradotto. Sono comprese la ritraduzione dei contenuti aggiornati e la prima traduzione di nuovi contenuti.
 
-Da questo punto, [avvia e gestisci il processo di traduzione proprio come hai fatto con l&#39;originale](translate-content.md#using-translation-project).
+A questo punto, puoi [iniziare e gestire il tuo processo di traduzione proprio come hai fatto con l’originale](translate-content.md#using-translation-project).
 
 ### Aggiornamento di un progetto di traduzione creato manualmente {#updating-manual-project}
 
@@ -141,26 +141,26 @@ Per aggiornare una traduzione è possibile aggiungere al progetto esistente un n
    ![Seleziona lingua di destinazione](assets/select-target-language.png)
 
 1. Una volta impostata la lingua di destinazione del nuovo processo di traduzione, seleziona il pulsante con i puntini di sospensione nella parte inferiore della scheda del processo per visualizzarne i dettagli.
-1. Il processo è vuoto al momento della creazione. Aggiungi contenuto al processo toccando o facendo clic sul pulsante **Aggiungi** e utilizzando il browser percorsi [come in precedenza durante la creazione del progetto di traduzione](translate-content.md##manually-creating).
+1. Il processo è vuoto al momento della creazione. Per aggiungere contenuti al processo, tocca o fai clic sul pulsante **Aggiungi** e utilizza il browser dei percorsi [come in precedenza durante la creazione del progetto di traduzione](translate-content.md##manually-creating).
 
 >[!TIP]
 >
->I potenti filtri del browser del percorso possono essere utili di nuovo per trovare solo il contenuto aggiornato.
+>I potenti filtri del browser percorsi possono essere nuovamente utili per trovare solo il contenuto aggiornato.
 >
->Ulteriori informazioni sul browser percorsi sono disponibili nella [sezione risorse aggiuntive](#additional-resources).
+>Per ulteriori informazioni sul browser percorsi, consulta la [sezione risorse aggiuntive](#additional-resources).
 
-Da questo punto, [avvia e gestisci il processo di traduzione proprio come hai fatto con l&#39;originale](translate-content.md#using-translation-project).
+A questo punto, puoi [iniziare e gestire il processo di traduzione proprio come hai fatto con l’originale](translate-content.md#using-translation-project).
 
 ## Fine del percorso? {#end-of-journey}
 
-Congratulazioni. Hai completato il percorso di traduzione headless. Ora dovresti:
+Congratulazioni. Hai completato il percorso di traduzione headless. Ora dovresti aver appreso quanto segue:
 
-* Avrai una panoramica della distribuzione headless dei contenuti.
-* avere una comprensione di base delle funzionalità headless di AEM.
-* Comprenderai le funzioni di traduzione di AEM e in che modo si relazionano con il contenuto headless.
-* Essere in grado di iniziare a tradurre i tuoi contenuti headless.
+* Panoramica della distribuzione headless dei contenuti.
+* Nozioni di base sulle funzionalità headless di AEM.
+* Le funzioni di traduzione di AEM e in che modo si relazionano con il contenuto headless.
+* Come iniziare a tradurre i tuoi contenuti headless.
 
-essere in grado di tradurre i tuoi contenuti headless in AEM. Tuttavia AEM è uno strumento potente e ci sono molte opzioni aggiuntive disponibili. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
+Ora puoi iniziare a tradurre i tuoi contenuti headless in AEM. Tuttavia AEM è uno strumento potente e ci sono molte opzioni aggiuntive disponibili. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
 
 ## Risorse aggiuntive {#additional-resources}
 

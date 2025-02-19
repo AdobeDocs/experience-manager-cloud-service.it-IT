@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -113,7 +113,7 @@ Per registrare in modo efficiente un bug con il supporto nel caso sia necessaria
 
 ## Il percorso è terminato - Davvero? {#journey-ends}
 
-Congratulazioni. Hai completato il Percorso per sviluppatori AEM headless! Ora dovresti avere imparato:
+Congratulazioni. Hai completato il Percorso per sviluppatori AEM headless! Ora dovresti aver appreso quanto segue:
 
 * La differenza tra distribuzione headless e headful dei contenuti.
 * Le funzionalità headless di AEM.
@@ -129,7 +129,7 @@ Hai già lanciato il tuo primo progetto AEM Headless oppure possiedi ormai tutte
 
 I negozi headless in AEM possono anche non fermarsi qui, però. Nella [Guida introduttiva al percorso](getting-started.md#integration-levels) abbiamo accennato a come AEM supporta non solo la distribuzione headless e i modelli tradizionali full-stack, ma anche i modelli ibridi che combinano i vantaggi di entrambi.
 
-Se questo tipo di flessibilità è necessario per il progetto, continuare con la sezione facoltativa aggiuntiva del percorso [Come creare applicazioni a pagina singola (SPA) con AEM](create-spa.md).
+Se questo tipo di flessibilità è un elemento necessario per il tuo progetto, continua con l’ulteriore parte opzionale del percorso, [Come creare applicazioni a pagina singola (SPA) con AEM](create-spa.md).
 
 ## Risorse aggiuntive {#additional-resources}
 

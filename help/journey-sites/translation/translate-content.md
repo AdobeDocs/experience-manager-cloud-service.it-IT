@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2526'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 92%
 
 Utilizza il connettore di traduzione e le regole per tradurre il contenuto.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso di traduzione AEM Sites, [Configurare le regole di traduzione](translation-rules.md) hai imparato a utilizzare le regole di traduzione AEM per identificare il contenuto da tradurre. Ora dovresti:
+Nel documento precedente del percorso di traduzione AEM Sites, [Configurare le regole di traduzione](translation-rules.md) hai imparato a utilizzare le regole di traduzione AEM per identificare il contenuto da tradurre. Ora dovresti aver appreso quanto segue:
 
-* Comprendere come funzionano le regole di traduzione.
-* Essere in grado di definire le tue regole di traduzione.
+* Come funzionano le regole di traduzione.
+* Come definire le tue regole di traduzione.
 
 Ora che le regole del connettore e delle traduzioni sono configurate, questo articolo illustra il passaggio successivo per la traduzione dei contenuti in AEM Sites.
 
@@ -76,7 +76,7 @@ Viene visualizzato un messaggio che informa che il progetto è stato creato.
 
 >[!NOTE]
 >
->Si presume che la struttura linguistica necessaria per le lingue di traduzione sia già stata creata come parte della [definizione della struttura del contenuto](getting-started.md#content-structure). Questo dovrebbe essere fatto in collaborazione con l&#39;architetto dei contenuti.
+>Si presume che la struttura linguistica necessaria per le lingue di traduzione sia già stata creata come parte della [definizione della struttura del contenuto](getting-started.md#content-structure). Questo dovrebbe essere fatto in collaborazione con l’architetto di contenuti.
 >
 >Se le cartelle della lingua non vengono create in anticipo, non sarà possibile creare copie in lingua come descritto nei passaggi precedenti.
 
@@ -126,7 +126,7 @@ Il progetto è diviso in più schede.
 
 * **Riepilogo**: questa scheda mostra le informazioni di intestazione di base del progetto, inclusi il proprietario, la lingua e il provider di traduzione.
 * **Lavoro di traduzione**: questa scheda o queste schede mostrano una panoramica del lavoro di traduzione effettivo, compreso lo stato, il numero di risorse, ecc. In genere esiste un lavoro per lingua con il codice della lingua ISO-2 aggiunto al nome del processo.
-   * Quando [crea automaticamente i processi di traduzione](#automatically-creating), AEM crea i processi in modo asincrono e potrebbero non essere visualizzati immediatamente all&#39;interno del progetto.
+   * In caso di [creazione automatica di lavori di traduzione](#automatically-creating), AEM genera processi asincroni che potrebbero non essere visualizzati immediatamente all’interno del progetto.
 * **Team**: questa scheda mostra gli utenti che stanno collaborando a questo progetto di traduzione. Questo percorso non tratta questo argomento.
 * **Attività**: attività aggiuntive associate alla traduzione del contenuto, ad esempio per eseguire elementi o elementi del flusso di lavoro. Questo percorso non tratta questo argomento.
 
@@ -175,7 +175,7 @@ Le traduzioni automatiche risultano automaticamente con lo stato **Approvato**. 
 
 >[!NOTE]
 >
->Se non hai disattivato l&#39;opzione di progetto **Elimina lancio dopo la promozione** come [descritto nella sezione precedente](#using-translation-project), gli elementi tradotti verranno visualizzati con lo stato **Eliminato**. Questo è normale in quanto AEM scarta automaticamente i record di traduzione una volta che arrivano gli elementi tradotti. Gli elementi tradotti sono stati importati come copie in lingua, solo i record di traduzione sono stati cancellati in quanto non sono più necessari.
+>Se non hai disattivato l’opzione di progetto **Elimina lancio dopo la promozione** come [descritto nella sezione precedente](#using-translation-project), gli elementi tradotti verranno visualizzati con lo stato **Eliminato**. Questo è normale in quanto AEM scarta automaticamente i record di traduzione una volta che arrivano gli elementi tradotti. Gli elementi tradotti sono stati importati come copie in lingua, solo i record di traduzione sono stati cancellati in quanto non sono più necessari.
 >
 >Non preoccuparti se non ti è chiaro. Questi sono dettagli approfonditi sul funzionamento di AEM e non influiscono sulla tua comprensione del processo. Per informazioni più approfondite su come AEM elabora le traduzioni, consulta la sezione [Risorse aggiuntive](#additional-resources) alla fine di questo articolo.
 
@@ -213,7 +213,7 @@ Per aggiungere contenuto a un lavoro di traduzione:
 >
 >Il browser del percorso è un potente strumento che consente di cercare, filtrare e navigare nel contenuto. Seleziona il pulsante **Solo contenuto/Filtri** per attivare/disattivare il pannello laterale e visualizzare filtri avanzati, ad esempio **Data di modifica** o **Stato della traduzione**.
 >
->Ulteriori informazioni sul browser percorsi sono disponibili nella [sezione risorse aggiuntive](#additional-resources).
+>Per ulteriori informazioni sul browser percorsi, consulta la [sezione risorse aggiuntive](#additional-resources).
 
 Puoi utilizzare i passaggi precedenti per aggiungere il contenuto necessario a tutte le lingue (processi) per il progetto. Dopo aver selezionato tutti i contenuti, puoi avviare la traduzione.
 
@@ -235,13 +235,13 @@ Le traduzioni automatiche risultano automaticamente con lo stato **Approvato**. 
 
 >[!NOTE]
 >
->Se non hai disattivato l&#39;opzione di progetto **Elimina lancio dopo la promozione** come [descritto nella sezione precedente](#using-translation-project), gli elementi tradotti verranno visualizzati con lo stato **Eliminato**. Questo è normale in quanto AEM scarta automaticamente i record di traduzione una volta che arrivano gli elementi tradotti. Gli elementi tradotti sono stati importati come copie in lingua, solo i record di traduzione sono stati cancellati in quanto non sono più necessari.
+>Se non hai disattivato l’opzione di progetto **Elimina lancio dopo la promozione** come [descritto nella sezione precedente](#using-translation-project), gli elementi tradotti verranno visualizzati con lo stato **Eliminato**. Questo è normale in quanto AEM scarta automaticamente i record di traduzione una volta che arrivano gli elementi tradotti. Gli elementi tradotti sono stati importati come copie in lingua, solo i record di traduzione sono stati cancellati in quanto non sono più necessari.
 >
 >Non preoccuparti se non ti è chiaro. Questi sono dettagli approfonditi sul funzionamento di AEM e non influiscono sulla tua comprensione del processo. Per informazioni più approfondite su come AEM elabora le traduzioni, consulta la sezione [Risorse aggiuntive](#additional-resources) alla fine di questo articolo.
 
 ## Revisione dei contenuti tradotti {#reviewing}
 
-[Come visto in precedenza](#using-translation-project), il contenuto tradotto automaticamente torna in AEM con lo stato di **Approvato** poiché si presume che, poiché si utilizza la traduzione automatica, non sia necessario alcun intervento umano. Tuttavia è ancora possibile rivedere il contenuto tradotto.
+[Come visto in precedenza](#using-translation-project), il contenuto tradotto automaticamente torna in AEM con lo stato **Approvato** poiché si presume che, poiché si utilizza la traduzione automatica, non sia necessario alcun intervento umano. Tuttavia è ancora possibile rivedere il contenuto tradotto.
 
 Basta andare al lavoro di traduzione completato e selezionare una riga toccando o facendo clic sulla casella di spunta. L&#39;icona **Anteprima in Sites** è nella barra degli strumenti.
 
@@ -273,7 +273,7 @@ Se il servizio di traduzione fornisce una traduzione umana, il processo di revis
 
 La traduzione umana va oltre lo scopo di questo percorso di localizzazione. Consulta la sezione [Risorse aggiuntive](#additional-resources) alla fine di questo documento per ulteriori informazioni su questo argomento. Tuttavia, oltre alle opzioni di approvazione aggiuntive, il flusso di lavoro per le traduzioni umane è lo stesso delle traduzioni automatiche descritto in questo percorso.
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dovresti:
 
@@ -285,7 +285,7 @@ Approfondisci questo argomento e prosegui nel tuo percorso di traduzione in AEM 
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione esaminando il documento [Contenuto tradotto di Publish](publish-content.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso.
+Sebbene sia consigliabile passare alla parte successiva del processo di traduzione consultando il documento [Pubblicare i contenuti tradotti](publish-content.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso.
 
 * [Gestione dei progetti di traduzione](/help/sites-cloud/administering/translation/managing-projects.md): scopri i dettagli dei progetti di traduzione e le funzioni aggiuntive, come i flussi di lavoro di traduzione umana e i progetti multilingue.
 * [Strumenti e ambiente di authoring](/help/sites-cloud/authoring/path-selection.md#path-selection): AEM offre diversi meccanismi per organizzare e modificare i contenuti, tra cui un browser del percorso affidabile.

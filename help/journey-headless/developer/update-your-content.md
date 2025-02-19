@@ -6,25 +6,25 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Come aggiornare il contenuto utilizzando le API di AEM Assets. {#update-your-content}
 
-In questa sezione del [Percorso di sviluppatori headless AEM](overview.md), scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
+In questa parte del [Percorso per sviluppatori headless di AEM](overview.md), scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso headless di AEM, [Come accedere ai contenuti utilizzando API di distribuzione di AEM](access-your-content.md) hai imparato ad accedere ai contenuti headless in AEM utilizzando l’API GraphQL AEM e ora dovresti:
+Nel documento precedente del percorso headless di AEM, [Come accedere ai contenuti utilizzando API di distribuzione di AEM](access-your-content.md) hai imparato ad accedere ai contenuti headless in AEM utilizzando l’API GraphQL AEM e ora dovresti aver appreso quanto segue:
 
-* Conoscere GraphQL ad alto livello.
-* Sapere come funziona l’API GraphQL di AEM.
-* Comprendere alcune query pratiche di esempio.
+* Conoscenza generale di GraphQL.
+* Come funziona l’API GraphQL di AEM.
+* Alcune query pratiche di esempio.
 
-Questo articolo si basa su questi elementi fondamentali per comprendere come aggiornare il contenuto headless esistente in AEM utilizzando l’API REST.
+Questo articolo si basa su questi elementi fondamentali per comprendere come aggiornare contenuti headless esistenti in AEM utilizzando l’API REST.
 
 ## Obiettivo {#objective}
 
@@ -57,7 +57,7 @@ L’API HTTP di Assets include:
 
 L’implementazione corrente dell’API HTTP di Assets si basa sullo stile architettonico **REST** e consente di accedere ai contenuti (memorizzati in AEM) utilizzando operazioni **CRUD** (Create (Crea), Read (Leggi), Update (Aggiorna) e Delete (Elimina)).
 
-Con queste operazioni l’API ti consente di utilizzare Adobe Experience Manager as a Cloud Service come CMS headless (Sistema di gestione dei contenuti (Content Management System)) fornendo servizi di contenuto a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON. Ad esempio, le applicazioni a pagina singola (SPA), basate su framework o personalizzate, richiedono il contenuto fornito tramite un’API, spesso in formato JSON.
+Con queste operazioni l’API ti consente di utilizzare Adobe Experience Manager as a Cloud Service come CMS (Content Management System, Sistema di gestione dei contenuti) headless fornendo servizi di contenuto a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON. Ad esempio, le applicazioni a pagina singola (SPA), basate su framework o personalizzate, richiedono il contenuto fornito tramite un’API, spesso in formato JSON.
 
 <!--
 >[!NOTE]
@@ -309,10 +309,10 @@ Per ulteriori dettagli sull’utilizzo dell’API REST di AEM Assets, consulta:
 
 ## Passaggio successivo {#whats-next}
 
-Ora che hai completato questa parte del percorso per sviluppatori headless di AEM, dovresti:
+Ora che hai completato questa parte del percorso per sviluppatori di AEM headless, dovresti aver appreso quanto segue:
 
-* Scopri le nozioni di base dell’API HTTP di AEM Assets.
-* Scopri in che modo i frammenti di contenuto sono supportati in questa API.
+* Le nozioni di base dell’API HTTP di AEM Assets.
+* Come i frammenti di contenuto sono supportati in questa API.
 
 <!--
 * Have experience with sample code and know how the API works in practice.

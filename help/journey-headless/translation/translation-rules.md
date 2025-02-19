@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 
 Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione.
 
-## La storia finora {#story-so-far}
+## Percorso affrontato finora {#story-so-far}
 
 Nel documento precedente del percorso di traduzione AEM headless, [Configurare l’integrazione della traduzione](configure-connector.md), hai imparato a installare e configurare l’integrazione della traduzione e ora dovresti:
 
@@ -79,7 +79,7 @@ Nell’interfaccia utente di **Configurazione della traduzione** sono disponibil
 1. Seleziona il contesto appena creato, quindi seleziona **Modifica**. Viene aperto l’**Editor regole di traduzione** per configurare le proprietà.
    ![Editor regole di traduzione](assets/translation-rules-editor.png)
 1. Per impostazione predefinita, tutte le configurazioni vengono ereditate dal percorso padre, in questo caso `/content/dam`. Deseleziona l’opzione **Eredita da`/content/dam`** per aggiungere ulteriori campi alla configurazione.
-1. Se questa opzione è deselezionata, nella sezione **General** dell&#39;elenco aggiungi i nomi delle proprietà dei modelli per frammenti di contenuto [identificati in precedenza come campi per la traduzione](getting-started.md#content-models).
+1. Dopo averla deselezionata, nella sezione **Generale** dell’elenco aggiungi i nomi delle proprietà dei modelli per Frammenti di contenuto [precedentemente identificati come campi per la traduzione](getting-started.md#content-models).
    1. Nel campo **Nuova proprietà**, inserisci il nome della proprietà. Le opzioni **Traduci** e **Eredita** vengono selezionate automaticamente.
    1. Seleziona **Aggiungi**.
    1. Ripeti questi passaggi per tutti i campi da tradurre.
@@ -105,6 +105,6 @@ Sviluppa questa conoscenza e continua il tuo percorso di traduzione AEM headless
 
 ## Risorse aggiuntive {#additional-resources}
 
-Sebbene sia consigliabile passare alla parte successiva del percorso di traduzione headless consultando il documento [Traduci contenuto](translate-content.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless.
+Sebben sia raccomandat di passare alla parte successiva del percorso di traduzione headless esaminando il documento [Tradurre i contenuti,](translate-content.md) di seguito si trovano alcune risorse aggiuntive e facoltative per approfondire concetti menzionati in questo documento. Tuttavia, tali risorse non sono necessarie per continuare il percorso headless.
 
-* [Identificazione del contenuto da tradurre](/help/sites-cloud/administering/translation/rules.md) - Scopri come le regole di traduzione identificano i contenuti da tradurre.
+* [Identificazione del contenuto da tradurre](/help/sites-cloud/administering/translation/rules.md): scopri come le regole di traduzione identificano i contenuti da tradurre.

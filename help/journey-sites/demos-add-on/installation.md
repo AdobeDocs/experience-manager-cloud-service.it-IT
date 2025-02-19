@@ -5,9 +5,9 @@ exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '941'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ I modelli di sito AEM sono pacchetti che contengono contenuto e struttura predef
 
 Il componente aggiuntivo Demo di riferimento AEM include più modelli per varie esigenze di test e dimostrazione. Dopo aver creato il programma e implementato la pipeline per installare il componente aggiuntivo, è possibile accedere ad AEM e creare siti in base a molti modelli demo
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Ora che hai completato questa parte del percorso del Componente aggiuntivo demo di riferimento AEM, è necessario:
 
@@ -104,7 +104,7 @@ Ora che hai completato questa parte del percorso del Componente aggiuntivo demo 
 * Scoprire come le pipeline forniscono contenuto e configurazione ad AEM.
 * Scoprire come i modelli possono creare siti precompilati con contenuti dimostrativi con pochi clic.
 
-Approfondisci l&#39;argomento e continua il percorso di Creazione Rapida dei Siti AEM consultando [Crea un programma e una pipeline](create-program.md), dove viene illustrato come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.
+Approfondisci l’argomento e continua il percorso di creazione rapida di siti AEM rivedendo [Creare un programma e una pipeline](create-program.md), dove potrai scoprire come impostare un nuovo programma e una nuova pipeline per distribuire il componente aggiuntivo.
 
 ## Risorse aggiuntive {#additional-resources}
 

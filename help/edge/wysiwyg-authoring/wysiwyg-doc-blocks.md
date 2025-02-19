@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: f039c70a-e1a0-4fcc-8f42-dfa0f8bb3764
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Scopri come creare blocchi che possono essere utilizzati sia per l’authoring W
 
 ## Panoramica {#overview}
 
-In alcuni progetti, è possibile supportare sia l&#39;authoring di [WYSIWYG tramite Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) che l&#39;authoring di [documenti](/help/edge/docs/authoring.md). Per ridurre al minimo il tempo di sviluppo e garantire la stessa esperienza del sito, puoi creare un set di blocchi per supportare entrambi i casi d’uso.
+In alcuni progetti, potresti voler supportare sia l’[authoring WYSIWYG tramite l’editor universale](/help/edge/wysiwyg-authoring/authoring.md) che l’[authoring basato su documenti](/help/edge/docs/authoring.md). Per ridurre al minimo il tempo di sviluppo e garantire la stessa esperienza del sito, puoi creare un set di blocchi per supportare entrambi i casi d’uso.
 
 A tal fine, devi utilizzare lo stesso approccio di modellazione dei contenuti sia per la configurazione di authoring di WYSIWYG che per quello basata sui documenti.
 
