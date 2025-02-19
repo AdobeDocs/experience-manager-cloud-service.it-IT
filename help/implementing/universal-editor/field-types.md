@@ -4,9 +4,9 @@ description: Scopri i campi e i tipi di componenti che l’Editor universale pu�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+source-git-commit: 8ced236b9bbbae498c46e14a265f7cfa29499f53
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1499'
 ht-degree: 11%
 
 ---
@@ -49,18 +49,7 @@ Consulta la sezione **[Fields](#fields)** di questo documento per ulteriori info
 
 Questo è il metodo preferito per collegare il modello al componente. In questo modo puoi mantenere il collegamento a livello centrale nella definizione del componente e consentire il trascinamento dei componenti tra i contenitori.
 
-È sufficiente includere la proprietà `model` nella direttiva `template` nel file component-definition.json.
-
-```json
-...
-"template":{
-                  "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  ...
-           }
-...
-```
+È sufficiente includere la proprietà `model` nell&#39;oggetto componente nell&#39;array `components` nel file `component-definition.json`.
 
 Per informazioni dettagliate, vedere il documento [Definizione del componente.](/help/implementing/universal-editor/component-definition.md)
 
