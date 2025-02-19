@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e5404de6baae5373aefe5d03894864965b47b049
+source-git-commit: f37795b99f7c79aa73615748a0a7df61f9afbdb7
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1551'
 ht-degree: 30%
 
 ---
@@ -114,6 +114,9 @@ Aggiornare l&#39;utilizzo del pacchetto Java`org.objectweb.asm`, spesso incluso 
 Aggiornare l&#39;utilizzo dei pacchetti Java `org.apache.groovy` o `org.codehaus.groovy` alla versione 4.0.22 o successiva per garantire il supporto per i runtime JVM più recenti.
 
   Questo bundle può essere incluso indirettamente aggiungendo dipendenze di terze parti come Groovy Console di AEM.
+
+* **Versione minima di Aries SPIFly:**
+Aggiornare l&#39;utilizzo del pacchetto Java `org.apache.aries.spifly.dynamic.bundle` alla versione 1.3.6 o successiva per garantire il supporto per i runtime JVM più recenti.
 
 AEM Cloud Service SDK è compatibile con Java 21 e può essere utilizzato per convalidare la compatibilità del progetto con Java 21 prima di eseguire una pipeline Cloud Manager.
 
