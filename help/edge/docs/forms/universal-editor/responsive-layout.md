@@ -4,9 +4,9 @@ description: Questo articolo spiega come visualizzare in anteprima i moduli util
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ae0ec8135c7f7f644e2116be9177e7d7677b8dc7
+source-git-commit: 1abc1092872d4a3e0253ddf0388d23e39a6c2de9
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '425'
 ht-degree: 18%
 
 ---
@@ -23,16 +23,16 @@ La modalità reattiva consente agli sviluppatori di progettare layout che si ada
 
 ## Anteprima di Forms in modalità reattiva per dispositivi diversi
 
-Universal Editor fornisce un&#39;icona **Emulatore** ![Icona emulatore](/help/edge/docs/forms/universal-editor/assets/emulator.png){height-3%,width=3%} situata nell&#39;angolo superiore destro dello schermo che consente di visualizzare in anteprima le pagine su dispositivi di dimensioni diverse e di testare il comportamento della progettazione reattiva per una migliore esperienza utente.
+Universal Editor fornisce un&#39;icona **Emulatore** situata nell&#39;angolo in alto a destra dello schermo che consente di visualizzare in anteprima le pagine su dispositivi di dimensioni diverse e di verificare il comportamento della progettazione reattiva per una migliore esperienza utente.
 
 Per visualizzare il rendering dei moduli con Universal Editor su schermi di dimensioni diverse, effettuare le seguenti operazioni:
 
 1. Apri il modulo nell’editor universale per la modifica.
-1. Selezionare l&#39;![icona Emulatore](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=3%,width=3%} disponibile sulla barra degli strumenti di Universal Editor e fare clic sull&#39;icona dell&#39;emulatore per visualizzare l&#39;opzione.
+2. Selezionare l&#39;![icona Emulatore](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} disponibile sulla barra degli strumenti di Universal Editor e fare clic sull&#39;icona dell&#39;emulatore per visualizzare l&#39;opzione.
 
    ![Modalità reattiva](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-1. Seleziona l’opzione per emulare un dispositivo mobile e nell’Editor universale
+3. Seleziona l’opzione per emulare un dispositivo mobile e nell’Editor universale
 
    ![Modalità reattiva](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
 
@@ -47,19 +47,19 @@ Universal Editor fornisce emulatori diversi per l&#39;anteprima dei moduli su va
     </tr>
     <tr>
         <td>Desktop</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Emulatore desktop"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Emulatore desktop" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Tablet</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Emulatore tablet"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Emulatore tablet" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Dispositivi mobili</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Emulatore mobile" "></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Emulatore mobile" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Dispositivo personalizzato</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Emulatore dispositivo personalizzato"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Emulatore dispositivo personalizzato" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
