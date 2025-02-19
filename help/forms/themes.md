@@ -4,7 +4,7 @@ description: Utilizza i temi del modulo adattivo per applicare uno stile e forni
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -47,9 +47,9 @@ Viene avviata una procedura guidata per creare un tema.
 
 1. Fai clic su **[!UICONTROL Crea]** e quindi su **[!UICONTROL Modifica]** per aprire il tema nell&#39;Editor temi, oppure fai clic su **[!UICONTROL Fine]** per tornare alla pagina dei temi.
 
-### Differenza dai temi di Forms Experience Manager 6.5 e versioni precedenti {#difference-in-themes}
+### Differenza dai temi in Experience Manager 6.5 Forms e versioni precedenti {#difference-in-themes}
 
-Temi creati in un&#39;istanza di Cloud Service:
+Temi creati in un’istanza di Cloud Service:
 
 * Avere il numero di versione 2.
 
@@ -65,7 +65,7 @@ Temi creati in un&#39;istanza di Cloud Service:
 
 ### Download di un tema {#downloading-a-theme}
 
-Puoi esportare i temi come file zip e utilizzarli in altri progetti o istanze di Experienci Manager. Per scaricare un tema:
+Puoi esportare i temi come file zip e utilizzarli in altri progetti o istanze Experience Manager. Per scaricare un tema:
 
 1. Fare clic su **[!UICONTROL Adobe Experience Manager]**, su **[!UICONTROL Forms]** e quindi su **[!UICONTROL Temi]**.
 
@@ -149,13 +149,13 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
   </tr>
   <tr>
    <td>8.</td>
-   <td>Ora di attivazione Publish</td>
+   <td>Ora di pubblicazione</td>
    <td>Sì</td>
    <td>Tempo per pubblicare automaticamente il tema.</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>Ora di disattivazione Publish</td>
+   <td>Ora di disattivazione pubblicazione</td>
    <td>Sì</td>
    <td>Tempo per annullare automaticamente la pubblicazione del tema.</td>
   </tr>
@@ -228,7 +228,7 @@ Un componente specifico influisce sugli oggetti della categoria specifica. Quand
      Quando personalizzi tutti i componenti campo con un colore di sfondo specifico, tutti i campi come età, nome e indirizzo ereditano il colore di sfondo. Quando si seleziona una casella numerica, ad esempio età, e se ne riduce la larghezza, la larghezza di tutte le caselle numeriche, ad esempio età, viene ridotto il numero di persone in una famiglia. La larghezza delle caselle di testo non viene modificata.
 
    * **Stato:** consente di personalizzare gli stili di un oggetto in uno stato specifico. È ad esempio possibile specificare l&#39;aspetto di un oggetto quando si trova nello stato predefinito, attivo, disattivato, al passaggio del mouse o di errore.
-   * **Categorie di proprietà:** Le proprietà di stile sono suddivise in varie categorie. Dimension e posizione, testo, sfondo, bordo ed effetti. In ogni categoria vengono fornite informazioni sullo stile. Ad esempio, in Sfondo è possibile specificare Colore sfondo e Immagine e sfumatura.
+   * **Categorie di proprietà:** Le proprietà di stile sono suddivise in varie categorie. Ad esempio, Dimension &amp; Position, Testo, Sfondo, Bordo ed Effetti. In ogni categoria vengono fornite informazioni sullo stile. Ad esempio, in Sfondo è possibile specificare Colore sfondo e Immagine e sfumatura.
 
    * **Avanzate:** consente di aggiungere CSS personalizzati a un oggetto, che si sovrappone alle proprietà definite dai controlli visivi in caso di sovrapposizione.
 
@@ -495,8 +495,8 @@ Un punto di interruzione rappresenta un dispositivo mobile e le relative dimensi
 
 Per configurare Adobe Fonts in Experience Manager, effettua le seguenti operazioni:
 
-1. Nell&#39;istanza di authoring, fare clic su ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL  Strumenti ]**![martello](assets/hammer.png) >**[!UICONTROL  Distribuzione ]**>**[!UICONTROL  Cloud Service ]**.
-1. Nella pagina **[!UICONTROL Cloud Service]**, passa all&#39;opzione **[!UICONTROL Adobe Fonts]** e aprila. Apri la cartella di configurazione e fai clic su **[!UICONTROL Crea]**.
+1. Nell&#39;istanza di authoring, fare clic su ![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** ![martello](assets/hammer.png) > **[!UICONTROL Distribuzione]** > **[!UICONTROL Servizi cloud]**.
+1. Nella pagina **[!UICONTROL Servizi cloud]**, passa all&#39;opzione **[!UICONTROL Adobe Fonts]** e apri. Apri la cartella di configurazione e fai clic su **[!UICONTROL Crea]**.
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]**, specifica un titolo per la configurazione e fai clic su **[!UICONTROL Crea]**.
 
    Ti reindirizzano alla pagina di configurazione.
@@ -606,7 +606,7 @@ Dopo aver personalizzato il tema, applicarlo al modulo <!-- or interactive commu
 
 ## Impatto su altri casi d’uso dei moduli adattivi {#impact-on-other-adaptive-form-use-cases}
 
-* **Publish/annulla pubblicazione di un modulo:** Quando si pubblica un modulo, viene pubblicato anche il tema applicato a (se non è già pubblicato)
+* **Pubblicazione/annullamento della pubblicazione di un modulo:** Quando si pubblica un modulo, viene pubblicato anche il tema applicato a (se non è già pubblicato)
 * **Importa/esporta modulo:** Durante l&#39;importazione o l&#39;esportazione di un modulo, viene automaticamente importato o esportato anche il tema associato.
 * **Riferimenti di un modulo:** La sezione Riferimenti nei riferimenti del modulo contiene una voce aggiuntiva per il tema.
 * **Data dell&#39;ultima modifica di un modulo:** Aggiornato quando il tema associato viene modificato.
