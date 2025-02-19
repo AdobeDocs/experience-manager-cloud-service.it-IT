@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
 workflow-type: tm+mt
 source-wordcount: '3120'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -261,6 +261,7 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 * **[Riferimento frammento](#fragment-reference-nested-fragments)** (frammenti nidificati)
    * Fa riferimento ad altri frammenti, a seconda dei modelli specifici indicati.
    * Consente di includere/recuperare dati strutturati.
+
      >[!NOTE]
      >
      Questo metodo è particolarmente interessante in relazione alla [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
@@ -435,6 +436,7 @@ Per configurare i **Criteri** dei **Modelli per frammenti di contenuto consentit
 1. **Salva** eventuali modifiche.
 
 I modelli per frammenti di contenuto consentiti per una cartella vengono risolti come segue:
+
 * I **Criteri** dei **Modelli per frammenti di contenuto consentiti**.
 * Se vuoto, prova a determinare il criterio utilizzando le regole di ereditarietà.
 * Se la catena di ereditarietà non fornisce un risultato, consulta la sezione Configurazione di **Servizi cloud** per quella cartella (anche prima direttamente e poi tramite ereditarietà).
@@ -511,7 +513,7 @@ Questa funzione garantisce la governance dei modelli per frammenti di contenuto 
 
 ### Requisiti {#the-requirements}
 
-* Per sensibilizzare gli utenti sui rischi derivanti dalla modifica di modelli già utilizzati per la distribuzione di contenuti live, in altre parole, di modelli pubblicati.
+* Sensibilizzare gli utenti sui rischi derivanti dalla modifica di modelli già utilizzati per la distribuzione di contenuti live, in altre parole, di modelli pubblicati.
 
 * Inoltre, per evitare modifiche non desiderate.
 
