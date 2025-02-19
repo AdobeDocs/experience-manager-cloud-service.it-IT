@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 35834ba89d20d719a40b930ca672ec242d81d376
+source-git-commit: 4828e1965514a5ce5cd6d8528c72af33b7b748ea
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 97%
+source-wordcount: '1116'
+ht-degree: 83%
 
 ---
 
@@ -26,109 +26,33 @@ Che si tratti di gestire un rendering snello lato client, garantire la compatibi
 ## Caratteristiche principali dell’editor universale per EDS Forms
 
 
-<div>
- <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interfaccia WYSIWYG"> 
-    <h3>Interfaccia WYSIWYG</h3>
-    <p>L’editor universale fornisce un’interfaccia WYSIWYG per la progettazione di moduli con una libreria di componenti predefinita e funzionalità per la progettazione responsive, la creazione basata su modelli e la modifica dei campi in tempo reale.</p>
-  </div>
-</a>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="Editor di regole">
-    <h3>Editor di regole</h3>
-    <p>L’editor di regole consente di creare interazioni dinamiche nei moduli utilizzando regole basate su eventi, convalida immediata e gestione degli errori tramite codici JavaScript e JSON snelli.</p>
-  </div>
-</a>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Azioni di invio">
-    <h3>Azioni di invio</h3>
-    <p>Le azioni di invio supportano l’integrazione back-end, la logica di invio condizionale, gli endpoint sicuri e i preprocessori, per flussi di lavoro di invio più semplici e diretti.</p>
-  </div>
-</a>
-<div>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="Pubblicazione/Annullamento della pubblicazione">
-    <h3>Pubblicazione/Annullamento della pubblicazione</h3>
-    <p>È possibile controllare facilmente la visibilità dei moduli, pubblicandoli o annullandone la pubblicazione direttamente dall’editor con pochi clic, per gestire dinamicamente la disponibilità e gli aggiornamenti dei contenuti in tempo reale.</p>
-  </div>
-</a>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="Modalità reattiva">
-    <h3>Modalità reattiva </h3>
-    <p>Progetta moduli che si adattino perfettamente ai diversi dispositivi (desktop, tablet e dispositivi mobili). Utilizza la modalità reattiva per visualizzare in anteprima e testare i moduli per schermi di diverse dimensioni.</p>
-  </div>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="Componenti personalizzati">
-    <h3>Componenti personalizzati</h3>
-    <p>I componenti personalizzati consentono agli sviluppatori di estendere le funzionalità dei moduli creando elementi univoci personalizzati per casi d’uso specifici a livello organizzativo.</p>
-  </div>
-</a>
-</div>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="Attribuzione stile">
-    <h3>Attribuzione stile</h3>
-    <p>Lo stile con CSS consente agli sviluppatori di personalizzare l’aspetto degli elementi del modulo e di creare un design visivamente accattivante che sia allineato all’estetica del sito web.</p>
-  </div>
-</a>
-    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="Servizi di precompilazione">
-    <h3>Servizi di precompilazione</h3>
-    <p>I servizi di precompilazione compilano automaticamente i campi del modulo con i dati utente pertinenti provenienti da varie origini, riducendo l’input manuale e migliorando l’esperienza utente.</p>
-  </div>
-  <a href="https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="Test A/B">
-    <h3>Test A/B</h3>
-    <p>Il test A/B (sperimentazione) consente alle organizzazioni di sperimentare diverse progettazioni, layout e funzionalità nei moduli per individuare le varianti che offrono prestazioni migliori.</p>
-  </div>
-</a>
-</div>
-<div>
-  <a href="https://www.aem.live/developer/martech-integration" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Analisi e tracciamento">
-    <h3>Analisi e tracciamento</h3>
-    <p>Con le funzionalità di analisi e tracciamento integrate puoi ottenere informazioni sul comportamento degli utenti, sulle interazioni con i moduli e sui tassi di invio, per l’ottimizzazione dei moduli basata sui dati.</p>
-  </div>
-</a>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Integrazione con Adobe Workfront">
-    <h3> Gestione delle attività </h3>
-    <p>L’integrazione con Adobe Workfront consente ai team di gestire le attività di creazione e manutenzione dei moduli, garantendo flussi di lavoro più semplici e diretti.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="Associazione dei dati">
-    <h3>Associazione dei dati</h3>
-    <p>L’associazione dei dati consente connessioni dirette tra i campi modulo e le origini dati back-end, supporta gli aggiornamenti in tempo reale e la mappatura avanzata dei dati per l’archiviazione strutturata e conforme dei dati.</p>
-  </div>
-</div>
 
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="Personalizzazione dell’editor">
-    <h3>Personalizzazione dell’editor</h3>
-    <p>Gli sviluppatori possono estendere le funzionalità dell’editor tramite le estensioni dell’interfaccia utente, abilitando soluzioni personalizzate che soddisfano esigenze organizzative specifiche.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Incorporazione di moduli">
-    <h3>Incorporazione di moduli</h3>
-    <p>Incorpora i moduli direttamente nelle pagine dei siti di Edge Delivery Services utilizzando il componente incorporato dell’editor universale per un’esperienza utente fluida.</p>
-  </div>
-  <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="Configurazione del ringraziamento">
-    <h3>Configurazione del ringraziamento</h3>
-    <p>Personalizza facilmente il messaggio di ringraziamento o la pagina mostrata agli utenti dopo l’invio corretto del modulo.</p>
-  </div>
-</a>
-</div>
-</div>
+Ecco il layout con schede a larghezza uguale (utilizzando colonne a larghezza fissa):
+
+| ![Interfaccia WYSIWYG](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![Editor regole](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![Invia azioni](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**Interfaccia WYSIWYG**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface) | [**Editor regole**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor) | [**Invia azioni**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action) |
+| L’editor universale fornisce un’interfaccia WYSIWYG per la progettazione di moduli con una libreria di componenti predefinita e funzionalità per la progettazione responsive, la creazione basata su modelli e la modifica dei campi in tempo reale. | L’editor di regole consente di creare interazioni dinamiche nei moduli utilizzando regole basate su eventi, convalida immediata e gestione degli errori tramite codici JavaScript e JSON snelli. | Le azioni di invio supportano l’integrazione back-end, la logica di invio condizionale, gli endpoint sicuri e i preprocessori, per flussi di lavoro di invio più semplici e diretti. |
+
+| ![Pubblicazione/Annullamento pubblicazione](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![Modalità reattiva](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![Componenti personalizzati](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**Pubblicazione/Annullamento pubblicazione**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms) | **Modalità reattiva** | [**Componenti personalizzati**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component) |
+| È possibile controllare facilmente la visibilità dei moduli, pubblicandoli o annullandone la pubblicazione direttamente dall’editor con pochi clic. | Progetta moduli che si adattino perfettamente ai diversi dispositivi (desktop, tablet e dispositivi mobili). Utilizza la modalità reattiva per visualizzare in anteprima e testare i moduli per schermi di diverse dimensioni. | I componenti personalizzati consentono agli sviluppatori di estendere le funzionalità dei moduli creando elementi univoci personalizzati per casi d’uso specifici a livello organizzativo. |
+
+| ![Stile](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![Servizi precompilati](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![Test A/B](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**Stile**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms) | **Servizi Precompilati** (Disponibile A Breve) | [**Test A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| Lo stile con CSS consente agli sviluppatori di personalizzare l’aspetto degli elementi del modulo e di creare un design visivamente accattivante che sia allineato all’estetica del sito web. | I servizi di precompilazione compilano automaticamente i campi del modulo con i dati utente pertinenti provenienti da varie origini, riducendo l’input manuale e migliorando l’esperienza utente. | Il test A/B consente alle organizzazioni di sperimentare diverse progettazioni di moduli, layout e funzionalità per identificare le varianti con le prestazioni migliori. |
+
+| ![Analisi e monitoraggio](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Gestione attività](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![Associazione dati](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**Analisi e monitoraggio**](https://www.aem.live/developer/martech-integration) | **Gestione attività** | **Associazione dati** |
+| Con le funzionalità di analisi e tracciamento integrate puoi ottenere informazioni sul comportamento degli utenti, sulle interazioni con i moduli e sui tassi di invio, per l’ottimizzazione dei moduli basata sui dati. | L’integrazione con Adobe Workfront consente ai team di gestire le attività di creazione e manutenzione dei moduli, garantendo flussi di lavoro più semplici e diretti. | L&#39;associazione dati consente connessioni dirette tra campi modulo e origini dati back-end, supportando aggiornamenti in tempo reale e mappatura avanzata dei dati. |
+
+| ![Personalizzazione editor](/help/edge/docs/forms/universal-editor/assets/editor-customization.svg) | ![Incorporazione di Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Configurazione ringraziamenti](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
+|:-------------:|:-------------:|:-------------:|
+| **Personalizzazione editor** | **Incorporazione di Forms** | [**Configurazione ringraziamenti**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue) |
+| Gli sviluppatori possono estendere le funzionalità dell’editor tramite le estensioni dell’interfaccia utente, abilitando soluzioni personalizzate che soddisfano esigenze organizzative specifiche. | Incorpora i moduli direttamente nelle pagine di Edge Delivery Services Sites utilizzando il componente incorporato di Universal Editor. | Personalizza facilmente il messaggio di ringraziamento o la pagina mostrata agli utenti dopo l’invio corretto del modulo. |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
