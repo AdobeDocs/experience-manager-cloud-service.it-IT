@@ -4,9 +4,9 @@ description: Questo articolo spiega come visualizzare in anteprima i moduli util
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: 1abc1092872d4a3e0253ddf0388d23e39a6c2de9
+source-git-commit: 222ee977f6ee76908fecf9cb3171287fddba8790
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '430'
 ht-degree: 18%
 
 ---
@@ -28,11 +28,11 @@ Universal Editor fornisce un&#39;icona **Emulatore** situata nell&#39;angolo in 
 Per visualizzare il rendering dei moduli con Universal Editor su schermi di dimensioni diverse, effettuare le seguenti operazioni:
 
 1. Apri il modulo nell’editor universale per la modifica.
-2. Selezionare l&#39;![icona Emulatore](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} disponibile sulla barra degli strumenti di Universal Editor e fare clic sull&#39;icona dell&#39;emulatore per visualizzare l&#39;opzione.
+1. Selezionare l&#39;![icona Emulatore](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} disponibile sulla barra degli strumenti di Universal Editor e fare clic sull&#39;icona dell&#39;emulatore per visualizzare l&#39;opzione.
 
    ![Modalità reattiva](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-3. Seleziona l’opzione per emulare un dispositivo mobile e nell’Editor universale
+1. Selezionare un&#39;opzione per emulare un modulo nell&#39;Editor universale su un dispositivo selezionato: Desktop, Tablet, Dispositivi mobili.
 
    ![Modalità reattiva](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
 
@@ -42,24 +42,24 @@ Universal Editor fornisce emulatori diversi per l&#39;anteprima dei moduli su va
 
 <table border="1" style="text-align:" left; border-collapse: collapse;">
     <tr>
-        <th>Tipo di emulatore</th>
-        <th>Immagine dispositivo</th>
+        <th style="width: 20%">Tipo di emulatore</th>
+        <th style="width: 80%">Immagine dispositivo</th>
     </tr>
     <tr>
-        <td>Desktop</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Emulatore desktop" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Desktop</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Emulatore desktop" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>Tablet</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Emulatore tablet" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Tablet</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Emulatore tablet" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>Dispositivi mobili</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Emulatore mobile" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Dispositivi mobili</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Emulatore mobile" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>Dispositivo personalizzato</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Emulatore dispositivo personalizzato" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Dispositivo personalizzato</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Emulatore dispositivo personalizzato" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
