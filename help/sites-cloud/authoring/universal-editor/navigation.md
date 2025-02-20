@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: e87447922b856d4cbbd09fb4dcd4ae2b5da6ff50
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1660'
 ht-degree: 26%
 
 ---
@@ -66,6 +66,10 @@ L’interfaccia utente è divisa in queste aree principali.
 * [Pannello delle proprietà](#properties-rail)
 
 ![Interfaccia utente dell’editor universale](assets/ui.png)
+
+>[!TIP]
+>
+>Universal Editor offre numerose [opzioni di personalizzazione](/help/implementing/universal-editor/customizing.md) e [punti di estensione](/help/implementing/universal-editor/extending.md) che possono essere modificati e aggiunti alle funzionalità dell&#39;editor. Per questo motivo, potresti vedere opzioni diverse da quelle standard qui documentate.
 
 ### Intestazione di Experience Cloud {#experience-cloud-header}
 

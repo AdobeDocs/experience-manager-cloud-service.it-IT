@@ -4,10 +4,10 @@ description: Scopri le diverse opzioni per personalizzare l’Editor universale 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 3%
+source-wordcount: '334'
+ht-degree: 8%
 
 ---
 
@@ -28,6 +28,16 @@ Il pulsante **Pubblica** può quindi essere eliminato completamente in un&#39;ap
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
+```
+
+## Disabilitazione della pubblicazione in anteprima {#publish-preview}
+
+Alcuni flussi di lavoro di authoring potrebbero impedire la pubblicazione nel [servizio di anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md) (se disponibile).
+
+L&#39;opzione **Anteprima** nella finestra di pubblicazione può quindi essere soppressa completamente in un&#39;app aggiungendo i metadati seguenti.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
 ## Filtrare i componenti {#filtering-components}
@@ -79,7 +89,7 @@ Le condizioni possono essere definite utilizzando lo schema [JsonLogic](https://
 
 È possibile specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview`, che verrà aperta quando si fa clic sul pulsante **Apri pagina** nella barra degli strumenti superiore destra dell&#39;editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
-Questo è particolarmente utile per le applicazioni con requisiti di anteprima specifici, ad esempio quelle che [utilizzano Edge Delivery Services con l&#39;authoring WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
+Ciò è particolarmente utile per le applicazioni con requisiti di anteprima specifici, ad esempio quelle [che utilizzano Edge Delivery Services con l’authoring WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
 
 Per farlo, includi semplicemente l’URL di anteprima desiderato in un metatag dell’app instrumentata come nell’esempio seguente.
 
