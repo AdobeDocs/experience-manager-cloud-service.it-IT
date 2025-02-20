@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 99%
+source-wordcount: '1392'
+ht-degree: 97%
 
 ---
 # Snippet {#snippets}
@@ -56,6 +56,17 @@ ht-degree: 99%
 * [Collegare un modulo adattivo a Microsoft](/help/forms/configure-msdynamics.md)
 * [Collegare un modulo adattivo a Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Creare un’azione di invio personalizzata](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+
+## Editor universale{#universal-editor-see-also}
+
+* [Guida introduttiva a Edge Delivery Services per AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Pubblicare il modulo](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Inviare il modulo](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Creare regole per il modulo](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Utilizzare reCAPTCHA nel modulo](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Creare un componente personalizzato per il modulo](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Anteprima modulo in modalità reattiva](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
 ## Consulta anche {#see-more-forms-eds}
 

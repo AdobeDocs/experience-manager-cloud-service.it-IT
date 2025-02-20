@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: da2f673319dd5cec764408b4517698a9d39031bb
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 3%
@@ -144,4 +144,5 @@ Puoi anche personalizzare il messaggio di ringraziamento all&#39;invio del modul
 
 ## Consulta anche
 
-{{see-more-forms-eds}}
+{{universal-editor-see-also}}
+

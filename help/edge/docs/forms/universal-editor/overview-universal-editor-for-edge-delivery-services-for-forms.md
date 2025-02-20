@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 7a868ddc3d13eaf3b5352e130b2026db64a02723
+source-git-commit: 7d0b735b367189852e4897702738eefc1e87d892
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 77%
+source-wordcount: '1038'
+ht-degree: 83%
 
 ---
 
@@ -36,9 +36,8 @@ Ecco il layout con schede a larghezza uguale (utilizzando colonne a larghezza fi
 
 | ![Pubblicazione/Annullamento pubblicazione](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![Modalità reattiva](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![Componenti personalizzati](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | [**Pubblicazione/Annullamento pubblicazione**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**Modalità reattiva**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**Componenti personalizzati**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
-| È possibile controllare facilmente la visibilità dei moduli, pubblicandoli o annullandone la pubblicazione direttamente dall’editor con pochi clic. | Progetta moduli che si adattino perfettamente ai diversi dispositivi (desktop, tablet e dispositivi mobili). Utilizza la modalità reattiva per visualizzare in anteprima e testare i moduli per diverse dimensioni di schermo. | I componenti personalizzati consentono agli sviluppatori di estendere le funzionalità dei moduli creando elementi univoci personalizzati per casi d’uso specifici a livello organizzativo. |
+| È possibile controllare facilmente la visibilità dei moduli, pubblicandoli o annullandone la pubblicazione direttamente dall’editor con pochi clic. | Progetta moduli che si adattino perfettamente ai diversi dispositivi (desktop, tablet e dispositivi mobili). Utilizza la modalità reattiva per visualizzare in anteprima e testare i moduli per schermi di diverse dimensioni. | I componenti personalizzati consentono agli sviluppatori di estendere le funzionalità dei moduli creando elementi univoci personalizzati per casi d’uso specifici a livello organizzativo. |
 
 | ![Stile](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![Servizi precompilati](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![Test A/B](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
@@ -52,9 +51,8 @@ Ecco il layout con schede a larghezza uguale (utilizzando colonne a larghezza fi
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Incorporazione di Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Configurazione ringraziamenti](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | **Personalizzazione editor** | **Incorporazione di Forms** | [**Configurazione ringraziamenti**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| Gli sviluppatori possono estendere le funzionalità dell’editor tramite le estensioni dell’interfaccia utente, abilitando soluzioni personalizzate che soddisfano esigenze organizzative specifiche. | Incorpora i moduli direttamente nelle pagine di Edge Delivery Services Sites utilizzando il componente incorporato di Universal Editor. | Personalizzare facilmente il messaggio di riconoscimento o la pagina mostrata agli utenti dopo l&#39;invio corretto del modulo. |
+| Gli sviluppatori possono estendere le funzionalità dell’editor tramite le estensioni dell’interfaccia utente, abilitando soluzioni personalizzate che soddisfano esigenze organizzative specifiche. | Incorpora i moduli direttamente nelle pagine di Edge Delivery Services Sites utilizzando il componente incorporato di Universal Editor. | Personalizza facilmente il messaggio di ringraziamento o la pagina mostrata agli utenti dopo l’invio corretto del modulo. |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
@@ -246,13 +244,5 @@ L’editor universale include strumenti di analisi e tracciamento incorporati pe
 
 ## Inizia a creare i moduli
 
-* [Guida introduttiva a Edge Delivery Services per AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Impostare i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati](/help/edge/docs/forms/submit-forms.md)
-* [Pubblicare il modulo e iniziare a raccogliere i dati](/help/edge/docs/forms/publish-forms.md)
-* [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
-* [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
-* [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
-* [Componenti del blocco modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
-* [Monitoraggio dell’utilizzo reale](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
 

@@ -4,13 +4,13 @@ description: Questa esercitazione ti aiuta a iniziare a usare l’interfaccia di
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: f62bccacd3252422899a35d2b431450c919982de
+exl-id: 90321e81-bb55-48b2-b329-4944bf926309
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '1495'
-ht-degree: 5%
+source-wordcount: '1425'
+ht-degree: 0%
 
 ---
-
 
 # Esplorazione dell&#39;interfaccia di Universal Editor (WYSIWYG)
 
@@ -233,14 +233,4 @@ L’editor consente di modificare il modulo e il modulo specificato nella barra 
 
 ## Consulta anche
 
-* [Guida introduttiva a Edge Delivery Services per AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Impostare i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati](/help/edge/docs/forms/submit-forms.md)
-* [Pubblicare il modulo e iniziare a raccogliere i dati](/help/edge/docs/forms/publish-forms.md)
-* [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
-* [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
-* [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
-* [Componenti del blocco modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
-* [Monitoraggio dell’utilizzo reale](https://www.aem.live/developer/rum#authentication)
-
-
+{{universal-editor-see-also}}

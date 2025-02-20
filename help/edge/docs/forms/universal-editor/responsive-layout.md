@@ -4,10 +4,10 @@ description: Questo articolo spiega come visualizzare in anteprima i moduli util
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: 222ee977f6ee76908fecf9cb3171287fddba8790
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 18%
+source-wordcount: '360'
+ht-degree: 2%
 
 ---
 
@@ -67,14 +67,7 @@ Universal Editor fornisce emulatori diversi per l&#39;anteprima dei moduli su va
 
 ## Consulta anche
 
-* [Guida introduttiva a Edge Delivery Services per AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Impostare i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati](/help/edge/docs/forms/submit-forms.md)
-* [Pubblicare il modulo e iniziare a raccogliere i dati](/help/edge/docs/forms/publish-forms.md)
-* [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
-* [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
-* [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
-* [Componenti del blocco modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
-* [Monitoraggio dell’utilizzo reale](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
+
 
 
