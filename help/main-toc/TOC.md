@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1f77a8adc461a78bb40efc608d39686e67a9811a
+source-git-commit: 1e4e07d2690bcbd44ffe994a571ffc0a8ae7eb50
 workflow-type: tm+mt
-source-wordcount: '6083'
-ht-degree: 99%
+source-wordcount: '6091'
+ht-degree: 98%
 
 ---
 
@@ -1206,6 +1206,7 @@ ht-degree: 99%
       + Siti Edge Delivery {#edge-delivery-sites}
          + [Introduzione a Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Aggiungere un sito Edge Delivery a Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [Creazione di un sito Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [Configurare la convalida push per un sito Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Gestire i siti Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Impostazioni dominio {#custom-domain-names}
