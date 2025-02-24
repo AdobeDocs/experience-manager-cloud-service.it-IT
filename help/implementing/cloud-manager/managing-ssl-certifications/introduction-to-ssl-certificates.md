@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
 workflow-type: tm+mt
 source-wordcount: '1088'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -20,7 +20,7 @@ Scopri gli strumenti self-service forniti da Cloud Manager per installare e gest
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Gestire i certificati SSL"
->abstract="Scopri gli strumenti self-service di Cloud Manager per installare e gestire i certificati SSL al fine di proteggere il sito per gli utenti. Cloud Manager si avvale di un servizio di piattaforma TLS per gestire i certificati SSL e le chiavi private di proprietà dei clienti ottenuti da autorità di certificazione terze."
+>abstract="Scopri gli strumenti self-service di Cloud Manager per l’installazione e la gestione dei certificati SSL al fine di proteggere il tuo sito per gli utenti. Cloud Manager si avvale di un servizio di piattaforma TLS per gestire i certificati SSL e le chiavi private di proprietà dei clienti ottenuti da autorità di certificazione terze."
 >additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Visualizzazione, aggiornamento e sostituzione di un certificato SSL"
 >additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Controllo dello stato di un certificato SSL"
 
@@ -61,7 +61,7 @@ Dopo la creazione del certificato DV, Adobe lo rinnova automaticamente ogni tre 
 
 ### Certificati SSL gestiti dal cliente (OV/EV) {#customer-managed}
 
-I certificati OV ed EV offrono informazioni convalidate dalla CA. Tali informazioni aiutano gli utenti a valutare se il proprietario del sito web, il mittente dell’e-mail o il firmatario digitale dei documenti di codice o PDF possa essere considerato attendibile. I certificati DV non consentono tale verifica della proprietà.
+I certificati OV ed EV offrono informazioni convalidate dalla CA. Tali informazioni aiutano gli utenti a valutare se il proprietario del sito web, il mittente dell’e-mail o il firmatario digitale del codice o dei documenti PDF possa essere affidabile. I certificati DV non consentono tale verifica della proprietà.
 
 OV ed EV offrono inoltre queste funzioni sui certificati DV in Cloud Manager.
 
@@ -85,12 +85,12 @@ Se scegli di aggiungere un certificato SSL personalizzato gestito dal cliente, q
    * Supporto standard RSA a 2048 bit.
 Le chiavi RSA di dimensioni superiori a 2048 bit (come le chiavi RSA a 3072 bit o a 4096 bit) non sono attualmente supportate.
    * Chiavi di curva ellittica (EC) `prime256v1` (`secp256r1`) e `secp384r1`
-   * Certificati ECDSA (Elliptic Curve Digital Signature Algorithm). Tali certificati sono consigliati in Adobe rispetto a RSA per migliorare le prestazioni, la sicurezza e l&#39;efficienza.
+   * Certificati ECDSA (Elliptic Curve Digital Signature Algorithm). Tali certificati sono consigliati da Adobe rispetto a RSA per migliorare le prestazioni, la sicurezza e l&#39;efficienza.
 
 * I certificati devono essere formattati correttamente per superare la convalida. Le chiavi private devono essere nel formato `PKCS#8`.
 
 >[!NOTE]
->Se l&#39;organizzazione richiede la conformità utilizzando chiavi RSA a 3072 bit, l&#39;alternativa consigliata dall&#39;Adobe è l&#39;utilizzo di certificati ECDSA (`secp256r1` o `secp384r1`).
+>Se l&#39;organizzazione richiede la conformità utilizzando chiavi RSA a 3072 bit, l&#39;alternativa consigliata da Adobe è l&#39;utilizzo di certificati ECDSA (`secp256r1` o `secp384r1`).
 
 
 #### Best practice per la gestione dei certificati
@@ -113,7 +113,7 @@ Le chiavi RSA di dimensioni superiori a 2048 bit (come le chiavi RSA a 3072 bit 
   I certificati con caratteri jolly (ad esempio `*.example.com`) sono supportati, ma devono essere utilizzati solo quando necessario. In caso di sovrapposizione, prevale il certificato più specifico. Ad esempio, il certificato specifico serve `dev.example.com` invece del carattere jolly (`*.example.com`).
 
 * **Convalida e risoluzione dei problemi:**
-Prima di tentare di installare un certificato con Cloud Manager, Adobe consiglia di convalidare l&#39;integrità del certificato a livello locale utilizzando strumenti quali `openssl`. Ad esempio,
+Prima di tentare di installare un certificato con Cloud Manager, Adobe consiglia di convalidare l&#39;integrità del certificato in locale utilizzando strumenti quali `openssl`. Ad esempio,
 
   `openssl verify -untrusted intermediate.pem certificate.pem`
 
