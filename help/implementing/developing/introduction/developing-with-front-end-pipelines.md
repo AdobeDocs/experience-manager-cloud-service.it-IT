@@ -1,87 +1,98 @@
 ---
-title: Sviluppo di Sites con la pipeline front-end
-description: Con la pipeline front-end, viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può guadagnare una notevole velocità. Questo documento descrive alcune considerazioni particolari del processo di sviluppo front-end che devono essere fornite.
+title: Sviluppare siti con la pipeline front-end
+description: La pipeline front-end migliora l’indipendenza degli sviluppatori e accelera il processo di sviluppo. Questo articolo illustra le considerazioni chiave per il processo di sviluppo front-end per garantire prestazioni ed efficienza ottimali.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 248c58c51864a2fead95064d30ea9f438f655eb6
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 1%
+source-wordcount: '1126'
+ht-degree: 3%
 
 ---
 
 
-# Sviluppo di Sites con la pipeline front-end {#developing-site-with-front-end-pipeline}
+# Sviluppare Sites con la pipeline front-end {#developing-site-with-front-end-pipeline}
 
-[Con la pipeline front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end), viene data maggiore indipendenza agli sviluppatori front-end e il processo di sviluppo può guadagnare una notevole velocità. Questo documento descrive il funzionamento di questo processo e contiene alcune considerazioni di cui tenere conto per sfruttare appieno il potenziale.
+La [pipeline front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) offre agli sviluppatori front-end maggiore indipendenza e accelera notevolmente lo sviluppo. Questo articolo spiega come funziona il processo ed evidenzia le considerazioni chiave per trarre il massimo da esso.
 
 >[!TIP]
 >
->Se non sai ancora come utilizzare la pipeline front-end e i vantaggi che può offrire, consulta il [Percorso per la creazione rapida di siti](/help/journey-sites/quick-site/overview.md) per vedere come distribuire rapidamente un nuovo sito e personalizzarne il tema in modo completamente indipendente dallo sviluppo back-end.
+>Se non sai ancora come utilizzare la pipeline front-end e i relativi vantaggi, consulta la [guida del Percorso Creazione rapida siti](/help/journey-sites/quick-site/overview.md). Fornisce un esempio di come distribuire rapidamente un nuovo sito e personalizzarne il tema indipendentemente dallo sviluppo back-end.
 
-## Contratto di sviluppo front-end {#front-end-build-contract}
+## Comprendere la configurazione e il processo di generazione della pipeline front-end in AEM Cloud Manager {#front-end-build-contract}
 
-Analogamente all&#39;[ambiente di build full stack](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md), la pipeline front-end dispone di un proprio ambiente. Gli sviluppatori possono utilizzare questa pipeline con una certa flessibilità, purché venga rispettato il seguente contratto di sviluppo front-end.
+Analogamente all&#39;[ambiente di build full stack](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md), la pipeline front-end dispone di un proprio ambiente. Gli sviluppatori hanno una certa flessibilità con questa pipeline, purché seguano il contratto di sviluppo front-end.
 
-La pipeline front-end richiede che il progetto Node.js front-end utilizzi la direttiva script `build` per generare la build distribuita. Questo perché Cloud Manager utilizza il comando `npm run build` per generare il progetto distribuibile per la build front-end.
+La pipeline front-end richiede che il progetto front-end `Node.js` utilizzi la direttiva script `build` per generare la build distribuita. Questo requisito esiste perché Cloud Manager utilizza il comando `npm run build` per generare il progetto distribuibile per la build front-end.
 
-Il contenuto risultante della cartella `dist` è ciò che viene distribuito da Cloud Manager, che funge da file statici. Questi file sono ospitati esternamente all&#39;AEM, ma sono resi disponibili tramite un URL `/content/...` nell&#39;ambiente distribuito.
+Il contenuto risultante della cartella `dist` è ciò che Cloud Manager distribuisce, fungendo da file statici. Questi file sono ospitati esternamente in AEM, ma sono resi disponibili tramite un URL `/content/...` nell&#39;ambiente distribuito.
 
-## Versioni dei nodi {#node-versions}
+## Versioni supportate di Node.js {#node-versions}
 
-L’ambiente di sviluppo front-end supporta le seguenti versioni di Node.js.
+L&#39;ambiente di sviluppo front-end supporta le seguenti `Node.js` versioni:
 
-* 12
-* 14 (predefinito)
-* 16
+* 23
+* 22
+* 20
 * 18
+* 16
+* 14 (predefinito)
+* 12
 
 È possibile utilizzare la `NODE_VERSION` [variabile di ambiente](/help/implementing/cloud-manager/environment-variables.md) per impostare la versione desiderata.
 
-## Source unico della verità {#single-source-of-truth}
+## Best practice per la denominazione e la gestione delle pipeline front-end in AEM {#single-source-of-truth}
 
-Una buona pratica generale è quella di mantenere un&#39;unica fonte di verità per ciò che viene implementato nell&#39;AEM. L&#39;obiettivo di Cloud Manager è quello di rendere ovvia quell&#39;unica fonte di verità. Tuttavia, poiché la pipeline front-end consente di disaccoppiare la posizione di parti del codice, una parte di responsabilità aggiuntiva risiede nella corretta configurazione delle pipeline front-end. Fai molta attenzione a non creare più pipeline front-end da distribuire sullo stesso sito nello stesso ambiente.
+Una best practice per le distribuzioni di AEM consiste nel mantenere un’unica, chiara fonte di verità. Cloud Manager è stata progettata per rafforzare questo principio. Tuttavia, poiché la pipeline front-end consente di disaccoppiare parti del codice, è essenziale una configurazione corretta. Per evitare conflitti, assicurati che più pipeline front-end non vengano distribuite allo stesso sito all’interno dello stesso ambiente.
 
-Per questo motivo, e in particolare quando vengono create diverse pipeline front-end, si consiglia di mantenere una convenzione di denominazione sistematica come la seguente:
+Per questo motivo, e in particolare quando vengono create diverse pipeline front-end, Adobe consiglia di mantenere una convenzione di denominazione sistematica. Puoi utilizzare i seguenti consigli:
 
 * Il nome del modulo front-end, definito dalla proprietà `name` del file `package.json`, deve contenere il nome del sito a cui si applica. Ad esempio, per un sito situato in `/content/wknd`, il nome del modulo front-end sarà simile a `wknd-theme`.
 * Quando un modulo front-end condivide lo stesso archivio Git con altri moduli, il nome della relativa cartella deve essere uguale o contenere lo stesso nome del modulo front-end. Ad esempio, se il modulo front-end è denominato `wknd-theme`, il nome della cartella di inclusione sarà simile a `wknd-theme-sources`.
 * Il nome della pipeline front-end di Cloud Manager deve contenere anche il nome del modulo front-end e aggiungere l’ambiente in cui viene distribuito (produzione o sviluppo). Ad esempio, per il modulo front-end denominato `wknd-theme`, la pipeline potrebbe essere denominata ad esempio `wknd-theme-prod`.
 
-Tale convenzione dovrebbe prevenire efficacemente i seguenti errori di distribuzione:
+Tale convenzione consente di evitare i seguenti errori di distribuzione:
 
-* Applicazione di un modulo front-end al sito errato
-* Creazione di più moduli front-end che applicano lo stesso sito, che si sovrascriverebbero a vicenda
-* Creazione di più pipeline front-end per le stesse origini, che potrebbero causare race condition e non garantire l’ordine di distribuzione
+* Applicazione di un modulo front-end al sito errato.
+* Creazione di più moduli front-end che applicano lo stesso sito e si sovrascriverebbero a vicenda.
+* Creazione di più pipeline front-end per le stesse origini, che potrebbero causare race condition e non garantire l’ordine di distribuzione.
 
-## Separazione tra logica e markup {#separation-of-concerns}
+## Coordinare lo sviluppo front-end e back-end per la stabilità in AEM {#separation-of-concerns}
 
-Un&#39;altra buona pratica che si applica a qualsiasi separazione delle preoccupazioni è di porre particolare attenzione nel modo in cui il contratto che separa le preoccupazioni è progettato e gestito. Nel caso della pipeline front-end, il contratto che separa tale codice dal resto è il HTML e il JSON riprodotto dal sito. Se il HTML e il JSON rimangono stabili, la pipeline front-end fornisce il suo valore massimo rendendo il team front-end completamente indipendente.
+Una best practice chiave per ogni separazione delle preoccupazioni è quella di progettare e gestire il contratto con attenzione che definisca i confini tra di loro. Nella pipeline front-end, questo contratto è l’output HTML e JSON renderizzato dal sito. Mantenendo la stabilità dell’output, la pipeline front-end fornisce il massimo valore, consentendo al team front-end di lavorare in modo indipendente.
 
-Attualmente non esiste una funzionalità specifica per eseguire la pipeline full stack in modo sincrono con le pipeline front-end. Per questo motivo, quando si separa lo sviluppo front-end dalla pipeline full-stack, è necessario prestare maggiore attenzione nel contratto che separa queste due aree di preoccupazione. Tale contratto è generalmente il HTML e/o il JSON che l’Experience Manager esegue. Le modifiche a tale contratto devono quindi essere ben pianificate tra i team che gestiscono le diverse pipeline in modo che concordino su come sequenziare le modifiche corrispondenti.
+Al momento non è disponibile alcuna funzionalità incorporata per eseguire la pipeline full stack in modo sincrono con le pipeline front-end. Pertanto, quando si separa lo sviluppo front-end dalla pipeline full stack, è fondamentale gestire con attenzione il contratto che ne definisce i limiti. Questo contratto è in genere costituito dal rendering di HTML o JSON, o entrambi, eseguito da Experience Manager. Qualsiasi modifica a questo contratto deve essere attentamente coordinata tra i team che gestiscono diverse pipeline, in modo da garantire una transizione senza intoppi e la corretta sequenza degli aggiornamenti.
 
-I passaggi seguenti sono generalmente consigliati quando è necessario apportare modifiche all’output HTML e/o JSON che influiscono su entrambe le aree problematiche.
+I passaggi seguenti sono generalmente consigliati quando si apportano modifiche all’output HTML o JSON, in particolare quando sono interessate entrambe le aree.
 
-1. Il team back-end configura innanzitutto un ambiente di sviluppo con il nuovo output HTML e/o JSON.
-   1. Tramite la pipeline full stack, distribuiscono il codice necessario per eseguire il rendering del nuovo output HTML e/o JSON desiderato.
+1. Il team back-end configura innanzitutto un ambiente di sviluppo con il nuovo output HTML o JSON.
+   1. Tramite la pipeline full stack, distribuiscono il codice necessario per eseguire il rendering del nuovo output HTML o JSON, o di entrambi, a seconda delle esigenze.
    1. Se si tratta di un ambiente a cui il team front-end non aveva precedentemente accesso, è necessario eseguire i passaggi seguenti.
       1. URL: il team front-end deve conoscere l’URL di tale ambiente di sviluppo.
-      1. ACL: il team front-end deve disporre di un utente AEM locale con autorizzazioni simili a &quot;Collaboratori&quot;.
+      1. ACL: al team front-end deve essere assegnato un utente AEM locale con autorizzazioni simili a &quot;Collaboratori&quot;.
       1. Git: il team front-end deve disporre di una posizione Git separata per il modulo front-end che esegue il targeting specifico dell’ambiente di sviluppo.
-         * Di solito si crea un ramo `dev`, in modo che le modifiche apportate per l&#39;ambiente di sviluppo possano essere facilmente unite nuovamente al ramo `main` da distribuire nell&#39;ambiente di produzione.
+
+         Una pratica comune consiste nel creare un ramo `dev` per gestire le modifiche apportate nell&#39;ambiente di sviluppo. Questa procedura consente un merge più semplice nel ramo `main`, utilizzato per la distribuzione nell&#39;ambiente di produzione.
+
       1. Pipeline: il team front-end deve disporre di una pipeline front-end da distribuire nell’ambiente di sviluppo. La pipeline distribuisce il modulo front-end che si trova in genere nel ramo `dev`, come descritto nel punto precedente.
 1. Il team front-end fa quindi in modo che il codice CSS e JS funzioni sia con il vecchio che con il nuovo output.
-   1. Come di consueto, per sviluppare localmente:
-      1. Il comando `npx aem-site-theme-builder proxy` eseguito nel modulo front-end avvia un server proxy che richiede il contenuto da un ambiente AEM, sostituendo i file CSS e JS del modulo front-end con quelli della cartella locale `dist`.
+   1. Come di consueto, per sviluppare localmente, effettuare le seguenti operazioni:
+      1. Il comando `npx aem-site-theme-builder proxy` avvia un server proxy che recupera il contenuto da un ambiente AEM. Sostituisce i file CSS e JS del modulo front-end con i file della cartella locale `dist`.
       1. La configurazione della variabile `AEM_URL` nel file nascosto `.env` consente di controllare da quale ambiente AEM il server proxy locale utilizza il contenuto.
       1. La modifica del valore di `AEM_URL` consente quindi di passare dagli ambienti di produzione a quelli di sviluppo per adeguare CSS e JS in modo che siano adatti a entrambi gli ambienti.
       1. Deve funzionare con l’ambiente di sviluppo che esegue il rendering del nuovo output e con l’ambiente di produzione che esegue il rendering del vecchio output.
    1. Il lavoro front-end viene completato quando il modulo front-end aggiornato funziona per entrambi gli ambienti e viene distribuito in entrambi.
-1. Il team back-end può quindi aggiornare l’ambiente di produzione distribuendo il codice che esegue il rendering del nuovo output HTML e/o JSON tramite la pipeline full stack.
-1. Il team front-end può quindi ripulire i file CSS e JS e rimuovere ciò che era necessario solo per l’output precedente, distribuendo l’ultimo aggiornamento alla produzione tramite la pipeline front-end.
+1. Il team back-end può quindi aggiornare l’ambiente di produzione distribuendo il codice che esegue il rendering del nuovo output HTML o JSON, o di entrambi, tramite la pipeline full stack.
+1. Il team front-end può pulire i propri CSS e JS, rimuovere gli elementi necessari solo per l’output precedente e distribuire l’aggiornamento finale alla produzione utilizzando la pipeline front-end.
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md) - Scopri come utilizzare i temi del sito AEM per personalizzare lo stile e la progettazione del sito.
-* [Generatore di temi del sito AEM](https://github.com/adobe/aem-site-theme-builder) - Adobe fornisce un generatore di temi del sito AEM come set di script per la creazione di nuovi temi del sito.
+* Scopri come utilizzare i temi del sito AEM per personalizzare lo stile e la progettazione del sito.
+
+  Vedi [Temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md).
+
+* Adobe fornisce un generatore di temi del sito AEM come set di script per la creazione di nuovi temi.
+
+  Consulta [Generatore di temi del sito AEM](https://github.com/adobe/aem-site-theme-builder).
+
