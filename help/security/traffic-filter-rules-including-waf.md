@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4215'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -206,7 +206,7 @@ Un gruppo di condizioni è composto da più condizioni semplici e/o da condizion
 
 **Note**
 
-* La proprietà di richiesta `clientIp` può essere utilizzata solo con i seguenti predicati: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` può essere confrontata anche con intervalli IP quando si utilizzano i predicati `in` e `notIn`. L&#39;esempio seguente implementa una condizione per valutare se un IP client è compreso nell&#39;intervallo IP di 192.168.0.0/24 (quindi da 192.168.0.0 a 192.168.0.255):
+* La proprietà di richiesta `clientIp` può essere utilizzata solo con i seguenti predicati: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` può essere confrontata anche con intervalli IP quando si utilizzano i predicati `in` e `notIn`. L’esempio seguente implementa una condizione per valutare se l’IP di un client rientra nell’intervallo IP 192.168.0.0/24 (quindi da 192.168.0.0 a 192.168.0.255):
 
 ```
 when:
@@ -239,8 +239,8 @@ La proprietà `wafFlags`, che può essere utilizzata nelle regole del filtro del
 
 | **ID contrassegno** | **Nome contrassegno** | **Descrizione** |
 |---|---|---|
-| ATTACCO | Attacco | Contrassegno flag per identificare le richieste che contengono uno o più tipi di attacco elencati in tale tabella |
-| ATTACK-FROM-BAD-IP | Attacco da IP errato | Contrassegno flag per identificare le richieste provenienti da `BAD-IP` e che contengono uno o più tipi di attacco elencati in tale tabella |
+| ATTACK | Attacco | Flag per identificare le richieste che contengono uno o più tipi di attacco elencati in tale tabella |
+| ATTACK-FROM-BAD-IP | Attacco da IP non valido | Flag per identificare le richieste provenienti da `BAD-IP` e contenenti uno o più tipi di attacco elencati in tale tabella |
 | SQLI | SQL Injection | SQL Injection è il tentativo di accedere a un’applicazione o di ottenere informazioni con privilegi tramite l’esecuzione di query arbitrarie nel database. |
 | BACKDOOR | Backdoor | Un segnale backdoor è una richiesta che tenta di determinare se un file backdoor comune è presente sul sistema. |
 | CMDEXE | Command Execution | Command Execution è il tentativo di ottenere il controllo o danneggiare un sistema di destinazione attraverso comandi arbitrari di sistema mediante l’input dell’utente. |
@@ -249,17 +249,17 @@ La proprietà `wafFlags`, che può essere utilizzata nelle regole del filtro del
 | TRAVERSAL | Directory Traversal | Directory Traversal è il tentativo di spostarsi tra le cartelle privilegiate all’interno di un sistema nella speranza di ottenere informazioni riservate. |
 | USERAGENT | Attack Tooling | Attack Tooling è l’uso di un software automatizzato per identificare le vulnerabilità di sicurezza o per tentare di sfruttare una vulnerabilità scoperta. |
 | LOG4J-JNDI | JNDI Log4J | Gli attacchi JNDI Log4J tentano di sfruttare la [vulnerabilità Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) presente nelle versioni Log4J precedenti alla 2.16.0 |
-| CVE | CVE | Contrassegno flag per identificare un CVE. È sempre combinato con un flag `CVE-<CVE Number>`. Per ulteriori informazioni sui CVE da cui Adobe ti proteggerà, contatta Adobe. |
+| CVE | CVE | Flag per identificare una CVE (Common Vulnerabilities and Exposures, Vulnerabilità ed esposizioni comuni). È sempre combinato con un flag `CVE-<CVE Number>`. Per ulteriori informazioni sulle CVE da cui Adobe ti proteggerà, contatta Adobe. |
 
 #### Traffico sospetto
 
 | **ID contrassegno** | **Nome contrassegno** | **Descrizione** |
 |---|---|---|
 | ABNORMALPATH | Percorso anomalo | Percorso anomalo indica che il percorso originale è diverso dal percorso normalizzato (ad esempio, `/foo/./bar` è normalizzato su `/foo/bar`) |
-| BAD-IP | IP non valido | Contrassegno flag per identificare le richieste provenienti da IP identificati come non validi, perché sono identificati come origini dannose (`SANS`, `TORNODE`) o perché sono stati identificati come non validi da WAF dopo aver inviato troppe richieste dannose |
+| BAD-IP | IP non valido | Flag per identificare richieste provenienti da IP identificati come non validi, perché considerati origini dannose (`SANS`, `TORNODE`) o perché segnalati come non validi da WAF dopo l’invio di troppe richieste dannose |
 | BHH | Intestazioni hop non valide | Le intestazioni hop non valide indicano un tentativo di smuggling dell’HTTP tramite un’intestazione di codifica di trasferimento (TE) o lunghezza dei contenuti (CL) non valida oppure tramite un’intestazione TE e CL corretta |
 | CODEINJECTION | Code Injection | Code Injection è il tentativo di ottenere il controllo o danneggiare un sistema di destinazione attraverso comandi arbitrari di codice di applicazione tramite l’input dell’utente. |
-| COMPRESSO | Compressione rilevata | Il corpo della richiesta POST è compresso e non può essere controllato. Ad esempio, se si specifica un&#39;intestazione di richiesta `Content-Encoding: gzip` e il corpo POST non è testo normale. |
+| COMPRESSED | Compressione rilevata | Il corpo della richiesta POST è compresso e non può essere esaminato. Ad esempio, se viene specificata un’intestazione di richiesta `Content-Encoding: gzip` e il corpo POST non è testo normale. |
 | RESPONSESPLIT | HTTP Response Splitting | Identifica quando i caratteri CRLF vengono inviati come input all’applicazione per inserire le intestazioni nella risposta HTTP. |
 | NOTUTF8 | Codifica non valida | Una codifica non valida può causare la conversione di caratteri dannosi da una richiesta a una risposta da parte del server, causando un rifiuto del servizio o XSS |
 | MALFORMED-DATA | Dati non validi nel corpo della richiesta | Corpo della richiesta POST, PUT o PATCH non valido in base all’intestazione della richiesta “Content-Type”. Ad esempio, se è specificata un’intestazione di richiesta “Content-Type: application/x-www-form-urlencoded” che contiene un corpo POST che è JSON. Spesso si tratta di un errore di programmazione, richiesta automatizzata o dannosa. Richiede l&#39;agente 3.2 o versione successiva. |
@@ -267,11 +267,11 @@ La proprietà `wafFlags`, che può essere utilizzata nelle regole del filtro del
 | NO-CONTENT-TYPE | Intestazione di richiesta “Content-Type” mancante | Una richiesta POST, PUT o PATCH senza intestazione di richiesta “Content-Type”. Per impostazione predefinita, i server applicazioni devono assumere in questo caso “Content-Type: text/plain; charset=us-ascii”. In molte richieste automatizzate e dannose potrebbe mancare “Content Type”. |
 | NOUA | Nessun agente utente | Indica che una richiesta non conteneva alcuna intestazione “User-Agent” o che il valore dell’intestazione non era impostato. |
 | NULLBYTE | Byte Null | I byte Null non vengono in genere visualizzati in una richiesta e indicano che la richiesta è in formato non corretto e potenzialmente dannoso. |
-| OOB-DOMAIN | Dominio fuori banda | I domini fuori banda vengono generalmente utilizzati durante il test di penetrazione per identificare le vulnerabilità in cui è consentito l’accesso alla rete. |
+| OOB-DOMAIN | Dominio fuori banda | I domini fuori banda, in genere, vengono utilizzati durante i test di penetrazione per identificare eventuali vulnerabilità in cui è consentito l’accesso alla rete. |
 | PRIVATEFILE | File privati | I file privati sono di solito di natura riservata, ad esempio, un file `.htaccess` Apache o un file di configurazione, che potrebbero causare la perdita di informazioni riservate. |
 | SCANNER | Scanner | Identifica i servizi e gli strumenti di scansione più diffusi. |
 
-#### Traffico Varie
+#### Traffico (varie)
 
 | **ID contrassegno** | **Nome contrassegno** | **Descrizione** |
 |---|---|---|
@@ -339,7 +339,7 @@ data:
 
 **Esempio 3**
 
-Questa regola blocca le richieste in fase di pubblicazione che contengono il parametro di query `foo`, ma consente ogni richiesta proveniente dall&#39;IP 192.168.1.1:
+Questa regola blocca le richieste che contengono il parametro di query `foo` al momento della pubblicazione, ma consente ogni richiesta proveniente da IP 192.168.1.1:
 
 ```
 kind: "CDN"

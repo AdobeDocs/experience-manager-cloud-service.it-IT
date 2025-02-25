@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: f81e8434029ade26dd2c30b249537699971e9a4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1750'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Le didascalie video generate dall’intelligenza artificiale in Adobe Dynamic Me
 
 #### Gestisci pubblicazione 
 
-Puoi utilizzare il flusso di lavoro [Gestisci pubblicazione](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) per pubblicare o annullare la pubblicazione dei moduli in ambienti diversi, in genere dall&#39;istanza di authoring alle istanze di pubblicazione e anteprima. Consente agli utenti di pubblicare, annullare o pianificare la pubblicazione dei contenuti in modo semplice.
+È possibile utilizzare il flusso di lavoro [Gestisci pubblicazione](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) per pubblicare o annullare la pubblicazione di moduli in ambienti diversi, in genere dall’istanza di authoring a quelle di pubblicazione e anteprima. Consente agli utenti di pubblicare, annullare o pianificare la pubblicazione dei contenuti in modo semplice.
 
 #### Salvataggio automatico di una bozza per moduli adattivi basati su Componenti core
 
