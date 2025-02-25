@@ -4,19 +4,20 @@ description: Questo articolo spiega come visualizzare in anteprima i moduli util
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+hidefromtoc: true
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 2%
 
 ---
 
-
 # Modalità reattiva nell’authoring di WYSIWYG
 
 [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) consente di visualizzare in anteprima Edge Delivery Services Forms con emulatori diversi per visualizzare l&#39;aspetto del modulo durante la creazione.
 
 La modalità reattiva consente agli sviluppatori di progettare layout che si adattano automaticamente a diverse dimensioni di schermo, inclusi desktop, tablet e dispositivi mobili. Universal Editor supporta emulatori per desktop, tablet e dispositivi mobili. È possibile impostare l&#39;altezza e la larghezza in base alle dimensioni dello schermo ed eseguire le azioni seguenti:
+
 * Impostare l&#39;orientamento
 * Specificare la larghezza e l&#39;altezza
 * Modificare l’orientamento
@@ -68,6 +69,3 @@ Universal Editor fornisce emulatori diversi per l&#39;anteprima dei moduli su va
 ## Consulta anche
 
 {{universal-editor-see-also}}
-
-
-
