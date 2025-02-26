@@ -4,9 +4,9 @@ description: Se hai molti siti simili che per lo più si presentano e si comport
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -17,9 +17,9 @@ Se hai molti siti simili che per lo più si presentano e si comportano allo stes
 
 ## Una base di codice per più siti {#one-codebase}
 
-Per impostazione predefinita, l’AEM è strettamente associato all’archivio del codice, che soddisfa la maggior parte dei casi d’uso. Tuttavia, è possibile che più siti differiscano principalmente per quanto riguarda il contenuto, ma che sfruttino la stessa base di codice.
+Per impostazione predefinita, AEM è strettamente associato all’archivio del codice, che soddisfa la maggior parte dei casi d’uso. Tuttavia, è possibile che più siti differiscano principalmente per quanto riguarda il contenuto, ma che sfruttino la stessa base di codice.
 
-Invece di creare più archivi GitHub e di eseguire ogni sito da un archivio GitHub dedicato mantenendo la sincronizzazione, l’AEM supporta l’esecuzione di più siti dalla stessa base di codice.
+Invece di creare più archivi GitHub e di eseguire ogni sito da un archivio GitHub dedicato mantenendo la sincronizzazione, AEM supporta l’esecuzione di più siti dalla stessa base di codice.
 
 Questa configurazione semplificata, che elimina la necessità di replica del codice, è nota anche come [&quot;repoless&quot;](https://www.aem.live/docs/repoless), perché tutti tranne il primo sito non hanno bisogno di un proprio archivio GitHub.
 
@@ -34,11 +34,11 @@ Per sfruttare questa funzione, assicurati di aver eseguito le seguenti operazion
 * La configurazione del sito è già stata completata seguendo il documento [Guida introduttiva per sviluppatori per l&#39;authoring di WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * Stai eseguendo almeno AEM as a Cloud Service 2024.08.
 
-Sarà inoltre necessario chiedere ad Adobe di configurare i seguenti elementi per te. Rivolgiti al tuo canale di Slack o solleva un problema di supporto per richiedere ad Adobe di apportare queste modifiche:
+Sarà inoltre necessario chiedere ad Adobe di configurare i seguenti elementi al posto tuo. Rivolgiti al tuo canale Slack o solleva un problema di supporto per richiedere ad Adobe di apportare queste modifiche:
 
 * Chiedi di attivare il servizio di configurazione [aem.live](https://www.aem.live/docs/config-service-setup#prerequisites) per il tuo ambiente e di essere configurato come amministratore.
-* Chiedi di abilitare la funzione di ripolling per il programma per Adobe.
-* Chiedi ad Adobe di crearti l’organizzazione.
+* Chiedi di abilitare la funzione Repoless per il programma da Adobe.
+* Chiedi ad Adobe di creare l’organizzazione per te.
 
 ## Attiva funzione di ripolling {#activate}
 
@@ -155,15 +155,15 @@ Poiché ora si utilizza il servizio di configurazione, è possibile rimuovere `f
 >
 >Utilizzando il servizio di configurazione ed esponendo la mappatura del percorso tramite `config.json`, il file `path.json` viene ignorato.
 
-Una volta configurato l&#39;AEM per l&#39;utilizzo in repoless, è necessario utilizzare il servizio di configurazione e fornire un `config.json` valido con la mappatura dei percorsi.
+Una volta che AEM è configurato per l&#39;utilizzo in repoless, è necessario utilizzare il servizio di configurazione e fornire un `config.json` valido con la mappatura dei percorsi.
 
 ### Aggiorna configurazione AEM {#update-aem}
 
-Ora è possibile apportare le modifiche necessarie ai Edge Delivery Services dell’AEM.
+Ora puoi apportare le modifiche necessarie al Edge Delivery Services in AEM.
 
-1. Accedi all&#39;istanza di creazione dell&#39;AEM e vai a **Strumenti** -> **Cloud Service** -> **Configurazione Edge Delivery Services** e seleziona la configurazione creata automaticamente per il tuo sito, quindi tocca o fai clic su **Proprietà** nella barra degli strumenti.
-1. Nella finestra Configurazione **Edge Delivery Services**, modifica il tipo di progetto in **aem.live con configurazione di repoless** e tocca o fai clic su **Salva e chiudi**.
-   Configurazione di ![Edge Delivery Services](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
+1. Accedi all&#39;istanza di authoring di AEM e vai a **Strumenti** -> **Servizi cloud** -> **Configurazione Edge Delivery Services** e seleziona la configurazione creata automaticamente per il tuo sito, quindi tocca o fai clic su **Proprietà** nella barra degli strumenti.
+1. Nella finestra **Configurazione Edge Delivery Services**, modifica il tipo di progetto in **aem.live con configurazione di repoless** e tocca o fai clic su **Salva e chiudi**.
+   ![Configurazione Edge Delivery Services](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
 1. Torna al tuo sito utilizzando l’Editor universale e assicurati che continui a essere eseguito correttamente il rendering.
 1. Modifica alcuni contenuti e ripubblica.
 1. Visita il sito pubblicato all&#39;indirizzo `https://main--<your-aem-project>--<your-github-org>.aem.page/` e verifica che le modifiche siano state applicate correttamente.
@@ -176,6 +176,7 @@ Ora che il sito di base è configurato per l’utilizzo di repoless, puoi creare
 
 * [Gestione di più siti senza archivio](/help/edge/wysiwyg-authoring/repoless-msm.md)
 * [Ambienti di produzione e staging senza archivio](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [Autenticazione del sito per l’authoring dei contenuti](/help/edge/wysiwyg-authoring/site-authentication.md)
 
 ## Risoluzione dei problemi {#troubleshooting}
 

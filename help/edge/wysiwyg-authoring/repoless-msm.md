@@ -4,9 +4,9 @@ description: Scopri i consigli sulle best practice per impostare un progetto in 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1260'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,11 @@ Scopri i consigli sulle best practice per impostare un progetto in modo riorgani
 
 [Multi Site Manager (MSM)](/help/sites-cloud/administering/msm/overview.md) e le relative funzionalità Live Copy consentono di utilizzare lo stesso contenuto del sito in più posizioni, consentendo al contempo l&#39;utilizzo di varianti. Puoi creare contenuti una sola volta e creare Live Copy. MSM mantiene relazioni live tra il contenuto sorgente e le relative Live Copy in modo che, quando modifichi il contenuto sorgente, sia possibile sincronizzare l’origine e le Live Copy.
 
-Puoi utilizzare MSM per creare un’intera struttura di contenuto per il tuo marchio in diverse lingue e lingue, creando contenuti a livello centrale. I siti localizzati possono quindi essere consegnati per Edge Delivery Services, sfruttando una base di codice centrale.
+Puoi utilizzare MSM per creare un’intera struttura di contenuto per il tuo marchio in diverse lingue e lingue, creando contenuti a livello centrale. I siti localizzati possono quindi essere consegnati da Edge Delivery Services, sfruttando una base di codice centrale.
 
 ## Requisiti {#requirements}
 
-Per configurare MSM in un caso di utilizzo di repoless, devi prima completare una serie di attività.
+Per configurare MSM in un caso di utilizzo di repoless, devi prima completare le seguenti attività:
 
 * In questo documento si presuppone che sia già stato creato un sito per il progetto in base alla [Guida introduttiva per sviluppatori per l&#39;authoring di WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * Devi avere già [abilitato la funzione di ripolling per il progetto](/help/edge/wysiwyg-authoring/repoless.md).
@@ -49,7 +49,7 @@ In questo documento si presuppone che sia già stata creata una struttura di bas
 /content/wknd/de/en
 ```
 
-Il contenuto in `language-masters` è l&#39;origine di Live Copy per i siti localizzati: Germania (`de`) e Svizzera (`ch`). L&#39;obiettivo di questo documento è la creazione di Edge Delivery Services che utilizzano tutti la stessa base di codice per ogni sito localizzato.
+Il contenuto in `language-masters` è l&#39;origine di Live Copy per i siti localizzati: Germania (`de`) e Svizzera (`ch`). L&#39;obiettivo di questo documento è creare siti Edge Delivery Services che utilizzano tutti la stessa base di codice per ogni sito localizzato.
 
 ## Configurazione {#configuration}
 
@@ -78,7 +78,7 @@ Puoi creare configurazioni aggiuntive per facilitare tale condivisione. Per il c
 
 In altre parole, avrai una configurazione per la directory principale del contenuto del brand wknd (`/content/wknd`) utilizzato dai blueprint e una configurazione utilizzata da ciascun sito localizzato (Svizzera e Germania).
 
-1. Accedi all’istanza di authoring AEM.
+1. Accedi all’istanza di authoring di AEM.
 1. Passare a **Browser configurazioni** scegliendo **Strumenti** -> **Generale** -> **Browser configurazioni**.
 1. Seleziona la configurazione creata automaticamente per il progetto (in questo caso wknd), quindi tocca o fai clic su **Crea** nella barra degli strumenti.
 1. Nella finestra di dialogo **Crea configurazione**, fornisci un **Nome** descrittivo per il sito localizzato (ad esempio `Switzerland`) e per il **Titolo** utilizza lo stesso titolo della dimensione localizzata (in questo caso `ch`).
@@ -89,7 +89,7 @@ Crea le configurazioni per ogni sito localizzato necessario. Nel caso di wknd, �
 
 Una volta create le configurazioni, è necessario assicurarsi che i siti localizzati le utilizzino.
 
-1. Accedi all’istanza di authoring AEM.
+1. Accedi all’istanza di authoring di AEM.
 1. Passa alla **console Sites** da **navigazione** -> **siti**.
 1. Selezionare il sito localizzato come `Switzerland`.
 1. Tocca o fai clic su **Proprietà** nella barra degli strumenti.
@@ -99,19 +99,19 @@ Una volta create le configurazioni, è necessario assicurarsi che i siti localiz
 
 Assegna le rispettive configurazioni ai siti localizzati aggiuntivi. Nel caso di wknd, è necessario assegnare la configurazione `/conf/wknd/de` anche al sito Germania.
 
-### Creazione di nuovi siti Edge Delivery Services per le pagine localizzate {#create-edge-sites}
+### Creare nuovi siti Edge Delivery Services per le pagine localizzate {#create-edge-sites}
 
-Per collegare più siti a Edge Delivery Services per una configurazione di siti multilingue e con più aree geografiche, è necessario impostare un nuovo sito aem.live per ciascuno dei siti MSM AEM. Esiste una relazione 1:1 tra i siti MSM dell’AEM e i siti aem.live con un archivio Git condiviso e una base di codice.
+Per connettere più siti a Edge Delivery Services per una configurazione di siti multilingue e con più aree geografiche, è necessario impostare un nuovo sito aem.live per ciascuno dei siti MSM AEM. Esiste una relazione 1:1 tra i siti MSM di AEM e i siti aem.live con un archivio Git condiviso e una base di codice.
 
-In questo esempio verrà creato il sito `wknd-ch` per la presenza svizzera di WKND, il cui contenuto localizzato si trova nel percorso AEM `/content/wknd/ch`.
+In questo esempio verrà creato il sito `wknd-ch` per la presenza svizzera di wknd, il cui contenuto localizzato si trova nel percorso AEM `/content/wknd/ch`.
 
 1. Recupera il token di autenticazione e l’account tecnico per il programma.
    * Per informazioni dettagliate su come [ottenere il token di accesso](/help/edge/wysiwyg-authoring/repoless.md#access-token) e l&#39;account tecnico [del programma, consulta il documento **Riutilizzo del codice tra siti**.](/help/edge/wysiwyg-authoring/repoless.md#access-control)
 1. Crea un nuovo sito effettuando la seguente chiamata al servizio di configurazione. Considera:
-   * Il nome del progetto nell’URL del POST deve essere il nuovo nome del sito che stai creando. In questo esempio è `wknd-ch`.
+   * Il nome del progetto nell’URL POST deve essere il nuovo nome del sito che stai creando. In questo esempio è `wknd-ch`.
    * La configurazione di `code` deve essere la stessa utilizzata per la creazione iniziale del progetto.
    * `content` > `source` > `url` deve essere adattato al nome del nuovo sito che stai creando. In questo esempio è `wknd-ch`.
-   * Ad esempio, il nome del sito nell&#39;URL di POST e `content` > `source` > `url` devono essere uguali.
+   * Ad esempio, il nome del sito nell&#39;URL POST e `content` > `source` > `url` devono essere uguali.
    * Adattare il blocco `admin` per definire gli utenti che devono disporre di accesso amministrativo completo al sito.
       * Si tratta di un array di indirizzi e-mail.
       * È possibile utilizzare il carattere jolly `*`.
@@ -181,7 +181,7 @@ Ripeti i passaggi per creare altri siti localizzati. Nel caso di wknd, è necess
 
 Le pagine in AEM devono essere configurate per utilizzare i nuovi siti Edge Delivery creati nella sezione precedente per la presenza localizzata. In questo esempio, il contenuto in `/content/wknd/ch` deve sapere come utilizzare il sito `wknd-ch` creato. Analogamente, il contenuto in `/content/wknd/de` deve utilizzare il sito `wknd-de`.
 
-1. Accedi all&#39;istanza di creazione dell&#39;AEM e vai a **Strumenti** -> **Cloud Service** -> **Configurazione Edge Delivery Services**.
+1. Accedi all&#39;istanza di authoring di AEM e vai a **Strumenti** -> **Servizi cloud** -> **Configurazione Edge Delivery Services**.
 1. Seleziona la configurazione creata automaticamente per il progetto e quindi la cartella creata per la pagina localizzata. In questo caso, la Svizzera (`ch`).
 1. Tocca o fai clic su **Crea** > **Configurazione** nella barra degli strumenti.
 1. Nella finestra **Configurazione Edge Delivery Services**:
@@ -194,12 +194,12 @@ Le pagine in AEM devono essere configurate per utilizzare i nuovi siti Edge Deli
 
 Dopo aver apportato tutte le modifiche di configurazione necessarie, verifica che tutto funzioni come previsto.
 
-1. Accedi all’istanza di authoring AEM.
+1. Accedi all’istanza di authoring di AEM.
 1. Passa alla **console Sites** da **navigazione** -> **siti**.
 1. Selezionare il sito localizzato come `Switzerland`.
 1. Tocca o fai clic su **Modifica** nella barra degli strumenti.
 1. Assicurati che la pagina venga riprodotta correttamente nell’Editor universale e utilizzi lo stesso codice della directory principale del sito.
 1. Apporta una modifica alla pagina e ripubblica.
-1. Visita il tuo nuovo sito Edge Delivery Services per la pagina localizzata all&#39;indirizzo `https://main--wknd-ch--<your-github-org>.aem.page`.
+1. Visita il tuo nuovo sito Edge Delivery Services per la pagina localizzata in `https://main--wknd-ch--<your-github-org>.aem.page`.
 
 Se visualizzi le modifiche apportate, la configurazione MSM funziona correttamente.
