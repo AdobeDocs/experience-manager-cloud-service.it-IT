@@ -4,9 +4,9 @@ description: Scopri la distribuzione e la risoluzione dei problemi di replica in
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
+source-git-commit: 9dac0b63fec56bede7db9331d47ef479b29e67d0
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1711'
 ht-degree: 31%
 
 ---
@@ -96,10 +96,10 @@ Creare un modello di flusso di lavoro che utilizza il passaggio del processo `Tr
 
 **Filtri di supporto**
 
-| Nome | descrizione |
+| Nome | Descrizione |
 | ------------- | ------------------------------------------- |
-| onlyModified | Nodi (nuovi e preesistenti) modificati dall&#39;ultima pubblicazione |
-| onlyActivated | Nodi pubblicati in precedenza |
+| onlyModified | Nodi: sia nuovi che preesistenti che sono stati modificati dall’ultima pubblicazione |
+| onlyActivated | Nodi: pubblicati prima dell’ultima pubblicazione |
 
 
 **Supporto per la ripresa in seguito a interruzioni**
