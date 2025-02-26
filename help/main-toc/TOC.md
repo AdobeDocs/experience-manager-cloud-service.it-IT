@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a3713cdf2910492385b96b89038095c3642a2ec
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '6094'
-ht-degree: 98%
+source-wordcount: '6193'
+ht-degree: 95%
 
 ---
 
@@ -1024,37 +1024,36 @@ ht-degree: 98%
    + Creazione di moduli {#build-forms}
       + [Panoramica](/help/edge/docs/forms/overview.md)
       + [Come funziona Edge Delivery Services Forms?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
-      + Introduzione {#getting-started-edge-delivery-services-forms}
-         + [Guida introduttiva](/help/edge/docs/forms/tutorial.md)
-         + [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-         + [Impostare i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati](/help/edge/docs/forms/submit-forms.md)
-         + [Pubblicare il modulo e iniziare a raccogliere i dati](/help/edge/docs/forms/publish-forms.md)
-         + [Aggiungere convalide ai campi del modulo](/help/edge/docs/forms/validate-forms.md)
-         + [Caricare le opzioni dall’URL a un modulo](/help/edge/docs/forms/load-options-from-url.md)
-         + [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
-         + [Utilizzare le regole per aggiungere un comportamento dinamico a un modulo](/help/edge/docs/forms/rules-forms.md)
-         + [Espressioni Regex per le convalide](/help/edge/docs/forms/regex-forms.md)
-         + [Mostrare un messaggio di ringraziamento personalizzato dopo l’invio di un modulo](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Utilizzare il servizio di invio dei moduli](/help/forms/forms-submission-service.md)
+      + Authoring basato su documenti {#getting-started-edge-delivery-services-forms}
+         + [Creazione del primo modulo: Guida rapida con Google Sheets ed Excel](/help/edge/docs/forms/tutorial.md)
+         + [Come creare Forms utilizzando Google Sheets o Excel: Guida dettagliata](/help/edge/docs/forms/create-forms.md)
+         + [Collegare il modulo ai fogli di Google: Guida alla configurazione di Data Collection](/help/edge/docs/forms/submit-forms.md)
+         + [Rendi il tuo modulo attivo: guida alla pubblicazione e alla raccolta dati](/help/edge/docs/forms/publish-forms.md)
+         + [Convalida del campo modulo: aggiungi controlli di errore al Forms](/help/edge/docs/forms/validate-forms.md)
+         + [Design Beautiful Forms: guida allo stile e alla personalizzazione](/help/edge/docs/forms/style-theme-forms.md)
+         + [Creare messaggi di successo: personalizza la pagina di ringraziamento del modulo](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Guida all’invio dei moduli: utilizzo del servizio di invio Forms](/help/forms/forms-submission-service.md)
+         + [Campi modulo dinamici: caricamento delle opzioni dagli URL](/help/edge/docs/forms/load-options-from-url.md)
+         + [Aggiungi comportamento intelligente: regole modulo e guida logica](/help/edge/docs/forms/rules-forms.md)
+         + [Advanced Form Validation: Guida alle espressioni regolari](/help/edge/docs/forms/regex-forms.md)
+         + [Genera Forms riutilizzabile: guida ai frammenti di modulo](/help/edge/docs/forms/form-fragments.md)
+         + [Creare un Forms dinamico: aggiunta di sezioni ripetibili](/help/edge/docs/forms/repeatable-forms.md)
+         + [Rendi il tuo modulo globale: guida alla traduzione dei moduli](/help/edge/docs/forms/translate-forms.md)
+         + [Proteggi il tuo Forms: aggiunta di sicurezza reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Componenti per moduli personalizzati: guida per gli sviluppatori](/help/edge/docs/forms/custom-components-forms.md)
+         + [Monitorare le prestazioni dei moduli: guida al monitoraggio per uso reale](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Distribuire Forms su Edge: guida alla pubblicazione per Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + WYSIWYG {#universal-editor}
-         + [Panoramica: editor universale per Edge Delivery Services per Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Guida introduttiva](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Informazioni sull’interfaccia di WYSIWYG](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Aggiungere regole a utilizzando l’Editor regole](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Creare componenti personalizzati](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Utilizzare reCAPTCHA nei moduli](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Azioni di invio](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Pubblica Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [Personalizzare lo stile dei moduli](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Modalità reattiva](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-      + Funzionalità {#advanced-features-edge-delivery-services-forms}
-         + [Utilizzare i frammenti del modulo](/help/edge/docs/forms/form-fragments.md)
-         + [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
-         + [Tradurre il modulo](/help/edge/docs/forms/translate-forms.md)
-         + [Utilizzare reCAPTCHA per proteggere i moduli](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Componenti personalizzati](/help/edge/docs/forms/custom-components-forms.md)
-         + [Monitoraggio degli utenti reali per i moduli](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Pubblicazione di moduli per Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
+         + [Introduzione a Forms Universal Editor per Edge Delivery Services - Guida completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Come creare il primo modulo con Universal Editor - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Guida all’interfaccia di Universal Editor: strumenti, funzionalità e navigazione](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Rendi il tuo Forms facile da usare: design reattivo in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Design Beautiful Forms: guida di stile e teming per l&#39;editor universale](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Aggiungi comportamento dinamico a Forms: guida completa all’editor di regole](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Guida all’invio dei moduli: configurare e personalizzare le azioni di invio dei moduli](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Proteggere il Forms dallo spam: aggiunta di sicurezza reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Come pubblicare e distribuire Forms: guida alla pubblicazione di Universal Editor](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Componenti per moduli personalizzati: Guida per gli sviluppatori all&#39;editor universale](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + Riferimenti {#forms-references}
          + [Componenti del blocco modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
    + Risorse di Edge Delivery {#resources}

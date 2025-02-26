@@ -3,17 +3,18 @@ title: Pubblica AEM Forms per Edge Delivery Services.
 description: Pubblicare i Edge Delivery Services Form in modo rapido e semplice.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # Pubblicare il modulo adattivo in Edge Delivery Services
+
+<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail dal tuo indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio. Ad esempio, se l&#39;URL del repository è https://github.com/adobe/abc, il nome dell&#39;organizzazione è adobe e il nome del repository è abc.</span>
+
 
 Quando il modulo è finalizzato e pronto per l’uso, è possibile pubblicarlo per renderlo accessibile ai clienti per la raccolta e l’invio dei dati. La pubblicazione garantisce che il modulo sia disponibile su Edge Delivery, consentendo agli utenti di interagire direttamente con esso. Questo processo consente ai clienti di compilare e inviare il modulo in tempo reale, garantendo un&#39;acquisizione efficiente dei dati e una elaborazione semplificata.
 
@@ -37,7 +38,7 @@ Puoi pubblicare qualsiasi **modulo adattivo basato su EDS** in Edge Delivery seg
 1. Fai di nuovo clic su **Pubblica** per visualizzare un pop-up di conferma, che indica che il modulo è ora pubblicato.
    ![Pubblicazione completata](/help/forms/assets/publish-success.png)
 
-1. Per verificare lo stato di pubblicazione del modulo, fai di nuovo clic su **Pubblica**.
+1. Per verificare lo stato di pubblicazione del modulo, fare di nuovo clic su **Pubblica**.
    ![Stato pubblicazione](/help/forms/assets/publish-status.png)
 
 1. Per **annullare la pubblicazione** di un modulo, apri il modulo nell&#39;editor, fai clic sul menu a tre punti in alto a destra e fai clic su **Annulla pubblicazione**.

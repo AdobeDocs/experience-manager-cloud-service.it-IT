@@ -2,18 +2,19 @@
 title: Creare componenti personalizzati per un modulo EDS
 description: Creare componenti personalizzati per un modulo EDS
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: d5ba87ec6199522f026d572d1bdb1bfbeb9849ee
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1773'
 ht-degree: 5%
 
 ---
 
 # Creare un componente personalizzato in WYSIWYG Authoring
+
+<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail dal tuo indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio. Ad esempio, se l&#39;URL del repository è https://github.com/adobe/abc, il nome dell&#39;organizzazione è adobe e il nome del repository è abc.</span>
+
 
 Edge Delivery Services Forms offre la personalizzazione, consentendo agli sviluppatori front-end di creare componenti di modulo personalizzati. Questi componenti personalizzati si integrano perfettamente nell’esperienza di authoring di WYSIWYG, consentendo agli autori dei moduli di aggiungerli, configurarli e gestirli facilmente nell’editor di moduli. Con i componenti personalizzati, gli autori possono migliorare le funzionalità garantendo al contempo un processo di authoring fluido e intuitivo.
 

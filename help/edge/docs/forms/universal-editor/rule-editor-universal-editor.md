@@ -3,18 +3,19 @@ title: Come utilizzare l’editor di regole per applicare regole ai campi modulo
 description: L’editor di regole nell’editor universale consente di aggiungere un comportamento dinamico e di creare una logica complessa nei moduli senza dover dover scrivere codice di programmazione o script.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '2166'
-ht-degree: 76%
+source-wordcount: '2214'
+ht-degree: 73%
 
 ---
 
 
 # Introduzione all’editor di regole nell’authoring di WYSIWYG
+
+<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail dal tuo indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio. Ad esempio, se l&#39;URL del repository è https://github.com/adobe/abc, il nome dell&#39;organizzazione è adobe e il nome del repository è abc.</span>
+
 
 È possibile aggiungere il comportamento di un modulo dinamico utilizzando l’editor di regole, che consente di creare regole. Queste regole abilitano la visibilità dei campi condizionali, automatizzano i calcoli in base a quanto immesso dall’utente e migliorano l’esperienza utente complessiva. Semplificando il processo di compilazione dei moduli, l’editor di regole favorisce sia l’accuratezza che l’efficienza.
 
@@ -185,7 +186,7 @@ Esaminiamo ora come [scrivere regole nell’editor di regole](#write-rules).
 
 ## Scrivere regole
 
-Per informazioni su come scrivere regole nell’editor di regole visive, prendiamo in considerazione un semplice esempio di modulo di calcolo delle imposte:
+Per informazioni su come scrivere regole nell&#39;Editor di regole visive, si consideri un semplice esempio di modulo di calcolo delle imposte:
 
 ![Esempio di editor di regole](/help/edge/docs/forms/assets/rule-editor-1.png)
 

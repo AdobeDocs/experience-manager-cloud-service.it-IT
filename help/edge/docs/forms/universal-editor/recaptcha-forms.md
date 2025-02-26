@@ -4,18 +4,19 @@ description: Utilizzare Google reCAPTCHA in un modulo per Edge Delivery Services
 feature: Edge Delivery Services
 keywords: reCAPTCHA nei moduli, Utilizzo di reCAPTCHA nell’Editor universale, Aggiunta di reCAPTCHA nei moduli
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1273'
 ht-degree: 6%
 
 ---
 
 
 # Utilizzare reCAPTCHA nell’authoring di WYSIWYG
+
+<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail dal tuo indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio. Ad esempio, se l&#39;URL del repository è https://github.com/adobe/abc, il nome dell&#39;organizzazione è adobe e il nome del repository è abc.</span>
+
 
 Il CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) è un popolare strumento utilizzato per proteggere i siti web da attività fraudolente, spam e uso improprio.
 
