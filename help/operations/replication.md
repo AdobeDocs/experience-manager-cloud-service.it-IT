@@ -4,9 +4,9 @@ description: Scopri la distribuzione e la risoluzione dei problemi di replica in
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
+source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1704'
 ht-degree: 31%
 
 ---
@@ -44,9 +44,9 @@ Per realizzare la replica automatica per questa funzionalità, abilitare **Repli
 
 ### Gestisci pubblicazione  {#manage-publication}
 
-Gestisci pubblicazione offre più opzioni rispetto a Quick Publish e consente di includere pagine figlie, personalizzare i riferimenti, avviare tutti i flussi di lavoro applicabili e pubblicare successivamente.
+Gestisci pubblicazione offre più opzioni rispetto alla Pubblicazione rapida e consente di includere pagine figlie, personalizzare i riferimenti, avviare tutti i flussi di lavoro applicabili e pubblicare successivamente.
 
-L’inclusione degli elementi secondari di una cartella per l’opzione &quot;Pubblica più tardi&quot; richiama il flusso di lavoro Struttura contenuto di Publish descritto in questo articolo.
+L’inclusione degli elementi secondari di una cartella per l’opzione &quot;Pubblica più tardi&quot; richiama il flusso di lavoro Pubblica struttura del contenuto descritto in questo articolo.
 
 Puoi trovare informazioni più dettagliate su Gestisci pubblicazione nella sezione [Documentazione di base sulla pubblicazione](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
@@ -98,7 +98,7 @@ Creare un modello di flusso di lavoro che utilizza il passaggio del processo `Tr
 
 | Nome | descrizione |
 | ------------- | ------------------------------------------- |
-| onlyModified | Nodi modificati dall&#39;ultima pubblicazione |
+| onlyModified | Nodi (nuovi e preesistenti) modificati dall&#39;ultima pubblicazione |
 | onlyActivated | Nodi pubblicati in precedenza |
 
 
@@ -131,7 +131,7 @@ Il flusso di lavoro elabora il contenuto in blocchi, ciascuno dei quali rapprese
 
 È possibile attivare una replica della struttura scegliendo **Strumenti - Flusso di lavoro - Modelli** e copiando il modello di flusso di lavoro preconfigurato **Pubblica struttura contenuto**, come mostrato di seguito:
 
-![Scheda Flusso Di Lavoro Struttura Contenuto Publish](/help/operations/assets/publishcontenttreeworkflow.png)
+![Scheda Flusso Di Lavoro Pubblica Struttura Contenuto](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Non richiamare il modello originale. Assicurati invece di copiare prima il modello e richiamare tale copia.
 
@@ -180,7 +180,7 @@ All&#39;avvio del passaggio del flusso di lavoro di attivazione della struttura,
 
 Dopo che il passaggio del flusso di lavoro ha replicato tutti i percorsi, viene registrata un’istruzione INFO finale.
 
-Inoltre, puoi aumentare il loglevel dei logger al di sotto di `com.day.cq.wcm.workflow.process.impl` per DEBUG/TRACE e ottenere ulteriori informazioni di registro.
+Inoltre, è possibile aumentare il loglevel dei logger al di sotto di `com.day.cq.wcm.workflow.process.impl` a DEBUG/TRACE per ottenere ulteriori informazioni di registro.
 
 In caso di errori, il passaggio del flusso di lavoro termina con `WorkflowException`, in cui viene racchiusa l&#39;eccezione sottostante.
 
@@ -271,7 +271,7 @@ La dimensione del contenuto trasmesso per chiamata di replica non deve superare 
 
 Per risolvere i problemi di replica, accedi alle code di replica nell’interfaccia web del servizio AEM Author:
 
-1. Dal menu Start AEM, passa a **Strumenti** > **Distribuzione** > **Distribuzione**
+1. Dal menu Start di AEM, passa a **Strumenti** > **Distribuzione** > **Distribuzione**
 1. Seleziona la scheda **Pubblica**.
 
    ![Stato](assets/publish-status.png "Stato")
@@ -282,6 +282,6 @@ Per risolvere i problemi di replica, accedi alle code di replica nell’interfac
 
 ![Registri](assets/publish-logs.png "Registri")
 
-Se non è stato possibile pubblicare il contenuto, l’intera pubblicazione viene ripristinata dal servizio Publish dell’AEM.
+Se non è stato possibile pubblicare il contenuto, l’intera pubblicazione viene ripristinata da AEM Publish Service.
 
 In tal caso, la coda principale modificabile presenta uno stato rosso e deve essere rivista per identificare gli elementi che hanno causato l’annullamento della pubblicazione. Facendo clic su tale coda, vengono visualizzati i relativi elementi in sospeso, da cui è possibile cancellare un singolo elemento o tutti gli elementi, se necessario.
