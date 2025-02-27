@@ -4,10 +4,10 @@ description: Scopri come gestire i dati di tassonomia per utilizzare i tag in AE
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +23,10 @@ L’assegnazione tag è una funzione importante che consente di organizzare e ge
 Questi tag sono utili non solo per te e i tuoi autori nell’organizzazione dei contenuti, ma possono anche essere utili per i tuoi lettori. I tag e la relativa tassonomia possono essere utilizzati nei componenti della pagina per facilitare la navigazione del contenuto da parte dei lettori.
 
 L’editor universale funziona solo con gli ID dei tag. Creando una pagina di tassonomia per il contenuto, è possibile esporre le descrizioni di questi tag in tutte le lingue all’editor universale in modo che possa utilizzare tali informazioni durante il rendering del contenuto.
+
+>[!TIP]
+>
+>Per ulteriori informazioni sul campo Tag di AEM disponibile per l&#39;Editor universale, che può essere utilizzato con la tassonomia, vedere il documento [Definizioni modello, campi e tipi di componenti](/help/implementing/universal-editor/field-types.md).
 
 ## Creazione di una pagina di tassonomia {#creating}
 
