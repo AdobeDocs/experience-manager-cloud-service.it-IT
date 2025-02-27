@@ -4,16 +4,16 @@ description: Questo tutorial ti mostrerà come essere subito operativo con un nu
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 12ac8fd43d56fb95bf63b2ce92d1ec1a776e464a
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 99%
+source-wordcount: '1656'
+ht-degree: 97%
 
 ---
 
 # Guida introduttiva: tutorial per sviluppatori
 
-Nell’era digitale di oggi, la creazione di moduli facili da usare è essenziale per qualsiasi organizzazione. Edge Delivery Services (EDS) per AEM Forms consente di creare moduli utilizzando strumenti noti come Google Docs e Microsoft Office.
+Nell’era digitale di oggi, la creazione di moduli facili da usare è essenziale per qualsiasi organizzazione. Edge Delivery Services per AEM Forms consente di creare moduli utilizzando strumenti familiari come Google Docs e Microsoft Office.
 
 Questi moduli inviano i dati direttamente a un file Microsoft Excel o Fogli Google, consentendo di utilizzare un ecosistema dinamico e API affidabili di Fogli Google, Microsoft Excel e Microsoft SharePoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
 
@@ -59,7 +59,7 @@ Il modello standard di AEM Forms consente di iniziare rapidamente un progetto AE
    >[!NOTE]
    >
    >
-   > Se utilizzi GitHub Enterprise con filtro IP, puoi aggiungere il seguente IP all’elenco Consentiti: 3.227.118.73
+   > Se si utilizza GitHub Enterprise con il filtro IP, è possibile aggiungere il seguente IP al inserisco nell&#39;elenco Consentiti: 3.227.118.73
 
    Congratulazioni Hai un nuovo sito web in esecuzione su `https://<branch>--<repo>--<owner>.aem.page/`.
 

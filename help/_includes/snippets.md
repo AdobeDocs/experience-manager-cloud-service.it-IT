@@ -1,8 +1,8 @@
 ---
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 97%
+source-wordcount: '1390'
+ht-degree: 96%
 
 ---
 # Snippet {#snippets}
@@ -59,14 +59,13 @@ ht-degree: 97%
 
 ## Editor universale{#universal-editor-see-also}
 
-* [Guida introduttiva a Edge Delivery Services per AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Pubblicare il modulo](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Inviare il modulo](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [Creare regole per il modulo](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [Utilizzare reCAPTCHA nel modulo](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-* [Creare un componente personalizzato per il modulo](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Anteprima modulo in modalità reattiva](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+* [Creare Il Primo Modulo Con L’Editor Universale](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Aggiungere comportamento dinamico a Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Configurare e personalizzare le azioni di invio dei moduli](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Pubblicare e distribuire Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Design Beautiful Forms: guida allo stile e al teming](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Creare componenti per moduli personalizzati](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Proteggere il Forms dallo spam: aggiunta di sicurezza reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## Consulta anche {#see-more-forms-eds}
 

@@ -4,10 +4,10 @@ description: Crea moduli perfetti, velocemente. ⚡ authoring basato su document
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 86%
+source-wordcount: '781'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Questi moduli inviano i dati direttamente a un file Microsoft Excel o Fogli Goog
 
 Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
-* Configura un progetto [AEM utilizzando AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [ha aggiunto il blocco Adaptive Forms al progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clona l&#39;archivio GitHub corrispondente nel computer locale.
+* Configura un [progetto AEM utilizzando AEM Forms standard](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [Blocco moduli adattivi aggiunto al progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clona l’archivio GitHub corrispondente sul computer locale.
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
 * Assicurati di avere accesso a Fogli Google o Microsoft SharePoint. Per impostare Microsoft SharePoint come origine di contenuto, vedi [Come usare SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
@@ -64,7 +64,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 Invece di navigare attraverso processi complessi, la creazione di un modulo può essere ottenuta facilmente utilizzando un foglio di calcolo. È possibile definire le righe e le colonne che costituiranno la struttura del modulo. Ogni riga rappresenta un singolo utente [campo modulo](/help/edge/docs/forms/form-components.md#available-components) e le intestazioni di colonna definiscono le corrispondenti [proprietà campo](/help/edge/docs/forms/form-components.md#components-properties).
 
-Ad esempio, considera il seguente foglio di calcolo in cui le righe dei campi struttura per un foglio di calcolo [interrogazione](/help/edge/assets/enquiry.xlsx) e le intestazioni di colonna definiscono le relative proprietà:
+Ad esempio, prendi in considerazione il seguente foglio di calcolo in cui le righe contornano i campi per un foglio di calcolo di [interrogazione](/help/edge/assets/enquiry.xlsx) e le intestazioni di colonna definiscono le relative proprietà:
 
 ![Foglio di calcolo di interrogazione](/help/edge/assets/enquiry-form-spreadsheet.png)
 
@@ -78,11 +78,11 @@ Per procedere con la creazione del modulo:
 
 1. Assicurati che il foglio sia condiviso con l’utente AEM appropriato (ad esempio `forms@adobe.com`) [in base alle configurazioni specificate per il progetto](https://www.aem.live/docs/setup-customer-sharepoint). Concedi all’utente l’autorizzazione di modifica per il foglio.
 
-1. Apri il foglio di calcolo creato e rinomina il foglio predefinito in &quot;shared-aem&quot;.
+1. Apri il foglio di calcolo creato e rinomina il foglio predefinito in “shared-aem”.
 
    ![rinominare il foglio predefinito in “shared-default”](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Per aggiungere i campi modulo, inserisci righe e intestazioni di colonna nel foglio &quot;shared-aem&quot;. Ogni riga deve rappresentare un [campo modulo](/help/edge/docs/forms/form-components.md#available-components), con intestazioni di colonna che definiscono il campo corrispondente [proprietà](/help/edge/docs/forms/form-components.md#components-properties).
+1. Per aggiungere i campi modulo, inserisci le righe e le intestazioni di colonna nel foglio “shared-aem”. Ogni riga deve rappresentare un [campo modulo](/help/edge/docs/forms/form-components.md#available-components), con intestazioni di colonna che definiscono il campo corrispondente [proprietà](/help/edge/docs/forms/form-components.md#components-properties).
 
 
    Per un avvio rapido, considera copiare il contenuto del [Foglio di calcolo interrogazione](/help/edge/assets/enquiry.xlsx) nel proprio foglio di calcolo. Dopo aver copiato il contenuto, salva il foglio di calcolo.
@@ -105,7 +105,7 @@ Per procedere con la creazione del modulo:
    * `<repository>` denota l’archivio GitHub.
    * `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
 
-   Ad esempio, se l’archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto l’account &quot;wkndform&quot; e stai utilizzando il ramo &quot;main&quot;, l’URL avrà un aspetto simile al seguente:
+   Ad esempio, se l’archivio del progetto è denominato “wefinance”, si trova sotto l’account “wkndform” e stai utilizzando il ramo “main”, l’URL avrà l’aspetto seguente:
 
 `https://main--wefinance--wkndform.aem.page/enquiry.json`
 &lt;!—(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
@@ -113,7 +113,7 @@ Per procedere con la creazione del modulo:
 
 +++
 
-+++ Passaggio 2: visualizzare in anteprima il modulo utilizzando la pagina Edge Delivery Services (EDS).
++++ Passaggio 2: visualizzare in anteprima il modulo utilizzando la pagina Edge Delivery Services.
 
 
 Finora è stata preparata la struttura del modulo. Ora, per visualizzare in anteprima il modulo:
@@ -122,7 +122,7 @@ Finora è stata preparata la struttura del modulo. Ora, per visualizzare in ante
 
 
 
-1. apri un file di documento (ad esempio un file index) per incorporare il modulo. In alternativa, è possibile [creare un nuovo documento](/help/edge/assets/enquiry-form.docx).
+1. apri un file di documento (ad esempio un file index) per incorporare il modulo. In alternativa, puoi [creare un nuovo documento](/help/edge/assets/enquiry-form.docx).
 
 1. Spostati nella posizione desiderata all’interno del documento in cui desideri aggiungere il modulo.
 

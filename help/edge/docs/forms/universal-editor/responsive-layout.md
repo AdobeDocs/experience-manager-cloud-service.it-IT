@@ -3,10 +3,11 @@ title: Informazioni su Universal Editor - Modalità reattiva
 description: Questo articolo spiega come visualizzare in anteprima i moduli utilizzando diversi emulatori nell’Editor universale per visualizzarne l’aspetto durante l’authoring.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
+source-git-commit: 8f5b4d863ab469c44b4c221eab1fb128706b45c7
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 1%
+source-wordcount: '865'
+ht-degree: 2%
 
 ---
 
@@ -66,6 +67,54 @@ Universal Editor fornisce emulatori diversi per l&#39;anteprima dei moduli su va
 </table>
 
 È possibile utilizzare l&#39;icona **Rotatore schermo** per alternare orientamento verticale e orientamento orizzontale durante l&#39;anteprima di un modulo su dispositivi diversi. Aiuta gli sviluppatori a testare il modo in cui la progettazione reattiva si adatta alle rotazioni dello schermo su vari dispositivi.
+
+Universal Editor supporta i vari layout di modulo. Per esplorare il layout diverso, consulta la sezione [Funzionalità di layout](#layout-capabilities).
+
+## Funzionalità di layout
+
+Universal Editor consente di creare moduli di facile utilizzo che offrono esperienze dinamiche agli utenti finali. Il layout del modulo controlla la modalità di visualizzazione degli elementi o dei componenti in un modulo.
+
+Universal Editor supporta i seguenti tipi di layout per i moduli:
+* [Layout pannello](#panel-layout)
+* [Layout procedura guidata](#wizard-layout)
+* [Layout Accordion](#accordion-layout)
+
+### Layout pannello
+
+Il layout del pannello è utile per organizzare i campi correlati in modo da semplificare la navigazione e la ricerca del contenuto corrispondente. Il layout del pannello dispone i componenti del modulo all’interno di sezioni o pannelli distinti nei moduli.
+
+![Layout pannello](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
+
+È possibile utilizzare il [componente pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) per aggiungere il layout del pannello in un modulo. Per istruzioni dettagliate su come configurare varie proprietà del componente Pannello, consulta l&#39;articolo [componente Pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+
+### Layout procedura guidata
+
+
+Il layout della procedura guidata semplifica un modulo complesso suddividendolo in passaggi distinti. Ogni passaggio rappresenta una parte diversa del processo e gli utenti si spostano in sequenza, spesso con i pulsanti **Successivo** e **Indietro**. È possibile utilizzare il layout della procedura guidata per creare un modulo che comprenda più sezioni o passaggi.
+
+![Layout guidato](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
+
+È possibile utilizzare il [componente procedura guidata](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) per aggiungere il layout della procedura guidata in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente della procedura guidata, fare riferimento all&#39;articolo [componente della procedura guidata](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+
+### Layout Accordion
+
+Il layout del Pannello a soffietto mostra il contenuto in sezioni o pannelli comprimibili in un Modulo adattivo. Quando una sezione viene espansa, il contenuto viene visualizzato all’interno di, mentre le altre sezioni rimangono compresse. Questo layout è ideale per visualizzare grandi quantità di informazioni in un formato compatto.
+
+![Layout Accordion](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
+
+È possibile utilizzare il [componente Pannello a soffietto](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) per aggiungere il layout Pannello a soffietto in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente Pannello a soffietto, consulta l&#39;articolo [Componente Pannello a soffietto](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+
+### Come scegliere il layout giusto?
+
+È importante selezionare il layout giusto per ottimizzare l’esperienza utente e la funzionalità dei moduli. La tabella ti aiuta a comprendere le diverse opzioni di layout disponibili e ti guida nella selezione del layout più adatto in base alle tue esigenze e ai tuoi casi d’uso specifici:
+
+| Funzione obsoleta | Layout pannello | Layout procedura guidata | Layout Accordion |
+|----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+| **Scopo** | Raggruppa il contenuto correlato in sezioni distinte | Guida gli utenti attraverso un processo o un modulo in più fasi | Organizza il contenuto in sezioni comprimibili |
+| **Struttura** | Sezioni distinte | Passaggi/pagine sequenziali | Pannelli/sezioni comprimibili |
+| **Navigazione** | Fai clic sulle intestazioni del pannello per navigare | - Avanti: pulsante &quot;Avanti&quot;<br>- Indietro: pulsante &quot;Indietro&quot;<br>- Passaggi facoltativi ignorati | Fai clic sulle intestazioni per espandere/comprimere le sezioni |
+| **Esperienza utente** | Organizza grandi quantità di contenuti in modo gestibile | Guida passo passo, riduzione del sovraccarico | Vista compatta con sezioni espanse/compresse |
+| **Caso d’uso** | Moduli complessi con sezioni suddivise in categorie | Processi di configurazione, moduli complessi | Domande frequenti, menu delle impostazioni e sezioni del contenuto dettagliato |
 
 ## Consulta anche
 
