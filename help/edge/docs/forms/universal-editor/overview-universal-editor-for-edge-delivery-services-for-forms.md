@@ -3,13 +3,11 @@ title: Editor universale per Edge Delivery Services per Forms
 description: Utilizza Universal Editor for Edge Delivery Services for Forms per creare un Forms adattivo.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 71%
+source-wordcount: '1087'
+ht-degree: 69%
 
 ---
 
@@ -47,14 +45,14 @@ Ecco il layout con schede a larghezza uguale (utilizzando colonne a larghezza fi
 | [**Stile**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **Servizi Precompilati** (Disponibile A Breve) | [**Test A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | Lo stile con CSS consente agli sviluppatori di personalizzare l’aspetto degli elementi del modulo e di creare un design visivamente accattivante che sia allineato all’estetica del sito web. | I servizi di precompilazione compilano automaticamente i campi del modulo con i dati utente pertinenti provenienti da varie origini, riducendo l’input manuale e migliorando l’esperienza utente. | Il test A/B consente alle organizzazioni di sperimentare diverse progettazioni di moduli, layout e funzionalità per identificare le varianti con le prestazioni migliori. |
 
-| ![Analisi e monitoraggio](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Gestione attività](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![Associazione dati](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+| ![Analisi e monitoraggio](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Frammenti modulo](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Associazione dati](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Analisi e monitoraggio**](https://www.aem.live/developer/martech-integration) | **Gestione attività** (disponibile a breve) | **Associazione dati** (disponibile a breve) |
-| Con le funzionalità di analisi e tracciamento integrate puoi ottenere informazioni sul comportamento degli utenti, sulle interazioni con i moduli e sui tassi di invio, per l’ottimizzazione dei moduli basata sui dati. | L’integrazione con Adobe Workfront consente ai team di gestire le attività di creazione e manutenzione dei moduli, garantendo flussi di lavoro più semplici e diretti. | L&#39;associazione dati consente connessioni dirette tra campi modulo e origini dati back-end, supportando aggiornamenti in tempo reale e mappatura avanzata dei dati. |
+| [**Analisi e monitoraggio**](https://www.aem.live/developer/martech-integration) | **Frammenti modulo** (disponibile a breve) | **Associazione dati** (disponibile a breve) |
+| Con le funzionalità di analisi e tracciamento integrate puoi ottenere informazioni sul comportamento degli utenti, sulle interazioni con i moduli e sui tassi di invio, per l’ottimizzazione dei moduli basata sui dati. | I frammenti di modulo consentono la riutilizzabilità consentendo la creazione di sezioni di uso comune una sola volta e il riutilizzo in più moduli, garantendo coerenza e riducendo il carico di manutenzione. | L&#39;associazione dati consente connessioni dirette tra campi modulo e origini dati back-end, supportando aggiornamenti in tempo reale e mappatura avanzata dei dati. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Incorporazione di Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Configurazione ringraziamenti](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Incorporazione di Forms** | [**Configurazione ringraziamenti**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Incorporazione di Forms** (disponibile a breve) | [**Configurazione ringraziamenti**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | Utilizza reCAPTCHA per proteggere i moduli dai bot automatizzati, garantendo una raccolta dati sicura e affidabile. | Incorpora i moduli direttamente nelle pagine di Edge Delivery Services Sites utilizzando il componente incorporato di Universal Editor. | Personalizza facilmente il messaggio di ringraziamento o la pagina mostrata agli utenti dopo l’invio corretto del modulo. |
 
 
