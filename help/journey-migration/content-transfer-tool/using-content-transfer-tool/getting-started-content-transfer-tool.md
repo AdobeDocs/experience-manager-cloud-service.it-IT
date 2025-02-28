@@ -4,10 +4,10 @@ description: Scopri come iniziare a utilizzare lo strumento Content Transfer (Tr
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: d8730109f5cd7dab44f535b1de008ae09811f221
+source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 16%
+source-wordcount: '1572'
+ht-degree: 14%
 
 ---
 
@@ -131,26 +131,49 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, installa
    >
    >Assicurati che la chiave di estrazione sia valida e non vicina alla scadenza. Puoi ottenere queste informazioni nella finestra di dialogo **Crea set di migrazione** dopo aver incollato la chiave di estrazione. Se si verifica un errore di connessione, vedere [Connettività ambiente Source](#source-environment-connectivity) per ulteriori informazioni.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/createMigrationSet.png)
 
 1. Quindi, seleziona i seguenti parametri per creare un set di migrazione:
 
    1. **Includi versione**: seleziona in base alle esigenze. Quando sono incluse le versioni, il percorso `/var/audit` viene incluso automaticamente per migrare gli eventi di controllo.
 
-      ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
+      ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/includeVersion.png)
 
       >[!NOTE]
       >Se si desidera includere le versioni come parte di un set di migrazione e si stanno eseguendo integrazioni con `wipe=false`, è necessario disabilitare la rimozione delle versioni a causa di una limitazione corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione delle versioni e stai eseguendo integrazioni in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
 
+      >[!NOTE]
+      >A partire dalla versione CTT (3.0.24), sono state incluse nuove funzioni nello strumento Content Transfer (Trasferimento contenuti), che migliorano il processo di inclusione e esclusione dei percorsi. In precedenza, i percorsi dovevano essere selezionati singolarmente, operazione noiosa e dispendiosa in termini di tempo. Ora gli utenti possono includere percorsi direttamente dall’interfaccia utente o caricare un file CSV in base alle loro preferenze.
 
-   1. **Percorsi da includere**: utilizzare il browser percorsi per selezionare i percorsi da migrare. Il selettore di percorsi accetta l’input digitando o selezionando.
-
+   1. **Percorsi da includere**: utilizzare il browser percorsi per selezionare i percorsi da migrare. Il selettore di percorsi accetta l’input digitando o selezionando. Gli utenti possono selezionare una sola opzione per l’inclusione dei percorsi: dall’interfaccia utente o caricando un file CSV.
       >[!IMPORTANT]
       >Durante la creazione di un set di migrazione, i percorsi seguenti sono soggetti a restrizioni:
       >* `/apps`
       >* `/libs`
       >* `/home`
       >* `/etc` (alcuni percorsi `/etc` possono essere selezionati in CTT)
+
+      ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/includeAndExcludePath.png)
+
+      1. È consentita solo la selezione del percorso e deve essere presente almeno un percorso. Se non viene selezionato alcun percorso, si verificherà un errore del server.
+
+         ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ServerError.png)
+
+      1. Quando si utilizza l&#39;opzione di caricamento **CSV**, il file CSV deve contenere percorsi validi.
+
+         ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/validCsvUpload.png)
+
+      1. Per tornare al selettore dei percorsi, gli utenti devono aggiornare la pagina e ricominciare.
+
+      1. Se nel file CSV caricato vengono trovati **percorsi non validi**, in una finestra di dialogo separata verranno visualizzati i percorsi non validi.
+
+         ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/invalidPathsInCsv.png)
+
+      1. Gli utenti devono correggere il file CSV e caricarlo nuovamente oppure aggiornare l’interfaccia utente per selezionare i percorsi tramite il selettore dei percorsi.
+
+   1. **Percorsi da escludere**: una nuova funzionalità consente agli utenti di escludere percorsi specifici se non desiderano includerli. Ad esempio, se il percorso nella sezione include è /content/dam, gli utenti possono ora escludere percorsi come /content/dam/catalogs.
+
+      ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/excludePathHighlighted.png)
 
 1. Fai clic su **Salva** dopo aver compilato tutti i campi nella schermata dei dettagli **Crea set di migrazione**.
 
@@ -184,7 +207,7 @@ Per eseguire un controllo delle dimensioni, attenersi alla procedura descritta d
 
 1. Verrà aperta la finestra di dialogo **Verifica dimensioni**.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/checkMigrationSetSize.png)
 
 1. Fare clic su **Verifica dimensioni** per avviare il processo. Si tornerà quindi alla visualizzazione elenco dei set di migrazione e si dovrebbe visualizzare un messaggio che indica che **Verifica dimensione** è in esecuzione.
 
@@ -192,7 +215,7 @@ Per eseguire un controllo delle dimensioni, attenersi alla procedura descritta d
 
 1. Al termine del processo di **Verifica dimensioni**, lo stato diventa **COMPLETATO**. Selezionare lo stesso set di migrazione e fare clic su **Verifica dimensioni** per visualizzare i risultati. Di seguito è riportato un esempio di **risultati del controllo dimensioni** senza avvisi.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/checkSizeAfterFinished.png)
 
 1. Se i risultati del controllo di **Dimensione** indicano che lo spazio su disco è insufficiente o che il set di migrazione supera i limiti del prodotto o entrambi, verrà visualizzato uno stato **AVVISO**.
 

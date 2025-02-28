@@ -4,10 +4,10 @@ description: Scopri come utilizzare Best Practices Analyzer per comprendere lo s
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 38%
+source-wordcount: '2796'
+ht-degree: 37%
 
 ---
 
@@ -27,10 +27,10 @@ La sezione seguente per contiene considerazioni importanti sull’esecuzione di 
 
 * BPA può essere eseguito solo dall&#39;utente **admin** o da un utente del gruppo **amministratori**.
 
-* BPA è supportato sulle istanze AEM con versione 6.1 e successive.
+* BPA è supportato nelle istanze di AEM con versione 6.1 e successive.
 
   >[!NOTE]
-  >Vedere [Installazione su AEM 6.1](#installing-on-aem61) per i requisiti speciali per l&#39;installazione di BPA su AEM 6.1.
+  >Per i requisiti speciali per l&#39;installazione di BPA in AEM 6.1, vedere [Installazione in AEM 6.1](#installing-on-aem61).
 
 * BPA può essere eseguito in qualsiasi ambiente, ma è preferibile eseguirlo in un ambiente *Stage*.
 
@@ -55,7 +55,7 @@ Best Practices Analyzer può essere scaricato come file zip dal portale di distr
 
 ## Connettività dell’ambiente Source {#source-environment-connectivity}
 
-L’istanza AEM di origine potrebbe essere in esecuzione dietro un firewall e raggiungere solo alcuni host aggiunti a un Elenco consentiti. Per caricare automaticamente in Cloud Acceleration Manager il rapporto generato da BPA, è necessario che i seguenti endpoint siano accessibili dall’istanza che esegue l’AEM:
+L’istanza AEM di origine potrebbe essere in esecuzione dietro un firewall e raggiungere solo alcuni host aggiunti a un Elenco consentiti. Per caricare automaticamente in Cloud Acceleration Manager il rapporto generato da BPA, i seguenti endpoint devono essere accessibili dall’istanza che esegue AEM:
 
 * Servizio di archiviazione BLOB di Azure: `casstorageprod.blob.core.windows.net`
 
@@ -78,6 +78,20 @@ Segui questa sezione per scoprire come visualizzare il rapporto Best Practices A
 1. Fai clic su **Genera report** per eseguire Best Practices Analyzer.
 
    ![Genera report](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+
+>[!NOTE]
+> A partire dalla versione 2.1.54 di BPA, è stata introdotta una nuova funzione per ottenere il punteggio Lighthouse.
+1. Dopo aver fatto clic su **Genera report**, verrà visualizzato un pop-up con la richiesta dell&#39;URL del sito pubblico AEM per il punteggio Lighthouse. L’utente deve immettere un URL valido nel campo fornito.
+
+   ![immagine](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
+
+   1. Se l’URL è valido, verrà visualizzato un messaggio di successo.
+
+      ![immagine](/help/journey-migration/best-practices-analyzer/assets/valid_url.png)
+
+   1. Se l’URL non è valido, viene visualizzato un messaggio di errore.
+
+      ![immagine](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
 
 1. Fornisci la chiave di caricamento BPA per caricare automaticamente il report BPA generato in [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Per ottenere la chiave di caricamento, passa a [Analisi delle best practice in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
@@ -153,7 +167,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=it#analysis-report" text="Analisi del rapporto di Best Practices Analyzer"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=it" text="Categorie del rapporto di Best Practices Analyzer"
 
-Quando lo strumento Best Practices Analyzer viene eseguito nell’istanza AEM, il rapporto viene visualizzato come risultati nella finestra dello strumento.
+Quando lo strumento Best Practices Analyzer viene eseguito nell’istanza di AEM, il rapporto viene visualizzato come risultati nella finestra dello strumento.
 
 Il rapporto si presenta con questo formato:
 
@@ -181,7 +195,7 @@ La tabella seguente descrive i livelli di importanza:
 
 ## Interpretazione del rapporto CSV di Best Practices Analyzer {#cra-csv-report}
 
-Quando fai clic sull&#39;opzione **CSV** nell&#39;istanza dell&#39;AEM, il rapporto Best Practices Analyzer in formato CSV viene creato dalla cache del contenuto e restituito al browser. A seconda delle impostazioni del browser, il report viene scaricato automaticamente come file con il nome predefinito `results.csv`.
+Quando fai clic sull&#39;opzione **CSV** nell&#39;istanza di AEM, il rapporto Best Practices Analyzer in formato CSV viene creato dalla cache del contenuto e restituito al browser. A seconda delle impostazioni del browser, il report viene scaricato automaticamente come file con il nome predefinito `results.csv`.
 
 Se la cache è scaduta, il rapporto viene rigenerato prima che il file CSV venga generato e scaricato.
 
@@ -203,7 +217,7 @@ Un valore “\N” in una colonna di un singolo risultato indica che non sono st
 
 ## Interfaccia HTTP {#http-interface}
 
-Il BPA fornisce un’interfaccia HTTP che può essere utilizzata come alternativa alla sua interfaccia utente nell’ambito dell’AEM. L’interfaccia supporta sia i comandi HEAD che GET. Può essere utilizzato per generare il rapporto BPA e restituirlo in uno dei tre formati seguenti: JSON, CSV e valori delimitati da tabulazioni (TSV).
+Il BPA fornisce un’interfaccia HTTP che può essere utilizzata come alternativa all’interfaccia utente all’interno di AEM. L’interfaccia supporta sia i comandi HEAD che GET. Può essere utilizzato per generare il rapporto BPA e restituirlo in uno dei tre formati seguenti: JSON, CSV e valori delimitati da tabulazioni (TSV).
 
 I seguenti URL sono disponibili per l&#39;accesso HTTP, dove `<host>` è il nome host, e se necessario la porta, del server in cui è installato BPA:
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` per il formato JSON
@@ -242,7 +256,7 @@ Se sono presenti sia un’intestazione HTTP che il parametro di query corrispond
 Un modo semplice per avviare la generazione del rapporto tramite l’interfaccia HTTP è l’utilizzo del seguente comando:
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`.
 
-Una volta effettuata la richiesta, non c’è bisogno che il client rimanga attivo affinché venga generato il rapporto. La generazione del rapporto può essere avviata con un client utilizzando una richiesta HTTP GET e, una volta generato, può essere visualizzato dalla cache con un altro client o con lo strumento BPA nell’interfaccia utente AEM.
+Una volta effettuata la richiesta, non c’è bisogno che il client rimanga attivo affinché venga generato il rapporto. La generazione del rapporto può essere avviata con un client utilizzando una richiesta HTTP GET e, una volta generato, può essere visualizzato dalla cache con un altro client o con lo strumento BPA nell’interfaccia utente di AEM.
 
 ### Risposte {#http-responses}
 
@@ -259,16 +273,16 @@ Sono possibili i seguenti valori di risposta:
 
 ### Regolazione durata cache {#cache-adjustment}
 
-La durata predefinita della cache BPA è di 24 ore. Con l’opzione per aggiornare un rapporto e rigenerare la cache, sia nell’istanza AEM che nell’interfaccia HTTP, questo valore predefinito è probabilmente appropriato per la maggior parte degli usi del BPA. Se il tempo di generazione del rapporto è particolarmente lungo per la tua istanza AEM, puoi regolare la durata della cache per ridurre al minimo la rigenerazione del rapporto.
+La durata predefinita della cache BPA è di 24 ore. Con l’opzione per aggiornare un rapporto e rigenerare la cache, sia nell’istanza di AEM che nell’interfaccia HTTP, questo valore predefinito è probabilmente appropriato per la maggior parte degli usi del BPA. Se il tempo di generazione del rapporto è particolarmente lungo per l’istanza di AEM, è possibile regolare la durata della cache per ridurre al minimo la rigenerazione del rapporto.
 
 Il valore della durata della cache viene memorizzato come la proprietà `maxCacheAge` nel seguente nodo di archivio:
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
 
 Il valore di questa proprietà corrisponde alla durata della cache, in secondi. Un amministratore può regolare la durata della cache utilizzando CRX/DE Lite.
 
-### Installazione su AEM 6.1 {#installing-on-aem61}
+### Installazione in AEM 6.1 {#installing-on-aem61}
 
-BPA utilizza un account utente del servizio di sistema denominato `repository-reader-service` per eseguire il rilevatore pattern. Questo account è disponibile in AEM 6.2 e versioni successive. In AEM 6.1, l&#39;account deve essere creato *prima* dell&#39;installazione di BPA eseguendo le operazioni seguenti:
+BPA utilizza un account utente del servizio di sistema denominato `repository-reader-service` per eseguire il rilevatore pattern. Questo account è disponibile in AEM 6.2 e versioni successive. In AEM 6.1, l&#39;account deve essere creato *prima dell&#39;installazione di* di BPA, eseguendo la procedura seguente:
 
 1. Per creare un utente segui le istruzioni in [Creazione di un nuovo utente di servizio](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user). Imposta UserID su `repository-reader-service` e lascia vuoto il Percorso intermedio, quindi fai clic sul segno di spunta verde.
 

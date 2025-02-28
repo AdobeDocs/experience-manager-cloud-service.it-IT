@@ -4,7 +4,7 @@ description: Visualizzazione dei registri di un set di migrazione nello strument
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 36%
@@ -33,7 +33,7 @@ Quindi, segui i passaggi seguenti:
 
 1. Seleziona un set di migrazione e fai clic su **Visualizza registro** nella barra delle azioni. Viene visualizzata la finestra di dialogo Registri. Fai clic su **Registro estrazione** per visualizzare i registri in una nuova scheda.
 
-   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+   ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/logs.png) \
    Oppure fai clic sullo stato **FINISHED** per visualizzare i registri in una nuova scheda.
 
 1. Per visualizzare i registri senza utilizzare l’interfaccia utente, puoi accedere all’ambiente AEM sorgente tramite SSH e visualizzare il `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
