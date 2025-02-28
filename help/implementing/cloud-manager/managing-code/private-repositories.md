@@ -4,16 +4,16 @@ description: Scopri come configurare Cloud Manager per l’utilizzo di archivi G
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2fa4abca9823bbc62900023d637429f3fbfd894d
+source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
 workflow-type: tm+mt
 source-wordcount: '930'
-ht-degree: 34%
+ht-degree: 39%
 
 ---
 
 # Aggiungere un archivio GitHub privato in Cloud Manager {#private-repositories}
 
-Configurando Cloud Manager per l’integrazione con gli archivi GitHub privati, puoi convalidare il codice direttamente all’interno di GitHub utilizzando Cloud Manager. Questa configurazione elimina la necessità di sincronizzare regolarmente il codice con l’archivio di Adobi.
+Configurando Cloud Manager per l’integrazione con gli archivi GitHub privati, puoi convalidare il codice direttamente all’interno di GitHub utilizzando Cloud Manager. Questa configurazione elimina la necessità di sincronizzare regolarmente il codice con l’archivio Adobe.
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -44,11 +44,11 @@ La configurazione di un archivio GitHub privato in Cloud Manager consiste di due
 
 1. Nella console **[Programmi personali](/help/implementing/cloud-manager/navigation.md#my-programs)** selezionare il programma a cui si desidera collegare un archivio Git privato.
 
-1. Nel menu laterale, in **Servizi**, seleziona ![Icona cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Archivi**.
+1. Nel menu laterale, in **Servizi**, seleziona l’![icona della cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Archivi**.
 
    ![Pagina Archivi](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
 
-1. Nell&#39;angolo superiore destro della pagina **Archivi** fare clic su **Aggiungi archivio**.
+1. Nell’angolo superiore a destra della pagina **Archivi** fai clic su **Aggiungi archivio**.
 
 1. Nella finestra di dialogo **Aggiungi archivio**, seleziona **Archivio privato** come tipo di archivio.
 
@@ -112,7 +112,7 @@ Se in un secondo momento dovrai tornare all&#39;archivio per completare la conva
 
 Dopo la convalida dell’archivio GitHub in Cloud Manager, l’integrazione è completa. Puoi utilizzare l’archivio con Cloud Manager.
 
-**Per utilizzare archivi privati con Cloud Manager:**
+**Per utilizzare gli archivi privati con Cloud Manager:**
 
 1. Quando crei una richiesta pull, viene avviata automaticamente una verifica GitHub.
 
@@ -148,8 +148,8 @@ Quando si utilizzano archivi privati con Cloud Manager si applicano determinate 
 
 * Le pipeline a livello web e di configurazione non sono supportate con gli archivi privati.
 * Quando si utilizzano archivi privati su pipeline di produzione full stack, non viene creato e né inviato alcun tag Git.
-* Se l’app GitHub di Adobe viene rimossa dall’organizzazione GitHub, rimuove la funzione di convalida delle richieste pull per tutti gli archivi.
-* Le pipeline che utilizzano archivi privati e il trigger di creazione su conferma non vengono avviate automaticamente quando viene eseguito il push di una nuova conferma nel ramo selezionato.
+* Se l’app GitHub Adobe viene rimossa dall’organizzazione GitHub, rimuove la funzione di convalida delle richieste pull per tutti gli archivi.
+* Le pipeline che utilizzano archivi privati e il trigger di build &quot;on-commit&quot; non vengono avviati automaticamente quando viene eseguito il push di un nuovo commit nel ramo selezionato.
 * La [funzionalità di riutilizzo degli artefatti](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) non si applica agli archivi privati.
 * Non è possibile sospendere la convalida della richiesta di pull utilizzando il controllo GitHub di Cloud Manager.
 Se l’archivio GitHub viene convalidato in Cloud Manager, Cloud Manager tenta sempre di convalidare le richieste pull create per tale archivio.

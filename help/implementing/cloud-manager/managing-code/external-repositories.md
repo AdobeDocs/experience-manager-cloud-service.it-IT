@@ -4,10 +4,10 @@ description: Scopri come aggiungere un archivio esterno in Cloud Manager. Cloud 
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
+source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 91%
+source-wordcount: '763'
+ht-degree: 87%
 
 ---
 
@@ -50,7 +50,7 @@ La configurazione di un archivio esterno in Cloud Manager avviene in tre passagg
    | --- | --- |
    | **Nome dell’archivio** | Obbligatorio. Un nome espressivo per il nuovo archivio. |
    | **URL dell’archivio** | Obbligatorio. L’URL dell’archivio.<br><br>Se utilizzi un archivio ospitato da GitHub, il percorso deve terminare in `.git`.<br>Ad esempio, *`https://github.com/org-name/repo-name.git`* (il percorso URL è solo a scopo illustrativo).<br><br>Per gli archivi esterni, è necessario utilizzare il seguente formato di percorso URL: <br>`https://git-vendor-name.com/org-name/repo-name.git`<br> o <br>`https://self-hosted-domain/org-name/repo-name.git`<br> e il fornitore Git corrispondente. |
-   | S **Seleziona tipo di archivio** | Obbligatorio. Seleziona il tipo di archivio in uso: **GitHub**, **GitLab** o **BitBucket**. Se il percorso URL dell’archivio precedente include il nome del fornitore Git, ad esempio GitLab o Bitbucket, il tipo di archivio è già preselezionato. |
+   | **Seleziona il tipo di archivio** | Obbligatorio. Seleziona il tipo di archivio in uso: **GitHub**, **GitLab** o **BitBucket**. Se il percorso URL dell’archivio precedente include il nome del fornitore Git, ad esempio GitLab o Bitbucket, il tipo di archivio è già preselezionato. |
    | **Descrizione** | Facoltativo. Descrizione dettagliata dell’archivio. |
 
 1. Seleziona **Salva** per aggiungere l’archivio.
@@ -64,7 +64,7 @@ La configurazione di un archivio esterno in Cloud Manager avviene in tre passagg
    | --- | --- |
    | **Usa token di accesso esistente** | Se hai già fornito un token di accesso all’archivio per la tua organizzazione e hai accesso a più archivi, puoi selezionare un token esistente. Utilizza l’elenco a discesa **Nome token** per scegliere il token da applicare all’archivio. In caso contrario, aggiungi un nuovo token di accesso. |
    | **Aggiungere un nuovo token di accesso** | **Tipo di archivio: GitHub**<br>• Nel campo di testo **Nome token**, digita il nome da assegnare al token di accesso che vuoi creare.<br>• Crea un token di accesso personale seguendo le istruzioni riportate nella [documentazione GitHub](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<br>• Autorizzazioni richieste:<br> • `Read access to metadata`.<br> • `Read and write access to code and pull requests`.<br>• Incolla il token appena creato nel campo **Token di accesso**. |
-   |  | **Tipo di archivio: GitLab**<br>• Nel campo di testo **Nome token**, digita il nome da assegnare al token di accesso che vuoi creare.<br>• Crea un token di accesso personale seguendo le istruzioni riportate nella [documentazione GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html).<br>• Autorizzazioni richieste:<br> • `api`<br> • `read_api`<br> • `read_repository`<br> • `write_repository`<br>• Incolla il token appena creato nel campo **Token di accesso**. |
+   |  | **Tipo di archivio: GitLab**<br>• Nel campo di testo **Nome token**, digita il nome da assegnare al token di accesso che vuoi creare.<br>• Crea un token di accesso personale seguendo le istruzioni riportate nella [documentazione GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<br>• Autorizzazioni richieste:<br> • `api`<br> • `read_api`<br> • `read_repository`<br> • `write_repository`<br>• Incolla il token appena creato nel campo **Token di accesso**. |
    |  | **Tipo di archivio: Bitbucket**<br> • Nel campo di testo **Nome token**, digita il nome da assegnare al token di accesso che vuoi creare.<br>• Crea un token di accesso all&#39;archivio utilizzando la [documentazione Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>• Autorizzazioni richieste:<br> • `Read and write access to code and pull requests`. |
 
    >[!NOTE]
@@ -99,7 +99,9 @@ Dopo la convalida, l’archivio esterno è pronto per essere utilizzato e colleg
 
 ## Limitazioni
 
-Gli archivi esterni non possono essere collegati alle pipeline di configurazione.
+* Gli archivi esterni non possono essere collegati alle pipeline di configurazione.
+* Le pipeline con archivi esterni (non ospitati su GitHub) e il trigger &quot;On Git Changes&quot; (In caso di modifiche Git) non si avviano automaticamente. Possono essere avviati solo manualmente.
+
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
