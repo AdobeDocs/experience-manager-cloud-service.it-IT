@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fced4707e781242132a018d28d4dd121960469eb
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1410'
 ht-degree: 22%
 
 ---
@@ -177,6 +177,14 @@ I componenti vengono riordinati sia nella struttura del contenuto che nell’edi
 >[!NOTE]
 >
 >Impossibile spostare i componenti tra contenitori se è impostato un filtro [componente](/help/implementing/universal-editor/filtering.md) diverso tra i contenitori di origine e di destinazione.
+
+### Creare varianti utilizzando GenAI con Genera varianti {#generate-variations-ai}
+
+Utilizza le varianti generative per sfruttare l’intelligenza artificiale generativa per accelerare la creazione dei contenuti.
+
+Apri l’editor universale per trovare il punto di ingresso per generare varianti.
+
+Per ulteriori informazioni, consulta [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md).
 
 ## Anteprima del contenuto {#previewing-content}
 
