@@ -4,9 +4,9 @@ description: Scopri come configurare Cloud Manager per l’utilizzo di archivi G
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
+source-git-commit: 7097ec755ff41d5440de62a757bf036ae336de67
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '940'
 ht-degree: 39%
 
 ---
@@ -38,6 +38,9 @@ La configurazione di un archivio GitHub privato in Cloud Manager consiste di due
 1. [Aggiungere un archivio GitHub privato](#add-repo) a un programma selezionato.
 1. Quindi, [convalida la proprietà dell&#39;archivio GitHub privato](#validate-ownership).
 
+>[!NOTE]
+>Cloud Manager supporta solo archivi privati su GitHub Cloud (github.com). <!-- As per request in https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+-+Pull+Request+validator+for+multiple+vendors -->
+
 ### Aggiungere un archivio GitHub privato a un programma {#add-repo}
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
@@ -68,7 +71,6 @@ Ora puoi [convalidare la proprietà dell&#39;archivio privato](#validate-ownersh
 >[!TIP]
 >
 >Per informazioni dettagliate sulla gestione degli archivi in Cloud Manager, consulta [Archivi di Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
-
 
 
 ### Convalidare la proprietà di un archivio GitHub privato {#validate-ownership}
