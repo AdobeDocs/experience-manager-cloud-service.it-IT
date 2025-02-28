@@ -4,10 +4,10 @@ description: Note sulla versione per generare varianti, accessibili da AEM as a 
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '218'
-ht-degree: 100%
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,19 @@ Questa pagina documenta le note sulla versione per generare varianti, accessibil
 
 ## Caratteristiche principali della versione {#release-highlights}
 
-La versione corrente è la 2.2.0.
+La versione corrente è la 3.0.0.
+
+### 3,0,0 {#release-notes-3-0-0}
+
+Puoi [accedere a Genera varianti](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) dai seguenti editor ([una volta configurati](#access-generate-variations)):
+
+* [all’interno del Sidekick di AEM Edge Delivery Services; per l’authoring basato su documenti](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [nell’Editor universale](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
+* [all’interno dell’editor di frammenti di contenuto](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
+
+>[!NOTE]
+>
+>È comunque possibile accedere direttamente alla versione precedente di [Genera varianti](/help/generative-ai/generate-variations.md).
 
 ### 2.2.0 {#release-notes-2-2-0}
 

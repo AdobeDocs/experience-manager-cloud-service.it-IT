@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
 workflow-type: tm+mt
-source-wordcount: '2851'
-ht-degree: 6%
+source-wordcount: '2657'
+ht-degree: 7%
 
 ---
 
@@ -33,7 +33,7 @@ Questo editor fornisce:
 * [Caricamento in linea delle risorse come riferimenti di contenuto](#reference-images), senza doverle caricare prima in Asset DAM.
 * [Genera varianti](#generate-variations-ai) per utilizzare l&#39;intelligenza artificiale generativa per accelerare la creazione dei contenuti in base alle richieste.
 * [Anteprima](#preview-content-fragment) dell&#39;esperienza con rendering distribuita dal frammento di contenuto.
-* Possibilità di [Publish](#publish-content-fragment) e [Annullare la pubblicazione](#unpublish-content-fragment) dall&#39;editor.
+* Possibilità di [pubblicare](#publish-content-fragment) e [annullare la pubblicazione](#unpublish-content-fragment) dall&#39;editor.
 * Possibilità di [visualizzare e aprire le copie per lingua associate](#view-language-copies) nell&#39;editor.
 * Possibilità di [visualizzare i dettagli della versione](#view-version-history) nell&#39;editor. Puoi anche ripristinare una versione selezionata.
 * Possibilità di [visualizzare e aprire i riferimenti principali](#view-parent-references).
@@ -41,7 +41,7 @@ Questo editor fornisce:
 
 >[!WARNING]
 >
->L&#39;editor descritto in questa sezione è *only* disponibile nell&#39;as a Cloud Service *online* Adobe Experience Manager (AEM).
+>L&#39;editor descritto in questa sezione è *only* disponibile nell&#39;as a Cloud Service di *online* Adobe Experience Manager (AEM).
 
 ## Editor frammento di contenuto {#content-fragment-editor}
 
@@ -51,7 +51,7 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
    * Collegamento alla Console Frammenti di contenuto (icona Home)
    * Informazioni sul modello e sulla cartella
    * collegamenti a [Anteprima (se per il modello è configurato il modello URL di anteprima predefinito)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-   * [Publish](#publish-content-fragment) e [Annulla pubblicazione](#unpublish-content-fragment) azioni
+   * [Pubblica](#publish-content-fragment) e [Annulla pubblicazione](#unpublish-content-fragment) azioni
    * Opzione per mostrare tutti i **Riferimenti padre** (icona collegamento)
    * **[Stato](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** del frammento e le ultime informazioni salvate
    * Pulsante per passare all’editor originale (basato su Assets)
@@ -95,7 +95,7 @@ Nel pannello a sinistra puoi vedere:
 
 * l&#39;elenco di **[Varianti](#variations)** create per questo frammento:
    * **Principale** è la variante presente al momento della creazione del frammento di contenuto. Puoi aggiungerne altre in un secondo momento
-   * Puoi utilizzare Genera varianti (#generate-variations) per utilizzare un modello basato su prompt creato da Adobe per un caso d’uso specifico.
+   * puoi utilizzare Genera varianti (#generate-variations) per utilizzare un modello basato su prompt creato da Adobe per un caso d’uso specifico.
    * puoi anche [creare una variante](#create-variation)
 * **Campi** all&#39;interno del frammento e relative varianti:
    * l&#39;icona indica il [Tipo di dati](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -126,7 +126,7 @@ Con ogni aggiornamento effettuato, il frammento di contenuto viene salvato autom
 
 ## Varianti {#variations}
 
-[Le varianti](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) sono una caratteristica importante dei frammenti di contenuto dell&#39;AEM. Consentono di creare e modificare copie del contenuto **Principale** da utilizzare su canali e scenari specifici, rendendo ancora più flessibile la distribuzione di contenuti headless e l&#39;authoring delle pagine.
+[Le varianti](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) sono una caratteristica significativa dei frammenti di contenuto di AEM. Consentono di creare e modificare copie del contenuto **Principale** da utilizzare su canali e scenari specifici, rendendo ancora più flessibile la distribuzione di contenuti headless e l&#39;authoring delle pagine.
 
 Dall’editor è possibile:
 
@@ -174,40 +174,9 @@ Per rinominare una **variante**:
 
 Utilizza le varianti generative per sfruttare l’intelligenza artificiale generativa per accelerare la creazione dei contenuti.
 
-Per utilizzare le Varianti generative nell’Editor frammento di contenuto:
+Apri l’Editor frammento di contenuto per trovare il punto di ingresso per Generare varianti.
 
-1. Apri l’Editor frammento di contenuto. Nell’intestazione troverai il punto di ingresso per Generare varianti:
-
-   ![Genera varianti nell&#39;editor frammenti di contenuto](assets/cfm-generate-variations1.png)
-
-1. Genera varianti si apre in una nuova scheda. Nella barra a sinistra puoi vedere l’istanza di AEM Cloud e il Frammento di contenuto per cui stai creando i contenuti. Selezionare il prompt da utilizzare o crearne uno nuovo.
-
-   >[!NOTE]
-   >
-   >I modelli di prompt di Adobe disponibili sono ora limitati, ma ne verranno aggiunti altri in versioni future.
-
-   ![Esporta per generare varianti nel frammento di contenuto](assets/cfm-generate-variations2.png)
-
-1. Genera il contenuto compilando i prompt. Il modello di contenuto del frammento verrà utilizzato automaticamente per generare contenuto utilizzando GenAI.
-
-   >[!NOTE]
-   >
-   >Al momento sono supportati solo i campi di testo.
-
-   ![Esporta per generare varianti nel frammento di contenuto](assets/cfm-generate-variations3.png)
-
-1. Seleziona la variante di generazione desiderata e fai clic su &quot;Esporta variante&quot;. Conferma il nome della variante del frammento di contenuto e seleziona una delle seguenti opzioni:
-
-   * **Esporta**: esporta la variante nel frammento di contenuto e resta nell&#39;applicazione Genera variante.
-   * **Esporta e apri**: esporta la variante in Frammento di contenuto e apri una nuova scheda che mostra il Frammento di contenuto con la nuova variante GenAI.
-
-     ![Esporta per generare varianti nel frammento di contenuto](assets/cfm-generate-variations4.png)
-
-1. Le varianti generate vengono visualizzate nell’Editor frammento di contenuto principale.
-
-   ![Visualizza generazione varianti nel frammento di contenuto](assets/cfm-generate-variations5.png)
-
-Per ulteriori informazioni, consulta [Generare varianti](/help/generative-ai/generate-variations.md).
+Per ulteriori informazioni, consulta [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md).
 
 ### Eliminare una variante {#delete-variation}
 
@@ -339,7 +308,7 @@ In alternativa, è possibile [selezionare **Crea nuovo frammento** per aprire la
 
 ### Riferimenti al contenuto {#content-references}
 
-[I riferimenti ai contenuti](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) vengono utilizzati per fare riferimento ad altri tipi di contenuti AEM, ad esempio immagini, pagine e frammenti di esperienza.
+[I riferimenti ai contenuti](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) vengono utilizzati per fare riferimento ad altri tipi di contenuti AEM, come immagini, pagine e frammenti di esperienza.
 
 #### Immagini di riferimento {#reference-images}
 
@@ -473,7 +442,7 @@ Ad esempio:
 
 >[!NOTE]
 >
->Per ulteriori dettagli sulla traduzione di un frammento di contenuto e sulla creazione di copie per lingua, consulta [Percorso di traduzione headless AEM](/help/journey-headless/translation/overview.md).
+>Per ulteriori dettagli sulla traduzione di un frammento di contenuto e sulla creazione di copie per lingua, consulta [Percorso di traduzione AEM headless](/help/journey-headless/translation/overview.md).
 
 ## Commento sul frammento {#commenting-on-your-fragment}
 
@@ -506,12 +475,12 @@ Per utilizzare questa funzione, devi innanzitutto:
 
 Una volta definito l&#39;URL, il pulsante **Anteprima** è attivo. Puoi selezionare questo pulsante per avviare l’applicazione esterna (in una scheda separata) per eseguire il rendering del frammento di contenuto.
 
-## Publish del frammento {#publish-content-fragment}
+## Pubblicare il frammento {#publish-content-fragment}
 
-Puoi **Publish** il frammento in:
+Puoi **pubblicare** il frammento in:
 
 * Anteprima istanza
-* istanza Publish
+* Pubblica istanza
 
 Puoi pubblicare il frammento dall’editor o dalla console. Per informazioni dettagliate, consulta [Pubblicazione e anteprima di un frammento](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment).
 
@@ -520,7 +489,7 @@ Puoi pubblicare il frammento dall’editor o dalla console. Per informazioni det
 Puoi anche **Annullare la pubblicazione** del frammento da:
 
 * Anteprima istanza
-* istanza Publish
+* Pubblica istanza
 
 Puoi annullare la pubblicazione del frammento dall’editor o dalla console. Per informazioni dettagliate, vedere [Annullamento della pubblicazione di un frammento](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment).
 

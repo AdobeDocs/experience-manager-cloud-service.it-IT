@@ -4,10 +4,10 @@ description: Scopri come generare varianti, accessibile da AEM as a Cloud Servic
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
-workflow-type: ht
-source-wordcount: '3262'
-ht-degree: 100%
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+workflow-type: tm+mt
+source-wordcount: '3272'
+ht-degree: 99%
 
 ---
 
@@ -25,6 +25,10 @@ Puoi [accedere a Genera varianti](#access-generate-variations) da:
 >[!NOTE]
 >
 >In tutti i casi, per utilizzare la funzione Genera varianti è necessario assicurarsi che siano soddisfatti i [prerequisiti di accesso](#access-prerequisites).
+
+>[!NOTE]
+>
+>Puoi anche accedere a [Generate Variations (Genera varianti) integrato negli editor di AEM](/help/generative-ai/generate-variations-integrated-editor.md).
 
 Puoi effettuare le seguenti operazioni:
 
@@ -176,7 +180,7 @@ Qui puoi passare il mouse sull‘’immagine per visualizzare le azioni relative
 
 >[!NOTE]
 >
->Le [Credenziali del contenuto](https://helpx.adobe.com/it/creative-cloud/help/content-credentials.html) non vengono mantenute se utilizzate nell’authoring basato su documenti.
+>I dati [Content Credentials](https://helpx.adobe.com/it/creative-cloud/help/content-credentials.html) non vengono mantenuti se sono utilizzati nell’authoring basato su documenti.
 
 ### Usare il contenuto {#use-content}
 
