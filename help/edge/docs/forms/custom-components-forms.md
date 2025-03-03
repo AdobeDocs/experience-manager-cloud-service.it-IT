@@ -5,10 +5,11 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
-workflow-type: tm+mt
+exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
+source-git-commit: 62dfa8ad73bf6684bd93f6a26b98b1c193770214
+workflow-type: ht
 source-wordcount: '625'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +19,7 @@ Edge Delivery Services per AEM Forms ti consente di personalizzare i [componenti
 
 ![Componente personalizzato](/help/edge/assets/custom-component-image.png)
 
-Questo documento illustra i passaggi necessari per creare componenti personalizzati assegnando al modulo HTML nativo uno stile che ne ottimizza l’esperienza utente e ne aumenta l’impatto visivo.
+Questo documento illustra i passaggi necessari per creare componenti personalizzati assegnando uno stile ai componenti per moduli HTML nativi, migliorando l’esperienza utente e aumentando l’impatto visivo dei moduli stessi.
 
 Prendiamo ad esempio un componente `range` che mostra `Estimated trip cost` in un modulo. Il componente `range` viene visualizzato come una linea retta, senza visualizzare valori quali il valore minimo, massimo o selezionato.
 
@@ -58,7 +59,7 @@ La funzione personalizzata aggiunta in `[../Form Block/components]` è costituit
 Per aggiungere una funzione personalizzata:
 
 1. Accedi a `[../Form Block/components]`.
-1. Individuare un file denominato `range.js`. se non presente, crealo.
+1. Individua un file denominato `range.js`. Se non è presente, crealo.
 1. Aggiungi la seguente riga di codice:
 
    ```javascript
@@ -214,7 +215,7 @@ Distribuisci i file `range.js`, `mapping.js` e `form.css` aggiornati nel progett
 
 ### Visualizzare l’anteprima del modulo utilizzando la barra laterale di AEM
 
-Visualizza l&#39;anteprima del modulo con la nuova funzione implementata che assegna lo stile al componente `range`.
+Visualizza l’anteprima del modulo con la nuova funzione implementata che assegna uno stile al componente `range`.
 
 ![Modulo componente personalizzato](/help/edge/assets/custom-componet-form.png)
 
@@ -361,7 +362,3 @@ Now, you can see your custom component in the WYSIWYG based authoring:
 ## Consulta anche
 
 {{see-more-forms-eds}}
-
-
-
-

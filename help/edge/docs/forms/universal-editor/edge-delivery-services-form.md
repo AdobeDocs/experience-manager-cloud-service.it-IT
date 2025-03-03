@@ -8,50 +8,50 @@ hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
 source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1040'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 
-# Edge Delivery Services Forms
+# Moduli di Edge Delivery Services
 
-Forms di Adobe Edge Delivery Services trasforma il modo in cui i moduli vengono creati, eseguiti ed elaborati. Sfruttando Edge Delivery Services, le organizzazioni possono creare moduli digitali veloci, sicuri e altamente disponibili, migliorando l’esperienza utente e l’efficienza operativa con un ambiente di sviluppo rapido. Con Edge Delivery Services Forms puoi aumentare le conversioni, ridurre i costi e accelerare la distribuzione dei contenuti.
+I moduli di Adobe Edge Delivery Services trasformano il modo in cui i moduli vengono creati, eseguiti ed elaborati. Sfruttando Edge Delivery Services, le organizzazioni possono creare moduli digitali veloci, sicuri e altamente disponibili, migliorando l’esperienza utente e l’efficienza operativa con un ambiente di sviluppo rapido. Con i moduli di Edge Delivery Services puoi aumentare le conversioni, ridurre i costi e accelerare la distribuzione dei contenuti.
 
-## Vantaggi di Edge Delivery Services Forms
+## Vantaggi dei moduli di Edge Delivery Services
 
-* **Creazione più rapida di moduli**: crea moduli ad alte prestazioni con un punteggio Lighthouse perfetto e monitora continuamente le loro prestazioni reali utilizzando il Monitoraggio utente reale (RUM).
+* **Creazione di moduli più rapida**: crea moduli ad alte prestazioni con un punteggio Lighthouse perfetto e monitora continuamente le prestazioni reali utilizzando il Monitoraggio degli utenti reali (RUM).
 
-* **Processo di authoring semplificato**: gestione semplificata dei contenuti da più origini per una maggiore flessibilità. È possibile creare moduli con WYSIWYG e l’authoring basato su documenti, consentendo l’integrazione perfetta di vari formati di contenuto.
+* **Processo di authoring semplificato**: gestione semplificata dei contenuti da più origini per una maggiore flessibilità. In modalità predefinita puoi creare moduli con authoring WYSIWYG e basato su documenti, consentendo l’integrazione perfetta di vari formati di contenuto.
 
-* **Facilità d&#39;uso per utenti non tecnici**: Edge Delivery Services consente ai non programmatori di gestire e pubblicare facilmente i moduli senza richiedere una conoscenza approfondita della programmazione.
+* **Facilità d’uso per utenti non tecnici**: Edge Delivery Services consente ai non programmatori di gestire e pubblicare facilmente i moduli senza richiedere una conoscenza approfondita della programmazione.
 
-* **Esperienza utente migliorata**: garantisce tempi di caricamento rapidi e interazioni semplici, garantendo agli utenti tempi di attesa minimi e un&#39;esperienza di compilazione dei moduli intuitiva.
+* **Esperienza utente migliorata**: garantisce tempi di caricamento rapidi e interazioni semplici, offrendo agli utenti tempi di attesa minimi e un’esperienza di compilazione dei moduli intuitiva.
 
-* **Esecuzione senza server**: Edge Delivery Services abilita l&#39;esecuzione senza server della logica del modulo. Ciò include:
+* **Esecuzione senza server**: Edge Delivery Services abilita l’esecuzione senza server della logica del modulo. Ciò include:
 
-   * **Convalida lato client**: la convalida del campo modulo viene eseguita lato client, riducendo i ritardi di andata e ritorno.
+   * **Convalida lato client**: la convalida del campo modulo viene eseguita lato client, riducendo i ritardi del ciclo.
 
-   * **Precompilazione e Personalization**: la precompilazione dei dati del modulo viene gestita sul lato client per garantire un&#39;esperienza utente ottimale.
+   * **Precompilazione e personalizzazione**: la precompilazione dei dati del modulo viene gestita lato client per garantire un’esperienza utente ottimale.
 
-   * **Elaborazione invio**: gli invii dei moduli vengono convalidati e inoltrati in modo sicuro senza server centrale
+   * **Elaborazione dell’invio**: gli invii dei moduli vengono convalidati e inoltrati in modo sicuro senza server centrale
 
-## Come funziona Edge Delivery Services Forms?
+## Come funzionano i moduli Edge Delivery Services?
 
-Gli utenti possono creare Edge Delivery Services Forms utilizzando strumenti di authoring basati su documenti come Google Drive, SharePoint o Universal Editor (authoring WYSIWYG), sfruttando lo stile, il comportamento e i componenti di base disponibili nell’archivio GitHub. Una volta creato, Edge Delivery Services Forms può inviare dati a qualsiasi piattaforma utilizzando Forms Submission Service.
+Gli utenti possono lavorare sui moduli di Edge Delivery Services utilizzando strumenti di authoring basati su documento come Google Drive, SharePoint o l’editor universale (authoring WYSIWYG), sfruttando lo stile, il comportamento e i componenti di base disponibili nell’archivio GitHub. Terminato l’authoring, i moduli Edge Delivery Services possono inviare dati a qualsiasi piattaforma utilizzando il servizio di invio dei moduli.
 
-![Funzionamento di Edge Delivery Services Forms](/help/edge/docs/forms/assets/eds-forms-working.png)
+![Funzionamento dei moduli di Edge Delivery Services](/help/edge/docs/forms/assets/eds-forms-working.png)
 
-### Componenti chiave di Edge Delivery Services Forms
+### Componenti chiave dei moduli di Edge Delivery Services
 
-I componenti chiave di Edge Delivery Services Forms sono:
+I componenti chiave dei moduli di Edge Delivery Services:
 
-* **Archivio GitHub**: l&#39;archivio GitHub funge da base per la creazione di Edge Delivery Services Forms. I moduli sfruttano lo stile e le funzionalità di base dell’archivio e consentono agli utenti di aggiungere personalizzazioni e componenti personalizzati a Edge Delivery Services Forms.
+* **Archivio GitHub**: l’archivio GitHub funge da standard per la creazione di moduli di Edge Delivery Services. I moduli sfruttano lo stile e le funzionalità di base dell’archivio e consentono agli utenti di aggiungere personalizzazioni e componenti personalizzati ai moduli di Edge Delivery Services.
 
-* **Authoring dei moduli**: Edge Delivery Services Forms supporta due tipi di authoring: WYSIWYG e l&#39;authoring basato su documenti. L’authoring basato su documenti consente agli utenti di creare moduli utilizzando strumenti familiari come Google Docs e Microsoft Office. La creazione di WYSIWYG consente agli utenti di progettare i moduli visivamente utilizzando l’Editor universale, semplificandone la creazione e la gestione da parte di utenti non tecnici. Universal Editor offre un’esperienza di creazione dei moduli intuitiva e consente di accedere a numerose funzionalità per moduli.
+* **Authoring dei moduli**: i moduli di Edge Delivery Services supportano due tipi di authoring: l’authoring WYSIWYG e basato su documenti. L’authoring basato su documenti consente agli utenti di creare moduli utilizzando strumenti familiari come Documenti Google e Microsoft Office. L’authoring WYSIWYG consente agli utenti di progettare i moduli visivamente utilizzando l’editor universale, semplificando la creazione e la gestione da parte di utenti non tecnici. L’editor universale offre un’esperienza di creazione dei moduli intuitiva e consente di accedere a numerose funzionalità.
 
-* **Servizio di invio Forms**: il servizio di invio Forms consente di memorizzare i dati relativi all&#39;invio dei moduli su qualsiasi piattaforma, ad esempio OneDrive, SharePoint o Google Sheets, semplificando l&#39;accesso e la gestione dei dati dei moduli all&#39;interno del sistema preferito.
+* **Servizio di invio dei moduli**: il servizio di invio dei moduli consente di memorizzare i dati relativi all’invio dei moduli su qualsiasi piattaforma, ad esempio OneDrive, SharePoint o Fogli Google, semplificando l’accesso e la gestione dei dati dei moduli all’interno del sistema preferito.
 
 ## Creazione di un modulo
 
